@@ -125,6 +125,20 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/03-fungi.md',
+    exercise: 'fs-id1172100506672',
+    kind: 'options',
+    erratum: 475,
+    reason: 'the source option "Rhizopus stolonifera" misspells the genus-species name the module itself prints as Rhizopus stolonifer; the page prints the option with the correct spelling (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/05-lichens.md',
+    exercise: 'fs-id1172099523194',
+    kind: 'options',
+    erratum: 482,
+    reason: 'the source distractor "a basidiomycete" is true by the module\'s own sentence that "the fungal partners belong to the Ascomycota and Basidiomycota", so the item was double-keyed; the page replaces that option with "a cyanobacterium" (key unchanged)',
+  },
+  {
     page: 'content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/04-digestive-system-regulation.md',
     exercise: 'fs-idp144627040',
     kind: 'options',

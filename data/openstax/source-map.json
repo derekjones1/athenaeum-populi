@@ -168,8 +168,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 26,
       "upstreamSections": 127,
-      "localChapters": 4,
-      "mappedSections": 17
+      "localChapters": 7,
+      "mappedSections": 31
     }
   },
   "sections": [
@@ -2197,6 +2197,132 @@
       "moduleId": "m58800",
       "sourceTitle": "Archaea",
       "moduleSha256": "33977e974d64b6f9a004eb0a185058d9fb7ec1496c54009288d63319ed56cf14"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/01-unicellular-eukaryotic-parasites.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "5.1",
+      "moduleId": "m58802",
+      "sourceTitle": "Unicellular Eukaryotic Parasites",
+      "moduleSha256": "6cf6f32f07da2766942345dad3b5f451094a8f7501cb6a812910518126a7cff6"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/02-parasitic-helminths.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "5.2",
+      "moduleId": "m58803",
+      "sourceTitle": "Parasitic Helminths",
+      "moduleSha256": "002e718f18ff6506a1c43743b5136d13a4c8f3a1b5dee74ef145f12f1a9b8c11"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/03-fungi.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "5.3",
+      "moduleId": "m58804",
+      "sourceTitle": "Fungi",
+      "moduleSha256": "ead90c4427c0466623393bb886be16b78b5d22796d1fce10a3504badd6e820f0"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/04-algae.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "5.4",
+      "moduleId": "m58805",
+      "sourceTitle": "Algae",
+      "moduleSha256": "3c933b112c79821731887e61f71cd6cc2734bb957687bfe0af14ba93b500b609"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/05-lichens.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "5.5",
+      "moduleId": "m58806",
+      "sourceTitle": "Lichens",
+      "moduleSha256": "0fa4b8c1d8b2cbd077ae9aec17e39039cc63ecd326f3d756c09b9c3543f5c397"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/06-acellular-pathogens/01-viruses.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "6.1",
+      "moduleId": "m58808",
+      "sourceTitle": "Viruses",
+      "moduleSha256": "cccfc6f1935c9eff0b9415ad3b61519faa4790607021f00f01228073a2095b97"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/06-acellular-pathogens/02-the-viral-life-cycle.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "6.2",
+      "moduleId": "m58809",
+      "sourceTitle": "The Viral Life Cycle",
+      "moduleSha256": "ee28a841d91b792edae4ae7a3323404d3c37a4976be804d0062afd0ef99b6bbb"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/06-acellular-pathogens/03-isolation-culture-and-identification-of-viruses.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "6.3",
+      "moduleId": "m58810",
+      "sourceTitle": "Isolation, Culture, and Identification of Viruses",
+      "moduleSha256": "4f1923bd2b5bb5b0d673b3f58f8192a51cfa15633d463127459018417604389a"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/06-acellular-pathogens/04-viroids-virusoids-and-prions.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "6.4",
+      "moduleId": "m58811",
+      "sourceTitle": "Viroids, Virusoids, and Prions",
+      "moduleSha256": "975274fad5e7eb22713975df5c34548578be898917731b7754b419c88bf593e5"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/07-microbial-biochemistry/01-organic-molecules.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "7.1",
+      "moduleId": "m58813",
+      "sourceTitle": "Organic Molecules",
+      "moduleSha256": "2113066a7a58d13f92461ebbe279d2b5eb2e15cca80b38d6a8623cfc018dda9e"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/07-microbial-biochemistry/02-carbohydrates.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "7.2",
+      "moduleId": "m58814",
+      "sourceTitle": "Carbohydrates",
+      "moduleSha256": "d7e1f8c0a7aeefff935fbe028d6b6a8be429eaab4373bb105b822a9514ebc015"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/07-microbial-biochemistry/03-lipids.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "7.3",
+      "moduleId": "m58815",
+      "sourceTitle": "Lipids",
+      "moduleSha256": "a65334d960a27ab6f961c86b32face909e0e5ee6b23569a1b8c6385e8741cf22"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/07-microbial-biochemistry/04-proteins.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "7.4",
+      "moduleId": "m58816",
+      "sourceTitle": "Proteins",
+      "moduleSha256": "afa9c5c68a7f5b839ab35d1f785b907848cbd039ff7691a68753cd52c4c375da"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/07-microbial-biochemistry/05-using-biochemistry-to-identify-microorganisms.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "7.5",
+      "moduleId": "m58817",
+      "sourceTitle": "Using Biochemistry to Identify Microorganisms",
+      "moduleSha256": "4ed9e437490cba2b4b3ecdaaf564a1be63a20ff8c318070a9a79ee7a7b1ddf5c"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

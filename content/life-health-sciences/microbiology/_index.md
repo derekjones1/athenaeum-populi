@@ -43,17 +43,17 @@ pathogens that cause them.
 - **Prokaryotic Diversity** — habitats, relationships, and microbiomes;
   the proteobacteria, other gram-negative and phototrophic bacteria,
   gram-positive bacteria, deeply branching bacteria, and archaea.
-
-## Planned contents
-
-Microbiology has 26 chapters. The remaining 22 will appear in this order:
-
 - **The Eukaryotes of Microbiology** — unicellular eukaryotic parasites,
   parasitic helminths, fungi, algae, and lichens.
 - **Acellular Pathogens** — viruses and the viral life cycle; isolating,
   culturing, and identifying viruses; viroids, virusoids, and prions.
 - **Microbial Biochemistry** — organic molecules, carbohydrates, lipids,
   proteins, and using biochemistry to identify microorganisms.
+
+## Planned contents
+
+Microbiology has 26 chapters. The remaining 19 will appear in this order:
+
 - **Microbial Metabolism** — energy, matter, and enzymes; catabolism of
   carbohydrates, lipids, and proteins; cellular respiration, fermentation,
   photosynthesis, and biogeochemical cycles.

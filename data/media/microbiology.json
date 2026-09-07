@@ -3219,6 +3219,2162 @@
       ],
       "alt": "A photograph of colonies on agar. The agar is blue and the colonies look like a pile of beads.",
       "caption": "M. tuberculosis grows on Löwenstein-Jensen (LJ) agar in distinct colonies. (credit: Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_05_00_splash": {
+      "source": "media/OSC_Microbio_05_00_splash.jpg",
+      "sourceSha256": "f9da5d99b7a94c3a178a6b63bf4d9c9a4f1f4159f816a361360f6aa1eb46987b",
+      "module": "m58801",
+      "kind": "photo",
+      "width": 1300,
+      "height": 405,
+      "variants": [
+        {
+          "width": 800,
+          "height": 249,
+          "file": "OSC_Microbio_05_00_splash-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 405,
+          "file": "OSC_Microbio_05_00_splash-1300.webp"
+        }
+      ],
+      "alt": "Micrograph of a long cell. Micrograph of blood cells. Some have a red ring labeled “ring form”, others have dark dots and a larger ring labeled “young trophozoite”, and others have many dark dots and an amorphous structure labeled “schizont”. A photograph of mosquito netting over a bed.",
+      "caption": "Malaria is a disease caused by a eukaryotic parasite transmitted to humans by mosquitos. Micrographs (left and center) show a sporozoite life stage, trophozoites, and a schizont in a blood smear. On the right is depicted a primary defense against mosquito-borne illnesses like malaria—mosquito netting. (credit left: modification of work by Ute Frevert; credit middle: modification of work by Centers for Disease Control and Prevention; credit right: modification of work by Tjeerd Wiersma)"
+    },
+    "OSC_Microbio_05_01_CellularLC": {
+      "source": "media/OSC_Microbio_05_01_CellularLC.jpg",
+      "sourceSha256": "063e09b9711df45519fb5c783e331fe9e9ed7664185c79eb6c43b8e570068c88",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1188,
+      "variants": [
+        {
+          "width": 800,
+          "height": 792,
+          "file": "OSC_Microbio_05_01_CellularLC-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1188,
+          "file": "OSC_Microbio_05_01_CellularLC-1200.webp"
+        }
+      ],
+      "alt": "A mature fruiting body produces a tall stalk with a sphere that generates spores via meiosis. The mature fruiting body releases spores. The haploid spores germinate and give rise to amoeba which divide to form more individual cells. Two amoeba fuse to form a zygote. The zygoe can grow and undergo meiosis and multiple rounds of mitosis. The new haploid amoeba are releases. Fertilization produces amoebas that aggregate into a structure called a slug. The slug migrates at a rate of 2 mm per hour. The migration stops the aggregate forms a fruiting body at the end of a stalk. This brings us back to the fruiting body in the life cycle.",
+      "caption": "The life cycle of the cellular slime mold Dictyostelium discoideum primarily involves individual amoebas but includes the formation of a multinucleate plasmodium formed from a uninucleate zygote (the result of the fusion of two individual amoeboid cells). The plasmodium is able to move and forms a fruiting body that generates haploid spores. (credit “photo”: modification of work by “thatredhead4”/Flickr)"
+    },
+    "OSC_Microbio_05_01_Euglenozoa": {
+      "source": "media/OSC_Microbio_05_01_Euglenozoa.jpg",
+      "sourceSha256": "ee90f3066739d8e43027d64925185ab44b7255cec9d8dfd7d9b9636d4f6c2cc3",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 1300,
+      "height": 439,
+      "variants": [
+        {
+          "width": 800,
+          "height": 270,
+          "file": "OSC_Microbio_05_01_Euglenozoa-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 439,
+          "file": "OSC_Microbio_05_01_Euglenozoa-1300.webp"
+        }
+      ],
+      "alt": "An oval cell with a long flagellum at one end near the photoreceptor (paraflagellar body). A large oval inside the cell is labeled nucleus and contains a smaller oval labeled nucleolus. Green structures are labeled chloroplasts. A red circle is labeled stigma (eyespot).Another sphere is labeled contractile vacuole and a large sphere is labeled pellicle bands. Gray stuructures are labeled polysaccharides stored by photosynthesis.",
+      "caption": "(a) This illustration of a Euglena shows the characteristic structures, such as the stigma and flagellum. (b) The pellicle, under the cell membrane, gives the cell its distinctive shape and is visible in this image as delicate parallel striations over the surface of the entire cell (especially visible over the grey contractile vacuole). (credit a: modification of work by Claudio Miklos; credit b: modification of work by David Shykind)"
+    },
+    "OSC_Microbio_05_01_PlasmodiLC": {
+      "source": "media/OSC_Microbio_05_01_PlasmodiLC.jpg",
+      "sourceSha256": "8e664bf61ab6e1452adaf021dd440f536c1af200494c020d1ff1a57055ea187c",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 1199,
+      "height": 1197,
+      "variants": [
+        {
+          "width": 800,
+          "height": 798,
+          "file": "OSC_Microbio_05_01_PlasmodiLC-800.webp"
+        },
+        {
+          "width": 1199,
+          "height": 1197,
+          "file": "OSC_Microbio_05_01_PlasmodiLC-1199.webp"
+        }
+      ],
+      "alt": "A mature plasmodium (multinucleated free-flowing mass of protoplasm) can produce sclerotium (small cells) in a dry habitat. The mature plasmodium also produces diploid sporangia which produces haploid spores via meiosis. The mature sporangium releases mature spores which germinate. Germination gives rise to cells that can convert between ameboid and flagellated forms. Plasmogomy is the fusion of cytoplasm of two cells. Karyogamy is the fusion of nuclei and leads to the production of a diploid zygote. The zygote divides to form a multi-nucleated feeding plasmodium. This takes us back to the beginning of plasmodium stage of the life cycle.",
+      "caption": "Plasmodial slime molds exist as large multinucleate amoeboid cells that form reproductive stalks to produce spores that divide into gametes."
+    },
+    "OSC_Microbio_05_01_Trophozoit": {
+      "source": "media/OSC_Microbio_05_01_Trophozoit.jpg",
+      "sourceSha256": "d2256b95f4574831b737fc21577904caca621b59c4770c963c340fc0eab0bf4e",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 1197,
+      "height": 994,
+      "variants": [
+        {
+          "width": 800,
+          "height": 664,
+          "file": "OSC_Microbio_05_01_Trophozoit-800.webp"
+        },
+        {
+          "width": 1197,
+          "height": 994,
+          "file": "OSC_Microbio_05_01_Trophozoit-1197.webp"
+        }
+      ],
+      "alt": "Eimera life cycle. Envronment sporogony is the process of sporulation occruing outside the host; this requires several days and oxygen. A non-infectous unsporulated oocyst becomes an infectious sporulated oocyst. These enter the gut when swallowed and begin the proess of asexual schizogony. Oocsts realease sporocyts which release sporozoites. Sporozoites invate gut cells and form trophozoites. Trophozoites undergo schizogony (asexual reproduction) to form schizont which releases merozoites. Merozoites can reinfect and become trphozoites again or continue with sezual gametogon where the maerozoites form male and female gamets. The gamees undergo syngamy (sexual reproduction) to form a developing oocyst which mautres into an unsporulated non-infectious oocyst. This brings us back to the beginning of the environment sporogony stage of the cycle.",
+      "caption": "In the sexual/asexual life cycle of Eimeria, oocysts (inset) are shed in feces and may cause disease when ingested by a new host. (credit “life cycle,” “micrograph”: modification of work by USDA)"
+    },
+    "OSC_Microbio_05_01_apical": {
+      "source": "media/OSC_Microbio_05_01_apical.jpg",
+      "sourceSha256": "8c8781747cc168114d2c21c93564156db35eeb89fe70d898466f9306c4fd54e5",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 1057,
+      "height": 612,
+      "variants": [
+        {
+          "width": 800,
+          "height": 463,
+          "file": "OSC_Microbio_05_01_apical-800.webp"
+        },
+        {
+          "width": 1057,
+          "height": 612,
+          "file": "OSC_Microbio_05_01_apical-1057.webp"
+        }
+      ],
+      "alt": "a) A diagram of an apicomlexan protist. The cell is a long oval with an apical complex at the apical end. B) A micrograph of the protist showing a long oval.",
+      "caption": "(a) Apicomplexans are parasitic protists. They have a characteristic apical complex that enables them to infect host cells. (b) A colorized electron microscope image of a Plasmodium sporozoite. (credit b: modification of work by Ute Frevert)"
+    },
+    "OSC_Microbio_05_01_artconn_img": {
+      "source": "media/OSC_Microbio_05_01_artconn_img.jpg",
+      "sourceSha256": "8c4fbbe9c465a345fb7834d7d07caac610f17554eb646c1304a362a7fa709df7",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 700,
+      "height": 442,
+      "variants": [
+        {
+          "width": 700,
+          "height": 442,
+          "file": "OSC_Microbio_05_01_artconn_img-700.webp"
+        }
+      ],
+      "alt": "A micrograph of an oval cell with a large sphere in the center and many short hair-like projections on the outside.",
+      "caption": "(credit: modification of work by Richard Robinson)"
+    },
+    "OSC_Microbio_05_01_balan": {
+      "source": "media/OSC_Microbio_05_01_balan.jpg",
+      "sourceSha256": "c10c67302c175a7371d47afcf79975e65106335fda39bf99efda14da71bf452b",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 500,
+      "height": 376,
+      "variants": [
+        {
+          "width": 500,
+          "height": 376,
+          "file": "OSC_Microbio_05_01_balan-500.webp"
+        }
+      ],
+      "alt": "A micrograph of an oval cell with many short projections.",
+      "caption": "This specimen of the ciliate Balantidium coli is a trophozoite form isolated from the gut of a primate. B. coli is the only ciliate capable of parasitizing humans. (credit: modification of work by Kouassi RYW, McGraw SW, Yao PK, Abou-Bacar A, Brunet J, Pesson B, Bonfoh B, N’goran EK & Candolfi E)"
+    },
+    "OSC_Microbio_05_01_giardia": {
+      "source": "media/OSC_Microbio_05_01_giardia.jpg",
+      "sourceSha256": "28036f046b906bf87ec7e4fd11b94ae816def9c69a10250b891934532049ed19",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 995,
+      "height": 477,
+      "variants": [
+        {
+          "width": 800,
+          "height": 383,
+          "file": "OSC_Microbio_05_01_giardia-800.webp"
+        },
+        {
+          "width": 995,
+          "height": 477,
+          "file": "OSC_Microbio_05_01_giardia-995.webp"
+        }
+      ],
+      "alt": "a) A micrograph of kite-shaped cells. B) a single triangular cell with multiple flagella.",
+      "caption": "(a) A scanning electron micrograph shows many Giardia parasites in the trophozoite, or feeding stage, in a gerbil intestine. (b) An individual trophozoite of G. lamblia , visualized here in a scanning electron micrograph. This waterborne protist causes severe diarrhea when ingested. (credit a, b: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_05_01_groups1": {
+      "source": "media/OSC_Microbio_05_01_groups1.jpg",
+      "sourceSha256": "e94dced2092041fd3fee7dd5c842c61218738e0efd17a7a1b88ae4787f87ff3e",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1236,
+      "variants": [
+        {
+          "width": 800,
+          "height": 760,
+          "file": "OSC_Microbio_05_01_groups1-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1236,
+          "file": "OSC_Microbio_05_01_groups1-1300.webp"
+        }
+      ],
+      "alt": "Table titled: the eukaryote supergroups and some example species. There are 5 columns in the table: supergroup, subgroup, distinguishing features, examples and clinical notes. Supergroup Exacavata is divided into 3 subgroups: fornicate, parabasalids, euglenozoans. Fornicata have the following distinguishing features: form cysts, pair of equal nuclei, no mitochondria, often parasitic, four free flagella. An example is giardia lamblia which causes giardiasis. Parabasalids have the following distinguishing features: no mitochondria, four free flagella, one attached flagellum, no cysts, parasitic or symbiotic, basal bodies, kinetoplastids. An example is Trichomonas which causes trichomoniasis. Euglenozoans have the following distinguishing features: photosynthetic or heterotrophic, flagella. Examples include: Euglena which does not cause disease, Trypanosoma which causes African sleeping sickness and Chagas disease, Leishmanial which causes leishmaniasis. The supergroup Chromalveolata is divided into 4 subgroups: dinoflagellates, apicomplexans, ciliates, and oomyctes/peronosporomycetes. Dinoflagellates have the following distinguishing features: cellulose theca and two dissimilar flagella. Examples include Gonyaulax which causes red tides, Alexandrium which causes paralytic shellfish poisoning, and Pfiesteria which causes harmful algal blooms. Apicomplexans have the following distinguishing features: intracellular parasite and apical organelles. Examples include Plasmodium which causes malaria, Cryptosporidium which causes cryptosporidiosis, Theileria (Babesia) which causes babeiosis, and Toxoplasma which causes Tosoplasmosis. Ciliates have the characteristic of cilia. Examples include Balantidium which causes Balantidiasis. Paramecium and Stentor which do not cause diseas. Oomycetes / peronosporomycetes have the following distinguishing features: water molds, generally diploid, cellulose cell wall. An example is Phytophthora which causes diseases in crops.",
+      "caption": ""
+    },
+    "OSC_Microbio_05_01_groups2": {
+      "source": "media/OSC_Microbio_05_01_groups2.jpg",
+      "sourceSha256": "d1095131e46f21d37f8d68aa5575a86d0c36246a9b628f6cbc908457495f5aeb",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 1301,
+      "height": 1420,
+      "variants": [
+        {
+          "width": 800,
+          "height": 873,
+          "file": "OSC_Microbio_05_01_groups2-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 1420,
+          "file": "OSC_Microbio_05_01_groups2-1301.webp"
+        }
+      ],
+      "alt": "Table titled: the eukaryote supergroups and some example species. There are 5 columns in the table: supergroup, subgroup, distinguishing features, examples and clinical notes. The supergroup Rhizaria is divided into 3 subroups: Foraminifera, Radiolaria, and Cerozoa. Foraminifer have the following distinguishing features: amoeboid, thereadlike pseudopodia, calclium carbonate shells. An example is Astrolonche which does not cause disease. Radiolaria have the following distinguishing features: amoeboid, threadlike pseudopodia, silica shells. An example is Actinomma which does not cause disease. Cerozoa have the following distinguishing features: amoeboid, threadlike pseudopodia, complex shells, parasitic forms. Examples include Spongospora subterranean which causes powdery scab (potato disease) and Plasmodiophora brassicae which causes cabbage clubroot. Supergroup Archaeplastida is divided into 2 groups: red algae and Chlorophytes. Red algae have the following distinguishing features: chlorophyll a, phycoerythrin, phycocyanin, flodean starch, agar in cell walls. Examples include Gelidium and Gracilaria which are sources of agar. Chlorophytes have the following distinguishing features: chlorphyll a, chlorophyll b, cellulose cell walls, starch storage. Examples include Acetabularia and Ulva which do not cause disease. Supergroup Amoebozoa is divided into 2 subgroups: slime molds and entamoebas. Slime molds have plasmodial and cellular forms. An example is Dictyostelium which does not cause disease. Entamoebas have the following distinguishing features: trophozoites and form cysts. Examples include Entamoeba which causes Amoebiasis, Naegleria which causes Primary amoebic meningoencephalitis, and Acanthamoeba which causes Keratitis, and granulomatous ameoebic encephalitis. Supergroup Opisthokonta is divided into subroups fungin and animals. Fungi have the following distinguishing features: chitin cell walls, unicellular or multicellular, often hyphae. Examples include Zygomyctes which cause zygomycosis, Asomycetes which cause Candidiasis, Basidiomycetes which cause Cryptococcosis, and Microsporidia which causes microsporidiosis. Animals have the following distinguishing features: multicellular heterotrophs with no cell walls. Examples include Nematoda which cause Trichonosis, hookworm and pinworm infections, Termatoda which causes Schistosomiais, and Cestoda which causes tapeworm infection.",
+      "caption": ""
+    },
+    "OSC_Microbio_05_01_locom": {
+      "source": "media/OSC_Microbio_05_01_locom.jpg",
+      "sourceSha256": "10a45d1cd9bd25ac3bbf1ae9427a312e6a457bc08757be54149028986f45375c",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 1102,
+      "height": 471,
+      "variants": [
+        {
+          "width": 800,
+          "height": 342,
+          "file": "OSC_Microbio_05_01_locom-800.webp"
+        },
+        {
+          "width": 1102,
+          "height": 471,
+          "file": "OSC_Microbio_05_01_locom-1102.webp"
+        }
+      ],
+      "alt": "a) Paramecium cell with short strands on the outside labeled cilia. An indent in the outer layer is labeled cytostome. A sphere inside the cell at the base of the cytostome is labeled cytoproct. A star shaped structure inside the cell is labeled contractile vacuole. B) Amoeba cell with projections on the outside labeled pseudopods. The outer layer of the cell is labeled ectoplasm and the inner layer is labeled endoplasm. A sphere inside the cell is labeled contractile vacuole. C) Euglena with a single long flagellum on the outside. The outer layer of the cell is labeled etoplasm, the inner layer is labeled endoplasm. A star shaped structure is labeled contractile vacuole.",
+      "caption": "(a) Paramecium spp. have hair-like appendages called cilia for locomotion. (b) Amoeba spp. use lobe-like pseudopodia to anchor the cell to a solid surface and pull forward. (c) Euglena spp. use a whip-like structure called a flagellum to propel the cell."
+    },
+    "OSC_Microbio_05_01_param": {
+      "source": "media/OSC_Microbio_05_01_param.jpg",
+      "sourceSha256": "6913fc32beb087a4f8157acb202478ca405588dbba95fe28076c9a90844c22d0",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 1132,
+      "height": 368,
+      "variants": [
+        {
+          "width": 800,
+          "height": 260,
+          "file": "OSC_Microbio_05_01_param-800.webp"
+        },
+        {
+          "width": 1132,
+          "height": 368,
+          "file": "OSC_Microbio_05_01_param-1132.webp"
+        }
+      ],
+      "alt": "Paramecium cell with short strands on the outside labeled cilia. An indent in the outer layer is labeled cytostome. The outside edge of the cytostome is an indent in the cell labeled oral groove. A sphere inside the cell at the base of the cytostome is labeled food vacuole, another nearby sphere is labeled cytoproct. A smaller opening in the cell is labeled anal pore. A star shaped structure inside the cell is labeled contractile vacuole. A large oval is labeled macronucluus and a smaller oval is labeled micronucleus.",
+      "caption": "Paramecium has a primitive mouth (called an oral groove) to ingest food, and an anal pore to excrete it. Contractile vacuoles allow the organism to excrete excess water. Cilia enable the organism to move."
+    },
+    "OSC_Microbio_05_01_ringworm": {
+      "source": "media/OSC_Microbio_05_01_ringworm.png",
+      "sourceSha256": "9089dcfd4dc9a0139215fe89d5605dd337eedd574e87e2865722152218975b24",
+      "module": "m58802",
+      "kind": "diagram",
+      "width": 1521,
+      "height": 767,
+      "variants": [
+        {
+          "width": 800,
+          "height": 403,
+          "file": "OSC_Microbio_05_01_ringworm-800.webp"
+        },
+        {
+          "width": 1521,
+          "height": 767,
+          "file": "OSC_Microbio_05_01_ringworm-1521.webp"
+        }
+      ],
+      "alt": "Two photos of a rash on skin, the first of a large raised grayish ring, and the second of a raised red ring.",
+      "caption": "Ringworm presents as a raised ring, which is gray or brown on brown or black skin (a), and red on lighter skin (b). (Credit: Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_05_01_slime": {
+      "source": "media/OSC_Microbio_05_01_slime.jpg",
+      "sourceSha256": "5d7c0ce8b0191937282b61ab03783ee6202020867aafa2323dc2f30e8adeb8d5",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 1200,
+      "height": 452,
+      "variants": [
+        {
+          "width": 800,
+          "height": 301,
+          "file": "OSC_Microbio_05_01_slime-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 452,
+          "file": "OSC_Microbio_05_01_slime-1200.webp"
+        }
+      ],
+      "alt": "a) A micrograph wshwoing a circular dome with long branches emanating outward. B) A photograph showing a yellow structure that looks like foam on a branch.",
+      "caption": "(a) The cellular slime mold Dictyostelium discoideum can be grown on agar in a Petri dish. In this image, individual amoeboid cells (visible as small spheres) are streaming together to form an aggregation that is beginning to rise in the upper right corner of the image. The primitively multicellular aggregation consists of individual cells that each have their own nucleus. (b) Fuligo septica is a plasmodial slime mold. This brightly colored organism consists of a large cell with many nuclei."
+    },
+    "OSC_Microbio_05_01_stentor": {
+      "source": "media/OSC_Microbio_05_01_stentor.jpg",
+      "sourceSha256": "82669b41b08df1109e32a4c86111e3bbd6efaac961515f81908e3ca7565272e1",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 632,
+      "height": 528,
+      "variants": [
+        {
+          "width": 632,
+          "height": 528,
+          "file": "OSC_Microbio_05_01_stentor-632.webp"
+        }
+      ],
+      "alt": "A micrograph of long trumpet shaped cells. The wide part of the cell has an oval structure labeled cytostome and small projections labeled cilia.",
+      "caption": "This differential interference contrast micrograph (magnification: ×65) of Stentor roeselie shows cilia present on the margins of the structure surrounding the cytostome; the cilia move food particles. (credit: modification of work by “picturepest”/Flickr)"
+    },
+    "OSC_Microbio_05_01_taxon": {
+      "source": "media/OSC_Microbio_05_01_taxon.jpg",
+      "sourceSha256": "2c99119bd915eca2a00dc238cce1ad6ebabe2b55e5822c5d3e10e13b56c7d305",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 854,
+      "height": 1266,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1186,
+          "file": "OSC_Microbio_05_01_taxon-800.webp"
+        },
+        {
+          "width": 854,
+          "height": 1266,
+          "file": "OSC_Microbio_05_01_taxon-854.webp"
+        }
+      ],
+      "alt": "A branching tree diagram with common eukaryotic ancestor at the base. This leads to 5 branches. The top branch branches are classified as Excavata which is divided into 3 groups: diplomonads, parabasalids, and euglenozoans. The next branch splits into 2 branches: alveolates, and stramenopiles. The alveolates are divided into dinoflagellates, apicomplexans and ciliates. The stramenopiles are divided into diatoms, golden algae, brown algae and oomyces. All the alveotate and stramenopile groups are labeled Chromalveolata. The next branch divides into cercozoans, forams and radiolarians. These are all labeled rhizaria. The next branch divides into the red algae, chlorophytes (green algae), charophytes (green algae) and land plant. Thesea re all labeldd archaeplastidia. The next branch splits into 2. The top branch divides into slime molds, gymnamoebas and entamoebas. These are all labeled amoebozoa. The bottom branch divides into nucleariids, fungi, choanoflagellates, and animals. These are all labeled opisthokonta.",
+      "caption": "This tree shows a proposed classification of the domain Eukarya based on evolutionary relationships. Currently, the domain Eukarya is divided into six supergroups. Within each supergroup are multiple kingdoms. Dotted lines indicate suggested evolutionary relationships that remain under debate."
+    },
+    "OSC_Microbio_05_01_tryplife": {
+      "source": "media/OSC_Microbio_05_01_tryplife.jpg",
+      "sourceSha256": "7e05de1f2913be4983da0b31704465f32535a6766308cf327d0d9cf60a956fee",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 1295,
+      "height": 1042,
+      "variants": [
+        {
+          "width": 800,
+          "height": 643,
+          "file": "OSC_Microbio_05_01_tryplife-800.webp"
+        },
+        {
+          "width": 1295,
+          "height": 1042,
+          "file": "OSC_Microbio_05_01_tryplife-1295.webp"
+        }
+      ],
+      "alt": "The life cycle of Trypanosoma brucei takes place in both tsetse fly and humans. When the tsetse fly takes a blood meal it inject T. brucei into the bloodstream of a human. There the T. brucei multiplies by binary fission in blood, lymph, and spinal fluid. When another tsetse fly takes a blood meal it ingests T. brucei which multiplies by binary fission in the midgut of the fly. The T. brucei then transforms into an infectious stage which enters the salivary glands and multiplies. This can then be spread to another human.",
+      "caption": "Trypanosoma brucei , the causative agent of African trypanosomiasis, spends part of its life cycle in the tsetse fly and part in humans. (credit “illustration”: modification of work by Centers for Disease Control and Prevention; credit “photo”: DPDx/Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_05_01_watermold": {
+      "source": "media/OSC_Microbio_05_01_watermold.jpg",
+      "sourceSha256": "62a4a4b5105f245caaa7b0c3ee44220d6023f882a52ee15e3c6a6055880790df",
+      "module": "m58802",
+      "kind": "photo",
+      "width": 897,
+      "height": 528,
+      "variants": [
+        {
+          "width": 800,
+          "height": 471,
+          "file": "OSC_Microbio_05_01_watermold-800.webp"
+        },
+        {
+          "width": 897,
+          "height": 528,
+          "file": "OSC_Microbio_05_01_watermold-897.webp"
+        }
+      ],
+      "alt": "A photograph of an insect covered in white fuzz labeled water mold.",
+      "caption": "A saprobic oomycete, or water mold, engulfs a dead insect. (credit: modification of work by Thomas Bresson)"
+    },
+    "OSC_Microbio_05_02_GWorm": {
+      "source": "media/OSC_Microbio_05_02_GWorm.jpg",
+      "sourceSha256": "166771483396c2b250bc6abee112cb010d52b59c46fca2b3dba610c2c92af6cb",
+      "module": "m58803",
+      "kind": "photo",
+      "width": 500,
+      "height": 328,
+      "variants": [
+        {
+          "width": 500,
+          "height": 328,
+          "file": "OSC_Microbio_05_02_GWorm-500.webp"
+        }
+      ],
+      "alt": "A worm is being pulled out of a wound in the leg of an infected individual.",
+      "caption": "The Guinea worm can be removed from a leg vein of an infected person by gradually winding it around a stick, like this matchstick. (credit: Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_05_02_heterodera": {
+      "source": "media/OSC_Microbio_05_02_heterodera.jpg",
+      "sourceSha256": "6f6748f8d161e7db4414a3a8acb293e79b91d7931b5e1d7789d72743c6aad058",
+      "module": "m58803",
+      "kind": "photo",
+      "width": 500,
+      "height": 502,
+      "variants": [
+        {
+          "width": 500,
+          "height": 502,
+          "file": "OSC_Microbio_05_02_heterodera-500.webp"
+        }
+      ],
+      "alt": "A micrograph of a tapered oval cell of approximately 30 mm in length.",
+      "caption": "A micrograph of the nematode Enterobius vermicularis , also known as the pinworm. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_05_02_mouth": {
+      "source": "media/OSC_Microbio_05_02_mouth.jpg",
+      "sourceSha256": "9fb675d4289d22755e2e8449621d3d1a6a705a1d3f281d64a5d0f71710e7001e",
+      "module": "m58803",
+      "kind": "photo",
+      "width": 1088,
+      "height": 629,
+      "variants": [
+        {
+          "width": 800,
+          "height": 462,
+          "file": "OSC_Microbio_05_02_mouth-800.webp"
+        },
+        {
+          "width": 1088,
+          "height": 629,
+          "file": "OSC_Microbio_05_02_mouth-1088.webp"
+        }
+      ],
+      "alt": "a) A micrograph of Opisthorchis viverini; an oval cell with a projection at one end. B) A micrograph of one end of Taenia solium showing a whorl of small projections above an area labeled scolex.",
+      "caption": "(a) The oral sucker is visible on the anterior end of this liver fluke, Opisthorchis viverrini . (b) This micrograph shows the scolex of the cestode Taenia solium , also known as the pork tapeworm. The visible suckers and hooks allow the worm to attach itself to the inner wall of the intestine. (credit a: modification of work by Sripa B, Kaewkes S, Sithithaworn P, Mairiang E, Laha T, and Smout M; credit b: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_05_02_platy": {
+      "source": "media/OSC_Microbio_05_02_platy.jpg",
+      "sourceSha256": "2cfbe42143e67a13c49fa72f81fbecf1bbcaab6e3167f5683c44c2a46d97e573",
+      "module": "m58803",
+      "kind": "photo",
+      "width": 1100,
+      "height": 1031,
+      "variants": [
+        {
+          "width": 800,
+          "height": 750,
+          "file": "OSC_Microbio_05_02_platy-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 1031,
+          "file": "OSC_Microbio_05_02_platy-1100.webp"
+        }
+      ],
+      "alt": "a) Class Turbellaria – a photograph of a flat oval-shaped worm labeled Pseudobiceros bedfordi. B) Class Monegena – a micrograph of a rectangular cell with a bulb at one end. Labeled Dactylogyrus sp. C) Class Trematoda – A photograph of a long oval organism labeled Fascioloides magna and two smaller oval organisms labeled Fasciola hepatica. D) Class Cestoda – A photograph of a very long tapeworm labeled Taenia saginata.",
+      "caption": "Phylum Platyhelminthes is divided into four classes. (a) Class Turbellaria includes the Bedford’s flatworm ( Pseudobiceros bedfordi ), which is about 8–10 cm long. (b) The parasitic class Monogenea includes Dactylogyrus spp. Worms in this genus are commonly called gill flukes. The specimen pictured here is about 0.2 mm long and has two anchors, indicated by arrows, that it uses to latch onto the gills of host fish. (c) The Trematoda class includes the common liver fluke Fasciola hepatica and the giant liver fluke Fascioloides magna (right). The F. magna specimen shown here is about 7 cm long. (d) Class Cestoda includes tapeworms such as Taenia saginata , which infects both cattle and humans and can reach lengths of 4–10 meters; the specimen shown here is about 4 meters long. (credit c: modification of work by “Flukeman”/Wikimedia Commons)"
+    },
+    "OSC_Microbio_05_02_schistolLC": {
+      "source": "media/OSC_Microbio_05_02_schistolLC.jpg",
+      "sourceSha256": "0cde26979d0c4f4ed8755afc67d93c6e42e16ad9132e8c8688b70e69ec193d08",
+      "module": "m58803",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1390,
+      "variants": [
+        {
+          "width": 800,
+          "height": 855,
+          "file": "OSC_Microbio_05_02_schistolLC-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1390,
+          "file": "OSC_Microbio_05_02_schistolLC-1300.webp"
+        }
+      ],
+      "alt": "Schistoma mansoni, japonicum, and haematobium are found in feces; S. japonicum and S. haematobium are also found in urine. These can be diagnosed in the water and produce eggs which hatch releasing miracidia. The miracidia penetrate snail tissues and produce sporocysts in the snail (successive generations). The Cercariae released by snail into the water are free flowing and are the infective stage which can penetrate skin. S. mansoni travels to the large intestines, S. japonicum travels to the small intestines, and S. haemotobium travels to the rectum. The cercariae lose their tails during penetration and become schistosomalae. Theese enter circulation and migrate to portal blood in liver and mature into adults. The paired adulted worms migrate to the mesenteric venules of the bowels/rectum (laying egs that circulate to the liver and are shed in stools) – for S. mansoni and S. Japonicum. S. haematobium migrates to the venous plexus of the bladder.",
+      "caption": "The life cycle of Schistosoma spp. includes several species of water snails, which serve as secondary hosts. The parasite is transmitted to humans through contact with contaminated water and takes up residence in the veins of the digestive system. Eggs escape the host in the urine or feces and infect a snail to complete the life cycle. (credit “illustration”: modification of work by Centers for Disease Control and Prevention; credit “step 3 photo”: modification of work by Fred A. Lewis, Yung-san Liang, Nithya Raghavan & Matty Knight)"
+    },
+    "OSC_Microbio_05_02_tapewormLC-58e4": {
+      "source": "media/OSC_Microbio_05_02_tapewormLC-58e4.jpg",
+      "sourceSha256": "72fa7222a025bf593500faba0d7136b7207bf69c513f94fe04fe5caf850ef8ab",
+      "module": "m58803",
+      "kind": "photo",
+      "width": 1301,
+      "height": 1251,
+      "variants": [
+        {
+          "width": 800,
+          "height": 769,
+          "file": "OSC_Microbio_05_02_tapewormLC-58e4-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 1251,
+          "file": "OSC_Microbio_05_02_tapewormLC-58e4-1301.webp"
+        }
+      ],
+      "alt": "Eggs or gravid proplottidis from an infected individual are passed into the environment; this is the diagnostic stage. Cattle (T. saginata) and pigs (T. solium) become infected by ingesting vegetation contaminated by eggs or gravid proglottids. Oncospheres hatch, penetrating intestinal wall and circulate to musculature. The oncospheres develop into cysticerci in muscles and become infective. Humans are infected by ingesting raw or undercooked infected meat. The scolex attaches to intestine and adults are found in the small intestine.",
+      "caption": "Life cycle of a tapeworm. (credit “illustration”: modification of work by Centers for Disease Control and Prevention; credit “step 3 micrographs”: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_05_03_Hyphae_img": {
+      "source": "media/OSC_Microbio_05_03_Hyphae_img.jpg",
+      "sourceSha256": "c92129b81bb242fb21729a779e39f83780fd2907403b2bf931d43fbe1cba2242",
+      "module": "m58804",
+      "kind": "photo",
+      "width": 704,
+      "height": 257,
+      "variants": [
+        {
+          "width": 704,
+          "height": 257,
+          "file": "OSC_Microbio_05_03_Hyphae_img-704.webp"
+        }
+      ],
+      "alt": "a) a long strand with walls dividing it into rectanges. B) A long square with no walls between the nuclei.",
+      "caption": ""
+    },
+    "OSC_Microbio_05_03_TaxaTable": {
+      "source": "media/OSC_Microbio_05_03_TaxaTable.jpg",
+      "sourceSha256": "7a120b8d338b85d5d9a911c1b9a9f21d7a2e2ce65ff34c033f4bc9b140783ae3",
+      "module": "m58804",
+      "kind": "photo",
+      "width": 1100,
+      "height": 1569,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1141,
+          "file": "OSC_Microbio_05_03_TaxaTable-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 1569,
+          "file": "OSC_Microbio_05_03_TaxaTable-1100.webp"
+        }
+      ],
+      "alt": "A table labeled select groups of fungi. Four groups are discussed. Ascomycota have the characteristics: septate hyphae, ascus with ascospores in ascocarp, and conidiospores. Examples include Cup fungi, edible mushrooms, morels, truffles, neurospora, and penicillim. Medically important species include Aspergillus, Trichophyton, Microsporum, Epidemophyton, Blastomyces demititidis, and Histoplasma capsulatum. An image of Aspergillus niger shows long strands with a dark sphere at the end of one strand. Basidiomycota have the characteristics: basidia, produce basidiospores in basidiocarp. Examples include club fungi, rusts, stinkhors, puffballs, mushrooms, Cryptococcus neoformans, Amanita phalloides. Medically important species include Cryptococcus neoformans. An image shows a mushroom labeled Amanita phalloides. Microsporidia have the characteristics: lack mitochondria, peroxisomes, and centrioles; spores produce a polar tube. Examples include Enterocystozoan bieneusi which is medically important. A micrograph shows oval cells labeled microsporidia (unidentified). Zygomycota have the characteristics: mainly saprophytes, coenocytic hyphae, haploid nuclei and zygospores. Examples include Rhizopus stolonifera and the medically important mucor spp. A micrograph shows a long strand with many small dots everywhere on the slide.",
+      "caption": "(credit “Ascomycota”: modification of work by Dr. Lucille Georg, Centers for Disease Control and Prevention; credit “Microsporidia”: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_05_03_Trubrum": {
+      "source": "media/OSC_Microbio_05_03_Trubrum.jpg",
+      "sourceSha256": "14d2c89f38ccb49857e927e632bcdc03bc1af29fcc999406b1127042f92743df",
+      "module": "m58804",
+      "kind": "photo",
+      "width": 700,
+      "height": 465,
+      "variants": [
+        {
+          "width": 700,
+          "height": 465,
+          "file": "OSC_Microbio_05_03_Trubrum-700.webp"
+        }
+      ],
+      "alt": "A micrograph of a long strands with cell walls. The long strand is labeled macroconidium. Smaller spheres outside the long strand are labeled microconidia.",
+      "caption": "This micrograph shows hyphae (macroconidium) and microconidia of Trichophyton rubrum , a dermatophyte responsible for fungal infections of the skin. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_05_03_asclife": {
+      "source": "media/OSC_Microbio_05_03_asclife.jpg",
+      "sourceSha256": "248c966a3cfb380b8ed73d1fefa70ddef1a6b84f7db917219104b8d78eeb207c",
+      "module": "m58804",
+      "kind": "photo",
+      "width": 1200,
+      "height": 434,
+      "variants": [
+        {
+          "width": 800,
+          "height": 289,
+          "file": "OSC_Microbio_05_03_asclife-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 434,
+          "file": "OSC_Microbio_05_03_asclife-1200.webp"
+        }
+      ],
+      "alt": "a) a micrograph of a large oval (10 µm) labeled ascus and smaller ovals (5 µm) labeled ascospores. B) a micrograph of a long stalk with strands of spheres emanating from a sphere on the tip. The spheres are about 2 µm in diameter. C) A long strand with clusters of spheres. A small dot in each sphere is labeled nucleus.",
+      "caption": "(a) This brightfield micrograph shows ascospores being released from asci in the fungus Talaromyces flavus var. flavus . (b) This electron micrograph shows the conidia (spores) borne on the conidiophore of Aspergillus , a type of toxic fungus found mostly in soil and plants. (c) This brightfield micrograph shows the yeast Candida albicans, the causative agent of candidiasis and thrush. (credit a, b, c: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_05_03_ascomyLC": {
+      "source": "media/OSC_Microbio_05_03_ascomyLC.jpg",
+      "sourceSha256": "2c4df36cfd728f17f6b3e35bced7f6952785912864e025dd5ac4048bfe2f95d6",
+      "module": "m58804",
+      "kind": "photo",
+      "width": 1142,
+      "height": 1238,
+      "variants": [
+        {
+          "width": 800,
+          "height": 867,
+          "file": "OSC_Microbio_05_03_ascomyLC-800.webp"
+        },
+        {
+          "width": 1142,
+          "height": 1238,
+          "file": "OSC_Microbio_05_03_ascomyLC-1142.webp"
+        }
+      ],
+      "alt": "Ascomycete life cycle. Mycelia produce conidiophores which use mitosis to asexually produce spores. These spores then germinate into new mycelia. Sexual reproduction begins one hyphae produces an ascogonium and another produces an antheridium. In plasmogamy the ascogonium and antheridium fuse. Mitosis and cell division result in the formation of many dikaryotic hyphae, which form a fruiting body called the ascocarp. Asci form at the tips of these hyphae. In karyogamy the nuclein in the asci fuse to form a diploid zygote. Then meiosis produces four haploid nuclei in the ascus. Then mitosis and cell division results in eight haploid ascospores in the ascus. These ascospores then disperse and germinate into new mycelia.",
+      "caption": "The life cycle of an ascomycete is characterized by the production of asci during the sexual phase. The haploid phase is the predominant phase of the life cycle. Whether spores are produced through sexual or asexual processes, they can germinate into haploid hyphae."
+    },
+    "OSC_Microbio_05_03_basidioLC": {
+      "source": "media/OSC_Microbio_05_03_basidioLC.jpg",
+      "sourceSha256": "af94043db25a01cc6b3d4a66bd756aa7f7a4bcfc9608cfcb23ebb0d422d62a6f",
+      "module": "m58804",
+      "kind": "photo",
+      "width": 1056,
+      "height": 1149,
+      "variants": [
+        {
+          "width": 800,
+          "height": 870,
+          "file": "OSC_Microbio_05_03_basidioLC-800.webp"
+        },
+        {
+          "width": 1056,
+          "height": 1149,
+          "file": "OSC_Microbio_05_03_basidioLC-1056.webp"
+        }
+      ],
+      "alt": "Basidiomycete life cycle. Haploid basidiospres germinate to form mycelia. There are two mating types (+ and -_). In plasmogamy, fusion between + and – mating types results in formation of a dikaryotic mycelium. Under the right environmental conditions, a basidiocarp forms via mitosis. Gills of the basidiocarp contain cells called basidia. A photo of a mushroom labels the mushroom as basidiocap and basidia within the gills. Basidia form diploid nuclei via karyotamy; this produces a diploid zygote. Four haploid nuclei are formed in the basidium via meisos. Cell division produces four haploid basidiospores. These spres then disperse and germinate into new mycelia.",
+      "caption": "The life cycle of a basidiomycete alternates a haploid generation with a prolonged stage in which two nuclei (dikaryon) are present in the hyphae."
+    },
+    "OSC_Microbio_05_03_hyphae": {
+      "source": "media/OSC_Microbio_05_03_hyphae.jpg",
+      "sourceSha256": "dc033c060399ce58dea5aa8140761562627f938d289be6308d558b7b3181f367",
+      "module": "m58804",
+      "kind": "photo",
+      "width": 1301,
+      "height": 358,
+      "variants": [
+        {
+          "width": 800,
+          "height": 220,
+          "file": "OSC_Microbio_05_03_hyphae-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 358,
+          "file": "OSC_Microbio_05_03_hyphae-1301.webp"
+        }
+      ],
+      "alt": "Molds can have septate hyphae - long strands with cell walls separating the nuclei. Or they can have coenocytic (nonseptate) hyphae - long strands with no cell wall separating the nuclei. Or they can have pseudohyphae which look like chains of cells with small clusters at intervals",
+      "caption": "Multicellular fungi (molds) form hyphae, which may be septate or nonseptate. Unicellular fungi (yeasts) cells form pseudohyphae from individual yeast cells."
+    },
+    "OSC_Microbio_05_03_sexspores": {
+      "source": "media/OSC_Microbio_05_03_sexspores.jpg",
+      "sourceSha256": "43ce391f4fc9035bae7f37fa31dcd24ef800e7a56a2115ef89d3a15029ea3144",
+      "module": "m58804",
+      "kind": "photo",
+      "width": 500,
+      "height": 375,
+      "variants": [
+        {
+          "width": 500,
+          "height": 375,
+          "file": "OSC_Microbio_05_03_sexspores-500.webp"
+        }
+      ],
+      "alt": "A micrograph showing a thick tube with 8 ovals lined up within the tube.",
+      "caption": "These ascospores, lined up within an ascus, are produced sexually. (credit: Peter G. Werner)"
+    },
+    "OSC_Microbio_05_03_spores": {
+      "source": "media/OSC_Microbio_05_03_spores.jpg",
+      "sourceSha256": "7ce0dfccb44b474ce6f211c3341816e82228cbcb0681c3f0542c11d5e298ef42",
+      "module": "m58804",
+      "kind": "photo",
+      "width": 1300,
+      "height": 357,
+      "variants": [
+        {
+          "width": 800,
+          "height": 219,
+          "file": "OSC_Microbio_05_03_spores-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 357,
+          "file": "OSC_Microbio_05_03_spores-1300.webp"
+        }
+      ],
+      "alt": "a) A micrograph of long strands labeled hyphae and a sphere (labeled sporangium) on the end of one of the long strands. B) A photograph of bread mold. The white fuzz has black dots labeled sporangia.",
+      "caption": "These images show asexually produced spores. (a) This brightfield micrograph shows the release of spores from a sporangium at the end of a hypha called a sporangiophore. The organism is a Mucor sp. fungus, a mold often found indoors. (b) Sporangia grow at the ends of stalks, which appear as the white fuzz seen on this bread mold, Rhizopus stolonifer . The tips of bread mold are the dark, spore-containing sporangia. (credit a: modification of work by Centers for Disease Control and Prevention; credit b right: modification of work by “Andrew”/Flickr)"
+    },
+    "OSC_Microbio_05_03_struct": {
+      "source": "media/OSC_Microbio_05_03_struct.jpg",
+      "sourceSha256": "d574529cc99945e9cc1e4c63f6e4ad10d7751577aceec20a10f590629e5e8213",
+      "module": "m58804",
+      "kind": "photo",
+      "width": 1300,
+      "height": 811,
+      "variants": [
+        {
+          "width": 800,
+          "height": 499,
+          "file": "OSC_Microbio_05_03_struct-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 811,
+          "file": "OSC_Microbio_05_03_struct-1300.webp"
+        }
+      ],
+      "alt": "Drawing of bats in an attic. Fungal body is shown in the guano. A micrograph of the fungus shows hyphae (long strands) withc spheres labeled conidia. The life cycle shows a person inhaling spores which then travel to the lungs and divide into a yeast form. They then travel to the lymph and blood.",
+      "caption": "Histoplasma capsulatum is a dimorphic fungus that grows in soil exposed to bird feces or bat feces (guano) (top left). It can change forms to survive at different temperatures. In the outdoors, it typically grows as a mycelium (as shown in the micrograph, bottom left), but when the spores are inhaled (right), it responds to the high internal temperature of the body (37 °C [98.6 °F]) by turning into a yeast that can multiply in the lungs, causing the chronic lung disease histoplasmosis. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_05_03_zygo": {
+      "source": "media/OSC_Microbio_05_03_zygo.jpg",
+      "sourceSha256": "f6595239535ae957993b0b46d9a6614315efa0a0099d433ab1dad50daeaafe6e",
+      "module": "m58804",
+      "kind": "photo",
+      "width": 1195,
+      "height": 1226,
+      "variants": [
+        {
+          "width": 800,
+          "height": 820,
+          "file": "OSC_Microbio_05_03_zygo-800.webp"
+        },
+        {
+          "width": 1195,
+          "height": 1226,
+          "file": "OSC_Microbio_05_03_zygo-1195.webp"
+        }
+      ],
+      "alt": "Zygomycete life cycle. The mycelia can undergo asexual reproduction by forming spores via mitosis. The spores then form mycelia by germination. The haploid spores can also undergo sexual reproduction. The first step is germination when mycelia form. If the two mating types (+ and -) are in close proximity, extensions called gametangia form between them. Next is plasmogamy. This is the fusion between the + and – mating types resulting in a zygosporangium with multiple haploid nucei. The zygosporangiom forms a thick, protective coat. Next the nuclei fuse to form a zygote with multiple diploid nuclei in karyogamy. This forms a diploid zygote. Next is mitosis and germination where the sporangium grows on a short stalk and the haploid spores are formed inside. The spores are released in germination and we are back to the spore stage of the life cycle.",
+      "caption": "Zygomycetes have sexual and asexual life cycles. In the sexual life cycle, + and – mating types conjugate to form a zygosporangium."
+    },
+    "OSC_Microbio_05_04_algae": {
+      "source": "media/OSC_Microbio_05_04_algae.jpg",
+      "sourceSha256": "8937bbb75aa1b943cb5e397fe9674b9311f5d4c991d9521349de0470c5275e19",
+      "module": "m58805",
+      "kind": "photo",
+      "width": 1287,
+      "height": 1358,
+      "variants": [
+        {
+          "width": 800,
+          "height": 844,
+          "file": "OSC_Microbio_05_04_algae-800.webp"
+        },
+        {
+          "width": 1287,
+          "height": 1358,
+          "file": "OSC_Microbio_05_04_algae-1287.webp"
+        }
+      ],
+      "alt": "a) A photograph of long green kelp in the ocean b) A photograph of a red leafy structure. C) A photograph of a green leafy structure. D) a photograph of lighted regions of a waterway. E) A micrograph of cells of various shapes that look like they are made out of glass. F) a micrograph of a sphere made of many greed dots. Smaller greens spheres can be seen inside the larger sphere. The smaller spheres are released when the larger one ruptures.",
+      "caption": "(a) These large multicellular kelps are members of the brown algae. Note the “leaves” and “stems” that make them appear similar to green plants. (b) This is a species of red algae that is also multicellular. (c) The green alga Halimeda incrassata , shown here growing on the sea floor in shallow water, appears to have plant-like structures, but is not a true plant. (d) Bioluminesence, visible in the cresting wave in this picture, is a phenomenon of certain dinoflagellates. (e) Diatoms (pictured in this micrograph) produce silicaceous tests (skeletons) that form diatomaceous earths. (f) Colonial green algae, like volvox in these three micrographs, exhibit simple cooperative associations of cells. (credit a, e: modification of work by NOAA; credit b: modification of work by Ed Bierman; credit c: modification of work by James St. John; credit d: modification of work by “catalano82”/Flickr; credit f: modification of work by Dr. Ralf Wagner)"
+    },
+    "OSC_Microbio_05_04_dino": {
+      "source": "media/OSC_Microbio_05_04_dino.jpg",
+      "sourceSha256": "456a0a7f2faea1b16d978a8ac30c5be7850caa6c81943fb06b51beef2336e14d",
+      "module": "m58805",
+      "kind": "photo",
+      "width": 700,
+      "height": 456,
+      "variants": [
+        {
+          "width": 700,
+          "height": 456,
+          "file": "OSC_Microbio_05_04_dino-700.webp"
+        }
+      ],
+      "alt": "A micrograph of a square-shaped organism with two long projections.",
+      "caption": "The dinoflagellates exhibit great diversity in shape. Many are encased in cellulose armor and have two flagella that fit in grooves between the plates. Movement of these two perpendicular flagella causes a spinning motion. (credit: modification of work by CSIRO)"
+    },
+    "OSC_Microbio_05_04_green": {
+      "source": "media/OSC_Microbio_05_04_green.jpg",
+      "sourceSha256": "c90364ad1e5b5e7cb9fa4197e62ad421cadd931feb0832e4bbedd5912d62134d",
+      "module": "m58805",
+      "kind": "photo",
+      "width": 1300,
+      "height": 500,
+      "variants": [
+        {
+          "width": 800,
+          "height": 307,
+          "file": "OSC_Microbio_05_04_green-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 500,
+          "file": "OSC_Microbio_05_04_green-1300.webp"
+        }
+      ],
+      "alt": "An oval cell with 2 flagella coming out of one end. A large circle in the cell is labeled nucleus. A group of smaller red circles are labeled stigma (eyespot). Green ovals in the cell are labeled chloroplast and white circles are labeled starch granules.",
+      "caption": "Chlamydomonas is a unicellular green alga."
+    },
+    "OSC_Microbio_05_05_lichens": {
+      "source": "media/OSC_Microbio_05_05_lichens.jpg",
+      "sourceSha256": "4f7624e33e06337d12ea640dd7de4a07204c55ec6b99b0ca84a765e337cfd3c7",
+      "module": "m58806",
+      "kind": "photo",
+      "width": 1200,
+      "height": 443,
+      "variants": [
+        {
+          "width": 800,
+          "height": 295,
+          "file": "OSC_Microbio_05_05_lichens-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 443,
+          "file": "OSC_Microbio_05_05_lichens-1200.webp"
+        }
+      ],
+      "alt": "Photographs of lichen. A) is red-orange spots on a rock. B) is green leaf-like structures on a tree. C) is green hair-like structures on a tree.",
+      "caption": "Examples of the three types of lichens are shown here. (a) This is a crustose lichen found mostly on marine rocks, Caloplaca marina . (b) This is a foliose lichen, Flavoparmelia caperata . (c) This is a fruticose lichen, Letharia vulpina , which is sufficiently poisonous that it was once used to make arrowheads. (credit b, c: modification of work by Jason Hollinger)"
+    },
+    "OSC_Microbio_05_05_lichenstr": {
+      "source": "media/OSC_Microbio_05_05_lichenstr.jpg",
+      "sourceSha256": "9f51b9b329bc86b34c45e9cda30ef85b7e042dda863180392c886bc5e1671a7a",
+      "module": "m58806",
+      "kind": "photo",
+      "width": 686,
+      "height": 727,
+      "variants": [
+        {
+          "width": 686,
+          "height": 727,
+          "file": "OSC_Microbio_05_05_lichenstr-686.webp"
+        }
+      ],
+      "alt": "A drawing of a lichen which looks mostly like a web-work of strands. The top region is labeled cortex. The next region contains green circles and is labeled algal zone. The enxt region is labeled medulla. The next is lower cortex. The bottom region with forms triangular projections is labeled rhizine.",
+      "caption": "This cross-section of a lichen thallus shows its various components. The upper cortex of fungal hyphae provides protection. Photosynthesis occurs in the algal zone. The medulla consists of fungal hyphae. The lower cortex also provides protection. The rhizines anchor the thallus to the substrate."
+    },
+    "OSC_Microbio_06_00_splash": {
+      "source": "media/OSC_Microbio_06_00_splash.jpg",
+      "sourceSha256": "3297b8d4ba227a76955749f8a24c6aded23a806d252fcc8981d6faefddf24710",
+      "module": "m58807",
+      "kind": "photo",
+      "width": 1950,
+      "height": 650,
+      "variants": [
+        {
+          "width": 800,
+          "height": 266,
+          "file": "OSC_Microbio_06_00_splash-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 533,
+          "file": "OSC_Microbio_06_00_splash-1600.webp"
+        }
+      ],
+      "alt": "The electron micrograph shows linear viruses wrapped into a delta-shaped structure. The map shows 2014 Ebola epidemics in West Africa. There were 17,124 total cases and 6.070 total deaths. Senegal had 1 case and no deaths. Mali had 8 cases and 6 deaths. Guinea had 2, 164 cases and 11,326 deaths, Sierra Leone had 7,312 cases and 1,583 deaths, Liberia had 7,635 cases and 3,145 deaths. Nigeria had 20 cases and 8 deaths.",
+      "caption": "The year 2014 saw the first large-scale outbreak of Ebola virus (electron micrograph, left) in human populations in West Africa (right). Such epidemics are now widely reported and documented, but viral epidemics are sure to have plagued human populations since the origin of our species. (credit left: modification of work by Thomas W. Geisbert)"
+    },
+    "OSC_Microbio_06_01_T4_img": {
+      "source": "media/OSC_Microbio_06_01_T4_img.jpg",
+      "sourceSha256": "24946b673333b16c65b7ea9df8203f18f49f61594c515c1b58e405eeed3d1d62",
+      "module": "m58808",
+      "kind": "photo",
+      "width": 316,
+      "height": 362,
+      "variants": [
+        {
+          "width": 316,
+          "height": 362,
+          "file": "OSC_Microbio_06_01_T4_img-316.webp"
+        }
+      ],
+      "alt": "An illustrated bacteriophage is shown. There are arrows pointing to its different parts labeled A, B, C, and D.",
+      "caption": ""
+    },
+    "OSC_Microbio_06_01_TMV": {
+      "source": "media/OSC_Microbio_06_01_TMV.jpg",
+      "sourceSha256": "0bf725cc6307533fa8d2872ea2775700e1dee84300927cfaf760f47d4b74c862",
+      "module": "m58808",
+      "kind": "photo",
+      "width": 1200,
+      "height": 390,
+      "variants": [
+        {
+          "width": 800,
+          "height": 260,
+          "file": "OSC_Microbio_06_01_TMV-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 390,
+          "file": "OSC_Microbio_06_01_TMV-1200.webp"
+        }
+      ],
+      "alt": "Figure a is an electron micrograph showing long rod shaped viruses. Figure B shows four diseased plant leaves. The leaves are yellowing, mottled, and dying.",
+      "caption": "(a) Tobacco mosaic virus (TMV) viewed with transmission electron microscope. (b) Plants infected with tobacco mosaic disease (TMD), caused by TMV. (credit a: modification of work by USDA Agricultural Research Service—scale-bar data from Matt Russell; credit b: modification of work by USDA Forest Service, Department of Plant Pathology Archive North Carolina State University)"
+    },
+    "OSC_Microbio_06_01_shapes": {
+      "source": "media/OSC_Microbio_06_01_shapes.jpg",
+      "sourceSha256": "b3605816d385928501f432c0fc0750c8e3d5b9d4aac0c77a0d2bde7581f518ff",
+      "module": "m58808",
+      "kind": "photo",
+      "width": 1292,
+      "height": 992,
+      "variants": [
+        {
+          "width": 800,
+          "height": 614,
+          "file": "OSC_Microbio_06_01_shapes-800.webp"
+        },
+        {
+          "width": 1292,
+          "height": 992,
+          "file": "OSC_Microbio_06_01_shapes-1292.webp"
+        }
+      ],
+      "alt": "Figure a is a helical virus which has a long linear structure. The outer proteins are small spheres arranged into a long, hollow tube. Inside the tube is the genetic material. Tobacco mosaic virus is an example of a helical virus. Figure b is an Icosehedral viruses have a polyhedron structure. The example shown is human rhinovirus which has a pentagon structure. Complex viruses have a more complex structure. The example is variola which has an ovoid structure.",
+      "caption": "Viral capsids can be (a) helical, (b) polyhedral, or (c) have a complex shape. (credit a “micrograph”: modification of work by USDA ARS; credit b “micrograph”: modification of work by U.S. Department of Energy)"
+    },
+    "OSC_Microbio_06_01_sizes": {
+      "source": "media/OSC_Microbio_06_01_sizes.jpg",
+      "sourceSha256": "eeccadfacfcf62f014c17fe51b8a54ce796b8cb4a32edf67b07011bbc4ed9089",
+      "module": "m58808",
+      "kind": "photo",
+      "width": 1301,
+      "height": 769,
+      "variants": [
+        {
+          "width": 800,
+          "height": 473,
+          "file": "OSC_Microbio_06_01_sizes-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 769,
+          "file": "OSC_Microbio_06_01_sizes-1301.webp"
+        }
+      ],
+      "alt": "A scale showing sizes of various sentities. The largest is a frog egg ad 1 mm. Human egg cells and pllen are approximately 400 µm. Typical plant ant animal cells reange from 10 to 100 µm. Red blood cells are uner 10 µm. Mitochondria and bacteria are approximately 1 µm. Smallpox is approximately 500 nm. Flu virus is approximately 100 nm. Polio virus is approximately 50 nm. Proteins range from 5 – 10 nm. Lipids range from 1 – 5 nm. Atoms are approximately 0.1 nm.",
+      "caption": "The size of a virus is small relative to the size of most bacterial and eukaryotic cells and their organelles."
+    },
+    "OSC_Microbio_06_01_structure": {
+      "source": "media/OSC_Microbio_06_01_structure.jpg",
+      "sourceSha256": "280c2f322a615270b6de74e898f4c8c0f4f0f9553b1fb8e8a63718f03bd246f9",
+      "module": "m58808",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1168,
+      "variants": [
+        {
+          "width": 800,
+          "height": 778,
+          "file": "OSC_Microbio_06_01_structure-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1168,
+          "file": "OSC_Microbio_06_01_structure-1200.webp"
+        }
+      ],
+      "alt": "Part A shows a micrograph of atadenovirus, which looks like a wispy sphere that has a larger, flatter structure attached to the bottom. To the right of that is an illustration of the atadenovirus that labels capsomeres, capsids, DNA, and spikes made of glycoproteins. Part B shows the enveloped human immunodeficiency virus in black and white. To the right is an illustration that labels the matrix protein, viral envelope, spikes made of glycoproteins, reverse transcriptase, capsids, and RNA.",
+      "caption": "(a) The naked atadenovirus uses spikes made of glycoproteins from its capsid to bind to host cells. (b) The enveloped human immunodeficiency virus uses spikes made of glycoproteins embedded in its envelope to bind to host cells (credit a “micrograph”: modification of work by NIAID; credit b “micrograph”: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_06_01_virusbac-43d2": {
+      "source": "media/OSC_Microbio_06_01_virusbac-43d2.jpg",
+      "sourceSha256": "4e590369b19361b2f64afb2f97ced76bd9a866d7b288067412e94290d53bb793",
+      "module": "m58808",
+      "kind": "photo",
+      "width": 1184,
+      "height": 427,
+      "variants": [
+        {
+          "width": 800,
+          "height": 288,
+          "file": "OSC_Microbio_06_01_virusbac-43d2-800.webp"
+        },
+        {
+          "width": 1184,
+          "height": 427,
+          "file": "OSC_Microbio_06_01_virusbac-43d2-1184.webp"
+        }
+      ],
+      "alt": "Figure a is an electron micrograph showing a virus on the surface of a bacterial cell. The virus has a large head region, a thick neck and thin spider-like legs attached to the bacterium. Figure b is a drawing that labels the outside of the head as the capsid with the viral genome inside. The neck as the sheath and the legs as tail fibers.",
+      "caption": "(a) In this transmission electron micrograph, a bacteriophage (a virus that infects bacteria) is dwarfed by the bacterial cell it infects. (b) An illustration of the bacteriophage in the micrograph. (credit a: modification of work by U.S. Department of Energy, Office of Science, LBL, PBD)"
+    },
+    "OSC_Microbio_06_02_RNAvirus": {
+      "source": "media/OSC_Microbio_06_02_RNAvirus.jpg",
+      "sourceSha256": "5e17e61c99d5fb5ed18bde023377952b4a4aea49bae93ddd6f138d5cb1bc81a1",
+      "module": "m58809",
+      "kind": "photo",
+      "width": 857,
+      "height": 289,
+      "variants": [
+        {
+          "width": 800,
+          "height": 269,
+          "file": "OSC_Microbio_06_02_RNAvirus-800.webp"
+        },
+        {
+          "width": 857,
+          "height": 289,
+          "file": "OSC_Microbio_06_02_RNAvirus-857.webp"
+        }
+      ],
+      "alt": "Viruses with −ssRNA (negative single-stranded RNA) use RdRP (viral RNA-dependent RNA polymerase) to make +ssRNA (positive single stranded RNA). RdRP can also be used to covert +ssRNA to −ssRNA. +ssRNA uses host ribosomes to make viral proteins.",
+      "caption": "RNA viruses can contain +ssRNA that can be directly read by the ribosomes to synthesize viral proteins. Viruses containing −ssRNA must first use the −ssRNA as a template for the synthesis of +ssRNA before viral proteins can be synthesized."
+    },
+    "OSC_Microbio_06_02_RepAnVirus": {
+      "source": "media/OSC_Microbio_06_02_RepAnVirus.jpg",
+      "sourceSha256": "f9f4f765abcf345f7f2298a26a2cfdf4e65eb85ceb786000241cd9f996f20705",
+      "module": "m58809",
+      "kind": "photo",
+      "width": 1202,
+      "height": 945,
+      "variants": [
+        {
+          "width": 800,
+          "height": 629,
+          "file": "OSC_Microbio_06_02_RepAnVirus-800.webp"
+        },
+        {
+          "width": 1202,
+          "height": 945,
+          "file": "OSC_Microbio_06_02_RepAnVirus-1202.webp"
+        }
+      ],
+      "alt": "Steps of influenza infection. Step 1 is attachment when the influenza virus becomes attached to a target epithelial cell. This image shows a spherical virus binding to the surface of a host cell. Step 2 is penetration when the cell engulfs the virus by endocytosis; this shows the virus within a vacuole. Step 3 is uncoating when the viral contents are released; the image shows the virus being released from the vacuole. Step 4 is biosynthesis when the viral RNA enters the nucleus where it is replicated by RNA polymerase. Step 5 is assembly when the new phage particles are assembled. Step 6 is release when new viral particles are made and released into the extracellular fluid. The cell, which is not killed in the process continues to make new viruses.",
+      "caption": "Influenza virus is one of the few RNA viruses that replicates in the nucleus of cells. In influenza virus infection, viral glycoproteins attach the virus to a host epithelial cell. As a result, the virus is engulfed. Viral RNA and viral proteins are made and assembled into new virions that are released by budding."
+    },
+    "OSC_Microbio_06_02_growth": {
+      "source": "media/OSC_Microbio_06_02_growth.jpg",
+      "sourceSha256": "cfec0bb2c5eae58e5955f3a7bf0043dc268a840e876c611f67e4151b41875f7b",
+      "module": "m58809",
+      "kind": "photo",
+      "width": 899,
+      "height": 557,
+      "variants": [
+        {
+          "width": 800,
+          "height": 495,
+          "file": "OSC_Microbio_06_02_growth-800.webp"
+        },
+        {
+          "width": 899,
+          "height": 557,
+          "file": "OSC_Microbio_06_02_growth-899.webp"
+        }
+      ],
+      "alt": "The Y axis of the graph is “logarithm of number of infectious virions”; the X axis of the grap his “hours”. The beginning of the line has a a downward slope and is labeled “1: Inoculation: inoculum of virus binds to cells”. Next is a flat region of the line labeled “2: Eclipse: virions penetrate the cell”. Next is an upward slope labeled “3: Burst: host cells release many viral particles”. Next is another flat region labeled “4: Burst size: number of virions released per bacterium”.",
+      "caption": "The one-step multiplication curve for a bacteriophage population follows three steps: 1) inoculation, during which the virions attach to host cells; 2) eclipse, during which entry of the viral genome occurs; and 3) burst, when sufficient numbers of new virions are produced and emerge from the host cell. The burst size is the maximum number of virions produced per bacterium."
+    },
+    "OSC_Microbio_06_02_hazmat": {
+      "source": "media/OSC_Microbio_06_02_hazmat.jpg",
+      "sourceSha256": "6179a230d0bf4d5c516e27d144107b7a6054b9267c386f1c00468df70402dd09",
+      "module": "m58809",
+      "kind": "photo",
+      "width": 500,
+      "height": 396,
+      "variants": [
+        {
+          "width": 500,
+          "height": 396,
+          "file": "OSC_Microbio_06_02_hazmat-500.webp"
+        }
+      ],
+      "alt": "A photograph of two individuals in white biohazard suits that completely covers the individual, complete with head and face covering. They are working in a hood.",
+      "caption": "Researchers working with Ebola virus use layers of defenses against accidental infection, including protective clothing, breathing systems, and negative air-pressure cabinets for bench work. (credit: modification of work by Randal J. Schoepp)"
+    },
+    "OSC_Microbio_06_02_hiv": {
+      "source": "media/OSC_Microbio_06_02_hiv.jpg",
+      "sourceSha256": "232ca1a811b51b43fe1daa856e4a167bca35e2ad69ad3fd71a3451252340f6c9",
+      "module": "m58809",
+      "kind": "photo",
+      "width": 1201,
+      "height": 1515,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1009,
+          "file": "OSC_Microbio_06_02_hiv-800.webp"
+        },
+        {
+          "width": 1201,
+          "height": 1515,
+          "file": "OSC_Microbio_06_02_hiv-1201.webp"
+        }
+      ],
+      "alt": "The HIV viral cycle. Step 1: the HIV fuses to the host-cell surface. Specifically, the gp120 proteins on the surface of the virus binds to the CD4. This then binds to a smaller coreceptor (CCR5 or CXCR4). Step 2: HIV RNA, reverse transtriptase, integrase, and other viral proteins enter the host cell. The virus is brought into the host cell and uncoated; both viral RNA and reverse transcriptase are loosed into the cell. Step 3: Viral DNA is formed by reverse transcription. Step 4: Viral DNA is transported across the nucleus and integrates into the host DNA. Integrase found on the viral DNA. The viral DNA in the host DNA is called provirus. Step 5: New viral RNA is used as genomic RNA and to make viral proteins. New viral RNA strands are made and leave the nucleus. Step 6: New viral RNA and proteins move to the cell surface and a new immature HIV forms. The viral is assembled in an outbulging of the host cell. Step 7: The virus matures when protease releases the proteins that form the mature HIV. Mature virion is released.",
+      "caption": "HIV, an enveloped, icosahedral retrovirus, attaches to a cell surface receptor of an immune cell and fuses with the cell membrane. Viral contents are released into the cell, where viral enzymes convert the single-stranded RNA genome into DNA and incorporate it into the host genome. (credit: modification of work by NIAID, NIH)"
+    },
+    "OSC_Microbio_06_02_latency": {
+      "source": "media/OSC_Microbio_06_02_latency.png",
+      "sourceSha256": "4dae387098a18999e9996b65a84674e42cacdfee26a34c43b6a7f6ff8dbd6de6",
+      "module": "m58809",
+      "kind": "diagram",
+      "width": 1394,
+      "height": 553,
+      "variants": [
+        {
+          "width": 800,
+          "height": 317,
+          "file": "OSC_Microbio_06_02_latency-800.webp"
+        },
+        {
+          "width": 1394,
+          "height": 553,
+          "file": "OSC_Microbio_06_02_latency-1394.webp"
+        }
+      ],
+      "alt": "Figure a is an electron micrograph that shows a a shpere within a larger blob-shaped structure. Figure b shows raised red dots on a person’s face.",
+      "caption": "(a) Varicella-zoster, the virus that causes chickenpox, has an enveloped icosahedral capsid visible in this transmission electron micrograph. Its double-stranded DNA genome becomes incorporated in the host DNA. (b) After a period of latency, the virus can reactivate in the form of shingles, usually manifesting as a painful, localized rash on one side of the body. (credit a: modification of work by Erskine Palmer and B.G. Partin—scale-bar data from Matt Russell; credit b: Paulo O / Flickr (CC-BY)"
+    },
+    "OSC_Microbio_06_02_lyscycle": {
+      "source": "media/OSC_Microbio_06_02_lyscycle.jpg",
+      "sourceSha256": "f13f4f02d69b38b61f7e6432670fccd74b2c7749ab9b70196d7217b59cd861c6",
+      "module": "m58809",
+      "kind": "photo",
+      "width": 1300,
+      "height": 715,
+      "variants": [
+        {
+          "width": 800,
+          "height": 440,
+          "file": "OSC_Microbio_06_02_lyscycle-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 715,
+          "file": "OSC_Microbio_06_02_lyscycle-1300.webp"
+        }
+      ],
+      "alt": "The steps of the lytic and lysogenic cycles. First the phage infects a cell; this shows the virus sitting on the outside of a cell and injecting DNA into the cell. In the next step the phage DNA becomes incorporated into the host genome. In the next step, the cell divides and prophage DNA is passed to the daughter cells. The image shows the cell dividing and the viral DNA within the host genome also being passed to the daughter cell. The next step shows the viral DNA jumping out of the host genome. Under stressful conditions, the prophage DNA is excised from the bacterial chromosomes and enters the lytic cycle. Next, the phage DNA replicates and phage proteins are made. This shows viral pieces being made within the cell. The next step is when the new phage particles are assembled. This shows the virus being build. The final step is when the cell lyses and releases the newly made phages.",
+      "caption": "A temperate bacteriophage has both lytic and lysogenic cycles. In the lysogenic cycle, phage DNA is incorporated into the host genome, forming a prophage, which is passed on to subsequent generations of cells. Environmental stressors such as starvation or exposure to toxic chemicals may cause the prophage to be excised and enter the lytic cycle."
+    },
+    "OSC_Microbio_06_02_lyticcycle": {
+      "source": "media/OSC_Microbio_06_02_lyticcycle.jpg",
+      "sourceSha256": "fdd956dbbed57dd05ab9dcf937b31e3080922b94b5c0460b7c0b8e3b4920e4b9",
+      "module": "m58809",
+      "kind": "photo",
+      "width": 1192,
+      "height": 493,
+      "variants": [
+        {
+          "width": 800,
+          "height": 331,
+          "file": "OSC_Microbio_06_02_lyticcycle-800.webp"
+        },
+        {
+          "width": 1192,
+          "height": 493,
+          "file": "OSC_Microbio_06_02_lyticcycle-1192.webp"
+        }
+      ],
+      "alt": "This figure outlines the stages of the lytic cycle. Step 1 is attachment when the phage attaches to the surface of the host. The bacteriophage is shown sitting on the surface of the bacterial host cell. Step 2 is penetration when the viral DNA enters the host cell. The image shows DNA from within the virus being injected into the host DNA. Step 3 is biosynthesis when the phage DNA replicates and the phage proteins are made. The image shows various pieces of virus being built within the cell. Step 4 is maturation when the new phage particles are assembled. This shows the viral components being put together in the cell. The fifth step is lysis when the cell lyses and the newly made phages are released. This shows the cell bursting and built viruses being released.",
+      "caption": "A virulent phage shows only the lytic cycle pictured here. In the lytic cycle, the phage replicates and lyses the host cell."
+    },
+    "OSC_Microbio_06_02_stages_img": {
+      "source": "media/OSC_Microbio_06_02_stages_img.jpg",
+      "sourceSha256": "d33bde00d69fa9e59018fab6c7e61029242d8700ffd17a4cac01f93455ebbafb",
+      "module": "m58809",
+      "kind": "photo",
+      "width": 1191,
+      "height": 438,
+      "variants": [
+        {
+          "width": 800,
+          "height": 294,
+          "file": "OSC_Microbio_06_02_stages_img-800.webp"
+        },
+        {
+          "width": 1191,
+          "height": 438,
+          "file": "OSC_Microbio_06_02_stages_img-1191.webp"
+        }
+      ],
+      "alt": "A shows the bacteriophage sitting on the outside of the cell; the phage DNA is inside the phage. The host cell shows host DNA. B shows phage DNA entering host. C shows phage DNA replicates as well as protein particles. D shows new bacteriophages forming. E shows new phage particles exiting host bacterial cell.",
+      "caption": ""
+    },
+    "OSC_Microbio_06_02_transd": {
+      "source": "media/OSC_Microbio_06_02_transd.jpg",
+      "sourceSha256": "c1b6e1733f4787362214b69261784ce8d5cd8215d7169c9e0db3c7524d31a84b",
+      "module": "m58809",
+      "kind": "photo",
+      "width": 1300,
+      "height": 519,
+      "variants": [
+        {
+          "width": 800,
+          "height": 319,
+          "file": "OSC_Microbio_06_02_transd-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 519,
+          "file": "OSC_Microbio_06_02_transd-1300.webp"
+        }
+      ],
+      "alt": "The steps of specialized transduction. Step 1 is viral attachment and penetration. This is when the phage infects a cell. This shows the virus sitting on the outside of a cell and injecting DNA into the cell. Step 2 is integration when the phage DNA becomes incorporated into the host genome. Step 3 is excisionwhen the phage is excised from the bacterial chromosomes along with a short piece of bacterial DNA. The DNA is then packaged into newly formed capsids. When the virus particles are assembled the DNA contains both viral and host segments. Step 4 is infection when the phage contains both viral and bacterial DNA infects a new host cell. Step 5 is recombination when the phage DNA along with the attached bacterial DNA are incorporated into a new cell. The image shows a new bacterial cell with virus DNA as well as other bacterial DNA in its genome.",
+      "caption": "This flowchart illustrates the mechanism of specialized transduction. An integrated phage excises, bringing with it a piece of the DNA adjacent to its insertion point. On reinfection of a new bacterium, the phage DNA integrates along with the genetic material acquired from the previous host."
+    },
+    "OSC_Microbio_06_03_CPETable": {
+      "source": "media/OSC_Microbio_06_03_CPETable.jpg",
+      "sourceSha256": "e32c674551a2a0374fa949543d619ce63a5121a261b9379514138e03073e8599",
+      "module": "m58810",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1524,
+      "variants": [
+        {
+          "width": 800,
+          "height": 938,
+          "file": "OSC_Microbio_06_03_CPETable-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1524,
+          "file": "OSC_Microbio_06_03_CPETable-1300.webp"
+        }
+      ],
+      "alt": "This is a table of cytopathic effects of specific viruses. The first example is paramyxovirus which causes syncytium and faint basophilic cytoplasmic inclusion bodies. Small structures are seen within a cell. Next, Poxyvirus results in pink eosinophilic cytoplasmic inclusion bodies (seen as small structures) and cell swelling. Next, Herpesvirus causes cytoplasmic stranding (seen as an eleongation of the cytoplasm) and nuclear inclusion bodies (seen as structures within the nucleus). Finally, Adenovirus causes cell enlargement, rounding, and distinctive grape-like clusters.",
+      "caption": "(credit “micrographs”: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_06_03_EIA": {
+      "source": "media/OSC_Microbio_06_03_EIA.jpg",
+      "sourceSha256": "05f91fce1bcdd954cb2ae9ae3ec8d955d6b72fd17bf77520bb712f051fa4f4de",
+      "module": "m58810",
+      "kind": "photo",
+      "width": 1144,
+      "height": 1503,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1051,
+          "file": "OSC_Microbio_06_03_EIA-800.webp"
+        },
+        {
+          "width": 1144,
+          "height": 1503,
+          "file": "OSC_Microbio_06_03_EIA-1144.webp"
+        }
+      ],
+      "alt": "The explanation of EIA is separated to show what occurs in a positive sample and what occurs in a negative sample. First patient sample is applied to a membrane filter. If the sample contains viruses they are trapped by the filter. Next, antibody with enzyme conjugate is added. Antibody will attach to antigen if present. Next is a wash step. If the virus is present the enzyme binds to the virus, otherwise the enzyme washes away. Finally substrate is added. If the antibody is present (because it is bound to the virus) the attached enzyme causes a color change. If no enzyme linked antibody is present, no color change occurs.",
+      "caption": "Similar to rapid, over-the-counter pregnancy tests, EIAs for viral antigens require a few drops of diluted patient serum or plasma applied to a membrane filter. The membrane filter has been previously modified and embedded with antibody to viral antigen and internal controls. Antibody conjugate is added to the filter, with the targeted antibody attached to the antigen (in the case of a positive test). Excess conjugate is washed off the filter. Substrate is added to activate the enzyme-mediated reaction to reveal the color change of a positive test. (credit: modification of work by “Cavitri”/Wikimedia Commons)"
+    },
+    "OSC_Microbio_06_03_agglutin": {
+      "source": "media/OSC_Microbio_06_03_agglutin.jpg",
+      "sourceSha256": "96ba19b8d80eab4bc63f3a7558a63cf5284126f731dc2143df521d75e7b2f7fc",
+      "module": "m58810",
+      "kind": "photo",
+      "width": 1051,
+      "height": 715,
+      "variants": [
+        {
+          "width": 800,
+          "height": 544,
+          "file": "OSC_Microbio_06_03_agglutin-800.webp"
+        },
+        {
+          "width": 1051,
+          "height": 715,
+          "file": "OSC_Microbio_06_03_agglutin-1051.webp"
+        }
+      ],
+      "alt": "This chart has three columns labeled components, interactions and mictotiter results. In row A the components are the red blood cells which do not interact with anything and show no reaction in a microtiter result. The lack of reaction is seen as a small red dot in the center of the well. In row B the components are viruses and red blood cells. The viruses and red blood cells clump together and this is seen in a microtiter result as redness throughout the well. This is called hemagglutination. In row C, the components are viruses, red blood cells and antibodies. The viruses and antibodies clump together but the red blood cells do not clump with anything. This is again seen as no reaction; this is called hemagglutination inhibition.",
+      "caption": "This chart shows the possible outcomes of a hemagglutination test. Row A: Erythrocytes do not bind together and will sink to the bottom of the well plate; this becomes visible as a red dot in the center of the well. Row B: Many viruses have hemagglutinins that causes agglutination of erythrocytes; the resulting hemagglutination forms a lattice structure that results in red color throughout the well. Row C: Virus-specific antibody, the viruses, and the erythrocytes are added to the well plate. The virus-specific antibodies inhibit agglutination, as can be seen as a red dot in the bottom of the well. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_06_03_cult": {
+      "source": "media/OSC_Microbio_06_03_cult.jpg",
+      "sourceSha256": "42f7964583a65f88f164eb79f9bce52592184b29a8a7f0267635ccdd68bb9afb",
+      "module": "m58810",
+      "kind": "photo",
+      "width": 1090,
+      "height": 647,
+      "variants": [
+        {
+          "width": 800,
+          "height": 475,
+          "file": "OSC_Microbio_06_03_cult-800.webp"
+        },
+        {
+          "width": 1090,
+          "height": 647,
+          "file": "OSC_Microbio_06_03_cult-1090.webp"
+        }
+      ],
+      "alt": "Figure a begins with induvial cells isolated from lung tissue. These few cells are put on a plate and are the primary cell culture. These cells will grow to fill the plate and will stop when the plate is full; this is called contact inhibition. In order to grow more cells some of these cells are transferred to a new plate; this is now called a secondary cell culture. Figure b begins with transformed cells or individual cells isolated from a tumor that are put on a plate. These cells form a continuous culture because they continue to grow on top of each other even after the plate is full.",
+      "caption": "Cells for culture are prepared by separating them from their tissue matrix. (a) Primary cell cultures grow attached to the surface of the culture container. Contact inhibition slows the growth of the cells once they become too dense and begin touching each other. At this point, growth can only be sustained by making a secondary culture. (b) Continuous cell cultures are not affected by contact inhibition. They continue to grow regardless of cell density. (credit “micrographs”: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_06_03_egg": {
+      "source": "media/OSC_Microbio_06_03_egg.jpg",
+      "sourceSha256": "f824f614581f7c89123c2b8500cb30398d5e5c3cb9aae9fc53be686648db84e1",
+      "module": "m58810",
+      "kind": "photo",
+      "width": 1200,
+      "height": 474,
+      "variants": [
+        {
+          "width": 800,
+          "height": 316,
+          "file": "OSC_Microbio_06_03_egg-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 474,
+          "file": "OSC_Microbio_06_03_egg-1200.webp"
+        }
+      ],
+      "alt": "Figure a shows a technician injecting a tray of eggs with a syringe. Figure b shows an egg with syringes in various region such as an outer layer (the chorioallantoic membrane), an inner region called the amniotic cavity and another inner region called the yolk sac. The embryo is connected to the yolk sac and is within the amniotic cavity. Outside the chorioallantoic membrane is albumin and around that is the shell.",
+      "caption": "(a) The cells within chicken eggs are used to culture different types of viruses. (b) Viruses can be replicated in various locations within the egg, including the chorioallantoic membrane, the amniotic cavity, and the yolk sac. (credit a: modification of work by “Chung Hoang”/YouTube)"
+    },
+    "OSC_Microbio_06_03_filters": {
+      "source": "media/OSC_Microbio_06_03_filters.jpg",
+      "sourceSha256": "f45e4c64ff379b78dd3553eedb514919ad580707e2e6f8e8985abee2de788b76",
+      "module": "m58810",
+      "kind": "photo",
+      "width": 1200,
+      "height": 695,
+      "variants": [
+        {
+          "width": 800,
+          "height": 463,
+          "file": "OSC_Microbio_06_03_filters-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 695,
+          "file": "OSC_Microbio_06_03_filters-1200.webp"
+        }
+      ],
+      "alt": "Figure a is an electron micrograph showing pores and bacteria that are larger than the pores. Figure b is a drawing showing three particles in a container above a flask. A filter pore size of 5 µm blocks the largest of the particles and lets the smaller two through. The filter pore size of 200 nm (0.2 µm) only allows only the smallest particles through.",
+      "caption": "Membrane filters can be used to remove cells or viruses from a solution. (a) This scanning electron micrograph shows rod-shaped bacterial cells captured on the surface of a membrane filter. Note differences in the comparative size of the membrane pores and bacteria. Viruses will pass through this filter. (b) The size of the pores in the filter determines what is captured on the surface of the filter (animal [red] and bacteria [blue]) and removed from liquid passing through. Note the viruses (green) pass through the finer filter. (credit a: modification of work by U.S. Department of Energy)"
+    },
+    "OSC_Microbio_06_03_hela": {
+      "source": "media/OSC_Microbio_06_03_hela.jpg",
+      "sourceSha256": "ef7a8a773cbf130138e4307eee289cc991b8f106a1b8653ea7ab56dd28557154",
+      "module": "m58810",
+      "kind": "photo",
+      "width": 495,
+      "height": 258,
+      "variants": [
+        {
+          "width": 495,
+          "height": 258,
+          "file": "OSC_Microbio_06_03_hela-495.webp"
+        }
+      ],
+      "alt": "Each cell contains a large blue sphere with a cluster of orange ovals next to the sphere. A green web fills the rest of the cell.",
+      "caption": "A multiphoton fluorescence image of HeLa cells in culture. Various fluorescent stains have been used to show the DNA (cyan), microtubules (green), and Golgi apparatus (orange). (credit: modification of work by National Institutes of Health)"
+    },
+    "OSC_Microbio_06_03_lawn_img": {
+      "source": "media/OSC_Microbio_06_03_lawn_img.jpg",
+      "sourceSha256": "e7e0e8f4d206e61a2336320e2fb8666bd7b65f945d825f1bb4b24ac630e5be17",
+      "module": "m58810",
+      "kind": "photo",
+      "width": 497,
+      "height": 418,
+      "variants": [
+        {
+          "width": 497,
+          "height": 418,
+          "file": "OSC_Microbio_06_03_lawn_img-497.webp"
+        }
+      ],
+      "alt": "A plate with a smooth beige background labeled (A). There are holes in this background; these holes are labeled B.",
+      "caption": "(credit: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_06_03_plaques": {
+      "source": "media/OSC_Microbio_06_03_plaques.jpg",
+      "sourceSha256": "15416764872cf8a4b81e908b0b975aba3133f13cf6c5f45fa4efbf101d3d2ea7",
+      "module": "m58810",
+      "kind": "photo",
+      "width": 1001,
+      "height": 337,
+      "variants": [
+        {
+          "width": 800,
+          "height": 269,
+          "file": "OSC_Microbio_06_03_plaques-800.webp"
+        },
+        {
+          "width": 1001,
+          "height": 337,
+          "file": "OSC_Microbio_06_03_plaques-1001.webp"
+        }
+      ],
+      "alt": "Figure a shows bottles laying on their side with red liquid; the bottles have screw-caps. Figure b shows 3 plates covered in bacterial growth (which is a smooth beige lawn). Each plate has small dots that are regions of no growth. Some plates have many of these plaques some have few.",
+      "caption": "(a) Flasks like this may be used to culture human or animal cells for viral culturing. (b) These plates contain bacteriophage T4 grown on an Escherichia coli lawn. Clear plaques are visible where host bacterial cells have been lysed. Viral titers increase on the plates to the left. (credit a: modification of work by National Institutes of Health; credit b: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_06_04_CJDbrain": {
+      "source": "media/OSC_Microbio_06_04_CJDbrain.jpg",
+      "sourceSha256": "6137796f4078f55f6f755c0ce66636f7d1c26ca764396ee8c3aa90142827d559",
+      "module": "m58811",
+      "kind": "photo",
+      "width": 1300,
+      "height": 629,
+      "variants": [
+        {
+          "width": 800,
+          "height": 387,
+          "file": "OSC_Microbio_06_04_CJDbrain-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 629,
+          "file": "OSC_Microbio_06_04_CJDbrain-1300.webp"
+        }
+      ],
+      "alt": "The CJD brain has larger spaces as seen by more black regions in the image of the whole brain. The micrograph shows holes in the brain tissue.",
+      "caption": "Creutzfeldt-Jakob disease (CJD) is a fatal disease that causes degeneration of neural tissue. (a) These brain scans compare a normal brain to one with CJD. (b) Compared to a normal brain, the brain tissue of a CJD patient is full of sponge-like lesions, which result from abnormal formations of prion protein. (credit a (right): modification of work by Dr. Laughlin Dawes; credit b (top): modification of work by Suzanne Wakim; credit b (bottom): modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_06_04_PSTV": {
+      "source": "media/OSC_Microbio_06_04_PSTV.jpg",
+      "sourceSha256": "66c166966d9087c1484481e490f62dbadb98e24d9409bee30b6132b266c26a8c",
+      "module": "m58811",
+      "kind": "photo",
+      "width": 500,
+      "height": 362,
+      "variants": [
+        {
+          "width": 500,
+          "height": 362,
+          "file": "OSC_Microbio_06_04_PSTV-500.webp"
+        }
+      ],
+      "alt": "Photo of potatoes with odd, lumpy growths.",
+      "caption": "These potatoes have been infected by the potato spindle tuber viroid (PSTV), which is typically spread when infected knives are used to cut healthy potatoes, which are then planted. (credit: Pamela Roberts, University of Florida Institute of Food and Agricultural Sciences, USDA ARS)"
+    },
+    "OSC_Microbio_06_04_prion": {
+      "source": "media/OSC_Microbio_06_04_prion.jpg",
+      "sourceSha256": "691c8d678b557ac5e06b668219a1914357dd8c951ee19469a3a7fc3d782b0d59",
+      "module": "m58811",
+      "kind": "photo",
+      "width": 1300,
+      "height": 468,
+      "variants": [
+        {
+          "width": 800,
+          "height": 288,
+          "file": "OSC_Microbio_06_04_prion-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 468,
+          "file": "OSC_Microbio_06_04_prion-1300.webp"
+        }
+      ],
+      "alt": "Figure A shows the process of how normal prion protein is converted to disease causing forms. Endogenous PrPc interact with PrpSC. This converts PRPC into PRPSC. The PRPSC accumulate. Figure B is a micrograph that shows holes in brain tissue.",
+      "caption": "Endogenous normal prion protein (PrPc) is converted into the disease-causing form (PrPsc) when it encounters this variant form of the protein. PrPsc may arise spontaneously in brain tissue, especially if a mutant form of the protein is present, or it may originate from misfolded prions consumed in food that eventually find their way into brain tissue. (credit b: modification of work by USDA)"
+    },
+    "OSC_Microbio_07_00_splash": {
+      "source": "media/OSC_Microbio_07_00_splash.jpg",
+      "sourceSha256": "66369b64876257da0f342885801a095c145b0ce4f9cd3d44bfe4231a54657ad0",
+      "module": "m58812",
+      "kind": "photo",
+      "width": 1950,
+      "height": 1164,
+      "variants": [
+        {
+          "width": 800,
+          "height": 477,
+          "file": "OSC_Microbio_07_00_splash-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 955,
+          "file": "OSC_Microbio_07_00_splash-1600.webp"
+        }
+      ],
+      "alt": "Diagram of the Miller-Urey experiment. A flask of water (to simulate the ocean) is heated. This is connected via glass tubing in a closed loop to: a vacuum pump, a flask containing gases (water, methane, hydrogen, ammonia), and an electric spark (to simulate lightning), and final to a condenser that cools the water. The cooled water contains organic compounds.",
+      "caption": "Scientist Stanley Miller and Harold Urey demonstrated that organic compounds may have originated naturally from inorganic matter. The Miller-Urey experiment illustrated here simulated the effects of lightning on chemical compounds found in the earth’s early atmosphere. The resulting reactions yielded amino acids, the chemical building blocks of proteins. (credit: modification of work by Courtney Harrington)"
+    },
+    "OSC_Microbio_07_01_TBLcomFun": {
+      "source": "media/OSC_Microbio_07_01_TBLcomFun.jpg",
+      "sourceSha256": "ff3ee5dbc518612dbe89e22e156be0ca090e91c628dbfd945bac456b6a68ae93",
+      "module": "m58813",
+      "kind": "photo",
+      "width": 1047,
+      "height": 1598,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1221,
+          "file": "OSC_Microbio_07_01_TBLcomFun-800.webp"
+        },
+        {
+          "width": 1047,
+          "height": 1598,
+          "file": "OSC_Microbio_07_01_TBLcomFun-1047.webp"
+        }
+      ],
+      "alt": "Table titled: Common functional groups found in biomolecules; 3 columns, name, functional group and class of compound. Aldehyde has a red C double bonded O and an H; the C is also bound to a black R. This is found in carbohydrates. Amine has a red C double bonded to an O and single bonded to an NH. The C and the N are each also bound to a black R. This is found in proteins. Amino has a red NH2 bound to a black R. This is found in amino acids and proteins. Phosphate has a red PO3H2; the P is also bound to a black R. This is found in nucleic acids, phospholipids and ATP. Carbonyl has a red C double bonded to an O; the C is also bound to 2 black Rs. This is found in ketones, aldehydes, carboxylic acids, amides. Carboxylic acid has a red C double bonded to an O and to an OH; the C is also bound to a black R. This is found in amino acids, proteins, and fatty acids. Ester has a red C double bonded to an O and single bonded to another O. The C is bound to a black R and the single bonded O is also bound to a black R. This is found in lipids and nucleic acids. Ether has a red O bound to 2 black Rs. This is found in disaccharides, polysaccharides, and lipids. Hydroxyl has a red OH bound to a black R; this is found in alcohols, monosaccharides, amino acids, and nucleic acids. Ketone has a red C double bonded to an O; the C is also bound to 2 black Rs. This is found in carbohydrates. Methyl has a red CH3 bound to a black R. This is found in methylated compounds such as methyl alcohols and methyl esters. Sulfhydryl has a black R bound to a red SH.. This is found in amino acids and proteins",
+      "caption": ""
+    },
+    "OSC_Microbio_07_01_commonMol": {
+      "source": "media/OSC_Microbio_07_01_commonMol.jpg",
+      "sourceSha256": "922806905df401fbf17addd4c83a29295243940565d7335f71f04e5424eaf4f2",
+      "module": "m58813",
+      "kind": "photo",
+      "width": 1100,
+      "height": 479,
+      "variants": [
+        {
+          "width": 800,
+          "height": 348,
+          "file": "OSC_Microbio_07_01_commonMol-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 479,
+          "file": "OSC_Microbio_07_01_commonMol-1100.webp"
+        }
+      ],
+      "alt": "Carbon dioxide (CO2) has a carbon atom in the center. This carbon atom is double bonded to an oxygen on the left and another oxygen on the right. Ammonia NH3 has a nitrogen attached to 3 hydrogen atoms. Oxygen (O2) has two oxygen atoCarbon dioxide (CO2) has a carbon atom in the center. This carbon atom is double bonded to an oxygen on the left and another oxygen on the right. Ammonia NH3 has a nitrogen attached to 3 hydrogen atoms. Oxygen (O2) has two oxygen atoms double bonded to each other.ms double bonded to each other.",
+      "caption": "Some common molecules include carbon dioxide, ammonia, and oxygen, which consist of combinations of oxygen atoms (red spheres), carbon atoms (gray spheres), hydrogen atoms (white spheres), or nitrogen atoms (blue spheres)."
+    },
+    "OSC_Microbio_07_01_dehydrat": {
+      "source": "media/OSC_Microbio_07_01_dehydrat.jpg",
+      "sourceSha256": "3daa4f816d602834f7a4a8d55ff441d96de1d7353ee307722a4713c678983273",
+      "module": "m58813",
+      "kind": "photo",
+      "width": 1210,
+      "height": 240,
+      "variants": [
+        {
+          "width": 800,
+          "height": 158,
+          "file": "OSC_Microbio_07_01_dehydrat-800.webp"
+        },
+        {
+          "width": 1210,
+          "height": 240,
+          "file": "OSC_Microbio_07_01_dehydrat-1210.webp"
+        }
+      ],
+      "alt": "A diagram showing dehydration synthesis. On the left are two glucose molecules. The OH attached to carbon 1 in the first molecule is red; as is the H attached to the O on carbon 4 in the second molecule. An arrow indicates points to a new molecule that is missing the red OH and H from the previous image. In their place, the O that was attached to the H on carbon 4 is now also attached to carbon 1 of the other molecule.",
+      "caption": "In this dehydration synthesis reaction, two molecules of glucose are linked together to form maltose. In the process, a water molecule is formed."
+    },
+    "OSC_Microbio_07_01_fungroup_img": {
+      "source": "media/OSC_Microbio_07_01_fungroup_img.jpg",
+      "sourceSha256": "a401544fffabd8b3adebe4e3af8ba45b32a4284ed7a377075f20cee0a7be03c0",
+      "module": "m58813",
+      "kind": "photo",
+      "width": 499,
+      "height": 287,
+      "variants": [
+        {
+          "width": 499,
+          "height": 287,
+          "file": "OSC_Microbio_07_01_fungroup_img-499.webp"
+        }
+      ],
+      "alt": "A complex chemical figure begins with a ring of Cs; each C is double bonded to one other C. Off this ring is a CH2, then a C with a double bonded O, then an NH, then a C in a square. This square has Cs in 3 corners and an N in the fourth. The top left C is attached to the previous components discussed here, the bottom left C is double bonded to an O. The top right C is bound to an S, which is bound to a C, which is bound to a CH, which is bound to the N in the square. Back to the C that is attached to the S – this C is bound to two CH3s. The C attached to the N is bound to a C that is double bonded to an O and bound to an OH.",
+      "caption": ""
+    },
+    "OSC_Microbio_07_01_isomers": {
+      "source": "media/OSC_Microbio_07_01_isomers.jpg",
+      "sourceSha256": "68e7e7e1b49a04c9a31c9dba37b7eb17103d289245388201df70d4d93c3aedc2",
+      "module": "m58813",
+      "kind": "photo",
+      "width": 913,
+      "height": 726,
+      "variants": [
+        {
+          "width": 800,
+          "height": 636,
+          "file": "OSC_Microbio_07_01_isomers-800.webp"
+        },
+        {
+          "width": 913,
+          "height": 726,
+          "file": "OSC_Microbio_07_01_isomers-913.webp"
+        }
+      ],
+      "alt": "The chemical formula for glucose is 6 C's in the chain. The top C has a double bonded O. The next C has an OH on the right, the next C has an OH on the left, the next 3 Cs have OHs on the right, and the last 2 Cs have OHs on the right. The chemical formula for galactose is 6 Cs in a chain. The top C has a double bonded O. The next C has an OH on the right, the next 2 Cs have OHs on the left, and the last 2 Cs have OHs on the right. The chemical formula for fructose also has 6 Cs in a chain. The top C has an OH on the right. The next C has a double bonded O to the right. The next C has an OH to the left. The last 3 Cs have OHs to the right. All other bonds on these molecules are to Hs.",
+      "caption": "Glucose, galactose, and fructose have the same chemical formula (C 6 H 12 O 6 ), but these structural isomers differ in their physical and chemical properties."
+    },
+    "OSC_Microbio_07_01_matching_img": {
+      "source": "media/OSC_Microbio_07_01_matching_img.jpg",
+      "sourceSha256": "32df1f07e13d69aa739b9a18c5b5ff213d289430fe70e25496c3393284992e26",
+      "module": "m58813",
+      "kind": "photo",
+      "width": 488,
+      "height": 156,
+      "variants": [
+        {
+          "width": 488,
+          "height": 156,
+          "file": "OSC_Microbio_07_01_matching_img-488.webp"
+        }
+      ],
+      "alt": "Figure A has a C bound to an OH. Figure B has a C double bonded to an O as well as a single bonded OH and R. Figure C has an N bound to an R and two Hs.",
+      "caption": ""
+    },
+    "OSC_Microbio_07_01_methane": {
+      "source": "media/OSC_Microbio_07_01_methane.jpg",
+      "sourceSha256": "b7479e346592dfa05e56e8a905e0c5a8958b310f477b0214ece3e5d09296eed4",
+      "module": "m58813",
+      "kind": "photo",
+      "width": 129,
+      "height": 140,
+      "variants": [
+        {
+          "width": 129,
+          "height": 140,
+          "file": "OSC_Microbio_07_01_methane-129.webp"
+        }
+      ],
+      "alt": "Methane is drawn with a C in the center. Four lines project from the C in 4 different directions, there is an H at the end of each line.",
+      "caption": "A carbon atom can bond with up to four other atoms. The simplest organic molecule is methane (CH 4 ), depicted here."
+    },
+    "OSC_Microbio_07_01_monoglucos": {
+      "source": "media/OSC_Microbio_07_01_monoglucos.jpg",
+      "sourceSha256": "1e2812b79cae06220fcc91efa808490fce4f90fc7ea716f793e3855bd377d1c8",
+      "module": "m58813",
+      "kind": "photo",
+      "width": 868,
+      "height": 425,
+      "variants": [
+        {
+          "width": 800,
+          "height": 391,
+          "file": "OSC_Microbio_07_01_monoglucos-800.webp"
+        },
+        {
+          "width": 868,
+          "height": 425,
+          "file": "OSC_Microbio_07_01_monoglucos-868.webp"
+        }
+      ],
+      "alt": "Diagrams showing enantiomers; each diagram has 2 molecules with a dashed line labeled “mirror” in between them. The chemical formula for D and L glucose both have a 6 C chain with a double bonded O at the top carbon. Each of the other carbons has an OH on the opposite side – for example the OH on the second carbon is on the right in D-glucose and on the left in L-glucose. D-alanine and L-alanine both have a 3 carbon chain, but the NH2 group is on opposite sides of the chain in each of these.",
+      "caption": "Enantiomers are stereoisomers that exhibit chirality. Their chemical structures are nonsuperimposable mirror images of each other. (a) D-glucose and L-glucose are monosaccharides that are enantiomers. (b) The enantiomers D-alanine and L-alanine are enantiomers found in bacterial cell walls and human cells, respectively."
+    },
+    "OSC_Microbio_07_02_artCon1_img": {
+      "source": "media/OSC_Microbio_07_02_artCon1_img.jpg",
+      "sourceSha256": "7fa44828d52b5c3c2bc31b414179c44335e1fd1f00d6a3e4778a0f539d33faff",
+      "module": "m58814",
+      "kind": "photo",
+      "width": 889,
+      "height": 749,
+      "variants": [
+        {
+          "width": 800,
+          "height": 674,
+          "file": "OSC_Microbio_07_02_artCon1_img-800.webp"
+        },
+        {
+          "width": 889,
+          "height": 749,
+          "file": "OSC_Microbio_07_02_artCon1_img-889.webp"
+        }
+      ],
+      "alt": "Galactose has 6 carbons with a double bonded O at carbon 1; all other carbons have one OH. The difference between glucose and galactose is the direction of the OH groups. Fructose has 6 carbons with a double bonded O at carbon 2; all other carbons have one OH.",
+      "caption": ""
+    },
+    "OSC_Microbio_07_02_artCon4_img": {
+      "source": "media/OSC_Microbio_07_02_artCon4_img.jpg",
+      "sourceSha256": "9fe67473cc4fdb377ba0f68bece459924f4313189900a1bd7bcf7777a4817506",
+      "module": "m58814",
+      "kind": "photo",
+      "width": 805,
+      "height": 196,
+      "variants": [
+        {
+          "width": 800,
+          "height": 194,
+          "file": "OSC_Microbio_07_02_artCon4_img-800.webp"
+        },
+        {
+          "width": 805,
+          "height": 196,
+          "file": "OSC_Microbio_07_02_artCon4_img-805.webp"
+        }
+      ],
+      "alt": "A chain of 5 Carbons. Carbon 1 has a double bonded O and an H. Carbons 2, 3, and 4, each have an OH above the chain and an H below. Carbon 5 has an OH and 2 Hs. The second image is a pentagon. The top point is an O. Moving clockwise, each of the next 3 points are attached to an OH and an H. The last point is attached to an H and a CH2OH.",
+      "caption": ""
+    },
+    "OSC_Microbio_07_02_cyclicMon": {
+      "source": "media/OSC_Microbio_07_02_cyclicMon.jpg",
+      "sourceSha256": "06dbc2d51b0bfc825a7d0a515f21b32f08c9ee2ec8a7a38b660c619e42d8c75d",
+      "module": "m58814",
+      "kind": "photo",
+      "width": 876,
+      "height": 404,
+      "variants": [
+        {
+          "width": 800,
+          "height": 369,
+          "file": "OSC_Microbio_07_02_cyclicMon-800.webp"
+        },
+        {
+          "width": 876,
+          "height": 404,
+          "file": "OSC_Microbio_07_02_cyclicMon-876.webp"
+        }
+      ],
+      "alt": "a) a diagram showing how a linear carbohydrate forms a ring. Glucose has 6 carbons; Carbon 1 has a double bonded O. Carbon 5 has an OH group. After the ring forms, Carbon 1 is attached to the O with a single bond and this O is now also attached to carbon 5. B) shows the final structure which is a hexagon shape. The top right corner is an O, the next 5 corners are Cs and the C at the top left is attached to another C that projects upward from the ring.",
+      "caption": "(a) A linear monosaccharide (glucose in this case) forms a cyclic structure. (b) This illustration shows a more realistic depiction of the cyclic monosaccharide structure. Note in these cyclic structural diagrams, the carbon atoms composing the ring are not explicitly shown."
+    },
+    "OSC_Microbio_07_02_disacchar": {
+      "source": "media/OSC_Microbio_07_02_disacchar.jpg",
+      "sourceSha256": "42c84a48bd2c1d83f44774e368029a9ebd30ddcd3864c4ee2f99a4b526217c19",
+      "module": "m58814",
+      "kind": "photo",
+      "width": 1098,
+      "height": 754,
+      "variants": [
+        {
+          "width": 800,
+          "height": 549,
+          "file": "OSC_Microbio_07_02_disacchar-800.webp"
+        },
+        {
+          "width": 1098,
+          "height": 754,
+          "file": "OSC_Microbio_07_02_disacchar-1098.webp"
+        }
+      ],
+      "alt": "Maltose is made of 2 glucose molecules linked with O from Carbon 4 of one glucose to carbon 1 of the other. Lactose is made of a glucose linked to a galactose. Carbon 4 of glucose is linked to carbon 1 of galactose. Sucrose is made of a glucose and a fructose. Carbon 1 of glucose is bound to carbon 2 of fructose.",
+      "caption": "Common disaccharides include maltose, lactose, and sucrose."
+    },
+    "OSC_Microbio_07_02_monosacch": {
+      "source": "media/OSC_Microbio_07_02_monosacch.jpg",
+      "sourceSha256": "b2615422e479fa62a4f98a0e1c106175834d198127ccbb2804a8715bdf302ccf",
+      "module": "m58814",
+      "kind": "photo",
+      "width": 1300,
+      "height": 796,
+      "variants": [
+        {
+          "width": 800,
+          "height": 490,
+          "file": "OSC_Microbio_07_02_monosacch-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 796,
+          "file": "OSC_Microbio_07_02_monosacch-1300.webp"
+        }
+      ],
+      "alt": "Diagrams of various monosaccharides. Glyceraldehyde is an aldose because it has a double bonded O attached to an end carbon. Dihydroxyacetone is a ketose because it has a double bonded O attached in the center of the chain. Glyceraldehyde is a triose because it has 3 carbons. Ribose is a pentose because it has 5 carbons. Glucose is a hexose because it has 6 carbons.",
+      "caption": "Monosaccharides are classified based on the position of the carbonyl group and the number of carbons in the backbone."
+    },
+    "OSC_Microbio_07_02_polysacch": {
+      "source": "media/OSC_Microbio_07_02_polysacch.jpg",
+      "sourceSha256": "ffa0c798c515384d84f393ff0e19c6fc27f9c873ddea5e317956fad6b3dbe84c",
+      "module": "m58814",
+      "kind": "photo",
+      "width": 1200,
+      "height": 743,
+      "variants": [
+        {
+          "width": 800,
+          "height": 495,
+          "file": "OSC_Microbio_07_02_polysacch-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 743,
+          "file": "OSC_Microbio_07_02_polysacch-1200.webp"
+        }
+      ],
+      "alt": "Amylose is a chain of hexagons. Starch is a branching chain of hexagons. Glycogen is a highly branching chain of hexagons. Cellulose (fiber) is many rows of hexagons attached into a flat square. Micrographs of starch look like water bubbles, glycogen look like ovals, and cellulose look like long strands.",
+      "caption": "Starch, glycogen, and cellulose are three of the most important polysaccharides. In the top row, hexagons represent individual glucose molecules. Micrographs (bottom row) show wheat starch granules stained with iodine (left), glycogen granules (G) inside the cell of a cyanobacterium (middle), and bacterial cellulose fibers (right). (credit “iodine granules”: modification of work by Kiselov Yuri; credit “glycogen granules”: modification of work by Stöckel J, Elvitigala TR, Liberton M, Pakrasi HB; credit “cellulose”: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_07_03_isoprene": {
+      "source": "media/OSC_Microbio_07_03_isoprene.jpg",
+      "sourceSha256": "9cacb6e4049d904afe54f79d0640e7487a0cddaa78d6ea199479281a3c38b20f",
+      "module": "m58815",
+      "kind": "photo",
+      "width": 1109,
+      "height": 620,
+      "variants": [
+        {
+          "width": 800,
+          "height": 447,
+          "file": "OSC_Microbio_07_03_isoprene-800.webp"
+        },
+        {
+          "width": 1109,
+          "height": 620,
+          "file": "OSC_Microbio_07_03_isoprene-1109.webp"
+        }
+      ],
+      "alt": "Alpha-pinene is a carbon ring with added carbon projections. Camphor is a carbon ring with added carbon projections and a double bonded oxygen on one carbon. Isophrene is a 4 carbon chain with another carbon attached to carbon 2. Limonene is a carbon ring with a carbon attached to on one end and another carbon attached to the other end; this carbon has 2 carbons attached to it. Menthol i s a carbon ring with a carbon attached to on one end and another carbon attached to the other end; this carbon has 2 carbons attached to it. One more carbon corner has an OH group. Beta-carotene is two carbon rings attached by a long carbon chain.",
+      "caption": "Five-carbon isoprene molecules are chemically modified in various ways to yield isoprenoids."
+    },
+    "OSC_Microbio_07_03_micelle": {
+      "source": "media/OSC_Microbio_07_03_micelle.jpg",
+      "sourceSha256": "e8420ec31f376aeb7f67dcd05cef03d86a70e1c9f52dba5631c82cedad961765",
+      "module": "m58815",
+      "kind": "photo",
+      "width": 1200,
+      "height": 540,
+      "variants": [
+        {
+          "width": 800,
+          "height": 360,
+          "file": "OSC_Microbio_07_03_micelle-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 540,
+          "file": "OSC_Microbio_07_03_micelle-1200.webp"
+        }
+      ],
+      "alt": "A lipid bilayer sheet is when there are 2 rows of phospholipids across each other forming a flat surface. The polar heads of all phospholipids are towards the outside of the sheet, and the nonpolar tails are towards the inside. This lipid-bilyaer can also form a sphere. The lipid-bilayer forms the surface of the sphere; the polar heads are on the outside of the sphere and lining the inside space of the sphere. Lipids can also form a single-layer sphere where the outside of the sphere is the polar heads and the nonpolar tails fill the center of the sphere.",
+      "caption": "Phospholipids tend to arrange themselves in aqueous solution forming liposomes, micelles, or lipid bilayer sheets. (credit: modification of work by Mariana Ruiz Villarreal)"
+    },
+    "OSC_Microbio_07_03_phospholip": {
+      "source": "media/OSC_Microbio_07_03_phospholip.jpg",
+      "sourceSha256": "b735d500e4eb38ac3aadd41a93d537baebea2450897d9e5261a27add5a137c23",
+      "module": "m58815",
+      "kind": "photo",
+      "width": 863,
+      "height": 812,
+      "variants": [
+        {
+          "width": 800,
+          "height": 752,
+          "file": "OSC_Microbio_07_03_phospholip-800.webp"
+        },
+        {
+          "width": 863,
+          "height": 812,
+          "file": "OSC_Microbio_07_03_phospholip-863.webp"
+        }
+      ],
+      "alt": "A drawing of a phospholipid as a large circle with 2 rectangles projecting from the bottom. The circle is labeled hydrophilic head and contains glycerol (which contains 3 carbons). Attached ot one of these carbons is a phosphate (which is a phosphorus attached to 4 oxygen atoms). The rectangles at the bottom are both long carbon chains labeled as hydrophobic tails. One of the chains is a straight zig-zag line and is labeled saturated fatty acid. The other has a double bond that creates a bend in the line; this is labeled unsaturated fatty acid.",
+      "caption": "This illustration shows a phospholipid with two different fatty acids, one saturated and one unsaturated, bonded to the glycerol molecule. The unsaturated fatty acid has a slight kink in its structure due to the double bond."
+    },
+    "OSC_Microbio_07_03_sterols": {
+      "source": "media/OSC_Microbio_07_03_sterols.jpg",
+      "sourceSha256": "e684c06d46ae046b796737ba6a78ca1ab1d3442d1d902c5441d2df47f7ca8d42",
+      "module": "m58815",
+      "kind": "photo",
+      "width": 1280,
+      "height": 392,
+      "variants": [
+        {
+          "width": 800,
+          "height": 245,
+          "file": "OSC_Microbio_07_03_sterols-800.webp"
+        },
+        {
+          "width": 1280,
+          "height": 392,
+          "file": "OSC_Microbio_07_03_sterols-1280.webp"
+        }
+      ],
+      "alt": "Cholesterol is made of 3 hexagons attached along their edges. The third hexagon has a pentagon attached along an edge. The pentagon has a carbon chain attached to it. Hopene is made of 4 hexagons attached along their edges. The last hexagon has a pentagon. The pentagon has a short carbon chain.",
+      "caption": "Cholesterol and hopene (a hopanoid compound) are molecules that reinforce the structure of the cell membranes in eukaryotes and prokaryotes, respectively."
+    },
+    "OSC_Microbio_07_03_trygly": {
+      "source": "media/OSC_Microbio_07_03_trygly.jpg",
+      "sourceSha256": "06125de36784c62812f998f67e0aef849b89dd90a586006c5ce72b4c019c38ad",
+      "module": "m58815",
+      "kind": "photo",
+      "width": 1300,
+      "height": 395,
+      "variants": [
+        {
+          "width": 800,
+          "height": 243,
+          "file": "OSC_Microbio_07_03_trygly-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 395,
+          "file": "OSC_Microbio_07_03_trygly-1300.webp"
+        }
+      ],
+      "alt": "A diagram showing a triglyceride is made of a glycerol and three fatty acids. Glycerol is a 3 carbon chain with an OH on each carbon. The H on each OH is highlighted. Fatty acids are long carbon chains with a C that has an OH and a double bonded O at the end. The OH of this C is highlighted. Three fatty acids are shown. Each fatty acid binds to one of the O’s from the OH groups on each Carbon on glycerol. The result is a triglyceride (or neutral fat) and 3 water molecules.",
+      "caption": "Triglycerides are composed of a glycerol molecule attached to three fatty acids by a dehydration synthesis reaction."
+    },
+    "OSC_Microbio_07_04_CFTRprot": {
+      "source": "media/OSC_Microbio_07_04_CFTRprot.jpg",
+      "sourceSha256": "38b7ab7c987af5ada8ea40a989a854cf3c83ceef4a855eef1b8025f1c335c192",
+      "module": "m58816",
+      "kind": "photo",
+      "width": 900,
+      "height": 714,
+      "variants": [
+        {
+          "width": 800,
+          "height": 634,
+          "file": "OSC_Microbio_07_04_CFTRprot-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 714,
+          "file": "OSC_Microbio_07_04_CFTRprot-900.webp"
+        }
+      ],
+      "alt": "A drawing of a phospholipid bilayer in the center with two protein channels. One is open and lets Cl- flow out of the cell. The other is blocked by a mucus blockage on the outside of the cell; Cl- ions can’t flow through this channel.",
+      "caption": "The normal CFTR protein is a channel protein that helps salt (sodium chloride) move in and out of cells."
+    },
+    "OSC_Microbio_07_04_aminoacids": {
+      "source": "media/OSC_Microbio_07_04_aminoacids.jpg",
+      "sourceSha256": "c409f3c7e9464913533d3b0377b54209851934bf0cd06257ee602ec387b4788d",
+      "module": "m58816",
+      "kind": "photo",
+      "width": 697,
+      "height": 786,
+      "variants": [
+        {
+          "width": 697,
+          "height": 786,
+          "file": "OSC_Microbio_07_04_aminoacids-697.webp"
+        }
+      ],
+      "alt": "A table titled some amino acids and their structures; 3 columns: amino acid, R group, structure. Alanine has an R group of CH3. Its structure is a C attached to a COO-, an H, a NH3, and a CH3. Serine has an R group of CH2OH. Its structure is a C attached to a COO-, an H, a NH3, and a CH2OH. Lysine has an R group of (CH2)4NH3+. Its structure is a C attached to a COO-, an H, a NH3, and a (CH2)4NH3+. Aspartate has an R group of CH2COO. Its structure is a C attached to a COO-, an H, a NH3, and a CH2COO. Cysteine has an R group of CH2SH. Its structure is a C attached to a COO-, an H, a NH3, and a CH2SH.",
+      "caption": ""
+    },
+    "OSC_Microbio_07_04_hemoglobin": {
+      "source": "media/OSC_Microbio_07_04_hemoglobin.jpg",
+      "sourceSha256": "dcae3ee6a9923750e955bc5d57b4a987d8406ebac4e66547e05f2f9781ad3dcc",
+      "module": "m58816",
+      "kind": "photo",
+      "width": 676,
+      "height": 525,
+      "variants": [
+        {
+          "width": 676,
+          "height": 525,
+          "file": "OSC_Microbio_07_04_hemoglobin-676.webp"
+        }
+      ],
+      "alt": "A complex spherical shape made of ribbons that are coiled and wound around each other. There are 4 large regions (each made from a separate ribbon) – alpha 1, alpha 2, beta 1, beta 2. There are also red spheres attached to each ribbon; these are labeled heme group.",
+      "caption": "A hemoglobin molecule has two α and two β polypeptides together with four heme groups."
+    },
+    "OSC_Microbio_07_04_peptide": {
+      "source": "media/OSC_Microbio_07_04_peptide.jpg",
+      "sourceSha256": "6b8ab14c89ce6543059b7460ad233aa09bd29d908e6801ade6d9db8e2551664d",
+      "module": "m58816",
+      "kind": "photo",
+      "width": 1090,
+      "height": 261,
+      "variants": [
+        {
+          "width": 800,
+          "height": 191,
+          "file": "OSC_Microbio_07_04_peptide-800.webp"
+        },
+        {
+          "width": 1090,
+          "height": 261,
+          "file": "OSC_Microbio_07_04_peptide-1090.webp"
+        }
+      ],
+      "alt": "Alanine has a 3 carbon chain. The second carbon has NH2 attached and the third has a double bonded O. When 2 alanines bond, the OH from one and the H from the NH2 of the other form water. The resulting molecule is two alanines linked by an NH.",
+      "caption": "Peptide bond formation is a dehydration synthesis reaction. The carboxyl group of the first amino acid (alanine) is linked to the amino group of the incoming second amino acid (alanine). In the process, a molecule of water is released."
+    },
+    "OSC_Microbio_07_04_primary": {
+      "source": "media/OSC_Microbio_07_04_primary.jpg",
+      "sourceSha256": "1a6ed3ba8ddf658de47fac469b3d39c0032dc20f2f1201d4aace528851635235",
+      "module": "m58816",
+      "kind": "photo",
+      "width": 1286,
+      "height": 744,
+      "variants": [
+        {
+          "width": 800,
+          "height": 463,
+          "file": "OSC_Microbio_07_04_primary-800.webp"
+        },
+        {
+          "width": 1286,
+          "height": 744,
+          "file": "OSC_Microbio_07_04_primary-1286.webp"
+        }
+      ],
+      "alt": "The primary protein structure is a chain of amino acids that makes up the protein. The image is a chain of circles (each circle is an amino acid). One end of the chain is the free amino group or N-terminus. The other end of the chain is the free carboxyl group or C-terminus. A drawing of a single amino acid shows a carbon with an H, an R group, a COOH (acidic carboxyl group) and an NH2 (amino group).",
+      "caption": "The primary structure of a protein is the sequence of amino acids. (credit: modification of work by National Human Genome Research Institute)"
+    },
+    "OSC_Microbio_07_04_proteinstr": {
+      "source": "media/OSC_Microbio_07_04_proteinstr.jpg",
+      "sourceSha256": "67931bf7aaba711b8848e3fd71e1e2da80a6b7c6ccdbdc09ce9c7069abdf7d95",
+      "module": "m58816",
+      "kind": "photo",
+      "width": 1300,
+      "height": 509,
+      "variants": [
+        {
+          "width": 800,
+          "height": 313,
+          "file": "OSC_Microbio_07_04_proteinstr-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 509,
+          "file": "OSC_Microbio_07_04_proteinstr-1300.webp"
+        }
+      ],
+      "alt": "Primary protein structure: sequence of a chain of amino acids. This is shown as a chain of circles. Secondary protein structure: local folding of the polypeptide chain into helices or sheets. This is shown as a spiral labeled alpha-helix and a folded sheet labeled beta-pleated sheet. Tertiary protein structure: three-dimensional folding pattern of a protein due to side chain interactions. This is shown as a complex 3-D shape made of alpha helices and beta pleated sheets. Quaternary protein structure: protein consisting of more than one amino acid chain. This is shown as 2 complex structures similar to that seen at the tertiary level.",
+      "caption": "Protein structure has four levels of organization. (credit: modification of work by National Human Genome Research Institute)"
+    },
+    "OSC_Microbio_07_04_pseudomona": {
+      "source": "media/OSC_Microbio_07_04_pseudomona.jpg",
+      "sourceSha256": "26a9e440b9ff3fbb2c64b37c23ceaa09626a466c29215c240878f593fb2ad59c",
+      "module": "m58816",
+      "kind": "photo",
+      "width": 1100,
+      "height": 475,
+      "variants": [
+        {
+          "width": 800,
+          "height": 345,
+          "file": "OSC_Microbio_07_04_pseudomona-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 475,
+          "file": "OSC_Microbio_07_04_pseudomona-1100.webp"
+        }
+      ],
+      "alt": "a) a micrograph of rod shaped cells. B) An agar plate with a green pigmented colonies; this green pigment is spreading past the edge of the colonies.",
+      "caption": "(a) A scanning electron micrograph shows the opportunistic bacterium Pseudomonas aeruginosa . (b) Pigment-producing P. aeruginosa on cetrimide agar shows the green pigment called pyocyanin. (credit a: modification of work by the Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_07_04_secondary": {
+      "source": "media/OSC_Microbio_07_04_secondary.jpg",
+      "sourceSha256": "870d19802c155906c2bcdc50026fc04d131bc62ad2455a0e4b7b97fadca74a5b",
+      "module": "m58816",
+      "kind": "photo",
+      "width": 1100,
+      "height": 771,
+      "variants": [
+        {
+          "width": 800,
+          "height": 560,
+          "file": "OSC_Microbio_07_04_secondary-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 771,
+          "file": "OSC_Microbio_07_04_secondary-1100.webp"
+        }
+      ],
+      "alt": "The secondary structure of a protein may be an α-helix or a β-pleated sheet, or both. A chain of spheres forms a spiral labeled alpha-helix. This chain also forms a ribbon that folds back and forth; this is labeled beta-pleated sheet. Closeups show that hydrogen bonds (dotted lines) between amino acids hold together these shapes.",
+      "caption": "The secondary structure of a protein may be an α-helix or a β-pleated sheet, or both."
+    },
+    "OSC_Microbio_07_04_tertiary": {
+      "source": "media/OSC_Microbio_07_04_tertiary.jpg",
+      "sourceSha256": "8bc7c4a98b6a4aeb7e8a07f5a68127c1920440c77b0a2248a6f67264b18d8f34",
+      "module": "m58816",
+      "kind": "photo",
+      "width": 1268,
+      "height": 717,
+      "variants": [
+        {
+          "width": 800,
+          "height": 452,
+          "file": "OSC_Microbio_07_04_tertiary-800.webp"
+        },
+        {
+          "width": 1268,
+          "height": 717,
+          "file": "OSC_Microbio_07_04_tertiary-1268.webp"
+        }
+      ],
+      "alt": "A long ribbon labeled polypeptide backbone. Loops of the ribbon are held in place by various types of chemical reactions. An ionic bond is then a positively charged amino acid and a negatively charged amino acid are attracted to each other. Hydrophobic interactions are when hydrophobic amino acids (containing only carbons and hydrogens) are clustered together. A disulfide linkage is when a sulfur of one amino acid is covalently bound to the sulfur of another amino acid. A hydrogen bond is when two polar amino acids are attracted to each other.",
+      "caption": "The tertiary structure of proteins is determined by a variety of attractive forces, including hydrophobic interactions, ionic bonding, hydrogen bonding, and disulfide linkages."
+    },
+    "OSC_Microbio_07_04_tetrapep1_img": {
+      "source": "media/OSC_Microbio_07_04_tetrapep1_img.jpg",
+      "sourceSha256": "29dc1e5389efe4df0819d2d99c2d51bf74c84319af9ad3f0b86f27a90bd54189",
+      "module": "m58816",
+      "kind": "photo",
+      "width": 642,
+      "height": 201,
+      "variants": [
+        {
+          "width": 642,
+          "height": 201,
+          "file": "OSC_Microbio_07_04_tetrapep1_img-642.webp"
+        }
+      ],
+      "alt": "A green 5-C chain linked to an NH linked to a black 2 C chain linked to an NH linked to a black 2 C chain linked to an NH linked to a blue 5 C chain.",
+      "caption": ""
+    },
+    "OSC_Microbio_07_05_FAME": {
+      "source": "media/OSC_Microbio_07_05_FAME.jpg",
+      "sourceSha256": "6f26eedfb49cf5226cfa34721608b105bde5b16db526f9a9274db4cbe2dd7d5d",
+      "module": "m58817",
+      "kind": "photo",
+      "width": 1300,
+      "height": 438,
+      "variants": [
+        {
+          "width": 800,
+          "height": 269,
+          "file": "OSC_Microbio_07_05_FAME-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 438,
+          "file": "OSC_Microbio_07_05_FAME-1300.webp"
+        }
+      ],
+      "alt": "A flowchart. A bacterial culture is grown (image is of an agar plate). Then fatty acids are extracted and converted to methyl esters (image is of a test tube). Then gas chromatography analyzes methyl ester fingerprints (image is of a chromatography machine). Then bacteria are identified (image is of a graph). The X axis of the graph is column retention time. The Y axis is of detector signal. The line has various peaks.",
+      "caption": "Fatty acid methyl ester (FAME) analysis in bacterial identification results in a chromatogram unique to each bacterium. Each peak in the gas chromatogram corresponds to a particular fatty acid methyl ester and its height is proportional to the amount present in the cell. (credit “culture”: modification of work by the Centers for Disease Control and Prevention; credit “graph”: modification of work by Zhang P. and Liu P.)"
+    },
+    "OSC_Microbio_07_05_maldi": {
+      "source": "media/OSC_Microbio_07_05_maldi.jpg",
+      "sourceSha256": "b362c46d547c27c8fb0e76527622eb83946c68afa64b4f5d166b90b03a347144",
+      "module": "m58817",
+      "kind": "photo",
+      "width": 1300,
+      "height": 390,
+      "variants": [
+        {
+          "width": 800,
+          "height": 240,
+          "file": "OSC_Microbio_07_05_maldi-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 390,
+          "file": "OSC_Microbio_07_05_maldi-1300.webp"
+        }
+      ],
+      "alt": "A flowchart. A square plate with a grid of circles is labeled grow microorganisms on MALDI-plate. Then irradiate sample. Then use mass spectrometer to measure gaseous ions released. Then compare mass spectrum of sample to reference spectra; two small graphs are shown here. Then identify specied.",
+      "caption": "MALDI-TOF methods are now routinely used for diagnostic procedures in clinical microbiology laboratories. This technology is able to rapidly identify some microorganisms that cannot be readily identified by more traditional methods. (credit “MALDI plate photo”: modification of work by Chen Q, Liu T, Chen G; credit “graphs”: modification of work by Bailes J, Vidal L, Ivanov DA, Soloviev M)"
+    },
+    "OSC_Microbio_07_05_tubrash": {
+      "source": "media/OSC_Microbio_07_05_tubrash.jpg",
+      "sourceSha256": "3de4a2c0544751634e737af6830b34ad78a891743a8dd27b5134ec8cfdacf20d",
+      "module": "m58817",
+      "kind": "photo",
+      "width": 500,
+      "height": 357,
+      "variants": [
+        {
+          "width": 500,
+          "height": 357,
+          "file": "OSC_Microbio_07_05_tubrash-500.webp"
+        }
+      ],
+      "alt": "Skin with red raised bumps.",
+      "caption": "Exposure to Pseudomonas aeruginosa in the water of a pool or hot tub can sometimes cause a skin infection that manifests as “hot tub rash.” (credit: modification of work by “Lsupellmel”/Wikimedia Commons)"
     }
   }
 }

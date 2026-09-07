@@ -38,7 +38,7 @@ pages are still being written, so parity is only checked for what exists.
 Biology was `in-progress` while it was written, so `build-map`/`verify-map`
 printed it as, e.g., `45/47 chapters, 201/208 sections mapped` — visibly, not
 silently — until its last chapter landed; it is `complete` now. Microbiology
-is `in-progress` and prints as `4/26 chapters, 17/127 sections mapped`.
+is `in-progress` and prints as `7/26 chapters, 31/127 sections mapped`.
 
 Every book's lock entry also carries a `contentPath` (for example
 `content/math/precalculus`, `content/life-health-sciences/biology`): the
@@ -132,7 +132,7 @@ not a publishing instruction.
 - `data/openstax/source-lock.json` (schema 2) records each bundle's
   official repository, current reviewed commit, module scope, and license,
   plus every book's collection, inferred PDF-era commit, and authoring status.
-- `data/openstax/source-map.json` (schema 2) connects all 499 authored
+- `data/openstax/source-map.json` (schema 2) connects all 513 authored
   local section paths to stable OpenStax module IDs and module SHA-256
   fingerprints, attributes each section to its bundle, and records per-book
   chapter and section coverage against the upstream collection.
@@ -193,11 +193,12 @@ that commit, and its copyright page prints no revision number (only
 the same edition until a section audit says otherwise. The book was `scaffolded` until its pilot chapter — chapter 1, *An
 Invisible World* — was authored on September 5, 2026, and is `in-progress`
 from that day: `content/life-health-sciences/microbiology/_index.md` lists
-chapters 1–4 under `## Chapters` with the remaining twenty-two on its
+chapters 1–6 under `## Chapters` with the remaining twenty on its
 "Planned contents" list (chapter 2, *How We See the Invisible World*, landed
-the same day and chapters 3, *The Cell*, and 4, *Prokaryotic Diversity*, on
-September 6), and `verify-map` prints `4/26 chapters, 17/127 sections
-mapped`.
+the same day, chapters 3, *The Cell*, and 4, *Prokaryotic Diversity*, on
+September 6, and chapters 5, *The Eukaryotes of Microbiology*, 6,
+*Acellular Pathogens*, and 7, *Microbial Biochemistry*, on September 7), and
+`verify-map` prints `7/26 chapters, 31/127 sections mapped`.
 Its subject playbook is `docs/subjects/microbiology.md`; the collection is
 flat (no units), so the map records no `units` key for it.
 

@@ -47,7 +47,7 @@ item types).
   has a local page, chapter parity is enforced book-wide, and
   `build-map`/`verify-map` report them at full coverage; Microbiology is
   `in-progress` (pinned September 5, 2026, its first two chapters authored
-  the same day and chapters 3–4 on September 6) and is reported as `4/26 chapters, 17/127 sections mapped`. Biology 2e's sections live under
+  the same day, chapters 3–4 on September 6, and chapters 5–7 on September 7) and is reported as `7/26 chapters, 31/127 sections mapped`. Biology 2e's sections live under
   `content/life-health-sciences/biology` (each lock entry carries a
   `contentPath`, so a book need not live under `content/math`) and its
   subject playbooks (`docs/subjects/life-sciences.md` plus

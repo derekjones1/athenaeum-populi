@@ -23,7 +23,14 @@ Invisible World*, followed the same day** with the same three-pass shape
 errata); every rule marked *(chapter 2)* below came from it. **Chapter 3,
 *The Cell*, followed on September 6** (four sections, 60 Practice items, 21
 body self-checks, 60 figures, fourteen errata); rules marked *(chapter 3)*
-came from it.
+came from it. **Chapters 5, *The Eukaryotes of Microbiology*, and 6,
+*Acellular Pathogens*, followed on September 7** in one nine-section wave
+(153 graded items, 23 self-checks, 89 figures, errata 458–492, including
+seven claim corrections from the prose claim pass); rules marked *(chapters
+5–6)* came from it. **Chapter 7, *Microbial Biochemistry*, followed the same
+day** (five sections, 58 graded items, 12 self-checks, 32 figures, errata
+493–503, no claim corrections — the claim pass found none); rules marked
+*(chapter 7)* came from it.
 
 ## Source and authority
 
@@ -194,7 +201,7 @@ Biology keyed every exercise. Microbiology keys some sets and not others:
 | Multiple Choice | `section.multiple-choice` | yes (443 of 444; the one unkeyed item is a micrograph question in m58931) | `multiplechoice`, source options in source order |
 | Fill in the Blank | `section.fill-in-the-blank` | yes (279/279) | `textin` — the sentence with its blank as the prompt, the key as the answer, when the key is ≤4 words; a longer key becomes a `multiplechoice` whose options are the module's own terms |
 | True/False | `section.true-false` | yes (43/43) | `multiplechoice` with exactly two options, `True` and `False` in that order, the hint naming the sentence the statement tests |
-| Matching | `section.matching` | yes (15/15) | one `multiplechoice` per row — the description is the stem, the terms of the table are the options (the biology rule) |
+| Matching | `section.matching` | yes (15/15) | one `multiplechoice` per row — the row's DESCRIPTION is the stem and the table's TERMS (all of them, in table order) are the options, keyed by the source letter resolved to the term; the key position then varies by itself *(chapter 7: §7.2's four polysaccharides)* |
 | Short Answer | `section.short-answer` | **no** (2 of 226) | a graded item when ONE module sentence, table, or figure fixes the answer (biology's "Unkeyed source questions" rule); otherwise `selfcheck` with an **author-written** model answer |
 | Critical Thinking | `section.critical-thinking` | **no** (0 of 159) | the same rule: graded when the module fixes it, `selfcheck` when it asks for a paragraph or a speculation |
 | Check Your Understanding | `note.check-your-understanding` in the body (417, up to 10 per section) | **no** | a body item at the note's position — graded (`multiplechoice`, `textin`, `sortbins`) when the module fixes the answer, else `selfcheck` — see 3 |
@@ -665,6 +672,76 @@ Everything in biology's Verification section, plus:
   trusting its alt. Chapter 3 logged fourteen (346–359), eleven of them alt
   defects and one a CALS table's `summary` attribute — transcribe a table
   from its cells, never from `summary`.
+- **A one-item-per-bin labelling figure cannot be a `sortbins`** *(chapters
+  5–6)*. The grader's interleave rule needs more same-bin runs than bins, so
+  a bijective assignment (four letters, four parts) always throws "items are
+  grouped by bin". §6.1's T4 bacteriophage labelling item became four
+  single-letter `multiplechoice` items whose options are the module's own
+  part names; §6.3's four-row cytopathic-effects table earns no sortbins for
+  the same reason.
+- **The plural fold is one-directional** *(chapters 5–6)*: grading folds a
+  learner's regular plural onto a singular key, never a learner's singular
+  onto a plural key. A `textin` keyed to a plural (`muscles`, `mosquitoes`,
+  `cytopathic effects`) lists the singular in `accept`; a Greek/Latin plural
+  key (`conidia`, `modified mitochondria`) lists its `-um`/`-on` singular;
+  and a key with a prefix (`antibacterial`) lists the hyphenated spelling,
+  because the grader folds hyphen-versus-space only at an existing boundary.
+- **A `## Key terms` bullet or a figure caption can leak a key** *(chapters
+  5–6)*: a term-recall `textin` keyed to a defined term always sits below
+  the bullet that defines it (accepted, by design), but a body item placed
+  directly under a figure whose source caption names its answer (§6.2's
+  growth-curve "burst") reverts to a `selfcheck`, and an author-built MC's
+  option list may not print the next item's `textin` key.
+- **A stem built on a false claim is reworded when the claim is corrected**
+  *(chapters 5–6)*: §6.1's source Check Your Understanding asked "Why was the
+  first virus investigated mistaken for a toxin?", a premise the claim pass
+  overturned (erratum 483); the graded item now asks what Beijerinck
+  concluded, and the footer says so.
+- **Prose claim pass yield, chapters 5–6**: seven accepted corrections in
+  nine sections (a self-contradicting feeding-mode term, two misspelt
+  taxon names settled by the book's own appendices and a DOI, a helminth
+  length off by an order of magnitude against CDC DPDx, an inverted
+  account of Beijerinck's conclusion, a footnote year, and the Duncan case
+  dates against the CDC MMWR report), four suspicions kept as printed.
+  Checkers again over-reported by about half; verify every finding's
+  evidence before editing.
+- **A multi-blank Fill in the Blank whose blanks have independent keys**
+  *(chapter 7)*: the two-blank rule above covers blanks that form ONE
+  answer. When the blanks are separate facts (§7.3: a wax's alcohol and its
+  fatty acid; cholesterol's group, bond, and hydroxyl), grade the single
+  most central blank as the `textin` and print the source's other keyed
+  words as given text in the stem, disclosed in the footer. When the source
+  key is an ORDERED list too long for a `textin` (§7.4's "secondary,
+  tertiary, primary"; §7.5's three-blank "fatty acids, methyl esters, gas
+  chromatography"), render one `multiplechoice` whose key is the source
+  list verbatim (its own punctuation, no inserted "and") and whose
+  distractors are other orderings or term-triples built from the module's
+  own sentences — never split it into clozes that reconstruct to the same
+  sentence (`distinctItems` sees one).
+- **A regular-plural KEY needs its singular in `accept`** *(chapter 7)*: the
+  fold is one-directional, so `alcohols`, `micelles`, `unit membranes`
+  each list the singular; and a source spelling the grader would reject
+  from a correct learner (`phosphorous` keyed for the element) lists the
+  correct spelling. A Glossary lookup tries the hyphen/space variant before
+  concluding a headword is absent (`lipid-bilayer` ↔ `lipid bilayer`).
+- **Source `<equation>` elements are plain-text lines** *(chapter 7)*: the
+  chemistry chapter's two reaction schemes (`H—monomer—OH + H—monomer—OH ⟶
+  H—monomer—monomer—OH + H₂O`; the glycosidic-bond scheme with its
+  underbrace label) are rendered as their own paragraph with the Unicode
+  arrow and subscripts, never `$…$`; an underbrace label becomes a
+  disclosed parenthetical. Do not carry a label from one module's equation
+  into another's — §7.1 shipped 7.2's "(a disaccharide)" until the checker
+  diffed it.
+- **The source alts of exercise images answer their own items** *(chapter
+  7)*: every media-bearing exercise (structural formulas to identify, a
+  tetrapeptide to count) carries a source alt that names the functional
+  group or states the count. Rewrite each to atoms and bonds only, and grep
+  the alt, caption, and `longdesc` for every key and rubric clause of the
+  paired item — three of five shipped a leak before the checkers read them.
+- **The 7.1/7.2 print boundary**: §7.1's closing equation, figure, and
+  table sit on the first page of the nominal 7.2 range — when the PDF page
+  table is derived from section headings, the last page of each section is
+  the next heading's first page too.
 - **A PNAS author list pasted with its affiliation superscripts** ("J.A.
   Garnetta", "L. Gana, S. Chena, G.J. Jensena") is a source defect the
   checker's word-diff catches *(chapter 3)*: cite the real surnames, disclose

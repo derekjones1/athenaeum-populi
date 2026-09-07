@@ -936,6 +936,53 @@
    "status": "correct-local-source-defect",
    "errataEntry": 457,
    "rationale": "Odum's Silver Springs study is dated the 1940s; the module's own cited paper (Odum 1957) reports early-1950s fieldwork. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/02-parasitic-helminths.md",
+   "bundle": "microbiology",
+   "moduleId": "m58803",
+   "sourceElementIds": [
+    "term-00006"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 468,
+   "rationale": "The module says Ascaris lumbricoides females \"may reach lengths greater than 1 meter\"; the CDC DPDx ascariasis reference gives adult females as 20–35 cm. The local page corrects the value with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 7, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/03-fungi.md",
+   "bundle": "microbiology",
+   "moduleId": "m58804",
+   "sourceElementIds": [
+    "term-00001",
+    "term-00058",
+    "fs-id1172100556178"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 470,
+   "rationale": "\"typically saprozoic\" contradicts the module's own Summary (\"saprotrophic\") and the Glossary appendix's protozoan-only definition of saprozoic (erratum 470); \"Enterocystozoan bieneusi\" is printed as the accepted name Enterocytozoon bieneusi (erratum 471, DOI 10.3201/eid2706.ET2706). Both corrected with visible Source notes and disclosed in the footer. Found by the prose claim pass, September 7, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/microbiology/06-acellular-pathogens/01-viruses.md",
+   "bundle": "microbiology",
+   "moduleId": "m58808",
+   "sourceElementIds": [
+    "term-00006"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 483,
+   "rationale": "The module says Beijerinck concluded in 1899 that the tobacco mosaic agent was \"possibly a chemical, like a biological poison\"; his 1898 paper proposed a contagium vivum fluidum that multiplied in the host (Bos, Phil. Trans. R. Soc. B 354 [1999]: 675–685, DOI 10.1098/rstb.1999.0420). The local page corrects the sentence with a visible Source note, rewords the body Check Your Understanding item built on it, and discloses the change in its footer. Found by the prose claim pass, September 7, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/microbiology/06-acellular-pathogens/02-the-viral-life-cycle.md",
+   "bundle": "microbiology",
+   "moduleId": "m58809",
+   "sourceElementIds": [
+    "fs-id1168329030248",
+    "fs-id1168329116501"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 488,
+   "rationale": "The WHO Ebola statistics footnote is dated 2005 for a 2014 outbreak whose URL encodes 20150318 (erratum 487); the Case in Point dates Duncan's first hospital visit to September 24 and his return \"two days later\", where the CDC MMWR investigation gives September 25 and September 28 (erratum 488). Both corrected with visible Source notes and disclosed in the footer. Found by the chapter 5–6 run and its prose claim pass, September 7, 2026."
   }
  ],
  "upstreamDriftDecisions": [
