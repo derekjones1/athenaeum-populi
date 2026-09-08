@@ -38,7 +38,7 @@ pages are still being written, so parity is only checked for what exists.
 Biology was `in-progress` while it was written, so `build-map`/`verify-map`
 printed it as, e.g., `45/47 chapters, 201/208 sections mapped` — visibly, not
 silently — until its last chapter landed; it is `complete` now. Microbiology
-is `in-progress` and prints as `7/26 chapters, 31/127 sections mapped`.
+is `in-progress` and prints as `8/26 chapters, 38/127 sections mapped`.
 
 Every book's lock entry also carries a `contentPath` (for example
 `content/math/precalculus`, `content/life-health-sciences/biology`): the
@@ -76,6 +76,14 @@ What those commands do:
 - `source:history` compares each book's inferred PDF-era commit with the
   current locked OpenStax commit for its bundle. It separates later upstream
   changes from possible original transcription differences.
+
+**In CI.** The workflow caches `sources/openstax` on the lock file's hash,
+runs `npm run source:fetch` on a miss, runs `npm run source:verify`, then
+`npm run ci` with `ATHENAEUM_REQUIRE_SOURCES=1` — under which
+`verify-source-keys` and `solve-check residual` fail instead of skipping
+when a bundle is absent. `npm test` itself stays offline and never fetches:
+running it locally without a fetched checkout still skips those gates
+loudly, the same as before.
 
 Every command accepts `--bundle KEY` (repeatable) to work on one bundle at a
 time, for example:
@@ -132,7 +140,7 @@ not a publishing instruction.
 - `data/openstax/source-lock.json` (schema 2) records each bundle's
   official repository, current reviewed commit, module scope, and license,
   plus every book's collection, inferred PDF-era commit, and authoring status.
-- `data/openstax/source-map.json` (schema 2) connects all 513 authored
+- `data/openstax/source-map.json` (schema 2) connects all 520 authored
   local section paths to stable OpenStax module IDs and module SHA-256
   fingerprints, attributes each section to its bundle, and records per-book
   chapter and section coverage against the upstream collection.
@@ -190,17 +198,13 @@ same commit with confidence `inferred-from-local-pdf-date`: the local
 `sources/microbiology_-_WEB.pdf` was generated on September 2, 2026, after
 that commit, and its copyright page prints no revision number (only
 "original publication year 2016"), so the pin and the PDF are taken to be
-the same edition until a section audit says otherwise. The book was `scaffolded` until its pilot chapter — chapter 1, *An
-Invisible World* — was authored on September 5, 2026, and is `in-progress`
-from that day: `content/life-health-sciences/microbiology/_index.md` lists
-chapters 1–6 under `## Chapters` with the remaining twenty on its
-"Planned contents" list (chapter 2, *How We See the Invisible World*, landed
-the same day, chapters 3, *The Cell*, and 4, *Prokaryotic Diversity*, on
-September 6, and chapters 5, *The Eukaryotes of Microbiology*, 6,
-*Acellular Pathogens*, and 7, *Microbial Biochemistry*, on September 7), and
-`verify-map` prints `7/26 chapters, 31/127 sections mapped`.
-Its subject playbook is `docs/subjects/microbiology.md`; the collection is
-flat (no units), so the map records no `units` key for it.
+the same edition until a section audit says otherwise. The book is `in-progress`: `content/life-health-sciences/microbiology/_index.md`
+lists its authored chapters under `## Chapters` with the rest on its
+"Planned contents" list, and `verify-map` prints `8/26 chapters, 38/127
+sections mapped`. Its subject playbook is `docs/subjects/microbiology.md`;
+the collection is flat (no units), so the map records no `units` key for
+it. The chapter-by-chapter authoring log (September 5–7, 2026; chapter 8 landed September 7 as well) moved to
+`docs/history/openstax-source-workflow.md`.
 
 ## Precalculus 2e
 

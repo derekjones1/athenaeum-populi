@@ -80,14 +80,18 @@
  * exists on an authoring machine after `npm run source:fetch` and never in
  * CI or a fresh clone (docs/architecture.md: `npm test` is offline and does
  * not fetch upstream). A bundle whose checkout directory is ABSENT is
- * therefore skipped — every one of its sections counted and named on stderr,
- * never failed — while a checkout that IS present is held to the full rule,
- * so a module missing from a real checkout is still a failure. A run that
- * skipped anything prints its count in a shape the baseline rewriter does
- * not read and applies no `--min-confirmed` floor: a partial count is not a
- * baseline, and a skipped gate must never look like a passed one.
+ * therefore skipped by default — every one of its sections counted and named
+ * on stderr, never failed — while a checkout that IS present is held to the
+ * full rule, so a module missing from a real checkout is still a failure. A
+ * run that skipped anything prints its count in a shape the baseline
+ * rewriter does not read and applies no `--min-confirmed` floor: a partial
+ * count is not a baseline, and a skipped gate must never look like a passed
+ * one. `ATHENAEUM_REQUIRE_SOURCES=1` (set by CI, which now fetches the
+ * pinned checkouts before `npm run ci`) turns that skip into a failure: a
+ * bundle absent under strict mode exits 1 instead of exiting 0 partial, so
+ * CI can never go green on an unread corpus.
  *
- * Usage: node tools/verify/verify-source-keys.mjs [content-root] [--min-confirmed N] [--verbose]
+ * Usage: node tools/verify/verify-source-keys.mjs [content-root] [--min-confirmed N] [--verbose] [ATHENAEUM_REQUIRE_SOURCES=1]
  *
  * `--min-confirmed N` fails the run when the confirmed count is not EXACTLY N
  * (the verify-answers ratchet: below is shrinking coverage, above is an
@@ -124,6 +128,13 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  * sortbins bins an item against the source table (exercise = the table id).
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
+  {
+    page: 'content/life-health-sciences/microbiology/08-microbial-metabolism/07-biogeochemical-cycles.md',
+    exercise: 'fs-id1167662519291',
+    kind: 'options',
+    erratum: 515,
+    reason: 'the source option "chemoautrophy" misspells the term the module itself prints as chemoautotroph; the page prints the option as "chemoautotrophy" (key unchanged)',
+  },
   {
     page: 'content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/03-fungi.md',
     exercise: 'fs-id1172100506672',
@@ -1328,6 +1339,10 @@ export function summaryLine({ counts, confirmed, failures, sections, sectionsSki
 
 /* ---- CLI ------------------------------------------------------------------ */
 
+// Set by CI (after it fetches the pinned checkouts) to turn an absent-bundle
+// skip into a failure — see the header comment.
+const REQUIRE_SOURCES = Boolean(process.env.ATHENAEUM_REQUIRE_SOURCES);
+
 if (process.argv[1] && path.resolve(process.argv[1]) === new URL(import.meta.url).pathname) {
   let contentRoot;
   let verbose;
@@ -1358,6 +1373,11 @@ if (process.argv[1] && path.resolve(process.argv[1]) === new URL(import.meta.url
   console.log(summaryLine(result));
 
   if (sectionsSkipped) {
+    if (REQUIRE_SOURCES) {
+      console.error(`✖ source-key cross-check: ${Object.keys(skipped).length} bundle(s) not checked out `
+        + `(${Object.keys(skipped).join(', ')}) and ATHENAEUM_REQUIRE_SOURCES is set — run npm run source:fetch`);
+      process.exit(1);
+    }
     if (minConfirmed !== null) {
       console.error(`  · --min-confirmed ${minConfirmed} not applied: the count above is partial; `
         + 'fetch every bundle before recording or checking a baseline');

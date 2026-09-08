@@ -85,7 +85,8 @@ test('collection mapping flattens unit -> chapter -> module nesting on the fixtu
   assert.deepEqual(collection.chapters[3].sectionModuleIds, ['m-4-1', 'm-4-2', 'm-4-3']);
 });
 
-test('collection mapping flattens unit -> chapter -> module nesting on the real Biology 2e checkout', { skip: !existsSync(biologySourceDir) && 'run npm run source:fetch -- --bundle biology-bundle first' }, () => {
+// Under strict mode an absent checkout fails the test instead of skipping it.
+test('collection mapping flattens unit -> chapter -> module nesting on the real Biology 2e checkout', { skip: !existsSync(biologySourceDir) && !process.env.ATHENAEUM_REQUIRE_SOURCES && 'run npm run source:fetch -- --bundle biology-bundle first' }, () => {
   const xml = readFileSync(
     path.join(biologySourceDir, 'collections/biology-2e.collection.xml'),
     'utf8',
@@ -253,18 +254,18 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 513 local sections exactly once', () => {
+test('committed provenance maps all 520 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 513);
-  assert.equal(result.actualCount, 513);
+  assert.equal(result.expectedCount, 520);
+  assert.equal(result.actualCount, 520);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
   assert.equal(counts['intermediate-algebra'].length, 70);
   assert.equal(counts.precalculus.length, 73);
   assert.equal(counts.biology.length, 208);
-  assert.equal(counts.microbiology.length, 31);
+  assert.equal(counts.microbiology.length, 38);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -313,8 +314,8 @@ test('the Microbiology book is pinned and in progress, its partial coverage coun
     authoringStatus: 'in-progress',
     upstreamChapters: 26,
     upstreamSections: 127,
-    localChapters: 7,
-    mappedSections: 31,
+    localChapters: 8,
+    mappedSections: 38,
   });
   assert.equal(result.map.books.microbiology.units, undefined, 'Microbiology is a flat collection');
 });

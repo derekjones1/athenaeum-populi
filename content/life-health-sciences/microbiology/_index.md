@@ -49,14 +49,14 @@ pathogens that cause them.
   culturing, and identifying viruses; viroids, virusoids, and prions.
 - **Microbial Biochemistry** — organic molecules, carbohydrates, lipids,
   proteins, and using biochemistry to identify microorganisms.
+- **Microbial Metabolism** — energy, matter, and enzymes; the catabolism of
+  carbohydrates, cellular respiration, and fermentation; the catabolism of
+  lipids and proteins; photosynthesis; and the biogeochemical cycles.
 
 ## Planned contents
 
-Microbiology has 26 chapters. The remaining 19 will appear in this order:
+Microbiology has 26 chapters. The remaining 18 will appear in this order:
 
-- **Microbial Metabolism** — energy, matter, and enzymes; catabolism of
-  carbohydrates, lipids, and proteins; cellular respiration, fermentation,
-  photosynthesis, and biogeochemical cycles.
 - **Microbial Growth** — how microbes grow and the oxygen, pH, temperature,
   and other conditions that affect growth, and the media used to grow
   bacteria.

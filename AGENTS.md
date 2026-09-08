@@ -17,7 +17,10 @@ chapters, 127 sections; chapters 1–2 authored September 5, 2026, chapter 1
 as the pilot, and chapters 3–4 on September 6); its rules are in
 `docs/subjects/microbiology.md`, which also records how it differs from
 Biology 2e (unkeyed prose exercises, no per-module glossary, new box and
-item types).
+item types). Dated narrative these playbooks used to carry — retrospectives,
+per-chapter authoring logs, closed-programme records — lives in
+`docs/history/` now, one file per playbook it was cut from; the playbooks
+themselves keep only what is still operative.
 
 ## Stack and constraints
 
@@ -47,7 +50,7 @@ item types).
   has a local page, chapter parity is enforced book-wide, and
   `build-map`/`verify-map` report them at full coverage; Microbiology is
   `in-progress` (pinned September 5, 2026, its first two chapters authored
-  the same day, chapters 3–4 on September 6, and chapters 5–7 on September 7) and is reported as `7/26 chapters, 31/127 sections mapped`. Biology 2e's sections live under
+  the same day, chapters 3–4 on September 6, and chapters 5–8 on September 7) and is reported as `8/26 chapters, 38/127 sections mapped`. Biology 2e's sections live under
   `content/life-health-sciences/biology` (each lock entry carries a
   `contentPath`, so a book need not live under `content/math`) and its
   subject playbooks (`docs/subjects/life-sciences.md` plus
@@ -58,11 +61,14 @@ item types).
 
 ## Commands
 
-- `npm run serve` — local Hugo server
+- `npm run serve` — local Hugo server (port 1313)
 - `npm run serve:public` — serve the built `public/` with no livereload
+  (port 1315; what the screenshot tools and the browser suite read)
 - `npm test` — unit tests, content validation, per-page verification, the
   answer cross-check, the source-key and answer-ledger gates, math lint,
-  figure label readability
+  figure label readability; stays offline and never fetches upstream — in
+  CI, the source gates (`verify:source-keys`, `verify:fillin-residual`) run
+  strict against the fetched checkouts instead of skipping
 - `npm run check:figures` — build every spec-first figure and fail on any
   label printed across other ink (part of `npm test`); legacy `data-spec`
   figures are previewed as their eventual spec-first re-renders, non-gating
@@ -186,17 +192,32 @@ pass instead, and `data/verification/answer-ledger.json` makes the result
 durable.
 
 An exercise's identity is the sha256 of its own source with whitespace runs
-collapsed. Reflowing a shortcode keeps its verdict; changing any semantic
-character — question, answer, option, hint, config — drops it out of the ledger
-and fails `npm run verify:ledger` until it is read again. The key is the hash
-alone, so an exercise duplicated across books is verified once and moving one
-between files costs nothing.
+collapsed, plus — when the stem, hint, or options name a figure, graph, or
+table on the page ("the graph above", "the table below", "according to the
+table", "shown above") — the source of the nearest such block in that
+direction (an `apfigure`, `mediafigure`, inline `<svg>`, Markdown table, or
+image); the hash then covers the dependency's source too. Reflowing a
+shortcode keeps its verdict; changing any semantic character — question,
+answer, option, hint, config, or the figure/table it depends on — drops it
+out of the ledger and fails `npm run verify:ledger` until it is read again.
+**Editing a figure or table an answer was read against strands the record
+exactly as editing the answer does.** A reference that resolves to no block
+on the page is a lint error, not a silent fall-back to a raw-only hash. The
+key is the hash alone, so an exercise duplicated across books is verified
+once and moving one between files costs nothing.
 
 Three verdicts: `ok`, `defect` (fails the gate — a known-wrong answer must not
 ship), and `unverifiable` (read, but undeterminable from the exercise text
 alone — a figure or table read). The `--max-unverifiable` ceiling keeps the
 third from quietly swallowing the corpus, the same way `--min-exercises` keeps
-extraction from going dark.
+extraction from going dark. The ledger is validated on every read — `check`,
+`stats`, `list`, `prune`, `merge`, and `solve-check`'s `compare`/`residual` all
+refuse a malformed one rather than trust it: `verdict` must be `ok`, `defect`,
+or `unverifiable`; a `defect` or `unverifiable` verdict must carry a `note`;
+`solved` must be `{ by, result: agrees|adjudicated, note? }`, with a note
+required when `result` is `adjudicated`; and an unknown field on any record
+fails the read. A malformed run exits 1 naming the offending record(s) rather
+than silently counting a typo as verified.
 
 **Authoring a new exercise therefore means verifying it.** Derive the answer
 independently, never from the key, and do the arithmetic by running it rather
@@ -214,13 +235,27 @@ residue really did go to zero: the figure-dependent items were re-read with
 `--context 80`, which attaches the page text above the shortcode so a "read the
 graph above" item can see the SVG it names, and the handful still unresolved
 turned out to be exercises whose figure had never been transcribed at all —
-repaired rather than excused.
+repaired rather than excused. Both `npm run ledger:list -- --context N` and
+`npm run solve:emit -- --context N` key-mask the *whole page* before cutting
+the N-line window (never just the window itself, which could open inside a
+model answer or a sortbins config), and an item bound to a figure or table
+carries that block as `dependency: { kind, line }` in `list` output — with
+the block's own masked text as `dependency.text` in a solve packet — every
+time, regardless of `--context`: a "the table below" ask reaches a block a
+backward-looking window could never see.
 
-Two commands drive a re-run:
+Commands that drive a re-run:
 
 - `npm run ledger:list -- --unverified --shard i/n` for anything unrecorded;
 - `npm run ledger:list -- --verdict unverifiable --context 80` for the
-  figure-dependent follow-up queue.
+  figure-dependent follow-up queue;
+- `npm run ledger:rekey` (`node tools/verify/answer-ledger.mjs rekey
+  content`) is the one-off migration for a changed identity scheme: it moved
+  193 records from the old raw-only hash to the context-aware hash above,
+  carrying every verdict forward. It cannot launder a later figure edit —
+  once a record is rekeyed the old raw-only key no longer exists, so editing
+  the figure afterwards strands the record under its new key exactly as any
+  other edit would.
 
 A pass writes result files, each shaped
 `{"results": [{"hash": "…", "verdict": "…", "note": "…"?}]}`, and

@@ -168,8 +168,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 26,
       "upstreamSections": 127,
-      "localChapters": 7,
-      "mappedSections": 31
+      "localChapters": 8,
+      "mappedSections": 38
     }
   },
   "sections": [
@@ -2323,6 +2323,69 @@
       "moduleId": "m58817",
       "sourceTitle": "Using Biochemistry to Identify Microorganisms",
       "moduleSha256": "4ed9e437490cba2b4b3ecdaaf564a1be63a20ff8c318070a9a79ee7a7b1ddf5c"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/08-microbial-metabolism/01-energy-matter-and-enzymes.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "8.1",
+      "moduleId": "m58819",
+      "sourceTitle": "Energy, Matter, and Enzymes",
+      "moduleSha256": "d795656fc46c44dc4a856d3e9d38a9e70c48902a23c92673d4e5d39b32abb2ef"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/08-microbial-metabolism/02-catabolism-of-carbohydrates.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "8.2",
+      "moduleId": "m58820",
+      "sourceTitle": "Catabolism of Carbohydrates",
+      "moduleSha256": "0d2bf983cc31fe39f17f8b02f0c3766cac433ba56336de8b9ba16b89e9c238a8"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/08-microbial-metabolism/03-cellular-respiration.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "8.3",
+      "moduleId": "m58821",
+      "sourceTitle": "Cellular Respiration",
+      "moduleSha256": "14b90b44081f9abf86d2fd88cad01eaf062a6ecf83542a6a36d0f8faf0c22c21"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/08-microbial-metabolism/04-fermentation.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "8.4",
+      "moduleId": "m58822",
+      "sourceTitle": "Fermentation",
+      "moduleSha256": "dce2c4915dbac5c8c78a774cc3f83bec449e4623b33bc1e01457219433f3b131"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/08-microbial-metabolism/05-catabolism-of-lipids-and-proteins.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "8.5",
+      "moduleId": "m58823",
+      "sourceTitle": "Catabolism of Lipids and Proteins",
+      "moduleSha256": "c14acf863d48defb7118ec76e27131d94b7872b37ff24b6cec51a617c86ebee1"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/08-microbial-metabolism/06-photosynthesis.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "8.6",
+      "moduleId": "m58824",
+      "sourceTitle": "Photosynthesis",
+      "moduleSha256": "3590d12b64eeb989bc615da9c8069b96eb3c3bf508e87fddf7beb666877b4755"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/08-microbial-metabolism/07-biogeochemical-cycles.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "8.7",
+      "moduleId": "m58825",
+      "sourceTitle": "Biogeochemical Cycles",
+      "moduleSha256": "7b64c66209ea2e2dc80666b3f5a674a17d88203ff84d7a78227b5129e09fce24"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

@@ -5375,6 +5375,575 @@
       ],
       "alt": "Skin with red raised bumps.",
       "caption": "Exposure to Pseudomonas aeruginosa in the water of a pool or hot tub can sometimes cause a skin infection that manifests as “hot tub rash.” (credit: modification of work by “Lsupellmel”/Wikimedia Commons)"
+    },
+    "OSC_Microbio_08_00_Splash": {
+      "source": "media/OSC_Microbio_08_00_Splash.jpg",
+      "sourceSha256": "c0af115920569d3731dcc14a25fc218a6457d62496a962806e91848e6538ddcd",
+      "module": "m58818",
+      "kind": "photo",
+      "width": 1300,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 369,
+          "file": "OSC_Microbio_08_00_Splash-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 600,
+          "file": "OSC_Microbio_08_00_Splash-1300.webp"
+        }
+      ],
+      "alt": "Orange and brown waterway. Close-up of roots with small nodules on them.",
+      "caption": "Prokaryotes have great metabolic diversity with important consequences to other forms of life. Acidic mine drainage (left) is a serious environmental problem resulting from the introduction of water and oxygen to sulfide-oxidizing bacteria during mining processes. These bacteria produce large amounts of sulfuric acid as a byproduct of their metabolism, resulting in a low-pH environment that can kill many aquatic plants and animals. On the other hand, some prokaryotes are essential to other life forms. Root nodules of many plants (right) house nitrogen-fixing bacteria that convert atmospheric nitrogen into ammonia, providing a usable nitrogen source for these plants. (credit left: modification of work by D. Hardesty, USGS Columbia Environment Research Center; credit right: modification of work by Celmow SR, Clairmont L, Madsen LH, and Guinel FC)"
+    },
+    "OSC_Microbio_08_01_ATP": {
+      "source": "media/OSC_Microbio_08_01_ATP.jpg",
+      "sourceSha256": "e15ad3083827aebed4253d4742942c75ab7e5bf0f7e9d77d5e891cd02483bf1d",
+      "module": "m58819",
+      "kind": "photo",
+      "width": 900,
+      "height": 471,
+      "variants": [
+        {
+          "width": 800,
+          "height": 418,
+          "file": "OSC_Microbio_08_01_ATP-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 471,
+          "file": "OSC_Microbio_08_01_ATP-900.webp"
+        }
+      ],
+      "alt": "Diagram showing ATP at the top and ADP + p at the bottom. Building ATP from ADP + P is called phosphorylation and uses solar or chemical energy. Breaking down ATP into ADP + P is called dephosphorylation and the energy released is available for cellular work including anabolism.",
+      "caption": "The energy released from dephosphorylation of ATP is used to drive cellular work, including anabolic pathways. ATP is regenerated through phosphorylation, harnessing the energy found in chemicals or from sunlight. (credit: modification of work by Robert Bear, David Rintoul)"
+    },
+    "OSC_Microbio_08_01_ApoHolo": {
+      "source": "media/OSC_Microbio_08_01_ApoHolo.jpg",
+      "sourceSha256": "f30e517b8ba1ceec7d5f735550cf4816d83852ed0f32f918f60aa39140fec0a7",
+      "module": "m58819",
+      "kind": "photo",
+      "width": 802,
+      "height": 489,
+      "variants": [
+        {
+          "width": 800,
+          "height": 487,
+          "file": "OSC_Microbio_08_01_ApoHolo-800.webp"
+        },
+        {
+          "width": 802,
+          "height": 489,
+          "file": "OSC_Microbio_08_01_ApoHolo-802.webp"
+        }
+      ],
+      "alt": "Diagram showing how a cofactor or coenzyme binds to the active site so that the shape of the active site is correct for binding the substrate. 1: apoenzyme becomes active by binding of the coenzyme or cofactor to enzyme. 2: Holoenzyme is formed when associated cofactor or coenzyme binds to the enzyme’s active site.",
+      "caption": "The binding of a coenzyme or cofactor to an apoenzyme is often required to form an active holoenzyme."
+    },
+    "OSC_Microbio_08_01_EndoExo": {
+      "source": "media/OSC_Microbio_08_01_EndoExo.jpg",
+      "sourceSha256": "2e3a1fecf1d035f49c7af79875c1e9c6f9e4c17f3bb8a9228df127d761abc6cf",
+      "module": "m58819",
+      "kind": "photo",
+      "width": 737,
+      "height": 423,
+      "variants": [
+        {
+          "width": 737,
+          "height": 423,
+          "file": "OSC_Microbio_08_01_EndoExo-737.webp"
+        }
+      ],
+      "alt": "A diagram showing how ATP relates to both endergonic and exergonic reactions. Exergonic reactions such as the reaction that breaks glucose into carbon dioxide, water and heat is exergonic and builds ATP from ADP + Pi. This process involves glycolysis, Krebs cycle, and oxidative phosphorylation. Endergonic reactions, such as building glucose into polysaccharides (a process of bond formation) use the energy released when ATP is converted into ADP and P.",
+      "caption": "Exergonic reactions are coupled to endergonic ones, making the combination favorable. Here, the endergonic reaction of ATP phosphorylation is coupled to the exergonic reactions of catabolism. Similarly, the exergonic reaction of ATP dephosphorylation is coupled to the endergonic reaction of polysaccharide formation, an example of anabolism."
+    },
+    "OSC_Microbio_08_01_EnzInh": {
+      "source": "media/OSC_Microbio_08_01_EnzInh.jpg",
+      "sourceSha256": "788a2126b8211fc2744e02bccca34ea1fa65d9e602fb1c52bdf989d91d6347b3",
+      "module": "m58819",
+      "kind": "photo",
+      "width": 835,
+      "height": 380,
+      "variants": [
+        {
+          "width": 800,
+          "height": 364,
+          "file": "OSC_Microbio_08_01_EnzInh-800.webp"
+        },
+        {
+          "width": 835,
+          "height": 380,
+          "file": "OSC_Microbio_08_01_EnzInh-835.webp"
+        }
+      ],
+      "alt": "Diagram of competitive inhibition shows an enzyme with an active site at one end and an allosteric site at the other end. In competitive inhibition the competitive inhibitor binds to the active site blocking the substrate from binding. In noncompetitive inhibition, the noncompetitive inhibitor binds to the allosteric site and changes the shape of the active site so that the substrate cannot fit.",
+      "caption": "Enzyme activity can be regulated by either competitive inhibitors, which bind to the active site, or noncompetitive inhibitors, which bind to an allosteric site."
+    },
+    "OSC_Microbio_08_01_Enzymes": {
+      "source": "media/OSC_Microbio_08_01_Enzymes.jpg",
+      "sourceSha256": "c038a8505a6edf20b0a75841710dcaab89a41aa8bc9d13ffdfa507d1a7a81f13",
+      "module": "m58819",
+      "kind": "photo",
+      "width": 492,
+      "height": 431,
+      "variants": [
+        {
+          "width": 492,
+          "height": 431,
+          "file": "OSC_Microbio_08_01_Enzymes-492.webp"
+        }
+      ],
+      "alt": "A graph with reaction path on the X axis and energy on the Y axis. A green line shows the reaction without a catalyst. This line starts flat at first and then increases. The flat portion is labeled reactants. The level of this increase is the activation energy (X to Y). The line then drops to a point above where the reactant line was; this new flat line is labeled products. The distance from the products to the peak of the graph is labeled activation energy (Y to X). The difference between the height of the reactants and the products is delta H. A red line shows this same reaction with a catalyst. The reactant and product levels are identical to the green line, but the height of the peak is much lower indicating decreased activation energy.",
+      "caption": "Enzymes lower the activation energy of a chemical reaction."
+    },
+    "OSC_Microbio_08_01_InducedFit": {
+      "source": "media/OSC_Microbio_08_01_InducedFit.jpg",
+      "sourceSha256": "aaf2f637317f1bc12d659dea41b08a442587c140b9733516536a18a00a51ecab",
+      "module": "m58819",
+      "kind": "photo",
+      "width": 1202,
+      "height": 444,
+      "variants": [
+        {
+          "width": 800,
+          "height": 295,
+          "file": "OSC_Microbio_08_01_InducedFit-800.webp"
+        },
+        {
+          "width": 1202,
+          "height": 444,
+          "file": "OSC_Microbio_08_01_InducedFit-1202.webp"
+        }
+      ],
+      "alt": "Diagram of enzyme. 1: substrate enters the active site of the enzyme. The drawing shows a relatively spherical enzyme with an opening (labeled active site) that fits the shape of the substrate. 2: Enzyme/substrate complex forms. The diagram shows the substrate binding to the opening in the enzyme and the enzyme changing shape slightly to better fit the substrate. 3: Substrate is converted to products. This is shown by the substrate breaking in half. 4: Products leave the active site of the enzyme.",
+      "caption": "According to the induced-fit model, the active site of the enzyme undergoes conformational changes upon binding with the substrate."
+    },
+    "OSC_Microbio_08_01_InhAct": {
+      "source": "media/OSC_Microbio_08_01_InhAct.jpg",
+      "sourceSha256": "0f0514403de88f792fd95390a5200b771c408e0ef52c332c34635989fd62f171",
+      "module": "m58819",
+      "kind": "photo",
+      "width": 1202,
+      "height": 1147,
+      "variants": [
+        {
+          "width": 800,
+          "height": 763,
+          "file": "OSC_Microbio_08_01_InhAct-800.webp"
+        },
+        {
+          "width": 1202,
+          "height": 1147,
+          "file": "OSC_Microbio_08_01_InhAct-1202.webp"
+        }
+      ],
+      "alt": "Diagrams of three different control mechanisms. Diagram of allosteric inhibition. An enzyme with an active site at one end and an allosteric site at the other. When the inhibitor is bound, the shape of the active site is changes so the substrate cannot bind. When the inhibitor is not bound the shape of the active site does fit the active site. Allosteric activation shows an active site that does not fit the substrate until the activator binds. Once the activator is bound, the active site now does fit the substrate. Feedback inhibition shows a chain of enzymes; enzyme 1 binds a substrate that becomes intermediate substrate A. Intermediate substrate A binds to enzyme 2 and is converted into intermediate substrate B. Intermediate substrate B binds to enzyme 3 and is converted into the end product. The end product binds to enzyme 1 and prevents the substrate from binding to that enzyme.",
+      "caption": "(a) Binding of an allosteric inhibitor reduces enzyme activity, but binding of an allosteric activator increases enzyme activity. (b) Feedback inhibition, where the end product of the pathway serves as a noncompetitive inhibitor to an enzyme early in the pathway, is an important mechanism of allosteric regulation in cells."
+    },
+    "OSC_Microbio_08_01_metabolism": {
+      "source": "media/OSC_Microbio_08_01_metabolism.jpg",
+      "sourceSha256": "89a0447c8bb83b5c6f1f344577b995fd8beb62577b502239edac9c9e368b1286",
+      "module": "m58819",
+      "kind": "photo",
+      "width": 1068,
+      "height": 380,
+      "variants": [
+        {
+          "width": 800,
+          "height": 284,
+          "file": "OSC_Microbio_08_01_metabolism-800.webp"
+        },
+        {
+          "width": 1068,
+          "height": 380,
+          "file": "OSC_Microbio_08_01_metabolism-1068.webp"
+        }
+      ],
+      "alt": "Diagram of metabolism. Catabolism: large molecules are broken down into small ones releasing energy. This is shown as a chain of 4 circles splitting into individual circles and Energy. The reverse process (using energy to connect the 4 circles) is anabolism. Anabolism: small molecules are assembled into larger ones, using energy.",
+      "caption": "Metabolism includes catabolism and anabolism. Anabolic pathways require energy to synthesize larger molecules. Catabolic pathways generate energy by breaking down larger molecules. Both types of pathways are required for maintaining the cell’s energy balance."
+    },
+    "OSC_Microbio_08_02_Glycolysis": {
+      "source": "media/OSC_Microbio_08_02_Glycolysis.jpg",
+      "sourceSha256": "9aaa34adb79610983f4e56106a206f026843bcbb55b2636d116c2ab2f55cb53e",
+      "module": "m58820",
+      "kind": "photo",
+      "width": 946,
+      "height": 1006,
+      "variants": [
+        {
+          "width": 800,
+          "height": 850,
+          "file": "OSC_Microbio_08_02_Glycolysis-800.webp"
+        },
+        {
+          "width": 946,
+          "height": 1006,
+          "file": "OSC_Microbio_08_02_Glycolysis-946.webp"
+        }
+      ],
+      "alt": "The energy investment phase in when glucose is converted into two molecules of glyceraldehyde 3-phosphate. Glucose is a 6 carbon ring. Glyceraldehyde 3-phosphate is a 3 carbon chain with a Pi attached to one end. This process uses 2 ATP and has fructose diphosphate (not drawn) as an intermediate. The energy payoff phase is when each glyceraldehyde 3-phosphate is converted into pyruvate. This builds 1 NADH and 2 ATP per glyceraldehyde 3-phosphate.",
+      "caption": "The energy investment phase of the Embden-Meyerhof-Parnas glycolysis pathway uses two ATP molecules to phosphorylate glucose, forming two glyceraldehyde 3-phosphate (G3P) molecules. The energy payoff phase harnesses the energy in the G3P molecules, producing four ATP molecules, two NADH molecules, and two pyruvates."
+    },
+    "OSC_Microbio_08_02_Krebs": {
+      "source": "media/OSC_Microbio_08_02_Krebs.jpg",
+      "sourceSha256": "21d37d3d19b0e40b289951953d50d76c8c0ca944cf26e760a359c1b651bf8024",
+      "module": "m58820",
+      "kind": "photo",
+      "width": 675,
+      "height": 440,
+      "variants": [
+        {
+          "width": 675,
+          "height": 440,
+          "file": "OSC_Microbio_08_02_Krebs-675.webp"
+        }
+      ],
+      "alt": "The citric acid cycle is drawn as a circle with arrows around the outside showing what enters and exits the cycle. 3 NAD+ are converted to 3 NADH, 1 FAD is converted to 1 FADH2, 2 CO2 leave the cycle, ADP or GDP are converted to ATP or GTP. Acetyl-CoA enters and CoA leaves (leaving the 2 carbons as part of the cycle.",
+      "caption": "The Krebs cycle, also known as the citric acid cycle, is summarized here. Note incoming two-carbon acetyl results in the main outputs per turn of two CO 2 , three NADH, one FADH 2 , and one ATP (or GTP) molecules made by substrate-level phosphorylation. Two turns of the Krebs cycle are required to process all of the carbon from one glucose molecule."
+    },
+    "OSC_Microbio_08_02_KrebsUsage": {
+      "source": "media/OSC_Microbio_08_02_KrebsUsage.jpg",
+      "sourceSha256": "6c00dd366453fe1f5f333a16c8a3c3091341a3cbf4bbc304bbe4148145157c0e",
+      "module": "m58820",
+      "kind": "photo",
+      "width": 1000,
+      "height": 888,
+      "variants": [
+        {
+          "width": 800,
+          "height": 710,
+          "file": "OSC_Microbio_08_02_KrebsUsage-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 888,
+          "file": "OSC_Microbio_08_02_KrebsUsage-1000.webp"
+        }
+      ],
+      "alt": "Details of the Kreb’s cycle. Acetyl-CoA (C2) enter at the top (along with water). SH-CoA leaves. The 2 carbons of Acetyl-CoA bind with the 4 carbons of oxaloacetate for form citrate (C6). An arrow shows that this can be used to build fatty acids and sterols. Citrate is converted to isocitrate (C6). Isocitrate is converted to alpha-ketoglutarate. This step builds 1 NADH/H+ from NADH and releases 1 CO2. Alpha-ketoglutarate can be used to build glutamate which can be used to build other amino acids and nucleotides. Alpha-ketoglutarate is converted to succinyl CoA (C4) by the addition of SH-CoA. This step builds one NADH/H+ from NAH+ and releases a CO2. Succinyl CoA can be used to build porphyrins, heme, and chlorophyll. Succinyl-CoA is converted to Succinate (C4). This step releases SH-CO and builds ATP or GTP from ADP or GDP and Pi. Succinate is converted to fumarate (C4). This step produces FADH2 from FAD. Fumarate is converted to malate (C4) with the addition of water. Malate is converted to oxaloacetate. This step produces NADH/H+ from NAD+. Oxoaloacetate can be used to build asparate which can be used to build nucleotides and other amino acids. Oxaloacetate can also continue in another cycle of the Kreb’s cycle",
+      "caption": "Many organisms use intermediates from the Krebs cycle, such as amino acids, fatty acids, and nucleotides, as building blocks for biosynthesis."
+    },
+    "OSC_Microbio_08_02_SubPhos": {
+      "source": "media/OSC_Microbio_08_02_SubPhos.jpg",
+      "sourceSha256": "c18792cbb9d0393611c3ad0cbaf4be4968a8edfcc38ee667a2d4fd99ce4f1539",
+      "module": "m58820",
+      "kind": "photo",
+      "width": 1294,
+      "height": 421,
+      "variants": [
+        {
+          "width": 800,
+          "height": 260,
+          "file": "OSC_Microbio_08_02_SubPhos-800.webp"
+        },
+        {
+          "width": 1294,
+          "height": 421,
+          "file": "OSC_Microbio_08_02_SubPhos-1294.webp"
+        }
+      ],
+      "alt": "An enzyme has 2 substrates bound: ATP and another substrate. One of the phosphates from ATP is transferred to the other substrate.",
+      "caption": "The ATP made during glycolysis is a result of substrate-level phosphorylation. One of the two enzymatic reactions in the energy payoff phase of Embden Meyerhof-Parnas glycolysis that produce ATP in this way is shown here."
+    },
+    "OSC_Microbio_08_02_Transition": {
+      "source": "media/OSC_Microbio_08_02_Transition.jpg",
+      "sourceSha256": "f45e44d217c46df96388cc58a57b6cbf662a9fd5375641d2e4e57ecb996430d5",
+      "module": "m58820",
+      "kind": "photo",
+      "width": 1184,
+      "height": 1044,
+      "variants": [
+        {
+          "width": 800,
+          "height": 705,
+          "file": "OSC_Microbio_08_02_Transition-800.webp"
+        },
+        {
+          "width": 1184,
+          "height": 1044,
+          "file": "OSC_Microbio_08_02_Transition-1184.webp"
+        }
+      ],
+      "alt": "Coenzyme A is made of a 5 carbon sugar in a ring. Attached to carbon 1 is adenine, attached to carbon 3 is a phosphate group. Attached to carbon 5 (which is out of the ring) are two phosphate groups and a carbon/nitrogen chain with a sulfur at the end. The acetyl group binds to this final sulfur.",
+      "caption": "(a) Coenzyme A is shown here without an attached acetyl group. (b) Coenzyme A is shown here with an attached acetyl group."
+    },
+    "OSC_Microbio_08_03_ATPYield": {
+      "source": "media/OSC_Microbio_08_03_ATPYield.jpg",
+      "sourceSha256": "658c02f2868852c46c4368323994b5d20e7983faf35ff784f9c20bca5ab5f495",
+      "module": "m58821",
+      "kind": "photo",
+      "width": 1300,
+      "height": 831,
+      "variants": [
+        {
+          "width": 800,
+          "height": 511,
+          "file": "OSC_Microbio_08_03_ATPYield-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 831,
+          "file": "OSC_Microbio_08_03_ATPYield-1300.webp"
+        }
+      ],
+      "alt": "In glycolysis (EMP) carbon moves from glucose (6C) to 2 pyruvate (3C). The molecules of reduced coenzyme produced are 2 NADH. The net ATP molecules made by substrate level phosphorylation is 2 ATP. The net ATP molecules made by oxidative phosphorylation is 6 ATP from 2 NADH. The theoretical maximum yield of ATP molecules is 8. In the transition reaction carbon moves from 2 pyruvate (3C) to 2 acetyl (2C) + 2 CO2. The molecules of reduced coenzyme produced are 2 NADH. The net ATP molecules made by substrate level phosphorylation is 0 ATP. The net ATP molecules made by oxidative phosphorylation is 6 ATP from 2 NADH. The theoretical maximum yield of ATP molecules is 6. In the Krebs cycle carbon moves from 2 acetyl (2C) to 4 CO2. The molecules of reduced coenzyme produced are 6 NADH and 2 FADH2. The net ATP molecules made by substrate level phosphorylation is 2 ATP. The net ATP molecules made by oxidative phosphorylation is 18 ATP from 6 NADH and 4 ATP from 2 FADH2. The theoretical maximum yield of ATP molecules is 24. In total carbon moves from glucose (6C) to 6 CO2. The molecules of reduced coenzyme produced are 10 NADH and 2 FADH2. The net ATP molecules made by substrate level phosphorylation is 4 ATP. The net ATP molecules made by oxidative phosphorylation is 34 ATP. The theoretical maximum yield of ATP molecules is 38.",
+      "caption": ""
+    },
+    "OSC_Microbio_08_03_Chemiosmos": {
+      "source": "media/OSC_Microbio_08_03_Chemiosmos.jpg",
+      "sourceSha256": "3682999db7d7485cd5a966a30ec97fb0d051b0c81b4e9b2ea115f61db02b74a0",
+      "module": "m58821",
+      "kind": "photo",
+      "width": 1168,
+      "height": 781,
+      "variants": [
+        {
+          "width": 800,
+          "height": 535,
+          "file": "OSC_Microbio_08_03_Chemiosmos-800.webp"
+        },
+        {
+          "width": 1168,
+          "height": 781,
+          "file": "OSC_Microbio_08_03_Chemiosmos-1168.webp"
+        }
+      ],
+      "alt": "ATP synthase is an enzyme that spans the cytoplasmic membrane. H+ flow in through this protein from the outside of the cytoplasmic membrane into the cytoplasm. On the inner side of the protein, this flow of H+ is used to build ATP from ADP and Pi.",
+      "caption": "The bacterial electron transport chain is a series of protein complexes, electron carriers, and ion pumps that is used to pump H + out of the bacterial cytoplasm into the extracellular space. H + flows back down the electrochemical gradient into the bacterial cytoplasm through ATP synthase, providing the energy for ATP production by oxidative phosphorylation.(credit: modification of work by Klaus Hoffmeier)"
+    },
+    "OSC_Microbio_08_04_EthFerm": {
+      "source": "media/OSC_Microbio_08_04_EthFerm.jpg",
+      "sourceSha256": "ff6ef18262b6f6715642dd2ca77fc6dba97f15afb308f4e08186e06890020d2c",
+      "module": "m58822",
+      "kind": "photo",
+      "width": 720,
+      "height": 275,
+      "variants": [
+        {
+          "width": 720,
+          "height": 275,
+          "file": "OSC_Microbio_08_04_EthFerm-720.webp"
+        }
+      ],
+      "alt": "Pyruvic acid is converted to CO2 andacetaldehyde. Acetaldehyde is converted to ethanol; in this process NADH is converted to NAD+",
+      "caption": "The chemical reactions of alcohol fermentation are shown here. Ethanol fermentation is important in the production of alcoholic beverages and bread."
+    },
+    "OSC_Microbio_08_04_FB3": {
+      "source": "media/OSC_Microbio_08_04_FB3.jpg",
+      "sourceSha256": "046a93ce51a2eaf8a2f005d1ab8b42d1283ed28032b86d494aab39a4dbf92025",
+      "module": "m58822",
+      "kind": "photo",
+      "width": 1200,
+      "height": 123,
+      "variants": [
+        {
+          "width": 800,
+          "height": 82,
+          "file": "OSC_Microbio_08_04_FB3-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 123,
+          "file": "OSC_Microbio_08_04_FB3-1200.webp"
+        }
+      ],
+      "alt": "A strip with bubbles containing liquids. DNPG is clear. ADH is pink. LDC is yellow, ODC is yellow. Cit is green. H2S is clear. URE is yellow. TDA is yellow IND is white. VP is ping. GEL has a black streak. GLU is yellow. MA is green. IND is green. SOR is green. RHA is green. SAC is green. MEL is green. AMY is green ARA is green.",
+      "caption": "The API 20NE test strip is used to identify specific strains of gram-negative bacteria outside the Enterobacteriaceae. Here is an API 20NE test strip result for Photobacterium damselae ssp. piscicida ."
+    },
+    "OSC_Microbio_08_06_GenPhoto": {
+      "source": "media/OSC_Microbio_08_06_GenPhoto.jpg",
+      "sourceSha256": "4c207f40b7fb6e772af81818a4470866043ba50efd1bce0bdf233a5a9429cdf3",
+      "module": "m58824",
+      "kind": "photo",
+      "width": 1001,
+      "height": 432,
+      "variants": [
+        {
+          "width": 800,
+          "height": 345,
+          "file": "OSC_Microbio_08_06_GenPhoto-800.webp"
+        },
+        {
+          "width": 1001,
+          "height": 432,
+          "file": "OSC_Microbio_08_06_GenPhoto-1001.webp"
+        }
+      ],
+      "alt": "Light energy strikes LH (light-harvesting complex) in a photosystem. This energy is transferred to other LH & to RC (reaction center). This energy excites an electron in the RC, this electron then passes through an ETS (electron transport system) and the PMF (proton motive force) is used to MAKE ATP. The ETC aslo produces NADP which is converted to NADPH. The electron in the RC is replaced from H2A which is then converted to A.",
+      "caption": "This figure summarizes how a photosystem works. Light harvesting (LH) pigments absorb light energy, converting it to chemical energy. The energy is passed from one LH pigment to another until it reaches a reaction center (RC) pigment, exciting an electron. This high-energy electron is lost from the RC pigment and passed through an electron transport system (ETS), ultimately producing NADH or NADPH and ATP. A reduced molecule (H 2 A) donates an electron, replacing electrons to the electron-deficient RC pigment."
+    },
+    "OSC_Microbio_08_06_LightDepIn": {
+      "source": "media/OSC_Microbio_08_06_LightDepIn.jpg",
+      "sourceSha256": "becadff1d29658b28a65751441e3914388cece9f3353d2f59618f0e11bf4c5ce",
+      "module": "m58824",
+      "kind": "photo",
+      "width": 902,
+      "height": 703,
+      "variants": [
+        {
+          "width": 800,
+          "height": 623,
+          "file": "OSC_Microbio_08_06_LightDepIn-800.webp"
+        },
+        {
+          "width": 902,
+          "height": 703,
+          "file": "OSC_Microbio_08_06_LightDepIn-902.webp"
+        }
+      ],
+      "alt": "Diagram of photosynthesis showing a chloroplast divided into the light-dependent reactions and CO2 fixation. There is an outer membrane, an inner membrane and a stack of membranes labeled granum (these are photosynthetic membranes). Light strikes the granum and H2A is converted to ½ A. This process produces ATP + NADPH/NADH that is used in the CO2 fixation cycle. This cycle uses CO2 to produce organics. The CO2 cycle also produces ADP + Pi and NADP+ / NAD+ which are then used in the light-dependent reaction.",
+      "caption": "The light-dependent reactions of photosynthesis (left) convert light energy into chemical energy, forming ATP and NADPH. These products are used by the light-independent reactions to fix CO 2 , producing organic carbon molecules."
+    },
+    "OSC_Microbio_08_06_PSI_PSII": {
+      "source": "media/OSC_Microbio_08_06_PSI_PSII.jpg",
+      "sourceSha256": "61ea05f473597938d17044f339f98e6cca4efef8224f5884d280c75e342a5e4c",
+      "module": "m58824",
+      "kind": "photo",
+      "width": 1062,
+      "height": 1394,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1050,
+          "file": "OSC_Microbio_08_06_PSI_PSII-800.webp"
+        },
+        {
+          "width": 1062,
+          "height": 1394,
+          "file": "OSC_Microbio_08_06_PSI_PSII-1062.webp"
+        }
+      ],
+      "alt": "a) Drawing of a thylakoid membrane with proteins. Light strikes PS II which breaks water into ½ O2, 2 H+ and an electron. The electron moves to PO, PQH2, cytochrome, PO, and then to PSI. This is an electron transport chain and as the electron moves, H+ is pumped from the stroma to the thylakoid space. Light Strikes PSI and the electron is excited again; it is then moved to FD and then NADP+ reductase. This produces NADPH from NADP+ and H+. Protons from the inner thylakoid space move out to the stroma through ATP synthase which produces ATP. B) the same diagram but in a graphical format with amount of energy on the Y axis. PSII has an antenna pigment and P680 which absorbs light at 680 nm. This excites the electron (moves it up in the graph). The electron then decreases in energy as it moves from PO to OQHS, to cytochrome, to PO and then to PS I. Light at 700 nm strikes P700 and the electron is excited again. The electron then decreases in energy as it moves from FD to NADP+ reductase to NADPH. Moving from PSII to NADPH is non-cyclic photosynthesis. Cyclic photosynthesis is when the electron moves from PSI back to PS II.",
+      "caption": "(a) PSI and PSII are found on the thylakoid membrane. The high-energy electron from PSII is passed to an ETS, which generates a proton motive force for ATP synthesis by chemiosmosis, and ultimately replaces the electron lost by the PSI reaction center. The PSI reaction center electron is used to make NADPH. (b) When both ATP and NADPH are required, noncyclic photophosphorylation (in cyanobacteria and plants) provides both. The electron flow described here is referred to as the Z-scheme (shown in yellow in [a]). When the cell’s ATP needs outweigh those for NADPH, cyanobacteria and plants will use only PSI, and its reaction center electron is passed to the ETS to generate a proton motive force used for ATP synthesis."
+    },
+    "OSC_Microbio_08_06_PhotoEquat": {
+      "source": "media/OSC_Microbio_08_06_PhotoEquat.jpg",
+      "sourceSha256": "c2b7218c1d27b101a4e2f716907eea8c8e1e627b01099e9f885fd9c74ba33e49",
+      "module": "m58824",
+      "kind": "photo",
+      "width": 787,
+      "height": 468,
+      "variants": [
+        {
+          "width": 787,
+          "height": 468,
+          "file": "OSC_Microbio_08_06_PhotoEquat-787.webp"
+        }
+      ],
+      "alt": "In oxygenic photosynthesis 6 carbon dioxide 12 water and light energy is converted to glucose, 6 oxygen, and 6 water. In anoxygenic photosynthesis carbon dioxide, 2H2A and light energy is converted to a carbohydrate and water. H2A = water, H2S, H2, or other electron donor.",
+      "caption": "Eukaryotes and cyanobacteria carry out oxygenic photosynthesis, producing oxygen, whereas other bacteria carry out anoxygenic photosynthesis, which does not produce oxygen."
+    },
+    "OSC_Microbio_08_06_PhotoMemb": {
+      "source": "media/OSC_Microbio_08_06_PhotoMemb.jpg",
+      "sourceSha256": "47ffbe7aa3774186768c98a302b03082aa4fef9c5e807ee100a4c47a875e4e0e",
+      "module": "m58824",
+      "kind": "photo",
+      "width": 1300,
+      "height": 586,
+      "variants": [
+        {
+          "width": 800,
+          "height": 360,
+          "file": "OSC_Microbio_08_06_PhotoMemb-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 586,
+          "file": "OSC_Microbio_08_06_PhotoMemb-1300.webp"
+        }
+      ],
+      "alt": "a) Drawing of a chloroplast, which is a bean shaped structure with an outer membrane and an inner membrane. Between these is the intermembrane space. Inside the inner membrane is an aqueous fluid called stroma and membranes (thylakoids) that form stacks called (grana). The thylakoids form disks with an inner thylakoid lumen. B) Micrograph and drawing of thyladoids which look like folded material. One of the thylakoid membranes is cleaved.",
+      "caption": "(a) Photosynthesis in eukaryotes takes place in chloroplasts, which contain thylakoids stacked into grana. (b) A photosynthetic prokaryote has infolded regions of the plasma membrane that function like thylakoids. (credit: scale bar data from Matt Russell.)"
+    },
+    "OSC_Microbio_08_07_CCycle": {
+      "source": "media/OSC_Microbio_08_07_CCycle.jpg",
+      "sourceSha256": "dbe672e5c7a3896e9146ce1ac9f2aff952f23160c74892c8876a0cc3dd6eefbf",
+      "module": "m58825",
+      "kind": "photo",
+      "width": 1300,
+      "height": 914,
+      "variants": [
+        {
+          "width": 800,
+          "height": 562,
+          "file": "OSC_Microbio_08_07_CCycle-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 914,
+          "file": "OSC_Microbio_08_07_CCycle-1300.webp"
+        }
+      ],
+      "alt": "The carbon cycle. CO2 from the atmosphere moves into plants, soils, surface ocean, and rivers. From plants, the carbon moves back to the air. From the water, the carbon moves to marine biota, the deep ocean, and sediments. Carbon also moves back to the air from fossil fuel and cement production.",
+      "caption": "This figure summarizes the carbon cycle. Eukaryotes participate in aerobic respiration, fermentation, and oxygenic photosynthesis. Prokaryotes participate in all the steps shown. (credit: modification of work by NOAA)"
+    },
+    "OSC_Microbio_08_07_CF": {
+      "source": "media/OSC_Microbio_08_07_CF.jpg",
+      "sourceSha256": "4446a6ee7816da9cb7f751a6a6db6b7c2ad888232230af149b7ce1b3c3182c1e",
+      "module": "m58825",
+      "kind": "photo",
+      "width": 1199,
+      "height": 581,
+      "variants": [
+        {
+          "width": 800,
+          "height": 387,
+          "file": "OSC_Microbio_08_07_CF-800.webp"
+        },
+        {
+          "width": 1199,
+          "height": 581,
+          "file": "OSC_Microbio_08_07_CF-1199.webp"
+        }
+      ],
+      "alt": "a) Micrograph of small pink circles. B) Map of Africa showing the Meningitis Belt (areas of high epidemic risk) running from Senegal on the east to Ethiopia on the West and spanning 2 countries from north to south. There are 24 Countries with areas in the Meningitis belt.",
+      "caption": "(a) Neisseria meningitidis is a gram-negative diplococcus, as shown in this gram-stained sample. (b) The “meningitis belt” is the area of sub-Saharan Africa with high prevalence of meningitis caused by N. meningitidis . (credit a, b: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_08_07_Ncycle": {
+      "source": "media/OSC_Microbio_08_07_Ncycle.jpg",
+      "sourceSha256": "0cab24ef4a0f06ec170d8e2518dc67151a1b400eae58718e8ad327b38a3ab58e",
+      "module": "m58825",
+      "kind": "photo",
+      "width": 1300,
+      "height": 891,
+      "variants": [
+        {
+          "width": 800,
+          "height": 548,
+          "file": "OSC_Microbio_08_07_Ncycle-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 891,
+          "file": "OSC_Microbio_08_07_Ncycle-1300.webp"
+        }
+      ],
+      "alt": "The nitrogen cycle. Gaseous atmospheric nitrogen shore; this moves into organic matter (R-NH2) through bacterial and lightning fixation. Fertilizers and mineralization produce ammonium (NH4+). This can enter waterways via run off and leaching. Ammonium is converted to nitrates (NO2-) via nitrification. These are then converted to nitrates (NO3-) via nitrification. Both of these can end up in waterways causing eutrophication. Nitrates can be taken in by plants or converted to gaseous nitrate (N2) by denitrification.",
+      "caption": "This figure summarizes the nitrogen cycle. Note that specific groups of prokaryotes each participate in every step in the cycle. (credit: modification of work by NOAA)"
+    },
+    "OSC_Microbio_08_07_SCycle": {
+      "source": "media/OSC_Microbio_08_07_SCycle.jpg",
+      "sourceSha256": "a54c5ab6e6c4a182bec9051a36a9169669b9921b0c72e35b25b8eaade2d9b7c2",
+      "module": "m58825",
+      "kind": "photo",
+      "width": 1300,
+      "height": 891,
+      "variants": [
+        {
+          "width": 800,
+          "height": 548,
+          "file": "OSC_Microbio_08_07_SCycle-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 891,
+          "file": "OSC_Microbio_08_07_SCycle-1300.webp"
+        }
+      ],
+      "alt": "Sulfur cycle. Atmospheric sulfur (SO2 gas) is taken in by plants. Plant residues and animal manures and biosolids produce organic sulfur. Mineralization produces sulfate (SO42-). Immobilization reverts sulfate back to organic sulfur. Sulfate is converted to H2S via anaerobic respiration. Decomposition also produces H2S. Sulfate can be absorbed or converted to mineral sulfur. Bacterial reduction converts sulfate to reduced sulfur (H2S, HS). Oxidation converts reduced sulfur and elemental sulfur (SO0) to sulfate.",
+      "caption": "This figure summarizes the sulfur cycle. Note that specific groups of prokaryotes each may participate in every step in the cycle. (credit: modification of work by NOAA)"
     }
   }
 }

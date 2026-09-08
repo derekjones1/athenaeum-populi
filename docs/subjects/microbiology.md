@@ -30,7 +30,10 @@ seven claim corrections from the prose claim pass); rules marked *(chapters
 5–6)* came from it. **Chapter 7, *Microbial Biochemistry*, followed the same
 day** (five sections, 58 graded items, 12 self-checks, 32 figures, errata
 493–503, no claim corrections — the claim pass found none); rules marked
-*(chapter 7)* came from it.
+*(chapter 7)* came from it **Chapter 8, *Microbial Metabolism*, followed the
+same day** (seven sections, 100 graded items, 23 self-checks, 26 figures,
+errata 504–525, two claim corrections settled by the book's own text);
+rules marked *(chapter 8)* came from it.
 
 ## Source and authority
 
@@ -87,15 +90,18 @@ units, and none are to be invented. A chapter moves from the cover's
 happens when its first section lands, never earlier. The book was
 `authoringStatus: scaffolded` in the lock until chapter 1 was complete
 (September 5, 2026); it is `in-progress` now, and becomes `complete` when
-the 127th section lands. Flipping that flag is a close-out step of its own:
-the lock, the cover's `authoring_status` (which `npm run source:verify`,
-under `npm test`, requires to equal the lock's word for word, and to be
-absent once the lock says `complete`), `tools/source/openstax-source.test.mjs`
-(three assertions), and the prose in `AGENTS.md`, `README.md`, and
-`docs/source/openstax-source-workflow.md` all name the status and the
-mapped-section count.
-Chapter close-out pins the mapped-section count in the same six places the
-life-sciences playbook lists.
+the 127th section lands. Flipping that flag is a close-out step of its
+own, and the *status* word is pinned in the same six places the
+life-sciences playbook lists: the lock's `authoringStatus`, the cover's
+`authoring_status` frontmatter (which `npm run source:verify` requires to
+equal the lock's word for word, and to be absent once the lock says
+`complete`), the three assertions in
+`tools/source/openstax-source.test.mjs`, and the status prose in
+`AGENTS.md`, `README.md`, and `docs/source/openstax-source-workflow.md`.
+`npm run source:verify` is not part of `npm test`; it runs at close-out
+and in CI (CI fetches the pinned sources first and then runs it). The
+mapped-section *count* is stated once, in the workflow doc; this file says
+"the committed section map" rather than restating the number.
 
 ## What is different from Biology 2e
 
@@ -746,6 +752,70 @@ Everything in biology's Verification section, plus:
   Garnetta", "L. Gana, S. Chena, G.J. Jensena") is a source defect the
   checker's word-diff catches *(chapter 3)*: cite the real surnames, disclose
   in the footer, log it.
+- **A name and its abbreviation marked as separate `<term>` elements are
+  one Key-terms bullet** *(chapter 8)*: §8.1 marks `nicotinamide adenine
+  dinucleotide`, `NAD+/NADH`, `NADP+`, `NADPH`, `FAD`, `FADH2` and the two
+  parent names as eight elements in one passage. Bold each at its
+  occurrence as the source does, write three bullets (`**name**
+  (abbreviation) — …`), and record elements → bullets in the ledger (43 →
+  38). The Glossary script prints the abbreviation elements as NO ENTRY;
+  that is the merge, not a lookup failure. The same script drops `<sub>`
+  and `<sup>` markup, so a verbatim Glossary copy reintroduces ASCII
+  formulas — every bullet, alt, `longdesc`, `sortbins` label, and
+  exercise string is Unicode (`CO₂`, `NADP⁺`, `FADH₂`, `Pᵢ`); no lint sees
+  the drift, and four of seven chapter-8 pages shipped it to their
+  checkers.
+- **A figure that is a table of values is a table image** *(chapter 8)*:
+  §8.3's ATP-yield figure prints an empty `<caption>` and a source alt that
+  is a 700-character cell-by-cell transcription. The chapter-2 rule
+  generalizes to it — Markdown table from the image, checked against the
+  PDF, figure kept after it, said in the footer — and a manifest alt that
+  long is `longdesc` material, never copied into `alt`. A figure whose
+  CNXML caption is empty gets no caption line.
+- **Two source-verbatim items that print each other's key are reordered
+  and disclosed, never dropped** *(chapter 8)*: §8.2's "which is not a name
+  for the cycle that produces one ATP, two CO₂, one FADH₂, and three NADH"
+  prints the quadruple that keys the four-blank fill-in beside it, and a
+  source MC's distractor "Embden-Meyerhof pathway" prints a sibling
+  textin's key. Neither stem may change; put the leaked item BEFORE the
+  item that prints it, say so in the footer, and keep an unmovable one
+  (a cross-group option) with a disclosure. The checker's option-list grep
+  is what finds these; the "distractor directly above a textin" rule is a
+  substring rule, not an adjacency rule.
+- **A multi-word plural key needs its singular spellings in `accept`, in
+  every order** *(chapter 8)*: `chlorophylls and carotenoids` rejected
+  `chlorophyll and carotenoid` and three mixed forms until the checker ran
+  them. And a member that differs from another only by hyphen/space
+  (`beta-oxidation` / `beta oxidation`) or case (`RuBisCO` / `rubisco`) is a
+  duplicate the lint rejects — the v6 brief's own examples were wrong.
+- **An "entry step plus ordered rest" answer is a two-paragraph
+  conversion** *(chapter 8)*: §8.7's "What are the four steps of the
+  nitrogen cycle?" needs the fixation paragraph AND the
+  ammonification/nitrification/denitrification list; a converse read across
+  a paragraph boundary (§8.4's facultative-switch sentence plus the next
+  paragraph's "if respiration does not occur… fermentation") is the same
+  shape. Both stay self-checks. Chapter 8's checkers reverted six
+  conversions on this ground across five pages; the one-sentence test is
+  literal.
+- **A `sortbins` bin word can collide with a printed label** *(chapter
+  8)*: binning §8.4's fermentation-pathways table "by ethanol production"
+  puts the bin word inside the label "acetone-butanol-ethanol"; identify
+  that row by its other end products or its example microbe instead.
+- **A Clinical Focus figure sits inside its callout** *(chapter 8)*: §8.4's
+  Micro Connection and §8.7's Resolution each carry a `<figure>`; it is an
+  ordinary `mediafigure` at its document position inside the callout.
+- **The source alts of process figures state directions and counts the
+  artwork contradicts** *(chapter 8)*: §8.2's substrate-level-phosphorylation
+  alt runs the reaction backwards, §8.1's metabolism alt was inverted by its
+  author, a chemiosmosis longdesc miscounted four H⁺ as three, and two
+  artworks carry label typos ("Aponenzyme", "PO" for PQ, "elemental
+  sulfate(SO⁰)"). Every direction word and every count in an alt or
+  `longdesc` is read off the image; a label the artwork misprints is
+  transcribed as printed with the correct name beside it, and logged.
+- **Errata 504–525 came from this chapter**, two of them claim corrections
+  from the prose claim pass settled by the book's own text (archaeal
+  membrane phospholipids against §3.3; the nitrogen-cycle summary against
+  its own module), the rest figure-alt and spelling defects.
 
 ## Knowledge checks
 
@@ -760,7 +830,7 @@ and would have to be justified on the cover). Decide before the first
 check is authored, and record the decision and the weight table here and
 in `docs/knowledge-check-playbook-life-sciences.md`.
 
-## How a chapter is run *(pilot, chapter 1)*
+## How a chapter is run
 
 Three passes, in this order, and none of them optional:
 
@@ -777,19 +847,8 @@ Three passes, in this order, and none of them optional:
    any disagreement against the CNXML, and merges the ledger records last,
    because every hash depends on the final text.
 
-**Parent prep before the wave**, all of it work an author would otherwise
-redo three times: vendor the chapter's media; render its PDF pages; create
-the chapter landing with `authoring_status: scaffolded`; and pre-extract,
-per section, (a) the module's objectives, defined terms, summary, Check
-Your Understanding questions, every exercise with its options and its source
-key or an explicit "source prints no key", and every figure with its stem,
-alt, and caption, and (b) the `## Key terms` scaffold with every definition
-already looked up and its provenance marked. The extraction is also what
-lets the parent check an author's "the module has no X" claim in seconds.
-
-**Parent duties after**: apply every fix itself (no fix agents), verify each
-checker finding against the image or the raw CNXML before acting on it — a
-checker finding is a hypothesis — log the errata, and run the gates.
+The chapter-1 pilot record — the parent-prep steps that precede a wave and
+the pilot's own retrospective — moved to `docs/history/microbiology.md`.
 
 ## Done checklist (in addition to the core and life-sciences checklists)
 

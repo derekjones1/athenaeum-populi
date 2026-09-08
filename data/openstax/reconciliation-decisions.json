@@ -1,1188 +1,1210 @@
 {
- "schemaVersion": 2,
- "targetCommits": {
-  "prealgebra-bundle": "38cae454e644abf9f0a623e876994553881597c9",
-  "college-algebra-bundle": "789b54099106b071d1d32bfcee454fed72eb4768",
-  "biology-bundle": "63f8b6f8d129dd1582989bb755011e9a6d523471",
-  "microbiology": "633850257fbd3ccf6187b9428c55e80b69236382"
- },
- "metadataDecisions": [
-  {
-   "localPath": "content/math/precalculus/02-linear-functions/04-fitting-linear-models-to-data.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49327",
-   "covers": [],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "CNX_Precalc_Figure_02_04_007"
-   ],
-   "rationale": "Figure 7 is a 21-panel Wikimedia correlation composite (credit: DenisBoigelot) plotting thousands of points per panel. It cannot be reproduced as accessible inline SVG under the no-file-backed-images rule, and it has no formula to render from. It is replaced by eight panels built from explicit point sets recorded in each figure's data-spec, spanning the same pedagogical range: r = 1 and r = -1 drawn exactly from y = 0.8x + 1 and y = 9 - 0.8x; r = 0.8, 0.4, 0.0, -0.4, -0.8 generated as y = 5 + 1.9(rho*z_x + sqrt(1-rho^2)*z_e) with z_e orthogonal to z_x, rounded to 0.1, and verified at r = 0.8065, 0.4009, 0.0082, -0.3908, -0.7984; and a nonlinear r = 0 panel from y = 8 - 0.28(x-5)^2 with symmetric jitter. The Wikimedia credit is retained in the attribution footer, which also discloses the substitution. This is a deliberate local replacement, not a transcription of the source figure: do not reverse it toward the composite in a later audit.",
-   "covers_note": "Empty by design. This adaptation is a figure substitution, not a title/objective/heading flag, so no audit flag adjudicates it; the entry exists as a durable record."
-  },
-  {
-   "localPath": "content/math/elementary-algebra/04-graphs/04-understand-slope-of-a-line.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82483",
-   "covers": [
-    "objective-needs-review",
-    "heading-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Use geoboards to model slope"
-   ],
-   "rationale": "The attribution footer explicitly discloses that the geoboard activity was condensed into one accessible worked introduction to rise and run. The retained page still teaches the underlying objective."
-  },
-  {
-   "localPath": "content/math/elementary-algebra/07-factoring/04-factor-special-products.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82528",
-   "covers": [
-    "objective-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Choose method to factor a polynomial completely"
-   ],
-   "rationale": "OpenStax lists this fourth objective but has no corresponding fourth instructional section heading. The local page repeatedly asks learners to factor completely while retaining all three source method sections."
-  },
-  {
-   "localPath": "content/math/prealgebra/02-the-language-of-algebra/03-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81271",
-   "covers": [
-    "heading-needs-review",
-    "objective-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Model the Subtraction Property of Equality"
-   ],
-   "rationale": "The attribution footer explicitly discloses replacement of the envelope-and-counters manipulative figures with a direct statement of the Subtraction Property. The local objectives list therefore carries five items where the source abstract has six."
-  },
-  {
-   "localPath": "content/math/prealgebra/03-integers/02-add-integers.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81276",
-   "covers": [
-    "heading-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Translate Word Phrases to Algebraic Expressions",
-    "Add Integers in Applications"
-   ],
-   "rationale": "The local page combines the two closely related source headings into one translated-phrases-and-applications section, consistent with its disclosed prose condensation."
-  },
-  {
-   "localPath": "content/math/prealgebra/09-math-models-and-geometry/06-solve-geometry-applications-volume-and-surface-area.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81328",
-   "covers": [
-    "heading-needs-review"
-   ],
-   "status": "omitted-approved",
-   "sourceItems": [
-    "Summary of Geometry Formulas"
-   ],
-   "rationale": "The attribution footer explicitly discloses omission of the end-of-chapter formula summary because every formula is retained where it is introduced."
-  },
-  {
-   "localPath": "content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81354",
-   "covers": [
-    "objective-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Graph a line given a point and the slope\nSolve slope applications"
-   ],
-   "rationale": "Upstream markup defect: the module's <md:abstract> packs two objectives into a single <item>, so the source parses as five objectives where the section teaches six. The local page has separate 'Graph a line given a point and the slope' and 'Solve slope applications' headings, matching the printed book, so the local objectives list carries six items. Do not collapse them back to match the malformed abstract."
-  },
-  {
-   "localPath": "content/math/elementary-algebra/01-foundations/06-add-and-subtract-fractions.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82457",
-   "covers": [],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Try It: Evaluate $-\\tfrac{1}{2} - y$",
-    "Try It: Evaluate $3ab^2$"
-   ],
-   "rationale": "Two Try It exercises are revalued, not rewritten. Upstream evaluates $-\\tfrac12 - y$ at $y = -\\tfrac14$, whose answer $-\\tfrac14$ is the substituted value itself — a fixed point — and $3ab^2$ at $a = -\\tfrac23, b = -\\tfrac12$, whose answer $-\\tfrac12$ is the substituted $b$. In both, a learner who reads the printed substitution back into the box is graded correct without evaluating anything, and the replay gate (npm run verify:replay) fails the exercise for exactly that reason. The substituted values move to $y = -\\tfrac34$ (answer $\\tfrac14$) and $b = -\\tfrac13$ (answer $-\\tfrac29$); the expressions, the method, and the arithmetic difficulty are unchanged, and no printed span of either new prompt grades correct. Deliberate local revaluation: do not reverse it toward the upstream numbers in a later audit.",
-   "covers_note": "Empty by design. An exercise revaluation touches no baseline SHA, title, objective or heading, so source:check adjudicates no flag for it and this entry is the only durable record."
-  },
-  {
-   "localPath": "content/math/intermediate-algebra/01-foundations/03-fractions.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81359",
-   "covers": [],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Try It: Evaluate $3ab^2$"
-   ],
-   "rationale": "The same revaluation as the Elementary Algebra 1.6 copy of this Try It: upstream evaluates $3ab^2$ at $a = -\\tfrac23, b = -\\tfrac12$, and the answer $-\\tfrac12$ is the substituted $b$ read straight back off the prompt, so the exercise is passable without evaluating it. $b$ moves to $-\\tfrac13$ and the answer to $-\\tfrac29$; expression, method and difficulty are unchanged. Deliberate local revaluation: do not reverse it in a later audit.",
-   "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
-  },
-  {
-   "localPath": "content/math/prealgebra/04-fractions/05-add-and-subtract-fractions-with-different-denominators.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81289",
-   "covers": [],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Try It: Evaluate $3ab^2$"
-   ],
-   "rationale": "The same revaluation as the Elementary Algebra 1.6 and Intermediate Algebra 1.3 copies of this Try It: the upstream answer $-\\tfrac12$ is the substituted $b$, so the printed prompt answers itself. $b$ moves to $-\\tfrac13$ and the answer to $-\\tfrac29$. Deliberate local revaluation: do not reverse it in a later audit.",
-   "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
-  },
-  {
-   "localPath": "content/math/elementary-algebra/05-systems-of-linear-equations/01-solve-systems-of-equations-by-graphing.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82490",
-   "covers": [],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Try It: determine whether an ordered pair is a solution of a system"
-   ],
-   "rationale": "One authored sub-exercise is revalued. It substituted $(0,0)$ into $x + 2y$ for the system $3x + y = 0, x + 2y = -5$, where the point satisfies the first equation but not the second — the pedagogical point — but the answer $0$ is also the substituted value, so a learner reading $x = 0$ off the prompt is graded correct, and the zero also hides the arithmetic behind the multiply-by-zero shortcut. The substitution moves to $(2,-6)$, which has the identical property (it satisfies $3x + y = 0$ and gives $-10 \\ne -5$) and requires the multiplication and addition to be carried out. Deliberate local revaluation: do not reverse it toward $(0,0)$ in a later audit.",
-   "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
-  },
-  {
-   "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49353",
-   "covers": [
-    "heading-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Chapter Test",
-    "Chapter Review Exercises"
-   ],
-   "rationale": "Section 3.9 is the LAST section of chapter 3, and m49353 carries the whole chapter's end matter after its own section exercises: a 'Chapter Review Exercises' set and a 'Chapter Test'. The audit reads those as source headings with no local counterpart and raises heading-needs-review at 0% title similarity. They are deliberately absent: a chapter test covers all nine sections of chapter 3, so folding its items into 3.9's Practice block would attribute chapter-wide material to one section and hide the other eight sections' skills inside a variation page. The section-final Practice block draws only from the module's own '3.9 Section Exercises' set. If chapter-level assessment is wanted later it belongs in a Knowledge Check page, not here.",
-   "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap. Expect the same flag on the final section of every chapter whose module is packaged this way."
-  },
-  {
-   "localPath": "content/math/precalculus/05-trigonometric-functions/04-right-triangle-trigonometry.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49384",
-   "covers": [
-    "heading-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Review Exercises",
-    "Practice Test"
-   ],
-   "rationale": "Section 5.4 is the LAST section of chapter 5, and m49384 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set (whose subsections link back to m49371, m49372, m49374 and m49384) and a 'Practice Test'; the printed book carries both under 'Chapter Review' (PDF pages 618 onward), after section 5.4 ends. The audit reads those as source headings of 5.4 with no local counterpart and raises heading-needs-review. They are deliberately absent: both cover all four sections of chapter 5, so folding their items into 5.4's Practice block would attribute chapter-wide material to one section and hide the other three sections' skills inside a right-triangle page. Section 5.4's own six headings are all present, in source order, and the section-final Practice block draws only from the module's own '5.4 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md (m49353), whose covers_note predicted this recurrence.",
-   "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap."
-  },
-  {
-   "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/08-solving-systems-with-cramers-rule.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49436",
-   "covers": [
-    "heading-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Review Exercises"
-   ],
-   "rationale": "Section 9.8 is the LAST section of chapter 9, and m49436 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set whose subsections link back to every section of the chapter. The audit reads that as a source heading of 9.8 with no local counterpart and raises heading-needs-review at 0% title similarity. It is deliberately absent: the set covers all eight sections of chapter 9, so folding its items into 9.8's Practice block would attribute chapter-wide material to one section and hide the other seven sections' skills inside a Cramer's-rule page. Section 9.8's own headings are all present, in source order, and the section-final Practice block draws only from the module's own '9.8 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as 3.9 (m49353) and 5.4 (m49384), whose covers_note predicted this recurrence.",
-   "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap."
-  },
-  {
-   "localPath": "content/life-health-sciences/microbiology/02-how-we-see-the-invisible-world/01-the-properties-of-light.md",
-   "bundle": "microbiology",
-   "moduleId": "m58785",
-   "sourceElementIds": [
-    "fs-id1167794056678"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 374,
-   "rationale": "The fluorochrome example sentence says Texas red is excited by blue light and FITC absorbs invisible ultraviolet light. Manufacturer spectral data (Thermo Fisher Molecular Probes Handbook: Texas Red sulfonyl chloride absorption 588 nm; fluorescein/FITC peak excitation 488-495 nm) place Texas red's excitation in the orange and FITC's in the visible blue. The local sentence states orange and blue, carries a visible Source note, and the footer discloses the change. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/microbiology/01-an-invisible-world/01-what-our-ancestors-knew.md",
-   "bundle": "microbiology",
-   "moduleId": "m58781",
-   "sourceElementIds": [
-    "fs-id1171360545639"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 377,
-   "rationale": "The source dates the Athenian plague 'between 430 and 410 BC'. Thucydides describes the outbreak of 430 BC and its recurrence ending in 426 BC, and the modern review (Littman, Mount Sinai Journal of Medicine 76 [2009]: 456-467, doi:10.1002/msj.20137) dates it 430-426 BC; no source supports 410. The local page prints 426 BC with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/microbiology/01-an-invisible-world/02-a-systematic-approach.md",
-   "bundle": "microbiology",
-   "moduleId": "m58782",
-   "sourceElementIds": [
-    "fs-id1171358982476"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 378,
-   "rationale": "The source says Haloquadratum walsbyi cells 'are arranged in square clusters of four cells'. The primary morphology paper (Bolhuis et al., 'Morphological and Structural Aspects of the Extremely Halophilic Archaeon Haloquadratum walsbyi', PMC3084702) describes flat square cells joined in fragile postage-stamp sheets, not fixed quartets; the genus name refers to the square cell shape. The local page says sheets of square cells with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/microbiology/03-the-cell/02-foundations-of-modern-cell-theory.md",
-   "bundle": "microbiology",
-   "moduleId": "m58791",
-   "sourceElementIds": [
-    "fs-id1172100564193"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 379,
-   "rationale": "The prose dates John Snow's water-source cholera study to 1848 while the same module's timeline figure dates it to 1854, the year of the Broad Street and water-company investigations. The page follows the module's own figure, with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/02-the-chemical-foundation-of-life/01-atoms-isotopes-ions-and-molecules-the-building-blocks.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66430",
-   "sourceElementIds": [
-    "fs-idp140338806078224",
-    "eip-idm257115376"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 375,
-   "rationale": "The Ions paragraph gives sodium 11 neutrons and chlorine 17 neutrons. Sodium is monoisotopic (sodium-23: 11 protons, 12 neutrons; NIST Atomic Weights and Isotopic Compositions), and the same module's Atomic Number and Mass paragraph gives chlorine's majority isotope 17 protons and 18 neutrons, so the Ions paragraph contradicts its own section. The local page prints 12 and 18 with a visible Source note and discloses the change in its footer. Found by the prose claim pass sample, September 6, 2026. ALSO (erratum 376): The Carbon Dating box says carbon-14 decays to nitrogen-14 'by a process called beta decay-electrons or positrons emission.' Carbon-14 decays 100% by beta-minus (electron) emission to nitrogen-14 (LNHB Table de Radionucleides; NNDC/ENSDF); positron emission would lower the atomic number, not raise it to nitrogen. The local page says electron emission with a visible Source note and footer disclosure. Found by the prose claim pass sample, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/microbiology/03-the-cell/04-unique-characteristics-of-eukaryotic-cells.md",
-   "bundle": "microbiology",
-   "moduleId": "m58793",
-   "sourceElementIds": [
-    "fs-id1172098545691",
-    "fs-id1172098704816"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 380,
-   "rationale": "The source says Golgi observed the stacked membranes in Plasmodium cells. Golgi's 1898 communication described the internal reticular apparatus in neurons of the cerebellum and spinal ganglia (Bentivoglio et al., Frontiers in Neuroanatomy 13 [2019], doi:10.3389/fnana.2019.00003); his malaria work was separate. The page says nerve cells with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026. ALSO (erratum 381): The source dates de Duve's discovery of lysosomes to the 1960s. The primary paper is de Duve et al., Biochemical Journal 60 (1955): 604-617; the 1960s work was peroxisomes (Bonetta, Journal of Cell Biology 169 [2005]: 705, doi:10.1083/jcb1695fta2). The page says 1955 with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/02-the-chemical-foundation-of-life/02-water.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66434",
-   "sourceElementIds": [
-    "fs-idm194704288"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 382,
-   "rationale": "Ice being less dense than liquid water is called a phenomenon 'we do not see when other liquids solidify'; gallium, bismuth, silicon, germanium, and antimony also expand on solidifying. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/02-the-chemical-foundation-of-life/03-carbon.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66436",
-   "sourceElementIds": [
-    "fs-idp65728176",
-    "fs-idp57674448"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 383,
-   "rationale": "The glossary defines an aliphatic hydrocarbon as a linear chain while the body classes single-bonded rings (cyclopentane, cyclohexane) as aliphatic; the key term follows the body. ALSO (erratum 384): beta-carotene is offered as a hydrocarbon with an aromatic portion, but its end rings are cyclohexene rings (IUPAC 2,6,6-trimethylcyclohex-1-ene) and the page omits the example with a Source note. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/03-biological-macromolecules/04-proteins.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66442",
-   "sourceElementIds": [
-    "fs-id1506615",
-    "fs-id2216741",
-    "fig-ch03_04_05"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 385,
-   "rationale": "Cysteine is listed as an essential amino acid; this book's own table (m66616, tab-ch34_02_04) makes cysteine non-essential and lysine essential, and the page prints lysine. ALSO (erratum 386): 'a difference in the 44th position' for human versus yeast cytochrome c should be differences at 44 positions (Kimball, Biology, Taxonomy). ALSO (erratum 387): the hemoglobin beta-chain is 146 mature residues (UniProt P68871), not 147. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/04-cell-structure/05-the-cytoskeleton.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66454",
-   "sourceElementIds": [
-    "fs-idm40512368",
-    "fs-idm71000713"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 388,
-   "rationale": "The critical-thinking solution calls the gram-negative lipopolysaccharide layer a capsule; this book's m66545 describes it as the outer envelope/membrane and defines the capsule as a separate optional structure. The page's self-check model answer says outer membrane. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/04-bulk-transport.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66376",
-   "sourceElementIds": [
-    "fs-id1760012"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 389,
-   "rationale": "The glossary says pinocytosis imports macromolecules; the module's own text ('cell drinking', water) and its transport table (small molecules, liquids/water) say otherwise. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/08-photosynthesis/01-overview-of-photosynthesis.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66473",
-   "sourceElementIds": [
-    "fs-idp15776"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 391,
-   "rationale": "The Carboniferous is dated 350 to 200 million years ago; the period ran about 359 to 299 million years ago (ICS chart), and the page prints 350 to 300. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/08-photosynthesis/02-the-light-dependent-reactions-of-photosynthesis.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66474",
-   "sourceElementIds": [
-    "fs-idm101449600",
-    "fs-idm133225312"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 392,
-   "rationale": "Water splitting is said to release two electrons and two hydrogen atoms; the module's own photosystem II description names protons in the lumen and the page says protons. ALSO (erratum 393): the photons-per-NADPH review question is keyed 2; the reduction takes two electrons (m66465 fs-id1405882 defines NAD(P)H as accepting two electrons and a proton) and one photon per photosystem per electron, so the page keys 4, disclosed in DISCLOSED_DEVIATIONS (kind key). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/08-photosynthesis/03-using-light-energy-to-make-organic-molecules.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66475",
-   "sourceElementIds": [
-    "fs-idm104644592"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 394,
-   "rationale": "The Evolution Connection says photosystems make ATP and NADH; the module's own opening paragraph and the rest of the chapter say NADPH. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/09-cell-communication/01-signaling-molecules-and-cellular-receptors.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66378",
-   "sourceElementIds": [
-    "fs-id2336863"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 395,
-   "rationale": "GTP is expanded as guanosine 3-phosphate; it is guanosine triphosphate (PubChem CID 135398633). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/10-cell-reproduction/02-the-cell-cycle.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66478",
-   "sourceElementIds": [
-    "fs-id2135035"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 396,
-   "rationale": "The G1 glossary entry says growth happens 'during mitosis'; the module's own text places G1 in interphase before the mitotic phase. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/11-meiosis-and-sexual-reproduction/01-the-process-of-meiosis.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66483",
-   "sourceElementIds": [
-    "fs-id2054667"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 397,
-   "rationale": "The Evolution Connection footnote misquotes Ramesh, Malik, and Logsdon (2005) as 'A Phylogenetic Inventory of Meiotic Genes'; the published title is 'A Phylogenomic Inventory…' (PubMed 15668177). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/13-modern-understandings-of-inheritance/01-chromosomal-theory-and-genetic-linkage.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66491",
-   "sourceElementIds": [
-    "fs-id2021443"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 398,
-   "rationale": "Mendel is said to have begun studying heredity in 1843; this book's own m66486 dates the start of his research to 1856, and the page follows it. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66494",
-   "sourceElementIds": [
-    "fs-id1807698"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 399,
-   "rationale": "An unfertilized egg developing into offspring is called haplodiploidy; that is the hymenopteran sex-determination system, and the phenomenon described is parthenogenesis (this book's m66571; Britannica). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/02-dna-structure-and-sequencing.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66387",
-   "sourceElementIds": [
-    "fs-id2962722",
-    "fs-id2317138"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 400,
-   "rationale": "The stretched-out E. coli chromosome is given as 1.1 mm; at the module's own 0.34 nm per base pair, 4.6 million base pairs are about 1.6 mm. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/05-dna-replication-in-eukaryotes.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66391",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 401,
-   "rationale": "RNase H is called 'AKA flap endonuclease'; they are distinct primer-removal enzymes (RNase H2 and FEN1), and the page names both; the endonuclease recall item's hint was reworded to match. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/15-genes-and-proteins/03-eukaryotic-transcription.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66499",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 402,
-   "rationale": "Alpha-amanitin is attributed to the fly agaric (Amanita muscaria), whose toxins are ibotenic acid and muscimol; amatoxins come from the death cap, Amanita phalloides (Wieland 1986). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/15-genes-and-proteins/04-rna-processing-in-eukaryotes.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66500",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 403,
-   "rationale": "A typical E. coli mRNA is said to last no more than five seconds; bacterial mRNA half-lives average a few minutes (Rauhut and Klug, FEMS Microbiol. Rev. 23:353). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/16-gene-expression/06-eukaryotic-translational-and-post-translational-gene-regulation.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66508",
-   "sourceElementIds": [
-    "fs-id2956204"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 404,
-   "rationale": "The glossary names GDP 'guanine diphosphate'; it is guanosine diphosphate, as the same glossary's GTP entry and m66378/m66628 say. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/16-gene-expression/07-cancer-and-gene-regulation.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66509",
-   "sourceElementIds": [
-    "fs-id1461234"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 405,
-   "rationale": "'Burkett's Lymphoma' is Burkitt lymphoma, after Denis Burkitt (Sun et al., PNAS 100:8164). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/17-biotechnology-and-genomics/01-biotechnology.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66511",
-   "sourceElementIds": [
-    "fs-id843472"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 406,
-   "rationale": "Dolly is said to have lived seven years; born July 5, 1996, euthanized February 14, 2003, she lived six. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/17-biotechnology-and-genomics/03-whole-genome-sequencing.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66513",
-   "sourceElementIds": [
-    "fs-id1770472"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 407,
-   "rationale": "The phiX174 genome is given as 5368 base pairs (it is 5,386; RefSeq NC_001422.1). ALSO (erratum 408): Venter's Haemophilus influenzae genome is dated to the 1980s; it was published in 1995 (Fleischmann et al., Science 269:496). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/01-understanding-evolution.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66518",
-   "sourceElementIds": [
-    "fs-idm13442992"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 409,
-   "rationale": "The Grants' finch study is dated 'every year since 1976'; it began in 1973 (Grant and Grant, Science 296:707). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/19-the-evolution-of-populations/02-population-genetics.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66524",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 410,
-   "rationale": "Fanconi anemia is said to cause 'blood marrow' abnormalities; it is a bone marrow failure syndrome, and the book says bone marrow elsewhere. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/21-viruses/02-virus-infections-and-hosts.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66535",
-   "sourceElementIds": [
-    "fs-idm16378990"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 411,
-   "rationale": "'Reverse transcription never occurs in uninfected host cells' is contradicted by this book's own telomerase description (m66391); the page scopes the claim to the viral enzyme. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/21-viruses/01-viral-evolution-morphology-and-classification.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66534",
-   "sourceElementIds": [
-    "fs-idp53608960"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 412,
-   "rationale": "'Adolph Meyer' is Adolf Mayer, author of the 1886 tobacco-mosaic transmission work. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/21-viruses/03-prevention-and-treatment-of-viral-infections.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66537",
-   "sourceElementIds": [
-    "fs-idp55980176"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 413,
-   "rationale": "'George Hitchens' is George H. Hitchings, Elion's 1988 Nobel co-laureate. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/01-prokaryotic-diversity.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66542",
-   "sourceElementIds": [
-    "fs-idm56401744"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 414,
-   "rationale": "Prokaryotic cells 'outnumber human body cells by about ten to one' is superseded by Sender, Fuchs, and Milo (PLOS Biology 2016), who count a ratio near 1:1; the page says at least as numerous. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/04-bacterial-diseases-in-humans.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66548",
-   "sourceElementIds": [
-    "fs-idm81635040",
-    "fs-idp95005568"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 415,
-   "rationale": "The Lyme, Connecticut outbreak is dated 1995; the cases were investigated in 1975 (Steere et al. 1977). ALSO (erratum 416): the 2011 German E. coli outbreak 'killed 32 people'; the Robert Koch Institute's final count is 53 deaths among 3,842 cases. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/24-fungi/05-importance-of-fungi-in-human-life.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66563",
-   "sourceElementIds": [
-    "fs-idp127215088"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 417,
-   "rationale": "Pasteur's brewer's-yeast work is dated 'the late 1850s'; the studies and the 1873 patent date to the 1870s. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/24-fungi/02-classifications-of-fungi.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66559",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 418,
-   "rationale": "The mycorrhiza review question's stem is true of two distractors by §24.3 (ectomycorrhizal Ascomycota and Basidiomycota); the page rewords the stem to the module's own 'all of which are involved in close associations with the roots of trees', options and key unchanged. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/25-seedless-plants/01-early-plant-life.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66566",
-   "sourceElementIds": [
-    "fs-idm66561584"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 419,
-   "rationale": "The glossary calls charophyte 'other term for green algae'; the module's own opening names chlorophytes and charophytes as the two green-algal groups. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/26-seed-plants/01-evolution-of-seed-plants.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66572",
-   "sourceElementIds": [
-    "fs-idp49354208",
-    "fs-idp138838992"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 420,
-   "rationale": "Progymnosperms are called 'the first naked seed plants' in a sentence that says they released spores like ferns; the page calls them forerunners of the seed plants. ALSO (erratum 422): the glossary equates ovule with female gametophyte, against m66574's anatomy; the page defines the ovule as the structure in which the gametophyte develops. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/26-seed-plants/03-angiosperms.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66574",
-   "sourceElementIds": [
-    "fs-idm91968544"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 421,
-   "rationale": "'The corolla in lilies and tulips consists of three sepals and three petals' contradicts the paragraph's own definition of corolla; the page says perianth. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/26-seed-plants/02-gymnosperms.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66573",
-   "sourceElementIds": [
-    "fs-idp140319568",
-    "fs-idp21939120"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 423,
-   "rationale": "The glossary calls the megasporocyte and microsporocyte spores; the module's own text has them undergo meiosis to produce the spores, and the page's key terms say so. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/27-introduction-to-animal-diversity/01-features-of-the-animal-kingdom.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66577",
-   "sourceElementIds": [
-    "fs-idm76248592"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 424,
-   "rationale": "Placozoa are called 'tiny parasitic creatures'; they are free-living (Animal Diversity Web). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/28-invertebrates/04-superphylum-lophotrochozoa-mollusks-and-annelids.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66397",
-   "sourceElementIds": [
-    "fs-idm23198080",
-    "fs-idm6067008"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 425,
-   "rationale": "The summary says seven molluscan classes; the body names eight. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/28-invertebrates/05-superphylum-ecdysozoa-nematodes-and-tardigrades.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66398",
-   "sourceElementIds": [
-    "fig-ch28_04_03"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 426,
-   "rationale": "The guinea worm 'infects about 3.5 million people annually' is the 1986 baseline; the caption now dates it and notes the near-eradication. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/28-invertebrates/06-superphylum-ecdysozoa-arthropods.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66399",
-   "sourceElementIds": [
-    "fs-idp252469232"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 427,
-   "rationale": "The end-Permian extinction is dated 240 million years ago; it is about 252 (ICS chart). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/29-vertebrates/06-mammals.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66593",
-   "sourceElementIds": [
-    "fs-idp60789520",
-    "fs-idp66865056"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 428,
-   "rationale": "Mammals 'about 5,200 species' while placentals alone are 'about 6,000'; the page says more than 6,000 (Mammal Diversity Database). ALSO (erratum 431): the glossary restricts mammary glands to females against the body's statement that both sexes of monotremes and eutherians have them. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/29-vertebrates/04-reptiles.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66591",
-   "sourceElementIds": [
-    "fs-idp80739120"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 429,
-   "rationale": "Ichthyosaurs are listed among the archosaurs while the module's own figure places them with lepidosaurs; they belong to neither (Motani 2005), and the page drops them from the list. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/29-vertebrates/05-birds.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66592",
-   "sourceElementIds": [
-    "fs-idm17832487"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 430,
-   "rationale": "The summary says counter-current gas exchange; the body describes cross-current, and the page's summary says cross-current. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/29-vertebrates/03-amphibians.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66590",
-   "sourceElementIds": [
-    "fs-idm204156752"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 432,
-   "rationale": "'All salamanders except one, the fire salamander, are oviparous' is false: alpine salamanders and Lyciasalamandra are viviparous (Buckley, eLS 2012). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/05-transport-of-water-and-solutes-in-plants.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66600",
-   "sourceElementIds": [
-    "fs-idm113764608",
-    "fs-idm89093776"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 433,
-   "rationale": "1.5 MPa is converted at 140 psi per MPa to 210 psi; one MPa is 145.04 psi, so about 218. ALSO (erratum 434): the gravitational potential is given as -0.1 MPa per meter and 10 MPa for the tallest trees; rho g h is about 0.01 MPa per meter, about 1 MPa. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/06-plant-sensory-systems-and-responses.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66601",
-   "sourceElementIds": [
-    "fs-idp6903008",
-    "fs-idp52556160"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 435,
-   "rationale": "Darwin's 1880 title is printed 'The Power of Movements in Plants'; it is 'Movement'. ALSO (erratum 436): 'glycol cyanide' in cassava is linamarin (McMahon, White, and Sayre 1995). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/04-leaves.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66599",
-   "sourceElementIds": [
-    "fs-idp28882000",
-    "fs-idp31909760"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 437,
-   "rationale": "The chloroplast review question's 'epidermis' distractor is true by the module's own guard-cell sentence; the page replaces it with 'endodermis', disclosed in DISCLOSED_DEVIATIONS (kind options). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/32-plant-reproduction/03-asexual-reproduction.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66609",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 438,
-   "rationale": "Garlic is given as a corm; it forms a bulb by this book's §30.2 and the module's own figure alt, and the page drops it from the corm sentence. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/32-plant-reproduction/02-pollination-and-fertilization.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66608",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 439,
-   "rationale": "Teosinte is said to have been first cultivated by 'the ancient Mayans'; maize domestication is Balsas valley, about 8,700 years ago (Ranere et al. 2009). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/01-digestive-systems.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66615",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 440,
-   "rationale": "The appendix 'has an insignificant role in immunity'; this book's §42.2 names it a mucosal immune induction site, and the page says a minor role. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/02-nutrition-and-energy-production.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66616",
-   "sourceElementIds": [
-    "tab-ch34_02_05"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 441,
-   "rationale": "The vitamin table credits vitamin D with blood clotting, the function its own vitamin K row assigns to vitamin K; the page drops the clause. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/04-digestive-system-regulation.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66618",
-   "sourceElementIds": [
-    "fs-idp144627040"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 442,
-   "rationale": "The acid-secretion review question's 'gastric inhibitory peptide' distractor is true by the module's own text; the page replaces it with secretin, disclosed in DISCLOSED_DEVIATIONS (kind options). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/35-the-nervous-system/02-how-neurons-communicate.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66621",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 443,
-   "rationale": "An IPSP is called a hyperpolarization of the presynaptic membrane; the term, the EPSP sentence, and the glossary say postsynaptic. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/35-the-nervous-system/04-the-peripheral-nervous-system.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66623",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 444,
-   "rationale": "The olfactory nerve is said to carry smell to the brainstem; this book's §36.3 ends it in the olfactory bulb, and the page says to the brain. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/36-sensory-systems/02-somatosensation.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66404",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 445,
-   "rationale": "The muscle spindle glossary says the spindle shortens the muscle; it senses stretch and drives the reflex that does (Purves, Neuroscience 2nd ed.). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/40-the-circulatory-system/02-components-of-the-blood.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66651",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 446,
-   "rationale": "Camels are said to have nucleated red blood cells; camelid erythrocytes are anucleate ellipsoids (Schalm's Veterinary Hematology). ALSO (erratum 447): white blood cells are given as 30 µm; they are about 12–20 µm (Junqueira's Basic Histology). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/40-the-circulatory-system/04-blood-flow-and-blood-pressure-regulation.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66654",
-   "sourceElementIds": [
-    "fig-ch40_04_02"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 448,
-   "rationale": "The caption says over 1,500 liters of the daily cardiac output is filtered at the capillaries; estimates are 8–30 liters a day, and the page says roughly 20. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/02-the-kidneys-and-osmoregulatory-organs.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66658",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 449,
-   "rationale": "The juxtaglomerular complex is said to secrete erythropoietin; it is made by peritubular interstitial fibroblasts (Bachmann et al. 1993). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/01-osmoregulation-and-osmotic-balance.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66656",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 450,
-   "rationale": "The milliosmole is defined as milliequivalents per kilogram; osmoles count particles, not charge. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/42-the-immune-system/03-antibodies.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66665",
-   "sourceElementIds": [
-    "fs-idm36621536"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 451,
-   "rationale": "Light-chain VJ recombination is credited with over a million combinations; 40 x 5 is 200, and the million comes from pairing with the heavy chain (Janeway, Immunobiology 5th ed.). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/04-hormonal-control-of-human-reproduction.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66674",
-   "sourceElementIds": [
-    "fs-idp108162320",
-    "fs-idm110164992"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 452,
-   "rationale": "The morula is given 30-60 cells; it is the 16- to 32-cell stage (Langman's Medical Embryology). ALSO (erratum 453): the LH glossary entry credits LH with lactation, which this book assigns to prolactin; the page drops the clause. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/01-reproduction-methods.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66668",
-   "sourceElementIds": [
-    "fs-idm106900496"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 454,
-   "rationale": "'Blacktop shark' is the blacktip shark, Carcharhinus limbatus (Chapman et al. 2008). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/44-ecology-and-the-biosphere/05-climate-and-the-effects-of-global-climate-change.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66419",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 455,
-   "rationale": "1950 atmospheric CO2 is given as about 280 ppm, the pre-industrial value; the Law Dome record gives about 310 ppm (MacFarling Meure et al. 2006). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/45-population-and-community-ecology/07-behavioral-biology-proximate-and-ultimate-causes-of-behavior.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66699",
-   "sourceElementIds": [
-    "fs-idp194005680"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 456,
-   "rationale": "The kin-selection glossary says 'sacrificing one's own life'; the module's own text defines it as lowering individual fitness, and the page's key term says so. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/biology/46-ecosystems/01-ecology-of-ecosystems.md",
-   "bundle": "biology-bundle",
-   "moduleId": "m66701",
-   "sourceElementIds": [],
-   "status": "correct-local-source-defect",
-   "errataEntry": 457,
-   "rationale": "Odum's Silver Springs study is dated the 1940s; the module's own cited paper (Odum 1957) reports early-1950s fieldwork. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/02-parasitic-helminths.md",
-   "bundle": "microbiology",
-   "moduleId": "m58803",
-   "sourceElementIds": [
-    "term-00006"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 468,
-   "rationale": "The module says Ascaris lumbricoides females \"may reach lengths greater than 1 meter\"; the CDC DPDx ascariasis reference gives adult females as 20–35 cm. The local page corrects the value with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 7, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/03-fungi.md",
-   "bundle": "microbiology",
-   "moduleId": "m58804",
-   "sourceElementIds": [
-    "term-00001",
-    "term-00058",
-    "fs-id1172100556178"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 470,
-   "rationale": "\"typically saprozoic\" contradicts the module's own Summary (\"saprotrophic\") and the Glossary appendix's protozoan-only definition of saprozoic (erratum 470); \"Enterocystozoan bieneusi\" is printed as the accepted name Enterocytozoon bieneusi (erratum 471, DOI 10.3201/eid2706.ET2706). Both corrected with visible Source notes and disclosed in the footer. Found by the prose claim pass, September 7, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/microbiology/06-acellular-pathogens/01-viruses.md",
-   "bundle": "microbiology",
-   "moduleId": "m58808",
-   "sourceElementIds": [
-    "term-00006"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 483,
-   "rationale": "The module says Beijerinck concluded in 1899 that the tobacco mosaic agent was \"possibly a chemical, like a biological poison\"; his 1898 paper proposed a contagium vivum fluidum that multiplied in the host (Bos, Phil. Trans. R. Soc. B 354 [1999]: 675–685, DOI 10.1098/rstb.1999.0420). The local page corrects the sentence with a visible Source note, rewords the body Check Your Understanding item built on it, and discloses the change in its footer. Found by the prose claim pass, September 7, 2026."
-  },
-  {
-   "localPath": "content/life-health-sciences/microbiology/06-acellular-pathogens/02-the-viral-life-cycle.md",
-   "bundle": "microbiology",
-   "moduleId": "m58809",
-   "sourceElementIds": [
-    "fs-id1168329030248",
-    "fs-id1168329116501"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 488,
-   "rationale": "The WHO Ebola statistics footnote is dated 2005 for a 2014 outbreak whose URL encodes 20150318 (erratum 487); the Case in Point dates Duncan's first hospital visit to September 24 and his return \"two days later\", where the CDC MMWR investigation gives September 25 and September 28 (erratum 488). Both corrected with visible Source notes and disclosed in the footer. Found by the chapter 5–6 run and its prose claim pass, September 7, 2026."
-  }
- ],
- "upstreamDriftDecisions": [
-  {
-   "localPath": "content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82453",
-   "sourceElementIds": [
-    "fs-id1170655121545",
-    "fs-id1170655120589",
-    "fs-id1170655162128"
-   ],
-   "status": "retain-local-equivalent",
-   "rationale": "Current upstream swaps which rectangle dimension is six less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary table still describes the older orientation."
-  },
-  {
-   "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82470",
-   "sourceElementIds": [
-    "fs-id1168345426388",
-    "fs-id1168345440730",
-    "fs-id1168341917017",
-    "fs-id1168345667902"
-   ],
-   "status": "retain-local-upstream-inconsistent",
-   "rationale": "Current upstream changes the right side from negative three-fifths to positive three-fifths but leaves a solution graphic saying contradiction/no solution. Positive three-fifths makes the inequality an identity. The local negative-three-fifths prompt and contradiction answer are mathematically correct and match the PDF-era source."
-  },
-  {
-   "localPath": "content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81422",
-   "sourceElementIds": [
-    "fs-id1167836606933",
-    "fs-id1167836606939",
-    "fs-id1167836606950"
-   ],
-   "status": "retain-local-equivalent",
-   "rationale": "Current upstream swaps which rectangle dimension is fourteen less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary remains phrased for the older orientation."
-  },
-  {
-   "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49347",
-   "sourceElementIds": [
-    "ti_03_04_02",
-    "fs-id1165137932363",
-    "Figure_03_04_010"
-   ],
-   "status": "retain-local-equivalent",
-   "rationale": "Between the inferred PDF-era commit d1bd19c6 and the pinned review commit 789b5409, upstream changed this Try It's prompt from 'the function of degree 7' to 'degree 9' and updated nothing else. The edit contradicts the exercise's own printed solution, which gives a zero of -5 with multiplicity 3, a zero of -1 with multiplicity 2, and a zero of 3 with multiplicity 2 — summing to 7, not 9 — and it contradicts the figure's own alt text, which says 'degree 6'. Three different degrees now appear in one exercise. The PDF-era 'degree 7' is the reading consistent with the solution, with the drawn curve, and with the multiplicity arithmetic the exercise is teaching, so the local page retains it and carries a visible source note. Logged upstream in docs/openstax-errata.md. Do not apply the pinned commit's '9' in a later audit without upstream also fixing the solution."
-  }
- ],
- "sourceDefectDecisions": [
-  {
-   "localPath": "content/math/intermediate-algebra/02-solving-linear-equations/06-solve-compound-inequalities.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81367",
-   "sourceElementIds": [
-    "fs-id1167835322185"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 41,
-   "rationale": "The module's tiered-water-rate Try It prints the Conservation Usage bill ceiling as $52.12 and an Answer Key of 5-20 hcf. The two disagree: (52.12-24.72)/1.32 = 20.7575..., while the bill at exactly 20 hcf is 24.72+1.32(20) = 51.12. The lower bound is exact either way, (31.32-24.72)/1.32 = 5. This page prints $51.12 so the printed answer follows from the printed question; correcting the answer to 5-20.76 hcf would also be consistent but reads oddly against the parallel items. The parallel Normal Usage example in the same module is exact as printed ((57.06-24.72)/1.54 = 21 and (171.02-24.72)/1.54 = 95) and is transcribed unchanged. A visible Source note sits beside the exercise and the attribution footer discloses the correction."
-  },
-  {
-   "localPath": "content/math/intermediate-algebra/knowledge-check-07-12.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81420",
-   "sourceElementIds": [
-    "exercise 341"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 16,
-   "rationale": "The module's IRA annuity exercise introduces Dave and then asks about \"Adam's\" account, naming a person it never defines. Only the name is defective: 450*((1+0.005)^564 - 1)/0.005 = 1409344.1866, matching the printed $1,409,344.19. This page writes \"Dave's\" throughout. A visible Source note sits beside the exercise and the attribution footer discloses the correction. localPath is a knowledge-check composite and is deliberately absent from source-map.json."
-  },
-  {
-   "localPath": "content/math/elementary-algebra/knowledge-check-06-10.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82553",
-   "sourceElementIds": [
-    "fs-id1169595303723"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 42,
-   "rationale": "The module's 600-foot exercise drops the package to a lifeboat and then asks when it reached \"the hiker\", the recipient of its neighbour fs-id1169595265302 (the 900-foot variant, whose printed 7.5 seconds matches sqrt(900)/4). Only the recipient is defective: sqrt(600)/4 = 6.1237, matching the printed 6.1 seconds. This page writes \"the lifeboat\". A visible Source note sits beside the exercise and the attribution footer discloses the correction. localPath is a knowledge-check composite and is deliberately absent from source-map.json."
-  },
-  {
-   "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49346",
-   "sourceElementIds": [
-    "fs-id1165137660222",
-    "fs-id1165134312227"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 43,
-   "rationale": "The module's Try It solution justifies its verdict with \"f(x) is a power function because it can be written as f(x) = 8x^4\", but the Try It's own function is f(x) = 2x^2 * 4x^3 = 8x^5. The two disagree at every x but 0 and 1; at x = 2 the product is 256 while 8x^4 is 128. The verdict is right and only the exponent is wrong, so this page writes 8x^5 and keeps the rest of the solution. A visible Source note sits beside the exercise and the attribution footer discloses the correction."
-  },
-  {
-   "localPath": "content/math/precalculus/04-exponential-and-logarithmic-functions/03-logarithmic-functions.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49363",
-   "sourceElementIds": [
-    "para-00002"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 35,
-   "rationale": "The module's common-logarithm notation sentence is wrong twice. It lists log_b(x) among the common-logarithm notations, though a base-b logarithm is not the common (base-10) logarithm the paragraph above defines; and it deprecates lg(x) for being unspecified, though ISO 80000-2 fixes lg at base 10 and it is bare log(x) that is ambiguous - which is exactly what the module's own preceding paragraph explains (log means log_2 in computer science and log_10 in mathematics). The first half was corrected during the chapter-4 authoring pass; the second followed on 2026-08-17, because after the first correction the sentence introduced log(x) as the common logarithm and then deprecated lg(x) for being unspecified, a contradiction sharper than the source's. This page writes \"log(x) or lg(x) as the common logarithm\" and \"Writing log(x) without specifying a base\". A visible Source note sits beside the paragraph and the attribution footer discloses the correction."
-  },
-  {
-   "localPath": "content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49372",
-   "sourceElementIds": [
-    "fs-id1165134258657",
-    "fs-id1165135264623"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 44,
-   "rationale": "The module's reference-angle definition names the reference angle and the angle it is measured from with the same symbol t, so it reads \"the reference angle of t is t\" - false for every angle outside quadrant I, and contradicted both by the paragraph's own bound of 0 to 90 degrees and by its figure Figure_05_02_020, which draws the two as distinct rays. The same book one section earlier (m49371, fs-id1165135191896 and the Coterminal and Reference Angles note fs-id1165135246672) defines the term as t-prime in both places it states it, and this sentence opens \"Recall that\", so it is recalling that definition with the prime dropped. The primeless form recurs in the module's Key Concepts bullet and in the Verbal exercise solution fs-id1165135264623. This page writes t-prime in the running prose and in the Key concepts bullet, matching its own recreated reference-angle panels, which are labelled t-prime. A visible Source note sits beside the paragraph and the attribution footer discloses the correction."
-  },
-  {
-   "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/02-sum-and-difference-identities.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49395",
-   "sourceElementIds": [
-    "fs-id2260064"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 51,
-   "rationale": "Example 10 asks to show tan(theta) = (m2-m1)/(1+m1m2) for the acute angle between two lines, but its own worked solution sets theta = theta1 - theta2 and derives (m1-m2)/(1+m1m2) - the negative of the stated goal - and its figure draws theta1 > theta2, matching the derivation. Confirmed in the raw CNXML and the printed PDF (folio 697 / PDF page 707). The local page states the goal the solution actually proves ((m1-m2)/(1+m1m2)), keeps the source's derivation verbatim, places a visible Source note beside the statement, and discloses the correction in the attribution footer. No graded item depends on the sign."
-  },
-  {
-   "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/03-double-angle-half-angle-and-reduction-formulas.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49396",
-   "sourceElementIds": [
-    "ti_07_03_01"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 52,
-   "rationale": "The Try It prints 'with theta in quadrant I' inside a problem whose given (sin alpha = 5/8), ask (cos(2 alpha)), and printed solution (7/32) are all stated in alpha; no theta exists elsewhere in the item. Confirmed in the raw CNXML and the printed PDF (folio 693 / PDF page 703), with the arithmetic independently reproduced (1 - 2*(5/8)^2 = 7/32). The local page states alpha throughout, with a visible Source note beside the item."
-  },
-  {
-   "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/06-modeling-with-trigonometric-functions.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49399",
-   "sourceElementIds": [
-    "ti_07_06_04"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 53,
-   "rationale": "The Try It's printed key (initial displacement 6, damping constant -6) contradicts its own equation f(t)=5e^{-6t}cos(4t): under the module's model f(t)=a e^{-ct} cos(omega t), a=5 (6 appears nowhere in the equation) and the module's own sign convention keys the damping constant positive (its spring example answers ln(2)/3). Frequency 2/pi is correct as printed. Confirmed in raw CNXML and PDF. A graded answer that would mark a correct learner wrong, so the local page keys 5, 6, 2/pi, names the model explicitly in the question, and discloses the correction in the footer."
-  },
-  {
-   "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/07-solving-systems-with-inverses.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49435",
-   "sourceElementIds": [
-    "fs-id1165133388596"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 58,
-   "rationale": "The worked example row-reduces A=[[3,6],[1,2]] augmented with the identity, but its printed \"switch row 1 and row 2\" result [[1,3],[3,2]] is not the swap of A (and is not even singular, det -7), and the following printed step follows from neither reading by the stated operation. The printed intermediates would teach the row operations wrong, so the local page ships the correct two-step reduction ([[1,2],[3,6]|[0,1],[1,0]] then [[1,2],[0,0]|[0,1],[1,-3]]) with a visible Source note; the conclusion (det A = 0, no inverse) is the source's own and is preserved."
-  },
-  {
-   "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/08-solving-systems-with-cramers-rule.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49436",
-   "sourceElementIds": [
-    "Figure_09_08_005"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 59,
-   "rationale": "The source figure labels its green plane 3x+y+2z=0, the sign-flipped spelling of the equation Example 6 itself prints as 3x+y-2z=0 (PDF art at 300dpi and CNXML alt agree with each other and disagree with the example). The local recreation of the figure labels the plane 3x+y-2z=0 to match the example, with a visible Source note beside the figure and the correction disclosed in the footer; the example algebra is unaffected either way."
-  },
-  {
-   "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/02-proteobacteria.md",
-   "bundle": "microbiology",
-   "moduleId": "m58796",
-   "sourceElementIds": [
-    "fs-id1172100990327",
-    "fs-id1172098310018"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 367,
-   "rationale": "Three source claims fail against the module or independent taxonomy evidence. The Deltaproteobacteria table calls Desulfovibrio 'formerly Desufuromonas'; LPSN identifies Desufuromonas as a misspelling of the separate valid genus Desulfuromonas, not a former name of Desulfovibrio, so the local table omits the parenthetical and places a visible Source note below it. The section summary says nitrogen-fixing Alphaproteobacteria convert atmospheric nitrogen to nitrites, while this book's §§4.1 and 8.7 identify ammonia as the product of nitrogen fixation and reserve nitrite/nitrate production for nitrification; the local summary says ammonia and carries a visible Source note. The Glossary says all Alphaproteobacteria are oligotrophs, while this module's defining paragraph says only some species are; the local definition follows the module and carries a visible Source note. All three corrections are disclosed in the attribution footer."
-  },
-  {
-   "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/03-nonproteobacteria-gram-negative-bacteria-and-phototrophic-bacteria.md",
-   "bundle": "microbiology",
-   "moduleId": "m58797",
-   "sourceElementIds": [
-    "fs-id1172100896627",
-    "fs-id1172100940484"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 368,
-   "rationale": "The cyanobacteria discussion contains two substantive scientific errors. It says nitrogen fixation converts molecular nitrogen to nitrites and nitrates, while this book's §§4.1 and 8.7 identify ammonia as the direct product and nitrification as the later oxidation to nitrite and nitrate. It also calls cyanophycin a secondary photosynthetic pigment alongside phycocyanin; this book's §8.6 lists phycocyanin but not cyanophycin among photosynthetic pigments, and Watzer and Forchhammer (Applied and Environmental Microbiology 84, e01298-18; doi:10.1128/AEM.01298-18) experimentally describe cyanophycin as a carbon/nitrogen storage polymer. The local page corrects both claims, carries a visible Source note beside each, and discloses both in its attribution footer."
-  }
- ]
+  "schemaVersion": 2,
+  "targetCommits": {
+    "prealgebra-bundle": "38cae454e644abf9f0a623e876994553881597c9",
+    "college-algebra-bundle": "789b54099106b071d1d32bfcee454fed72eb4768",
+    "biology-bundle": "63f8b6f8d129dd1582989bb755011e9a6d523471",
+    "microbiology": "633850257fbd3ccf6187b9428c55e80b69236382"
+  },
+  "metadataDecisions": [
+    {
+      "localPath": "content/math/precalculus/02-linear-functions/04-fitting-linear-models-to-data.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49327",
+      "covers": [],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "CNX_Precalc_Figure_02_04_007"
+      ],
+      "rationale": "Figure 7 is a 21-panel Wikimedia correlation composite (credit: DenisBoigelot) plotting thousands of points per panel. It cannot be reproduced as accessible inline SVG under the no-file-backed-images rule, and it has no formula to render from. It is replaced by eight panels built from explicit point sets recorded in each figure's data-spec, spanning the same pedagogical range: r = 1 and r = -1 drawn exactly from y = 0.8x + 1 and y = 9 - 0.8x; r = 0.8, 0.4, 0.0, -0.4, -0.8 generated as y = 5 + 1.9(rho*z_x + sqrt(1-rho^2)*z_e) with z_e orthogonal to z_x, rounded to 0.1, and verified at r = 0.8065, 0.4009, 0.0082, -0.3908, -0.7984; and a nonlinear r = 0 panel from y = 8 - 0.28(x-5)^2 with symmetric jitter. The Wikimedia credit is retained in the attribution footer, which also discloses the substitution. This is a deliberate local replacement, not a transcription of the source figure: do not reverse it toward the composite in a later audit.",
+      "covers_note": "Empty by design. This adaptation is a figure substitution, not a title/objective/heading flag, so no audit flag adjudicates it; the entry exists as a durable record."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/04-graphs/04-understand-slope-of-a-line.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82483",
+      "covers": [
+        "objective-needs-review",
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Use geoboards to model slope"
+      ],
+      "rationale": "The attribution footer explicitly discloses that the geoboard activity was condensed into one accessible worked introduction to rise and run. The retained page still teaches the underlying objective."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/07-factoring/04-factor-special-products.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82528",
+      "covers": [
+        "objective-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Choose method to factor a polynomial completely"
+      ],
+      "rationale": "OpenStax lists this fourth objective but has no corresponding fourth instructional section heading. The local page repeatedly asks learners to factor completely while retaining all three source method sections."
+    },
+    {
+      "localPath": "content/math/prealgebra/02-the-language-of-algebra/03-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81271",
+      "covers": [
+        "heading-needs-review",
+        "objective-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Model the Subtraction Property of Equality"
+      ],
+      "rationale": "The attribution footer explicitly discloses replacement of the envelope-and-counters manipulative figures with a direct statement of the Subtraction Property. The local objectives list therefore carries five items where the source abstract has six."
+    },
+    {
+      "localPath": "content/math/prealgebra/03-integers/02-add-integers.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81276",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Translate Word Phrases to Algebraic Expressions",
+        "Add Integers in Applications"
+      ],
+      "rationale": "The local page combines the two closely related source headings into one translated-phrases-and-applications section, consistent with its disclosed prose condensation."
+    },
+    {
+      "localPath": "content/math/prealgebra/09-math-models-and-geometry/06-solve-geometry-applications-volume-and-surface-area.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81328",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "omitted-approved",
+      "sourceItems": [
+        "Summary of Geometry Formulas"
+      ],
+      "rationale": "The attribution footer explicitly discloses omission of the end-of-chapter formula summary because every formula is retained where it is introduced."
+    },
+    {
+      "localPath": "content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81354",
+      "covers": [
+        "objective-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Graph a line given a point and the slope\nSolve slope applications"
+      ],
+      "rationale": "Upstream markup defect: the module's <md:abstract> packs two objectives into a single <item>, so the source parses as five objectives where the section teaches six. The local page has separate 'Graph a line given a point and the slope' and 'Solve slope applications' headings, matching the printed book, so the local objectives list carries six items. Do not collapse them back to match the malformed abstract."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/01-foundations/06-add-and-subtract-fractions.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82457",
+      "covers": [],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Try It: Evaluate $-\\tfrac{1}{2} - y$",
+        "Try It: Evaluate $3ab^2$"
+      ],
+      "rationale": "Two Try It exercises are revalued, not rewritten. Upstream evaluates $-\\tfrac12 - y$ at $y = -\\tfrac14$, whose answer $-\\tfrac14$ is the substituted value itself — a fixed point — and $3ab^2$ at $a = -\\tfrac23, b = -\\tfrac12$, whose answer $-\\tfrac12$ is the substituted $b$. In both, a learner who reads the printed substitution back into the box is graded correct without evaluating anything, and the replay gate (npm run verify:replay) fails the exercise for exactly that reason. The substituted values move to $y = -\\tfrac34$ (answer $\\tfrac14$) and $b = -\\tfrac13$ (answer $-\\tfrac29$); the expressions, the method, and the arithmetic difficulty are unchanged, and no printed span of either new prompt grades correct. Deliberate local revaluation: do not reverse it toward the upstream numbers in a later audit.",
+      "covers_note": "Empty by design. An exercise revaluation touches no baseline SHA, title, objective or heading, so source:check adjudicates no flag for it and this entry is the only durable record."
+    },
+    {
+      "localPath": "content/math/intermediate-algebra/01-foundations/03-fractions.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81359",
+      "covers": [],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Try It: Evaluate $3ab^2$"
+      ],
+      "rationale": "The same revaluation as the Elementary Algebra 1.6 copy of this Try It: upstream evaluates $3ab^2$ at $a = -\\tfrac23, b = -\\tfrac12$, and the answer $-\\tfrac12$ is the substituted $b$ read straight back off the prompt, so the exercise is passable without evaluating it. $b$ moves to $-\\tfrac13$ and the answer to $-\\tfrac29$; expression, method and difficulty are unchanged. Deliberate local revaluation: do not reverse it in a later audit.",
+      "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
+    },
+    {
+      "localPath": "content/math/prealgebra/04-fractions/05-add-and-subtract-fractions-with-different-denominators.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81289",
+      "covers": [],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Try It: Evaluate $3ab^2$"
+      ],
+      "rationale": "The same revaluation as the Elementary Algebra 1.6 and Intermediate Algebra 1.3 copies of this Try It: the upstream answer $-\\tfrac12$ is the substituted $b$, so the printed prompt answers itself. $b$ moves to $-\\tfrac13$ and the answer to $-\\tfrac29$. Deliberate local revaluation: do not reverse it in a later audit.",
+      "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/05-systems-of-linear-equations/01-solve-systems-of-equations-by-graphing.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82490",
+      "covers": [],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Try It: determine whether an ordered pair is a solution of a system"
+      ],
+      "rationale": "One authored sub-exercise is revalued. It substituted $(0,0)$ into $x + 2y$ for the system $3x + y = 0, x + 2y = -5$, where the point satisfies the first equation but not the second — the pedagogical point — but the answer $0$ is also the substituted value, so a learner reading $x = 0$ off the prompt is graded correct, and the zero also hides the arithmetic behind the multiply-by-zero shortcut. The substitution moves to $(2,-6)$, which has the identical property (it satisfies $3x + y = 0$ and gives $-10 \\ne -5$) and requires the multiplication and addition to be carried out. Deliberate local revaluation: do not reverse it toward $(0,0)$ in a later audit.",
+      "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49353",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Chapter Test",
+        "Chapter Review Exercises"
+      ],
+      "rationale": "Section 3.9 is the LAST section of chapter 3, and m49353 carries the whole chapter's end matter after its own section exercises: a 'Chapter Review Exercises' set and a 'Chapter Test'. The audit reads those as source headings with no local counterpart and raises heading-needs-review at 0% title similarity. They are deliberately absent: a chapter test covers all nine sections of chapter 3, so folding its items into 3.9's Practice block would attribute chapter-wide material to one section and hide the other eight sections' skills inside a variation page. The section-final Practice block draws only from the module's own '3.9 Section Exercises' set. If chapter-level assessment is wanted later it belongs in a Knowledge Check page, not here.",
+      "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap. Expect the same flag on the final section of every chapter whose module is packaged this way."
+    },
+    {
+      "localPath": "content/math/precalculus/05-trigonometric-functions/04-right-triangle-trigonometry.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49384",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Review Exercises",
+        "Practice Test"
+      ],
+      "rationale": "Section 5.4 is the LAST section of chapter 5, and m49384 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set (whose subsections link back to m49371, m49372, m49374 and m49384) and a 'Practice Test'; the printed book carries both under 'Chapter Review' (PDF pages 618 onward), after section 5.4 ends. The audit reads those as source headings of 5.4 with no local counterpart and raises heading-needs-review. They are deliberately absent: both cover all four sections of chapter 5, so folding their items into 5.4's Practice block would attribute chapter-wide material to one section and hide the other three sections' skills inside a right-triangle page. Section 5.4's own six headings are all present, in source order, and the section-final Practice block draws only from the module's own '5.4 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md (m49353), whose covers_note predicted this recurrence.",
+      "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap."
+    },
+    {
+      "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/08-solving-systems-with-cramers-rule.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49436",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Review Exercises"
+      ],
+      "rationale": "Section 9.8 is the LAST section of chapter 9, and m49436 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set whose subsections link back to every section of the chapter. The audit reads that as a source heading of 9.8 with no local counterpart and raises heading-needs-review at 0% title similarity. It is deliberately absent: the set covers all eight sections of chapter 9, so folding its items into 9.8's Practice block would attribute chapter-wide material to one section and hide the other seven sections' skills inside a Cramer's-rule page. Section 9.8's own headings are all present, in source order, and the section-final Practice block draws only from the module's own '9.8 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as 3.9 (m49353) and 5.4 (m49384), whose covers_note predicted this recurrence.",
+      "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/02-how-we-see-the-invisible-world/01-the-properties-of-light.md",
+      "bundle": "microbiology",
+      "moduleId": "m58785",
+      "sourceElementIds": [
+        "fs-id1167794056678"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 374,
+      "rationale": "The fluorochrome example sentence says Texas red is excited by blue light and FITC absorbs invisible ultraviolet light. Manufacturer spectral data (Thermo Fisher Molecular Probes Handbook: Texas Red sulfonyl chloride absorption 588 nm; fluorescein/FITC peak excitation 488-495 nm) place Texas red's excitation in the orange and FITC's in the visible blue. The local sentence states orange and blue, carries a visible Source note, and the footer discloses the change. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/01-an-invisible-world/01-what-our-ancestors-knew.md",
+      "bundle": "microbiology",
+      "moduleId": "m58781",
+      "sourceElementIds": [
+        "fs-id1171360545639"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 377,
+      "rationale": "The source dates the Athenian plague 'between 430 and 410 BC'. Thucydides describes the outbreak of 430 BC and its recurrence ending in 426 BC, and the modern review (Littman, Mount Sinai Journal of Medicine 76 [2009]: 456-467, doi:10.1002/msj.20137) dates it 430-426 BC; no source supports 410. The local page prints 426 BC with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/01-an-invisible-world/02-a-systematic-approach.md",
+      "bundle": "microbiology",
+      "moduleId": "m58782",
+      "sourceElementIds": [
+        "fs-id1171358982476"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 378,
+      "rationale": "The source says Haloquadratum walsbyi cells 'are arranged in square clusters of four cells'. The primary morphology paper (Bolhuis et al., 'Morphological and Structural Aspects of the Extremely Halophilic Archaeon Haloquadratum walsbyi', PMC3084702) describes flat square cells joined in fragile postage-stamp sheets, not fixed quartets; the genus name refers to the square cell shape. The local page says sheets of square cells with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/03-the-cell/02-foundations-of-modern-cell-theory.md",
+      "bundle": "microbiology",
+      "moduleId": "m58791",
+      "sourceElementIds": [
+        "fs-id1172100564193"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 379,
+      "rationale": "The prose dates John Snow's water-source cholera study to 1848 while the same module's timeline figure dates it to 1854, the year of the Broad Street and water-company investigations. The page follows the module's own figure, with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/02-the-chemical-foundation-of-life/01-atoms-isotopes-ions-and-molecules-the-building-blocks.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66430",
+      "sourceElementIds": [
+        "fs-idp140338806078224",
+        "eip-idm257115376"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 375,
+      "rationale": "The Ions paragraph gives sodium 11 neutrons and chlorine 17 neutrons. Sodium is monoisotopic (sodium-23: 11 protons, 12 neutrons; NIST Atomic Weights and Isotopic Compositions), and the same module's Atomic Number and Mass paragraph gives chlorine's majority isotope 17 protons and 18 neutrons, so the Ions paragraph contradicts its own section. The local page prints 12 and 18 with a visible Source note and discloses the change in its footer. Found by the prose claim pass sample, September 6, 2026. ALSO (erratum 376): The Carbon Dating box says carbon-14 decays to nitrogen-14 'by a process called beta decay-electrons or positrons emission.' Carbon-14 decays 100% by beta-minus (electron) emission to nitrogen-14 (LNHB Table de Radionucleides; NNDC/ENSDF); positron emission would lower the atomic number, not raise it to nitrogen. The local page says electron emission with a visible Source note and footer disclosure. Found by the prose claim pass sample, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/03-the-cell/04-unique-characteristics-of-eukaryotic-cells.md",
+      "bundle": "microbiology",
+      "moduleId": "m58793",
+      "sourceElementIds": [
+        "fs-id1172098545691",
+        "fs-id1172098704816"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 380,
+      "rationale": "The source says Golgi observed the stacked membranes in Plasmodium cells. Golgi's 1898 communication described the internal reticular apparatus in neurons of the cerebellum and spinal ganglia (Bentivoglio et al., Frontiers in Neuroanatomy 13 [2019], doi:10.3389/fnana.2019.00003); his malaria work was separate. The page says nerve cells with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026. ALSO (erratum 381): The source dates de Duve's discovery of lysosomes to the 1960s. The primary paper is de Duve et al., Biochemical Journal 60 (1955): 604-617; the 1960s work was peroxisomes (Bonetta, Journal of Cell Biology 169 [2005]: 705, doi:10.1083/jcb1695fta2). The page says 1955 with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/02-the-chemical-foundation-of-life/02-water.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66434",
+      "sourceElementIds": [
+        "fs-idm194704288"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 382,
+      "rationale": "Ice being less dense than liquid water is called a phenomenon 'we do not see when other liquids solidify'; gallium, bismuth, silicon, germanium, and antimony also expand on solidifying. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/02-the-chemical-foundation-of-life/03-carbon.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66436",
+      "sourceElementIds": [
+        "fs-idp65728176",
+        "fs-idp57674448"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 383,
+      "rationale": "The glossary defines an aliphatic hydrocarbon as a linear chain while the body classes single-bonded rings (cyclopentane, cyclohexane) as aliphatic; the key term follows the body. ALSO (erratum 384): beta-carotene is offered as a hydrocarbon with an aromatic portion, but its end rings are cyclohexene rings (IUPAC 2,6,6-trimethylcyclohex-1-ene) and the page omits the example with a Source note. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/03-biological-macromolecules/04-proteins.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66442",
+      "sourceElementIds": [
+        "fs-id1506615",
+        "fs-id2216741",
+        "fig-ch03_04_05"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 385,
+      "rationale": "Cysteine is listed as an essential amino acid; this book's own table (m66616, tab-ch34_02_04) makes cysteine non-essential and lysine essential, and the page prints lysine. ALSO (erratum 386): 'a difference in the 44th position' for human versus yeast cytochrome c should be differences at 44 positions (Kimball, Biology, Taxonomy). ALSO (erratum 387): the hemoglobin beta-chain is 146 mature residues (UniProt P68871), not 147. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/04-cell-structure/05-the-cytoskeleton.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66454",
+      "sourceElementIds": [
+        "fs-idm40512368",
+        "fs-idm71000713"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 388,
+      "rationale": "The critical-thinking solution calls the gram-negative lipopolysaccharide layer a capsule; this book's m66545 describes it as the outer envelope/membrane and defines the capsule as a separate optional structure. The page's self-check model answer says outer membrane. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/04-bulk-transport.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66376",
+      "sourceElementIds": [
+        "fs-id1760012"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 389,
+      "rationale": "The glossary says pinocytosis imports macromolecules; the module's own text ('cell drinking', water) and its transport table (small molecules, liquids/water) say otherwise. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/08-photosynthesis/01-overview-of-photosynthesis.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66473",
+      "sourceElementIds": [
+        "fs-idp15776"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 391,
+      "rationale": "The Carboniferous is dated 350 to 200 million years ago; the period ran about 359 to 299 million years ago (ICS chart), and the page prints 350 to 300. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/08-photosynthesis/02-the-light-dependent-reactions-of-photosynthesis.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66474",
+      "sourceElementIds": [
+        "fs-idm101449600",
+        "fs-idm133225312"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 392,
+      "rationale": "Water splitting is said to release two electrons and two hydrogen atoms; the module's own photosystem II description names protons in the lumen and the page says protons. ALSO (erratum 393): the photons-per-NADPH review question is keyed 2; the reduction takes two electrons (m66465 fs-id1405882 defines NAD(P)H as accepting two electrons and a proton) and one photon per photosystem per electron, so the page keys 4, disclosed in DISCLOSED_DEVIATIONS (kind key). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/08-photosynthesis/03-using-light-energy-to-make-organic-molecules.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66475",
+      "sourceElementIds": [
+        "fs-idm104644592"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 394,
+      "rationale": "The Evolution Connection says photosystems make ATP and NADH; the module's own opening paragraph and the rest of the chapter say NADPH. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/09-cell-communication/01-signaling-molecules-and-cellular-receptors.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66378",
+      "sourceElementIds": [
+        "fs-id2336863"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 395,
+      "rationale": "GTP is expanded as guanosine 3-phosphate; it is guanosine triphosphate (PubChem CID 135398633). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/10-cell-reproduction/02-the-cell-cycle.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66478",
+      "sourceElementIds": [
+        "fs-id2135035"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 396,
+      "rationale": "The G1 glossary entry says growth happens 'during mitosis'; the module's own text places G1 in interphase before the mitotic phase. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/11-meiosis-and-sexual-reproduction/01-the-process-of-meiosis.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66483",
+      "sourceElementIds": [
+        "fs-id2054667"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 397,
+      "rationale": "The Evolution Connection footnote misquotes Ramesh, Malik, and Logsdon (2005) as 'A Phylogenetic Inventory of Meiotic Genes'; the published title is 'A Phylogenomic Inventory…' (PubMed 15668177). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/13-modern-understandings-of-inheritance/01-chromosomal-theory-and-genetic-linkage.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66491",
+      "sourceElementIds": [
+        "fs-id2021443"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 398,
+      "rationale": "Mendel is said to have begun studying heredity in 1843; this book's own m66486 dates the start of his research to 1856, and the page follows it. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66494",
+      "sourceElementIds": [
+        "fs-id1807698"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 399,
+      "rationale": "An unfertilized egg developing into offspring is called haplodiploidy; that is the hymenopteran sex-determination system, and the phenomenon described is parthenogenesis (this book's m66571; Britannica). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/02-dna-structure-and-sequencing.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66387",
+      "sourceElementIds": [
+        "fs-id2962722",
+        "fs-id2317138"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 400,
+      "rationale": "The stretched-out E. coli chromosome is given as 1.1 mm; at the module's own 0.34 nm per base pair, 4.6 million base pairs are about 1.6 mm. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/05-dna-replication-in-eukaryotes.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66391",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 401,
+      "rationale": "RNase H is called 'AKA flap endonuclease'; they are distinct primer-removal enzymes (RNase H2 and FEN1), and the page names both; the endonuclease recall item's hint was reworded to match. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/15-genes-and-proteins/03-eukaryotic-transcription.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66499",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 402,
+      "rationale": "Alpha-amanitin is attributed to the fly agaric (Amanita muscaria), whose toxins are ibotenic acid and muscimol; amatoxins come from the death cap, Amanita phalloides (Wieland 1986). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/15-genes-and-proteins/04-rna-processing-in-eukaryotes.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66500",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 403,
+      "rationale": "A typical E. coli mRNA is said to last no more than five seconds; bacterial mRNA half-lives average a few minutes (Rauhut and Klug, FEMS Microbiol. Rev. 23:353). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/16-gene-expression/06-eukaryotic-translational-and-post-translational-gene-regulation.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66508",
+      "sourceElementIds": [
+        "fs-id2956204"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 404,
+      "rationale": "The glossary names GDP 'guanine diphosphate'; it is guanosine diphosphate, as the same glossary's GTP entry and m66378/m66628 say. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/16-gene-expression/07-cancer-and-gene-regulation.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66509",
+      "sourceElementIds": [
+        "fs-id1461234"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 405,
+      "rationale": "'Burkett's Lymphoma' is Burkitt lymphoma, after Denis Burkitt (Sun et al., PNAS 100:8164). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/17-biotechnology-and-genomics/01-biotechnology.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66511",
+      "sourceElementIds": [
+        "fs-id843472"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 406,
+      "rationale": "Dolly is said to have lived seven years; born July 5, 1996, euthanized February 14, 2003, she lived six. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/17-biotechnology-and-genomics/03-whole-genome-sequencing.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66513",
+      "sourceElementIds": [
+        "fs-id1770472"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 407,
+      "rationale": "The phiX174 genome is given as 5368 base pairs (it is 5,386; RefSeq NC_001422.1). ALSO (erratum 408): Venter's Haemophilus influenzae genome is dated to the 1980s; it was published in 1995 (Fleischmann et al., Science 269:496). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/01-understanding-evolution.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66518",
+      "sourceElementIds": [
+        "fs-idm13442992"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 409,
+      "rationale": "The Grants' finch study is dated 'every year since 1976'; it began in 1973 (Grant and Grant, Science 296:707). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/19-the-evolution-of-populations/02-population-genetics.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66524",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 410,
+      "rationale": "Fanconi anemia is said to cause 'blood marrow' abnormalities; it is a bone marrow failure syndrome, and the book says bone marrow elsewhere. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/21-viruses/02-virus-infections-and-hosts.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66535",
+      "sourceElementIds": [
+        "fs-idm16378990"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 411,
+      "rationale": "'Reverse transcription never occurs in uninfected host cells' is contradicted by this book's own telomerase description (m66391); the page scopes the claim to the viral enzyme. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/21-viruses/01-viral-evolution-morphology-and-classification.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66534",
+      "sourceElementIds": [
+        "fs-idp53608960"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 412,
+      "rationale": "'Adolph Meyer' is Adolf Mayer, author of the 1886 tobacco-mosaic transmission work. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/21-viruses/03-prevention-and-treatment-of-viral-infections.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66537",
+      "sourceElementIds": [
+        "fs-idp55980176"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 413,
+      "rationale": "'George Hitchens' is George H. Hitchings, Elion's 1988 Nobel co-laureate. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/01-prokaryotic-diversity.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66542",
+      "sourceElementIds": [
+        "fs-idm56401744"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 414,
+      "rationale": "Prokaryotic cells 'outnumber human body cells by about ten to one' is superseded by Sender, Fuchs, and Milo (PLOS Biology 2016), who count a ratio near 1:1; the page says at least as numerous. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/04-bacterial-diseases-in-humans.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66548",
+      "sourceElementIds": [
+        "fs-idm81635040",
+        "fs-idp95005568"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 415,
+      "rationale": "The Lyme, Connecticut outbreak is dated 1995; the cases were investigated in 1975 (Steere et al. 1977). ALSO (erratum 416): the 2011 German E. coli outbreak 'killed 32 people'; the Robert Koch Institute's final count is 53 deaths among 3,842 cases. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/24-fungi/05-importance-of-fungi-in-human-life.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66563",
+      "sourceElementIds": [
+        "fs-idp127215088"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 417,
+      "rationale": "Pasteur's brewer's-yeast work is dated 'the late 1850s'; the studies and the 1873 patent date to the 1870s. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/24-fungi/02-classifications-of-fungi.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66559",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 418,
+      "rationale": "The mycorrhiza review question's stem is true of two distractors by §24.3 (ectomycorrhizal Ascomycota and Basidiomycota); the page rewords the stem to the module's own 'all of which are involved in close associations with the roots of trees', options and key unchanged. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/25-seedless-plants/01-early-plant-life.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66566",
+      "sourceElementIds": [
+        "fs-idm66561584"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 419,
+      "rationale": "The glossary calls charophyte 'other term for green algae'; the module's own opening names chlorophytes and charophytes as the two green-algal groups. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/26-seed-plants/01-evolution-of-seed-plants.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66572",
+      "sourceElementIds": [
+        "fs-idp49354208",
+        "fs-idp138838992"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 420,
+      "rationale": "Progymnosperms are called 'the first naked seed plants' in a sentence that says they released spores like ferns; the page calls them forerunners of the seed plants. ALSO (erratum 422): the glossary equates ovule with female gametophyte, against m66574's anatomy; the page defines the ovule as the structure in which the gametophyte develops. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/26-seed-plants/03-angiosperms.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66574",
+      "sourceElementIds": [
+        "fs-idm91968544"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 421,
+      "rationale": "'The corolla in lilies and tulips consists of three sepals and three petals' contradicts the paragraph's own definition of corolla; the page says perianth. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/26-seed-plants/02-gymnosperms.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66573",
+      "sourceElementIds": [
+        "fs-idp140319568",
+        "fs-idp21939120"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 423,
+      "rationale": "The glossary calls the megasporocyte and microsporocyte spores; the module's own text has them undergo meiosis to produce the spores, and the page's key terms say so. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/27-introduction-to-animal-diversity/01-features-of-the-animal-kingdom.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66577",
+      "sourceElementIds": [
+        "fs-idm76248592"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 424,
+      "rationale": "Placozoa are called 'tiny parasitic creatures'; they are free-living (Animal Diversity Web). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/28-invertebrates/04-superphylum-lophotrochozoa-mollusks-and-annelids.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66397",
+      "sourceElementIds": [
+        "fs-idm23198080",
+        "fs-idm6067008"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 425,
+      "rationale": "The summary says seven molluscan classes; the body names eight. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/28-invertebrates/05-superphylum-ecdysozoa-nematodes-and-tardigrades.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66398",
+      "sourceElementIds": [
+        "fig-ch28_04_03"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 426,
+      "rationale": "The guinea worm 'infects about 3.5 million people annually' is the 1986 baseline; the caption now dates it and notes the near-eradication. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/28-invertebrates/06-superphylum-ecdysozoa-arthropods.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66399",
+      "sourceElementIds": [
+        "fs-idp252469232"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 427,
+      "rationale": "The end-Permian extinction is dated 240 million years ago; it is about 252 (ICS chart). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/29-vertebrates/06-mammals.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66593",
+      "sourceElementIds": [
+        "fs-idp60789520",
+        "fs-idp66865056"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 428,
+      "rationale": "Mammals 'about 5,200 species' while placentals alone are 'about 6,000'; the page says more than 6,000 (Mammal Diversity Database). ALSO (erratum 431): the glossary restricts mammary glands to females against the body's statement that both sexes of monotremes and eutherians have them. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/29-vertebrates/04-reptiles.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66591",
+      "sourceElementIds": [
+        "fs-idp80739120"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 429,
+      "rationale": "Ichthyosaurs are listed among the archosaurs while the module's own figure places them with lepidosaurs; they belong to neither (Motani 2005), and the page drops them from the list. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/29-vertebrates/05-birds.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66592",
+      "sourceElementIds": [
+        "fs-idm17832487"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 430,
+      "rationale": "The summary says counter-current gas exchange; the body describes cross-current, and the page's summary says cross-current. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/29-vertebrates/03-amphibians.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66590",
+      "sourceElementIds": [
+        "fs-idm204156752"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 432,
+      "rationale": "'All salamanders except one, the fire salamander, are oviparous' is false: alpine salamanders and Lyciasalamandra are viviparous (Buckley, eLS 2012). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/05-transport-of-water-and-solutes-in-plants.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66600",
+      "sourceElementIds": [
+        "fs-idm113764608",
+        "fs-idm89093776"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 433,
+      "rationale": "1.5 MPa is converted at 140 psi per MPa to 210 psi; one MPa is 145.04 psi, so about 218. ALSO (erratum 434): the gravitational potential is given as -0.1 MPa per meter and 10 MPa for the tallest trees; rho g h is about 0.01 MPa per meter, about 1 MPa. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/06-plant-sensory-systems-and-responses.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66601",
+      "sourceElementIds": [
+        "fs-idp6903008",
+        "fs-idp52556160"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 435,
+      "rationale": "Darwin's 1880 title is printed 'The Power of Movements in Plants'; it is 'Movement'. ALSO (erratum 436): 'glycol cyanide' in cassava is linamarin (McMahon, White, and Sayre 1995). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/04-leaves.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66599",
+      "sourceElementIds": [
+        "fs-idp28882000",
+        "fs-idp31909760"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 437,
+      "rationale": "The chloroplast review question's 'epidermis' distractor is true by the module's own guard-cell sentence; the page replaces it with 'endodermis', disclosed in DISCLOSED_DEVIATIONS (kind options). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/32-plant-reproduction/03-asexual-reproduction.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66609",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 438,
+      "rationale": "Garlic is given as a corm; it forms a bulb by this book's §30.2 and the module's own figure alt, and the page drops it from the corm sentence. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/32-plant-reproduction/02-pollination-and-fertilization.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66608",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 439,
+      "rationale": "Teosinte is said to have been first cultivated by 'the ancient Mayans'; maize domestication is Balsas valley, about 8,700 years ago (Ranere et al. 2009). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/01-digestive-systems.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66615",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 440,
+      "rationale": "The appendix 'has an insignificant role in immunity'; this book's §42.2 names it a mucosal immune induction site, and the page says a minor role. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/02-nutrition-and-energy-production.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66616",
+      "sourceElementIds": [
+        "tab-ch34_02_05"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 441,
+      "rationale": "The vitamin table credits vitamin D with blood clotting, the function its own vitamin K row assigns to vitamin K; the page drops the clause. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/04-digestive-system-regulation.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66618",
+      "sourceElementIds": [
+        "fs-idp144627040"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 442,
+      "rationale": "The acid-secretion review question's 'gastric inhibitory peptide' distractor is true by the module's own text; the page replaces it with secretin, disclosed in DISCLOSED_DEVIATIONS (kind options). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/35-the-nervous-system/02-how-neurons-communicate.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66621",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 443,
+      "rationale": "An IPSP is called a hyperpolarization of the presynaptic membrane; the term, the EPSP sentence, and the glossary say postsynaptic. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/35-the-nervous-system/04-the-peripheral-nervous-system.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66623",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 444,
+      "rationale": "The olfactory nerve is said to carry smell to the brainstem; this book's §36.3 ends it in the olfactory bulb, and the page says to the brain. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/36-sensory-systems/02-somatosensation.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66404",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 445,
+      "rationale": "The muscle spindle glossary says the spindle shortens the muscle; it senses stretch and drives the reflex that does (Purves, Neuroscience 2nd ed.). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/40-the-circulatory-system/02-components-of-the-blood.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66651",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 446,
+      "rationale": "Camels are said to have nucleated red blood cells; camelid erythrocytes are anucleate ellipsoids (Schalm's Veterinary Hematology). ALSO (erratum 447): white blood cells are given as 30 µm; they are about 12–20 µm (Junqueira's Basic Histology). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/40-the-circulatory-system/04-blood-flow-and-blood-pressure-regulation.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66654",
+      "sourceElementIds": [
+        "fig-ch40_04_02"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 448,
+      "rationale": "The caption says over 1,500 liters of the daily cardiac output is filtered at the capillaries; estimates are 8–30 liters a day, and the page says roughly 20. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/02-the-kidneys-and-osmoregulatory-organs.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66658",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 449,
+      "rationale": "The juxtaglomerular complex is said to secrete erythropoietin; it is made by peritubular interstitial fibroblasts (Bachmann et al. 1993). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/01-osmoregulation-and-osmotic-balance.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66656",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 450,
+      "rationale": "The milliosmole is defined as milliequivalents per kilogram; osmoles count particles, not charge. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/42-the-immune-system/03-antibodies.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66665",
+      "sourceElementIds": [
+        "fs-idm36621536"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 451,
+      "rationale": "Light-chain VJ recombination is credited with over a million combinations; 40 x 5 is 200, and the million comes from pairing with the heavy chain (Janeway, Immunobiology 5th ed.). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/04-hormonal-control-of-human-reproduction.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66674",
+      "sourceElementIds": [
+        "fs-idp108162320",
+        "fs-idm110164992"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 452,
+      "rationale": "The morula is given 30-60 cells; it is the 16- to 32-cell stage (Langman's Medical Embryology). ALSO (erratum 453): the LH glossary entry credits LH with lactation, which this book assigns to prolactin; the page drops the clause. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/01-reproduction-methods.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66668",
+      "sourceElementIds": [
+        "fs-idm106900496"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 454,
+      "rationale": "'Blacktop shark' is the blacktip shark, Carcharhinus limbatus (Chapman et al. 2008). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/44-ecology-and-the-biosphere/05-climate-and-the-effects-of-global-climate-change.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66419",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 455,
+      "rationale": "1950 atmospheric CO2 is given as about 280 ppm, the pre-industrial value; the Law Dome record gives about 310 ppm (MacFarling Meure et al. 2006). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/45-population-and-community-ecology/07-behavioral-biology-proximate-and-ultimate-causes-of-behavior.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66699",
+      "sourceElementIds": [
+        "fs-idp194005680"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 456,
+      "rationale": "The kin-selection glossary says 'sacrificing one's own life'; the module's own text defines it as lowering individual fitness, and the page's key term says so. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/46-ecosystems/01-ecology-of-ecosystems.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66701",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 457,
+      "rationale": "Odum's Silver Springs study is dated the 1940s; the module's own cited paper (Odum 1957) reports early-1950s fieldwork. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/02-parasitic-helminths.md",
+      "bundle": "microbiology",
+      "moduleId": "m58803",
+      "sourceElementIds": [
+        "term-00006"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 468,
+      "rationale": "The module says Ascaris lumbricoides females \"may reach lengths greater than 1 meter\"; the CDC DPDx ascariasis reference gives adult females as 20–35 cm. The local page corrects the value with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 7, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/03-fungi.md",
+      "bundle": "microbiology",
+      "moduleId": "m58804",
+      "sourceElementIds": [
+        "term-00001",
+        "term-00058",
+        "fs-id1172100556178"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 470,
+      "rationale": "\"typically saprozoic\" contradicts the module's own Summary (\"saprotrophic\") and the Glossary appendix's protozoan-only definition of saprozoic (erratum 470); \"Enterocystozoan bieneusi\" is printed as the accepted name Enterocytozoon bieneusi (erratum 471, DOI 10.3201/eid2706.ET2706). Both corrected with visible Source notes and disclosed in the footer. Found by the prose claim pass, September 7, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/06-acellular-pathogens/01-viruses.md",
+      "bundle": "microbiology",
+      "moduleId": "m58808",
+      "sourceElementIds": [
+        "term-00006"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 483,
+      "rationale": "The module says Beijerinck concluded in 1899 that the tobacco mosaic agent was \"possibly a chemical, like a biological poison\"; his 1898 paper proposed a contagium vivum fluidum that multiplied in the host (Bos, Phil. Trans. R. Soc. B 354 [1999]: 675–685, DOI 10.1098/rstb.1999.0420). The local page corrects the sentence with a visible Source note, rewords the body Check Your Understanding item built on it, and discloses the change in its footer. Found by the prose claim pass, September 7, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/06-acellular-pathogens/02-the-viral-life-cycle.md",
+      "bundle": "microbiology",
+      "moduleId": "m58809",
+      "sourceElementIds": [
+        "fs-id1168329030248",
+        "fs-id1168329116501"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 488,
+      "rationale": "The WHO Ebola statistics footnote is dated 2005 for a 2014 outbreak whose URL encodes 20150318 (erratum 487); the Case in Point dates Duncan's first hospital visit to September 24 and his return \"two days later\", where the CDC MMWR investigation gives September 25 and September 28 (erratum 488). Both corrected with visible Source notes and disclosed in the footer. Found by the chapter 5–6 run and its prose claim pass, September 7, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/08-microbial-metabolism/05-catabolism-of-lipids-and-proteins.md",
+      "bundle": "microbiology",
+      "moduleId": "m58823",
+      "sourceElementIds": [
+        "fs-id1167662509804"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 512,
+      "rationale": "The module says phospholipids compose the membranes of all organisms \"except the archaea\"; the book's own §3.3 (m58792) states that archaeal membrane phospholipids are ether-linked rather than ester-linked, so archaeal membranes are phospholipid membranes with a different linkage. Corrected on the page with a visible Source note and disclosed in the footer. Found by the chapter 8 prose claim pass, September 7, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/08-microbial-metabolism/07-biogeochemical-cycles.md",
+      "bundle": "microbiology",
+      "moduleId": "m58825",
+      "sourceElementIds": [
+        "fs-id1167662450397"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 518,
+      "rationale": "The module's summary labels the conversion of atmospheric nitrogen to ammonia \"(ammonification)\"; the module's own Nitrogen Cycle text defines that step as nitrogen fixation and ammonification as the release of ammonia from organic nitrogen during decomposition. The summary bullet prints \"(nitrogen fixation)\" with a visible Source note and a footer sentence. Found by the chapter 8 prose claim pass, September 7, 2026."
+    }
+  ],
+  "upstreamDriftDecisions": [
+    {
+      "localPath": "content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82453",
+      "sourceElementIds": [
+        "fs-id1170655121545",
+        "fs-id1170655120589",
+        "fs-id1170655162128"
+      ],
+      "status": "retain-local-equivalent",
+      "rationale": "Current upstream swaps which rectangle dimension is six less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary table still describes the older orientation."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82470",
+      "sourceElementIds": [
+        "fs-id1168345426388",
+        "fs-id1168345440730",
+        "fs-id1168341917017",
+        "fs-id1168345667902"
+      ],
+      "status": "retain-local-upstream-inconsistent",
+      "rationale": "Current upstream changes the right side from negative three-fifths to positive three-fifths but leaves a solution graphic saying contradiction/no solution. Positive three-fifths makes the inequality an identity. The local negative-three-fifths prompt and contradiction answer are mathematically correct and match the PDF-era source."
+    },
+    {
+      "localPath": "content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81422",
+      "sourceElementIds": [
+        "fs-id1167836606933",
+        "fs-id1167836606939",
+        "fs-id1167836606950"
+      ],
+      "status": "retain-local-equivalent",
+      "rationale": "Current upstream swaps which rectangle dimension is fourteen less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary remains phrased for the older orientation."
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49347",
+      "sourceElementIds": [
+        "ti_03_04_02",
+        "fs-id1165137932363",
+        "Figure_03_04_010"
+      ],
+      "status": "retain-local-equivalent",
+      "rationale": "Between the inferred PDF-era commit d1bd19c6 and the pinned review commit 789b5409, upstream changed this Try It's prompt from 'the function of degree 7' to 'degree 9' and updated nothing else. The edit contradicts the exercise's own printed solution, which gives a zero of -5 with multiplicity 3, a zero of -1 with multiplicity 2, and a zero of 3 with multiplicity 2 — summing to 7, not 9 — and it contradicts the figure's own alt text, which says 'degree 6'. Three different degrees now appear in one exercise. The PDF-era 'degree 7' is the reading consistent with the solution, with the drawn curve, and with the multiplicity arithmetic the exercise is teaching, so the local page retains it and carries a visible source note. Logged upstream in docs/openstax-errata.md. Do not apply the pinned commit's '9' in a later audit without upstream also fixing the solution."
+    }
+  ],
+  "sourceDefectDecisions": [
+    {
+      "localPath": "content/math/intermediate-algebra/02-solving-linear-equations/06-solve-compound-inequalities.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81367",
+      "sourceElementIds": [
+        "fs-id1167835322185"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 41,
+      "rationale": "The module's tiered-water-rate Try It prints the Conservation Usage bill ceiling as $52.12 and an Answer Key of 5-20 hcf. The two disagree: (52.12-24.72)/1.32 = 20.7575..., while the bill at exactly 20 hcf is 24.72+1.32(20) = 51.12. The lower bound is exact either way, (31.32-24.72)/1.32 = 5. This page prints $51.12 so the printed answer follows from the printed question; correcting the answer to 5-20.76 hcf would also be consistent but reads oddly against the parallel items. The parallel Normal Usage example in the same module is exact as printed ((57.06-24.72)/1.54 = 21 and (171.02-24.72)/1.54 = 95) and is transcribed unchanged. A visible Source note sits beside the exercise and the attribution footer discloses the correction."
+    },
+    {
+      "localPath": "content/math/intermediate-algebra/knowledge-check-07-12.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81420",
+      "sourceElementIds": [
+        "exercise 341"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 16,
+      "rationale": "The module's IRA annuity exercise introduces Dave and then asks about \"Adam's\" account, naming a person it never defines. Only the name is defective: 450*((1+0.005)^564 - 1)/0.005 = 1409344.1866, matching the printed $1,409,344.19. This page writes \"Dave's\" throughout. A visible Source note sits beside the exercise and the attribution footer discloses the correction. localPath is a knowledge-check composite and is deliberately absent from source-map.json."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/knowledge-check-06-10.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82553",
+      "sourceElementIds": [
+        "fs-id1169595303723"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 42,
+      "rationale": "The module's 600-foot exercise drops the package to a lifeboat and then asks when it reached \"the hiker\", the recipient of its neighbour fs-id1169595265302 (the 900-foot variant, whose printed 7.5 seconds matches sqrt(900)/4). Only the recipient is defective: sqrt(600)/4 = 6.1237, matching the printed 6.1 seconds. This page writes \"the lifeboat\". A visible Source note sits beside the exercise and the attribution footer discloses the correction. localPath is a knowledge-check composite and is deliberately absent from source-map.json."
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49346",
+      "sourceElementIds": [
+        "fs-id1165137660222",
+        "fs-id1165134312227"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 43,
+      "rationale": "The module's Try It solution justifies its verdict with \"f(x) is a power function because it can be written as f(x) = 8x^4\", but the Try It's own function is f(x) = 2x^2 * 4x^3 = 8x^5. The two disagree at every x but 0 and 1; at x = 2 the product is 256 while 8x^4 is 128. The verdict is right and only the exponent is wrong, so this page writes 8x^5 and keeps the rest of the solution. A visible Source note sits beside the exercise and the attribution footer discloses the correction."
+    },
+    {
+      "localPath": "content/math/precalculus/04-exponential-and-logarithmic-functions/03-logarithmic-functions.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49363",
+      "sourceElementIds": [
+        "para-00002"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 35,
+      "rationale": "The module's common-logarithm notation sentence is wrong twice. It lists log_b(x) among the common-logarithm notations, though a base-b logarithm is not the common (base-10) logarithm the paragraph above defines; and it deprecates lg(x) for being unspecified, though ISO 80000-2 fixes lg at base 10 and it is bare log(x) that is ambiguous - which is exactly what the module's own preceding paragraph explains (log means log_2 in computer science and log_10 in mathematics). The first half was corrected during the chapter-4 authoring pass; the second followed on 2026-08-17, because after the first correction the sentence introduced log(x) as the common logarithm and then deprecated lg(x) for being unspecified, a contradiction sharper than the source's. This page writes \"log(x) or lg(x) as the common logarithm\" and \"Writing log(x) without specifying a base\". A visible Source note sits beside the paragraph and the attribution footer discloses the correction."
+    },
+    {
+      "localPath": "content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49372",
+      "sourceElementIds": [
+        "fs-id1165134258657",
+        "fs-id1165135264623"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 44,
+      "rationale": "The module's reference-angle definition names the reference angle and the angle it is measured from with the same symbol t, so it reads \"the reference angle of t is t\" - false for every angle outside quadrant I, and contradicted both by the paragraph's own bound of 0 to 90 degrees and by its figure Figure_05_02_020, which draws the two as distinct rays. The same book one section earlier (m49371, fs-id1165135191896 and the Coterminal and Reference Angles note fs-id1165135246672) defines the term as t-prime in both places it states it, and this sentence opens \"Recall that\", so it is recalling that definition with the prime dropped. The primeless form recurs in the module's Key Concepts bullet and in the Verbal exercise solution fs-id1165135264623. This page writes t-prime in the running prose and in the Key concepts bullet, matching its own recreated reference-angle panels, which are labelled t-prime. A visible Source note sits beside the paragraph and the attribution footer discloses the correction."
+    },
+    {
+      "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/02-sum-and-difference-identities.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49395",
+      "sourceElementIds": [
+        "fs-id2260064"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 51,
+      "rationale": "Example 10 asks to show tan(theta) = (m2-m1)/(1+m1m2) for the acute angle between two lines, but its own worked solution sets theta = theta1 - theta2 and derives (m1-m2)/(1+m1m2) - the negative of the stated goal - and its figure draws theta1 > theta2, matching the derivation. Confirmed in the raw CNXML and the printed PDF (folio 697 / PDF page 707). The local page states the goal the solution actually proves ((m1-m2)/(1+m1m2)), keeps the source's derivation verbatim, places a visible Source note beside the statement, and discloses the correction in the attribution footer. No graded item depends on the sign."
+    },
+    {
+      "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/03-double-angle-half-angle-and-reduction-formulas.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49396",
+      "sourceElementIds": [
+        "ti_07_03_01"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 52,
+      "rationale": "The Try It prints 'with theta in quadrant I' inside a problem whose given (sin alpha = 5/8), ask (cos(2 alpha)), and printed solution (7/32) are all stated in alpha; no theta exists elsewhere in the item. Confirmed in the raw CNXML and the printed PDF (folio 693 / PDF page 703), with the arithmetic independently reproduced (1 - 2*(5/8)^2 = 7/32). The local page states alpha throughout, with a visible Source note beside the item."
+    },
+    {
+      "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/06-modeling-with-trigonometric-functions.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49399",
+      "sourceElementIds": [
+        "ti_07_06_04"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 53,
+      "rationale": "The Try It's printed key (initial displacement 6, damping constant -6) contradicts its own equation f(t)=5e^{-6t}cos(4t): under the module's model f(t)=a e^{-ct} cos(omega t), a=5 (6 appears nowhere in the equation) and the module's own sign convention keys the damping constant positive (its spring example answers ln(2)/3). Frequency 2/pi is correct as printed. Confirmed in raw CNXML and PDF. A graded answer that would mark a correct learner wrong, so the local page keys 5, 6, 2/pi, names the model explicitly in the question, and discloses the correction in the footer."
+    },
+    {
+      "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/07-solving-systems-with-inverses.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49435",
+      "sourceElementIds": [
+        "fs-id1165133388596"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 58,
+      "rationale": "The worked example row-reduces A=[[3,6],[1,2]] augmented with the identity, but its printed \"switch row 1 and row 2\" result [[1,3],[3,2]] is not the swap of A (and is not even singular, det -7), and the following printed step follows from neither reading by the stated operation. The printed intermediates would teach the row operations wrong, so the local page ships the correct two-step reduction ([[1,2],[3,6]|[0,1],[1,0]] then [[1,2],[0,0]|[0,1],[1,-3]]) with a visible Source note; the conclusion (det A = 0, no inverse) is the source's own and is preserved."
+    },
+    {
+      "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/08-solving-systems-with-cramers-rule.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49436",
+      "sourceElementIds": [
+        "Figure_09_08_005"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 59,
+      "rationale": "The source figure labels its green plane 3x+y+2z=0, the sign-flipped spelling of the equation Example 6 itself prints as 3x+y-2z=0 (PDF art at 300dpi and CNXML alt agree with each other and disagree with the example). The local recreation of the figure labels the plane 3x+y-2z=0 to match the example, with a visible Source note beside the figure and the correction disclosed in the footer; the example algebra is unaffected either way."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/02-proteobacteria.md",
+      "bundle": "microbiology",
+      "moduleId": "m58796",
+      "sourceElementIds": [
+        "fs-id1172100990327",
+        "fs-id1172098310018"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 367,
+      "rationale": "Three source claims fail against the module or independent taxonomy evidence. The Deltaproteobacteria table calls Desulfovibrio 'formerly Desufuromonas'; LPSN identifies Desufuromonas as a misspelling of the separate valid genus Desulfuromonas, not a former name of Desulfovibrio, so the local table omits the parenthetical and places a visible Source note below it. The section summary says nitrogen-fixing Alphaproteobacteria convert atmospheric nitrogen to nitrites, while this book's §§4.1 and 8.7 identify ammonia as the product of nitrogen fixation and reserve nitrite/nitrate production for nitrification; the local summary says ammonia and carries a visible Source note. The Glossary says all Alphaproteobacteria are oligotrophs, while this module's defining paragraph says only some species are; the local definition follows the module and carries a visible Source note. All three corrections are disclosed in the attribution footer."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/03-nonproteobacteria-gram-negative-bacteria-and-phototrophic-bacteria.md",
+      "bundle": "microbiology",
+      "moduleId": "m58797",
+      "sourceElementIds": [
+        "fs-id1172100896627",
+        "fs-id1172100940484"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 368,
+      "rationale": "The cyanobacteria discussion contains two substantive scientific errors. It says nitrogen fixation converts molecular nitrogen to nitrites and nitrates, while this book's §§4.1 and 8.7 identify ammonia as the direct product and nitrification as the later oxidation to nitrite and nitrate. It also calls cyanophycin a secondary photosynthetic pigment alongside phycocyanin; this book's §8.6 lists phycocyanin but not cyanophycin among photosynthetic pigments, and Watzer and Forchhammer (Applied and Environmental Microbiology 84, e01298-18; doi:10.1128/AEM.01298-18) experimentally describe cyanophycin as a carbon/nitrogen storage polymer. The local page corrects both claims, carries a visible Source note beside each, and discloses both in its attribution footer."
+    }
+  ]
 }
