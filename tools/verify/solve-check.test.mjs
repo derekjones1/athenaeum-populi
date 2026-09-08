@@ -4,7 +4,9 @@ import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { compareAnswers, emitPackets, gradeAnswer, isResidualFillin, maskedContext, packetItem } from './solve-check.mjs';
+import {
+  compareAnswers, emitPackets, gradeAnswer, isResidualFillin, maskedContext, optionsOf, packetItem,
+} from './solve-check.mjs';
 import { extractExercises } from './answer-ledger.mjs';
 
 const TOOL = new URL('./solve-check.mjs', import.meta.url).pathname;
@@ -257,4 +259,75 @@ test('a sortbins answer is a full label→bin mapping graded against the config'
   assert.equal(gradeAnswer(exercise, { ...right, 'Telomerase present': 'Ribosomes' }).status, 'unrecognized', 'an unknown bin is a solver slip');
   const { 'PCNA sliding clamp': dropped, ...partial } = right;
   assert.equal(gradeAnswer(exercise, partial).status, 'unrecognized', 'a missing item is a solver slip');
+});
+
+// ---- context masking at page level -------------------------------------------
+// The old `maskedContext` cut the window first and masked second, with a regex
+// that needed both selfcheck tags in view and knew nothing about a sortbins'
+// `"bin"` assignments, a graphplot's answer config, or `answerIndex`.
+const CONTEXT_PAGE = `---
+title: Context
+---
+
+{{< sortbins question="Sort each cell type." hint="Think membranes." >}}
+{"bins":["Prokaryote","Eukaryote"],"items":[{"label":"no nucleus","bin":0},{"label":"nucleus","bin":1}]}
+{{< /sortbins >}}
+
+{{< selfcheck question="Explain the difference." >}}
+Model answer line one.
+Model answer line two.
+Model answer line three.
+{{< /selfcheck >}}
+
+{{< graphplot question="Plot the line." answerDisplay="y = 2x - 1" >}}
+{"answer":{"slope":2,"intercept":-1,"plotPoints":2},"grid":{"xMin":-5,"xMax":5}}
+{{< /graphplot >}}
+
+{{< multiplechoice question="Which graph shows the line?" mode="graph" answerIndex="1" hint="Check the slope." >}}
+{"ariaLabel":"A line falling from left to right.","lines":[{"slope":-1,"intercept":2}]}
+===OPT===
+{"ariaLabel":"A line rising from left to right.","lines":[{"slope":1,"intercept":2}]}
+{{< /multiplechoice >}}
+
+{{< fillin question="Using the graph above, find the slope." answer="1" >}}
+`;
+
+test('a narrow window that opens inside a selfcheck carries no model answer', () => {
+  const lines = CONTEXT_PAGE.split('\n');
+  const fillinLine = lines.findIndex((l) => l.startsWith('{{< fillin')) + 1;
+  const selfcheckClose = lines.findIndex((l) => l.startsWith('{{< /selfcheck')) + 1;
+  // A window whose first line is INSIDE the selfcheck body: the old code saw
+  // no opening tag and passed "Model answer line three." straight through.
+  const window = fillinLine - selfcheckClose + 1;
+  const narrow = maskedContext(CONTEXT_PAGE, fillinLine, window);
+  assert.doesNotMatch(narrow, /Model answer/);
+  assert.match(narrow, /\{\{< \/selfcheck >\}\}/);
+});
+
+test('a sortbins, a graphplot, and a graph-mode multiple choice in the context window carry no key', () => {
+  const context = maskedContext(CONTEXT_PAGE, CONTEXT_PAGE.split('\n').length, 80);
+  assert.doesNotMatch(context, /"bin"\s*:/, 'sortbins assignments ARE the key');
+  assert.match(context, /assignments removed/);
+  assert.match(context, /Sort each cell type/);
+  assert.doesNotMatch(context, /"answer"\s*:|plotPoints|y = 2x - 1/, 'the graphplot answer config and its display are the key');
+  assert.match(context, /answer config removed/);
+  assert.match(context, /Plot the line/);
+  assert.doesNotMatch(context, /answerIndex="\d/);
+  assert.match(context, /answerIndex="…"/);
+  assert.doesNotMatch(context, /Think membranes|Check the slope/);
+  assert.match(context, /A line rising from left to right/, 'the option specs themselves are not the key');
+});
+
+test('a graph-mode multiple choice is keyed by answerIndex and graded by option number or option text', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'solve-'));
+  mkdirSync(join(dir, 'content'), { recursive: true });
+  writeFileSync(join(dir, 'content/g.md'), CONTEXT_PAGE);
+  const mc = exercisesIn(dir).find((e) => e.kind === 'multiplechoice');
+  assert.equal(mc.params.answer, undefined, 'graph mode keys by answerIndex, not answer');
+  assert.deepEqual(optionsOf(mc).length, 2, 'options split on ===OPT===, not on line breaks');
+  assert.equal(packetItem(mc).options.length, 2);
+  assert.equal(gradeAnswer(mc, '1').status, 'agrees');
+  assert.equal(gradeAnswer(mc, '0').status, 'disagrees');
+  assert.equal(gradeAnswer(mc, optionsOf(mc)[1]).status, 'agrees');
+  assert.equal(gradeAnswer(mc, '7').status, 'unrecognized');
 });

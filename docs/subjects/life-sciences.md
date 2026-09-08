@@ -76,13 +76,20 @@ a chapter moves from the cover's "Planned contents" list to its place in
 `## Chapters` at the same moment. The book is `authoringStatus:
 scaffolded` in the lock until its first chapter is complete, `in-progress`
 after that, and `complete` when its last section lands. Flipping that flag
-is a close-out step of its own: the lock, the cover's `authoring_status`
-(which `npm run source:verify`, under `npm test`, requires to equal the
-lock's word for word, and to be absent once the lock says `complete`),
-`tools/source/openstax-source.test.mjs`, and the prose in `AGENTS.md`,
-`README.md`, and `docs/source/openstax-source-workflow.md` all name the
-status and the mapped-section count, and a chapter close-out pins the
-mapped-section count in the same six places.
+is a close-out step of its own, and the *status* word is pinned in six
+places: the lock's `authoringStatus`, the cover's `authoring_status`
+frontmatter (which `npm run source:verify` requires to equal the lock's
+word for word, and to be absent once the lock says `complete`), the
+assertions in `tools/source/openstax-source.test.mjs`, and the status
+prose in `AGENTS.md`, `README.md`, and
+`docs/source/openstax-source-workflow.md`. `npm run source:verify` is not
+part of `npm test`; it runs at close-out and in CI (CI fetches the pinned
+sources before the pipeline and runs it with `npm run source:fetch`
+first). The mapped-section *count* is stated once, in
+`docs/source/openstax-source-workflow.md`
+(`tools/build/documentation.test.mjs` checks it against
+`data/openstax/source-map.json`); every other doc — this one included —
+says "the committed section map" rather than restating the number.
 
 ## The section page, in order
 

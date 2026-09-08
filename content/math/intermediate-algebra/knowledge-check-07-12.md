@@ -254,7 +254,7 @@ $(-2,\infty)$
 {{< /graphplot >}}
 
 {{< multiplechoice
-  question="Use the graph to determine the range."
+  question="Find the range of the function."
   answer="$[0,\infty)$"
 >}}
 $[-2,\infty)$

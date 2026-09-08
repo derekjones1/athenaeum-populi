@@ -8,9 +8,13 @@
 // PNG per component per theme, named by component kind and index.
 //
 // Usage:
-//   npm run build            (or have public/ current)
-//   python3 -m http.server 8099 --directory public &
+//   npm run build && npm run serve:public &   (port 1315; set PORT or
+//                                               SHOT_BASE to override)
 //   node tools/build/screenshot-components.mjs </built/page/route/> [outDir] [--only kind,kind]
+//
+// serve:public rather than `npm run serve`: the Hugo dev server injects a
+// livereload script and serves unfingerprinted CSS, so a screenshot of it
+// describes the dev server rather than the site that ships.
 //
 // Kinds and the state each is captured in:
 //   fill-in           a wrong answer graded ("Not quite" feedback shown)
@@ -163,7 +167,7 @@ async function drive(el, action, page) {
 
 async function main() {
   const options = parseArgs(process.argv.slice(2))
-  const base = process.env.SHOT_BASE ?? 'http://127.0.0.1:8099'
+  const base = process.env.SHOT_BASE ?? `http://127.0.0.1:${process.env.PORT || 1315}`
   mkdirSync(options.outDir, { recursive: true })
   const kinds = options.only ?? Object.keys(KINDS)
 

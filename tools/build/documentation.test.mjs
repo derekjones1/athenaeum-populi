@@ -63,6 +63,10 @@ const GENERATED_OR_LOCAL_DOCS = new Set([
   'accounts-plan.md',
 ]);
 const AGENT_DOCS = ['AGENTS.md', 'README.md', 'CLAUDE.md'];
+// walkMarkdown(docs/) recurses, so docs/history/*.md — the dated narrative
+// cut out of the operative playbooks — is covered here automatically, the
+// same way docs/subjects/ and docs/source/ already are; no separate listing
+// is needed for a new subdirectory.
 const PROSE_DOCS = [
   ...AGENT_DOCS,
   ...walkMarkdown(fileURLToPath(new URL('docs/', repositoryRoot)))
@@ -100,7 +104,10 @@ test('the authoring playbook documents the authoring rules', () => {
   assert.match(authoring, /plain Markdown with Hugo shortcodes/);
   assert.match(authoring, /Run `npm test`/);
   assert.match(authoring, /chapters and Knowledge Checks share one sequential weight order/);
-  assert.match(authoring, /before July 22, 2026[\s\S]*grandfathered/);
+  // The pre-July-22-2026 grandfathering record moved to
+  // docs/history/authoring-playbook.md when the playbook's archaeology was
+  // split out; the claim still has to be true somewhere.
+  assert.match(read('docs/history/authoring-playbook.md'), /before July 22, 2026[\s\S]*grandfathered/);
   assert.match(authoring, /section-final `## Practice` block/);
   // The Practice block sizes itself from the objectives list rather than a flat
   // count, so the playbook must document both halves of the rule and the
@@ -350,6 +357,28 @@ test('package.json keeps the scripts the test gate composes', () => {
   assert.match(packageJson.scripts.test, /verify:content/);
   assert.match(packageJson.scripts.test, /lint/);
   assert.equal(packageJson.scripts['source:verify'], 'node tools/source/openstax-source.mjs verify-map');
+});
+
+test('the screenshot tools default to the port serve:public serves on', () => {
+  // Three defaults used to disagree — 8099 in the screenshot tools' own
+  // `SHOT_BASE` fallback, 1315 in serve-public.mjs, 1313 for the Hugo dev
+  // server — and the playbook sent authors to run `python3 -m http.server
+  // 8099`, a fourth server nothing else in the repo ever starts. The
+  // screenshot tools now default to whatever port serve-public.mjs actually
+  // serves on, derived here rather than restated, so the two can never
+  // drift apart again.
+  const servePublicPort = capture(
+    'tools/build/serve-public.mjs',
+    /process\.env\.PORT \|\| (\d+)/,
+    'the default port serve-public.mjs listens on',
+  );
+  for (const path of ['tools/build/screenshot-page.mjs', 'tools/build/screenshot-components.mjs']) {
+    assert.match(
+      read(path),
+      new RegExp(`process\\.env\\.PORT \\|\\| ${servePublicPort}\\b`),
+      `${path} must default its base URL's port to the one serve-public.mjs serves on (${servePublicPort})`,
+    );
+  }
 });
 
 // ---- answerForm token parity, in both directions ---------------------------

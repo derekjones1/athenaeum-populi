@@ -1348,6 +1348,45 @@ test('a sort-bins grades the mapping with partial credit and returns misplaced i
   expect(await card.locator('.ap-sortbins-item').first().getAttribute('aria-disabled')).toBe('true');
 });
 
+// Pins the _moveToBin wrapper-reuse fix: the test above only ever moves
+// tray → bin, where a fresh <li> is correct. Moving an already-placed item
+// bin → bin (or back into its original bin) used to always create a new
+// <li> and append the button to it, orphaning an empty <li> in the bin the
+// item came from — a stray flex gap and a phantom listitem in the a11y
+// tree. This drives one item through bin 0 → bin 1 → bin 0 and asserts
+// exactly one <li> exists afterward, holding the button, in bin 0.
+test('moving an already-placed sort-bins item between bins leaves no empty list item behind', async ({ page }) => {
+  await gotoBuiltPage(page, '/life-health-sciences/biology/10-cell-reproduction/05-prokaryotic-cell-division/');
+  const card = page.locator('sort-bins');
+  await expect(card).toHaveCount(1);
+  await waitForUpgrade(card, (el) => (
+    Boolean(customElements.get('sort-bins')) && !el.querySelector('.ap-sortbins-check')?.disabled
+  ));
+  await card.scrollIntoViewIfNeeded();
+
+  const places = card.locator('.ap-sortbins-place');
+
+  const first = card.locator('.ap-sortbins-tray .ap-sortbins-item').first();
+  const label = await first.textContent();
+  await first.click();
+  await places.nth(0).click();
+  await expect(card.locator('.ap-sortbins-feedback')).toHaveText(/1 of 7 items placed/);
+
+  const item = card.locator('.ap-sortbins-item', { hasText: label });
+  await item.click();
+  await places.nth(1).click();
+  await expect(card.locator('.ap-sortbins-feedback')).toHaveText(/1 of 7 items placed/);
+
+  await item.click();
+  await places.nth(0).click();
+  await expect(card.locator('.ap-sortbins-feedback')).toHaveText(/1 of 7 items placed/);
+
+  await expect(card.locator('.ap-sortbins-bin-items li')).toHaveCount(1);
+  await expect(card.locator('.ap-sortbins-bin-items li:not(:has(.ap-sortbins-item))')).toHaveCount(0);
+  await expect(card.locator('.ap-sortbins-bin-items').nth(0).locator('li')).toHaveCount(1);
+  await expect(card.locator('.ap-sortbins-bin-items').nth(1).locator('li')).toHaveCount(0);
+});
+
 test('the "On this page" rail is a right-hand drawer below xl, opened from the navbar, and the inline rail from xl up', async ({ page }) => {
   // layouts/_partials/toc.html keeps ONE rail element at every width. From
   // xl (80rem) up it is the theme's inline column; below that, where the

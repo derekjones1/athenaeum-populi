@@ -275,7 +275,9 @@ keys hidden.
    chapter's scratch block and answer them BEFORE reading the block with
    its keys (the Unit 8 run did; the parent read for tells and giveaways
    comes after), so the solve is blind in fact and not only in tooling; a
-   parent fix re-hashes the item, so re-emit and re-answer that one. Record each verdict and its
+   parent fix re-hashes the item, and so does editing the figure or table the
+   item names, so re-emit and re-answer that one — its solve packet carries
+   the named block as `dependency` regardless of `--context`. Record each verdict and its
    `solved` block in the **answer ledger** (AGENTS.md §The answer ledger,
    `npm run ledger:merge` last, after every other edit — hashes depend on
    the final text): every item needs a record, and `npm test` fails at

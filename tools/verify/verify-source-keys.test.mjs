@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
+import { spawnSync } from 'node:child_process';
 import {
   DISCLOSED_DEVIATIONS, MODEL_COVERAGE_FLOOR,
   answerValues, checkCorpus, compact, judgeFillin, judgeMultipleChoice, judgeSelfcheck, judgeTextin,
@@ -13,6 +14,7 @@ import { parseXml } from '../lib/openstax-source.mjs';
 import { BASELINE_SOURCES } from './baselines.mjs';
 import { bundleSourceDirectory, loadSourceLock } from '../lib/openstax-source.mjs';
 
+const TOOL = new URL('./verify-source-keys.mjs', import.meta.url).pathname;
 const repositoryRoot = new URL('../../', import.meta.url).pathname;
 const lock = loadSourceLock(repositoryRoot);
 const mappedSections = JSON.parse(readFileSync(path.join(repositoryRoot, 'data/openstax/source-map.json'), 'utf8')).sections;
@@ -361,8 +363,9 @@ test('every disclosed deviation cites an erratum that exists in the local errata
 // that has run `npm run source:fetch`; in CI it is skipped by name, exactly as
 // the real-checkout test in tools/source/openstax-source.test.mjs is. The
 // fixture tests below prove the skip path itself.
+// Under strict mode an absent checkout fails the test instead of skipping it.
 test('the corpus carries no undisclosed departure from a source key', {
-  skip: absentBundles.length > 0
+  skip: absentBundles.length > 0 && !process.env.ATHENAEUM_REQUIRE_SOURCES
     && `run npm run source:fetch first (not checked out: ${absentBundles.join(', ')})`,
 }, () => {
   const { failures, counts, confirmed, skipped, sectionsSkipped } = checkCorpus(repositoryRoot);
@@ -435,6 +438,28 @@ test('a checkout that is present is read in full: a module missing from it is st
     assert.equal(result.sectionsSkipped, 0, 'a present checkout skips nothing');
     assert.ok(result.failures.some((failure) => failure.page === section.localPath
       && failure.detail.includes(`pinned module ${section.moduleId} is not checked out`)));
+  });
+});
+
+test('ATHENAEUM_REQUIRE_SOURCES turns an absent-bundle skip into a CLI failure that names the variable', () => {
+  withBareRepository(() => {}, (root) => {
+    const strict = spawnSync(process.execPath, [TOOL, 'content'], {
+      cwd: root,
+      env: { ...process.env, ATHENAEUM_REQUIRE_SOURCES: '1' },
+      encoding: 'utf8',
+    });
+    assert.equal(strict.status, 1, 'strict mode fails instead of exiting 0 on a partial read');
+    assert.match(strict.stderr, /ATHENAEUM_REQUIRE_SOURCES/);
+    assert.match(strict.stderr, /source-key cross-check/);
+
+    const lenientEnv = { ...process.env };
+    delete lenientEnv.ATHENAEUM_REQUIRE_SOURCES;
+    const lenient = spawnSync(process.execPath, [TOOL, 'content'], {
+      cwd: root,
+      env: lenientEnv,
+      encoding: 'utf8',
+    });
+    assert.equal(lenient.status, 0, 'without the variable the same fixture still exits 0 partial');
   });
 });
 

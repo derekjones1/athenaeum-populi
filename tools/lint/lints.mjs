@@ -110,6 +110,9 @@ import {
 } from '../lib/content.mjs';
 import { decodeHtmlEntities, hasFileBackedCssImage, htmlAttribute, openTagRe } from '../lib/html.mjs';
 import { duplicatesOf, practiceItems, sameItem, isKnowledgeCheckPage } from '../lib/practice-index.mjs';
+// The figure/table binding the answer ledger builds identity from: a stem
+// that names "the graph above" must have a graph above it.
+import { dependencyOf, figureLikeBlocks, referencesContext } from '../lib/exercise-context.mjs';
 // The one objectives-callout parser, shared with the structure validator and
 // the source audit so the three tools never diagnose the callout differently.
 import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
@@ -2303,6 +2306,26 @@ export function lintHugo(src, filename = '', options = {}) {
       }
     } catch (error) {
       err(index, `graphplot: ${error.message}`);
+    }
+  }
+
+  // ---- context references must resolve ------------------------------------
+  // "The graph above", "according to the table", "shown below": the answer
+  // ledger binds such an exercise to the nearest apfigure, mediafigure,
+  // inline SVG, Markdown table, or image in that direction, so that editing
+  // the figure re-hashes the exercise. A reference that resolves to nothing
+  // is a stem pointing at something the page does not have — a reader
+  // cannot re-derive the answer, and the ledger cannot bind it. A graphplot
+  // is never the target: it is a key the learner draws, not a figure.
+  {
+    const exercisesOnPage = [...fillins, ...multiplechoices, ...graphplots, ...textins, ...selfchecks, ...sortbins]
+      .map((sc, i) => ({ ...sc, kind: ['fillin', 'multiplechoice', 'graphplot', 'textin', 'selfcheck', 'sortbins'][[fillins, multiplechoices, graphplots, textins, selfchecks, sortbins].findIndex((list) => list.includes(sc))] }));
+    const blocks = figureLikeBlocks(mediaSrc, { exerciseSpans: exercisesOnPage });
+    for (const sc of exercisesOnPage) {
+      const reference = referencesContext(sc);
+      if (reference && !dependencyOf(sc, blocks, reference)) {
+        err(sc.index, `${sc.kind} ("${(sc.params.question || '').slice(0, 50)}"): "${reference.phrase}" names a figure, graph, or table, but no apfigure, mediafigure, inline <svg>, Markdown table, or image sits ${reference.direction} it on the page — a reader (and the answer ledger) cannot tell what it depends on; state what the item needs in the stem, or add the figure`);
+      }
     }
   }
 

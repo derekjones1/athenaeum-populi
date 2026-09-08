@@ -54,9 +54,14 @@
  *            reading (the `--residual-fillins` population) and exits
  *            non-zero when there is one — the gate that keeps a new math
  *            fill-in from shipping on the author's arithmetic alone. It
- *            needs the pinned CNXML: with a bundle absent (CI, a fresh
- *            clone) it says so and applies no rule, exactly as
- *            verify-source-keys does.
+ *            needs the pinned CNXML: with a bundle absent (a fresh clone)
+ *            it says so and applies no rule, exactly as verify-source-keys
+ *            does — unless ATHENAEUM_REQUIRE_SOURCES is set (CI, which
+ *            fetches the checkouts first), when an absent bundle fails.
+ *
+ * Every command reads the answer ledger through answer-ledger.mjs, which
+ * refuses a malformed one (a verdict outside the enum, a bare `solved: {}`),
+ * so `compare` and `residual` exit 1 on a ledger `check` would refuse.
  *
  * Usage:
  *   node tools/verify/solve-check.mjs emit <content-root-or-page> [--out packets-dir] [--residual-fillins] [--context N] [--only hashes.json]
@@ -67,7 +72,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, join, resolve } from 'node:path';
 import { extractExercises, readLedger } from './answer-ledger.mjs';
-import { maskCode } from '../lib/content.mjs';
+import { maskKeys } from '../lib/content.mjs';
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { normalizeText } from '../lib/openstax-source.mjs';
 import { checkSortbins, parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
@@ -89,7 +94,7 @@ export function packetItem(exercise) {
     question: exercise.params.question || '',
   };
   if (exercise.kind === 'multiplechoice') {
-    item.options = exercise.inner.split('\n').map((line) => line.trim()).filter(Boolean);
+    item.options = optionsOf(exercise);
   }
   if (exercise.kind === 'sortbins') {
     // The solver sees the bins and the item labels — never the assignments,
@@ -104,6 +109,13 @@ export function packetItem(exercise) {
     // ("fraction", "solved:x") tell the solver how to write what they find.
     if (exercise.params.answerMode) item.answerMode = exercise.params.answerMode;
     if (exercise.params.answerForm) item.answerForm = exercise.params.answerForm;
+  }
+  // "The graph above", "the table below": the block the exercise is bound
+  // to travels with it whatever --context says — a "below" reference was
+  // out of reach of a backward-looking window entirely. Key-masked, which
+  // is a no-op for a figure and the invariant made local.
+  if (exercise.dependency) {
+    item.dependency = { kind: exercise.dependency.kind, line: exercise.dependency.line, text: maskKeys(exercise.dependency.raw) };
   }
   return item;
 }
@@ -127,17 +139,35 @@ export function isResidualFillin(exercise, { sourceStatus, ledger }) {
 
 /**
  * Page text above an exercise with every key masked, for a question that
- * reads "the table above" or "that same line": the `answer`, `accept`,
- * `hint`, and `answerDisplay` params of every shortcode in the window are
- * blanked, a `selfcheck`'s model answer is dropped, and code fences are
- * masked. What is left is the page's prose, figures, tables, and earlier
+ * reads "the table above" or "that same line". The WHOLE page goes through
+ * `maskKeys` (every key param blanked, every selfcheck / graphplot /
+ * sortbins body replaced) before the window is cut: the old order — cut,
+ * then mask with a regex that needed both selfcheck tags in view — handed a
+ * model answer through whenever the window opened inside one, and it never
+ * masked a sortbins' `"bin"` assignments or a graphplot's answer config at
+ * all. What is left is the page's prose, figures, tables, and earlier
  * QUESTIONS — never an answer.
  */
 export function maskedContext(pageSource, line, lines) {
-  const window = maskCode(pageSource).split('\n').slice(Math.max(0, line - 1 - lines), line - 1).join('\n');
-  return window
-    .replace(/\{\{<\s*selfcheck\b[\s\S]*?\{\{<\s*\/selfcheck\s*>\}\}/g, '{{< selfcheck (model answer removed) >}}')
-    .replace(/\b(answer|accept|hint|answerDisplay)="(?:[^"\\]|\\.)*"/g, '$1="…"');
+  return maskKeys(pageSource).split('\n').slice(Math.max(0, line - 1 - lines), line - 1).join('\n');
+}
+
+/**
+ * A multiple choice's options. In `mode="graph"` each option is a figure
+ * spec and the separator is `===OPT===`, not a line break — splitting on
+ * newlines there yields one "option" per spec line and a key that matches
+ * none of them.
+ */
+export function optionsOf(exercise) {
+  const separator = exercise.params.mode === 'graph' ? '===OPT===' : '\n';
+  return exercise.inner.split(separator).map((line) => line.trim()).filter(Boolean);
+}
+
+/** The keyed option's text: `answer` normally, the option at `answerIndex`
+ * in graph mode (where `answer` is absent). */
+export function keyedOption(exercise) {
+  if (exercise.params.mode === 'graph') return optionsOf(exercise)[Number(exercise.params.answerIndex)] ?? '';
+  return exercise.params.answer || '';
 }
 
 export function emitPackets(root, { residualFillins = null, context = 0, only = null } = {}) {
@@ -169,11 +199,16 @@ export function emitPackets(root, { residualFillins = null, context = 0, only = 
  */
 export function gradeAnswer(exercise, written) {
   if (exercise.kind === 'multiplechoice') {
-    const options = exercise.inner.split('\n').map((line) => line.trim()).filter(Boolean);
-    const chosen = options.find((option) => compact(option) === compact(written));
+    const options = optionsOf(exercise);
+    // A graph-mode option is a figure spec nobody should retype: a bare
+    // 0-based option number names it.
+    const byNumber = exercise.params.mode === 'graph' && /^\d+$/.test(String(written).trim())
+      ? options[Number(String(written).trim())] : undefined;
+    const chosen = byNumber ?? options.find((option) => compact(option) === compact(written));
     if (!chosen) return { status: 'unrecognized', detail: `"${written}" is not one of the options` };
-    if (compact(chosen) === compact(exercise.params.answer || '')) return { status: 'agrees', detail: chosen };
-    return { status: 'disagrees', detail: `solver: "${chosen}"; key: "${exercise.params.answer}"` };
+    const key = keyedOption(exercise);
+    if (compact(chosen) === compact(key)) return { status: 'agrees', detail: chosen };
+    return { status: 'disagrees', detail: `solver: "${chosen}"; key: "${key}"` };
   }
   if (exercise.kind === 'sortbins') {
     let cfg;
@@ -386,6 +421,13 @@ if (process.argv[1] && resolve(process.argv[1]) === new URL(import.meta.url).pat
     }
     if (skipped) {
       console.log(`⊘ fill-in third-reading gate not applied: a source bundle is not checked out, so ${residual.length} fill-in(s) under ${root} could not be judged against a source solution`);
+      // Strict mode (CI, which fetches the pinned checkouts first): an
+      // absent bundle is a failure, not a skip — the same switch
+      // verify-source-keys reads.
+      if (process.env.ATHENAEUM_REQUIRE_SOURCES) {
+        console.error('✖ fill-in third reading: a source bundle is not checked out and ATHENAEUM_REQUIRE_SOURCES is set — run npm run source:fetch');
+        process.exit(1);
+      }
       process.exit(0);
     }
     for (const exercise of residual) console.error(`✗ ${exercise.path}:${exercise.line} fillin has no third reading: ${(exercise.params.question || '').slice(0, 80)}`);

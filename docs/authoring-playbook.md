@@ -117,11 +117,11 @@ Before writing:
    The parent reconciles every section, logs the defects, and runs the
    book-wide gates.
 
-Existing sections authored before July 22, 2026 whose attribution footer
-explicitly discloses light condensation are grandfathered. Do not rewrite them
-solely to remove that disclosed condensation. New sections and substantive
-revisions follow the source-fidelity rule above; never use the grandfathering
-exception to justify new omissions.
+The pre-July-22-2026 grandfathering record — which existing sections it
+covers and why — moved to `docs/history/authoring-playbook.md`. New
+sections and substantive revisions follow the source-fidelity rule above
+regardless; never use the grandfathering exception to justify new
+omissions.
 
 ## 1. Where the file goes
 
@@ -358,7 +358,8 @@ intercepts are what you have to vary. The lint validates every spec option exact
 (it must parse, carry the `ariaLabel`, and build through the real engine),
 and the figure layout gate covers option figures automatically. Every option
 is a spec: a prerendered `<svg>` option block fails both the lint and the
-build (the last twelve were converted in September 2026).
+build (the September 2026 conversion record is in
+`docs/history/authoring-playbook.md`).
 
 **Graph it yourself (GraphPlot):** config (answer + grid) is JSON in the body.
 
@@ -663,7 +664,9 @@ From the repository root:
    self-grading.
 3. Record those derivations in the **answer ledger** — authoring or editing an
    exercise is what creates the obligation, and `npm test` fails at
-   `verify:ledger` until the record exists.
+   `verify:ledger` until the record exists. Editing a figure or table an
+   exercise names is editing the exercise: its record is stranded and must
+   be re-read.
    `npm run ledger:list -- --unverified` prints every unrecorded exercise
    with its hash; write one or more result files in the shape AGENTS.md
    §The answer ledger documents, from the step-2 derivations — never from
@@ -721,6 +724,10 @@ From the repository root:
 7. Open every changed page with `npm run serve`. Confirm real components
    render and grade, prose/math spacing is visible, formulas appear once, and
    figures match the PDF. Also open a changed chapter landing page.
+   For screenshots, build and serve the shipped bytes instead —
+   `npm run build && npm run serve:public` (port 1315) — never the dev
+   server: it injects a livereload script and serves unfingerprinted CSS, so
+   a capture of it describes the dev server, not the site that ships.
    `node tools/build/screenshot-page.mjs <route>` captures light/dark full-page
    shots plus a high-zoom crop of every figure and fails on duplicate KaTeX
    or unlabelled SVGs — use the crops for the figure-vs-PDF comparison, and
@@ -737,27 +744,12 @@ From the repository root:
 ## 5. Working rules
 
 `npm run lint` reports **zero errors, and errors are all there is** — the
-lint has no warning level. The last warning-level rules (missing hints,
-multipart-looking questions, an empty worked Solution, all-same graph answer
-positions) were promoted to errors on August 10, 2026, when the corpus
-carried zero of each, and the warning channel was deleted with them. There is
-no non-blocking rule left in the repository and no category of
-known-defective content to grandfather.
+lint has no warning level. There is no non-blocking rule left in the
+repository and no category of known-defective content to grandfather.
 
-The Practice retrofit that used to live here is finished: every mapped
-section carries the block, the rule is an error, and the backlog count and
-the `--check-docs` tooling that maintained it are gone. A future book's
-sections each need theirs as they land — as an error on the page being
-written, not as a worklist.
-
-Everything else that used to live here has been fixed rather than documented:
-numerically coded categorical answers are `multiplechoice`, four-digit numbers
-are grouped, and figure curves come from analytic primitives. Two rules that
-were over-firing were narrowed at the same time — an incidental value collision
-is not a defect (the mode of a data set *is* one of the printed numbers), and
-`\phantom{0000}` long-division spacing is not a number. The trivially
-satisfiable fill-ins are closed class by class — the record is in
-`docs/subjects/math.md` §6.
+The archaeology of how this section got to zero — the warning-to-error
+promotions, the finished Practice retrofit, and the rules fixed rather than
+documented — moved to `docs/history/authoring-playbook.md`.
 
 The working rules that remain:
 

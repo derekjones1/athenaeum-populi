@@ -6,6 +6,7 @@
  *   node tools/verify/answer-ledger.mjs list  content [--kind fillin] [--shard i/n]
  *   node tools/verify/answer-ledger.mjs merge <resultsDir>
  *   node tools/verify/answer-ledger.mjs stats content
+ *   node tools/verify/answer-ledger.mjs rekey content   (one-off identity migration)
  *
  * WHY THIS EXISTS. `verify-answers.mjs` re-derives an answer only when it can
  * mechanically recognize what the prompt asks for; 79% of what it skips is
@@ -19,10 +20,15 @@
  * Reading a prompt is the thing a regex cannot do, so that pass is done by
  * reading rather than by parsing. This file makes the result DURABLE:
  *
- *   - identity is the sha256 of the exercise's own normalized source, so a
- *     verdict belongs to an exact question+answer pair and nothing else;
- *   - editing any semantic character of an exercise changes its hash, which
- *     drops it out of the ledger and fails the gate until it is re-read;
+ *   - identity is the sha256 of the exercise's own normalized source — plus,
+ *     when the stem, hint, or options name a figure, graph, or table on the
+ *     page ("the graph above", "according to the table"), the source of the
+ *     nearest such block in that direction (tools/lib/exercise-context.mjs);
+ *     a verdict that read the answer off a figure belongs to THAT figure,
+ *     and reversing its shading used to leave the verdict standing;
+ *   - editing any semantic character of an exercise, or of the block it
+ *     depends on, changes its hash, which drops it out of the ledger and
+ *     fails the gate until it is re-read;
  *   - whitespace runs collapse first, so reflowing a shortcode does not
  *     invalidate a sound verdict;
  *   - the key is the hash alone, so the same exercise appearing in two books
@@ -37,12 +43,20 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { relative, resolve } from 'node:path';
 import { parseCliArgs } from '../lib/cli.mjs';
-import { maskCode, shortcodes, walkMarkdown } from '../lib/content.mjs';
+import { maskCode, maskKeys, shortcodes, walkMarkdown } from '../lib/content.mjs';
+import { dependencyOf, figureLikeBlocks, referencesContext } from '../lib/exercise-context.mjs';
 import {
-  mergeResults, pruneLedger, readLedger as readLedgerAt, shardSlice,
+  LedgerFormatError, mergeResults, pruneLedger, readLedger as readLedgerAt, rekeyLedger, shardSlice,
 } from '../lib/ledger.mjs';
 
 export const LEDGER_PATH = 'data/verification/answer-ledger.json';
+
+/** What a reading pass may conclude about an exercise. Anything else in a
+ * record's `verdict` is a typo, and a typo is not a verification. */
+export const VERDICTS = new Set(['ok', 'defect', 'unverifiable']);
+export const HASH_RE = /^[0-9a-f]{16}$/;
+const RECORD_FIELDS = new Set(['hash', 'verdict', 'note', 'solved']);
+const SOLVED_FIELDS = new Set(['by', 'result', 'note']);
 
 /**
  * The shortcodes that carry a gradeable answer, plus the two non-graded
@@ -72,7 +86,13 @@ export function exerciseHash(rawShortcode) {
   return createHash('sha256').update(normalized).digest('hex').slice(0, 16);
 }
 
-/** Every answer-carrying exercise under `root`, in stable path order. */
+/**
+ * Every answer-carrying exercise under `root`, in stable path order. An
+ * exercise that names page context carries `reference` (the phrase and
+ * direction) and, when it resolves, `dependency: { kind, line, raw }`; its
+ * `hash` then covers the dependency's source too. A reference that resolves
+ * to nothing keeps raw-only identity — the lint reports it as a defect.
+ */
 export function extractExercises(root) {
   const found = [];
   for (const file of walkMarkdown(root)) {
@@ -80,31 +100,73 @@ export function extractExercises(root) {
     // Code fences are documentation ABOUT shortcodes, not exercises. Blank
     // them in place so line numbers stay true to the file.
     const cleaned = maskCode(source);
+    const lineOf = (index) => cleaned.slice(0, index).split('\n').length;
+    const onPage = [];
     for (const kind of EXERCISE_KINDS) {
-      for (const sc of shortcodes(cleaned, kind)) {
-        const raw = cleaned.slice(sc.index, sc.end);
-        found.push({
-          path: relative(process.cwd(), file),
-          line: cleaned.slice(0, sc.index).split('\n').length,
-          kind,
-          hash: exerciseHash(raw),
-          params: sc.params,
-          inner: sc.inner,
-          raw,
-        });
-      }
+      for (const sc of shortcodes(cleaned, kind)) onPage.push({ kind, ...sc });
+    }
+    onPage.sort((a, b) => a.index - b.index);
+    const blocks = figureLikeBlocks(cleaned, { exerciseSpans: onPage });
+    for (const sc of onPage) {
+      const raw = cleaned.slice(sc.index, sc.end);
+      const reference = referencesContext(sc);
+      const block = dependencyOf(sc, blocks, reference);
+      found.push({
+        path: relative(process.cwd(), file),
+        line: lineOf(sc.index),
+        kind: sc.kind,
+        hash: block ? exerciseHash(`${raw}\n${block.raw}`) : exerciseHash(raw),
+        params: sc.params,
+        inner: sc.inner,
+        raw,
+        ...(reference ? { reference } : {}),
+        ...(block ? { dependency: { kind: block.kind, line: lineOf(block.index), raw: block.raw } } : {}),
+      });
     }
   }
   return found.sort((a, b) => (a.path === b.path ? a.line - b.line : a.path < b.path ? -1 : 1));
 }
 
-export function readLedger(path = LEDGER_PATH) {
-  return readLedgerAt(path);
+/**
+ * The whole record contract, in one place, for both the result files a
+ * reading pass writes and the ledger they merge into. Until this existed the
+ * gate tested a record for presence and for the literal 'defect', so
+ * `verdict: "typo"` counted as verified and `solved: {}` satisfied
+ * `--require-solved`. Returns an error string or null.
+ */
+export function validateRecord(record, { requireHash = false } = {}) {
+  if (typeof record !== 'object' || record === null || Array.isArray(record)) return 'record must be an object';
+  const unknown = Object.keys(record).filter((key) => !RECORD_FIELDS.has(key));
+  if (unknown.length) return `unknown field(s) ${unknown.join(', ')}`;
+  if (requireHash && !(typeof record.hash === 'string' && HASH_RE.test(record.hash))) return 'missing or malformed hash (16 hex characters)';
+  if (!VERDICTS.has(record.verdict)) return `verdict must be one of ok, defect, unverifiable (got ${JSON.stringify(record.verdict)})`;
+  if (record.note !== undefined && !(typeof record.note === 'string' && record.note.trim())) return 'note must be a non-empty string';
+  // A defect nobody described, or an "unverifiable" that does not say what
+  // was missing, gives the follow-up queue nothing to act on.
+  if ((record.verdict === 'defect' || record.verdict === 'unverifiable') && !record.note) return `${record.verdict === 'unverifiable' ? 'an' : 'a'} ${record.verdict} verdict needs a note saying what was wrong or what was missing`;
+  if (record.solved !== undefined) {
+    const solved = record.solved;
+    if (typeof solved !== 'object' || solved === null || Array.isArray(solved)) return 'solved must be an object { by, result, note? }';
+    const bad = Object.keys(solved).filter((key) => !SOLVED_FIELDS.has(key));
+    if (bad.length) return `unknown solved field(s) ${bad.join(', ')}`;
+    if (!(typeof solved.by === 'string' && solved.by.trim())) return 'solved.by must be a non-empty string';
+    if (!SOLVED_RESULTS.has(solved.result)) return 'solved.result must be agrees or adjudicated';
+    if (solved.result === 'adjudicated' && !(typeof solved.note === 'string' && solved.note.trim())) return 'an adjudicated solve needs a note';
+  }
+  return null;
+}
+
+/** The read-time check `readLedger` runs on every entry. */
+export const validateEntry = (key, record) => (HASH_RE.test(key) ? validateRecord(record) : 'key is not a 16-hex exercise hash');
+
+/** Read the answer ledger, refusing a malformed one (see `validateRecord`). */
+export function readLedger(path = LEDGER_PATH, options = {}) {
+  return readLedgerAt(path, { ...options, validate: validateEntry });
 }
 
 function usage(detail) {
   console.error(`answer-ledger: ${detail}`);
-  console.error('usage: node tools/verify/answer-ledger.mjs <check|list|merge|prune|stats> [root|resultsDir] [--kind k] [--verdict v] [--unverified] [--shard i/n] [--context N] [--min-exercises N] [--max-unverifiable N] [--require-solved prefix[,prefix]] [--ledger path]');
+  console.error('usage: node tools/verify/answer-ledger.mjs <check|list|merge|prune|rekey|stats> [root|resultsDir] [--kind k] [--verdict v] [--unverified] [--shard i/n] [--context N] [--min-exercises N] [--max-unverifiable N] [--require-solved prefix[,prefix]] [--ledger path]');
   process.exit(2);
 }
 
@@ -112,7 +174,7 @@ function main() {
   let cli;
   try {
     cli = parseCliArgs(process.argv.slice(2), {
-      commands: ['check', 'list', 'merge', 'prune', 'stats'],
+      commands: ['check', 'list', 'merge', 'prune', 'rekey', 'stats'],
       valueFlags: ['kind', 'verdict', 'shard', 'context', 'min-exercises', 'max-unverifiable', 'require-solved', 'ledger'],
       boolFlags: ['unverified'],
     });
@@ -130,14 +192,10 @@ function main() {
       dir,
       path: ledgerPath,
       // A record missing its hash or verdict used to be skipped in silence,
-      // which drops a reading pass's verdict without saying so. It is now the
-      // same refusal the conversion ledger already gave — one merge contract,
-      // in one place, for both queues.
-      validate: (record) => (!record.hash ? 'missing hash'
-        : !record.verdict ? 'missing verdict'
-          : record.solved && !SOLVED_RESULTS.has(record.solved.result) ? 'solved.result must be agrees or adjudicated'
-            : record.solved && record.solved.result === 'adjudicated' && !record.solved.note ? 'an adjudicated solve needs a note'
-              : null),
+      // which drops a reading pass's verdict without saying so. It is the
+      // same refusal on the way in as on the way out: one record contract.
+      validate: (record) => validateRecord(record, { requireHash: true }),
+      validateEntry,
       decisionOf: (record) => record.verdict,
       // `solved` is the orchestrator's own answer to the question (see
       // solve-check.mjs); it rides along with the verdict so a re-read that
@@ -155,7 +213,25 @@ function main() {
   const exercises = extractExercises(resolve(root));
 
   if (command === 'prune') {
-    pruneLedger({ path: ledgerPath, live: new Set(exercises.map((e) => e.hash)) });
+    pruneLedger({ path: ledgerPath, live: new Set(exercises.map((e) => e.hash)), validateEntry });
+    return;
+  }
+
+  if (command === 'rekey') {
+    // The migration for a changed identity scheme: every exercise whose
+    // hash now covers a dependency block inherits the record its raw-only
+    // hash held. See rekeyLedger for why this cannot launder a later edit.
+    const moves = new Map();
+    for (const e of exercises) {
+      if (!e.dependency) continue;
+      const legacy = exerciseHash(e.raw);
+      if (legacy === e.hash) continue;
+      if (!moves.has(legacy)) moves.set(legacy, new Set());
+      moves.get(legacy).add(e.hash);
+    }
+    rekeyLedger({
+      path: ledgerPath, moves, live: new Set(exercises.map((e) => e.hash)), decisionOf: (r) => r.verdict, validateEntry,
+    });
     return;
   }
 
@@ -168,7 +244,7 @@ function main() {
     // so the figure or table they name travels with them.
     const verdict = flag('verdict');
     if (unverifiedOnly || verdict) {
-      const ledger = readLedgerAt(ledgerPath);
+      const ledger = readLedger(ledgerPath);
       subset = subset.filter((e) => (unverifiedOnly
         ? !ledger.entries[e.hash]
         : ledger.entries[e.hash]?.verdict === verdict));
@@ -190,22 +266,26 @@ function main() {
     // alone — the figure it names is elsewhere on the page. `--context N`
     // attaches the N lines of page text before the shortcode so a follow-up
     // pass can see the inline SVG, table, or worked example it depends on.
+    // The page is key-masked first (`maskKeys`), the same way solve-check
+    // packets are: the reader holds the listed item's own params already,
+    // and a neighbour's key is no part of re-deriving this one.
     const contextLines = flag('context') === null ? 0 : Number(flag('context'));
     const pageCache = new Map();
     const contextFor = (e) => {
       if (!contextLines) return undefined;
-      if (!pageCache.has(e.path)) pageCache.set(e.path, readFileSync(e.path, 'utf8').split('\n'));
+      if (!pageCache.has(e.path)) pageCache.set(e.path, maskKeys(readFileSync(e.path, 'utf8')).split('\n'));
       const lines = pageCache.get(e.path);
       return lines.slice(Math.max(0, e.line - 1 - contextLines), e.line - 1).join('\n');
     };
     process.stdout.write(`${JSON.stringify(unique.map((e) => ({
       hash: e.hash, kind: e.kind, path: e.path, line: e.line, params: e.params, inner: e.inner.trim(),
+      ...(e.dependency ? { dependency: { kind: e.dependency.kind, line: e.dependency.line } } : {}),
       ...(contextLines ? { pageContext: contextFor(e) } : {}),
     })), null, 1)}\n`);
     return;
   }
 
-  const ledger = readLedgerAt(ledgerPath);
+  const ledger = readLedger(ledgerPath);
   const unique = new Map();
   for (const e of exercises) if (!unique.has(e.hash)) unique.set(e.hash, e);
   const missing = [...unique.values()].filter((e) => !ledger.entries[e.hash]);
@@ -269,4 +349,12 @@ function main() {
   console.log(`✓ answer ledger: ${unique.size} unique exercises, every one carries a verification record (${confirmed} independently re-derived, ${unverifiable.length} unverifiable from the exercise text alone)`);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) main();
+if (import.meta.url === `file://${process.argv[1]}`) {
+  try {
+    main();
+  } catch (error) {
+    if (!(error instanceof LedgerFormatError)) throw error;
+    console.error(`✖ answer ledger: ${error.message}`);
+    process.exit(1);
+  }
+}

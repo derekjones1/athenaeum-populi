@@ -126,14 +126,26 @@ class SortBinsElement extends HTMLElement {
   }
 
   _moveToBin(btn, bin) {
-    const li = document.createElement('li');
+    // Reuse the wrapper a placed item already has, so a bin→bin move never
+    // orphans an empty <li> in the source bin. parentElement, not
+    // closest('li'): a sortbins block nested in a page list item must not
+    // climb out of the component.
+    const current = btn.parentElement;
+    const li = current?.tagName === 'LI' && this.binLists.includes(current.parentElement)
+      ? current
+      : document.createElement('li');
     li.append(btn);
     this.binLists[bin].append(li);
   }
 
   _returnToTray(index) {
     const btn = this.itemButtons.find((b) => Number(b.dataset.item) === index);
-    const li = btn.closest('li');
+    // Same wrapper rule as _moveToBin: only treat the parent <li> as ours if
+    // it lives directly in one of this component's bin lists.
+    const parent = btn.parentElement;
+    const li = parent?.tagName === 'LI' && this.binLists.includes(parent.parentElement)
+      ? parent
+      : null;
     this.tray.append(btn);
     if (li) li.remove();
     this.placements[index] = null;

@@ -56,6 +56,24 @@ jobs:
             hugo-${{ runner.os }}-${{ env.HUGO_VERSION }}-
 
       - run: npm ci
+
+      # The source-key and fill-in-residual gates read the pinned OpenStax
+      # CNXML. /sources/ is gitignored, so fetch the sparse checkouts here
+      # (~50 MB across four bundles) and cache them on the lock file: every
+      # commit is pinned, so the cache is exact. ATHENAEUM_REQUIRE_SOURCES
+      # turns an absent bundle from a loud skip into a failure, so this job
+      # can never go green on a partial read again.
+      - uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5.1.0
+        id: sources
+        with:
+          path: sources/openstax
+          key: openstax-sources-${{ hashFiles('data/openstax/source-lock.json') }}
+      - if: steps.sources.outputs.cache-hit != 'true'
+        run: npm run source:fetch
+      # verify-map checks each cover's authoring_status against the lock; it
+      # needs the checkout, which is why it never ran here before.
+      - run: npm run source:verify
+
       # The whole verification pipeline lives in package.json's `ci` script —
       # tests, build, built-artifact checks, then one Playwright invocation
       # covering accessibility AND the grader end-to-end suite (regressions
@@ -65,6 +83,8 @@ jobs:
       # tools/build/chrome-stdio-shim.sh (the executablePath in
       # playwright.config.mjs), so no browser install step is needed.
       - run: npm run ci
+        env:
+          ATHENAEUM_REQUIRE_SOURCES: '1'
 
       # Hand the exact verified `public/` to the deploy job. Deploying a
       # second, freshly built artifact would ship bytes no gate ever saw.

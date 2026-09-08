@@ -12,11 +12,17 @@ import { tmpdir } from 'node:os';
 import { join, relative, sep } from 'node:path';
 
 import {
+  KEY_PARAMS,
+  KEYED_INNER,
+  NON_KEY_PARAMS,
+  PAIRED_SHORTCODES,
+  SHORTCODE_PARAMS,
   bookKeyOf,
   hasUnpairedDollar,
   loadMediaManifests,
   malformedShortcodeParams,
   maskCode,
+  maskKeys,
   mathSpans,
   parseFrontmatter,
   shortcodeParams,
@@ -386,4 +392,69 @@ test('loadMediaManifests reads every <book>.json, skips the rest, and treats a m
     rmSync(dir, { recursive: true, force: true });
   }
   assert.equal(loadMediaManifests(join(tmpdir(), 'ap-lib-media-does-not-exist')).size, 0, 'a missing directory is an empty map');
+});
+
+// ---- key masking ------------------------------------------------------------
+
+test('every shortcode param is classified as key-bearing or not, and every keyed inner is a paired shortcode', () => {
+  // A new answer-bearing param added to a template must be classified here
+  // before it can ship, or `maskKeys` would hand it to a blind solver.
+  for (const [kind, params] of Object.entries(SHORTCODE_PARAMS)) {
+    for (const name of params) {
+      assert.ok(KEY_PARAMS.has(name) || NON_KEY_PARAMS.has(name), `${kind}.${name} is neither in KEY_PARAMS nor NON_KEY_PARAMS`);
+      assert.ok(!(KEY_PARAMS.has(name) && NON_KEY_PARAMS.has(name)), `${kind}.${name} is in both sets`);
+    }
+  }
+  for (const kind of Object.keys(KEYED_INNER)) {
+    assert.equal(PAIRED_SHORTCODES[kind], true, `${kind} has a keyed inner but is not paired`);
+  }
+});
+
+test('maskKeys blanks every key and keyed body on the whole page while keeping its line count', () => {
+  const page = `---
+title: Sample
+---
+
+Some prose.
+
+{{< fillin
+  question="Solve $2x=8$."
+  answer="4"
+  hint="Divide both
+sides by 2."
+>}}
+
+{{< multiplechoice question="Which line?" mode="graph" answerIndex="1" >}}
+{"ariaLabel":"rising","lines":[{"slope":1,"intercept":0}]}
+===OPT===
+{"ariaLabel":"falling","lines":[{"slope":-1,"intercept":0}]}
+{{< /multiplechoice >}}
+
+{{< selfcheck question="Explain." >}}
+The model answer,
+over two lines.
+{{< /selfcheck >}}
+
+{{< sortbins question="Sort." >}}
+{"bins":["A","B"],"items":[{"label":"one","bin":0},{"label":"two","bin":1}]}
+{{< /sortbins >}}
+
+{{< graphplot question="Plot it." answerDisplay="y=2x" >}}
+{"answer":{"slope":2,"intercept":0},"grid":{"xMin":-5}}
+{{< /graphplot >}}
+
+{{< textin question="Name it." answer="carotenoid" accept="carotenoids" >}}
+
+\`{{< fillin question="Documented" answer="9" >}}\`
+`;
+  const masked = maskKeys(page);
+  assert.equal(masked.split('\n').length, page.split('\n').length, 'line count is identity for line-sliced windows');
+  assert.equal(masked.split('\n').findIndex((l) => l.startsWith('{{< fillin')), page.split('\n').findIndex((l) => l.startsWith('{{< fillin')));
+  for (const leaked of ['answer="4"', 'Divide both', 'sides by 2', 'answerIndex="1"', 'model answer,', 'over two lines', '"bin":0', '"slope":2', 'y=2x', 'carotenoid']) {
+    assert.ok(!masked.includes(leaked), `leaked: ${leaked}`);
+  }
+  for (const kept of ['Some prose.', 'Solve $2x=8$.', 'Which line?', '"ariaLabel":"rising"', '===OPT===', 'Explain.', 'Sort.', 'Plot it.', 'Name it.', 'answer="…"', 'hint="…"', 'answerIndex="…"', 'answerDisplay="…"', 'accept="…"', '(model answer removed)', '(assignments removed)', '(answer config removed)']) {
+    assert.ok(masked.includes(kept), `missing: ${kept}`);
+  }
+  assert.ok(!masked.includes('Documented'), 'an inline-code example is masked as code, not read as an exercise');
 });

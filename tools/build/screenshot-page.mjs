@@ -4,9 +4,13 @@
 // high zoom so recreated geometry can be compared against the source PDF.
 //
 // Usage:
-//   npm run build            (or have public/ current)
-//   python3 -m http.server 8099 --directory public &
+//   npm run build && npm run serve:public &   (port 1315; set PORT or
+//                                               SHOT_BASE to override)
 //   node tools/build/screenshot-page.mjs /math/precalculus/01-functions/01-....../ [outDir]
+//
+// serve:public rather than `npm run serve`: the Hugo dev server injects a
+// livereload script and serves unfingerprinted CSS, so a screenshot of it
+// describes the dev server rather than the site that ships.
 //
 // Drives the installed Chrome through tools/build/chrome-stdio-shim.sh (no
 // `npx playwright install` needed). The shim detaches Chrome's stdout/stderr
@@ -29,7 +33,7 @@ if (!route) {
   process.exit(2)
 }
 const outDir = process.argv[3] ?? 'test-results/page-shots'
-const base = process.env.SHOT_BASE ?? 'http://127.0.0.1:8099'
+const base = process.env.SHOT_BASE ?? `http://127.0.0.1:${process.env.PORT || 1315}`
 mkdirSync(outDir, { recursive: true })
 
 let browser

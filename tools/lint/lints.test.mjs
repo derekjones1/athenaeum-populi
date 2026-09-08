@@ -3128,3 +3128,21 @@ test('textin: a question or hint that prints the folded plural of a member is a 
   const clean = lintHugo('{{< textin question="Name the organelle that builds proteins." answer="ribosome" hint="Ribosomal RNA is part of it." >}}', 'content/test.md').errors;
   assert.ok(!clean.some((e) => e.includes('whole-word run')), clean.join('\n'));
 });
+
+// ---------------------------------------------------------------------------
+// context references — "the graph above" must have a graph above it
+
+test('an exercise that names a figure, graph, or table must have one to resolve to', () => {
+  const figure = APFIG('graph', '{"ariaLabel":"The line y = 2x + 1.","lines":[{"slope":2,"intercept":1}]}');
+  const graphAbove = `${figure}\n\n{{< fillin question="Which point is on the graph above?" answer="(0,1)" hint="Read it off." >}}`;
+  assert.deepEqual(lintHugo(graphAbove, SECTION).errors.filter((e) => e.includes('names a figure')), []);
+  const tableBelow = '{{< fillin question="Read the value from the table below." answer="3" hint="Row two." >}}\n\n| x | y |\n|---|---|\n| 1 | 3 |\n';
+  assert.deepEqual(lintHugo(tableBelow, SECTION).errors.filter((e) => e.includes('names a figure')), []);
+  // A graphplot is the learner's own drawing, never a figure the stem can
+  // point at: "use the graph" after one names nothing on the page.
+  const graphplot = '{{< graphplot question="Plot it." ariaLabel="A grid." hint="Points." >}}\n{"answer":{"points":[[0,1],[1,3],[2,5]]},"grid":{"xMin":-5,"xMax":5,"yMin":-5,"yMax":5}}\n{{< /graphplot >}}';
+  const dangling = lintHugo(`${graphplot}\n\n{{< multiplechoice question="Use the graph to determine the range." answer="all reals" hint="Look." >}}\nall reals\nnone\n{{< /multiplechoice >}}`, SECTION)
+    .errors.filter((e) => e.includes('names a figure'));
+  assert.equal(dangling.length, 1, dangling.join('\n'));
+  assert.match(dangling[0], /"Use the graph" names a figure, graph, or table, but no apfigure, mediafigure, inline <svg>, Markdown table, or image sits above it/);
+});

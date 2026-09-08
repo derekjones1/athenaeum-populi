@@ -236,6 +236,30 @@ export const SHORTCODE_PARAMS = Object.freeze({
 });
 
 /**
+ * Which params carry (or lead to) an answer. Every name in SHORTCODE_PARAMS
+ * must be in exactly one of these two sets — content.test.mjs enforces it —
+ * so a new answer-bearing param cannot be added to a template without being
+ * classified. `maskKeys` used to work from a private four-name list, which
+ * is how `answerIndex` (a multiple choice in graph mode) went unmasked.
+ */
+export const KEY_PARAMS = Object.freeze(new Set(['answer', 'answerIndex', 'accept', 'hint', 'answerDisplay']));
+export const NON_KEY_PARAMS = Object.freeze(new Set([
+  'question', 'answerForm', 'answerMode', 'placeholder', 'mode', 'ariaLabel', 'snap',
+  'kind', 'src', 'alt', 'longdesc', 'eager',
+]));
+
+/**
+ * Paired shortcodes whose INNER content is the key: a selfcheck's model
+ * answer, a graphplot's `"answer":{…}` config, a sortbins' `"bin"`
+ * assignments. Each maps to the placeholder that replaces it.
+ */
+export const KEYED_INNER = Object.freeze({
+  selfcheck: '(model answer removed)',
+  graphplot: '(answer config removed)',
+  sortbins: '(assignments removed)',
+});
+
+/**
  * Iterate every `{{< name … >}}` shortcode in `src`.
  *
  * Yields `{ params, inner, index, end, open, closed }`:
@@ -339,6 +363,49 @@ export function maskCode(source, { svg = false } = {}) {
     .replace(/```[\s\S]*?```/g, blankPreservingOffsets)
     .replace(/`[^`\n]*`/g, blankPreservingOffsets);
   return svg ? masked.replace(/<svg\b[\s\S]*?<\/svg>/gi, blankPreservingOffsets) : masked;
+}
+
+const KEY_PARAM_RE = new RegExp(String.raw`\b(${[...KEY_PARAMS].join('|')})\s*=\s*${PARAM_VALUE}`, 'g');
+const newlinesOf = (s) => s.replace(/[^\n]/g, '');
+
+/**
+ * A page with every answer key blanked: each KEY_PARAMS value becomes `"…"`
+ * and each KEYED_INNER body becomes its placeholder, on every shortcode the
+ * templates define, after `maskCode`. This is what a blind solver may be
+ * shown as "the page above the question".
+ *
+ * The LINE COUNT is preserved — every newline inside a replaced span is
+ * kept — so a caller may split the result and slice a window by line
+ * number. Offsets are NOT preserved (a placeholder is not the length of what
+ * it replaced); nothing may use this text for offset arithmetic. Masking the
+ * whole page BEFORE cutting a window is the point: a window that opened in
+ * the middle of a selfcheck used to miss the opening tag the old regex
+ * needed, and hand the model answer through untouched.
+ */
+export function maskKeys(source) {
+  const src = maskCode(source);
+  const found = [];
+  for (const name of Object.keys(SHORTCODE_PARAMS)) {
+    for (const sc of shortcodes(src, name)) found.push({ name, ...sc });
+  }
+  found.sort((a, b) => a.index - b.index);
+  let out = '';
+  let cursor = 0;
+  for (const sc of found) {
+    if (sc.index < cursor) continue; // inside a span already replaced
+    const openEnd = sc.openIndex + sc.open.length + 3; // the ">}}"
+    const maskedOpen = sc.open.replace(KEY_PARAM_RE, (m, name, value) => `${name}="…"${newlinesOf(value)}`);
+    out += src.slice(cursor, sc.openIndex) + maskedOpen + src.slice(sc.openIndex + sc.open.length, openEnd);
+    if (sc.closed && KEYED_INNER[sc.name]) {
+      const lead = sc.inner.startsWith('\n') ? '\n' : '';
+      out += `${lead}${KEYED_INNER[sc.name]}${newlinesOf(sc.inner).slice(lead.length)}`;
+    } else {
+      out += sc.inner;
+    }
+    out += src.slice(openEnd + sc.inner.length, sc.end);
+    cursor = sc.end;
+  }
+  return out + src.slice(cursor);
 }
 
 /* ----------------------------------------------------------- math spans */

@@ -214,10 +214,15 @@ once. What each gate contains is `package.json`'s `test`, `check:build`, and
 keeps only the two facts that are architectural:
 
 - The one gate that reads the pinned CNXML itself, `verify:source-keys`,
-  skips a bundle whose gitignored checkout is absent and says so — CI has no
-  `sources/`, so that comparison is a local gate, run on an authoring machine
-  before the push (the ledger and replay gates, which run everywhere, still
-  hold every key to its recorded verdict).
+  skips a bundle whose gitignored checkout is absent and says so. `npm test`
+  itself never fetches upstream and stays offline; CI now fetches the pinned
+  checkouts as a step before the pipeline runs (cached on the lock file's
+  hash) and sets `ATHENAEUM_REQUIRE_SOURCES=1`, so there this gate and
+  `verify:fillin-residual` run strict instead of skipping. Without a fetched
+  checkout — a fresh clone, or a local machine that skipped
+  `npm run source:fetch` — the comparison is a no-op (the ledger and replay
+  gates, which run everywhere regardless, still hold every key to its
+  recorded verdict).
 - The browser suites never measure a dev server: Playwright builds `public/`
   and serves it through `npm run serve:public` on port 1315, and every spec
   refuses a page carrying a livereload script or unloaded stylesheets. Set
