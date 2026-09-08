@@ -50,7 +50,7 @@ themselves keep only what is still operative.
   has a local page, chapter parity is enforced book-wide, and
   `build-map`/`verify-map` report them at full coverage; Microbiology is
   `in-progress` (pinned September 5, 2026, its first two chapters authored
-  the same day, chapters 3–4 on September 6, and chapters 5–8 on September 7) and is reported as `8/26 chapters, 38/127 sections mapped`. Biology 2e's sections live under
+  the same day, chapters 3–4 on September 6, and chapters 5–8 on September 7, and chapter 9 on September 8) and is reported as `9/26 chapters, 44/127 sections mapped`. Biology 2e's sections live under
   `content/life-health-sciences/biology` (each lock entry carries a
   `contentPath`, so a book need not live under `content/math`) and its
   subject playbooks (`docs/subjects/life-sciences.md` plus

@@ -1005,6 +1005,28 @@
       "status": "correct-local-source-defect",
       "errataEntry": 518,
       "rationale": "The module's summary labels the conversion of atmospheric nitrogen to ammonia \"(ammonification)\"; the module's own Nitrogen Cycle text defines that step as nitrogen fixation and ammonification as the release of ammonia from organic nitrogen during decomposition. The summary bullet prints \"(nitrogen fixation)\" with a visible Source note and a footer sentence. Found by the chapter 8 prose claim pass, September 7, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/09-microbial-growth/04-temperature-and-microbial-growth.md",
+      "bundle": "microbiology",
+      "moduleId": "m58831",
+      "sourceElementIds": [
+        "fs-id1172099877928"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 532,
+      "rationale": "The Clinical Focus Resolution classifies L. monocytogenes as a psychrophile; the same module defines psychrophiles as usually not surviving above 20 °C and psychrotrophs as thriving between about 4 °C and 25 °C, and the book's own m58941 says Listeria grows between 0 °C and 50 °C. The page prints \"psychrotroph\" with a visible Source note and a footer sentence, and the author-built item that rested on the source wording was reworded. Found by the chapter 9 prose claim pass, September 8, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/09-microbial-growth/01-how-microbes-grow.md",
+      "bundle": "microbiology",
+      "moduleId": "m58828",
+      "sourceElementIds": [
+        "fs-id1172099513699"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 533,
+      "rationale": "The module calls the Actinomycetes \"a group of gram-positive, anaerobic bacteria\"; the book's own Actinobacteria table in §4.4 (m58798) classifies Actinomyces as facultative anaerobes. The page drops \"anaerobic\" with a visible Source note and a footer sentence. Found by the chapter 9 prose claim pass, September 8, 2026."
     }
   ],
   "upstreamDriftDecisions": [

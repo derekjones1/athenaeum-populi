@@ -5944,6 +5944,694 @@
       ],
       "alt": "Sulfur cycle. Atmospheric sulfur (SO2 gas) is taken in by plants. Plant residues and animal manures and biosolids produce organic sulfur. Mineralization produces sulfate (SO42-). Immobilization reverts sulfate back to organic sulfur. Sulfate is converted to H2S via anaerobic respiration. Decomposition also produces H2S. Sulfate can be absorbed or converted to mineral sulfur. Bacterial reduction converts sulfate to reduced sulfur (H2S, HS). Oxidation converts reduced sulfur and elemental sulfur (SO0) to sulfate.",
       "caption": "This figure summarizes the sulfur cycle. Note that specific groups of prokaryotes each may participate in every step in the cycle. (credit: modification of work by NOAA)"
+    },
+    "OSC_Microbio_09_00_splash": {
+      "source": "media/OSC_Microbio_09_00_splash.jpg",
+      "sourceSha256": "ddd0b9ace3a6ec0b75234a407cd77b37da7d5ad7105b89a5c6eee60f19732e8a",
+      "module": "m58827",
+      "kind": "photo",
+      "width": 1300,
+      "height": 428,
+      "variants": [
+        {
+          "width": 800,
+          "height": 263,
+          "file": "OSC_Microbio_09_00_splash-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 428,
+          "file": "OSC_Microbio_09_00_splash-1300.webp"
+        }
+      ],
+      "alt": "A micrograph showing spherical cells attached to a matrix on a surface. A photo of green water in a bucket.",
+      "caption": "Medical devices that are inserted into a patient’s body often become contaminated with a thin biofilm of microorganisms enmeshed in the sticky material they secrete. The electron micrograph (left) shows the inside walls of an in-dwelling catheter. Arrows point to the round cells of Staphylococcus aureus bacteria attached to the layers of extracellular substrate. The garbage can (right) served as a rain collector. The arrow points to a green biofilm on the sides of the container. (credit left: modification of work by Centers for Disease Control and Prevention; credit right: modification of work by NASA)"
+    },
+    "OSC_Microbio_09_01_Jgrowthcur": {
+      "source": "media/OSC_Microbio_09_01_Jgrowthcur.jpg",
+      "sourceSha256": "82782f577d8e08e8cbac5fb603cc6bdaa2f986bafe04748aab3d05aeb1c555c5",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 1301,
+      "height": 565,
+      "variants": [
+        {
+          "width": 800,
+          "height": 347,
+          "file": "OSC_Microbio_09_01_Jgrowthcur-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 565,
+          "file": "OSC_Microbio_09_01_Jgrowthcur-1301.webp"
+        }
+      ],
+      "alt": "a) An arithmetic scale graph showing log phase growth. The X axis is time (hours) and the Y ais is number of cells. The line on this graph starts fairly flat with readings of (1,2) and (5,32) but quickly slopes up steeply with a final reading of (10, 1024). B) is a semilog scale graph of log phase growth. The X axis is time (hours) and the Y axis is log 10 number of cells. The Y axis more clearly show the difference between 10 superscript 1 and 10 superscript 3. The line on this graph is a straight line diagonally across the graph with points of (1,2), (5,32) and (10,1024) – just like the first graph. The equation for both graphs is N=2 superscript n.",
+      "caption": "Both graphs illustrate population growth during the log phase for a bacterial sample with an initial population of one cell and a doubling time of 1 hour. (a) When plotted on an arithmetic scale, the growth rate resembles a curve. (b) When plotted on a semilogarithmic scale (meaning the values on the y -axis are logarithmic), the growth rate appears linear."
+    },
+    "OSC_Microbio_09_01_MPNtubes": {
+      "source": "media/OSC_Microbio_09_01_MPNtubes.jpg",
+      "sourceSha256": "a65e7c667b8402555c7f9d3eab91db5131671cfe5075ae425e4e3c98aabdaf8a",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 1050,
+      "height": 777,
+      "variants": [
+        {
+          "width": 800,
+          "height": 592,
+          "file": "OSC_Microbio_09_01_MPNtubes-800.webp"
+        },
+        {
+          "width": 1050,
+          "height": 777,
+          "file": "OSC_Microbio_09_01_MPNtubes-1050.webp"
+        }
+      ],
+      "alt": "A diagram where the original sample of pond water is diluted into tubes containing lactose broth (a pink broth). 10 mL of the sample is placed into each of 5 lactose broth tubes. Another 5 tubes get 1 mL each of the sample. Another 5 tubes get 0.1 mL of sample. After 24 hours of incubation at 37°C some tubes have a color change. All of the 5 tubes containing 10 mL of the sample turned yellow and show gas in the smaller inner tube. 2 of the 5 tubes that got 1 mL of the original sample turned yellow and show gas; 3 of these tubes remain pink. All of the tubes that got 0.1 mL of the original sample remain pink.",
+      "caption": "In the most probable number method, sets of five lactose broth tubes are inoculated with three different volumes of pond water: 10 mL, 1 mL, and 0.1mL. Bacterial growth is assessed through a change in the color of the broth from red to yellow as lactose is fermented."
+    },
+    "OSC_Microbio_09_01_Zring": {
+      "source": "media/OSC_Microbio_09_01_Zring.jpg",
+      "sourceSha256": "668c1b270dbaa64db082cdf2500fc25786c55c91ce8b1d3c902846f980a2ccc4",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 674,
+      "height": 841,
+      "variants": [
+        {
+          "width": 674,
+          "height": 841,
+          "file": "OSC_Microbio_09_01_Zring-674.webp"
+        }
+      ],
+      "alt": "A diagram of a cell dividing. The cell is shaped like a figure 8; each end of the cell contains a loop a DNA. The constriction point of the figure 8 is labeled cleavage furrow. A ring of dots in this region is labeled FtsZ ring. Next these dots line up along the constriction point as the constriction point completely separates the two halves of the cell. This region is now called the septum. Finally the two cells separate completely.",
+      "caption": "FtsZ proteins assemble to form a Z ring that is anchored to the plasma membrane. The Z ring pinches the cell envelope to separate the cytoplasm of the new cells."
+    },
+    "OSC_Microbio_09_01_binaryfiss": {
+      "source": "media/OSC_Microbio_09_01_binaryfiss.jpg",
+      "sourceSha256": "5aa286f7ecdeab1f7fb45b91a6324260426f6cb9807103c7c71bca20f8f97d43",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 1200,
+      "height": 398,
+      "variants": [
+        {
+          "width": 800,
+          "height": 265,
+          "file": "OSC_Microbio_09_01_binaryfiss-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 398,
+          "file": "OSC_Microbio_09_01_binaryfiss-1200.webp"
+        }
+      ],
+      "alt": "A) A micrograph of two rod shaped cells attached at their ends. B) A diagram of binary fission. First a cell replicates its DNA and elongates. Then, as the cell continues to elongate, each loop of DNA travels to one end or the other. The cell then starts to constrict in the center. This results in two cells each containing a loop of DNA.",
+      "caption": "(a) The electron micrograph depicts two cells of Salmonella typhimurium after a binary fission event. (b) Binary fission in bacteria starts with the replication of DNA as the cell elongates. A division septum forms in the center of the cell. Two daughter cells of similar size form and separate, each receiving a copy of the original chromosome. (credit a: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_09_01_cat": {
+      "source": "media/OSC_Microbio_09_01_cat.jpg",
+      "sourceSha256": "3789d3672543c09623133c55b963a61a7a871f1e9134feee636bdb2c0893bf1f",
+      "module": "m58829",
+      "kind": "photo",
+      "width": 700,
+      "height": 424,
+      "variants": [
+        {
+          "width": 700,
+          "height": 424,
+          "file": "OSC_Microbio_09_01_cat-700.webp"
+        }
+      ],
+      "alt": "A slide with two drops of clear liquid. The left drop is not bubbling and is labeled catalase negative. The right drop is bubbling and is labeled catalase positive.",
+      "caption": "The catalase test detects the presence of the enzyme catalase by noting whether bubbles are released when hydrogen peroxide is added to a culture sample. Compare the positive result (right) with the negative result (left). (credit: Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_09_01_chemostat": {
+      "source": "media/OSC_Microbio_09_01_chemostat.jpg",
+      "sourceSha256": "32e65501f1f179619f9b9152d25c3b186c9a4ba422f3cc321218c5c8f90f0fc7",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 324,
+      "height": 449,
+      "variants": [
+        {
+          "width": 324,
+          "height": 449,
+          "file": "OSC_Microbio_09_01_chemostat-324.webp"
+        }
+      ],
+      "alt": "A drawing of a chemostat – a vat filled with fluid that is moved by a rotating blade in the center. Feed enters one side and effluent leaves from the other side.",
+      "caption": "A chemostat is a culture vessel fitted with an opening to add nutrients (feed) and an outlet to remove contents (effluent), effectively diluting toxic wastes and dead cells. The addition and removal of fluids is adjusted to maintain the culture in the logarithmic phase of growth. If aerobic bacteria are grown, suitable oxygen levels are maintained."
+    },
+    "OSC_Microbio_09_01_coulter": {
+      "source": "media/OSC_Microbio_09_01_coulter.jpg",
+      "sourceSha256": "e99a5d6167d2bf91cb2b8eef19b048b6c68229c99c10152e54ae5c2f13a71ce7",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 1091,
+      "height": 578,
+      "variants": [
+        {
+          "width": 800,
+          "height": 424,
+          "file": "OSC_Microbio_09_01_coulter-800.webp"
+        },
+        {
+          "width": 1091,
+          "height": 578,
+          "file": "OSC_Microbio_09_01_coulter-1091.webp"
+        }
+      ],
+      "alt": "A) A diagram of a coulter counter. This includes a beaker with small spheres indicating cells. The beaker is divided to create a region of positive charge and a region of negative charge. The cells move from the positive region to the negative region. A device is able to measure the number of cells crossing from one side to the other. B) a photograph of this device which looks like a small glass cup.",
+      "caption": "A Coulter counter is an electronic device that counts cells. It measures the change in resistance in an electrolyte solution that takes place when a cell passes through a small opening in the inside container wall. A detector automatically counts the number of cells passing through the opening. (credit b: modification of work by National Institutes of Health)"
+    },
+    "OSC_Microbio_09_01_filam": {
+      "source": "media/OSC_Microbio_09_01_filam.jpg",
+      "sourceSha256": "b86884b6d350668f03d3edb21995fae6ae1b0c9a78956f9464fb55a6597a5c83",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 1100,
+      "height": 427,
+      "variants": [
+        {
+          "width": 800,
+          "height": 310,
+          "file": "OSC_Microbio_09_01_filam-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 427,
+          "file": "OSC_Microbio_09_01_filam-1100.webp"
+        }
+      ],
+      "alt": "a) A micrograph showing chains of green spheres. B) A micrograph showing a larger sphere with a smaller sphere attached to it. The smaller sphere is labeled NE. Each of these spheres has a darker region labeled N.",
+      "caption": "(a) Filamentous cyanobacteria, like those pictured here, replicate by fragmentation. (b) In this electron micrograph, cells of the bacterium Gemmata obscuriglobus are budding. The larger cell is the mother cell. Labels indicate the nucleoids (N) and the still-forming nuclear envelope (NE) of the daughter cell. Gemmata obscuriglobus is a rare case of a prokaryote with a nuclear envelope-like structure. (credit a: modification of work by CSIRO; credit b: modification of work by Kuo-Chang Lee, Rick I Webb and John A Fuerst)"
+    },
+    "OSC_Microbio_09_01_generation": {
+      "source": "media/OSC_Microbio_09_01_generation.jpg",
+      "sourceSha256": "480348412d29b6fcff9926c180e5c03b6f5b816eccc9c1c33b826b4440771b17",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 1196,
+      "height": 586,
+      "variants": [
+        {
+          "width": 800,
+          "height": 392,
+          "file": "OSC_Microbio_09_01_generation-800.webp"
+        },
+        {
+          "width": 1196,
+          "height": 586,
+          "file": "OSC_Microbio_09_01_generation-1196.webp"
+        }
+      ],
+      "alt": "In generation 0 there is 1 cell. In generation 1 there are 2 cells. In generation 2 there are 4 cells. In generation 3 there are 8 cells.",
+      "caption": "The parental cell divides and gives rise to two daughter cells. Each of the daughter cells, in turn, divides, giving a total of four cells in the second generation and eight cells in the third generation. Each division doubles the number of cells."
+    },
+    "OSC_Microbio_09_01_growthcurv": {
+      "source": "media/OSC_Microbio_09_01_growthcurv.jpg",
+      "sourceSha256": "d611d48d59323e0183d7a7d7ea325ddd98d59ce8807d23d5377878243b55cdeb",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 836,
+      "height": 618,
+      "variants": [
+        {
+          "width": 800,
+          "height": 591,
+          "file": "OSC_Microbio_09_01_growthcurv-800.webp"
+        },
+        {
+          "width": 836,
+          "height": 618,
+          "file": "OSC_Microbio_09_01_growthcurv-836.webp"
+        }
+      ],
+      "alt": "A graph with time on the X axis and logarithm of living bacterial cells on the Y axis. The line of the graph begins towards the bottom of the Y axis and is flat for a short time. This is labeled 1) lag phase: no increase in number of living bacterial cells. Next the line slopes upwards. This is labeled Log phase: exponential increase in number of living bacterial cells. Next the line flattens again. This is labeled 3) Stationary phase: plateau in number of living bacterial cells; rate of cell division and death roughly equal. Final the line slopes downwards. This is labeled 4) Death or decline phase: exponential decrease in number of living bacterial cells.",
+      "caption": "The growth curve of a bacterial culture is represented by the logarithm of the number of live cells plotted as a function of time. The graph can be divided into four phases according to the slope, each of which matches events in the cell. The four phases are lag, log, stationary, and death."
+    },
+    "OSC_Microbio_09_01_hemcy": {
+      "source": "media/OSC_Microbio_09_01_hemcy.jpg",
+      "sourceSha256": "0c3e4902c5b58397ba407cb86e7e7acae5121921e4f444547a882bec4e0bfd40",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 1300,
+      "height": 385,
+      "variants": [
+        {
+          "width": 800,
+          "height": 237,
+          "file": "OSC_Microbio_09_01_hemcy-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 385,
+          "file": "OSC_Microbio_09_01_hemcy-1300.webp"
+        }
+      ],
+      "alt": "a) A photo of a gloved hand holding a very thick slide with etching across the center of the slide. B) A diagram of what these etching looks like. The etchings create a grid that has larger squares along the outside (of 0.25 nm) and smaller squares in the inside of 0.05 nm. One can use a microscope to determine the count of cells in the smallest square to determine the titer of the solution.",
+      "caption": "(a) A Petroff-Hausser chamber is a special slide designed for counting the bacterial cells in a measured volume of a sample. A grid is etched on the slide to facilitate precision in counting. (b) This diagram illustrates the grid of a Petroff-Hausser chamber, which is made up of squares of known areas. The enlarged view shows the square within which bacteria (red cells) are counted. If the coverslip is 0.2 mm above the grid and the square has an area of 0.04 mm 2 , then the volume is 0.008 mm 3 , or 0.000008 mL. Since there are 10 cells inside the square, the density of bacteria is 10 cells/0.000008 mL, which equates to 1,250,000 cells/mL. (credit a: modification of work by Jeffrey M. Vinocur)"
+    },
+    "OSC_Microbio_09_01_livedead": {
+      "source": "media/OSC_Microbio_09_01_livedead.jpg",
+      "sourceSha256": "c91e318e69a98eeee0bf1a7a9cb98eda0aa75564837bbbf9e2ed7883bb4bcfa3",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 500,
+      "height": 420,
+      "variants": [
+        {
+          "width": 500,
+          "height": 420,
+          "file": "OSC_Microbio_09_01_livedead-500.webp"
+        }
+      ],
+      "alt": "A micrograph of many glowing green cells and some glowing red cells.",
+      "caption": "Fluorescence staining can be used to differentiate between viable and dead bacterial cells in a sample for purposes of counting. Viable cells are stained green, whereas dead cells are stained red. (credit: modification of work by Emerson J, Adams R, Bentancourt Román C, Brooks B, Coil D, Dahlhousen K, Ganz H, et al.)"
+    },
+    "OSC_Microbio_09_01_pourplate": {
+      "source": "media/OSC_Microbio_09_01_pourplate.jpg",
+      "sourceSha256": "380d84e0179d9bb2d29a49c0493f7689662fd3ccce829e180553ddcda7bfa449",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 1200,
+      "height": 474,
+      "variants": [
+        {
+          "width": 800,
+          "height": 316,
+          "file": "OSC_Microbio_09_01_pourplate-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 474,
+          "file": "OSC_Microbio_09_01_pourplate-1200.webp"
+        }
+      ],
+      "alt": "A diagram of the pour plate method. Step 1 – the bacterial sample is mixed with warm agar (45-50° C). Step 2 – the sample is poured onto a sterile plate. Step 3 – the sample is swirled to mix and allowed to solidify. Step 4 – the plate is incubated until bacterial colonies grow.",
+      "caption": "In the pour plate method of cell counting, the sample is mixed in liquid warm agar (45–50 °C) poured into a sterile Petri dish and further mixed by swirling. This process is repeated for each serial dilution prepared. The resulting colonies are counted and provide an estimate of the number of cells in the original volume sampled."
+    },
+    "OSC_Microbio_09_01_serialtub": {
+      "source": "media/OSC_Microbio_09_01_serialtub.jpg",
+      "sourceSha256": "1af453e23826275d00c72c0b620db8bb5673009b51b33b3a35b68f07ee87b3c9",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 1300,
+      "height": 668,
+      "variants": [
+        {
+          "width": 800,
+          "height": 411,
+          "file": "OSC_Microbio_09_01_serialtub-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 668,
+          "file": "OSC_Microbio_09_01_serialtub-1300.webp"
+        }
+      ],
+      "alt": "A diagram of serial dilution. A large beaker on the left contains a dark solution. 1 ml is moved from this beaker to a tube containing 9 ml of broth. This tube has a dilution of 1:10 and is lighter in color than the original beaker. A sample of 0.1 ml from this tube is put on an agar plate; the colonies are too numerous to count. 1 ml is taken out of this tube and placed in a tube containing 9 ml of broth. This tube now has a dilution of 1:100 from the original beaker and is even lighter in color. 0.1 ml is plated on an a agar plate and the colonies are still too numerous to count. 1 ml is taken from this tube and placed in another tube containing 9 ml broth. This is now a dilution of 1:1000 from the original beaker and the tube is lighter than the last. 0.1 ml is taken out of this tube and placed on an agar plate; there are 389 colonies. 1 ml is taken out of this tube and placed in another tube containing 9 ml broth. This is now a dilution of 1:10,000 from the original beaker and this tube is even lighter than the last. 0.1 ml is taken out of this tube and placed on an agar plate; there are 50 colonies. 1 ml is taken out of this tube and placed in a tube containing 9 ml of broth. This is a dilution of 1:100,000 from the original beaker and this is the lightest tube of all. 0.1 ml is taken from this tube and placed on an agar plate; there are 2 colonies.",
+      "caption": "Serial dilution involves diluting a fixed volume of cells mixed with dilution solution using the previous dilution as an inoculum. The result is dilution of the original culture by an exponentially growing factor. (credit: modification of work by “Leberechtc”/Wikimedia Commons)"
+    },
+    "OSC_Microbio_09_01_spectroph": {
+      "source": "media/OSC_Microbio_09_01_spectroph.jpg",
+      "sourceSha256": "f96b4ce8e7c22da4534a0227621175b6692f2404a58a2d15525820ffa902b919",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 1197,
+      "height": 499,
+      "variants": [
+        {
+          "width": 800,
+          "height": 333,
+          "file": "OSC_Microbio_09_01_spectroph-800.webp"
+        },
+        {
+          "width": 1197,
+          "height": 499,
+          "file": "OSC_Microbio_09_01_spectroph-1197.webp"
+        }
+      ],
+      "alt": "a) A photograph of a spectrophotometer; a machine with a keypad and a place to put a sample. b) A diagram explaining how the spectrophotometer measures turbidity. A light source passes through a prism and a single wavelength is selected. If this beam of light passes through a clear broth, most of the light reaches the detector. If this beam of light passes through a cloudy sample, much of the light is reflected and refracted and only a little bit of light reaches the detector.",
+      "caption": "(a) A spectrophotometer is commonly used to measure the turbidity of a bacterial cell suspension as an indirect measure of cell density. (b) A spectrophotometer works by splitting white light from a source into a spectrum. The spectrophotometer allows choice of the wavelength of light to use for the measurement. The optical density (turbidity) of the sample will depend on the wavelength, so once one wavelength is chosen, it must be used consistently. The filtered light passes through the sample (or a control with only medium) and the light intensity is measured by a detector. The light passing into a suspension of bacteria is scattered by the cells in such a way that some fraction of it never reaches the detector. This scattering happens to a far lesser degree in the control tube with only the medium. (credit a: modification of work by Hwang HS, Kim MS; credit b “test tube photos”: modification of work by Suzanne Wakim)"
+    },
+    "OSC_Microbio_09_01_spreadplate": {
+      "source": "media/OSC_Microbio_09_01_spreadplate.jpg",
+      "sourceSha256": "f0b3c1b33f9461617f05b448207bf19920d20e556cdb1c0379dd41157ece7c86",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 1123,
+      "height": 393,
+      "variants": [
+        {
+          "width": 800,
+          "height": 280,
+          "file": "OSC_Microbio_09_01_spreadplate-800.webp"
+        },
+        {
+          "width": 1123,
+          "height": 393,
+          "file": "OSC_Microbio_09_01_spreadplate-1123.webp"
+        }
+      ],
+      "alt": "A diagram of the spread plate method. Step 1 – a sample (0.1 ml) from a bacterial dilution is poured onto a solid medium. Step 2 – the sample is spread evenly over the surface. Step 3 – the plate is incubated until bacterial colonies grow on the surface of the medium.",
+      "caption": "In the spread plate method of cell counting, the sample is poured onto solid agar and then spread using a sterile spreader. This process is repeated for each serial dilution prepared. The resulting colonies are counted and provide an estimate of the number of cells in the original volume samples."
+    },
+    "OSC_Microbio_09_02_bog": {
+      "source": "media/OSC_Microbio_09_02_bog.jpg",
+      "sourceSha256": "f76964fdf9a065c2a8f944c33db941062c65f1982ab63deb65ac990f93800ce2",
+      "module": "m58829",
+      "kind": "photo",
+      "width": 1100,
+      "height": 400,
+      "variants": [
+        {
+          "width": 800,
+          "height": 291,
+          "file": "OSC_Microbio_09_02_bog-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 400,
+          "file": "OSC_Microbio_09_02_bog-1100.webp"
+        }
+      ],
+      "alt": "a) A photograph of a bog. B) A photograph of cows.",
+      "caption": "Anaerobic environments are still common on earth. They include environments like (a) a bog where undisturbed dense sediments are virtually devoid of oxygen, and (b) the rumen (the first compartment of a cow’s stomach), which provides an oxygen-free incubator for methanogens and other obligate anaerobic bacteria. (credit a: modification of work by National Park Service; credit b: modification of work by US Department of Agriculture)"
+    },
+    "OSC_Microbio_09_02_foot": {
+      "source": "media/OSC_Microbio_09_02_foot.jpg",
+      "sourceSha256": "51dea60902026b8aef71bc861ead23cc796f234cd0d56109c3f802f5cda2f77d",
+      "module": "m58829",
+      "kind": "photo",
+      "width": 653,
+      "height": 392,
+      "variants": [
+        {
+          "width": 653,
+          "height": 392,
+          "file": "OSC_Microbio_09_02_foot-653.webp"
+        }
+      ],
+      "alt": "A swollen foot with peeling skin and black regions under the skin.",
+      "caption": "This clinical photo depicts ulcers on the foot of a diabetic patient. Dead tissue accumulating in ulcers can provide an ideal growth environment for the anaerobe C. perfringens , a causative agent of gas gangrene. (Credit: Phalinn Ooi / Wikimedia Commons (CC-BY))"
+    },
+    "OSC_Microbio_09_02_jar": {
+      "source": "media/OSC_Microbio_09_02_jar.jpg",
+      "sourceSha256": "9a0255a9931d4c19d544cd387961415bccdda1c2026de1d9f5e484d11bf2809f",
+      "module": "m58829",
+      "kind": "photo",
+      "width": 1100,
+      "height": 414,
+      "variants": [
+        {
+          "width": 800,
+          "height": 301,
+          "file": "OSC_Microbio_09_02_jar-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 414,
+          "file": "OSC_Microbio_09_02_jar-1100.webp"
+        }
+      ],
+      "alt": "a) A photo of a stack of agar plates in a chamber. B) A photo of a chamber with sleeves for arms.",
+      "caption": "(a) An anaerobic jar is pictured that is holding nine Petri plates supporting cultures. (b) Openings in the side of an anaerobic box are sealed by glove-like sleeves that allow for the handling of cultures inside the box. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by NIST)"
+    },
+    "OSC_Microbio_09_02_listumbrel": {
+      "source": "media/OSC_Microbio_09_02_listumbrel.jpg",
+      "sourceSha256": "e954d72b3f09596d388850abd7528392346807db77361f01c61d1494524213ed",
+      "module": "m58829",
+      "kind": "photo",
+      "width": 1200,
+      "height": 509,
+      "variants": [
+        {
+          "width": 800,
+          "height": 339,
+          "file": "OSC_Microbio_09_02_listumbrel-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 509,
+          "file": "OSC_Microbio_09_02_listumbrel-1200.webp"
+        }
+      ],
+      "alt": "a) Two blood agar plates which have a red color. The left plate is labeled alpha hemolysis and shows slight clearings around the colonies. The right plate is labeled beta hemolysis and shows complete clearings around the colonies. B) Two tubes. The left tube is positive and shows cloudiness spreading out from the central line down the middle of the tube. The right tube is negative and shows no cloudiness spreading out from this central line.",
+      "caption": "(a) A sample blood agar test showing beta-hemolysis. (b) A sample motility test showing both positive and negative results. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by “VeeDunn”/Flickr)"
+    },
+    "OSC_Microbio_09_02_tubO": {
+      "source": "media/OSC_Microbio_09_02_tubO.jpg",
+      "sourceSha256": "8c2d99a7a3f8b8eb03b2ccf6ec412e20b313d4648d6185d5a80e374ba9883190",
+      "module": "m58829",
+      "kind": "photo",
+      "width": 900,
+      "height": 441,
+      "variants": [
+        {
+          "width": 800,
+          "height": 392,
+          "file": "OSC_Microbio_09_02_tubO-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 441,
+          "file": "OSC_Microbio_09_02_tubO-900.webp"
+        }
+      ],
+      "alt": "A diagram of bacterial distribution in tubes. Tube A shows obligate aerobes which grow at the top of the tube. Tube B shows obligate anaerobes which grow at the bottom of the tube. Tube C shows facultative anaerobes which grow best at the top but also grow throughout the tube. Tube D shows aerotolerant anaerobes which grow equally well throughout. Tube E shows microaerophiles which grow just below the top of the tube.",
+      "caption": "Diagram of bacterial cell distribution in thioglycolate tubes."
+    },
+    "OSC_Microbio_09_02_tubO_img": {
+      "source": "media/OSC_Microbio_09_02_tubO_img.jpg",
+      "sourceSha256": "fa9aa5dc8f593b5392f6f55968912f824860ac63e5f28bda233fe0dc51201f41",
+      "module": "m58829",
+      "kind": "photo",
+      "width": 806,
+      "height": 474,
+      "variants": [
+        {
+          "width": 800,
+          "height": 470,
+          "file": "OSC_Microbio_09_02_tubO_img-800.webp"
+        },
+        {
+          "width": 806,
+          "height": 474,
+          "file": "OSC_Microbio_09_02_tubO_img-806.webp"
+        }
+      ],
+      "alt": "A) Cells are all at the bottom of the tube. b) Cells are all at the top of the tube. C) Cells are all just under the top of the tube. D) Cells are throughout the tube but more prominent at the top.",
+      "caption": ""
+    },
+    "OSC_Microbio_09_03_natronL": {
+      "source": "media/OSC_Microbio_09_03_natronL.jpg",
+      "sourceSha256": "197f495ea96eb7d79b989ac526e014a3964f0822164ffbf96e75403fb35c7655",
+      "module": "m58830",
+      "kind": "photo",
+      "width": 700,
+      "height": 464,
+      "variants": [
+        {
+          "width": 700,
+          "height": 464,
+          "file": "OSC_Microbio_09_03_natronL-700.webp"
+        }
+      ],
+      "alt": "A photo of a red lake",
+      "caption": "View from space of Lake Natron in Tanzania. The pink color is due to the pigmentation of the extreme alkaliphilic and halophilic microbes that colonize the lake. (credit: NASA)"
+    },
+    "OSC_Microbio_09_03_pH": {
+      "source": "media/OSC_Microbio_09_03_pH.jpg",
+      "sourceSha256": "dc085c64f517cd26982347193996b0323282fe54cb8f9236c17bec52ffb96bd8",
+      "module": "m58830",
+      "kind": "photo",
+      "width": 750,
+      "height": 496,
+      "variants": [
+        {
+          "width": 750,
+          "height": 496,
+          "file": "OSC_Microbio_09_03_pH-750.webp"
+        }
+      ],
+      "alt": "A graph with pH on the X axis and growth rate on the Y axis. One bell shaped curve peaks at about pH 3 and drops down, reaching a growth rate of 0 at pH 1 and 5.5. This line is labeled acidophile. Another bell curve peaks at pH 7 and drops to 0 at pH 5.5 and 8.5. This is labeled neutrophile. The final curve peaks at pH 9.5 and drops to 0 at pH of 7.5 and 11.5. This is labeled alkaliphile.",
+      "caption": "The curves show the approximate pH ranges for the growth of the different classes of pH-specific prokaryotes. Each curve has an optimal pH and extreme pH values at which growth is much reduced. Most bacteria are neutrophiles and grow best at near-neutral pH (center curve). Acidophiles have optimal growth at pH values near 3 and alkaliphiles have optimal growth at pH values above 9."
+    },
+    "OSC_Microbio_09_03_yogurt": {
+      "source": "media/OSC_Microbio_09_03_yogurt.jpg",
+      "sourceSha256": "1352c8bd07afbd821673fc2ae188de61b3aee8df44a3cbdf673a732b3e9e70f5",
+      "module": "m58830",
+      "kind": "photo",
+      "width": 1300,
+      "height": 246,
+      "variants": [
+        {
+          "width": 800,
+          "height": 151,
+          "file": "OSC_Microbio_09_03_yogurt-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 246,
+          "file": "OSC_Microbio_09_03_yogurt-1300.webp"
+        }
+      ],
+      "alt": "Photo of yogurt and strawberries. Photo of pickes in home canning jars. Photo of sauerkraut. Photo of pico de gallo.",
+      "caption": "Lactic acid bacteria that ferment milk into yogurt or transform vegetables in pickles thrive at a pH close to 4.0. Sauerkraut and dishes such as pico de gallo owe their tangy flavor to their acidity. Acidic foods have been a mainstay of the human diet for centuries, partly because most microbes that cause food spoilage grow best at a near neutral pH and do not tolerate acidity well. (credit “yogurt”: modification of work by “nina.jsc”/Flickr; credit “pickles”: modification of work by Noah Sussman; credit “sauerkraut”: modification of work by Jesse LaBuff; credit “pico de gallo”: modification of work by “regan76”/Flickr)"
+    },
+    "OSC_Microbio_09_04_algalbloom": {
+      "source": "media/OSC_Microbio_09_04_algalbloom.jpg",
+      "sourceSha256": "be136ad69dd6ed64fcdbdb11763a024e2dbae28606df94e09c6d7e615e2bb8f3",
+      "module": "m58831",
+      "kind": "photo",
+      "width": 900,
+      "height": 579,
+      "variants": [
+        {
+          "width": 800,
+          "height": 514,
+          "file": "OSC_Microbio_09_04_algalbloom-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 579,
+          "file": "OSC_Microbio_09_04_algalbloom-900.webp"
+        }
+      ],
+      "alt": "An aerial photo of green swirls in the water of lake Erie.",
+      "caption": "Heavy rains cause runoff of fertilizers into Lake Erie, triggering extensive algal blooms, which can be observed along the shoreline. Notice the brown unplanted and green planted agricultural land on the shore. (credit: NASA)"
+    },
+    "OSC_Microbio_09_04_blacksmoke": {
+      "source": "media/OSC_Microbio_09_04_blacksmoke.jpg",
+      "sourceSha256": "a2a0f90619a53edf06ddf9213c558a35a8b8e4a8a0f19861893d7f2f03dc05f1",
+      "module": "m58831",
+      "kind": "photo",
+      "width": 700,
+      "height": 525,
+      "variants": [
+        {
+          "width": 700,
+          "height": 525,
+          "file": "OSC_Microbio_09_04_blacksmoke-700.webp"
+        }
+      ],
+      "alt": "A photo of a vent billowing out dark smoke.",
+      "caption": "A black smoker at the bottom of the ocean belches hot, chemical-rich water, and heats the surrounding waters. Sea vents provide an extreme environment that is nonetheless teeming with macroscopic life (the red tubeworms) supported by an abundant microbial ecosystem. (credit: NOAA)"
+    },
+    "OSC_Microbio_09_04_tempcurve": {
+      "source": "media/OSC_Microbio_09_04_tempcurve.jpg",
+      "sourceSha256": "bedc0ee854fc79071ed2085646c95b44ca178e2d13aa2969ddf167ceba91f263",
+      "module": "m58831",
+      "kind": "photo",
+      "width": 750,
+      "height": 495,
+      "variants": [
+        {
+          "width": 750,
+          "height": 495,
+          "file": "OSC_Microbio_09_04_tempcurve-750.webp"
+        }
+      ],
+      "alt": "A graph with temperature (°C) on the X axis and growth rate of bacteria on the Y axis. The first bell curve is labeled psychrophile an peaks at 10°; it drops to 0 at -5 and 20°C. The next bell curve is labeled mesoophile an peaks at 35°; it drops to 0 at 15 and 45°C. The next bell curve is labeled thermophile an peaks at 65°; it drops to 0 at 45 and 80°C. The final bell curve is labeled hyperthermophile an peaks at 90°; it drops to 0 at 65 and 105°C.",
+      "caption": "The graph shows growth rate of bacteria as a function of temperature. Notice that the curves are skewed toward the optimum temperature. The skewing of the growth curve is thought to reflect the rapid denaturation of proteins as the temperature rises past the optimum for growth of the microorganism."
+    },
+    "OSC_Microbio_09_05_MacMsa": {
+      "source": "media/OSC_Microbio_09_05_MacMsa.jpg",
+      "sourceSha256": "6e73ae42a246306cd9801b6448221820d3676503e76a00aad424e84ebf33e189",
+      "module": "m58833",
+      "kind": "photo",
+      "width": 500,
+      "height": 476,
+      "variants": [
+        {
+          "width": 500,
+          "height": 476,
+          "file": "OSC_Microbio_09_05_MacMsa-500.webp"
+        }
+      ],
+      "alt": "A light brown agar plate. Two streaks on the plate are bright pink and two streaks are beige.",
+      "caption": "On this MacConkey agar plate, the lactose-fermenter E. coli colonies are bright pink. Serratia marcescens , which does not ferment lactose, forms a cream-colored streak on the tan medium. (credit: American Society for Microbiology)"
+    },
+    "OSC_Microbio_09_05_autoinduc": {
+      "source": "media/OSC_Microbio_09_05_autoinduc.jpg",
+      "sourceSha256": "dedfc2777b444f46636f8ac439b1d08b488b71139da6d2e92ddb401d0c4cbfcc",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 638,
+      "height": 318,
+      "variants": [
+        {
+          "width": 638,
+          "height": 318,
+          "file": "OSC_Microbio_09_05_autoinduc-638.webp"
+        }
+      ],
+      "alt": "The short peptide has the following amino acids in a chain: tyr, ser, thr, cys, asp, phe, ile, met. Attached to the cys is an S, attached to the S is a C which also attaches to the met. The C also has a double bonded O. The N-acetylated homoserine lactone has a pentagon with an O on the bottom left corner and a double bonded O attached to the left corner. The top corner is attached to an N which is attached to an R and a C. The C is double bonded to an O and also has an H.",
+      "caption": "Short peptides in gram-positive bacteria and N-acetylated homoserine lactones in gram-negative bacteria act as autoinducers in quorum sensing and mediate the coordinated response of bacterial cells. The R side chain of the N-acetylated homoserine lactone is specific for the species of gram-negative bacteria. Some secreted homoserine lactones are recognized by more than one species."
+    },
+    "OSC_Microbio_09_05_filmdiag": {
+      "source": "media/OSC_Microbio_09_05_filmdiag.jpg",
+      "sourceSha256": "e0b3c57cad3caf0adc3fb7285939a6914ef39fc3de39e0017d69fa237200953f",
+      "module": "m58828",
+      "kind": "photo",
+      "width": 1196,
+      "height": 673,
+      "variants": [
+        {
+          "width": 800,
+          "height": 450,
+          "file": "OSC_Microbio_09_05_filmdiag-800.webp"
+        },
+        {
+          "width": 1196,
+          "height": 673,
+          "file": "OSC_Microbio_09_05_filmdiag-1196.webp"
+        }
+      ],
+      "alt": "Diagram of the formation of a biofilm. Step 1 – the reversible attachment of planktonic cells (seconds). This is shown as a few cells with flagella attaching to a surface. Step 2 – the first colonizers become irreversibly attached (seconds to minutes). This is shown as small clusters of cells on the surface. Step 3 – Growth and cell division (hours, days). This is shown as larger clusters on the surface. Step 4 – Production of EPS and formation of water channels (hours, days). This is shown as very large clusters. Step 5 – Attachment of secondary colonizers and dispersion of microbes to new sites (days, months). This is shown as small flagellated cells leaving from the very large cluster.",
+      "caption": "Stages in the formation and life cycle of a biofilm. (credit: modification of work by Public Library of Science and American Society for Microbiology)"
+    },
+    "OSC_Microbio_09_05_saltlake": {
+      "source": "media/OSC_Microbio_09_05_saltlake.jpg",
+      "sourceSha256": "42745752e6c74db000bacebb9dff1ce6994ed6b77679df4542c239444cbf99d1",
+      "module": "m58832",
+      "kind": "photo",
+      "width": 900,
+      "height": 596,
+      "variants": [
+        {
+          "width": 800,
+          "height": 529,
+          "file": "OSC_Microbio_09_05_saltlake-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 596,
+          "file": "OSC_Microbio_09_05_saltlake-900.webp"
+        }
+      ],
+      "alt": "A photo of a lake with purple and green regions.",
+      "caption": "Photograph taken from space of the Great Salt Lake in Utah. The purple color is caused by high density of the alga Dunaliella and the archaean Halobacterium spp. (credit: NASA)"
+    },
+    "OSC_Microbio_09_05_saureus": {
+      "source": "media/OSC_Microbio_09_05_saureus.jpg",
+      "sourceSha256": "4828a7aee9fa33d43bd4fa21176072837ddcdc13aa52ad1d42af0cbfd9363b6c",
+      "module": "m58833",
+      "kind": "photo",
+      "width": 700,
+      "height": 462,
+      "variants": [
+        {
+          "width": 700,
+          "height": 462,
+          "file": "OSC_Microbio_09_05_saureus-700.webp"
+        }
+      ],
+      "alt": "A micrograph of clusters of purple spheres.",
+      "caption": "Gram-positive cocci in clusters. (credit: Centers for Disease Control and Prevention)"
     }
   }
 }

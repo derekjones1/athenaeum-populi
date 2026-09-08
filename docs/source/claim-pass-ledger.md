@@ -36,6 +36,7 @@ printed; a Sonnet checker takes 5–8 minutes per chapter of 3–6 sections.
 | Microbiology | 05-the-eukaryotes-of-microbiology | 5 | done Sep 7 2026 (in the authoring run) | 467–468, 470–471; Volvox and the supergroup scheme kept |
 | Microbiology | 06-acellular-pathogens | 4 | done Sep 7 2026 (in the authoring run) | 483, 487–488; ICTV year and the Duncan contact counts kept |
 | Microbiology | 07-microbial-biochemistry | 5 | done Sep 7 2026 (in the authoring run) | none; polypeptide "up to ~50" vs Glossary "20 to 50" and the CF phenylalanine-deletion simplification kept |
+| Microbiology | 09-microbial-growth | 6 | done Sep 8 2026 (in the authoring run) | 532–533; the singlet-oxygen radical notation and the 20% listeriosis mortality figure kept |
 | Microbiology | 08-microbial-metabolism | 7 | done Sep 7 2026 (in the authoring run) | 512, 518; lithotroph/organotroph Glossary equivalences, the 5–10% meningococcal fatality figure, the anaerobic-respiration ATP ranges, and the *Nitrosomonas* attribution kept |
 
 Knowledge-check pages (`knowledge-check-*.md`) carry no source prose and are

@@ -168,8 +168,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 26,
       "upstreamSections": 127,
-      "localChapters": 8,
-      "mappedSections": 38
+      "localChapters": 9,
+      "mappedSections": 44
     }
   },
   "sections": [
@@ -2386,6 +2386,60 @@
       "moduleId": "m58825",
       "sourceTitle": "Biogeochemical Cycles",
       "moduleSha256": "7b64c66209ea2e2dc80666b3f5a674a17d88203ff84d7a78227b5129e09fce24"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/09-microbial-growth/01-how-microbes-grow.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "9.1",
+      "moduleId": "m58828",
+      "sourceTitle": "How Microbes Grow",
+      "moduleSha256": "ed53db65b054e7a4fbb340f6f5aeff166ce7306c8602c0a3b5143ecbffd7bfbd"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/09-microbial-growth/02-oxygen-requirements-for-microbial-growth.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "9.2",
+      "moduleId": "m58829",
+      "sourceTitle": "Oxygen Requirements for Microbial Growth",
+      "moduleSha256": "fd2c264c91dc45c2dd447a1f14522844f21e578dc673b7a5a0e7a494b26c4619"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/09-microbial-growth/03-the-effects-of-ph-on-microbial-growth.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "9.3",
+      "moduleId": "m58830",
+      "sourceTitle": "The Effects of pH on Microbial Growth",
+      "moduleSha256": "e2e9a0f19c3fc256c41f84a1129763b7d068774acba810f38f3fedbf539c184a"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/09-microbial-growth/04-temperature-and-microbial-growth.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "9.4",
+      "moduleId": "m58831",
+      "sourceTitle": "Temperature and Microbial Growth",
+      "moduleSha256": "7c196082fca945c2b43f9d8a1841283d7cffec7a61054eb974c1ac1a001eb925"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/09-microbial-growth/05-other-environmental-conditions-that-affect-growth.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "9.5",
+      "moduleId": "m58832",
+      "sourceTitle": "Other Environmental Conditions that Affect Growth",
+      "moduleSha256": "1be9397211d0dc41e2c2dd8483673d49149d1ab913ad246abb2b8ff50a67f4cf"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/09-microbial-growth/06-media-used-for-bacterial-growth.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "9.6",
+      "moduleId": "m58833",
+      "sourceTitle": "Media Used for Bacterial Growth",
+      "moduleSha256": "692a49c70e224b13c189e82c873e5245c8f48f7034d12d92b09bed5d22d3b3cc"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

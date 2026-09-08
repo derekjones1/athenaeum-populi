@@ -33,7 +33,10 @@ day** (five sections, 58 graded items, 12 self-checks, 32 figures, errata
 *(chapter 7)* came from it **Chapter 8, *Microbial Metabolism*, followed the
 same day** (seven sections, 100 graded items, 23 self-checks, 26 figures,
 errata 504–525, two claim corrections settled by the book's own text);
-rules marked *(chapter 8)* came from it.
+rules marked *(chapter 8)* came from it. **Chapter 9, *Microbial Growth*,
+followed on September 8** (six sections, 88 graded items, 25 self-checks,
+33 figures, errata 526–534, two claim corrections settled by the book's own
+text); rules marked *(chapter 9)* came from it.
 
 ## Source and authority
 
@@ -472,10 +475,15 @@ equation), plus:
 
 - **Magnification** is `40×` in prose (the multiplication sign, no space);
   the source's `<equation>` blocks — 2.3 (total magnification), 7.1–7.2
-  and 8.4 (biochemistry and fermentation), and 9.1–9.2 (the growth
-  arithmetic: generations, generation time) — are equations and go in
-  `$…$`; a reaction among them is Unicode text under biology's rule. The
-  two appendix modules with equations are not authored.
+  and 8.4 (biochemistry and fermentation), and 9.1 (the growth
+  arithmetic: N_n = N_0 · 2^n) — are equations and go in `$…$`; a
+  reaction among them (9.2's three ROS reactions) is Unicode text under
+  biology's rule. **A numeric exponent in PROSE or a shortcode parameter
+  is `$…$` too** (`$2^{48}$`, `$2.8 \times 10^{14}$`) — the lint blocks a
+  digit followed by a superscript digit everywhere except `alt` and
+  `longdesc`, where Unicode (`10⁻⁶`) is the form *(chapter 9)*. A letter
+  exponent (`2ⁿ`) stays Unicode. The two appendix modules with equations
+  are not authored.
 - **Gram-negative / gram-positive** are lower-case `gram` mid-sentence, as
   the source prints them; **Gram stain** (the procedure, after the person)
   is capitalized. Copy the source's case per occurrence; do not normalize.
@@ -816,6 +824,72 @@ Everything in biology's Verification section, plus:
   from the prose claim pass settled by the book's own text (archaeal
   membrane phospholipids against §3.3; the nitrogen-cycle summary against
   its own module), the rest figure-alt and spelling defects.
+
+- **A two-blank Fill in the Blank whose blanks are two independent
+  classification axes follows the chapter-7 independent-facts rule, not
+  the unordered-pair rule** *(chapter 9)*: §9.6's "The medium is ___ and
+  ___" (keyed *complex, differential*) is not one answer the module prints
+  as a phrase, so `verify-source-keys` reads a joined key ("complex and
+  differential") as `unsourced` and fails. Grade the distinguishing blank
+  (`differential`), print the other keyed word as given text, disclose in
+  the footer. The pilot's *Protista and Monera* form works only because the
+  module prints that phrase. And when an unordered pair IS kept as one
+  `textin`, its `accept` list needs both orders WITHOUT "and" as well —
+  the source's comma spelling normalizes to the bare pair, which matches
+  nothing else.
+- **A pair key longer than four words is one `multiplechoice`** *(chapter
+  9)*: §9.1's "a ___ or a ___" (*hemocytometer, Petroff-Hausser counting
+  chamber*) and "___ or ___" (*ATP, acid from fermentation*) render as one
+  MC each, key = the source list verbatim, distractors = other pairs of the
+  module's own methods in the same format.
+- **A media-bearing matching set is one `mediafigure` plus per-row MCs**
+  *(chapter 9)*: §9.2's four thioglycolate tubes — the figure once, with an
+  author-written caption and an alt that says where the cells sit in each
+  lettered tube but never names an oxygen class, then "Which type of
+  bacteria is growing in tube (a)?" over the source's five listed types in
+  list order, keyed by the source solution.
+- **A `textin` keyed to a compound the page prints as a formula lists the
+  formula in `accept`** *(chapter 9)*: `hydrogen peroxide` needs
+  `accept="H2O2"` (the Unicode `H₂O₂` normalizes to the same string and is
+  rejected as a duplicate). A binomial-keyed FILLER needs its abbreviated
+  form too (`Chlamydomonas nivalis` → `C. nivalis`); the accept rule in §5
+  is easy to miss when building a late filler.
+- **A `sortbins` bin label is the classification word alone** *(chapter
+  9)*: "Chemically defined medium" / "Complex medium" put the generic noun
+  "medium" — which every distinguishing sentence prints — into the
+  bin-word lint's path; `Chemically defined` / `Complex` do not.
+- **Grep the footer's own "fixing sentence" claim for words the module
+  never prints** *(chapter 9)*: §9.2's canned-foods conversion was
+  justified by "sealed environments"; "sealed" occurs in the module only
+  for glove-box openings. A conversion whose justification imports a word
+  is a two-sentence-plus-inference conversion — revert it.
+- **A converted stem may gain a referent, never a clause or a second
+  subject** *(chapter 9)*: "Given that free oxygen gas was essentially
+  nonexistent…" prepended to a CYU bullet, "thermophiles **and
+  hyperthermophiles**" added to another, and a plural possessive where the
+  source prints the singular were all reverted by the checkers.
+- **Author-built fillers leak into each other** *(chapter 9)*: §9.1's
+  filler MC distractor "sporulation in aerial filaments" sat directly above
+  the filler textin keyed `aerial filaments`, and a filler hint named the
+  body's `FtsZ` key. The distractor-above-a-textin rule and the
+  backwards hint sweep apply to author-built items as much as to source
+  items.
+- **A `longdesc` comparative ("roughly the same height") is a measured
+  claim** *(chapter 9)*: the temperature-curve peaks are visibly unequal;
+  read relative heights off the artwork like any count.
+- **Prose claim pass yield, chapter 9**: two accepted corrections settled
+  by the book itself (*L. monocytogenes* "psychrophile" against the
+  module's own class definitions and m58941's 0–50 °C range, erratum 532;
+  Actinomycetes "anaerobic" against the §4.4 Actinobacteria table, erratum
+  533), two suspicions kept (singlet-oxygen radical notation; 20% versus
+  16% listeriosis mortality). The 9.4 filler MC built on the psychrophile
+  sentence was reworded (the chapters 5–6 false-premise rule).
+- **Errata 526–534 came from this chapter**: the "psychotroph" matching
+  row, three figure-alt defects (a misspelt "pickes", four "an peaks" and
+  a "mesoophile" with mis-read peaks, an "alpha hemolysis" label the
+  artwork does not print), a Summary "hyperthemophiles", "proton pumps
+  inhibitors", the two claim corrections, and "health-acquired infections"
+  (kept as printed, twice in the chapter).
 
 ## Knowledge checks
 

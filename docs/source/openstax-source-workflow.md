@@ -38,7 +38,7 @@ pages are still being written, so parity is only checked for what exists.
 Biology was `in-progress` while it was written, so `build-map`/`verify-map`
 printed it as, e.g., `45/47 chapters, 201/208 sections mapped` — visibly, not
 silently — until its last chapter landed; it is `complete` now. Microbiology
-is `in-progress` and prints as `8/26 chapters, 38/127 sections mapped`.
+is `in-progress` and prints as `9/26 chapters, 44/127 sections mapped`.
 
 Every book's lock entry also carries a `contentPath` (for example
 `content/math/precalculus`, `content/life-health-sciences/biology`): the
@@ -140,7 +140,7 @@ not a publishing instruction.
 - `data/openstax/source-lock.json` (schema 2) records each bundle's
   official repository, current reviewed commit, module scope, and license,
   plus every book's collection, inferred PDF-era commit, and authoring status.
-- `data/openstax/source-map.json` (schema 2) connects all 520 authored
+- `data/openstax/source-map.json` (schema 2) connects all 526 authored
   local section paths to stable OpenStax module IDs and module SHA-256
   fingerprints, attributes each section to its bundle, and records per-book
   chapter and section coverage against the upstream collection.
@@ -200,10 +200,10 @@ that commit, and its copyright page prints no revision number (only
 "original publication year 2016"), so the pin and the PDF are taken to be
 the same edition until a section audit says otherwise. The book is `in-progress`: `content/life-health-sciences/microbiology/_index.md`
 lists its authored chapters under `## Chapters` with the rest on its
-"Planned contents" list, and `verify-map` prints `8/26 chapters, 38/127
+"Planned contents" list, and `verify-map` prints `9/26 chapters, 44/127
 sections mapped`. Its subject playbook is `docs/subjects/microbiology.md`;
 the collection is flat (no units), so the map records no `units` key for
-it. The chapter-by-chapter authoring log (September 5–7, 2026; chapter 8 landed September 7 as well) moved to
+it. The chapter-by-chapter authoring log (September 5–8, 2026; chapter 8 landed September 7 and chapter 9 on September 8) moved to
 `docs/history/openstax-source-workflow.md`.
 
 ## Precalculus 2e

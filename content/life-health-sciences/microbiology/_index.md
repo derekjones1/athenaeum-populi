@@ -52,14 +52,14 @@ pathogens that cause them.
 - **Microbial Metabolism** — energy, matter, and enzymes; the catabolism of
   carbohydrates, cellular respiration, and fermentation; the catabolism of
   lipids and proteins; photosynthesis; and the biogeochemical cycles.
+- **Microbial Growth** — binary fission, the growth curve, and counting
+  cells; biofilms and quorum sensing; the oxygen, pH, temperature, and
+  other conditions that affect growth; and the media used to grow bacteria.
 
 ## Planned contents
 
-Microbiology has 26 chapters. The remaining 18 will appear in this order:
+Microbiology has 26 chapters. The remaining 17 will appear in this order:
 
-- **Microbial Growth** — how microbes grow and the oxygen, pH, temperature,
-  and other conditions that affect growth, and the media used to grow
-  bacteria.
 - **Biochemistry of the Genome** — using microbiology to discover the
   secrets of life, and the structure and function of DNA, RNA, and cellular
   genomes.
