@@ -333,7 +333,7 @@ export async function residualContext() {
 
 if (process.argv[1] && resolve(process.argv[1]) === new URL(import.meta.url).pathname) {
   const [command, ...rest] = process.argv.slice(2);
-  const valued = new Set(['--out', '--context', '--only']);
+  const valued = new Set(['--out', '--context', '--only', '--pages-out']);
   const positional = rest.filter((a, i) => !a.startsWith('--') && !valued.has(rest[i - 1]));
   const outIndex = rest.indexOf('--out');
   const out = outIndex === -1 ? null : rest[outIndex + 1];
@@ -341,7 +341,7 @@ if (process.argv[1] && resolve(process.argv[1]) === new URL(import.meta.url).pat
   if (command === 'emit') {
     const root = positional[0];
     if (!root || !existsSync(root)) {
-      console.error('usage: node tools/verify/solve-check.mjs emit <content-root-or-page> [--out packets-dir] [--residual-fillins] [--context N] [--only hashes.json]');
+      console.error('usage: node tools/verify/solve-check.mjs emit <content-root-or-page> [--out packets-dir] [--pages-out masked-pages-dir] [--residual-fillins] [--context N] [--only hashes.json]');
       process.exit(2);
     }
     let residualFillins = null;
@@ -362,6 +362,18 @@ if (process.argv[1] && resolve(process.argv[1]) === new URL(import.meta.url).pat
     const packets = emitPackets(root, { residualFillins, context, only });
     let items = 0;
     for (const list of packets.values()) items += list.length;
+    // `--pages-out <dir>`: every page that has a packet, whole, with every
+    // key masked — what a fresh solver reads instead of the live page, so
+    // it can answer from the prose without ever seeing a shortcode's key.
+    const pagesOutIndex = rest.indexOf('--pages-out');
+    if (pagesOutIndex !== -1) {
+      const pagesOut = rest[pagesOutIndex + 1];
+      mkdirSync(pagesOut, { recursive: true });
+      for (const page of packets.keys()) {
+        writeFileSync(join(pagesOut, basename(page)), maskKeys(readFileSync(page, 'utf8')));
+      }
+      console.log(`masked ${packets.size} page(s) into ${pagesOut}/`);
+    }
     if (out) {
       mkdirSync(out, { recursive: true });
       for (const [page, list] of packets) {

@@ -1227,6 +1227,31 @@
       "status": "correct-local-source-defect",
       "errataEntry": 368,
       "rationale": "The cyanobacteria discussion contains two substantive scientific errors. It says nitrogen fixation converts molecular nitrogen to nitrites and nitrates, while this book's §§4.1 and 8.7 identify ammonia as the direct product and nitrification as the later oxidation to nitrite and nitrate. It also calls cyanophycin a secondary photosynthetic pigment alongside phycocyanin; this book's §8.6 lists phycocyanin but not cyanophycin among photosynthetic pigments, and Watzer and Forchhammer (Applied and Environmental Microbiology 84, e01298-18; doi:10.1128/AEM.01298-18) experimentally describe cyanophycin as a carbon/nitrogen storage polymer. The local page corrects both claims, carries a visible Source note beside each, and discloses both in its attribution footer."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/10-biochemistry-of-the-genome/04-structure-and-function-of-cellular-genomes.md",
+      "bundle": "microbiology",
+      "moduleId": "m58838",
+      "sourceElementIds": [
+        "fs-id1172098321612",
+        "fs-id1172098750149",
+        "fs-id1172100984930"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 545,
+      "rationale": "The Case in Point says plasmid pX02 \"encodes a capsular polysaccharide\"; the B. anthracis capsule is poly-γ-D-glutamic acid, a polypeptide (Ivanova et al., Nature 2003, the module's own citation; PMC7138205), so the page prints \"capsule\" with a visible Source note (erratum 545). The same page's viral genome-size floor \"3,500 base pairs\" contradicts the module's own chart, which plots deltavirus at 1.7 × 10³ bp (the chart's alt says 10²), so the page prints \"about 1,700 base pairs\" with a Source note (erratum 546). Both found by the chapter 10 prose claim pass, September 8, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/02-dna-replication.md",
+      "bundle": "microbiology",
+      "moduleId": "m58841",
+      "sourceElementIds": [
+        "fs-id1167662863443",
+        "fs-id1167662875651"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 550,
+      "rationale": "The module assigns pol δ to the eukaryotic leading strand and pol ε to the lagging strand; the evidence is the reverse (Pursell et al., Science 317 (2007): 127–130; Johansson and Dixon, CSH Perspect Biol 5 (2013): a012799), so the page swaps them with a visible Source note (erratum 550). The module's machinery table says topoisomerase IV introduces a \"single-stranded break\" while its own Termination paragraph says \"double-stranded breaks\" (a type II topoisomerase; Levine, Hiasa, and Marians 1998), so the page's table row follows the paragraph with a Source note (erratum 551). Both found by the chapter 11 prose claim pass, September 8, 2026."
     }
   ]
 }

@@ -15,7 +15,7 @@
 
 ## Coverage
 
-- Mapped local sections: 526
+- Mapped local sections: 537
 - Sections changed upstream: 40
 - Content-level changes: 32
 - Markup/metadata-only changes: 8
@@ -30,7 +30,7 @@
 - intermediate-algebra (`prealgebra-bundle`): `c1bbed4b86ff5c80686d339a6ca5e4e48fae2483`
 - precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864`
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
-- microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382` — in-progress, 44 sections mapped
+- microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382` — in-progress, 55 sections mapped
 
 ## Changed mapped sections
 

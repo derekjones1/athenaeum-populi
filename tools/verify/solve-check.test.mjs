@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
@@ -116,6 +116,16 @@ test('page context above an item carries prose and earlier questions, never a ke
     const [onlyOne] = emitPackets('content', { only: new Set([items[2].hash]) }).values();
     assert.deepEqual(onlyOne.map((item) => item.hash), [items[2].hash]);
   } finally { process.chdir(previous); }
+});
+
+test('emit --pages-out writes each page whole with every key, accept, hint, and model answer masked', () => {
+  const dir = scratch();
+  const result = spawnSync(process.execPath, [TOOL, 'emit', 'content', '--out', join(dir, 'packets'), '--pages-out', join(dir, 'masked')], { cwd: dir, encoding: 'utf8' });
+  assert.equal(result.status, 0, result.stderr);
+  const masked = readFileSync(join(dir, 'masked', 'a.md'), 'utf8');
+  assert.match(masked, /Which complex is not involved/);
+  assert.match(masked, /disposes of excess energy/);
+  assert.doesNotMatch(masked, /answer="photosystem I"|carotenoids|A hint the solver|Another hint|Model answer\.|8,22|Let n be/);
 });
 
 test('emit groups packets by page and leaves self-checks out', () => {

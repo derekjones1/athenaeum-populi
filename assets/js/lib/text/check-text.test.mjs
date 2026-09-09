@@ -10,6 +10,8 @@ test('normalizeText folds case, diacritics, quotes, dashes, punctuation, article
     ['naïve', 'naive'],
     ["Hooke's law", 'hookes law'],
     ['Hooke’s law', 'hookes law'],
+    ['5′ end', '5 end'],
+    ['5ʹ end', '5 end'],
     ['light-dependent reactions', 'light dependent reactions'],
     ['light–dependent reactions', 'light dependent reactions'],
     ['light dependent reactions', 'light dependent reactions'],

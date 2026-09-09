@@ -226,6 +226,10 @@ export function normalizeText(value) {
     .replace(/[−–—]/g, '-')
     .replace(/[“”]/g, '"')
     .replace(/[‘’]/g, "'")
+    // The prime family: U+2032 and the source's U+02B9 (a modifier LETTER,
+    // which the letter filter below would otherwise keep) both read as the
+    // typewriter apostrophe, so "5ʹ end" and "5′ end" are one key.
+    .replace(/[′ʹʼ]/g, "'")
     .replace(/\p{M}/gu, '')
     .replace(/[^\p{L}\p{N}]+/gu, ' ')
     .trim()

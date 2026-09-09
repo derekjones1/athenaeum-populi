@@ -9,6 +9,14 @@
     "result": "agrees"
    }
   },
+  "000c93967bdc1fef": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "000f05165508518a": {
    "verdict": "ok",
    "note": "Review Q (eip-364), keyed A matches source solution and the module's horizontal/vertical transmission definitions.",
@@ -117,6 +125,14 @@
   "006697e4b5e635ba": {
    "verdict": "ok",
    "note": "theta = atan2(5,3) in degrees = 59.0362...deg, rounds to 59.04 deg; node -e dirDeg(3,5)=59.0362, matches source's own 59.04 deg."
+  },
+  "006d40736086596e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "006fbb0ec49cfc8c": {
    "verdict": "ok"
@@ -236,6 +252,14 @@
   },
   "0111ba2461e91268": {
    "verdict": "ok"
+  },
+  "01176f8c0f2417ee": {
+   "verdict": "ok",
+   "note": "Source True/False fs-id1167661268608, KEY False, rendered as two-option multiplechoice (True then False), stem not prefixed with 'True or false:'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0117e7096c6b7a58": {
    "verdict": "ok"
@@ -1092,6 +1116,14 @@
     "result": "agrees"
    }
   },
+  "042284b61bfeea1f": {
+   "verdict": "ok",
+   "note": "multiplechoice (True/False), source-keyed. CNXML exercise fs-id1172098794154, KEY True. Options True then False. Confirmed against 'While the genotype of a cell remains constant, the phenotype may change...'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "042ba854d315ff51": {
    "verdict": "ok"
   },
@@ -1360,6 +1392,14 @@
   "04d4f192aaa2173e": {
    "verdict": "ok"
   },
+  "04d8c768bf210d1b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "04d95a043be43c3d": {
    "verdict": "ok",
    "note": "Review Question fs-id1352111; CNXML solution fs-id1968434 keys D, the 4th option 'polysaccharides' — matches.",
@@ -1373,6 +1413,14 @@
   },
   "04d9a3c52859a555": {
    "verdict": "ok"
+  },
+  "04dc6923dc86d14c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "04e5e07ce99cfc48": {
    "verdict": "ok"
@@ -1433,6 +1481,14 @@
   },
   "05083a6739e26809": {
    "verdict": "ok"
+  },
+  "05094b30f1c1b447": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "050a0944f77beaa4": {
    "verdict": "ok",
@@ -1772,6 +1828,14 @@
     "result": "agrees"
    }
   },
+  "0647343686a193c6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "064783c92a8417a5": {
    "verdict": "ok",
    "solved": {
@@ -1951,6 +2015,14 @@
   "070712a2c3cb3d92": {
    "verdict": "ok"
   },
+  "071641ee318d9b7d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0717867f3a1e1cca": {
    "verdict": "ok"
   },
@@ -2113,6 +2185,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "07b5d65af39264c3": {
+   "verdict": "ok",
+   "note": "body CYU (box3), stays a selfcheck: honest answer joins the telomere definition sentence with the separate reason sentence ('The telomeres protect coding sequences from being lost...'); model answer and rubric assembled from § DNA Replication in Eukaryotes (telomere paragraph) only."
   },
   "07ba6413ca39d762": {
    "verdict": "ok",
@@ -2375,6 +2451,14 @@
   "089a9b58910d00c5": {
    "verdict": "ok",
    "note": "KC 3 14.5 § body DNA polymerases pol α–ε (fs-id2018337), m66391 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "08a1161a31b7a322": {
+   "verdict": "ok",
+   "note": "Body CYU, Transduction section (fs-id1167663636244), bullet 1. Textin keyed by 'Viruses that infect bacteria (bacteriophages) may also move short pieces of chromosomal DNA...in a process called transduction.' accept='bacteriophage|phage' (checker D4: the fold is one-directional — a learner's plural 'phages'/'bacteriophages' folds to the singular accept members, but a singular typed answer needs the singular listed; verified 'bacteriophage', 'phage', and 'phages' all grade correct with node's check-text.mjs; lint rejects listing 'phages' too since it is the regular plural of accept member 'phage').",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -3015,6 +3099,10 @@
   "0b61fdf351c07780": {
    "verdict": "ok"
   },
+  "0b6b729e21a9033a": {
+   "verdict": "ok",
+   "note": "Source SA fs-id1167663737163, source prints no key. Selfcheck — requires the inference that a nonsense mutation truncates transposase (module does not print this inference explicitly, only defines transposase's role and, elsewhere in the book, what a nonsense mutation does), so kept as selfcheck rather than graded."
+  },
   "0b6c830ccba39cfa": {
    "verdict": "ok",
    "note": "KC 7 37.1 § body Lipid-Derived Hormones (or Lipid-soluble Hormones) (remainsteroid), m66626 — parent re-read against the module",
@@ -3127,6 +3215,22 @@
   },
   "0bc3954c4dbed81c": {
    "verdict": "ok"
+  },
+  "0bc4e14e6003d994": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0bc54528db7313a2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0bd0e2b6317da89c": {
    "verdict": "ok",
@@ -3491,6 +3595,14 @@
   },
   "0cdb9d61381ef0ef": {
    "verdict": "ok"
+  },
+  "0cde94eb111040a7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0cdfd6e10bc3db8a": {
    "verdict": "ok",
@@ -4340,6 +4452,14 @@
   "1032697116f3bacb": {
    "verdict": "ok"
   },
+  "103559bb6a4c3628": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "10405ed11076550c": {
    "verdict": "ok",
    "solved": {
@@ -4393,6 +4513,14 @@
   "106f888ff10f317a": {
    "verdict": "ok",
    "note": "module m66702 Critical Thinking Question eip-433; model answer is the source solution verbatim; checkpoints decompose it clause by clause with no new claims."
+  },
+  "107edd86215d5082": {
+   "verdict": "ok",
+   "note": "Source MC fs-id1167663653549, KEY C (specialized transduction), source options and order preserved verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1081f628323db066": {
    "verdict": "ok",
@@ -4484,6 +4612,10 @@
     "result": "agrees"
    }
   },
+  "10c50b69e385e56e": {
+   "verdict": "ok",
+   "note": "body CYU, selfcheck; model answer assembled from § Transfer RNAs."
+  },
   "10cbef210c14d4f5": {
    "verdict": "ok"
   },
@@ -4493,6 +4625,14 @@
   },
   "10ce4900e1499ffb": {
    "verdict": "ok"
+  },
+  "10d4361dd5b3401f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "10d617166f3d95a6": {
    "verdict": "ok",
@@ -4953,6 +5093,14 @@
     "result": "agrees"
    }
   },
+  "12540be1daf1f1d3": {
+   "verdict": "ok",
+   "note": "multiplechoice, source-keyed. CNXML exercise fs-id1172096227863, KEY B (phenotype); options verbatim source order. Re-derived: red pigment at a given condition is an observable characteristic resulting from current gene expression = phenotype, per the module's own genotype/phenotype definitions.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "12580ef8347646d4": {
    "verdict": "ok",
    "note": "Review Question exercise fs-idp83844208: keyed C ('They are derived by similar environmental constraints.'), matches the section's own definition of analogy/homoplasy.",
@@ -5036,6 +5184,14 @@
   "12979b1c0b4fae02": {
    "verdict": "ok",
    "note": "textin recall of glossary term 'pyruvate' (fs-id2926980); accept='pyruvic acid' matches section's own Step 10 text treating pyruvic acid and pyruvate as the same answer",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "12999c3c75bc687f": {
+   "verdict": "ok",
+   "note": "Body CYU (fs-id1167663640512), bullet 2. Multiplechoice keyed by 'the F plasmid occasionally integrates into the bacterial chromosome through recombination...forming an Hfr cell.' Distractors are this module's own descriptions of F' excision, typical F+/F- rolling-circle transfer, and transposon movement — sibling concepts, not invented. Key at position B.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -5143,6 +5299,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "131004ec2412173b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -5406,6 +5570,14 @@
   "145d074c96c3c949": {
    "verdict": "ok",
    "note": "CTQ (fs-idm29174080): model answer transcribes the source solution verbatim; TH1/TH2 spelled plain (no <sub>) in the checkpoint lines only, since checkpoints render as escaped plain text."
+  },
+  "1463ad2350bcb4ef": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "147ffbb7986d57fb": {
    "verdict": "ok",
@@ -6153,6 +6325,14 @@
     "result": "agrees"
    }
   },
+  "171c9fbc61f7ed7e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "17207d63259b93e2": {
    "verdict": "ok",
    "solved": {
@@ -6609,6 +6789,14 @@
     "note": "solver wrote the bare number 3, the key is the same value with the percent sign the item's percent form requires; value agrees"
    }
   },
+  "1897cd28c6855b48": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "18a780318c5ea1cc": {
    "verdict": "ok"
   },
@@ -6697,6 +6885,10 @@
   },
   "18f7089a096baf60": {
    "verdict": "ok"
+  },
+  "18f8198d4f77f16d": {
+   "verdict": "ok",
+   "note": "author-written from § DNA-Level Control (DNA methylation and histone acetylation/deacetylation, two sentences)."
   },
   "18fa1170b22d1b0a": {
    "verdict": "ok",
@@ -7146,6 +7338,14 @@
     "result": "agrees"
    }
   },
+  "1a96e1098375cb54": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1a99defe27c5e0f1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -7378,6 +7578,10 @@
   "1b743ff792d266f0": {
    "verdict": "ok",
    "note": "pi/6 = 30 deg special angle, cos(pi/6) = sqrt3/2, x-coordinate of point (sqrt3/2, 1/2)"
+  },
+  "1b77cc0f5b8f0d57": {
+   "verdict": "ok",
+   "note": "body CYU, selfcheck; model answer assembled from § Termination."
   },
   "1b7eebd8d66f59a4": {
    "verdict": "ok",
@@ -7664,6 +7868,14 @@
   },
   "1c8cfec15c3a331a": {
    "verdict": "ok"
+  },
+  "1c8d406e2bc8cf21": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1c8ebfcbd483d35a": {
    "verdict": "ok"
@@ -8044,6 +8256,22 @@
     "result": "agrees"
    }
   },
+  "1dc7b64dddd6d7d9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1dc7d5f99fc946f1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1dc98390d69e4ecb": {
    "verdict": "ok",
    "note": "f(x)=x^3-2x-15 is a polynomial; polynomial functions are continuous on all of (-infty,infty). Matches source exercise fs-id1165135684888 solution 'Continuous on (-infty,infty)'."
@@ -8204,6 +8432,14 @@
   "1e7dd0f003e94094": {
    "verdict": "ok"
   },
+  "1e80070ca1fb0f6e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1e8198e09f5daa5d": {
    "verdict": "ok",
    "solved": {
@@ -8275,6 +8511,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "1ed5fbf7fbc612b0": {
+   "verdict": "ok",
+   "note": "body CYU, selfcheck; model answer assembled from § Termination."
   },
   "1ee00082e5526117": {
    "verdict": "ok",
@@ -8475,6 +8715,14 @@
   "1fa15c0fecdd868a": {
    "verdict": "ok",
    "note": "m66620 Review Question fs-idp105367408, source solution B = 'bipolar'; page key matches.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1fa2e54dc5e147d8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -9181,6 +9429,10 @@
   "2261dd74b4ee1edd": {
    "verdict": "ok"
   },
+  "22635235f80e5a57": {
+   "verdict": "ok",
+   "note": "author-written selfcheck from § Effects of Mutations on Protein Structure and Function: the in-frame-insertion sentence; model answer says what the module gives (in-frame changes don't shift the frame) and stops rather than inventing a stop-codon exception the module does not state."
+  },
   "22650e3f7d8aee76": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -9196,6 +9448,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "2276f784b2c69ea9": {
+   "verdict": "ok",
+   "note": "selfcheck, Practice filler (source Short Answer fs-id1172100966893, unkeyed upstream). Stays a selfcheck: the honest answer assembles the compaction-necessity sentence and the supercoiling/packaging process sentences across two subsections. Model answer traces only to this module."
   },
   "2277e82768a009e1": {
    "verdict": "ok",
@@ -9280,6 +9536,10 @@
     "result": "agrees"
    }
   },
+  "22df8fa114c19719": {
+   "verdict": "ok",
+   "note": "unkeyed Short Answer [fs-id1172100644383], selfcheck; model answer assembles § Hershey and Chase's Proof (phage injects only nucleic acid, coat stays outside) with the experiment's separation logic — needs two paragraphs assembled, so stays a selfcheck per the life-sciences honest-answer test."
+  },
   "22e0c3c81e3b1213": {
    "verdict": "ok"
   },
@@ -9363,6 +9623,14 @@
   "2333f0762a07ea50": {
    "verdict": "ok",
    "note": "fs-idp148194704; module keys D, uterus; page keys the same option.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "23412d3ab62f8ecd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -9658,6 +9926,14 @@
   },
   "24966905f712818b": {
    "verdict": "ok"
+  },
+  "249db4f642fe7046": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "24a307511bd77730": {
    "verdict": "ok",
@@ -10003,6 +10279,14 @@
    "verdict": "ok",
    "note": "Critical Thinking eip-927; model answer is the source solution verbatim, checkpoints decompose its four sentences with no new claims."
   },
+  "25e3aa388d3de5d5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "25ecd0c08a9c7a5c": {
    "verdict": "ok"
   },
@@ -10224,6 +10508,10 @@
   "26d79b94ebb0de15": {
    "verdict": "ok",
    "note": "Asymptote y=d with d=3."
+  },
+  "26db1be1455e91b7": {
+   "verdict": "ok",
+   "note": "author-written from § Prokaryotic Gene Regulation (the repressor/activator/inducer paragraph)."
   },
   "26dfb2a0462d186e": {
    "verdict": "ok",
@@ -10563,6 +10851,10 @@
   "283026260d51f43d": {
    "verdict": "ok"
   },
+  "28371c3133f0a39a": {
+   "verdict": "ok",
+   "note": "checker fix D3: source Short Answer fs-id1167663986207 ('nearly universal'), unkeyed upstream, reverted from an invented-distractor multiplechoice to a selfcheck; model answer assembled from § The Genetic Code's own sentences (the 'nearly universal' claim plus the selenocysteine/pyrrolysine exceptions the module actually prints)."
+  },
   "28381bb8897909b2": {
    "verdict": "ok",
    "note": "glossary fs-id1809183: uniporter = transporter that carries one specific ion or molecule.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -10746,6 +11038,14 @@
     "result": "agrees"
    }
   },
+  "28dfd32534c68dd9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "28e62bc4c4711501": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -10753,6 +11053,14 @@
     "by": "orchestrator",
     "result": "adjudicated",
     "note": "accept gap: the module names the form \"Emsleyan/Mertensian mimicry\" and a learner who types either half is right; accept widened"
+   }
+  },
+  "28e739c6872947e0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
    }
   },
   "28e76674b85d821e": {
@@ -10889,6 +11197,10 @@
     "result": "adjudicated",
     "note": "solver wrote the bare number 6.25, the key is the same value with the percent sign the item's percent form requires; value agrees"
    }
+  },
+  "29543637e9dc870e": {
+   "verdict": "ok",
+   "note": "unmatched (body CYU bullet 3, note.check-your-understanding, no source key). Model answer and rubric assembled from § genotype/phenotype paragraph's last two sentences only: 'Although a cell's genotype remains constant, not all genes are used to direct the production of their proteins simultaneously. Cells carefully regulate expression of their genes, only using genes to make specific proteins when those proteins are needed.' Stays a selfcheck because the honest answer assembles two sentences (life-sciences rule)."
   },
   "29637d5a7d223337": {
    "verdict": "ok"
@@ -11093,6 +11405,14 @@
   },
   "2a592bc09946be7f": {
    "verdict": "ok"
+  },
+  "2a5b2fcaaf8694e9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "2a5e09f2a3aa1adf": {
    "verdict": "ok",
@@ -11566,6 +11886,14 @@
     "result": "agrees"
    }
   },
+  "2c043c5209eb7d16": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2c0631414e0696f3": {
    "verdict": "ok"
   },
@@ -12003,6 +12331,10 @@
     "result": "agrees"
    }
   },
+  "2d9646990d6c6ef6": {
+   "verdict": "ok",
+   "note": "body CYU selfcheck, unmatched; model answer from § Griffith's Transformation Experiments (Avery/MacLeod/McCarty systematic elimination paragraph)."
+  },
   "2d9675fc4fd4c798": {
    "verdict": "ok"
   },
@@ -12163,6 +12495,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2e04355d83b7ee52": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -13446,6 +13786,14 @@
     "result": "agrees"
    }
   },
+  "32ff54cbdc376543": {
+   "verdict": "ok",
+   "note": "multiplechoice, converted from body CYU § Noncoding DNA ('What is the role of noncoding DNA?'), per checker finding. ONE module sentence fixes the whole answer: '...contribute to the regulation of transcription or translation through the production of small noncoding RNA molecules, DNA packaging, and chromosomal stability.' Distractors are the module's own sibling phrases describing what genes ('code for proteins, enzymes, or stable RNA molecules'), the origin of replication ('the location...where DNA replication initiates'), and plasmids ('a few nonessential genes that may be helpful under specific conditions') do instead — none of these is a role of noncoding DNA. Swept every other hint/stem on the page for 'chromosomal stability' and related phrasing: no leak found.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "330a09c9104dc256": {
    "verdict": "ok"
   },
@@ -13835,6 +14183,14 @@
   "34c9d35d0051bf8e": {
    "verdict": "ok"
   },
+  "34ccd2b7a8480a3a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "34ce27ca8a5bb978": {
    "verdict": "ok",
    "note": "KC 8 44.1 § body Organismal Ecology (fs-idp77553120), m66410 — parent re-read against the module",
@@ -13987,12 +14343,28 @@
     "result": "agrees"
    }
   },
+  "35799dcb3f3159dd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "357d07e2de83c049": {
    "verdict": "ok",
    "note": "Parent-authored graphplot replacing an answer-figure-plus-fillin pair the section's conversion agent left behind. Re-derived from the printed question: f(x)=x^2+2x-8 has axis x=-b/2a=-1 and vertex (-1,-9), and factors as (x+4)(x-2) so the x-intercepts are (-4,0) and (2,0); f(0)=-8. On the authored grid (-6..4 by -10..8) the answer parabola reaches 9 snap-lattice points against plotPoints 3, so there is real slack and the vertex itself is on the lattice inside the grid. The worked example immediately above graphs f(x)=x^2-6x+8, a different equation, so the exercise is not transcription; the deleted static figure had named this vertex in its aria-label, directly above the fillin that asked for it."
   },
   "357fe6e60dd26f18": {
    "verdict": "ok"
+  },
+  "35807ecaab360257": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3580c1f5057c9e3a": {
    "verdict": "ok",
@@ -14296,6 +14668,10 @@
   },
   "36b37678d04fb0a1": {
    "verdict": "ok"
+  },
+  "36b4316109e64fb8": {
+   "verdict": "ok",
+   "note": "selfcheck, body CYU § Organization of Prokaryotic Chromosomes. Model answer assembles sentences from § Organization of Eukaryotic Chromosome (why compaction is needed, supercoiling, topoisomerases) and § Organization of Prokaryotic Chromosomes (histone-like proteins) since the fixing content spans two subsections — stays a selfcheck per the 'several sentences assembled' test."
   },
   "36b60e9275a98ea7": {
    "verdict": "ok",
@@ -14791,6 +15167,14 @@
   },
   "3802274605851ecb": {
    "verdict": "ok"
+  },
+  "380e447f0b44b050": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "380ee7b78dbb49f3": {
    "verdict": "ok",
@@ -15314,6 +15698,14 @@
     "result": "agrees"
    }
   },
+  "39f27c7b3273e50f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "39f391fbfc390b16": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -15336,6 +15728,14 @@
   "3a09db00f3c877d2": {
    "verdict": "ok",
    "note": "textin built from m66376 glossary definition fs-id1704998 (clathrin); prompt is the source meaning, answer is the glossary term, term does not appear in the prompt.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3a0a1b7716d67b14": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -15614,6 +16014,14 @@
   },
   "3b2eacdef737479b": {
    "verdict": "ok"
+  },
+  "3b3c2ced5f9a031d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3b41b8adc399c925": {
    "verdict": "ok"
@@ -15934,6 +16342,14 @@
   "3c79c41cdff07d3b": {
    "verdict": "ok"
   },
+  "3c7cfe388ce4c12a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3c8368c059de7be6": {
    "verdict": "ok",
    "note": "Review Question fs-idm73098672; source solution B = calcium, verified against the macronutrient/micronutrient lists in the section text.",
@@ -16221,6 +16637,14 @@
   "3dfa3c5061c1e0ce": {
    "verdict": "ok"
   },
+  "3dfac79ea64cef15": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3dfd627cd96600d4": {
    "verdict": "ok",
    "note": "KC 5 29.2 § glossary swim bladder (fs-idp121020944), m66589 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -16362,6 +16786,14 @@
   },
   "3e92b06b0689a598": {
    "verdict": "ok"
+  },
+  "3e96d4af7878167c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3ea343a4a05d032b": {
    "verdict": "ok",
@@ -16674,6 +17106,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "3fc65e2f7e294549": {
+   "verdict": "ok",
+   "note": "unkeyed Critical Thinking [fs-id1172098318748], selfcheck; model answer assembles the module's opening historical paragraphs (DNA discovered but not linked to heredity) with § Hershey and Chase's Proof's own conclusion."
   },
   "3fc812c4c4ae2cb9": {
    "verdict": "ok",
@@ -17156,6 +17592,14 @@
   "4172e43106a18a39": {
    "verdict": "ok"
   },
+  "41796041238505db": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "417e9563a1dcaf4b": {
    "verdict": "ok",
    "solved": {
@@ -17612,6 +18056,14 @@
   "4346755cb776f366": {
    "verdict": "ok"
   },
+  "434ed889b3ef7889": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4358ccb39697e629": {
    "verdict": "ok"
   },
@@ -18006,6 +18458,14 @@
   "44b038b589e37e1f": {
    "verdict": "ok"
   },
+  "44b22bb1fe77f331": {
+   "verdict": "ok",
+   "note": "[hash rebuilt after the parent removed \"respectively\" from the hint; was 4642f9afc8cf42d4] body CYU (box3), graded from § DNA Replication in Eukaryotes: 'The leading strand is continuously synthesized by the eukaryotic polymerase enzyme pol δ, while the lagging strand is synthesized by pol ε.' Distractors are the bacterial/other-stage enzymes named elsewhere in the module. Orchestrator blind solve agreed (solve-check.mjs).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "44b299ebf48673ee": {
    "verdict": "ok",
    "note": "Leading coefficient of -x^6 is -1. Matches CNXML ti_03_03_03."
@@ -18390,6 +18850,14 @@
    "verdict": "ok",
    "note": "KC 2 4.4 § body Lysosomes (fs-id1986769), m66452 — parent re-read against the module"
   },
+  "465a325fd3841e64": {
+   "verdict": "ok",
+   "note": "Body CYU 2/3 (fs-id1167663901904). Multiplechoice keyed by 'Although asexual reproduction produces more offspring more quickly, any benefits of diversity among those offspring are lost.' Distractors are the module's own sibling phrases: 'combines genetic info from two parents' and 'new combinations of parental genotypes' (both from para 1, sexual reproduction), 'shares genes with distantly related species' (from para 2, HGT). Author-built key varied to position B.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4660767eb2208012": {
    "verdict": "ok",
    "note": "C/B=(\\pi/2)/1=\\pi/2, positive=right (Try It 3, matches CNXML ti_06_01_03 solution)."
@@ -18420,6 +18888,14 @@
    "note": "KC 7-12 (fillin, line 401): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "466e4650cb12584e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "466e73ee1fb8abeb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -19104,6 +19580,14 @@
   "485271428add5737": {
    "verdict": "ok",
    "note": "Review Q fs-id2072168: source options and key (d, all of the above) transcribed verbatim; all three prior statements (allow transcription, move histones to open/close, are temporary) are supported by the section text.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4854e0f3cf089d59": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -20229,6 +20713,14 @@
     "result": "agrees"
    }
   },
+  "4cc4dc6142e9e38a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4cc4f6ddf6528954": {
    "verdict": "ok",
    "note": "node: cot(4π/7)=Math.cos(4π/7)/Math.sin(4π/7)=-0.22824347439014986, rounds to -0.228; matches CNXML solution -0.228"
@@ -20880,6 +21372,10 @@
   "4f82e9afe6ca191b": {
    "verdict": "ok"
   },
+  "4f8b72f49dc69cd6": {
+   "verdict": "ok",
+   "note": "body CYU, selfcheck; model answer assembled from § Ribosomes."
+  },
   "4f8c8195ea866e86": {
    "verdict": "ok"
   },
@@ -20943,6 +21439,14 @@
   "4fc7a92db7cb4519": {
    "verdict": "ok"
   },
+  "4fcb457e0f320acd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4fcf7976ee47cf96": {
    "verdict": "ok",
    "note": "KC 2 5.4 § glossary potocytosis (fs-id1442893), m66376 — parent re-read against the module",
@@ -20990,6 +21494,14 @@
   },
   "4fef49e0670c7b51": {
    "verdict": "ok"
+  },
+  "4ff09c093e3f2641": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4ff73e2d36a2d1ef": {
    "verdict": "ok",
@@ -21201,6 +21713,14 @@
   "50afc7fc26afb276": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id1172097200892 (source prints no key); stays selfcheck — comparison needs two module passages assembled (fs-id1172102150516 historical groupings; fs-id1172099883921 evolutionary-history basis)"
+  },
+  "50b635637b26ef53": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "50b680dbff924ddb": {
    "verdict": "ok",
@@ -21528,6 +22048,14 @@
   "52052d91606ca31c": {
    "verdict": "ok",
    "note": "m66378 critical-thinking solution fs-id1986270 verbatim match to page model answer. CHECKS clauses ('quickly removed by degradation or reabsorption' / 'cannot travel far') restate the same sentence, no added claim."
+  },
+  "5205dac213e87980": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "520623383cbf3d20": {
    "verdict": "ok"
@@ -22017,6 +22545,14 @@
     "result": "agrees"
    }
   },
+  "54b683e520e90700": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "54c4047a7d772a84": {
    "verdict": "ok"
   },
@@ -22112,6 +22648,22 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "551f4323bd691017": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5520eb4dcb7079a3": {
+   "verdict": "ok",
+   "note": "multiplechoice, source-keyed. CNXML exercise fs-id1172100660607, KEY D (eukaryotes and archaea); options verbatim source order. Confirmed against 'histones perform various levels of DNA wrapping' (eukaryotes) and the module's earlier note that archaea also use DNA supercoiling/packaging mechanisms alongside eukaryotes per the Summary ('Eukaryotes and archaea use histone proteins').",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -22644,6 +23196,14 @@
   "573d4e5879a68178": {
    "verdict": "ok"
   },
+  "57422dc13c425056": {
+   "verdict": "ok",
+   "note": "multiplechoice, converted from body CYU § Extrachromosomal DNA ('How are plasmids involved in antibiotic resistance?'), per checker finding. ONE module sentence fixes the whole answer: '...genes obtained from plasmids may have clinical implications, encoding virulence factors that give a microbe the ability to cause disease or make a microbe resistant to certain antibiotics.' Key paraphrases the antibiotic-resistance clause; distractors are the module's own sibling phrases for the disease/virulence clause of the same sentence, the HGT transfer mechanism, and prokaryotic DNA supercoiling — each true of plasmids or of DNA generally but not an answer to how plasmids confer antibiotic resistance specifically. Swept every other hint/stem on the page for 'resistant to certain antibiotics' and related phrasing: the only other occurrence is Practice's 'genes encoding antibacterial resistance,' a wrong-option distractor in a different item (which gene would NOT be on a plasmid) — no leak, since that item's correct answer is unrelated (glycolysis).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "57489d7bf4e54a18": {
    "verdict": "ok",
    "note": "re-derived: f(x)=(x-3)^2+1=x^2-6x+10, vertex (3,1) on lattice; matches CNXML Try It (fs-id1169148957608); grid -1..7/-1..9 gives 5 reachable points (gpcheck slack 2)."
@@ -22658,6 +23218,14 @@
   "575f67a1b834f415": {
    "verdict": "ok",
    "note": "Repaired 2026-08-15. The shaded region contains (0,0) and -2(0)+3=3, so 0<3 holds and 0>3 does not: the inequality is y<-2x+3. The prose 'above' was corrected to 'below' to match; the hint's own origin test agrees."
+  },
+  "576479b732c60b6e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "576deef3122251c7": {
    "verdict": "ok",
@@ -22835,6 +23403,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idm43264944: model answer transcribes the source solution verbatim ('Answers will vary...'); checkpoints are its clauses."
   },
+  "581c5867eb7a2b33": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "581df20f3b1c5237": {
    "verdict": "ok"
   },
@@ -22964,6 +23540,14 @@
     "result": "agrees"
    }
   },
+  "587f0c14225510c8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "58817f1680f318a0": {
    "verdict": "ok",
    "note": "MC fs-id2077371: option D (All of the above.) matches keyed solution D.",
@@ -23027,6 +23611,14 @@
   "58b8f6d24496b17a": {
    "verdict": "ok",
    "note": "body selfcheck, CYU box 1 bullet 2 (end of § The Theory of Spontaneous Generation). Model answer from the Redi six-containers sentence and the Spallanzani heated-sealed-flasks sentence, both earlier in the same subsection."
+  },
+  "58bc6565710e3003": {
+   "verdict": "ok",
+   "note": "multiplechoice, source-keyed. CNXML exercise fs-id1172100621924, KEY C (gene encoding enzymes for glycolysis); options verbatim source order. Confirmed against 'plasmids...contain one or a few genes not essential for normal growth' — glycolysis is a core, essential pathway, unlike the other three options' virulence/resistance/degradation genes.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "58bd41ed34613bf3": {
    "verdict": "ok",
@@ -23269,6 +23861,14 @@
   },
   "59b7a66e619de17a": {
    "verdict": "ok"
+  },
+  "59b933f44196ad79": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "59bf6a346cbbe2dc": {
    "verdict": "ok"
@@ -23854,6 +24454,14 @@
     "result": "agrees"
    }
   },
+  "5bf1f3060295f334": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5bf33fe181b7ebc8": {
    "verdict": "ok",
    "note": "KC 2 8.2 § summary Section Summary (fs-idm97401264), m66474 — parent re-read against the module",
@@ -24034,6 +24642,14 @@
   },
   "5c7643d88f64ddf1": {
    "verdict": "ok"
+  },
+  "5c7d585f9a3278b6": {
+   "verdict": "ok",
+   "note": "Filler cloze textin, no source exercise — built from the Key Concepts and Summary sentence 'Transposons are molecules of DNA with inverted repeats at their ends that also encode the enzyme transposase...'. Fills the third objective's Practice group to the three-item floor.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5c84ad7f21896be0": {
    "verdict": "ok",
@@ -24543,6 +25159,14 @@
   "5e754c3f2b3a3007": {
    "verdict": "ok"
   },
+  "5e7c243af2e81ffe": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5e7ec4e51703eb30": {
    "verdict": "ok"
   },
@@ -24593,6 +25217,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "5eb3e76609d06043": {
+   "verdict": "ok",
+   "note": "CNXML exercise fs-id1167662614430 (unkeyed Critical Thinking); its two figure links (OSC_Microbio_11_02_DNARep, OSC_Microbio_11_02_MesStahl) rendered as describing phrases per playbook rule. Model answer assembled from the Meselson-Stahl paragraph's own account of the one-round vs. two-round results. CHECKER D3: the model answer's clause 'a single purple band positioned closer to the red ¹⁴N band ... to replace ¹⁵N' repairs the garbled CNXML sentence fs-id1167662443949 (prints '<sup>14</sup><sup>14</sup>' / '<sup>15</sup>' with no 'N'); the ¹⁴N/¹⁵N reading is the only sensible one and is now disclosed in the footer and logged as a suspected source defect."
   },
   "5ebd05c77fb6de3c": {
    "verdict": "ok"
@@ -24963,6 +25591,10 @@
   "6051fa9a31a475d0": {
    "verdict": "ok"
   },
+  "605f3b4a202b3ad6": {
+   "verdict": "ok",
+   "note": "unkeyed Short Answer [fs-id1172098311272], reverted from an author-built multiplechoice to a selfcheck per checker note 1: the honest answer rests on TWO module sentences (grown to high population densities in a small space/short time; structural simplicity makes them easier to manipulate genetically), not one fixing sentence. Model answer and rubric quote both sentences of § Microbes and Viruses in Genetic Research verbatim."
+  },
   "60622f9b512bd2f4": {
    "verdict": "ok"
   },
@@ -25022,6 +25654,14 @@
   },
   "6088a0528a431f82": {
    "verdict": "ok"
+  },
+  "60948279c1aa5e15": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "609a7fa54da3d573": {
    "verdict": "ok",
@@ -25272,6 +25912,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "619636fa53a51954": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -25723,6 +26371,14 @@
   "639d2d0f7fd6ab33": {
    "verdict": "ok"
   },
+  "639e5811bba2b680": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "63a0d240aa7dc0be": {
    "verdict": "ok",
    "solved": {
@@ -25968,6 +26624,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "649250cb317cdd07": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -26384,6 +27048,14 @@
    "verdict": "ok",
    "note": "EA KC 06-10 §10.5, Ch.10 Practice Test 'For each parabola, find (a) which way it opens...' for y=3x^2+6x+8 (m82559, fs-id1166502099710; key part (a) 'up'). Re-derived: 3x^2+6x+8 = 3(x+1)^2+5, so the parabola opens upward with vertex (-1,5) and y-intercept (0,8) — option 0 is exactly that curve. Option 1 is its reflection in the x-axis, -3x^2-6x-8 = -3(x+1)^2-5, which opens downward with vertex (-1,-5) and y-intercept (0,-8): the distractor the printed option 'down' described. The exercise was moved below the axis-of-symmetry and vertex fill-ins about the same parabola so the option figures cannot answer them."
   },
+  "65ff4147d1e838a4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "660c75537ab8dd7a": {
    "verdict": "ok",
    "note": "CNXML fs-id1172101704337 CT, source prints no key; selfcheck assembled from § Biofilms and Human Health antibiotic-resistance paragraph"
@@ -26571,6 +27243,14 @@
   "66cc9e367ad847eb": {
    "verdict": "ok",
    "note": "Glossary recall, fs-idp74644320 (denitrification).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "66d0374686ca8d8b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -26892,6 +27572,10 @@
   },
   "68100209d97249c8": {
    "verdict": "ok"
+  },
+  "6810b8fee83bd54c": {
+   "verdict": "ok",
+   "note": "unkeyed Short Answer [fs-id1172100900083], reverted from an author-built multiplechoice to a selfcheck per checker note 1: the honest answer rests on TWO module sentences (DNA's four nucleotides too simple; protein's twenty amino acids sufficiently complex), not one fixing sentence. Model answer and rubric quote both sentences of § DNA as the Molecule Responsible for Heredity verbatim."
   },
   "6812fb1ccb4ff11b": {
    "verdict": "ok"
@@ -27555,6 +28239,14 @@
   },
   "6a442077c6f1e78b": {
    "verdict": "ok"
+  },
+  "6a50f8650e7ba73a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "6a53eed2d0e2e9d6": {
    "verdict": "ok",
@@ -28502,6 +29194,14 @@
   "6de452cdaedbf259": {
    "verdict": "ok"
   },
+  "6deb128bad2cfeb6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6def64c2af923383": {
    "verdict": "ok"
   },
@@ -28585,6 +29285,14 @@
   "6e384e4a0ac97e74": {
    "verdict": "ok",
    "note": "Practice (source fs-id1165135510852, balloon, baseline 3.5mi=18480ft, elevation 27/41deg): angle at balloon=180-27-41=112; distance from woman(41deg) to balloon=18480*sin(27)/sin(112)=9042...; height=that*sin(41)=5936.44 -> 5936 ft. Matches CNXML answer 5936 ft."
+  },
+  "6e3fba170b2d4137": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "6e4da6dc93940628": {
    "verdict": "ok",
@@ -28684,6 +29392,14 @@
    "verdict": "ok"
   },
   "6e8feca61e2fda33": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6e91df45146b3cd0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -29169,6 +29885,14 @@
   "70a5f871e0a1f7a4": {
    "verdict": "ok"
   },
+  "70a9658e50fc8b02": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "70b1e80d25a50571": {
    "verdict": "ok",
    "note": "fs-id2170891 (CNXML solution: sec x). tan(x)sin(x)+sec(x)cos^2(x) = sin^2x/cos x + cos x = (sin^2x+cos^2x)/cos x = sec x; confirmed numerically at x=1 (1.8508157176809257 vs sec(1)=1.8508157176809255)."
@@ -29209,6 +29933,14 @@
   "70cac35eff738abc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "70cc7c8e96b7b9ef": {
+   "verdict": "ok",
+   "note": "textin, filler. Cloze from Summary sentence 'Genes code for proteins, or stable RNA molecules, each of which carries out a specific function in the cell.' Answer 'genes' does not appear in the blanked question; no accept list needed (grader case-folds).",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -29271,6 +30003,14 @@
   "7133fcedf6b9661a": {
    "verdict": "ok",
    "note": "cramer3 on x+2y-4z=-1,7x+3y+5z=26,-2x-6y+7z=-6: D=77,Dx=77,Dy=231,Dz=154 -> (1,3,2), run in Node; matches CNXML solution (1,3,2) (fs-id1517134)."
+  },
+  "713a78bf0f1c277e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7141c435e7a4e718": {
    "verdict": "ok"
@@ -29637,6 +30377,14 @@
   "728ea080bf51fcde": {
    "verdict": "ok"
   },
+  "72b2fecdccbe54d4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "72b84266874584e6": {
    "verdict": "ok"
   },
@@ -29669,6 +30417,14 @@
   "72e3aa5ab73b9076": {
    "verdict": "ok",
    "note": "selfcheck; § Alternative Patterns of Cell Division: fragmentation vs budding paragraphs"
+  },
+  "72e671a00dab7738": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "72e701a8b35437e0": {
    "verdict": "ok",
@@ -29918,6 +30674,14 @@
   "742e43bbd3aa9a0e": {
    "verdict": "ok"
   },
+  "742e827b17d69dec": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "742fec9630f34eac": {
    "verdict": "ok"
   },
@@ -30152,6 +30916,14 @@
     "result": "agrees"
    }
   },
+  "753f7075e5c79f4c": {
+   "verdict": "ok",
+   "note": "Source FIB fs-id1167663993594, KEY 'Horizontal gene transfer' -> answer lower-cased 'horizontal gene transfer' per brief, accept='HGT'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "754043d08960f75e": {
    "verdict": "ok"
   },
@@ -30161,6 +30933,22 @@
   "754f73feb8eec60d": {
    "verdict": "ok",
    "note": "glossary recall (m66524 rooted); accept widened September 5, 2026 to take \"rooted tree\" / \"rooted phylogenetic tree\" (completion-audit checker: the prompt's \"is called ________\" invites the noun phrase) — parent re-read against the glossary; re-solved cold by the orchestrator",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "75502b8977046d66": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "7554fa911d108860": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -30246,6 +31034,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "75a79aacd41e0740": {
+   "verdict": "ok",
+   "note": "source exercise fs-id1167663732098 (Short Answer), source prints no key. Reverted from a multiplechoice (hash dd39b451692b4e9b) to a selfcheck per the checker's D1 finding: the two mechanisms (alarmones, an alternate σ factor) live in two different subsections, not one fixing sentence, so the pair-shaped-key rule does not apply. Model answer and rubric are assembled from one sentence each of § Alarmones and § Alternate σ Factors. Group 2 still meets the 3-item floor and keeps two auto-graded items (the MC and textin beside it), so no filler was added."
   },
   "75ac6f2d6fc3a98d": {
    "verdict": "ok"
@@ -30521,6 +31313,14 @@
     "result": "agrees"
    }
   },
+  "76e379c3a04f3a2d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "76f7601e032b9cdd": {
    "verdict": "ok"
   },
@@ -30595,6 +31395,14 @@
   },
   "773cae40b69fd28d": {
    "verdict": "ok"
+  },
+  "773d5a0012fe0c09": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "773d8297007aeb1c": {
    "verdict": "ok",
@@ -31269,6 +32077,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 941): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "79a036c76bc55559": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "79a050a296049bc6": {
    "verdict": "ok",
    "note": "5*pi/6 rad = 150 deg, between 90 and 180, terminal side in QII"
@@ -31366,6 +32182,15 @@
   },
   "7a0b8a1574fb6b62": {
    "verdict": "ok"
+  },
+  "7a0def78fdf192af": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "Source key A stands (fs-id1172096089432): the stem asks for results consistent with PROTEIN being the hereditary molecule, so radioactivity from the ³⁵S-labelled protein in the pellet is the answer; the solver misread the stem as asking for the actual result."
+   }
   },
   "7a29457e61e204b1": {
    "verdict": "ok",
@@ -31763,6 +32588,14 @@
     "result": "agrees"
    }
   },
+  "7b76ceaf1139a475": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7b77b45000bc7114": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -31824,6 +32657,10 @@
   },
   "7ba9175b3a1e932d": {
    "verdict": "ok"
+  },
+  "7baa2f01c7bddcfa": {
+   "verdict": "ok",
+   "note": "body CYU, selfcheck; model answer assembled from § Initiation."
   },
   "7bababa99d6b16e0": {
    "verdict": "ok"
@@ -32113,6 +32950,10 @@
     "result": "agrees"
    }
   },
+  "7cc2f31a648f66f8": {
+   "verdict": "ok",
+   "note": "CNXML exercise fs-id1167662470264 (unkeyed Critical Thinking), stays a selfcheck (an inference beyond a single stated fact); model answer assembled from § Initiation's 3′-OH requirement sentences only."
+  },
   "7cc40438ac311702": {
    "verdict": "ok",
    "note": "Unkeyed Short Answer fs-id1167662418593, stays selfcheck: model answer assembled from '§ Chemiosmosis, Proton Motive Force, and Oxidative Phosphorylation' -- the PMF definition sentence and the chemiosmosis/ATP synthase sentence; ===CHECKS=== clauses quote the model answer's own words. Unchanged both rounds; its verbatim source stem still names 'chemiosmosis' and 'proton motive force', but it is positioned last in its group, after both group-3 textins, so it cannot forward-leak either of them (checker's D3 second bullet; residual co-occurrence is with a source-verbatim stem that cannot be reworded, and is ordered to avoid exploitability)."
@@ -32164,6 +33005,14 @@
    "note": "x=(4+-sqrt(16-20))/2=2+-i, verified by substitution; key p1297 #5"
   },
   "7d0a8e3c03e47569": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "7d0abb7f2e5fe49a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -32563,6 +33412,14 @@
     "result": "agrees"
    }
   },
+  "7e594b2451ec21aa": {
+   "verdict": "ok",
+   "note": "Source MC fs-id1167663963908, KEY A (conjugation), source options and order preserved verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7e5f1fda6de03ed4": {
    "verdict": "ok",
    "note": "Line segment runs from screen (29.5,120.5) to (422.5,251.5) on the same axes, giving points (-9.825,5.275) and (9.825,-1.275), a slope of exactly -1/3, matching the declared answer."
@@ -32584,6 +33441,10 @@
   "7e708d01bdf4bb6e": {
    "verdict": "ok",
    "note": "Critical Thinking Question fs-id2020932, solution fs-id2080482 transcribed verbatim as the self-check model answer; preamble kept in full; rubric checkpoints are the model answer's own clauses (4), each an exact substring."
+  },
+  "7e7dc483b63e97df": {
+   "verdict": "ok",
+   "note": "body CYU, selfcheck; model answer assembled from § Elongation (A/P/E site definitions)."
   },
   "7e7e1ae8bfda066c": {
    "verdict": "ok",
@@ -32681,6 +33542,14 @@
   },
   "7ede5365235514c2": {
    "verdict": "ok"
+  },
+  "7ee9683cab7e3f6c": {
+   "verdict": "ok",
+   "note": "textin, source-keyed. CNXML exercise fs-id1172098276459, KEY 'horizontal'. Confirmed against 'Bacteria can exchange these plasmids with other bacteria in a process known as horizontal gene transfer (HGT).'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7ef4467841a10d18": {
    "verdict": "ok",
@@ -32792,6 +33661,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "7f7eb20631b51493": {
+   "verdict": "ok",
+   "note": "selfcheck, no source key. CYU box 1 (fs-id1172096214586). Assembles RNA Structure section sentences: strand-length/strandedness, ribonucleotide composition, DNA's deoxyribose/thymine vs RNA's ribose/uracil, intramolecular base pairing. No new claim; several sentences assembled, so kept as selfcheck rather than converted."
   },
   "7f8172b7becec699": {
    "verdict": "ok",
@@ -32916,6 +33789,14 @@
   },
   "8018b0fec8e1f8cd": {
    "verdict": "ok"
+  },
+  "801ff555cf2013c0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "8022be2cdc24b296": {
    "verdict": "ok",
@@ -33301,6 +34182,14 @@
   },
   "81ddb511fccd6413": {
    "verdict": "ok"
+  },
+  "81e05c54e0e91b15": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "81e21e2136054222": {
    "verdict": "ok",
@@ -33743,6 +34632,14 @@
    "verdict": "ok",
    "note": "Practice obj3-2: same ellipse, a^2=16 (x-term) major axis x, vertices (1+-4,1)=(5,1),(-3,1); matches CNXML fs-id1332813 solution."
   },
+  "8375806b67ec5ec3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8375e97c5579ebba": {
    "verdict": "ok",
    "solved": {
@@ -33773,6 +34670,14 @@
   },
   "839a72c5486ec09f": {
    "verdict": "ok"
+  },
+  "83a407c0a51d1675": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "83a576e9bf8dd8f0": {
    "verdict": "ok",
@@ -34067,6 +34972,10 @@
     "result": "agrees"
    }
   },
+  "84a7315afa3c1bd6": {
+   "verdict": "ok",
+   "note": "checker fix D1: source Critical Thinking fs-id1167661366134 (OSC_Microbio_11_04_TransComp_img labelling), unkeyed upstream; selfcheck model answer rewritten so all nine drawn letters are assigned and the ribosome's E, P, and A sites (letter C's three converging leader lines) are explicitly named, in the order they fall along the mRNA's 5′→3′ direction as drawn: G=mRNA, D=codons, C=the three site positions (E, P, A left to right), H=anticodons of the tRNAs at those sites, A=growing polypeptide (held at the P site), B=incoming amino acid (carried at the A site), F=direction of translocation, I=large ribosomal subunit, drawing-letter E=small ribosomal subunit."
+  },
   "84ab7f746a0986c7": {
    "verdict": "ok",
    "solved": {
@@ -34179,6 +35088,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "84f64d082413a2aa": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -34356,6 +35273,10 @@
   "857c1af9cc4c4221": {
    "verdict": "ok"
   },
+  "857e703bef957602": {
+   "verdict": "ok",
+   "note": "author-written selfcheck assembling § Causes of Mutations (mutagen/carcinogen sentence) with § The Ames Test (mutation-rate and further-testing sentences); two-sentence draw, so stays a selfcheck rather than a graded item."
+  },
   "85815d1280a5019b": {
    "verdict": "ok",
    "note": "P(11,5)=11*10*9*8*7=55440 (node BigInt); confirmed retyping 'P(11,5)' grades incorrect via checkAnswer."
@@ -34428,6 +35349,10 @@
   "85bc9730dd9679cd": {
    "verdict": "ok"
   },
+  "85bdec5f872adeb7": {
+   "verdict": "ok",
+   "note": "CNXML exercise fs-id1167660147674 (unkeyed Short Answer). Fully worked selfcheck: base-paired A-T/G-C, antiparallel orientation applied; re-derived independently — template 3′-TACTGACTGACGATC-5′ pairs to new strand 5′-ATGACTGACTGCTAG-3′, confirmed base by base."
+  },
   "85c3bb5dc444745e": {
    "verdict": "ok",
    "solved": {
@@ -34482,6 +35407,14 @@
   },
   "85f8185c93d0ae69": {
    "verdict": "ok"
+  },
+  "86057aebd0bce13f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "86090c389e6b2c14": {
    "verdict": "ok"
@@ -34686,6 +35619,14 @@
     "result": "agrees"
    }
   },
+  "86ec7ae2d04e2208": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "86ee896e8202b479": {
    "verdict": "ok"
   },
@@ -34863,6 +35804,14 @@
   "878544997c1e0f17": {
    "verdict": "ok",
    "note": "m66677 fs-idm43088464; source key C, 'sterilization'; page keys C; supported by 'Tubal ligation and vasectomy are considered permanent prevention, while other methods are reversible and provide short-term contraception.'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "87882c72174f19ac": {
+   "verdict": "ok",
+   "note": "Body CYU, Transduction section (fs-id1167663636244), bullet 2. Multiplechoice keyed by the specialized-transduction sentence; distractors are this module's own descriptions of generalized transduction, conjugation (F plasmid/pilus), and transformation (naked DNA from environment) — a compare-the-three-mechanisms test, not invented content. Key at position C.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -35145,6 +36094,14 @@
    "verdict": "ok"
   },
   "88bdd2b5de7cbe7d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "88d09cd962827acc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -35511,6 +36468,14 @@
   "8a789ad9a870c393": {
    "verdict": "ok"
   },
+  "8a7c8a87f987d4fe": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8a7d4a3726dba943": {
    "verdict": "ok",
    "note": "KC 5 29.2 § body Class Petromyzontida: Lampreys (fs-idp99241536), m66589 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
@@ -35650,6 +36615,14 @@
   },
   "8afd68c2205f7a56": {
    "verdict": "ok"
+  },
+  "8b00497b112eb1a4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "8b0cf212c7d81509": {
    "verdict": "ok",
@@ -35825,6 +36798,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8bbca464af6c8d76": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -36405,6 +37386,14 @@
   "8e8ca7eb068079e0": {
    "verdict": "ok"
   },
+  "8e9c6ed3594a083d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8e9f0657e86b3a7a": {
    "verdict": "ok",
    "note": "Critical Thinking eip-544 (fat-free foods): model answer is the source solution verbatim; checkpoints decompose its four clauses with no new claims."
@@ -36728,6 +37717,14 @@
    "verdict": "ok",
    "note": "Practice item, source exercise fs-id1165135205038. Solved -3x-4y=9, 12x+4y=-6 via X=A^-1 B in exact rational arithmetic: X=(1/3,-5/2). Matches source's printed (1/3,-5/2); verified by substitution."
   },
+  "8fee5bfe3e7b1d40": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8ff9dd00cc5eb70f": {
    "verdict": "ok",
    "solved": {
@@ -36990,6 +37987,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "911ce9dff483242e": {
+   "verdict": "ok",
+   "note": "source CT fs-id1167660177423 (unkeyed); fully worked selfcheck — every strand transcribed, transcribed to mRNA, and translated by hand against the standard genetic code (the same table given in Section 11.4's figure, per the brief's note that 11.5 may use it); re-derived independently and cross-checked codon by codon: Strand #1 silent (ACA/ACU both Thr), Strand #2 missense (Thr→Pro), Strand #3 nonsense (UGC→UGA introduces a premature stop), Strand #4 frameshift (template one base short of wild type)."
   },
   "9124d003d5ef5d2b": {
    "verdict": "ok",
@@ -37572,6 +38573,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 825): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "93bc55e1939c1f5a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "93bc66af80bb2057": {
    "verdict": "ok"
   },
@@ -37666,6 +38675,14 @@
   "9413a0726a6a977d": {
    "verdict": "ok"
   },
+  "941e228bdd2a6e58": {
+   "verdict": "ok",
+   "note": "multiplechoice, source-keyed. CNXML exercise fs-id1172100849685, KEY C (plasmids); options verbatim source order. Confirmed against the Extrachromosomal DNA section: 'some prokaryotes also have smaller loops of DNA called plasmids.'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9421491cae350cef": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 196): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -37679,6 +38696,14 @@
    "note": "Section Exercise 29 part 2: b = 7/tan(30deg) = 7 sqrt3 = 12.1244, computed with node; matches CNXML solution 'b=7 sqrt3'."
   },
   "942a5022644c15e0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "942aa8372cb95db4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -37897,6 +38922,14 @@
     "result": "agrees"
    }
   },
+  "94ed5d4dc3ddd10b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "94f4c45b59489eff": {
    "verdict": "ok",
    "solved": {
@@ -38061,6 +39094,14 @@
   "95afc25a99c464d6": {
    "verdict": "ok",
    "note": "parent re-verdict after accept gained the module's own compound form 'genomic fusion' and the plural; answer unchanged, re-read against m66532 glossary and prose; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "95b692240b1c583f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -39335,6 +40376,14 @@
   "9ad99ecb536f2db4": {
    "verdict": "ok"
   },
+  "9adc3e0bad9eb208": {
+   "verdict": "ok",
+   "note": "Body CYU, Transposition section (fs-id1167661309410). Multiplechoice keyed by 'Movement within the same DNA molecule can alter phenotype by inactivating or activating a gene.' Distractors are this module's own descriptions of Hfr whole-chromosome transfer, conjugation-pilus formation, and transformation — sibling HGT/transposon concepts. Key at position C.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9ae38d1a999d767b": {
    "verdict": "ok",
    "note": "m66592 exercise fs-idp64819776; selfcheck inner + 3 checks are the source solution verbatim, decomposed."
@@ -39928,6 +40977,10 @@
    "verdict": "ok",
    "note": "m66648 exercise fs-idp32317168; model answer matches the CNXML solution verbatim: 'Carbon monoxide has a higher affinity for hemoglobin than oxygen. This means that carbon monoxide will preferentially bind to hemoglobin over oxygen. Administration of 100 percent oxygen is an effective therapy because at that concentration, oxygen will displace the carbon monoxide from the hemoglobin.'"
   },
+  "9d24979173b262b0": {
+   "verdict": "ok",
+   "note": "source CT fs-id1167663985504, unkeyed — stays selfcheck; the consequence of an altered −35 sequence is an inference from § Initiation's σ/−35 sentence, not a sentence the module states outright; unkeyed."
+  },
   "9d29f6a5c4010b1c": {
    "verdict": "ok",
    "note": "glossary textin, term zona pellucida; prompt built from glossary definition 'protective layer of glycoproteins on the mammalian egg'.",
@@ -40216,6 +41269,10 @@
   },
   "9e5f98a076b3759f": {
    "verdict": "ok"
+  },
+  "9e655cb736fd2a49": {
+   "verdict": "ok",
+   "note": "selfcheck, converted from unkeyed Short Answer fs-id1172100980820 (the required sequence-derivation item). Antisense 5′-AUUCGAAUGC-3′ hand-derived twice: reading 3′→5′ and complementing each base (A↔U, G↔C) gives mRNA 5′-GCAUUCGAAU-3′; re-verified by column-pairing the two strands antiparallel. Primes normalized to U+2032 (source prints U+02B9 ʹ)."
   },
   "9e65cba1b7f63aaf": {
    "verdict": "ok",
@@ -40740,6 +41797,14 @@
     "result": "agrees"
    }
   },
+  "a07cf0491b849ceb": {
+   "verdict": "ok",
+   "note": "Sortbins from the CALS table 'Summary of Mechanisms of Genetic Diversity in Prokaryotes' (fs-id1167663877679, 4 rows: Conjugation/Transduction/Transformation/Transposition). The four table definitions plus one module-text distinguishing phrase per mechanism (F+/F- requirement for conjugation; phage packaging for transduction; natural competence for transformation; found in both prokaryotes and eukaryotes for transposition) = 8 items, interleaved def/def/def/def then extra/extra/extra/extra. Placed under the 'asexual gene transfer results in genetic diversity' objective per the life-sciences table rule (no CYU asks the all-four-mechanism contrast).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a07fe91b5d44a89b": {
    "verdict": "ok",
    "note": "KC 3 15.4 § note RNA Editing in Trypanosomes (fs-id1288287), m66500 — parent re-read against the module",
@@ -40771,6 +41836,10 @@
   },
   "a0a35411ad2e2ecf": {
    "verdict": "ok"
+  },
+  "a0ab2e54c1375b4c": {
+   "verdict": "ok",
+   "note": "Body CYU (fs-id1167663640512), bullet 3. Selfcheck — the source lists several plasmid-encoded trait categories (virulence/R-plasmid antibiotic resistance, toxin/colonization genes, PAH-degrading metabolic enzymes) across three sentences/paragraphs; a long list, kept as selfcheck per the life-sciences rule."
   },
   "a0aed69ed6c8df15": {
    "verdict": "ok",
@@ -40884,6 +41953,14 @@
   },
   "a0ff4691c1a13855": {
    "verdict": "ok"
+  },
+  "a106d384eb4fec12": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a11414ea09d0df7f": {
    "verdict": "ok",
@@ -41077,6 +42154,14 @@
    }
   },
   "a205cfdc87d12597": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a20c5de3aafcbac9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -41332,6 +42417,10 @@
     "result": "agrees"
    }
   },
+  "a2e3e43fa81a9d2e": {
+   "verdict": "ok",
+   "note": "body CYU selfcheck, unmatched (note is not an exercise); model answer from § Microbes and Viruses in Genetic Research (Morgan/Drosophila melanogaster paragraph)."
+  },
   "a2ea5a7a6445ca57": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -41579,6 +42668,10 @@
     "result": "agrees"
    }
   },
+  "a41a3f7f7c9e8140": {
+   "verdict": "ok",
+   "note": "Body CYU 3/3 (fs-id1167663901904). Selfcheck — answer is the three-item enumerated list (Transformation/Transduction/Conjugation with their one-line definitions); kept as selfcheck rather than a textin because a three-term comma answer is a fragile key and rather than a sortbins because the CNXML's 4-row summary table (with Transposition) is reserved as this page's ONE sortbins per brief."
+  },
   "a41d59e2c5be1dd9": {
    "verdict": "ok"
   },
@@ -41625,6 +42718,10 @@
   "a450ae402b617758": {
    "verdict": "ok",
    "note": "Right-hand limit of f(x)=9x-11.5 as x->2^+ = 9(2)-11.5 = 18-11.5 = 6.5. Matches source Try It 2 solution exactly."
+  },
+  "a4574c8c1e12f167": {
+   "verdict": "ok",
+   "note": "selfcheck, converted from unkeyed Critical Thinking fs-id1172096055563. Assembles the mRNA-instability sentence with the rRNA/tRNA function sentences; no claim beyond the module's own text (the 'so both must persist' clause restates 'stable' + the reused-every-round function, not an added claim)."
   },
   "a457b693c419faee": {
    "verdict": "ok"
@@ -41846,6 +42943,14 @@
     "note": "key stands: the cloze blanks the summary sentence \"Land plants acquired traits that made it possible to colonize land and survive out of the water\" verbatim, and the hint points at the aquatic habitat; the solver paraphrased"
    }
   },
+  "a548244106ba6358": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a54cc3cefa7124cb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -41956,6 +43061,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "a58c7806ebc2a6ce": {
+   "verdict": "ok",
+   "note": "unkeyed Critical Thinking fs-id1172101731031, stays a selfcheck: the module never describes purine-purine or pyrimidine-pyrimidine pairing, so the model answer states only the module's purine/pyrimidine ring-size facts (§ DNA Nucleotides) and stops rather than inferring the helix-geometry consequence the module does not print."
   },
   "a58ce85fa1d6a0b1": {
    "verdict": "ok",
@@ -42107,6 +43216,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "a62338be27d9815c": {
+   "verdict": "ok",
+   "note": "source Short Answer fs-id1167661293033, unkeyed upstream; selfcheck fully worked against the genetic-code figure (antisense 3′-TACTGACTGACGATC-5′ -> mRNA 5′-AUGACUGACUGCUAG-3′ -> Met-Thr-Asp-Cys, stop at UAG); re-derived independently, agrees."
   },
   "a624d034e00cc66a": {
    "verdict": "ok"
@@ -42992,6 +44105,10 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 317): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "a912a4bbad059a3c": {
+   "verdict": "ok",
+   "note": "selfcheck, Practice filler (source Short Answer fs-id1172100965672, unkeyed upstream). Stays a selfcheck: the module states the general packaging/accessibility principle for chromosomal DNA in § Organization of Prokaryotic Chromosomes, not specifically for eukaryotic chromatin; the model answer applies that stated principle to the eukaryotic case the question asks and discloses the extension in the footer/ledger rather than treating it as a directly fixed answer."
+  },
   "a91400bcc898ccfe": {
    "verdict": "ok"
   },
@@ -43006,6 +44123,14 @@
   "a922832eb7a6513a": {
    "verdict": "ok",
    "note": "option III is the recreated cotangent shape (decreasing branches, asymptotes at 0 and pi); matches source's printed answer 'III' for f(x)=cot x in the graph-matching exercise; all four option specs independently rendered and visually distinguished via svgshot."
+  },
+  "a92420b2ae5f6ca6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a925fb4dbc4c1fb4": {
    "verdict": "ok"
@@ -43233,6 +44358,14 @@
   "aa0da1baf17f2d34": {
    "verdict": "ok"
   },
+  "aa0e538b643c1461": {
+   "verdict": "ok",
+   "note": "sortbins, converted from unkeyed Short Answer fs-id1172100984608 ('What are some differences in chromosomal structures between prokaryotes and eukaryotes?') under the life-sciences 'comparison/compare-and-contrast pair fixes a category assignment' rule. Bins: Eukaryotic cells / Prokaryotic cells. All 8 items are the module's own distinguishing phrases (§ Organization of Eukaryotic Chromosome: linear, multiple chromosomes, diploid/two copies, nucleus; § Organization of Prokaryotic Chromosomes: circular, single chromosome, haploid/one copy, nucleoid). Interleaved, no bin-label word ('eukaryotic'/'prokaryotic') on any item; renamed bins from 'chromosomes' to 'cells' after the lint flagged the word collision with item text.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "aa11445d7dfd669c": {
    "verdict": "ok",
    "note": "Practice #11: quotient rule then 28/7=4 gives log_b(4). Matches CNXML solution."
@@ -43259,6 +44392,14 @@
   "aa2bb4548b67bfde": {
    "verdict": "ok",
    "note": "Using the same endpoints (-4,-3) and (-10,-11) given in the text, the midpoint is ((-4-10)/2,(-3-11)/2) = (-7,-7), matching the declared answer exactly."
+  },
+  "aa2cc9773e584376": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "aa2d8df283914a38": {
    "verdict": "ok"
@@ -43961,6 +45102,14 @@
    "verdict": "ok",
    "note": "Body Visual Connection selfcheck (m66560 exercise fs-idm112715536); model answer matches the source solution verbatim, checkpoints are its two clauses."
   },
+  "ac931c45f9c525e0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ac9615f12098d8d8": {
    "verdict": "ok"
   },
@@ -44251,6 +45400,10 @@
   "adba4e9e87576cdd": {
    "verdict": "ok"
   },
+  "adbec967ddee4696": {
+   "verdict": "ok",
+   "note": "unkeyed CNXML exercise fs-id1167662418534 (section class=critical-thinking, no <solution>). Stays a selfcheck: the module never discusses minimal-glucose vs. trypticase-soy media, so the answer requires applying the genotype/phenotype/environment principle (fs-id1167662406607) to a new scenario the module does not itself describe — an inference, not a single named artifact. Model answer and rubric built only from that paragraph's sentences plus the question's own scenario terms."
+  },
   "adbf619c96fe3708": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -44297,6 +45450,14 @@
   },
   "adf073d4bb20f030": {
    "verdict": "ok"
+  },
+  "adf52d339c80a99a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "adf7c94ec9ae291c": {
    "verdict": "ok"
@@ -44569,6 +45730,14 @@
   "af3f3b7969800864": {
    "verdict": "ok",
    "note": "P(15,9)=1,816,214,400 (node BigInt fact(15)/fact(6)), matches CNXML key."
+  },
+  "af49107f955e109d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "af56c0c116e0d3d0": {
    "verdict": "ok",
@@ -45049,6 +46218,14 @@
    "verdict": "ok",
    "note": "cos^3t=cost -> cost(cos^2t-1)=0 -> cost=0 (pi/2,3pi/2) or cos^2t=1 i.e. sint=0 (0,pi); union matches source key."
   },
+  "b14ab1896fa12379": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b14eb89fdd590805": {
    "verdict": "ok",
    "note": "Critical Thinking Question eip-63; model answer is the CNXML solution (eip-926/eip-142) verbatim, checkpoints are its four clauses."
@@ -45176,6 +46353,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "b1c86117f5dc959a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -45428,6 +46613,14 @@
     "note": "module: \"The undigested food material enters the colon, where most of the water is reabsorbed\" — key stands"
    }
   },
+  "b2df123192200a9e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b2e5db0acfebbf8d": {
    "verdict": "ok",
    "note": "textin glossary recall: answer 'genomics' matches glossary definition fs-id1815339/fs-id1815343 (term/meaning) verbatim.",
@@ -45664,6 +46857,14 @@
    }
   },
   "b418ffc6168bbae2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "b41a88e2dcc18450": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -46844,6 +48045,10 @@
     "result": "agrees"
    }
   },
+  "b8631de6a56f01aa": {
+   "verdict": "ok",
+   "note": "author-written from § Additional Methods of Regulation in Bacteria (the terminator/antiterminator stem-loop paragraph); both directions (stops/allows) are needed, so kept a selfcheck rather than a one-directional multiplechoice that would have reworded the compound source stem."
+  },
   "b86d8d02a728e1ef": {
    "verdict": "ok"
   },
@@ -46974,6 +48179,14 @@
   "b8eabbbf7a866ffd": {
    "verdict": "ok",
    "note": "KC 7 43.4 § body Menopause (fs-idm107557984), m66674 — parent re-read against the module"
+  },
+  "b8ebc8b91e07153c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "b8f3badf13e89140": {
    "verdict": "ok"
@@ -49465,6 +50678,14 @@
     "result": "agrees"
    }
   },
+  "c2cacfde177d9651": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c2e0567e6ea8857a": {
    "verdict": "ok"
   },
@@ -49846,6 +51067,14 @@
     "result": "agrees"
    }
   },
+  "c44dd296bb0302d1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c460d3b0aef5e81a": {
    "verdict": "ok",
    "note": "summary-derived cloze (m66441 summary: cholesterol is the precursor of steroid hormones such as testosterone and estradiol), checker-verified; accept extended with estradiol after the orchestrator blind-solve flagged it as an equally keyed summary answer",
@@ -49963,6 +51192,14 @@
   "c4ad47c452b14479": {
    "verdict": "ok",
    "note": "KC 5 26.3 § body The Life Cycle of an Angiosperm (fs-idm1559840), m66574 — parent re-read against the module"
+  },
+  "c4ae629cec50f1bb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c4bc54eef2d94f8b": {
    "verdict": "ok",
@@ -50202,6 +51439,14 @@
   },
   "c58d501d9b2eabc5": {
    "verdict": "ok"
+  },
+  "c59057682fe830ec": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c590ce9193dc2e7e": {
    "verdict": "ok"
@@ -50881,6 +52126,14 @@
     "result": "agrees"
    }
   },
+  "c809962c77db89cd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c80f64e219c5c885": {
    "verdict": "ok",
    "note": "P=2\\pi/(\\pi/3)=6 (Try It 9 period part, matches CNXML)."
@@ -50957,6 +52210,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "c8490a402ffe1d3e": {
+   "verdict": "ok",
+   "note": "source SA fs-id1167663863925, unkeyed — stays selfcheck, assembled from § Transcription in Eukaryotes sentences on nuclear transport and mRNA lifetime; unkeyed."
   },
   "c84a1f2b866e1a8d": {
    "verdict": "ok",
@@ -51047,6 +52304,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "c89c0796aca99db8": {
+   "verdict": "ok",
+   "note": "author-written from § The lac Operon: An Inducible Operon (the allolactose-inducer paragraph); needs the 'when' (lactose present) and 'how' (allolactose binds repressor, changes shape) joined, so kept a selfcheck rather than a single-sentence conversion."
   },
   "c89f086bf6aad3ab": {
    "verdict": "ok"
@@ -51161,6 +52422,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "c931850c2ad34002": {
+   "verdict": "ok",
+   "note": "source exercise fs-id1167663712682 (Critical Thinking, bare media OSC_Microbio_11_07_Diaux_img), source prints no key; selfcheck per the run's decision. Model answer applies § The lac Operon: Activation by Catabolite Activator Protein (the diauxic-growth and CAP-cAMP passages) to xylose exactly as the question's own note instructs. Caption author-written; alt reads axes and letter positions only, never the explanation."
   },
   "c93516c1a1b8ccd3": {
    "verdict": "ok",
@@ -51485,6 +52750,14 @@
     "result": "agrees"
    }
   },
+  "ca75e2555d515625": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ca7a23d992e46ec3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -51525,6 +52798,14 @@
    "note": "51/22 = 2.318181...; only the '3 does not repeat, then 18 repeats' option names that number. 2.318, 2.318318..., 2.38181... are all different numbers."
   },
   "ca9843122e6a410d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "caa0c831ef8a1014": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -51685,6 +52966,10 @@
    "verdict": "ok",
    "note": "initial term of -8,-6,-3,1,6,...; the first listed value is a_1=-8 (source Algebraic #35, printed recursive solution a_1=-8,a_n=a_(n-1)+n)."
   },
+  "cb2091413a65b463": {
+   "verdict": "ok",
+   "note": "source SA fs-id1167663932183, unkeyed — fully worked selfcheck; template 3′-TACTGACTGACGATC-5′ complemented base by base (A→U,T→A,C→G,G→C) gives mRNA 5′-AUGACUGACUGCUAG-3′, independently re-derived twice; unkeyed."
+  },
   "cb244669716df516": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -51749,6 +53034,10 @@
   "cb6891018794a143": {
    "verdict": "ok"
   },
+  "cb69f87e83bcf8a0": {
+   "verdict": "ok",
+   "note": "Body CYU, Transformation section (fs-id1167663653822). Selfcheck assembled from the nuclease/single-strand sentence in the Transformation section's second paragraph."
+  },
   "cb6c328226c312db": {
    "verdict": "ok"
   },
@@ -51762,6 +53051,10 @@
   "cb76a1732e7463e4": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id2926746, source solution kept verbatim as the model answer, decomposed into rubric checkpoints of the solution's own words."
+  },
+  "cb7d2abe4764a5db": {
+   "verdict": "ok",
+   "note": "body CYU selfcheck, unmatched; model answer from § Hershey and Chase's Proof of DNA as Genetic Material (labeling and blender/centrifuge paragraphs)."
   },
   "cb7d3573585c32bb": {
    "verdict": "ok",
@@ -51894,6 +53187,10 @@
   },
   "cbf92760bfb201a7": {
    "verdict": "ok"
+  },
+  "cbfa952c0043d49c": {
+   "verdict": "ok",
+   "note": "Source SA fs-id1167661563838, source prints no key. Selfcheck assembled from the Conjugation of F' and Hfr Cells subsection: (1) an Hfr cell transferring chromosomal DNA by treating the chromosome like an enormous F plasmid, and (2) imprecise excision of the integrated F plasmid producing an F' plasmid carrying adjacent chromosomal DNA."
   },
   "cc06cc872bba722f": {
    "verdict": "ok",
@@ -52130,6 +53427,14 @@
     "result": "agrees"
    }
   },
+  "ccd400bee074da70": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ccd74c93099dc5cf": {
    "verdict": "ok"
   },
@@ -52248,6 +53553,14 @@
   "cd8eabf5c9dc5b97": {
    "verdict": "ok",
    "note": "r=3-2cosθ: minimized cosθ=-1 at θ=π gives r=3-2(-1)=5, maximum |r|; point (5,π), independently re-derived (node: 3-2*Math.cos(Math.PI)=5)."
+  },
+  "cd99941280febf9f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "cd9f7057b7614851": {
    "verdict": "ok"
@@ -52471,6 +53784,10 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-id2134312; selfcheck model answer is the source solution verbatim; rubric checkpoints are verbatim clauses of the model answer, no new claims."
   },
+  "ce76219852f89db7": {
+   "verdict": "ok",
+   "note": "body CYU, stays selfcheck — honest answer assembles three separate processing steps (5' cap, poly-A tail, splicing) from § Transcription in Eukaryotes; unmatched."
+  },
   "ce7cb28cd7b75469": {
    "verdict": "ok",
    "note": "Practice #23: power rule on each term then product/quotient rules; verified by float substitution x=2,y=3,z=4 (node) equals log(xz^3/sqrt(y)). Matches CNXML solution."
@@ -52569,6 +53886,14 @@
   "cf14cd1eddcd23d8": {
    "verdict": "ok"
   },
+  "cf157ca0f055e279": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "cf177538c47da853": {
    "verdict": "ok",
    "note": "Locally authored textin from glossary definition 'electromagnetic spectrum' (fs-idm194226544): 'range of all possible frequencies of radiation'. Answer matches the glossary term exactly.",
@@ -52589,6 +53914,10 @@
   },
   "cf257b34f79737b0": {
    "verdict": "ok"
+  },
+  "cf2a5cd24a2d3fba": {
+   "verdict": "ok",
+   "note": "body CYU (box4, note fs-id1167662758031), stays a selfcheck: the module never states 'no lagging strand' outright, requires inference from the unidirectional, single-primer description in § Rolling Circle Replication; model answer assembled from that paragraph only."
   },
   "cf2a6f67fa09e787": {
    "verdict": "ok",
@@ -52624,6 +53953,14 @@
   "cf401972097d1450": {
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=4\\sin\\theta$. What is the name o)"
+  },
+  "cf40549840564c04": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "cf45b921ba33f989": {
    "verdict": "ok"
@@ -52942,6 +54279,14 @@
   "d081433d042aaee4": {
    "verdict": "ok",
    "note": "(x^2+2x-3)/(x^2-1) = (x+3)(x-1)/[(x-1)(x+1)] reduces to (x+3)/(x+1); VA at x=-1; matches CNXML source answer."
+  },
+  "d08370e1f5981c03": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d08b8b8b845c75d1": {
    "verdict": "ok",
@@ -53822,6 +55167,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp76153840: model answer is the CNXML solution verbatim (factors affecting soil formation)."
   },
+  "d490fbcac17bf467": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d493d0484373f8ae": {
    "verdict": "ok",
    "note": "f(x)=2x^3-x^2-8x+4 has degree 3; max turning points = 3-1 = 2, by the section's own stated theorem."
@@ -54297,6 +55650,14 @@
   },
   "d6aa963adc132a4f": {
    "verdict": "ok"
+  },
+  "d6ac49dd8bc49435": {
+   "verdict": "ok",
+   "note": "Source MC fs-id1167661743528, KEY D (transformation), source options and order preserved verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d6b4c74217559641": {
    "verdict": "ok",
@@ -54859,6 +56220,14 @@
    "verdict": "ok",
    "note": "Try It 10: CARRIER has 7 letters, R x3; 7!/3!=840 (node BigInt)."
   },
+  "d8e645c80a820089": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d90b2d91babc6255": {
    "verdict": "ok"
   },
@@ -55312,6 +56681,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "daf38f09421d88b3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -56018,6 +57395,10 @@
   "ddca7bbb0bd03b0a": {
    "verdict": "ok"
   },
+  "dde58007c21ff9af": {
+   "verdict": "ok",
+   "note": "CHECKER FIX (D: two-sentence key): reverted from `multiplechoice` to `selfcheck` — the honest answer needs both the double-helix-distortion sentence and the following DNA-polymerase skip-or-insert sentence of § Chemical Mutagens, so it does not reduce to one fixing sentence. Was hash 053eb9ab616193d5 (multiplechoice)."
+  },
   "dde584923db05f61": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -56054,6 +57435,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "de20ae0c828e394e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -56536,6 +57925,14 @@
   "dff1e4e8f89a3f9f": {
    "verdict": "ok"
   },
+  "e012b553d47f3e17": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e016cf35684966b0": {
    "verdict": "ok",
    "note": "fs-idp56627088 (Review Q); source SOL A = 'electrical', keyed as printed.",
@@ -56680,6 +58077,10 @@
   "e0e4b088edd432b7": {
    "verdict": "ok",
    "note": "ln(9-8x)=1 => 9-8x=e => x=(9-e)/8. Independently solved, no domain issue since 9-8x=e>0."
+  },
+  "e0e7dab8ef39f3a1": {
+   "verdict": "ok",
+   "note": "selfcheck, body CYU § Viral Genomes. Model answer assembles the module's sentences on DNA/RNA and single/double-stranded variation plus the smaller-genome/host-reliance sentence."
   },
   "e0e7f6b6e7ea0881": {
    "verdict": "ok"
@@ -58099,6 +59500,14 @@
    "verdict": "ok",
    "note": "KC 2 4.3 § body Vesicles and Vacuoles (fs-id1161247), m66449 — parent re-read against the module"
   },
+  "e63dd025447bd452": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e64257b230a768aa": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -58615,6 +60024,14 @@
     "result": "agrees"
    }
   },
+  "e849e52573143be1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e855f602c7b77c76": {
    "verdict": "ok",
    "solved": {
@@ -58636,6 +60053,14 @@
   "e86f84bf297f5c7f": {
    "verdict": "ok",
    "note": "KC 5 22.3 § body Prokaryotes and the Carbon Cycle (fs-idp54591920), m66547 — parent re-read against the module"
+  },
+  "e8765d6a13a1e84e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e876d24fa08352dc": {
    "verdict": "ok"
@@ -58675,6 +60100,14 @@
   },
   "e898133ad723db8c": {
    "verdict": "ok"
+  },
+  "e8984a4ab8458184": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e89c26c276159c44": {
    "verdict": "ok"
@@ -59141,6 +60574,14 @@
   "ea9c7830a7986d37": {
    "verdict": "ok"
   },
+  "ea9e8dba71df9817": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "eaa194547de15696": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -59436,6 +60877,14 @@
     "result": "agrees"
    }
   },
+  "ebb1cdd7212f15f7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ebc09762aa3ef004": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -59684,6 +61133,10 @@
   "ec6a139e3c1676e8": {
    "verdict": "ok"
   },
+  "ec6dda342c3347f8": {
+   "verdict": "ok",
+   "note": "author-written from § Prokaryotic Gene Regulation (the operon-regulatory-region paragraph): promoter, operator, structural genes."
+  },
   "ec6f9860555678c7": {
    "verdict": "ok"
   },
@@ -59783,6 +61236,14 @@
     "result": "agrees"
    }
   },
+  "ecacac1d37944e81": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ecb0a235ad84908e": {
    "verdict": "ok"
   },
@@ -59866,6 +61327,10 @@
   "ed27c822f4232df7": {
    "verdict": "ok"
   },
+  "ed2cbc8fcc99cba3": {
+   "verdict": "ok",
+   "note": "selfcheck, body CYU § Organization of Prokaryotic Chromosomes. Model answer assembles the module's own genotype-defining sentence ('The full collection of genes that a cell contains within its genome is called its genotype') and phenotype-defining sentence ('The set of genes being expressed at any given point in time determines...its phenotype'), plus the constancy/change clause from the next paragraph. No claim beyond the module."
+  },
   "ed2d791bed22261a": {
    "verdict": "ok",
    "note": "y=5x^2+10x+3 gives vertex (-1,-2) and a=5>0 (opens upward), matching the authored quadratic answer and the pre-rewrite multiplechoice's 'Vertex (-1,-2); opens upward'; the figure immediately above is Example 10.52's unrelated y=2x^2-4x-3, so nothing leaks."
@@ -59873,6 +61338,14 @@
   "ed372295d6ba4717": {
    "verdict": "ok",
    "note": "remainder 12, same division; key p1297 #25"
+  },
+  "ed3df4e031d74454": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ed3f8410b83e7c13": {
    "verdict": "ok",
@@ -60078,6 +61551,14 @@
   "ede9888a6e741a05": {
    "verdict": "ok",
    "note": "f(x)=(x^2-16)/(x+4)=(x-4)(x+4)/(x+4)=x-4 for x!=-4. f(-4) undefined; lim_{x->-4}=-4-4=-8, finite -> removable discontinuity, f(-4) not defined. Matches source Algebraic exercise fs-id1165135698280 solution."
+  },
+  "edf11b3a404ec55a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "edf5cf3e99e8ed8f": {
    "verdict": "ok"
@@ -60386,6 +61867,14 @@
     "result": "agrees"
    }
   },
+  "ef6cf97d20b47ebf": {
+   "verdict": "ok",
+   "note": "Source FIB fs-id1167663591185, KEY 'transposon or transposable element' -> answer 'transposon', accept='transposable element' per brief, plus (checker D5) 'jumping gene' — the module's own body synonym ('jumping genes'); verified with check-text.mjs that the singular accept member also grades the plural correct (fold is one-directional, so only the singular is listed, matching the lint's duplicate-plural rule). Hint reworded (checker verify-section finding) to stop printing 'jumping gene' verbatim as a retype hazard.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ef736889e43cfcfc": {
    "verdict": "ok",
    "solved": {
@@ -60629,6 +62118,14 @@
   "f0aef079c33e13a9": {
    "verdict": "ok"
   },
+  "f0b126f987e49921": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f0b8933ca8762c0a": {
    "verdict": "ok"
   },
@@ -60696,6 +62193,10 @@
   },
   "f0e2d14e3088a525": {
    "verdict": "ok"
+  },
+  "f0e7123ad8514d06": {
+   "verdict": "ok",
+   "note": "source SA fs-id1167660187280 (unkeyed); author-written selfcheck assembling the frameshift-consequence sentences of § Effects of Mutations on Protein Structure and Function, since the honest comparison draws on more than one sentence."
   },
   "f0ec43ff762545b2": {
    "verdict": "ok",
@@ -60864,6 +62365,14 @@
    "verdict": "ok",
    "note": "e^{2x}-e^x-132=0 factors (e^x-12)(e^x+11)=0; reject negative root, x=ln12. Verified exact-log."
   },
+  "f1a525ae0df2563e": {
+   "verdict": "ok",
+   "note": "Source MC fs-id1167663637654, KEY A (conjugation), source options and order preserved verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f1ac610ac67a2286": {
    "verdict": "ok",
    "note": "KC 7 39.4 § body Carbon Monoxide Poisoning (fs-idp174613152), m66648 — parent re-read against the module"
@@ -60871,6 +62380,10 @@
   "f1ac65e43a0c9922": {
    "verdict": "ok",
    "note": "Section Exercise 17 (Figure 14, sides 4 and 10): hyp = sqrt(4^2+10^2) = sqrt(116) = 2 sqrt(29); sin A = 10/(2 sqrt29) = 5 sqrt29/29, computed with node; matches CNXML solution."
+  },
+  "f1ad079f589f7be1": {
+   "verdict": "ok",
+   "note": "unkeyed Critical Thinking [fs-id1172098266148] (bare-media, AcetabStalk_img), figure-keyed selfcheck; model answer inverts Hämmerling's foot-determines-cap finding (§ Microbes and Viruses in Genetic Research) onto the pictured grafts' stalk species, read from the image."
   },
   "f1b841d7ceb972f4": {
    "verdict": "ok",
@@ -61095,6 +62608,10 @@
   "f25a4c09eae4a4e8": {
    "verdict": "ok",
    "note": "Solving 110=90e^{kt}+75 with k=-0.008377 gives t=112.74, rounds to 113 minutes (node computed); matches CNXML 'about 113 minutes'."
+  },
+  "f2635b3b61d3b6b3": {
+   "verdict": "ok",
+   "note": "source CT fs-id1167662394216 (unkeyed); stays a selfcheck — the module gives only that the Ames test is \"rapid, inexpensive\" and that flagged compounds are further tested in animal models, not a full comparative argument for why it is preferable."
   },
   "f2660e219fb2dce7": {
    "verdict": "ok"
@@ -62001,6 +63518,14 @@
     "result": "agrees"
    }
   },
+  "f5d0ed58246a2251": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f5d11a91c0756dce": {
    "verdict": "ok",
    "note": "Glossary recall: endocrine system, prompt uses glossary meaning verbatim, referent matches keyed term (system, not a gland).",
@@ -62250,7 +63775,23 @@
     "result": "agrees"
    }
   },
+  "f6c5319eafcfb8da": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f6c8de57d0b7560c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f6ca0baa35943282": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -62346,6 +63887,14 @@
   "f71a84a37ab2d491": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id1805432, solution fs-id2114708, transcribed verbatim. Matches the section's definition of Okazaki fragments as short lagging-strand fragments synthesized away from the fork."
+  },
+  "f71ba24a367edbf1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f72892a9d521a787": {
    "verdict": "ok"
@@ -62647,6 +64196,22 @@
   "f86ca8d1b96fdb67": {
    "verdict": "ok"
   },
+  "f86e6b40099ecbad": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f86e8379abb541e1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f878d500b2481b67": {
    "verdict": "ok",
    "solved": {
@@ -62802,6 +64367,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "f8f3eea50813df00": {
+   "verdict": "ok",
+   "note": "selfcheck, converted from unkeyed Short Answer fs-id1172098516087. Assembles three sentences from the Functions of RNA in Protein Synthesis section (mRNA carries the message; gene turned on, mRNA made by transcription; mRNA directs protein synthesis at the ribosome) plus the section's opening sentence on what proteins do for the cell."
   },
   "f90415463da9aeb2": {
    "verdict": "ok",
@@ -63305,6 +64874,14 @@
     "note": "solver wrote the bare number 11.1, the key is the same value with the percent sign the item's percent form requires; value agrees"
    }
   },
+  "fb2a0567b9f9c30d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "fb2fe361983a1d96": {
    "verdict": "ok"
   },
@@ -63512,6 +65089,14 @@
     "result": "agrees"
    }
   },
+  "fbf9bcf684bfce63": {
+   "verdict": "ok",
+   "note": "Body CYU, Conjugation > Consequences and Applications (fs-id1167663640512), bullet 1. Textin keyed by 'As rolling circle replication of the F plasmid occurs in the F+ cell...' (Conjugation of the F Plasmid subsection).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "fbfb37c52c19f4a3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -63536,6 +65121,10 @@
   "fc0b0cdd47d27e5a": {
    "verdict": "ok",
    "note": "CTQ (fs-idm38570784): model answer transcribes the source solution verbatim."
+  },
+  "fc0be436fa9ce40c": {
+   "verdict": "ok",
+   "note": "source Critical Thinking fs-id1167663478570, unkeyed upstream; selfcheck derived from the module's own 4^3 combinatorics and the 20-amino-acid count in § The Genetic Code."
   },
   "fc134d9c714dff43": {
    "verdict": "ok"
@@ -63647,6 +65236,14 @@
   "fc80800983011381": {
    "verdict": "ok",
    "note": "Review Question fs-idm83342320: keyed option B 'stroma' matches CNXML solution B; supported by the stroma glossary definition and the Figure 8.7/fig-ch08_01_06 caption naming the stroma as where the Calvin cycle occurs.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "fc89665a60ee3936": {
+   "verdict": "ok",
+   "note": "multiplechoice (True/False), source-keyed. CNXML exercise fs-id1172098499435, KEY False. Confirmed against the Noncoding DNA section's sentence that scientists have found roles for some noncoding regions.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -63865,6 +65462,14 @@
   "fd82348a56548b5f": {
    "verdict": "ok",
    "note": "KC 5 27.1 § body Complex Tissue Structure (fs-idm34097408), m66577 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "fd856d06208a4d0a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -64259,6 +65864,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "ff1788ea9c15f81e": {
+   "verdict": "ok",
+   "note": "Body CYU 1/3 (fs-id1167663901904). Selfcheck — no single sentence fixes all three ways; assembled from para 1 (crossing-over, independent assortment during meiosis; combination of two parents' genetic info in sexual reproduction). Model answer and checks are the module's own words."
   },
   "ff1e67983228e56c": {
    "verdict": "ok"

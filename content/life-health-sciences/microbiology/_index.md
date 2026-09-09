@@ -55,17 +55,17 @@ pathogens that cause them.
 - **Microbial Growth** — binary fission, the growth curve, and counting
   cells; biofilms and quorum sensing; the oxygen, pH, temperature, and
   other conditions that affect growth; and the media used to grow bacteria.
-
-## Planned contents
-
-Microbiology has 26 chapters. The remaining 17 will appear in this order:
-
 - **Biochemistry of the Genome** — using microbiology to discover the
   secrets of life, and the structure and function of DNA, RNA, and cellular
   genomes.
 - **Mechanisms of Microbial Genetics** — the functions of genetic material,
   DNA replication, transcription, translation, mutations, how asexual
   prokaryotes achieve genetic diversity, and operon theory.
+
+## Planned contents
+
+Microbiology has 26 chapters. The remaining 15 will appear in this order:
+
 - **Modern Applications of Microbial Genetics** — the tools of genetic
   engineering; visualizing and characterizing DNA, RNA, and protein;
   whole-genome methods and pharmaceutical applications; and gene therapy.

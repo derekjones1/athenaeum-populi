@@ -23,7 +23,9 @@
 
 const DIACRITICS = /[̀-ͯ]/g;
 const DASHES = /[‐‑‒–—−]/g;
-const QUOTES = /[‘’‚‛′ʼ]/g;
+// U+02B9 (modifier letter prime) is what OpenStax types for 5ʹ/3ʹ in some
+// modules; it is a letter to Unicode, so the letter filter would keep it.
+const QUOTES = /[‘’‚‛′ʹʼ]/g;
 const LEADING_ARTICLE = /^(?:a|an|the) /;
 
 /**

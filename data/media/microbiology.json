@@ -6632,6 +6632,1527 @@
       ],
       "alt": "A micrograph of clusters of purple spheres.",
       "caption": "Gram-positive cocci in clusters. (credit: Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_10_00_HumvsBactG": {
+      "source": "media/OSC_Microbio_10_00_HumvsBactG.jpg",
+      "sourceSha256": "1f167e10beccfd7590cd51dbba5795c0940d8bab777d6f9c94b318366733f5a9",
+      "module": "m58834",
+      "kind": "photo",
+      "width": 1949,
+      "height": 1203,
+      "variants": [
+        {
+          "width": 800,
+          "height": 493,
+          "file": "OSC_Microbio_10_00_HumvsBactG-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 987,
+          "file": "OSC_Microbio_10_00_HumvsBactG-1600.webp"
+        }
+      ],
+      "alt": "Photo of twins. Micrograph of oval cell with many projections.",
+      "caption": "Siblings within a family share some genes with each other and with each parent. Identical twins, however, are genetically identical. Bacteria like Escherichia coli may acquire genes encoding virulence factors, converting them into pathogenic strains, like this uropathogenic E. coli . (Credit left: Army twins, Myrtle Beach, S.C. / U.S. Army; Public Domain; credit right: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_10_01_AcetabCap": {
+      "source": "media/OSC_Microbio_10_01_AcetabCap.jpg",
+      "sourceSha256": "225f9252a6aa08ee31f5aae0a831e7986472a63ee1f4749b0caf1ca99a8cb308",
+      "module": "m58835",
+      "kind": "photo",
+      "width": 920,
+      "height": 972,
+      "variants": [
+        {
+          "width": 800,
+          "height": 845,
+          "file": "OSC_Microbio_10_01_AcetabCap-800.webp"
+        },
+        {
+          "width": 920,
+          "height": 972,
+          "file": "OSC_Microbio_10_01_AcetabCap-920.webp"
+        }
+      ],
+      "alt": "A diagram of 2 different Acetabularia; both have a foot and long stalk but A. mediterranea has a round top and A. crenulata has a pom-pom shaped top. If the foot of A. mediterranea is grafted on to the upper stalks of A. crenulata – the resulting cap looks like A. mediterranea (round). If the foot of A. crenulata is grafted on to the upper stalks of A. mediterranea – the resulting cap looks like A. crenulata (pom-pom shape).",
+      "caption": "In a second set of experiments, Hämmerling used two morphologically different species and grafted stalks from each species to the feet of the other. He found that the properties of the regenerated caps were dictated by the species of the nucleus-containing foot."
+    },
+    "OSC_Microbio_10_01_AcetabStalk_img": {
+      "source": "media/OSC_Microbio_10_01_AcetabStalk_img.jpg",
+      "sourceSha256": "5c98605777040e1cf9e3890487ab7bfb2f68ecfeac813e42e4c7280db31987d9",
+      "module": "m58835",
+      "kind": "photo",
+      "width": 978,
+      "height": 474,
+      "variants": [
+        {
+          "width": 800,
+          "height": 387,
+          "file": "OSC_Microbio_10_01_AcetabStalk_img-800.webp"
+        },
+        {
+          "width": 978,
+          "height": 474,
+          "file": "OSC_Microbio_10_01_AcetabStalk_img-978.webp"
+        }
+      ],
+      "alt": "A diagram showing a. mediterranea and A. crenulata. Graft A is of the foot of A. mediterranea and the upper stalk of A. crenulata. Graft B is of the foot of A. crenulata and the upper stalk of A. mediterranea.",
+      "caption": ""
+    },
+    "OSC_Microbio_10_01_DNATrans": {
+      "source": "media/OSC_Microbio_10_01_DNATrans.jpg",
+      "sourceSha256": "9c36f2f5985d11a2e9387d430a062f4d699380d2a5dd0d8691063cda052238e0",
+      "module": "m58835",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1522,
+      "variants": [
+        {
+          "width": 800,
+          "height": 936,
+          "file": "OSC_Microbio_10_01_DNATrans-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1522,
+          "file": "OSC_Microbio_10_01_DNATrans-1300.webp"
+        }
+      ],
+      "alt": "A diagram of Avery, MaLeod and McCarty’s experiment: Determining the identity of the hereditary material. Heat is used to kill S strain of S. pneumonia and capsule components are removed from solution. This produes a solution with DNA, RNA and proteins. This solution is then placed into 4 tubes. In the control, no enzymes are used so DNA, RNA, and proteins are all present. R cells are then added and S cells are found because transformation occurred. In the next experiment proteases degrade proteins in the sample, leaving DNA and RNA. R cells are added and S cells are found. Therefore, transformation occurred in the absence of proteins. In the next experiment ribonucleases degrade RNA in the sample, leaving DNA and proteins. R cells are added and S cells are found. Therefore, transformation occurred in the absence of RNA. In the final experiment deoxyribonucleases degrade DNA in the sample, leaving proteins and RNA. R cells are added and S cells are not found. Therefore, transformation does not occur without DNA. DNA is necessary for transformation.",
+      "caption": "Oswald Avery, Colin MacLeod, and Maclyn McCarty followed up on Griffith’s experiment and experimentally determined that the transforming principle was DNA."
+    },
+    "OSC_Microbio_10_01_GeneEnzyme": {
+      "source": "media/OSC_Microbio_10_01_GeneEnzyme.jpg",
+      "sourceSha256": "b8ba470a1e3236c28171caefcc68cb2b18704e52ffaf33587e1f43b497fea1ec",
+      "module": "m58835",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1005,
+      "variants": [
+        {
+          "width": 800,
+          "height": 670,
+          "file": "OSC_Microbio_10_01_GeneEnzyme-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1005,
+          "file": "OSC_Microbio_10_01_GeneEnzyme-1200.webp"
+        }
+      ],
+      "alt": "The table at the top is labeled Beadle and Tatum Experiments and shows the growth pattern of 4 different spores. The wild type spore grew on minimal medium (MM), MM + Ornithing, MM + Citruline and MM + Arginine. Mutant 1 did not grow on MM but did grow on MM + Ornithing, MM + Citruline and MM + Arginine. Mutant 2 did not grow on MM or MM + Ornithing but did grow on MM + Citruline and MM + Arginine. Mutant 3 did not grow on MM, MM + Ornithing, or MM + Citruline but did grow on MM + Arginine. Underneath the table is a diagram that explains these results. The top diagram shows a pathway where gene 1 produces enzyme 1 and enzyme 1 produces ornithine. Gene 2 produces enzyme 2 which converts ornithine to citruline. Gene 3 produces enzyme 3 which converts citruline to arginine. Mutant 1 had a mutation in gene 1 that destroyed the function of enzyme 1, so one of the amino acids are produced. Mutant 2 had a mutation in gene 2 that destroyed the function of enzyme 2. So, Ornithine is still produced but citruline and arginine are not. Mutant 3 had a mutation in gene 3 that destroyed the function of enzyme 3. So, ornithine and citruline are produced but arginine is not.",
+      "caption": "Three classes of arginine mutants were identified, each differing in their ability to grow in the presence of intermediates in the arginine biosynthesis pathway. From this, Beadle and Tatum concluded that each mutant was defective in a different gene encoding a different enzyme in the arginine biosynthesis pathway, leading to them to their one gene–one enzyme hypothesis."
+    },
+    "OSC_Microbio_10_01_Griffith": {
+      "source": "media/OSC_Microbio_10_01_Griffith.jpg",
+      "sourceSha256": "29c83566776122dec28c98dbaa96f7a9a9cd3d040a2e900c432f2a2f40b7ab73",
+      "module": "m58835",
+      "kind": "photo",
+      "width": 1096,
+      "height": 831,
+      "variants": [
+        {
+          "width": 800,
+          "height": 606,
+          "file": "OSC_Microbio_10_01_Griffith-800.webp"
+        },
+        {
+          "width": 1096,
+          "height": 831,
+          "file": "OSC_Microbio_10_01_Griffith-1096.webp"
+        }
+      ],
+      "alt": "Diagram of the Griffith experiment. In the control experiment the rough strain (nonvirulent) is injected into the mouse and the mouse lives. In Experiment 1 the heat-killed smooth strain is injected into a mouse and the mouse lives. In Experiment 2, the rough strain and the heat killed smooth strain are injected into a mouse and the mouse dies. In experiment 3 the smooth strain (virulent strain recovered from dead mice in experiment 2) is injected into mice and the mice die.",
+      "caption": "In his famous series of experiments, Griffith used two strains of S. pneumoniae . The S strain is pathogenic and causes death. Mice injected with the nonpathogenic R strain or the heat-killed S strain survive. However, a combination of the heat-killed S strain and the live R strain causes the mice to die. The S strain recovered from the dead mouse showed that something had passed from the heat-killed S strain to the R strain, transforming the R strain into an S strain in the process."
+    },
+    "OSC_Microbio_10_01_HersheyChase": {
+      "source": "media/OSC_Microbio_10_01_HersheyChase.jpg",
+      "sourceSha256": "4bc10f2a40320a84afb66fd1c7fddba0ddf3df1305e1e5d7d24752a002785783",
+      "module": "m58835",
+      "kind": "photo",
+      "width": 1300,
+      "height": 767,
+      "variants": [
+        {
+          "width": 800,
+          "height": 472,
+          "file": "OSC_Microbio_10_01_HersheyChase-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 767,
+          "file": "OSC_Microbio_10_01_HersheyChase-1300.webp"
+        }
+      ],
+      "alt": "Diagram of Hershey Chase experiment. 1- One batch of phage was labeled with 32P which is incorporated into the DNA. Another batch is labeled with 35S which is incorporated into the protein coat. 2 – Bacteria were infected with the phage. The researchers were looking to identify if viral DNA or viral protein entered the host cell. 3 – Each culture is blended and centrifuged to separate the phage from the bacteria. The centrifuge separates the lighter phage particles from the heavier bacterial cells. 4 – Bacteria infected with phage 32P labeled DNA produce 32P labeled phage. Bacteria infected with 35S labeled phage produced unlabeled phage.",
+      "caption": "Martha Chase and Alfred Hershey conducted an experiment separately labeling the DNA and proteins of the T2 bacteriophage to determine which component was the genetic material responsible for the production of new phage particles."
+    },
+    "OSC_Microbio_10_01_Mendel": {
+      "source": "media/OSC_Microbio_10_01_Mendel.jpg",
+      "sourceSha256": "eb8f3491fbe8428d4ddea16b919abbcd9df34070af4727f387623a6463ac3ad9",
+      "module": "m58835",
+      "kind": "photo",
+      "width": 1300,
+      "height": 449,
+      "variants": [
+        {
+          "width": 800,
+          "height": 276,
+          "file": "OSC_Microbio_10_01_Mendel-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 449,
+          "file": "OSC_Microbio_10_01_Mendel-1300.webp"
+        }
+      ],
+      "alt": "Diagram of flower genetics. In the P generation are violet flowers and white flowers. Hybridization of true-breeding plants produces the F1 generation which has all hybrid progeny and violet flowers. Self-fertilization of hybrid plants produces the F2 generation which has 705 violet flowers and 224 white flowers.",
+      "caption": "In one of his experiments on inheritance patterns, Mendel crossed plants that were true- breeding for violet flower color with plants true-breeding for white flower color (the P generation). The resulting hybrids in the F 1 generation all had violet flowers. In the F 2 generation, approximately three-quarters of the plants had violet flowers, and one-quarter had white flowers."
+    },
+    "OSC_Microbio_10_01_Timeline": {
+      "source": "media/OSC_Microbio_10_01_Timeline.jpg",
+      "sourceSha256": "56971d80ff2f10d542bbbeba41a6c35693825085a85ac23d98b4709e12dd8fe6",
+      "module": "m58835",
+      "kind": "photo",
+      "width": 1300,
+      "height": 792,
+      "variants": [
+        {
+          "width": 800,
+          "height": 487,
+          "file": "OSC_Microbio_10_01_Timeline-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 792,
+          "file": "OSC_Microbio_10_01_Timeline-1300.webp"
+        }
+      ],
+      "alt": "A timeline. 1865: Mendel documents patters of heredity in pea plants. 1869L Miescher first identifies DNA (“nuclein”). 1902: Sutton and Boveri propose chromosome theory of heredity. 1915: Morgan and his “Fly Room” colleagues confirm the chromosome theory of heredity. 1927: Muller shows that X-rays induce mutation. 1928: Griffith’s “transformation experiments” transform non-pathogenic bacterial strains to pathogenic. 1930’s: Mammerling shows that hereditary information is contained in the nuclei of eukaryotic cells. 1930: McClintock demonstrates genetic recombination in corn. 1941: Beadle and Tatum describe the “one gen-one enzyme” hypothesis. 1944: Avery, McLeod, and McCarty show that DNA is the “transforming principle” responsible for heredity. 1950: Chargaff discovers that A=T and C=G (Chargaff’s rules). 1952: Hershey and Chase use radioactive labeling to prove that DNA is responsible for heredity. 1953: Watson and Crick propose the double helix structure of DNA. 1961: Jacob and Monod propose the existence of mRNA. 1990’s: Genome sequence projects begin.",
+      "caption": "A timeline of key events leading up to the identification of DNA as the molecule responsible for heredity"
+    },
+    "OSC_Microbio_10_01_X-rayMold": {
+      "source": "media/OSC_Microbio_10_01_X-rayMold.jpg",
+      "sourceSha256": "0c0c9ea090369e8b2bea22e00f99dc8db9bb1b3d36705486a0cddeb7cf4b4b58",
+      "module": "m58835",
+      "kind": "photo",
+      "width": 1306,
+      "height": 605,
+      "variants": [
+        {
+          "width": 800,
+          "height": 370,
+          "file": "OSC_Microbio_10_01_X-rayMold-800.webp"
+        },
+        {
+          "width": 1306,
+          "height": 605,
+          "file": "OSC_Microbio_10_01_X-rayMold-1306.webp"
+        }
+      ],
+      "alt": "Diagram of Beadle and Tatum’s experiment. Wild type spores are exposed to X-rays to form mutagenized spores. The wild type and mutagenized spores are then crossed. The mutants are then grown on complete (with amino acids) and minimal media (without amino acids). Mutants that grow only on complete medium are identified. Spores that cannot grow on a minimal medium are tested on a minimal medium with a single amino acid added. Spores that grow inonly one of these tubes have a mutation in the pathway that produces that particular amino acid.",
+      "caption": "Beadle and Tatum ’s experiment involved the mating of irradiated and nonirradiated mold spores. These spores were grown on both complete medium and a minimal medium to determine which amino acid or vitamin the mutant was unable to produce on its own."
+    },
+    "OSC_Microbio_10_01_footandcap": {
+      "source": "media/OSC_Microbio_10_01_footandcap.jpg",
+      "sourceSha256": "dd5ab346a04d7eec3f53f8c607444b2f56ffffbf879741e65464cc9f490effa4",
+      "module": "m58835",
+      "kind": "photo",
+      "width": 1087,
+      "height": 1431,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1053,
+          "file": "OSC_Microbio_10_01_footandcap-800.webp"
+        },
+        {
+          "width": 1087,
+          "height": 1431,
+          "file": "OSC_Microbio_10_01_footandcap-1087.webp"
+        }
+      ],
+      "alt": "a) photograph of small organisms with a long stalk and a round top. b) diagram of Acetabularia showing a round cap at the top connected to the foot at the bottom by a long stalk. The nucleus is near the foot. If the cap is removed a new cap will regenerate. If the foot is removed no new foot is regenerated.",
+      "caption": "(a) The cells of the single-celled alga Acetabularia measure 2–6 cm and have a cell morphology that can be observed with the naked eye. Each cell has a cap, a stalk, and a foot, which contains the nucleus. (b) Hämmerling found that if he removed the cap, a new cap would regenerate; but if he removed the foot, a new foot would not regenerate. He concluded that the genetic information needed for regeneration was found in the nucleus. (credit a: modification of work by James St. John)"
+    },
+    "OSC_Microbio_10_02_ArtConnect1_img": {
+      "source": "media/OSC_Microbio_10_02_ArtConnect1_img.jpg",
+      "sourceSha256": "9a70862ab7d836e5a38bc87f5ba53921704046a6171d311e8dd67c1df753098f",
+      "module": "m58836",
+      "kind": "photo",
+      "width": 801,
+      "height": 164,
+      "variants": [
+        {
+          "width": 800,
+          "height": 163,
+          "file": "OSC_Microbio_10_02_ArtConnect1_img-800.webp"
+        },
+        {
+          "width": 801,
+          "height": 164,
+          "file": "OSC_Microbio_10_02_ArtConnect1_img-801.webp"
+        }
+      ],
+      "alt": "A DNA strand has 22% thymine. The percentages for adenine, guanine, and cytosine are blank.",
+      "caption": ""
+    },
+    "OSC_Microbio_10_02_BasePairs": {
+      "source": "media/OSC_Microbio_10_02_BasePairs.jpg",
+      "sourceSha256": "ec15a9d5766464cb601d65058feecb5924fed0891a38d0f7baa4f2d8a3df41c7",
+      "module": "m58836",
+      "kind": "photo",
+      "width": 699,
+      "height": 427,
+      "variants": [
+        {
+          "width": 699,
+          "height": 427,
+          "file": "OSC_Microbio_10_02_BasePairs-699.webp"
+        }
+      ],
+      "alt": "A diagram of DNA showing a short segment which allows the chemical structures to be seen more clearly. The strands show that the phosphate group is always between carbon 3 of one nucleotide and carbon 5 of the next. The two strands are connected with dotted lines indicating hydrogen bonds. The A-T bond has 2 hydrogen bonds and C-G has 3 hydrogen bonds. The negative charge of the phosphates is also apparent.",
+      "caption": "Hydrogen bonds form between complementary nitrogenous bases on the interior of DNA."
+    },
+    "OSC_Microbio_10_02_Bases": {
+      "source": "media/OSC_Microbio_10_02_Bases.jpg",
+      "sourceSha256": "c436d8a3f20d02f6d688afb024872523fbea0bd23a99346e7749f83743ebc19a",
+      "module": "m58836",
+      "kind": "photo",
+      "width": 1170,
+      "height": 340,
+      "variants": [
+        {
+          "width": 800,
+          "height": 232,
+          "file": "OSC_Microbio_10_02_Bases-800.webp"
+        },
+        {
+          "width": 1170,
+          "height": 340,
+          "file": "OSC_Microbio_10_02_Bases-1170.webp"
+        }
+      ],
+      "alt": "Pyrimidines have 1 ring containing both carbon and nitrogen in the ring. Cytosine and thymine are both pyrimidines. Their rings are the same but have different functional groups attached. Purines have 2 rings containing carbon and nitrogen. Adenine and Guanine are both purines but have different arrangement of atoms as part of and attached to their rings.",
+      "caption": "Nitrogenous bases within DNA are categorized into the two-ringed purines adenine and guanine and the single-ringed pyrimidines cytosine and thymine. Thymine is unique to DNA."
+    },
+    "OSC_Microbio_10_02_DNAHelix": {
+      "source": "media/OSC_Microbio_10_02_DNAHelix.jpg",
+      "sourceSha256": "c892f2fd427812fec1a4428a1028b42c0b67ad2764b75a56237b4f2b854426ff",
+      "module": "m58836",
+      "kind": "photo",
+      "width": 500,
+      "height": 573,
+      "variants": [
+        {
+          "width": 500,
+          "height": 573,
+          "file": "OSC_Microbio_10_02_DNAHelix-500.webp"
+        }
+      ],
+      "alt": "A photograph of a wire model in a museum.",
+      "caption": "In 1953, James Watson and Francis Crick built this model of the structure of DNA, shown here on display at the Science Museum in London."
+    },
+    "OSC_Microbio_10_02_Denatured": {
+      "source": "media/OSC_Microbio_10_02_Denatured.jpg",
+      "sourceSha256": "28d62232787e6fe2d767548a9b8f24baee58408bc8d6d95d2cfda0180503029d",
+      "module": "m58836",
+      "kind": "photo",
+      "width": 1300,
+      "height": 517,
+      "variants": [
+        {
+          "width": 800,
+          "height": 318,
+          "file": "OSC_Microbio_10_02_Denatured-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 517,
+          "file": "OSC_Microbio_10_02_Denatured-1300.webp"
+        }
+      ],
+      "alt": "Native states are like a twisted ladder. The rungs of the ladder are made from a base of one strand attached to the base of the other strand. Heat and chemicals can denature these strands. When this happens, the DNA is single stranded – it is a long ribbon with short projections along its length. Renaturation, which requires special conditions, returns the DNA to the double helix state (renatured state).",
+      "caption": "In the laboratory, the double helix can be denatured to single-stranded DNA through exposure to heat or chemicals, and then renatured through cooling or removal of chemical denaturants to allow the DNA strands to reanneal. (credit: modification of work by Hernández-Lemus E, Nicasio-Collazo LA, Castañeda-Priego R)"
+    },
+    "OSC_Microbio_10_02_DoubHelix": {
+      "source": "media/OSC_Microbio_10_02_DoubHelix.jpg",
+      "sourceSha256": "49b398e71eacea559596f3bd5d3c66910c928a7d1bcfcb232d385d80f7dc828f",
+      "module": "m58836",
+      "kind": "photo",
+      "width": 1300,
+      "height": 732,
+      "variants": [
+        {
+          "width": 800,
+          "height": 450,
+          "file": "OSC_Microbio_10_02_DoubHelix-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 732,
+          "file": "OSC_Microbio_10_02_DoubHelix-1300.webp"
+        }
+      ],
+      "alt": "a) A diagram of DNA shown as a double helix (a twisted ladder). The outside of the ladder is a blue ribbon labeled “sugar phosphate backbone”. The rungs of the ladder are labeled “base pair” and are either red and yellow or green and blue. Red indicates the nitrogenous base adenine. Yellow indicates the nitrogenous base thymine. Blue indicates the nitrogenous base guanine. Green indicates the nitrogenous base cytosine. The ladder twists so that there are wide spaces (called major grooves) and narrow spaces (called minor grooves) between the twists. B) A different diagram of DNA showing it as a straight ladder. This makes it easier to see the bases (which can now be labeled with the letters A, T, C or G directly on the image. The left strand has a 3-prime at the top and a 5-prime at the bottom. The right strand has a 5-prime at the top and a 3-prime at the bottom. C) Another diagram of DNA showing a much shorter segment which allows the chemical structures to be seen more clearly. The strands show that the phosphate group is always between carbon 3 of one nucleotide and carbon 5 of the next. The two strands are connected with dotted lines indicating hydrogen bonds. The A-T bond has 2 hydrogen bonds and C-G has 3 hydrogen bonds. The negative charge of the phosphates is also apparent.",
+      "caption": "Watson and Crick proposed the double helix model for DNA. (a) The sugar-phosphate backbones are on the outside of the double helix and purines and pyrimidines form the “rungs” of the DNA helix ladder. (b) The two DNA strands are antiparallel to each other. (c) The direction of each strand is identified by numbering the carbons (1 through 5) in each sugar molecule. The 5ʹ end is the one where carbon #5 is not bound to another nucleotide; the 3ʹ end is the one where carbon #3 is not bound to another nucleotide."
+    },
+    "OSC_Microbio_10_02_NAcidStrand": {
+      "source": "media/OSC_Microbio_10_02_NAcidStrand.jpg",
+      "sourceSha256": "9da8b1ca7cd1f20b0fe6821ff15a49ca4095e5c7b645c0fd86cadb067a3451f6",
+      "module": "m58836",
+      "kind": "photo",
+      "width": 1132,
+      "height": 844,
+      "variants": [
+        {
+          "width": 800,
+          "height": 596,
+          "file": "OSC_Microbio_10_02_NAcidStrand-800.webp"
+        },
+        {
+          "width": 1132,
+          "height": 844,
+          "file": "OSC_Microbio_10_02_NAcidStrand-1132.webp"
+        }
+      ],
+      "alt": "A nucleotide with a sugar in the center, the sugar is a pentagon with oxygen at the top point. Moving clockwise the carbons are numbered 1 (upper right) 2, (bottom right), 3 (bottom left), 4 (upper left) and 5 (projecting from carbon 4. Attached to carbon 1 is a base (thymine). Attached to carbon 5 is a phosphate group. Another nucleotide below has the same structure (other than that the base is C rather than T). The phosphate group attached to carbon 5 of the lower nucleotide is also attached to carbon 3 of the upper nucleotide. The lower nucleotide has an OH attached to its carbon 3. Another nucleotide has the OH group of its phosphate highlighted. A phospodiester bond forms when water is removed from these two OH groups. This results in a bond forming between carbon 3 of the nucleotide in the chain and the phosphate group attached to carbon 5 of the new nucleotide. This is called a phosphodiester bond.",
+      "caption": "Phosphodiester bonds form between the phosphate group attached to the 5ʹ carbon of one nucleotide and the hydroxyl group of the 3ʹ carbon in the next nucleotide, bringing about polymerization of nucleotides in to nucleic acid strands. Note the 5ʹ and 3ʹ ends of this nucleic acid strand."
+    },
+    "OSC_Microbio_10_02_Nucleotide": {
+      "source": "media/OSC_Microbio_10_02_Nucleotide.jpg",
+      "sourceSha256": "700ec785900faa2bf2b8ced1d608c637af755ac046481eb1447b0628a0b3e172",
+      "module": "m58836",
+      "kind": "photo",
+      "width": 827,
+      "height": 454,
+      "variants": [
+        {
+          "width": 800,
+          "height": 439,
+          "file": "OSC_Microbio_10_02_Nucleotide-800.webp"
+        },
+        {
+          "width": 827,
+          "height": 454,
+          "file": "OSC_Microbio_10_02_Nucleotide-827.webp"
+        }
+      ],
+      "alt": "a) At the center of a deoxyribonucleotide is a deoxyribose sugar. This is a pentagon shape with O at the top and H attached to the bottom right Carbon and OH attached to the bottom right Carbon. Attached to the upper left carbon is a phosphate group which consists of a Phosphate attached to 4 oxygens. Attached to the upper right carbon of the sugar is a base which consists of 1 or 2 rings that contain both carbon and nitrogen. B) A more detailed drawing of deoxyribose. This is a pentagon shaped structure with oxygen at the top corner. Moving clockwise, the upper right corner has a carbon labeled 1-prime. There is an OH attached to this carbon. The bottom right carbon is labeled 2-prime and has an H attached to it. The bottom left carbon is labeled 3-prime and has an OH group attached to it. The upper left carbon is labeled 4-prime and has CH2OH attached. This last carbon is labeled 5-prime.",
+      "caption": "(a) Each deoxyribonucleotide is made up of a sugar called deoxyribose, a phosphate group, and a nitrogenous base—in this case, adenine. (b) The five carbons within deoxyribose are designated as 1ʹ, 2ʹ, 3ʹ, 4ʹ, and 5ʹ."
+    },
+    "OSC_Microbio_10_02_SciGirls": {
+      "source": "media/OSC_Microbio_10_02_SciGirls.jpg",
+      "sourceSha256": "3fc5f53562a16a358676d12b51951ebbc25552fa642c6a4f2c09578ff2acfc2c",
+      "module": "m58836",
+      "kind": "photo",
+      "width": 1100,
+      "height": 507,
+      "variants": [
+        {
+          "width": 800,
+          "height": 368,
+          "file": "OSC_Microbio_10_02_SciGirls-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 507,
+          "file": "OSC_Microbio_10_02_SciGirls-1100.webp"
+        }
+      ],
+      "alt": "a) Photograph of Barbara McClintock. B) Photograph of 2 women scientists in lab.",
+      "caption": "(a) Barbara McClintock’s work on maize genetics in the 1930s through 1950s resulted in the discovery of transposons, but its significance was not recognized at the time. (b) Efforts to appropriately mentor and to provide continued societal support for women in science and medicine may someday help alleviate some of the issues preventing gender equality at all levels in science and medicine. (credit a: modification of work by Smithsonian Institution; credit b: modification of work by Haynie SL, Hinkle AS, Jones NL, Martin CA, Olsiewski PJ, Roberts MF)"
+    },
+    "OSC_Microbio_10_02_X-rayDiff": {
+      "source": "media/OSC_Microbio_10_02_X-rayDiff.jpg",
+      "sourceSha256": "ec17e715a91d1edd2ec05a0cbe48902c1edd0955667ad264312dd47edbd720c4",
+      "module": "m58836",
+      "kind": "photo",
+      "width": 478,
+      "height": 474,
+      "variants": [
+        {
+          "width": 478,
+          "height": 474,
+          "file": "OSC_Microbio_10_02_X-rayDiff-478.webp"
+        }
+      ],
+      "alt": "The X-ray diffraction pattern of DNA shows its helical nature. A photograph of a fuzzy spiral with fuzzy black dots forming a fuzzy figure 8.",
+      "caption": "The X-ray diffraction pattern of DNA shows its helical nature. (credit: National Institutes of Health)"
+    },
+    "OSC_Microbio_10_03_RNAFunct": {
+      "source": "media/OSC_Microbio_10_03_RNAFunct.jpg",
+      "sourceSha256": "8fd4f74ae31234cb837d794ad8ef6279f1992213c59c2468ad1e875aafac6050",
+      "module": "m58837",
+      "kind": "photo",
+      "width": 687,
+      "height": 354,
+      "variants": [
+        {
+          "width": 687,
+          "height": 354,
+          "file": "OSC_Microbio_10_03_RNAFunct-687.webp"
+        }
+      ],
+      "alt": "A diagram showing mRNA as a long strand with sets of 3 letters grouped; the left of the mRNA is labeled 3-prime, the right is labeled 5-prime. An oval labeled ribosome small subunit sits under the mRNA and spans 3 of the 3-letter groups. A larger dome (labeled ribosome large subunit) sits on top of the mRNA at this same region. The large subunit has 3 gaps where rectangles labeled tRNA sit. These rectangles each sit on a group of 3-letters on the mRNA at one end and contain an amino acid on the other end. The tRNA on the left has a single amino acid. The tRNA in the middle has a growing pepetide chain of many amino acids. The tRNA on the right as no amino acids and is leaving the ribosome.",
+      "caption": "A generalized illustration of how mRNA and tRNA are used in protein synthesis within a cell."
+    },
+    "OSC_Microbio_10_03_RNAStruct": {
+      "source": "media/OSC_Microbio_10_03_RNAStruct.jpg",
+      "sourceSha256": "f880c5a7bef9c2fea750a73e4ebec10e62270c35f558090411c477ac686ff242",
+      "module": "m58837",
+      "kind": "photo",
+      "width": 1226,
+      "height": 325,
+      "variants": [
+        {
+          "width": 800,
+          "height": 212,
+          "file": "OSC_Microbio_10_03_RNAStruct-800.webp"
+        },
+        {
+          "width": 1226,
+          "height": 325,
+          "file": "OSC_Microbio_10_03_RNAStruct-1226.webp"
+        }
+      ],
+      "alt": "a) diagrams of ribose (in RNA) and deoxyribose (in DNA). Both have a pentagon shape with Oxygen at the top point of the pentagon. Both have an OH at carbon 1 and 3 and a CH2OH at carbon 4 (this last carbon is carbon 5). The difference is that ribose has an OH at carbon 2 and deoxyribose has an H at carbon 2. B) diagrams of thymine (T in DNA) and Uracil (U in RNA). Both have a single hexagon ring containing carbons and nitrogens. Both have a double bound O at the top carbon, and the bottom left carbon. The difference is that the top right carbon has an H in uracil and a CH3 in thymine.",
+      "caption": "(a) Ribonucleotides contain the pentose sugar ribose instead of the deoxyribose found in deoxyribonucleotides. (b) RNA contains the pyrimidine uracil in place of thymine found in DNA."
+    },
+    "OSC_Microbio_10_03_RNAStruct2": {
+      "source": "media/OSC_Microbio_10_03_RNAStruct2.jpg",
+      "sourceSha256": "36693593d81d264c9d36d45af7be79d0411b0f1e827760b197bcf585bfa2b2de",
+      "module": "m58837",
+      "kind": "photo",
+      "width": 1179,
+      "height": 756,
+      "variants": [
+        {
+          "width": 800,
+          "height": 513,
+          "file": "OSC_Microbio_10_03_RNAStruct2-800.webp"
+        },
+        {
+          "width": 1179,
+          "height": 756,
+          "file": "OSC_Microbio_10_03_RNAStruct2-1179.webp"
+        }
+      ],
+      "alt": "a) A diagram of DNA and RNA. DNA has the double helix shape with the helix of sugar-phosphates on the outside and the base pairs on the inside. RNA has a single helix of sugar-phosphates with nitrogenous bases along the length of the helix. B) A diagram showing RNA folding upon itself. The bases attached to the sugar-phosphate backbone can form hydrogen bonds if there are stretches of complimentary bases at some distance from each other on the long strand. Other regions do not have these hydrogen bonds.",
+      "caption": "(a) DNA is typically double stranded, whereas RNA is typically single stranded. (b) Although it is single stranded, RNA can fold upon itself, with the folds stabilized by short areas of complementary base pairing within the molecule, forming a three-dimensional structure."
+    },
+    "OSC_Microbio_10_03_RNA_img": {
+      "source": "media/OSC_Microbio_10_03_RNA_img.jpg",
+      "sourceSha256": "63ea1caf981b697fe12013892467ac9789b43444f0d3c018faec876b1942b609",
+      "module": "m58837",
+      "kind": "photo",
+      "width": 646,
+      "height": 345,
+      "variants": [
+        {
+          "width": 646,
+          "height": 345,
+          "file": "OSC_Microbio_10_03_RNA_img-646.webp"
+        }
+      ],
+      "alt": "A long strand is labeled ii. A small oval is attached to the bottom of this strand; and a large dome to the top. These two structures together are labeled iii. Smaller rectangles sit inside the large dome and are attached to small segments of the long strand. These rectangles are labeled i.",
+      "caption": ""
+    },
+    "OSC_Microbio_10_03_tRNA": {
+      "source": "media/OSC_Microbio_10_03_tRNA.jpg",
+      "sourceSha256": "91ff5a8c52cf9ec1c4bddf78de8897429f4f83b3f46cc1e1aafebc63a6903969",
+      "module": "m58837",
+      "kind": "photo",
+      "width": 1196,
+      "height": 833,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "OSC_Microbio_10_03_tRNA-800.webp"
+        },
+        {
+          "width": 1196,
+          "height": 833,
+          "file": "OSC_Microbio_10_03_tRNA-1196.webp"
+        }
+      ],
+      "alt": "A diagram of the 2-dimentional tRNA which is a single long strand of RNA folded into a plus shape with loops on the sides and bottom. The regions where the tRNA is folded so that there are 2 parts of the strand forming the linear portions of the plus are held together by hydrogen bonds labeled intramolecular pairing. The loop at the bottom has a set of 3 letters that are complimentary to 3 letters on the mRNA. The top part of the plus has a single stranded end at the 3-prime end; this is attached to an amino acid. B) The 3-dimentional structure looks like single strand folded into a double stranded structure with a bend in the middle.",
+      "caption": "A tRNA molecule is a single-stranded molecule that exhibits significant intracellular base pairing, giving it its characteristic three-dimensional shape."
+    },
+    "OSC_Microbio_10_04_Bacilli": {
+      "source": "media/OSC_Microbio_10_04_Bacilli.jpg",
+      "sourceSha256": "a27dea9796d784d6cae053e0d8c2a80fc7859e689812e9e6f03b9a6d953f877f",
+      "module": "m58838",
+      "kind": "photo",
+      "width": 825,
+      "height": 346,
+      "variants": [
+        {
+          "width": 800,
+          "height": 335,
+          "file": "OSC_Microbio_10_04_Bacilli-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 346,
+          "file": "OSC_Microbio_10_04_Bacilli-825.webp"
+        }
+      ],
+      "alt": "A diagram of Bacillus cereus showing an oval cell with a folded loop of a chromosome. The second diagram of this cell has two small loops, one labeled px01 encoding toxin and the other labeled px02 encoding toxin.",
+      "caption": "Genome sequencing of Bacillus anthracis and its close relative B. cereus reveals that the pathogenicity of B. anthracis is due to the maintenance of two plasmids, pX01 and pX02, which encode virulence factors."
+    },
+    "OSC_Microbio_10_04_Extrachrom": {
+      "source": "media/OSC_Microbio_10_04_Extrachrom.jpg",
+      "sourceSha256": "5adc0f4da52a354919a84b440a8722bb97f9d282f8037c663f86baa6922cb983",
+      "module": "m58838",
+      "kind": "photo",
+      "width": 1300,
+      "height": 499,
+      "variants": [
+        {
+          "width": 800,
+          "height": 307,
+          "file": "OSC_Microbio_10_04_Extrachrom-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 499,
+          "file": "OSC_Microbio_10_04_Extrachrom-1300.webp"
+        }
+      ],
+      "alt": "A drawing of a cell. the cell has a large sphere labeled nucleus, smaller ovals labeled mitochondria and small green ovals labeled chloroplasts.",
+      "caption": "The genome of a eukaryotic cell consists of the chromosome housed in the nucleus, and extrachromosomal DNA found in the mitochondria (all cells) and chloroplasts (plants and algae). The cells shown in (b) represent cells obtained from a pap smear. The cells on the left are normal squamous cells whereas the cells on the right are infected with human papillomavirus and show enlarged nuclei with increased staining (hyperchromasia)."
+    },
+    "OSC_Microbio_10_04_GenoPheno": {
+      "source": "media/OSC_Microbio_10_04_GenoPheno.jpg",
+      "sourceSha256": "f4b47b2acd089539ec086fea299bc058703e94c52dd3f65fce8ff05db661066b",
+      "module": "m58838",
+      "kind": "photo",
+      "width": 1100,
+      "height": 496,
+      "variants": [
+        {
+          "width": 800,
+          "height": 360,
+          "file": "OSC_Microbio_10_04_GenoPheno-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 496,
+          "file": "OSC_Microbio_10_04_GenoPheno-1100.webp"
+        }
+      ],
+      "alt": "A photo of an agar plate with pink cells on the left and one with beige cells on the right. Both plates are labeled S. marcescens. The pink culture was grown at 28 degrees; the beige culture at 37 degrees.",
+      "caption": "Both plates contain strains of Serratia marcescens that have the gene for red pigment. However, this gene is expressed at 28 °C (left) but not at 37 °C (right). (credit: modification of work by Ann Auman)"
+    },
+    "OSC_Microbio_10_04_GenomeSize": {
+      "source": "media/OSC_Microbio_10_04_GenomeSize.jpg",
+      "sourceSha256": "46d7506184603f2f126db9595092c820a008dc5599ca801328a4651bdc149cf1",
+      "module": "m58838",
+      "kind": "photo",
+      "width": 610,
+      "height": 944,
+      "variants": [
+        {
+          "width": 610,
+          "height": 944,
+          "file": "OSC_Microbio_10_04_GenomeSize-610.webp"
+        }
+      ],
+      "alt": "A graph showing genome sizes. Viruses have genomes that range from 1.7x10 to the 2nd bp to 2.5x10 to the 6th bp. Bacteria have genomes that range in size from 10 to the 5th to 10 to the 7th. One example is E. coli which ranges from 4.6 to 5.6 x 10 to the 6th bp. Fungi have genomes that range from 10 to the 6th to 10 to the 8th bp. Saccharomyces cerevisiae (yeast) has a genome of 1.2 x 10 to the 7th bp. Plants and animals have genomes that range from 10 to the 6th to 10 to the 11th bp. Mammals range from 10 to the 9th to 10 to the 10th bp. Humans have a genome of 3 x 10 to the 9th.",
+      "caption": "There is great variability as well as overlap among the genome sizes of various groups of organisms and viruses."
+    },
+    "OSC_Microbio_10_04_noncodDNA": {
+      "source": "media/OSC_Microbio_10_04_noncodDNA.jpg",
+      "sourceSha256": "3f84155af46f2af68b69652c3b19a46920ce23e6e934c1df28a3dab722354a66",
+      "module": "m58838",
+      "kind": "photo",
+      "width": 1224,
+      "height": 544,
+      "variants": [
+        {
+          "width": 800,
+          "height": 355,
+          "file": "OSC_Microbio_10_04_noncodDNA-800.webp"
+        },
+        {
+          "width": 1224,
+          "height": 544,
+          "file": "OSC_Microbio_10_04_noncodDNA-1224.webp"
+        }
+      ],
+      "alt": "A chromosome drawn as an X shape. As the strand unravels we see that it is a long double helix with genes interspersed with noncoding regions.",
+      "caption": "Chromosomes typically have a significant amount of noncoding DNA, often found in intergenic regions."
+    },
+    "OSC_Microbio_11_00_EcoliEle": {
+      "source": "media/OSC_Microbio_11_00_EcoliEle.jpg",
+      "sourceSha256": "a949495a6f18ae91e77a8d73ab890ff243725def4580825b5485ec4005241437",
+      "module": "m58839",
+      "kind": "photo",
+      "width": 1944,
+      "height": 644,
+      "variants": [
+        {
+          "width": 800,
+          "height": 265,
+          "file": "OSC_Microbio_11_00_EcoliEle-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 530,
+          "file": "OSC_Microbio_11_00_EcoliEle-1600.webp"
+        }
+      ],
+      "alt": "Micrograph of rod shaped cell. Photo of elephants.",
+      "caption": "Escherichia coli (left) may not appear to have much in common with an elephant (right), but the genetic blueprints for these vastly different organisms are both encoded in DNA. (credit left: modification of work by NIAID; credit right: modification of work by Tom Lubbock)"
+    },
+    "OSC_Microbio_11_01_CentDogma": {
+      "source": "media/OSC_Microbio_11_01_CentDogma.jpg",
+      "sourceSha256": "1cb205b9c8fafe8cc5c7fc2b6e585c5337d0c00ad5cb4b0ff455b33615488158",
+      "module": "m58840",
+      "kind": "photo",
+      "width": 725,
+      "height": 70,
+      "variants": [
+        {
+          "width": 725,
+          "height": 70,
+          "file": "OSC_Microbio_11_01_CentDogma-725.webp"
+        }
+      ],
+      "alt": "Diagram showing DNA with an arrow (labeled transcription) pointing to RNA. An arrow from RNA to proteins is labeled translation.",
+      "caption": "The central dogma states that DNA encodes messenger RNA, which, in turn, encodes protein."
+    },
+    "OSC_Microbio_11_01_GenoPheno": {
+      "source": "media/OSC_Microbio_11_01_GenoPheno.jpg",
+      "sourceSha256": "bc9fe321ed279765a396f1a963a95c2f2656759267bcc8c9db5b6b7f1165c916",
+      "module": "m58840",
+      "kind": "photo",
+      "width": 729,
+      "height": 298,
+      "variants": [
+        {
+          "width": 729,
+          "height": 298,
+          "file": "OSC_Microbio_11_01_GenoPheno-729.webp"
+        }
+      ],
+      "alt": "A diagram starting with genotype. An arrow from genotype splits to point to environmental condition A and environmental condition B. An arrow from environmental condition A points to phenotype A. An arrow from environmental condition B points to phenotype B.",
+      "caption": "Phenotype is determined by the specific genes within a genotype that are expressed under specific conditions. Although multiple cells may have the same genotype, they may exhibit a wide range of phenotypes resulting from differences in patterns of gene expression in response to different environmental conditions."
+    },
+    "OSC_Microbio_11_01_dGTP": {
+      "source": "media/OSC_Microbio_11_01_dGTP.jpg",
+      "sourceSha256": "8200915b077878287f1afb3394e1cd1d7595ad86bee50d637c19c3f4d12dc49b",
+      "module": "m58841",
+      "kind": "photo",
+      "width": 492,
+      "height": 236,
+      "variants": [
+        {
+          "width": 492,
+          "height": 236,
+          "file": "OSC_Microbio_11_01_dGTP-492.webp"
+        }
+      ],
+      "alt": "Diagram of dGTP. In the center is deoxyribose which is a pentagon shaped sugar. The top point has an oxygen. Then, moving around the shape are carbons 1, 2, 3, and 4; carbon 5 is attached to carbon 4 but not in the ring. Attached to carbon 1 is a structure made of 2 carbon and nitrogen rings bound along their ends; this is guanine. Carbon 2 has only Hs attached to it. Carbon 3 has an H and an OH. Carbon 4 has an N and Carbon 5. Carbon 5 is attached to 3 phosphate groups in a row (labeled triphosphate). Each phosphate group is made of phosphorus attached to 4 oxygen atoms.",
+      "caption": "This structure shows the guanosine triphosphate deoxyribonucleotide that is incorporated into a growing DNA strand by cleaving the two end phosphate groups from the molecule and transferring the energy to the sugar phosphate bond. The other three nucleotides form analogous structures."
+    },
+    "OSC_Microbio_11_02_DNARep": {
+      "source": "media/OSC_Microbio_11_02_DNARep.jpg",
+      "sourceSha256": "1c0e589792f8618b14c17ef9bb6ca725065b758c3fc725c5ceed1c7988e1bbbb",
+      "module": "m58841",
+      "kind": "photo",
+      "width": 1298,
+      "height": 720,
+      "variants": [
+        {
+          "width": 800,
+          "height": 443,
+          "file": "OSC_Microbio_11_02_DNARep-800.webp"
+        },
+        {
+          "width": 1298,
+          "height": 720,
+          "file": "OSC_Microbio_11_02_DNARep-1298.webp"
+        }
+      ],
+      "alt": "Diagram showing 3 models of DNA replication. In the conservative model the original double helix produces two double helices; one of which has two of the parent strands and one of which has two of the new strands. Another round produces 4 helices; one of which has two of the parent strands and three of which have all new strands. In semiconservative replication the first round leads to two double helices each with one old strand and one new strand. The next round leads to four double helices; two of these have an old and a new strand and two have all new strands. In dispersive replication each new round of replication results in strands with random bits from the parent strand and random bits of new strands.",
+      "caption": "There were three models suggested for DNA replication. In the conservative model, parental DNA strands (blue) remained associated in one DNA molecule while new daughter strands (red) remained associated in newly formed DNA molecules. In the semiconservative model, parental strands separated and directed the synthesis of a daughter strand, with each resulting DNA molecule being a hybrid of a parental strand and a daughter strand. In the dispersive model, all resulting DNA strands have regions of double-stranded parental DNA and regions of double-stranded daughter DNA."
+    },
+    "OSC_Microbio_11_02_EukRep": {
+      "source": "media/OSC_Microbio_11_02_EukRep.jpg",
+      "sourceSha256": "dfa8fb68cce0575b2068ddc88f91cf5865e7052f90c2915779c31bfaaee0fb32",
+      "module": "m58841",
+      "kind": "photo",
+      "width": 893,
+      "height": 631,
+      "variants": [
+        {
+          "width": 800,
+          "height": 565,
+          "file": "OSC_Microbio_11_02_EukRep-800.webp"
+        },
+        {
+          "width": 893,
+          "height": 631,
+          "file": "OSC_Microbio_11_02_EukRep-893.webp"
+        }
+      ],
+      "alt": "A diagram showing two strands of parental DNA. Then an arrow showing multiple replication bubbles with an origin of replication in each. Arrows point to the left and right from each origin of replication. New strands of DNA are shown being formed. One of the bubbles has the left half of the bubble in a box labeled replication fork. The next image shows the replication bubbles getting longer. The final image shows two new DNA strands, each with one old strand and one new strand.",
+      "caption": "Eukaryotic chromosomes are typically linear, and each contains multiple origins of replication."
+    },
+    "OSC_Microbio_11_02_MesStahl": {
+      "source": "media/OSC_Microbio_11_02_MesStahl.jpg",
+      "sourceSha256": "06f5f655db5a02375a602e077a5a9ab4affdc238fe3fbfb6c1ac8d05edd089cd",
+      "module": "m58841",
+      "kind": "photo",
+      "width": 1301,
+      "height": 890,
+      "variants": [
+        {
+          "width": 800,
+          "height": 547,
+          "file": "OSC_Microbio_11_02_MesStahl-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 890,
+          "file": "OSC_Microbio_11_02_MesStahl-1301.webp"
+        }
+      ],
+      "alt": "A diagram explaining the Meselson Stahl experiment. In the first part of the experiment DNA is replicated in the presence of heavy 15N medium. This produces all heavy DNA strands. Next they moved the cells to light 14N medium. If DNA was replicated conservatively, one would expect to see one heavy band and one light band. However, they saw only a medium size band. This is consistent with semiconservative and dispersive replication. Finally, they allowed the bacteria to undergo another round of replication in the light medium. If DNA was replicated dispersively, one would expect only a medium size band. However, they saw a medium band and a light band. The only mechanism that explains these results is semi-conservative replication.",
+      "caption": "Meselson and Stahl experimented with E. coli grown first in heavy nitrogen ( 15 N) then in 14 N. DNA grown in 15 N (blue band) was heavier than DNA grown in 14 N (red band), and sedimented to a lower level on ultracentrifugation. After one round of replication, the DNA sedimented halfway between the 15 N and 14 N levels (purple band), ruling out the conservative model of replication. After a second round of replication, the dispersive model of replication was ruled out. These data supported the semiconservative replication model."
+    },
+    "OSC_Microbio_11_02_RepFork": {
+      "source": "media/OSC_Microbio_11_02_RepFork.jpg",
+      "sourceSha256": "bfc4ff8e68bc6effa2fe7398a1f894f33a8efe1671e4c804b8be8ff6f74872f2",
+      "module": "m58841",
+      "kind": "photo",
+      "width": 1295,
+      "height": 1064,
+      "variants": [
+        {
+          "width": 800,
+          "height": 657,
+          "file": "OSC_Microbio_11_02_RepFork-800.webp"
+        },
+        {
+          "width": 1295,
+          "height": 1064,
+          "file": "OSC_Microbio_11_02_RepFork-1295.webp"
+        }
+      ],
+      "alt": "Diagram of DNA replication. A small inset at the top shows a double strand of DNA separated in the center forming a bubble; the DNA is double stranded on either side of the bubble. The origin of replication is in the midway point of the bubble. On the top strand a solid arrow points to the left from the origin; this is the leading strand. On the right of the origin of replication are short arrows pointing to the left; this is the lagging strand. On the bottom strand a solid arrow pointing to the right from the origin is labeled leading strand and short arrows pointing to the right on the other side of the origin are labeled lagging strands. A larger image shows just the left half of the bubble. The double stranded DNA is no the far left and is labeled 5’ for the top strand and 3’ for the bottom strand. An enzyme to the very far left I is labeled topoisomerase/gyrase. At the point where the double stranded regions splits is a triangle shape labeled helicase. Next to that are smaller shapes labeled single-stranded binding proteins. The top strand shows continuous synthesis of the leading strand; this is shown as a solid arrow under the top strand. The arrow has a 5’ at the right end and a 3’ at the left end. The template strand at the top has a 3’ at the right and a 5’ at the left. At the end of the arrow (near where the DNA is newly being separated by the helicase) is DNA polymerase 3 and a sliding clamp that span both strands. The bottom strand of DNA has more components. Just after the single stranded binding proteins is RNA primase which attaches RNA primer (shown as a green arrow). Further down the lagging strand template is an existing RNA primer with DNA polymerase III and a sliding clamp spanning primer and the template strand. The polymerase is building a new strand of DNA from the left side (5’) to the right side (3’). Further to the right is a long piece made of RNA primer, then new DNA, then RNA primer, then new DNA all connected. Each of the DNA/RNA combinations are okazaki fragments made in the discontinuous synthesis of the lagging strand. DNA polymerase I is attached to the RNA primer in the center and is replacing it with DNA nucleotides. DNA ligase then binds the individual strands of new DNA together. This is shown in a close-up as two double helices that have all the correct letters in place, but one is missing a connection between two of the nucleotides (this is called a single-stranded gap). DNA ligase forms this last bond and the gap is sealed.",
+      "caption": "At the origin of replication, topoisomerase II relaxes the supercoiled chromosome. Two replication forks are formed by the opening of the double-stranded DNA at the origin, and helicase separates the DNA strands, which are coated by single-stranded binding proteins to keep the strands separated. DNA replication occurs in both directions. An RNA primer complementary to the parental strand is synthesized by RNA primase and is elongated by DNA polymerase III through the addition of nucleotides to the 3’-OH end. On the leading strand, DNA is synthesized continuously, whereas on the lagging strand, DNA is synthesized in short stretches called Okazaki fragments. RNA primers within the lagging strand are removed by the exonuclease activity of DNA polymerase I, and the Okazaki fragments are joined by DNA ligase."
+    },
+    "OSC_Microbio_11_02_RollCircle": {
+      "source": "media/OSC_Microbio_11_02_RollCircle.jpg",
+      "sourceSha256": "17ec974611bfd71a8f63535410310a088f1609a42b89bd6dc3dc6df88cf20ad5",
+      "module": "m58841",
+      "kind": "photo",
+      "width": 1301,
+      "height": 559,
+      "variants": [
+        {
+          "width": 800,
+          "height": 343,
+          "file": "OSC_Microbio_11_02_RollCircle-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 559,
+          "file": "OSC_Microbio_11_02_RollCircle-1301.webp"
+        }
+      ],
+      "alt": "Diagram of DNA replication. A circle of double stranded DNA has a region labeled SSO near a region labeled DSO. A nick forms in DSO and DNA polymerase III begins copying and displacing the nicked strand. This forms a new ring made of an old and a new strand of DNA; the second old strand of DNA is outside of this ring but eventually rejoins the nicked strand. DNA ligase then separates the dsDNA (synthesis of first strand) and the lone ssDNA. The ssDNA then has the second strand synthesized and become a ds DNA as well.",
+      "caption": "The process of rolling circle replication results in the synthesis of a single new copy of the circular DNA molecule, as shown here."
+    },
+    "OSC_Microbio_11_02_Telomerase": {
+      "source": "media/OSC_Microbio_11_02_Telomerase.jpg",
+      "sourceSha256": "92d4236e16ea4c827785aeb46461ae7049fab2e45290a71bda668f8761a044ed",
+      "module": "m58841",
+      "kind": "photo",
+      "width": 698,
+      "height": 916,
+      "variants": [
+        {
+          "width": 698,
+          "height": 916,
+          "file": "OSC_Microbio_11_02_Telomerase-698.webp"
+        }
+      ],
+      "alt": "Diagram of telomerase. The top image shows a long strand of DNA with 5’ on the left and 3’ on the right. The complementary strand is much shorter and shows 3’ on the left and 5’ on the right. A circle labeled telomerase contains a complementary strand that matches the 3’ end of the upper strand and also extends past the 3’ end of the top strand. Caption: Telomerase has an associated RNA that complements the 3’ overhang at the end of the chromosome. Next, the top strand of DNA replicates using the overhang of the strand within the telomerase. Caption: The RNA template is used to synthesize the complementary strand. Next, the telomerase moves to the new 3’ end of the top strand. Caption: Telomerase shifts and the process repeats. Finally, The top DNA strand has multiple extensions. RNA primer binds near the 3’ end and builds a new strand of DNA towards the left until it meets up with the existing strand. Caption: Primase and DNA polymerase synthesize the complementary strand.",
+      "caption": "In eukaryotes, the ends of the linear chromosomes are maintained by the action of the telomerase enzyme."
+    },
+    "OSC_Microbio_11_03_TxnElong": {
+      "source": "media/OSC_Microbio_11_03_TxnElong.jpg",
+      "sourceSha256": "f147f160c33e9efd93e65334351c0255183c22d7a2968955a68bd7d10fdf9d09",
+      "module": "m58842",
+      "kind": "photo",
+      "width": 1053,
+      "height": 407,
+      "variants": [
+        {
+          "width": 800,
+          "height": 309,
+          "file": "OSC_Microbio_11_03_TxnElong-800.webp"
+        },
+        {
+          "width": 1053,
+          "height": 407,
+          "file": "OSC_Microbio_11_03_TxnElong-1053.webp"
+        }
+      ],
+      "alt": "Diagram of transcription. A double stranded piece of DNA has a large oval labeled RNA polymerase sitting on it just past a region labeled promoter. The DNA in the RNA polymerase has separated and the bottom DNA strand (labeled template strand) has a newly forming RNA strand attached to it. The RNA strand is being built from 5’ to 3’. The other strand of DNA is the nontemplate strand and does not have RNA being built.",
+      "caption": "During elongation, the bacterial RNA polymerase tracks along the DNA template, synthesizes mRNA in the 5’ to 3’ direction, and unwinds and rewinds the DNA as it is read."
+    },
+    "OSC_Microbio_11_04_ComTranTbl": {
+      "source": "media/OSC_Microbio_11_04_ComTranTbl.jpg",
+      "sourceSha256": "155aa5fb35614810c6d4ed2557fd0639681ef1309a93f7f3d98caf74ceb60be3",
+      "module": "m58843",
+      "kind": "photo",
+      "width": 1200,
+      "height": 480,
+      "variants": [
+        {
+          "width": 800,
+          "height": 320,
+          "file": "OSC_Microbio_11_04_ComTranTbl-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 480,
+          "file": "OSC_Microbio_11_04_ComTranTbl-1200.webp"
+        }
+      ],
+      "alt": "Table titled: Comparison of Translation in Bacteria Versus Eukaryotes. Bacteria have 70s ribosomes made of a 30s (small subunit) with 16SrRNA subunit and a 50S (large subunit) with 5S and 23S rRNA subunits. Eukaryotic ribosomes are 80S with 40s (small subunit) with 18s rRNA subunit and 60S (large subunit) with 5S, 5.8S, and 28S rRNA subunits. The amino acid carried by the initiator tRNA is fMet for bacteria and Met for Eukaryotes. Bacteria have a Shine-Delgarno sequence in their mRNA while Eukaryotes do not. Transcription and translation is simultaneous in bacteria but not in eukaryotes.",
+      "caption": ""
+    },
+    "OSC_Microbio_11_04_Cotrantxn": {
+      "source": "media/OSC_Microbio_11_04_Cotrantxn.jpg",
+      "sourceSha256": "d44d66ed2b30106674fa0db8bc9a3004fe4f4e1d6574bcb8341ca6565e6ea535",
+      "module": "m58843",
+      "kind": "photo",
+      "width": 1235,
+      "height": 382,
+      "variants": [
+        {
+          "width": 800,
+          "height": 247,
+          "file": "OSC_Microbio_11_04_Cotrantxn-800.webp"
+        },
+        {
+          "width": 1235,
+          "height": 382,
+          "file": "OSC_Microbio_11_04_Cotrantxn-1235.webp"
+        }
+      ],
+      "alt": "Diagram showing a double strand of DNA with RNA polymerase and a newly forming RNA strand. As the RNA elongates ribosomes bind and begin forming proteins. As the RNA gets longer, more and more ribosomes are bound in a row; this is called a polyribosome.",
+      "caption": "In prokaryotes, multiple RNA polymerases can transcribe a single bacterial gene while numerous ribosomes concurrently translate the mRNA transcripts into polypeptides. In this way, a specific protein can rapidly reach a high concentration in the bacterial cell."
+    },
+    "OSC_Microbio_11_04_GenCode": {
+      "source": "media/OSC_Microbio_11_04_GenCode.jpg",
+      "sourceSha256": "f3f3abd6f69e57bcfe5ce374f1a3abda8f024d8395c0c97f438c129c9dde4a73",
+      "module": "m58843",
+      "kind": "photo",
+      "width": 741,
+      "height": 630,
+      "variants": [
+        {
+          "width": 741,
+          "height": 630,
+          "file": "OSC_Microbio_11_04_GenCode-741.webp"
+        }
+      ],
+      "alt": "The codon table. On the left is the first letter of the codon (from top to bottom – U, C, A, G). On the top is the second letter (left to right U, C, A, G). On the right is the third letter (in each row, this is designated from top to bottom as U, C, A, G. UUU and UUC are Phe. UUA and UUG are Leu. UCU, UCC, UCA and UCG are Ser. UAU and UAC are Tyr. UAA and UAG are stop. UGU and UGC are Cys. UGA is stop. UGG is Trp. CUU, CUC, CUA, and CUG are Leu. CC, CCC, CCA, and CCG are Pro. CAU and CAC are his. CAA and CAG are Gln. CGU, CGC, CGA, CGG are Arg. AUU, AUC, AUA are Ile, AUG is Met and start. ACU, ACC, ACA, ACG is Thr. AAU AAc, is Asn. AAA, AAG is Lys. AGU, AGC is SEr. AGA, AG is ARg. GUU, GUC, GUA, GUG is Val. GCU, GCC, GCA, GCG, is ala. GAU, GAC is Asp. GAA, GAG is Glu. GGU, GGC, GGA, GGG is Gly.",
+      "caption": "This figure shows the genetic code for translating each nucleotide triplet in mRNA into an amino acid or a termination signal in a nascent protein. The first letter of a codon is shown vertically on the left, the second letter of a codon is shown horizontally across the top, and the third letter of a codon is shown vertically on the right. (credit: modification of work by National Institutes of Health)"
+    },
+    "OSC_Microbio_11_04_ProkEuk": {
+      "source": "media/OSC_Microbio_11_04_ProkEuk.jpg",
+      "sourceSha256": "0ea46738e2c61dfa1e00584f407bc7c8168cdeeaea462d94c54d9d36f673a8ac",
+      "module": "m58843",
+      "kind": "photo",
+      "width": 1299,
+      "height": 659,
+      "variants": [
+        {
+          "width": 800,
+          "height": 406,
+          "file": "OSC_Microbio_11_04_ProkEuk-800.webp"
+        },
+        {
+          "width": 1299,
+          "height": 659,
+          "file": "OSC_Microbio_11_04_ProkEuk-1299.webp"
+        }
+      ],
+      "alt": "a) Diagram of prokaryotic cell with a plasma membrane on the outside. The DNA is in the cytoplasm and the mRNA is being copied at the same time that ribosomes are building proteins of the developing mRNA. B) Diagram of a eukaryotic cell with a plasma membrane an a nucleus. The DNA is in the nucleus and pre-mRNA is made during transcription; this is then process into mature mRNA. The mature mRNA then leaves the nucleus and enters the cytoplasm where translation takes place. This is when ribosomes bind to the mRNA and make proteins.",
+      "caption": "(a) In prokaryotes, the processes of transcription and translation occur simultaneously in the cytoplasm, allowing for a rapid cellular response to an environmental cue. (b) In eukaryotes, transcription is localized to the nucleus and translation is localized to the cytoplasm, separating these processes and necessitating RNA processing for stability."
+    },
+    "OSC_Microbio_11_04_TlnInit": {
+      "source": "media/OSC_Microbio_11_04_TlnInit.jpg",
+      "sourceSha256": "449ee954095d6c511ca9cdc0bb1a9dfce9895e07219dbd3cee04f40b1b4dcf05",
+      "module": "m58843",
+      "kind": "photo",
+      "width": 1299,
+      "height": 901,
+      "variants": [
+        {
+          "width": 800,
+          "height": 555,
+          "file": "OSC_Microbio_11_04_TlnInit-800.webp"
+        },
+        {
+          "width": 1299,
+          "height": 901,
+          "file": "OSC_Microbio_11_04_TlnInit-1299.webp"
+        }
+      ],
+      "alt": "Diagram showing translation. At the start codon of the mRNA (AUG) the following attach: a tRNA with the anticodon UAC and containing the first amino acid, the large ribosomal subunit (a dome) and the small ribosomal subunit (a flat oval). During initiation, translational complex forms, and tRNA brings the first amino acid in polypeptide chain to bind to start codon om mRNA. At this point the tRNA is attached to the middle binding site (P) of the ribosome. The 3 sites from left to right are E, P, A. During elongation, tRNAs bring amino acids one by one to add to polypeptide chain. In the diagram, a tRNA with a long chain of circles is in the P site, a tRNA with a single circle is in the A site, and a tRNA without any circles is leaving from the E site. During termination, release factor recognizes stop codon, translational complex dissociates, and complete polypeptide is released. In the diagram a tRNA with a long strand is attached to the P site and a release factor (red shape) is attached to the stop codon in the mRNA which is now under the A site. Next the completed polypeptide leaves and all the other components dissociate from each other.",
+      "caption": "Translation in bacteria begins with the formation of the initiation complex, which includes the small ribosomal subunit, the mRNA, the initiator tRNA carrying N-formyl-methionine, and initiation factors. Then the 50S subunit binds, forming an intact ribosome."
+    },
+    "OSC_Microbio_11_04_TransComp_img": {
+      "source": "media/OSC_Microbio_11_04_TransComp_img.jpg",
+      "sourceSha256": "f591242689f89c05b4a2f52907a55fbf93c783cdbd1fedbcee9e9ebc2bbf395e",
+      "module": "m58843",
+      "kind": "photo",
+      "width": 693,
+      "height": 469,
+      "variants": [
+        {
+          "width": 693,
+          "height": 469,
+          "file": "OSC_Microbio_11_04_TransComp_img-693.webp"
+        }
+      ],
+      "alt": "A long line at the bottom has many letters on it and is labeled G. Each set of 3 letters is circles and labeled D. Attached to this is a large dome (I) and a small oval (3). Attached to one group of 3 letters is a rectangle 9labeled C); the 3 letters at the bottom of the rectangle are labeled H. A circle at the end of the rectangle is labeled B. The rectangle in the center of the dome labeled I has a long chain of circles attached to it labeled A. An arrow at the bottom points to the right and is labeled F.",
+      "caption": ""
+    },
+    "OSC_Microbio_11_04_tRNA": {
+      "source": "media/OSC_Microbio_11_04_tRNA.jpg",
+      "sourceSha256": "5546b2d170683d0dd8a2f9e52edae7ae15930928da967e0a20a7b205b9d651b0",
+      "module": "m58843",
+      "kind": "photo",
+      "width": 1297,
+      "height": 696,
+      "variants": [
+        {
+          "width": 800,
+          "height": 429,
+          "file": "OSC_Microbio_11_04_tRNA-800.webp"
+        },
+        {
+          "width": 1297,
+          "height": 696,
+          "file": "OSC_Microbio_11_04_tRNA-1297.webp"
+        }
+      ],
+      "alt": "Three different drawings of tRNA. A) shows a single strand folded into a cross shape with intramolecular base pairing. The 3’ end at the top is labeled amino acid attachment site and has the sequence ACC. The 5’ end is also at the top. At the base of the cross is a three letter grouping called anticodon. This is complementary to a three letter set on the mRNA called a codon. B) shows a space filling 3-D model that is shaped like an L. One end is the amino acid attachment site and the other is the anticodon. C) is a ver simplified drawing shaped like zigzag; one end is the amino acid attachment site and the other is the anticodon.",
+      "caption": "(a) After folding caused by intramolecular base pairing, a tRNA molecule has one end that contains the anticodon, which interacts with the mRNA codon, and the CCA amino acid binding end. (b) A space-filling model is helpful for visualizing the three-dimensional shape of tRNA. (c) Simplified models are useful when drawing complex processes such as protein synthesis."
+    },
+    "OSC_Microbio_11_05_Ames": {
+      "source": "media/OSC_Microbio_11_05_Ames.jpg",
+      "sourceSha256": "6faa4f0b651f0da3d72f77793fe6c843f0a15e95d2d6e3eaa70efd21e313f690",
+      "module": "m58844",
+      "kind": "photo",
+      "width": 1126,
+      "height": 579,
+      "variants": [
+        {
+          "width": 800,
+          "height": 411,
+          "file": "OSC_Microbio_11_05_Ames-800.webp"
+        },
+        {
+          "width": 1126,
+          "height": 579,
+          "file": "OSC_Microbio_11_05_Ames-1126.webp"
+        }
+      ],
+      "alt": "Diagram of the Ames test. 1 – Add rat liver extract and Salmonella to control tube. Add rat liver extract, possible mutagen, and Salmonella to experimental tube. The Salmonella strain in this test requires histidine. 2 – Plant and incubate both samples using medium lacking histidine. 3 – Compare growth on plates to identify revertants, which suggest mutagen causes mutations. In the image the plate without the possible mutagen has a few colonies (control with natural revertants). The plate from the sample with the possible mutagen has many colonies (high number of revertants his- to his+).",
+      "caption": "The Ames test is used to identify mutagenic, potentially carcinogenic chemicals. A Salmonella histidine auxotroph is used as the test strain, exposed to a potential mutagen/carcinogen. The number of reversion mutants capable of growing in the absence of supplied histidine is counted and compared with the number of natural reversion mutants that arise in the absence of the potential mutagen."
+    },
+    "OSC_Microbio_11_05_EffMut": {
+      "source": "media/OSC_Microbio_11_05_EffMut.png",
+      "sourceSha256": "f1bb146f9ce88a9d60005a3703250f88b36ee7651274eb9cbbdaf036bbecc824",
+      "module": "m58844",
+      "kind": "diagram",
+      "width": 625,
+      "height": 800,
+      "variants": [
+        {
+          "width": 625,
+          "height": 800,
+          "file": "OSC_Microbio_11_05_EffMut-625.webp"
+        }
+      ],
+      "alt": "Illustration shows different types of point mutations that result from a single amino acid substitution. In a silent mutation, no change in the amino acid sequence occurs. In a missense mutation, one amino acid is substituted for another. In a nonsense mutation, a stop codon is substituted for an amino acid. In a frameshift mutation, one or more bases is added or deleted, resulting in a change in the reading frame.",
+      "caption": "Mutations can lead to changes in the protein sequence encoded by the DNA."
+    },
+    "OSC_Microbio_11_05_HIVPrev": {
+      "source": "media/OSC_Microbio_11_05_HIVPrev.jpg",
+      "sourceSha256": "fbf4d895e96394f1d4e47323c5ca83b77f15dbc4090779b4e7df65aa47c023c8",
+      "module": "m58844",
+      "kind": "photo",
+      "width": 1147,
+      "height": 847,
+      "variants": [
+        {
+          "width": 800,
+          "height": 590,
+          "file": "OSC_Microbio_11_05_HIVPrev-800.webp"
+        },
+        {
+          "width": 1147,
+          "height": 847,
+          "file": "OSC_Microbio_11_05_HIVPrev-1147.webp"
+        }
+      ],
+      "alt": "Map of global prevalence of HIV in 2015. Global rate is 0.8%. Middle East and North Africa = 0.1%. Asia and the Pacific = 0.2%. Western and Central Europe and North America = 0.3%. Latin America and the Caribbean = 0.5%. Eastern Europe and Central Asia = 0.9%. West and Central Africa = 2.2%. East and Southern Africa = 7.1%",
+      "caption": "HIV is highly prevalent in sub-Saharan Africa, but its prevalence is quite low in some other parts of the world."
+    },
+    "OSC_Microbio_11_05_Intercal": {
+      "source": "media/OSC_Microbio_11_05_Intercal.jpg",
+      "sourceSha256": "6d22e89ba0241da0bcf83abf048d63c51860a41a8db7f3415f7ea127826452e9",
+      "module": "m58844",
+      "kind": "photo",
+      "width": 1297,
+      "height": 645,
+      "variants": [
+        {
+          "width": 800,
+          "height": 398,
+          "file": "OSC_Microbio_11_05_Intercal-800.webp"
+        },
+        {
+          "width": 1297,
+          "height": 645,
+          "file": "OSC_Microbio_11_05_Intercal-1297.webp"
+        }
+      ],
+      "alt": "Acridine (a molecule with 3 rings and a nitrogen group at either end binds between the two strands of a normal parent DNA. When this is replicated nucleotides can either be deleted or added to produce DNA that is either shorter or longer than the original parent molecule.",
+      "caption": "Intercalating agents, such as acridine, introduce atypical spacing between base pairs, resulting in DNA polymerase introducing either a deletion or an insertion, leading to a potential frameshift mutation."
+    },
+    "OSC_Microbio_11_05_NucAnMod": {
+      "source": "media/OSC_Microbio_11_05_NucAnMod.jpg",
+      "sourceSha256": "86f505d1290640e2e3201b3190a4d676d022f9e4f18d1a9bf3c4f176991f3d2d",
+      "module": "m58844",
+      "kind": "photo",
+      "width": 1100,
+      "height": 1131,
+      "variants": [
+        {
+          "width": 800,
+          "height": 822,
+          "file": "OSC_Microbio_11_05_NucAnMod-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 1131,
+          "file": "OSC_Microbio_11_05_NucAnMod-1100.webp"
+        }
+      ],
+      "alt": "Diagram showing analogs of normal nitrogenous bases. Adenine nucleoside has a double ring of carbon and nitrogen with an NH2 group attached at one of the carbons. The analog 2-aminopurine nucleoside has an H attached to this carbon. Thymine nucleoside has a single carbon nitrogen ring with a CH3 attached to the carbon at the bottom of the ring. The analog 5-bromouracil nucleoside has a Br attached to this carbon. Cytosine has a single carbon and nitrogen ring with an NH2 at one of the carbons. Nitrous acid (NHO2) replaces the NH2 with a double bonded O. This converts the cytosine to a uracil with now binds with adenine instead of guanine.",
+      "caption": "(a) 2-aminopurine nucleoside (2AP) structurally is a nucleoside analog to adenine nucleoside, whereas 5-bromouracil (5BU) is a nucleoside analog to thymine nucleoside. 2AP base pairs with C, converting an AT base pair to a GC base pair after several rounds of replication. 5BU pairs with G, converting an AT base pair to a GC base pair after several rounds of replication. (b) Nitrous acid is a different type of chemical mutagen that modifies already existing nucleoside bases like C to produce U, which base pairs with A. This chemical modification, as shown here, results in converting a CG base pair to a TA base pair."
+    },
+    "OSC_Microbio_11_05_PosNegSel": {
+      "source": "media/OSC_Microbio_11_05_PosNegSel.jpg",
+      "sourceSha256": "d557270fa4be3de8674ea63bf36ef30cc0dc92b2015897baef0b09ed457834a8",
+      "module": "m58844",
+      "kind": "photo",
+      "width": 1300,
+      "height": 658,
+      "variants": [
+        {
+          "width": 800,
+          "height": 405,
+          "file": "OSC_Microbio_11_05_PosNegSel-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 658,
+          "file": "OSC_Microbio_11_05_PosNegSel-1300.webp"
+        }
+      ],
+      "alt": "Diagram of the process of identifying auxotrophic mutants. First a medium containing histidine grows colonies of bacteria. Then, a sterile velvet surface is pressed onto the plate to pick up cells from bacterial colonies. Next the cells on the velvet are transferred to new plates, one with histidine and one without. A mark on the plate ensures that the orientation of the colonies is the same for all plates. After the plates are incubated, compare the growth on the plates to identify auxotrophic mutants that grow on medium containing histidine but do not grow on medium lacking histidine. A colony that is missing on the medium lacking histamine but present on the medium with histamine is the auxotrophic mutant.",
+      "caption": "Identification of auxotrophic mutants, like histidine auxotrophs, is done using replica plating. After mutagenesis, colonies that grow on nutritionally complete medium but not on medium lacking histidine are identified as histidine auxotrophs."
+    },
+    "OSC_Microbio_11_05_Rad": {
+      "source": "media/OSC_Microbio_11_05_Rad.jpg",
+      "sourceSha256": "fbdb1f79e5f6393757647324e3dae9b16cefd58f6e6f4e8ce638a80b2eefb0c5",
+      "module": "m58844",
+      "kind": "photo",
+      "width": 1300,
+      "height": 395,
+      "variants": [
+        {
+          "width": 800,
+          "height": 243,
+          "file": "OSC_Microbio_11_05_Rad-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 395,
+          "file": "OSC_Microbio_11_05_Rad-1300.webp"
+        }
+      ],
+      "alt": "a) Ionizing radiation (such as X-rays or gamma-rays) create double stranded breaks in DNA (breaks in the backbone). B) Non-ionizing radiation (such as ultraviolet light) causes Ts on the same strand of DNA to bind to each other rather than to the As across from them. This causes a kink in the DNA strand.",
+      "caption": "(a) Ionizing radiation may lead to the formation of single-stranded and double-stranded breaks in the sugar-phosphate backbone of DNA, as well as to the modification of bases (not shown). (b) Nonionizing radiation like ultraviolet light can lead to the formation of thymine dimers, which can stall replication and transcription and introduce frameshift or point mutations."
+    },
+    "OSC_Microbio_11_05_ThyDiRep": {
+      "source": "media/OSC_Microbio_11_05_ThyDiRep.jpg",
+      "sourceSha256": "92ebac0d6e4b97244ac0627f36a4f3214f42e4fb3498c2daea0e5459ccecc3ab",
+      "module": "m58844",
+      "kind": "photo",
+      "width": 1293,
+      "height": 1540,
+      "variants": [
+        {
+          "width": 800,
+          "height": 953,
+          "file": "OSC_Microbio_11_05_ThyDiRep-800.webp"
+        },
+        {
+          "width": 1293,
+          "height": 1540,
+          "file": "OSC_Microbio_11_05_ThyDiRep-1293.webp"
+        }
+      ],
+      "alt": "a) Diagram of nucleotide excision repair. A thymine dimer is when 2 Ts are bound to each other rather than to the As across from them. This damage is recognized and a large section of DNA on either side of the dimer is removed. Nuclease is used to cut the strands and helicase removes the damaged section. DNA pol I and DNA ligase make the repairs. B) in photoreactivation, an enzyme called photolyase sits binds to the thymine dimer and breaks the bonds between the Ts. The Ts can then bind to the As across from them.",
+      "caption": "Bacteria have two mechanisms for repairing thymine dimers. (a) In nucleotide excision repair, an enzyme complex recognizes the distortion in the DNA complex around the thymine dimer and cuts and removes the damaged DNA strand. The correct nucleotides are replaced by DNA pol I and the nucleotide strand is sealed by DNA ligase. (b) In photoreactivation, the enzyme photolyase binds to the thymine dimer and, in the presence of visible light, breaks apart the dimer, restoring the base pairing of the thymines with complementary adenines on the opposite DNA strand."
+    },
+    "OSC_Microbio_11_06_Conjug": {
+      "source": "media/OSC_Microbio_11_06_Conjug.jpg",
+      "sourceSha256": "6b82d615914df70ce4fd654a1acc002bf43c37f633fdafb21e3158d29fbddc22",
+      "module": "m58845",
+      "kind": "photo",
+      "width": 1097,
+      "height": 764,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "OSC_Microbio_11_06_Conjug-800.webp"
+        },
+        {
+          "width": 1097,
+          "height": 764,
+          "file": "OSC_Microbio_11_06_Conjug-1097.webp"
+        }
+      ],
+      "alt": "Diagram of conjugation. 1: Pilus of donor cell attaches to recipient cell. The donor cell contains a plasmid labeled F plasmid; the cell is labeled F+ donor cell. The recipient cell is labeled F- recipient cell and does not contain a plasmid. A bridge between them is labeled pilus. 2: Pilus contracts, drawing cells together to make contact with one another. 3: One strand of F plasmid DNA transfers from donor cell to recipient cell. 4: Donor synthesizes complementary strand to restore plasmid. Recipient synthesizes complementary strand to become F+ cell pith pilus. Both cells are now labeled F+ and contain a small circular plasmid.",
+      "caption": "Typical conjugation of the F plasmid from an F + cell to an F − cell is brought about by the conjugation pilus bringing the two cells into contact. A single strand of the F plasmid is transferred to the F − cell, which is then made double stranded."
+    },
+    "OSC_Microbio_11_06_FtoHfr": {
+      "source": "media/OSC_Microbio_11_06_FtoHfr.jpg",
+      "sourceSha256": "0316b8b1c738b49d3d2976f2d7719789aaef8fd0a43d3bcbf22a29c1d003ebb2",
+      "module": "m58845",
+      "kind": "photo",
+      "width": 1301,
+      "height": 412,
+      "variants": [
+        {
+          "width": 800,
+          "height": 253,
+          "file": "OSC_Microbio_11_06_FtoHfr-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 412,
+          "file": "OSC_Microbio_11_06_FtoHfr-1301.webp"
+        }
+      ],
+      "alt": "A cell contains host chromosome (large loop of DNA), F plasmid (small loop of DNA) and a pilus (projection out of the cell). The F plasmid is inserted into the host chromosome to become Hfr male (donor). When the plasmid is removed from the host chromosome, genes from the chromosome (such as lac) may move from the chromosome to the plasmid. In this case the cell becomes an F’ cell.",
+      "caption": "(a) The F plasmid can occasionally integrate into the bacterial chromosome, producing an Hfr cell. (b) Imprecise excision of the F plasmid from the chromosome of an Hfr cell may lead to the production of an F’ plasmid that carries chromosomal DNA adjacent to the integration site. This F’ plasmid can be transferred to an F − cell by conjugation."
+    },
+    "OSC_Microbio_11_06_HFR": {
+      "source": "media/OSC_Microbio_11_06_HFR.jpg",
+      "sourceSha256": "894888676a023090d62ed75589ce3b963e24920c612f608b3551684da83cb65b",
+      "module": "m58845",
+      "kind": "photo",
+      "width": 1100,
+      "height": 517,
+      "variants": [
+        {
+          "width": 800,
+          "height": 376,
+          "file": "OSC_Microbio_11_06_HFR-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 517,
+          "file": "OSC_Microbio_11_06_HFR-1100.webp"
+        }
+      ],
+      "alt": "a) Diagram showing one cell with multiple genes on its chromosome as well as an integrated F plasmid. This cell begins copying and transferring its entire genome but conjugation ends before the entire chromosome is transferred. B) A sample plasmid showing the variety of genes on the plasmid. Some sample genes include: argG, pabB, metA, argR, polA, and oriC. Numbers in the center of the plasmid indicate the location of genes; these numbers show a plasmid of 1000bp total.",
+      "caption": "(a) An Hfr cell may attempt to transfer the entire bacterial chromosome to an F − cell, treating the chromosome like an extremely large F plasmid. However, contact between cells during conjugation is temporary. Chromosomal genes closest to the integration site (gene 1) that are first displaced during rolling circle replication will be transferred more quickly than genes far away from the integration site (gene 4). Hence, they are more likely to be recombined into the recipient F − cell’s chromosome. (b) The time it takes for a gene to be transferred, as detected by recombination into the F − cell’s chromosome, can be used to generate a map of the bacterial genome, such as this genomic map of E. coli . Note that it takes approximately 100 minutes for the entire genome (4.6 Mbp) of an Hfr strain of E. coli to be transferred by conjugation."
+    },
+    "OSC_Microbio_11_06_HGT": {
+      "source": "media/OSC_Microbio_11_06_HGT.jpg",
+      "sourceSha256": "d9a0c1bd9eee0fa2dc3646ad1ab8f528afd61f795103df8e4df5a5f6ec8ecba0",
+      "module": "m58845",
+      "kind": "photo",
+      "width": 1095,
+      "height": 514,
+      "variants": [
+        {
+          "width": 800,
+          "height": 375,
+          "file": "OSC_Microbio_11_06_HGT-800.webp"
+        },
+        {
+          "width": 1095,
+          "height": 514,
+          "file": "OSC_Microbio_11_06_HGT-1095.webp"
+        }
+      ],
+      "alt": "a) Transformation is when DNA enters into a cell and is incorporated into the genome. B) transduction is when a virus injects DNA into a cell and this DNA is incorporated into the genome. C) Conjugation is when one bacterial cell copies its plasmid and sends that copy to another bacterial cell via a pilus (bridge of cytoplasm).",
+      "caption": "There are three prokaryote-specific mechanisms leading to horizontal gene transfer in prokaryotes. a) In transformation, the cell takes up DNA directly from the environment. The DNA may remain separate as a plasmid or be incorporated into the host genome. b) In transduction, a bacteriophage injects DNA that is a hybrid of viral DNA and DNA from a previously infected bacterial cell. c) In conjugation, DNA is transferred between cells through a cytoplasmic bridge after a conjugation pilus draws the two cells close enough to form the bridge."
+    },
+    "OSC_Microbio_11_06_Transpos": {
+      "source": "media/OSC_Microbio_11_06_Transpos.jpg",
+      "sourceSha256": "7efd761e56820013d7f3bb120dcf1e9d085b3fbd162040488548250ae6732305",
+      "module": "m58845",
+      "kind": "photo",
+      "width": 1300,
+      "height": 419,
+      "variants": [
+        {
+          "width": 800,
+          "height": 258,
+          "file": "OSC_Microbio_11_06_Transpos-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 419,
+          "file": "OSC_Microbio_11_06_Transpos-1300.webp"
+        }
+      ],
+      "alt": "Diagram of a transposon. 1: A typical transposon encodes the enzyme transposase, surrounded by inverted repeat sequences. A segment of chromosome shows that the transposon is interspersed between genes. The transposon is made of a gene for transposase and small bands labeled inverted repeat sequence on either side of the gene. 2: Transposase facilitates recombination between inverted repeats. Transposon is cut from its original location and inserted into a new location. This is shown by an oval labeled transposase causing the DNA segment for fold upon itself so the inverted repeats are nearly touching. 3: Transposon targets specific sequences in DNA that will be duplicated, forming direct repeats on either side of the inserted transposon sequence. This is shows as the transposon now sitting in the middle of a gene labeled disrupted gene.",
+      "caption": "Transposons are segments of DNA that have the ability to move from one location to another because they code for the enzyme transposase. In this example, a nonreplicative transposon has disrupted gene B. The consequence of that the transcription of gene B may now have been interrupted."
+    },
+    "OSC_Microbio_11_06_VC": {
+      "source": "media/OSC_Microbio_11_06_VC.jpg",
+      "sourceSha256": "81eec2fd07d7a992f69a8b999a0fd98966693836c7c606ad5a8e27930f5933db",
+      "module": "m58845",
+      "kind": "photo",
+      "width": 700,
+      "height": 353,
+      "variants": [
+        {
+          "width": 700,
+          "height": 353,
+          "file": "OSC_Microbio_11_06_VC-700.webp"
+        }
+      ],
+      "alt": "Micrograph of curved rods.",
+      "caption": "A scanning electron micrograph of Vibrio cholerae shows its characteristic curved rod shape."
+    },
+    "OSC_Microbio_11_07_ATPcAMP": {
+      "source": "media/OSC_Microbio_11_07_ATPcAMP.jpg",
+      "sourceSha256": "afe9b66faa7ac08957d9e6fafe1af793f4cf2f5a41c6c5937befc7f2d9e22c80",
+      "module": "m58846",
+      "kind": "photo",
+      "width": 1049,
+      "height": 439,
+      "variants": [
+        {
+          "width": 800,
+          "height": 334,
+          "file": "OSC_Microbio_11_07_ATPcAMP-800.webp"
+        },
+        {
+          "width": 1049,
+          "height": 439,
+          "file": "OSC_Microbio_11_07_ATPcAMP-1049.webp"
+        }
+      ],
+      "alt": "ATP contains 3 phosphate groups. Adenylyl cyclase removes two of these phosphate groups. The remaining phosphate group is linked into the sugar to make cAMP. Cyclic AMP is made of a ribose sugar with oxygens at both carbons 2 and 3 (the carbons at the bottom of the pentagon). The oxygen bound to carbon 3 is also bound to the phosphorus. Similarly, the oxygen bound at carbon 5 was already bound to the phosphorus. This forms a ring where the phosphorus is linked with an oxygen to both carbons 3 and 5.",
+      "caption": "When ATP levels decrease due to depletion of glucose, some remaining ATP is converted to cAMP by adenylyl cyclase. Thus, increased cAMP levels signal glucose depletion."
+    },
+    "OSC_Microbio_11_07_Atten": {
+      "source": "media/OSC_Microbio_11_07_Atten.jpg",
+      "sourceSha256": "85dadccb0eb257c76a5ab4cb2fe57dd30073d3670e59f38909cd95523e1d8e92",
+      "module": "m58846",
+      "kind": "photo",
+      "width": 1294,
+      "height": 922,
+      "variants": [
+        {
+          "width": 800,
+          "height": 570,
+          "file": "OSC_Microbio_11_07_Atten-800.webp"
+        },
+        {
+          "width": 1294,
+          "height": 922,
+          "file": "OSC_Microbio_11_07_Atten-1294.webp"
+        }
+      ],
+      "alt": "a) At high level of tryptophan a complete polypeptide is made from mRNA regions 1 and 2. Regions 3 and 4 form a terminator stem loop and RNA polymerase stops transcription. B) At low levels of tryptophan an incomplete polypeptide is produced from region 1. Regions 2 and 3 form an antiterminator stem loop which causes the ribosome to stall. This allows RNA polymerase to transcribe the trp regulated genes.",
+      "caption": "When tryptophan is plentiful, translation of the short leader peptide encoded by trpL proceeds, the terminator loop between regions 3 and 4 forms, and transcription terminates. When tryptophan levels are depleted, translation of the short leader peptide stalls at region 1, allowing regions 2 and 3 to form an antiterminator loop, and RNA polymerase can transcribe the structural genes of the trp operon."
+    },
+    "OSC_Microbio_11_07_CAP": {
+      "source": "media/OSC_Microbio_11_07_CAP.jpg",
+      "sourceSha256": "ea46b24b1c0ad8e54b710c9493848562eaf25e4f1ad52c46da86ab5ca44a092d",
+      "module": "m58846",
+      "kind": "photo",
+      "width": 1284,
+      "height": 657,
+      "variants": [
+        {
+          "width": 800,
+          "height": 409,
+          "file": "OSC_Microbio_11_07_CAP-800.webp"
+        },
+        {
+          "width": 1284,
+          "height": 657,
+          "file": "OSC_Microbio_11_07_CAP-1284.webp"
+        }
+      ],
+      "alt": "Diagram of the lac operon with and without cAMP. A) In the absence of cAMP, CAP does not bind the promoter. RNA polymerase does bind to the promoter and transcription occurs at a low rate. In the presence of cAMP, CAP binds the promoter and increases RNA polymerase activity. This is shown with a circle labeled cAMP + CAP bound to the promoter. RNA polymerase is also bound to the promoter and a thick arrow indicates faster transcription. B) cAMO-CAP complex stimulates RNA polymerase activity and increases RNA synthesis. However, even in the presence of cAMP-CAP complex, RNA synthesis is blocked when repressor is bound ot he operator. This is shows as the cAMP + CAP circle as well as the RNA polymerase bound to the promoter. The repressor is bound to the operator and this blocks RNA polymerase from moving forward.",
+      "caption": "(a) In the presence of cAMP, CAP binds to the promoters of operons, like the lac operon, that encode genes for enzymes for the use of alternate substrates. (b) For the lac operon to be expressed, there must be activation by cAMP-CAP as well as removal of the lac repressor from the operator."
+    },
+    "OSC_Microbio_11_07_Diaux": {
+      "source": "media/OSC_Microbio_11_07_Diaux.jpg",
+      "sourceSha256": "b41430665d4cc19c3e9198ae20d5cf2e947dee8ed241c0581ea61b563bd5169b",
+      "module": "m58846",
+      "kind": "photo",
+      "width": 689,
+      "height": 660,
+      "variants": [
+        {
+          "width": 689,
+          "height": 660,
+          "file": "OSC_Microbio_11_07_Diaux-689.webp"
+        }
+      ],
+      "alt": "Graph with time (hours) on the X axis and Log of E. coli cells on the Y axis. For the first hour the graph is relatively flat but then becomes quite steep for the next 3 hours. The graph increases from 0.3 to 1 in 3 hours. This part of the graph is labeled E. coli uses glucose. The next part of the graph begins with another flat region of about an hout and then there is another increase. This increase goes from 1.2 to 1.9 in 4 hours. This part of the graph is labeled E. coli uses lactose.",
+      "caption": "When grown in the presence of two substrates, E. coli uses the preferred substrate (in this case glucose) until it is depleted. Then, enzymes needed for the metabolism of the second substrate are expressed and growth resumes, although at a slower rate."
+    },
+    "OSC_Microbio_11_07_Diaux_img": {
+      "source": "media/OSC_Microbio_11_07_Diaux_img.jpg",
+      "sourceSha256": "1e681a35300cf8b4d6cf14c268981c1420a7abd2aa58bf8e02f196c8c5613c9e",
+      "module": "m58846",
+      "kind": "photo",
+      "width": 488,
+      "height": 452,
+      "variants": [
+        {
+          "width": 488,
+          "height": 452,
+          "file": "OSC_Microbio_11_07_Diaux_img-488.webp"
+        }
+      ],
+      "alt": "A graph with time (hours) on the X axis and density of bacteria on the Y axis. An upward slope is labeled A. Next, is a plateau labeled B. Next is an upward slope labeled C. And finally is a plateau labeled D.",
+      "caption": ""
+    },
+    "OSC_Microbio_11_07_Enhancer": {
+      "source": "media/OSC_Microbio_11_07_Enhancer.jpg",
+      "sourceSha256": "5f0c25e3d4afe1e66db4a27810e95bd59f530417705133ca3d9017ae89bd6c6e",
+      "module": "m58846",
+      "kind": "photo",
+      "width": 1295,
+      "height": 471,
+      "variants": [
+        {
+          "width": 800,
+          "height": 291,
+          "file": "OSC_Microbio_11_07_Enhancer-800.webp"
+        },
+        {
+          "width": 1295,
+          "height": 471,
+          "file": "OSC_Microbio_11_07_Enhancer-1295.webp"
+        }
+      ],
+      "alt": "A long strand of DNA shows RNA polymerase bound to a promoter upstream of gene A. Many various shapes are attached to the promoter and RNA polymerase. These are transcription factors and mediator proteins. These also bind to distant regions of DNA called distal control elements and activators. This requires DNA to bend (so the distant regions can reach the promoter). This bending is due to a DNA bending protein.",
+      "caption": "In eukaryotes, an enhancer is a DNA sequence that promotes transcription. Each enhancer is made up of short DNA sequences called distal control elements. Activators bound to the distal control elements interact with mediator proteins and transcription factors. Two different genes may have the same promoter but different distal control elements, enabling differential gene expression."
+    },
+    "OSC_Microbio_11_07_Operon": {
+      "source": "media/OSC_Microbio_11_07_Operon.jpg",
+      "sourceSha256": "eb5734c5b647301ebbf9bc9d951a23dd0ace5101c145d57bd995f08d10b0422a",
+      "module": "m58846",
+      "kind": "photo",
+      "width": 1298,
+      "height": 537,
+      "variants": [
+        {
+          "width": 800,
+          "height": 331,
+          "file": "OSC_Microbio_11_07_Operon-800.webp"
+        },
+        {
+          "width": 1298,
+          "height": 537,
+          "file": "OSC_Microbio_11_07_Operon-1298.webp"
+        }
+      ],
+      "alt": "Diagram of an operon. At one end is a regulatory gene; the operon proper begins further down. The operon is composed of a promoter, an operator, and structural genes (in this case 4, labeled A – D). Transcription produces a single mRNA strand that contains all the structural genes. Translation of this single mRNA produces 4 different proteins (A, B, C, D).",
+      "caption": "In prokaryotes, structural genes of related function are often organized together on the genome and transcribed together under the control of a single promoter. The operon’s regulatory region includes both the promoter and the operator. If a repressor binds to the operator, then the structural genes will not be transcribed. Alternatively, activators may bind to the regulatory region, enhancing transcription."
+    },
+    "OSC_Microbio_11_07_Riboswitch": {
+      "source": "media/OSC_Microbio_11_07_Riboswitch.jpg",
+      "sourceSha256": "451f4acf4ad2e2cbf743a3c5b34eb34b7ce8fc04d43a3f9a799f1823c86a0274",
+      "module": "m58846",
+      "kind": "photo",
+      "width": 1253,
+      "height": 723,
+      "variants": [
+        {
+          "width": 800,
+          "height": 461,
+          "file": "OSC_Microbio_11_07_Riboswitch-800.webp"
+        },
+        {
+          "width": 1253,
+          "height": 723,
+          "file": "OSC_Microbio_11_07_Riboswitch-1253.webp"
+        }
+      ],
+      "alt": "a) The mRNA forms a loop called a riboswitch and a loop called an antiterminator stem loop. RNA polymerase can proceed transcription. This is labeled “on”. A small molecule binds to the mRNA at the riboswitch location. The shifts the second loop to the terminator stem loop position and no transcription occurs. This is labeled off. B) The mRNA forms a loop called a riboswitch and another unlabeled loop. The ribosome binds at the ribosome binding site after the second loop and a translation proceeds. This is “on”. A small molecule binds to the mRNA at the riboswitch location. The shifts the second loop to the ribosome binding site location with blocks this ribosome binding site. This is now “off”.",
+      "caption": "Riboswitches found within prokaryotic mRNA molecules can bind to small intracellular molecules, stabilizing certain RNA structures, influencing either the completion of the synthesis of the mRNA molecule itself (left) or the protein made using that mRNA (right)."
+    },
+    "OSC_Microbio_11_07_lacrep": {
+      "source": "media/OSC_Microbio_11_07_lacrep.jpg",
+      "sourceSha256": "01d8df230dc8132c824a92a1b85337e912e6ba6ba2886eff88a92ba0949cf0ef",
+      "module": "m58846",
+      "kind": "photo",
+      "width": 671,
+      "height": 512,
+      "variants": [
+        {
+          "width": 671,
+          "height": 512,
+          "file": "OSC_Microbio_11_07_lacrep-671.webp"
+        }
+      ],
+      "alt": "A diagram of the lac operon. The top image shows what occurs in the absence of lactose. In the absence of lactose, the lac repressor binds the operator and transcription is blocked. The repressor is not bound to lactose but is bound to the operator. RNA polymerase is bound to the promoter but is blocked from transcription by the repressor. The bottom image shows the presence of lactose. In the presence of lactose, the lac repressor is released from the operator and transcription proceeds at a slow rate. The image shows lactose bound to the repressor which is no longer bound to the operator. RNA polymerase is bound to the promoter and an arrow indicates that transcription is occurring.",
+      "caption": "The three structural genes that are needed to degrade lactose in E. coli are located next to each other in the lac operon. When lactose is absent, the repressor protein binds to the operator, physically blocking the RNA polymerase from transcribing the lac structural genes. When lactose is available, a lactose molecule binds the repressor protein, preventing the repressor from binding to the operator sequence, and the genes are transcribed."
+    },
+    "OSC_Microbio_11_07_trp": {
+      "source": "media/OSC_Microbio_11_07_trp.jpg",
+      "sourceSha256": "5e290a1e8d54acd5a59b9e49fc7a522e416a89d0b7e262655274b1435cfa8266",
+      "module": "m58846",
+      "kind": "photo",
+      "width": 897,
+      "height": 608,
+      "variants": [
+        {
+          "width": 800,
+          "height": 542,
+          "file": "OSC_Microbio_11_07_trp-800.webp"
+        },
+        {
+          "width": 897,
+          "height": 608,
+          "file": "OSC_Microbio_11_07_trp-897.webp"
+        }
+      ],
+      "alt": "Diagram of the trp operon. The top image shows the operon in the absence of tryptophan. The trp repressor dissociates from the operator and RNA synthesis proceeds. RNA polymerase is bound to the promoter and an arrow indicates that transcription will occur. The repressor is not bound ot anything. The bottom image shows the operon in the presence of tryprophan. When tryptophan is present, the trp repressor binds to the operator and RNA synthesis is blocked. Tryptophan is shown bound to the repressor which is bound to the operator. RNA polymerase is bound to the promoter but is blocked from moving forward by the repressor.",
+      "caption": "The five structural genes needed to synthesize tryptophan in E. coli are located next to each other in the trp operon. When tryptophan is absent, the repressor protein does not bind to the operator, and the genes are transcribed. When tryptophan is plentiful, tryptophan binds the repressor protein at the operator sequence. This physically blocks the RNA polymerase from transcribing the tryptophan biosynthesis genes."
     }
   }
 }

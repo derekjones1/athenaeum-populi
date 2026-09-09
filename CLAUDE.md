@@ -15,3 +15,12 @@ follow `docs/source/openstax-source-workflow.md` and treat the pinned CNXML
 commit in `data/openstax/source-lock.json` as the transcription authority.
 Verify with `npm run verify-section -- <page>` and `npm test` before
 handing work back.
+
+To author a Microbiology chapter ("author chapter N of Microbiology"),
+follow `docs/briefs/microbiology/run.md` — the parent's recipe — and hand
+the agents the briefs beside it. Do not re-derive briefs from memory or
+paste the playbooks into agent prompts: the briefs name exactly which
+playbook sections each agent reads, and the blind solve runs in a fresh
+Fable subagent with masked pages (`solve:emit --pages-out`). Keep the
+parent's own context small: notes to `PARENT-NOTES.md`, long outputs to
+files, ten-line agent reports.

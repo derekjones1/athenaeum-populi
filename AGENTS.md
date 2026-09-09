@@ -17,7 +17,10 @@ chapters, 127 sections; chapters 1–2 authored September 5, 2026, chapter 1
 as the pilot, and chapters 3–4 on September 6); its rules are in
 `docs/subjects/microbiology.md`, which also records how it differs from
 Biology 2e (unkeyed prose exercises, no per-module glossary, new box and
-item types). Dated narrative these playbooks used to carry — retrospectives,
+item types). A Microbiology chapter is run from
+`docs/briefs/microbiology/run.md` (the parent's recipe) with the agent
+briefs beside it — the briefs are versioned there, not re-derived per
+session. Dated narrative these playbooks used to carry — retrospectives,
 per-chapter authoring logs, closed-programme records — lives in
 `docs/history/` now, one file per playbook it was cut from; the playbooks
 themselves keep only what is still operative.
@@ -50,7 +53,7 @@ themselves keep only what is still operative.
   has a local page, chapter parity is enforced book-wide, and
   `build-map`/`verify-map` report them at full coverage; Microbiology is
   `in-progress` (pinned September 5, 2026, its first two chapters authored
-  the same day, chapters 3–4 on September 6, and chapters 5–8 on September 7, and chapter 9 on September 8) and is reported as `9/26 chapters, 44/127 sections mapped`. Biology 2e's sections live under
+  the same day, chapters 3–4 on September 6, chapters 5–8 on September 7, and chapters 9–11 on September 8) and is reported as `11/26 chapters, 55/127 sections mapped`. Biology 2e's sections live under
   `content/life-health-sciences/biology` (each lock entry carries a
   `contentPath`, so a book need not live under `content/math`) and its
   subject playbooks (`docs/subjects/life-sciences.md` plus
@@ -121,7 +124,11 @@ themselves keep only what is still operative.
   the blind solve of the math fill-ins no mechanical reading reaches: `emit`
   writes every multiplechoice, textin, sortbins, and fillin with the key,
   accept list, and hint stripped (`--residual-fillins` keeps only the
-  fill-ins `verify:fillin-residual` would refuse); the orchestrator answers them in writing; `compare` grades the
+  fill-ins `verify:fillin-residual` would refuse; `--pages-out <dir>` also
+  writes each page whole with every key masked, which is what a fresh
+  solver subagent reads instead of the live page); the orchestrator — or,
+  for a chapter run, a fresh Fable subagent briefed by
+  `docs/briefs/microbiology/solve.md` — answers them in writing; `compare` grades the
   answers against the live keys (the real text grader for textin), prints
   every disagreement and "also defensible" flag, refuses to record one until
   it carries an `adjudicated` note settled against the CNXML, and writes the
@@ -173,9 +180,11 @@ and `selfcheck` items by comparing each to the pinned module's own key — but
 only where the page item transcribes a source exercise; an author-written
 item has no source key to compare against. Neither tool can tell whether the
 SOURCE key is right (Biology unit 2 carried four wrong ones), so a prose
-book's graded items get one more reading: the orchestrator answers every
-multiplechoice and textin with the keys hidden (`solve:emit` /
-`solve:compare`), settles each disagreement against the module's text, and
+book's graded items get one more reading: the orchestrator (in a chapter
+run, a fresh Fable subagent reading masked pages — the same model, a
+small context) answers every multiplechoice and textin with the keys hidden
+(`solve:emit` / `solve:compare`), and the parent settles each disagreement
+against the module's text, and
 the ledger record carries the result; `verify:ledger --require-solved`
 makes that reading a condition of green for the life-sciences shelf. A math
 fill-in gets the same third reading from whichever tool can give it:

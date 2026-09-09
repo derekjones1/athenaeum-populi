@@ -10,33 +10,12 @@ answer discipline all apply here unchanged unless a rule below says
 otherwise (`docs/subjects/biology.md` is Biology 2e's own delta file and
 is not required reading here). Read all three before
 authoring a microbiology section. This document was written from the
-September 5, 2026 scan of the pinned source and revised the same day by the
-**pilot: chapter 1, *An Invisible World*, three sections, 57 interactive
-items (43 in the Practice blocks, 14 body Check Your Understanding
-self-checks) and 22 figures.** Every rule below marked *(pilot)* was learned by
-authoring it; the run shape and the reusable briefs are in the session
-memory, and everything the pilot forced went into this file, the briefs, and
-a lint. Later chapters keep the same discipline: a correction that is not
-folded back into a rule will be made again. **Chapter 2, *How We See the
-Invisible World*, followed the same day** with the same three-pass shape
-(four sections, 42 Practice items, 34 body self-checks, 45 figures, eleven
-errata); every rule marked *(chapter 2)* below came from it. **Chapter 3,
-*The Cell*, followed on September 6** (four sections, 60 Practice items, 21
-body self-checks, 60 figures, fourteen errata); rules marked *(chapter 3)*
-came from it. **Chapters 5, *The Eukaryotes of Microbiology*, and 6,
-*Acellular Pathogens*, followed on September 7** in one nine-section wave
-(153 graded items, 23 self-checks, 89 figures, errata 458–492, including
-seven claim corrections from the prose claim pass); rules marked *(chapters
-5–6)* came from it. **Chapter 7, *Microbial Biochemistry*, followed the same
-day** (five sections, 58 graded items, 12 self-checks, 32 figures, errata
-493–503, no claim corrections — the claim pass found none); rules marked
-*(chapter 7)* came from it **Chapter 8, *Microbial Metabolism*, followed the
-same day** (seven sections, 100 graded items, 23 self-checks, 26 figures,
-errata 504–525, two claim corrections settled by the book's own text);
-rules marked *(chapter 8)* came from it. **Chapter 9, *Microbial Growth*,
-followed on September 8** (six sections, 88 graded items, 25 self-checks,
-33 figures, errata 526–534, two claim corrections settled by the book's own
-text); rules marked *(chapter 9)* came from it.
+September 5, 2026 scan of the pinned source and has been revised by every
+chapter run since; a rule tagged *(pilot)* or *(chapter N)* was learned by
+authoring that chapter, and the per-chapter record (dates, counts, errata
+ranges) is in `docs/history/microbiology.md`. Chapters 1–11 are authored as
+of September 8, 2026. A correction that is not folded back into a rule
+will be made again.
 
 ## Source and authority
 
@@ -621,275 +600,210 @@ guessing. Three of the four chapter-2 authors lost a verify round to this.
 
 ## Verification
 
-Everything in biology's Verification section, plus:
+Everything in the life-sciences Verification section, plus the rules
+below. Each is one line; the chapter tag says where it was learned, and the
+narrative behind it is in `docs/history/microbiology.md` ("Verification
+lessons by chapter"). The run itself — who reads what, the solve subagent,
+the close-out order — is `docs/briefs/microbiology/run.md`.
+
+### Gates and readings
 
 - `npm run verify:source-keys` reports an author-written model answer as
-  `unkeyed` (its question transcribes a source exercise the source does not
-  key) or `unmatched` (no source exercise at all), and a `multiplechoice`
-  converted from an unkeyed Short Answer or Critical Thinking question as
-  `unkeyed` too. All are correct. What it
-  must never report for this book is a graded item (`multiplechoice`,
-  `textin`, `sortbins`) keyed differently from the source without a
-  `DISCLOSED_DEVIATIONS` entry and an erratum. Chapter 1 reads as 15
-  `unkeyed`, 14 `unmatched`, 0 failures.
-- **Three readings, and the third is the orchestrator's own.** The author
-  keys from the CNXML; one Sonnet checker per section re-derives every key,
-  answers every graded item with the key covered, and reads every figure
-  against its image; then the parent runs `npm run solve:emit`, answers
-  every multiplechoice and textin **in writing with the keys hidden**, and
-  runs `npm run solve:compare`. `verify:ledger --require-solved` makes that
-  third reading a condition of green. Chapter 1: 29 items, 29 agreed, 0
-  disagreements — and the two readings before it still found four real
-  defects the gates cannot see, so none of the three is redundant.
-- The checker's brief carries duties biology's did not: the defined-term
-  count (raw `<term>` without `no-emphasis`, de-duplicated) against the Key
-  terms bullets; every rubric clause of every author-written model answer
-  against the module; `kind` present and right on every figure; and a
-  word-by-word diff of the page against the CNXML for undisclosed one-word
-  corrections.
-- **A True/False hint must not assert the tested fact** *(chapter 3)*:
-  "the size class of ribosome that both mitochondria and prokaryotic cells
-  share" is the verdict. Point at what to compare, never at the result.
-  **A distractor can leak the next item's key** *(chapter 3)*: §3.4 printed
-  "cytokinesis" as a wrong option directly above the `textin` keyed
-  *cytokinesis*. Grep the option lists too.
-- **Sibling-hint leaks are the recurring defect of this book** *(pilot)*.
-  Three of the chapter's four real item defects were one item's hint
-  printing another item's answer, and no lint can see them. Microbiology's
-  Practice groups are short and thematically tight — every item in §1.1's
-  first group orbits the word *fermentation* — so when a group's central
-  vocabulary word is also a graded `textin` answer, read every other item's
-  hint in that group for the literal word, not just for synonyms. Read
-  backwards too: a hint that names an EARLIER item's answer is still a leak.
-  **A filler item's stem leaks as readily as a hint** *(chapter 2)*: §2.2's
-  author-built "made using simple microscopes he built himself" stem handed
-  over the term-recall `textin` keyed *simple microscope* two groups later,
-  and §2.3's 400× hint ("multiply by the power of the objective lens") was
-  the exact key of a later select-the-term item until its author caught it.
-  Grep every stem and hint on the page for every `textin` key and every
-  `multiplechoice` key, across groups, not only within one.
-- **An author-written caption or alt must not restate a paired item's
-  answer set.** This is the Art Connection failure mode above, and it is new
-  with this book, because its Art Connection media carry no source caption.
-- Errata go to `docs/openstax-errata.md` without asking, as always. The
-  pilot logged nine (320–328): four merged glossary headwords, a species
-  name the book spells correctly elsewhere, a journal volume, a glossary
-  "cell wells", and four figure-alt defects — two misspelled taxon labels,
-  a label that names the wrong part of the drawing, and a branch placed on
-  the wrong side of a tree. Chapter 2 logged eleven (330–340), nine of them
-  in figure alts: two rays given the same name, a photograph described that
-  is not in the figure, a table row dropped and its example moved to the row
-  above, and five misspellings; the other two are a caption's "used to
-  visualized" and a Link to Learning that prints its title twice. **Figure
-  alt text is where this book's source defects concentrate**; budget the
-  checker's time accordingly, and open every table image rather than
-  trusting its alt. Chapter 3 logged fourteen (346–359), eleven of them alt
-  defects and one a CALS table's `summary` attribute — transcribe a table
-  from its cells, never from `summary`.
-- **A one-item-per-bin labelling figure cannot be a `sortbins`** *(chapters
-  5–6)*. The grader's interleave rule needs more same-bin runs than bins, so
-  a bijective assignment (four letters, four parts) always throws "items are
-  grouped by bin". §6.1's T4 bacteriophage labelling item became four
-  single-letter `multiplechoice` items whose options are the module's own
-  part names; §6.3's four-row cytopathic-effects table earns no sortbins for
-  the same reason.
-- **The plural fold is one-directional** *(chapters 5–6)*: grading folds a
-  learner's regular plural onto a singular key, never a learner's singular
-  onto a plural key. A `textin` keyed to a plural (`muscles`, `mosquitoes`,
-  `cytopathic effects`) lists the singular in `accept`; a Greek/Latin plural
-  key (`conidia`, `modified mitochondria`) lists its `-um`/`-on` singular;
-  and a key with a prefix (`antibacterial`) lists the hyphenated spelling,
-  because the grader folds hyphen-versus-space only at an existing boundary.
-- **A `## Key terms` bullet or a figure caption can leak a key** *(chapters
-  5–6)*: a term-recall `textin` keyed to a defined term always sits below
-  the bullet that defines it (accepted, by design), but a body item placed
-  directly under a figure whose source caption names its answer (§6.2's
-  growth-curve "burst") reverts to a `selfcheck`, and an author-built MC's
-  option list may not print the next item's `textin` key.
-- **A stem built on a false claim is reworded when the claim is corrected**
-  *(chapters 5–6)*: §6.1's source Check Your Understanding asked "Why was the
-  first virus investigated mistaken for a toxin?", a premise the claim pass
-  overturned (erratum 483); the graded item now asks what Beijerinck
-  concluded, and the footer says so.
-- **Prose claim pass yield, chapters 5–6**: seven accepted corrections in
-  nine sections (a self-contradicting feeding-mode term, two misspelt
-  taxon names settled by the book's own appendices and a DOI, a helminth
-  length off by an order of magnitude against CDC DPDx, an inverted
-  account of Beijerinck's conclusion, a footnote year, and the Duncan case
-  dates against the CDC MMWR report), four suspicions kept as printed.
-  Checkers again over-reported by about half; verify every finding's
+  `unkeyed` (its question transcribes an exercise the source does not key)
+  or `unmatched` (no source exercise), and a `multiplechoice` converted
+  from an unkeyed question as `unkeyed`. All correct. It must never report
+  a graded item keyed differently from the source without a
+  `DISCLOSED_DEVIATIONS` entry and an erratum.
+- **Three readings, none redundant:** the author keys from the CNXML; one
+  Sonnet checker per section re-derives every key, answers every graded
+  item with the key covered, and reads every figure against its image; a
+  fresh Fable solver answers every `multiplechoice`, `textin`, and
+  `sortbins` from the masked pages (`solve:emit --pages-out`), and the
+  parent adjudicates every disagreement against the module.
+  `verify:ledger --require-solved` makes the third reading a condition of
+  green. Chapters 1–11: 0 wrong source keys found by the solve that the
+  checkers had missed; its yield is accept-list gaps and the occasional
+  double-keyed item.
+- **The checker's extra duties for this book:** the defined-term count
+  (class-less `<term>`, de-duplicated) against the Key-terms bullets; every
+  rubric clause of every model answer against the module; `kind` present
+  and right on every figure; a word-by-word diff of the page against the
+  CNXML for undisclosed one-word corrections.
+- Errata go to `docs/openstax-errata.md` without asking. **Figure alt text
+  is where this book's source defects concentrate** (chapters 1–3: 34 of
+  their 34 errata were alts, typos, or a table `summary`); open every image
+  and every table image rather than trusting its alt, and transcribe a
+  table from its cells, never from `summary`.
+- The prose claim pass yields about one accepted correction per two or
+  three sections (chapters 5–11: 15 corrections in 38 sections); checkers
+  over-report by about half, so the parent verifies every finding's
   evidence before editing.
-- **A multi-blank Fill in the Blank whose blanks have independent keys**
-  *(chapter 7)*: the two-blank rule above covers blanks that form ONE
-  answer. When the blanks are separate facts (§7.3: a wax's alcohol and its
-  fatty acid; cholesterol's group, bond, and hydroxyl), grade the single
-  most central blank as the `textin` and print the source's other keyed
-  words as given text in the stem, disclosed in the footer. When the source
-  key is an ORDERED list too long for a `textin` (§7.4's "secondary,
-  tertiary, primary"; §7.5's three-blank "fatty acids, methyl esters, gas
-  chromatography"), render one `multiplechoice` whose key is the source
-  list verbatim (its own punctuation, no inserted "and") and whose
-  distractors are other orderings or term-triples built from the module's
-  own sentences — never split it into clozes that reconstruct to the same
-  sentence (`distinctItems` sees one).
-- **A regular-plural KEY needs its singular in `accept`** *(chapter 7)*: the
-  fold is one-directional, so `alcohols`, `micelles`, `unit membranes`
-  each list the singular; and a source spelling the grader would reject
-  from a correct learner (`phosphorous` keyed for the element) lists the
-  correct spelling. A Glossary lookup tries the hyphen/space variant before
-  concluding a headword is absent (`lipid-bilayer` ↔ `lipid bilayer`).
-- **Source `<equation>` elements are plain-text lines** *(chapter 7)*: the
-  chemistry chapter's two reaction schemes (`H—monomer—OH + H—monomer—OH ⟶
-  H—monomer—monomer—OH + H₂O`; the glycosidic-bond scheme with its
-  underbrace label) are rendered as their own paragraph with the Unicode
-  arrow and subscripts, never `$…$`; an underbrace label becomes a
-  disclosed parenthetical. Do not carry a label from one module's equation
-  into another's — §7.1 shipped 7.2's "(a disaccharide)" until the checker
-  diffed it.
-- **The source alts of exercise images answer their own items** *(chapter
-  7)*: every media-bearing exercise (structural formulas to identify, a
-  tetrapeptide to count) carries a source alt that names the functional
-  group or states the count. Rewrite each to atoms and bonds only, and grep
-  the alt, caption, and `longdesc` for every key and rubric clause of the
-  paired item — three of five shipped a leak before the checkers read them.
-- **The 7.1/7.2 print boundary**: §7.1's closing equation, figure, and
-  table sit on the first page of the nominal 7.2 range — when the PDF page
-  table is derived from section headings, the last page of each section is
-  the next heading's first page too.
-- **A PNAS author list pasted with its affiliation superscripts** ("J.A.
-  Garnetta", "L. Gana, S. Chena, G.J. Jensena") is a source defect the
-  checker's word-diff catches *(chapter 3)*: cite the real surnames, disclose
-  in the footer, log it.
-- **A name and its abbreviation marked as separate `<term>` elements are
-  one Key-terms bullet** *(chapter 8)*: §8.1 marks `nicotinamide adenine
-  dinucleotide`, `NAD+/NADH`, `NADP+`, `NADPH`, `FAD`, `FADH2` and the two
-  parent names as eight elements in one passage. Bold each at its
-  occurrence as the source does, write three bullets (`**name**
-  (abbreviation) — …`), and record elements → bullets in the ledger (43 →
-  38). The Glossary script prints the abbreviation elements as NO ENTRY;
-  that is the merge, not a lookup failure. The same script drops `<sub>`
-  and `<sup>` markup, so a verbatim Glossary copy reintroduces ASCII
-  formulas — every bullet, alt, `longdesc`, `sortbins` label, and
-  exercise string is Unicode (`CO₂`, `NADP⁺`, `FADH₂`, `Pᵢ`); no lint sees
-  the drift, and four of seven chapter-8 pages shipped it to their
-  checkers.
-- **A figure that is a table of values is a table image** *(chapter 8)*:
-  §8.3's ATP-yield figure prints an empty `<caption>` and a source alt that
-  is a 700-character cell-by-cell transcription. The chapter-2 rule
-  generalizes to it — Markdown table from the image, checked against the
-  PDF, figure kept after it, said in the footer — and a manifest alt that
-  long is `longdesc` material, never copied into `alt`. A figure whose
-  CNXML caption is empty gets no caption line.
-- **Two source-verbatim items that print each other's key are reordered
-  and disclosed, never dropped** *(chapter 8)*: §8.2's "which is not a name
-  for the cycle that produces one ATP, two CO₂, one FADH₂, and three NADH"
-  prints the quadruple that keys the four-blank fill-in beside it, and a
-  source MC's distractor "Embden-Meyerhof pathway" prints a sibling
-  textin's key. Neither stem may change; put the leaked item BEFORE the
-  item that prints it, say so in the footer, and keep an unmovable one
-  (a cross-group option) with a disclosure. The checker's option-list grep
-  is what finds these; the "distractor directly above a textin" rule is a
-  substring rule, not an adjacency rule.
-- **A multi-word plural key needs its singular spellings in `accept`, in
-  every order** *(chapter 8)*: `chlorophylls and carotenoids` rejected
-  `chlorophyll and carotenoid` and three mixed forms until the checker ran
-  them. And a member that differs from another only by hyphen/space
-  (`beta-oxidation` / `beta oxidation`) or case (`RuBisCO` / `rubisco`) is a
-  duplicate the lint rejects — the v6 brief's own examples were wrong.
-- **An "entry step plus ordered rest" answer is a two-paragraph
-  conversion** *(chapter 8)*: §8.7's "What are the four steps of the
-  nitrogen cycle?" needs the fixation paragraph AND the
-  ammonification/nitrification/denitrification list; a converse read across
-  a paragraph boundary (§8.4's facultative-switch sentence plus the next
-  paragraph's "if respiration does not occur… fermentation") is the same
-  shape. Both stay self-checks. Chapter 8's checkers reverted six
-  conversions on this ground across five pages; the one-sentence test is
-  literal.
-- **A `sortbins` bin word can collide with a printed label** *(chapter
-  8)*: binning §8.4's fermentation-pathways table "by ethanol production"
-  puts the bin word inside the label "acetone-butanol-ethanol"; identify
-  that row by its other end products or its example microbe instead.
-- **A Clinical Focus figure sits inside its callout** *(chapter 8)*: §8.4's
-  Micro Connection and §8.7's Resolution each carry a `<figure>`; it is an
-  ordinary `mediafigure` at its document position inside the callout.
-- **The source alts of process figures state directions and counts the
-  artwork contradicts** *(chapter 8)*: §8.2's substrate-level-phosphorylation
-  alt runs the reaction backwards, §8.1's metabolism alt was inverted by its
-  author, a chemiosmosis longdesc miscounted four H⁺ as three, and two
-  artworks carry label typos ("Aponenzyme", "PO" for PQ, "elemental
-  sulfate(SO⁰)"). Every direction word and every count in an alt or
-  `longdesc` is read off the image; a label the artwork misprints is
-  transcribed as printed with the correct name beside it, and logged.
-- **Errata 504–525 came from this chapter**, two of them claim corrections
-  from the prose claim pass settled by the book's own text (archaeal
-  membrane phospholipids against §3.3; the nitrogen-cycle summary against
-  its own module), the rest figure-alt and spelling defects.
 
-- **A two-blank Fill in the Blank whose blanks are two independent
-  classification axes follows the chapter-7 independent-facts rule, not
-  the unordered-pair rule** *(chapter 9)*: §9.6's "The medium is ___ and
-  ___" (keyed *complex, differential*) is not one answer the module prints
-  as a phrase, so `verify-source-keys` reads a joined key ("complex and
-  differential") as `unsourced` and fails. Grade the distinguishing blank
-  (`differential`), print the other keyed word as given text, disclose in
-  the footer. The pilot's *Protista and Monera* form works only because the
-  module prints that phrase. And when an unordered pair IS kept as one
-  `textin`, its `accept` list needs both orders WITHOUT "and" as well —
-  the source's comma spelling normalizes to the bare pair, which matches
-  nothing else.
-- **A pair key longer than four words is one `multiplechoice`** *(chapter
-  9)*: §9.1's "a ___ or a ___" (*hemocytometer, Petroff-Hausser counting
-  chamber*) and "___ or ___" (*ATP, acid from fermentation*) render as one
-  MC each, key = the source list verbatim, distractors = other pairs of the
-  module's own methods in the same format.
-- **A media-bearing matching set is one `mediafigure` plus per-row MCs**
-  *(chapter 9)*: §9.2's four thioglycolate tubes — the figure once, with an
-  author-written caption and an alt that says where the cells sit in each
-  lettered tube but never names an oxygen class, then "Which type of
-  bacteria is growing in tube (a)?" over the source's five listed types in
-  list order, keyed by the source solution.
-- **A `textin` keyed to a compound the page prints as a formula lists the
-  formula in `accept`** *(chapter 9)*: `hydrogen peroxide` needs
-  `accept="H2O2"` (the Unicode `H₂O₂` normalizes to the same string and is
-  rejected as a duplicate). A binomial-keyed FILLER needs its abbreviated
-  form too (`Chlamydomonas nivalis` → `C. nivalis`); the accept rule in §5
-  is easy to miss when building a late filler.
-- **A `sortbins` bin label is the classification word alone** *(chapter
-  9)*: "Chemically defined medium" / "Complex medium" put the generic noun
-  "medium" — which every distinguishing sentence prints — into the
-  bin-word lint's path; `Chemically defined` / `Complex` do not.
-- **Grep the footer's own "fixing sentence" claim for words the module
-  never prints** *(chapter 9)*: §9.2's canned-foods conversion was
-  justified by "sealed environments"; "sealed" occurs in the module only
-  for glove-box openings. A conversion whose justification imports a word
-  is a two-sentence-plus-inference conversion — revert it.
-- **A converted stem may gain a referent, never a clause or a second
-  subject** *(chapter 9)*: "Given that free oxygen gas was essentially
-  nonexistent…" prepended to a CYU bullet, "thermophiles **and
-  hyperthermophiles**" added to another, and a plural possessive where the
-  source prints the singular were all reverted by the checkers.
-- **Author-built fillers leak into each other** *(chapter 9)*: §9.1's
-  filler MC distractor "sporulation in aerial filaments" sat directly above
-  the filler textin keyed `aerial filaments`, and a filler hint named the
-  body's `FtsZ` key. The distractor-above-a-textin rule and the
-  backwards hint sweep apply to author-built items as much as to source
-  items.
-- **A `longdesc` comparative ("roughly the same height") is a measured
-  claim** *(chapter 9)*: the temperature-curve peaks are visibly unequal;
-  read relative heights off the artwork like any count.
-- **Prose claim pass yield, chapter 9**: two accepted corrections settled
-  by the book itself (*L. monocytogenes* "psychrophile" against the
-  module's own class definitions and m58941's 0–50 °C range, erratum 532;
-  Actinomycetes "anaerobic" against the §4.4 Actinobacteria table, erratum
-  533), two suspicions kept (singlet-oxygen radical notation; 20% versus
-  16% listeriosis mortality). The 9.4 filler MC built on the psychrophile
-  sentence was reworded (the chapters 5–6 false-premise rule).
-- **Errata 526–534 came from this chapter**: the "psychotroph" matching
-  row, three figure-alt defects (a misspelt "pickes", four "an peaks" and
-  a "mesoophile" with mis-read peaks, an "alpha hemolysis" label the
-  artwork does not print), a Summary "hyperthemophiles", "proton pumps
-  inhibitors", the two claim corrections, and "health-acquired infections"
-  (kept as printed, twice in the chapter).
+### Leaks
+
+- **Sibling-hint leaks are this book's recurring defect** *(pilot)*: the
+  Practice groups are short and thematically tight, so grep every hint,
+  stem, and option list on the page for every `textin` and
+  `multiplechoice` key, across groups, forwards and backwards *(chapter 2)*.
+- A distractor directly above a `textin` may not be its key *(chapter 3)*;
+  the rule is a substring rule, not an adjacency rule *(chapter 8)*.
+- A True/False hint must not assert the tested fact *(chapter 3)*.
+- An author-written caption or alt must not restate a paired item's
+  answer set; an exercise image's SOURCE alt usually does *(chapter 7)* —
+  rewrite it to what is visible and grep alt, caption, and `longdesc` for
+  every key and rubric clause of the paired item.
+- A `## Key terms` bullet leaks its term-recall `textin` by design
+  (accepted); a body item under a figure whose caption names the answer
+  reverts to a `selfcheck` *(chapters 5–6)*.
+- Author-built fillers leak into each other exactly as source items do
+  *(chapter 9)*.
+- Two source-verbatim items that print each other's key are **reordered
+  and disclosed, never dropped and never edited** *(chapter 8)*; an
+  unmovable one keeps a footer disclosure.
+
+### Conversions and forms
+
+- **The one-sentence rule is literal** *(chapters 8–11)*: two sentences, a
+  paragraph boundary ("entry step plus ordered rest"), an inference, or a
+  word the module never prints (grep the footer's own "fixing sentence"
+  for it) → stays a `selfcheck`; a rewritten CYU stem is a defect even
+  when the cloze is honest; a converted stem may gain a referent, never a
+  clause or a second subject *(chapter 9)*.
+- A stem built on a claim the claim pass corrects is reworded to what the
+  module still supports, and the footer says so *(chapters 5–6)*.
+- A multi-blank Fill in the Blank: blanks that form ONE answer follow the
+  pilot's ordered/unordered rule; blanks that are independent facts or two
+  classification axes grade the most central blank as the `textin` and
+  print the source's other keyed words as given text, disclosed *(chapters
+  7, 9)*; an unordered pair kept as one `textin` lists both orders WITHOUT
+  "and" in `accept` *(chapter 9)*.
+- A key or ordered list longer than four words is one `multiplechoice`
+  whose key is the source list verbatim and whose distractors are other
+  orderings or tuples of the module's own terms — never clozes that
+  reconstruct the same sentence *(chapters 7, 9)*.
+- A media-bearing matching set is one `mediafigure` plus per-row
+  `multiplechoice` items keyed by the source solution; the alt says where
+  things sit, never what class they are *(chapter 9)*.
+- A lettered identification ("(i)/(ii)/(iii): which is the tRNA") is one
+  figure-keyed `multiplechoice` per thing; a many-letter labelling question
+  is a `selfcheck` whose model answer is the letter→part mapping read
+  against the source's own label list, letters grouped to stay within the
+  2–6 checkpoint cap; a table image with a graded ask may be a
+  `multiplechoice` when the arithmetic is the question's own instruction;
+  a figure-keyed BODY item is honest only when the artwork draws the fact,
+  never when only the alt says it *(chapters 10–11)*.
+- A sequence-derivation exercise is a fully worked `selfcheck` (every
+  sequence with its 5′/3′ ends, every amino acid, the mutation type); a
+  worksheet `<table>` inside such an exercise is a list in the question,
+  not a body table; it may read a sibling section's code table when the
+  question itself says so *(chapters 10–11)*.
+- A Clinical Focus or Micro Connection figure is an ordinary `mediafigure`
+  at its position inside the callout *(chapter 8)*.
+
+### `sortbins`
+
+- A one-item-per-bin labelling figure cannot be a `sortbins` (the
+  interleave rule needs more same-bin runs than bins); it becomes
+  per-letter `multiplechoice` items over the module's own part names
+  *(chapters 5–6)*.
+- Bin labels are the module's own group names, the classification word
+  alone (`Complex`, not `Complex medium`) *(chapter 9)*; an invented label
+  merging two table groups is a new claim — drop a group to fit the four-bin
+  cap instead *(chapters 10–11)*; when the comparison IS the category noun,
+  name the bins after the organism *(chapters 10–11)*.
+- A bin word can collide with a printed label (`ethanol` inside
+  `acetone-butanol-ethanol`): identify that row by its other end products
+  *(chapter 8)*. An enzyme→function table needs ≥2 items per bin, one from
+  the cell and one from the body *(chapters 10–11)*.
+
+### Keys and `accept` lists
+
+- The plural fold is one-directional: a plural KEY lists its singular
+  (`alcohols`, `chlorophylls and carotenoids` — every mixed form and
+  order); a Greek/Latin plural lists its `-um`/`-on` singular; a prefixed
+  key lists the hyphenated spelling; a keyed-plural `textin` lists only the
+  SINGULAR of an alternative term *(chapters 5–11)*.
+- Members that differ only by hyphen/space or case are duplicates the lint
+  rejects; a hyphen BETWEEN LETTERS does not fold (`semi-conservative`)
+  and needs listing *(chapters 8, 10–11)*.
+- A compound the page prints as a formula lists the ASCII formula
+  (`H2O2`); a binomial-keyed filler lists the abbreviated form; a source
+  spelling a correct learner would not type (`phosphorous`) lists the
+  correct one *(chapters 7, 9)*.
+- Gaps the checkers' grader runs keep finding: a module synonym (`jumping
+  gene`), a spaced unit (`70 S`), an abbreviation (`UV`, `HGT`), a
+  one-word spelling (`wildtype`) — list every spelling a correct learner
+  would type and run each through `check-text` *(chapters 10–11)*.
+- A why-question keyed to one abstract noun is the weakest `textin` form;
+  extend its accept list within the 4-word cap or ask it as a
+  `multiplechoice` *(chapters 10–11)*.
+
+### Key terms
+
+- A name and its abbreviation marked as separate `<term>` elements are
+  one bullet (`**name** (abbreviation) — …`); the prep script prints the
+  abbreviation element as NO ENTRY — that is the merge, not a lookup
+  failure — and drops `<sub>`/`<sup>`, so every copied definition is
+  re-set in Unicode *(chapter 8)*.
+- "No appendix entry" is claimed only after trying the singular, the
+  plural, the hyphen/space variant, and the abbreviation (`mRNA`,
+  `aminoacyl-tRNA synthetase` exist) *(chapters 7, 10–11)*.
+- A module with no class-less `<term>` has no `## Key terms` heading; its
+  fillers are summary/body clozes *(chapters 10–11)*.
+
+### Figures, alts, and `longdesc`
+
+- Every direction word, count, colour, orientation, and relative height in
+  an alt or `longdesc` is read off the artwork, never inherited from the
+  source alt or the caption — this book's process-figure alts contradict
+  their artwork (a reaction run backwards, four H⁺ counted as three, two
+  rungs for four, a before/after narrative for a static panel, a shared
+  panel dropped) *(chapters 8–11)*; a label the artwork misprints is
+  transcribed as printed with the correct name beside it and logged.
+- A figure that is a table of values is a table image: Markdown table from
+  the image, the figure kept after it, said in the footer; a 700-character
+  source alt is `longdesc` material; an empty CNXML caption means no
+  caption line *(chapter 8)*.
+- Multi-panel mechanism figures overshoot the 600-character alt cap on the
+  first pass every time: draft the `longdesc` walk-through first, then the
+  alt *(chapters 10–11)*.
+- The last page of a section is the next heading's first page too when
+  the PDF table is derived from headings *(chapter 7)*.
+
+### Notation and source text
+
+- Source `<equation>` elements that are reaction schemes are plain-text
+  Unicode lines (arrows, subscripts), never `$…$`; an underbrace label
+  becomes a disclosed parenthetical; a label is never carried from one
+  module's equation into another's *(chapter 7)*.
+- The prime family: house form is U+2032 `′` everywhere; the source mixes
+  `′`, `’`, and the modifier letter `ʹ` (U+02B9), which both normalizers now
+  fold; `tools/source/microbiology-prep.py glossary` folds them in lookups
+  *(chapters 10–11)*.
+- Genetics notation: isotopes and ions in Unicode (`³²P`, `F⁺`, `F⁻`,
+  `F′`); a numeric exponent in prose is `$4^3$` even inside a Source note;
+  a letter superscript (`fMet-tRNA<sup>fMet</sup>`) is the one inline HTML
+  `<sup>`; the source's en-dash promoter positions (`–10`) normalize to the
+  Unicode minus; sequences go in code spans with the source's spacing
+  *(chapters 10–11)*.
+- A PNAS-style author list pasted with its affiliation superscripts
+  ("J.A. Garnetta") is a source defect the word-diff catches: cite the
+  real surnames, disclose, log *(chapter 3)*.
+- A garbled source sentence repaired on the page (lost element symbols, a
+  duplicated superscript) is a disclosed correction like any one-word fix
+  *(chapters 10–11)*.
+
+### Footer and disclosure
+
+- Footer claims the checkers falsify every run: graded/selfcheck counts,
+  filler counts, "no appendix entry" for headwords that exist, and "logged
+  as an erratum" for entries the parent has not written — the parent logs
+  at close-out, and an author never claims it *(chapters 10–11)*.
+- Every reordering, every dropped item, every one-word correction, every
+  table-image transcription, every author-written caption, and every
+  filler with its sentence is named — an unexplained gap between the
+  source's exercise set and the Practice block is an oversight to the
+  reader.
 
 ## Knowledge checks
 
@@ -906,23 +820,14 @@ in `docs/knowledge-check-playbook-life-sciences.md`.
 
 ## How a chapter is run
 
-Three passes, in this order, and none of them optional:
-
-1. **Author** — one Sonnet author per section, each writing one page, all in
-   parallel. They share one brief file in the scratchpad rather than three
-   copies of it, so every author is held to the same rules and a correction
-   to the brief reaches all of them.
-2. **Check** — one Sonnet checker per section, briefed to trust nothing:
-   re-derive every key, answer every graded item with the key covered, read
-   every figure against its own image and its PDF page, count the defined
-   terms, and trace every rubric clause to the module.
-3. **Solve** — the parent answers every `multiplechoice` and `textin` in
-   writing with the keys hidden (`solve:emit` → `solve:compare`), settles
-   any disagreement against the CNXML, and merges the ledger records last,
-   because every hash depends on the final text.
-
-The chapter-1 pilot record — the parent-prep steps that precede a wave and
-the pilot's own retrospective — moved to `docs/history/microbiology.md`.
+The parent's recipe — prep scripts, the wave of Sonnet authors and
+checkers, the per-chapter claim pass, the blind solve in a fresh Fable
+subagent, the close-out order, and the context-hygiene rules that keep the
+run inside a usage window — is `docs/briefs/microbiology/run.md`; the
+agents' briefs are beside it (`author.md`, `checker.md`, `claim-pass.md`,
+`solve.md`, and the `run-facts-template.md` the parent fills per run).
+Three passes, none optional: author → checker → solve. The pilot's record
+is in `docs/history/microbiology.md`.
 
 ## Done checklist (in addition to the core and life-sciences checklists)
 

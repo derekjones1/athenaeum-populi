@@ -168,8 +168,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 26,
       "upstreamSections": 127,
-      "localChapters": 9,
-      "mappedSections": 44
+      "localChapters": 11,
+      "mappedSections": 55
     }
   },
   "sections": [
@@ -2440,6 +2440,105 @@
       "moduleId": "m58833",
       "sourceTitle": "Media Used for Bacterial Growth",
       "moduleSha256": "692a49c70e224b13c189e82c873e5245c8f48f7034d12d92b09bed5d22d3b3cc"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/10-biochemistry-of-the-genome/01-using-microbiology-to-discover-the-secrets-of-life.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "10.1",
+      "moduleId": "m58835",
+      "sourceTitle": "Using Microbiology to Discover the Secrets of Life",
+      "moduleSha256": "d7305f960d3834f84ebe1512b7160b9710e20c4fa27fd970f0d88e80b932d76a"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/10-biochemistry-of-the-genome/02-structure-and-function-of-dna.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "10.2",
+      "moduleId": "m58836",
+      "sourceTitle": "Structure and Function of DNA",
+      "moduleSha256": "32f4070c4a44a93ebc845980ea343cfba31a73830773190072d932a80e53b527"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/10-biochemistry-of-the-genome/03-structure-and-function-of-rna.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "10.3",
+      "moduleId": "m58837",
+      "sourceTitle": "Structure and Function of RNA",
+      "moduleSha256": "9e4b3062d0af3f7e21b2d8f0a1e6d3dd1560db29c3074febd4ff2bf716607752"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/10-biochemistry-of-the-genome/04-structure-and-function-of-cellular-genomes.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "10.4",
+      "moduleId": "m58838",
+      "sourceTitle": "Structure and Function of Cellular Genomes",
+      "moduleSha256": "f18e14826095537fe7ceab97df979adf8e62c7e033abe0325f71714dffd4ccde"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/01-the-functions-of-genetic-material.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "11.1",
+      "moduleId": "m58840",
+      "sourceTitle": "The Functions of Genetic Material",
+      "moduleSha256": "27da5a1768d7d0e4542f88a362c7723979abd8b1572c50363acd7bec203fd64b"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/02-dna-replication.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "11.2",
+      "moduleId": "m58841",
+      "sourceTitle": "DNA Replication",
+      "moduleSha256": "c4c2035991e96a7825b4f98d0ee0908d305ca4323129c2a2f889a9f9ab4f9f52"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/03-rna-transcription.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "11.3",
+      "moduleId": "m58842",
+      "sourceTitle": "RNA Transcription",
+      "moduleSha256": "49e0f8e468666461df7f9e7ad87da4fec025e56ef760950f542ed8d44020145d"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/04-protein-synthesis-translation.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "11.4",
+      "moduleId": "m58843",
+      "sourceTitle": "Protein Synthesis (Translation)",
+      "moduleSha256": "5b4432aa889078acb00e8aa068be18391d17068e31ace24a3381f5a66d50e360"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/05-mutations.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "11.5",
+      "moduleId": "m58844",
+      "sourceTitle": "Mutations",
+      "moduleSha256": "e72e9d624f49223a719bc63b88613968953723239e71570d9765d495a60b3d7a"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/06-how-asexual-prokaryotes-achieve-genetic-diversity.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "11.6",
+      "moduleId": "m58845",
+      "sourceTitle": "How Asexual Prokaryotes Achieve Genetic Diversity",
+      "moduleSha256": "d5d19fb7a5395cc2d1e224f1627408fb70b603cd54328ecbe6aa64fcb4160512"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/07-gene-regulation-operon-theory.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "11.7",
+      "moduleId": "m58846",
+      "sourceTitle": "Gene Regulation: Operon Theory",
+      "moduleSha256": "5c9b3d79aef400253330ca46f0c1e4b90a4ac625c896057316bc49faf4ca52b0"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

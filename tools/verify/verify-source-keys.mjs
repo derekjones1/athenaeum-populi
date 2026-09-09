@@ -129,6 +129,20 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/microbiology/10-biochemistry-of-the-genome/04-structure-and-function-of-cellular-genomes.md',
+    exercise: 'fs-id1172100837488',
+    kind: 'options',
+    erratum: 547,
+    reason: 'the source distractors "linear" and "double stranded" are both true of eukaryotic genomes by the module\'s own sentences, so the item was double-keyed; the page prints "circular" and "single stranded" in their place (key "diploid" unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/02-dna-replication.md',
+    exercise: 'fs-id1167662553709',
+    kind: 'options',
+    erratum: 548,
+    reason: 'the source option "3′-AGGCTTGAC-4′" names a 4′ end that no nucleic acid strand has; the page prints "3′-AGGCTTGAC-5′" (key unchanged)',
+  },
+  {
     page: 'content/life-health-sciences/microbiology/08-microbial-metabolism/07-biogeochemical-cycles.md',
     exercise: 'fs-id1167662519291',
     kind: 'options',
