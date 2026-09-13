@@ -94,7 +94,9 @@ section number, module id, output path, PDF page range, "read
 As each author reports: launch its checker (one Sonnet per section, prompt
 = page path + "read `$SP/checker.md`"). When a chapter's last page is on
 disk: launch its claim-pass checker (one Sonnet per chapter, prompt = the
-page paths with module ids + "read `$SP/claim-pass.md`", report path
+page paths with module ids, PLUS the landing page path with its intro
+module id — the landing page is Sonnet-written and this is its only
+reading — + "read `$SP/claim-pass.md`", report path
 `$SP/claims-chNN.md`).
 
 Checker defects go back to the page's author by `SendMessage` (authors are

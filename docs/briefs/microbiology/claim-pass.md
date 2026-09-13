@@ -62,3 +62,20 @@ life-cycle stage or host. Ignore style and pedagogy. Read every
 
 **Final message: three lines** — the report path, the counts (findings /
 suspicions / true distractors / claims examined), and the finding titles.
+
+## The chapter landing page (`_index.md`)
+
+Your task also names the chapter's landing page and its intro module. It is
+written by a Sonnet agent and no other pass reads it, so give it a
+transcription check as well as the claim reading: (1) the body prose is the
+intro module's text verbatim (diff it against the CNXML paragraphs; quote
+any word that differs); (2) each **Sections** bullet names a real section
+of the chapter and says only things that module actually covers (its
+objectives or its body — check the body before calling a bullet invented);
+(3) view the splash image (`static/media/microbiology/<stem>-800.webp`) and
+confirm the alt describes what is drawn or photographed, nothing more;
+(4) the footer's `Changes:` sentence is true of the page (figure re-encode,
+footnote handling, whether the intro module defines terms). Report under a
+`## Landing page` heading in the same defect/concern shape; "clean" is a
+finding too.
+

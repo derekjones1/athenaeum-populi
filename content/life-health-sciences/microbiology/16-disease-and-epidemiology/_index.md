@@ -5,7 +5,7 @@ source_chapter: "16"
 weight: 16
 ---
 
-{{< mediafigure src="microbiology/OSC_Microbio_16_00_Splash" kind="photo" alt="A close-up of a red biohazard waste bin with a red diamond-shaped warning label showing the black biohazard trefoil symbol above the word BIOHAZARD, and a red plastic liner bag visible curling over the bin's rim." eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_16_00_Splash" kind="photo" alt="A close-up of a red biohazard waste bin with a rectangular orange-red warning label showing the black biohazard trefoil symbol above the word BIOHAZARD, and a red plastic liner bag visible curling over the bin's rim." eager="true" >}}
 Signs like this may seem self-explanatory today, but a few short centuries ago, people lacked a basic understanding of how diseases spread. Microbiology has greatly contributed to the field of epidemiology, which focuses on containing the spread of disease. (credit: modification of work by Tony Webster)
 {{< /mediafigure >}}
 

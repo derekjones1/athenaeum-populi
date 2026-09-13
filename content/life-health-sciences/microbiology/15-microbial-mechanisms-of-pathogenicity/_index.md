@@ -5,7 +5,7 @@ source_chapter: "15"
 weight: 15
 ---
 
-{{< mediafigure src="microbiology/OSC_Microbio_15_00_Sneeze" kind="photo" alt="Left, a medical professional in a navy scrub top leaning in to examine a patient's open mouth with a small handheld light, in a clinic room with wood cabinetry. Right, a woman in a blue sweatshirt, eyes closed and head bowed, sneezing into a folded cloth held to her nose with both hands." eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_15_00_Sneeze" kind="photo" alt="Left, a man in a navy T-shirt with a small printed logo leaning in to examine a patient's open mouth with a small handheld light, in a clinic room with wood cabinetry. Right, a woman in a blue sweatshirt, eyes closed and head bowed, sneezing into a folded cloth held to her nose with both hands." eager="true" >}}
 Although medical professionals rely heavily on signs and symptoms to diagnose disease and prescribe treatment, many diseases can produce similar signs and symptoms. (credit left: modification of work by U.S. Navy)
 {{< /mediafigure >}}
 
