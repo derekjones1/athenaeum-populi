@@ -314,6 +314,16 @@ test('build audit: content images, duplicated chrome, and missing no-JavaScript 
     const wellFormed = audit();
     assert.equal(wellFormed.status, 0, `a well-formed mediafigure with a matching manifest and shipped variant should pass: ${wellFormed.stderr}`);
 
+    // A `>` inside a quoted attribute does not end the tag. Micro 14.6's
+    // microdilution alt reads "MIC >32 µg/mL"; the naive `<img\b[^>]*>` cut
+    // that tag off before `decoding` and failed a well-formed figure as
+    // malformed, and Hugo's minifier legitimately leaves the `>` unescaped.
+    prepare(mediaImg('').replace('alt="A labeled diagram of a cell."', 'alt="A well circled and labeled MIC >32 µg/mL, beside a 2>1 legend."'));
+    writeMediaManifest('biology', { 'fig-1': { variants: [{ width: 400, height: 300, file: 'fig-1-400.webp' }] } });
+    writeMediaVariant('biology', 'fig-1-400.webp');
+    const gtInAlt = audit();
+    assert.equal(gtInAlt.status, 0, `a mediafigure whose alt contains a literal ">" is well formed and must pass: ${gtInAlt.stderr}`);
+
     prepare('<img src="/media/biology/fig-1-400.webp" alt="A labeled diagram of a cell." width="400" height="300" decoding="async">');
     writeMediaManifest('biology', { 'fig-1': { variants: [{ width: 400, height: 300, file: 'fig-1-400.webp' }] } });
     writeMediaVariant('biology', 'fig-1-400.webp');

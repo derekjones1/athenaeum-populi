@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import { join, relative, sep } from 'node:path';
 import { parseCliArgs } from '../lib/cli.mjs';
 import { loadMediaManifests, walkFiles } from '../lib/content.mjs';
-import { htmlAttribute, hasFileBackedCssImage, MAIN_CONTENT_RE } from '../lib/html.mjs';
+import { htmlAttribute, hasFileBackedCssImage, MAIN_CONTENT_RE, openTagRe, openTagSource } from '../lib/html.mjs';
 
 let cli;
 try {
@@ -383,7 +383,7 @@ const hasRemoteCss = (source) => {
 };
 
 function hasRemoteHtmlDependency(document) {
-  for (const match of document.matchAll(/<([A-Za-z][\w:-]*)\b[^>]*>/g)) {
+  for (const match of document.matchAll(new RegExp(openTagSource('([A-Za-z][\\w:-]*)'), 'g'))) {
     const tag = match[0];
     const name = match[1].toLowerCase();
     let targets = [];
@@ -446,7 +446,7 @@ function mainContent(document) {
 function sameSiteRedirect(document) {
   let canonical = '';
   let refresh = '';
-  for (const match of document.matchAll(/<(?:link|meta)\b[^>]*>/gi)) {
+  for (const match of document.matchAll(openTagRe('(?:link|meta)'))) {
     const tag = match[0];
     if (/^<link\b/i.test(tag) && htmlAttribute(tag, 'rel').toLowerCase().split(/\s+/).includes('canonical')) {
       canonical = htmlAttribute(tag, 'href');
@@ -468,7 +468,7 @@ function sameSiteRedirect(document) {
   }
 }
 function katexCssHref(document) {
-  for (const match of document.matchAll(/<link\b[^>]*>/gi)) {
+  for (const match of document.matchAll(openTagRe('link'))) {
     const rel = htmlAttribute(match[0], 'rel').toLowerCase().split(/\s+/);
     const href = htmlAttribute(match[0], 'href');
     if (rel.includes('stylesheet') && /\/katex\/katex(?:\.min)?\.css(?:[?#]|$)/i.test(href)) return href;
@@ -500,7 +500,7 @@ const KATEX_PRELOAD_FACES = [
 ];
 function katexFontPreloads(document) {
   const preloads = [];
-  for (const match of document.matchAll(/<link\b[^>]*>/gi)) {
+  for (const match of document.matchAll(openTagRe('link'))) {
     const rel = htmlAttribute(match[0], 'rel').toLowerCase().split(/\s+/);
     if (!rel.includes('preload') || htmlAttribute(match[0], 'as').toLowerCase() !== 'font') continue;
     preloads.push({ href: htmlAttribute(match[0], 'href'), crossorigin: /(?:^|\s)crossorigin\b/i.test(match[0]) });
@@ -571,14 +571,20 @@ if (/<(?:picture|object|embed)\b|<source\b[^>]*\bsrcset\s*=|<image\b/i.test(cont
 // vendored variant) is the ONLY <img> this audit allows anywhere in
 // main#content. Everything else — an <img> anywhere else, or a malformed one
 // inside a mediafigure — still fails as a file-backed image.
+//
+// Every tag here is matched with the quote-aware `openTagRe`, never
+// `<img\b[^>]*>`: an alt is allowed to say "MIC >32 µg/mL" (Micro 14.6
+// shipped exactly that), and a `>` inside a quoted attribute does not end the
+// tag. The naive form cut that <img> off before `decoding` and reported a
+// well-formed figure as malformed.
 const mediaFigureRanges = [];
-for (const figureMatch of contentHtml.matchAll(/<figure\b[^>]*>[\s\S]*?<\/figure>/gi)) {
+for (const figureMatch of contentHtml.matchAll(new RegExp(`${openTagSource('figure')}[\\s\\S]*?</figure>`, 'gi'))) {
   if (/(?:^|\s)ap-mediafigure(?:\s|$)/.test(htmlAttribute(figureMatch[0], 'class'))) {
     mediaFigureRanges.push([figureMatch.index, figureMatch.index + figureMatch[0].length]);
   }
 }
 const inMediaFigure = (index) => mediaFigureRanges.some(([start, end]) => index >= start && index < end);
-for (const match of contentHtml.matchAll(/<img\b[^>]*>/gi)) {
+for (const match of contentHtml.matchAll(openTagRe('img'))) {
   if (!inMediaFigure(match.index)) {
     problems.push('file-backed content image markup');
     continue;
@@ -596,16 +602,16 @@ for (const match of contentHtml.matchAll(/<img\b[^>]*>/gi)) {
     problems.push('mediafigure <img> is malformed (src/srcset must each name a vendored manifest variant, and alt/width/height/decoding are all required)');
   }
 }
-for (const match of contentHtml.matchAll(/<(?:input|video)\b[^>]*>/gi)) {
+for (const match of contentHtml.matchAll(openTagRe('(?:input|video)'))) {
   if (htmlAttribute(match[0], 'type').toLowerCase() === 'image' || htmlAttribute(match[0], 'poster')) {
     problems.push('file-backed content image markup');
   }
 }
-for (const match of contentHtml.matchAll(/<(?:use|feImage)\b[^>]*>/gi)) {
+for (const match of contentHtml.matchAll(openTagRe('(?:use|feImage)'))) {
   const target = htmlAttribute(match[0], 'href') || htmlAttribute(match[0], 'xlink:href');
   if (target && !target.trim().startsWith('#')) problems.push('external SVG resource');
 }
-for (const match of contentHtml.matchAll(/<[^>]+>/g)) {
+for (const match of contentHtml.matchAll(/<[A-Za-z][\w:-]*\b(?:[^>'"]|"[^"]*"|'[^']*')*>/g)) {
   if (hasFileBackedCssImage(htmlAttribute(match[0], 'style'))) problems.push('file-backed content image URL');
 }
 for (const match of contentHtml.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/gi)) {
