@@ -1622,6 +1622,17 @@ export function lintHugo(src, filename = '', options = {}) {
       err(m.index, 'inline SVG needs role="img" and a non-empty aria-label or aria-labelledby');
     }
   }
+  // ---- placeholder link targets ---------------------------------------------
+  // A section's provenance footer quoted its own cross-link as
+  // `[The Language of Epidemiologists](…)`, and Markdown rendered the quote as
+  // a real link to `…`. Every local gate passed (the lint never read link
+  // targets; check:links needs a built site) and CI failed on the dead link.
+  // A target that is an ellipsis, blank, a bare `#`, or a TODO/TBD marker is
+  // never a real destination; a quoted link in prose is plain text.
+  for (const m of htmlMediaSrc.matchAll(/\]\(\s*(?:…|\.{3}|#|(?:TODO|TBD|TK)\b[^)]*)?\s*\)/gi)) {
+    if (m.index > 0 && htmlMediaSrc[m.index - 1] === '\\') continue;
+    err(m.index, `placeholder link target ${JSON.stringify(m[0])} — give the link a real destination or quote it as plain text`);
+  }
   // ---- figure curve precision ----------------------------------------------
   // Legacy figures — a pasted `<div class="ap-figure">` — carry their
   // generating JSON in a data-spec attribute. When present it must parse, and

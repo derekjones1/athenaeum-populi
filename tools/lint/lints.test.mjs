@@ -3150,3 +3150,13 @@ test('an exercise that names a figure, graph, or table must have one to resolve 
   assert.equal(dangling.length, 1, dangling.join('\n'));
   assert.match(dangling[0], /"Use the graph" names a figure, graph, or table, but no apfigure, mediafigure, inline <svg>, Markdown table, or image sits above it/);
 });
+
+test('a Markdown link whose target is an ellipsis, blank, or a TODO marker is a placeholder', () => {
+  for (const target of ['…', '...', '', '#', 'TODO', 'TBD: link 16.1']) {
+    const src = `# T\n\nThe case began in [The Language of Epidemiologists](${target}).\n`;
+    const errors = lintHugo(src, 'content/x/y/16-a/03-b.md').errors.filter((e) => e.includes('placeholder link target'));
+    assert.equal(errors.length, 1, `target ${JSON.stringify(target)} should be flagged`);
+  }
+  const ok = '# T\n\nSee [16.1](/x/y/16-a/01-c/) and `[quoted](…)` in code. A footnote [^1] too.\n\n[^1]: note\n';
+  assert.deepEqual(lintHugo(ok, 'content/x/y/16-a/03-b.md').errors.filter((e) => e.includes('placeholder link target')), []);
+});
