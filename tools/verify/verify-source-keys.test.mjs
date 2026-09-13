@@ -175,6 +175,35 @@ test('a multiplechoice matched to a source exercise that prints no solution is u
   assert.equal(verdict.exercise.id, 'sa1');
 });
 
+test('a page item whose stem is a Check Your Understanding question is a converted body question, not the look-alike exercise', () => {
+  // m58848 (§12.1) asks "what does a blue colony mean and why is it blue?" in
+  // a body box and "what do blue colonies represent?" in its Multiple Choice;
+  // the stems share enough vocabulary to match, and the body item — keyed
+  // from the module's sentence, as the life-sciences rule allows — was
+  // reported as a key-differs against the exercise.
+  const twin = readModule(`<document xmlns="http://cnx.rice.edu/cnxml"><content>
+    <note id="cyu" class="microbiology check-your-understanding"><list list-type="bulleted">
+      <item>In blue-white screening, what does a blue colony mean and why is it blue?</item>
+    </list></note>
+    <exercise id="mc-blue"><problem><para>In blue-white screening, what do blue colonies represent?</para>
+      <list list-type="enumerated" number-style="lower-alpha"><item>cells that have not taken up the plasmid vector</item><item>cells with recombinant plasmids containing a new insert</item><item>cells containing empty plasmid vectors</item><item>cells with a non-functional lacZ gene</item></list></problem>
+      <solution><para>C</para></solution></exercise>
+  </content></document>`);
+  assert.ok(twin.checkQuestions.has(compact('In blue-white screening, what does a blue colony mean and why is it blue?')));
+  const body = {
+    type: 'multiplechoice',
+    question: 'In blue-white screening, what does a blue colony mean and why is it blue?',
+    answer: 'It contains a nonrecombinant plasmid, because the intact lacZ gene still produces functional beta-galactosidase',
+    options: ['It contains a nonrecombinant plasmid, because the intact lacZ gene still produces functional beta-galactosidase', 'It contains a recombinant plasmid, because the foreign DNA insert produces a blue pigment'],
+  };
+  assert.equal(judgeMultipleChoice(body, twin).status, 'unmatched');
+  assert.equal(judgeSelfcheck({ type: 'selfcheck', question: body.question, model: 'A nonrecombinant plasmid.' }, twin).status, 'unmatched');
+  // The exercise itself is still judged against its key.
+  const practice = { ...body, question: 'In blue-white screening, what do blue colonies represent?', answer: 'cells containing empty plasmid vectors', options: ['cells that have not taken up the plasmid vector', 'cells with recombinant plasmids containing a new insert', 'cells containing empty plasmid vectors', 'cells with a non-functional lacZ gene'] };
+  assert.equal(judgeMultipleChoice(practice, twin).status, 'confirmed');
+  assert.equal(judgeMultipleChoice({ ...practice, answer: 'cells with a non-functional lacZ gene' }, twin).status, 'key-differs');
+});
+
 test('a textin answer must come from the module', () => {
   const textin = (question, answer) => judgeTextin({ type: 'textin', question, answer }, source).status;
   assert.equal(textin('The distance between consecutive points of a wave is its ________.', 'wavelength'), 'glossary');

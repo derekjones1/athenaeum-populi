@@ -39,7 +39,12 @@ printed; a Sonnet checker takes 5–8 minutes per chapter of 3–6 sections.
 | Microbiology | 09-microbial-growth | 6 | done Sep 8 2026 (in the authoring run) | 532–533; the singlet-oxygen radical notation and the 20% listeriosis mortality figure kept |
 | Microbiology | 10-biochemistry-of-the-genome | 4 | done Sep 8 2026 (in the authoring run) | 545–546 (pX02 capsule; viral genome-size floor vs the module's own chart), 537 (Griffith citation pages); nothing kept |
 | Microbiology | 11-mechanisms-of-microbial-genetics | 7 | done Sep 8 2026 (in the authoring run) | 550–551 (pol ε/δ strands; topoisomerase IV break type); nothing kept |
+| Microbiology | 12-modern-applications-of-microbial-genetics | 4 | done Sep 8 2026 (in the authoring run) | 556–557 (the *Xenopus* cloning year; Sanger dideoxy year); the RFLP "definitively determine" forensic sentence kept as an introductory simplification |
 | Microbiology | 08-microbial-metabolism | 7 | done Sep 7 2026 (in the authoring run) | 512, 518; lithotroph/organotroph Glossary equivalences, the 5–10% meningococcal fatality figure, the anaerobic-respiration ATP ranges, and the *Nitrosomonas* attribution kept |
+| Microbiology | 13-control-of-microbial-growth | 4 | done Sep 12 2026 (in the authoring run) | none; the germicidal-lamp "260 nm" wavelength kept (the module teaches the DNA absorption maximum, not a lamp's emission line) |
+| Microbiology | 14-antimicrobial-drugs | 7 | done Sep 12 2026 (in the authoring run) | 587 (Albert Schatz), 595 (oxazolidinone translocation), 597–598 (artemisinin "antifungal"; chloroquine and G6PD deficiency), 602 (*Streptomyces clavuligerus*), 607 (teixobactin from Maine, not Mount Ararat); the PCP 10%-of-HIV-deaths figure, the superseded *S. avermectinius* name, and ivermectin "nontoxic to humans" kept |
+| Microbiology | 15-microbial-mechanisms-of-pathogenicity | 4 | done Sep 12 2026 (in the authoring run) | 608–610 |
+| Microbiology | 16-disease-and-epidemiology | 4 | done Sep 12 2026 (in the authoring run) | none |
 
 Knowledge-check pages (`knowledge-check-*.md`) carry no source prose and are
 outside this pass; their items are covered by the KC audit.

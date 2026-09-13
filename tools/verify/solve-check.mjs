@@ -81,6 +81,13 @@ import { analyzeFillin } from './verify-answers.mjs';
 
 export const SOLVED_KINDS = Object.freeze(['multiplechoice', 'textin', 'sortbins', 'fillin']);
 
+// The provenance footer (`<small>…</small>`) names keys in prose — "the
+// Matching exercise (key: D, E, B, A, C)", "keyed nosocomial, accepting
+// HAI" — so a masked page that keeps it is not blind (the chapter 16 solver
+// read the leak, September 12, 2026). The whole footer goes, not just the
+// sentences that happen to say "key".
+const maskFooter = (src) => src.replace(/<small>[\s\S]*?<\/small>/g, '<small>…</small>');
+
 const compact = (value) => normalizeText(value).replace(/\s+/g, '');
 
 /** One packet item: what the solver sees. Keys, accepts, and hints never
@@ -370,7 +377,7 @@ if (process.argv[1] && resolve(process.argv[1]) === new URL(import.meta.url).pat
       const pagesOut = rest[pagesOutIndex + 1];
       mkdirSync(pagesOut, { recursive: true });
       for (const page of packets.keys()) {
-        writeFileSync(join(pagesOut, basename(page)), maskKeys(readFileSync(page, 'utf8')));
+        writeFileSync(join(pagesOut, basename(page)), maskFooter(maskKeys(readFileSync(page, 'utf8'))));
       }
       console.log(`masked ${packets.size} page(s) into ${pagesOut}/`);
     }

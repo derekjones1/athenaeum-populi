@@ -3065,6 +3065,10 @@ test('a bare $N,NNN reads as the start of inline math, unless it is really a mat
   assert.deepEqual(money('| Substitute the values into the formula. | $50,000=10,000{e}^{r}$ |\n'), [],
     'real math in a table cell — an operator, not a word, follows the last group');
   assert.deepEqual(money('Hector invests \\$300,000 at age 21.\n'), [], 'escaped currency is already correct');
+  assert(money('Of its roughly $4 billion budget, about $1 billion was assessed.\n').length > 0,
+    'a magnitude-word amount ("$4 billion") opens the same bogus math span (Microbiology 16.4)');
+  assert(money('The budget doubled to $1.2 billion for research.\n').length > 0, 'a decimal magnitude-word amount, single unescaped $');
+  assert.deepEqual(money('The budget doubled to \\$1.2 billion for research.\n'), [], 'escaped magnitude-word amount is correct');
   const figureSpec = '{{< apfigure kind="graph" >}}\n{"ariaLabel":"A curve.","lines":[{"slope":1,"intercept":0}]}\n{{< /apfigure >}}';
   assert(money(`He earned $300,000 last year.\n\n${figureSpec}\n`).length > 0,
     'the rule still catches the prose sentence beside an unrelated figure spec');

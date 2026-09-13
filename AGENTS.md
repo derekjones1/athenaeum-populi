@@ -14,7 +14,8 @@ subject-specific rules are in `docs/subjects/life-sciences.md` (the shelf's
 baseline) plus `docs/subjects/biology.md` (the book's delta), on top of the
 same source workflow. OpenStax Microbiology is pinned and `in-progress` (26
 chapters, 127 sections; chapters 1–2 authored September 5, 2026, chapter 1
-as the pilot, and chapters 3–4 on September 6); its rules are in
+as the pilot, chapters 3–4 on September 6, and chapters 5–16 through
+September 12); its rules are in
 `docs/subjects/microbiology.md`, which also records how it differs from
 Biology 2e (unkeyed prose exercises, no per-module glossary, new box and
 item types). A Microbiology chapter is run from
@@ -53,7 +54,7 @@ themselves keep only what is still operative.
   has a local page, chapter parity is enforced book-wide, and
   `build-map`/`verify-map` report them at full coverage; Microbiology is
   `in-progress` (pinned September 5, 2026, its first two chapters authored
-  the same day, chapters 3–4 on September 6, chapters 5–8 on September 7, and chapters 9–11 on September 8) and is reported as `11/26 chapters, 55/127 sections mapped`. Biology 2e's sections live under
+  the same day, chapters 3–4 on September 6, chapters 5–8 on September 7, chapters 9–12 on September 8, and chapters 13–14 on September 12) and is reported as `14/26 chapters, 70/127 sections mapped`. Biology 2e's sections live under
   `content/life-health-sciences/biology` (each lock entry carries a
   `contentPath`, so a book need not live under `content/math`) and its
   subject playbooks (`docs/subjects/life-sciences.md` plus

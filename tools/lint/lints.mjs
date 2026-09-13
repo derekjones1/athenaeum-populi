@@ -1478,6 +1478,17 @@ export function lintHugo(src, filename = '', options = {}) {
       }
     }
   }
+  // The same defect with a magnitude word instead of digit groups: "$4
+  // billion" / "$1.2 million" (Microbiology 16.4's WHO budget broke the
+  // production build with a KaTeX parse error while every fast gate passed).
+  // No math span in the corpus is `$<number> billion`, so the shape alone
+  // decides.
+  {
+    const noFigures = withoutFigureSpecs(mediaSrc, blank);
+    for (const m of noFigures.matchAll(/(?<!\\)\$(\d+(?:\.\d+)?)\s+(thousand|million|billion|trillion)\b/gi)) {
+      err(m.index, `\`$${m[1]} ${m[2]}\` reads as the start of inline math — money is written \\$${m[1]} ${m[2]}`);
+    }
+  }
   // TeX discards ordinary source whitespace in math mode. Catch the
   // high-confidence prose joins that caused visible "Ifn" / "squareof"
   // regressions, while leaving compact operator and unit notation to visual

@@ -61,11 +61,6 @@ pathogens that cause them.
 - **Mechanisms of Microbial Genetics** — the functions of genetic material,
   DNA replication, transcription, translation, mutations, how asexual
   prokaryotes achieve genetic diversity, and operon theory.
-
-## Planned contents
-
-Microbiology has 26 chapters. The remaining 15 will appear in this order:
-
 - **Modern Applications of Microbial Genetics** — the tools of genetic
   engineering; visualizing and characterizing DNA, RNA, and protein;
   whole-genome methods and pharmaceutical applications; and gene therapy.
@@ -80,6 +75,11 @@ Microbiology has 26 chapters. The remaining 15 will appear in this order:
   of bacterial, viral, and eukaryotic pathogens.
 - **Disease and Epidemiology** — the language of epidemiologists, tracking
   infectious diseases, modes of transmission, and global public health.
+
+## Planned contents
+
+Microbiology has 26 chapters. The remaining 10 will appear in this order:
+
 - **Innate Nonspecific Host Defenses** — physical, chemical, and cellular
   defenses; pathogen recognition and phagocytosis; inflammation and fever.
 - **Adaptive Specific Host Defenses** — an overview of adaptive immunity,

@@ -17,6 +17,14 @@ your section number.
 section. `npm run verify-section -- <your page>` is the one command you run
 repeatedly.
 
+**Every source exercise reaches your page.** Graded when one module artifact
+fixes the answer, `selfcheck` otherwise — never absent, and never folded into
+a body Check Your Understanding item unless the two stems are the same
+question reworded (quote both in your ledger when you claim it). Count the
+module's exercises before you write the Practice block and count them again
+before you write the footer; every number the footer states is one you
+re-derived, not one you remembered.
+
 **Write your content file within your first ~20 tool calls and iterate on it
 in place** — a killed agent with a file on disk is resumable. A long section
 is written subsection by subsection, appended; after each batch of edits,
@@ -32,7 +40,8 @@ at once).
    media and alt policy, `textin`/`selfcheck`/`sortbins` rules, **"Unkeyed
    source questions: graded when the module fixes the answer"** (the four
    honest graded forms and when an item STAYS a selfcheck), the table →
-   `sortbins` rule, and "What the first retrofit's checkers caught".
+   `sortbins` rule, **"No source exercise is ever dropped, and 'duplicate'
+   is a claim to prove"**, and "What the first retrofit's checkers caught".
 4. `docs/authoring-playbook.md` — **§0 (source-first), §3 (the component
    contract and the `## Practice` block), and §5 (working rules) only.**
    Grep `^## ` for the line numbers and Read those ranges; §1, §2, §4, and

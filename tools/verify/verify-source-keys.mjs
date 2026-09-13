@@ -587,8 +587,22 @@ export function readModule(xml) {
   }).filter((table) => table && table.rows.length);
   const summarySections = descendants(document, (node) => localName(node) === 'section'
     && (node.attributes.class || '') === 'summary');
+  // The body's Check Your Understanding questions. A page item converted from
+  // one of these has no source exercise, however much end-matter vocabulary it
+  // shares: m58848 (§12.1) asks "what does a blue colony mean and why is it
+  // blue?" in a body box and "what do blue colonies represent?" in its
+  // Multiple Choice, and the body item was reported as a false key-differs
+  // against the exercise.
+  const checkQuestions = new Set(
+    descendants(document, (node) => localName(node) === 'note'
+      && /check-your-understanding/.test(node.attributes.class || ''))
+      .flatMap((note) => descendants(note, (node) => localName(node) === 'item'))
+      .map((item) => compact(textContent(item)))
+      .filter(Boolean),
+  );
   return {
     exercises,
+    checkQuestions,
     glossary: new Set(glossary),
     terms: new Set(terms),
     tables,
@@ -657,6 +671,11 @@ export function pageItems(markdown) {
 
 const lineOf = (text, index) => text.slice(0, index).split('\n').length;
 
+/** A page stem that is one of the module's Check Your Understanding questions
+ * verbatim is a converted body question: it has no source exercise, whatever
+ * end-matter stem it happens to resemble. */
+const isCheckQuestion = (question, source) => Boolean(source.checkQuestions && source.checkQuestions.has(compact(question)));
+
 function bestExercise(question, exercises, options = []) {
   let best = null;
   for (const exercise of exercises) {
@@ -698,6 +717,7 @@ function bestExercise(question, exercises, options = []) {
  *   { status: 'options-differ', detail }      an option's wording differs
  */
 export function judgeMultipleChoice(item, source) {
+  if (isCheckQuestion(item.question, source)) return { status: 'unmatched' };
   const exercise = bestExercise(item.question, source.exercises, item.options || []);
   if (!exercise) return { status: 'unmatched' };
   if (!normalizeWhitespace(exercise.solution)) return { status: 'unkeyed', exercise };
@@ -782,6 +802,7 @@ export function judgeTextin(item, source) {
  * sees them and their self-checks report 'unmatched'.)
  */
 export function judgeSelfcheck(item, source) {
+  if (isCheckQuestion(item.question, source)) return { status: 'unmatched' };
   const exercise = bestExercise(item.question, source.exercises);
   if (!exercise) return { status: 'unmatched' };
   if (!normalizeWhitespace(exercise.solution)) return { status: 'unkeyed', exercise };

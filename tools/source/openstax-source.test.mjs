@@ -254,18 +254,18 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 537 local sections exactly once', () => {
+test('committed provenance maps all 560 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 537);
-  assert.equal(result.actualCount, 537);
+  assert.equal(result.expectedCount, 560);
+  assert.equal(result.actualCount, 560);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
   assert.equal(counts['intermediate-algebra'].length, 70);
   assert.equal(counts.precalculus.length, 73);
   assert.equal(counts.biology.length, 208);
-  assert.equal(counts.microbiology.length, 55);
+  assert.equal(counts.microbiology.length, 78);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -314,8 +314,8 @@ test('the Microbiology book is pinned and in progress, its partial coverage coun
     authoringStatus: 'in-progress',
     upstreamChapters: 26,
     upstreamSections: 127,
-    localChapters: 11,
-    mappedSections: 55,
+    localChapters: 16,
+    mappedSections: 78,
   });
   assert.equal(result.map.books.microbiology.units, undefined, 'Microbiology is a flat collection');
 });

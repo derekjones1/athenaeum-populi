@@ -27,7 +27,10 @@ const strict = args.includes('--strict');
 const concurrency = Number(flag('concurrency') || 8);
 const jsonOut = typeof flag('json') === 'string' ? flag('json') : null;
 
-const URL_RE = /https?:\/\/[^\s)"'<>\]]+/g;
+// A backtick ends a URL: the corpus prints source URLs inside inline-code
+// spans in its footers (`https://openstax.org/l/22AntiMicrob`), and swallowing
+// the closing delimiter reported the live link as a 404.
+const URL_RE = /https?:\/\/[^\s)"'<>\]`]+/g;
 const SKIP = /^https?:\/\/(?:openstax\.org\/(?!l\/)|creativecommons\.org|athenaeumpopuli\.org)/;
 
 const found = new Map(); // url -> Set(paths)

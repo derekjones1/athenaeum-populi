@@ -547,6 +547,26 @@ whole answer, and stays a `selfcheck` otherwise. The four honest forms:
   options, keyed from the image. The checker reads the key from the image
   independently, and the ledger note says `figure-keyed`.
 
+**No source exercise is ever dropped, and "duplicate" is a claim to prove**
+*(chapters 13–14)*. The choice is between graded and `selfcheck`, never
+between rendered and absent: a question no module artifact can answer is
+exactly the case the `selfcheck` exists for, and its model answer says what
+the module supports and stops there. Five of the eleven authors of the
+chapters 13–14 wave dropped or folded away a source exercise, each with a
+reasonable-sounding footer sentence — "the module gives nothing to answer it
+with", "a near-duplicate of the body Check Your Understanding bullet", "no
+single sentence fixes it" — and every automated gate stayed green; only the
+checkers caught them. An end-matter exercise may be graded inside a body
+Check Your Understanding item ONLY when the two stems are the same question
+in reworded form ("Name at least two factors that can compromise…" against
+"What are some factors that alter…"); a shared topic is not a duplicate
+("Why is the soil a reservoir for antimicrobial resistance genes?" and "Why
+do antimicrobial-producing microbes commonly also have resistance genes?"
+are different asks, as are "Why is HIV difficult to treat with antivirals?"
+and "How does the biology of HIV necessitate multiple drugs?"). Quote both
+stems in the ledger note when claiming the fold, and never assert in the
+footer that a set is fully represented without counting it.
+
 It **stays a `selfcheck`** when the honest answer needs several module
 sentences assembled (explain / describe / why questions whose module answer
 is a paragraph), when the source asks the learner to speculate or argue,
@@ -576,7 +596,9 @@ Understanding questions are graded from the module's own sentences,
 tables, or figures rather than answered in prose; the source prints no
 key for them"). `verify-source-keys` reports such a `multiplechoice` as
 `unkeyed` (the matched exercise prints no solution) and a converted Check
-Your Understanding item as `unmatched` (a `<note>` is not an exercise);
+Your Understanding item as `unmatched` (a `<note>` is not an exercise, and
+the tool reads the boxes' questions so that a body stem which resembles an
+end-matter exercise — §12.1's blue-colony pair — is never paired with it);
 neither is a defect and neither is confirmed — the ledger note and the
 solve are the readings. The old rule, "never key a question the source
 does not key", survives as its checker duty: a converted item whose key

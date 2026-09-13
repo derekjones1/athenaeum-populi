@@ -146,20 +146,61 @@ def cmd_keys(mids):
 # ------------------------------------------------------------ glossary
 
 
+def split_headword(it):
+    """Split a Glossary <item> into (headword_markup, definition_markup).
+
+    A headword is the item's leading <emphasis>, but several headwords are
+    themselves a genus-species binomial (or an abbreviation) wrapped in a
+    *nested* italics <emphasis>, e.g.
+
+        <emphasis><emphasis effect="italics">Clostridium perfringens</emphasis> gastroenteritis</emphasis> …
+
+    A non-greedy `(.*?)</emphasis>` regex stops at the first close tag —
+    the nested one — so it only ever sees "Clostridium perfringens" and
+    treats " gastroenteritis</emphasis> relatively mild…" as the
+    definition. That drops " gastroenteritis" from the headword and lets a
+    plain "Clostridium perfringens" query resolve against an entry it does
+    not name (erratum-adjacent, not filed: nesting is legitimate CNXML,
+    not a source defect). Track emphasis depth instead, so the split
+    happens at the outer tag's own matching close, whatever is nested
+    inside it.
+    """
+    m = re.match(r'\s*<emphasis(?![^>]*effect="italics")([^>]*)>', it)
+    if not m:
+        return None
+    pos = m.end()
+    depth = 1
+    for tm in re.finditer(r"<emphasis\b[^>]*>|</emphasis>", it[pos:]):
+        if tm.group(0).startswith("</"):
+            depth -= 1
+            if depth == 0:
+                return it[pos : pos + tm.start()], it[pos + tm.end() :]
+        else:
+            depth += 1
+    return None
+
+
 def load_glossary():
     g = read_module(GLOSSARY_MODULE)
     entries = {}
     for it in re.findall(r"<item[^>]*>(.*?)</item>", g, re.S):
-        m = re.match(r'\s*<emphasis(?![^>]*effect="italics")[^>]*>(.*?)</emphasis>(.*)', it, re.S)
-        if not m:
+        split = split_headword(it)
+        if not split:
             continue
-        h = plain(m.group(1))
-        d = plain(m.group(2))
+        h = plain(split[0])
+        d = plain(split[1])
         keys = {h.lower().replace("*", "")}
         bare = re.sub(r"\s*\([^)]*\)", "", h).strip().lower().replace("*", "")
         keys.add(bare)
         for pl in re.findall(r"\((?:plural|singular):\s*([^)]+)\)", h):
             keys.add(pl.strip().lower())
+        # A short all-caps parenthetical beside the full name is an
+        # abbreviation the headword itself defines (e.g. "catabolic
+        # activator protein (CAP)/cAMP receptor protein (CRP)"); index it
+        # too, since authors and CYU stems query it standalone.
+        for ab in re.findall(r"\(([A-Za-z][A-Za-z0-9]{1,5})\)", h):
+            if ab.lower() not in {"plural", "singular"}:
+                keys.add(ab.lower())
         for k in list(keys):
             keys.add(k.translate(PRIMES))
         for k in keys:

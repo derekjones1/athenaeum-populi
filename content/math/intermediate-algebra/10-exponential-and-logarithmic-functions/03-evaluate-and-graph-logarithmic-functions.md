@@ -652,7 +652,7 @@ The magnitude $R$ of an earthquake is measured by a logarithmic scale called the
 **Earthquake Intensity.** The magnitude R of an earthquake is measured by $R=\text{log}I,$ where I is the intensity of its shock wave.
 {{< /callout >}}
 
-**Example 10.27.** In 1906, San Francisco experienced an intense earthquake with a magnitude of 7.8 on the Richter scale. Over 80% of the city was destroyed by the resulting fires. In 2014, Los Angeles experienced a moderate earthquake that measured 5.1 on the Richter scale and caused $108 million dollars of damage. Compare the intensities of the two earthquakes.
+**Example 10.27.** In 1906, San Francisco experienced an intense earthquake with a magnitude of 7.8 on the Richter scale. Over 80% of the city was destroyed by the resulting fires. In 2014, Los Angeles experienced a moderate earthquake that measured 5.1 on the Richter scale and caused \$108 million dollars of damage. Compare the intensities of the two earthquakes.
 
 **Solution.**
 

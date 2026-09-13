@@ -128,6 +128,17 @@ test('emit --pages-out writes each page whole with every key, accept, hint, and 
   assert.doesNotMatch(masked, /answer="photosystem I"|carotenoids|A hint the solver|Another hint|Model answer\.|8,22|Let n be/);
 });
 
+test('emit --pages-out blanks the provenance footer, which names keys in prose', () => {
+  const dir = scratch();
+  const page = join(dir, 'content/life-health-sciences/a.md');
+  writeFileSync(page, readFileSync(page, 'utf8') + '\n<small>This section is adapted from a source. Changes: the Matching exercise (key: D, E, B, A, C) is rendered per row; the textin keyed nosocomial also accepts HAI.</small>\n');
+  const result = spawnSync(process.execPath, [TOOL, 'emit', 'content', '--out', join(dir, 'packets'), '--pages-out', join(dir, 'masked')], { cwd: dir, encoding: 'utf8' });
+  assert.equal(result.status, 0, result.stderr);
+  const masked = readFileSync(join(dir, 'masked', 'a.md'), 'utf8');
+  assert.match(masked, /<small>…<\/small>/);
+  assert.doesNotMatch(masked, /key: D, E, B, A, C|keyed nosocomial|accepts HAI/);
+});
+
 test('emit groups packets by page and leaves self-checks out', () => {
   const dir = scratch();
   const previous = process.cwd();

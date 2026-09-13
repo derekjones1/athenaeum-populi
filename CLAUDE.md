@@ -23,4 +23,6 @@ paste the playbooks into agent prompts: the briefs name exactly which
 playbook sections each agent reads, and the blind solve runs in a fresh
 Fable subagent with masked pages (`solve:emit --pages-out`). Keep the
 parent's own context small: notes to `PARENT-NOTES.md`, long outputs to
-files, ten-line agent reports.
+files, ten-line agent reports, and every checklist-shaped prep and
+close-out step (run-facts draft, landing pages, errata draft, pins) to a
+Sonnet agent as run.md prescribes — without being asked.

@@ -1252,6 +1252,118 @@
       "status": "correct-local-source-defect",
       "errataEntry": 550,
       "rationale": "The module assigns pol δ to the eukaryotic leading strand and pol ε to the lagging strand; the evidence is the reverse (Pursell et al., Science 317 (2007): 127–130; Johansson and Dixon, CSH Perspect Biol 5 (2013): a012799), so the page swaps them with a visible Source note (erratum 550). The module's machinery table says topoisomerase IV introduces a \"single-stranded break\" while its own Termination paragraph says \"double-stranded breaks\" (a type II topoisomerase; Levine, Hiasa, and Marians 1998), so the page's table row follows the paragraph with a Source note (erratum 551). Both found by the chapter 11 prose claim pass, September 8, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/12-modern-applications-of-microbial-genetics/01-microbes-and-the-tools-of-genetic-engineering.md",
+      "bundle": "microbiology",
+      "moduleId": "m58848",
+      "sourceElementIds": [
+        "fs-id1167741574199"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 556,
+      "rationale": "The module dates Boyer and Cohen's cloning of Xenopus laevis genes into E. coli to 1973. The 1973 paper (Cohen, Chang, Boyer, and Helling, PNAS 70: 3240–3244) joined bacterial plasmid DNA only; the Xenopus ribosomal-DNA clone was published in 1974 (Morrow et al., PNAS 71: 1743–1747). The page prints 1974 with a visible Source note and discloses it in the footer. Found by the chapter 12 prose claim pass, September 8, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/12-modern-applications-of-microbial-genetics/02-visualizing-and-characterizing-dna-rna-and-protein.md",
+      "bundle": "microbiology",
+      "moduleId": "m58849",
+      "sourceElementIds": [
+        "fs-id1167742515161"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 557,
+      "rationale": "The module says Sanger developed the dideoxy chain-termination sequencing method in 1972; it was published in 1977 (Sanger, Nicklen, and Coulson, PNAS 74: 5463–5467). The page prints 1977 with a visible Source note and discloses it in the footer. Found by the chapter 12 prose claim pass, September 8, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/01-history-of-chemotherapy-and-antimicrobial-discovery.md",
+      "bundle": "microbiology",
+      "moduleId": "m58858",
+      "sourceElementIds": [
+        "fs-id1167659190135"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 587,
+      "rationale": "The module names streptomycin's co-discoverer \"Arthur Shatz\"; the graduate student who isolated streptomycin and co-authored the 1944 discovery paper the same passage cites was Albert Schatz (Schatz, Bugie, and Waksman, Proc Soc Exp Biol Med 55 (1944): 66-69), so the page prints \"Albert Schatz\" with a visible Source note (erratum 587). Found by the chapter 14 prose claim pass, September 12, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/03-mechanisms-of-antibacterial-drugs.md",
+      "bundle": "microbiology",
+      "moduleId": "m58860",
+      "sourceElementIds": [
+        "fs-id1167663931697"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 595,
+      "rationale": "The module says oxazolidinones both interfere with initiation-complex formation and prevent translocation from the ribosomal A site to the P site; translocation is an elongation step, and the linezolid mechanism study found the drug inhibits neither elongation nor peptidyl transfer but blocks 70S initiation-complex formation (Swaney, Aoki, Ganoza, and Shinabarger, Antimicrob Agents Chemother 42 no. 12 (1998): 3251-3255). The module's own summary table names only the initiation step, so the page drops the translocation clause with a visible Source note and the key-terms bullet follows it (erratum 595). Found by the chapter 14 prose claim pass, September 12, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/04-mechanisms-of-other-antimicrobial-drugs.md",
+      "bundle": "microbiology",
+      "moduleId": "m58861",
+      "sourceElementIds": [
+        "fs-id1167661292501",
+        "fs-id1167663919800"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 597,
+      "rationale": "The module calls artemisinin \"a plant-derived antifungal\" where its own section and antiprotozoan table treat it only as an antimalarial, so the page prints \"antimalarial\" with a visible Source note (erratum 597). The module also attributes severe anemia in glucose-6-phosphate dehydrogenase deficiency to chloroquine; the hemolysis risk that makes G6PD testing routine belongs to the 8-aminoquinolines, primaquine and tafenoquine (Watson, Taylor, Menard, Kheng, and White, eLife 6 (2017): e23061), so the page names the 8-aminoquinolines with a visible Source note (erratum 598). No item on the page was built on either source claim. Found by the chapter 14 authoring run and prose claim pass, September 12, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/05-drug-resistance.md",
+      "bundle": "microbiology",
+      "moduleId": "m58862",
+      "sourceElementIds": [
+        "fs-id1167659412407"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 602,
+      "rationale": "The module names clavulanic acid's producer *Streptococcus clavuligerus*; the producer is the soil actinomycete *Streptomyces clavuligerus* (List of Prokaryotic names with Standing in Nomenclature), so the page prints *Streptomyces* with a visible Source note (erratum 602). Found by the chapter 14 prose claim pass, September 12, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/07-current-strategies-for-antimicrobial-discovery.md",
+      "bundle": "microbiology",
+      "moduleId": "m63248",
+      "sourceElementIds": [
+        "fs-id1167661736252"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 607,
+      "rationale": "The module says teixobactin came from Mount Ararat, Turkey; the discovery paper the same sentence footnotes reports a grassy-field soil sample in Maine (Ling et al., Nature 517 (2015): 455-459), so the page names Maine with a visible Source note, in the body sentence and in the fill-in-the-blank stem built on it (erratum 607). Found by the chapter 14 prose claim pass, September 12, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/15-microbial-mechanisms-of-pathogenicity/03-virulence-factors-of-bacterial-and-viral-pathogens.md",
+      "bundle": "microbiology",
+      "moduleId": "m58868",
+      "sourceElementIds": [
+        "fs-id1167583638686"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 608,
+      "rationale": "The module names the listeriolysin O gene regulated by PrfA as \"hyl\"; the gene is *hly* (Cossart et al., Infection and Immunity 66(8): 3635, the standard Listeria gene nomenclature), so the page prints *hly* with a visible Source note in the Clinical Focus Part 3 box (erratum 608). No item, hint, or key term on the page was built on the old spelling. Found by the chapter 15 prose claim pass, September 12, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/15-microbial-mechanisms-of-pathogenicity/03-virulence-factors-of-bacterial-and-viral-pathogens.md",
+      "bundle": "microbiology",
+      "moduleId": "m58868",
+      "sourceElementIds": [
+        "fs-id1167583638686"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 609,
+      "rationale": "The module says listeriosis \"is fatal in about one in five normal healthy people, and mortality rates are slightly higher in patients with pre-existing conditions\"; CDC MMWR 62(22) (2013) reports an overall listeriosis case-fatality rate of about 21%, driven by high-risk groups, not a rate specific to otherwise-healthy people with a separately elevated rate in high-risk patients. The page reads \"fatal in about one in five patients overall, and mortality rates are higher in patients with pre-existing conditions that weaken the immune response,\" with a visible Source note (erratum 609). No item, hint, or key term on the page was built on the old wording. Found by the chapter 15 prose claim pass, September 12, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/15-microbial-mechanisms-of-pathogenicity/04-virulence-factors-of-eukaryotic-pathogens.md",
+      "bundle": "microbiology",
+      "moduleId": "m58869",
+      "sourceElementIds": [
+        "fs-id1167585106906"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 610,
+      "rationale": "The module dates the famous gangrenous-ergotism outbreak to \"Eastern Europe during the 5th century AD\"; no documented ergotism epidemic exists from the 5th century AD, and the earliest well-documented outbreak of gangrenous ergotism is recorded in the Annales Xantenses for 857 AD in the Rhine Valley (Bove, \"The History of Ergot of Rye [Claviceps purpurea] I: From Antiquity to 1900,\" PubMed 19847980), so the page names the Rhine Valley and 857 AD with a visible Source note (erratum 610). No item, hint, or model answer on the page depends on the outbreak's date or location. Found by the chapter 15 prose claim pass, September 12, 2026.",
+      "note": "NOT yet in the tracked reconciliation-decisions.json as of this draft (2026-09-12); the page footer already cites \"erratum 610\" inline, so this entry should be appended at close-out."
     }
   ]
 }

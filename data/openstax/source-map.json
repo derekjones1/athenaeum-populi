@@ -168,8 +168,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 26,
       "upstreamSections": 127,
-      "localChapters": 11,
-      "mappedSections": 55
+      "localChapters": 16,
+      "mappedSections": 78
     }
   },
   "sections": [
@@ -2539,6 +2539,213 @@
       "moduleId": "m58846",
       "sourceTitle": "Gene Regulation: Operon Theory",
       "moduleSha256": "5c9b3d79aef400253330ca46f0c1e4b90a4ac625c896057316bc49faf4ca52b0"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/12-modern-applications-of-microbial-genetics/01-microbes-and-the-tools-of-genetic-engineering.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "12.1",
+      "moduleId": "m58848",
+      "sourceTitle": "Microbes and the Tools of Genetic Engineering",
+      "moduleSha256": "d92dbc054db9ffafb22824896c541aa8378a55eb903195061fdc51883e114638"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/12-modern-applications-of-microbial-genetics/02-visualizing-and-characterizing-dna-rna-and-protein.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "12.2",
+      "moduleId": "m58849",
+      "sourceTitle": "Visualizing and Characterizing DNA, RNA, and Protein",
+      "moduleSha256": "d9e7e5a364bcc00e61e8570615208f31a982e228aafd89787f52dda93ea22f24"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/12-modern-applications-of-microbial-genetics/03-whole-genome-methods-and-pharmaceutical-applications-of-genetic-engineering.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "12.3",
+      "moduleId": "m58850",
+      "sourceTitle": "Whole Genome Methods and Pharmaceutical Applications of Genetic Engineering",
+      "moduleSha256": "760ea05ca512ff8706e46460ad01a69405978842e0ab6c9cdccc11d4894db75e"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/12-modern-applications-of-microbial-genetics/04-gene-therapy.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "12.4",
+      "moduleId": "m58851",
+      "sourceTitle": "Gene Therapy",
+      "moduleSha256": "a86a358e06203096054f1d3f7ebb7b294ef7275586e5538f9588c83fe90f5b18"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/13-control-of-microbial-growth/01-controlling-microbial-growth.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "13.1",
+      "moduleId": "m58853",
+      "sourceTitle": "Controlling Microbial Growth",
+      "moduleSha256": "f0c6d7fc3217daafc199f378de1f8d8676f694ff6c3cc0f89e77b90204a3a721"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/13-control-of-microbial-growth/02-using-physical-methods-to-control-microorganisms.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "13.2",
+      "moduleId": "m58854",
+      "sourceTitle": "Using Physical Methods to Control Microorganisms",
+      "moduleSha256": "c539b90b1a4ef63220861ef37651c31fa273da43706093dc1f467203e08c6d19"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/13-control-of-microbial-growth/03-using-chemicals-to-control-microorganisms.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "13.3",
+      "moduleId": "m58855",
+      "sourceTitle": "Using Chemicals to Control Microorganisms",
+      "moduleSha256": "90da0498a2bee49676816adfaa29dfb37b70cf270e1bda171bcbf41094a6a7a4"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/13-control-of-microbial-growth/04-testing-the-effectiveness-of-antiseptics-and-disinfectants.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "13.4",
+      "moduleId": "m58856",
+      "sourceTitle": "Testing the Effectiveness of Antiseptics and Disinfectants",
+      "moduleSha256": "0c3d17c1f2faece8da19e5a05ff506b6c4a77d12071ca3ac082219abc28a3123"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/01-history-of-chemotherapy-and-antimicrobial-discovery.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "14.1",
+      "moduleId": "m58858",
+      "sourceTitle": "History of Chemotherapy and Antimicrobial Discovery",
+      "moduleSha256": "966bf6ed7b2273b5f850870f6c2cd381350f2de829d0c2a2f3c46f1a80444eab"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/02-fundamentals-of-antimicrobial-chemotherapy.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "14.2",
+      "moduleId": "m58859",
+      "sourceTitle": "Fundamentals of Antimicrobial Chemotherapy",
+      "moduleSha256": "f879801818601e3ade87b35214e256f591cddf763bd1b5123e94cfb412d153f9"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/03-mechanisms-of-antibacterial-drugs.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "14.3",
+      "moduleId": "m58860",
+      "sourceTitle": "Mechanisms of Antibacterial Drugs",
+      "moduleSha256": "0c0f147d43bc48d5249b24e3dd34305947caed4bdb7128db707d71d65553d658"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/04-mechanisms-of-other-antimicrobial-drugs.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "14.4",
+      "moduleId": "m58861",
+      "sourceTitle": "Mechanisms of Other Antimicrobial Drugs",
+      "moduleSha256": "4e39b182effda6ad1d30347cbc9b5c6d3ac21b5882cf0d88b48c88fb4593ae80"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/05-drug-resistance.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "14.5",
+      "moduleId": "m58862",
+      "sourceTitle": "Drug Resistance",
+      "moduleSha256": "ad228734b0d6a08cc10e2578bdfee0a555665202abed4feb02eedd1902349d83"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/06-testing-the-effectiveness-of-antimicrobials.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "14.6",
+      "moduleId": "m58864",
+      "sourceTitle": "Testing the Effectiveness of Antimicrobials",
+      "moduleSha256": "b1de21bf48f79667ae3b6704b53a9166898e7806321c0fc329c4c710798187c6"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/07-current-strategies-for-antimicrobial-discovery.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "14.7",
+      "moduleId": "m63248",
+      "sourceTitle": "Current Strategies for Antimicrobial Discovery",
+      "moduleSha256": "860e623b123455a9becd7ff668ffda372c866f711a3cc88167e140ac815ada90"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/15-microbial-mechanisms-of-pathogenicity/01-characteristics-of-infectious-disease.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "15.1",
+      "moduleId": "m58866",
+      "sourceTitle": "Characteristics of Infectious Disease",
+      "moduleSha256": "483ec69459aa7d0a450acc940360e37c0d4351c331a2efbd56f62fa91cc4354c"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/15-microbial-mechanisms-of-pathogenicity/02-how-pathogens-cause-disease.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "15.2",
+      "moduleId": "m58867",
+      "sourceTitle": "How Pathogens Cause Disease",
+      "moduleSha256": "26789ca60b00733a800529fcab3f9f119344b8eff84e061123deb4b3a6806622"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/15-microbial-mechanisms-of-pathogenicity/03-virulence-factors-of-bacterial-and-viral-pathogens.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "15.3",
+      "moduleId": "m58868",
+      "sourceTitle": "Virulence Factors of Bacterial and Viral Pathogens",
+      "moduleSha256": "00596e92338cf37da4662ad04cbca38660b7eaafe7af5d7f2a4a77d9d7cbc8cf"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/15-microbial-mechanisms-of-pathogenicity/04-virulence-factors-of-eukaryotic-pathogens.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "15.4",
+      "moduleId": "m58869",
+      "sourceTitle": "Virulence Factors of Eukaryotic Pathogens",
+      "moduleSha256": "1b0026ebf860c1d69df8ac1d791c4f5aaf7f5faf1d42b1b2f6f7d873afd4a2db"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/16-disease-and-epidemiology/01-the-language-of-epidemiologists.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "16.1",
+      "moduleId": "m58871",
+      "sourceTitle": "The Language of Epidemiologists",
+      "moduleSha256": "18f3e1044de7f2c13a8ceff99cd919ed34e2cdbfdc6aca96825762a786aaafdb"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/16-disease-and-epidemiology/02-tracking-infectious-diseases.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "16.2",
+      "moduleId": "m58872",
+      "sourceTitle": "Tracking Infectious Diseases",
+      "moduleSha256": "78f9e87611110ed35e74d596289bff4b7b95f95ae38a1bb62507a218a04d8d55"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/16-disease-and-epidemiology/03-modes-of-disease-transmission.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "16.3",
+      "moduleId": "m58873",
+      "sourceTitle": "Modes of Disease Transmission",
+      "moduleSha256": "d58c1b6c343c94acbff588d00bf78476a070263354726848b4776422f4f629c2"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/16-disease-and-epidemiology/04-global-public-health.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "16.4",
+      "moduleId": "m58874",
+      "sourceTitle": "Global Public Health",
+      "moduleSha256": "c89dd79115fe3c3dbc1bcbc10e776cb8b28559a49644045262c4844a24ad5e3e"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

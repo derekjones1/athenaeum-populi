@@ -46,18 +46,42 @@ the parent runs them.
    `pdftoppm -f A -l B -r 110 -png sources/microbiology_-_WEB.pdf $SP/pdf/chNN/p`.
 4. **Extraction, per module** (`tools/source/microbiology-prep.py`):
    `keys <moduleId> > $SP/keys-N.M.txt` and `terms <moduleId> >
-   $SP/terms-N.M.md`. Read each `keys` file yourself: it is how you check
-   an author's "the module has no X" in seconds and how you pre-decide the
-   forms below.
+   $SP/terms-N.M.md`. The parent does NOT read the keys files whole
+   (876 lines for two chapters); a Sonnet agent reads them for step 6.
 5. **Landing page** `content/…/NN-<slug>/_index.md` from the intro module,
    in final form (bullets naming the sections; no `authoring_status`).
-6. **Run facts** — copy `run-facts-template.md` to `$SP/run-facts.md` and
-   fill every field from the `keys` files and the CNXML. The decisions the
-   playbook cannot make for a module (an exercise image's form, a matching
-   set's shape, a >4-word key, a notation the corpus has not printed yet)
-   are made HERE, once, by the parent — not eleven times by authors.
+   **Delegated:** one Sonnet agent, prompt = the two previous chapters'
+   `_index.md` as exemplars, the intro module id, the section list, the
+   OpenStax deep link; it views the splash image for the alt. Launched
+   together with the step-6 drafter.
+6. **Run facts** — copy `run-facts-template.md` to `$SP/run-facts.md`.
+   **Delegated, in two parts** *(chapters 15–16; the shape that kept the
+   parent's context small)*: one Sonnet agent fills PART A (every factual
+   field, from the `keys` files and the raw CNXML) and appends PART B,
+   "DECISIONS NEEDED" — a numbered list of every exercise image, matching
+   set, >4-word / "or" / multi-blank key, unkeyed Short Answer and
+   Critical Thinking question (with the ONE module sentence that could fix
+   it, quoted, or "no single sentence"), summary table, notation, Clinical
+   Focus chain, and route, with the raw data beside each. The parent reads
+   PART B only and writes PART C, the decisions — the forms the playbook
+   cannot make for a module (an exercise image's form, a >4-word key, a
+   notation the corpus has not printed yet) — made HERE, once, by the
+   parent, not eleven times by authors.
+   A decision names the playbook rule it applies, and a shape the playbook
+   already fixes is NOT re-decided: the chapters 15–16 parent wrote a
+   matching form (stem = term) and a `sortbins` with seven bins that both
+   contradicted the playbook, and three authors built them before the
+   correction went out. Before the wave, grep `docs/subjects/microbiology.md`
+   for every form Part C names (`Matching`, `sortbins`, `two-blank`) and
+   quote the rule beside the decision.
 7. Copy the three agent briefs unchanged to `$SP/` (`author.md`,
    `checker.md`, `claim-pass.md`) so the agents' paths are one directory.
+
+The parent's own prep work is then: the baseline, the media pull, the PDF
+render, the extraction commands, PART C, and reading two ten-line reports.
+Everything checklist-shaped goes to a Sonnet agent — this is the standing
+rule, not a per-run choice: Derek asked (September 12, 2026) that the
+token-saving shape apply every run without being requested.
    A run-specific correction to a brief is an edit to the repo copy, then
    the scratchpad copy — never a fork.
 
@@ -74,14 +98,22 @@ page paths with module ids + "read `$SP/claim-pass.md`", report path
 `$SP/claims-chNN.md`).
 
 Checker defects go back to the page's author by `SendMessage` (authors are
-resumable by name); the parent applies only one-line fixes itself. Verify
+resumable by name); the parent applies only one-line fixes itself. **Read
+every author's report for the words "dropped", "omitted", "duplicate", or
+"folded" and challenge each one** *(chapters 13–14)*: five of eleven authors
+in that wave left a source exercise off the page with a reasonable-sounding
+rationale, no gate caught any of them, and only one of the five claims
+survived checking. The adjudication is one line — graded when one module
+artifact fixes the answer, `selfcheck` otherwise, never absent. Verify
 every checker finding against the image or the raw CNXML before relaying
 it — about one finding per run is wrong.
 
 Claim-pass findings: the parent verifies each against the cited evidence,
 then applies the accepted ones (Source note, `reconciliation-decisions.json`
 entry, footer sentence, erratum), lists the rest under "Reviewed and *not*
-errata".
+errata". After correcting a value on a page, grep the page for the OLD
+value: a hint or filler item built on it is now wrong (chapter 12's Sanger
+hint still said 1972 after the body said 1977).
 
 ## 3. The blind solve
 
@@ -103,6 +135,10 @@ Then the parent:
 npm run solve:compare -- $SP/solve/chNN/answers.json content --out $SP/solve-results/chNN > $SP/solve/chNN/compare.log 2>&1
 ```
 
+The masked pages have their provenance footer blanked (`<small>…</small>`)
+since September 12, 2026 — a footer names keys in prose ("the Matching
+exercise (key: D, E, B, A, C)") and the chapter 16 solver read the leak.
+
 Every disagreement or flag gets an `adjudicated` note settled against the
 module's sentence (a why-question keyed to one abstract noun usually wants
 its accept list extended within the 4-word cap). A compare that hits ONE
@@ -112,6 +148,18 @@ and solve it again.
 
 ## 4. Close-out, in this order
 
+0. **Delegate the mechanical close-out to Sonnet agents, launched together
+   once the pages are stable**: (a) an alt-errata verifier — every
+   author/checker "suspected source defect" and every alt-vs-image claim,
+   checked against the vendored image and the CNXML, verdicts to
+   `$SP/alt-errata.md`; (b) an errata drafter — reads the previous run's
+   block for format, `$SP/alt-errata.md`, both `claims-chNN.md`, and
+   PARENT-NOTES, writes `$SP/errata-block.md` and
+   `$SP/decisions-entries.json` (claim corrections only get decisions
+   entries; alt and typo errata do not) and reports every footer that does
+   not disclose what its erratum says; (c) a pins agent — step 3 below,
+   with the old→new values in its report; (d) any tool bug a checker
+   found. The parent inserts, appends, and applies the footer one-liners.
 1. Errata block inserted after the previous chapter's block (before the
    plain `## Confirmed`); decisions entries carry every element id of a page.
 2. `node tools/source/openstax-source.mjs build-map` BEFORE the deviation
@@ -129,8 +177,17 @@ and solve it again.
    → prune.
 6. `npm run baseline:update`; `npm test > $SP/test-final.log 2>&1`; read
    the tail. `npm run source:verify` and `npm run check:external-links`.
-7. New lessons: a one-line rule into the playbook section it belongs to;
+7. A gate this run wanted and could not have: "every source exercise reaches
+   a page item", scoped to the life-sciences books (the math books sample
+   their exercise banks by design). Measured on the September 12, 2026 tree,
+   `verify-source-keys`'s own `tokenSimilarity` matcher calls 50 exercises
+   unrendered across Biology and Microbiology, while a looser min-overlap
+   measure calls 13 — the gap is reworded conversions (a `sortbins` or
+   figure-keyed item built from the exercise) reading as drops. Shipping it
+   needs those cases adjudicated one by one into an allowlist beside
+   `DISCLOSED_DEVIATIONS`, which is a campaign, not a close-out step.
+8. New lessons: a one-line rule into the playbook section it belongs to;
    the narrative into `docs/history/microbiology.md`; a lint or test where
    one can hold it. Then the session memory file.
-8. Commit only when asked. A large push may fail from the sandbox — try
+9. Commit only when asked. A large push may fail from the sandbox — try
    once, then hand it to Derek.

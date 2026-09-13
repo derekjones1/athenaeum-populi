@@ -58,6 +58,48 @@ the Genome* and *Mechanisms of Microbial Genetics*, followed the same day**
 as one eleven-section wave (four and seven sections, errata 535–555, four
 claim corrections — two settled by citable references, two by the module's
 own figure and paragraph); rules marked *(chapters 10–11)* came from it.
+**Chapter 12, *Modern Applications of Microbial Genetics*, followed the same
+day** as a four-section wave under the versioned briefs (62 graded items,
+19 self-checks, 28 figures, errata 556–564, two claim corrections settled by
+citable references — the *Xenopus* cloning year and the Sanger dideoxy
+year); the run cost fifteen checker defects (a distractor echoing a sibling
+key, an invented distractor, three shortened citations, a stale hint after
+the parent's own date correction) and one tool fix: `verify-source-keys`
+paired a body Check Your Understanding item with the look-alike Multiple
+Choice exercise and reported a false key-differs, so the module reader now
+collects the Check Your Understanding questions and a page stem that is one
+of them is never matched to an exercise.
+
+**Chapters 13, *Control of Microbial Growth*, and 14, *Antimicrobial
+Drugs*, followed on September 12** as one eleven-section wave under the
+versioned briefs (125 graded and self-check items across the two chapters,
+53 figures, errata 565–607, five claim corrections). The wave's own numbers:
+chapter 13's four sections carry 53 Practice items, 16 body self-checks, and
+33 figures; chapter 14's seven carry 78 Practice items, 13 body self-checks,
+and 22 figures. Both blind solves agreed with every key — 54 of 54 in
+chapter 13 and 71 of 71 in chapter 14, the chapter 14 run's single flag
+settled against the module's own sentence distinguishing multidrug
+resistance from cross-resistance.
+
+The run cost about forty checker defects, and they clustered in one place:
+**five of the eleven authors dropped or folded away a source exercise**
+rather than rendering it, each with a plausible-sounding footer rationale —
+"the module gives nothing to answer it with," "a near-duplicate of the body
+Check Your Understanding bullet," "no single sentence fixes it." Only one of
+those was a genuine literal reword. The other defects were the familiar
+kinds: a stem printing the next item's key verbatim, two cloze fillers
+reaching past their one sentence, a sortbins item true of two bins, a
+selfcheck clause sourced from the Glossary rather than the module body, six
+transcribed table titles missing, and a footer whose claims about its own
+page were false in four separate ways across four pages. The two prose claim
+passes read about 355 claims and returned five corrections, all confirmed
+against the cited literature before they were applied: streptomycin's
+co-discoverer "Arthur Shatz" is Albert Schatz; oxazolidinones do not prevent
+translocation; artemisinin is an antimalarial, not an antifungal; the
+glucose-6-phosphate-dehydrogenase haemolysis risk belongs to the
+8-aminoquinolines, not chloroquine; clavulanic acid's producer is
+*Streptomyces*, not *Streptococcus*; and teixobactin came from a Maine soil
+sample, not Mount Ararat. Rules marked *(chapters 13–14)* came from this run.
 
 
 ## Verification lessons by chapter (cut September 8, 2026)
@@ -433,3 +475,47 @@ Everything in biology's Verification section, plus:
   four claim corrections, and figure-alt defects on five modules (a
   timeline alt with five errors, a genetic-code alt with four).
 
+- **Chapters 15–16 (September 12, 2026), eight sections in one wave**: 8
+  Sonnet authors → 8 Sonnet checkers → 2 Sonnet claim passes → 2 fresh
+  Fable solvers on masked packets. Prep (run-facts Part A, the two landing
+  pages, the errata draft, the count pins) went to Sonnet agents too; the
+  parent kept the decisions, the adjudications, and the gates. Blind solves:
+  chapter 15 56/56 after one flag and two accept-list widenings, chapter 16
+  50/50 after two flags. Errata 608–621; three claim corrections (the
+  listeriolysin O gene is *hly*, not *hyl*; listeriosis fatality is one in
+  five overall, not "in normal healthy people"; the ergotism outbreak is
+  857 AD in the Rhine Valley, not the 5th century in Eastern Europe).
+- **The parent's run-facts contradicted the playbook twice** *(chapters
+  15–16)*: a matching form with the term as stem (the playbook's row says
+  description as stem, terms as options) and a seven-bin `sortbins` (the
+  cap is four). Three authors built the wrong shape before the correction
+  went out. Run recipe now: a Part C decision quotes the playbook rule it
+  applies; a shape the playbook fixes is not re-decided.
+- **One author still folded a source Short Answer into a body item** after
+  the chapters 13–14 rule; the two questions were genuinely the same, and
+  the answer is still "both stay" — the Practice item as a `selfcheck`.
+- **Masked solve pages leaked keys through the provenance footer**
+  ("the Matching exercise (key: D, E, B, A, C)"); the chapter 16 solver
+  reported it. `solve:emit --pages-out` now blanks the footer (test added).
+- **A bare `$4 billion` broke the production build** on 16.4 while every
+  fast gate passed; the currency lint only knew digit-grouped amounts. It
+  now catches a magnitude word too.
+- **Checker yield, chapters 15–16**: 26 defects on lint-clean pages —
+  key leaks across items (a stem or hint printing the next item's key,
+  three on 15.2), alt/longdesc claims not in the artwork (Alaska on a map,
+  swapped colours, a "gloved" hand), a double-keyed `sortbins` built on
+  duration, six capitalised key-term headwords, a dropped "the", a
+  truncated journal name, two rejected learner spellings
+  ("non-communicable", the bare "Koch"), and both Alpha-toxin rows left
+  out of a `sortbins` behind a false footer. About one finding per run was
+  wrong: the chapter 16 claim pass reported a "dropped" cat-flea row that
+  the printed table never carried — the source alt invented it (part of
+  erratum 620).
+- **Solver synonyms are learner spellings**: "median lethal dose" for
+  LD₅₀ and "incubation" for the chronic-disease blank (the module itself
+  says incubation periods run to years in chronic disease) both went into
+  `accept` rather than being adjudicated away.
+- **The prep tool's glossary lookup mis-parsed nested emphasis** (a
+  headword with an italic binomial inside the bold span was cut at the
+  inner close tag, so "Clostridium perfringens" matched "*C. perfringens*
+  gastroenteritis"); fixed with a depth-aware headword splitter.

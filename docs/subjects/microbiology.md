@@ -13,8 +13,8 @@ authoring a microbiology section. This document was written from the
 September 5, 2026 scan of the pinned source and has been revised by every
 chapter run since; a rule tagged *(pilot)* or *(chapter N)* was learned by
 authoring that chapter, and the per-chapter record (dates, counts, errata
-ranges) is in `docs/history/microbiology.md`. Chapters 1–11 are authored as
-of September 8, 2026. A correction that is not folded back into a rule
+ranges) is in `docs/history/microbiology.md`. Chapters 1–16 are authored as
+of September 12, 2026. A correction that is not folded back into a rule
 will be made again.
 
 ## Source and authority
@@ -210,8 +210,13 @@ answer is allowed only under these conditions**, all of them:
   not draw on another chapter, the appendices, or general knowledge. If
   the module does not answer the question — some Critical Thinking items
   ask the learner to speculate — the model answer says what the module
-  gives and stops; a speculative question whose module gives nothing to
-  answer it with is omitted, and the footer names it.
+  gives and stops. **It is not omitted** *(chapters 13–14)*: a question the
+  module cannot answer is the `selfcheck`'s whole purpose, and the earlier
+  wording of this rule — "a speculative question whose module gives nothing
+  to answer it with is omitted" — is what five authors of the chapters 13–14
+  wave cited while dropping ordinary Short Answer and Critical Thinking
+  items. Every source exercise is rendered; see the life-sciences playbook's
+  "No source exercise is ever dropped, and 'duplicate' is a claim to prove".
 - The `===CHECKS===` rubric has 2–6 checkpoints, each a clause of the
   model answer in the model answer's own words (biology's `phraseCoverage`
   rule), so each checkpoint traces to a module sentence.
@@ -319,7 +324,19 @@ Three rules the pilot added about which source items can be used at all:
 - **A source item the page does not use is named in the footer**, with the
   reason, and in the ledger. An unexplained gap between the source's
   exercise set and the Practice block is indistinguishable from an
-  oversight.
+  oversight. The only such item is one the module asks verbatim in a Check
+  Your Understanding box and the page grades there; the footer and ledger
+  quote BOTH stems, and the two must be the same question, not the same
+  topic *(chapters 13–14)*.
+- **Every sentence of the footer is a claim about the page that a reader can
+  check** *(chapters 13–14)*. This run's checkers found four footers whose
+  own claims were false — a set said to be fully represented when an item was
+  missing, a conversion said to be impossible when one sentence fixed it,
+  "logged as errata" for errata the parent had not yet written, figure kinds
+  miscounted, and a correction attributed to the wrong figure. Write the
+  footer last, then re-read it against the page with the counts in front of
+  you; "reported to the parent for the errata log" is the true form while a
+  run is in flight, because only the parent writes `docs/openstax-errata.md`.
 
 ### 3. Check Your Understanding and the Clinical Focus questions
 
@@ -491,7 +508,10 @@ equation), plus:
   as an erratum (332) because it prints.
 - **Footnotes become inline parenthetical citations** *(pilot)*, placed
   after the sentence they support, with the bare access URLs dropped and
-  DOIs kept. This book footnotes heavily where Biology barely did — §1.1
+  DOIs kept. The author names, initials, title, journal, and any journal
+  parenthetical are the source's verbatim — shortening "E.O. List, D.E.
+  Berryman" to "List, Berryman" is an undisclosed departure *(chapter
+  12)*. This book footnotes heavily where Biology barely did — §1.1
   alone carries eight — and neither playbook had a rule, so the pilot's
   author had to find the convention by grepping the biology corpus.
 - **Cross-references.** `<link target-id="…">` to a figure or table in the
@@ -621,7 +641,7 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
   `sortbins` from the masked pages (`solve:emit --pages-out`), and the
   parent adjudicates every disagreement against the module.
   `verify:ledger --require-solved` makes the third reading a condition of
-  green. Chapters 1–11: 0 wrong source keys found by the solve that the
+  green. Chapters 1–12: 0 wrong source keys found by the solve that the
   checkers had missed; its yield is accept-list gaps and the occasional
   double-keyed item.
 - **The checker's extra duties for this book:** the defined-term count
@@ -776,6 +796,10 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
   Unicode lines (arrows, subscripts), never `$…$`; an underbrace label
   becomes a disclosed parenthetical; a label is never carried from one
   module's equation into another's *(chapter 7)*.
+- ID₅₀ and LD₅₀ take Unicode subscript digits everywhere (prose, alts,
+  shortcode params, table titles); never `ID 50`, never `<sub>` *(chapters
+  15–16)*. Money in prose is `\$4 billion`: a bare `$` before a magnitude
+  word opens a math span and breaks the build (lint).
 - The prime family: house form is U+2032 `′` everywhere; the source mixes
   `′`, `’`, and the modifier letter `ʹ` (U+02B9), which both normalizers now
   fold; `tools/source/microbiology-prep.py glossary` folds them in lookups
@@ -826,8 +850,12 @@ subagent, the close-out order, and the context-hygiene rules that keep the
 run inside a usage window — is `docs/briefs/microbiology/run.md`; the
 agents' briefs are beside it (`author.md`, `checker.md`, `claim-pass.md`,
 `solve.md`, and the `run-facts-template.md` the parent fills per run).
-Three passes, none optional: author → checker → solve. The pilot's record
-is in `docs/history/microbiology.md`.
+Three passes, none optional: author → checker → solve. Every
+checklist-shaped step of the prep and the close-out (run-facts Part A and
+the decisions list, landing pages, alt-errata verification, the errata
+draft, the count pins) goes to a Sonnet agent by default; the parent keeps
+the decisions, the adjudications, and the gates *(chapters 15–16)*. The
+pilot's record is in `docs/history/microbiology.md`.
 
 ## Done checklist (in addition to the core and life-sciences checklists)
 

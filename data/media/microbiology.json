@@ -8153,6 +8153,2580 @@
       ],
       "alt": "Diagram of the trp operon. The top image shows the operon in the absence of tryptophan. The trp repressor dissociates from the operator and RNA synthesis proceeds. RNA polymerase is bound to the promoter and an arrow indicates that transcription will occur. The repressor is not bound ot anything. The bottom image shows the operon in the presence of tryprophan. When tryptophan is present, the trp repressor binds to the operator and RNA synthesis is blocked. Tryptophan is shown bound to the repressor which is bound to the operator. RNA polymerase is bound to the promoter but is blocked from moving forward by the repressor.",
       "caption": "The five structural genes needed to synthesize tryptophan in E. coli are located next to each other in the trp operon. When tryptophan is absent, the repressor protein does not bind to the operator, and the genes are transcribed. When tryptophan is plentiful, tryptophan binds the repressor protein at the operator sequence. This physically blocks the RNA polymerase from transcribing the tryptophan biosynthesis genes."
+    },
+    "OSC_Microbio_12_00_thermocycl": {
+      "source": "media/OSC_Microbio_12_00_thermocycl.jpg",
+      "sourceSha256": "2081f5eb1c0b76c6cf17aa39bff237ba1ba58919408989293d6f4f7537b1354d",
+      "module": "m58847",
+      "kind": "photo",
+      "width": 1300,
+      "height": 508,
+      "variants": [
+        {
+          "width": 800,
+          "height": 312,
+          "file": "OSC_Microbio_12_00_thermocycl-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 508,
+          "file": "OSC_Microbio_12_00_thermocycl-1300.webp"
+        }
+      ],
+      "alt": "A photograph of a thermocycler; a desktop machine with a heating element and temperature display. A micrograph of oval cells; most are clear but a few are orange.",
+      "caption": "A thermal cycler (left) is used during a polymerase chain reaction (PCR). PCR amplifies the number of copies of DNA and can assist in diagnosis of infections caused by microbes that are difficult to culture, such as Chlamydia trachomatis (right). C. trachomatis causes chlamydia, the most common sexually transmitted disease in the United States, and trachoma, the world’s leading cause of preventable blindness. (credit right: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_12_01_CloneLibry": {
+      "source": "media/OSC_Microbio_12_01_CloneLibry.jpg",
+      "sourceSha256": "cef072948c5a1e8ecc75a1ba3f62b4dc7dd93deccf5a0994e1902aca6bf26b1a",
+      "module": "m58848",
+      "kind": "photo",
+      "width": 1310,
+      "height": 485,
+      "variants": [
+        {
+          "width": 800,
+          "height": 296,
+          "file": "OSC_Microbio_12_01_CloneLibry-800.webp"
+        },
+        {
+          "width": 1310,
+          "height": 485,
+          "file": "OSC_Microbio_12_01_CloneLibry-1310.webp"
+        }
+      ],
+      "alt": "A diagram showing the generation of a genomic library. The diagram begins with DNA being extracted from the organism (in this case a worm) and cut into fragments. The DNA fragments are then each inserted into a different plasmid. This produces many fragments each with a different insert from the genome. Bacteria are then transformed with these vectors. Each bacterium replicates producing colonies of clones each containing a single DNA fragment from the original organism.",
+      "caption": "The generation of a genomic library facilitates the discovery of the genomic DNA fragment that contains a gene of interest. (credit “micrograph”: modification of work by National Institutes of Health)"
+    },
+    "OSC_Microbio_12_01_GeneGun": {
+      "source": "media/OSC_Microbio_12_01_GeneGun.jpg",
+      "sourceSha256": "9c385d2312c7483e9208a543ce100566b1cb54ad576292596775df3e99bc8e86",
+      "module": "m58848",
+      "kind": "photo",
+      "width": 1300,
+      "height": 322,
+      "variants": [
+        {
+          "width": 800,
+          "height": 198,
+          "file": "OSC_Microbio_12_01_GeneGun-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 322,
+          "file": "OSC_Microbio_12_01_GeneGun-1300.webp"
+        }
+      ],
+      "alt": "a) a diagram of a gene gun. The gun barrel points towards a plant protoplast. A pulse of helium pushes microprojections (gold or tungsten particles coated with recombinant DNA molecules) through the barrel and into the plant cell. b) a photograph of a gene gun; it is the size and shape of a hair-dryer but with a much narrower opening.",
+      "caption": "Heavy-metal particles coated with recombinant DNA are shot into plant protoplasts using a gene gun. The resulting transformed cells are allowed to recover and can be used to generate recombinant plants. (a) A schematic of a gene gun. (b) A photograph of a gene gun. (credit a, b: modification of work by JA O'Brien, SC Lummis)"
+    },
+    "OSC_Microbio_12_01_GeneTher": {
+      "source": "media/OSC_Microbio_12_01_GeneTher.jpg",
+      "sourceSha256": "7ad70d3f25fb543612e5414ebd52d232386230cbac41189ea6d251e91217635a",
+      "module": "m58851",
+      "kind": "photo",
+      "width": 1200,
+      "height": 591,
+      "variants": [
+        {
+          "width": 800,
+          "height": 394,
+          "file": "OSC_Microbio_12_01_GeneTher-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 591,
+          "file": "OSC_Microbio_12_01_GeneTher-1200.webp"
+        }
+      ],
+      "alt": "A diagram of gene therapy. A virus vector contains modified viral DNA that includes an inserted gene. First the vector binds to the cell membrane. The vector is then packaged in a vesicle. The vesicle then breaks down releasing the vector. The cell now makes protein using the new gene.",
+      "caption": "Gene therapy using an adenovirus vector can be used to treat or cure certain genetic diseases in which a patient has a defective gene. (credit: modification of work by National Institutes of Health)"
+    },
+    "OSC_Microbio_12_01_MolCloning": {
+      "source": "media/OSC_Microbio_12_01_MolCloning.jpg",
+      "sourceSha256": "53a71f2a5be36dcf321b3392864f35e3958efba405ac1094c9b03f0efb54f326",
+      "module": "m58848",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1605,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1070,
+          "file": "OSC_Microbio_12_01_MolCloning-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1605,
+          "file": "OSC_Microbio_12_01_MolCloning-1200.webp"
+        }
+      ],
+      "alt": "A diagram explaining molecular cloning. Both foreign DNa and a plasmid are cut with the same restriction enzyme. The restriction site occurs only once in the plasmid in the middle of a gene for and enzyme (lacZ). The plasmid also contains an ampicillin resistang gene. The restriction enzyme leaves complementary sticky ends on the foreign DNA fragment and the plasmid. This allows the foreign DNA to be inserted into the plasmid when the sticky ends anneal. Adding DNA ligase reattaches the DNA backbones. These are recombinant plasmids. The plasmids are combined with a culture of living bacteria. Many of the bacteria do not take any plasmids into their cells. Many take plasmids that do not have the foreign DNA in them and a few take up the recombinant plasmid. The bacteria that take up the recombinant plasmid cannot make the enzyme from the gene that the fragment was inserted into (lacZ). They also carry a gene for resistance to the antibiotic ampicillin, which was on the original plasmid. To find the bacteria with the recombinant plasmid, the bacteria are grown on a plate with the antibiotic ampicillin and a substance that changes color when exposed to the enzyme produced by the lacZ gene. The ampicillin will kill any bacteria that did not take up a plasmid. The color of the substance will nto change when the gene for lacZ contains the foreign DNA insert. These are the bacteria with the recombinant plasmid that we want to grow.",
+      "caption": "The steps involved in molecular cloning using bacterial transformation are outlined in this graphic flowchart."
+    },
+    "OSC_Microbio_12_01_PhageLibry": {
+      "source": "media/OSC_Microbio_12_01_PhageLibry.jpg",
+      "sourceSha256": "9192b1baa47dfedf01cb9295e60a5b156555a6c4da8899a7a684d49ba0e79be3",
+      "module": "m58848",
+      "kind": "photo",
+      "width": 1300,
+      "height": 396,
+      "variants": [
+        {
+          "width": 800,
+          "height": 243,
+          "file": "OSC_Microbio_12_01_PhageLibry-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 396,
+          "file": "OSC_Microbio_12_01_PhageLibry-1300.webp"
+        }
+      ],
+      "alt": "A diagram showing the production of a phage library. The cellular genome and phage genome are digested with the same restriction enzyme. The cellular DNA fragments are built into recombinant phage particles (each particle contains a different fragment of cellular DNA). E. coli is then infected with the recombinant phages. Each plaque in the bacterial lawn contains phages with a unique fragment from the original genome.",
+      "caption": "Recombinant phage DNA molecules are made by ligating digested phage particles with fragmented genomic DNA molecules. These recombinant phage DNA molecules are packaged into phage particles and allowed to infect a bacterial lawn. Each plaque represents a unique recombinant DNA molecule that can be further screened for genes of interest."
+    },
+    "OSC_Microbio_12_01_RecombTech": {
+      "source": "media/OSC_Microbio_12_01_RecombTech.jpg",
+      "sourceSha256": "9e33f28dbaec56ec5ce368a66cee8a6c15717907205b8ce6f2b1c7a6fdafd9ea",
+      "module": "m58848",
+      "kind": "photo",
+      "width": 1300,
+      "height": 361,
+      "variants": [
+        {
+          "width": 800,
+          "height": 222,
+          "file": "OSC_Microbio_12_01_RecombTech-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 361,
+          "file": "OSC_Microbio_12_01_RecombTech-1300.webp"
+        }
+      ],
+      "alt": "A diagram explaining recombinant DNA technology. The insulin gene is removed from the DNA in the nucleus of a human cell. This gene is then inserted into a plasmid (a round piece of DNA). The result is a recombinant plasmid which gets inserted into a bacterial cell. The resulting transgenic bacterium is a bacterial cell with a plasmid containing the insulin gene. The recombinant bacteria divide and produce the protein coded for by the inserted gene. In this example the bacteria are producing and secreting insulin. The result is insulin in solution.",
+      "caption": "Recombinant DNA technology is the artificial recombination of DNA from two organisms. In this example, the human insulin gene is inserted into a bacterial plasmid. This recombinant plasmid can then be used to transform bacteria, which gain the ability to produce the insulin protein."
+    },
+    "OSC_Microbio_12_01_Recuts": {
+      "source": "media/OSC_Microbio_12_01_Recuts.jpg",
+      "sourceSha256": "c5b0ad0acc4fb0576fbe02a4e6ca387b3498561ca28aee06572712329c102bfd",
+      "module": "m58848",
+      "kind": "photo",
+      "width": 1158,
+      "height": 783,
+      "variants": [
+        {
+          "width": 800,
+          "height": 541,
+          "file": "OSC_Microbio_12_01_Recuts-800.webp"
+        },
+        {
+          "width": 1158,
+          "height": 783,
+          "file": "OSC_Microbio_12_01_Recuts-1158.webp"
+        }
+      ],
+      "alt": "Diagrams of how restriction enzymes cut DNA. Both diagrams show a double stranded pieces of DNA that is cut. A) in sticky end cutting the DNA is cut so that there are short single stranded pieces of DNA at the cut site. In this example, the enzyme cuts the sequence GGATCC; it cuts between the two G’s. After cutting, both strands have a double stranded G/C bond, but then also have single stranded GATC. In blunt end cutting there are no single stranded ends. In this example the enzyme cuts GGCC between the G and the C.",
+      "caption": "(a) In this six-nucleotide restriction enzyme site, recognized by the enzyme Bam HI, notice that the sequence reads the same in the 5ʹ to 3ʹ direction on both strands. This is known as a palindrome. The cutting of the DNA by the restriction enzyme at the sites (indicated by the black arrows) produces DNA fragments with sticky ends. Another piece of DNA cut with the same restriction enzyme could attach to one of these sticky ends, forming a recombinant DNA molecule. (b) This four-nucleotide recognition site also exhibits a palindromic sequence. The cutting of the DNA by the restriction enzyme Hae III at the indicated sites produces DNA fragments with blunt ends. Any other piece of blunt DNA could attach to one of the blunt ends produced, forming a recombinant DNA molecule."
+    },
+    "OSC_Microbio_12_01_Ti": {
+      "source": "media/OSC_Microbio_12_01_Ti.jpg",
+      "sourceSha256": "6c68f74090f6e47dc03fdc03839c92392f5d2690dfd6f5f2dddacef5e1beb481",
+      "module": "m58848",
+      "kind": "photo",
+      "width": 1157,
+      "height": 1267,
+      "variants": [
+        {
+          "width": 800,
+          "height": 876,
+          "file": "OSC_Microbio_12_01_Ti-800.webp"
+        },
+        {
+          "width": 1157,
+          "height": 1267,
+          "file": "OSC_Microbio_12_01_Ti-1157.webp"
+        }
+      ],
+      "alt": "A diagram of transformation of a plant cell using the Ti plasmid. A micrograph of rod shaped cells labeled Agrobacterium tumefaciens. Plasmids are isolated from these cells. The plasmid (Ti plasmid) has a region labeled T-DNA region. A gene of interest from the cellular DNA is inseted into the T-DNA region. The transformed recombinant DNA is the returned back to A. tumefaciens. The bacterium then infects the plant cell. This inserts the gene of interest and resuts in a recombinant plant.",
+      "caption": "The T i plasmid of Agrobacterium tumefaciens is a useful shuttle vector for the uptake of genes of interest into plant cells. The gene of interest is cloned into the T i plasmid, which is then introduced into plant cells. The gene of interest then recombines into the plant cell’s genome, allowing for the production of transgenic plants."
+    },
+    "OSC_Microbio_12_01_cDNALibry": {
+      "source": "media/OSC_Microbio_12_01_cDNALibry.jpg",
+      "sourceSha256": "d69834b368e847b06673e02c35f0893b4b001630f1944334e0702b9a88a3d1ad",
+      "module": "m58848",
+      "kind": "photo",
+      "width": 1310,
+      "height": 487,
+      "variants": [
+        {
+          "width": 800,
+          "height": 297,
+          "file": "OSC_Microbio_12_01_cDNALibry-800.webp"
+        },
+        {
+          "width": 1310,
+          "height": 487,
+          "file": "OSC_Microbio_12_01_cDNALibry-1310.webp"
+        }
+      ],
+      "alt": "A diagram showing the generation of a cDNA library. The diagram begins with RNA being extracted from the organism (in this case a worm). Reverse transcription is then used to convert the RNA into cDNA The cDNA fragments are then each inserted into a different plasmid. This produces many fragments each with a different insert from the genome. Bacteria are then transformed with these vectors. Each bacterium replicates producing colonies of clones each containing a single cDNA fragment from the original organism.",
+      "caption": "Complementary DNA (cDNA) is made from mRNA by the retroviral enzyme reverse transcriptase, converted into double-stranded copies, and inserted into either plasmid vectors or bacteriophage, producing a cDNA library. (credit “micrograph”: modification of work by National Institutes of Health)"
+    },
+    "OSC_Microbio_12_01_electropor": {
+      "source": "media/OSC_Microbio_12_01_electropor.jpg",
+      "sourceSha256": "f5e6e82b038c92aa3878108ab5108205037c8b292d9d237d39e993a16696baa3",
+      "module": "m58848",
+      "kind": "photo",
+      "width": 1200,
+      "height": 427,
+      "variants": [
+        {
+          "width": 800,
+          "height": 284,
+          "file": "OSC_Microbio_12_01_electropor-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 427,
+          "file": "OSC_Microbio_12_01_electropor-1200.webp"
+        }
+      ],
+      "alt": "A diagram showing electroporation. The first panel reads: introduce the gene into the cell. A cell with a distinct plasma membrane is shown and recombinant DNA is on the outside. The next panel reads: apply the electric pulse; pores form in the cell membrane and the gene enters. The image shows holes in the plasma membrane. Positive charges are inside the holes and negative charges are on the outside. Recombinant DNA pieces move into the cell. The final panel reads: after the electric pulse, the pores reseal and the gene remains in the cell. The diagram shows a continuous plasma membrane again and recombinant DNA both inside and outside the cell. The recombinant DNA inside the cell is labeled “introduced gene”",
+      "caption": "Electroporation is one laboratory technique used to introduce DNA into eukaryotic cells."
+    },
+    "OSC_Microbio_12_01_microinjec": {
+      "source": "media/OSC_Microbio_12_01_microinjec.jpg",
+      "sourceSha256": "19291e3ce2cc145499d420c9eb23559c62cb0dc600090c4ecbc0a751810a63d2",
+      "module": "m58848",
+      "kind": "photo",
+      "width": 700,
+      "height": 525,
+      "variants": [
+        {
+          "width": 700,
+          "height": 525,
+          "file": "OSC_Microbio_12_01_microinjec-700.webp"
+        }
+      ],
+      "alt": "A micrograph of a microinjection needle poking through the plasma membrane of a cell and into the nucleus.",
+      "caption": "Microinjection is another technique for introducing DNA into eukaryotic cells. A microinjection needle containing recombinant DNA is able to penetrate both the cell membrane and nuclear envelope."
+    },
+    "OSC_Microbio_12_01_pUC19": {
+      "source": "media/OSC_Microbio_12_01_pUC19.jpg",
+      "sourceSha256": "fe2dfd0e5ca24808a673234b64c77ba2ba0bfb944b1ac3f19cfd6b64b8459856",
+      "module": "m58848",
+      "kind": "photo",
+      "width": 1178,
+      "height": 783,
+      "variants": [
+        {
+          "width": 800,
+          "height": 531,
+          "file": "OSC_Microbio_12_01_pUC19-800.webp"
+        },
+        {
+          "width": 1178,
+          "height": 783,
+          "file": "OSC_Microbio_12_01_pUC19-1178.webp"
+        }
+      ],
+      "alt": "The pC19 plasmid is 2686 bp long and is circular. There are a number of arrows of various lengths moving clockwise or counterclockwise around the circle. The circle has the number 1 at the very top and at about position 225 (moving clockwise from 1) is a plylinker site (MC) that contains the following restriction enzyme sites: HidIII, PSTI, SaII, XbaI, BamHI, SmaI, EcoRI. At the beginning of the polylinker site is lacZ-alpha. At position 2500 and moving counterclockwise is the amp gene.",
+      "caption": "The artificially constructed plasmid vector pUC19 is commonly used for cloning foreign DNA. Arrows indicate the directions in which the genes are transcribed. Note the polylinker site, containing multiple unique restriction enzyme recognition sites, found within the lacZ reporter gene. Also note the ampicillin ( amp ) resistance gene encoded on the plasmid."
+    },
+    "OSC_Microbio_12_02_AgaroseGE": {
+      "source": "media/OSC_Microbio_12_02_AgaroseGE.jpg",
+      "sourceSha256": "1db41ad765ead5fbc0ae75ddb7c800078f22671884b77e8c44dae384b7961697",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 1181,
+      "height": 1595,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1080,
+          "file": "OSC_Microbio_12_02_AgaroseGE-800.webp"
+        },
+        {
+          "width": 1181,
+          "height": 1595,
+          "file": "OSC_Microbio_12_02_AgaroseGE-1181.webp"
+        }
+      ],
+      "alt": "a) A diagram of the process of agarose gel electrophoresis. 1 – An agarose and buffer solution is heated and poured into a form. This result in a rectangular block with indents along one end labeled “S=sample wells”. 2 – When cooled, the agarose gel block contains small wells (S) where the sample will be place. 3 – Each sample is added to a separate well. Then the agarose gel is placed in a chamber that generates a charge across the gel. The samples are added using micropipettes. 4 – The solution within the chamber conducts the electric current generated by the chamber. The side nearest the sample well will have a negative charge; the other side will have a positive charge. 5 – DNA has a negative charge and will be drawn to the positive pole of the gel. Smaller DNA molecules will be able to travel faster through the matrix of the gel. 6 – One well will contain a DNA ladder, which has fragments of known size. This ladder is used to identify the sizes of the bands in the sample. The ladder looks like many bands in the gel; from top to bottom the sizes of the bands are – 2000 bp, 15000 bp, 1000 bp, 750 bp, 500 bp, 250 bp. The other lanes have a few bands of various sizes.",
+      "caption": "(a) The process of agarose gel electrophoresis. (b) A researcher loading samples into a gel. (c) This photograph shows a completed electrophoresis run on an agarose gel. The DNA ladder is located in lanes 1 and 9. Seven samples are located in lanes 2 through 8. The gel was stained with ethidium bromide and photographed under ultraviolet light. (credit a: modification of work by Magnus Manske; credit b: modification of work by U.S. Department of Agriculture; credit c: modification of work by James Jacob)"
+    },
+    "OSC_Microbio_12_02_DNAProbe": {
+      "source": "media/OSC_Microbio_12_02_DNAProbe.jpg",
+      "sourceSha256": "38cff2985d7aa6b9864128f873b2923549f223498e682626f65ab8bc4fdfcde5",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 1222,
+      "height": 512,
+      "variants": [
+        {
+          "width": 800,
+          "height": 335,
+          "file": "OSC_Microbio_12_02_DNAProbe-800.webp"
+        },
+        {
+          "width": 1222,
+          "height": 512,
+          "file": "OSC_Microbio_12_02_DNAProbe-1222.webp"
+        }
+      ],
+      "alt": "A diagram of DNA probe. First a gene of interest is identified and cloned. Then single stranded probes are labeled with a molecular beacon. Finally, the DNA probe binds to complementary sequences in a DNA sample. The complementary sequences are single stranded DNA. The probe only attaches to one of the ssDNA sequences since it has the gene of interest in it",
+      "caption": "DNA probes can be used to confirm the presence of a suspected pathogen in patient samples. This diagram illustrates how a DNA probe can be used to search for a gene of interest associated with the suspected pathogen."
+    },
+    "OSC_Microbio_12_02_LymeRash": {
+      "source": "media/OSC_Microbio_12_02_LymeRash.jpg",
+      "sourceSha256": "2fa5b8b317720641285db12891aa5e088d34b140ffedd58988a45567e01a35ba",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 700,
+      "height": 471,
+      "variants": [
+        {
+          "width": 700,
+          "height": 471,
+          "file": "OSC_Microbio_12_02_LymeRash-700.webp"
+        }
+      ],
+      "alt": "A photo of a bulls-eye rash; a red spot in the center and a red ring around that.",
+      "caption": "A bulls-eye rash is one of the common symptoms of Lyme diseases, but up to 30% of infected individuals never develop a rash. (credit: Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_12_02_Microarray": {
+      "source": "media/OSC_Microbio_12_02_Microarray.jpg",
+      "sourceSha256": "04e71894c31fc73b6a5050fd199d26faa46f979b75fc5fe58ca8855836d65b38",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 1192,
+      "height": 898,
+      "variants": [
+        {
+          "width": 800,
+          "height": 602,
+          "file": "OSC_Microbio_12_02_Microarray-800.webp"
+        },
+        {
+          "width": 1192,
+          "height": 898,
+          "file": "OSC_Microbio_12_02_Microarray-1192.webp"
+        }
+      ],
+      "alt": "a) A diagram of a microarray. First two different cells are grown in culture – in this case cancerous and healthy cells. Then RNA is isolated from each culture. Then reverse transciptase labeling produces cDNA with either a red fluorescent probe or a green fluorescent probe. In this case the cDNA from the cancerous cells is produced using red fluorescent probes and the cDNA from healthy cells is produced using green fluorescent probes. These are then hybridized onto a microarray – which looks like a glass slide with many etchings. B) The result on a computer compares all the genes that are active in the cells. Green regions indicate genes that are only expressed in heathy cells, red regions indicate genes that are only expressed in cancerous cells, yellow regions indicate genes that are expressed in both cancerous and healthy cells, and black regions indicate genes that are not expressed in either cell type.",
+      "caption": "(a) The steps in microarray analysis are illustrated. Here, gene expression patterns are compared between cancerous cells and healthy cells. (b) Microarray information can be expressed as a heat map. Genes are shown on the left side; different samples are shown across the bottom. Genes expressed only in cancer cells are shown in varying shades of red; genes expressed only in normal cells are shown in varying shades of green. Genes that are expressed in both cancerous and normal cells are shown in yellow."
+    },
+    "OSC_Microbio_12_02_PAGE": {
+      "source": "media/OSC_Microbio_12_02_PAGE.jpg",
+      "sourceSha256": "f879f0c2f02d4efa26caae4e329deb18446ea53f79b5af9f20efaa6f36be7f6c",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1232,
+      "variants": [
+        {
+          "width": 800,
+          "height": 758,
+          "file": "OSC_Microbio_12_02_PAGE-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1232,
+          "file": "OSC_Microbio_12_02_PAGE-1300.webp"
+        }
+      ],
+      "alt": "a) A diagram showing a globular protein with positive and negative charges undergoing SDS treatment. SDS denatures the protein (producing a linear product) and makes them uniformly negative in charge. B) The protein samples are then placed into the wells of an SDS_PAGE gel. One well is loaded with a molecular weight standard. The gel is then exposed to a power source that results in the top of the gel (near the wells) becoming negative charged and the bottom becoming positively charged. Proteins migrate through the gel from the negative to the positive sides. Small proteins travel through the gel faster than large proteins. The molecular weight standard includes fragments of known size and is used to estimate the size of sample proteins. In this example the standard has sizes of 216, 132, 78, 32 and 7. The other lanes have bands of various sizes. C) A photograph of an SDS-PAGE gel. Purple bands on a clear background.",
+      "caption": "(a) SDS is a detergent that denatures proteins and masks their native charges, making them uniformly negatively charged. (b) The process of SDS-PAGE is illustrated in these steps. (c) A photograph of an SDS-PAGE gel shows Coomassie stained bands where proteins of different size have migrated along the gel in response to the applied voltage. A size standard lane is visible on the right side of the gel. (credit b: modification of work by “GeneEd”/YouTube)"
+    },
+    "OSC_Microbio_12_02_PCR": {
+      "source": "media/OSC_Microbio_12_02_PCR.jpg",
+      "sourceSha256": "cc06e6693b1df73f5893ead9afbc917e78bcb9bdbcfc52b0447f4efd3768cae8",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1114,
+      "variants": [
+        {
+          "width": 800,
+          "height": 685,
+          "file": "OSC_Microbio_12_02_PCR-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1114,
+          "file": "OSC_Microbio_12_02_PCR-1300.webp"
+        }
+      ],
+      "alt": "A diagram of PCR. In cycle 1 a double stranded piece of DNA is denatured (split into 2 single strands) at 95C. Primers (short pieces of single stranded DNA) bind (anneal) to the longer strand at ~50C. DNA polymerase then binds to the primers and copies the longer strand; this is extension and occurs at 72C. This produces 2 copies of the original DNA. This repeats in cycle 2 to produce 4 copies. Cycle 3 produces 8 copies; cycle 4 produces 16; and each future cycle continues to double the number of copies.",
+      "caption": "The polymerase chain reaction (PCR) is used to produce many copies of a specific sequence of DNA."
+    },
+    "OSC_Microbio_12_02_RFLP": {
+      "source": "media/OSC_Microbio_12_02_RFLP.jpg",
+      "sourceSha256": "20a04ad0fb84df42abed5b7c22762166e74f1d34d1dd615264e0449d0ebfb1e2",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 841,
+      "height": 569,
+      "variants": [
+        {
+          "width": 800,
+          "height": 541,
+          "file": "OSC_Microbio_12_02_RFLP-800.webp"
+        },
+        {
+          "width": 841,
+          "height": 569,
+          "file": "OSC_Microbio_12_02_RFLP-841.webp"
+        }
+      ],
+      "alt": "A diagram of RFLP analysis. Two strands of DNA are shown; a “normal” strand and a mutated strand. The normal strand has 3 locations where the restriction enzyme MSTI cuts. The mutation on the other strand destroys one of the restriction sites. As a result, the mutated strand has one fewer bands on a gel.",
+      "caption": "RFLP analysis can be used to differentiate DNA sequences. In this example, a normal chromosome is digested into two fragments, whereas digestion of a mutated chromosome produces only one fragment. The small red arrows pointing to the two different chromosome segments show the locations of the restriction enzyme recognition sites. After digestion and agarose gel electrophoresis, the banding patterns reflect the change by showing the loss of two shorter bands and the gain of a longer band. (credit: modification of work by National Center for Biotechnology Information)"
+    },
+    "OSC_Microbio_12_02_Ribo_Rep": {
+      "source": "media/OSC_Microbio_12_02_Ribo_Rep.jpg",
+      "sourceSha256": "e14a760dd2ea513739a7eb48339af2a39c1c4814784b779405cbfc09ae33c0d8",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 1200,
+      "height": 703,
+      "variants": [
+        {
+          "width": 800,
+          "height": 468,
+          "file": "OSC_Microbio_12_02_Ribo_Rep-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 703,
+          "file": "OSC_Microbio_12_02_Ribo_Rep-1200.webp"
+        }
+      ],
+      "alt": "A diagram of molecular analysis. A circular bacterial genome is shown. Primers bind to repetitive sequences found at multiple locations in the genome. These regions are amplified using PCR. Gel electrophoresis is used to identify the size of the amplified regions. Amplified fragment patters can be compared to known samples to identify strains.",
+      "caption": "Strains of infectious bacteria, such as C. difficile, can be identified by molecular analysis. PCR ribotyping is commonly used to identify particular C. difficile strains. Rep-PCR is an alternate molecular technique that is also used to identify particular C. difficile strains. (credit b: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_12_02_Ribotyping": {
+      "source": "media/OSC_Microbio_12_02_Ribotyping.jpg",
+      "sourceSha256": "e519373255c5d8a115e63317dc90923a88c152619b30bdde0c57d8345799245a",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 500,
+      "height": 495,
+      "variants": [
+        {
+          "width": 500,
+          "height": 495,
+          "file": "OSC_Microbio_12_02_Ribotyping-500.webp"
+        }
+      ],
+      "alt": "A gel showing various bands of various PCR-ribotypes. The bottom lane is labeled Javier’s an matches the banding pattern from PCR-ribotype 027.",
+      "caption": "A gel showing PCR products of various Clostridioides difficile strains. Javier’s sample is shown at the bottom; note that it matches ribotype 27 in the reference set. (credit: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_12_02_Sequencer": {
+      "source": "media/OSC_Microbio_12_02_Sequencer.jpg",
+      "sourceSha256": "fb106bfe39b43992797586bf6a42e8d743c9444033dcb6664b4d8d7a6897ad8b",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 1151,
+      "height": 1221,
+      "variants": [
+        {
+          "width": 800,
+          "height": 848,
+          "file": "OSC_Microbio_12_02_Sequencer-800.webp"
+        },
+        {
+          "width": 1151,
+          "height": 1221,
+          "file": "OSC_Microbio_12_02_Sequencer-1151.webp"
+        }
+      ],
+      "alt": "A diagram summarizing the Sanger method. 1 – The following are added to the PCR reaction tube: DNA template, primers, DNA polymerase, dNTPs, and fluorescently labeled ddNTPs. 2 – At each base in the DNA template, either a dNTP is added and elongation continues or a ddNTP is added and elongation stops. This process results in fragments of all sizes, each with a different fluorescently labeled end nucleotide. 3 – The fragments are run through a capillary gel and detected by a laser. A computer identifies each band as it passes by a laser.",
+      "caption": "This diagram summarizes the Sanger sequencing method using fluorochrome-labeled ddNTPs and capillary gel electrophoresis."
+    },
+    "OSC_Microbio_12_02_Southern": {
+      "source": "media/OSC_Microbio_12_02_Southern.jpg",
+      "sourceSha256": "c83ed5c7bef9748daac127bce0f10f07059791cdddf09c405d79ee1b6feaea47",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 1097,
+      "height": 766,
+      "variants": [
+        {
+          "width": 800,
+          "height": 558,
+          "file": "OSC_Microbio_12_02_Southern-800.webp"
+        },
+        {
+          "width": 1097,
+          "height": 766,
+          "file": "OSC_Microbio_12_02_Southern-1097.webp"
+        }
+      ],
+      "alt": "A diagram of a Southern blot. First, electrophoresis is used to separate DNA fragments by size. There can be so many fragments that they appear as a smear on the gel. Next DNA is transferred from the agarose gel to a nylon membrane. The buffer moves from the wet sponge below up through the gel and the membrane into the paper towels. It carries the DNA fragments with it until they become caught in the membrane. Finally, the membrane is based in a solution containing a probe, a short piece of DNA complementary to the sequence of interest. The probe is labeled or tagged with a fluorescent dye so that the location of DNA fragments to which it hybridizes can be visualized.",
+      "caption": "In the Southern blot technique, DNA fragments are first separated by agarose gel electrophoresis, then transferred by capillary action to a nylon membrane, which is then soaked with a DNA probe tagged with a molecular beacon for easy visualization."
+    },
+    "OSC_Microbio_12_02_ddNTP": {
+      "source": "media/OSC_Microbio_12_02_ddNTP.jpg",
+      "sourceSha256": "3c6781dfc37b5dd3983762d9b130963834a2f212e85e21b685236ac54d91a49d",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 1008,
+      "height": 255,
+      "variants": [
+        {
+          "width": 800,
+          "height": 202,
+          "file": "OSC_Microbio_12_02_ddNTP-800.webp"
+        },
+        {
+          "width": 1008,
+          "height": 255,
+          "file": "OSC_Microbio_12_02_ddNTP-1008.webp"
+        }
+      ],
+      "alt": "A drawing of dNTPs and ddNTPs. Deoxynucleotide (dNTP) is a nucleotide with an OH at carbon #3. This is drawn as a pentagon with an O at the top. Moving counterclockwise – the next point has the word “base”, the next only has H’s, the next has an OH, and the last has 3 phosphates. Dideeoxynucleotide (ddNTP) is a nucleotide with an H at carbon #3. This is drawn as a pentagon with an O at the top. Moving counterclockwise – the next point has the word “base”, the next only has H’s, the next aso has only H’s, and the last has 3 phosphates.",
+      "caption": "A dideoxynucleotide is similar in structure to a deoxynucleotide, but is missing the 3ʹ hydroxyl group (indicated by the shaded box). When a dideoxynucleotide is incorporated into a DNA strand, DNA synthesis stops."
+    },
+    "OSC_Microbio_12_02_fluoroddNTP": {
+      "source": "media/OSC_Microbio_12_02_fluoroddNTP.jpg",
+      "sourceSha256": "0795bd13683207dedc048efee1b63652459704a8ab66e96f88991710ad00c746",
+      "module": "m58849",
+      "kind": "photo",
+      "width": 1100,
+      "height": 493,
+      "variants": [
+        {
+          "width": 800,
+          "height": 358,
+          "file": "OSC_Microbio_12_02_fluoroddNTP-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 493,
+          "file": "OSC_Microbio_12_02_fluoroddNTP-1100.webp"
+        }
+      ],
+      "alt": "A diagram showing the Sanger method. A strand of DNA has the sequence GATTCAGC. Dye-labeled dideoxynucleotides are used to generate DNA fragments of different lengths. The shortest fragment ends with a red star to indicate that the ddTTP is what ended the chain. The next shortest fragment has a green star to indicate that a ddATP ended the chain. The next has a black star to indicate that a ddGTP ended the chain. The longest has a blue star to indicate that a ddCTP ended the chain. Not all of the fragments are shown in the diagram. To the right is a computer printout that does show all the fragments that would be seen in a sample. The computer printout shows a colored peak to indicate which fragment moved through the gel at that position. The first (shortest) position shows a black peak indicating a G, next is a green peak indicating an A, next is a red peak indicating a T, next are 3 green peaks indicating A’s, etc.",
+      "caption": "Frederick Sanger’s dideoxy chain termination method is illustrated, using ddNTPs tagged with fluorochromes. Using ddNTPs, a mixture of DNA fragments of every possible size, varying in length by only one nucleotide, can be generated. The DNA is separated on the basis of size and each band can be detected with a fluorescence detector."
+    },
+    "OSC_Microbio_12_03_GFP": {
+      "source": "media/OSC_Microbio_12_03_GFP.jpg",
+      "sourceSha256": "65cb23f32865ec4f696b2b46b49b1c2a6e9e665149fa6d920013b907f8418d58",
+      "module": "m58850",
+      "kind": "photo",
+      "width": 1300,
+      "height": 382,
+      "variants": [
+        {
+          "width": 800,
+          "height": 235,
+          "file": "OSC_Microbio_12_03_GFP-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 382,
+          "file": "OSC_Microbio_12_03_GFP-1300.webp"
+        }
+      ],
+      "alt": "a) A photograph of mice with green fluorescent regions. B) A photograph of an agar plate with green fluorescent colonies. C) A photograph of blue and white colonies on an agar plate",
+      "caption": "(a) The gene encoding green fluorescence protein is a commonly used reporter gene for monitoring gene expression patterns in organisms. Under ultraviolet light, GFP fluoresces. Here, two mice are expressing GFP, while the middle mouse is not. (b) GFP can be used as a reporter gene in bacteria as well. Here, a plate containing bacterial colonies expressing GFP is shown. (c) Blue-white screening in bacteria is accomplished through the use of the lacZ reporter gene, followed by plating of bacteria onto medium containing X-gal. Cleavage of X-gal by the LacZ enzyme results in the formation of blue colonies. (credit a: modification of work by Ingrid Moen, Charlotte Jevne, Jian Wang, Karl-Henning Kalland, Martha Chekenya, Lars A Akslen, Linda Sleire, Per Ø Enger, Rolf K Reed, Anne M Øyan, Linda EB Stuhr; credit b: modification of work by “2.5JIGEN.com”/Flickr; credit c: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_12_03_Noncoding": {
+      "source": "media/OSC_Microbio_12_03_Noncoding.jpg",
+      "sourceSha256": "2e55c884ccd1ba79816c80979d2bcad3b7d27cbe7e64d92fa89fcaa643a94846",
+      "module": "m58850",
+      "kind": "photo",
+      "width": 1300,
+      "height": 684,
+      "variants": [
+        {
+          "width": 800,
+          "height": 421,
+          "file": "OSC_Microbio_12_03_Noncoding-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 684,
+          "file": "OSC_Microbio_12_03_Noncoding-1300.webp"
+        }
+      ],
+      "alt": "A eukaryotic cell transcribes a region of DNA into mrNA. Antisense mRNA then binds to the this mRNA to produce a double stranded region. This region is not translated (which means that ribosomes do not bind to the mRNA to produce proteins).",
+      "caption": "Cells like the eukaryotic cell shown in this diagram commonly make small antisense RNA molecules with sequences complementary to specific mRNA molecules. When an antisense RNA molecule is bound to an mRNA molecule, the mRNA can no longer be used to direct protein synthesis. (credit: modification of work by Robinson R)"
+    },
+    "OSC_Microbio_12_03_siRNA": {
+      "source": "media/OSC_Microbio_12_03_siRNA.jpg",
+      "sourceSha256": "63aef2701626863509616204b0b838ea26cb804ad44b86862825537f4da3dbb0",
+      "module": "m58850",
+      "kind": "photo",
+      "width": 1100,
+      "height": 667,
+      "variants": [
+        {
+          "width": 800,
+          "height": 485,
+          "file": "OSC_Microbio_12_03_siRNA-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 667,
+          "file": "OSC_Microbio_12_03_siRNA-1100.webp"
+        }
+      ],
+      "alt": "Double stranded RNA can be produced from DNA in the nucleus. Dicer than cuts this dsRNA into either miRNA or siRNA. miRNA is an imperfect match and only one strand is usually incorporated into RISC. This blocks translation but the mRNA is stable. The RISC is stuck on the target. The siRNA has a perfect match and is incorporated into RISC. This triggers mRNA cleavage.",
+      "caption": "This diagram illustrates the process of using siRNA or miRNA in a eukaryotic cell to silence genes involved in the pathogenesis of various diseases. (credit: modification of work by National Center for Biotechnology Information)"
+    },
+    "OSC_Microbio_13_00_Splash": {
+      "source": "media/OSC_Microbio_13_00_Splash.jpg",
+      "sourceSha256": "25bf447ef840ad613dd3d76629c0ed383ac374b9dceb6581bcb96e272985e071",
+      "module": "m58852",
+      "kind": "photo",
+      "width": 1300,
+      "height": 461,
+      "variants": [
+        {
+          "width": 800,
+          "height": 283,
+          "file": "OSC_Microbio_13_00_Splash-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 461,
+          "file": "OSC_Microbio_13_00_Splash-1300.webp"
+        }
+      ],
+      "alt": "A photo of the inside of a car with a table identifying the average CFUs per 6.5 x 6.5 cm area. Door latch – 256. Door lock – 14. Door lock control – 182. Door handle – 29. Window control – 4. Cruise control button – 69. Steering wheel – 239. Interior steering wheel – 390. Radio volume know – 99. Gear shifter – 115. Center console – 506.",
+      "caption": "Most environments, including cars, are not sterile. A study R.E. Stephenson et al. “Elucidation of Bacteria Found in Car Interiors and Strategies to Reduce the Presence of Potential Pathogens.” Biofouling 30 no. 3 (2014):337–346. analyzed 11 locations within 18 different cars to determine the number of microbial colony-forming units (CFUs) present. The center console harbored by far the most microbes (506 CFUs), possibly because that is where drinks are placed (and often spilled). Frequently touched sites also had high concentrations. (credit “photo”: modification of work by Jeff Wilcox)"
+    },
+    "OSC_Microbio_13_01_BSL4Suit": {
+      "source": "media/OSC_Microbio_13_01_BSL4Suit.jpg",
+      "sourceSha256": "f1306f38a893dc423714b2dd07f13bf60fb3a6d76b400f699ae661c148ae62ff",
+      "module": "m58853",
+      "kind": "photo",
+      "width": 538,
+      "height": 801,
+      "variants": [
+        {
+          "width": 538,
+          "height": 801,
+          "file": "OSC_Microbio_13_01_BSL4Suit-538.webp"
+        }
+      ],
+      "alt": "A photo of two lab workers in suits that completely covers them (including their faces and hands).",
+      "caption": "A protective suit like this one is an additional precaution for those who work in BSL-4 laboratories. This suit has its own air supply and maintains a positive pressure relative to the outside, so that if a leak occurs, air will flow out of the suit, not into it from the laboratory. (Credit: James Gathany, CDC, public domain)"
+    },
+    "OSC_Microbio_13_01_BSLs": {
+      "source": "media/OSC_Microbio_13_01_BSLs.jpg",
+      "sourceSha256": "31c728aac31c82410f8a8ca8f194efb9523e6af87742683a243ee6762c1d874d",
+      "module": "m58853",
+      "kind": "photo",
+      "width": 1298,
+      "height": 870,
+      "variants": [
+        {
+          "width": 800,
+          "height": 536,
+          "file": "OSC_Microbio_13_01_BSLs-800.webp"
+        },
+        {
+          "width": 1298,
+          "height": 870,
+          "file": "OSC_Microbio_13_01_BSLs-1298.webp"
+        }
+      ],
+      "alt": "Table labeled biosafety levels. The CDC classifies low risk microbes as BSL-1 and high risk microbes as BSL-4. Biosafety level-4 is used when microbes are dangerous and exotic, posing a high risk of aerosol-transmitted infections, which are frequently fatal without treatment or vaccines. Few labs at this level. Examples include ebola and Marburg viruses. BSL-3 is used when microbes are indigenous or exotic and cause serious or potentially lethal diseases through respiratory transmission. Examples include Mycobacterium tuberculosis. BSL-2 is used when microbes are typically indigenous and are associated with diseases of varying severity. They pose moderate risk to workers and the environment. Examples include Staphylococcus aureus. BSL-1 is used when microbes are not knows to cause disease in healthy hosts and pose minimal risk to workers and environment. Examples include nonpathogenic strains of Escherichia coli.",
+      "caption": "The CDC classifies infectious agents into four biosafety levels based on potential risk to laboratory personnel and the community. Each level requires a progressively greater level of precaution. (credit “pyramid”: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_13_01_ControlTBL": {
+      "source": "media/OSC_Microbio_13_01_ControlTBL.jpg",
+      "sourceSha256": "e45f6b636eb3318a6e9773ec532fa3209025c5dc15ea180a2f3ca8c3b0e5766b",
+      "module": "m58853",
+      "kind": "photo",
+      "width": 1300,
+      "height": 926,
+      "variants": [
+        {
+          "width": 800,
+          "height": 570,
+          "file": "OSC_Microbio_13_01_ControlTBL-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 926,
+          "file": "OSC_Microbio_13_01_ControlTBL-1300.webp"
+        }
+      ],
+      "alt": "A table titled: Common protocols for control of microbial growth. Four columns: protocol, definition, common application and common agents. The table is divided by protocols used for fomites and those used on living tissue. Protocols for fomites include disinfection, sanitation, and sterilization. Disinfection reduces or destroys microbial load of an inanimate item through application of heat or antimicrobial chemicals. Disinfection involves cleaning surfaces like laboratory benches, clinical surfaces, and bathrooms and uses Chlorine bleach, phenols (e.g., Lysol), glutaraldehyde. Sanitization reduces microbial load of an inanimate item to safe public health levels through application of heat or antimicrobial chemicals. Sanitation involves Commercial dishwashing of eating utensils, cleaning public restrooms and uses Detergents containing phosphates (e.g., Finish), industrial-strength cleaners containing quaternary ammonium compounds. Sterilization Completely eliminates all vegetative cells, endospores, and viruses from an inanimate item. Sterilization involves Preparation of surgical equipment and of needles used for injection and uses Pressurized steam (autoclave), chemicals, radiation. Protocols for living tissue include antisepsis and degerming. Antisepsis Reduces microbial load on skin or tissue through application of an antimicrobial chemical. Antisepsis involves Cleaning skin broken due to injury; cleaning skin before surgery and uses Boric acid, isopropyl alcohol, hydrogen peroxide, iodine (betadine). Degerming Reduces microbial load on skin or tissue through gentle to firm scrubbing and the use of mild chemicals. Degerming involves Handwashing and uses Soap, alcohol swab.",
+      "caption": ""
+    },
+    "OSC_Microbio_13_01_MDC": {
+      "source": "media/OSC_Microbio_13_01_MDC.jpg",
+      "sourceSha256": "c7821978a5cdda11e3ed7c34fd08038df71f1fe983b6303b491232ea9d9b8cca",
+      "module": "m58853",
+      "kind": "photo",
+      "width": 1041,
+      "height": 642,
+      "variants": [
+        {
+          "width": 800,
+          "height": 493,
+          "file": "OSC_Microbio_13_01_MDC-800.webp"
+        },
+        {
+          "width": 1041,
+          "height": 642,
+          "file": "OSC_Microbio_13_01_MDC-1041.webp"
+        }
+      ],
+      "alt": "A table showing a decrease in number as microbial cells die. At time 0 there are 10 to the 10 cells. At time 5 there are 10 to the 9 cells. At time 10 there are 10 to the 8 cells. At time 15there are 10 to the 7 cells. At time 20 there are 10 to the 6 cells. At time 25 there are 10 to the 5 cells. At time 30 there are 10 to the 4 cells. At time 35 there are 10 to the 3 cells. At time 40 there are 10 to the 2 cells. At time 45 there are 10 to the 1 cells. At time 50 there are 10 to the 0 cells. A graph titled microbial death curve. The X axis is time and the Y axis is number of cells. Two lines indicate what this graph looks like using an arithmetic and logarithmic scale. Both lines begin at 10 to the 10 at time 0. The arithmetic scale drops quickly and is indistinguishable from 0 by 10 minutes. The logarithmic scale slopes at a clean diagonal. The D value is shown as the time it takes to move from 10 to the 6 to 10 to the 5; this occurs in 5 minutes.",
+      "caption": "Microbial death is logarithmic and easily observed using a semilog plot instead of an arithmetic one. The decimal reduction time (D-value) is the time it takes to kill 90% of the population (a 1-log decrease in the total population) when exposed to a specific microbial control protocol, as indicated by the purple bracket."
+    },
+    "OSC_Microbio_13_01_Phenolcomp": {
+      "source": "media/OSC_Microbio_13_01_Phenolcomp.jpg",
+      "sourceSha256": "6a03c4d10917fd7576e75b5729d9271e98d9f50e59fdd63bf5bc7729a103d78b",
+      "module": "m58855",
+      "kind": "photo",
+      "width": 888,
+      "height": 269,
+      "variants": [
+        {
+          "width": 800,
+          "height": 242,
+          "file": "OSC_Microbio_13_01_Phenolcomp-800.webp"
+        },
+        {
+          "width": 888,
+          "height": 269,
+          "file": "OSC_Microbio_13_01_Phenolcomp-888.webp"
+        }
+      ],
+      "alt": "A) a chemical structure with a carbon ring of 6 carbons with an OH group on one. B) A chemical structure with 2 carbon rings (6 carbons each) connected by a covalent bond; one carbon has an OH. C) Two carbon rings (6 carbons) connected a carbon. Each ring has an OH and 3 Cls.",
+      "caption": "Phenol and phenolic compounds have been used to control microbial growth. (a) Chemical structure of phenol, also known as carbolic acid. (b) o-Phenylphenol, a type of phenolic, has been used as a disinfectant as well as to control bacterial and fungal growth on harvested citrus fruits. (c) Hexachlorophene, another phenol, known as a bisphenol (two rings), is the active ingredient in pHisoHex."
+    },
+    "OSC_Microbio_13_02_ACTests": {
+      "source": "media/OSC_Microbio_13_02_ACTests.jpg",
+      "sourceSha256": "c3aab249711d59d821fe091aeb2e9e9baf3bcd82c0108bd0c4333473d5b9487f",
+      "module": "m58854",
+      "kind": "photo",
+      "width": 500,
+      "height": 744,
+      "variants": [
+        {
+          "width": 500,
+          "height": 744,
+          "file": "OSC_Microbio_13_02_ACTests-500.webp"
+        }
+      ],
+      "alt": "A photo of test tubes. The one on the left has white tape, the one on the right has the same white tape but it now has a black line.",
+      "caption": "The white strips on autoclave tape (left tube) turn dark during a successful autoclave run (right tube). (credit: modification of work by Brian Forster)"
+    },
+    "OSC_Microbio_13_02_Autoclave": {
+      "source": "media/OSC_Microbio_13_02_Autoclave.jpg",
+      "sourceSha256": "0da860f5beaf5f1592560fca5bed81f39638492e268d5f4782c79f2768034545",
+      "module": "m58854",
+      "kind": "photo",
+      "width": 651,
+      "height": 445,
+      "variants": [
+        {
+          "width": 651,
+          "height": 445,
+          "file": "OSC_Microbio_13_02_Autoclave-651.webp"
+        }
+      ],
+      "alt": "a) A drawing of an autoclave. There is a large metal cylinder with a pressure gauge. An operative valve allows steam from the jacket to the chamber; there is also a safety valve. The main chamber connects to an exhaust valve, a waste line, an ejector valve, a steam supply line and a pressure regulator. B) a photo of an autoclave; a large metal box as tall as the operator standing in front of it.",
+      "caption": "A technician sterilizes a sample using an autoclave. (Credit: Martha Cooper / Picryl; Public Domain."
+    },
+    "OSC_Microbio_13_02_Dessicated": {
+      "source": "media/OSC_Microbio_13_02_Dessicated.jpg",
+      "sourceSha256": "085cb9cecc78f4ae31c3a7f0ac1cb25f01e88410acdf24263ea492c53c6f2ce4",
+      "module": "m58854",
+      "kind": "photo",
+      "width": 1300,
+      "height": 435,
+      "variants": [
+        {
+          "width": 800,
+          "height": 267,
+          "file": "OSC_Microbio_13_02_Dessicated-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 435,
+          "file": "OSC_Microbio_13_02_Dessicated-1300.webp"
+        }
+      ],
+      "alt": "a) A drawing showing water leaving the cell and the cell shriveling. B) photos of raisins, beef jerky, salted fish, and jam.",
+      "caption": "(a) The addition of a solute creates a hypertonic environment, drawing water out of cells. (b) Some foods can be dried directly, like raisins and jerky. Other foods are dried with the addition of salt, as in the case of salted fish, or sugar, as in the case of jam. (credit a: modification of work by “Bruce Blaus”/Wikimedia Commons; credit raisins: modification of work by Christian Schnettelker; credit jerky: modification of work by Larry Jacobsen; credit salted fish: modification of work by “The Photographer”/Wikimedia Commons; credit jam: modification of work by Kim Becker)"
+    },
+    "OSC_Microbio_13_02_Gammafood": {
+      "source": "media/OSC_Microbio_13_02_Gammafood.jpg",
+      "sourceSha256": "2b867355838f178b2a5e534276e8b7b9a5effbf852a843bdd994c40689468b3a",
+      "module": "m58854",
+      "kind": "photo",
+      "width": 900,
+      "height": 405,
+      "variants": [
+        {
+          "width": 800,
+          "height": 360,
+          "file": "OSC_Microbio_13_02_Gammafood-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 405,
+          "file": "OSC_Microbio_13_02_Gammafood-900.webp"
+        }
+      ],
+      "alt": "A) Peaches on a conveyor belt. B) The symbol for gamma-irradiated. A stylized flower (circle above 2 leaf shapes) inside a circle with 4 clear lines going through the circle near the top.",
+      "caption": "(a) Foods are exposed to gamma radiation by passage on a conveyor belt through a radiation chamber. (b) Gamma-irradiated foods must be clearly labeled and display the irradiation symbol, known as the “radura.” (credit a, b: modification of work by U.S. Department of Agriculture)"
+    },
+    "OSC_Microbio_13_02_HEPA": {
+      "source": "media/OSC_Microbio_13_02_HEPA.jpg",
+      "sourceSha256": "ccb35a9279cdc5b5b71ede28ba921227fdb5248cc8a2c68e030efd249b6bf60d",
+      "module": "m58854",
+      "kind": "photo",
+      "width": 1300,
+      "height": 588,
+      "variants": [
+        {
+          "width": 800,
+          "height": 362,
+          "file": "OSC_Microbio_13_02_HEPA-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 588,
+          "file": "OSC_Microbio_13_02_HEPA-1300.webp"
+        }
+      ],
+      "alt": "",
+      "caption": "(a) HEPA filters like this one remove microbes, endospores, and viruses as air flows through them. (b) A schematic of a HEPA filter. (credit a: modification of work by CSIRO; credit b: modification of work by “LadyofHats”/Mariana Ruiz Villareal)"
+    },
+    "OSC_Microbio_13_02_HomeCan": {
+      "source": "media/OSC_Microbio_13_02_HomeCan.jpg",
+      "sourceSha256": "3f1fd893ad8616fda5078adebdd8113cd9c8cc7676a7a4883fc11a673ce9ca46",
+      "module": "m58854",
+      "kind": "photo",
+      "width": 1200,
+      "height": 615,
+      "variants": [
+        {
+          "width": 800,
+          "height": 410,
+          "file": "OSC_Microbio_13_02_HomeCan-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 615,
+          "file": "OSC_Microbio_13_02_HomeCan-1200.webp"
+        }
+      ],
+      "alt": "a) A drawing of a microscope image. Small rod shaped cells with a small clear circle at one end. Also visible are rods with no clear circles and tiny circles outside of the rods. B) home canning jars in a pot.",
+      "caption": "(a) Clostridium botulinum is the causative agent of botulism. (b) A pressure canner is recommended for home canning because endospores of C. botulinum can survive temperatures above the boiling point of water. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by National Center for Home Food Preservation)"
+    },
+    "OSC_Microbio_13_02_LoopFlame": {
+      "source": "media/OSC_Microbio_13_02_LoopFlame.jpg",
+      "sourceSha256": "c7fbc5162d275e5b770fe09b816d8e5878f4d72fd7cf81481e71d07b098af641",
+      "module": "m58854",
+      "kind": "photo",
+      "width": 900,
+      "height": 627,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "OSC_Microbio_13_02_LoopFlame-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 627,
+          "file": "OSC_Microbio_13_02_LoopFlame-900.webp"
+        }
+      ],
+      "alt": "a) A picture of a hand holding a loop over an open flame. A machine with a wire metal cylinder that fits a loop in the center.",
+      "caption": "(a) Sterilizing a loop, often referred to as “flaming a loop,” is a common component of aseptic technique in the microbiology laboratory and is used to incinerate any microorganisms on the loop. (b) Alternatively, a bactericinerator may be used to reduce aerosolization of microbes and remove the presence of an open flame in the laboratory. These are examples of dry-heat sterilization by the direct application of high heat capable of incineration. (credit a: modification of work by Anh-Hue Tu; credit b: modification of work by Brian Forster)"
+    },
+    "OSC_Microbio_13_02_MembFilter": {
+      "source": "media/OSC_Microbio_13_02_MembFilter.jpg",
+      "sourceSha256": "e857bc7484a4a7ba0b2b2469dd7595136700c01ee0e9ce7b5a17d672d87ff1d7",
+      "module": "m58854",
+      "kind": "photo",
+      "width": 1300,
+      "height": 541,
+      "variants": [
+        {
+          "width": 800,
+          "height": 333,
+          "file": "OSC_Microbio_13_02_MembFilter-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 541,
+          "file": "OSC_Microbio_13_02_MembFilter-1300.webp"
+        }
+      ],
+      "alt": "a) Photo of 2 chambers separated by a filter; a tube runs from below the filter to a device. B) A photo of a syringe with a filter on the end.",
+      "caption": "Membrane filters come in a variety of sizes, depending on the volume of solution being filtered. (a) Larger volumes are filtered in units like these. The solution is drawn through the filter by connecting the unit to a vacuum. (b) Smaller volumes are often filtered using syringe filters, which are units that fit on the end of a syringe. In this case, the solution is pushed through by depressing the syringe’s plunger. (credit a, b: modification of work by Brian Forster)"
+    },
+    "OSC_Microbio_13_02_PMCTable_A": {
+      "source": "media/OSC_Microbio_13_02_PMCTable_A.jpg",
+      "sourceSha256": "f230f5b05892135f2a48d64a35f5b0573fc8cc6273678b5ac1028584e516e0c6",
+      "module": "m58854",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 984,
+          "file": "OSC_Microbio_13_02_PMCTable_A-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1600,
+          "file": "OSC_Microbio_13_02_PMCTable_A-1300.webp"
+        }
+      ],
+      "alt": "A table titled physical methods of control; 4 columns – method, conditions, mode of action, and examples of use. Groupings are: heat, cold, pressure, desiccation, radiation, sonication, and filtration. Heat. Boiling, 100 °C at sea level, Denatures proteins and alters membranes; usese Cooking, personal use, preparing certain laboratory media. Dry-heat oven, 170 °C for 2 hours, Denatures proteins and alters membranes, dehydration, desiccation; uses Sterilization of heat-stable medical and laboratory equipment and glassware. Incineration, Exposure to flame,Destroy by burning, Flaming loop, microincinerator. Autoclave, Typical settings: 121 °C for 15–40 minutes at 15 psi, Denatures proteins and alters membranes, Sterilization of microbiological media, heat-stable medical and laboratory equipment, and other heat-stable items. Pasteurization, 72 °C for 15 seconds (HTST) or 138 °C for ≥ 2 seconds (UHT), Denatures proteins and alters membranes, Prevents spoilage of milk, apple juice, honey, and other ingestible liquids. Cold. Refrigeration, 0 °C to 7 °C, Inhibits metabolism (slows or arrests cell division), Preservation of food or laboratory materials (solutions, cultures). Freezing, Below −2 °C, Stops metabolism, may kill microbes, Long-term storage of food, laboratory cultures, or medical specimens. Pressure. High-pressure processing, Exposure to pressures of 100–800 MPa, Denatures proteins and can cause cell lysis Preservation of food, Hyberbaric oxygen therapy. Inhalation of pure oxygen at a pressure of 1–3 atm, Inhibits metabolism and growth of anaerobic microbes, Treatment of certain infections (e.g., gas gangrene). Dessication. Simple desiccation, Drying, Inhibits metabolism, Dried fruits, jerky. Reduce water activity, Addition of salt or water Inhibits metabolism and can cause lysis, Salted meats and fish, honey, jams and jellies. Lyophilization, Rapid freezing under vacuum, Inhibits metabolism Preservation of food, laboratory cultures, or reagents. Radiation. Ionizing radiation, Exposure to X-rays or gamma rays, Alters molecular structures, introduces double-strand breaks into DNA, Sterilization of spices and heat-sensitive laboratory and medical items; used for food sterilization in Europe but not widely accepted in US. Nonionizing radiation, Exposure to ultraviolet light, Introduces thymine dimers, leading to mutations, Surface sterilization of laboratory materials, water purification. Sonication, Exposure to ultrasonic waves, Cavitation (formation of empty space) disrupts cells, lysing them, Laboratory research to lyse cells; cleaning jewelry, lenses, and equipment. Filtration. HEPA filtration, Use of HEPA filter with 0.3-µm pore size Physically removes microbes from air, Laboratory biological safety cabinets, operating rooms, isolation units, heating and air conditioning systems, vacuum cleaners. Membrane filtration Use of membrane filter with 0.2-µm or smaller pore size, Physically removes microbes from liquid solutions, Removal of bacteria from heat-sensitive solutions like vitamins, antibiotics, and media with heat-sensitive components.",
+      "caption": ""
+    },
+    "OSC_Microbio_13_02_PMCTable_B": {
+      "source": "media/OSC_Microbio_13_02_PMCTable_B.jpg",
+      "sourceSha256": "6bc497abea80a1f3e1a31028aa35c476c72e22db891ef714ced1b80c5b4fa238",
+      "module": "m58854",
+      "kind": "photo",
+      "width": 1300,
+      "height": 607,
+      "variants": [
+        {
+          "width": 800,
+          "height": 373,
+          "file": "OSC_Microbio_13_02_PMCTable_B-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 607,
+          "file": "OSC_Microbio_13_02_PMCTable_B-1300.webp"
+        }
+      ],
+      "alt": "See alt text for previous figure. This figure is a continuation of a 2 part figure, the contents of which are described in full in the alt text for the previous figure.",
+      "caption": ""
+    },
+    "OSC_Microbio_13_02_Pasteurize": {
+      "source": "media/OSC_Microbio_13_02_Pasteurize.jpg",
+      "sourceSha256": "d61be428b302882cd6a97ba355fb3690ef82c3444944ada351d718cdc57a5d9c",
+      "module": "m58854",
+      "kind": "photo",
+      "width": 1123,
+      "height": 647,
+      "variants": [
+        {
+          "width": 800,
+          "height": 461,
+          "file": "OSC_Microbio_13_02_Pasteurize-800.webp"
+        },
+        {
+          "width": 1123,
+          "height": 647,
+          "file": "OSC_Microbio_13_02_Pasteurize-1123.webp"
+        }
+      ],
+      "alt": "Pasteurization shows an image of a large machine. To the left is HTST pasteurization where milk is heated at 72 degrees C for 15 seconds, then boiled and refrigerated. To the right is UHT pasteurization where milk is heated at 138 degrees C for 2 or more seconds, then sealed in airtight containers for up to 90 days without refrigeration. To the bottom is the following test: milkborne organisms killed by pasteurization: Campylobacter jejuni, Coxiella burnetii, Listeria monocytogenes, Escherichia coli O157:H7, Mycobacterium tuberculosis, M. paratuberculosis, Salmonella spp., Yersinia enterocolitica.",
+      "caption": "Two different methods of pasteurization, HTST and UHT, are commonly used to kill pathogens associated with milk spoilage. (credit left: modification of work by Mark Hillary; credit right: modification of work by Kerry Ceszyk)"
+    },
+    "OSC_Microbio_13_02_UV": {
+      "source": "media/OSC_Microbio_13_02_UV.jpg",
+      "sourceSha256": "c8036cf94b237a8c2c9714af11804055e12af063546026ae34341425ca6687df",
+      "module": "m58854",
+      "kind": "photo",
+      "width": 1298,
+      "height": 452,
+      "variants": [
+        {
+          "width": 800,
+          "height": 278,
+          "file": "OSC_Microbio_13_02_UV-800.webp"
+        },
+        {
+          "width": 1298,
+          "height": 452,
+          "file": "OSC_Microbio_13_02_UV-1298.webp"
+        }
+      ],
+      "alt": "a) A double stranded segment of DNA showing the proper hydrogen bonds between A/T and C/G on either side of the double strand. However 2 T’s on the same strand are bound to each other instead of the A’s across from them. This bond between the 2 T’s is labeled thymine dimer. B) a photo of a lab hood with blue light.",
+      "caption": "(a) UV radiation causes the formation of thymine dimers in DNA, leading to lethal mutations in the exposed microbes. (b) Germicidal lamps that emit UV light are commonly used in the laboratory to disinfect equipment."
+    },
+    "OSC_Microbio_13_02_Ultralow": {
+      "source": "media/OSC_Microbio_13_02_Ultralow.png",
+      "sourceSha256": "7d988bbcfcf1a5afc9d6604d4a806a565b68a8da23121090098b248627b26e78",
+      "module": "m58854",
+      "kind": "diagram",
+      "width": 1742,
+      "height": 707,
+      "variants": [
+        {
+          "width": 800,
+          "height": 324,
+          "file": "OSC_Microbio_13_02_Ultralow-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 649,
+          "file": "OSC_Microbio_13_02_Ultralow-1600.webp"
+        }
+      ],
+      "alt": "Photo of a person standing in front of a large freezer. Photo of a person standing in front of a large freezer.",
+      "caption": "Cultures and other medical specimens can be stored for long periods at ultra-low temperatures. (a) An ultra-low freezer maintains temperatures at or below −70 °C. (b) Two people stand in a room with a large nitrogen storage unit emitting a large amount of fog. (credit a: modification of work by “Expert Infantry”/Flickr; credit b: Credit: US Navy; Public Domain.)"
+    },
+    "OSC_Microbio_13_02_chloram": {
+      "source": "media/OSC_Microbio_13_02_chloram.jpg",
+      "sourceSha256": "e6174a64419023db2080e57419d563e29700f4b0eaa8811b2698f048c96d28fb",
+      "module": "m58855",
+      "kind": "photo",
+      "width": 331,
+      "height": 128,
+      "variants": [
+        {
+          "width": 331,
+          "height": 128,
+          "file": "OSC_Microbio_13_02_chloram-331.webp"
+        }
+      ],
+      "alt": "Ammonia has an N and 3 Hs. Chloramine has an N, 2 Hs and 1 Cl.",
+      "caption": "Monochloroamine, one of the chloramines, is derived from ammonia by the replacement of one hydrogen atom with a chlorine atom."
+    },
+    "OSC_Microbio_13_03_Alcohols": {
+      "source": "media/OSC_Microbio_13_03_Alcohols.jpg",
+      "sourceSha256": "eb8404f7eeb912f990510970a7b5f6f8c2b00a839cb273acc1817ea9e5df8783",
+      "module": "m58855",
+      "kind": "photo",
+      "width": 927,
+      "height": 411,
+      "variants": [
+        {
+          "width": 800,
+          "height": 354,
+          "file": "OSC_Microbio_13_03_Alcohols-800.webp"
+        },
+        {
+          "width": 927,
+          "height": 411,
+          "file": "OSC_Microbio_13_03_Alcohols-927.webp"
+        }
+      ],
+      "alt": "a) Ethyl alcohol has 2 C’s and an OH. B) Isopropyl alcohol has 3 C’s and an OH.",
+      "caption": "(a) Ethyl alcohol, the intoxicating ingredient found in alcoholic drinks, is also used commonly as a disinfectant. (b) Isopropyl alcohol, also called rubbing alcohol, has a related molecular structure and is another commonly used disinfectant. (credit a photo: modification of work by D Coetzee; credit b photo: modification of work by Craig Spurrier)"
+    },
+    "OSC_Microbio_13_03_Alkylators": {
+      "source": "media/OSC_Microbio_13_03_Alkylators.jpg",
+      "sourceSha256": "72ea4e10655ef241ce83961fe460fb58a695e8af46ab98ff418cdf51185eee42",
+      "module": "m58855",
+      "kind": "photo",
+      "width": 1300,
+      "height": 810,
+      "variants": [
+        {
+          "width": 800,
+          "height": 498,
+          "file": "OSC_Microbio_13_03_Alkylators-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 810,
+          "file": "OSC_Microbio_13_03_Alkylators-1300.webp"
+        }
+      ],
+      "alt": "a) Guanine has 2 carbon and nitrogen rings. If the hydrogen atoms are changed to alkyl groups, the guanine bonds to thymine. B) formeldahyde has 1 carbon, glutaraldehyde has 5 carbons, o-phthalaldehyde has a carbon ring with 2 carbons off the ring, ethylelene oxide has 2 carbons and an oxygen forming a triange. Beta-propionolactone has 3 carbons and an oxygen forming a square.",
+      "caption": "(a) Alkylating agents replace hydrogen atoms with alkyl groups. Here, guanine is alkylated, resulting in its hydrogen bonding with thymine, instead of cytosine. (b) The chemical structures of several alkylating agents."
+    },
+    "OSC_Microbio_13_03_Betadine": {
+      "source": "media/OSC_Microbio_13_03_Betadine.jpg",
+      "sourceSha256": "f2a855a26e9b5d33a1a4033bb9f8a374813e6a28506ccf071597ba4804c1ab63",
+      "module": "m58855",
+      "kind": "photo",
+      "width": 919,
+      "height": 430,
+      "variants": [
+        {
+          "width": 800,
+          "height": 374,
+          "file": "OSC_Microbio_13_03_Betadine-800.webp"
+        },
+        {
+          "width": 919,
+          "height": 430,
+          "file": "OSC_Microbio_13_03_Betadine-919.webp"
+        }
+      ],
+      "alt": "a) Chemical structure of betadine. B) picture of a medical professional putting orange paste on a patient.",
+      "caption": "(a) Betadine is a solution of the iodophor povidone-iodine. (b) It is commonly used as a topical antiseptic on a patient’s skin before incision during surgery. (credit b: modification of work by Andrew Ratto)"
+    },
+    "OSC_Microbio_13_03_Catalase": {
+      "source": "media/OSC_Microbio_13_03_Catalase.jpg",
+      "sourceSha256": "2ff269911a0a8ab1dc0724f6e76698dcc193a9d272338aa5d506647ecc7231d0",
+      "module": "m58855",
+      "kind": "photo",
+      "width": 444,
+      "height": 418,
+      "variants": [
+        {
+          "width": 444,
+          "height": 418,
+          "file": "OSC_Microbio_13_03_Catalase-444.webp"
+        }
+      ],
+      "alt": "A chemical equation showing hydrogen peroxide being broken down to water and oxygen by catalase. Below is an image of hydrogen peroxide in a bottle and contact cleaner.",
+      "caption": "Catalase enzymatically converts highly reactive hydrogen peroxide (H 2 O 2 ) into water and oxygen. Hydrogen peroxide can be used to clean wounds. Hydrogen peroxide is used to sterilize items such as contact lenses. (credit photos: modification of work by Kerry Ceszyk)"
+    },
+    "OSC_Microbio_13_03_HandwashAB": {
+      "source": "media/OSC_Microbio_13_03_HandwashAB.png",
+      "sourceSha256": "3ff995ac3e59c6100fe5cc4d162093eac7e94efa55ca9e76f65ed3ff9ece097f",
+      "module": "m58855",
+      "kind": "diagram",
+      "width": 1798,
+      "height": 1634,
+      "variants": [
+        {
+          "width": 800,
+          "height": 727,
+          "file": "OSC_Microbio_13_03_HandwashAB-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1454,
+          "file": "OSC_Microbio_13_03_HandwashAB-1600.webp"
+        }
+      ],
+      "alt": "a) CDC handwashing recommendations for the general public. 1 – wet your hands with clean, running water (warm or cold). Turn off the tap and apply soap. 2 – Lather your hands by rubbing them together with the soap. Be sure to lather the backs of your hands, between your fingers and under your nails. 3 – Scrub your hands for at least 20 seconds. Need a timer? Hum the “Happy birthday” song from beginning to end twice. 4 – Rinse your hands well under clean, running water. 5 – Dry your hands using a clean towel or air-dry them. B) A photo of a person washing their hands.",
+      "caption": "(a) The CDC recommends five steps as part of typical handwashing for the general public. (b) Surgical scrubbing is more extensive, requiring scrubbing starting from the fingertips, extending to the hands and forearms, and then up beyond the elbows, as shown here. (credit a: modification of work by World Health Organization; credit b: b: Staff Sgt. Kevin Iinuma / US Air Force; Public Domain)"
+    },
+    "OSC_Microbio_13_03_HeavyMetal": {
+      "source": "media/OSC_Microbio_13_03_HeavyMetal.jpg",
+      "sourceSha256": "e3a4006b1b133f0160b31ea5aeafda9ca67dfcb87bf1fc5dfd4a8b9114ccd01b",
+      "module": "m58855",
+      "kind": "photo",
+      "width": 1300,
+      "height": 410,
+      "variants": [
+        {
+          "width": 800,
+          "height": 252,
+          "file": "OSC_Microbio_13_03_HeavyMetal-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 410,
+          "file": "OSC_Microbio_13_03_HeavyMetal-1300.webp"
+        }
+      ],
+      "alt": "a) photo of a copper door handle. B) Picture of silver forks. C) Picture of an incubator d) picture of Listerine mouthwash. E) Picture of a person with gray skin.",
+      "caption": "Heavy metals denature proteins, impairing cell function and, thus, giving them strong antimicrobial properties. (a) Copper in fixtures like this door handle kills microbes that otherwise might accumulate on frequently touched surfaces. (b) Eating utensils contain small amounts of silver to inhibit microbial growth. (c) Copper commonly lines incubators to minimize contamination of cell cultures stored inside. (d) Antiseptic mouthwashes commonly contain zinc chloride. (e) This patient is suffering from argyria, an irreversible condition caused by bioaccumulation of silver in the body. (credit b: modification of work by “Shoshanah”/Flickr; credit e: modification of work by Herbert L. Fred and Hendrik A. van Dijk)"
+    },
+    "OSC_Microbio_13_03_Quats": {
+      "source": "media/OSC_Microbio_13_03_Quats.jpg",
+      "sourceSha256": "f09643398a361c49d3f40dd55f829dc7db810d56246e783a8f8d1c162fa36263",
+      "module": "m58855",
+      "kind": "photo",
+      "width": 1201,
+      "height": 642,
+      "variants": [
+        {
+          "width": 800,
+          "height": 427,
+          "file": "OSC_Microbio_13_03_Quats-800.webp"
+        },
+        {
+          "width": 1201,
+          "height": 642,
+          "file": "OSC_Microbio_13_03_Quats-1201.webp"
+        }
+      ],
+      "alt": "A) A diagram of cetylpyridinum – a ring with 5 carbons and a nitrogen. The nitrogen is attached to a long carbon chain. Chemical structure of Benzalkonium – a six carbon ring. One carbon is attached to a carbon that is attached to a nitrogen which is attached to a long carbon chain. B) An image of surfactant molecules entering a membrane and breaking the membrane apart.",
+      "caption": "(a) Two common quats are benzylalkonium chloride and cetylpyrimidine chloride. Note the hydrophobic nonpolar carbon chain at one end and the nitrogen-containing cationic component at the other end. (b) Quats are able to infiltrate the phospholipid plasma membranes of bacterial cells and disrupt their integrity, leading to death of the cell."
+    },
+    "OSC_Microbio_13_03_Triclosan": {
+      "source": "media/OSC_Microbio_13_03_Triclosan.png",
+      "sourceSha256": "4153d25596b6e5e14c3c555787e5835fb2e62416473cc0d75b4d344ecc8454a5",
+      "module": "m58855",
+      "kind": "diagram",
+      "width": 1523,
+      "height": 742,
+      "variants": [
+        {
+          "width": 800,
+          "height": 389,
+          "file": "OSC_Microbio_13_03_Triclosan-800.webp"
+        },
+        {
+          "width": 1523,
+          "height": 742,
+          "file": "OSC_Microbio_13_03_Triclosan-1523.webp"
+        }
+      ],
+      "alt": "A chemical structure of triclosan. Two carbon rings (6 carbons) connected by an oxygen; each ring has 2 more oxygens bound to it. A photo of someone washing their hands.",
+      "caption": "Triclosan is a common ingredient in antibacterial soaps despite evidence that it poses environmental and health risks and offers no significant health benefit compared to conventional soaps. (credit b: modification of work by FDA; c: Michelle Gigante/US Air Force; Public Domain.)"
+    },
+    "OSC_Microbio_13_03_bisbi": {
+      "source": "media/OSC_Microbio_13_03_bisbi.jpg",
+      "sourceSha256": "2a8341a03d1cd65d80cb255727c5d108be37a129d6efd1557cb74b0781777bb3",
+      "module": "m58855",
+      "kind": "photo",
+      "width": 1200,
+      "height": 215,
+      "variants": [
+        {
+          "width": 800,
+          "height": 143,
+          "file": "OSC_Microbio_13_03_bisbi-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 215,
+          "file": "OSC_Microbio_13_03_bisbi-1200.webp"
+        }
+      ],
+      "alt": "Chemical structure of chlorhexidine. A 6 carbon ring with CL on one carbon; on the other side of the ring is a chain of Nitrogens and carbon. Chemical structure of alexidine. A chain of carbons and nitrogens; the very end has a branch with 2 carbon chains.",
+      "caption": "The bisbiguanides chlorhexadine and alexidine are cationic antiseptic compounds commonly used as surgical scrubs."
+    },
+    "OSC_Microbio_13_03_soap": {
+      "source": "media/OSC_Microbio_13_03_soap.jpg",
+      "sourceSha256": "c05706446f6ae80f3e4ebf2452f85ec58e62210274f93eb086e7c9d39305163c",
+      "module": "m58855",
+      "kind": "photo",
+      "width": 1063,
+      "height": 234,
+      "variants": [
+        {
+          "width": 800,
+          "height": 176,
+          "file": "OSC_Microbio_13_03_soap-800.webp"
+        },
+        {
+          "width": 1063,
+          "height": 234,
+          "file": "OSC_Microbio_13_03_soap-1063.webp"
+        }
+      ],
+      "alt": "A chemical structure with a long carbon chain and two oxygens at one end. The end with the oxygens is the hydrophobic head which shuns hydrocarbon-like substances but is attracted to water molecules. Thi sis the anionic portion of the molecule. The long carbon chains are the hydrophilic tail which shuns water but is attracted to oily greasy hydrocarbon-like substances.",
+      "caption": "Soaps are the salts (sodium salt in the illustration) of fatty acids and have the ability to emulsify lipids, fats, and oils by interacting with water through their hydrophilic heads and with the lipid at their hydrophobic tails."
+    },
+    "OSC_Microbio_13_04_CRE": {
+      "source": "media/OSC_Microbio_13_04_CRE.jpg",
+      "sourceSha256": "8e10e884d43a594e4ca5e288cae6b4a2d791fcea5dc69a5e1f910d40a6832d47",
+      "module": "m58856",
+      "kind": "photo",
+      "width": 500,
+      "height": 583,
+      "variants": [
+        {
+          "width": 500,
+          "height": 583,
+          "file": "OSC_Microbio_13_04_CRE-500.webp"
+        }
+      ],
+      "alt": "Micrograph of oval cells.",
+      "caption": "CRE is an extremely drug-resistant strain of bacteria that is typically associated with nosocomial infections. (credit: Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_13_04_Diskdiff": {
+      "source": "media/OSC_Microbio_13_04_Diskdiff.jpg",
+      "sourceSha256": "6060e4903f80c18aeb55808cbc436332e734740a2173260017dfe249a27aaba1",
+      "module": "m58856",
+      "kind": "photo",
+      "width": 1198,
+      "height": 518,
+      "variants": [
+        {
+          "width": 800,
+          "height": 346,
+          "file": "OSC_Microbio_13_04_Diskdiff-800.webp"
+        },
+        {
+          "width": 1198,
+          "height": 518,
+          "file": "OSC_Microbio_13_04_Diskdiff-1198.webp"
+        }
+      ],
+      "alt": "A) A drawing of a plate covered in bacteria. On the plate are 5 small antimicrobial disks with clear areas around them. The clear areas are zones of inhibition where bacteria do not grow. The size of the zone can be measured with a ruler or calipers to determine the effectiveness of the antibiotic. B) A photograph showing plates with antimicrobial disks with zones of inhibition.",
+      "caption": "A disk-diffusion assay is used to determine the effectiveness of chemical agents against a particular microbe. (a) A plate is inoculated with various antimicrobial discs. The zone of inhibition around each disc indicates how effective that antimicrobial is against the particular species being tested. (b) On these plates, four antimicrobial agents are tested for efficacy in killing Pseudomonas aeruginosa (left) and Staphylococcus aureus (right). These antimicrobials are much more effective at killing S. aureus , as indicated by the size of the zones of inhibition. (credit b: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_13_04_DuoScope": {
+      "source": "media/OSC_Microbio_13_04_DuoScope.jpg",
+      "sourceSha256": "6c1bf4ea61a245af42e69d6cf6570c76bb670b36d77731520f68aafc3492fecc",
+      "module": "m58856",
+      "kind": "photo",
+      "width": 1257,
+      "height": 862,
+      "variants": [
+        {
+          "width": 800,
+          "height": 548,
+          "file": "OSC_Microbio_13_04_DuoScope-800.webp"
+        },
+        {
+          "width": 1257,
+          "height": 862,
+          "file": "OSC_Microbio_13_04_DuoScope-1257.webp"
+        }
+      ],
+      "alt": "Diagram of a person with a duodenoscope inserted into their mouth – it travels through the esophagus and stomach to the duodenum. A photograph of the end of the scope shows a foreceps elevator in the lowered/closed and raised/open position.",
+      "caption": "The elevator mechanism in a duodenoscope contains crevices that are difficult to disinfect. Pathogens that survive disinfection protocols can be passed from one patient to another, causing serious infections. (credit “photos”: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_13_04_InUseTest": {
+      "source": "media/OSC_Microbio_13_04_InUseTest.jpg",
+      "sourceSha256": "3bbda6563766319d6ea399ac3fb98ef4aff7a71b52378cab43e994b9415e0495",
+      "module": "m58856",
+      "kind": "photo",
+      "width": 906,
+      "height": 671,
+      "variants": [
+        {
+          "width": 800,
+          "height": 592,
+          "file": "OSC_Microbio_13_04_InUseTest-800.webp"
+        },
+        {
+          "width": 906,
+          "height": 671,
+          "file": "OSC_Microbio_13_04_InUseTest-906.webp"
+        }
+      ],
+      "alt": "A diagram showing a flask with used disinfectant. 1 ml is moved to a 9 ml sterile broth with disinfectant inactivator. Plate 10 drops (0.2 ml) onto each of 2 plates. One is incubated at 37 degrees C for 3 days, the other is incubated at room temperature for 7 days. The growth of 5 or more colonies on either plate indicates contamination of disinfectant solution.",
+      "caption": "Used disinfectant solutions in a clinical setting can be checked with the in-use test for contamination with microbes."
+    },
+    "OSC_Microbio_14_00_Antimicro": {
+      "source": "media/OSC_Microbio_14_00_Antimicro.jpg",
+      "sourceSha256": "5a0b24da0de28eb0d11e550503c1e02c240d66057c566ac835597575c69daa25",
+      "module": "m58857",
+      "kind": "photo",
+      "width": 1293,
+      "height": 598,
+      "variants": [
+        {
+          "width": 800,
+          "height": 370,
+          "file": "OSC_Microbio_14_00_Antimicro-800.webp"
+        },
+        {
+          "width": 1293,
+          "height": 598,
+          "file": "OSC_Microbio_14_00_Antimicro-1293.webp"
+        }
+      ],
+      "alt": "Old poster stating: Penicillin - The new life saving drug saves soldier’s lives! Men who might have died will live if you give this job everything you’ve got. A person wearing personal protective gear sets up an intravenous bag full of fluid.",
+      "caption": "First mass produced in the 1940s, penicillin was instrumental in saving millions of lives during World War II and was considered a wonder drug. “Treatment of War Wounds: A Historical Review.” Clinical Orthopaedics and Related Research 467 no. 8 (2009):2168–2191. Today, overprescription of antibiotics (especially for childhood illnesses) has contributed to the evolution of drug-resistant pathogens. (credit left: modification of work by Chemical Heritage Foundation; Credit right: DFID / Flickr; CC-BY)"
+    },
+    "OSC_Microbio_14_01_Ehrlich": {
+      "source": "media/OSC_Microbio_14_01_Ehrlich.jpg",
+      "sourceSha256": "b580a1ae4b47639243d0ce2e8e50414bb88cfa41c2e3960080461eb0dd594158",
+      "module": "m58858",
+      "kind": "photo",
+      "width": 500,
+      "height": 689,
+      "variants": [
+        {
+          "width": 500,
+          "height": 689,
+          "file": "OSC_Microbio_14_01_Ehrlich-500.webp"
+        }
+      ],
+      "alt": "Drawing of Paul Ehrlich in the lab.",
+      "caption": "Paul Ehrlich was influential in the discovery of Compound 606, an antimicrobial agent that proved to be an effective treatment for syphilis."
+    },
+    "OSC_Microbio_14_01_FDAAntibio": {
+      "source": "media/OSC_Microbio_14_01_FDAAntibio.jpg",
+      "sourceSha256": "9217adb890dd016d4cc9ab1505b88f7ca99728772bbbb60608d7abe422ef6901",
+      "module": "m63248",
+      "kind": "photo",
+      "width": 754,
+      "height": 620,
+      "variants": [
+        {
+          "width": 754,
+          "height": 620,
+          "file": "OSC_Microbio_14_01_FDAAntibio-754.webp"
+        }
+      ],
+      "alt": "A graph of new antimicrobials approved by FDA from 1983 – 2012. From 83-87 12 new antimicrobials were approved. From 88-92 there were 14. From 93-97 there were 10. From 98-2002 there were 7. From 03 – 07 there were 5. From 08-12 there were 2.",
+      "caption": "In recent decades, approvals of new antimicrobials by the FDA have steadily fallen. In the five-year period from 1983–1987, 16 new antimicrobial drugs were approved, compared to just two from 2008–2012."
+    },
+    "OSC_Microbio_14_01_Oxford": {
+      "source": "media/OSC_Microbio_14_01_Oxford.jpg",
+      "sourceSha256": "31d9f6bcc541d031c4f4a567d6e164a66856a9be0145980a5b6e6fa40be7ba0a",
+      "module": "m58858",
+      "kind": "photo",
+      "width": 1300,
+      "height": 523,
+      "variants": [
+        {
+          "width": 800,
+          "height": 322,
+          "file": "OSC_Microbio_14_01_Oxford-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 523,
+          "file": "OSC_Microbio_14_01_Oxford-1300.webp"
+        }
+      ],
+      "alt": "a) Photo of Alexander Fleming. B) Photo of Howard Florey and Ernst Chain.",
+      "caption": "(a) Alexander Fleming was the first to discover a naturally produced antimicrobial, penicillin, in 1928. (b) Howard Florey and Ernst Chain discovered how to scale up penicillin production. Then they figured out how to purify it and showed its efficacy as an antimicrobial in animal and human trials in the early 1940s."
+    },
+    "OSC_Microbio_14_01_Waksman": {
+      "source": "media/OSC_Microbio_14_01_Waksman.jpg",
+      "sourceSha256": "32cc04f560216b9b2604e7d59a025b91ef1559a3bc12bf53c1486852a204b5eb",
+      "module": "m58858",
+      "kind": "photo",
+      "width": 500,
+      "height": 613,
+      "variants": [
+        {
+          "width": 500,
+          "height": 613,
+          "file": "OSC_Microbio_14_01_Waksman-500.webp"
+        }
+      ],
+      "alt": "Photo of Selman Waksman in the lab.",
+      "caption": "Selman Waksman was the first to show the vast antimicrobial production capabilities of a group of soil bacteria, the actinomycetes."
+    },
+    "OSC_Microbio_14_01_Woodcut": {
+      "source": "media/OSC_Microbio_14_01_Woodcut.jpg",
+      "sourceSha256": "1174052483cc3b66ce491d388acca7e728bdeefca887a1bc440624380224f1f9",
+      "module": "m58858",
+      "kind": "photo",
+      "width": 900,
+      "height": 579,
+      "variants": [
+        {
+          "width": 800,
+          "height": 514,
+          "file": "OSC_Microbio_14_01_Woodcut-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 579,
+          "file": "OSC_Microbio_14_01_Woodcut-900.webp"
+        }
+      ],
+      "alt": "Photo of a variety of plants being sold by a street vendor.",
+      "caption": "For millennia, Chinese herbalists have used many different species of plants for the treatment of a wide variety of human ailments."
+    },
+    "OSC_Microbio_14_02_BetaLactam": {
+      "source": "media/OSC_Microbio_14_02_BetaLactam.jpg",
+      "sourceSha256": "cdf52278f628ff1dec518000ecb74300e4703d343bb2e4a5841d3e6cbf859a85",
+      "module": "m58860",
+      "kind": "photo",
+      "width": 1300,
+      "height": 908,
+      "variants": [
+        {
+          "width": 800,
+          "height": 558,
+          "file": "OSC_Microbio_14_02_BetaLactam-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 908,
+          "file": "OSC_Microbio_14_02_BetaLactam-1300.webp"
+        }
+      ],
+      "alt": "The top of the image shows diagrams of various antibiotics. All have a beta-lactam ring wich is a square made of 3 carbons and a nitrogen; one of the carbons has a double bonded O. The antibiotics shown are penicillin, cephalosporin, monobactam and carbapenem Below is a table with the rows: R group, Drug name, specrum of activity and route of administration. Penicillin G has an R group of a carbon linked to a 6 carbon ring; it is active on G+ and a few G- cells, and has a parenteral route of administration. Penicillin V has an R group of a carbon linked t an oxygen linked to a carbon ring. IT affects G+ and a few G- and is administered orally. Ampicillin has an R group of a Carbon attached to both an amine group and a carbon ring. It is affective agains G+ and more G- than penicillin. It is administered orally and parenterally. Amoxicillin has an R group similar to ampicillin but the carbon rign has an additional OH. It has similar activity to ampicillin and is administerd orally (better than ampicillin). Methiciliin has an R group of a carbon right with 2 CH3O attached to the ring. IT is affective against G+ only, including B-lactam producers. It is administered parenterally.",
+      "caption": "Penicillins, cephalosporins, monobactams, and carbapenems all contain a β-lactam ring, the site of attack by inactivating β-lactamase enzymes. Although they all share the same nucleus, various penicillins differ from each other in the structure of their R groups. Chemical changes to the R groups provided increased spectrum of activity, acid stability, and resistance to β-lactamase degradation."
+    },
+    "OSC_Microbio_14_02_Modes": {
+      "source": "media/OSC_Microbio_14_02_Modes.jpg",
+      "sourceSha256": "3339a29599a510e1fca50169e7fe0d616635d1819cd383ca255ce7d804fe16df",
+      "module": "m58860",
+      "kind": "photo",
+      "width": 1200,
+      "height": 773,
+      "variants": [
+        {
+          "width": 800,
+          "height": 515,
+          "file": "OSC_Microbio_14_02_Modes-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 773,
+          "file": "OSC_Microbio_14_02_Modes-1200.webp"
+        }
+      ],
+      "alt": "An illustration of a cell is shown with a view inside. The double helix is visible in the center, and a label points to it indicating DNA synthesis, fluoroquinolones, ciprofloxacin, levofloxacin, moxifloxacin, RNA synthesis, Rifamycins, and rifampin. Another label points to the cell wall and indicates beta lactams, penicillins, cephalosporins, monobactams, carbapenems, glycopepties, vancomycin, and bacitracin. A third label points to the plasma membrane and indicates polymyxins, polymyxin B, colistin, lipopeptide, and daptomycin. Within the cytoplasm, another label points to ribosomes, which include 30s subunit, aminoglycosides, tetracyclines, 50s subunit, macrolides, lincosamides, chloramphenicol, and oxazolidinones. The final label points to the metabolic pathways and indicates folic acid synthesis, sulfonamides, sulfones, trimethoprim, mycolic acid synthesis, and izoniazid.",
+      "caption": "There are several classes of antibacterial compounds that are typically classified based on their bacterial target."
+    },
+    "OSC_Microbio_14_02_ProtSynInh": {
+      "source": "media/OSC_Microbio_14_02_ProtSynInh.jpg",
+      "sourceSha256": "c08d4da193b8f397cecb8a2616e59965ea9a69e224babb17bfb3d38a92fbf66b",
+      "module": "m58860",
+      "kind": "photo",
+      "width": 1198,
+      "height": 596,
+      "variants": [
+        {
+          "width": 800,
+          "height": 398,
+          "file": "OSC_Microbio_14_02_ProtSynInh-800.webp"
+        },
+        {
+          "width": 1198,
+          "height": 596,
+          "file": "OSC_Microbio_14_02_ProtSynInh-1198.webp"
+        }
+      ],
+      "alt": "Major classes of protein synthesis-inhibiting antibacterials. Cloramphenicol, macrolides, and lincosamides: bind to 50S ribosomal subunit, prevent peptide bond formation, stop protein synthesis. Aminoglycosides: bind to the 30S ribosomal subunit, implar proofreading, resulting in production of faulty proteins. Tetracyclines: bind to the 30S ribosomal subunit, block the binding of tRNAs, thereby inhibiting protein synthesis.",
+      "caption": "The major classes of protein synthesis inhibitors target the 30S or 50S subunits of cytoplasmic ribosomes."
+    },
+    "OSC_Microbio_14_02_SulfTri": {
+      "source": "media/OSC_Microbio_14_02_SulfTri.jpg",
+      "sourceSha256": "e09fab1b08eb3135111d77e2908433a92ac9b7cad7d52582ccb31c7043ca9977",
+      "module": "m58860",
+      "kind": "photo",
+      "width": 1290,
+      "height": 1168,
+      "variants": [
+        {
+          "width": 800,
+          "height": 724,
+          "file": "OSC_Microbio_14_02_SulfTri-800.webp"
+        },
+        {
+          "width": 1290,
+          "height": 1168,
+          "file": "OSC_Microbio_14_02_SulfTri-1290.webp"
+        }
+      ],
+      "alt": "PABA binds to an enzyme to produce dihydrofolic acid, which binds to another enzyme to produce tetrahydrofolic acid and nucletides. Trimethoprim, a structural analog of dihydrofolic acid, completely inhibits the synthesis of tetrtahydrofolic acid. Sulfonamide, a structural analog of PABA, competitively inhibits the synthesis of dihydrofolic acid.",
+      "caption": "Sulfonamides and trimethoprim are examples of antimetabolites that interfere in the bacterial synthesis of folic acid by blocking purine and pyrimidine biosynthesis, thus inhibiting bacterial growth."
+    },
+    "OSC_Microbio_14_03_ART": {
+      "source": "media/OSC_Microbio_14_03_ART.jpg",
+      "sourceSha256": "05ed90b9b1d33058dc64a1567a38e1cdface40dd4ee68be6d6e1b3745296af21",
+      "module": "m58861",
+      "kind": "photo",
+      "width": 1300,
+      "height": 928,
+      "variants": [
+        {
+          "width": 800,
+          "height": 571,
+          "file": "OSC_Microbio_14_03_ART-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 928,
+          "file": "OSC_Microbio_14_03_ART-1300.webp"
+        }
+      ],
+      "alt": "Diagram showing HIV infection and locations where drugs can stop the infection. GP120 and G(42 are proteins that are on the surface of the virus and bind to CD4 receptor and CCR5. Enfuvirtide is a fusion inhibitor that blocks this process. When the virus enters, it produces DNA from RNA, this can be blocked by AZT and etravirine which are reverse-transcriptase inhibitors. Next, the viral DNA integrates into the host DNA. Raltegravir is an integrase inhibitor and blocks this step. Finally the virus is rebuild. Ritonavir is a protease inhibitor and blocks this step.",
+      "caption": "Antiretroviral therapy (ART) is typically used for the treatment of HIV. The targets of drug classes currently in use are shown here. (credit: modification of work by Thomas Splettstoesser)"
+    },
+    "OSC_Microbio_14_03_Acyclovir": {
+      "source": "media/OSC_Microbio_14_03_Acyclovir.jpg",
+      "sourceSha256": "759b1dc91535f8d30e87f3fdbcfa73455a03fc617eabf9beefe51564800e058e",
+      "module": "m58861",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1445,
+      "variants": [
+        {
+          "width": 800,
+          "height": 889,
+          "file": "OSC_Microbio_14_03_Acyclovir-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1445,
+          "file": "OSC_Microbio_14_03_Acyclovir-1300.webp"
+        }
+      ],
+      "alt": "Acyclovir looks similar to guanosine except that the sugar is replaced with a short carbon chain. Step 1: Viral enzyme adds a phosphate group to acyclovir. Step 2: Human enzymes add two more phosphate groups, producing acyclovir triphosphate. Step 3: During viral DNA replication, acyclovir is added to the growing strand rather than GTP. This halts further elongation of the DNA molecule and stops viral replication.",
+      "caption": "Acyclovir is a structural analog of guanosine. It is specifically activated by the viral enzyme thymidine kinase and then preferentially binds to viral DNA polymerase, leading to chain termination during DNA replication."
+    },
+    "OSC_Microbio_14_03_Pjiroveci": {
+      "source": "media/OSC_Microbio_14_03_Pjiroveci.jpg",
+      "sourceSha256": "0ae06b4e415c1bc501c716c148a93ec9741ea36569ed9216e57f94d5551d1313",
+      "module": "m58861",
+      "kind": "photo",
+      "width": 900,
+      "height": 468,
+      "variants": [
+        {
+          "width": 800,
+          "height": 416,
+          "file": "OSC_Microbio_14_03_Pjiroveci-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 468,
+          "file": "OSC_Microbio_14_03_Pjiroveci-900.webp"
+        }
+      ],
+      "alt": "Micrograph showing green stained lug tissue and brown celled labeled P. jiroveci.",
+      "caption": "Microscopic examination of an induced sputum sample or bronchoaveolar lavage sample typically reveals the organism, as shown here. (credit: modification of work by the Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_14_03_antifungal": {
+      "source": "media/OSC_Microbio_14_03_antifungal.jpg",
+      "sourceSha256": "8c227d908f0b2a0b542fefab459b00d1d8df23fa014e4ebb051cf48188c6344e",
+      "module": "m58861",
+      "kind": "photo",
+      "width": 1296,
+      "height": 717,
+      "variants": [
+        {
+          "width": 800,
+          "height": 442,
+          "file": "OSC_Microbio_14_03_antifungal-800.webp"
+        },
+        {
+          "width": 1296,
+          "height": 717,
+          "file": "OSC_Microbio_14_03_antifungal-1296.webp"
+        }
+      ],
+      "alt": "Targets of antifungal drugs: Inhibits mitochondria function: naphthoquinone. Disrupt membrane: polyenes. Inhibit ergosterol synthesis: imidazole and allylamine. Inhibit synthesis of beta (1-3)glucans: echinocandins. Inhibit chitin synthesis: polyoxins and nikkomycins.",
+      "caption": "Antifungal drugs target several different cell structures. (credit right: modification of work by “Maya and Rike”/Wikimedia Commons)"
+    },
+    "OSC_Microbio_14_03_nucleoside_img": {
+      "source": "media/OSC_Microbio_14_03_nucleoside_img.jpg",
+      "sourceSha256": "34c01e1c8bbe10a4a0e77f57d94871b4f607d39a6ebae91a000f24d78e4b5358",
+      "module": "m58861",
+      "kind": "photo",
+      "width": 1013,
+      "height": 941,
+      "variants": [
+        {
+          "width": 800,
+          "height": 743,
+          "file": "OSC_Microbio_14_03_nucleoside_img-800.webp"
+        },
+        {
+          "width": 1013,
+          "height": 941,
+          "file": "OSC_Microbio_14_03_nucleoside_img-1013.webp"
+        }
+      ],
+      "alt": "a) Two carbon nitrogen rings with a sugar attached. B) 4 carbon rings attached to a central carbon. C) Three carbon rings attached along their ends with a long carbon chain off the central ring. D) A long carbon chain.",
+      "caption": ""
+    },
+    "OSC_Microbio_14_03_sterols": {
+      "source": "media/OSC_Microbio_14_03_sterols.jpg",
+      "sourceSha256": "f94c6394c6ec1e88457360f8776d81a738b40336e673dd6310acd345fe00403f",
+      "module": "m58861",
+      "kind": "photo",
+      "width": 1299,
+      "height": 363,
+      "variants": [
+        {
+          "width": 800,
+          "height": 223,
+          "file": "OSC_Microbio_14_03_sterols-800.webp"
+        },
+        {
+          "width": 1299,
+          "height": 363,
+          "file": "OSC_Microbio_14_03_sterols-1299.webp"
+        }
+      ],
+      "alt": "Cholesterol and ergosterol both have 4 fused carbon rigns with a chain of carbons off the top ring. The differences are the placements of a few double bonds.",
+      "caption": "The predominant sterol found in human cells is cholesterol, whereas the predominant sterol found in fungi is ergosterol, making ergosterol a good target for antifungal drug development."
+    },
+    "OSC_Microbio_14_04_PlasConcen": {
+      "source": "media/OSC_Microbio_14_04_PlasConcen.jpg",
+      "sourceSha256": "4a53717df77e2d0e9392114210a62bc8b05b63d76deaceb1aa981c2f92bcd095",
+      "module": "m58859",
+      "kind": "photo",
+      "width": 636,
+      "height": 535,
+      "variants": [
+        {
+          "width": 636,
+          "height": 535,
+          "file": "OSC_Microbio_14_04_PlasConcen-636.webp"
+        }
+      ],
+      "alt": "Graph with time on the X axis and Plasma Concentration of Drug on the Y axis. IV route increases plasma concentration very quickly and then tapes off. Intramuscular rout and oral route increase concentrations more slowly with the intramuscular route being a bit faster than oral but also dropping off more quickly.",
+      "caption": "On this graph, t 0 represents the time at which a drug dose is administered. The curves illustrate how plasma concentration of the drug changes over specific intervals of time (t 1 through t 4 ). As the graph shows, when a drug is administered intravenously, the concentration peaks very quickly and then gradually decreases. When drugs are administered orally or intramuscularly, it takes longer for the concentration to reach its peak."
+    },
+    "OSC_Microbio_14_04_Pressure": {
+      "source": "media/OSC_Microbio_14_04_Pressure.jpg",
+      "sourceSha256": "b37af61a24ce525d9f7a1b2b1241b1c7ea6ebe82ee97e0003d717038fe18e1b4",
+      "module": "m58859",
+      "kind": "photo",
+      "width": 1099,
+      "height": 747,
+      "variants": [
+        {
+          "width": 800,
+          "height": 543,
+          "file": "OSC_Microbio_14_04_Pressure-800.webp"
+        },
+        {
+          "width": 1099,
+          "height": 747,
+          "file": "OSC_Microbio_14_04_Pressure-1099.webp"
+        }
+      ],
+      "alt": "Three graphs showing changes in perception from 2000 to 2013. If my doctor does not prescribe an antibiotic when I think one is needed, I will take my child to another doctor. Medicaid insured insured (2000, 10%) and (2013, 25%); commercially insured (2000, 8%) and (2013, 10%). If I expect an antibiotic, I am less satisfied if I don’t receive it: Medicaid insured (2000, 10%) and (2013, 24%); commercially insured (2000, 14%) and (2013, 15%). If would rather give my child an antibiotic that may not be needed than wait to see if she gets better without it.. Medicaid insured (2000, 9%) and (2013, 19%). Commercially insured (2000, 8%) and (2013, 6%)",
+      "caption": "This graph indicates trends in parental expectations related to prescription of antibiotics based on a recent study. Vaz, L.E., et al. “Prevalence of Parental Misconceptions About Antibiotic Use.” Pediatrics 136 no.2 (August 2015). DOI: 10.1542/peds.2015-0883. Among parents of Medicaid-insured children, there was a clear upward trend in parental expectations for prescription antibiotics. Expectations were relatively stable (and lesser) among parents whose children were commercially insured, suggesting that these parents were somewhat better informed than those with Medicaid-insured children."
+    },
+    "OSC_Microbio_14_04_Supinfect": {
+      "source": "media/OSC_Microbio_14_04_Supinfect.jpg",
+      "sourceSha256": "b4800d1d5f45d1d7268691c62cea64dac2ceb29ce51a416dc1cc75fdcc56ed45",
+      "module": "m58859",
+      "kind": "photo",
+      "width": 1017,
+      "height": 318,
+      "variants": [
+        {
+          "width": 800,
+          "height": 250,
+          "file": "OSC_Microbio_14_04_Supinfect-800.webp"
+        },
+        {
+          "width": 1017,
+          "height": 318,
+          "file": "OSC_Microbio_14_04_Supinfect-1017.webp"
+        }
+      ],
+      "alt": "Diagram of process of superinfection. 1: Normal microbiota keeps opportunistic pathogens in check. Image shows many different bacteria, only 1 of which is labeled pathogen. 2: Broad-spectrum antibiotics kill nonresistant cells. Image shows all cells but pathogen being killed. 3: Drug-resistant pathogens proliferate and can cause a superinfection. Image shows many of the pathogen.",
+      "caption": "Broad-spectrum antimicrobial use may lead to the development of a superinfection. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_14_05_Etest": {
+      "source": "media/OSC_Microbio_14_05_Etest.jpg",
+      "sourceSha256": "b619b75f2904ae9c685371d171dae82776fb501e0161690b770b825739d476cc",
+      "module": "m58864",
+      "kind": "photo",
+      "width": 900,
+      "height": 320,
+      "variants": [
+        {
+          "width": 800,
+          "height": 284,
+          "file": "OSC_Microbio_14_05_Etest-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 320,
+          "file": "OSC_Microbio_14_05_Etest-900.webp"
+        }
+      ],
+      "alt": "A strip with numbers on a lawn of bacteria. The top of the strip has the highest concentration; the bottom has the lowest. Bacteria are able to grow at anything below 1.5 micrograms per mL",
+      "caption": "The Etest can be used to determine the MIC of an antibiotic. In this Etest, vancomycin is shown to have a MIC of 2 μg/mL against Staphylococcus aureus ."
+    },
+    "OSC_Microbio_14_05_MIC": {
+      "source": "media/OSC_Microbio_14_05_MIC.jpg",
+      "sourceSha256": "94d077d2e9d31b9d5975ac23f77aa32f207d960550654589e3026787a5a803a4",
+      "module": "m58864",
+      "kind": "photo",
+      "width": 700,
+      "height": 523,
+      "variants": [
+        {
+          "width": 700,
+          "height": 523,
+          "file": "OSC_Microbio_14_05_MIC-700.webp"
+        }
+      ],
+      "alt": "A series of tubes. The tube with 2 micrograms/ml has growth, as does the tube with 4 micrograms/ml. The tubes with 8, 16, and 32 do not have growth",
+      "caption": "In a dilution test, the lowest dilution that inhibits turbidity (cloudiness) is the MIC. In this example, the MIC is 8 μg/mL. Broth from samples without turbidity can be inoculated onto plates lacking the antimicrobial drug. The lowest dilution that kills ≥99.9% of the starting inoculum is observed on the plates is the MBC. (credit: modification of work by Suzanne Wakim)"
+    },
+    "OSC_Microbio_14_05_microdilut": {
+      "source": "media/OSC_Microbio_14_05_microdilut.jpg",
+      "sourceSha256": "e0c3278e160b81fe05fe5453d6001bd05ee504ba84fd5690f56fe5b6762949f7",
+      "module": "m58864",
+      "kind": "photo",
+      "width": 1300,
+      "height": 805,
+      "variants": [
+        {
+          "width": 800,
+          "height": 495,
+          "file": "OSC_Microbio_14_05_microdilut-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 805,
+          "file": "OSC_Microbio_14_05_microdilut-1300.webp"
+        }
+      ],
+      "alt": "A 64 well plate; 8 rows and 12 columns. The concentration increases from left to fight. Each row has a different antibiotic. The MIC is determined by the lowest concentration with no growth as seen by a clear rather than dark look to the well. For clindamycin the MIC is above the highest concentration of 32 micrograms per mL. For Peniciliin the MIC is 0.06 and for Erythromycin it’s 8 micrograms per mL. The bottom row shows positive and negative controls.",
+      "caption": "A microdilution tray can also be used to determine MICs of multiple antimicrobial drugs in a single assay. In this example, the drug concentrations increase from left to right and the rows with clindamycin, penicillin, and erythromycin have been indicated to the left of the plate. For penicillin and erythromycin, the lowest concentrations that inhibited visible growth are indicated by red circles and were 0.06 μg/mL for penicillin and 8 μg/mL for erythromycin. For clindamycin, visible bacterial growth was observed at every concentration up to 32 μg/mL and the MIC is interpreted as >32 μg/mL. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_14_06_Resistance": {
+      "source": "media/OSC_Microbio_14_06_Resistance.jpg",
+      "sourceSha256": "a5fdee0052847fa1626b057833a3d5529533f335ba4b7ae965afe6e633168797",
+      "module": "m58862",
+      "kind": "photo",
+      "width": 1249,
+      "height": 942,
+      "variants": [
+        {
+          "width": 800,
+          "height": 603,
+          "file": "OSC_Microbio_14_06_Resistance-800.webp"
+        },
+        {
+          "width": 1249,
+          "height": 942,
+          "file": "OSC_Microbio_14_06_Resistance-1249.webp"
+        }
+      ],
+      "alt": "Mechanisms of resistance. Efflux pump (pumping drugs out of the cell): fluoroquinolones, aminoglycosides, tetracyclines, Beta-lactams, macrolides. Blocked penetration (not letting drugs into the cell): beta-lactams, tetracyclines, fluoroquinolones. Target modification (changing the target of the drug such as ribosomes or DNA): fluoroquinolones, rfamycins, vancomycin, beta-lactams, macrolides, aminoglycosides. Inactivating enzyme (enzyme that breaks down the drug): beta-lactams, aminoglycosides, macrolides, rifamycins.",
+      "caption": "There are multiple strategies that microbes use to develop resistance to antimicrobial drugs. (Not shown: target overproduction, target mimicry, and enzymatic bypass). (credit: modification of work by Gerard D Wright)"
+    },
+    "OSC_Microbio_15_00_Sneeze": {
+      "source": "media/OSC_Microbio_15_00_Sneeze.jpg",
+      "sourceSha256": "316bf2a117ed2b8f82e68c6bec9213ef1a83b9b313b1c91a7574e09e4f889ab6",
+      "module": "m58865",
+      "kind": "photo",
+      "width": 1300,
+      "height": 510,
+      "variants": [
+        {
+          "width": 800,
+          "height": 314,
+          "file": "OSC_Microbio_15_00_Sneeze-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 510,
+          "file": "OSC_Microbio_15_00_Sneeze-1300.webp"
+        }
+      ],
+      "alt": "A photo of a medical professional looking in a patient’s mouth. A photo of a person sneezing.",
+      "caption": "Although medical professionals rely heavily on signs and symptoms to diagnose disease and prescribe treatment, many diseases can produce similar signs and symptoms. (credit left: modification of work by U.S. Navy)"
+    },
+    "OSC_Microbio_15_01_Blood": {
+      "source": "media/OSC_Microbio_15_01_Blood.jpg",
+      "sourceSha256": "b48743dca52e00c04def15379fd24f435bdd4846d790dd127646a02c28c2c3d6",
+      "module": "m58866",
+      "kind": "photo",
+      "width": 1200,
+      "height": 504,
+      "variants": [
+        {
+          "width": 800,
+          "height": 336,
+          "file": "OSC_Microbio_15_01_Blood-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 504,
+          "file": "OSC_Microbio_15_01_Blood-1200.webp"
+        }
+      ],
+      "alt": "a) A micrograph showing round red blood cells (erythrocytes) and a darker oval cell (Plasmodium falciparum).b) A micrograph showing round red blood cells and a “C” shaped red blood cell labeled “sickle cell”.",
+      "caption": "Blood smears showing two diseases of the blood. (a) Malaria is an infectious, zoonotic disease caused by the protozoan pathogen Plasmodium falciparum (shown here) and several other species of the genus Plasmodium . It is transmitted by mosquitoes to humans. (b) Sickle cell disease is a noninfectious genetic disorder that results in abnormally shaped red blood cells, which can stick together and obstruct the flow of blood through the circulatory system. It is not caused by a pathogen, but rather a genetic mutation. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by Ed Uthman)"
+    },
+    "OSC_Microbio_15_01_Koch": {
+      "source": "media/OSC_Microbio_15_01_Koch.jpg",
+      "sourceSha256": "3f30a92fa586f7315802b2d4f3b26a72f34bd2d0ce55c4bdea0982c6aaf0087c",
+      "module": "m58867",
+      "kind": "photo",
+      "width": 1300,
+      "height": 938,
+      "variants": [
+        {
+          "width": 800,
+          "height": 577,
+          "file": "OSC_Microbio_15_01_Koch-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 938,
+          "file": "OSC_Microbio_15_01_Koch-1300.webp"
+        }
+      ],
+      "alt": "A diagram Koch’s postulates. 1 – The suspected causative agent must be absent from all healthy organisms but present in all diseased organisms. This is demonstrated by looking at slides under a microscope from a sick mouse and seeing the suspected agent. A slide from a healthy mouse only shows healthy red blood cells. 2 – The causative agent must be isolated from the diseased organism and grown in pure culture. This is demonstrated by showing grown on a petri plate from the sick mouse and no growth from the healthy mouse. 3 – The cultured agend must cause the same disease when inoculated into a healthy, susceptible organism. This is demonstrated by injecting a healthy mouse with the cultured agent and having that mouse get sick. 4 – The same causative agent must then be reisolated from the inoculated diseased organism. This is demonstrated by a petri plate from this last mouse showing growth of the causative agent.",
+      "caption": "The steps for confirming that a pathogen is the cause of a particular disease using Koch’s postulates."
+    },
+    "OSC_Microbio_15_01_Stages": {
+      "source": "media/OSC_Microbio_15_01_Stages.jpg",
+      "sourceSha256": "c3bf8a5ef0cdc1d8beeae43f4b7de1f72650e19280d6f21fc444d7dc7785392e",
+      "module": "m58866",
+      "kind": "photo",
+      "width": 1100,
+      "height": 763,
+      "variants": [
+        {
+          "width": 800,
+          "height": 555,
+          "file": "OSC_Microbio_15_01_Stages-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 763,
+          "file": "OSC_Microbio_15_01_Stages-1100.webp"
+        }
+      ],
+      "alt": "A graph titled “Periods of Disease” with time on the X axis and two separate Y-axes: number of pathogen particles (red) and severity of symptoms (blue). Both of these lines mirror each other and have a general bell shape. The first stage is incubation period when there are few pathogens and symptoms are mild. The next stage is prodromal period when the number of pathogens is increasing and symptoms are becoming more severe. The next stage is period of illness where numbers of pathogens and symptoms both continue to increase. The next stage is period of decline in infection where the number of pathogens is decreasing and symptoms are becoming less severe. The final stage is period of convalescence when symptoms go away and the number of pathogens decrease. Note that there are still pathogens present even after there are no more symptoms of the disease.",
+      "caption": "The progression of an infectious disease can be divided into five periods, which are related to the number of pathogen particles (red) and the severity of signs and symptoms (blue)."
+    },
+    "OSC_Microbio_15_02_Invasion": {
+      "source": "media/OSC_Microbio_15_02_Invasion.jpg",
+      "sourceSha256": "a815be91398cb258b9babf95ff8b360543feae975b7f7aa21c80ed454df203a3",
+      "module": "m58867",
+      "kind": "photo",
+      "width": 1100,
+      "height": 543,
+      "variants": [
+        {
+          "width": 800,
+          "height": 395,
+          "file": "OSC_Microbio_15_02_Invasion-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 543,
+          "file": "OSC_Microbio_15_02_Invasion-1100.webp"
+        }
+      ],
+      "alt": "Diagram of H. pylori invading the lining of the stomach. In the first image the H. pylori (an oval cell with 3 flagella is not able to penetrate the gastric mucin gel on top of the epithelial cells. Contact with stomach acid keeps the mucin lining the epithelial cell layer in a spongy gel-like state. This consistency is impermeable to the bacterium H. pylori. The second image shows the bacterium entering the lining. The bacterium releases urease, which neutralizes the stomach acid. This causes the mucin to liquefy and the bacterium can swim right through it.",
+      "caption": "H. pylori is able to invade the lining of the stomach by producing virulence factors that enable it pass through the mucin layer covering epithelial cells. (credit: modification of work by Zina Deretsky, National Science Foundation)"
+    },
+    "OSC_Microbio_15_02_PopCurve": {
+      "source": "media/OSC_Microbio_15_02_PopCurve.jpg",
+      "sourceSha256": "274b4717402a02c038774677e12b117e6663f7fbe8ff46ae770b77b20eedbf66",
+      "module": "m58867",
+      "kind": "photo",
+      "width": 700,
+      "height": 660,
+      "variants": [
+        {
+          "width": 700,
+          "height": 660,
+          "file": "OSC_Microbio_15_02_PopCurve-700.webp"
+        }
+      ],
+      "alt": "A graph with “number of pathogenic agents (cells or virions)” on the X axis and Percent mortality in experimental group on the Y axis. The graph begins at 0,0 and increases until there is nearly 100% death at 10 to the 5. The line then plateaus at 100%. A 50% death rate occurs at 10 to the 4. This is the LD 50.",
+      "caption": "A graph like this is used to determine LD 50 by plotting pathogen concentration against the percent of infected test animals that have died. In this example, the LD 50 = 10 4 pathogenic particles."
+    },
+    "OSC_Microbio_15_02_Portal": {
+      "source": "media/OSC_Microbio_15_02_Portal.jpg",
+      "sourceSha256": "b19dac62f47d119998b196a96f5c48f7c7d043d4808f46e92fd1525a4d49af5c",
+      "module": "m58867",
+      "kind": "photo",
+      "width": 1245,
+      "height": 1029,
+      "variants": [
+        {
+          "width": 800,
+          "height": 661,
+          "file": "OSC_Microbio_15_02_Portal-800.webp"
+        },
+        {
+          "width": 1245,
+          "height": 1029,
+          "file": "OSC_Microbio_15_02_Portal-1245.webp"
+        }
+      ],
+      "alt": "Portals of entry: eye (conjunctiva), nose, mouth, ear, needle, broken skin, insect bite, urethra, vagina, anus, placenta (portal of entry for fetus).",
+      "caption": "Shown are different portals of entry where pathogens can gain access into the body. With the exception of the placenta, which is only present during pregnancy, many of these locations are directly exposed to external environments."
+    },
+    "OSC_Microbio_15_02_PortalExit": {
+      "source": "media/OSC_Microbio_15_02_PortalExit.jpg",
+      "sourceSha256": "9d918e747c2c9485e80b4e517801499d80a564ddd30f79bd9fa19e78b5367bac",
+      "module": "m58867",
+      "kind": "photo",
+      "width": 1295,
+      "height": 1009,
+      "variants": [
+        {
+          "width": 800,
+          "height": 623,
+          "file": "OSC_Microbio_15_02_PortalExit-800.webp"
+        },
+        {
+          "width": 1295,
+          "height": 1009,
+          "file": "OSC_Microbio_15_02_PortalExit-1295.webp"
+        }
+      ],
+      "alt": "Portals of exit: eye (tears), needle, mammary glands (milk, secretions), placenta (transmission to fetus), vagina (secretions, blood), urethra (urine), broken skin, broken skin (blood), skin (flakes), nose (secretions), mouth (saliva, sputum), ear (earwax), urethra (urine, semen, secretions), anus (feces).",
+      "caption": "Pathogens leave the body of an infected host through various portals of exit to infect new hosts."
+    },
+    "OSC_Microbio_15_02_acup_img": {
+      "source": "media/OSC_Microbio_15_02_acup_img.jpg",
+      "sourceSha256": "0614af00e90053c627ad667893ea5c897a6052fce00b354e4a6242b1799e65f5",
+      "module": "m58867",
+      "kind": "photo",
+      "width": 500,
+      "height": 525,
+      "variants": [
+        {
+          "width": 500,
+          "height": 525,
+          "file": "OSC_Microbio_15_02_acup_img-500.webp"
+        }
+      ],
+      "alt": "Picture of a person putting a thin needle into another person’s arm.",
+      "caption": ""
+    },
+    "OSC_Microbio_15_02_adhesion": {
+      "source": "media/OSC_Microbio_15_02_adhesion.jpg",
+      "sourceSha256": "0bb8e11a3e2cd0e3c559de093558629aa5b83e35b70eac5377b268a3041fd2d2",
+      "module": "m58867",
+      "kind": "photo",
+      "width": 700,
+      "height": 476,
+      "variants": [
+        {
+          "width": 700,
+          "height": 476,
+          "file": "OSC_Microbio_15_02_adhesion-700.webp"
+        }
+      ],
+      "alt": "Micrograph of round cells attached to a surface by long strands.",
+      "caption": "Glycocalyx produced by bacteria in a biofilm allows the cells to adhere to host tissues and to medical devices such as the catheter surface shown here. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_15_03_ABToxin": {
+      "source": "media/OSC_Microbio_15_03_ABToxin.jpg",
+      "sourceSha256": "a6d30a9f4cd8219adb4da553c32a812ad40cdd945b49e248bbf332f388e842ac",
+      "module": "m58868",
+      "kind": "photo",
+      "width": 1300,
+      "height": 414,
+      "variants": [
+        {
+          "width": 800,
+          "height": 254,
+          "file": "OSC_Microbio_15_03_ABToxin-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 414,
+          "file": "OSC_Microbio_15_03_ABToxin-1300.webp"
+        }
+      ],
+      "alt": "a) Diagram of how the A-B toxin works. The B subunit binds to a cellular receptor on the cell membrane. The A subunit is bound to the B subunit at this point. The cell engulfs the toxins into a vacuole. Inside the vacuole, which is acidic, the a subunit dissociates and escapes into the cytoplasm",
+      "caption": "(a) In A-B toxins, the B component binds to the host cell through its interaction with specific cell surface receptors. (b) The toxin is brought in through endocytosis. (c) Once inside the vacuole, the A component (active component) separates from the B component and the A component gains access to the cytoplasm. (credit: modification of work by “Biology Discussion Forum”/YouTube)"
+    },
+    "OSC_Microbio_15_03_CollClost": {
+      "source": "media/OSC_Microbio_15_03_CollClost.jpg",
+      "sourceSha256": "c8783c0a153f7dd9fa43540731a11f80330c9859b1b090c7c8158bc546a7caee",
+      "module": "m58868",
+      "kind": "photo",
+      "width": 675,
+      "height": 408,
+      "variants": [
+        {
+          "width": 675,
+          "height": 408,
+          "file": "OSC_Microbio_15_03_CollClost-675.webp"
+        }
+      ],
+      "alt": "A diagram of a tube labeled lumen of blood vessel lined by cells labeled endothelial cells. Outside he cells is dense irregular connective tissue. Collagenase is shown as small dots that break up the connections between the cells. A micrograph of the dense connective tissue shows many red lines making a meshwork.",
+      "caption": "The illustration depicts a blood vessel with a single layer of endothelial cells surrounding the lumen and dense connective tissue (shown in red) surrounding the endothelial cell layer. Collagenase produced by C. perfringens degrades the collagen between the endothelial cells, allowing the bacteria to enter the bloodstream. (credit illustration: modification of work by Bruce Blaus; credit micrograph: Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "OSC_Microbio_15_03_Diphtheria": {
+      "source": "media/OSC_Microbio_15_03_Diphtheria.jpg",
+      "sourceSha256": "d0ef49bc2880ee342bbaaf400de36fda3f112ae9d5cbe72bce560433160f758f",
+      "module": "m58868",
+      "kind": "photo",
+      "width": 750,
+      "height": 606,
+      "variants": [
+        {
+          "width": 750,
+          "height": 606,
+          "file": "OSC_Microbio_15_03_Diphtheria-750.webp"
+        }
+      ],
+      "alt": "A diagram of the mechanism of diphtheria toxin. On the outside is a membrane with the B subunit attached. Inside is the A subunit binding with NAD. This block EF-2 by binding ADP-ribose. The diagram also shows mRNA bound to a ribosome and protein being made. The A subunit causes elongation of the protein to stop.",
+      "caption": "The mechanism of the diphtheria toxin inhibiting protein synthesis. The A subunit inactivates elongation factor 2 by transferring an ADP-ribose. This stops protein elongation, inhibiting protein synthesis and killing the cell."
+    },
+    "OSC_Microbio_15_03_Edema": {
+      "source": "media/OSC_Microbio_15_03_Edema.jpg",
+      "sourceSha256": "b7986f22583721f21b209d6b71dd2bc5efd165258fb128fb0df1aa952dac17e9",
+      "module": "m58868",
+      "kind": "photo",
+      "width": 700,
+      "height": 546,
+      "variants": [
+        {
+          "width": 700,
+          "height": 546,
+          "file": "OSC_Microbio_15_03_Edema-700.webp"
+        }
+      ],
+      "alt": "A picture of a person with a swollen right hand.",
+      "caption": "This patient has edema in the tissue of the right hand. Such swelling can occur when bacteria cause the release of pro-inflammatory molecules from immune cells and these molecules cause an increased permeability of blood vessels, allowing fluid to escape the bloodstream and enter tissue."
+    },
+    "OSC_Microbio_15_03_Flu": {
+      "source": "media/OSC_Microbio_15_03_Flu.jpg",
+      "sourceSha256": "07974527caa85fd8fa6f7c7b40d572db7c8b1b80bb00074b4736aff90741d5c7",
+      "module": "m58868",
+      "kind": "photo",
+      "width": 1300,
+      "height": 705,
+      "variants": [
+        {
+          "width": 800,
+          "height": 434,
+          "file": "OSC_Microbio_15_03_Flu-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 705,
+          "file": "OSC_Microbio_15_03_Flu-1300.webp"
+        }
+      ],
+      "alt": "a) antigenic drift results from genetic mutations. Virus A is shown with different shaped pieces on the outside labeled neuraminidase and hemagglutinin. The mutated hemagglutinin has a different shape. B) Antigenic shift results from genetic reassortment. Virus A has green hemagglutinin and orange neuraminidase on the outside. Virus B has purple neuraminidase and blue hemagglutinin. These both enter the same host cell. Virus C is then produced which has the neuraminidase from virus A and the hemagglutinin from virus B.",
+      "caption": "Antigenic drift and antigenic shift in influenza viruses. (a) In antigenic drift, mutations in the genes for the surface proteins neuraminidase and/or hemagglutinin result in small antigenic changes over time. (b) In antigenic shift, simultaneous infection of a cell with two different influenza viruses results in mixing of the genes. The resultant virus possesses a mixture of the proteins of the original viruses. Influenza pandemics can often be traced to antigenic shifts."
+    },
+    "OSC_Microbio_15_03_LPS": {
+      "source": "media/OSC_Microbio_15_03_LPS.jpg",
+      "sourceSha256": "a75fc5750436384c47bf30d747180831d02a38b1fb25e883640724bff8875a74",
+      "module": "m58868",
+      "kind": "photo",
+      "width": 1098,
+      "height": 196,
+      "variants": [
+        {
+          "width": 800,
+          "height": 143,
+          "file": "OSC_Microbio_15_03_LPS-800.webp"
+        },
+        {
+          "width": 1098,
+          "height": 196,
+          "file": "OSC_Microbio_15_03_LPS-1098.webp"
+        }
+      ],
+      "alt": "A long chain of O antigens is drawn as various geometric shapes in a long row. Next is a core; a shorter region of similar shapes. Next is 2 circles labeled lipid A. Each of these has 2 or 3 long wavy lines projecting from them.",
+      "caption": "Lipopolysaccharide is composed of lipid A, a core glycolipid, and an O-specific polysaccharide side chain. Lipid A is the toxic component that promotes inflammation and fever."
+    },
+    "OSC_Microbio_15_03_Neurotoxin": {
+      "source": "media/OSC_Microbio_15_03_Neurotoxin.jpg",
+      "sourceSha256": "2e1b20a602b7be8383f43e9731dabcd9a92ba26413abe87a346b5ca5ef11518a",
+      "module": "m58868",
+      "kind": "photo",
+      "width": 1300,
+      "height": 963,
+      "variants": [
+        {
+          "width": 800,
+          "height": 592,
+          "file": "OSC_Microbio_15_03_Neurotoxin-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 963,
+          "file": "OSC_Microbio_15_03_Neurotoxin-1300.webp"
+        }
+      ],
+      "alt": "Botulinum toxin causes flaccid paralysis and stops muscle contraction. The diagram shows that the normal mechanism has acetylcholine released at the axon terminal. The acetylcholine then binds to receptors on the membrane of a muscle cell. The abnormal mechanism – botulinum toxin blocks the release of acetylcholine stopping muscle contraction. Tetanus toxin causes spastic paralysis; uncontrollable muscle contraction. The normal mechanism shows glycine and GABA released from one axon terminal and binding to receptors on another axon terminal. This causes acetylcholine to remain in the vesicles and not bind to the receptors on the muscle cell. In the abnormal mechanism tetanus toxin prevents the release of glycine and GABA. Therefore acetylcholine is released and binds to receptors on the muscle. This prevents the relaxation of muscles.",
+      "caption": "Mechanisms of botulinum and tetanus toxins. (credit micrographs: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_15_03_Phago": {
+      "source": "media/OSC_Microbio_15_03_Phago.jpg",
+      "sourceSha256": "36825a2506bc74a58e6fa40c883b2de33d2b2a62fd6cabee838291411c4645d3",
+      "module": "m58868",
+      "kind": "photo",
+      "width": 1078,
+      "height": 370,
+      "variants": [
+        {
+          "width": 800,
+          "height": 274,
+          "file": "OSC_Microbio_15_03_Phago-800.webp"
+        },
+        {
+          "width": 1078,
+          "height": 370,
+          "file": "OSC_Microbio_15_03_Phago-1078.webp"
+        }
+      ],
+      "alt": "a) a micrograph showing nonencapsulated cells as blue ovals on a light background. Encapsulated cells have a thick clear ring around the blue cells. B) Antibodies on phagocytic cells bind to antigens on the bacterial cell. Capsules on the bacterial cell cover the antigen and prevent the antibody from binding to the antigen. C) A bacterial cell is releasing small donts labeled proteases that are breaking down an antibody.",
+      "caption": "(a) A micrograph of capsules around bacterial cells. (b) Antibodies normally function by binding to antigens, molecules on the surface of pathogenic bacteria. Phagocytes then bind to the antibody, initiating phagocytosis. (c) Some bacteria also produce proteases, virulence factors that break down host antibodies to evade phagocytosis. (credit a: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_15_03_hyaluronan": {
+      "source": "media/OSC_Microbio_15_03_hyaluronan.jpg",
+      "sourceSha256": "b042aa2a5269ef3a5258dd58ab441ef0bc1397836202148c6399ea9693a56450",
+      "module": "m58868",
+      "kind": "photo",
+      "width": 1100,
+      "height": 432,
+      "variants": [
+        {
+          "width": 800,
+          "height": 314,
+          "file": "OSC_Microbio_15_03_hyaluronan-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 432,
+          "file": "OSC_Microbio_15_03_hyaluronan-1100.webp"
+        }
+      ],
+      "alt": "a) A diagram of epithelial cells that are connected along their membranes. Hyaluronidases enter at these connection points. B) after the hyaluronidases break down the connections between the cells, bacteria can flow through the openings.",
+      "caption": "(a) Hyaluronan is a polymer found in the layers of epidermis that connect adjacent cells. (b) Hyaluronidase produced by bacteria degrades this adhesive polymer in the extracellular matrix, allowing passage between cells that would otherwise be blocked."
+    },
+    "OSC_Microbio_16_00_Splash": {
+      "source": "media/OSC_Microbio_16_00_Splash.jpg",
+      "sourceSha256": "d9422019544521e2da92e221574d1536b3e3a1c699e472ab9886d3b8c2210f3c",
+      "module": "m58870",
+      "kind": "photo",
+      "width": 1300,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 369,
+          "file": "OSC_Microbio_16_00_Splash-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 600,
+          "file": "OSC_Microbio_16_00_Splash-1300.webp"
+        }
+      ],
+      "alt": "Red bag with a biohazard sticker on it.",
+      "caption": "Signs like this may seem self-explanatory today, but a few short centuries ago, people lacked a basic understanding of how diseases spread. Microbiology has greatly contributed to the field of epidemiology, which focuses on containing the spread of disease. (credit: modification of work by Tony Webster)"
+    },
+    "OSC_Microbio_16_01_Flu": {
+      "source": "media/OSC_Microbio_16_01_Flu.jpg",
+      "sourceSha256": "1ac7772e8295ea2b17650db564a929e429bb80625c077311b3b2f9fe0d4e77ae",
+      "module": "m58871",
+      "kind": "photo",
+      "width": 1043,
+      "height": 667,
+      "variants": [
+        {
+          "width": 800,
+          "height": 511,
+          "file": "OSC_Microbio_16_01_Flu-800.webp"
+        },
+        {
+          "width": 1043,
+          "height": 667,
+          "file": "OSC_Microbio_16_01_Flu-1043.webp"
+        }
+      ],
+      "alt": "A graph of the percentage of emergency department visits for influenza-like illness. The X axis is times of the year and the Y axis is percent. The national baseline is near 2.5%. All yeas have a small peak in January and a larger peak February to April. 2007-2008 had the largest peak in February to April. 2008 – 2009 had an additional peak from May to September.",
+      "caption": "The 2007–2008 influenza season in the United States saw much higher than normal numbers of visits to emergency departments for influenza-like symptoms as compared to the previous and the following years. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_16_01_Flu2": {
+      "source": "media/OSC_Microbio_16_01_Flu2.jpg",
+      "sourceSha256": "2db59311051caa43468b73bf832f6c1d159eb04175b8b465813b9da95fccf7de",
+      "module": "m58871",
+      "kind": "photo",
+      "width": 1298,
+      "height": 758,
+      "variants": [
+        {
+          "width": 800,
+          "height": 467,
+          "file": "OSC_Microbio_16_01_Flu2-800.webp"
+        },
+        {
+          "width": 1298,
+          "height": 758,
+          "file": "OSC_Microbio_16_01_Flu2-1298.webp"
+        }
+      ],
+      "alt": "A graph of the percentage of all deaths due to influenza an pneumonia. The X axis is years and the Y axis is percent. The seasonal baseline fluctuates to a high in winter. The epidemic threshold is just a half percent higher than the baseline. The actual mortality fluctuates above and below both of these lines.",
+      "caption": "The seasonal epidemic threshold (blue curve) is set by the CDC-based data from the previous five years. When actual mortality rates exceed this threshold, a disease is considered to be epidemic. As this graph shows, pneumonia- and influenza-related mortality saw pronounced epidemics during the winters of 2003–2004, 2005, and 2008. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_16_01_IncPrev": {
+      "source": "media/OSC_Microbio_16_01_IncPrev.jpg",
+      "sourceSha256": "2a07133a4e6b5259438ed5fe82324303b0734da1dd25cb2e72916d6865708b5b",
+      "module": "m58871",
+      "kind": "photo",
+      "width": 903,
+      "height": 548,
+      "variants": [
+        {
+          "width": 800,
+          "height": 485,
+          "file": "OSC_Microbio_16_01_IncPrev-800.webp"
+        },
+        {
+          "width": 903,
+          "height": 548,
+          "file": "OSC_Microbio_16_01_IncPrev-903.webp"
+        }
+      ],
+      "alt": "Graph of HIV prevalence and incidence in the US 1980-2010. The number o people living with HIV/AIDS was near 0 in 1980 and has increased steadily to over 1 million. There as a short plateau from 1990 to 1995. The number of new infections increased to nearly 200,000 in 1985 and dropped until 1990. It remains steady at somewhere near 50,000.",
+      "caption": "This graph compares the incidence of HIV (the number of new cases reported each year) with the prevalence (the total number of cases each year). Prevalence and incidence can also be expressed as a rate or proportion for a given population."
+    },
+    "OSC_Microbio_16_02_Flor": {
+      "source": "media/OSC_Microbio_16_02_Flor.jpg",
+      "sourceSha256": "5bc0e52773d6b26ddf2b68de7d5174ecf2590103fa6f13070aacafedd8d7b77c",
+      "module": "m58872",
+      "kind": "photo",
+      "width": 1100,
+      "height": 783,
+      "variants": [
+        {
+          "width": 800,
+          "height": 569,
+          "file": "OSC_Microbio_16_02_Flor-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 783,
+          "file": "OSC_Microbio_16_02_Flor-1100.webp"
+        }
+      ],
+      "alt": "a) Photo of Florence Nightingale. B) A diagram with a wedge for each moth three different colors show different causes of death.",
+      "caption": "(a) Florence Nightingale reported on the data she collected as a nurse in the Crimean War. (b) Nightingale’s diagram shows the number of fatalities in soldiers by month of the conflict from various causes. The total number dead in a particular month is equal to the area of the wedge for that month. The colored sections of the wedge represent different causes of death: wounds (pink), preventable infectious diseases (gray), and all other causes (brown)."
+    },
+    "OSC_Microbio_16_02_Lister": {
+      "source": "media/OSC_Microbio_16_02_Lister.jpg",
+      "sourceSha256": "16b21904afcf3650551ee517db10f023e8583c550862af81a89921c5f28a01fc",
+      "module": "m58872",
+      "kind": "photo",
+      "width": 500,
+      "height": 452,
+      "variants": [
+        {
+          "width": 500,
+          "height": 452,
+          "file": "OSC_Microbio_16_02_Lister-500.webp"
+        }
+      ],
+      "alt": "Drawing of three people standing over a patient.",
+      "caption": "Joseph Lister initiated the use of a carbolic acid (phenol) during surgeries. This illustration of a surgery shows a pressurized canister of carbolic acid being sprayed over the surgical site."
+    },
+    "OSC_Microbio_16_02_PropComp": {
+      "source": "media/OSC_Microbio_16_02_PropComp.jpg",
+      "sourceSha256": "50e42fb419a93293b13b5c689b0f4c7753ef283133a247b16f3ff59217963d6c",
+      "module": "m58872",
+      "kind": "photo",
+      "width": 1304,
+      "height": 628,
+      "variants": [
+        {
+          "width": 800,
+          "height": 385,
+          "file": "OSC_Microbio_16_02_PropComp-800.webp"
+        },
+        {
+          "width": 1304,
+          "height": 628,
+          "file": "OSC_Microbio_16_02_PropComp-1304.webp"
+        }
+      ],
+      "alt": "a) Graph of Disease incidence with point source spread. X axis is months; Y axis is cases. There is a peak in October which reaches 10 but quickly drops back down to the baseline of 1-2. B) Disease incidence with propagated spread. X axis is months and Y axis is cases. There are three peaks. In November it reaches 10, in early December 20; in late December 24. It slowly drops back down.",
+      "caption": "(a) Outbreaks that can be attributed to point source spread often have a short duration. (b) Outbreaks attributed to propagated spread can have a more extended duration. (credit a, b: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_16_02_Snow": {
+      "source": "media/OSC_Microbio_16_02_Snow.jpg",
+      "sourceSha256": "676f8273598c8492e3a917ba649f6b6a20c54c615f675a7f8f9999e74753281d",
+      "module": "m58872",
+      "kind": "photo",
+      "width": 1100,
+      "height": 663,
+      "variants": [
+        {
+          "width": 800,
+          "height": 482,
+          "file": "OSC_Microbio_16_02_Snow-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 663,
+          "file": "OSC_Microbio_16_02_Snow-1100.webp"
+        }
+      ],
+      "alt": "a) Photo of John Snow. B) Map showing dots for where the diseases occurred.",
+      "caption": "(a) John Snow (1813–1858), British physician and father of epidemiology. (b) Snow’s detailed mapping of cholera incidence led to the discovery of the contaminated water pump on Broad street (red square) responsible for the 1854 cholera epidemic. (credit a: modification of work by “Rsabbatini”/Wikimedia Commons)"
+    },
+    "OSC_Microbio_16_03_Contact": {
+      "source": "media/OSC_Microbio_16_03_Contact.jpg",
+      "sourceSha256": "ab7a5090b032db521e6eaaa40031df1ac7e7e4afa873bb9187aa2942dd5fb4f3",
+      "module": "m58873",
+      "kind": "photo",
+      "width": 900,
+      "height": 350,
+      "variants": [
+        {
+          "width": 800,
+          "height": 311,
+          "file": "OSC_Microbio_16_03_Contact-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 350,
+          "file": "OSC_Microbio_16_03_Contact-900.webp"
+        }
+      ],
+      "alt": "Photo of person kissing a child and one of person playing arm wrestling with a child.",
+      "caption": "Direct contact transmission of pathogens can occur through physical contact. Many pathogens require contact with a mucous membrane to enter the body, but the host may transfer the pathogen from another point of contact (e.g., hand) to a mucous membrane (e.g., mouth or eye). (credit left: modification of work by Lisa Doehnert)"
+    },
+    "OSC_Microbio_16_03_Food": {
+      "source": "media/OSC_Microbio_16_03_Food.jpg",
+      "sourceSha256": "e78e6f9421207d75e22feaf3f90ac7335a469fae96dbe6c74765f32b55059656",
+      "module": "m58873",
+      "kind": "photo",
+      "width": 500,
+      "height": 360,
+      "variants": [
+        {
+          "width": 500,
+          "height": 360,
+          "file": "OSC_Microbio_16_03_Food-500.webp"
+        }
+      ],
+      "alt": "Photo of food at a cafeteria with glass shielding over the food.",
+      "caption": "Food is an important vehicle of transmission for pathogens, especially of the gastrointestinal and upper respiratory systems. Notice the glass shield above the food trays, designed to prevent pathogens ejected in coughs and sneezes from entering the food. (credit: Fort George G. Meade Public Affairs Office)"
+    },
+    "OSC_Microbio_16_03_Indirect": {
+      "source": "media/OSC_Microbio_16_03_Indirect.jpg",
+      "sourceSha256": "58633bb58b06cfb51875b0177c39313f7da2aff4a4931fc0e48e6fda6211fa6c",
+      "module": "m58873",
+      "kind": "photo",
+      "width": 1100,
+      "height": 237,
+      "variants": [
+        {
+          "width": 800,
+          "height": 172,
+          "file": "OSC_Microbio_16_03_Indirect-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 237,
+          "file": "OSC_Microbio_16_03_Indirect-1100.webp"
+        }
+      ],
+      "alt": "Photos of person touching doorknob, towel on a hook, and end of a syringe.",
+      "caption": "Fomites are nonliving objects that facilitate the indirect transmission of pathogens. Contaminated doorknobs, towels, and syringes are all common examples of fomites. (credit left: modification of work by Kate Ter Haar; credit middle: modification of work by Vernon Swanepoel; credit right: modification of work by “Zaldylmg”/Flickr)"
+    },
+    "OSC_Microbio_16_03_Isolate": {
+      "source": "media/OSC_Microbio_16_03_Isolate.jpg",
+      "sourceSha256": "a2104a1ab3acba19fdd84ed9cffcc323748d68ac559016a68d8e1710110d4187",
+      "module": "m58873",
+      "kind": "photo",
+      "width": 1100,
+      "height": 460,
+      "variants": [
+        {
+          "width": 800,
+          "height": 334,
+          "file": "OSC_Microbio_16_03_Isolate-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 460,
+          "file": "OSC_Microbio_16_03_Isolate-1100.webp"
+        }
+      ],
+      "alt": "a) Photo of a plastic tent next to an airplane b) Photo of beds in a room.",
+      "caption": "(a) The Aeromedical Biological Containment System (ABCS) is a module designed by the CDC and Department of Defense specifically for transporting highly contagious patients by air. (b) An isolation ward for Ebola patients in Lagos, Nigeria. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by CDC Global)"
+    },
+    "OSC_Microbio_16_03_Mosquito": {
+      "source": "media/OSC_Microbio_16_03_Mosquito.jpg",
+      "sourceSha256": "289a717580dd2198b2ea38b7dad843c3fbb60a01b52924caea8edcf0c983fd40",
+      "module": "m58873",
+      "kind": "photo",
+      "width": 1200,
+      "height": 608,
+      "variants": [
+        {
+          "width": 800,
+          "height": 405,
+          "file": "OSC_Microbio_16_03_Mosquito-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 608,
+          "file": "OSC_Microbio_16_03_Mosquito-1200.webp"
+        }
+      ],
+      "alt": "Micrograph of brown dots of about 50 nm inside cells; dots re labeled Zika virus. Photo of mosquito labeled Aedes aegypti. Map of where mosquitoes are found in the US. Aedes aegypti and Aedes albopictus are both found in the lower half of the US, reaching up to Connecticut, Missouri, and California. Aedes albopictus reaches further north in the eastern part o the country; through Minnosota. Aedes aegypti reaches a bit further into Utah and is in Puerto Rico.",
+      "caption": "The Zika virus is an enveloped virus transmitted by mosquitoes, especially Aedes aegypti. The range of this mosquito includes much of the United States, from the Southwest and Southeast to as far north as the Mid-Atlantic. The range of A. albopictus , another vector, extends even farther north to New England and parts of the Midwest. (credit micrograph: modification of work by Cynthia Goldsmith, Centers for Disease Control and Prevention; credit photo: modification of work by James Gathany, Centers for Disease Control and Prevention; credit map: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_16_03_Vector": {
+      "source": "media/OSC_Microbio_16_03_Vector.jpg",
+      "sourceSha256": "8711911cddcc5d3f48655718b0d73d2d2e6829a2ffc7ce21205d9c60352676c1",
+      "module": "m58873",
+      "kind": "photo",
+      "width": 1300,
+      "height": 718,
+      "variants": [
+        {
+          "width": 800,
+          "height": 442,
+          "file": "OSC_Microbio_16_03_Vector-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 718,
+          "file": "OSC_Microbio_16_03_Vector-1300.webp"
+        }
+      ],
+      "alt": "a) Step 1: fly picks up pathogen from fecal matter and carries it on its body. 2: Fly transfers pathogen to food. 3: Person eats contaminated food and gets sick. B) Step 1: Infected mosquito bites uninfected person. 2: Infections spreads through body and into red blood cells. 3: Second mosquito bites infected person. Mosquito may now transmit infection to another person.",
+      "caption": "(a) A mechanical vector carries a pathogen on its body from one host to another, not as an infection. (b) A biological vector carries a pathogen from one host to another after becoming infected itself."
+    },
+    "OSC_Microbio_16_03_VectorTab": {
+      "source": "media/OSC_Microbio_16_03_VectorTab.jpg",
+      "sourceSha256": "a46c0cfe0bd6959adde5888780f1b25037482bd575948d634587028db57f547b",
+      "module": "m58873",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 984,
+          "file": "OSC_Microbio_16_03_VectorTab-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1600,
+          "file": "OSC_Microbio_16_03_VectorTab-1300.webp"
+        }
+      ],
+      "alt": "Table titled common arthropod vectors and selected pathogens. Columns: Vector; species, pathogen; disease. Black fly; Simulium spp.; Onchocerca volvulus; Onchocerciasis (river blindness). Flea (has 2). Ctenocephalides felis; Bartonella henselae; cat scratch disease. Xenopsylla cheopis (has 2). Rickettsia typhi; murine typhus. Yersinia pestis; plague. Kissing bug, Triatoma spp.; Trypanosoma cruzi; Chagas disease. Louse; Pediculus humanus humanus (has 3) Bartonella quintana; trench fever. Borrelia recurrentis; relapsing fever. Rickettsia prowazekii; typhus. Mite/chigger (has 2). Leptotrombidium spp.; Orientia tsutsugamushi; scrub typhus. Rickettsia akari; rickettsialpox. Moquito (has 3). Aedes spp and Haemogogus spp.; yellow fever virus; yellow fever. Anopheles spp.; Plasmodium falciparum; malaria. Cutex pipiens; west nile virus, west nile disease. Sand fly; Phlebotomus spp.; Leishmania spp.; Leishmaniasis. Tick (has 2): Ixodes spp; Borrelia spp.; Lyme disease. Dermacentor spp. And others; Rickettsi rickettsia; rocky mountain spotted fever. Tsetse fly; Glossina spp. Trypanosoma brucei Trypanosomiasis (sleepting sickness).",
+      "caption": "(credit “Black fly”, “Tick”, “Tsetse fly”: modification of work by USDA; credit: “Flea”: modification of work by Centers for Disease Control and Prevention; credit: “Louse”, “Mosquito”, “Sand fly”: modification of work by James Gathany, Centers for Disease Control and Prevention; credit “Kissing bug”: modification of work by Glenn Seplak; credit “Mite”: modification of work by Michael Wunderli)"
+    },
+    "OSC_Microbio_16_04_SARS": {
+      "source": "media/OSC_Microbio_16_04_SARS.jpg",
+      "sourceSha256": "75b9ca752baf9075ec91c01c50b024da77dbdfdb5ad60c3516e4a401106c455e",
+      "module": "m58874",
+      "kind": "photo",
+      "width": 900,
+      "height": 907,
+      "variants": [
+        {
+          "width": 800,
+          "height": 806,
+          "file": "OSC_Microbio_16_04_SARS-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 907,
+          "file": "OSC_Microbio_16_04_SARS-900.webp"
+        }
+      ],
+      "alt": "This map shows the spread of SARS as of March 28, 2003. Ireland had 1 case, Canada had 29 cases, the United States had 1 case, Hong Kong had 195 cases, Singapore had 71 cases, and Vietnam has 58 cases.",
+      "caption": "This map shows the spread of SARS as of March 28, 2003. (credit: modification of work by Central Intelligence Agency)"
+    },
+    "OSC_Microbio_16_04_SFTS": {
+      "source": "media/OSC_Microbio_16_04_SFTS.jpg",
+      "sourceSha256": "d84e19112eee030c2ebe720bf50375f3f14a0ae780b98792e69caf44799515fe",
+      "module": "m58874",
+      "kind": "photo",
+      "width": 1301,
+      "height": 766,
+      "variants": [
+        {
+          "width": 800,
+          "height": 471,
+          "file": "OSC_Microbio_16_04_SFTS-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 766,
+          "file": "OSC_Microbio_16_04_SFTS-1301.webp"
+        }
+      ],
+      "alt": "Graph of Known human cases of Ebola virus diseases worldwide from 1976 – 2015. There were 604 in 1976-77. There were 44 in 1978-79. There were 0 from 1980 – 87. There were 3 in 1988-89. There were 4 in 1990-91. There were 368 in 1994-95. There were 100 in 1996-97. There were 0 in 1998-99. There were 547 in 2000-2001. There were 178 in 2002-2003. There were 18 in 2004-2005. There were 413 in 2006-2007. There were 38 in 2006-2007. There were 38 in 2008-2009. There was 1 in 2010-2011. There were 53 in 2012-2013. There were 28,718 in 2014-2015.",
+      "caption": "Even before the Ebola epidemic of 2014–15, Ebola was considered an emerging disease because of several smaller outbreaks between the mid-1990s and 2000s."
     }
   }
 }

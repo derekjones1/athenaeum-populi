@@ -28,6 +28,17 @@ Every `multiplechoice`, `textin`, `selfcheck`, `sortbins` on the page, body
 and Practice, in order, with question, key/accept/model answer, and hint.
 Counts by kind; body items (graded vs selfcheck) separately from Practice.
 
+Then enumerate the module's end-matter exercises from the raw CNXML and tick
+each one off against the page, by hand. **A missing exercise is the defect
+this run exists to catch**: five of eleven authors in the chapters 13–14 wave
+dropped or folded one away behind a plausible footer sentence, and no lint
+fires on it. An exercise may be graded inside a body Check Your
+Understanding item only when the two stems are the same question reworded —
+quote both and judge them; a shared topic is not a duplicate. Anything else
+missing is a defect, whatever the footer says, and the fix is named in the
+life-sciences playbook: graded when one module artifact fixes the answer,
+`selfcheck` otherwise, never absent.
+
 ## 2. Answer every graded item yourself, key covered
 
 - **multiplechoice:** from the module's own prose pick the supported option
@@ -41,6 +52,7 @@ Counts by kind; body items (graded vs selfcheck) separately from Practice.
   abbreviated binomial, a formula, a hyphen variant), and run each through
   the grader:
   `node -e 'import("./assets/js/lib/text/check-text.mjs").then(m=>console.log(m.checkText("<variant>","<answer>",{accept:"<accept>"})))'`
+  (pass `{}` as the third argument when the item has no accept list).
   Report every wrongly rejected variant and every wrong answer accepted.
 - **sortbins:** solve the mapping; report any item that reads as well
   under another bin, any item carrying a bin word, any bin label the
@@ -139,7 +151,12 @@ For every `mediafigure`: open the vendored image AND the PDF page
 
 Every `Changes:` claim true of the page (counts of graded conversions,
 model answers, fillers, sentence-derived definitions, omitted items,
-one-word corrections, reorderings; no "logged as an erratum" claim); license
+one-word corrections, reorderings; no "logged as an erratum" claim — a run
+in flight says "reported to the parent for the errata log"); **re-derive
+every count the footer states rather than reading it** (this run's checkers
+found four footers whose own claims were false); a footer describes the
+shipped page only — a clause about run machinery ("reported to the parent",
+an accept variant "dropped here") is a defect; license
 CC BY-NC-SA 4.0; the five named authors; the deep link; `title`,
 `description`, `source_section`, `weight`; `npm run verify-section -- <page>`
 tail.
