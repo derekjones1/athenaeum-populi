@@ -1,0 +1,17 @@
+{{- /*
+  Overrides themes/hextra/layouts/_partials/favicons.html.
+
+  Same six links as the theme, plus the two large PNGs. Google Search draws
+  the icon beside a result only from a linked square icon of at least 48×48
+  (a multiple of 48); with only 16/32 px rasters linked it showed the generic
+  globe placeholder even though the 192/512 files were already shipped for
+  site.webmanifest. Keep every href stable — Google re-crawls favicons rarely.
+*/ -}}
+<link rel="icon shortcut" href="{{ "favicon.ico" | relURL }}" sizes="32x32" />
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="{{ "favicon-16x16.png" | relURL }}" type="image/png" sizes="16x16" />
+<link rel="icon" href="{{ "favicon-32x32.png" | relURL }}" type="image/png" sizes="32x32" />
+<link rel="icon" href="{{ "android-chrome-192x192.png" | relURL }}" type="image/png" sizes="192x192" />
+<link rel="icon" href="{{ "android-chrome-512x512.png" | relURL }}" type="image/png" sizes="512x512" />
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}" sizes="180x180" />
+<link fetchpriority="low" href="{{ "site.webmanifest" | relURL }}" rel="manifest" />
