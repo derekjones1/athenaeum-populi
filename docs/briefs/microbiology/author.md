@@ -127,7 +127,9 @@ print or what authors most often get wrong.
    filler item and its sentence, every unused source item and why, every
    one-word correction, every reordered item, the Clinical Focus link
    replacements, author-written captions. The parent logs errata at
-   close-out; do not claim "logged as an erratum".
+   close-out; the footer names a correction as a correction and says nothing
+   about where it is logged — neither "logged as an erratum" nor "reported
+   to the parent".
 
 ## 4. The exercises — what bites
 

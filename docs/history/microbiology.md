@@ -519,3 +519,494 @@ Everything in biology's Verification section, plus:
   headword with an italic binomial inside the bold span was cut at the
   inner close tag, so "Clostridium perfringens" matched "*C. perfringens*
   gastroenteritis"); fixed with a depth-aware headword splitter.
+
+- **Chapters 17–18 (September 13, 2026), ten sections in one wave**: 10
+  Sonnet authors → 10 Sonnet checkers → 2 Sonnet claim passes → 2 fresh
+  Fable solvers on masked packets. Prep again went to Sonnet agents —
+  the two landing pages and run-facts Part A, plus a 58-entry decisions
+  list — but this run's Part C carried the playbook rule quoted beside
+  each decision, written by the parent rather than left implicit; a
+  shape the playbook already fixes was not re-decided, closing the gap
+  chapters 15–16 opened. Blind solves: chapter 17 60/60 with nothing
+  flagged, chapter 18 85/85 after two adjudications. Errata 622 onward
+  (the exact final range is recorded when the drafter runs; the claim
+  and cross-reference corrections were numbered first, the alt/typo
+  defects after).
+- **Checker yield, chapters 17–18**: about twenty-five defects on
+  lint-clean pages, clustered in two places — footer miscounts and
+  run-machinery clauses ("reported to the parent," stale item counts,
+  a checker brief whose own footer-wording clauses contradicted each
+  other) were the commonest class, with alt-text-versus-image and
+  table-image cell errors close behind (a Formed Elements table cell
+  silently dropping "specific," a vaccine-mechanisms figure dropping
+  "another person or" from its passive-immunity cell, a superantigen
+  figure's alt mislocating which panel shows recognition versus
+  non-recognition). One fold was licensed: 17.3 merged a source Short
+  Answer into the body Check Your Understanding it duplicated and
+  refilled its Practice slot with a term-recall filler, disclosed in
+  the footer.
+- **Prose claim pass yield, chapter 17**: three findings, one accepted.
+  17.5's filarial-lymphangitis infiltrate named "thrombocytes" where
+  the pathology literature names macrophages — accepted, a decisions
+  entry and an erratum. 17.3's cross-reference promising that B
+  Lymphocytes and Humoral Immunity (m58887) covers antibody-mediated
+  basophil triggering was confirmed true of the source and false of
+  the now-authored target — a genuine defect, but transcribed as
+  printed with an erratum rather than a page edit, since the page
+  faithfully renders what the source promises. And "laudable pus…until
+  the seventeenth century" was reviewed and kept: the counter-evidence
+  was a paywalled history-of-medicine article reached only through
+  search-engine summaries, one of which misnamed its own subject, too
+  thin a footing to overturn a textbook generalization.
+- **Prose claim pass yield, chapter 18**: three findings, all accepted.
+  18.2's MHC I sentence says it presents "pathogens" to T cells where
+  the module's own next sentence, next paragraph, and Key-terms bullet
+  all say "antigens" — whole pathogens are never presented, only
+  processed peptides. 18.4's B-cell-activation figure caption says
+  cells differentiate "into B cells and plasma cells," a tautology
+  against the same figure's own alt, longdesc, and the body prose two
+  paragraphs earlier, all of which say memory B cells. 18.5's Micro
+  Connection box calls the 2010 Australia-approved Japanese encephalitis
+  vaccine a DNA vaccine; it is IMOJEV, a live attenuated chimeric
+  recombinant-virus vaccine on an entirely different platform than the
+  plasmid mechanism the box itself defines two sentences earlier.
+- **Two blind-solve disagreements settled the same way as the source
+  disagreements above**: two Fable solvers phrased 18.3's open-ended
+  "what effect does a superantigen have on a T cell?" `textin`
+  differently enough ("unregulated activation" versus the key's
+  "cytokine storm") that the item became a `multiplechoice` over the
+  module's own named outcomes instead; and 18.3's MHC II fill-in-the-
+  blank keyed "helper" gained "regulatory" in `accept` once the
+  module's own sentence turned up naming both — "Helper T cells and
+  regulatory T cells can only be activated by APCs presenting antigens
+  associated with MHC II."
+- **A 429 rate limit killed two agents mid-run**: the alt-errata
+  verifier, before it had written anything, and the chapter 18 Fable
+  solver, after it had already written its complete answers file. The
+  verifier was resumed by `SendMessage` once the reset passed; the
+  solver's answers were intact and needed no resolve.
+- **New playbook rules from this run**: a Case in Point's closing
+  question stays unanswered inside its callout, like a Clinical Focus
+  Resolution; a recap table transcribed from a figure is transcribe-
+  only, never re-derived; the bin-word lint's fix is to reword the
+  sortbins items, not to weaken the label; a body Check Your
+  Understanding converted to graded form is never also duplicated in
+  Practice; and T<sub>H</sub>-style subscripted letters and any Greek
+  letter appearing in a graded answer need their own lint, after this
+  run hit the unicode-math lint blocking bare α/β in an option string.
+- **A brief inconsistency the chapter 17.3 checker caught**: `checker.md`
+  told checkers to flag "a clause about run machinery" as a footer
+  defect while, two clauses earlier, telling authors to write "reported
+  to the parent for the errata log" for a page still in flight — the
+  same phrase, banned and prescribed in one file. `checker.md` and
+  `author.md` now say the same thing: a footer names a correction, and
+  never says where or whether it is logged.
+
+- **Chapter 19 (September 13, 2026), five sections in one wave**: 5
+  Sonnet authors → 5 Sonnet checkers → 1 Sonnet claim pass → 1 fresh
+  Fable solver on a masked packet. Prep went to Sonnet agents again —
+  the landing page and run-facts Part A plus a DECISIONS NEEDED list,
+  this run carrying no exercise images — while Part C, quoting the
+  playbook rule beside each decision per the chapters 17–18 fix, again
+  fell to the parent. Blind solve: 58/59 agree, the one disagreement
+  settled by rewording the item rather than the key (rule below). The
+  alt-errata verifier confirmed twelve source defects across the
+  chapter, all disclosed; errata 652–662, with 659 the one claim
+  correction (the Addison-disease lymphocytosis gloss). Close-out — the alt
+  verifier, the errata drafter, and the pins agent — again went to
+  Sonnet.
+- **Checker yield, chapter 19**: about a dozen defects and concerns,
+  clustered around footer miscounts and run-machinery clauses — 19.2's
+  filler count printed "four" where the page has five, 19.3's footer
+  quoting a stem it had already silently corrected, and the "reported
+  for the errata log" clause the checker brief already bans, caught on
+  19.4 and traced from there to twenty-five further shipped pages
+  (below) — plus content the footer never named: 19.1's Type I
+  `sortbins` inventing "dust" and borrowing "pollen" from the
+  Hay-fever row for its asthma item, 19.1's Types table transcribing
+  "Local and systemic" onto the Type III cell from the source alt's
+  own error rather than the rendered image, and 19.3's third Practice
+  item under objective 3 (a body-paragraph filler) missing from the
+  footer's author-written disclosure. Two further checker concerns —
+  the hyperpig alt's uncaptured comparison palm and the Lupus
+  longdesc's shaded feet, neither drawn in the artwork — were
+  confirmed by the alt-errata verifier. Ahead of its own checker,
+  19.4's author caught and replaced a "underlying cause" filler cloze
+  cut from the very sentence an adjacent self-check already uses as
+  its model answer.
+- **Prose claim pass yield, chapter 19**: zero findings across roughly
+  236 claims spanning the five modules' prose, tables, distractors,
+  and `sortbins` items — the first chapter's claim pass to clear with
+  nothing to adjudicate. The chapter's one claim correction came from
+  the 19.2 author's own review rather than the claim pass: the
+  Autoimmune Addison Disease symptom list's parenthetical gloss on
+  "lymphocytosis," printed in the source as "decreased levels of white
+  blood cells" — backwards, since lymphocytosis is by definition an
+  increased count — corrected to "increased levels of lymphocytes,"
+  with an inline Source note beside the correction and an erratum.
+- **The blind solve's one disagreement became a playbook rule**: 19.4
+  keyed a cloze "profound CD4 T-cell ________ (decrease in
+  lymphocytes)" to "CD4 T-cell lymphopenia," and the Fable solver
+  answered "lymphopenia" — correct against the parenthetical gloss,
+  but short of the compound key. The fix moved the modifier into the
+  stem ("CD4 T-cell ________") so the blank's own key is the glossed
+  term, "lymphopenia," with "CD4 T-cell lymphopenia" kept in `accept`:
+  a blank sitting directly before a parenthetical gloss now keys to
+  the glossed term, never the modified phrase.
+- **The "reported for the errata log" footer phrase swept
+  corpus-wide**: 19.4's checker traced the phrase — a run-machinery
+  clause the checker brief already bans — to twenty-five shipped pages
+  beyond chapter 19 itself. A Sonnet sweep agent's corpus grep found
+  the actual family of violations wider still (sixty-nine files across
+  microbiology, biology, and precalculus, several phrasings the
+  original list missed — "logged in the ledger," "flagged for the
+  parent's adjudication," "reported for the errata file"), fixed all
+  of them, and added a corpus-wide lint rule (`tools/lint/lints.mjs`)
+  that fails any footer naming where or whether a correction is logged
+  or reported; `npm run lint` now runs 716/716 files clean.
+- **New playbook rules from this run**: a footer names the correction
+  made, never where it is logged or reported (lint-enforced, above); a
+  filler cloze may not be cut from the sentence an adjacent self-check
+  already uses as its model answer; a cloze blank sitting directly
+  before a parenthetical gloss keys to the glossed term, with the
+  modifier moved into the stem; a `sortbins` item's wording must come
+  from its own row's cell, never a neighboring row or the table's
+  margins; and a rendered-table image is transcribed from the image
+  itself, never from a source alt the artwork contradicts.
+
+- **Chapter 20 (September 13, 2026), five sections in one wave**: 5
+  Sonnet authors → 5 Sonnet checkers → 1 Sonnet claim pass → close-out
+  again to Sonnet agents (alt-errata verifier, errata drafter, pins).
+  Prep followed the two-part run-facts shape (a Sonnet drafter for Part
+  A and the DECISIONS NEEDED list, the parent writing Part C against the
+  playbook). The blind solve ran twice: a fresh Fable solver on all five
+  pages first (62/64), then a second fresh Fable solver on just the two
+  pages with disagreements after they were fixed (64/64) — cheaper than
+  re-soliciting all five once only two pages had changed. Errata 663–676,
+  with 663 the one claim correction.
+- **Checker yield, chapter 20**: about a dozen defects, none of them a
+  wrong graded key. 20.5's checker caught a body Check Your Understanding
+  bullet silently swapped rather than converted — the module's "What is
+  the ANA test looking for?" never appears on the page; in its place, at
+  the same position, sits an unrelated invented cloze on SLE
+  autoantibodies, well-formed and honest on its own terms but not a
+  rendering of the bullet it replaced, with the footer's "all six body
+  bullets rendered" claim false as a result (five, not six). 20.1's
+  checker found two fabricated `longdesc` details against the vendored
+  artwork: a "gloved hand" injecting the rabbit in step 1 of the
+  polyclonal-production figure (no hand is drawn) and a second rabbit
+  re-injected with antigen in step 4 (the step-4 syringe holds blood, not
+  antigen, and only one rabbit appears in the source alt or the image).
+  20.2's checker caught a neutralizing-antibodies selfcheck that inverts
+  the module's own sentence: the source presents complex-formation and
+  receptor-blocking as two independent neutralization mechanisms, and the
+  page's model answer turns the first into something the second
+  "prevents," a causal claim the module never makes — plus a footer that
+  miscounted the body Check-Your-Understanding split (five graded claimed,
+  six actual; three left as selfcheck claimed, two actual) by silently
+  omitting a graded item from its own list. 20.4's checker found a filler
+  `textin` stem that spells out "immunohistochemistry" in a parenthetical
+  two lines above the next item's `textin`, whose answer is exactly that
+  word, and a `longdesc` that places the EIA figure's enzyme "at the base"
+  of the antibody's stem when the vendored image draws it at the top,
+  the far end from the antigen-binding arms. 20.3's checker found two more
+  footer miscounts (three author-written filler items claimed, four
+  present; a "see" cross-reference swapped for a bare one and vice versa)
+  plus two ungraded `accept` gaps a British-spelling/possessive learner
+  would hit ("microtiter"/"microtitre," "patient serum"/"patient's
+  serum"). The alt-errata verifier confirmed seventeen source defects
+  across the chapter (typos, an inconsistent dilution alt, artwork
+  misprints, an all-caps footnote author list, a dead Link to Learning),
+  all disclosed.
+- **Claim-pass yield, chapter 20**: one accepted correction of two
+  findings. 20.3's Widal-test sentence calls *Salmonella enterica*
+  "subspecies *typhi*"; it is a **serovar**, not a subspecies (the real
+  subspecies is *S. enterica* subsp. *enterica*), and the book's own
+  sibling modules say "serovar Typhi" six times across three untouched
+  modules and never call it a subspecies — corrected with a Source note,
+  erratum 663. The second finding, 20.2's "Venereal Disease Research Lab"
+  naming the modified Wassermann test, was reviewed and not made errata:
+  it is the source's own wording, and "Lab" is the source's own
+  abbreviation of "Laboratory," not a factual error.
+- **Two blind-solve disagreements, both settled by reshaping the item
+  rather than the key**: 20.3's Indirect Antiglobulin Test cloze was
+  keyed to the abbreviation and the solver answered the full name, so
+  `accept="indirect antiglobulin test"` was added. 20.5's source Fill in
+  the Blank keyed "fragments" ("cell clumps or ________") sent a solver
+  in circles — the module's own prose never prints the word "fragments"
+  anywhere in m58904, so a blind reader has no way to recover it — and
+  the item became a `multiplechoice` keyed to the source answer with the
+  module's own terms as disclosed distractors instead.
+- **The dead Link to Learning**: 20.5's direct-fluorescent-antibody
+  animation link (`openstax.org/l/22dirfluorant`, redirecting to a Cornell
+  microbiology-cases page) returned HTTP 404 on September 13, 2026,
+  confirmed with a full GET past the redirect. The redirect is identical
+  in the pinned CNXML, so this is an upstream link rot, not a page
+  authoring defect; the section keeps the callout, names the resource and
+  its site in plain text instead of linking it, and its footer discloses
+  the redirect, the destination, and the date.
+- **New playbook rules from this run**: a source Fill in the Blank whose
+  key the module prose never states becomes a disclosed `multiplechoice`,
+  never a `textin` a blind solver cannot pass; two keyed Multiple Choice
+  items sharing one image render as one `mediafigure` followed by both
+  items adjacent, with the shared alt naming what the image shows and
+  computing nothing; a key printed as "A or B" where B is the module's
+  own parenthetical synonym for A is a `textin` keyed A with B in
+  `accept`, not the two-answer "A or B" form; a body Check Your
+  Understanding bullet may be converted but never replaced, even by
+  another honest item at the same position; and a run-facts `accept`
+  member must not already print in the item's own stem, checked by grep
+  before the accept list is written.
+
+- **Chapters 21 and 22 (September 13–14, 2026), nine sections in one
+  wave** (21.1–21.5, 22.1–22.4): 9 Sonnet authors → 9 Sonnet checkers → 2
+  Sonnet claim passes (one per chapter) → close-out again to Sonnet agents
+  (an alt-errata verifier per chapter, an errata drafter, a pins agent, a
+  tool-bug fix agent). Prep followed the two-part run-facts shape (a
+  Sonnet drafter for Part A and the DECISIONS NEEDED list, the parent
+  writing Part C against the playbook). These are the book's **first
+  Disease Profile chapters** (nine boxes across the two chapters): the
+  media pull vendors a Disease Profile table image like any other figure,
+  so the parent de-vendored all nine at close-out (manifest entries + 18
+  webp files removed), and two of the nine boxes' printed table images
+  disagree with their own pinned CNXML alt (21.2's "a pregnant person" vs.
+  the image's "mother"; 22.2's pneumococcal-drugs cell with/without "or
+  cephalosporin") — the CNXML alt was kept as the transcription authority,
+  with a footer disclosure of what the image prints. Checkers found about
+  30 defects across the wave, none a wrong graded key: mostly figure-alt
+  mismatches against the vendored image (a claimed "second part" not in an
+  image, a mislabelled cross-reference), a handful of one-word source
+  typos ("Proproniobacterium acnes," "parvovirus 19," "M. cattarhalis"),
+  and two option-typo corrections needing `DISCLOSED_DEVIATIONS` entries.
+  The two chapters' claim passes together yielded two accepted corrections
+  and one rejected finding: 22.2's "is caused by a rickettsia, Coxiella
+  burnetii" corrected to name it an obligate intracellular bacterium once
+  classified among the rickettsias (this book's own Chapter 4 places
+  Coxiella in Gammaproteobacteria and Rickettsia in Alphaproteobacteria),
+  and 22.3's MERS "identified in 2013" corrected to 2012 (WHO/CDC agree);
+  21.1's claim pass flagged the necrotizing-fasciitis glossary's "exotoxin
+  A" as inconsistent with the body and was **rejected** — streptococcal
+  pyrogenic exotoxin A is a genuine *S. pyogenes* superantigen, and the
+  checker had matched the wrong organism's "exotoxin A". A third claim
+  correction (22.3's outbreak table printing "N2N2" for the 1957 pandemic
+  strain, corrected to H2N2) surfaced from an author/checker pair before
+  either chapter's formal claim pass ran. The blind solve ran once per
+  chapter: chapter 21's fresh Fable solver agreed on all 50 items with
+  nothing flagged; chapter 22's agreed on 68 of 71, with the remaining
+  three settled by adjudication (an *aspergilloma* plural fold, the
+  desert-southwest `accept` extended, and the otitis-media `accept`
+  extended) rather than by changing a key. Errata 677 onward (the H2N2
+  claim correction was 677; the two claim-pass corrections and the alt/typo
+  findings follow — see `docs/openstax-errata.md` for the drafted range,
+  not yet written as of this entry). Two lessons went into tooling: the
+  `terms`/glossary extractor in `tools/source/microbiology-prep.py` missed
+  four Glossary headwords (nested `<emphasis>`, a singular body term
+  against a plural headword), fixed with a regression test; and chapter
+  22.1's tuberculosis Link to Learning redirect
+  (`openstax.org/l/22mycotublegpnean`) returned HTTP 404, confirmed with a
+  full GET, and was replaced with plain text naming the resource, disclosed
+  in the footer. The cross-link grep (see "The wave" in the run recipe)
+  caught two sections — 22.1 and 22.3 — that left a Clinical Focus chain
+  sentence as plain text despite Part C already naming the route.
+
+- **Chapter 24 (September 14, 2026), six sections in one wave**: the
+  recipe as versioned — Sonnet landing page and run-facts drafter (Part
+  A + nineteen DECISIONS NEEDED), the parent's Part C, six Sonnet
+  authors, six checkers, one claim pass, a fresh Fable solver (59/59
+  after one adjudication: a source distractor the solver called "also
+  defensible" on a source-keyed MC — the upstream key stands), four
+  Sonnet close-out agents. Errata 735–754, none of them claim
+  corrections: the claim pass returned one accepted one-word typo
+  (*Treponema vicentii* → *vincentii*, the source itself spells it both
+  ways) and one "reviewed and not errata" (24.3's Typhoid Mary "51 cases
+  and three deaths" against 16.3's Marineli-cited "at least 122 cases,
+  five fatal" — both counts circulate; each page transcribes its own
+  module).
+- **The drafter invented a key, chapter 24**: the run-facts drafter
+  wrote "source key: D" for 24.5's Art Connection exercise, which
+  prints NO solution — the CNXML check in Part C caught it, and the image
+  (pear-shaped cells trailing flagella, attached to a gerbil's
+  intestinal wall) is the module's adhesive-disk *Giardia*, keyed A. A
+  Part B item quotes the extractor's line ("source prints no key")
+  verbatim and never infers a letter.
+- **Checker yield, chapter 24**: eighteen defects across six pages, no
+  wrong findings. Real: two `sortbins` items not unique to their bin
+  when checked against every cell (LEE named in EHEC's diagnostic cell;
+  ETEC's phrase a substring of EIEC's); a source MC's own options
+  ("ascariasis", "hookworm") printed immediately before textins keyed to
+  them; a distractor ("Cementum") above its own textin key; two hints
+  carrying the key's phrase; two longdescs wrong against the image
+  (liver/spleen sides stated without a frame; teeth in a panel that
+  labels none); a Trench alt saying "upper" teeth for upper and lower;
+  undisclosed author-built fillers (three pages); footers claiming
+  "checked cell by cell, no divergence" over silently smoothed alt
+  typos and commas; two preserved source typos ("cayetanesis",
+  "tropozoite") that the one-word rule says to correct; a disclosure
+  naming two of a correction's four sites. Two of six authors ran
+  `npm test` against the brief and reported the expected source-map
+  failures as news.
+- **Disease Profile tables, third run**: 24.6's `HelminthTBL` printed
+  image is a different table version from its alt (other title, column
+  set, and cell wording) and the source's `HelminthTBL2` "continuation"
+  duplicates four rows already in the alt — the page transcribes the
+  alt once, discloses both, and de-vendors both images. Three table
+  typos are baked into the print ("famcyclovir",
+  "Trimethoprim-sulfmethoxazole", "Ancylostoma doudenale").
+- **Chapter 25 (September 14, 2026), four sections in one wave**: the
+  recipe as versioned — Sonnet landing page and run-facts drafter (Part
+  A + eighteen DECISIONS NEEDED), the parent's Part C (thirteen
+  decisions), four Sonnet authors, four checkers, one claim pass, a
+  fresh Fable solver (38/38 after two adjudications: 25.1's "subclavian
+  veins" `textin` converted to `multiplechoice` because the module's
+  body prose never prints the key — only the exercise solution does —
+  its page re-emitted and re-solved; 25.3's HIV-stage 700/µL item, where
+  the source's own key stands over the solver's reading), five Sonnet
+  close-out agents (alt-errata verifier, errata drafter, pins/de-vendor
+  agent, a lessons agent, a body-keys-lint measurement agent). A Sonnet
+  429 at roughly 18:40 PDT killed the 25.1 author, the 25.3 checker, and
+  the 25.4 author mid-wave; all three resumed by `SendMessage` four
+  minutes later, once the 6:10 pm reset cleared. Errata 755 onward.
+- **Claim pass, chapter 25**: three findings, all three accepted — a
+  genuine OpenStax source defect (the Glossary appendix's rat-bite-fever
+  headword prints "*Bacillus moniliformis*" where the module's own body
+  says *Streptobacillus moniliformis* three times, and a Practice
+  distractor inherited the wrong genus), a false equivalence ("Human
+  T-lymphotropic viruses (HTLV), also called human immunodeficiency
+  viruses (HIV)" — different genera, different diseases, neither
+  discussed elsewhere in the book), and a Tick Tips box's anatomy ("two
+  body segments, the cephalothorax and the head" — a cephalothorax
+  already fuses head and thorax into one; ticks instead have a
+  gnathosoma and an idiosoma). Each got a Source note, an erratum, and a
+  `reconciliation-decisions.json` entry; the rat-bite-fever fix also
+  replaced a Practice distractor built on the wrong genus.
+- **Checker yield, chapter 25**: twelve real defects across four pages,
+  plus one false alarm the checker itself retracted (25.3's own
+  partial-pass finding that a Disease Profile cell's alt disagreed with
+  the printed image — the book's own rule says the pinned alt wins, and
+  the page's footer already disclosed the divergence correctly). Real: a
+  dangling "(reported below)" clause on two pages; a filler `textin`
+  key leaking as an MC distractor immediately above it, three times on
+  one page; a singular-learner spelling wrongly rejected; a mislabeled
+  figure panel (alt names the spleen for what the artwork draws as a
+  lymph node — erratum candidate); an undisclosed silent typo fix
+  ("*Staphylcoccus*" corrected to "*Staphylococcus*") beside a footer
+  that then misattributed a second, real correction to the wrong
+  artifact (that typo is baked into the printed table image, not the
+  alt); a `textin` accept list missing the exact term its own hint
+  teaches ("erythema migrans"); a body Check Your Understanding MC keyed
+  from two paragraphs stitched together (a "mouth" clause graded
+  alongside a "bite" clause from an earlier sentence); a footer's own MC
+  count wrong against the page; and a Key terms bullet omitting "AIDS,"
+  which the Glossary defines, on the checker's own mistaken claim that
+  it was sentence-derived.
+- **Two Part B "not checked" pairs, chapter 25**: the run-facts drafter
+  flagged two unkeyed items it could not resolve to one sentence — the
+  HIV diagnostic-test panel (three source sentences: the initial
+  antibody screen, the fourth-generation antibody/antigen or NAT
+  confirmatory test, and Western blot/PCR) and the ART drug-category
+  question (the module names no drug classes at all, only "various
+  combinations of drugs") — and the parent re-checked both directly
+  against the CNXML rather than pass the ambiguity to an author: both
+  stay `selfcheck`, the ART model answer restating only what the module
+  says and importing no reverse-transcriptase/protease/integrase
+  vocabulary from general knowledge.
+- **The alt-errata verifier re-vendored what it was sent to check,
+  chapter 25**: told four Disease Profile stems were de-vendored on
+  purpose, the verifier ran the media pull on all four anyway because it
+  found them "missing," restoring the manifest entries and eight webp
+  files; the parent removed them again. The run recipe now says the
+  verifier's brief must forbid `source:media`/`vendor-media`, and that
+  the pins/de-vendor agent launches after the verifier reports, or
+  de-vendors last.
+- **Disease Profile tables, fourth run**: 25.4's `Protozoa` table folds
+  two disease classes under row-group headers ("Protozoa", "Helminths")
+  that the alt garbles into a phantom seventh column and a stray cell
+  word; the page transcribes the image's real six-column structure with
+  the group headers rendered as full-width row labels instead, alt
+  wording kept for every cell.
+
+- **Chapter 23 (September 14, 2026), six sections in one wave**: the
+  recipe as versioned — two Sonnet prep agents (landing page; run-facts
+  Part A + DECISIONS NEEDED), the parent's Part C (two exercise images,
+  nine unkeyed Short Answer/Critical Thinking forms, four Disease Profile
+  tables, one-objective floor for 23.5, the Clinical Focus chain
+  23.1→23.3→23.5→23.6, routes), six Sonnet authors, six checkers, one
+  claim pass, a fresh Fable solver, four Sonnet close-out agents. Solve
+  57/57 after one accept extension (source key "warts" for a page that
+  introduces condylomata as "genital warts"). Errata 718–734, with
+  720 (trigeminal ganglion is cranial, not "in the spine") and 721
+  (hydrogen peroxide is the organism's product, not the IgA protease's)
+  the claim corrections and 719 a source exercise stem that contradicts
+  its own key ("Which oral medication is recommended as an initial
+  topical treatment", keyed miconazole).
+- **Checker yield, chapter 23**: eighteen defects across six pages and
+  two wrong findings. Real: an invented CDC credit on the 23.1 exercise
+  figure; a body bullet graded on the same fact as a keyed source
+  Practice item; three cross-item hint or stem key leaks ("the ureter",
+  "dysuria", "genital warts"/"cervical cancer"); a source solution's
+  "a broader term" silently made "the"; "loop of Henle" renamed in a
+  longdesc; two alt counts (two dipsticks, two leptospires) wrong
+  against the image; an MC keyed to a word ("painless") from a second
+  subsection's sentence; a stem's abbreviated binomial expanded; four
+  of five author-built MCs keyed at position A; an accept list missing
+  "HSV2"; a second alt-vs-print Disease Profile divergence
+  ("cephalosprins") undisclosed. Wrong: "five defined terms never
+  bolded" (all five were — a grep, not an impression) and "straight
+  quotes are an undisclosed edit" (the corpus convention); both now sit
+  in the checker brief.
+- **Disease Profile tables, second run**: the alt/print divergence
+  recurs ("a pregnant person" vs "mother" again in 23.2's NGU row, plus
+  the print typo) and the printed page itself carries "Affirm VPII" and
+  "immunosuppresion" — so the two are distinct erratum classes: alt-only
+  and baked into the print.
+- **Chapter 26 (September 14, 2026), four sections in one wave — the
+  book's LAST chapter: Microbiology is complete as of this date**. The
+  recipe as versioned — a Sonnet landing page and a Sonnet run-facts
+  drafter (Part A + DECISIONS NEEDED), the parent's Part C (ten
+  decisions), four Sonnet authors (301k–372k tokens each), four Sonnet
+  checkers, one claim pass, a fresh Fable solver (72 items: 69 agree / 2
+  disagree / 1 flag, then 72/72 after two adjudications and one
+  distractor swap), four Sonnet close-out agents. Errata 776–802 (27).
+  Four Disease Profile table images de-vendored (`26_02_BactTBL`,
+  `26_03_AcelTBL`, `26_04_neuromycos`, `26_04_ParaTBL`). The source-lock's
+  `authoringStatus` flipped to `complete`.
+- **Checker yield, chapter 26**: 26.4 one defect (a source FIB, "antigenic,"
+  missing from the page while the footer claimed all shipped); 26.1 two
+  (the ArtConnect alt's letters F/G and "E is made from C" not matching
+  the image's A–E lettering; a footer "reported" clause); 26.2 eight (three
+  hints quoting the correct option's own distinguishing phrase, two
+  missing accepts for the module's own alternate phrasing, three footer
+  count misstatements); 26.3 four (two missing accepts, a `sortbins` hint
+  leak, a "reported below" footer clause).
+- **The claim pass, chapter 26**: four findings, three accepted with
+  visible Source notes and errata (26.1's Glossary "arachnoid mater …
+  produces CSF" against the body's "choroid plexus"; 26.2's neonatal
+  meningitis "<2 months" Glossary age against the body's "up to 3
+  months"; 26.2's Listeria "0 °C and 50 °C" survival range against the
+  ~45 °C FDA BAM figure), and one left as the upstream key: 26.4's
+  neurocysticercosis multiple choice keyed "ingestion of undercooked
+  pork" stands, because the module also supports autoinfection from the
+  patient's own adult tapeworm that the pork route establishes — listed
+  under "Reviewed and not errata," and the blind solver flagged it exactly
+  as expected.
+- **Two corrected source Multiple Choice options, chapter 26**: 26.4's
+  "rhodanese" (option C, the KEYED option — disclosed `kind: key`) and
+  "Entameba histolyticum" → *Entamoeba histolytica* (a distractor —
+  `kind: options`), both with errata and `DISCLOSED_DEVIATIONS` entries.
+- **The solve's two adjudications and one distractor swap**: 26.2's
+  leprosy Check Your Understanding `textin` extended its accept list
+  ("effective immune response" / "immune response"); 26.2's
+  "tetanospasmin" `textin` converted to `multiplechoice` because the body
+  prints only "tetanus neurotoxin (TeNT)," never the source's own word;
+  26.4's cryptococcal-meningitis distractor "Dissemination from
+  respiratory infection" was true and had to be replaced — the author's
+  first replacement invented an unprinted route, the second used one the
+  module's own Parasitic table names.
+- **26.3's `verify-source-keys` print-gate defect**: a source Fill in the
+  Blank keyed "PrP^Sc" failed `baseline:update` because the gate reads the
+  CNXML with the superscript split apart and never finds the flattened
+  key; converted to `multiplechoice`.
+- **Two dead Link to Learning redirects, 26.3**: 22arboviralUS and
+  22WHOprion both 404 by `curl` (22CDCprion's 403 is a bot wall and stays
+  linked); un-linked per the life-sciences "External links" rule, each
+  with an erratum.

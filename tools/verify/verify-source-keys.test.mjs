@@ -6,9 +6,10 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import {
   DISCLOSED_DEVIATIONS, MODEL_COVERAGE_FLOOR,
-  answerValues, checkCorpus, compact, judgeFillin, judgeMultipleChoice, judgeSelfcheck, judgeTextin,
-  keyedOptionIndex, keyedOptionIndices, latexNumbers, latexShape, mathmlValues, numberWords, pageItems, readModule,
-  skipLines, summaryLine, termAlternates, textNumbers, unitTotals, valuesAgree,
+  answerValues, checkCorpus, compact, isLifeSciencesPage, judgeFillin, judgeMultipleChoice, judgeSelfcheck, judgeTextin,
+  keyedOptionIndex, keyedOptionIndices, keyPrintedInBody, latexNumbers, latexShape, mathmlValues, numberWords,
+  pageItems, readModule, skipLines, summaryLine, termAlternates, textNumbers, unitTotals, unprintableFillInTheBlank,
+  valuesAgree,
 } from './verify-source-keys.mjs';
 import { parseXml } from '../lib/openstax-source.mjs';
 import { BASELINE_SOURCES } from './baselines.mjs';
@@ -213,6 +214,74 @@ test('a textin answer must come from the module', () => {
   assert.equal(textin('A packet of light energy is called a ________.', 'photon'), 'term');
   assert.equal(textin('A ________ quantity of light energy.', 'distinct'), 'body');
   assert.equal(textin('A packet of light energy is called a ________.', 'quantum'), 'unsourced');
+});
+
+/* ---- a Fill in the Blank keyed to a word the body never prints ------------ */
+
+const FIB_MODULE = readModule(`<document xmlns="http://cnx.rice.edu/cnxml">
+<content>
+<para>A rod-shaped bacterium is called a bacillus. Pigments include carotenoids of many colors, and chlorophylls absorb light for photosynthesis. Many cells share this trait.</para>
+<section class="multiple-choice">
+<exercise id="mc-1"><problem><para>Which shape is round?</para>
+<list list-type="enumerated" number-style="upper-alpha"><item>coccus</item><item>bacillus</item></list></problem>
+<solution><para>A</para></solution></exercise>
+</section>
+<section class="fill-in-the-blank">
+<title>Fill in the Blank</title>
+<exercise id="fib-distance"><problem><para>The length of the branches of the evolutionary tree characterizes the ________.</para></problem>
+<solution><para>distance</para></solution></exercise>
+<exercise id="fib-bacilli"><problem><para>A rod-shaped cell is called a ________.</para></problem>
+<solution><para>bacilli</para></solution></exercise>
+<exercise id="fib-pigments"><problem><para>Photosynthetic pigments include ________.</para></problem>
+<solution><para>chlorophylls and carotenoids</para></solution></exercise>
+</section>
+</content>
+</document>`);
+
+test('isFillInTheBlank tags exercises by their enclosing source section, not their shape', () => {
+  const [mc, distance, bacilli, pigments] = FIB_MODULE.exercises;
+  assert.equal(mc.isFillInTheBlank, false);
+  assert.equal(distance.isFillInTheBlank, true);
+  assert.equal(bacilli.isFillInTheBlank, true);
+  assert.equal(pigments.isFillInTheBlank, true);
+});
+
+test('keyPrintedInBody: plural fold, every word of a multi-word key, and a same-root inflection', () => {
+  // never printed anywhere but the exercise's own <solution>
+  assert.equal(keyPrintedInBody('distance', '', FIB_MODULE), false);
+  // an accept alternate not in the body, and the key not either
+  assert.equal(keyPrintedInBody('susceptibility', 'sensitivity', FIB_MODULE), false);
+  // the runtime grader's plural fold: body says "cell", key is "cells"
+  assert.equal(keyPrintedInBody('cells', '', FIB_MODULE), true);
+  // "bacilli" recovered from the body's singular "bacillus" (prefix rule)
+  assert.equal(keyPrintedInBody('bacilli', '', FIB_MODULE), true);
+  // "chlorophylls and carotenoids" recovered because the body prints both
+  // words separately (reversed order, unrelated text between them)
+  assert.equal(keyPrintedInBody('chlorophylls and carotenoids', '', FIB_MODULE), true);
+});
+
+test('unprintableFillInTheBlank flags only a matched Fill in the Blank whose key the body never prints', () => {
+  const distanceItem = {
+    type: 'textin',
+    question: 'The length of the branches of the evolutionary tree characterizes the ________.',
+    answer: 'distance',
+  };
+  const flagged = unprintableFillInTheBlank(distanceItem, FIB_MODULE);
+  assert.equal(flagged.id, 'fib-distance');
+
+  // recoverable from the body (bacillus) — not flagged
+  const bacilliItem = { type: 'textin', question: 'A rod-shaped cell is called a ________.', answer: 'bacilli' };
+  assert.equal(unprintableFillInTheBlank(bacilliItem, FIB_MODULE), null);
+
+  // no source exercise reads like it at all — an author-written item, not judged
+  const unmatchedItem = { type: 'textin', question: 'Totally unrelated stem shared with nothing here.', answer: 'xyz' };
+  assert.equal(unprintableFillInTheBlank(unmatchedItem, FIB_MODULE), null);
+});
+
+test('isLifeSciencesPage scopes the body-print gate to biology and microbiology, not math', () => {
+  assert.equal(isLifeSciencesPage('content/life-health-sciences/microbiology/04-prokaryotic-diversity/05-deeply-branching-bacteria.md'), true);
+  assert.equal(isLifeSciencesPage('content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md'), true);
+  assert.equal(isLifeSciencesPage('content/math/precalculus/01-intro/01-intro.md'), false);
 });
 
 test('a self-check model answer is measured by how much of it comes from the source solution', () => {

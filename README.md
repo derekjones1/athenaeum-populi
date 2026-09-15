@@ -50,9 +50,10 @@ or
 — for cumulative knowledge checks. Content lives under `content/` in the
 hierarchy Subject → Book → Chapter → Section.
 
-Every book — the four OpenStax math books and Biology 2e, all complete
-(all eight of Biology's unit Knowledge Checks are authored), and OpenStax
-Microbiology, pinned and in progress (chapters 1–16 authored) — has a pinned,
+Every book — the four OpenStax math books, Biology 2e, and OpenStax
+Microbiology, all complete (all eight of Biology's unit Knowledge Checks
+are authored; Microbiology's all 26 chapters authored September 14, 2026)
+— has a pinned,
 report-only source reconciliation workflow. See
 [docs/source/openstax-source-workflow.md](docs/source/openstax-source-workflow.md) before
 changing a book. `npm run source:verify` checks the committed section map

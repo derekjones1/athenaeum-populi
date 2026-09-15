@@ -54,7 +54,12 @@ the ability of deeply branching bacteria to live in deep ocean waters
 the pattern of growth in culture of deeply branching bacteria
 {{< /multiplechoice >}}
 
-{{< textin question="The length of the branches of the evolutionary tree characterizes the evolutionary ________ between organisms." answer="distance" hint="Think about the relationship that a phylogenetic tree expresses between two organisms." >}}
+{{< multiplechoice question="The length of the branches of the evolutionary tree characterizes which of the following between organisms?" answer="distance" hint="Think about the relationship that a phylogenetic tree expresses between two organisms, not their physical traits or growth conditions." >}}
+temperature
+structure
+distance
+radiation
+{{< /multiplechoice >}}
 
 {{< textin question="The deeply branching bacteria are thought to be the form of life closest to the last universal ________ ________." answer="common ancestor" hint="Use the full phrase abbreviated by LUCA at the root of the tree." >}}
 
@@ -86,4 +91,4 @@ the ability to reduce nitrogen in anaerobic conditions
 production of molecular hydrogen
 {{< /multiplechoice >}}
 
-<small>This section is adapted from [*Microbiology*, Section 4.5: Deeply Branching Bacteria](https://openstax.org/books/microbiology/pages/4-5-deeply-branching-bacteria) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures are re-encoded as WebP and their source alt text is rewritten from the served images, correcting misspelled phylogenetic-tree labels and adding an extended description for the labeled tree; key terms are compiled from the module's defined terms and the book's Glossary appendix; selected end-of-section exercises are adapted into the interactive Practice block; the answer to one unkeyed Short Answer question is written from this section's text because the source prints no answer key, and the other is graded from the module's sentence on DNA repair.</small>
+<small>This section is adapted from [*Microbiology*, Section 4.5: Deeply Branching Bacteria](https://openstax.org/books/microbiology/pages/4-5-deeply-branching-bacteria) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures are re-encoded as WebP and their source alt text is rewritten from the served images, correcting misspelled phylogenetic-tree labels and adding an extended description for the labeled tree; key terms are compiled from the module's defined terms and the book's Glossary appendix; selected end-of-section exercises are adapted into the interactive Practice block; the answer to one unkeyed Short Answer question is written from this section's text because the source prints no answer key, and the other is graded from the module's sentence on DNA repair; the source Fill in the Blank keyed "distance" for what branch length characterizes between organisms is rendered as a `multiplechoice` over temperature, structure, and radiation — concepts the module prints elsewhere in this section — because the module's own prose never states the key and a blind solver cannot recover a word the page never prints.</small>

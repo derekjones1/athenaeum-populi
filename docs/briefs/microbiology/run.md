@@ -40,7 +40,10 @@ the parent runs them.
    clean tree. Note HEAD and the last erratum number in PARENT-NOTES.
 2. **Media.** `npm run source:media -- --book microbiology --chapter N
    --dry-run`, then without `--dry-run`. Note the stems that live inside
-   feature boxes and the `_img` exercise images.
+   feature boxes and the `_img` exercise images. A Disease Profile table
+   image vendors like any other figure — the pull cannot tell it apart —
+   so note its stems too and de-vendor them (manifest entry + static
+   files) at close-out *(chapters 21–22, the first run with these boxes)*.
 3. **PDF pages.** Find the chapter's true PDF index range with `pdftotext`
    (printed folio = index − 14 has held for chapters 1–11; re-check), then
    `pdftoppm -f A -l B -r 110 -png sources/microbiology_-_WEB.pdf $SP/pdf/chNN/p`.
@@ -74,6 +77,15 @@ the parent runs them.
    correction went out. Before the wave, grep `docs/subjects/microbiology.md`
    for every form Part C names (`Matching`, `sortbins`, `two-blank`) and
    quote the rule beside the decision.
+   Part B quotes the extractor's key line verbatim ("source prints no
+   key" included) and never infers a letter: the chapter 24 drafter wrote
+   "source key: D" for an Art Connection that prints no solution, and only
+   the parent's CNXML check caught it.
+   **Part C names WHICH rule and WHICH sentence, never a concrete `accept`
+   list** *(chapter 26)*: the chapter 26 Part C prescribed
+   `accept="blood brain barrier"`, which the grader already folds and the
+   lint then rejected as redundant — say "grader-check the members"
+   instead and let the author verify.
 7. Copy the three agent briefs unchanged to `$SP/` (`author.md`,
    `checker.md`, `claim-pass.md`) so the agents' paths are one directory.
 
@@ -92,12 +104,26 @@ section number, module id, output path, PDF page range, "read
 `$SP/author.md` first". Names cannot contain a dot (`author-10-1`).
 
 As each author reports: launch its checker (one Sonnet per section, prompt
-= page path + "read `$SP/checker.md`"). When a chapter's last page is on
-disk: launch its claim-pass checker (one Sonnet per chapter, prompt = the
+= page path + "read `$SP/checker.md`"). **A prompt line naming one item for
+"specific attention" narrows a Sonnet checker to that item alone**, returning
+a partial pass instead of the full brief *(chapter 25: three of four
+checkers came back partial and had to be resumed for the full pass)* — say
+"run the FULL pass, and in addition…", never a bare pointer. When a
+chapter's last page is on disk: launch its claim-pass checker (one Sonnet per chapter, prompt = the
 page paths with module ids, PLUS the landing page path with its intro
 module id — the landing page is Sonnet-written and this is its only
 reading — + "read `$SP/claim-pass.md`", report path
 `$SP/claims-chNN.md`).
+
+After the last author reports, grep every page of the wave for plain-text
+cross-references to sibling sections that are now on disk — authors
+launched together cannot link pages that did not exist yet when they wrote
+theirs, and chapter 20 had five such sites — and have the authors convert
+them to real links before the checkers' concerns repeat the same finding
+page by page. Authors leave a Clinical Focus chain sentence unlinked even
+when Part C already printed the route: two of nine sections did in the
+chapters 21–22 wave. The grep is not optional just because Part C named
+the routes.
 
 Checker defects go back to the page's author by `SendMessage` (authors are
 resumable by name); the parent applies only one-line fixes itself. **Read
@@ -151,10 +177,18 @@ and solve it again.
 ## 4. Close-out, in this order
 
 0. **Delegate the mechanical close-out to Sonnet agents, launched together
-   once the pages are stable**: (a) an alt-errata verifier — every
+   once the pages are stable**. Agents are addressed by their raw agent id
+   for `SendMessage`, never by their description string — record each
+   author's id when it is launched *(chapters 21–22)*. (a) an alt-errata
+   verifier — every
    author/checker "suspected source defect" and every alt-vs-image claim,
    checked against the vendored image and the CNXML, verdicts to
-   `$SP/alt-errata.md`; (b) an errata drafter — reads the previous run's
+   `$SP/alt-errata.md`. **Its brief must say it never runs `source:media` or
+   `vendor-media`**: told a de-vendored Disease Profile stem is "missing," it
+   will re-vendor it *(chapter 25: the verifier re-vendored all four of the
+   chapter's de-vendored images; the parent re-removed the manifest entries
+   and static files)* — launch the pins/de-vendor agent AFTER the verifier
+   reports, or de-vendor last; (b) an errata drafter — reads the previous run's
    block for format, `$SP/alt-errata.md`, both `claims-chNN.md`, and
    PARENT-NOTES, writes `$SP/errata-block.md` and
    `$SP/decisions-entries.json` (claim corrections only get decisions
@@ -166,7 +200,9 @@ and solve it again.
    plain `## Confirmed`); decisions entries carry every element id of a page.
 2. `node tools/source/openstax-source.mjs build-map` BEFORE the deviation
    test (an unmapped page leaves a deviation "unexercised").
-3. Pins: `AGENTS.md` status prose, `README.md`, the workflow doc's counts,
+3. Pins: `AGENTS.md` status prose, `README.md`, the workflow doc's counts
+   (including its "connects all N authored" sentence — the one prose site
+   `documentation.test.mjs` checks against the source map; missed in chapter 19),
    `tools/source/openstax-source.test.mjs` assertions, the book cover's
    chapter list, `docs/source/claim-pass-ledger.md` rows, the playbook
    header sentence for the chapter.
@@ -177,8 +213,17 @@ and solve it again.
    life-health-sciences/microbiology` (rebuilds the author hashes your
    post-filing edits changed), then merge: author results → solve records
    → prune.
+   A page with more than one stale entry stops the rebuild ("23.4: 7 stale
+   — map by hand") and nothing is written for it or the pages after it:
+   map stale → uncovered by question text against the solve packet's
+   hashes, write the patched file, and merge that too *(chapter 23)*.
 6. `npm run baseline:update`; `npm test > $SP/test-final.log 2>&1`; read
    the tail. `npm run source:verify` and `npm run check:external-links`.
+   **Run `check:external-links` BEFORE the errata drafter (step 0b), not
+   here** *(chapter 26: it found two dead Link to Learning redirects in
+   26.3 — 22arboviralUS, 22WHOprion; a 403 is a bot wall and stays linked
+   — each un-linked and an erratum filed)*, so the dead-link errata land
+   in the same block as the run's other errata instead of trailing it.
 7. A gate this run wanted and could not have: "every source exercise reaches
    a page item", scoped to the life-sciences books (the math books sample
    their exercise banks by design). Measured on the September 12, 2026 tree,

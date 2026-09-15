@@ -213,7 +213,7 @@ test('the source lock pins one upstream bundle per book', () => {
   // A single-book upstream repository (no `-bundle` suffix, one entry in
   // META-INF/books.xml): the whole modules tree is the book, so `bundle` scope.
   assert.equal(lock.books.get('microbiology').bundleKey, 'microbiology');
-  assert.equal(lock.books.get('microbiology').authoringStatus, 'in-progress');
+  assert.equal(lock.books.get('microbiology').authoringStatus, 'complete');
   assert.equal(lock.books.get('microbiology').contentPath, 'content/life-health-sciences/microbiology');
   assert.equal(lock.bundles.microbiology.moduleScope, 'bundle');
 });
@@ -254,18 +254,18 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 560 local sections exactly once', () => {
+test('committed provenance maps all 609 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 560);
-  assert.equal(result.actualCount, 560);
+  assert.equal(result.expectedCount, 609);
+  assert.equal(result.actualCount, 609);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
   assert.equal(counts['intermediate-algebra'].length, 70);
   assert.equal(counts.precalculus.length, 73);
   assert.equal(counts.biology.length, 208);
-  assert.equal(counts.microbiology.length, 78);
+  assert.equal(counts.microbiology.length, 127);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -302,20 +302,20 @@ test('the Precalculus book is mapped complete, every upstream section authored',
   );
 });
 
-test('the Microbiology book is pinned and in progress, its partial coverage counted visibly', () => {
-  // `scaffolded` until chapter 1 landed on September 5, 2026; `in-progress`
-  // from that day, so the partial count prints on its own line instead of
-  // disappearing into a clean run (docs/source/openstax-source-workflow.md).
+test('the Microbiology book is mapped complete, every upstream section authored', () => {
+  // `scaffolded`, then `in-progress` from September 5, 2026 (chapter 1),
+  // through September 14, 2026's chapter 25; `complete` from chapter 26,
+  // its last chapter, the same day (docs/source/openstax-source-workflow.md).
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
   assert.deepEqual(result.map.books.microbiology, {
     bundle: 'microbiology',
     contentPath: 'content/life-health-sciences/microbiology',
-    authoringStatus: 'in-progress',
+    authoringStatus: 'complete',
     upstreamChapters: 26,
     upstreamSections: 127,
-    localChapters: 16,
-    mappedSections: 78,
+    localChapters: 26,
+    mappedSections: 127,
   });
   assert.equal(result.map.books.microbiology.units, undefined, 'Microbiology is a flat collection');
 });

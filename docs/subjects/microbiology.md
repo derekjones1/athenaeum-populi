@@ -13,9 +13,9 @@ authoring a microbiology section. This document was written from the
 September 5, 2026 scan of the pinned source and has been revised by every
 chapter run since; a rule tagged *(pilot)* or *(chapter N)* was learned by
 authoring that chapter, and the per-chapter record (dates, counts, errata
-ranges) is in `docs/history/microbiology.md`. Chapters 1–16 are authored as
-of September 12, 2026. A correction that is not folded back into a rule
-will be made again.
+ranges) is in `docs/history/microbiology.md`. All 26 chapters are authored as
+of September 14, 2026 — the book is complete. A correction that is not
+folded back into a rule will be made again.
 
 ## Source and authority
 
@@ -71,8 +71,9 @@ units, and none are to be invented. A chapter moves from the cover's
 "Planned contents" list to `## Chapters` when its landing exists, which
 happens when its first section lands, never earlier. The book was
 `authoringStatus: scaffolded` in the lock until chapter 1 was complete
-(September 5, 2026); it is `in-progress` now, and becomes `complete` when
-the 127th section lands. Flipping that flag is a close-out step of its
+(September 5, 2026), `in-progress` from that day, and became `complete`
+when the 127th section (chapter 26) landed on September 14, 2026.
+Flipping that flag is a close-out step of its
 own, and the *status* word is pinned in the same six places the
 life-sciences playbook lists: the lock's `authoringStatus`, the cover's
 `authoring_status` frontmatter (which `npm run source:verify` requires to
@@ -376,11 +377,29 @@ that end most Clinical Focus parts. Neither has a source answer.
   Your Understanding question (it often does, reworded), keep the body
   one and use the Short Answer slot for something else — a different
   source item, a summary item, or a term recall.
+  The mirror case *(chapter 23)*: where a body bullet repeats a source
+  Practice item that IS keyed (23.1's shared-urethra fact), the keyed
+  Practice item stays and the body bullet is the `selfcheck`.
+- **A source exercise stem that contradicts its own key** *(chapter 23:
+  "Which oral medication is recommended as an initial topical treatment",
+  keyed to the topical drug)* is corrected by the smallest edit that
+  removes the contradiction, disclosed in the footer, and treated as a
+  claim correction — an erratum and a `reconciliation-decisions.json`
+  entry — because a learner reading the printed stem picks the wrong option.
 - The questions that end a Clinical Focus part stay inside the callout as
   plain bulleted prose, unanswered, exactly as the source prints them.
   They are case questions the next part resolves, and making a self-check
   of a question whose answer is in a later section would key it from the
   wrong module.
+- A Case in Point box that ends in bulleted questions gets the same
+  treatment: the questions stay inside the callout as plain bulleted
+  prose, unanswered, and no item is built from them *(chapters 17–18: §18.3's
+  Superantigens case)*.
+- **An Eye on Ethics box that closes with discussion questions (prose or
+  bulleted) gets the same treatment**: the questions stay inside the
+  callout as plain prose, unanswered, and no item is built from them
+  *(21.2, 24.3, 25.3 — the run-facts drafter has flagged this playbook's
+  silence on Eye on Ethics twice)*.
 
 ### 4. Feature boxes
 
@@ -406,6 +425,29 @@ from the source's table image". This is the one figure class this book
 drops; every other `<figure>` is vendored as in biology. (Decision taken
 at the scan; if the pilot finds a Disease Profile image that carries more
 than its alt — a micrograph beside the table — vendor that image too.)
+**The media pull vendors it anyway, like any other figure** *(chapters
+21–22)*: the manifest gets an entry and the webp variants land in
+`static/`, because the pull cannot tell a Disease Profile image from an
+ordinary one. The parent de-vendors it at close-out (manifest entry + the
+static files removed) rather than the author skipping the pull. **The
+CNXML alt and the printed image can diverge on a Disease Profile
+table** *(chapters 21–22, the book's first with these boxes)*: 21.2's
+neonatal-conjunctivitis cell reads "a pregnant person" in the alt against
+"mother" in the printed image, and 22.2's pneumococcal-drugs cell omits
+"or cephalosporin" that the image prints (or vice versa) — the pinned
+CNXML alt wins as the transcription authority, and the footer discloses
+what the printed image reads.
+**A Disease Profile table with row-group header rows** *(chapter 25: 25.4's
+"Protozoa"/"Helminths" rows over a shared column set)*, whose alt garbles
+the group headers into a phantom column, is transcribed from the image's
+structure instead — as two stacked Markdown tables, or one table with the
+group headers rendered as full-width bold row labels — disclosed in the
+footer; the alt still wins for the wording of every cell.
+**A typo class found in one cell of a Disease Profile table is corrected in
+EVERY cell of that table, and every correction disclosed** *(chapter 26:
+26.4's `ParaTBL` fixed "ameobae" and "suramine" silently and left
+"oocytes" printed uncorrected)*; the footer never claims the table
+"matched exactly" over a cell it smoothed.
 
 **Summary tables printed as images** *(chapter 2)*. Chapter 2 carries five
 `<figure>`s that are rendered tables with a column of sample micrographs
@@ -441,6 +483,22 @@ objective's Practice group, author-written descriptive caption with the
 source credit appended — and the alt must not name the chemical identity of
 a lettered part ("a tangled loop of DNA is marked C" hands over C = nucleoid;
 "a long tangled loop is marked C" does not).
+
+**A "name every lettered structure" Art Connection renders as a
+`mediafigure` plus ONE figure-keyed `multiplechoice` on a single letter,
+plus a `selfcheck` carrying the source question** *(chapter 22)*: the
+`multiplechoice` cannot hold every letter's identification without
+becoming its own answer key, so one letter is asked as a graded item and
+the source's full "label every part" question stays as the `selfcheck`,
+its model answer the complete letter→part mapping.
+
+**The SOURCE alt can describe a different version of the drawing than the
+vendored image prints** *(chapter 26: 26.1's neuron Art Connection alt
+names letters F and G and says "E is made from C"; the image prints only
+A–E and C is a dendrite)*: the letter→part mapping is read from the
+IMAGE, not the alt; the alt's divergent lettering is an erratum candidate,
+never authority; and the parent's Part C decision must not restate the
+alt's mapping as fact.
 
 **Art Connection, in detail** *(pilot)*. The shape is not biology's Visual
 Connection: it is an `<exercise>` whose `<problem>` holds a bare inline
@@ -520,6 +578,12 @@ equation), plus:
   site-root Markdown link to that section page when it exists and plain text
   naming the section when it does not. The preview prints both as `()` —
   read the raw CNXML.
+- **A source Fill in the Blank whose key carries a `<sup>`/`<sub>`
+  cannot ship as a flat `textin`** *(chapter 26: 26.3's "PrP^Sc")*:
+  `verify-source-keys`' print gate reads the CNXML with the superscript
+  split apart and never finds the flattened key, so the item renders as a
+  `multiplechoice` over the module's printed forms; the prose still
+  prints the flat form (the 6.4 precedent).
 - **A one-word typo correction is disclosed in the footer and the errata,
   not with an inline source note** *(pilot)*. The core playbook's "visible
   source note beside the correction" is for a corrected claim, value, or
@@ -605,6 +669,12 @@ the list above rather than left at three clozes wherever another source item
 can carry it.
 The 117 CALS tables with a `summary` attribute are real tables and follow
 biology's table and `sortbins` rules.
+A chapter- or section-level recap table — §17.1's "Overview of Nonspecific
+Innate Immune Defenses" and the "[Category] Defenses of Nonspecific Innate
+Immunity" tables that close §17.1 and §17.2 — classifies by the chapter's own
+top-level categories, not by one objective's comparison: it is transcribed as
+a Markdown table and never becomes a `sortbins`; the comparison table under
+the objective it serves is the practice form *(chapters 17–18)*.
 
 **An `accept` member that normalizes to the answer is rejected** *(chapter
 2)*: `verify-section` refuses `acid fast` beside `answer="acid-fast"`, `the
@@ -633,7 +703,11 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
   or `unmatched` (no source exercise), and a `multiplechoice` converted
   from an unkeyed question as `unkeyed`. All correct. It must never report
   a graded item keyed differently from the source without a
-  `DISCLOSED_DEVIATIONS` entry and an erratum.
+  `DISCLOSED_DEVIATIONS` entry and an erratum. **The `kind` is `key` when
+  the corrected option IS the keyed one and `options` only when it is a
+  distractor** *(chapter 26: 26.4's "rhodanese" was option C, the key,
+  disclosed `kind: key`)*; `baseline:update` refuses an entry filed under
+  the wrong kind.
 - **Three readings, none redundant:** the author keys from the CNXML; one
   Sonnet checker per section re-derives every key, answers every graded
   item with the key covered, and reads every figure against its image; a
@@ -689,6 +763,17 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
   for it) → stays a `selfcheck`; a rewritten CYU stem is a defect even
   when the cloze is honest; a converted stem may gain a referent, never a
   clause or a second subject *(chapter 9)*.
+- A body Check Your Understanding bullet may be converted, never
+  replaced: a stem at the bullet's position that asks a different fact is
+  a defect even when it is honest on its own terms — check every CYU
+  bullet count against the CNXML, not just every rendered item's honesty
+  *(chapter 20: §20.5's ANA bullet swapped for an unrelated SLE cloze)*.
+- **When a blind solver finds a `multiplechoice` distractor that is also
+  true and it must be replaced, the replacement must itself be
+  module-printed** — never invented to fill the slot *(chapter 26: the
+  26.4 author's first replacement for the cryptococcal-meningitis item was
+  an invented "prior histoplasmosis infection" route; the fix used a route
+  the module's own Parasitic table prints)*.
 - A stem built on a claim the claim pass corrects is reworded to what the
   module still supports, and the footer says so *(chapters 5–6)*.
 - A multi-blank Fill in the Blank: blanks that form ONE answer follow the
@@ -704,6 +789,16 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
 - A media-bearing matching set is one `mediafigure` plus per-row
   `multiplechoice` items keyed by the source solution; the alt says where
   things sit, never what class they are *(chapter 9)*.
+- Two keyed Multiple Choice exercises that share one image ("the histogram
+  shown below," "the data described in the previous question") render as
+  ONE `mediafigure` followed by both items adjacent in the same group; the
+  alt names what the axes and peaks show but computes no ratio *(chapter
+  20)*.
+- A source Fill in the Blank whose key the module's own prose never
+  states becomes a `multiplechoice` keyed to the source answer, with the
+  module's own terms as distractors, disclosed — a blind solver cannot
+  recover a word the page never prints *(chapter 20: m58904's "cell
+  clumps or fragments")*.
 - A lettered identification ("(i)/(ii)/(iii): which is the tRNA") is one
   figure-keyed `multiplechoice` per thing; a many-letter labelling question
   is a `selfcheck` whose model answer is the letter→part mapping read
@@ -722,6 +817,15 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
 
 ### `sortbins`
 
+- A Check Your Understanding bullet whose graded form is a table's
+  `sortbins` renders AT THE NOTE'S POSITION in the body, not in Practice
+  — the checklist's "in the self-check that asks its contrast" means the
+  body item, and moving it to Practice leaves the bullet absent from the
+  body *(chapter 24: 24.3's four-strain *E. coli* contrast)*. Every item
+  must be true of exactly ONE bin against EVERY cell of the table, not
+  only the column it was lifted from (EHEC's diagnostic cell also names
+  LEE; ETEC's "watery diarrhea" is a substring of EIEC's cell); a bin
+  the table cannot give two unique items keeps one and the footer says so.
 - A one-item-per-bin labelling figure cannot be a `sortbins` (the
   interleave rule needs more same-bin runs than bins); it becomes
   per-letter `multiplechoice` items over the module's own part names
@@ -735,6 +839,20 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
   `acetone-butanol-ethanol`): identify that row by its other end products
   *(chapter 8)*. An enzyme→function table needs ≥2 items per bin, one from
   the cell and one from the body *(chapters 10–11)*.
+- When the bin-word lint flags a generic word in a module-printed label
+  (`cells` in `Helper T cells`), reword the ITEMS to avoid the word, never
+  trim the label to a phrase the module does not print *(chapters 17–18:
+  §18.3's Classes of T Cells)*. A converted body Check Your Understanding
+  item lives in the body only — placing it in `## Practice` too trips
+  `distinctItems` *(chapters 17–18)*.
+- An item's wording is cut from the row's own cell — a word from another
+  row's cell ("pollen" in the asthma item) or from outside the table
+  ("dust") makes the item bin under the wrong label *(chapter 19: §19.1's
+  Type I conditions)*.
+- A comparison table whose columns share an identical value in some rows
+  excludes those rows from the item rather than forcing an unguessable
+  label *(chapter 22: the influenza A/B/C table, where two of the three
+  types share a printed cell)*.
 
 ### Keys and `accept` lists
 
@@ -757,6 +875,33 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
 - A why-question keyed to one abstract noun is the weakest `textin` form;
   extend its accept list within the 4-word cap or ask it as a
   `multiplechoice` *(chapters 10–11)*.
+- A filler cloze may not be cut from the sentence an adjacent self-check
+  uses as its model answer — that re-asks the item and leaks its key
+  *(chapter 19: §19.4's "underlying cause")*.
+- When a cloze's blank sits directly before a parenthetical gloss
+  ("profound ________ (decrease in lymphocytes)"), the key is the
+  glossed TERM; put the modifier in the stem ("CD4 T-cell ________") and
+  the full phrase in `accept` *(chapter 19: a blind solver answered
+  "lymphopenia" against the key "CD4 T-cell lymphopenia")*.
+- A key printed as "A or B" where B is the module's own parenthetical
+  synonym for the same term ("equivalence zone (or zone of equivalence)")
+  is a `textin` keyed A with B in `accept` — not the two-answer "A or B"
+  rule *(chapter 20)*.
+- A run-facts `accept` member must not already print in the item's own
+  stem — grep the stem before naming an accept; the retype-hazard lint
+  rejected a Coombs'-reagent cloze's "antibodies" accept because the stem
+  itself already reads "antibodies" *(chapter 20: §20.3 Part C)*.
+- **A source Fill in the Blank whose key the module's BODY prose never
+  prints — only the exercise `<solution>` does — is `multiplechoice`, not
+  `textin`** (the chapter 20 rule): grep the body for the key before
+  keeping a `textin` *(chapter 25: 25.1's "the subclavian veins" — the
+  body only says "veins just above the heart"; the author kept a `textin`
+  and only the blind solver caught it)*. The body-never-prints-key test
+  also catches a key that appears only in the source's own Critical
+  Thinking stem or another Fill in the Blank's solution, never in this
+  question's body sentence — `multiplechoice` there too *(chapter 26:
+  26.2's "tetanospasmin" — the body prints only "tetanus neurotoxin
+  (TeNT)")*.
 
 ### Key terms
 
@@ -770,6 +915,18 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
   `aminoacyl-tRNA synthetase` exist) *(chapters 7, 10–11)*.
 - A module with no class-less `<term>` has no `## Key terms` heading; its
   fillers are summary/body clozes *(chapters 10–11)*.
+- The `terms` extractor missed four Glossary headwords this run — nested
+  emphasis (a headword wrapped in two `<emphasis>` tags) and a singular
+  body term against a plural headword — fixed in
+  `tools/source/microbiology-prep.py` with a regression test *(chapters
+  21–22)*. An author who gets "no glossary entry" for a term greps the
+  appendix (m58950) directly before concluding it is sentence-derived; the
+  scaffold script can still miss one.
+- **Run `microbiology-prep.py glossary <term>` for every term bold in the
+  module's `## Summary` before calling it absent from the Glossary** — bold
+  in the Summary is not proof a term is sentence-derived *(chapter 25:
+  25.3's author excluded "AIDS" from Key terms by assertion; the headword
+  exists)*.
 
 ### Figures, alts, and `longdesc`
 
@@ -783,7 +940,9 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
 - A figure that is a table of values is a table image: Markdown table from
   the image, the figure kept after it, said in the footer; a 700-character
   source alt is `longdesc` material; an empty CNXML caption means no
-  caption line *(chapter 8)*.
+  caption line *(chapter 8)*. The transcription is read off the image
+  itself, never off the source alt describing it — §19.1's Types alt
+  places "Local and systemic" on the wrong column *(chapter 19)*.
 - Multi-panel mechanism figures overshoot the 600-character alt cap on the
   first pass every time: draft the `longdesc` walk-through first, then the
   alt *(chapters 10–11)*.
@@ -792,6 +951,14 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
 
 ### Notation and source text
 
+- `T<sub>H</sub>1`, `T<sub>H</sub>2`, `T<sub>H</sub>17` and the TCR gene
+  segments `V<sub>α</sub>`, `J<sub>β</sub>` keep the HTML subscript in
+  prose, options, hints, headings, and table cells (no Unicode subscript
+  H or Greek letter exists; Biology's house form); inside `alt`/`longdesc`
+  and inside a selfcheck's CHECKS clauses (rendered raw) write `TH1`,
+  `V-alpha`. PGE₂ and β₂ microglobulin take the Unicode digit. The
+  unicode-math lint rejects a bare Greek letter inside an `answer` or
+  option string — spell `alpha`/`beta` there *(chapters 17–18)*.
 - Source `<equation>` elements that are reaction schemes are plain-text
   Unicode lines (arrows, subscripts), never `$…$`; an underbrace label
   becomes a disclosed parenthetical; a label is never carried from one
@@ -828,6 +995,9 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
   filler with its sentence is named — an unexplained gap between the
   source's exercise set and the Practice block is an oversight to the
   reader.
+- A footer names the correction made, never where it is logged or who it
+  was reported to ("reported for the errata log", "reported to the
+  parent") — lint-enforced since chapter 19.
 
 ## Knowledge checks
 

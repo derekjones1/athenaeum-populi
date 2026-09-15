@@ -210,7 +210,12 @@ def load_glossary():
 
 def variants(t):
     t = t.strip()
-    l = t.lower().translate(PRIMES)
+    # plain() renders a nested italics <emphasis> (e.g. a body <term> whose
+    # headword is a genus name, "*Acanthamoeba* keratitis") as markdown
+    # asterisks for display. Strip them before matching — load_glossary()
+    # strips the same asterisks from its headword keys, so leaving them in
+    # the query silently misses an entry that is actually indexed.
+    l = t.lower().translate(PRIMES).replace("*", "")
     out = [t, l, l + "s", l.replace("-", " "), l.replace(" ", "-")]
     # One hyphen at a time: `aminoacyl tRNA synthetase` ↔ `aminoacyl-tRNA synthetase`.
     parts = l.split(" ")
@@ -229,6 +234,8 @@ def variants(t):
         out.append(l[:-3] + "y")
     if l.endswith("s"):
         out.append(l[:-1])
+    if l.endswith("es"):
+        out.append(l[:-2])
     if l.endswith("a"):
         out += [l + "n", l[:-1] + "on"]
     if l.endswith("ae"):

@@ -54,6 +54,11 @@ life-sciences playbook: graded when one module artifact fixes the answer,
   `node -e 'import("./assets/js/lib/text/check-text.mjs").then(m=>console.log(m.checkText("<variant>","<answer>",{accept:"<accept>"})))'`
   (pass `{}` as the third argument when the item has no accept list).
   Report every wrongly rejected variant and every wrong answer accepted.
+  **Grep the module BODY (not the solutions) for every `textin` key** —
+  a source Fill in the Blank whose key only the solution prints, never the
+  body prose, needs `multiplechoice` (the chapter 20 rule); the author
+  kept a `textin` and only the blind solver caught it *(chapter 25: 25.1's
+  "the subclavian veins" — the body says "veins just above the heart")*.
 - **sortbins:** solve the mapping; report any item that reads as well
   under another bin, any item carrying a bin word, any bin label the
   module never prints.
@@ -64,6 +69,12 @@ life-sciences playbook: graded when one module artifact fixes the answer,
   (revert to selfcheck, or name the fixing sentence the author missed).
   Also hunt the reverse: an item left as a `selfcheck` that ONE sentence
   fixes. Stem = source question verbatim plus at most a referent.
+  **Composite keys were the top yield this run** *(chapter 25: a caption
+  verb stitched to a Link to Learning sentence; a bite sentence stitched to
+  a later "mouth" sentence, across three graded body items in two
+  sections)*: for every graded Check Your Understanding item, quote the ONE
+  sentence that fixes it and diff the key against it word by word — any
+  word the key carries from a second sentence fails.
 - **A figure-keyed or media-bearing item:** open the image and answer
   before looking at the page's key; confirm the ARTWORK draws the fact
   (an alt-only fact is not honest); confirm alt, caption, and `longdesc`
@@ -83,7 +94,9 @@ life-sciences playbook: graded when one module artifact fixes the answer,
   above a `textin` that is its key; a filler stem printing a key two groups
   away; a Practice hint leaking a body item's key.
 - An MC stem containing the key's distinguishing word; a second defensible
-  distractor.
+  distractor. **A hint that quotes the correct option's own distinguishing
+  phrase** is the same leak wearing the hint field instead of the stem
+  *(chapter 26: three of 26.2's hints did this)*.
 - The figure beside an item answering it in alt, caption, or `longdesc`.
 - **Reworded duplicates:** a Practice item re-asking a body item or another
   Practice item in other words (`distinctItems` is exact-match). Read the
@@ -107,6 +120,9 @@ life-sciences playbook: graded when one module artifact fixes the answer,
   and its abbreviation marked as two elements → one bullet.
 - Every keyed exercise: stem verbatim, options in source order, key = the
   source `<solution>`. An edited source option is a defect.
+  Straight quotes and apostrophes for the source's curly ones are the
+  corpus convention, not a departure *(chapter 23)*; a `**bold**` count
+  is a grep, not an impression — verify before reporting an unbolded term.
 - Every author-written model answer: **each `===CHECKS===` clause against
   the module**, not the page; a clause the module does not support, or
   drawn from another chapter, an appendix, or general knowledge, is a
@@ -151,8 +167,10 @@ For every `mediafigure`: open the vendored image AND the PDF page
 
 Every `Changes:` claim true of the page (counts of graded conversions,
 model answers, fillers, sentence-derived definitions, omitted items,
-one-word corrections, reorderings; no "logged as an erratum" claim — a run
-in flight says "reported to the parent for the errata log"); **re-derive
+one-word corrections, reorderings; a correction is named as a correction —
+"the source's Filiariasis corrected to Filariasis" — with no clause about
+where it is logged, neither "logged as an erratum" nor "reported to the
+parent"); **re-derive
 every count the footer states rather than reading it** (this run's checkers
 found four footers whose own claims were false); a footer describes the
 shipped page only — a clause about run machinery ("reported to the parent",

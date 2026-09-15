@@ -2734,6 +2734,39 @@ export function lintHugo(src, filename = '', options = {}) {
     }
   }
 
+  // ---- attribution footer: no run-machinery language -----------------------
+  // The `<small>` footer's `Changes:` clause names the correction made to
+  // the shipped page — never where it was found, filed, or reviewed.
+  // "logged as an erratum," "reported to the parent," "logged in the
+  // ledger," "flagged for the parent's adjudication," and "orchestrator"
+  // describe this run's own process, not the page; five of eleven authors
+  // in the chapters 13-14 wave hid a dropped exercise behind exactly this
+  // kind of sentence, and no other gate caught it. See
+  // docs/briefs/microbiology/checker.md §6 and docs/subjects/life-sciences.md's
+  // footer guidance. The playbook's own sanctioned phrase for a locally
+  // written item, "disclosed in the ledger" (never "logged"), is
+  // unaffected — this only trips on a bare `logged`, a `reported`/`flagged`
+  // aimed at "the parent", `errata log`, or `orchestrator`. The chapters
+  // 21-22 wave got three more run-machinery phrases past the lint — "media
+  // fetch"/"media pull" (the parent's media step, not the page), "parent
+  // notes" (the scratchpad file) — plus "run facts" (the parent's prep
+  // document) and "Part C" (the parent's decisions section) naming this
+  // run's own prep artifacts. "reported as a source defect" is NOT in the
+  // list: it is the established reader-facing disclosure on ~96 pages of
+  // both life-sciences books and names the correction, not the log.
+  const FOOTER_MACHINERY = /\blogged\b|\breported\s+(?:to|for)\s+the\s+(?:parent|errata)\b|\bfor\s+the\s+parent\b|\bflagged\b.{0,25}\bparent\b|\berrata log\b|\borchestrator\b|\bmedia (?:fetch|pull)\b|\bparent notes\b|\brun facts\b|\bPart C\b/gi;
+  // Footers and inline Source notes are the two reader-facing places a
+  // correction is disclosed; both must name the correction, not the log.
+  for (const m of mediaSrc.matchAll(/<small>[\s\S]*?<\/small>|\*\(Source note:[\s\S]*?\)\*/g)) {
+    const block = m[0];
+    for (const hit of block.matchAll(FOOTER_MACHINERY)) {
+      const quoteStart = Math.max(0, hit.index - 30);
+      const quoteEnd = Math.min(block.length, hit.index + hit[0].length + 30);
+      const quote = block.slice(quoteStart, quoteEnd).replace(/\s+/g, ' ').trim();
+      err(m.index + hit.index, `footer or Source note names run machinery (${JSON.stringify(quote)}); state the correction, not where it is logged`);
+    }
+  }
+
   // ---- Knowledge Check page rule -------------------------------------------
   if (isKnowledgeCheck) {
     for (const m of src.matchAll(/\bhint="/g)) {

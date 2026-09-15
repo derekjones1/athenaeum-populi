@@ -38,7 +38,9 @@ pages are still being written, so parity is only checked for what exists.
 Biology was `in-progress` while it was written, so `build-map`/`verify-map`
 printed it as, e.g., `45/47 chapters, 201/208 sections mapped` — visibly, not
 silently — until its last chapter landed; it is `complete` now. Microbiology
-is `in-progress` and prints as `11/26 chapters, 55/127 sections mapped`.
+was `in-progress` the same way, printing as, e.g., `25/26 chapters, 123/127
+sections mapped`; it is `complete` now, its last chapter (26) authored
+September 14, 2026.
 
 Every book's lock entry also carries a `contentPath` (for example
 `content/math/precalculus`, `content/life-health-sciences/biology`): the
@@ -140,7 +142,7 @@ not a publishing instruction.
 - `data/openstax/source-lock.json` (schema 2) records each bundle's
   official repository, current reviewed commit, module scope, and license,
   plus every book's collection, inferred PDF-era commit, and authoring status.
-- `data/openstax/source-map.json` (schema 2) connects all 560 authored
+- `data/openstax/source-map.json` (schema 2) connects all 609 authored
   local section paths to stable OpenStax module IDs and module SHA-256
   fingerprints, attributes each section to its bundle, and records per-book
   chapter and section coverage against the upstream collection.
@@ -198,10 +200,11 @@ same commit with confidence `inferred-from-local-pdf-date`: the local
 `sources/microbiology_-_WEB.pdf` was generated on September 2, 2026, after
 that commit, and its copyright page prints no revision number (only
 "original publication year 2016"), so the pin and the PDF are taken to be
-the same edition until a section audit says otherwise. The book is `in-progress`: `content/life-health-sciences/microbiology/_index.md`
-lists its authored chapters under `## Chapters` with the rest on its
-"Planned contents" list, and `verify-map` prints `16/26 chapters, 78/127
-sections mapped`. Its subject playbook is `docs/subjects/microbiology.md`;
+the same edition until a section audit says otherwise. The book is now
+`complete`: `content/life-health-sciences/microbiology/_index.md` lists all
+26 authored chapters under `## Chapters` (no "Planned contents" list
+remains), and `verify-map` prints `26/26 chapters, 127/127 sections
+mapped`. Its subject playbook is `docs/subjects/microbiology.md`;
 the collection is flat (no units), so the map records no `units` key for
 it. The chapter-by-chapter authoring log (September 5–8, 2026; chapter 8 landed September 7 and chapters 9–12 on September 8) moved to
 `docs/history/openstax-source-workflow.md`.

@@ -12,10 +12,11 @@ algebra books and Precalculus 2e, all four complete — also follow
 Biology 2e is pinned and `complete` (all 47 chapters, 208 sections, authored September 3, 2026); its
 subject-specific rules are in `docs/subjects/life-sciences.md` (the shelf's
 baseline) plus `docs/subjects/biology.md` (the book's delta), on top of the
-same source workflow. OpenStax Microbiology is pinned and `in-progress` (26
+same source workflow. OpenStax Microbiology is pinned and `complete` (26
 chapters, 127 sections; chapters 1–2 authored September 5, 2026, chapter 1
-as the pilot, chapters 3–4 on September 6, and chapters 5–16 through
-September 12); its rules are in
+as the pilot, chapters 3–4 on September 6, chapters 5–16 through
+September 12, chapters 17–20 on September 13, chapters 21–25 on
+September 14, and chapter 26 — its last — on September 14, 2026); its rules are in
 `docs/subjects/microbiology.md`, which also records how it differs from
 Biology 2e (unkeyed prose exercises, no per-module glossary, new box and
 item types). A Microbiology chapter is run from
@@ -48,13 +49,14 @@ themselves keep only what is still operative.
   three algebra books, `college-algebra-bundle` for Precalculus 2e,
   `biology-bundle` for Biology 2e, and `microbiology` for OpenStax
   Microbiology (a single-book repository, `osbooks-microbiology`, so the
-  bundle key has no `-bundle` suffix). The five finished books carry
+  bundle key has no `-bundle` suffix). All six books carry
   `authoringStatus: complete` (the four math books since August 29, 2026;
-  Biology 2e since September 3, 2026), so every upstream numbered section
+  Biology 2e since September 3, 2026; Microbiology since September 14, 2026),
+  so every upstream numbered section
   has a local page, chapter parity is enforced book-wide, and
-  `build-map`/`verify-map` report them at full coverage; Microbiology is
-  `in-progress` (pinned September 5, 2026, its first two chapters authored
-  the same day, chapters 3–4 on September 6, chapters 5–8 on September 7, chapters 9–12 on September 8, and chapters 13–14 on September 12) and is reported as `14/26 chapters, 70/127 sections mapped`. Biology 2e's sections live under
+  `build-map`/`verify-map` report them at full coverage. Microbiology
+  was pinned September 5, 2026, its first two chapters authored
+  the same day, chapters 3–4 on September 6, chapters 5–8 on September 7, chapters 9–12 on September 8, chapters 13–14 on September 12, chapters 15–16 on September 12, chapters 17–20 on September 13, chapters 21–25 on September 14, and chapter 26 — its last, completing the book's 26 chapters and 127 sections — on September 14, 2026. Biology 2e's sections live under
   `content/life-health-sciences/biology` (each lock entry carries a
   `contentPath`, so a book need not live under `content/math`) and its
   subject playbooks (`docs/subjects/life-sciences.md` plus

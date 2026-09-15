@@ -3160,3 +3160,37 @@ test('a Markdown link whose target is an ellipsis, blank, or a TODO marker is a 
   const ok = '# T\n\nSee [16.1](/x/y/16-a/01-c/) and `[quoted](…)` in code. A footnote [^1] too.\n\n[^1]: note\n';
   assert.deepEqual(lintHugo(ok, 'content/x/y/16-a/03-b.md').errors.filter((e) => e.includes('placeholder link target')), []);
 });
+
+// ---------------------------------------------------------------------------
+// attribution footer — no run-machinery language
+
+test('an attribution footer naming run machinery (where a correction was logged or reported) is an error', () => {
+  const wrap = (small) => `# T\n\nProse.\n\n<small>This section is adapted from [Book, Section 1.1] by Authors and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). ${small}</small>\n`;
+  const cases = [
+    'Changes: a typo corrected in place, logged as an erratum.',
+    'Changes: two suspected source defects, reported to the parent for adjudication.',
+    'Changes: an ambiguous key, flagged here for the parent to adjudicate.',
+    'Changes: a source-alt defect logged in the ledger rather than the errata file.',
+    'Changes: see the errata log for the suspected source defect.',
+    'Changes: helper cells serve as the central orchestrator of the response.',
+    'Changes: this table was vendored by the media fetch and de-vendored here.',
+    'Changes: an image the media pull vendored is de-vendored per the playbook.',
+    'Changes: see parent notes for the source of this correction.',
+    'Changes: a value decided in run facts before the wave.',
+    'Changes: the route named in Part C is now a real link.',
+  ];
+  for (const small of cases) {
+    const errors = lintHugo(wrap(small), 'content/x/y/01-a/01-b.md').errors
+      .filter((e) => e.includes('names run machinery'));
+    assert.equal(errors.length, 1, `expected a footer-machinery error for ${JSON.stringify(small)}, got ${JSON.stringify(errors)}`);
+  }
+  // The playbook's own sanctioned phrasing for a locally written item —
+  // "disclosed in/here and in the ledger" — is never a bare "logged" and
+  // must not trip the rule, nor may an unrelated "reported"/"logged" used
+  // outside the footer (a `logged` occurring in body prose, out of any
+  // `<small>` block, is not this rule's concern).
+  const clean = wrap('A locally written multiple choice, disclosed here and in the ledger. A statistic reported below: 38 cases. A mislabeled cell reported as a source defect and corrected.');
+  assert.deepEqual(lintHugo(clean, 'content/x/y/01-a/01-b.md').errors.filter((e) => e.includes('names run machinery')), []);
+  const outsideFooter = '# T\n\nA study logged 38 reported cases.\n\n<small>Adapted from [Book] by Authors, © OpenStax. Changes: none.</small>\n';
+  assert.deepEqual(lintHugo(outsideFooter, 'content/x/y/01-a/01-b.md').errors.filter((e) => e.includes('names run machinery')), []);
+});

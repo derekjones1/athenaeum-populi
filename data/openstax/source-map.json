@@ -165,11 +165,11 @@
     "microbiology": {
       "bundle": "microbiology",
       "contentPath": "content/life-health-sciences/microbiology",
-      "authoringStatus": "in-progress",
+      "authoringStatus": "complete",
       "upstreamChapters": 26,
       "upstreamSections": 127,
-      "localChapters": 16,
-      "mappedSections": 78
+      "localChapters": 26,
+      "mappedSections": 127
     }
   },
   "sections": [
@@ -2746,6 +2746,447 @@
       "moduleId": "m58874",
       "sourceTitle": "Global Public Health",
       "moduleSha256": "c89dd79115fe3c3dbc1bcbc10e776cb8b28559a49644045262c4844a24ad5e3e"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/17-innate-nonspecific-host-defenses/01-physical-defenses.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "17.1",
+      "moduleId": "m58877",
+      "sourceTitle": "Physical Defenses",
+      "moduleSha256": "b945d665cc26ce30052ecd35e9b25171d897e11942a3fd6cdcd01d25c9bc67d5"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/17-innate-nonspecific-host-defenses/02-chemical-defenses.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "17.2",
+      "moduleId": "m58878",
+      "sourceTitle": "Chemical Defenses",
+      "moduleSha256": "46a3d35b48f3c3f790ace2e1e5a74507cb4b5fb05d0a7e2f40397a540a7ccc0e"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/17-innate-nonspecific-host-defenses/03-cellular-defenses.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "17.3",
+      "moduleId": "m58879",
+      "sourceTitle": "Cellular Defenses",
+      "moduleSha256": "a1834ae488cd5c152856f1e9c7f394312fc6a5a69985893df94445cfe33eaad5"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/17-innate-nonspecific-host-defenses/04-pathogen-recognition-and-phagocytosis.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "17.4",
+      "moduleId": "m58880",
+      "sourceTitle": "Pathogen Recognition and Phagocytosis",
+      "moduleSha256": "1a44abf524eca93d52ef5fa5e12a31cf8506b231d1f4027ce4fb720eca80df76"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/17-innate-nonspecific-host-defenses/05-inflammation-and-fever.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "17.5",
+      "moduleId": "m58881",
+      "sourceTitle": "Inflammation and Fever",
+      "moduleSha256": "b95c49dde85d9c6368f9f787c590f803160969fc068c26ee6d1f030c64bdcf44"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/18-adaptive-specific-host-defenses/01-overview-of-specific-adaptive-immunity.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "18.1",
+      "moduleId": "m58884",
+      "sourceTitle": "Overview of Specific Adaptive Immunity",
+      "moduleSha256": "bbadb2370fe0e2a13ae7d9cfa0c7cce7fee12450d0d73031e631472c5001e5fe"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/18-adaptive-specific-host-defenses/02-major-histocompatibility-complexes-and-antigen-presenting-cells.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "18.2",
+      "moduleId": "m58885",
+      "sourceTitle": "Major Histocompatibility Complexes and Antigen-Presenting Cells",
+      "moduleSha256": "bac959ad5dfbf43208cad37a0c4f3b09d5b3d584113a6badf0d170ed2384fcc2"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/18-adaptive-specific-host-defenses/03-t-lymphocytes-and-cellular-immunity.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "18.3",
+      "moduleId": "m58886",
+      "sourceTitle": "T Lymphocytes and Cellular Immunity",
+      "moduleSha256": "7230d6779c97cda19a0a359c42657cfa8dad70e4f6736ce3e2bf57c847861583"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/18-adaptive-specific-host-defenses/04-b-lymphocytes-and-humoral-immunity.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "18.4",
+      "moduleId": "m58887",
+      "sourceTitle": "B Lymphocytes and Humoral Immunity",
+      "moduleSha256": "d06dda84ea9786bd587d0e90e4ed29db1db8bc6a6008b51eedef42f2e50e3e49"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/18-adaptive-specific-host-defenses/05-vaccines.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "18.5",
+      "moduleId": "m58888",
+      "sourceTitle": "Vaccines",
+      "moduleSha256": "013b9a6fb08389bd50db9582d747b3de966fb1013ecd68041c4d74516b5f2359"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/19-diseases-of-the-immune-system/01-hypersensitivities.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "19.1",
+      "moduleId": "m58892",
+      "sourceTitle": "Hypersensitivities",
+      "moduleSha256": "d5d4a8c12d742839c9d6dbbf3f82b1ca7c96181282c441a643c4d5d44b5cb6aa"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/19-diseases-of-the-immune-system/02-autoimmune-disorders.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "19.2",
+      "moduleId": "m58893",
+      "sourceTitle": "Autoimmune Disorders",
+      "moduleSha256": "60f786e11b2fa7b9c7107e9bf1c379e64d57baf602e2abbd0c37be3ebc3e8d7b"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/19-diseases-of-the-immune-system/03-organ-transplantation-and-rejection.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "19.3",
+      "moduleId": "m58894",
+      "sourceTitle": "Organ Transplantation and Rejection",
+      "moduleSha256": "b3710c8909a58d8d70950656b25b94ee81e91220ae2cdab09fa08b2783609c8d"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/19-diseases-of-the-immune-system/04-immunodeficiency.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "19.4",
+      "moduleId": "m58895",
+      "sourceTitle": "Immunodeficiency",
+      "moduleSha256": "1953dc00b85f3df1490577357679087312e858690d3a8a6d65a803b6812cc73e"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/19-diseases-of-the-immune-system/05-cancer-immunobiology-and-immunotherapy.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "19.5",
+      "moduleId": "m58896",
+      "sourceTitle": "Cancer Immunobiology and Immunotherapy",
+      "moduleSha256": "31592af88241273dc1dc5a8d514240ddfd882ec556fb086ed8e50dc86b61cb85"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/20-laboratory-analysis-of-the-immune-response/01-polyclonal-and-monoclonal-antibody-production.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "20.1",
+      "moduleId": "m58900",
+      "sourceTitle": "Polyclonal and Monoclonal Antibody Production",
+      "moduleSha256": "9f07af5a02c5eb968c63ba15b4d2102bad8928e53bc133b5560b200c0dee8750"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/20-laboratory-analysis-of-the-immune-response/02-detecting-antigen-antibody-complexes.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "20.2",
+      "moduleId": "m58901",
+      "sourceTitle": "Detecting Antigen-Antibody Complexes",
+      "moduleSha256": "d3616f0bba5cc42a7a3fdb3c0bb9a459e599066e6a69a92c4823ff3364d8b60e"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/20-laboratory-analysis-of-the-immune-response/03-agglutination-assays.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "20.3",
+      "moduleId": "m58902",
+      "sourceTitle": "Agglutination Assays",
+      "moduleSha256": "88d2dd1e3a2d964421733f2a4df77fb3a0e97e3a52ebc12f5c4f7e256a9c974e"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/20-laboratory-analysis-of-the-immune-response/04-eias-and-elisas.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "20.4",
+      "moduleId": "m58903",
+      "sourceTitle": "EIAs and ELISAs",
+      "moduleSha256": "05294cb8caada58249a6340ff110d2fe537d77d69b3d62fa0028b1df2849e0f1"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/20-laboratory-analysis-of-the-immune-response/05-fluorescent-antibody-techniques.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "20.5",
+      "moduleId": "m58904",
+      "sourceTitle": "Fluorescent Antibody Techniques",
+      "moduleSha256": "a623711b816a1179658cb23c393d854243a0fa7156313b4fc1fc5b0754b5602d"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/21-skin-and-eye-infections/01-anatomy-and-normal-microbiota-of-the-skin-and-eyes.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "21.1",
+      "moduleId": "m58906",
+      "sourceTitle": "Anatomy and Normal Microbiota of the Skin and Eyes",
+      "moduleSha256": "695f123f56ce9ed4a954ecbc01119c8cd4aeb483edcf4d95ba7a6b2d2d7fe4dd"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/21-skin-and-eye-infections/02-bacterial-infections-of-the-skin-and-eyes.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "21.2",
+      "moduleId": "m58907",
+      "sourceTitle": "Bacterial Infections of the Skin and Eyes",
+      "moduleSha256": "549de70676453839728196578c83e93890f19870a8fd668dd09cf58e068fc749"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/21-skin-and-eye-infections/03-viral-infections-of-the-skin-and-eyes.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "21.3",
+      "moduleId": "m58908",
+      "sourceTitle": "Viral Infections of the Skin and Eyes",
+      "moduleSha256": "914ac10ca096db4e7cad7f201c76120ad64fed94b858c14a1e102f83dd2f2dd5"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/21-skin-and-eye-infections/04-mycoses-of-the-skin.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "21.4",
+      "moduleId": "m58909",
+      "sourceTitle": "Mycoses of the Skin",
+      "moduleSha256": "70743ab6f87573e1f0f1bd8d27206ff8c4c7f50b76027930aceca697cb35a780"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/21-skin-and-eye-infections/05-protozoan-and-helminthic-infections-of-the-skin-and-eyes.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "21.5",
+      "moduleId": "m58910",
+      "sourceTitle": "Protozoan and Helminthic Infections of the Skin and Eyes",
+      "moduleSha256": "aa207de5b92202e8373a9d428377577381c3bc2515ed04927550e0be075069c7"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/22-respiratory-system-infections/01-anatomy-and-normal-microbiota-of-the-respiratory-tract.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "22.1",
+      "moduleId": "m58912",
+      "sourceTitle": "Anatomy and Normal Microbiota of the Respiratory Tract",
+      "moduleSha256": "7c0b0cbffe88ecd3eeca897e1750acfcc49a1db745591af803e98be816e0d557"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/22-respiratory-system-infections/02-bacterial-infections-of-the-respiratory-tract.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "22.2",
+      "moduleId": "m58913",
+      "sourceTitle": "Bacterial Infections of the Respiratory Tract",
+      "moduleSha256": "2dad8b33e72e214db8f1d1621ddf638dae06a71e96b6285d328d5dd46d7870d1"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/22-respiratory-system-infections/03-viral-infections-of-the-respiratory-tract.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "22.3",
+      "moduleId": "m58914",
+      "sourceTitle": "Viral Infections of the Respiratory Tract",
+      "moduleSha256": "51b517618bc4eee64ea0c3e247e1bc12cf7545601f3990e8e77cbff9a35428db"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/22-respiratory-system-infections/04-respiratory-mycoses.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "22.4",
+      "moduleId": "m58915",
+      "sourceTitle": "Respiratory Mycoses",
+      "moduleSha256": "373ecf2089c6fc51e46f6eb800b03cf0ea3f7d14f0b034cea01886330f857284"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/23-urogenital-system-infections/01-anatomy-and-normal-microbiota-of-the-urogenital-tract.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "23.1",
+      "moduleId": "m58917",
+      "sourceTitle": "Anatomy and Normal Microbiota of the Urogenital Tract",
+      "moduleSha256": "b9f14657a0a84d5ed15026a1b5a0a1bc182e19305c83ee722951dff2fdfd2450"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/23-urogenital-system-infections/02-bacterial-infections-of-the-urinary-system.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "23.2",
+      "moduleId": "m58918",
+      "sourceTitle": "Bacterial Infections of the Urinary System",
+      "moduleSha256": "a2369ed2170341e18c9db2a436eb999b4d03911659ac0bcd876f23cd93ff12d0"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/23-urogenital-system-infections/03-bacterial-infections-of-the-reproductive-system.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "23.3",
+      "moduleId": "m58919",
+      "sourceTitle": "Bacterial Infections of the Reproductive System",
+      "moduleSha256": "412b726b44a9a520f36767eac5233d496363d3236ff78bec954eaf1f4df53912"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/23-urogenital-system-infections/04-viral-infections-of-the-reproductive-system.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "23.4",
+      "moduleId": "m58920",
+      "sourceTitle": "Viral Infections of the Reproductive System",
+      "moduleSha256": "5f3c29539666b65a3222e00bb4965df1d0bbc57f778d73392fe3e0d21649216a"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/23-urogenital-system-infections/05-fungal-infections-of-the-reproductive-system.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "23.5",
+      "moduleId": "m58921",
+      "sourceTitle": "Fungal Infections of the Reproductive System",
+      "moduleSha256": "eb1aa94f8e166d487700f46b89011879eacd6ec9b6d590b5f0047570bb814ede"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/23-urogenital-system-infections/06-protozoan-infections-of-the-urogenital-system.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "23.6",
+      "moduleId": "m58922",
+      "sourceTitle": "Protozoan Infections of the Urogenital System",
+      "moduleSha256": "83db53512b7fd35bab13a881b5dfe0dc7c33af9c1aaee9e0442c105d5d7e2617"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/24-digestive-system-infections/01-anatomy-and-normal-microbiota-of-the-digestive-system.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "24.1",
+      "moduleId": "m58924",
+      "sourceTitle": "Anatomy and Normal Microbiota of the Digestive System",
+      "moduleSha256": "a507079f7a5cf202f164bfff95644ace662daf0cf56896b7be196eeda7e3706f"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/24-digestive-system-infections/02-microbial-diseases-of-the-mouth-and-oral-cavity.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "24.2",
+      "moduleId": "m58925",
+      "sourceTitle": "Microbial Diseases of the Mouth and Oral Cavity",
+      "moduleSha256": "0aa0e2d920c42e4487e69dbadccdafe44d5fbe3d538e8083fa2d29e4cd94896a"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/24-digestive-system-infections/03-bacterial-infections-of-the-gastrointestinal-tract.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "24.3",
+      "moduleId": "m58933",
+      "sourceTitle": "Bacterial Infections of the Gastrointestinal Tract",
+      "moduleSha256": "0a5ce3f660b61dc93c2e2e1602e998796d40c6eaac13f2d53292fbf1c816f6d3"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/24-digestive-system-infections/04-viral-infections-of-the-gastrointestinal-tract.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "24.4",
+      "moduleId": "m58930",
+      "sourceTitle": "Viral Infections of the Gastrointestinal Tract",
+      "moduleSha256": "ca3c13cafa4130dc1b00c493ac376c715779b71b18084d2f804600dbee2dcf7a"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/24-digestive-system-infections/05-protozoan-infections-of-the-gastrointestinal-tract.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "24.5",
+      "moduleId": "m58931",
+      "sourceTitle": "Protozoan Infections of the Gastrointestinal Tract",
+      "moduleSha256": "fd9f5968169cf9220f00082952a8af4c70de93473cc708599e8a1379b9737b3a"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/24-digestive-system-infections/06-helminthic-infections-of-the-gastrointestinal-tract.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "24.6",
+      "moduleId": "m58932",
+      "sourceTitle": "Helminthic Infections of the Gastrointestinal Tract",
+      "moduleSha256": "f1946d012bc3a3a3936f4f3993fe196b9294385cda0f842c025fb9a4b379437e"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/25-circulatory-and-lymphatic-system-infections/01-anatomy-of-the-circulatory-and-lymphatic-systems.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "25.1",
+      "moduleId": "m58945",
+      "sourceTitle": "Anatomy of the Circulatory and Lymphatic Systems",
+      "moduleSha256": "c9162c5dfc574888bd17824eb8ebccaa6bf296d6e7d3c356ca5a0ce35086e5c0"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/25-circulatory-and-lymphatic-system-infections/02-bacterial-infections-of-the-circulatory-and-lymphatic-systems.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "25.2",
+      "moduleId": "m58936",
+      "sourceTitle": "Bacterial Infections of the Circulatory and Lymphatic Systems",
+      "moduleSha256": "31cea7503e967801ae1b255174a84c680d22c85d09123a23663b35e01e3aeb10"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/25-circulatory-and-lymphatic-system-infections/03-viral-infections-of-the-circulatory-and-lymphatic-systems.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "25.3",
+      "moduleId": "m58937",
+      "sourceTitle": "Viral Infections of the Circulatory and Lymphatic Systems",
+      "moduleSha256": "b2a60270dc4922d3fd01d8b5607eaa1f002bfe40849261461a01fc613c61d8f5"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/25-circulatory-and-lymphatic-system-infections/04-parasitic-infections-of-the-circulatory-and-lymphatic-systems.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "25.4",
+      "moduleId": "m58938",
+      "sourceTitle": "Parasitic Infections of the Circulatory and Lymphatic Systems",
+      "moduleSha256": "e84db3186977e036b2795373bd38ceb0d6a3b2394881727fd235b1623c2dfc87"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/26-nervous-system-infections/01-anatomy-of-the-nervous-system.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "26.1",
+      "moduleId": "m58940",
+      "sourceTitle": "Anatomy of the Nervous System",
+      "moduleSha256": "502e1d6a0e1c70c32b7a6b847113592bfd928c77078bfa79af39d105721bb8b3"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/26-nervous-system-infections/02-bacterial-diseases-of-the-nervous-system.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "26.2",
+      "moduleId": "m58941",
+      "sourceTitle": "Bacterial Diseases of the Nervous System",
+      "moduleSha256": "d0ffc3e2906dc88fb9c36449e384202c51005a31493e4225f0a1994622ff4092"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/26-nervous-system-infections/03-acellular-diseases-of-the-nervous-system.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "26.3",
+      "moduleId": "m58942",
+      "sourceTitle": "Acellular Diseases of the Nervous System",
+      "moduleSha256": "87dc6968a78eafa6f862bf4569050dec815ea04f8a53b8108fc51c69b5a7668b"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/26-nervous-system-infections/04-fungal-and-parasitic-diseases-of-the-nervous-system.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "26.4",
+      "moduleId": "m58943",
+      "sourceTitle": "Fungal and Parasitic Diseases of the Nervous System",
+      "moduleSha256": "0329ab25d39e51f383d18184ecddbcb4d4a8b9acc6664500df32c63ff7ff9daf"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

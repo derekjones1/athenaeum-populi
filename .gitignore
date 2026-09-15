@@ -34,3 +34,5 @@
 # committed. Nothing here is a build input; delete the directory whenever.
 /_to_delete/
 /docs/accounts-plan.md
+
+__pycache__/

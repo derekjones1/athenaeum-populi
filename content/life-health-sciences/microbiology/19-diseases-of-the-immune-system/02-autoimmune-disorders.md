@@ -1,0 +1,308 @@
+---
+title: Autoimmune Disorders
+description: >-
+  Why autoimmune disorders develop, and organ-specific and systemic
+  examples — celiac disease, Graves and Hashimoto thyroid disorders, type 1
+  diabetes, Addison disease, multiple sclerosis, myasthenia gravis,
+  psoriasis, rheumatoid arthritis, and lupus — adapted from OpenStax
+  Microbiology, Section 19.2.
+source_section: "19.2"
+weight: 2
+---
+
+{{< callout type="info" >}}
+**By the end of this section, you will be able to:**
+
+- Explain why autoimmune disorders develop
+- Provide a few examples of organ-specific and systemic autoimmune diseases
+{{< /callout >}}
+
+In 1970, artist Walt Kelly developed a poster promoting Earth Day, featuring a character from *Pogo*, his daily newspaper comic strip. In the poster, Pogo looks out across a litter-strewn forest and says wryly, "We have met the enemy and he is us." Pogo was not talking about the human immune system, but he very well could have been. Although the immune system protects the body by attacking invading "enemies" (pathogens), in some cases, the immune system can mistakenly identify the body's own cells as the enemy, resulting in **autoimmune disease**.
+
+Autoimmune diseases are those in which the body is attacked by its own specific adaptive immune response. In normal, healthy states, the immune system induces **tolerance**, which is a lack of an anti-self immune response. However, with autoimmunity, there is a loss of immune tolerance, and the mechanisms responsible for autoimmune diseases include type II, III, and IV hypersensitivity reactions. Autoimmune diseases can have a variety of mixed symptoms that flare up and disappear, making diagnosis difficult.
+
+The causes of autoimmune disease are a combination of the individual's genetic makeup and the effect of environmental influences, such as sunlight, infections, medications, and environmental chemicals. However, the vagueness of this list reflects our poor understanding of the etiology of these diseases. Except in a very few specific diseases, the initiation event(s) of most autoimmune states has not been fully characterized.
+
+There are several possible causes for the origin of autoimmune diseases and autoimmunity is likely due to several factors. Evidence now suggests that regulatory T and B cells play an essential role in the maintenance of tolerance and prevention of autoimmune responses. The regulatory T cells are especially important for inhibiting autoreactive T cells that are not eliminated during thymic selection and escape the thymus (see [T Lymphocytes and Cellular Immunity](/life-health-sciences/microbiology/18-adaptive-specific-host-defenses/03-t-lymphocytes-and-cellular-immunity/)). In addition, antigen mimicry between pathogen antigens and our own self antigens can lead to cross-reactivity and autoimmunity. Hidden self-antigens may become exposed because of trauma, drug interactions, or disease states, and trigger an autoimmune response. All of these factors could contribute to autoimmunity. Ultimately, damage to tissues and organs in the autoimmune disease state comes as a result of inflammatory responses that are inappropriate; therefore, treatment often includes immunosuppressive drugs and corticosteroids.
+
+## Organ-Specific Autoimmune Diseases
+
+Some autoimmune diseases are considered organ specific, meaning that the immune system targets specific organs or tissues. Examples of organ-specific autoimmune diseases include celiac disease, Graves disease, Hashimoto thyroiditis, type I diabetes mellitus, and Addison disease.
+
+### Celiac Disease
+
+Celiac disease is largely a disease of the small intestine, although other organs may be affected. People in their 30s and 40s, and children are most commonly affected, but **celiac disease** can begin at any age. It results from a reaction to proteins, commonly called gluten, found mainly in wheat, barley, rye, and some other grains. The disease has several genetic causes (predispositions) and poorly understood environmental influences. On exposure to gluten, the body produces various autoantibodies and an inflammatory response. The inflammatory response in the small intestine leads to a reduction in the depth of the microvilli of the mucosa, which hinders absorption and can lead to weight loss and anemia. The disease is also characterized by diarrhea and abdominal pain, symptoms that are often misdiagnosed as irritable bowel syndrome.
+
+Diagnosis of celiac disease is accomplished from serological tests for the presence of primarily IgA antibodies to components of gluten, the transglutinaminase enzyme, and autoantibodies to endomysium, a connective tissue surrounding muscle fibers. Serological tests are typically followed up with endoscopy and biopsy of the duodenal mucosa. Serological screening surveys have found about 1% of individuals in the United Kingdom are positive even though they do not all display symptoms (D.A. Van Heel and J. West, "Recent Advances in Coeliac Disease," *Gut* 55, no. 7 (2006): 1037–1046). This early recognition allows for more careful monitoring and prevention of severe disease.
+
+Celiac disease is treated with complete removal of gluten-containing foods from the diet, which results in improved symptoms and reduced risk of complications. Other theoretical approaches include breeding grains that do not contain the immunologically reactive components or developing dietary supplements that contain enzymes that break down the protein components that cause the immune response (Van Heel and West, "Recent Advances in Coeliac Disease").
+
+### Disorders of the Thyroid
+
+**Graves disease** is the most common cause of hyperthyroidism in the United States. Symptoms of Graves disease result from the production of thyroid-stimulating immunoglobulin (TSI), also called TSH-receptor antibody. TSI targets and binds to the receptor for thyroid stimulating hormone (TSH), which is naturally produced by the pituitary gland. TSI may cause conflicting symptoms because it may stimulate the thyroid to make too much thyroid hormone or block thyroid hormone production entirely, making diagnosis more difficult. Signs and symptoms of Graves disease include heat intolerance, rapid and irregular heartbeat, weight loss, goiter (a swollen thyroid gland, protruding under the skin of the throat, shown below), and exophthalmia (bulging eyes), often referred to as Graves ophthalmopathy (also shown below).
+
+The most common cause of hypothyroidism in the United States is **Hashimoto thyroiditis**, also called chronic lymphocytic thyroiditis. Patients with Hashimoto thyroiditis often develop a spectrum of different diseases because they are more likely to develop additional autoimmune diseases such as Addison disease (discussed later in this section), type 1 diabetes, rheumatoid arthritis, and celiac disease. Hashimoto thyroiditis is a T<sub>H</sub>1 cell-mediated disease that occurs when the thyroid gland is attacked by cytotoxic lymphocytes, macrophages, and autoantibodies. This autoimmune response leads to numerous symptoms that include goiter (described above), cold intolerance, muscle weakness, painful and stiff joints, depression, and memory loss.
+
+{{< mediafigure src="microbiology/OSC_Microbio_19_02_Auto" alt="A photo of a person's neck and lower face, showing a large, smooth swelling protruding beneath the skin at the front of the throat." kind="photo" eager="true" >}}
+Goiter, a hypertrophy of the thyroid, is a symptom of Graves disease and Hashimoto thyroiditis.
+{{< /mediafigure >}}
+
+{{< mediafigure src="microbiology/OSC_Microbio_19_02_exophth" alt="A close-up photo of a person's face showing both eyes bulging prominently outward, with white sclera visible above the iris." kind="photo" >}}
+Exophthalmia, or Graves ophthalmopathy, is a sign of Graves disease. (credit: modification of work by Jonathan Trobe, University of Michigan Kellogg Eye Center)
+{{< /mediafigure >}}
+
+### Type 1 Diabetes
+
+Juvenile diabetes, or **type 1 diabetes mellitus**, is usually diagnosed in children and young adults. It is a T-cell-dependent autoimmune disease characterized by the selective destruction of the β cells of the islets of Langerhans in the pancreas by CD4 T<sub>H</sub>1-mediated CD8 T cells, anti-β-cell antibodies, and macrophage activity. There is also evidence that viral infections can have either a potentiating or inhibitory role in the development of type 1 diabetes (T1D) mellitus. The destruction of the β cells causes a lack of insulin production by the pancreas. In T1D, β-cell destruction may take place over several years, but symptoms of hyperglycemia, extreme increase in thirst and urination, weight loss, and extreme fatigue usually have a sudden onset, and diagnosis usually does not occur until most β cells have already been destroyed.
+
+### Autoimmune Addison Disease
+
+Destruction of the adrenal glands (the glands lying above the kidneys that produce glucocorticoids, mineralocorticoids, and sex steroids) is the cause of **Addison disease**, also called primary adrenal insufficiency (PAI). Today, up to 80% of Addison disease cases are diagnosed as autoimmune Addison disease (AAD), which is caused by an autoimmune response to adrenal tissues disrupting adrenal function. Disruption of adrenal function causes impaired metabolic processes that require normal steroid hormone levels, causing signs and symptoms throughout the body. There is evidence that both humoral and CD4 T<sub>H</sub>1-driven CD8 T-cell–mediated immune mechanisms are directed at the adrenal cortex in AAD. There is also evidence that the autoimmune response is associated with autoimmune destruction of other endocrine glands as well, such as the pancreas and thyroid, conditions collectively referred to as autoimmune polyendocrine syndromes (APS). In up to 80% of patients with AAD, antibodies are produced to three enzymes involved in steroid synthesis: 21-hydroxylase (21-OH), 17α-hydroxylase, and cholesterol side-chain–cleaving enzyme (P. Martorell et al., "Autoimmunity in Addison's Disease," *Netherlands Journal of Medicine* 60, no. 7 (2002): 269–275). The most common autoantibody found in AAD is to 21-OH, and antibodies to any of the key enzymes for steroid production are diagnostic for AAD. The adrenal cortex cells are targeted, destroyed, and replaced with fibrous tissue by immune-mediated inflammation. In some patients, at least 90% of the adrenal cortex is destroyed before symptoms become diagnostic.
+
+Symptoms of AAD include weakness, nausea, decreased appetite, weight loss, hyperpigmentation (shown below), hyperkalemia (elevated blood potassium levels), hyponatremia (decreased blood sodium levels), hypoglycemia (decreased levels of blood sugar), hypotension (decreased blood pressure), anemia, lymphocytosis (increased levels of lymphocytes), and fatigue. *(Source note: the source says "decreased levels of white blood cells"; lymphocytosis is by definition an increased lymphocyte count, and relative lymphocytosis alongside eosinophilia and normochromic anemia is a documented feature of Addison disease in the endocrinology literature, so the module's own parenthetical gloss has the direction backwards.)* Under extreme stress, such as surgery, accidental trauma, or infection, patients with AAD may experience an adrenal crisis that causes the patient to vomit, experience abdominal pain, back or leg cramps, and even severe hypotension leading to shock.
+
+{{< mediafigure src="microbiology/OSC_Microbio_19_02_hyperpig" alt="A photo of two open palms held up, both showing a reddish-brown discoloration across the skin." kind="photo" >}}
+Hyperpigmentation is a sign of Addison disease. (credit: modification of work by Petros Perros)
+{{< /mediafigure >}}
+
+**Check Your Understanding**
+
+{{< selfcheck question="What are the names of autoimmune diseases that interfere with hormone gland function?" hint="This section discusses two thyroid disorders, one adrenal disorder, and one pancreatic disorder." >}}
+The organ-specific autoimmune diseases in this section that interfere with hormone gland function are Graves disease and Hashimoto thyroiditis, which affect the thyroid gland, Addison disease, which affects the adrenal glands, and type 1 diabetes mellitus, which affects the insulin-producing pancreas.
+===CHECKS===
+Graves disease and Hashimoto thyroiditis affect the thyroid gland
+Addison disease affects the adrenal glands
+type 1 diabetes mellitus affects the insulin-producing pancreas
+{{< /selfcheck >}}
+
+{{< selfcheck question="Describe how the mechanisms of Graves disease and Hashimoto thyroiditis differ." hint="One disease is driven by an antibody that binds a hormone receptor; the other is a cell-mediated attack on the gland itself." >}}
+Graves disease is caused by thyroid-stimulating immunoglobulin (TSI), an autoantibody that binds to the receptor for thyroid-stimulating hormone and can either stimulate the thyroid to make too much hormone or block hormone production entirely. Hashimoto thyroiditis is a T<sub>H</sub>1 cell-mediated disease in which cytotoxic lymphocytes, macrophages, and autoantibodies directly attack the thyroid gland, causing hypothyroidism.
+===CHECKS===
+Graves disease is caused by TSI, an autoantibody that binds the TSH receptor and can stimulate or block thyroid hormone production
+Hashimoto thyroiditis is a TH1 cell-mediated disease in which cytotoxic lymphocytes, macrophages, and autoantibodies attack the thyroid gland
+{{< /selfcheck >}}
+
+{{< selfcheck question="Name the cells that are destroyed in type 1 diabetes mellitus and describe the result." hint="These cells sit in a cluster inside the pancreas, and they are the ones that make insulin." >}}
+The β cells of the islets of Langerhans in the pancreas are selectively destroyed, by CD4 T<sub>H</sub>1-mediated CD8 T cells, anti-β-cell antibodies, and macrophage activity. Their destruction causes a lack of insulin production, leading to hyperglycemia along with extreme thirst and urination, weight loss, and extreme fatigue.
+===CHECKS===
+the β cells of the islets of Langerhans in the pancreas are selectively destroyed
+their destruction causes a lack of insulin production, leading to hyperglycemia
+{{< /selfcheck >}}
+
+## Systemic Autoimmune Diseases
+
+Whereas organ-specific autoimmune diseases target specific organs or tissues, **systemic autoimmune disease**s are more generalized, targeting multiple organs or tissues throughout the body. Examples of systemic autoimmune diseases include multiple sclerosis, myasthenia gravis, psoriasis, rheumatoid arthritis, and systemic lupus erythematosus.
+
+### Multiple Sclerosis
+
+Multiple sclerosis (MS) is an autoimmune central nervous system disease that affects the brain and spinal cord. Lesions in multiple locations within the central nervous system are a hallmark of **multiple sclerosis** and are caused by infiltration of immune cells across the blood-brain barrier. The immune cells include T cells that promote inflammation, demyelination, and neuron degeneration, all of which disrupt neuronal signaling. Symptoms of MS include visual disturbances; muscle weakness; difficulty with coordination and balance; sensations such as numbness, prickling, or "pins and needles"; and cognitive and memory problems.
+
+### Myasthenia Gravis
+
+Autoantibodies directed against acetylcholine receptors (AChRs) in the synaptic cleft of neuromuscular junctions lead to **myasthenia gravis** (illustrated below). Anti-AChR antibodies are high-affinity IgGs and their synthesis requires activated CD4 T cells to interact with and stimulate B cells. Once produced, the anti-AChR antibodies affect neuromuscular transmission by at least three mechanisms:
+
+- Complement binding and activation at the neuromuscular junction
+- Accelerated AChR endocytosis of molecules cross-linked by antibodies
+- Functional AChR blocking, which prevents normal acetylcholine attachment to, and activation of, AChR
+
+Regardless of the mechanism, the effect of anti-AChR is extreme muscle weakness and potentially death through respiratory arrest in severe cases.
+
+{{< mediafigure src="microbiology/OSC_Microbio_19_02_Mgrav" alt="Two-panel diagram comparing a normal neuromuscular junction to one affected by myasthenia gravis: in the normal panel a nerve cell releases acetylcholine that binds receptors on the muscle cell and triggers contraction; in the myasthenia gravis panel, antibodies block the acetylcholine receptors so the muscle cannot contract." longdesc="Panel (a), labeled 'normal': a nerve cell at the top releases small dots of acetylcholine, which cross the gap and bind green receptors studding the muscle cell membrane below; an arrow labeled 'Signal proceeds' points down into the muscle cell, which is drawn with zigzag lines and labeled 'contraction.' Panel (b), labeled 'myasthenia gravis': the same nerve cell releases the same acetylcholine, but Y-shaped anti-AChR antibodies are now bound to the green receptors, blocking the acetylcholine from reaching them; an X marks each blocked receptor, an arrow labeled 'Signal blocked' points down, and the muscle cell below is drawn with flat, unshortened lines and labeled 'paralysis.'" kind="diagram" >}}
+Myasthenia gravis and impaired muscle contraction. (a) Normal release of the neurotransmitter acetylcholine stimulates muscle contraction. (b) In myasthenia gravis, autoantibodies block the receptors for acetylcholine (AChR) on muscle cells, resulting in paralysis.
+{{< /mediafigure >}}
+
+### Psoriasis
+
+Psoriasis is a skin disease that causes itchy or sore patches of thick, red skin with silvery scales on elbows, knees, scalp, back, face, palms, feet, and sometimes other areas. Some individuals with **psoriasis** also get a form of arthritis called psoriatic arthritis, in which the joints can become inflamed. Psoriasis results from the complex interplay between keratinocytes, dendritic cells, and T cells, and the cytokines produced by these various cells. In a process called cell turnover, skin cells that grow deep in the skin rise to the surface. Normally, this process takes a month. In psoriasis, as a result of cytokine activation, cell turnover happens in just a few days. The thick inflamed patches of skin that are characteristic of psoriasis develop because the skin cells rise too fast.
+
+### Rheumatoid Arthritis
+
+The most common chronic inflammatory joint disease is **rheumatoid arthritis** (RA) (shown below) and it is still a major medical challenge because of unsolved questions related to the environmental and genetic causes of the disease. RA involves type III hypersensitivity reactions and the activation of CD4 T cells, resulting in chronic release of the inflammatory cytokines IL-1, IL-6, and tumor necrosis factor-α (TNF-α). The activated CD4 T cells also stimulate the production of rheumatoid factor (RF) antibodies and anticyclic citrullinated peptide antibodies (anti-CCP) that form immune complexes. Increased levels of acute-phase proteins, such as C-reactive protein (CRP), are also produced as part of the inflammatory process and participate in complement fixation with the antibodies on the immune complexes. The formation of immune complexes and reaction to the immune factors cause an inflammatory process in joints, particularly in the hands, feet, and legs. Diagnosis of RA is based on elevated levels of RF, anti-CCP, quantitative CRP, and the erythrocyte sedimentation rate (ESR) (modified Westergren). In addition, radiographs, ultrasound, or magnetic resonance imaging scans can identify joint damage, such as erosions, a loss of bone within the joint, and narrowing of joint space.
+
+{{< mediafigure src="microbiology/OSC_Microbio_19_02_Arth" alt="Two side-by-side images of hands affected by rheumatoid arthritis: at left, an X-ray showing the finger joints of both hands bent and displaced at abnormal angles; at right, a photograph of an older adult's hands held up, the fingers visibly bent sideways at the knuckles." kind="photo" >}}
+The radiograph (left) and photograph (right) show damage to the hands typical of rheumatoid arthritis. (credit right: modification of work by "handarmdoc"/Flickr)
+{{< /mediafigure >}}
+
+### Systemic Lupus Erythematosus
+
+The damage and pathology of **systemic lupus erythematosus (SLE)** is caused by type III hypersensitivity reactions. Autoantibodies produced in SLE are directed against nuclear and cytoplasmic proteins. Anti-nuclear antibodies (ANAs) are present in more than 95% of patients with SLE (C.C. Mok and C.S. Lau, "Pathogenesis of Systemic Lupus Erythematosus," *Journal of Clinical Pathology* 56, no. 7 (2003): 481–490), with additional autoantibodies including anti-double–stranded DNA (ds-DNA) and anti-Sm antibodies (antibodies to small nuclear ribonucleoprotein). Anti-ds-DNA and anti-Sm antibodies are unique to patients with SLE; thus, their presence is included in the classification criteria of SLE. Cellular interaction with autoantibodies leads to nuclear and cellular destruction, with components released after cell death leading to the formation of immune complexes.
+
+Because autoantibodies in SLE can target a wide variety of cells, symptoms of SLE can occur in many body locations. However, the most common symptoms include fatigue, fever with no other cause, hair loss, and a sunlight-sensitive "butterfly" or wolf-mask (lupus) rash that is found in about 50% of people with SLE (shown below). The rash is most often seen over the cheeks and bridge of the nose, but can be widespread. Other symptoms may appear depending on affected areas. The joints may be affected, leading to arthritis of the fingers, hands, wrists, and knees. Effects on the brain and nervous system can lead to headaches, numbness, tingling, seizures, vision problems, and personality changes. There may also be abdominal pain, nausea, vomiting, arrhythmias, shortness of breath, and blood in the sputum. Effects on the skin can lead to additional areas of skin lesions, and vasoconstriction can cause color changes in the fingers when they are cold (Raynaud phenomenon). Effects on the kidneys can lead to edema in the legs and weight gain. A diagnosis of SLE depends on identification of four of 11 of the most common symptoms and confirmed production of an array of autoantibodies unique to SLE. A positive test for ANAs alone is not diagnostic.
+
+{{< mediafigure src="microbiology/OSC_Microbio_19_02_Lupus" alt="Two-panel figure on systemic lupus erythematosus: panel (a) is a drawn illustration of a person's body with five symptoms labeled by pointer lines; panel (b) is a photo of the lower half of a person's face, eyes masked, showing a reddish rash across both cheeks and the nose." longdesc="Panel (a): a simple line drawing of a person's body, front view, with five features called out by labeled pointer lines: 'facial rash' points to the cheeks and nose bridge; 'ulcers of the mouth and nose' points to the lower face; 'muscle aches' points to the upper arm; 'inflammation of the pericardium (heart region)' points to the chest, where the heart and surrounding vessels are drawn in red and purple; 'poor circulation in the fingers and toes' points to the hand, shaded yellow (the drawing shows no feet, though the source's own label names toes). Panel (b): a cropped photo of a person's lower face, the eyes masked with black rectangles for privacy, showing a symmetrical reddish rash spread across both cheeks and the bridge of the nose, with the rest of the skin unaffected." kind="diagram" >}}
+(a) Systemic lupus erythematosus is characterized by autoimmunity to the individual's own DNA and/or proteins. (b) This patient is presenting with a butterfly rash, one of the characteristic signs of lupus. (credit a: modification of work by Mikael Häggström; credit b: modification of work by Shrestha D, Dhakal AK, Shiva RK, Shakya A, Shah SC, Shakya H)
+{{< /mediafigure >}}
+
+**Check Your Understanding**
+
+{{< selfcheck question="List the ways antibodies contribute to the pathogenesis of myasthenia gravis." hint="The module names three separate mechanisms by which anti-AChR antibodies interfere with neuromuscular transmission." >}}
+Anti-AChR antibodies affect neuromuscular transmission in at least three ways: complement binding and activation at the neuromuscular junction, accelerated AChR endocytosis of antibody-cross-linked receptors, and functional AChR blocking that prevents normal acetylcholine attachment and activation. The effect, regardless of mechanism, is extreme muscle weakness and potentially fatal respiratory arrest.
+===CHECKS===
+complement binding and activation at the neuromuscular junction
+accelerated AChR endocytosis of antibody-cross-linked receptors
+functional AChR blocking that prevents normal acetylcholine attachment and activation
+the effect is extreme muscle weakness and potentially fatal respiratory arrest
+{{< /selfcheck >}}
+
+{{< selfcheck question="Explain why rheumatoid arthritis is considered a type III hypersensitivity." hint="Think about what activated CD4 T cells stimulate the production of, and what those products go on to form in the joints." >}}
+RA involves the activation of CD4 T cells, which stimulate production of rheumatoid factor (RF) and anti-cyclic citrullinated peptide (anti-CCP) antibodies that form immune complexes. These immune complexes, together with acute-phase proteins such as C-reactive protein and complement fixation, deposit in and around the joints and drive the chronic inflammatory process that is the hallmark of type III hypersensitivity.
+===CHECKS===
+activated CD4 T cells stimulate production of RF and anti-CCP antibodies that form immune complexes
+the immune complexes deposit in the joints and drive chronic inflammation, the hallmark of type III hypersensitivity
+{{< /selfcheck >}}
+
+**Check Your Understanding**
+
+{{< selfcheck question="Describe the symptoms of systemic lupus erythematosus and explain why they affect so many different parts of the body." hint="List the body systems the module names one at a time, then think about what kind of antigen SLE's autoantibodies target." >}}
+SLE symptoms include fatigue, fever, hair loss, and a sunlight-sensitive butterfly rash across the cheeks and nose, found in about half of patients. Because autoantibodies in SLE can target a wide variety of cells, the disease can also affect the joints (arthritis of the fingers, hands, wrists, and knees), the brain and nervous system (headaches, numbness, seizures, vision problems, personality changes), the abdomen (pain, nausea, vomiting), the heart and lungs (arrhythmias, shortness of breath, blood in the sputum), the skin (lesions, Raynaud phenomenon), and the kidneys (edema, weight gain). The symptoms are so widespread because SLE's autoantibodies can target nuclear and cytoplasmic antigens found throughout the body, forming immune complexes wherever they bind.
+===CHECKS===
+symptoms include fatigue, fever, hair loss, and a sunlight-sensitive butterfly rash
+SLE can affect the joints, the brain and nervous system, the abdomen, the heart and lungs, the skin, and the kidneys
+the symptoms are widespread because SLE's autoantibodies target nuclear and cytoplasmic antigens found throughout the body
+{{< /selfcheck >}}
+
+{{< textin
+  question="What is recognized as an antigen in myasthenia gravis?"
+  answer="acetylcholine receptors"
+  accept="AChR"
+  hint="The autoantibodies in this disease target a receptor at the neuromuscular junction, not the neurotransmitter itself."
+>}}
+
+The table below summarizes the causes, signs, and symptoms of select autoimmune diseases.
+
+**Select Autoimmune Diseases**
+
+| Disease | Cause | Signs and Symptoms |
+|---|---|---|
+| Addison disease | Destruction of adrenal gland cells by cytotoxic T cells | Weakness, nausea, hypotension, fatigue; adrenal crisis with severe pain in abdomen, lower back, and legs; circulatory system collapse, kidney failure |
+| Celiac disease | Antibodies to gluten become autoantibodies that target cells of the small intestine | Severe diarrhea, abdominal pain, anemia, malnutrition |
+| Diabetes mellitus (type I) | Cytotoxic T-cell destruction of the insulin-producing β cells of the pancreas | Hyperglycemia, extreme increase in thirst and urination, weight loss, extreme fatigue |
+| Graves disease | Autoantibodies target thyroid-stimulating hormone receptors, resulting in overstimulation of the thyroid | Hyperthyroidism with rapid and irregular heartbeat, heat intolerance, weight loss, goiter, exophthalmia |
+| Hashimoto thyroiditis | Thyroid gland is attacked by cytotoxic T cells, lymphocytes, macrophages, and autoantibodies | Thyroiditis with goiter, cold intolerance, muscle weakness, painful and stiff joints, depression, memory loss |
+| Multiple sclerosis (MS) | Cytotoxic T-cell destruction of the myelin sheath surrounding nerve axons in the central nervous system | Visual disturbances, muscle weakness, impaired coordination and balance, numbness, prickling or "pins and needles" sensations, impaired cognitive function and memory |
+| Myasthenia gravis | Autoantibodies directed against acetylcholine receptors within the neuromuscular junction | Extreme muscle weakness eventually leading to fatal respiratory arrest |
+| Psoriasis | Cytokine activation of keratinocytes causes rapid and excessive epidermal cell turnover | Itchy or sore patches of thick, red skin with silvery scales; commonly affects elbows, knees, scalp, back, face, palms, feet |
+| Rheumatoid arthritis | Autoantibodies, immune complexes, complement activation, phagocytes, and T cells damage membranes and bone in joints | Joint inflammation, pain and disfigurement, chronic systemic inflammation |
+| Systemic lupus erythematosus (SLE) | Autoantibodies directed against nuclear and cytoplasmic molecules form immune complexes that deposit in tissues. Phagocytic cells and complement activation cause tissue damage and inflammation | Fatigue, fever, joint pain and swelling, hair loss, anemia, clotting, a sunlight-sensitive "butterfly" rash, skin lesions, photosensitivity, decreased kidney function, memory loss, confusion, depression |
+
+## Summary
+
+- **Autoimmune diseases** result from a breakdown in immunological tolerance. The actual induction event(s) for autoimmune states are largely unknown.
+- Some autoimmune diseases attack specific organs, whereas others are more systemic.
+- Organ-specific autoimmune diseases include **celiac disease**, **Graves disease**, **Hashimoto thyroiditis**, **type I diabetes mellitus,** and **Addison disease**.
+- Systemic autoimmune diseases include **multiple sclerosis**, **myasthenia gravis**, **psoriasis**, **rheumatoid arthritis**, and **systemic lupus erythematosus**.
+- Treatments for autoimmune diseases generally involve anti-inflammatory and immunosuppressive drugs.
+
+## Key terms
+
+- **autoimmune disease** — loss of tolerance to self, resulting in immune-mediated destruction of self cells and tissues.
+- **tolerance** — lack of an anti-self immune response.
+- **celiac disease** — disease largely of the small intestine caused by an immune response to gluten that results in the production of autoantibodies and an inflammatory response.
+- **Graves disease** — hyperthyroidism caused by an autoimmune disease affecting thyroid function.
+- **Hashimoto thyroiditis** — hypothyroidism caused by an autoimmune disease affecting thyroid function.
+- **type 1 diabetes mellitus** — hyperglycemia caused by an autoimmune disease affecting insulin production by β cells of the pancreas.
+- **Addison disease** — autoimmune disease affecting adrenal gland function.
+- **systemic autoimmune disease** — autoimmune disease that affects the organism as a whole, rather than a single organ.
+- **multiple sclerosis** — autoimmune attack on the myelin sheaths and nerve cells in the central nervous system.
+- **myasthenia gravis** — autoimmune disease affecting the acetylcholine receptors in the neuromuscular junction, resulting in weakened muscle contraction capability.
+- **psoriasis** — autoimmune disease involving inflammatory reactions in and thickening of skin.
+- **rheumatoid arthritis** — systemic autoimmune disease in which immune complexes form and deposit in the joints and their linings, leading to inflammation and destruction.
+- **systemic lupus erythematosus (SLE)** — systemic autoimmune disease producing inflammatory type III hypersensitivities as antibodies form immune complexes with nuclear and cytoplasmic antigens.
+
+## Practice
+
+### Explain why autoimmune disorders develop
+
+{{< textin
+  question="A condition in which the immune system mistakenly identifies the body's own cells as the enemy and attacks them is called a(n) ________."
+  answer="autoimmune disease"
+  hint="This is the general name for a whole category of disease — you will see it in the description of several specific diseases in this section."
+>}}
+
+{{< textin
+  question="A lack of an anti-self immune response is called immune ________."
+  answer="tolerance"
+  hint="Losing this state is what lets the immune system begin attacking self tissue in the first place."
+>}}
+
+{{< multiplechoice
+  question="The mechanisms responsible for autoimmune diseases include which types of hypersensitivity reactions?"
+  answer="types II, III, and IV"
+  hint="Type I hypersensitivity (allergy) is the one type this list of mechanisms leaves out."
+>}}
+types II, III, and IV
+types I, II, and III
+types I, III, and IV
+types I, II, and IV
+{{< /multiplechoice >}}
+
+{{< textin
+  question="Hidden self-antigens exposed by trauma, drug interactions, or disease states can trigger a(n) ________."
+  answer="autoimmune response"
+  hint="Trauma, drug interactions, or disease can expose antigens the immune system was never trained to recognize as its own."
+>}}
+
+{{< textin
+  question="The causes of autoimmune disease are a combination of an individual's ________ makeup and the effect of environmental influences, such as sunlight, infections, medications, and environmental chemicals."
+  answer="genetic"
+  hint="This is the kind of makeup a person is born with, not something they pick up from their surroundings."
+>}}
+
+{{< selfcheck question="What factors contribute to the development of autoimmune disorders?" hint="The module names several contributing factors, not just one — think about what a person inherits versus what they are exposed to, plus what can go wrong with the cells that normally keep the immune system in check." >}}
+Autoimmune disorders develop from a combination of factors whose exact triggering events are still poorly understood. An individual's genetic makeup interacts with environmental influences such as sunlight, infections, medications, and environmental chemicals. Regulatory T and B cells normally maintain tolerance and prevent autoimmune responses, and a breakdown in this regulation is thought to play a role. Antigen mimicry between a pathogen's antigens and the body's own antigens can cause cross-reactivity, and hidden self-antigens exposed by trauma, drug interactions, or disease states can also trigger an autoimmune response.
+===CHECKS===
+an individual's genetic makeup interacts with environmental influences such as sunlight, infections, medications, and chemicals
+regulatory T and B cells normally maintain tolerance and prevent autoimmune responses
+antigen mimicry between pathogen antigens and self antigens can cause cross-reactivity
+hidden self-antigens exposed by trauma, drug interactions, or disease states can trigger an autoimmune response
+{{< /selfcheck >}}
+
+### Provide a few examples of organ-specific and systemic autoimmune diseases
+
+{{< multiplechoice
+  question="Which of the following is an example of an organ-specific autoimmune disease?"
+  answer="Addison disease"
+  hint="This disease targets the adrenal glands specifically, not the whole body."
+>}}
+rheumatoid arthritis
+psoriasis
+Addison disease
+myasthenia gravis
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which of the following is an example of a systemic autoimmune disease?"
+  answer="myasthenia gravis"
+  hint="This is the neuromuscular disease among the four options, and it is generalized rather than confined to one gland."
+>}}
+Hashimoto thyroiditis
+type I diabetes mellitus
+Graves disease
+myasthenia gravis
+{{< /multiplechoice >}}
+
+{{< textin
+  question="The thyroid-stimulating immunoglobulin that acts like thyroid-stimulating hormone and causes Graves disease is an antibody to the ________."
+  answer="thyroid-stimulating hormone receptor"
+  accept="TSH receptor|TSHR|receptor for TSH"
+  hint="TSI mimics TSH itself, so think about what TSH normally binds to."
+>}}
+
+{{< sortbins question="Sort each of these autoimmune diseases as organ-specific or systemic." hint="Re-read each disease's opening sentence: does it name one target organ or gland, or does it say the disease is more generalized?" >}}
+{"bins": ["Organ-specific", "Systemic"],
+ "items": [
+  {"label": "Graves disease", "bin": 0},
+  {"label": "multiple sclerosis", "bin": 1},
+  {"label": "celiac disease", "bin": 0},
+  {"label": "rheumatoid arthritis", "bin": 1},
+  {"label": "Addison disease", "bin": 0},
+  {"label": "psoriasis", "bin": 1},
+  {"label": "Hashimoto thyroiditis", "bin": 0},
+  {"label": "lupus (SLE)", "bin": 1},
+  {"label": "type 1 diabetes mellitus", "bin": 0},
+  {"label": "myasthenia gravis", "bin": 1}]}
+{{< /sortbins >}}
+
+---
+
+<small>This section is adapted from [Microbiology, Section 19.2: Autoimmune Disorders](https://openstax.org/books/microbiology/pages/19-2-autoimmune-disorders) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all six source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="photo"` set on four (the goiter, exophthalmia, hyperpigmentation, and rheumatoid-arthritis figures, each showing only photographs or a radiograph with no drawn art) and `kind="diagram"` set on two (the myasthenia-gravis mechanism figure and the systemic-lupus-erythematosus figure), overriding the media manifest's JPEG-based photo guess for those two because each contains a genuinely drawn, labeled panel; the goiter figure carries `eager="true"` as the page's first figure; a `longdesc` was added for the myasthenia-gravis and lupus figures, walking each labeled panel in reading order, because their multi-part diagrams are not fully carried by the caption; the source's bare cross-reference markers to these same-module figures are replaced with describing phrases ("shown below," "described above") rather than print figure numbers, since Hugo does not number figures; one one-word source defect is corrected in place with no inline note — the myasthenia-gravis figure's caption printed "(AChr)" where the module's own abbreviation, used four other times, is "AChR"; the module's four footnotes (Van Heel and West on celiac serology, repeated as "ibid." for celiac treatment, Martorell et al. on Addison autoantibodies, Mok and Lau on SLE ANAs) become inline parenthetical citations after the sentences they support, author names and title kept verbatim; the "ibid." footnote is rendered as the same citation repeated, since a plain "ibid." has no numbered-footnote apparatus to point back to outside the source's own page layout; the cross-reference to *T Lymphocytes and Cellular Immunity* is a live absolute site-root link, since that section is authored; the "Select Autoimmune Diseases" table (10 rows, 3 columns) is transcribed as a Markdown table from the CNXML cells, checked against the PDF page; the table's own organ-specific/systemic grouping is additionally rendered as a 10-item, 2-bin `sortbins` in Practice under the second objective — its "Systemic lupus erythematosus (SLE)" row is shortened to the item label "lupus (SLE)" so that no item label contains the bin-label word "Systemic"; both source Multiple Choice items are rendered as `multiplechoice` in source order with the source's own options and key; the source Fill in the Blank item (a 3-word key, under the 4-word threshold) is rendered as `textin`, with `accept="TSH receptor|TSHR"` added for the module's own abbreviation and one further standard abbreviation of the keyed receptor name; of the module's seven body Check Your Understanding bullets (in the source's own two boxes), the second box's four bullets are rendered as two labelled `**Check Your Understanding**` runs of two, per the book's 2–3 consecutive-question limit for CYU boxes; six of the seven bullets stay `selfcheck`, since each needs more than one module sentence assembled into an answer; the seventh — "What is recognized as an antigen in myasthenia gravis?" — is graded as a `textin` (answer "acetylcholine receptors," accept "AChR"), fixed by the module's own naming sentence; none of the seven is duplicated in `## Practice`. `## Practice` holds ten items across the section's two objective groups (six and four), against the book's eight-item floor; the module's two source Multiple Choice items and its Fill in the Blank `textin` are placed under the second objective alongside the table's `sortbins`; the first objective (why autoimmune disorders develop), which no source exercise tests, is covered by five `textin`/`multiplechoice` filler items built from this section's own Key terms and body sentences (term recall for "autoimmune disease" and for "tolerance," a select-the-term `multiplechoice` for the type II/III/IV hypersensitivity mechanisms, a cloze `textin` for "genetic" makeup, and a `textin` for the hidden-self-antigen trigger sentence) plus one author-written `selfcheck` synthesizing the section's several causal factors; disclosed here and in the ledger. Key terms compiled from the module's 13 `<term>` elements and the book's Glossary appendix, giving 13 distinct bullets, all glossary-sourced; one one-word source defect in the appendix is corrected in place with no inline note — the "systemic autoimmune disease" entry read "autoimmune disease that affect the organism as a whole" (a verb-agreement typo) and is corrected to "affects." A corrected claim: the Autoimmune Addison Disease symptom list's parenthetical gloss on lymphocytosis, printed as "decreased levels of white blood cells," is corrected to "increased levels of lymphocytes," since lymphocytosis is by definition an increased lymphocyte count; a visible Source note sits beside the correction. No source exercise item is omitted.</small>

@@ -108,6 +108,7 @@ import {
 import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
 import { parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
+import { pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
 
 /** A page question must share this much of a source problem's vocabulary to
  * count as a transcription of it; below this it is an author-written item. */
@@ -128,6 +129,20 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  * sortbins bins an item against the source table (exercise = the table id).
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
+  {
+    page: 'content/life-health-sciences/microbiology/21-skin-and-eye-infections/02-bacterial-infections-of-the-skin-and-eyes.md',
+    exercise: 'fs-id1167663644101',
+    kind: 'options',
+    erratum: 687,
+    reason: 'the source option "Proproniobacterium acnes" misspells the genus the module itself prints as Propionibacterium; the page prints the option as "Propionibacterium acnes" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/21-skin-and-eye-infections/03-viral-infections-of-the-skin-and-eyes.md',
+    exercise: 'fs-id1167663630739',
+    kind: 'options',
+    erratum: 691,
+    reason: 'the source option "parvovirus 19" drops the B from the name the module itself prints as parvovirus B19; the page prints the option as "parvovirus B19" (key unchanged)',
+  },
   {
     page: 'content/life-health-sciences/microbiology/10-biochemistry-of-the-genome/04-structure-and-function-of-cellular-genomes.md',
     exercise: 'fs-id1172100837488',
@@ -457,9 +472,70 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 298,
     reason: 'source keys "chemoautotrophs" as the term that encompasses all organisms that make their own food using inorganic molecules, but the module\'s own text says "Photosynthetic and chemosynthetic organisms are both grouped into a category known as autotrophs: organisms capable of synthesizing their own food (more specifically, capable of using inorganic carbon as a carbon source)"; chemoautotrophs is the subset that excludes the photoautotrophs; the page keys "autotrophs"',
   },
+  {
+    page: 'content/life-health-sciences/microbiology/23-urogenital-system-infections/03-bacterial-infections-of-the-reproductive-system.md',
+    exercise: 'fs-id1167662475199',
+    kind: 'options',
+    erratum: 718,
+    reason: 'source option d misspells the genus as "Haemophilis ducreyi"; the page prints "Haemophilus ducreyi" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/24-digestive-system-infections/05-protozoan-infections-of-the-gastrointestinal-tract.md',
+    exercise: 'fs-id1167662480378',
+    kind: 'key',
+    erratum: 754,
+    reason: 'source keys option C "Cyclospora cayetanesis" (missing "n") — a one-word source misspelling the module itself spells "cayetanensis" four times; the page corrects the option in place and keys "Cyclospora cayetanensis"',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/24-digestive-system-infections/03-bacterial-infections-of-the-gastrointestinal-tract.md',
+    exercise: 'fs-id1167660271315',
+    kind: 'key',
+    erratum: 744,
+    reason: 'source keys option B "Vibrio cholera" (missing the final "e"), one of six sites where the module drops the "e" after spelling "Vibrio cholerae" correctly at first mention; the page corrects the option in place and keys "Vibrio cholerae"',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/24-digestive-system-infections/05-protozoan-infections-of-the-gastrointestinal-tract.md',
+    exercise: 'fs-id1167662499528',
+    kind: 'options',
+    erratum: 754,
+    reason: 'source option c misspells the species as "Cyclospora cayetanesis"; the page prints "Cyclospora cayetanensis" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/25-circulatory-and-lymphatic-system-infections/02-bacterial-infections-of-the-circulatory-and-lymphatic-systems.md',
+    exercise: 'fs-id1167661292060',
+    kind: 'options',
+    erratum: 767,
+    reason: 'source distractor "Bacillus moniliformis" carries the Glossary appendix\'s wrong genus for the rat-bite fever agent the module itself names "Streptobacillus moniliformis" three times; the page prints "Streptobacillus moniliformis" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/26-nervous-system-infections/04-fungal-and-parasitic-diseases-of-the-nervous-system.md',
+    exercise: 'fs-id1167660333416',
+    kind: 'key',
+    erratum: 797,
+    reason: 'the source KEY (option C) "Trypanosoma brucei rhodanese" misspells the subspecies the module body prints as "rhodesiense"; the page keys "Trypanosoma brucei rhodesiense" (one-word typo rule); option order and letter unchanged.',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/26-nervous-system-infections/04-fungal-and-parasitic-diseases-of-the-nervous-system.md',
+    exercise: 'fs-id1167662646869',
+    kind: 'options',
+    erratum: 798,
+    reason: 'source distractor "Entameba histolyticum" misspells both genus and epithet; the page prints "Entamoeba histolytica" (one-word typo rule); option order and key unchanged.',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */
+
+/** Text of a node with every subtree named in `excludedNames` left out. */
+function textExcluding(node, excludedNames) {
+  const parts = [];
+  const visit = (candidate) => {
+    if (typeof candidate === 'string') { parts.push(candidate); return; }
+    if (excludedNames.includes(localName(candidate))) return;
+    for (const child of candidate.children || []) visit(child);
+  };
+  visit(node);
+  return parts.join(' ');
+}
 
 /** Text of a node with its enumerated option lists left out (a problem's
  * stem), or included (a solution that is itself a list). */
@@ -537,6 +613,17 @@ export function termAlternates(term) {
 
 export function readModule(xml) {
   const document = parseXml(xml);
+  // Fill in the Blank exercises ride in their own `<section class="…">`
+  // alongside Multiple Choice, Short Answer, and Critical Thinking — the
+  // grouping is how the source tells the item TYPES apart, since a
+  // `<problem>`/`<solution>` pair looks identical whichever type it is.
+  const fillInTheBlankIds = new Set(
+    descendants(document, (node) => localName(node) === 'section'
+      && /fill-in-the-blank/.test(node.attributes.class || ''))
+      .flatMap((section) => descendants(section, (node) => localName(node) === 'exercise'))
+      .map((exercise) => exercise.attributes.id || '')
+      .filter(Boolean),
+  );
   const exercises = descendants(document, (node) => localName(node) === 'exercise').map((exercise) => {
     const problem = firstElement(exercise, 'problem');
     const solution = firstElement(exercise, 'solution');
@@ -546,6 +633,7 @@ export function readModule(xml) {
     const problemText = problem ? proseOf(problem, { withLists: false }) : '';
     return {
       id: exercise.attributes.id || '',
+      isFillInTheBlank: fillInTheBlankIds.has(exercise.attributes.id || ''),
       problem: problemText,
       // The numbers a fill-in judgment reads: the problem's, to tell a Try
       // It from the Example it shadows; the solution's, to confirm a key.
@@ -610,6 +698,17 @@ export function readModule(xml) {
       ? ` ${normalizeText(summarySections.map((node) => textContent(node)).join(' '))} `
       : '',
     text: ` ${normalizeText(textContent(document))} `,
+    // The module's prose with every exercise's apparatus removed — not just
+    // its own `<solution>`, but every `<problem>` stem too, since a stem can
+    // print the very word a DIFFERENT exercise keys (a Multiple Choice
+    // distractor, a lettered option). Used only by the body-keys measurement
+    // (tools/verify/measure-body-keys.mjs): `text` above is what `judgeTextin`
+    // grades against today, and deliberately still includes solutions.
+    // `bodyProse` keeps sentence punctuation (for reporting the closest
+    // sentence); `bodyText` is its normalizeText form, padded for a
+    // word-bounded search.
+    bodyProse: normalizeWhitespace(textExcluding(document, ['problem', 'solution'])),
+    bodyText: ` ${normalizeText(textExcluding(document, ['problem', 'solution']))} `,
   };
 }
 
@@ -640,6 +739,7 @@ export function pageItems(markdown) {
       line: lineOf(markdown, sc.index),
       question: sc.params.question || '',
       answer: sc.params.answer || '',
+      accept: sc.params.accept || '',
     });
   }
   for (const sc of shortcodes(markdown, 'sortbins')) {
@@ -676,7 +776,7 @@ const lineOf = (text, index) => text.slice(0, index).split('\n').length;
  * end-matter stem it happens to resemble. */
 const isCheckQuestion = (question, source) => Boolean(source.checkQuestions && source.checkQuestions.has(compact(question)));
 
-function bestExercise(question, exercises, options = []) {
+export function bestExercise(question, exercises, options = []) {
   let best = null;
   for (const exercise of exercises) {
     const score = tokenSimilarity(question, exercise.problem);
@@ -781,6 +881,71 @@ export function judgeTextin(item, source) {
   if (source.summary.includes(` ${normalizeText(item.answer)} `)) return { status: 'summary' };
   if (source.text.includes(` ${normalizeText(item.answer)} `)) return { status: 'body' };
   return { status: 'unsourced', detail: `${JSON.stringify(item.answer)} is not a glossary term, a bolded term, or a phrase the module prints` };
+}
+
+/**
+ * Whether a textin's key (or one of its `accept` alternates) is recoverable
+ * from a module's BODY prose alone (`source.bodyProse`/`bodyText` — every
+ * exercise's `<problem>` and `<solution>` removed, so a Fill in the Blank's
+ * own solution cannot vouch for its own key). Used for the Fill in the Blank
+ * body-print gate (`unprintableFillInTheBlank`) and by
+ * `tools/verify/measure-body-keys.mjs`'s corpus measurement.
+ *
+ * A form is "printed" when, after the runtime grader's own plural fold
+ * (`pluralFolds`, assets/js/lib/text/check-text.mjs — a trailing "s"/"es"
+ * only):
+ *   - the compact key or an accept alternate is a substring of the compact
+ *     body ("LD50" against a body that prints "LD<sub>50</sub>", which text
+ *     extraction renders "LD 50" — compact strips the space either way);
+ *   - OR every word of a multi-word key appears somewhere in the body,
+ *     independently and in any order ("chlorophylls and carotenoids" against
+ *     a body that lists the two pigments separately, in the other order,
+ *     with unrelated text between them; "Protista and Monera" against a body
+ *     that names both kingdoms in a longer list);
+ *   - OR some body word starts with the key's own first characters, its last
+ *     two dropped but never fewer than six kept ("bacilli" against a body
+ *     that only ever prints "bacillus"; "epidemiology" against
+ *     "epidemiological"; "aspergillomas" against "aspergilloma") — a
+ *     same-root inflection a body-reading learner plainly recovers, checked
+ *     only for a single-word key since a body "token" is one word.
+ */
+export function keyPrintedInBody(answer, accept, source) {
+  const bodyCompact = compact(source.bodyProse ?? '');
+  const candidates = [answer, ...String(accept || '').split('|')].filter(Boolean);
+  for (const candidate of candidates) {
+    const normalized = normalizeText(candidate);
+    if (!normalized) continue;
+    for (const form of [normalized, ...pluralFolds(normalized)]) {
+      if (bodyCompact.includes(compact(form))) return true;
+    }
+  }
+  const words = normalizeText(answer).split(' ').filter(Boolean);
+  if (words.length > 1 && words.every((word) => bodyCompact.includes(compact(word)))) return true;
+  if (words.length === 1) {
+    const [word] = words;
+    const prefixLength = Math.min(word.length, Math.max(6, word.length - 2));
+    const prefix = word.slice(0, prefixLength);
+    const bodyWords = normalizeText(source.bodyProse ?? '').split(' ').filter(Boolean);
+    if (prefix && bodyWords.some((token) => token.startsWith(prefix))) return true;
+  }
+  return false;
+}
+
+/**
+ * A life-sciences `textin` matched (by the same stem-similarity `bestExercise`
+ * every other judgment here uses) to one of its module's Fill in the Blank
+ * exercises, whose key `keyPrintedInBody` cannot recover from the module's
+ * body prose — see docs/subjects/microbiology.md, "Keys and accept lists".
+ * Returns the exercise it matched (to name in a failure), or null when the
+ * item matches no Fill in the Blank exercise at all (an ordinary
+ * `judgeTextin` case) or its key IS recoverable from the body.
+ */
+export function unprintableFillInTheBlank(item, source) {
+  const fillInTheBlankExercises = source.exercises.filter((exercise) => exercise.isFillInTheBlank);
+  if (!fillInTheBlankExercises.length) return null;
+  const exercise = bestExercise(item.question, fillInTheBlankExercises);
+  if (!exercise) return null;
+  return keyPrintedInBody(item.answer, item.accept, source) ? null : exercise;
 }
 
 /**
@@ -1170,6 +1335,12 @@ export function judgeFillin(item, source) {
 
 /* ---- corpus walk ---------------------------------------------------------- */
 
+/** Biology and Microbiology only — every math book's content lives outside
+ * this prefix, and the body-print gate below is a life-sciences rule
+ * (docs/subjects/life-sciences.md's textin provenance rules, not the math
+ * fillin rules). */
+export const isLifeSciencesPage = (localPath) => localPath.startsWith('content/life-health-sciences/');
+
 export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose = false } = {}) {
   const lock = loadSourceLock(repositoryRoot);
   const map = JSON.parse(readFileSync(path.join(repositoryRoot, 'data/openstax/source-map.json'), 'utf8'));
@@ -1268,6 +1439,25 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
         const verdict = judgeTextin(item, source);
         if (verdict.status === 'unsourced') failures.push({ page: section.localPath, line: item.line, detail: verdict.detail });
         else counts.textin[verdict.status] += 1;
+        // Life-sciences only (content/life-health-sciences/…): a textin keyed
+        // to a source Fill in the Blank whose word the module BODY never
+        // prints — only the exercise's own <solution> does — leaves a
+        // body-reading learner with no way to recover it. See
+        // docs/subjects/microbiology.md, "Keys and accept lists" ("A source
+        // Fill in the Blank whose key the module's own prose never states
+        // becomes a multiplechoice…") and tools/verify/measure-body-keys.mjs,
+        // whose corpus measurement this promotes.
+        if (isLifeSciencesPage(section.localPath)) {
+          const badExercise = unprintableFillInTheBlank(item, source);
+          if (badExercise) {
+            failures.push({
+              page: section.localPath,
+              line: item.line,
+              detail: `textin keys ${JSON.stringify(item.answer)} to Fill in the Blank ${badExercise.id}, whose word the module body never prints (only its own <solution> does)`
+                + '\n    render as multiplechoice, see the playbook (docs/subjects/microbiology.md, "Keys and accept lists")',
+            });
+          }
+        }
       } else if (item.type === 'sortbins') {
         const verdict = judgeSortbins(item, source);
         if (verdict.status === 'assignment-differs') {

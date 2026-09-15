@@ -1364,6 +1364,232 @@
       "errataEntry": 610,
       "rationale": "The module dates the famous gangrenous-ergotism outbreak to \"Eastern Europe during the 5th century AD\"; no documented ergotism epidemic exists from the 5th century AD, and the earliest well-documented outbreak of gangrenous ergotism is recorded in the Annales Xantenses for 857 AD in the Rhine Valley (Bove, \"The History of Ergot of Rye [Claviceps purpurea] I: From Antiquity to 1900,\" PubMed 19847980), so the page names the Rhine Valley and 857 AD with a visible Source note (erratum 610). No item, hint, or model answer on the page depends on the outbreak's date or location. Found by the chapter 15 prose claim pass, September 12, 2026.",
       "note": "NOT yet in the tracked reconciliation-decisions.json as of this draft (2026-09-12); the page footer already cites \"erratum 610\" inline, so this entry should be appended at close-out."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/17-innate-nonspecific-host-defenses/05-inflammation-and-fever.md",
+      "bundle": "microbiology",
+      "moduleId": "m58881",
+      "sourceElementIds": [
+        "fs-id1172096078935"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 622,
+      "rationale": "The Chronic Edema Micro Connection box names the cells infiltrating filarial lymphatic vessels as \"lymphocytes, plasma cells, eosinophils, and thrombocytes.\" Thrombocytes (platelets) are not a recognized component of this infiltrate; PathologyOutlines.com's Filariasis reference names the histologic infiltrate as \"plasma cells, eosinophils, and macrophages,\" with macrophages as the fourth cell type. The page reads \"...and macrophages\" with a visible Source note (erratum 622). No item, hint, or key term on the page was built on the old wording. Found by the chapter 17 prose claim pass, September 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/18-adaptive-specific-host-defenses/02-major-histocompatibility-complexes-and-antigen-presenting-cells.md",
+      "bundle": "microbiology",
+      "moduleId": "m58885",
+      "sourceElementIds": [
+        "fs-id1167660275280"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 624,
+      "rationale": "The module's MHC I/MHC II contrast sentence says MHC I molecules present \"abnormal or nonself pathogens\" to effector T cells, while its own parallel clause for MHC II says \"pathogen antigens\" and the next paragraph describes the antigen-binding cleft as presenting non-self antigens, not whole pathogens. MHC I molecules present processed peptide epitopes, never intact pathogens. The page reads \"...abnormal or nonself antigens...\" with a visible Source note (erratum 624). No item, hint, or key term on the page was built on the old wording. Found by the chapter 18 prose claim pass, September 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/18-adaptive-specific-host-defenses/04-b-lymphocytes-and-humoral-immunity.md",
+      "bundle": "microbiology",
+      "moduleId": "m58887",
+      "sourceElementIds": [
+        "OSC_Microbio_18_04_BCellact",
+        "fs-id1167659439614",
+        "fs-id1167661619114"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 625,
+      "rationale": "The BCellact figure's caption (no element id in the source CNXML; carried under the figure id OSC_Microbio_18_04_BCellact) reads \"differentiation into B cells and plasma cells,\" a tautology. The module's own body prose (fs-id1167659439614) and the same figure's own alt (fs-id1167661619114, step 4) both say the outputs are memory B cells and plasma cells. The page's caption reads \"...into memory B cells and plasma cells\" with a visible Source note (erratum 625). No item, hint, or key term on the page was built on the old wording. Found by the chapter 18 prose claim pass, September 13, 2026 (flag first raised by the 18.4 author, adjudicated by the claim pass)."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/18-adaptive-specific-host-defenses/05-vaccines.md",
+      "bundle": "microbiology",
+      "moduleId": "m58888",
+      "sourceElementIds": [
+        "fs-id1167656877502"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 626,
+      "rationale": "The Micro Connection: DNA Vaccines box says \"A DNA vaccine against Japanese encephalitis virus was approved for use in humans in 2010 in Australia.\" The product approved in Australia around 2009-2010, IMOJEV (JE-CV), is a live attenuated chimeric recombinant virus vaccine (yellow fever 17D backbone carrying JE virus prM/E genes), not a naked-plasmid DNA vaccine -- confirmed against Australia's TGA listing (\"japanese encephalitis vaccine (live, attenuated)\") and a PMC review describing it as \"live recombinant chimeric.\" The page reads \"A recombinant chimeric live attenuated vaccine against Japanese encephalitis virus--not a DNA vaccine--was approved for use in humans in 2010 in Australia\" with a visible Source note citing the TGA listing and the PMC review (erratum 626). No item, hint, or key term on the page was built on the old wording. Found by the chapter 18 prose claim pass, September 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/19-diseases-of-the-immune-system/02-autoimmune-disorders.md",
+      "bundle": "microbiology",
+      "moduleId": "m58893",
+      "sourceElementIds": [
+        "fs-id1167661354153"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 659,
+      "rationale": "The Autoimmune Addison Disease symptom list reads \"...anemia, lymphocytosis (decreased levels of white blood cells), and fatigue.\" Lymphocytosis is by definition an increased lymphocyte count, so the source's own parenthetical gloss has the direction backwards; relative lymphocytosis is an independently documented Addison-disease feature, so only the gloss's direction is wrong, not the term itself. The page reads \"lymphocytosis (increased levels of lymphocytes)\" with a visible Source note beside the correction (erratum 659). No item, hint, or key term on the page was built on the old wording. Found by the chapter 19 authoring run (19.2 author; adjudicated and confirmed against the raw CNXML by the alt-text verification pass), September 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/20-laboratory-analysis-of-the-immune-response/03-agglutination-assays.md",
+      "bundle": "microbiology",
+      "moduleId": "m58902",
+      "sourceElementIds": [
+        "fs-id1167663508384"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 663,
+      "rationale": "The Widal-test paragraph reads \"...looks for agglutination of Salmonella enterica subspecies typhi in patient sera.\" Typhi is a serovar of S. enterica subsp. enterica, not itself a subspecies, and the book's own sibling modules (m58856, m58867, m58950 -- none touched by this run) consistently call it \"serovar Typhi,\" never a subspecies. The page reads \"Salmonella enterica serovar Typhi\" with a visible Source note beside the correction (erratum 663). No item, hint, or key term on the page was built on the old wording. Found by the chapter 20 prose claim pass, September 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/22-respiratory-system-infections/03-viral-infections-of-the-respiratory-tract.md",
+      "bundle": "microbiology",
+      "moduleId": "m58914",
+      "sourceElementIds": [
+        "fs-id1167663508385"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 677,
+      "rationale": "The Historical Influenza Outbreaks table's 1957-1958 row prints the Asian flu's serotype as \"N2N2,\" which is not a real influenza serotype designation (both letters cannot be \"N\"); the well-established designation for this pandemic strain is H2N2. Confirmed identical in the CNXML and the printed PDF -- a plain \"N\" for \"H\" transcription defect, not a CNXML-only artifact. The page's table reads \"H2N2\" with a visible Source note beside it (erratum 677). No item, hint, or key term on the page was built on the old wording. Found during the chapters 21-22 authoring run's alt-text/source-defect verification pass, September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/22-respiratory-system-infections/02-bacterial-infections-of-the-respiratory-tract.md",
+      "bundle": "microbiology",
+      "moduleId": "m58913",
+      "sourceElementIds": [
+        "fs-id1167661298148",
+        "fs-id1167661367334"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 678,
+      "rationale": "The Q Fever subsection calls Coxiella burnetii \"a rickettsia\" and its infection \"rickettsial.\" This book's own Chapter 4 Proteobacteria page and its taxonomy appendix (m58949) place Coxiella in class Gammaproteobacteria and Rickettsia in class Alphaproteobacteria -- different classes entirely -- and Coxiella burnetii was formally removed from order Rickettsiales in 1989 on 16S rRNA phylogenetic evidence (Weisburg WG, Dobson ME, Samuel JE, et al. \"Phylogenetic diversity of the Rickettsiae.\" Journal of Bacteriology 171, no. 8 (1989): 4202-4206), matching the book's own Gammaproteobacteria table rather than the \"rickettsia\" label used in this section. The page reads \"is caused by Coxiella burnetii, an obligate intracellular bacterium once classified among the rickettsias\" and \"Diagnosing this infection\" with a visible Source note beside the passage (erratum 678). No item, hint, or key term on the page was built on the old wording. Found by the chapter 22 prose claim pass, September 14, 2026 (F1)."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/22-respiratory-system-infections/03-viral-infections-of-the-respiratory-tract.md",
+      "bundle": "microbiology",
+      "moduleId": "m58914",
+      "sourceElementIds": [
+        "fs-id1167663911614"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 679,
+      "rationale": "The MERS paragraph says \"MERS was first reported in Saudi Arabia in 2013.\" WHO and CDC both date the first report of MERS-CoV to September 2012 (the index case, from Jeddah); the book's own Glossary appendix (m58950, \"MERS\" entry) repeats the same wrong year, so this is not a transcription slip local to this section. The page reads \"2012\" in the body with a visible Source note beside the sentence (erratum 679); the Key terms bullet, drawn from the same Glossary claim, is corrected the same way without a separate note. No item or hint on the page was built on the old wording. Found by the chapter 22 prose claim pass, September 14, 2026 (F2)."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/21-skin-and-eye-infections/05-protozoan-and-helminthic-infections-of-the-skin-and-eyes.md",
+      "bundle": "microbiology",
+      "moduleId": "m58910",
+      "sourceElementIds": [
+        "fs-id1167662778514"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 699,
+      "rationale": "The Disease Profile box's intro sentence reads \"...summarizes the characteristics of some common fungal infections of the skin,\" but the table it introduces -- and this entire section -- covers protozoan and helminthic (parasitic) infections (Acanthamoeba keratitis, loiasis), not fungal ones. This is a copy-paste holdover from the neighboring Section 21.4 (Mycoses of the Skin) Disease Profile box, which uses the identical wording for its correctly fungal table; confirmed printed in the PDF (p. 860). The page reads \"...some common parasitic infections of the skin and eyes\" with a visible Source note (erratum 699). No item, hint, or key term on the page was built on the old wording. Found by the 21.5 author during this run, adjudicated and confirmed by the chapter 21 alt-text/source-defect verification pass, September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/21-skin-and-eye-infections/02-bacterial-infections-of-the-skin-and-eyes.md",
+      "bundle": "microbiology",
+      "moduleId": "m58907",
+      "sourceElementIds": [
+        "OSC_Microbio_21_02_DPSkinInfe"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 684,
+      "rationale": "The Disease Profile \"Bacterial Infections of the Skin\" table's acne row prints the pathogen as \"Propionibacterium acnes\" in its source table image (no element id in the source CNXML; carried under the figure id OSC_Microbio_21_02_DPSkinInfe), while the same figure's own <media alt> already reads \"Cutibacterium acnes\" -- the source's alt and its own embedded table image disagree with each other. This section's own body prose (the Acne subsection) uses the current name Cutibacterium acnes throughout; Propionibacterium acnes was reclassified to Cutibacterium acnes in 2016. The page's transcribed table reads \"Cutibacterium acnes,\" matching this section's own body prose, with a visible Source note (erratum 684). No item, hint, or key term on the page was built on the old wording. Found during the chapter 21 alt-text/source-defect verification pass, September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/23-urogenital-system-infections/02-bacterial-infections-of-the-urinary-system.md",
+      "bundle": "microbiology",
+      "moduleId": "m58918",
+      "sourceElementIds": [
+        "fs-id1167662578781"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 721,
+      "rationale": "The Nongonococcal Urethritis subsection's Ureaplasma urealyticum virulence-factor paragraph reads \"The immunoglobulin α protease is an important defense against antibodies. It can generate hydrogen peroxide, which may adversely affect host cell membranes through the production of reactive oxygen species,\" attributing hydrogen-peroxide generation to the protease enzyme itself. In the Ureaplasma virulence-factor literature, IgA protease activity and hydrogen-peroxide production are documented as separate factors of the organism, not one enzyme performing both. The page reads \"*U. urealyticum* can also generate hydrogen peroxide, which may adversely affect host cell membranes through the production of reactive oxygen species\" with a visible Source note beside the passage (erratum 721). No item, hint, or key term on the page was built on the old wording. Found by the chapter 23 prose claim pass, September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/23-urogenital-system-infections/04-viral-infections-of-the-reproductive-system.md",
+      "bundle": "microbiology",
+      "moduleId": "m58920",
+      "sourceElementIds": [
+        "fs-id1167661344291"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 720,
+      "rationale": "The Genital Herpes subsection's latency paragraph reads \"The virus moves down peripheral nerves, typically sensory neurons, to ganglia in the spine (either the trigeminal ganglion or the lumbar-sacral ganglia) and becomes latent,\" grouping the trigeminal ganglion under \"ganglia in the spine.\" The trigeminal ganglion (Gasserian/semilunar ganglion) is a cranial nerve ganglion seated in Meckel's cave of the middle cranial fossa, inside the skull -- not in the spine; only the lumbar-sacral (dorsal root) ganglia are actually spinal. This book's own sibling modules never call the trigeminal ganglion spinal: m58908 (Section 21.3, HSV-1 latency) describes it as \"residing in the trigeminal nerve ganglia\" with no spinal claim, m58940 (CNS infections) treats the trigeminal nerve as a distinct non-spinal cranial route into the CNS, and m58914 (varicella-zoster) correctly confines \"the spine\" language to VZV's actual dorsal ganglia. The page reads \"sensory ganglia (either the trigeminal ganglion, in the head, or the lumbar-sacral ganglia, in the spine)\" with a visible Source note beside the passage (erratum 720). No item, hint, or key term on the page was built on the old wording. Found by the chapter 23 prose claim pass, September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/23-urogenital-system-infections/05-fungal-infections-of-the-reproductive-system.md",
+      "bundle": "microbiology",
+      "moduleId": "m58921",
+      "sourceElementIds": [
+        "fs-id1167662601844"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 719,
+      "rationale": "The module's Multiple Choice exercise stem reads \"Which oral medication is recommended as an initial topical treatment for genital yeast infections?\" with options penicillin, acyclovir, fluconazole, and the keyed answer miconazole. This is self-contradictory upstream: the module's own body text lists miconazole among the topical antifungals and names fluconazole as its only oral one, so a learner who reads \"oral\" literally in the stem is misled toward fluconazole, the wrong option, instead of the keyed miconazole. The page's stem drops \"oral,\" reading \"Which medication is recommended as an initial topical treatment for genital yeast infections?,\" with options and key unchanged (erratum 719), on the same footing as an exercise-level source defect (precedent: erratum 41, a math Try It whose stem contradicted its own printed answer). No item, hint, or key term on the page depends on the dropped word. Found by checker-23.5 during this run, adjudicated and confirmed September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/24-digestive-system-infections/06-helminthic-infections-of-the-gastrointestinal-tract.md",
+      "bundle": "microbiology",
+      "moduleId": "m58932",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 751,
+      "rationale": "The book's shared Glossary appendix (m58950) defines \"trichinosis\" as \"soil-transmitted intestinal infection caused by the nematode Trichinella spiralis; associated with cyst formation,\" a definition with no element id of its own (a plain <item> in the appendix's alphabetical glossary list). This section's own body text (m58932) states plainly that trichinosis \"develops following consumption of food that contains Trichinella spiralis... most commonly transmitted in meat, especially pork, that has not been cooked thoroughly\" -- never soil. The appendix's \"soil-transmitted...nematode\" template phrasing is shared verbatim by the genuinely soil-transmitted helminth entries (ascariasis, hookworm infection, strongyloidiasis) earlier in the same glossary list, indicating the trichinosis entry was copied from one of those and never corrected. The page's Key-terms bullet reads \"intestinal infection caused by the nematode Trichinella spiralis, transmitted through consumption of undercooked meat; associated with cyst formation\" with a visible Source note beside it (erratum 751), on the same footing as chapter 23's visible-Source-note corrections (errata 719-721) and chapter 20's and 22's (errata 663, 679). No item, hint, or key term on the page was built on the old \"soil-transmitted\" wording. Found by the chapter 24 alt-text/source-defect verification pass, September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/25-circulatory-and-lymphatic-system-infections/02-bacterial-infections-of-the-circulatory-and-lymphatic-systems.md",
+      "bundle": "microbiology",
+      "moduleId": "m58936",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 766,
+      "rationale": "The book's shared Glossary appendix (m58950) defines \"rat-bite fever\" as \"relapsing fever caused by either Bacillus moniliformis or Spirillum minor; can be transmitted by the bite of a rat or through contact with rat feces or urine,\" a definition with no element id of its own (a plain <item> in the appendix's alphabetical glossary list). This section's own body text (m58936) states three times that the causative organism is Streptobacillus moniliformis, not Bacillus moniliformis: \"The zoonotic infection rat-bite fever can be caused by two different gram-negative bacteria: Streptobacillus moniliformis... and Spirillum minor\" (fs-id1167663930266); \"Cell culture, MALDI-TOF mass spectrometry, PCR, or ELISA can be used in the identification of Streptobacillus moniliformis\" (fs-id1167661645079); and the module's own Disease Profile table pathogen cell lists \"Streptobacillus moniliformis, Spirillum minor.\" Bacillus (endospore-forming, mostly aerobic gram-positive rods, e.g. B. anthracis, B. cereus) is an unrelated genus, and the Glossary headword itself is wrong -- not something introduced by this book's authoring. The same wrong genus also leaks into this module's own Multiple Choice exercise distractor (fs-id1167661292060, option \"Bacillus moniliformis\"), corrected separately as erratum 767 with its own DISCLOSED_DEVIATIONS options entry. The page's Key terms bullet reads \"rat-bite fever -- relapsing fever caused by either Streptobacillus moniliformis or Spirillum minor; can be transmitted by the bite of a rat or through contact with rat feces or urine\" with a visible Source note beside it (erratum 766), on the same footing as chapter 23's and 24's visible-Source-note corrections (errata 719-721, 751). No item, hint, or key term on the page was built on the old \"Bacillus\" wording. Found by the chapter 25 prose claim pass, September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/25-circulatory-and-lymphatic-system-infections/02-bacterial-infections-of-the-circulatory-and-lymphatic-systems.md",
+      "bundle": "microbiology",
+      "moduleId": "m58936",
+      "sourceElementIds": [
+        "fs-id1167661365384"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 765,
+      "rationale": "The Tick Tips Micro Connection box's anatomy sentence reads \"Adult ticks have eight legs and two body segments, the cephalothorax and the head,\" printed exactly as quoted. A cephalothorax is by definition a fused head-and-thorax tagma, so naming \"the cephalothorax and the head\" as two separate segments is internally contradictory, and ticks (order Ixodida, class Arachnida) do not have a cephalothorax at all -- their two body regions are the capitulum (gnathosoma, bearing the mouthparts) and the idiosoma (bearing the leg pairs and housing the digestive/reproductive organs), unlike spiders and other arachnids, which do have a true cephalothorax plus abdomen. This book is silent on tick anatomy terminology elsewhere, so external references were used to confirm the correction: WikiVet, \"Tick Morphology\" (\"Ticks have two body regions: a very large idiosoma... and a much smaller anterior gnathosoma (also called the capitulum)\"), and Medicine LibreTexts, \"10.2: General anatomy of ticks\" (\"Tagmatization in acarines is reduced to two unique tagmata with no distinction between the more conventional cephalothorax and abdomen\"). The page's Tick Tips box reads \"Adult ticks have eight legs and two body regions, the capitulum, which bears the mouthparts, and the idiosoma\" with a visible Source note beside the correction (erratum 765), on the same footing as chapter 23's and 24's visible-Source-note corrections (errata 719-721, 751, 766). No item, hint, or key term on the page was built on the old wording. Found by the chapter 25 prose claim pass, September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/25-circulatory-and-lymphatic-system-infections/03-viral-infections-of-the-circulatory-and-lymphatic-systems.md",
+      "bundle": "microbiology",
+      "moduleId": "m58937",
+      "sourceElementIds": [
+        "fs-id1167663742703"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 768,
+      "rationale": "The HIV subsection's opening sentence (para fs-id1167663742703) reads \"Human T-lymphotropic viruses (HTLV), also called human immunodeficiency viruses (HIV) are retroviruses that are the causative agent of acquired immune deficiency syndrome (AIDS),\" presenting HTLV and HIV as alternate names for the same virus. They are distinct human retroviruses in family Retroviridae, subfamily Orthoretrovirinae, but different genera -- HTLV-1/HTLV-2 in genus Deltaretrovirus, HIV-1/HIV-2 in genus Lentivirus -- with different replication strategies (deltaretroviruses replicate chiefly by driving infected-cell division; lentiviruses like HIV replicate mainly by producing progeny virions) and different disease associations (HTLV causes adult T-cell leukemia/lymphoma and HAM/TSP, not AIDS). This book is silent on HTLV elsewhere -- no sibling module names it, so the false equivalence is not internally self-contradicted -- but it is a citable factual error: ICTV Retroviridae taxonomy (https://ictv.global/report/chapter/retroviridae/taxonomy/retroviridae) places Deltaretrovirus and Lentivirus as distinct genera of subfamily Orthoretrovirinae, and PMC9505669 describes their divergent replication biology. The page's opening sentence for this subsection reads \"Human immunodeficiency viruses (HIV) are retroviruses that are the causative agent of acquired immune deficiency syndrome (AIDS)\" with a visible Source note beside the correction (erratum 768), on the same footing as chapter 23's and 24's visible-Source-note corrections (errata 719-721, 751, 765, 766). No item, hint, or key term on the page was built on the old HTLV wording. Found by the chapter 25 prose claim pass, September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/26-nervous-system-infections/01-anatomy-of-the-nervous-system.md",
+      "bundle": "microbiology",
+      "moduleId": "m58940",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 779,
+      "rationale": "The book's shared Glossary appendix (m58950) defines \"arachnoid mater\" as \"middle membrane surrounding the brain that produces cerebrospinal fluid\" (index.cnxml:125), a definition with no element id of its own (a plain <item> in the appendix's alphabetical glossary list). This section's own body text (m58940, para fs-id1167660287212) states plainly: \"The subarachnoid space within this region is filled with cerebrospinal fluid (CSF). This watery fluid is produced by cells of the choroid plexus -- areas in each ventricle of the brain that consist of cuboidal epithelial cells surrounding dense capillary beds.\" The same paragraph describes the arachnoid mater only as the meningeal layer lying below the dura mater and above the subarachnoid space -- it is never credited with producing CSF anywhere in this module. CSF is standard anatomy/physiology knowledge produced by the choroid plexus, not the arachnoid mater (whose role is to help bound the CSF-filled subarachnoid space); the Glossary headword itself is wrong, not something introduced by this book's authoring. The page's Key terms bullet reads \"arachnoid mater -- middle membrane surrounding the brain that produces cerebrospinal fluid\" with a visible Source note beside it (erratum 779): \"this section's own text attributes CSF production to cells of the choroid plexus, not the arachnoid mater; the arachnoid mater instead bounds the CSF-filled subarachnoid space, along with the pia mater.\" No item, hint, or key term on the page was built on the uncorrected wording. Found by the chapter 26 prose claim pass, September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/26-nervous-system-infections/02-bacterial-diseases-of-the-nervous-system.md",
+      "bundle": "microbiology",
+      "moduleId": "m58941",
+      "sourceElementIds": [],
+      "status": "correct-local-source-defect",
+      "errataEntry": 791,
+      "rationale": "The book's shared Glossary appendix (m58950) defines \"neonatal meningitis\" as \"meningitis caused by Group B streptococcus and occurring primarily in neonates (less than 2 months old)\" (index.cnxml:1069), a definition with no element id of its own (a plain <item> in the appendix's alphabetical glossary list). This section's own body text (m58941, para fs-id1167663524954) states: \"S. agalactiae, Group B streptococcus (GBS), is an encapsulated gram-positive bacterium that is the most common cause of neonatal meningitis, a term that refers to meningitis occurring in babies up to 3 months of age,\" and the Neonatal Meningitis subsection separately states, \"Late-onset neonatal meningitis occurs in infants between 1 week and 3 months of age.\" The Glossary's \"less than 2 months old\" directly contradicts this module's own repeated \"up to 3 months of age\" cutoff; the Glossary headword itself carries the inconsistency, not something introduced by this book's authoring. The page's Key terms bullet reads \"neonatal meningitis -- meningitis caused by Group B streptococcus and occurring primarily in neonates (less than 2 months old)\" with a visible Source note beside it (erratum 791): \"this section's own body defines neonatal meningitis as meningitis occurring in babies up to 3 months of age.\" No item, hint, or key term on the page was built on the Glossary's \"less than 2 months\" wording. Found by the chapter 26 prose claim pass, September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/26-nervous-system-infections/02-bacterial-diseases-of-the-nervous-system.md",
+      "bundle": "microbiology",
+      "moduleId": "m58941",
+      "sourceElementIds": [
+        "fs-id1167663650105"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 792,
+      "rationale": "The Listeriosis subsection's second paragraph (para fs-id1167663650105) reads: \"Unlike most other foodborne pathogens, Listeria is able to grow at temperatures between 0 °C and 50 °C, and can therefore continue to grow, even in refrigerated foods,\" printed exactly as quoted and confirmed present verbatim in sources/openstax/osbooks-microbiology/modules/m58941/index.cnxml:141. This book is silent on Listeria's growth-temperature ceiling elsewhere, so an external reference was used to confirm the correction: the FDA Bacteriological Analytical Manual (BAM), Chapter 10, Listeria monocytogenes, gives a growth range of roughly -1.5 °C to 45 °C (optimum 30-37 °C), consistent with published growth-limit studies capping growth at approximately 45 °C, not 50 °C. The page keeps the source's printed sentence unchanged but appends a visible Source note beside it (erratum 792): \"reference values, such as the FDA Bacteriological Analytical Manual, place the upper growth limit for L. monocytogenes near 45 °C.\" No item, hint, or key term on the page was built on the uncorrected \"50 °C\" figure. Found by the chapter 26 prose claim pass, September 14, 2026."
     }
   ]
 }

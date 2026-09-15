@@ -2,7 +2,7 @@
 
 The subject-specific half of the authoring rules shared by every
 life-sciences book: OpenStax **Biology 2e** (complete), OpenStax
-**Microbiology** (in progress), and any later book on the
+**Microbiology** (complete), and any later book on the
 `life-health-sciences` shelf — anatomy and physiology, concepts of biology,
 and the like. `docs/authoring-playbook.md` is the shared core (source-first
 workflow, file layout, the component contract, the `## Practice` block, the

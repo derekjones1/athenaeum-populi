@@ -5,7 +5,6 @@ license: CC BY-NC-SA 4.0
 source: OpenStax Microbiology
 seo_title: "Microbiology – Free Interactive Microbiology Textbook | Athenaeum Populi"
 linkTitle: "Overview"
-authoring_status: in-progress
 cascade:
   type: docs
 ---
@@ -18,12 +17,6 @@ seen, classified, and grown, works through their biochemistry, metabolism,
 and genetics, explains how infection, immunity, and antimicrobial drugs work,
 and ends with the infectious diseases of each body system, organized by the
 pathogens that cause them.
-
-{{< callout type="warning" >}}
-  **This book is being written.** Chapters are published as they are
-  finished and verified, in order; the list below shows what is available
-  now and what is planned.
-{{< /callout >}}
 
 {{< callout type="info" >}}
   **Prerequisites:** none. High-school biology and chemistry help, but every
@@ -75,19 +68,13 @@ pathogens that cause them.
   of bacterial, viral, and eukaryotic pathogens.
 - **Disease and Epidemiology** — the language of epidemiologists, tracking
   infectious diseases, modes of transmission, and global public health.
-
-## Planned contents
-
-Microbiology has 26 chapters. The remaining 10 will appear in this order:
-
 - **Innate Nonspecific Host Defenses** — physical, chemical, and cellular
   defenses; pathogen recognition and phagocytosis; inflammation and fever.
 - **Adaptive Specific Host Defenses** — an overview of adaptive immunity,
   major histocompatibility complexes and antigen-presenting cells, T and B
   lymphocytes, and vaccines.
-- **Diseases of the Immune System** — hypersensitivities, autoimmune
-  disorders, organ transplantation and rejection, immunodeficiency, and
-  cancer immunobiology and immunotherapy.
+- **Diseases of the Immune System** — hypersensitivities, autoimmune disorders, organ transplantation and
+  rejection, immunodeficiency, and cancer immunobiology and immunotherapy.
 - **Laboratory Analysis of the Immune Response** — polyclonal and monoclonal
   antibody production, detecting antigen-antibody complexes, agglutination
   assays, EIAs and ELISAs, and fluorescent antibody techniques.
@@ -96,9 +83,9 @@ Microbiology has 26 chapters. The remaining 10 will appear in this order:
   infections.
 - **Respiratory System Infections** — the anatomy and normal microbiota of
   the respiratory tract, and its bacterial, viral, and fungal infections.
-- **Urogenital System Infections** — the anatomy and normal microbiota of the
-  urogenital tract, and the bacterial, viral, fungal, and protozoan
-  infections of the urinary and reproductive systems.
+- **Urogenital System Infections** — the anatomy and normal microbiota of
+  the urogenital tract, and its bacterial, viral, fungal, and protozoan
+  infections.
 - **Digestive System Infections** — the anatomy and normal microbiota of the
   digestive system, diseases of the mouth, and the bacterial, viral,
   protozoan, and helminthic infections of the gastrointestinal tract.
