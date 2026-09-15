@@ -2,7 +2,7 @@
 title: Mechanisms of Microbial Genetics
 description: How genetic information is replicated, expressed, and changed — DNA replication, transcription, translation, mutations and their repair, the ways asexual prokaryotes generate genetic diversity, and the operons and other mechanisms that regulate gene expression.
 source_chapter: "11"
-weight: 11
+weight: 12
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_11_00_EcoliEle" kind="photo" alt="Two photographs. Left, a false-colour scanning electron micrograph of many purple rod-shaped cells packed together, one small yellow-tipped cell among them. Right, an adult elephant and a calf standing on muddy ground in front of a green plain, the adult's tusks and large ears in view." eager="true" >}}

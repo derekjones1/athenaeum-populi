@@ -67,6 +67,13 @@ What is specific to a unit-level check:
   sequential weights at the book root, so a check without the shift, or a
   shift without the check, is red.
 
+  **A flat book (no `units` list) uses blocks instead of units.** OpenStax
+  Microbiology has no units, so its checks are one page per block of
+  chapters — five pages, decided September 15, 2026 — weighted after the
+  block's last chapter and rendered flat in the sidebar like a math book's.
+  The block table lives in `docs/subjects/microbiology.md` §Knowledge
+  checks; every other rule in this edition applies to it unchanged.
+
 ## Content rules
 
 - **Cumulative:** questions cover every chapter in the unit, grouped by the

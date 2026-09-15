@@ -83,6 +83,10 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/microbiology/01-an-invisible-world/01-what-our-ancestors-knew/',
   },
   {
+    name: 'microbiology block 1 knowledge check (chapters 01–06)',
+    path: '/life-health-sciences/microbiology/knowledge-check-01-06/',
+  },
+  {
     name: '404 page',
     path: '/404.html',
     title: 'Page not found – Athenaeum Populi',

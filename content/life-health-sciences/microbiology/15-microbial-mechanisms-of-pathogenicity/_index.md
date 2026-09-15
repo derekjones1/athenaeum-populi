@@ -2,7 +2,7 @@
 title: Microbial Mechanisms of Pathogenicity
 description: How pathogens cause disease — the vocabulary of infectious disease and the periods of acute infection, Koch's postulates and the stages of pathogenesis from exposure to transmission, and the virulence factors — exoenzymes, endotoxins and exotoxins, and the mechanisms unique to fungi, protozoa, and helminths — that bacterial, viral, and eukaryotic pathogens use to invade a host and evade its immune system.
 source_chapter: "15"
-weight: 15
+weight: 16
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_15_00_Sneeze" kind="photo" alt="Left, a man in a navy T-shirt with a small printed logo leaning in to examine a patient's open mouth with a small handheld light, in a clinic room with wood cabinetry. Right, a woman in a blue sweatshirt, eyes closed and head bowed, sneezing into a folded cloth held to her nose with both hands." eager="true" >}}

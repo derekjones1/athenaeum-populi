@@ -190,6 +190,14 @@
   "009d3520f6b7aa45": {
    "verdict": "ok"
   },
+  "009d5411f14a909d": {
+   "verdict": "ok",
+   "note": "KC 1 4.1 § Symbiotic Relationships (fs-id1172100770387), m58795",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "00a5b4a0d1552429": {
    "verdict": "ok",
    "note": "|A|=0.5<1 so compressed (Try It 2 stretch/compress part, matches CNXML)."
@@ -714,6 +722,14 @@
   "0240459ee288f3bf": {
    "verdict": "ok",
    "note": "System of y = -4x (slope -4, intercept 0) and y = -4 (horizontal). Member 1 lattice points inside -7..7: (0,0), (1,-4). Member 2 lattice points: (0,-4), (2,-4). The two lines intersect where -4x = -4, i.e. x = 1, at (1,-4)."
+  },
+  "024a4111339535ed": {
+   "verdict": "ok",
+   "note": "KC 1 5.5 § Characteristics, m58806",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "024a83c6a37d477c": {
    "verdict": "ok"
@@ -2662,6 +2678,14 @@
    "verdict": "ok",
    "note": "Try It 4: ln(1/x^2)=ln(x^-2)=-2 ln x. Matches CNXML solution."
   },
+  "08761008cb9aa07e": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § The Birth of Microbiology — Micro Connection: Microbiology Toolbox, m58781",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0882a73e3036c414": {
    "verdict": "ok"
   },
@@ -4175,6 +4199,14 @@
    "verdict": "ok",
    "note": "Try It 9: 2^6=64 subsets."
   },
+  "0d349a3b6dda963b": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § Naming Microbes, m58782",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0d3ab254867939ba": {
    "verdict": "ok",
    "note": "IA KC 07-12 §11.1, converted from prose options to rendered figures. Re-derived: completing the square, x^2+10x + y^2+6y = -30 becomes (x+5)^2-25 + (y+3)^2-9 = -30, i.e. (x+5)^2+(y+3)^2 = 4 — a circle centered (-5,-3) of radius 2, which is option 0 and agrees with the standard-form fill-in above it on the same page. The distractors render the printed prose distractors exactly: the sign-flipped centre (5,3) (1), an ellipse at the correct centre (2), and radius 4 instead of 2 (3). Order and answer position unchanged."
@@ -4399,6 +4431,10 @@
   },
   "0dee04bf6a4afd43": {
    "verdict": "ok"
+  },
+  "0df1b1dc63d0a584": {
+   "verdict": "ok",
+   "note": "KC 1 4.6 § body (introduction, before Crenarchaeota), m58800"
   },
   "0df9c4b012382cfa": {
    "verdict": "ok",
@@ -5245,6 +5281,14 @@
     "result": "agrees"
    }
   },
+  "10e10b9423ec45b0": {
+   "verdict": "ok",
+   "note": "KC 1 2.4 § Preparation and Staining for Other Microscopes, m58788",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "10e77cca812dad47": {
    "verdict": "ok"
   },
@@ -5334,6 +5378,14 @@
    "note": "Recall from glossary term 'hypotonic' (fs-id1395502).",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1130863032f78349": {
+   "verdict": "ok",
+   "note": "KC 1 6.1 § Classification and Taxonomy of Viruses, m58808",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -9034,6 +9086,10 @@
     "result": "agrees"
    }
   },
+  "1c9cb693127d8867": {
+   "verdict": "ok",
+   "note": "KC 1 3.3 § Glycocalyces and S-Layers, m58792"
+  },
   "1c9d11c8ff9f65cf": {
    "verdict": "ok",
    "note": "Try It 5. Derived independently: zeros 5, 2i, -2i give base cubic x^3-5x^2+4x-20; f(1) of base = -20; a=10/-20=-1/2; f(x)=-1/2x^3+5/2x^2-2x+10, confirmed by node computation of f(1)=10. Matches CNXML ti_03_06_05 solution exactly."
@@ -9819,6 +9875,10 @@
     "result": "agrees"
    }
   },
+  "1ef46e2af816c641": {
+   "verdict": "ok",
+   "note": "KC 1 5.4 § intro, m58805"
+  },
   "1ef60bc547d32320": {
    "verdict": "ok"
   },
@@ -10418,6 +10478,14 @@
   "2104f33edaadbdf6": {
    "verdict": "ok",
    "note": "Both the embedded data-spec JSON ({\"at\":2,\"label\":\"A\"}) and the circle at pixel cx=204 (the tick labeled '2') confirm point A is at 2, matching the declared answer."
+  },
+  "2107f45380717623": {
+   "verdict": "ok",
+   "note": "KC 1 6.4 § Viroids, m58811",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2109664f6428a41c": {
    "verdict": "ok",
@@ -11129,6 +11197,14 @@
     "result": "agrees"
    }
   },
+  "23ab7763d065f885": {
+   "verdict": "ok",
+   "note": "KC 1 6.2 § Life Cycle of Viruses with Animal Hosts, m58809",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "23abf43e7d4baac1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -11439,6 +11515,14 @@
   "24daca7067d6fa43": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "24dbc5a198a1645a": {
+   "verdict": "ok",
+   "note": "KC 1 5.4 § intro, m58805",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -11936,6 +12020,14 @@
   },
   "2682a6244b2e6b83": {
    "verdict": "ok"
+  },
+  "268d19ec18965406": {
+   "verdict": "ok",
+   "note": "KC 1 3.3 § Ribosomes, m58792",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "268f116e2a64b0cf": {
    "verdict": "ok",
@@ -12452,6 +12544,14 @@
    "verdict": "ok",
    "note": "checker fix D3: source Short Answer fs-id1167663986207 ('nearly universal'), unkeyed upstream, reverted from an invented-distractor multiplechoice to a selfcheck; model answer assembled from § The Genetic Code's own sentences (the 'nearly universal' claim plus the selenocysteine/pyrrolysine exceptions the module actually prints)."
   },
+  "283780a236431427": {
+   "verdict": "ok",
+   "note": "KC 1 2.2 § lead paragraph (before Early Microscopes), m58786",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "28381bb8897909b2": {
    "verdict": "ok",
    "note": "glossary fs-id1809183: uniporter = transporter that carries one specific ion or molecule.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -12698,6 +12798,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2906e4b7f0589d7b": {
+   "verdict": "ok",
+   "note": "KC 1 5.2 § Platyhelminths (Flatworms), m58803",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -15284,6 +15392,14 @@
     "result": "agrees"
    }
   },
+  "31f2c73f2dcf49eb": {
+   "verdict": "ok",
+   "note": "KC 1 3.2 § The Origins of Cell Theory, m58791",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "31f68d38b9c825bf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16362,6 +16478,14 @@
   "35a30c2448d4b26d": {
    "verdict": "ok",
    "note": "KC 7 35.4 § body Sensory-Somatic Nervous System (fs-idp36837024), m66623 — parent re-read against the module"
+  },
+  "35a45ec0741207c3": {
+   "verdict": "ok",
+   "note": "KC 1 1.3 § Helminths, m58783",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "35adcfc3b11469d7": {
    "verdict": "ok",
@@ -17856,6 +17980,14 @@
    "note": "m66405 glossary term 'olfaction' — meaning 'sense of smell'. Prompt names the referent (the sense), answer is the term. No departure.",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3a1e99836ab71508": {
+   "verdict": "ok",
+   "note": "KC 1 4.4 § Clostridia (fs-id1172098389550), m58798",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -19609,6 +19741,14 @@
   "409765dfb351f925": {
    "verdict": "ok"
   },
+  "409e2f6927ec610f": {
+   "verdict": "ok",
+   "note": "KC 1 6.4 § Prions (table: Transmissible Spongiform Encephalopathies in Humans), m58811",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "40a126f7acb1a372": {
    "verdict": "ok",
    "solved": {
@@ -20646,6 +20786,14 @@
   "43f485768cee4c80": {
    "verdict": "ok"
   },
+  "43f65fb206837c5a": {
+   "verdict": "ok",
+   "note": "KC 1 5.2 § Platyhelminths (Flatworms), m58803",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "43fbbd2071255d3a": {
    "verdict": "ok"
   },
@@ -21498,6 +21646,14 @@
    "note": "Review Question fs-id1864534 (CNXML solution A = increase the activity of specific enzymes); confirmed against the section's repeated statement that rising ADP increases isocitrate dehydrogenase, pyruvate dehydrogenase, and electron-transport-chain activity, and against Table 7.1's ADP rows (all \"increase\").",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "46ae55fea0e9ba4d": {
+   "verdict": "ok",
+   "note": "KC 1 3.4 § Nucleus, m58793",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -24336,6 +24492,14 @@
    "verdict": "ok",
    "note": "CYU body selfcheck, § Preparing Specimens for Light Microscopy — model from the positive/negative stain paragraph."
   },
+  "4fb4ae14f0353e21": {
+   "verdict": "ok",
+   "note": "KC 1 4.5 § body (Acetothermus paragraph, no named subsection), m58799",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4fc148d910557a31": {
    "verdict": "ok"
   },
@@ -24350,6 +24514,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4fcd6037023b475b": {
+   "verdict": "ok",
+   "note": "KC 1 5.4 § Algal Diversity, m58805",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -25521,6 +25693,10 @@
   },
   "549046c1d37516a1": {
    "verdict": "ok"
+  },
+  "5493067cbc8929a5": {
+   "verdict": "ok",
+   "note": "KC 1 4.5 § body (Thermotogae paragraph, no named subsection), m58799"
   },
   "5495015ce6620e8f": {
    "verdict": "ok",
@@ -30547,6 +30723,14 @@
    "verdict": "ok",
    "note": "parent re-record after option shuffle: average velocity 110/2=55 mi/h over the interval; the 62 mi/h reading at an instant is the instantaneous velocity (source Verbal solution)."
   },
+  "657e5a4afa6d909b": {
+   "verdict": "ok",
+   "note": "KC 1 6.4 § Viroids, m58811",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6581397b04197d94": {
    "verdict": "ok"
   },
@@ -30643,6 +30827,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "65e005abb92ffc44": {
+   "verdict": "ok",
+   "note": "KC 1 3.4 § Golgi Apparatus, m58793",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -32236,6 +32428,14 @@
   "6b45d1c0adb33a8c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6b48633b5ea99f3f": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § Disproving Spontaneous Generation, m58790",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -34758,6 +34958,14 @@
    "verdict": "ok",
    "note": "KC 2 7.6 § body Connections of Lipid and Glucose Metabolisms (fs-id2098556), m66470 — parent re-read against the module"
   },
+  "73e48dd2e09653db": {
+   "verdict": "ok",
+   "note": "KC 1 6.3 § Isolation of Viruses, m58810",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "73e5f4bd63007661": {
    "verdict": "ok"
   },
@@ -35087,6 +35295,14 @@
   "75025a6fa2baa7aa": {
    "verdict": "ok"
   },
+  "75074a665f90ac27": {
+   "verdict": "ok",
+   "note": "KC 1 2.2 § Early Microscopes, m58786",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7510630fa971decd": {
    "verdict": "ok",
    "solved": {
@@ -35118,6 +35334,14 @@
   },
   "754045e9d2b2b075": {
    "verdict": "ok"
+  },
+  "75480a22f3c58bf3": {
+   "verdict": "ok",
+   "note": "KC 1 2.1 § Electromagnetic Spectrum and Color, m58785",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "754f73feb8eec60d": {
    "verdict": "ok",
@@ -35432,6 +35656,14 @@
     "result": "agrees"
    }
   },
+  "764f44259b16420b": {
+   "verdict": "ok",
+   "note": "KC 1 6.2 § Viral Growth Curve, m58809",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7651458a7c21a2ce": {
    "verdict": "ok"
   },
@@ -35516,6 +35748,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "76d3a11cc594c80a": {
+   "verdict": "ok",
+   "note": "KC 1 2.1 § Lenses and Refraction, m58785",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -37309,6 +37549,14 @@
    "verdict": "ok",
    "note": "Critical Thinking eip-153 (molecular thermogenesis); model answer is the source solution verbatim."
   },
+  "7c5344b2594661a0": {
+   "verdict": "ok",
+   "note": "KC 1 5.3 § Fungal Diversity, m58804",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7c573212271f2547": {
    "verdict": "ok",
    "solved": {
@@ -37382,6 +37630,14 @@
   },
   "7c8e3558de68d913": {
    "verdict": "ok"
+  },
+  "7c8f17f7b9a031f8": {
+   "verdict": "ok",
+   "note": "KC 1 2.1 § Interactions of Light, m58785",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7c8f48c78ce397be": {
    "verdict": "ok"
@@ -38094,6 +38350,14 @@
   },
   "7ec6d895153af40f": {
    "verdict": "ok"
+  },
+  "7ecd47f5b91f4b29": {
+   "verdict": "ok",
+   "note": "KC 1 3.3 § Plasmids, m58792",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7ecdc837283d75b8": {
    "verdict": "ok",
@@ -43308,6 +43572,10 @@
    "verdict": "ok",
    "note": "Model answer draws on the Stage 1-3 list (viral load and CD4 counts per stage) plus the antibody-timing sentence in the diagnosis paragraph ('It can take weeks or months for the body to produce antibodies...'); covers viruses, antibodies, and CD4 T cells as the stem asks."
   },
+  "915aeed2d0260ff6": {
+   "verdict": "ok",
+   "note": "KC 1 6.2 § Chronic Infection, m58809"
+  },
   "916168a495492987": {
    "verdict": "ok"
   },
@@ -43875,8 +44143,16 @@
   "937a0ffd9138c50b": {
    "verdict": "ok"
   },
+  "93829ff301d4c367": {
+   "verdict": "ok",
+   "note": "KC 1 4.4 § Bacilli (fs-id1172100932307), m58798"
+  },
   "938359b389c3a2fd": {
    "verdict": "ok"
+  },
+  "938a3b65d31ccc80": {
+   "verdict": "ok",
+   "note": "KC 1 6.1 § Hosts and Viral Transmission, m58808"
   },
   "938b5e5d8306b0ef": {
    "verdict": "ok",
@@ -44958,6 +45234,10 @@
   },
   "97556f0ff720f767": {
    "verdict": "ok"
+  },
+  "97591d870e3f1339": {
+   "verdict": "ok",
+   "note": "KC 1 2.3 § Electron Microscopy, m58787"
   },
   "97595f58a4f47d5a": {
    "verdict": "ok"
@@ -46049,6 +46329,14 @@
   "9b335c9029d33505": {
    "verdict": "ok"
   },
+  "9b3526fa6cc3c04a": {
+   "verdict": "ok",
+   "note": "KC 1 4.3 § Cytophaga, Fusobacterium, and Bacteroides (fs-id1172100577416), m58797",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9b3642a8f4a7d89f": {
    "verdict": "ok"
   },
@@ -46829,6 +47117,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9df4d6b6ae648fd7": {
+   "verdict": "ok",
+   "note": "KC 1 5.2 § Nematoda (Roundworms), m58803",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -47802,6 +48098,14 @@
   "a16f09789ab078fc": {
    "verdict": "ok"
   },
+  "a175d6cb6c922dc3": {
+   "verdict": "ok",
+   "note": "KC 1 2.3 § Brightfield Microscopes, m58787",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a178334d5c396c6b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -48063,6 +48367,10 @@
   },
   "a25759a7021f110f": {
    "verdict": "ok"
+  },
+  "a25aa373fac3d22c": {
+   "verdict": "ok",
+   "note": "KC 1 2.4 § Preparing Specimens for Electron Microscopy (Micro Connection: Using Microscopy to Diagnose Syphilis), m58788"
   },
   "a26221e31f5cea2a": {
    "verdict": "ok",
@@ -49704,6 +50012,10 @@
     "result": "agrees"
    }
   },
+  "a79bd35b43ae1e2a": {
+   "verdict": "ok",
+   "note": "KC 1 5.1 § Amoebozoa, m58802"
+  },
   "a79ee50d193c4faa": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -50318,6 +50630,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a94de3bf04370ee1": {
+   "verdict": "ok",
+   "note": "KC 1 6.3 § Nucleic Acid Amplification Test, m58810",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -52099,6 +52419,14 @@
   "afd77e5473824fca": {
    "verdict": "ok",
    "note": "tangent is odd: tan(-x)=-tan(x)=-(-1.5)=1.5; matches source's printed solution."
+  },
+  "afdbc5e7dccf79e2": {
+   "verdict": "ok",
+   "note": "KC 1 2.3 § Fluorescence Microscopes, m58787",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "afdf350daef81425": {
    "verdict": "ok",
@@ -54461,6 +54789,14 @@
     "result": "agrees"
    }
   },
+  "b803b168bbb49dd2": {
+   "verdict": "ok",
+   "note": "KC 1 1.3 § Units of Length Commonly Used in Microbiology (table, fs-id1171359070853), m58783",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b804839f5ce6e2d6": {
    "verdict": "ok",
    "note": "m58795 § Cooperation: Cooperative Behavior: model answer uses the module's definitions of cooperative and competitive interactions."
@@ -55032,6 +55368,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "ba1568a99be3d2a9": {
+   "verdict": "ok",
+   "note": "KC 1 2.4 § Preparing Specimens for Light Microscopy, m58788",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -56063,6 +56407,14 @@
     "result": "agrees"
    }
   },
+  "bde9b5d6ada912ee": {
+   "verdict": "ok",
+   "note": "KC 1 4.1 § Taxonomy and Systematics, Micro Connection: Human Microbiome Project (fs-id1172100921608), m58795",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bdedc937036458d6": {
    "verdict": "ok",
    "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
@@ -56852,6 +57204,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c098f0c1e978658c": {
+   "verdict": "ok",
+   "note": "KC 1 5.5 § Characteristics, m58806",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -59529,6 +59889,10 @@
    "verdict": "ok",
    "note": "selfcheck = source exercise fs-idp36178688 (Critical Thinking); model answer is the source solution verbatim, rubric checkpoints decompose its four clauses with no new claims."
   },
+  "c956fc794cab01e9": {
+   "verdict": "ok",
+   "note": "KC 1 5.3 § Fungal Diversity, m58804"
+  },
   "c95b59ee7bd5765b": {
    "verdict": "ok"
   },
@@ -60029,6 +60393,14 @@
     "result": "agrees"
    }
   },
+  "cae99fecc0976525": {
+   "verdict": "ok",
+   "note": "KC 1 3.2 § Endosymbiotic Theory, m58791",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "caea5ba3a749e512": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -60132,6 +60504,14 @@
   },
   "cb4943a2744ad85b": {
    "verdict": "ok"
+  },
+  "cb4d6623c9b1d1ed": {
+   "verdict": "ok",
+   "note": "KC 1 5.1 § Chromalveolata, m58802",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "cb4dd0ad2cc730e0": {
    "verdict": "ok"
@@ -60971,6 +61351,14 @@
   },
   "ce4d7167c74292b0": {
    "verdict": "ok"
+  },
+  "ce4f2bd95425ae18": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § Early Notions of Disease, Contagion, and Containment, m58781",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ce5124cab7e2a3f0": {
    "verdict": "ok",
@@ -61975,6 +62363,10 @@
   },
   "d1ea050795d529ce": {
    "verdict": "ok"
+  },
+  "d1ed50f37d5a6235": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § The Role of Genetics in Modern Taxonomy, m58782"
   },
   "d1ed581f3186e628": {
    "verdict": "ok"
@@ -63166,6 +63558,14 @@
   "d6a81820e2d64601": {
    "verdict": "ok",
    "note": "5x - 2y = 10 solves to y = 2.5x - 5, with intercepts (2,0) and (0,-5); option 1 draws slope 2.5 intercept -5 and marks both. Option 0 flips the slope sign to cross at (-2,0); option 2 swaps the intercept values across the axes to (-5,0) and (0,2). Rendered and inspected."
+  },
+  "d6a96944e9d13c38": {
+   "verdict": "ok",
+   "note": "KC 1 4.2 § Alphaproteobacteria (fs-id1172100912475), m58796",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d6aa963adc132a4f": {
    "verdict": "ok"
@@ -64561,6 +64961,14 @@
     "result": "agrees"
    }
   },
+  "db9e184539271a7c": {
+   "verdict": "ok",
+   "note": "KC 1 4.4 § Lactobacillales (fs-id1172100500548), m58798",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dba1248e7df041a5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -65815,6 +66223,10 @@
   "e01f5f63c8fd7feb": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L447 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
+  "e01fa25a914941ff": {
+   "verdict": "ok",
+   "note": "KC 1 4.3 § Phototrophic Bacteria (fs-id1172100510856), m58797"
   },
   "e02acbc51000b82e": {
    "verdict": "ok",
@@ -67255,6 +67667,10 @@
    "verdict": "ok",
    "note": "Visual Connection (fs-idp20012208): model answer transcribes the source solution verbatim."
   },
+  "e4e992ddf7613af0": {
+   "verdict": "ok",
+   "note": "KC 1 4.2 § Gammaproteobacteria (fs-id1172100531140), m58796"
+  },
   "e4eaa9a3c15773e4": {
    "verdict": "ok"
   },
@@ -67550,6 +67966,14 @@
   },
   "e64446806d270c0f": {
    "verdict": "ok"
+  },
+  "e652e2ae6902f118": {
+   "verdict": "ok",
+   "note": "KC 1 4.2 § Alphaproteobacteria, table fs-id1172100936505, m58796",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e65486e5189fbcd4": {
    "verdict": "ok",
@@ -68472,6 +68896,14 @@
   },
   "e95313ce42b5e40f": {
    "verdict": "ok"
+  },
+  "e95cd8f11f4099b3": {
+   "verdict": "ok",
+   "note": "KC 1 4.6 § body (introduction, before Crenarchaeota), m58800",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e95d8124e0fdfeda": {
    "verdict": "ok",
@@ -69397,6 +69829,14 @@
     "result": "agrees"
    }
   },
+  "ec792140d0f13cba": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § Bergey's Manuals — Micro Connection: Same Name, Different Strain, m58782",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ec7da282bec57608": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -69410,6 +69850,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "ec80269cd6394c6a": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § The Theory of Spontaneous Generation, m58790",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -69614,6 +70062,10 @@
   "ed2d791bed22261a": {
    "verdict": "ok",
    "note": "y=5x^2+10x+3 gives vertex (-1,-2) and a=5>0 (opens upward), matching the authored quadratic answer and the pre-rewrite multiplechoice's 'Vertex (-1,-2); opens upward'; the figure immediately above is Example 10.52's unrelated y=2x^2-4x-3, so nothing leaks."
+  },
+  "ed3391b38e3d93be": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § The Iceman and Evidence of Early Treatments, m58781"
   },
   "ed372295d6ba4717": {
    "verdict": "ok",
@@ -69894,6 +70346,14 @@
   "ee103c81912fe9c1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ee10c17a537dc170": {
+   "verdict": "ok",
+   "note": "KC 1 5.1 § Eye on Ethics (Neglected Parasites), m58802",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -71176,6 +71636,10 @@
   "f2dadd54b8dcfa15": {
    "verdict": "ok"
   },
+  "f2db8c9480e59681": {
+   "verdict": "ok",
+   "note": "KC 1 3.4 § Extracellular Matrix, m58793"
+  },
   "f2e67559f0e7dc9e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -71255,6 +71719,14 @@
   "f322b19c60361ea5": {
    "verdict": "ok",
    "note": "re-read against CNXML m58913; keyed sentence/table checks out"
+  },
+  "f334ac75f83f21b7": {
+   "verdict": "ok",
+   "note": "KC 1 2.2 § Early Microscopes (Micro Connection: Who Invented the Microscope?), m58786",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f334c09c75c2fc81": {
    "verdict": "ok",
@@ -72065,6 +72537,10 @@
     "result": "agrees"
    }
   },
+  "f5dcb63695b93193": {
+   "verdict": "ok",
+   "note": "KC 1 1.3 § Microbiology as a Field of Study, m58783"
+  },
   "f5de63373c842ac2": {
    "verdict": "ok",
    "note": "150 deg * pi/180 = 150/180*pi = 5*pi/6"
@@ -72459,6 +72935,14 @@
   "f7189f91bb5848cd": {
    "verdict": "ok",
    "note": "Evaluated the reproduced model at x=16: 141.912+10.454*ln(16)=170.90 thousand, rounds to 171,000, matching CNXML's printed 'about 171,000 games'."
+  },
+  "f718e6c65ba22848": {
+   "verdict": "ok",
+   "note": "KC 1 6.3 § Cultivation of Viruses (Eye on Ethics: The Immortal Cell Line of Henrietta Lacks), m58810",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f71a84a37ab2d491": {
    "verdict": "ok",
@@ -73081,6 +73565,10 @@
     "result": "agrees"
    }
   },
+  "f916fefb18ba3911": {
+   "verdict": "ok",
+   "note": "KC 1 4.1 § Taxonomy and Systematics (fs-id1172098265661), m58795"
+  },
   "f922bc6bbb2860f6": {
    "verdict": "ok"
   },
@@ -73118,6 +73606,14 @@
   },
   "f9401e905b2db716": {
    "verdict": "ok"
+  },
+  "f943002d9747bce2": {
+   "verdict": "ok",
+   "note": "KC 1 4.3 § Chlamydia (eip-510), m58797",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f9442a49c68ff204": {
    "verdict": "ok"
@@ -73293,6 +73789,10 @@
    "verdict": "ok",
    "note": "Practice: x=4-t,y=3t+2 -> t=4-x, y=3(4-x)+2=-3x+14; node-verified residual ~0 over t=-2..5; matches CNXML solution."
   },
+  "f9e9a2695b090e0c": {
+   "verdict": "ok",
+   "note": "KC 1 3.2 § The Germ Theory of Disease, m58791"
+  },
   "f9eb91046a1fc829": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -73335,6 +73835,14 @@
    "note": "glossary textin: 'biotic' = living components of the environment (glossary fs-idp167420576); question paraphrases the body sentence 'all the biotic components (living things) in an area,' answer matches the glossary term exactly.",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "fa341a42e948b758": {
+   "verdict": "ok",
+   "note": "KC 1 5.5 § Characteristics, m58806",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -73788,6 +74296,10 @@
   "fbcf8a3288b827d9": {
    "verdict": "ok"
   },
+  "fbd32627c0c44e07": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § Disproving Spontaneous Generation, m58790"
+  },
   "fbd3e5038e444fb0": {
    "verdict": "ok",
    "solved": {
@@ -73804,6 +74316,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "fbd74809ddb32caa": {
+   "verdict": "ok",
+   "note": "KC 1 5.3 § Characteristics of Fungi, m58804",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -73996,6 +74516,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "fc786fc2c51591fd": {
+   "verdict": "ok",
+   "note": "KC 1 6.1 § Viral Structures, m58808",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -74353,6 +74881,14 @@
     "result": "agrees"
    }
   },
+  "fdcf21bfe4b63df2": {
+   "verdict": "ok",
+   "note": "KC 1 4.6 § body (introduction, before Crenarchaeota), m58800",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fdd05c4596350778": {
    "verdict": "ok",
    "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
@@ -74579,6 +75115,14 @@
   "fe810b374fc63b1b": {
    "verdict": "ok",
    "note": "KC 6 32.1 § body Angiosperms versus Gymnosperms (fs-idm59623456), m66607 — parent re-read against the module"
+  },
+  "fe85368278b9fbd7": {
+   "verdict": "ok",
+   "note": "KC 1 4.5 § body (Aquificae/Aquifex paragraph, no named subsection), m58799",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "fe87031436942774": {
    "verdict": "ok",

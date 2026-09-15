@@ -2,7 +2,7 @@
 title: Modern Applications of Microbial Genetics
 description: The molecular tools derived from microbes and how they are used — recombinant DNA and molecular cloning, the methods that visualize and characterize DNA, RNA, and protein, whole-genome and pharmaceutical applications of genetic engineering, and gene therapy.
 source_chapter: "12"
-weight: 12
+weight: 13
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_12_00_thermocycl" kind="photo" alt="Two photographs. Left, a benchtop thermal cycler: a boxy machine with a heated sample block under a raised lid and a small display and keypad on its front. Right, a light micrograph of many pale, rounded, unstained cells, three of which contain a large body stained orange-brown." eager="true" >}}

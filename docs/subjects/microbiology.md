@@ -1001,16 +1001,35 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
 
 ## Knowledge checks
 
-Not decided. Biology's checks are one page per unit because its collection
-has units; Microbiology's is flat, so the life-sciences edition's placement
-rule does not apply as written. The candidates are one check per chapter
-(the math edition's shape, 26 pages) or one per natural block of chapters
-(for example 1–6 the microbial world, 7–12 biochemistry, metabolism, and
-genetics, 13–14 control and drugs, 15–20 pathogenicity, epidemiology, and
-immunity, 21–26 the body systems — a grouping the source does not print
-and would have to be justified on the cover). Decide before the first
-check is authored, and record the decision and the weight table here and
-in `docs/knowledge-check-playbook-life-sciences.md`.
+Decided September 15, 2026: **one check per block of chapters, five pages.**
+Microbiology's collection is flat (no `units` list in the source map), so the
+life-sciences edition's "one page per unit" rule cannot apply as written and
+the sidebar renders the checks the way the math books do — a book-level page
+weighted immediately after its block's last chapter, no unit label. The
+blocks follow the book's own sequence of subjects (the cover's chapter list
+groups them the same way), and the alternative — 26 per-chapter pages of
+9–24 items — was rejected as too thin to be cumulative. Everything else is the
+life-sciences edition unchanged: exactly three author-written items per
+section with at least one auto-graded (`knowledgeCheck` in `BOOK_RULES`),
+no hints, the duplicate-stem lint, subsection provenance in the ledger note
+(`KC <block> <N.M> § <subsection>, m<module>`), and the triple check with a
+blind solve on masked scratch blocks. The weight table, so nobody re-derives
+it (chapter weight = chapter number + the number of blocks that end before
+it):
+
+| Block | Chapters | Chapter weights | File | KC weight | Sections / items |
+|---|---|---|---|---|---|
+| 1 The Microbial World | 1–6 | 1–6 | `knowledge-check-01-06.md` | 7 | 26 / 78 |
+| 2 Biochemistry, Metabolism, and Genetics | 7–12 | 8–13 | `knowledge-check-07-12.md` | 14 | 33 / 99 |
+| 3 Control and Antimicrobial Drugs | 13–14 | 15–16 | `knowledge-check-13-14.md` | 17 | 11 / 33 |
+| 4 Pathogenicity, Epidemiology, and Immunity | 15–20 | 18–23 | `knowledge-check-15-20.md` | 24 | 27 / 81 |
+| 5 Infections of the Body Systems | 21–26 | 25–30 | `knowledge-check-21-26.md` | 31 | 30 / 90 |
+
+Land a block's check and the +1 shift of every later chapter in the same
+commit (`npm run validate` requires strictly sequential weights at the book
+root). The Glossary appendix (m58950) supplies a recall item's definition,
+since the modules have no glossary of their own; a term the module bolds
+whose m58950 entry is a known defect is not an anchor.
 
 ## How a chapter is run
 

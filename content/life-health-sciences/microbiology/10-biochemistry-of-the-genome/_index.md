@@ -2,7 +2,7 @@
 title: Biochemistry of the Genome
 description: How DNA was discovered to be the molecule of heredity — Mendel, the chromosomal theory, Griffith, Avery, and Hershey and Chase — and the structure and function of DNA, of RNA, and of the cellular and viral genomes they make up.
 source_chapter: "10"
-weight: 10
+weight: 11
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_10_00_HumvsBactG" kind="photo" alt="Two photographs. Left, two smiling young women in camouflage uniforms with matching short dark hair, seated side by side; their faces are nearly identical. Right, a false-colour micrograph of a single dark-red oval cell on a purple background, with many long pale filaments radiating from its surface and small blue dots scattered around it." eager="true" >}}

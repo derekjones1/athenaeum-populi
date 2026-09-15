@@ -2,7 +2,7 @@
 title: Disease and Epidemiology
 description: How disease spreads through populations — the vocabulary of epidemiology (incidence, prevalence, sporadic, endemic, epidemic, and pandemic disease), the pioneers and study designs that trace an outbreak to its source, the reservoirs and contact, vector, and vehicle modes by which disease is transmitted, and the international organizations that track emerging and reemerging disease.
 source_chapter: "16"
-weight: 16
+weight: 17
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_16_00_Splash" kind="photo" alt="A close-up of a red biohazard waste bin with a rectangular orange-red warning label showing the black biohazard trefoil symbol above the word BIOHAZARD, and a red plastic liner bag visible curling over the bin's rim." eager="true" >}}

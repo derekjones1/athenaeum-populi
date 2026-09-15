@@ -2,7 +2,7 @@
 title: Microbial Metabolism
 description: How microbes capture, store, and spend energy — enzymes and electron carriers, the catabolism of carbohydrates by glycolysis and the Krebs cycle, respiration and fermentation, the breakdown of lipids and proteins, photosynthesis, and the biogeochemical cycles microbes drive.
 source_chapter: "8"
-weight: 8
+weight: 9
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_08_00_Splash" kind="photo" alt="Two photographs. Left, a shallow stream bed whose water and banks are stained orange and rust-brown, with a crusted yellow deposit in the channel and bare trees behind. Right, a tangle of pale plant roots laid on a black background; a white box marks one region, and an inset enlargement of it shows small round nodules on the roots, pointed out by white arrows." eager="true" >}}

@@ -302,7 +302,17 @@ test('the microbiology subject playbook states its lint-backed rules and its ans
   assert.match(micro, /\*\*`unmatched`\*\* when it has\s+no source counterpart/);
   assert.match(micro, /No per-module|Microbiology has none/, 'states that there is no per-module glossary');
   assert.match(micro, /source:media -- --book microbiology/);
-  assert.match(micro, /## Knowledge checks\n\nNot decided\./, 'the KC placement decision is recorded as open, not silently made');
+  // The KC placement decision (September 15, 2026): a flat book gets one
+  // check per block of chapters, five pages, and the weight table is pinned
+  // here so the shift arithmetic is never re-derived.
+  assert.match(micro, /## Knowledge checks\n\nDecided September 15, 2026: \*\*one check per block of chapters, five pages\.\*\*/);
+  for (const file of ['01-06', '07-12', '13-14', '15-20', '21-26']) {
+    assert.match(micro, new RegExp('`knowledge-check-' + file + '\\.md`'), `block file ${file}`);
+  }
+  assert.match(micro, /\| 1–6 \| 1–6 \| `knowledge-check-01-06\.md` \| 7 \|/);
+  assert.match(micro, /\| 21–26 \| 25–30 \| `knowledge-check-21-26\.md` \| 31 \|/);
+  const kcLife = read('docs/knowledge-check-playbook-life-sciences.md');
+  assert.match(kcLife, /A flat book \(no `units` list\) uses blocks instead of units/);
 });
 
 test('the OpenStax workflow doc documents every pinned bundle', () => {

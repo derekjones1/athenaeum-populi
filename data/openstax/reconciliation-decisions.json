@@ -1590,6 +1590,18 @@
       "status": "correct-local-source-defect",
       "errataEntry": 792,
       "rationale": "The Listeriosis subsection's second paragraph (para fs-id1167663650105) reads: \"Unlike most other foodborne pathogens, Listeria is able to grow at temperatures between 0 °C and 50 °C, and can therefore continue to grow, even in refrigerated foods,\" printed exactly as quoted and confirmed present verbatim in sources/openstax/osbooks-microbiology/modules/m58941/index.cnxml:141. This book is silent on Listeria's growth-temperature ceiling elsewhere, so an external reference was used to confirm the correction: the FDA Bacteriological Analytical Manual (BAM), Chapter 10, Listeria monocytogenes, gives a growth range of roughly -1.5 °C to 45 °C (optimum 30-37 °C), consistent with published growth-limit studies capping growth at approximately 45 °C, not 50 °C. The page keeps the source's printed sentence unchanged but appends a visible Source note beside it (erratum 792): \"reference values, such as the FDA Bacteriological Analytical Manual, place the upper growth limit for L. monocytogenes near 45 °C.\" No item, hint, or key term on the page was built on the uncorrected \"50 °C\" figure. Found by the chapter 26 prose claim pass, September 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/01-unicellular-eukaryotic-parasites.md",
+      "bundle": "microbiology",
+      "moduleId": "m58802",
+      "sourceElementIds": [
+        "OSC_Microbio_05_01_groups1",
+        "fs-id1172101847862"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 811,
+      "rationale": "The Excavata supergroup table (figure OSC_Microbio_05_01_groups1, transcribed on the page from its alt and printed image) lists the Parabasalids' distinguishing features as \"no mitochondria ... basal bodies, kinetoplastids\", and the Excavata paragraph (para fs-id1172101847862) says parabasalids \"have basal bodies and modified mitochondria (kinetoplastids)\". The same module's Protozoan Organelles paragraph defines kinetoplastids as modified mitochondria, so \"no mitochondria\" and \"kinetoplastids\" cannot both describe the group. The book's own m58793 (Section 3.4, para fs-id1172100621869) states that Trichomonas vaginalis, the parabasalid the table names, \"lacks conventional mitochondria\" and \"possesses hydrogenosomes\", and (para fs-id1172100988357) that the kinetoplast is the single branched mitochondrion of certain eukaryotic pathogens — the trypanosomes of the Euglenozoa. The page keeps the table row and the paragraph as printed, with a visible Source note after the table and a footer sentence. Found by the chapter 5 checker of the Chapters 1–6 Knowledge Check run, September 15, 2026; the check's Fornicata item is unaffected (only Fornicata satisfies its Giardia clause)."
     }
   ]
 }

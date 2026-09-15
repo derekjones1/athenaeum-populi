@@ -1010,3 +1010,55 @@ Everything in biology's Verification section, plus:
   22WHOprion both 404 by `curl` (22CDCprion's 403 is a bot wall and stays
   linked); un-linked per the life-sciences "External links" rule, each
   with an erratum.
+
+## Knowledge Check 1 — chapters 1–6 (September 15, 2026)
+
+The first of the five block checks (`docs/subjects/microbiology.md`
+§Knowledge checks records the placement decision and the weight table):
+`knowledge-check-01-06.md`, 26 sections, 78 items (31 multiple choice, 24
+textin, 3 sortbins, 20 selfcheck), weight 7, chapters 7–26 shifted +1.
+Run shape, all Sonnet unless named: six authors (one per chapter, scratch
+pages at a mirrored `content/…` path, `ledger.md` + `provenance.json` each;
+220–350k output tokens, 7–12 min), six module-fidelity checkers launched as
+each author finished, a two-agent reverse-recall sweep over the assembled
+page (chapters 1–3 and 4–6), a re-check of the 18 replaced or rewritten
+items, and a blind solve in a fresh Fable subagent reading the masked check
+beside masked copies of the 26 section pages (`solve:emit --pages-out` on
+each chapter directory, packets discarded).
+
+- **Checker yield:** 7 defects in 78 — invented option ranges (2.3), a
+  keyword tell where only the key mentioned the stem's subject (2.4), a
+  rubric clause already a page self-check's rubric checkpoint (6.1), a
+  verb-phrase cloze (6.4), an abridged table-row distractor (6.4), a
+  missing common-name accept (1.3), a "which species" stem over bare-genus
+  distractors (4.3).
+- **Parent read** found 9 more: same fact as a sibling section's Practice
+  cloze (1.3 bacillus vs 3.3 bacilli), a count answered by inspection
+  (4.1), "such as" clozes admitting any member (5.1, 5.5), a list-tail
+  cloze (5.2), a cloze answerable from the word "genome" (6.4), and three
+  accept gaps (nucleus, Svedberg, Mohenjodaro).
+- **Reverse-recall sweep:** 5 flags in 78, all real — three case-3 hits
+  where a section page HINT printed the key with its defining fact
+  (Aristotle 3.1, phosphorescence 2.1, Fornicata/Giardia 5.1,
+  toxocariasis 5.2) and one case-2 hit that was the parent's own
+  replacement (5.5 soil/rock, the Practice cloze with the blank moved). The
+  re-check of the replacements then caught one more reverse recall (5.1
+  mitochondria vs the page's "What are kinetoplastids?"). Lesson: a
+  replacement chosen by the parent from a module sentence needs the same
+  page-wide hint/Practice read as an author's; two of the parent's three
+  picks were reverse recalls.
+- **Blind solve:** 58 graded items, 57 agree, 1 disagreement settled for
+  the key (4.4 "nonpyogenic" streptococci — the module never prints
+  "viridans"; the accept list took it), then 58/58 after the last
+  replacement was solved on its own packet.
+- **Source finding:** the 5.1 checker noticed the Excavata table gives the
+  parabasalids both "no mitochondria" and "kinetoplastids"; the book's own
+  §3.4 gives *Trichomonas* hydrogenosomes. Erratum 811, Source note on the
+  5.1 page, decisions entry. The check's item on that row was replaced for
+  an unrelated reverse-recall reason.
+- **Tooling:** a fresh KC needs no new gate — the quota, duplicate-stem,
+  rubric, no-hint, and stand-alone-stem lints all fired on the scratch
+  pages; `verify-section` accepts the mirrored scratch path. The scratch
+  kit (assemble, shift-weights, kc-notes, combine) lived in the session
+  scratchpad; the notes matcher must strip Markdown emphasis from stems.
+  Floors after landing: --min-exercises 14187, --min-replayed 10181.

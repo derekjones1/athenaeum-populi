@@ -2,7 +2,7 @@
 title: Microbial Biochemistry
 description: The organic molecules of microbial life — the functional groups and macromolecules of carbon chemistry, then carbohydrates, lipids, and proteins in turn — and how the biochemical signatures of those molecules are used to identify microorganisms.
 source_chapter: "7"
-weight: 7
+weight: 8
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_07_00_splash" kind="diagram" alt="A closed loop of glass tubing with red arrows showing the flow. At lower right a flask of water labelled to simulate the ocean sits over a flame; above it a stopcock leads to a vacuum pump and to the gases water, methane, hydrogen, and ammonia, labelled to simulate the atmosphere. At upper left a larger flask holds two electrodes producing an electric spark, labelled to simulate lightning. Below it a condenser cools the vapour into a trap labelled cooled water containing organic compounds, which drains back toward the heated flask." eager="true" >}}

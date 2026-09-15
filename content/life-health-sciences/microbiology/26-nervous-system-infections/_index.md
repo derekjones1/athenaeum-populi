@@ -2,7 +2,7 @@
 title: Nervous System Infections
 description: How microbes of the nervous system cause disease — the anatomy of the central and peripheral nervous systems, the blood-brain barrier, and the cells of the nervous system, why the nervous system lacks normal microbiota, how microorganisms overcome its defenses to cause infection, and the general signs and symptoms of nervous system disease including meningitis, encephalitis, and Guillain-Barré syndrome, the bacterial diseases including meningococcal meningitis, pneumococcal meningitis, neonatal meningitis, and Haemophilus influenzae type b meningitis, tetanus, botulism, listeriosis, and Hansen's disease (leprosy), the acellular diseases including viral meningitis, arboviral encephalitis, Zika virus infection, rabies, poliomyelitis, and the transmissible spongiform encephalopathies, and the fungal and parasitic diseases cryptococcal meningitis, primary amoebic meningoencephalitis, granulomatous amoebic encephalitis, human African trypanosomiasis, neurotoxoplasmosis, and neurocysticercosis.
 source_chapter: "26"
-weight: 26
+weight: 27
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_26_01_Rabiddog" kind="photo" alt="Black-and-white photo of a dog behind a chain-link fence, its mouth open wide in a snarl that bares its teeth and tongue; a collar is visible at its neck." eager="true" >}}

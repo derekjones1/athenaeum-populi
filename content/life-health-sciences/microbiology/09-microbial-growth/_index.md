@@ -2,7 +2,7 @@
 title: Microbial Growth
 description: How microbial populations grow and how growth is measured — binary fission and the growth curve, counting cells directly and indirectly, biofilms and quorum sensing, and the oxygen, pH, temperature, osmotic, and nutritional conditions that govern growth, together with the media used to culture bacteria.
 source_chapter: "9"
-weight: 9
+weight: 10
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_09_00_splash" kind="photo" alt="Two photographs. Left, a grey scanning electron micrograph of a rough, porous surface pocked with dark irregular holes; two orange arrows point to small round cells sitting on the surface, and a scale bar reads 5 µm. Right, a white plastic bin seen from above with a white post standing in it; the bin holds dark water, and an orange arrow points to a green film coating its inner wall." eager="true" >}}
