@@ -2,7 +2,7 @@
 title: Antimicrobial Drugs
 description: The drugs that treat infection — the history of chemotherapy from Ehrlich to Waksman, the principles of antimicrobial chemotherapy, the mechanisms of antibacterial, antifungal, antiprotozoan, antihelminthic, and antiviral drugs, how resistance arises and spreads, how susceptibility is tested, and where new antimicrobials will come from.
 source_chapter: "14"
-weight: 15
+weight: 16
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_14_00_Antimicro" kind="photo" alt="Left, a vintage color poster reading 'Penicillin, the new life-saving drug, saves soldiers' lives!' above a painting of a nurse at the bedside of a smiling, bandaged soldier, with the slogan 'Men who might have died will live if you give this job everything you've got.' Right, a photograph of a health worker in a blue gown, face mask, and gloves adjusting an intravenous fluid bag hung on a pole in a ward with bamboo framing." eager="true" >}}

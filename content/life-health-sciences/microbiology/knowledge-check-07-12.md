@@ -1,0 +1,827 @@
+---
+title: "Knowledge Check: Chapters 7–12 — Biochemistry, Metabolism, and Genetics"
+description: >-
+  A cumulative self-test on Chapters 7–12, Biochemistry, Metabolism, and
+  Genetics — the organic molecules, carbohydrates, lipids, and proteins of
+  microbial biochemistry; how microbes generate and use energy; and the
+  genome, its expression, and the mechanisms that change it — with every
+  question written from the chapters' own text in OpenStax Microbiology.
+source_chapters: "7-12"
+weight: 14
+---
+
+{{< callout type="info" >}}
+  **Test yourself on Chapters 7–12: Biochemistry, Metabolism, and Genetics.**
+  Every question below was written from the chapters' own text — their
+  summaries, key terms, explanations, and tables — and none repeats a
+  question from the section pages. There are no hints: treat it like a
+  test. Questions are grouped by the section they come from, so a miss
+  tells you exactly which section to review.
+{{< /callout >}}
+
+## Chapter 7: Microbial Biochemistry
+
+### 7.1 Organic Molecules
+
+{{< textin
+  question="An element required in abundance in cells, accounting for approximately 99% of the cell's dry weight, is called a ________."
+  answer="macronutrient"
+>}}
+
+{{< multiplechoice
+  question="Which amino acid enantiomer is found in bacterial cell walls, as distinct from the enantiomer found in human cells?"
+  answer="D-alanine"
+>}}
+D-alanine
+L-alanine
+D-glucose
+L-glucose
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which functional group, with the structure R—O—R′, is found in disaccharides, polysaccharides, and lipids?"
+  answer="Ether"
+>}}
+Methyl
+Ether
+Hydroxyl
+Phosphate
+{{< /multiplechoice >}}
+
+### 7.2 Carbohydrates
+
+{{< textin
+  question="In biochemistry, carbohydrates are often called ________, from the Greek word for sugar, although not all of them are sweet."
+  answer="saccharides"
+>}}
+
+{{< textin
+  question="The grain sugar disaccharide made of two glucose molecules linked together is called ________."
+  answer="maltose"
+>}}
+
+{{< multiplechoice
+  question="N-acetyl glucosamine (NAG) and N-acetyl muramic acid (NAM) together are found in which structure?"
+  answer="bacterial cell wall peptidoglycan"
+>}}
+chitin
+bacterial cell wall peptidoglycan
+cellulose fiber
+a starch granule
+{{< /multiplechoice >}}
+
+### 7.3 Lipids
+
+{{< multiplechoice
+  question="Which functional group terminates the long hydrocarbon chain of a fatty acid?"
+  answer="carboxylic acid"
+>}}
+hydroxyl group
+phosphate group
+carboxylic acid
+{{< /multiplechoice >}}
+
+{{< textin
+  question="A complex lipid that contains a carbohydrate moiety bonded to the lipid's head group is called a ________."
+  answer="glycolipid"
+>}}
+
+{{< textin
+  question="The bacterium that feeds on the skin's lipids, generating short-chain fatty acids and contributing to the production of acne, is ________."
+  answer="Cutibacterium acnes"
+  accept="C. acnes"
+>}}
+
+### 7.4 Proteins
+
+{{< textin
+  question="In an amino acid, the hydrogen atom, carboxyl group, and amino group are all bonded to the same carbon atom, called the ________."
+  answer="α carbon"
+  accept="alpha carbon"
+>}}
+
+{{< multiplechoice
+  question="Which carrier protein, produced in the root nodules formed by rhizobia symbiotically interacting with legume roots, binds with high affinity to oxygen?"
+  answer="leghemoglobin"
+>}}
+hemoglobin
+leghemoglobin
+the CFTR protein
+a glycoprotein
+{{< /multiplechoice >}}
+
+{{< textin
+  question="Bonds between the sulfhydryl (–SH) functional groups on amino acid side chains, one of the interactions that gives rise to tertiary structure, are called ________."
+  answer="disulfide bridges"
+>}}
+
+### 7.5 Using Biochemistry to Identify Microorganisms
+
+{{< textin
+  question="A carbon- and energy-storage compound found in the granules of some nonfluorescent species of the genus *Pseudomonas* is ________."
+  answer="poly-β-hydroxybutyrate"
+  accept="PHB"
+>}}
+
+{{< textin
+  question="The company whose automated system identifies bacterial cells based on their ability to metabolize certain biochemicals, using panels of biochemical reactions analyzed by software, is ________, Inc."
+  answer="Biolog"
+>}}
+
+{{< selfcheck question="How can different species within the genus *Pseudomonas* be classified using PHB and fluorescent pigments, and which two named species exemplify fluorescent, non-PHB-accumulating members of the genus?" >}}
+Different species within the genus Pseudomonas can be classified by the presence or the absence of PHB and fluorescent pigments. The human pathogen P. aeruginosa and the plant pathogen P. syringae are two examples of fluorescent Pseudomonas species that do not accumulate PHB granules.
+===CHECKS===
+classified by the presence or the absence of PHB and fluorescent pigments
+the human pathogen P. aeruginosa and the plant pathogen P. syringae
+two examples of fluorescent Pseudomonas species that do not accumulate PHB granules
+{{< /selfcheck >}}
+
+## Chapter 8: Microbial Metabolism
+
+### 8.1 Energy, Matter, and Enzymes
+
+{{< multiplechoice
+  question="Which of the following organism types is unique to the microbial world, obtaining energy from inorganic compounds such as hydrogen sulfide or reduced iron?"
+  answer="lithotrophs"
+>}}
+chemotrophs
+lithotrophs
+organotrophs
+autotrophs
+{{< /multiplechoice >}}
+
+{{< textin
+  question="An enzyme that lacks its necessary cofactor or coenzyme, and is therefore inactive, is called a(n) ________."
+  answer="apoenzyme"
+>}}
+
+{{< selfcheck question="What is an allosteric activator, and how does its effect on an enzyme's active site compare with that of an inhibitor?" >}}
+Allosteric activators bind to locations on an enzyme away from the active site, inducing a conformational change that increases the affinity of the enzyme's active site(s) for its substrate(s) — the opposite effect of an inhibitor, which reduces that affinity or blocks the active site outright.
+===CHECKS===
+allosteric activators bind to locations on an enzyme away from the active site
+inducing a conformational change
+increases the affinity of the enzyme's active site(s) for its substrate(s)
+{{< /selfcheck >}}
+
+### 8.2 Catabolism of Carbohydrates
+
+{{< multiplechoice
+  question="The type of glycolysis most common in animals and microbes, the EMP pathway, is named after Gustav Embden, Otto Meyerhof, and which other scientist?"
+  answer="Jakub Parnas"
+>}}
+Jakub Parnas
+Nathan Entner
+Michael Doudoroff
+Hans Adolf Krebs
+{{< /multiplechoice >}}
+
+{{< textin
+  question="The pentose phosphate pathway is also called the phosphogluconate pathway or the ________."
+  answer="hexose monophosphate shunt"
+>}}
+
+{{< multiplechoice
+  question="In eukaryotic cells, the Krebs cycle takes place in the mitochondrial matrix, the same location where the transition reaction occurs."
+  answer="True"
+>}}
+True
+False
+{{< /multiplechoice >}}
+
+### 8.3 Cellular Respiration
+
+{{< textin
+  question="The four major classes of electron carriers in both eukaryotic and prokaryotic electron transport systems are the cytochromes, flavoproteins, iron-sulfur proteins, and the ________."
+  answer="quinones"
+>}}
+
+{{< textin
+  question="For a protein or chemical in the electron transport system to accept electrons, it must have a more positive ________ than the electron donor."
+  answer="redox potential"
+>}}
+
+{{< multiplechoice
+  question="In aerobic respiration in mitochondria, electrons from one molecule of NADH generate enough proton motive force to make how many ATP molecules by oxidative phosphorylation?"
+  answer="three"
+>}}
+one
+two
+three
+four
+{{< /multiplechoice >}}
+
+### 8.4 Fermentation
+
+{{< multiplechoice
+  question="Lactic acid bacteria are described as the primary component of which category of products?"
+  answer="probiotics"
+>}}
+antibiotics
+pharmaceuticals
+probiotics
+biofuels
+{{< /multiplechoice >}}
+
+{{< textin
+  question="The heterolactic fermenter used for souring vegetables like cucumbers and cabbage, producing pickles and sauerkraut, is *________*."
+  answer="Leuconostoc mesenteroides"
+  accept="L. mesenteroides"
+>}}
+
+{{< selfcheck question="Why is lactic acid production by the normal microbiota clinically important?" >}}
+Lactic acid bacteria are important medically. The production of low pH environments within the body inhibits the establishment and growth of pathogens in these areas. The vaginal microbiota is composed largely of lactic acid bacteria, but when these bacteria are reduced, yeast can proliferate, causing a yeast infection. Lactic acid bacteria are also important in maintaining the health of the gastrointestinal tract.
+===CHECKS===
+low pH environments within the body inhibit the establishment and growth of pathogens
+the vaginal microbiota is composed largely of lactic acid bacteria
+when these bacteria are reduced, yeast can proliferate, causing a yeast infection
+important in maintaining the health of the gastrointestinal tract
+{{< /selfcheck >}}
+
+### 8.5 Catabolism of Lipids and Proteins
+
+{{< multiplechoice
+  question="Which enzymes catalyze the breakdown of triglycerides, releasing fatty acid chains from the glycerol backbone?"
+  answer="lipases"
+>}}
+phospholipases
+lipases
+proteases
+caseinase
+{{< /multiplechoice >}}
+
+{{< textin
+  question="Phospholipid structure is similar to a triglyceride's, except that one of the fatty acids is replaced by a ________."
+  answer="phosphorylated head group"
+>}}
+
+{{< multiplechoice
+  question="Which of the following best describes casein, the substrate degraded by the enzyme caseinase?"
+  answer="the main protein found in milk"
+>}}
+the main protein found in gelatin
+a lipid found in host cell membranes
+an amino acid deaminated to remove its amino group
+the main protein found in milk
+{{< /multiplechoice >}}
+
+### 8.6 Photosynthesis
+
+{{< multiplechoice
+  question="Which of the following photosynthetic pigments is blue in color?"
+  answer="phycocyanins"
+>}}
+chlorophylls
+phycocyanins
+carotenoids
+phycoerythrins
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Working with colleague Keith Boardman, which scientist demonstrated the existence of two separate photosystems by chemically fragmenting active chloroplasts and using a centrifuge to separate their components?"
+  answer="Joan Mary Anderson"
+>}}
+Melvin Calvin
+Andrew Benson
+Joan Mary Anderson
+{{< /multiplechoice >}}
+
+{{< textin
+  question="The Calvin-Benson cycle takes place within the cytoplasm of photosynthetic bacteria and in the ________ of eukaryotic chloroplasts."
+  answer="stroma"
+>}}
+
+### 8.7 Biogeochemical Cycles
+
+{{< textin
+  question="Methane accumulation in the environment is a significant concern because it is a strong ________ gas."
+  answer="greenhouse"
+>}}
+
+{{< multiplechoice
+  question="Which free-living genus of bacteria is able to fix nitrogen?"
+  answer="*Azotobacter*"
+>}}
+*Nitrosomonas*
+*Pseudomonas*
+*Clostridium*
+*Azotobacter*
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Besides iron and manganese, which of the following elements also undergoes a biogeochemical cycle involving redox chemistry?"
+  answer="chromium"
+>}}
+calcium
+phosphorus
+chromium
+silica
+{{< /multiplechoice >}}
+
+## Chapter 9: Microbial Growth
+
+### 9.1 How Microbes Grow
+
+{{< multiplechoice
+  question="How does a Coulter counter detect and count cells as they pass through its aperture?"
+  answer="It detects changes in electrical resistance in an electrolyte solution as each cell passes through a small opening."
+>}}
+It detects changes in electrical resistance in an electrolyte solution as each cell passes through a small opening.
+It measures the decrease in light transmission through a bacterial suspension.
+It compares a pattern of positive and negative tubes to a probability table.
+It weighs a filtered, washed, and dried sample of cells.
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="What does a chemostat do?"
+  answer="It maintains a continuous culture in the logarithmic phase of growth by supplying nutrients and removing wastes at a steady rate."
+>}}
+It measures the turbidity of a bacterial suspension using a light beam and a detector.
+It maintains a continuous culture in the logarithmic phase of growth by supplying nutrients and removing wastes at a steady rate.
+It estimates cell density by measuring the dry weight of a filtered, washed, and dried sample.
+It counts colonies growing on solid medium after a series of dilutions are plated.
+{{< /multiplechoice >}}
+
+{{< textin question="A dormant cell that survives in the death phase and is resistant to most antibiotics is called a ________." answer="persister" >}}
+
+### 9.2 Oxygen Requirements for Microbial Growth
+
+{{< textin question="The active ingredient of household bleach, and an example of a reactive oxygen species, is the ________." answer="hypochlorite ion" accept="hypochlorite" >}}
+
+{{< multiplechoice
+  question="Which enzyme catalyzes the reaction 2O₂⁻ + 2H⁺ → H₂O₂ + O₂, breaking down a powerful reactive ion generated by aerobic metabolism?"
+  answer="superoxide dismutase"
+>}}
+superoxide dismutase
+peroxidase
+catalase
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which piece of equipment for culturing obligate anaerobes is an enclosed box with glove-like sleeves sealed into its sides, letting the cultures be handled without exposing them to air?"
+  answer="anaerobic chamber"
+>}}
+anaerobic chamber
+anaerobic jar
+candle jar
+thioglycolate tube culture
+{{< /multiplechoice >}}
+
+### 9.3 The Effects of pH on Microbial Growth
+
+{{< multiplechoice
+  question="What environment inactivates *Vibrio cholerae*, even though the organism can survive a pH as high as 11.0?"
+  answer="the acid of the stomach"
+>}}
+a soda lake at pH 10.5
+hot springs and sulfur mud fields
+the acid of the stomach
+the near-neutral growth environment of *Salmonella* spp. (pH 7.0–7.5)
+{{< /multiplechoice >}}
+
+{{< textin question="*Bacillus firmus* derives the energy for transport reactions and motility from a ________ rather than a proton motive force." answer="Na⁺ ion gradient" accept="sodium ion gradient" >}}
+
+{{< selfcheck question="Besides denaturing proteins, how does extreme pH damage a cell's DNA and lipids?" >}}
+Extreme pH affects the structure of all macromolecules, not just proteins. The hydrogen bonds holding together strands of DNA break up at high pH, and lipids are hydrolyzed by an extremely basic pH.
+===CHECKS===
+Extreme pH affects the structure of all macromolecules
+The hydrogen bonds holding together strands of DNA break up at high pH
+lipids are hydrolyzed by an extremely basic pH
+{{< /selfcheck >}}
+
+### 9.4 Temperature and Microbial Growth
+
+{{< textin question="Which two nutrients does artificial fertilizer provide that, in excess runoff, trigger algal blooms in lakes and coastal ecosystems?" answer="nitrogen and phosphorus" accept="phosphorus and nitrogen" >}}
+
+{{< textin question="The toxins produced by cyanobacterial blooms in Lake Erie, which can cause allergic reactions and liver damage when ingested, are called ________." answer="microcystins" >}}
+
+{{< multiplechoice
+  question="After freeze-drying (lyophilization), how are bacterial cultures stored for long-term preservation?"
+  answer="As powders in sealed ampules, to be reconstituted with broth when needed."
+>}}
+As powders in sealed ampules, to be reconstituted with broth when needed.
+Mixed with sterile glycerol solutions and frozen to −80 °C.
+Sterilized by steam or incinerated to eliminate contamination.
+{{< /multiplechoice >}}
+
+### 9.5 Other Environmental Conditions that Affect Growth
+
+{{< multiplechoice
+  question="What is the typical water activity (a<sub>w</sub>) range bacteria require for growth?"
+  answer="0.97–0.99"
+>}}
+0.97–0.99
+0.8–0.75
+1.0
+{{< /multiplechoice >}}
+
+{{< selfcheck question="Why are the characteristics of barophiles largely unknown?" >}}
+Because it is difficult to retrieve intact specimens and reproduce such growth conditions in the laboratory, the characteristics of these microorganisms are largely unknown.
+===CHECKS===
+difficult to retrieve intact specimens
+reproduce such growth conditions in the laboratory
+the characteristics of these microorganisms are largely unknown
+{{< /selfcheck >}}
+
+{{< multiplechoice
+  question="Which of the following organisms is a photoheterotroph rather than a photoautotroph?"
+  answer="purple nonsulfur bacteria"
+>}}
+cyanobacteria
+green sulfur bacteria
+purple nonsulfur bacteria
+the archaea of the class Halobacteria
+{{< /multiplechoice >}}
+
+### 9.6 Media Used for Bacterial Growth
+
+{{< textin question="All-purpose media support the growth of a large variety of organisms; a prime example is ________." answer="tryptic soy broth" accept="TSB" >}}
+
+{{< multiplechoice
+  question="Which ingredient in Mueller-Hinton agar supports bacterial growth and also absorbs toxins so that antibiotics continue to function, making the medium useful for the Kirby-Bauer disc diffusion test?"
+  answer="starch"
+>}}
+starch
+crystal violet
+bile salts
+beef extract
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="In a food-poisoning investigation, gram-positive cocci cultured from a suspect chicken salad are grown on mannitol salt agar for 24 hours. What happens to the medium?"
+  answer="It turns yellow as the cocci ferment mannitol and acidify the phenol red indicator."
+>}}
+It turns yellow as the cocci ferment mannitol and acidify the phenol red indicator.
+It turns hot pink as the cocci ferment lactose.
+It releases bubbles, indicating a positive catalase reaction.
+It shows no unusual coloration, as seen on the MacConkey and sorbitol-MacConkey plates inoculated with the patient's stool.
+{{< /multiplechoice >}}
+
+## Chapter 10: Biochemistry of the Genome
+
+### 10.1 Using Microbiology to Discover the Secrets of Life
+
+{{< multiplechoice
+  question="In 1902, Walter Sutton's observation of chromosome separation during meiosis, together with Theodor Boveri's observation that chromosomes determine embryonic development, led to the development of which theory?"
+  answer="the Chromosomal Theory of Inheritance"
+>}}
+the theory of blending of traits in continuous variation
+Mendel's laws
+the one gene–one enzyme hypothesis
+the Chromosomal Theory of Inheritance
+{{< /multiplechoice >}}
+
+{{< textin
+  question="A mobile segment of DNA that can excise from one location in a genome and integrate elsewhere, first identified by Barbara McClintock as a \"jumping gene,\" is called a ________."
+  answer="transposon"
+  accept="transposable element"
+>}}
+
+{{< selfcheck question="Describe the outcome of Mendel's cross between true-breeding violet-flowered pea plants and true-breeding white-flowered pea plants, from the P generation through the F₂ generation." >}}
+Mendel crossed plants that were true-breeding for violet flower color with plants true-breeding for white flower color as the P generation. The resulting hybrids in the F₁ generation all had violet flowers. In the F₂ generation, approximately three-quarters of the plants had violet flowers, and one-quarter had white flowers.
+===CHECKS===
+crossed plants that were true-breeding for violet flower color with plants true-breeding for white flower color
+the resulting hybrids in the F₁ generation all had violet flowers
+approximately three-quarters of the plants had violet flowers, and one-quarter had white flowers
+{{< /selfcheck >}}
+
+### 10.2 Structure and Function of DNA
+
+{{< textin
+  question="The combination of a five-carbon sugar and a nitrogenous base, without an attached phosphate group, is called a ________."
+  answer="nucleoside"
+>}}
+
+{{< multiplechoice
+  question="Which structural feature of the DNA double helix results from the asymmetrical spacing of its two sugar-phosphate backbones?"
+  answer="major and minor grooves"
+>}}
+phosphodiester bonds
+hydrogen bonds between complementary bases
+the right-handed helix
+major and minor grooves
+{{< /multiplechoice >}}
+
+{{< selfcheck question="Why was Rosalind Franklin not among the scientists awarded the 1962 Nobel Prize for the DNA double-helix structure, despite her critical X-ray diffraction work?" >}}
+In 1962, James Watson, Francis Crick, and Maurice Wilkins were awarded the Nobel Prize in Physiology and Medicine for the double-helix structure of DNA. Unfortunately, by then Rosalind Franklin had died, and Nobel prizes at the time were not awarded posthumously.
+===CHECKS===
+Watson, Crick, and Wilkins were awarded the Nobel Prize in Physiology and Medicine
+by then Franklin had died
+Nobel prizes at the time were not awarded posthumously
+{{< /selfcheck >}}
+
+### 10.3 Structure and Function of RNA
+
+{{< multiplechoice
+  question="Which scientists first hypothesized the existence of messenger RNA as an intermediary between DNA and its protein products?"
+  answer="François Jacob and Jacques Monod"
+>}}
+James Watson and Francis Crick
+Thomas Steitz and Peter Moore
+François Jacob and Jacques Monod
+Rosalind Franklin and R.G. Gosling
+{{< /multiplechoice >}}
+
+{{< textin
+  question="In eukaryotic cells, the synthesis, cutting, and assembly of rRNA into ribosomes takes place in a region of the nucleus called the ________."
+  answer="nucleolus"
+>}}
+
+{{< selfcheck question="How was rRNA's catalytic role in protein synthesis experimentally confirmed?" >}}
+Although rRNA had long been thought to serve primarily a structural role, its catalytic role within the ribosome was proven in 2000. Scientists in the laboratories of Thomas Steitz and Peter Moore at Yale University were able to crystallize the ribosome structure from *Haloarcula marismortui*, a halophilic archaeon isolated from the Dead Sea.
+===CHECKS===
+its catalytic role within the ribosome was proven in 2000
+Steitz and Moore ... were able to crystallize the ribosome structure
+Haloarcula marismortui, a halophilic archaeon isolated from the Dead Sea
+{{< /selfcheck >}}
+
+### 10.4 Structure and Function of Cellular Genomes
+
+{{< multiplechoice
+  question="Which term describes genes that are always expressed, some of which are called housekeeping genes because they are necessary for the basic functions of the cell?"
+  answer="constitutive genes"
+>}}
+nonconstitutive genes
+noncoding DNA
+extrachromosomal DNA
+constitutive genes
+{{< /multiplechoice >}}
+
+{{< textin
+  question="The influence of environmental factors on DNA packaging, a mechanism that regulates gene expression without altering the sequence of nucleotides, is called ________."
+  answer="epigenetics"
+>}}
+
+{{< selfcheck question="Why do bacterial endosymbionts and obligate or facultative intracellular pathogens tend to have smaller genomes than free-living bacteria?" >}}
+When a bacterium relies on the host cell to carry out certain functions, it loses the genes encoding the abilities to carry out those functions itself. Because host cells can supply most of their nutrients, obligate and facultative intracellular pathogens tend to have a reduced number of genes encoding metabolic functions.
+===CHECKS===
+when a bacterium relies on the host cell to carry out certain functions, it loses the genes encoding the abilities to carry out those functions itself
+host cells can supply most of their nutrients
+a reduced number of genes encoding metabolic functions
+{{< /selfcheck >}}
+
+## Chapter 11: Mechanisms of Microbial Genetics
+
+### 11.1 The Functions of Genetic Material
+
+{{< textin
+  question="A 2008 federal law currently prohibits discriminatory practices based on genetic information by both health insurance companies and employers. This law is called the ________."
+  answer="Genetic Information Nondiscrimination Act"
+  accept="GINA"
+>}}
+
+{{< selfcheck question="Why might genetic differences between human hosts affect their susceptibility to infection with an opportunistic pathogen like *Haemophilus influenzae*?" >}}
+There is evidence suggesting that differences in susceptibility to infection between patients may be a result, at least in part, of genetic differences between human hosts. For example, genetic differences in human leukocyte antigens (HLAs) and red blood cell antigens among hosts have been implicated in different immune responses and resulting disease progression from infection with *H. influenzae*.
+===CHECKS===
+differences in susceptibility to infection between patients may be a result, at least in part, of genetic differences between human hosts
+genetic differences in human leukocyte antigens (HLAs) and red blood cell antigens among hosts
+implicated in different immune responses and resulting disease progression from infection with H. influenzae
+{{< /selfcheck >}}
+
+{{< multiplechoice
+  question="With next-generation sequencing, a bacterial genome can now be sequenced in as little as how long?"
+  answer="a day"
+>}}
+an hour
+a day
+a week
+a month
+{{< /multiplechoice >}}
+
+### 11.2 DNA Replication
+
+{{< textin
+  question="Because bacterial DNA gyrase and topoisomerase IV are distinct from their eukaryotic counterparts, both enzymes serve as targets for a class of antimicrobial drugs called ________."
+  answer="quinolones"
+>}}
+
+{{< textin
+  question="The origin of replication is rich in adenine-thymine (AT) sequences because these sequences have fewer ________ than guanine-cytosine (GC) sequences, giving them weaker interactions."
+  answer="hydrogen bonds"
+>}}
+
+{{< multiplechoice
+  question="In which of the following human cell types is telomerase typically NOT active?"
+  answer="adult somatic cells"
+>}}
+germ cells
+adult stem cells
+adult somatic cells
+fungal and protozoan cells
+{{< /multiplechoice >}}
+
+### 11.3 RNA Transcription
+
+{{< multiplechoice
+  question="In *E. coli*, how many polypeptide subunits does bacterial RNA polymerase comprise in total?"
+  answer="six"
+>}}
+three
+four
+five
+six
+{{< /multiplechoice >}}
+
+{{< textin
+  question="During transcription, the partially unwound region of the DNA double helix where RNA synthesis occurs is called the ________."
+  answer="transcription bubble"
+>}}
+
+{{< multiplechoice
+  question="The single RNA polymerase found in archaea is most closely related to which eukaryotic RNA polymerase?"
+  answer="RNA polymerase II"
+>}}
+RNA polymerase II
+RNA polymerase I
+RNA polymerase III
+the bacterial RNA polymerase
+{{< /multiplechoice >}}
+
+### 11.4 Protein Synthesis (Translation)
+
+{{< textin
+  question="As an adaptor molecule of translation, a tRNA interacts with three factors: aminoacyl tRNA synthetases, ribosomes, and ________."
+  answer="mRNA"
+>}}
+
+{{< multiplechoice
+  question="Approximately how many types of tRNA typically exist in bacterial species?"
+  answer="60 to 90"
+>}}
+4
+20
+61
+60 to 90
+{{< /multiplechoice >}}
+
+{{< textin
+  question="During protein targeting and folding, proper folding of a polypeptide and association of multiple polypeptide subunits is often facilitated by ________ proteins."
+  answer="chaperone"
+>}}
+
+### 11.5 Mutations
+
+{{< textin
+  question="A mutation that occurs through an error in DNA replication rather than through exposure to a mutagen is called a ________ mutation."
+  answer="spontaneous"
+>}}
+
+{{< selfcheck question="Why is ionizing radiation exposure used to sterilize medical devices and foods, and how does it damage DNA?" >}}
+Strong ionizing radiation like X-rays and gamma rays can cause single- and double-stranded breaks in the DNA backbone through the formation of hydroxyl radicals on radiation exposure. Ionizing radiation exposure is used to kill microbes to sterilize medical devices and foods, because of its dramatic nonspecific effect in damaging DNA, proteins, and other cellular components.
+===CHECKS===
+forms hydroxyl radicals, causing single- and double-stranded breaks in the DNA backbone
+used to kill microbes to sterilize medical devices and foods
+its dramatic nonspecific effect in damaging DNA, proteins, and other cellular components
+{{< /selfcheck >}}
+
+{{< textin
+  question="In 1998, researchers found that up to 14% of some Eurasian populations carry a deletion mutation, called ________, in the gene encoding CCR5."
+  answer="CCR5-delta 32"
+  accept="CCR5-Δ32|delta 32"
+>}}
+
+### 11.6 How Asexual Prokaryotes Achieve Genetic Diversity
+
+{{< textin
+  question="The transmission of genetic information from generation to generation, the main mode of transmission of genetic information in all cells, is called ________ gene transfer."
+  answer="vertical"
+>}}
+
+{{< textin
+  question="Severe diarrheal disease caused by verotoxin-producing *E. coli* (VTEC) may result in a condition called ________."
+  answer="hemolytic uremic syndrome"
+  accept="HUS"
+>}}
+
+{{< multiplechoice
+  question="Which of the following pathogenic bacteria is virulent because of a toxin-encoding gene introduced into its chromosome by a lysogenic bacteriophage?"
+  answer="*Corynebacterium diphtheriae*"
+>}}
+*Escherichia coli*
+*Corynebacterium diphtheriae*
+*Streptococcus pneumoniae*
+*Shigella dysenteriae*
+{{< /multiplechoice >}}
+
+### 11.7 Gene Regulation: Operon Theory
+
+{{< multiplechoice
+  question="In sporulating bacteria of the genera *Bacillus* and *Clostridium*, what controls expression of the many genes needed for sporulation, in response to sporulation-stimulating signals?"
+  answer="a group of σ factors"
+>}}
+a group of alarmones
+riboswitches
+a group of σ factors
+attenuation
+{{< /multiplechoice >}}
+
+{{< textin
+  question="French scientists François Jacob and Jacques Monod were the first to show the organization of bacterial genes into operons through their studies of which operon in *E. coli*?"
+  answer="lac operon"
+  accept="lactose operon"
+>}}
+
+{{< textin
+  question="In eukaryotes, each enhancer is made up of short DNA sequences called ________."
+  answer="distal control elements"
+>}}
+
+## Chapter 12: Modern Applications of Microbial Genetics
+
+### 12.1 Microbes and the Tools of Genetic Engineering
+
+{{< textin
+  question="In 1978, Lydia Villa-Komaroff, working in whose laboratory, was the first to show that a transgenic bacterial strain could produce human insulin?"
+  answer="Walter Gilbert"
+  accept="Gilbert"
+>}}
+
+{{< multiplechoice
+  question="In 1972, Paul Berg, a Stanford biochemist, was the first to produce a recombinant DNA molecule by combining the SV40 monkey virus with which organism's bacteriophage lambda?"
+  answer="*E. coli*"
+>}}
+*E. coli*
+*Bacillus* spp.
+*Agrobacterium tumefaciens*
+{{< /multiplechoice >}}
+
+{{< textin
+  question="The first transgenic plant sold commercially, which came to market in 1994, was the ________ delayed-ripening tomato."
+  answer="Flavr Savr"
+>}}
+
+### 12.2 Visualizing and Characterizing DNA, RNA, and Protein
+
+{{< multiplechoice
+  question="In agarose gel electrophoresis, which stain is commonly added to visualize DNA fragments under ultraviolet light, despite being a potential carcinogen?"
+  answer="Ethidium bromide"
+>}}
+Ethidium bromide
+Coomassie blue
+Silver stain
+Radioactive phosphorus label
+{{< /multiplechoice >}}
+
+{{< textin
+  question="*Taq* DNA polymerase, commonly used in PCR, is derived from the bacterium *Thermus aquaticus*, isolated from a hot spring in which national park?"
+  answer="Yellowstone National Park"
+  accept="Yellowstone"
+>}}
+
+{{< multiplechoice
+  question="In 454 sequencing (pyrosequencing), what is released — and detected as a flash of light — when a nucleotide is incorporated into a growing DNA strand?"
+  answer="A pyrophosphate molecule"
+>}}
+A pyrophosphate molecule
+A fluorescent dye
+A dideoxynucleotide
+A radioactive phosphorus atom
+{{< /multiplechoice >}}
+
+### 12.3 Whole Genome Methods and Pharmaceutical Applications of Genetic Engineering
+
+{{< textin
+  question="Studying the mRNA gene-expression patterns of an entire microbial community, rather than a single species, is called ________."
+  answer="metatranscriptomics"
+>}}
+
+{{< multiplechoice
+  question="The naturally occurring antibiotic synthesis pathways of which microorganism, long known for antibiotic production, have been genetically modified to generate more than 200 new antibiotics?"
+  answer="*Streptomyces* spp."
+>}}
+*Streptomyces* spp.
+*Escherichia coli*
+*Yersinia pestis*
+*Borrelia burgdorferi*
+{{< /multiplechoice >}}
+
+{{< textin
+  question="In RNA interference, the endonuclease that cleaves double-stranded RNA into short fragments approximately 20 nucleotides long is called ________."
+  answer="DICER"
+>}}
+
+### 12.4 Gene Therapy
+
+{{< textin
+  question="In 1999, 18-year-old Jesse Gelsinger died four days after receiving gene therapy for a condition called ________ deficiency, which leads to ammonia accumulation in the blood."
+  answer="ornithine transcarbamylase"
+  accept="OTC"
+>}}
+
+{{< textin
+  question="A gene whose somatic cell mutations have been implicated in over 50 percent of human cancers, and a target of emerging gene therapies, is called ________."
+  answer="p53"
+>}}
+
+{{< multiplechoice
+  question="In 2013, the Institute of Medicine — since renamed to what body — called upon the NIH to relax its review of gene therapy trials in most cases?"
+  answer="The National Academy of Medicine"
+>}}
+The National Academy of Medicine
+The Food and Drug Administration (FDA)
+The Office of Human Research Protection (OHRP)
+The Recombinant DNA Advisory Committee (RAC)
+{{< /multiplechoice >}}
+
+---
+
+<small>This knowledge check is written for Chapters 7–12 (Biochemistry, Metabolism, and Genetics) of [Microbiology](https://openstax.org/books/microbiology/pages/1-introduction) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: every question is locally written from the pinned text of the chapters' own modules — their body passages, feature boxes, and glossary definitions — and none is transcribed from the book's exercise sets or repeats a question from the section pages' Practice blocks or body self-checks; no question carries a hint, and every self-check carries a rubric that decomposes a model answer made of the module's own sentences.</small>

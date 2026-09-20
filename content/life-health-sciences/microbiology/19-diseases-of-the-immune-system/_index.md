@@ -2,7 +2,7 @@
 title: Diseases of the Immune System
 description: How disorders of the immune system arise when the responses meant to protect the body instead cause or mediate disease — the type I, II, III, and IV hypersensitivity reactions and how they are diagnosed and treated, the organ-specific and systemic autoimmune diseases that result when the body attacks its own tissues, the role of human leukocyte antigens, graft rejection, and graft-versus-host disease in organ transplantation, the causes and treatment of primary and secondary immunodeficiencies, and how the immune system recognizes and responds to tumors through cancer immunotherapy.
 source_chapter: "19"
-weight: 20
+weight: 21
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_19_00_Splash" kind="photo" alt="Two panels. At left, a close-up photo of a fuzzy black-and-yellow honeybee gripping a cluster of spiky purple-blue flowers, its translucent wings folded along its body. At right, a photo of an orange-and-yellow EpiPen epinephrine auto-injector lying on a wood-grain surface." eager="true" >}}

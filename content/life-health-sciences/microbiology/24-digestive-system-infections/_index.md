@@ -2,7 +2,7 @@
 title: Digestive System Infections
 description: How microbes of the digestive system cause disease — the anatomy and normal microbiota of the oral cavity and gastrointestinal tract and the general signs and symptoms of oral and GI disease, the microbial diseases of the mouth and oral cavity including dental caries, periodontal disease, trench mouth, herpetic gingivostomatitis, oral thrush, and mumps, the bacterial infections of the gastrointestinal tract including staphylococcal food poisoning, shigellosis, salmonellosis, typhoid fever, cholera and other *Vibrio* infections, and peptic ulcers caused by *Helicobacter pylori*, the viral infections of the gastrointestinal tract including gastroenteritis caused by rotaviruses, noroviruses, and astroviruses, and viral hepatitis, the protozoan infections giardiasis, cryptosporidiosis, amoebiasis, and cyclosporiasis, and the helminthic infections ascariasis, hookworm, strongyloidiasis, pinworms, trichuriasis, trichinosis, tapeworms, hydatid disease, and liver and intestinal flukes.
 source_chapter: "24"
-weight: 25
+weight: 26
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_24_00_Ecoli" kind="photo" alt="Two scanning electron micrographs of densely packed oval, rod-shaped bacterial cells. At left, the cells have smooth surfaces with no visible connections between them. At right, similar cells are enmeshed in a dense web of fine fibers studded with small bead-like particles, with a 2 µm scale bar in the lower right corner." eager="true" >}}

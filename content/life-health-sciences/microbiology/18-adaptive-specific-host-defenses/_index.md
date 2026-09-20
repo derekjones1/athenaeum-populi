@@ -2,7 +2,7 @@
 title: Adaptive Specific Host Defenses
 description: How the adaptive immune system mounts a pathogen-specific, memory-based defense — the specificity and memory that distinguish primary from secondary responses and humoral from cellular immunity, the MHC I and MHC II molecules antigen-presenting cells use to display antigens to T cells, the maturation, selection, and activation of T lymphocytes in cellular immunity, the maturation and activation of B lymphocytes and the antibodies of humoral immunity, and the natural and artificial, active and passive forms of immunity that vaccines exploit.
 source_chapter: "18"
-weight: 19
+weight: 20
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_18_00_salk" kind="photo" alt="Black-and-white photograph of a crowded hospital ward filled with rows of iron lung machines—large cylindrical metal chambers that enclose a patient's body while the head remains outside—with nurses in white uniforms and caps moving between the rows to tend to patients." eager="true" >}}

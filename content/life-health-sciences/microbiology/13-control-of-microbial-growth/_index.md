@@ -2,7 +2,7 @@
 title: Control of Microbial Growth
 description: How microbial growth is controlled — the vocabulary of sterilization, disinfection, and antisepsis and the biosafety levels; the physical methods (heat, cold, pressure, desiccation, radiation, sonication, filtration); the chemical disinfectants and antiseptics; and the tests that measure how well they work.
 source_chapter: "13"
-weight: 14
+weight: 15
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_13_00_Splash" kind="photo" alt="Left, a two-column table of eleven car-interior locations and their average colony-forming units per 6.5 by 6.5 centimeter area: door latch 256, door lock 14, door lock control 182, door handle 29, window control 4, cruise control button 69, steering wheel 239, interior steering wheel 390, radio volume knob 99, gear shifter 115, center console 506. Right, a photograph of a car's front interior showing the steering wheel, dashboard, and gear shifter, with orange leader lines running from each table row to the matching spot in the photograph." eager="true" >}}

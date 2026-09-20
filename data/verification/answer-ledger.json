@@ -2195,6 +2195,14 @@
     "result": "agrees"
    }
   },
+  "06d19ce1e54ce259": {
+   "verdict": "ok",
+   "note": "KC 2 7.5 § body, m58817",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "06d98b395e713ef7": {
    "verdict": "ok",
    "note": "CT, source prints no key; model answer from the VDRL/IFA comparison sentence."
@@ -2921,6 +2929,14 @@
   },
   "09508bf12abd5176": {
    "verdict": "ok"
+  },
+  "0956c150c403e0cb": {
+   "verdict": "ok",
+   "note": "KC 2 7.3 § Fatty Acids and Triacylglycerides, m58815",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "095bcf44b0c73433": {
    "verdict": "ok"
@@ -4925,6 +4941,14 @@
     "result": "agrees"
    }
   },
+  "0f9ccb9d17848b1b": {
+   "verdict": "ok",
+   "note": "KC 2 8.5 § Protein Catabolism, m58823",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0fa0dab0b081fed9": {
    "verdict": "ok"
   },
@@ -5442,6 +5466,14 @@
   },
   "1143e1ec4d79d6ba": {
    "verdict": "ok"
+  },
+  "1144457c7694ea14": {
+   "verdict": "ok",
+   "note": "KC 2 7.1 § Biologically Significant Functional Groups, m58813",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1155431179904fc8": {
    "verdict": "ok",
@@ -6001,6 +6033,10 @@
    "verdict": "ok",
    "note": "(y+3)^2=4x+5 -> x=((y+3)^2-5)/4; roundtrip g(f(7))=7 checked; key p1298 #47"
   },
+  "12ee50dc50cdea74": {
+   "verdict": "ok",
+   "note": "KC 2 8.4 § body (Lactic Acid Fermentation), m58822"
+  },
   "12f014c12453fd4f": {
    "verdict": "ok",
    "solved": {
@@ -6486,6 +6522,14 @@
   },
   "14c2bc4c65db04ad": {
    "verdict": "ok"
+  },
+  "14c63adcdd21f83d": {
+   "verdict": "ok",
+   "note": "KC 2 12.1 § intro, m58848",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "14c7d8d701940605": {
    "verdict": "ok",
@@ -7768,6 +7812,14 @@
     "result": "agrees"
    }
   },
+  "18752924895cca55": {
+   "verdict": "ok",
+   "note": "KC 2 7.4 § Protein Structure, m58816",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1877a3b4bd1d240b": {
    "verdict": "ok"
   },
@@ -8145,6 +8197,14 @@
   "19a14297d2da44f7": {
    "verdict": "ok",
    "note": "model answer is CNXML solution eip-849 (m66487) verbatim (subscript glyphs for the source's F 1/F 2/F 0); the checker's F0-should-be-P0 suspicion adjudicated against the module: zero 'P 0' occurrences exist, F0-for-parental is attested, so the page stays source-faithful and no erratum is logged; rubric checkpoints are clauses of the model"
+  },
+  "19a1d227e3cc2636": {
+   "verdict": "ok",
+   "note": "KC 2 12.3 § Recombinant DNA Technology and Pharmaceutical Production, m58850",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "19a5a7bf4158cae9": {
    "verdict": "ok"
@@ -9728,6 +9788,14 @@
   "1e5eeb88b292fded": {
    "verdict": "ok"
   },
+  "1e60d1cbe8f6b541": {
+   "verdict": "ok",
+   "note": "KC 2 10.3 § § Functions of RNA in Protein Synthesis, m58837",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1e675369cb7a3e6e": {
    "verdict": "ok"
   },
@@ -9844,6 +9912,14 @@
   "1ed5fbf7fbc612b0": {
    "verdict": "ok",
    "note": "body CYU, selfcheck; model answer assembled from § Termination."
+  },
+  "1ed734bb45247eed": {
+   "verdict": "ok",
+   "note": "KC 2 12.3 § Genomics, Transcriptomics, and Proteomics, m58850",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1ee00082e5526117": {
    "verdict": "ok",
@@ -10054,6 +10130,14 @@
   },
   "1f8ff4be45b65a9f": {
    "verdict": "ok"
+  },
+  "1f90d761069860c8": {
+   "verdict": "ok",
+   "note": "KC 2 11.4 § Transfer RNAs, m58843",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1f99471e21f7c89e": {
    "verdict": "ok",
@@ -10643,6 +10727,14 @@
     "result": "agrees"
    }
   },
+  "21799c3ddb180ba9": {
+   "verdict": "ok",
+   "note": "KC 2 12.2 § Agarose Gel Electrophoresis, m58849",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "217e44bc8a00d1cf": {
    "verdict": "ok"
   },
@@ -10796,6 +10888,14 @@
   },
   "2232bc85c8d765ee": {
    "verdict": "ok"
+  },
+  "2233ba2dd8d73b2f": {
+   "verdict": "ok",
+   "note": "KC 2 11.2 § Termination, m58841",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "22366484c198acf3": {
    "verdict": "ok",
@@ -11552,6 +11652,14 @@
    "verdict": "ok",
    "note": "Critical Thinking Question, module m66420 exercise fs-idp34311808. Model answer is the source solution verbatim (both desert/tundra have low water supply — desert via low precipitation, tundra via frozen water; both have low net primary productivity). No new claim added."
   },
+  "24f45a6f4cb22828": {
+   "verdict": "ok",
+   "note": "KC 2 9.4 § Eye on Ethics, m58831",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "24f68a93c1e55489": {
    "verdict": "ok",
    "note": "KC 7 33.1 § body Animal Bioenergetics (fs-idm76567040), m66611 — parent re-read against the module",
@@ -11602,6 +11710,14 @@
   },
   "2536cb6f84e1d024": {
    "verdict": "ok"
+  },
+  "2537948305f51480": {
+   "verdict": "ok",
+   "note": "KC 2 10.4 § § Organization of Eukaryotic Chromosome, m58838",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "253e7dbf4023a6d9": {
    "verdict": "ok"
@@ -14045,6 +14161,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 848): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "2d49fd1efaa062e9": {
+   "verdict": "ok",
+   "note": "KC 2 7.4 § Protein Structure, m58816",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2d4d1f156ab9e2fe": {
    "verdict": "ok"
   },
@@ -14061,6 +14185,14 @@
    "note": "KC 7 36.2 § body Thermoreception (fs-idm160095024), m66404 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2d559c1215f17f65": {
+   "verdict": "ok",
+   "note": "KC 2 8.3 § Electron Transport System, m58821",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -14447,6 +14579,14 @@
     "result": "agrees"
    }
   },
+  "2e53c9d7169b3398": {
+   "verdict": "ok",
+   "note": "KC 2 8.2 § Other Glycolytic Pathways, m58820",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2e60fabf3afb888d": {
    "verdict": "ok",
    "note": "m66470 critical-thinking solution fs-id1240070 (pathways as economical, feedback-tuned, fluid intermediates) matches the page's model answer verbatim; all five checks restate it faithfully."
@@ -14698,6 +14838,14 @@
   },
   "2f3ddcd010056997": {
    "verdict": "ok"
+  },
+  "2f46e39e8c0e7ec5": {
+   "verdict": "ok",
+   "note": "KC 2 11.1 § Eye on Ethics: Use and Abuse of Genome Data, m58840",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2f4d7c554fcf8750": {
    "verdict": "ok"
@@ -15700,6 +15848,14 @@
     "result": "agrees"
    }
   },
+  "32b97264fd956999": {
+   "verdict": "ok",
+   "note": "KC 2 11.3 § Transcription in Eukaryotes, m58842",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "32befdd389b9e6d4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -15830,6 +15986,10 @@
     "result": "adjudicated",
     "note": "key 'virus core' is the module's glossary term; 'core' added to accept so the natural short form grades correct"
    }
+  },
+  "33221eb1c519967c": {
+   "verdict": "ok",
+   "note": "KC 2 10.1 § § Mendel's Pea Plants, m58835"
   },
   "332ceb76631cfed8": {
    "verdict": "ok"
@@ -16519,6 +16679,14 @@
     "result": "agrees"
    }
   },
+  "35cec884b6f674d0": {
+   "verdict": "ok",
+   "note": "KC 2 8.7 § Nitrogen Cycle, m58825",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "35d41dc298cbf842": {
    "verdict": "ok",
    "note": "source SA fs-id1172100983378, unkeyed (source prints no solution) — module answer needs the whole extravasation paragraph assembled, stays selfcheck per run-facts Part B #16."
@@ -17033,6 +17201,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "374770070e1c7336": {
+   "verdict": "ok",
+   "note": "KC 2 9.2 § Oxygen Requirements of Microorganisms, m58829",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -18763,6 +18939,14 @@
   "3d182794e5843790": {
    "verdict": "ok"
   },
+  "3d19e175fef20d98": {
+   "verdict": "ok",
+   "note": "KC 2 7.2 § Disaccharides, m58814",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3d22ee306c56a72e": {
    "verdict": "ok",
    "note": "Practice selfcheck, source Short Answer fs-id1167663984242, unkeyed; model answer from fs-id1167663902567, the 'why' clause needs the following sentences too so it stays a selfcheck"
@@ -18783,6 +18967,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3d3d601d73a5b66f": {
+   "verdict": "ok",
+   "note": "KC 2 8.4 § body (Lactic Acid Fermentation), m58822",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -18873,6 +19065,14 @@
   "3d797445382a4df3": {
    "verdict": "ok"
   },
+  "3d7e2fe126bcda68": {
+   "verdict": "ok",
+   "note": "KC 2 8.6 § Oxygenic and Anoxygenic Photosynthesis, m58824",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3d80e80aee9b317d": {
    "verdict": "ok"
   },
@@ -18886,6 +19086,14 @@
   },
   "3d8a33911ba78e52": {
    "verdict": "ok"
+  },
+  "3d967eeab33340bf": {
+   "verdict": "ok",
+   "note": "KC 2 12.4 § Oversight of Gene Therapy, m58851",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3d9e1f1e5f97375b": {
    "verdict": "ok",
@@ -19357,6 +19565,14 @@
   },
   "3f4267293a0314b7": {
    "verdict": "ok"
+  },
+  "3f483413f3e20128": {
+   "verdict": "ok",
+   "note": "KC 2 11.5 § Micro Connection: A Beneficial Mutation, m58844",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3f4c8bf36cfdc4ae": {
    "verdict": "ok",
@@ -22021,6 +22237,14 @@
     "result": "agrees"
    }
   },
+  "47868ef85ecd0e08": {
+   "verdict": "ok",
+   "note": "KC 2 10.2 § § DNA Structure, m58836",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "478b2768637eb7f7": {
    "verdict": "ok",
    "note": "2x^2 * 4x^3 = (2*4)x^(2+3) = 8x^5 (sympy expand; at x=2 the product is 256, matching 8x^5=256 and not 8x^4=128). f is a single term with a variable base at a fixed power, so it is the power function; g is a sum of three terms and h is a quotient. Exponent corrected from the source's 8x^4 (upstream errata #43, m49346 fs-id1165134312227)."
@@ -22718,6 +22942,14 @@
     "result": "agrees"
    }
   },
+  "49c68364a1e8ebc9": {
+   "verdict": "ok",
+   "note": "KC 2 7.2 § Polysaccharides, m58814",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "49cac183752c69a1": {
    "verdict": "ok",
    "note": "126 deg * pi/180 = 126/180*pi = 7*pi/10 (gcd(126,180)=18)"
@@ -23195,6 +23427,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4b4a504b2313972f": {
+   "verdict": "ok",
+   "note": "KC 2 8.3 § Chemiosmosis, Proton Motive Force, and Oxidative Phosphorylation, m58821",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -23683,6 +23923,10 @@
   },
   "4cd4e634810dbb0c": {
    "verdict": "ok"
+  },
+  "4cda6b8c80928445": {
+   "verdict": "ok",
+   "note": "KC 2 8.1 § Enzyme Inhibitors, m58819"
   },
   "4cdf4e656f154e54": {
    "verdict": "ok",
@@ -25792,6 +26036,14 @@
   "54d93c9bcf41f852": {
    "verdict": "ok"
   },
+  "54d9516fde3c74a0": {
+   "verdict": "ok",
+   "note": "KC 2 11.6 § Consequences and Applications of Conjugation, m58845",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "54da10c8c84d3e5f": {
    "verdict": "ok"
   },
@@ -26227,6 +26479,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "56380be4de62d681": {
+   "verdict": "ok",
+   "note": "KC 2 11.7 § Other Factors Affecting Gene Expression in Prokaryotes and Eukaryotes, m58846",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -27672,6 +27932,14 @@
     "result": "agrees"
    }
   },
+  "5b204e30ba46edc2": {
+   "verdict": "ok",
+   "note": "KC 2 9.6 § Case in Point, m58833",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5b2a9044cc137b64": {
    "verdict": "ok"
   },
@@ -28139,6 +28407,14 @@
   "5c3b200fe657ae83": {
    "verdict": "ok"
   },
+  "5c3ecc5aaac1d27d": {
+   "verdict": "ok",
+   "note": "KC 2 11.4 § Transfer RNAs, m58843",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5c40dad09bced904": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -28555,6 +28831,14 @@
     "note": "accept gap: the summary cloze keys \"long-term effects\" and a learner who types \"consequences\" or \"effects\" is right; accept widened"
    }
   },
+  "5dba3d142d838d73": {
+   "verdict": "ok",
+   "note": "KC 2 8.6 § Photosynthetic Structures in Eukaryotes and Prokaryotes, m58824",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5dbb9e1d86f60575": {
    "verdict": "ok"
   },
@@ -28573,6 +28857,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5de24e9919e71d56": {
+   "verdict": "ok",
+   "note": "KC 2 10.1 § § The Chromosomal Theory of Inheritance; glossary transposon (transposable element), m58835",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -28845,6 +29137,14 @@
    "verdict": "ok",
    "note": "CNXML exercise fs-id1167662614430 (unkeyed Critical Thinking); its two figure links (OSC_Microbio_11_02_DNARep, OSC_Microbio_11_02_MesStahl) rendered as describing phrases per playbook rule. Model answer assembled from the Meselson-Stahl paragraph's own account of the one-round vs. two-round results. CHECKER D3: the model answer's clause 'a single purple band positioned closer to the red ¹⁴N band ... to replace ¹⁵N' repairs the garbled CNXML sentence fs-id1167662443949 (prints '<sup>14</sup><sup>14</sup>' / '<sup>15</sup>' with no 'N'); the ¹⁴N/¹⁵N reading is the only sensible one and is now disclosed in the footer and logged as a suspected source defect."
   },
+  "5ebc04ddc4b351ad": {
+   "verdict": "ok",
+   "note": "KC 2 8.2 § Glycolysis, m58820",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5ebd05c77fb6de3c": {
    "verdict": "ok"
   },
@@ -29035,6 +29335,14 @@
    "verdict": "ok",
    "note": "Re-derived: 2^(x-1)>0 for all x, so f(x)=2^(x-1)+3>3 with infimum 3 not attained; range (3,infinity). Matches source answer 'the range is (3,∞)'. Question reworded from the pre-graphplot combined form; answer unchanged."
   },
+  "5f83efce19fc8ce9": {
+   "verdict": "ok",
+   "note": "KC 2 9.2 § Detoxification of Reactive Oxygen Species, m58829",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5f8b390515691d4e": {
    "verdict": "ok"
   },
@@ -29122,6 +29430,10 @@
   },
   "5fceba2df936bbf1": {
    "verdict": "ok"
+  },
+  "5fdd1f8fd6dbb9f3": {
+   "verdict": "ok",
+   "note": "KC 2 11.5 § Radiation, m58844"
   },
   "5fe467b1a9b4a055": {
    "verdict": "ok"
@@ -30902,6 +31214,14 @@
   },
   "6622e66bfc0660f9": {
    "verdict": "ok"
+  },
+  "66291b4b8da92b67": {
+   "verdict": "ok",
+   "note": "KC 2 9.2 § intro (reactive oxygen species list), m58829",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "662a0c952055c10e": {
    "verdict": "ok",
@@ -33024,6 +33344,14 @@
    "verdict": "ok",
    "note": "source Short Answer fs-id1167660206782, unkeyed upstream; per run-facts C3, selfcheck (NGU is defined in Section 23.2, not this module); model answer assembled from this module's own gonorrhea and chlamydia paragraphs only"
   },
+  "6d2c26a9de67da08": {
+   "verdict": "ok",
+   "note": "KC 2 11.7 § Alternate σ Factors, m58846",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6d39575211cffa18": {
    "verdict": "ok",
    "solved": {
@@ -33476,6 +33804,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 609): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "6e6d381c3185129d": {
+   "verdict": "ok",
+   "note": "KC 2 7.1 § Organic Molecules and Isomerism, m58813",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6e76057d0ffa7622": {
    "verdict": "ok",
    "solved": {
@@ -33671,6 +34007,10 @@
   "6ef8b39623444848": {
    "verdict": "ok",
    "note": "P(5,2)=5*4=20 (node BigInt); confirmed retyping 'P(5,2)' grades incorrect against 20 via checkAnswer, so no answerForm needed."
+  },
+  "6eff4f00801cc440": {
+   "verdict": "ok",
+   "note": "KC 2 7.5 § body, m58817"
   },
   "6f017bb3128a3d77": {
    "verdict": "ok"
@@ -34072,6 +34412,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "70a46e0cb288dd16": {
+   "verdict": "ok",
+   "note": "KC 2 8.5 § Lipid Catabolism, m58823",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -34819,6 +35167,14 @@
     "result": "agrees"
    }
   },
+  "7327d136793d0e83": {
+   "verdict": "ok",
+   "note": "KC 2 8.3 § Electron Transport System, m58821",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7332a4e506523bd6": {
    "verdict": "ok",
    "solved": {
@@ -34985,6 +35341,14 @@
    "note": "glossary fs-idm171595824 (parthenogenesis); prompt is the glossary meaning, answer is exactly the defined term.",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "73ffbc450a9b582a": {
+   "verdict": "ok",
+   "note": "KC 2 12.2 § Polymerase Chain Reaction (PCR), m58849",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -35427,6 +35791,14 @@
   "7581b9524d00822c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "75859a19364df24e": {
+   "verdict": "ok",
+   "note": "KC 2 8.1 § Enzyme Structure and Function, m58819",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -35974,6 +36346,14 @@
   "776c74366de22aaa": {
    "verdict": "ok"
   },
+  "776d8343a8e374d3": {
+   "verdict": "ok",
+   "note": "KC 2 12.4 § Mechanisms and Risks of Gene Therapy, m58851",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "777039e300078325": {
    "verdict": "ok"
   },
@@ -36256,6 +36636,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "784ae1b34213a8c5": {
+   "verdict": "ok",
+   "note": "KC 2 9.3 § body (intro/macromolecule-damage sentences), m58830"
   },
   "784cc7ad0d83d0f2": {
    "verdict": "ok",
@@ -38272,6 +38656,14 @@
   "7e91aea6146e11e5": {
    "verdict": "ok"
   },
+  "7e9f42dc7bc92b34": {
+   "verdict": "ok",
+   "note": "KC 2 9.6 § Nutritional Requirements, m58833",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7ea3a91e85fabbd5": {
    "verdict": "ok",
    "note": "body CYU selfcheck, model answer from fs-id1167661367509"
@@ -38844,6 +39236,10 @@
     "result": "agrees"
    }
   },
+  "80cf757b53351b75": {
+   "verdict": "ok",
+   "note": "KC 2 10.4 § § Micro Connection: Genome Size Matters, m58838"
+  },
   "80d34149a07a03a2": {
    "verdict": "ok",
    "solved": {
@@ -39355,6 +39751,14 @@
     "result": "agrees"
    }
   },
+  "82b12dd98039b5ab": {
+   "verdict": "ok",
+   "note": "KC 2 8.7 § Carbon Cycle, m58825",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "82b7bb62318c777f": {
    "verdict": "ok",
    "solved": {
@@ -39650,6 +40054,14 @@
   },
   "8384efdd8a325040": {
    "verdict": "ok"
+  },
+  "838540dc1ebc6f9c": {
+   "verdict": "ok",
+   "note": "KC 2 11.6 § opening paragraph, m58845",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8386761f83400637": {
    "verdict": "ok",
@@ -40896,6 +41308,14 @@
     "result": "agrees"
    }
   },
+  "8754f95be45d11c5": {
+   "verdict": "ok",
+   "note": "KC 2 9.1 § The Death Phase / glossary, m58828",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "87551687baa93672": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -41153,6 +41573,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "884571732c91e5af": {
+   "verdict": "ok",
+   "note": "KC 2 12.2 § DNA Sequencing, m58849",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -43396,6 +43824,14 @@
     "note": "solver wrote the bare number 300, the key is the same value with the percent sign the item's percent form requires; value agrees"
    }
   },
+  "90b3722655c7b881": {
+   "verdict": "ok",
+   "note": "KC 2 8.4 § body (Lactic Acid Fermentation), m58822",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "90b4980c7dc0be8c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -43616,6 +44052,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "917c6cea3e90bf1a": {
+   "verdict": "ok",
+   "note": "KC 2 11.5 § Causes of Mutations, m58844",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -44645,6 +45089,14 @@
   "9503a4e556b14bd6": {
    "verdict": "ok",
    "note": "f(x) = 3x + 2: y-intercept (0,2), slope 3 → through (−1,−1), (0,2), (1,5) → option 2 (lines slope 3, intercept 2). Distractors are the other functions of the same source set — y = −3x − 1 (falls), y = x + 2 (same intercept, slope 1), y = 2 (horizontal). Source: m50389 section exercises “match the given linear equation with its graph”, item f(x)=3x+2 keyed A; recognition MC authored for the graph-recognition rule."
+  },
+  "9510bfeea3936bcf": {
+   "verdict": "ok",
+   "note": "KC 2 7.2 § Monosaccharides: The Sweet Ones, m58814",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9511f8f0aef85e51": {
    "verdict": "ok"
@@ -45805,6 +46257,14 @@
   "9934670f320b8d04": {
    "verdict": "ok"
   },
+  "993eace2e2828cfa": {
+   "verdict": "ok",
+   "note": "KC 2 11.2 § DNA Replication in Eukaryotes, m58841",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "99454feee4906763": {
    "verdict": "ok",
    "note": "a1=0,d=2/3: iterated with exact fractions -> 0, 2/3, 4/3, 2, 8/3 (matches source key)."
@@ -46189,6 +46649,14 @@
   },
   "9ab3131144ea5dfb": {
    "verdict": "ok"
+  },
+  "9aba4a40536fa747": {
+   "verdict": "ok",
+   "note": "KC 2 9.5 § Light, m58832",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9ac123dd7d6ca577": {
    "verdict": "ok",
@@ -49589,6 +50057,14 @@
    "verdict": "ok",
    "note": "node: 6500*(1+0.036/2)^(2*20) = 13268.5808... -> 13268.58; matches CNXML solution."
   },
+  "a66a54e16bcba3e5": {
+   "verdict": "ok",
+   "note": "KC 2 7.1 § Elements in Living Cells, m58813",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a66ac89eef969add": {
    "verdict": "ok",
    "note": "re-read against CNXML m58913; keyed sentence/table checks out"
@@ -50372,6 +50848,14 @@
     "result": "agrees"
    }
   },
+  "a8adba8d1be5f0cf": {
+   "verdict": "ok",
+   "note": "KC 2 9.4 § Eye on Ethics, m58831",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a8afa208518fae15": {
    "verdict": "ok",
    "note": "Glossary 'ingestion' (fs-idp143484768): 'act of taking in food' — matches.",
@@ -50572,6 +51056,14 @@
    "note": "Visual Connection (fs-idm56180128/fs-idm100402144): source keys 'Water' (A). Section text: P680's missing electron is replaced by extracting a low-energy electron from water; the figure's own caption states PSII extracts electrons from water. Correct as keyed.",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a934eeda93c8ee92": {
+   "verdict": "ok",
+   "note": "KC 2 8.5 § Lipid Catabolism, m58823",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -50881,6 +51373,14 @@
   },
   "aa492f8e09195b25": {
    "verdict": "ok"
+  },
+  "aa4db59a5ba69c9b": {
+   "verdict": "ok",
+   "note": "KC 2 9.4 § body (cold/heat survival and storage paragraph), m58831",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "aa500779ecc5c730": {
    "verdict": "ok",
@@ -51283,6 +51783,14 @@
   },
   "ab7df9c9eff81f53": {
    "verdict": "ok"
+  },
+  "ab8149abd53c0400": {
+   "verdict": "ok",
+   "note": "KC 2 11.3 § Transcription in Bacteria, m58842",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ab837e0f788ecb59": {
    "verdict": "ok",
@@ -53441,6 +53949,14 @@
     "result": "agrees"
    }
   },
+  "b35043d425b14196": {
+   "verdict": "ok",
+   "note": "KC 2 7.4 § Amino Acids and Peptide Bonds, m58816",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b3650e7781504b09": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -55243,6 +55759,14 @@
     "result": "agrees"
    }
   },
+  "b98284b57a2180f2": {
+   "verdict": "ok",
+   "note": "KC 2 7.3 § Phospholipids and Biological Membranes, m58815",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b987314951c51a3b": {
    "verdict": "ok",
    "note": "Review Question eip-338/eip-79 (m66392): source solution keys option B, 'slightly more mutations than average' — consistent with the section's text that most errors are corrected by proofreading and losing only the exonuclease function leaves other repair mechanisms (mismatch repair, nucleotide excision repair) intact.",
@@ -55961,6 +56485,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "bc541ebe71d11c12": {
+   "verdict": "ok",
+   "note": "KC 2 12.1 § Introducing Recombinant Molecules into Eukaryotic Hosts, m58848",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -56789,6 +57321,10 @@
   "bf2a54db39c81477": {
    "verdict": "ok",
    "note": "IA KC 01-06 §3.4, converted from prose options to rendered figures. Re-derived: y > 3/2 x + 5 is strict, so the boundary line is dashed, and 'y greater than' shades the half-plane above it — option 3, which draws y = 3/2 x + 5 dashed with the region containing (0,10) shaded. The three distractors render the three printed prose distractors exactly: solid+above (0), dashed+below (1), solid+below (2). Option order and answer position are unchanged from the prose version."
+  },
+  "bf2b173342d0d92d": {
+   "verdict": "ok",
+   "note": "KC 2 10.3 § § Functions of RNA in Protein Synthesis, m58837"
   },
   "bf2c03802472cbec": {
    "verdict": "ok",
@@ -57712,6 +58248,14 @@
     "result": "agrees"
    }
   },
+  "c252a2f16342732e": {
+   "verdict": "ok",
+   "note": "KC 2 7.5 § body, m58817",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c252f27f83281f54": {
    "verdict": "ok",
    "solved": {
@@ -58264,6 +58808,14 @@
    "verdict": "ok",
    "note": "f^{-1}(2) = 3(2)-5 = 1 by direct substitution into f^{-1}(x)=3x-5, confirming f^{-1}(f(1))=1; matches CNXML ti_03_08_01."
   },
+  "c40c631b83a7a2b2": {
+   "verdict": "ok",
+   "note": "KC 2 10.3 § § Functions of RNA in Protein Synthesis, m58837",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c412211f94fe66fa": {
    "verdict": "ok",
    "solved": {
@@ -58328,6 +58880,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "c45482acc5dae012": {
+   "verdict": "ok",
+   "note": "KC 2 10.2 § § Discovering the Double Helix, m58836"
   },
   "c460d3b0aef5e81a": {
    "verdict": "ok",
@@ -58682,6 +59238,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c55acefe4ca0716e": {
+   "verdict": "ok",
+   "note": "KC 2 9.5 § Osmotic and Barometric Pressure, m58832",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -59790,6 +60354,14 @@
     "result": "agrees"
    }
   },
+  "c9009cf8959e5f70": {
+   "verdict": "ok",
+   "note": "KC 2 10.1 § § The Chromosomal Theory of Inheritance, m58835",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c902b313f4d68565": {
    "verdict": "ok"
   },
@@ -59972,6 +60544,10 @@
   },
   "c989e75ee68f6f5b": {
    "verdict": "ok"
+  },
+  "c98e5479631fe82c": {
+   "verdict": "ok",
+   "note": "KC 2 9.5 § Osmotic and Barometric Pressure, m58832"
   },
   "c98e613379d21a6a": {
    "verdict": "ok",
@@ -60923,6 +61499,14 @@
    "verdict": "ok",
    "note": "f(x)=4x^2-x^6+2x-6: highest power present is 6, so degree=6. Matches CNXML ti_03_03_03."
   },
+  "cc84033f79e96333": {
+   "verdict": "ok",
+   "note": "KC 2 9.3 § body (alkaliphile adaptations paragraph), m58830",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cc89c440049468de": {
    "verdict": "ok",
    "note": "Point plot -3-3i; no computation, matches printed coordinates."
@@ -61079,6 +61663,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "cd2c4928aed3e703": {
+   "verdict": "ok",
+   "note": "KC 2 8.1 § Classification by Carbon and Energy Source, m58819",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -62113,6 +62705,14 @@
     "result": "agrees"
    }
   },
+  "d0c5b3f341dd085e": {
+   "verdict": "ok",
+   "note": "KC 2 7.3 § Isoprenoids and Sterols, m58815",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d0cbc9ab05ba72de": {
    "verdict": "ok"
   },
@@ -62134,6 +62734,14 @@
   },
   "d0e9a30cdf54c0f1": {
    "verdict": "ok"
+  },
+  "d0ec4feba33c7d5d": {
+   "verdict": "ok",
+   "note": "KC 2 8.7 § Other Biogeochemical Cycles, m58825",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d0fa2d2c25e8af5b": {
    "verdict": "ok",
@@ -62276,6 +62884,10 @@
   },
   "d176a9de8e7a5040": {
    "verdict": "ok"
+  },
+  "d184ece81bbfcaf7": {
+   "verdict": "ok",
+   "note": "KC 2 11.1 § Eye on Ethics: Use and Abuse of Genome Data, m58840"
   },
   "d185d77825c46d98": {
    "verdict": "ok"
@@ -66831,6 +67443,14 @@
   "e2271b03d62ce958": {
    "verdict": "ok"
   },
+  "e22acb5ee8481494": {
+   "verdict": "ok",
+   "note": "KC 2 11.7 § Prokaryotic Gene Regulation, m58846",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e23389db685cbd75": {
    "verdict": "ok"
   },
@@ -67156,6 +67776,14 @@
   },
   "e35986a65d74afb9": {
    "verdict": "ok"
+  },
+  "e359bb6e9e570424": {
+   "verdict": "ok",
+   "note": "KC 2 12.4 § Ethical Concerns, m58851",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e359e8d982ade790": {
    "verdict": "ok",
@@ -67925,6 +68553,14 @@
     "result": "agrees"
    }
   },
+  "e60e463887045847": {
+   "verdict": "ok",
+   "note": "KC 2 9.1 § Direct Cell Count, m58828",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e616d591dc140ebd": {
    "verdict": "ok"
   },
@@ -68298,6 +68934,14 @@
   "e72c07c26efa24bc": {
    "verdict": "ok"
   },
+  "e72f342876f39b95": {
+   "verdict": "ok",
+   "note": "KC 2 10.2 § § DNA Nucleotides, m58836",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e731be14d33cb58c": {
    "verdict": "ok"
   },
@@ -68436,6 +69080,14 @@
    "verdict": "ok",
    "note": "u+v = (-3+-2, 4+1) = (-5,5) -> -5i+5j. Node-verified."
   },
+  "e7cba38b5c4bea73": {
+   "verdict": "ok",
+   "note": "KC 2 9.1 § Sustaining Microbial Growth, m58828",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e7d0cb9ee4b0e522": {
    "verdict": "ok",
    "note": "m66428 Critical Thinking exercise fs-id2750556, solution fs-id1281610: 'Layers of sedimentary rock have order but are not alive. Technology is capable of regulation but is not, of itself, alive.' Page model answer and both ===CHECKS=== clauses match verbatim."
@@ -68452,6 +69104,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e7de9469695edf46": {
+   "verdict": "ok",
+   "note": "KC 2 8.2 § Transition Reaction, Coenzyme A, and the Krebs Cycle, m58820",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -68581,6 +69241,14 @@
   },
   "e85c0e73a2162374": {
    "verdict": "ok"
+  },
+  "e85dcb0fb94bcc91": {
+   "verdict": "ok",
+   "note": "KC 2 11.6 § Transduction, m58845",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e865f17df2333725": {
    "verdict": "ok",
@@ -70024,6 +70692,14 @@
     "result": "agrees"
    }
   },
+  "ecf97521f2295b7f": {
+   "verdict": "ok",
+   "note": "KC 2 10.4 § § Genotype versus Phenotype, m58838",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ecfdf7e23f8ced78": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -70268,6 +70944,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "edbf9e05ee9c2ec0": {
+   "verdict": "ok",
+   "note": "KC 2 11.4 § Protein Targeting, Folding, and Modification, m58843",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -71138,6 +71822,14 @@
   "f13aca57e87c8691": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f13ea378b887e66d": {
+   "verdict": "ok",
+   "note": "KC 2 11.2 § Initiation, m58841",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -72223,6 +72915,14 @@
     "result": "agrees"
    }
   },
+  "f4e340e44e07b3d8": {
+   "verdict": "ok",
+   "note": "KC 2 12.1 § Molecular Cloning, m58848",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f4e64c19d1443520": {
    "verdict": "ok"
   },
@@ -72714,6 +73414,22 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f68561d7b5222e5d": {
+   "verdict": "ok",
+   "note": "KC 2 9.3 § body (alkaliphile paragraph), m58830",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f68a5e0ec28c6ed1": {
+   "verdict": "ok",
+   "note": "KC 2 8.6 § Light-Independent Reactions, m58824",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -73516,6 +74232,14 @@
     "result": "agrees"
    }
   },
+  "f8e65e872c59b214": {
+   "verdict": "ok",
+   "note": "KC 2 9.6 § Nutritional Requirements, m58833",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f8e69e694dc2d524": {
    "verdict": "ok"
   },
@@ -73601,6 +74325,14 @@
   "f93497427d152de3": {
    "verdict": "ok",
    "note": "KC 5 22.4 § body Biofilms and Disease (fs-idm36087152), m66548 — parent re-read against the module"
+  },
+  "f936af91deb236bd": {
+   "verdict": "ok",
+   "note": "KC 2 12.3 § RNA Interference Technology, m58850",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f937bba9fa657e80": {
    "verdict": "ok"
@@ -73704,6 +74436,14 @@
   },
   "f99ed0540f734fb2": {
    "verdict": "ok"
+  },
+  "f99f637ed7b6e5e8": {
+   "verdict": "ok",
+   "note": "KC 2 11.1 § Eye on Ethics: Use and Abuse of Genome Data, m58840",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f9a0edc14c6ebc04": {
    "verdict": "ok",
@@ -74168,6 +74908,14 @@
   },
   "fb5869a7f80f30de": {
    "verdict": "ok"
+  },
+  "fb6a9fc24513efd9": {
+   "verdict": "ok",
+   "note": "KC 2 11.3 § opening paragraph, m58842",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "fb6ae19cdf7cd07b": {
    "verdict": "ok",

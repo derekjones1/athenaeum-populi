@@ -2,7 +2,7 @@
 title: Respiratory System Infections
 description: How microbes of the respiratory tract cause disease — the anatomy and normal microbiota of the upper and lower respiratory tract and how pathogens overcome its defenses, the bacterial infections that range from streptococcal pharyngitis, acute otitis media, bacterial rhinosinusitis, and diphtheria to the many causes of bacterial pneumonia, tuberculosis, pertussis, Legionnaires disease, and Q fever, the viral infections from the common cold and influenza to SARS, MERS, and the rash-causing diseases measles, rubella, and chickenpox and shingles, and the respiratory mycoses, including histoplasmosis, coccidioidomycosis, blastomycosis, mucormycosis, aspergillosis, Pneumocystis pneumonia, and cryptococcosis.
 source_chapter: "22"
-weight: 23
+weight: 24
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_22_00_Aerosols" kind="photo" alt="Side-profile photo of a red-haired, bearded man wearing glasses, mouth open mid-sneeze, with a visible spray of fine droplets bursting forward from his mouth against a black background." eager="true" >}}

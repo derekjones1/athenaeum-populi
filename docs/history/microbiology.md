@@ -1062,3 +1062,62 @@ each chapter directory, packets discarded).
   kit (assemble, shift-weights, kc-notes, combine) lived in the session
   scratchpad; the notes matcher must strip Markdown emphasis from stems.
   Floors after landing: --min-exercises 14187, --min-replayed 10181.
+
+## Knowledge Check 2 — chapters 7–12 (September 19, 2026)
+
+The second of the five block checks (`docs/subjects/microbiology.md`
+§Knowledge checks records the placement decision and the weight table):
+`knowledge-check-07-12.md`, block 2 "Biochemistry, Metabolism, and
+Genetics", 33 sections, 99 items (42 multiple choice, 46 textin, 0
+sortbins, 11 selfcheck), weight 14, chapters 13–26 shifted +1 (now
+15–28). Run shape, all Sonnet unless named, same as block 1: six authors
+(one per chapter, scratch pages at a mirrored content path with
+`ledger.md` + `provenance.json`), a checker per chapter launched as each
+author finished, a parent read of the assembled page, a two-agent
+reverse-recall sweep (chapters 7–9, 10–12), a re-check of every replaced
+item (two batches), a blind solve in a fresh Fable subagent reading the
+masked check beside masked copies of the 33 section pages, and a two-item
+delta solve after the last replacement.
+
+- **Checker yield:** 21 defects in 99 — ch7 3 (an option "amino" printed
+  nowhere in the module; the oligopeptide key printed in a page hint; a
+  missing "C. acnes" accept), ch8 7 (three hint leaks: feedback
+  inhibition, homolactic, "most plentiful enzyme"; three plain-adjective
+  clozes: long-term, porous, plentiful; a distractor claiming amino acids
+  are "produced by deamination"; plus 7 of 8 keys at position 1), ch9 5
+  (generation/doubling time handed over by a page hint; "(SOD)" on the key
+  only; "acid mine drainage" as a second answer to what inactivates
+  *V. cholerae*; a selfcheck rubric reusing the page's graded optimum-pH
+  definition; a missing reversed-order accept for "nitrogen and
+  phosphorus"), ch10 2 (a stem attributing Sutton's meiosis observation to
+  Boveri too; "peptidyl transferase" printed in a page hint), ch11 2
+  (Avery→DNA restating a 10.1 rubric clause; a regulatory-gene key whose
+  distractor was the module's activator definition), ch12 2 (a
+  restriction-enzyme item duplicating the page's CYU; a "which genus" stem
+  over species and virus options).
+- **Parent read** found 9 more: an analogy cloze ("hydroelectric dam"), a
+  cloze with second answers ("sulfur ... formation of ___"), two stems
+  that print the initials of their own key ("...Act of 2008, abbreviated
+  ___" → GINA; "...syndrome, abbreviated ___" → HUS), a TATA-box stem
+  beside a TATAAT key, "the transforming principle" already printed with
+  Griffith in a 10.1 rubric, a frog (*Xenopus*) as a bacteriophage-host
+  option, and two within-check leaks — the 12.2 stem printed *Thermus
+  aquaticus*, the key of 9.4's Taq item; a 12.4 option printed "OTC", the
+  accepted abbreviation of 12.4's own item 1.
+- **Reverse-recall sweep:** 1 flag in 99, real (11.4 "20 amino acids"
+  printed in a page self-check rubric). The re-check of replacements then
+  caught 3 more: a two-word key over one-word distractors; a replacement
+  distractor printed nowhere in the module; an NDA item mirroring the
+  page's own IND/NDA Practice item.
+- **Blind solve:** 88 graded items, 87 agree, 1 disagreement settled for
+  the key ("α carbon" vs "alpha carbon" — the module's term is "α
+  carbon", so the key took it and "alpha carbon" became the accept), then
+  88/88 after the two last replacements were solved on their own packet.
+- **Source finding:** none; no errata this run.
+- **Tooling:** two agents given `$K/check-report.md` resolved `$K`
+  differently and one report overwrote another — name report files by
+  chapter in the brief; an author "fixing" an item wrote its rationale
+  over the checker's report — tell authors to write fixes to a separate
+  file; the notes matcher must strip HTML tags as well as Markdown
+  emphasis (a `<sub>` in a stem defeated the match). Floors after landing:
+  --min-exercises 14189→14288, --min-replayed 10181→10227.

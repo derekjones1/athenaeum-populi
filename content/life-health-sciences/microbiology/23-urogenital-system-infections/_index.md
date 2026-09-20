@@ -2,7 +2,7 @@
 title: Urogenital System Infections
 description: How microbes of the urinary and reproductive tracts cause disease — the anatomy and normal microbiota of the urogenital system and the general signs, symptoms, and modes of transmission of its infections, the bacterial infections of the urinary system including cystitis, kidney infections (pyelonephritis and glomerulonephritis), leptospirosis, and nongonococcal urethritis, the bacterial infections of the reproductive system including bacterial vaginitis and vaginosis, gonorrhea, chlamydia, syphilis, and chancroid, the viral infections genital herpes and human papillomavirus (genital warts and HPV-associated cervical cancer), the fungal infection vaginal candidiasis, and the protozoan infection trichomoniasis.
 source_chapter: "23"
-weight: 24
+weight: 25
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_23_00_splash" kind="photo" alt="Two panels. At left, a photo of a clear plastic specimen container with a white screw-on lid, partly filled with yellow urine, standing on a dark surface. At right, a photo of a round culture plate on pale agar, with a cluster of dark blue-black colonies across the upper portion of the plate and pink-to-magenta colonies speckled with dark spots across the lower portion." eager="true" >}}

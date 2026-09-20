@@ -2,7 +2,7 @@
 title: Innate Nonspecific Host Defenses
 description: How the body's nonspecific innate defenses repel pathogens without targeting any one of them — the physical barriers, mechanical defenses, and microbiota that provide a first line of defense, the chemical mediators, antimicrobial peptides, and complement pathways found in body fluids, the formed elements of blood produced by hematopoiesis, how phagocytes migrate into infected tissue, recognize pathogens, and destroy them by phagocytosis, and the signs and mechanisms of inflammation and fever.
 source_chapter: "17"
-weight: 18
+weight: 19
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_17_00_splash" kind="photo" alt="Close-up of tan skin across a person's shoulders and upper back showing about a dozen small chickenpox lesions of varying size—round bumps with pearly white or gray, crusted centers—scattered irregularly among ordinary pores and dark pigment spots." eager="true" >}}

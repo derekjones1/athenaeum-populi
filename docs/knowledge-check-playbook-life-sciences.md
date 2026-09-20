@@ -225,6 +225,22 @@ What is specific to a unit-level check:
   to that item and to its neighbours — so read the items on both sides and
   put the figure-reading item after the property questions about the same
   object.
+- **No item may print another item's key on the same check.** A cumulative
+  page puts dozens of sections' facts on one page, so a stem, an option, or
+  a rubric can hand over a sibling item's answer even when the two sections
+  are unrelated — one item's stem naming the organism that is another
+  item's key, or an option that is the accepted abbreviation of a different
+  item's answer. Grep the assembled page for a candidate key or accept
+  before settling a replacement, not just the one section's page. This is
+  a read, not a lint: measured on September 19, 2026, "a textin's key
+  printed in a sibling's stem or options" hit 53 times across the
+  life-science checks, nearly all vocabulary reuse across unrelated sections
+  ("hydrophobic" in four stems, "hemoglobin" as a distractor), and the
+  broad form including multiple-choice keys hit 125. The same
+  rule bars a cloze from blanking the abbreviation of a name the stem
+  itself already prints ("...Act of 2008, abbreviated ________" when the
+  stem has already spelled out the initials it wants back); ask for the
+  full name instead, or blank a different fact.
 - The attribution footer follows the section-page form (licence, deep link
   to the source book, and a `Changes:` clause stating that every item is
   locally written from the named chapters' modules).
