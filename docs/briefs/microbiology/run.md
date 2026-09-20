@@ -224,17 +224,8 @@ and solve it again.
    26.3 — 22arboviralUS, 22WHOprion; a 403 is a bot wall and stays linked
    — each un-linked and an erratum filed)*, so the dead-link errata land
    in the same block as the run's other errata instead of trailing it.
-7. A gate this run wanted and could not have: "every source exercise reaches
-   a page item", scoped to the life-sciences books (the math books sample
-   their exercise banks by design). Measured on the September 12, 2026 tree,
-   `verify-source-keys`'s own `tokenSimilarity` matcher calls 50 exercises
-   unrendered across Biology and Microbiology, while a looser min-overlap
-   measure calls 13 — the gap is reworded conversions (a `sortbins` or
-   figure-keyed item built from the exercise) reading as drops. Shipping it
-   needs those cases adjudicated one by one into an allowlist beside
-   `DISCLOSED_DEVIATIONS`, which is a campaign, not a close-out step.
-8. New lessons: a one-line rule into the playbook section it belongs to;
+7. New lessons: a one-line rule into the playbook section it belongs to;
    the narrative into `docs/history/microbiology.md`; a lint or test where
    one can hold it. Then the session memory file.
-9. Commit only when asked. A large push may fail from the sandbox — try
+8. Commit only when asked. A large push may fail from the sandbox — try
    once, then hand it to Derek.
