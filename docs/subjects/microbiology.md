@@ -1022,8 +1022,8 @@ it):
 | 1 The Microbial World | 1–6 | 1–6 | `knowledge-check-01-06.md` | 7 | 26 / 78 |
 | 2 Biochemistry, Metabolism, and Genetics | 7–12 | 8–13 | `knowledge-check-07-12.md` | 14 | 33 / 99 |
 | 3 Control and Antimicrobial Drugs | 13–14 | 15–16 | `knowledge-check-13-14.md` | 17 | 11 / 33 |
-| 4 Pathogenicity, Epidemiology, and Immunity | 15–20 | 18–23 | `knowledge-check-15-20.md` | 24 | 27 / 81 |
-| 5 Infections of the Body Systems | 21–26 | 25–30 | `knowledge-check-21-26.md` | 31 | 30 / 90 |
+| 4 Pathogenicity, Epidemiology, and Immunity | 15–20 | 18–23 | `knowledge-check-15-20.md` | 24 | 28 / 84 |
+| 5 Infections of the Body Systems | 21–26 | 25–30 | `knowledge-check-21-26.md` | 31 | 29 / 87 |
 
 Land a block's check and the +1 shift of every later chapter in the same
 commit (`npm run validate` requires strictly sequential weights at the book
@@ -1031,14 +1031,19 @@ root). The Glossary appendix (m58950) supplies a recall item's definition,
 since the modules have no glossary of their own; a term the module bolds
 whose m58950 entry is a known defect is not an anchor.
 
-Blocks 1–3 have landed (September 15, 19, and 20, 2026); blocks 4–5
-remain. Two rules the second run added to the close-out: an item may not
-print another item's key anywhere on the same check, in its stem, an
-option, or a rubric; and a cloze may not blank the abbreviation of a name
-the stem itself prints. The third run added two more: a stem may not
-print any word of its key, including a genus or a defining adjective like
-"quaternary"; and a cloze on a list ("including X and the ___") does not
-stand alone.
+All five blocks have landed (September 15, 19, and 20, 2026); the book's
+Knowledge Checks are complete. Two rules the second run added to the
+close-out: an item may not print another item's key anywhere on the same
+check, in its stem, an option, or a rubric; and a cloze may not blank the
+abbreviation of a name the stem itself prints. The third run added two
+more: a stem may not print any word of its key, including a genus or a
+defining adjective like "quaternary"; and a cloze on a list ("including X
+and the ___") does not stand alone. The fourth run added one more: the
+within-check grep covers every stem, option, and rubric clause on the
+page, not only keys, and is re-run after every replacement round. The
+fifth run added one more: a selfcheck rubric clause must be a contiguous
+verbatim substring of the model answer, which the author checks by eye
+because verify-section's phrase-coverage gate accepts paraphrase.
 
 ## How a chapter is run
 

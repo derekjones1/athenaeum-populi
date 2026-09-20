@@ -117,6 +117,10 @@
     "result": "agrees"
    }
   },
+  "00568107fa7972a1": {
+   "verdict": "ok",
+   "note": "KC 4 18.3 § Activation and Differentiation of Helper T Cells, m58886"
+  },
   "005ce4d895d3b50b": {
    "verdict": "ok"
   },
@@ -124,6 +128,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0061a45b9d790353": {
+   "verdict": "ok",
+   "note": "KC 5 24.5 § Giardiasis, m58931",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -372,6 +384,10 @@
   "0141acc2ba0c0fd7": {
    "verdict": "ok"
   },
+  "014513ec21c197de": {
+   "verdict": "ok",
+   "note": "KC 4 20.3 § Blood Typing and Cross-Matching, m58902"
+  },
   "01482d91637e9af9": {
    "verdict": "ok",
    "solved": {
@@ -387,6 +403,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0156bb7685d98036": {
+   "verdict": "ok",
+   "note": "KC 5 21.4 § Tineas / Sporotrichosis, m58909",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -815,6 +839,14 @@
     "result": "agrees"
    }
   },
+  "027eb95f3b47c92b": {
+   "verdict": "ok",
+   "note": "KC 4 20.5 § Cell Sorting Using Immunofluorescence, m58904",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "02867e8c62c60b55": {
    "verdict": "ok",
    "note": "KC 5 24.1 § body Cell Structure and Function (fs-idp33278112), m66558 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
@@ -852,6 +884,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "029f6a5fdc52e2ff": {
+   "verdict": "ok",
+   "note": "KC 5 24.2 § Oral Thrush, m58925"
   },
   "02a18de427150f09": {
    "verdict": "ok",
@@ -1209,6 +1245,14 @@
   "03d34c1493ddae38": {
    "verdict": "ok"
   },
+  "03dd0c7be490c6d5": {
+   "verdict": "ok",
+   "note": "KC 5 21.4 § Cutaneous Aspergillosis, m58909",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "03ddcdc4fbca00c1": {
    "verdict": "ok",
    "note": "Locally authored selfcheck for the thin 'natural selection/life history patterns' objective, built strictly from the module's own sentences in fs-idm178752016 and fs-idm178436096 (no source counterpart); disclosed in the footer and ledger."
@@ -1281,6 +1325,14 @@
    "note": "multiplechoice (True/False), source-keyed. CNXML exercise fs-id1172098794154, KEY True. Options True then False. Confirmed against 'While the genotype of a cell remains constant, the phenotype may change...'",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0426c491fdcf65d1": {
+   "verdict": "ok",
+   "note": "KC 5 22.1 § glossary tympanic membrane, m58950",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -2254,6 +2306,14 @@
     "result": "agrees"
    }
   },
+  "06f33f9b8450740b": {
+   "verdict": "ok",
+   "note": "KC 5 21.2 § Staphylococcal Infections of the Skin, m58907",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "06f82828a0ba98b2": {
    "verdict": "ok"
   },
@@ -2704,6 +2764,14 @@
   },
   "0882a73e3036c414": {
    "verdict": "ok"
+  },
+  "0883594314941c1e": {
+   "verdict": "ok",
+   "note": "KC 4 16.1 § The Role of Public Health Organizations, table (fs-id1167660338485), m58871",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "088767092a907c1f": {
    "verdict": "ok",
@@ -3683,6 +3751,14 @@
     "note": "the prompt is the glossary definition of classical conditioning verbatim (\"association of a specific stimulus and response through conditioning\"); conditioned behavior is defined as the behavior itself, not the association; key stands"
    }
   },
+  "0bacb7f256c633c2": {
+   "verdict": "ok",
+   "note": "KC 4 18.2 § Major Histocompatibility Complex Molecules, m58885",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0bb6ad2f5ba16c36": {
    "verdict": "ok"
   },
@@ -4079,6 +4155,14 @@
   "0cc33e3263066994": {
    "verdict": "ok"
   },
+  "0cc3be4cb66e3e8e": {
+   "verdict": "ok",
+   "note": "KC 4 16.3 § Contact Transmission (fs-id1167659050093), m58873",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0cc3ec76985a0662": {
    "verdict": "ok"
   },
@@ -4158,6 +4242,14 @@
   },
   "0ce956f7a4df933e": {
    "verdict": "ok"
+  },
+  "0cea62313a85cef2": {
+   "verdict": "ok",
+   "note": "KC 5 22.3 § glossary Reye syndrome, m58950",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0ceeb5ca633f9401": {
    "verdict": "ok",
@@ -4371,6 +4463,14 @@
    "note": "Glossary textin from definition fs-id1968258 (enhancer); prompt paraphrases the meaning, answer is the term.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0db92802a493d7e2": {
+   "verdict": "ok",
+   "note": "KC 4 18.2 § Antigen-Presenting Cells (APCs), m58885",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -4812,6 +4912,14 @@
   },
   "0f2295915a22178c": {
    "verdict": "ok"
+  },
+  "0f23087ce37f0365": {
+   "verdict": "ok",
+   "note": "KC 5 26.3 § Transmissible Spongiform Encephalopathies, m58942",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0f23a52b85c103d3": {
    "verdict": "ok",
@@ -5539,6 +5647,18 @@
   },
   "1181d55ced5d93ec": {
    "verdict": "ok"
+  },
+  "118345a84d15a4e0": {
+   "verdict": "ok",
+   "note": "KC 5 23.6 § Protozoan Infections of the Urogenital System (body), m58922",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1183fe0555a76b8b": {
+   "verdict": "ok",
+   "note": "KC 4 15.3 § Virulence Factors for Survival in the Host and Immune Evasion, m58868"
   },
   "1187d9f5542b0f92": {
    "verdict": "ok",
@@ -6268,6 +6388,10 @@
     "result": "agrees"
    }
   },
+  "13e04d3cdf9ac775": {
+   "verdict": "ok",
+   "note": "KC 5 24.1 § General Signs and Symptoms of Oral and GI Disease, m58924"
+  },
   "13e2cb9ef6b06f8f": {
    "verdict": "ok"
   },
@@ -6450,6 +6574,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "147c19fe7acd89f0": {
+   "verdict": "ok",
+   "note": "KC 4 16.1 § Patterns of Incidence (fs-id1167660340074), m58871"
   },
   "147ffbb7986d57fb": {
    "verdict": "ok",
@@ -6724,6 +6852,14 @@
   },
   "154eead9c324cdf3": {
    "verdict": "ok"
+  },
+  "154f9da1d59bcf7e": {
+   "verdict": "ok",
+   "note": "KC 4 18.5 § Herd Immunity, m58888",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "15530e63c8e0cd38": {
    "verdict": "ok"
@@ -7887,6 +8023,14 @@
   "18ad510715111d4b": {
    "verdict": "ok"
   },
+  "18b3e6ccdede12c0": {
+   "verdict": "ok",
+   "note": "KC 4 18.4 § Primary and Secondary Responses, m58887",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "18c1764d9fa67932": {
    "verdict": "ok"
   },
@@ -8518,6 +8662,14 @@
     "result": "agrees"
    }
   },
+  "1a91d15649f9538e": {
+   "verdict": "ok",
+   "note": "KC 4 17.4 § Pathogen Degradation, m58880",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1a96e1098375cb54": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -8757,6 +8909,14 @@
   "1b36c6f431a3fb97": {
    "verdict": "ok",
    "note": "f(1) = (1+5)/3 = 2 by direct substitution into f(x)=(x+5)/3; matches CNXML ti_03_08_01 solution's intermediate step."
+  },
+  "1b38e8c64f9ad839": {
+   "verdict": "ok",
+   "note": "KC 5 25.3 § Cytomegalovirus Infections, m58937",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1b3bfa6a81f14d1c": {
    "verdict": "ok",
@@ -9230,6 +9390,14 @@
   "1ccb40b23a8d7301": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp104776864/fs-idp109034496, model answer transcribed verbatim."
+  },
+  "1cd30f852f856e13": {
+   "verdict": "ok",
+   "note": "KC 4 18.4 § B-Cell Receptors, m58887",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1cdd3d3ee12ddfcb": {
    "verdict": "ok",
@@ -9792,6 +9960,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp2875584; model answer is the source solution verbatim (already complete sentences). Checkpoints are its three clauses."
   },
+  "1e533d2a50bd927a": {
+   "verdict": "ok",
+   "note": "KC 5 25.1 § The Circulatory System, m58945",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1e5984fcc771c77b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -9945,11 +10121,23 @@
     "result": "agrees"
    }
   },
+  "1ee05d52c323e9c0": {
+   "verdict": "ok",
+   "note": "KC 4 19.4 § Severe Combined Immunodeficiency, m58895"
+  },
   "1ee3ec24d3a113f6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1ee74b17bc894bbc": {
+   "verdict": "ok",
+   "note": "KC 5 23.6 § Protozoan Infections of the Urogenital System (body), m58922",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -10170,6 +10358,14 @@
     "result": "agrees"
    }
   },
+  "1f9dad61e1fce204": {
+   "verdict": "ok",
+   "note": "KC 4 16.3 § Vector Transmission (fs-id1167661333750), m58873",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1f9df84a2c253b92": {
    "verdict": "ok"
   },
@@ -10229,8 +10425,24 @@
     "result": "agrees"
    }
   },
+  "1fc6c80740ec8dee": {
+   "verdict": "ok",
+   "note": "KC 4 19.2 § Celiac Disease, m58893",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1fcfbdb6f00ddba8": {
    "verdict": "ok"
+  },
+  "1fe1e43cde1c0dec": {
+   "verdict": "ok",
+   "note": "KC 4 16.2 § Observational Studies (fs-id1167662484018), m58872",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1fe20eeead5c58d3": {
    "verdict": "ok",
@@ -10788,6 +11000,14 @@
     "result": "agrees"
    }
   },
+  "21b016b38c556a6e": {
+   "verdict": "ok",
+   "note": "KC 4 15.1 § Classifications of Disease (table: Types of Noninfectious Diseases), m58866",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "21b829b7757e960c": {
    "verdict": "ok",
    "note": "m66375 solution fs-id2077029 (sodium-potassium pump/net negative charge): model answer verbatim match. Three CHECKS clauses restate the 3-Na+-out/2-K+-in ratio and the resulting charge loss per cycle."
@@ -11212,6 +11432,14 @@
    "verdict": "ok",
    "note": "KC 6 32.2 § body Development of Fruit and Fruit Types (fs-idp46770944), m66608 — parent re-read against the module"
   },
+  "235628f48e219502": {
+   "verdict": "ok",
+   "note": "KC 4 20.4 § Immunofiltration and Immunochromatographic Assays, m58903",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2358fbe1429c2656": {
    "verdict": "ok",
    "note": "36^{3b-2b}=36^b=6^{2b}; 216^{2-b}=6^{3(2-b)}; 2b=6-3b => b=6/5. Verified numerically via node (both sides equal ~73.716)."
@@ -11497,6 +11725,14 @@
   "24466b4df3befb88": {
    "verdict": "ok"
   },
+  "244a74d534ee6845": {
+   "verdict": "ok",
+   "note": "KC 4 16.2 § Experimental Studies (fs-id1167662732142), m58872",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "244c6fcc144b3b49": {
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which symmetries does the graph of $r=3\\cos\\theta$ exhibit?)"
@@ -11598,6 +11834,14 @@
   "24ac696810a248dc": {
    "verdict": "ok"
   },
+  "24b10f5e94315b44": {
+   "verdict": "ok",
+   "note": "KC 5 22.3 § SARS and MERS, m58914",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "24b133dcd1e3a34f": {
    "verdict": "ok"
   },
@@ -11659,6 +11903,22 @@
   "24eb27fb7ae194f5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "24eb344b7245335a": {
+   "verdict": "ok",
+   "note": "KC 4 20.3 § Agglutination of Bacteria and Viruses, m58902",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "24efec805deabf21": {
+   "verdict": "ok",
+   "note": "KC 4 20.1 § Clinical Uses of Polyclonal Antisera, m58900",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -11975,6 +12235,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "25c580f7f9281516": {
+   "verdict": "ok",
+   "note": "KC 5 21.1 § Infections of the Skin — Some Medical Terms Associated with Skin Lesions and Rashes (table), m58906",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -12461,6 +12729,14 @@
    "verdict": "ok",
    "note": "Each network input is paired with three program outputs, so an input has more than one output: not a function. 'No' is correct."
   },
+  "27ab24acd0ba742b": {
+   "verdict": "ok",
+   "note": "KC 5 26.2 § Clostridium-Associated Diseases (intro), m58941",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "27b0d7cce4a2ba39": {
    "verdict": "ok",
    "note": "KC 2 7.1 § glossary chemiosmosis (fs-id1957966), m66465 — parent re-read against the module",
@@ -12812,6 +13088,14 @@
   },
   "289fdc0d7eb2bb04": {
    "verdict": "ok"
+  },
+  "28a18d32ce292c11": {
+   "verdict": "ok",
+   "note": "KC 4 15.3 § Virulence Factors for Survival in the Host and Immune Evasion, m58868",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "28a5fa8eae0a7203": {
    "verdict": "ok",
@@ -14635,6 +14919,14 @@
     "result": "agrees"
    }
   },
+  "2e81c86fd78ae53c": {
+   "verdict": "ok",
+   "note": "KC 5 22.4 § Coccidioidomycosis, m58915",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2e83789751f67a9d": {
    "verdict": "ok",
    "note": "body selfcheck, Sporothrix progression; model answer is the Sporotrichosis section's second paragraph verbatim in substance; hash changed after the checker's concern 3 split the merged 'nodules...as more lymph nodes' checkpoint into two checkpoints matching the source's two stages"
@@ -14779,6 +15071,14 @@
   },
   "2eeab5169fabc423": {
    "verdict": "ok"
+  },
+  "2eee0056d2f747d5": {
+   "verdict": "ok",
+   "note": "KC 5 23.4 § Human Papillomas, m58920",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2eef6a590070b8f2": {
    "verdict": "ok",
@@ -15195,6 +15495,14 @@
   "3074c187efced8c0": {
    "verdict": "ok",
    "note": "Matches m66452 visual-connection note fs-id1721886, solution fs-id1325439 (peripheral protein synthesized in ER lumen ends up outside the plasma membrane). Model answer verbatim; CHECKS restate it."
+  },
+  "30756a8c5d3de30b": {
+   "verdict": "ok",
+   "note": "KC 4 16.4 § Emerging and Reemerging Infectious Diseases — SARS micro-connection (fs-id1167660178916), m58874",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "307a9ce99f625977": {
    "verdict": "ok",
@@ -16487,6 +16795,14 @@
   "34e18a689b364395": {
    "verdict": "ok"
   },
+  "34e63465844e1f30": {
+   "verdict": "ok",
+   "note": "KC 5 26.4 § Cryptococcocal Meningitis, m58943",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "34e9c0d383828608": {
    "verdict": "ok",
    "solved": {
@@ -17554,6 +17870,14 @@
   "3802274605851ecb": {
    "verdict": "ok"
   },
+  "3808fbf8b356b658": {
+   "verdict": "ok",
+   "note": "KC 5 21.5 § Acanthamoeba Infections, m58910",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "380e447f0b44b050": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -17614,6 +17938,14 @@
   "384a76d5e877e33c": {
    "verdict": "ok",
    "note": "Body selfcheck, CYU bullet 1 (urinary structures). Model answer assembled from the Anatomy of the Urinary Tract subsection's own kidney/nephron/ureter/bladder/urethra/meatus sentences."
+  },
+  "384d9b128d9a0f91": {
+   "verdict": "ok",
+   "note": "KC 5 21.1 § Infections of the Skin — Some Medical Terms Associated with Skin Lesions and Rashes (table), m58906",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3854122f57a32ae4": {
    "verdict": "ok",
@@ -17789,6 +18121,14 @@
   },
   "38f6794bc5ab4756": {
    "verdict": "ok"
+  },
+  "390050febf788f50": {
+   "verdict": "ok",
+   "note": "KC 5 24.3 § E. coli Infections (ETEC) / key terms, m58933",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "390071ca4db0517f": {
    "verdict": "ok"
@@ -18773,6 +19113,10 @@
     "result": "agrees"
    }
   },
+  "3c2c79d1d754f384": {
+   "verdict": "ok",
+   "note": "KC 5 26.4 § Human African Trypanosomiasis, m58943"
+  },
   "3c31592b4a8420ce": {
    "verdict": "ok"
   },
@@ -19447,6 +19791,14 @@
     "result": "agrees"
    }
   },
+  "3ebeb248b01cb865": {
+   "verdict": "ok",
+   "note": "KC 4 17.1 § The Skin Barrier, m58877",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3ebf3d01d5519a98": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20003,6 +20355,14 @@
   "4084749b3a796f8c": {
    "verdict": "ok"
   },
+  "4086ced026ba33cc": {
+   "verdict": "ok",
+   "note": "KC 4 17.5 § Fever, m58881",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "408d09e34886f5bd": {
    "verdict": "ok",
    "note": "Glossary recall, definition fs-idm134729152 (transduction).",
@@ -20087,6 +20447,14 @@
    "note": "m66408 glossary textin: 'lens' — 'transparent, convex structure behind the cornea that helps focus light waves on the retina.'",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "40bbffa6baae1fbf": {
+   "verdict": "ok",
+   "note": "KC 5 23.5 § Fungal Infections of the Reproductive System (body), m58921",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -21463,6 +21831,14 @@
   },
   "4516d78831662a69": {
    "verdict": "ok"
+  },
+  "4518d5f0fd6cc930": {
+   "verdict": "ok",
+   "note": "KC 5 22.2 § Streptococcal Infections, m58913",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "451a29190d14c30e": {
    "verdict": "ok",
@@ -23387,6 +23763,14 @@
    "verdict": "ok",
    "note": "unkeyed Short Answer fs-id1167661539049, kept as selfcheck (not graded) because its fact — LPS outer membrane / polymyxins — duplicates the CYU3 graded item; model answer traces to the polymyxin paragraph. Reworded post-checker to drop the unsupported 'unique to gram-negative bacteria' framing (hash changed from f37420f68dee7752)"
   },
+  "4af237828ec94bb2": {
+   "verdict": "ok",
+   "note": "KC 5 25.1 § Infections of the Circulatory System, m58945",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4af5825003d6bebc": {
    "verdict": "ok",
    "note": "The table above (t=30,50,60,70,90; f(t)=20,40,50,60,70) gives f(60)=50 directly, matching the declared answer."
@@ -23560,6 +23944,14 @@
     "result": "agrees"
    }
   },
+  "4b70ca5d99e9d6f9": {
+   "verdict": "ok",
+   "note": "KC 5 25.2 § Zoonotic Febrile Diseases › Rocky Mountain Spotted Fever, m58936",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4b726b7f53c09995": {
    "verdict": "ok"
   },
@@ -23588,6 +23980,14 @@
   },
   "4b8cac468b7a5955": {
    "verdict": "ok"
+  },
+  "4b91f410e43267a9": {
+   "verdict": "ok",
+   "note": "KC 4 15.1 § Classifications of Disease, m58866",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4b938165cc03a96d": {
    "verdict": "ok",
@@ -23798,6 +24198,14 @@
     "result": "agrees"
    }
   },
+  "4c27585925504a02": {
+   "verdict": "ok",
+   "note": "KC 4 16.3 § Vector Transmission (fs-id1167661333750), m58873",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4c29152dc2ef6d21": {
    "verdict": "ok",
    "note": "Practice (Rational Zero Theorem list). Constant term 5 (factors +-1,+-5), leading coeff 2 (factors +-1,+-2) give candidates +-1,+-5,+-1/2,+-5/2. Matches CNXML solution for fs-id1165135486016."
@@ -23923,6 +24331,14 @@
   },
   "4c7372464be3cf30": {
    "verdict": "ok"
+  },
+  "4c77df0fbcfe3861": {
+   "verdict": "ok",
+   "note": "KC 4 15.4 § Protozoan Virulence, m58869",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4c7f1ebea42b65a5": {
    "verdict": "ok",
@@ -24176,6 +24592,10 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 921): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "4d8e09c1e4c44832": {
+   "verdict": "ok",
+   "note": "KC 5 23.6 § Protozoan Infections of the Urogenital System (body), m58922"
+  },
   "4d8eb4e93bcecb32": {
    "verdict": "ok"
   },
@@ -24194,6 +24614,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "4d9b67bd9b5d7bcc": {
+   "verdict": "ok",
+   "note": "KC 5 23.1 § General Causes and Modes of Transmission of Urogenital Infections, m58917"
   },
   "4d9d42b364ed47cb": {
    "verdict": "ok",
@@ -24237,6 +24661,14 @@
   },
   "4db963c82daa9531": {
    "verdict": "ok"
+  },
+  "4dbaa29459f6aa8c": {
+   "verdict": "ok",
+   "note": "KC 5 21.5 § Loiasis, m58910",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4dbad666161d95ff": {
    "verdict": "ok"
@@ -25389,6 +25821,14 @@
   "518440c775c5bf0e": {
    "verdict": "ok"
   },
+  "518519ebc5e64f92": {
+   "verdict": "ok",
+   "note": "KC 4 20.5 § Indirect Fluorescent Antibody Techniques, m58904",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5192d8ecb3fc889b": {
    "verdict": "ok"
   },
@@ -25574,6 +26014,14 @@
   "523a2c200ce81a9f": {
    "verdict": "ok"
   },
+  "5249dcde8eef17ea": {
+   "verdict": "ok",
+   "note": "KC 4 18.4 § Primary and Secondary Responses, m58887",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5250195800a8f46d": {
    "verdict": "ok"
   },
@@ -25650,6 +26098,14 @@
    "note": "Glossary recall for term-00002 'Myc' (body) / glossary definition fs-id1477108 'myc — oncogene that causes cancer in many cancer cells'; prompt paraphrases the glossary meaning, answer matches the glossary term.",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "52a9ddcd80d024c9": {
+   "verdict": "ok",
+   "note": "KC 4 19.5 § Introduction, m58896",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -26390,6 +26846,14 @@
   "55a180d05785aa04": {
    "verdict": "ok"
   },
+  "55a2d96244f35161": {
+   "verdict": "ok",
+   "note": "KC 4 15.2 § Exposure, m58867",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "55a6f5a1260ecb8d": {
    "verdict": "ok",
    "note": "Glossary recall (Group I); cross-checked against body text 'Group I viruses contain double-stranded DNA (dsDNA) as their genome.'",
@@ -26417,6 +26881,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "55d6fabf701d2867": {
+   "verdict": "ok",
+   "note": "KC 4 15.2 § Exposure, m58867",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -27075,6 +27547,14 @@
    "verdict": "ok",
    "note": "rate 10500/yr, 55000+6*10500=118000; key p1279 #25"
   },
+  "58015f68134b05eb": {
+   "verdict": "ok",
+   "note": "KC 5 23.2 § Cystitis, m58918",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "580368403a551864": {
    "verdict": "ok"
   },
@@ -27469,6 +27949,14 @@
   "590d13e7cde3afe5": {
    "verdict": "ok",
    "note": "m66463 CT exercise fs-id1511408, solution fs-id2291594: model answer matches source verbatim (vitamins/minerals as coenzymes/cofactors; example vitamin C for collagen; example Mg2+ for pyruvate dehydrogenase, Fe/Mg ion notation updated to site style Mg²⁺; vitamins not produced by the body). All 5 CHECKS clauses restate the model answer, no added claim."
+  },
+  "59109d12687825e4": {
+   "verdict": "ok",
+   "note": "KC 5 23.3 § Bacterial Vaginitis and Vaginosis, m58919",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5911577853dcf144": {
    "verdict": "ok",
@@ -28730,6 +29218,14 @@
   "5cdd329591fb79d7": {
    "verdict": "ok"
   },
+  "5ce89a370921f32a": {
+   "verdict": "ok",
+   "note": "KC 5 21.3 § Papillomas, m58908",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5ce90c7ea00de642": {
    "verdict": "ok"
   },
@@ -29566,6 +30062,10 @@
     "result": "agrees"
    }
   },
+  "5ff6bd0ad0582d16": {
+   "verdict": "ok",
+   "note": "KC 4 19.1 § Hypersensitivity Pneumonitis, m58892"
+  },
   "5ffc00db3fe2dfa0": {
    "verdict": "ok",
    "solved": {
@@ -29979,6 +30479,14 @@
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L373 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
+  "61447471948dec60": {
+   "verdict": "ok",
+   "note": "KC 5 24.4 § Hepatitis, m58930",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6145733fbc162864": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29992,6 +30500,14 @@
    "note": "KC 2 9.3 § body Cell Growth (fs-id2984656), m66380 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "61687fdb1d018aa5": {
+   "verdict": "ok",
+   "note": "KC 5 22.2 § Q Fever, m58913",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -30836,6 +31352,14 @@
   "64834ef09b42a8f1": {
    "verdict": "ok"
   },
+  "648c3646c6ed2ded": {
+   "verdict": "ok",
+   "note": "KC 4 17.2 § Chemical and Enzymatic Mediators Found in Body Fluids, m58878",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "648d949a0e4afad1": {
    "verdict": "ok"
   },
@@ -31073,6 +31597,14 @@
    "note": "Glossary textin, definition id fs-idp58865824 (back mutation). Prompt paraphrases the glossary meaning without using 'back' or 'mutation'.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6549ee5a10ee29d1": {
+   "verdict": "ok",
+   "note": "KC 5 21.1 § Anatomy and Microbiota of the Eye, m58906",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -31553,6 +32085,14 @@
    "note": "Glossary recall (locally authored textin) for glossary term 'glycogen' (fs-id2581968); meaning paraphrased into prompt, answer matches term.",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "66f2dd584b5ec0be": {
+   "verdict": "ok",
+   "note": "KC 4 18.3 § T Cell Production and Maturation, m58886",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -32305,6 +32845,14 @@
     "result": "agrees"
    }
   },
+  "692ae1501575a91c": {
+   "verdict": "ok",
+   "note": "KC 5 21.3 § Oral Herpes, m58908",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "692e2f1a60ce9f12": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -32750,6 +33298,14 @@
     "result": "agrees"
    }
   },
+  "6ab6e58b65e1ca89": {
+   "verdict": "ok",
+   "note": "KC 5 24.1 § Anatomy and Normal Microbiota of the Oral Cavity, m58924",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6ac8434c0641cd73": {
    "verdict": "ok",
    "note": "Try It 12: halving concentration is the mirror of Example 12's doubling; pH_new=-log(C/2)=P+log(2). log10(2)=0.301029996 (node), rounds to 0.301. No printed CNXML solution for this Try It, but it's the direct algebraic mirror of the worked Example immediately above it, which is fully solved in the source (P-log(2)≈P-0.301 for doubling)."
@@ -32798,6 +33354,18 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "6aeb8d51d45b575a": {
+   "verdict": "ok",
+   "note": "KC 5 24.1 § Anatomy and Normal Microbiota of the GI Tract, m58924",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6af186faf48d449a": {
+   "verdict": "ok",
+   "note": "KC 4 19.3 § Transplant Rejection, m58894"
   },
   "6b051543c6afc92e": {
    "verdict": "ok"
@@ -33183,6 +33751,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6c56c231bdb1d5ba": {
+   "verdict": "ok",
+   "note": "KC 4 17.3 § Hematopoiesis, m58879",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -34273,6 +34849,14 @@
    "verdict": "ok",
    "note": "Practice #13 (CNXML fs-id1165135376335, 5x/(x^2-9), source solution 5/(2(x+3))+5/(2(x-3))). Independently solved: 5x=A(x-3)+B(x+3); x=3 gives B=5/2, x=-3 gives A=5/2; matches source. Cross-checked as exact-rational identity via node. Grader: self=correct, retype-of-printed=form."
   },
+  "6fab63e7194b3f91": {
+   "verdict": "ok",
+   "note": "KC 4 18.5 § Mechanisms of Acquisition of Immunity (table OSC_Microbio_18_05_graph), m58888",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6fac98759a0d2249": {
    "verdict": "ok",
    "note": "m66443 CT solution fs-id1479424 (RNA vs DNA structural differences) verbatim; five CHECKS clauses restate its sentences."
@@ -35279,6 +35863,14 @@
     "result": "agrees"
    }
   },
+  "7321ceaa7db09dc3": {
+   "verdict": "ok",
+   "note": "KC 5 26.4 § Amoebic Meningitis, m58943",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7322f41a60e4a130": {
    "verdict": "ok",
    "note": "Glossary recall, term id fs-id1771864 (\"lysis buffer\"), meaning fs-id1920763 used as prompt.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -36278,6 +36870,14 @@
     "result": "agrees"
    }
   },
+  "76e1c357e3e25447": {
+   "verdict": "ok",
+   "note": "KC 5 22.1 § Anatomy of the Lower Respiratory System, m58912",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "76e379c3a04f3a2d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -36886,6 +37486,14 @@
   "78a3609717c0e282": {
    "verdict": "ok"
   },
+  "78a891b8b95dc224": {
+   "verdict": "ok",
+   "note": "KC 4 20.5 § Direct Fluorescent Antibody Techniques, m58904",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "78ab98b1db0cd39a": {
    "verdict": "ok",
    "note": "Locally authored notation-reading item on Example 1: L is the evaluated limit, 11, matching Example 1's own worked solution and the CNXML."
@@ -36920,6 +37528,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "78d7accc47e48037": {
+   "verdict": "ok",
+   "note": "KC 5 24.6 § Flukes (Liver Flukes), m58932",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -37856,6 +38472,14 @@
   "7b9f76bcb66222a0": {
    "verdict": "ok"
   },
+  "7ba005450acc0d6e": {
+   "verdict": "ok",
+   "note": "KC 5 24.5 § Cyclosporiasis, m58931",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7ba9175b3a1e932d": {
    "verdict": "ok"
   },
@@ -37991,6 +38615,14 @@
   },
   "7bff4ccb47e74774": {
    "verdict": "ok"
+  },
+  "7bff9c83f15f77e8": {
+   "verdict": "ok",
+   "note": "KC 4 18.1 § Antigens, m58884",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7c0c3669e4f7c3ba": {
    "verdict": "ok",
@@ -38473,6 +39105,14 @@
   "7d8e341755332dc8": {
    "verdict": "ok"
   },
+  "7d911064b8ba7004": {
+   "verdict": "ok",
+   "note": "KC 4 19.2 § Autoimmune Addison Disease, m58893",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7d95c0f267a29bdb": {
    "verdict": "ok"
   },
@@ -38569,6 +39209,14 @@
   },
   "7dd4372995e337a2": {
    "verdict": "ok"
+  },
+  "7dd84bdab917023c": {
+   "verdict": "ok",
+   "note": "KC 4 15.3 § Virulence Factors for Survival in the Host and Immune Evasion, m58868",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7de374d1afc35215": {
    "verdict": "ok",
@@ -38744,6 +39392,10 @@
   "7e60ea0fb0f0fca4": {
    "verdict": "ok"
   },
+  "7e6107f1ff775cf6": {
+   "verdict": "ok",
+   "note": "KC 5 25.4 § Babesiosis, m58938"
+  },
   "7e6b8f1f84062301": {
    "verdict": "ok"
   },
@@ -38886,6 +39538,14 @@
   "7ecdc837283d75b8": {
    "verdict": "ok",
    "note": "ID50 vs LD50 definitions selfcheck; matches the two defining sentences verbatim in substance."
+  },
+  "7ecdfb2c04f5c20d": {
+   "verdict": "ok",
+   "note": "KC 5 24.5 § Amoebiasis (Amebiasis), m58931",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7ed2e98b008caa33": {
    "verdict": "ok"
@@ -39575,6 +40235,14 @@
   "81a19c44b68bee58": {
    "verdict": "ok"
   },
+  "81a54b0a10ef788f": {
+   "verdict": "ok",
+   "note": "KC 4 19.5 § Micro Connection: Using Viruses to Cure Cancer, m58896",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "81a97f77e3ddad8b": {
    "verdict": "ok"
   },
@@ -39791,6 +40459,14 @@
   "8262e371907d8b57": {
    "verdict": "ok"
   },
+  "8263cea52d7270bf": {
+   "verdict": "ok",
+   "note": "KC 4 20.1 § Producing Monoclonal Antibodies, m58900",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "826747a3c9b58f84": {
    "verdict": "ok"
   },
@@ -39808,6 +40484,10 @@
   "826f4cecaaf512c9": {
    "verdict": "ok",
    "note": "Practice selfcheck from unkeyed CT fs-id1167582848057; model reasons from the module's own -cidal/-static and death-curve sentences without adding a new claim."
+  },
+  "826f5037f82677a5": {
+   "verdict": "ok",
+   "note": "KC 5 23.3 § Syphilis > Congenital Syphilis, m58919"
   },
   "82718bcd629e4d6b": {
    "verdict": "ok",
@@ -40424,6 +41104,14 @@
    "verdict": "ok",
    "note": "-2x/(x-6): ratio of leading coeffs -2/1=-2; verified by node numeric check."
   },
+  "8444e462e486eb75": {
+   "verdict": "ok",
+   "note": "KC 5 23.1 § General Signs and Symptoms of Urogenital Infections, m58917",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8447b0a1031e2183": {
    "verdict": "ok"
   },
@@ -40461,6 +41149,14 @@
   "84550fa5c288b48d": {
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Determine whether the vectors $\\mathbf{u}$ and $\\mathbf{v}$ )"
+  },
+  "845593ccbe8a3f32": {
+   "verdict": "ok",
+   "note": "KC 4 17.3 § Agranulocytes, m58879",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "845acb01eb3db11e": {
    "verdict": "ok",
@@ -40590,6 +41286,14 @@
   },
   "84d276e012e77dc4": {
    "verdict": "ok"
+  },
+  "84d423c863366edb": {
+   "verdict": "ok",
+   "note": "KC 5 24.2 § Trench Mouth, m58925",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "84d64e69fbd39c5b": {
    "verdict": "ok"
@@ -41041,6 +41745,10 @@
   "85f8185c93d0ae69": {
    "verdict": "ok"
   },
+  "86005a84dec46e02": {
+   "verdict": "ok",
+   "note": "KC 5 22.4 § Histoplasmosis, m58915"
+  },
   "86057aebd0bce13f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -41142,6 +41850,10 @@
   "8629c45883128568": {
    "verdict": "ok",
    "note": "asin(25/200)=7.1808deg->7.2deg (node); rekeyed 7.2^\\circ with degrees form per source key and corpus convention. Parent re-derivation after edit."
+  },
+  "862c858c441b9e32": {
+   "verdict": "ok",
+   "note": "KC 4 17.2 § Antimicrobial Peptides, m58878"
   },
   "863382cc6a749368": {
    "verdict": "ok"
@@ -41687,6 +42399,14 @@
   "882461048d863c55": {
    "verdict": "ok"
   },
+  "88296059be2da03d": {
+   "verdict": "ok",
+   "note": "KC 4 20.2 § Complement-Mediated Immunoassay, m58901",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "88339328d24fff30": {
    "verdict": "ok"
   },
@@ -41741,6 +42461,14 @@
   "8859b55866350324": {
    "verdict": "ok"
   },
+  "8865c2ef04e81b6d": {
+   "verdict": "ok",
+   "note": "KC 4 16.4 § The World Health Organization (WHO) (fs-id1167656896594), m58874",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "886d298b1ec8a927": {
    "verdict": "ok",
    "solved": {
@@ -41752,6 +42480,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "887fafd2fa5b6af0": {
+   "verdict": "ok",
+   "note": "KC 5 23.2 § Nongonococcal Urethritis (NGU), m58918",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -41952,6 +42688,10 @@
     "result": "agrees"
    }
   },
+  "8921078b29d58ce1": {
+   "verdict": "ok",
+   "note": "KC 5 22.2 § Health Care-Associated Pneumonia, m58913"
+  },
   "893034aa75fe8352": {
    "verdict": "ok",
    "solved": {
@@ -42120,6 +42860,14 @@
   "899311c8a1f9e8d9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "89953bbbaf030d3f": {
+   "verdict": "ok",
+   "note": "KC 4 15.1 § Signs and Symptoms of Disease, m58866",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -42407,9 +43155,25 @@
    "verdict": "ok",
    "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit"
   },
+  "8ab89520f2efce3b": {
+   "verdict": "ok",
+   "note": "KC 5 24.4 § Disease Profile table: Viral Infections of the Gastrointestinal Tract, m58930",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8ac82d86794ababb": {
    "verdict": "ok",
    "note": "Point plot 2i = (0,2); no computation, matches printed coordinates."
+  },
+  "8ac98347cebdc60a": {
+   "verdict": "ok",
+   "note": "KC 4 19.3 § The Future of Transplantation, m58894",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8aca4f6044c162d1": {
    "verdict": "ok",
@@ -42742,6 +43506,10 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 86): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "8bdde1919212e38d": {
+   "verdict": "ok",
+   "note": "KC 5 26.1 § Meningitis and Encephalitis § Micro Connections, Guillain-Barré Syndrome, m58940"
+  },
   "8be4fbb2d8ce7b8a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -42992,6 +43760,14 @@
   "8ce3a6ae447ffdc7": {
    "verdict": "ok"
   },
+  "8ced5451ab015dd0": {
+   "verdict": "ok",
+   "note": "KC 4 15.4 § Fungal Virulence, m58869",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8ceda1b089c7f1c7": {
    "verdict": "ok"
   },
@@ -43008,6 +43784,14 @@
   },
   "8cfdc6c45945aead": {
    "verdict": "ok"
+  },
+  "8d008b3bb8462c6c": {
+   "verdict": "ok",
+   "note": "KC 4 16.4 § Emerging and Reemerging Infectious Diseases — SARS micro-connection (fs-id1167660178916), m58874",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8d00c5a462a151e3": {
    "verdict": "ok",
@@ -43271,6 +44055,14 @@
    "verdict": "ok",
    "note": "m66375 solution fs-idm200102082 (intestinal glucose active transport vs. facilitated diffusion): model answer verbatim match. Five CHECKS clauses restate fluctuating glucose levels, empty-gut concentration gradient, facilitated diffusion's backflow risk, active transport's one-way guarantee, and the energy-harvesting rationale — all present in the solution."
   },
+  "8e0343a5fce694a4": {
+   "verdict": "ok",
+   "note": "KC 4 19.4 § Severe Combined Immunodeficiency, m58895",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8e0df953d025e8f5": {
    "verdict": "ok",
    "note": "source SA fs-id1167663987126 (unkeyed upstream); parent Part C decision 4: chain across sentences stays selfcheck; model answer and 4 checkpoints assembled from the sucrose->fructose->lactic acid->demineralization sentences"
@@ -43510,6 +44302,14 @@
     "result": "agrees"
    }
   },
+  "8ee5faaca1602c90": {
+   "verdict": "ok",
+   "note": "KC 5 25.1 § Infections of the Circulatory System, m58945",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8eea83e9adbb592c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -43547,6 +44347,14 @@
   "8effe07818f5546a": {
    "verdict": "ok",
    "note": "KC 7 41.5 § body Atrial Natriuretic Peptide Hormone (fs-idm3277792), m66661 — parent re-read against the module"
+  },
+  "8f184c7536e9fc80": {
+   "verdict": "ok",
+   "note": "KC 5 21.3 § Roseola and Fifth Disease, m58908",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8f1b0b728b6773d2": {
    "verdict": "ok"
@@ -43664,6 +44472,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8f925eafaa5e46f5": {
+   "verdict": "ok",
+   "note": "KC 5 24.3 § Campylobacter jejuni Gastroenteritis, m58933",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -44098,6 +44914,14 @@
     "result": "agrees"
    }
   },
+  "9129bc496d2a301f": {
+   "verdict": "ok",
+   "note": "KC 5 26.3 § Poliomyelitis, m58942",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "912e1c6994e96e15": {
    "verdict": "ok"
   },
@@ -44453,6 +45277,10 @@
     "result": "agrees"
    }
   },
+  "9284774f808c84ff": {
+   "verdict": "ok",
+   "note": "KC 5 26.2 § Hansen's Disease (Leprosy), Alice Ball paragraph, m58941"
+  },
   "928898aa8dd008c0": {
    "verdict": "ok",
    "note": "-4x^2+24x+16y^2-128y+156=0: -4(x^2-6x+9)+16(y^2-8y+16)=-156-36+256=64; divide by 64 -> (y-4)^2/4-(x-3)^2/16=1; expanded back and confirmed equal to the original general form; matches source fs-id2272094."
@@ -44751,6 +45579,14 @@
    "note": "KC 5 25.3 § body Hornworts (fs-idp37789488), m66568 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "938ec74e055e069e": {
+   "verdict": "ok",
+   "note": "KC 5 26.3 § Rabies, m58942",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -45236,6 +46072,14 @@
   },
   "9511f8f0aef85e51": {
    "verdict": "ok"
+  },
+  "95131432178fb505": {
+   "verdict": "ok",
+   "note": "KC 5 22.3 § Viral Pneumonia, m58914",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "95140ae3e0fba0ae": {
    "verdict": "ok",
@@ -46457,6 +47301,14 @@
     "result": "agrees"
    }
   },
+  "9992c9a8c54ee343": {
+   "verdict": "ok",
+   "note": "KC 5 26.1 § The Central Nervous System § The Blood-Brain Barrier, m58940",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9994e0b052031485": {
    "verdict": "ok",
    "solved": {
@@ -47336,6 +48188,14 @@
     "result": "agrees"
    }
   },
+  "9ca4921cc943bb2c": {
+   "verdict": "ok",
+   "note": "KC 5 24.3 § Cholera and Other Vibrios, m58933",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9cac09ac74b776d9": {
    "verdict": "ok",
    "note": "x=3(y-1)^2+2 standard form x=a(y-k)^2+h with k=1,h=2 -> vertex (2,1); x-intercept (y=0): x=3(1)+2=5 -> (5,0), mirror across axis y=1 is (5,2). All re-derived and match CNXML Try It (module m81413, immediately after Example 11.16's different equation x=2(y-2)^2+1, vertex (1,2) -- no worked-example leakage, numbers differ). Points inside grid -1..8/-3..5, integer lattice."
@@ -47458,6 +48318,10 @@
   },
   "9d0c0eeee6f825ce": {
    "verdict": "ok"
+  },
+  "9d0c55caf00df81b": {
+   "verdict": "ok",
+   "note": "KC 5 23.5 § Fungal Infections of the Reproductive System (body), m58921"
   },
   "9d0cf4cdc0156105": {
    "verdict": "ok",
@@ -48884,6 +49748,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a20e5f445e1e80d4": {
+   "verdict": "ok",
+   "note": "KC 5 23.5 § Fungal Infections of the Reproductive System (body), m58921",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -51357,6 +52229,14 @@
   "a9b61ac936448ff3": {
    "verdict": "ok"
   },
+  "a9b65c2f06252f2e": {
+   "verdict": "ok",
+   "note": "KC 4 17.4 § Pathogen Degradation, m58880",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a9bce6564f022ebe": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -51763,6 +52643,14 @@
     "result": "agrees"
    }
   },
+  "aaf9da0c75e52f78": {
+   "verdict": "ok",
+   "note": "KC 4 16.1 § Etiology (fs-id1167660378783), m58871",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aafbe7fa5ed438fe": {
    "verdict": "ok"
   },
@@ -52050,6 +52938,15 @@
   "abbfbbb3033fb432": {
    "verdict": "ok"
   },
+  "abc1fe042b17ff67": {
+   "verdict": "ok",
+   "note": "KC 5 23.4 § Genital Herpes, m58920",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "format only: the solver wrote the protein's full name, which contains the key ICP 34.5 verbatim; m58920 prints 'infected cell protein (ICP) 34.5'; the full-name accept fails the four-word cap, ICP34.5 is accepted"
+   }
+  },
   "abc4d09da3fa6d3c": {
    "verdict": "ok"
   },
@@ -52095,6 +52992,14 @@
   },
   "abf3be9f359b17cd": {
    "verdict": "ok"
+  },
+  "abf6aff8075186d8": {
+   "verdict": "ok",
+   "note": "KC 4 18.2 § Antigen-Presenting Cells (APCs), m58885",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "abf78821803d939a": {
    "verdict": "ok",
@@ -52402,6 +53307,14 @@
   },
   "acffacf53b346e07": {
    "verdict": "ok"
+  },
+  "ad03f98ee173d8eb": {
+   "verdict": "ok",
+   "note": "KC 4 18.3 § T Cell Production and Maturation, m58886",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ad04326bfedfdd1a": {
    "verdict": "ok",
@@ -53108,6 +54021,14 @@
     "result": "agrees"
    }
   },
+  "afde6fef7031f9c9": {
+   "verdict": "ok",
+   "note": "KC 4 15.2 § Pathogenicity and Virulence (table: ID₅₀ for Selected Foodborne Diseases), m58867",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "afdf350daef81425": {
    "verdict": "ok",
    "solved": {
@@ -53453,6 +54374,14 @@
   },
   "b11236dab92bb2df": {
    "verdict": "ok"
+  },
+  "b114c33cadba6914": {
+   "verdict": "ok",
+   "note": "KC 4 16.2 § intro paragraph before Pioneers of Epidemiology (fs-id1167658364624), m58872",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b11c9e6e7b7b254e": {
    "verdict": "ok"
@@ -53919,6 +54848,10 @@
   "b29636b7d81596ff": {
    "verdict": "ok"
   },
+  "b29aa64c3a83e6af": {
+   "verdict": "ok",
+   "note": "KC 4 17.3 § Neutrophils (PMNs), m58879"
+  },
   "b29c128407ec8d89": {
    "verdict": "ok"
   },
@@ -54349,6 +55282,14 @@
   "b4327c66d7c4632e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b438d9d015a470f2": {
+   "verdict": "ok",
+   "note": "KC 4 19.1 § Type II (Cytotoxic) Hypersensitivities > ABO Blood Group Incompatibility, m58892",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -55320,6 +56261,14 @@
   "b729348f78d588a0": {
    "verdict": "ok"
   },
+  "b72990f53834086e": {
+   "verdict": "ok",
+   "note": "KC 5 25.2 § Rheumatic Fever, m58936",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b72ad948f5daf356": {
    "verdict": "ok"
   },
@@ -55847,6 +56796,14 @@
   },
   "b91caec4fd96adb1": {
    "verdict": "ok"
+  },
+  "b91d697ce2583caa": {
+   "verdict": "ok",
+   "note": "KC 4 20.4 § Enzyme-linked Immunosorbent Assays (ELISAs), m58903",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b91e1dbdf111068c": {
    "verdict": "ok",
@@ -56649,6 +57606,14 @@
   },
   "bc34b6cd174d84e0": {
    "verdict": "ok"
+  },
+  "bc3950e74ebf1d04": {
+   "verdict": "ok",
+   "note": "KC 4 20.4 § enzyme immunoassay introduction (before the Immunostaining heading), m58903",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "bc3ae96520bc0c86": {
    "verdict": "ok",
@@ -57512,6 +58477,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "bf1bc0a72cb34c3e": {
+   "verdict": "ok",
+   "note": "KC 4 19.4 § X-Linked Agammaglobulinemia, m58895",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -59502,6 +60475,10 @@
     "result": "agrees"
    }
   },
+  "c5908d242de76d18": {
+   "verdict": "ok",
+   "note": "KC 4 17.1 § The Skin Barrier, m58877"
+  },
   "c590ce9193dc2e7e": {
    "verdict": "ok"
   },
@@ -60056,6 +61033,14 @@
     "result": "agrees"
    }
   },
+  "c740ada561892a05": {
+   "verdict": "ok",
+   "note": "KC 4 18.1 § Antigen-Antibody Interactions, m58884",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c74ade0621c79d43": {
    "verdict": "ok",
    "note": "parent re-read after a checker-driven edit (accept list, wording, or description); key unchanged and re-checked against the CNXML solution/glossary — 33.01 line 198; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -60155,6 +61140,14 @@
   "c7815a0cc336b5ab": {
    "verdict": "ok"
   },
+  "c7820087781544ea": {
+   "verdict": "ok",
+   "note": "KC 5 21.5 § Loiasis, m58910",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c794fa778a426445": {
    "verdict": "ok"
   },
@@ -60228,6 +61221,14 @@
     "result": "agrees"
    }
   },
+  "c7dacd9fe0f0f84f": {
+   "verdict": "ok",
+   "note": "KC 4 19.1 § ABO Blood Group Incompatibility, m58892",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c7dd7068df5ecee9": {
    "verdict": "ok",
    "note": "x^2=4y: 4p=4->p=1; focus=(0,1); matches source exercise fs-id1931374's key exactly."
@@ -60262,6 +61263,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c7f177f38ce9c0ab": {
+   "verdict": "ok",
+   "note": "KC 5 24.6 § Hookworm, m58932",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -60589,6 +61598,14 @@
    "verdict": "ok",
    "note": "body CYU box2 bullet1: matches the emerging-disease definition sentence and its 'implies the need to apply resources' clause"
   },
+  "c91389139ab805fe": {
+   "verdict": "ok",
+   "note": "KC 5 25.4 § Toxoplasmosis, m58938",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c91f12ab2eae48b3": {
    "verdict": "ok",
    "note": "3*<5,4> = <15,12> -> 15i+12j; ran node -e to confirm (3*5,3*4)=(15,12)."
@@ -60729,6 +61746,14 @@
   },
   "c9814e7753d809c1": {
    "verdict": "ok"
+  },
+  "c983ab10d67f1dea": {
+   "verdict": "ok",
+   "note": "KC 5 22.1 § Normal Microbiota of the Respiratory System (vaccine table), m58912",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c9843966296f3410": {
    "verdict": "ok"
@@ -60936,6 +61961,14 @@
   "ca3503f294b2b092": {
    "verdict": "ok",
    "note": "Critical Thinking selfcheck fs-idp108238624; model answer is the CNXML solution verbatim, checks decompose its two clauses."
+  },
+  "ca3a8e68f4858319": {
+   "verdict": "ok",
+   "note": "KC 5 23.1 § Anatomy of the Reproductive System, m58917",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ca3c3ff77f337f7c": {
    "verdict": "ok"
@@ -61355,6 +62388,14 @@
     "result": "agrees"
    }
   },
+  "cb823a6add239759": {
+   "verdict": "ok",
+   "note": "KC 5 25.2 § Tularemia, m58936",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cb830b3f14c3d2f0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -61649,6 +62690,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "cc582b8058c6b6a4": {
+   "verdict": "ok",
+   "note": "KC 4 17.5 § Fever (Key terms), m58881",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -62606,6 +63655,14 @@
   "cfe8fec240481222": {
    "verdict": "ok"
   },
+  "cff4de711ad2b631": {
+   "verdict": "ok",
+   "note": "KC 4 17.1 § Physical Barriers, m58877",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cffa2462da357ba9": {
    "verdict": "ok",
    "solved": {
@@ -63450,6 +64507,14 @@
    "verdict": "ok",
    "note": "Body selfcheck — model answer assembled from the equivalence-zone/antibody-excess/antigen-excess sentences of the Precipitin Reactions subsection."
   },
+  "d31a31b254b61340": {
+   "verdict": "ok",
+   "note": "KC 4 19.2 § Multiple Sclerosis, m58893",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d31a5742faf91cfe": {
    "verdict": "ok",
    "solved": {
@@ -63800,6 +64865,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "d463c06293a01b6a": {
+   "verdict": "ok",
+   "note": "KC 4 20.1 § Producing Polyclonal Antibodies, m58900",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -64170,6 +65243,14 @@
   "d5f28474b8d24b3d": {
    "verdict": "ok"
   },
+  "d5f36ac407ff3b65": {
+   "verdict": "ok",
+   "note": "KC 5 26.1 § The Peripheral Nervous System, m58940",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d5f3cbc6645ea6b0": {
    "verdict": "ok"
   },
@@ -64410,6 +65491,10 @@
     "result": "agrees"
    }
   },
+  "d6b4bebd8748d1f8": {
+   "verdict": "ok",
+   "note": "KC 4 17.5 § Chronic Inflammation, m58881"
+  },
   "d6b4c74217559641": {
    "verdict": "ok",
    "note": "parent re-record after rewording two rubric checkpoints to drop raw HTML tags (checkpoint labels render as plain text); model answer unchanged, the verbatim source solution for the ATP-hydrolysis E_A question"
@@ -64440,6 +65525,14 @@
   "d6cf07d6eb903651": {
    "verdict": "ok",
    "note": "pi/9 rad * 180/pi = 180/9 = 20 deg"
+  },
+  "d6d6a9e03a0b0ba0": {
+   "verdict": "ok",
+   "note": "KC 5 25.3 § Cytomegalovirus Infections, m58937",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d6d7f021018f0458": {
    "verdict": "ok",
@@ -64515,6 +65608,14 @@
     "result": "agrees"
    }
   },
+  "d71c63ada7c417cb": {
+   "verdict": "ok",
+   "note": "KC 5 24.2 § Dental Caries, m58925",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d71dedbb4008a39a": {
    "verdict": "ok",
    "note": "Review Q fs-id2000653, keyed D = 'diffusion is constantly moving solutes in opposite directions'; matches source list order.",
@@ -64586,6 +65687,14 @@
    "note": "textin cilium: prompt is glossary def fs-id1704493 verbatim minus the plural aside; term not in prompt.",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "d768070cae324b0a": {
+   "verdict": "ok",
+   "note": "KC 4 19.3 § The Future of Transplantation, m58894",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -65480,6 +66589,14 @@
     "result": "agrees"
    }
   },
+  "dab20e8164396de6": {
+   "verdict": "ok",
+   "note": "KC 5 23.2 § Kidney Infections (Pyelonephritis and Glomerulonephritis) > Leptospirosis, m58918",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dab520a784a50dd6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -65806,6 +66923,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "dba788a45a680e1a": {
+   "verdict": "ok",
+   "note": "KC 5 21.2 § Biofilms and Infections of the Skin and Eyes, m58907",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -66405,6 +67530,14 @@
   },
   "ddca7bbb0bd03b0a": {
    "verdict": "ok"
+  },
+  "ddd4f7b37805a73a": {
+   "verdict": "ok",
+   "note": "KC 4 20.2 § Immunoelectrophoresis, m58901",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "dddb98a737011071": {
    "verdict": "ok",
@@ -67040,6 +68173,14 @@
     "result": "agrees"
    }
   },
+  "e01341a1ca56fd44": {
+   "verdict": "ok",
+   "note": "KC 5 22.4 § Mucormycosis, m58915",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e016cf35684966b0": {
    "verdict": "ok",
    "note": "fs-idp56627088 (Review Q); source SOL A = 'electrical', keyed as printed.",
@@ -67515,6 +68656,14 @@
     "result": "agrees"
    }
   },
+  "e1b28fb3ee0a8428": {
+   "verdict": "ok",
+   "note": "KC 5 24.4 § Gastroenteritis Caused by Rotaviruses, m58930",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e1b83bd4e0fa6460": {
    "verdict": "ok",
    "note": "selfcheck matches CNXML exercise fs-idm101910752 solution verbatim (Critical Thinking Q1: moist environment / frog eggs lack a shell)."
@@ -67760,6 +68909,14 @@
   },
   "e2837f545788c0d7": {
    "verdict": "ok"
+  },
+  "e285e833acc9902b": {
+   "verdict": "ok",
+   "note": "KC 4 19.5 § Micro Connection: Using Viruses to Cure Cancer, m58896",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e287e3668e1c7aa9": {
    "verdict": "ok"
@@ -68440,6 +69597,10 @@
     "result": "agrees"
    }
   },
+  "e4bde93a97eff341": {
+   "verdict": "ok",
+   "note": "KC 4 17.4 § Pathogen Degradation (Micro Connection: When Phagocytosis Fails), m58880"
+  },
   "e4bf6b249c9b815d": {
    "verdict": "ok",
    "note": "pattern-fit to 9,-81,729,-6561,59049,...; verified (-1)^(n+1)*9^n reproduces all five terms by loop (CNXML Try It ti_11_01_04)."
@@ -68727,6 +69888,10 @@
    "verdict": "ok",
    "note": "Re-derived independently: cos⁴x=((1+cos2x)/2)²=1/4+1/2cos2x+1/4cos²2x=1/4+1/2cos2x+1/8+1/8cos4x=3/8+1/2cos2x+1/8cos4x, ×10 = 15/4+5cos2x+5/4cos4x, matching the source. Distractors confirmed numerically distinct at x=0.4123."
   },
+  "e5f84219004da45f": {
+   "verdict": "ok",
+   "note": "KC 5 23.4 § Genital Herpes > Neonatal Herpes, m58920"
+  },
   "e5fe930d119c5396": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -68879,6 +70044,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "e66a6a168f1a90ea": {
+   "verdict": "ok",
+   "note": "KC 4 20.3 § Blood Typing and Cross-Matching, m58902"
   },
   "e66ff1f5e04e4963": {
    "verdict": "ok",
@@ -69530,6 +70699,14 @@
   "e89132cbfed01928": {
    "verdict": "ok"
   },
+  "e893c2ed8bcbd928": {
+   "verdict": "ok",
+   "note": "KC 5 21.2 § Pseudomonas Infections of the Skin, m58907",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e897ad5ed19db0ad": {
    "verdict": "ok",
    "note": "vertical transverse axis, slope=+-a/b=+-10/8=+-5/4, through (3,-4) -> y=5/4(x-3)-4,y=-5/4(x-3)-4; matches source Try It 5."
@@ -70010,6 +71187,14 @@
     "result": "agrees"
    }
   },
+  "ea28c49cf53ff829": {
+   "verdict": "ok",
+   "note": "KC 5 25.4 § Chagas Disease, m58938",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ea28d4bbd4d16521": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -70327,6 +71512,14 @@
    "verdict": "ok",
    "note": "100,20,4,4/5: ratios 20/100=1/5, 4/20=1/5, (4/5)/4=1/5, all equal -> geometric; matches CNXML solution."
   },
+  "eb38eeffeb6ca445": {
+   "verdict": "ok",
+   "note": "KC 4 17.2 § Chemical and Enzymatic Mediators Found in Body Fluids, m58878",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eb3bcc9fd78e9a1d": {
    "verdict": "ok"
   },
@@ -70371,6 +71564,14 @@
   "eb5f55c38b54ac96": {
    "verdict": "ok",
    "note": "x^2=8y: p=2, latus endpoints (2p,p)=(4,2) and (-2p,p)=(-4,2); matches source TI2."
+  },
+  "eb61b5f851c6bf49": {
+   "verdict": "ok",
+   "note": "KC 5 25.3 § Arthropod-Borne Viral Diseases › Yellow Fever, m58937",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "eb61b9f34c07ca53": {
    "verdict": "ok"
@@ -70493,6 +71694,10 @@
   },
   "ebd42155f43f1b9d": {
    "verdict": "ok"
+  },
+  "ebd5025bfcf79252": {
+   "verdict": "ok",
+   "note": "KC 4 15.4 § Protozoan Virulence, m58869"
   },
   "ebd95864a97989e9": {
    "verdict": "ok"
@@ -72360,6 +73565,14 @@
     "result": "agrees"
    }
   },
+  "f2286ea12ec2a40f": {
+   "verdict": "ok",
+   "note": "KC 4 18.1 § Antibodies, m58884",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f22972c46938f38a": {
    "verdict": "ok",
    "note": "matches CNXML CT fs-idp68170960 solution verbatim (N/Ca deficiency symptoms)"
@@ -73078,6 +74291,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f49a8f6fe2fa8161": {
+   "verdict": "ok",
+   "note": "KC 5 26.2 § Bacterial Meningitis § Meningococcal Meningitis, m58941",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -74331,6 +75552,14 @@
   "f87a9de9d0b99071": {
    "verdict": "ok"
   },
+  "f8837c51e3ce3b16": {
+   "verdict": "ok",
+   "note": "KC 5 24.6 § Tapeworms (Taeniasis), m58932",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f88857d9ce61a813": {
    "verdict": "ok",
    "note": "KC 5 23.3 § body Gymnomoebae (fs-idm67721872), m66555 — parent re-read against the module",
@@ -74923,6 +76152,14 @@
   "fa878f7c3c302afd": {
    "verdict": "ok"
   },
+  "fa879fe002d8e696": {
+   "verdict": "ok",
+   "note": "KC 4 18.5 § Micro Connection: DNA Vaccines, m58888",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fa87f110b6d6bede": {
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which conic section does the equation $x+3y=6$ represent?)"
@@ -74959,6 +76196,14 @@
   },
   "faa6c972328264d0": {
    "verdict": "ok"
+  },
+  "faab3cbe157d8b50": {
+   "verdict": "ok",
+   "note": "KC 5 23.3 § Chlamydia, m58919",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "faafe78913f35bf1": {
    "verdict": "ok"
@@ -75157,6 +76402,14 @@
   "fb5869a7f80f30de": {
    "verdict": "ok"
   },
+  "fb5930d5b01befd0": {
+   "verdict": "ok",
+   "note": "KC 4 20.2 § Immunoblot Assay: The Western Blot / Key terms, m58901",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fb6a9fc24513efd9": {
    "verdict": "ok",
    "note": "KC 2 11.3 § opening paragraph, m58842",
@@ -75243,6 +76496,14 @@
   "fba1403646c26ee0": {
    "verdict": "ok",
    "note": "KC 7 37.5 § body Organs with Secondary Endocrine Functions (fs-idp52508320), m66631 — parent re-read against the module"
+  },
+  "fbabb5402c3df10d": {
+   "verdict": "ok",
+   "note": "KC 5 21.4 § Tineas, m58909",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "fbb0a72bfe1d27c0": {
    "verdict": "ok",

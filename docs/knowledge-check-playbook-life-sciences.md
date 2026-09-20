@@ -114,7 +114,12 @@ What is specific to a unit-level check:
     made of the module's own sentences and whose `===CHECKS===` rubric
     lists 2–6 clauses of that answer. The rubric is required on this book's
     Knowledge Checks (lint error without it): with no hint and no key, it
-    is the only thing that makes the item self-gradable.
+    is the only thing that makes the item self-gradable. Each rubric clause
+    must be a contiguous verbatim substring of the model answer, not a
+    paraphrase of it — `verify-section`'s phrase-coverage check does not
+    enforce this and accepts paraphrase, so the author checks it by eye;
+    Microbiology's fifth Knowledge Check (block 5, chapters 21–26) shipped
+    nine paraphrased rubrics to the checkers before the parent caught them.
 - **A Knowledge Check stem may not duplicate a section Practice item.**
   The section pages already carry every source exercise, so re-asking one
   verbatim tests recall of the page, not the biology. A fact may be asked
@@ -248,7 +253,10 @@ What is specific to a unit-level check:
   rule bars a cloze from blanking the abbreviation of a name the stem
   itself already prints ("...Act of 2008, abbreviated ________" when the
   stem has already spelled out the initials it wants back); ask for the
-  full name instead, or blank a different fact.
+  full name instead, or blank a different fact. Grep the whole assembled
+  page for every key and accept after every replacement round, not just
+  once before settling a replacement: block 4's late replacements leaked
+  into other items' stems twice.
 - The attribution footer follows the section-page form (licence, deep link
   to the source book, and a `Changes:` clause stating that every item is
   locally written from the named chapters' modules).

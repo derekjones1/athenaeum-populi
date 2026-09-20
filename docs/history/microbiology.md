@@ -1189,3 +1189,189 @@ pages.
   item; (4) an open list cloze ("including X and the ___") does not stand
   alone. Floors after landing: --min-exercises 14288→14321,
   --min-replayed 10227→10243.
+
+## Knowledge Check 4 — chapters 15–20 (September 20, 2026)
+
+The fourth of the five block checks (`docs/subjects/microbiology.md`
+§Knowledge checks records the placement decision and the weight table):
+`knowledge-check-15-20.md`, block 4 "Pathogenicity, Epidemiology, and
+Immunity", 28 sections, 84 items (31 multiple choice, 38 textin, 1
+sortbins, 14 selfcheck), weight 24, chapters 21–26 shifted +1 (now
+25–30). The subjects table had said 27 sections / 81 items for this
+block; the content tree has 28 sections (chapters 17–20 have five each),
+so the row is corrected to 28 / 84. Floors after landing:
+--min-exercises 14321→14405, --min-replayed 10243→10281. Run shape, all
+Sonnet unless named, same as blocks 1–3: six authors (one per chapter,
+scratch pages at a mirrored content path with `ledger.md` +
+`provenance.json`), a checker per chapter launched as each author
+finished, a parent read of each chapter block before assembly and of
+every replacement afterwards, a three-agent reverse-recall sweep
+(chapters 15–16, 17–18, 19–20) over all 84 items, four re-check agents
+over the 40 replaced or reworded items, and a blind solve in a fresh
+Fable subagent reading the masked check beside masked copies of the 28
+section pages. Fix requests went back to the same author by message;
+chapter 20 needed five rounds and chapter 16 six.
+
+- **Checker yield:** 13 defects in 84 — ch15 5 (all reverse recalls of
+  page items: a hepatitis B sortbins label, an *H. pylori* rubric
+  clause, an EHEC/Shiga selfcheck, a coagulase rubric clause, a tropism
+  MC keyed on the same sentence); ch16 3 (an intermediate-host hint
+  leak, a $1 billion WHO budget leaked by a page distractor's $3
+  billion, a Health Security Committee rubric); ch17 2 (an NK-cell/
+  lymphoid hint leak; a distractor *Clostridioides difficile* printed
+  nowhere in m58881); ch18 1 (an HLA cloze blanking the abbreviation of
+  a name the stem prints) plus a flagged light-chain "V and J segments
+  only" that the parent adjudicated as a reverse recall of the page's
+  heavy-chain MC and its hint; ch19 2 (a CRP reverse recall; a stem
+  printing "genetically … pigs" for a key with both words); ch20 2
+  (titer and immunostaining reverse recalls) plus an antibody-screen
+  selfcheck whose first rubric clause was the page's own MC key
+  (trimmed).
+- **Parent read** found about 20 more before and after the checkers: two
+  stems opening "In/According to the table of …" (a referent the
+  learner cannot see); a Golden Age MC whose distractor "malaria" was a
+  real-world second key (Laveran, 1880); an HIV-rate MC mixing rates and
+  counts; a case-control stem printing its own "cohort study" option,
+  then a rebuild whose "Retrospective study" distractor was a second
+  key; a "plantibodies" stem printing "plants", an "antinuclear" stem
+  for the key "nucleus", a "psoriasis … arthritis" stem for "psoriatic
+  arthritis", a "multiple sclerosis" stem for a key containing
+  "multiple", a "Guangdong Province" key with "province" in the stem; a
+  "Test specificity" key already keyed three times on the section
+  pages; a two-organism compound key over single-species distractors
+  whose stem also excluded its own option; a granzymes textin
+  reverse-recalling the page's NK-cell MC; phrase clozes ("viral
+  antigen", "antibiotic drops", "proteins", "turnover"); an "assistance
+  of ___" cloze keyed "antibodies"; option sets mixing a virus name with
+  disease names, a drug with viruses, numerals with words; an accept
+  list with a regular singular; a rubric clause that was the stem
+  itself. Within-check leaks, caught by a parent grep of the assembled
+  page after every round: "syndrome" (15.1 keyed it under a "Down
+  syndrome" stem), "antibodies", "influenza", then in the replacements
+  "*Salmonella enterica* serovar Typhi" (a 15.2 option) and "complement"
+  (two other stems). Chapter 20's 20.3 item 2 was replaced four times
+  before it held.
+- **Reverse-recall sweep:** 4 flags in 84, all real — 16.3 aerosols/
+  hantavirus (page body selfcheck), 17.1 *Sporothrix schenkii* (page
+  rubric), 18.3 TH17 (page rubric clause; item narrowed), 19.4 David
+  Vetter (page hint prints the sister/transplant fact; rubric clause
+  dropped). The re-check of the 40 replacements then caught 3 more:
+  16.4 "United Nations" handed over by a page hint; a 20.1 key twice the
+  length of its distractors; a 20.3 rubric clause not a substring of its
+  model answer. Everything else clean.
+- **Blind solve:** 70 graded items, 69 agree and 1 flagged on the first
+  pass (the solver named "the T-cell receptor's variable region" as a
+  second answer to the BCR-rearrangement MC, and m58887 itself says B
+  cells rearrange "like T cells", so the distractor was swapped for
+  CD4); the delta solve of the rebuilt item agreed, 70/70.
+- **Source finding:** none; no errata this run.
+- **Lessons:** (1) a chapter's replacements need the same page-wide read
+  as its first draft — 40 of 84 items were replaced or reworded and the
+  re-check and sweep still found 7 among them; (2) the within-check grep
+  must cover stems, options, and rubrics, not keys only, and must be
+  re-run after EVERY round (two late replacements leaked into other
+  items' stems); (3) authors read "the key is not another item's key"
+  narrowly — say "no other item prints the word"; (4) the section-page
+  check must include body selfcheck rubrics and hints, which produced
+  most of the reverse recalls; (5) the subjects table's per-block
+  section counts were wrong for block 4 — count the content tree, not
+  the table.
+
+## Knowledge Check 5 — chapters 21–26 (September 20, 2026)
+
+The fifth and last of the five block checks (`docs/subjects/
+microbiology.md` §Knowledge checks records the placement decision and
+the weight table): `knowledge-check-21-26.md`, block 5 "Infections of
+the Body Systems", the book's last block, 29 sections, 87 items (36
+multiple choice, 36 textin, 2 sortbins, 13 selfcheck; 74 graded), weight
+31, no later chapters to shift. The subjects table had said 30 sections
+/ 90 items for this block; the content tree has 29 (chapters 21: 5, 22:
+4, 23: 6, 24: 6, 25: 4, 26: 4), so the row is corrected to 29 / 87 — the
+second block in a row whose table row was wrong. Floors after landing:
+--min-exercises 14405→14492, --min-replayed 10281→10317. Run shape, all
+Sonnet unless named, same as blocks 1–4: six authors (one per chapter,
+scratch pages at a mirrored content path with `ledger.md` +
+`provenance.json`), a checker per chapter launched as each author
+finished, a parent read of each chapter block before assembly, a
+four-agent reverse-recall sweep launched early on the finished chapter
+scratch pages (21–22, 24+26, 25, 23) rather than on the assembled page,
+four re-check agents over every replaced or reworded item (the last one
+a delta over the final five), and a blind solve in a fresh Fable
+subagent reading the masked check beside masked copies of the 29
+section pages, with two delta solves on the three hashes that changed
+afterwards. Fix requests went back to the same author by message;
+chapter 21 needed four rounds, chapters 22 and 24 three, chapters 23 and
+25 two, chapter 26 one. The book's five Knowledge Checks are now
+complete.
+
+- **Checker yield:** 16 defects in 87 — ch21 4 (a conjunctivitis textin
+  whose key a page hint printed as "pinkeye"; a *Chrysops* deerfly
+  textin printed in a page self-check answer; two items printing
+  binomials in roman type); ch22 2 (an aspergilloma MC that reversed a
+  page textin whose hint prints "hyphal colonies collect in the lungs";
+  an "18 hemagglutinin subtypes" MC whose fact a page distractor prints
+  verbatim); ch23 4 (glomerulus and Affirm VPIII keys printed with their
+  defining facts in page self-check rubrics; two accept-list gaps); ch24
+  2 (a dextran textin duplicating a page rubric clause; a "projectile
+  vomiting → norovirus" sortbins label duplicating a page MC); ch25 3 (a
+  viremia textin whose key a page hint printed; a transmission-route
+  sortbins four of whose eight labels a page body self-check states;
+  all four MCs keyed at position 1); ch26 1 (an IgA protease MC whose
+  stem prints "IgA").
+- **Parent read** found about 25 more: an eschar textin duplicating the
+  21.2 page's anthrax key by definition; stems printing a word or root
+  of their key (HSV-1 for herpes gladiatorum, "spots" for Rocky Mountain
+  spotted fever, "food" for foodborne disease, "DNA" for
+  deoxyribonuclease, "cells" for clue cells, "glands" and "perspiration"
+  for sweat glands, *Acanthamoeba* for granulomatous amoebic
+  encephalitis, "Staphylococcal" for staphylolysins, "IgA antibodies"
+  for IgA protease); an "organ … is called the ___" cloze keyed by the
+  plural plain noun "kidneys"; a stem naming its own options (enamel,
+  pulp); option sets mixing a drug class with drugs, a region with
+  countries, urinary conditions with a PID form, a disease class with
+  fungus groups, and toxins under a stem asking for an enzyme; a
+  "despite its name" clause and a "Latin word meaning yellow" etymology
+  that hand over a key; a rubric clause that was the stem's own fact;
+  and nine selfcheck rubrics whose clauses paraphrased the model answer
+  instead of quoting it (verify-section's phrase-coverage check
+  tolerates paraphrase; the playbook does not). Within-check leaks,
+  caught by the parent grep of the assembled page: "biofilms" (a 23.5
+  key printed in 21.2's persister-cell stem), "*Neisseria gonorrhoeae*"
+  (a replacement 25.2 key printed in 23.2's urethritis stem),
+  "*Streptococcus pyogenes*" (a 21.2 key printed in 22.2's
+  lab-identification stem), "candidiasis" (a 21.4 key printed in 23.5's
+  self-check), and by root "epididymis"/"Epididymitis" (a 23.1 key
+  beside a 23.1 option) and "dermatophytes"/"dermatophyte" (a 21.4 key
+  in the next item's stem, a plural fold). All six replaced or reworded.
+- **Reverse-recall sweep:** 0 flags in 87 — the first block with an
+  empty sweep; the checkers and the parent read had already removed
+  every reverse recall. The re-check of the replacements then caught 3
+  more: an unprinted distractor ("A protease", not in m58933), a BSL MC
+  whose distractor levels are not printed in m58915 (reverted to a
+  textin with accepts), and a stem asking for an "enzyme" over toxin
+  options; plus a MERS stem keyed on a date the section page corrects
+  from the source (the date was dropped) and one rejected flag (a herpes
+  gladiatorum item whose page MC prints the location as a distractor but
+  never the key).
+- **Blind solve:** 74 graded items — 73 agree and 1 format-only
+  disagreement on the first pass (the solver wrote "infected cell
+  protein (ICP) 34.5" for the key "ICP 34.5"; adjudicated, the full name
+  fails the four-word accept cap); delta solves of the three later
+  hashes agreed (Saudi Arabia, BSL-3, deoxyribonuclease). 74/74
+  resolved.
+- **Source finding:** none; no errata this run. The book's five
+  Knowledge Checks are now complete.
+- **Lessons:** (1) launching the sweeps and re-checks on finished
+  chapter scratch pages instead of waiting for assembly saved most of an
+  hour with no loss — only the within-check grep needs the assembled
+  page; (2) nine of thirteen selfchecks arrived with paraphrased rubrics
+  because verify-section's phrase-coverage gate accepts paraphrase — the
+  "contiguous verbatim substring" rule needs a stricter gate or an
+  explicit line in the author brief; (3) the disease chapters' pathogen
+  names collide across chapters (S. pyogenes, N. gonorrhoeae, Candida,
+  biofilms) — for a body-systems block, authors should avoid keying the
+  major pathogens; (4) the text grader folds diacritics, apostrophes,
+  and hyphens, so accepts for "Romana" or "BSL 3" are unnecessary, but a
+  period ("ICP34.5" vs "ICP 34.5") is not folded; (5) the subjects
+  table's section count was wrong for the second block running — count
+  the tree.
