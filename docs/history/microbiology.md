@@ -1121,3 +1121,71 @@ delta solve after the last replacement.
   file; the notes matcher must strip HTML tags as well as Markdown
   emphasis (a `<sub>` in a stem defeated the match). Floors after landing:
   --min-exercises 14189→14288, --min-replayed 10181→10227.
+
+## Knowledge Check 3 — chapters 13–14 (September 20, 2026)
+
+The third of the five block checks (`docs/subjects/microbiology.md`
+§Knowledge checks records the placement decision and the weight table):
+`knowledge-check-13-14.md`, block 3 "Control and Antimicrobial Drugs", 11
+sections, 33 items (11 multiple choice, 16 textin, 2 sortbins, 4
+selfcheck), weight 17, chapters 15–26 shifted +1 (now 18–29). Run shape,
+all Sonnet unless named, same as blocks 1 and 2: two authors (one per
+chapter, scratch pages at a mirrored content path with `ledger.md` +
+`provenance.json`), a checker per chapter launched as each author
+finished, a parent read of each chapter block and then of the assembled
+page (three rounds), a one-agent reverse-recall sweep over all 33 items, a
+re-check of the twelve replaced items, and a blind solve in a fresh Fable
+subagent reading the masked check beside masked copies of the 11 section
+pages.
+
+- **Checker yield:** 8 defects in 33 — ch13 3 (a BSL-3 item whose
+  two-locking-doors/directional-airflow stem also described BSL-4, since
+  the module chains "In addition to BSL-3 precautions"; an italicized
+  binomial key over three plain category distractors; a selfcheck rubric
+  clause that restated the model answer instead of copying it), ch14 5 (a
+  distractor "polymyxin B" printed nowhere in the module; an
+  antiprotozoan sortbins whose "Antimetabolites" bin merged two table rows
+  and whose pyrimethamine label said "a later enzyme" for the module's "a
+  different enzyme"; a sulfadiazine label printing a bin word; two
+  within-check leaks confirmed — "penicillin" and "tuberculosis" keyed in
+  one item and printed in other items' stems; a griseofulvin textin
+  reverse-recalling the page's own antifungal sortbins).
+- **Parent read** found 12 more across three rounds: *Pseudomonas
+  aeruginosa* as a second answer to what chlorhexidine is poorly effective
+  against (the module's own exception); a "surface-active agents" stem for
+  the key "surfactants" and, in its replacement, a "quaternary nitrogen"
+  stem for the key "quaternary ammonium salts"; a fomites/living-tissue
+  sortbins whose two agent-list labels repeated the page's own
+  disinfectant/antiseptic sortbins; a Waksman stem printing *Streptomyces*
+  and naming two of its own options; an ESBL item whose stem listed three
+  of its four options, and whose first rebuild offered three non-β-lactam
+  classes that were all also correct; a "diphtheria" stem for the key
+  *Corynebacterium diphtheriae* over options mixing a mold and a bare
+  genus with species; an open list cloze ("including oxazolidinones and
+  the ___"); an "Actinobacteria" key that duplicated the page's own
+  "actinomycetes" textin with a synonym; and a sortbins stem left
+  describing labels that had been replaced.
+- **Reverse-recall sweep:** 1 flag in 33, real (a 14.7 virulence-factor-
+  inhibitor key printed with its defining fact in a page selfcheck
+  rubric). The re-check of the twelve replacements then caught 1 more: an
+  X-ray stem grafting "including penicillin" from the next module
+  sentence.
+- **Blind solve:** 29 graded items, 29 agree, 0 alsoDefensible, 0 unsure,
+  on the first pass.
+- **Source finding:** erratum 812 — m58861 (§14.4) files the quinolines
+  under "interfere with nucleic acid synthesis" in its topic sentence and
+  summary, while its own next paragraph, its Common Antiprotozoan Drugs
+  table, and the Glossary say heme detoxification; the page keeps the
+  sentences as printed and the check's sortbins keys the quinolines to
+  heme detoxification.
+- **Lessons:** (1) the parent's read of each chapter block before
+  assembly, then of the assembled page, found more than the checkers (12
+  vs 8) — most of it stems that print the key's own word or exclude their
+  own options, which a checker reading item-by-item against the CNXML
+  passes; (2) a replacement built under time pressure repeats the tells
+  (three of the twelve replacements needed a second replacement), so the
+  re-check of replacements is not optional; (3) a synonym key
+  (Actinobacteria/actinomycetes) is a duplicate of a page item, not a new
+  item; (4) an open list cloze ("including X and the ___") does not stand
+  alone. Floors after landing: --min-exercises 14288→14321,
+  --min-replayed 10227→10243.

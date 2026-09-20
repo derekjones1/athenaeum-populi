@@ -1602,6 +1602,17 @@
       "status": "correct-local-source-defect",
       "errataEntry": 811,
       "rationale": "The Excavata supergroup table (figure OSC_Microbio_05_01_groups1, transcribed on the page from its alt and printed image) lists the Parabasalids' distinguishing features as \"no mitochondria ... basal bodies, kinetoplastids\", and the Excavata paragraph (para fs-id1172101847862) says parabasalids \"have basal bodies and modified mitochondria (kinetoplastids)\". The same module's Protozoan Organelles paragraph defines kinetoplastids as modified mitochondria, so \"no mitochondria\" and \"kinetoplastids\" cannot both describe the group. The book's own m58793 (Section 3.4, para fs-id1172100621869) states that Trichomonas vaginalis, the parabasalid the table names, \"lacks conventional mitochondria\" and \"possesses hydrogenosomes\", and (para fs-id1172100988357) that the kinetoplast is the single branched mitochondrion of certain eukaryotic pathogens — the trypanosomes of the Euglenozoa. The page keeps the table row and the paragraph as printed, with a visible Source note after the table and a footer sentence. Found by the chapter 5 checker of the Chapters 1–6 Knowledge Check run, September 15, 2026; the check's Fornicata item is unaffected (only Fornicata satisfies its Giardia clause)."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/14-antimicrobial-drugs/04-mechanisms-of-other-antimicrobial-drugs.md",
+      "bundle": "microbiology",
+      "moduleId": "m58861",
+      "sourceElementIds": [
+        "fs-id1167659397707"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 812,
+      "rationale": "The Antiprotozoan Drugs topic sentence (para fs-id1167659397707) says \"Two classes of antiprotozoan drugs interfere with nucleic acid synthesis: nitroimidazoles and quinolines\", but the same module's next paragraph says quinolines \"are thought to interfere with heme detoxification\", its Common Antiprotozoan Drugs table lists chloroquine, mepacrine, and mefloquine (quinolines) under \"Inhibit heme detoxification\", and the Glossary (m58950) defines quinolines as interfering with heme detoxification. The page corrects the topic sentence with a visible Source note and a footer sentence; the module summary's looser \"interfere with nucleic acid synthesis or inhibit heme detoxification\" is kept as printed. The Chapters 13–14 Knowledge Check's antiprotozoan sortbins keys the quinolines to heme detoxification. Found by the chapter 14 author of the Chapters 13–14 Knowledge Check run, September 20, 2026."
     }
   ]
 }

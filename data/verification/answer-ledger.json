@@ -419,6 +419,14 @@
     "result": "agrees"
    }
   },
+  "0172fc8cfa01f221": {
+   "verdict": "ok",
+   "note": "KC 3 13.1 § glossary sepsis, m58853",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "017373446e46c357": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -9268,6 +9276,14 @@
   "1cf9c0b888c2a99d": {
    "verdict": "ok"
   },
+  "1cfaa30a028fc692": {
+   "verdict": "ok",
+   "note": "KC 3 14.3 § Inhibitors of Cell Wall Biosynthesis, m58860",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1cfafbc5deba4701": {
    "verdict": "ok",
    "solved": {
@@ -12875,6 +12891,10 @@
     "result": "agrees"
    }
   },
+  "28e40a1ce3bdd181": {
+   "verdict": "ok",
+   "note": "KC 3 13.2 § Desiccation, m58854"
+  },
   "28e62bc4c4711501": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -13749,6 +13769,14 @@
    "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2bf58d029697bd07": {
+   "verdict": "ok",
+   "note": "KC 3 13.1 § Laboratory Biological Safety Levels, m58853",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -15647,6 +15675,14 @@
   "32264ffd82dae0d7": {
    "verdict": "ok"
   },
+  "3229b459964f6b95": {
+   "verdict": "ok",
+   "note": "KC 3 13.3 § Chemical Food Preservatives, m58855",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "322af1260a1aff48": {
    "verdict": "ok",
    "solved": {
@@ -17333,6 +17369,14 @@
   "3796eab2002f4d22": {
    "verdict": "ok"
   },
+  "379710ec2564bdaf": {
+   "verdict": "ok",
+   "note": "KC 3 14.3 § Inhibitor of ATP Synthase, m58860",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3799f2874671ba78": {
    "verdict": "ok",
    "note": "Parent CORRECTED the source here. k = ln(0.5)/10.4 = -0.0666487673615332, which to four decimal places is -0.0666. The CNXML key prints -0.0667, which would imply a half-life of 10.392 h rather than the stated 10.4 h. Recomputed in node; e^(k*10.4)=0.5 confirms. Source defect logged as errata #39."
@@ -18625,6 +18669,14 @@
     "result": "agrees"
    }
   },
+  "3bc30f482ffa1ac3": {
+   "verdict": "ok",
+   "note": "KC 3 14.1 § The First Antimicrobial Drugs, m58858",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3bcf5e2b1144be0c": {
    "verdict": "ok",
    "note": "Locally authored — no source key. Built strictly from the note's own closing sentence: 'Weber's Law states that ... a just-noticeable difference in a stimulus is proportional to the magnitude of the original stimulus.' Disclosed in ledger and footer.",
@@ -19203,6 +19255,14 @@
     "result": "agrees"
    }
   },
+  "3e0c616561a83746": {
+   "verdict": "ok",
+   "note": "KC 3 14.6 § The Kirby-Bauer Disk Diffusion Test (Micro Connection: Antibiograms), m58864",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3e0e6ce9cfcfea26": {
    "verdict": "ok"
   },
@@ -19309,6 +19369,14 @@
   },
   "3e6136fcf15eea8e": {
    "verdict": "ok"
+  },
+  "3e62cd70c6856a02": {
+   "verdict": "ok",
+   "note": "KC 3 14.5 § Multidrug-Resistant Microbes and Cross Resistance (Micro Connection: Factory Farming and Drug Resistance), m58862",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3e64c57ae5256574": {
    "verdict": "ok"
@@ -21039,6 +21107,14 @@
   "4418ed5a6bf695be": {
    "verdict": "ok"
   },
+  "441a6326116293a6": {
+   "verdict": "ok",
+   "note": "KC 3 13.2 § Autoclaves, m58854",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "441ea962ead355ce": {
    "verdict": "ok",
    "note": "Short Answer fs-id1172098395269 (What existing evidence supports the theory that mitochondria are of prokaryotic origin?) — unkeyed; model answer from § Mitochondria."
@@ -21572,6 +21648,14 @@
   },
   "45c380ae32cdc067": {
    "verdict": "ok"
+  },
+  "45c54bba343b59de": {
+   "verdict": "ok",
+   "note": "KC 3 13.4 § New Methods to Overcome Specific Challenges, m58856",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "45cac034527a2b6c": {
    "verdict": "ok"
@@ -25861,6 +25945,14 @@
     "result": "agrees"
    }
   },
+  "54121c0a3002df04": {
+   "verdict": "ok",
+   "note": "KC 3 14.5 § Extended-Spectrum β-Lactamase–Producing Gram-Negative Pathogens, m58862",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5414bf2225a68b6b": {
    "verdict": "ok"
   },
@@ -25934,6 +26026,14 @@
   },
   "548528680c7611d5": {
    "verdict": "ok"
+  },
+  "5487862e17fd09f7": {
+   "verdict": "ok",
+   "note": "KC 3 13.3 § Bisbiguanides, m58855",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5489a23698fbdc2b": {
    "verdict": "ok",
@@ -27239,6 +27339,10 @@
    "verdict": "ok",
    "note": "m66473 critical-thinking solution fs-idp16901840: 'Because lions eat animals that eat plants.' Page rewrites as a complete sentence ('Lions eat animals that eat plants.'), disclosed in the footer Changes clause ('the \"lions\" critical-thinking answer turned into a complete sentence'). Both CHECKS clauses ('lions eat animals', 'animals eat plants') restate it exactly."
   },
+  "58ad2db52fbb9609": {
+   "verdict": "ok",
+   "note": "KC 3 14.7 § Eye on Ethics: The (Free?) Market for New Antimicrobials, m63248"
+  },
   "58ae58271d7681c5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -28038,6 +28142,14 @@
   },
   "5b57fb9b07d948da": {
    "verdict": "ok"
+  },
+  "5b592a680702eecb": {
+   "verdict": "ok",
+   "note": "KC 3 14.7 § opening paragraph, m63248",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5b605a61c9817477": {
    "verdict": "ok"
@@ -32545,6 +32657,14 @@
     "result": "agrees"
    }
   },
+  "6a63fdfc551e1ad1": {
+   "verdict": "ok",
+   "note": "KC 3 14.1 § The First Antimicrobial Drugs, m58858",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6a67736803b6c902": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -35555,6 +35675,14 @@
   "74abc7b2e8082816": {
    "verdict": "ok",
    "note": "multi-sentence cAMP/chloride-channel/osmotic mechanism, stays selfcheck; stem corrects the source's 'V. cholera' typo to 'V. cholerae'"
+  },
+  "74b13314d0258351": {
+   "verdict": "ok",
+   "note": "KC 3 14.4 § Antihelminthic Drugs, m58861",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "74b50456031a4ead": {
    "verdict": "ok"
@@ -41329,6 +41457,14 @@
    "note": "Glossary textin from definition fs-id1772000 (cis-acting element); prompt paraphrases the meaning, answer is the term.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "875b5175144a721d": {
+   "verdict": "ok",
+   "note": "KC 3 14.4 § Antiprotozoan Drugs (table + body), m58861",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -49398,6 +49534,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp124184832 (what are essential nutrients): model answer is the source solution verbatim; checkpoints decompose its two clauses with no new claims."
   },
+  "a44e14ad3103224b": {
+   "verdict": "ok",
+   "note": "KC 3 14.6 § Dilution Tests, m58864",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a450ae402b617758": {
    "verdict": "ok",
    "note": "Right-hand limit of f(x)=9x-11.5 as x->2^+ = 9(2)-11.5 = 18-11.5 = 6.5. Matches source Try It 2 solution exactly."
@@ -51316,6 +51460,14 @@
    "verdict": "ok",
    "note": "lim_{x->1}(10-10x^2)/(x^2-3x+2) = -10(1+x)/(x-2) at x=1 = 20 exactly; node-sampled and algebraically simplified; matches the printed solution for fs-id1165137770148 (source exercise 35, printed 20.00)."
   },
+  "aa194283b88a5fde": {
+   "verdict": "ok",
+   "note": "KC 3 14.2 § Drug Interactions (Eye on Ethics: Resistance Regulation), m58859",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aa26feedb2549d0b": {
    "verdict": "ok",
    "note": "Review Question fs-idm71000702; CNXML solution fs-idm40512357 keys D, the 4th option 'provide energy for muscle movement' — matches.",
@@ -51718,6 +51870,14 @@
     "note": "solver wrote the bare number 11.9, the key is the same value with the percent sign the item's percent form requires; value agrees"
    }
   },
+  "ab36c3ac004b3402": {
+   "verdict": "ok",
+   "note": "KC 3 14.7 § opening paragraph, m63248",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ab36c5f61b3f77eb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -52084,6 +52244,14 @@
   "ac7a8ca02aa85c50": {
    "verdict": "ok",
    "note": "Body Visual Connection selfcheck (m66560 exercise fs-idm112715536); model answer matches the source solution verbatim, checkpoints are its two clauses."
+  },
+  "ac81f555f5fefc36": {
+   "verdict": "ok",
+   "note": "KC 3 14.6 § Dilution Tests (Clinical Focus: Resolution), m58864",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ac831784174da462": {
    "verdict": "ok",
@@ -53972,6 +54140,14 @@
    "verdict": "ok",
    "note": "KC 7 35.2 § body Chemical Synapse (fs-idm6698288), m66621 — parent re-read against the module"
   },
+  "b36fe9a3c94edec5": {
+   "verdict": "ok",
+   "note": "KC 3 14.3 § Inhibitors of Metabolic Pathways, m58860",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b37a070848432f10": {
    "verdict": "ok",
    "note": "Glossary recall, definition fs-idm117464256 (peptidoglycan).",
@@ -54020,6 +54196,14 @@
   },
   "b3aad724b106478c": {
    "verdict": "ok"
+  },
+  "b3b666e034ba8167": {
+   "verdict": "ok",
+   "note": "KC 3 13.4 § New Methods to Overcome Specific Challenges, m58856",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b3ba250306ca87fb": {
    "verdict": "ok",
@@ -54735,6 +54919,14 @@
    "verdict": "ok",
    "note": "Practice (Find zeros). Confirmed f(2)=0 for x^3-8x^2+25x-26 via node; dividing by (x-2) leaves x^2-6x+13 with discriminant 36-52=-16, roots 3+-2i. Matches CNXML solution for fs-id1165132940010 (2, 3+2i, 3-2i)."
   },
+  "b5eeb8c8173b0c1e": {
+   "verdict": "ok",
+   "note": "KC 3 13.2 § Autoclaves, m58854",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b5ef5280a457bfd0": {
    "verdict": "ok"
   },
@@ -55037,6 +55229,14 @@
   "b6da05f21cc2ff4e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b6db47019bfc38a3": {
+   "verdict": "ok",
+   "note": "KC 3 13.1 § Other Methods of Control, Common Protocols for Control of Microbial Growth table, m58853",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -59553,6 +59753,14 @@
     "result": "agrees"
    }
   },
+  "c65c0628b2ca7dd4": {
+   "verdict": "ok",
+   "note": "KC 3 14.1 § The First Antimicrobial Drugs, m58858",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c6642978e499ff93": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -62904,6 +63112,14 @@
   },
   "d193c739bb75c9b4": {
    "verdict": "ok"
+  },
+  "d19470f3c2c7bca4": {
+   "verdict": "ok",
+   "note": "KC 3 14.2 § Dosage and Route of Administration, m58859",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d19f16f9573c1bcf": {
    "verdict": "ok",
@@ -68720,6 +68936,10 @@
     "result": "agrees"
    }
   },
+  "e68ff64d00d1e4c1": {
+   "verdict": "ok",
+   "note": "KC 3 14.2 § Drug Interactions (Eye on Ethics: Resistance Regulation), m58859"
+  },
   "e6910d617292a019": {
    "verdict": "ok",
    "note": "22.5 BNF textin: hint reworded to drop the accept member 'BNF'; answer biological nitrogen fixation per glossary",
@@ -70089,6 +70309,10 @@
     "result": "agrees"
    }
   },
+  "eb1b63769fd08352": {
+   "verdict": "ok",
+   "note": "KC 3 13.4 § New Methods to Overcome Specific Challenges, m58856"
+  },
   "eb2345872e1ae48b": {
    "verdict": "ok"
   },
@@ -70363,6 +70587,14 @@
   },
   "ec21cf270d2a81ba": {
    "verdict": "ok"
+  },
+  "ec285d5d3b9d41e9": {
+   "verdict": "ok",
+   "note": "KC 3 14.4 § Antifungal Drugs, m58861",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ec2debd047855d2c": {
    "verdict": "ok"
@@ -71139,6 +71371,14 @@
   },
   "ee73880288249f45": {
    "verdict": "ok"
+  },
+  "ee7abbcb509b3521": {
+   "verdict": "ok",
+   "note": "KC 3 13.3 § Surfactants, m58855",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ee7edfdac179d9b6": {
    "verdict": "ok"
@@ -73836,6 +74076,14 @@
   },
   "f7a2cad2f5ec8bf8": {
    "verdict": "ok"
+  },
+  "f7a3df053e3ee347": {
+   "verdict": "ok",
+   "note": "KC 3 14.5 § Mechanisms for Drug Resistance (Target Mimicry), m58862",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f7acadcdf3415a19": {
    "verdict": "ok"

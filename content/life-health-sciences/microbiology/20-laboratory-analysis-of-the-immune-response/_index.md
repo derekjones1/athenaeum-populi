@@ -2,7 +2,7 @@
 title: Laboratory Analysis of the Immune Response
 description: How laboratory tests exploit the specificity of antibody-antigen binding to diagnose disease — the production and comparative advantages of polyclonal and monoclonal antibodies, the assays used to detect antigen-antibody complexes and diagnose disease from a patient's serum, direct and indirect agglutination assays including blood typing and cross-matching for transfusion, enzyme immunoassays and ELISAs that use enzyme-linked antibodies to detect and quantify antigens, and fluorescent antibody techniques including flow cytometry and fluorescence-activated cell sorting.
 source_chapter: "20"
-weight: 22
+weight: 23
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_20_00_Chip" kind="photo" alt="Close-up photo of a small, dark, rectangular computer chip, tilted at an angle, set into a lime-green surface etched with thin metallic circuit traces that radiate outward from it in an X-shaped pattern." eager="true" >}}

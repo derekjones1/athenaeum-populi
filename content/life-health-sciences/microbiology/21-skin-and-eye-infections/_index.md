@@ -2,7 +2,7 @@
 title: Skin and Eye Infections
 description: How the skin and eyes resist microbial invasion despite constant exposure to the environment, and what happens when pathogens breach that resistance — the anatomy of the skin and eye and the normal microbiota that colonizes each body site, the bacterial infections responsible for impetigo, cellulitis, necrotizing fasciitis, acne, cutaneous anthrax, and conjunctivitis and keratitis, the viral infections that cause warts, oral herpes, roseola, fifth disease, and viral conjunctivitis and keratitis, the fungal mycoses of the skin including tineas, candidiasis, and sporotrichosis, and the protozoan and helminthic infections Acanthamoeba keratitis and loiasis.
 source_chapter: "21"
-weight: 23
+weight: 24
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_21_00_splash" kind="photo" alt="Two panels. At left, a close-up photo of pale skin dotted with multiple raised, reddened lesions of varying sizes. At right, a photo of a person's forehead and hairline, blond hair swept back, with numerous small red pimples scattered across the skin above the eyebrows." eager="true" >}}

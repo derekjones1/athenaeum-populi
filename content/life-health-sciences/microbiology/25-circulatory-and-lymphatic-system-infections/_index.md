@@ -2,7 +2,7 @@
 title: Circulatory and Lymphatic System Infections
 description: How microbes of the circulatory and lymphatic systems cause disease — the anatomy of the circulatory and lymphatic systems, why they lack normal microbiota, and the general signs and symptoms of circulatory and lymphatic infection, the bacterial infections including bacterial sepsis and septic and toxic shock, toxic shock syndrome and streptococcal toxic shock-like syndrome, puerperal sepsis, infectious arthritis, osteomyelitis, rheumatic fever, bacterial endocarditis and pericarditis, gas gangrene, the zoonotic diseases tularemia, brucellosis, cat-scratch disease, rat-bite fever, and plague, and the vector-borne zoonotic febrile diseases anaplasmosis, ehrlichiosis, epidemic and murine typhus, Rocky Mountain spotted fever, Lyme disease, relapsing fever, and trench fever, the viral infections including infectious mononucleosis and Burkitt lymphoma, cytomegalovirus infections, the arthropod-borne viral diseases yellow fever, dengue fever, and chikungunya fever, Ebola virus disease, hantavirus infections, and human immunodeficiency virus (HIV) and AIDS, and the parasitic infections malaria, toxoplasmosis, babesiosis, Chagas disease, leishmaniasis, and schistosomiasis.
 source_chapter: "25"
-weight: 27
+weight: 28
 ---
 
 {{< mediafigure src="microbiology/OSC_Microbio_25_00_YellowFev" kind="photo" alt="Two panels. At left, a close-up photo of a person's face showing yellowish, jaundiced eyes. At right, a photo of a mosquito with a blood-engorged red abdomen, its proboscis inserted into human skin." eager="true" >}}

@@ -1031,11 +1031,14 @@ root). The Glossary appendix (m58950) supplies a recall item's definition,
 since the modules have no glossary of their own; a term the module bolds
 whose m58950 entry is a known defect is not an anchor.
 
-Blocks 1 and 2 have landed (September 15 and September 19, 2026); blocks
-3–5 remain. Two rules this run added to the close-out: an item may not
+Blocks 1–3 have landed (September 15, 19, and 20, 2026); blocks 4–5
+remain. Two rules the second run added to the close-out: an item may not
 print another item's key anywhere on the same check, in its stem, an
 option, or a rubric; and a cloze may not blank the abbreviation of a name
-the stem itself prints.
+the stem itself prints. The third run added two more: a stem may not
+print any word of its key, including a genus or a defining adjective like
+"quaternary"; and a cloze on a list ("including X and the ___") does not
+stand alone.
 
 ## How a chapter is run
 

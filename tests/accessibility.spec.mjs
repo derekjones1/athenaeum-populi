@@ -91,6 +91,10 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/microbiology/knowledge-check-07-12/',
   },
   {
+    name: 'microbiology block 3 knowledge check (chapters 13–14)',
+    path: '/life-health-sciences/microbiology/knowledge-check-13-14/',
+  },
+  {
     name: '404 page',
     path: '/404.html',
     title: 'Page not found – Athenaeum Populi',

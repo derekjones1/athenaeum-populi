@@ -162,7 +162,11 @@ What is specific to a unit-level check:
   `standard model`, `hosts`, or `survival`. The units 4–6 run's authors
   wrote nine of these in 195 items; every one was replaced. A cloze whose
   blank is the only word that can complete it ("four extraembryonic
-  ________") tests nothing and is replaced too.
+  ________") tests nothing and is replaced too. Neither does a list left
+  open at the tail — "including oxazolidinones and the ________" keyed
+  `linezolid` — since any other member of the module's list also completes
+  the sentence; blank a named term, not the last item of an open list
+  (Microbiology block 3).
 - **The stem may not repeat the key's own word.** "Two leaves connecting
   *opposite* each other" keyed `opposite`, "transport *yolk* nutrients"
   keyed `the yolk sac`, "which named *bacteriophage*" over three options
@@ -178,13 +182,17 @@ What is specific to a unit-level check:
   key and defining fact a section item's `hint=`, distractor, rubric clause,
   or body self-check already prints ("in exactly the same location, or
   locus"; "the type found in more than 80 percent of terrestrial plants").
+  So is a synonym key for the same fact asked in the same direction — an
+  "Actinobacteria" textin is the page's own "actinomycetes" item under a
+  different name for the same answer, not a second question (Microbiology
+  block 3).
   The duplicate-stem lint cannot see any of this, and the per-chapter
   checkers of the eight unit runs missed it at about one item in eleven:
   the September 5, 2026 sweep — one Sonnet checker per unit reading every
   check item beside its section page's Practice block and body self-checks,
   with the parent adjudicating 77 flags down to 55 — replaced 55 of 624
   items. Run that sweep as its own wave, after the module-fidelity
-  checkers and before the blind solve; its bar is the three cases above,
+  checkers and before the blind solve; its bar is the four cases above,
   not a term merely appearing on the page, and not a fact re-asked from a
   different sentence or with a different keyed emphasis. Each replacement
   is built from a different sentence of the module, checked by a second
