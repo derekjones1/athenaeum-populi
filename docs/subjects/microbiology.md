@@ -13,9 +13,12 @@ authoring a microbiology section. This document was written from the
 September 5, 2026 scan of the pinned source and has been revised by every
 chapter run since; a rule tagged *(pilot)* or *(chapter N)* was learned by
 authoring that chapter, and the per-chapter record (dates, counts, errata
-ranges) is in `docs/history/microbiology.md`. All 26 chapters are authored as
-of September 14, 2026 — the book is complete. A correction that is not
-folded back into a rule will be made again.
+ranges) is in `docs/history/microbiology.md`. All 26 chapters were
+authored by September 14, 2026, the five Knowledge Checks by September 20,
+2026, and the completion audit (record in `docs/history/microbiology.md`)
+ran the same day — the book is complete at the standard Biology 2e was
+finished to. A correction that is not folded back into a rule will be made
+again.
 
 ## Source and authority
 

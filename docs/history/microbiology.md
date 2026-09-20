@@ -1375,3 +1375,68 @@ complete.
   period ("ICP34.5" vs "ICP 34.5") is not folded; (5) the subjects
   table's section count was wrong for the second block running — count
   the tree.
+
+## Completion audit record (September 20, 2026)
+
+After the fifth and last Knowledge Check landed (commit 8b98f15), the
+book was declared complete on the strength of one more pass that the
+per-section gates do not perform: a cold random sample read by fresh
+checkers, the way the Knowledge Check audit had already sampled its own
+items. The draw (seed 20260920, stratified by Knowledge Check block) was
+132 Practice and Knowledge Check items and 53 figures from 2,708 items
+and 766 figures on 132 pages, over five Sonnet checkers, one per block,
+briefed to answer each item from the module before opening the page,
+then to check page against CNXML, and to open every sampled image before
+judging its alt and longdesc. Results, after the parent verified every
+flag on the image or the module:
+
+- **Items:** 0 wrong keys, 0 unprinted or also-defensible distractors, 0
+  accept or hint defects, 0 sortbins defects in 132. Two checker
+  "defects" were not: an unkeyed Critical Thinking question turned
+  graded (2.1, the electromagnetic-spectrum question) that the page footer discloses, and a 14.5 summary
+  sentence ("plasmids or transposons that can undergo vertical transfer
+  easily and between microbes through horizontal gene transfer") the
+  checker read as garbled but which is true — plasmids pass to daughter
+  cells vertically and between microbes horizontally.
+- **Rubrics:** checkers in three blocks flagged 15 of the sampled
+  selfchecks whose `===CHECKS===` clauses lightly restate the model
+  answer (a verb form, a dropped connector, a compressed clause) instead
+  of quoting it, all passing the lint's 0.8 word-overlap bar. A corpus
+  measurement (strict normalized substring) found this in 439 of
+  Microbiology's 682 selfchecks and 371 of Biology's 872 — it is the
+  convention both books were written to, not a defect of this book, so
+  the audit records it and changes nothing; whether to tighten the lint
+  to a contiguous-substring bar and rewrite ~810 rubrics across both
+  books (every one re-hashes its ledger record) is a decision for the
+  maintainer, noted as open.
+- **Figures:** 4 alt defects in 53, all fixed the same day — a
+  Legionella-in-amoebae micrograph whose alt repeated the source alt's
+  claim that its 0.5 µm scale bar gives each amoeba's diameter (the
+  printed bar is inconsistent with amoeba size; 22.4, erratum 813,
+  footer disclosure); a nephron drawing whose alt and longdesc said "two
+  nephrons" where one is drawn (23.1, inherited from the source alt,
+  erratum 814, footer disclosure); a chancroid photo whose alt said
+  "gloved fingers" that are bare (23.3, page-introduced); and a
+  cytoskeleton figure whose alt called all three top panels
+  green/red/blue fluorescence micrographs when the third is a gold
+  keratin ring on black (3.4, page-introduced). One flag the checker
+  could not settle at image resolution (the nephron) was confirmed by
+  the parent on the larger render.
+- **Other completion checks:** `npm run source:check -- --bundle
+  microbiology` audits the finished book clean (26/26 chapters, 127/127
+  sections mapped, 480/480 headings located, 2,327 local interactions
+  inventoried). `npm run check:external-links` found nine distinct dead
+  (404) Link to Learning destinations behind openstax.org shortlinks
+  across ten pages; every one had already been handled by its chapter
+  run under the dead-link rule (sentence kept, resource named in plain
+  text, footer disclosure), so the URL survives only in the footer
+  disclosure and nothing was edited; the CDC destinations that answer
+  403 are bot walls and stay; two bare citation URLs (a CDC
+  travel-training page in the chapter 25 landing page, an NINDS fact
+  sheet in 1.3) also answer 403 and stay.
+
+These rates — about 1 alt defect in 13 figures read cold against the
+image, 0 key defects in 132 items, 0 hint or accept defects — are the
+baseline for the next book's sample, in the same range as Biology's own
+audit (1 alt defect in 12, 0 key defects in 174, 1 hint/accept defect in
+90).
