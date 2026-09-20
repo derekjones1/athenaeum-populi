@@ -2767,6 +2767,10 @@
     "result": "agrees"
    }
   },
+  "08ad6541d6319d5c": {
+   "verdict": "ok",
+   "note": "Practice, § Describe endocytosis…, selfcheck. Source Critical Thinking Question fs-id1982720 (m66376, §5.4 Bulk Transport); source solution matches model answer verbatim. Previously left out of the Practice block as a disclosed drop; restored after the September 2026 dropped-exercise-gate run flagged it as a genuine omission rather than a reworded conversion."
+  },
   "08ae3027f03ca9e5": {
    "verdict": "ok",
    "note": "20.1 selfcheck two cross-reactivity reasons (unkeyed SA fs-id1167662604643), model answer assembled from the multi-clone and affinity/avidity sentences only."
@@ -67145,6 +67149,10 @@
     "result": "adjudicated",
     "note": "Key B (food poisoning from a preformed toxin) is the pinned CNXML solution for m58866 fs-id1167584863097 and stands; option C (a dog-bite skin infection) also satisfies the module's own definitions of noncommunicable and zoonotic disease, so the item is logged as erratum 611 and the page footer discloses the ambiguity rather than editing a source item."
    }
+  },
+  "e34f9170f0cc17ad": {
+   "verdict": "ok",
+   "note": "Practice, § Describe the unique anatomical and morphological features of mollusks and annelids, selfcheck. Source Critical Thinking Question fs-idm232789200 (m66397, §28.4 Superphylum Lophotrochozoa: Mollusks and Annelids); source solution matches model answer verbatim. Previously left out of the Practice block as a disclosed drop; restored after the September 2026 dropped-exercise-gate run flagged it as a genuine omission rather than a reworded conversion."
   },
   "e35986a65d74afb9": {
    "verdict": "ok"
