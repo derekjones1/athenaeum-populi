@@ -802,6 +802,23 @@ defects — the key pipeline (source cross-check, checker, orchestrator
 solve) holds; the figure descriptions are where a completion sample earns
 its cost.
 
+**Image-first alt pass (required).** The sample is not the end of the
+figure work. Microbiology's audit projected 1 alt defect in 13 figures;
+a full pass over all 792 (`docs/history/microbiology.md`, "Figure-alt
+pass") confirmed 76, about 1 in 10, in a book whose every figure had
+already been read by an author and a checker. The difference is order:
+both had read the alt first and looked for it in the image, and an alt
+that names a plausible count, colour, or label anchors the reader. So
+after the sample, every `mediafigure` in the book gets one more reading
+by a fresh checker (one per chapter) who opens the image and writes down
+what is drawn — panels, labels, colours, arrows, counts, scale bars —
+BEFORE reading the alt, caption, `longdesc`, or source alt, then compares
+claim by claim; the parent verifies every flag on the image, fixes the
+page, and writes an erratum for each claim inherited from the source alt.
+About a fifth of the defects are inherited; the rest are the page's own,
+and counts, colours, directions, and "labeled" claims are where they
+cluster. Budget roughly 200k Sonnet tokens per chapter.
+
 ## Done checklist (in addition to the core checklist)
 
 - [ ] chapter media vendored, every alt read against the image, `longdesc` on every diagram whose meaning is not in its caption

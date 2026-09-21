@@ -61,7 +61,7 @@ College students living in dorms or communal housing are at increased risk for c
 
 Prophylactic vaccination of first-year college students living in dorms is recommended by the CDC, and insurance companies now cover meningococcal vaccination for students in college dorms. Some colleges have mandated vaccination with meningococcal conjugate vaccine for certain students entering college (shown below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_26_02_teen" kind="photo" alt="A photo of a seated young woman in a yellow top having her upper arm swabbed and injected with a syringe by a clinician in a white coat." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_26_02_teen" kind="photo" alt="A photo of a seated young woman in a yellow top receiving an injection in the upper arm from a syringe held by a clinician in a white coat, who steadies the arm with the other hand." >}}
 To prevent campus outbreaks, some colleges now require students to be vaccinated against meningococcal meningitis. (credit: modification of work by James Gathany, Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 {{< /callout >}}

@@ -45,7 +45,7 @@ Joseph Lister provided early epidemiological evidence leading to good public hea
 (a) Florence Nightingale reported on the data she collected as a nurse in the Crimean War. (b) Nightingale's diagram shows the number of fatalities in soldiers by month of the conflict from various causes. The total number dead in a particular month is equal to the area of the wedge for that month. The colored sections of the wedge represent different causes of death: wounds (pink), preventable infectious diseases (gray), and all other causes (brown).
 {{< /mediafigure >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_16_02_Lister" kind="diagram" alt="A wood-engraved illustration of a Victorian-era surgery: three men in coats stand around a patient lying on a table draped in cloth, one bent over the patient's head and two working near the midsection, while a wheeled stand in the foreground holds a mounted apparatus with two canisters connected by tubing, spraying a fine mist over the surgical site." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_16_02_Lister" kind="diagram" alt="A wood-engraved illustration of a Victorian-era surgery: three men in coats stand around a patient lying on a table draped in cloth, one bent over the patient's head and two working near the midsection, while a four-legged wooden stand in the foreground holds a mounted apparatus with two canisters connected by tubing, spraying a fine mist over the surgical site." >}}
 Joseph Lister initiated the use of a carbolic acid (phenol) during surgeries. This illustration of a surgery shows a pressurized canister of carbolic acid being sprayed over the surgical site.
 {{< /mediafigure >}}
 

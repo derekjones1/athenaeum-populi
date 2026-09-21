@@ -182,6 +182,19 @@ subsection provenance in the ledgers. Read that playbook, not the math edition, 
 The completion audit record (September 5, 2026) moved to
 `docs/history/biology.md`.
 
+**Figure-alt pass: due, not yet run.** Biology's audit measured the same
+figure rate as Microbiology's (1 alt defect in 12 figures read cold),
+and Microbiology's full image-first pass (September 20, 2026;
+`docs/history/microbiology.md`) then confirmed 1 in 10 across every
+figure, a fifth of them inherited from the source alt. Biology's figures
+have never been swept that way, so the same pass is scheduled for
+Biology 2e as its own run — one Sonnet checker per chapter (47 chapters),
+the Microbiology kit (`alt-pass/` packets from the media manifest, the
+image-first checker brief), the parent verifying every flag on the image,
+errata for inherited claims. Expect on the order of 100 confirmed defects
+and about 10M Sonnet tokens. Until it runs, Biology's alts should be read
+as carrying the audit's measured rate.
+
 ## Done checklist (in addition to the core and life-sciences checklists)
 
 - [ ] the cover lists the chapter under its `### Unit N: <title>` heading, in source order

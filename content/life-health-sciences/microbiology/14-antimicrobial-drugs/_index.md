@@ -5,7 +5,7 @@ source_chapter: "14"
 weight: 16
 ---
 
-{{< mediafigure src="microbiology/OSC_Microbio_14_00_Antimicro" kind="photo" alt="Left, a vintage color poster reading 'Penicillin, the new life-saving drug, saves soldiers' lives!' above a painting of a nurse at the bedside of a smiling, bandaged soldier, with the slogan 'Men who might have died will live if you give this job everything you've got.' Right, a photograph of a health worker in a blue gown, face mask, and gloves adjusting an intravenous fluid bag hung on a pole in a ward with bamboo framing." eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_14_00_Antimicro" kind="photo" alt="Left, a vintage color poster reading 'Penicillin, the new life-saving drug, saves soldiers' lives!' above a painting of a smiling soldier sitting up in a hospital bed reading a book, with the slogan 'Men who might have died will live if you give this job everything you've got.' Right, a photograph of a health worker in a blue gown, face mask, and gloves adjusting an intravenous fluid bag hung on a pole in a ward with bamboo framing." eager="true" >}}
 First mass produced in the 1940s, penicillin was instrumental in saving millions of lives during World War II and was considered a wonder drug ("Treatment of War Wounds: A Historical Review." *Clinical Orthopaedics and Related Research* 467 no. 8 (2009):2168–2191). Today, overprescription of antibiotics (especially for childhood illnesses) has contributed to the evolution of drug-resistant pathogens. (credit left: modification of work by Chemical Heritage Foundation; Credit right: DFID / Flickr; CC-BY)
 {{< /mediafigure >}}
 

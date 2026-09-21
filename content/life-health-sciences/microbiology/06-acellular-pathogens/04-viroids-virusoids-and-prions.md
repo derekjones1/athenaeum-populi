@@ -23,7 +23,7 @@ Research attempts to discover the causative agents of previously uninvestigated 
 
 In 1971, Theodor Diener, a pathologist working at the Agriculture Research Service, discovered an acellular particle that he named a viroid, meaning "virus-like." **Viroids** consist only of a short strand of circular RNA capable of self-replication. The first viroid discovered was found to cause potato tuber spindle disease, which causes slower sprouting and various deformities in potato plants (see the photograph below). Like viruses, potato spindle tuber viroids (PSTVs) take control of the host machinery to replicate their RNA genome. Unlike viruses, viroids do not have a protein coat to protect their genetic information.
 
-{{< mediafigure src="microbiology/OSC_Microbio_06_04_PSTV" alt="A photograph of seven deformed potatoes arranged in a circle around a card labeled PSTV, each potato showing lumpy bulges and deep cracks or splits in its brown-and-tan skin." kind="photo" eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_06_04_PSTV" alt="A photograph of seven deformed potatoes arranged in a circle around a card labeled PSTV, each potato covered in lumpy bulges and several split by deep cracks in their brown-and-tan skin." kind="photo" eager="true" >}}
 These potatoes have been infected by the potato spindle tuber viroid (PSTV), which is typically spread when infected knives are used to cut healthy potatoes, which are then planted. (credit: Pamela Roberts, University of Florida Institute of Food and Agricultural Sciences, USDA ARS)
 {{< /mediafigure >}}
 

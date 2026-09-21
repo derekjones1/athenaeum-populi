@@ -3084,6 +3084,10 @@
   "09943bb2012eae2a": {
    "verdict": "ok"
   },
+  "09981764fb73758a": {
+   "verdict": "ok",
+   "note": "re-hashed by the figure-alt pass: the mediafigure alt above it changed ('attached' -> 'sitting on the outside of the cell' so the alt no longer prints the stage name the check asks for); question, model answer, and ===CHECKS=== untouched and re-read against the image (five panels A-E: attachment, penetration, biosynthesis, maturation, lysis)"
+  },
   "09a41cbfa492a7a1": {
    "verdict": "ok"
   },
@@ -5126,6 +5130,14 @@
     "result": "agrees"
    }
   },
+  "0fe2c22676c3f715": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0fe3c81efca54706": {
    "verdict": "ok"
   },
@@ -6559,7 +6571,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -9293,7 +9305,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -10001,7 +10013,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -16949,7 +16961,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -16964,7 +16976,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -18578,14 +18590,6 @@
   },
   "3a3cff9533d7b94d": {
    "verdict": "ok"
-  },
-  "3a3ef78293e9a002": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "3a405bd05f2efd8d": {
    "verdict": "ok",
@@ -20992,10 +20996,6 @@
   "425530e7a55c8d46": {
    "verdict": "ok"
   },
-  "425b7a8c8534ad70": {
-   "verdict": "ok",
-   "note": "converted from Critical Thinking fs-id1168326822762 (bare exercise media, source prints no key); model answer assembled from § The Lytic Cycle's five-stage list, matched panel by panel against the vendored image."
-  },
   "425bdb264c5678c3": {
    "verdict": "ok",
    "note": "KC 2 5.2 § body Tonicity in Living Systems (fs-id1778350), m66374 — parent re-read against the module"
@@ -22213,7 +22213,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -25767,6 +25767,14 @@
     "result": "agrees"
    }
   },
+  "514be872643dce92": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "51542296d212e512": {
    "verdict": "ok",
    "note": "multiplechoice fs-id1791408. Re-derived: options A–C are each directly supported by the section text (ΔG sign, energy consumed/released, both need some activation energy). Option D asserts reaction speed correlates with endergonic/exergonic status, but the section explicitly separates rate (set by activation energy) from spontaneity (set by ΔG sign) and gives rusting iron as a slow *exergonic* reaction — so D is the false statement, matching the CNXML's keyed solution 'D'.",
@@ -26555,7 +26563,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -26685,7 +26693,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -34295,7 +34303,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -35134,7 +35142,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -36443,7 +36451,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -40837,7 +40845,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -43310,7 +43318,7 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "adjudicated",
-    "note": "Key prospective stands: this is the source Matching row \"a comparison of a cohort of individuals through the course of the study\", which the pinned CNXML keys E = prospective (m58872 fs-id1167662480223); analytical is the study class, prospective the design the row describes."
+    "note": "Key stands: the stem is the source's own Review Question ('through the course of the study'), and the module's sentence 'Prospective studies follow individuals and monitor their disease state during the course of the study' names prospective as the design defined by that phrase; 'analytical' is the category the source lists as a distractor, not the answer to what the stem describes. Solver agreed with the key."
    }
   },
   "8b49ff924c292f3d": {
@@ -43467,7 +43475,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -49472,7 +49480,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -59605,7 +59613,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -60050,7 +60058,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -63884,7 +63892,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -64931,7 +64939,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -69862,6 +69870,14 @@
    "verdict": "ok",
    "note": "re-derived vertex (-1,-2) from f(x)=5x^2+10x+3: axis x=-10/10=-1, f(-1)=5-10+3=-2. gpcheck: 5 reachable lattice points on grid -4..2 x -4..19, slack 2."
   },
+  "e5da7f6f11536525": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e5e6bae8584dcdc1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72453,7 +72469,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -75004,14 +75020,6 @@
     "result": "agrees"
    }
   },
-  "f6c5319eafcfb8da": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "f6c8de57d0b7560c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -76360,7 +76368,7 @@
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "orchestrator",
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -76547,14 +76555,6 @@
    "note": "KC 7 36.4 § body Transduction of Sound (fs-idp2042480), m66407 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "fbcea7d3d2829491": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },

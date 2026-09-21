@@ -55,7 +55,7 @@ Some hookworm species, such as *Ancylostoma braziliense* that is commonly found 
 
 The infection is diagnosed using microscopic examination of the stool, allowing for observation of eggs in the feces. Medications such as albendazole, mebendazole, and pyrantel pamoate are used as needed to treat systemic infection. In addition to systemic medication for symptoms associated with cutaneous larva migrans, topical thiabendazole is applied to the affected areas.
 
-{{< mediafigure src="microbiology/OSC_Microbio_24_06_Hookworm" kind="photo" alt="(a) A close-up photo of a pale, curved worm attached to reddish intestinal tissue. (b) A photo of skin with raised, thread-like red tracks characteristic of cutaneous larva migrans. (c) A micrograph of a pale oval egg containing visible internal cells, surrounded by other cells and debris." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_24_06_Hookworm" kind="photo" alt="(a) A close-up photo of two pale, curved worms attached to reddish intestinal tissue. (b) A photo of skin with raised, thread-like red tracks characteristic of cutaneous larva migrans. (c) A micrograph of a pale oval egg containing visible internal cells, surrounded by other cells and debris." >}}
 (a) This animal hookworm, *Ancylostoma caninum*, is attached to the intestinal wall. (b) The tracks of hookworms are visible in this individual with cutaneous larva migrans. (c) This micrograph shows the microscopic egg of a hookworm. (credit a, c: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 

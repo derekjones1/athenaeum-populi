@@ -84,7 +84,7 @@ An antigen's size is another important factor in its antigenic potential. Wherea
 An antigen is a macromolecule that reacts with components of the immune system. A given antigen may contain several motifs that are recognized by immune cells.
 {{< /mediafigure >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_18_02_antbind" alt="A drawing of several gray, blob-shaped antigens, each studded with raised epitope shapes in orange, red, and green. Three differently colored Y-shaped antibodies are shown, each binding only the one epitope shape that matches its own color, across more than one antigen." longdesc="Five antigen blobs are shown, each studded with a mix of orange circle, red triangle, and green rectangle epitope shapes. Three Y-shaped antibodies, each a different color, are drawn among the antigens: each antibody's two arms bind only the one epitope shape that matches its own color, and the same antibody is shown binding that same shape on more than one antigen — illustrating that a given antibody recognizes one epitope wherever it appears, while a single antigen displays several different epitopes at once." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_18_02_antbind" alt="A drawing of several gray, blob-shaped antigens, each studded with raised epitope shapes in orange, red, and green. Five Y-shaped antibodies in three colors are shown, each binding only the one epitope shape that matches its own color, across more than one antigen." longdesc="Six antigen blobs are shown, each studded with a mix of orange circle, red triangle, and green rectangle epitope shapes. Five Y-shaped antibodies in three colors — two pink, two green, one gold — are drawn among the antigens: each antibody's two arms bind only the one epitope shape that matches its own color (pink to red triangles, green to green rectangles, gold to orange circles), and antibodies of one color are shown binding that same shape on more than one antigen — illustrating that a given antibody recognizes one epitope wherever it appears, while a single antigen displays several different epitopes at once." kind="diagram" >}}
 A typical protein antigen has multiple epitopes, shown by the ability of three different antibodies to bind to different epitopes of the same antigen.
 {{< /mediafigure >}}
 
@@ -209,7 +209,7 @@ As described in *Chemical Defenses*, opsonization is the coating of a pathogen w
 
 **Agglutination** or aggregation involves the cross-linking of pathogens by antibodies to create large aggregates (see the drawing below). IgG has two Fab antigen-binding sites, which can bind to two separate pathogen cells, clumping them together. When multiple IgG antibodies are involved, large aggregates can develop; these aggregates are easier for the kidneys and spleen to filter from the blood and easier for phagocytes to ingest for destruction. The pentameric structure of IgM provides ten Fab binding sites per molecule, making it the most efficient antibody for agglutination.
 
-{{< mediafigure src="microbiology/OSC_Microbio_18_04_neutral" alt="Three drawings of neutralization. At left, antibodies bind all around the knobbed surface of a virus. In the middle, two antibodies bind the A subunit of a two-part diphtheria toxin. At right, antibodies coat the surface of an elongated bacterial cell." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_18_04_neutral" alt="Three drawings of neutralization. At left, antibodies bind all around the knobbed surface of a virus. In the middle, two antibodies bind the B subunit of a two-part diphtheria toxin, whose A subunit sits on top. At right, antibodies coat the surface of an elongated bacterial cell." kind="diagram" >}}
 Neutralization involves the binding of specific antibodies to antigens found on bacteria, viruses, and toxins, preventing them from attaching to target cells.
 {{< /mediafigure >}}
 
@@ -217,7 +217,7 @@ Neutralization involves the binding of specific antibodies to antigens found on 
 Antibodies serve as opsonins and inhibit infection by tagging pathogens for destruction by macrophages, dendritic cells, and neutrophils. These phagocytic cells use Fc receptors to bind to IgG-opsonized pathogens and initiate the first step of attachment before phagocytosis.
 {{< /mediafigure >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_18_04_agg" alt="Three bacterial cells, each studded with circle, triangle, and rectangle epitopes, are cross-linked into a cluster by two Y-shaped IgM antibodies, each antibody's arms bound to matching epitopes on two different bacteria." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_18_04_agg" alt="Three bacterial cells, each studded with circle, triangle, and rectangle epitopes, are cross-linked into a cluster by two star-shaped IgM antibodies, each five Y-shaped units radiating from a central hub, with arms bound to matching epitopes on two different bacteria." kind="diagram" >}}
 Antibodies, especially IgM antibodies, agglutinate bacteria by binding to epitopes on two or more bacteria simultaneously. When multiple pathogens and antibodies are present, aggregates form when the binding sites of antibodies bind with separate pathogens.
 {{< /mediafigure >}}
 

@@ -73,7 +73,7 @@ Some pathogens produce extracellular enzymes, or **exoenzymes**, that enable the
 
 *Some Classes of Exoenzymes and Their Targets*
 
-{{< mediafigure src="microbiology/OSC_Microbio_15_03_hyaluronan" alt="(a) Four block-shaped epithelial cells joined edge to edge, each with an oval nucleus, with hyaluronan labeled at a cell-cell junction. (b) The same row of cells with small teal hyaluronidase dots and red bacteria dots breaking open a gap between two of the cells, through which the bacteria pass." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_15_03_hyaluronan" alt="(a) Four block-shaped epithelial cells joined edge to edge, each with an oval nucleus, with hyaluronan labeled at a cell-cell junction. (b) The same row of cells with tiny red hyaluronidase dots and larger teal bacteria spheres breaking open a gap between two of the cells, through which the bacteria pass." kind="diagram" >}}
 (a) Hyaluronan is a polymer found in the layers of epidermis that connect adjacent cells. (b) Hyaluronidase produced by bacteria degrades this adhesive polymer in the extracellular matrix, allowing passage between cells that would otherwise be blocked.
 {{< /mediafigure >}}
 

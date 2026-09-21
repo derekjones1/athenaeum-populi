@@ -258,7 +258,7 @@ is a copy of the information in a gene
 carries an amino acid to the ribosome
 {{< /multiplechoice >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_10_03_RNA_img" alt="A drawing of a ribosome-like structure: a rounded dome sits above a long horizontal strand, with a smaller rounded shape beneath the strand. Three small angular shapes sit inside the dome, each attached to a short segment of the strand and topped by a chain of small circles. Labels read (i), pointing to the three angular shapes inside the dome; (ii), pointing to the strand; and (iii), pointing to the dome and the shape beneath the strand together." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_10_03_RNA_img" alt="A drawing of a ribosome-like structure: a rounded dome sits above a long horizontal strand, with a smaller rounded shape beneath the strand. Three small angular shapes sit inside the dome, each attached to a short segment of the strand; the left one carries a single small circle, the middle one a chain of small circles rising out of the dome, and the right one none. Labels read (i), pointing to the three angular shapes inside the dome; (ii), pointing to the strand; and (iii), pointing to the dome and the shape beneath the strand together." kind="diagram" >}}
 A drawing of a ribosome, with three labeled positions, (i), (ii), and (iii), for the reader to identify.
 {{< /mediafigure >}}
 

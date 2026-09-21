@@ -296,7 +296,7 @@ temperate phage
   {"label": "The phage genome integrates into the bacterial chromosome and becomes part of the host.", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_06_02_stages_img" alt="Five lettered panels, A through E, each a small oval bacterial cell. Panel A shows a bacteriophage attached to the cell surface, with phage DNA inside the phage and host DNA inside the cell. Panel B shows a thin strand of phage DNA now inside the cell alongside the host DNA. Panel C shows loose phage DNA strands and several assembled capsid and tail parts scattered inside the cell. Panel D shows several fully assembled bacteriophages inside the cell. Panel E shows the cell's membrane broken open with assembled bacteriophages emerging from it." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_06_02_stages_img" alt="Five lettered panels, A through E, each a small oval bacterial cell. Panel A shows a bacteriophage sitting on the outside of the cell, with phage DNA inside the phage and host DNA inside the cell. Panel B shows a thin strand of phage DNA now inside the cell alongside the host DNA. Panel C shows loose phage DNA strands and several assembled capsid and tail parts scattered inside the cell. Panel D shows several fully assembled bacteriophages inside the cell. Panel E shows the cell's membrane broken open with assembled bacteriophages emerging from it." kind="diagram" >}}
 Five stages of a bacteriophage infection, drawn without their stage names.
 {{< /mediafigure >}}
 

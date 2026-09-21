@@ -1440,3 +1440,62 @@ image, 0 key defects in 132 items, 0 hint or accept defects — are the
 baseline for the next book's sample, in the same range as Biology's own
 audit (1 alt defect in 12, 0 key defects in 174, 1 hint/accept defect in
 90).
+
+## Figure-alt pass (September 20, 2026)
+
+The audit's figure rate (4 defects in 53) projected about 55 bad alts
+across the book, so every `mediafigure` was re-read the same day, image
+first: 792 figures on 127 pages (26 chapter openers included), one Sonnet
+checker per chapter in waves of six, each briefed to open the image and
+write down what is drawn before reading the alt, caption, `longdesc`, or
+source alt (`alt-pass/checker-brief.md`, derived from the audit's
+figures section with the order made mandatory). The parent opened the
+image for every flag before touching a page.
+
+- **Yield:** 82 flags (74 from checkers, 8 found by the parent while
+  verifying neighbours), 76 confirmed, 6 rejected. That is 1 confirmed
+  defect in 10.4 figures — above the audit's projection of 1 in 14, and
+  with the audit's own four, 80 of 792 (1 in 9.9). Every chapter had at
+  least one; chapter 3 had seven.
+- **Source-inherited:** 16 of the 76 (21%) repeat a claim the OpenStax
+  source alt makes and the image contradicts — errata 815–820, 822,
+  824–832, each with a footer disclosure. Two more errata (821, 823)
+  record source alts the pages had already silently departed from
+  (a complement flow chart narrated as a different diagram; hydrophilic
+  and hydrophobic swapped on the soap molecule). Errata range 815–832.
+- **Page-introduced:** 60, the majority: counts (three trypanosomes not
+  two, four flagella not three, nine gel lanes not ten, six antigens not
+  five), colours (a core drawn all blue called "mixed blue and pink",
+  starch granules "white" that are pale blue), directions and orders
+  (a phosphodiester bond narrated backwards, a nitrogen-cycle arrow
+  relabeled, a Coulter aperture "near the base" that is at the top),
+  mislabels (Pap-smear nuclei called coccobacilli, chitin and glucan
+  arrows swapped, hyaluronidase and bacteria colours reversed, adults
+  and nymphs' hosts swapped on a tick life cycle), "labeled" claims with
+  no such marks (a pump, a "nurse", two bronchi lettered A), two
+  Biology-borrowed table figures with no `longdesc`, and one alt that
+  leaked the stage name the selfcheck beneath it asks for ("attached"
+  for "attachment" — the stem-variant the figure-beside-item lint does
+  not catch).
+- **Rejected (6):** a label list read as an order claim; a table image's
+  alt transcribing the table's own printed words; a 12-hour label placed
+  on the arrow between cells, read consistently; a caption-named enzyme
+  the alt repeats; two under-resolved photos whose claims the image does
+  not contradict.
+- **Cost:** about 5.1M subagent tokens across the 26 checkers
+  (130k–320k each, scaling with figure count), four waves, plus the
+  parent's verification of every flag on the image. No graded item was
+  edited, but three multiple-choice items that name the figure above
+  them (10.3 the ribosome drawing, 16.2 the Lister engraving, 20.5 the
+  flow-cytometry histogram) carry that figure's alt in their ledger hash
+  and re-hashed; a fresh Fable solver answered all three pages blind
+  (51 items, 50 agree, one already-keyed flag adjudicated) and the
+  records were merged; the 6.2 selfcheck beneath the stages figure
+  re-hashed the same way and was re-read and re-recorded. An alt edit
+  above a figure-referencing item is a ledger edit.
+
+The lesson the audit proposed is now measured: reading the alt first and
+looking for it in the image misses about one defect in ten, and an
+image-first pass finds them at a cost well under one chapter's authoring.
+`docs/subjects/life-sciences.md` §"Completion audit" now makes the
+image-first pass part of the completion standard.

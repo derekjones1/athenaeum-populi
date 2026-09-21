@@ -147,7 +147,13 @@ life-sciences playbook: graded when one module artifact fixes the answer,
 ## 5. Figures
 
 For every `mediafigure`: open the vendored image AND the PDF page
-(`$SP/pdf/chNN/`, ranges in the run facts).
+(`$SP/pdf/chNN/`, ranges in the run facts). **Describe the image before
+reading the alt.** Write down, in your report, what is drawn — panels,
+labels, colours, arrows and their direction, counts, scale bars — and only
+then read the alt, caption, and `longdesc` and compare claim by claim. An
+alt read first anchors you to its claims: the book's completion pass found
+1 defect in 10 figures that authors and checkers reading alt-first had
+passed.
 
 - Alt describes what is drawn — counts, colours, orientation, direction
   words, units, 5′/3′ labels read off the artwork; nothing invented, nothing

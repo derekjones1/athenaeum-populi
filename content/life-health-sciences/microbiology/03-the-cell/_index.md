@@ -5,7 +5,7 @@ source_chapter: "3"
 weight: 3
 ---
 
-{{< mediafigure src="microbiology/OSC_Microbio_03_00_splash" kind="photo" alt="Six micrographs of microbes at different scales. (a) A single pear-shaped cell with several long whip-like flagella trailing from it, 2 µm scale bar. (b) A dense tangle of blue-tinted rod-shaped cells, 2 µm scale bar. (c) Rounded golden-brown cells scattered on a pale background, 35 µm scale bar. (d) The edge of a large oval cell packed with smaller round bodies, 40 µm scale bar. (e) Two curved purple ribbon-shaped cells among round pink blood cells, 20 µm scale bar. (f) Long tan spiral cells crossing one another over a purple background." eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_03_00_splash" kind="photo" alt="Six micrographs of microbes at different scales. (a) A single pear-shaped cell with several long whip-like flagella trailing from it, 2 µm scale bar. (b) A dense tangle of blue-tinted rod-shaped cells, 2 µm scale bar. (c) Rounded golden-brown cells scattered on a pale background, 35 µm scale bar. (d) The edge of a large oval cell packed with smaller round bodies, 40 µm scale bar. (e) Three curved purple ribbon-shaped cells among round pink blood cells, 20 µm scale bar. (f) Long tan spiral cells crossing one another over a purple background." eager="true" >}}
 Microorganisms vary visually in their size and shape, as can be observed microscopically; but they also vary in invisible ways, such as in their metabolic capabilities. (credit a, e, f: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by NIAID; credit c: modification of work by CSIRO; credit d: modification of work by “Microscopic World”/YouTube)
 {{< /mediafigure >}}
 
