@@ -115,11 +115,13 @@ What is specific to a unit-level check:
     lists 2–6 clauses of that answer. The rubric is required on this book's
     Knowledge Checks (lint error without it): with no hint and no key, it
     is the only thing that makes the item self-gradable. Each rubric clause
-    must be a contiguous verbatim substring of the model answer, not a
-    paraphrase of it — `verify-section`'s phrase-coverage check does not
-    enforce this and accepts paraphrase, so the author checks it by eye;
-    Microbiology's fifth Knowledge Check (block 5, chapters 21–26) shipped
-    nine paraphrased rubrics to the checkers before the parent caught them.
+    keeps the model answer's content words and states no claim the answer
+    does not; a verbatim substring is preferred, and a compression of one
+    answer sentence (a dropped connector, a joined clause) is acceptable.
+    `verify-section`'s phrase-coverage check enforces the word overlap; the
+    author reads each clause against the answer for drift. Both books were
+    written to this standard (Sep 21 2026 measurement: ~1,700 compressed
+    clauses across both books, none below 76% word overlap, no drift found).
 - **A Knowledge Check stem may not duplicate a section Practice item.**
   The section pages already carry every source exercise, so re-asking one
   verbatim tests recall of the page, not the biology. A fact may be asked

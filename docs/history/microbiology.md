@@ -1408,7 +1408,14 @@ flag on the image or the module:
   the audit records it and changes nothing; whether to tighten the lint
   to a contiguous-substring bar and rewrite ~810 rubrics across both
   books (every one re-hashes its ledger record) is a decision for the
-  maintainer, noted as open.
+  maintainer, noted as open. **Closed Sep 21, 2026:** a clause-level
+  measurement (740 of Biology's 2,889 clauses and 997 of Microbiology's
+  2,266 are not strict substrings; none falls below 76% word overlap with
+  its answer, and a read of the lowest-overlap and a random dozen found
+  no factual drift) showed the compressions are faithful, so the
+  maintainer kept the pages as written and softened the Knowledge Check
+  playbook's "contiguous verbatim substring" sentence to the
+  content-words-no-new-claim standard both books meet. No sweep.
 - **Figures:** 4 alt defects in 53, all fixed the same day — a
   Legionella-in-amoebae micrograph whose alt repeated the source alt's
   claim that its 0.5 µm scale bar gives each amoeba's diameter (the
