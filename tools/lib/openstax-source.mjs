@@ -16,7 +16,9 @@ export { parseFrontmatter };
 // than instructional prose. The math bundles and Biology 2e use the first
 // eight; Microbiology puts its objectives in a `learning-objectives` section
 // (its `<md:abstract/>` is empty — see `parseModuleXml`) and adds four
-// end-matter exercise classes of its own. A class missing here surfaces as a
+// end-matter exercise classes of its own; Anatomy and Physiology 2e adds
+// `interactive-exercise` (Interactive Link Questions) and `references` (a
+// citation list some sections end with). A class missing here surfaces as a
 // `heading-needs-review` on every section of the book, so keep this list the
 // union of every bundle's classes, not the current bundle's.
 const EXCLUDED_CORE_SECTION_CLASSES = new Set([
@@ -33,6 +35,8 @@ const EXCLUDED_CORE_SECTION_CLASSES = new Set([
   'true-false',
   'matching',
   'short-answer',
+  'interactive-exercise',
+  'references',
 ]);
 
 const MATCH_STOPWORDS = new Set([

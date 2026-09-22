@@ -118,6 +118,31 @@
           "authoringStatus": "complete"
         }
       }
+    },
+    "anatomy-physiology": {
+      "repository": "https://github.com/openstax/osbooks-anatomy-physiology",
+      "gitUrl": "https://github.com/openstax/osbooks-anatomy-physiology.git",
+      "branch": "main",
+      "commit": "5ae32b3f4bc24ed003e91dc38bf47dba80751044",
+      "commitDate": "2026-09-08T23:24:50Z",
+      "sourceDir": "sources/openstax/osbooks-anatomy-physiology",
+      "moduleScope": "bundle",
+      "license": {
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "books": {
+        "anatomy-physiology": {
+          "sourceSlug": "anatomy-and-physiology-2e",
+          "collectionId": "col11496",
+          "collectionPath": "collections/anatomy-and-physiology-2e.collection.xml",
+          "contentPath": "content/life-health-sciences/anatomy-physiology",
+          "authoredBaselineCommit": "716383a4c6c16037b14d75a156c65145e75e895e",
+          "authoredBaselineConfidence": "inferred-from-local-pdf-date",
+          "authoringStatus": "in-progress"
+        }
+      }
     }
   }
 }

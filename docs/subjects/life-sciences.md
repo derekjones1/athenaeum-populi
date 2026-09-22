@@ -44,7 +44,7 @@ the next book.
   class. It drops TeX spaces, bolds `no-emphasis` terms as if they were
   defined, and folds figure cross-references to `()`; check the raw CNXML
   for anything that looks odd.
-- **License.** Both pinned repositories say **CC BY-NC-SA 4.0** in their
+- **License.** All three pinned repositories say **CC BY-NC-SA 4.0** in their
   `LICENSE` and collection metadata while openstax.org's catalog lists the
   titles as CC BY 4.0. The pinned source is the authority; the footer, the
   cover's `license:` key, and the JSON-LD follow it, and nobody "fixes"

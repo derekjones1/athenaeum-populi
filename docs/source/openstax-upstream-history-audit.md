@@ -12,10 +12,11 @@
 - `college-algebra-bundle` — [https://github.com/openstax/osbooks-college-algebra-bundle](https://github.com/openstax/osbooks-college-algebra-bundle), review target `789b54099106b071d1d32bfcee454fed72eb4768`
 - `biology-bundle` — [https://github.com/openstax/osbooks-biology-bundle](https://github.com/openstax/osbooks-biology-bundle), review target `63f8b6f8d129dd1582989bb755011e9a6d523471`
 - `microbiology` — [https://github.com/openstax/osbooks-microbiology](https://github.com/openstax/osbooks-microbiology), review target `633850257fbd3ccf6187b9428c55e80b69236382`
+- `anatomy-physiology` — [https://github.com/openstax/osbooks-anatomy-physiology](https://github.com/openstax/osbooks-anatomy-physiology), review target `5ae32b3f4bc24ed003e91dc38bf47dba80751044`
 
 ## Coverage
 
-- Mapped local sections: 609
+- Mapped local sections: 621
 - Sections changed upstream: 40
 - Content-level changes: 32
 - Markup/metadata-only changes: 8
@@ -31,6 +32,7 @@
 - precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864`
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
+- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 12 sections mapped
 
 ## Changed mapped sections
 

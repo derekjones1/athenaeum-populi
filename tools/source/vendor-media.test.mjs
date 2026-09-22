@@ -48,6 +48,10 @@ test('stemOf folds whitespace so the stem survives inside a srcset entry', () =>
   assert.equal(stemOf('media/Figure 28.48ab.png.jpg'), 'Figure_28.48ab.png');
 });
 
+test('stemOf folds a parenthesised suffix to a hyphen so Hugo does not percent-encode the URL', () => {
+  assert.equal(stemOf('media/102_Organ_Systems_of_Body(Page1).jpg'), '102_Organ_Systems_of_Body-Page1');
+});
+
 test('plainXmlText strips tags and decodes entities', () => {
   assert.equal(plainXmlText('<emphasis effect="italics">Homo</emphasis> sapiens &amp; co'), 'Homo sapiens & co');
 });

@@ -12,11 +12,14 @@
   let pagefindPromise;
 
   // Only the slugs `titleCase` cannot reproduce: the three shelves whose
-  // names carry an ampersand. Every other shelf and every book title-cases
-  // from its slug, so a new book needs no entry here — a hardcoded list once
-  // silently stopped covering a book the day it was published.
+  // names carry an ampersand, and a book whose slug drops a word of its
+  // title. Every other shelf and book title-cases from its slug, so a new
+  // book usually needs no entry here — a hardcoded list once silently
+  // stopped covering a book the day it was published (the pagefind-labels
+  // test now checks every book directory against its cover title).
   const labels = {
     'life-health-sciences': 'Life & Health Sciences',
+    'anatomy-physiology': 'Anatomy and Physiology',
     'engineering-computing': 'Engineering & Computing',
     'social-sciences-business': 'Social Sciences & Business',
   };

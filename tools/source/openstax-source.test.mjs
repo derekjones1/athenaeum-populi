@@ -190,10 +190,10 @@ test('every mapped module id is collected for a collection-scoped sparse checkou
 
 test('the source lock pins one upstream bundle per book', () => {
   const lock = loadSourceLock(repositoryRoot);
-  assert.deepEqual(lock.bundleKeys, ['prealgebra-bundle', 'college-algebra-bundle', 'biology-bundle', 'microbiology']);
+  assert.deepEqual(lock.bundleKeys, ['prealgebra-bundle', 'college-algebra-bundle', 'biology-bundle', 'microbiology', 'anatomy-physiology']);
   assert.deepEqual(
     [...lock.books.keys()].sort(),
-    ['biology', 'elementary-algebra', 'intermediate-algebra', 'microbiology', 'precalculus', 'prealgebra'].sort(),
+    ['anatomy-physiology', 'biology', 'elementary-algebra', 'intermediate-algebra', 'microbiology', 'precalculus', 'prealgebra'].sort(),
   );
   for (const [book, config] of lock.books) {
     assert.ok(lock.bundles[config.bundleKey], `${book} resolves to a declared bundle`);
@@ -216,6 +216,14 @@ test('the source lock pins one upstream bundle per book', () => {
   assert.equal(lock.books.get('microbiology').authoringStatus, 'complete');
   assert.equal(lock.books.get('microbiology').contentPath, 'content/life-health-sciences/microbiology');
   assert.equal(lock.bundles.microbiology.moduleScope, 'bundle');
+  // Anatomy and Physiology 2e: also a single-book repository
+  // (`osbooks-anatomy-physiology`), pinned September 22, 2026; chapters 1–2
+  // (twelve sections) were authored the same day, chapter 1 as the pilot,
+  // so the book is `in-progress`.
+  assert.equal(lock.books.get('anatomy-physiology').bundleKey, 'anatomy-physiology');
+  assert.equal(lock.books.get('anatomy-physiology').authoringStatus, 'in-progress');
+  assert.equal(lock.books.get('anatomy-physiology').contentPath, 'content/life-health-sciences/anatomy-physiology');
+  assert.equal(lock.bundles['anatomy-physiology'].moduleScope, 'bundle');
 });
 
 test('loadSourceLock rejects a book missing contentPath, naming the book', () => {
@@ -254,11 +262,11 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 609 local sections exactly once', () => {
+test('committed provenance maps all 621 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 609);
-  assert.equal(result.actualCount, 609);
+  assert.equal(result.expectedCount, 621);
+  assert.equal(result.actualCount, 621);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
@@ -266,6 +274,7 @@ test('committed provenance maps all 609 local sections exactly once', () => {
   assert.equal(counts.precalculus.length, 73);
   assert.equal(counts.biology.length, 208);
   assert.equal(counts.microbiology.length, 127);
+  assert.equal(counts['anatomy-physiology'].length, 12);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -278,6 +287,7 @@ test('committed provenance maps all 609 local sections exactly once', () => {
     biology: 'biology-bundle',
     // a single-book upstream repository: the bundle key is the book key
     microbiology: 'microbiology',
+    'anatomy-physiology': 'anatomy-physiology',
   };
   for (const entry of result.map.sections) {
     assert.equal(entry.bundle, bundleForBook[entry.book], `${entry.localPath} is attributed to its pinned bundle`);
@@ -298,7 +308,37 @@ test('the Precalculus book is mapped complete, every upstream section authored',
   });
   assert.deepEqual(
     Object.keys(result.map.bundles).sort(),
-    ['biology-bundle', 'college-algebra-bundle', 'microbiology', 'prealgebra-bundle'],
+    ['anatomy-physiology', 'biology-bundle', 'college-algebra-bundle', 'microbiology', 'prealgebra-bundle'],
+  );
+});
+
+test('the Anatomy and Physiology book is pinned and in progress, its first two chapters mapped', () => {
+  // Pinned September 22, 2026; chapters 1–2 (twelve sections) were authored
+  // the same day, chapter 1 as the pilot, so the cover lists them under
+  // their unit heading and the map must say so visibly (2/28, 12/169)
+  // rather than omit the book.
+  const result = verifyCommittedSourceMap(repositoryRoot);
+  assert.deepEqual(result.errors, []);
+  assert.deepEqual(result.map.books['anatomy-physiology'], {
+    bundle: 'anatomy-physiology',
+    contentPath: 'content/life-health-sciences/anatomy-physiology',
+    authoringStatus: 'in-progress',
+    upstreamChapters: 28,
+    upstreamSections: 169,
+    localChapters: 2,
+    mappedSections: 12,
+    units: [
+      { index: 1, title: 'Levels of Organization', chapters: [1, 2, 3, 4] },
+      { index: 2, title: 'Support and Movement', chapters: [5, 6, 7, 8, 9, 10, 11] },
+      { index: 3, title: 'Regulation, Integration, and Control', chapters: [12, 13, 14, 15, 16, 17] },
+      { index: 4, title: 'Fluids and Transport', chapters: [18, 19, 20, 21] },
+      { index: 5, title: 'Energy, Maintenance, and Environmental Exchange', chapters: [22, 23, 24, 25, 26] },
+      { index: 6, title: 'Human Development and the Continuity of Life', chapters: [27, 28] },
+    ],
+  });
+  assert.equal(
+    formatBookSummaryLine('anatomy-physiology', result.map.books['anatomy-physiology']),
+    'anatomy-physiology: in-progress — 2/28 chapters, 12/169 sections mapped',
   );
 });
 

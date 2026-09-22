@@ -62,6 +62,18 @@ record. No Biology chapter is outstanding.
 | Microbiology | 24-digestive-system-infections | 6 | done Sep 14 2026 (in the authoring run) | 735–754 (743 the accepted Treponema vincentii spelling; no claim corrections); Typhoid Mary case count reviewed and not errata |
 | Microbiology | 25-circulatory-and-lymphatic-system-infections | 4 | done Sep 14 2026 (in the authoring run) | errata 755–775; three claim corrections accepted this run: 25.2's rat-bite fever causative genus (766, and 767 for the source exercise option), 25.2's tick body regions (765), and 25.3's HTLV/HIV conflation (768), all adjudicated by the parent; two suspicions reviewed and not errata |
 | Microbiology | 26-nervous-system-infections | 4 + landing | done Sep 14 2026 (in the authoring run) | 4 findings: 3 claim corrections accepted this run — 26.1's arachnoid mater/CSF Source note, 26.2's neonatal meningitis 3-months Source note, and 26.2's Listeria 45 °C Source note — all adjudicated by the parent; 1 suspicion reviewed and not an erratum: 26.4's neurocysticercosis source key D stands |
+| Anatomy and Physiology | 01-an-introduction-to-the-human-body/01-overview-of-anatomy-and-physiology (m45983) | 1 | done Sep 22 2026 (in the authoring run) | none |
+| Anatomy and Physiology | 01-an-introduction-to-the-human-body/02-structural-organization-of-the-human-body (m45985) | 1 | done Sep 22 2026 (in the authoring run) | none |
+| Anatomy and Physiology | 01-an-introduction-to-the-human-body/03-functions-of-human-life (m45986) | 1 | done Sep 22 2026 (in the authoring run) | none |
+| Anatomy and Physiology | 01-an-introduction-to-the-human-body/04-requirements-for-human-life (m45988) | 1 | done Sep 22 2026 (in the authoring run) | 857 |
+| Anatomy and Physiology | 01-an-introduction-to-the-human-body/05-homeostasis (m45989) | 1 | done Sep 22 2026 (in the authoring run) | 858 |
+| Anatomy and Physiology | 01-an-introduction-to-the-human-body/06-anatomical-terminology (m45990) | 1 | done Sep 22 2026 (in the authoring run) | none |
+| Anatomy and Physiology | 01-an-introduction-to-the-human-body/07-medical-imaging (m45991) | 1 | done Sep 22 2026 (in the authoring run) | 859 |
+| Anatomy and Physiology | 02-the-chemical-level-of-organization/01-elements-and-atoms-the-building-blocks-of-matter (m45998) | 2 | done Sep 22 2026 (in the authoring run) | 877 |
+| Anatomy and Physiology | 02-the-chemical-level-of-organization/02-chemical-bonds (m46000) | 2 | done Sep 22 2026 (in the authoring run) | none |
+| Anatomy and Physiology | 02-the-chemical-level-of-organization/03-chemical-reactions (m46004) | 2 | done Sep 22 2026 (in the authoring run) | none |
+| Anatomy and Physiology | 02-the-chemical-level-of-organization/04-inorganic-compounds-essential-to-human-functioning (m46006) | 2 | done Sep 22 2026 (in the authoring run) | none |
+| Anatomy and Physiology | 02-the-chemical-level-of-organization/05-organic-compounds-essential-to-human-functioning (m46008) | 2 | done Sep 22 2026 (in the authoring run) | none |
 
 Knowledge-check pages (`knowledge-check-*.md`) carry no source prose and are
 outside this pass; their items are covered by the KC audit.

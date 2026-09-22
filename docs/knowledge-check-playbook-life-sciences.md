@@ -6,7 +6,8 @@ have no hints.**
 
 Read and follow `docs/authoring-playbook.md` and
 `docs/subjects/life-sciences.md` first, then the book's own delta file
-(`docs/subjects/biology.md`, `docs/subjects/microbiology.md`). The core's
+(`docs/subjects/biology.md`, `docs/subjects/microbiology.md`,
+`docs/subjects/anatomy-physiology.md`). The core's
 source-fidelity, component, verification, and handoff rules all apply
 here, and so do the life-sciences playbook's component rules
 (`textin` shape and accept lists, multiple-choice distractor discipline,

@@ -253,7 +253,7 @@ test('the life-sciences subject playbook holds the shared rules the book files p
   // its source and its deltas. The rules with lint surface must be stated
   // in the shared file, not in one book's.
   const lifeSciences = read('docs/subjects/life-sciences.md');
-  for (const book of ['life-health-sciences/biology', 'life-health-sciences/microbiology']) {
+  for (const book of ['life-health-sciences/biology', 'life-health-sciences/microbiology', 'life-health-sciences/anatomy-physiology']) {
     const floor = BOOK_RULES[book].practice;
     const stated = lifeSciences.match(/floor is (\d+) exercises per objective group and (\d+) per section/);
     assert.ok(stated, 'docs/subjects/life-sciences.md must state the practice floor in digits');
@@ -272,7 +272,7 @@ test('the life-sciences subject playbook holds the shared rules the book files p
   assert.match(lifeSciences, /knowledge-check-playbook-life-sciences\.md/, 'the KC playbook pointer');
   // Every book file and the core must point at the shared file, and no
   // pointer may still name biology.md as the life-sciences baseline.
-  for (const name of ['docs/subjects/biology.md', 'docs/subjects/microbiology.md', 'docs/authoring-playbook.md', 'docs/knowledge-check-playbook-life-sciences.md', 'AGENTS.md', 'README.md', 'CLAUDE.md']) {
+  for (const name of ['docs/subjects/biology.md', 'docs/subjects/microbiology.md', 'docs/subjects/anatomy-physiology.md', 'docs/authoring-playbook.md', 'docs/knowledge-check-playbook-life-sciences.md', 'AGENTS.md', 'README.md', 'CLAUDE.md']) {
     assert.match(read(name), /docs\/subjects\/life-sciences\.md|subjects\/life-sciences\.md|`life-sciences\.md`/, `${name} points at the life-sciences playbook`);
   }
   assert.doesNotMatch(read('docs/subjects/microbiology.md'), /biology\.md` is the life-sciences\s+baseline/, 'microbiology no longer inherits from biology.md');
@@ -313,6 +313,29 @@ test('the microbiology subject playbook states its lint-backed rules and its ans
   assert.match(micro, /\| 21–26 \| 25–30 \| `knowledge-check-21-26\.md` \| 31 \|/);
   const kcLife = read('docs/knowledge-check-playbook-life-sciences.md');
   assert.match(kcLife, /A flat book \(no `units` list\) uses blocks instead of units/);
+});
+
+test('the anatomy-physiology subject playbook states its lint-backed rules and what it inherits', () => {
+  // Written from the September 22, 2026 scan, before any section was
+  // authored. The floor must be stated in digits (it is lint-enforced), the
+  // file must name the source shape the scan found (keyed sets, a per-module
+  // glossary, six units), and the two decisions the scan left open must be
+  // recorded as decided, with the rule stated.
+  const ap = read('docs/subjects/anatomy-physiology.md');
+  const floor = BOOK_RULES['life-health-sciences/anatomy-physiology'].practice;
+  const stated = ap.match(/\*\*(\d+) exercises per objective group and (\d+) per section/);
+  assert.ok(stated, 'docs/subjects/anatomy-physiology.md must state the practice floor in digits');
+  assert.equal(Number(stated[1]), floor.perObjective);
+  assert.equal(Number(stated[2]), floor.perSection);
+  assert.equal(floor.distinctItems, true, 'anatomy-physiology is opted in to distinctItems');
+  assert.match(ap, /`distinctItems`/, 'names the BOOK_RULES flag');
+  assert.match(ap, /source:media -- --book anatomy-physiology/);
+  assert.match(ap, /every exercise carries a `<solution>`/i, 'states that the source keys everything');
+  assert.match(ap, /six units/i, 'states the unit structure');
+  assert.match(ap, /Interactive Link Questions/, 'names the item type Biology 2e does not have');
+  assert.doesNotMatch(ap, /\*\*Not decided/, 'no decision is left open');
+  assert.match(ap, /only when the module text also\s+fixes the answer/, 'the Interactive Link Questions rule');
+  assert.match(ap, /`## References` list immediately after `## Summary`/, 'the References rule');
 });
 
 test('the OpenStax workflow doc documents every pinned bundle', () => {

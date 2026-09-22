@@ -30,6 +30,13 @@ reviewed commit. Every book belongs to exactly one bundle.
   (`moduleScope: "bundle"`, 159 modules: a preface, 26 chapter
   introductions, 127 numbered sections, and five appendices including the
   book-wide glossary).
+- [`openstax/osbooks-anatomy-physiology`](https://github.com/openstax/osbooks-anatomy-physiology)
+  — Anatomy and Physiology 2e. Also a single-book repository, so its bundle
+  key is plain `anatomy-physiology` and the whole `modules/` tree is
+  checked out (`moduleScope: "bundle"`, 198 modules: a preface, 28 chapter
+  introductions, and 169 numbered sections; no appendices). Pinned
+  September 22, 2026 and `in-progress` — chapter 1 (seven sections)
+  authored the same day, as the pilot.
 
 Books carry an `authoringStatus`. `complete` means every upstream numbered
 section is authored locally and chapter-by-chapter parity is enforced;
@@ -40,7 +47,10 @@ printed it as, e.g., `45/47 chapters, 201/208 sections mapped` — visibly, not
 silently — until its last chapter landed; it is `complete` now. Microbiology
 was `in-progress` the same way, printing as, e.g., `25/26 chapters, 123/127
 sections mapped`; it is `complete` now, its last chapter (26) authored
-September 14, 2026.
+September 14, 2026. Anatomy and Physiology 2e is `in-progress`: its cover
+lists chapters 1–2 under their unit heading, the remaining 26 chapters on
+"Planned contents", and `verify-map` prints
+`2/28 chapters, 12/169 sections mapped`.
 
 Every book's lock entry also carries a `contentPath` (for example
 `content/math/precalculus`, `content/life-health-sciences/biology`): the
@@ -106,7 +116,8 @@ metadata `<md:abstract>` (the math bundles, Biology 2e) or, when that element
 is empty, in a leading `<section class="learning-objectives">` (Microbiology),
 and it excludes every end-matter section class any pinned bundle uses
 (`summary`, `multiple-choice`, `fill-in-the-blank`, `true-false`, `matching`,
-`short-answer`, `critical-thinking`, …) from the core-heading comparison. A
+`short-answer`, `critical-thinking`, `interactive-exercise`, `references`, …)
+from the core-heading comparison. A
 new bundle whose modules use a class not in that list shows up as
 `heading-needs-review` on every section; add the class to
 `EXCLUDED_CORE_SECTION_CLASSES` in `tools/lib/openstax-source.mjs` rather
@@ -142,7 +153,7 @@ not a publishing instruction.
 - `data/openstax/source-lock.json` (schema 2) records each bundle's
   official repository, current reviewed commit, module scope, and license,
   plus every book's collection, inferred PDF-era commit, and authoring status.
-- `data/openstax/source-map.json` (schema 2) connects all 609 authored
+- `data/openstax/source-map.json` (schema 2) connects all 621 authored
   local section paths to stable OpenStax module IDs and module SHA-256
   fingerprints, attributes each section to its bundle, and records per-book
   chapter and section coverage against the upstream collection.
@@ -208,6 +219,31 @@ mapped`. Its subject playbook is `docs/subjects/microbiology.md`;
 the collection is flat (no units), so the map records no `units` key for
 it. The chapter-by-chapter authoring log (September 5–8, 2026; chapter 8 landed September 7 and chapters 9–12 on September 8) moved to
 `docs/history/openstax-source-workflow.md`.
+
+## Anatomy and Physiology 2e
+
+OpenStax Anatomy and Physiology 2e was pinned on September 22, 2026 at
+`5ae32b3f4bc24ed003e91dc38bf47dba80751044` (the upstream head of that day,
+"errata 29985", September 8, 2026). Unlike Microbiology, the pin is
+*newer* than the local PDF: `sources/anatomy-and-physiology-2e_-_WEB.pdf`
+was generated September 2, 2026, and upstream landed fifteen errata commits
+on September 8 touching 19 modules (16 changed lines — real corrections,
+listed in `docs/subjects/anatomy-physiology.md`). The
+`authoredBaselineCommit` is therefore the last commit before the PDF,
+`716383a4c6c16037b14d75a156c65145e75e895e` (June 12, 2026), confidence
+`inferred-from-local-pdf-date`, so `npm run source:history -- --bundle
+anatomy-physiology` will show, section by section as sections are mapped,
+exactly what the PDF lacks. The book is
+`in-progress`: `content/life-health-sciences/anatomy-physiology/_index.md`
+lists chapters 1–2 — chapter 1 authored September 22, 2026 as the pilot,
+chapter 2 the same day in the run right after it — under its
+`### Unit 1: Levels of Organization` heading, the remaining 26 chapters on
+"Planned contents", grouped by the source's six units, and `verify-map`
+prints `2/28 chapters, 12/169 sections mapped` with the six-unit `units`
+list recorded in the map. Its subject playbook is
+`docs/subjects/anatomy-physiology.md`. The parser's end-matter list gained
+`interactive-exercise` (Interactive Link Questions) and `references` for
+this book.
 
 ## Precalculus 2e
 

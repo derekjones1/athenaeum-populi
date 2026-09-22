@@ -110,12 +110,17 @@ export function kindOf(source) {
   return /\.jpe?g$/i.test(source) ? 'photo' : 'diagram';
 }
 
-/** The manifest key and on-disk file prefix. Drops the extension and folds
- * whitespace to `_`: m66400 references `media/Figure 28.48ab.png.jpg`, and a
- * space in the stem would split the `srcset` entry (`Figure 28.48ab.png-800.webp
- * 800w` reads as two candidates) — the stem still traces to its source file. */
+/** The manifest key and on-disk file prefix. Drops the extension, folds
+ * whitespace to `_`, and folds a parenthesised suffix to a hyphen: m66400
+ * references `media/Figure 28.48ab.png.jpg`, and a space in the stem would
+ * split the `srcset` entry (`Figure 28.48ab.png-800.webp 800w` reads as two
+ * candidates); Anatomy and Physiology's m45985 references
+ * `102_Organ_Systems_of_Body(Page1).jpg`, and Hugo percent-encodes the
+ * parentheses in the built URL (`%28Page1%29`) so the build audit cannot
+ * match the variant file to the manifest. `…-Page1` still traces to its
+ * source file. */
 export function stemOf(source) {
-  return path.basename(source).replace(/\.[^.]+$/, '').replace(/\s+/g, '_');
+  return path.basename(source).replace(/\.[^.]+$/, '').replace(/\s+/g, '_').replace(/\(([^)]*)\)/g, '-$1');
 }
 
 /** Key every referenced image by a stem unique within the run. Two different

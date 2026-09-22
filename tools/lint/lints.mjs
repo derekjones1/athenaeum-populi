@@ -191,6 +191,13 @@ export const BOOK_RULES = Object.freeze({
     practice: { perObjective: 3, perSection: 8, distinctItems: true },
     knowledgeCheck: { perSection: 3, autoGraded: 1 },
   },
+  // Anatomy and Physiology 2e: keyed end-of-section sets and a per-module
+  // glossary like Biology 2e, so the same floor; see
+  // docs/subjects/anatomy-physiology.md.
+  'life-health-sciences/anatomy-physiology': {
+    practice: { perObjective: 3, perSection: 8, distinctItems: true },
+    knowledgeCheck: { perSection: 3, autoGraded: 1 },
+  },
 });
 
 /** The profile for one book, with an override merged key by key over the table. */

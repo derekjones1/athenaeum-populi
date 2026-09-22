@@ -22,7 +22,14 @@ Biology 2e (unkeyed prose exercises, no per-module glossary, new box and
 item types). A Microbiology chapter is run from
 `docs/briefs/microbiology/run.md` (the parent's recipe) with the agent
 briefs beside it — the briefs are versioned there, not re-derived per
-session. Dated narrative these playbooks used to carry — retrospectives,
+session. Anatomy and Physiology 2e is pinned and `in-progress` (chapters 1–2,
+twelve sections, authored September 22, 2026, chapter 1 as the pilot; 28
+chapters in six units, 169 sections total); its rules are in
+`docs/subjects/anatomy-physiology.md`, which records the
+scan, its two book-specific rules (Interactive Link Questions, References),
+and that its pin postdates its PDF; a chapter is run from
+`docs/briefs/anatomy-physiology/run.md` with the briefs beside it.
+Dated narrative these playbooks used to carry — retrospectives,
 per-chapter authoring logs, closed-programme records — lives in
 `docs/history/` now, one file per playbook it was cut from; the playbooks
 themselves keep only what is still operative.
@@ -47,9 +54,12 @@ themselves keep only what is still operative.
   changes into `content/` automatically.
 - The lock pins one commit per upstream bundle: `prealgebra-bundle` for the
   three algebra books, `college-algebra-bundle` for Precalculus 2e,
-  `biology-bundle` for Biology 2e, and `microbiology` for OpenStax
+  `biology-bundle` for Biology 2e, `microbiology` for OpenStax
   Microbiology (a single-book repository, `osbooks-microbiology`, so the
-  bundle key has no `-bundle` suffix). All six books carry
+  bundle key has no `-bundle` suffix), and `anatomy-physiology` for
+  Anatomy and Physiology 2e (likewise single-book; `in-progress` (chapters
+  1–2, twelve sections, authored September 22, 2026, chapter 1 as the
+  pilot), pinned September 22, 2026). The other six books carry
   `authoringStatus: complete` (the four math books since August 29, 2026;
   Biology 2e since September 3, 2026; Microbiology since September 14, 2026),
   so every upstream numbered section
@@ -173,7 +183,7 @@ wrong — do not exempt the page. When authoring moves any published floor
 (`--min-verified`, `--min-replayed`, `--min-exercises`), end the session with
 `npm run baseline:update` and commit the rewrite together with the content.
 
-## The answer ledger
+## The answer ledgerFor 1
 
 `verify:answers` re-derives an answer only where it can mechanically recognize
 what the prompt asks; most of what it skips is skipped as "prompt class not

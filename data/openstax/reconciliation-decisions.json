@@ -4,7 +4,8 @@
     "prealgebra-bundle": "38cae454e644abf9f0a623e876994553881597c9",
     "college-algebra-bundle": "789b54099106b071d1d32bfcee454fed72eb4768",
     "biology-bundle": "63f8b6f8d129dd1582989bb755011e9a6d523471",
-    "microbiology": "633850257fbd3ccf6187b9428c55e80b69236382"
+    "microbiology": "633850257fbd3ccf6187b9428c55e80b69236382",
+    "anatomy-physiology": "5ae32b3f4bc24ed003e91dc38bf47dba80751044"
   },
   "metadataDecisions": [
     {
@@ -1613,6 +1614,51 @@
       "status": "correct-local-source-defect",
       "errataEntry": 812,
       "rationale": "The Antiprotozoan Drugs topic sentence (para fs-id1167659397707) says \"Two classes of antiprotozoan drugs interfere with nucleic acid synthesis: nitroimidazoles and quinolines\", but the same module's next paragraph says quinolines \"are thought to interfere with heme detoxification\", its Common Antiprotozoan Drugs table lists chloroquine, mepacrine, and mefloquine (quinolines) under \"Inhibit heme detoxification\", and the Glossary (m58950) defines quinolines as interfering with heme detoxification. The page corrects the topic sentence with a visible Source note and a footer sentence; the module summary's looser \"interfere with nucleic acid synthesis or inhibit heme detoxification\" is kept as printed. The Chapters 13–14 Knowledge Check's antiprotozoan sortbins keys the quinolines to heme detoxification. Found by the chapter 14 author of the Chapters 13–14 Knowledge Check run, September 20, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/01-an-introduction-to-the-human-body/04-requirements-for-human-life.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m45988",
+      "sourceElementIds": [
+        "fs-id1250210"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 857,
+      "rationale": "The Requirements for Human Life module (para fs-id1250210) says water \"makes up about 70 percent of an adult's body mass\", but the book's own Body Fluids and Fluid Compartments module (m46411, para fs-id1405054) says body water ranges \"from about 75 percent of body mass in infants to about 50–60 percent in adults, to as low as 45 percent in old age\". The page corrects the sentence to the adult range with a visible Source note and a footer sentence. Found by the chapter 1 prose claim pass, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/01-an-introduction-to-the-human-body/05-homeostasis.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m45989",
+      "sourceElementIds": [
+        "fs-id1291623"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 858,
+      "rationale": "The Homeostasis module (para fs-id1291623) says the drop in blood glucose \"is detected by pancreatic alpha cells, and insulin release stops\"; the book's own endocrine and metabolism modules (m46489 The Endocrine Pancreas; m46466 Metabolic States of the Body, para fs-id2041852) have insulin fall as the beta cells respond to falling glucose and the alpha cells release glucagon. The page corrects the mechanism with a visible Source note and a footer sentence. Found by the chapter 1 prose claim pass, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/01-an-introduction-to-the-human-body/07-medical-imaging.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m45991",
+      "sourceElementIds": [
+        "fs-id2614479",
+        "fs-id1689506"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 859,
+      "rationale": "The Medical Imaging module's body (para fs-id2614479) dates da Vinci's and Vesalius's anatomical drawings to \"the fourteenth and fifteenth centuries\" while its own Chapter Review (para fs-id1689506) says \"the fifteenth and sixteenth centuries\" — the range that matches Vesalius's 1543 De humani corporis fabrica and da Vinci's drawings of c. 1489–1513. The page corrects the body to the summary's range with a visible Source note and a footer sentence. Found by the chapter 1 prose claim pass, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/02-the-chemical-level-of-organization/01-elements-and-atoms-the-building-blocks-of-matter.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m45998",
+      "sourceElementIds": [
+        "fs-id1484653"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 877,
+      "rationale": "The Atomic Structure and Energy module (para fs-id1484653) says the number of electrons that \"'spin' around the nucleus at close to the speed of light equals the number of protons\", but for the light elements this section actually illustrates (H, He, C, Na, Fe), Bohr-model ground-state electron speeds are a small fraction of light speed (v1 = alpha*c, about 0.7% of c for hydrogen); near-light speeds arise only for inner-shell electrons of very heavy elements (Z >~ 60-79), not the light elements this paragraph uses as its own example (helium, two sentences later). The page drops \"at close to the speed of light\" from the sentence with a visible Source note and a footer sentence. Found by the chapter 2 prose claim pass, confirmed by the chapter 2.1 checker, September 22, 2026."
     }
   ]
 }

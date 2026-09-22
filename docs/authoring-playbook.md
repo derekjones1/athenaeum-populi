@@ -19,7 +19,9 @@ subject has its own playbook under `docs/subjects/` — currently
 [`life-sciences.md`](subjects/life-sciences.md) for every book on the
 life-health-sciences shelf, under which each book has a short delta file —
 [`biology.md`](subjects/biology.md) for Biology 2e and
-[`microbiology.md`](subjects/microbiology.md) for OpenStax Microbiology —
+[`microbiology.md`](subjects/microbiology.md) for OpenStax Microbiology, and
+[`anatomy-physiology.md`](subjects/anatomy-physiology.md) for Anatomy and
+Physiology 2e —
 recording its source, its CNXML-to-page mappings, and where it differs from
 the baseline. A subject playbook adds notation, media, and exercise-type
 rules on top of this core, and wins where it differs; a book file wins over
