@@ -5,7 +5,7 @@ source_chapter: "7"
 weight: 8
 ---
 
-{{< mediafigure src="biology/Figure_07_00_01-aeea" alt="A geothermal power plant's long building sits on a green, tree-covered hillside, with thick white steam billowing from cooling towers on its roof and drifting across the slope behind it." kind="photo" eager="true" >}}
+{{< mediafigure src="biology/Figure_07_00_01-aeea" alt="A geothermal power plant's long building sits on a dry, brown hillside dotted with clusters of dark green trees, with thick white steam billowing from cooling towers on its roof and drifting across the slope behind it." kind="photo" eager="true" >}}
 This geothermal energy plant transforms thermal energy from deep in the
 ground into electrical energy, which can be easily used. (credit:
 modification of work by the U.S. Department of Defense)

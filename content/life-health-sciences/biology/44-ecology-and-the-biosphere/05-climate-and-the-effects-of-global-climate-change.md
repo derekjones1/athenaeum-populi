@@ -47,7 +47,7 @@ Since scientists cannot go back in time to directly measure climatic variables, 
 
 Antarctic ice cores are a key example of such evidence for climate change. These ice cores are samples of *polar ice* obtained by means of drills that reach thousands of meters into ice sheets or high mountain glaciers. Viewing the ice cores is like traveling backwards through time; the deeper the sample, the earlier the time period. Trapped within the ice are air bubbles and other biological evidence that can reveal temperature and carbon dioxide data. Antarctic ice cores have been collected and analyzed to indirectly estimate the temperature of the Earth over the past 400,000 years, shown below.
 
-{{< mediafigure src="biology/Figure_B44_26" kind="photo" alt="Panel (a) shows two researchers in cold-weather gear operating a tall metal ice-core drilling rig planted in a snow pit, with equipment cases at its base. Panel (b) shows a single long, narrow ice-core sample lying on its side, its surface showing fine horizontal banding." >}}
+{{< mediafigure src="biology/Figure_B44_26" kind="photo" alt="Panel (a) shows two researchers in cold-weather gear operating a tall metal ice-core drilling rig planted in a snow pit, with equipment cases at its base. Panel (b) shows a single long, narrow ice-core sample standing upright, its surface showing fine horizontal banding." >}}
 Scientists drill for ice cores in polar regions. The ice contains air bubbles and biological substances that provide important information for researchers. (credit: a: Helle Astrid Kjær; b: National Ice Core Laboratory, USGS)
 {{< /mediafigure >}}
 

@@ -39,6 +39,75 @@ the image or the module:
 The rates this audit measured are the baseline's planning numbers for the
 next book's sample.
 
+## Figure-alt pass (September 21, 2026)
+
+Every `mediafigure` in the book was re-read image-first: 1,153 figures on
+256 pages (47 chapter openers included), one Sonnet checker per chapter in
+rolling waves of six, each briefed with the Microbiology kit
+(`docs/history/microbiology.md`, "Figure-alt pass") to open the image and
+write down what is drawn before reading the alt, caption, `longdesc`, or
+source alt. The parent opened the image for every flag before touching a
+page.
+
+- **Yield:** 179 flagged verdict lines from the checkers (a few figures
+  carried two), 128 confirmed as written or in part, 26 rejected, plus 7
+  defects the parent found while verifying neighbours (a hemoglobin
+  longdesc with the α/β colours swapped, a soil profile's A horizon
+  called reddish-brown, a lower-limb figure described as front-and-back
+  views). That is about 1 confirmed defect in 8.5 figures — above
+  Microbiology's 1 in 10 and the audit's projection of 1 in 12. Five
+  chapters (3, 14, 15, 19, 31) came back clean from their checker; the
+  parent's spot-checks found a defect in two of them.
+- **Source-inherited:** 20 of the confirmed defects repeat a claim the
+  OpenStax alt makes and the image contradicts — errata 833–837, 839–849,
+  851–855 — each with a footer disclosure; three more record artwork typos
+  (838 "Canus", 850 "hypothalmus", 856 a stray "+" in a carbonate
+  equation) and one a caption that calls an open stoma closed (847). Errata
+  range 833–856. One earlier erratum was **withdrawn**: 100 had reported
+  the source alt's "the same sphere" as wrong for the cube-and-sphere
+  figure, but the checker's re-measurement showed both spheres identical
+  and only the cube doubled — the source alt was right and the page's
+  correction was the misreading; the alt now follows the source.
+- **Page-introduced:** the majority, in the long descriptions this book's
+  authors wrote: counts (six cations not seven, five arrows not four,
+  seven seed ovals, eight red cells, two mitochondria not "several"),
+  colours (a pH scale ending in crimson called violet, purple homologs
+  called pink, a tan pellet called pink, green urchins called purple),
+  directions and orders (a gated channel's arrow, a tick life cycle run
+  counterclockwise with "3 weeks" on the wrong arrow, two extinction
+  graphs' x-axes read right-to-left, an archaeal monolayer described as a
+  bilayer), mislabels (EGF on one receptor when both carry it, "Osteon"
+  and "Osteon of compact bone" swapped, a pedigree's middle child drawn
+  as a square, "Vesicle" on the wrong sac), and "labeled" claims with no
+  such marks (a cytoplasm label, an Amplitude label, a Promoter label on
+  the second panel, a second DNA label).
+- **Rejected (26):** the largest class was checker mis-counts and
+  mis-measurements the parent's own look overturned (six grasshoppers
+  counted as seven, a 400 nm mitochondrion measured as 150 nm, HRE and
+  Target gene labels that are printed, a diploblast's ring order that the
+  leader lines confirm); the rest were caption-carried identifications
+  (a sea lily, a pigeon, a 380–750 nm visible band) and readings the
+  drawing supports as well as the checker's (a beta barrel's two layers,
+  a Cdk drawn slightly apart from its cyclin, an Amniota wedge whose left
+  edge is the lizard's branch).
+- **Cost:** about 7.7M Sonnet tokens across the 47 checkers (100k–245k
+  each, scaling with figure count), plus 60k Fable for the blind solve.
+  Six graded items carry the figure above them in their ledger hash and
+  re-hashed: four multiple-choice items (9.1, 22.1, 35.4, 39.2) were
+  re-solved blind by a fresh Fable solver (4/4 agree) and two selfchecks
+  (11.2, 13.2) re-read by the parent and re-recorded. The last four
+  checkers were killed by a session rate limit mid-chapter and resumed
+  from their transcripts after the reset; their incremental report files
+  lost nothing.
+
+Lessons folded back: the Write tool refuses subagent report files, so the
+checker brief now says to append with a Bash heredoc; a checker that reads
+a page file in blocks ahead of its images has already seen the next alts,
+so the brief now says to `sed` only the figure's own lines; a rewritten
+alt can cross the 600-character cap (two did — lint caught both); an
+existing erratum can itself be an alt-first misreading, so a checker's
+"contradicts erratum N" is adjudicated on the image like any other flag.
+
 ## Build budgets: the completion measurement record
 
 The book is complete, so these are no longer projections — they are what

@@ -75,7 +75,7 @@ Horsetails. Horsetails, named for the brushy appearance of the sporophyte, thriv
 
 The stem of a horsetail is characterized by the presence of joints or nodes, hence the name Arthrophyta (arthro- = "joint"; -phyta = "plant"). Leaves and branches come out as whorls from the evenly spaced joints. The needle-shaped leaves do not contribute greatly to photosynthesis, the majority of which takes place in the green stem.
 
-{{< mediafigure src="biology/Figure_25_04_03" kind="photo" alt="A single upright horsetail stem growing from bark mulch, its length ringed by evenly spaced joints from which whorls of thin, needle-like green leaves radiate outward." >}}
+{{< mediafigure src="biology/Figure_25_04_03" kind="photo" alt="An upright horsetail stem in sharp focus in front of several others growing from bark mulch, its length ringed by evenly spaced joints from which whorls of thin, needle-like green leaves radiate outward." >}}
 The jointed stem of a horsetail. Thin leaves originating at the joints are noticeable on the horsetail plant. Because silica deposited in the cell walls made these plants abrasive, horsetails were once used as scrubbing brushes and were nicknamed scouring rushes. (credit: Myriam Feldman)
 {{< /mediafigure >}}
 

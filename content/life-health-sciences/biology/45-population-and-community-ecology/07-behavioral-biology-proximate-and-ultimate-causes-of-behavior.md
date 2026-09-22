@@ -57,7 +57,7 @@ Although migration is thought of as innate behavior, only some migrating species
 
 **Foraging** is the act of searching for and exploiting food resources. Feeding behaviors that maximize energy gain and minimize energy expenditure are called optimal foraging behaviors, and these are favored by natural selection. The painted stork, for example, uses its long beak to search the bottom of a freshwater marshland for crabs and other food, shown below.
 
-{{< mediafigure src="biology/Figure_45_07_03" kind="photo" alt="Two long-legged, long-beaked storks stand in shallow water. One holds its head down with its beak open beneath the surface, searching for food; the other stands upright with its wings folded." >}}
+{{< mediafigure src="biology/Figure_45_07_03" kind="photo" alt="Two long-legged, long-beaked storks stand in shallow water. One holds its head down with its beak open beneath the surface, searching for food; the other, in front, bends its head down toward the water with its beak closed, wings folded." >}}
 The painted stork uses its long beak to forage. (credit: J.M. Garg)
 {{< /mediafigure >}}
 
@@ -77,7 +77,7 @@ Songs are an example of an aural signal, one that needs to be heard by the recip
 
 **Aggressive displays** are also common in the animal kingdom. For example, a dog bares its teeth when it wants another dog to back down. Presumably, these displays communicate not only the willingness of the animal to fight, but also its fighting ability. Although these displays do signal aggression on the part of the sender, it is thought that these displays are actually a mechanism to reduce the amount of actual fighting that occurs between members of the same species: they allow individuals to assess the fighting ability of their opponent and thus decide whether it is "worth the fight." The testing of certain hypotheses using game theory has led to the conclusion that some of these displays may overstate an animal's actual fighting ability and are used to "bluff" the opponent. This type of interaction, even if "dishonest," would be favored by natural selection if it is successful more times than not.
 
-{{< mediafigure src="biology/Figure_45_07_04" kind="photo" alt="A white stork stands in a large stick nest with its wings spread and raised, its head tipped back and its long red beak open, appearing to call." >}}
+{{< mediafigure src="biology/Figure_45_07_04" kind="photo" alt="Two white storks in a large stick nest: the front one stands with its wings spread and raised, its head bent down and its long red beak open, appearing to call, while the second is mostly hidden behind it." >}}
 This stork's courtship display is designed to attract potential mates. (credit: Linda "jinterwas"/Flickr)
 {{< /mediafigure >}}
 

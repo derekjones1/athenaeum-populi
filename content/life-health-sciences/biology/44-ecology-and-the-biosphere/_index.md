@@ -11,7 +11,7 @@ source_chapter: "44"
 weight: 51
 ---
 
-{{< mediafigure src="biology/Figure_44_00_01abc-ca30" alt="Photo (a) shows a deer tick on a leaf. The tick has a brown oval body with a smaller, round oval toward the front. The head and legs are black. Photo (b) shows an arm with a red, circular rash enclosed in a ring-like rash. Photo (c) shows a brown mouse with a white belly and legs and large, round ears." kind="photo" eager="true" >}}
+{{< mediafigure src="biology/Figure_44_00_01abc-ca30" alt="Photo (a) shows a deer tick on a leaf. The tick has a reddish-orange oval body with a smaller, black shield toward the front and black legs. The head and legs are black. Photo (b) shows an arm with a red, circular rash enclosed in a ring-like rash. Photo (c) shows a brown mouse with a white belly and legs and large, round ears." kind="photo" eager="true" >}}
 The (a) deer tick carries the bacterium that produces Lyme disease in
 humans, often evident in (b) a symptomatic bull's eye rash. The (c)
 white-footed mouse is one well-known host to deer ticks carrying the
@@ -68,4 +68,4 @@ transmitted and how its incidence could be reduced.
 
 ---
 
-<small>This chapter is adapted from [Biology 2e, Chapter 44: Ecology and the Biosphere](https://openstax.org/books/biology-2e/pages/44-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source's, re-encoded for the web, with its source alt kept since it already names each lettered panel and says what each photo shows; the source's in-text parenthetical figure reference ("(Figure 44.1)") is rendered as "(shown above)" since this site does not number figures.</small>
+<small>This chapter is adapted from [Biology 2e, Chapter 44: Ecology and the Biosphere](https://openstax.org/books/biology-2e/pages/44-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source's, re-encoded for the web, with its source alt kept except that the tick's body is described as reddish-orange with a black shield rather than "brown"; the source's in-text parenthetical figure reference ("(Figure 44.1)") is rendered as "(shown above)" since this site does not number figures.</small>

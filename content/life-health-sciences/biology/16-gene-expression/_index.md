@@ -5,7 +5,7 @@ source_chapter: "16"
 weight: 18
 ---
 
-{{< mediafigure src="biology/Figure_16_00_01-71d2" alt="Part A depicts a cross section of an eyeball, which has a lens at the front and a cluster of blood vessels at the back. Part B depicts a liver, which is shaped like a triangle. Beneath the liver is a lobe-shaped gall bladder connected to a pancreas by a stem-like vessel. Part C is a sketch, drawn by Leonardo Da Vinci, of a man standing erect with outstretched arms. Superimposed on this image, the man has his legs spread and his arms uplifted." kind="diagram" eager="true" >}}
+{{< mediafigure src="biology/Figure_16_00_01-71d2" alt="Part A depicts a cross section of an eyeball, which has a lens at the front and a cluster of blood vessels at the back. Part B depicts a liver, drawn as a wide, rounded organ with two lobes. Beneath the liver is a lobe-shaped gall bladder connected to a pancreas by a stem-like vessel. Part C is a sketch, drawn by Leonardo Da Vinci, of a man standing erect with outstretched arms. Superimposed on this image, the man has his legs spread and his arms uplifted." kind="diagram" eager="true" >}}
 The genetic content of each somatic cell in an organism is the same, but
 not all genes are expressed in every cell. The control of which genes are
 expressed dictates whether a cell is, for example, (a) an eye cell or (b)
@@ -65,4 +65,4 @@ proper time.
 
 ---
 
-<small>This chapter is adapted from [Biology 2e, Chapter 16: Gene Expression](https://openstax.org/books/biology-2e/pages/16-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Each section page records its own changes from the source. Changes: the chapter-opening illustration is the source's, re-encoded for the web; its alt text is the source's own description, kept as written since it already names what each panel shows.</small>
+<small>This chapter is adapted from [Biology 2e, Chapter 16: Gene Expression](https://openstax.org/books/biology-2e/pages/16-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Each section page records its own changes from the source. Changes: the chapter-opening illustration is the source's, re-encoded for the web; its alt text is the source's own description, kept as written except that the liver is described as a wide, rounded two-lobed organ rather than the source's "shaped like a triangle," which the drawing does not support.</small>

@@ -4065,6 +4065,14 @@
     "result": "agrees"
    }
   },
+  "0c746d58016c0f01": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0c74a8a68c27dc7e": {
    "verdict": "ok"
   },
@@ -5166,14 +5174,6 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "1014071547eeb0f9": {
-   "verdict": "ok",
-   "note": "m66378 visual-exercise fs-idp91702432: keyed C, 'The downstream cellular response,' matches the source solution verbatim.",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -9760,14 +9760,6 @@
     "result": "agrees"
    }
   },
-  "1dc3a8c0d5ad17da": {
-   "verdict": "ok",
-   "note": "Visual Connection fs-idp106082096, solution D. Module prints this item twice with different option (a) wording (note copy 'resting', numbered-exercise copy 'relaxing'); keyed and transcribed the numbered-exercise copy per brief instruction, both quoted under Source defects.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "1dc4f2d56544df8b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -14254,6 +14246,14 @@
   "2c769b11eeaab6ee": {
    "verdict": "ok"
   },
+  "2c776d0891292565": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2c7b4086fbdde764": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 463): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -18343,10 +18343,6 @@
     "result": "agrees"
    }
   },
-  "397fa17b87507f20": {
-   "verdict": "ok",
-   "note": "m66494 critical-thinking solution fs-id2569005: 'Exact diagram style will vary; diagram should look like [fig-ch13_02_02].' Page model answer restates this with the figure reference resolved to prose ('the nondisjunction diagram above') rather than a link, which is a faithful rendering, not an added claim. Two CHECKS clauses split this one short sentence; flagging per brief as a thin/near-duplicate rubric — not a defect, the source solution itself is this short."
-  },
   "398357eb605b2b68": {
    "verdict": "ok"
   },
@@ -19442,14 +19438,6 @@
   "3d6e28169c9a47bd": {
    "verdict": "ok",
    "note": "P(0)=175/(1+6.995)=21.89, rounds to 22, matching CNXML fs-id1661534 (Numeric #11)."
-  },
-  "3d6f5c5cb3d3151e": {
-   "verdict": "ok",
-   "note": "RQ4 (fs-idp124475872): CNXML solution keys A = 'a salt concentration of at least 0.2 M', matching the glossary definition of halophile and the extremophiles table.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "3d6f92b20ec22dcc": {
    "verdict": "ok",
@@ -38517,10 +38505,6 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
-  },
-  "7bc63c7aec3b90c6": {
-   "verdict": "ok",
-   "note": "02-sexual-reproduction.md line 48, this is the CNXML's visual-exercise question (section fs-idm31987200, solution id=\"fs-id949608\": 'Yes, it will be able to reproduce asexually.'), deliberately rendered as a selfcheck per the page's own disclosed footer clause ('the Visual Connection question kept in the body ... and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option'); model answer matches the CNXML solution verbatim and both checks restate it with no added claim."
   },
   "7bc94116ec3d61de": {
    "verdict": "ok",
@@ -61682,6 +61666,14 @@
    "verdict": "ok",
    "note": "secondary-infection conditions selfcheck; matches the HIV/thrush, influenza/pneumonia, and antibiotic/Candida examples."
   },
+  "c942a7f9e4784048": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c94a3a2df7741d89": {
    "verdict": "ok",
    "note": "The second base-10 block SVG shows 4 hundred-squares, 0 ten-rods (no 'ap-ten' element used), and 7 individual unit-block rects: 4(100)+0(10)+7(1)=407, matching the declared answer."
@@ -67837,6 +67829,10 @@
     "result": "agrees"
    }
   },
+  "defffe517222ffe3": {
+   "verdict": "ok",
+   "note": "re-hashed by the Biology figure-alt pass: the fungal life-cycle figure's longdesc above it was corrected (Mitosis labels sit on the Spores-to-Hyphae arrows; asexual loop re-walked); the question, model answer, and ===CHECKS=== are untouched and were re-read against the image, whose ASEXUAL loop (hyphae -> spores -> hyphae by mitosis) still answers 'yes, asexually'"
+  },
   "df07e45fafbd6f05": {
    "verdict": "ok",
    "note": "Selfcheck matches CNXML Critical Thinking exercise fs-idm140854400; model answer is the source solution verbatim, checks decompose its two sentences with no new claim."
@@ -71452,6 +71448,14 @@
    "verdict": "ok",
    "note": "Critical Thinking Q2 (fs-id2321141/fs-id1987001, module m66514) — model answer is the keyed solution verbatim; checkpoints restate it."
   },
+  "eae91796d61050df": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eaf33b525c6fcc9c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -73808,14 +73812,6 @@
   "f2db8c9480e59681": {
    "verdict": "ok",
    "note": "KC 1 3.4 § Extracellular Matrix, m58793"
-  },
-  "f2e67559f0e7dc9e": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "f2ee1da828835a3a": {
    "verdict": "ok",
@@ -76892,6 +76888,10 @@
   },
   "fcf06b15803c717d": {
    "verdict": "ok"
+  },
+  "fcf646c0547f6ad2": {
+   "verdict": "ok",
+   "note": "re-hashed by the Biology figure-alt pass: the reciprocal-translocation figure's longdesc above it was corrected (segment below the orange chromosome's centromere; lower arms swapped); the question, model answer, and ===CHECKS=== are untouched and refer to the nondisjunction diagram, which was not edited"
   },
   "fcf74348149b7a6b": {
    "verdict": "ok",

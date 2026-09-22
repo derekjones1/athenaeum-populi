@@ -11,7 +11,7 @@ source_chapter: "21"
 weight: 25
 ---
 
-{{< mediafigure src="biology/Figure_21_00_01-9ea7" alt="The left electron micrograph shows the tobacco mosaic virus, which is shaped like a long, thin rectangle. The right photo shows an orchid leaf in varying states of decay. Initial symptoms are yellow and brown spots. Eventually, the entire leaf turns yellow with brown blotches, then completely brown." kind="photo" eager="true" >}}
+{{< mediafigure src="biology/Figure_21_00_01-9ea7" alt="The left electron micrograph shows the tobacco mosaic virus, which is shaped like a long, thin rectangle. The right photo shows four orchid leaves in varying states of decay: one turned yellow with brown blotches, two still green with scattered yellow and brown spots (the initial symptoms), and one turned completely brown." kind="photo" eager="true" >}}
 The tobacco mosaic virus, seen here by transmission electron microscopy
 (left), was the first virus to be discovered. The virus causes disease in
 tobacco and other plants, such as the orchid (right). (credit a: USDA ARS;
@@ -56,4 +56,4 @@ various sources along their respective evolutionary paths.
 
 ---
 
-<small>This chapter is adapted from [Biology 2e, Chapter 21: Viruses](https://openstax.org/books/biology-2e/pages/21-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source's, re-encoded for the web, with its source alt kept since it already says what the photomicrograph and photo show; the source's introduction paragraph does not reference the opening figure inline, so no parenthetical figure-reference rendering was needed.</small>
+<small>This chapter is adapted from [Biology 2e, Chapter 21: Viruses](https://openstax.org/books/biology-2e/pages/21-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source's, re-encoded for the web, with its source alt kept for the micrograph and reworded for the leaf photo to describe the four leaves as they are arranged rather than as a stage sequence; the source's introduction paragraph does not reference the opening figure inline, so no parenthetical figure-reference rendering was needed.</small>

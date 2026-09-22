@@ -12,7 +12,7 @@ source_chapter: "47"
 weight: 54
 ---
 
-{{< mediafigure src="biology/Figure_47_00_01" alt="Satellite image shows a large blue lake surrounded by green land." kind="photo" eager="true" >}}
+{{< mediafigure src="biology/Figure_47_00_01" alt="Satellite image shows a large dark blue lake with green land to its west and north and orange-tan land to its east." kind="photo" eager="true" >}}
 Lake Victoria in Africa, shown in this satellite image, was the site of
 one of the most extraordinary evolutionary findings on the planet, as
 well as a casualty of devastating biodiversity loss. (credit:
@@ -53,4 +53,4 @@ rapidity.
 
 ---
 
-<small>This chapter is adapted from [Biology 2e, Chapter 47: Conservation Biology and Biodiversity](https://openstax.org/books/biology-2e/pages/47-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source's, re-encoded for the web, with its source alt kept since it already says what it shows; the source's unit superscript ("68,900 km<sup>2</sup>") is set as Unicode ("68,900 km²").</small>
+<small>This chapter is adapted from [Biology 2e, Chapter 47: Conservation Biology and Biodiversity](https://openstax.org/books/biology-2e/pages/47-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source's, re-encoded for the web, with its source alt expanded to note the orange-tan land east of the lake rather than "surrounded by green land"; the source's unit superscript ("68,900 km<sup>2</sup>") is set as Unicode ("68,900 km²").</small>

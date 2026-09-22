@@ -817,7 +817,12 @@ claim by claim; the parent verifies every flag on the image, fixes the
 page, and writes an erratum for each claim inherited from the source alt.
 About a fifth of the defects are inherited; the rest are the page's own,
 and counts, colours, directions, and "labeled" claims are where they
-cluster. Budget roughly 200k Sonnet tokens per chapter.
+cluster. Budget roughly 200k Sonnet tokens per chapter. The kit is
+`docs/briefs/alt-pass/` (checker brief, run shape) with
+`tools/source/alt-pass-packets.py <book> <out-dir>` building the
+packets; Biology 2e's pass (September 21, 2026, `docs/history/biology.md`)
+measured 1 in 8.5 and found the checkers' own mis-counts to be the largest
+rejected class, so the parent's look at every flag is not optional.
 
 ## Done checklist (in addition to the core checklist)
 

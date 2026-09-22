@@ -175,7 +175,7 @@ Animals and birds eat fruits, and the seeds that are not digested are excreted i
 
 All of the above mechanisms allow for seeds to be dispersed through space, much like an animal's offspring can move to a new location. Seed dormancy, which was described earlier, allows plants to disperse their progeny through time: something animals cannot do. Dormant seeds can wait months, years, or even decades for the proper conditions for germination and propagation of the species.
 
-{{< mediafigure src="biology/Figure_32_02_12" kind="photo" alt="Three photos labeled (a)–(c): a white fluffy dandelion seed head, a brown coconut floating on water, and two acorns resting among pine needles." >}}
+{{< mediafigure src="biology/Figure_32_02_12" kind="photo" alt="Three photos labeled (a)–(c): a white fluffy dandelion seed head, a reddish-orange coconut at the water's edge, and two acorns resting on green moss." >}}
 Fruits and seeds are dispersed by various means. (a) Dandelion seeds are dispersed by wind, the (b) coconut seed is dispersed by water, and the (c) acorn is dispersed by animals that cache and then forget it. (credit a: modification of work by "Rosendahl"/Flickr; credit b: modification of work by Shine Oa; credit c: modification of work by Paolo Neo)
 {{< /mediafigure >}}
 

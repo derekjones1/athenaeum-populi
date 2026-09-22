@@ -27,6 +27,13 @@ source error per two sections; roughly half of a checker's "findings" are
 textbook simplifications or priority disputes the parent should keep as
 printed; a Sonnet checker takes 5–8 minutes per chapter of 3–6 sections.
 
+**Biology 2e: sweep complete.** All 47 chapters were read on September 6,
+2026 in five Sonnet waves (chapters 1–10, 11–20, 21–30, 31–40, 41–47); the
+accepted corrections are errata 382–457 under the five "Biology 2e prose
+claim pass" headings in `docs/openstax-errata.md`, and the per-chapter rows
+were retired from this table the same day because those headings are the
+record. No Biology chapter is outstanding.
+
 | Book | Chapter | Sections | Status | Errata |
 |---|---|---|---|---|
 | Microbiology | 01-an-invisible-world | 3 | done Sep 6 2026 | 377–378; Koch kept |
@@ -51,7 +58,7 @@ printed; a Sonnet checker takes 5–8 minutes per chapter of 3–6 sections.
 | Microbiology | 20-laboratory-analysis-of-the-immune-response | 5 | done Sep 13 2026 (in the authoring run) | erratum 663 — §20.3's Widal-test sentence corrected from the source's "Salmonella enterica subspecies typhi" to "serovar Typhi" (claim pass finding, adjudicated by the parent) |
 | Microbiology | 21-skin-and-eye-infections | 5 | done Sep 14 2026 (in the authoring run) | none; the necrotizing-fasciitis glossary "exotoxin A" finding adjudicated not an error |
 | Microbiology | 22-respiratory-system-infections | 4 | done Sep 14 2026 (in the authoring run) | 678–679 — Q fever's "rickettsia" classification and the MERS 2013→2012 date, both claim pass findings adjudicated by the parent |
-| Microbiology | 23-urogenital-system-infections | 6 | done Sep 14 2026 (in the authoring run), report `claims-ch23.md` | the trigeminal-ganglion correction in 23.4 and the IgA protease/H2O2 correction in 23.2, both claim pass findings adjudicated by the parent; errata not yet logged |
+| Microbiology | 23-urogenital-system-infections | 6 | done Sep 14 2026 (in the authoring run), report `claims-ch23.md` | 720 (23.4 trigeminal ganglion), 721 (23.2 IgA protease/H2O2), both claim pass findings adjudicated by the parent |
 | Microbiology | 24-digestive-system-infections | 6 | done Sep 14 2026 (in the authoring run) | 735–754 (743 the accepted Treponema vincentii spelling; no claim corrections); Typhoid Mary case count reviewed and not errata |
 | Microbiology | 25-circulatory-and-lymphatic-system-infections | 4 | done Sep 14 2026 (in the authoring run) | errata 755–775; three claim corrections accepted this run: 25.2's rat-bite fever causative genus (766, and 767 for the source exercise option), 25.2's tick body regions (765), and 25.3's HTLV/HIV conflation (768), all adjudicated by the parent; two suspicions reviewed and not errata |
 | Microbiology | 26-nervous-system-infections | 4 + landing | done Sep 14 2026 (in the authoring run) | 4 findings: 3 claim corrections accepted this run — 26.1's arachnoid mater/CSF Source note, 26.2's neonatal meningitis 3-months Source note, and 26.2's Listeria 45 °C Source note — all adjudicated by the parent; 1 suspicion reviewed and not an erratum: 26.4's neurocysticercosis source key D stands |
