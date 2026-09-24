@@ -149,11 +149,11 @@ checks ran a narrow brief (they carry no hints; the gap is nearby leaks).
 | [x] | 23. Protists | 4 | 44 | — | 14fd14f | Sep 23: two Opus fixers (~240k); 26 of 44 hint leaks; histones cloze sat above the source item printing it → endomembrane-system cloze |
 | [x] | 24. Fungi | 5 | 73 | — | 14fd14f | Sep 23: two Opus fixers (~254k); 48 of 73 hint leaks; one double-keyed author MC (24.5 antibiotics) re-optioned; aerobes accepts added after the blind solve |
 | [x] | 25. Seedless Plants | 4 | 46 | 989 | 14fd14f | Sep 23: two Opus fixers (~227k); 24 of 46 hint leaks; parent fixed the adventitious glossary typo (989) |
-| [ ] | 26. Seed Plants | 4 | | | | |
-| [ ] | 27. Introduction to Animal Diversity | 4 | | | | |
-| [ ] | 28. Invertebrates | 7 | | | | |
-| [ ] | 29. Vertebrates | 7 | | | | |
-| [ ] | 30. Plant Form and Physiology | 6 | | | | |
+| [x] | 26. Seed Plants | 4 | 59 | 998 | 6f4cddf | Sep 23: two Opus fixers (~241k tokens), batched with ch27–30 (shared Fable solve 67/68 + 1 flag adjudicated, ~108k); 32 of 59 hint leaks; five reverse re-asks replaced; parent fixed "pericarp, or hypanthium" (998) |
+| [x] | 27. Introduction to Animal Diversity | 4 | 62 | 999 | 6f4cddf | Sep 23: two Opus fixers (~283k); 33 of 62 hint leaks; extinction-graph longdesc corrected; parent fixed the Bilateria/Radiata "respectively" swap (999) |
+| [x] | 28. Invertebrates | 7 | 118 | 991–994, 1001–1004 | 6f4cddf | Sep 23: three and a half Opus fixers (~473k); 65 of 118 hint leaks; parent: 28.1 mesohyl, 28.2 Hydrozoa class + two model-answer source notes (kind solution), 28.6 desiccation option + superclasses source note |
+| [x] | 29. Vertebrates | 7 | 114 | 995–997, 1000 | 6f4cddf | Sep 23: three and a half Opus fixers (~493k); 55 of 114 hint leaks; parent re-keyed 29.1 closest relatives to urochordates (kind key; solver flag adjudicated), 29.7 Australopithecus model answer, 29.2 misspellings |
+| [x] | 30. Plant Form and Physiology | 6 | 117 | — | 6f4cddf | Sep 23: two and a half Opus fixers (~426k); 84 of 117 hint leaks; no new source defects |
 | [ ] | 31. Soil and Plant Nutrition | 3 | | | | |
 | [ ] | 32. Plant Reproduction | 3 | | | | |
 | [ ] | 33. The Animal Body: Basic Form and Function | 3 | | | | |
