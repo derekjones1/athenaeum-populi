@@ -51,7 +51,7 @@ Simple sponge body plan and cell types. The sponge's (a) basic body plan and (b)
 {{< multiplechoice
   question="Which of the following statements is false?"
   answer="Pinacocytes can transform into any cell type."
-  hint="Check which cell type the diagram itself credits with differentiating into other cell types, and compare that to what the outer-covering cell type is said to do."
+  hint="Check each statement against the cell-type labels in panel (b) of the figure above."
 >}}
 Choanocytes have flagella that propel water through the body.
 Pinacocytes can transform into any cell type.
@@ -95,7 +95,7 @@ Although there is no specialized nervous system in sponges, there is intercellul
 
 Sponges reproduce by sexual as well as asexual methods. The typical means of asexual reproduction is either fragmentation (during this process, a piece of the sponge breaks off, settles on a new substrate, and develops into a new individual), or budding (a genetically identical outgrowth grows from the parent and eventually detaches or remains attached to form a colony). An atypical type of asexual reproduction is found only in freshwater sponges and occurs through the formation of *gemmules*. **Gemmules** are environmentally resistant structures produced by adult sponges (e.g., in the freshwater sponge *Spongilla*). In gemmules, an inner layer of archeocytes (amoebocytes) is surrounded by a pneumatic cellular layer that may be reinforced with spicules. In freshwater sponges, gemmules may survive hostile environmental conditions like changes in temperature, and then serve to recolonize the habitat once environmental conditions improve and stabilize. Gemmules are capable of attaching to a substratum and generating a new sponge. Since gemmules can withstand harsh environments, are resistant to desiccation, and remain dormant for long periods, they are an excellent means of colonization for a sessile organism.
 
-Sexual reproduction in sponges occurs when gametes are generated. Oocytes arise by the differentiation of amoebocytes and are retained within the spongocoel, whereas spermatozoa result from the differentiation of choanocytes and are ejected via the osculum. Sponges are **monoecious** (hermaphroditic), which means that one individual can produce both gametes (eggs and sperm) simultaneously. In some sponges, production of gametes may occur throughout the year, whereas other sponges may show sexual cycles depending upon water temperature. Sponges may also become *sequentially hermaphroditic*, producing oocytes first and spermatozoa later. This temporal separation of gametes produced by the same sponge helps to encourage cross-fertilization and genetic diversity. Spermatozoa carried along by water currents can fertilize the oocytes borne in the mesohyl of other sponges. Early larval development occurs within the sponge, and free-swimming larvae (such as flagellated *parenchymula*) are then released via the osculum.
+Sexual reproduction in sponges occurs when gametes are generated. Oocytes arise by the differentiation of amoebocytes and are retained within the mesohyl, whereas spermatozoa result from the differentiation of choanocytes and are ejected via the osculum. Sponges are **monoecious** (hermaphroditic), which means that one individual can produce both gametes (eggs and sperm) simultaneously. In some sponges, production of gametes may occur throughout the year, whereas other sponges may show sexual cycles depending upon water temperature. Sponges may also become *sequentially hermaphroditic*, producing oocytes first and spermatozoa later. This temporal separation of gametes produced by the same sponge helps to encourage cross-fertilization and genetic diversity. Spermatozoa carried along by water currents can fertilize the oocytes borne in the mesohyl of other sponges. Early larval development occurs within the sponge, and free-swimming larvae (such as flagellated *parenchymula*) are then released via the osculum.
 
 ### Locomotion
 
@@ -155,7 +155,7 @@ osculum.
 {{< textin
   question="The central cavity within the body of some sponges is called the ________."
   answer="spongocoel"
-  hint="Water enters this cavity through numerous ostia and is expelled from it through the osculum."
+  hint="Look at the opening paragraph of Morphology of Sponges."
 >}}
 
 {{< textin
@@ -164,7 +164,7 @@ osculum.
   hint="Look at the Morphology of Sponges paragraphs on the cell types that reside within the mesohyl."
 >}}
 
-{{< selfcheck question="Describe the different cell types and their functions in sponges." hint="Think about which cell type forms the outer covering, which one regulates water entering the pores, and which one lines the feeding chambers." >}}
+{{< selfcheck question="Describe the different cell types and their functions in sponges." hint="Look at the Morphology of Sponges paragraphs and panel (b) of the body-plan figure." >}}
 Pinacocytes are epithelial-like cells, form the outermost layer of sponges, and enclose a jelly-like substance called mesohyl. In some sponges, porocytes form ostia, single tube-shaped cells that act as valves to regulate the flow of water into the spongocoel. Choanocytes ("collar cells") are present at various locations, depending on the type of sponge, but they always line some space through which water flows and are used in feeding.
 ===CHECKS===
 pinacocytes are epithelial-like cells that form the outermost layer of sponges and enclose the mesohyl
@@ -186,7 +186,7 @@ Choanocytes must be protected from the hostile exterior environment.
 Spongin cannot support heavy bodies.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the feeding mechanism of sponges and identify how it is different from other animals." hint="Trace where digestion actually happens inside a sponge cell, and compare the size limit that imposes to how animals with a gut can feed." >}}
+{{< selfcheck question="Describe the feeding mechanism of sponges and identify how it is different from other animals." hint="Look at the Digestion subsection of Physiological Processes in Sponges." >}}
 The sponges draw water carrying food particles into the spongocoel using the beating of flagella on the choanocytes. The food particles are caught by the collar of the choanocyte and are brought into the cell by phagocytosis. Digestion of the food particle takes place inside the cell. The difference between this and the mechanisms of other animals is that digestion takes place within cells rather than outside of cells. It means that the organism can feed only on particles smaller than the cells themselves.
 ===CHECKS===
 sponges draw water carrying food particles into the spongocoel using the beating of flagella on the choanocytes
@@ -198,22 +198,23 @@ the organism can feed only on particles smaller than the cells themselves
 {{< textin
   question="The structure produced by asexual reproduction in freshwater sponges, in which the morphology is inverted, is called a ________."
   answer="gemmule"
-  hint="Reinforced with spicules and able to withstand harsh conditions, this structure lets a freshwater sponge recolonize a habitat once conditions improve."
+  hint="Look at the Reproduction subsection's paragraph on asexual reproduction."
 >}}
 
 {{< textin
   question="The sponge cell that functions to generate a water current and to trap and ingest food particles by phagocytosis is called a ________."
   answer="choanocyte"
   accept="collar cell"
-  hint="This cell type's beating flagella draw water into the sponge, and some can differentiate into sperm for sexual reproduction."
+  hint="Look at the Morphology of Sponges paragraph on the feeding chambers."
 >}}
 
 {{< textin
   question="The sponge cell with multiple functions, including nutrient delivery, egg formation, sperm delivery, and cell differentiation, is called an ________."
   answer="amoebocyte"
-  hint="Look at the Morphology of Sponges paragraph on the cells derived from stem-cell-like archaeocytes."
+  accept="amebocyte"
+  hint="Look at the Morphology of Sponges paragraph that follows the first Link to Learning."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 28.1: Phylum Porifera](https://openstax.org/books/biology-2e/pages/28-1-phylum-porifera) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the manifest's kind guess kept after inspection (Figure_28_01_01 and Figure_28_01_03abc as photos, Figure_28_01_02 as a diagram, all confirmed correct); a longdesc added to the sponge body-plan diagram (Figure_28_01_02) walking both panels' labels and water-flow arrows in reading order, since its caption carries none of that; the note wrapping the body-plan Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the four Link to Learning notes rendered as callouts, keeping each source URL (the embedded video's own player link for the first, since the printed page falls back to a self-referential page link for that one); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (spongocoel, sclerocyte, choanocyte, gemmule, amoebocyte) added from the glossary.</small>
+<small>This section is adapted from [Biology 2e, Section 28.1: Phylum Porifera](https://openstax.org/books/biology-2e/pages/28-1-phylum-porifera) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the manifest's kind guess kept after inspection (Figure_28_01_01 and Figure_28_01_03abc as photos, Figure_28_01_02 as a diagram, all confirmed correct); a longdesc added to the sponge body-plan diagram (Figure_28_01_02) walking both panels' labels and water-flow arrows in reading order, since its caption carries none of that; the note wrapping the body-plan Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the four Link to Learning notes rendered as callouts, keeping each source URL (the embedded video's own player link for the first, since the printed page falls back to a self-referential page link for that one); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (spongocoel, sclerocyte, choanocyte, gemmule, amoebocyte) added from the glossary; and one source defect corrected: the Reproduction paragraph has oocytes "retained within the mesohyl" where the source prints "spongocoel," since the same paragraph says the eggs remain in the mesohyl.</small>

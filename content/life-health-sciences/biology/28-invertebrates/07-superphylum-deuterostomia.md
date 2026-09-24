@@ -117,7 +117,7 @@ pentaradial symmetry
 {{< multiplechoice
   question="The circulatory fluid in echinoderms is ________."
   answer="water"
-  hint="This same fluid fills the ring and radial canals and moves through the tube feet's ampullae."
+  hint="Look at the subsection after Morphology and Anatomy, on the canals that run along each arm."
 >}}
 blood
 mesohyl
@@ -136,16 +136,15 @@ the Holothuroidea are the sea cucumbers
 {{< /selfcheck >}}
 
 {{< textin
-  question="In echinoderms, the circulatory system that uses seawater as its own fluid, moving it through a central ring canal, radial canals, and the tube feet, is called the ________."
-  answer="water vascular system"
-  accept="ambulacral system|ambulacral water vascular system"
-  hint="Its defining feature gives the phylum's echinoderms their tactile, ambulatory tube feet."
+  question="In echinoderms, osmoregulation is carried out by specialized cells known as ________ associated with the hemal system."
+  answer="podocytes"
+  hint="Look at the second paragraph of the Digestive and Excretory Systems subsection."
 >}}
 
 {{< textin
-  question="The pore that regulates the entry and exit of seawater into an echinoderm's circulatory system is called the ________."
+  question="In echinoderms, the pore that regulates entry into and exit from the system of ring and radial canals is called the ________."
   answer="madreporite"
-  hint="This aboral opening lies opposite the mouth and leads to the ring canal by way of a short stone canal."
+  hint="Look at the subsection after Morphology and Anatomy, near its end."
 >}}
 
 ### Describe the distinguishing characteristics of chordates
@@ -154,7 +153,7 @@ the Holothuroidea are the sea cucumbers
   question="The phylum whose members possess a notochord, a dorsal hollow nerve cord, an endostyle, pharyngeal slits, and a post-anal tail at some point in development is called ________."
   answer="Chordata"
   accept="chordate"
-  hint="Reread the section's opening paragraphs, on the two major deuterostome clades."
+  hint="Look at the last subsection before the Summary, on the features its members share."
 >}}
 
 {{< multiplechoice
@@ -187,4 +186,4 @@ Rotifera
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 28.7: Superphylum Deuterostomia](https://openstax.org/books/biology-2e/pages/28-7-superphylum-deuterostomia) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the manifest's own (all three alts rewritten, including Figure_28_05_02abcde's panel-by-panel description); two figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_28.48ab.png (a phylogeny plus two line-drawn body outlines) and Figure_28_05_01 (a labeled sea star anatomy schematic) — while Figure_28_05_02abcde's "photo" guess was confirmed correct; a longdesc added to the deuterostome phylogeny (Figure_28.48ab.png), walking its branches in drawn order, and to the sea star anatomy diagram (Figure_28_05_01), walking its labels in reading order, since neither figure's one-line caption carries that detail; the interactive note rendered as a Link to Learning callout, keeping the source URL; the end-of-section Review Questions and the Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (water vascular system, madreporite, Chordata) added from the glossary, and one cloze recall item built from the section's own summary sentence on tunicate feeding, to meet this book's practice floor from a section with only five source exercises and six glossary terms; the source's "Protosomes" in the opening paragraph corrected to "protostomes" — reported as a source defect.</small>
+<small>This section is adapted from [Biology 2e, Section 28.7: Superphylum Deuterostomia](https://openstax.org/books/biology-2e/pages/28-7-superphylum-deuterostomia) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the manifest's own (all three alts rewritten, including Figure_28_05_02abcde's panel-by-panel description); two figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_28.48ab.png (a phylogeny plus two line-drawn body outlines) and Figure_28_05_01 (a labeled sea star anatomy schematic) — while Figure_28_05_02abcde's "photo" guess was confirmed correct; a longdesc added to the deuterostome phylogeny (Figure_28.48ab.png), walking its branches in drawn order, and to the sea star anatomy diagram (Figure_28_05_01), walking its labels in reading order, since neither figure's one-line caption carries that detail; the interactive note rendered as a Link to Learning callout, keeping the source URL; the end-of-section Review Questions and the Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; two key-term recall items (madreporite, Chordata) added from the glossary, and two cloze recall items built from the section's own summary sentences on osmoregulation by podocytes and on tunicate feeding, to meet this book's practice floor from a section with only five source exercises and six glossary terms; the source's "Protosomes" in the opening paragraph corrected to "protostomes" — a source defect.</small>

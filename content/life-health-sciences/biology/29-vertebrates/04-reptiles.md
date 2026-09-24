@@ -40,7 +40,7 @@ An amniotic egg. The key features of an amniotic egg are shown.
 {{< multiplechoice
   question="Which of the following statements about the parts of an amniotic egg are false?"
   answer="The amniotic cavity is filled with albumen."
-  hint="Check which fluid the diagram actually labels as filling the amniotic cavity, and where the albumen label points instead."
+  hint="Check each statement against the labels of the amniotic egg diagram above and the numbered list of membrane functions before it."
 >}}
 The allantois stores nitrogenous waste and facilitates respiration.
 The chorion facilitates gas exchange.
@@ -66,7 +66,7 @@ The evolutionarily derived characteristics of amniotes include the amniotic egg 
 Amniote phylogeny. This chart shows the evolution of amniotes. The placement of Testudines (turtles) is currently still debated.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Members of the order Testudines have an anapsid-like skull without obvious temporal fenestrae. However, molecular studies clearly indicate that turtles descended from a diapsid ancestor. Why might this be the case?" hint="Think about what could happen to an opening in the skull over many generations." >}}
+{{< selfcheck question="Members of the order Testudines have an anapsid-like skull without obvious temporal fenestrae. However, molecular studies clearly indicate that turtles descended from a diapsid ancestor. Why might this be the case?" hint="Look at the Evolution of Amniotes paragraph on temporal fenestrae." >}}
 The ancestor of modern Testudines may at one time have had a second opening in the skull, but over time this might have been lost.
 ===CHECKS===
 the ancestor of modern Testudines may have had a second opening in the skull
@@ -215,25 +215,25 @@ Reptiles are tetrapods that ancestrally had four limbs; however, a number of ext
 >}}
 
 {{< textin
-  question="The membrane that protects the embryo from mechanical shock and prevents dehydration is the ________."
-  answer="amnion"
-  hint="It forms the fluid-filled cavity that gives the embryo its own aquatic environment."
+  question="The egg shells of birds (avian reptiles) are hardened with ________, making them rigid, but fragile."
+  answer="calcium carbonate"
+  accept="CaCO3"
+  hint="Look at the section's second introductory paragraph, on egg shells."
 >}}
 
 {{< textin
-  question="The membrane that surrounds the embryo and yolk sac, facilitating gas exchange with the environment, is the ________."
-  answer="chorion"
-  hint="It develops from a fold in the body wall, along with the amnion."
+  question="Most mammals do not lay eggs (except for ________ such as the echidnas and platypuses)."
+  answer="monotremes"
+  hint="Look near the end of the section's second introductory paragraph."
 >}}
 
 {{< textin
-  question="The membrane of the egg that stores the embryo's nitrogenous wastes and also aids respiration is the ________."
-  answer="allantois"
-  accept="allantoides"
-  hint="It is an extension of the embryo's hindgut."
+  question="In mammals, the ________, which transports nutrients and functions in gas exchange and waste management, is derived from the chorion and allantois."
+  answer="placenta"
+  hint="Look at the paragraph after the numbered list under Characteristics of Amniotes."
 >}}
 
-{{< selfcheck question="Describe the functions of the three extra-embryonic membranes present in amniotic eggs." hint="Recall which membrane handles gas exchange, which cushions the embryo, and which stores wastes." >}}
+{{< selfcheck question="Describe the functions of the three extra-embryonic membranes present in amniotic eggs." hint="Look at the numbered list under Characteristics of Amniotes." >}}
 The chorion facilitates the exchange of oxygen and carbon dioxide gases between the embryo and the surrounding air. The amnion protects the embryo from mechanical shock and prevents dehydration. The allantois stores nitrogenous wastes produced by the embryo and facilitates respiration.
 ===CHECKS===
 the chorion facilitates the exchange of oxygen and carbon dioxide gases between the embryo and the surrounding air
@@ -253,31 +253,34 @@ the allantois stores nitrogenous wastes produced by the embryo and facilitates r
 {{< textin
   question="An animal having no temporal fenestrae in the cranium is called a(n) ________."
   answer="anapsid"
-  hint="Turtles appear to belong to this group, though molecular evidence says otherwise."
+  accept="Anapsida"
+  hint="Look at the caption of the amniote-skulls figure."
 >}}
 
 {{< textin
-  question="A mammal having one temporal fenestra in the skull is called a(n) ________."
+  question="An amniote having one temporal fenestra in the skull is called a(n) ________."
   answer="synapsid"
-  hint="This fenestra fused ancestrally from two separate openings."
+  accept="Synapsida"
+  hint="Look at the caption of the amniote-skulls figure."
 >}}
 
 {{< textin
   question="An animal having two temporal fenestrae in the cranium is called a(n) ________."
   answer="diapsid"
-  hint="Dinosaurs, birds, and most other living reptiles belong to this skull-fenestrae group."
+  accept="Diapsida"
+  hint="Look at the caption of the amniote-skulls figure."
 >}}
 
 {{< textin
   question="A reptile or a bird, as distinguished from the mammal-line synapsids, is called a(n) ________."
   answer="sauropsid"
-  hint="This early amniote line split further into the anapsids and the diapsids."
+  hint="Look at the Summary's first paragraph."
 >}}
 
 {{< multiplechoice
   question="During the Mesozoic period, diapsids diverged into________."
   answer="lepidosaurs and archosaurs"
-  hint="One Mesozoic diapsid branch led to crocodiles, dinosaurs, and birds; the other led to lizards, snakes, and tuataras."
+  hint="Look at the Evolution of Amniotes paragraph just after the amniote-skulls figure."
 >}}
 pterosaurs and dinosaurs
 mammals and reptiles
@@ -298,33 +301,17 @@ tuataras
 lizards and snakes
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What characteristics differentiate lizards and snakes?" hint="Think about eyelids, ears, and how flexible the skull is." >}}
-Lizards differ from snakes by having eyelids, external ears, and less kinematic skulls.
-===CHECKS===
-eyelids
-external ears
-less kinematic skulls
-{{< /selfcheck >}}
-
-{{< selfcheck question="Based on how reptiles thermoregulate, which climates would you predict to have the highest reptile population density, and why?" hint="Reptiles rely on their surroundings, not their own metabolism, to regulate body temperature." >}}
-Reptiles are ectotherms, dependent on external sources to regulate their body temperature (i.e. their environment). The highest density of reptiles will therefore be in regions of the world with moderate temperatures, rather than areas that experience temperature extremes.
-===CHECKS===
-reptiles are ectotherms, dependent on external sources to regulate their body temperature
-the highest density of reptiles will be in regions with moderate temperatures
-rather than areas that experience temperature extremes
-{{< /selfcheck >}}
-
 {{< textin
   question="A period of much-reduced metabolism and torpor that occurs in an ectotherm during cold weather is called ________."
   answer="brumation"
-  hint="Unlike true hibernation, an animal in this state is not asleep and is not living off fat reserves."
+  hint="Look at the end of the last paragraph under Characteristics of Reptiles."
 >}}
 
 {{< textin
   question="The clade of crocodiles and alligators is called ________."
   answer="Crocodilia"
   accept="Crocodylia|crocodilians"
-  hint="This lineage arose by the middle Triassic, and some of its members can gallop on land over short distances."
+  hint="Look at the first of the four subsections under Modern Reptiles."
 >}}
 
 {{< textin
@@ -336,16 +323,58 @@ rather than areas that experience temperature extremes
 {{< textin
   question="The clade of tuataras is called ________."
   answer="Sphenodontia"
-  hint="Only two living species of this clade remain, both restricted to offshore islands of New Zealand."
+  hint="Look at the second of the four subsections under Modern Reptiles."
 >}}
 
 {{< textin
   question="The order of turtles is called ________."
   answer="Testudines"
-  hint="Its roughly 325 living species carry a bony or cartilaginous shell built into the skeleton itself."
+  hint="Look at the last of the four subsections under Modern Reptiles."
 >}}
 
+{{< selfcheck question="What characteristics differentiate lizards and snakes?" hint="Look at the Squamata subsection's paragraphs on lizards and on snakes." >}}
+Lizards differ from snakes by having eyelids, external ears, and less kinematic skulls.
+===CHECKS===
+eyelids
+external ears
+less kinematic skulls
+{{< /selfcheck >}}
+
+{{< selfcheck question="Based on how reptiles thermoregulate, which climates would you predict to have the highest reptile population density, and why?" hint="Look at the last paragraph under Characteristics of Reptiles." >}}
+Reptiles are ectotherms, dependent on external sources to regulate their body temperature (i.e. their environment). The highest density of reptiles will therefore be in regions of the world with moderate temperatures, rather than areas that experience temperature extremes.
+===CHECKS===
+reptiles are ectotherms, dependent on external sources to regulate their body temperature
+the highest density of reptiles will be in regions with moderate temperatures
+rather than areas that experience temperature extremes
+{{< /selfcheck >}}
+
 ### Discuss the evolution of reptiles
+
+{{< textin
+  question="Modern lizards, snakes, and tuataras belong to the group called ________."
+  answer="lepidosaur"
+  accept="Lepidosauria"
+  hint="Look at the Evolution of Reptiles paragraph on the second major divergence of the diapsid reptiles."
+>}}
+
+{{< textin
+  question="One of the earliest reptiles, a lizardlike animal about 20 cm long, is ________."
+  answer="Hylonomus"
+  hint="Look at the opening paragraph under Evolution of Reptiles."
+>}}
+
+{{< textin
+  question="Reptiles originated approximately 300 million years ago during the ________ period."
+  answer="Carboniferous"
+  accept="Carboniferous period"
+  hint="Look at the first sentence under Evolution of Reptiles."
+>}}
+
+{{< textin
+  question="One of the oldest known amniotes, which had both amphibian and reptilian characteristics, is ________."
+  answer="Casineria"
+  hint="Look at the opening paragraph under Evolution of Reptiles."
+>}}
 
 {{< multiplechoice
   question="Which of the following reptile groups gave rise to modern birds?"
@@ -358,30 +387,6 @@ Anapsids
 Archosaurs
 {{< /multiplechoice >}}
 
-{{< textin
-  question="One of the earliest reptiles, a lizardlike animal about 20 cm long, is ________."
-  answer="Hylonomus"
-  hint="This fossil, along with Casineria, is among the oldest amniotes known."
->}}
-
-{{< textin
-  question="A modern crocodilian or bird, or an extinct pterosaur or dinosaur, belongs to the group called ________."
-  answer="archosaur"
-  hint="This is the diapsid lineage that, per the section, includes the dinosaurs, the pterosaurs, and today's crocodilians and birds."
->}}
-
-{{< textin
-  question="One of the oldest known amniotes, which had both amphibian and reptilian characteristics, is ________."
-  answer="Casineria"
-  hint="Unlike Hylonomus, this animal's traits blur the line between two vertebrate classes."
->}}
-
-{{< textin
-  question="Modern lizards, snakes, and tuataras belong to the group called ________."
-  answer="lepidosaur"
-  hint="Look at the Evolution of Reptiles paragraph on the second major divergence of the diapsid reptiles."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 29.4: Reptiles](https://openstax.org/books/biology-2e/pages/29-4-reptiles) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_29_04_02 (three hand-drawn skull illustrations, not photographs) and Figure_29_04_04 (a painted paleoart reconstruction of pterosaurs, not a captured photograph); a longdesc added to the amniotic egg diagram (Figure_29_04_01) and the amniote phylogeny chart (Figure_B29_04_03), transcribing their printed labels and branch structure in reading order; the phylogeny chart's alt text rewritten to include its dashed, uncertain branch to Testudines (turtles), which the source alt omitted entirely even though the caption and drawing both call it out; Figure_B29_04_05ab's alt text rewritten because the source alt named only "a skeleton of a Eoraptor," when the photo's own caption identifies two mounted skeletons, Herrerasaurus and Eoraptor — reported as a source defect; the two Visual Connection notes rendered as their figures immediately followed by a multiple choice (the amniotic egg) or a self-check (the amniote phylogeny), kept in the body; the Link to Learning note rendered as a callout with its video link kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seventeen key-term recall items (amniote, amnion, chorion, allantois, anapsid, synapsid, diapsid, temporal fenestra, sauropsid, brumation, Crocodilia, Sphenodontia, Testudines, Hylonomus, Casineria, archosaur, lepidosaur) added from the glossary, and one cloze recall item built from the Summary's sentence on keratin in reptile skin; the amniote item's prompt takes the Summary's "four extra-embryonic membranes" in place of the glossary's "amniotic membranes", which prints the answer's root; the source alt's claim that the amniote tree initially branches three ways, into diapsids, anapsids, and synapsids, is corrected to the drawn two-step split (Synapsida first, then Anapsida and Diapsida). One list is corrected with a visible Source note: ichthyosaurs are dropped from the archosaurs, where the source places them against its own figure (erratum 429).</small>
+<small>This section is adapted from [Biology 2e, Section 29.4: Reptiles](https://openstax.org/books/biology-2e/pages/29-4-reptiles) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_29_04_02 (three hand-drawn skull illustrations, not photographs) and Figure_29_04_04 (a painted paleoart reconstruction of pterosaurs, not a captured photograph); a longdesc added to the amniotic egg diagram (Figure_29_04_01) and the amniote phylogeny chart (Figure_B29_04_03), transcribing their printed labels and branch structure in reading order; the phylogeny chart's alt text rewritten to include its dashed, uncertain branch to Testudines (turtles), which the source alt omitted entirely even though the caption and drawing both call it out; Figure_B29_04_05ab's alt text rewritten because the source alt named only "a skeleton of a Eoraptor," when the photo's own caption identifies two mounted skeletons, Herrerasaurus and Eoraptor — a source defect; the two Visual Connection notes rendered as their figures immediately followed by a multiple choice (the amniotic egg) or a self-check (the amniote phylogeny), kept in the body; the Link to Learning note rendered as a callout with its video link kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; thirteen key-term recall items (amniote, anapsid, synapsid, diapsid, temporal fenestra, sauropsid, brumation, Crocodilia, Sphenodontia, Testudines, Hylonomus, Casineria, lepidosaur) added from the glossary, one cloze recall item built from the Summary's sentence on keratin in reptile skin, and four cloze recall items each built from one body sentence (calcium carbonate in bird egg shells, monotremes, the placenta's origin, the Carboniferous origin of reptiles); the amnion, chorion, allantois, and archosaur glossary terms stay as Key-terms bullets without recall items, because the Critical Thinking question on the three membranes and the Review Question on the origin of birds already ask them; the synapsid item's prompt says "an amniote" in place of the glossary's "mammal", because the section's body places mammals within the synapsids (the therapsids, from which mammals evolved); the amniote item's prompt takes the Summary's "four extra-embryonic membranes" in place of the glossary's "amniotic membranes", which prints the answer's root; the source alt's claim that the amniote tree initially branches three ways, into diapsids, anapsids, and synapsids, is corrected to the drawn two-step split (Synapsida first, then Anapsida and Diapsida). One list is corrected with a visible Source note: ichthyosaurs are dropped from the archosaurs, where the source places them against its own figure.</small>

@@ -625,6 +625,41 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 980,
     reason: 'the source distractors "It produces acids that lower the pH of the stomach." and "It speeds up the process by which microbes are flushed from the digestive tract." are also NOT ways by the module (it credits the microbiota only with competitive exclusion and bacteriocins, stomach acid to the stomach, and flushing to the constant movement of materials), so the item had three keys; the page replaces the first with the module\'s bacteriocin sentence ("It secretes protein toxins that bind to specific receptors on the surface of susceptible bacteria.") and drops the second (three options; key D unchanged)',
   },
+  {
+    page: 'content/life-health-sciences/biology/28-invertebrates/02-phylum-cnidaria.md',
+    exercise: 'fs-idm248646960',
+    kind: 'solution',
+    erratum: 993,
+    reason: 'the source solution calls nematocysts "stinging cells", but the module names the cnidocyte as the stinging cell and the nematocyst as the stinging organelle within it; the page\'s model answer says "stinging organelles within cnidocytes", with a source note naming the source\'s wording',
+  },
+  {
+    page: 'content/life-health-sciences/biology/28-invertebrates/02-phylum-cnidaria.md',
+    exercise: 'eip-386',
+    kind: 'solution',
+    erratum: 994,
+    reason: 'the source solution says sponges "reproduce by external fertilization", but section 28.1 has water-borne sperm fertilize oocytes borne in the mesohyl of other sponges; the page\'s model answer and rubric say sponges release sperm into the water to fertilize eggs held in other sponges\' mesohyl, with a source note',
+  },
+  {
+    page: 'content/life-health-sciences/biology/28-invertebrates/06-superphylum-ecdysozoa-arthropods.md',
+    exercise: 'eip-184',
+    kind: 'options',
+    erratum: 1002,
+    reason: 'the source option "Prevents dessication" misspells desiccation; the page prints "Prevents desiccation" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/28-invertebrates/06-superphylum-ecdysozoa-arthropods.md',
+    exercise: 'fs-idp55772880',
+    kind: 'solution',
+    erratum: 1003,
+    reason: 'the source question asks for the "superclasses" of Arthropoda and the solution names four groups, but the module classifies the phylum into five subphyla including the extinct Trilobita; the page keeps the source question and solution and appends a source note to the model answer',
+  },
+  {
+    page: 'content/life-health-sciences/biology/29-vertebrates/01-chordates.md',
+    exercise: 'fs-idm154235264',
+    kind: 'key',
+    erratum: 995,
+    reason: 'source keys "cephalochordates" as the invertebrates most closely related to vertebrates, but the module\'s own phylogeny draws Urochordata as the sister of Vertebrata, its Summary calls the question debated, and phylogenomic analyses place the urochordates (tunicates) there; the page keys "urochordates", with a source note on the body sentence claiming molecular support for cephalochordates',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

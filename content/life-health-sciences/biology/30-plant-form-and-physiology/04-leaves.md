@@ -136,7 +136,7 @@ Leaves are the main site of photosynthesis. A typical leaf consists of a lamina 
 {{< multiplechoice
   question="The stalk of a leaf is known as the ________."
   answer="petiole"
-  hint="This structure attaches the widest part of the leaf, the blade, to the plant stem."
+  hint="Reread the first paragraph of Structure of a Typical Leaf and the labeled leaf figure after it."
 >}}
 petiole
 lamina
@@ -144,7 +144,7 @@ stipule
 rachis
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How do dicots differ from monocots in terms of leaf structure?" hint="Consider how the veins run — do they stay side by side, or do they connect into a branching network?" >}}
+{{< selfcheck question="How do dicots differ from monocots in terms of leaf structure?" hint="Reread the paragraph after the labeled leaf figure in Structure of a Typical Leaf, and the three-part figure that follows it." >}}
 Monocots have leaves with parallel venation, and dicots have leaves with reticulate, net-like venation.
 ===CHECKS===
 monocots have leaves with parallel venation
@@ -154,40 +154,35 @@ dicots have leaves with reticulate, net-like venation
 {{< textin
   question="The leaf blade — the widest part of a typical leaf — is called the ________."
   answer="lamina"
-  hint="This structure attaches to the petiole and carries the leaf's midrib and veins."
+  hint="Reread the first sentence of Structure of a Typical Leaf, or the labeled leaf figure after that paragraph."
 >}}
 
 {{< textin
   question="Small green appendages usually found at the base of the petiole are known as ________."
   answer="stipules"
-  hint="These paired structures sit where the petiole meets the stem, separate from the blade itself."
+  hint="Reread the first paragraph of Structure of a Typical Leaf."
 >}}
 
 {{< textin
   question="A leaf that lacks a petiole and attaches directly to the plant stem is called ________."
   answer="sessile"
   accept="sessile leaf|sessile leaves"
-  hint="Such a leaf's blade meets the stem with no stalk in between."
+  hint="Reread the first paragraph of Structure of a Typical Leaf."
 >}}
 
 {{< textin
   question="The arrangement pattern formed by the veins in a leaf is called ________."
   answer="venation"
-  hint="Monocots typically show a parallel form of this pattern, while dicots show a net-like, reticulate form."
+  accept="venation pattern"
+  hint="Reread the paragraph after the labeled leaf figure in Structure of a Typical Leaf."
 >}}
 
 ### Describe the internal structure and function of a leaf
 
-{{< textin
-  question="Leaf tissue consists of the ________, which forms the outermost cell layer, and mesophyll and vascular tissue, which make up the inner portion of the leaf."
-  answer="epidermis"
-  hint="This layer includes the guard cells that regulate the pores through which gases move."
->}}
-
 {{< multiplechoice
   question="Cells of the ________ contain chloroplasts."
   answer="mesophyll"
-  hint="This tissue lies between the upper and lower epidermis and is organized into palisade and spongy layers."
+  hint="Reread the third paragraph of Leaf Structure and Function and the two-part cross-section figure after it."
 >}}
 endodermis
 vascular tissue
@@ -198,7 +193,13 @@ mesophyll
 {{< textin
   question="A waxy protective layer that covers the leaves of all plant species and reduces water loss from the leaf surface is called the ________."
   answer="cuticle"
-  hint="Reread the Leaf Structure and Function paragraph on the epidermis and the leaf surface."
+  hint="Reread the second paragraph of Leaf Structure and Function."
+>}}
+
+{{< textin
+  question="Leaf tissue consists of the ________, which forms the outermost cell layer, and mesophyll and vascular tissue, which make up the inner portion of the leaf."
+  answer="epidermis"
+  hint="Reread the first paragraph of Leaf Structure and Function."
 >}}
 
 ### Compare and contrast simple leaves and compound leaves
@@ -206,7 +207,7 @@ mesophyll
 {{< multiplechoice
   question="Leaflets are a characteristic of ________ leaves."
   answer="compound"
-  hint="Leaves whose blades are completely divided, each division attached to a rachis, carry this kind of leaflet structure."
+  hint="Reread the Leaf Form paragraph and the four-part figure after it."
 >}}
 alternate
 whorled
@@ -217,36 +218,37 @@ opposite
 {{< textin
   question="A leaf whose blade is either completely undivided or merely lobed, with the separation not reaching the midrib, is called a ________."
   answer="simple leaf"
-  accept="simple"
-  hint="The banana leaf is a familiar example of this leaf type."
+  accept="simple|simple leaves"
+  hint="Reread the opening sentences of the Leaf Form paragraph."
 >}}
 
 {{< textin
-  question="A compound leaf whose leaflets radiate outward from a single point, resembling the palm of a hand, is called a ________ leaf."
+  question="A leaf whose leaflets radiate outward from a single point, resembling the palm of a hand, is called a ________ leaf."
   answer="palmately compound"
-  accept="palmately compound leaf|palmate|palmate leaf"
-  hint="Poison ivy and the buckeye tree show this leaflet arrangement."
+  accept="palmately compound leaf|palmately compound leaves|palmate|palmate leaf|palmate leaves"
+  hint="Reread the Leaf Form paragraph and the four-part figure after it."
 >}}
 
 {{< textin
-  question="A compound leaf whose leaflets are arranged along both sides of the midrib, giving the leaf a feather-like appearance, is called a ________ leaf."
+  question="A leaf whose leaflets are arranged along both sides of the midrib, giving the leaf a feather-like appearance, is called a ________ leaf."
   answer="pinnately compound"
-  accept="pinnately compound leaf|pinnate|pinnate leaf"
-  hint="Rose leaves and the leaves of hickory, pecan, ash, and walnut trees show this arrangement."
+  accept="pinnately compound leaf|pinnately compound leaves|pinnate|pinnate leaf|pinnate leaves"
+  hint="Reread the Leaf Form paragraph and the four-part figure after it."
 >}}
 
 ### List and describe examples of modified leaves
 
 {{< textin
-  question="In some plant species, leaf form is modified to form structures such as tendrils, spines, bud scales, and ________."
-  answer="needles"
-  hint="Reread the Leaf Adaptations paragraph on plants of cold climates."
+  question="________ plants, such as the Venus flytrap and the pitcher plant, grow in bogs where the soil is low in nitrogen."
+  answer="carnivorous"
+  accept="carnivorous plant"
+  hint="Reread the Evolution Connection's paragraph on nutrient-poor environments."
 >}}
 
 {{< multiplechoice
   question="Which of the following is most likely to be found in a desert environment?"
   answer="spines instead of leaves"
-  hint="Combined with succulent stems, this leaf modification helps conserve water in hot, dry climates."
+  hint="Reread the first paragraph of Leaf Adaptations."
 >}}
 broad leaves to capture sunlight
 spines instead of leaves
@@ -254,7 +256,7 @@ needle-like leaves
 wide, flat leaves that can float
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe an example of a plant with leaves that are adapted to cold temperatures." hint="Consider a common evergreen tree family adapted to cold winters, and how its narrow leaf shape helps it conserve moisture." >}}
+{{< selfcheck question="Describe an example of a plant with leaves that are adapted to cold temperatures." hint="Reread the first paragraph of Leaf Adaptations." >}}
 Conifers such as spruce, fir, and pine have needle-shaped leaves with sunken stomata, helping to reduce water loss.
 ===CHECKS===
 conifers such as spruce, fir, and pine have needle-shaped leaves with sunken stomata
@@ -263,4 +265,4 @@ helping to reduce water loss
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 30.4: Leaves](https://openstax.org/books/biology-2e/pages/30-4-leaves) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the glossary's lowercase "ginkgo biloba" capitalized to the genus form *Ginkgo biloba* (reported as a source defect); figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own alt text; two figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_30_04_01 (a labeled line drawing of a leaf's parts, not a photograph) and Figure_30_04_02abc (a composite of three leaf photos each paired with a hand-drawn venation-pattern outline below it, drawn for print rather than captured); a longdesc added to Figure_30_04_01 and Figure_B30_04_03, walking each diagram's leader lines and cell labels in reading order since neither is carried by its one-line caption; the "Plant Adaptations in Resource-Deficient Environments" Evolution Connection and both Link to Learning notes rendered as callouts, the Evolution Connection keeping its three figures inside it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; ten text-in items added to round out the Practice groups — eight glossary-recall items (lamina, stipule, sessile, venation, cuticle, simple leaf, palmately compound leaf, pinnately compound leaf) and two cloze items built from the Section Summary (epidermis, needles). No source defect was found in this section's exercises or glossary. One review-question distractor is replaced: the source's "epidermis" is true by this section's own statement that guard cells, which are epidermal, contain chloroplasts, so the page offers "endodermis" instead; key unchanged and the change is disclosed in the source-key ledger (erratum 437).</small>
+<small>This section is adapted from [Biology 2e, Section 30.4: Leaves](https://openstax.org/books/biology-2e/pages/30-4-leaves) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the glossary's lowercase "ginkgo biloba" capitalized to the genus form *Ginkgo biloba* (a source defect); figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own alt text; two figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_30_04_01 (a labeled line drawing of a leaf's parts, not a photograph) and Figure_30_04_02abc (a composite of three leaf photos each paired with a hand-drawn venation-pattern outline below it, drawn for print rather than captured); a longdesc added to Figure_30_04_01 and Figure_B30_04_03, walking each diagram's leader lines and cell labels in reading order since neither is carried by its one-line caption; the "Plant Adaptations in Resource-Deficient Environments" Evolution Connection and both Link to Learning notes rendered as callouts, the Evolution Connection keeping its three figures inside it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; ten text-in items added to round out the Practice groups — eight glossary-recall items (lamina, stipule, sessile, venation, cuticle, simple leaf, palmately compound leaf, pinnately compound leaf), one cloze built from the Section Summary (epidermis), and one cloze built from the Evolution Connection's sentence on carnivorous plants. One review-question distractor is replaced: the source's "epidermis" is true by this section's own statement that guard cells, which are epidermal, contain chloroplasts, so the page offers "endodermis" instead; key unchanged.</small>

@@ -105,16 +105,16 @@ The tardigrades, sometimes called "water bears," are a widespread group of tiny 
 ### Describe the structural organization of nematodes
 
 {{< textin
-  question="The phylum of worm-like triploblastic, pseudocoelomate animals that can be free-living or parasitic is called ________."
+  question="The phylum of worm-like animals that are triploblastic pseudocoelomates is called ________."
   answer="Nematoda"
-  accept="nematode"
-  hint="Its name comes from the Greek word for “thread,” and it includes all true roundworms."
+  accept="nematode|phylum Nematoda|roundworm"
+  hint="Look at the opening paragraph of the section."
 >}}
 
 {{< multiplechoice
   question="The embryonic development in nematodes can have up to __________ larval stages."
   answer="four"
-  hint="Count the numbered larval stages the section lists between the embryo and the young adult worm."
+  hint="Look at the second paragraph of the nematode Reproduction subsection."
 >}}
 one
 two
@@ -133,7 +133,7 @@ chitin
 nerve cells
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the different ways in which nematodes can reproduce?" hint="The section names three reproductive strategies and then gives an example species that itself has two of the sexes those strategies describe." >}}
+{{< selfcheck question="What are the different ways in which nematodes can reproduce?" hint="Look at the opening paragraph of the nematode Reproduction subsection." >}}
 There are nematodes with separate sexes and hermaphrodites in addition to species that reproduce parthenogenetically. The nematode *Caenorhabditis elegans* has a self-fertilizing hermaphrodite sex and a pure male sex.
 ===CHECKS===
 there are nematodes with separate sexes and hermaphrodites
@@ -143,7 +143,7 @@ in addition to species that reproduce parthenogenetically
 
 ### Describe the importance of Caenorhabditis elegans in research
 
-{{< selfcheck question="Enumerate features of Caenorhabditis elegans that make it a valuable model system for biologists." hint="Think about its size, its transparency, its reproductive speed, and its short lifespan." >}}
+{{< selfcheck question="Enumerate features of Caenorhabditis elegans that make it a valuable model system for biologists." hint="Look at the second and third paragraphs of the C. elegans feature." >}}
 It is a true animal with at least rudiments of the physiological systems—feeding, nervous, muscle, and reproductive—found in "higher animals" like mice and humans. It is so small that large numbers can be raised in Petri dishes. It reproduces rapidly. It is transparent so that every cell in the living animal can be seen under the microscope. Before it dies (after 2–3 weeks), it shows signs of aging and thus may provide general clues as to the aging process.
 ===CHECKS===
 it is a true animal with rudiments of the feeding, nervous, muscle, and reproductive systems found in higher animals
@@ -168,7 +168,7 @@ before it dies, it shows signs of aging that may provide clues to the aging proc
 
 ### Describe the features of Tardigrades
 
-{{< selfcheck question="Why are tardigrades essential to recolonizing habitats following destruction or mass extinction?" hint="Think about what kind of environmental conditions tardigrades can survive that most other animals cannot." >}}
+{{< selfcheck question="Why are tardigrades essential to recolonizing habitats following destruction or mass extinction?" hint="Look at the opening paragraph of the Phylum Tardigrada subsection." >}}
 Tardigrades are extremely hardy animals that are capable of surviving extreme conditions that kill other species. Following a catastrophic event in the ecosystem, tardigrades are likely to be one of the few surviving species. They can also function as a pioneer species that moves into a vacated habitat. Once the tardigrade population has expanded in the habitat, predators that use tardigrades as a food source are able to return. This pattern continues up the food web until the ecosystem is restored.
 ===CHECKS===
 tardigrades are extremely hardy and can survive extreme conditions that kill other species
@@ -181,7 +181,7 @@ this pattern continues up the food web until the ecosystem is restored
 {{< textin
   question="Specialized proteins enable tardigrades to enter ________, a kind of suspended animation in which they can resist adverse environmental conditions."
   answer="cryptobiosis"
-  hint="The section defines this state as providing resistance to desiccation, extreme cold, vacuum, high pressure, and radiation."
+  hint="Look at the last paragraph of the Summary."
 >}}
 
 {{< multiplechoice
@@ -190,11 +190,11 @@ this pattern continues up the food web until the ecosystem is restored
   hint="Look at the opening paragraph of the Phylum Tardigrada subsection."
 >}}
 their plump bodies and the large claws on their stubby legs
-their ability to enter cryptobiosis
+their chitinous cuticle divided into plates
 their chitinous stylets used for feeding
 their pharyngeal nerve ring
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 28.5: Superphylum Ecdysozoa: Nematodes and Tardigrades](https://openstax.org/books/biology-2e/pages/28-5-superphylum-ecdysozoa-nematodes-and-tardigrades) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension guess after inspection — Figure_28_04_01ab, Figure_28_04_02ab, and Figure_28_04_03 from "photo" to "diagram" (each pairs a photograph with a labeled schematic or numbered life-cycle drawing), and Figure_B28_05_04 from "diagram" to "photo" (a scanning electron micrograph); a longdesc added to the nematode-anatomy schematic (Figure_28_04_01ab), the C. elegans life-cycle diagram (Figure_28_04_02ab), and the guinea-worm life-cycle diagram (Figure_28_04_03), walking each in reading order; the Everyday Connection note rendered as a callout, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; one key-term recall item (Nematoda) added from the glossary; the Critical Thinking model answer's "parthenogentically" (a typo nowhere else in the module, which spells the adjective form "parthenogenetic" correctly) corrected to "parthenogenetically" — reported as a source defect; because the module's own glossary supplies only two terms and its Summary two short paragraphs, the second and third Practice groups are filled out with two summary-sourced cloze textins (blanking "free-living" and "cryptobiosis" from the module's own Summary sentences) and one cloze textin built from the C. elegans feature's opening paragraph (Sydney Brenner) and one locally written multiple choice built strictly from the module's own sentences (the reason tardigrades are called "water bears"), each disclosed here and in the source ledger; the Critical Thinking questions are placed under the objectives they address, so the nematode-reproduction question, second in the source, comes before the C. elegans question. One figure is corrected with a visible Source note: the guinea worm's 3.5 million annual infections is the 1986 baseline, and the caption now says so (erratum 426).</small>
+<small>This section is adapted from [Biology 2e, Section 28.5: Superphylum Ecdysozoa: Nematodes and Tardigrades](https://openstax.org/books/biology-2e/pages/28-5-superphylum-ecdysozoa-nematodes-and-tardigrades) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension guess after inspection — Figure_28_04_01ab, Figure_28_04_02ab, and Figure_28_04_03 from "photo" to "diagram" (each pairs a photograph with a labeled schematic or numbered life-cycle drawing), and Figure_B28_05_04 from "diagram" to "photo" (a scanning electron micrograph); a longdesc added to the nematode-anatomy schematic (Figure_28_04_01ab), the C. elegans life-cycle diagram (Figure_28_04_02ab), and the guinea-worm life-cycle diagram (Figure_28_04_03), walking each in reading order; the Everyday Connection note rendered as a callout, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; one key-term recall item (Nematoda) added from the glossary; the Critical Thinking model answer's "parthenogentically" (a typo nowhere else in the module, which spells the adjective form "parthenogenetic" correctly) corrected to "parthenogenetically"; the tardigrade Critical Thinking question's "recolonizing habits" (a typo for "habitats") corrected to "recolonizing habitats"; because the module's own glossary supplies only two terms and its Summary two short paragraphs, the second and third Practice groups are filled out with two summary-sourced cloze textins (blanking "free-living" and "cryptobiosis" from the module's own Summary sentences) and one cloze textin built from the C. elegans feature's opening paragraph (Sydney Brenner) and one locally written multiple choice built strictly from the module's own sentences (the reason tardigrades are called "water bears"), each disclosed here and in the source ledger; the Critical Thinking questions are placed under the objectives they address, so the nematode-reproduction question, second in the source, comes before the C. elegans question. One figure is corrected with a visible Source note: the guinea worm's 3.5 million annual infections is the 1986 baseline, and the caption now says so.</small>

@@ -193,6 +193,18 @@ Plants respond to light by changes in morphology and activity. Irradiation by re
 
 ### Describe how red and blue light affect plant growth and metabolic activities
 
+{{< textin
+  question="A molecule that absorbs light is called a ________."
+  answer="chromophore"
+  hint="Reread the second paragraph of Plant Responses to Light."
+>}}
+
+{{< textin
+  question="The growth and development of plants in response to light is called ________."
+  answer="photomorphogenesis"
+  hint="Reread the opening paragraph of Plant Responses to Light."
+>}}
+
 {{< multiplechoice
   question="The main photoreceptor that triggers phototropism is a ________."
   answer="phototropin"
@@ -215,32 +227,31 @@ mediates morphological changes in response to red and far-red light
 inhibits plant growth
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Owners and managers of plant nurseries have to plan lighting schedules for a long-day plant that will flower in February. What lighting periods will be most effective? What color of light should be chosen?" hint="Think about which of phytochrome's two forms a long-day plant needs more of, and which end of the red/far-red spectrum builds that form up." >}}
+{{< selfcheck question="Owners and managers of plant nurseries have to plan lighting schedules for a long-day plant that will flower in February. What lighting periods will be most effective? What color of light should be chosen?" hint="Reread the phytochrome subsection's paragraphs on photoperiodism, and the Career Connection on greenhouse lighting." >}}
 A long-day plant needs a higher proportion of the Pfr form to Pr form of phytochrome. The plant requires long periods of illumination with light enriched in the red range of the spectrum.
 ===CHECKS===
 a higher proportion of the Pfr form to Pr form of phytochrome
 long periods of illumination with light enriched in the red range of the spectrum
 {{< /selfcheck >}}
 
-{{< textin
-  question="A molecule that absorbs light is called a ________."
-  answer="chromophore"
-  hint="Photoreceptors such as phytochrome and phototropin are proteins covalently bonded to one of these light-absorbing pigments."
->}}
-
-{{< textin
-  question="The directional bending of a plant toward a light source is called ________."
-  answer="phototropism"
-  accept="positive phototropism"
-  hint="It is the positive form of the light-directed growth response; its opposite, growth away from light, is skototropism."
->}}
-
 ### Discuss gravitropism
+
+{{< textin
+  question="Growth of the shoot apical tip upward, away from Earth's gravity, is called ________."
+  answer="negative gravitropism"
+  hint="Reread the last sentence of the opening paragraph of Plant Responses to Gravity."
+>}}
+
+{{< textin
+  question="Growth of the roots downward, toward Earth's gravitational center, is called ________."
+  answer="positive gravitropism"
+  hint="Reread the last sentence of the opening paragraph of Plant Responses to Gravity."
+>}}
 
 {{< multiplechoice
   question="A mutant plant has roots that grow in all directions. Which of the following organelles would you expect to be missing in the cell?"
   answer="amyloplast"
-  hint="These starch-filled plastids settle to the bottom of gravity-sensing cells; without them, a root has no way to sense which direction is down."
+  hint="Reread the second and third paragraphs of Plant Responses to Gravity."
 >}}
 mitochondria
 amyloplast
@@ -248,31 +259,38 @@ chloroplast
 nucleus
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the major benefits of gravitropism for a germinating seedling?" hint="Think about what roots need to find underground, and what shoots need to reach above ground." >}}
+{{< selfcheck question="What are the major benefits of gravitropism for a germinating seedling?" hint="Reread the opening paragraph of Plant Responses to Gravity." >}}
 Gravitropism will allow roots to dig deep into the soil to find water and minerals, whereas the seedling will grow towards light to enable photosynthesis.
 ===CHECKS===
 roots dig deep into the soil to find water and minerals
 the seedling grows towards light to enable photosynthesis
 {{< /selfcheck >}}
 
-{{< textin
-  question="Growth of the shoot apical tip upward, away from Earth's gravity, is called ________."
-  answer="negative gravitropism"
-  hint="Roots do the opposite of this — they grow toward gravity's pull, not away from it."
->}}
-
-{{< textin
-  question="Growth of the roots downward, toward Earth's gravitational center, is called ________."
-  answer="positive gravitropism"
-  hint="Shoots do the opposite of this — they grow away from gravity's pull, toward the sky."
->}}
-
 ### Understand how hormones affect plant growth and development
+
+{{< textin
+  question="The plant hormone that influences cell elongation in phototropism and gravitropism, apical dominance, and root growth is called ________."
+  answer="auxin"
+  hint="Reread the first hormone subsection under Growth Responses."
+>}}
+
+{{< textin
+  question="The plant hormone that promotes cell division is called a ________."
+  answer="cytokinin"
+  hint="Reread the second hormone subsection under Growth Responses."
+>}}
+
+{{< textin
+  question="The group of about 125 closely related plant hormones that stimulate shoot elongation, seed germination, and fruit and flower maturation are called ________."
+  answer="gibberellin"
+  accept="GA"
+  hint="Reread the third hormone subsection under Growth Responses."
+>}}
 
 {{< multiplechoice
   question="After buying green bananas or unripe avocadoes, they can be kept in a brown bag to ripen. The hormone released by the fruit and trapped in the bag is probably:"
   answer="ethylene"
-  hint="Reread the Growth Responses subsections, looking for the hormone the section associates with fruit ripening."
+  hint="Reread the Growth Responses subsections on the five major hormones."
 >}}
 abscisic acid
 cytokinin
@@ -283,7 +301,7 @@ gibberellic acid
 {{< multiplechoice
   question="A decrease in the level of which hormone releases seeds from dormancy?"
   answer="abscisic acid"
-  hint="This hormone gradually breaks down over winter, and its decline is what lets the seed germinate once spring conditions are favorable."
+  hint="Reread the Growth Responses paragraphs that discuss seed dormancy."
 >}}
 abscisic acid
 cytokinin
@@ -291,38 +309,33 @@ ethylene
 gibberellic acid
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Fruit and vegetable storage facilities are usually refrigerated and well ventilated. Why are these conditions advantageous?" hint="Think about what temperature does to chemical reaction rates, and what ventilation removes from the air around ripening produce." >}}
+{{< selfcheck question="Fruit and vegetable storage facilities are usually refrigerated and well ventilated. Why are these conditions advantageous?" hint="Reread the Growth Responses paragraphs on how fruit growers and greenhouses control ripening and leaf dropping." >}}
 Refrigeration slows chemical reactions, including fruit maturation. Ventilation removes the ethylene gas that speeds up fruit ripening.
 ===CHECKS===
 refrigeration slows chemical reactions, including fruit maturation
 ventilation removes the ethylene gas that speeds up fruit ripening
 {{< /selfcheck >}}
 
-{{< textin
-  question="The plant hormone that influences cell elongation in phototropism and gravitropism, apical dominance, and root growth is called ________."
-  answer="auxin"
-  hint="This hormone's name comes from the Greek word for 'to grow,' and IAA is its only naturally occurring, physiologically active form."
->}}
-
-{{< textin
-  question="The plant hormone that promotes cell division is called a ________."
-  answer="cytokinin"
-  hint="It was first identified through its effect on plant embryos cultured with the liquid endosperm of coconuts."
->}}
-
-{{< textin
-  question="The group of about 125 closely related plant hormones that stimulate shoot elongation, seed germination, and fruit and flower maturation are called ________."
-  answer="gibberellin"
-  accept="GA"
-  hint="Growers apply an antagonist of this hormone group to trees under power lines to reduce how often they need pruning."
->}}
-
 ### Describe thigmotropism, thigmonastism, and thigmogenesis
+
+{{< textin
+  question="A touch response that is independent of the direction of the stimulus is called a ________ response."
+  answer="thigmonastic"
+  accept="thigmonasty|thigmonastism"
+  hint="Reread the Plant Responses to Wind and Touch paragraph on the Venus flytrap."
+>}}
+
+{{< textin
+  question="A slow developmental change in the shape of a plant subjected to continuous mechanical stress is called ________."
+  answer="thigmomorphogenesis"
+  accept="thigmogenesis"
+  hint="Reread the third paragraph of Plant Responses to Wind and Touch."
+>}}
 
 {{< multiplechoice
   question="A seedling germinating under a stone grows at an angle away from the stone and upward. This response to touch is called ________."
   answer="thigmotropism"
-  hint="Reread Plant Responses to Wind and Touch, and compare the touch responses whose direction depends on the stimulus with those whose direction does not."
+  hint="Reread Plant Responses to Wind and Touch."
 >}}
 gravitropism
 thigmonasty
@@ -330,22 +343,9 @@ thigmotropism
 skototropism
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A slow developmental change in the shape of a plant subjected to continuous mechanical stress is called ________."
-  answer="thigmomorphogenesis"
-  hint="Trees bending in constant wind develop this response, usually with stunted growth and a thickened trunk."
->}}
-
-{{< textin
-  question="A touch response that is independent of the direction of the stimulus is called a ________ response."
-  answer="thigmonastic"
-  accept="thigmonasty|thigmonastism"
-  hint="The Venus flytrap's leaves close this way no matter which of several trigger hairs is touched first."
->}}
-
 ### Explain how plants defend themselves from predators and respond to wounds
 
-{{< selfcheck question="Stomata close in response to bacterial infection. Why is this response a mechanism of defense for the plant? Which hormone is most likely to mediate this response?" hint="Consider what else stomata let into the leaf besides CO₂, and which stress hormone the section names as the trigger for stomatal closing." >}}
+{{< selfcheck question="Stomata close in response to bacterial infection. Why is this response a mechanism of defense for the plant? Which hormone is most likely to mediate this response?" hint="Reread the opening paragraphs of Defense Responses against Herbivores and Pathogens, and the Growth Responses paragraph that mentions stomata closing." >}}
 To prevent further entry of pathogens, stomata close, even if they restrict entry of CO₂. Some pathogens secrete virulence factors that inhibit the closing of stomata. Abscisic acid is the stress hormone responsible for inducing closing of stomata.
 ===CHECKS===
 stomata close to prevent further entry of pathogens, even restricting entry of CO₂
@@ -356,20 +356,20 @@ abscisic acid is the stress hormone responsible for inducing closing of stomata
 {{< textin
   question="Plants also have chemical defenses, including toxic ________ and hormones, which elicit additional defense mechanisms."
   answer="secondary metabolites"
-  hint="These compounds, discussed earlier in the section, are not directly derived from photosynthesis and are not necessary for respiration or growth."
+  hint="Reread the third paragraph of Defense Responses against Herbivores and Pathogens."
 >}}
 
 {{< multiplechoice
   question="Which of the following is described in this section as a plant's first line of defense against herbivores and pathogens?"
   answer="an intact, impenetrable barrier such as bark or a waxy cuticle"
-  hint="Reread the opening paragraph of Defense Responses against Herbivores and Pathogens."
+  hint="Reread the second paragraph of Defense Responses against Herbivores and Pathogens."
 >}}
 an intact, impenetrable barrier such as bark or a waxy cuticle
-the release of toxic secondary metabolites
+alkaloids that discourage predators with noxious odors or repellent tastes
 jasmonate-triggered synthesis of volatile compounds
 abscission of the damaged tissue
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 30.6: Plant Sensory Systems and Responses](https://openstax.org/books/biology-2e/pages/30-6-plant-sensory-systems-and-responses) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_30_06_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a schematic arrow diagram of the phytochrome cycle, not a photograph) and given a longdesc walking its arrows and labels in reading order, since its content is not carried by the one-line caption; the two photographic figures (azure bluets, grapes) kept their source alt text with minor rewording, since it already named what each image shows; two in-body pointers to figures belonging to other sections' modules (a tendril-cell diagram in 30.2 and a Venus flytrap diagram in 30.4, neither vendored on this page) were dropped rather than rendered, since a figure is sourced only from its own module; two Link to Learning notes rendered as callouts with descriptive link text in place of the source's bare "website" and "movies:" anchors, external URLs kept as printed; the Career Connection note rendered as a callout with its bold name and italic title; in-text pointers to the phytochrome, phototropism, and grape figures ("Figure 30.38," "Figure 30.39," "Figure 30.40") replaced with "(pictured below)," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items (chromophore, phototropism, negative gravitropism, positive gravitropism, auxin, cytokinin, gibberellin, thigmonastic, thigmomorphogenesis) added from the glossary to round out the objective groups; and, in the fifth objective's group, one summary-derived textin cloze (blanking "secondary metabolites" from the section summary's own sentence) and one locally written multiple choice (built strictly from the section's own "first line of defense" paragraph, its three distractors drawn from the section's other, second-line defense responses) added because the section keys only one Critical Thinking item to that objective — both disclosed here and in the source ledger. Two claims are corrected with visible Source notes: Darwin's 1880 title is *The Power of Movement in Plants*, and cassava's cyanide-releasing compound is linamarin, not "glycol cyanide" (errata 435–436).</small>
+<small>This section is adapted from [Biology 2e, Section 30.6: Plant Sensory Systems and Responses](https://openstax.org/books/biology-2e/pages/30-6-plant-sensory-systems-and-responses) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_30_06_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a schematic arrow diagram of the phytochrome cycle, not a photograph) and given a longdesc walking its arrows and labels in reading order, since its content is not carried by the one-line caption; the two photographic figures (azure bluets, grapes) kept their source alt text with minor rewording, since it already named what each image shows; two in-body pointers to figures belonging to other sections' modules (a tendril-cell diagram in 30.2 and a Venus flytrap diagram in 30.4, neither vendored on this page) were dropped rather than rendered, since a figure is sourced only from its own module; two Link to Learning notes rendered as callouts with descriptive link text in place of the source's bare "website" and "movies:" anchors, external URLs kept as printed; the Career Connection note rendered as a callout with its bold name and italic title; in-text pointers to the phytochrome, phototropism, and grape figures ("Figure 30.38," "Figure 30.39," "Figure 30.40") replaced with "(pictured below)," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items (chromophore, photomorphogenesis, negative gravitropism, positive gravitropism, auxin, cytokinin, gibberellin, thigmonastic, thigmomorphogenesis) added from the glossary to round out the objective groups; and, in the fifth objective's group, one summary-derived textin cloze (blanking "secondary metabolites" from the section summary's own sentence) and one locally written multiple choice (built strictly from the section's own "first line of defense" paragraph, its three distractors drawn from the section's other, second-line defense responses) added because the section keys only one Critical Thinking item to that objective — both disclosed here and in the source ledger. Two claims are corrected with visible Source notes: Darwin's 1880 title is *The Power of Movement in Plants*, and cassava's cyanide-releasing compound is linamarin, not "glycol cyanide".</small>

@@ -101,7 +101,7 @@ Members of the phylum Craniata/Vertebrata display the five characteristic featur
 A vertebrate skeleton. Vertebrata are characterized by the presence of a backbone, such as the one that runs through the middle of this fish. All vertebrates are in the Craniata clade and have a cranium. (credit: Ernest V. More; taken at Smithsonian Museum of Natural History, Washington, D.C.)
 {{< /mediafigure >}}
 
-The relationship of the vertebrates to the invertebrate chordates has been a matter of contention, but although these cladistic relationships are still being examined, it appears that the Craniata/Vertebrata are a monophyletic group that shares the five basic chordate characteristics with the other two subphyla, Urochordata and Cephalochordata. Traditional phylogenies place the cephalochordates as a sister clade to the vertebrates, a view that has been supported by most current molecular analyses. This hypothesis is further supported by the discovery of a fossil in China from the genus *Haikouella*. This organism seems to be an intermediate form between cephalochordates and vertebrates. The *Haikouella* fossils are about 530 million years old and appear similar to modern lancelets. These organisms had a brain and eyes, as do vertebrates, but lack the skull found in craniates. This evidence suggests that vertebrates arose during the Cambrian explosion.
+The relationship of the vertebrates to the invertebrate chordates has been a matter of contention, but although these cladistic relationships are still being examined, it appears that the Craniata/Vertebrata are a monophyletic group that shares the five basic chordate characteristics with the other two subphyla, Urochordata and Cephalochordata. Traditional phylogenies place the cephalochordates as a sister clade to the vertebrates, a view that has been supported by most current molecular analyses. *(Source note: current molecular analyses instead place the urochordates (tunicates) as the sister clade to the vertebrates, which is how this section's own phylogeny above draws them.)* This hypothesis is further supported by the discovery of a fossil in China from the genus *Haikouella*. This organism seems to be an intermediate form between cephalochordates and vertebrates. The *Haikouella* fossils are about 530 million years old and appear similar to modern lancelets. These organisms had a brain and eyes, as do vertebrates, but lack the skull found in craniates. This evidence suggests that vertebrates arose during the Cambrian explosion.
 
 Vertebrates are the largest group of chordates, with more than 62,000 living species, which are grouped based on anatomical and physiological traits. More than one classification and naming scheme is used for these animals. Here we will consider the *traditional groups* Agnatha, Chondrichthyes, Osteichthyes, Amphibia, Reptilia, Aves, and Mammalia, which constitute classes in the subphylum Vertebrata/Craniata. Virtually all modern cladists classify birds within Reptilia, which correctly reflects their evolutionary heritage. Thus, we now have the nonavian reptiles and the avian reptiles in our reptilian classification. We consider them separately only for convenience. Further, we will consider hagfishes and lampreys together as jawless fishes, the **Agnatha**, although emerging classification schemes separate them into chordate jawless fishes (the hagfishes) and vertebrate jawless fishes (the lampreys).
 
@@ -136,7 +136,7 @@ The five characteristic features of chordates present during some time of their 
   question="The phylum of animals distinguished, among other features, by a dorsal hollow nerve cord and pharyngeal slits at some point in development is called ________."
   answer="Chordata"
   accept="chordates"
-  hint="This phylum groups the two invertebrate subphyla discussed in this section together with every vertebrate."
+  hint="Look at the first paragraph after the deuterostome phylogeny figure."
 >}}
 
 {{< multiplechoice
@@ -153,10 +153,10 @@ Vertebrata
 {{< textin
   question="A muscular, posterior elongation of the body extending beyond the anus, found in chordates, is called the ________."
   answer="post-anal tail"
-  hint="In humans and other great apes this structure is reduced to the vestigial coccyx that aids balance while sitting."
+  hint="Look at the last paragraph before the Link to Learning on chordate evolution."
 >}}
 
-{{< selfcheck question="What are the characteristic features of the chordates?" hint="The section opens by naming exactly five shared traits, though one of them — the endostyle/thyroid gland — sits outside this particular exercise's model answer." >}}
+{{< selfcheck question="What are the characteristic features of the chordates?" hint="Look at the first paragraph after the deuterostome phylogeny figure." >}}
 The characteristic features of the phylum Chordata are a notochord, a dorsal hollow nerve cord, pharyngeal slits, and a post-anal tail.
 ===CHECKS===
 a notochord
@@ -170,7 +170,7 @@ a post-anal tail
 {{< multiplechoice
   question="Hagfish, lampreys, sharks, and tuna are all chordates that can also be classified into which group?"
   answer="Craniates"
-  hint="Look at the first paragraph of the vertebrate subsection, on which jawless animals it includes and what they lack."
+  hint="Look at the first paragraph after the Urochordata discussion and the salp photograph."
 >}}
 Craniates
 Gnathostomes
@@ -180,7 +180,7 @@ Cephalochordata
 
 {{< multiplechoice
   question="Which group of invertebrates is most closely related to vertebrates?"
-  answer="cephalochordates"
+  answer="urochordates"
   hint="Look at the paragraph that weighs how the vertebrates relate to the two invertebrate chordate subphyla."
 >}}
 cephalochordates
@@ -197,9 +197,9 @@ urochordates
 >}}
 
 {{< textin
-  question="The clade of chordates that possess a cranium, including Vertebrata together with the hagfishes, is called ________."
-  answer="Craniata"
-  hint="This clade is treated as synonymous with Vertebrata, though the section notes the hagfishes it includes lack a backbone."
+  question="In this section's traditional groups, hagfishes and lampreys are considered together as jawless fishes, the ________."
+  answer="Agnatha"
+  hint="Look at the end of the paragraph on the traditional vertebrate groups, before the gnathostomes."
 >}}
 
 ### Describe the developmental fate of the notochord in vertebrates
@@ -207,17 +207,17 @@ urochordates
 {{< textin
   question="The flexible, rod-shaped support structure found in the embryonic stage of every chordate, and in the adult stage of some, is called the ________."
   answer="notochord"
-  hint="In vertebrates, this embryonic structure does not persist as the adult body's main axial support — something else replaces it before birth."
+  hint="Look at the second paragraph of the Characteristics of Chordata discussion."
 >}}
 
 {{< textin
-  question="A series of separate, irregularly shaped bones joined together to support the body's main axis is called the ________."
+  question="A series of separate, irregularly shaped bones joined together to form a backbone is called the ________."
   answer="vertebral column"
-  accept="spine|backbone"
-  hint="In most vertebrates, the notochord's remnant becomes the nucleus pulposus that cushions each segment of this jointed structure."
+  accept="spine|vertebrae"
+  hint="Look at the paragraph right after the craniate skull figure."
 >}}
 
-{{< selfcheck question="What is the structural advantage of the notochord in the human embryo? Be sure to compare the notochord with the corresponding structure in adults." hint="Weigh what a flexible rod supports against what a rigid, bony one restricts, for a body still folded inside the uterus." >}}
+{{< selfcheck question="What is the structural advantage of the notochord in the human embryo? Be sure to compare the notochord with the corresponding structure in adults." hint="Look at the notochord paragraph under Characteristics of Chordata, then the paragraph after the craniate skull figure." >}}
 The notochord is a flexible structure that provides support for the embryo's body and formation of the neural tube. In the adults, the notochord has been replaced by the bony, rigid vertebral column. This loss of flexibility restricts the movement of adult humans, and would make it unlikely that the embryo would fit within the small space it is allotted inside the uterus.
 ===CHECKS===
 the notochord is a flexible structure that provides support for the embryo's body and formation of the neural tube
@@ -228,4 +228,4 @@ would make it unlikely that the embryo would fit within the small space it is al
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 29.1: Chordates](https://openstax.org/books/biology-2e/pages/29-1-chordates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B29_01_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a drawn cladogram, not a photograph) and given a rewritten alt and a longdesc tracing every branch and label in reading order, because the source alt describes a "Craniata" node and a Myxini/Vertebrata split that the actual figure does not draw — the image instead pairs Myxini and Petromyzontida as sister tips under a lineage labeled Vertebrata, with no "Craniata" label anywhere — reported as a source defect; Figure_29_01_05 re-kinded from "photo" to "diagram" (a line illustration, not a photograph); a longdesc added to Figure_29_01_02, Figure_29_01_04, Figure_B29_01_02abc, and Figure_29_01_05, walking each labeled diagram in reading order (Figure_B29_01_02abc's panel (b) prints its own notochord label as "notocord," an artwork typo corrected in the longdesc's wording, not in the image); the note wrapping the chordate-features Visual Connection rendered as its figure followed by a multiple choice, kept in the body, using the four options and key of the module's own visual-exercise item (the note's inline list of the same question in the body prints a fifth option, "The endostyle secretes steroid hormones," that the graded exercise does not carry — the multiple choice keeps the graded exercise's four options rather than inventing a distractor) — reported as a source defect; the "interactive interactive-long" note rendered as a Link to Learning callout; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each self-check given rubric checkpoints decomposing its model answer with no new claims; six key-term recall items (Chordata, post-anal tail, cranium, Craniata, notochord, vertebral column) added from the glossary; Practice items placed under the objective each tests, so the hagfish Review Question, third in the source, comes before the question on which invertebrates are most closely related to vertebrates; in that hagfish Review Question (`fs-idm71000689`), the distractor "Vertebrates" replaced with "Gnathostomes," because the section's own text names the clade "Craniata/Vertebrata," says it "includes the primitively jawless Myxini (hagfishes)," and says "The name Craniata… is considered to be synonymous with Vertebrata" — leaving the source item with two supportable answers — while the section defines gnathostomes as the animals that possess jaws, which excludes hagfishes and lampreys (reported as a source defect; key unchanged).</small>
+<small>This section is adapted from [Biology 2e, Section 29.1: Chordates](https://openstax.org/books/biology-2e/pages/29-1-chordates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B29_01_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a drawn cladogram, not a photograph) and given a rewritten alt and a longdesc tracing every branch and label in reading order, because the source alt describes a "Craniata" node and a Myxini/Vertebrata split that the actual figure does not draw — the image instead pairs Myxini and Petromyzontida as sister tips under a lineage labeled Vertebrata, with no "Craniata" label anywhere — a source defect; Figure_29_01_05 re-kinded from "photo" to "diagram" (a line illustration, not a photograph); a longdesc added to Figure_29_01_02, Figure_29_01_04, Figure_B29_01_02abc, and Figure_29_01_05, walking each labeled diagram in reading order (Figure_B29_01_02abc's panel (b) prints its own notochord label as "notocord," an artwork typo corrected in the longdesc's wording, not in the image); the note wrapping the chordate-features Visual Connection rendered as its figure followed by a multiple choice, kept in the body, using the four options and key of the module's own visual-exercise item (the note's inline list of the same question in the body prints a fifth option, "The endostyle secretes steroid hormones," that the graded exercise does not carry — the multiple choice keeps the graded exercise's four options rather than inventing a distractor) — a source defect; the "interactive interactive-long" note rendered as a Link to Learning callout; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each self-check given rubric checkpoints decomposing its model answer with no new claims; five key-term recall items (Chordata, post-anal tail, cranium, notochord, vertebral column) added from the glossary, and one recall item (Agnatha) built from the section's own sentence grouping hagfishes and lampreys as jawless fishes; Practice items placed under the objective each tests, so the hagfish Review Question, third in the source, comes before the question on which invertebrates are most closely related to vertebrates; in that hagfish Review Question (`fs-idm71000689`), the distractor "Vertebrates" replaced with "Gnathostomes," because the section's own text names the clade "Craniata/Vertebrata," says it "includes the primitively jawless Myxini (hagfishes)," and says "The name Craniata… is considered to be synonymous with Vertebrata" — leaving the source item with two supportable answers — while the section defines gnathostomes as the animals that possess jaws, which excludes hagfishes and lampreys (a source defect; key unchanged); and the question on which invertebrates are most closely related to vertebrates keyed "urochordates" where the source keys "cephalochordates," with a visible Source note on the body sentence claiming molecular support for a cephalochordate sister clade: current molecular analyses place the urochordates there, as the section's own phylogeny draws them (a source defect).</small>

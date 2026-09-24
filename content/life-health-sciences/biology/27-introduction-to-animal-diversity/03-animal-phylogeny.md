@@ -29,7 +29,7 @@ The current understanding of evolutionary relationships among animal, or **Metaz
 Choanoflagellates and choanocytes. Cells of the protist choanoflagellate clade closely resemble sponge choanocyte cells. Beating of choanocyte flagella draws water through the sponge so that nutrients can be extracted and waste removed.
 {{< /mediafigure >}}
 
-Eumetazoa are subdivided into radially symmetrical animals and bilaterally symmetrical animals, and are thus classified into the clades Bilateria and Radiata, respectively. As mentioned earlier, the cnidarians and ctenophores are animal phyla with true radial, biradial, or rotational symmetry. All other Eumetazoa are members of the Bilateria clade. The bilaterally symmetrical animals are further divided into deuterostomes (including chordates and echinoderms) and two distinct clades of protostomes (including ecdysozoans and lophotrochozoans, pictured below). **Ecdysozoa** includes nematodes and arthropods; they are so named for a commonly found characteristic among the group: the physiological process of exoskeletal *molting* followed by the "stripping" of the outer cuticular layer, called *ecdysis*. **Lophotrochozoa** is named for two structural features, each common to certain phyla within the clade. Some lophotrochozoan phyla are characterized by a larval stage called *trochophore larvae*, and other phyla are characterized by the presence of a feeding structure called a *lophophore* (thus, the shorter term, "lopho-trocho-zoa").
+Eumetazoa are subdivided into radially symmetrical animals and bilaterally symmetrical animals, and are thus classified into the clades Radiata and Bilateria, respectively. As mentioned earlier, the cnidarians and ctenophores are animal phyla with true radial, biradial, or rotational symmetry. All other Eumetazoa are members of the Bilateria clade. The bilaterally symmetrical animals are further divided into deuterostomes (including chordates and echinoderms) and two distinct clades of protostomes (including ecdysozoans and lophotrochozoans, pictured below). **Ecdysozoa** includes nematodes and arthropods; they are so named for a commonly found characteristic among the group: the physiological process of exoskeletal *molting* followed by the "stripping" of the outer cuticular layer, called *ecdysis*. **Lophotrochozoa** is named for two structural features, each common to certain phyla within the clade. Some lophotrochozoan phyla are characterized by a larval stage called *trochophore larvae*, and other phyla are characterized by the presence of a feeding structure called a *lophophore* (thus, the shorter term, "lopho-trocho-zoa").
 
 {{< mediafigure src="biology/Figure_27_03_02ab" kind="photo" alt="Two side-by-side photos: (a) two dark, striped adult cockroaches flanking a paler, newly molted white cockroach on a piece of bark, and (b) a cluster of translucent pinkish phoronid tentacle crowns fanned out from slender stalks anchored among rock and sediment." >}}
 Ecdysozoa. Animals that molt their exoskeletons, such as these (a) Madagascar hissing cockroaches, are in the clade Ecdysozoa. (b) Phoronids are in the clade Lophotrochozoa. The tentacles are part of a feeding structure called a lophophore. (credit a: modification of work by Whitney Cranshaw, Colorado State University, Bugwood.org; credit b: modification of work by NOAA)
@@ -77,10 +77,30 @@ Scientists are interested in the evolutionary history of animals and the evoluti
 
 ### Interpret the metazoan phylogenetic tree
 
+{{< textin
+  question="The group containing all animals is called ________."
+  answer="Metazoa"
+  accept="metazoan"
+  hint="Look at the first sentence of the Constructing an Animal Phylogenetic Tree subsection."
+>}}
+
+{{< textin
+  question="The group of animals with true differentiated tissues is called ________."
+  answer="Eumetazoa"
+  hint="Look at the first paragraph of the Constructing an Animal Phylogenetic Tree subsection."
+>}}
+
+{{< textin
+  question="The cnidarians and ctenophores have true radial, biradial, or rotational symmetry; all other animals with true differentiated tissues are members of the clade ________."
+  answer="Bilateria"
+  accept="bilaterian"
+  hint="Look at the paragraph after the choanoflagellate figure in the Constructing an Animal Phylogenetic Tree subsection."
+>}}
+
 {{< multiplechoice
   question="Consulting the modern phylogenetic tree of animals, which of the following would not constitute a clade?"
   answer="Parazoa"
-  hint="A clade contains a common ancestor and all of its descendants; check each option against the Constructing an Animal Phylogenetic Tree subsection and the previous section's phylogenetic tree."
+  hint="Check each option against the Constructing an Animal Phylogenetic Tree subsection and the previous section's phylogenetic tree."
 >}}
 deuterostomes
 lophotrochozoans
@@ -88,25 +108,14 @@ Parazoa
 Bilateria
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The group containing all animals is called ________."
-  answer="Metazoa"
-  hint="This is the formal name for the animal kingdom as a whole, from sponges to chordates, before it is split into any smaller clades."
->}}
-
-{{< textin
-  question="The group of animals with true differentiated tissues is called ________."
-  answer="Eumetazoa"
-  hint="This subgroup of the animal kingdom excludes the sponges and the Placozoa, which lack this feature."
->}}
-
-{{< textin
-  question="The group of animals without true differentiated tissues is called ________."
-  answer="Parazoa"
-  hint="Sponges belong to this group, which sits outside the clade of animals with true tissues."
->}}
-
 ### Describe the types of data that scientists use to construct and revise animal phylogeny
+
+{{< textin
+  question="Morphological information, fossil record data, and, most recently, ________ are the three main sources of data scientists use to construct phylogenetic tree diagrams."
+  answer="molecular data"
+  accept="genetic data|molecular"
+  hint="Look at the second sentence of the Section Summary."
+>}}
 
 {{< multiplechoice
   question="As with the emergence of the Acoelomorpha phylum, it is common for ____ data to misplace animals in close relation to other species, whereas ____ data often reveals a different and more accurate evolutionary relationship."
@@ -119,19 +128,12 @@ fossil record : morphological
 morphological : molecular
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How is it that morphological data alone might lead scientists to group animals into erroneous evolutionary relationships?" hint="Consider how two unrelated animals living in similar environments might evolve to look alike without sharing a recent common ancestor." >}}
+{{< selfcheck question="How is it that morphological data alone might lead scientists to group animals into erroneous evolutionary relationships?" hint="Look at the second paragraph of the section, before the first subsection." >}}
 In many cases, morphological similarities between animals may be only superficial similarities and may not indicate a true evolutionary relationship. One of the reasons for this is that certain morphological traits can evolve along very different evolutionary branches of animals for similar ecological reasons.
 ===CHECKS===
 morphological similarities between animals may be only superficial and may not indicate a true evolutionary relationship
 certain morphological traits can evolve along very different evolutionary branches of animals for similar ecological reasons
 {{< /selfcheck >}}
-
-{{< textin
-  question="Morphological information, fossil record data, and, most recently, ________ are the three main sources of data scientists use to construct phylogenetic tree diagrams."
-  answer="molecular data"
-  accept="genetic data"
-  hint="This newest of the three sources draws on DNA, RNA, and protein comparisons rather than anatomy or preserved remains."
->}}
 
 ### List some of the relationships within the modern phylogenetic tree that have been discovered as a result of modern molecular data
 
@@ -149,16 +151,18 @@ bacterial cells
 {{< textin
   question="The clade of protostomes whose members periodically shed and replace their exoskeleton is called ________."
   answer="Ecdysozoa"
-  hint="This clade includes the nematodes and the arthropods."
+  accept="ecdysozoan"
+  hint="Look at the paragraph after the choanoflagellate figure in the Constructing an Animal Phylogenetic Tree subsection."
 >}}
 
 {{< textin
   question="The clade of protostomes whose members have a trochophore larval stage or a lophophore feeding structure is called ________."
   answer="Lophotrochozoa"
+  accept="lophotrochozoan"
   hint="Look at the paragraph in the Constructing an Animal Phylogenetic Tree subsection that divides the bilaterally symmetrical animals."
 >}}
 
-{{< selfcheck question="Describe at least two major changes to the animal phylogenetic tree that have come about due to molecular or genetic findings." hint="Think about the two new protostome clades named earlier in the section, and about the new worm phylum that molecular data separated from the true flatworms." >}}
+{{< selfcheck question="Describe at least two major changes to the animal phylogenetic tree that have come about due to molecular or genetic findings." hint="Look at the Modern Advances in Phylogenetic Understanding Come from Molecular Analyses subsection." >}}
 Two new clades that comprise the two major groups of protostomes are called the lophotrochozoans and the ecdysozoans. The formation of these two clades came about through molecular research from DNA and protein data. Also, the novel phylum of worm called Acoelomorpha was determined due to molecular data that distinguished them from other flatworms.
 ===CHECKS===
 two new clades, the lophotrochozoans and the ecdysozoans, comprise the two major groups of protostomes
@@ -168,4 +172,4 @@ the novel phylum of worm called Acoelomorpha was determined due to molecular dat
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 27.3: Animal Phylogeny](https://openstax.org/books/biology-2e/pages/27-3-animal-phylogeny) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_27_03_01 re-kinded from the manifest's file-extension "photo" guess to `kind="diagram"` (it is a hand-drawn, labeled comparison illustration, not a photograph), and its alt rewritten from the source's own alt — which said "the two cells appear identical" and named only two images and misspelled "protist" as "protest" — to describe all three drawn elements (the choanoflagellate, the isolated choanocyte, and the sponge cross-section with its highlighted cell and connecting arrow); the two `interactive` Link to Learning notes rendered as callouts with descriptive link text in place of the source's bare "tree" and "video"; the module's internal cross-reference to "Chapter 27.2" (a `<link>` with no visible section number, rendered here as "the phylogeny presented earlier in this chapter" since sections are not cross-referenced by number in this build) reworded accordingly; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the module has no Visual Connection item; five key-term recall items (Ecdysozoa, Eumetazoa, Lophotrochozoa, Metazoa, Parazoa) added from the glossary, and one cloze text-in built from the Section Summary's sentence naming the three sources of phylogenetic data, to round out the second objective's group; the opening paragraph's parenthetical cross-reference to the animal phylogeny figure of the previous section (a figure this page does not carry) dropped.</small>
+<small>This section is adapted from [Biology 2e, Section 27.3: Animal Phylogeny](https://openstax.org/books/biology-2e/pages/27-3-animal-phylogeny) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_27_03_01 re-kinded from the manifest's file-extension "photo" guess to `kind="diagram"` (it is a hand-drawn, labeled comparison illustration, not a photograph), and its alt rewritten from the source's own alt — which said "the two cells appear identical" and named only two images and misspelled "protist" as "protest" — to describe all three drawn elements (the choanoflagellate, the isolated choanocyte, and the sponge cross-section with its highlighted cell and connecting arrow); the two `interactive` Link to Learning notes rendered as callouts with descriptive link text in place of the source's bare "tree" and "video"; the module's internal cross-reference to "Chapter 27.2" reworded as "the phylogeny presented earlier in this chapter", since sections are not cross-referenced by number in this build; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the module has no Visual Connection item; four key-term recall items (Ecdysozoa, Eumetazoa, Lophotrochozoa, Metazoa) added from the glossary — Parazoa, the key of the first Review Question, is left as a Key-terms bullet — one text-in (Bilateria) built from the Constructing an Animal Phylogenetic Tree subsection's sentence placing all other Eumetazoa in that clade, and one cloze text-in built from the Section Summary's sentence naming the three sources of phylogenetic data; the Review Questions and Critical Thinking Questions are placed under the objectives they test, so the third Review Question comes before the second and the second Critical Thinking Question before the first; the Constructing an Animal Phylogenetic Tree subsection's first paragraph's parenthetical cross-reference to the animal phylogeny figure of the previous section (a figure this page does not carry) dropped; the sentence splitting the Eumetazoa reads "the clades Radiata and Bilateria, respectively," where the source pairs the radial animals with Bilateria and the bilateral animals with Radiata.</small>

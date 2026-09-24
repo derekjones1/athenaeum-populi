@@ -110,9 +110,10 @@ In the gymnosperms, which appeared during the drier Permian period and became th
 ### Describe the two major innovations that allowed seed plants to reproduce in the absence of water
 
 {{< textin
-  question="The structure containing an embryo, storage tissue, and a protective coat is called a ________."
-  answer="seed"
-  hint="This structure lets a plant disperse its next generation through both space and time, remaining dormant until conditions favor growth."
+  question="Seeds protect the embryo from ________ and provide it with a store of nutrients to support the early growth of the sporophyte."
+  answer="desiccation"
+  accept="drying out"
+  hint="Reread this section's summary, at its sentences on what seeds give the embryo."
 >}}
 
 {{< multiplechoice
@@ -126,7 +127,7 @@ pollen
 spore
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What role did the adaptations of seed and pollen play in the development and expansion of seed plants?" hint="Consider how these two structures let plants complete fertilization and reach new ground without a film of water." >}}
+{{< selfcheck question="What role did the adaptations of seed and pollen play in the development and expansion of seed plants?" hint="Reread the fourth paragraph of this section, and the summary's opening sentences." >}}
 Seeds and pollen allowed plants to reproduce in absence of water. This allowed them to expand their range onto dry land and to survive drought conditions.
 ===CHECKS===
 allowed plants to reproduce in absence of water
@@ -150,13 +151,13 @@ Eocene (present)
 {{< textin
   question="A transitional group of plants that resembled conifers because they produced wood, yet still reproduced like ferns, is called a ________."
   answer="progymnosperm"
-  hint="This group, including the extinct genus *Archaeopteris*, dominated late Devonian forests before true gymnosperms replaced them."
+  hint="Reread the fifth paragraph of this section, just above the plant-timeline figure."
 >}}
 
 {{< textin
   question="The Greek-derived term for a seed plant — literally 'seed' plus 'plant' — is a ________."
   answer="spermatophyte"
-  hint="Reread the opening paragraph of this section."
+  hint="Reread the second paragraph of this section, on the types of spores plants produce."
 >}}
 
 ### Discuss the purpose of pollen grains and seeds
@@ -164,7 +165,7 @@ Eocene (present)
 {{< multiplechoice
   question="Seed plants are ________."
   answer="all heterosporous"
-  hint="Reread the opening paragraph of this section, on the types of spores plants produce."
+  hint="Reread the second paragraph of this section, on the types of spores plants produce."
 >}}
 all homosporous
 mostly homosporous with some heterosporous
@@ -175,7 +176,7 @@ all heterosporous
 {{< multiplechoice
   question="Which of the following structures widens the geographic range of a species and is an agent of dispersal?"
   answer="seed"
-  hint="Reread the opening paragraphs of this section, on dispersing the next generation."
+  hint="Reread the fourth paragraph of this section."
 >}}
 seed
 flower
@@ -184,27 +185,27 @@ root
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The structure that contains the male gametophyte of a seed plant is called a ________."
-  answer="pollen grain"
-  accept="pollen"
-  hint="Reread the subsection on the adaptations to dry land, at its sentences on how sperm reach the female gametophyte."
+  question="Seeds remain in a state of dormancy—induced by desiccation and the hormone ________—until conditions for growth become favorable."
+  answer="abscisic acid"
+  accept="ABA"
+  hint="Reread the subsection on the adaptations to dry land, at its first paragraph."
 >}}
 
 {{< textin
   question="The extension that grows from a pollen grain and delivers a sperm nucleus to the egg cell is called a ________."
   answer="pollen tube"
-  hint="It forms after the structure carrying it reaches the female gametophyte, delivering sperm without any need for a film of water."
+  hint="Reread the subsection on the adaptations to dry land, at its second paragraph."
 >}}
 
 {{< textin
-  question="In a seed plant, the female gametophyte is also known as the ________."
+  question="In a seed plant, the structure within which the female gametophyte develops, and which becomes the seed after fertilization, is called the ________."
   answer="ovule"
-  hint="In the earliest known seed ferns, such as *Elkinsia*, this structure was enclosed and protected within a cupule."
+  hint="Reread the opening paragraph under Evolution of Gymnosperms, on the earliest seed ferns."
 >}}
 
 ### Describe the significance of angiosperms bearing both flowers and fruit
 
-{{< selfcheck question="The Cretaceous Period was marked by the increase in number and variety of angiosperms. Insects also diversified enormously during the same period. Can you propose the reason or reasons that could foster coevolution?" hint="Consider two different kinds of insect relationships with plants — one that plants would want to encourage and one they would want to discourage." >}}
+{{< selfcheck question="The Cretaceous Period was marked by the increase in number and variety of angiosperms. Insects also diversified enormously during the same period. Can you propose the reason or reasons that could foster coevolution?" hint="Reread the first paragraph under Evolution of Angiosperms, at its closing sentences on insects." >}}
 Both pollination and herbivory contributed to diversity, with plants needing to attract some insects and repel others.
 ===CHECKS===
 pollination contributed to diversity
@@ -216,15 +217,15 @@ plants needed to repel others
 {{< textin
   question="Branches specialized for reproduction in some seed-bearing plants, containing male organs, female organs, or both, are called a ________."
   answer="flower"
-  hint="Its distinctive size, shape, color, and smell often reflect the nature of its pollinator, in a relationship called coevolution."
+  hint="Reread the first paragraph of the subsection on adaptations of angiosperms."
 >}}
 
 {{< textin
   question="Thickened tissue derived from the ovary wall that protects the embryo after fertilization and helps disperse seeds is called ________."
   answer="fruit"
-  hint="Tomatoes, green peppers, corn, and avocados are all examples of this structure."
+  hint="Reread the second paragraph of the subsection on adaptations of angiosperms."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 26.1: Evolution of Seed Plants](https://openstax.org/books/biology-2e/pages/26-1-evolution-of-seed-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than the source's own alt text; two figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_B26_01_09 (the geologic-timeline table) and Figure_B26_01_07 (the plant phylogeny), neither a captured photograph; a longdesc added to both of those figures, walking the timeline's rows and plant-group labels and the phylogeny's branches and nodes in reading order, since neither is carried by its one-line caption; the pollen-fossil figure's alt rewritten from the module's "four different kinds" summary to describe the actual four-row, fourteen-grain arrangement visible in the micrograph; the timeline figure's own alt text, which describes "the Carboniferous from 290 to 290 million years ago," an internally contradictory span (the table's own tick marks read 290 to 319) — reported as a source defect; the "Building Phylogenetic Trees with Analysis of DNA Sequence Alignments" Evolution Connection rendered as a callout with its figure kept inside it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eight key-term recall items (seed, progymnosperm, spermatophyte, pollen grain, pollen tube, ovule, flower, fruit) added from the glossary; the Review Question "Besides the seed, what other major structure diminishes a plant's reliance on water for reproduction?" keyed "pollen" where the source keys "flower", because the module's own text names seeds and pollen as the two innovations that let seed plants "reduce or eliminate their dependence on water" and its summary repeats "Two major innovations were seeds and pollen" — reported as a source defect. Two claims are corrected with visible Source notes: progymnosperms are forerunners of the seed plants, not "the first naked seed plants" that the same sentence says reproduced by spores, and the ovule key term is the structure in which the female gametophyte develops rather than the gametophyte itself (errata 420, 422).</small>
+<small>This section is adapted from [Biology 2e, Section 26.1: Evolution of Seed Plants](https://openstax.org/books/biology-2e/pages/26-1-evolution-of-seed-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than the source's own alt text; two figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_B26_01_09 (the geologic-timeline table) and Figure_B26_01_07 (the plant phylogeny), neither a captured photograph; a longdesc added to both of those figures, walking the timeline's rows and plant-group labels and the phylogeny's branches and nodes in reading order, since neither is carried by its one-line caption; the pollen-fossil figure's alt rewritten from the module's "four different kinds" summary to describe the actual four-row, fourteen-grain arrangement visible in the micrograph; the timeline figure's own alt text, which describes "the Carboniferous from 290 to 290 million years ago," an internally contradictory span (the table's own tick marks read 290 to 319) — a source defect; the "Building Phylogenetic Trees with Analysis of DNA Sequence Alignments" Evolution Connection rendered as a callout with its figure kept inside it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (progymnosperm, spermatophyte, pollen tube, ovule, flower, fruit) added from the glossary, the ovule item worded from this page's corrected Key-terms meaning rather than the source glossary's; two cloze items added, one from a summary sentence (desiccation) and one from a body sentence (abscisic acid); the Review Question "Besides the seed, what other major structure diminishes a plant's reliance on water for reproduction?" keyed "pollen" where the source keys "flower", because the module's own text names seeds and pollen as the two innovations that let seed plants "reduce or eliminate their dependence on water" and its summary repeats "Two major innovations were seeds and pollen" — a source defect. Two claims are corrected with visible Source notes: progymnosperms are forerunners of the seed plants, not "the first naked seed plants" that the same sentence says reproduced by spores, and the ovule key term is the structure in which the female gametophyte develops rather than the gametophyte itself.</small>

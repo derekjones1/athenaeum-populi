@@ -87,17 +87,17 @@ Roots help to anchor a plant, absorb water and minerals, and serve as storage si
   question="A root system with a main root that grows vertically and only a few lateral roots, found in dicots, is called a ________."
   answer="tap root system"
   accept="taproot system|tap root|taproot"
-  hint="This root type penetrates deep into the soil; dandelions are a familiar example, since pulling one often snaps this main root and leaves it to regrow a new shoot."
+  hint="See the Types of Root Systems paragraph."
 >}}
 
 {{< textin
   question="A root system in which roots arise from the base of the stem in a cluster, forming a dense network closer to the soil surface, is called a ________."
   answer="fibrous root system"
   accept="fibrous root"
-  hint="Lawn grasses and cereal crops like wheat, rice, and corn — all monocots — grow this shallow, erosion-resisting tangle of many small roots instead of one dominant root."
+  hint="See the Types of Root Systems paragraph."
 >}}
 
-{{< selfcheck question="Compare a tap root system with a fibrous root system. For each type, name a plant that provides a food in the human diet. Which type of root system is found in monocots? Which type of root system is found in dicots?" hint="Think about which system penetrates straight down and which spreads in a shallow network, and which group of plants — grasses or dicots — grows each one." >}}
+{{< selfcheck question="Compare a tap root system with a fibrous root system. For each type, name a plant that provides a food in the human diet. Which type of root system is found in monocots? Which type of root system is found in dicots?" hint="See the Types of Root Systems paragraph and the first paragraph of Root Modifications." >}}
 A tap root system has a single main root that grows down. A fibrous root system forms a dense network of roots that is closer to the soil surface. An example of a tap root system is a carrot. Grasses such as wheat, rice, and corn are examples of fibrous root systems. Fibrous root systems are found in monocots; tap root systems are found in dicots.
 ===CHECKS===
 a tap root system has a single main root that grows down
@@ -112,19 +112,19 @@ fibrous root systems are found in monocots; tap root systems are found in dicots
 {{< textin
   question="In the root tip's zone of ________, newly formed cells increase in length, lengthening the root."
   answer="elongation"
-  hint="This zone sits just behind the zone of cell division nearest the tip."
+  hint="See the opening paragraph of Root Growth and Anatomy."
 >}}
 
 {{< textin
   question="The protective cells that cover the tip of a growing root are collectively called the ________."
   answer="root cap"
-  hint="It is continuously replaced because it gets damaged easily as the root pushes through soil, and it covers the tip where the zone of cell division sits."
+  hint="See the opening paragraph of Root Growth and Anatomy."
 >}}
 
 {{< multiplechoice
   question="Newly-formed root cells begin to form different cell types in the ________."
   answer="zone of maturation"
-  hint="This is the zone farthest from the root tip, behind the zone where newly formed cells lengthen."
+  hint="See the opening paragraph of Root Growth and Anatomy and the Summary's sentence on the root tip."
 >}}
 zone of elongation
 zone of maturation
@@ -137,7 +137,7 @@ zone of cell division
 {{< multiplechoice
   question="The ________ forces selective uptake of minerals in the root."
   answer="endodermis"
-  hint="Reread the Root Growth and Anatomy paragraph on the root's vascular tissue, and ask which layer the section calls a checkpoint for materials entering it."
+  hint="See the Root Growth and Anatomy paragraph after the wheat-root micrograph."
 >}}
 pericycle
 epidermis
@@ -145,7 +145,7 @@ endodermis
 root cap
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What might happen to a root if the pericycle disappeared?" hint="Think about what tissue the pericycle is described as giving rise to earlier in the section." >}}
+{{< selfcheck question="What might happen to a root if the pericycle disappeared?" hint="See the Root Growth and Anatomy paragraph after the wheat-root micrograph." >}}
 The root would not be able to produce lateral roots.
 ===CHECKS===
 the root would not be able to produce
@@ -155,20 +155,20 @@ lateral roots
 {{< textin
   question="An extension of a root epidermal cell that increases the root's surface area and aids in absorbing water and minerals is called a ________."
   answer="root hair"
-  hint="These first appear where the zone of elongation ends and the zone of maturation begins."
+  hint="See the Root Growth and Anatomy paragraph on the root's outer layer of cells."
 >}}
 
 {{< textin
   question="The inner portion of the root that contains the vascular tissue, surrounded by the endodermis, is called the ________."
   answer="stele"
   accept="vascular cylinder"
-  hint="This region holds the root's xylem and phloem, arranged in an X shape in dicots and a ring around the pith in monocots."
+  hint="See the Root Growth and Anatomy paragraph after the wheat-root micrograph."
 >}}
 
 {{< textin
   question="The waxy region on endodermal cell walls that forces water and solutes to cross the plasma membrane instead of slipping between cells is called the ________."
   answer="Casparian strip"
-  hint="This structure is made of a waxy substance called suberin, and it ensures that only materials the root needs pass through the endodermis while toxic substances and pathogens are excluded."
+  hint="See the Root Growth and Anatomy paragraph after the wheat-root micrograph."
 >}}
 
 ### List and describe examples of modified roots
@@ -176,13 +176,14 @@ lateral roots
 {{< textin
   question="An aboveground root that arises from a plant part other than the radicle of the plant embryo is called a(n) ________."
   answer="adventitious root"
-  hint="Unlike a typical root system that begins at the embryo's radicle, this one grows directly from the shoot, above the ground."
+  hint="See the page's opening paragraph."
 >}}
 
 {{< textin
-  question="In some habitats, the roots of certain plants may be modified to form ________ or epiphytic roots."
-  answer="aerial roots"
-  hint="These roots grow above ground, like the ones that let the banyan tree's branches reach down and eventually reach the soil."
+  question="Tap roots, such as carrots, turnips, and beets, are examples of roots that are modified for ________."
+  answer="food storage"
+  accept="storage|storing food"
+  hint="See the first paragraph of Root Modifications."
 >}}
 
 {{< multiplechoice
@@ -198,4 +199,4 @@ aerial roots
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 30.3: Roots](https://openstax.org/books/biology-2e/pages/30-3-roots) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a concise custom alt describing each image rather than the source's longer walk-through alt text; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_30_03_02, the labeled root-tip zone drawing, and Figure_30_03_04, the labeled dicot/monocot cross-section schematic — both hand-drawn line diagrams, not photographs); a longdesc added to Figure_30_03_02, Figure_30_03_03f, and Figure_30_03_04, whose leader-line labels are not carried by their one- or two-sentence captions; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (tap root system, fibrous root system, root cap, root hair, stele, Casparian strip, adventitious root) added from the glossary, plus two cloze recall items built from the section summary's own sentences (the root tip's zone of elongation; aerial roots as a root modification).</small>
+<small>This section is adapted from [Biology 2e, Section 30.3: Roots](https://openstax.org/books/biology-2e/pages/30-3-roots) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a concise custom alt describing each image rather than the source's longer walk-through alt text; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_30_03_02, the labeled root-tip zone drawing, and Figure_30_03_04, the labeled dicot/monocot cross-section schematic — both hand-drawn line diagrams, not photographs); a longdesc added to Figure_30_03_02, Figure_30_03_03f, and Figure_30_03_04, whose leader-line labels are not carried by their one- or two-sentence captions; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), the Review Questions placed under the objectives they test, which reverses their source order (the zone-of-maturation question, third in the source, comes first and the epiphytic-roots question, first in the source, comes last); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (tap root system, fibrous root system, root cap, root hair, stele, Casparian strip, adventitious root) added from the glossary, plus two cloze recall items built from the module's own body sentences (the root tip's zone of elongation; tap roots modified for food storage).</small>

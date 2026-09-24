@@ -80,7 +80,7 @@ Another mass extinction event occurred at the end of the Cretaceous period, brin
 Watch [a video about the mass extinctions](https://openstax.org/l/mass_extinction) that have occurred throughout the evolutionary history of animals.
 {{< /callout >}}
 
-{{< mediafigure src="biology/Figure_B27_04_06-extinctions" kind="diagram" alt="An untitled line graph plotting extinction occurrences as a percentage of marine genera against millions of years before present, with five labeled peaks marking major mass-extinction boundaries and tinted background bands between some of them." longdesc="The x-axis runs from about 550 to 0 million years before present time, left to right toward the present; the y-axis runs from 0 to over 50 percent extinction occurrences among marine genera. A jagged gray line tracks extinction intensity throughout, with five points marked by purple dots and labels, left to right: 'end-Ordovician' at about 450 million years ago and about 30 percent; 'end-Devonian' at about 375 million years ago and roughly 23 percent; 'end-Permian' at about 250 million years ago and the graph's highest point, about 51 percent; 'end-Triassic' at about 200 million years ago and about 29 percent; and 'end-Cretaceous' at about 66 million years ago and about 31 percent. Tinted vertical bands fill the background: orange up to the end-Ordovician marker, red-orange from there to the end-Devonian marker, then one band that shades gradually from mauve to blue, with no edge at the end-Permian or end-Triassic markers, up to the end-Cretaceous marker; after it the background is unshaded." >}}
+{{< mediafigure src="biology/Figure_B27_04_06-extinctions" kind="diagram" alt="An untitled line graph plotting extinction occurrences as a percentage of marine genera against millions of years before present, with five labeled peaks marking major mass-extinction boundaries and tinted background bands between some of them." longdesc="The x-axis runs from about 550 to 0 million years before present time, left to right toward the present; the y-axis runs from 0 to over 50 percent extinction occurrences among marine genera. A jagged gray line tracks extinction intensity throughout, with five points marked by purple dots and labels, left to right: 'end-Ordovician' at about 450 million years ago and about 30 percent; 'end-Devonian' at about 375 million years ago and roughly 23 percent; 'end-Permian' at about 250 million years ago and the graph's highest point, about 51 percent; 'end-Triassic' at about 200 million years ago and about 29 percent; and 'end-Cretaceous' at about 66 million years ago and about 31 percent. Tinted vertical bands fill the background: orange up to the end-Ordovician marker, red-orange from there to the end-Devonian marker, then three paler bands, mauve to the end-Permian marker, lavender to the end-Triassic marker, and blue to the end-Cretaceous marker; after it the background is unshaded." >}}
 Extinctions. Mass extinctions have occurred repeatedly over geological time.
 {{< /mediafigure >}}
 
@@ -115,7 +115,7 @@ The remainder of the Paleozoic Era is marked by the growing appearance of new cl
   question="The geological period (630–542 million years ago) when the oldest definite multicellular organisms with tissues evolved is called the ________."
   answer="Ediacaran period"
   accept="Ediacaran"
-  hint="Fossils from this period were first found in hills of the same name in Southern Australia."
+  hint="Look at the first paragraph of the Pre-Cambrian Animal Life subsection."
 >}}
 
 {{< multiplechoice
@@ -132,7 +132,7 @@ Cryogenian period
 {{< multiplechoice
   question="What type of data is primarily used to determine the existence and appearance of early animal species?"
   answer="fossil data"
-  hint="Consider what kind of evidence every discovery in the Pre-Cambrian Animal Life discussion is."
+  hint="Look at the Pre-Cambrian Animal Life subsection."
 >}}
 molecular data
 fossil data
@@ -141,16 +141,16 @@ embryological development data
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The geologic period (850–630 million years ago) characterized by a very cold global climate is called the ________."
-  answer="Cryogenian period"
-  accept="Cryogenian"
-  hint="It came before the Ediacaran, and ended with a great ice age."
+  question="The fossils that may represent the earliest animal species ever found appear to be small, one-centimeter long, ________ creatures, irregularly shaped and with internal tubes or canals."
+  answer="sponge-like"
+  accept="spongelike|sponge"
+  hint="Look at the last paragraph of the Pre-Cambrian Animal Life subsection."
 >}}
 
 {{< multiplechoice
   question="Until recent discoveries suggested otherwise, animals existing before the Cambrian period were believed to be:"
   answer="small and soft-bodied"
-  hint="Look at the Pre-Cambrian Animal Life discussion, where the section says what scientists believed before the recent South Australian finds."
+  hint="Look at the third paragraph of the Pre-Cambrian Animal Life subsection and at the Section Summary's second sentence."
 >}}
 small and ocean-dwelling
 small and nonmotile
@@ -159,6 +159,12 @@ small and radially symmetrical or asymmetrical
 {{< /multiplechoice >}}
 
 ### Explain the significance of the Cambrian period for animal evolution and the changes in animal diversity that took place during that time
+
+{{< textin
+  question="The most rapid documented diversification and evolution of animal species in all of history, during which most of the animal phyla in existence today evolved, is a phenomenon known as the ________."
+  answer="Cambrian explosion"
+  hint="Look at the first sentence of the Section Summary."
+>}}
 
 {{< multiplechoice
   question="The time between 542–488 million years ago marks which period?"
@@ -182,15 +188,9 @@ Silurian period
 Devonian period
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The most rapid documented diversification and evolution of animal species in all of history, during which most of the animal phyla in existence today evolved, is a phenomenon known as the ________."
-  answer="Cambrian explosion"
-  hint="Look at the first sentence of the Section Summary."
->}}
-
 ### Describe some of the unresolved questions surrounding the Cambrian explosion
 
-{{< selfcheck question="Briefly describe at least two theories that attempt to explain the cause of the Cambrian explosion." hint="One theory looks to the physical environment, the other to relationships among the organisms themselves." >}}
+{{< selfcheck question="Briefly describe at least two theories that attempt to explain the cause of the Cambrian explosion." hint="Look at the paragraph after the trilobite figure in The Cambrian Explosion of Animal Life subsection." >}}
 One theory states that environmental factors led to the Cambrian explosion. For example, the rise in atmospheric oxygen and oceanic calcium levels helped to provide the right environmental conditions to allow such a rapid evolution of new animal phyla. Another theory states that ecological factors such as competitive pressures and predator-prey relationships reached a threshold that supported the rapid animal evolution that took place during the Cambrian period.
 ===CHECKS===
 environmental factors, such as rising atmospheric oxygen and oceanic calcium levels, provided suitable conditions for rapid evolution
@@ -200,7 +200,8 @@ ecological factors, such as competitive pressures and predator-prey relationship
 {{< textin
   question="The Cambrian period undoubtedly witnessed the emergence of the majority of animal phyla that we know today, although ________ remain unresolved about this historical phenomenon."
   answer="many questions"
-  hint="The Summary notes that despite the emergence of most phyla during this period, much about the event itself is still not understood."
+  accept="question"
+  hint="Look at the last sentence of the Section Summary's first paragraph."
 >}}
 
 {{< multiplechoice
@@ -220,7 +221,7 @@ whether Earth's atmosphere ever contained oxygen
   question="An event or environmental condition that wipes out the majority of species within a relatively short geological time period is called a ________."
   answer="mass extinction"
   accept="mass extinction event"
-  hint="The largest such event closed out the Permian period, eliminating an estimated 95 percent of the species alive at the time."
+  hint="Look at the second paragraph of the section's last subsection, before the Section Summary."
 >}}
 
 {{< multiplechoice
@@ -234,7 +235,7 @@ whether Earth's atmosphere ever contained oxygen
 more than 5
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How is it that most, if not all, of the extant animal phyla today evolved during the Cambrian period if so many massive extinction events have taken place since then?" hint="Think about what a mass extinction wipes out completely, and what it usually leaves behind for a phylum." >}}
+{{< selfcheck question="How is it that most, if not all, of the extant animal phyla today evolved during the Cambrian period if so many massive extinction events have taken place since then?" hint="Look at the Section Summary's second paragraph." >}}
 It is true that multiple mass extinction events have taken place since the Cambrian period, when most currently existing animal phyla appeared, and the majority of animal species were commonly wiped out during these events. However, a small number of animal species representing each phylum were usually able to survive each extinction event, allowing the phylum to continue to evolve rather than become altogether extinct.
 ===CHECKS===
 multiple mass extinctions have taken place since the Cambrian period, when most currently existing animal phyla appeared
@@ -245,4 +246,4 @@ this allowed the phylum to continue to evolve rather than become altogether exti
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 27.4: The Evolutionary History of the Animal Kingdom](https://openstax.org/books/biology-2e/pages/27-4-the-evolutionary-history-of-the-animal-kingdom) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom, shorter alt written from each image rather than reusing the source's own long alt text; five figures re-kinded after inspection from the manifest's file-extension guess — Figure_B27_04_01ab from "photo" to "diagram" (an illustrated timeline table and spiral, not a photograph), Figure_27_04_05f and Figure_B27_04_06-extinctions from "photo" to "diagram" (line graphs), and Figure_B27_04_02ab and Figure_B27_04_04 from "diagram" to "photo" (actual photographs of fossils); a longdesc added to the timeline diagram (Figure_B27_04_01ab), the four-panel trilobite photograph (Figure_B27_04_04), and the two line graphs (Figure_27_04_05f, Figure_B27_04_06-extinctions), none of whose full content is carried by their one- or two-line captions; the two Link to Learning notes rendered as callouts with descriptive link text over the source URLs; the Career Connection note rendered as a callout; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively), with rubric checkpoints added to each self-check decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (Ediacaran period, Cryogenian period, mass extinction) added from the glossary, and one (Cambrian explosion) built from the Section Summary's sentence that names the phenomenon, since the glossary entry's wording printed the answer to the Review Question on the dates 542–488 million years ago; one cloze recall item added from the section's own Summary sentence ("many questions remain unresolved about this historical phenomenon"); and one multiple choice written locally from the section's own paragraph on unresolved questions, since the "unresolved questions" objective had no dedicated end-of-section exercise of its own.</small>
+<small>This section is adapted from [Biology 2e, Section 27.4: The Evolutionary History of the Animal Kingdom](https://openstax.org/books/biology-2e/pages/27-4-the-evolutionary-history-of-the-animal-kingdom) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom, shorter alt written from each image rather than reusing the source's own long alt text; five figures re-kinded after inspection from the manifest's file-extension guess — Figure_B27_04_01ab from "photo" to "diagram" (an illustrated timeline table and spiral, not a photograph), Figure_27_04_05f and Figure_B27_04_06-extinctions from "photo" to "diagram" (line graphs), and Figure_B27_04_02ab and Figure_B27_04_04 from "diagram" to "photo" (actual photographs of fossils); a longdesc added to the timeline diagram (Figure_B27_04_01ab), the four-panel trilobite photograph (Figure_B27_04_04), and the two line graphs (Figure_27_04_05f, Figure_B27_04_06-extinctions), none of whose full content is carried by their one- or two-line captions; the two Link to Learning notes rendered as callouts with descriptive link text over the source URLs; the Career Connection note rendered as a callout; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively), with rubric checkpoints added to each self-check decomposing its model answer (the source solution) into check-off clauses with no new claims; two key-term recall items (Ediacaran period, mass extinction) added from the glossary — Cryogenian period, the key of the first Review Question, is left as a Key-terms bullet — one cloze text-in ("sponge-like") built from the Pre-Cambrian Animal Life subsection's sentence describing the possibly earliest animal fossils, and one (Cambrian explosion) built from the Section Summary's sentence that names the phenomenon, since the glossary entry's wording printed the answer to the Review Question on the dates 542–488 million years ago; one cloze recall item added from the section's own Summary sentence ("many questions remain unresolved about this historical phenomenon"); and one multiple choice written locally from the section's own paragraph on unresolved questions, since the "unresolved questions" objective had no dedicated end-of-section exercise of its own; the Review Questions are placed under the objectives they test, so the fourth Review Question comes before the third.</small>

@@ -47,7 +47,7 @@ Plant cells can metabolically manipulate Ψ<sub>s</sub> (and by extension, Ψ<su
 In this example with a semipermeable membrane between two aqueous systems, water will move from a region of higher to lower water potential until equilibrium is reached. Solutes (Ψ<sub>s</sub>), pressure (Ψ<sub>p</sub>), and gravity (Ψ<sub>g</sub>) influence total water potential for each side of the tube (Ψ<sub>total</sub> <sup>right or left</sup>), and therefore, the difference between Ψ<sub>total</sub> on each side (ΔΨ). (Ψ<sub>m</sub>, the potential due to interaction of water with solid substrates, is ignored in this example because glass is not especially hydrophilic). Water moves in response to the difference in water potential between two systems (the left and right sides of the tube).
 {{< /mediafigure >}}
 
-{{< selfcheck question="Positive water potential is placed on the left side of the tube by increasing Ψ<sub>p</sub> such that the water level rises on the right side. Could you equalize the water level on each side of the tube by adding solute, and if so, how?" hint="Adding solute to one side lowers Ψ<sub>s</sub> on that side — think about which side's level needs to come down to match the other." >}}
+{{< selfcheck question="Positive water potential is placed on the left side of the tube by increasing Ψ<sub>p</sub> such that the water level rises on the right side. Could you equalize the water level on each side of the tube by adding solute, and if so, how?" hint="Reread the Solute Potential subsection and the three lower tubes of the figure above." >}}
 Yes, you can equalize the water level by adding the solute to the left side of the tube such that water moves toward the left until the water levels are equal.
 ===CHECKS===
 yes, you can equalize the water level
@@ -88,7 +88,7 @@ The cohesion–tension theory of sap ascent is shown. Evaporation from the mesop
 {{< multiplechoice
   question="Which of the following statements is false?"
   answer="Negative water potential draws water into the root hairs. Cohesion and adhesion draw water up the phloem. Transpiration draws water from the leaf."
-  hint="Cohesion and adhesion act on the water-conducting tissue described throughout this section — check which vascular tissue each option names for the middle step of the pathway."
+  hint="Compare each option with the labels and captions of the figure above."
 >}}
 Negative water potential draws water into the root hairs. Cohesion and adhesion draw water up the xylem. Transpiration draws water from the leaf.
 Negative water potential draws water into the root hairs. Cohesion and adhesion draw water up the phloem. Transpiration draws water from the leaf.
@@ -156,20 +156,21 @@ Water potential (Ψ) is a measure of the difference in potential energy between 
 {{< textin
   question="The potential energy of a water solution per unit volume, relative to pure water at atmospheric pressure and ambient temperature, is called ________."
   answer="water potential"
-  hint="This is denoted with the Greek letter Ψ throughout the section, and pure water is defined to have a value of zero."
+  accept="Ψw|Ψ"
+  hint="Reread the first paragraph after the redwood-and-sidewalk figure near the top of the section."
 >}}
 
 {{< textin
   question="The pressure units used to measure water potential are called ________."
   answer="megapascals"
   accept="MPa"
-  hint="This SI-derived pressure unit is what water potential (Ψ) is expressed in throughout the section."
+  hint="Reread the first paragraph after the redwood-and-sidewalk figure near the top of the section."
 >}}
 
 {{< multiplechoice
   question="Which statement about the four components of water potential is true?"
   answer="Pressure potential (Ψ<sub>p</sub>) may be positive or negative."
-  hint="Re-check each option against the section's own sentence about that specific component — three of them state the reverse of what the section says."
+  hint="Reread the four subsections on the components, from Solute Potential through Matric Potential."
 >}}
 Solute potential (Ψ<sub>s</sub>) is zero in a plant cell and negative in distilled water.
 Pressure potential (Ψ<sub>p</sub>) may be positive or negative.
@@ -182,13 +183,13 @@ Matric potential (Ψ<sub>m</sub>) is positive in a dry seed.
 {{< textin
   question="The loss of water vapor to the atmosphere through stomata is called ________."
   answer="transpiration"
-  hint="This passive process requires no metabolic energy in the form of ATP."
+  hint="Reread the paragraph just after the cohesion–tension figure and its question."
 >}}
 
 {{< multiplechoice
   question="When stomata open, what occurs?"
   answer="Water vapor is lost to the external environment, increasing the rate of transpiration."
-  hint="Reread the Control of Transpiration subsection on what the opening and closing of stomata regulates."
+  hint="Reread the second paragraph of Control of Transpiration."
 >}}
 Water vapor is lost to the external environment, increasing the rate of transpiration.
 Water vapor is lost to the external environment, decreasing the rate of transpiration.
@@ -207,7 +208,7 @@ Water vapor enters the spaces in the mesophyll, decreasing the rate of transpira
 {{< multiplechoice
   question="Which cells are responsible for the movement of photosynthates through a plant?"
   answer="sieve-tube elements, companion cells"
-  hint="Reread the section's drawing of the cells that make up phloem, and its caption."
+  hint="Reread the second-to-last figure of the section and its caption."
 >}}
 tracheids, vessel elements
 tracheids, companion cells
@@ -218,22 +219,22 @@ sieve-tube elements, companion cells
 {{< textin
   question="An organ that produces photosynthate for a plant is called a ________."
   answer="source"
-  hint="This is where photosynthesis actually happens — think of the highest leaves versus the lowest ones, and which way each sends its sugars."
+  hint="Reread the second paragraph of Transportation of Photosynthates in the Phloem."
 >}}
 
 {{< textin
   question="A growing part of a plant, such as a root or young leaf, that requires photosynthate is called a ________."
   answer="sink"
-  hint="Seeds, tubers, and bulbs can serve as this or as the structure that produces photosynthate, depending on the plant's stage of development and the season."
+  hint="Reread the second paragraph of Transportation of Photosynthates in the Phloem."
 >}}
 
 {{< textin
-  question="The mass transport of photosynthates from a source to a sink in vascular plants is called ________."
+  question="Sugars produced in leaves are delivered to growing parts of the plant via the phloem in a process called ________."
   answer="translocation"
-  hint="This process delivers sucrose through the phloem to growing shoot tips, roots, or developing seeds, depending on the plant's stage of development."
+  hint="Reread the second paragraph of Transportation of Photosynthates in the Phloem."
 >}}
 
-{{< selfcheck question="The process of bulk flow transports fluids in a plant. Describe the two main bulk flow processes." hint="Think about the two vascular tissues named earlier in the section and which direction each one carries its own contents." >}}
+{{< selfcheck question="The process of bulk flow transports fluids in a plant. Describe the two main bulk flow processes." hint="Reread the third paragraph of Transportation of Photosynthates in the Phloem." >}}
 The process of bulk flow moves water up the xylem and moves photosynthates (solutes) up and down the phloem.
 ===CHECKS===
 moves water up the xylem
@@ -242,4 +243,4 @@ moves photosynthates (solutes) up and down the phloem
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 30.5: Transport of Water and Solutes in Plants](https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the plant-adaptations figure's alt describes the cactus's many fruits and calls panel (b) the lipstick plant of the caption rather than the source alt's "a red cylindrical fruit" and "an orchid" (erratum 848); two figures re-kinded after inspection — Figure_30_05_06 and Figure_30_05_07 from the manifest's file-extension "photo" guess to "diagram" (both are line-drawn schematic illustrations, not photographs, despite being stored as JPEGs); the two Visual Connection figures' source alt text, which was letter-spaced screen-reader spelling (e.g., "p s i dash s"), rewritten as plain description, and a longdesc added to both plus the two other labeled diagrams (Figure_30_05_06, Figure_30_05_07) whose panel layout, labels, and arrows are not carried by their captions; Figure_B30_05_03's source alt text, which stated the water-potential gradient is "low at the roots and high in the leaves," corrected to "high at the roots and low in the atmosphere" to match the diagram's own "Low"/"High" labels and its printed values (root cells ≈ −0.2 MPa vs. atmosphere ≈ −100 MPa) — reported as a source defect; the block equation for Ψ<sub>system</sub> set in KaTeX, the section's only inline math, with every other Ψ subscript and superscript kept as plain Unicode text with HTML sub/sup, matching the source's own markup; the two notes wrapping a Visual Connection rendered as their figure followed by the paired exercise (a self-check for the prose-keyed item, a multiple choice for the option-keyed item), kept in the body under the objective each argues; the end-of-section Review Questions and the Critical Thinking Question adapted into the closing interactive Practice block; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (megapascal, water potential, transpiration, source, sink, translocation) added from the glossary and one cloze from the Section Summary (xylem); one locally authored multiple choice built strictly from the section's own sentences about the four water-potential components (solute, pressure, gravity, matric potential), disclosed here since it has no source exercise counterpart. Two numbers are corrected with visible Source notes: 1.5 MPa is about 218 pounds per square inch at 145 per megapascal, and the gravitational water potential is about –0.01 MPa per meter, an extra megapascal for the tallest trees rather than ten (errata 433–434).</small>
+<small>This section is adapted from [Biology 2e, Section 30.5: Transport of Water and Solutes in Plants](https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the plant-adaptations figure's alt describes the cactus's many fruits and calls panel (b) the lipstick plant of the caption rather than the source alt's "a red cylindrical fruit" and "an orchid"; two figures re-kinded after inspection — Figure_30_05_06 and Figure_30_05_07 from the manifest's file-extension "photo" guess to "diagram" (both are line-drawn schematic illustrations, not photographs, despite being stored as JPEGs); the two Visual Connection figures' source alt text, which was letter-spaced screen-reader spelling (e.g., "p s i dash s"), rewritten as plain description, and a longdesc added to both plus the two other labeled diagrams (Figure_30_05_06, Figure_30_05_07) whose panel layout, labels, and arrows are not carried by their captions; Figure_B30_05_03's source alt text, which stated the water-potential gradient is "low at the roots and high in the leaves," corrected to "high at the roots and low in the atmosphere" to match the diagram's own "Low"/"High" labels and its printed values (root cells ≈ −0.2 MPa vs. atmosphere ≈ −100 MPa); the block equation for Ψ<sub>system</sub> set in KaTeX, the section's only inline math, with every other Ψ subscript and superscript kept as plain Unicode text with HTML sub/sup, matching the source's own markup; the two notes wrapping a Visual Connection rendered as their figure followed by the paired exercise (a self-check for the prose-keyed item, a multiple choice for the option-keyed item), kept in the body under the objective each argues; the end-of-section Review Questions and the Critical Thinking Question adapted into the closing interactive Practice block; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (megapascal, water potential, transpiration, source, sink) added from the glossary, one cloze from the Section Summary (xylem), and one cloze from the body's sentence on the delivery of sugars through the phloem (translocation); one locally authored multiple choice built strictly from the section's own sentences about the four water-potential components (solute, pressure, gravity, matric potential), disclosed here since it has no source exercise counterpart. Two numbers are corrected with visible Source notes: 1.5 MPa is about 218 pounds per square inch at 145 per megapascal, and the gravitational water potential is about –0.01 MPa per meter, an extra megapascal for the tallest trees rather than ten.</small>

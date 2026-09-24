@@ -152,6 +152,12 @@ Plants play a key role in ecosystems. They are a source of food and medicinal co
 
 ### Explain how angiosperm diversity is due, in part, to multiple complex interactions with animals
 
+{{< textin
+  question="The consumption of plants by insects and other animals is called ________."
+  answer="herbivory"
+  hint="Look at the first paragraph of the first Animals and Plants subsection."
+>}}
+
 {{< multiplechoice
   question="Which of the following plant structures is not a defense against herbivory?"
   answer="nectar"
@@ -164,16 +170,10 @@ alkaloids
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Conversely, ________ can be aided by animals that eat plant fruits."
+  question="________ can be aided by animals that eat plant fruits."
   answer="seed dispersal"
-  accept="dispersal of seeds"
-  hint="Look at the short paragraph after the plant-defenses figure, which describes a mutualism between plants and the animals that eat their fruit."
->}}
-
-{{< textin
-  question="The consumption of plants by insects and other animals is called ________."
-  answer="herbivory"
-  hint="This is the force believed to have driven diversification as much as pollination did."
+  accept="dispersal of seeds|fruit dispersal|dispersal of fruits"
+  hint="Look at the short paragraph right after the plant-defenses figure."
 >}}
 
 ### Describe ways in which pollination occurs
@@ -203,16 +203,16 @@ wind
 {{< textin
   question="Technically, the transfer of pollen from the anther to the stigma is called ________."
   answer="pollination"
-  hint="More than 80 percent of angiosperms depend on animals for this process."
+  hint="Look at the second paragraph of the second Animals and Plants subsection."
 >}}
 
 {{< textin
-  question="The sugary liquid produced by flowers to attract animal pollinators is called ________."
-  answer="nectar"
-  hint="Bird- or insect-pollinated flowers secrete this liquid alongside both fertile and nutrient-rich sterile pollen."
+  question="White flowers that open at night attract ________."
+  answer="moths"
+  hint="Look at the second paragraph of the second Animals and Plants subsection, where flower traits are paired with pollinators."
 >}}
 
-{{< selfcheck question="Biosynthesis of nectar and nutrient-rich pollen is energetically very expensive for a plant. Yet, plants funnel large amounts of energy into animal pollination. What are the evolutionary advantages that offset the cost of attracting animal pollinators?" hint="Consider what happens to pollen delivery accuracy when an animal carries it directly to another flower of the same species, versus scattering it randomly on the wind." >}}
+{{< selfcheck question="Biosynthesis of nectar and nutrient-rich pollen is energetically very expensive for a plant. Yet, plants funnel large amounts of energy into animal pollination. What are the evolutionary advantages that offset the cost of attracting animal pollinators?" hint="Look at the second Animals and Plants subsection, which describes wind-pollinated flowers before animal-pollinated ones." >}}
 Using animal pollinators promotes cross-pollination and increases genetic diversity. The odds that the pollen will reach another flower are greatly increased compared with the randomness of wind pollination.
 ===CHECKS===
 using animal pollinators promotes cross-pollination and increases genetic diversity
@@ -236,10 +236,10 @@ all of the above
   question="A cultivated plant is called a ________."
   answer="crop"
   accept="crop plant"
-  hint="Rice, wheat, and potatoes dominate this category of agricultural plants."
+  hint="Look at the first paragraph of The Importance of Seed Plants in Human Life subsection."
 >}}
 
-{{< selfcheck question="What is biodiversity and why is it important to an ecosystem?" hint="Think about the different scales at which this variation can be measured, and the concrete resources and services plant life is described as providing." >}}
+{{< selfcheck question="What is biodiversity and why is it important to an ecosystem?" hint="Look at the first paragraph of the Biodiversity of Plants subsection." >}}
 Biodiversity is the variation in all forms of life. It can refer to variation within a species, within an ecosystem, or on an entire planet. It is important because it ensures a resource for new food crops and medicines. Plant life balances the ecosystems, protects watersheds, mitigates erosion, moderates climate, and provides shelter for many animal species.
 ===CHECKS===
 biodiversity is the variation in all forms of life
@@ -251,16 +251,16 @@ plant life balances ecosystems, protects watersheds, mitigates erosion, moderate
 {{< textin
   question="A seed from a plant that was grown historically, but has not been used in modern agriculture on a large scale, is a ________."
   answer="heirloom seed"
-  hint="Preserving these is one line of action for protecting plant biodiversity, alongside a DNA-based species-identification technique."
+  hint="Look at the end of the Biodiversity of Plants subsection."
 >}}
 
 {{< textin
   question="The technique of identifying a species through one or more short, well-characterized gene sequences taken from its genome is called ________."
   answer="barcoding"
   accept="DNA barcoding"
-  hint="This DNA-analysis technique is named alongside the preservation of heirloom seeds as a line of action for protecting plant biodiversity."
+  hint="Look at the last sentence of the Biodiversity of Plants subsection."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 26.4: The Role of Seed Plants](https://openstax.org/books/biology-2e/pages/26-4-the-role-of-seed-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, source alt text kept as printed; the Link to Learning note rendered as a callout with descriptive link text in place of the source's "this website"; the Scientific Method Connection and Career Connection notes rendered as callouts with their bold feature name and italic title, including the fly-attraction experiment's numbered procedure and its blank data-recording table, transcribed as printed; both source tables (the fly-visit data-recording table and the medicinal-compounds table) kept as Markdown tables in the body — neither is sortbins material, since the fly table has no category columns to sort into (its columns are trial-by-trial counts to be filled in during the experiment) and the medicinal-compounds table's columns (Plant, Compound, Application) name examples and quantities rather than categories; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (barcoding, crop, heirloom seed, herbivory, nectar, pollination) added from the glossary; one cloze recall item ("seed dispersal") added from the section summary.</small>
+<small>This section is adapted from [Biology 2e, Section 26.4: The Role of Seed Plants](https://openstax.org/books/biology-2e/pages/26-4-the-role-of-seed-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, source alt text kept as printed; the Link to Learning note rendered as a callout with descriptive link text in place of the source's "this website"; the Scientific Method Connection and Career Connection notes rendered as callouts with their bold feature name and italic title, including the fly-attraction experiment's numbered procedure and its blank data-recording table, transcribed as printed; both source tables (the fly-visit data-recording table and the medicinal-compounds table) kept as Markdown tables in the body — neither is sortbins material, since the fly table has no category columns to sort into (its columns are trial-by-trial counts to be filled in during the experiment) and the medicinal-compounds table's columns (Plant, Compound, Application) name examples and quantities rather than categories; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (barcoding, crop, heirloom seed, herbivory, pollination) added from the glossary; one cloze recall item ("seed dispersal") added from the section summary, with its opening "Conversely," dropped so the sentence stands alone; and one recall item ("moths") built from the body sentence on white flowers that open at night.</small>

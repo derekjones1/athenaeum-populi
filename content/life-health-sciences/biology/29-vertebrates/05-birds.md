@@ -125,7 +125,7 @@ Birds are highly modified diapsids and belong to a group called the archosaurs. 
 {{< multiplechoice
   question="A bird or feathered dinosaur is ________."
   answer="Archaeopteryx"
-  hint="Look at the Evolution of Birds paragraphs on the oldest known fossils that mix dinosaur and bird traits."
+  hint="Look at the third paragraph of the Evolution of Birds subsection."
 >}}
 Neornithes
 Archaeopteryx
@@ -133,7 +133,7 @@ Enantiornithes
 Paleognathae
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain why birds are thought to have evolved from theropod dinosaurs." hint="Think about what specific bones and structures late theropod fossils share with birds." >}}
+{{< selfcheck question="Explain why birds are thought to have evolved from theropod dinosaurs." hint="Look at the second paragraph of the Evolution of Birds subsection." >}}
 This is suggested by similarities observed between theropod fossils and birds, specifically in the design of the hip and wrist bones, as well as the presence of a furcula, or wishbone, formed by the fusing of the clavicles.
 ===CHECKS===
 similarities observed between theropod fossils and birds
@@ -142,9 +142,9 @@ the presence of a furcula, or wishbone, formed by the fusing of the clavicles
 {{< /selfcheck >}}
 
 {{< textin
-  question="The clade that includes all living birds and the descendants of their most recent common maniraptoran ancestor is called ________."
-  answer="Neornithes"
-  hint="This clade's name distinguishes today's crown group from every earlier, now-extinct bird lineage."
+  question="The group of birds with a short, fused tail, or pygostyle, that emerged alongside the Enantiornithes and became the dominant birds after their extinction is called the ________."
+  answer="Ornithurae"
+  hint="Look at the last two paragraphs before the figure in The Evolution of Flight in Birds."
 >}}
 
 ### Describe the derived characteristics in birds that facilitate flight
@@ -160,7 +160,7 @@ Secondary feathers
 Contour feathers
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe three skeletal adaptations that allow for flight in birds." hint="Consider the sternum, the fused collarbones, and how bird bones are built inside." >}}
+{{< selfcheck question="Describe three skeletal adaptations that allow for flight in birds." hint="Look at the Characteristics of Birds paragraphs on the flight muscles and on low body weight." >}}
 The sternum of birds is larger than that of other vertebrates, which accommodates the force required for flapping. Another skeletal modification is the fusion of the clavicles, forming the furcula or wishbone. The furcula is flexible enough to bend during flapping and provides support to the shoulder girdle during flapping. Birds also have pneumatic bones that are hollow rather than filled with tissue.
 ===CHECKS===
 the sternum of birds is larger than that of other vertebrates, accommodating the force required for flapping
@@ -169,7 +169,7 @@ the furcula is flexible enough to bend during flapping and provides support to t
 pneumatic bones that are hollow rather than filled with tissue
 {{< /selfcheck >}}
 
-{{< selfcheck question="How would the chest structure differ between ostriches, penguins, and terns?" hint="Think about which of the three actually fly or swim with their wings, and which one only runs." >}}
+{{< selfcheck question="How would the chest structure differ between ostriches, penguins, and terns?" hint="Look at the Characteristics of Birds paragraph on the flight muscles and the sternum." >}}
 Ostriches and penguins are flightless birds, but ostriches are entirely terrestrial, while penguins dive and swim in the ocean to find food. Therefore, penguins and flight birds like terns have similar chest structures with a keel sternum and relatively large pectoral muscles (penguins use their wings to "fly" through water). Conversely, since ostriches move by running, they do not have a keel to their sternum. They also have smaller pectoral muscles than would be predicted for a flying bird their size, but have larger thigh muscles.
 ===CHECKS===
 ostriches and penguins are flightless, but ostriches are terrestrial while penguins swim to find food
@@ -179,15 +179,16 @@ ostriches have smaller pectoral muscles but larger thigh muscles than a flying b
 {{< /selfcheck >}}
 
 {{< textin
-  question="The wishbone formed by the fusion of a bird's two clavicles is called the ________."
-  answer="furcula"
-  hint="This structure flexes during flapping to help support the shoulder girdle."
+  question="The gland at the dorsal base of a bird's tail that produces an oily substance birds use to waterproof their feathers and keep them flexible for flight is the ________."
+  answer="uropygial gland"
+  accept="preening gland"
+  hint="Look at the Characteristics of Birds paragraph that begins with the neck and tail."
 >}}
 
 {{< textin
-  question="A bird bone that is hollow rather than filled with tissue, reinforced internally by cross struts called trabeculae, is called a ________."
-  answer="pneumatic bone"
-  hint="This kind of bone reduces a flying bird's body weight and is more extensive in large birds than small ones."
+  question="Some birds have pneumatic bones containing air spaces that are sometimes connected to ________ in the body cavity."
+  answer="air sacs"
+  hint="Look at the Characteristics of Birds paragraph on the respiratory system."
 >}}
 
 {{< textin
@@ -198,4 +199,4 @@ ostriches have smaller pectoral muscles but larger thigh muscles than a flying b
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 29.5: Birds](https://openstax.org/books/biology-2e/pages/29-5-birds) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image; Figure_29_05_02 and Figure_29_05_03f re-kinded from the manifest's file-extension "photo" guess to "diagram" (a hollow-bone cutaway and a two-panel airflow schematic, neither a captured photograph); a longdesc added to the air-flow-in-bird-lungs figure (Figure_29_05_03f), walking both panels' labels and arrow directions in reading order, since its one-line caption does not carry the diagram's layout; Figure_29_05_04ab's alt rewritten to note that panel (a) is a color painting (an artist's scene, not a photograph) and panel (b) is the actual fossil photograph, and Figure_29_05_05's alt rewritten to identify it as a digital reconstruction of an extinct species (credited to a paleoartist) rather than a photograph of a living bird, since the source alt for both called them plainly "photo"; the mid-sentence footnote citing Prum et al. 2015 moved to the end of its sentence as a parenthetical citation with its link kept; the note wrapping the bird-teeth video rendered as a Link to Learning callout and the Veterinarian note as a Career Connection callout, both kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (Neornithes, furcula, pneumatic bone, down feather) added from the glossary; "expandable" (of the parabronchi's lungs) normalized from the source's variant spelling "expandible." One term is corrected with a visible Source note: the summary's bird-lung exchange is cross-current, as the section's text says, not counter-current (erratum 430).</small>
+<small>This section is adapted from [Biology 2e, Section 29.5: Birds](https://openstax.org/books/biology-2e/pages/29-5-birds) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image; Figure_29_05_02 and Figure_29_05_03f re-kinded from the manifest's file-extension "photo" guess to "diagram" (a hollow-bone cutaway and a two-panel airflow schematic, neither a captured photograph); a longdesc added to the air-flow-in-bird-lungs figure (Figure_29_05_03f), walking both panels' labels and arrow directions in reading order, since its one-line caption does not carry the diagram's layout; Figure_29_05_04ab's alt rewritten to note that panel (a) is a color painting (an artist's scene, not a photograph) and panel (b) is the actual fossil photograph, and Figure_29_05_05's alt rewritten to identify it as a digital reconstruction of an extinct species (credited to a paleoartist) rather than a photograph of a living bird, since the source alt for both called them plainly "photo"; the mid-sentence footnote citing Prum et al. 2015 moved to the end of its sentence as a parenthetical citation with its link kept; the note wrapping the bird-teeth video rendered as a Link to Learning callout and the Veterinarian note as a Career Connection callout, both kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; one key-term recall item (down feather) added from the glossary, a text-recall cloze of the summary's air-sac sentence, and two text-recall items written from the section's own sentences on the Ornithurae and the uropygial gland; Practice items placed under the objective each tests, so the first Critical Thinking Question comes before the second Review Question; "expandable" (of the parabronchi's lungs) normalized from the source's variant spelling "expandible." One term is corrected with a visible Source note: the summary's bird-lung exchange is cross-current, as the section's text says, not counter-current.</small>

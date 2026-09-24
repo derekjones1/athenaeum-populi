@@ -112,7 +112,7 @@ Free-floating colonial species called **siphonophores** contain both medusoid an
 *Physalia* has male and female colonies, which release their gametes into the water. The zygote develops into a single individual, which then buds asexually to form a new colony. Siphonophores include the largest known floating cnidarian colonies such as *Praya dubia*, whose chain of zooids can get up to 50 meters (165 feet) long. Other hydrozoan species are solitary polyps (*Hydra*) or solitary hydromedusae (*Gonionemus*). One defining characteristic shared by the hydrozoans is that their gonads are derived from epidermal tissue, whereas in all other cnidarians they are derived from gastrodermal tissue.
 
 {{< mediafigure src="biology/Figure_28_02_08abcd" kind="photo" alt="Four photos of hydrozoan body forms: (a) Tubularia indivisa, a cluster of translucent stalked polyps each topped with a fringe of tentacles; (b) a Portuguese man o' war, its clear, bulbous, balloon-like float trailing long ribbon-like tentacles; (c) Velella bae, a flat, oval, blue-bottomed colony with a clear, sail-like dome on top, resembling a small flying saucer; (d) a solitary Hydra polyp, a slender tube-shaped body with long thin tentacles extending from one end." >}}
-Hydrozoans. The *Tubularia indivisa* (a), siphonophore colonies *Physalia physalis*, known as the Portuguese man o' war (b), *Velella bae* (c), and the solitary polyp *Hydra* (d) have different body shapes but all belong to the family Hydrozoa. (credit a: modification of work by Bernard Picton/Wikimedia Commons; credit b: modification of work by NOAA; scale-bar data from Matt Russell)
+Hydrozoans. The *Tubularia indivisa* (a), siphonophore colonies *Physalia physalis*, known as the Portuguese man o' war (b), *Velella bae* (c), and the solitary polyp *Hydra* (d) have different body shapes but all belong to the class Hydrozoa. (credit a: modification of work by Bernard Picton/Wikimedia Commons; credit b: modification of work by NOAA; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
 ## Summary
@@ -150,14 +150,14 @@ phylum Cnidaria
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Explain the function of nematocysts in cnidarians." hint="Think about what happens to prey once the cnidocil is touched." >}}
-Nematocysts are “stinging cells” designed to paralyze prey. The nematocysts contain a neurotoxin that renders prey immobile.
+Nematocysts are stinging organelles within cnidocytes, designed to paralyze prey. The nematocysts contain a neurotoxin that renders prey immobile. *(Source note: the source answer calls nematocysts “stinging cells”; this section names the cnidocyte as the stinging cell and the nematocyst as the organelle inside it.)*
 ===CHECKS===
 designed to paralyze prey
 contain a neurotoxin
 renders prey immobile
 {{< /selfcheck >}}
 
-{{< selfcheck question="Compare the structural differences between Porifera and Cnidaria." hint="Consider tissue organization — only one of these phyla has true tissues." >}}
+{{< selfcheck question="Compare the structural differences between Porifera and Cnidaria." hint="Look at this section's paragraphs on the tissue layers and nervous system, and the opening paragraphs of the previous section, Phylum Porifera." >}}
 Poriferans do not possess true tissues, while cnidarians do have tissues. Because of this difference, poriferans do not have a nervous system or muscles for locomotion, which cnidarians have.
 ===CHECKS===
 poriferans do not possess true tissues, while cnidarians do have tissues
@@ -176,25 +176,25 @@ cnidarians have a nervous system and muscles for locomotion
 {{< textin
   question="The outer layer of a cnidarian, derived from ectoderm, that lines the outside of the animal is called the ________."
   answer="epidermis"
-  hint="Its inner counterpart, derived from endoderm, lines the digestive cavity instead."
+  hint="Look at the paragraph that follows the Obelia Link to Learning."
 >}}
 
 {{< textin
   question="The inner layer of a cnidarian, derived from endoderm, that lines the digestive cavity is called the ________."
   answer="gastrodermis"
-  hint="Its outer counterpart, derived from ectoderm, lines the outside of the animal instead."
+  hint="Look at the paragraph that follows the Obelia Link to Learning."
 >}}
 
 {{< textin
   question="The non-living, gel-like matrix present between the ectoderm and endoderm in cnidarians is called the ________."
   answer="mesoglea"
-  hint="It is thicker in the dome of the bell-shaped body form than in the stalk-shaped one."
+  hint="Look at the paragraph that follows the Obelia Link to Learning."
 >}}
 
 {{< textin
   question="Digestion in which food is taken into a cavity, enzymes are secreted into it, and the lining cells absorb the released nutrients is called ________."
   answer="extracellular digestion"
-  hint="This is how the single-opening gastrovascular cavity processes most food, though some digestion also happens inside individual cells."
+  hint="Look at the paragraph on the gastrovascular cavity."
 >}}
 
 ### Identify the two general body forms found in the Cnidaria
@@ -202,20 +202,20 @@ cnidarians have a nervous system and muscles for locomotion
 {{< textin
   question="The sessile, stalk-like cnidarian body form, with mouth and tentacles facing upward, is called the ________."
   answer="polyp"
-  hint="This is the asexual phase in species exhibiting both body forms, and the only form Hydra ever takes."
+  hint="Look at the paragraph that follows the anemone-battle Link to Learning."
 >}}
 
 {{< textin
   question="The free-floating, bell-shaped cnidarian body form, with mouth and tentacles hanging downward, is called the ________."
   answer="medusa"
-  hint="This motile form is the sexual, gamete-producing stage in species that also have a stalk-shaped stage."
+  accept="medusae"
+  hint="Look at the paragraph that follows the anemone-battle Link to Learning."
 >}}
 
 {{< textin
-  question="An organism or group of organisms possessing multiple body plans within its life cycle is described as ________."
-  answer="polymorphic"
-  accept="dimorphic"
-  hint="Obelia's alternation between an asexual budding stage and a free-swimming, gamete-producing stage is one example."
+  question="In cnidarians that exhibit both body plans during their life cycle, one form serves as the asexual phase and the other as the sexual stage that produces gametes. However, both body forms are ________."
+  answer="diploid"
+  hint="Look at the paragraph that follows the body-forms figure."
 >}}
 
 {{< multiplechoice
@@ -253,11 +253,11 @@ Class Scyphozoa
 Class Anthozoa
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Compare the differences in sexual reproduction between Porifera and Cubozoans. How does the difference in fertilization provide an evolutionary advantage to the Cubozoans?" hint="Consider whether each group has separate sexes, and where fertilization takes place." >}}
-There are two key differences between Porifera (sponges) and Cubozoans (box jellyfish): gamete production and fertilization strategy. Box jellyfish have separate sexes, while a single sponge can produce both types of gametes. Box jellyfish also undergo internal fertilization, while sponges reproduce by external fertilization. Internal fertilization allows box jellyfish to control which sperm is used for fertilization and increases the likelihood of ova and spermatozoa meeting.
+{{< selfcheck question="Compare the differences in sexual reproduction between Porifera and Cubozoans. How does the difference in fertilization provide an evolutionary advantage to the Cubozoans?" hint="Look at the Class Cubozoa paragraph on reproduction, and the Reproduction subsection of the previous section, Phylum Porifera." >}}
+There are two key differences between Porifera (sponges) and Cubozoans (box jellyfish): gamete production and fertilization strategy. Box jellyfish have separate sexes, while a single sponge can produce both types of gametes. Box jellyfish also undergo internal fertilization, while sponges release sperm into the water to fertilize eggs held in the mesohyl of other sponges. *(Source note: the source answer says sponges “reproduce by external fertilization”; the previous section, Phylum Porifera, has water-borne sperm fertilize oocytes borne in another sponge’s mesohyl, where the larvae begin to develop.)* Internal fertilization allows box jellyfish to control which sperm is used for fertilization and increases the likelihood of ova and spermatozoa meeting.
 ===CHECKS===
 box jellyfish have separate sexes, while a single sponge can produce both types of gametes
-box jellyfish undergo internal fertilization, while sponges reproduce by external fertilization
+box jellyfish undergo internal fertilization, while sponges release sperm into the water to fertilize eggs held in other sponges
 internal fertilization allows box jellyfish to control which sperm is used for fertilization
 internal fertilization increases the likelihood of ova and spermatozoa meeting
 {{< /selfcheck >}}
@@ -275,4 +275,4 @@ Cubozoa
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 28.2: Phylum Cnidaria](https://openstax.org/books/biology-2e/pages/28-2-phylum-cnidaria) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; four figures re-kinded after inspection — Figure_28_02_01, Figure_28_02_02, Figure_28_02_03, and Figure_28_02_06 — from the manifest's file-extension "photo" guess to "diagram" (line drawings, not captured photographs), while Figure_28_02_04, Figure_28_02_05ab, Figure_28_02_07, and Figure_28_02_08abcd keep the manifest's "photo" guess (each is a single vendored image whose photographed panel(s) dominate, even where a labeled schematic panel sits alongside); a longdesc added to the nematocyst-firing diagram (Figure_28_02_01), the body-plan diagram (Figure_28_02_02), the labeled sea-anemone and sea-jelly cross-sections (panel (b) of Figure_28_02_04 and Figure_28_02_05ab), and the scyphozoan life-cycle diagram (Figure_28_02_06, walking its seven clockwise stages) — none of whose captions carry their label or arrow content; two Link to Learning notes rendered as callouts, replacing their "click here"/bare "video" link text with a description of each destination; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (epidermis, gastrodermis, mesoglea, extracellular digestion, polyp, medusa, and polymorphic, each once) added from the glossary, and one (nerve net) built from the body sentence that names it in bold — the glossary's "siphon" entry (a mantle-cavity water inlet) is kept in Key terms for completeness but has no counterpart anywhere in this module's text and was not used for a recall item, since the section teaches no such structure — reported as a source defect; two locally written multiple-choice items added (naming the Obelia polyp adapted for feeding, and identifying Anthozoa as the only polyp-only clade), both built strictly from the section's own sentences, to round out the "body forms" and "cnidarian classes" objective groups.</small>
+<small>This section is adapted from [Biology 2e, Section 28.2: Phylum Cnidaria](https://openstax.org/books/biology-2e/pages/28-2-phylum-cnidaria) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; four figures re-kinded after inspection — Figure_28_02_01, Figure_28_02_02, Figure_28_02_03, and Figure_28_02_06 — from the manifest's file-extension "photo" guess to "diagram" (line drawings, not captured photographs), while Figure_28_02_04, Figure_28_02_05ab, Figure_28_02_07, and Figure_28_02_08abcd keep the manifest's "photo" guess (each is a single vendored image whose photographed panel(s) dominate, even where a labeled schematic panel sits alongside); a longdesc added to the nematocyst-firing diagram (Figure_28_02_01), the body-plan diagram (Figure_28_02_02), the labeled sea-anemone and sea-jelly cross-sections (panel (b) of Figure_28_02_04 and Figure_28_02_05ab), and the scyphozoan life-cycle diagram (Figure_28_02_06, walking its seven clockwise stages) — none of whose captions carry their label or arrow content; two Link to Learning notes rendered as callouts, replacing their "click here"/bare "video" link text with a description of each destination; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (epidermis, gastrodermis, mesoglea, extracellular digestion, polyp, and medusa, each once) added from the glossary, and two built from body sentences (nerve net, from the sentence that names it in bold; and a cloze keyed "diploid" from the dimorphism paragraph) — the glossary's "siphon" entry (a mantle-cavity water inlet) is kept in Key terms for completeness but has no counterpart anywhere in this module's text and was not used for a recall item, since the section teaches no such structure; two locally written multiple-choice items added (naming the Obelia polyp adapted for feeding, and identifying Anthozoa as the only polyp-only clade), both built strictly from the section's own sentences, to round out the "body forms" and "cnidarian classes" objective groups. Three source defects are corrected: the hydrozoan photo caption's "family Hydrozoa" reads "class Hydrozoa," as the section's own heading names it; and two Critical Thinking model answers carry visible Source notes — nematocysts are stinging organelles within cnidocytes, not "stinging cells," and sponge sperm fertilize eggs held in another sponge's mesohyl rather than by "external fertilization."</small>

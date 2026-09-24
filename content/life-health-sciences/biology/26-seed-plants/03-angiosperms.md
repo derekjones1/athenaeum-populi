@@ -44,7 +44,7 @@ The adult or sporophyte phase is the main phase of an angiosperm's life cycle. L
 Angiosperm life cycle. The life cycle of an angiosperm is shown. Anthers and carpels are structures that shelter the actual gametophytes: the pollen grain and embryo sac. Double fertilization is a process unique to angiosperms. (credit: modification of work by Mariana Ruiz Villareal)
 {{< /mediafigure >}}
 
-{{< selfcheck question="If a flower lacked a megasporangium, what type of gamete would not form? If the flower lacked a microsporangium, what type of gamete would not form?" hint="A megasporangium is where the female gametophyte develops; a microsporangium is inside the anther." >}}
+{{< selfcheck question="If a flower lacked a megasporangium, what type of gamete would not form? If the flower lacked a microsporangium, what type of gamete would not form?" hint="Trace the two downward paths of the life-cycle figure above." >}}
 Without a megasporangium, an egg would not form; without a microsporangium, pollen would not form.
 ===CHECKS===
 without a megasporangium, an egg would not form
@@ -65,7 +65,7 @@ Birch inflorescences. The female inflorescence is at the upper left. The male in
 
 As the seed develops, the walls of the ovary thicken and form the fruit. The seed forms in an ovary, which also enlarges as the seeds grow. Many foods commonly called vegetables are actually fruits. Eggplants, zucchini, string beans, tomatoes, and bell peppers are all technically fruits because they contain seeds and are derived from the thick ovary tissue. Acorns are true nuts, and winged maple "helicopter seeds" or whirligigs (whose botanical name is *samara*) are also fruits. Botanists classify fruit into more than two dozen different categories, only a few of which are actually fleshy and sweet.
 
-Mature fruit can be fleshy or dry. *Fleshy fruit* include the familiar berries, peaches, apples, grapes, and tomatoes. Rice, wheat, and nuts are examples of *dry fruit*. Another subtle distinction is that not all fruits are derived from just the ovary. For instance, strawberries are derived from the ovary as well as the receptacle, and apples are formed from the ovary and the pericarp, or *hypanthium*. Some fruits are derived from separate ovaries in a single flower, such as the raspberry. Other fruits, such as the pineapple, form from clusters of flowers. Additionally, some fruits, like watermelon and orange, have rinds. Regardless of how they are formed, fruits are an agent of seed dispersal. The variety of shapes and characteristics reflect the mode of dispersal. Wind carries the light dry fruits of trees and dandelions. Water transports floating coconuts. Some fruits attract herbivores with their color or scent, or as food. Once eaten, tough, undigested seeds are dispersed through the herbivore's feces (*endozoochory*). Other fruits have burrs and hooks to cling to fur and hitch rides on animals (*epizoochory*).
+Mature fruit can be fleshy or dry. *Fleshy fruit* include the familiar berries, peaches, apples, grapes, and tomatoes. Rice, wheat, and nuts are examples of *dry fruit*. Another subtle distinction is that not all fruits are derived from just the ovary. For instance, strawberries are derived from the ovary as well as the receptacle, and apples are formed from the ovary and the *hypanthium*. Some fruits are derived from separate ovaries in a single flower, such as the raspberry. Other fruits, such as the pineapple, form from clusters of flowers. Additionally, some fruits, like watermelon and orange, have rinds. Regardless of how they are formed, fruits are an agent of seed dispersal. The variety of shapes and characteristics reflect the mode of dispersal. Wind carries the light dry fruits of trees and dandelions. Water transports floating coconuts. Some fruits attract herbivores with their color or scent, or as food. Once eaten, tough, undigested seeds are dispersed through the herbivore's feces (*endozoochory*). Other fruits have burrs and hooks to cling to fur and hitch rides on animals (*epizoochory*).
 
 ## Diversity of Angiosperms
 
@@ -138,7 +138,7 @@ The angiosperm life cycle is dominated by the sporophyte stage. Double fertiliza
 
 ### Explain why angiosperms are the dominant form of plant life in most terrestrial ecosystems
 
-{{< selfcheck question="Some cycads are considered endangered species and their trade is severely restricted. Customs officials stop suspected smugglers who claim that the plants in their possession are palm trees, not cycads. How would a botanist distinguish between the two types of plants?" hint="Think about what cycads, as gymnosperms, produce instead of flowers and fruit." >}}
+{{< selfcheck question="Some cycads are considered endangered species and their trade is severely restricted. Customs officials stop suspected smugglers who claim that the plants in their possession are palm trees, not cycads. How would a botanist distinguish between the two types of plants?" hint="Compare the cycads of the previous section, Gymnosperms, with the reproductive structures this section's opening paragraphs describe." >}}
 The resemblance between cycads and palm trees is only superficial. Cycads are gymnosperms and do not bear flowers or fruit. Cycads produce cones: large, female cones that produce naked seeds, and smaller male cones on separate plants. Palms do not.
 ===CHECKS===
 cycads are gymnosperms and do not bear flowers or fruit
@@ -158,7 +158,7 @@ these structures protect reproduction from variability in the environment
 {{< textin
   question="The phylum to which angiosperms belong is called the ________."
   answer="Anthophyta"
-  hint="Its more than 300,000 species make it second only to insects in diversification."
+  hint="Look at the section's opening paragraph, where the angiosperm phylum is named."
 >}}
 
 ### Describe the main parts of a flower and their functions
@@ -166,7 +166,7 @@ these structures protect reproduction from variability in the environment
 {{< multiplechoice
   question="Which of the following structures in a flower is not directly involved in reproduction?"
   answer="the sepal"
-  hint="Compare the Flowers subsection's description of the outer whorls with its description of the sexual organs at the center of the flower."
+  hint="Look at the first two paragraphs of the Flowers subsection, which describe each floral structure in turn."
 >}}
 the style
 the stamen
@@ -177,7 +177,7 @@ the anther
 {{< multiplechoice
   question="Pollen grains develop in which structure?"
   answer="the anther"
-  hint="Look at the end of the paragraph describing the androecium, where it says where the microspores are produced."
+  hint="Look at the last sentence of the Flowers subsection's second paragraph."
 >}}
 the anther
 the stigma
@@ -188,13 +188,14 @@ the carpel
 {{< textin
   question="The whorl of sepals, collectively, is called the ________."
   answer="calyx"
-  hint="It sits at the base of the peduncle and encloses the unopened floral bud."
+  accept="calyces"
+  hint="Look at the first paragraph of the Flowers subsection, where the sepals are introduced."
 >}}
 
 {{< textin
   question="Petals, collected together, are called the ________."
   answer="corolla"
-  hint="Together with the calyx, it forms the perianth."
+  hint="Look at the first paragraph of the Flowers subsection, where the petals are introduced."
 >}}
 
 ### Detail the life cycle of a typical gymnosperm and angiosperm
@@ -211,24 +212,24 @@ the antipodal cells
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The primitive, leaf-like organ that develops in the zygote — one in monocots, two in eudicots — is called a ________."
+  question="The primitive, leaf-like organ that develops in the zygote is called a ________."
   answer="cotyledon"
-  hint="It serves as a conduit transmitting broken-down food reserves from storage inside the seed to the developing embryo."
+  hint="Look at the double fertilization paragraph, where the zygote's development into an embryo is described."
 >}}
 
 {{< textin
   question="The triploid tissue that serves as a food reserve for a developing angiosperm embryo is called the ________."
   answer="endosperm"
-  hint="It forms when the second sperm cell fuses with the two polar nuclei of the central cell."
+  hint="Look at the paragraph that describes the double fertilization event."
 >}}
 
 ### Discuss the similarities and differences between the two main groups of flowering plants
 
 {{< textin
-  question="The related group of angiosperms whose embryos possess two cotyledons is called the ________."
-  answer="dicot"
-  accept="eudicot|dicotyledon"
-  hint="Members of this group make up two-thirds of all flowering plants and typically produce pollen with three furrows."
+  question="A grass-like plant, noticeable by the absence of woody tissue, is described as ________."
+  answer="herbaceous"
+  accept="herbaceous plant"
+  hint="Look at the subsection that ends with the comparison table."
 >}}
 
 {{< textin
@@ -240,7 +241,7 @@ the antipodal cells
 {{< multiplechoice
   question="Corn develops from a seedling with a single cotyledon, displays parallel veins on its leaves, and produces monosulcate pollen. It is most likely:"
   answer="a monocot"
-  hint="Compare the three traits in the question with the rows of the monocot and eudicot comparison table."
+  hint="Compare the three traits in the question with the rows of the comparison table that closes the Diversity of Angiosperms section."
 >}}
 a gymnosperm
 a monocot
@@ -248,7 +249,7 @@ a eudicot
 a basal angiosperm
 {{< /multiplechoice >}}
 
-{{< sortbins question="Sort each structural characteristic into the group it describes, Monocot or Eudicot." hint="Think about cotyledon number, leaf vein pattern, and pollen furrows." >}}
+{{< sortbins question="Sort each structural characteristic into the group it describes, Monocot or Eudicot." hint="Use the comparison table that closes the Diversity of Angiosperms section." >}}
 {"bins": ["Monocot", "Eudicot"],
  "items": [
   {"label": "One cotyledon in the embryo", "bin": 0},
@@ -267,4 +268,4 @@ a basal angiosperm
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 26.3: Angiosperms](https://openstax.org/books/biology-2e/pages/26-3-angiosperms) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; four figures re-kinded after inspection — Figure_26_03_02 and Figure_B26_03_03 from the manifest's file-extension "photo" guess to "diagram" (a labeled flower-anatomy schematic and a labeled life-cycle diagram, neither a captured photograph), and Figure_26_04 and Figure_B26_03_04 from "diagram" to "photo" (an actual photograph of a birch branch, and a four-panel grid that is three photographs and one botanical illustration); a longdesc added to the flower-structure diagram and the angiosperm life-cycle diagram, whose labels, arrows, and panel structure are not carried by their one-line captions; the Visual Connection question kept in the body as its figure followed by a self-check, with the source's Visual Connection solution as the model answer; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each self-check given rubric checkpoints decomposing its model answer with no new claims; the monocot/eudicot comparison table kept as a Markdown table in the body and also rebuilt as a sort-into-bins exercise in Practice; six key-term recall items (Anthophyta, calyx, corolla, cotyledon, dicot, basal angiosperms) added from the glossary, and one recall item (endosperm) built from the body sentence that defines the term in bold, since the glossary has no entry for it. One term is corrected with a visible Source note: the lily and tulip perianth, not "corolla," consists of three sepals and three petals, since the paragraph defines the corolla as the petals alone (erratum 421).</small>
+<small>This section is adapted from [Biology 2e, Section 26.3: Angiosperms](https://openstax.org/books/biology-2e/pages/26-3-angiosperms) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; four figures re-kinded after inspection — Figure_26_03_02 and Figure_B26_03_03 from the manifest's file-extension "photo" guess to "diagram" (a labeled flower-anatomy schematic and a labeled life-cycle diagram, neither a captured photograph), and Figure_26_04 and Figure_B26_03_04 from "diagram" to "photo" (an actual photograph of a birch branch, and a four-panel grid that is three photographs and one botanical illustration); a longdesc added to the flower-structure diagram and the angiosperm life-cycle diagram, whose labels, arrows, and panel structure are not carried by their one-line captions; the Visual Connection question kept in the body as its figure followed by a self-check, with the source's Visual Connection solution as the model answer; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each self-check given rubric checkpoints decomposing its model answer with no new claims; the monocot/eudicot comparison table kept as a Markdown table in the body and also rebuilt as a sort-into-bins exercise in Practice; six key-term recall items (Anthophyta, calyx, corolla, cotyledon, herbaceous, basal angiosperms) added from the glossary, and one recall item (endosperm) built from the body sentence that defines the term in bold, since the glossary has no entry for it. One term is corrected with a visible Source note: the lily and tulip perianth, not "corolla," consists of three sepals and three petals, since the paragraph defines the corolla as the petals alone. One phrase is corrected in the Fruit paragraph: apples are formed from the ovary and the *hypanthium*, where the source prints "the pericarp, or *hypanthium*" — the pericarp is the ovary-derived fruit wall, the hypanthium the floral cup around it.</small>

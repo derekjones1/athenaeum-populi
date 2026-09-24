@@ -147,7 +147,7 @@ Insect anatomy. In this basic anatomy of a hexapod insect, note that insects hav
 {{< multiplechoice
   question="Which of the following statements about insects is false?"
   answer="The trachea is part of the digestive system."
-  hint="The caption's color key already sorts every labeled organ in the figure into one of four systems — check which color the trachea belongs to."
+  hint="Look at the insect-anatomy figure above and the color key in its caption."
 >}}
 Insects have a dorsal blood vessel with multiple hearts along its length.
 Insects have spiracles, openings that allow air to enter into the tracheal system.
@@ -181,7 +181,7 @@ Arthropods represent the most successful animal phylum on Earth, both in terms o
 {{< multiplechoice
   question="Crustaceans are _____."
   answer="ecdysozoans"
-  hint="Crustacea is one of the subphyla this section places inside Arthropoda; the Summary's second sentence names the larger group every arthropod belongs to."
+  hint="Look at the section's opening paragraph."
 >}}
 ecdysozoans
 nematodes
@@ -200,7 +200,7 @@ arachnids
 crustaceans
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Compare and contrast the segmentation seen in phylum Annelida with that seen in phylum Arthropoda." hint="Think about what a hard, jointed covering lets an arthropod's segments specialize into that an annelid's uniform rings cannot." >}}
+{{< selfcheck question="Compare and contrast the segmentation seen in phylum Annelida with that seen in phylum Arthropoda." hint="Look at the opening paragraph of the Morphology subsection, and compare the annelid body plan in Section 28.4." >}}
 Arthropods have an exoskeleton, which is missing in annelids. Arthropod segmentation is more specialized with major organs concentrated in body tagma. Annelid segmentation is usually more uniform with the intestine extending through most segments.
 ===CHECKS===
 arthropods have an exoskeleton, which is missing in annelids
@@ -209,53 +209,53 @@ annelid segmentation is usually more uniform with the intestine extending throug
 {{< /selfcheck >}}
 
 {{< textin
-  question="The modified first pair of appendages in subphylum Chelicerata, used as clawlike or fanglike mouthparts, is called the ________."
+  question="In spiders, scorpions, and their relatives, the first pair of appendages, which serve as specialized clawlike or fanglike mouthparts, is called the ________."
   answer="chelicera"
   accept="chelicerae"
-  hint="In spiders, this appendage is often modified into fangs that inject venom into prey."
+  hint="Look at the scorpion figure and the paragraph just before it."
 >}}
 
 {{< textin
-  question="The second pair of appendages in Chelicerata, used for general sensing of the environment and manipulation of food, is called the ________."
+  question="In spiders, scorpions, and their relatives, the second pair of appendages, used for general sensing of the environment and manipulation of food, is called the ________."
   answer="pedipalp"
-  hint="This appendage took over some of the sensory functions of the antennae that chelicerates have secondarily lost."
+  hint="Look at the paragraph just before the scorpion figure."
 >}}
 
 {{< textin
-  question="In some chelicerates, such as sea spiders, an additional pair of appendages present between the chelicerae and pedipalps is called an ________."
+  question="In some species, such as sea spiders, an additional pair of derived leg appendages present between the first and second pairs of appendages is called an ________."
   answer="oviger"
-  hint="Males of the species that carry this appendage use it to carry their eggs."
+  hint="Look at the paragraph just before the scorpion figure."
 >}}
 
 {{< textin
   question="An appendage formed in two parts, called endopods and exopods, such as a crustacean leg, is described as ________."
   answer="biramous"
-  hint="This is the ancestral condition, also seen in the extinct trilobites."
+  hint="Look at the Subphylum Crustacea subsection's paragraph on antennae, mouthparts, and appendages."
 >}}
 
 {{< textin
   question="An appendage with only one branch, such as the legs of myriapods and hexapods, is described as ________."
   answer="uniramous"
-  hint="This is the branching pattern the crayfish leg lacks, since the crayfish leg has two branches instead."
+  hint="Look at the arthropod-appendages figure in the Subphylum Crustacea subsection."
 >}}
 
 {{< textin
-  question="The fused head and thorax seen in some arthropods, covered by a protective plate called the carapace, is called the ________."
+  question="In most crustaceans, the body plan comprises two tagmata: the abdomen and the ________, which is covered by a plate called the carapace."
   answer="cephalothorax"
   accept="cephalothoraces"
-  hint="In crustaceans, this fused body region forms one of two tagmata, alongside the abdomen."
+  hint="Look at the paragraph just after the arthropod-appendages figure."
 >}}
 
 {{< textin
   question="The internal body cavity present in arthropods, through which fluid is moved by a tubular dorsal vessel, is called the ________."
   answer="hemocoel"
   accept="haemocoel"
-  hint="This central cavity is where hemolymph pools, rather than staying inside dedicated blood vessels."
+  hint="Look at the second paragraph of the Morphology subsection."
 >}}
 
 ### Discuss the environmental importance of arthropods
 
-{{< selfcheck question="How do terrestrial arthropods of the subphylum Hexapoda impact the world's food supply? Provide at least two positive and two negative effects." hint="Think of the section's positive impacts on agriculture and food production and its negative impacts from crop damage and disease, at least two from each side." >}}
+{{< selfcheck question="How do terrestrial arthropods of the subphylum Hexapoda impact the world's food supply? Provide at least two positive and two negative effects." hint="Start from the last paragraph of the Subphylum Hexapoda subsection; the section itself covers only part of the answer." >}}
 Insects are the predominant members of the subphylum Hexapoda. Advantages: pollination; eliminate pests; cheap food source; produce food products (ex. honey). Disadvantages: damage to food crops; transmit disease to agricultural workers; contaminate/spoil food; destroy buildings storing food crops.
 ===CHECKS===
 pollination
@@ -269,13 +269,13 @@ contaminate/spoil food; destroy buildings storing food crops
 {{< textin
   question="External chemical signals that social insects use to communicate and maintain group structure are called ________."
   answer="pheromones"
-  hint="The section names termites, ants, bees, and wasps as eusocial insects that rely on this kind of chemical signaling to stay organized."
+  hint="Look at the last paragraph of the Subphylum Hexapoda subsection."
 >}}
 
 {{< multiplechoice
   question="According to the section, which best describes the millipede's ecological role among the myriapods?"
   answer="Decomposer of decaying plant material"
-  hint="Contrast this with the centipede described in the same sentence, which is a predator that kills insect prey with venom."
+  hint="Look at the second paragraph of the Subphylum Myriapoda subsection."
 >}}
 Decomposer of decaying plant material
 Predator of insects using venom
@@ -285,19 +285,26 @@ Pollinator of flowering plants
 
 ### Discuss the reasons for arthropod success and abundance
 
+{{< textin
+  question="The phylum of animals with jointed appendages is called ________."
+  answer="Arthropoda"
+  accept="arthropods|phylum Arthropoda"
+  hint="Look at the section's opening paragraph."
+>}}
+
 {{< multiplechoice
   question="Which of the following is **not** a key advantage provided by the exoskeleton of terrestrial arthropods?"
   answer="Grows with the arthropod throughout its life"
-  hint="Re-read the section's description of molting and ecdysis: what has to happen to the exoskeleton before the animal can get any bigger?"
+  hint="Look at the Morphology subsection's paragraph on the cuticle."
 >}}
-Prevents dessication
+Prevents desiccation
 Protects internal tissue
 Provides mechanical support
 Grows with the arthropod throughout its life
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the various superclasses that phylum Arthropoda can be divided into." hint="Walk through each of the four subphyla the section discusses, and how it defines each one by leg count or habitat." >}}
-The Arthropoda include the Hexapoda, which are mandibulates with six legs; the Myriapoda, which are mandibulates with many legs and include the centipedes and millipedes; the Crustacea, which are mostly marine mandibulates; and the Chelicerata, which include the spiders and scorpions and their kin.
+{{< selfcheck question="Describe the various superclasses that phylum Arthropoda can be divided into." hint="Look at the Phylum Arthropoda subsection's paragraph that lists the subphyla, then the subsection on each." >}}
+The Arthropoda include the Hexapoda, which are mandibulates with six legs; the Myriapoda, which are mandibulates with many legs and include the centipedes and millipedes; the Crustacea, which are mostly marine mandibulates; and the Chelicerata, which include the spiders and scorpions and their kin. *(Source note: the section divides Arthropoda into subphyla rather than superclasses, and names a fifth, the extinct Trilobita.)*
 ===CHECKS===
 the Hexapoda, mandibulates with six legs
 the Myriapoda, mandibulates with many legs, including the centipedes and millipedes
@@ -308,20 +315,13 @@ the Chelicerata, including the spiders and scorpions and their kin
 {{< textin
   question="An animal in which both male and female gonads are present in the same individual is called a ________."
   answer="hermaphrodite"
-  hint="Some crustacean species, such as barnacles, exhibit this reproductive condition."
+  hint="Look at the Subphylum Crustacea subsection's paragraph on reproduction."
 >}}
 
 {{< textin
-  question="The phylum of animals with jointed appendages is called ________."
-  answer="Arthropoda"
-  accept="arthropods"
-  hint="The section's first paragraph names this phylum and explains its name."
->}}
-
-{{< textin
-  question="The earliest crustacean larval stage the section names, seen for example in a young tadpole shrimp, is the ________ stage."
+  question="The crustacean larval stage that the section's larvae figure shows for a tadpole shrimp is the ________ stage."
   answer="nauplius"
-  accept="nauplii"
+  accept="nauplii|nauplius larva|nauplius larvae"
   hint="This stage's larva has a teardrop-shaped body with frilly, tentacle-like arms."
 >}}
 
@@ -335,10 +335,10 @@ the Chelicerata, including the spiders and scorpions and their kin
 {{< textin
   question="The crustacean larval stage exemplified by the early development of a green crab is called the ________ stage."
   answer="zoea"
-  accept="zoeae"
+  accept="zoeae|zoea larva|zoea larvae"
   hint="This stage's larva has a large plated head shield and a long, tapering, segmented tail."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 28.6: Superphylum Ecdysozoa: Arthropods](https://openstax.org/books/biology-2e/pages/28-6-superphylum-ecdysozoa-arthropods) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own alt text; five figures re-kinded after inspection from the manifest's file-extension guess — Figure_28_04_05, Figure_28_04_09, and Figure_28_04_10 from "photo" to "diagram" (all three are labeled line drawings, not photographs), and Figure_B28_07_03_04 and Figure_B28_07_05abc from "diagram" to "photo" (both are photographs); a longdesc added to the four labeled diagrams (the book-lung/book-gill respiratory structures, the biramous/uniramous appendage comparison, the crayfish anatomy illustration, and the insect-anatomy Visual Connection figure) whose labels are not carried by their captions; the note wrapping the insect-anatomy Visual Connection rendered as its figure followed by a multiple choice, kept in the body, and not repeated in the closing Practice block, since the module's separate "Visual Connection Questions" section prints the identical question; in that multiple choice (`fs-idp45105856`), the option "Insects have both dorsal and ventral blood vessels" replaced with "Insects have a dorsal blood vessel with multiple hearts along its length," because the section's own text moves hemocoel fluid by "the tubular dorsal blood vessel" and the figure's own source description says "The circulatory system consists of a dorsal blood vessel that has multiple hearts along its length," with no ventral vessel anywhere in the module, so the source option was also false — leaving the item with two supportable answers — while the replacement is the figure description's own true sentence (reported as a source defect; key unchanged); the comparison table of phylum species counts kept as a Markdown table only — its columns are quantities, not categories, so it is not sortbins material; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; twelve key-term recall items added from the glossary; two locally written items added to the thin "environmental importance" objective group, disclosed here and in the source ledger — a text-recall item built from the Hexapoda subsection's own sentence on pheromones, and a multiple-choice item built from the Myriapoda subsection's own sentence contrasting millipede and centipede feeding roles; Practice items placed under the objective each tests, so the Critical Thinking question on the superclasses of Arthropoda, first in the source, comes after the segmentation and food-supply questions. One date is corrected with a visible Source note: the end-Permian extinction is about 252 million years ago, not 240 (erratum 427).</small>
+<small>This section is adapted from [Biology 2e, Section 28.6: Superphylum Ecdysozoa: Arthropods](https://openstax.org/books/biology-2e/pages/28-6-superphylum-ecdysozoa-arthropods) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own alt text; five figures re-kinded after inspection from the manifest's file-extension guess — Figure_28_04_05, Figure_28_04_09, and Figure_28_04_10 from "photo" to "diagram" (all three are labeled line drawings, not photographs), and Figure_B28_07_03_04 and Figure_B28_07_05abc from "diagram" to "photo" (both are photographs); a longdesc added to the four labeled diagrams (the book-lung/book-gill respiratory structures, the biramous/uniramous appendage comparison, the crayfish anatomy illustration, and the insect-anatomy Visual Connection figure) whose labels are not carried by their captions; the note wrapping the insect-anatomy Visual Connection rendered as its figure followed by a multiple choice, kept in the body, and not repeated in the closing Practice block, since the module's separate "Visual Connection Questions" section prints the identical question; in that multiple choice (`fs-idp45105856`), the option "Insects have both dorsal and ventral blood vessels" replaced with "Insects have a dorsal blood vessel with multiple hearts along its length," because the section's own text moves hemocoel fluid by "the tubular dorsal blood vessel" and the figure's own source description says "The circulatory system consists of a dorsal blood vessel that has multiple hearts along its length," with no ventral vessel anywhere in the module, so the source option was also false — leaving the item with two supportable answers — while the replacement is the figure description's own true sentence (key unchanged); the comparison table of phylum species counts kept as a Markdown table only — its columns are quantities, not categories, so it is not sortbins material; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; twelve key-term recall items added from the glossary, four of them (chelicera, pedipalp, oviger, and cephalothorax) worded from the body sentence that uses the term; two locally written items added to the thin "environmental importance" objective group, disclosed here and in the source ledger — a text-recall item built from the Hexapoda subsection's own sentence on pheromones, and a multiple-choice item built from the Myriapoda subsection's own sentence contrasting millipede and centipede feeding roles; Practice items placed under the objective each tests, so the Critical Thinking question on the superclasses of Arthropoda, first in the source, comes after the segmentation and food-supply questions. One date is corrected with a visible Source note: the end-Permian extinction is about 252 million years ago, not 240. The Critical Thinking question on the "superclasses" of Arthropoda keeps its source wording, and its model answer carries a Source note that the section's groups are subphyla, five with the extinct Trilobita; one source option's misspelling "dessication" reads "desiccation."</small>

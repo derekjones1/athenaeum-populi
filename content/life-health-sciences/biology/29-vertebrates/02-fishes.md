@@ -42,13 +42,13 @@ The class **Petromyzontida** includes approximately 40 species of lampreys, whic
 Lamprey. These parasitic sea lampreys, *Petromyzon marinus,* attach by suction to their lake trout host, and use their rough tongues to rasp away flesh in order to feed on the trout's blood. (credit: USGS)
 {{< /mediafigure >}}
 
-Lampreys live primarily in coastal and freshwater environments, and have a worldwide distribution, except for the tropics and polar regions. Some species are marine, but all species spawn in fresh water. Interestingly, northern lampreys in the family Petromyzontidae, have the highest number of chromosomes (164 to 174) among the vertebrates. Eggs are fertilized externally, and the larvae (called *ammocoetes*) differ greatly from the adult form, closely resembling the adult cephalocordate *amphioxus*. After spending three to 15 years as suspension feeders in rivers and streams, they attain sexual maturity. After one to three years of feeding on fish as ectoparasites during life in open water, the adults swim upstream, reproduce, and die within days.
+Lampreys live primarily in coastal and freshwater environments, and have a worldwide distribution, except for the tropics and polar regions. Some species are marine, but all species spawn in fresh water. Interestingly, northern lampreys in the family Petromyzontidae, have the highest number of chromosomes (164 to 174) among the vertebrates. Eggs are fertilized externally, and the larvae (called *ammocoetes*) differ greatly from the adult form, closely resembling the adult cephalochordate *amphioxus*. After spending three to 15 years as suspension feeders in rivers and streams, they attain sexual maturity. After one to three years of feeding on fish as ectoparasites during life in open water, the adults swim upstream, reproduce, and die within days.
 
 ## Gnathostomes: Jawed Fishes
 
 **Gnathostomes**, or "jaw-mouths," are vertebrates that possess true jaws—a milestone in the evolution of the vertebrates. In fact, one of the most significant developments in early vertebrate evolution was the development of the jaw: a hinged structure attached to the cranium that allows an animal to grasp and tear its food. Jaws were probably derived from the first pair of gill arches supporting the gills of jawless fishes.
 
-Early gnathostomes also possessed two sets of paired fins, allowing the fishes to maneuver accurately. Pectoral fins are typically located on the anterior body, and pelvic fins on the posterior. Evolution of the jaw and paired fins permitted gnathostomes to expand their food options from the scavenging and suspension feeding of jawless fishes to active predation. The ability of gnathostomes to exploit new nutrient sources probably contributed to their replacing most jawless fishes during the Devonian period. Two early groups of gnathostomes were the *acanthodians* and *placoderms* (pictured below), which arose in the late Silurian period and are now extinct. Most modern fishes are gnathostomes that belong to the clades Chondrichthyes and Osteichthyes (which include the class Actinoptertygii and class Sarcopterygii).
+Early gnathostomes also possessed two sets of paired fins, allowing the fishes to maneuver accurately. Pectoral fins are typically located on the anterior body, and pelvic fins on the posterior. Evolution of the jaw and paired fins permitted gnathostomes to expand their food options from the scavenging and suspension feeding of jawless fishes to active predation. The ability of gnathostomes to exploit new nutrient sources probably contributed to their replacing most jawless fishes during the Devonian period. Two early groups of gnathostomes were the *acanthodians* and *placoderms* (pictured below), which arose in the late Silurian period and are now extinct. Most modern fishes are gnathostomes that belong to the clades Chondrichthyes and Osteichthyes (which include the class Actinopterygii and class Sarcopterygii).
 
 {{< mediafigure src="biology/Figure_29_02_03" kind="diagram" alt="The illustration shows a large fish with a very wide mouth." >}}
 A placoderm. *Dunkleosteus* was an enormous placoderm from the Devonian period, 380 to 360 million years ago. It measured up to 10 meters in length and weighed up to 3.6 tons. Its head and neck were armored with heavy bony plates. Although *Dunkleosteus* had no true teeth, the edge of the jaw was armed with sharp bony blades. (credit: Nobu Tamura)
@@ -130,20 +130,6 @@ Gnathostomes include the cartilaginous fishes and the bony fishes, as well as al
 
 ### Describe the difference between jawless and jawed fishes
 
-{{< selfcheck question="What can be inferred about the evolution of the cranium and vertebral column from examining hagfishes and lampreys?" hint="Consider which of the two groups evolved earlier, and which of the two structures shows up in only the later-evolving one." >}}
-Comparison of hagfishes with lampreys shows that the cranium evolved first in early vertebrates, as it is seen in hagfishes, which evolved earlier than lampreys. This was followed by evolution of the vertebral column, a primitive form of which is seen in lampreys and not in hagfishes.
-===CHECKS===
-the cranium evolved first in early vertebrates, as it is seen in hagfishes, which evolved earlier than lampreys
-the vertebral column evolved later, a primitive form of which is seen in lampreys and not in hagfishes
-{{< /selfcheck >}}
-
-{{< selfcheck question="Why did gnathostomes replace most agnathans?" hint="Think about what having a jaw and paired fins let an animal do that a scavenging or suspension-feeding jawless fish could not." >}}
-Evolution of the jaw and paired fins permitted gnathostomes to diversify from the sedentary suspension feeding of agnathans to a mobile predatory lifestyle. The ability of gnathostomes to utilize new nutrient sources may be one reason why the gnathostomes replaced most agnathans.
-===CHECKS===
-the jaw and paired fins let gnathostomes diversify from sedentary suspension feeding to a mobile predatory lifestyle
-the ability to use new nutrient sources may be one reason gnathostomes replaced most agnathans
-{{< /selfcheck >}}
-
 {{< textin
   question="An eel-like jawless fish that lives on the ocean floor and is a scavenger is called a ________."
   answer="hagfish"
@@ -153,25 +139,60 @@ the ability to use new nutrient sources may be one reason gnathostomes replaced 
 {{< textin
   question="A jawless fish characterized by a toothed, funnel-like sucking mouth is called a ________."
   answer="lamprey"
-  hint="Many species of this fish spend part of their life cycle as an ectoparasite on other fish."
+  hint="Look at the second of the two subsections on living jawless fishes."
 >}}
 
 {{< textin
   question="A vertebrate that possesses true jaws is called a ________."
   answer="gnathostome"
-  hint="Look at the lamprey paragraph's sentence on which vertebrates share lampreys' eye muscles, semicircular canals, and cerebellum."
+  hint="Look at the opening paragraph under the section's second main heading."
 >}}
 
 {{< textin
   question="One of the earliest jawless fish, covered in bone, is called an ________."
   answer="ostracoderm"
-  hint="Look at the opening paragraph of the jawless-fish discussion, on the earliest armored forms."
+  hint="Look at the second paragraph of the jawless-fish discussion, on the earliest armored forms."
 >}}
+
+{{< selfcheck question="What can be inferred about the evolution of the cranium and vertebral column from examining hagfishes and lampreys?" hint="Compare the paragraph on the hagfish skeleton with the lamprey paragraph's list of features." >}}
+Comparison of hagfishes with lampreys shows that the cranium evolved first in early vertebrates, as it is seen in hagfishes, which evolved earlier than lampreys. This was followed by evolution of the vertebral column, a primitive form of which is seen in lampreys and not in hagfishes.
+===CHECKS===
+the cranium evolved first in early vertebrates, as it is seen in hagfishes, which evolved earlier than lampreys
+the vertebral column evolved later, a primitive form of which is seen in lampreys and not in hagfishes
+{{< /selfcheck >}}
+
+{{< selfcheck question="Why did gnathostomes replace most agnathans?" hint="Look at the second paragraph of the jawed-fishes discussion." >}}
+Evolution of the jaw and paired fins permitted gnathostomes to diversify from the sedentary suspension feeding of agnathans to a mobile predatory lifestyle. The ability of gnathostomes to utilize new nutrient sources may be one reason why the gnathostomes replaced most agnathans.
+===CHECKS===
+the jaw and paired fins let gnathostomes diversify from sedentary suspension feeding to a mobile predatory lifestyle
+the ability to use new nutrient sources may be one reason gnathostomes replaced most agnathans
+{{< /selfcheck >}}
 
 ### Discuss the distinguishing features of sharks and rays compared to other modern fishes
 
+{{< textin
+  question="The sensory organ that allows sharks to detect electromagnetic fields produced by living things is called the ________."
+  answer="ampulla of Lorenzini"
+  accept="ampullae of Lorenzini"
+  hint="Look at the paragraph on sharks' sense organs used in locating prey."
+>}}
+
+{{< textin
+  question="The sense organ that runs the length of a fish's body and is used to detect vibration in the water is called the ________."
+  answer="lateral line"
+  accept="lateral line system"
+  hint="Look at the same paragraph on sharks' sense organs, after the electroreceptor sentences."
+>}}
+
+{{< textin
+  question="The class of bony fishes whose fins are fleshy and lobed, supported by bones similar to those in the limbs of early tetrapods, is ________."
+  answer="Sarcopterygii"
+  accept="lobe-finned fishes"
+  hint="Look at the two paragraphs just before the salmon-and-coelacanth figure."
+>}}
+
 {{< multiplechoice
-  question="Members of Chondrichthyes differ from members of Osteichthyes by having a ________."
+  question="Members of Chondrichthyes differ from members of Osteichthyes by having (a) ________."
   answer="cartilaginous skeleton"
   hint="Compare the sentence that defines each class in the two subsections on jawed fishes."
 >}}
@@ -184,7 +205,7 @@ two sets of paired fins
 {{< multiplechoice
   question="Members of Chondrichthyes are thought to be descended from fishes that had ________."
   answer="a bony skeleton"
-  hint="Consider which extinct group of jawed fishes Chondrichthyes evolved from, and what its endoskeleton was made of."
+  hint="Look at the first paragraph of the cartilaginous-fishes subsection, on the clade's ancestry."
 >}}
 a cartilaginous skeleton
 a bony skeleton
@@ -193,9 +214,9 @@ slime glands
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="A marine biologist catches a species of fish she has never seen before. Upon examination, she determines that the species has a predominantly cartilaginous skeleton and a swim bladder. If its pectoral fins are not fused to its head, to which category of fish does the specimen belong?"
+  question="A marine biologist catches a species of fish she has never seen before. Upon examination, she determines that the species has a predominantly cartilaginous skeleton and a swim bladder. If its pectoral fins are not fused with its head, to which category of fish does the specimen belong?"
   answer="Osteichthyes"
-  hint="Find which group the section's swim-bladder sentence describes, then check whether the section says any members of that group have mostly cartilaginous skeletons."
+  hint="Compare what each subsection on jawed fishes says about skeletons, buoyancy, and fins."
 >}}
 Rays
 Osteichthyes
@@ -203,26 +224,6 @@ Sharks
 Hagfish
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The sensory organ that allows sharks to detect electromagnetic fields produced by living things is called the ________."
-  answer="ampulla of Lorenzini"
-  accept="ampullae of Lorenzini"
-  hint="Look at the paragraph on sharks' sense organs used in locating prey."
->}}
-
-{{< textin
-  question="A jawed fish with paired fins and a skeleton made of cartilage belongs to the class ________."
-  answer="Chondrichthyes"
-  accept="cartilaginous fishes"
-  hint="Look at the first paragraph of the subsection on sharks, rays, skates, and chimaeras."
->}}
-
-{{< textin
-  question="The sense organ that runs the length of a fish's body and is used to detect vibration in the water is called the ________."
-  answer="lateral line"
-  hint="It is often considered functionally similar to the sense of 'hearing' in animals on land."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 29.2: Fishes](https://openstax.org/books/biology-2e/pages/29-2-fishes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the stingray-and-ratfish figure's alt describes the stingray's round disc body and long thin tail, because the source alt's "long, thin body and a circular head" reverses them (erratum 844); three figures re-kinded after inspection — Figure_29_02_03 (a digital painting of the extinct placoderm *Dunkleosteus*) and Figure_29_02_07ab (an illustration comparing a salmon and a coelacanth) from the manifest's file-extension "photo" guess to "diagram", and Figure_B29_02_06ab (two real underwater photographs of a stingray and a ratfish) from "diagram" to "photo"; figure references to the print figure numbers rewritten as "pictured below"; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (hagfish, lamprey, gnathostome, ostracoderm, ampulla of Lorenzini, lateral line, Chondrichthyes) added from the glossary.</small>
+<small>This section is adapted from [Biology 2e, Section 29.2: Fishes](https://openstax.org/books/biology-2e/pages/29-2-fishes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the stingray-and-ratfish figure's alt describes the stingray's round disc body and long thin tail, because the source alt's "long, thin body and a circular head" reverses them; three figures re-kinded after inspection — Figure_29_02_03 (a digital painting of the extinct placoderm *Dunkleosteus*) and Figure_29_02_07ab (an illustration comparing a salmon and a coelacanth) from the manifest's file-extension "photo" guess to "diagram", and Figure_B29_02_06ab (two real underwater photographs of a stingray and a ratfish) from "diagram" to "photo"; figure references to the print figure numbers rewritten as "pictured below"; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (hagfish, lamprey, gnathostome, ostracoderm, ampulla of Lorenzini, lateral line, Sarcopterygii) added from the glossary and placed first in their objective groups, the source items keeping their relative order; two misspellings in the body corrected ("Actinoptertygii" to Actinopterygii, "cephalocordate" to cephalochordate).</small>

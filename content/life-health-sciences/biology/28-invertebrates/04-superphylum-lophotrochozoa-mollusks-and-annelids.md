@@ -33,7 +33,7 @@ Molluscan body regions. There are many species and variations of mollusks; this 
 {{< multiplechoice
   question="Which of the following statements about the anatomy of a mollusk is false?"
   answer="The digestive system includes a gizzard, a stomach, a digestive gland, and the intestine."
-  hint="Check each labeled structure in the diagram above against the four statements — one part of the digestive system that a statement lists is not among the labels."
+  hint="Check each statement against the labels in the diagram above."
 >}}
 Most mollusks have a radula for grinding food.
 A digestive gland is connected to the stomach.
@@ -192,7 +192,28 @@ Phylum Annelida includes vermiform, segmented animals. Segmentation is metameric
 
 ### Describe the unique anatomical and morphological features of mollusks and annelids
 
-{{< selfcheck question="Describe the morphology and anatomy of mollusks." hint="Work through the foot, the mantle and mantle cavity, the coelom, and the radula in turn." >}}
+{{< textin
+  question="The phylum of protostomes with soft bodies and no segmentation is called ________."
+  answer="Mollusca"
+  accept="mollusk|mollusc"
+  hint="Look at the opening paragraph on the first of the two phyla this section covers."
+>}}
+
+{{< textin
+  question="The phylum that comprises the true, segmented worms is called ________."
+  answer="Annelida"
+  accept="annelid"
+  hint="Look at the opening paragraph on the second of the two phyla this section covers."
+>}}
+
+{{< textin
+  question="The larva with several bands of cilia around a toplike body and an additional apical tuft of cilia is called a ________."
+  answer="trochophore"
+  accept="trochophore larva|trochophore larvae"
+  hint="Look at the Phylum Mollusca paragraph on reproduction, before the Classification subsection."
+>}}
+
+{{< selfcheck question="Describe the morphology and anatomy of mollusks." hint="Look at the Phylum Mollusca paragraphs before the Classification of Phylum Mollusca subsection." >}}
 Mollusks have a large muscular foot that may be modified in various ways, such as into tentacles, but it functions in locomotion. They have a mantle, a structure of tissue that covers and encloses the dorsal portion of the animal, and secrete the shell when it is present. The mantle encloses the mantle cavity, which houses the gills (when present), excretory pores, anus, and gonadopores. The coelom of mollusks is restricted to the region around the systemic heart. The main body cavity is a hemocoel. Many mollusks have a radula near the mouth that is used for scraping food.
 ===CHECKS===
 a large muscular foot that functions in locomotion
@@ -202,34 +223,13 @@ a coelom restricted to the region around the systemic heart, with a hemocoel as 
 a radula near the mouth used for scraping food
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are the anatomical differences between nemertines and mollusks?" hint="Think about which of these two phyla has an external shell, a proboscis, and a fully closed system of vessels." >}}
+{{< selfcheck question="What are the anatomical differences between nemertines and mollusks?" hint="Compare the Phylum Mollusca paragraphs here with the previous section's Phylum Nemertea subsection." >}}
 Mollusks have a shell, even if it is a reduced shell. Nemertines do not have a shell. Nemertines have a proboscis; mollusks do not. Nemertines have a closed circulatory system, whereas Mollusks have an open circulatory system.
 ===CHECKS===
 mollusks have a shell, even if reduced; nemertines do not
 nemertines have a proboscis; mollusks do not
 nemertines have a closed circulatory system, while mollusks have an open circulatory system
 {{< /selfcheck >}}
-
-{{< textin
-  question="The phylum of vermiform animals with metamerism is called ________."
-  answer="Annelida"
-  accept="annelid"
-  hint="Its name comes from the Latin word for a small ring, describing the animal's ring-like segments."
->}}
-
-{{< textin
-  question="The phylum of protostomes with soft bodies and no segmentation is called ________."
-  answer="Mollusca"
-  accept="mollusk|mollusc"
-  hint="Its name literally means 'soft' body, from early descriptions of unshelled cuttlefish."
->}}
-
-{{< textin
-  question="The larval stage shared by most aquatic mollusks and many polychaetes, with bands of cilia around a toplike body, is called a ________."
-  answer="trochophore"
-  accept="trochophore larva|trochophore larvae"
-  hint="It unites the mollusks and the annelids in common ancestry as lophotrochozoans."
->}}
 
 ### Describe the formation of the coelom
 
@@ -245,31 +245,31 @@ none of the above
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Phylum Mollusca is a large group of protostome ________ invertebrates that occupy marine, freshwater, and terrestrial habitats."
+  question="Phylum Mollusca is a large group of protostome ________ invertebrates that occupy marine, freshwater, and terrestrial habitats. (One word naming how their coelom forms.)"
   answer="schizocoelous"
   hint="Look at the last sentence of the section's introduction."
 >}}
 
 {{< textin
-  question="The mantle cavity is quite distinct from the coelomic cavity, which in mollusks is typically reduced to the area surrounding the ________, kidneys, and intestine."
+  question="In mollusks, the coelomic cavity is typically reduced to the area surrounding the ________, kidneys, and intestine."
   answer="heart"
-  hint="This organ sits within the visceral mass, and the reduced coelom in an adult mollusk mostly surrounds it."
+  hint="Look at the Summary's paragraph on mollusks."
 >}}
 
 ### Identify an important extracoelomic cavity in mollusks
+
+{{< textin
+  question="The specialized epidermis that encloses a mollusk's visceral organs and secretes its shell is called the ________."
+  answer="mantle"
+  accept="pallium"
+  hint="Look at the opening paragraphs of Phylum Mollusca."
+>}}
 
 {{< textin
   question="The specialized gill structure found in mollusks is called a ________."
   answer="ctenidium"
   accept="ctenidia"
   hint="Look at the Classification of Phylum Mollusca paragraph on how bivalves capture food particles from incoming water."
->}}
-
-{{< textin
-  question="The specialized epidermis that encloses a mollusk's visceral organs and secretes its shell is called the ________."
-  answer="mantle"
-  accept="pallium"
-  hint="Its cavity, not the coelom, is the major internal body chamber in most mollusks."
 >}}
 
 {{< multiplechoice
@@ -285,7 +285,7 @@ phylum Nemertea.
 
 ### Describe the major body regions of Mollusca and how they vary in different molluscan classes
 
-{{< selfcheck question="How does a change in the circulatory system organization support the body designs in cephalopods compared to other mollusks?" hint="Compare how efficiently oxygen reaches the tissues in a system limited by diffusion into a hemocoel versus one confined entirely to vessels." >}}
+{{< selfcheck question="How does a change in the circulatory system organization support the body designs in cephalopods compared to other mollusks?" hint="Look at the Classification of Phylum Mollusca paragraphs on cephalopods and on the chitons' hemocoel." >}}
 Cephalopods have a closed circulatory system, while other members of the Mollusca phylum have open circulatory systems. Having a closed system allows blood to be moved more efficiently and rapidly through the animal, since the circulation is not limited by diffusion. For example, this allows the octopus to have a much more complex body plan, with branching tentacles, compared to a snail. In many cases, a closed circulatory system also allows the development of larger organisms.
 ===CHECKS===
 cephalopods have a closed circulatory system, while other mollusks have open circulatory systems
@@ -295,34 +295,37 @@ a closed circulatory system also allows the development of larger organisms
 {{< /selfcheck >}}
 
 {{< textin
-  question="The rasp-like feeding organ with chitinous filelike teeth, absent only in the bivalves, is called the ________."
+  question="The rasp-like organ with chitinous filelike teeth that shreds or scrapes food before it enters the digestive tract is called the ________."
   answer="radula"
-  hint="Chiton teeth made of this organ's ultra-hard magnetite are harder than human enamel."
+  accept="radulae"
+  hint="Look at the Phylum Mollusca paragraphs before the Classification of Phylum Mollusca subsection."
 >}}
 
 {{< textin
   question="The calcareous secretion bivalves use to line the inside of their shells and coat intruding particles is called ________."
   answer="nacre"
   accept="mother of pearl"
-  hint="Oysters and mussels deposit this substance around foreign particles that enter the mantle cavity, a property exploited commercially."
+  hint="Look at the Classification of Phylum Mollusca paragraph that follows the bivalve photographs."
 >}}
 
 {{< textin
   question="A gastropod shell shape coiled around a vertical axis, like a garden hose wound up, is called ________."
   answer="planospiral"
-  hint="Garden snails commonly show this shell shape, as opposed to the shape seen in marine conches."
+  accept="planispiral"
+  hint="Look at the Classification of Phylum Mollusca paragraph on gastropod shells."
 >}}
 
 {{< textin
   question="A gastropod shell shape coiled around a horizontal axis, like a spiral staircase, is called ________."
   answer="conispiral"
-  hint="Marine conches commonly show this shell shape, as opposed to the shape seen in garden snails."
+  hint="Look at the Classification of Phylum Mollusca paragraph on gastropod shells."
 >}}
 
 {{< textin
   question="The tentacle-like projections that tusk shells use to catch prey are called ________."
   answer="captacula"
-  hint="In scaphopods, the mouth opens among a group of these, which terminate in ciliated bulbs."
+  accept="captaculum"
+  hint="Look at the last Classification of Phylum Mollusca paragraph, before the tooth-shell photograph."
 >}}
 
 ### Discuss the advantages of true body segmentation
@@ -341,10 +344,10 @@ Muscle contractions can be localized to specific regions of the body to coordina
 {{< textin
   question="True segmentation, in which several internal and external morphological features are repeated in each body segment, is called ________."
   answer="metamerism"
-  hint="This is the key characteristic that gives the annelids their common name of 'segmented worms.'"
+  hint="Look at the opening paragraph of Phylum Annelida."
 >}}
 
-{{< selfcheck question="What advantage does metameric segmentation give annelids?" hint="Think about what repeating 'compartments' let an animal do as it grows, and how that affects how it moves." >}}
+{{< selfcheck question="According to the Morphology subsection, what advantage does true segmentation give annelids?" hint="Look at the Morphology subsection of Phylum Annelida." >}}
 Metamerism allows animals to become bigger by adding "compartments," while making their movement more efficient.
 ===CHECKS===
 allows animals to become bigger by adding compartments
@@ -354,16 +357,17 @@ makes their movement more efficient
 ### Describe the features of animals classified in phylum Annelida
 
 {{< textin
-  question="The reproductive structure that generates mucus to aid sperm transfer and produces a cocoon in oligochaetes is called the ________."
+  question="The reproductive structure of earthworms that generates mucus to aid sperm transfer and produces a cocoon is called the ________."
   answer="clitellum"
-  hint="It appears as a permanent, fused band on the anterior third of an earthworm."
+  accept="clitella"
+  hint="Look at the Morphology subsection of Phylum Annelida and the photograph that follows it."
 >}}
 
 {{< textin
   question="The chitinous projections from the cuticle that anchor in an annelid's epidermis, each with its own muscle, are called ________."
   answer="seta"
   accept="setae|chaeta|chaetae|seta/chaeta"
-  hint="In the polychaetes, these are borne on paired appendages called parapodia."
+  hint="Look at the first paragraph of the Anatomy subsection of Phylum Annelida."
 >}}
 
 {{< multiplechoice
@@ -379,4 +383,4 @@ Cephalopoda
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 28.4: Superphylum Lophotrochozoa: Mollusks and Annelids](https://openstax.org/books/biology-2e/pages/28-4-superphylum-lophotrochozoa-mollusks-and-annelids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own walk-through-style alt text; three figures re-kinded after inspection — Figure_B28_05_07 from the manifest's file-extension "diagram" guess to "photo" (two photographs, of mussels and a scallop), and Figure_28_03_12 and Figure_28_03_17 from "photo" to "diagram" (a torsion schematic and a segmental-anatomy schematic, neither a captured photograph); a longdesc added to the molluscan body-plan diagram (Figure_28_03_08), the gastropod torsion diagram (Figure_28_03_12), and the annelid segmental-anatomy diagram (Figure_28_03_17), walking each figure's labels in reading order without stating the Visual Connection's answer; the note wrapping the molluscan body-plan Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the Everyday Connection's embedded figure (Figure_28_03_13) kept nested inside its callout; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; thirteen key-term recall items added from the glossary (every glossary term except veliger); two cloze textins, one multiple choice, and one self-check built from the section's own Summary and body sentences (the coelom's schizocoelous formation, the mantle cavity's relation to the reduced coelom, the distinction between Polychaeta and Oligochaeta, and the advantage of metameric segmentation, whose model answer is the body's own sentence), disclosed here since none is drawn from a keyed source exercise; the body Visual Connection keeps the note's own wording of option (a) ("Most mollusks have a radula for grinding food"), which differs from the end-of-section Visual Connection Questions list's wording of the same item ("Mollusks have a radula for grinding food") — the section's "present in all groups except the bivalves" makes the unqualified form a second false statement — without changing the keyed answer; reported as a source defect. One number is corrected with a visible Source note: the summary counts the eight molluscan classes the section names, not seven (erratum 425).</small>
+<small>This section is adapted from [Biology 2e, Section 28.4: Superphylum Lophotrochozoa: Mollusks and Annelids](https://openstax.org/books/biology-2e/pages/28-4-superphylum-lophotrochozoa-mollusks-and-annelids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own walk-through-style alt text; three figures re-kinded after inspection — Figure_B28_05_07 from the manifest's file-extension "diagram" guess to "photo" (two photographs, of mussels and a scallop), and Figure_28_03_12 and Figure_28_03_17 from "photo" to "diagram" (a torsion schematic and a segmental-anatomy schematic, neither a captured photograph); a longdesc added to the molluscan body-plan diagram (Figure_28_03_08), the gastropod torsion diagram (Figure_28_03_12), and the annelid segmental-anatomy diagram (Figure_28_03_17), walking each figure's labels in reading order without stating the Visual Connection's answer; the note wrapping the molluscan body-plan Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the Everyday Connection's embedded figure (Figure_28_03_13) kept nested inside its callout; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; thirteen key-term recall items added from the glossary (every glossary term except veliger; the Annelida item prompted by the body's "true, segmented worms" sentence); two cloze textins, one multiple choice, and one self-check built from the section's own Summary and body sentences (the coelom's schizocoelous formation, the reduced coelom's extent, the distinction between Polychaeta and Oligochaeta, and the advantage of metameric segmentation, whose model answer is the body's own sentence), disclosed here since none is drawn from a keyed source exercise; the body Visual Connection keeps the note's own wording of option (a) ("Most mollusks have a radula for grinding food"), which differs from the end-of-section Visual Connection Questions list's wording of the same item ("Mollusks have a radula for grinding food") — the section's "present in all groups except the bivalves" makes the unqualified form a second false statement — without changing the keyed answer, a source defect. One number is corrected with a visible Source note: the summary counts the eight molluscan classes the section names, not seven.</small>

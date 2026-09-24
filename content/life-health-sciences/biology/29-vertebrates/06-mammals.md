@@ -108,9 +108,23 @@ There are three groups of mammals living today: monotremes, marsupials, and euth
 ### Name and describe the distinguishing features of the three main groups of mammals
 
 {{< textin
-  question="An egg-laying mammal is called a ________."
-  answer="monotreme"
-  hint="Members of this group retain their eggs through about two-thirds of the developmental period before laying them in a nest."
+  question="Unlike the hard shells of bird eggs, the eggs of monotremes have a ________ shell, similar to the shells of reptile eggs."
+  answer="leathery"
+  accept="leathery shell"
+  hint="Look at the second paragraph of Living Mammals."
+>}}
+
+{{< textin
+  question="________ give birth to very immature young, which typically complete their development in a pouch."
+  answer="marsupial"
+  hint="Look at the third paragraph of the Summary."
+>}}
+
+{{< textin
+  question="Mammals whose species all possess a complex placenta connecting a fetus to the mother are known as ________ mammals."
+  answer="eutherian"
+  accept="eutheria|placental|placental mammal|eutherian mammal"
+  hint="Look at the last paragraph of Living Mammals."
 >}}
 
 {{< multiplechoice
@@ -124,25 +138,12 @@ bandicoots.
 platypuses.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The group of mammals whose very immature young typically complete their development inside a pouch, and which includes the kangaroo, koala, bandicoot, and Tasmanian devil, is called a ________."
-  answer="marsupial"
-  hint="Most species in this group live in Australia, New Guinea, and nearby islands, and their embryos are nourished before birth by a yolk-sac placenta with no intervening egg shell."
->}}
-
-{{< textin
-  question="Mammals whose species all possess a complex placenta connecting a fetus to the mother are known as ________ mammals."
-  answer="eutherian"
-  accept="eutheria|placental|placental mammal"
-  hint="Reread Living Mammals, on the three clades of mammals alive today."
->}}
-
 ### Describe the likely line of evolutionary descent that produced mammals
 
 {{< multiplechoice
   question="The evolution of which of the following features of mammals is hardest to trace through the fossil record?"
   answer="Mammary glands"
-  hint="Compare each option with the features the Evolution of Mammals discussion traces through fossil skulls and jaws."
+  hint="Compare what the Characteristics of Mammals and Evolution of Mammals subsections say about each option."
 >}}
 Jaw structure
 Mammary glands
@@ -151,17 +152,17 @@ Development of hair
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="The zygomatic arch (cheekbone) is present in mammals and in advanced therapsids such as the cynodonts, but is absent in which early synapsid group?"
+  question="According to the section, which of these groups lacks a zygomatic arch, or cheekbone?"
   answer="pelycosaurs"
   hint="Look at the Evolution of Mammals paragraph on changes in the jawbone from early synapsids to later ones."
 >}}
 eutherians
-therapsids
+advanced therapsids
 pelycosaurs
 cynodonts
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How did the evolution of jaw musculature allow mammals to spread?" hint="Consider how chewing changes what an animal can eat, and why that flexibility would matter after a mass extinction or in a new environment." >}}
+{{< selfcheck question="How did the evolution of jaw musculature allow mammals to spread?" hint="Look at the Characteristics of Mammals paragraph on the adductor muscles and the Evolution of Mammals paragraph on food processing." >}}
 The muscles that close the jaw in mammals evolved to allow chewing to occur. Chewing meant mammals could now grind food with their teeth (molars), allowing them to eat a more diverse diet. This would have protected them in the event of a mass extinction (still have food sources available) and allow them to colonize new environments (consume new food sources). Chewing also allowed mammals to break down food into smaller pieces to speed digestion, reducing the time between consumption and energy extraction.
 ===CHECKS===
 the muscles that close the jaw in mammals evolved to allow chewing to occur
@@ -183,7 +184,7 @@ scents
 milk
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe three unique features of the mammalian skeletal system." hint="Focus on the jaw bone count, the bones of the ear, and the muscles that close the jaw — three separate structures the section names as distinctly mammalian." >}}
+{{< selfcheck question="Describe three unique features of the mammalian skeletal system." hint="Look at the Characteristics of Mammals paragraphs that follow the one on the skin's glands." >}}
 The lower jaw of mammals consists of only one bone, the dentary. The dentary bone joins the skull at the squamosal bone. Mammals have three bones of the middle ear. The adductor muscle that closes the jaw is composed of two muscles in mammals. Most mammals have heterodont teeth.
 ===CHECKS===
 the lower jaw of mammals consists of only one bone, the dentary
@@ -193,7 +194,7 @@ the adductor muscle that closes the jaw is composed of two muscles in mammals
 most mammals have heterodont teeth
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe three characteristics of the mammalian brain that differ from other vertebrates." hint="Consider the folding of the cortex's surface, the number of divisions in one midbrain structure, and the specialized structure that links the two hemispheres." >}}
+{{< selfcheck question="Describe three characteristics of the mammalian brain that differ from other vertebrates." hint="Look at the last paragraph of Characteristics of Mammals." >}}
 In some mammals, the cerebral cortex is highly folded, allowing for greater surface area than a smooth cortex. The optic lobes are divided into two parts in mammals. Eutherian mammals also possess a specialized structure that links the two cerebral hemispheres, called the corpus callosum.
 ===CHECKS===
 in some mammals, the cerebral cortex is highly folded, allowing for greater surface area than a smooth cortex
@@ -202,16 +203,15 @@ eutherian mammals also possess a specialized structure that links the two cerebr
 {{< /selfcheck >}}
 
 {{< textin
-  question="The single bone that makes up the lower jaw in mammals is called the ________."
-  answer="dentary"
-  accept="dentary bone|dentaries"
-  hint="In other vertebrates the lower jaw is made of several bones joined between the quadrate and articular; mammals fuse it down to just one."
+  question="A mammal that has two sets of teeth in its lifetime, deciduous teeth and then permanent teeth, is described as a ________."
+  answer="diphyodont"
+  hint="Look at the Characteristics of Mammals paragraph on the jaw muscles and teeth."
 >}}
 
 {{< textin
-  question="The skin gland that produces a lipid mixture called sebum, providing water resistance and lubrication for hair, is the ________."
+  question="The mammalian skin gland whose secretion provides water resistance and lubrication for hair is the ________."
   answer="sebaceous gland"
-  hint="This type of gland is located over most of the body, unlike the sweat-producing glands that are limited to certain areas in most mammals."
+  hint="Look at the Characteristics of Mammals paragraph on the integument."
 >}}
 
 ### Identify the major clades of eutherian mammals
@@ -222,26 +222,26 @@ eutherian mammals also possess a specialized structure that links the two cerebr
   hint="Look at the Living Mammals paragraph that sorts the familiar eutherian orders into groups."
 >}}
 Carnivora
-Chiroptera
+Cetartiodactyla
 Primates
 Perissodactyla
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Name the two major clades into which eutherian mammals are classified, and give one example group from each." hint="The section names exactly two clades right after introducing the eutherians, then lists example groups under each one." >}}
-Eutherian mammals are classified into two major clades, the Atlantogenata and the Boreoeutheria. The Atlantogenata include groups such as the Afrotheria. The Boreoeutheria include groups such as the Primates.
+{{< selfcheck question="Name the two major clades into which eutherian mammals are classified, and give one example group from each." hint="Look at the last paragraph of Living Mammals." >}}
+Eutherian mammals are classified into two major clades, the Atlantogenata and the Boreoeutheria. One example group from the Atlantogenata is the Afrotheria or the Xenarthra. One example group from the Boreoeutheria is the Euarchontoglires or the Laurasiatheria.
 ===CHECKS===
 eutherian mammals are classified into two major clades, the Atlantogenata and the Boreoeutheria
-the Atlantogenata include groups such as the Afrotheria
-the Boreoeutheria include groups such as the Primates
+one example group from the Atlantogenata is the Afrotheria or the Xenarthra
+one example group from the Boreoeutheria is the Euarchontoglires or the Laurasiatheria
 {{< /selfcheck >}}
 
 {{< textin
   question="The two largest orders of eutherian mammals, which together make up almost 60 percent of all eutherian species, are rodents and ________."
   answer="bats"
-  accept="Chiroptera"
-  hint="The section names this order right after describing the orders that include horses, rhinos, cows, giraffes, pigs, hippos, whales, cats, dogs, and bears."
+  accept="Chiroptera|bats and flying foxes"
+  hint="Look at the last sentence of Living Mammals."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 29.6: Mammals](https://openstax.org/books/biology-2e/pages/29-6-mammals) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_29_06_01 (a labeled schematic of the middle-ear bones), Figure_29_06_02 (a painted paleoart reconstruction of a cynodont, not a captured photograph), and Figure_29_06_03 (a composite image whose panel (a) is a hand-colored illustration of platypuses, not a photograph, even though panel (b) is one); Figure_B29_06_03 and Figure_29_06_04 kept as "photo"; a longdesc added to the two labeled anatomical diagrams (Figure_29_06_01's middle-ear schematic and Figure_B29_06_03's "Double jaw joint" inset) whose labels are not fully carried by their captions; the middle-ear figure's (Figure_29_06_01) source alt calls the malleus, incus, and stapes "the three bones of the inner ear… connected together inside the ear canal," while the module's own caption and text place them in the middle ear and the drawing shows them in the cavity beyond the inner end of the ear canal, so the page's alt describes them there — reported as a source defect; the morganucodont caption's "This morganucodont *Megazotrodon*," corrected to "*Megazostrodon*" to match the correct genus name used two sentences later in the same caption's own credit line ("Megazostrodon Natural History Museum") and confirmed against the PDF — reported as a source defect; the second instance of "Atlantogenata," printed as "Atlantogeneta" one sentence after its first, correct spelling in the same paragraph, corrected to "Atlantogenata" throughout — reported as a source defect; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with rubric checkpoints added to each self-check decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (monotreme, marsupial, eutherian, dentary, sebaceous gland) added from the glossary; four items written locally and strictly from the section's own sentences, disclosed because the source's Review and Critical Thinking questions do not test the objectives they cover — a multiple choice on which early synapsid group lacks the zygomatic arch (from the section's own sentence naming pelycosaurs as the exception), and, for the "major clades of eutherian mammals" objective, a multiple choice and a self-check built from the section's sentence on the Atlantogenata/Boreoeutheria clades and their example groups, plus a text-recall item built from the section's sentence naming rodents and bats as the two largest eutherian orders; the glossary's "a skin gland that produce" read as "produces"; Practice items placed under the objective each tests, so the eccrine-gland Review Question, first in the source, comes after the monotreme and fossil-record questions, and the jaw-musculature Critical Thinking Question, third in the source, comes before the skeletal-system and brain questions. Two claims are corrected with visible Source notes: mammals number more than 6,000 species, consistent with the section's own 6,000 placentals, and the mammary gland key term admits the males the section says possess them (errata 428, 431).</small>
+<small>This section is adapted from [Biology 2e, Section 29.6: Mammals](https://openstax.org/books/biology-2e/pages/29-6-mammals) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_29_06_01 (a labeled schematic of the middle-ear bones), Figure_29_06_02 (a painted paleoart reconstruction of a cynodont, not a captured photograph), and Figure_29_06_03 (a composite image whose panel (a) is a hand-colored illustration of platypuses, not a photograph, even though panel (b) is one); Figure_B29_06_03 and Figure_29_06_04 kept as "photo"; a longdesc added to the two labeled anatomical diagrams (Figure_29_06_01's middle-ear schematic and Figure_B29_06_03's "Double jaw joint" inset) whose labels are not fully carried by their captions; the middle-ear figure's (Figure_29_06_01) source alt calls the malleus, incus, and stapes "the three bones of the inner ear… connected together inside the ear canal," while the module's own caption and text place them in the middle ear and the drawing shows them in the cavity beyond the inner end of the ear canal, so the page's alt describes them there; the morganucodont caption's "This morganucodont *Megazotrodon*," corrected to "*Megazostrodon*" to match the correct genus name used two sentences later in the same caption's own credit line ("Megazostrodon Natural History Museum") and confirmed against the PDF; the second instance of "Atlantogenata," printed as "Atlantogeneta" one sentence after its first, correct spelling in the same paragraph, corrected to "Atlantogenata" throughout; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with rubric checkpoints added to each self-check decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (eutherian, diphyodont, sebaceous gland) added from the glossary and a text-recall cloze of the summary's marsupial sentence; five items written locally and strictly from the section's own sentences, disclosed because the source's Review and Critical Thinking questions do not test the objectives they cover — a text-recall item on the monotremes' leathery egg shells, a multiple choice on which group lacks the zygomatic arch (from the section's own sentence naming pelycosaurs as the exception), and, for the "major clades of eutherian mammals" objective, a multiple choice and a self-check built from the section's sentence on the Atlantogenata/Boreoeutheria clades and their example groups, plus a text-recall item built from the section's sentence naming rodents and bats as the two largest eutherian orders; the glossary's "a skin gland that produce" read as "produces"; Practice items placed under the objective each tests, so the eccrine-gland Review Question, first in the source, comes after the monotreme and fossil-record questions, and the jaw-musculature Critical Thinking Question, third in the source, comes before the skeletal-system and brain questions. Two claims are corrected with visible Source notes: mammals number more than 6,000 species, consistent with the section's own 6,000 placentals, and the mammary gland key term admits the males the section says possess them.</small>

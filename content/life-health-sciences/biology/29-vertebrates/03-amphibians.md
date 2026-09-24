@@ -127,14 +127,14 @@ All amphibians are carnivores and possess many small teeth. The fossil record pr
 
 ### Describe the important difference between the life cycle of amphibians and the life cycles of other vertebrates
 
-{{< selfcheck question="Explain why frogs are restricted to a moist environment." hint="Consider what protects a frog egg — or fails to — compared with the shelled eggs of other land vertebrates." >}}
+{{< selfcheck question="Explain why frogs are restricted to a moist environment." hint="Look at the frogs subsection's paragraph on eggs and parental behavior." >}}
 A moist environment is required, as frog eggs lack a shell and dehydrate quickly in dry environments.
 ===CHECKS===
 frog eggs lack a shell
 frog eggs dehydrate quickly in dry environments
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe the differences between the larval and adult stages of frogs." hint="Track what disappears and what develops as a filter-feeding tadpole becomes a carnivorous adult." >}}
+{{< selfcheck question="Describe the differences between the larval and adult stages of frogs." hint="Look at the frogs subsection's paragraph on the two stages of the life cycle." >}}
 The larval stage of frogs is the tadpole, which is usually a filter-feeding herbivore. Tadpoles usually have gills, a lateral line system, long-finned tails, and lack limbs. In the adult form, the gills and lateral line system disappear, and four limbs develop. The jaws grow larger, suitable for carnivorous feeding, and the digestive system transforms into the typical short gut of a predator. An eardrum and air-breathing lungs also develop.
 ===CHECKS===
 the tadpole is usually a filter-feeding herbivore
@@ -145,7 +145,7 @@ the digestive system transforms into the typical short gut of a predator
 an eardrum and air-breathing lungs also develop
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe how metamorphosis changes the structures involved in gas exchange over the life cycle of animals in the clade Anura, and what evolutionary advantage this change provides." hint="Compare what a tadpole breathes with and what an adult frog breathes with, and think about what that change opens up for the adult." >}}
+{{< selfcheck question="Describe how metamorphosis changes the structures involved in gas exchange over the life cycle of animals in the clade Anura, and what evolutionary advantage this change provides." hint="Look at the frogs subsection's life-cycle paragraph, and the first paragraph on the characteristics of amphibians." >}}
 Frogs (Anura) begin their lives as tadpoles, organisms restricted to an aquatic environment that use gills to breathe. After metamorphosis, most frogs develop lungs and lose their gills, although they will also continue to perform gas exchange through their skin. The lungs of an adult frog allow the animal to move out of the water, and become terrestrial. This limits competition between adults and tadpoles by opening new living space and food sources to the adult.
 ===CHECKS===
 tadpoles are restricted to an aquatic environment and use gills to breathe
@@ -159,7 +159,7 @@ this limits competition between adults and tadpoles by opening new living space 
   question="Gas exchange through the skin, one of an amphibian's three respiratory surfaces, is called ________ respiration."
   answer="cutaneous"
   accept="cutaneous respiration"
-  hint="Look at the Characteristics of Amphibians paragraph that lists the three respiratory surfaces."
+  hint="Look at the summary's first paragraph."
 >}}
 
 ### Distinguish between the characteristics of Urodela, Anura, and Apoda
@@ -178,27 +178,40 @@ Apoda
 {{< textin
   question="The legless amphibians that belong to the clade Apoda are called ________."
   answer="caecilians"
-  hint="Folds of skin make this burrowing, nearly blind group resemble earthworms."
+  hint="Look at the last of the three subsections on modern amphibians."
 >}}
 
 {{< textin
   question="The tailed amphibians that belong to the clade Urodela are called ________."
   answer="salamanders"
-  hint="Most of this group moves by bending its body from side to side, called lateral undulation."
+  hint="Look at the first of the three subsections on modern amphibians."
 >}}
 
 {{< textin
   question="The larval stage of a frog is called a ________."
   answer="tadpole"
-  hint="It is often a filter-feeding herbivore with gills, a lateral line system, and long-finned tails, but no limbs."
+  hint="Look at the frogs subsection's paragraph on the two stages of the life cycle."
 >}}
 
 ### Describe the evolutionary history of amphibians
 
+{{< textin
+  question="One of the earliest known tetrapods, named with *Ichthyostega* among the tetrapods of the Devonian period, is ________."
+  answer="Acanthostega"
+  hint="Look at the second paragraph of the evolution discussion."
+>}}
+
+{{< textin
+  question="The group made up of frogs, salamanders, and caecilians is called ________."
+  answer="Amphibia"
+  accept="amphibians|Lissamphibia"
+  hint="Look at the section's opening paragraph."
+>}}
+
 {{< multiplechoice
   question="Which of the following is *not* true of *Acanthostega*?"
   answer="It laid shelled eggs."
-  hint="Think about which of the four traits belongs to a lineage that had fully left the water, and which three the section attributes to this aquatic tetrapod."
+  hint="Look at the second paragraph of the evolution discussion."
 >}}
 It was aquatic.
 It had gills.
@@ -206,19 +219,6 @@ It had four limbs.
 It laid shelled eggs.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The group made up of frogs, salamanders, and caecilians is called ________."
-  answer="Amphibia"
-  accept="amphibians"
-  hint="Look at the section's opening paragraph."
->}}
-
-{{< textin
-  question="One of the earliest known tetrapods, whose fossils are found alongside those of *Ichthyostega* in Devonian rocks, is called ________."
-  answer="Acanthostega"
-  hint="Along with *Ichthyostega*, this aquatic tetrapod may have had both gills and lungs, and could not yet support its body well on land."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 29.3: Amphibians](https://openstax.org/books/biology-2e/pages/29-3-amphibians) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_29_03_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (a digital reconstruction/illustration of *Tiktaalik*, not a photograph); a longdesc added to the labeled Paleozoic-continents globe schematic (Figure_B29_03_04), whose named landmasses and latitude lines are not carried by its one-line caption; the interactive-long Link to Learning's four embedded videos rendered as a linked list rather than iframes, and its two sibling Link to Learning notes rendered the same way; the footnote citing Daeschler et al. 2006 kept as a parenthetical after the sentence it supports; the Evolution Connection feature box rendered as a callout with its bold name and italicized title, its figure kept inside it as in the source; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (cutaneous respiration, caecilians, salamanders, tadpole, Amphibia) and one further recall item (Acanthostega) added from the glossary to give each objective group an auto-graded item; Practice items placed under the objective each tests, so the Review Question on the order frogs belong to, second in the source, comes before the *Acanthostega* question; the source's "caecelians" corrected to "caecilians" — reported as a source defect. One claim is corrected with a visible Source note: several salamanders, not the fire salamander alone, bear live young (erratum 432).</small>
+<small>This section is adapted from [Biology 2e, Section 29.3: Amphibians](https://openstax.org/books/biology-2e/pages/29-3-amphibians) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_29_03_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (a digital reconstruction/illustration of *Tiktaalik*, not a photograph); a longdesc added to the labeled Paleozoic-continents globe schematic (Figure_B29_03_04), whose named landmasses and latitude lines are not carried by its one-line caption; the interactive-long Link to Learning's four embedded videos rendered as a linked list rather than iframes, and its two sibling Link to Learning notes rendered the same way; the footnote citing Daeschler et al. 2006 kept as a parenthetical after the sentence it supports; the Evolution Connection feature box rendered as a callout with its bold name and italicized title, its figure kept inside it as in the source; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (cutaneous respiration, caecilians, salamanders, tadpole, Amphibia) and one further recall item (Acanthostega) added from the glossary to give each objective group an auto-graded item, the last two placed ahead of the *Acanthostega* Review Question in their group; Practice items placed under the objective each tests, so the Review Question on the order frogs belong to, second in the source, comes before the *Acanthostega* question; the source's "caecelians" corrected to "caecilians". One claim is corrected with a visible Source note: several salamanders, not the fire salamander alone, bear live young.</small>

@@ -25,7 +25,7 @@ Animal phylogeny. The phylogenetic tree of animals is based on morphological, fo
 {{< multiplechoice
   question="Which of the following statements is false?"
   answer="Acoela and Cnidaria both possess radial symmetry."
-  hint="Trace each group's branch back to the node that names its symmetry: one of these two groups descends from Bilateria, not from Radiata."
+  hint="Look at the phylogenetic tree above, tracing each named group back along its branches to the labels printed there."
 >}}
 Eumetazoans have specialized tissues and parazoans don't.
 Lophotrochozoa and Ecdysozoa are both Bilataria.
@@ -66,7 +66,7 @@ Diploblastic and triploblastic embryos. During embryogenesis, diploblasts develo
 {{< multiplechoice
   question="Which of the following statements about diploblasts and triploblasts is false?"
   answer="The mesoderm gives rise to the central nervous system."
-  hint="Reread the sentence naming which germ layer becomes the central nervous system in the paragraph just after this figure."
+  hint="Look at the paragraph before the figure above and the paragraph after it."
 >}}
 Animals that display only radial symmetry during their lifespans are diploblasts.
 Animals that display bilateral symmetry are triploblasts.
@@ -136,10 +136,24 @@ Organisms in the animal kingdom are classified based on their body morphology, t
 
 ### Explain the differences in animal body plans that support basic animal classification
 
+{{< textin
+  question="The lined body cavity that houses the digestive, urinary, and reproductive systems along with the heart, lungs, and major blood vessels is called a(n) ________."
+  answer="coelom"
+  accept="coelomic cavity"
+  hint="Look at the paragraph that follows the one on what each germ layer gives rise to."
+>}}
+
+{{< textin
+  question="An animal whose body cavity is completely lined with mesodermal tissue — an annelid, mollusk, arthropod, echinoderm, or chordate — is called a(n) ________."
+  answer="eucoelomate"
+  accept="coelomate|true coelomate"
+  hint="Look at the paragraph just before the body-cavity figure."
+>}}
+
 {{< multiplechoice
   question="Which of the following organisms is most likely to be a diploblast?"
   answer="jellyfish"
-  hint="A diploblast develops only two germ layers, a pattern that goes with radial, biradial, or rotational symmetry rather than bilateral symmetry."
+  hint="Look at the first paragraph under the heading on features of embryological development."
 >}}
 sea star
 shrimp
@@ -147,24 +161,10 @@ jellyfish
 insect
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The lined body cavity that houses the digestive, urinary, and reproductive systems along with the heart, lungs, and major blood vessels is called a(n) ________."
-  answer="coelom"
-  accept="coelomic cavity"
-  hint="Its subdivisions in mammals include the thoracic and abdominal cavities."
->}}
-
-{{< textin
-  question="An animal whose body cavity is completely lined with mesodermal tissue — an annelid, mollusk, arthropod, echinoderm, or chordate — is called a(n) ________."
-  answer="eucoelomate"
-  accept="coelomate"
-  hint="Look at the paragraphs beside the body-cavity figure, which sort triploblasts into three groups by how their body cavity is lined."
->}}
-
 {{< multiplechoice
   question="Which of the following is not possible?"
   answer="diploblastic eucoelomate"
-  hint="Check each pairing against what the section says about germ layers and where a true coelom arises."
+  hint="Check each pairing against the subsection on features of embryological development and the Evolution Connection box."
 >}}
 radially symmetrical diploblast
 diploblastic eucoelomate
@@ -172,7 +172,7 @@ protostomic coelomate
 bilaterally symmetrical deuterostome
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain some of the advantages brought about through the evolution of bilateral symmetry and coelom formation." hint="Consider what a head end and an internal, fluid-filled cavity each let an animal do that a radially symmetrical, solid-bodied animal cannot." >}}
+{{< selfcheck question="Explain some of the advantages brought about through the evolution of bilateral symmetry and coelom formation." hint="Look at the paragraph on bilateral symmetry and the first paragraph under the first subheading of the embryological-development subsection." >}}
 The evolution of bilateral symmetry led to designated head and tail body regions, and promoted more efficient mobility for animals. This improved mobility allowed for more skillful seeking of resources and prey escaping from predators. The appearance of the coelom in coelomates provides many internal organs with shock absorption, making them less prone to physical damage from bodily assault. A coelom also gives the body greater flexibility, which promotes more efficient movement. The relatively loose placement of organs within the coelom allows them to develop and grow with some spatial freedom, which promoted the evolution of optimal organ arrangement. The coelom also provides space for a circulatory system, which is an advantageous way to distribute body fluids and gases.
 ===CHECKS===
 designated head and tail body regions, and promoted more efficient mobility
@@ -185,6 +185,30 @@ space for a circulatory system to distribute fluids and gases
 
 ### Compare and contrast the embryonic development of protostomes and deuterostomes
 
+{{< textin
+  question="The process by which deuterostomes form their coelom, in which mesoderm pinches off from the endoderm as pouches that fuse and expand, is called ________."
+  answer="enterocoely"
+  hint="Look at the end of the paragraph that opens 'One of these differences between…'"
+>}}
+
+{{< textin
+  question="An animal in which the mouth develops at the same site where the primitive gut first opened to the outside of the embryo is a(n) ________."
+  answer="protostome"
+  hint="Look at the paragraph that opens 'Bilaterally symmetrical, triploblastic eucoelomates…'"
+>}}
+
+{{< textin
+  question="The opening that first connects the primitive gut cavity to the outside of the embryo is called the ________."
+  answer="blastopore"
+  hint="Look at the second sentence of the paragraph that opens 'Bilaterally symmetrical, triploblastic eucoelomates…'"
+>}}
+
+{{< textin
+  question="The process in which a solid mass of mesoderm splits apart and forms the hollow opening of the coelom is called ________."
+  answer="schizocoely"
+  hint="Look at the paragraph that opens 'One of these differences between…'"
+>}}
+
 {{< multiplechoice
   question="An animal whose development is marked by radial cleavage and enterocoely is ________."
   answer="a deuterostome"
@@ -196,7 +220,7 @@ either an acoelomate or eucoelomate
 none of the above
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Using the following terms, explain what classifications and groups humans fall into, from the most general to the most specific: symmetry, germ layers, coelom, cleavage, embryological development." hint="Work down the same chain of either/or splits this section builds — symmetry, then germ layers, then coelom, then the two developmental patterns — and place humans at each step." >}}
+{{< selfcheck question="Using the following terms, explain what classifications and groups humans fall into, from the most general to the most specific: symmetry, germ layers, coelom, cleavage, embryological development." hint="Look at the section summary, which runs through these classifications in order." >}}
 Humans have body plans that are bilaterally symmetrical and are characterized by the development of three germ layers, making them triploblasts. Humans have true coeloms and are thus eucoelomates. As deuterostomes, humans are characterized by radial and indeterminate cleavage.
 ===CHECKS===
 bilaterally symmetrical, three germ layers (triploblasts)
@@ -204,30 +228,6 @@ true coeloms (eucoelomates)
 deuterostomes, with radial and indeterminate cleavage
 {{< /selfcheck >}}
 
-{{< textin
-  question="An animal in which the mouth develops at the same site where the primitive gut first opened to the outside of the embryo is a(n) ________."
-  answer="protostome"
-  hint="Look at the paragraph that introduces the two groups of true coelomates and the development figure beside it."
->}}
-
-{{< textin
-  question="The opening that first connects the primitive gut cavity to the outside of the embryo is called the ________."
-  answer="blastopore"
-  hint="In protostomes this site becomes the mouth; in deuterostomes it becomes the anus."
->}}
-
-{{< textin
-  question="The process by which most protostomes form their coelom, in which a solid mass of mesoderm splits apart to create the cavity, is called ________."
-  answer="schizocoely"
-  hint="Contrast it with the deuterostome process that pinches mesoderm off from the gut lining instead of splitting a solid mass."
->}}
-
-{{< textin
-  question="The process by which deuterostomes form their coelom, in which mesoderm pinches off from the endoderm as pouches that fuse and expand, is called ________."
-  answer="enterocoely"
-  hint="Contrast it with the protostome process that splits a solid mass of mesoderm instead of budding pouches from the gut."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 27.2: Features Used to Classify Animals](https://openstax.org/books/biology-2e/pages/27-2-features-used-to-classify-animals) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than the manifest's guessed text; the animal-phylogeny figure's (Figure_B27_02_01) source alt describes a different tree from the one drawn (Ctenophora beside the sponges, a Parahoxozoa branch holding Placozoa, Acoela alone as the acoelomates, and Platyhelminthes inside Lophotrochozoa), so the page's alt and longdesc follow the drawing, in which Porifera is the lone Parazoa branch, Cnidaria and Ctenophora branch from the Eumetazoa bar beside Bilateria, no Placozoa appears, and Acoela and Platyhelminthes together form the acoelomate branch — reported as a source defect; five figures re-kinded after inspection from the manifest's file-extension guess — Figure_B27_02_01 (phylogenetic tree), Figure_27_02_03 (labeled body-plane illustration), Figure_27_02_05 (body-cavity ring diagrams with photo insets), and Figure_27_02_06 (protostome/deuterostome development diagram) from "photo" to "diagram," and Figure_B27_02_02abcd (five photographs of representative animals) from "diagram" to "photo"; a longdesc added to the phylogenetic tree, the labeled body-plane diagram, the diploblast/triploblast ring diagram, the body-cavity ring diagrams, and the protostome/deuterostome development diagram, none of whose labels, rings, or panel arrangement are carried by their one- or two-line captions; both Visual Connection notes rendered as their figure followed by a multiple choice, kept in the body; the Visual Connection question on symmetry keeps the body note's own wording of option (a) ("Animals that display only radial symmetry during their lifespans are diploblasts"), which differs from the end-of-section Visual Connection Questions list's wording of the same item ("Animals that display radial symmetry are diploblasts") without changing the keyed answer; the Link to Learning and Evolution Connection feature boxes rendered as callouts; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (eucoelomate, coelom, blastopore, protostome, schizocoely, enterocoely) added from the glossary.</small>
+<small>This section is adapted from [Biology 2e, Section 27.2: Features Used to Classify Animals](https://openstax.org/books/biology-2e/pages/27-2-features-used-to-classify-animals) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than the manifest's guessed text; the animal-phylogeny figure's (Figure_B27_02_01) source alt describes a different tree from the one drawn (Ctenophora beside the sponges, a Parahoxozoa branch holding Placozoa, Acoela alone as the acoelomates, and Platyhelminthes inside Lophotrochozoa), so the page's alt and longdesc follow the drawing, in which Porifera is the lone Parazoa branch, Cnidaria and Ctenophora branch from the Eumetazoa bar beside Bilateria, no Placozoa appears, and Acoela and Platyhelminthes together form the acoelomate branch — a source defect; five figures re-kinded after inspection from the manifest's file-extension guess — Figure_B27_02_01 (phylogenetic tree), Figure_27_02_03 (labeled body-plane illustration), Figure_27_02_05 (body-cavity ring diagrams with photo insets), and Figure_27_02_06 (protostome/deuterostome development diagram) from "photo" to "diagram," and Figure_B27_02_02abcd (five photographs of representative animals) from "diagram" to "photo"; a longdesc added to the phylogenetic tree, the labeled body-plane diagram, the diploblast/triploblast ring diagram, the body-cavity ring diagrams, and the protostome/deuterostome development diagram, none of whose labels, rings, or panel arrangement are carried by their one- or two-line captions; both Visual Connection notes rendered as their figure followed by a multiple choice, kept in the body; the diploblast/triploblast Visual Connection question keeps the body note's own wording of option (a) ("Animals that display only radial symmetry during their lifespans are diploblasts"), which differs from the end-of-section Visual Connection Questions list's wording of the same item ("Animals that display radial symmetry are diploblasts") without changing the keyed answer; the Link to Learning and Evolution Connection feature boxes rendered as callouts; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it serves, so the two Critical Thinking Questions appear in the reverse of the source's order; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (eucoelomate, coelom, blastopore, protostome, schizocoely, enterocoely) added from the glossary.</small>

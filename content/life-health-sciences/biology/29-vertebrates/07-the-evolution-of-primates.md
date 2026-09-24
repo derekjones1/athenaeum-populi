@@ -164,13 +164,13 @@ A brain larger than those of most other mammals
 {{< textin
   question="Movement through the branches of trees by swinging using the arms is called ________."
   answer="brachiation"
-  hint="A rotating shoulder joint is one of the primate adaptations that makes this arm-swinging locomotion possible."
+  hint="Look at the first Characteristics of Primates paragraph, on adaptations for life in trees."
 >}}
 
 {{< textin
   question="Two overlapping fields of vision from the eyes that produce depth perception are called ________."
   answer="stereoscopic vision"
-  hint="Forward-facing primate eyes are what make this depth-perceiving overlap possible."
+  hint="Look at the first Characteristics of Primates paragraph, on adaptations for life in trees."
 >}}
 
 ### Describe the defining features of the major groups of primates
@@ -178,7 +178,7 @@ A brain larger than those of most other mammals
 {{< multiplechoice
   question="Which of the following is not an anthropoid?"
   answer="Lemurs"
-  hint="Look at the Evolution of Primates paragraphs that divide the primates into their two main groups."
+  hint="Look at the Key terms list, and at the Characteristics of Primates paragraph that divides the order into two groups."
 >}}
 Lemurs
 Monkeys
@@ -197,19 +197,19 @@ Humans
   question="The clade of Old World monkeys, named for their narrow, downward-pointed noses, is called ________."
   answer="Catarrhini"
   accept="catarrhine"
-  hint="Its counterpart clade name describes the broad-nosed monkeys of the New World instead."
+  hint="Look at the Evolution of Primates paragraph on the two groups of monkeys."
 >}}
 
 {{< textin
   question="A bush baby, potto, lemur, or loris — one of the wet-nosed primates rather than a monkey or ape — is called a ________."
   answer="prosimian"
-  accept="strepsirrhine"
-  hint="The section contrasts these wet-nosed primates with the tarsiers and simians of the dry-nosed branch."
+  accept="strepsirrhine|Strepsirrhini"
+  hint="Look at the Characteristics of Primates paragraph that divides the order into two groups."
 >}}
 
 ### Identify the major hominin precursors to modern humans
 
-{{< selfcheck question="How did archaic *Homo sapiens* differ from anatomically modern humans?" hint="Compare skull thickness, brow shape, and chin shape." >}}
+{{< selfcheck question="How did archaic *Homo sapiens* differ from anatomically modern humans?" hint="Look at the first paragraph of the last Human Evolution subsection." >}}
 Archaic *Homo sapiens* differed from modern humans by having a thick skull and a prominent brow ridge, and lacking a prominent chin.
 ===CHECKS===
 a thick skull
@@ -220,7 +220,7 @@ lacking a prominent chin
 {{< textin
   question="The genus of hominins that evolved in eastern Africa approximately four million years ago is ________."
   answer="Australopithecus"
-  hint="Look at the Human Evolution paragraphs on the fossil nicknamed Lucy."
+  hint="Look at the first paragraph of the Human Evolution subsection that follows Very Early Hominins."
 >}}
 
 {{< textin
@@ -233,15 +233,15 @@ lacking a prominent chin
 {{< textin
   question="A species that is more closely related to humans than to chimpanzees is called a ________."
   answer="hominin"
-  hint="This term designates the species that evolved after the split of the primate line leading to humans."
+  hint="Look at the first Human Evolution paragraph."
 >}}
 
 ### Explain why scientists are having difficulty determining the true lines of descent in hominids
 
-{{< selfcheck question="Why is it so difficult to determine the sequence of hominin ancestors that have led to modern *Homo sapiens*?" hint="Think about how many hominin species could be alive at once, and how confusing the fossil record is for the time before *Australopithecus*." >}}
-The immediate ancestors of humans were *Australopithecus*. All people past and present, along with the australopithecines, are hominins. We share the adaptation of being habitually bipedal. The earliest australopithecines very likely did not evolve until 5 million years ago. The primate fossil record for this crucial transitional period leading to australopithecines is still sketchy and somewhat confusing. By about 2.5 million years ago, there were at least two evolutionary lines of hominins descended from early australopithecines.
+{{< selfcheck question="Why is it so difficult to determine the sequence of hominin ancestors that have led to modern *Homo sapiens*?" hint="Look at the Human Evolution paragraph on determining the true lines of descent." >}}
+Humans (genus *Homo*) share a common ancestor with *Australopithecus*. All people past and present, along with the australopithecines, are hominins. We share the adaptation of being habitually bipedal. The earliest australopithecines very likely did not evolve until about 4 million years ago. *(Source note: the source answer calls *Australopithecus* "the immediate ancestors of humans" and dates the earliest australopithecines to 5 million years ago; this section says genus *Homo* evolved from a common ancestor shared with *Australopithecus*, which evolved about four million years ago.)* The primate fossil record for this crucial transitional period leading to australopithecines is still sketchy and somewhat confusing. By about 2.5 million years ago, there were at least two evolutionary lines of hominins descended from early australopithecines.
 ===CHECKS===
-the immediate ancestors of humans were *Australopithecus*
+humans (genus *Homo*) share a common ancestor with *Australopithecus*
 all people, past and present, along with the australopithecines, are hominins that share the adaptation of being habitually bipedal
 the fossil record for the transitional period leading to australopithecines is still sketchy and somewhat confusing
 by about 2.5 million years ago there were at least two evolutionary lines of hominins descended from early australopithecines
@@ -259,16 +259,15 @@ by about 2.5 million years ago there were at least two evolutionary lines of hom
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Why can't hominin fossils simply be arranged from oldest to youngest to reveal a single line of descent to modern humans?"
-  answer="More than one hominin species was often alive at the same time, and many named fossil species died out without giving rise to modern humans."
-  hint="Think about whether only one hominin species ever existed at a time, and whether every named species turned out to be a direct ancestor of modern humans."
+  question="Which very early hominin, if it is a human ancestor, would mean that the australopithecines may not be in the direct human lineage?"
+  answer="*Orrorin*"
+  hint="Look at the Very Early Hominins subsection."
 >}}
-More than one hominin species was often alive at the same time, and many named fossil species died out without giving rise to modern humans.
-Every hominin fossil discovered so far has already been correctly placed in a single line of descent to modern humans.
-Hominin species always evolved one after another, with no more than one species alive at any given time.
-All hominin species named to date turned out to be direct ancestors of modern humans.
+*Ardipithecus*
+*Sahelanthropus*
+*Orrorin*
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 29.7: The Evolution of Primates](https://openstax.org/books/biology-2e/pages/29-7-the-evolution-of-primates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with alt text rewritten from each image rather than the manifest's source alt (several of which were bare or letter-spaced descriptions); Figure_29_07_02b (the five-species skeleton comparison) and Figure_B29_07_03 (the hominin phylogeny) re-kinded from the manifest's file-extension "photo" guess to "diagram," since both are line drawings rather than photographs; a longdesc added to both of those figures, walking the labeled skeletons left to right and the phylogeny's branches top to bottom, since neither one-line caption carries that detail; the "Link to Learning" note rendered as a callout with its embedded video kept as an external link; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with rubric checkpoints added to each self-check decomposing its model answer into check-off clauses with no new claims; Practice items placed under the objective each tests, so the Review Question on shared primate characteristics, third in the source, comes first, before the anthropoid and dead-end-clade questions; eight key-term recall items (stereoscopic vision, brachiation, Platyrrhini, Catarrhini, prosimian, Australopithecus, hominin, Homo sapiens sapiens) added from the glossary; one locally written multiple choice ("Why can't hominin fossils simply be arranged from oldest to youngest…") added to the fourth Practice group from the section's own paragraph on the difficulty of ordering hominin fossils, since the module keys no other item to that objective; the Review Question "Which of the following human traits is not a shared characteristic of primates?" keeps its source key but replaces two distractors ("Hip structure supporting bipedalism" and "Enlarged brain area associated with vision, and reduced area associated with smell") with traits from the section's own list of shared primate characteristics (a rotating shoulder joint; a brain larger than those of most other mammals), because the section says bipedalism differentiates humans from the other hominoids, which made the first a second correct answer, and never mentions the olfactory claim — reported as a source defect.</small>
+<small>This section is adapted from [Biology 2e, Section 29.7: The Evolution of Primates](https://openstax.org/books/biology-2e/pages/29-7-the-evolution-of-primates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with alt text rewritten from each image rather than the manifest's source alt (several of which were bare or letter-spaced descriptions); Figure_29_07_02b (the five-species skeleton comparison) and Figure_B29_07_03 (the hominin phylogeny) re-kinded from the manifest's file-extension "photo" guess to "diagram," since both are line drawings rather than photographs; a longdesc added to both of those figures, walking the labeled skeletons left to right and the phylogeny's branches top to bottom, since neither one-line caption carries that detail; the "Link to Learning" note rendered as a callout with its embedded video kept as an external link; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with rubric checkpoints added to each self-check decomposing its model answer into check-off clauses with no new claims; Practice items placed under the objective each tests, so the Review Question on shared primate characteristics, third in the source, comes first, before the anthropoid and dead-end-clade questions; eight key-term recall items (stereoscopic vision, brachiation, Platyrrhini, Catarrhini, prosimian, Australopithecus, hominin, Homo sapiens sapiens) added from the glossary; one locally written multiple choice ("Which very early hominin, if it is a human ancestor, would mean that the australopithecines may not be in the direct human lineage?") added to the fourth Practice group from the Very Early Hominins sentence on *Orrorin*, its distractors the other two very early hominins that paragraph names, to bring that objective's group to the book's three-item floor; the Review Question "Which of the following human traits is not a shared characteristic of primates?" keeps its source key but replaces two distractors ("Hip structure supporting bipedalism" and "Enlarged brain area associated with vision, and reduced area associated with smell") with traits from the section's own list of shared primate characteristics (a rotating shoulder joint; a brain larger than those of most other mammals), because the section says bipedalism differentiates humans from the other hominoids, which made the first a second correct answer, and never mentions the olfactory claim — a source defect. The second Critical Thinking model answer carries a visible Source note: genus *Homo* shares a common ancestor with *Australopithecus*, which evolved about four million years ago, where the source answer calls it "the immediate ancestors of humans" and dates it to 5 million years ago.</small>

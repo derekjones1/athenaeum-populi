@@ -84,7 +84,7 @@ While there are a great many genes that play roles in the morphological developm
 *Hox* genes. *Hox* genes are *highly conserved genes* encoding transcription factors that determine the course of embryonic development in animals. In vertebrates, the genes have been duplicated into four clusters on *different chromosomes*: *Hox-A*, *Hox-B*, *Hox-C*, and *Hox-D*. Genes within these clusters are expressed in certain body segments at certain stages of development. Shown here is the homology between *Hox* genes in mice and humans. Note how *Hox* gene expression, as indicated with orange, pink, blue, and green shading, occurs in the same body segments in both the mouse and the human. While at least one copy of each Hox gene is present in humans and other vertebrates, some *Hox* genes are missing in some chromosomal sets.
 {{< /mediafigure >}}
 
-{{< selfcheck question="If a *Hox 13* gene in a mouse was replaced with a *Hox 1* gene, how might this alter animal development?" hint="Hox gene position along the cluster corresponds to position along the animal's head-to-tail axis; think about what identity a Hox 1 gene normally specifies, and where it would now be expressed." >}}
+{{< selfcheck question="If a *Hox 13* gene in a mouse was replaced with a *Hox 1* gene, how might this alter animal development?" hint="Look at the figure above and its color key, which match Hox gene numbers to body regions." >}}
 The animal might develop two heads and no tail.
 ===CHECKS===
 the animal might develop two heads
@@ -112,9 +112,9 @@ Animals constitute an incredibly diverse kingdom of organisms. Although animals 
 ### List the features that distinguish the kingdom Animalia from other kingdoms
 
 {{< textin
-  question="The morphology, or defining shape, of an organism, fixed by cues during its embryonic development, is called its ________."
+  question="The morphology, or defining shape, of an organism is called its ________."
   answer="body plan"
-  hint="A fruit fly's version of this is disrupted when a single Hox mutation grows a leg where an antenna belongs."
+  hint="Look at the last sentence of the paragraph that opens 'Most animals also share other features…'"
 >}}
 
 {{< multiplechoice
@@ -128,7 +128,7 @@ specialized tissues
 heterotrophic nutrient sourcing
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why might the evolution of specialized tissues be important for animal function and complexity?" hint="Think about what differentiated tissue types let an animal do that an organism without them cannot." >}}
+{{< selfcheck question="Why might the evolution of specialized tissues be important for animal function and complexity?" hint="Look at the first paragraph of the Complex Tissue Structure subsection." >}}
 The development of specialized tissues affords more complex animal anatomy and physiology because differentiated tissue types can perform unique functions and work together in tandem to allow the animal to perform more functions. For example, specialized muscle tissue allows directed and efficient movement, and specialized nervous tissue allows for multiple sensory modalities as well as the ability to respond to various sensory information; these functions are not necessarily available to other nonanimal organisms.
 ===CHECKS===
 differentiated tissue types can perform unique functions and work together in tandem
@@ -136,7 +136,7 @@ specialized muscle tissue allows directed and efficient movement
 specialized nervous tissue allows for multiple sensory modalities and the ability to respond to sensory information
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe and give examples of how humans display all of the features common to the animal kingdom." hint="Work through each feature in turn: tissue organization, how nutrients are obtained, and the developmental stages animals share." >}}
+{{< selfcheck question="Describe and give examples of how humans display all of the features common to the animal kingdom." hint="Look at the section summary's list of the features most animals share." >}}
 Humans are multicellular organisms. They also contain differentiated tissues, such as epithelial, muscle, and nervous tissue, as well as specialized organs and organ systems. As heterotrophs, humans cannot produce their own nutrients and must obtain them by ingesting other organisms, such as plants, fungi, and animals. Humans undergo sexual reproduction, as well as the same embryonic developmental stages as other animals, which eventually lead to a fixed and motile body plan controlled in large part by Hox genes.
 ===CHECKS===
 humans are multicellular organisms with differentiated tissues and specialized organs and organ systems
@@ -147,39 +147,28 @@ a fixed and motile body plan controlled in large part by Hox genes
 
 ### Explain the processes of animal reproduction and embryonic development
 
-{{< multiplechoice
-  question="During embryonic development, unique cell layers develop into specific groups of tissues or organs during a stage called ________."
-  answer="the organogenesis stage"
-  hint="Re-read the sentence just after the germ layers are introduced: it names the one process by which they become specific tissue types, organs, and organ systems."
->}}
-the blastula stage
-the germ layer stage
-the gastrula stage
-the organogenesis stage
-{{< /multiplechoice >}}
-
 {{< textin
   question="The series of mitotic cell divisions that subdivides a fertilized egg into smaller and smaller cells, with no actual cell growth, is called ________."
   answer="cleavage"
-  hint="Three rounds of this process transform the single-celled zygote into an eight-celled structure."
+  hint="Look at the paragraph that opens 'Animal development begins with…'"
 >}}
 
 {{< textin
   question="The roughly 16- to 32-cell stage of development of an animal embryo is called the ________."
   answer="blastula"
-  hint="In yolk-poor invertebrate eggs, this stage is a hollow ball surrounding a fluid-filled space."
+  hint="Look at the end of the paragraph that opens 'Animal development begins with…'"
 >}}
 
 {{< textin
   question="A collection of cells formed during embryogenesis that will give rise to future body tissues is called a ________."
   answer="germ layer"
-  hint="Ectoderm, endoderm, and, in triploblastic animals, mesoderm are examples, established as the zygote develops into an embryo."
+  hint="Look at the short paragraph that follows the discussion of haplodiploidy and whiptail lizards."
 >}}
 
 {{< textin
   question="The stage of animal development marked by the formation of the primitive digestive cavity is called the ________."
   answer="gastrula"
-  hint="Look at the caption of the figure on the development of a simple embryo, which follows this stage from the blastula."
+  hint="Look at the caption of the figure on the development of a simple embryo."
 >}}
 
 {{< textin
@@ -188,19 +177,30 @@ the organogenesis stage
   hint="Look at the paragraph after the discussion of budding and fragmentation in the Processes of Animal Reproduction and Embryonic Development subsection."
 >}}
 
+{{< multiplechoice
+  question="During embryonic development, unique cell layers develop into specific groups of tissues or organs during a stage called ________."
+  answer="the organogenesis stage"
+  hint="Look at the paragraph that follows the one ending with the chicken-embryo comparison, where it says what the germ layers are programmed to develop into."
+>}}
+the blastula stage
+the germ layer stage
+the gastrula stage
+the organogenesis stage
+{{< /multiplechoice >}}
+
 ### Describe the roles that Hox genes play in development
 
 {{< textin
   question="A master control gene that can turn on or off large numbers of other genes during embryogenesis is called a ________."
   answer="Hox gene"
   accept="homeobox gene"
-  hint="This class of genes was first sequenced in the fruit fly, and the order of its members along the chromosome mirrors the animal's own head-to-tail axis."
+  hint="Look at the two paragraphs that follow the account of the Nüsslein-Volhard and Wieschaus fruit-fly experiments."
 >}}
 
 {{< multiplechoice
   question="Which of the following phenotypes would most likely be the result of a *Hox* gene mutation?"
   answer="two fewer appendages than normal"
-  hint="Compare each option with what the Hox gene subsection says this cluster of genes determines about an animal's general body plan."
+  hint="Look at the paragraph that follows the account of the Nüsslein-Volhard and Wieschaus fruit-fly experiments."
 >}}
 abnormal body length or height
 two different eye colors
@@ -208,7 +208,7 @@ the contraction of a genetic illness
 two fewer appendages than normal
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How have *Hox* genes contributed to the diversity of animal body plans?" hint="Consider what happens to the spatial arrangement of an animal's organs and body parts when one of these master control genes is mutated or duplicated." >}}
+{{< selfcheck question="How have *Hox* genes contributed to the diversity of animal body plans?" hint="Look at the Hox gene subsection, from the paragraph that follows the fruit-fly experiments through the figure." >}}
 Altered expression of homeotic genes can lead to major changes in the morphology of the individual. Hox genes can affect the spatial arrangements of organs and body parts. If a Hox gene was mutated or duplicated, it could affect where a leg might be on a fruit fly or how far apart a person's fingers are.
 ===CHECKS===
 altered expression of homeotic genes can lead to major changes in morphology
@@ -218,4 +218,4 @@ a mutated or duplicated Hox gene could affect where a leg is on a fruit fly or h
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 27.1: Features of the Animal Kingdom](https://openstax.org/books/biology-2e/pages/27-1-features-of-the-animal-kingdom) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the cleavage-and-gastrulation figure's alt calls the blastopore the opening of the invaginated cavity, because the source alt's "a cavity called a blastopore" names the cavity rather than the labeled opening (erratum 845); Figure_27_01_02 (insect metamorphosis) and Figure_27_01_03 (embryonic development) re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are line/color drawings, not photographs); a longdesc added to Figure_27_01_03 (the zygote-to-gastrula sequence) and to Figure_27_01_04 (the Hox-gene cluster chart), whose panel structure, gaps, and color groups are not carried by their one-line captions; the two Link to Learning notes rendered as callouts with descriptive link text; the note wrapping the Hox-gene Visual Connection rendered as its figure followed by a self-check, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six glossary terms (body plan, cleavage, blastula, germ layer, gastrula, Hox gene) added as key-term recall items, organogenesis left out because the corrected Review Question already asks for it, and one recall item (parthenogenesis) built from the body sentence that defines it; the Review Question "During embryonic development, unique cell layers develop into specific groups of tissues or organs during a stage called ________" keeps its source options but its printed key "the gastrula stage" is corrected to "the organogenesis stage," because the section's own text states that germ layers "are programmed to develop into certain tissue types, organs, and organ systems during a process called organogenesis," while gastrulation is described only as forming the primitive gut and the germ layers themselves — reported as a source defect. One claim is corrected with a visible Source note: placozoans are free-living, not parasitic (erratum 424).</small>
+<small>This section is adapted from [Biology 2e, Section 27.1: Features of the Animal Kingdom](https://openstax.org/books/biology-2e/pages/27-1-features-of-the-animal-kingdom) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the cleavage-and-gastrulation figure's alt calls the blastopore the opening of the invaginated cavity, because the source alt's "a cavity called a blastopore" names the cavity rather than the labeled opening; Figure_27_01_02 (insect metamorphosis) and Figure_27_01_03 (embryonic development) re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are line/color drawings, not photographs); a longdesc added to Figure_27_01_03 (the zygote-to-gastrula sequence) and to Figure_27_01_04 (the Hox-gene cluster chart), whose panel structure, gaps, and color groups are not carried by their one-line captions; the two Link to Learning notes rendered as callouts with descriptive link text; the note wrapping the Hox-gene Visual Connection rendered as its figure followed by a self-check, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six glossary terms (body plan, cleavage, blastula, germ layer, gastrula, Hox gene) added as key-term recall items, organogenesis left out because the corrected Review Question already asks for it, and one recall item (parthenogenesis) built from the body sentence that defines it; the Review Question "During embryonic development, unique cell layers develop into specific groups of tissues or organs during a stage called ________" keeps its source options but its printed key "the gastrula stage" is corrected to "the organogenesis stage," because the section's own text states that germ layers "are programmed to develop into certain tissue types, organs, and organ systems during a process called organogenesis," while gastrulation is described only as forming the primitive gut and the germ layers themselves. One claim is corrected with a visible Source note: placozoans are free-living, not parasitic.</small>

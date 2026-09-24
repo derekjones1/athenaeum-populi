@@ -51,7 +51,7 @@ The central pith and outer cortex of the (a) flax stem are made up of parenchyma
 {{< multiplechoice
   question="Which layers of the stem are made of parenchyma cells?"
   answer="cortex and pith"
-  hint="Ground tissue is made of parenchyma cells; check the Ground Tissue discussion below for which two structures make up the stem's ground tissue."
+  hint="Reread the caption of the flax-stem figure above."
 >}}
 cortex and pith
 phloem
@@ -189,10 +189,16 @@ Primary growth occurs at the tips of roots and shoots, causing an increase in le
 
 ### Describe the main function and basic structure of stems
 
+{{< textin
+  question="The stretch of stem between two successive points of attachment for leaves, aerial roots, and flowers is called an ________."
+  answer="internode"
+  hint="Reread the paragraph just before the leafy-stem photo near the top of the page."
+>}}
+
 {{< multiplechoice
   question="Stem regions at which leaves are attached are called ________."
   answer="nodes"
-  hint="These are the points of attachment for leaves, aerial roots, and flowers — not the stem segment between them, and not the hair-like or gas-exchange structures in the other options."
+  hint="Reread the paragraph just before the leafy-stem photo near the top of the page."
 >}}
 trichomes
 lenticels
@@ -203,7 +209,7 @@ internodes
 {{< multiplechoice
   question="Which of the following cell types forms most of the inside of a plant?"
   answer="parenchyma cells"
-  hint="This cell type carries out photosynthesis and wound repair, and is found in the stem, root, leaf, and fruit pulp."
+  hint="See the paragraphs on the three simple-tissue cell types at the start of Stem Anatomy."
 >}}
 meristem cells
 collenchyma cells
@@ -211,18 +217,12 @@ sclerenchyma cells
 parenchyma cells
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The stem region between two nodes is called an ________."
-  answer="internode"
-  hint="Nodes are the points of attachment for leaves, aerial roots, and flowers; this is the length of stem separating them."
->}}
-
 ### Compare and contrast the roles of dermal tissue, vascular tissue, and ground tissue
 
 {{< multiplechoice
   question="Tracheids, vessel elements, sieve-tube cells, and companion cells are components of ________."
   answer="vascular tissue"
-  hint="The first two cell types conduct water as part of xylem; the last two transport sugars as part of phloem."
+  hint="See the second of the three tissue-system subsections under Stem Anatomy."
 >}}
 vascular tissue
 meristematic tissue
@@ -230,7 +230,7 @@ ground tissue
 dermal tissue
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the roles played by stomata and guard cells. What would happen to a plant if these cells did not function correctly?" hint="Think about what each stoma exchanges with the atmosphere and which cells control whether that opening is open or closed." >}}
+{{< selfcheck question="Describe the roles played by stomata and guard cells. What would happen to a plant if these cells did not function correctly?" hint="See the Dermal Tissue subsection's passage on stomata and the three-panel figure that follows it." >}}
 Stomata allow gases to enter and exit the plant. Guard cells regulate the opening and closing of stomata. If these cells did not function correctly, a plant could not get the carbon dioxide needed for photosynthesis, nor could it release the oxygen produced by photosynthesis.
 ===CHECKS===
 stomata allow gases to enter and exit the plant
@@ -239,7 +239,7 @@ a plant could not get the carbon dioxide needed for photosynthesis
 nor could it release the oxygen produced by photosynthesis
 {{< /selfcheck >}}
 
-{{< selfcheck question="Compare the structure and function of xylem to that of phloem." hint="Consider which cell types make up each tissue, what each one transports, and whether its cells are alive at maturity." >}}
+{{< selfcheck question="Compare the structure and function of xylem to that of phloem." hint="See the two paragraphs after the vascular-bundle figure in the Vascular Tissue subsection." >}}
 Xylem is made up of tracheids and vessel elements, which are cells that transport water and dissolved minerals and that are dead at maturity. Phloem is made up of sieve-tube cells and companion cells, which transport carbohydrates and are alive at maturity.
 ===CHECKS===
 xylem is made up of tracheids and vessel elements
@@ -251,13 +251,13 @@ phloem cells transport carbohydrates and are alive at maturity
 {{< textin
   question="Hair-like structures on the epidermal surface that reduce transpiration and increase solar reflectance are called ________."
   answer="trichomes"
-  hint="These structures also store compounds that defend leaves against predation by herbivores."
+  hint="See the last sentences of the Dermal Tissue subsection."
 >}}
 
 {{< textin
   question="The layer of ground tissue between the vascular tissue and the epidermis in a stem or root is called the ________."
   answer="cortex"
-  hint="The ground tissue on the interior side of the vascular tissue, by contrast, is called the pith."
+  hint="See the Ground Tissue subsection."
 >}}
 
 ### Distinguish between primary growth and secondary growth in stems
@@ -265,7 +265,7 @@ phloem cells transport carbohydrates and are alive at maturity
 {{< multiplechoice
   question="The primary growth of a plant is due to the action of the ________."
   answer="apical meristem"
-  hint="This meristem sits at the tip of the shoot or root, where rapidly dividing cells lengthen the plant."
+  hint="See the Primary Growth subsection."
 >}}
 lateral meristem
 vascular cambium
@@ -276,7 +276,7 @@ cork cambium
 {{< multiplechoice
   question="Which of the following is an example of secondary growth?"
   answer="increase in thickness or girth"
-  hint="This kind of growth is caused by cell division in the lateral meristem rather than the apical meristem."
+  hint="See the opening paragraph of Growth in Stems."
 >}}
 increase in length
 increase in thickness or girth
@@ -287,7 +287,7 @@ increase in leaf number
 {{< multiplechoice
   question="Secondary growth in stems is usually seen in ________."
   answer="dicots"
-  hint="This growth pattern is noticeable in woody plants and occurs very rarely in the other major group of flowering plants."
+  hint="See the last sentence of the opening paragraph of Growth in Stems."
 >}}
 monocots
 dicots
@@ -295,7 +295,7 @@ both monocots and dicots
 neither monocots nor dicots
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain the role of the cork cambium in woody plants." hint="Consider what this lateral meristem produces toward the stem's interior and what it produces toward the exterior." >}}
+{{< selfcheck question="Explain the role of the cork cambium in woody plants." hint="See the second paragraph of the Secondary Growth subsection." >}}
 In woody plants, the cork cambium is the outermost lateral meristem; it produces new cells towards the interior, which enables the plant to increase in girth. The cork cambium also produces cork cells towards the exterior, which protect the plant from physical damage while reducing water loss.
 ===CHECKS===
 the cork cambium is the outermost lateral meristem
@@ -304,7 +304,7 @@ it also produces cork cells towards the exterior
 these cork cells protect the plant from physical damage while reducing water loss
 {{< /selfcheck >}}
 
-{{< selfcheck question="What is the function of lenticels?" hint="These openings sit in the periderm of a woody stem." >}}
+{{< selfcheck question="What is the function of lenticels?" hint="See the end of the Secondary Growth subsection and the cherry-bark photo." >}}
 In woody stems, lenticels allow internal cells to exchange gases with the outside atmosphere.
 ===CHECKS===
 in woody stems
@@ -313,7 +313,14 @@ lenticels allow internal cells to exchange gases with the outside atmosphere
 
 ### Summarize the origin of annual rings
 
-{{< selfcheck question="Besides the age of a tree, what additional information can annual rings reveal?" hint="Consider what varies from year to year in a ring's size and cell-wall thickness, beyond simply how many rings there are." >}}
+{{< textin
+  question="In woody plants, especially trees, ________ may form as growth slows at the end of each season."
+  answer="annual rings"
+  accept="annual growth ring|growth ring"
+  hint="See the Summary's paragraph on growth."
+>}}
+
+{{< selfcheck question="Besides the age of a tree, what additional information can annual rings reveal?" hint="See the last sentence of the subsection that follows Secondary Growth." >}}
 Annual rings can also indicate the climate conditions that prevailed during each growing season.
 ===CHECKS===
 annual rings can indicate climate conditions
@@ -323,7 +330,7 @@ conditions that prevailed during each growing season
 {{< multiplechoice
   question="Secondary xylem cells that form during the spring growing season, with a large internal diameter and cell walls that are not extensively thickened, are known as ________."
   answer="early wood"
-  hint="Its denser, thicker-walled counterpart forms in the fall as vessel elements become scarcer and tracheids more numerous."
+  hint="See the opening sentences of the subsection that follows Secondary Growth."
 >}}
 early wood
 late wood
@@ -331,34 +338,27 @@ periderm
 vascular cambium
 {{< /multiplechoice >}}
 
-{{< textin
-  question="In woody plants, especially trees, ________ may form as growth slows at the end of each season."
-  answer="annual rings"
-  accept="annual growth ring|growth ring"
-  hint="Counting these bands, and examining their size and cell-wall thickness, can reveal a tree's age and past growing conditions."
->}}
-
 ### List and describe examples of modified stems
 
 {{< textin
   question="A modified stem that grows horizontally underground and has nodes and internodes is called a ________."
   answer="rhizome"
-  hint="Vertical shoots, as in ginger and ferns, may arise from buds on this underground stem."
+  hint="See the first paragraph of Stem Modifications."
 >}}
 
 {{< textin
   question="A rounded, fleshy underground stem that contains stored food, as in gladiolus, is called a ________."
   answer="corm"
-  hint="This modified stem is similar to a rhizome, but more rounded and fleshy, and helps some plants survive winter."
+  hint="See the first paragraph of Stem Modifications."
 >}}
 
 {{< textin
   question="A modification of a stem with the appearance of enlarged fleshy leaves surrounding its base, as seen in the iris or onion, is called a ________."
   answer="bulb"
-  hint="This underground storage unit is not a swollen stolon end like a tuber, but a bud surrounded by leaf scales."
+  hint="See the end of the first paragraph of Stem Modifications."
 >}}
 
-{{< selfcheck question="Give two examples of modified stems and explain how each example benefits the plant." hint="Consider which modified stems help a plant spread or clone itself and which ones mainly store food." >}}
+{{< selfcheck question="Give two examples of modified stems and explain how each example benefits the plant." hint="See the Stem Modifications subsection and the Summary's last two sentences." >}}
 Answers will vary. Rhizomes, stolons, and runners can give rise to new plants. Corms, tubers, and bulbs can also produce new plants and can store food. Tendrils help a plant to climb, while thorns discourage herbivores.
 ===CHECKS===
 rhizomes, stolons, and runners can give rise to new plants
@@ -369,4 +369,4 @@ thorns discourage herbivores
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 30.2: Stems](https://openstax.org/books/biology-2e/pages/30-2-stems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the stoma figure's source caption calls panel (a) "a closed stoma" while the micrograph and the page's alt show an open pore (erratum 847, caption kept as printed); the modified-stems figure's alt describes the corm as a rounded lump seen from above rather than the source alt's "conical-shaped," and the tendril-and-thorn figure's alt calls the thorn long and slender rather than the source alt's "thick" (erratum 846); figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own long, walk-through-style alt text; three figures re-kinded after inspection — Figure_30_02_04abcf from the manifest's file-extension "diagram" guess to "photo" (a composite of a micrograph, a painted-artwork reproduction, and a plant photo, not a line drawing), and Figure_30_02_06 and Figure_30_02_07 from "photo" to "diagram" (both are drawn, labeled schematics of stem cross sections, not photographs); a longdesc added to the four labeled multi-panel figures (Figure_30_02_04abcf, Figure_30_02_05abc, Figure_30_02_06, Figure_30_02_07) whose on-image callout labels are not carried by their one-line captions; the Visual Connection note rendered as its figure followed by a multiple choice, kept in the body; its solution as printed ("A and B. The cortex, pith, and epidermis are made of parenchyma cells.") does not match its own four-option list (there is no option B/pith separate from option A, "phloem" is option B, and "epidermis" is not offered as an option at all, nor is it identified as parenchymatous anywhere in this module) — the option this module's own text supports, "cortex and pith," is kept as the key, and the mismatched solution wording is reported as a source defect; the end-of-chapter Review Questions and Critical Thinking Questions belonging to this section (identified by their Chapter Summary and Visual Connection Questions cross-references) adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (internode, trichomes, cortex, rhizome, corm, bulb) added from the glossary; one summary-cloze textin ("annual rings") built from the Chapter Summary sentence about ring formation, and one multiple choice ("early wood" vs. "late wood") built strictly from the Annual Rings subsection's own sentences describing spring versus fall secondary-xylem growth, since no source exercise or glossary term tests that objective directly — both disclosed here and in the source ledger; the Critical Thinking solution comparing xylem to phloem, printed "Xylem is made up tracheids and vessel elements" (missing "of"), corrected to "Xylem is made up of tracheids and vessel elements" — reported as a source defect.</small>
+<small>This section is adapted from [Biology 2e, Section 30.2: Stems](https://openstax.org/books/biology-2e/pages/30-2-stems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the stoma figure's source caption calls panel (a) "a closed stoma" while the micrograph and the page's alt show an open pore (caption kept as printed); the modified-stems figure's alt describes the corm as a rounded lump seen from above rather than the source alt's "conical-shaped," and the tendril-and-thorn figure's alt calls the thorn long and slender rather than the source alt's "thick"; figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own long, walk-through-style alt text; three figures re-kinded after inspection — Figure_30_02_04abcf from the manifest's file-extension "diagram" guess to "photo" (a composite of a micrograph, a painted-artwork reproduction, and a plant photo, not a line drawing), and Figure_30_02_06 and Figure_30_02_07 from "photo" to "diagram" (both are drawn, labeled schematics of stem cross sections, not photographs); a longdesc added to the four labeled multi-panel figures (Figure_30_02_04abcf, Figure_30_02_05abc, Figure_30_02_06, Figure_30_02_07) whose on-image callout labels are not carried by their one-line captions; the Visual Connection note rendered as its figure followed by a multiple choice, kept in the body; its solution as printed ("A and B. The cortex, pith, and epidermis are made of parenchyma cells.") does not match its own four-option list (there is no option B/pith separate from option A, "phloem" is option B, and "epidermis" is not offered as an option at all, nor is it identified as parenchymatous anywhere in this module) — the option this module's own text supports, "cortex and pith," is kept as the key; the mismatched solution wording is not reproduced; the end-of-chapter Review Questions and Critical Thinking Questions belonging to this section (identified by their Chapter Summary and Visual Connection Questions cross-references) adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (internode, trichomes, cortex, rhizome, corm, bulb) added from the glossary; one summary-cloze textin ("annual rings") built from the Chapter Summary sentence about ring formation, and one multiple choice ("early wood" vs. "late wood") built strictly from the Annual Rings subsection's own sentences describing spring versus fall secondary-xylem growth, since no source exercise or glossary term tests that objective directly; the Critical Thinking solution comparing xylem to phloem, printed "Xylem is made up tracheids and vessel elements" (missing "of"), corrected to "Xylem is made up of tracheids and vessel elements."</small>
