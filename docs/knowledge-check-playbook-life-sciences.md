@@ -13,17 +13,13 @@ here, and so do the life-sciences playbook's component rules
 (`textin` shape and accept lists, multiple-choice distractor discipline,
 `selfcheck` rubrics, `sortbins` construction, `mediafigure` manifest rule).
 
-This edition governs OpenStax Biology 2e and any later life-sciences book
-wired the same way. The mathematics edition is
-`docs/knowledge-check-playbook-math.md`. The two share one philosophy —
-cumulative, grouped by the chapter and section each item comes from so a
-miss points the reader at exactly one place, no hints, every item recorded
-in the answer ledger and independently solved — and differ where the source
-differs. Biology 2e has no chapter Practice Test, no Review Exercises, and
-no odd-numbered Answer Key; every one of its 1509 source exercises is
-already spent on the section pages. So a biology Knowledge Check is
-**author-written from the module text at a fixed count per section**, where
-a math one samples an official pool at whatever count the pool supports.
+This edition governs every life-sciences book; the mathematics edition is
+`docs/knowledge-check-playbook-math.md`. Both are cumulative, grouped by the
+chapter and section each item comes from, hint-free, and ledgered and
+independently solved. They differ where the source differs: a life-sciences
+book has no chapter Practice Test, Review Exercises, or Answer Key pool —
+every source exercise is already spent on the section pages — so its check
+is **author-written from the module text at a fixed count per section**.
 
 ## Placement
 
@@ -48,8 +44,7 @@ What is specific to a unit-level check:
   (`Knowledge Check: Unit 1 — Chapters 1–3`).
 - **Weights shift.** Chapters and Knowledge Checks share one sequential
   weight order (authoring playbook, "Where the files go"), so landing a unit's
-  check moves every later chapter's `weight` up by one. The full table for
-  Biology 2e, so nobody re-derives it:
+  check moves every later chapter's `weight` up by one. Biology 2e's table:
 
   | Unit | Chapters | Chapter weights | File | KC weight |
   |---|---|---|---|---|
@@ -87,15 +82,13 @@ What is specific to a unit-level check:
 - **Exactly three items per section**, and **at least one auto-graded item**
   (`multiplechoice`, `textin`, or `sortbins`) among them. The lint (the
   `knowledgeCheck` profile in `BOOK_RULES`, `tools/lint/lints.mjs`, keyed
-  per book like the practice floors) reports any other count, a section of only selfchecks, an
-  item above the first `### N.M` heading, and any `fillin` or `graphplot`
-  as an **error**. The count is per section rather than per objective or
-  per body subsection because those vary too much to equalise (objectives
-  run two to four per section, body `##` subsections zero to nine); three
-  per section tests every section with the same weight and keeps Unit 7's
-  fifty sections to about 150 items. That page will be roughly twice the
-  largest math check — say so in the handoff and let `npm run check:build`
-  measure it, but do not thin the quota for one unit.
+  per book like the practice floors) reports any other count, a section of
+  only selfchecks, an item above the first `### N.M` heading, and any
+  `fillin` or `graphplot` as an **error**. The count is per section because
+  objectives and body subsections vary too much to equalise. A large unit
+  (Biology's Unit 7, fifty sections, about 150 items) makes a page roughly
+  twice the largest math check — say so in the handoff and let `npm run
+  check:build` measure it, but do not thin the quota for one unit.
 - **Author-written from the module.** Every item is built from the pinned
   CNXML module of the section it sits under, with **no new claim**:
   - a **summary** sentence, as a cloze `textin` or a select-the-term
@@ -120,29 +113,26 @@ What is specific to a unit-level check:
     does not; a verbatim substring is preferred, and a compression of one
     answer sentence (a dropped connector, a joined clause) is acceptable.
     `verify-section`'s phrase-coverage check enforces the word overlap; the
-    author reads each clause against the answer for drift. Both books were
-    written to this standard (Sep 21 2026 measurement: ~1,700 compressed
-    clauses across both books, none below 76% word overlap, no drift found).
+    author reads each clause against the answer for drift.
 - **A Knowledge Check stem may not duplicate a section Practice item.**
-  The section pages already carry every source exercise, so re-asking one
-  verbatim tests recall of the page, not the biology. A fact may be asked
-  again with a different stem and, for a multiple choice, a different keyed
-  emphasis or option set; a glossary term already recalled on the section
-  page may be recalled here from a differently worded meaning. Check the
-  section's `## Practice` block before writing. The lint enforces this as
-  an error — the `knowledgeCheck` profile's **duplicate-stem rule**, with
-  the section side indexed by `tools/lib/practice-index.mjs` — and the rule
-  is exact, not a similarity score: a check item is a duplicate when its
-  normalized stem (case, punctuation, blanks, Markdown emphasis, and math
-  delimiters ignored) equals the stem of any item on any section page of
-  the book, body self-checks included, or on any of the book's other
-  Knowledge Checks (the index carries the sibling checks too, since
-  September 5, 2026; the check under lint is dropped by file name, so a
-  scratch copy is never compared with the committed page of its own
-  range), unless both are multiple choices with different option sets; or
-  when a cloze's stem with its answer written back into the blank equals a
-  section cloze's, so moving the blank along one summary sentence is still
-  the same item. Near-paraphrase
+  Re-asking a section item verbatim tests recall of the page, not the
+  biology. A fact may be asked again with a different stem and, for a
+  multiple choice, a different keyed emphasis or option set; a glossary
+  term already recalled on the section page may be recalled here from a
+  differently worded meaning. Check the section's `## Practice` block
+  before writing. The lint enforces this as an error — the
+  `knowledgeCheck` profile's **duplicate-stem rule**, with the section side
+  indexed by `tools/lib/practice-index.mjs` — and the rule is exact, not a
+  similarity score: a check item is a duplicate when its normalized stem
+  (case, punctuation, blanks, Markdown emphasis, and math delimiters
+  ignored) equals the stem of any item on any section page of the book,
+  body self-checks included, or on any of the book's other Knowledge
+  Checks *(since September 5, 2026; the check under lint is dropped by file
+  name, so a scratch copy is never compared with the committed page of its
+  own range)*, unless both are multiple choices with different option
+  sets; or when a cloze's stem with its answer written back into the blank
+  equals a section cloze's, so moving the blank along one summary sentence
+  is still the same item. Near-paraphrase
   is deliberately not measured: the sections' own contrast twins ("before"
   and "after zygote formation") share nine words in ten, so no threshold
   separates a lazy rewording from a legitimate twin — that judgement stays
@@ -152,91 +142,72 @@ What is specific to a unit-level check:
   fewer, take the balance from the summary and glossary. Do not let a
   section's three items all test one paragraph.
 - **A stem stands alone.** On a cumulative page the only referent a stem
-  has is its `### N.M` heading, so "according to this section", "the
-  example this section gives", or "the chapter's classification" points at
+  has is its `### N.M` heading, so "according to this section" points at
   nothing the learner can see. Write the fact into the stem instead
   ("Which pair of disciplines builds on both the life and the physical
-  sciences?"). The Unit 1 pilot's authors wrote eight such stems in thirty;
-  the lint now rejects `this/the/that section|chapter|module|page` inside a
-  Knowledge Check question.
+  sciences?"). The lint rejects `this/the/that section|chapter|module|page`
+  inside a Knowledge Check question.
 - **A cloze blanks a term, not a phrase.** The blank in a summary or body
   cloze is a word or name the module bolds, defines, or uses as a name
-  (`branch point`, `conditioned reconstruction`, `lateral line`), never a
-  verb phrase, a list tail, or a plain adjective: "scientists must ________
-  that allows them…" keyed `collect accurate information`, "the ________
-  that scientists use today" keyed `most common model`, "also found in
-  ________" keyed `snow`, "essential for the ________ of most plants" keyed
-  `growth` all mark a correct learner wrong for `gather accurate data`,
-  `standard model`, `hosts`, or `survival`. The units 4–6 run's authors
-  wrote nine of these in 195 items; every one was replaced. A cloze whose
-  blank is the only word that can complete it ("four extraembryonic
-  ________") tests nothing and is replaced too. Neither does a list left
-  open at the tail — "including oxazolidinones and the ________" keyed
-  `linezolid` — since any other member of the module's list also completes
-  the sentence; blank a named term, not the last item of an open list
-  (Microbiology block 3).
+  (`branch point`, `lateral line`), never a verb phrase, a list tail, or a
+  plain adjective: "scientists must ________ that allows them…" keyed
+  `collect accurate information` marks a correct learner wrong for `gather
+  accurate data`, and "also found in ________" keyed `snow` for `hosts`.
+  A cloze whose blank is the only word that can complete it ("four
+  extraembryonic ________") tests nothing and is replaced too. Neither does
+  a list left open at the tail — "including oxazolidinones and the
+  ________" keyed `linezolid` — since any other member of the module's list
+  also completes the sentence; blank a named term, not the last item of an
+  open list (Microbiology block 3).
 - **The stem may not repeat the key's own word.** "Two leaves connecting
-  *opposite* each other" keyed `opposite`, "transport *yolk* nutrients"
-  keyed `the yolk sac`, "which named *bacteriophage*" over three options
-  that are not phages: a learner matches the word without the biology.
-  Cover the key and ask whether the stem names it. Corpus-wide the
-  mechanical version of this rule (a content word of the key in the stem
-  and in no distractor) hits 36 of 1,123 biology multiple choices, most of
-  them ordinary shared vocabulary, so it is a checker duty, not a lint.
+  *opposite* each other" keyed `opposite`, "which named *bacteriophage*"
+  over three options that are not phages: a learner matches the word
+  without the biology. Cover the key and ask whether the stem names it.
+  The mechanical version hits mostly ordinary shared vocabulary, so it is a
+  checker duty, not a lint.
 - **Reverse recall is the same item, and a hint counts.** A section page
   that asks "Frogs belong to which order?" → `Anura` has already tested the
   fact; a check textin "A tail-less amphibian of the clade Anura is called a
   ________" → `frog` is the same fact backwards. So is a check item whose
   key and defining fact a section item's `hint=`, distractor, rubric clause,
   or body self-check already prints ("in exactly the same location, or
-  locus"; "the type found in more than 80 percent of terrestrial plants").
-  So is a synonym key for the same fact asked in the same direction — an
-  "Actinobacteria" textin is the page's own "actinomycetes" item under a
-  different name for the same answer, not a second question (Microbiology
-  block 3).
-  The duplicate-stem lint cannot see any of this, and the per-chapter
-  checkers of the eight unit runs missed it at about one item in eleven:
-  the September 5, 2026 sweep — one Sonnet checker per unit reading every
-  check item beside its section page's Practice block and body self-checks,
-  with the parent adjudicating 77 flags down to 55 — replaced 55 of 624
-  items. Run that sweep as its own wave, after the module-fidelity
-  checkers and before the blind solve; its bar is the four cases above,
-  not a term merely appearing on the page, and not a fact re-asked from a
-  different sentence or with a different keyed emphasis. Each replacement
-  is built from a different sentence of the module, checked by a second
-  Sonnet against the CNXML and the section page (body self-checks
-  included), and blind-solved before it is ledgered like any other item.
-  The September 22, 2026 Opus sweep of all thirteen life-sciences checks
-  still replaced about 50 duplicate asks (the largest class there), some
-  of them created by later edits to the section pages the checks had been
-  read against: a section-page edit re-opens the reverse-recall read for
-  that section's check items, and a replacement keeps its item's type (a
-  `textin` is replaced by a `textin` from another sentence).
+  locus"). So is a synonym key for the same fact asked in the same
+  direction — an "Actinobacteria" textin is the page's own "actinomycetes"
+  item under a different name (Microbiology block 3).
+  The duplicate-stem lint cannot see any of this, and per-chapter checkers
+  miss it, so run a **reverse-recall sweep** as its own wave, after the
+  module-fidelity checkers and before the blind solve: one checker per unit
+  reads every check item beside its section page's Practice block and body
+  self-checks, and the parent adjudicates the flags. Its bar is the four
+  cases above, not a term merely appearing on the page, and not a fact
+  re-asked from a different sentence or with a different keyed emphasis.
+  Each replacement is built from a different sentence of the module, keeps
+  its item's type (a `textin` is replaced by a `textin`), is checked by a
+  second checker against the CNXML and the section page (body self-checks
+  included), and is blind-solved before it is ledgered like any other item.
+  A section-page edit re-opens the reverse-recall read for that section's
+  check items *(September 22, 2026)*.
 - **Format tells.** The key must sit in the distractors' case, length band,
   and grammatical form: not the only capitalised option (`Kuru` beside
   lowercase diseases), not the only one without a parenthetical, not the
   only plain-text name among italic genus names, not the only option
   missing an article. Options must all belong to the stem's category (a
-  "which type of cell" stem does not offer "an autopolyploid individual"; a
   "which type of spore" stem does not offer "sporangium"). Three options
   are allowed, so drop an odd option rather than keep it.
 - **A distractor is the module's answer to a different question.** "Every
   option printed in the module" is easy to satisfy with a fact that is ALSO
   a correct completion of the stem — atomic mass for "protons and neutrons
-  determine its…", a polar bear's fur for "an example of adaptation". Take
-  each distractor from a sentence that answers a neighbouring question (the
-  micronutrients' roles beside a macronutrient stem; the other properties
-  of life beside an adaptation stem) and check it against the stem as if it
-  were the key.
+  determine its…". Take each distractor from a sentence that answers a
+  neighbouring question (the micronutrients' roles beside a macronutrient
+  stem) and check it against the stem as if it were the key.
 - Multiple-choice options are three or four, parallel in grammar and length
-  band. The corpus-wide answer-position gate measures this book across all
+  band. The corpus-wide answer-position gate measures the book across all
   its pages, so ~200 new items on one page can move it: spread keyed
   positions as you write, and if the gate fails, reorder with a
   deterministic seeded shuffle and say so in `Changes:` — never hand-pick.
 - **Notation inside a stem, key, or option** follows `docs/subjects/life-sciences.md`
-  §Notation, plus one rule that section pages settled and the units 2–3 run
-  hit again: a bare Greek letter outside math (α, β, γ) fails the lint's
-  unicode-math rule unless it is a hyphenated nomenclature prefix
+  §Notation, plus: a bare Greek letter outside math (α, β, γ) fails the
+  lint's unicode-math rule unless it is a hyphenated nomenclature prefix
   (β-adrenergic, α-helix), so a subunit or a factor is spelled out —
   "alpha subunit", "beta-gamma subunit" — in a shortcode param. Molecule
   and proton counts are multiple choices, never textins; ratios and
@@ -252,22 +223,16 @@ What is specific to a unit-level check:
   a rubric can hand over a sibling item's answer even when the two sections
   are unrelated — one item's stem naming the organism that is another
   item's key, or an option that is the accepted abbreviation of a different
-  item's answer. Grep the assembled page for a candidate key or accept
-  before settling a replacement, not just the one section's page. This is
-  a read, not a lint: measured on September 19, 2026, "a textin's key
-  printed in a sibling's stem or options" hit 53 times across the
-  life-science checks, nearly all vocabulary reuse across unrelated sections
-  ("hydrophobic" in four stems, "hemoglobin" as a distractor), and the
-  broad form including multiple-choice keys hit 125. The same
-  rule bars a cloze from blanking the abbreviation of a name the stem
-  itself already prints ("...Act of 2008, abbreviated ________" when the
-  stem has already spelled out the initials it wants back); ask for the
-  full name instead, or blank a different fact. The spelled-out-before-the-
-  blank shape is a lint error since September 22, 2026, and so is a `textin`
-  whose key the item directly above it in its `### N.M` section prints. Grep
-  the whole assembled page for every key and accept after every replacement
-  round, not just once before settling a replacement: block 4's late
-  replacements leaked into other items' stems twice.
+  item's answer. This is a read, not a lint: the mechanical check is
+  swamped by vocabulary reuse across unrelated sections. The same rule
+  bars a cloze from blanking the abbreviation of a name the stem itself
+  already prints ("...Act of 2008, abbreviated ________" when the stem has
+  already spelled out the initials it wants back); ask for the full name
+  instead, or blank a different fact. The spelled-out-before-the-blank
+  shape is a lint error since September 22, 2026, and so is a `textin`
+  whose key the item directly above it in its `### N.M` section prints.
+  Grep the whole assembled page for every key and accept after every
+  replacement round, not just the one section's page and not just once.
 - The attribution footer follows the section-page form (licence, deep link
   to the source book, and a `Changes:` clause stating that every item is
   locally written from the named chapters' modules).
@@ -298,16 +263,14 @@ discrepancy in `docs/openstax-errata.md` — do not silently pick one. Before
 logging, grep the errata file for the module id: a defect a section page
 already disclosed may carry an editorial decision the check must follow
 (erratum 150's "guanine diphosphate" page deliberately builds no recall on
-the term, and the units 2–3 run first logged it twice and then keyed an
-item on it). A term whose only source is a known defect is not an anchor.
+the term). A term whose only source is a known defect is not an anchor.
 Read every distractor against the book's OTHER chapters too: chapter 16
 frames p53 as a transcription factor, chapter 10 as a G1-checkpoint
-regulator, and "a cell-cycle checkpoint protein" was a second key by the
-book's own framing until it was replaced. The same holds for a `textin`
-descriptor: grep the whole unit for a second thing it describes, and pin
-the stem to the one referent *(September 23, 2026: "the carrier derived
-from riboflavin" keyed FAD, but Biology 7.4 derives FMN from vitamin B₂
-too)*.
+regulator, so "a cell-cycle checkpoint protein" is a second key by the
+book's own framing. The same holds for a `textin` descriptor: grep the
+whole unit for a second thing it describes, and pin the stem to the one
+referent *(September 23, 2026: "the carrier derived from riboflavin" keyed
+FAD, but Biology 7.4 derives FMN from vitamin B₂ too)*.
 
 ## Verify
 
@@ -316,9 +279,9 @@ checker (on Opus since September 22, 2026 — the life-sciences
 "Independent checker" rule), then the orchestrator answers every graded
 item with the keys hidden. The checker answers each item with its key
 covered before comparing, and runs every natural variant of each `textin`
-key through the grader: the September 22 sweep found 11 double-keyed
-items and about 20 accept gaps in checks that had passed a Sonnet
-checker and the blind solve.
+key through the grader — double keys and accept gaps survive a Sonnet
+checker and the blind solve. The parent's own read for tells and giveaways
+is not optional either.
 
 1. Reconcile the chapter/section headings against the authored book and the
    source ledger. Every section in the unit must be represented, at the
@@ -332,11 +295,11 @@ checker and the blind solve.
    `npm run solve:compare`; settle every disagreement against the module's
    text (source outranks general knowledge). Emit the packets from each
    chapter's scratch block and answer them BEFORE reading the block with
-   its keys (the Unit 8 run did; the parent read for tells and giveaways
-   comes after), so the solve is blind in fact and not only in tooling; a
-   parent fix re-hashes the item, and so does editing the figure or table the
-   item names, so re-emit and re-answer that one — its solve packet carries
-   the named block as `dependency` regardless of `--context`. Record each verdict and its
+   its keys (the parent read for tells and giveaways comes after), so the
+   solve is blind in fact and not only in tooling; a parent fix re-hashes
+   the item, and so does editing the figure or table the item names, so
+   re-emit and re-answer that one — its solve packet carries the named
+   block as `dependency` regardless of `--context`. Record each verdict and its
    `solved` block in the **answer ledger** (AGENTS.md §The answer ledger,
    `npm run ledger:merge` last, after every other edit — hashes depend on
    the final text): every item needs a record, and `npm test` fails at

@@ -5,17 +5,9 @@ the one deliberate departure from section-page exercise patterns: **quizzes have
 no hints.**
 
 Read and follow `docs/authoring-playbook.md` and `docs/subjects/math.md`
-first. The core's source-fidelity, component, verification, and handoff
-rules all apply here, and so does the math playbook's notation and
-`answerForm` vocabulary.
-
-This edition governs the OpenStax mathematics books (the three algebra books
-and Precalculus 2e). The life-sciences edition,
-`docs/knowledge-check-playbook-life-sciences.md`, shares the philosophy —
-cumulative, grouped by the chapter and section each item comes from, no
-hints, every item ledgered and independently solved — and differs where the
-source does: its items are author-written at a fixed per-section count
-because Biology 2e has no chapter-level exercise pool.
+first; all their rules apply here. This edition governs the OpenStax
+mathematics books; the life-sciences books use
+`docs/knowledge-check-playbook-life-sciences.md`.
 
 ## Placement
 
@@ -42,32 +34,28 @@ of the book, or whatever split the chapter count makes even.
   the no-hint lint reads the whole file, so it covers `graphplot`'s `hint=`
   too, and the regular-section graphplot-requires-hint rule does not apply
   here. `answer` LaTeX is single-backslash; the grader must self-grade each
-  answer `correct` (run `npm run verify-section`).
+  answer `correct` (run `npm run verify-section`). `answerMode` and
+  `answerForm` follow `docs/subjects/math.md`.
 - **Graphing coverage follows the source.** Where a section's Review
   Exercises / Practice Test pool leans on "graph the function" / "sketch"
   asks and the object family has a graphplot answer form (line, points,
-  quadratic, asymptotes, system — the authoring playbook's GraphPlot section
-  is the grammar), represent that section with at least one `graphplot`
+  quadratic, asymptotes, system — `docs/subjects/math.md` "GraphPlot: answer
+  shapes and graph recognition" is the grammar), represent that section with at least one `graphplot`
   item, keyed from a source item whose printed Answer Key shows the answer
   graph. Inspect that key graph visually and re-derive the object from the
-  printed function — the picture is the official answer, so "visibly present
-  in the key" means the graph. All graphplot validation applies unchanged
+  printed function — "visibly present in the key" means the graph. All graphplot validation applies unchanged
   (lattice reachability, `plotPoints` slack, the three-point rule). Where
   the family has no answer form (exponential, logarithmic, and trigonometric
-  curves stay static figures), property fill-ins and recognition MCs remain
-  the right representation — do not force a conversion. A multipart source item
+  curves stay static figures), use property fill-ins and recognition MCs —
+  do not force a conversion. A multipart source item
   ("standard form, vertex, intercepts, and graph") may contribute its graph
   part as the graphplot; record the split in the ledger like any other
   part-selection.
-- Use `answerMode="unordered"` when an item asks for a set of roots or solutions
-  whose order is immaterial. Do not use it for ordered pairs/triples, sequences,
-  or any prompt that prescribes an order.
 - **Distribution.** Every section in the range is represented; beyond that
   the count per section follows the source pool — usually two or three
   items, chosen for coverage of the section's skills, never a fixed quota.
   A section whose Review Exercises are all one skill gets one or two items;
-  one whose pool spans several gets more. (The life-sciences edition fixes
-  the count per section and lints it; the math books do not.)
+  one whose pool spans several gets more. No count is linted.
 - Remove print-only labels such as `Try It 7.31` and standalone `(a)` markers
   from learner-facing component fields. Preserve every source item number in
   the source ledger. Required figures are recreated semantically (spec-first)
@@ -89,8 +77,8 @@ Build a ledger before authoring. For every selected item record:
 
 For a mapped OpenStax book, inspect the pinned CNXML module as the semantic
 source, then render the question and Answer Key pages from the PDF and inspect
-them visually. The PDF remains the edition and visual evidence for notation,
-graphs, part boundaries, and answer context. Solve the item independently. If
+them visually (the PDF is the visual evidence for notation, graphs, part
+boundaries, and answer context). Solve the item independently. If
 the CNXML, printed prompt, official key, and calculation disagree, stop and
 document the discrepancy; do not silently change one to fit another.
 

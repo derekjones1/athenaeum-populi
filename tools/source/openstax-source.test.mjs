@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -312,11 +312,17 @@ test('the Precalculus book is mapped complete, every upstream section authored',
   );
 });
 
-test('the Anatomy and Physiology book is pinned and in progress, its first two chapters mapped', () => {
-  // Pinned September 22, 2026; chapters 1–2 (twelve sections) were authored
-  // the same day, chapter 1 as the pilot, so the cover lists them under
-  // their unit heading and the map must say so visibly (2/28, 12/169)
-  // rather than omit the book.
+test('the Anatomy and Physiology book is pinned and in progress, its authored chapters mapped', () => {
+  // Pinned September 22, 2026. The partial count must print visibly on the
+  // book's own line rather than be omitted. The local counts are read from
+  // the content tree, not pinned here, so a chapter run does not edit this
+  // test; the map must agree with what is on disk.
+  const bookDir = path.join(repositoryRoot, 'content/life-health-sciences/anatomy-physiology');
+  const chapterDirs = readdirSync(bookDir).filter((name) => /^\d{2}-/.test(name));
+  const sectionCount = chapterDirs
+    .flatMap((dir) => readdirSync(path.join(bookDir, dir)))
+    .filter((name) => /^\d{2}-.*\.md$/.test(name)).length;
+  assert.ok(chapterDirs.length > 0 && chapterDirs.length < 28, 'the book is still in progress');
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
   assert.deepEqual(result.map.books['anatomy-physiology'], {
@@ -325,8 +331,8 @@ test('the Anatomy and Physiology book is pinned and in progress, its first two c
     authoringStatus: 'in-progress',
     upstreamChapters: 28,
     upstreamSections: 169,
-    localChapters: 2,
-    mappedSections: 12,
+    localChapters: chapterDirs.length,
+    mappedSections: sectionCount,
     units: [
       { index: 1, title: 'Levels of Organization', chapters: [1, 2, 3, 4] },
       { index: 2, title: 'Support and Movement', chapters: [5, 6, 7, 8, 9, 10, 11] },
@@ -338,7 +344,7 @@ test('the Anatomy and Physiology book is pinned and in progress, its first two c
   });
   assert.equal(
     formatBookSummaryLine('anatomy-physiology', result.map.books['anatomy-physiology']),
-    'anatomy-physiology: in-progress — 2/28 chapters, 12/169 sections mapped',
+    `anatomy-physiology: in-progress — ${chapterDirs.length}/28 chapters, ${sectionCount}/169 sections mapped`,
   );
 });
 

@@ -20,9 +20,7 @@ No browser install step is needed: the Playwright suites drive the Chrome
 already installed on the machine, launched through
 `tools/build/chrome-stdio-shim.sh`. See `AGENTS.md` §Browsers.
 
-Open <http://localhost:1313>. npm supplies the browser dependencies and fronts
-verification, source-reconciliation, and Pagefind commands; Hugo builds and
-serves the site.
+Open <http://localhost:1313>.
 
 ## Verification
 
@@ -51,12 +49,8 @@ or
 hierarchy Subject → Book → Chapter → Section.
 
 Every book — the four OpenStax math books, Biology 2e, and OpenStax
-Microbiology, all complete, plus Anatomy and Physiology 2e, in progress
-(pinned September 22, 2026, chapters 1–2 authored the same day; all eight of
-Biology's unit Knowledge Checks are authored; Microbiology's all 26
-chapters authored September 14, 2026, with its five Knowledge Checks and
-completion audit landing September 20, 2026)
-— has a pinned,
+Microbiology, all complete with their Knowledge Checks, plus Anatomy and
+Physiology 2e, in progress — has a pinned,
 report-only source reconciliation workflow. See
 [docs/source/openstax-source-workflow.md](docs/source/openstax-source-workflow.md) before
 changing a book. `npm run source:verify` checks the committed section map

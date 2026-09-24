@@ -1,43 +1,36 @@
 # Running a Microbiology chapter — the parent's recipe
 
-This is the orchestrator's checklist for "author chapter N of Microbiology".
-It is the one document the parent reads; the agents read the briefs beside
-it. Rules live in the playbooks (`docs/authoring-playbook.md`,
+The orchestrator's checklist for "author chapter N of Microbiology" (or a
+re-run). The parent reads this; the agents read the briefs beside it. Rules
+live in the playbooks (`docs/authoring-playbook.md`,
 `docs/subjects/life-sciences.md`, `docs/subjects/microbiology.md`); this
 file and the briefs only say who reads what, in what order, with what in
-their context. Context is the cost: a rule stated here is a rule every
-agent re-reads on every turn, so nothing below restates a playbook.
+their context — a rule stated here is re-read by every agent on every
+turn, so nothing below restates a playbook.
 
 ## 0. Shape, and why
 
-Measured on the chapters 10–11 run (eleven sections, one wave): the parent
-spent 118M context-tokens over 410 Fable turns with a 290k average context;
-the eleven Sonnet authors 216M; the checkers 52M; the claim pass 8M. The
-checkers and claim pass found ~35 defects and 4 claim corrections on
-lint-clean pages, so they stay. The savings are (a) the parent's context
-and turn count, (b) the ~57k tokens of rules each author re-read on every
-turn, (c) the blind solve running inside the parent's bloated context.
-
-Hence:
+The checkers and claim pass find defects on lint-clean pages, so they
+stay; the costs to cut are the parent's context and turn count, the rules
+each author re-reads every turn, and a blind solve run inside the parent's
+context. Hence:
 
 - **Parent context stays small.** Every note goes to `$SP/PARENT-NOTES.md`,
   not to the conversation. Every long command output goes to a file and
   the parent reads its tail (`> $SP/x.log 2>&1; tail -20 $SP/x.log`).
   Agents' final messages are ten lines; their reports are files.
 - **Work from the packet list, not an agent's totals** *(September 23,
-  2026)*: reports miscount and skip (one figure fixer skipped 7 verdicts,
-  others misstated their fix counts), so tick each packet line against
-  the report before accepting a unit.
+  2026)*: reports miscount and skip, so tick each packet line against the
+  report before accepting a unit.
 - **Agents sharing `$SP` name their helper files by unit**
-  (`$SP/<unit>-*.py`, `$SP/zoom/<unit>-*.png`): parallel agents writing
-  one generic helper name overwrote each other's *(September 23, 2026)*.
-  Say so in every brief that lets an agent write a helper.
+  (`$SP/<unit>-*.py`, `$SP/zoom/<unit>-*.png`), or parallel agents
+  overwrite each other's *(September 23, 2026)*. Say so in every brief
+  that lets an agent write a helper.
 - **Authors read the compact brief + the run facts, and the playbook
   sections named there** — not the whole core playbook, not the history.
 - **The blind solve runs in a fresh Fable subagent** with only the packets
-  in its context (`solve.md`). The model is still Fable (the standing rule:
-  the orchestrator's own reading, not a Sonnet's); the context is 20k, not
-  400k. The parent adjudicates disagreements only.
+  in its context (`solve.md`) — Fable, because it is the orchestrator's own
+  reading, not a Sonnet's. The parent adjudicates disagreements only.
 
 ## 1. Before the wave
 
@@ -49,16 +42,16 @@ the parent runs them.
 2. **Media.** `npm run source:media -- --book microbiology --chapter N
    --dry-run`, then without `--dry-run`. Note the stems that live inside
    feature boxes and the `_img` exercise images. A Disease Profile table
-   image vendors like any other figure — the pull cannot tell it apart —
-   so note its stems too and de-vendor them (manifest entry + static
-   files) at close-out *(chapters 21–22, the first run with these boxes)*.
+   image vendors like any other figure, so note its stems too and
+   de-vendor them (manifest entry + static files) at close-out *(chapters
+   21–22)*.
 3. **PDF pages.** Find the chapter's true PDF index range with `pdftotext`
-   (printed folio = index − 14 has held for chapters 1–11; re-check), then
+   (printed folio = index − 14; re-check), then
    `pdftoppm -f A -l B -r 110 -png sources/microbiology_-_WEB.pdf $SP/pdf/chNN/p`.
 4. **Extraction, per module** (`tools/source/microbiology-prep.py`):
    `keys <moduleId> > $SP/keys-N.M.txt` and `terms <moduleId> >
-   $SP/terms-N.M.md`. The parent does NOT read the keys files whole
-   (876 lines for two chapters); a Sonnet agent reads them for step 6.
+   $SP/terms-N.M.md`. The parent does NOT read the keys files whole; a
+   Sonnet agent reads them for step 6.
 5. **Landing page** `content/…/NN-<slug>/_index.md` from the intro module,
    in final form (bullets naming the sections; no `authoring_status`).
    **Delegated:** one Sonnet agent, prompt = the two previous chapters'
@@ -66,8 +59,7 @@ the parent runs them.
    OpenStax deep link; it views the splash image for the alt. Launched
    together with the step-6 drafter.
 6. **Run facts** — copy `run-facts-template.md` to `$SP/run-facts.md`.
-   **Delegated, in two parts** *(chapters 15–16; the shape that kept the
-   parent's context small)*: one Sonnet agent fills PART A (every factual
+   **Delegated, in two parts** *(chapters 15–16)*: one Sonnet agent fills PART A (every factual
    field, from the `keys` files and the raw CNXML) and appends PART B,
    "DECISIONS NEEDED" — a numbered list of every exercise image, matching
    set, >4-word / "or" / multi-blank key, unkeyed Short Answer and
@@ -79,29 +71,24 @@ the parent runs them.
    notation the corpus has not printed yet) — made HERE, once, by the
    parent, not eleven times by authors.
    A decision names the playbook rule it applies, and a shape the playbook
-   already fixes is NOT re-decided: the chapters 15–16 parent wrote a
-   matching form (stem = term) and a `sortbins` with seven bins that both
-   contradicted the playbook, and three authors built them before the
-   correction went out. Before the wave, grep `docs/subjects/microbiology.md`
-   for every form Part C names (`Matching`, `sortbins`, `two-blank`) and
-   quote the rule beside the decision.
+   already fixes is NOT re-decided *(chapters 15–16: a contradicting
+   matching form and seven-bin `sortbins` were built by three authors)*.
+   Before the wave, grep `docs/subjects/microbiology.md` for every form
+   Part C names (`Matching`, `sortbins`, `two-blank`) and quote the rule
+   beside the decision.
    Part B quotes the extractor's key line verbatim ("source prints no
-   key" included) and never infers a letter: the chapter 24 drafter wrote
-   "source key: D" for an Art Connection that prints no solution, and only
-   the parent's CNXML check caught it.
+   key" included) and never infers a letter *(chapter 24)*.
    **Part C names WHICH rule and WHICH sentence, never a concrete `accept`
-   list** *(chapter 26)*: the chapter 26 Part C prescribed
-   `accept="blood brain barrier"`, which the grader already folds and the
-   lint then rejected as redundant — say "grader-check the members"
-   instead and let the author verify.
+   list** *(chapter 26)* — say "grader-check the members" and let the
+   author verify; a prescribed member the grader already folds is a lint
+   error.
 7. Copy the three agent briefs unchanged to `$SP/` (`author.md`,
    `checker.md`, `claim-pass.md`) so the agents' paths are one directory.
 
 The parent's own prep work is then: the baseline, the media pull, the PDF
 render, the extraction commands, PART C, and reading two ten-line reports.
-Everything checklist-shaped goes to a Sonnet agent — this is the standing
-rule, not a per-run choice: Derek asked (September 12, 2026) that the
-token-saving shape apply every run without being requested.
+Everything checklist-shaped goes to a Sonnet agent — the standing rule
+every run, without being asked *(September 12, 2026)*.
 Checklist-shaped means text: anything that reads or fixes a figure, alt,
 or `longdesc` against its image runs on Opus (life-sciences "Figure, alt,
 and `longdesc` reading and fixing run on Opus", *September 23, 2026*),
@@ -118,18 +105,13 @@ section number, module id, output path, PDF page range, "read
 
 As each author reports: launch its checker (one **Opus** agent per
 section, `model: "opus"`, prompt = page path + "read `$SP/checker.md`").
-Opus since September 22, 2026: the per-section Sonnet checkers had passed
-the 7–10 confirmed defects per page (two-thirds hints) that an Opus
-sample and then an Opus sweep of every page of this book found, while no
-reading had found a wrong source key — the leak, hint, accept, and figure
-reading is the one whose model was the gap (the A&P kit made the same
-change). Authors, prep, claim pass, and close-out stay Sonnet, except the
-alt-errata verifier (§4 step 0).
-**A prompt line naming one item for
-"specific attention" narrows a checker to that item alone**, returning
-a partial pass instead of the full brief *(chapter 25: three of four
-checkers came back partial and had to be resumed for the full pass)* — say
-"run the FULL pass, and in addition…", never a bare pointer. When a
+Opus since September 22, 2026: Sonnet checkers passed the hint, leak,
+accept, and figure defects an Opus sweep then found. Authors, prep, claim
+pass, and close-out stay Sonnet, except the alt-errata verifier (§4 step
+0).
+**A prompt line naming one item for "specific attention" narrows a checker
+to that item alone** *(chapter 25)* — say "run the FULL pass, and in
+addition…", never a bare pointer. When a
 chapter's last page is on disk: launch its claim-pass checker (one Sonnet per chapter, prompt = the
 page paths with module ids, PLUS the landing page path with its intro
 module id — the landing page is Sonnet-written and this is its only
@@ -137,22 +119,17 @@ reading — + "read `$SP/claim-pass.md`", report path
 `$SP/claims-chNN.md`).
 
 After the last author reports, grep every page of the wave for plain-text
-cross-references to sibling sections that are now on disk — authors
-launched together cannot link pages that did not exist yet when they wrote
-theirs, and chapter 20 had five such sites — and have the authors convert
-them to real links before the checkers' concerns repeat the same finding
-page by page. Authors leave a Clinical Focus chain sentence unlinked even
-when Part C already printed the route: two of nine sections did in the
-chapters 21–22 wave. The grep is not optional just because Part C named
-the routes.
+cross-references to sibling sections now on disk (authors launched together
+cannot link pages that did not exist yet) and have the authors convert them
+to real links before the checkers repeat the finding page by page. Authors
+leave Clinical Focus chain sentences unlinked even when Part C printed the
+route, so the grep is not optional *(chapters 20, 21–22)*.
 
 Checker defects go back to the page's author by `SendMessage` (authors are
 resumable by name); the parent applies only one-line fixes itself. **Read
 every author's report for the words "dropped", "omitted", "duplicate", or
-"folded" and challenge each one** *(chapters 13–14)*: five of eleven authors
-in that wave left a source exercise off the page with a reasonable-sounding
-rationale, no gate caught any of them, and only one of the five claims
-survived checking. The adjudication is one line — graded when one module
+"folded" and challenge each one** *(chapters 13–14)* — no gate catches a
+dropped source exercise. The adjudication is one line — graded when one module
 artifact fixes the answer, `selfcheck` otherwise, never absent. Verify
 every checker finding against the image or the raw CNXML before relaying
 it — about one finding per run is wrong.
@@ -161,8 +138,7 @@ Claim-pass findings: the parent verifies each against the cited evidence,
 then applies the accepted ones (Source note, `reconciliation-decisions.json`
 entry, footer sentence, erratum), lists the rest under "Reviewed and *not*
 errata". After correcting a value on a page, grep the page for the OLD
-value: a hint or filler item built on it is now wrong (chapter 12's Sanger
-hint still said 1972 after the body said 1977).
+value: a hint or filler item built on it is now wrong *(chapter 12)*.
 
 ## 3. The blind solve
 
@@ -184,9 +160,8 @@ Then the parent:
 npm run solve:compare -- $SP/solve/chNN/answers.json content --out $SP/solve-results/chNN > $SP/solve/chNN/compare.log 2>&1
 ```
 
-The masked pages have their provenance footer blanked (`<small>…</small>`)
-since September 12, 2026 — a footer names keys in prose ("the Matching
-exercise (key: D, E, B, A, C)") and the chapter 16 solver read the leak.
+The masked pages have their provenance footer blanked (`<small>…</small>`),
+because a footer names keys in prose *(September 12, 2026)*.
 
 Every disagreement or flag gets an `adjudicated` note settled against the
 module's sentence (a why-question keyed to one abstract noun usually wants
@@ -208,10 +183,8 @@ AGENTS.md ("The answer ledger") does not carry *(September 23, 2026)* —
    checked against the vendored image and the CNXML, verdicts to
    `$SP/alt-errata.md`. **Its brief must say it never runs `source:media` or
    `vendor-media`**: told a de-vendored Disease Profile stem is "missing," it
-   will re-vendor it *(chapter 25: the verifier re-vendored all four of the
-   chapter's de-vendored images; the parent re-removed the manifest entries
-   and static files)* — launch the pins/de-vendor agent AFTER the verifier
-   reports, or de-vendor last; (b) an errata drafter — reads the previous run's
+   re-vendors it *(chapter 25)* — launch the pins/de-vendor agent AFTER the
+   verifier reports, or de-vendor last; (b) an errata drafter — reads the previous run's
    block for format, `$SP/alt-errata.md`, both `claims-chNN.md`, and
    PARENT-NOTES, writes `$SP/errata-block.md` and
    `$SP/decisions-entries.json` (claim corrections only get decisions
@@ -223,12 +196,10 @@ AGENTS.md ("The answer ledger") does not carry *(September 23, 2026)* —
    plain `## Confirmed`); decisions entries carry every element id of a page.
 2. `node tools/source/openstax-source.mjs build-map` BEFORE the deviation
    test (an unmapped page leaves a deviation "unexercised").
-3. Pins: `AGENTS.md` status prose, `README.md`, the workflow doc's counts
-   (including its "connects all N authored" sentence — the one prose site
-   `documentation.test.mjs` checks against the source map; missed in chapter 19),
-   `tools/source/openstax-source.test.mjs` assertions, the book cover's
-   chapter list, `docs/source/claim-pass-ledger.md` rows, the playbook
-   header sentence for the chapter.
+3. Pins: chapter and section counts are NOT restated in prose (`npm run
+   source:verify` prints them; `documentation.test.mjs` fails a doc that
+   restates one). Update `tools/source/openstax-source.test.mjs`
+   assertions, the book cover's chapter list, `docs/source/claim-pass-ledger.md` rows.
 4. `node tools/source/openstax-source.mjs history --output
    docs/source/openstax-upstream-history-audit.md`.
 5. `python3 tools/verify/rebuild-ledger-results.py --results
@@ -241,12 +212,11 @@ AGENTS.md ("The answer ledger") does not carry *(September 23, 2026)* —
    map stale → uncovered by question text against the solve packet's
    hashes, write the patched file, and merge that too *(chapter 23)*.
 6. `npm run baseline:update`; `npm test > $SP/test-final.log 2>&1`; read
-   the tail. `npm run source:verify` and `npm run check:external-links`.
-   **Run `check:external-links` BEFORE the errata drafter (step 0b), not
-   here** *(chapter 26: it found two dead Link to Learning redirects in
-   26.3 — 22arboviralUS, 22WHOprion; a 403 is a bot wall and stays linked
-   — each un-linked and an erratum filed)*, so the dead-link errata land
-   in the same block as the run's other errata instead of trailing it.
+   the tail. `npm run source:verify`.
+   **Run `npm run check:external-links` BEFORE the errata drafter (step
+   0b), not here** *(chapter 26)*, so dead-link errata land in the run's
+   errata block: a dead link is un-linked and an erratum filed; a 403 is a
+   bot wall and stays linked.
 7. New lessons: a one-line rule into the playbook section it belongs to;
    the narrative into `docs/history/microbiology.md`; a lint or test where
    one can hold it. Then the session memory file.

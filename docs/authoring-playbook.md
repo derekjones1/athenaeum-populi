@@ -1,51 +1,39 @@
 # Section Authoring Playbook (Hugo edition)
 
-How to author a section in the Hugo build: pure Markdown + shortcodes. The
-mechanical rules are enforced by the tooling (`npm test`, `npm run
-verify-section`) — author, run the verifier, fix what it reports. You should not
-have to memorize the mechanical rules; the lints know them.
-
-This playbook describes the repository's current Hugo architecture. Content is
-plain Markdown with Hugo shortcodes; React, JSX, MDX, and Nextra metadata are
-not valid authoring syntax.
+How to author a section in the Hugo build. Content is
+plain Markdown with Hugo shortcodes; React, JSX, MDX, and Nextra metadata
+are not valid authoring syntax. The tooling (`npm test`, `npm run verify-section`) enforces the
+mechanical rules — author, run the verifier, fix what it reports.
 
 ## Scope
 
-This playbook is the shared core: it governs every book. Its structural,
-source-first, component, and verification rules are subject-neutral. Each
-subject has its own playbook under `docs/subjects/` — currently
-[`math.md`](subjects/math.md) for the four OpenStax math books (Prealgebra
-2e, Elementary Algebra 2e, Intermediate Algebra 2e, and Precalculus 2e) and
-[`life-sciences.md`](subjects/life-sciences.md) for every book on the
+This playbook is the subject-neutral core that governs every book. Each
+subject has its own playbook under `docs/subjects/`:
+[`math.md`](subjects/math.md) for the four OpenStax math books, and
+[`life-sciences.md`](subjects/life-sciences.md) for the
 life-health-sciences shelf, under which each book has a short delta file —
-[`biology.md`](subjects/biology.md) for Biology 2e and
-[`microbiology.md`](subjects/microbiology.md) for OpenStax Microbiology, and
-[`anatomy-physiology.md`](subjects/anatomy-physiology.md) for Anatomy and
-Physiology 2e —
-recording its source, its CNXML-to-page mappings, and where it differs from
-the baseline. A subject playbook adds notation, media, and exercise-type
-rules on top of this core, and wins where it differs; a book file wins over
-its subject playbook. Read this core first, then the subject playbook for the book you
-are authoring.
+[`biology.md`](subjects/biology.md),
+[`microbiology.md`](subjects/microbiology.md), and
+[`anatomy-physiology.md`](subjects/anatomy-physiology.md) — recording its
+source, its CNXML-to-page mappings, and where it differs from the baseline.
+A subject playbook adds notation, media, and exercise-type rules on top of
+this core, and wins where it differs; a book file wins over its subject
+playbook. Read this core first, then the subject playbook.
 
 ## 0. Source-first workflow (required for AI agents)
 
-Automated checks can prove that syntax renders and an authored answer grades
-against itself, and `npm run verify:answers` additionally cross-checks
-mathematical consistency for roughly half the corpus (solve prompts by
-substitution, evaluate-at prompts by substitution, re-expression prompts by
-value equivalence — all numeric, against the printed question only), while
-`npm run verify:source-keys` compares a prose book's multiple-choice keys,
-textin answers, and self-check model answers to the pinned module's own
-solutions and glossary, and a math page's fill-in keys to the printed
-solution of the source exercise each transcribes (word problems and rounding
-asks included — the classes `verify:answers` cannot parse). They cannot
-prove that the transcription is faithful, and a fill-in that transcribes no
+Automated checks prove that syntax renders and an authored answer grades
+against itself. `npm run verify:answers` re-derives roughly half the math
+corpus numerically from the printed question; `npm run verify:source-keys`
+compares a prose book's multiple-choice keys, textin answers, and self-check
+model answers to the pinned module's solutions and glossary, and a math
+fill-in's key to the printed solution of the source exercise it transcribes.
+Neither proves the transcription faithful, and a fill-in that transcribes no
 keyed source exercise (an author variant, a figure read, a knowledge-check
-item) is read by neither, so `npm run verify:fillin-residual` refuses any
-such item whose ledger record carries neither a derivation note nor a blind
-solve (`solve:emit -- content/math --residual-fillins`): independent solving
-remains required, and the record of it is what the gate checks.
+item) is read by neither, so `npm run verify:fillin-residual` refuses one
+whose ledger record carries neither a derivation note nor a blind solve
+(`solve:emit -- content/math --residual-fillins`): independent solving
+remains required, and its record is what the gate checks.
 
 Before writing:
 
@@ -98,12 +86,11 @@ Before writing:
        nested `*` closes the italics *(September 23, 2026)*.
      - **A one-word typo** — a misspelling, a malformed binomial, a wrong
        journal volume — is corrected in place with no inline note and no
-       decisions entry: an interruption mid-sentence costs the reader more
-       than it tells them, and nothing in the audit reads a single word.
-       The footer's `Changes:` clause names it and the errata entry records
-       it, and those two are not optional; a silent one-word departure from
-       the source is a defect of its own, and a checker's last pass is to
-       diff the page against the module for exactly that.
+       decisions entry (a mid-sentence note costs the reader more than it
+       tells). The footer's `Changes:` clause names it and the errata entry
+       records it, and those two are not optional: a silent one-word
+       departure is a defect of its own, and a checker's last pass diffs
+       the page against the module for exactly that.
    - **Locally authored fields → just fix them.** Content with no source
      counterpart — `hint` text, distractor bodies, aria labels, and other
      scaffolding this playbook requires you to write — is not source content
@@ -124,11 +111,10 @@ Before writing:
    The parent reconciles every section, logs the defects, and runs the
    book-wide gates.
 
-The pre-July-22-2026 grandfathering record — which existing sections it
-covers and why — moved to `docs/history/authoring-playbook.md`. New
-sections and substantive revisions follow the source-fidelity rule above
-regardless; never use the grandfathering exception to justify new
-omissions.
+The pre-July-22-2026 grandfathering record is in
+`docs/history/authoring-playbook.md`. New sections and substantive revisions
+follow the source-fidelity rule above; never use the grandfathering
+exception to justify new omissions.
 
 ## 1. Where the file goes
 
@@ -167,7 +153,7 @@ Book root `_index.md` also needs `license:` and `source:` (and carries
 `source_chapters:` (e.g. `"1-6"`). `npm run validate` checks all of this.
 
 This front matter is also the page's entire search-listing surface, composed
-by the templates — nothing extra to author, but the fields must be right:
+by the templates:
 
 - The `<title>` tag (the search-result headline, NOT the on-page H1) is
   composed by `layouts/_partials/utils/seo-title.html` from `title` plus the
@@ -182,11 +168,11 @@ by the templates — nothing extra to author, but the fields must be right:
   `source:`), `LearningResource` on chapters and sections, `Quiz` on
   knowledge checks. `description` becomes the node's description, so it must
   stay a real summary, not a placeholder.
-- `npm run check:seo` (part of `npm run check:build`, so also CI) verifies
-  every built page: one non-empty suffixed title, unique across the corpus,
-  a matching canonical, a parseable breadcrumb trail ending at the page, and
-  the book-entity node. A new page that fails it usually has missing or
-  duplicated front matter, not a template problem.
+- `npm run check:seo` (part of `npm run check:build`) verifies every built
+  page: one non-empty suffixed title, unique across the corpus, a matching
+  canonical, a parseable breadcrumb trail ending at the page, and the
+  book-entity node. A failure usually means missing or duplicated front
+  matter.
 
 Every numbered section opens with its objectives callout, stating **one
 objective per Markdown list item**:
@@ -201,10 +187,9 @@ objective per Markdown list item**:
 {{</* /callout */>}}
 ```
 
-The list is not cosmetic. It is the anchor for the section-final `## Practice`
-block, which gives every objective its own group, so `npm run validate`
-rejects a prose sentence here — an objective may itself contain a comma, and
-a run-on callout cannot be split back into objectives. Enumerate the source's
+The list anchors the section-final `## Practice` block, which gives every
+objective its own group, so `npm run validate` rejects a prose sentence here
+(an objective may itself contain a comma). Enumerate the source's
 objectives one for one: merging two into a single phrase ("use place value to
 name and write whole numbers") hides one from the coverage rule, and
 `source:check` flags the count divergence. Keep the wording of an objective
@@ -235,10 +220,7 @@ Notation, math, and table conventions are per subject: `docs/subjects/math.md`
 parenthetical citation after the sentence it supports — author, title,
 publication, year, pages — with a bare access URL dropped and a DOI kept.
 Hugo has no footnote apparatus in this template and a citation is source
-content, so it neither moves to the end nor disappears. Books differ wildly
-in how heavily they footnote (Microbiology §1.1 carries eight; most Biology
-sections carry none), which is why the rule lives here rather than in one
-subject playbook.
+content, so it neither moves to the end nor disappears.
 
 ## 3. Exercises and components (shortcodes)
 
@@ -261,10 +243,9 @@ self-grade `correct`.
 Every regular-section exercise needs a concise, strategy-oriented `hint`.
 Strategy means the step to take or the place to look, never the result or
 the fact that decides the item: in a math item the method, in a
-vocabulary item the subsection, figure, or table (the life-sciences rule,
-`docs/subjects/life-sciences.md` "Text recall" — a hint that stated the
-key's fact was the largest class of the September 22, 2026 life-sciences
-sweep, about 2,470 rewritten). Knowledge Checks deliberately omit hints.
+vocabulary item the subsection, figure, or table
+(`docs/subjects/life-sciences.md` "Text recall"). Knowledge Checks
+deliberately omit hints.
 
 Re-expression prompts (asking the learner to restate a printed value in
 another form) need an `answerForm` so the grader checks the shape, not just
@@ -344,23 +325,18 @@ measured-metrics/auto-fit treatment:
 ```
 
 Every option spec needs an `ariaLabel` — it is the option button's
-accessible name, and for a graph question it must describe the graph
-without giving the answer away in words a screen-reader user would get for
-free. The line between those is **describe, never evaluate**. Naming
-coordinates is fine and is the house convention ("A line falling from left to
-right, crossing the x-axis at −4 and the y-axis at −2"), because the learner
-still has to do the mathematics to know which coordinates are the right ones —
-that is equitable access, not a leak. What leaks is a label that judges its own
-option: "…with the coordinates reversed", "…with the y-coordinate's sign
-flipped", "…with the vertex plotted well to the right of its actual peak".
-Those announce *this is the wrong one*, and a screen-reader user answers by
-elimination without reading a graph. Write what is drawn and let the reader
-judge it.
+accessible name, and it must describe the graph without giving the answer
+away: **describe, never evaluate**. Naming coordinates is the house
+convention ("A line falling from left to right, crossing the x-axis at −4
+and the y-axis at −2") — the learner still has to do the mathematics. What
+leaks is a label that judges its own option ("…with the coordinates
+reversed"), which lets a screen-reader user answer by elimination. Write
+what is drawn and let the reader judge it.
 
 **Every distractor must differ from the correct option in the drawn objects,
 never only in a marked point.** An option carrying the identical curves with
 the dot moved off the intersection cannot be labelled honestly at all — any
-truthful description of it names the answer — and it is weak besides. Vary the
+truthful description of it names the answer. Vary the
 slope sign, the intercept sign, the steepness, the opening direction, or make
 the pair parallel; then mark each option's own true crossing or vertex, and pin
 every shared feature identically across options so exactly one thing varies.
@@ -370,8 +346,7 @@ intercepts are what you have to vary. The lint validates every spec option exact
 (it must parse, carry the `ariaLabel`, and build through the real engine),
 and the figure layout gate covers option figures automatically. Every option
 is a spec: a prerendered `<svg>` option block fails both the lint and the
-build (the September 2026 conversion record is in
-`docs/history/authoring-playbook.md`).
+build.
 
 **Graph it yourself (GraphPlot):** config (answer + grid) is JSON in the body.
 
@@ -413,12 +388,10 @@ pasted SVG:
 whose properties map to the matching `buildGraph`, `buildNumberLine`, or
 `buildFigure` builder in `assets/js/lib/math/graph-core.mjs`. Every figure MUST
 carry an `ariaLabel` — it is the accessible name and the no-JS fallback
-description. The `<ap-figure>` Web Component renders the spec in the browser
-with the shared engine, which does all layout from measured text metrics and
-then fits the viewBox around everything it drew, so a label cannot be cut
-off, and fonts scale up before a dense figure can shrink its text below
-legibility. Author the mathematical objects and let the engine place them;
-`labelSide` is honored exactly as written wherever you state it.
+description. The `<ap-figure>` Web Component lays the spec out from
+measured text metrics and fits the viewBox around everything it drew, so a
+label cannot be cut off. Author the mathematical objects and let the engine
+place them; `labelSide` is honored exactly as written wherever you state it.
 
 The placement engine's behavior, the full set of figure primitives, and the
 legacy-figure conversion workflow are documented per subject; for math, see
@@ -509,7 +482,7 @@ challenge and reproduce the work
 
 Checkpoints restate the model answer, never extend it — the lint holds each
 clause to the model answer's own words — and contain no `$` math (they are
-checkbox labels). Still ungraded and unstored.
+checkbox labels).
 
 **Sort into bins (`sortbins`)** — categorize 4–12 items into 2–4 labelled
 bins, graded in the browser as the label→bin mapping. Built from a source
@@ -536,10 +509,7 @@ authored order, so grouped order leaks the key, and the lint rejects it
 `$` math anywhere — item and bin labels become button names, and a button
 has no spoken-math name — and no bin-label content word may appear in an
 item label (the giveaway rule, textin's answer-in-question hazard in bin
-form). Interaction is click-to-pick-up, "Place here" per bin, "Check bins"
-to grade — keyboard-complete with no drag. Grading is partial-credit and
-diagnostic: misplaced items return to the tray with a "N of M placed
-correctly" count. Which source tables qualify (the categories may run along
+form). Grading is partial-credit, with no drag. Which source tables qualify (the categories may run along
 either axis), when an unkeyed prose question converts into one, and how the
 source cross-check reads them are subject-specific; see
 `docs/subjects/life-sciences.md`.
@@ -569,8 +539,7 @@ A shortcode param never holds an HTML character reference (`&quot;`,
 double-escaped and a screen reader reads the entity's letters. Quote inside a
 param with '…' or "…". Lint error since September 22, 2026. **Never a
 straight `"` inside a double-quoted param**: it ends the attribute, and the
-shortcode parser then misreads everything after it on the page (a figure-pass
-fixer broke two whole pages this way, 174 and 81 lint errors). Use single or
+shortcode parser then misreads everything after it on the page. Use single or
 curly quotes, or Hugo's `\"` escape, and run `npm run lint` after every page
 you edit, not once at the end *(September 23, 2026)*.
 
@@ -602,8 +571,7 @@ exercises per objective group, at least five per section — hold everywhere,
 and a book may publish a HIGHER floor in the lint's per-book table once its
 corpus already meets it (the retrofit lands first, then the rule, never a
 grandfathered warning). The life-sciences floor is three exercises per
-objective group and eight per section, landed with Biology's practice
-retrofit; see `docs/subjects/life-sciences.md`.
+objective group and eight per section; see `docs/subjects/life-sciences.md`.
 
 ```md
 ## Practice
@@ -633,8 +601,8 @@ multipart source item expands into one exercise per part.
   exercise group is thin, draw a covering item from the section's Mixed
   Practice or Everyday Math group rather than repeating one skill.
 - **Auto-graded coverage.** Every objective group also needs at least one
-  auto-graded item (`fillin`, `multiplechoice`, `graphplot`, or `textin`) —
-  the lint now enforces this. A group holding only `selfcheck`s does not
+  auto-graded item (`fillin`, `multiplechoice`, `graphplot`, or `textin`)
+  (lint-enforced). A group holding only `selfcheck`s does not
   cover its objective, since nothing in it is graded.
 - **Multipart items.** Expand a multipart source exercise (ⓐ–ⓔ) into one
   component per part, kept adjacent inside its objective's group; every part
@@ -732,8 +700,7 @@ From the repository root:
    Practice selfcheck counts, Practice item counts by type, the Key terms
    bullet count, and the internal (`/…`) link count. It never fails the run;
    compare its counts against the footer's `Changes:` clause before reporting
-   a discrepancy — a mismatch usually means the footer's count is stale, not
-   that the page is wrong.
+   a discrepancy — a mismatch usually means the footer's count is stale.
    Then run `npm run source:diff -- content/<subject>/<book>/<ch>/<sec>.md`
    (needs the pinned CNXML checked out — `npm run source:fetch`; it skips
    loudly, exit 0, when the checkout is absent). It diffs the page's prose
@@ -745,10 +712,9 @@ From the repository root:
    disclosed in the footer's `Changes:` clause is suppressed automatically —
    and MODEL-ANSWER SENTENCES lists selfcheck model-answer sentences whose
    vocabulary the whole module (end matter and solutions included) does not
-   cover. That last check is weak by construction: a paraphrase built from
-   the module's own words scores as covered, so a clean report does not
-   prove every model-answer claim traces to the module — the checker still
-   reads each self-check answer beside the module. An independent checker
+   cover. That last check is weak by construction (a paraphrase in the
+   module's own words scores as covered), so the checker still reads each
+   self-check answer beside the module. An independent checker
    runs the tool and must explain every ADDED sentence, every undisclosed
    NEAR-MISS word, and every MODEL-ANSWER sentence.
 5. Run `npm test`. It includes whole-repository structure validation,
@@ -760,9 +726,8 @@ From the repository root:
    math fill-in ships with neither of those nor a recorded derivation or
    blind solve), the answer-ledger gate (which, for a prose shelf, also
    requires the orchestrator's own solve of every graded item — see the
-   subject playbook),
-   unit tests, repo-wide
-   authoring lints, documentation consistency checks, and KaTeX parsing.
+   subject playbook), unit tests, repo-wide authoring lints, documentation
+   consistency checks, and KaTeX parsing.
    `npm run validate` remains available as a focused structure-only command.
    A cross-check failure means the answer disagrees with the printed
    question: solve it independently before touching either side, and if the
@@ -776,8 +741,7 @@ From the repository root:
    figures match the PDF. Also open a changed chapter landing page.
    For screenshots, build and serve the shipped bytes instead —
    `npm run build && npm run serve:public` (port 1315) — never the dev
-   server: it injects a livereload script and serves unfingerprinted CSS, so
-   a capture of it describes the dev server, not the site that ships.
+   server, which injects a livereload script and serves unfingerprinted CSS.
    `node tools/build/screenshot-page.mjs <route>` captures light/dark full-page
    shots plus a high-zoom crop of every figure and fails on duplicate KaTeX
    or unlabelled SVGs — use the crops for the figure-vs-PDF comparison, and
@@ -794,14 +758,8 @@ From the repository root:
 ## 5. Working rules
 
 `npm run lint` reports **zero errors, and errors are all there is** — the
-lint has no warning level. There is no non-blocking rule left in the
-repository and no category of known-defective content to grandfather.
-
-The archaeology of how this section got to zero — the warning-to-error
-promotions, the finished Practice retrofit, and the rules fixed rather than
-documented — moved to `docs/history/authoring-playbook.md`.
-
-The working rules that remain:
+lint has no warning level and no category of known-defective content to
+grandfather. The working rules:
 
 - **Never add a warning level back.** Every new rule lands as an error with
   the corpus already clean, or it does not land. A non-blocking tier in a
@@ -814,9 +772,8 @@ The working rules that remain:
 - **End the session with `npm run baseline:update`.** It runs the three
   counting gates, recounts the `--min-verified`, `--min-replayed`, and
   `--min-exercises` floors, rewrites each in place in `package.json`, and
-  refuses to lower any of them without an explicit flag. Committing its
-  rewrite with the content is what keeps `npm run ci` green without a
-  hand-edited count. The baselines ratchet differently:
+  refuses to lower any of them without an explicit flag. Commit its rewrite
+  with the content. The baselines ratchet differently:
   `--min-verified` is an exact match (a move either way is news about what the
   cross-check can read); `--min-replayed` and `--min-exercises` are floors
   (both counts rise with ordinary authoring; only a drop means a gate went

@@ -5,69 +5,57 @@ Physiology". It is the one document the parent reads; the agents read the
 briefs beside it. Rules live in the playbooks (`docs/authoring-playbook.md`,
 `docs/subjects/life-sciences.md`, `docs/subjects/anatomy-physiology.md`);
 this file and the briefs only say who reads what, in what order, with what
-in their context. Context is the cost: a rule stated here is a rule every
-agent re-reads on every turn, so nothing below restates a playbook.
+in their context — every agent re-reads a rule stated here, so nothing
+below restates a playbook.
 
-This kit is the Microbiology kit (`docs/briefs/microbiology/`, versioned
-September 8, 2026 after twelve chapter runs) with that book's content rules
-swapped for this book's: no appendix glossary (each module's own
-`<glossary>` is the Key-terms list), no unkeyed source questions (every
-exercise is keyed), no Check Your Understanding or Clinical Focus boxes; in
-their place the Interactive Link Questions rule, the References list, the
-figure `kind` check, and the September-8 table (playbook "Source and
-authority"). The process — parent context kept small, Sonnet prep and
-close-out agents, one Sonnet author per section, a claim pass per chapter,
-the blind solve in a fresh Fable subagent with masked pages — is unchanged;
-it is the process that earned its keep, not the content it was written for.
-One change: **the per-section checker runs on Opus**, not Sonnet (§0).
+This kit is the Microbiology kit (`docs/briefs/microbiology/`) with that
+book's content rules swapped for this book's: each module's own
+`<glossary>` is the Key-terms list, every exercise is keyed, no Check Your
+Understanding or Clinical Focus boxes; instead the Interactive Link
+Questions rule, the References list, the figure `kind` check, and the
+September-8 table (playbook "Source and authority"). The process — parent
+context kept small, Sonnet prep and close-out agents, one Sonnet author per
+section, a claim pass per chapter, the blind solve in a fresh Fable
+subagent with masked pages — is unchanged, except that **the per-section
+checker runs on Opus**, not Sonnet (§0).
 
 ## 0. Shape, and why
 
-Measured on the Microbiology chapters 10–11 run (eleven sections, one
-wave): the parent spent 118M context-tokens over 410 Fable turns; the
-eleven Sonnet authors 216M; the checkers 52M; the claim pass 8M. The
-checkers and claim pass found ~35 defects and 4 claim corrections on
-lint-clean pages, so they stay. In this book the Sonnet checkers found 12
-and 9 defects on chapters 1–2, and an independent Opus re-review of the
-same shipped pages then found about 80 more — leaks (stems, roots, hints
-stating the key's fact) and alt-vs-image errors above all. The checker is
-the one per-section reading whose model was the gap, so it runs on Opus;
-authors, prep, and close-out agents stay Sonnet, except the alt-errata
-verifier (§4 step 0). Hence:
+The checkers and claim pass find defects on lint-clean pages, so they
+stay. On chapters 1–2 an Opus re-review found about 80 defects the Sonnet
+checkers had passed (leaks, alt-vs-image errors), so the checker runs on
+Opus; authors, prep, and close-out agents stay Sonnet, except the
+alt-errata verifier (§4 step 0). Hence:
 
 - **Parent context stays small.** Every note goes to `$SP/PARENT-NOTES.md`,
   not to the conversation. Every long command output goes to a file and
   the parent reads its tail (`> $SP/x.log 2>&1; tail -20 $SP/x.log`).
   Agents' final messages are ten lines; their reports are files.
 - **Work from the packet list, not an agent's totals** *(September 23,
-  2026)*: reports miscount and skip (one figure fixer skipped 7 verdicts,
-  others misstated their fix counts), so tick each packet line against
-  the report before accepting a unit.
+  2026)*: reports miscount and skip, so tick each packet line against the
+  report before accepting a unit.
 - **Agents sharing `$SP` name their helper files by unit**
-  (`$SP/<unit>-*.py`, `$SP/zoom/<unit>-*.png`): parallel agents writing
-  one generic helper name overwrote each other's *(September 23, 2026)*.
-  Say so in every brief that lets an agent write a helper.
+  (`$SP/<unit>-*.py`, `$SP/zoom/<unit>-*.png`) — generic names get
+  overwritten *(September 23, 2026)*. Say so in every brief that lets an
+  agent write a helper.
 - **Authors read the compact brief + the run facts, and the playbook
   sections named there** — not the whole core playbook, not the history.
 - **The blind solve runs in a fresh Fable subagent** with only the packets
-  in its context (`solve.md`). The model is still Fable (the standing rule:
-  the orchestrator's own reading, not a Sonnet's); the context is 20k, not
-  400k. The parent adjudicates disagreements only.
+  in its context (`solve.md`) — Fable, because it is the orchestrator's
+  own reading, not a Sonnet's. The parent adjudicates disagreements only.
 
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say
-"not even a read-only one like `git diff`" in every prompt (the pilot's
-run-facts drafter ran one to "reverify" a fact it had been given); the
-parent runs them.
+"not even a read-only one like `git diff`" in every prompt; the parent runs
+them.
 
 1. **Baseline.** `npm test > $SP/test-baseline.log 2>&1; tail -3 …` on the
    clean tree. Note HEAD and the last erratum number in PARENT-NOTES.
 2. **Media.** `npm run source:media -- --book anatomy-physiology --chapter N
    --dry-run`, then without `--dry-run`. Note the stems that live inside
-   feature boxes. This book's figures are JPEG illustrations, so the
-   manifest's `kind` will read `photo` for nearly all of them — the author
-   sets it from the image (playbook rule 4).
+   feature boxes. The manifest's `kind` will read `photo` for nearly all;
+   the author sets it from the image (playbook rule 4).
 3. **PDF pages.** Find the chapter's true PDF index range with `pdftotext`
    (printed folio = index − 16 held for chapters 1–2; re-check), then
    `pdftoppm -f A -l B -r 110 -png sources/anatomy-and-physiology-2e_-_WEB.pdf $SP/pdf/chNN/p`.
@@ -77,9 +65,7 @@ parent runs them.
 4. **Extraction, per module** (`tools/source/anatomy-physiology-prep.py`):
    `keys <moduleId> > $SP/keys-N.M.txt` and `terms <moduleId> >
    $SP/terms-N.M.md`. The parent does NOT read the keys files whole; a
-   Sonnet agent reads them for step 6.
-   The extractor renders `<sup>`/`<sub>` as Unicode (fixed September 22,
-   2026, with a test); authors still key from the raw CNXML.
+   Sonnet agent reads them for step 6. Authors key from the raw CNXML.
 5. **Landing page** `content/…/NN-<slug>/_index.md` from the intro module,
    in final form (bullets naming the sections; the chapter-objectives note
    as a list; no `authoring_status`). **Delegated:** one Sonnet agent,
@@ -103,8 +89,7 @@ parent runs them.
    lists labels rather than describes, every `section.references` with its
    paragraph count, and every route, with the raw data beside each. The
    parent reads PART B only and writes PART C into `$SP/run-facts.md`, the
-   decisions — made HERE, once, by the parent, not seven times
-   by authors. A decision names the playbook rule it applies, and a shape
+   decisions — made once, by the parent, not per author. A decision names the playbook rule it applies, and a shape
    the playbook already fixes is NOT re-decided: before the wave, grep
    `docs/subjects/anatomy-physiology.md` for every form Part C names and
    quote the rule beside the decision. Part B quotes the extractor's key
@@ -116,16 +101,14 @@ parent runs them.
 
 The parent's own prep work is then: the baseline, the media pull, the PDF
 render, the extraction commands, PART C, and reading two ten-line reports.
-Everything checklist-shaped goes to a Sonnet agent — this is the standing
-rule, not a per-run choice: Derek asked (September 12, 2026) that the
-token-saving shape apply every run without being requested.
-Checklist-shaped means text: anything that reads or fixes a figure, alt,
+Everything checklist-shaped goes to a Sonnet agent, every run, without
+being asked *(September 12, 2026)*. Checklist-shaped means text: anything that reads or fixes a figure, alt,
 or `longdesc` against its image runs on Opus (life-sciences "Figure, alt,
 and `longdesc` reading and fixing run on Opus", *September 23, 2026*),
 and after the first unit of any agent on a task new to its model the
-parent spot-checks one of its "clean" verdicts against the image.
-   A run-specific correction to a brief is an edit to the repo copy, then
-   the scratchpad copy — never a fork.
+parent spot-checks one of its "clean" verdicts against the image. A
+run-specific correction to a brief is an edit to the repo copy, then the
+scratchpad copy — never a fork.
 
 ## 2. The wave
 
@@ -155,14 +138,12 @@ page by page.
 Checker defects go back to the page's author by `SendMessage` (authors are
 resumable by name); the parent applies only one-line fixes itself. **Read
 every author's report for the words "dropped", "omitted", "duplicate", or
-"folded" and challenge each one**: in Microbiology, five of eleven authors
-in one wave left a source exercise off the page with a reasonable-sounding
-rationale, no gate caught any of them, and only one of the five claims
-survived checking. Here the only exercise that may lawfully stand ungraded
+"folded" and challenge each one** — no gate catches a dropped source
+exercise, and most such rationales fail checking. The only exercise that may lawfully stand ungraded
 is an Interactive Link Question whose answer the module does not fix, and
 it still stands as a prompt in its callout and is counted in the footer.
 Verify every checker finding against the image or the raw CNXML before
-relaying it — about one finding per run is wrong.
+relaying it — some are wrong.
 
 Claim-pass findings: the parent verifies each against the cited evidence,
 then applies the accepted ones (Source note, `reconciliation-decisions.json`
@@ -225,13 +206,10 @@ AGENTS.md ("The answer ledger") does not carry *(September 23, 2026)* —
    `## Confirmed`); decisions entries carry every element id of a page.
 2. `node tools/source/openstax-source.mjs build-map` BEFORE the deviation
    test (an unmapped page leaves a deviation "unexercised").
-3. Pins: `AGENTS.md` status prose, `README.md`, the workflow doc's counts
-   (both the book line AND the corpus-wide "connects all N authored"
-   sentence that `documentation.test.mjs` reads — chapter 2's pins agent
-   missed the second),
-   `tools/source/openstax-source.test.mjs` assertions (the scaffolded test
-   becomes the in-progress one after chapter 1: `localChapters`,
-   `mappedSections`, the status word), the book cover (the chapter moves
+3. Pins: chapter and section counts are NOT restated in prose — `npm run
+   source:verify` prints them from the map, the A&P test in
+   `tools/source/openstax-source.test.mjs` reads them from disk, and
+   `documentation.test.mjs` fails a doc that restates one. Update: the book cover (the chapter moves
    from "Planned contents" to its `### Unit N` heading under `## Chapters`;
    after chapter 1 the cover's `authoring_status` and the lock's
    `authoringStatus` both flip to `in-progress`), `docs/source/claim-pass-ledger.md`

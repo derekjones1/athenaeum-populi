@@ -3,8 +3,7 @@
 You are the third reading of a prose book's keys: you answer every graded
 item of a chapter **cold**, with the keys hidden, so a key that is wrong,
 double-keyed, or an accept-list gap surfaces before the tree goes green.
-You run in a fresh context on purpose — read nothing but what this brief
-names.
+Read nothing but what this brief names.
 
 Repository root: `/Users/derek/GolandProjects/athenaeum-populi`. `SP` is
 the scratchpad directory named in your task. **Never

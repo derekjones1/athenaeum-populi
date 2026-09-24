@@ -28,20 +28,20 @@ them again before you write the footer; every number the footer states is
 one you re-derived, not one you remembered.
 
 **Write your content file within your first ~20 tool calls and iterate on it
-in place** — a killed agent with a file on disk is resumable. A long section
-is written subsection by subsection, appended; after each batch of edits,
-grep your file to confirm the bytes landed (many agents write to this tree
-at once).
+in place** — a killed agent with a file on disk is resumable. Write a long
+section subsection by subsection, appended; after each batch of edits, grep
+your file to confirm the bytes landed (many agents write to this tree at
+once).
 
 ## 1. Read, in this order — and only this
 
 1. `$SP/run-facts.md`.
 2. `docs/subjects/anatomy-physiology.md` — all of it except "Where the
    files go" after the tree, "Knowledge checks", and "Build budgets". It
-   wins wherever it differs from the baseline. Its "What is the same as
-   Biology 2e" section is the mapping table you build from; its rules 1–5
-   are this book's own; its chapter 1–2 lessons (end of "Exercises") are
-   the defects the last runs shipped.
+   wins wherever it differs from the baseline. "What is the same as
+   Biology 2e" is the mapping you build from; rules 1–5 are this book's
+   own; the lessons at the end of "Exercises" are the defects the last runs
+   shipped.
 3. `docs/subjects/life-sciences.md` — skip "Where the files go",
    "Knowledge checks", "Completion audit", and "Done checklist". The
    baseline: the page skeleton
@@ -72,14 +72,13 @@ or the checker/claim-pass briefs.
 
 - **Transcription authority:** the pinned CNXML
   `sources/openstax/osbooks-anatomy-physiology/modules/<moduleId>/index.cnxml`.
-  `python3 tools/source/cnxml-preview.py <file>` is a reading aid that
-  prints every cross-reference as `()` — read the raw file.
+  `python3 tools/source/cnxml-preview.py <file>` prints every
+  cross-reference as `()` — read the raw file.
 - **Visual authority:** `$SP/pdf/chNN/p-0NNN.png` (ranges in the run facts).
-  The section's exercises are in the CNXML per section; the pooled PDF
-  pages are visual confirmation only. **The PDF is older than the CNXML**:
-  if your module is in the playbook's September-8 table, the CNXML's
-  wording or image is the corrected one and the PDF's is not a defect to
-  report.
+  The pooled PDF exercise pages are visual confirmation only. **The PDF is
+  older than the CNXML**: if your module is in the playbook's September-8
+  table, the CNXML's wording or image is the corrected one and the PDF's is
+  not a defect to report.
 - **Pre-extracted by the parent** (a convenience, never the authority —
   confirm every key against the raw CNXML): `$SP/keys-N.M.txt` (objectives,
   defined terms with context, the glossary, summary, every feature box with
@@ -93,16 +92,15 @@ or the checker/claim-pass briefs.
 - **Figures:** vendored under `static/media/anatomy-physiology/`; every stem
   with its source alt and caption is in `data/media/anatomy-physiology.json`.
   **Open every figure you use** (`Read` displays a `.webp`). `src` is
-  `anatomy-physiology/<stem>`. The manifest's `kind` is a guess from the
-  file type and is wrong for most of this book's illustrations — set it
-  from the picture on every figure.
+  `anatomy-physiology/<stem>`. The manifest's `kind` is wrong for most of
+  this book's illustrations — set it from the picture on every figure.
 
 ## 3. What you produce — one file, in this order
 
 The page skeleton, the callout forms, the figure rules, the notation, and
 the footer are the playbooks' (life-sciences "The section page, in order";
-anatomy-physiology rules 1–5 and "Exercises"). What follows is only what
-those do not print or what authors most often get wrong.
+anatomy-physiology rules 1–5 and "Exercises"). What follows is what those
+do not print or what authors most often get wrong.
 
 1. Frontmatter: `title`, `description` (`>-` folded, ending "— adapted from
    OpenStax Anatomy and Physiology 2e, Section N.M."), `source_section:
@@ -135,17 +133,15 @@ those do not print or what authors most often get wrong.
    where the caption does not, the labeled structures in the artwork's
    order (a `longdesc` for a multi-panel or label-dense figure); `kind`
    explicit on every figure, judged from the picture; `eager="true"` on the
-   first only. Describe panels, sides, and counts from the drawing, never
-   from the source alt: left/right is the subject's (1.6's arm arrow is on
-   the woman's LEFT arm), and bands, views, and panels are counted in the
-   image. Before writing a `longdesc`, write in your ledger an inventory
-   of the image: panels, every printed label, every count, and every arrow
-   or leader line as `source → target`, both ends zoomed (crop and upscale
-   with PIL); then every printed label is in the alt, `longdesc`, or
-   caption, and every sentence matches the inventory — a third of the
-   shipped Biology and Microbiology `longdesc`s failed exactly this.
-   List each source-alt error in your ledger. A figure's file name
-   is not reader-visible: never write a Source note about a stem.
+   first only. Panels, sides (the subject's left/right), and counts come
+   from the drawing, never from the source alt. Before writing a
+   `longdesc`, write in your ledger an inventory of the image: panels,
+   every printed label, every count, and every arrow or leader line as
+   `source → target`, both ends zoomed (crop and upscale with PIL); then
+   every printed label is in the alt, `longdesc`, or caption, and every
+   sentence matches the inventory. List each source-alt error in your
+   ledger. A figure's file name is not reader-visible: never write a
+   Source note about a stem.
 6. Tables with a `summary`: Markdown from the CELLS, checked against the
    PDF; each comparison table gets ONE `sortbins` (decision in the run
    facts). A spanning header row is the caption line, not a data row.
@@ -173,8 +169,7 @@ the Practice floor and fill order, and the accept-list rule are in the
 playbooks. Apply them literally; these are the recurring failures:
 
 - **Review Questions keep source order, source option count, and the
-  source key.** Six chapter-25 items have two options and one has five —
-  keep them. A stem with a `________` blank stays a `multiplechoice`.
+  source key.** A stem with a `________` blank stays a `multiplechoice`.
 - **Critical Thinking Questions are `selfcheck`s** with the source
   `<solution>` as the model answer and `===CHECKS===` clauses drawn from it
   and the module — never from another chapter or general knowledge.
@@ -186,11 +181,10 @@ playbooks. Apply them literally; these are the recurring failures:
   sibling terms — never invented.
 - **Never edit a source option, stem, or key to dodge a leak** — reorder
   and disclose, or drop and name it in the footer.
-- **Leaks — the top defect class in both runs and in their re-review.**
-  (1) Nothing in the item directly above a `textin` — its stem, its
-  options, OR its hint — prints the `textin`'s key or the key's root,
-  singular, or plural; stems were the gap, not just options. Order the
-  group so every recall item comes first. (2) Grep every stem, hint,
+- **Leaks — the top defect class.** (1) Nothing in the item directly
+  above a `textin` — its stem, its options, OR its hint — prints the
+  `textin`'s key or the key's root, singular, or plural. Order the group
+  so every recall item comes first. (2) Grep every stem, hint,
   option list, alt, caption, and `longdesc` on the page for every key,
   forwards and backwards. (3) A figure whose alt or `longdesc` names the
   answer sends that item back to `selfcheck` or gets a rewritten alt —
@@ -206,8 +200,7 @@ playbooks. Apply them literally; these are the recurring failures:
 - **Hints say WHERE to look** — the subsection, the figure, the table —
   never the key, a root or derivative of it (*pronation* for prone,
   *nutrient* for micronutrients), the fact the correct option asserts, or a
-  fact the module never states. The forms the September 22 sweep rewrote
-  about 2,470 times in Biology and Microbiology: translating the key's
+  fact the module never states. Also never: translating the key's
   Greek or Latin root, restating the definition that is the key,
   eliminating the distractors by name, naming a heading whose title is the
   key, listing a `selfcheck`'s rubric clauses, steering away from an
@@ -215,12 +208,9 @@ playbooks. Apply them literally; these are the recurring failures:
   options, then against the stem, options, and hint of the item above;
   then cover the options — if the stem and hint alone answer it, cut the
   hint to the location.
-- The literal forms of these leaks and of ASCII chemistry are now
-  lint-enforced (playbook, end of "Exercises"), which also catches a
-  `textin` hint word built on a five-letter-plus key's root (*pronation*
-  for `prone`) and an MC hint naming a subsection whose title is the key;
-  the lints do not see the fact the correct option asserts, a fact the
-  module never states, or other paraphrases — you do.
+- The literal forms of these leaks and ASCII chemistry are lint-enforced
+  (playbook, end of "Exercises"); the fact the correct option asserts, a
+  fact the module never states, and other paraphrases are yours to catch.
 - **`textin`:** unpaired tag; answer 1–4 words; no `$`; the answer in
   neither question nor hint; `accept` is `|`-separated and lists only what
   the grader would otherwise miss (an irregular plural or singular, a
@@ -230,8 +220,7 @@ playbooks. Apply them literally; these are the recurring failures:
   either; a member that normalizes to the answer is rejected. Run every
   member, and every natural variant a correct learner types (the full name
   with and without its head noun, the module's synonyms and
-  abbreviations), through the real grader — the sweep added about eight
-  missing accepts per unit:
+  abbreviations), through the real grader:
   `node -e 'import("./assets/js/lib/text/check-text.mjs").then(m=>console.log(m.checkText("<variant>","<answer>",{accept:"<accept>"})))'`
 - **Key-term recall `textin`s** come from the glossary: the meaning is the
   question, the term the answer; a term whose meaning the glossary states
@@ -245,8 +234,7 @@ playbooks. Apply them literally; these are the recurring failures:
 - **Fillers** (summary/body cloze, select-the-term, term recall) name their
   sentence in the ledger and leak into each other as readily as source
   items.
-- Every regular-section item needs a concise `hint` that says where to
-  look (above).
+- Every regular-section item needs a concise `hint` (above).
 - **Never a numeric `textin`** — not a digit, not a number word (`three`),
   not a measurement: a summary cloze that would blank a count blanks a
   different phrase, or the count becomes a `multiplechoice`.

@@ -33,6 +33,9 @@ function exists(path) {
   return existsSync(new URL(path, repositoryRoot));
 }
 
+// Pattern convention: write every space in a prose pattern as `\s+`, so
+// rewrapping a paragraph never breaks a pin.
+
 /**
  * Capture one value out of a file, failing with the file and pattern named
  * rather than with `null[1]`. A moved or reworded claim must fail loudly here:
@@ -101,40 +104,40 @@ test('the playbooks live in docs/ only', () => {
 
 test('the authoring playbook documents the authoring rules', () => {
   const authoring = read('docs/authoring-playbook.md');
-  assert.match(authoring, /plain Markdown with Hugo shortcodes/);
-  assert.match(authoring, /Run `npm test`/);
-  assert.match(authoring, /chapters and Knowledge Checks share one sequential weight order/);
+  assert.match(authoring, /plain\s+Markdown\s+with\s+Hugo\s+shortcodes/);
+  assert.match(authoring, /Run\s+`npm\s+test`/);
+  assert.match(authoring, /chapters\s+and\s+Knowledge\s+Checks\s+share\s+one\s+sequential\s+weight\s+order/);
   // The pre-July-22-2026 grandfathering record moved to
   // docs/history/authoring-playbook.md when the playbook's archaeology was
   // split out; the claim still has to be true somewhere.
-  assert.match(read('docs/history/authoring-playbook.md'), /before July 22, 2026[\s\S]*grandfathered/);
-  assert.match(authoring, /section-final `## Practice` block/);
+  assert.match(read('docs/history/authoring-playbook.md'), /before\s+July\s+22,\s+2026[\s\S]*grandfathered/);
+  assert.match(authoring, /section-final\s+`##\s+Practice`\s+block/);
   // The Practice block sizes itself from the objectives list rather than a flat
   // count, so the playbook must document both halves of the rule and the
   // list-formatted callout the groups key to.
-  assert.match(authoring, /one `### ` group per section\s+objective/);
-  assert.match(authoring, /at least two interactive\s+exercises/);
-  assert.match(authoring, /at least five\s+exercises overall/);
+  assert.match(authoring, /one\s+`###\s+`\s+group\s+per\s+section\s+objective/);
+  assert.match(authoring, /at\s+least\s+two\s+interactive\s+exercises/);
+  assert.match(authoring, /at\s+least\s+five\s+exercises\s+overall/);
   // Per-book floors: the override table is real lint surface, so the playbook
   // must say floors are per book or the biology floor reads as a global one.
-  assert.match(authoring, /Floors are per book/);
-  assert.match(authoring, /one\s+component per part/);
-  assert.match(authoring, /\*\*one\s+objective per Markdown list item\*\*/);
+  assert.match(authoring, /Floors\s+are\s+per\s+book/);
+  assert.match(authoring, /one\s+component\s+per\s+part/);
+  assert.match(authoring, /\*\*one\s+objective\s+per\s+Markdown\s+list\s+item\*\*/);
   // The missing-block rule is an ERROR now that the retrofit is finished; the
   // playbook must say so, or the next author reads it as optional.
-  assert.match(authoring, /reports a\s+missing one as an \*\*error\*\*/);
-  assert.match(authoring, /A categorical answer is never a number/);
+  assert.match(authoring, /reports\s+a\s+missing\s+one\s+as\s+an\s+\*\*error\*\*/);
+  assert.match(authoring, /A\s+categorical\s+answer\s+is\s+never\s+a\s+number/);
   // The retrofit is done, but §5's working rules outlived it and several other
   // sections cite them by number — so the section stays, under its own title.
-  assert.match(authoring, /## 5\. Working rules/);
-  assert.match(authoring, /zero errors, and errors are all there is/);
-  assert.match(authoring, /\*\*Never add a warning level back\.\*\*/);
-  assert.match(authoring, /A rule that fires on sound content is a bug in the rule/);
+  assert.match(authoring, /##\s+5\.\s+Working\s+rules/);
+  assert.match(authoring, /zero\s+errors,\s+and\s+errors\s+are\s+all\s+there\s+is/);
+  assert.match(authoring, /\*\*Never\s+add\s+a\s+warning\s+level\s+back\.\*\*/);
+  assert.match(authoring, /A\s+rule\s+that\s+fires\s+on\s+sound\s+content\s+is\s+a\s+bug\s+in\s+the\s+rule/);
   // Authoring an exercise creates a ledger obligation — verify:ledger runs
   // inside `npm test` — so the step-by-step verify workflow must carry the
   // recording step, or the next author meets a red gate with no documented
   // fix.
-  assert.match(authoring, /ledger:list -- --unverified/);
+  assert.match(authoring, /ledger:list\s+--\s+--unverified/);
   assert.match(authoring, /ledger:merge/);
 });
 
@@ -153,27 +156,27 @@ test('AGENTS.md documents the ledger result-file shape the merge reads', () => {
   // The merge's input format lives in tools/verify/answer-ledger.mjs; an agent told
   // to "record the verdict" must not have to reverse-engineer the tool.
   const agents = read('AGENTS.md');
-  assert.match(agents, /\{"results": \[\{"hash"/);
-  assert.match(agents, /fail the merge with nothing written/);
+  assert.match(agents, /\{"results":\s+\[\{"hash"/);
+  assert.match(agents, /fail\s+the\s+merge\s+with\s+nothing\s+written/);
 });
 
 test('the core owns the shared knowledge-check rules and both editions point at it', () => {
   // The overlap/identity rule used to be stated verbatim in both editions;
   // it lives once in the core now, and each edition delegates.
   const core = read('docs/authoring-playbook.md');
-  assert.match(core, /### Knowledge Checks \(both editions\)/);
-  assert.match(core, /must not overlap/);
-  assert.match(core, /filename, title,\s+`source_chapters`/);
+  assert.match(core, /###\s+Knowledge\s+Checks\s+\(both\s+editions\)/);
+  assert.match(core, /must\s+not\s+overlap/);
+  assert.match(core, /filename,\s+title,\s+`source_chapters`/);
   for (const name of ['knowledge-check-playbook-math.md', 'knowledge-check-playbook-life-sciences.md']) {
     const knowledgeChecks = read(`docs/${name}`);
-    assert.match(knowledgeChecks, /authoring-playbook\.md[^\n]*Knowledge Checks/, `${name} points at the core's shared rules`);
-    assert.doesNotMatch(knowledgeChecks, /must not overlap/, `${name} no longer restates the overlap rule`);
+    assert.match(knowledgeChecks, /authoring-playbook\.md[^\n]*Knowledge\s+Checks/, `${name} points at the core's shared rules`);
+    assert.doesNotMatch(knowledgeChecks, /must\s+not\s+overlap/, `${name} no longer restates the overlap rule`);
     // Knowledge-check questions are ledger-covered exercises like any other,
     // and these playbooks overload the word "ledger" for their source-audit
     // notes — so the verify list must name the answer ledger explicitly.
-    assert.match(knowledgeChecks, /\*\*answer ledger\*\*/, name);
+    assert.match(knowledgeChecks, /\*\*answer\s+ledger\*\*/, name);
   }
-  assert.match(read('docs/knowledge-check-playbook-math.md'), /exercise, problem, and solution element IDs/);
+  assert.match(read('docs/knowledge-check-playbook-math.md'), /exercise,\s+problem,\s+and\s+solution\s+element\s+IDs/);
 });
 
 test('the biology subject playbook states its lint-backed rules', () => {
@@ -181,7 +184,7 @@ test('the biology subject playbook states its lint-backed rules', () => {
   // floor is derived from the lint's own table rather than restated here.
   const biology = read('docs/subjects/biology.md');
   const floor = BOOK_RULES['life-health-sciences/biology'].practice;
-  const stated = biology.match(/floor is (\d+) exercises per objective group and (\d+) per section/);
+  const stated = biology.match(/floor\s+is\s+(\d+)\s+exercises\s+per\s+objective\s+group\s+and\s+(\d+)\s+per\s+section/);
   assert.ok(stated, 'docs/subjects/biology.md must state the practice floor in digits');
   assert.equal(Number(stated[1]), floor.perObjective, 'the per-objective floor matches BOOK_RULES');
   assert.equal(Number(stated[2]), floor.perSection, 'the per-section floor matches BOOK_RULES');
@@ -190,22 +193,22 @@ test('the biology subject playbook states its lint-backed rules', () => {
   // The status line tracks the authored unit checks by count, so a landed
   // check that forgets the playbook is caught here; "None … yet" was the
   // wording until Unit 1 landed on September 4, 2026.
-  assert.match(biology, /\*\*All eight unit Knowledge Checks are authored: Units 1–3/, 'the honest status of the unit checks');
-  assert.doesNotMatch(biology, /None of the eight unit Knowledge Checks is authored yet/);
+  assert.match(biology, /\*\*All\s+eight\s+unit\s+Knowledge\s+Checks\s+are\s+authored:\s+Units\s+1–3/, 'the honest status of the unit checks');
+  assert.doesNotMatch(biology, /None\s+of\s+the\s+eight\s+unit\s+Knowledge\s+Checks\s+is\s+authored\s+yet/);
   // The duplicate-stem rule became a lint on September 4, 2026; both the
   // subject playbook and the life-sciences edition must say so, and the
   // edition must state that it is exact rather than a similarity score.
-  assert.match(biology, /no stem\s+duplicating a section Practice item \(lint-enforced/, 'the duplicate-stem lint');
+  assert.match(biology, /no\s+stem\s+duplicating\s+a\s+section\s+Practice\s+item\s+\(lint-enforced/, 'the duplicate-stem lint');
   assert.equal(BOOK_RULES['life-health-sciences/biology'].practice.distinctItems, true, 'biology is opted in');
   assert.notEqual(BOOK_RULES.default.practice.distinctItems, true, 'the default profile is not');
   const lifeSciences = read('docs/knowledge-check-playbook-life-sciences.md');
-  assert.match(lifeSciences, /\*\*duplicate-stem rule\*\*/, 'the edition names the lint rule');
-  assert.match(lifeSciences, /Near-paraphrase\s+is deliberately not measured/, 'the edition states the similarity decision');
-  assert.match(lifeSciences, /ends in\s+`content\/life-health-sciences\/biology\/knowledge-check-XX-YY\.md`/, 'the scratch-path trap is written down');
+  assert.match(lifeSciences, /\*\*duplicate-stem\s+rule\*\*/, 'the edition names the lint rule');
+  assert.match(lifeSciences, /Near-paraphrase\s+is\s+deliberately\s+not\s+measured/, 'the edition states the similarity decision');
+  assert.match(lifeSciences, /ends\s+in\s+`content\/life-health-sciences\/biology\/knowledge-check-XX-YY\.md`/, 'the scratch-path trap is written down');
 });
 
 test('the math playbook states the graph-recognition companion rule the lint enforces', () => {
-  assert.match(read('docs/subjects/math.md'), /carries at least one `mode="graph"` multiplechoice/);
+  assert.match(read('docs/subjects/math.md'), /carries\s+at\s+least\s+one\s+`mode="graph"`\s+multiplechoice/);
 });
 
 test('the graphplot-conversion ledger stays retired', () => {
@@ -227,7 +230,7 @@ test('the upstream-history audit report is as fresh as the section map', () => {
   const sourceMap = JSON.parse(read('data/openstax/source-map.json'));
   const report = read('docs/source/openstax-upstream-history-audit.md');
   assert.equal(
-    Number(capture('docs/source/openstax-upstream-history-audit.md', /Mapped local sections: (\d+)/, 'the mapped-section count')),
+    Number(capture('docs/source/openstax-upstream-history-audit.md', /Mapped\s+local\s+sections:\s+(\d+)/, 'the mapped-section count')),
     sourceMap.sections.length,
     'regenerate with `npm run source:history -- --output docs/source/openstax-upstream-history-audit.md`',
   );
@@ -239,10 +242,10 @@ test('the life-sciences knowledge-check playbook documents its quota, unit place
   // a math one; the quota is real lint surface (KC_SECTION_QUOTAS in
   // tools/lint/lints.mjs), so the playbook must state the number.
   const lifeSciences = read('docs/knowledge-check-playbook-life-sciences.md');
-  assert.match(lifeSciences, /exactly three items/i);
-  assert.match(lifeSciences, /one page per unit/i);
-  assert.match(lifeSciences, /may not duplicate a section Practice item/i);
-  assert.match(lifeSciences, /at least one auto-graded item/);
+  assert.match(lifeSciences, /exactly\s+three\s+items/i);
+  assert.match(lifeSciences, /one\s+page\s+per\s+unit/i);
+  assert.match(lifeSciences, /may\s+not\s+duplicate\s+a\s+section\s+Practice\s+item/i);
+  assert.match(lifeSciences, /at\s+least\s+one\s+auto-graded\s+item/);
   assert.match(lifeSciences, /===CHECKS===/);
 });
 
@@ -255,7 +258,7 @@ test('the life-sciences subject playbook holds the shared rules the book files p
   const lifeSciences = read('docs/subjects/life-sciences.md');
   for (const book of ['life-health-sciences/biology', 'life-health-sciences/microbiology', 'life-health-sciences/anatomy-physiology']) {
     const floor = BOOK_RULES[book].practice;
-    const stated = lifeSciences.match(/floor is (\d+) exercises per objective group and (\d+) per section/);
+    const stated = lifeSciences.match(/floor\s+is\s+(\d+)\s+exercises\s+per\s+objective\s+group\s+and\s+(\d+)\s+per\s+section/);
     assert.ok(stated, 'docs/subjects/life-sciences.md must state the practice floor in digits');
     assert.equal(Number(stated[1]), floor.perObjective, `${book}: the per-objective floor matches BOOK_RULES`);
     assert.equal(Number(stated[2]), floor.perSection, `${book}: the per-section floor matches BOOK_RULES`);
@@ -263,11 +266,11 @@ test('the life-sciences subject playbook holds the shared rules the book files p
   }
   // The each-thing-once rule is opt-in per book profile; the playbook must
   // name the flag and say why the math books stay out.
-  assert.match(lifeSciences, /\*\*Each thing once\.\*\*/, 'the within-page distinct-items rule');
-  assert.match(lifeSciences, /`distinctItems` in the book's `practice` profile/, 'names the BOOK_RULES flag');
+  assert.match(lifeSciences, /\*\*Each\s+thing\s+once\.\*\*/, 'the within-page distinct-items rule');
+  assert.match(lifeSciences, /`distinctItems`\s+in\s+the\s+book's\s+`practice`\s+profile/, 'names the BOOK_RULES flag');
   assert.match(lifeSciences, /data\/media\/<book>\.json/, 'the mediafigure manifest rule');
-  assert.match(lifeSciences, /\*\*Unkeyed source questions: graded when the module fixes the answer\*\*/, 'the unkeyed-question rule');
-  assert.match(lifeSciences, /\*\*Both table orientations qualify/, 'the comparison-table sortbins rule');
+  assert.match(lifeSciences, /\*\*Unkeyed\s+source\s+questions:\s+graded\s+when\s+the\s+module\s+fixes\s+the\s+answer\*\*/, 'the unkeyed-question rule');
+  assert.match(lifeSciences, /\*\*Both\s+table\s+orientations\s+qualify/, 'the comparison-table sortbins rule');
   assert.match(lifeSciences, /===CHECKS===/, 'the selfcheck rubric rule');
   assert.match(lifeSciences, /knowledge-check-playbook-life-sciences\.md/, 'the KC playbook pointer');
   // Every book file and the core must point at the shared file, and no
@@ -275,13 +278,13 @@ test('the life-sciences subject playbook holds the shared rules the book files p
   for (const name of ['docs/subjects/biology.md', 'docs/subjects/microbiology.md', 'docs/subjects/anatomy-physiology.md', 'docs/authoring-playbook.md', 'docs/knowledge-check-playbook-life-sciences.md', 'AGENTS.md', 'README.md', 'CLAUDE.md']) {
     assert.match(read(name), /docs\/subjects\/life-sciences\.md|subjects\/life-sciences\.md|`life-sciences\.md`/, `${name} points at the life-sciences playbook`);
   }
-  assert.doesNotMatch(read('docs/subjects/microbiology.md'), /biology\.md` is the life-sciences\s+baseline/, 'microbiology no longer inherits from biology.md');
+  assert.doesNotMatch(read('docs/subjects/microbiology.md'), /biology\.md`\s+is\s+the\s+life-sciences\s+baseline/, 'microbiology no longer inherits from biology.md');
 });
 
 test('the microbiology subject playbook states its lint-backed rules and its answer-key policy', () => {
   const micro = read('docs/subjects/microbiology.md');
   const floor = BOOK_RULES['life-health-sciences/microbiology'].practice;
-  const stated = micro.match(/\*\*(\d+) exercises per objective group and (\d+) per section/);
+  const stated = micro.match(/\*\*(\d+)\s+exercises\s+per\s+objective\s+group\s+and\s+(\d+)\s+per\s+section/);
   assert.ok(stated, 'docs/subjects/microbiology.md must state the practice floor in digits');
   assert.equal(Number(stated[1]), floor.perObjective);
   assert.equal(Number(stated[2]), floor.perSection);
@@ -297,22 +300,22 @@ test('the microbiology subject playbook states its lint-backed rules and its ans
   // scored zero coverage against an empty solution and failed the gate, so
   // the playbook has to name both statuses or an author will read a passing
   // `unkeyed` as a defect.
-  assert.match(micro, /author-written model\s+answer is allowed only under these conditions/);
-  assert.match(micro, /\*\*`unkeyed`\*\* when it transcribes a source/);
-  assert.match(micro, /\*\*`unmatched`\*\* when it has\s+no source counterpart/);
-  assert.match(micro, /No per-module|Microbiology has none/, 'states that there is no per-module glossary');
-  assert.match(micro, /source:media -- --book microbiology/);
+  assert.match(micro, /author-written\s+model\s+answer\s+is\s+allowed\s+only\s+under\s+these\s+conditions/);
+  assert.match(micro, /\*\*`unkeyed`\*\*\s+when\s+it\s+transcribes\s+a\s+source/);
+  assert.match(micro, /\*\*`unmatched`\*\*\s+when\s+it\s+has\s+no\s+source\s+counterpart/);
+  assert.match(micro, /No\s+per-module|Microbiology\s+has\s+none/, 'states that there is no per-module glossary');
+  assert.match(micro, /source:media\s+--\s+--book\s+microbiology/);
   // The KC placement decision (September 15, 2026): a flat book gets one
   // check per block of chapters, five pages, and the weight table is pinned
   // here so the shift arithmetic is never re-derived.
-  assert.match(micro, /## Knowledge checks\n\nDecided September 15, 2026: \*\*one check per block of chapters, five pages\.\*\*/);
+  assert.match(micro, /##\s+Knowledge\s+checks\n\nDecided\s+September\s+15,\s+2026:\s+\*\*one\s+check\s+per\s+block\s+of\s+chapters,\s+five\s+pages\.\*\*/);
   for (const file of ['01-06', '07-12', '13-14', '15-20', '21-26']) {
     assert.match(micro, new RegExp('`knowledge-check-' + file + '\\.md`'), `block file ${file}`);
   }
-  assert.match(micro, /\| 1–6 \| 1–6 \| `knowledge-check-01-06\.md` \| 7 \|/);
-  assert.match(micro, /\| 21–26 \| 25–30 \| `knowledge-check-21-26\.md` \| 31 \|/);
+  assert.match(micro, /\|\s+1–6\s+\|\s+1–6\s+\|\s+`knowledge-check-01-06\.md`\s+\|\s+7\s+\|/);
+  assert.match(micro, /\|\s+21–26\s+\|\s+25–30\s+\|\s+`knowledge-check-21-26\.md`\s+\|\s+31\s+\|/);
   const kcLife = read('docs/knowledge-check-playbook-life-sciences.md');
-  assert.match(kcLife, /A flat book \(no `units` list\) uses blocks instead of units/);
+  assert.match(kcLife, /A\s+flat\s+book\s+\(no\s+`units`\s+list\)\s+uses\s+blocks\s+instead\s+of\s+units/);
 });
 
 test('the anatomy-physiology subject playbook states its lint-backed rules and what it inherits', () => {
@@ -323,33 +326,33 @@ test('the anatomy-physiology subject playbook states its lint-backed rules and w
   // recorded as decided, with the rule stated.
   const ap = read('docs/subjects/anatomy-physiology.md');
   const floor = BOOK_RULES['life-health-sciences/anatomy-physiology'].practice;
-  const stated = ap.match(/\*\*(\d+) exercises per objective group and (\d+) per section/);
+  const stated = ap.match(/\*\*(\d+)\s+exercises\s+per\s+objective\s+group\s+and\s+(\d+)\s+per\s+section/);
   assert.ok(stated, 'docs/subjects/anatomy-physiology.md must state the practice floor in digits');
   assert.equal(Number(stated[1]), floor.perObjective);
   assert.equal(Number(stated[2]), floor.perSection);
   assert.equal(floor.distinctItems, true, 'anatomy-physiology is opted in to distinctItems');
   assert.match(ap, /`distinctItems`/, 'names the BOOK_RULES flag');
-  assert.match(ap, /source:media -- --book anatomy-physiology/);
-  assert.match(ap, /every exercise carries a `<solution>`/i, 'states that the source keys everything');
-  assert.match(ap, /six units/i, 'states the unit structure');
-  assert.match(ap, /Interactive Link Questions/, 'names the item type Biology 2e does not have');
-  assert.doesNotMatch(ap, /\*\*Not decided/, 'no decision is left open');
-  assert.match(ap, /only when the module text also\s+fixes the answer/, 'the Interactive Link Questions rule');
-  assert.match(ap, /`## References` list immediately after `## Summary`/, 'the References rule');
+  assert.match(ap, /source:media\s+--\s+--book\s+anatomy-physiology/);
+  assert.match(ap, /every\s+exercise\s+carries\s+a\s+`<solution>`/i, 'states that the source keys everything');
+  assert.match(ap, /six\s+units/i, 'states the unit structure');
+  assert.match(ap, /Interactive\s+Link\s+Questions/, 'names the item type Biology 2e does not have');
+  assert.doesNotMatch(ap, /\*\*Not\s+decided/, 'no decision is left open');
+  assert.match(ap, /only\s+when\s+the\s+module\s+text\s+also\s+fixes\s+the\s+answer/, 'the Interactive Link Questions rule');
+  assert.match(ap, /`##\s+References`\s+list\s+immediately\s+after\s+`##\s+Summary`/, 'the References rule');
 });
 
 test('the OpenStax workflow doc documents every pinned bundle', () => {
   const openStaxWorkflow = read('docs/source/openstax-source-workflow.md');
-  assert.match(openStaxWorkflow, /report-only connection/);
+  assert.match(openStaxWorkflow, /report-only\s+connection/);
   // The frozen "Initial reconciliation result" was condensed into git history
   // on 2026-08-15; what must survive is the live procedure — the exact
   // commands that regenerate the checked-in audit snapshots.
-  assert.match(openStaxWorkflow, /--output docs\/source\/openstax-existing-math-audit\.md/);
-  assert.match(openStaxWorkflow, /--output docs\/source\/openstax-upstream-history-audit\.md/);
-  assert.match(openStaxWorkflow, /does not by itself\s+prove every local equation/);
-  assert.match(openStaxWorkflow, /Precalculus 2e is pinned and complete/);
-  assert.match(openStaxWorkflow, /moduleScope: "mapped-collections"/);
-  assert.match(openStaxWorkflow, /Every command accepts `--bundle KEY`/);
+  assert.match(openStaxWorkflow, /--output\s+docs\/source\/openstax-existing-math-audit\.md/);
+  assert.match(openStaxWorkflow, /--output\s+docs\/source\/openstax-upstream-history-audit\.md/);
+  assert.match(openStaxWorkflow, /does\s+not\s+by\s+itself\s+prove\s+every\s+local\s+equation/);
+  assert.match(openStaxWorkflow, /Precalculus\s+2e\s+is\s+pinned\s+and\s+complete/);
+  assert.match(openStaxWorkflow, /moduleScope:\s+"mapped-collections"/);
+  assert.match(openStaxWorkflow, /Every\s+command\s+accepts\s+`--bundle\s+KEY`/);
 
   const sourceLock = JSON.parse(read('data/openstax/source-lock.json'));
   assert.equal(sourceLock.schemaVersion, 2);
@@ -364,9 +367,9 @@ test('the OpenStax workflow doc documents every pinned bundle', () => {
 
 test('the architecture doc describes the shipped runtime', () => {
   const architecture = read('docs/architecture.md');
-  assert.match(architecture, /Pagefind 1\.5\.2 builds one global index/);
-  assert.match(architecture, /loaded when a page containing a fill-in exercise initializes/);
-  assert.match(architecture, /`npm test` is the repository-wide checked-source gate/);
+  assert.match(architecture, /Pagefind\s+1\.5\.2\s+builds\s+one\s+global\s+index/);
+  assert.match(architecture, /loaded\s+when\s+a\s+page\s+containing\s+a\s+fill-in\s+exercise\s+initializes/);
+  assert.match(architecture, /`npm\s+test`\s+is\s+the\s+repository-wide\s+checked-source\s+gate/);
 });
 
 test('retired documents stay retired', () => {
@@ -441,7 +444,7 @@ test('the fillin shortcode accepts exactly the exported answerForm tokens', () =
   // the build passes, and `answerForm="…"` silently grades nothing. So parse
   // the template's own slice and assert set equality rather than containment.
   const fillinShortcode = read('layouts/shortcodes/fillin.html');
-  const sliceLine = fillinShortcode.match(/\$formTokens := slice ([^\n]*?)-?\}\}/);
+  const sliceLine = fillinShortcode.match(/\$formTokens\s+:=\s+slice\s+([^\n]*?)-?\}\}/);
   assert.ok(sliceLine, 'layouts/shortcodes/fillin.html must define $formTokens with a literal slice');
   const templateTokens = new Set([...sliceLine[1].matchAll(/"([^"]+)"/g)].map((m) => m[1]));
 
@@ -449,10 +452,10 @@ test('the fillin shortcode accepts exactly the exported answerForm tokens', () =
   // literally: each is matched by its own `findRE` a few lines below.
   const exported = new Set(ANSWER_FORM_TOKENS);
   assert.ok(exported.delete('denominator:<n>'), 'ANSWER_FORM_TOKENS still exports the denominator family');
-  assert.match(fillinShortcode, /findRE `\^denominator:\\d\+\$`/,
+  assert.match(fillinShortcode, /findRE\s+`\^denominator:\\d\+\$`/,
     'the shortcode still matches the denominator:<n> family with findRE');
   assert.ok(exported.delete('solved:<variable>'), 'ANSWER_FORM_TOKENS still exports the solved family');
-  assert.match(fillinShortcode, /findRE `\^solved:\[a-zA-Z\]\$`/,
+  assert.match(fillinShortcode, /findRE\s+`\^solved:\[a-zA-Z\]\$`/,
     'the shortcode still matches the solved:<variable> family with findRE');
 
   assert.deepEqual(
@@ -609,7 +612,7 @@ for (const [name, sites] of VERSION_CLAIMS) {
 test('the CI workflow uses the pinned Node version in every job', () => {
   // `node-version:` appears once per job; the loop above only checks the first.
   const ci = read('.github/workflows/ci.yml');
-  const expected = capture('package.json', /"node": ">=(\d+)"/, 'the supported Node major');
+  const expected = capture('package.json', /"node":\s+">=(\d+)"/, 'the supported Node major');
   const versions = [...ci.matchAll(/node-version: (\d+)/g)].map((m) => m[1]);
   assert.ok(versions.length >= 2, '.github/workflows/ci.yml must set up Node in both the verify and deploy jobs');
   for (const version of versions) assert.equal(version, expected);
@@ -621,9 +624,9 @@ test('the vendored theme records what it is and how it may be changed', () => {
   // file is that marker; the version parity group above asserts the three agree.
   assert.ok(exists('themes/hextra/VENDORED.md'), 'the vendored theme must record its provenance');
   const vendored = read('themes/hextra/VENDORED.md');
-  assert.match(vendored, /\*\*Upstream:\*\* https:\/\/github\.com\/imfing\/hextra/);
-  assert.match(vendored, /\*\*Upstream commit\/tag:\*\*/);
-  assert.match(vendored, /## The vendoring rule/);
+  assert.match(vendored, /\*\*Upstream:\*\*\s+https:\/\/github\.com\/imfing\/hextra/);
+  assert.match(vendored, /\*\*Upstream\s+commit\/tag:\*\*/);
+  assert.match(vendored, /##\s+The\s+vendoring\s+rule/);
   // The 0.12 minor line is verifiable from the vendored tree even though the
   // patch level is not; keep that evidence present rather than re-deriving it.
   assert.ok(
@@ -634,22 +637,20 @@ test('the vendored theme records what it is and how it may be changed', () => {
 
 // ---- count parity ----------------------------------------------------------
 
-test('the mapped-section count in the docs matches the source map', () => {
+test('no document restates a live section count the map already prints', () => {
+  // Counts that move every chapter run were restated in several docs and
+  // pinned here, so each close-out edited prose to keep a test green.
+  // `npm run source:verify` prints every book's count from the committed map;
+  // the docs point there instead. Guard the regrowth: no hand-written doc
+  // states the corpus mapped total or an in-progress book's partial count.
   const sourceMap = JSON.parse(read('data/openstax/source-map.json'));
-  const mapped = sourceMap.sections.length;
-  // ONE prose site, deliberately. The count used to be restated in five docs
-  // and derived-then-checked in each — a tax on every authoring session. The
-  // workflow doc describes the map, so it is the one place the number is
-  // stated; every other doc says "the committed section map".
-  const sites = [
-    ['docs/source/openstax-source-workflow.md', /connects all (\d+) authored/],
-  ];
-  for (const [path, pattern] of sites) {
-    assert.equal(
-      Number(capture(path, pattern, 'the mapped-section count')),
-      mapped,
-      `${path} states a mapped-section count that data/openstax/source-map.json contradicts (${mapped})`,
-    );
+  const inProgress = Object.values(sourceMap.books).filter((book) => book.authoringStatus !== 'complete');
+  for (const path of PROSE_DOCS.filter((doc) => !doc.startsWith('docs/history/'))) {
+    const text = read(path);
+    assert.doesNotMatch(text, new RegExp(`connects all ${sourceMap.sections.length}\\b`), `${path} restates the mapped-section total`);
+    for (const book of inProgress) {
+      assert.doesNotMatch(text, new RegExp(`\\b${book.mappedSections}/${book.upstreamSections} sections`), `${path} restates an in-progress book's partial count`);
+    }
   }
 });
 
@@ -692,7 +693,7 @@ test('the forbidden Playwright install appears only in the AGENTS.md prohibition
     FORBIDDEN,
     'AGENTS.md may name `npx playwright install` only inside §Browsers, where it is forbidden',
   );
-  assert.match(agents.slice(browsersAt), /never run `npx playwright install`/);
+  assert.match(agents.slice(browsersAt), /never\s+run\s+`npx\s+playwright\s+install`/);
   // And the config the prohibition rests on has to still be true.
   assert.match(read('playwright.config.mjs'), /chrome-stdio-shim\.sh/);
 });
@@ -747,6 +748,6 @@ test('Chrome launches only through the stdio shim, and the shim detaches both st
 
 test('the README no longer instructs a browser install', () => {
   const readme = read('README.md');
-  assert.doesNotMatch(readme, /playwright install/);
-  assert.match(readme, /No browser install step is needed/);
+  assert.doesNotMatch(readme, /playwright\s+install/);
+  assert.match(readme, /No\s+browser\s+install\s+step\s+is\s+needed/);
 });

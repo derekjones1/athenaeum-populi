@@ -10,23 +10,18 @@ Each upstream OpenStax publishing repository is one *bundle*, pinned at one
 reviewed commit. Every book belongs to exactly one bundle.
 
 - [`openstax/osbooks-prealgebra-bundle`](https://github.com/openstax/osbooks-prealgebra-bundle)
-  — Prealgebra 2e, Elementary Algebra 2e, and Intermediate Algebra 2e. All
-  three books are used, so the whole `modules/` tree is checked out
-  (`moduleScope: "bundle"`).
+  — Prealgebra 2e, Elementary Algebra 2e, and Intermediate Algebra 2e; the
+  whole `modules/` tree is checked out (`moduleScope: "bundle"`).
 - [`openstax/osbooks-college-algebra-bundle`](https://github.com/openstax/osbooks-college-algebra-bundle)
-  — Precalculus 2e. This bundle also ships College Algebra 2e, Algebra and
-  Trigonometry 2e, and a corequisite title that this project does not use, so
-  the checkout is scoped to the modules the Precalculus collection actually
-  references (`moduleScope: "mapped-collections"`, 87 modules instead of the
-  full tree).
+  — Precalculus 2e. The bundle also ships titles this project does not use,
+  so the checkout is scoped to the modules the Precalculus collection
+  references (`moduleScope: "mapped-collections"`, 87 modules).
 - [`openstax/osbooks-biology-bundle`](https://github.com/openstax/osbooks-biology-bundle)
-  — Biology 2e. This bundle also ships Concepts of Biology and Biology for AP
-  Courses, so it too is `moduleScope: "mapped-collections"`, scoped to the
-  modules the Biology 2e collection actually references.
+  — Biology 2e. Also `moduleScope: "mapped-collections"`, scoped to the
+  modules the Biology 2e collection references.
 - [`openstax/osbooks-microbiology`](https://github.com/openstax/osbooks-microbiology)
-  — Microbiology. A single-book repository (one entry in
-  `META-INF/books.xml`, no `-bundle` suffix upstream), so its bundle key is
-  plain `microbiology` and the whole `modules/` tree is checked out
+  — Microbiology. A single-book repository, so its bundle key is plain
+  `microbiology` and the whole `modules/` tree is checked out
   (`moduleScope: "bundle"`, 159 modules: a preface, 26 chapter
   introductions, 127 numbered sections, and five appendices including the
   book-wide glossary).
@@ -34,31 +29,21 @@ reviewed commit. Every book belongs to exactly one bundle.
   — Anatomy and Physiology 2e. Also a single-book repository, so its bundle
   key is plain `anatomy-physiology` and the whole `modules/` tree is
   checked out (`moduleScope: "bundle"`, 198 modules: a preface, 28 chapter
-  introductions, and 169 numbered sections; no appendices). Pinned
-  September 22, 2026 and `in-progress` — chapter 1 (seven sections)
-  authored the same day, as the pilot.
+  introductions, and 169 numbered sections; no appendices).
 
 Books carry an `authoringStatus`. `complete` means every upstream numbered
 section is authored locally and chapter-by-chapter parity is enforced;
 `scaffolded` and `in-progress` mean the book's provenance is pinned while its
-pages are still being written, so parity is only checked for what exists.
-Biology was `in-progress` while it was written, so `build-map`/`verify-map`
-printed it as, e.g., `45/47 chapters, 201/208 sections mapped` — visibly, not
-silently — until its last chapter landed; it is `complete` now. Microbiology
-was `in-progress` the same way, printing as, e.g., `25/26 chapters, 123/127
-sections mapped`; it is `complete` now, its last chapter (26) authored
-September 14, 2026. Anatomy and Physiology 2e is `in-progress`: its cover
-lists chapters 1–2 under their unit heading, the remaining 26 chapters on
-"Planned contents", and `verify-map` prints
-`2/28 chapters, 12/169 sections mapped`.
+pages are still being written, so parity is only checked for what exists,
+and `build-map`/`verify-map` print the partial count on the book's own line
+(`k/N chapters, k/N sections mapped`), never folded silently into a
+"0 errors" run. Anatomy and Physiology 2e is the one `in-progress` book; every
+other pinned book is `complete`.
 
 Every book's lock entry also carries a `contentPath` (for example
 `content/math/precalculus`, `content/life-health-sciences/biology`): the
 directory under `content/` the tooling walks for that book's chapter landings
-and numbered sections. Books no longer have to share one `content/math` root —
-`contentPath` is what let this reconciliation pipeline carry Biology 2e, the
-first book outside `content/math`, without a special case anywhere else in
-`tools/lib/openstax-source.mjs`.
+and numbered sections.
 
 ## Quick start
 
@@ -94,8 +79,7 @@ runs `npm run source:fetch` on a miss, runs `npm run source:verify`, then
 `npm run ci` with `ATHENAEUM_REQUIRE_SOURCES=1` — under which
 `verify-source-keys` and `solve-check residual` fail instead of skipping
 when a bundle is absent. `npm test` itself stays offline and never fetches:
-running it locally without a fetched checkout still skips those gates
-loudly, the same as before.
+without a fetched checkout it skips those gates loudly.
 
 Every command accepts `--bundle KEY` (repeatable) to work on one bundle at a
 time, for example:
@@ -117,8 +101,7 @@ is empty, in a leading `<section class="learning-objectives">` (Microbiology),
 and it excludes every end-matter section class any pinned bundle uses
 (`summary`, `multiple-choice`, `fill-in-the-blank`, `true-false`, `matching`,
 `short-answer`, `critical-thinking`, `interactive-exercise`, `references`, …)
-from the core-heading comparison. A
-new bundle whose modules use a class not in that list shows up as
+from the core-heading comparison. A new bundle whose modules use a class not in that list shows up as
 `heading-needs-review` on every section; add the class to
 `EXCLUDED_CORE_SECTION_CLASSES` in `tools/lib/openstax-source.mjs` rather
 than adjudicating the sections.
@@ -153,8 +136,8 @@ not a publishing instruction.
 - `data/openstax/source-lock.json` (schema 2) records each bundle's
   official repository, current reviewed commit, module scope, and license,
   plus every book's collection, inferred PDF-era commit, and authoring status.
-- `data/openstax/source-map.json` (schema 2) connects all 621 authored
-  local section paths to stable OpenStax module IDs and module SHA-256
+- `data/openstax/source-map.json` (schema 2) connects every authored
+  local section path to stable OpenStax module IDs and module SHA-256
   fingerprints, attributes each section to its bundle, and records per-book
   chapter and section coverage against the upstream collection.
 - `data/openstax/reconciliation-decisions.json` (schema 2) records known
@@ -195,62 +178,49 @@ npm run source:history -- --output docs/source/openstax-upstream-history-audit.m
 ```
 
 The Try It prompt-match number in the audit is deliberately a heuristic, not
-a one-to-one coverage claim: OpenStax multipart items can become several
-local questions, different source items can resemble one another, and many
-source exercises were intentionally omitted. The point-in-time record of the
-FIRST reconciliation (the three algebra books, at the initial
-`38cae454e644abf9f0a623e876994553881597c9` lock, before any Precalculus
-section was mapped) is in this file's git history.
+a one-to-one coverage claim: multipart items can become several local
+questions, source items resemble one another, and many source exercises were
+intentionally omitted.
 
 ## Microbiology
 
 OpenStax Microbiology was pinned on September 5, 2026 at
 `633850257fbd3ccf6187b9428c55e80b69236382` (the upstream head of that day,
-"errata image changes", July 8, 2026). Its `authoredBaselineCommit` is the
-same commit with confidence `inferred-from-local-pdf-date`: the local
-`sources/microbiology_-_WEB.pdf` was generated on September 2, 2026, after
-that commit, and its copyright page prints no revision number (only
-"original publication year 2016"), so the pin and the PDF are taken to be
-the same edition until a section audit says otherwise. The book is now
-`complete`: `content/life-health-sciences/microbiology/_index.md` lists all
-26 authored chapters under `## Chapters` (no "Planned contents" list
-remains), and `verify-map` prints `26/26 chapters, 127/127 sections
-mapped`. Its subject playbook is `docs/subjects/microbiology.md`;
-the collection is flat (no units), so the map records no `units` key for
-it. The chapter-by-chapter authoring log (September 5–8, 2026; chapter 8 landed September 7 and chapters 9–12 on September 8) moved to
+July 8, 2026). Its `authoredBaselineCommit` is the same commit with
+confidence `inferred-from-local-pdf-date`: the local
+`sources/microbiology_-_WEB.pdf` (generated September 2, 2026) prints no
+revision number, so the pin and the PDF are taken to be the same edition
+until a section audit says otherwise. The book is `complete` — its last
+chapter (26) authored September 14, 2026 — and `verify-map` prints
+`26/26 chapters, 127/127 sections mapped`. Its subject playbook is
+`docs/subjects/microbiology.md`; the collection is flat (no units), so the
+map records no `units` key for it. The authoring log is in
 `docs/history/openstax-source-workflow.md`.
 
 ## Anatomy and Physiology 2e
 
 OpenStax Anatomy and Physiology 2e was pinned on September 22, 2026 at
 `5ae32b3f4bc24ed003e91dc38bf47dba80751044` (the upstream head of that day,
-"errata 29985", September 8, 2026). Unlike Microbiology, the pin is
-*newer* than the local PDF: `sources/anatomy-and-physiology-2e_-_WEB.pdf`
-was generated September 2, 2026, and upstream landed fifteen errata commits
-on September 8 touching 19 modules (16 changed lines — real corrections,
-listed in `docs/subjects/anatomy-physiology.md`). The
-`authoredBaselineCommit` is therefore the last commit before the PDF,
+September 8, 2026). The pin is *newer* than the local PDF
+(`sources/anatomy-and-physiology-2e_-_WEB.pdf`, generated September 2,
+2026): upstream errata on September 8 touched 19 modules (listed in
+`docs/subjects/anatomy-physiology.md`). The `authoredBaselineCommit` is
+therefore the last commit before the PDF,
 `716383a4c6c16037b14d75a156c65145e75e895e` (June 12, 2026), confidence
 `inferred-from-local-pdf-date`, so `npm run source:history -- --bundle
-anatomy-physiology` will show, section by section as sections are mapped,
-exactly what the PDF lacks. The book is
-`in-progress`: `content/life-health-sciences/anatomy-physiology/_index.md`
-lists chapters 1–2 — chapter 1 authored September 22, 2026 as the pilot,
-chapter 2 the same day in the run right after it — under its
-`### Unit 1: Levels of Organization` heading, the remaining 26 chapters on
-"Planned contents", grouped by the source's six units, and `verify-map`
-prints `2/28 chapters, 12/169 sections mapped` with the six-unit `units`
-list recorded in the map. Its subject playbook is
-`docs/subjects/anatomy-physiology.md`. The parser's end-matter list gained
-`interactive-exercise` (Interactive Link Questions) and `references` for
-this book.
+anatomy-physiology` shows, section by section, exactly what the PDF lacks.
+The book is `in-progress`: `content/life-health-sciences/anatomy-physiology/_index.md`
+lists authored chapters under their unit heading (e.g.
+`### Unit 1: Levels of Organization`) and the rest on "Planned contents",
+grouped by the source's six units; `verify-map` prints
+its partial count, with the six-unit `units` list recorded in the map. Its subject playbook is
+`docs/subjects/anatomy-physiology.md`.
 
 ## Precalculus 2e
 
-Precalculus 2e is pinned and complete: every one of its 73 upstream numbered
-sections is authored locally (the last chapter, Introduction to Calculus,
-landed on August 29, 2026), so chapter-by-chapter parity is enforced for it
-exactly as for the three algebra books. Its review target is
+Precalculus 2e is pinned and complete: all 73 upstream numbered sections are
+authored locally *(August 29, 2026)*, so chapter-by-chapter parity is
+enforced. Its review target is
 `789b54099106b071d1d32bfcee454fed72eb4768` in the college-algebra bundle, and
 `content/math/precalculus` holds the book cover page, all twelve chapter
 landings mapped to the upstream chapter structure, and their section pages;
@@ -258,17 +228,15 @@ landings mapped to the upstream chapter structure, and their section pages;
 
 Its authored baseline is `d1bd19c69107ba7f45775670809ae161d63db864`, the last
 upstream commit on or before the local `sources/precalculus-2e_-_WEB.pdf`
-build date of 2026-04-20. That is the same inference rule that reproduces the
-three existing books' baselines exactly, but it remains an inference: a strong
-comparison candidate, not a proven OpenStax build ID.
+build date of 2026-04-20 — the inference rule that reproduces the algebra
+books' baselines exactly, but still a comparison candidate, not a proven
+OpenStax build ID.
 
-**Scaffolded chapters (any future book).** While Precalculus was being
-written, each unwritten chapter landing declared
-`authoring_status: scaffolded` in its frontmatter — the marker that allowed an
-empty `## Sections` overview past the chapter-landing lint and the content
-validator's bullets-match-pages check. No chapter carries it any more, and
-`build-map` refuses one on a `complete` book. The procedure it belonged to
-still applies to any future scaffolded book: add each page with its
+**Scaffolded chapters (any future book).** An unwritten chapter landing
+declares `authoring_status: scaffolded` in its frontmatter — the marker that
+lets an empty `## Sections` overview past the chapter-landing lint and the
+content validator's bullets-match-pages check; `build-map` refuses one on a
+`complete` book. Add each page with its
 `source_section` frontmatter, remove `authoring_status` from that chapter's
 landing once its first section page exists, list the section in the landing's
 `## Sections` overview, then rerun `node tools/source/openstax-source.mjs build-map`
@@ -283,12 +251,8 @@ book joins the audited section matrix.
 
 Biology 2e is pinned and `complete`: the lock, the collection mapping, and
 the vendored-media pipeline are in place, and `content/life-health-sciences/biology`
-carries all 47 chapters (208 sections). `npm run source:verify` and
-`build-map` print `biology: complete — 47/47 chapters, 208/208 sections
-mapped`; while it was being written they printed the partial count on its
-own line (`in-progress — 45/47 chapters, 201/208 sections mapped`), never
-folded silently into a "0 errors" run (a book with nothing authored prints
-`scaffolded — 0/47 chapters, 0/208 sections mapped` the same way). Its pinned commit is
+carries all 47 chapters (208 sections); `npm run source:verify` prints
+`biology: complete — 47/47 chapters, 208/208 sections mapped`. Its pinned commit is
 `63f8b6f8d129dd1582989bb755011e9a6d523471` in the `biology-bundle`.
 
 Biology 2e's `collections/biology-2e.collection.xml` nests one level deeper
@@ -311,13 +275,9 @@ the math books (`summary`, `multiple-choice`, `critical-thinking`,
 `section-exercises`, `writing`), all excluded from the audited core
 instructional text the same way. Its modules also carry no `note.try`
 elements at all — Biology has no math-style Try It prompts — so the audit
-reports that lane as `n/a` rather than a misleading `0/0`. Biology's
-interactive exercises lean on `textin` (short-text answers, graded by
-normalized exact match — the word counterpart of `fillin`, which cannot take
-words), `selfcheck` (an ungraded free-response prompt with a revealable
-model answer), and `sortbins` (categorize-into-bins, graded as the mapping)
-alongside `multiplechoice`; the audit's local-interaction scan recognizes
-all of these.
+reports that lane as `n/a` rather than `0/0`. The audit's local-interaction
+scan recognizes `textin`, `selfcheck`, and `sortbins` alongside
+`multiplechoice`.
 
 Once a chapter's modules are ready to vendor, `npm run source:media` renders
 the raster figures a chapter references into `static/media/<book>/` as WebP at
@@ -337,29 +297,15 @@ machine running it.
 
 Elementary Algebra 2e section 2.7 needs special treatment. Current OpenStax
 changes the Try It inequality's right-hand constant from `−3/5` to `+3/5` but
-retains a solution graphic saying “Contradiction / No solution.” With `+3/5`,
-the variable terms cancel to a true inequality, so the result is an identity.
-The local PDF-era `−3/5` prompt and contradiction answer are internally
-correct. The decision file therefore retains the local version instead of
-blindly applying current upstream.
+retains a solution graphic saying “Contradiction / No solution.” With `+3/5`
+the result is an identity. The local PDF-era `−3/5` prompt and contradiction
+answer are internally correct, so the decision file retains the local
+version. This is why updates stop for review.
 
-This is why updates stop for review.
-
-Smaller confirmed upstream defects found during authoring — wrong-figure alt
-texts, a self-contradicting table summary, a mislabelled function — are
-written up in `docs/openstax-errata.md` (below) rather than enumerated here.
-The local pages follow the PDF and the modules' own mathematics, and where a
-local sentence had to be corrected the page carries a visible source note
-beside it.
-
-A caution learned the same way: `tools/source/cnxml-preview.py` drops the spaces
-between adjacent TeX tokens, so correct source mathematics can look mangled in
-the preview. One reported "defect" — a domain rendering as `0\let\le8.75` —
-was a preview artifact over well-formed CNXML. Confirm any suspected markup
-defect against the raw `index.cnxml` before recording it.
-
-Upstream defects worth reporting to OpenStax are collected in
-`docs/openstax-errata.md` — a gitignored local file holding
+Other confirmed upstream defects are not enumerated here. The local pages
+follow the PDF and the modules' own mathematics; where a local sentence had
+to be corrected the page carries a visible source note beside it. The
+defects go in `docs/openstax-errata.md` — a gitignored local file holding
 submission-ready write-ups (module id, element id, current text, why it is
 wrong, suggested correction) plus the cases already reviewed and dismissed.
 
@@ -368,8 +314,7 @@ Whenever an authoring pass confirms a source defect against the raw CNXML plus
 one independent check, write it up in `docs/openstax-errata.md` before handing
 the work back — do not ask whether to log it, and do not report it only in
 prose. A dismissed suspicion goes in the file's "Reviewed and *not* errata"
-list with its reason, so it is not re-investigated later. Because the file is
-gitignored, this never touches the published site or a commit.
+list with its reason, so it is not re-investigated later.
 
 When section work is split across subagents, each worker is scoped to its own
 content file and cannot write here; the parent collects the defects from every
@@ -387,11 +332,13 @@ python3 tools/source/cnxml-preview.py \
 ```
 
 The preview is a reading aid, not an authority — reconcile the finished page
-against the actual CNXML and the PDF.
+against the actual CNXML and the PDF. It drops the spaces between adjacent
+TeX tokens, so correct source mathematics can look mangled (`0\let\le8.75`);
+confirm any suspected markup defect against the raw `index.cnxml` before
+recording it.
 
 The Precalculus 2e PDF is larger than 100 MB, so agents cannot read it
-directly; `poppler` (`brew install poppler`) provides the workflow instead.
-Locate a section's PDF pages by scanning the running heads, then render the
+directly; use `poppler` (`brew install poppler`). Locate a section's PDF pages by scanning the running heads, then render the
 range as images for visual comparison:
 
 ```sh

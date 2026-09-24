@@ -56,8 +56,7 @@ fixing sentence is a defect.
   The grader folds a regular plural both ways; an accept member for one is
   redundant, not missing. Always try the full name with and without its
   head noun ("system", "cell", "group") and every synonym or abbreviation
-  the module prints — the September 22 sweep found about eight accept gaps
-  per unit on checked pages. Report every wrongly rejected variant and
+  the module prints. Report every wrongly rejected variant and
   every wrong answer accepted. A numeric key (a digit, a number word, a
   measurement) is a defect in itself.
   **Grep the module BODY (not the glossary, not the solutions) for every
@@ -88,17 +87,16 @@ fixing sentence is a defect.
 
 ## 3. Leaks
 
-This was the class the chapter 1–2 checkers passed and an independent
-re-review then found on every page; the lints catch its literal forms, a
-`textin` hint word built on a five-letter-plus key's root, and an MC hint
-naming a subsection whose title is the key — not the fact the correct
-option asserts, a fact the module never states, or other paraphrases.
+Past checkers passed leaks a re-review then found on every page. The
+lints catch literal forms, a `textin` hint word built on a
+five-letter-plus key's root, and an MC hint naming a subsection whose
+title is the key — not the fact the correct option asserts, a fact the
+module never states, or other paraphrases.
 
 - A `textin` answer or accept member in its own question or hint.
 - **Directly above:** for every `textin`, re-read the WHOLE item above it —
   stem, options, AND hint — for the key, its root, singular, or plural
-  (ch1: a stem printing "pressure", "frontal", "pleura" above those keys).
-  Stems were the gap, not just options.
+  (a stem printing "pleura" above the key `pleura`). Stems were the gap.
 - **Re-read every hint, explicitly, one by one,** against its own key and
   options and against the item above. A hint says WHERE to look
   (subsection, figure, table); it is a defect when it prints the key, a
@@ -106,9 +104,7 @@ option asserts, a fact the module never states, or other paraphrases.
   the fact the correct option asserts, a phrase that eliminates the
   distractors, or a fact the module never states (and check that it is
   true). A true/false-shaped hint names the sentence tested, never the
-  verdict. The forms the September 22 Biology/Microbiology sweep found on
-  pages their checkers had passed (about 2,470 hints): the key's Greek or
-  Latin root translated, the key's own definition restated, every
+  verdict. Also defects: the key's Greek or Latin root translated, the key's own definition restated, every
   distractor eliminated by name, a heading named whose title is the key, a
   `selfcheck` hint listing its rubric clauses, a hint steering away from
   an answer the accept list takes. Test each: cover the options and the
@@ -129,16 +125,16 @@ option asserts, a fact the module never states, or other paraphrases.
   whose `longdesc` lists the labels is leaked.
 - **Reworded duplicates:** a Practice item re-asking a body item or another
   Practice item in other words (`distinctItems` is exact-match). Read the
-  page's questions side by side. The commonest form (about 110 on the
-  September 22 sweep): a glossary recall `textin` asking for a term a
-  source Review Question on the page already keys or asks about — reverse
-  recall; the author item is replaced, the source item stays.
+  page's questions side by side. The commonest form: a glossary recall
+  `textin` asking for a term a source Review Question on the page already
+  keys or asks about — reverse recall; the author item is replaced, the
+  source item stays.
 
 ## 4. Source fidelity, against the raw CNXML
 
 - Objectives in source order and wording (from `<md:abstract>`).
 - **Diff the page's prose against the CNXML word by word** (strip both to
-  plain text; a ten-minute script) and list every departure; each must be
+  plain text with a script) and list every departure; each must be
   named in the footer or it is a defect. A departure that changes a CLAIM
   without a Source note is a defect even if right — claim corrections are
   the parent's. **If this module is in the playbook's September-8 table,
@@ -183,12 +179,8 @@ reference).
 **Describe the image before reading the alt.** Write down, in your report,
 what is drawn — panels, labels, colours, arrows and their direction,
 counts, orientation — and only then read the alt, caption, and `longdesc`
-and compare claim by claim. An alt read first anchors you to its claims:
-the Biology and Microbiology completion passes found 1 defect in 8–10
-figures that authors and checkers reading alt-first had passed, and the
-chapter 1–2 re-review found more (1.6's arm arrow is on the woman's LEFT
-arm, not her right; 2.1's PET views miscounted; a pyramid's bands
-miscounted).
+and compare claim by claim — an alt read first anchors you to its claims
+(1.6's arm arrow is on the woman's LEFT arm, not her right).
 
 - **For every `longdesc`, the description is an inventory:** every panel
   and row, every printed label and number, every count, and every arrow or
@@ -196,10 +188,9 @@ miscounted).
   upscale with PIL: `python3 -c "from PIL import Image; im=Image.open('<webp>'); im.crop((x0,y0,x1,y1)).resize(((x1-x0)*3,(y1-y0)*3)).save('<png>')"`).
   Then tick each `longdesc` sentence against it, check that every arrow
   carrying the figure's meaning is described, and that every printed
-  label is in the alt, `longdesc`, caption, or an adjacent table. Image-first
-  reading alone missed a third of Biology and Microbiology `longdesc`s
-  (September 22, 2026: wrong arrow ends, dropped panel rows, miscounts,
-  unlisted labels).
+  label is in the alt, `longdesc`, caption, or an adjacent table
+  *(September 22, 2026)*: image-first reading without an inventory missed
+  wrong arrow ends, dropped panel rows, miscounts, and unlisted labels.
 - Alt describes what is drawn — counts (count bands, views, panels, and
   items in the image), colours, orientation, left/right as the subject's,
   direction words, the labeled structures where the caption does not name them;
@@ -223,9 +214,8 @@ Every `Changes:` claim true of the page (counts of graded items and
 items, one-word corrections, reorderings, reworded figure references; a
 correction is named as a correction with no clause about where it is
 logged); **re-derive every count the footer states rather than reading
-it** — chapters 1–2 shipped six miscounts, the September 22 sweep fixed
-about 200 Biology and Microbiology footers, and a Practice order that
-swaps two source items with no footer line is a defect; a cited floor is 3 per
+it**; a Practice order that swaps two source items with no footer line
+is a defect; a cited floor is 3 per
 objective and 8 per section, never 12 or 15; a footer describes the
 shipped page only — a clause about run machinery ("reported to the
 parent") is a defect; license CC BY-NC-SA 4.0; the ten named senior

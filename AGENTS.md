@@ -1,38 +1,32 @@
 # Athenaeum Populi — Hugo agent notes
 
-The Hugo migration is complete; this repository is the production
-architecture. For content work, follow `docs/authoring-playbook.md` — the
-subject-neutral core — plus the subject playbook under `docs/subjects/` for
-the book you are authoring; for knowledge checks, also follow the
-subject's edition — `docs/knowledge-check-playbook-math.md` or
-`docs/knowledge-check-playbook-life-sciences.md`. See `docs/architecture.md` for the
-current build and deployment design. For the OpenStax math books — the three
-algebra books and Precalculus 2e, all four complete — also follow
-`docs/subjects/math.md` and `docs/source/openstax-source-workflow.md`.
-Biology 2e is pinned and `complete` (all 47 chapters, 208 sections, authored September 3, 2026); its
-subject-specific rules are in `docs/subjects/life-sciences.md` (the shelf's
-baseline) plus `docs/subjects/biology.md` (the book's delta), on top of the
-same source workflow. OpenStax Microbiology is pinned and `complete` (26
-chapters, 127 sections; chapters 1–2 authored September 5, 2026, chapter 1
-as the pilot, chapters 3–4 on September 6, chapters 5–16 through
-September 12, chapters 17–20 on September 13, chapters 21–25 on
-September 14, and chapter 26 — its last — on September 14, 2026); its rules are in
-`docs/subjects/microbiology.md`, which also records how it differs from
+This repository is the production Hugo architecture; `docs/architecture.md`
+has the build and deployment design. For content work, follow
+`docs/authoring-playbook.md` — the subject-neutral core — plus the subject
+playbook under `docs/subjects/` for the book you are authoring; for
+knowledge checks, also the subject's edition —
+`docs/knowledge-check-playbook-math.md` or
+`docs/knowledge-check-playbook-life-sciences.md`. The four OpenStax math
+books — the three algebra books and Precalculus 2e — are `complete`; also
+follow `docs/subjects/math.md` and `docs/source/openstax-source-workflow.md`.
+Biology 2e is `complete` (47 chapters, 208 sections); its rules are
+`docs/subjects/life-sciences.md` (the shelf's baseline) plus
+`docs/subjects/biology.md` (the book's delta), on the same source workflow.
+OpenStax Microbiology is `complete` (26 chapters, 127 sections); its rules
+are in `docs/subjects/microbiology.md`, which records how it differs from
 Biology 2e (unkeyed prose exercises, no per-module glossary, new box and
 item types). A Microbiology chapter is run from
 `docs/briefs/microbiology/run.md` (the parent's recipe) with the agent
-briefs beside it — the briefs are versioned there, not re-derived per
-session. Anatomy and Physiology 2e is pinned and `in-progress` (chapters 1–2,
-twelve sections, authored September 22, 2026, chapter 1 as the pilot; 28
-chapters in six units, 169 sections total); its rules are in
-`docs/subjects/anatomy-physiology.md`, which records the
-scan, its two book-specific rules (Interactive Link Questions, References),
-and that its pin postdates its PDF; a chapter is run from
-`docs/briefs/anatomy-physiology/run.md` with the briefs beside it.
-Dated narrative these playbooks used to carry — retrospectives,
-per-chapter authoring logs, closed-programme records — lives in
-`docs/history/` now, one file per playbook it was cut from; the playbooks
-themselves keep only what is still operative.
+briefs beside it — versioned there, not re-derived per session. Anatomy and
+Physiology 2e is `in-progress` (28 chapters in six units, 169 sections;
+`npm run source:verify` prints how many are authored); its rules are in
+`docs/subjects/anatomy-physiology.md`, which records the scan, its two
+book-specific rules (Interactive Link Questions, References), and that its
+pin postdates its PDF; a chapter is run from
+`docs/briefs/anatomy-physiology/run.md` with the briefs beside it. Dated
+narrative — retrospectives, per-chapter logs, closed programmes — lives in
+`docs/history/`, one file per playbook; the playbooks keep only what is
+operative.
 
 ## Stack and constraints
 
@@ -55,24 +49,15 @@ themselves keep only what is still operative.
 - The lock pins one commit per upstream bundle: `prealgebra-bundle` for the
   three algebra books, `college-algebra-bundle` for Precalculus 2e,
   `biology-bundle` for Biology 2e, `microbiology` for OpenStax
-  Microbiology (a single-book repository, `osbooks-microbiology`, so the
-  bundle key has no `-bundle` suffix), and `anatomy-physiology` for
-  Anatomy and Physiology 2e (likewise single-book; `in-progress` (chapters
-  1–2, twelve sections, authored September 22, 2026, chapter 1 as the
-  pilot), pinned September 22, 2026). The other six books carry
-  `authoringStatus: complete` (the four math books since August 29, 2026;
-  Biology 2e since September 3, 2026; Microbiology since September 14, 2026),
-  so every upstream numbered section
-  has a local page, chapter parity is enforced book-wide, and
-  `build-map`/`verify-map` report them at full coverage. Microbiology
-  was pinned September 5, 2026, its first two chapters authored
-  the same day, chapters 3–4 on September 6, chapters 5–8 on September 7, chapters 9–12 on September 8, chapters 13–14 on September 12, chapters 15–16 on September 12, chapters 17–20 on September 13, chapters 21–25 on September 14, and chapter 26 — its last, completing the book's 26 chapters and 127 sections — on September 14, 2026. Biology 2e's sections live under
-  `content/life-health-sciences/biology` (each lock entry carries a
-  `contentPath`, so a book need not live under `content/math`) and its
-  subject playbooks (`docs/subjects/life-sciences.md` plus
-  `docs/subjects/biology.md`) govern its authoring; all
-  eight of its unit Knowledge Checks are authored (September 4–5, 2026). A book still being
-  written follows the scaffolded-chapter procedure in
+  Microbiology, and `anatomy-physiology` for Anatomy and Physiology 2e (the
+  last two are single-book repositories, e.g. `osbooks-microbiology`, so
+  their keys have no `-bundle` suffix). Each lock entry carries a
+  `contentPath`, so a book need not live under `content/math` (Biology 2e:
+  `content/life-health-sciences/biology`). A book with
+  `authoringStatus: complete` — every book but Anatomy and Physiology 2e —
+  has a local page for every upstream numbered section, chapter parity
+  enforced book-wide, and full coverage in `build-map`/`verify-map`. A book
+  still being written follows the scaffolded-chapter procedure in
   `docs/source/openstax-source-workflow.md`.
 
 ## Commands
@@ -88,36 +73,31 @@ themselves keep only what is still operative.
 - `npm run check:figures` — build every spec-first figure and fail on any
   label printed across other ink (part of `npm test`); legacy `data-spec`
   figures are previewed as their eventual spec-first re-renders, non-gating
-- `npm run figures:status -- <dir>` — the figure-engine conversion queue,
-  derived from the content itself: which pages are already spec-first
-  (skip them) and which still carry legacy `data-spec` figures or
-  hand-written SVG with no spec at all; "convert this
+- `npm run figures:status -- <dir>` — the figure-engine conversion queue:
+  which pages are already spec-first (skip them) and which still carry
+  legacy `data-spec` figures or hand-written SVG with no spec; "convert this
   chapter" starts here (workflow in `docs/subjects/math.md`)
 - `npm run figures:convert -- [--dry-run] [--gallery out.html] <path>` —
-  the mechanical half of that conversion: rewrites legacy `data-spec` divs
-  as `apfigure` shortcodes and diffs each re-render against the SVG it
-  replaces, separating label drift (expected — the engine improved) from
-  geometry drift (a bug, and a non-zero exit)
+  rewrites legacy `data-spec` divs as `apfigure` shortcodes and diffs each
+  re-render against the SVG it replaces: label drift is expected, geometry
+  drift is a bug and a non-zero exit
 - `npm run verify:replay` — replay every printed question span (source and
   MathLive-normalized spellings) through the grader so no exercise is passable
-  by retyping its own prompt; holds a `--min-replayed` FLOOR so the gate
-  cannot go quiet on part of the corpus (parallel, minutes — part of
-  `npm run ci`, not `npm test`)
+  by retyping its own prompt; holds a `--min-replayed` FLOOR (parallel,
+  minutes — part of `npm run ci`, not `npm test`)
 - `npm run verify:source-keys` — compare every `multiplechoice` key, `textin`
   answer, `selfcheck` model answer, and math `fillin` key on a mapped page
-  against the pinned CNXML's own `<solution>` and glossary — the third,
-  agent-free reading of a prose book's keys, and of the math fill-ins
-  `verify:answers` cannot parse (word problems, rounding asks): a fill-in is
-  matched to its source exercise by prose, by the numbers in the stem in
-  order, and by the shape of its math, and every value it keys must be one
-  the source solution prints (rounding to the printed places allowed); a key
-  that departs from the source on purpose must be listed in the tool's
-  `DISCLOSED_DEVIATIONS` with its erratum number; holds an EXACT
-  `--min-confirmed` baseline (part of `npm test`). Needs the pinned bundles
-  checked out (`npm run source:fetch`): a bundle whose checkout is absent —
-  CI, a fresh clone — is skipped by name on stderr with no floor applied,
-  never failed, so the gate has teeth only on a machine that has fetched
-  every bundle; run it locally before pushing
+  against the pinned CNXML's own `<solution>` and glossary — the agent-free
+  third reading of a prose book's keys and of the math fill-ins
+  `verify:answers` cannot parse: a fill-in is matched to its source exercise
+  by prose, by the stem's numbers in order, and by the shape of its math,
+  and every value it keys must be one the source solution prints (rounding
+  to the printed places allowed); a key that departs from the source on
+  purpose must be listed in the tool's `DISCLOSED_DEVIATIONS` with its
+  erratum number; holds an EXACT `--min-confirmed` baseline (part of
+  `npm test`). Needs the pinned bundles (`npm run source:fetch`): an absent
+  bundle is skipped by name on stderr with no floor applied, so run it
+  locally, with every bundle fetched, before pushing
 - `npm run verify:source-coverage` — refuse a life-sciences page that drops
   a source end-of-section exercise: every exercise, lettered part, and
   Matching entry in the pinned CNXML must have a rendered counterpart on its
@@ -126,38 +106,37 @@ themselves keep only what is still operative.
   `LISTED_EXERCISES` (disclosed folds and reworded conversions; an entry
   whose exercise becomes rendered, or whose named item disappears, fails as
   stale). `--min-covered` is the source's own unit total, so covered = total
-  means nothing is missing; it moves only when the source pin moves. Skips
-  absent bundles like `verify:source-keys` (part of `npm test`)
+  means nothing is missing; it moves only when the source pin moves. Skips absent
+  bundles like `verify:source-keys` (part of `npm test`)
 - `npm run verify:fillin-residual` — refuse a math `fillin` that has NO third
   reading: `verify:answers` cannot parse its ask, no source solution confirms
   it (unmatched, figure-only, symbolic, unkeyed, or a knowledge-check page
-  with no module), and its ledger record carries neither a derivation note
-  nor a solve. Clear one by deriving it and recording a note, or by the
-  blind solve below (`solve:emit -- content/math --residual-fillins`). Needs
-  the pinned bundles like `verify:source-keys`; with one absent it prints
-  the count it could not judge and applies no rule (part of `npm test`)
-- `npm run verify:ledger` — assert every exercise in the corpus carries a
-  current answer-verification record (see "The answer ledger" below); holds a
-  `--min-exercises` FLOOR and a `--max-unverifiable` CEILING so it can go
-  vacuous in neither direction, and `--require-solved <prefix>` refuses a
-  `multiplechoice`, `textin`, `sortbins`, or `fillin` under a prose shelf
-  whose record carries no orchestrator solve
+  with no module), and its ledger record carries neither a derivation note nor a solve.
+  Clear one by recording a derivation note, or by the blind solve below
+  (`solve:emit -- content/math --residual-fillins`). With a bundle absent it
+  prints the count it could not judge and applies no rule (part of
+  `npm test`)
+- `npm run verify:ledger` — assert every exercise carries a current
+  answer-verification record ("The answer ledger" below); holds a
+  `--min-exercises` FLOOR and a `--max-unverifiable` CEILING, and
+  `--require-solved <prefix>` refuses a `multiplechoice`, `textin`,
+  `sortbins`, or `fillin` under a prose shelf whose record carries no
+  orchestrator solve
 - `npm run solve:emit -- <root> --out <dir>` / `npm run solve:compare -- <answers.json> content --out <dir>`
-  — the orchestrator's own pass over a prose book's graded questions, and
-  the blind solve of the math fill-ins no mechanical reading reaches: `emit`
+  — the orchestrator's pass over a prose book's graded questions, and the
+  blind solve of the math fill-ins no mechanical reading reaches: `emit`
   writes every multiplechoice, textin, sortbins, and fillin with the key,
   accept list, and hint stripped (`--residual-fillins` keeps only the
   fill-ins `verify:fillin-residual` would refuse; `--pages-out <dir>` also
-  writes each page whole with every key masked, which is what a fresh
-  solver subagent reads instead of the live page, prefixing a page name
-  that collides across books with its chapter folder — Biology 3.x and
-  Microbiology 7.x share basenames); the orchestrator — or,
+  writes each page whole with every key masked — what a fresh solver
+  subagent reads instead of the live page — prefixing a basename that
+  collides across books with its chapter folder); the orchestrator — or,
   for a chapter run, a fresh Fable subagent briefed by
-  `docs/briefs/<book>/solve.md` — answers them in writing; `compare` grades the
-  answers against the live keys (the real text grader for textin), prints
-  every disagreement and "also defensible" flag, refuses to record one until
-  it carries an `adjudicated` note settled against the CNXML, and writes the
-  ledger records (`solved: { by, result }`) for `ledger:merge`
+  `docs/briefs/<book>/solve.md` — answers them in writing; `compare` grades
+  the answers against the live keys (the real text grader for textin),
+  prints every disagreement and "also defensible" flag, refuses to record
+  one until it carries an `adjudicated` note settled against the CNXML, and
+  writes the ledger records (`solved: { by, result }`) for `ledger:merge`
 - `npm run ledger:stats` — verified/total per shortcode kind
 - `npm run ledger:list` — emit exercises as JSON for a verification pass
   (`--shard i/n`, `--kind`, `--unverified`, `--verdict`, `--context N`)
@@ -183,13 +162,8 @@ themselves keep only what is still operative.
 
 Every `source:*` command takes `--bundle KEY` to work on one bundle at a time.
 
-Every authoring rule in the content lint is an error, with no exceptions —
-the lint has no warning level. The missing-`## Practice`-block rule was
-promoted on August 9, 2026, when the final mapped section landed its block,
-and the last warning-level rules (missing hints, multipart-looking questions,
-an empty worked Solution, all-same graph answer positions) followed on
-August 10, 2026, when the corpus carried zero of each; the working rules that
-outlived that programme are in `docs/authoring-playbook.md` §5. If a rule
+Every authoring rule in the content lint is an error — the lint has no
+warning level (working rules: `docs/authoring-playbook.md` §5). If a rule
 fires on sound content, narrow the rule and add a test for the case it got
 wrong — do not exempt the page. When authoring moves any published floor
 (`--min-verified`, `--min-replayed`, `--min-exercises`), end the session with
@@ -197,60 +171,45 @@ wrong — do not exempt the page. When authoring moves any published floor
 
 ## The answer ledger
 
-`verify:answers` re-derives an answer only where it can mechanically recognize
-what the prompt asks; most of what it skips is skipped as "prompt class not
-mechanically checkable", and it never reads `multiplechoice` or `graphplot` at
-all. `verify:source-keys` covers the prose books' `multiplechoice`, `textin`,
-and `selfcheck` items by comparing each to the pinned module's own key — but
-only where the page item transcribes a source exercise; an author-written
-item has no source key to compare against. Neither tool can tell whether the
-SOURCE key is right (Biology unit 2 carried four wrong ones), so a prose
-book's graded items get one more reading: the orchestrator (in a chapter
-run, a fresh Fable subagent reading masked pages — the same model, a
-small context) answers every multiplechoice and textin with the keys hidden
-(`solve:emit` / `solve:compare`), and the parent settles each disagreement
-against the module's text, and
-the ledger record carries the result; `verify:ledger --require-solved`
-makes that reading a condition of green for the life-sciences shelf. A math
-fill-in gets the same third reading from whichever tool can give it:
-`verify:answers` re-derives it from the question where the ask is parseable;
-`verify:source-keys` compares the rest to the printed source solution where
-the exercise transcribes one; what neither reaches (about 1,900 items on
-September 6, 2026 — figure reads, symbolic keys, author variants, knowledge
-checks) was answered blind by Opus solvers with keys hidden, graded by the
-live math grader, every disagreement adjudicated against the CNXML, and
-recorded as `solved` on the ledger record; `verify:fillin-residual` refuses
-any new fill-in that arrives without one of the three. Reading a prompt is
-exactly what a parser cannot do, so that population is covered by a reading
-pass instead, and `data/verification/answer-ledger.json` makes the result
-durable.
+`verify:answers` re-derives an answer only where it can mechanically
+recognize what the prompt asks, and never reads `multiplechoice` or
+`graphplot`. `verify:source-keys` compares the prose books'
+`multiplechoice`, `textin`, and `selfcheck` items to the pinned module's own
+key — but only where the item transcribes a source exercise. Neither tool
+can tell whether the SOURCE key is right, so a prose book's graded items get
+one more reading: the orchestrator (in a chapter run, a fresh Fable subagent
+reading masked pages) answers every multiplechoice and textin with the keys
+hidden (`solve:emit` / `solve:compare`), the parent settles each
+disagreement against the module's text, and the ledger record carries the
+result; `verify:ledger --require-solved` makes that reading a condition of
+green for the life-sciences shelf. A math fill-in gets its third reading
+from `verify:answers` where the ask is parseable, from `verify:source-keys`
+where it transcribes a printed solution, and otherwise from a blind solve
+with keys hidden, graded by the live math grader, every disagreement
+adjudicated against the CNXML, and recorded as `solved`;
+`verify:fillin-residual` refuses any fill-in that arrives without one of the
+three. `data/verification/answer-ledger.json` makes the result durable.
 
 The three readings prove keys; nothing mechanical reads what surrounds
-them. On September 22, 2026 an Opus sweep of every Biology 2e and
-Microbiology page found 0 wrong source keys but about 2,470 hints that
-stated the answer's fact, about 350 leaks from neighbouring items and
-objective headings, about 300 accept gaps, and about 200 false footers —
-all on pages that had passed every gate and a Sonnet checker — and a
-`longdesc` pass by inventory then fixed most of the figures it read. So a
-life-sciences per-section checker runs on Opus, and the hint, leak,
-footer, and figure-inventory rules live in `docs/subjects/life-sciences.md`
-("Text recall", "Each thing once", "Independent checker", "Completion
-audit") and in each book's `docs/briefs/<book>/` kit.
+them. So a life-sciences per-section checker runs on Opus *(September 22,
+2026)*, and the hint, leak, footer, and figure-inventory rules live in
+`docs/subjects/life-sciences.md` ("Text recall", "Each thing once",
+"Independent checker", "Completion audit") and in each book's
+`docs/briefs/<book>/` kit.
 
 An exercise's identity is the sha256 of its own source with whitespace runs
 collapsed, plus — when the stem, hint, or options name a figure, graph, or
 table on the page ("the graph above", "the table below", "according to the
 table", "shown above") — the source of the nearest such block in that
 direction (an `apfigure`, `mediafigure`, inline `<svg>`, Markdown table, or
-image); the hash then covers the dependency's source too. Reflowing a
-shortcode keeps its verdict; changing any semantic character — question,
-answer, option, hint, config, or the figure/table it depends on — drops it
-out of the ledger and fails `npm run verify:ledger` until it is read again.
-**Editing a figure or table an answer was read against strands the record
-exactly as editing the answer does.** A reference that resolves to no block
-on the page is a lint error, not a silent fall-back to a raw-only hash. The
-key is the hash alone, so an exercise duplicated across books is verified
-once and moving one between files costs nothing.
+image). Reflowing a shortcode keeps its verdict; changing any semantic
+character — question, answer, option, hint, config, or the figure/table it
+depends on — drops it out of the ledger and fails `npm run verify:ledger`
+until it is read again. **Editing a figure or table an answer was read
+against strands the record exactly as editing the answer does.** A reference
+that resolves to no block on the page is a lint error. The key is the hash
+alone, so an exercise duplicated across books is verified once and moving
+one between files costs nothing.
 
 **Re-solving after a sweep** *(September 23, 2026)*: an edit re-hashes the
 item, but not every re-hash needs a new solve. A record carries to the new
@@ -258,53 +217,43 @@ hash when the stem, options, and key are unchanged and every previously
 graded form still grades correct (so `accept` ADDITIONS carry, while a
 removal or a new key does not); an item whose `dependency` block — the
 figure or table it names — changed is re-solved, since the solver read
-that block. The September 23 close-out carried 2,620 records this way and
-re-solved 570 graded items; its 89 self-checks were re-read. The rule is
-`tools/verify/ledger-carry.mjs`: take `npm run ledger:carry -- snapshot
-content > $SP/ledger-before.json` BEFORE the sweep edits anything, then
-`npm run ledger:carry -- plan $SP/ledger-before.json content --out
-$SP/carry` writes a merge-ready `results/` directory and a
-`resolve-list.json` of what must be re-solved or re-read. (Its snapshot
-holds each dependency block's hash; `ledger:list` output does not, so it
-cannot stand in for one.)
+that block. The rule is `tools/verify/ledger-carry.mjs`: take
+`npm run ledger:carry -- snapshot content > $SP/ledger-before.json` BEFORE
+the sweep edits anything, then `npm run ledger:carry -- plan
+$SP/ledger-before.json content --out $SP/carry` writes a merge-ready
+`results/` directory and a `resolve-list.json` of what must be re-solved or
+re-read. (Its snapshot holds each dependency block's hash; `ledger:list`
+output does not, so it cannot stand in for one.)
 
 Three verdicts: `ok`, `defect` (fails the gate — a known-wrong answer must not
 ship), and `unverifiable` (read, but undeterminable from the exercise text
 alone — a figure or table read). The `--max-unverifiable` ceiling keeps the
-third from quietly swallowing the corpus, the same way `--min-exercises` keeps
+third from quietly swallowing the corpus, as `--min-exercises` keeps
 extraction from going dark. The ledger is validated on every read — `check`,
 `stats`, `list`, `prune`, `merge`, and `solve-check`'s `compare`/`residual` all
-refuse a malformed one rather than trust it: `verdict` must be `ok`, `defect`,
-or `unverifiable`; a `defect` or `unverifiable` verdict must carry a `note`;
-`solved` must be `{ by, result: agrees|adjudicated, note? }`, with a note
-required when `result` is `adjudicated`; and an unknown field on any record
-fails the read. A malformed run exits 1 naming the offending record(s) rather
-than silently counting a typo as verified.
+refuse a malformed one: `verdict` must be `ok`, `defect`, or `unverifiable`;
+a `defect` or `unverifiable` verdict must carry a `note`; `solved` must be
+`{ by, result: agrees|adjudicated, note? }`, with a note required when
+`result` is `adjudicated`; and an unknown field on any record fails the
+read. A malformed run exits 1 naming the offending record(s).
 
 **Authoring a new exercise therefore means verifying it.** Derive the answer
 independently, never from the key, and do the arithmetic by running it rather
 than in your head; then record the verdict and re-run the gate (the recording
-step is §4 of the authoring playbook). The one wrong
-answer that survived every other gate — a 3x3 system in a knowledge check whose
-declared triple satisfied none of its three printed equations — is what this
-ledger exists to catch.
+step is §4 of the authoring playbook).
 
-**Status: complete as of August 15, 2026 — every unique exercise carries an
-`ok` record, and `verify:ledger` runs inside `npm test`** with the current
-count as its `--min-exercises` floor (package.json owns the number;
-`baseline:update` moves it) and `--max-unverifiable 0`. The ceiling is 0 because the
-residue really did go to zero: the figure-dependent items were re-read with
-`--context 80`, which attaches the page text above the shortcode so a "read the
-graph above" item can see the SVG it names, and the handful still unresolved
-turned out to be exercises whose figure had never been transcribed at all —
-repaired rather than excused. Both `npm run ledger:list -- --context N` and
+**Every unique exercise carries an `ok` record, and `verify:ledger` runs
+inside `npm test`** with the current count as its `--min-exercises` floor
+(package.json owns the number; `baseline:update` moves it) and
+`--max-unverifiable 0`: re-read a figure-dependent item with `--context 80`,
+and repair an exercise whose figure was never transcribed rather than excuse
+it. Both `npm run ledger:list -- --context N` and
 `npm run solve:emit -- --context N` key-mask the *whole page* before cutting
-the N-line window (never just the window itself, which could open inside a
-model answer or a sortbins config), and an item bound to a figure or table
-carries that block as `dependency: { kind, line }` in `list` output — with
-the block's own masked text as `dependency.text` in a solve packet — every
-time, regardless of `--context`: a "the table below" ask reaches a block a
-backward-looking window could never see.
+the N-line window, and an item bound to a figure or table carries that block
+as `dependency: { kind, line }` in `list` output — with the block's own
+masked text as `dependency.text` in a solve packet — regardless of
+`--context`: a "the table below" ask reaches a block a backward-looking
+window could never see.
 
 Commands that drive a re-run:
 
@@ -312,12 +261,10 @@ Commands that drive a re-run:
 - `npm run ledger:list -- --verdict unverifiable --context 80` for the
   figure-dependent follow-up queue;
 - `npm run ledger:rekey` (`node tools/verify/answer-ledger.mjs rekey
-  content`) is the one-off migration for a changed identity scheme: it moved
-  193 records from the old raw-only hash to the context-aware hash above,
-  carrying every verdict forward. It cannot launder a later figure edit —
-  once a record is rekeyed the old raw-only key no longer exists, so editing
-  the figure afterwards strands the record under its new key exactly as any
-  other edit would;
+  content`) is the one-off migration for a changed identity scheme,
+  carrying every verdict forward. It cannot launder a later figure edit:
+  the old key no longer exists, so the edit strands the record under its
+  new key;
 - `npm run ledger:carry -- snapshot|plan` carries records across a
   sweep's hint and accept-addition edits ("Re-solving after a sweep"
   above) and lists what it would not carry.
@@ -326,22 +273,20 @@ A pass writes result files, each shaped
 `{"results": [{"hash": "…", "verdict": "…", "note": "…"?}]}`, and
 `npm run ledger:merge <dir>` folds every `*.json` in the directory into the
 ledger. Result files that disagree about a hash fail the merge with nothing
-written — one of those passes read the exercise wrong, so re-read it rather
-than let file order pick a winner. A merge that changes an already-recorded
-verdict prints the change; that is the legitimate re-read flow.
-`node tools/verify/answer-ledger.mjs prune content` drops records stranded by an
-edit.
+written — re-read the exercise rather than let file order pick a winner. A
+merge that changes an already-recorded verdict prints the change; that is
+the legitimate re-read flow. `node tools/verify/answer-ledger.mjs prune
+content` drops records stranded by an edit.
 
-The pass was calibrated before it was trusted — provably-wrong answers
-seeded into a blind sample of real exercises, every one caught with no false
-alarm on the untouched rest — and that calibration is re-run whenever the
+Re-run the pass's calibration — provably-wrong answers seeded into a blind
+sample, every one caught with no false alarm on the rest — whenever the
 method changes.
 
 ## Reviews and verification protocol
 
 A periodic review is only worth running on what the machines cannot assert.
 `npm run ci` already proves the code builds, the content lints, the answers
-cross-check, and the pages pass axe. A review that re-reports any of that is
+cross-check, and the pages pass axe; a review that re-reports any of that is
 noise. Look instead for:
 
 - **Drifted duplication.** Two copies of the same idea that are consistent by
@@ -367,42 +312,36 @@ Three rules for a finding:
    require a run, not a search.** Most wrong review findings are absence claims
    made from grep.
 3. **When you add a gate, sabotage it once to prove it fires**, then revert the
-   sabotage. A gate that has never been seen to fail has not been tested; it
-   has been written.
+   sabotage. A gate that has never been seen to fail has not been tested.
 
 ## Browsers (never run `npx playwright install`)
 
 Use the browser that is already installed. `npx playwright install` hangs here,
 and running it undoes the local fix. The cached
-`~/Library/Caches/ms-playwright/chromium-1208` is incomplete — its launcher
-stub is present but the `Google Chrome for Testing Framework.framework` bundle
-it `dlopen`s is missing, so that binary aborts on launch and Playwright then
-asks for a `chrome-headless-shell` build that is also absent. That prompt is
-the trap; do not take it.
+`~/Library/Caches/ms-playwright/chromium-1208` is incomplete, so that binary
+aborts on launch and Playwright then asks for a `chrome-headless-shell`
+build that is also absent. That prompt is the trap; do not take it.
 
 Both entry points drive the installed Chrome through
-`tools/build/chrome-stdio-shim.sh`, so no environment variable is needed and
-`npm run ci` passes clean out of the box:
+`tools/build/chrome-stdio-shim.sh`, so no environment variable is needed:
 
 - `tools/build/screenshot-page.mjs` launches with `executablePath` pointing at the
   shim.
 - `tools/build/screenshot-components.mjs </route/> [outDir] [--only kind,kind]`
   crops every fill-in, text-in, multiple-choice, self-check, sort-bins,
   graph-plot, spec-first figure, mediafigure, and callout on a built page in
-  both themes,
-  each driven into its reviewable state first (a wrong answer graded, a model
-  answer revealed, an extended description opened); the component-level
-  review the first Biology chapters did by hand, one PNG per component per
-  theme.
+  both themes, each driven into its reviewable state first (a wrong answer
+  graded, a model answer revealed, an extended description opened), one PNG
+  per component per theme.
 - `playwright.config.mjs` sets the same `executablePath` in its shared
   `launchOptions`.
 
 The shim exists because launching Google Chrome directly hangs the run
-*after* every test passes: Chrome spawns crashpad and (on macOS) GoogleUpdater
-daemons that inherit its stdout/stderr and can outlive it, and Playwright only
+*after* every test passes: Chrome's crashpad and (on macOS) GoogleUpdater
+daemons inherit its stdout/stderr and can outlive it, and Playwright only
 finishes closing a browser once both streams hit EOF. The shim points both
-streams at `/dev/null` before exec, so no daemon can hold Playwright's pipes;
-the CDP transport rides fds 3/4 and is unaffected.
+streams at `/dev/null` before exec; the CDP transport rides fds 3/4 and is
+unaffected.
 
 `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` stays available as an override when a
 specific binary is required — the shim execs it first when set.

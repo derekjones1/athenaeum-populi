@@ -80,10 +80,10 @@ exemplar, or the checker/claim-pass briefs.
 
 ## 3. What you produce — one file, in this order
 
-The page skeleton, the callout forms, the figure rules, the notation, and
-the footer are the playbooks' (life-sciences "The section page, in order";
-microbiology §3–§5 and "Media"). What follows is only what those do not
-print or what authors most often get wrong.
+The page skeleton, callout forms, figure rules, notation, and footer are
+the playbooks' (life-sciences "The section page, in order"; microbiology
+§3–§5 and "Media"). Below is only what those do not print or what authors
+most often get wrong.
 
 1. Frontmatter: `title`, `description` (`>-` folded, ending "— adapted from
    OpenStax Microbiology, Section N.M."), `source_section: "N.M"`,
@@ -113,9 +113,8 @@ print or what authors most often get wrong.
    does not name — draft it first, then the alt, and draft it from an
    inventory written in your ledger before any words (panels, every
    printed label, every count, every arrow as `source → target` with both
-   ends zoomed in a PIL crop; a third of the sampled shipped `longdesc`s
-   failed that check); `kind` explicit on every
-   figure, judged from the picture; `eager="true"` on the first only.
+   ends zoomed in a PIL crop); `kind` explicit on every figure, judged
+   from the picture; `eager="true"` on the first only.
 7. Exercise images (`_img` stems, a bare `<media>` inside an exercise):
    `mediafigure` then its item, inside the Practice group of the objective
    it serves; you write the caption; alt, caption, and `longdesc` must not
@@ -131,17 +130,16 @@ print or what authors most often get wrong.
    filler item and its sentence, every unused source item and why, every
    one-word correction, every reordered item, the Clinical Focus link
    replacements, author-written captions — every number copied from your
-   ledger's tally after the last `verify-section` (the September 22 sweep
-   corrected about 85 of this book's footers). The parent logs errata at
-   close-out; the footer names a correction as a correction and says nothing
-   about where it is logged — neither "logged as an erratum" nor "reported
-   to the parent".
+   ledger's tally after the last `verify-section`. The parent logs errata
+   at close-out; the footer names a correction as a correction and says
+   nothing about where it is logged — neither "logged as an erratum" nor
+   "reported to the parent".
 
 ## 4. The exercises — what bites
 
 The keyed/unkeyed table, the four honest graded forms, the model-answer
 conditions, the Practice floor and fill order, and the accept-list rule are
-in the playbooks. Apply them literally; these are the recurring failures:
+in the playbooks. Apply them literally; the recurring failures:
 
 - **The one-sentence test is literal.** A conversion that needs two
   sentences, a paragraph boundary, an inference, or a word the module never
@@ -167,8 +165,7 @@ in the playbooks. Apply them literally; these are the recurring failures:
   ASCII, a hyphen between letters) — a member that normalizes to the answer
   is rejected. Run every member, and every natural variant a correct
   learner types (the full name with and without its head noun, the
-  module's synonyms and abbreviations), through the real grader — the
-  September 22 sweep added about 170 missing accepts to this book:
+  module's synonyms and abbreviations), through the real grader:
   `node -e 'import("./assets/js/lib/text/check-text.mjs").then(m=>console.log(m.checkText("<variant>","<answer>",{accept:"<accept>"})))'`
 - **Keys built from the answer's own vocabulary:** a why-question keyed to
   one abstract noun is the weakest form — prefer the module's phrase, and
@@ -184,9 +181,9 @@ in the playbooks. Apply them literally; these are the recurring failures:
 - **Sequence-derivation questions** are fully worked selfchecks (every
   sequence with its 5′/3′ ends, every amino acid, the mutation type); the
   checker re-derives them base by base.
-- Every regular-section item needs a concise `hint` that says where to
-  look (below); a True/False hint names the sentence tested, never the
-  verdict, and the stem carries no "True or false:" prefix.
+- Every regular-section item needs a concise `hint` (below); a True/False
+  hint names the sentence tested, never the verdict, and the stem carries
+  no "True or false:" prefix.
 - **A hint says WHERE to look** — a subsection, figure, table, or paragraph
   topic — never the key, a root or derivative of it, the fact the correct
   option asserts, or a fact the module never states; and nothing in the
@@ -194,9 +191,8 @@ in the playbooks. Apply them literally; these are the recurring failures:
   prints its key. `tools/lint/lints-leaks.mjs` catches the mechanical part
   (the literal key, a printed root, an MC hint naming the keyed option); a
   hint that states the fact instead of pointing at it is a checker read
-  against its own key. The September 22, 2026 sweep rewrote about 1,190
-  hints on this book's 127 shipped pages — about 9 per page — in these forms:
-  the key's Greek or Latin root translated ("This process's name means
+  against its own key. The leaking forms: the key's Greek or Latin root
+  translated ("This process's name means
   'cell drinking'"), the key's definition restated, every distractor
   eliminated by name, a heading named whose title is the key, a
   `selfcheck` hint listing its rubric clauses, a hint steering away from

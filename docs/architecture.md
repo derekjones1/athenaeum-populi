@@ -1,7 +1,7 @@
 # Current architecture
 
 Athenaeum Populi is a statically generated Hugo site. This document records
-the active production architecture after the completed framework migration.
+the production architecture.
 
 ## Rendering and content
 
@@ -29,7 +29,7 @@ the active production architecture after the completed framework migration.
   than the article scrolls horizontally rather than painting over the rail,
   and `assets/js/scrollable-math.js` makes exactly the blocks that overflow
   keyboard-focusable (a scrollable region a keyboard user cannot reach fails
-  WCAG 2.1.1; the graded-state axe scans caught three on one page).
+  WCAG 2.1.1).
 - Static diagrams are accessible inline SVG. New figures are authored as
   graph-core spec JSON in the `apfigure` shortcode and rendered in the
   browser by the `<ap-figure>` component (measured text metrics plus a
@@ -55,12 +55,11 @@ advertising, or learner-data store.
 
 ## OpenStax source provenance
 
-The five completed books — Prealgebra 2e, Elementary Algebra 2e,
-Intermediate Algebra 2e, Precalculus 2e, and Biology 2e — remain reviewed
-Markdown, not generated output. A committed lock and section map under
-`data/openstax/` (`source-lock.json`, `source-map.json`) connect each page
-to a stable CNXML module in the official OpenStax source repository. The upstream checkout is a
-sparse, ignored cache under `sources/openstax/`.
+Every book is reviewed Markdown, not generated output. A committed lock and
+section map under `data/openstax/` (`source-lock.json`, `source-map.json`)
+connect each page to a stable CNXML module in the official OpenStax source
+repository. The upstream checkout is a sparse, ignored cache under
+`sources/openstax/`.
 
 `npm run source:verify` validates the committed mapping without network
 access. After `npm run source:fetch`, `npm run source:check` performs a
@@ -70,12 +69,9 @@ PDF-era content from later upstream changes. None of these commands writes to
 verification gates. See `docs/source/openstax-source-workflow.md`.
 
 The lock is bundle-keyed and each book carries its own `contentPath`, so the
-pipeline is not specific to `content/math`: Biology 2e is pinned at
-`biology-bundle` with `contentPath: "content/life-health-sciences/biology"`
-and `authoringStatus: "complete"` (all 47 chapters authored) — its collection
-(which nests unit, chapter, and module) was mapped chapter by chapter as
-authoring proceeded, and
-`build-map`/`verify-map` state the book's local/upstream counts on every
+pipeline is not specific to `content/math` (Biology 2e:
+`contentPath: "content/life-health-sciences/biology"`), and
+`build-map`/`verify-map` state each book's local/upstream counts on every
 run rather than omitting a book that has few or no pages yet. Each book's
 summary in the map also carries its `contentPath` and, for a collection
 that nests units, a `units` list (index, title, chapter numbers) that
@@ -88,8 +84,7 @@ That sidebar renders one list for every width. Upstream Hextra emits two —
 a phone-drawer list (the top-level menu entries, with the current book's
 tree expanded beneath its shelf) hidden from md up, and a desktop list (the
 book tree alone) hidden below md — so every page shipped its book tree
-twice, ~1.26 KiB per link per copy, and that doubled tree drove both
-`audit-build` budgets. The override keeps
+twice, which drove both `audit-build` budgets. The override keeps
 only the drawer list: the rows only the drawer shows (the other shelves,
 Home, About, the in-page heading list under the active item) carry
 `hx:md:hidden`, and the two rows that wrap the tree — the shelf entry and
@@ -136,9 +131,8 @@ writes only a live region, functional without JavaScript; and `<sort-bins>`
 partial credit and no drag — click-to-pick-up, "Place here" per bin. All
 three follow the fill-in's accessibility contract (named control before it is interactive, `role=status`
 feedback, focus retained on success, honest no-JS state) and are covered by
-the browser suite, whose axe scans also caught that Hextra's blue info
-callout fails AA for muted figure captions and its own links — fixed in
-`assets/css/custom.css` for that ground only.
+the browser suite. Hextra's blue info callout fails AA for muted figure
+captions and its own links; `assets/css/custom.css` fixes that ground only.
 
 Headings may carry inline `$...$` math; Hugo's passthrough renders it in
 the article, but the "On this page" rail (`toc.html`) and the sidebar's
@@ -215,7 +209,7 @@ keeps only the two facts that are architectural:
 
 - The one gate that reads the pinned CNXML itself, `verify:source-keys`,
   skips a bundle whose gitignored checkout is absent and says so. `npm test`
-  itself never fetches upstream and stays offline; CI now fetches the pinned
+  itself never fetches upstream and stays offline; CI fetches the pinned
   checkouts as a step before the pipeline runs (cached on the lock file's
   hash) and sets `ATHENAEUM_REQUIRE_SOURCES=1`, so there this gate and
   `verify:fillin-residual` run strict instead of skipping. Without a fetched
