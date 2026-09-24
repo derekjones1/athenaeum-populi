@@ -2783,7 +2783,7 @@ export function lintHugo(src, filename = '', options = {}) {
   // reported or which erratum records it: "reported as a source defect",
   // "also reported", "reported below", "(erratum 414)", "errata 185–188"
   // were swept from 200+ pages; the footer states the correction and why.
-  const FOOTER_MACHINERY = /\blogged\b|\breported\s+(?:as|below|here|for)\b|\b(?:also|and|each|both|three|four)\s+reported\b|\berrat(?:um|a)\s+\d|\(errat(?:um|a)\)|\bbook's errata\b|\breported\s+(?:to|for)\s+the\s+(?:parent|errata)\b|\bfor\s+the\s+parent\b|\bflagged\b.{0,25}\bparent\b|\berrata log\b|\borchestrator\b|\bmedia (?:fetch|pull)\b|\bparent notes\b|\brun facts\b|\bPart C\b/gi;
+  const FOOTER_MACHINERY = /\blogged\b|\breported\s+(?:as|below|here|for)\b|\b(?:also|and|each|both|three|four)\s+reported\b|\berrat(?:um|a)\s+\d|\(errat(?:um|a)\)|\bbook's errata\b|\bthe erratum\b|\breported\s+(?:to|for)\s+the\s+(?:parent|errata)\b|\bfor\s+the\s+parent\b|\bflagged\b.{0,25}\bparent\b|\berrata log\b|\borchestrator\b|\bmedia (?:fetch|pull)\b|\bparent notes\b|\brun facts\b|\bPart C\b/gi;
   // Footers and inline Source notes are the two reader-facing places a
   // correction is disclosed; both must name the correction, not the log.
   for (const m of mediaSrc.matchAll(/<small>[\s\S]*?<\/small>|\*\(Source note:[\s\S]*?\)\*/g)) {

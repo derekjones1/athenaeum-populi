@@ -3207,6 +3207,7 @@ test('an attribution footer naming run machinery (where a correction was logged 
     'Changes: one claim corrected with a Source note (erratum 414).',
     'Changes: the caption kept as printed (errata 185–188).',
     'Changes: a source defect recorded in this book\'s errata.',
+    'Changes: the table is kept as printed; see the erratum named in the footer.',
   ];
   for (const small of cases) {
     const errors = lintHugo(wrap(small), 'content/x/y/01-a/01-b.md').errors

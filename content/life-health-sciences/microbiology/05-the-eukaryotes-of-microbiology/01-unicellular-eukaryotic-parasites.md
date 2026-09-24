@@ -121,7 +121,7 @@ This tree shows a proposed classification of the domain Eukarya based on evoluti
 | Opisthokonta | Animals | Multicellular heterotrophs; no cell walls | Trematoda | Schistosomiasis |
 | Opisthokonta | Animals | Multicellular heterotrophs; no cell walls | Cestoda | Tapeworm infections |
 
-*(Source note: the table's Parabasalids row lists both "no mitochondria" and "kinetoplastids", and the Excavata paragraph below says parabasalids have "modified mitochondria (kinetoplastids)"; this section's own text defines kinetoplastids as modified mitochondria, so the row contradicts itself. The book's Section 3.4 settles it: *Trichomonas vaginalis*, the parabasalid this table names, "lacks conventional mitochondria" and "possesses hydrogenosomes" instead, while the kinetoplast is the branched mitochondrion of the trypanosomes. The table and the paragraph are kept as the source prints them; see the erratum named in the footer.)*
+*(Source note: the table's Parabasalids row lists both "no mitochondria" and "kinetoplastids", and the Excavata paragraph below says parabasalids have "modified mitochondria (kinetoplastids)"; this section's own text defines kinetoplastids as modified mitochondria, so the row contradicts itself. The book's Section 3.4 settles it: *Trichomonas vaginalis*, the parabasalid this table names, "lacks conventional mitochondria" and "possesses hydrogenosomes" instead, while the kinetoplast is the branched mitochondrion of the trypanosomes. The table and the paragraph are kept as the source prints them.)*
 
 **Check Your Understanding**
 
