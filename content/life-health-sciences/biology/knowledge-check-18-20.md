@@ -36,12 +36,12 @@ the Galápagos Islands
   answer="neutral"
 >}}
 
-{{< selfcheck question="How does the geographic distribution of the plant family Proteaceae across Australia, southern Africa, and South America support evolution's account of the supercontinent Gondwana breaking apart?" >}}
+{{< selfcheck question="Members of the plant family Proteaceae live in Australia, southern Africa, and South America. What does this distribution indicate about their ancestors, and what broader pattern in the geographic distribution of groups does it fit?" >}}
 Broad groups that evolved before the supercontinent Pangaea broke up are distributed worldwide, while groups that evolved since the breakup appear uniquely in regions of the planet. The presence of members of the plant family Proteaceae in Australia, southern Africa, and South America indicates that their ancestors were predominant on the supercontinent Gondwana prior to its breaking up.
 ===CHECKS===
 broad groups that evolved before the supercontinent Pangaea broke up are distributed worldwide
 groups that evolved since the breakup appear uniquely in regions of the planet
-the presence of members of the plant family Proteaceae in Australia, southern Africa, and South America indicates that their ancestors were predominant on the supercontinent Gondwana
+their ancestors were predominant on the supercontinent Gondwana prior to its breaking up
 {{< /selfcheck >}}
 
 ### 18.2 Formation of New Species
@@ -58,27 +58,27 @@ a body cell
 {{< textin
   question="Polyploidy formed by the reproduction of individuals from two different species, producing a viable offspring, is called a(n) ________."
   answer="allopolyploid"
-  accept="allopolyploidy"
+  accept="allopolyploidy|alloploidy|allo-polyploid"
 >}}
 
 {{< selfcheck question="How does habitat isolation, illustrated by a cricket population divided by a flood, differ from behavioral isolation, illustrated by fireflies, as forms of reproductive isolation?" >}}
-Habitat isolation occurs when populations of a species move or are moved to a new habitat and take up residence in a place that no longer overlaps with the same species' other populations, as when a cricket population that was divided after a flood could no longer interact with each other. Behavioral isolation occurs when the presence or absence of a specific behavior prevents reproduction, as when a male firefly's light pattern is not recognized by a female of a different species, so she would not mate with the male.
+Habitat isolation occurs when populations of a species move or are moved to a new habitat and take up residence in a place that no longer overlaps with the same species' other populations, as when a cricket population that was divided after a flood could no longer interact with each other. Behavioral isolation occurs when the presence or absence of a specific behavior prevents reproduction: male fireflies use specific light patterns to attract females, and if a male of one species tried to attract the female of another, she would not recognize the light pattern and would not mate with the male.
 ===CHECKS===
 habitat isolation occurs when populations of a species move or are moved to a new habitat and take up residence in a place that no longer overlaps with the same species' other populations
 a cricket population that was divided after a flood could no longer interact with each other
 behavioral isolation occurs when the presence or absence of a specific behavior prevents reproduction
-a female would not recognize the light pattern and would not mate with the male
+she would not recognize the light pattern and would not mate with the male
 {{< /selfcheck >}}
 
 ### 18.3 Reconnection and Speciation Rates
 
 {{< multiplechoice
-  question="Immediately after a new species arises through speciation, what describes the stretch of time during which the closely related species continue to interact?"
-  answer="transition period"
+  question="When two closely related species reproduce and form hybrids, how fit do the hybrids usually tend to be compared with the parents?"
+  answer="less fit than the parents"
 >}}
-hybrid zone
-fusion
-transition period
+more fit than the parents
+about as fit as the parents
+less fit than the parents
 {{< /multiplechoice >}}
 
 {{< textin
@@ -86,7 +86,7 @@ transition period
   answer="stability"
 >}}
 
-{{< selfcheck question="A sudden drop in water level separates a species of snails into one large population and one tiny population. Why does new genetic variation spread quickly through the tiny population afterward?" >}}
+{{< selfcheck question="A sudden drop in water level separates a species of snails into one large population and one tiny population. Why can the tiny population change quickly afterward?" >}}
 The tiny population faces new environmental conditions, and because the population quickly became so small, any variation that surfaces and that aids in surviving the new conditions becomes the predominant form.
 ===CHECKS===
 the tiny population faces new environmental conditions
@@ -111,6 +111,7 @@ genetic structure
 {{< textin
   question="The sum of all the alleles that the individuals in a population carry is called the population's ________."
   answer="gene pool"
+  accept="genepool"
 >}}
 
 {{< selfcheck question="If populations in nature are always changing, what use is the Hardy-Weinberg principle to scientists?" >}}
@@ -124,13 +125,13 @@ to which they can compare evolving populations and thereby infer what evolutiona
 ### 19.2 Population Genetics
 
 {{< multiplechoice
-  question="The diversity of alleles and genotypes within a population is called:"
-  answer="genetic variability"
+  question="The distribution of phenotypes among a population's individuals, influenced by factors that include the population's genetic structure and the environment, is called:"
+  answer="population variation"
 >}}
 heritability
 genetic drift
-population variation
 genetic variability
+population variation
 {{< /multiplechoice >}}
 
 {{< textin
@@ -190,7 +191,7 @@ phylum
 {{< textin
   question="The point where a single lineage on a phylogenetic tree splits into two distinct new lineages is called a ________."
   answer="branch point"
-  accept="branchpoint"
+  accept="branchpoint|node"
 >}}
 
 {{< selfcheck question="Why might two closely related lineages end up looking more different from each other than either does from a more distantly related lineage?" >}}
@@ -221,12 +222,12 @@ causing two similar codes to appear unrelated
 {{< /selfcheck >}}
 
 {{< multiplechoice
-  question="In a DNA comparison, why can two distantly related organisms sometimes appear closely related?"
-  answer="Two segments of their DNA code randomly share a high percentage of bases in the same locations."
+  question="The more complex a feature that two organisms share, the more likely the overlap is due to which of the following?"
+  answer="a common evolutionary past"
 >}}
-A mutation caused a shift in the genetic code of one of them.
-Two segments of their DNA code randomly share a high percentage of bases in the same locations.
-They are derived by similar environmental constraints.
+similar environmental conditions
+a common evolutionary past
+a chance match of DNA bases in the same locations
 {{< /multiplechoice >}}
 
 ### 20.3 Perspectives on the Phylogenetic Tree
@@ -251,6 +252,7 @@ a clear example of gene transfer
 {{< textin
   question="Using DNA analysis and a new mathematical algorithm, abbreviated CR, James Lake's laboratory proposed that eukaryotic cells developed from an endosymbiotic gene fusion between an archaeal and a bacterial species. The algorithm is called ________."
   answer="conditioned reconstruction"
+  accept="conditioned reconstruction algorithm"
 >}}
 
 ---

@@ -33,6 +33,7 @@ wild lupine
 {{< textin
   question="A form of long-term relationship that has coevolved between two species, from which each species benefits, is called ________."
   answer="mutualism"
+  accept="mutualistic relationship"
 >}}
 
 {{< selfcheck question="What kinds of boundaries, natural or artificial, might define the area a population occupies? Give an example of each." >}}
@@ -96,8 +97,9 @@ the net primary productivity of temperate forests is less than that of tropical 
 ### 44.4 Aquatic Biomes
 
 {{< textin
-  question="A type of free-floating marine seaweed found in the neritic zone is called ________."
-  answer="Sargassum"
+  question="Plants that can tolerate salty conditions, as many estuarine plant species do, are called ________."
+  answer="halophytes"
+  accept="halophytic plants"
 >}}
 
 {{< multiplechoice
@@ -110,23 +112,23 @@ dead zone
 {{< /multiplechoice >}}
 
 {{< selfcheck question="How do the abiotic conditions of a river or stream change between its source and where it flows into a lake or ocean, and how does this affect the way downstream predators find food?" >}}
-Near its source, a river or stream's channel is narrow and its current is fast, so silt does not accumulate and photosynthesis comes mostly from algae growing on rocks. As the stream flows farther from its source, the channel widens, the current slows, and more sedimentation occurs, so the water is warmer and less clear. Because the water is murkier downstream, predator vertebrates such as waterfowl, frogs, and fishes are more likely to use taste or chemical cues rather than vision to find prey.
+Near its source, a river or stream's channel is narrower than at any other place along its length, so the current is often faster there; the fast-moving water results in minimal silt accumulation at the bottom, so the water is usually clear, and photosynthesis is mostly attributed to algae growing on rocks. As the river or stream flows away from the source, the channel gradually widens and the current slows; the slow-moving water has more sedimentation, so it is not as clear as near the source, and it is also warmer. The predator vertebrates there, such as waterfowl, frogs, and fishes, must find food in these slow-moving, sometimes murky waters, so they may not be able to use vision as their primary sense and are more likely to use taste or chemical cues to find prey.
 ===CHECKS===
-near its source a river or stream's channel is narrow and its current is fast
-as the stream flows farther from its source the channel widens and the current slows
-downstream predator vertebrates are more likely to use taste or chemical cues rather than vision to find prey
+near its source the channel is narrower than at any other place, so the current is often faster there
+as the river or stream flows away from the source, the channel gradually widens and the current slows
+the slow-moving water has more sedimentation, so it is not as clear as near the source
+predator vertebrates such as waterfowl, frogs, and fishes are more likely to use taste or chemical cues to find prey
 {{< /selfcheck >}}
 
 ### 44.5 Climate and the Effects of Global Climate Change
 
 {{< multiplechoice
-  question="Approximately what percentage of marine species became extinct during the Permian extinction event, about 251 million years ago?"
-  answer="84 percent"
+  question="The conditions of the atmosphere during a short period of time are referred to as ________."
+  answer="weather"
 >}}
-50 percent
-95 percent
-70 percent
-84 percent
+weather
+climate
+global climate change
 {{< /multiplechoice >}}
 
 {{< textin
@@ -135,10 +137,10 @@ downstream predator vertebrates are more likely to use taste or chemical cues ra
 >}}
 
 {{< selfcheck question="Describe the two named temperature anomalies that occurred during the last 2,000 years, including when each occurred and one documented effect of each." >}}
-The Medieval Climate Anomaly occurred between 900 and 1300 AD, when slightly warmer weather conditions freed seas of ice and allowed the Vikings to colonize Greenland. The Little Ice Age was a cold period that occurred between 1550 AD and 1850 AD, during which a slight cooling of a little less than 1 °C produced exceptionally harsh winters with much snow and frost.
+The Medieval Climate Anomaly occurred between 900 and 1300 AD, when slightly warmer conditions freed seas of ice and allowed the Vikings to colonize Greenland. The Little Ice Age was a cold period that occurred between 1550 AD and 1850 AD, during which a slight cooling of a little less than 1 °C produced exceptionally harsh winters with much snow and frost.
 ===CHECKS===
 the Medieval Climate Anomaly occurred between 900 and 1300 AD
-slightly warmer weather conditions freed seas of ice and allowed the Vikings to colonize Greenland
+slightly warmer conditions freed seas of ice and allowed the Vikings to colonize Greenland
 the Little Ice Age was a cold period that occurred between 1550 AD and 1850 AD
 a slight cooling of a little less than 1 °C produced exceptionally harsh winters with much snow and frost
 {{< /selfcheck >}}
@@ -152,7 +154,7 @@ a slight cooling of a little less than 1 °C produced exceptionally harsh winter
   answer="some animals may prefer to be retrapped, especially if a food reward is offered"
 >}}
 some animals may prefer to be retrapped, especially if a food reward is offered
-some animals may learn to avoid capture in the second round, thus inflating population estimates
+some animals may learn to avoid capture in the second round
 some species may be harmed by the marking technique, reducing their survival
 {{< /multiplechoice >}}
 
@@ -172,18 +174,18 @@ a higher population density or a clumped dispersion pattern results in more pote
 ### 45.2 Life Histories and Natural Selection
 
 {{< multiplechoice
-  question="Which animals are given as an example of a species with few offspring and extensive parental care?"
-  answer="humans, kangaroos, and pandas"
+  question="Which plant is an example of high fecundity, producing many small, energy-poor seeds that each have a relatively poor chance of surviving?"
+  answer="orchids"
 >}}
-humans, kangaroos, and pandas
-many marine invertebrates
-guppies and bluegill
-the Chinook salmon and the pronghorn antelope
+coconuts
+orchids
+chestnuts
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Which plant, given as an example of a species that reproduces only once during its lifetime, flowers once and then dies?"
-  answer="bamboo"
+  question="In a 2006 study of fruit flies (*Drosophila melanogaster*), males that had previously mated were termed ________ males."
+  answer="resource-depleted"
+  accept="sperm-depleted"
 >}}
 
 {{< selfcheck question="Describe the tradeoffs organisms face when reproducing early versus late in life." >}}
@@ -200,7 +202,7 @@ they risk that they will not survive to reproductive age
 {{< textin
   question="The number of organisms added to a population in each reproductive generation is called the ________."
   answer="population growth rate"
-  accept="growth rate"
+  accept="growth rate|rate of population growth"
 >}}
 
 {{< multiplechoice
@@ -252,8 +254,8 @@ lower fecundity, containing fewer eggs
   answer="famine, disease, and large-scale death"
 >}}
 famine, disease, and large-scale death
-depletion of the ozone layer, erosion due to acid rain, and damage from global climate change
-a decrease in the world's carrying capacity for human beings
+shelter, agriculture, and domesticated animals
+migration, sanitation, and vaccines
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -276,12 +278,13 @@ the role of human activity in causing climate change is a hotly debated socio-po
 ### 45.6 Community Ecology
 
 {{< textin
-  question="The number of different species living in a habitat or biome is called ________."
-  answer="species richness"
+  question="Which parasite causes disease in humans when contaminated, undercooked meat is consumed, can live inside the host's intestine for several years, and may grow to be over 50 ft long by adding segments?"
+  answer="tapeworm"
+  accept="tape worm|pork tapeworm|Taenia solium|T. solium"
 >}}
 
 {{< multiplechoice
-  question="Volcanoes, earthquakes, storms, fires, and climate change, whether natural or caused by human activities, are examples of a(n) ________."
+  question="Volcanoes, earthquakes, storms, and climate change, whether natural or caused by human activities, are examples of a(n) ________."
   answer="environmental disturbance"
 >}}
 climax community
@@ -337,17 +340,18 @@ primary producers
 {{< /multiplechoice >}}
 
 {{< selfcheck question="What is a holistic ecosystem model, and why is this type of ecosystem study limited in practice?" >}}
-A holistic ecosystem model attempts to quantify the composition, interaction, and dynamics of entire ecosystems, and it is the most representative model of the ecosystem in its natural state. However, this type of study is limited by time and expense, and it is neither feasible nor ethical to do experiments on large natural ecosystems.
+A holistic ecosystem model attempts to quantify the composition, interaction, and dynamics of entire ecosystems, and it is the most representative of the ecosystem in its natural state. However, this type of study is limited by time and expense, and it is neither feasible nor ethical to do experiments on large natural ecosystems.
 ===CHECKS===
 a holistic ecosystem model attempts to quantify the composition, interaction, and dynamics of entire ecosystems
-it is the most representative model of the ecosystem in its natural state
+it is the most representative of the ecosystem in its natural state
 this type of study is limited by time and expense
 it is neither feasible nor ethical to do experiments on large natural ecosystems
 {{< /selfcheck >}}
 
 {{< textin
-  question="The organism positioned at the very top of a food chain, with no higher-level consumers preying on it, is called a(n) ________."
+  question="An organism at the top of a food chain, as the Chinook salmon is in the Lake Ontario food chain, is called a(n) ________."
   answer="apex consumer"
+  accept="apex predator"
 >}}
 
 ### 46.2 Energy Flow through Ecosystems
@@ -365,21 +369,21 @@ cadmium
 {{< textin
   question="The rate at which photosynthetic primary producers incorporate energy from the sun is called ________."
   answer="gross primary productivity"
-  accept="GPP"
+  accept="GPP|gross productivity"
 >}}
 
-{{< selfcheck question="How do photoautotrophs and chemoautotrophs differ in the energy source each uses to make its own food?" >}}
-Photoautotrophs use sunlight as their energy source. Chemoautotrophs use inorganic molecules as their energy source, and are found in ecosystems where sunlight is not available, such as dark caves or hydrothermal vents.
+{{< selfcheck question="How do photoautotrophs and chemoautotrophs differ in the energy source each uses to make its own food, and in what kinds of ecosystems are chemoautotrophs found?" >}}
+Photoautotrophs use sunlight as their energy source. Chemoautotrophs use inorganic molecules as their energy source, and are found in rare ecosystems where sunlight is not available, such as dark caves or hydrothermal vents.
 ===CHECKS===
 photoautotrophs use sunlight as their energy source
 chemoautotrophs use inorganic molecules as their energy source
-chemoautotrophs are found in ecosystems where sunlight is not available, such as dark caves or hydrothermal vents
+chemoautotrophs are found in rare ecosystems where sunlight is not available, such as dark caves or hydrothermal vents
 {{< /selfcheck >}}
 
 ### 46.3 Biogeochemical Cycles
 
 {{< multiplechoice
-  question="Which genus of free-living bacteria is an important nitrogen fixer, distinct from bacteria that live symbiotically in the root nodules of legumes?"
+  question="Which genus of free-living bacteria is an important nitrogen fixer?"
   answer="*Azotobacter*"
 >}}
 *Rhizobium*
@@ -393,12 +397,12 @@ chemoautotrophs are found in ecosystems where sunlight is not available, such as
   answer="hydrosphere"
 >}}
 
-{{< selfcheck question="Why is the movement of phosphorus between the ocean and the land considered an unusually slow biogeochemical cycle?" >}}
-Phosphorus is reciprocally exchanged between phosphate dissolved in the ocean and marine ecosystems, but its movement from the ocean to the land and through the soil is extremely slow, with the average phosphate ion having an oceanic residence time between 20,000 and 100,000 years.
+{{< selfcheck question="How slowly does phosphate move from the ocean back to the land, and by what process do phosphate-containing ocean sediments eventually reach the land?" >}}
+The movement of phosphate from the ocean to the land and through the soil is extremely slow, with the average phosphate ion having an oceanic residence time between 20,000 and 100,000 years. Phosphate-containing ocean sediment is moved to land over geologic time by the uplifting of areas of the Earth's surface.
 ===CHECKS===
-phosphorus is reciprocally exchanged between phosphate dissolved in the ocean and marine ecosystems
-its movement from the ocean to the land and through the soil is extremely slow
+the movement of phosphate from the ocean to the land and through the soil is extremely slow
 the average phosphate ion has an oceanic residence time between 20,000 and 100,000 years
+phosphate-containing ocean sediment is moved to land over geologic time by the uplifting of areas of the Earth's surface
 {{< /selfcheck >}}
 
 ## Chapter 47: Conservation Biology and Biodiversity
@@ -406,7 +410,7 @@ the average phosphate ion has an oceanic residence time between 20,000 and 100,0
 ### 47.1 The Biodiversity Crisis
 
 {{< multiplechoice
-  question="Which of the following is one of the three human activities blamed for today's accelerated species loss, unlike the causes of the five previous mass extinctions?"
+  question="Which of the following is one of the three major causes of the species loss happening today?"
   answer="over-harvesting"
 >}}
 a gamma-ray burst
@@ -418,6 +422,7 @@ a large asteroid impact
 {{< textin
   question="A geographical region containing high numbers of endemic species along with a large percentage of degraded habitat, a conservation concept originated by Norman Myers in 1988, is called a ________."
   answer="biodiversity hotspot"
+  accept="hotspot|hot spot|biodiversity hot spot"
 >}}
 
 {{< selfcheck question="What are three hypotheses proposed to explain why species biodiversity increases as latitude declines toward the equator?" >}}
@@ -470,23 +475,24 @@ humans benefit psychologically from living in a biodiverse world
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The invasive plant species native to Japan, introduced to the United States in 1876 for soil conservation, and now covering over 7 million acres in the southeastern United States, is called ________."
+  question="The invasive plant species native to Japan, introduced to the United States in 1876 and later planted for soil conservation, and now covering over 7 million acres in the southeastern United States, is called ________."
   answer="Kudzu"
   accept="Pueraria lobata"
 >}}
 
 {{< selfcheck question="Explain why polar bears and grizzly bears, which historically had separate ranges, are now sometimes producing hybrid offspring, and name the hybrid." >}}
-As climate change causes warming trends to shift colder climates toward the poles, grizzly bear habitat now overlaps polar bear habitat in the Arctic. Because these two species are capable of mating and producing viable offspring, in 2006 a hunter shot a wild grizzly-polar bear hybrid known as a grolar bear, the first wild hybrid ever found.
+Grizzly bears have been spotted farther north than their historic range, a possible consequence of climate change, so grizzly bear habitat now overlaps polar bear habitat. The two species are capable of mating and producing viable offspring, and in 2006 a hunter shot a wild grizzly-polar bear hybrid known as a grolar bear, the first wild hybrid ever found.
 ===CHECKS===
-grizzly bear habitat now overlaps polar bear habitat in the Arctic
-these two species are capable of mating and producing viable offspring
-in 2006 a hunter shot a wild grizzly-polar bear hybrid known as a grolar bear, the first wild hybrid ever found
+grizzly bears have been spotted farther north than their historic range, a possible consequence of climate change
+grizzly bear habitat now overlaps polar bear habitat
+the two species are capable of mating and producing viable offspring
+the hybrid is known as a grolar bear
 {{< /selfcheck >}}
 
 ### 47.4 Preserving Biodiversity
 
 {{< multiplechoice
-  question="As of mid-2017, about how many named species had been identified through DNA barcoding?"
+  question="As of mid-2017, about how many named species had been DNA barcoded?"
   answer="close to 200,000"
 >}}
 close to 200,000
@@ -496,7 +502,7 @@ more than 800
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The non-profit organization that monitors illegal wildlife trade internationally is known by which abbreviation?"
+  question="The non-profit organization that monitors illegal wildlife trade is known by which abbreviation?"
   answer="TRAFFIC"
 >}}
 

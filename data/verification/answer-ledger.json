@@ -270,14 +270,6 @@
   "00d16bfab4d2ee8e": {
    "verdict": "ok"
   },
-  "00d6ea5bd4b6cdc2": {
-   "verdict": "ok",
-   "note": "KC 5 25.1 § body Alternation of Generations (fs-idm23957520), m66566 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "00df5579ed0a3360": {
    "verdict": "ok"
   },
@@ -374,6 +366,14 @@
   },
   "0131bdca68fbaa99": {
    "verdict": "ok"
+  },
+  "013301a2cfd6a39b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "01368ab1d68dc097": {
    "verdict": "ok"
@@ -874,14 +874,6 @@
     "result": "agrees"
    }
   },
-  "02867e8c62c60b55": {
-   "verdict": "ok",
-   "note": "KC 5 24.1 § body Cell Structure and Function (fs-idp33278112), m66558 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "0291f0394650d85e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -1005,14 +997,6 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "02f945637c587d00": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -1510,6 +1494,14 @@
    "verdict": "ok",
    "note": "fs-idm98334320 selfcheck; model answer is the source solution verbatim, three-clause rubric decomposes its own sentence with no new claim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "0472de542dbcc530": {
+   "verdict": "ok",
+   "note": "KC 7 36.4 § body Transduction of Sound (fs-idp2042480), m66407 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0474db20d4b121e2": {
    "verdict": "ok",
    "note": "body CYU 5, selfcheck; RA's type III hypersensitivity classification traced to CD4 T-cell-stimulated RF/anti-CCP immune-complex formation and joint deposition, per m58893's Rheumatoid Arthritis subsection."
@@ -1631,14 +1623,6 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "04c09e3c778dffac": {
-   "verdict": "ok",
-   "note": "KC 7 36.3 § body Taste (fs-idp10779888), m66405 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -1972,6 +1956,14 @@
   "057311610ec8bd5f": {
    "verdict": "ok"
   },
+  "057ba71195384842": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "057bcb3c57de6e41": {
    "verdict": "ok"
   },
@@ -2202,6 +2194,10 @@
     "result": "agrees"
    }
   },
+  "065c902fb41e6b2d": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-21-29.md:385): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
   "067d6d280267b131": {
    "verdict": "ok",
    "solved": {
@@ -2348,14 +2344,6 @@
   "06edc3ffd2fd3a36": {
    "verdict": "ok"
   },
-  "06f0a2b4fb90bb5a": {
-   "verdict": "ok",
-   "note": "KC 5 28.2 § body Class Hydrozoa (fs-idm13862416), m66395 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "06f33f9b8450740b": {
    "verdict": "ok",
    "note": "KC 5 21.2 § Staphylococcal Infections of the Skin, m58907",
@@ -2471,14 +2459,6 @@
   },
   "0742dc944983e42c": {
    "verdict": "ok"
-  },
-  "0743b468bf6092eb": {
-   "verdict": "ok",
-   "note": "KC 8 45.1 § body Population Research Methods (fs-idp50673072), m66686 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "074b3d699393dd4b": {
    "verdict": "ok",
@@ -2675,14 +2655,6 @@
   },
   "07febf069e7c67f0": {
    "verdict": "ok"
-  },
-  "08002b594d2c90aa": {
-   "verdict": "ok",
-   "note": "KC 5 29.3 § body Anura: Frogs (fs-idm166225856), m66590 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "0800c8a9d6000f96": {
    "verdict": "ok"
@@ -3118,10 +3090,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "09369e0c68c9df26": {
-   "verdict": "ok",
-   "note": "KC 7 41.1 § body Need for Osmoregulation (fs-idp6024352), m66656 — parent re-read against the module"
   },
   "0936c3fe28e86a37": {
    "verdict": "ok"
@@ -3709,14 +3677,6 @@
    "verdict": "ok",
    "note": "model answer traced to the Observational/Experimental Studies paragraphs (ease/ethics, association-only vs causation, bias/double-blind) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "0ad99e74f4bf9a6d": {
-   "verdict": "ok",
-   "note": "KC 6 31.2 § body Soil Composition (fs-idm20861600 / fig-ch31_02_01 alt fs-idm13609904), m66604 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "0addea351f654178": {
    "verdict": "ok"
   },
@@ -4163,6 +4123,14 @@
     "result": "agrees"
    }
   },
+  "0c56c12483f2552a": {
+   "verdict": "ok",
+   "note": "KC 4 19.1 § body Population Genetics (fs-idm10186960), m66523 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0c582d9dac7b08b3": {
    "verdict": "ok"
   },
@@ -4404,6 +4372,14 @@
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0cf513d73ceee08e": {
+   "verdict": "ok",
+   "note": "KC 8 47.1 § glossary biodiversity hotspot (fs-idm76502624), m66707 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -5824,6 +5800,14 @@
     "result": "agrees"
    }
   },
+  "114397d0133204cd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1143e1ec4d79d6ba": {
    "verdict": "ok"
   },
@@ -6052,10 +6036,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "11e5f964595d19b3": {
-   "verdict": "ok",
-   "note": "KC 5 23.2 § body Cell Structure (fs-idp120252128), m66554 — parent re-read against the module"
   },
   "11e6686979a329fe": {
    "verdict": "ok",
@@ -6571,10 +6551,6 @@
     "result": "agrees"
    }
   },
-  "1374116627073558": {
-   "verdict": "ok",
-   "note": "KC 7 43.6 § body Fertilization (fs-idp99703472), m66678 — parent re-read against the module"
-  },
   "137da31039ab2439": {
    "verdict": "ok",
    "solved": {
@@ -6719,6 +6695,14 @@
    }
   },
   "13ed8c5dc3d754d3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "13f2310306fb301e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -7049,6 +7033,14 @@
   "14d78447284c7f0c": {
    "verdict": "ok"
   },
+  "14dcc9f01c0d98d9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "14f98d76e4f65f53": {
    "verdict": "ok",
    "solved": {
@@ -7359,6 +7351,14 @@
     "result": "agrees"
    }
   },
+  "15e5eaecc22708ee": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "15e8b38cdfd3cb64": {
    "verdict": "ok",
    "solved": {
@@ -7452,6 +7452,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "16366f9e7c6b059d": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:369): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "1637215a81270238": {
    "verdict": "ok",
@@ -7656,6 +7660,14 @@
     "result": "agrees"
    }
   },
+  "16d27779bbacc972": {
+   "verdict": "ok",
+   "note": "KC 4 20.1 § body Phylogenetic Trees (fs-idp19669120), m66530 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "16d31e4c28774711": {
    "verdict": "ok",
    "note": "body CYU (Copper/Nickel/Zinc); selfcheck, two-paragraph synthesis (binding mechanism + non-selective toxicity), no new claim | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -7847,14 +7859,6 @@
   "17383cbd609f9816": {
    "verdict": "ok"
   },
-  "1739e9840c81f726": {
-   "verdict": "ok",
-   "note": "KC 7 36.1 § body Perception (fs-idp103757536), m66402 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "173afa6267bff584": {
    "verdict": "ok",
    "note": "Bio 40.3 capillaries selfcheck: hint location-only, rubric matches model answer = source solution (m66653); parent re-read Sep 23 2026"
@@ -7996,14 +8000,6 @@
    "verdict": "ok",
    "note": "KC 8 45.5 § body Long-Term Consequences of Exponential Human Population Growth (fs-idm270377024), m66696 — parent re-read against the module"
   },
-  "179a2f24bc3cea17": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "17a1af611227c7a4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -8017,6 +8013,14 @@
   },
   "17b7a655a5752604": {
    "verdict": "ok"
+  },
+  "17b84f72082c560a": {
+   "verdict": "ok",
+   "note": "KC 7 35.4 § glossary autonomic nervous system (fs-idm31866816), m66623 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "17bec5230d5d0a41": {
    "verdict": "ok",
@@ -8360,10 +8364,6 @@
    "verdict": "ok",
    "note": "Microbiology 3.4 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the Peroxisomes paragraph and the mitochondrial genome and 70S ribosome sentences)"
   },
-  "18cecc85e333aa09": {
-   "verdict": "ok",
-   "note": "KC 7 36.4 § body Vestibular Information / Higher Processing (fs-idp71338672), m66407 — parent re-read against the module"
-  },
   "18d3909e5adf132b": {
    "verdict": "ok",
    "note": "sqrt(4^2+6^2)=sqrt(52)=7.2111..., rounds to 7.211. node -e Math.sqrt(16+36)=7.211102550927978."
@@ -8643,14 +8643,6 @@
     "result": "agrees"
    }
   },
-  "198e2627f1ae2a97": {
-   "verdict": "ok",
-   "note": "KC 5 23.4 § body Plant Parasites (fs-idp13799648), m66556 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "198fad2c1e8def20": {
    "verdict": "ok",
    "solved": {
@@ -8773,14 +8765,6 @@
     "result": "agrees"
    }
   },
-  "1a021db70bc3ec7c": {
-   "verdict": "ok",
-   "note": "KC 5 25.4 § body introduction (fs-idm134441184), m66570 — parent re-read against the module | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "1a03f81adf8095b4": {
    "verdict": "ok",
    "note": "KC 3 16.3 § body, intro paragraph (fs-id2261473 region; the module opening), m66505 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
@@ -8897,14 +8881,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "1a4698abde135b75": {
-   "verdict": "ok",
-   "note": "KC 7 43.1 § body Asexual Reproduction (fs-idm36503616), m66668 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -9310,6 +9286,14 @@
   },
   "1b5a55b1783fd904": {
    "verdict": "ok"
+  },
+  "1b619c146e9f0369": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1b6722561bd2258c": {
    "verdict": "ok",
@@ -10269,6 +10253,14 @@
     "result": "agrees"
    }
   },
+  "1e29d4703ba604e9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1e29e441b9ece111": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -10599,6 +10591,14 @@
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1f3d782974239d8d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -11798,6 +11798,14 @@
     "result": "agrees"
    }
   },
+  "2360ada8b08063c7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2369a3badc19194b": {
    "verdict": "ok",
    "solved": {
@@ -12625,6 +12633,14 @@
    "verdict": "ok",
    "note": "Body VC2 (fig-ch14_02_06, note id fs-id1973249): matches exercise fs-idp2462496, solution is prose so rendered as selfcheck per the source solution verbatim, decomposed into rubric checkpoints. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "261f9c28adb9e1f9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2622fd90a56ed3dd": {
    "verdict": "ok",
    "solved": {
@@ -12689,14 +12705,6 @@
   "2676318e0bc6669a": {
    "verdict": "ok",
    "note": "KC 7 39.3 § note Avian Respiration (fs-idp533232), m66647 — parent re-read against the module"
-  },
-  "267ec1b28323b5cd": {
-   "verdict": "ok",
-   "note": "KC 5 22.3 § body Prokaryotes and the Carbon Cycle (fs-idm48166784), m66547 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "267ff3760f34537f": {
    "verdict": "ok",
@@ -13493,6 +13501,14 @@
   "28eea04bc3afe3fa": {
    "verdict": "ok"
   },
+  "28f0211b171451fd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "28f0c7f8505823fd": {
    "verdict": "ok",
    "solved": {
@@ -13964,10 +13980,6 @@
   "2a8a174fd6eacb13": {
    "verdict": "ok"
   },
-  "2a8c362495b36743": {
-   "verdict": "ok",
-   "note": "Biology knowledge check 18-20 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the snail speciation paragraph, Section 18.3)"
-  },
   "2a8d2f9195551d6a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -14400,6 +14412,10 @@
   "2be8f9aeed2bc61f": {
    "verdict": "ok"
   },
+  "2bec9740c5e18386": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-30-32.md:209): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
   "2bf58d029697bd07": {
    "verdict": "ok",
    "note": "KC 3 13.1 § Laboratory Biological Safety Levels, m58853",
@@ -14410,14 +14426,6 @@
   },
   "2bf7294e4380d44f": {
    "verdict": "ok"
-  },
-  "2bf81f9dfd29694e": {
-   "verdict": "ok",
-   "note": "KC 8 46.2 § body Productivity within Trophic Levels, gross primary productivity definition (fs-idm120555168, glossary fs-idp36350368), m66702 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "2bf896d12467fd33": {
    "verdict": "ok",
@@ -14460,14 +14468,6 @@
   },
   "2c1760dbcb4b9495": {
    "verdict": "ok"
-  },
-  "2c1b04af4ebacd76": {
-   "verdict": "ok",
-   "note": "KC 7 36.5 § body Light (fs-idp165729760), m66408 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "2c1f112a25792a42": {
    "verdict": "ok"
@@ -14665,6 +14665,14 @@
     "result": "agrees"
    }
   },
+  "2ce4b37cd50c9220": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2ce849000c765700": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -14720,24 +14728,8 @@
    "verdict": "ok",
    "note": "unkeyed Short Answer fs-id1167661293388 stays a selfcheck per Part C item 2/6(b); model answer assembles the litter-box/fecal-oocyst sentence and the placenta/birth-defect sentence, both quoted in checkpoints."
   },
-  "2d0af8c6eeb74cd0": {
-   "verdict": "ok",
-   "note": "KC 4 18.2 § body Sympatric Speciation (fs-idm74920656), m66520 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "2d0e8fb1aa5f7400": {
    "verdict": "ok"
-  },
-  "2d1e221b08f97df6": {
-   "verdict": "ok",
-   "note": "KC 5 29.7 § body Characteristics of Primates (fs-idp19098736), m66594 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "2d213ff9768a568a": {
    "verdict": "ok",
@@ -15041,6 +15033,14 @@
   "2e18c3bc03f23267": {
    "verdict": "ok",
    "note": "lim_{x->3}(x^2-x-6)/(x^2-9) = (x+2)/(x+3) at x=3 = 5/6 = 0.8333..., rounds to 0.83; node-sampled at x=3+-0.1,0.01,0.001,0.0001 confirms convergence to 0.8333; matches the printed solution for fs-id1165135195366 (source exercise 31)."
+  },
+  "2e19955d665796e6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2e1cf33a4064dae5": {
    "verdict": "ok",
@@ -15389,6 +15389,14 @@
   "2f13f1810a626301": {
    "verdict": "ok",
    "note": "Parent re-derived after restoring OH⁻/H⁺ superscripts in the fourth option: CNXML review question keyed 'Acids and bases will neutralize each other.' — the section says a base neutralizes an acid; the fourth option reverses which ion each donates and is false; options 1 and 3 contradict the buffer prose. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2f162b814e8eeedf": {
+   "verdict": "ok",
+   "note": "KC 7 34.1 § body Esophagus (fs-idp234929280), m66615 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -15875,6 +15883,14 @@
     "result": "agrees"
    }
   },
+  "3070822c55e37779": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "30756a8c5d3de30b": {
    "verdict": "ok",
    "note": "KC 4 16.4 § Emerging and Reemerging Infectious Diseases — SARS micro-connection (fs-id1167660178916), m58874",
@@ -15945,6 +15961,14 @@
   },
   "30be66982f3d9d89": {
    "verdict": "ok"
+  },
+  "30c5c4d89d2aaf3e": {
+   "verdict": "ok",
+   "note": "KC 7 40.1 § glossary unidirectional circulation (fs-idm107786768), m66650 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "30cbc800d7244691": {
    "verdict": "ok",
@@ -16043,6 +16067,14 @@
     "result": "agrees"
    }
   },
+  "313c0b556998512e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "313d757ea4953973": {
    "verdict": "ok",
    "solved": {
@@ -16118,6 +16150,14 @@
   "317a6bb25533e1b4": {
    "verdict": "ok"
   },
+  "317b5d08930f1291": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "317d678eee820a59": {
    "verdict": "ok"
   },
@@ -16192,10 +16232,6 @@
   "31c0701aef81dac2": {
    "verdict": "ok",
    "note": "Body VC1 (fig-ch14_02_01, note id fs-id1978249): the CNXML has no <exercise>/<solution> for this visual-connection note — only the second one (fs-id1973249) is keyed under Visual Connection Questions. Model answer composed strictly from the section's own definitions (nitrogenous = nitrogen-bearing; purine double ring vs pyrimidine single ring, verbatim from eip-837/caption; nucleoside vs nucleotide, verbatim from fs-id1912233) plus a general reading of the figure's own purine/pyrimidine ring drawings for how one base differs from another within its family. No claim beyond the section's text and the figure as drawn. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "31c4886b349b6ecc": {
-   "verdict": "ok",
-   "note": "KC 7 40.3 § body Arteries, Veins, and Capillaries (fs-idm69642496), m66653 — parent re-read against the module"
   },
   "31c4cdf00a952651": {
    "verdict": "ok",
@@ -16460,14 +16496,6 @@
    "verdict": "ok",
    "note": "Computed 25*(2/5)=10 using ln(e^(2/5))=2/5; matches CNXML Section Exercise 53 (fs-id1165137762957)."
   },
-  "324e34760cbf22da": {
-   "verdict": "ok",
-   "note": "KC 5 21.3 § body Vaccines and Antiviral Drugs for Treatment (fs-idm24414432), m66537 — parent re-read against the module | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "3252a341ab384ab9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -16568,14 +16596,6 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "32b449c38669e85d": {
-   "verdict": "ok",
-   "note": "KC 8 46.1 § glossary apex consumer (fs-idp29124704, meaning fs-idp223620112); body Food Chains and Food Webs (fs-idp121534288, para fs-idp199093264), m66701 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -17095,14 +17115,6 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "34a8bc067a4a3be1": {
-   "verdict": "ok",
-   "note": "KC 7 42.1 § body Pathogen Recognition (fs-idp93047808), m66663 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -18154,6 +18166,14 @@
    "verdict": "ok",
    "note": "Solved 116=(1/4)(1/8)^x -> x=ln(464)/ln(1/8) computed with node: -2.952660331709191, rounds to -2.953; matches CNXML solution exactly."
   },
+  "37d35213ff7a216c": {
+   "verdict": "ok",
+   "note": "KC 7 35.5 § glossary neurodegenerative disorder (fs-idm106636096), m66624 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "37d44bb69c8c0157": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -18836,6 +18856,14 @@
     "note": "Key stands. m58850 fixes it in one sentence under transcriptomics: 'Scientists compare gene expression patterns between infected and uninfected host cells'; the proteomics paragraph compares tissues and disease biomarkers, not the two cells' response to an infection."
    }
   },
+  "39ffa6be216ce2b4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3a0000fe9a1251b3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -18846,6 +18874,14 @@
   },
   "3a05dff67990b030": {
    "verdict": "ok"
+  },
+  "3a07e0e838ef4e17": {
+   "verdict": "ok",
+   "note": "KC 7 36.3 § body Taste (fs-idp10779888), m66405 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3a0c9f20e3e7fe25": {
    "verdict": "ok",
@@ -19230,10 +19266,6 @@
   "3b730cff57351829": {
    "verdict": "ok"
   },
-  "3b73991fd0918fb6": {
-   "verdict": "ok",
-   "note": "KC 5 27.2 § body Embryonic Development of the Mouth (fs-idp54796832), m66578 — parent re-read against the module"
-  },
   "3b76332cf8c680f8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -19255,14 +19287,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "3b852ca9e453d15a": {
-   "verdict": "ok",
-   "note": "KC 5 24.4 § body Animal and Human Parasites and Pathogens (fs-idm175923184), m66562 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -19475,14 +19499,6 @@
    "verdict": "ok",
    "note": "QII: pi-3pi/4=pi/4; key p1325 #21"
   },
-  "3c42d5151573f086": {
-   "verdict": "ok",
-   "note": "KC 6 30.2 § body Vascular Tissue (fs-idp64528080), m66597 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "3c449308aa62395a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -19587,6 +19603,14 @@
    "verdict": "ok",
    "note": "f(-x)=3sin²(-x)cos(-x)+sec(-x)=3(-sinx)²(cosx)+secx=3sin²x cosx+secx=f(x) ⇒ even; note source's sibling exercise (2sinx cosx+secx, no solution given) is a different function, this one's answer 'even' is in the CNXML"
   },
+  "3cca0b917282520e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3cca283727463d8e": {
    "verdict": "ok"
   },
@@ -19635,6 +19659,14 @@
   "3cf606c34d41a8f0": {
    "verdict": "ok",
    "note": "CT fs-id1167661440841 (exercise image, unkeyed, no <solution>); model answer keys 'lymphangitis' from its one fixing sentence and states the cause only as far as the module's general inflammatory-response sentence, per run-facts Part C 1."
+  },
+  "3d03e39470149c97": {
+   "verdict": "ok",
+   "note": "KC 5 29.2 § glossary swim bladder (fs-idp121020944), m66589 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3d043bf98af0e33a": {
    "verdict": "ok"
@@ -19729,14 +19761,6 @@
     "result": "agrees"
    }
   },
-  "3d45f9f4923096a3": {
-   "verdict": "ok",
-   "note": "KC 5 29.5 § glossary Neognathae (fs-idp177422928), m66592 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "3d4d006a6686fc90": {
    "verdict": "ok"
   },
@@ -19751,10 +19775,6 @@
   "3d4f59cf3448e121": {
    "verdict": "ok",
    "note": "Microbiology 3.4 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the labeled generalized eukaryotic cell earlier in the section, positions read off both images)"
-  },
-  "3d5976b1e364db95": {
-   "verdict": "ok",
-   "note": "KC 6 31.2 § body Parent Material (fs-idm1756192), m66604 — parent re-read against the module"
   },
   "3d64d4b3887083db": {
    "verdict": "ok",
@@ -19936,9 +19956,9 @@
   "3dfa3c5061c1e0ce": {
    "verdict": "ok"
   },
-  "3dfd627cd96600d4": {
+  "3dfdd8654ffbf13c": {
    "verdict": "ok",
-   "note": "KC 5 29.2 § glossary swim bladder (fs-idp121020944), m66589 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
+   "note": "KC 7 41.2 § body Tubular Reabsorption and Secretion (fs-idm224019280), m66658 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -20212,6 +20232,14 @@
     "result": "agrees"
    }
   },
+  "3ebfbe27f26cd5c8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3ec4a84130afff29": {
    "verdict": "ok"
   },
@@ -20285,6 +20313,14 @@
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which conic section does the equation $xy=4$ represent?)"
   },
+  "3f07b4b0ab19db0f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3f105be071c4178f": {
    "verdict": "ok",
    "solved": {
@@ -20353,6 +20389,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "3f3b4ecc12cd45c2": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:150): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "3f3cf90073690b82": {
    "verdict": "ok",
@@ -20736,6 +20776,14 @@
     "result": "agrees"
    }
   },
+  "406f796520701770": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "40759a0f7a235fed": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20817,6 +20865,10 @@
    "verdict": "ok",
    "note": "|cot x| folds cot's full range of reals to non-negative values, attaining 0 where cot x=0; range [0,infinity), consistent with the source alt text 'Range is 0 to infinity.'"
   },
+  "40af9a4f62e7508d": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-21-29.md:750): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
   "40b1955439cf76ba": {
    "verdict": "ok"
   },
@@ -20890,14 +20942,6 @@
   "40e9f1c6a84cad05": {
    "verdict": "ok",
    "note": "node: 100*Math.exp(-0.173*365) = 3.7711598e-26 -> 3.77x10^-26; matches CNXML solution 3.77E-26."
-  },
-  "40ea9e363a5fef67": {
-   "verdict": "ok",
-   "note": "KC 7 41.4 § body Nitrogenous Waste in Terrestrial Animals: The Urea Cycle (fs-idp160881968), m66660 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "40f352116dd324e6": {
    "verdict": "ok"
@@ -21333,6 +21377,14 @@
     "result": "agrees"
    }
   },
+  "427bc6051c4010ed": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "427cf5910e32cd9b": {
    "verdict": "ok",
    "note": "Practice long-division item 1 (remainder): same division as above; remainder 0, matching the CNXML solution."
@@ -21517,6 +21569,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "431b7e1f1d6ebfd5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -21767,14 +21827,6 @@
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "43e3ce227afd0335": {
-   "verdict": "ok",
-   "note": "KC 5 24.3 § body Fungus/Plant Mutualism (fs-idp96668112), m66560 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -22093,6 +22145,14 @@
    "verdict": "ok",
    "note": "Source CT fs-id1172098644780 (unkeyed, Lubeck TB infants), selfcheck model answer drawn only from this module's granuloma and fever/iron-sequestration sentences. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "44c8d2e6fac1d5d5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "44ca02b7a3b7963a": {
    "verdict": "ok",
    "note": "KC 5 22.2 § note Evolution Connection (fs-idm42143488), m66545 — parent re-read against the module"
@@ -22380,6 +22440,14 @@
     "result": "agrees"
    }
   },
+  "45a81275017b71f6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "45a9878fc8a6c5c4": {
    "verdict": "ok"
   },
@@ -22419,6 +22487,14 @@
    "note": "Glossary fs-id2642866 'telomere' = 'DNA at the end of linear chromosomes'; prompt is the meaning, answer the term.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "45bb3691cf84a6de": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -22881,6 +22957,14 @@
     "result": "agrees"
    }
   },
+  "471f8d806342e565": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "472ee7ea0c4cd57f": {
    "verdict": "ok",
    "note": "parent re-record after setting the flower-population checkpoint exponents as Unicode q²/p² (checkpoint labels render as plain text); model answer unchanged, the verbatim source solution with its <sup> markup (erratum 159 normalization) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -22959,6 +23043,14 @@
   "4798779e976e8917": {
    "verdict": "ok",
    "note": "m66626 fs-idp39173488: model answer is the source solution verbatim; checkpoints decompose its three clauses (three classes; lipid-derived diffuses; amino acid-derived/peptide do not). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "479918def70bf042": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "479970e7ebfc8861": {
    "verdict": "ok",
@@ -23560,6 +23652,10 @@
    "verdict": "ok",
    "note": "m66441 CT solution fs-id1306494 (trans fats) verbatim aside from footer-disclosed 'bad' cholesterol spacing fix; three CHECKS clauses restate its sentences. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "498cba569f2d7621": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:446): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
   "4992c3f3a05cd6cd": {
    "verdict": "ok"
   },
@@ -23704,6 +23800,14 @@
    }
   },
   "4a1097d2d19de6ee": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4a1b132378344803": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -23919,6 +24023,14 @@
   },
   "4ac1b33c4a8b30af": {
    "verdict": "ok"
+  },
+  "4ac56c93b08e75c2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4ac58f46592606c5": {
    "verdict": "ok",
@@ -24137,6 +24249,14 @@
    "verdict": "ok",
    "note": "f(x)=2x^3-6x^2-20x has no constant term, so f(0)=0; y-intercept value is 0. Matches CNXML ti_03_03_06."
   },
+  "4b74f07e7504d259": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4b759e448ec999a4": {
    "verdict": "ok",
    "note": "KC 2 5.2 § glossary selectively permeable (fs-id1447472), m66374 — parent re-read against the module",
@@ -24305,6 +24425,10 @@
    "verdict": "ok",
    "note": "m66549 exercise fs-idp102645024 (critical thinking); model answer is the source solution near-verbatim, checkpoints are direct clauses of it. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "4bf859f29da921ab": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-18-20.md:64): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
   "4bfaaacce6f073b1": {
    "verdict": "ok",
    "note": "Review Question eip-336: keyed option D matches CNXML solution D. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -24330,6 +24454,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4c08796c206675c7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -24387,6 +24519,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "4c2ee7abf23f44a3": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-44-47.md:114): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "4c331a971379c746": {
    "verdict": "ok",
@@ -24598,14 +24734,6 @@
   },
   "4ccddecaf1357980": {
    "verdict": "ok"
-  },
-  "4ccea4f5db2e9acb": {
-   "verdict": "ok",
-   "note": "KC 5 26.2 § glossary ovulate cone (fs-idm75992704), m66573 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "4cd0c9b392e99f57": {
    "verdict": "ok",
@@ -25119,6 +25247,14 @@
     "result": "agrees"
    }
   },
+  "4ecf814d4b2353cf": {
+   "verdict": "ok",
+   "note": "KC 5 23.3 § body Opisthokonta (fs-idp24587808), m66555 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4ecfe758e4f5fad0": {
    "verdict": "ok"
   },
@@ -25272,10 +25408,6 @@
   },
   "4f650e45f41d6509": {
    "verdict": "ok"
-  },
-  "4f6ad98ec89757c8": {
-   "verdict": "ok",
-   "note": "KC 7 41.2 § body Kidney Function and Physiology (fs-idm189006512), m66658 — parent re-read against the module"
   },
   "4f6fc16b476d090f": {
    "verdict": "ok",
@@ -25450,6 +25582,14 @@
   "4fdb7660deec2e97": {
    "verdict": "ok"
   },
+  "4fde6ed64b473131": {
+   "verdict": "ok",
+   "note": "KC 7 35.2 § body Long-term Potentiation (LTP) (fs-idm118440240), m66621 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4fdff93c652b64ac": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -25558,15 +25698,6 @@
     "result": "agrees"
    }
   },
-  "50425c8572cd4365": {
-   "verdict": "ok",
-   "note": "KC 8 44.5 § body Geological Climate Change (fs-idp220653392), m66419 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "key 84 percent stands — m66419: \"Scientists estimate that approximately 70 percent of the terrestrial plant and animal species and 84 percent of marine species became extinct, vanishing forever near the end of the Permian period\"; my 95 percent was general knowledge, and the stem says marine so 70 percent is not a second key"
-   }
-  },
   "5042b22afc0f2aa8": {
    "verdict": "ok",
    "note": "m66378 exercise fs-id2077364: keyed C, 'Enzyme-linked,' matches the source solution. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -25656,13 +25787,17 @@
   "509bebbed8f9229c": {
    "verdict": "ok"
   },
+  "50a3c7d867d32eaf": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "50bef8a31e9e495e": {
    "verdict": "ok",
    "note": "m66459 CT exercise fs-id1768714, solution fs-id1594532: model answer matches source verbatim (spontaneous = negative ΔG; need not be fast; can take long due to large activation energy). All 3 CHECKS clauses restate it, no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "50c0f16e92741af4": {
-   "verdict": "ok",
-   "note": "KC 4 18.2 § body Reproductive Isolation (fs-idp23048320), m66520 — parent re-read against the module"
   },
   "50c3d3c2e0dcd6ad": {
    "verdict": "ok"
@@ -25729,10 +25864,6 @@
   },
   "5115074d21fb070c": {
    "verdict": "ok"
-  },
-  "5119dc9fa1f2468d": {
-   "verdict": "ok",
-   "note": "KC 7 36.1 § body untitled intro / two cellular systems (fs-idp111589088), m66402 — parent re-read against the module"
   },
   "511b221d0b0d2f86": {
    "verdict": "ok",
@@ -25899,6 +26030,10 @@
   },
   "5178ed26ef15cac8": {
    "verdict": "ok"
+  },
+  "5179ff7f4a76786f": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:901): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "517e726f5deed627": {
    "verdict": "ok",
@@ -26616,6 +26751,14 @@
     "result": "agrees"
    }
   },
+  "53f7e1a9a8bc665d": {
+   "verdict": "ok",
+   "note": "KC 5 29.3 § body Anura: Frogs (fs-idm166225856), m66590 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "53ff69ed715d438c": {
    "verdict": "ok",
    "solved": {
@@ -26835,6 +26978,10 @@
   "54c4047a7d772a84": {
    "verdict": "ok"
   },
+  "54c99d793a3f293b": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-18-20.md:39): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
   "54cd9c84ef1bf3cb": {
    "verdict": "ok",
    "note": "Glossary textin, term 'net primary productivity' (fs-idp21617888). Prompt is the glossary meaning verbatim; answer matches the glossary term, accept the standard abbreviation NPP. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -26926,6 +27073,14 @@
    }
   },
   "551f4323bd691017": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5520a51423ed1f2a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -27802,10 +27957,6 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
-  },
-  "57ce1bb95761d1d7": {
-   "verdict": "ok",
-   "note": "KC 7 42.2 § body Helper T Lymphocytes (fs-idp94055216), m66664 — parent re-read against the module"
   },
   "57d36a32887553fe": {
    "verdict": "ok",
@@ -28718,14 +28869,6 @@
     "result": "agrees"
    }
   },
-  "5ab4758df95832ee": {
-   "verdict": "ok",
-   "note": "KC 7 35.5 § glossary neurodegenerative disorder (fs-idm106636096), m66624 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "5ab734388fcedeed": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -28833,6 +28976,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "5b21d8efcd9a6414": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:1142): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "5b259e4a86f6f7b4": {
    "verdict": "ok",
@@ -29062,14 +29209,6 @@
     "result": "agrees"
    }
   },
-  "5ba2e547b914a8a5": {
-   "verdict": "ok",
-   "note": "KC 8 45.6 § glossary environmental disturbance (fs-idp158049968), m66698 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "5ba4945ebaaf403a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29206,6 +29345,10 @@
   "5c1ac4074b35082a": {
    "verdict": "ok",
    "note": "Practice #9 (Algebraic): f(x)=2x^2+x-3, f'(x)=4x+1 by the definition; confirmed numerically node at x=3: 13.0000000027 vs formula 4(3)+1=13. Matches source exercise 9 solution."
+  },
+  "5c1b5c6648f58cb6": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:1168): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "5c1d814544942d9e": {
    "verdict": "ok",
@@ -29495,14 +29638,6 @@
   "5d0a33fe9ce08d61": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "5d1431c63005fadc": {
-   "verdict": "ok",
-   "note": "KC 5 22.2 § body module introduction / The Prokaryotic Cell (fs-idm85226496), m66545 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -30365,10 +30500,6 @@
   },
   "5fe467b1a9b4a055": {
    "verdict": "ok"
-  },
-  "5fe5dda1a7975f01": {
-   "verdict": "ok",
-   "note": "KC 8 46.3 § body The Phosphorus Cycle, oceanic residence time sentence (fs-idp21885936), m66705 — parent re-read against the module"
   },
   "5fea1b0f4121c628": {
    "verdict": "ok",
@@ -31452,14 +31583,6 @@
   "63c3e377deb51ef1": {
    "verdict": "ok"
   },
-  "63c6446617ec67ef": {
-   "verdict": "ok",
-   "note": "KC 8 45.2 § body Parental Care and Fecundity (fs-idp122750048), m66688 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "63c6a4a94efaa18a": {
    "verdict": "ok"
   },
@@ -31485,10 +31608,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "63e4572a6f74ac71": {
-   "verdict": "ok",
-   "note": "KC 7 42.3 § body Antibody Functions (fs-idp52929952, fs-idm98879504), m66665 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)"
   },
   "63e62985ea3558af": {
    "verdict": "ok",
@@ -31746,6 +31865,14 @@
   "64e64f04f1f6fc6c": {
    "verdict": "ok"
   },
+  "64ec574a7a360f55": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "64ecbbed6d4ba973": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -31803,14 +31930,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "653efc2d86666a42": {
-   "verdict": "ok",
-   "note": "KC 7 43.2 § body External Fertilization (fs-idm7918032), m66671 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -32228,6 +32347,14 @@
     "result": "agrees"
    }
   },
+  "668b32a8b649fb4c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "66909ec655de4fd9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -32494,6 +32621,14 @@
    "note": "Critical Thinking Question fs-idp7114336. Model answer matches CNXML solution verbatim: 'Myelin prevents the leak of current from the axon. Nodes of Ranvier allow the action potential to be regenerated at specific points along the axon. They also save energy for the cell since voltage-gated ion channels and sodium-potassium transporters are not needed along myelinated portions of the axon.' | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "67611ec1a4c55ce4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "676b1c13235f01a5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -32814,14 +32949,6 @@
   "688b74d954ac1f5c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "688e1d9ef866a134": {
-   "verdict": "ok",
-   "note": "KC 7 41.1 § body Osmoregulators and Osmoconformers (fs-idm71869712), m66656 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -33255,6 +33382,14 @@
     "result": "agrees"
    }
   },
+  "6a10261d0d9e8cdc": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6a18f2b7f3c4a095": {
    "verdict": "ok",
    "note": "Review Q fs-id3112360: source options and key (a) transcribed verbatim; key matches section text (epigenetic marks are reversible additions to histones/DNA, never sequence mutation). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -33613,6 +33748,15 @@
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
+   }
+  },
+  "6b57e8ee48212709": {
+   "verdict": "ok",
+   "note": "KC 8 45.3 § glossary population growth rate (fs-idm125522224), m66690 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key stands — m66690 glossary: \"population growth rate: number of organisms added in each reproductive generation\", and the body: \"the accelerating population growth rate—the number of organisms added in each reproductive generation\"; fecundity is 45.2’s \"potential reproductive capacity of an individual\", so it is not a second key"
    }
   },
   "6b594f4e011e653a": {
@@ -34778,14 +34922,6 @@
     "result": "agrees"
    }
   },
-  "6f0ec647feed5be6": {
-   "verdict": "ok",
-   "note": "KC 7 41.3 § body Malpighian Tubules of Insects (fs-idp19584384), m66659 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "6f1ada54306cf3d2": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 33): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -35059,6 +35195,14 @@
    "verdict": "ok",
    "note": "Practice selfcheck, unkeyed Short Answer fs-id1167663652655 — model answer assembled from the neutralizing-antibody definition sentence and the plaque-reduction-assay/titer sentences, which sit in different paragraphs; rewritten per checker finding so antibody-virus complex formation (removed by phagocytosis) and receptor-blocking read as the module's two parallel outcomes of virion coating, not one causing the other."
   },
+  "70023747f6e01bab": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "70047116ea98e06f": {
    "verdict": "ok",
    "solved": {
@@ -35128,6 +35272,14 @@
   },
   "7034242bf6a725a2": {
    "verdict": "ok"
+  },
+  "70366dffd23d33b0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "703a901092ddead5": {
    "verdict": "ok",
@@ -35303,14 +35455,6 @@
   },
   "70d89793a39b1e2c": {
    "verdict": "ok"
-  },
-  "70d9c889016857a9": {
-   "verdict": "ok",
-   "note": "KC 7 40.2 § body Plasma and Serum (fs-idm88428032), m66651 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "70dc048d045d8719": {
    "verdict": "ok",
@@ -35598,6 +35742,14 @@
   "71e1167942d18ce5": {
    "verdict": "ok"
   },
+  "71e1d2a96a93daee": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "71e4e3a1fe32f742": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 303): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -35790,6 +35942,14 @@
   "725b5ad61155ad33": {
    "verdict": "ok"
   },
+  "725da59f21b3ae12": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "725f62422caaa816": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -35913,14 +36073,6 @@
    "verdict": "ok",
    "note": "selfcheck matches CNXML exercise fs-idm101910752 solution verbatim (Critical Thinking Q1: moist environment / frog eggs lack a shell). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "72dee531e2552cad": {
-   "verdict": "ok",
-   "note": "KC 7 34.2 § body Organic Precursors (fs-idm162453888), m66616 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "72e3aa5ab73b9076": {
    "verdict": "ok",
    "note": "selfcheck; § Alternative Patterns of Cell Division: fragmentation vs budding paragraphs"
@@ -36005,14 +36157,6 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "7333fe98182a495b": {
-   "verdict": "ok",
-   "note": "KC 7 35.4 § glossary autonomic nervous system (fs-idm31866816), m66623 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -36189,6 +36333,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "73f018238f98ef6e": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-30-32.md:238): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "73f107634d85ed43": {
    "verdict": "ok",
@@ -36628,6 +36776,14 @@
     "result": "agrees"
    }
   },
+  "7524daf089313177": {
+   "verdict": "ok",
+   "note": "KC 5 24.1 § body Cell Structure and Function (fs-idp33278112), m66558 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "752d8fcf3865b5cb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -36809,6 +36965,14 @@
   },
   "75d909afc4bdfd80": {
    "verdict": "ok"
+  },
+  "75da5b5d93330220": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "75e051f15fba03c9": {
    "verdict": "ok"
@@ -37050,6 +37214,10 @@
   },
   "76be003423e13645": {
    "verdict": "ok"
+  },
+  "76ca6efaf09a2f9c": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-21-29.md:205): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "76cc964f9c9f07ee": {
    "verdict": "ok",
@@ -38686,14 +38854,6 @@
   "7b84a9197d31e374": {
    "verdict": "ok"
   },
-  "7b95140792806d7a": {
-   "verdict": "ok",
-   "note": "KC 4 20.3 § body Genome Fusion and Eukaryote Evolution (fs-idp53484800), m66532 (parent replacement of a free-phrase summary cloze) — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "7b965bac364a2ae8": {
    "verdict": "ok",
    "note": "Microbiology 22.1 source SA selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the mucociliary escalator, mucosal defenses, and alveolar macrophage sentences)"
@@ -39011,6 +39171,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "7c59ed2603d3d14d": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-44-47.md:139): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "7c5c885dd0e0bffe": {
    "verdict": "ok"
@@ -39928,6 +40092,10 @@
     "result": "agrees"
    }
   },
+  "7f20b9f63d7fc51b": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:954): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
   "7f223129273b061e": {
    "verdict": "ok",
    "note": "summary-sourced cloze textin from the module's own Section Summary sentence ('growing at an exponential rate'). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -40342,6 +40510,14 @@
     "result": "agrees"
    }
   },
+  "80b1c4e53f112816": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "80b86853d72a5f5c": {
    "verdict": "ok"
   },
@@ -40599,14 +40775,6 @@
   "81bfcbb38a5cd331": {
    "verdict": "ok"
   },
-  "81c05951580cc4f2": {
-   "verdict": "ok",
-   "note": "KC 7 38.1 § glossary articulation (fs-idm193791456), m66635 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "81c87918fa0eae41": {
    "verdict": "ok",
    "note": "23.2 alternation-of-generations MC: hint reworded (was near-verbatim key); key per source solution | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -40799,14 +40967,6 @@
   "825617f94b029984": {
    "verdict": "ok",
    "note": "parent: r=21/3=7, theta=135-65=70"
-  },
-  "8259020ae32d71a1": {
-   "verdict": "ok",
-   "note": "KC 5 26.3 § body Fruit (fs-idp88842288), m66574 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "825e837d4eb83625": {
    "verdict": "ok"
@@ -41010,6 +41170,10 @@
   "82c343911b8684c4": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L399 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
+  "82d70da4e32394d1": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-44-47.md:342): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "82e166c8eada08db": {
    "verdict": "ok",
@@ -41435,14 +41599,6 @@
    "verdict": "ok",
    "note": "2x-7y=2, 3x+y=-20 -> solved by addition (multiply 2nd by 7, add): x=-6, y=-2. Node-verified both equations."
   },
-  "841fb9eeb1ccd8cc": {
-   "verdict": "ok",
-   "note": "KC 7 39.4 § glossary hemoglobin (fs-idp86870704), m66648 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "84220d39d964ff85": {
    "verdict": "ok",
    "note": "Glossary recall (chronic infection, fs-idm121246112), meaning-to-term textin; accept covers the plural.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -41598,10 +41754,6 @@
   },
   "847bafeb157b4bf8": {
    "verdict": "ok"
-  },
-  "847d0e9209a05e64": {
-   "verdict": "ok",
-   "note": "KC 7 42.4 § body Autoimmunity (fs-idp170396736), m66666 — parent re-read against the module"
   },
   "847e90aa09bf5fa3": {
    "verdict": "ok"
@@ -41853,14 +42005,6 @@
    "verdict": "ok",
    "note": "sum_{k=1}^{8}3^k evaluated by loop = 9840; matches CNXML ti_11_04_07."
   },
-  "8531bfd793acef69": {
-   "verdict": "ok",
-   "note": "KC 5 21.2 § glossary cytopathic (fs-idm104588112), m66535 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "8532e9e5fc818dff": {
    "verdict": "ok",
    "note": "d=47-50=-3, a1=50; a_n=50-3(n-1)=53-3n, checked against terms 50,47,44,41 by substitution n=1..4."
@@ -41908,6 +42052,14 @@
    "verdict": "ok",
    "note": "13.1 CT selfcheck; Sep 23 2026 close-out: model answer and rubric trimmed to module sentences (sterilization definition, disinfection leaves endospores, sterilization not practical in many settings, -static treatments less toxic and preserve integrity); canning-margin comparison and other inferences removed; model answer, rubric, and hint re-read against the module"
   },
+  "854b59e55712131e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "854eefc7437b2a03": {
    "verdict": "ok",
    "solved": {
@@ -41947,14 +42099,6 @@
   "8563cda2699960b9": {
    "verdict": "ok"
   },
-  "856515efedd556c3": {
-   "verdict": "ok",
-   "note": "KC 8 44.4 § body Ocean (fs-idm35273280), m66417 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "85697d332a9e5fb8": {
    "verdict": "ok",
    "note": "(1/625)^(-x-3)=5^(4x+12); 5^(3-4x-12)=5^3 -> x=-3; key p1316 #39"
@@ -41993,16 +42137,20 @@
    "verdict": "ok",
    "note": "P(11,5)=11*10*9*8*7=55440 (node BigInt); confirmed retyping 'P(11,5)' grades incorrect via checkAnswer."
   },
-  "8582d7a747a95ff5": {
-   "verdict": "ok",
-   "note": "KC 8 46.2 § body How Organisms Acquire Energy in a Food Web, photoautotroph/chemoautotroph energy-source sentences (fs-idp7243392, fs-idm124697248), m66702 — parent re-read against the module"
-  },
   "858b02269aebfd86": {
    "verdict": "ok",
    "note": "19.1 violet-flower VC self-check, parent re-read 2026-09-23 (ch19 re-review): 500 x 0.64 = 320 VV, 500 x 0.32 = 160 Vv, 500 x 0.04 = 20 vv; 480 violet, 20 white; model answer = source solution; only the hint changed"
   },
   "858c11d8fc627d9a": {
    "verdict": "ok"
+  },
+  "858dab08bdf932c5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "858f5316fca5f585": {
    "verdict": "ok",
@@ -42658,14 +42806,6 @@
   "87e7c897f149183f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "87ecc16d550fad1c": {
-   "verdict": "ok",
-   "note": "KC 7 41.5 § body Atrial Natriuretic Peptide Hormone, m66661 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -43353,6 +43493,10 @@
    "verdict": "ok",
    "note": "sinx=1/8,QI ⇒ cosx=√63/8=3√7/8. sin2x=2sinxcosx=3√7/32; cos2x=1-2sin²x=31/32; tan2x=3√7/31. All three node-checked against the source solution."
   },
+  "8a4f04417c795c35": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-30-32.md:316): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
   "8a4fcc5838fbe190": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -43436,6 +43580,14 @@
   },
   "8aae8cc25da6bb0f": {
    "verdict": "ok"
+  },
+  "8ab8f5b66a539771": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8abc138631ec9252": {
    "verdict": "ok",
@@ -43614,14 +43766,6 @@
   },
   "8b598af551c1f08e": {
    "verdict": "ok"
-  },
-  "8b5b748f38f1f0c9": {
-   "verdict": "ok",
-   "note": "KC 8 45.5 § body lead-in paragraph (fs-idm225979904), m66696 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "8b5e256c11869ce6": {
    "verdict": "ok",
@@ -44182,6 +44326,14 @@
     "result": "agrees"
    }
   },
+  "8d13942a4556ffaa": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8d16fefb20e8702f": {
    "verdict": "ok",
    "note": "Review Question eip-433; source solution keys D, \"Both A and B.\", matching options transcribed verbatim in source order. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -44378,6 +44530,10 @@
   },
   "8de1ab0200dbcf8d": {
    "verdict": "ok"
+  },
+  "8de612cb7249ea08": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-44-47.md:400): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "8de914b2dcfda599": {
    "verdict": "ok"
@@ -44727,6 +44883,10 @@
     "result": "agrees"
    }
   },
+  "8ef36141ae6ca2eb": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-44-47.md:483): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
   "8ef43b9ec03e5e6a": {
    "verdict": "ok",
    "solved": {
@@ -45000,6 +45160,15 @@
   },
   "8fa6807afc2a122c": {
    "verdict": "ok"
+  },
+  "8fb2bd6e5acce818": {
+   "verdict": "ok",
+   "note": "KC 8 44.1 § body Community Ecology (fs-idp217491760), m66410 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key stands — m66410: \"Mutualism is a form of long-term relationship that has coevolved between two species and from which each species benefits\"; symbiosis is not the module’s word for this sentence"
+   }
   },
   "8fb2fce2d30ad17f": {
    "verdict": "ok"
@@ -46110,14 +46279,6 @@
    "verdict": "ok",
    "note": "Practice obj2-1a: x^2/16+y^2/9=1, a^2=16>b^2=9 major axis x, vertices (+-4,0); matches CNXML fs-id1331349 solution."
   },
-  "939477bc1d5db799": {
-   "verdict": "ok",
-   "note": "KC 5 29.1 § body Urochordata (fs-idm17583392), m66588 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "93a7d338b99e0319": {
    "verdict": "ok",
    "solved": {
@@ -46169,10 +46330,6 @@
   "93c0beee34385794": {
    "verdict": "ok"
   },
-  "93c774354d15d789": {
-   "verdict": "ok",
-   "note": "KC 8 44.5 § body Evidence for Global Climate Change (fs-idp70239568), m66419 — parent re-read against the module"
-  },
   "93c91ce43633c70e": {
    "verdict": "ok"
   },
@@ -46220,14 +46377,6 @@
   },
   "93e46ea9614058f5": {
    "verdict": "ok"
-  },
-  "93ea20b7ebe0cf5d": {
-   "verdict": "ok",
-   "note": "KC 6 32.1 § body Female Gametophyte (The Embryo Sac) (fs-idm27657152), m66607 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "93eecd45fab946c3": {
    "verdict": "ok",
@@ -46723,6 +46872,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "95b6885cbdaeae96": {
+   "verdict": "ok",
+   "note": "KC 5 21.2 § glossary cytopathic (fs-idm104588112), m66535 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -47328,14 +47485,6 @@
   "97f09523b0f0510c": {
    "verdict": "ok"
   },
-  "97f10d0c93edd597": {
-   "verdict": "ok",
-   "note": "KC 5 24.2 § body Chytridiomycota: The Chytrids (fs-idm37155376), m66559 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "97f155e3cedf9de5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -47592,6 +47741,14 @@
   },
   "98bc9031f5ec3ea4": {
    "verdict": "ok"
+  },
+  "98be773e81729e8c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "98c04cbe6c571e85": {
    "verdict": "ok"
@@ -47874,14 +48031,6 @@
     "result": "agrees"
    }
   },
-  "999af61c24e90d5a": {
-   "verdict": "ok",
-   "note": "KC 8 45.6 § glossary species richness (fs-idp108567472), m66698 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "999bde6ed062d998": {
    "verdict": "ok"
   },
@@ -47966,21 +48115,9 @@
     "result": "agrees"
    }
   },
-  "99e9e2229683b53c": {
-   "verdict": "ok",
-   "note": "KC 8 44.4 § body Rivers and Streams (fs-idm163038832), m66417 — parent re-read against the module"
-  },
   "99ef6b6c893c892d": {
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=3\\sin(2\\theta)$ for symmetry. Which sym)"
-  },
-  "99f5413bd1d3e274": {
-   "verdict": "ok",
-   "note": "KC 5 22.3 § body Prokaryotes and the Nitrogen Cycle (fs-idm32389088), m66547 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "99fc13fc79bf1c0d": {
    "verdict": "ok"
@@ -48225,6 +48362,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "9ac6e77d191cb5bf": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-44-47.md:375): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "9ac9da6c0cc109a5": {
    "verdict": "ok",
@@ -48551,6 +48692,14 @@
   "9c0fe29a49ec795a": {
    "verdict": "ok"
   },
+  "9c11b8e463b363c2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9c130a34d627671b": {
    "verdict": "ok"
   },
@@ -48586,14 +48735,6 @@
   },
   "9c32332eeada4186": {
    "verdict": "ok"
-  },
-  "9c340cb2c631debf": {
-   "verdict": "ok",
-   "note": "KC 7 41.2 § body Kidney Structure (fs-idm58694224), m66658 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "9c3465505f03049c": {
    "verdict": "ok",
@@ -49262,15 +49403,6 @@
    "verdict": "ok",
    "note": "Practice (Descartes). Sign changes of 2x^3+37x^2+200x+300 (all positive): 0 changes (0 positive); f(-x)=-2x^3+37x^2-200x+300 (signs -,+,-,+): 3 changes (3 or 1 negative). Matches CNXML solution for fs-id1165134149873."
   },
-  "9e4867c34e60a2d8": {
-   "verdict": "ok",
-   "note": "KC 8 47.4 § body Measuring Biodiversity (fs-idp82523840), m66710 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "key stands — m66710: \"As of mid 2017, close to 200,000 named species had been barcoded\"; the distractors are the module’s CITES (33,000), IUCN Red List (61,000), and ESA (over 800) counts"
-   }
-  },
   "9e4a2c4207dd010f": {
    "verdict": "ok",
    "note": "m66624 eip-342, solution D (all of the above); the section's own text supports all three specific reasons (unknown genes, no obvious brain-structure defects, symptom variation between patients), so 'all of the above' is the defensible key. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -49290,10 +49422,6 @@
   },
   "9e5ef52d169c07dd": {
    "verdict": "ok"
-  },
-  "9e5f54d74fe89a02": {
-   "verdict": "ok",
-   "note": "KC 33-43 (41.3) selfcheck; Sep 23 2026 close-out: model answer now says what a contractile vacuole does, from 41.3's own sentence (wastes and excess water excreted by exocytosis as contractile vacuoles merge with the cell membrane); rubric gains that clause; model answer, rubric, and hint re-read against the module"
   },
   "9e5f98a076b3759f": {
    "verdict": "ok"
@@ -49376,14 +49504,6 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "9eb8d39d6b1e2789": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -49485,14 +49605,6 @@
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id1962038 (m66478) verbatim; rubric checkpoints are clauses of that solution | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "9f1b3da27c9e842c": {
-   "verdict": "ok",
-   "note": "KC 7 36.4 § body Sound (fs-idp188300560), m66407 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "9f1b9c7d2741bd2b": {
    "verdict": "ok",
    "note": "Biology knowledge check 21-29 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the incomplete/complete metamorphosis paragraph, Section 27.1)"
@@ -49581,14 +49693,6 @@
     "by": "orchestrator",
     "result": "adjudicated",
     "note": "module: photoreceptors are proteins bonded to a light-absorbing pigment called a chromophore — the molecule that absorbs light is the chromophore, key stands"
-   }
-  },
-  "9f67bd84ede80508": {
-   "verdict": "ok",
-   "note": "KC 6 30.5 § body Movement of Water and Minerals in the Xylem (fs-idp41419776), m66600 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
    }
   },
   "9f6912b8640c8e30": {
@@ -49821,6 +49925,10 @@
   "a069b78bfc1856af": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 644): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "a06a0165f487a5a5": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:1304): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "a06c605b241d65c0": {
    "verdict": "ok",
@@ -50160,14 +50268,6 @@
    "verdict": "ok",
    "note": "body CYU, selfcheck; model answer assembled from § Elongation (A/P/E site definitions). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "a1902164e7814120": {
-   "verdict": "ok",
-   "note": "KC 6 30.5 § body Gravity Potential (fs-idm89093776), m66600 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "a19387ff363b2926": {
    "verdict": "ok"
   },
@@ -50380,6 +50480,14 @@
   "a23e608fdec20787": {
    "verdict": "ok",
    "note": "Solved 4=7.85(1.15)^x-2.27 -> x=ln((4+2.27)/7.85)/ln(1.15) computed with node: -1.6079998... rounds to -1.608, matches CNXML Try It ti_04_02_03 solution exactly."
+  },
+  "a23ef49a92b1e8ff": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a2416996d04f3b9f": {
    "verdict": "ok",
@@ -51165,6 +51273,14 @@
   "a4ae5bbc85fae327": {
    "verdict": "ok"
   },
+  "a4b345831bd89990": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a4ba50565dfce0f1": {
    "verdict": "ok"
   },
@@ -51517,6 +51633,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a6124f1acec447bb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -51936,14 +52060,6 @@
   "a73bafd9035af7fe": {
    "verdict": "ok"
   },
-  "a740943085b4645b": {
-   "verdict": "ok",
-   "note": "KC 5 26.1 § summary (fs-idm3786208), m66572 — parent re-read against the module | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "a7410b68a97d97ce": {
    "verdict": "ok"
   },
@@ -52079,6 +52195,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a7cb4fc966932d59": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -52404,14 +52528,6 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "a8a305546be2d263": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -53332,14 +53448,6 @@
     "result": "agrees"
    }
   },
-  "ab95b2de79d1f03b": {
-   "verdict": "ok",
-   "note": "KC 7 35.2 § body Long-term Potentiation (LTP) (fs-idm118440240), m66621 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "ab9997c09418fd81": {
    "verdict": "ok"
   },
@@ -53362,10 +53470,26 @@
    "verdict": "ok",
    "note": "node: Math.acos(-0.4)=1.9823131728623846, rounds to 1.9823 (matches source's own 1.9823 for this Try It)."
   },
+  "abb4d3dc5e2965d6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "abb77a149a0272c7": {
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "abbf63d8d42bc4f3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -53422,6 +53546,14 @@
     "result": "agrees"
    }
   },
+  "abd04210b8415f2d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "abe16a1dbcc6b9db": {
    "verdict": "ok",
    "solved": {
@@ -53463,14 +53595,6 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "ac014e4629fff3a0": {
-   "verdict": "ok",
-   "note": "KC 7 43.4 § body Male Hormones (fs-idm108547280), m66674 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -53759,14 +53883,6 @@
   "acea5770c2b5695f": {
    "verdict": "ok",
    "note": "s = r*theta = 10*(215*pi/180) = 37.52457891787808, rounds to 37.525 at 3dp (node computed)"
-  },
-  "acf41fdb44931b5a": {
-   "verdict": "ok",
-   "note": "KC 8 47.1 § body lead-in paragraph before Types of Biodiversity (fs-idp37051280), m66707 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "acf4773eead550f9": {
    "verdict": "ok",
@@ -54202,14 +54318,6 @@
   },
   "ae4cad228f6fca87": {
    "verdict": "ok"
-  },
-  "ae538938e5ac007f": {
-   "verdict": "ok",
-   "note": "KC 4 20.1 § body Phylogenetic Trees (fs-idp19669120), m66530 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "ae564051c1d06417": {
    "verdict": "ok",
@@ -55793,6 +55901,14 @@
   "b396b83a422858f1": {
    "verdict": "ok"
   },
+  "b3974f9684f2aa54": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b39ea2cd161ccdbc": {
    "verdict": "ok"
   },
@@ -55903,14 +56019,6 @@
   "b4130c3b1dd5ead5": {
    "verdict": "ok",
    "note": "fimbriae hypothesis CT selfcheck; model answer walks the Molecular Koch's Postulates table's three steps against the hypothetical, no claim beyond the table. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "b413fd226aad6bd8": {
-   "verdict": "ok",
-   "note": "KC 7 35.4 § body Sympathetic Nervous System (fs-idm45910720), m66623 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "b4152b197ed9eb9f": {
    "verdict": "ok",
@@ -56640,14 +56748,6 @@
    "verdict": "ok",
    "note": "Practice selfcheck, unkeyed SA fs-id1167663712531 — model answer assembles the direct-HA titer sentence and the HIA titer sentence, contrasting what is diluted (virus vs. antibody) in each."
   },
-  "b626f04c3871ff7d": {
-   "verdict": "ok",
-   "note": "KC 6 31.1 § summary (fs-idp29148752), m66603 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "b630cb2ffde30524": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -56750,14 +56850,6 @@
   "b66569632dd0c37a": {
    "verdict": "ok",
    "note": "Reproduced via a from-scratch Nelder-Mead nonlinear least-squares fit of the logistic model to the harbor-seal data (x=0..15): converged to c=25.65666, a=6.11369, b=0.38521, matching CNXML fs-id1425215 (Try It #3a) to 5+ significant digits."
-  },
-  "b666b2fda55e98f4": {
-   "verdict": "ok",
-   "note": "KC 5 23.3 § body Opisthokonta (fs-idp24587808), m66555 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "b66e1760365e92c6": {
    "verdict": "ok"
@@ -56898,23 +56990,11 @@
     "result": "agrees"
    }
   },
-  "b6ce38cbace5fb96": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "b6cee8e72720b691": {
    "verdict": "ok"
   },
   "b6d21d428c43cb20": {
    "verdict": "ok"
-  },
-  "b6d3ea8fcc1db66a": {
-   "verdict": "ok",
-   "note": "KC 8 47.3 § body Climate Change (fs-idp44717248), m66709 — parent re-read against the module"
   },
   "b6d5b5de50ac9318": {
    "verdict": "ok",
@@ -57212,6 +57292,14 @@
   "b7d5a0ae20ce69d3": {
    "verdict": "ok"
   },
+  "b7de13057cffd90c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b7e484ea63d3ddcd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -57349,14 +57437,6 @@
     "result": "agrees"
    }
   },
-  "b82d84db619d3382": {
-   "verdict": "ok",
-   "note": "KC 8 46.3 § body The Nitrogen Cycle, free-living nitrogen fixers sentence (fs-idm83956288), m66705 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "b8306d04b6c3e8a5": {
    "verdict": "ok",
    "note": "m66449 Section Summary states verbatim 'The plasma membrane is a phospholipid bilayer embedded with proteins.' Answer 'phospholipid bilayer' matches exactly. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -57400,14 +57480,6 @@
   "b8544133c912195e": {
    "verdict": "ok",
    "note": "KC 8 45.7 § body Sociobiology (fs-idp196017632), m66699 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "b85ec5c99ee23784": {
-   "verdict": "ok",
-   "note": "KC 6 30.6 § body Plant Responses to Light (fs-idp4456976), m66601 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -57740,6 +57812,10 @@
    "verdict": "ok",
    "note": "Microbiology 23.6 source SA selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the trichomoniasis text and the Disease Profile table; missing bacterium disclosed with a link)"
   },
+  "b956141c8005ae97": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:980): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
   "b95648ac796b6025": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -57751,6 +57827,10 @@
   "b95950246d52d97a": {
    "verdict": "ok",
    "note": "h=8,k=-1,4p=4->p=1; focus=(h+p,k)=(9,-1); matches source TI4."
+  },
+  "b95b7cc69beead0b": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:1116): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "b95e2241c64d1a4f": {
    "verdict": "ok"
@@ -57830,14 +57910,6 @@
     "result": "agrees"
    }
   },
-  "b9a160c9644412e9": {
-   "verdict": "ok",
-   "note": "KC 6 30.4 § body Leaf Structure and Function (fs-idp143575408), m66599 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "b9b3b230523a7096": {
    "verdict": "ok",
    "solved": {
@@ -57877,14 +57949,6 @@
   "b9de9385e2278561": {
    "verdict": "ok",
    "note": "Glossary fs-idm26043216 'limbic system' = 'connected brain areas that process emotion and motivation'. Prompt matches body text ('a connected set of structures that regulates emotion, as well as behaviors related to fear and motivation'); unique referent. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "b9e03aee9b6466b2": {
-   "verdict": "ok",
-   "note": "KC 7 41.2 § body Tubular Reabsorption and Secretion (fs-idm224019280), m66658 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -58013,15 +58077,6 @@
   },
   "ba4ed875cef08d38": {
    "verdict": "ok"
-  },
-  "ba4f09e7d4f8e2f7": {
-   "verdict": "ok",
-   "note": "KC 7 42.1 § body Phagocytosis and Inflammation (fs-idp26175392), m66663 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "The stem is module m66663's own basophil sentence verbatim (\"like a neutrophil, releases chemicals to stimulate the inflammatory response\"); the mast cell is defined there as producing \"inflammatory molecules, such as histamine, in response to large pathogens\", so the neutrophil comparison is the module's discriminator. Key stands."
-   }
   },
   "ba51ed6c62b17e96": {
    "verdict": "ok",
@@ -58253,10 +58308,6 @@
     "result": "agrees"
    }
   },
-  "bb41dab934c2deef": {
-   "verdict": "ok",
-   "note": "KC 4 18.1 § body Biogeography (fs-idp73509664), m66518 — parent re-read against the module"
-  },
   "bb4615f99dc642e1": {
    "verdict": "ok",
    "note": "Unkeyed Short Answer fs-id1167660372808, stays selfcheck: model answer assembled from this module's intro para ('generate ATP by substrate-level phosphorylation') and the ATP synthase para's closing sentence ('a second mechanism for making ATP that harvests the potential energy stored within an electrochemical gradient ... by oxidative phosphorylation'); each ===CHECKS=== clause quotes the model answer's own words. Unchanged both rounds. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -58321,14 +58372,6 @@
   },
   "bb7cfe05262d429e": {
    "verdict": "ok"
-  },
-  "bb808fee31cbdb69": {
-   "verdict": "ok",
-   "note": "KC 6 30.3 § body Root Growth and Anatomy (fs-idp118653424), m66598 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "bb867b8548792128": {
    "verdict": "ok"
@@ -58472,6 +58515,10 @@
   },
   "bc082d3c8df6b3b7": {
    "verdict": "ok"
+  },
+  "bc0d6f19812bdf89": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-21-29.md:121): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "bc186742c9cbdd96": {
    "verdict": "ok",
@@ -58737,6 +58784,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "bcc992508cc977f5": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-21-29.md:312): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "bccbff196f5a23ce": {
    "verdict": "ok",
@@ -59100,6 +59151,14 @@
   },
   "be23a4273c66494c": {
    "verdict": "ok"
+  },
+  "be30209afb42704f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "be3100a5ae1b5e94": {
    "verdict": "ok"
@@ -59757,6 +59816,14 @@
     "result": "agrees"
    }
   },
+  "c0283ae0fa8eefa6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c029bca3bfb93317": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -60198,14 +60265,6 @@
     "result": "agrees"
    }
   },
-  "c1a0e403334bd813": {
-   "verdict": "ok",
-   "note": "KC 5 29.7 § glossary Plesiadapis (fs-idm22843952), m66594 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "c1a3d794fb17cbbc": {
    "verdict": "ok",
    "note": "-2x+5y=-42, 7x+2y=30 -> elimination gives x=6, y=-6. Node-verified both equations."
@@ -60300,14 +60359,6 @@
   },
   "c20fcaaa7e89f530": {
    "verdict": "ok"
-  },
-  "c21400f3b7f531e5": {
-   "verdict": "ok",
-   "note": "KC 5 29.3 § body Evolution of Amphibians (fs-idm49536848), m66590 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "c2154b223616c4b6": {
    "verdict": "ok",
@@ -60563,14 +60614,6 @@
     "result": "agrees"
    }
   },
-  "c2d8056e39a851b4": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c2e0567e6ea8857a": {
    "verdict": "ok"
   },
@@ -60658,14 +60701,6 @@
   "c33082a2e7277db4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "c3367993036872e7": {
-   "verdict": "ok",
-   "note": "KC 8 47.4 § body Changing Human Behavior (fs-idp117080240), m66710 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -61254,14 +61289,6 @@
     "result": "agrees"
    }
   },
-  "c4e44eafd75a9b98": {
-   "verdict": "ok",
-   "note": "KC 5 22.2 § body The Prokaryotic Cell, figure fig-ch22_02_03 caption (fs-idm79891600), m66545 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "c4e7fd0f70401ff2": {
    "verdict": "ok",
    "solved": {
@@ -61360,6 +61387,14 @@
   "c51a023f994bc5d2": {
    "verdict": "ok"
   },
+  "c51dd5417fec600e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c523115c4bb7ee19": {
    "verdict": "ok",
    "note": "asymptotes of A sec(Bx) at pi/(2|B|)*k for odd k; B=3 gives smallest positive pi/6; matches source's own printed solution (period 2pi/3, asymptotes x=pi/6 *k odd)."
@@ -61414,6 +61449,14 @@
   "c5468981ee9f73dd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c546a22f664310d4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -61576,6 +61619,14 @@
   "c5d0cc20abd15a9b": {
    "verdict": "ok",
    "note": "source CT fs-id1167662394216 (unkeyed); stays a selfcheck — the module gives only that the Ames test is \"rapid, inexpensive\" and that flagged compounds are further tested in animal models, not a full comparative argument for why it is preferable. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "c5d17860bc1129d6": {
+   "verdict": "ok",
+   "note": "KC 6 30.4 § body Leaf Structure and Function (fs-idp143575408), m66599 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c5dc502f30d6cb19": {
    "verdict": "ok"
@@ -61819,10 +61870,6 @@
   "c693800c45a13c97": {
    "verdict": "ok"
   },
-  "c699becd239f217b": {
-   "verdict": "ok",
-   "note": "KC 6 31.3 § body Nitrogen Fixation: Root and Bacteria Interactions (fs-idp25847248), m66605 — parent re-read against the module"
-  },
   "c6a34829cf36e14e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -61865,24 +61912,8 @@
   "c6c6784031ec03bb": {
    "verdict": "ok"
   },
-  "c6ca665856f11990": {
-   "verdict": "ok",
-   "note": "KC 7 34.1 § body Esophagus (fs-idp234929280), m66615 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "c6caf6f54490178e": {
    "verdict": "ok"
-  },
-  "c6da3fde3808e639": {
-   "verdict": "ok",
-   "note": "KC 7 42.4 § body Allergies (fs-idp223765568), m66666 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "c6dcba5b10acff6e": {
    "verdict": "ok"
@@ -62050,6 +62081,14 @@
   },
   "c7815a0cc336b5ab": {
    "verdict": "ok"
+  },
+  "c781b721f429baca": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c7820087781544ea": {
    "verdict": "ok",
@@ -62568,6 +62607,14 @@
    "verdict": "ok",
    "note": "KC 2 9.3 § body Termination of the Signal Cascade (fs-id3032521), m66380 — parent re-read against the module"
   },
+  "c96f41d42d06dbbf": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c96f9873c07eecd9": {
    "verdict": "ok",
    "note": "KC 5 28.7 § body intro (fs-idp45187664), m66400 — parent re-read against the module",
@@ -62710,6 +62757,14 @@
     "result": "agrees"
    }
   },
+  "c9fa154390673e01": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c9fbe63a46377edd": {
    "verdict": "ok"
   },
@@ -62806,10 +62861,6 @@
   },
   "ca3c3ff77f337f7c": {
    "verdict": "ok"
-  },
-  "ca41208eb4b45a61": {
-   "verdict": "ok",
-   "note": "KC 7 43.7 § body Organogenesis (fs-idp65133440), m66679 — parent re-read against the module"
   },
   "ca4647450bcd4cda": {
    "verdict": "ok",
@@ -62984,6 +63035,14 @@
     "result": "agrees"
    }
   },
+  "cab655e74b299b57": {
+   "verdict": "ok",
+   "note": "KC 4 18.2 § body Sympatric Speciation (fs-idm74920656), m66520 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "cab9a2277fff31cd": {
    "verdict": "ok"
   },
@@ -63010,14 +63069,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "cad075cfeff2dbd4": {
-   "verdict": "ok",
-   "note": "KC 4 20.2 § body Molecular Comparisons (fs-idp96201360), m66531 (parent replacement of a free-phrase summary cloze) — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -63295,6 +63346,14 @@
    "verdict": "ok",
    "note": "Boulder: a1=6,d=8,n=10; a10=78,S10=420 (node); matches CNXML fs-id1165135181425 solution (420 feet)."
   },
+  "cb7bd08303114892": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cb7d3573585c32bb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -63310,10 +63369,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "cb844f535fabf7e9": {
-   "verdict": "ok",
-   "note": "KC 5 24.1 § body Fungi, once considered plant-like organisms... (fs-idp34354240), m66558 — parent re-read against the module"
   },
   "cb84d4dacd328f62": {
    "verdict": "ok",
@@ -63370,14 +63425,6 @@
   },
   "cbb487a16bf6c1ad": {
    "verdict": "ok"
-  },
-  "cbbe5a66a2ebd582": {
-   "verdict": "ok",
-   "note": "KC 5 28.3 § body Phylum Rotifera (fs-idp81453376), m66396 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "cbc06ff9d43116ba": {
    "verdict": "ok",
@@ -63653,14 +63700,6 @@
     "result": "agrees"
    }
   },
-  "ccc1349643c0c27a": {
-   "verdict": "ok",
-   "note": "KC 7 43.4 § body The Ovarian Cycle and the Menstrual Cycle (fs-idp108162320), m66674 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "ccc7e0fd7cf3d6cd": {
    "verdict": "ok"
   },
@@ -63709,6 +63748,14 @@
   "cce48d583cdaae78": {
    "verdict": "ok",
    "note": "selfcheck model answer is the source solution for fs-idm75528944 (Critical Thinking Q1) verbatim; checkpoints are its three clauses restated with no new claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "cce5cada5fd51462": {
+   "verdict": "ok",
+   "note": "KC 7 40.2 § body Plasma and Serum (fs-idm88428032), m66651 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "cceb2f4506d77ed1": {
    "verdict": "ok"
@@ -63781,6 +63828,14 @@
     "result": "agrees"
    }
   },
+  "cd46987ada425511": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cd46e80a239d0af7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -63800,10 +63855,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "cd680ac126a53b2a": {
-   "verdict": "ok",
-   "note": "KC 5 21.3 § body Vaccines and Antiviral Drugs for Treatment (fs-idp55980176), m66537 — parent re-read against the module"
   },
   "cd69bdb89a0c6939": {
    "verdict": "ok",
@@ -64132,10 +64183,6 @@
    "verdict": "ok",
    "note": "body selfcheck; model answer assembles the Granulocytes paragraph (neutrophil/eosinophil/basophil nuclei+granules) and the Mast Cells paragraph; module-only sentences. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "ce5124cab7e2a3f0": {
-   "verdict": "ok",
-   "note": "KC 6 32.3 § body Grafting (fs-idm131818720), m66609 — parent re-read against the module"
-  },
   "ce51893368807177": {
    "verdict": "ok"
   },
@@ -64444,14 +64491,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "cf764f61fb944e8b": {
-   "verdict": "ok",
-   "note": "KC 5 26.3 § body The Life Cycle of an Angiosperm (fs-idp67453984), m66574 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -64932,6 +64971,14 @@
    "verdict": "ok",
    "note": "With h=12 fixed, V=(1/3)pi r^2(12)=4 pi r^2, so r^2=V/(4pi), r=sqrt(V/(4pi)) (r>=0 physical domain). Cross-checked with checkAnswer against an independently-built alternate LaTeX spelling (sqrt(V)/sqrt(4pi)) -- graded correct. Matches CNXML exercise fs-id1165135209080 (Real-World Applications, cone volume with 12-inch height), which has a solution."
   },
+  "d126eb5bfb0bb2c2": {
+   "verdict": "ok",
+   "note": "KC 8 46.2 § body Productivity within Trophic Levels, gross primary productivity definition (fs-idm120555168, glossary fs-idp36350368), m66702 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d130ece6e5d30e56": {
    "verdict": "ok"
   },
@@ -64969,14 +65016,6 @@
   "d15691b55c5306ad": {
    "verdict": "ok"
   },
-  "d16651996649504b": {
-   "verdict": "ok",
-   "note": "KC 4 18.3 § body intro paragraph (fs-idp80045424), m66521 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "d16709bd9f1b9f85": {
    "verdict": "ok",
    "solved": {
@@ -65006,6 +65045,14 @@
   },
   "d1868fe62d7bf144": {
    "verdict": "ok"
+  },
+  "d18830c86153050a": {
+   "verdict": "ok",
+   "note": "KC 5 21.3 § body Vaccines and Antiviral Drugs for Treatment (fs-idm24414432), m66537 — parent re-read against the module | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d190bad9b8bfd283": {
    "verdict": "ok"
@@ -65206,6 +65253,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "d26ad349a0dd6773": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -65571,6 +65626,10 @@
     "result": "agrees"
    }
   },
+  "d40e94bea11f4af2": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-30-32.md:263): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
   "d41050ff96347ec7": {
    "verdict": "ok",
    "note": "m66645 exercise fs-idm49856704 (critical thinking); model answer transcribes the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -65772,6 +65831,14 @@
   "d499d03d31258679": {
    "verdict": "ok",
    "note": "selfcheck fs-idm112725344 — model answer is the source solution verbatim; checkpoints decompose it clause by clause with no new claim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "d49decc8487fe8f0": {
+   "verdict": "ok",
+   "note": "KC 5 25.3 § body Hornworts (fs-idp37789488), m66568 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d4a3a8e149217233": {
    "verdict": "ok"
@@ -66848,6 +66915,14 @@
     "result": "agrees"
    }
   },
+  "d7fd569cd66f01d1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d802e7f4ae6f0bf2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -67295,14 +67370,6 @@
   "d992c3d91324fbae": {
    "verdict": "ok"
   },
-  "d99390b3d7907147": {
-   "verdict": "ok",
-   "note": "KC 5 25.3 § body Hornworts (fs-idp37789488), m66568 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "d9a160d8b535366c": {
    "verdict": "ok",
    "solved": {
@@ -67457,6 +67524,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "da41db84e17c714e": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-21-29.md:92): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "da4200a5ec6232e4": {
    "verdict": "ok"
@@ -67794,6 +67865,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "db616d5a798f900d": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:1333): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "db648d68e57905a0": {
    "verdict": "ok"
@@ -68346,14 +68421,6 @@
   "dd818579436b2281": {
    "verdict": "ok",
    "note": "m66722 critical-thinking exercise fs-idp143778352. Model answer is the source solution verbatim (lightly split into three sentences, no new claims): the two new protostome clades (lophotrochozoans, ecdysozoans) came from molecular/DNA/protein research, and the new phylum Acoelomorpha was distinguished from other flatworms by molecular data. Rubric checkpoints are the solution's own three clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "dd840d0df75127e0": {
-   "verdict": "ok",
-   "note": "KC 7 40.1 § glossary unidirectional circulation (fs-idm107786768), m66650 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "dd88c912c7b69dd7": {
    "verdict": "ok",
@@ -68932,6 +68999,10 @@
   },
   "df9cf3d19dc95e2e": {
    "verdict": "ok"
+  },
+  "dfa75dea5efea825": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-18-20.md:89): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "dfa9d3e47b54f1c6": {
    "verdict": "ok",
@@ -70066,14 +70137,6 @@
    "verdict": "ok",
    "note": "Matches m66452 visual-connection note fs-id1721886, solution fs-id1325439 (peripheral protein synthesized in ER lumen ends up outside the plasma membrane). Model answer verbatim; CHECKS restate it. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "e3380b0d5a011b0d": {
-   "verdict": "ok",
-   "note": "KC 4 19.1 § body Population Genetics (fs-idm10186960), m66523 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "e339f37a8a088bc3": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 723): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -70294,14 +70357,6 @@
    "verdict": "ok",
    "note": "re-read against CNXML m58913; keyed sentence/table checks out"
   },
-  "e3fd400947163988": {
-   "verdict": "ok",
-   "note": "KC 6 31.3 § body Mycorrhizae: The Symbiotic Relationship between Fungi and Roots (fs-idm58935600), m66605 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "e401dacca120f5de": {
    "verdict": "ok",
    "solved": {
@@ -70453,14 +70508,6 @@
   },
   "e4695f32c903d80c": {
    "verdict": "ok"
-  },
-  "e46b31aa4bfb2ec0": {
-   "verdict": "ok",
-   "note": "KC 8 47.1 § glossary biodiversity hotspot (fs-idm76502624), m66707 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "e46b546b29bfd868": {
    "verdict": "ok",
@@ -70901,15 +70948,6 @@
     "result": "agrees"
    }
   },
-  "e5e49994b78f1ac1": {
-   "verdict": "ok",
-   "note": "KC 8 45.3 § glossary population growth rate (fs-idm125522224), m66690 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "key stands — m66690 glossary: \"population growth rate: number of organisms added in each reproductive generation\", and the body: \"the accelerating population growth rate—the number of organisms added in each reproductive generation\"; fecundity is 45.2’s \"potential reproductive capacity of an individual\", so it is not a second key"
-   }
-  },
   "e5eab02b575e1fca": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -70933,6 +70971,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e5f2c3264112dc0a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -71527,10 +71573,6 @@
     "result": "agrees"
    }
   },
-  "e86f84bf297f5c7f": {
-   "verdict": "ok",
-   "note": "KC 5 22.3 § body Prokaryotes and the Carbon Cycle (fs-idp54591920), m66547 — parent re-read against the module"
-  },
   "e876d24fa08352dc": {
    "verdict": "ok"
   },
@@ -71605,14 +71647,6 @@
   "e8b2c8202588a934": {
    "verdict": "ok",
    "note": "re-derived f(x)=-cbrt(x) at x=-8,-1,0,1,8: f(-8)=2, f(-1)=1, f(0)=0, f(1)=-1, f(8)=-2 (Math.cbrt verified in node), matches the 5-point pattern from the parent worked example's cbrt(x) table with signs flipped for the reflection; all on integer lattice inside grid [-9,9]x[-3,3], matching the page's other cube-root figures."
-  },
-  "e8bec14a1261014b": {
-   "verdict": "ok",
-   "note": "KC 7 43.2 § body The Evolution of Reproduction (fs-idp95831472), m66671 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "e8c62691ae4db080": {
    "verdict": "ok"
@@ -71773,6 +71807,14 @@
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e9453f64ea1acfee": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -72148,14 +72190,6 @@
     "result": "agrees"
    }
   },
-  "eaac6e69d89a9eec": {
-   "verdict": "ok",
-   "note": "KC 4 19.2 § body Genetic variability (fs-idm33908784), m66524 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "eab2d69459494218": {
    "verdict": "ok"
   },
@@ -72262,6 +72296,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "eb07026a7320a4c5": {
+   "verdict": "ok",
+   "note": "KC 4 20.3 § body Genome Fusion and Eukaryote Evolution (fs-idp53484800), m66532 (parent replacement of a free-phrase summary cloze) — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -72512,14 +72554,6 @@
   },
   "ebc7b55f277079a8": {
    "verdict": "ok"
-  },
-  "ebc96e79b46bdeb2": {
-   "verdict": "ok",
-   "note": "KC 7 33.1 § glossary asymmetrical (fs-idm10960), m66611 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "ebc99060aa46df24": {
    "verdict": "ok",
@@ -72825,6 +72859,14 @@
     "result": "agrees"
    }
   },
+  "ec7ac3517a530f99": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ec7e02805ea8ef86": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -73108,14 +73150,6 @@
   },
   "ed6deb30e676b6d8": {
    "verdict": "ok"
-  },
-  "ed7a287e6fc2342f": {
-   "verdict": "ok",
-   "note": "KC 8 47.3 § body Exotic Species (fs-idp165254080), m66709 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "ed95ce1c7003d092": {
    "verdict": "ok",
@@ -74420,10 +74454,6 @@
     "result": "agrees"
    }
   },
-  "f1cb35814ef6f1fb": {
-   "verdict": "ok",
-   "note": "KC 8 46.1 § body Research into Ecosystem Dynamics, holistic ecosystem model paragraph (fs-idp225162928, glossary fs-idp46038976), m66701 — parent re-read against the module"
-  },
   "f1ccba5de65c23f8": {
    "verdict": "ok",
    "note": "body CYU2 (fs-id1167660313108), unchanged, stays selfcheck: honest answer needs the general sentence plus both the gelatinase and caseinase examples, § Protein Catabolism. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -74702,6 +74732,14 @@
   "f2d0a6d1c24a7d8c": {
    "verdict": "ok"
   },
+  "f2d3198a13eaecee": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f2d646e53552cd4d": {
    "verdict": "ok"
   },
@@ -74890,6 +74928,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f397946a9cbb27d8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -75325,10 +75371,6 @@
   "f4f2282f3c381064": {
    "verdict": "ok"
   },
-  "f4f6c9115342b829": {
-   "verdict": "ok",
-   "note": "KC 7 34.2 § body Food Energy and ATP (fs-idm44186032), m66616 — parent re-read against the module"
-  },
   "f4fb6ec654303ea9": {
    "verdict": "ok",
    "note": "author-written body selfcheck, § Naming Microbes (preceding subsection) — model answer assembled from the binomial-nomenclature definition and the 'single, unique two-word name' sentence. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -75748,10 +75790,6 @@
     "note": "solver wrote the bare number 4, the key is the same value with the percent sign the item's percent form requires; value agrees"
    }
   },
-  "f67344cfd0d876cf": {
-   "verdict": "ok",
-   "note": "KC 5 21.4 § body Prions (fs-idm76018352), m66540 — parent re-read against the module"
-  },
   "f67b67f07d87d6c8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -75915,15 +75953,6 @@
    "verdict": "ok",
    "note": "selfcheck (Critical Thinking fs-idm63806336, solution fs-idm123593568) — model answer is the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "f6e313928e8fe8ea": {
-   "verdict": "ok",
-   "note": "KC 8 44.1 § body Community Ecology (fs-idp217491760), m66410 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "key stands — m66410: \"Mutualism is a form of long-term relationship that has coevolved between two species and from which each species benefits\"; symbiosis is not the module’s word for this sentence"
-   }
-  },
   "f6f2a7d246dc56dc": {
    "verdict": "ok"
   },
@@ -75977,6 +76006,14 @@
     "by": "orchestrator",
     "result": "adjudicated",
     "note": "glossary term is symbiont; no source phrase \"symbiotic plant\" — key stands"
+   }
+  },
+  "f7286d1b518a51c7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
    }
   },
   "f72892a9d521a787": {
@@ -76402,14 +76439,6 @@
     "result": "agrees"
    }
   },
-  "f88857d9ce61a813": {
-   "verdict": "ok",
-   "note": "KC 5 23.3 § body Gymnomoebae (fs-idm67721872), m66555 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "f88ae188730f18e4": {
    "verdict": "ok"
   },
@@ -76684,6 +76713,10 @@
   },
   "f9460c7d216fc24b": {
    "verdict": "ok"
+  },
+  "f948780936c2fe9e": {
+   "verdict": "ok",
+   "note": "Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:991): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
   "f94de7c31379b354": {
    "verdict": "ok",
@@ -77147,14 +77180,6 @@
   "faafe78913f35bf1": {
    "verdict": "ok"
   },
-  "fab16c13534c2de6": {
-   "verdict": "ok",
-   "note": "KC 5 23.1 § body Characteristics of Eukaryotes (fs-idp178735440), m66552 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "fab35054957c59d9": {
    "verdict": "ok",
    "solved": {
@@ -77505,14 +77530,6 @@
   "fbc90cdd59cd9a1d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "fbcc628022eb0614": {
-   "verdict": "ok",
-   "note": "KC 7 36.4 § body Transduction of Sound (fs-idp2042480), m66407 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -78336,10 +78353,6 @@
   "fe802bb1ff9b66d6": {
    "verdict": "ok"
   },
-  "fe810b374fc63b1b": {
-   "verdict": "ok",
-   "note": "KC 6 32.1 § body Angiosperms versus Gymnosperms (fs-idm59623456), m66607 — parent re-read against the module"
-  },
   "fe812bc6e0367119": {
    "verdict": "ok",
    "note": "m66677 fs-idp58574848; source key A, 'placenta'; page keys A; supported by 'The placenta has taken over the functions of nutrition and waste and the production of estrogen and progesterone from the corpus luteum, which has degenerated.' | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -78457,14 +78470,6 @@
   "fee74e0ffb389c78": {
    "verdict": "ok",
    "note": "atan(-0.34)=-0.327739->-0.3277 (node), period pi; representative in (-pi/2,pi/2) as pinned. Parent re-derivation after edit."
-  },
-  "feea2c389215b41f": {
-   "verdict": "ok",
-   "note": "KC 7 37.5 § body Adrenal Glands (fs-idp50181648), m66631 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "feec289561c0ccd8": {
    "verdict": "ok",
@@ -78669,14 +78674,6 @@
   },
   "ff8d6bb848e01e97": {
    "verdict": "ok"
-  },
-  "ff8f70aa93424ed0": {
-   "verdict": "ok",
-   "note": "KC 5 29.4 § body Characteristics of Amniotes (fs-idp230325376), m66591 — parent re-read against the module",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "ff9217c20b7fc12b": {
    "verdict": "ok",

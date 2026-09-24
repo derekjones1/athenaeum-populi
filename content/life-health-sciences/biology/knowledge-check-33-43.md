@@ -32,7 +32,7 @@ weight: 50
 {{< /multiplechoice >}}
 
 {{< textin
-  question="An animal with no pattern or symmetry to its body, such as a sponge, is described as ________."
+  question="An animal whose body plan follows no pattern at all, such as a sponge, is described as ________."
   answer="asymmetrical"
   accept="asymmetric"
 >}}
@@ -114,6 +114,7 @@ ruminant stomach
 {{< textin
   question="A ring-like muscle that forms valves controlling the movement of materials through the digestive tract is called a ________."
   answer="sphincter"
+  accept="sphincter muscle"
 >}}
 
 {{< selfcheck question="How does the stomach protect its own lining from being digested by the enzyme pepsin?" >}}
@@ -127,7 +128,7 @@ the stomach has a thick mucus lining that protects the underlying tissue from th
 ### 34.2 Nutrition and Energy Production
 
 {{< textin
-  question="The enzyme humans lack that would let them derive glucose from the polysaccharide cellulose is called ________."
+  question="Humans do not produce the enzyme ________, so they cannot derive glucose from the plant polysaccharide that provides the fiber required for moving waste through the large intestine."
   answer="cellulase"
 >}}
 
@@ -146,12 +147,13 @@ the stomach has a thick mucus lining that protects the underlying tissue from th
   {"label": "serine", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="What happens in the liver when the amount of ATP available exceeds the body's requirements, and what happens to that stored form when blood sugar drops?" >}}
-When the amount of ATP is available in excess of the body's requirements, the liver uses the excess ATP and excess glucose to produce molecules called glycogen, a polymeric form of glucose stored in the liver and skeletal muscle cells. When blood sugar drops, the liver releases glucose from stores of glycogen.
+{{< selfcheck question="Where in the cell is ATP produced, and what happens to glucose during glycolysis?" >}}
+ATP is produced by the oxidative reactions in the cytoplasm and mitochondrion of the cell, where carbohydrates, proteins, and fats undergo a series of metabolic reactions collectively called cellular respiration. Glycolysis is a series of reactions in which glucose is converted to pyruvic acid and some of its chemical potential energy is transferred to NADH and ATP.
 ===CHECKS===
-the liver uses the excess ATP and excess glucose to produce molecules called glycogen
-glycogen is a polymeric form of glucose stored in the liver and skeletal muscle cells
-when blood sugar drops, the liver releases glucose from stores of glycogen
+ATP is produced by the oxidative reactions in the cytoplasm and mitochondrion of the cell
+carbohydrates, proteins, and fats undergo a series of metabolic reactions collectively called cellular respiration
+glycolysis is a series of reactions in which glucose is converted to pyruvic acid
+some of its chemical potential energy is transferred to NADH and ATP
 {{< /selfcheck >}}
 
 ### 34.3 Digestive System Processes
@@ -251,7 +253,7 @@ about −55 mV
 {{< textin
   question="The postsynaptic glutamate receptor normally blocked by magnesium ions until the membrane depolarizes, at which point calcium ions can pass into the postsynaptic cell through it, is called the ________ receptor."
   answer="NMDA"
-  accept="NMDA receptor|N-Methyl-D-aspartate"
+  accept="NMDA receptor|N-Methyl-D-aspartate|N-Methyl-D-aspartate receptor"
 >}}
 
 {{< selfcheck question="After a neurotransmitter has bound receptors on the postsynaptic membrane, in what three ways can it be removed from the synaptic cleft?" >}}
@@ -293,17 +295,17 @@ he did not report feeling bored or frustrated by his state
 {{< textin
   question="The division of the peripheral nervous system that controls bodily functions without conscious control is called the ________."
   answer="autonomic nervous system"
-  accept="autonomic system"
+  accept="autonomic system|autonomic|autonomic division"
 >}}
 
 {{< multiplechoice
-  question="Besides being released by postganglionic sympathetic neurons directly onto target organs, what other source releases norepinephrine into the bloodstream, amplifying the sympathetic response?"
-  answer="the adrenal gland"
+  question="Postganglionic neurons of the parasympathetic system release acetylcholine or which other molecule into the postganglionic synapse?"
+  answer="nitric oxide"
 >}}
-the dorsal root ganglia
-the adrenal gland
-the sympathetic ganglia
-the brainstem
+norepinephrine
+nitric oxide
+dopamine
+epinephrine
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Cranial nerves can carry only sensory information, only motor information, or a mix of both. Name one example nerve of each type and what it does." >}}
@@ -319,7 +321,7 @@ the glossopharyngeal nerve carries a mix of sensory and motor fibers, with a rol
 {{< textin
   question="A nervous system disorder characterized by the progressive loss of neurological functioning, usually caused by neuron death, is called a ________."
   answer="neurodegenerative disorder"
-  accept="neurodegenerative disease"
+  accept="neurodegenerative disease|neurodegenerative illness"
 >}}
 
 {{< multiplechoice
@@ -345,13 +347,13 @@ follow-up studies showed no connection between vaccines and autism
 ### 36.1 Sensory Processes
 
 {{< multiplechoice
-  question="Which special sense's signals travel to the cerebral cortex without first passing through the thalamus?"
-  answer="olfaction"
+  question="Touch receptors are sensitive only to touch or pressure, not to light or sound. What term describes this specialization of sensory receptors according to the type of stimulus they sense?"
+  answer="receptor specificity"
 >}}
-gustation
-equilibrium
-vision
-olfaction
+receptive field
+receptor potential
+sensory transduction
+receptor specificity
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -364,13 +366,12 @@ the rate of action potentials produced by the sensory receptor
 the relay of its signals through the thalamus
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the two broad types of cellular systems that perform sensory transduction, and what serves as the sensory receptor in each?" >}}
-In one type, a neuron works with a sensory receptor, a cell or cell process that is specialized to engage with and detect a specific stimulus, and stimulation of the sensory receptor activates the associated afferent neuron, which carries information about the stimulus to the central nervous system. In the second type, a sensory nerve ending responds to a stimulus in the internal or external environment, and this neuron constitutes the sensory receptor.
+{{< selfcheck question="What is a sensory pathway, and how does it let the brain distinguish one kind of sensory stimulus from another?" >}}
+The brain distinguishes sensory stimuli through a sensory pathway: action potentials from sensory receptors travel along neurons that are dedicated to a particular stimulus. These neurons are dedicated to that particular stimulus and synapse with particular neurons in the brain or spinal cord.
 ===CHECKS===
-in one type, a neuron works with a sensory receptor, a cell or cell process that is specialized to engage with and detect a specific stimulus
-stimulation of the sensory receptor activates the associated afferent neuron, which carries information about the stimulus to the central nervous system
-in the second type, a sensory nerve ending responds to a stimulus in the internal or external environment
-this neuron constitutes the sensory receptor
+the brain distinguishes sensory stimuli through a sensory pathway
+action potentials from sensory receptors travel along neurons that are dedicated to a particular stimulus
+these neurons synapse with particular neurons in the brain or spinal cord
 {{< /selfcheck >}}
 
 ### 36.2 Somatosensation
@@ -413,6 +414,7 @@ umami
 {{< textin
   question="A cluster of gustatory receptors located within the papillae on the tongue is called a ________."
   answer="taste bud"
+  accept="tastebud"
 >}}
 
 {{< selfcheck question="Trace the path taste signals take from the taste cells to the primary gustatory cortex, naming the two brain structures they pass through in order." >}}
@@ -426,26 +428,27 @@ then to the primary gustatory cortex
 ### 36.4 Hearing and Vestibular Sensation
 
 {{< multiplechoice
-  question="Which of the following animals can detect the highest sound frequency, up to about 180,000 Hz?"
-  answer="American shad"
+  question="Up to about what sound frequency can the American shad, a fish, hear?"
+  answer="about 180,000 Hz"
 >}}
-dogs
-cats
-dolphins
-American shad
+about 40,000 Hz
+about 60,000 Hz
+about 150,000 Hz
+about 180,000 Hz
 {{< /multiplechoice >}}
 
 {{< textin
   question="A bony, hollow structure that is the most interior portion of the ear and that contains the structures of the inner ear is called the ________."
   answer="labyrinth"
+  accept="bony labyrinth"
 >}}
 
-{{< selfcheck question="Besides the pons and thalamus, vestibular hair-cell signals from the utricle, saccule, and semicircular canals also project to the cerebellum. Trace that pathway and explain why the cerebellar connection matters." >}}
-Hair cells from the utricle, saccule, and semicircular canals communicate through bipolar neurons to the cochlear nucleus in the medulla, which sends ascending projections to the pons, thalamus, and cerebellum. Connections to the cerebellum are important for coordinated movements.
+{{< selfcheck question="Why would moving forward at a steady 60 mph with your eyes closed give no sensation of movement from the semicircular canals, while suddenly accelerating or braking would?" >}}
+When the head turns, the fluid in the canals shifts, thereby bending stereocilia and sending signals to the brain. Upon cessation of accelerating or decelerating, or just moving, the movement of the fluid within the canals slows or stops. The canals are not sensitive to velocity itself, but to changes in velocity.
 ===CHECKS===
-hair cells from the utricle, saccule, and semicircular canals communicate through bipolar neurons to the cochlear nucleus in the medulla
-ascending projections to the pons, thalamus, and cerebellum
-connections to the cerebellum are important for coordinated movements
+the fluid in the canals shifts, thereby bending stereocilia and sending signals to the brain
+upon cessation of accelerating or decelerating, the movement of the fluid within the canals slows or stops
+the canals are not sensitive to velocity itself, but to changes in velocity
 {{< /selfcheck >}}
 
 ### 36.5 Vision
@@ -456,8 +459,7 @@ connections to the cerebellum are important for coordinated movements
 >}}
 hue
 brightness
-frequency
-candela
+saturation
 {{< /multiplechoice >}}
 
 {{< textin
@@ -594,9 +596,9 @@ six
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Each adrenal gland consists of an inner medulla and an outer ________, each of which secretes different hormones."
-  answer="adrenal cortex"
-  accept="adrenal cortices|cortex|cortices"
+  question="The tissue mass that connects the two lobes of the thyroid gland is called the ________."
+  answer="isthmus"
+  accept="thyroid isthmus|isthmus of the thyroid"
 >}}
 
 {{< selfcheck question="Where is the thymus located, and what role do the hormones it produces play?" >}}
@@ -632,9 +634,9 @@ allowing for movement
 {{< /selfcheck >}}
 
 {{< textin
-  question="Any place at which two bones are joined is called a(n) ________."
-  answer="articulation"
-  accept="joint"
+  question="The longest, heaviest, and strongest bone in the body is called the ________."
+  answer="femur"
+  accept="thighbone|thigh bone|femora"
 >}}
 
 ### 38.2 Bone
@@ -803,9 +805,9 @@ increases the surface area available for gas exchange
 ### 39.4 Transport of Gases in Human Bodily Fluids
 
 {{< textin
-  question="The protein molecule in red blood cells that can bind oxygen, carbon dioxide, and carbon monoxide is called ________."
-  answer="hemoglobin"
-  accept="Hb"
+  question="The sigmoidal, or S-shaped, graph that plots the relative saturation of hemoglobin with oxygen against the partial pressure of oxygen in the blood is called a(n) ________."
+  answer="oxygen dissociation curve"
+  accept="dissociation curve|oxygen-hemoglobin dissociation curve|oxyhemoglobin dissociation curve|hemoglobin-oxygen dissociation curve"
 >}}
 
 {{< multiplechoice
@@ -833,6 +835,7 @@ long-term exposure can cause brain damage or death
 {{< textin
   question="Blood flow in a single circuit, such as occurs in fish where the blood flows through the gills, then past the organs and the rest of the body, before returning to the heart, is called ________."
   answer="unidirectional circulation"
+  accept="unidirectional flow|single circulation"
 >}}
 
 {{< multiplechoice
@@ -867,7 +870,7 @@ hemoglobin
 {{< textin
   question="The most abundant protein in human blood plasma, which transports hormones and fatty acids, buffers pH, and maintains osmotic pressure, is called ________."
   answer="albumin"
-  accept="human serum albumin"
+  accept="human serum albumin|serum albumin"
 >}}
 
 {{< selfcheck question="What roles do T cells play in the immune response, and how do they specifically act against viruses?" >}}
@@ -895,12 +898,13 @@ contraction of the atria
 contraction of the ventricles
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How do vasoconstriction and vasodilation regulate the movement of materials at a capillary?" >}}
-The movement of materials at the site of capillaries is regulated by vasoconstriction, narrowing of the blood vessels, and vasodilation, widening of the blood vessels; this is important in the overall regulation of blood pressure.
+{{< selfcheck question="What three layers, or tunics, form the walls of arteries and veins, and what is each made of?" >}}
+There are three distinct layers, or tunics, that form the walls of blood vessels. The first tunic is a smooth, inner lining of endothelial cells that are in contact with the red blood cells. Veins and arteries both have two further tunics that surround the endothelium: the middle tunic is composed of smooth muscle and the outermost layer is connective tissue (collagen and elastic fibers).
 ===CHECKS===
-vasoconstriction, narrowing of the blood vessels
-vasodilation, widening of the blood vessels
-this is important in the overall regulation of blood pressure
+the first tunic is a smooth, inner lining of endothelial cells that are in contact with the red blood cells
+veins and arteries both have two further tunics that surround the endothelium
+the middle tunic is composed of smooth muscle
+the outermost layer is connective tissue (collagen and elastic fibers)
 {{< /selfcheck >}}
 
 ### 40.4 Blood Flow and Blood Pressure Regulation
@@ -939,26 +943,26 @@ it also promotes the diffusion of fluid into the interstitial space
 >}}
 
 {{< multiplechoice
-  question="Sharks are cartilaginous fish with which organ to secrete salt and assist in osmoregulation?"
-  answer="the rectal gland"
+  question="Why do electrolytes such as sodium chloride have a greater effect on osmotic pressure, per mass, than glucose?"
+  answer="They add more solute particles to the solution."
 >}}
-the rectal gland
-the kidney
-the gills
+Their molecules are larger than glucose molecules.
+They pass through membranes by passive diffusion.
+They add more solute particles to the solution.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why can a damaged or absent mechanism for regulating osmotic pressure have dire consequences for an organism?" >}}
-Without a mechanism to regulate osmotic pressure, or when a disease damages this mechanism, there is a tendency to accumulate toxic waste and water, which can have dire consequences.
+{{< selfcheck question="Why do osmotic pressures have a direct bearing on blood pressure?" >}}
+Since osmotic pressure is regulated by the movement of water across membranes, the volume of the fluid compartments can also change temporarily. Because blood plasma is one of the fluid components, osmotic pressures have a direct bearing on blood pressure.
 ===CHECKS===
-without a mechanism to regulate osmotic pressure, or when a disease damages this mechanism
-there is a tendency to accumulate toxic waste and water
-which can have dire consequences
+osmotic pressure is regulated by the movement of water across membranes
+the volume of the fluid compartments can also change temporarily
+blood plasma is one of the fluid components
 {{< /selfcheck >}}
 
 ### 41.2 The Kidneys and Osmoregulatory Organs
 
 {{< multiplechoice
-  question="Which artery branches directly from the renal artery upon entering the kidney, before splitting further into interlobar arteries?"
+  question="Upon entering the kidney, each renal artery splits into several arteries of which kind?"
   answer="segmental artery"
 >}}
 interlobar artery
@@ -970,20 +974,21 @@ cortical radiate artery
 {{< textin
   question="The upper limit on the amount of solute that can be transported out of the renal tubules during reabsorption is called the ________."
   answer="transport maximum"
+  accept="transport maxima"
 >}}
 
 {{< selfcheck question="How do the macula densa and juxtaglomerular cells work together, and what do they ultimately help regulate?" >}}
-The macula densa are cells in the ascending limb of the loop of Henle in the distal convoluted tubule, and juxtaglomerular cells are cells in the afferent arterioles that lie in contact with them. Together, the macula densa and juxtaglomerular cells form the juxtaglomerular complex, an endocrine structure that secretes the enzyme renin and the hormone erythropoietin. When hormones trigger the macula densa cells due to variations in blood volume, blood pressure, or electrolyte balance, these cells communicate the problem to the capillaries in the afferent and efferent arterioles, which constrict or relax to change the glomerular filtration rate of the kidneys.
+The DCT ascending limb of the loop of Henle has masses of cells called macula densa, which are in contact with cells of the afferent arterioles called juxtaglomerular cells. Together, the macula densa and juxtaglomerular cells form the juxtaglomerular complex (JGC). The JGC is an endocrine structure that secretes the enzyme renin. When hormones trigger the macula densa cells in the DCT due to variations in blood volume, blood pressure, or electrolyte balance, these cells can immediately communicate the problem to the capillaries in the afferent and efferent arterioles, which can constrict or relax to change the glomerular filtration rate of the kidneys.
 ===CHECKS===
 together the macula densa and juxtaglomerular cells form the juxtaglomerular complex
-an endocrine structure that secretes the enzyme renin and the hormone erythropoietin
+the JGC is an endocrine structure that secretes the enzyme renin
 these cells communicate the problem to the capillaries in the afferent and efferent arterioles
 which constrict or relax to change the glomerular filtration rate of the kidneys
 {{< /selfcheck >}}
 
 ### 41.3 Excretion Systems
 
-{{< selfcheck question="What kind of organelle do prokaryotes such as bacteria lack that the amoeba uses for excretion, and how does a contractile vacuole differ from an ordinary vacuole?" >}}
+{{< selfcheck question="Do prokaryotes such as bacteria contain membrane-bound vacuoles? In the amoeba, how are cellular wastes and excess water excreted, and how do contractile vacuoles differ from vacuoles?" >}}
 Prokaryotes such as bacteria do not contain membrane-bound vacuoles. In the amoeba, cellular wastes and excess water are excreted by exocytosis, when the contractile vacuoles merge with the cell membrane and expel wastes into the environment. Contractile vacuoles should not be confused with vacuoles, which store food or water.
 ===CHECKS===
 prokaryotes such as bacteria do not contain membrane-bound vacuoles
@@ -1001,7 +1006,7 @@ excreted as a thick paste
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="In the exchange pumps that line the Malpighian tubules, which ion is actively transported into the cell while potassium and sodium ions are transported out?"
+  question="In the exchange pumps that line the Malpighian tubules, which ion is actively transported into the cell?"
   answer="H⁺"
 >}}
 K⁺
@@ -1017,13 +1022,13 @@ Na⁺
 >}}
 
 {{< multiplechoice
-  question="Which enzyme catalyzes a key step of the urea cycle whose deficiency can lead to a toxic buildup of ammonia in the body?"
-  answer="ornithine transcarbamylase"
+  question="Which amino acid is converted into different intermediates and then regenerated at the end of the urea cycle, giving the cycle its other name?"
+  answer="L-ornithine"
 >}}
-arginosuccinate synthetase
-arginosuccinate lyase
-arginase 1
-ornithine transcarbamylase
+L-arginine
+L-ornithine
+L-aspartate
+L-citrulline
 {{< /multiplechoice >}}
 
 {{< selfcheck question="How does the way aquatic animals excrete ammonia differ from what terrestrial organisms must do with it?" >}}
@@ -1047,12 +1052,13 @@ by converting angiotensin I to angiotensin II
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Atrial natriuretic peptide is released by cells in the atrium of the heart in response to high blood pressure and in patients with which condition?"
-  answer="sleep apnea"
+  question="Why does aldosterone manage not only sodium levels but also the water levels in body fluids?"
+  answer="because water follows sodium to maintain osmotic balance"
 >}}
-Addison's disease
-sleep apnea
-hemorrhaging
+because it inserts aquaporins in the collecting ducts
+because it triggers the release of ADH from the hypothalamus
+because water follows sodium to maintain osmotic balance
+because it acts as a vasodilator
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Besides its effect on blood vessels, how does atrial natriuretic peptide (ANP) act on the kidney to lower blood pressure, and how do its actions relate to aldosterone, ADH, and renin?" >}}
@@ -1068,18 +1074,19 @@ its actions suppress the actions of aldosterone, ADH, and renin
 ### 42.1 Innate Immune Response
 
 {{< textin
-  question="A leukocyte that, like a neutrophil, releases chemicals to stimulate the inflammatory response is called a(n) ________."
-  answer="basophil"
+  question="The subclass of cytokines named for mediating interactions between leukocytes, and involved in bridging the innate and adaptive immune responses, is the ________."
+  answer="interleukin"
+  accept="IL"
 >}}
 
 {{< multiplechoice
-  question="Toll-like receptors (TLRs) are described as one of the most ancient components of the immune system. Beyond the immune system, TLRs have also been identified in which body site?"
-  answer="the mammalian nervous system"
+  question="In which animals are Toll-like receptors (TLRs), a type of pattern recognition receptor, present?"
+  answer="in invertebrates as well as vertebrates"
 >}}
-the mammalian nervous system
-the bone marrow
-the thymus gland
-the liver
+in vertebrates only
+in mammals only
+in invertebrates only
+in invertebrates as well as vertebrates
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Why does a fever help the body fight certain bacterial pathogens?" >}}
@@ -1106,10 +1113,10 @@ this is called nutritional immunity
   answer="clonal selection"
 >}}
 
-{{< selfcheck question="Mycobacterium tuberculosis can evade a macrophage's attempts to destroy it after being engulfed. How does a TH1 cell that forms in response to M. tuberculosis infection help the macrophage overcome this?" >}}
-Macrophages can stimulate naïve T cells to become TH1 cells. These stimulated T cells secrete specific cytokines that send feedback to the macrophage to stimulate its digestive capabilities and allow it to destroy the colonizing M. tuberculosis.
+{{< selfcheck question="*Mycobacterium tuberculosis* can evade a macrophage's attempts to destroy it after being engulfed. How does a T<sub>H</sub>1 cell that forms in response to *M. tuberculosis* infection help the macrophage overcome this?" >}}
+Macrophages can stimulate naïve T cells to become T<sub>H</sub>1 cells. These stimulated T cells secrete specific cytokines that send feedback to the macrophage to stimulate its digestive capabilities and allow it to destroy the colonizing *M. tuberculosis*.
 ===CHECKS===
-macrophages can stimulate naive T cells to become TH1 cells
+macrophages can stimulate naive T cells
 these stimulated T cells secrete specific cytokines that send feedback to the macrophage
 to stimulate its digestive capabilities and allow it to destroy the colonizing M. tuberculosis
 {{< /selfcheck >}}
@@ -1132,13 +1139,13 @@ molecular mimicry
   accept="recombinase"
 >}}
 
-{{< selfcheck question="Antibodies protect the body against extracellular pathogens in three distinct ways after binding them. Describe neutralization, opsonization, and complement fixation." >}}
-Antibodies coat extracellular pathogens and neutralize them by blocking key sites on the pathogen that enhance their infectivity, preventing the pathogens from entering and infecting host cells. Antibodies also mark pathogens for destruction by phagocytic cells such as macrophages or neutrophils; this phagocytic enhancement by antibodies is called opsonization. In complement fixation, IgM and IgG in serum bind to antigens and provide docking sites onto which sequential complement proteins can bind, and the combination of antibodies and complement enhances opsonization even further.
+{{< selfcheck question="Besides neutralizing extracellular pathogens, antibodies act against them through opsonization and complement fixation. Describe each of these two processes." >}}
+Antibodies also mark pathogens for destruction by phagocytic cells, such as macrophages or neutrophils, because phagocytic cells are highly attracted to macromolecules complexed with antibodies. Phagocytic enhancement by antibodies is called opsonization. In a process called complement fixation, IgM and IgG in serum bind to antigens and provide docking sites onto which sequential complement proteins can bind. The combination of antibodies and complement enhances opsonization even further and promotes rapid clearing of pathogens.
 ===CHECKS===
-antibodies neutralize pathogens by blocking key sites that enhance their infectivity, preventing them from entering and infecting host cells
-antibodies mark pathogens for destruction by phagocytic cells such as macrophages or neutrophils, which is called opsonization
-in complement fixation, IgM and IgG bind antigens and provide docking sites for sequential complement proteins to bind
-the combination of antibodies and complement enhances opsonization even further
+antibodies mark pathogens for destruction by phagocytic cells, such as macrophages or neutrophils
+phagocytic enhancement by antibodies is called opsonization
+in complement fixation, IgM and IgG in serum bind to antigens and provide docking sites onto which sequential complement proteins can bind
+the combination of antibodies and complement enhances opsonization even further and promotes rapid clearing of pathogens
 {{< /selfcheck >}}
 
 ### 42.4 Disruptions in the Immune System
@@ -1150,7 +1157,7 @@ the combination of antibodies and complement enhances opsonization even further
 >}}
 
 {{< multiplechoice
-  question="In the United States, 20 percent of the population exhibits symptoms of allergy or asthma. What percentage test positive against one or more allergens?"
+  question="In the United States, what percentage of the population tests positive against one or more allergens?"
   answer="55 percent"
 >}}
 55 percent
@@ -1158,7 +1165,7 @@ the combination of antibodies and complement enhances opsonization even further
 5 percent
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How can infection with Streptococcus pyogenes lead to rheumatic fever through an autoimmune mechanism?" >}}
+{{< selfcheck question="How can infection with *Streptococcus pyogenes* lead to rheumatic fever through an autoimmune mechanism?" >}}
 Infection with *Streptococcus pyogenes* may generate antibodies or T cells that react with heart muscle, because heart muscle has a similar structure to the surface of *S. pyogenes*. These antibodies can damage heart muscle with autoimmune attacks, leading to rheumatic fever.
 ===CHECKS===
 infection with Streptococcus pyogenes may generate antibodies or T cells that react with heart muscle
@@ -1171,12 +1178,12 @@ these antibodies can damage heart muscle with autoimmune attacks, leading to rhe
 ### 43.1 Reproduction Methods
 
 {{< multiplechoice
-  question="Which of the following is given as an advantage of asexual reproduction for colonizing new habitats?"
-  answer="an individual does not need to find a mate to reproduce"
+  question="Bees use parthenogenesis to produce which individuals?"
+  answer="haploid males"
 >}}
-large numbers of offspring can be produced quickly
-an individual does not need to find a mate to reproduce
-the rapid rates of asexual reproduction may allow for a speedy response to environmental changes
+diploid females
+diploid males
+haploid males
 {{< /multiplechoice >}}
 
 {{< selfcheck question="In what two ways can hermaphroditic animals reproduce?" >}}
@@ -1196,13 +1203,12 @@ fertilizing each other and both producing offspring
 ### 43.2 Fertilization
 
 {{< textin
-  question="The process in which one or several females release their eggs and the male(s) release sperm in the same area, at the same time, is called ________."
-  answer="spawning"
-  accept="broadcast spawning"
+  question="The process in which the young develop within the female, receiving nourishment from the parent's blood through a placenta, is called ________."
+  answer="viviparity"
 >}}
 
 {{< multiplechoice
-  question="In annelids, sperm and eggs are produced from undifferentiated cells and stored in which cavity until they are released?"
+  question="In annelids, sperm and eggs are produced from undifferentiated cells and stored in which structure until they are released?"
   answer="the coelom"
 >}}
 the epididymis
@@ -1247,17 +1253,17 @@ to help the sperm penetrate and fertilize the egg
 
 {{< multiplechoice
   question="Which of the following is one of the secondary sexual characteristics that testosterone produces in males during adolescence?"
-  answer="a deepening of the voice"
+  answer="deepening of the voice"
 >}}
 breast development
-a deepening of the voice
-calcium absorption
+deepening of the voice
 flaring of the hips
 {{< /multiplechoice >}}
 
 {{< textin
-  question="At the stage of prenatal development when a fertilized egg traveling through the fallopian tube contains 30 to 60 cells, it is called the ________."
-  answer="morula"
+  question="The most potent and prevalent form of estrogen is called ________."
+  answer="estradiol"
+  accept="oestradiol"
 >}}
 
 {{< selfcheck question="Late in the ovarian cycle, what happens to the corpus luteum, its hormones, and the endometrium if no fertilized egg is implanted into the uterus?" >}}
@@ -1296,9 +1302,9 @@ that prevents fertilized eggs from implanting into the uterine wall
 ### 43.6 Fertilization and Early Embryonic Development
 
 {{< selfcheck question="What two mechanisms did Ernest Everett Just describe for preventing more than one sperm from fertilizing an egg?" >}}
-The fast reaction is what Just called a "wave of negativity," in which the membrane potential of the egg cell altered quickly. The slow block involved changing the membrane structure itself.
+The fast reaction included what Just called a "wave of negativity," in which the membrane potential of the egg cell altered quickly. Then, the slow block involved changing the membrane structure itself.
 ===CHECKS===
-the fast reaction is what Just called a "wave of negativity," in which the membrane potential of the egg cell altered quickly
+the fast reaction included what Just called a "wave of negativity," in which the membrane potential of the egg cell altered quickly
 the slow block involved changing the membrane structure itself
 {{< /selfcheck >}}
 
@@ -1308,7 +1314,7 @@ the slow block involved changing the membrane structure itself
 >}}
 
 {{< multiplechoice
-  question="What does the procedure known as prenatal genetic diagnosis (PGD) involve?"
+  question="What does the reproductive-technology procedure known as PGD involve?"
   answer="screening human embryos as part of the process of in vitro fertilization"
 >}}
 selecting donated sperm exclusively from donors with high IQs
@@ -1324,10 +1330,10 @@ forcibly sterilizing people judged to be unfit
   accept="C. elegans"
 >}}
 
-{{< selfcheck question="What would happen to the ectoderm during neural system formation if the signaling by growth factors at its edges were disrupted?" >}}
-If the signaling by growth factors were disrupted, then the entire ectoderm would differentiate into neural tissue.
+{{< selfcheck question="During formation of the neural system, growth factors signal some cells at the edge of the ectoderm to become epidermis cells. What do the remaining cells in the center form, and what would happen to the ectoderm if the growth-factor signaling were disrupted?" >}}
+The remaining cells in the center form the neural plate. If the signaling by growth factors were disrupted, then the entire ectoderm would differentiate into neural tissue.
 ===CHECKS===
-if the signaling by growth factors were disrupted
+the remaining cells in the center form the neural plate
 the entire ectoderm would differentiate into neural tissue
 {{< /selfcheck >}}
 
@@ -1343,4 +1349,4 @@ the liver
 
 ---
 
-<small>This knowledge check is written for Unit 7 (Chapters 33–43) of [Biology 2e](https://openstax.org/books/biology-2e/pages/33-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: every question is locally written from the pinned text of the chapters' own modules — their section summaries, glossary definitions, body passages, and comparison tables — and none is transcribed from the book's exercise sets, which the section pages already carry; no question carries a hint, and every self-check carries a rubric that decomposes a model answer made of the module's own sentences; the 39.3 self-check prints "theropods" where module m66647 misspells the word, and no item is built on module m66664's dendritic-cell definition, which places antigen presentation on the surface of other cells; the 38.4 self-check on sarcomere shortening prints "A band" where its source paragraph once says "A zone", the module's own term from its defining paragraph.</small>
+<small>This knowledge check is written for Unit 7 (Chapters 33–43) of [Biology 2e](https://openstax.org/books/biology-2e/pages/33-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: every question is locally written from the pinned text of the chapters' own modules — their section summaries, glossary definitions, body passages, and comparison tables — and none is transcribed from the book's exercise sets, which the section pages already carry; no question carries a hint, and every self-check carries a rubric that decomposes a model answer made of the module's own sentences; the 39.3 self-check prints "theropods" where module m66647 misspells the word, and no item is built on module m66664's dendritic-cell definition, which places antigen presentation on the surface of other cells; the 38.4 self-check on sarcomere shortening prints "A band" where its source paragraph once says "A zone", the module's own term from its defining paragraph; the 41.2 self-check on the juxtaglomerular complex says it secretes renin and omits module m66658's "and the hormone erythropoietin," which the section page corrects with a Source note.</small>

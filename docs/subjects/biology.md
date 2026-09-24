@@ -1,5 +1,7 @@
 # Biology 2e — subject playbook
 
+Re-reviewed to the A&P standard, completed September 24, 2026.
+
 The book-specific rules for OpenStax **Biology 2e**, on top of
 `docs/authoring-playbook.md` (the shared core) and
 `docs/subjects/life-sciences.md` (the life-sciences baseline: notation, the

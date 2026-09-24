@@ -59,6 +59,7 @@ a latent infection
 {{< textin
   question="Dramatic biochemical and structural changes that a virus's replication cycle produces in a host cell, sometimes destroying it, are called ________ effects."
   answer="cytopathic"
+  accept="cytopathic effect"
 >}}
 
 {{< selfcheck question="What are the two ways an enveloped virus can enter a host cell after binding to its receptor, and which of the two is used only by enveloped virions?" >}}
@@ -85,16 +86,16 @@ protease
 {{< textin
   question="The 'drug cocktail' combination approach that attacks HIV at multiple stages of its replicative cycle at once, so the virus cannot develop resistance to every drug simultaneously, is known by the acronym ________."
   answer="HAART"
-  accept="highly active antiretroviral therapy|highly active anti-retroviral therapy"
+  accept="highly active antiretroviral therapy|highly active anti-retroviral therapy|HAART therapy"
 >}}
 
-{{< selfcheck question="Why must the molecular targets of an antiviral drug be proteins encoded by viral genes, rather than molecules already present in a healthy host cell?" >}}
-Because viruses use the resources of the host cell for replication and the production of new virus proteins, it is difficult to block their activities without damaging the host. It is important that the targeted proteins be encoded by viral genes and that these molecules are not present in a healthy host cell. In this way, viral growth is inhibited without damaging the host.
+{{< selfcheck question="Why must people be vaccinated against influenza every year, while the same vaccine against measles, mumps, and rubella is used year after year?" >}}
+Some vaccines are in continuous development because certain viruses, such as influenza and HIV, have a high mutation rate compared to that of other viruses and normal host cells. With influenza, mutations in the surface molecules of the virus help the organism evade the protective immunity that may have been obtained in a previous influenza season, making it necessary for individuals to get vaccinated every year. Other viruses, such as those that cause the childhood diseases measles, mumps, and rubella, mutate so infrequently that the same vaccine is used year after year.
 ===CHECKS===
-viruses use the resources of the host cell for replication and the production of new virus proteins
-it is difficult to block their activities without damaging the host
-the targeted proteins be encoded by viral genes and that these molecules are not present in a healthy host cell
-viral growth is inhibited without damaging the host
+certain viruses, such as influenza and HIV, have a high mutation rate compared to that of other viruses and normal host cells
+mutations in the surface molecules of the virus help the organism evade the protective immunity that may have been obtained in a previous influenza season
+making it necessary for individuals to get vaccinated every year
+other viruses, such as those that cause measles, mumps, and rubella, mutate so infrequently that the same vaccine is used year after year
 {{< /selfcheck >}}
 
 ### 21.4 Other Acellular Entities: Prions and Viroids
@@ -109,15 +110,15 @@ variant Creutzfeldt-Jakob disease
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Bovine spongiform encephalopathy (BSE), first detected in the United Kingdom, was spread between cattle by which practice?"
-  answer="feeding cattle nervous tissue to other cattle"
+  question="Which acellular pathogen manufactures no proteins and produces only a single, specific RNA molecule?"
+  answer="a viroid"
 >}}
-practicing ritualistic cannibalism
-feeding cattle nervous tissue to other cattle
-donating blood from affected regions
+a prion
+a virus
+a viroid
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does a single PrP<sup>sc</sup> molecule introduced into the body lead to an exponential increase of the infectious prion protein?" >}}
+{{< selfcheck question="Once a prion is introduced into the body, how does the PrP<sup>sc</sup> it contains lead to an exponential increase of the infectious form of the protein?" >}}
 Once introduced into the body, the PrP<sup>sc</sup> contained within the prion binds to PrP<sup>c</sup> and converts it to PrP<sup>sc</sup>. This leads to an exponential increase of the PrP<sup>sc</sup> protein, which aggregates.
 ===CHECKS===
 the PrPsc contained within the prion binds to PrPc and converts it to PrPsc
@@ -162,8 +163,8 @@ species that diverged long ago will have more genes that are dissimilar
 {{< /selfcheck >}}
 
 {{< multiplechoice
-  question="Which term describes a prokaryotic cell with a spiral shape?"
-  answer="spirilli"
+  question="Which term describes rod-shaped prokaryotic cells?"
+  answer="bacilli"
 >}}
 cocci
 bacilli
@@ -171,18 +172,19 @@ spirilli
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="An ancestor of modern Archaea is believed to have given rise to which other domain of life?"
-  answer="Eukarya"
+  question="Which structures, present in many species of bacteria and archaea, consist of extra-chromosomal DNA?"
+  answer="plasmids"
 >}}
-Bacteria
-Eukarya
-Archaea
+capsules
+pili
+flagella
+plasmids
 {{< /multiplechoice >}}
 
 ### 22.3 Prokaryotic Metabolism
 
 {{< multiplechoice
-  question="Of the total nitrogen that prokaryotes release into the atmosphere, what percentage returns as ammonia, with the remainder returning as N₂ and N₂O?"
+  question="Of the total nitrogen released into the atmosphere, what percentage is released as ammonia, with the rest released as N₂ and N₂O?"
   answer="15 percent"
 >}}
 12 percent
@@ -191,16 +193,16 @@ Archaea
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which organisms are the primary producers of organic carbon compounds from carbon dioxide?"
-  answer="land plants and photosynthetic bacteria"
+  question="Prokaryotes that get their energy from light but their carbon from organic compounds are called ________."
+  answer="photoheterotrophs"
 >}}
-animals and other heterotrophs
-bacteria and fungi collectively called decomposers
-archaea that produce methane in anoxic sediments
-land plants and photosynthetic bacteria
+photoautotrophs
+chemoheterotrophs
+photoheterotrophs
+chemolithoautotrophs
 {{< /multiplechoice >}}
 
-{{< selfcheck question="In anoxic aquatic sediments, how is the methane that archaea produce ultimately converted back into carbon dioxide before it can escape into the atmosphere as methane?" >}}
+{{< selfcheck question="In aquatic environments, how is the methane that archaea produce in anoxic sediments converted to carbon dioxide?" >}}
 In anoxic sediments, prokaryotes, mostly archaea, produce methane. This methane moves into the zone above the sediment, which is richer in oxygen, and supports bacteria called methane oxidizers that oxidize the methane to carbon dioxide, which then returns to the atmosphere.
 ===CHECKS===
 in anoxic sediments, prokaryotes, mostly archaea, produce methane
@@ -273,7 +275,6 @@ fecal transplants from healthy donors
 sexual reproduction
 karyogamy
 mitosis
-endosymbiosis
 {{< /multiplechoice >}}
 
 {{< textin
@@ -308,7 +309,7 @@ photosynthesis
   answer="phototaxis"
 >}}
 
-{{< selfcheck question="How can protists exhibit complex cellular organization even though most of them are unicellular?" >}}
+{{< selfcheck question="How can protists exhibit complex cellular organization even without true multicellularity?" >}}
 A few protists live as colonies that behave in some ways as a group of free-living cells and in other ways as a multicellular organism. Some protists are composed of enormous, multinucleate, single cells that look like amorphous blobs of slime, or in other cases, like ferns. In some species of protists, the nuclei are different sizes and have distinct roles in protist cell function.
 ===CHECKS===
 protists live as colonies that behave in some ways as a group of free-living cells and in other ways as a multicellular organism
@@ -324,13 +325,13 @@ in some species of protists, the nuclei are different sizes and have distinct ro
 >}}
 *Amoeba proteus*
 *Dictyostelium*
-*Caulerpa*
 *Pelomyxa*
 {{< /multiplechoice >}}
 
 {{< textin
   question="A small group of parasites, primarily of fish, once grouped with fungi but now thought to be closely related to animals, are called the ________."
   answer="Mesomycetozoa"
+  accept="Mesomycetozoan"
 >}}
 
 {{< selfcheck question="How does the sinking of dead rhizarians' tests contribute to the biological carbon pump that helps regulate atmospheric carbon dioxide?" >}}
@@ -350,13 +351,12 @@ carbon is pumped to the ocean depths where it is inaccessible to the atmosphere 
 >}}
 
 {{< multiplechoice
-  question="Widespread late blight caused by *Phytophthora infestans* precipitated which nineteenth-century catastrophe?"
-  answer="the Irish potato famine"
+  question="Infections with *Trypanosoma cruzi*, the cause of Chagas disease in Latin America, are mainly caused by which insects?"
+  answer="*Triatoma* kissing bugs"
 >}}
-the Irish potato famine
-the French wine industry's collapse
-malaria epidemics in Michigan
-African sleeping sickness epidemics
+*Glossina* tsetse flies
+*Anopheles* mosquitoes
+*Triatoma* kissing bugs
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Why are saprobic protists essential to keeping organic carbon cycling through an ecosystem?" >}}
@@ -374,7 +374,7 @@ without saprobe species, life would cease to exist as all organic carbon became 
 {{< textin
   question="Pigments associated with the fungal cell wall play a protective role against ________ radiation."
   answer="ultraviolet"
-  accept="UV"
+  accept="UV|ultra-violet"
 >}}
 
 {{< textin
@@ -383,7 +383,7 @@ without saprobe species, life would cease to exist as all organic carbon became 
 >}}
 
 {{< selfcheck question="Why did scientists historically classify fungi as plants, and what does molecular evidence now show about their true evolutionary relationships?" >}}
-Until recently, many scientists classified fungi as plants, since fungi, like plants, are mostly sessile and seemingly rooted in place and possess a stem-like structure as well as a root-like fungal mycelium in the soil. However, molecular biology analysis of the fungal genome demonstrates that fungi are more closely related to animals than plants.
+Up until the mid-20th century, many scientists classified fungi as plants, since fungi, like plants, are mostly sessile and seemingly rooted in place and possess a stem-like structure as well as a root-like fungal mycelium in the soil. However, molecular biology analysis of the fungal genome demonstrates that fungi are more closely related to animals than plants.
 ===CHECKS===
 many scientists classified fungi as plants
 fungi, like plants, are mostly sessile and seemingly rooted in place
@@ -394,7 +394,7 @@ molecular biology analysis of the fungal genome demonstrates that fungi are more
 ### 24.2 Classifications of Fungi
 
 {{< multiplechoice
-  question="Which fungal phylum is the only one whose members have retained flagella, producing both flagellated gametes and diploid zoospores?"
+  question="Which fungal phylum is the only one whose members have retained flagella?"
   answer="Chytridiomycota"
 >}}
 Zygomycota
@@ -430,7 +430,7 @@ the forest floor
 {{< /multiplechoice >}}
 
 {{< textin
-  question="In an endomycorrhizal association, the branched structure that forms when fungal hyphae grow inside a plant root cell is called a ________."
+  question="In an endomycorrhizal association, the fungi grow inside the root in a branched structure called a(n) ________."
   answer="arbuscule"
 >}}
 
@@ -456,8 +456,8 @@ powdery mildew
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The protein found in hair, skin, and nails that dermatophyte enzymes break down, causing conditions such as athlete's foot and jock itch, is called ________."
-  answer="keratin"
+  question="Coccidioidomycosis, a systemic mycosis commonly found in the southwestern United States, is often called ________."
+  answer="valley fever"
 >}}
 
 {{< selfcheck question="Explain what an opportunistic mycosis is, and describe how the yeast Candida can cause one when conditions in the body change." >}}
@@ -505,7 +505,7 @@ there is little evidence as to the effectiveness
 ### 25.1 Early Plant Life
 
 {{< multiplechoice
-  question="What term describes a plant that produces two different sizes of spores — the smaller microspores and the larger megaspores?"
+  question="What term describes a plant that produces two types of spores, a smaller male spore and a comparatively larger female spore?"
   answer="heterosporous"
 >}}
 homosporous
@@ -521,7 +521,7 @@ phloem transports food derived from photosynthesis throughout the entire plant
 {{< /selfcheck >}}
 
 {{< textin
-  question="In a life cycle where the diploid stage is dominant and the only haploid cells are the gametes, the cycle is described as ________."
+  question="A life cycle in which the only haploid cells are the gametes, as in humans, is described as ________."
   answer="diplontic"
 >}}
 
@@ -555,6 +555,7 @@ than the Charales or the Coleochaetales
 {{< textin
   question="In hornworts, thin branched cells called ________ surround the spores and help propel them farther into the environment."
   answer="pseudoelaters"
+  accept="pseudo-elaters"
 >}}
 
 {{< textin
@@ -583,7 +584,7 @@ They release flagellated sperm that must swim through a layer of moisture.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The vascular plants, whose more than 260,000 species represent over 90 percent of Earth's vegetation, are also called ________."
+  question="The vascular plants, the dominant and most conspicuous group of land plants, are also called ________."
   answer="tracheophytes"
 >}}
 
@@ -610,8 +611,8 @@ sporangium
 {{< /multiplechoice >}}
 
 {{< textin
-  question="In seed plants, the gametophytes shrank while the ________ became prominent structures."
-  answer="sporophytes"
+  question="Seed ferns produced their seeds along their branches, in structures called ________ that enclosed and protected the ovule."
+  answer="cupules"
 >}}
 
 {{< selfcheck question="In seed plants, how do the sperm of cycads and *Ginkgo* differ from the sperm of modern gymnosperms and all angiosperms, and how are they nonetheless delivered to the female gametophyte?" >}}
@@ -636,9 +637,9 @@ mitosis
 {{< /multiplechoice >}}
 
 {{< textin
-  question="In pines, the cone that contains two ovules per scale is called the ________."
-  answer="ovulate cone"
-  accept="female cone"
+  question="Because the wood of conifers contains tracheids but no vessel elements, it is more primitive than the wood of angiosperms and is referred to as ________."
+  answer="soft wood"
+  accept="softwood"
 >}}
 
 {{< selfcheck question="Why are conifers more susceptible than deciduous trees to leaf infestations?" >}}
@@ -651,7 +652,7 @@ cannot shed parasites and restart with a fresh supply of leaves in spring
 ### 26.3 Angiosperms
 
 {{< multiplechoice
-  question="In an angiosperm ovule, a diploid megasporocyte undergoes meiosis to produce how many haploid megaspores?"
+  question="In an angiosperm ovule, a diploid megasporocyte undergoes meiosis to produce how many haploid cells?"
   answer="four"
 >}}
 two
@@ -661,7 +662,7 @@ eight
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Winged maple seeds, also called whirligigs or 'helicopters,' have the botanical name ________."
+  question="Winged maple 'helicopter seeds,' or whirligigs, are fruits whose botanical name is ________."
   answer="samara"
 >}}
 
@@ -717,6 +718,7 @@ nerve tissue
 {{< textin
   question="The presence of a *Hox* gene in the Placozoa, together with similarities in the genomic organization of the Placozoa, Cnidaria, and Bilateria, has led to the inclusion of those three groups in a clade called the ________."
   answer="Parahoxozoa"
+  accept="parahoxozoan"
 >}}
 
 {{< selfcheck question="How does incomplete metamorphosis in insects differ from complete metamorphosis, and what advantage can complete metamorphosis give?" >}}
@@ -745,13 +747,12 @@ the pleural cavity
   accept="determinate"
 >}}
 
-{{< selfcheck question="Explain why deuterostome development makes the existence of embryonic stem cells possible." >}}
-Deuterostomes undergo indeterminate cleavage, so their blastomeres are not yet committed to a specific cell fate at this early stage. A blastomere separated from the rest can even develop into a twin, and this flexibility is preserved in embryonic stem cells, which retain the ability to develop into any cell type until their fate is programmed at a later developmental stage.
+{{< selfcheck question="Although ctenophores look similar to jellyfish, why are they considered to have rotational symmetry rather than radial or biradial symmetry?" >}}
+If a radially symmetrical animal is divided in any direction along the oral/aboral axis, the two halves will be mirror images. The Ctenophora, although they look similar to jellyfish, are considered to have rotational symmetry rather than radial or biradial symmetry because division of the body into two halves along the oral/aboral axis divides them into two copies of the same half, with one copy rotated 180 degrees, rather than two mirror images.
 ===CHECKS===
-deuterostomes undergo indeterminate cleavage
-blastomeres are not yet committed to a specific cell fate
-a blastomere separated from the rest can even develop into a twin
-embryonic stem cells retain the ability to develop into any cell type until their fate is programmed at a later developmental stage
+a radially symmetrical animal divided along the oral/aboral axis gives two halves that are mirror images
+division of the body into two halves along the oral/aboral axis divides them into two copies of the same half
+one copy rotated 180 degrees, rather than two mirror images
 {{< /selfcheck >}}
 
 ### 27.3 Animal Phylogeny
@@ -851,7 +852,7 @@ helps to encourage cross-fertilization and genetic diversity
 >}}
 
 {{< multiplechoice
-  question="Which cnidarian class's medusoid form has a muscular velum below the margin of the bell, making it a hydromedusa?"
+  question="Which cnidarian class has a medusoid form with a muscular veil, or velum, below the margin of the bell?"
   answer="Hydrozoa"
 >}}
 Scyphozoa
@@ -875,7 +876,7 @@ additional mechanical support for the body of the anemone
 >}}
 
 {{< multiplechoice
-  question="Which method of sex determination do many rotifer species exhibit, in which a fertilized egg develops into a female and an unfertilized egg develops into a male?"
+  question="Many rotifer species exhibit which pattern, in which a fertilized egg develops into a female and an unfertilized egg develops into a male?"
   answer="haplodiploidy"
 >}}
 parthenogenesis
@@ -932,7 +933,7 @@ they have a symbiotic relationship with bacteria living in their bodies
 posterior ganglion
 pharyngeal nerve ring
 ventral nerve cord
-copulatory spicules
+dorsal nerve cord
 {{< /multiplechoice >}}
 
 {{< selfcheck question="After tardigrade development produces a fixed number of cells, how does further growth occur?" >}}
@@ -1000,7 +1001,7 @@ individual tube feet are controlled by bulblike ampullae
 ### 29.1 Chordates
 
 {{< multiplechoice
-  question="In adult tunicates, which two of the five chordate characteristics remain after the notochord, nerve cord, and tail disappear during metamorphosis?"
+  question="In adult tunicates, which two of the five chordate characteristics remain after metamorphosis into the adult form?"
   answer="the pharyngeal slits and the endostyle"
 >}}
 the notochord and the post-anal tail
@@ -1036,6 +1037,7 @@ ovoviviparous
 {{< textin
   question="In fishes, a gas-filled organ derived from the gut that helps control buoyancy is called the ________."
   answer="swim bladder"
+  accept="swimbladder"
 >}}
 
 {{< selfcheck question="Which bony fishes have reverted to a primarily cartilaginous skeleton, and what do nearly all other bony fishes have instead?" >}}
@@ -1049,17 +1051,18 @@ which have primarily cartilaginous skeletons
 ### 29.3 Amphibians
 
 {{< multiplechoice
-  question="Which early tetrapod fossil had forelimbs more developed than its hind limbs, suggesting that it dragged itself along when it ventured onto land?"
+  question="Which fossil animal had forelimbs more developed than its hind limbs, suggesting that it dragged itself along when it ventured onto land?"
   answer="*Ichthyostega*"
 >}}
 *Acanthostega*
-*Tiktaalik roseae*
+*Tiktaalik*
 *Ichthyostega*
 {{< /multiplechoice >}}
 
 {{< textin
   question="Frogs with more toxic skins have bright warning, or ________, coloration."
   answer="aposematic"
+  accept="aposematic coloration"
 >}}
 
 {{< selfcheck question="How do frogs use the papilla amphibiorum and papilla basilaris to detect different sounds?" >}}
@@ -1073,13 +1076,13 @@ transmitted from the eardrum through the stapes bone
 ### 29.4 Reptiles
 
 {{< multiplechoice
-  question="Which extraembryonic membrane's blood vessels transport nutrients to the embryo's circulatory system?"
-  answer="the yolk sac"
+  question="In turtles, what is the dorsal shell, which includes the backbone and ribs, called?"
+  answer="the carapace"
 >}}
-the yolk sac
-the chorion
-the allantois
-the amnion
+the carapace
+the plastron
+the bridge
+the scutes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1113,7 +1116,7 @@ the air sacs
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The group of birds that includes every species other than the Paleognathae is called ________."
+  question="The group made up of all birds other than the ratites (the flightless ostriches, emus, rheas, and kiwis) is called ________."
   answer="Neognathae"
 >}}
 
@@ -1155,17 +1158,17 @@ allowing breathing to proceed uninterrupted while the animal is chewing
 ### 29.7 The Evolution of Primates
 
 {{< multiplechoice
-  question="In primates, claws have been modified into which of the following?"
-  answer="flattened nails"
+  question="Which group of primates has the enzymes for making vitamin C, rather than having to get it from food?"
+  answer="strepsirrhines"
 >}}
-flattened nails
-a rotating shoulder joint
-prehensile tails
-ischial callosities
+strepsirrhines
+haplorhines
+tarsiers
+simians
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The oldest known primate-like mammal is called ________."
+  question="The oldest known primate-like mammal, a fossil genus found in North America and Europe that went extinct by the end of the Eocene epoch, is ________."
   answer="Plesiadapis"
 >}}
 

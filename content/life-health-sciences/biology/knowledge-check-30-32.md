@@ -48,7 +48,7 @@ they differentiate into three main types: dermal, vascular, and ground tissue
 >}}
 
 {{< multiplechoice
-  question="Which xylem cell type has thick, lignified secondary cell walls, with water moving from cell to cell only through pits where the secondary wall is absent?"
+  question="Which vascular-tissue cell has thick, lignified secondary cell walls, with water moving from one such cell to the next through pits where the secondary walls are absent?"
   answer="tracheid"
 >}}
 vessel element
@@ -78,7 +78,7 @@ strawberries are an example
 >}}
 in a ring around the pith
 in an X shape at the root's center
-outside the endodermis, surrounding the pericycle
+scattered throughout the ground tissue
 {{< /multiplechoice >}}
 
 {{< selfcheck question="What are the three major functions of the roots of seed plants?" >}}
@@ -104,7 +104,7 @@ whorled
 {{< textin
   question="Botanists call the upper surface of a leaf the ________ surface."
   answer="adaxial"
-  accept="adaxis"
+  accept="adaxis|adaxial surface"
 >}}
 
 {{< selfcheck question="How are the leaves of many aquatic plants adapted to living on the water's surface?" >}}
@@ -117,7 +117,7 @@ a thick waxy cuticle on the leaf surface that repels water
 ### 30.5 Transport of Water and Solutes in Plants
 
 {{< multiplechoice
-  question="Which water-potential component becomes more influential the taller a plant grows, adding roughly 10 MPa of extra resistance to overcome in a tall redwood?"
+  question="Which water-potential component has a negligible effect on a cellular scale and in short plants, but becomes more influential the taller the plant and its water column?"
   answer="gravity potential"
 >}}
 pressure potential
@@ -127,7 +127,7 @@ matric potential
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The formation of small gas bubbles in the xylem, which can interrupt the continuous stream of water moving up the plant, is called ________."
+  question="Small perforations between vessel elements reduce the number and size of gas bubbles that can form in the xylem via a process called ________."
   answer="cavitation"
 >}}
 
@@ -153,7 +153,6 @@ coupled to the uptake of sucrose with a carrier protein called the sucrose-H⁺ 
 >}}
 photomorphogenesis
 phototropism
-phytochrome
 photoperiodism
 {{< /multiplechoice >}}
 
@@ -187,9 +186,8 @@ phosphorus enables food energy to be converted into chemical energy through oxid
 {{< /selfcheck >}}
 
 {{< textin
-  question="The combination of ________, along with water, carbon dioxide, and sunlight, produce the energy that allows plants to grow."
-  answer="organic compounds"
-  accept="organic molecule"
+  question="Inorganic substances, which form the majority of the soil solution, are commonly called ________; those required by plants include nitrogen (N) and potassium (K)."
+  answer="minerals"
 >}}
 
 ### 31.2 The Soil
@@ -200,7 +198,6 @@ phosphorus enables food energy to be converted into chemical energy through oxid
 >}}
 45 percent
 50 percent
-25 percent
 5 percent
 {{< /multiplechoice >}}
 
@@ -209,7 +206,7 @@ phosphorus enables food energy to be converted into chemical energy through oxid
   answer="rhizosphere"
 >}}
 
-{{< selfcheck question="Why do sediments carried by a fast-moving river differ from those carried by a slow-moving river?" >}}
+{{< selfcheck question="How do the sediments carried by a fast-moving river differ from those carried by a slow-moving river?" >}}
 A fast-moving river could have sediments of rocks and sand, whereas a slow-moving river could have fine-textured material, such as clay.
 ===CHECKS===
 a fast-moving river could have sediments of rocks and sand
@@ -229,19 +226,20 @@ hypha
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="In a mycorrhizal partnership, what percentage of the total carbon accessed by the plant can the fungus obtain?"
-  answer="up to 20 percent"
+  question="Which term describes a plant, such as the dodder, that is completely dependent on its host?"
+  answer="holoparasite"
 >}}
-up to 20 percent
-more than 80 percent
-65 percent
+hemiparasite
+saprophyte
+epiphyte
+holoparasite
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Why can plants not take advantage of atmospheric nitrogen (N₂) directly?" >}}
 Plants cannot take advantage of atmospheric nitrogen because they do not have the necessary enzymes to convert it into biologically useful forms.
 ===CHECKS===
-plants cannot take advantage of atmospheric nitrogen
-they do not have the necessary enzymes to convert it into biologically useful forms
+they do not have the necessary enzymes
+to convert it into biologically useful forms
 {{< /selfcheck >}}
 
 ## Chapter 32: Plant Reproduction
@@ -254,16 +252,15 @@ they do not have the necessary enzymes to convert it into biologically useful fo
 >}}
 
 {{< multiplechoice
-  question="In the angiosperm embryo sac, the three nuclei that position themselves at the end opposite the micropyle and later degenerate develop into the ________."
+  question="In the angiosperm embryo sac, the three nuclei that position themselves at the end away from the micropyle develop into the ________."
   answer="antipodal cells"
 >}}
-egg cell
-central cell
 antipodal cells
 synergid cells
+polar nuclei
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain how the location of the female gametophyte differs between angiosperms and gymnosperms, and name two other ways gymnosperm reproduction differs from that of angiosperms." >}}
+{{< selfcheck question="Explain how the location of the female gametophyte differs between angiosperms and gymnosperms, and how the two groups differ in double fertilization and in where their male and female gametophyte structures are borne." >}}
 In angiosperms, the female gametophyte exists in an enclosed structure—the ovule—which is within the ovary; in gymnosperms, the female gametophyte is present on exposed bracts of the female cone. Double fertilization is a key event in the lifecycle of angiosperms, but is completely absent in gymnosperms. The male and female gametophyte structures are present on separate male and female cones in gymnosperms, whereas in angiosperms, they are a part of the flower.
 ===CHECKS===
 in angiosperms, the female gametophyte exists in an enclosed structure—the ovule—which is within the ovary
@@ -316,12 +313,12 @@ bulbs
 leaves
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain how grafting joins two plants together, from the initial cut through to the graft bearing flowers and fruit." >}}
-In grafting, two plant species are used; part of the stem of the desirable plant is grafted onto a rooted plant called the stock. The part that is grafted or attached is called the scion. Both are cut at an oblique angle and placed in close contact with each other, and are then held together. The vascular systems of the two plants grow and fuse, forming a graft. After a period of time, the scion starts producing shoots, and eventually starts bearing flowers and fruits.
+{{< selfcheck question="Explain how grafting joins two plants together, from the initial cut through to the grafted part bearing flowers and fruits." >}}
+In grafting, two plant species are used; part of the stem of the desirable plant is grafted onto a rooted plant called the stock. Both are cut at an oblique angle (any angle other than a right angle), placed in close contact with each other, and are then held together. Matching up these two surfaces as closely as possible is extremely important because these will be holding the plant together. The vascular systems of the two plants grow and fuse, forming a graft. After a period of time, the scion starts producing shoots, and eventually starts bearing flowers and fruits.
 ===CHECKS===
 part of the stem of the desirable plant is grafted onto a rooted plant called the stock
-the part that is grafted or attached is called the scion
-both are cut at an oblique angle and placed in close contact with each other
+both are cut at an oblique angle, placed in close contact with each other, and are then held together
+matching up these two surfaces as closely as possible is extremely important
 the vascular systems of the two plants grow and fuse, forming a graft
 after a period of time, the scion starts producing shoots, and eventually starts bearing flowers and fruits
 {{< /selfcheck >}}
