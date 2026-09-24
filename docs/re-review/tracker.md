@@ -174,11 +174,11 @@ checks ran a narrow brief (they carry no hints; the gap is nearby leaks).
 | [x] | KC `knowledge-check-01-03` | — | 10 | 1024 | 3a20551 | Sep 24: one Opus fixer (~197k); "atomic weight" distractor double-keyed "mass number"; micelle textin re-keyed amphipathic; fixer found the 3.3 micelle claim → Source note on the section page (1024) |
 | [x] | KC `knowledge-check-04-10` | — | 39 | 1025 | 3a20551 | Sep 24: two Opus fixers (~556k); 10 replacements; second checker flagged a 5.3 stem listing "antiporters" above the antiporter MC → pumps textin; parent fixed the 6.2 "both the reactants and the products" sentence (1025) |
 | [x] | KC `knowledge-check-11-17` | — | 44 | — | 3a20551 | Sep 24: two Opus fixers (~468k); 15 replacements (mostly reverse re-asks of section items); cross-chapter leaks between the two fixers relayed by the parent (16.6 "40S", 14.2 "dideoxy" over the 17.3 ddNTP key) |
-| [ ] | KC `knowledge-check-18-20` | — | | | | |
-| [ ] | KC `knowledge-check-21-29` | — | | | | |
-| [ ] | KC `knowledge-check-30-32` | — | | | | |
-| [ ] | KC `knowledge-check-33-43` | — | | | | |
-| [ ] | KC `knowledge-check-44-47` | — | | | | |
+| [x] | KC `knowledge-check-18-20` | — | 10 | — | 4604086 | Sep 24: one Opus fixer (~197k tokens), batched with KC 21–29, 30–32, 33–43, 44–47 (shared second checker ~217k and Fable solve 76/76 after a 429 resume); 3 replacements; accepts added (alloploidy, genepool, node) |
+| [x] | KC `knowledge-check-21-29` | — | 43 | — | 4604086 | Sep 24: three Opus fixers (~667k); 12 replacements (six in ch21–23: stems asserting what the module does not say, one-subsection sections); parent reworded the 26.3 megasporocyte stem that printed the 26.1 key "megaspore" |
+| [x] | KC `knowledge-check-30-32` | — | 14 | 1032 | 4604086 | Sep 24: one Opus fixer (~243k); 2 replacements; the 30.5 gravity-potential stem dropped the "10 MPa" of erratum 434; the 31.1 summary cloze was built on the summary's "organic compounds" slip (1032) → minerals textin |
+| [x] | KC `knowledge-check-33-43` | — | 50 | 1033 | 4604086 | Sep 24: three Opus fixers (~754k); 20 replacements; five double keys (OTC, basophil, TLR body site, rectal gland, segmental artery); items built on errata 449/452 removed; parent added the 43.6 PGD Source note (1033), sourced the 35.4 nitric-oxide stem, replaced the bees "queens" option |
+| [x] | KC `knowledge-check-44-47` | — | 27 | 1031 | 4604086 | Sep 24: two Opus fixers (~467k); 6 replacements; the 44.5 Permian "84 percent" item replaced (47.1 says 96, 1031); second checker cut a 45.2 stem clause that gave away its "sperm-depleted" accept |
 
 ## Microbiology
 
