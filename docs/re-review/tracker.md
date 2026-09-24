@@ -169,11 +169,11 @@ checks ran a narrow brief (they carry no hints; the gap is nearby leaks).
 | [x] | 43. Animal Reproduction and Development | 7 | 93 | 1018 | 58652a1 | Sep 24: three Opus fixers (~371k); 51 of 93 hint leaks; eight duplicate asks replaced; parent replaced the 43.1 "asexual" option that double-keyed fragmentation (1018, kind options; min-confirmed 4860→4859) |
 | [x] | 44. Ecology and the Biosphere | 5 | 71 | — | 58652a1 | Sep 24: two and a half Opus fixers (~279k); 44 of 71 hint leaks; 44.2 NPP summary MC was double-keyed (above-ground biomass) → "warm and wet" MC; parent removed a "wild lupine" leak from the 44.1 nitrogen cloze |
 | [x] | 45. Population and Community Ecology | 7 | 123 | 1017 | 58652a1 | Sep 24: four and a half Opus fixers (~542k); 70 of 123 hint leaks; sortbins rebuilt from module examples in 45.6 and 45.7; blind solver caught the 45.7 non-associative stem also fitting habituation → category stem; 1017 CDC life-table arithmetic (untouched, transcribed as printed) |
-| [ ] | 46. Ecosystems | 3 | | | | |
-| [ ] | 47. Conservation Biology and Biodiversity | 4 | | | | |
-| [ ] | KC `knowledge-check-01-03` | — | | | | |
-| [ ] | KC `knowledge-check-04-10` | — | | | | |
-| [ ] | KC `knowledge-check-11-17` | — | | | | |
+| [x] | 46. Ecosystems | 3 | 50 | 1020–1022 | 3a20551 | Sep 24: two Opus fixers (~247k tokens), batched with ch47 and KC 1–17 (shared second checker ~213k and Fable solve 64/65, ~119k); 34 of 50 hint leaks; parent replaced eip-996's options C and D, which also reduce CO₂ (1021, kind options; min-confirmed 4859→4858), and fixed the acid-rain glossary "sulfuric" (1022) |
+| [x] | 47. Conservation Biology and Biodiversity | 4 | 47 | 1023 | 3a20551 | Sep 24: two Opus fixers (~243k); 25 of 47 hint leaks; IUCN chart longdesc re-read from the image (the source alt's fish split tied the Visual Connection's option A, 1023); the fern-spore VC stays on source authority (the solver's one disagreement) |
+| [x] | KC `knowledge-check-01-03` | — | 10 | 1024 | 3a20551 | Sep 24: one Opus fixer (~197k); "atomic weight" distractor double-keyed "mass number"; micelle textin re-keyed amphipathic; fixer found the 3.3 micelle claim → Source note on the section page (1024) |
+| [x] | KC `knowledge-check-04-10` | — | 39 | 1025 | 3a20551 | Sep 24: two Opus fixers (~556k); 10 replacements; second checker flagged a 5.3 stem listing "antiporters" above the antiporter MC → pumps textin; parent fixed the 6.2 "both the reactants and the products" sentence (1025) |
+| [x] | KC `knowledge-check-11-17` | — | 44 | — | 3a20551 | Sep 24: two Opus fixers (~468k); 15 replacements (mostly reverse re-asks of section items); cross-chapter leaks between the two fixers relayed by the parent (16.6 "40S", 14.2 "dideoxy" over the 17.3 ddNTP key) |
 | [ ] | KC `knowledge-check-18-20` | — | | | | |
 | [ ] | KC `knowledge-check-21-29` | — | | | | |
 | [ ] | KC `knowledge-check-30-32` | — | | | | |
