@@ -54,7 +54,7 @@ Fungi are important to everyday human life. Fungi are important decomposers in m
 {{< multiplechoice
   question="Why are fungal insecticides an attractive alternative to chemical pesticides for growing food crops?"
   answer="Human consumption of fungal insecticides would not make a person sick, but ingestion of chemical pesticides can be harmful to humans."
-  hint="Compare what each option claims fungal insecticides can do against what the section says about their safety and specificity."
+  hint="Reread the section's opening paragraph, on fungi as animal pathogens."
 >}}
 Human consumption of fungal insecticides would not make a person sick, but ingestion of chemical pesticides can be harmful to humans.
 A single fungal insecticide would kill a wider variety of insects than a chemical pesticide.
@@ -62,7 +62,7 @@ Fungal insecticides can eliminate both harmful insects and plant pathogens, whil
 Fungal insecticides will decompose dying plants, enhancing the nitrogen content of the soil, while chemical pesticides are not decomposers.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How would treating an area of a forest with a broad-spectrum fungicide alter the carbon and nitrogen cycles in the area?" hint="Trace what fungi normally do to dead organic matter, then ask what happens to its carbon and nitrogen content if that no longer happens." >}}
+{{< selfcheck question="How would treating an area of a forest with a broad-spectrum fungicide alter the carbon and nitrogen cycles in the area?" hint="Reread the second sentence of this section's summary, and Section 24.3's Decomposers and Recyclers subsection." >}}
 Fungi are important decomposers in ecosystems, ensuring that dead plants and animals are broken down into smaller molecules that can be used by other members of the ecosystem. Without fungi, decaying organic matter would accumulate in the forest. In the carbon cycle, fungi decompose organic matter into small carbon-containing compounds. This process releases carbon dioxide back into the air for plants to use during the carbon-fixation steps of photosynthesis. In the nitrogen cycle, decomposition by fungi also releases nitrogen for use by living organisms. In this cycle, the nitrogen is released from organic compounds in the form of ammonia.
 ===CHECKS===
 fungi are important decomposers in ecosystems, ensuring that dead plants and animals are broken down into smaller molecules that can be used by other members of the ecosystem
@@ -78,7 +78,7 @@ the nitrogen is released from organic compounds in the form of ammonia
 {{< multiplechoice
   question="Yeast is a facultative anaerobe. This means that alcohol fermentation takes place only if:"
   answer="the atmosphere does not contain oxygen"
-  hint="Reread the fermentation paragraph, on the conditions under which wild yeasts ferment sugars."
+  hint="Reread the fermentation paragraph."
 >}}
 the temperature is close to 37°C
 the atmosphere does not contain oxygen
@@ -86,7 +86,7 @@ sugar is provided to the cells
 light is provided to the cells
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Historically, artisanal breads were produced by capturing wild yeasts from the air. Prior to the development of modern yeast strains, the production of artisanal breads was long and laborious because many batches of dough ended up being discarded. Can you explain this fact?" hint="Think about what else, besides the desired yeast, can be floating in open air." >}}
+{{< selfcheck question="Historically, artisanal breads were produced by capturing wild yeasts from the air. Prior to the development of modern yeast strains, the production of artisanal breads was long and laborious because many batches of dough ended up being discarded. Can you explain this fact?" hint="Reread the fermentation paragraph." >}}
 The dough is often contaminated by toxic spores that float in the air. It was one of Louis Pasteur's achievements to purify reliable strains of baker's yeast to produce bread consistently.
 ===CHECKS===
 the dough is often contaminated by toxic spores that float in the air
@@ -96,7 +96,7 @@ it was one of Louis Pasteur's achievements to purify reliable strains of baker's
 {{< textin
   question="Fungi, as food, play a role in human nutrition in the form of ________, and also as agents of fermentation in the production of bread, cheeses, alcoholic beverages, and numerous other food preparations."
   answer="mushrooms"
-  hint="Named earlier in this section as delicacies such as morels and truffles."
+  hint="Reread the fourth sentence of this section's summary."
 >}}
 
 ### Describe the importance of fungi in the chemical and pharmaceutical industries
@@ -106,16 +106,16 @@ it was one of Louis Pasteur's achievements to purify reliable strains of baker's
   answer="antibiotics"
   hint="Reread the paragraph on the secondary metabolites of fungi."
 >}}
-steroid hormones
+ethyl alcohol
 antibiotics
-ergot alkaloids
+mycorrhizal inoculants
 psilocybin
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Fungi naturally produce antibiotics in order to ________."
   answer="kill or inhibit the growth of bacteria"
-  hint="The section explains what the antibiotics do for the fungus in its own natural environment, not what people use them for."
+  hint="Reread the second sentence of the paragraph on secondary metabolites."
 >}}
 reduce the risk of rejection after organ transplant
 control the population of damaging pests
@@ -126,7 +126,7 @@ ferment sugars into CO₂ and ethyl alcohol
 {{< textin
   question="The immunosuppressant drug isolated from fungi that lowers the risk of organ-transplant rejection is ________."
   answer="cyclosporine"
-  accept="cyclosporin|ciclosporin"
+  accept="cyclosporin|ciclosporin|cyclosporine A|cyclosporin A"
   hint="Named in the paragraph about secondary metabolites, alongside steroid-hormone precursors and ergot alkaloids."
 >}}
 
@@ -135,7 +135,7 @@ ferment sugars into CO₂ and ethyl alcohol
 {{< multiplechoice
   question="The advantage of yeast cells over bacterial cells to express human proteins is that:"
   answer="yeast cells are eukaryotic and modify proteins similarly to human cells"
-  hint="Reread the paragraph on fungi as model organisms, at its sentences on yeast."
+  hint="Reread the section's last paragraph, at its sentences on yeast."
 >}}
 yeast cells grow faster
 yeast cells are easier to manipulate genetically
@@ -147,13 +147,13 @@ yeast cells are easily lysed to purify the proteins
   question="Many advances in modern genetics were achieved by the use of the red bread mold ________."
   answer="Neurospora crassa"
   accept="Neurospora|N. crassa"
-  hint="Named in the model-organisms paragraph beside the yeast whose genes led researchers to analogous human genes."
+  hint="Reread the second sentence of the section's last paragraph."
 >}}
 
 {{< multiplechoice
   question="Fungi are ________ for the study of eukaryotic genetics and metabolism."
   answer="model organisms"
-  hint="This is the section's closing description of what fungi are to researchers, not what fungi do in soil or on insects."
+  hint="Reread the last sentence of this section's summary."
 >}}
 pathogens
 microbial insecticides
@@ -163,4 +163,4 @@ decomposers
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 24.5: Importance of Fungi in Human Life](https://openstax.org/books/biology-2e/pages/24-5-importance-of-fungi-in-human-life) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure B24.05.02's alt text rewritten from the manifest's terse "Part a … Part b …" phrasing to a plain description of each photographed panel, and its `kind` corrected from the manifest's diagram guess to photo (both panels are photographs, not diagrams); two inline print figure cross-references ("Figure 24.28", "Figure 24.29") changed to descriptive phrases ("see the photo below") since figures are not numbered here; the fermentation paragraph's CO<sub>2</sub> set as Unicode CO₂; this module has no glossary, so its "Key terms" heading is omitted; the three Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 3, 1, 2 and the Critical Thinking Questions in the order 2, 1 of the source's numbering; four cloze text-recall and select-the-term multiple-choice items added from the section summary, and three items added from the section's own prose in place of the usual glossary-derived recall items — text-recall items for the immunosuppressant drug cyclosporine and the red bread mold Neurospora crassa, and a multiple choice on why fungi produce antibiotics, with distractors drawn from the other fungal-product roles the same paragraphs name; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One date is corrected with a visible Source note: Pasteur's brewer's-yeast work and patent date to the 1870s, not the late 1850s (erratum 417).</small>
+<small>This section is adapted from [Biology 2e, Section 24.5: Importance of Fungi in Human Life](https://openstax.org/books/biology-2e/pages/24-5-importance-of-fungi-in-human-life) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure B24.05.02's alt text rewritten from the manifest's terse "Part a … Part b …" phrasing to a plain description of each photographed panel, and its `kind` corrected from the manifest's diagram guess to photo (both panels are photographs, not diagrams); two inline print figure cross-references ("Figure 24.28", "Figure 24.29") changed to descriptive phrases ("see the photo below") since figures are not numbered here; the fermentation paragraph's CO<sub>2</sub> set as Unicode CO₂; this module has no glossary, so its "Key terms" heading is omitted; the three Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 3, 1, 2 and the Critical Thinking Questions in the order 2, 1 of the source's numbering; four cloze text-recall and select-the-term multiple-choice items added from the section summary, the latter with distractors drawn from the module's own terms, and three items added from the section's own prose in place of the usual glossary-derived recall items — text-recall items for the immunosuppressant drug cyclosporine and the red bread mold Neurospora crassa, and a multiple choice on why fungi produce antibiotics, with distractors drawn from the other fungal-product roles the same paragraphs name; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One date is corrected with a visible Source note: Pasteur's brewer's-yeast work and patent date to the 1870s, not the late 1850s.</small>

@@ -118,7 +118,7 @@ Reproductive cycle of a fern. This life cycle of a fern shows alternation of gen
 {{< multiplechoice
   question="Which of the following statements about the fern life cycle is false?"
   answer="Sporangia form on the underside of the gametophyte."
-  hint="Trace the diagram above from Sporangia backward — which stage, sporophyte or gametophyte, does that arrow originate from?"
+  hint="Check each statement against the life-cycle diagram above."
 >}}
 Sporangia produce haploid spores.
 The sporophyte grows from a gametophyte.
@@ -178,7 +178,7 @@ Both mosses and ferns play an essential role in the balance of the ecosystems. M
 
 ## Key terms
 
-- **adventitious** — describes an organ that grows in an unusual place, such as a roots growing from the side of a stem
+- **adventitious** — describes an organ that grows in an unusual place, such as roots growing from the side of a stem
 - **club mosses** — earliest group of seedless vascular plants
 - **fern** — seedless vascular plant that produces large fronds; the most advanced group of seedless vascular plants
 - **horsetail** — seedless vascular plant characterized by joints
@@ -202,7 +202,7 @@ Both mosses and ferns play an essential role in the balance of the ecosystems. M
 {{< multiplechoice
   question="The production of megaphylls by many different species of plants is an example of ________."
   answer="parallel evolution"
-  hint="Reread the Leaves, Sporophylls, and Strobili subsection, on how the two leaf types arose."
+  hint="Reread the second paragraph of the subsection on leaves, on how the two leaf types arose."
 >}}
 parallel evolution
 analogy
@@ -213,18 +213,19 @@ homology
 {{< textin
   question="The tissue responsible for the storage and long-distance transport of water and nutrients in a vascular plant is the ________."
   answer="xylem"
+  accept="xylem tissue"
   hint="Reread the first paragraph of the subsection on vascular tissue."
 >}}
 
 {{< textin
-  question="A small leaf with a simple vascular system and a single unbranched vein running through its center is called a ________."
-  answer="microphyll"
-  hint="Reread the Leaves, Sporophylls, and Strobili subsection."
+  question="A leaf modified structurally to bear sporangia is called a ________."
+  answer="sporophyll"
+  hint="Reread the last paragraph of the subsection on leaves."
 >}}
 
 ### Discuss how each trait is important for adaptation to life on land
 
-{{< selfcheck question="How did the development of a vascular system contribute to the increase in size of plants?" hint="Think about what limits growth in a plant that lacks pipe-like conducting cells." >}}
+{{< selfcheck question="How did the development of a vascular system contribute to the increase in size of plants?" hint="Reread the second paragraph of this section's opening, which sets bryophytes against vascular plants." >}}
 Plants became able to transport water and nutrients and not be limited by rates of diffusion. Vascularization allowed the development of leaves, which increased efficiency of photosynthesis and provided more energy for plant growth.
 ===CHECKS===
 Plants became able to transport water and nutrients
@@ -237,21 +238,29 @@ provided more energy for plant growth
 {{< textin
   question="The vascular tissue that transports sugars, proteins, and other solutes throughout a plant is the ________."
   answer="phloem"
-  hint="Its sieve elements are the conducting cells; other cells of this tissue support them."
+  accept="phloem tissue"
+  hint="Reread the paragraph just before the celery photo."
 >}}
 
 {{< textin
   question="The complex polymer, impermeable to water, that gives xylem cell walls their mechanical strength is called ________."
   answer="lignin"
-  hint="Reread the Vascular Tissue: Xylem and Phloem subsection."
+  hint="Reread the first paragraph of the subsection on vascular tissue."
 >}}
 
 ### Identify the classes of seedless tracheophytes
 
+{{< textin
+  question="A seedless vascular plant that lost both roots and leaves through reductive evolution, photosynthesizing instead through its green, dichotomously branching stems, is a ________."
+  answer="whisk fern"
+  accept="Psilotopsida"
+  hint="Reread the third of the four phylum subsections."
+>}}
+
 {{< multiplechoice
   question="Microphylls are characteristic of which types of plants?"
   answer="club mosses"
-  hint="Reread the Leaves, Sporophylls, and Strobili subsection, then the phylum subsections that follow it."
+  hint="Reread the second paragraph of the subsection on leaves."
 >}}
 mosses
 liverworts
@@ -270,19 +279,13 @@ fern
 horsetail
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Which plant is considered the most advanced seedless vascular plant and why?" hint="Compare which class's sporophyte structures most resemble those of seed plants." >}}
+{{< selfcheck question="Which plant is considered the most advanced seedless vascular plant and why?" hint="Reread the first paragraph of the last of the four phylum subsections." >}}
 Ferns are considered the most advanced seedless vascular plants, because they display characteristics commonly observed in seed plants—they form large leaves and branching roots.
 ===CHECKS===
 Ferns are considered the most advanced seedless vascular plants
 they display characteristics commonly observed in seed plants
 they form large leaves and branching roots
 {{< /selfcheck >}}
-
-{{< textin
-  question="A seedless vascular plant that lost both roots and leaves through reductive evolution, photosynthesizing instead through its green, dichotomously branching stems, is a ________."
-  answer="whisk fern"
-  hint="This class, Psilotopsida, is now thought to be more closely related to ferns than to other seedless vascular plants."
->}}
 
 ### Describe the life cycle of a fern
 
@@ -343,7 +346,7 @@ Mosses die and return nitrogen to the soil.
 Mosses decompose rocks and release nitrogen.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Ferns are simultaneously involved in promoting rock weathering, while preventing soil erosion. Explain how a single plant can perform both these functions, and how these functions are beneficial to its ecosystem." hint="Trace what a fern's rhizome system does to rock on the way in and to soil on the way out." >}}
+{{< selfcheck question="Ferns are simultaneously involved in promoting rock weathering, while preventing soil erosion. Explain how a single plant can perform both these functions, and how these functions are beneficial to its ecosystem." hint="Reread the third paragraph of The Importance of Seedless Plants subsection." >}}
 A fern roots into the soil through its rhizome system. As the roots work through the top layer of earth, they might encounter rocks and slowly grow through them. This will break the rock down into smaller pieces (weathering), contributing to the ongoing process of the rock cycle. However, the roots will also now form a network that holds the earth in place, preventing erosion. Many other living plants and animals will benefit from the added habitat (ex. dunes on a shoreline).
 ===CHECKS===
 A fern roots into the soil through its rhizome system
@@ -355,4 +358,4 @@ Many other living plants and animals will benefit from the added habitat
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 25.4: Seedless Vascular Plants](https://openstax.org/books/biology-2e/pages/25-4-seedless-vascular-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the two composite two-panel photos (Figure_25_04_06's fiddleheads and Figure_B25_04_09's sori/gametophyte pair) given a custom alt naming what each lettered panel shows, since the source alts described only one panel or the pair's outcome rather than both images; a longdesc added to the fern-life-cycle diagram (Figure_B25_04_06), tracing its clockwise Diploid 2n/Haploid 1n bands, boxes, and arrows as drawn, written to avoid stating which stage the in-body Visual Connection question keys as false; the "Phylum Lycophyta: Club Mosses" subsection heading's leading space trimmed; the two interactive/link-to-learning notes rendered as Link to Learning callouts with descriptive link text and the source's own openstax.org short URLs; the note wrapping the Visual Connection question rendered as its figure followed by the multiple choice, kept in the body; the Career Connection box kept its title and figure; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (xylem, microphyll, phloem, lignin, whisk fern) added from the glossary to round out the first, second, and third objective groups with an auto-graded item each; and one body-sentence select-the-term multiple choice added under the fourth objective ("gametophyte," from the fern-reproduction paragraph's sentence on what a germinating spore forms), since the module's two fern-life-cycle Review Questions left that objective at the book's floor; the Review Question "How do mosses contribute to returning nitrogen to the soil?" is keyed "Mosses harbor cyanobacteria that fix nitrogen" where the source keys "Mosses decompose rocks and release nitrogen", because the section's own sentence says mosses "establish symbiotic relationships with nitrogen-fixing cyanobacteria" and nothing in it says mosses decompose rock — reported as a source defect; and the fern life-cycle drawing's own label is misspelled "Sporongia" in the artwork, which the alt and longdesc give as "Sporangia".</small>
+<small>This section is adapted from [Biology 2e, Section 25.4: Seedless Vascular Plants](https://openstax.org/books/biology-2e/pages/25-4-seedless-vascular-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the two composite two-panel photos (Figure_25_04_06's fiddleheads and Figure_B25_04_09's sori/gametophyte pair) given a custom alt naming what each lettered panel shows, since the source alts described only one panel or the pair's outcome rather than both images; a longdesc added to the fern-life-cycle diagram (Figure_B25_04_06), tracing its clockwise Diploid 2n/Haploid 1n bands, boxes, and arrows as drawn, written to avoid stating which stage the in-body Visual Connection question keys as false; the "Phylum Lycophyta: Club Mosses" subsection heading's leading space trimmed; the two interactive/link-to-learning notes rendered as Link to Learning callouts with descriptive link text and the source's own openstax.org short URLs; the note wrapping the Visual Connection question rendered as its figure followed by the multiple choice, kept in the body; the Career Connection box kept its title and figure; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 7, 1, 2, 3, 4, 5, 6 of the source's numbering; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (xylem, sporophyll, phloem, lignin, whisk fern) added from the glossary to round out the first, second, and third objective groups with an auto-graded item each, the sporophyll item in place of a microphyll recall item that re-asked the source's microphylls Review Question; and one body-sentence select-the-term multiple choice added under the fourth objective ("gametophyte," from the fern-reproduction paragraph's sentence on what a germinating spore forms), since the module's two fern-life-cycle Review Questions left that objective at the book's floor; the Review Question "How do mosses contribute to returning nitrogen to the soil?" is keyed "Mosses harbor cyanobacteria that fix nitrogen" where the source keys "Mosses decompose rocks and release nitrogen", because the section's own sentence says mosses "establish symbiotic relationships with nitrogen-fixing cyanobacteria" and nothing in it says mosses decompose rock; the glossary definition of adventitious corrected from the source's "such as a roots growing" to "such as roots growing"; and the fern life-cycle drawing's own label is misspelled "Sporongia" in the artwork, which the alt and longdesc give as "Sporangia".</small>

@@ -591,6 +591,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     reason: 'the source distractor "DNA" is true by the module\'s own sentence that researchers "may use data from fossils, from studying the body part structures, or molecules that an organism uses, and DNA analysis" to construct a phylogeny, so the item was double-keyed; the page replaces that option with "scientific names" (key "evolutionary history" unchanged)',
   },
   {
+    page: 'content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/01-prokaryotic-diversity.md',
+    exercise: 'eip-440',
+    kind: 'solution',
+    erratum: 990,
+    reason: 'the source solution names the endolith\'s second feature "Hypolith – survival in low humidity/water environment", but a hypolith lives beneath rocks (the question\'s organism lives inside rock) and the term names a habitat, not a tolerance; the page\'s model answer gives the tolerance of a low humidity/water environment, with a source note naming the source\'s "hypolith"',
+  },
+  {
     page: 'content/life-health-sciences/biology/45-population-and-community-ecology/04-population-dynamics-and-regulation.md',
     exercise: 'eip-720',
     kind: 'key',

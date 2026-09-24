@@ -55,7 +55,7 @@ The last stage of viral replication is the release of the new virions produced i
 The influenza reproductive cycle. In influenza virus infection, glycoproteins on the capsid attach to a host epithelial cell. Following this, the virus is engulfed. RNA and proteins are then made and assembled into new virions.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Influenza virus is packaged in a viral envelope that fuses with the plasma membrane. This way, the virus can exit the host cell without killing it. What advantage does the virus gain by keeping the host cell alive?" hint="Think about what the cell can keep doing for the virus if it is never destroyed." >}}
+{{< selfcheck question="Influenza virus is packaged in a viral envelope that fuses with the plasma membrane. This way, the virus can exit the host cell without killing it. What advantage does the virus gain by keeping the host cell alive?" hint="Reread the Egress subsection and the diagram above." >}}
 The host cell can continue to make new virus particles.
 ===CHECKS===
 the host cell can continue
@@ -176,7 +176,7 @@ Plant viruses may be transmitted either vertically from parent reproductive cell
 {{< multiplechoice
   question="Which statement is true of viral replication?"
   answer="During attachment, the virus attaches at specific sites on the cell surface."
-  hint="Re-read the Attachment subsection's opening sentence about where on the host cell membrane a virus binds."
+  hint="Check each statement against the Steps of Virus Infections subsections."
 >}}
 In the process of apoptosis, the cell survives.
 During attachment, the virus attaches at specific sites on the cell surface.
@@ -198,7 +198,7 @@ It is a lipid.
 {{< multiplechoice
   question="Which is true of DNA viruses?"
   answer="They use the host cell's machinery to produce new copies of their genome."
-  hint="Re-read the Replication and Assembly subsection's first sentence about what DNA viruses use to replicate their DNA."
+  hint="Reread the Replication and Assembly subsection's first paragraph."
 >}}
 They use the host cell's machinery to produce new copies of their genome.
 They all have envelopes.
@@ -209,7 +209,7 @@ They are not important plant pathogens.
 {{< multiplechoice
   question="People with the CCR5Δ32 mutation of a T-cell surface protein can be exposed to some strains of HIV-1 without becoming sick. What step of the virus life cycle is likely to be inhibited with this mutation?"
   answer="Attachment"
-  hint="Work through the Steps of Virus Infections subsections in order and ask which step involves a host-cell surface protein."
+  hint="Work through the Steps of Virus Infections subsections in order."
 >}}
 Release
 Reverse transcription
@@ -217,7 +217,7 @@ Uncoating
 Attachment
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why can't dogs catch the measles?" hint="Think about what a virus needs on the host-cell surface before it can even begin an infection." >}}
+{{< selfcheck question="Why can't dogs catch the measles?" hint="Reread the section's opening paragraph." >}}
 The virus can't attach to dog cells, because dog cells do not express the receptors for the virus and/or there is no cell within the dog that is permissive for viral replication.
 ===CHECKS===
 the virus can't attach to dog cells
@@ -225,7 +225,7 @@ dog cells do not express the receptors for the virus
 there is no cell within the dog that is permissive for viral replication
 {{< /selfcheck >}}
 
-{{< selfcheck question="One of the first and most important targets for drugs to fight infection with HIV (a retrovirus) is the reverse transcriptase enzyme. Why?" hint="Consider which cells make this enzyme naturally, and which do not." >}}
+{{< selfcheck question="One of the first and most important targets for drugs to fight infection with HIV (a retrovirus) is the reverse transcriptase enzyme. Why?" hint="Reread the Replication and Assembly subsection's paragraph on retroviruses." >}}
 Reverse transcriptase is needed to make more HIV-1 viruses, so targeting the reverse transcriptase enzyme may be a way to inhibit the replication of the virus. Importantly, by targeting reverse transcriptase, we do little harm to the host cell, since host cells do not make reverse transcriptase. Thus, we can specifically attack the virus and not the host cell when we use reverse transcriptase inhibitors.
 ===CHECKS===
 reverse transcriptase is needed to make more HIV-1 viruses
@@ -247,13 +247,13 @@ explains why that fact was interesting or surprising
 {{< textin
   question="Phage DNA that has become incorporated into the host cell's genome is called a ________."
   answer="prophage"
-  hint="It forms during the lysogenic cycle, when the phage genome joins the bacterial chromosome."
+  hint="Reread the Bacteriophages paragraph on the lysogenic cycle."
 >}}
 
 {{< multiplechoice
   question="Which statement is *not* true of viral replication?"
   answer="Viral replication does not affect host cell function."
-  hint="Re-read the section's second paragraph about cytopathic effects — what does it say happens to host cell function during viral replication?"
+  hint="Check each statement against the Steps of Virus Infections subsections and the Bacteriophages paragraphs."
 >}}
 In the lysogenic cycle, phage DNA is incorporated into the host genome.
 There are six basic steps in the viral replication cycle.
@@ -272,7 +272,7 @@ prions
 bacteria
 {{< /multiplechoice >}}
 
-{{< selfcheck question="A bacteriophage with a lytic life cycle develops a mutation that allows it to now also go through the lysogenic cycle. How would this provide an evolutionary advantage over the other bacteriophages that can only spread through lytic cycles?" hint="Think about what happens to the host cell in each cycle, and how that affects how far the phage can spread." >}}
+{{< selfcheck question="A bacteriophage with a lytic life cycle develops a mutation that allows it to now also go through the lysogenic cycle. How would this provide an evolutionary advantage over the other bacteriophages that can only spread through lytic cycles?" hint="Reread the Bacteriophages paragraph and the lytic and lysogenic diagram." >}}
 In a lysogenic cycle, the bacteriophage integrates into the host bacterium's genome as a prophage, and is passed on to daughter cells every time a bacterium carrying the prophage replicates. This allows the prophage to be dispersed through a wide population without killing any of the host cells. Since the mutated bacteriophage also retains the ability to switch into the lytic cycle, it now has two methods to disseminate through the bacteria population.
 ===CHECKS===
 the bacteriophage integrates into the host bacterium's genome as a prophage
@@ -287,7 +287,7 @@ it now has two methods to disseminate through the bacteria population
   question="Unlike bacteriophages, plant viruses have no active mechanism for crossing the cell wall, so for a plant virus to enter a new host plant, some type of ________ must occur."
   answer="mechanical damage"
   accept="damage"
-  hint="Weather, insects, animals, fire, and farming or landscaping are the section's examples of what causes it."
+  hint="Reread the Plant Viruses subsection's first paragraph."
 >}}
 
 {{< textin
@@ -300,7 +300,7 @@ it now has two methods to disseminate through the bacteria population
 {{< multiplechoice
   question="An apple grower notices that several of his apple trees with fungi growing on their trunks have developed necrotic ring spots, while other trees in the orchard that lack fungi appear healthy. What is the most likely conclusion the farmer can make about the virus infecting his apple trees?"
   answer="The apple trees were infected by horizontal transmission."
-  hint="Reread the Plant Viruses paragraph on how plant viruses are transmitted, then ask what the fungi's role must be."
+  hint="Reread the Plant Viruses paragraph on how plant viruses are transmitted."
 >}}
 The apple trees were infected by horizontal transmission.
 The fungi carry disease.
@@ -324,30 +324,30 @@ either RNA or DNA
 {{< textin
   question="A viral illness such as hepatitis C that persists in the body for a long period of time is called a ________."
   answer="chronic infection"
-  hint="Its opposite in this section is the short, sharp pattern called an acute disease."
+  accept="chronic viral disease"
+  hint="Reread the Animal Viruses paragraphs on patterns of viral disease."
 >}}
 
 {{< textin
   question="Abnormally high plant-cell growth and division is known as ________."
   answer="hyperplasia"
-  hint="This symptom is what causes the plant tumors described just after it in the text."
+  hint="Reread the Plant Viruses paragraph on symptoms, or the symptoms table."
 >}}
 
 {{< textin
   question="A plant tumor caused by a virus is known as a ________."
   answer="gall"
-  hint="This symptom appears when a virus causes abnormally high cell growth and division in the plant."
+  hint="Reread the Plant Viruses paragraph on symptoms, or the symptoms table."
 >}}
 
 ### Discuss the economic impact of plant and animal viruses
 
-{{< selfcheck question="Although plant viruses cannot infect humans, what are some of the ways in which they affect humans?" hint="Think about what happens to a farmer's harvest, and to the wider food supply, when a crop virus spreads." >}}
-Plant viruses infect crops, causing crop damage and failure, and considerable economic losses.
-===CHECKS===
-plant viruses infect crops
-causing crop damage and failure
-considerable economic losses
-{{< /selfcheck >}}
+{{< textin
+  question="Viruses of plants are responsible for significant ________ in both crop plants and plants used for ornamentation."
+  answer="economic damage"
+  accept="economic losses"
+  hint="Reread the second sentence of the Summary."
+>}}
 
 {{< multiplechoice
   question="According to this section, which of the following viruses affects plants used in landscaping rather than food crops?"
@@ -360,13 +360,14 @@ tomato spotted wilt virus
 bean common mosaic virus
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Viruses of plants are responsible for significant ________ in both crop plants and plants used for ornamentation."
-  answer="economic damage"
-  accept="economic losses"
-  hint="Reread the second sentence of the Summary."
->}}
+{{< selfcheck question="Although plant viruses cannot infect humans, what are some of the ways in which they affect humans?" hint="Reread the last paragraph of the Plant Viruses subsection." >}}
+Plant viruses infect crops, causing crop damage and failure, and considerable economic losses.
+===CHECKS===
+plant viruses infect crops
+causing crop damage and failure
+considerable economic losses
+{{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 21.2: Virus Infections and Hosts](https://openstax.org/books/biology-2e/pages/21-2-virus-infections-and-hosts) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the HPV micrograph's alt describes a bare capsomere-studded capsid with no spikes, because the source alt's "glycoproteins protruding from its capsid" contradicts both the image and the caption's "naked icosahedral capsid" (erratum 839); figures re-encoded as WebP (all five kind guesses — diagram for Figure_21_02_01 and Figure_B21_03_01, photo for Figure_21_02_02-545c, Figure_21_02_04ab, and Figure_21_02_05-f075 — confirmed correct after inspection, no re-kinding needed); a longdesc added for Figure_21_02_01 (the five numbered steps are not fully carried by the one-sentence caption) and Figure_B21_03_01 (the panel-by-panel lytic/lysogenic sequence is not in the caption); the letter-spaced source alt for Figure_21_02_01 ("m R N A", "R N A") rewritten as "mRNA"/"RNA" and reworded, alongside its longdesc, to describe what the final panel draws rather than restate the adjoining Visual Connection question's own answer; the over-600-character source alt for Figure_B21_03_01 shortened to a concise overview with the full step-by-step detail moved into longdesc; the source alt for Figure_21_02_04ab corrected from "a person's face" to "a person's shoulder and upper back," matching the image (reported as a source defect); the source's forward figure and table references (bracketed autonumber links) reworded as "see the diagram below," "see the micrograph below," "see the table below," "illustrated below," and "pictured below," since figures are not numbered here; the three interactive notes rendered as Link to Learning callouts with descriptive link text in place of the source's bare "video"; the two visual-connection notes rendered as their mediafigure followed by, respectively, a self-check (the prose-keyed influenza question) and a multiple choice (the lettered-keyed lytic/lysogenic question) kept in the body; the plant-viral-disease-symptoms table (tab-ch21_02_01) transcribed complete as a Markdown table, its spanning title row set as a bold line above it; one Review Question (the "not true of viral replication" item) re-keyed from the source's "Newly released virions can infect adjacent cells" — which the section's own Egress paragraph states is true — to "Viral replication does not affect host cell function," which the section's own cytopathic-effects sentence directly contradicts, and, because the source's first option ("A lysogenic cycle kills the host cell") is also false by the section's own account of lysogeny, that option replaced with the section's own sentence "In the lysogenic cycle, phage DNA is incorporated into the host genome" so that exactly one option is untrue (reported as a source defect); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), the open-ended Critical Thinking Question ("Briefly discuss the most interesting or surprising thing you learned about viruses") included as a self-check whose model answer is the source's own "Answer is open and will vary," followed by a page-written sentence naming what a good answer must contain (a virus, virus type, or viral disease from this section; a fact the section gives about it; why it surprised the learner), which its three rubric checkpoints restate, placed after the HIV reverse transcriptase question it follows in the source; the prophage recall item placed first in its group, ahead of the lysogeny Critical Thinking answer that prints its key, and the economic-damage cloze placed after the peony ring spot multiple choice; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (prophage, chronic infection, hyperplasia, gall) added from the glossary, plus two cloze items (mechanical damage, plasmodesmata) built from the Plant Viruses paragraph's own sentences, which replaced the horizontal- and vertical-transmission recall items because the apple-grower multiple choice below them prints both keys as options; one summary-derived cloze recall item (economic damage) added; and one multiple choice written locally, strictly from the section's own sentence naming peony ring spot and rose mosaic virus as ornamental-plant viruses, since the module's exercise sets left the fifth objective ("Discuss the economic impact of plant and animal viruses") with only one source item. One claim is narrowed with a visible Source note: reverse transcription by the viral enzyme does not occur in uninfected cells, since this book's own telomerase description is RNA-templated DNA synthesis in uninfected cells (erratum 411).</small>
+<small>This section is adapted from [Biology 2e, Section 21.2: Virus Infections and Hosts](https://openstax.org/books/biology-2e/pages/21-2-virus-infections-and-hosts) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the HPV micrograph's alt describes a bare capsomere-studded capsid with no spikes, because the source alt's "glycoproteins protruding from its capsid" contradicts both the image and the caption's "naked icosahedral capsid" (erratum 839); figures re-encoded as WebP (all five kind guesses — diagram for Figure_21_02_01 and Figure_B21_03_01, photo for Figure_21_02_02-545c, Figure_21_02_04ab, and Figure_21_02_05-f075 — confirmed correct after inspection, no re-kinding needed); a longdesc added for Figure_21_02_01 (the five numbered steps are not fully carried by the one-sentence caption) and Figure_B21_03_01 (the panel-by-panel lytic/lysogenic sequence is not in the caption); the letter-spaced source alt for Figure_21_02_01 ("m R N A", "R N A") rewritten as "mRNA"/"RNA" and reworded, alongside its longdesc, to describe what the final panel draws rather than restate the adjoining Visual Connection question's own answer; the over-600-character source alt for Figure_B21_03_01 shortened to a concise overview with the full step-by-step detail moved into longdesc; the source alt for Figure_21_02_04ab corrected from "a person's face" to "a person's shoulder and upper back," matching the image (reported as a source defect); the source's forward figure and table references (bracketed autonumber links) reworded as "see the diagram below," "see the micrograph below," "see the table below," "illustrated below," and "pictured below," since figures are not numbered here; the three interactive notes rendered as Link to Learning callouts with descriptive link text in place of the source's bare "video"; the two visual-connection notes rendered as their mediafigure followed by, respectively, a self-check (the prose-keyed influenza question) and a multiple choice (the lettered-keyed lytic/lysogenic question) kept in the body; the plant-viral-disease-symptoms table (tab-ch21_02_01) transcribed complete as a Markdown table, its spanning title row set as a bold line above it; one Review Question (the "not true of viral replication" item) re-keyed from the source's "Newly released virions can infect adjacent cells" — which the section's own Egress paragraph states is true — to "Viral replication does not affect host cell function," which the section's own cytopathic-effects sentence directly contradicts, and, because the source's first option ("A lysogenic cycle kills the host cell") is also false by the section's own account of lysogeny, that option replaced with the section's own sentence "In the lysogenic cycle, phage DNA is incorporated into the host genome" so that exactly one option is untrue (reported as a source defect); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), the open-ended Critical Thinking Question ("Briefly discuss the most interesting or surprising thing you learned about viruses") included as a self-check whose model answer is the source's own "Answer is open and will vary," followed by a page-written sentence naming what a good answer must contain (a virus, virus type, or viral disease from this section; a fact the section gives about it; why it surprised the learner), which its three rubric checkpoints restate, placed after the HIV reverse transcriptase question it follows in the source; the prophage recall item placed first in its group, ahead of the lysogeny Critical Thinking answer that prints its key, and the economic-damage cloze placed first in its group, ahead of the Critical Thinking answer that prints an accepted form of its key; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (prophage, chronic infection, hyperplasia, gall) added from the glossary, plus two cloze items (mechanical damage, plasmodesmata) built from the Plant Viruses paragraph's own sentences, which replaced the horizontal- and vertical-transmission recall items because the apple-grower multiple choice below them prints both keys as options; one summary-derived cloze recall item (economic damage) added; and one multiple choice written locally, strictly from the section's own sentence naming peony ring spot and rose mosaic virus as ornamental-plant viruses, since the module's exercise sets left the fifth objective ("Discuss the economic impact of plant and animal viruses") with only one source item. One claim is narrowed with a visible Source note: reverse transcription by the viral enzyme does not occur in uninfected cells, since this book's own telomerase description is RNA-templated DNA synthesis in uninfected cells (erratum 411).</small>

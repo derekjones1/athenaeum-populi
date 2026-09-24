@@ -194,7 +194,20 @@ Viruses are tiny, noncellular entities that usually can be seen only with an ele
 
 ### Describe how viruses were first discovered and how they are detected
 
-{{< selfcheck question="The first electron micrograph of a virus (tobacco mosaic virus) was produced in 1939. Before that time, how did scientists know that viruses existed if they could not see them? (Hint: Early scientists called viruses “filterable agents.”)" hint="Re-read the parenthetical hint in the question about what early scientists called these agents, and think about what passed through the filter that removed all visible bacteria." >}}
+{{< textin
+  question="Viruses are tiny, noncellular entities that usually can be seen only with a(n) ________."
+  answer="electron microscope"
+  accept="electron microscopy"
+  hint="Reread the Discovery and Detection paragraph on the size of viruses."
+>}}
+
+{{< textin
+  question="An individual virus particle outside a host cell is called a ________."
+  answer="virion"
+  hint="Reread the Discovery and Detection paragraph on the size of viruses."
+>}}
+
+{{< selfcheck question="The first electron micrograph of a virus (tobacco mosaic virus) was produced in 1939. Before that time, how did scientists know that viruses existed if they could not see them? (Hint: Early scientists called viruses “filterable agents.”)" hint="Reread the first paragraph of the Discovery and Detection subsection." >}}
 Viruses pass through filters that eliminated all bacteria which were visible in the light microscopes at the time. As the bacteria-free filtrate could still cause infections when given to a healthy organism, this observation demonstrated the existence of very small infectious agents. These agents were later shown to be unrelated to bacteria and were classified as viruses.
 ===CHECKS===
 viruses pass through filters that eliminated all bacteria which were visible in the light microscopes at the time
@@ -203,30 +216,14 @@ this observation demonstrated the existence of very small infectious agents
 these agents were later shown to be unrelated to bacteria and were classified as viruses
 {{< /selfcheck >}}
 
-{{< textin
-  question="An individual virus particle outside a host cell is called a ________."
-  answer="virion"
-  hint="The section's first paragraph on detection calls a single virus particle by this name."
->}}
-
-{{< textin
-  question="Viruses are tiny, noncellular entities that usually can be seen only with a(n) ________."
-  answer="electron microscope"
-  hint="This instrument was developed in the late 1930s and gave scientists their first good view of viruses like TMV."
->}}
-
 ### Discuss three hypotheses about how viruses evolved
 
-{{< multiplechoice
-  question="The observation that the bacteria genus *Chlamydia* contains species that can only survive as intracellular parasites supports which viral origin hypothesis?"
-  answer="Regressive"
-  hint="Reread the Evolution of Viruses paragraph that sets out the three hypotheses, and find the one whose evidence mentions intracellular parasites."
+{{< textin
+  question="The hypothesis suggesting that viruses may have been the earliest self-replicating entities, predating cells, is called the ________ hypothesis."
+  answer="virus first"
+  accept="virus first hypothesis"
+  hint="Reread the third of the three evolutionary hypotheses described in the Evolution of Viruses subsection."
 >}}
-Progressive
-Regressive
-Self-replicating
-Virus-first
-{{< /multiplechoice >}}
 
 {{< selfcheck question="According to this section, what does the progressive hypothesis suggest about how viruses originated?" hint="Re-read the second of the three evolutionary hypotheses described in this section." >}}
 The progressive hypothesis suggests that viruses originated from RNA and DNA molecules, or self-replicating entities similar to transposons or other mobile genetic elements, that escaped from a host cell with the ability to enter another.
@@ -235,12 +232,16 @@ viruses originated from RNA and DNA molecules, or self-replicating entities simi
 escaped from a host cell with the ability to enter another
 {{< /selfcheck >}}
 
-{{< textin
-  question="The hypothesis suggesting that viruses may have been the earliest self-replicating entities, predating cells, is called the ________ hypothesis."
-  answer="virus first"
-  accept="virus first hypothesis"
-  hint="Reread the third of the three evolutionary hypotheses described in the Evolution of Viruses subsection."
+{{< multiplechoice
+  question="The observation that the bacteria genus *Chlamydia* contains species that can only survive as intracellular parasites supports which viral origin hypothesis?"
+  answer="Regressive"
+  hint="Reread the Evolution of Viruses paragraph that sets out the three hypotheses."
 >}}
+Progressive
+Regressive
+Self-replicating
+Virus-first
+{{< /multiplechoice >}}
 
 ### Describe the general structure of a virus
 
@@ -258,7 +259,7 @@ Most viruses are easily visualized with a light microscope.
 {{< multiplechoice
   question="The viral ________ play(s) a role in attaching a virion to the host cell."
   answer="both b and c"
-  hint="Reread the Morphology subsection's paragraphs on the structures that surround a virus's genome."
+  hint="Reread the Morphology subsection's paragraphs on how viruses attach to host cells."
 >}}
 core
 capsid
@@ -266,7 +267,7 @@ envelope
 both b and c
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Varicella-zoster virus is a double-stranded DNA virus that causes chickenpox. How does its genome structure provide an evolutionary advantage over a single-stranded DNA virus?" hint="Compare the structure of a single DNA strand with that of a double-stranded genome, as described in the Types of Nucleic Acid subsection." >}}
+{{< selfcheck question="Varicella-zoster virus is a double-stranded DNA virus that causes chickenpox. How does its genome structure provide an evolutionary advantage over a single-stranded DNA virus?" hint="The Types of Nucleic Acid subsection introduces single- and double-stranded genomes; consider how the two structures differ." >}}
 Both viruses are made of DNA, but single-stranded DNA viruses lack the ability to create the double helix. Thus, double-stranded DNA viruses have a more stable genome due to the complementary base pairing, increasing the lifespan of the virus's genome.
 ===CHECKS===
 single-stranded DNA viruses lack the ability to create the double helix
@@ -275,6 +276,13 @@ increasing the lifespan of the virus's genome
 {{< /selfcheck >}}
 
 ### Recognize the basic shapes of viruses
+
+{{< textin
+  question="A capsid that is long and cylindrical, as in many plant viruses, is described as ________."
+  answer="helical"
+  accept="helical capsid"
+  hint="Reread the Morphology subsection's paragraph that sorts capsids into four groups."
+>}}
 
 {{< multiplechoice
   question="Viruses_______."
@@ -286,13 +294,6 @@ cannot have a long shape
 do not maintain any shape
 vary in shape
 {{< /multiplechoice >}}
-
-{{< textin
-  question="A capsid that is long and cylindrical, as in many plant viruses, is described as ________."
-  answer="helical"
-  accept="helical capsid"
-  hint="This shape describes a hollow tube, not a roughly spherical shell."
->}}
 
 {{< multiplechoice
   question="According to the capsid-classification table, which capsid design describes tobacco mosaic virus?"
@@ -310,7 +311,7 @@ Enveloped icosahedral
 {{< multiplechoice
   question="A scientist discovers a new virus with a linear, RNA genome surrounded by a helical capsid. The virus is most likely a member of which family based on structure classification?"
   answer="Rabies virus"
-  hint="Two of these options share the enveloped-helical row of the capsid classification table; the genome-structure table's segmented row rules one of them out."
+  hint="Compare the options against the two classification tables in the Past Systems of Classification subsection."
 >}}
 Rabies virus
 Herpesviruses
@@ -332,34 +333,34 @@ Parainfluenza viruses
 {{< textin
   question="The part of a virion that contains the genome is called the ________."
   answer="virus core"
-  accept="viral core|core"
-  hint="It is one of the few elements, along with the capsid and envelope structure, used to classify a virus."
+  accept="viral core|core|nucleic acid core"
+  hint="Reread the Types of Nucleic Acid subsection's opening paragraph."
 >}}
 
 ### Describe the basis for the Baltimore classification system
-
-{{< selfcheck question="Classify the Rabies virus (a rhabdovirus family member) and HIV-1 with both the Baltimore and genomic structure systems. Compare your results. What conclusions can be made about these two different methods?" hint="Compare where each virus lands under the two systems, and note which system can tell rabies and HIV-1 apart." >}}
-Rabies virus is a (-) strand RNA virus that transcribes mRNAs from its genome (Group V). HIV-1 is a single-stranded RNA retrovirus that uses reverse transcriptase to create a double-stranded DNA copy of its genome which is integrated into the host human's genome prior to making mRNAs (Group VI). The genome structure system classifies both viruses as single-stranded RNA viruses with linear genomes. Baltimore classification sorts Rabies virus and HIV-1 into two different groups, indicating that the two viruses have very different life cycles. However, genome structure classification does not distinguish between the two viruses. This leaves out important information regarding virus function and survival.
-===CHECKS===
-Rabies virus is a (-) strand RNA virus that transcribes mRNAs from its genome (Group V)
-HIV-1 is a single-stranded RNA retrovirus that uses reverse transcriptase to create a double-stranded DNA copy of its genome integrated into the host genome (Group VI)
-the genome structure system classifies both viruses as single-stranded RNA viruses with linear genomes
-Baltimore classification sorts Rabies virus and HIV-1 into two different groups
-genome structure classification does not distinguish between the two viruses
-{{< /selfcheck >}}
 
 {{< textin
   question="A virus whose genome is double-stranded DNA (dsDNA) belongs to Baltimore ________."
   answer="Group I"
   accept="group 1|group one"
-  hint="Its mRNA is produced by transcription the same way cellular DNA is transcribed, using the host cell's own enzymes."
+  hint="Reread the Baltimore Classification subsection's group descriptions, or its summary table."
 >}}
 
 {{< textin
   question="The enzyme found in Baltimore groups VI and VII that converts single-stranded RNA into double-stranded DNA is called ________."
   answer="reverse transcriptase"
-  hint="HIV, a Group VI virus, depends on this enzyme to make a DNA copy of its RNA genome before integrating it into the host genome."
+  hint="Reread the Baltimore Classification subsection's Group VI description."
 >}}
+
+{{< selfcheck question="Classify the Rabies virus (a rhabdovirus family member) and HIV-1 with both the Baltimore and genomic structure systems. Compare your results. What conclusions can be made about these two different methods?" hint="Use the genome-structure table and the Baltimore Classification table in this section." >}}
+Rabies virus is a (-) strand RNA virus that transcribes mRNAs from its genome (Group V). HIV-1 is a single-stranded RNA retrovirus that uses reverse transcriptase to create a double-stranded DNA copy of its genome which is integrated into the host human's genome prior to making mRNAs (Group VI). The genome structure system classifies both viruses as single-stranded RNA viruses with linear genomes. Baltimore classification sorts Rabies virus and HIV-1 into two different groups, indicating that the two viruses have very different life cycles. However, genome structure classification does not distinguish between the two viruses. This leaves out important information regarding virus function and survival.
+===CHECKS===
+Rabies virus is a (-) strand RNA virus that transcribes mRNAs from its genome (Group V)
+HIV-1 is a single-stranded RNA retrovirus that uses reverse transcriptase to create a double-stranded DNA copy of its genome which is integrated into the host human's genome prior to making mRNAs (Group VI)
+the genome structure system classifies both viruses as single-stranded RNA viruses with linear genomes
+Baltimore classification sorts Rabies virus and HIV-1 into two different groups
+genome structure classification does not distinguish between the two viruses
+{{< /selfcheck >}}
 
 ---
 

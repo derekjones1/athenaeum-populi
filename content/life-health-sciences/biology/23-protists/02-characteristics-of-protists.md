@@ -90,7 +90,7 @@ an extended pseudopod
 a pellicle
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain how the definition of protists ensures that the kingdom Protista includes a wide diversity of cellular structures. Provide an example of two different structures that perform the same function for their respective protist." hint="Think of the different coverings mentioned in Cell Structure and the different locomotor structures mentioned in Motility." >}}
+{{< selfcheck question="Explain how the definition of protists ensures that the kingdom Protista includes a wide diversity of cellular structures. Provide an example of two different structures that perform the same function for their respective protist." hint="The opening paragraph of the section, then the Cell Structure and Motility subsections." >}}
 Protists are defined as any eukaryotes that do not fall into the Plantae, Fungi, or Animal Kingdoms. Since the unifying characteristics describe what they are NOT, rather than what they are, Protista can include almost any cellular/organism organization. Possible examples of structure variety:
 
 - Barrier to exterior world: cell wall, plasma membrane, pellicle
@@ -113,7 +113,7 @@ locomotion: flagella, cilia, pseudopodia
 {{< multiplechoice
   question="Protists with the capabilities to perform photosynthesis and to absorb nutrients from dead organisms are called ______________."
   answer="mixotrophs"
-  hint="The last paragraph of the Metabolism subsection names the protists that use more than one route to nutrition."
+  hint="Reread the last paragraph of the Metabolism subsection."
 >}}
 photoautotrophs
 mixotrophs
@@ -124,7 +124,7 @@ heterotrophs
 {{< multiplechoice
   question="The amoeba *E. histolytica* is a pathogen that forms liver abscesses in infected individuals. Its metabolic classification is most likely ______."
   answer="Anaerobic heterotroph"
-  hint="Decide how a parasite living deep inside a host's tissues would obtain its nutrition and energy, then match the Metabolism subsection's terms."
+  hint="The first paragraph of the Metabolism subsection gives the terms these options combine."
 >}}
 Anaerobic heterotroph
 Mixotroph
@@ -137,7 +137,7 @@ Phagocytic autotroph
 {{< multiplechoice
   question="Alternation of generations describes which of the following?"
   answer="Both the haploid and diploid forms can be multicellular."
-  hint="Compare the three ploidy patterns the section lists for protist life cycles and pick the one this term names."
+  hint="The last paragraph of the Life Cycles subsection defines this term."
 >}}
 The haploid form can be multicellular; the diploid form is unicellular.
 The haploid form is unicellular; the diploid form can be multicellular.
@@ -145,7 +145,7 @@ Both the haploid and diploid forms can be multicellular.
 Neither the haploid nor the diploid forms can be multicellular.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain in your own words why sexual reproduction can be useful if a protist's environment changes." hint="Compare what sexual reproduction can produce with what asexual reproduction (cloning) cannot." >}}
+{{< selfcheck question="Explain in your own words why sexual reproduction can be useful if a protist's environment changes." hint="The second paragraph of the Life Cycles subsection." >}}
 The ability to perform sexual reproduction allows protists to recombine their genes and produce new variations of progeny that may be better suited to the new environment. In contrast, asexual reproduction generates progeny that are clones of the parent.
 ===CHECKS===
 sexual reproduction allows protists to recombine their genes
@@ -153,7 +153,7 @@ produce new variations of progeny that may be better suited to the new environme
 asexual reproduction generates progeny that are clones of the parent
 {{< /selfcheck >}}
 
-{{< selfcheck question="*Giardia lamblia* is a cyst-forming protist parasite that causes diarrhea if ingested. Given this information, against what type(s) of environments might *G. lamblia* cysts be particularly resistant?" hint="Think about where in the digestive tract an ingested cyst must first survive before it can reach the intestine." >}}
+{{< selfcheck question="*Giardia lamblia* is a cyst-forming protist parasite that causes diarrhea if ingested. Given this information, against what type(s) of environments might *G. lamblia* cysts be particularly resistant?" hint="The Life Cycles subsection's passage on cysts lists the conditions they may resist." >}}
 As an intestinal parasite, *Giardia* cysts would be exposed to low pH in the stomach acids of its host. To survive this environment and reach the intestine, the cysts would have to be resistant to acidic conditions.
 ===CHECKS===
 Giardia cysts would be exposed to low pH in the stomach acids of its host

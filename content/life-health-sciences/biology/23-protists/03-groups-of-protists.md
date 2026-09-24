@@ -192,7 +192,7 @@ Conjugation in Paramecium. The complex process of sexual reproduction in *Parame
 {{< multiplechoice
   question="Which of the following statements about *Paramecium* sexual reproduction is false?"
   answer="The conjugate pair swaps macronuclei."
-  hint="Re-read step 4 of the diagram above: what do the two cells actually trade?"
+  hint="Check each statement against the conjugation paragraph and the diagram above."
 >}}
 The macronuclei are derived from micronuclei.
 Both mitosis and meiosis occur during sexual reproduction.
@@ -227,7 +227,7 @@ Alternation of generations in a brown alga. Several species of brown algae, such
 {{< multiplechoice
   question="Which of the following statements about the *Laminaria* life cycle is false?"
   answer="The gametophyte is diploid."
-  hint="Compare the ploidy labels 1n and 2n on the zoospore and sporophyte stages of the diagram above."
+  hint="Check each statement against the brown-algae paragraph and the life-cycle diagram above."
 >}}
 1*n* zoospores form in the sporangia.
 The sporophyte is the 2*n* plant.
@@ -326,19 +326,10 @@ The process of classifying protists into meaningful groups is ongoing, but genet
 *Ammonia tepida*
 {{< /multiplechoice >}}
 
-{{< selfcheck question="The chlorophyte (green algae) genera *Ulva* and *Caulerpa* both have macroscopic leaf-like and stem-like structures, but only *Ulva* species are considered truly multicellular. Explain why." hint="Consider whether Caulerpa's cells complete cytokinesis after nuclear division." >}}
-Unlike *Ulva*, protists in the genus *Caulerpa* are large, multinucleate, single cells. Because these organisms undergo mitosis without cytokinesis and lack cytoplasmic divisions, they cannot be considered truly multicellular.
-===CHECKS===
-Caulerpa protists are large, multinucleate, single cells
-these organisms undergo mitosis without cytokinesis
-lack cytoplasmic divisions
-cannot be considered truly multicellular
-{{< /selfcheck >}}
-
 {{< textin
   question="The diverse group of mostly microscopic organisms that drift in marine and freshwater systems, serving as a food source for larger aquatic organisms, is called ________."
   answer="plankton"
-  hint="Both diatoms and dinoflagellates are described in this section as components of this drifting community."
+  hint="The dinoflagellate paragraph under Alveolates sets this term in bold."
 >}}
 
 {{< textin
@@ -347,9 +338,18 @@ cannot be considered truly multicellular
   hint="The Foraminiferans subsection sets this term in bold."
 >}}
 
+{{< selfcheck question="The chlorophyte (green algae) genera *Ulva* and *Caulerpa* both have macroscopic leaf-like and stem-like structures, but only *Ulva* species are considered truly multicellular. Explain why." hint="The paragraph after the Volvox figure, under Green Algae: Chlorophytes and Charophytes, answers this." >}}
+Unlike *Ulva*, protists in the genus *Caulerpa* actually are large, multinucleate, single cells. Because these organisms undergo mitosis without cytokinesis and lack cytoplasmic divisions, they cannot be considered truly multicellular.
+===CHECKS===
+Caulerpa actually are large, multinucleate, single cells
+these organisms undergo mitosis without cytokinesis
+lack cytoplasmic divisions
+cannot be considered truly multicellular
+{{< /selfcheck >}}
+
 ### Identify the evolutionary relationships of plants, animals, and fungi within the six presently recognized supergroups of eukaryotes
 
-{{< selfcheck question="Opisthokonta includes animals and fungi, as well as protists. Describe the key feature of this phylum, and an example of how an organism in each kingdom uses this feature." hint="The Opisthokont name itself describes where the flagellum sits on the cell." >}}
+{{< selfcheck question="Opisthokonta includes animals and fungi, as well as protists. Describe the key feature of this phylum, and an example of how an organism in each kingdom uses this feature." hint="The opening paragraph of the Opisthokonta section, with its choanoflagellate discussion, answers this." >}}
 The key feature of Opisthokonts is the flagellum on the posterior end of cells. Example organisms:
 
 - Choanoflagellates use the flagellum for filter feeding.
@@ -365,16 +365,16 @@ fungi spores use the flagellum for locomotion
 {{< /selfcheck >}}
 
 {{< textin
-  question="The land plants are believed to have evolved from a common ancestor shared with the red and green algae, protist members of the supergroup ________."
+  question="The red algae and green algae, among which the land plants' closest relatives are found, are the protist members of the eukaryotic group ________."
   answer="Archaeplastida"
   accept="Archaeplastid"
-  hint="This supergroup's chloroplasts trace to an ancient endosymbiosis between a heterotrophic protist and a cyanobacterium."
+  hint="The paragraph that opens the first group section after the six-group diagram answers this."
 >}}
 
 {{< multiplechoice
-  question="The section summary states that the majority view at present is to order all eukaryotes into six ________, such as Archaeplastida, Amoebozoa, and Excavata."
+  question="The section summary states that the majority view at present is to order all eukaryotes into six ________, such as Amoebozoa, Opisthokonta, and Excavata."
   answer="supergroups"
-  hint="This is the summary's own name for each of the six top-level eukaryotic groups introduced in this section."
+  hint="Re-read the second sentence of the section summary."
 >}}
 domains
 phyla
@@ -383,9 +383,10 @@ kingdoms
 {{< /multiplechoice >}}
 
 {{< textin
-  question="According to the section summary, the goal of the six-supergroup classification scheme is to create clusters of species that are all derived from a ________."
+  question="According to the section summary, the goal of the present classification scheme for eukaryotes is to create clusters of species that all are derived from a ________."
   answer="common ancestor"
-  hint="Re-read the second sentence of the section summary."
+  accept="single common ancestor"
+  hint="Re-read the third sentence of the section summary."
 >}}
 
 ### Identify defining features of protists in each of the six supergroups of eukaryotes.
@@ -404,7 +405,7 @@ dinoflagellates
 {{< multiplechoice
   question="Conjugation between two Paramecia produces ________ total daughter cells."
   answer="8"
-  hint="Trace the conjugation diagram above from the nuclear exchange onward, then count the cells that remain after the two rounds of cell division that close the cycle."
+  hint="The Paramecium conjugation paragraph under Alveolates and the caption of its figure answer this."
 >}}
 2
 4
@@ -423,7 +424,7 @@ capturing food
 photosynthesis
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why might a light-sensing eyespot be ineffective for an obligate saprobe? Suggest an alternative organ for a saprobic protist." hint="Think about what a saprobe eats and how it might locate that food instead of light." >}}
+{{< selfcheck question="Why might a light-sensing eyespot be ineffective for an obligate saprobe? Suggest an alternative organ for a saprobic protist." hint="The Euglenozoans subsection says what an eyespot senses; the diatom and oomycete paragraphs describe saprobes." >}}
 By definition, an obligate saprobe lacks the ability to perform photosynthesis, so it cannot directly obtain nutrition by searching for light. Instead, a chemotactic mechanism that senses the odors released during decay might be a more effective sensing organ for a saprobe.
 ===CHECKS===
 an obligate saprobe lacks the ability to perform photosynthesis
@@ -432,7 +433,7 @@ a chemotactic mechanism that senses the odors released during decay
 might be a more effective sensing organ for a saprobe
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe two ways in which paramecium differs from the projected traits of the last eukaryotic common ancestor." hint="Compare Paramecium's two-nucleus system and its asexual division style to a 'typical' single-nucleus eukaryote." >}}
+{{< selfcheck question="Describe two ways in which paramecium differs from the projected traits of the last eukaryotic common ancestor." hint="Read the Paramecium paragraphs under Alveolates against the section's opening paragraph on the typical eukaryotic cell." >}}
 Possible answers include two nuclei (a macronucleus and a micronucleus) instead of one nucleus; amitotic division/binary fission during asexual reproduction instead of mitotic cell division; and mitosis of the micronucleus after meiosis instead of direct meiotic production of gametes for sexual reproduction.
 ===CHECKS===
 two nuclei (a macronucleus and a micronucleus) instead of one nucleus
@@ -441,11 +442,11 @@ mitosis of the micronucleus after meiosis instead of direct meiotic production o
 {{< /selfcheck >}}
 
 {{< textin
-  question="The anaerobic Excavata organelle that outputs hydrogen gas as a byproduct, likely evolved from mitochondria, is called a ________."
-  answer="hydrogenosome"
-  hint="Parabasalids carry this modified-mitochondrion organelle."
+  question="In the Euglenozoa subgroup that includes *Trypanosoma brucei*, the large modified mitochondrion carrying multiple circular DNAs is called the ________."
+  answer="kinetoplast"
+  hint="The second paragraph of the Euglenozoans subsection names it."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 23.3: Groups of Protists](https://openstax.org/books/biology-2e/pages/23-3-groups-of-protists) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with a custom alt written from each image rather than reusing the source's own long, walk-through-style alt text, and the over-600-character source alt for Figure_B23_03_01 condensed to a short description with its supergroup-by-supergroup walk-through moved into a longdesc; three figures (Figure_23_03_04, Figure_23_03_06ab, Figure_23_03_08) re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection, since each is a drawn, labeled schematic rather than a photograph; a longdesc added to eight figures whose flow-chart arrows, life-cycle stages, or diagram labels are not carried by their one-line captions (Figure_B23_03_01, Figure_23_03_15, Figure_B23_03_18, Figure_B23_03_05ab, Figure_23_03_06ab, Figure_B23_03_07-png, Figure_23_03_10, and Figure_B23_03_20); the Foraminiferan Tests figure's source alt typo "0.25 m m" corrected to "0.25 mm"; the Paramecium conjugation figure's (Figure_B23_03_07-png) step 6 is drawn with seven micronuclei although its printed step text, and the next step's four new macronuclei plus four micronuclei, give eight; the longdesc reports both — reported as a source defect; the two figures that share the source stem "Figure_B23_03_07" kept as their vendored stems Figure_B23_03_07-jpg (the Dictyostelium fruiting-body photo) and Figure_B23_03_07-png (the Paramecium conjugation diagram) rather than merged; the Archaeplastida section's opening paragraph dropped its forward reference to a figure supposedly illustrating algal alternation of generations, since the module's own cross-reference (`newfig-ch23_03_01`) actually points to the unrelated Glaucocystis micrograph in the following Glaucophytes subsection — the genuine reference to that figure was kept where it belongs, in the Glaucophytes paragraph; the two feature boxes wrapping Visual Connection questions rendered as their figure followed by a multiple choice, kept in the body; the first Visual Connection option's "swaps macronucleii" (a typo in the in-body note) corrected to "swaps macronuclei," matching the parallel keyed exercise in the module's own Visual Connection Questions section; the five interactive/link-to-learning notes rendered as Link to Learning callouts with descriptive link text and the source's own openstax.org short URLs; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the Review Questions run in the order 4, 5, 1, 2, 3 and the Critical Thinking Questions in the order 1, 3, 2, 4 of the source's numbering; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (plankton, test, hydrogenosome) added from the glossary; two summary-derived items added under the second objective (a cloze text-in on "common ancestor" and a select-the-term multiple choice on "supergroups"), since the module's Review and Critical Thinking Questions leave that objective's classification-scheme half thin; and one locally written text-in added under the same objective (Archaeplastida, keyed from the Archaeplastida section's own sentence on land-plant ancestry), since no source exercise tests the plants half of "the evolutionary relationships of plants, animals, and fungi." The Paramecium illustration's printed label "Contractile vacoule" is spelled "contractile vacuole" in its long description; the misspelling remains in the vendored image and is reported as a suspected source defect.</small>
+<small>This section is adapted from [Biology 2e, Section 23.3: Groups of Protists](https://openstax.org/books/biology-2e/pages/23-3-groups-of-protists) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with a custom alt written from each image rather than reusing the source's own long, walk-through-style alt text, and the over-600-character source alt for Figure_B23_03_01 condensed to a short description with its supergroup-by-supergroup walk-through moved into a longdesc; three figures (Figure_23_03_04, Figure_23_03_06ab, Figure_23_03_08) re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection, since each is a drawn, labeled schematic rather than a photograph; a longdesc added to eight figures whose flow-chart arrows, life-cycle stages, or diagram labels are not carried by their one-line captions (Figure_B23_03_01, Figure_23_03_15, Figure_B23_03_18, Figure_B23_03_05ab, Figure_23_03_06ab, Figure_B23_03_07-png, Figure_23_03_10, and Figure_B23_03_20); the Foraminiferan Tests figure's source alt typo "0.25 m m" corrected to "0.25 mm"; the Paramecium conjugation figure's (Figure_B23_03_07-png) step 6 is drawn with seven micronuclei although its printed step text, and the next step's four new macronuclei plus four micronuclei, give eight; the longdesc reports both; the two figures that share the source stem "Figure_B23_03_07" kept as their vendored stems Figure_B23_03_07-jpg (the Dictyostelium fruiting-body photo) and Figure_B23_03_07-png (the Paramecium conjugation diagram) rather than merged; the Archaeplastida section's opening paragraph dropped its forward reference to a figure supposedly illustrating algal alternation of generations, since the module's own cross-reference (`newfig-ch23_03_01`) actually points to the unrelated Glaucocystis micrograph in the following Glaucophytes subsection — the genuine reference to that figure was kept where it belongs, in the Glaucophytes paragraph; the two feature boxes wrapping Visual Connection questions rendered as their figure followed by a multiple choice, kept in the body; the first Visual Connection's third option "swaps macronucleii" (a typo in the in-body note) corrected to "swaps macronuclei," matching the parallel keyed exercise in the module's own Visual Connection Questions section; the five interactive/link-to-learning notes rendered as Link to Learning callouts with descriptive link text and the source's own openstax.org short URLs; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the Review Questions run in the order 4, 5, 1, 2, 3 and the Critical Thinking Questions in the order 1, 3, 2, 4 of the source's numbering, with Critical Thinking Question 1 placed after the first objective's two key-term items; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (plankton, test, kinetoplast) added from the glossary, the kinetoplast item worded from the Euglenozoans subsection's own sentence; two summary-derived items added under the second objective (a cloze text-in on "common ancestor" and a select-the-term multiple choice on "supergroups"), since the module's Review and Critical Thinking Questions leave that objective's classification-scheme half thin; and one locally written text-in added under the same objective (Archaeplastida, keyed from the Archaeplastida section's own sentence on land-plant ancestry), since no source exercise tests the plants half of "the evolutionary relationships of plants, animals, and fungi." The Paramecium illustration's printed label "Contractile vacoule" is spelled "contractile vacuole" in its long description; the misspelling remains in the vendored image.</small>

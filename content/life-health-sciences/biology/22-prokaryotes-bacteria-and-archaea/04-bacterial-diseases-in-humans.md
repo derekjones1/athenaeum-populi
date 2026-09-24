@@ -148,7 +148,7 @@ Some bacterial infections have been associated with biofilms: Legionnaires' dise
 {{< multiplechoice
   question="A disease that is constantly present in a population is called _____."
   answer="endemic"
-  hint="Re-read the definition given right after the terms epidemic and pandemic are introduced."
+  hint="Re-read the second paragraph of the section's introduction."
 >}}
 pandemic
 epidemic
@@ -159,7 +159,7 @@ re-emerging
 {{< multiplechoice
   question="A person in England arrives at a medical clinic with a fever and swollen lymph nodes shortly after returning from a visit to New Mexico. For which bacteria should the doctor test the patient?"
   answer="Yersinia pestis"
-  hint="A 'sylvatic' form of this disease is still carried by fleas on rodents in the American Southwest, and its symptoms include swollen lymph nodes."
+  hint="Re-read the end of the second paragraph of the Bubonic Plagues subsection, on modern cases."
 >}}
 Salmonella enterica
 Borrelia burgdorferi
@@ -168,9 +168,9 @@ Yersinia pestis
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A devastating pandemic believed to have been an outbreak of bubonic plague, caused by the bacterium Yersinia pestis, is known as the ________."
+  question="A devastating pandemic of 1346 to 1361, believed to have been an outbreak of bubonic plague, is known as the ________."
   answer="Black Death"
-  hint="It struck from 1346 to 1361, after spreading along the Silk Road."
+  hint="Re-read the second paragraph of the Bubonic Plagues subsection."
 >}}
 
 ### Describe the link between biofilms and foodborne diseases
@@ -178,7 +178,7 @@ Yersinia pestis
 {{< multiplechoice
   question="Which of the statements about biofilms is correct?"
   answer="All statements are correct."
-  hint="Consider whether cystic fibrosis, dental plaque, catheters, and open wounds are each mentioned in the section as sites where biofilms are found."
+  hint="Re-read the first paragraph of the Biofilms and Disease subsection."
 >}}
 Biofilms are considered responsible for diseases such as cystic fibrosis.
 Biofilms produce dental plaque, and colonize catheters and prostheses.
@@ -187,13 +187,12 @@ All statements are correct.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Any illness resulting from the consumption of contaminated food, or of the pathogenic bacteria, viruses, or other parasites that contaminate food, is called a ________."
-  answer="foodborne disease"
-  accept="food poisoning|food-borne disease|foodborne illness|food-borne illness"
-  hint="Salmonella and E. coli O157:H7 outbreaks from contaminated produce or meat are the section's examples of it."
+  question="A strain of bacterium that carries a set of similar antigens on its cell surface, often one of many in a bacterial species, is called a ________."
+  answer="serotype"
+  hint="Re-read the paragraph on the 2006 raw spinach outbreak, in the subsection after Emerging and Re-emerging Diseases."
 >}}
 
-{{< selfcheck question="Researchers have discovered that washing spinach with water several times does not prevent foodborne diseases due to E. coli. How can you explain this fact?" hint="Think about how a biofilm resists removal compared with free-floating cells, and how bacteria can reach tissue that a leaf's surface does not expose." >}}
+{{< selfcheck question="Researchers have discovered that washing spinach with water several times does not prevent foodborne diseases due to E. coli. How can you explain this fact?" hint="Re-read the first two paragraphs of the Biofilms and Disease subsection." >}}
 *E. coli* colonizes the surface of the leaf, forming a biofilm that is more difficult to remove than free (planktonic) cells. Additionally, bacteria can be taken up in the water that plants are grown in, thereby entering the plant tissues rather than simply residing on the leaf surface.
 ===CHECKS===
 E. coli colonizes the surface of the leaf, forming a biofilm
@@ -205,9 +204,9 @@ entering the plant tissues rather than simply residing on the leaf surface
 ### Explain how overuse of antibiotics may be creating "super bugs"
 
 {{< textin
-  question="A chemical, produced either by microbes or synthetically, that is hostile to or prevents the growth of other organisms is called an ________."
-  answer="antibiotic"
-  hint="The subsection after Biofilms and Disease defines this term in its first paragraph."
+  question="In addition to transmission of resistance genes to progeny, lateral transfer of resistance genes on ________ can rapidly spread these genes through a bacterial population."
+  answer="plasmids"
+  hint="Re-read the second paragraph of the subsection after Biofilms and Disease."
 >}}
 
 {{< multiplechoice
@@ -221,7 +220,7 @@ An antibiotic is any substance produced by a prokaryote that is antagonistic to 
 An antibiotic is any substance produced by a prokaryote that prevents growth of the same prokaryote.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain the reason why the imprudent and excessive use of antibiotics has resulted in a major global problem." hint="Think about which bacteria an antibiotic kills, and which ones are left behind to reproduce." >}}
+{{< selfcheck question="Explain the reason why the imprudent and excessive use of antibiotics has resulted in a major global problem." hint="Re-read the opening sentences of the second paragraph of the subsection after Biofilms and Disease." >}}
 Antibiotics kill bacteria that are sensitive to them; thus, only the resistant ones will survive. These resistant bacteria will reproduce, and therefore, after a while, there will be only resistant bacteria.
 ===CHECKS===
 antibiotics kill bacteria that are sensitive to them
@@ -232,16 +231,10 @@ after a while, there will be only resistant bacteria
 
 ### Explain the importance of MRSA with respect to the problems of antibiotic resistance
 
-{{< textin
-  question="A very dangerous Staphylococcus aureus strain resistant to multiple antibiotics is abbreviated ________."
-  answer="MRSA"
-  hint="The last subsection of the antibiotics discussion introduces this abbreviation for the strain."
->}}
-
 {{< multiplechoice
   question="MRSA has emerged as a serious infectious disease, with the first case of methicillin-resistant S. *aureus* being detected in 1961. Why are medical professionals so concerned when antibiotics exist that can kill MRSA?"
   answer="All of the above."
-  hint="Weigh each statement on its own against the section before deciding whether more than one applies."
+  hint="Re-read the second paragraph of the subsection after Biofilms and Disease, then the subsection on MRSA."
 >}}
 MRSA can transfer methicillin-resistance to other bacteria.
 Patients are not treated with correct antibiotics rapidly enough to prevent serious illness.
@@ -252,10 +245,16 @@ All of the above.
 {{< textin
   question="MRSA acquired in the community rather than in a hospital is abbreviated ________."
   answer="CA-MRSA"
-  accept="community-associated MRSA|community-acquired MRSA|CAMRSA"
-  hint="Patients with this form of MRSA have an average age of 23, versus 68 for the healthcare-facility form."
+  accept="community-associated MRSA|community-acquired MRSA|CAMRSA|community-associated methicillin-resistant Staphylococcus aureus"
+  hint="Re-read the last sentence of the first paragraph under the MRSA subsection heading."
+>}}
+
+{{< textin
+  question="MRSA infections have also appeared in healthy people who live or work in tight populations; researchers are concerned that this source of MRSA targets a much ________ population than those residing in care facilities."
+  answer="younger"
+  hint="Re-read the first paragraph under the MRSA subsection heading."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 22.4: Bacterial Diseases in Humans](https://openstax.org/books/biology-2e/pages/22-4-bacterial-diseases-in-humans) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B22_04_07 (Salmonella micrograph) and Figure_B22_04_03 (MRSA micrograph) re-kinded from the manifest's "diagram" guess to "photo" since both are unlabeled micrographs; Figure_22_04_03 (the emerging-diseases map) and Figure_22_04_06f (the foodborne-pathogens panel) re-kinded from the manifest's "photo" guess to "diagram," the first because it is a labeled map and the second because its third panel is an illustrated (non-photographic) comparison of intact and damaged red blood cells; a longdesc added for the emerging-diseases map, the Lyme-disease life-cycle panel, and the foodborne-pathogens panel, since none of their labeled or schematic content is fully carried by its caption; the emerging-diseases map's source alt, which spelled "E. coli O157:H7" letter-by-letter ("E coli O 1 5 7 colon H 7") and misspelled "Diphtheria," rewritten as a plain description from the image; the Lyme-disease figure's source alt, which described panel (c) as "the life cycle of the bacteria," rewritten because the panel is titled "Life Cycle of the Ixodes scapularis Tick" and depicts the tick vector's life cycle, not the bacterium's — reported as a source defect; two footnoted citations (the Salmonella DNA study, the JAMA MRSA age comparison) kept as parentheticals after the sentences they support; eight prose cross-references to numbered figures reworded as "shown below" / "pictured below" since figures are not numbered here; the two `interactive` notes and the Career Connection note rendered as callouts, the Career Connection with its embedded vaccination figure kept inside it and its title kept in italics after the bold feature name; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the Review Questions run in the order 1, 4, 2, 3, 5 of the source's numbering and the spinach Critical Thinking Question comes before the antibiotic-overuse one; five recall items added, four (Black Death, foodborne disease, MRSA, CA-MRSA) from the glossary and one (antibiotic) from the section's own defining sentence, so that its prompt does not print the key of the Review Question below it; one (CA-MRSA) with an `accept` for the compound form the section itself uses; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. Two figures are corrected with visible Source notes: the Lyme, Connecticut outbreak is dated 1975, not 1995, and the 2011 German *E. coli* outbreak killed 53 people, not 32 (errata 415–416).</small>
+<small>This section is adapted from [Biology 2e, Section 22.4: Bacterial Diseases in Humans](https://openstax.org/books/biology-2e/pages/22-4-bacterial-diseases-in-humans) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B22_04_07 (Salmonella micrograph) and Figure_B22_04_03 (MRSA micrograph) re-kinded from the manifest's "diagram" guess to "photo" since both are unlabeled micrographs; Figure_22_04_03 (the emerging-diseases map) and Figure_22_04_06f (the foodborne-pathogens panel) re-kinded from the manifest's "photo" guess to "diagram," the first because it is a labeled map and the second because its third panel is an illustrated (non-photographic) comparison of intact and damaged red blood cells; a longdesc added for the emerging-diseases map, the Lyme-disease life-cycle panel, and the foodborne-pathogens panel, since none of their labeled or schematic content is fully carried by its caption; the emerging-diseases map's source alt, which spelled "E. coli O157:H7" letter-by-letter ("E coli O 1 5 7 colon H 7") and misspelled "Diphtheria," rewritten as a plain description from the image; the Lyme-disease figure's source alt, which described panel (c) as "the life cycle of the bacteria," rewritten because the panel is titled "Life Cycle of the Ixodes scapularis Tick" and depicts the tick vector's life cycle, not the bacterium's — reported as a source defect; two footnoted citations (the Salmonella DNA study, the JAMA MRSA age comparison) kept as parentheticals after the sentences they support; eight prose cross-references to numbered figures reworded as "shown below" / "pictured below" since figures are not numbered here; the two `interactive` notes and the Career Connection note rendered as callouts, the Career Connection with its embedded vaccination figure kept inside it and its title kept in italics after the bold feature name; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the Review Questions run in the order 1, 4, 2, 3, 5 of the source's numbering and the spinach Critical Thinking Question comes before the antibiotic-overuse one; five recall items added, three (Black Death, serotype, CA-MRSA) from the glossary and two (plasmids, younger) as clozes of the section's own sentences, the Black Death prompt dating the pandemic from the body in place of the glossary's bacterium, which is the key of the Review Question above it, and the "younger" prompt naming the section's "tight populations" in place of its "this latter source"; one (CA-MRSA) with an `accept` for the compound forms the section itself uses; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. Two figures are corrected with visible Source notes: the Lyme, Connecticut outbreak is dated 1975, not 1995, and the 2011 German *E. coli* outbreak killed 53 people, not 32 (errata 415–416).</small>

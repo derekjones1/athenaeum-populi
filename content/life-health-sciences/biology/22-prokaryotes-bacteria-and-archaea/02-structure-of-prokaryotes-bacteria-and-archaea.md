@@ -66,14 +66,14 @@ Bacterial cell walls contain **peptidoglycan**, composed of polysaccharide chain
 
 Bacteria are divided into two major groups: ***Gram positive*** and ***Gram negative***, based on their reaction to Gram staining. Note that all Gram-positive bacteria belong to two phyla (Firmicutes and Actinobacteria); bacteria in the other phyla (Proteobacteria, Chlamydias, Spirochetes, Cyanobacteria, and others) are Gram-negative. The Gram staining method is named after its inventor, Danish scientist Hans Christian Gram (1853–1938). The different bacterial responses to the staining procedure are ultimately due to cell wall structure. *Gram-positive organisms typically lack the outer membrane found in Gram-negative organisms*, illustrated below. Up to 90 percent of the cell wall in Gram-positive bacteria is composed of peptidoglycan, and most of the rest is composed of acidic substances called *teichoic acids*. Teichoic acids may be covalently linked to lipids in the plasma membrane to form *lipoteichoic acids*. Lipoteichoic acids anchor the cell wall to the cell membrane. Gram-negative bacteria have a relatively thin cell wall composed of a few layers of peptidoglycan (only 10 percent of the total cell wall), surrounded by an outer envelope containing lipopolysaccharides (LPS) and lipoproteins. This outer envelope is sometimes referred to as a second lipid bilayer. The chemistry of this outer envelope is very different, however, from that of the typical lipid bilayer that forms plasma membranes.
 
-{{< mediafigure src="biology/Figure_22_02_08f" kind="diagram" alt="Two side-by-side cutaway diagrams comparing bacterial cell walls: Gram-positive bacteria have a single thick peptidoglycan wall outside the plasma membrane, anchored to it by lipoteichoic acid; Gram-negative bacteria have a thin peptidoglycan layer sandwiched between an inner and an outer membrane, with lipoproteins anchoring it to the outer membrane and lipopolysaccharides and porins on the outer membrane." longdesc="Two cutaway diagrams are shown side by side. Left, “Gram-positive bacteria”: from top to bottom, a thick layer of five rows of horizontal blue bars labeled peptidoglycan cell wall, pierced by thin green vertical strands labeled lipoteichoic acid that are anchored in the membrane below and run up through the whole wall, and a light blue lipid-bilayer strip labeled plasma membrane, above an orange cytoplasm. Right, “Gram-negative bacteria”: from top to bottom, a green layer labeled lipopolysaccharide with vertical strands and blue upright shapes labeled porin, a lipid-bilayer strip labeled outer membrane, a thin single row of blue bars labeled peptidoglycan cell wall sitting in a gap labeled periplasmic space, purple connectors labeled lipoprotein linking the wall to the outer membrane, and a second lipid-bilayer strip labeled inner membrane with upright shapes labeled membrane protein and phospholipid, above the same orange cytoplasm. The labels peptidoglycan cell wall and plasma membrane, set between the two diagrams, bracket the matching layer in each: the Gram-negative inner membrane is its plasma membrane." >}}
+{{< mediafigure src="biology/Figure_22_02_08f" kind="diagram" alt="Two side-by-side cutaway diagrams of bacterial cell envelopes: on the left, Gram-positive bacteria, a thick peptidoglycan layer above the plasma membrane with lipoteichoic acid strands running up through it from the membrane; on the right, Gram-negative bacteria, a thin peptidoglycan layer in the periplasmic space between an inner and an outer membrane, joined to the outer membrane by lipoproteins, with lipopolysaccharides and porins at the outer membrane." longdesc="Two cutaway diagrams are shown side by side. Left, “Gram-positive bacteria”: from top to bottom, a thick layer of five rows of horizontal blue bars labeled peptidoglycan cell wall, pierced by thin green vertical strands labeled lipoteichoic acid that are anchored in the membrane below and run up through the whole wall, and a light blue lipid-bilayer strip labeled plasma membrane, above an orange cytoplasm. Right, “Gram-negative bacteria”: from top to bottom, a green layer labeled lipopolysaccharide with vertical strands and blue upright shapes labeled porin, a lipid-bilayer strip labeled outer membrane, a thin single row of blue bars labeled peptidoglycan cell wall sitting in a gap labeled periplasmic space, purple connectors labeled lipoprotein linking the wall to the outer membrane, and a second lipid-bilayer strip labeled inner membrane with upright shapes labeled membrane protein and phospholipid, above the same orange cytoplasm. The labels peptidoglycan cell wall and plasma membrane, set between the two diagrams, bracket the matching layer in each: the Gram-negative inner membrane is its plasma membrane." >}}
 Cell walls in Gram-positive and Gram-negative bacteria. Bacteria are divided into two major groups: Gram positive and Gram negative. Both groups have a cell wall composed of peptidoglycan: in Gram-positive bacteria, the wall is thick, whereas in Gram-negative bacteria, the wall is thin. In Gram-negative bacteria, the cell wall is surrounded by an outer membrane that contains lipopolysaccharides and lipoproteins. Porins are proteins in this cell membrane that allow substances to pass through the outer membrane of Gram-negative bacteria. In Gram-positive bacteria, lipoteichoic acid anchors the cell wall to the cell membrane. (credit: modification of work by "Franciscosp2"/Wikimedia Commons)
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements is true?"
   answer="Gram-positive bacteria have a single cell wall anchored to the cell membrane by lipoteichoic acid."
-  hint="Check each statement against the diagram above: how many membranes does each cell type have, and which side does lipoteichoic acid attach to?"
+  hint="The Gram-positive and Gram-negative diagram above and its caption."
 >}}
 Gram-positive bacteria have a single cell wall anchored to the cell membrane by lipoteichoic acid.
 Porins allow entry of substances into both Gram-positive and Gram-negative bacteria.
@@ -150,7 +150,7 @@ Prokaryotes can transfer DNA from one cell to another by three mechanisms: trans
 {{< multiplechoice
   question="The presence of a membrane-enclosed nucleus is a characteristic of ________."
   answer="eukaryotic cells"
-  hint="Prokaryotes are defined by the absence of this membrane-bound structure."
+  hint="The opening paragraph of the section."
 >}}
 prokaryotic cells
 eukaryotic cells
@@ -161,7 +161,7 @@ viruses
 {{< multiplechoice
   question="Which of the following consist of prokaryotic cells?"
   answer="bacteria and archaea"
-  hint="Look back at the paragraph on the three domains of life and the diagram of them for which domains are prokaryotic."
+  hint="The three-domains paragraph and diagram in The Prokaryotic Cell."
 >}}
 bacteria and fungi
 archaea and fungi
@@ -172,7 +172,7 @@ bacteria and archaea
 {{< multiplechoice
   question="The cell wall is ________."
   answer="exterior to the cell membrane"
-  hint="Re-read the section's description of what surrounds the plasma membrane in most prokaryotes."
+  hint="The first paragraph of The Prokaryotic Cell."
 >}}
 interior to the cell membrane
 exterior to the cell membrane
@@ -181,16 +181,22 @@ interior or exterior, depending on the particular cell
 {{< /multiplechoice >}}
 
 {{< textin
+  question="Prokaryotes have a single piece of circular DNA in the ________ area of the cell."
+  answer="nucleoid"
+  hint="The first paragraph of The Prokaryotic Cell."
+>}}
+
+{{< textin
   question="An external structure that enables a prokaryote to attach to surfaces and protects it from dehydration is called a ________."
   answer="capsule"
-  hint="It sits outside the cell wall and also helps resist attack by phagocytic cells."
+  hint="The first paragraph of The Prokaryotic Cell."
 >}}
 
 {{< textin
   question="A surface appendage of some prokaryotes used for attachment to surfaces, including other prokaryotes, is called a ________."
   answer="pilus"
   accept="pili"
-  hint="Its plural is used earlier in the section for the many short surface projections used for attachment."
+  hint="The end of the first paragraph of The Prokaryotic Cell."
 >}}
 
 {{< textin
@@ -209,16 +215,30 @@ interior or exterior, depending on the particular cell
 {{< textin
   question="The process by which a bacteriophage moves DNA from one prokaryote to another is called ________."
   answer="transduction"
-  hint="A virus that infects bacteria carries out this DNA-exchange mechanism."
+  hint="The second paragraph of Reproduction."
 >}}
 
 {{< textin
-  question="The process by which prokaryotes move DNA from one individual to another using a pilus is called ________."
+  question="The process by which DNA is transferred from one prokaryote to another through an appendage that brings the organisms into contact and provides a channel for the DNA is called ________."
   answer="conjugation"
-  hint="This mechanism requires direct cell-to-cell contact through a channel."
+  hint="The second paragraph of Reproduction."
 >}}
 
 ### Describe important differences in structure between Archaea and Bacteria
+
+{{< textin
+  question="A bacterium that contains little peptidoglycan but has an outer membrane is described as ________."
+  answer="Gram negative"
+  accept="gram-negative bacterium|gram-negative bacteria"
+  hint="The third paragraph of The Cell Wall of Prokaryotes."
+>}}
+
+{{< textin
+  question="A bacterium that contains mainly peptidoglycan and typically lacks an outer membrane is described as ________."
+  answer="Gram positive"
+  accept="gram-positive bacterium|gram-positive bacteria"
+  hint="The third paragraph of The Cell Wall of Prokaryotes."
+>}}
 
 {{< multiplechoice
   question="Organisms most likely to be found in extreme environments are ________."
@@ -234,7 +254,7 @@ archaea
 {{< multiplechoice
   question="Prokaryotes stain as Gram-positive or Gram-negative because of differences in the cell _______."
   answer="wall"
-  hint="Re-read what the Gram stain reaction actually detects."
+  hint="The paragraph on Gram staining, just before the Gram-positive and Gram-negative diagram."
 >}}
 wall
 cytoplasm
@@ -242,10 +262,16 @@ nucleus
 chromosome
 {{< /multiplechoice >}}
 
+{{< textin
+  question="A polymer associated with the cell wall of Gram-positive bacteria, sometimes linked to membrane lipids to form a lipid-anchored form, is called ________."
+  answer="teichoic acid"
+  hint="The third paragraph of The Cell Wall of Prokaryotes."
+>}}
+
 {{< multiplechoice
   question="Pseudopeptidoglycan is a characteristic of the walls of ________."
   answer="archaean prokaryotic cells"
-  hint="This molecule replaces peptidoglycan in one domain's cell walls."
+  hint="The paragraph after the Gram-positive and Gram-negative diagram."
 >}}
 eukaryotic cells
 bacterial prokaryotic cells
@@ -264,20 +290,20 @@ bacterial prokaryotic cells
 eukaryotic cells
 {{< /multiplechoice >}}
 
-{{< sortbins question="Assign each structural feature from the comparison table to the domain, Bacteria or Archaea, it describes." hint="Reread the comparison table above — check which column, Bacteria or Archaea, each feature's row lists it under." >}}
+{{< sortbins question="Assign each structural feature from the comparison table to the domain, Bacteria or Archaea, it describes." hint="The comparison table in The Cell Wall of Prokaryotes." >}}
 {"bins": ["Bacteria", "Archaea"],
  "items": [
   {"label": "Cell wall contains peptidoglycan", "bin": 0},
   {"label": "Chromosome replication begins from multiple origins", "bin": 1},
   {"label": "The initiator tRNA carries methionine", "bin": 1},
   {"label": "A single form of RNA polymerase carries out transcription", "bin": 0},
-  {"label": "The Calvin cycle for carbon fixation is absent", "bin": 1},
+  {"label": "The Calvin cycle is absent", "bin": 1},
   {"label": "Plasma membrane lipids are fatty acids joined to glycerol by an ester linkage", "bin": 0},
-  {"label": "Protein synthesis is sensitive to inhibition by streptomycin", "bin": 0},
+  {"label": "Sensitive to inhibition by streptomycin", "bin": 0},
   {"label": "Cell membrane can be a lipid bilayer or a lipid monolayer", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="Mention three differences between bacteria and archaea." hint="Think about the cell wall, the cell membrane's lipid arrangement, and the chemical building block of that membrane." >}}
+{{< selfcheck question="Mention three differences between bacteria and archaea." hint="The comparison table in The Cell Wall of Prokaryotes." >}}
 Bacteria contain peptidoglycan in the cell wall; archaea do not. The cell membrane in bacteria is a lipid bilayer; in archaea, it can be a lipid bilayer or a monolayer. Bacteria contain fatty acids on the cell membrane, whereas archaea contain phytanyl.
 ===CHECKS===
 bacteria contain peptidoglycan in the cell wall; archaea do not
@@ -285,7 +311,7 @@ the cell membrane in bacteria is a lipid bilayer; in archaea, it can be a lipid 
 bacteria contain fatty acids on the cell membrane, whereas archaea contain phytanyl
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain the statement that both types, bacteria and archaea, have the same basic structures, but built from different chemical components." hint="Compare the cell membrane's hydrophobic portion and the cell wall's composition in each domain." >}}
+{{< selfcheck question="Explain the statement that both types, bacteria and archaea, have the same basic structures, but built from different chemical components." hint="The Plasma Membrane of Prokaryotes and The Cell Wall of Prokaryotes subsections." >}}
 Both bacteria and archaea have cell membranes and they both contain a hydrophobic portion. In the case of bacteria, it is a fatty acid; in the case of archaea, it is a hydrocarbon (phytanyl). Both bacteria and archaea have a cell wall that protects them. In the case of bacteria, it is composed of peptidoglycan, whereas in the case of archaea, it is pseudopeptidoglycan, polysaccharides, glycoproteins, or pure protein. Bacterial and archaeal flagella also differ in their chemical structure.
 ===CHECKS===
 both bacteria and archaea have cell membranes and they both contain a hydrophobic portion
@@ -295,7 +321,7 @@ in bacteria, it is composed of peptidoglycan, whereas in archaea, it is pseudope
 bacterial and archaeal flagella also differ in their chemical structure
 {{< /selfcheck >}}
 
-{{< selfcheck question="A scientist isolates a new species of prokaryote. They note that the specimen is a bacillus with a lipid bilayer and cell wall that stains positive for peptidoglycan. Its circular chromosome replicates from a single origin of replication. Is the specimen most likely an Archaea, a Gram-positive bacterium, or a Gram-negative bacterium? How do you know?" hint="Peptidoglycan and a single origin of replication both point to the same domain; the Gram stain result then narrows it further." >}}
+{{< selfcheck question="A scientist isolates a new species of prokaryote. They note that the specimen is a bacillus with a lipid bilayer and cell wall that stains positive for peptidoglycan. Its circular chromosome replicates from a single origin of replication. Is the specimen most likely an Archaea, a Gram-positive bacterium, or a Gram-negative bacterium? How do you know?" hint="The comparison table and the third paragraph of The Cell Wall of Prokaryotes." >}}
 The specimen is most likely a gram-positive bacterium. Since the cell wall contains peptidoglycan and the chromosome has one origin of replication, we can conclude that the specimen is in the Domain Bacteria. Since the gram stain detects peptidoglycan, the prokaryote is a gram-positive bacterium.
 ===CHECKS===
 the specimen is most likely a gram-positive bacterium
@@ -304,32 +330,6 @@ we can conclude that the specimen is in the Domain Bacteria
 the gram stain detects peptidoglycan
 {{< /selfcheck >}}
 
-{{< textin
-  question="A polymer associated with the cell wall of Gram-positive bacteria, sometimes linked to membrane lipids to form a lipid-anchored form, is called ________."
-  answer="teichoic acid"
-  hint="Its lipid-linked form anchors the cell wall to the cell membrane."
->}}
-
-{{< textin
-  question="Material composed of polysaccharide chains cross-linked to unusual peptides, found in most bacterial cell walls, is called ________."
-  answer="peptidoglycan"
-  hint="Its presence or absence is the key difference between bacterial and archaeal cell walls."
->}}
-
-{{< textin
-  question="A bacterium whose cell wall contains little peptidoglycan but is surrounded by an outer membrane is described as ________."
-  answer="Gram negative"
-  accept="gram-negative bacterium|gram-negative bacteria"
-  hint="This kind of bacterium's outer membrane contains lipopolysaccharides."
->}}
-
-{{< textin
-  question="A bacterium whose cell wall is composed mainly of peptidoglycan is described as ________."
-  answer="Gram positive"
-  accept="gram-positive bacterium|gram-positive bacteria"
-  hint="This kind of bacterium's wall is fortified with teichoic acids."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 22.2: Structure of Prokaryotes: Bacteria and Archaea](https://openstax.org/books/biology-2e/pages/22-2-structure-of-prokaryotes-bacteria-and-archaea) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_22_02_02, Figure_22_02_03-8ae1, Figure_22_02_04f, Figure_B22_02_08b, Figure_22_02_06f, and Figure_22_02_07f re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (a labeled cell diagram, a phylogenetic tree, three infographic tables of bacterial/archaeal phyla with embedded micrographs, and a labeled phospholipid-structure diagram, none of them photographs); a longdesc added for Figure_22_02_02, Figure_22_02_03-8ae1, Figure_22_02_04f, Figure_B22_02_08b, Figure_22_02_06f, Figure_22_02_07f, Figure_22_02_08f, and Figure_B22_02_10 (labels, branching order, table contents, and arrows not carried by the one- or two-line captions); the source alts for Figure_22_02_04f, Figure_B22_02_08b, and Figure_22_02_06f, each well over 600 characters, rewritten to a concise description with the full table walk-through moved into longdesc, and the misspelled organism names in those three vendored table images ("Heliobacter pylori", "Psuedomonas aeruginosa", "Vibrio cholera", "streptomyocin", "Nanoarchaeotum equitans", "Rickettsia rickettsia"/"Rickettsii", "Nitrosomas", "Crenachaeotes", "Aneorobic", and "aneaerobes") standardized to their correct scientific spelling in the authored alt/longdesc text (the misspellings remain as printed in the images themselves and are reported as suspected source defects); the source's forward figure references (a link before each figure) reworded as "illustrated below" / "shown below" since figures are not numbered here; the note wrapping the Gram-positive/Gram-negative figure and its question kept as the figure followed by a multiple choice in the body (the Visual Connection Questions section at the end of the module, which repeats the identical item, is not duplicated in Practice); the Evolution Connection feature box kept with its title and its footnote citation, moved to a parenthetical after the sentence it supports; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), and each Critical Thinking model answer's introductory "Responses will vary. A possible answer is:" framing dropped as assessment-methodology scaffolding rather than section content; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the Bacteria-vs-Archaea comparison table (tab-ch22-02-01) transcribed complete as a Markdown table, its spanning title row set as a bold line above it, and also built into one sortbins exercise, drawing one item from each of the table's eight rows whose Bacteria and Archaea cells differ; and ten key-term recall items added from the glossary (all but pseudopeptidoglycan, which the corresponding Review Question already keys). The prokaryote-shapes long description was corrected to attribute typhus and Rocky Mountain spotted fever to the genus *Rickettsia*, as the source does, rather than to *R. rickettsii* alone. The source alt's claim for Figure_22_02_07f that both types of phospholipids "result in similar lipid bilayers" is corrected to what the drawing shows: a two-leaflet bilayer for Bacteria and Eukarya beside single archaeal lipids that each span the whole membrane.</small>
+<small>This section is adapted from [Biology 2e, Section 22.2: Structure of Prokaryotes: Bacteria and Archaea](https://openstax.org/books/biology-2e/pages/22-2-structure-of-prokaryotes-bacteria-and-archaea) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_22_02_02, Figure_22_02_03-8ae1, Figure_22_02_04f, Figure_B22_02_08b, Figure_22_02_06f, and Figure_22_02_07f re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (a labeled cell diagram, a phylogenetic tree, three infographic tables of bacterial/archaeal phyla with embedded micrographs, and a labeled phospholipid-structure diagram, none of them photographs); a longdesc added for Figure_22_02_02, Figure_22_02_03-8ae1, Figure_22_02_04f, Figure_B22_02_08b, Figure_22_02_06f, Figure_22_02_07f, Figure_22_02_08f, and Figure_B22_02_10 (labels, branching order, table contents, and arrows not carried by the one- or two-line captions); the source alts for Figure_22_02_04f, Figure_B22_02_08b, and Figure_22_02_06f, each well over 600 characters, rewritten to a concise description with the full table walk-through moved into longdesc, the other six figures' source alts rewritten from the images (Figure_22_02_08f's without restating the keyed statement of the multiple choice beside it), and the misspelled organism names in those three vendored table images ("Heliobacter pylori", "Psuedomonas aeruginosa", "Vibrio cholera", "streptomyocin", "Nanoarchaeotum equitans", "Rickettsia rickettsia"/"Rickettsii", "Nitrosomas", "Crenachaeotes", "Aneorobic", and "aneaerobes") standardized to their correct scientific spelling in the authored alt/longdesc text (the misspellings remain as printed in the images themselves and are reported as suspected source defects); the source's forward figure references (a link before each figure) reworded as "illustrated below" / "shown below" since figures are not numbered here; the note wrapping the Gram-positive/Gram-negative figure and its question kept as the figure followed by a multiple choice in the body (the Visual Connection Questions section at the end of the module, which repeats the identical item, is not duplicated in Practice); the Evolution Connection feature box kept with its title and its footnote citation, moved to a parenthetical after the sentence it supports; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), and each Critical Thinking model answer's introductory "Responses will vary. A possible answer is:" framing dropped as assessment-methodology scaffolding rather than section content; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the Bacteria-vs-Archaea comparison table (tab-ch22-02-01) transcribed complete as a Markdown table, its spanning title row set as a bold line above it, and also built into one sortbins exercise, drawing one item from each of the table's eight rows whose Bacteria and Archaea cells differ; nine key-term recall items added from the glossary (all but pseudopeptidoglycan, which the corresponding Review Question already keys, and peptidoglycan, which the Practice block's Review Questions, sortbins, Critical Thinking Question, and Gram-stain recall items print throughout); and one fill-in item built from a Summary sentence (the nucleoid). The Proteobacteria table's long description was corrected to attribute typhus and Rocky Mountain spotted fever to the genus *Rickettsia*, as the source does, rather than to *R. rickettsii* alone. The source alt's claim for Figure_22_02_07f that both types of phospholipids "result in similar lipid bilayers" is corrected to what the drawing shows: a two-leaflet bilayer for Bacteria and Eukarya beside single archaeal lipids that each span the whole membrane.</small>

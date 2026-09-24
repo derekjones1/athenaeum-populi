@@ -108,7 +108,7 @@ Interactions among the organisms that populate a biofilm, together with their pr
 Development of a biofilm. Five stages of biofilm development are shown. During stage 1, initial attachment, bacteria adhere to a solid surface via weak *van der Waals interactions* (forces produced by induced electrical interactions between atoms). During stage 2, irreversible attachment, hairlike appendages called *pili* permanently anchor the bacteria to the surface. During stage 3, maturation I, the biofilm grows through cell division and recruitment of other bacteria. An extracellular matrix composed primarily of polysaccharides holds the biofilm together. During stage 4, maturation II, the biofilm continues to grow and takes on a more complex shape. During stage 5, dispersal, the biofilm matrix is partly broken down, allowing some bacteria to escape and colonize another surface. Micrographs of a *Pseudomonas aeruginosa* biofilm in each of the stages of development are shown. (credit: D. Davis, Don Monroe, PLoS)
 {{< /mediafigure >}}
 
-{{< selfcheck question="Compared to free-floating bacteria, bacteria in biofilms often show increased resistance to antibiotics and detergents. Why do you think this might be the case?" hint="Think about what a shared matrix could physically block, and what proximity between cells could make easier." >}}
+{{< selfcheck question="Compared to free-floating bacteria, bacteria in biofilms often show increased resistance to antibiotics and detergents. Why do you think this might be the case?" hint="The paragraph just before the biofilm figure, and the figure's caption." >}}
 The extracellular matrix and outer layer of cells protects the inner bacteria. The close proximity of cells also facilitates lateral gene transfer, a process by which genes such as antibiotic-resistance genes are transferred from one bacterium to another. And even if lateral gene transfer does not occur, one bacterium that produces an exo-enzyme that destroys antibiotic may save neighboring bacteria.
 ===CHECKS===
 the extracellular matrix and outer layer of cells protects the inner bacteria
@@ -155,7 +155,7 @@ Bacteria and archaea grow in virtually every environment. Those that survive und
 {{< multiplechoice
   question="The first forms of life on Earth were thought to be ________."
   answer="prokaryotes"
-  hint="Re-read the opening paragraph of the first subsection — what does the text say existed for billions of years before plants and animals?"
+  hint="The opening paragraph of the first major section after the introduction."
 >}}
 single-celled plants
 prokaryotes
@@ -166,7 +166,7 @@ large animals such as dinosaurs
 {{< multiplechoice
   question="Microbial mats ________."
   answer="all of the above"
-  hint="Check each of the first three options against the Microbial Mats subsection before deciding whether more than one applies."
+  hint="The Microbial Mats subsection."
 >}}
 are the earliest forms of life on Earth
 obtained their energy and food from hydrothermal vents
@@ -177,7 +177,7 @@ all of the above
 {{< multiplechoice
   question="The first organisms that oxygenated the atmosphere were ________."
   answer="cyanobacteria"
-  hint="The Ancient Atmosphere subsection credits one specific group by name, not phototrophs in general."
+  hint="The Ancient Atmosphere subsection."
 >}}
 cyanobacteria
 phototrophic organisms
@@ -185,7 +185,7 @@ anaerobic organisms
 all of the above
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why do scientists believe that the first organisms on Earth were extremophiles?" hint="Think about volcanic activity, atmospheric oxygen levels, and solar radiation on early Earth." >}}
+{{< selfcheck question="Why do scientists believe that the first organisms on Earth were extremophiles?" hint="The opening paragraph of the first major section after the introduction, and The Ancient Atmosphere subsection." >}}
 Because the environmental conditions on Earth were extreme: high temperatures, lack of oxygen, high radiation, and the like.
 ===CHECKS===
 the environmental conditions on Earth were extreme
@@ -197,7 +197,7 @@ high radiation
 {{< textin
   question="A layered sedimentary structure formed when prokaryotes in a microbial mat precipitate minerals out of water is called a ________."
   answer="stromatolite"
-  hint="Some are still forming today in places like California's Anza-Borrego Desert State Park."
+  hint="The subsection between Microbial Mats and The Ancient Atmosphere."
 >}}
 
 ### Discuss the distinguishing features of extremophiles
@@ -205,7 +205,7 @@ high radiation
 {{< multiplechoice
   question="Halophiles are organisms that require ________."
   answer="a salt concentration of at least 0.2 M"
-  hint="The table above gives the exact concentration threshold that defines this group."
+  hint="The extremophiles table in Microbes Are Adaptable."
 >}}
 a salt concentration of at least 0.2 M
 high sugar concentration
@@ -213,11 +213,11 @@ the addition of halogens
 all of the above
 {{< /multiplechoice >}}
 
-{{< selfcheck question="A new bacterial species is discovered and classified as an endolith, an extremophile that lives inside rock. If the bacteria were discovered in the permafrost of Antarctica, describe two extremophile features the bacteria must possess." hint="Antarctic permafrost is both extremely cold and extremely dry — name the extremophile type that matches each condition." >}}
-Possible answers include: a psychrophile, and a hypolith (survival in a low humidity/water environment).
+{{< selfcheck question="A new bacterial species is discovered and classified as an endolith, an extremophile that lives inside rock. If the bacteria were discovered in the permafrost of Antarctica, describe two extremophile features the bacteria must possess." hint="The second paragraph of Microbes Are Adaptable and the extremophiles table beside it." >}}
+Possible answers include: a psychrophile, and tolerance of a low humidity/water environment. *(Source note: the source answer labels this second feature "hypolith"; a hypolith lives beneath rocks rather than inside them, and the term names a habitat, not a tolerance for low water.)*
 ===CHECKS===
 a psychrophile
-a hypolith (survival in a low humidity/water environment)
+tolerance of a low humidity/water environment
 {{< /selfcheck >}}
 
 {{< textin
@@ -227,16 +227,17 @@ a hypolith (survival in a low humidity/water environment)
 >}}
 
 {{< textin
-  question="An organism adapted to grow under extreme or harsh conditions is called a(n) ________."
-  answer="extremophile"
-  hint="The second paragraph of Microbes Are Adaptable introduces this umbrella term for bacteria and archaea adapted to harsh conditions."
+  question="An organism that does not prefer an environment with high levels of radiation but has adapted to survive in it is described as ________."
+  answer="radioresistant"
+  accept="radio resistant|radioresistant organism|radiation tolerant"
+  hint="The end of the second paragraph of Microbes Are Adaptable."
 >}}
 
 {{< textin
   question="An organism with an optimal growth pH of nine or above is called a(n) ________."
   answer="alkaliphile"
   accept="alkalophile"
-  hint="Its name pairs with 'acidophile' — but at the opposite end of the pH scale."
+  hint="The pH rows of the extremophiles table in Microbes Are Adaptable."
 >}}
 
 ### Explain why it is difficult to culture prokaryotes
@@ -244,7 +245,7 @@ a hypolith (survival in a low humidity/water environment)
 {{< multiplechoice
   question="Many of the first prokaryotes to be cultured in a scientific lab were human or animal pathogens. Why would these species be more readily cultured than non-pathogenic prokaryotes?"
   answer="Most of the necessary culture conditions could be inferred for pathogenic prokaryotes."
-  hint="Think about what scientists already know about the environment a pathogen needs once it causes disease in a host."
+  hint="The first paragraph after the blood agar figure, in the Unculturable Prokaryotes subsection."
 >}}
 Pathogenic prokaryotes are hardier than non-pathogenic prokaryotes.
 Non-pathogenic prokaryotes require more supplements in their growth media.
@@ -252,7 +253,7 @@ Most of the necessary culture conditions could be inferred for pathogenic prokar
 Pathogenic bacteria can grow as free bacteria, but non-pathogenic bacteria only grow as parts of large colonies.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe briefly how you would detect the presence of a non-culturable prokaryote in an environmental sample." hint="The unculturable-prokaryotes subsection names a specific molecular technique that can detect DNA without growing the organism in culture." >}}
+{{< selfcheck question="Describe briefly how you would detect the presence of a non-culturable prokaryote in an environmental sample." hint="The last paragraph of the Unculturable Prokaryotes subsection." >}}
 Because the organisms are non-culturable, their presence could be detected through molecular techniques, such as PCR.
 ===CHECKS===
 the organisms are non-culturable
@@ -263,22 +264,22 @@ such as PCR
 {{< textin
   question="A microbial community held together by a gummy-textured matrix, made mostly of secreted polysaccharides, is called a ________."
   answer="biofilm"
-  hint="It commonly clogs pipes and colonizes surfaces such as kitchen counters, sinks, and teeth."
+  hint="The first paragraph of the last major section before the Summary."
 >}}
 
 {{< textin
-  question="Under environmental stress, some bacteria stop growing without dying, entering the dormant ________ state."
+  question="Organisms that cannot be cultured but are not dead are in the ________ state."
   answer="VBNC"
-  accept="viable but nonculturable|viable but non culturable|VBNC state|viable but nonculturable state"
-  hint="A prokaryote in this state can be revived once conditions improve, in a process the section also names."
+  accept="viable but nonculturable|viable but non culturable|VBNC state|viable but nonculturable state|viable but non culturable state"
+  hint="The paragraph after the one on why most bacteria and archaea cannot be grown in a laboratory."
 >}}
 
 {{< textin
-  question="The process by which a dormant prokaryote in that state returns to normal, active life is called ________."
+  question="The process by which a dormant prokaryote that cannot be cultured goes back to normal life when environmental conditions improve is called ________."
   answer="resuscitation"
-  hint="This is the process the section names right after describing the dormant state itself."
+  hint="The end of the second paragraph of the Unculturable Prokaryotes subsection."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 22.1: Prokaryotic Diversity](https://openstax.org/books/biology-2e/pages/22-1-prokaryotic-diversity) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the source's forward figure references (a bare link before each figure) reworded as "pictured below" / "below" since figures are not numbered here; the bare or terse source alts for all seven figures rewritten from the images, and a longdesc added for Figure_22_01_07 (the five illustrated stages' colors, shapes, and numbered arrows, and the row of micrographs beneath them, are not carried by the caption); the Dead Sea paragraph's footnote citation kept as a parenthetical bibliographic reference after the sentence it supports; ion charges (Fe²⁺, Ca²⁺, Mg²⁺) set as Unicode superscripts in place of the source's HTML superscripts; the extremophiles table (tab-ch22-01-01) transcribed complete as a Markdown table, its spanning title row set as a bold line above it, including the psychrophile row's "-15-10 °C (5-50 °F) or lower" exactly as printed in the source; the end-of-section Review Questions, Critical Thinking Questions, and Visual Connection Question adapted into interactive practice (the Visual Connection as a self-check immediately after its figure in the body, the rest in the closing Practice block), each placed under the objective it serves, so the Critical Thinking Question on detecting a non-culturable prokaryote, first in the source, now follows the other two; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items added from the glossary, one of them (the viable-but-non-culturable state) keyed to the section's own abbreviation VBNC, with the spelled-out forms accepted, since the full glossary term runs to five words, over this book's four-word textin cap; and one source typo corrected in the Summary ("the oxygenation o the atmosphere" → "of the atmosphere") — reported as a source defect. One claim is corrected with a visible Source note: prokaryotic cells are about as numerous as human cells by the 2016 recount, not ten times as numerous (erratum 414).</small>
+<small>This section is adapted from [Biology 2e, Section 22.1: Prokaryotic Diversity](https://openstax.org/books/biology-2e/pages/22-1-prokaryotic-diversity) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the source's forward figure references (a bare link before each figure) reworded as "pictured below" / "below" since figures are not numbered here; the bare or terse source alts for all seven figures rewritten from the images, and a longdesc added for Figure_22_01_07 (the five illustrated stages' colors, shapes, and numbered arrows, and the row of micrographs beneath them, are not carried by the caption); the Dead Sea paragraph's footnote citation kept as a parenthetical bibliographic reference after the sentence it supports; ion charges (Fe²⁺, Ca²⁺, Mg²⁺) set as Unicode superscripts in place of the source's HTML superscripts; the extremophiles table (tab-ch22-01-01) transcribed complete as a Markdown table, its spanning title row set as a bold line above it, including the psychrophile row's "-15-10 °C (5-50 °F) or lower" exactly as printed in the source; the end-of-section Review Questions, Critical Thinking Questions, and Visual Connection Question adapted into interactive practice (the Visual Connection as a self-check immediately after its figure in the body, the rest in the closing Practice block), each placed under the objective it serves, so the Critical Thinking Question on detecting a non-culturable prokaryote, first in the source, now follows the other two; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items added from the glossary, one of them (the viable-but-non-culturable state) keyed to the section's own abbreviation VBNC, with the spelled-out forms accepted, since the full glossary term runs to five words, over this book's four-word textin cap; and one source typo corrected in the Summary ("the oxygenation o the atmosphere" → "of the atmosphere") — reported as a source defect. Two claims are corrected with a visible Source note: prokaryotic cells are about as numerous as human cells by the 2016 recount, not ten times as numerous (erratum 414); and the endolith Critical Thinking answer's "hypolith", a habitat beneath rocks, is given as the tolerance of a low humidity/water environment it describes.</small>

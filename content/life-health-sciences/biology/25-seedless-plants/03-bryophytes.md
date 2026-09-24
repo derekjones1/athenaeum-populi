@@ -75,7 +75,7 @@ Reproductive cycle of mosses. This illustration shows the life cycle of mosses. 
 {{< multiplechoice
   question="Which of the following statements about the moss life cycle is false?"
   answer="The calyptra buds to form a mature gametophyte."
-  hint="In the Meiosis panel, trace what actually grows into the bud and young gametophyte after the spores are released."
+  hint="Check each statement against the labels of the life-cycle diagram above."
 >}}
 The mature gametophyte is haploid.
 The sporophyte produces haploid spores.
@@ -114,7 +114,7 @@ Seedless non-vascular plants are small, having the gametophyte as the dominant s
 {{< multiplechoice
   question="Which of the following structures is not found in bryophytes?"
   answer="root"
-  hint="Reread this section's summary, at what seedless non-vascular plants are without."
+  hint="Reread the second sentence of this section's summary."
 >}}
 a cellulose cell wall
 chloroplast
@@ -122,7 +122,7 @@ sporangium
 root
 {{< /multiplechoice >}}
 
-{{< selfcheck question="In areas where it rains often, mosses grow on roofs. How do mosses survive on roofs without soil?" hint="Consider how bryophytes take up water and nutrients without a vascular system or true roots." >}}
+{{< selfcheck question="In areas where it rains often, mosses grow on roofs. How do mosses survive on roofs without soil?" hint="Reread the second paragraph of the Mosses subsection." >}}
 Mosses absorb water and nutrients carried by the rain and do not need soil because they do not derive much nutrition from the soil.
 ===CHECKS===
 mosses absorb water and nutrients carried by the rain
@@ -133,7 +133,7 @@ do not derive much nutrition from the soil
 {{< textin
   question="The thin filaments that anchor a bryophyte to its substrate are called ________."
   answer="rhizoids"
-  hint="Mosses' shallow versions of this structure let them fasten to frozen tundra soil without penetrating it."
+  hint="Reread the second paragraph of the Mosses subsection, near its end."
 >}}
 
 ### Describe the distinguishing traits of liverworts, hornworts, and mosses
@@ -149,7 +149,7 @@ They do not have true roots and can grow on hard surfaces.
 There are no herbivores in the tundra.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the three classes of bryophytes?" hint="Each phylum also goes by a formal, Latin-derived name." >}}
+{{< selfcheck question="What are the three classes of bryophytes?" hint="Reread the paragraph just before the Liverworts subsection." >}}
 The bryophytes are divided into three phyla: the liverworts or Marchantiophyta, the hornworts or Anthocerotophyta, and the mosses or true Bryophyta.
 ===CHECKS===
 the liverworts or Marchantiophyta
@@ -174,10 +174,9 @@ the mosses or true Bryophyta
 ### Chart the development of land adaptations in the bryophytes
 
 {{< textin
-  question="The group of bryophytes in which a primitive conductive system appears is called the ________."
-  answer="mosses"
-  accept="Bryophyta"
-  hint="Reread the last of the three group subsections, after Liverworts and Hornworts."
+  question="The tissue that surrounds the opening of the moss capsule and allows periodic release of spores is called the ________."
+  answer="peristome"
+  hint="Reread the last paragraph before this section's summary."
 >}}
 
 {{< multiplechoice
@@ -191,7 +190,7 @@ hornworts
 moss gametophytes
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe two adaptations that are present in mosses, but not hornworts or liverworts, which reflect steps of evolution toward land plants." hint="Think about how mosses move water internally and how their anchoring structures compare to those of liverworts and hornworts." >}}
+{{< selfcheck question="Describe two adaptations that are present in mosses, but not hornworts or liverworts, which reflect steps of evolution toward land plants." hint="Reread the second paragraph of the Mosses subsection." >}}
 Potential answers include:
 
 - Mosses exhibit a primitive conductive system in their stalks that transports nutrients and water.
@@ -225,7 +224,7 @@ sporophyte
 archegonium
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Bryophytes form a monophyletic group that transitions between green algae and vascular plants. Describe at least one similarity and one difference between bryophyte reproduction and green algae reproduction." hint="Consider how each group's male gametes travel to the egg, and what protects the bryophyte embryo that a green alga's zygote lacks." >}}
+{{< selfcheck question="Bryophytes form a monophyletic group that transitions between green algae and vascular plants. Describe at least one similarity and one difference between bryophyte reproduction and green algae reproduction." hint="Reread the third paragraph of this section's opening, before the list of the three phyla." >}}
 Similarities include:
 
 - Sexual reproduction is dependent upon water in which the male gamete swims.
@@ -243,12 +242,12 @@ bryophytes make sporangium to produce spores
 {{< /selfcheck >}}
 
 {{< textin
-  question="The tangle of single-celled filaments that forms from a haploid moss spore is called a ________."
-  answer="protonema"
-  accept="protonemata"
-  hint="Cells akin to an apical meristem divide within this tangle and give rise to the gametophore."
+  question="The stalk that supports the capsule in mosses is called the ________."
+  answer="seta"
+  accept="setae"
+  hint="Reread the paragraph that follows the moss life-cycle question in the Mosses subsection."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 25.3: Bryophytes](https://openstax.org/books/biology-2e/pages/25-3-bryophytes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own long, walk-through-style alt text; four figures re-kinded after inspection — Figure_25_03_01, Figure_B25_03_03, and Figure_25_03_05 from the manifest's file-extension "photo" guess to "diagram" (a hand-drawn 1904 illustration plate and two labeled life-cycle schematics, none of them captured photographs), and Figure_B25_03_10 from "diagram" to "photo" (an actual photograph of a liverwort thallus); a longdesc added to the three life-cycle diagrams (Figure_B25_03_03, Figure_25_03_05, Figure_B25_03_06) whose arrows, ploidy labels, and box structure are not carried by their one-line captions; the Liverworts section's cross-reference for where gemmae are pictured, printed in both the module and the PDF as "Figure 25.11 and Figure 25.12," corrected to point to the liverwort life-cycle diagram and the Lunularia photo (where a gemma cup is actually shown, circled) rather than Figure 25.12, the unrelated hornwort-sporophyte photo — reported as a source defect; the Critical Thinking model answer's "gametotangia" (nowhere else in the module, which otherwise spells the term "gametangia" six times) corrected to "gametangia" — reported as a source defect; the note wrapping the moss life-cycle Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (rhizoids, gemma, liverworts, mosses, protonema) added from the glossary, the gemma item in place of a hornworts recall item that re-asked the source's stomata Review Question; the Review Question "Stomata appear in which group of plants?" keeps its source key "hornworts" but its distractor "mosses" is replaced with "moss gametophytes", because the section's own sentence "Mosses have stomata only on the sporophyte" made "mosses" a second correct answer — reported as a source defect.</small>
+<small>This section is adapted from [Biology 2e, Section 25.3: Bryophytes](https://openstax.org/books/biology-2e/pages/25-3-bryophytes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own long, walk-through-style alt text; four figures re-kinded after inspection — Figure_25_03_01, Figure_B25_03_03, and Figure_25_03_05 from the manifest's file-extension "photo" guess to "diagram" (a hand-drawn 1904 illustration plate and two labeled life-cycle schematics, none of them captured photographs), and Figure_B25_03_10 from "diagram" to "photo" (an actual photograph of a liverwort thallus); a longdesc added to the three life-cycle diagrams (Figure_B25_03_03, Figure_25_03_05, Figure_B25_03_06) whose arrows, ploidy labels, and box structure are not carried by their one-line captions; the Liverworts section's cross-reference for where gemmae are pictured, printed in both the module and the PDF as "Figure 25.11 and Figure 25.12," corrected to point to the liverwort life-cycle diagram and the Lunularia photo (where a gemma cup is actually shown, circled) rather than Figure 25.12, the unrelated hornwort-sporophyte photo — reported as a source defect; the Critical Thinking model answer's "gametotangia" (nowhere else in the module, which otherwise spells the term "gametangia" six times) corrected to "gametangia" — reported as a source defect; the note wrapping the moss life-cycle Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 1, 4, 2, 3, 5 of the source's numbering; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (rhizoids, gemma, liverworts, peristome, seta) added from the glossary, none of them a term that a source stem or key on the page already tests (the glossary's hornworts, mosses, and protonema are left as Key-terms bullets because the stomata Review Question, the moss-adaptations Critical Thinking Question, and the protonema Review Question already ask them); the Review Question "Stomata appear in which group of plants?" keeps its source key "hornworts" but its distractor "mosses" is replaced with "moss gametophytes", because the section's own sentence "Mosses have stomata only on the sporophyte" made "mosses" a second correct answer — reported as a source defect.</small>

@@ -53,7 +53,7 @@ There are several basic types of mycorrhizae. **Ectomycorrhizae** (“outside”
 Two types of mycorrhizae. (a) Ectomycorrhizae and (b) arbuscular or endomycorrhizae have different mechanisms for interacting with the roots of plants. (credit b: MS Turmel, University of Manitoba, Plant Science Department)
 {{< /mediafigure >}}
 
-{{< selfcheck question="If symbiotic fungi were absent from the soil, what impact do you think this would have on plant growth?" hint="Trace what a plant normally receives from its mycorrhizal fungal partner, and think about what happens to that supply if the fungus is missing." >}}
+{{< selfcheck question="If symbiotic fungi were absent from the soil, what impact do you think this would have on plant growth?" hint="Reread the opening paragraph of this subsection." >}}
 Without mycorrhiza, plants cannot absorb adequate nutrients, which stunts their growth. Addition of fungal spores to sterile soil can alleviate this problem.
 ===CHECKS===
 without mycorrhiza, plants cannot absorb adequate nutrients, which stunts their growth
@@ -135,7 +135,7 @@ Fungi have colonized nearly all environments on Earth, but are frequently found 
 {{< multiplechoice
   question="Why are fungi important decomposers?"
   answer="They recycle carbon and inorganic minerals by the process of decomposition."
-  hint="Re-read the Decomposers and Recyclers section: what specifically happens to nutrients that were tied up in dead matter?"
+  hint="Reread the Decomposers and Recyclers section."
 >}}
 They produce many spores.
 They can grow in many different environments.
@@ -146,7 +146,7 @@ They recycle carbon and inorganic minerals by the process of decomposition.
 {{< multiplechoice
   question="Consider an ecosystem where all the fungi not involved in mycorrhizae are eliminated. How would this affect nitrogen intake by plants?"
   answer="Nitrogen intake would decrease."
-  hint="Reread the Decomposers and Recyclers discussion of what decomposing fungi return to the environment."
+  hint="Reread the opening paragraph of the Decomposers and Recyclers section."
 >}}
 Nitrogen intake would increase.
 Nitrogen intake would not change.
@@ -158,24 +158,13 @@ Nitrogen intake would stop.
   question="Fungi are ________ that decompose organic matter."
   answer="saprobes"
   accept="saprophyte"
-  hint="The Decomposers and Recyclers section uses this term for an organism that absorbs nutrients from dead and decaying matter."
+  hint="See the last paragraph of the Decomposers and Recyclers section."
 >}}
 
 ### Describe mutualistic relationships of fungi with plant roots and photosynthetic organisms
 
-{{< multiplechoice
-  question="What term describes the close association of a fungus with the root of a tree?"
-  answer="a mycorrhiza"
-  hint="Reread the opening sentences of the Fungus/Plant Mutualism subsection."
->}}
-a rhizoid
-a lichen
-a mycorrhiza
-an endophyte
-{{< /multiplechoice >}}
-
 {{< textin
-  question="Mycorrhizal fungi that surround plant roots with a mantle and send hyphae into the root to form a Hartig net are called ________."
+  question="Fungi that surround plant roots with a mantle and have a Hartig net that extends into the roots between cells are called ________."
   answer="ectomycorrhiza"
   accept="ectomycorrhizae"
   hint="Reread the paragraph that lists the basic types of fungus–root association, at its first type."
@@ -188,33 +177,44 @@ an endophyte
 >}}
 
 {{< textin
-  question="A mycorrhizal association in which fungal hyphae enter the plant's root cells and form extensive branched networks is called a(n) ________."
+  question="An association in which a fungus's hyphae enter a plant's root cells and form extensive networks is called a(n) ________."
   answer="arbuscular mycorrhiza"
   accept="arbuscular mycorrhizae|endomycorrhiza|endomycorrhizae"
-  hint="This is the type of mycorrhiza whose fungal partners all belong to the Glomeromycota."
+  hint="Reread the paragraph that lists the basic types of fungus–root association, at its second type."
 >}}
 
 {{< textin
   question="A close association between a fungus and a photosynthetic alga or bacterium that benefits both partners is called a ________."
   answer="lichen"
-  hint="This symbiotic partnership can survive extreme drought by becoming completely desiccated."
+  hint="Reread the opening paragraph of the Mutualistic Relationships section's second subsection."
 >}}
 
-{{< selfcheck question="Why does protection from light actually benefit the photosynthetic partner in lichens?" hint="Consider what excess sunlight can do to a photosynthetic pigment." >}}
+{{< textin
+  question="The clusters of algal cells and mycelia that allow lichens to spread and form new lichens are called ________."
+  answer="soredia"
+  accept="soredium"
+  hint="See the Lichens paragraph on how the lichen thallus grows."
+>}}
+
+{{< multiplechoice
+  question="What term describes the close association of a fungus with the root of a tree?"
+  answer="a mycorrhiza"
+  hint="Reread the opening sentences of the Fungus/Plant Mutualism subsection."
+>}}
+a rhizoid
+a lichen
+a mycorrhiza
+an endophyte
+{{< /multiplechoice >}}
+
+{{< selfcheck question="Why does protection from light actually benefit the photosynthetic partner in lichens?" hint="Reread the Lichens paragraph on what each partner supplies the other." >}}
 Protection from excess light that may bleach photosynthetic pigments allows the photosynthetic partner to survive in environments unfavorable to plants.
 ===CHECKS===
 protection from excess light that may bleach photosynthetic pigments
 allows the photosynthetic partner to survive in environments unfavorable to plants
 {{< /selfcheck >}}
 
-{{< textin
-  question="The clusters of algal cells and mycelia that allow lichens to spread and form new lichens are called ________."
-  answer="soredia"
-  accept="soredium"
-  hint="These dispersal units are carried away from the parent lichen by wind and water."
->}}
-
-{{< selfcheck question="Ecologists often attempt to introduce new plants to restore degraded land. In an arid climate, scientists recommend introducing plants with arbuscular mycorrhizae. How would the mycorrhizae increase the plants' survival compared to plants without mycorrhizae?" hint="Compare how far a plant's own root system can reach into the soil with how far a network of fungal hyphae extending from those roots can reach." >}}
+{{< selfcheck question="Ecologists often attempt to introduce new plants to restore degraded land. In an arid climate, scientists recommend introducing plants with arbuscular mycorrhizae. How would the mycorrhizae increase the plants' survival compared to plants without mycorrhizae?" hint="Reread the opening paragraph of the Fungus/Plant Mutualism subsection." >}}
 Plants with arbuscular mycorrhizae are colonized by fungi that penetrate root cells, and exchange metabolites with the plant. The network of fungal hyphae extends from the root cells out into the environment, covering a larger area than the plant's root system alone. This allows the plant to draw water from a larger area, increasing the likelihood that it can meet its daily needs.
 ===CHECKS===
 fungi penetrate root cells and exchange metabolites with the plant
@@ -224,7 +224,7 @@ this allows the plant to draw water from a larger area, increasing the likelihoo
 
 ### Describe the beneficial relationship between some fungi and insects
 
-{{< selfcheck question="Ambrosia bark beetles carry *Ambrosiella* fungal spores to trees, then bore holes and lay their eggs with the fungus. When the new larvae hatch, they eat the fungus that has germinated in the holes. Describe how this relationship can be classified as mutualistic." hint="Identify what the beetle provides to the fungus, and what the fungus provides to the beetle's offspring in return." >}}
+{{< selfcheck question="Ambrosia bark beetles carry *Ambrosiella* fungal spores to trees, then bore holes and lay their eggs with the fungus. When the new larvae hatch, they eat the fungus that has germinated in the holes. Describe how this relationship can be classified as mutualistic." hint="Reread the opening paragraph of the Fungus/Animal Mutualism subsection." >}}
 The bark beetles and the fungus have a mutualistic relationship since each partner benefits from interacting with the other. The beetle can provide food for its offspring, while the fungus can spread to new trees.
 ===CHECKS===
 the bark beetles and the fungus have a mutualistic relationship since each partner benefits from interacting with the other
@@ -236,13 +236,13 @@ the fungus can spread to new trees
   question="Some ________ farm fungi as a supply of food."
   answer="ants"
   accept="leaf-cutter ant|leafcutter ant"
-  hint="This insect is described in the Fungus/Animal Mutualism section as literally cultivating fungi in underground gardens."
+  hint="See the Fungus/Animal Mutualism subsection's second example."
 >}}
 
 {{< multiplechoice
   question="Which insects form a mutualism with a species of Basidiomycota, in which the fungal mycelium covers and protects the insect colonies while the insects foster a flow of nutrients from a parasitized plant to the fungus?"
   answer="scale insects"
-  hint="Re-read the Fungus/Animal Mutualism section's first example, where the insects draw nutrients from a host plant to feed the fungus."
+  hint="Reread the Fungus/Animal Mutualism subsection's first example."
 >}}
 leaf-cutter ants
 scale insects

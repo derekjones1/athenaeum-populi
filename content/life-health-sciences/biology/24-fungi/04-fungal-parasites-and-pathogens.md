@@ -23,7 +23,7 @@ weight: 4
 
 The production of sufficient high-quality crops is essential to human existence. Unfortunately, plant diseases have ruined many crops throughout human agricultural history, sometimes creating widespread famine. Many plant pathogens are fungi that cause tissue decay and the eventual death of the host (see below). In addition to destroying plant tissue directly, some plant pathogens spoil crops by producing potent toxins that can further damage and kill the host plant. Fungi are also responsible for food spoilage and the rotting of stored crops. For example, the fungus *Claviceps purpurea* causes ergot, a disease of cereal crops (especially of rye). Although the fungus reduces the yield of cereals, the effects of the ergot's alkaloid toxins on humans and animals are of much greater significance. In animals, the disease is referred to as *ergotism*. The most common signs and symptoms are convulsions, hallucination, gangrene, and loss of milk in cattle. The active ingredient of ergot is *lysergic acid*, which is a precursor of the drug LSD. Smuts, rusts, and powdery or downy mildew are other examples of common fungal pathogens that affect crops.
 
-{{< mediafigure src="biology/Figure_B24_04_01abcd" kind="photo" eager="true" alt="Four photographs of fungus-damaged produce and plants arranged in a 2x2 grid: (a) a pile of grapefruit, one showing a large gray-brown patch of mold; (b) a zinnia plant with two flower buds and its leaves coated in a white, powdery growth; (c) green barley stems and leaves streaked with reddish-brown rust; (d) a cluster of red grapes, several coated in a fibrous, cotton-like grey-white growth." >}}
+{{< mediafigure src="biology/Figure_B24_04_01abcd" kind="photo" eager="true" alt="Four photographs of fungus-damaged produce and plants arranged in a 2x2 grid: (a) a pile of grapefruit, one showing a large gray-brown patch of mold; (b) a zinnia plant with its two flower heads and its leaves coated in a white, powdery growth; (c) green barley stems and leaves streaked with reddish-brown rust; (d) a cluster of red grapes, the one at the center coated in a fibrous, cotton-like grey-white growth." >}}
 Fungal pathogens. Some fungal pathogens include (a) green mold on grapefruit, (b) powdery mildew on a zinnia, (c) stem rust on a sheaf of barley, and (d) grey rot on grapes. In wet conditions *Botrytis cinerea,* the fungus that causes grey rot, can destroy a grape crop. However, controlled infection of grapes by *Botrytis* results in noble rot, a condition that produces strong and much-prized dessert wines. (credit a: modification of work by Scott Bauer, USDA-ARS; credit b: modification of work by Stephen Ausmus, USDA-ARS; credit c: modification of work by David Marshall, USDA-ARS; credit d: modification of work by Joseph Smilanick, USDA-ARS)
 {{< /mediafigure >}}
 
@@ -103,7 +103,7 @@ Fungi establish parasitic relationships with plants and animals. Fungal diseases
 {{< multiplechoice
   question="A fungus that climbs up a tree reaching higher elevation to release its spores in the wind and does not receive any nutrients from the tree or contribute to the tree's welfare is described as a ________."
   answer="commensal"
-  hint="The tree is neither harmed nor helped. Rule out the two options that require harm to the host and the one that requires both partners to benefit."
+  hint="Reread the section's opening paragraph."
 >}}
 commensal
 mutualist
@@ -111,7 +111,7 @@ parasite
 pathogen
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain how the Red Queen Hypothesis describes the continuously evolving relationship between red grapes and *Botrytis cinerea*." hint="Think about which organism is the prey and which is the predator, and what happens each time one side develops a new adaptation." >}}
+{{< selfcheck question="Explain how the Red Queen Hypothesis describes the continuously evolving relationship between red grapes and *Botrytis cinerea*." hint="Section 11.2's Evolution Connection box explains the hypothesis; this section's first figure caption describes the fungus on grapes." >}}
 The Red Queen Hypothesis describes the biological stalemate between a predator and prey. The two populations are constantly applying evolutionary pressure on each other, forcing each population to adapt to counter an adaptation of the other population. In the case of the fungi *B. cinerea* and the red grape plant, the grapes are the prey and the fungi are the predator in the Red Queen Hypothesis. The grapes develop defenses to prevent infection by the fungi, ensuring that the *B. cinerea* that survive to colonize the red grapes have developed adaptations to overcome the plant defenses. The red grapes that then survive the infection are the plants that have additional adaptations that limit the pathogenicity of *B. cinerea*. This cycle continues to repeat unless one population evolves an adaptation that cannot be countered by the other population, which would wipe out the later population.
 ===CHECKS===
 the Red Queen Hypothesis describes the biological stalemate between a predator and prey
@@ -121,12 +121,32 @@ the grapes develop defenses to prevent infection by the fungi
 {{< /selfcheck >}}
 
 {{< textin
-  question="A symbiotic relationship in which one member benefits while the other member is not affected is called ________."
-  answer="commensalism"
-  hint="Unlike parasitism, which harms one member, this relationship leaves the unaffected member neither helped nor harmed."
+  question="Aflatoxins are toxic, carcinogenic compounds released by fungi of the genus ________."
+  answer="Aspergillus"
+  hint="Reread the paragraph after the fungal-pathogens figure."
 >}}
 
 ### Describe the different types of fungal infections in humans
+
+{{< textin
+  question="The poisoning of humans and other animals by foods contaminated with fungal toxins is called ________."
+  answer="mycotoxicosis"
+  accept="mycotoxicoses"
+  hint="Reread the paragraph that opens the Animal and Human Parasites and Pathogens subsection."
+>}}
+
+{{< textin
+  question="A fungal disease that results from infection and direct damage due to the growth and infiltration of a fungus is called a ________."
+  answer="mycosis"
+  accept="mycoses"
+  hint="Reread the second sentence of the paragraph that opens the Animal and Human Parasites and Pathogens subsection."
+>}}
+
+{{< textin
+  question="The ingestion of preformed toxins in poisonous mushrooms is called ________."
+  answer="mycetismus"
+  hint="Reread the paragraph that opens the Animal and Human Parasites and Pathogens subsection."
+>}}
 
 {{< multiplechoice
   question="A fungal infection that affects nails and skin is classified as ________."
@@ -139,33 +159,13 @@ superficial mycosis
 mycotoxicosis
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why can superficial mycoses in humans lead to bacterial infections?" hint="Think about what protective layer of the skin a dermatophyte breaks down, and what can then get through it." >}}
+{{< selfcheck question="Why can superficial mycoses in humans lead to bacterial infections?" hint="Reread the paragraph on the fungi that cause superficial mycoses of the epidermis, hair, and nails." >}}
 Dermatophytes that colonize skin break down the keratinized layer of dead cells that protects tissues from bacterial invasion. Once the integrity of the skin is breached, bacteria can enter the deeper layers of tissues and cause infections.
 ===CHECKS===
 dermatophytes that colonize skin break down the keratinized layer of dead cells
 the keratinized layer of dead cells protects tissues from bacterial invasion
 bacteria can enter the deeper layers of tissues and cause infections
 {{< /selfcheck >}}
-
-{{< textin
-  question="The poisoning of humans and other animals by foods contaminated with fungal toxins is called ________."
-  answer="mycotoxicosis"
-  accept="mycotoxicoses"
-  hint="This differs from eating a poisonous mushroom directly — here, the danger comes from toxins already present in contaminated food."
->}}
-
-{{< textin
-  question="A fungal disease that results from infection and direct damage due to the growth and infiltration of a fungus is called a ________."
-  answer="mycosis"
-  accept="mycoses"
-  hint="This general term covers both the superficial and the systemic fungal diseases described in this section."
->}}
-
-{{< textin
-  question="The ingestion of preformed toxins in poisonous mushrooms is called ________."
-  answer="mycetismus"
-  hint="Unlike eating food contaminated by fungal toxins already in it, this term specifically means eating a poisonous mushroom itself."
->}}
 
 ### Explain why antifungal therapy is hampered by the similarity between fungal and animal cells
 
@@ -184,7 +184,7 @@ Human cells are much more similar to fungi cells than bacteria or viruses.
   question="Fungal infections are generally very difficult to treat because, unlike bacteria, fungi are eukaryotes: antibiotics only target ________ cells, whereas compounds that kill fungi also harm the eukaryotic animal host."
   answer="prokaryotic"
   accept="prokaryote"
-  hint="Reread the end of the paragraph that opens the Animal and Human Parasites and Pathogens subsection; the blank names the kind of cell bacteria have."
+  hint="Reread the end of the paragraph that opens the Animal and Human Parasites and Pathogens subsection."
 >}}
 
 {{< textin
@@ -195,4 +195,4 @@ Human cells are much more similar to fungi cells than bacteria or viruses.
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 24.4: Fungal Parasites and Pathogens](https://openstax.org/books/biology-2e/pages/24-4-fungal-parasites-and-pathogens) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B24_04_01abcd re-kinded from the manifest's file-extension "diagram" guess to "photo" after inspection (all four panels are photographs of infected plants and produce, not drawings); both figures' bare source alts ("Part A is a photo of...") rewritten from the images, folding in the printed sporangia/hyphae labels and 25-micrometer scale bar visible in Figure_24_04_02abc's panel (b), which the source alt omitted; the Scientific Method Connection's blank data-collection table (Results of Antifungal Testing of Vascular Tissue from Different Species of Elm) transcribed as a Markdown table with its title as a bold line above it and its data cells left empty for the learner to fill in, with no practice item built from it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary; one body-sentence cloze (prokaryotic, from the paragraph that opens the Animal and Human Parasites and Pathogens subsection) added under the antifungal-therapy objective, placed after that objective's Review Question; it replaced a summary cloze on "eukaryotic" that sat directly above the Review Question and restated its answer; and one body-sentence cloze (side effects, from the systemic-mycoses paragraph) added under the same objective, since only one Review Question and one summary sentence test that objective.</small>
+<small>This section is adapted from [Biology 2e, Section 24.4: Fungal Parasites and Pathogens](https://openstax.org/books/biology-2e/pages/24-4-fungal-parasites-and-pathogens) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B24_04_01abcd re-kinded from the manifest's file-extension "diagram" guess to "photo" after inspection (all four panels are photographs of infected plants and produce, not drawings); both figures' bare source alts ("Part A is a photo of...") rewritten from the images, folding in the printed sporangia/hyphae labels and 25-micrometer scale bar visible in Figure_24_04_02abc's panel (b), which the source alt omitted; the Scientific Method Connection's blank data-collection table (Results of Antifungal Testing of Vascular Tissue from Different Species of Elm) transcribed as a Markdown table with its title as a bold line above it and its data cells left empty for the learner to fill in, with no practice item built from it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it serves, so the Red Queen Hypothesis question (the second Critical Thinking Question in the source) comes before the superficial-mycoses question (the first); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items added from the glossary (commensalism is left as a Key-terms entry, since the first Review Question already tests it); one body-sentence cloze (Aspergillus, from the aflatoxin paragraph) added under the plant-pathogens objective; one body-sentence cloze (prokaryotic, from the paragraph that opens the Animal and Human Parasites and Pathogens subsection) added under the antifungal-therapy objective, placed after that objective's Review Question, which it would otherwise answer; and one body-sentence cloze (side effects, from the systemic-mycoses paragraph) added under the same objective, since only one Review Question and one summary sentence test that objective.</small>

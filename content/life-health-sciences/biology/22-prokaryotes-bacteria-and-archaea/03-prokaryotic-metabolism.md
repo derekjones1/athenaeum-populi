@@ -115,6 +115,12 @@ Prokaryotes play roles in the carbon and nitrogen cycles. Producers capture carb
 
 ### Identify the macronutrients needed by prokaryotes, and explain their importance
 
+{{< textin
+  question="Nutrients required in large amounts are called ________, whereas those required in trace amounts are called micronutrients or trace elements."
+  answer="macronutrients"
+  hint="The first paragraph of the first subsection under Needs of Prokaryotes."
+>}}
+
 {{< multiplechoice
   question="Which of the following elements is *not* a micronutrient?"
   answer="calcium"
@@ -126,16 +132,10 @@ chromium
 manganese
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Nutrients required in large amounts are called ________, whereas those required in trace amounts are called micronutrients or trace elements."
-  answer="macronutrients"
-  hint="Carbon, hydrogen, oxygen, nitrogen, phosphorus, and sulfur — remembered by the acronym CHONPS — are examples."
->}}
-
 {{< multiplechoice
   question="Why are macronutrients such as carbon, hydrogen, oxygen, nitrogen, phosphorus, and sulfur needed in large amounts?"
   answer="They are the components of organic compounds in cells, including water."
-  hint="Ask what role these elements play in the cell itself, as opposed to the roles the section gives iron, boron, chromium, and manganese."
+  hint="The second paragraph of the first subsection under Needs of Prokaryotes."
 >}}
 They are the components of organic compounds in cells, including water.
 They are required primarily as enzyme cofactors.
@@ -144,6 +144,27 @@ They can be converted into an organic form only by nitrogen-fixing organisms.
 {{< /multiplechoice >}}
 
 ### Describe the ways in which prokaryotes get energy and carbon for life processes
+
+{{< textin
+  question="Prokaryotes that obtain carbon from organic compounds are described as ________."
+  answer="heterotroph"
+  accept="heterotrophic"
+  hint="The first paragraph of The Ways in Which Prokaryotes Obtain Carbon."
+>}}
+
+{{< textin
+  question="An organism that produces organic molecules from small inorganic compounds is called a(n) ________."
+  answer="autotroph"
+  accept="autotrophic"
+  hint="The first paragraph of The Ways in Which Prokaryotes Obtain Carbon."
+>}}
+
+{{< textin
+  question="Organisms that use oxygen are described as ________."
+  answer="aerobic"
+  accept="aerobe"
+  hint="The second paragraph of The Ways in Which Prokaryotes Obtain Energy."
+>}}
 
 {{< multiplechoice
   question="Prokaryotes that obtain their energy from chemical compounds are called ________."
@@ -159,7 +180,7 @@ lithotrophs
 {{< multiplechoice
   question="Cyanobacteria harness energy from the sun through photosynthesis, and oxidize water to provide electrons for energy generation. Thus, we classify cyanobacteria as ________."
   answer="photolithotrophs"
-  hint="Use the Carbon and Energy Sources in Prokaryotes table: find the column each piece of information in the stem belongs to."
+  hint="The Carbon and Energy Sources in Prokaryotes table."
 >}}
 photolithotrophs
 photoheterotrophs
@@ -167,7 +188,7 @@ chemolithoautotrophs
 chemo-organotrophs
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Think about the conditions (temperature, light, pressure, and organic and inorganic materials) that you may find in a deep-sea hydrothermal vent. What type of prokaryotes, in terms of their metabolic needs (autotrophs, phototrophs, chemotrophs, etc.), would you expect to find there?" hint="Consider the absence of light, the ocean's dissolved carbon dioxide, the lack of organic material, and the vent's high temperature — each points to one term from a metabolic pairing." >}}
+{{< selfcheck question="Think about the conditions (temperature, light, pressure, and organic and inorganic materials) that you may find in a deep-sea hydrothermal vent. What type of prokaryotes, in terms of their metabolic needs (autotrophs, phototrophs, chemotrophs, etc.), would you expect to find there?" hint="The two subsections on how prokaryotes obtain energy and carbon, and the table after them." >}}
 In a deep-sea hydrothermal vent, there is no light, so prokaryotes would be chemotrophs instead of phototrophs. The source of carbon would be carbon dioxide dissolved in the ocean, so they would be autotrophs. There is not a lot of organic material in the ocean, so prokaryotes would probably use inorganic sources, thus they would be chemolithotrophs. The temperatures are very high in the hydrothermal vent, so the prokaryotes would be thermophilic.
 ===CHECKS===
 there is no light, so prokaryotes would be chemotrophs instead of phototrophs
@@ -176,28 +197,13 @@ there is not a lot of organic material in the ocean, so prokaryotes would probab
 the temperatures are very high in the hydrothermal vent, so the prokaryotes would be thermophilic
 {{< /selfcheck >}}
 
-{{< textin
-  question="An organism that obtains energy from organic molecules is called a(n) ________."
-  answer="heterotroph"
-  accept="heterotrophic"
-  hint="This is the opposite nutritional strategy from an organism that synthesizes its own organic molecules from carbon dioxide."
->}}
-
-{{< textin
-  question="An organism that produces organic molecules from small inorganic compounds is called a(n) ________."
-  answer="autotroph"
-  accept="autotrophic"
-  hint="This is the opposite nutritional strategy from an organism that must obtain carbon from organic compounds."
->}}
-
-{{< textin
-  question="Organisms that use oxygen are described as ________."
-  answer="aerobic"
-  accept="aerobe"
-  hint="Its energy pathway uses oxygen as the terminal electron acceptor."
->}}
-
 ### Describe the roles of prokaryotes in the carbon and nitrogen cycles
+
+{{< textin
+  question="Bacteria and fungi that carry out the breakdown of plants and animals and their organic compounds are collectively called ________."
+  answer="decomposers"
+  hint="The second paragraph of Prokaryotes and the Carbon Cycle."
+>}}
 
 {{< multiplechoice
   question="Ammonification is the process by which ________."
@@ -213,7 +219,7 @@ gaseous nitrogen is fixed to yield ammonia
 {{< multiplechoice
   question="Plants use carbon dioxide from the air and are therefore called ________."
   answer="producers"
-  hint="This is the same role photosynthetic bacteria play at the start of the carbon cycle."
+  hint="The second paragraph of Prokaryotes and the Carbon Cycle."
 >}}
 consumers
 producers
@@ -221,14 +227,38 @@ decomposer
 carbon fixers
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Farmers continually rotate the crops grown in different fields to maintain nutrients in the soil. How would planting soybeans in a field the year after the field was used to grow carrots help maintain nitrogen in the soil?" hint="Think about which plant family soybeans belong to, and what lives in their root nodules." >}}
+{{< textin
+  question="A mixture of organic materials from dead plants and prokaryotes that have resisted decomposition is called ________."
+  answer="humus"
+  hint="The second paragraph of Prokaryotes and the Carbon Cycle."
+>}}
+
+{{< textin
+  question="The process by which gaseous N₂ is transformed, or 'fixed,' into more readily available forms such as ammonia is called ________."
+  answer="nitrogen fixation"
+  hint="The first paragraph of the section's last subsection."
+>}}
+
+{{< textin
+  question="The conversion of ammonium into nitrite and nitrate in soils is called ________."
+  answer="nitrification"
+  hint="The first paragraph of Prokaryotes and the Nitrogen Cycle, after ammonification."
+>}}
+
+{{< textin
+  question="The transformation of nitrate from soil into gaseous nitrogen compounds such as N₂O, NO, and N₂ is called ________."
+  answer="denitrification"
+  hint="The second paragraph of Prokaryotes and the Nitrogen Cycle."
+>}}
+
+{{< selfcheck question="Farmers continually rotate the crops grown in different fields to maintain nutrients in the soil. How would planting soybeans in a field the year after the field was used to grow carrots help maintain nitrogen in the soil?" hint="The first paragraph of Prokaryotes and the Nitrogen Cycle." >}}
 Soybeans are members of the legume family, so their roots have nodules that are colonized by nitrogen-fixing bacteria (ex. *Rhizobium*). Planting a crop that promotes nitrogen fixation after growing a crop that depletes nitrogen from the soil ensures that the soil continues to contain sufficient nutrients to grow more crops in the future.
 ===CHECKS===
 soybeans are members of the legume family, so their roots have nodules that are colonized by nitrogen-fixing bacteria
 planting a crop that promotes nitrogen fixation after growing a crop that depletes nitrogen from the soil ensures the soil continues to contain sufficient nutrients
 {{< /selfcheck >}}
 
-{{< selfcheck question="Imagine a region of soil became contaminated, killing bacteria that decompose dead plants and animals. How would this affect the carbon cycle in the area? Be specific in stating where carbon would accumulate in the cycle." hint="Think about what decomposers do to organic matter, and what happens to that matter — and to atmospheric carbon dioxide — if they stop working." >}}
+{{< selfcheck question="Imagine a region of soil became contaminated, killing bacteria that decompose dead plants and animals. How would this affect the carbon cycle in the area? Be specific in stating where carbon would accumulate in the cycle." hint="The second paragraph of Prokaryotes and the Carbon Cycle." >}}
 Losing the bacteria that serve as decomposers in the ecosystem would disrupt the carbon cycle, but not stop it completely since fungi can also serve as decomposers. Without bacterial decomposers functioning, organic waste would accumulate in the area, and less carbon dioxide would be released back into the atmosphere.
 ===CHECKS===
 losing the bacteria that serve as decomposers in the ecosystem would disrupt the carbon cycle, but not stop it completely since fungi can also serve as decomposers
@@ -236,36 +266,6 @@ without bacterial decomposers functioning, organic waste would accumulate in the
 less carbon dioxide would be released back into the atmosphere
 {{< /selfcheck >}}
 
-{{< textin
-  question="The process by which gaseous N₂ is transformed, or 'fixed,' into more readily available forms such as ammonia is called ________."
-  answer="nitrogen fixation"
-  hint="Bacteria such as *Azotobacter* and *Rhizobium* carry out this process."
->}}
-
-{{< textin
-  question="Bacteria and fungi that carry out the breakdown of plants and animals and their organic compounds are collectively called ________."
-  answer="decomposers"
-  hint="The Carbon Cycle subsection sorts the cycle's participants into three roles; this is the third."
->}}
-
-{{< textin
-  question="The process by which ammonia is released during the decomposition of nitrogen-containing organic compounds is called ________."
-  answer="ammonification"
-  hint="This is one source of soil ammonia, alongside nitrogen fixation."
->}}
-
-{{< textin
-  question="The conversion of ammonium into nitrite and nitrate in soils is called ________."
-  answer="nitrification"
-  hint="The Nitrogen Cycle subsection describes this two-step oxidation right after ammonification."
->}}
-
-{{< textin
-  question="The transformation of nitrate from soil into gaseous nitrogen compounds such as N₂O, NO, and N₂ is called ________."
-  answer="denitrification"
-  hint="The second paragraph of the Nitrogen Cycle subsection names the bacteria that carry out this process."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 22.3: Prokaryotic Metabolism](https://openstax.org/books/biology-2e/pages/22-3-prokaryotic-metabolism) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, kind set to "diagram" for both after inspection; the over-600-character source alt for Figure_B22_03_01 rewritten to a concise description with its walk-through moved into longdesc, and the screen-reader-spelled source alt for Figure_B22_03_02 ("upper case N 2," "upper N upper H 4 plus sign") rewritten to a plain description, with a longdesc added for both (their labeled nodes and arrows are not carried by the one-line captions); the Carbon and Energy Sources in Prokaryotes table (whose CNXML id, tab-ch22-02-01, duplicates 22.2's own table id — a source oddity, unrelated in content) transcribed complete as a Markdown table, its spanning title row set as a bold line above it, with the print's blank cells kept blank; ion charges set in Unicode sub/superscript, number-then-sign order (NH₄⁺, NO₂⁻, NO₃⁻, N₂, H₂S, CH₄); a glossary-recall textin for nitrogen fixation phrased with "N₂" rather than the word "nitrogen" so the answer's own word does not appear in the prompt; one Critical Thinking selfcheck's "Responses will vary." preamble dropped as scaffolding, keeping the substantive model answer; a typo in the deep-sea-vent Critical Thinking solution ("chemolitotrophs") corrected to "chemolithotrophs," matching the term as used earlier in the section; a grammar typo in the soil-contamination Critical Thinking question ("How would this effect the carbon cycle") corrected to "affect"; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the cyanobacteria Review Question, last in the source, comes before the ammonification and producers questions, and the Visual Connection Question kept as a multiplechoice immediately after its figure in the body; in the cyanobacteria Review Question (`eip-113`), the distractor "photoautotrophs" replaced with "photoheterotrophs," because the section's own text says photoautotrophs use energy from sunlight and carbon from carbon dioxide and that phototrophs which "do not fix carbon" are "not photosynthetic," so a cyanobacterium harnessing the sun's energy "through photosynthesis" is a photoautotroph as well — leaving the source item with two supportable answers — while the section defines photoheterotrophs as getting their carbon from organic compounds (reported as a source defect; key unchanged); eight recall items added, seven from the glossary and one (decomposers) from the section's own carbon-cycle sentence, since the glossary definition prints the root of the term; and, to bring the first objective's group to this book's practice floor, one summary-derived cloze textin item (macronutrients) and one multiple choice built from the section's own macronutrients paragraph, asking why those elements are needed in large amounts, with distractors drawn from the roles the same section gives micronutrients and atmospheric nitrogen.</small>
+<small>This section is adapted from [Biology 2e, Section 22.3: Prokaryotic Metabolism](https://openstax.org/books/biology-2e/pages/22-3-prokaryotic-metabolism) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, kind set to "diagram" for both after inspection; the over-600-character source alt for Figure_B22_03_01 rewritten to a concise description with its walk-through moved into longdesc, and the screen-reader-spelled source alt for Figure_B22_03_02 ("upper case N 2," "upper N upper H 4 plus sign") rewritten to a plain description, with a longdesc added for both (their labeled nodes and arrows are not carried by the one-line captions); the Carbon and Energy Sources in Prokaryotes table (whose CNXML id, tab-ch22-02-01, duplicates 22.2's own table id — a source oddity, unrelated in content) transcribed complete as a Markdown table, its spanning title row set as a bold line above it, with the print's blank cells kept blank; ion charges set in Unicode sub/superscript, number-then-sign order (NH₄⁺, NO₂⁻, NO₃⁻, N₂, H₂S, CH₄); a glossary-recall textin for nitrogen fixation phrased with "N₂" rather than the word "nitrogen" so the answer's own word does not appear in the prompt; one Critical Thinking selfcheck's "Responses will vary." preamble dropped as scaffolding, keeping the substantive model answer; a typo in the deep-sea-vent Critical Thinking solution ("chemolitotrophs") corrected to "chemolithotrophs," matching the term as used earlier in the section; a grammar typo in the soil-contamination Critical Thinking question ("How would this effect the carbon cycle") corrected to "affect"; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the cyanobacteria Review Question, last in the source, comes before the ammonification and producers questions, and the Visual Connection Question kept as a multiplechoice immediately after its figure in the body; in the cyanobacteria Review Question (`eip-113`), the distractor "photoautotrophs" replaced with "photoheterotrophs," because the section's own text says photoautotrophs use energy from sunlight and carbon from carbon dioxide and that phototrophs which "do not fix carbon" are "not photosynthetic," so a cyanobacterium harnessing the sun's energy "through photosynthesis" is a photoautotroph as well — leaving the source item with two supportable answers — while the section defines photoheterotrophs as getting their carbon from organic compounds (reported as a source defect; key unchanged); eight recall items added: five from the glossary; one (heterotroph) from the section's own carbon-source sentence, since the glossary's "obtains energy from organic molecules" also fits the section's chemoorganotrophs; one (decomposers) from the section's own carbon-cycle sentence, since the glossary definition prints the root of the term; and one (humus) from the section's own carbon-cycle sentence defining it — ammonification stays a key-terms bullet, since its Review Question already keys it; and, to bring the first objective's group to this book's practice floor, one summary-derived cloze textin item (macronutrients) and one multiple choice built from the section's own macronutrients paragraph, asking why those elements are needed in large amounts, with distractors drawn from the roles the same section gives micronutrients and atmospheric nitrogen.</small>

@@ -94,11 +94,11 @@ Not all plastids in eukaryotes are derived directly from primary endosymbiosis. 
 Algae. (a) Red algae and (b) green algae (seen here by light microscopy) share similar DNA sequences with photosynthetic cyanobacteria. Scientists speculate that, in a process called endosymbiosis, an ancestral prokaryote engulfed a photosynthetic cyanobacterium that evolved into modern-day chloroplasts. (credit a: modification of work by Ed Bierman; credit b: modification of work by G. Fahnenstiel, NOAA; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
-{{< mediafigure src="biology/Figure_23_01_04" alt="A labeled flow diagram in three numbered steps showing a proto-eukaryote evolving into modern eukaryotic cells through two endosymbiotic events." longdesc="Titled 'THE ENDOSYMBIOTIC THEORY.' Six cell diagrams run left to right, connected by arrows, with the sequence branching into two near the right side. Leftmost, a plain tan cell labeled 'Proto-eukaryote' contains only a loose purple squiggle of DNA. An arrow labeled '1' leads to a second cell, now round with a large purple nucleus and blue wavy endoplasmic reticulum around it, plus several grey blobs in the cytoplasm; pointer lines label 'Nucleus' and 'Endoplasmic reticulum.' Caption text beside step 1 reads that infoldings in the plasma membrane of an ancestral prokaryote gave rise to these endomembrane components. An arrow labeled '2' leads to a third cell, identical except for a small orange rod near its edge labeled 'Aerobic bacterium'; caption text beside step 2 reads that the ancestral eukaryote consumed aerobic bacteria that evolved into mitochondria. From this third cell, two arrows branch to the right. A lower, unlabeled arrow leads to a cell at bottom right labeled 'Modern heterotrophic eukaryote,' shown with two small orange oval organelles, one pointer-labeled 'Mitochondrion,' and no green organelles. An upper arrow labeled '3' leads to a cell that, in addition to the same orange crescent organelles, has a green oval labeled 'Photosynthetic bacterium'; caption text beside step 3 reads that in a second endosymbiotic event, the early eukaryote consumed photosynthetic bacteria that evolved into chloroplasts. A further arrow leads from that cell to the rightmost cell, labeled 'Modern photosynthetic eukaryote,' which carries both the orange crescent organelles and two green oval organelles." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_23_01_04" alt="A labeled flow diagram in three numbered steps showing a proto-eukaryote evolving into modern eukaryotic cells through two endosymbiotic events." longdesc="Titled 'THE ENDOSYMBIOTIC THEORY.' Six cell diagrams run left to right, connected by arrows, with the sequence branching into two near the right side. Leftmost, a plain tan cell labeled 'Proto-eukaryote' contains only a loose purple squiggle of DNA. An arrow labeled '1' leads to a second cell, now round with a large purple nucleus and blue wavy endoplasmic reticulum around it, plus several grey blobs in the cytoplasm; pointer lines label 'Nucleus' and 'Endoplasmic reticulum.' Caption text beside step 1 reads that infoldings in the plasma membrane of an ancestral prokaryote gave rise to these endomembrane components. An arrow labeled '2' leads to a third cell, like the second but with its endoplasmic reticulum drawn as dotted purple folds, and with a small orange rod at its lower edge labeled 'Aerobic bacterium'; caption text beside step 2 reads that the ancestral eukaryote consumed aerobic bacteria that evolved into mitochondria. From this third cell, two arrows branch to the right. A lower, unlabeled arrow leads to a cell at bottom right labeled 'Modern heterotrophic eukaryote,' shown with two small orange oval organelles, one pointer-labeled 'Mitochondrion,' and no green organelles. An upper arrow labeled '3' leads to a cell that, in addition to the same orange crescent organelles, has a green oval labeled 'Photosynthetic bacterium'; caption text beside step 3 reads that in a second endosymbiotic event, the early eukaryote consumed photosynthetic bacteria that evolved into chloroplasts. A further arrow leads from that cell to the rightmost cell, labeled 'Modern photosynthetic eukaryote,' which carries both the orange crescent organelles and two green oval organelles." kind="diagram" >}}
 The Endosymbiotic Theory. The first eukaryote may have originated from an ancestral prokaryote that had undergone membrane proliferation, compartmentalization of cellular function (into a nucleus, lysosomes, and an endoplasmic reticulum), and the establishment of endosymbiotic relationships with an aerobic prokaryote, and, in some cases, a photosynthetic prokaryote, to form mitochondria and chloroplasts, respectively.
 {{< /mediafigure >}}
 
-{{< selfcheck question="What evidence is there that mitochondria were incorporated into the ancestral eukaryotic cell before chloroplasts?" hint="Look at where the aerobic bacterium enters the diagram compared to where the branch toward a photosynthetic bacterium happens, and which branch still lacks chloroplasts afterward." >}}
+{{< selfcheck question="What evidence is there that mitochondria were incorporated into the ancestral eukaryotic cell before chloroplasts?" hint="Compare the two modern cells at the right of the endosymbiotic theory diagram just above." >}}
 All eukaryotic cells have mitochondria, but not all eukaryotic cells have chloroplasts.
 ===CHECKS===
 all eukaryotic cells have mitochondria
@@ -147,9 +147,9 @@ mitochondria
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The last common ancestor's chromosomes were linear and contained DNA associated with ________."
-  answer="histones"
-  hint="Item 5 of the numbered list in Characteristics of Eukaryotes names these."
+  question="The last common ancestor of today's Eukarya had several characteristics, including cells with nuclei and an ________ (which includes the nuclear envelope)."
+  answer="endomembrane system"
+  hint="The Summary's list of the last common ancestor's characteristics."
 >}}
 
 {{< multiplechoice
@@ -168,7 +168,7 @@ Endosymbiont
 {{< multiplechoice
   question="What event is thought to have contributed to the evolution of eukaryotes?"
   answer="oxygenation of the atmosphere"
-  hint="The Prokaryotic Metabolism subsection explains which change in early Earth's conditions coincided with the rapid diversification of eukaryotes."
+  hint="Reread the last two paragraphs of the Prokaryotic Metabolism subsection."
 >}}
 global warming
 glaciation
@@ -179,7 +179,7 @@ oxygenation of the atmosphere
 {{< multiplechoice
   question="Which of the following observations about a bacterium would distinguish it from the last eukaryotic common ancestor?"
   answer="Lack of a membrane-bound structure surrounding the genome"
-  hint="Look for the option that contradicts one of the numbered characteristics every eukaryote has."
+  hint="Check each option against the numbered list in Characteristics of Eukaryotes."
 >}}
 A double-stranded DNA genome
 Lack of a membrane-bound structure surrounding the genome
@@ -190,7 +190,7 @@ Enclosed by a cell wall
 {{< textin
   question="The nuclear genome seems to be descended from an ________ ancestor."
   answer="archaean"
-  accept="archaeal|archean"
+  accept="archaeal|archean|archaea"
   hint="Reread the last paragraph of the Endosymbiotic Theory subsection, on where our nuclear genes appear to come from."
 >}}
 
@@ -218,7 +218,7 @@ red algae
 chlorarachniophytes
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the hypothesized steps in the origin of eukaryotic cells." hint="Follow the sequence from nuclear genome ancestry through the first and any later endosymbiotic events." >}}
+{{< selfcheck question="Describe the hypothesized steps in the origin of eukaryotic cells." hint="The Endosymbiotic Theory, Mitochondria, and Plastids subsections, with the endosymbiotic theory diagram and the Evolution Connection box." >}}
 Eukaryotic cells arose through endosymbiotic events that gave rise to the energy-producing organelles within the eukaryotic cells such as mitochondria and chloroplasts. The nuclear genome of eukaryotes is related most closely to the Archaea, so it may have been an early archaean that engulfed a bacterial cell that evolved into a mitochondrion. Mitochondria appear to have originated from an alpha-proteobacterium, whereas chloroplasts originated as a cyanobacterium. There is also evidence of secondary endosymbiotic events. Other cell components may also have resulted from endosymbiotic events.
 ===CHECKS===
 endosymbiotic events gave rise to mitochondria and chloroplasts
@@ -228,7 +228,7 @@ chloroplasts originated as a cyanobacterium
 there is evidence of secondary endosymbiotic events
 {{< /selfcheck >}}
 
-{{< selfcheck question="Some aspects of eukaryotes are more similar to Archaea, while other aspects of eukaryotic cell composition appear more closely related to Bacteria. Explain how endosymbiosis could resolve this paradox." hint="Think about what each partner in a permanent endosymbiotic relationship would contribute to the merged cell's genome." >}}
+{{< selfcheck question="Some aspects of eukaryotes are more similar to Archaea, while other aspects of eukaryotic cell composition appear more closely related to Bacteria. Explain how endosymbiosis could resolve this paradox." hint="Reread the Endosymbiotic Theory subsection." >}}
 The endosymbiotic theory proposes that one organism engulfed another, and the two co-evolved together until they could not exist independently. If a bacterium engulfed an archaeon, or vice versa, and the two developed an obligate symbiotic relationship, the resulting eukaryote thousands of years later would retain features from both original cells.
 ===CHECKS===
 one organism engulfed another
@@ -238,11 +238,11 @@ the resulting eukaryote would retain features from both original cells
 {{< /selfcheck >}}
 
 {{< textin
-  question="A group of related organelles in plant cells involved in the storage of starches, fats, proteins, and pigments is called a ________."
+  question="One of a group of related organelles in plant cells that are involved in the storage of starches, fats, proteins, and pigments is called a ________."
   answer="plastid"
-  hint="Chloroplasts, which capture light energy for photosynthesis, are one type of this organelle."
+  hint="The first paragraph of the subsection after Mitochondria introduces it."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 23.1: Eukaryotic Origins](https://openstax.org/books/biology-2e/pages/23-1-eukaryotic-origins) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_23_01_02 re-kinded from the manifest's file-extension "photo" guess to "diagram" (it pairs a cross-section illustration with a corroborating micrograph); the source alts for Figure_23_01_01, Figure_23_01_02, and Figure_23_01_03ab rewritten from the images to say what each figure shows; a longdesc added for Figure_23_01_04 and Figure_B23_01_07, since neither diagram's numbered steps, arrows, and cell labels are carried by its caption; the inline forward/backward figure references reworded as "see the diagram/illustration/photographs below" since figures are not numbered here; the visual-connection note rendered as its mediafigure immediately followed by a self-check carrying the source's own solution, with rubric checkpoints decomposing the model answer into check-off clauses with no new claims; the evolution note rendered as an Evolution Connection callout with its embedded figure kept inside it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each Review Question placed under the objective it tests, so they run in the order 2, 5, 1, 6, 3, 4 of the source's numbering; one Review Question's distractor "Archea" corrected to "Archaea" (a source misspelling of the domain name); one key-term recall item (plastid) added from the glossary; two summary-derived cloze recall items added (histones, archaean) to fill out thin objective groups, since none of the module's three glossary terms tests the eukaryote-characteristics or last-common-ancestor objectives directly; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 23.1: Eukaryotic Origins](https://openstax.org/books/biology-2e/pages/23-1-eukaryotic-origins) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_23_01_02 re-kinded from the manifest's file-extension "photo" guess to "diagram" (it pairs a cross-section illustration with a corroborating micrograph); the source alts for Figure_23_01_01, Figure_23_01_02, and Figure_23_01_03ab rewritten from the images to say what each figure shows; a longdesc added for Figure_23_01_04 and Figure_B23_01_07, since neither diagram's numbered steps, arrows, and cell labels are carried by its caption; the inline forward/backward figure references reworded as "see the diagram/illustration/photographs below" since figures are not numbered here; the visual-connection note rendered as its mediafigure immediately followed by a self-check carrying the source's own solution, with rubric checkpoints decomposing the model answer into check-off clauses with no new claims; the evolution note rendered as an Evolution Connection callout with its embedded figure kept inside it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each Review Question placed under the objective it tests, so they run in the order 2, 5, 1, 6, 3, 4 of the source's numbering; one Review Question's distractor "Archea" corrected to "Archaea" (a source misspelling of the domain name); one key-term recall item (plastid) added from the glossary; two summary-derived cloze recall items added (endomembrane system, archaean) to fill out thin objective groups, since none of the module's three glossary terms tests the eukaryote-characteristics or last-common-ancestor objectives directly; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

@@ -187,13 +187,14 @@ animals and fungi store polysaccharides as glycogen, while plants store them as 
 {{< textin
   question="A general term for a unicellular fungus is a ________."
   answer="yeast"
-  hint="Saccharomyces and Candida are common examples of this kind of unicellular fungus."
+  hint="See the opening paragraph of the Growth subsection."
 >}}
 
 {{< textin
-  question="Fungi that require oxygen to survive, such as humans do, are called ________."
+  question="Most fungi are ________, requiring oxygen to survive."
   answer="obligate aerobes"
-  hint="This is the opposite of a fungus that can only respire without oxygen."
+  accept="obligate aerobic|aerobes|aerobic"
+  hint="See the Growth paragraph on the environments fungi thrive in."
 >}}
 
 ### Describe the composition of the mycelium
@@ -202,13 +203,27 @@ animals and fungi store polysaccharides as glycogen, while plants store them as 
   question="A single fungal filament composed of one or more cells is called a ________."
   answer="hypha"
   accept="hyphae"
-  hint="This structure can be divided into cells by septa, or left undivided as one continuous tube."
+  hint="See the opening paragraph of the Growth subsection."
+>}}
+
+{{< textin
+  question="A single hypha that is not divided into separate cells and contains many nuclei is called a ________ hypha."
+  answer="coenocytic"
+  accept="coenocytic hypha|coenocytic hyphae"
+  hint="See the Growth paragraph on the hyphae of bread molds."
+>}}
+
+{{< textin
+  question="A mass of fungal hyphae is called a ________."
+  answer="mycelium"
+  accept="mycelia"
+  hint="See the Growth paragraph on the vegetative and reproductive stages."
 >}}
 
 {{< multiplechoice
   question="The wall dividing individual cells in a fungal filament is called a"
   answer="septum"
-  hint="This is the cross-wall between individual cells, not the whole filament or the whole mass of filaments."
+  hint="Reread the Growth paragraph just before the three-panel hyphae figure."
 >}}
 thallus
 hypha
@@ -216,22 +231,9 @@ mycelium
 septum
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A single hypha that lacks septa and contains many nuclei is called a ________ hypha."
-  answer="coenocytic"
-  hint="This kind of hypha has no cross-walls at all, so its many nuclei float freely in one shared cytoplasm."
->}}
-
-{{< textin
-  question="A mass of fungal hyphae is called a ________."
-  answer="mycelium"
-  accept="mycelia"
-  hint="Individual hyphae are microscopic, but a mass of them can be enormous — one specimen in Oregon spans more than 2,000 acres."
->}}
-
 ### Describe the mode of nutrition of fungi
 
-{{< selfcheck question="Why is the large surface area of the mycelium essential for nutrient acquisition by fungi?" hint="Think about where digestion happens for a fungus, and what a larger surface lets it do at that step." >}}
+{{< selfcheck question="Why is the large surface area of the mycelium essential for nutrient acquisition by fungi?" hint="Reread the opening paragraph of the Nutrition subsection." >}}
 Fungi break down decaying matter in their environment to serve as their food source. Since the digestion occurs externally, the large mycelium can secrete exoenzymes over a large area. The fungi must be able to absorb the small molecules released by digestion, so having a large surface area increases the amount of digested molecules that are captured by the fungi.
 ===CHECKS===
 fungi break down decaying matter in their environment to serve as their food source
@@ -244,14 +246,14 @@ having a large surface area increases the amount of digested molecules that are 
   question="An organism that derives its nutrients from decaying organic matter is called a ________."
   answer="saprobe"
   accept="saprophyte"
-  hint="Fungi that break down dead wood's cellulose and lignin play this ecological role."
+  hint="See the second paragraph of the Nutrition subsection."
 >}}
 
 {{< textin
   question="Specialized hyphae that penetrate host tissue, release digestive enzymes, and absorb nutrients in many parasitic fungi are called ________."
   answer="haustoria"
   accept="haustorium"
-  hint="Fungi that trap and digest nematodes extend these specialized structures into the worm's tissue."
+  hint="See the Nutrition paragraph on parasitic and predatory fungi."
 >}}
 
 ### Explain sexual and asexual reproduction in fungi
@@ -278,7 +280,7 @@ Haploid-dominant green algae
 Bacteria undergoing binary fission
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the evolutionary advantages for an organism to reproduce both asexually and sexually?" hint="Consider what favorable, stable conditions favor versus what a sudden environmental change favors." >}}
+{{< selfcheck question="What are the evolutionary advantages for an organism to reproduce both asexually and sexually?" hint="Reread the opening sentences of the Sexual Reproduction subsection." >}}
 Asexual reproduction is fast and best under favorable conditions. Sexual reproduction allows the recombination of genetic traits and increases the odds of developing new adaptations better suited to a changed environment.
 ===CHECKS===
 asexual reproduction is fast and best under favorable conditions
@@ -289,15 +291,15 @@ increases the odds of developing new adaptations better suited to a changed envi
 {{< textin
   question="The fusion of cytoplasm from two haploid cells, the first stage of fungal sexual reproduction, is called ________."
   answer="plasmogamy"
-  hint="Its name literally means marriage or union of cytoplasm."
+  hint="See the Sexual Reproduction paragraph on the stages all fungal sexual reproduction shares."
 >}}
 
 {{< textin
   question="The stage of fungal sexual reproduction in which haploid nuclei fuse to form a diploid zygote nucleus is called ________."
   answer="karyogamy"
-  hint="Its name literally means nuclear marriage, and it happens after two cells' cytoplasm has already fused."
+  hint="See the Sexual Reproduction paragraph on the stages all fungal sexual reproduction shares."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 24.1: Characteristics of Fungi](https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures (Figure_24_01_04abcf, the septated/coenocytic hyphae drawing, and Figure_24_01_05abf, the puffball) re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection, since each pairs a photograph with a drawing that carries the teaching; a longdesc added to those two figures and to the generalized life-cycle diagram (Figure_B24_01_07), whose panel drawings, arrows, and stage labels are not carried by their one-line captions; the nine bare parenthetical figure cross-references with no source link text rendered as "(pictured below)" (eight) and "(pictured above)" (one), since figures are not numbered here; the life-cycle drawing's own Plasmogamy label is misspelled "diffirent" in the artwork and the longdesc quotes it as "different"; the career note and the interactive note rendered as, respectively, a Career Connection callout and a Link to Learning callout with descriptive link text; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Critical Thinking Questions run in the order 2, 3, 1 of the source's numbering; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and nine key-term recall items (yeast, obligate aerobes, hypha, coenocytic hypha, mycelium, saprobe, haustoria, plasmogamy, karyogamy) added from the glossary.</small>
+<small>This section is adapted from [Biology 2e, Section 24.1: Characteristics of Fungi](https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures (Figure_24_01_04abcf, the septated/coenocytic hyphae drawing, and Figure_24_01_05abf, the puffball) re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection, since each pairs a photograph with a drawing that carries the teaching; a longdesc added to those two figures and to the generalized life-cycle diagram (Figure_B24_01_07), whose panel drawings, arrows, and stage labels are not carried by their one-line captions; the nine bare parenthetical figure cross-references with no source link text rendered as "(pictured below)" (eight) and "(pictured above)" (one), since figures are not numbered here; the life-cycle drawing's own Plasmogamy label is misspelled "diffirent" in the artwork and the longdesc quotes it as "different"; the career note and the interactive note rendered as, respectively, a Career Connection callout and a Link to Learning callout with descriptive link text; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Critical Thinking Questions run in the order 2, 3, 1 of the source's numbering; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eight key-term recall items (yeast, hypha, coenocytic hypha, mycelium, saprobe, haustoria, plasmogamy, karyogamy) added from the glossary; and one recall item (obligate aerobes) built as a cloze of the Growth subsection's own sentence.</small>

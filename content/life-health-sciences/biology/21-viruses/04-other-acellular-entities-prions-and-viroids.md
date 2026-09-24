@@ -72,7 +72,7 @@ Prions are infectious agents that consist of protein, but no DNA or RNA, and see
 {{< multiplechoice
   question="Which of the following is not associated with prions?"
   answer="DNA"
-  hint="Prions are proteinaceous — think about what kind of molecule they contain none of."
+  hint="The opening paragraph of the Prions subsection."
 >}}
 Replicating shapes
 Mad cow disease
@@ -94,23 +94,25 @@ consumption of infected meat
 >}}
 
 {{< textin
-  question="An infectious particle that consists of protein and replicates without DNA or RNA is called a ________."
-  answer="prion"
-  hint="The first of the two acellular agents this section covers — a misfolded protein with no nucleic acid at all."
+  question="Pioneering work by which Nobel Prize-winning biologist convinced the majority of biologists that an infectious agent that does not use nucleic acids can exist?"
+  answer="Stanley Prusiner"
+  accept="Prusiner"
+  hint="The opening paragraph of the Prions subsection."
 >}}
 
 ### Define viroids and their targets of infection
 
 {{< textin
-  question="A plant pathogen that produces only a single, specific RNA molecule is called a ________."
-  answer="viroid"
-  hint="The second of the two acellular agents this section covers; it infects plants only."
+  question="According to the section summary, the presence of viroids can have a severe impact on the ________ industry."
+  answer="agriculture"
+  accept="agricultural"
+  hint="The closing sentence of the section summary."
 >}}
 
 {{< multiplechoice
   question="Which statement is true of viroids?"
   answer="They are single-stranded RNA particles."
-  hint="Recall what viroids do and do not have, compared with a virus."
+  hint="The first paragraph of the Viroids subsection."
 >}}
 They are single-stranded RNA particles.
 They reproduce only outside of the cell.
@@ -118,14 +120,14 @@ They produce proteins.
 They affect both plants and animals.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How are viroids like viruses?" hint="Think about what happens inside a host cell, and what kind of molecule both agents carry." >}}
+{{< selfcheck question="How are viroids like viruses?" hint="The first paragraph of the Viroids subsection compares viroids with viruses." >}}
 They both replicate in a cell, and they both contain nucleic acid.
 ===CHECKS===
 they both replicate in a cell
 they both contain nucleic acid
 {{< /selfcheck >}}
 
-{{< selfcheck question="A botanist notices that a tomato plant looks diseased. How could the botanist confirm that the agent causing disease is a viroid, and not a virus?" hint="Think about what a viroid lacks that a virus has, and what a viroid's RNA does — and does not — do inside the cell." >}}
+{{< selfcheck question="A botanist notices that a tomato plant looks diseased. How could the botanist confirm that the agent causing disease is a viroid, and not a virus?" hint="The first paragraph of the Viroids subsection lists how viroids differ from viruses." >}}
 The botanist would need to isolate any foreign nucleic acids from infected plant cells, and confirm that an RNA molecule is the etiological agent of disease. The botanist would then need to demonstrate that the RNA can infect plant cells without a capsid, and that the RNA replicates, but is not translated to produce proteins.
 ===CHECKS===
 isolate any foreign nucleic acids from infected plant cells
@@ -137,4 +139,4 @@ not translated to produce proteins
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 21.4: Other Acellular Entities: Prions and Viroids](https://openstax.org/books/biology-2e/pages/21-4-other-acellular-entities-prions-and-viroids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_21_04_01ab re-kinded from the manifest's file-extension "photo" guess to "diagram" since its panel (a) is a labeled flow diagram that carries the teaching point, paired with a micrograph in panel (b); a longdesc added for Figure_21_04_01ab, since the cyclic pathway of labeled nodes and arrows it draws is not carried by its caption; the source alt for Figure_21_04_01ab, a letter-spaced screen-reader spelling ("P r P," "P r P superscript lowercase s lowercase c"), rewritten as a plain description from the image; three prose cross-references to numbered figures ("Figure 21.17," "Figure 21.18," "Figure 21.19") reworded as "see the diagram below" or "see the photo below" since figures are not numbered here; the Career Connection note rendered as a callout with its embedded figure kept inside it, and its title kept in italics after the bold feature name; PrP<sup>c</sup> and PrP<sup>sc</sup> set as HTML superscripts throughout, normalizing the source's stray internal spaces; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items (pathogen, prion, viroid) added from the glossary; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 21.4: Other Acellular Entities: Prions and Viroids](https://openstax.org/books/biology-2e/pages/21-4-other-acellular-entities-prions-and-viroids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_21_04_01ab re-kinded from the manifest's file-extension "photo" guess to "diagram" since its panel (a) is a labeled flow diagram that carries the teaching point, paired with a micrograph in panel (b); a longdesc added for Figure_21_04_01ab, since the cyclic pathway of labeled nodes and arrows it draws is not carried by its caption; the source alt for Figure_21_04_01ab, a letter-spaced screen-reader spelling ("P r P," "P r P superscript lowercase s lowercase c"), rewritten as a plain description from the image; three prose cross-references to numbered figures ("Figure 21.17," "Figure 21.18," "Figure 21.19") reworded as "see the diagram below" or "see the photo below" since figures are not numbered here; the Career Connection note rendered as a callout with its embedded figure kept inside it, and its title kept in italics after the bold feature name; PrP<sup>c</sup> and PrP<sup>sc</sup> set as HTML superscripts throughout, normalizing the source's stray internal spaces; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); one key-term recall item (pathogen) added from the glossary, one text-recall item (Stanley Prusiner) built from the section's opening paragraph on prions, and one summary-derived text-recall item (agriculture) built from the section summary's closing sentence; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

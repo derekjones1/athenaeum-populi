@@ -55,14 +55,14 @@ The majority of known fungi belong to the Phylum **Ascomycota**, which is charac
 
 Asexual reproduction is frequent and involves the production of conidiophores that release haploid *conidiospores* (pictured below). Sexual reproduction starts with the development of special hyphae from either one of two types of mating strains (shown below). The "male" strain produces an antheridium and the "female" strain develops an ascogonium. At fertilization, the antheridium and the ascogonium combine in plasmogamy, without nuclear fusion. Special dikaryotic ascogenous (ascus-producing) hyphae arise from this **dikaryon**, in which each cell has pairs of nuclei: one from the "male" strain and one from the "female" strain. In each ascus, two haploid nuclei fuse in karyogamy. Thousands of asci fill a fruiting body called the **ascocarp**. The diploid nucleus in each ascus gives rise to haploid nuclei by meiosis, and spore walls form around each nucleus. The spores in each ascus contain the meiotic products of a single diploid nucleus. The ascospores are then released, germinate, and form hyphae that are disseminated in the environment and start new mycelia (pictured below).
 
-{{< mediafigure src="biology/Figure_B24_02_04" kind="diagram" alt="A circular life-cycle diagram titled 'Ascomycete Life Cycle,' with an asexual loop of mycelia, a conidiophore, and spores at the top, and a sexual loop below it running from an ascogonium and antheridium through a dikaryotic ascocarp and its asci to release ascospores." longdesc="The cycle runs counterclockwise from 'Spores' at the top. In the small upper loop (Asexual Reproduction): spores form a haploid (1n) mycelium; mitosis produces a conidiophore that buds new spores, which germinate back into mycelia. In the large lower loop (Sexual Reproduction, running down the left side, along the bottom, and up the right): germination and plasmogamy fuse an ascogonium and an antheridium budding from the mycelium; mitosis and cell division form many hyphae, each cell shown with one red and one blue dot, described as dikaryotic, that grow into a fruiting body labeled 'Ascocarp.' At the tips of these hyphae, an ascus — drawn with one red and one blue dot — undergoes karyogamy, its two nuclei fusing into a diploid (2n) zygote. The zygote undergoes meiosis, producing an ascus with four haploid (1n) nuclei, drawn as purple dots arranged in a row. Each of the four nuclei then divides once by mitosis, yielding eight ascospores arranged in a row inside the ascus; these are dispersed and germinate, completing the cycle back to mycelia." >}}
+{{< mediafigure src="biology/Figure_B24_02_04" kind="diagram" alt="A circular life-cycle diagram titled 'Ascomycete Life Cycle,' with an asexual loop of mycelia, a conidiophore, and spores at the top, and a sexual loop below it running from an ascogonium and antheridium through a dikaryotic ascocarp and its asci to release ascospores." longdesc="The cycle runs counterclockwise from 'Spores' at the top. In the small upper loop (Asexual Reproduction): spores germinate into mycelia (labeled 'Mycelia'); mitosis produces a conidiophore that buds new spores, which germinate back into mycelia. In the large lower loop (Sexual Reproduction, running down the left side, along the bottom, and up the right): germination and plasmogamy fuse an ascogonium and an antheridium budding from the mycelium; mitosis and cell division form many hyphae, each cell shown with one red and one blue dot, described as dikaryotic, that grow into a fruiting body labeled 'Ascocarp.' At the tips of these hyphae, an ascus — drawn with one red and one blue dot — undergoes karyogamy, its two nuclei fusing into a diploid (2n) zygote. The zygote undergoes meiosis, producing an ascus with four haploid (1n) nuclei, drawn as purple dots arranged in a row. Each of the four nuclei then divides once by mitosis, yielding eight ascospores arranged in a row inside the ascus; these are dispersed and germinate, completing the cycle back to mycelia." >}}
 Ascomycete life cycle. The lifecycle of an ascomycete is characterized by the production of asci during the sexual phase. In each ascus, the four nuclei produced by meiosis divide once mitotically for a total of eight haploid ascospores. The haploid phase is the predominant phase of the life cycle in Ascomycetes.
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements is true?"
   answer="A dikaryotic ascus that forms in the ascocarp undergoes karyogamy, meiosis, and mitosis to form eight ascospores."
-  hint="Trace the diagram above from the Ascus label through Karyogamy, Meiosis, and Mitosis, and note the two colors of dot drawn inside the ascus before karyogamy."
+  hint="Trace the sexual loop of the ascomycete life-cycle diagram above."
 >}}
 A dikaryotic ascus that forms in the ascocarp undergoes karyogamy, meiosis, and mitosis to form eight ascospores.
 A diploid ascus that forms in the ascocarp undergoes karyogamy, meiosis, and mitosis to form eight ascospores.
@@ -93,7 +93,7 @@ Basidiomycete life cycle. The lifecycle of a basidiomycete has sexual and asexua
 {{< multiplechoice
   question="Which of the following statements is true?"
   answer="A basidiocarp is the fruiting body of a mushroom-producing fungus."
-  hint="Compare the diagram's own labels for 'Basidiocarp' and 'Basidia' — which one is drawn as the mushroom shape itself, and which is drawn inside its gills?"
+  hint="Trace the basidiomycete life-cycle diagram above, stage by stage."
 >}}
 A basidium is the fruiting body of a mushroom-producing fungus, and it forms four basidiocarps.
 The result of the plasmogamy step is four basidiospores.
@@ -142,10 +142,24 @@ Chytridiomycota (chytrids) are considered the most ancestral group of fungi. The
 
 ### Identify fungi and place them into the five major phyla according to current classification
 
+{{< textin
+  question="The majority of known fungi belong to the phylum ________."
+  answer="Ascomycota"
+  accept="sac fungi|sac fungus|ascomycete"
+  hint="See the opening paragraph of the section's third phylum subsection."
+>}}
+
+{{< textin
+  question="The fungal phylum that includes the familiar bread mold, Rhizopus stolonifer, is called ________."
+  answer="Zygomycota"
+  accept="conjugated fungi|conjugated fungus|zygomycete"
+  hint="See the opening paragraph of the section's second phylum subsection."
+>}}
+
 {{< multiplechoice
   question="The most primitive phylum of fungi is the ________."
   answer="Chytridiomycota"
-  hint="This phylum's members are considered the simplest and most primitive true fungi, with a fossil record dating to the late pre-Cambrian period."
+  hint="See the opening paragraph of the section's first phylum subsection."
 >}}
 Chytridiomycota
 Zygomycota
@@ -156,7 +170,7 @@ Ascomycota
 {{< multiplechoice
   question="Members of which phylum produce a club-shaped structure that contains spores?"
   answer="Basidiomycota"
-  hint="This phylum's fruiting bodies are the mushrooms you see in fields after rain, on supermarket shelves, and on your lawn."
+  hint="See the opening paragraph of the section's fourth phylum subsection."
 >}}
 Chytridiomycota
 Basidiomycota
@@ -167,7 +181,7 @@ Ascomycota
 {{< multiplechoice
   question="Members of which phylum are all involved in close associations with the roots of trees?"
   answer="Glomeromycota"
-  hint="Nearly all members of this newly described phylum form arbuscular mycorrhizae with plant roots."
+  hint="See the section's last phylum subsection."
 >}}
 Ascomycota
 Deuteromycota
@@ -178,7 +192,7 @@ Glomeromycota
 {{< multiplechoice
   question="The fungi that do not reproduce sexually used to be classified as ________."
   answer="Deuteromycota"
-  hint="This invalid 'form phylum' name is no longer used now that molecular analysis has reassigned its members to other phyla."
+  hint="See the section's opening paragraph."
 >}}
 Ascomycota
 Deuteromycota
@@ -189,7 +203,7 @@ Glomeromycota
 {{< multiplechoice
   question="A scientist discovers a new species of fungus that introduces genetic diversity during reproduction by creating a diploid zygote. This new species cannot belong to which modern phylum of fungi?"
   answer="Glomeromycota"
-  hint="Re-read which phylum in this section is described as not reproducing sexually at all."
+  hint="Compare how each phylum subsection describes its members' reproduction."
 >}}
 Zygomycota
 Glomeromycota
@@ -197,30 +211,23 @@ Chytridiomycota
 Deuteromycota
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The fungal phylum whose spores form inside a specialized structure called an ascus is ________."
-  answer="Ascomycota"
-  accept="sac fungi|sac fungus|ascomycete"
-  hint="Baker's and brewer's yeast, along with truffles and morels, belong to this phylum."
->}}
-
-{{< textin
-  question="The fungal phylum that includes the familiar bread mold, and whose plus and minus haploid mating types conjugate during sexual reproduction, is called ________."
-  answer="Zygomycota"
-  accept="conjugated fungi|conjugated fungus|zygomycete"
-  hint="Rhizopus stolonifer, the fungus that grows on bread and fruit, is this phylum's best-known example."
->}}
-
 ### Describe each phylum in terms of major representative species and patterns of reproduction
 
 {{< textin
-  question="In zygomycetes, the thick-coated structure that protects the developing zygote from desiccation until conditions favor germination is called a ________."
+  question="In bread molds, a developing diploid ________ has a thick coat that protects it from desiccation and other hazards."
   answer="zygospore"
   accept="zygosporangium|zygosporangia"
-  hint="This structure's parent phylum's two mating strains are labeled type + and type – in this section."
+  hint="See the second paragraph of the section's second phylum subsection."
 >}}
 
-{{< selfcheck question="What is the advantage for a basidiomycete to produce a showy and fleshy fruiting body?" hint="Think about how animals interact with a mushroom's spores." >}}
+{{< textin
+  question="The club-shaped reproductive cell found on the gills beneath a mushroom's cap, where spores form, is called a ________."
+  answer="basidium"
+  accept="basidia"
+  hint="Reread the club fungi subsection, on where a mushroom forms its spores."
+>}}
+
+{{< selfcheck question="What is the advantage for a basidiomycete to produce a showy and fleshy fruiting body?" hint="Reread the previous section's paragraph on how fungal spores disperse from the parent organism." >}}
 By ingesting spores and disseminating them in the environment as waste, animals act as agents of dispersal. The benefit to the fungus outweighs the cost of producing fleshy fruiting bodies.
 ===CHECKS===
 animals ingest spores and disseminate them in the environment as waste
@@ -237,13 +244,6 @@ Ascomycota may have unicellular or multicellular body structure; a feature is se
 Basidiomycota have multicellular bodies; features include sexual spores in the basidiocarp (mushroom) and that they are mostly decomposers; mushroom-producing fungi are an example
 {{< /selfcheck >}}
 
-{{< textin
-  question="The club-shaped reproductive cell found on the gills beneath a mushroom's cap, where spores form, is called a ________."
-  answer="basidium"
-  accept="basidia"
-  hint="Reread the club fungi subsection, on where a mushroom forms its spores."
->}}
-
 {{< multiplechoice
   question="Chytridiomycota (chytrids) reproduce both sexually and asexually; the asexual spores are called ________."
   answer="zoospores"
@@ -257,4 +257,4 @@ conidiospores
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 24.2: Classifications of Fungi](https://openstax.org/books/biology-2e/pages/24-2-classifications-of-fungi) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the chytrid-host micrograph's alt describes the arthropod's body as dark and speckled with translucent appendages, because the source alt's "transparent organism" does not match the image (erratum 840); Figure_B24_02_01 and Figure_B24_02_02 re-kinded from the manifest's file-extension "photo" guess to "diagram" since both are drawn schematics, not photographs; a longdesc added to five figures whose diagram labels, life-cycle stages, or pointer-line labels are not carried by their one-line captions (Figure_B24_02_01, Figure_B24_02_02, Figure_B24_02_04, Figure_B24_02_07, and Figure_24_02_05); the over-600-character source alts for Figure_B24_02_01, Figure_B24_02_02, Figure_B24_02_04, and Figure_B24_02_07 condensed to short descriptions with their step-by-step walk-throughs moved into a longdesc, and the two Visual-Connection figures' (Figure_B24_02_04, Figure_B24_02_07) short alts written to describe structure without stating which multiple-choice option is correct; Figure_24_02_03abf's source alt description of "green mold" replaced with a plain description of the grayish-white fuzz actually visible in the image, matching the source caption's own "white fuzz"; the Fairy Ring caption's stray trailing "]" (a source typesetting artifact) dropped; bare in-text figure cross-references rendered as "(pictured below)" / "(shown below)" / "(illustrated below)" since Hugo does not number figures; the two feature boxes wrapping Visual Connection questions rendered as their figure followed by a multiple choice, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (Ascomycota, Zygomycota, zygospore, basidium) added from the glossary; one summary-derived select-the-term multiple choice (zoospores, from the chytrid sentence) added under the second objective, since its two Critical Thinking self-checks alone leave that group under this book's per-group floor. The mycorrhiza review question's stem was reworded to this section's own sentence about the Glomeromycota ("all of which are involved in close associations with the roots of trees"), because the source stem was also true of the Ascomycota and Basidiomycota distractors by the Ecology of Fungi section; options and key unchanged (erratum 418).</small>
+<small>This section is adapted from [Biology 2e, Section 24.2: Classifications of Fungi](https://openstax.org/books/biology-2e/pages/24-2-classifications-of-fungi) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the chytrid-host micrograph's alt describes the arthropod's body as dark and speckled with translucent appendages, because the source alt's "transparent organism" does not match the image (erratum 840); Figure_B24_02_01 and Figure_B24_02_02 re-kinded from the manifest's file-extension "photo" guess to "diagram" since both are drawn schematics, not photographs; a longdesc added to five figures whose diagram labels, life-cycle stages, or pointer-line labels are not carried by their one-line captions (Figure_B24_02_01, Figure_B24_02_02, Figure_B24_02_04, Figure_B24_02_07, and Figure_24_02_05); the over-600-character source alts for Figure_B24_02_01, Figure_B24_02_02, Figure_B24_02_04, and Figure_B24_02_07 condensed to short descriptions with their step-by-step walk-throughs moved into a longdesc, and the two Visual-Connection figures' (Figure_B24_02_04, Figure_B24_02_07) short alts written to describe structure without stating which multiple-choice option is correct; Figure_24_02_03abf's source alt description of "green mold" replaced with a plain description of the grayish-white fuzz actually visible in the image, matching the source caption's own "white fuzz"; the Fairy Ring caption's stray trailing "]" (a source typesetting artifact) dropped; bare in-text figure cross-references rendered as "(pictured below)" / "(shown below)" / "(illustrated below)" since Hugo does not number figures; the two feature boxes wrapping Visual Connection questions rendered as their figure followed by a multiple choice, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four term-recall items (Ascomycota, Zygomycota, zygospore, basidium) added, their prompts drawn from the glossary and the phylum subsections' own sentences; one summary-derived select-the-term multiple choice (zoospores, from the chytrid sentence) added under the second objective, since its two Critical Thinking self-checks alone leave that group under this book's per-group floor. The mycorrhiza review question's stem was reworded to this section's own sentence about the Glomeromycota ("all of which are involved in close associations with the roots of trees"), because the source stem was also true of the Ascomycota and Basidiomycota distractors by the Ecology of Fungi section; options and key unchanged (erratum 418).</small>

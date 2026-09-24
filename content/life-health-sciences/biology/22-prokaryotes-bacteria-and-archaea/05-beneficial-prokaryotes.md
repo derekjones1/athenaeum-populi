@@ -59,7 +59,7 @@ Scientists are also discovering that the absence of certain key microbes from ou
 According to the United Nations Convention on Biological Diversity, **biotechnology** is "any technological application that uses biological systems, living organisms, or derivatives thereof, to make or modify products or processes for specific use." ([United Nations Convention on Biological Diversity: Article 2: Use of Terms.](https://openstax.org/l/UN_convention)) The concept of "specific use" involves some sort of commercial application. Genetic engineering, artificial selection, antibiotic production, and cell culture are current topics of study in biotechnology and will be described in later chapters. However, humans were using prokaryotes before the term biotechnology was even coined. Some of the products of this early biotechnology as familiar as cheese and yogurt employ bacteria, while other microbes, such as yeast, a fungus (below), are used to produce bread, wine, and beer.
 
 {{< mediafigure src="biology/Figure_B22_05_02abcd" kind="photo" alt="A four-panel photo collage: (a) a wedge of pale, rind-crusted cheese photographed against a black background; (b) fresh yogurt draped in cheesecloth inside a metal strainer; (c) a glass of dark stout beer beside a slice of buttered bread on a plate; (d) a glass of amber wine lit from behind by sunlight on a wooden table." >}}
-Some foods produced by microorganisms. Some of the products derived from the use of prokaryotes in early biotechnology include (a) cheese, (b) yogurt, (c) beer and bread, and (d) wine. (credit bread: modification of work by F. Rodrigo/Wikimedia Commons; credit wine: modification of work by Jon Sullivan; credit beer and bread: modification of work by Kris Miller; credit yogurt: modification of work by Jon Sullivan)
+Some foods produced by microorganisms. Some of the products derived from the use of prokaryotes in early biotechnology include (a) cheese, (b) yogurt, (c) beer and bread, and (d) wine. *(Source note: beer, bread, and wine are made with yeasts, which are fungi, not prokaryotes, as the next paragraph says.)* (credit bread: modification of work by F. Rodrigo/Wikimedia Commons; credit wine: modification of work by Jon Sullivan; credit beer and bread: modification of work by Kris Miller; credit yogurt: modification of work by Jon Sullivan)
 {{< /mediafigure >}}
 
 Cheese production began around 4,000 to 7,000 years ago when humans began to breed animals and process their milk. Fermentation in this case preserves nutrients: Milk will spoil relatively quickly, but when processed as cheese, it is more stable. As for beer, the oldest records of brewing are about 6,000 years old and show that beer was an integral part of the Sumerian culture. Evidence indicates that the Sumerians discovered fermentation by chance. Wine has been produced for about 4,500 years, and evidence suggests that cultured milk products, like yogurt, have existed for at least 4,000 years.
@@ -98,7 +98,7 @@ Microbial bioremediation is the use of microbial metabolism to remove pollutants
 {{< multiplechoice
   question="Which of these occurs through symbiotic nitrogen fixation?"
   answer="All of the above occur."
-  hint="Check each option against the paragraph that introduces symbiotic nitrogen fixation as a natural plant fertilizer."
+  hint="Re-read the second-to-last paragraph of the section's first subsection."
 >}}
 The plant benefits from using an endless source of nitrogen.
 The soil benefits from being naturally fertilized.
@@ -110,19 +110,19 @@ All of the above occur.
   question="The conversion of atmospheric nitrogen into ammonia, carried out exclusively by prokaryotes, is called ________."
   answer="biological nitrogen fixation"
   accept="BNF"
-  hint="The section calls this process the most important biological process on Earth after photosynthesis; its three-word name says who carries it out and what happens to the nitrogen."
+  hint="Re-read the second paragraph of the section's first subsection."
 >}}
 
 {{< textin
   question="Soil bacteria called rhizobia interact symbiotically with legume roots to form specialized structures, called ________, where nitrogen fixation occurs."
   answer="nodule"
   accept="root nodule"
-  hint="These structures give the soybean's roots their bumpy appearance in the photograph above."
+  hint="Re-read the paragraph on cyanobacteria and soil bacteria in the section's first subsection."
 >}}
 
 ### Describe the beneficial effects of bacteria that colonize our skin and digestive tracts
 
-{{< selfcheck question="Your friend believes that prokaryotes are always detrimental and pathogenic. How would you explain to them that they are wrong?" hint="Think beyond disease — about decomposition, nutrient cycling, and the bacteria that live on and in us without making us sick." >}}
+{{< selfcheck question="Your friend believes that prokaryotes are always detrimental and pathogenic. How would you explain to them that they are wrong?" hint="Re-read the section's opening paragraph and the Everyday Connection box." >}}
 Remind them of the important roles prokaryotes play in decomposition and freeing up nutrients in biogeochemical cycles; remind them of the many prokaryotes that are not human pathogens and that fill very specialized niches. Furthermore, our normal bacterial symbionts are crucial for our digestion and in protecting us from pathogens.
 ===CHECKS===
 the important roles prokaryotes play in decomposition and freeing up nutrients in biogeochemical cycles
@@ -130,7 +130,7 @@ many prokaryotes that are not human pathogens and that fill very specialized nic
 our normal bacterial symbionts are crucial for our digestion and in protecting us from pathogens
 {{< /selfcheck >}}
 
-{{< selfcheck question="Many people use antimicrobial soap to kill bacteria on their hands. However, overuse may actually increase the risk of infection. How could this occur?" hint="Think about what happens to the balance between harmless and harmful bacteria on the skin once soap has killed both indiscriminately." >}}
+{{< selfcheck question="Many people use antimicrobial soap to kill bacteria on their hands. However, overuse may actually increase the risk of infection. How could this occur?" hint="Re-read the second paragraph of the Everyday Connection box." >}}
 Soap indiscriminately kills bacteria on skin. This kills harmful bacteria, but can also eliminate "good" bacteria from the skin. When the non-pathogenic bacteria are eliminated, pathogenic bacteria can colonize the empty surface.
 ===CHECKS===
 soap indiscriminately kills bacteria on skin
@@ -141,7 +141,7 @@ when the non-pathogenic bacteria are eliminated, pathogenic bacteria can coloniz
 {{< textin
   question="According to the section summary, internally our microbes help us digest food, produce vital nutrients, protect us from pathogenic microbes, and help train our ________ to function properly."
   answer="immune systems"
-  hint="The last paragraph of the Everyday Connection box ties the absence of key gut microbes to problems with this system."
+  hint="Re-read the last paragraph of the Everyday Connection box."
 >}}
 
 ### Identify prokaryotes used during the processing of food
@@ -149,7 +149,7 @@ when the non-pathogenic bacteria are eliminated, pathogenic bacteria can coloniz
 {{< multiplechoice
   question="In addition to providing yogurt with its unique flavor and texture, lactic acid-producing bacteria also provide which additional benefit during food production?"
   answer="Lowering the pH to kill pathogenic bacteria"
-  hint="Think about what the acid these bacteria produce, named in the question, would do to other bacteria in the milk."
+  hint="Re-read the paragraph after the food-collage figure."
 >}}
 Providing xenobiotics
 Lowering the pH to kill pathogenic bacteria
@@ -160,13 +160,13 @@ Breaking down lactose for lactose-intolerant individuals
 {{< textin
   question="A technological application that uses living organisms, biological systems, or their derivatives to produce or modify other products is called ________."
   answer="biotechnology"
-  hint="Cheese, yogurt, bread, wine, and beer are all early examples of this practice, long before the word existed."
+  hint="Re-read the first paragraph of the section's second subsection."
 >}}
 
 {{< multiplechoice
-  question="According to the section, which of these early biotechnology products is made using bacteria rather than yeast?"
+  question="According to the section, which of these products is made using bacteria rather than yeast?"
   answer="cheese"
-  hint="Reread Early Biotechnology."
+  hint="Re-read the last sentence of the first paragraph of the section's second subsection."
 >}}
 bread
 wine
@@ -177,15 +177,15 @@ beer
 ### Describe the use of prokaryotes in bioremediation
 
 {{< textin
-  question="The use of microbial metabolism to remove pollutants from soil, water, or other environments is called ________."
-  answer="bioremediation"
-  hint="Oil-spill cleanup and the removal of toxic selenium and mercury compounds are both examples of this practice."
+  question="Some species of hydrocarbon-degrading bacteria, such as Alcanivorax borkumensis, produce ________ that solubilize the oil (making it soluble in water)."
+  answer="surfactants"
+  hint="Re-read the paragraph just above the oil-spill figure in the section's last subsection."
 >}}
 
 {{< multiplechoice
   question="Synthetic compounds found in an organism but not normally produced or expected to be present in that organism are called _____."
   answer="xenobiotics"
-  hint="The section does not use this term; rule out the options it uses for other things, such as a removal method or a kind of agricultural chemical."
+  hint="Re-read the first paragraph of the section's last subsection."
 >}}
 pesticides
 bioremediators
@@ -206,4 +206,4 @@ All of the above
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 22.5: Beneficial Prokaryotes](https://openstax.org/books/biology-2e/pages/22-5-beneficial-prokaryotes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the root-nodule photo's alt rewritten from the source's generic "thin and yellow" description to name the visible roots and nodules against their dark background; the food-collage alt rewritten from the source's bare "cheese, yogurt, wine, and beer and bread" to say what each of the four lettered panels shows; the oil-spill photo's alt rewritten from the source's "Part a: … Part b: …" phrasing to describe both panels in reading order; the Clostridium difficile micrograph's alt expanded to note its printed 10 µm scale bar; the Everyday Connection note rendered as a callout with its bold name and title; the biotechnology footnote's United Nations citation kept as a parenthetical link after the sentence it supports; the nitrogen-fixation equation set as a Unicode-text paragraph rather than KaTeX, since it is a chemical equation, not mathematics; the selenium and mercury ion charges (SeO₄²⁻, SeO₃²⁻, Hg²⁺, Hg⁰) set in number-then-sign order rather than the source's sign-first superscripts; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block, each under the objective it tests, so the lactic-acid Review Question, last in the source, comes before the xenobiotics and bioremediation questions; four key-term recall items (biological nitrogen fixation, nodule, biotechnology, bioremediation) added from the glossary; a summary-derived cloze recall item ("immune systems") added to give its objective group an auto-graded item; one locally written multiple-choice item (which early biotechnology products are bacteria- versus yeast-made, built strictly from the section's own sentence) added to the food-processing objective group, keyed at its third option (cheese, since the source's own lactic-acid question above it names yogurt as a bacterial product); and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 22.5: Beneficial Prokaryotes](https://openstax.org/books/biology-2e/pages/22-5-beneficial-prokaryotes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the root-nodule photo's alt rewritten from the source's generic "thin and yellow" description to name the visible roots and nodules against their dark background; the food-collage alt rewritten from the source's bare "cheese, yogurt, wine, and beer and bread" to say what each of the four lettered panels shows; the oil-spill photo's alt rewritten from the source's "Part a: … Part b: …" phrasing to describe both panels in reading order; the Clostridium difficile micrograph's alt expanded to note its printed 10 µm scale bar; a source note added to the food-collage caption, which counts beer, bread, and wine among products of prokaryotes although the section itself credits yeasts with them; the Everyday Connection note rendered as a callout with its bold name and title; the biotechnology footnote's United Nations citation kept as a parenthetical link after the sentence it supports; the nitrogen-fixation equation set as a Unicode-text paragraph rather than KaTeX, since it is a chemical equation, not mathematics; the selenium and mercury ion charges (SeO₄²⁻, SeO₃²⁻, Hg²⁺, Hg⁰) set in number-then-sign order rather than the source's sign-first superscripts; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block, each under the objective it tests, so the lactic-acid Review Question, last in the source, comes before the xenobiotics and bioremediation questions; three key-term recall items (biological nitrogen fixation, nodule, biotechnology) added from the glossary; a cloze recall item ("surfactants") added from the section's own sentence on *Alcanivorax borkumensis*, its "Some species" given the paragraph's "of hydrocarbon-degrading bacteria" as its referent; a summary-derived cloze recall item ("immune systems") added to give its objective group an auto-graded item; one locally written multiple-choice item (which of four early-biotechnology products is made with bacteria rather than yeast, built strictly from the section's own sentence) added to the food-processing objective group, keyed at its third option (cheese, since the source's own lactic-acid question above it names yogurt as a bacterial product); and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

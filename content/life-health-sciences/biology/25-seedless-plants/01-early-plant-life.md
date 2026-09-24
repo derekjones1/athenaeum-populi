@@ -118,7 +118,7 @@ Streptophytes. This table shows the major divisions of green plants.
 {{< multiplechoice
   question="Which of the following statements about plant divisions is false?"
   answer="All vascular plants produce seeds."
-  hint="Check the diagram above: within the vascular branch, does every path lead to the Seed Plants group?"
+  hint="Check each statement against the Streptophytes diagram above."
 >}}
 Lycophytes and monilophytes are seedless vascular plants.
 All vascular plants produce seeds.
@@ -156,7 +156,7 @@ Land plants acquired traits that made it possible to colonize land and survive o
 
 ### Discuss the challenges to plant life on land
 
-{{< selfcheck question="Why did land plants lose some of the accessory pigments present in brown and red algae?" hint="Think about what water does to sunlight before it reaches an aquatic alga, and what land removes." >}}
+{{< selfcheck question="Why did land plants lose some of the accessory pigments present in brown and red algae?" hint="Reread the second paragraph of Plant Adaptations to Life on Land." >}}
 Sunlight is not filtered by water or other algae on land; therefore, there is no need to collect light at additional wavelengths made available by other pigment coloration.
 ===CHECKS===
 sunlight is not filtered by water or other algae on land
@@ -164,7 +164,7 @@ there is no need to collect light at additional wavelengths
 made available by other pigment coloration
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe at least two challenges that cactuses had to overcome that cattails did not." hint="Compare a desert habitat with a swamp habitat, feature by feature." >}}
+{{< selfcheck question="Describe at least two challenges that cactuses had to overcome that cattails did not." hint="Reread the first and third paragraphs of Plant Adaptations to Life on Land." >}}
 Possible challenges include differences in climate, reproduction, and temperature. Deserts are more arid than swamps, so there is less humidity in the air and less water in the soil. Cactuses are often not densely populated, whereas cattails occur in groups. During the day, deserts are usually hot, which increases the risk of desiccation, and the desert climate also has broader temperature ranges (extremes).
 ===CHECKS===
 deserts are more arid than swamps
@@ -176,11 +176,37 @@ deserts are usually hot during the day, which increases the risk of desiccation,
 {{< textin
   question="Land plants acquired traits that made it possible to colonize land and survive ________."
   answer="out of the water"
-  accept="out of water"
+  accept="out of water|outside water|outside of water"
   hint="Reread the first sentence of this section's summary."
 >}}
 
 ### Describe the adaptations that allowed plants to colonize the land
+
+{{< textin
+  question="Because, in both seedless and seed plants, the female gametophyte provides protection and nutrients to the offspring as it develops into the new sporophyte, land plants are also known as ________."
+  answer="embryophytes"
+  hint="Reread the last sentences of the Alternation of Generations subsection."
+>}}
+
+{{< textin
+  question="In seedless plants, the male gametangium that releases sperm is called the ________."
+  answer="antheridium"
+  accept="antheridia"
+  hint="Reread the Gametangia in Seedless Plants subsection."
+>}}
+
+{{< textin
+  question="In seedless plants, the female gametangium in which the embryo develops is called the ________."
+  answer="archegonium"
+  accept="archegonia"
+  hint="Reread the Gametangia in Seedless Plants subsection."
+>}}
+
+{{< textin
+  question="The tough, chemically resistant polymer in the walls of spores and pollen grains is called ________."
+  answer="sporopollenin"
+  hint="Reread the last paragraph of the Sporangia in Seedless Plants subsection."
+>}}
 
 {{< multiplechoice
   question="Alternation of generations means that plants produce:"
@@ -196,7 +222,7 @@ both haploid and diploid multicellular organisms
 {{< multiplechoice
   question="Which of the following traits of land plants allows them to grow in height?"
   answer="tracheids"
-  hint="Reread the Additional Land Plant Adaptations paragraph on growing taller and the tissue that made it possible."
+  hint="Reread the first paragraph of Additional Land Plant Adaptations."
 >}}
 alternation of generations
 waxy cuticle
@@ -214,32 +240,6 @@ Gametes are created through meiosis.
 Diploid spores undergo independent assortment during mitosis.
 The zygote undergoes meiosis to generate a haploid sporophyte.
 {{< /multiplechoice >}}
-
-{{< textin
-  question="In seedless plants, the male gametangium that releases sperm is called the ________."
-  answer="antheridium"
-  accept="antheridia"
-  hint="Its counterpart in the same plant, the female gametangium, is a different structure entirely."
->}}
-
-{{< textin
-  question="In seedless plants, the female gametangium in which the embryo develops is called the ________."
-  answer="archegonium"
-  accept="archegonia"
-  hint="Sperm released by the male gametangium swim through moisture to reach this structure."
->}}
-
-{{< textin
-  question="The tough, chemically resistant polymer that forms the walls of spores and pollen grains is called ________."
-  answer="sporopollenin"
-  hint="This substance's resistance to degradation is why ancient pollen fossils are so well preserved."
->}}
-
-{{< textin
-  question="Because, in both seedless and seed plants, the female gametophyte provides protection and nutrients to the offspring as it develops into the new sporophyte, land plants are also known as ________."
-  answer="embryophytes"
-  hint="Reread the last sentences of the Alternation of Generations subsection."
->}}
 
 ### Describe the timeline of plant evolution and the impact of land plants on other living things
 
@@ -261,7 +261,7 @@ extinct species no longer live
 extant species are still living
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe a minimum of two ways that plants changed the land environment to support the emergence of land animals." hint="Think about what animals need to survive on land besides oxygen to breathe." >}}
+{{< selfcheck question="Describe a minimum of two ways that plants changed the land environment to support the emergence of land animals." hint="Reread the Evolution of Land Plants paragraph that follows the Rhynie chert figure, and the second paragraph of Plant Adaptations to Life on Land." >}}
 Possible examples include providing a food source, increasing the oxygen concentration in the atmosphere, providing shelter or shade from the sun, and providing a source of water.
 ===CHECKS===
 providing a food source
@@ -271,12 +271,12 @@ providing a source of water
 {{< /selfcheck >}}
 
 {{< textin
-  question="The group of green algae considered the closest living relative of land plants is called a ________."
+  question="An alga from the group considered the closest relative of land plants is called a ________."
   answer="charophyte"
   accept="Charophyta"
-  hint="This section's opening paragraph names this group alongside the Chlorophytes as sharing chlorophyll a and b with land plants."
+  hint="Reread the Evolution Connection box near the start of this section."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 25.1: Early Plant Life](https://openstax.org/books/biology-2e/pages/25-1-early-plant-life) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the manifest's file-extension guess of "photo" was corrected to `kind="diagram"` for the alternation-of-generations life cycle and the apical-meristem illustration after inspection (both are line drawings, not photographs), while the moss photo and the Rhynie-chert/Cooksonia composite kept their photo and diagram guesses respectively; `longdesc` added to the alternation-of-generations diagram, the apical-meristem diagram, the two-panel Rhynie chert figure, and the Streptophytes classification diagram, and a shorter alt written for the classification diagram since the source alt exceeded the 600-character limit; the five inline print cross-references to numbered figures ("Figure 25.2," etc.) handled since figures are not numbered here — one became the phrase "the diagram below" and the other four, bare parentheticals, were dropped from their sentences; the `evolution`, `interactive`, and `career` notes rendered as Evolution Connection, Link to Learning, and Career Connection callouts; the Visual Connection question kept beside its figure in the body as a multiple choice; the four Review Questions and four Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the two Critical Thinking solutions lightly reformatted from a labeled/bulleted list into complete sentences; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five glossary-recall text-in items (antheridium, archegonium, sporopollenin, embryophyte, charophyte) and one cloze text-in built from the Section Summary added to round out the Practice groups; and three source defects corrected and reported: the body's "Charaphyta" (an internal misspelling of the phylum name, contradicted by this section's own repeated "Charophyte" spelling) corrected to "Charophyta"; the glossary's "haplodiplodontic" corrected to "haplodiplontic," matching the term as it is defined and bolded in the body; and the glossary's embryophyte definition, which said the embryo "is protected and nourished by the sporophyte," corrected to "by the gametophyte," matching the body's explicit statement that "the female gametophyte provides protection and nutrients to the embryo as it develops into the new sporophyte." One key term is corrected with a visible Source note: charophytes are one of the two groups of green algae, as the section itself says, not another name for green algae (erratum 419).</small>
+<small>This section is adapted from [Biology 2e, Section 25.1: Early Plant Life](https://openstax.org/books/biology-2e/pages/25-1-early-plant-life) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the manifest's file-extension guess of "photo" was corrected to `kind="diagram"` for the alternation-of-generations life cycle and the apical-meristem illustration after inspection (both are line drawings, not photographs), while the moss photo and the Rhynie-chert/Cooksonia composite kept their photo and diagram guesses respectively; `longdesc` added to the alternation-of-generations diagram, the apical-meristem diagram, the two-panel Rhynie chert figure, and the Streptophytes classification diagram, and a shorter alt written for the classification diagram since the source alt exceeded the 600-character limit; the five inline print cross-references to numbered figures ("Figure 25.2," etc.) handled since figures are not numbered here — one became the phrase "the diagram below" and the other four, bare parentheticals, were dropped from their sentences; the `evolution`, `interactive`, and `career` notes rendered as Evolution Connection, Link to Learning, and Career Connection callouts; the Visual Connection question kept beside its figure in the body as a multiple choice; the four Review Questions and four Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the two Critical Thinking solutions lightly reformatted from a labeled/bulleted list into complete sentences; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five glossary-recall text-in items (antheridium, archegonium, sporopollenin, embryophyte, charophyte) and one cloze text-in built from the Section Summary added to round out the Practice groups, with the four recall items of the adaptations group placed before its Review Questions; the Review Questions and Critical Thinking Questions placed under the objectives they test, so the first Review Question (the green-algae ancestry question) follows the other three, and the third Critical Thinking Question (cactuses and cattails) comes before the second (extant and extinct); and three source defects corrected: the body's "Charaphyta" (an internal misspelling of the phylum name, contradicted by this section's own repeated "Charophyte" spelling) corrected to "Charophyta"; the glossary's "haplodiplodontic" corrected to "haplodiplontic," matching the term as it is defined and bolded in the body; and the glossary's embryophyte definition, which said the embryo "is protected and nourished by the sporophyte," corrected to "by the gametophyte," matching the body's explicit statement that "the female gametophyte provides protection and nutrients to the embryo as it develops into the new sporophyte." One key term is corrected with a visible Source note: charophytes are one of the two groups of green algae, as the section itself says, not another name for green algae.</small>

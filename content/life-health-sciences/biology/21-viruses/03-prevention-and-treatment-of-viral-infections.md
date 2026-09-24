@@ -110,7 +110,7 @@ Influenza A virus
 {{< multiplechoice
   question="According to this section, which viral disease is transmitted by bats and great apes and can cause death in 70 to 90 percent of infected humans within two weeks?"
   answer="Ebola"
-  hint="This section names the same two animal groups as the disease's carriers and gives its very high short-term fatality rate."
+  hint="The paragraph on treating an active infection with a vaccine, under Vaccines and Antiviral Drugs for Treatment."
 >}}
 Rabies
 HIV
@@ -142,7 +142,7 @@ kill viruses
 stimulate an immune response
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is immunization after being bitten by a rabid animal so effective and why aren't people vaccinated for rabies like dogs and cats are?" hint="Think about how long it takes the virus to reach the central nervous system, and how likely a routine bite is to be from an infected animal." >}}
+{{< selfcheck question="Why is immunization after being bitten by a rabid animal so effective and why aren't people vaccinated for rabies like dogs and cats are?" hint="Start from the rabies passage that opens Vaccines and Antiviral Drugs for Treatment." >}}
 The rabies vaccine works after a bite because it takes two weeks or longer for the virus to travel from the site of the bite to the central nervous system, where the most severe symptoms of the disease occur. Adults are not routinely vaccinated for rabies for two reasons: first, the routine vaccination of domestic animals makes it unlikely that humans will contract rabies from an animal bite; second, if someone is bitten by a wild animal or a domestic animal whose immunization cannot be confirmed, there is still time to give the vaccine and avoid the often fatal consequences of the disease.
 ===CHECKS===
 it takes two weeks or longer for the virus to travel from the bite to the central nervous system
@@ -150,7 +150,7 @@ routine vaccination of domestic animals makes it unlikely humans will contract r
 if bitten by an animal whose immunization cannot be confirmed, there is still time to give the vaccine
 {{< /selfcheck >}}
 
-{{< selfcheck question="The vaccine Gardasil that targets human papilloma virus (HPV), the etiological agent of genital warts, was developed after the anti-HPV medication podofilox. Why would doctors still want a vaccine created after anti-viral medications were available?" hint="Consider the difference between treating an infection that has already taken hold and preventing one that never happens, and how often HPV causes visible symptoms." >}}
+{{< selfcheck question="The vaccine Gardasil that targets human papilloma virus (HPV), the etiological agent of genital warts, was developed after the anti-HPV medication podofilox. Why would doctors still want a vaccine created after anti-viral medications were available?" hint="Compare the Vaccines for Prevention subsection with the antiviral-drug paragraphs of Vaccines and Antiviral Drugs for Treatment." >}}
 Anti-viral medications treat HPV after the skin of the genitals has been infected. Conversely, Gardasil stimulates the immune system to prevent infection of the tissue, even if a person is exposed to HPV. Since HPV is often asymptomatic, particularly in men, the vaccine also controls the spread of disease, because patients will not seek treatment for a disease if they do not realize they are infected.
 ===CHECKS===
 anti-viral medications treat HPV after the skin of the genitals has been infected
@@ -163,41 +163,41 @@ the vaccine also controls the spread of disease
   question="The deliberate weakening of a virus during vaccine development is called ________."
   answer="attenuation"
   accept="attenuating"
-  hint="This is the noun form of the verb the section uses for growing a virus under conditions different from the host to weaken it."
+  hint="The Vaccines for Prevention subsection, in its paragraph on how live vaccines are made."
 >}}
 
 {{< textin
   question="A live virus vaccine reverting to its disease-causing form is known as a ________."
   answer="back mutation"
-  hint="This is what let a 2007 Nigerian polio vaccine cause an epidemic."
+  hint="The Vaccines for Prevention subsection, in its paragraph on the danger of live vaccines."
 >}}
 
 {{< textin
   question="Treating an inherited disease by using viruses to carry replacement DNA into cells is called ________."
   answer="gene therapy"
   accept="gene therapies"
-  hint="SCID patients treated this way receive bone marrow cells modified to produce the missing ADA enzyme."
+  hint="The first paragraph of the Applied Virology box."
 >}}
 
 {{< textin
   question="A laboratory-engineered agent that specifically infects and kills cancer cells is called a(n) ________."
   answer="oncolytic virus"
-  hint="The modified adenovirus H101, used in China against head and neck cancers, is an example."
+  hint="The second paragraph of the Applied Virology box."
 >}}
 
 {{< textin
-  question="A weakened preparation of virus components, viruses, or other agents that produces an immune response is called a ________."
-  answer="vaccine"
-  hint="It may be made from live, killed, or subunit forms of a pathogen."
+  question="Anti-HIV drugs such as AZT, which block the conversion of the viral RNA genome into double-stranded DNA, are called ________."
+  answer="reverse transcriptase inhibitors"
+  hint="The paragraph on David Ho and HIV's rapid mutation, under Vaccines and Antiviral Drugs for Treatment."
 >}}
 
 {{< textin
   question="Treating a bacterial infection with viruses that target one specific type of bacterium is called ________."
   answer="phage therapy"
   accept="phage therapies|bacteriophage therapy|bacteriophage therapies"
-  hint="This is in use in the Republic of Georgia, and it was confirmed safe when the FDA approved spraying it on meats to destroy Listeria."
+  hint="The third paragraph of the Applied Virology box."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 21.3: Prevention and Treatment of Viral Infections](https://openstax.org/books/biology-2e/pages/21-3-prevention-and-treatment-of-viral-infections) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_21_03_01-70a3 and Figure_21_03_04-16dd re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are labeled illustrations, not photographs), and Figure_21_03_03ab likewise re-kinded to "diagram"; the source alt text for Figure_21_03_01-70a3 and Figure_21_03_04-16dd, each well over 600 characters, shortened to a concise alt with the full labeled walk-through moved into a `longdesc`; the source alt for Figure_21_03_03ab rewritten from the image (the source alt does not name the surface proteins the key labels) and a `longdesc` added, since panel (b)'s blocked-release step is not carried by its caption; the two feature boxes (the interactive note and the everyday note) rendered as, respectively, a Link to Learning callout with descriptive link text and an Everyday Connection callout keeping its title; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the Group V diagnosis question, third in the source, comes first; one locally written multiple choice (Ebola transmission and fatality rate) added under the first objective, built strictly from the section's own sentence, since only one source Review Question maps to that objective; one summary-derived text-recall item (diseases) added under the first objective from the section summary's opening sentence; six key-term recall items (vaccine, attenuation, back mutation, gene therapy, oncolytic virus, phage therapy) added from the glossary under the second objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the rabies self-check's model answer corrected from "a week" to "two weeks or longer" for the time a rabies infection takes to reach the central nervous system, matching what the section's own body text states, rather than the shorter figure printed in the source solution (reported as a source defect); in the same Review Question set, the "NOT used to treat active viral disease" item's distractor "Phage therapy" replaced with "Acyclovir," because the section itself presents phage therapy as a treatment for bacterial, not viral, infection — leaving the source item with two supportable answers — while acyclovir is named in the section as a drug against active viral disease (reported as a source defect); and the "back mutation" key term's "it disease-causing phenotype" corrected to "its" (reported as a source defect). One name is corrected with a visible Source note: George Hitchings, Elion's Nobel co-laureate, where the source prints "Hitchens" (erratum 413).</small>
+<small>This section is adapted from [Biology 2e, Section 21.3: Prevention and Treatment of Viral Infections](https://openstax.org/books/biology-2e/pages/21-3-prevention-and-treatment-of-viral-infections) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_21_03_01-70a3 and Figure_21_03_04-16dd re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are labeled illustrations, not photographs), and Figure_21_03_03ab likewise re-kinded to "diagram"; the source alt text for Figure_21_03_01-70a3 and Figure_21_03_04-16dd, each well over 600 characters, shortened to a concise alt with the full labeled walk-through moved into a `longdesc`; the source alt for Figure_21_03_03ab rewritten from the image (the source alt does not name the surface proteins the key labels) and a `longdesc` added, since panel (b)'s blocked-release step is not carried by its caption; the two feature boxes (the interactive note and the everyday note) rendered as, respectively, a Link to Learning callout with descriptive link text and an Everyday Connection callout keeping its title; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the Group V diagnosis question, third in the source, comes first; one locally written multiple choice (Ebola transmission and fatality rate) added under the first objective, built strictly from the section's own sentence, since only one source Review Question maps to that objective; one summary-derived text-recall item (diseases) added under the first objective from the section summary's opening sentence; five key-term recall items (attenuation, back mutation, gene therapy, oncolytic virus, phage therapy) added from the glossary under the second objective, and one text-recall item (reverse transcriptase inhibitors) built from the section's sentence on anti-HIV drugs; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the rabies self-check's model answer corrected from "a week" to "two weeks or longer" for the time a rabies infection takes to reach the central nervous system, matching what the section's own body text states, rather than the shorter figure printed in the source solution (reported as a source defect); in the same Review Question set, the "NOT used to treat active viral disease" item's distractor "Phage therapy" replaced with "Acyclovir," because the section itself presents phage therapy as a treatment for bacterial, not viral, infection — leaving the source item with two supportable answers — while acyclovir is named in the section as a drug against active viral disease (reported as a source defect); and the "back mutation" key term's "it disease-causing phenotype" corrected to "its" (reported as a source defect). One name is corrected with a visible Source note: George Hitchings, Elion's Nobel co-laureate, where the source prints "Hitchens" (erratum 413).</small>

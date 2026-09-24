@@ -95,7 +95,7 @@ Protists function at several levels of the ecological food web: as primary produ
 {{< multiplechoice
   question="An example of carbon fixation is _____________."
   answer="photosynthesis"
-  hint="Ask which listed process builds organic molecules from carbon dioxide."
+  hint="The Primary Producers/Food Sources subsection answers this."
 >}}
 photosynthesis
 decomposition
@@ -114,7 +114,7 @@ They enter symbiotic relationships with animals.
 They recycle nutrients back into the carbon and nitrogen cycles.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe how increasing stress to the ocean would affect a food chain containing zooxanthellae, corals, parrotfish, and sharks." hint="Trace the chain from coral bleaching through to the top predator, one link at a time." >}}
+{{< selfcheck question="Describe how increasing stress to the ocean would affect a food chain containing zooxanthellae, corals, parrotfish, and sharks." hint="The zooxanthellae paragraph that opens Primary Producers/Food Sources answers the first links." >}}
 Ocean stresses, such as rising temperatures or increasing levels of pollution, cause corals to expel their zooxanthellae symbionts. This leads to coral bleaching, and death if no new zooxanthellae colonize the corals. The dying corals will decrease the food source available to parrotfish, so the parrotfish population will decline. With fewer prey animals available, the shark population in the area will also decline.
 ===CHECKS===
 ocean stresses cause corals to expel their zooxanthellae symbionts
@@ -143,7 +143,7 @@ Plasmodium falciparum
 Phytophthora infestans
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does killing Anopheles mosquitoes affect the Plasmodium protists?" hint="Think about where in its life cycle Plasmodium depends on the mosquito to reach a new human host." >}}
+{{< selfcheck question="How does killing Anopheles mosquitoes affect the Plasmodium protists?" hint="The second paragraph of the first subsection under Human Pathogens answers this." >}}
 *Plasmodium* parasites infect humans and cause malaria. However, they must complete part of their life cycle within *Anopheles* mosquitoes, and they can only infect humans via the bite wound of a mosquito. If the mosquito population is decreased, then fewer *Plasmodium* would be able to develop and infect humans, thereby reducing the incidence of human infections with this parasite.
 ===CHECKS===
 Plasmodium parasites infect humans and cause malaria
@@ -152,7 +152,7 @@ can only infect humans via the bite wound of a mosquito
 fewer Plasmodium would develop and infect humans, reducing the incidence of infections
 {{< /selfcheck >}}
 
-{{< selfcheck question="Without treatment, why does African sleeping sickness invariably lead to death?" hint="Consider what property of the trypanosome's surface prevents the immune system from ever mounting a lasting defense." >}}
+{{< selfcheck question="Without treatment, why does African sleeping sickness invariably lead to death?" hint="The first paragraph of the second subsection under Human Pathogens answers this." >}}
 The trypanosomes that cause this disease are capable of expressing a glycoprotein coat with a different molecular structure with each generation. Because the immune system must respond to specific antigens to raise a meaningful defense, the changing nature of trypanosome antigens prevents the immune system from ever clearing this infection. Massive trypanosome infection eventually leads to host organ failure and death.
 ===CHECKS===
 trypanosomes express a glycoprotein coat with a different molecular structure with each generation
@@ -174,4 +174,4 @@ producers
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 23.4: Ecology of Protists](https://openstax.org/books/biology-2e/pages/23-4-ecology-of-protists) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (all six confirmed `kind="photo"` after inspection, matching the manifest's guess); inline print cross-references to numbered figures ("Figure 23.32", etc.) changed to descriptive phrases ("see the photo below") since figures are not numbered here; the two `interactive`-class notes rendered as Link to Learning callouts with descriptive link text naming each linked movie's subject; this module has no glossary, so its "Key terms" heading is omitted; the three Review Questions and three Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the Review Questions run in the order 1, 3, 2 and the Critical Thinking Questions in the order 3, 1, 2 of the source's numbering; one cloze text-recall item and one select-the-term multiple choice added from the section summary, in place of the usual glossary-derived recall items; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and the third Critical Thinking solution's "zoocanthellae" corrected to "zooxanthellae" — a misspelling inconsistent with the same sentence's own opening word and every other occurrence of the term in this section.</small>
+<small>This section is adapted from [Biology 2e, Section 23.4: Ecology of Protists](https://openstax.org/books/biology-2e/pages/23-4-ecology-of-protists) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (all six confirmed `kind="photo"` after inspection, matching the manifest's guess); inline print cross-references to numbered figures ("Figure 23.32", etc.) changed to descriptive phrases ("see the photo below") since figures are not numbered here; the two `interactive`-class notes rendered as Link to Learning callouts with descriptive link text naming each linked movie's subject; this module has no glossary, so its "Key terms" heading is omitted; the three Review Questions and three Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the Review Questions run in the order 1, 3, 2 and the Critical Thinking Questions in the order 3, 1, 2 of the source's numbering; one cloze text-recall item and one select-the-term multiple choice added from the section summary, in place of the usual glossary-derived recall items; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and the third Critical Thinking solution's "zoocanthellae" corrected to "zooxanthellae" — a misspelling inconsistent with the solution's own preceding sentence and every other occurrence of the term in this section.</small>

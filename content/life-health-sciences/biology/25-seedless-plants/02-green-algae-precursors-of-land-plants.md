@@ -55,10 +55,23 @@ Charophytes share more traits with land plants than do other algae, according to
 
 ### Describe the traits shared by green algae and land plants
 
+{{< textin
+  question="The land plants and the charophytes together form a monophyletic group called the ________."
+  answer="streptophytes"
+  accept="Streptophyta"
+  hint="Reread the last sentence of the paragraph on how the chlorophytes and the charophytes differ."
+>}}
+
+{{< textin
+  question="Both green algae and land plants store carbohydrates as ________."
+  answer="starch"
+  hint="Reread the first paragraph of this section."
+>}}
+
 {{< multiplechoice
   question="Which one of these characteristics is present in land plants and not in Charales?"
   answer="alternation of generations"
-  hint="Compare this list to the traits charophytes and land plants both use for cell division and intercellular transport."
+  hint="Reread the first paragraph of the Charophytes subsection, and this section's summary."
 >}}
 alternation of generations
 flagellated sperm
@@ -66,25 +79,12 @@ phragmoplasts
 plasmodesmata
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The monophyletic group that includes green algae and land plants is called the ________."
-  answer="streptophytes"
-  accept="Streptophyta"
-  hint="This lineage unites the charophyte algae with every land plant descended from them."
->}}
-
-{{< textin
-  question="Charophytes form sporopollenin and precursors of lignin, ________, and have flagellated sperm."
-  answer="phragmoplasts"
-  hint="Reread this section's summary, at its list of what charophytes form."
->}}
-
 ### Explain why charophytes are considered the closest algal relative to land plants
 
 {{< multiplechoice
   question="What characteristic of Charales would enable them to survive a dry spell?"
   answer="sporopollenin"
-  hint="Reread the Charophytes subsection's list of Charales traits that are significant for adaptation to land life."
+  hint="Reread the first paragraph of the Charophytes subsection."
 >}}
 sperm with flagella
 phragmoplasts
@@ -103,7 +103,7 @@ Charophytes do not exhibit growth throughout the entire plant body.
 Charophytes are multicellular organisms that lack vascular tissue.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="To an alga, what is the main advantage of producing drought-resistant structures?" hint="Think about what happens to a population that cannot wait out a drought." >}}
+{{< selfcheck question="To an alga, what is the main advantage of producing drought-resistant structures?" hint="Reread the last sentences of the paragraph on the two major groups of green algae." >}}
 It allows for survival through periodic droughts and colonization of environments where the supply of water fluctuates.
 ===CHECKS===
 allows for survival through periodic droughts
@@ -115,7 +115,7 @@ allows colonization of environments where the supply of water fluctuates
 {{< multiplechoice
   question="A scientist sequences the genome of *Chara*, red algae, and a tomato plant. What result would support the conclusion that Charophytes should be included in the *Plantae* kingdom?"
   answer="The *Chara* genome is more similar to the tomato plant genome than the red algae genome."
-  hint="A close evolutionary relationship shows up as more genetic similarity, not less."
+  hint="Reread the last paragraph of the Charophytes subsection, on DNA sequence analysis."
 >}}
 The *Chara* genome is more similar to the red algae than the tomato plant.
 All three genomes are distinctly different.
@@ -143,4 +143,4 @@ chlorophytes
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 25.2: Green Algae: Precursors of Land Plants](https://openstax.org/books/biology-2e/pages/25-2-green-algae-precursors-of-land-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the green-algae figure's alt describes the Chlamydomonas cells' two flagella, because the source alt's "attached to thin stalks" misreads the micrograph (erratum 842); figures re-encoded as WebP (both confirmed `kind="photo"` after inspection, matching the manifest's guess); the four-panel Figure 25.7 alt's "a oval" corrected to "an oval"; the inline print cross-references to numbered figures ("Figure 25.7", "Figure 25.8") changed to descriptive phrases ("see the photo below") since figures are not numbered here; the four Review Questions adapted into multiple choice and the one Critical Thinking Question into a self-check in the closing interactive Practice block; one key-term recall item added from the glossary, with `accept` extended to the module's own "Streptophyta" phylum name for the same group; rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three items built from the section summary (two cloze text-recall items and one select-the-term multiple choice) added to round out the Practice groups, since this section's glossary carries only one term; the select-the-term item offers "red algae" rather than "protists" as a distractor, since this section places the plants and green algae in a protist supergroup.</small>
+<small>This section is adapted from [Biology 2e, Section 25.2: Green Algae: Precursors of Land Plants](https://openstax.org/books/biology-2e/pages/25-2-green-algae-precursors-of-land-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the green-algae figure's alt describes the Chlamydomonas cells' two flagella, because the source alt's "attached to thin stalks" misreads the micrograph; figures re-encoded as WebP (both confirmed `kind="photo"` after inspection, matching the manifest's guess); the four-panel Figure 25.7 alt's "a oval" corrected to "an oval"; the inline print cross-references to numbered figures ("Figure 25.7", "Figure 25.8") changed to descriptive phrases ("see the photo below") since figures are not numbered here; the four Review Questions adapted into multiple choice and the one Critical Thinking Question into a self-check in the closing interactive Practice block; one key-term recall item (streptophytes) added from the glossary, its prompt built from the body's sentence naming the monophyletic group of land plants and charophytes, with `accept` extended to the module's own "Streptophyta" phylum name for the same group; rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; two items built from the section summary (a cloze text-recall item and a select-the-term multiple choice) and one cloze text-recall item built from the body's sentence on starch storage added to round out the Practice groups, since this section's glossary carries only one term, with the two recall items of the first group placed before its Review Question; the Review Questions placed under the objectives they test, so the second (alternation of generations) comes before the first (the dry spell), and the fourth (inclusion in Plantae) before the third (the genome comparison); the select-the-term item offers "red algae" rather than "protists" as a distractor, since this section places the plants and green algae in a protist supergroup.</small>
