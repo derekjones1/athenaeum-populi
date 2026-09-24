@@ -48,7 +48,7 @@ Another way a population's allele and genotype frequencies can change is **genet
 Genetic drift in a population can lead to eliminating an allele from a population by chance. In this example, rabbits with the brown coat color allele (*B*) are dominant over rabbits with the white coat color allele (*b*). In the first generation, the two alleles occur with equal frequency in the population, resulting in p and q values of .5. Only half of the individuals reproduce, resulting in a second generation with p and q values of .7 and .3, respectively. Only two individuals in the second generation reproduce, and by chance these individuals are homozygous dominant for brown coat color. As a result, in the third generation the recessive *b* allele is lost.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Do you think genetic drift would happen more quickly on an island or on the mainland?" hint="Think about how genetic drift's effect scales with the size of a population." >}}
+{{< selfcheck question="Do you think genetic drift would happen more quickly on an island or on the mainland?" hint="Read the paragraph that follows this question." >}}
 Genetic drift is likely to occur more rapidly on an island where smaller populations are expected to occur.
 ===CHECKS===
 genetic drift is likely to occur more rapidly on an island
@@ -146,7 +146,7 @@ Both genetic and environmental factors can cause phenotypic variation in a popul
 {{< multiplechoice
   question="Which of the following evolutionary forces can introduce new genetic variation into a population?"
   answer="mutation and gene flow"
-  hint="Only two of these four forces bring alleles into a population that were not already there."
+  hint="Reread the subsections that follow the Scientific Method Connection box."
 >}}
 natural selection and genetic drift
 mutation and gene flow
@@ -165,7 +165,7 @@ the number of individuals in the population
 gradual geographic variation across an ecological gradient
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain what a cline is and provide examples." hint="Reread the Environmental Variation paragraph on geographic separation between populations; it names two kinds." >}}
+{{< selfcheck question="Explain what a cline is and provide examples." hint="Reread the Environmental Variation paragraph on geographic separation between populations." >}}
 A cline is a type of geographic variation that is seen in populations of a given species that vary gradually across an ecological gradient. For example, warm-blooded animals tend to have larger bodies in the cooler climates closer to the earth's poles, allowing them to better conserve heat. This is considered a latitudinal cline. Flowering plants tend to bloom at different times depending on where they are along the slope of a mountain. This is known as an altitudinal cline.
 ===CHECKS===
 a cline is geographic variation that varies gradually across an ecological gradient
@@ -189,10 +189,10 @@ Inbreeding causes normally silent alleles to be expressed.
 {{< textin
   question="The fraction of phenotype variation in a population that can be attributed to genetic differences among individuals is called ________."
   answer="heritability"
-  hint="Only the fraction of variation with this genetic basis is available for natural selection to act on."
+  hint="Reread the Genetic variability paragraph that follows the Link to Learning box."
 >}}
 
-{{< selfcheck question="Describe natural selection and give an example of natural selection at work in a population." hint="Think about which individuals leave more descendants, and why that shifts a heritable trait's frequency over generations." >}}
+{{< selfcheck question="Describe natural selection and give an example of natural selection at work in a population." hint="Reread the paragraph on the silverback gorilla." >}}
 The theory of natural selection stems from the observation that some individuals in a population survive longer and have more offspring than others: thus, more of their genes are passed to the next generation. For example, a big, powerful male gorilla is much more likely than a smaller, weaker one to become the population's silverback: the pack's leader who mates far more than the other males of the group. Therefore, the pack leader will father more offspring who share half of his genes and are likely to grow bigger and stronger like their father. Over time, the genes for bigger size will increase in frequency in the population, and the average body size, as a result, will grow larger on average.
 ===CHECKS===
 some individuals survive longer and have more offspring than others
@@ -207,17 +207,16 @@ the genes for bigger size will increase in frequency in the population
 {{< textin
   question="The change in a population's allele and genotype frequencies that is simply the effect of chance, rather than any survival or reproductive advantage, is called ________."
   answer="genetic drift"
-  hint="Small populations are especially susceptible to this force."
+  hint="Reread the paragraph after the silverback gorilla example."
 >}}
 
 {{< textin
-  question="A dramatic natural event, such as an earthquake or hurricane, that kills a population at random and leaves only a small, unrepresentative fraction of the gene pool behind produces the ________."
-  answer="bottleneck effect"
-  accept="bottleneck"
-  hint="Reread the Genetic Drift paragraph just before the marble illustration."
+  question="When some portion of a population leaves to start a new population in a new location, or a physical barrier divides a population, those individuals are an unlikely representation of the entire population, which results in the ________."
+  answer="founder effect"
+  hint="Reread the paragraph just after the marble illustration."
 >}}
 
-{{< selfcheck question="Describe a situation in which a population would undergo the bottleneck effect and explain what impact that would have on the population's gene pool." hint="Pick a natural disaster and think about which individuals survive by chance rather than by fitness." >}}
+{{< selfcheck question="Describe a situation in which a population would undergo the bottleneck effect and explain what impact that would have on the population's gene pool." hint="Reread the paragraph just before the marble illustration, and the Scientific Method Connection box." >}}
 A hurricane kills a large percentage of a population of sand-dwelling crustaceans—only a few individuals survive. The alleles carried by those surviving individuals would represent the entire population's gene pool. If those surviving individuals are not representative of the original population, the post-hurricane gene pool will differ from the original gene pool.
 ===CHECKS===
 a hurricane kills a large percentage of a population of sand-dwelling crustaceans
@@ -230,7 +229,7 @@ if the survivors are not representative of the original population, the gene poo
 {{< multiplechoice
   question="When male lions reach sexual maturity, they leave their group in search of a new pride. This can alter the allele frequencies of the population through which of the following mechanisms?"
   answer="gene flow"
-  hint="Match the lions' behavior against the section's descriptions of each evolutionary force, starting after the Genetic Drift subsection."
+  hint="Reread the paragraph that mentions a pride of lions."
 >}}
 natural selection
 genetic drift
@@ -241,7 +240,7 @@ random mating
 {{< multiplechoice
   question="What is assortative mating?"
   answer="when individuals mate with those who are similar to themselves"
-  hint="Assortative mating is a form of mate choice, not a form of physical isolation."
+  hint="Reread the paragraph on peahens' choice of mates."
 >}}
 when individuals mate with those who are similar to themselves
 when individuals mate with those who are dissimilar to themselves
@@ -258,4 +257,4 @@ when individuals mate with those who are least fit in the population
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 19.2: Population Genetics](https://openstax.org/books/biology-2e/pages/19-2-population-genetics) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's "photo" guess to "diagram" after inspection (the bottleneck illustration and the gene-flow insects, both drawn rather than photographed); the genetic-drift figure's 900-character source alt, which ran well over the 600-character limit, replaced with a short alt and its full generation-by-generation walkthrough moved into a longdesc written from the image; a longdesc also added to the bottleneck figure naming its drawn labels and marble counts; the kittens' garbled source alt ("two are gray, black, orange, and white...") and the alligator's bare source alt ("shows a person holding a baby alligator") both rewritten from the image to describe what is actually drawn; the three Link to Learning notes' generic "site"/"this video" link text replaced with descriptive text (the URLs are unchanged); the Scientific Method Connection box kept its title and every step verbatim; the founder-effect footnote kept as a parenthetical citation after the sentence it supports; the Visual Connection note rendered as its figure followed by a self-check in the body, since its question is answered in prose rather than by a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); rubric checkpoints added to every self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and four key-term recall items (heritability, genetic drift, bottleneck effect, nonrandom mating) added from the glossary to bring every objective's group to the book's three-item floor. One phrase is corrected with a visible Source note: Fanconi anemia causes bone marrow abnormalities, where the source prints "blood marrow" (erratum 410).</small>
+<small>This section is adapted from [Biology 2e, Section 19.2: Population Genetics](https://openstax.org/books/biology-2e/pages/19-2-population-genetics) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's "photo" guess to "diagram" after inspection (the bottleneck illustration and the gene-flow insects, both drawn rather than photographed); the genetic-drift figure's 900-character source alt, which ran well over the 600-character limit, replaced with a short alt and its full generation-by-generation walkthrough moved into a longdesc written from the image; a longdesc also added to the bottleneck figure naming its drawn labels and marble counts; the kittens' garbled source alt ("two are gray, black, orange, and white...") and the alligator's bare source alt ("shows a person holding a baby alligator") both rewritten from the image to describe what is actually drawn; the three Link to Learning notes' generic "site"/"this video" link text replaced with descriptive text (the URLs are unchanged); the Scientific Method Connection box kept its title and every step verbatim; the founder-effect footnote kept as a parenthetical citation after the sentence it supports; the Visual Connection note rendered as its figure followed by a self-check in the body, since its question is answered in prose rather than by a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively), each placed under the objective it tests, so the Review Questions run in the order 2, 5, 4, 1, 3 and the Critical Thinking Questions in the order 3, 2, 1 of the source's numbering; rubric checkpoints added to every self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and three key-term recall items (heritability, genetic drift, nonrandom mating) added from the glossary and a cloze recall item written locally from the Genetic Drift subsection's own founder-effect sentences, to bring every objective's group to the book's three-item floor — no recall item for bottleneck effect, which a Critical Thinking Question on the page already asks about. One phrase is corrected with a visible Source note: Fanconi anemia causes bone marrow abnormalities, where the source prints "blood marrow" (erratum 410).</small>

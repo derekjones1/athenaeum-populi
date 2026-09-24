@@ -50,7 +50,7 @@ However, what ultimately interests most biologists is not the frequencies of dif
 When populations are in the Hardy-Weinberg equilibrium, the allelic frequency is stable from generation to generation and we can determine the allele distribution from the Hardy-Weinberg equation. If the allelic frequency measured in the field differs from the predicted value, scientists can make inferences about what evolutionary forces are at play.
 {{< /mediafigure >}}
 
-{{< selfcheck question="In plants, violet flower color (V) is dominant over white (v). If p = 0.8 and q = 0.2 in a population of 500 plants, how many individuals would you expect to be homozygous dominant (VV), heterozygous (Vv), and homozygous recessive (vv)? How many plants would you expect to have violet flowers, and how many would have white flowers?" hint="The dominant V allele is present in both VV and Vv individuals, so both genotypes share the violet phenotype; only vv shows the recessive white." >}}
+{{< selfcheck question="In plants, violet flower color (V) is dominant over white (v). If p = 0.8 and q = 0.2 in a population of 500 plants, how many individuals would you expect to be homozygous dominant (VV), heterozygous (Vv), and homozygous recessive (vv)? How many plants would you expect to have violet flowers, and how many would have white flowers?" hint="Work it the way the figure above works its pea-plant population." >}}
 The expected distribution is 320 VV, 160 Vv, and 20 vv plants. Plants with VV or Vv genotypes would have violet flowers, and plants with the vv genotype would have white flowers, so a total of 480 plants would be expected to have violet flowers, and 20 plants would have white flowers.
 ===CHECKS===
 the expected distribution is 320 VV, 160 Vv, and 20 vv plants
@@ -84,6 +84,13 @@ The modern synthesis of evolutionary theory grew out of the cohesion of Darwin's
 
 ### Define population genetics and describe how scientists use population genetics in studying population evolution
 
+{{< textin
+  question="The rate at which a specific allele appears within a population is called its ________."
+  answer="allele frequency"
+  accept="gene frequency|allele frequencies|gene frequencies|allelic frequency|allelic frequencies"
+  hint="Reread the second paragraph of the Population Genetics subsection."
+>}}
+
 {{< multiplechoice
   question="What is the difference between micro- and macroevolution?"
   answer="Microevolution describes the evolution of organisms in populations, while macroevolution describes the evolution of species over long periods of time."
@@ -95,17 +102,10 @@ Microevolution describes the evolution of organisms in populations, while macroe
 Microevolution describes the evolution of organisms over their lifetimes, while macroevolution describes the evolution of organisms over multiple generations.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The rate at which a specific allele appears within a population is called its ________."
-  answer="allele frequency"
-  accept="gene frequency|allele frequencies|gene frequencies"
-  hint="Reread the first paragraph of the Population Genetics subsection."
->}}
-
 {{< multiplechoice
   question="Population genetics is the study of:"
   answer="how selective forces change the allele frequencies in a population over time"
-  hint="The 'Population Genetics' section's opening paragraphs say what the field studies, and the glossary defines the term the same way."
+  hint="Reread the first paragraph of the Population Genetics subsection."
 >}}
 how selective forces change the allele frequencies in a population over time
 the genetic basis of population-wide traits
@@ -116,7 +116,7 @@ the degree of inbreeding in a population
 {{< multiplechoice
   question="One of the original Amish colonies rose from a ship of colonists that came from Europe. The ship's captain, who had polydactyly, a rare dominant trait, was one of the original colonists. Today, we see a much higher frequency of polydactyly in the Amish population. This is an example of:"
   answer="b and c"
-  hint="Reread the Population Genetics paragraph on random changes in allele frequencies, and the event it names right after, then decide whether more than one option fits."
+  hint="Reread the last paragraph of the Population Genetics subsection."
 >}}
 natural selection
 genetic drift
@@ -125,6 +125,13 @@ b and c
 {{< /multiplechoice >}}
 
 ### Define the Hardy-Weinberg principle and discuss its importance
+
+{{< textin
+  question="Among its conditions, the Hardy-Weinberg principle assumes a population that is ________ in size."
+  answer="infinitely large"
+  accept="infinite"
+  hint="Reread the first paragraph of the Hardy-Weinberg Principle of Equilibrium subsection."
+>}}
 
 {{< multiplechoice
   question="Which of the following populations is not in Hardy-Weinberg equilibrium?"
@@ -137,7 +144,7 @@ p<sup>2</sup> + 2pq + q<sup>2</sup> = 1
 a population undergoing natural selection
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Solve for the genetic structure of a population with 12 homozygous recessive individuals (yy), 8 homozygous dominant individuals (YY), and 4 heterozygous individuals (Yy)." hint="Count each genotype's alleles into the gene pool total (2 × 24 individuals = 48 alleles) before dividing, exactly as the diagram above does for the pea plants." >}}
+{{< selfcheck question="Solve for the genetic structure of a population with 12 homozygous recessive individuals (yy), 8 homozygous dominant individuals (YY), and 4 heterozygous individuals (Yy)." hint="Reread the Hardy-Weinberg figure, which works the same steps for a population of pea plants." >}}
 p = (8\*2 + 4)/48 = .42; q = (12\*2 + 4)/48 = .58; p<sup>2</sup> = .17; 2pq = .49; q<sup>2</sup> = .34
 ===CHECKS===
 p = (8*2 + 4)/48 = .42
@@ -147,7 +154,7 @@ p² = .17
 q² = .34
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain the Hardy-Weinberg principle of equilibrium theory." hint="State what stays constant across generations, and what would have to be true of the population for that to happen." >}}
+{{< selfcheck question="Explain the Hardy-Weinberg principle of equilibrium theory." hint="Reread the first paragraph of the Hardy-Weinberg Principle of Equilibrium subsection." >}}
 The Hardy-Weinberg principle of equilibrium is used to describe the genetic makeup of a population. The theory states that a population's allele and genotype frequencies are inherently stable: unless some kind of evolutionary force is acting upon the population, generation after generation of the population would carry the same genes, and individuals would, as a whole, look essentially the same.
 ===CHECKS===
 used to describe the genetic makeup of a population
@@ -157,13 +164,7 @@ generation after generation of the population would carry the same genes
 individuals would, as a whole, look essentially the same
 {{< /selfcheck >}}
 
-{{< textin
-  question="The distribution of the different possible genotypes in a population is called its ________."
-  answer="genetic structure"
-  hint="From this, scientists can surmise how the population's phenotypes are distributed."
->}}
-
-{{< selfcheck question="Imagine you are trying to test whether a population of flowers is undergoing evolution. You suspect there is selection pressure on the color of the flower: bees seem to cluster around the red flowers more often than the blue flowers. In a separate experiment, you discover blue flower color is dominant to red flower color. In a field, you count 600 blue flowers and 200 red flowers. What would you expect the genetic structure of the flowers to be?" hint="Red is recessive, so the 200 red flowers are the only individuals whose genotype you can read directly from their phenotype — start there." >}}
+{{< selfcheck question="Imagine you are trying to test whether a population of flowers is undergoing evolution. You suspect there is selection pressure on the color of the flower: bees seem to cluster around the red flowers more often than the blue flowers. In a separate experiment, you discover blue flower color is dominant to red flower color. In a field, you count 600 blue flowers and 200 red flowers. What would you expect the genetic structure of the flowers to be?" hint="Reread the Hardy-Weinberg paragraph on which genotype an observed phenotype reveals." >}}
 Red is recessive so q<sup>2</sup> = 200/800 = 0.25; q = 0.5; p = 1 - q = 0.5; p<sup>2</sup> = 0.25; 2pq = 0.5. You would expect 200 homozygous blue flowers, 400 heterozygous blue flowers, and 200 red flowers.
 ===CHECKS===
 q² = 200/800 = 0.25
@@ -176,4 +177,4 @@ you would expect 200 homozygous blue flowers, 400 heterozygous blue flowers, and
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 19.1: Population Evolution](https://openstax.org/books/biology-2e/pages/19-1-population-evolution) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP; Figure_B19_01_02's source alt (an over-600-character, value-by-value walkthrough of the diagram) rewritten from the image into a concise alt naming what the two panels show, with the full step-by-step reading — every labeled circle, box, arrow, and stacked equation line — moved into a longdesc; the footnoted Jordan ABO study citation kept as a parenthetical after the sentence it supports rather than dropped; both feature boxes rendered as callouts with their bold names (Everyday Connection, Link to Learning), the interactive note's URL kept; the Visual Connection note kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the source solution's "160Vv" corrected to "160 Vv" to match the same sentence's own "320 VV" and "20 vv" spacing (reported as a source defect); the Critical Thinking flower-population solution's unmarked "q2"/"p2" exponents set as HTML superscript (q<sup>2</sup>, p<sup>2</sup>) to match the module's own <sup> convention used in the sibling genetic-structure solution and in the body's own Hardy-Weinberg equation (reported as a source defect); the genetic-structure solution's "2pq = .48" corrected to "2pq = .49", the value its own rounding convention gives (p² .17 + 2pq .49 + q² .34 sum to exactly 1.00; reported as a source defect); the equilibrium Review Question's first option — the source's 12 yy / 8 YY / 4 Yy census, which is itself out of Hardy-Weinberg proportions by the module's own arithmetic, leaving two options correct — replaced with a 6 YY / 12 Yy / 6 yy census that sits exactly at Hardy-Weinberg proportions (reported as a source defect); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to every self-check (including the body's Visual Connection self-check), decomposing its model answer — the source solution — into check-off clauses with no new claims; and two key-term recall items (allele frequency, genetic structure) added from the glossary to give each objective group an auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 19.1: Population Evolution](https://openstax.org/books/biology-2e/pages/19-1-population-evolution) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP; Figure_B19_01_02's source alt (an over-600-character, value-by-value walkthrough of the diagram) rewritten from the image into a concise alt naming what the two panels show, with the full step-by-step reading — every labeled circle, box, arrow, and stacked equation line — moved into a longdesc; the footnoted Jordan ABO study citation kept as a parenthetical after the sentence it supports rather than dropped; both feature boxes rendered as callouts with their bold names (Everyday Connection, Link to Learning), the interactive note's URL kept; the Visual Connection note kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the source solution's "160Vv" corrected to "160 Vv" to match the same sentence's own "320 VV" and "20 vv" spacing (reported as a source defect); the Critical Thinking flower-population solution's unmarked "q2"/"p2" exponents set as HTML superscript (q<sup>2</sup>, p<sup>2</sup>) to match the module's own <sup> convention used in the sibling genetic-structure solution and in the body's own Hardy-Weinberg equation (reported as a source defect); the genetic-structure solution's "2pq = .48" corrected to "2pq = .49", the value its own rounding convention gives (p² .17 + 2pq .49 + q² .34 sum to exactly 1.00; reported as a source defect); the equilibrium Review Question's first option — the source's 12 yy / 8 YY / 4 Yy census, which is itself out of Hardy-Weinberg proportions by the module's own arithmetic, leaving two options correct — replaced with a 6 YY / 12 Yy / 6 yy census that sits exactly at Hardy-Weinberg proportions (reported as a source defect); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to every self-check (including the body's Visual Connection self-check), decomposing its model answer — the source solution — into check-off clauses with no new claims; the Review Questions placed under the objectives they test, so they run in the order 1, 2, 4, 3 of the source's numbering; a key-term recall item (allele frequency) added from the glossary and placed first in its objective group; and a cloze recall item written locally from the Hardy-Weinberg subsection's own sentence on the principle's assumptions (an infinitely large population), placed first in its objective group — no recall item for genetic structure, which two Critical Thinking Questions on the page already ask about.</small>

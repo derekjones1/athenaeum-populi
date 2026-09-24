@@ -42,7 +42,7 @@ Sometimes two or more distinct phenotypes can each have their advantages for nat
 Different types of natural selection can impact the distribution of phenotypes within a population. In (a) stabilizing selection, an average phenotype is favored. In (b) directional selection, a change in the environment shifts the spectrum of observed phenotypes. In (c) diversifying selection, two or more extreme phenotypes are selected for, while the average phenotype is selected against.
 {{< /mediafigure >}}
 
-{{< selfcheck question="In recent years, factories have become cleaner, and release less soot into the environment. What impact do you think this has had on the distribution of moth color in the population?" hint="Reread the Directional Selection paragraph on the peppered moth and run its reasoning in reverse." >}}
+{{< selfcheck question="In recent years, factories have become cleaner, and release less soot into the environment. What impact do you think this has had on the distribution of moth color in the population?" hint="Reread the Directional Selection paragraph on the peppered moth." >}}
 Moths have shifted to a lighter color.
 ===CHECKS===
 moths have shifted
@@ -115,10 +115,29 @@ Other types of selection include frequency-dependent selection, in which individ
 
 ### Explain the different ways natural selection can shape populations
 
+{{< textin
+  question="Selection that favors phenotypes that are either common or rare in a population is called ________."
+  answer="frequency-dependent selection"
+  hint="Reread the subsection on the side-blotched lizards."
+>}}
+
+{{< textin
+  question="Selection that favors an average phenotype, working against extreme variation, is called ________."
+  answer="stabilizing selection"
+  accept="stabilising selection"
+  hint="Reread the first subsection after the section's introduction."
+>}}
+
+{{< textin
+  question="An individual's ability to survive and reproduce, compared with the rest of the population, is called ________."
+  answer="relative fitness"
+  hint="Reread the section's second paragraph, on how scientists measure it in the field."
+>}}
+
 {{< multiplechoice
   question="When males and females of a population look or act differently, it is referred to as ________."
   answer="sexual dimorphism"
-  hint="The word for it appears in this section's own bolded term for such a difference."
+  hint="Reread the paragraph that opens with how males and females differ beyond the reproductive organs."
 >}}
 sexual dimorphism
 sexual selection
@@ -137,7 +156,7 @@ why some deleterious mutations are maintained in the population
 why individuals of one sex develop impressive ornamental traits
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Give an example of a trait that may have evolved as a result of the handicap principle and explain your reasoning." hint="Reread the Sexual Selection paragraphs on the hypotheses that explain costly traits, then pick an example the section discusses." >}}
+{{< selfcheck question="Give an example of a trait that may have evolved as a result of the handicap principle and explain your reasoning." hint="Reread the Sexual Selection paragraph that ends by naming the handicap principle." >}}
 The peacock's tail is a good example of the handicap principle. The tail, which makes the males more visible to predators and less able to escape, is clearly a disadvantage to the bird's survival. But because it is a disadvantage, only the most fit males should be able to survive with it. Thus, the tail serves as an honest signal of quality to the females of the population; therefore, the male will earn more matings and greater reproductive success.
 ===CHECKS===
 the peacock's tail is a good example of the handicap principle
@@ -146,24 +165,6 @@ only the most fit males should be able to survive with it
 the tail serves as an honest signal of quality to the females
 the male will earn more matings and greater reproductive success
 {{< /selfcheck >}}
-
-{{< textin
-  question="Selection that favors an average phenotype, working against extreme variation, is called ________."
-  answer="stabilizing selection"
-  hint="Match it to the mouse population whose fur color best blends with a fairly uniform forest floor."
->}}
-
-{{< textin
-  question="Selection that favors phenotypes that are either common or rare in a population is called ________."
-  answer="frequency-dependent selection"
-  hint="Its two subtypes are named for whether the favored phenotype is common (positive) or rare (negative)."
->}}
-
-{{< textin
-  question="An individual's ability to survive and reproduce, measured relative to the rest of the population, is called ________."
-  answer="relative fitness"
-  hint="Reread the section's second paragraph, on how scientists measure it in the field."
->}}
 
 ### Describe how these different forces can lead to different outcomes in terms of the population variation
 
@@ -178,7 +179,7 @@ diversifying selection
 positive frequency-dependent selection
 {{< /multiplechoice >}}
 
-{{< selfcheck question="List the ways in which evolution can affect population variation and describe how they influence allele frequencies." hint="Name all five forces this section covers, then say what happens to how related and how similar individuals become." >}}
+{{< selfcheck question="List the ways in which evolution can affect population variation and describe how they influence allele frequencies." hint="Reread the section's third introductory paragraph." >}}
 There are several ways evolution can affect population variation: stabilizing selection, directional selection, diversifying selection, frequency-dependent selection, and sexual selection. As these influence the allele frequencies in a population, individuals can either become more or less related, and the phenotypes displayed can become more similar or more disparate.
 ===CHECKS===
 stabilizing selection, directional selection, diversifying selection, frequency-dependent selection, and sexual selection affect population variation
@@ -189,9 +190,9 @@ phenotypes can become more similar or more disparate
 {{< textin
   question="The increase in frequency of beneficial alleles and decrease in frequency of deleterious alleles due to selection is called ________."
   answer="adaptive evolution"
-  hint="Reread the section's opening paragraph, before the Stabilizing Selection subsection."
+  hint="Reread the section's opening paragraph."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 19.3: Adaptive Evolution](https://openstax.org/books/biology-2e/pages/19-3-adaptive-evolution) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the three-panel selection-types figure's source alt (over 1,700 characters) was rewritten to a short summary of what each panel shows and teaches, with the full walk-through of each panel's curves, labels, and illustrations moved into a new `longdesc`, where the source alt's claim that the directional-selection panel's two curves "only slightly overlap" is corrected to what the panel draws (they cross at about three-quarters of their peak height); the three in-text cross-references to that figure, the one cross-reference to the lizard photo, and the one cross-reference to the sexual-dimorphism photo changed from the source's numbered pointers ("Figure 19.8," "Figure 19.9," "Figure 19.10") to "the figure below," since figures are not numbered here; the two Link to Learning notes rendered as callouts, one with its link text expanded from "article" to a descriptive phrase naming what the article covers; the note wrapping the Visual Connection question rendered as the figure followed by a self-check, since its source solution is prose rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (three multiple choice and two self-check); four glossary recall `textin` items (stabilizing selection, frequency-dependent selection, relative fitness, adaptive evolution) added to round out both objective groups to the practice floor; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 19.3: Adaptive Evolution](https://openstax.org/books/biology-2e/pages/19-3-adaptive-evolution) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the three-panel selection-types figure's source alt (over 1,700 characters) was rewritten to a short summary of what each panel shows and teaches, with the full walk-through of each panel's curves, labels, and illustrations moved into a new `longdesc`, where the source alt's claim that the directional-selection panel's two curves "only slightly overlap" is corrected to what the panel draws (they cross at about three-quarters of their peak height); the three in-text cross-references to that figure, the one cross-reference to the lizard photo, and the one cross-reference to the sexual-dimorphism photo changed from the source's numbered pointers ("Figure 19.8," "Figure 19.9," "Figure 19.10") to "the figure below," since figures are not numbered here; the two Link to Learning notes rendered as callouts, one with its link text expanded from "article" to a descriptive phrase naming what the article covers; the note wrapping the Visual Connection question rendered as the figure followed by a self-check, since its source solution is prose rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (three multiple choice and two self-check), each placed under the objective it tests, so the Review Questions run in the order 2, 3, 1 of the source's numbering; four glossary recall `textin` items (stabilizing selection, frequency-dependent selection, relative fitness, adaptive evolution) added to round out both objective groups to the practice floor, the first three placed first in their objective group; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
