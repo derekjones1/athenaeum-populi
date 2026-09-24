@@ -71,12 +71,6 @@ Ammonia is the waste produced by metabolism of nitrogen-containing compounds lik
 ### Compare and contrast the way in which aquatic animals and terrestrial animals can eliminate toxic ammonia from their systems
 
 {{< textin
-  question="A compound made of one nitrogen atom and three hydrogen atoms is called ________."
-  answer="ammonia"
-  hint="This is the toxic compound formed when nitrogen-containing molecules like proteins and nucleic acids are broken down."
->}}
-
-{{< textin
   question="Animals that excrete ammonia as their primary waste material are said to be ________."
   answer="ammonotelic"
   hint="Look in the paragraph after the learning objectives, where animals living in aquatic environments are discussed."
@@ -88,17 +82,44 @@ Ammonia is the waste produced by metabolism of nitrogen-containing compounds lik
   hint="Look at the last sentence of the paragraph after the learning objectives."
 >}}
 
+{{< textin
+  question="A compound made of one nitrogen atom and three hydrogen atoms is called ________."
+  answer="ammonia"
+  accept="NH3"
+  hint="Look in the paragraph after the learning objectives."
+>}}
+
 {{< selfcheck
   question="In terms of evolution, why might the urea cycle have evolved in organisms?"
-  hint="Think about where life is believed to have begun and what changed for organisms that moved onto dry land — then consider why a water-conserving pathway would matter there."
+  hint="Look in the Evolution Connection box in the first subsection."
 >}}
 It is believed that the urea cycle evolved to adapt to a changing environment when terrestrial life forms evolved. Arid conditions probably led to the evolution of the uric acid pathway as a means of conserving water.
 ===CHECKS===
 the urea cycle evolved to adapt to a changing environment when terrestrial life forms evolved
-arid conditions led to the evolution of the uric acid pathway as a means of conserving water
+arid conditions probably led to the evolution of the uric acid pathway as a means of conserving water
 {{< /selfcheck >}}
 
 ### Compare the major byproduct of ammonia metabolism in vertebrate animals to that of birds, insects, and reptiles
+
+{{< textin
+  question="The byproduct of ammonia metabolism in birds, insects, and reptiles is called ________."
+  answer="uric acid"
+  hint="Look at the opening sentences of the second subsection, or the last sentence of the Summary."
+>}}
+
+{{< textin
+  question="The pathway by which ammonia is converted to urea is called the ________."
+  answer="urea cycle"
+  accept="ornithine cycle"
+  hint="Look at the first sentence under the first section heading, and at the flow-chart figure's caption."
+>}}
+
+{{< textin
+  question="An agent that protects cells from being destroyed by reactive oxygen species is called a(n) ________."
+  answer="antioxidant"
+  accept="anti-oxidant"
+  hint="Look in the Everyday Connection on gout."
+>}}
 
 {{< multiplechoice
   question="BUN is ________."
@@ -111,17 +132,10 @@ an indicator of blood volume
 an indicator of blood pressure
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The pathway by which ammonia is converted to urea is called the ________."
-  answer="urea cycle"
-  accept="ornithine cycle"
-  hint="Look at the first sentence under the first section heading, and at the flow-chart figure's caption."
->}}
-
 {{< multiplechoice
   question="Human beings accumulate ________ before excreting nitrogenous waste."
   answer="urea"
-  hint="Reread the paragraph after the learning objectives, where what mammals produce is compared with what reptiles produce."
+  hint="Reread the last three sentences of the paragraph after the learning objectives."
 >}}
 nitrogen
 ammonia
@@ -131,7 +145,7 @@ uric acid
 
 {{< selfcheck
   question="Compare and contrast the formation of urea and uric acid."
-  hint="Walk through where each pathway occurs, how many steps and enzymes it needs, and which animal groups rely on it instead of the other."
+  hint="Look at the opening paragraphs of both subsections."
 >}}
 The urea cycle is the primary mechanism by which mammals convert ammonia to urea. Urea is made in the liver and excreted in urine. The urea cycle utilizes five intermediate steps, catalyzed by five different enzymes, to convert ammonia to urea. Birds, reptiles, and insects, on the other hand, convert toxic ammonia to uric acid instead of urea. Conversion of ammonia to uric acid requires more energy and is much more complex than conversion of ammonia to urea.
 ===CHECKS===
@@ -140,19 +154,6 @@ the urea cycle utilizes five intermediate steps, catalyzed by five different enz
 birds, reptiles, and insects convert toxic ammonia to uric acid instead of urea
 conversion of ammonia to uric acid requires more energy and is much more complex than conversion to urea
 {{< /selfcheck >}}
-
-{{< textin
-  question="An agent that protects cells from being destroyed by reactive oxygen species is called a(n) ________."
-  answer="antioxidant"
-  accept="anti-oxidant"
-  hint="Look in the Everyday Connection on gout."
->}}
-
-{{< textin
-  question="The byproduct of ammonia metabolism in birds, insects, and reptiles is called ________."
-  answer="uric acid"
-  hint="This nitrogen-containing waste is so insoluble in water that it forms a paste or powder rather than dissolving into urine the way the vertebrate byproduct does."
->}}
 
 ---
 

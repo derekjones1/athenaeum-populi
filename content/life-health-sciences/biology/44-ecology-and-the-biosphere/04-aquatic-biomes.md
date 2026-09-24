@@ -29,7 +29,7 @@ The ocean is divided into different zones based on water depth and distance from
 {{< multiplechoice
   question="In which of the following regions would you expect to find photosynthetic organisms?"
   answer="the photic zone, the intertidal zone, the neritic zone, and the oceanic zone"
-  hint="Photosynthesis needs sunlight. Three of these four options each pair zones that get light with one zone the section places below where sunlight penetrates — find the option where every listed zone stays in the sunlit part of the ocean."
+  hint="Check each listed zone against the paragraph and diagram just above."
 >}}
 the aphotic zone, the neritic zone, the oceanic zone, and the benthic realm
 the photic zone, the intertidal zone, the neritic zone, and the oceanic zone
@@ -164,27 +164,29 @@ Density and temperature shape the structure of aquatic systems. Oceans may be th
 {{< textin
   question="Open ocean water that is not close to the bottom or near the shore is called the ________."
   answer="pelagic realm"
-  accept="pelagic zone"
-  hint="This is the open water itself, not the seafloor beneath it or the coastline beside it."
+  accept="pelagic zone|pelagic"
+  hint="Reread the paragraph just before the ocean-zones diagram."
 >}}
 
 {{< textin
   question="The part of the ocean where no light penetrates is called the ________."
   answer="aphotic zone"
-  hint="Reread the Ocean subsection's paragraph that divides the ocean into zones by light, alongside the ocean-zones diagram."
+  accept="aphotic"
+  hint="Reread the paragraph just before the ocean-zones diagram."
 >}}
 
 {{< textin
   question="The portion of the ocean that light can penetrate is called the ________."
   answer="photic zone"
-  hint="Reread the same ocean-zones paragraph, and check the upper band of the ocean-zones diagram."
+  accept="photic"
+  hint="Reread the same paragraph, and check the ocean-zones diagram."
 >}}
 
 {{< textin
   question="The part of the ocean that extends along the ocean bottom from the shoreline to the deepest parts of the ocean floor is called the ________."
   answer="benthic realm"
-  accept="benthic zone"
-  hint="This zone is defined by the ocean floor itself, not by depth from the surface or distance from the shore."
+  accept="benthic zone|benthic"
+  hint="Reread the paragraph just before the ocean-zones diagram."
 >}}
 
 {{< multiplechoice
@@ -214,7 +216,7 @@ intertidal zone
 {{< multiplechoice
   question="A key feature of estuaries is:"
   answer="salt water and fresh water"
-  hint="Re-read the very first sentence describing what estuaries are — it names exactly what mixes there."
+  hint="Reread the opening paragraph of the Estuaries subsection."
 >}}
 low light conditions and high productivity
 salt water and fresh water
@@ -222,7 +224,7 @@ frequent algal blooms
 little or no vegetation
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the conditions and challenges facing organisms living in the intertidal zone." hint="Think about what changes twice a day as the tide moves in and out, and what physical force repeatedly strikes the shore." >}}
+{{< selfcheck question="Describe the conditions and challenges facing organisms living in the intertidal zone." hint="Reread the Ocean subsection's paragraph on the zone closest to land." >}}
 Organisms living in the intertidal zone must tolerate periodic exposure to air and sunlight and must be able to be periodically dry. They also must be able to endure the pounding waves; for this reason, some shoreline organisms have hard exoskeletons that provide protection while also reducing the likelihood of drying out.
 ===CHECKS===
 organisms must tolerate periodic exposure to air and sunlight
@@ -234,7 +236,8 @@ some shoreline organisms have hard exoskeletons that provide protection while al
 {{< textin
   question="The part of the ocean that extends from low tide to the edge of the continental shelf is called the ________."
   answer="neritic zone"
-  hint="This zone sits between the intertidal zone and the open ocean, still shallow enough for light to reach the bottom."
+  accept="neritic"
+  hint="Reread the Ocean subsection's paragraph that follows the tide-pool photo."
 >}}
 
 {{< textin
@@ -245,7 +248,7 @@ some shoreline organisms have hard exoskeletons that provide protection while al
 
 ### Summarize the characteristics of standing water and flowing water freshwater biomes
 
-{{< selfcheck question="Scientists have discovered the bodies of humans and other living things buried in bogs for hundreds of years, but not yet decomposed. Suggest a possible biological explanation for why such bodies are so well-preserved." hint="Think about what decomposing bacteria need to work quickly, and what a bog's water chemistry denies them." >}}
+{{< selfcheck question="Scientists have discovered the bodies of humans and other living things buried in bogs for hundreds of years, but not yet decomposed. Suggest a possible biological explanation for why such bodies are so well-preserved." hint="Reread the last paragraph before the Summary." >}}
 Bogs are low in oxygen and high in organic acids. The low oxygen content and the low pH both slow the rate of decomposition.
 ===CHECKS===
 bogs are low in oxygen
@@ -257,13 +260,14 @@ the low pH slows the rate of decomposition
 {{< textin
   question="A rapid increase of algae in an aquatic system is called a(n) ________."
   answer="algal bloom"
-  hint="This event can turn a lake's surface green, and when nutrient runoff feeds it, a die-off and oxygen crash can follow once the algae decompose."
+  accept="algae bloom"
+  hint="Reread the Lakes and Ponds subsection's paragraph on nitrogen and phosphorus."
 >}}
 
 {{< textin
   question="The width of a river or stream from one bank to the other bank is called its ________."
   answer="channel"
-  hint="This word for a waterway's width narrows near a stream's source and widens downstream as tributaries join it."
+  hint="Reread the Rivers and Streams subsection's paragraph on source water."
 >}}
 
 {{< textin
@@ -275,9 +279,9 @@ the low pH slows the rate of decomposition
 {{< textin
   question="Plants that are rooted in the soil but have portions of leaves, stems, and flowers extending above the water's surface are called ________."
   answer="emergent vegetation"
-  hint="These plants are rooted below the waterline but rise up out of the water into the air."
+  hint="Reread the opening paragraph of the section's last subsection, before the Summary."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 44.4: Aquatic Biomes](https://openstax.org/books/biology-2e/pages/44-4-aquatic-biomes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the manifest's kind guess (one diagram, four photos) was checked against each image and left as guessed for all five; a longdesc added to the ocean-zones diagram, the section's only figure whose printed labels are not carried by its one-line caption, transcribing its three distance-based zone labels, three depth-based zone labels, three printed depth values, the "Pelagic realm" bracket, and the "Continental shelf"/"Benthic realm" labels on the seafloor wedge, in reading order; the four photo alts rewritten from source phrasing that opened with "Photo shows" or "In this photo" to plain descriptions of what is visible, without repeating the caption, and the wetland photo's source alt, which calls its trees "mangrove trees" where the figure's own caption and the image show cypress, corrected to bald cypress — a source defect; the body Visual Connection kept in the body (the mediafigure followed by a multiple choice) rather than duplicated in Practice, using the wording and answer of the `<exercise>` copy (`fs-idm35270928`, keyed B) rather than the `note.visual-connection` copy, whose own draft solution is commented out in the source CNXML and reads "C" — see Source defects below; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/marine_biology redirect URL and its CNXML wording (the printed PDF page describes the same video with different surrounding text — an edition difference, not corrected); the `evolution` note rendered as an Evolution Connection callout with its own title kept; two instances of the source's modifier-letter degree glyph (˚) normalized to the standard degree sign (°) ("30° north and south of the equator"; "1–2 °C") for consistency with this book's notation elsewhere; in-text pointers to the single figure ("Figure 44.21") replaced with "shown above" or "shown below," and pointers to the other four figures replaced the same way, since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items added from the glossary (pelagic realm, aphotic zone, photic zone, benthic realm, neritic zone, coral reef, algal bloom, channel, emergent vegetation) across three groups, covering nine of the section's nineteen glossary terms (the emergent-vegetation prompt says "plants" where the glossary says "wetland plants," so that it does not print the key of the wetlands cloze directly above it); one summary-derived multiple choice added (density and temperature) and one summary-derived cloze textin added (wetlands), both built from the section's own summary sentences with no new claim. Source defects: module `m66417`, exercise `fs-idm35270928` (the ocean-zones Visual Connection) — the module prints this question twice. The `<exercise>` copy at the end of the module keys **B**, "the photic zone, the intertidal zone, the neritic zone, and the oceanic zone" ("Photosynthetic organisms would be found in the photic zone, the intertidal zone, the neritic zone, and the oceanic zone"). The `note.visual-connection` copy in the body carries a commented-out (not rendered) draft solution reading "C. Photosynthetic organisms would be found in the photic, abyssal, neritic, and oceanic zones." Option C names the abyssal zone, which the module's own text places "at depths of 4000 m or greater" and says "does not have plants because of the lack of light," and the module separately states "the majority of the ocean is aphotic and lacks sufficient light for photosynthesis" — so C is not supported by the module's own text. B is the module-consistent key and is the one used on this page (the rendered `<exercise>` copy's own key, not a re-keying). Kept on source authority, no re-key: exercise `fs-idp7022832` ("Where would you expect to find the most photosynthesis in an ocean biome?") is keyed **D**, intertidal zone. The module actually places the *most* photosynthesis in the neritic zone ("Since light can penetrate this depth, photosynthesis can still occur in the neritic zone"), but "neritic zone" is not one of the four options (aphotic zone, abyssal zone, benthic realm, intertidal zone); of the options given, the module is silent on which has the most photosynthesis, so D is kept as printed and the Practice hint points at the zone paragraphs rather than asserting "most."</small>
+<small>This section is adapted from [Biology 2e, Section 44.4: Aquatic Biomes](https://openstax.org/books/biology-2e/pages/44-4-aquatic-biomes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the manifest's kind guess (one diagram, four photos) was checked against each image and left as guessed for all five; a longdesc added to the ocean-zones diagram, the section's only figure whose printed labels are not carried by its one-line caption, transcribing its three distance-based zone labels, three depth-based zone labels, three printed depth values, the "Pelagic realm" bracket, and the "Continental shelf"/"Benthic realm" labels on the seafloor wedge, in reading order; the four photo alts rewritten from source phrasing that opened with "Photo shows" or "In this photo" to plain descriptions of what is visible, without repeating the caption, and the wetland photo's source alt, which calls its trees "mangrove trees" where the figure's own caption and the image show cypress, corrected to bald cypress — a source defect; the body Visual Connection kept in the body (the mediafigure followed by a multiple choice) rather than duplicated in Practice, using the wording and answer of the `<exercise>` copy (`fs-idm35270928`, keyed B) rather than the `note.visual-connection` copy, whose own draft solution is commented out in the source CNXML and reads "C" — see Source defects below; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/marine_biology redirect URL and its CNXML wording (the printed PDF page describes the same video with different surrounding text — an edition difference, not corrected); the `evolution` note rendered as an Evolution Connection callout with its own title kept; two instances of the source's modifier-letter degree glyph (˚) normalized to the standard degree sign (°) ("30° north and south of the equator"; "1–2 °C") for consistency with this book's notation elsewhere; in-text pointers to the single figure ("Figure 44.21") replaced with "shown above" or "shown below," and pointers to the other four figures replaced the same way, since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items added from the glossary (pelagic realm, aphotic zone, photic zone, benthic realm, neritic zone, coral reef, algal bloom, channel, emergent vegetation) across three groups, covering nine of the section's nineteen glossary terms (the emergent-vegetation prompt says "plants" where the glossary says "wetland plants," so that it does not print the key of the wetlands cloze directly above it); one summary-derived multiple choice added (density and temperature) and one summary-derived cloze textin added (wetlands), both built from the section's own summary sentences with no new claim. Source defects: module `m66417`, exercise `fs-idm35270928` (the ocean-zones Visual Connection) — the module prints this question twice. The `<exercise>` copy at the end of the module keys **B**, "the photic zone, the intertidal zone, the neritic zone, and the oceanic zone" ("Photosynthetic organisms would be found in the photic zone, the intertidal zone, the neritic zone, and the oceanic zone"). The `note.visual-connection` copy in the body carries a commented-out (not rendered) draft solution reading "C. Photosynthetic organisms would be found in the photic, abyssal, neritic, and oceanic zones." Option C names the abyssal zone, which the module's own text places "at depths of 4000 m or greater" and says "does not have plants because of the lack of light," and the module separately states "the majority of the ocean is aphotic and lacks sufficient light for photosynthesis" — so C is not supported by the module's own text. B is the module-consistent key and is the one used on this page (the rendered `<exercise>` copy's own key, not a re-keying). Kept as printed: exercise `fs-idp7022832` ("Where would you expect to find the most photosynthesis in an ocean biome?") is keyed **D**, intertidal zone; the module names no zone with the *most* photosynthesis, but of the four options only the intertidal zone is one it places in sunlight ("exposed to air and sunlight at low tide"), so the Practice hint points at the zone paragraphs rather than asserting "most."</small>

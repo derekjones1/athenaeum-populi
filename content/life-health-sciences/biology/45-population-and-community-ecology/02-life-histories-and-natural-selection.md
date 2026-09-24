@@ -96,7 +96,7 @@ fecundity
 {{< multiplechoice
   question="Which of the following is associated with the reproductive potential of a species?"
   answer="fecundity"
-  hint="Reread the opening sentences of the subsection on parental care."
+  hint="Reread the opening sentences of the section's first subsection."
 >}}
 few offspring
 many offspring
@@ -104,7 +104,7 @@ semelparity
 fecundity
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is long-term parental care not associated with having many offspring during a reproductive episode?" hint="Tie it back to the energy budget: producing many offspring at once and giving each one sustained individual care draw from the same limited pool of resources." >}}
+{{< selfcheck question="Why is long-term parental care not associated with having many offspring during a reproductive episode?" hint="Reread the first paragraph of the section's first subsection, on species that produce many offspring." >}}
 Parental care is not feasible for organisms having many offspring because they do not have the energy available to take care of offspring. Most of their energy budget is used in the formation of seeds or offspring, so there is little left for parental care. Also, the sheer number of offspring would make individual parental care impossible.
 ===CHECKS===
 parental care is not feasible for organisms with many offspring because they lack the energy to take care of them
@@ -112,7 +112,7 @@ most of their energy budget is used in the formation of seeds or offspring, leav
 the sheer number of offspring would make individual parental care impossible
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe the difference in evolutionary pressures experienced by an animal that begins reproducing early and an animal that reproduces late in its lifecycle." hint="Think about what dying young does to a species' gene pool, and what surviving into old age proves about an individual's fit to its environment." >}}
+{{< selfcheck question="Describe the difference in evolutionary pressures experienced by an animal that begins reproducing early and an animal that reproduces late in its lifecycle." hint="Reread the Early versus Late Reproduction subsection." >}}
 A species that reproduces early in its life cycle is under evolutionary pressure to reach sexual maturity as soon as possible. Animals that mature earliest will be able to reproduce the most times, and therefore more of the next generation will carry their early maturation genes. A species that reproduces late in its life cycle will only generate offspring from parents that were able to survive in their habitats. This increases the likelihood that the next generation will be well-adapted to its environment.
 ===CHECKS===
 a species that reproduces early is under pressure to reach sexual maturity as soon as possible
@@ -124,14 +124,14 @@ this increases the likelihood the next generation is well-adapted to its environ
 {{< textin
   question="The inherited pattern of resource allocation under the influence of natural selection and other evolutionary forces is called an organism's ________."
   answer="life history"
-  accept="life histories"
-  hint="This term covers everything from how early a species starts reproducing to how many offspring it has at once — the whole lifetime pattern, not any one part of it."
+  accept="life histories|life history strategy"
+  hint="Reread the section's opening paragraph."
 >}}
 
 {{< textin
   question="The allocation of energy resources for body maintenance, reproduction, and parental care is called an organism's ________."
   answer="energy budget"
-  hint="Reread the section's opening paragraph, which ends with bears building up body fat."
+  hint="Reread the paragraph that ends with bears building up body fat for winter hibernation."
 >}}
 
 ### Explain different life history patterns and how different reproductive strategies affect species’ survival
@@ -139,7 +139,7 @@ this increases the likelihood the next generation is well-adapted to its environ
 {{< textin
   question="A life history strategy characterized by a single reproductive event followed by death is called ________."
   answer="semelparity"
-  hint="This pattern matches the Chinook salmon, which spends nearly everything it has on one migration and reproductive event."
+  hint="Reread the Single versus Multiple Reproductive Events paragraph on bamboo and the Chinook salmon."
 >}}
 
 {{< textin
@@ -162,4 +162,4 @@ fecundity
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 45.2: Life Histories and Natural Selection](https://openstax.org/books/biology-2e/pages/45-2-life-histories-and-natural-selection) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text kept, except that the life-history figure's alt describes the salmon as lying among rocks after spawning rather than "swimming" and the mating-ratio table's alt reports the printed ratios (8 ± 5, 15 ± 5) rather than percentages; Figure_45_02_02 (the sperm-depleted/non-depleted mating-ratio table) re-kinded from the manifest's file-extension "photo" guess to "diagram," since it is a rendered data table, not a captured photograph; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/mating_game redirect URL; the "Energy Budgets, Reproductive Costs, and Sexual Selection in *Drosophila*" Evolution Connection rendered as a callout with its own figure kept inside it; its footnote citation (Byrne and Rice, 2006) rendered as a parenthetical after the sentence it supports rather than as a footnote marker; in-text pointers to the shared three-panel figure ("Figure 45.7a," "Figure 45.7b," "Figure 45.7c") replaced with "shown below," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items added from the glossary (life history, energy budget, semelparity) — fecundity and iteroparity are instead tested by Review Question multiple choices — and one cloze recall item built from the pronghorn antelope sentence (blanking "estrus"; it replaced an iteroparity glossary item that re-asked the iteroparity Review Question directly below it). Source defects: module `m66688`, exercise `fs-idm109424304` prints the distractor "semiparity" (a garbled misspelling of "semelparity") among its four options; the misspelling is kept as printed rather than corrected, since the exercise's other three options and its printed solution (B, iteroparity) are unaffected and unambiguous.</small>
+<small>This section is adapted from [Biology 2e, Section 45.2: Life Histories and Natural Selection](https://openstax.org/books/biology-2e/pages/45-2-life-histories-and-natural-selection) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text kept, except that the life-history figure's alt describes the salmon as lying among rocks after spawning rather than "swimming" and the mating-ratio table's alt reports the printed ratios (8 ± 5, 15 ± 5) rather than percentages; Figure_45_02_02 (the sperm-depleted/non-depleted mating-ratio table) re-kinded from the manifest's file-extension "photo" guess to "diagram," since it is a rendered data table, not a captured photograph; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/mating_game redirect URL; the "Energy Budgets, Reproductive Costs, and Sexual Selection in *Drosophila*" Evolution Connection rendered as a callout with its own figure kept inside it; its footnote citation (Byrne and Rice, 2006) rendered as a parenthetical after the sentence it supports rather than as a footnote marker; in-text pointers to the shared three-panel figure ("Figure 45.7a," "Figure 45.7b," "Figure 45.7c") replaced with "shown below," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the reproductive-potential Review Question (third in the source) precedes the multiple-reproductive-episodes question (second); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items added from the glossary (life history, energy budget, semelparity) — fecundity and iteroparity are instead tested by Review Question multiple choices — and one cloze recall item built from the pronghorn antelope sentence (blanking "estrus"). Source defects: module `m66688`, exercise `fs-idm109424304` prints the distractor "semiparity" (a garbled misspelling of "semelparity") among its four options; the misspelling is kept as printed rather than corrected, since the exercise's other three options and its printed solution (B, iteroparity) are unaffected and unambiguous.</small>

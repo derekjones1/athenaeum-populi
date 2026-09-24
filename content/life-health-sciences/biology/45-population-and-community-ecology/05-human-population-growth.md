@@ -55,7 +55,7 @@ The age structure of a population is an important factor in population dynamics.
 Typical age structure diagrams are shown. The rapid growth diagram narrows to a point, indicating that the number of individuals decreases rapidly with age. In the slow growth model, the number of individuals decreases steadily with age. Stable population diagrams are rounded on the top, showing that the number of individuals per age group decreases gradually, and then decreases more rapidly for the older part of the population.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Age structure diagrams for rapidly growing, slow growing, and stable populations are shown in stages 1 through 3. What type of population change do you think stage 4 represents?" hint="Compare stage 4's outline to the three shapes already described — does the widest part of the population sit at the youngest ages, as in the pyramid- and triangle-shaped panels, or somewhere else in the shape?" >}}
+{{< selfcheck question="Age structure diagrams for rapidly growing, slow growing, and stable populations are shown in stages 1 through 3. What type of population change do you think stage 4 represents?" hint="Look at the fourth panel of the diagrams above, and at the caption's descriptions of the first three." >}}
 Stage 4 represents a population that is decreasing.
 ===CHECKS===
 stage 4 represents a population
@@ -100,9 +100,9 @@ The world's human population is growing at an exponential rate. Humans have incr
 >}}
 
 {{< multiplechoice
-  question="According to the section, exponential human population growth has caused the time it takes to add each additional billion people to the Earth to ________."
+  question="According to the section, as the human population has grown, the time it takes to add each additional billion people to the Earth has ________."
   answer="decreased"
-  hint="Think about what happens to the length of each interval as the population keeps growing exponentially — does adding the next billion people take more time or less?"
+  hint="Reread the paragraph between the world-population line graph and the bar graph of years between billions."
 >}}
 increased
 decreased
@@ -110,7 +110,7 @@ stayed the same
 become impossible to predict
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is the human population still growing exponentially even though human reproduction is far below its biotic potential?" hint="Reread the two conditions the section lists as necessary for reaching biotic potential, and notice what it says about whether either one is met." >}}
+{{< selfcheck question="Human reproduction is far below its biotic potential. What would it take to reach that potential, and does the section say those conditions exist today?" hint="Reread the paragraph just before the world-population line graph." >}}
 To reach its biotic potential, all females would have to become pregnant every nine months or so during their reproductive years, and resources would have to be such that the environment would support such growth. Neither of these two conditions exists, yet the human population is still growing exponentially.
 ===CHECKS===
 all females would have to become pregnant every nine months or so during their reproductive years to reach biotic potential
@@ -134,10 +134,10 @@ use of language
 {{< textin
   question="Humans have increased the world's carrying capacity through migration, agriculture, medical advances, and ________."
   answer="communication"
-  hint="The section's first subsection says humans use this to pass technology on to new generations, letting each generation improve on the last."
+  hint="Reread the Summary's second sentence."
 >}}
 
-{{< selfcheck question="How have migration and public health affected human population growth, according to the section?" hint="The paragraph names two separate factors besides technology and agriculture — one about where humans live, one about disease." >}}
+{{< selfcheck question="How have migration and public health affected human population growth, according to the section?" hint="Reread the second paragraph of the section's first subsection." >}}
 Humans originated in Africa but have since migrated to nearly all inhabitable land on the Earth. Public health, sanitation, and the use of antibiotics and vaccines have decreased the ability of infectious disease to limit human population growth, so infectious disease influence on human population growth is becoming less significant.
 ===CHECKS===
 humans originated in Africa and have since migrated to nearly all inhabitable land on the Earth
@@ -150,7 +150,7 @@ infectious disease influence on human population growth is becoming less signifi
 {{< multiplechoice
   question="A country with zero population growth is likely to be ________."
   answer="economically developed"
-  hint="The section names one specific European country that has reached zero population growth, and says which broad category of countries it belongs to."
+  hint="Reread the first paragraph of the third subsection, near its end."
 >}}
 in Africa
 in Asia
@@ -161,13 +161,13 @@ economically underdeveloped
 {{< textin
   question="The proportion of a population at different age ranges is called its ________."
   answer="age structure"
-  hint="The section defines this in bold right where it introduces how population growth relates to a country's level of economic development."
+  hint="Reread the opening sentences of the third subsection."
 >}}
 
 {{< multiplechoice
   question="Which type of country has the greatest proportion of young individuals?"
   answer="economically underdeveloped"
-  hint="The section says which category of countries has a pyramidal age structure with many individuals who are of reproductive age or younger."
+  hint="Reread the first paragraph of the third subsection, the sentences on countries with rapid growth."
 >}}
 economically developed
 economically underdeveloped
@@ -175,7 +175,7 @@ countries with zero population growth
 countries in Europe
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the age structures in rapidly growing countries, slowly growing countries, and countries with zero population growth." hint="Walk through the three country types in the same order as the question and note whether each age bracket's share gets bigger or smaller as growth slows." >}}
+{{< selfcheck question="Describe the age structures in rapidly growing countries, slowly growing countries, and countries with zero population growth." hint="Reread the first paragraph of the third subsection, from its sentence on rapid growth through its sentence on zero population growth." >}}
 Rapidly growing countries have a large segment of the population at a reproductive age or younger. Slower growing populations have a lower percentage of these individuals, and countries with zero population growth have an even lower percentage. On the other hand, a high proportion of older individuals is seen mostly in countries with zero growth, and a low proportion is most common in rapidly growing countries.
 ===CHECKS===
 rapidly growing countries have a large segment of the population at a reproductive age or younger
@@ -186,7 +186,7 @@ a high proportion of older individuals is seen mostly in countries with zero gro
 
 ### Discuss the long-term implications of unchecked human population growth
 
-{{< selfcheck question="Since the introduction of the Endangered Species Act the number of species on the protected list has more than doubled. Describe how the human population's growth pattern contributes to the rise in endangered species." hint="Trace the chain the section draws: more people needing more resources leads to two separate environmental effects — one about land and water use, one about fuel and climate." >}}
+{{< selfcheck question="Since the introduction of the Endangered Species Act the number of species on the protected list has more than doubled. Describe how the human population's growth pattern contributes to the rise in endangered species." hint="Reread the last subsection, the paragraph on the endangerment of the natural environment." >}}
 Continued exponential human population growth results in the human population requiring more resources to sustain itself. These resources are usually taken at the expense of the environment and the organisms that rely on the resources in that environment (e.g., habitat destruction for human development, water rerouting for irrigation, etc.). The continued use of fossil fuels to generate power for human activities also contributes to climate change, changing climates in some areas so that certain species can no longer survive there.
 ===CHECKS===
 continued exponential human population growth results in the human population requiring more resources to sustain itself
@@ -198,7 +198,7 @@ changing climates mean certain species can no longer survive in some areas
 {{< textin
   question="China's policy to limit population growth by limiting urban couples to have only one child or face a fine is called the ________."
   answer="one-child policy"
-  hint="The section discusses this policy in the paragraph about nations that have instituted policies aimed at influencing population, right before naming India's family-planning policies."
+  hint="Reread the paragraph on national policies aimed at influencing population."
 >}}
 
 {{< textin
@@ -210,4 +210,4 @@ changing climates mean certain species can no longer survive in some areas
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 45.5: Human Population Growth](https://openstax.org/books/biology-2e/pages/45-5-human-population-growth) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: all four figures re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" (Figure_45_05_01, Figure_45_05_02, and Figure_45_05_04 are a line graph, a bar graph, and a shaded world map, none of them a captured photograph; Figure_45_05_03 the manifest already guessed correctly); the source alt text for all four figures was rewritten (the source alts run 556–947 characters, three of the four over the 600-character lint cap, and read as inline data transcriptions rather than accessible descriptions) into a short alt naming what is drawn, with a `longdesc` added to each carrying the counted, labeled walk-through the source alt held — the six-curve legend and axis scale for Figure_45_05_01, the nine bar labels and year counts for Figure_45_05_02, the four panels' shapes and shared Age axis for Figure_45_05_03 (transcribing the printed "Stage 4: ?" label without stating which population trend it represents, since that is the visual connection's own question), and the five-band legend and shaded regions for Figure_45_05_04, whose source alt's claim that only "parts of Africa" are shaded in the highest, 3%+ band is corrected in the longdesc, since the map also shades a coastal strip of the southern Arabian Peninsula in that same band; the body Visual Connection (exercise `fs-idm238521552`, keyed prose) rendered as its figure followed by a self-check, keeping the note's own "stages 1 through 3 are shown" preamble in the question, with its rubric checkpoints transcribing only the two-clause source solution; four in-text figure cross-references ("Figure 45.14" style pointers, printed via unlabelled cross-reference links in the source) replaced with "shown below," "the bar graph below," or "the map below," since Hugo does not number figures; two Link to Learning notes rendered as callouts, keeping the module's own openstax.org/l/human_growth and openstax.org/l/populations redirect URLs; two source misspellings corrected on the page — "bubonic plaque" corrected to "bubonic plague" in the Overcoming Density-Dependent Regulation subsection, and the footnote citation's "Paul R. Erlich" corrected to "Paul R. Ehrlich" to match the section's own correct spelling of the same name three sentences earlier; the closing footnote citation kept as a parenthetical after the quotation it supports rather than dropped; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); two key-term recall items added from the glossary (age structure, one-child policy — both of the section's glossary terms); three cloze text-recall items added from the section's own Summary sentences (exponential, communication, long-term effects); one multiple-choice item and two self-check items in the Practice block are locally written from the section's own sentences on biotic potential, migration/public health, and the pace of adding each billion people, disclosed here because the Discuss exponential human population growth and Explain how humans have expanded the carrying capacity of their habitat groups had at most one keyed source exercise each; exercise `fs-idm142904224` ("A country with zero population growth is likely to be ________") is keyed **C, economically developed,** rather than the module's own printed answer key of D, economically underdeveloped, because the module's own text contradicts D. Source defects: module `m66696`, exercise `fs-idm142904224` — the module's printed solution keys D, "economically underdeveloped," but the module's own text says "Other developed countries, such as Italy, have zero population growth" and separately says the highest population growth rates tend to be "in the less economically developed countries of Africa and Asia," so a country with zero population growth is one the module itself calls developed, not underdeveloped; keyed C above. Module `m66696`, paragraph `fs-idm171579728` — prints "the bubonic plaque of the fourteenth century," which should read "bubonic plague" (the infectious disease, not dental plaque); corrected on the page. Module `m66696`, footnote `fs-idm181607600` — prints the cited author's name as "Paul R. Erlich," missing the second "h" that appears in the correct spelling "Ehrlich" used three sentences earlier in the same paragraph to name the same person (biologist Dr. Paul R. Ehrlich, author of *The Population Bomb*); corrected on the page. Module `m66696`, media alt for Figure_45_05_04 — the source alt says "Some parts of Africa are experiencing three percent population growth," but the map itself also shades a coastal strip of the southern Arabian Peninsula (Yemen/Oman) in that same three-percent-plus band, outside Africa; the page's longdesc now names both.</small>
+<small>This section is adapted from [Biology 2e, Section 45.5: Human Population Growth](https://openstax.org/books/biology-2e/pages/45-5-human-population-growth) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: all four figures re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" (Figure_45_05_01, Figure_45_05_02, and Figure_45_05_04 are a line graph, a bar graph, and a shaded world map, none of them a captured photograph; Figure_45_05_03 the manifest already guessed correctly); the source alt text for all four figures was rewritten (the source alts run 556–947 characters, three of the four over the 600-character lint cap, and read as inline data transcriptions rather than accessible descriptions) into a short alt naming what is drawn, with a `longdesc` added to each carrying the counted, labeled walk-through the source alt held — the six-curve legend and axis scale for Figure_45_05_01, the nine bar labels and year counts for Figure_45_05_02, the four panels' shapes and shared Age axis for Figure_45_05_03 (transcribing the printed "Stage 4: ?" label without stating which population trend it represents, since that is the visual connection's own question), and the five-band legend and shaded regions for Figure_45_05_04, whose source alt's claim that only "parts of Africa" are shaded in the highest, 3%+ band is corrected in the longdesc, since the map also shades a coastal strip of the southern Arabian Peninsula in that same band; the body Visual Connection (exercise `fs-idm238521552`, keyed prose) rendered as its figure followed by a self-check, keeping the note's own "stages 1 through 3 are shown" preamble in the question, with its rubric checkpoints transcribing only the two-clause source solution; four in-text figure cross-references ("Figure 45.14" style pointers, printed via unlabelled cross-reference links in the source) replaced with "shown below," "the bar graph below," or "the map below," since Hugo does not number figures; two Link to Learning notes rendered as callouts, keeping the module's own openstax.org/l/human_growth and openstax.org/l/populations redirect URLs; two source misspellings corrected on the page — "bubonic plaque" corrected to "bubonic plague" in the Overcoming Density-Dependent Regulation subsection, and the footnote citation's "Paul R. Erlich" corrected to "Paul R. Ehrlich" to match the section's own correct spelling of the same name three sentences earlier; the closing footnote citation kept as a parenthetical after the quotation it supports rather than dropped; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the third Review Question ("Which of the following is not a way…") placed under the carrying-capacity objective, ahead of the first two, which sit under the age-structure objective; two key-term recall items added from the glossary (age structure, one-child policy — both of the section's glossary terms); three cloze text-recall items added from the section's own Summary sentences (exponential, communication, long-term effects); one multiple-choice item and two self-check items in the Practice block are locally written from the section's own sentences on biotic potential, migration/public health, and the pace of adding each billion people, disclosed here because the Discuss exponential human population growth and Explain how humans have expanded the carrying capacity of their habitat groups had at most one keyed source exercise each; exercise `fs-idm142904224` ("A country with zero population growth is likely to be ________") is keyed **C, economically developed,** rather than the module's own printed answer key of D, economically underdeveloped, because the module's own text contradicts D. Source defects: module `m66696`, exercise `fs-idm142904224` — the module's printed solution keys D, "economically underdeveloped," but the module's own text says "Other developed countries, such as Italy, have zero population growth" and separately says the highest population growth rates tend to be "in the less economically developed countries of Africa and Asia," so a country with zero population growth is one the module itself calls developed, not underdeveloped; keyed C above. Module `m66696`, paragraph `fs-idm171579728` — prints "the bubonic plaque of the fourteenth century," which should read "bubonic plague" (the infectious disease, not dental plaque); corrected on the page. Module `m66696`, footnote `fs-idm181607600` — prints the cited author's name as "Paul R. Erlich," missing the second "h" that appears in the correct spelling "Ehrlich" used three sentences earlier in the same paragraph to name the same person (biologist Dr. Paul R. Ehrlich, author of *The Population Bomb*); corrected on the page. Module `m66696`, media alt for Figure_45_05_04 — the source alt says "Some parts of Africa are experiencing three percent population growth," but the map itself also shades a coastal strip of the southern Arabian Peninsula (Yemen/Oman) in that same three-percent-plus band, outside Africa; the page's longdesc now names both.</small>

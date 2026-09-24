@@ -124,13 +124,14 @@ Human pregnancy begins with fertilization of an egg and proceeds through the thr
   question="The length of time for fetal development to birth is called ________."
   answer="gestation"
   accept="gestation period"
-  hint="This word also names the length of pregnancy in every mammal the section compares — human, chimpanzee, elephant, and whale each have their own value for it."
+  hint="Reread the section's opening paragraph, before the first subsection."
 >}}
 
 {{< textin
-  question="The organ that supports the diffusion of nutrients and waste between the pregnant person's and fetus' blood is called the ________."
-  answer="placenta"
-  hint="This organ forms partway through the first trimester and keeps performing this exchange function all the way through delivery."
+  question="The hormone produced by the chorion of the zygote that helps to maintain the corpus luteum and elevated levels of progesterone is called ________."
+  answer="human beta chorionic gonadotropin"
+  accept="β-HCG|beta-HCG|hCG|human chorionic gonadotropin|beta human chorionic gonadotropin"
+  hint="Reread the first paragraph of the Human Gestation subsection."
 >}}
 
 {{< multiplechoice
@@ -158,7 +159,7 @@ corpus luteum
 {{< multiplechoice
   question="Major organs begin to develop during which part of human gestation?"
   answer="first trimester"
-  hint="Limb buds, eyes, the heart, and the liver are named as basically formed by five weeks — that timing points to one specific period of gestation."
+  hint="Reread the Human Gestation paragraph just before the nine-week fetus photo."
 >}}
 fertilization
 first trimester
@@ -166,7 +167,7 @@ second trimester
 third trimester
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the major developments during each trimester of human gestation." hint="Work through the trimesters in order — what basic structures appear first, what continues to grow next, and which trimester ends in labor and delivery." >}}
+{{< selfcheck question="Describe the major developments during each trimester of human gestation." hint="Reread the Human Gestation subsection, one trimester at a time." >}}
 The first trimester lays down the basic structures of the body, including the limb buds, heart, eyes, and the liver. The second trimester continues the development of all of the organs and systems established during the first trimester. The placenta takes over the production of estrogen and high levels of progesterone and handles the nutrient and waste requirements of the fetus. The third trimester exhibits the greatest growth of the fetus, culminating in labor and delivery.
 ===CHECKS===
 the first trimester lays down the basic structures of the body, including the limb buds, heart, eyes, and the liver
@@ -176,6 +177,12 @@ the third trimester exhibits the greatest growth of the fetus, culminating in la
 {{< /selfcheck >}}
 
 ### Describe labor and delivery
+
+{{< textin
+  question="When the baby begins suckling at the breast, signals are sent to the hypothalamus causing the release of ________ from the anterior pituitary."
+  answer="prolactin"
+  hint="Reread the last paragraph of the Labor and Birth subsection."
+>}}
 
 {{< multiplechoice
   question="Which hormone is primarily responsible for the contractions during labor?"
@@ -188,7 +195,7 @@ estrogen
 progesterone
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the stages of labor." hint="Walk through the three numbered stages in order — what happens to the cervix first, what leaves the body next, and what leaves after that." >}}
+{{< selfcheck question="Describe the stages of labor." hint="Reread the second paragraph of the Labor and Birth subsection." >}}
 Stage one of labor results in the thinning of the cervix and the dilation of the cervical opening. Stage two delivers the baby, and stage three delivers the placenta.
 ===CHECKS===
 stage one results in the thinning of the cervix and the dilation of the cervical opening
@@ -196,25 +203,18 @@ stage two delivers the baby
 stage three delivers the placenta
 {{< /selfcheck >}}
 
-{{< textin
-  question="The labor process has three stages (contractions, delivery of the fetus, expulsion of the placenta), each propelled by ________."
-  answer="hormones"
-  hint="This is the second sentence of the section summary; the Labor and Birth subsection describes what drives each stage."
->}}
-
 ### Compare the efficacy and duration of various types of contraception
 
 {{< textin
-  question="Various means used to prevent pregnancy are collectively called ________."
-  answer="contraception"
-  accept="birth control"
-  hint="The section notes that, strictly speaking, this term refers only to preventing the sperm and egg from joining, though it is often used interchangeably with a broader synonym."
+  question="Natural family planning is based on the monitoring of the ________ and having intercourse only during times when the egg is not available."
+  answer="menstrual cycle"
+  hint="Reread the second paragraph after the table in the section's third subsection."
 >}}
 
 {{< multiplechoice
   question="Which of these methods is regarded as permanent contraception?"
   answer="sterilization"
-  hint="Distinguish a method that can be reversed or simply stopped from one meant to end fertility for good."
+  hint="Reread the paragraph on compliance, the second-to-last paragraph of the third subsection."
 >}}
 condom
 oral hormonal methods
@@ -225,7 +225,7 @@ abstinence
 {{< multiplechoice
   question="Which type of short term contraceptive method is generally more effective than others?"
   answer="hormonal"
-  hint="Compare the failure-rate range the table gives for each method category listed here, and pick the category with the lowest typical-use range."
+  hint="Compare the failure rates in the table of the section's third subsection."
 >}}
 barrier
 hormonal
@@ -238,18 +238,18 @@ withdrawal
 {{< textin
   question="The inability to conceive, carry, and deliver children is called ________."
   answer="infertility"
-  hint="About three-quarters of the causes of this condition can be identified, according to the section."
+  hint="Reread the first sentence of the section's last subsection."
 >}}
 
 {{< multiplechoice
-  question="Assisted reproductive technologies may help individuals who have which of the following?"
-  answer="infertility problems"
-  hint="This is the last sentence of the section summary; the last subsection describes when these technologies are used."
+  question="About what share of the causes of the inability to conceive a child or carry a child to birth can be identified?"
+  answer="75 percent"
+  hint="Reread the first paragraph of the section's last subsection."
 >}}
-infertility problems
-contraception problems
-gestation problems
-labor problems
+25 percent
+50 percent
+75 percent
+100 percent
 {{< /multiplechoice >}}
 
 {{< textin
@@ -261,4 +261,4 @@ labor problems
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 43.5: Human Pregnancy and Birth](https://openstax.org/books/biology-2e/pages/43-5-human-pregnancy-and-birth) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text edited to describe only what is visible; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_43_07_01, the day-by-day fertilization-to-implantation flow diagram, and Figure_43_07_04, the labeled third-trimester illustration, are each a hand-drawn or computer-rendered illustration, not a captured photograph); a longdesc added to the two diagrams whose printed labels are not carried by their one-line captions — the fertilization/implantation flow diagram (transcribing its day-by-day stage labels and the Inner cell mass/Blastocoel leader lines, traced right to left as the diagram itself progresses from ovary to uterus) and the third-trimester illustration (transcribing its three leader-line labels: Uterine wall, Umbilical cord, Cervix); in-text pointers to figures and the table ("Figure 43.18" through "Figure 43.22", "Table 43.3") replaced with "shown below," "shown above," "illustrated below," or "the table below," since Hugo does not number figures or tables; the `interactive` note rendered as a Link to Learning callout with descriptive link text, keeping the module's own openstax.org/l/embryo_fetus redirect URL; the Contraceptive Methods table kept as a Markdown table in the body, with its merged Hormonal and Other category cells left blank on continuation rows in place of the source's row-span; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; a cloze text-recall item added from the section summary ("each propelled by ________," answer "hormones") for the Describe labor and delivery group, which the source's Review and Critical Thinking Questions do not otherwise cover; a select-the-term multiple choice built from the section summary's closing sentence, and a locally written text-recall item built strictly from the section's own sentence describing in vitro fertilization, added to the Discuss causes of infertility group, which the source exercise sets do not test at all; four key-term recall items added from the glossary (gestation, placenta, contraception, infertility), covering four of the section's six glossary terms — human beta chorionic gonadotropin (β-HCG) and morning sickness appear only in the Key terms list (β-HCG also in the prose). Exercise `fs-idp80601616` is keyed **B**, "diffusion through the endometrium," on source authority; the module's own sentence directly supports it ("During the first two to four weeks of the first trimester, nutrition and waste are handled by the endometrial lining through diffusion").</small>
+<small>This section is adapted from [Biology 2e, Section 43.5: Human Pregnancy and Birth](https://openstax.org/books/biology-2e/pages/43-5-human-pregnancy-and-birth) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text edited to describe only what is visible; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_43_07_01, the day-by-day fertilization-to-implantation flow diagram, and Figure_43_07_04, the labeled third-trimester illustration, are each a hand-drawn or computer-rendered illustration, not a captured photograph); a longdesc added to the two diagrams whose printed labels are not carried by their one-line captions — the fertilization/implantation flow diagram (transcribing its day-by-day stage labels and the Inner cell mass/Blastocoel leader lines, traced right to left as the diagram itself progresses from ovary to uterus) and the third-trimester illustration (transcribing its three leader-line labels: Uterine wall, Umbilical cord, Cervix); in-text pointers to figures and the table ("Figure 43.18" through "Figure 43.22", "Table 43.3") replaced with "shown below," "shown above," "illustrated below," or "the table below," since Hugo does not number figures or tables; the `interactive` note rendered as a Link to Learning callout with descriptive link text, keeping the module's own openstax.org/l/embryo_fetus redirect URL; the Contraceptive Methods table kept as a Markdown table in the body, with its merged Hormonal and Other category cells left blank on continuation rows in place of the source's row-span; the six end-of-section Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively) and placed under the objective each tests, so Review Question 6 (major organs) comes before Review Questions 3–5, Review Question 5 (oxytocin) before Review Questions 3 and 4, Critical Thinking Question 1 (trimesters) before Review Questions 3–5, and Critical Thinking Question 2 (stages of labor) before Review Questions 3 and 4; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four locally written items added, each built strictly from one sentence of the section: a cloze text-recall item on the hormone released from the anterior pituitary when the baby suckles (answer "prolactin") for the Describe labor and delivery group, a cloze text-recall item on what natural family planning monitors (answer "menstrual cycle") for the contraception group, and, for the Discuss causes of infertility group, which the source exercise sets do not test at all, a multiple choice on the share of infertility causes that can be identified (the section's "About 75 percent") and a text-recall item on in vitro fertilization; three key-term recall items added from the glossary (gestation, human beta chorionic gonadotropin, infertility), covering three of the section's six glossary terms — placenta, which a Review Question already keys, contraception, which a Review Question's stem prints, and morning sickness appear only in the Key terms list. Exercise `fs-idp80601616` is keyed **B**, "diffusion through the endometrium," on source authority; the module's own sentence directly supports it ("During the first two to four weeks of the first trimester, nutrition and waste are handled by the endometrial lining through diffusion").</small>

@@ -66,7 +66,7 @@ Naïve CD4⁺ T cells engage MHC II molecules on antigen-presenting cells (APCs)
 {{< multiplechoice
   question="Which of the following statements about T cells is false?"
   answer="MHC II is a receptor found on most body cells, while MHC I is a receptor found on immune cells only."
-  hint="Re-read the paragraph on MHC I and MHC II directly above the figure — it names exactly which molecule appears on which cells, and only one of the four options gets that scope backward."
+  hint="Reread the Antigen-presenting Cells paragraph on how processed fragments reach the cell surface, and the CD4/CD8 paragraph just above this figure."
 >}}
 Helper T cells release cytokines while cytotoxic T cells kill the infected cell.
 Helper T cells are CD4⁺, while cytotoxic T cells are CD8⁺.
@@ -108,7 +108,7 @@ CTLs sense MHC I-embedded antigens by directly interacting with infected cells v
 Natural killer (NK) cells recognize the MHC I receptor on healthy cells. If MHC I is absent, the cell is lysed.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Based on what you know about MHC receptors, why do you think an organ transplanted from an incompatible donor to a recipient will be rejected?" hint="Recall which surface protein signals 'self' versus 'non-self' to the immune system, and consider what varies about that protein from one person to the next." >}}
+{{< selfcheck question="Based on what you know about MHC receptors, why do you think an organ transplanted from an incompatible donor to a recipient will be rejected?" hint="Reread the Antigen-presenting Cells paragraph on what MHC molecules signal, and the figure just above this question." >}}
 MHC receptors differ from person to person. Thus, MHC receptors on an incompatible donor are considered "non-self" and are rejected by the immune system.
 ===CHECKS===
 MHC receptors differ from person to person
@@ -140,7 +140,7 @@ A **memory cell** is an antigen-specific B or T lymphocyte that does not differe
 After initially binding an antigen to the B cell receptor (BCR), a B cell internalizes the antigen and presents it on MHC II. A helper T cell recognizes the MHC II–antigen complex and activates the B cell. As a result, memory B cells and plasma cells are made.
 {{< /mediafigure >}}
 
-{{< selfcheck question="The Rh antigen is found on Rh-positive red blood cells. During pregnancy, Rh-negative people can usually carry an Rh-positive fetus to term without difficulty. However, a second Rh-positive fetus may trigger an immune attack that causes hemolytic disease of the newborn. Why do you think hemolytic disease is only a problem during the second or subsequent pregnancies?" hint="Think about what kind of adaptive-immune cell needs a first exposure to an antigen to form at all, and what that same cell type does very quickly upon a second exposure." >}}
+{{< selfcheck question="The Rh antigen is found on Rh-positive red blood cells. During pregnancy, Rh-negative people can usually carry an Rh-positive fetus to term without difficulty. However, a second Rh-positive fetus may trigger an immune attack that causes hemolytic disease of the newborn. Why do you think hemolytic disease is only a problem during the second or subsequent pregnancies?" hint="Reread the opening paragraphs of the Immunological Memory section and the figure just above this question." >}}
 If the blood of the mother and fetus mixes, memory cells that recognize the Rh antigen can form late in the first pregnancy. During subsequent pregnancies, these memory cells launch an immune attack on the fetal blood cells. Injection of anti-Rh antibody during the first pregnancy prevents the immune response from occurring.
 ===CHECKS===
 memory cells that recognize the Rh antigen can form late in the first pregnancy if the blood of the mother and fetus mixes
@@ -228,25 +228,25 @@ The adaptive immune response is a slower-acting, longer-lasting, and more specif
 {{< textin
   question="Immunity that has memory and occurs after exposure to an antigen either from a pathogen or a vaccination is called ________."
   answer="adaptive immunity"
-  accept="acquired immunity|adaptive immune response|acquired immune response"
+  accept="acquired immunity|adaptive immune response|acquired immune response|adaptive immune system"
   hint="The second sentence of the section's opening paragraph defines this kind of immunity."
 >}}
 
-{{< selfcheck question="Explain the difference between an epitope and an antigen." hint="Think about the whole molecule that triggers a response versus the one small part of it that an antibody or receptor actually touches." >}}
+{{< selfcheck question="Explain the difference between an epitope and an antigen." hint="Reread the T and B Lymphocytes paragraph on how T and B cells recognize antigens, and the figure that follows it." >}}
 An antigen is a molecule that reacts with some component of the immune response (antibody, B cell receptor, T cell receptor). An epitope is the region on the antigen through which binding with the immune component actually occurs.
 ===CHECKS===
 an antigen is a molecule that reacts with some component of the immune response (antibody, B cell receptor, T cell receptor)
 an epitope is the region on the antigen through which binding with the immune component actually occurs
 {{< /selfcheck >}}
 
-{{< selfcheck question="What is a naïve B or T cell?" hint="Think about what step described earlier in this section a lymphocyte must go through before it can mount any kind of defense." >}}
+{{< selfcheck question="What is a naïve B or T cell?" hint="Reread the end of the T and B Lymphocytes paragraph that comes just before the oval-antigen figure." >}}
 A naïve T or B cell is one that has not been activated by binding to the appropriate epitope. Naïve T and B cells cannot produce responses.
 ===CHECKS===
 a naive T or B cell is one that has not been activated by binding to the appropriate epitope
 naive T and B cells cannot produce responses
 {{< /selfcheck >}}
 
-{{< selfcheck question="In mammalian adaptive immune systems, T cell receptors are extraordinarily diverse. What function of the immune system results from this diversity, and how is this diversity achieved?" hint="Think about both halves of the question separately: what having millions of slightly different receptors lets the immune system do, and what genetic process actually generates all those variants." >}}
+{{< selfcheck question="In mammalian adaptive immune systems, T cell receptors are extraordinarily diverse. What function of the immune system results from this diversity, and how is this diversity achieved?" hint="Reread the paragraph just above the T cell receptor figure." >}}
 The diversity of TCRs allows the immune system to have millions of different T cells, and thereby to be specific in distinguishing antigens. This diversity arises from mutation and recombination in the genes that encode the variable regions of TCRs.
 ===CHECKS===
 the diversity of TCRs allows the immune system to have millions of different T cells
@@ -257,7 +257,7 @@ this diversity arises from mutation and recombination in the genes that encode t
 {{< multiplechoice
   question="Foreign particles circulating in the blood are filtered by the ________."
   answer="spleen"
-  hint="The section draws a direct parallel between two organs: one filters lymph, the other filters this different body fluid. Which of the four options is the one described as being to the blood as lymph nodes are to the lymph?"
+  hint="Reread the last paragraph of the Primary Centers of the Immune System section."
 >}}
 spleen
 lymph nodes
@@ -270,14 +270,21 @@ lymph
 {{< textin
   question="The adaptive immune response is a slower-acting, longer-lasting, and more specific response than the ________ response."
   answer="innate"
-  accept="innate immune"
-  hint="This section opens by comparing adaptive immunity to the body's other, faster-acting line of defense."
+  accept="innate immune|innate immunity"
+  hint="Reread the first sentence of the section's opening paragraph."
+>}}
+
+{{< textin
+  question="The general term for any immune cell that detects, engulfs, and informs the adaptive immune response about an infection by presenting the processed antigen on the cell surface is ________."
+  answer="antigen-presenting cell"
+  accept="APC"
+  hint="Reread the paragraph just after the one that defines an antigen, early in the section."
 >}}
 
 {{< multiplechoice
   question="Which of the following is both a phagocyte and an antigen-presenting cell?"
   answer="macrophage"
-  hint="This cell type both engulfs pathogens directly, the way a phagocyte does, and displays the resulting antigen fragments on its own surface, the way an antigen-presenting cell does — which single option does both jobs?"
+  hint="Reread the Antigen-presenting Cells paragraph that follows the definition of an antigen."
 >}}
 NK cell
 eosinophil
@@ -296,14 +303,7 @@ normal self
 non-self
 {{< /multiplechoice >}}
 
-{{< textin
-  question="An immune cell that detects, engulfs, and processes an antigen, then displays fragments of it on its own surface to inform the adaptive immune response about an infection, is called a(n) ________."
-  answer="antigen-presenting cell"
-  accept="APC"
-  hint="Macrophages, dendritic cells, and (before activation) B cells can all serve this same role in bridging the innate and adaptive immune responses."
->}}
-
-{{< selfcheck question="Why is the immune response after reinfection much faster than the adaptive immune response after the initial infection?" hint="Compare which cell population is already waiting in circulation the second time versus which population has to be identified and activated from scratch the first time." >}}
+{{< selfcheck question="Why is the immune response after reinfection much faster than the adaptive immune response after the initial infection?" hint="Reread the Immunological Memory paragraph that follows the Rh-pregnancy question." >}}
 Upon reinfection, the memory cells will immediately differentiate into plasma cells and CTLs without input from APCs or TH cells. In contrast, the adaptive immune response to the initial infection requires time for naïve B and T cells with the appropriate antigen specificities to be identified and activated.
 ===CHECKS===
 upon reinfection, the memory cells immediately differentiate into plasma cells and CTLs without input from APCs or TH cells
@@ -316,20 +316,20 @@ the adaptive immune response to the initial infection requires time for naive B 
   question="The adaptive immune response that is carried out by T cells is called the ________."
   answer="cell-mediated immune response"
   accept="cell-mediated response|cell-mediated immunity"
-  hint="This is the T-cell arm of adaptive immunity, distinct from the one carried out by activated B cells and antibodies."
+  hint="The section's opening paragraph names the two types of adaptive response."
 >}}
 
 {{< textin
   question="The adaptive immune response that is controlled by activated B cells and antibodies is called the ________."
   answer="humoral immune response"
   accept="humoral response|humoral immunity"
-  hint="This is the B-cell-and-antibody arm of adaptive immunity, distinct from the one carried out directly by T cells."
+  hint="Reread the sentence of the opening paragraph that names the two types of adaptive response."
 >}}
 
 {{< multiplechoice
   question="Which immune cells bind MHC molecules on APCs via CD8 coreceptors on their cell surfaces?"
   answer="CTLs"
-  hint="This is the CD8⁺ population of T cells, not the CD4⁺ population — check which named cell type is defined by that coreceptor rather than by the one helper T cells use."
+  hint="Reread the T and B Lymphocytes paragraph on CD4 and CD8, just above the T-cell activation figure."
 >}}
 T<sub>H</sub> cells
 CTLs
@@ -337,7 +337,7 @@ mast cells
 basophils
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does the T<sub>H</sub>1 response differ from the T<sub>H</sub>2 response?" hint="One of the two responses recruits macrophages and cytotoxic cells against pathogens hiding inside cells; the other pushes B cells toward antibody production against pathogens outside cells." >}}
+{{< selfcheck question="How does the T<sub>H</sub>1 response differ from the T<sub>H</sub>2 response?" hint="Reread the Helper T Lymphocytes subsection." >}}
 The T<sub>H</sub>1 response involves the secretion of cytokines to stimulate macrophages and CTLs and improve their destruction of intracellular pathogens and tumor cells. It is associated with inflammation. The T<sub>H</sub>2 response is involved in the stimulation of B cells into plasma cells that synthesize and secrete antibodies.
 ===CHECKS===
 the TH1 response involves the secretion of cytokines to stimulate macrophages and CTLs and improve their destruction of intracellular pathogens and tumor cells
@@ -345,7 +345,7 @@ the TH1 response is associated with inflammation
 the TH2 response is involved in the stimulation of B cells into plasma cells that synthesize and secrete antibodies
 {{< /selfcheck >}}
 
-{{< selfcheck question="How do B and T cells differ with respect to antigens that they bind?" hint="One of the two cell types needs an antigen-presenting cell to break the antigen down and load it onto MHC first; the other can grab the whole antigen molecule directly." >}}
+{{< selfcheck question="How do B and T cells differ with respect to antigens that they bind?" hint="Reread the paragraph just after the B cell receptor figure." >}}
 T cells bind antigens that have been digested and embedded in MHC molecules by APCs. In contrast, B cells function themselves as APCs to bind intact, unprocessed antigens.
 ===CHECKS===
 T cells bind antigens that have been digested and embedded in MHC molecules by APCs
@@ -365,6 +365,27 @@ plasma cell
 
 ### Describe immune tolerance
 
+{{< textin
+  question="A specialized lymphocyte that suppresses local inflammation and inhibits the secretion of cytokines, antibodies, and other stimulatory immune factors is called a(n) ________."
+  answer="regulatory T cell"
+  accept="Treg cell|Treg|T-reg cell|T-reg|regulatory T lymphocyte|T regulatory cell|regulatory T (Treg) cell"
+  hint="Reread the last paragraph of the Mucosal Surfaces subsection."
+>}}
+
+{{< textin
+  question="An inappropriate immune response to host cells or self-antigens is called the ________."
+  answer="autoimmune response"
+  accept="autoimmunity|auto-immune response"
+  hint="Reread the end of the last paragraph of the Mucosal Surfaces subsection."
+>}}
+
+{{< textin
+  question="A collection of lymphatic tissue that combines with epithelial tissue lining the mucosa throughout the body is called ________."
+  answer="mucosa-associated lymphoid tissue"
+  accept="MALT|mucosal-associated lymphoid tissue"
+  hint="Reread the first paragraph of the Mucosal Surfaces subsection and the intestinal figure that follows it."
+>}}
+
 {{< multiplechoice
   question="The acquired ability to prevent an unnecessary or destructive immune reaction to a harmless foreign particle, such as a food protein, is called ________."
   answer="immune tolerance"
@@ -375,27 +396,6 @@ allergy
 immune tolerance
 autoimmunity
 {{< /multiplechoice >}}
-
-{{< textin
-  question="A specialized lymphocyte that suppresses local inflammation and inhibits the secretion of stimulatory immune factors, helping to maintain immune tolerance, is called a(n) ________."
-  answer="regulatory T cell"
-  accept="Treg cell|Treg|T-reg cell|T-reg|regulatory T lymphocyte"
-  hint="APCs in the liver, lymph nodes, small intestine, and lung present harmless antigens to this diverse population of lymphocytes."
->}}
-
-{{< textin
-  question="An inappropriate immune response to host cells or self-antigens is called the ________."
-  answer="autoimmune response"
-  accept="autoimmunity"
-  hint="Some subsets of regulatory T cells specifically work to prevent the immune system from turning against its own tissue in this way."
->}}
-
-{{< textin
-  question="A collection of lymphatic tissue that combines with epithelial tissue lining the mucosa throughout the body is called ________."
-  answer="mucosa-associated lymphoid tissue"
-  accept="MALT"
-  hint="Reread the first paragraph of the Mucosal Surfaces subsection and the intestinal figure that follows it."
->}}
 
 ---
 

@@ -29,7 +29,7 @@ The study of any population usually begins by determining how many individuals o
 Australian mammals show a typical inverse relationship between population density and body size.
 {{< /mediafigure >}}
 
-{{< selfcheck question="As the graph above shows, population density typically decreases with increasing body size. Why do you think this is the case?" hint="Think about what a larger body requires from its environment compared with a smaller one." >}}
+{{< selfcheck question="As the graph above shows, population density typically decreases with increasing body size. Why do you think this is the case?" hint="Compare the points at the graph's upper left with those at its lower right." >}}
 Smaller animals require less food and other resources, so the environment can support more of them.
 ===CHECKS===
 smaller animals require less food and other resources
@@ -141,29 +141,11 @@ Populations are individuals of a species that live in a particular habitat. Ecol
 
 ### Describe how ecologists measure population size and density
 
-{{< multiplechoice
-  question="Which of the following methods will tell an ecologist about both the size and density of a population?"
-  answer="quadrat"
-  hint="Reread Population Research Methods, noting which method the section says determines both size and density."
->}}
-mark and recapture
-mark and release
-quadrat
-life table
-{{< /multiplechoice >}}
-
-{{< selfcheck question="Describe how a researcher would determine the size of a penguin population in Antarctica using the mark and release method." hint="Walk through the two catches in order — what happens the first time, and what the second catch's tagged fraction lets you estimate." >}}
-The researcher would mark a certain number of penguins with a tag, release them back into the population, and, at a later time, recapture penguins to see what percentage of the recaptured penguins was tagged. This percentage would allow an estimation of the size of the penguin population.
-===CHECKS===
-mark a certain number of penguins with a tag and release them back into the population
-at a later time, recapture penguins to see what percentage of the recaptured penguins was tagged
-this percentage allows an estimation of the size of the penguin population
-{{< /selfcheck >}}
-
 {{< textin
-  question="A square made of various materials, used to determine population size and density in slow-moving or stationary organisms, is called a ________."
-  answer="quadrat"
-  hint="Ecologists stake out or place one of this shape to sample plants like daffodils or giant redwoods."
+  question="The number of population members divided by the area or volume being measured is called ________."
+  answer="population density"
+  accept="density"
+  hint="Reread the first paragraph of the section's first subsection."
 >}}
 
 {{< textin
@@ -173,7 +155,33 @@ this percentage allows an estimation of the size of the penguin population
   hint="Reread the Population Research Methods paragraph on mobile organisms."
 >}}
 
+{{< multiplechoice
+  question="Which of the following methods will tell an ecologist about both the size and density of a population?"
+  answer="quadrat"
+  hint="Reread the first paragraph of Population Research Methods."
+>}}
+mark and recapture
+mark and release
+quadrat
+life table
+{{< /multiplechoice >}}
+
+{{< selfcheck question="Describe how a researcher would determine the size of a penguin population in Antarctica using the mark and release method." hint="Reread the Population Research Methods paragraphs on mobile organisms and the deer example." >}}
+The researcher would mark a certain number of penguins with a tag, release them back into the population, and, at a later time, recapture penguins to see what percentage of the recaptured penguins was tagged. This percentage would allow an estimation of the size of the penguin population.
+===CHECKS===
+mark a certain number of penguins with a tag and release them back into the population
+at a later time, recapture penguins to see what percentage of the recaptured penguins was tagged
+this percentage allows an estimation of the size of the penguin population
+{{< /selfcheck >}}
+
 ### Describe three different patterns of population distribution
+
+{{< textin
+  question="The spatial location of individuals of a given species within a habitat at a particular point in time is called a ________."
+  answer="species dispersion pattern"
+  accept="species distribution pattern|dispersion pattern|distribution pattern"
+  hint="Reread the opening paragraph of Species Distribution."
+>}}
 
 {{< multiplechoice
   question="How is a clumped population distribution beneficial for prey animals?"
@@ -186,22 +194,14 @@ Prey animals live in small family groups to raise young.
 Clumped population distributions ensure that at least one member of the population knows how to identify the seasonal migration route.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The spatial location of individuals of a given species within a habitat at a particular point in time is called a ________."
-  answer="species dispersion pattern"
-  accept="species distribution pattern|dispersion pattern|distribution pattern"
-  hint="Uniform, random, and clumped are the three named arrangements of this kind."
->}}
-
 {{< multiplechoice
-  question="Ecologists measure characteristics of populations, including size, density, ________, age structure, and sex ratio."
-  answer="dispersion pattern"
-  hint="Reread the Summary's second sentence."
+  question="Dandelions and other plants whose wind-dispersed seeds germinate wherever they happen to fall in a favorable environment are the section's example of which arrangement of individuals?"
+  answer="random"
+  hint="Reread the second paragraph of Species Distribution."
 >}}
-life table
-dispersion pattern
-mortality rate
-survivorship curve
+uniform
+random
+clumped
 {{< /multiplechoice >}}
 
 ### Use life tables to calculate mortality rates
@@ -226,6 +226,7 @@ life table
 {{< textin
   question="The proportion of a population surviving to the beginning of an age interval that dies during that interval is called the ________."
   answer="mortality rate"
+  accept="mortality|death rate"
   hint="Reread the Life Tables paragraph that lists the columns of the Dall mountain sheep table."
 >}}
 
@@ -241,10 +242,11 @@ The CDC released the following data in its 2013 Vital Statistics report.
 | 51-60 | 5,564 | 94,352 |
 | 61-70 | 10,479 | 88,788 |
 
-{{< selfcheck question="Using the CDC table above, calculate the mortality rate for each age interval, and describe the trends in adult and childhood mortality per 100,000 births in the United States in 2013." hint="Find each rate the same way the chapter's own worked example does, then compare the youngest and oldest ends of the table." >}}
+{{< selfcheck question="Using the CDC table above, calculate the mortality rate for each age interval, and describe the trends in adult and childhood mortality per 100,000 births in the United States in 2013." hint="Reread the mortality-rate equation and its worked example in Life Tables." >}}
 Mortality is calculated as $\tfrac{\text{number dying}}{\text{number surviving}} \times 1000$, so the mortality rate for each age interval, from 0-10 through 61-70, is 7.56, 2.94, 8.99, 12.6, 25.4, 58.97, and 118.0. The table shows that mortality is high among very young children (under age 10), then falls for teens and young adults. Mortality starts rising again in middle age, nearly doubling from the 50s to the 60s.
 ===CHECKS===
 mortality is calculated as the number dying divided by the number surviving, times 1000
+the mortality rate for each age interval, from 0-10 through 61-70, is 7.56, 2.94, 8.99, 12.6, 25.4, 58.97, and 118.0
 the mortality rate is high among very young children under age 10, then falls for teens and young adults
 mortality starts rising again in middle age
 mortality nearly doubles from the 50s to the 60s
@@ -255,7 +257,7 @@ mortality nearly doubles from the 50s to the 60s
 {{< textin
   question="A graph of the number of surviving population members plotted against the relative age of the member is called a ________."
   answer="survivorship curve"
-  hint="This graph type comes in three named patterns, seen in humans, birds, and trees."
+  hint="Reread the opening sentence of the section's last subsection."
 >}}
 
 {{< multiplechoice
@@ -282,4 +284,4 @@ Type IV
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 45.1: Population Demography](https://openstax.org/books/biology-2e/pages/45-1-population-demography) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" — Figure_45_01_04 (three schematic dot-pattern diagrams paired with three photos, not photos alone) and Figure_45_01_05 (a drawn line graph with illustrated figures, not a captured photograph); the body-mass scatter graph's legend prints "Possom species" in the artwork, which stays as drawn while the longdesc names the group "Possum species" and notes the printed spelling — a source defect; a longdesc added to the body-size/density scatter graph, the dispersion-pattern composite figure, and the survivorship-curve graph, each naming its axes, legend, or panel labels in reading order; the density/body-size Visual Connection kept in the body immediately after its figure as a self-check, since the source keys it with prose rather than a lettered option; the mark-and-recapture and mortality-rate equations set as display math, matching the source's own equation structure; the Dall Mountain Sheep life table kept as a Markdown table in the body, with its footnoted title line ("Data Adapted from Edward S. Deevey, Jr., …") kept as a lead-in sentence; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); the CDC life-table Critical Thinking item's own 7-row data table placed in the Practice block immediately before its self-check, keeping its "The CDC released the following data…" lead-in sentence and rewording only the question's "Calculate the mortality rate…" to "Using the CDC table above, calculate the mortality rate…" so the prompt stands on its own without the table's original paragraph of context; the CDC solution's "high among very young children Americans (under age 10)" corrected to "high among very young children (under age 10)" — a source defect; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (quadrat, mark and recapture, species dispersion pattern, mortality rate, survivorship curve) and one cloze recall item built from the opening paragraph's sentence on life tables (blanking "insurance"; it replaced a life-table glossary item that re-asked the source life-expectancy multiple choice, and it follows that multiple choice so that its stem does not sit above it); two locally written items added to round out objective groups thin on source exercises — a select-the-term multiple choice built from the section's own closing summary sentence naming "dispersion pattern," and a multiple choice built from the Survivorship Curves section's own sentence about birds dying equally at each age interval, keyed Type II — both disclosed here and in the ledger. Source defects: module `m66686`, exercise `eip-18`'s solution reads "the table shows that mortality is high among very young children Americans (under age 10)" — "children Americans" is not grammatical; the page reads "very young children (under age 10)," dropping the stray "Americans."</small>
+<small>This section is adapted from [Biology 2e, Section 45.1: Population Demography](https://openstax.org/books/biology-2e/pages/45-1-population-demography) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" — Figure_45_01_04 (three schematic dot-pattern diagrams paired with three photos, not photos alone) and Figure_45_01_05 (a drawn line graph with illustrated figures, not a captured photograph); the body-mass scatter graph's legend prints "Possom species" in the artwork, which stays as drawn while the longdesc names the group "Possum species" and notes the printed spelling — a source defect; a longdesc added to the body-size/density scatter graph, the dispersion-pattern composite figure, and the survivorship-curve graph, each naming its axes, legend, or panel labels in reading order; the density/body-size Visual Connection kept in the body immediately after its figure as a self-check, since the source keys it with prose rather than a lettered option; the mark-and-recapture and mortality-rate equations set as display math, matching the source's own equation structure; the Dall Mountain Sheep life table kept as a Markdown table in the body, with its footnoted title line ("Data Adapted from Edward S. Deevey, Jr., …") kept as a lead-in sentence; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the clumped-distribution Review Question (fourth in the source) precedes the life-expectancy and human-survivorship questions (second and third); the CDC life-table Critical Thinking item's own 7-row data table placed in the Practice block immediately before its self-check, keeping its "The CDC released the following data…" lead-in sentence and rewording only the question's "Calculate the mortality rate…" to "Using the CDC table above, calculate the mortality rate…" so the prompt stands on its own without the table's original paragraph of context; the CDC solution's "high among very young children Americans (under age 10)" corrected to "high among very young children (under age 10)" — a source defect; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (population density, mark and recapture, species dispersion pattern, mortality rate, survivorship curve) and one cloze recall item built from the opening paragraph's sentence on life tables (blanking "insurance"); two locally written multiple choices added to round out objective groups thin on source exercises — one built from the Species Distribution sentence naming dandelions as the example of random dispersion, keyed "random," and one built from the Survivorship Curves section's own sentence about birds dying equally at each age interval, keyed Type II; within each objective group the recall items are placed ahead of the source questions. Source defects: module `m66686`, exercise `eip-18`'s solution reads "the table shows that mortality is high among very young children Americans (under age 10)" — "children Americans" is not grammatical; the page reads "very young children (under age 10)," dropping the stray "Americans."</small>

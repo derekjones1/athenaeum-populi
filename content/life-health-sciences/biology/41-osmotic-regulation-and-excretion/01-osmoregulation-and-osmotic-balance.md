@@ -90,7 +90,7 @@ Solute concentrations across semi-permeable membranes influence the movement of 
 {{< multiplechoice
   question="Cells in a hypertonic solution tend to:"
   answer="shrink due to water loss"
-  hint="A hypertonic solution has a higher solute concentration outside the cell than inside it — think about which way water moves to equalize that difference."
+  hint="Look at the left panel of the three-panel tonicity figure near the start of the section, and its caption."
 >}}
 shrink due to water loss
 swell due to water gain
@@ -108,10 +108,22 @@ none of the above
   question="A membrane that allows only certain solutes to pass through is called a ________."
   answer="semi-permeable membrane"
   accept="semipermeable membrane"
-  hint="The pleural, serous, and cell membranes of the body are all examples of this kind of barrier."
+  hint="Look in the first paragraph after the learning objectives, where the membranes of the body are described."
 >}}
 
 ### Explain why osmoregulation and osmotic balance are important body functions
+
+{{< textin
+  question="The balance of water and salt input and output that keeps a biological system's osmotic pressure and solute concentration steady is called ________."
+  answer="osmotic balance"
+  hint="Look in the second sentence after the learning objectives, in the parentheses."
+>}}
+
+{{< textin
+  question="The mechanism by which water and solute concentrations are maintained at desired levels is called ________."
+  answer="osmoregulation"
+  hint="Look in the first paragraph after the learning objectives."
+>}}
 
 {{< multiplechoice
   question="When dehydrated human patients need to be given fluids intravenously, they are given:"
@@ -124,44 +136,20 @@ glucose because it is a non-electrolyte
 blood
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The balance of water and salt input and output that keeps a biological system's osmotic pressure and solute concentration steady is called ________."
-  answer="osmotic balance"
-  hint="Look in the second sentence after the learning objectives, in the parentheses."
->}}
-
-{{< selfcheck question="Why is excretion important in order to achieve osmotic balance?" hint="Think about what would build up in the body, and what would happen to its water and solute levels, if nothing were ever excreted." >}}
+{{< selfcheck question="Why is excretion important in order to achieve osmotic balance?" hint="Reread the last paragraph before the first subsection heading and the first paragraph under that heading." >}}
 Excretion allows an organism to rid itself of waste molecules that could be toxic if allowed to accumulate. It also allows the organism to keep the amount of water and dissolved solutes in balance.
 ===CHECKS===
 excretion allows an organism to rid itself of waste molecules that could be toxic if allowed to accumulate
 it allows the organism to keep the amount of water and dissolved solutes in balance
 {{< /selfcheck >}}
 
-{{< textin
-  question="The mechanism by which water and solute concentrations are maintained at desired levels is called ________."
-  answer="osmoregulation"
-  hint="Look in the first paragraph after the learning objectives."
->}}
-
 ### Describe active transport mechanisms
 
-{{< multiplechoice
-  question="The sodium ion is at the highest concentration in:"
-  answer="extracellular fluid"
-  hint="Reread the paragraph in Need for Osmoregulation that names the three major fluid compartments."
+{{< textin
+  question="A solute that breaks down into ions when dissolved in water is called a(n) ________."
+  answer="electrolyte"
+  hint="Look in the first paragraph after the learning objectives, where the kinds of solute in the body's fluids are defined."
 >}}
-intracellular fluid
-extracellular fluid
-blood plasma
-none of the above
-{{< /multiplechoice >}}
-
-{{< selfcheck question="Why do electrolyte ions move across membranes by active transport?" hint="Passive diffusion alone can't hold each fluid compartment's ion concentration where the body needs it — think about why not, and what kind of movement active transport allows that diffusion doesn't." >}}
-Electrolyte ions often require special mechanisms to cross the semi-permeable membranes in the body. Active transport is the movement against a concentration gradient.
-===CHECKS===
-electrolyte ions require special mechanisms to cross the semi-permeable membranes in the body
-active transport is the movement against a concentration gradient
-{{< /selfcheck >}}
 
 {{< textin
   question="A solute that does not break down into ions when dissolved in water is called a(n) ________."
@@ -170,11 +158,23 @@ active transport is the movement against a concentration gradient
   hint="Look in the first paragraph after the learning objectives, where the two kinds of solute in the body's fluids are defined."
 >}}
 
-{{< textin
-  question="A solute that breaks down into ions when dissolved in water is called a(n) ________."
-  answer="electrolyte"
-  hint="Athletes are told to replace these, along with fluids, after heavy sweating."
+{{< multiplechoice
+  question="The sodium ion is at the highest concentration in:"
+  answer="extracellular fluid"
+  hint="Reread the second paragraph of the first subsection, which names the three major fluid compartments."
 >}}
+intracellular fluid
+extracellular fluid
+blood plasma
+none of the above
+{{< /multiplechoice >}}
+
+{{< selfcheck question="Why do electrolyte ions move across membranes by active transport?" hint="Reread the third paragraph of the subsection on transport across cell membranes." >}}
+Electrolyte ions often require special mechanisms to cross the semi-permeable membranes in the body. Active transport is the movement against a concentration gradient.
+===CHECKS===
+electrolyte ions often require special mechanisms to cross the semi-permeable membranes in the body
+active transport is the movement against a concentration gradient
+{{< /selfcheck >}}
 
 ### Explain osmolarity and the way in which it is measured
 
@@ -182,33 +182,22 @@ active transport is the movement against a concentration gradient
   question="The gram equivalent of the molecular weight of a substance is called a ________."
   answer="mole"
   accept="mol"
-  hint="Sodium chloride's molecular weight is 58.44, so one of these weighs 58.44 grams."
+  hint="Look at the opening sentences of the subsection on how solute concentrations are measured."
 >}}
 
 {{< textin
   question="The number of moles of solute per liter of solution is called a solution's ________."
   answer="molarity"
-  hint="This measure divides by the solution's total liquid volume, not its solvent's mass."
+  hint="Look in the first paragraph of the subsection on how solute concentrations are measured, just after the sodium chloride example."
 >}}
 
 {{< textin
   question="The number of moles of solute per kilogram of solvent is called a solution's ________."
   answer="molality"
-  hint="This measure divides by the solvent's mass, not the solution's total volume — the opposite of the other similarly named unit."
+  hint="Look in the first paragraph of the subsection on how solute concentrations are measured, two sentences after the sodium chloride example."
 >}}
 
 ### Describe osmoregulators or osmoconformers and how these tools allow animals to adapt to different environments
-
-{{< multiplechoice
-  question="Organisms like the salmon and molly, which can tolerate a relatively wide range of salinity, are called ________."
-  answer="euryhaline organisms"
-  hint="Look at how the module describes salmon and molly's tolerance for a wide range of salinity, versus organisms restricted to one narrow range."
->}}
-stenohaline organisms
-euryhaline organisms
-osmoconformers
-ureotelic animals
-{{< /multiplechoice >}}
 
 {{< textin
   question="An organism that maintains its tonicity irrespective of its environment is called a(n) ________."
@@ -219,9 +208,20 @@ ureotelic animals
 {{< textin
   question="An organism that changes its tonicity based on its environment is called a(n) ________."
   answer="osmoconformer"
-  hint="Most marine invertebrates fit this pattern, matching their body fluids to the surrounding seawater."
+  hint="Look in the section's last subsection, at the sentence on most marine invertebrates."
 >}}
+
+{{< multiplechoice
+  question="Organisms like the salmon and molly, which can tolerate a relatively wide range of salinity, are called ________."
+  answer="euryhaline organisms"
+  hint="Look in the section's last subsection, at the sentence that names salmon and molly."
+>}}
+stenohaline organisms
+euryhaline organisms
+osmoconformers
+ureotelic animals
+{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 41.1: Osmoregulation and Osmotic Balance](https://openstax.org/books/biology-2e/pages/41-1-osmoregulation-and-osmotic-balance) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_41_01_02ab re-kinded from the manifest's file-extension "photo" guess to "diagram" (it is a labeled illustration with arrows and printed captions, not a captured photograph); Figure_B41_01_01's alt rewritten from the manifest's letter-spaced, screen-reader-spelled source text ("upper case H subscript 2 baseline upper case O") to a plain visual description, with the walk-through moved into a longdesc; Figure_41_01_02ab's alt lightly cleaned from the source (which read "chlorine ions") to "chloride ions," matching the section's own prose and the figure's own printed "Na⁺,K⁺,Cl⁻" label; a longdesc added to both figures, transcribing each drawing's own printed labels, arrow colors, and arrow directions in reading order, since neither figure's one-line caption carries that content; ion charges (Na⁺, K⁺, Ca²⁺, Mg²⁺, Cl⁻, CO₃²⁻, HCO₃⁻, PO₄³⁻) set in Unicode in place of the source's plain-text superscripts and subscripts; in-text pointers to figures ("as seen in [Figure]," "as illustrated in [Figure]") replaced with "as shown below," since Hugo does not number figures; the Career Connection note rendered as a callout with its bold name and italic title; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eleven key-term recall items added from the glossary, covering all eleven glossary terms — electrolyte, non-electrolyte, mole, molarity, molality, osmoregulation, osmotic balance, osmotic pressure, semi-permeable membrane, osmoconformer, and osmoregulator; one locally written multiple choice ("euryhaline organisms" vs. the module's own "stenohaline," "osmoconformers," and "ureotelic animals") added to the fifth objective's group, which the source's three Review Questions and two Critical Thinking Questions do not otherwise reach, built strictly from the section's own sentence about salmon and molly. The sodium-ion Review Question (fs-idm2578240) is kept keyed to the source's answer B, extracellular fluid, on source authority alone: the module never states which compartment holds the highest sodium concentration, and it does not contradict B, so general knowledge cannot overturn it. One definition is corrected with a visible Source note: a milliosmole counts dissolved particles, not milliequivalents of charge.</small>
+<small>This section is adapted from [Biology 2e, Section 41.1: Osmoregulation and Osmotic Balance](https://openstax.org/books/biology-2e/pages/41-1-osmoregulation-and-osmotic-balance) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_41_01_02ab re-kinded from the manifest's file-extension "photo" guess to "diagram" (it is a labeled illustration with arrows and printed captions, not a captured photograph); Figure_B41_01_01's alt rewritten from the manifest's letter-spaced, screen-reader-spelled source text ("upper case H subscript 2 baseline upper case O") to a plain visual description, with the walk-through moved into a longdesc; Figure_41_01_02ab's alt lightly cleaned from the source (which read "chlorine ions") to "chloride ions," matching the section's own prose and the figure's own printed "Na⁺,K⁺,Cl⁻" label; a longdesc added to both figures, transcribing each drawing's own printed labels, arrow colors, and arrow directions in reading order, since neither figure's one-line caption carries that content; ion charges (Na⁺, K⁺, Ca²⁺, Mg²⁺, Cl⁻, CO₃²⁻, HCO₃⁻, PO₄³⁻) set in Unicode in place of the source's plain-text superscripts and subscripts; in-text pointers to figures ("as seen in [Figure]," "as illustrated in [Figure]") replaced with "as shown below," since Hugo does not number figures; the Career Connection note rendered as a callout with its bold name and italic title; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 3, 1, 2 of the source's numbering (the Critical Thinking Questions keep their order); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eleven key-term recall items added from the glossary, covering all eleven glossary terms — electrolyte, non-electrolyte, mole, molarity, molality, osmoregulation, osmotic balance, osmotic pressure, semi-permeable membrane, osmoconformer, and osmoregulator; one locally written multiple choice ("euryhaline organisms" vs. the module's own "stenohaline," "osmoconformers," and "ureotelic animals") added to the fifth objective's group, which the source's three Review Questions and two Critical Thinking Questions do not otherwise reach, built strictly from the section's own sentence about salmon and molly. The sodium-ion Review Question (fs-idm2578240) is kept keyed to the source's answer B, extracellular fluid, on source authority alone: the module never states which compartment holds the highest sodium concentration, and it does not contradict B, so general knowledge cannot overturn it. One definition is corrected with a visible Source note: a milliosmole counts dissolved particles, not milliequivalents of charge.</small>

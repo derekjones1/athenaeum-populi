@@ -38,7 +38,7 @@ Antibodies can be divided into five classes—IgM, IgG, IgA, IgD, IgE—based on
 
 After an adaptive defense is produced against a pathogen, typically plasma cells first secrete IgM into the blood. BCRs on naïve B cells are of the IgM class and occasionally IgD class. IgM molecules make up approximately ten percent of all antibodies. Prior to antibody secretion, plasma cells assemble IgM molecules into pentamers (five individual antibodies) linked by a joining (J) chain, as shown below. The pentamer arrangement means that these macromolecules can bind ten identical antigens. However, IgM molecules released early in the adaptive immune response do not bind to antigens as stably as IgGs, which are one of the possible types of antibodies secreted in large quantities upon reexposure to the same pathogen. The table below summarizes the properties of immunoglobulins and illustrates their basic structures.
 
-{{< mediafigure src="biology/Figure_42_03_02" kind="diagram" alt="A table lists IgA, IgD, IgE, IgG, and IgM by name and properties, with a small structural diagram beside each row: IgA as two linked Y-shaped units, IgD, IgE, and IgG each as a single Y-shaped unit, and IgM as five Y-shaped units joined in a star around a central point." >}}
+{{< mediafigure src="biology/Figure_42_03_02" kind="diagram" alt="A table lists IgA, IgD, IgE, IgG, and IgM by name and properties, with a small structural diagram beside each row: IgA as two linked Y-shaped units, IgD, IgE, and IgG each as a single Y-shaped unit, and IgM as five Y-shaped units joined in a star around a central point." longdesc="Three columns — Name, Properties, and Structure — and five rows, top to bottom. IgA: Found in mucous (the artwork's misspelling of mucus), saliva, tears, and breast milk. Protects against pathogens. Its structure is two Y-shaped units joined stem to stem. IgD: Part of the B cell receptor. Activates basophils and mast cells. One Y-shaped unit. IgE: Protects against parasitic worms. Responsible for allergic reactions. One Y-shaped unit. IgG: Secreted by plasma cells in the blood. Able to cross the placenta into the fetus. One Y-shaped unit. IgM: May be attached to the surface of a B cell or secreted into the blood. Responsible for early stages of immunity. Five Y-shaped units joined by their stems around a central pentagon." >}}
 Immunoglobulins have different functions, but all are composed of light and heavy chains that form a Y-shaped structure.
 {{< /mediafigure >}}
 
@@ -62,7 +62,7 @@ Antibodies also mark pathogens for destruction by phagocytic cells, such as macr
 
 Not all antibodies bind with the same strength, specificity, and stability. In fact, antibodies exhibit different **affinities** (attraction) depending on the molecular complementarity between antigen and antibody molecules, as illustrated below. An antibody with a higher affinity for a particular antigen would bind more strongly and stably, and thus would be expected to present a more challenging defense against the pathogen corresponding to the specific antigen.
 
-{{< mediafigure src="biology/Figure_42_03_04" kind="diagram" alt="Four small diagrams: a single Y-shaped antibody binds an oval pathogen with both of its arms (affinity) beside a five-armed star of Y-shaped antibodies whose lower units bind the same pathogen shape at several points (avidity), and two separate Y-shaped antibodies each bind a differently shaped notch on an oval pathogen (cross reactivity)." >}}
+{{< mediafigure src="biology/Figure_42_03_04" kind="diagram" alt="Two labeled panels of Y-shaped antibodies binding bean-shaped pathogens by the projections on their surfaces: panel (a), Affinity versus avidity, sets one Y-shaped antibody binding a pathogen with both arm tips beside a five-unit star of antibodies whose lower arms bind a second pathogen at several points; panel (b), Cross reactivity, shows two identical antibodies, each binding a different pathogen whose projections differ in shape." longdesc="Panel (a) captions, printed under its two drawings: left, Affinity refers to the strength of a single antibody–antigen interaction. Each IgG antigen binding site typically has high affinity for its target. Right, Avidity refers to the strength of all interactions combined. IgM typically has low affinity antigen binding sites, but there are ten of them, so avidity is high. Panel (b) caption, printed under both drawings: An antibody may react with two different epitopes." >}}
 (a) Affinity refers to the strength of single interaction between antigen and antibody, while avidity refers to the strength of all interactions combined. (b) An antibody may cross react with different epitopes.
 {{< /mediafigure >}}
 
@@ -100,32 +100,32 @@ Antibodies (immunoglobulins) are the molecules secreted from plasma cells that m
 
 ### Explain cross-reactivity
 
-{{< selfcheck question="What are the benefits and costs of antibody cross reactivity?" hint="Think about what happens when one antibody's response reaches beyond the single antigen that triggered it — once toward unrelated pathogens that happen to share an epitope, and once toward the body's own molecules." >}}
-Cross reactivity of antibodies can be beneficial when it allows an individual's immune system to respond to an array of similar pathogens after being exposed to just one of them. A potential cost of cross reactivity is an antibody response to parts of the body (self) in addition to the appropriate antigen.
-===CHECKS===
-beneficial: responding to an array of similar pathogens after exposure to just one of them
-a cost: an antibody response to parts of the body (self) in addition to the appropriate antigen
-{{< /selfcheck >}}
-
 {{< textin
   question="The attraction arising from molecular complementarity between antigen and antibody molecules is called ________."
   answer="affinity"
   accept="affinities"
-  hint="A higher value of this property lets an antibody bind its matching antigen more strongly and stably."
+  hint="Reread the paragraph just above the four-diagram binding figure in the Antibody Functions section."
 >}}
 
 {{< textin
   question="Binding of an antibody to an epitope corresponding to an antigen that is different from the one the antibody was raised against is called ________."
   answer="cross reactivity"
-  accept="cross reactivities"
-  hint="This is what lets one antibody sometimes respond to a pathogen it was never specifically produced against."
+  accept="cross reactivities|crossreactivity"
+  hint="Reread the paragraph just before the one that mentions systemic lupus erythematosus (SLE)."
 >}}
 
 {{< textin
   question="The total binding strength of a multivalent antibody with antigen is called ________."
   answer="avidity" accept="avidities"
-  hint="IgM's five linked antibody units each bind only moderately well on their own, yet combine into a high overall value of this kind."
+  hint="Reread the paragraph just after the four-diagram binding figure."
 >}}
+
+{{< selfcheck question="What are the benefits and costs of antibody cross reactivity?" hint="Reread the paragraph that mentions systemic lupus erythematosus (SLE)." >}}
+Cross reactivity of antibodies can be beneficial when it allows an individual's immune system to respond to an array of similar pathogens after being exposed to just one of them. A potential cost of cross reactivity is an antibody response to parts of the body (self) in addition to the appropriate antigen.
+===CHECKS===
+beneficial: responding to an array of similar pathogens after exposure to just one of them
+a cost: an antibody response to parts of the body (self) in addition to the appropriate antigen
+{{< /selfcheck >}}
 
 ### Describe the structure and function of antibodies
 
@@ -133,13 +133,13 @@ a cost: an antibody response to parts of the body (self) in addition to the appr
   question="A protein produced by plasma cells after stimulation by an antigen is called a(n) ________."
   answer="antibody"
   accept="antibodies|immunoglobulin|Ig"
-  hint="Each of this molecule's five classes is denoted by an abbreviation ending in a different letter, such as one ending in M or one ending in G."
+  hint="Reread the first sentence of the section's opening paragraph."
 >}}
 
 {{< multiplechoice
   question="The structure of an antibody is similar to the extracellular component of which receptor?"
   answer="BCR"
-  hint="Reread the B Lymphocytes subsection of the previous section, Adaptive Immune Response, on the receptors a B cell carries."
+  hint="Reread the last paragraph of the Antibody Structure section, just after the gene-rearrangement figure."
 >}}
 MHC I
 MHC II
@@ -150,7 +150,8 @@ none of the above
 {{< textin
   question="Antibodies coat extracellular pathogens and ________ them by blocking key sites on the pathogen that enhance their infectivity, such as receptors that dock pathogens on host cells."
   answer="neutralize"
-  hint="Reread the second paragraph of the Antibody Functions subsection; this action can prevent pathogens from entering and infecting host cells at all."
+  accept="neutralise"
+  hint="Reread the second paragraph of the Antibody Functions section."
 >}}
 
 {{< multiplechoice
@@ -180,7 +181,7 @@ IgE
 {{< multiplechoice
   question="What is the most abundant antibody class detected in the serum upon reexposure to a pathogen or in reaction to a vaccine?"
   answer="IgG"
-  hint="Reread the first paragraph of the Antibody Classes subsection and the class table below it."
+  hint="Reread the first two paragraphs of the Antibody Classes subsection."
 >}}
 IgM
 IgA
@@ -189,11 +190,12 @@ IgE
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Antibodies (immunoglobulins) are the molecules secreted from ________ that mediate the humoral immune response."
-  answer="plasma cells"
-  hint="Reread the first sentence of the section's opening paragraph."
+  question="Antibodies (immunoglobulins) are the molecules secreted from plasma cells that mediate the ________."
+  answer="humoral immune response"
+  accept="humoral response|humoral immunity"
+  hint="Reread the second sentence of the section's opening paragraph."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 42.3: Antibodies](https://openstax.org/books/biology-2e/pages/42-3-antibodies) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all four figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (each is a drawn schematic, not a captured photograph); a counted longdesc added to the antibody-structure figure (Figure_42_03_01), transcribing its gene-rearrangement flow chart and Y-shaped-antibody diagram label by label; the other three figures' letter-spaced source alts rewritten as plain descriptions since their content is already carried by the caption and surrounding prose; in-text pointers to figures ("Figure 42.22" through "Figure 42.25") replaced with "shown below," "as illustrated below," or "the table below," since Hugo does not number figures; the numeric exponent (10 to the sixth power) set in KaTeX per the house notation rule; the end-of-section Review Questions and the Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively); a rubric added to the self-check, decomposing its model answer (the source solution) into two check-off clauses with no new claims; four key-term recall items added from the glossary (antibody, affinity, avidity, cross reactivity), plus a cloze built from the Antibody Functions subsection's own sentence (neutralize) in place of a passive-immunity recall item that sat directly above the breastfed-infant Review Question, whose options print its key; one cloze recall item added from the section summary, blanking "plasma cells." One number is corrected with a visible Source note: light-chain VJ recombination alone gives a few hundred combinations, and the million-fold figure is the light-chain by heavy-chain product.</small>
+<small>This section is adapted from [Biology 2e, Section 42.3: Antibodies](https://openstax.org/books/biology-2e/pages/42-3-antibodies) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all four figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (each is a drawn schematic, not a captured photograph); a counted longdesc added to the antibody-structure figure (Figure_42_03_01), transcribing its gene-rearrangement flow chart and Y-shaped-antibody diagram label by label; the other three figures' letter-spaced source alts rewritten as plain descriptions; longdescs added to the immunoglobulin table (Figure_42_03_02), transcribing its five rows as printed and noting that its "mucous" is the artwork's misspelling of the noun mucus, and to the affinity, avidity, and cross-reactivity figure (Figure_42_03_04), transcribing its printed captions; in-text pointers to figures ("Figure 42.22" through "Figure 42.25") replaced with "shown below," "as illustrated below," or "the table below," since Hugo does not number figures; the numeric exponent (10 to the sixth power) set in KaTeX per the house notation rule; the end-of-section Review Questions and the Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively); a rubric added to the self-check, decomposing its model answer (the source solution) into two check-off clauses with no new claims; four key-term recall items added from the glossary (antibody, affinity, avidity, cross reactivity), plus a cloze built from the Antibody Functions subsection's own sentence (neutralize) in place of a passive-immunity recall item that sat directly above the breastfed-infant Review Question, whose options print its key; one cloze recall item added from the section summary, blanking "humoral immune response." One number is corrected with a visible Source note: light-chain VJ recombination alone gives a few hundred combinations, and the million-fold figure is the light-chain by heavy-chain product.</small>

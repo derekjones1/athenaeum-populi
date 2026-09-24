@@ -109,7 +109,7 @@ Reproduction may be asexual when one individual produces genetically identical o
 {{< multiplechoice
   question="Which form of reproduction is thought to be best in a stable environment?"
   answer="asexual"
-  hint="Compare what each option's offspring look like genetically, then decide which strategy pays off when the surrounding conditions are not changing."
+  hint="Reread the first paragraph of the section's introduction."
 >}}
 asexual
 sexual
@@ -128,7 +128,7 @@ budding
 fragmentation
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is sexual reproduction useful if only half the animals can produce offspring and two separate cells must be combined to form a third?" hint="Think about what varying gene combinations do for a population when the surrounding conditions change, not about the cost of needing two parents." >}}
+{{< selfcheck question="Why is sexual reproduction useful if only half the animals can produce offspring and two separate cells must be combined to form a third?" hint="Reread the second paragraph of the section's introduction." >}}
 Sexual reproduction produces a new combination of genes in the offspring that may better enable them to survive changes in the environment and assist in the survival of the species.
 ===CHECKS===
 sexual reproduction produces a new combination of genes in the offspring
@@ -137,9 +137,10 @@ and assist in the survival of the species
 {{< /selfcheck >}}
 
 {{< textin
-  question="A form of reproduction that produces offspring genetically identical to the parent is called ________."
-  answer="asexual reproduction"
-  hint="Think about what a clone shares with the single parent that produced it."
+  question="In an unstable or unpredictable environment asexually-reproducing species may be at a disadvantage because all the offspring are genetically identical and may not have the genetic ________ to survive in new or different conditions."
+  answer="variation"
+  accept="diversity"
+  hint="Reread the first paragraph of the section's introduction."
 >}}
 
 {{< textin
@@ -150,42 +151,42 @@ and assist in the survival of the species
 
 ### Discuss asexual reproduction methods
 
-{{< multiplechoice
-  question="Which form of reproduction can result from damage to the original animal?"
-  answer="fragmentation"
-  hint="Reread the definitions in the Asexual Reproduction subsections, looking for the one that involves regeneration."
->}}
-asexual
-fragmentation
-budding
-parthenogenesis
-{{< /multiplechoice >}}
-
 {{< textin
   question="The form of asexual reproduction in which a unicellular organism splits into two separate organisms by mitosis is called ________."
   answer="fission"
   accept="binary fission"
-  hint="One organism splits into two individuals of about the same size, most often by ordinary cell division."
+  hint="Reread the first subsection under Asexual Reproduction."
 >}}
 
 {{< textin
   question="The form of asexual reproduction that results from an outgrowth of part of a cell or body region separating into a new individual is called ________."
   answer="budding"
-  hint="Picture a small offshoot growing on the side of the parent and eventually pinching free, the way the pictured animal on this page does it."
+  hint="Reread the second subsection under Asexual Reproduction."
 >}}
 
 {{< textin
   question="The form of asexual reproduction in which an egg develops into a complete individual without being fertilized is called ________."
   answer="parthenogenesis"
-  hint="No mating is involved here — think about what happens when an unfertilized egg still develops on its own."
+  hint="Reread the last subsection under Asexual Reproduction."
 >}}
+
+{{< multiplechoice
+  question="Which form of reproduction can result from damage to the original animal?"
+  answer="fragmentation"
+  hint="Reread the subsections under Asexual Reproduction."
+>}}
+sexual
+fragmentation
+budding
+parthenogenesis
+{{< /multiplechoice >}}
 
 ### Discuss sexual reproduction methods
 
 {{< multiplechoice
   question="Which form of reproduction is useful to an animal with little mobility that reproduces sexually?"
   answer="hermaphroditism"
-  hint="Reread the subsections under Sexual Reproduction."
+  hint="Reread the Sexual Reproduction section."
 >}}
 fission
 budding
@@ -193,7 +194,7 @@ parthenogenesis
 hermaphroditism
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What determines which sex will result in offspring of birds and mammals?" hint="Compare which chromosome each group's homozygous state pairs with, then check which sex each pairing produces." >}}
+{{< selfcheck question="What determines which sex will result in offspring of birds and mammals?" hint="Reread the first two paragraphs of Sex Determination." >}}
 The presence of the W chromosome in birds determines femaleness and the presence of the Y chromosome in mammals determines maleness. The absence of those chromosomes and the homogeneity of the offspring (ZZ or XX) leads to the development of the other sex.
 ===CHECKS===
 the presence of the W chromosome in birds determines femaleness
@@ -202,18 +203,17 @@ the absence of those chromosomes and the homogeneity of the offspring (ZZ or XX)
 {{< /selfcheck >}}
 
 {{< textin
-  question="The state of having both male and female reproductive parts within the same individual organism is called ________."
-  answer="hermaphroditism"
-  accept="hermaphrodism"
-  hint="Reread the first subsection under Sexual Reproduction."
+  question="Sex determination in some crocodiles and turtles, for example, is often dependent on the ________ during critical periods of egg development."
+  answer="temperature"
+  hint="Reread the third paragraph of Sex Determination."
 >}}
 
 {{< textin
   question="Sexual reproduction may mean the joining of sperm and eggs within animals' bodies or it may mean the release of sperm and eggs into the ________."
   answer="environment"
-  hint="Think about where fertilization happens when it takes place outside the body, rather than inside it."
+  hint="Reread the third sentence of the section summary."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 43.1: Reproduction Methods](https://openstax.org/books/biology-2e/pages/43-1-reproduction-methods) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text edited to describe rather than caption-repeat; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_43_01_02 and Figure_43_01_03 are hand-drawn or computer-rendered illustrations, not captured photographs — the module's own alt text calls both "Illustration shows..." while the two kept as photo are called "Image shows..." and "Photo shows..."); a longdesc added to the budding hydra illustration, the only figure on the page whose two panels and connecting arrow are not otherwise carried by its one-line caption, transcribing the illustration's own before/after layout without stating which of the two clusters is the bud; in-text pointers to figures ("Figure 43.2" through "Figure 43.5") replaced with "shown below," "illustrated below," or "the illustration below shows," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/budding_hydra redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively) — all four Review Questions and both Critical Thinking Questions are used, and neither the source options nor its keys were altered; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (asexual reproduction, fission, budding, parthenogenesis, hermaphroditism), covering five of the section's seven glossary terms (fragmentation is tested instead as the keyed answer of a multiple choice, and sexual reproduction as the key of the Review Question on genetically unique individuals); one cloze recall item built from the introduction's sentence on a cost of sexual reproduction ("...limit the ability to colonize new ________," answered "habitats"); one cloze recall item added from the section's own summary sentence ("...it may mean the release of sperm and eggs into the ________," answered "environment"), reaching for a summary item ahead of writing a local one, disclosed as summary-sourced rather than a source exercise; the source's "its termed protandry" corrected to "it's termed protandry". One name is corrected with a visible Source note: the parthenogenetic shark is a blacktip shark, where the source prints "blacktop".</small>
+<small>This section is adapted from [Biology 2e, Section 43.1: Reproduction Methods](https://openstax.org/books/biology-2e/pages/43-1-reproduction-methods) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text edited to describe rather than caption-repeat; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_43_01_02 and Figure_43_01_03 are hand-drawn or computer-rendered illustrations, not captured photographs — the module's own alt text calls both "Illustration shows..." while the two kept as photo are called "Image shows..." and "Photo shows..."); a longdesc added to the budding hydra illustration, the only figure on the page whose two panels and connecting arrow are not otherwise carried by its one-line caption, transcribing the illustration's own before/after layout without stating which of the two clusters is the bud; in-text pointers to figures ("Figure 43.2" through "Figure 43.5") replaced with "shown below," "illustrated below," or "the illustration below shows," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/budding_hydra redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively) — all four Review Questions and both Critical Thinking Questions are used, with every source key kept; in the Review Question on reproduction after damage to the original animal, the source option "asexual" is replaced with "sexual," because fragmentation, the key, is itself a form of asexual reproduction, so "asexual" was a second right answer; the Review Questions are placed under the objectives they test, so the fourth (on genetically unique individuals) comes before the second and third; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items added from the glossary (fission, budding, parthenogenesis), covering three of the section's seven glossary terms (asexual reproduction, fragmentation, hermaphroditism, and sexual reproduction are the keys of the four Review Questions, so they are not asked again as recall); two cloze recall items built from the introduction's sentences on a disadvantage of asexual reproduction ("...may not have the genetic ________," answered "variation," with "diversity," the module's own word for sexual offspring, also accepted) and on a cost of sexual reproduction ("...limit the ability to colonize new ________," answered "habitats"); one cloze recall item built from the Sex Determination sentence on crocodiles and turtles ("...often dependent on the ________ during critical periods of egg development," answered "temperature"); one cloze recall item added from the section's own summary sentence ("...it may mean the release of sperm and eggs into the ________," answered "environment"), reaching for a summary item ahead of writing a local one, disclosed as summary-sourced rather than a source exercise; the source's "its termed protandry" corrected to "it's termed protandry". One name is corrected with a visible Source note: the parthenogenetic shark is a blacktip shark, where the source prints "blacktop".</small>

@@ -146,17 +146,17 @@ Biogeography is the study of the geographic distribution of living things as wel
 {{< textin
   question="The study of the geographic distribution of living things and the abiotic factors that affect their distribution is called ________."
   answer="biogeography"
-  hint="This is the section's own name — the whole discipline of mapping where organisms live and why."
+  hint="Reread the first sentence of the section's first subsection."
 >}}
 
 {{< textin
   question="A species found only in a specific geographic area that is usually restricted in size is described as ________."
   answer="endemic"
   accept="endemic species"
-  hint="The Venus flytrap and the forest gardenia are both examples of this kind of narrowly-restricted species."
+  hint="Reread the paragraph on patterns of species distribution."
 >}}
 
-{{< selfcheck question="Many endemic species are found in areas that are geographically isolated. Suggest a plausible scientific explanation for why this is so." hint="Think about what long-term separation from other populations lets a lineage do on its own." >}}
+{{< selfcheck question="Many endemic species are found in areas that are geographically isolated. Suggest a plausible scientific explanation for why this is so." hint="Reread the paragraph on species distribution patterns and geographic barriers, just before the Australia figure." >}}
 Areas that have been geographically isolated for very long periods of time allow unique species to evolve; these species are distinctly different from those of surrounding areas and remain so, since geographic isolation keeps them separated from other species.
 ===CHECKS===
 geographic isolation over very long periods of time allows unique species to evolve
@@ -175,20 +175,20 @@ geographic isolation keeps them separated from other species
 {{< textin
   question="An ecological community of plants, animals, and other organisms that is adapted to a characteristic set of environmental conditions is called a ________."
   answer="biome"
-  hint="The abiotic factors this section describes — light, temperature, water, nutrients — together determine which large-scale community of this kind exists in a given place."
+  hint="Reread the section's opening paragraph."
 >}}
 
 {{< textin
   question="The distribution of living things is influenced by several environmental factors that are, in part, controlled by the ________ at which a species is found."
   answer="latitude or elevation"
   accept="latitude and elevation|elevation or latitude|elevation and latitude"
-  hint="This section's own summary names the two geographic coordinates that, in part, control which environmental factors a species experiences."
+  hint="Reread the Summary's third sentence."
 >}}
 
 {{< multiplechoice
   question="An ecologist hiking up a mountain may notice different biomes along the way due to changes in all of the following except:"
   answer="latitude"
-  hint="Reread the last sentence of the walk-north paragraphs, which compares hiking up a mountain with traveling north."
+  hint="Reread the last sentence of the second walk-north paragraph."
 >}}
 elevation
 rainfall
@@ -212,10 +212,10 @@ sunlight
 {{< textin
   question="A layer of water with a temperature that is significantly different from that of the surrounding layers is called a ________."
   answer="thermocline"
-  hint="The formation of this kind of layer is what causes a lake's spring and fall turnovers."
+  hint="Reread the paragraph that introduces the spring-and-fall turnover."
 >}}
 
-{{< selfcheck question="Compare and contrast ocean upwelling and spring and fall turnovers." hint="Ask which process runs on a calendar tied to seasonal ice, and which one does not depend on freezing and thawing at all — then ask what the two accomplish in common." >}}
+{{< selfcheck question="Compare and contrast ocean upwelling and spring and fall turnovers." hint="Reread the Energy Sources paragraphs on ocean upwelling and on lake turnover." >}}
 Ocean upwelling is a continual process that occurs year-round. Spring and fall turnover in freshwater lakes and ponds, however, is a seasonal process that occurs due to temperature changes in the water that take place during springtime warming and autumn cooling. Both ocean upwelling and spring and fall turnover enable nutrients in the organic materials at the bottom of the body of water to be recycled and reused by living things.
 ===CHECKS===
 ocean upwelling is a continual process that occurs year-round
@@ -229,27 +229,27 @@ both processes let nutrients from the bottom of the body of water be recycled an
   question="A measurement of the energy accumulation within an ecosystem, calculated as the total amount of carbon fixed per year minus the amount that is oxidized during cellular respiration, is called ________."
   answer="net primary productivity"
   accept="NPP"
-  hint="This is the section's running total of fixed carbon left over after respiration burns some of it back off."
+  hint="Reread the first paragraph of Abiotic Factors Influencing Plant Growth."
 >}}
 
 {{< textin
   question="The total mass of aboveground living plants per area is called ________."
   answer="above-ground biomass"
   accept="aboveground biomass"
-  hint="Root mass is excluded from this measurement because it is so difficult to measure."
+  hint="Reread the sentence on how productivity is estimated in terrestrial environments."
 >}}
 
 {{< multiplechoice
-  question="The amount of biomass produced by a biome is measured by its ________."
-  answer="net primary productivity"
-  hint="Reread the Summary's closing sentence."
+  question="Environments with the greatest amount of biomass produce conditions in which photosynthesis, plant growth, and the resulting net primary productivity are optimized. What is the climate of these areas?"
+  answer="warm and wet"
+  hint="Reread the second paragraph of Abiotic Factors Influencing Plant Growth."
 >}}
-above-ground biomass
-net primary productivity
-thermocline
-biosphere
+dry and cold
+warm and dry
+warm and wet
+cold and wet
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 44.2: Biogeography](https://openstax.org/books/biology-2e/pages/44-2-biogeography) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all six figures matched the media manifest's kind guess (photo/diagram) on inspection, so none needed re-kinding; a longdesc added to the two diagrams whose printed arrows and labels are not carried by their one-line captions — the ocean-upwelling illustration and the four-panel lake-turnover illustration — transcribing each drawing's arrow colors, directions, and printed temperature labels in reading order; the lake-turnover figure's source alt (a screen-reader spelling reading "degrees upper case C" throughout) rewritten as a plain visual description, with the seasonal walk-through moved into the longdesc, which names only what is drawn and never states which season's process differs in tropical lakes; in-text pointers to the printed figure numbers (including one stray "ab" left over from a print cross-reference) replaced with "shown below," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/platypus redirect URL with its anchor text expanded from "video" to name the destination; the body Visual Connection (the tropical-lake-turnover question beside the lake-turnover figure) rendered as the figure followed by a self-check, kept in the body — the note copy and the `<exercise>` copy print identical question and solution wording, so no adjudication was needed; both end-of-section Review Questions and both Critical Thinking Questions adapted into the closing interactive Practice block, placed under the objective each one tests; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items added from the glossary (biogeography, endemic, biome, thermocline, net primary productivity, above-ground biomass), plus one summary-sourced cloze text-recall item, one summary-sourced select-the-term multiple choice, and one recall item on "generalists" built from the Biogeography paragraph's own sentence (it replaced a summary cloze on "specific geographic area" that re-asked the endemic key-term item; the hiking multiple choice now closes its group, after the biome and latitude-or-elevation recall items, because its stem prints "biomes" and its options print "elevation" and "latitude"), filling out all four objective groups. No source key departures, distractor replacements, or wording corrections were needed on this page.</small>
+<small>This section is adapted from [Biology 2e, Section 44.2: Biogeography](https://openstax.org/books/biology-2e/pages/44-2-biogeography) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all six figures matched the media manifest's kind guess (photo/diagram) on inspection, so none needed re-kinding; a longdesc added to the two diagrams whose printed arrows and labels are not carried by their one-line captions — the ocean-upwelling illustration and the four-panel lake-turnover illustration — transcribing each drawing's arrow colors, directions, and printed temperature labels in reading order; the lake-turnover figure's source alt (a screen-reader spelling reading "degrees upper case C" throughout) rewritten as a plain visual description, with the seasonal walk-through moved into the longdesc, which names only what is drawn and never states which season's process differs in tropical lakes; in-text pointers to the printed figure numbers (including one stray "ab" left over from a print cross-reference) replaced with "shown below," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/platypus redirect URL with its anchor text expanded from "video" to name the destination; the body Visual Connection (the tropical-lake-turnover question beside the lake-turnover figure) rendered as the figure followed by a self-check, kept in the body — the note copy and the `<exercise>` copy print identical question and solution wording, so no adjudication was needed; both end-of-section Review Questions and both Critical Thinking Questions adapted into the closing interactive Practice block, placed under the objective each one tests; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items added from the glossary (biogeography, endemic, biome, thermocline, net primary productivity, above-ground biomass), plus one summary-sourced cloze text-recall item, one multiple choice on the climate of the highest-biomass environments built from the second paragraph of "Abiotic Factors Influencing Plant Growth" (keyed "warm and wet" from its own sentence, with "dry and cold" from the same paragraph and two other temperature-and-moisture pairings as distractors; it replaced a summary select-the-term item keyed "net primary productivity" that re-asked the net-primary-productivity recall item and whose "above-ground biomass" option the module also supports), and one recall item on "generalists" built from the Biogeography paragraph's own sentence (it replaced a summary cloze on "specific geographic area" that re-asked the endemic key-term item; the hiking multiple choice now closes its group, after the biome and latitude-or-elevation recall items, because its stem prints "biomes" and its options print "elevation" and "latitude"), filling out all four objective groups. No source key departures, distractor replacements, or wording corrections were needed on this page.</small>

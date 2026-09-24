@@ -70,13 +70,14 @@ Many systems have evolved for excreting wastes that are simpler than the kidney 
 {{< textin
   question="The simplest excretory system is that of ________ present in microorganisms."
   answer="contractile vacuoles"
-  hint="This structure merges with the cell membrane during exocytosis to expel wastes, as shown in the amoeba illustration above."
+  accept="CV"
+  hint="Look in the Summary, and in the first subsection's sentences on the amoeba."
 >}}
 
 {{< multiplechoice
   question="Contractile vacuoles in microorganisms:"
   answer="both b and c"
-  hint="Check each option against Contractile Vacuoles in Microorganisms and the amoeba illustration."
+  hint="Check each option against the first subsection's paragraph."
 >}}
 exclusively perform an excretory function
 can perform many functions, one of which is excretion of metabolic wastes
@@ -84,11 +85,11 @@ originate from the cell membrane
 both b and c
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain two different excretory systems other than the kidneys." hint="The section walks through four systems in order, from single cells up to insects — pick any two and describe how each moves waste out of the organism." >}}
+{{< selfcheck question="Explain two different excretory systems other than the kidneys." hint="Reread any two of the section's three subsections." >}}
 Microorganisms engulf food by endocytosis—the formation of vacuoles by involution of the cell membrane within the cells. The same vacuoles interact and exchange metabolites with the intracellular environment. Cellular wastes are excreted by exocytosis when the vacuoles merge with the cell membrane and excrete wastes into the environment. Flatworms have an excretory system that consists of two tubules. The cells in the tubules are called flame cells; they have a cluster of cilia that propel waste matter down the tubules and out of the body. Annelids have nephridia which have a tubule with cilia. Excretion occurs through a pore called the nephridiopore. Annelids have a system for tubular reabsorption by a capillary network before excretion. Malpighian tubules are found in some species of arthropods. They are usually found in pairs, and the number of tubules varies with the species of insect. Malpighian tubules are convoluted, which increases their surface area, and they are lined with microvilli for reabsorption and maintenance of osmotic balance. Metabolic wastes like uric acid freely diffuse into the tubules. Potassium ion pumps line the tubules, which actively transport out K⁺ ions, and water follows to form urine. Water and electrolytes are reabsorbed when these organisms are faced with low-water environments, and uric acid is excreted as a thick paste or powder. By not dissolving wastes in water, these organisms conserve water.
 ===CHECKS===
 microorganisms engulf food by endocytosis, forming vacuoles that exchange metabolites with the intracellular environment before excreting wastes by exocytosis
-flatworms use flame cells, a cluster of cilia that propel waste matter down tubules and out of the body
+flatworms have two tubules; the cells in the tubules are called flame cells, which have a cluster of cilia that propel waste matter down the tubules and out of the body
 annelids use nephridia, a tubule with cilia that empties through the nephridiopore, with tubular reabsorption by a capillary network before excretion
 insects use Malpighian tubules, which are convoluted and lined with microvilli, actively transporting K⁺ ions so that water follows to form urine
 {{< /selfcheck >}}
@@ -98,7 +99,7 @@ insects use Malpighian tubules, which are convoluted and lined with microvilli, 
 {{< multiplechoice
   question="Flame cells are primitive excretory organs found in ________."
   answer="flatworms"
-  hint="This animal's excretory system is described earlier in the section as two tubules connected to a highly branched duct system."
+  hint="Look in the paragraph that introduces flame cells, in the second subsection."
 >}}
 arthropods
 annelids
@@ -106,7 +107,7 @@ mammals
 flatworms
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why might specialized organs have evolved for excretion of wastes?" hint="Think about what could go wrong for an organism if the process of getting rid of toxic wastes were not kept separate from its other organs." >}}
+{{< selfcheck question="Why might specialized organs have evolved for excretion of wastes?" hint="Reason from the opening sentence of the second subsection, on individual organs evolving to perform the excretory function." >}}
 The removal of wastes, which could otherwise be toxic to an organism, is extremely important for survival. Having organs that specialize in this process and that operate separately from other organs provides a measure of safety for the organism.
 ===CHECKS===
 the removal of wastes, which could otherwise be toxic to an organism, is extremely important for survival
@@ -117,7 +118,7 @@ having organs that specialize in this process and that operate separately from o
   question="Excretory structures found in annelids, such as earthworms, are called ________."
   answer="nephridia"
   accept="nephridium"
-  hint="Each segment of the earthworm has a pair of these, evolved beyond flame cells to add tubular reabsorption by a capillary network."
+  hint="Look in the paragraph after the flame-cell and earthworm illustration."
 >}}
 
 {{< textin
@@ -131,13 +132,13 @@ having organs that specialize in this process and that operate separately from o
 {{< textin
   question="Excretory structures that line the gut of some arthropods and are convoluted to increase their surface area are called ________."
   answer="Malpighian tubules"
-  hint="They work with specialized glands in the wall of the rectum and are usually found in pairs."
+  hint="Look at the opening sentences of the last subsection."
 >}}
 
 {{< multiplechoice
   question="Active transport of K⁺ in Malpighian tubules ensures that:"
   answer="both a and b"
-  hint="Check whether the section supports the first option on its own, the second on its own, or supports them at the same time."
+  hint="Look at the sentences on the exchange pumps lining the tubules and the secretion of ions, in the last subsection."
 >}}
 water follows K⁺ to make urine
 osmotic balance is maintained between waste matter and bodily fluids
@@ -149,7 +150,7 @@ neither a nor b
   question="Cellular processes that increase the surface area of cells are called ________."
   answer="microvilli"
   accept="microvillus"
-  hint="The lining of the Malpighian tubules is covered in these projections, which aid reabsorption and osmotic balance."
+  hint="Look at the sentence in the last subsection on how the tubules' surface area is increased and what they are lined with."
 >}}
 
 ---

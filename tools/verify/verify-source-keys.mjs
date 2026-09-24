@@ -695,6 +695,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 1011,
     reason: 'the source solution says the hip moves the femur "in a protracted motion" and "retracts the femur" in a step, but the module defines protraction and retraction as horizontal-plane movements; the page\'s model answer and rubric say the hip flexes and extends, with a source note',
   },
+  {
+    page: 'content/life-health-sciences/biology/43-animal-reproduction-and-development/01-reproduction-methods.md',
+    exercise: 'fs-idp65241328',
+    kind: 'options',
+    erratum: 1018,
+    reason: 'the source option "asexual" is also true of the keyed fragmentation, which the module lists as a form of asexual reproduction; the page prints "sexual" in its place (key "fragmentation" unchanged)',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

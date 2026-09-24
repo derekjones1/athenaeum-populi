@@ -74,11 +74,17 @@ Hormonal cues help the kidneys synchronize the osmotic needs of the body. Hormon
 {{< textin
   question="The biochemical pathway that activates angiotensin II, increasing blood pressure, is called the ________."
   answer="renin-angiotensin-aldosterone"
-  accept="renin-angiotensin-aldosterone system"
-  hint="This is the same multi-hormone cascade whose first two steps convert a liver protein into two numbered forms before a mineralocorticoid and a water-conserving hormone take over."
+  accept="renin-angiotensin-aldosterone system|renin-angiotensin-aldosterone pathway|renin-angiotensin-aldosterone mechanism"
+  hint="Look at the last sentence of the first subsection after the table."
 >}}
 
-{{< selfcheck question="Describe how hormones regulate blood pressure, blood volume, and kidney function." hint="Think about the size and travel path of a hormone molecule, then which kidney cells are built to receive its signal, and what all six named hormones ultimately coordinate between organ systems." >}}
+{{< textin
+  question="Hormonal cues help the kidneys synchronize the ________ of the body."
+  answer="osmotic needs"
+  hint="Look at the first sentence of the Summary."
+>}}
+
+{{< selfcheck question="Describe how hormones regulate blood pressure, blood volume, and kidney function." hint="Look at the paragraph after the learning objectives, and at the Summary." >}}
 Hormones are small molecules that act as messengers within the body. Different regions of the nephron bear specialized cells, which have receptors to respond to chemical messengers and hormones. The hormones carry messages to the kidney. These hormonal cues help the kidneys synchronize the osmotic needs of the body. Hormones like epinephrine, norepinephrine, renin-angiotensin, aldosterone, anti-diuretic hormone, and atrial natriuretic peptide help regulate the needs of the body as well as the communication between the different organ systems.
 ===CHECKS===
 hormones are small molecules that act as messengers within the body
@@ -87,23 +93,38 @@ these hormonal cues help the kidneys synchronize the osmotic needs of the body
 hormones like epinephrine, norepinephrine, renin-angiotensin, aldosterone, anti-diuretic hormone, and atrial natriuretic peptide regulate the body's needs and communication between organ systems
 {{< /selfcheck >}}
 
-{{< selfcheck question="How does the renin-angiotensin-aldosterone mechanism function? Why is it controlled by the kidneys?" hint="Walk the chain in the order the module names it — from the liver protein renin acts on, through the enzyme that follows, to the two hormones angiotensin II itself triggers at the end — and note which organ starts and ends the loop." >}}
+{{< selfcheck question="How does the renin-angiotensin-aldosterone mechanism function? Why is it controlled by the kidneys?" hint="Look at the paragraph and flow chart in the second subsection after the table." >}}
 The renin-angiotensin-aldosterone system acts through several steps to produce angiotensin II, which acts to stabilize blood pressure and volume. Thus, the kidneys control blood pressure and volume directly. Renin acts on angiotensinogen, which is made in the liver and converts it to angiotensin I. ACE (angiotensin converting enzyme) converts angiotensin I to angiotensin II. Angiotensin II raises blood pressure by constricting blood vessels. It triggers the release of aldosterone from the adrenal cortex, which in turn stimulates the renal tubules to reabsorb more sodium. Angiotensin II also triggers the release of anti-diuretic hormone from the hypothalamus, which leads to water retention. It acts directly on the nephrons and decreases GFR.
 ===CHECKS===
 the system produces angiotensin II, which stabilizes blood pressure and volume, so the kidneys control blood pressure and volume directly
 renin acts on angiotensinogen, made in the liver, and converts it to angiotensin I
 ACE converts angiotensin I to angiotensin II, which raises blood pressure by constricting blood vessels
 angiotensin II triggers release of aldosterone, which stimulates the renal tubules to reabsorb more sodium
-angiotensin II also triggers release of anti-diuretic hormone, leading to water retention and decreased GFR
+angiotensin II also triggers the release of anti-diuretic hormone from the hypothalamus, which leads to water retention
+it acts directly on the nephrons and decreases GFR
 {{< /selfcheck >}}
 
+### Describe how hormones like epinephrine, norepinephrine, renin-angiotensin, aldosterone, anti-diuretic hormone, and atrial natriuretic peptide help regulate waste elimination, maintain correct osmolarity, and perform other osmoregulatory functions
+
 {{< textin
-  question="Hormonal cues help the kidneys synchronize the ________ of the body."
-  answer="osmotic needs"
-  hint="Look at the first sentence of the Summary."
+  question="The enzyme that converts angiotensin I to angiotensin II is called ________."
+  answer="angiotensin converting enzyme"
+  accept="ACE"
+  hint="Look in the paragraph on the renin pathway, just after renin's own step."
 >}}
 
-### Describe how hormones like epinephrine, norepinephrine, renin-angiotensin, aldosterone, anti-diuretic hormone, and atrial natriuretic peptide help regulate waste elimination, maintain correct osmolarity, and perform other osmoregulatory functions
+{{< textin
+  question="A compound that increases the diameter of blood vessels is called a ________."
+  answer="vasodilator"
+  hint="Look at the first sentence of the last subsection."
+>}}
+
+{{< textin
+  question="The hormone that is formed by the hypothalamus, stored in the posterior pituitary, and prevents the loss of water is called ________."
+  answer="anti-diuretic hormone"
+  accept="ADH|vasopressin|antidiuretic hormone"
+  hint="Look in the section after Mineralocorticoids, and in the table's row for the hormone produced in the hypothalamus."
+>}}
 
 {{< multiplechoice
   question="Renin is made by ________."
@@ -119,7 +140,7 @@ all of the above
 {{< multiplechoice
   question="Patients with Addison's disease ________."
   answer="lose salts and water"
-  hint="Reread Mineralocorticoids, including what it says happens in the absence of aldosterone."
+  hint="Look at the last two sentences of the Mineralocorticoids subsection."
 >}}
 retain water
 retain salts
@@ -137,26 +158,6 @@ mineralocorticoids
 anti-diuretic hormone
 thyroxine
 {{< /multiplechoice >}}
-
-{{< textin
-  question="The enzyme that converts angiotensin I to angiotensin II is called ________."
-  answer="angiotensin converting enzyme"
-  accept="ACE"
-  hint="Look in the paragraph on the renin pathway, just after renin's own step."
->}}
-
-{{< textin
-  question="A compound that increases the diameter of blood vessels is called a ________."
-  answer="vasodilator"
-  hint="Atrial natriuretic peptide has this effect on blood vessels; the opposite effect would narrow them rather than widen them."
->}}
-
-{{< textin
-  question="The hormone that is formed by the hypothalamus, stored in the posterior pituitary, and prevents the loss of water is called ________."
-  answer="anti-diuretic hormone"
-  accept="ADH|vasopressin|antidiuretic hormone"
-  hint="Look in the section after Mineralocorticoids, and in the table's row for the hormone produced in the hypothalamus."
->}}
 
 ---
 

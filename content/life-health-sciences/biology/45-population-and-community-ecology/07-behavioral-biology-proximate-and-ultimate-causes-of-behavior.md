@@ -228,38 +228,38 @@ Behaviors are responses to stimuli. They can either be instinctual/innate behavi
 ### Compare innate and learned behavior
 
 {{< textin
-  question="Instinctual behavior that is not altered by changes in the environment is called ________."
+  question="Behavior that has a strong genetic component and is largely independent of environmental influences is called ________."
   answer="innate behavior"
-  accept="innate behaviour|instinct"
-  hint="The text says this kind of activity is 'hard wired' into the system and carries no risk of being learned incorrectly — the opposite of the flexible, environment-shaped kind of activity described in the next sentence."
+  accept="innate behaviour|instinct|instinctual behavior"
+  hint="See the second paragraph of the section's introduction."
 >}}
 
 {{< textin
   question="Behavior that responds to changes in the environment is called ________."
   answer="learned behavior"
   accept="learned behaviour"
-  hint="Unlike its 'hard-wired' counterpart, this kind of activity is described as riskier but flexible, dynamic, and adjustable to what the environment presents."
+  hint="See the second paragraph of the section's introduction."
 >}}
 
 {{< textin
   question="The biological study of animal behavior is called ________."
   answer="ethology"
-  hint="The text names two branches of science that study animal actions in the same sentence; pick the one described as the biological study of it, not the psychological one."
+  hint="See the first paragraph of the section's introduction."
 >}}
 
-{{< sortbins question="Sort each behavior or learning process into the category the section places it in." hint="Think about which ones the section says are 'hard wired' and unaffected by the environment, and which ones it says come from experience, reward, or repeated exposure." >}}
+{{< sortbins question="Sort each example from this section by the kind of behavior the section says it shows." hint="Find the paragraph that describes each example; the section's second paragraph defines the two kinds." >}}
 {"bins": ["Innate", "Learned"],
  "items": [
-  {"label": "Reflex action", "bin": 0},
-  {"label": "Habituation", "bin": 1},
-  {"label": "Kinesis", "bin": 0},
-  {"label": "Imprinting", "bin": 1},
-  {"label": "Fixed action pattern", "bin": 0},
-  {"label": "Classical conditioning", "bin": 1},
-  {"label": "Taxis", "bin": 0},
-  {"label": "Operant conditioning", "bin": 1},
-  {"label": "Migration", "bin": 0},
-  {"label": "Cognitive learning", "bin": 1}]}
+  {"label": "A tap on the patellar tendon makes the leg extend at the knee", "bin": 0},
+  {"label": "Prairie dogs stop sounding an alarm call at the sound of human footsteps", "bin": 1},
+  {"label": "Woodlice speed up when exposed to high or low temperatures", "bin": 0},
+  {"label": "Hatchling ducks follow a human they saw before their mother", "bin": 1},
+  {"label": "Male sticklebacks attack red-bottomed objects that look nothing like fish", "bin": 0},
+  {"label": "A dog salivates when a bell rings, with no food present", "bin": 1},
+  {"label": "Tetrahymena swims toward the source of an attracting chemical", "bin": 0},
+  {"label": "A rat in a Skinner box pushes a lever to get food", "bin": 1},
+  {"label": "A gray wolf pair stays together for a lifetime", "bin": 0},
+  {"label": "Chimpanzees stack boxes to reach a banana hung out of reach", "bin": 1}]}
 {{< /sortbins >}}
 
 ### Discuss how movement and migration behaviors are a result of natural selection
@@ -267,31 +267,31 @@ Behaviors are responses to stimuli. They can either be instinctual/innate behavi
 {{< textin
   question="Undirected movement of an organism in response to a stimulus is called ________."
   answer="kinesis"
-  hint="This is the general, non-directional counterpart to the more targeted movement described in the next paragraph — think of woodlice changing their speed, not their direction, when the temperature changes."
+  hint="See the paragraph about woodlice and E. coli."
 >}}
 
 {{< textin
   question="Directed movement in response to a stimulus is called ________."
   answer="taxis"
-  hint="This is the more targeted movement type, illustrated by a single-celled organism swimming straight toward an increasing concentration of an attracting chemical."
+  hint="See the paragraph about Tetrahymena thermophila."
 >}}
 
 {{< textin
   question="A series of instinctual behaviors that, once initiated, always goes to completion regardless of changes in the environment is called a(n) ________."
   answer="fixed action pattern"
-  hint="The stickleback example in this section keeps attacking a red-bottomed object even though it looks nothing like a real fish — the behavior runs to its end no matter what the stimulus actually turns out to be."
+  hint="See the paragraph about the three-spined stickleback."
 >}}
 
 {{< textin
   question="The long-range seasonal movement of animal species is called ________."
   answer="migration"
-  hint="Birds flying south for the winter and salmon returning to their spawning grounds are both examples of this long-distance, recurring movement."
+  hint="See the paragraph about emperor penguins and wildebeests."
 >}}
 
 {{< textin
   question="The act of searching for and exploiting food resources is called ________."
   answer="foraging"
-  hint="The painted stork's use of its long beak to search a marsh bottom for crabs is this section's example of this food-seeking activity."
+  hint="See the paragraph about the painted stork."
 >}}
 
 ### Discuss the different ways members of a population communicate with each other
@@ -299,13 +299,13 @@ Behaviors are responses to stimuli. They can either be instinctual/innate behavi
 {{< textin
   question="A method of communication between animals — including those obtained by the senses of smell, hearing, sight, or touch — is called a ________."
   answer="signal"
-  hint="This word covers every stimulus type this section lists for animal-to-animal communication: chemical, aural, visual, and tactile."
+  hint="See the first paragraph of the communication subsection."
 >}}
 
 {{< multiplechoice
   question="The sacrifice of the life of an individual so that the genes of relatives may be passed on is called ________."
   answer="kin selection"
-  hint="Look for the term the section uses for a behavior that lowers an individual's own reproductive chances so that close relatives who share its genes can survive and reproduce instead."
+  hint="See the altruistic-behaviors paragraph about sterile workers in social insect societies."
 >}}
 operant learning
 kin selection
@@ -313,7 +313,7 @@ kinesis
 imprinting
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the advantage of using an aural or pheromone signal to attract a mate as opposed to a visual signal. How might the population density contribute to the evolution of aural or visual mating rituals?" hint="Think about how far each type of signal can travel without a direct line of sight, and what that implies about how spread out or densely clustered a population using that signal type would need to be." >}}
+{{< selfcheck question="Describe the advantage of using an aural or pheromone signal to attract a mate as opposed to a visual signal. How might the population density contribute to the evolution of aural or visual mating rituals?" hint="Use the communication subsection's paragraphs on pheromones, songs, and visual displays." >}}
 Animals that use aural or pheromone signals to communicate with potential mates are able to signal over longer distances. Sound waves and chemicals can diffuse out into an environment while visual cues require a direct line of sight between the sender and receiver. Animals that use aural cues to acquire mates probably exhibit a lower population density than animals that use visual cues.
 ===CHECKS===
 aural or pheromone signals let animals signal over longer distances
@@ -326,31 +326,31 @@ animals that use aural cues to acquire mates probably have a lower population de
 {{< textin
   question="A series of ritualized visual behaviors designed to attract and convince a member of the opposite sex to mate is called a ________."
   answer="courtship display"
-  hint="The common stork's wing-flapping performance on its nest, pictured in this section, is this section's example of this mate-attracting ritual."
+  hint="See the paragraph and figure about the common stork."
 >}}
 
 {{< textin
   question="A visual display by a species member to discourage other members of the same species or different species is called a(n) ________."
   answer="aggressive display"
-  hint="A dog baring its teeth to make another dog back down is this section's example of this threat-communicating behavior."
+  hint="See the paragraph about a dog baring its teeth."
 >}}
 
 {{< textin
-  question="A visual display used to distract predators away from a nesting site is called a ________."
+  question="Behavior seen in birds and some fish that is designed to attract a predator away from the nest is called a(n) ________."
   answer="distraction display"
-  hint="The killdeer's faked broken-wing performance, linked in this section's video, is an example of this altruistic, predator-luring behavior."
+  hint="See the paragraph just after the stork figure."
 >}}
 
 {{< textin
   question="Selection of a desirable mate of the opposite sex is called ________."
   answer="intersexual selection"
-  hint="Female peacocks choosing to mate with the male with the brightest plumage is this section's example of one sex choosing a mate from the other."
+  hint="See the first paragraph about finding sex partners."
 >}}
 
 {{< textin
   question="Competition between members of the same sex for a mate is called ________."
   answer="intrasexual selection"
-  hint="Rams butting heads to determine which one gets to mate is this section's example of same-sex competition for a partner."
+  hint="See the first paragraph about finding sex partners."
 >}}
 
 ### Differentiate between various mating systems
@@ -359,27 +359,27 @@ animals that use aural cues to acquire mates probably have a lower population de
   question="A mating system whereby one male and one female remain paired for at least one mating season is called ________."
   answer="monogamy"
   accept="monogamous"
-  hint="The gray wolf, whose pair bond can last a lifetime, is this section's example of this two-partner mating arrangement."
+  hint="See the paragraph about the gray wolf."
 >}}
 
 {{< textin
   question="A mating system where one male mates with many females is called ________."
   answer="polygyny"
   accept="polygynous"
-  hint="The yellow-rumped honeyguide, whose males defend beehives and mate with each female that approaches, is this section's example of one male pairing with several partners."
+  hint="See the paragraph about the yellow-rumped honeyguide and elephant seals."
 >}}
 
 {{< textin
   question="A mating system where one female mates with many males is called ________."
   answer="polyandry"
   accept="polyandrous"
-  hint="Seahorses and pipefish, whose males carry and give birth to the fertilized eggs, are this section's examples of one female pairing with several partners."
+  hint="See the paragraph about pipefishes and seahorses."
 >}}
 
 {{< multiplechoice
   question="Why are polyandrous mating systems more rare than polygynous matings?"
   answer="Females usually devote more energy to offspring production and development."
-  hint="Ask which sex bears the larger share of the cost of each young — that cost caps how many mates' broods it can afford to raise at once."
+  hint="Compare what the mating-systems paragraphs say about parental care and carrying eggs."
 >}}
 Only males are capable of multiple rounds of reproduction within a single breeding season.
 Only females care for the young.
@@ -392,31 +392,32 @@ Females usually devote more energy to offspring production and development.
 {{< textin
   question="The ability of a species to ignore repeated stimuli that have no consequence is called ________."
   answer="habituation"
-  hint="Prairie dogs that stop sounding an alarm call at the sound of human footsteps, once that sound has never brought harm, illustrate this fading response to a harmless, repeated stimulus."
+  hint="See the paragraph about prairie dogs."
 >}}
 
 {{< textin
   question="The identification of parents by newborns as the first organism they see after birth is called ________."
   answer="imprinting"
-  hint="Ducklings that bond with and follow the first adult they see — even a human, if it appears before their mother does — illustrate this rapid, age-limited kind of learning."
+  hint="See the paragraph about hatchling ducks."
+>}}
+
+{{< textin
+  question="The category of simple learning in which the stimulus is not associated with any punishment or reward is called ________."
+  answer="non-associative learning"
+  accept="nonassociative learning"
+  hint="See the paragraphs about prairie dogs and hatchling ducks."
 >}}
 
 {{< textin
   question="The association of a specific stimulus and response through conditioning is called ________."
   answer="classical conditioning"
-  hint="Pavlov's dogs learning to salivate at the sound of a bell that had been repeatedly rung alongside food is this section's most-cited example."
->}}
-
-{{< textin
-  question="Knowledge and skills acquired by the manipulation of information in the mind is called ________."
-  answer="cognitive learning"
-  hint="This is the method you are using right now to read and understand this book — the section calls it the most prominent form of human learning."
+  hint="See the first subsection under Conditioned Behavior."
 >}}
 
 {{< multiplechoice
   question="The ability of rats to learn how to run a maze is an example of ________."
   answer="cognitive learning"
-  hint="This maze-learning experiment is the one the section credits to Tolman's idea of a mental representation of the maze, not to a habit built through reward and punishment alone."
+  hint="See the paragraphs on the rat-maze experiments of Blodgett and Tolman."
 >}}
 imprinting
 classical conditioning
@@ -427,7 +428,7 @@ cognitive learning
 {{< multiplechoice
   question="The training of animals usually involves ________."
   answer="operant conditioning"
-  hint="Consider what the section says is the basis of most animal training and what B.F. Skinner's rats learned by pressing a lever to get food."
+  hint="See the paragraph about B.F. Skinner's boxes."
 >}}
 imprinting
 classical conditioning
@@ -435,7 +436,7 @@ operant conditioning
 cognitive learning
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe Pavlov's dog experiments as an example of classical conditioning." hint="Walk through the experiment in order: what naturally caused salivation, what neutral stimulus researchers paired with it, and what happened to the dog's response once that pairing was repeated many times." >}}
+{{< selfcheck question="Describe Pavlov's dog experiments as an example of classical conditioning." hint="See the paragraph about Pavlov's experiments and the figure after it." >}}
 Dogs salivated in response to food. This was the unconditioned stimulus and response. Dogs exposed to food had a bell rung repeatedly at the same time, eventually learning to associate the bell with food. Over time, the dogs would salivate when the bell was rung, even in the absence of food. Thus, the bell became the conditioned stimulus, and the salivation in response to the bell became the conditioned response.
 ===CHECKS===
 dogs salivated in response to food — the unconditioned stimulus and response
@@ -446,4 +447,4 @@ the bell became the conditioned stimulus and the salivation became the condition
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 45.7: Behavioral Biology: Proximate and Ultimate Causes of Behavior](https://openstax.org/books/biology-2e/pages/45-7-behavioral-biology-proximate-and-ultimate-causes-of-behavior) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with every alt written fresh from the image rather than the manifest's source alt (Figure_45_07_02's source alt read "a heard of wildebeests," a typo for "herd"); three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_45_07_01, the rendered stickleback-and-decoy illustration, Figure_45_07_07, the three-panel classical-conditioning illustration, and Figure_45_07_09, the T-maze-and-line-graph illustration, are each a hand-drawn or rendered diagram, not a captured photograph), and a longdesc added to each, transcribing its panels or curves and axis labels in reading order (Figure_45_07_09's longdesc also transcribes the maze's printed source citation); Figure_45_07_09's source alt claimed the control group's errors "rapidly drop from six on day one to one on day eleven," but the figure's own axis runs only from day 0 to day 9 and the printed curve reaches its low point by about day six or seven — the rewritten alt and longdesc describe the figure as drawn rather than repeat that inconsistent claim; in-text figure pointers that printed as an empty parenthetical replaced with "shown below" or "illustrated below," since Hugo does not number figures; all three `interactive` notes rendered as Link to Learning callouts with descriptive link text in place of the source's bare "this website"/"this video," keeping each of the module's own openstax.org/l/killdeer_bird, openstax.org/l/sex_selection, and openstax.org/l/whooping_crane redirect URLs (the whooping-crane note carries the source class `interactive interactive-long` and embeds a video iframe rather than a text link; it is rendered as an ordinary Link to Learning callout with the same URL); the Sociobiology section's bibliographic footnote (the Wilson citation) folded into a parenthetical after the sentence it supports; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; a local `sortbins` item added to the "Compare innate and learned behavior" group, sorting ten behaviors and learning processes the section itself classifies as innate (reflex action, kinesis, fixed action pattern, taxis, migration) or learned (habituation, imprinting, classical conditioning, operant conditioning, cognitive learning), built strictly from the module's own classifying sentences; glossary key-term recall items added from 24 of the section's 27 glossary terms, tested as `textin` recall or as the key of a `multiplechoice`/`sortbins` item across the six Practice groups — behavior, behavioral biology, and conditioned behavior appear only in the Key terms list and the prose, each as the bolded defining term of its own paragraph; rubric checkpoints added to both self-checks, decomposing each model answer (the source solution) into check-off clauses with no new claims. Source defects: module `m66699`, media `fs-idp16750176` (Figure_45_07_02) — the source alt reads "Photo shows a heard of wildebeests crossing a river," a typo for "herd"; the alt was rewritten from the image rather than corrected in place, since it is an accessibility field, not body text. Module `m66699`, media `fs-idp132336560` (Figure_45_07_09) — the source alt states the maze-learning control group's errors "rapidly drop from six on day one to one on day eleven," but the figure's own axis is labeled only from day 0 through day 9, and the printed curve reaches its lowest point around day six or seven, not day eleven; the alt and longdesc were written from the figure itself rather than repeating the inconsistent claim. One key term is corrected with a visible Source note: kin selection lowers individual fitness, as the section's text says, and need not cost a life.</small>
+<small>This section is adapted from [Biology 2e, Section 45.7: Behavioral Biology: Proximate and Ultimate Causes of Behavior](https://openstax.org/books/biology-2e/pages/45-7-behavioral-biology-proximate-and-ultimate-causes-of-behavior) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with every alt written fresh from the image rather than the manifest's source alt (Figure_45_07_02's source alt read "a heard of wildebeests," a typo for "herd"); three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_45_07_01, the rendered stickleback-and-decoy illustration, Figure_45_07_07, the three-panel classical-conditioning illustration, and Figure_45_07_09, the T-maze-and-line-graph illustration, are each a hand-drawn or rendered diagram, not a captured photograph), and a longdesc added to Figure_45_07_07 and Figure_45_07_09, transcribing their panels or curves and axis labels in reading order (Figure_45_07_09's longdesc also transcribes the maze's printed source citation); Figure_45_07_09's source alt claimed the control group's errors "rapidly drop from six on day one to one on day eleven," but the figure's own axis runs only from day 0 to day 9 and the printed curve reaches its low point by about day six or seven — the rewritten alt and longdesc describe the figure as drawn rather than repeat that inconsistent claim; in-text figure pointers that printed as an empty parenthetical replaced with "shown below" or "illustrated below," since Hugo does not number figures; all three `interactive` notes rendered as Link to Learning callouts with descriptive link text in place of the source's bare "this website"/"this video," keeping each of the module's own openstax.org/l/killdeer_bird, openstax.org/l/sex_selection, and openstax.org/l/whooping_crane redirect URLs (the whooping-crane note carries the source class `interactive interactive-long` and embeds a video iframe rather than a text link; it is rendered as an ordinary Link to Learning callout with the same URL); the Sociobiology section's bibliographic footnote (the Wilson citation) folded into a parenthetical after the sentence it supports; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 3, 4, 1, 2 of the source's numbering and the Critical Thinking Questions in the order 2, 1; a local `sortbins` item added to the "Compare innate and learned behavior" group, sorting ten of the section's own examples (the knee-jerk reflex, woodlice, the stickleback, *Tetrahymena*, the gray wolf; prairie dogs, hatchling ducks, Pavlov's dog, Skinner's rat, Köhler's chimpanzees) into innate or learned as the module's own sentences classify them; glossary key-term `textin` recall items added for 20 of the section's 27 glossary terms across the six Practice groups, two of them (innate behavior, distraction display) prompted from the body's defining sentence because the glossary wording prints an accepted answer or the term's own root; kin selection, cognitive learning, and operant conditioning are the keys of the source's own Review Questions and get no second recall item, and behavior, behavioral biology, conditioned behavior, and reflex action appear only in the Key terms list and the prose; one recall item added from the body (non-associative learning, from the habituation and imprinting paragraphs); rubric checkpoints added to both self-checks, decomposing each model answer (the source solution) into check-off clauses with no new claims. Source defects: module `m66699`, media `fs-idp16750176` (Figure_45_07_02) — the source alt reads "Photo shows a heard of wildebeests crossing a river," a typo for "herd"; the alt was rewritten from the image rather than corrected in place, since it is an accessibility field, not body text. Module `m66699`, media `fs-idp132336560` (Figure_45_07_09) — the source alt states the maze-learning control group's errors "rapidly drop from six on day one to one on day eleven," but the figure's own axis is labeled only from day 0 through day 9, and the printed curve reaches its lowest point around day six or seven, not day eleven; the alt and longdesc were written from the figure itself rather than repeating the inconsistent claim. One key term is corrected with a visible Source note: kin selection lowers individual fitness, as the section's text says, and need not cost a life.</small>

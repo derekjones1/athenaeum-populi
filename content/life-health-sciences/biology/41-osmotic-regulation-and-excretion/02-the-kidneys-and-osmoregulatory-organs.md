@@ -59,7 +59,7 @@ The nephron is the functional unit of the kidney. The glomerulus and convoluted 
 {{< multiplechoice
   question="Which of the following statements about the nephron is false?"
   answer="The collecting duct empties into the distal convoluted tubule."
-  hint="Trace the nephron's path in the order filtrate actually travels it, from the glomerulus through the tubule segments to the collecting duct, and check each statement against that order rather than against the order the options are listed in."
+  hint="Check each statement against the three-panel nephron figure above and the Renal Corpuscle and Renal Tubule subsections just below."
 >}}
 The collecting duct empties into the distal convoluted tubule.
 The Bowman's capsule surrounds the glomerulus.
@@ -115,7 +115,7 @@ The loop of Henle acts as a countercurrent multiplier that uses energy to create
 
 {{< selfcheck
   question="Loop diuretics are drugs sometimes used to treat hypertension. These drugs inhibit the reabsorption of Na⁺ and Cl⁻ ions by the ascending limb of the loop of Henle. A side effect is that they increase urination. Why do you think this is the case?"
-  hint="Think about how the ascending limb's salt reabsorption normally builds up the medulla's osmotic gradient, and what removing that step does to how much water the descending limb can later draw out of the filtrate."
+  hint="Reread the paragraph on the loop of Henle just above the countercurrent figure, and the figure's caption."
 >}}
 Loop diuretics decrease the excretion of salt into the renal medulla, thereby reducing its osmolality. As a result, less water is excreted into the medulla by the descending limb, and more water is excreted as urine.
 ===CHECKS===
@@ -210,10 +210,16 @@ There are three steps in the formation of urine: glomerular filtration, which oc
   hint="Look at the first sentence of the Summary."
 >}}
 
+{{< textin
+  question="The filtrate that gets excreted out of the body is called ________."
+  answer="urine"
+  hint="Look at the last sentence of the paragraph just before the first figure."
+>}}
+
 {{< multiplechoice
   question="The osmolarity of body fluids is maintained at ________."
   answer="300 mOsm"
-  hint="This is the same constant value the loop of Henle and vasa recta work to hold the rest of the body's fluids at, mentioned when the kidneys are introduced as osmoregulatory organs."
+  hint="Look at the first sentence of the Summary."
 >}}
 100 mOsm
 300 mOsm
@@ -221,18 +227,12 @@ There are three steps in the formation of urine: glomerular filtration, which oc
 it is not constantly maintained
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The filtrate produced by the kidneys that gets excreted out of the body is called ________."
-  answer="urine"
-  hint="This is the fluid the kidneys produce as their final output, discussed throughout the section."
->}}
-
 ### Describe the structure of the kidneys and the functions of the parts of the kidney
 
 {{< multiplechoice
   question="The gland located at the top of the kidney is the ________ gland."
   answer="adrenal"
-  hint="Look in the first paragraph of Kidneys: The Main Osmoregulatory Organ, where the kidneys' location is described."
+  hint="Look in the paragraph just before the first figure, where the organs' location is described."
 >}}
 adrenal
 pituitary
@@ -243,11 +243,11 @@ thymus
 {{< textin
   question="The region in the renal pelvis where blood vessels, nerves, and ureters bunch before entering or exiting the kidney is called the ________."
   answer="hilum"
-  accept="hila"
-  hint="This concave region of the bean-shaped kidney is also the point where the ureter exits."
+  accept="hila|renal hilum"
+  hint="Look in the first paragraph of Kidney Structure, where the kidney's internal regions are named."
 >}}
 
-{{< selfcheck question="Describe the structure of the kidney." hint="Think in terms of outside-in: how many covering layers wrap the kidney, and how many internal regions does its cross-section show?" >}}
+{{< selfcheck question="Describe the structure of the kidney." hint="Reread the first paragraph of Kidney Structure." >}}
 Externally, the kidneys are surrounded by three layers. The outermost layer is a tough connective tissue layer called the renal fascia. The second layer is called the perirenal fat capsule, which helps anchor the kidneys in place. The third and innermost layer is the renal capsule. Internally, the kidney has three regions—an outer cortex, a medulla in the middle, and the renal pelvis in the region called the hilum of the kidney, which is the concave part of the "bean" shape.
 ===CHECKS===
 the outermost layer is the renal fascia
@@ -259,17 +259,6 @@ the renal pelvis sits in the hilum, the concave part of the kidney's "bean" shap
 
 ### Describe how the nephron is the functional unit of the kidney and explain how it actively filters blood and generates urine
 
-{{< multiplechoice
-  question="The macula densa is/are:"
-  answer="cells present in the DCT and collecting tubules."
-  hint="Reread which segment of the renal tubule the text says lies in contact with the macula densa, just before naming the juxtaglomerular cells."
->}}
-present in the renal medulla.
-dense tissue present in the outer layer of the kidney.
-cells present in the DCT and collecting tubules.
-present in blood capillaries.
-{{< /multiplechoice >}}
-
 {{< textin
   question="The part of the renal tubule that lies close to the glomerulus is called the ________."
   answer="PCT"
@@ -280,13 +269,24 @@ present in blood capillaries.
 {{< textin
   question="The part of the renal tubule that is the most distant from the glomerulus is called the ________."
   answer="DCT"
-  accept="distal convoluted tubule"
-  hint="This is the last segment of the renal tubule, and it empties its contents into the collecting ducts."
+  accept="distal convoluted tubule|distal tubule"
+  hint="Look near the end of the Renal Tubule paragraph."
 >}}
+
+{{< multiplechoice
+  question="The macula densa is/are:"
+  answer="cells present in the DCT and collecting tubules."
+  hint="Reread the paragraph on the juxtaglomerular complex, just before the Career Connection."
+>}}
+present in the renal medulla.
+dense tissue present in the outer layer of the kidney.
+cells present in the DCT and collecting tubules.
+present in blood capillaries.
+{{< /multiplechoice >}}
 
 ### Detail the three steps in the formation of urine: glomerular filtration, tubular reabsorption, and tubular secretion
 
-{{< selfcheck question="Why are the loop of Henle and vasa recta important for the formation of concentrated urine?" hint="Think about what job the loop of Henle and its surrounding capillary network do to the filtrate as it moves deep into the medulla, and what steady value that keeps the rest of the body's fluids at." >}}
+{{< selfcheck question="Why are the loop of Henle and vasa recta important for the formation of concentrated urine?" hint="Reread the paragraph just above the countercurrent figure, and the Summary's first sentence." >}}
 The loop of Henle is part of the renal tubule that loops into the renal medulla. In the loop of Henle, the filtrate exchanges solutes and water with the renal medulla and the vasa recta (the peritubular capillary network). The vasa recta acts as the countercurrent exchanger. The kidneys maintain the osmolality of the rest of the body at a constant 300 mOsm by concentrating the filtrate as it passes through the loop of Henle.
 ===CHECKS===
 the loop of Henle is part of the renal tubule that loops into the renal medulla
@@ -299,7 +299,7 @@ the kidneys maintain the osmolality of the rest of the body at a constant 300 mO
   question="The amount of filtrate formed by the glomerulus per minute is called the ________."
   answer="GFR"
   accept="glomerular filtration rate"
-  hint="This rate is an important indicator of kidney function and is regulated by multiple mechanisms."
+  hint="Look at the last two sentences of the first subsection under Kidney Function and Physiology."
 >}}
 
 {{< textin
@@ -310,4 +310,4 @@ the kidneys maintain the osmolality of the rest of the body at a constant 300 mO
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 41.2: The Kidneys and Osmoregulatory Organs](https://openstax.org/books/biology-2e/pages/41-2-the-kidneys-and-osmoregulatory-organs) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the source alt text shortened for Figure_41_03_02, Figure_41_03_03, Figure_41_03_04, and Figure_41_03_05, each of which exceeded 600 characters, into a shorter description of what the image shows, with the full detail moved to each figure's longdesc; a longdesc added to every figure, since each is a labeled diagram whose full meaning is not carried by its one-line caption — the kidney/bladder overview, the kidney cross-section, the three-panel nephron illustration, the numbered nephron-function illustration, and the loop-of-Henle countercurrent diagram — each transcribing the drawing's own printed labels, leader-line counts, and (for the loop of Henle) osmolality values in reading order; the two Link to Learning notes rendered as callouts, keeping the module's own openstax.org/l/kidney_section and openstax.org/l/kidneys redirect URLs; the Career Connection note rendered as a callout; the three visual-connection notes (kidney false-statement, nephron false-statement, and the loop-diuretics question) each rendered as its figure followed by a multiple choice or self-check and kept in the body immediately after the relevant figure — the note copy and the `<exercise>` copy print identical option wording for both multiple-choice items, so no adjudication was needed; the kidney false-statement keyed "The cortex covers the capsule" (C) and the nephron false-statement keyed "The collecting duct empties into the distal convoluted tubule" (A), both matching the source solution; the remaining Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); the macula densa Review Question kept keyed "cells present in the DCT and collecting tubules" (C) per the source solution — the module's own text places the macula densa in the DCT and contradicts the other three options, while "collecting tubules" is unsupported but not contradicted; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items added from the glossary (urine, kidney, hilum, PCT, DCT, GFR, tubular secretion), covering seven of the section's forty-seven glossary terms — the other forty appear only in the Key terms list and the prose, most as the bolded defining term of their own paragraph. One claim is corrected with a visible Source note: the juxtaglomerular complex secretes renin, and erythropoietin comes from peritubular fibroblasts.</small>
+<small>This section is adapted from [Biology 2e, Section 41.2: The Kidneys and Osmoregulatory Organs](https://openstax.org/books/biology-2e/pages/41-2-the-kidneys-and-osmoregulatory-organs) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the source alt text shortened for Figure_41_03_02, Figure_41_03_03, Figure_41_03_04, and Figure_41_03_05, each of which exceeded 600 characters, into a shorter description of what the image shows, with the full detail moved to each figure's longdesc; a longdesc added to every figure, since each is a labeled diagram whose full meaning is not carried by its one-line caption — the kidney/bladder overview, the kidney cross-section, the three-panel nephron illustration, the numbered nephron-function illustration, and the loop-of-Henle countercurrent diagram — each transcribing the drawing's own printed labels, leader-line counts, and (for the loop of Henle) osmolality values in reading order; the two Link to Learning notes rendered as callouts, keeping the module's own openstax.org/l/kidney_section and openstax.org/l/kidneys redirect URLs; the Career Connection note rendered as a callout; the three visual-connection notes (kidney false-statement, nephron false-statement, and the loop-diuretics question) each rendered as its figure followed by a multiple choice or self-check and kept in the body immediately after the relevant figure — the note copy and the `<exercise>` copy print identical option wording for both multiple-choice items, so no adjudication was needed; the kidney false-statement keyed "The cortex covers the capsule" (C) and the nephron false-statement keyed "The collecting duct empties into the distal convoluted tubule" (A), both matching the source solution; the remaining Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 2, 3, 1 of the source's numbering and the Critical Thinking Questions 2, 1; the macula densa Review Question kept keyed "cells present in the DCT and collecting tubules" (C) per the source solution — the module's own text places the macula densa in the DCT and contradicts the other three options, while "collecting tubules" is unsupported but not contradicted; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items added from the glossary (urine, kidney, hilum, PCT, DCT, GFR, tubular secretion), the urine item's prompt shortened from the glossary's "filtrate produced by kidneys that gets excreted out of the body" so that it does not print the kidney item's answer, covering seven of the section's forty-seven glossary terms — the other forty appear only in the Key terms list and the prose, most as the bolded defining term of their own paragraph. One claim is corrected with a visible Source note: the juxtaglomerular complex secretes renin, and erythropoietin comes from peritubular fibroblasts.</small>

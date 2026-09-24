@@ -25,7 +25,7 @@ Each of the world's major biomes is distinguished by characteristic temperatures
 {{< multiplechoice
   question="Which of the following statements about biomes is false?"
   answer="Boreal forests are dominated by deciduous trees."
-  hint="Read each biome's own paragraph in this section for what kind of leaves its dominant trees carry — one option names a leaf-dropping habit that this section's own paragraph on that biome contradicts."
+  hint="Check each statement against the subsection below on the biome it names."
 >}}
 Chaparral is dominated by shrubs.
 Savannas and temperate grasslands are dominated by grasses.
@@ -145,7 +145,7 @@ The Earth has terrestrial biomes and aquatic biomes. Aquatic biomes include both
 {{< multiplechoice
   question="Which two abiotic factors does this section use to distinguish the eight major terrestrial biomes from one another?"
   answer="temperature and precipitation"
-  hint="Look at what number range each biome's paragraph opens with, before it ever describes the plants that live there — the same two kinds of measurements appear for every biome in this section."
+  hint="Reread the section's opening paragraph, before the world map."
 >}}
 temperature and precipitation
 elevation and latitude
@@ -156,10 +156,10 @@ wind speed and humidity
 {{< textin
   question="The distribution of these biomes shows that the same biome can occur in geographically distinct areas with similar ________."
   answer="climates"
-  hint="Reread the opening paragraph of the section, just before the world map."
+  hint="Reread the last sentence of the section's opening paragraph."
 >}}
 
-{{< selfcheck question="The extremely low precipitation of subtropical desert biomes might lead one to expect fire to be a major disturbance factor; however, fire is more common in the temperate grassland biome than in the subtropical desert biome. Why is this?" hint="Think about how much plant matter can accumulate in a place with very little rainfall, and what a fire actually needs in order to burn." >}}
+{{< selfcheck question="The extremely low precipitation of subtropical desert biomes might lead one to expect fire to be a major disturbance factor; however, fire is more common in the temperate grassland biome than in the subtropical desert biome. Why is this?" hint="Compare the Subtropical Deserts and Temperate Grasslands subsections, then read the Summary's last sentence." >}}
 Fire is less common in desert biomes than in temperate grasslands because deserts have low net primary productivity and, thus, very little plant biomass to fuel a fire.
 ===CHECKS===
 fire is less common in desert biomes than in temperate grasslands
@@ -167,7 +167,7 @@ deserts have low net primary productivity
 deserts have very little plant biomass to fuel a fire
 {{< /selfcheck >}}
 
-{{< selfcheck question="In what ways are the subtropical desert and the arctic tundra similar?" hint="Water can be scarce for two very different reasons — think about what keeps water from reaching a plant's roots in each of these two climates." >}}
+{{< selfcheck question="In what ways are the subtropical desert and the arctic tundra similar?" hint="Compare the Subtropical Deserts and Arctic Tundra subsections, then read the Summary's last sentence." >}}
 Both the subtropical desert and the arctic tundra have a low supply of water. In the desert, this is due to extremely low precipitation, and in the arctic tundra, much of the water is unavailable to plants because it is frozen. Both the subtropical desert and the arctic tundra have low net primary productivity.
 ===CHECKS===
 both the subtropical desert and the arctic tundra have a low supply of water
@@ -181,7 +181,7 @@ both biomes have low net primary productivity
 {{< multiplechoice
   question="Which of the following biomes is characterized by abundant water resources?"
   answer="tropical wet forests"
-  hint="Compare the annual rainfall ranges printed in each biome's own paragraph — one range climbs several times higher than the rest, up to 660 cm a year."
+  hint="Compare the annual rainfall given in the subsection on each named biome."
 >}}
 deserts
 boreal forests
@@ -192,7 +192,7 @@ tropical wet forests
 {{< multiplechoice
   question="Which of the following biomes is characterized by short growing seasons?"
   answer="Arctic tundras"
-  hint="One biome's paragraph gives a growing season measured in weeks rather than months — look for the shortest number printed in this section."
+  hint="Compare what the subsection on each named biome says about when and how long plants can grow."
 >}}
 deserts
 tropical wet forests
@@ -203,26 +203,27 @@ savannas
 {{< textin
   question="The branches and foliage of trees that form a layer of overhead coverage in a forest are called the ________."
   answer="canopy"
-  hint="This structure caps the tallest layer of a tropical wet forest, above the understory and the forest floor."
+  accept="upper canopy|closed upper canopy"
+  hint="Reread the first biome subsection's paragraph on the forest's horizontal layers."
 >}}
 
 {{< textin
   question="The perennially frozen portion of the Arctic tundra soil is called ________."
   answer="permafrost"
-  hint="This frozen layer keeps plant roots from penetrating deep into the ground and slows the decay of organic matter."
+  hint="Reread the last biome subsection's paragraph on its plants and soils."
 >}}
 
-{{< sortbins question="Sort each distinguishing feature into the biome it describes." hint="Think about which of these biomes is a closed-canopy forest, which is grass with scattered trees, which is fire-adapted shrubland, and which lies over permanently frozen ground." >}}
+{{< sortbins question="Sort each distinguishing feature into the biome it describes." hint="Each phrase comes from one of the Tropical Wet Forest, Savannas, Chaparral, and Arctic Tundra subsections." >}}
 {"bins": ["Tropical Wet Forest", "Savanna", "Chaparral", "Arctic Tundra"],
  "items": [
   {"label": "Broad leaves that fall and regrow throughout the year, with no leafless season", "bin": 0},
   {"label": "Grassland with scattered trees and a pronounced dry season", "bin": 1},
   {"label": "Shrubs adapted to periodic fire, with most of the year's rain falling in winter", "bin": 2},
-  {"label": "A growing season of only about 10 to 12 weeks, despite nearly continuous daylight", "bin": 3},
-  {"label": "Home to more species of trees than any other biome, capped by a closed upper canopy", "bin": 0},
+  {"label": "Almost 24 hours of daylight during the growing season, when plant growth is rapid", "bin": 3},
+  {"label": "More species of trees than any other biome", "bin": 0},
   {"label": "Dominated by grasses and forbs, with relatively few trees", "bin": 1},
   {"label": "Some seeds germinate only after exposure to a hot fire", "bin": 2},
-  {"label": "Ground that can be completely covered with plants or lichens during the growing season", "bin": 3}
+  {"label": "Plants generally low to the ground, with low above-ground biomass", "bin": 3}
  ]}
 {{< /sortbins >}}
 

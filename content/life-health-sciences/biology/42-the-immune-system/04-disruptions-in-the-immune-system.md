@@ -62,6 +62,31 @@ Immune disruptions may involve insufficient immune responses or inappropriate im
 
 ### Describe hypersensitivity
 
+{{< textin
+  question="Immune disruptions may involve insufficient immune responses or ________."
+  answer="inappropriate immune targets"
+  accept="inappropriate targets"
+  hint="This is the first sentence of the section summary."
+>}}
+
+{{< textin
+  question="Upon initial exposure to a potential allergen, an allergic individual synthesizes antibodies of the ________ class."
+  answer="IgE"
+  accept="immunoglobulin E"
+  hint="Reread the first paragraph of the first subsection under Hypersensitivities."
+>}}
+
+{{< multiplechoice
+  question="________ are misdirected responses either to harmless foreign particles, as in the case of allergies, or to host factors, as in the case of autoimmunity."
+  answer="Hypersensitivities"
+  hint="This is the third sentence of the section summary."
+>}}
+Hypersensitivities
+Immunodeficiencies
+Autoantibodies
+Allergies
+{{< /multiplechoice >}}
+
 {{< multiplechoice
   question="Allergy to pollen is classified as:"
   answer="immediate hypersensitivity"
@@ -73,32 +98,20 @@ delayed hypersensitivity
 immediate hypersensitivity
 {{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="________ are misdirected responses either to harmless foreign particles, as in the case of allergies, or to host factors, as in the case of autoimmunity."
-  answer="Hypersensitivities"
-  hint="This is the third sentence of the section summary; the subsection after Immunodeficiency also defines the term."
->}}
-Hypersensitivities
-Immunodeficiencies
-Autoantibodies
-Allergies
-{{< /multiplechoice >}}
-
-{{< textin
-  question="Immune disruptions may involve insufficient immune responses or ________."
-  answer="inappropriate immune targets"
-  accept="inappropriate targets"
-  hint="This is the first sentence of the section summary."
->}}
-
-{{< textin
-  question="The immune reaction that results from immediate hypersensitivities in which an antibody-mediated immune response occurs within minutes of exposure to a harmless antigen is called a(n) ________."
-  answer="allergy"
-  accept="allergies"
-  hint="Reread the first sentence of the subsection on immediate hypersensitivities, the first subsection under Hypersensitivities."
->}}
-
 ### Define autoimmunity
+
+{{< textin
+  question="The type of hypersensitivity to self antigens is called ________."
+  answer="autoimmunity"
+  hint="Reread the first sentence of the section's final subsection."
+>}}
+
+{{< textin
+  question="An antibody that incorrectly marks 'self' components as foreign and stimulates the immune response is called a(n) ________."
+  answer="autoantibody"
+  accept="autoantibodies"
+  hint="Reread the first paragraph of the section's final subsection."
+>}}
 
 {{< multiplechoice
   question="A potential cause of acquired autoimmunity is ________."
@@ -125,7 +138,7 @@ HIV/AIDS
 {{< multiplechoice
   question="Which of the following diseases is not due to autoimmunity?"
   answer="HIV/AIDS"
-  hint="Compare the diseases named in the section's final subsection with the causes listed in the Immunodeficiency subsection."
+  hint="Reread the section's final subsection and check which of the options it names."
 >}}
 rheumatic fever
 systemic lupus erythematosus
@@ -133,19 +146,6 @@ diabetes mellitus
 HIV/AIDS
 {{< /multiplechoice >}}
 
-{{< textin
-  question="An antibody that incorrectly marks 'self' components as foreign and stimulates the immune response is called a(n) ________."
-  answer="autoantibody"
-  accept="autoantibodies"
-  hint="Reread the first paragraph of the section's final subsection."
->}}
-
-{{< textin
-  question="The type of hypersensitivity to self antigens is called ________."
-  answer="autoimmunity"
-  hint="This is one of the three subtypes of hypersensitivity introduced earlier — the one where the immune system attacks the body's own tissue instead of a foreign invader."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 42.4: Disruptions in the Immune System](https://openstax.org/books/biology-2e/pages/42-4-disruptions-in-the-immune-system) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the module's two figures are printed in reverse stem order from their in-text numbering (the allergy/IgE flow chart discussed first in the Allergies subsection is vendored as `Figure_B42_04_02`, and the systemic-lupus-erythematosus illustration discussed second in Autoimmunity is vendored as `Figure_42_04_02`) — selected by the media manifest's `module` field rather than by guessing from the figure number; the lupus illustration re-kinded from the manifest's file-extension "photo" guess to "diagram" (it is a hand-drawn, flat-color body illustration with leader-line labels, not a photograph); the flow chart's source alt, which used letter-spaced text-to-speech spelling ("I g E"), rewritten from the image, with the step-by-step walkthrough moved into a longdesc; a longdesc also added to the lupus illustration, since its caption does not carry the five printed labels; in-text pointers to the figures ("shows an example of," "As illustrated in Figure 42.27") replaced with "shown below" / "illustrated below," since Hugo does not number figures; the one Review Question testing hypersensitivity/allergy concepts and the three testing autoimmunity concepts adapted into the closing interactive Practice block, one per objective's group; a select-the-term multiple choice built from the section's own Summary sentence (distractors drawn from the module's own terms "immunodeficiencies," "autoantibodies," and "allergies") and a cloze text recall from another Summary sentence added under "Describe hypersensitivity," which the end-of-section exercise set alone left short of the book's three-item floor; four key-term recall items (allergy, inappropriate immune targets as a Summary cloze, autoimmunity, autoantibody) added from the glossary and Summary, covering three of the section's five glossary terms as textins (hypersensitivities is tested by the select-the-term multiple choice) — "immunodeficiency" appears only in the Key terms list and the prose, since neither of the section's two objectives (hypersensitivity, autoimmunity) tests it and the module has no exercise on immunodeficiency; this module carries no Critical Thinking Questions and no Visual Connection.</small>
+<small>This section is adapted from [Biology 2e, Section 42.4: Disruptions in the Immune System](https://openstax.org/books/biology-2e/pages/42-4-disruptions-in-the-immune-system) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the module's two figures are printed in reverse stem order from their in-text numbering (the allergy/IgE flow chart discussed first in the Allergies subsection is vendored as `Figure_B42_04_02`, and the systemic-lupus-erythematosus illustration discussed second in Autoimmunity is vendored as `Figure_42_04_02`) — selected by the media manifest's `module` field rather than by guessing from the figure number; the lupus illustration re-kinded from the manifest's file-extension "photo" guess to "diagram" (it is a hand-drawn, flat-color body illustration with leader-line labels, not a photograph); the flow chart's source alt, which used letter-spaced text-to-speech spelling ("I g E"), rewritten from the image, with the step-by-step walkthrough moved into a longdesc; a longdesc also added to the lupus illustration, since its caption does not carry the five printed labels; in-text pointers to the figures ("shows an example of," "As illustrated in Figure 42.27") replaced with "shown below" / "illustrated below," since Hugo does not number figures; the one Review Question testing hypersensitivity/allergy concepts and the three testing autoimmunity concepts adapted into the closing interactive Practice block, one per objective's group; a select-the-term multiple choice built from the section's own Summary sentence (distractors drawn from the module's own terms "immunodeficiencies," "autoantibodies," and "allergies") and a cloze text recall from another Summary sentence added under "Describe hypersensitivity," which the end-of-section exercise set alone left short of the book's three-item floor; a cloze text recall (IgE) built from the Allergies paragraph's sentence on the antibody class an allergic individual synthesizes on first exposure; two key-term recall items (autoimmunity, autoantibody) added from the glossary — "allergy" is not asked as a recall item, since its glossary meaning prints the key of the pollen Review Question, and "hypersensitivities" is tested by the select-the-term multiple choice; "immunodeficiency" appears only in the Key terms list and the prose, since neither of the section's two objectives (hypersensitivity, autoimmunity) tests it and the module has no exercise on immunodeficiency; this module carries no Critical Thinking Questions and no Visual Connection.</small>

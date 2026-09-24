@@ -35,7 +35,7 @@ The reproductive structures of the human male are shown.
 {{< multiplechoice
   question="Which of the following statements about the male reproductive system is false?"
   answer="The prostate gland is located in the testes."
-  hint="The drawing above places each organ either alongside the bladder and urethra or down with the scrotum — check which of these four statements puts an organ somewhere the drawing does not."
+  hint="Compare each statement with the labeled drawing above and the paragraphs on the male organs that follow it."
 >}}
 The vas deferens carries sperm from the testes to the penis.
 Sperm mature in seminiferous tubules in the testes.
@@ -172,6 +172,19 @@ As animals became more complex, specific organs and organ systems developed to s
 
 ### Describe human male and female reproductive anatomies
 
+{{< textin
+  question="The male accessory gland whose secretion cleanses the urethra prior to ejaculation is called the ________."
+  answer="bulbourethral gland"
+  accept="bulbourethral|Cowper's gland|Cowper gland"
+  hint="Reread the last paragraph of the Male Reproductive Anatomy subsection, before its table."
+>}}
+
+{{< textin
+  question="The sac that contains the testes and lies exterior to the body is called the ________."
+  answer="scrotum"
+  hint="Reread the first paragraph of the Male Reproductive Anatomy subsection."
+>}}
+
 {{< multiplechoice
   question="Sperm are produced in the ________."
   answer="seminiferous tubules"
@@ -186,7 +199,7 @@ prostate gland
 {{< multiplechoice
   question="Most of the semen is made by the ________ in the reproductive system."
   answer="seminal vesicles"
-  hint="The section gives a percentage of the bulk of semen for each accessory gland — find the gland whose share is the largest of the three."
+  hint="Reread the Male Reproductive Anatomy paragraphs on semen and the accessory glands."
 >}}
 scrotum
 seminal vesicles
@@ -208,7 +221,7 @@ vagina
 {{< multiplechoice
   question="Which organ has an endometrial lining that will support a developing baby?"
   answer="uterus"
-  hint="This organ is lined with the tissue named earlier in this section as rich in blood vessels and mucus glands, and it is not an external structure."
+  hint="Reread the Female Reproductive Anatomy paragraph that mentions the endometrium."
 >}}
 labia minora
 breast
@@ -216,30 +229,19 @@ ovaries
 uterus
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The secretory accessory gland in males that contributes to semen and lies along the posterior border of the urinary bladder is called the ________."
-  answer="seminal vesicle"
-  hint="This gland makes a thick, yellowish, alkaline solution containing fructose and prostaglandins — it is one of three accessory glands, not the tube that carries sperm away from the testes."
->}}
-
-{{< textin
-  question="The sac that contains the testes and lies exterior to the body is called the ________."
-  answer="scrotum"
-  hint="This external pouch keeps the testes cooler than the rest of the body — it is not the internal tube that carries sperm, and not a gland."
->}}
-
 ### Discuss the human sexual response
 
 {{< textin
   question="The phase of the human sexual response during which rhythmic, involuntary contractions of muscles occur is called ________."
   answer="orgasm"
-  hint="This is the third of the four phases, and its contractions are what expel semen in the male and contract the uterus and vagina in the female."
+  accept="orgasm phase"
+  hint="Reread the second paragraph of Sexual Response during Intercourse."
 >}}
 
 {{< multiplechoice
   question="Which of the following lists the four phases of the human sexual response in the order the section presents them?"
   answer="excitement, plateau, orgasm, resolution"
-  hint="The section numbers these phases one through four as it describes them — match that numbering to the phase names rather than to what the words themselves suggest."
+  hint="Reread the two paragraphs of Sexual Response during Intercourse."
 >}}
 excitement, plateau, orgasm, resolution
 plateau, excitement, resolution, orgasm
@@ -247,7 +249,7 @@ orgasm, excitement, plateau, resolution
 resolution, plateau, excitement, orgasm
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the phases of the human sexual response." hint="Walk through the four phases in the order the section presents them, naming what happens to blood flow or muscle at each stage." >}}
+{{< selfcheck question="Describe the phases of the human sexual response." hint="Reread the Sexual Response during Intercourse subsection." >}}
 In phase one (excitement), vasodilation leads to vasocongestion and enlargement of erectile tissues. Vaginal secretions are released to lubricate the vagina during intercourse. In phase two (plateau), stimulation continues, the outer third of the vaginal wall enlarges with blood, and breathing and heart rate increase. In phase three (orgasm), rhythmic, involuntary contractions of muscles occur. In the male, reproductive accessory glands and tubules constrict, depositing semen in the urethra; then, the urethra contracts, expelling the semen through the penis. In women, the uterus and vaginal muscles contract in waves that may last slightly less than a second each. In phase four (resolution), the processes listed in the first three phases reverse themselves and return to their normal state. Men experience a refractory period in which they cannot maintain an erection or ejaculate for a period of time ranging from minutes to hours. Women do not experience a refractory period.
 ===CHECKS===
 phase one (excitement): vasodilation leads to vasocongestion and enlargement of erectile tissues, and vaginal secretions lubricate the vagina
@@ -257,6 +259,18 @@ phase four (resolution): the processes reverse and return to normal, and men exp
 {{< /selfcheck >}}
 
 ### Describe spermatogenesis and oogenesis and discuss their differences and similarities
+
+{{< textin
+  question="The process of producing haploid sperm is called ________."
+  answer="spermatogenesis"
+  hint="Reread the paragraph on how sperm are produced in the wall of the seminiferous tubules."
+>}}
+
+{{< textin
+  question="The process of producing haploid eggs is called ________."
+  answer="oogenesis"
+  hint="Reread the paragraph on egg production that begins with the primary oocyte."
+>}}
 
 {{< multiplechoice
   question="Which of the following cells in spermatogenesis is diploid?"
@@ -272,25 +286,13 @@ sperm
 {{< multiplechoice
   question="How many eggs are produced as a result of one meiotic series of cell divisions?"
   answer="one"
-  hint="Trace what happens to the extra chromosomes and chromatids at each unequal division in oogenesis — where do they end up instead of becoming usable eggs?"
+  hint="Reread the last paragraph of the section body, before the Summary."
 >}}
 one
 two
 three
 four
 {{< /multiplechoice >}}
-
-{{< textin
-  question="The process of producing haploid sperm is called ________."
-  answer="spermatogenesis"
-  hint="Reread the paragraph on how sperm are produced in the wall of the seminiferous tubules."
->}}
-
-{{< textin
-  question="The process of producing haploid eggs is called ________."
-  answer="oogenesis"
-  hint="Reread the paragraph on egg production that begins with the primary oocyte."
->}}
 
 {{< selfcheck question="Compare spermatogenesis and oogenesis as to timing of the processes and the number and type of cells finally produced." hint="Reread the Spermatogenesis and Oogenesis subsections and the oogenesis diagram." >}}
 Stem cells are laid down in the male during gestation and lie dormant until adolescence. Stem cells in the female increase to one to two million and enter the first meiotic division and are arrested in prophase. At adolescence, spermatogenesis begins and continues until death, producing the maximum number of sperm with each meiotic division. Oogenesis continues again at adolescence in batches of oogonia with each menstrual cycle. These primary oocytes finish the first meiotic division, producing a secondary oocyte with most of the cytoplasm and its contents, and a second cell called a polar body containing 23 chromosomes. The second meiotic division, finished only if the egg is fertilized, yields a second polar body. At ovulation, a mature haploid egg is released. If this egg is fertilized, it finishes the second meiotic division, including the chromosomes donated by the sperm in the finished cell. This is a diploid, fertilized egg. *(Source note: the source solution says "These oogonia finish the first meiotic division," which produces "a primary oocyte," and that the second produces "a secondary oocyte"; this section's oogenesis paragraph says the primary oocyte finishing the first meiotic division yields "a secondary oocyte" and a polar body, and that the secondary oocyte, if fertilized, continues through meiosis II, "producing a second polar body and a fertilized egg." That paragraph also says it is the primary oocyte, not the oogonium, that finishes the first meiotic division: "This results in the primary oocyte finishing the first meiotic division.")*
@@ -303,5 +305,5 @@ at ovulation a mature haploid egg is released, and if fertilized it finishes the
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 43.3: Human Reproductive Anatomy and Gametogenesis](https://openstax.org/books/biology-2e/pages/43-3-human-reproductive-anatomy-and-gametogenesis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; five of the section's six figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_43_03_02ab, Figure_43_03_03ab, Figure_B43_03_06ab, Figure_43_03_05, and Figure_43_03_06 are each a hand-drawn or computer-rendered illustration — two of them pairing a diagram panel with a micrograph panel — not a captured photograph throughout); a longdesc added to every one of the six figures, transcribing its printed leader-line labels (or, for the two flow charts, its labeled circles and arrows) in reading order, and, for the ovary follicle figure, the direction of its printed cycle arrow, traced counterclockwise from the rupturing follicle over the top of the ovary to the corpus luteum; in-text pointers to figures and tables ("Figure 43.8" through "Table 43.2") replaced with "shown below," "illustrated above," or "the table below," since Hugo does not number figures or tables; the body Visual Connection rendered as its figure followed by a multiple choice, kept in the body — the note copy and the `<exercise>` copy print identical question and option wording, so no adjudication was needed; the two comparison tables (Male Reproductive Anatomy, Female Reproductive Anatomy) kept as Markdown tables in the body with no `sortbins`, since their columns are locations and functions, not categories; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/spermatogenesis redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), the body Visual Connection left in place rather than duplicated in Practice; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items added from the glossary (seminal vesicle, scrotum, spermatogenesis, oogenesis), covering four of the section's sixteen glossary terms; because the "Discuss the human sexual response" objective has no glossary terms and no comparison table of its own, two local items were built strictly from the section's own sentences and are disclosed here rather than sourced from a keyed exercise: a multiple choice ordering the four named phases (excitement, plateau, orgasm, resolution) and a text-recall item naming "orgasm" from the sentence "During phase three, or orgasm, rhythmic, involuntary contractions of muscles occur"; exercise `fs-idm37463664` ("Most of the semen is made by the ________ in the reproductive system") is keyed **seminal vesicles** rather than the module's own printed answer key of C, seminiferous tubules, because the module's own sentences contradict that key. Source defects: module `m66673`, exercise `fs-idm37463664` — the module's own text says "The seminal vesicle glands account for 60 percent of the bulk of semen," "Prostate gland secretions account for about 30 percent of the bulk of semen," and semen "is a mixture of sperm and spermatic duct secretions (about 10 percent of the total) and fluids from accessory glands that contribute most of the semen's volume" — so the seminal vesicles, not the seminiferous tubules (which contribute no fluid volume at all, only the sperm cells themselves), supply the largest single share of semen's bulk; keyed seminal vesicles above. the critical-thinking solution for `fs-idp47132288`, which reads "The second meiotic division results in a secondary oocyte and a second oocyte," corrected to "a second polar body" in the model answer, the product the section's own oogenesis paragraph names; the same solution's "These oogonia finish the first meiotic division, producing a primary oocyte" corrected, with a visible Source note, to "a secondary oocyte," the product the oogenesis paragraph gives for the first meiotic division, and its "These oogonia" corrected to "These primary oocytes," the cell that paragraph says finishes the first meiotic division, and the second-division sentence reworded to "The second meiotic division, finished only if the egg is fertilized, yields a second polar body" so the answer no longer produces the secondary oocyte twice, with rubric checkpoint 3 following the corrected answer.</small>
+<small>This section is adapted from [Biology 2e, Section 43.3: Human Reproductive Anatomy and Gametogenesis](https://openstax.org/books/biology-2e/pages/43-3-human-reproductive-anatomy-and-gametogenesis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; five of the section's six figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_43_03_02ab, Figure_43_03_03ab, Figure_B43_03_06ab, Figure_43_03_05, and Figure_43_03_06 are each a hand-drawn or computer-rendered illustration — two of them pairing a diagram panel with a micrograph panel — not a captured photograph throughout); a longdesc added to every one of the six figures, transcribing its printed leader-line labels (or, for the two flow charts, its labeled circles and arrows) in reading order, and, for the ovary follicle figure, the direction of its printed cycle arrow, traced counterclockwise from the rupturing follicle over the top of the ovary to the corpus luteum; in-text pointers to figures and tables ("Figure 43.8" through "Table 43.2") replaced with "shown below," "illustrated above," or "the table below," since Hugo does not number figures or tables; the body Visual Connection rendered as its figure followed by a multiple choice, kept in the body — the note copy and the `<exercise>` copy print identical question and option wording, so no adjudication was needed; the two comparison tables (Male Reproductive Anatomy, Female Reproductive Anatomy) kept as Markdown tables in the body with no `sortbins`, since their columns are locations and functions, not categories; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/spermatogenesis redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), the body Visual Connection left in place rather than duplicated in Practice; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items added from the glossary (bulbourethral gland, scrotum, spermatogenesis, oogenesis), covering four of the section's sixteen glossary terms; because the "Discuss the human sexual response" objective has no glossary terms and no comparison table of its own, two local items were built strictly from the section's own sentences and are disclosed here rather than sourced from a keyed exercise: a multiple choice ordering the four named phases (excitement, plateau, orgasm, resolution) and a text-recall item naming "orgasm" from the sentence "During phase three, or orgasm, rhythmic, involuntary contractions of muscles occur"; exercise `fs-idm37463664` ("Most of the semen is made by the ________ in the reproductive system") is keyed **seminal vesicles** rather than the module's own printed answer key of C, seminiferous tubules, because the module's own sentences contradict that key. Source defects: module `m66673`, exercise `fs-idm37463664` — the module's own text says "The seminal vesicle glands account for 60 percent of the bulk of semen," "Prostate gland secretions account for about 30 percent of the bulk of semen," and semen "is a mixture of sperm and spermatic duct secretions (about 10 percent of the total) and fluids from accessory glands that contribute most of the semen's volume" — so the seminal vesicles, not the seminiferous tubules (which contribute no fluid volume at all, only the sperm cells themselves), supply the largest single share of semen's bulk; keyed seminal vesicles above. the critical-thinking solution for `fs-idp47132288`, which reads "The second meiotic division results in a secondary oocyte and a second oocyte," corrected to "a second polar body" in the model answer, the product the section's own oogenesis paragraph names; the same solution's "These oogonia finish the first meiotic division, producing a primary oocyte" corrected, with a visible Source note, to "a secondary oocyte," the product the oogenesis paragraph gives for the first meiotic division, and its "These oogonia" corrected to "These primary oocytes," the cell that paragraph says finishes the first meiotic division, and the second-division sentence reworded to "The second meiotic division, finished only if the egg is fertilized, yields a second polar body" so the answer no longer produces the secondary oocyte twice, with rubric checkpoint 3 following the corrected answer.</small>
 

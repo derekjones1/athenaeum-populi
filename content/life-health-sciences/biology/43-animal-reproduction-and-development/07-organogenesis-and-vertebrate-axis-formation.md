@@ -64,10 +64,28 @@ Organogenesis is the formation of organs from the germ layers. Each germ layer g
 
 ### Describe the process of organogenesis
 
+{{< textin
+  question="A tube-like structure that forms from the ectoderm and gives rise to the brain and spinal cord is called the ________."
+  answer="neural tube"
+  hint="Reread the fourth paragraph of the section's first subsection."
+>}}
+
+{{< textin
+  question="The process of organ formation from the three germ layers is called ________."
+  answer="organogenesis"
+  hint="Reread the section's opening paragraph."
+>}}
+
+{{< textin
+  question="Drosophila have ________ along their bodies, and the patterning associated with their formation has allowed scientists to study which genes play important roles in organogenesis along the length of the embryo."
+  answer="segments"
+  hint="Reread the second paragraph of the section's first subsection."
+>}}
+
 {{< multiplechoice
   question="Which of the following gives rise to the skin cells?"
   answer="ectoderm"
-  hint="Skin is made of epithelial tissue; the section names which germ layer forms epithelial cells and tissues as well as neuronal tissue."
+  hint="Reread the first paragraph of the section's first subsection."
 >}}
 ectoderm
 endoderm
@@ -86,7 +104,7 @@ neural tube
 somites
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain how the different germ layers give rise to different tissue types." hint="Walk through what happens during differentiation itself, then follow one concrete example — a skin cell — from ectoderm to epidermis." >}}
+{{< selfcheck question="Explain how the different germ layers give rise to different tissue types." hint="Reread the first paragraph of the section's first subsection." >}}
 Organs form from the germ layers through the process of differentiation. During differentiation, the embryonic stem cells express a specific set of genes that will determine their ultimate fate as a cell type. For example, some cells in the ectoderm will express the genes specific to skin cells. As a result, these cells will differentiate into epidermal cells. The process of differentiation is regulated by cellular signaling cascades.
 ===CHECKS===
 organs form from the germ layers through the process of differentiation
@@ -95,31 +113,12 @@ cells in the ectoderm express genes specific to skin cells and differentiate int
 the process of differentiation is regulated by cellular signaling cascades
 {{< /selfcheck >}}
 
-{{< textin
-  question="A tube-like structure that forms from the ectoderm and gives rise to the brain and spinal cord is called the ________."
-  answer="neural tube"
-  hint="This structure rolls up from the flat plate at the embryo's dorsal midline, closing the epidermis over the top as it forms."
->}}
-
-{{< textin
-  question="The process of organ formation from the three germ layers is called ________."
-  answer="organogenesis"
-  hint="It names the whole process by which the germ layers differentiate into organs — the process that skin-cell formation is one event within."
->}}
-
-{{< textin
-  question="A group of cells separated by small spaces that forms from the mesoderm and gives rise to connective tissue is called a ________."
-  answer="somite"
-  hint="Clusters of these cells are visible as segments along the length of a five-week human embryo, flanking the developing neural tube."
->}}
-
 ### Identify the anatomical axes formed in vertebrates
 
 {{< textin
-  question="Formation of vertebrate ________ is another important developmental stage."
-  answer="axis"
-  accept="axes"
-  hint="This is the last sentence of the section summary."
+  question="Even as the germ layers form, the ball of cells still retains its ________ shape."
+  answer="spherical"
+  hint="Reread the first paragraph under Vertebrate Axis Formation."
 >}}
 
 {{< textin
@@ -128,7 +127,7 @@ the process of differentiation is regulated by cellular signaling cascades
   hint="Reread the Vertebrate Axis Formation paragraph on the Spemann and Mangold experiment."
 >}}
 
-{{< selfcheck question="Explain the role of axis formation in development." hint="Name the three axes first, then explain what the Spemann and Mangold transplant experiment showed about how one of them gets set up." >}}
+{{< selfcheck question="Explain the role of axis formation in development." hint="Reread the first two paragraphs under Vertebrate Axis Formation." >}}
 Animal bodies have lateral-medial (left-right), dorsal-ventral (back-belly), and anterior-posterior (head-feet) axes. The dorsal cells are genetically programmed to form the notochord and define the axis. There are many genes responsible for axis formation. Mutations in these genes lead to the loss of symmetry required for organism development.
 ===CHECKS===
 animal bodies have lateral-medial, dorsal-ventral, and anterior-posterior axes
@@ -139,4 +138,4 @@ mutations in these genes lead to the loss of symmetry required for organism deve
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 43.7: Organogenesis and Vertebrate Axis Formation](https://openstax.org/books/biology-2e/pages/43-7-organogenesis-and-vertebrate-axis-formation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text kept as printed; two figures (Figure_43_06_01, Figure_B43_06_03) re-kinded from the manifest's file-extension "photo" guess to "diagram" — both are labeled line drawings, and the source's own alt text opens "Illustration shows…" for each — while Figure_43_06_02 (an actual photograph of a five-week human embryo) is kept as the manifest's "photo" guess; a longdesc added to Figure_43_06_01 (the three-panel neural-tube formation sequence, including a count of all fourteen green ovals in the third panel) and to Figure_B43_06_03 (the three-axis body-plan diagram, transcribing all twelve printed labels), since neither figure's one-line caption carries its labels; Figure_43_06_02 gets no longdesc, since its caption already states everything the photograph shows; in-text pointers to figures ("Figure 43.28," "Figure 43.29," "Figure 43.30") replaced with "shown below," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively) — this module prints no Visual Connection item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five recall items added beyond the four end-of-section exercises — three glossary `textin` items (neural tube, organogenesis, somite), one cloze `textin` built from the section summary's closing sentence (axis), and one locally written `textin` built strictly from the Spemann and Mangold paragraph (notochord), added because the module's glossary and summary otherwise leave the "Identify the anatomical axes formed in vertebrates" objective without enough coverage on their own — disclosed here and in the source ledger; a grammar fix — the module's "Mutations in these genes leads to the loss of symmetry" corrected to "lead" (the plural subject "genes" takes "lead," matching the parallel sentence in this module's own Critical Thinking solution, which prints "genes lead") — a source defect.</small>
+<small>This section is adapted from [Biology 2e, Section 43.7: Organogenesis and Vertebrate Axis Formation](https://openstax.org/books/biology-2e/pages/43-7-organogenesis-and-vertebrate-axis-formation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text kept as printed; two figures (Figure_43_06_01, Figure_B43_06_03) re-kinded from the manifest's file-extension "photo" guess to "diagram" — both are labeled line drawings, and the source's own alt text opens "Illustration shows…" for each — while Figure_43_06_02 (an actual photograph of a five-week human embryo) is kept as the manifest's "photo" guess; a longdesc added to Figure_43_06_01 (the three-panel neural-tube formation sequence, including a count of all fourteen green ovals in the third panel) and to Figure_B43_06_03 (the three-axis body-plan diagram, transcribing all twelve printed labels), since neither figure's one-line caption carries its labels; Figure_43_06_02 gets no longdesc, since its caption already states everything the photograph shows; in-text pointers to figures ("Figure 43.28," "Figure 43.29," "Figure 43.30") replaced with "shown below," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively) — this module prints no Visual Connection item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five recall items added beyond the four end-of-section exercises — two glossary `textin` items (neural tube, organogenesis; the third glossary term, somite, is the key of the Review Question on the ribs, so it is not asked again as recall), two cloze `textin` items built from single body sentences (the *Drosophila* sentence, answered "segments," and the opening sentence of Vertebrate Axis Formation, answered "spherical"), and one locally written `textin` built strictly from the Spemann and Mangold paragraph (notochord), added because the module's glossary and summary otherwise leave the "Identify the anatomical axes formed in vertebrates" objective without enough coverage on their own — disclosed here and in the source ledger; a grammar fix — the module's "Mutations in these genes leads to the loss of symmetry" corrected to "lead" (the plural subject "genes" takes "lead," matching the parallel sentence in this module's own Critical Thinking solution, which prints "genes lead") — a source defect.</small>

@@ -128,7 +128,7 @@ The innate immune system serves as a first responder to pathogenic threats that 
 {{< multiplechoice
   question="Which of the following is a barrier against pathogens provided by the skin?"
   answer="desiccation"
-  hint="Reread the first paragraph after the section introduction, which says how pathogens are killed or inactivated on the skin itself."
+  hint="Reread the first paragraph under Physical and Chemical Barriers."
 >}}
 high pH
 mucus
@@ -139,14 +139,15 @@ desiccation
 {{< textin
   question="Immunity that occurs naturally because of genetic factors or physiology, and is not induced by infection or vaccination, is called ________."
   answer="innate immunity"
-  hint="The section's opening paragraph names this kind of immunity and says what it is not induced by."
+  accept="innate|innate immune response"
+  hint="Reread the section's opening paragraph."
 >}}
 
 {{< textin
   question="The innate immune system serves as a first responder to pathogenic threats that bypass natural ________ of the body."
   answer="physical and chemical barriers"
   accept="barriers|physical barriers|chemical barriers|chemical and physical barriers"
-  hint="Skin, mucus, tears, and stomach acid are examples. This sentence is the first line of the section summary."
+  hint="This sentence is the first line of the section summary."
 >}}
 
 ### Explain immediate and induced innate immune responses
@@ -165,7 +166,7 @@ helminths
 {{< multiplechoice
   question="Which organelle do phagocytes use to digest engulfed particles?"
   answer="lysosome"
-  hint="Neutrophils contain an organelle whose job is breaking down whatever the cell has just engulfed — which organelle specializes in that kind of digestion?"
+  hint="Reread the neutrophil sentences in the first paragraph of the second subsection under Pathogen Recognition."
 >}}
 lysosome
 nucleus
@@ -176,46 +177,46 @@ mitochondria
 {{< textin
   question="A chemical messenger that regulates cell differentiation, proliferation, gene expression, and cell trafficking to affect immune responses is called a ________."
   answer="cytokine"
-  hint="At least 40 types of this kind of signaling molecule exist in humans, and interferons and interleukins are both examples of it."
+  hint="Reread the first paragraph of the first subsection under Pathogen Recognition."
 >}}
 
 {{< textin
   question="The localized redness, swelling, heat, and pain that result from the movement of leukocytes and fluid through increasingly permeable capillaries to a site of infection is called ________."
   answer="inflammation"
-  hint="The first cytokines produced at an infection site are described as promoting this classic four-symptom response."
+  accept="inflammatory response"
+  hint="Reread the opening sentence of the second subsection under Pathogen Recognition."
 >}}
 
 {{< textin
   question="A large phagocytic cell that engulfs foreign particles and pathogens is called a ________."
   answer="macrophage"
-  hint="Monocytes differentiate into this cell type after moving from the blood into infected tissue."
+  hint="Reread the Pathogen Recognition paragraph that introduces PAMPs and the receptors that recognize them."
 >}}
 
 ### Discuss natural killer cells
 
 {{< textin
-  question="A lymphocyte that can kill cells infected with viruses or tumor cells is called a ________."
-  answer="natural killer cell"
-  accept="NK cell|natural killer (NK) cell"
-  hint="Reread the first paragraph of the subsection after Pathogen Recognition, on the lymphocytes that identify and destroy infected cells."
->}}
-
-{{< textin
-  question="The destructive protein that an NK cell secretes to create a pore in a target cell's membrane is called ________."
-  answer="perforin"
-  hint="Reread the paragraph on what an NK cell's cytoplasm secretes after it detects an infected or tumor cell."
+  question="A leukocyte that is histologically identifiable by its large nuclei, and is a small cell with very little cytoplasm, is called a ________."
+  answer="lymphocyte"
+  hint="Reread the first sentence of the section after Pathogen Recognition."
 >}}
 
 {{< multiplechoice
   question="Which innate immune system component uses MHC I molecules directly in its defense strategy?"
   answer="NK cells"
-  hint="This lymphocyte constantly checks nearby cells for a normal, intact display of one particular surface protein, and only attacks when that check fails."
+  hint="Reread the last two paragraphs of the section after Pathogen Recognition."
 >}}
 macrophages
 neutrophils
 NK cells
 interferon
 {{< /multiplechoice >}}
+
+{{< textin
+  question="The destructive protein that an NK cell secretes to create a pore in a target cell's membrane is called ________."
+  answer="perforin"
+  hint="Reread the paragraph on what an NK cell's cytoplasm secretes after it detects an infected or tumor cell."
+>}}
 
 {{< textin
   question="A protease that enters a target cell through perforin's pore and induces that cell to undergo apoptosis is called a ________."
@@ -228,11 +229,11 @@ interferon
 {{< textin
   question="Proteins found on the surface of every nucleated cell, and scarce on non-nucleated cells such as red blood cells and platelets, are called ________ molecules."
   answer="MHC I"
-  accept="MHC class I|major histocompatibility complex I|major histocompatibility complex class I"
-  hint="NK cells check for a healthy, intact display of exactly this molecule before deciding whether to leave a cell alone."
+  accept="MHC class I|class I MHC|major histocompatibility complex I|major histocompatibility complex class I"
+  hint="Reread the first paragraph under Natural Killer Cells."
 >}}
 
-{{< selfcheck question="Different MHC I molecules between donor and recipient cells can lead to rejection of a transplanted organ or tissue. Suggest a reason for this." hint="Think about which innate immune cell type patrols for cells whose surface proteins look 'foreign' rather than normal." >}}
+{{< selfcheck question="Different MHC I molecules between donor and recipient cells can lead to rejection of a transplanted organ or tissue. Suggest a reason for this." hint="Reread the last two paragraphs of the section after Pathogen Recognition." >}}
 If the MHC I molecules expressed on donor cells differ from the MHC I molecules expressed on recipient cells, NK cells may identify the donor cells as "non-self" and produce perforin and granzymes to induce the donor cells to undergo apoptosis, which would destroy the transplanted organ.
 ===CHECKS===
 MHC I molecules on donor cells differ from those on recipient cells
@@ -245,7 +246,7 @@ this would destroy the transplanted organ
   question="MHC I molecules function to display fragments of proteins from infectious agents within a cell to ________."
   answer="T cells"
   accept="T lymphocyte"
-  hint="These are the lymphocytes that mature in the thymus gland, one of the two adaptive-immune-system cell types introduced alongside NK cells."
+  hint="Reread the sentence on the function of MHC I molecules in the first paragraph under Natural Killer Cells."
 >}}
 
 ### Summarize how the proteins in a complement system function to destroy extracellular pathogens
@@ -253,11 +254,11 @@ this would destroy the transplanted organ
 {{< textin
   question="An array of approximately 20 soluble proteins of the innate immune system that enhance phagocytosis, bore holes in pathogens, and recruit lymphocytes is called the ________."
   answer="complement system"
-  accept="complement"
-  hint="It's named for the way it works alongside the antibody response of the adaptive immune system."
+  accept="complement|complement proteins"
+  hint="Reread the first paragraph of the last subsection before the Summary."
 >}}
 
-{{< selfcheck question="If a series of genetic mutations prevented some, but not all, of the complement proteins from binding antibodies or pathogens, would the entire complement system be compromised?" hint="Think about what a break anywhere in a strictly ordered chain of binding events does to every step that comes after it." >}}
+{{< selfcheck question="If a series of genetic mutations prevented some, but not all, of the complement proteins from binding antibodies or pathogens, would the entire complement system be compromised?" hint="Reread the first paragraph of the last subsection before the Summary." >}}
 The entire complement system would probably be affected even when only a few members were mutated such that they could no longer bind. Because the complement involves the binding of activated proteins in a specific sequence, when one or more proteins in the sequence are absent, the subsequent proteins would be incapable of binding to elicit the complement's pathogen-destructive effects.
 ===CHECKS===
 the entire complement system would probably be affected even when only a few members were mutated such that they could no longer bind
@@ -268,9 +269,9 @@ when one or more proteins in the sequence are absent, the subsequent proteins wo
 {{< textin
   question="The process that enhances phagocytosis by using proteins to mark the presence of a pathogen for phagocytic cells is called ________."
   answer="opsonization" accept="opsonisation"
-  hint="Complement proteins coating a pathogen's surface act like a flag telling macrophages and B cells to engulf it."
+  hint="Reread the second paragraph of the last subsection before the Summary."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 42.1: Innate Immune Response](https://openstax.org/books/biology-2e/pages/42-1-innate-immune-response) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_42_01_01 is a labeled table of cell types, and Figure_42_01_04 is a hand-drawn illustration, neither is a captured photograph); a longdesc added to every diagram whose meaning is not carried by its caption alone — the innate-immune-cell table, the interferon-signaling illustration, the capillary/leukocyte illustration, and the complement-cascade flow chart — transcribing each drawing's rows, labels, and arrows in reading order; the interferon-diagram longdesc's letter-spaced "R N A" corrected to "RNA"; in-text pointers to figures replaced with "shown below," "shown above," or "illustrated below," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout with descriptive link text in place of the source's bare "video," keeping the module's own openstax.org/l/conidia redirect URL; the four Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each used once; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; a cloze recall item added from the section summary (physical and chemical barriers); ten key-term recall items added from the glossary (innate immunity, cytokine, inflammation, macrophage, natural killer cell, perforin, granzyme, complement system, opsonization, and MHC I built from its combined MHC I/II glossary entry, focused on the MHC I half the objective asks about); one further recall item (T cells) built from the MHC I functional sentence rather than the bare glossary meaning, to keep it under the MHC I objective rather than the natural killer cells objective; no `sortbins` was built — the section's one table (the innate-immune-cell type/characteristics/location table) does not have columns naming categories, so it stays a transcribed figure rather than a sort exercise.</small>
+<small>This section is adapted from [Biology 2e, Section 42.1: Innate Immune Response](https://openstax.org/books/biology-2e/pages/42-1-innate-immune-response) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_42_01_01 is a labeled table of cell types, and Figure_42_01_04 is a hand-drawn illustration, neither is a captured photograph); a longdesc added to every diagram whose meaning is not carried by its caption alone — the innate-immune-cell table, the interferon-signaling illustration, the capillary/leukocyte illustration, and the complement-cascade flow chart — transcribing each drawing's rows, labels, and arrows in reading order; the interferon-diagram longdesc's letter-spaced "R N A" corrected to "RNA"; in-text pointers to figures replaced with "shown below," "shown above," or "illustrated below," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout with descriptive link text in place of the source's bare "video," keeping the module's own openstax.org/l/conidia redirect URL; the four Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each used once; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; a cloze recall item added from the section summary (physical and chemical barriers); ten key-term recall items added from the glossary (innate immunity, cytokine, inflammation, macrophage, lymphocyte, perforin, granzyme, complement system, opsonization, and MHC I built from its combined MHC I/II glossary entry, focused on the MHC I half the objective asks about) — natural killer cell is not asked as a recall item, since the MHC I Review Question already keys NK cells; one further recall item (T cells) built from the MHC I functional sentence rather than the bare glossary meaning, to keep it under the MHC I objective rather than the natural killer cells objective; no `sortbins` was built — the section's one table (the innate-immune-cell type/characteristics/location table) does not have columns naming categories, so it stays a transcribed figure rather than a sort exercise.</small>

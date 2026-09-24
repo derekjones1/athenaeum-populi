@@ -220,19 +220,19 @@ Communities include all the different species living in a given area. The variet
 
 ### Discuss the predator-prey cycle
 
-{{< multiplechoice question="About how long does one full cycle of the lynx and snowshoe hare population dynamic last, according to the section?" answer="approximately 10 years" hint="The passage gives two different numbers — one for the length of the full cycle, one for how far behind the lag between the two populations runs." >}}
+{{< multiplechoice question="About how long does one full cycle of the lynx and snowshoe hare population dynamic last, according to the section?" answer="approximately 10 years" hint="Reread the paragraph just before the lynx and snowshoe hare graph." >}}
 1–2 years
 approximately 10 years
 50 years
 150 years
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe how the snowshoe hare and lynx populations rise and fall relative to each other over one predator-prey cycle." hint="Walk through what happens to each population as the other's numbers rise, peak, and then fall." >}}
+{{< selfcheck question="Describe how the snowshoe hare and lynx populations rise and fall relative to each other over one predator-prey cycle." hint="Reread the paragraph just before the lynx and snowshoe hare graph." >}}
 The lynx and snowshoe hare populations cycle over a period of about 10 years, with the lynx population lagging the hare population by 1–2 years. As hare numbers increase, more food becomes available for the lynx, so the lynx population also grows. When the lynx population reaches a high enough level, the lynxes kill so many hares that the hare population begins to decline, which is then followed by a decline in the lynx population because its food source has become scarce. When the lynx population is low, the hare population begins to increase again, at least in part because of low predation pressure, starting the cycle anew.
 ===CHECKS===
-the lynx population lags the hare population by 1–2 years
+the lynx population lagging the hare population by 1–2 years
 as hare numbers increase, more food becomes available for the lynx, so the lynx population also grows
-the lynxes kill so many hares that the hare population begins to decline, followed by a decline in the lynx population because its food source has become scarce
+the lynxes kill so many hares that the hare population begins to decline, which is then followed by a decline in the lynx population because its food source has become scarce
 when the lynx population is low, the hare population begins to increase again, starting the cycle anew
 {{< /selfcheck >}}
 
@@ -245,70 +245,81 @@ greater hunting efficiency by lynx at high hare density
 
 ### Give examples of defenses against predation and herbivory
 
-{{< multiplechoice question="Which type of mimicry involves multiple species with similar warning coloration that are all toxic to predators?" answer="Müllerian mimicry" hint="Look for the option where every species sharing the pattern is genuinely toxic or dangerous, not just one of them." >}}
+{{< textin question="Avoiding detection by predators by blending in with the background is called ________." answer="camouflage" hint="Reread the paragraph on the tropical walking stick and the chameleon." >}}
+
+{{< textin question="The defensive mechanism in which a conspicuous appearance signals a foul taste, toxic chemicals, or the ability to sting or bite, so that predators learn not to eat the organism, is called ________." answer="aposematic coloration" accept="warning coloration|aposematic colouration|warning colouration" hint="Reread the paragraph just before the poison dart frog and skunk photos." >}}
+
+{{< textin question="The type of mimicry in which a harmless species imitates the warning coloration of a harmful species, without sharing its defenses, is called ________." answer="Batesian mimicry" accept="Batesian" hint="Reread the paragraph just before the bumblebee and robber fly photos." >}}
+
+{{< textin question="The rare form of mimicry in which a deadly species mimics a less dangerous one, as when a venomous snake resembles a milder one, is called ________." answer="Emsleyan/Mertensian mimicry" accept="Emsleyan mimicry|Mertensian mimicry|Emsleyan or Mertensian mimicry|Emsleyan/Mertensian|Emsleyan|Mertensian" hint="Reread the paragraph just before the butterfly photo." >}}
+
+{{< multiplechoice question="Which type of mimicry involves multiple species with similar warning coloration that are all toxic to predators?" answer="Müllerian mimicry" hint="Reread the paragraph just before the butterfly photo." >}}
 Batesian mimicry
 Müllerian mimicry
 Emsleyan/Mertensian mimicry
 Mertensian mimicry
 {{< /multiplechoice >}}
 
-{{< textin question="Avoiding detection by predators by blending in with the background is called ________." answer="camouflage" hint="Think of the walking stick insect that looks just like the twig it sits on." >}}
-
-{{< textin question="Bright coloration that warns predators a species is toxic, foul-tasting, or otherwise dangerous to eat is called ________." answer="aposematic coloration" accept="warning coloration" hint="Predators that ignore this coloration and eat the organism learn, after one unpleasant encounter, not to eat it again." >}}
-
-{{< textin question="The type of mimicry in which a harmless species imitates the warning coloration of a harmful species, without sharing its defenses, is called ________." answer="Batesian mimicry" hint="This mimic carries none of the physical or chemical defenses of the harmful species it resembles." >}}
-
-{{< textin question="The rare form of mimicry in which a deadly species mimics a less dangerous one, as when a venomous snake resembles a milder one, is called ________." answer="Emsleyan/Mertensian mimicry" accept="Emsleyan mimicry|Mertensian mimicry|Emsleyan or Mertensian mimicry" hint="Think of the venomous coral snake and the harmless milk snake sharing a similar pattern." >}}
-
-{{< sortbins question="Assign each description to the type of mimicry it fits." hint="Ask whether every species sharing the coloration is actually dangerous, or only one of them." >}}
-{"bins": ["Batesian mimicry", "Müllerian mimicry"],
+{{< sortbins question="Assign each defense against predation or herbivory to the type the section gives it." hint="Reread the Defense Mechanisms against Predation and Herbivory subsection and the captions of its first three figures." >}}
+{"bins": ["Mechanical defense", "Camouflage", "Aposematic coloration"],
  "items": [
-  {"label": "A harmless species imitates the warning coloration of a single harmful species", "bin": 0},
-  {"label": "Multiple species share the same warning coloration, and every one of them actually has defenses", "bin": 1},
-  {"label": "The mimicking species has no physical or chemical defenses of its own against predation", "bin": 0},
-  {"label": "Several foul-tasting butterfly species evolve a similar color pattern to reinforce a shared warning signal", "bin": 1},
-  {"label": "A harmless insect copies the coloration of a stinging wasp or bee", "bin": 0}]}
+  {"label": "Thorns of the honey locust tree", "bin": 0},
+  {"label": "Twig-like body of the tropical walking stick", "bin": 1},
+  {"label": "Bright colors of the fire-bellied toad", "bin": 2},
+  {"label": "Shell of the Florida red-bellied turtle", "bin": 0},
+  {"label": "A chameleon changing its color to match its surroundings", "bin": 1},
+  {"label": "Bright colors of the cinnabar moth caterpillar", "bin": 2}]}
 {{< /sortbins >}}
 
 ### Describe the competitive exclusion principle
 
-{{< textin question="The principle stating that no two species can coexist in a habitat if they compete for the same resources at the same place and time is called the ________." answer="competitive exclusion principle" hint="The classic laboratory example pits two Paramecium species against each other in the same test tube." >}}
+{{< textin question="The principle stating that no two species can coexist in a habitat if they compete for the same resources at the same place and time is called the ________." answer="competitive exclusion principle" hint="Reread the paragraph just before the Paramecium growth graphs." >}}
 
 {{< textin question="Competitive exclusion may be avoided if a population evolves to make use of a different resource, a different area of the habitat, or feeds during a different time of day, which is called ________." answer="resource partitioning" hint="Reread the paragraph that follows the Paramecium graphs." >}}
 
-{{< selfcheck question="Describe the competitive exclusion principle and its effects on competing species." hint="Think about what happens to two species that need exactly the same resources at the same time and place, versus two that split those resources somehow." >}}
+{{< selfcheck question="Describe the competitive exclusion principle and its effects on competing species." hint="Reread the paragraphs before and after the Paramecium growth graphs." >}}
 The competitive exclusion principle states that no two species competing for the same resources at the same time and place can coexist over time. Thus, one of the competing species will eventually dominate. On the other hand, if the species evolve such that they use resources from different parts of the habitat or at different times of day, the two species can exist together indefinitely.
 ===CHECKS===
 no two species competing for the same resources at the same time and place can coexist over time
 one of the competing species will eventually dominate
-if the species use resources from different parts of the habitat or at different times of day, they can coexist indefinitely
+if the species evolve such that they use resources from different parts of the habitat or at different times of day, the two species can exist together indefinitely
 {{< /selfcheck >}}
 
 ### Give examples of symbiotic relationships between species
 
-{{< multiplechoice question="A symbiotic relationship where both of the coexisting species benefit from the interaction is called ________." answer="mutualism" hint="Look for the term describing a relationship where both species come out ahead." >}}
+{{< textin question="Close interactions between individuals of different species over an extended period of time that affect the abundance and distribution of the populations involved are called ________." answer="symbiosis" accept="symbioses|symbiotic relationship" hint="Reread the paragraph right after the one on resource partitioning." >}}
+
+{{< textin question="A symbiotic relationship in which one species benefits while the other is neither helped nor harmed is called ________." answer="commensalism" accept="commensal relationship" hint="Reread the paragraph just before the weaver-bird photo." >}}
+
+{{< textin question="An organism that lives in or on another living organism and derives nutrients from it, while that other organism is harmed, is called a ________." answer="parasite" hint="Reread the first paragraph of the last subsection under Symbiosis." >}}
+
+{{< textin question="The organism that a parasite lives in or on, and from which it derives nutrients, is called the ________." answer="host" hint="Reread the first paragraph of the last subsection under Symbiosis." >}}
+
+{{< multiplechoice question="A symbiotic relationship where both of the coexisting species benefit from the interaction is called ________." answer="mutualism" hint="Reread the first sentence of each subsection under Symbiosis." >}}
 commensalism
 parasitism
 mutualism
 communism
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="Which of the following is **not** a mutualistic relationship?" answer="a helminth feeding from its host" hint="Check each option against the examples in the subsections on the three kinds of close, long-term interaction between species." >}}
+{{< multiplechoice question="Which of the following is **not** a mutualistic relationship?" answer="a helminth feeding from its host" hint="Compare each option against the definitions that open the three subsections under Symbiosis." >}}
 a shark using an aquatic cleaning station
 a helminth feeding from its host
 a bumblebee collecting pollen from a flower
 bacteria living in the gut of humans
 {{< /multiplechoice >}}
 
-{{< textin question="A symbiotic relationship in which one species benefits while the other is neither helped nor harmed is called ________." answer="commensalism" accept="commensal relationship" hint="A bird's nest built in a tree, with the tree unaffected, is the section's own example." >}}
-
-{{< textin question="An organism that lives in or on another living organism and derives nutrients from it, while that other organism is harmed, is called a ________." answer="parasite" hint="The tapeworm and the malaria-causing protozoan are both examples from the section." >}}
-
-{{< textin question="Close interactions between individuals of different species over an extended period of time that affect the abundance and distribution of the populations involved are called ________." answer="symbiosis" accept="symbioses" hint="Commensalism, mutualism, and parasitism are all specific types of this broader relationship." >}}
-
-{{< textin question="The organism that a parasite lives in or on, and from which it derives nutrients, is called the ________." answer="host" hint="This organism benefits the parasite and is usually weakened by it, though rarely killed quickly." >}}
-
 ### Describe community structure and succession
+
+{{< textin question="A species considered the 'base' or 'bedrock' of a community, usually a primary producer with the greatest influence on the community's overall structure, is called a ________." answer="foundation species" hint="Reread the first paragraph of the first subsection under Characteristics of Communities." >}}
+
+{{< textin question="A species whose presence is key to maintaining biodiversity within an ecosystem and to upholding the community's structure is called a ________." answer="keystone species" hint="Reread the paragraph just before the Pisaster sea star photo." >}}
+
+{{< textin question="The final, stable stage of succession, formed by a characteristic assortment of plant and animal species that persists until the next disturbance, is called the ________." answer="climax community" accept="climax communities" hint="Reread the paragraph just before the oak-and-hickory forest illustrations." >}}
+
+{{< textin question="Succession that begins on land that previously had no life at all, such as newly cooled lava, is called ________." answer="primary succession" hint="Reread the second paragraph under Community Dynamics." >}}
+
+{{< textin question="Succession that occurs after an environmental disturbance moves an already-established community away from its equilibrium is called ________." answer="secondary succession" hint="Reread the second paragraph under Community Dynamics." >}}
 
 {{< multiplechoice question="The first species to live on new land, such as that formed from volcanic lava, are called ________." answer="pioneer species" hint="Reread the first paragraph of Community Dynamics' subsection on succession on newly formed land." >}}
 climax community
@@ -317,24 +328,14 @@ foundation species
 pioneer species
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Jaguars are a keystone species in the Amazon. Describe how they can be so essential to the ecosystem despite being significantly less abundant than many other species." hint="Think about what happens further down the food chain if the top predator is removed." >}}
+{{< selfcheck question="Jaguars are a keystone species in the Amazon. Describe how they can be so essential to the ecosystem despite being significantly less abundant than many other species." hint="Reread the sea star example in the Keystone Species subsection." >}}
 Jaguars are an apex predator in the Amazon, eating a variety of prey animals and not serving as prey to any other predators. Through predation, they control the population sizes of the smaller herbivores and omnivores. If jaguars were to disappear from the ecosystem, the smaller herbivore populations would dramatically increase, and could overconsume the plant populations.
 ===CHECKS===
 jaguars are an apex predator, eating a variety of prey animals and not serving as prey to any other predators
-through predation, they control the population sizes of smaller herbivores and omnivores
-if jaguars disappeared, herbivore populations would dramatically increase and could overconsume the plant populations
+through predation, they control the population sizes of the smaller herbivores and omnivores
+if jaguars were to disappear from the ecosystem, the smaller herbivore populations would dramatically increase, and could overconsume the plant populations
 {{< /selfcheck >}}
-
-{{< textin question="A species considered the 'base' or 'bedrock' of a community, usually a primary producer with the greatest influence on the community's overall structure, is called a ________." answer="foundation species" hint="Kelp forming a kelp forest, and reef-building coral, are the section's own examples." >}}
-
-{{< textin question="A species whose presence is key to maintaining biodiversity within an ecosystem and to upholding the community's structure is called a ________." answer="keystone species" hint="The sea star Pisaster ochraceus is the section's tidepool example; removing it lets mussels take over." >}}
-
-{{< textin question="The final, stable stage of succession, formed by a characteristic assortment of plant and animal species that persists until the next disturbance, is called the ________." answer="climax community" hint="In the oak-and-hickory example this stage is reached roughly 150 years after a wildfire." >}}
-
-{{< textin question="Succession that begins on land that previously had no life at all, such as newly cooled lava, is called ________." answer="primary succession" hint="Contrast this with succession that starts where a community already existed and was disturbed." >}}
-
-{{< textin question="Succession that occurs after an environmental disturbance moves an already-established community away from its equilibrium is called ________." answer="secondary succession" hint="A forest regrowing after a wildfire, rather than land that never held life, is the section's example." >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 45.6: Community Ecology](https://openstax.org/books/biology-2e/pages/45-6-community-ecology) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the keystone-species photo's alt calls the sea star purple, because the source alt's "reddish-brown" does not match the image; figures re-encoded as WebP; four figures re-kinded from the manifest's file-extension "photo" guess to "diagram" — Figure_45_06_01 (the lynx/hare population-cycle chart), Figure_45_06_07abc (the three Paramecium growth-curve graphs), Figure_45_06_12 (the mammal species-richness map), and Figure_45_06_16 (the three secondary-succession illustrations) — none of which is a captured photograph; a longdesc added to those four figures plus the tapeworm life-cycle diagram (Figure_B45_06_09ab), each counting and naming its axes, legend classes, panels, or numbered steps in reading order; alt text lightly normalized to a consistent "(a)"/"(b)" panel-lettering style across the multi-panel photographs, with two corrections in the invasive-species panel: the source alt's "yellow flowers" on the buckthorn, where the photo shows dark berries, and "resembling a cricket" for the emerald ash borer, a beetle — the first, a source defect; the `interactive` note rendered as a Link to Learning callout with the module's own openstax.org/l/find_the_mimic redirect URL, its anchor text expanded to name the destination; the `everyday` note rendered as an Everyday Connection callout with its bold name and italic title, its figure and paragraphs kept inside the box as printed; in-text pointers to printed figure numbers replaced with "shown below," since Hugo does not number figures; all four Review Questions and both Critical Thinking Questions adapted into the closing interactive Practice block, placed under the objective each one tests; rubric checkpoints added to each self-check, decomposing its model answer (the source solution, kept verbatim) into check-off clauses with no new claims; fourteen key-term recall items added from the glossary (aposematic coloration, Batesian mimicry, camouflage, Emsleyan/Mertensian mimicry, commensalism, host, parasite, symbiosis, competitive exclusion principle, foundation species, keystone species, climax community, primary succession, secondary succession); one recall item built from the Competitive Exclusion Principle paragraph's own sentence on resource partitioning (it replaced a summary-sourced cloze on "resources" whose key the competitive-exclusion recall item's own prompt prints); the parasite, symbiosis, and host recall items reordered so that no hint naming parasitism sits directly above the parasite item; a local sortbins added, sorting five module sentences describing Batesian and Müllerian mimicry into the two mimicry types, as the biology playbook's prose-based dispensation for this section permits; because the "Discuss the predator-prey cycle" objective has no Review Question, Critical Thinking Question, or glossary term of its own, its Practice group is built entirely from the section's own predator-prey paragraphs — a multiple choice on the cycle's length, a self-check on the hare/lynx relationship, and a multiple choice on the alternative density-dependent explanation — disclosed here and in the source ledger. `fs-idm10859360` (the mimicry Review Question) prints both "Emsleyan/Mertensian mimicry" and "Mertensian mimicry" as separate options and `fs-idp168517216` prints "communism" as a distractor; both are kept as printed, per the source. No source key departures or distractor replacements were needed on this page.</small>
+<small>This section is adapted from [Biology 2e, Section 45.6: Community Ecology](https://openstax.org/books/biology-2e/pages/45-6-community-ecology) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the keystone-species photo's alt calls the sea star purple, because the source alt's "reddish-brown" does not match the image; figures re-encoded as WebP; four figures re-kinded from the manifest's file-extension "photo" guess to "diagram" — Figure_45_06_01 (the lynx/hare population-cycle chart), Figure_45_06_07abc (the three Paramecium growth-curve graphs), Figure_45_06_12 (the mammal species-richness map), and Figure_45_06_16 (the three secondary-succession illustrations) — none of which is a captured photograph; a longdesc added to those four figures plus the tapeworm life-cycle diagram (Figure_B45_06_09ab), each counting and naming its axes, legend classes, panels, or numbered steps in reading order; alt text lightly normalized to a consistent "(a)"/"(b)" panel-lettering style across the multi-panel photographs, with two corrections in the invasive-species panel: the source alt's "yellow flowers" on the buckthorn, where the photo shows dark berries, and "resembling a cricket" for the emerald ash borer, a beetle — the first, a source defect; the `interactive` note rendered as a Link to Learning callout with the module's own openstax.org/l/find_the_mimic redirect URL, its anchor text expanded to name the destination; the `everyday` note rendered as an Everyday Connection callout with its bold name and italic title, its figure and paragraphs kept inside the box as printed; in-text pointers to printed figure numbers replaced with "shown below," since Hugo does not number figures; all four Review Questions and both Critical Thinking Questions adapted into the closing interactive Practice block, placed under the objective each one tests; rubric checkpoints added to each self-check, decomposing its model answer (for the two Critical Thinking Questions, the source solution kept verbatim) into check-off clauses with no new claims; fourteen key-term recall items added from the glossary (aposematic coloration, Batesian mimicry, camouflage, Emsleyan/Mertensian mimicry, commensalism, host, parasite, symbiosis, competitive exclusion principle, foundation species, keystone species, climax community, primary succession, secondary succession); one recall item built from the Competitive Exclusion Principle paragraph's own sentence on resource partitioning; in each objective group the recall items come before the Review Questions, so that no option list above a recall item prints its key; a local sortbins added, sorting six of the section's own examples of defenses — the honey locust's thorns, the turtle's shell, the walking stick, the chameleon, the fire-bellied toad, and the cinnabar moth caterpillar — into mechanical defense, camouflage, and aposematic coloration, as the section's text and captions classify them; because the "Discuss the predator-prey cycle" objective has no Review Question, Critical Thinking Question, or glossary term of its own, its Practice group is built entirely from the section's own predator-prey paragraphs — a multiple choice on the cycle's length, a self-check on the hare/lynx relationship, and a multiple choice on the alternative density-dependent explanation — disclosed here and in the source ledger. `fs-idm10859360` (the mimicry Review Question) prints both "Emsleyan/Mertensian mimicry" and "Mertensian mimicry" as separate options and `fs-idp168517216` prints "communism" as a distractor; both are kept as printed, per the source. No source key departures or distractor replacements were needed on this page.</small>

@@ -158,19 +158,19 @@ Deserts are generally dry ecosystems having very little rainfall.
   question="The term for altered global weather patterns, including a worldwide rise in temperature, driven largely by rising atmospheric carbon dioxide levels, is ________."
   answer="global climate change"
   accept="climate change"
-  hint="This is the broad, lasting pattern the whole section describes, not any single storm or season."
+  hint="Reread the section's opening paragraph, before its first subsection."
 >}}
 
 {{< textin
   question="The long-term, predictable atmospheric conditions typical of a specific area are called ________."
   answer="climate"
-  hint="Contrast this with the short-term, harder-to-predict conditions of a single day — this term is the opposite of that, the 'average' taken over many years."
+  hint="Reread the section's first subsection, the paragraph after the Indiana example."
 >}}
 
 {{< textin
-  question="The conditions of the atmosphere during a short period of time, such as a single day or a 48-hour forecast, are called ________."
-  answer="weather"
-  hint="This is what changes from one day to the next and is difficult to predict far in advance."
+  question="Antarctic ________ have been collected and analyzed to indirectly estimate the temperature of the Earth over the past 400,000 years."
+  answer="ice cores"
+  hint="Reread the second paragraph of the subsection on evidence, just before the drilling photographs."
 >}}
 
 ### Summarize the effects of the Industrial Revolution on global atmospheric carbon dioxide concentration
@@ -178,7 +178,7 @@ Deserts are generally dry ecosystems having very little rainfall.
 {{< multiplechoice
   question="According to this section, how has the atmospheric concentration of CO₂ changed since the beginning of industrialization?"
   answer="It has risen steadily."
-  hint="The section's own graph of CO₂ concentration by year, spanning the mid-1950s to the mid-2000s, traces a single continuous direction with no reversals."
+  hint="Look at the graph of atmospheric CO₂ concentration after the Industrial Revolution paragraph, and its caption."
 >}}
 It has risen steadily.
 It has fallen steadily.
@@ -191,13 +191,13 @@ It has stayed essentially constant.
   answer="the burning of fossil fuels"
   hint="Reread the paragraph on the Industrial Revolution, just before the carbon dioxide graph."
 >}}
-the burning of fossil fuels
-the Milankovitch cycles
+slight changes in the Earth's orbit
 volcanic eruptions
-changes in solar intensity
+the burning of fossil fuels
+variation in the sun's intensity
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Predict possible consequences if carbon emissions from fossil fuels continue to rise." hint="Trace the consequences in the order the model answer's own reasoning follows: temperature first, then what happens to sea levels, then glaciers and meltwater supply, and finally the seasonal cues plants and animals depend on." >}}
+{{< selfcheck question="Predict possible consequences if carbon emissions from fossil fuels continue to rise." hint="Reread the subsection on present climate change, near the end of the section." >}}
 If carbon emissions continue to rise, the global temperature will continue to rise; thus, ocean waters will cause the rising of sea levels at the coastlines. Continued melting of glaciers and reduced spring and summer meltwaters may cause summertime water shortages. Changes in seasonal temperatures may alter lifecycles and interrupt breeding patterns in many species of plants and animals.
 ===CHECKS===
 the global temperature will continue to rise
@@ -207,6 +207,24 @@ changes in seasonal temperatures may alter lifecycles and interrupt breeding pat
 {{< /selfcheck >}}
 
 ### Describe three natural factors affecting long-term global climate
+
+{{< textin
+  question="A global phenomenon that occurs when dust, ash, or other suspended particles block out sunlight and trigger lower global temperatures is called ________."
+  answer="haze-effect cooling"
+  hint="Reread the paragraph on the third of the natural drivers that operated before the Industrial Era."
+>}}
+
+{{< textin
+  question="The cyclic changes in Earth's orbit that may affect climate, recurring on a scale of about 19,000 to 100,000 years, are called the ________."
+  answer="Milankovitch cycles"
+  hint="Reread the paragraph on the first of the three drivers that operated before the Industrial Era."
+>}}
+
+{{< textin
+  question="The amount of solar power or energy the sun emits in a given amount of time is called ________."
+  answer="solar intensity"
+  hint="Reread the paragraph on the second of the natural drivers that operated before the Industrial Era."
+>}}
 
 {{< multiplechoice
   question="Which of the following natural forces is responsible for the release of carbon dioxide and other atmospheric gases?"
@@ -219,25 +237,7 @@ solar intensity
 burning of fossil fuels
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A global cooling phenomenon that occurs when dust, ash, or other particles from a volcanic eruption block out sunlight is called ________."
-  answer="haze-effect cooling"
-  hint="Reread the paragraph on the 1783 Iceland eruptions."
->}}
-
-{{< textin
-  question="The cyclic changes in Earth's orbit that may affect climate, recurring on a scale of about 19,000 to 100,000 years, are called the ________."
-  answer="Milankovitch cycles"
-  hint="Reread the paragraph on the first of the three drivers that operated before the Industrial Era."
->}}
-
-{{< textin
-  question="The amount of solar power or energy the sun emits in a given amount of time is called ________."
-  answer="solar intensity"
-  hint="As this quantity rises or falls, Earth's temperature rises or falls with it — this section proposes it as one explanation for the Little Ice Age."
->}}
-
-{{< selfcheck question="Compare and contrast how natural- and human-induced processes have influenced global climate change." hint="Natural drivers shift climate up and down over time; human activity has been pushing it in one direction only — name the natural drivers this section covers and the one human activity linked to a steady rise in a specific gas." >}}
+{{< selfcheck question="Compare and contrast how natural- and human-induced processes have influenced global climate change." hint="Reread the subsection on current and past drivers, from the three natural drivers through the paragraphs on human activity." >}}
 Natural processes such as the Milankovitch cycles, variation in solar intensity, and volcanic eruptions can cause periodic, intermittent changes in global climate. Human activity, in the form of emissions from the burning of fossil fuels, has caused a progressive rise in the levels of atmospheric carbon dioxide.
 ===CHECKS===
 natural processes include the Milankovitch cycles, variation in solar intensity, and volcanic eruptions
@@ -251,11 +251,11 @@ human activity, through emissions from the burning of fossil fuels, has caused a
   question="Atmospheric gases such as carbon dioxide and methane that absorb and emit radiation, trapping heat in Earth's atmosphere, are called ________."
   answer="greenhouse gases"
   accept="greenhouse gasses"
-  hint="This section names five such gases affecting Earth, including water vapor, nitrous oxide, and ozone alongside the two named in the question."
+  hint="Reread the paragraph on the most significant drivers of the climate, the one that follows the three natural drivers."
 >}}
 
 {{< textin
-  question="The warming of Earth due to carbon dioxide and other greenhouse gases in the atmosphere is called the ________."
+  question="The warming of Earth due to carbon dioxide and other heat-trapping gases in the atmosphere is called the ________."
   answer="greenhouse effect"
   hint="Reread the paragraph that lists the gases trapping the sun's heat."
 >}}
@@ -263,9 +263,9 @@ human activity, through emissions from the burning of fossil fuels, has caused a
 {{< textin
   question="Frozen chunks of ice and methane found at the bottom of the ocean are called ________."
   answer="clathrates"
-  hint="As ocean water warms, these chunks melt and release the methane trapped inside, adding to the atmosphere's greenhouse gases."
+  hint="Reread the paragraph on the sources of methane, after the photograph of smokestacks."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 44.5: Climate and the Effects of Global Climate Change](https://openstax.org/books/biology-2e/pages/44-5-climate-and-the-effects-of-global-climate-change) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension guess — Figure_B44_26 from "diagram" to "photo" (it is a pair of photographs: researchers drilling an ice core and the extracted ice-core sample, not a hand-drawn or computer-rendered image) and Figure_44_05_01 and Figure_44_05_02 from "photo" to "diagram" (both are plotted line graphs, not captured photographs); the source alt of Figure_44_05_01 kept with its "todays" typo corrected to "today's"; the alts of Figure_44_05_02 and Figure_44_05_04 rewritten from letter-spaced screen-reader spellings ("19 60 to 20 10," "19 38," "19 81," "19 98") to plain descriptions; the source alt's claim that Grinnell Glacier's lake was "completely frozen" in 1938 and one-third and two-thirds "thawed" in 1981 and 1998 is corrected to what the photographs show — crevassed glacier ice filling the basin in 1938 and a lake opening as the glacier retreats; the alt of Figure_44_05_03 corrected from the source's singular "a smokestack" to describe both smokestacks actually visible in the photograph; the alt of Figure_B44_26 rewritten from a terse two-sentence description to a plain description of what each panel shows; longdescs added to the two climate-graph figures (Figure_44_05_01, Figure_44_05_02), transcribing each graph's axes, its printed tick values, and its plotted trend, and to Figure_44_05_04, transcribing the year and photographer credit printed on each of its four panels; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/climate_plants redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items added from the glossary (clathrates, climate, global climate change, greenhouse effect, greenhouse gases, haze-effect cooling, Milankovitch cycles, solar intensity, weather), covering all nine of the section's glossary terms; two local multiple-choice items added to the Industrial Revolution/CO₂ objective's Practice group, built strictly from the page's own figure caption and prose sentences, since the module keeps no Review or Critical Thinking item testing that objective specifically; the glossary entry for "solar intensity" corrected from "amount of solar power energy the sun emits" to "amount of solar power or energy the sun emits," matching the section's own prose definition of the term. Source defects: module `m66419`, glossary definition `fs-idp133556656` ("solar intensity") reads "amount of solar power energy the sun emits in a given amount of time," dropping the "or" that the section's own prose uses in the sentence "Solar intensity is the amount of solar power or energy the sun emits in a given amount of time" — corrected on the page as noted above. One number is corrected with a visible Source note: atmospheric carbon dioxide in 1950 was about 310 ppm, not the pre-industrial 280.</small>
+<small>This section is adapted from [Biology 2e, Section 44.5: Climate and the Effects of Global Climate Change](https://openstax.org/books/biology-2e/pages/44-5-climate-and-the-effects-of-global-climate-change) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension guess — Figure_B44_26 from "diagram" to "photo" (it is a pair of photographs: researchers drilling an ice core and the extracted ice-core sample, not a hand-drawn or computer-rendered image) and Figure_44_05_01 and Figure_44_05_02 from "photo" to "diagram" (both are plotted line graphs, not captured photographs); the source alt of Figure_44_05_01 kept with its "todays" typo corrected to "today's"; the alts of Figure_44_05_02 and Figure_44_05_04 rewritten from letter-spaced screen-reader spellings ("19 60 to 20 10," "19 38," "19 81," "19 98") to plain descriptions; the source alt's claim that Grinnell Glacier's lake was "completely frozen" in 1938 and one-third and two-thirds "thawed" in 1981 and 1998 is corrected to what the photographs show — crevassed glacier ice filling the basin in 1938 and a lake opening as the glacier retreats; the alt of Figure_44_05_03 corrected from the source's singular "a smokestack" to describe both smokestacks actually visible in the photograph; the alt of Figure_B44_26 rewritten from a terse two-sentence description to a plain description of what each panel shows; longdescs added to the two climate-graph figures (Figure_44_05_01, Figure_44_05_02), transcribing each graph's axes, its printed tick values, and its plotted trend, and to Figure_44_05_04, transcribing the year and photographer credit printed on each of its four panels; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/climate_plants redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); the second Critical Thinking Question ("Predict possible consequences…") is placed under the Industrial Revolution objective, ahead of the second Review Question and the first Critical Thinking Question, which sit under the natural-factors objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eight key-term recall items added from the glossary (clathrates, climate, global climate change, greenhouse effect, greenhouse gases, haze-effect cooling, Milankovitch cycles, solar intensity) — "weather" is not asked as a recall item, since the first Review Question already tests it — and one cloze text-recall item added from the body's ice-core sentence (ice cores); two local multiple-choice items added to the Industrial Revolution/CO₂ objective's Practice group, built strictly from the page's own figure caption and prose sentences, since the module keeps no Review or Critical Thinking item testing that objective specifically; the glossary entry for "solar intensity" corrected from "amount of solar power energy the sun emits" to "amount of solar power or energy the sun emits," matching the section's own prose definition of the term. Source defects: module `m66419`, glossary definition `fs-idp133556656` ("solar intensity") reads "amount of solar power energy the sun emits in a given amount of time," dropping the "or" that the section's own prose uses in the sentence "Solar intensity is the amount of solar power or energy the sun emits in a given amount of time" — corrected on the page as noted above. One number is corrected with a visible Source note: atmospheric carbon dioxide in 1950 was about 310 ppm, not the pre-industrial 280.</small>

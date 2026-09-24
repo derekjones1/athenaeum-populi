@@ -50,7 +50,7 @@ The ovarian and menstrual cycles of female reproduction are regulated by hormone
 {{< multiplechoice
   question="Which of the following statements about hormone regulation of the ovarian reproductive cycle is false?"
   answer="Both progesterone and estradiol are produced by the follicles."
-  hint="The diagram's three panels each show where estradiol and progesterone are made at that stage — check which structure the follicular-phase and ovulation panels credit with producing them, before the corpus luteum ever forms."
+  hint="Compare each statement with the three panels of the diagram above."
 >}}
 LH and FSH are produced in the pituitary, and estradiol and progesterone are produced in the ovaries.
 Estradiol and progesterone secreted from the corpus luteum cause the endometrium to thicken.
@@ -68,14 +68,14 @@ Following ovulation, the ovarian cycle enters its luteal phase, illustrated abov
 
 If no fertilized egg is implanted into the uterus, the corpus luteum degenerates and the levels of estrogen and progesterone decrease. The endometrium begins to degenerate as the progesterone levels drop, initiating the next menstrual cycle. The decrease in progesterone also allows the hypothalamus to send GnRH to the anterior pituitary, releasing FSH and LH and starting the cycles again. The figure below visually compares the ovarian and uterine cycles as well as the commensurate hormone levels.
 
-{{< mediafigure src="biology/Figure_B43_04_03" kind="diagram" alt="A stacked diagram: an Ovarian cycle phases bar over seven small ovary icons, a Uterine cycle phases bar over five small uterus icons (the first shedding its dark lining, the rest rebuilding it), and below them two line graphs — pituitary hormone levels and ovarian hormone levels — plotted against day of the menstrual cycle, with a vertical line at day 14 labeled Ovulation running through both." longdesc="From top to bottom: an 'Ovarian cycle phases' bar split into a Follicular phase (left) and a Luteal phase (right), above seven small ovary icons captioned, left to right, Follicle grows (three icons), Follicle is released (one icon), and Corpus luteum forms then degenerates (three icons). Below it, a 'Uterine cycle phases' bar split into Menstrual flow, Proliferative phase, and Secretory phase, above five small uterus icons: in the first, under Menstrual flow, a dark lining fills the cavity and runs down through the cervix and vagina (shedding); the second, under Proliferative phase, has no dark lining; in the third, fourth, and fifth, a dark lining along the cavity walls grows thicker left to right. Below that, two line graphs share a vertical axis titled 'Hormone level' and a 'Day of menstrual cycle' x-axis marked 0, 7, 14, 21, and 28, with a vertical black line at day 14 labeled Ovulation running through both. The upper graph, 'Pituitary hormone levels,' plots two curves: FSH (dark red) starts moderately high, forms a broad low hump before day 7, dips, then rises again to a peak just before day 14 alongside LH (orange); a short unlabeled blue horizontal bar crosses the FSH peak, which stays lower until a taller, narrower peak also at day 14; both curves fall back to a low level after day 14; FSH stays low and flat to day 28, while LH rises again slightly from about day 24 to day 28. The lower graph, 'Ovarian hormone levels,' plots Estradiol (yellow), which rises to a peak just before day 14, drops sharply after day 14, then rises again to a lower, broader second peak around day 21 before declining toward day 28, and Progesterone (green), which stays near zero until after day 14, then rises to a peak around day 21 and falls back toward zero by day 28." >}}
+{{< mediafigure src="biology/Figure_B43_04_03" kind="diagram" alt="A stacked diagram: an Ovarian cycle phases bar over seven small ovary icons, a Uterine cycle phases bar over five small uterus icons (the first shedding its dark lining, the rest rebuilding it), and below them two line graphs — pituitary hormone levels and ovarian hormone levels — plotted against day of the menstrual cycle, with a vertical line at day 14 labeled Ovulation running through both." longdesc="From top to bottom: an 'Ovarian cycle phases' bar split into a Follicular phase (left) and a Luteal phase (right), above seven small ovary icons captioned, left to right, Follicle grows (three icons), Follicle is released (one icon), and Corpus luteum forms then degenerates (three icons). Below it, a 'Uterine cycle phases' bar split into Menstrual flow, Proliferative phase, and Secretory phase, above five small uterus icons: in the first, under Menstrual flow, a dark lining fills the cavity and runs down through the cervix and vagina (shedding); the second, under Proliferative phase, has no dark lining; in the third, fourth, and fifth, a dark lining along the cavity walls grows thicker left to right. Below that, two line graphs share a vertical axis titled 'Hormone level' and a 'Day of menstrual cycle' x-axis marked 0, 7, 14, 21, and 28, with a vertical black line at day 14 labeled Ovulation running through both. The upper graph, 'Pituitary hormone levels,' plots two curves: FSH (dark red) starts moderately high, forms a broad low hump before day 7, dips, then rises again to a peak just before day 14, crossed by a short unlabeled blue horizontal bar; LH (orange) stays low until a taller, narrower peak at day 14; both curves fall back to a low level after day 14; FSH stays low and flat to day 28, while LH rises again slightly from about day 24 to day 28. The lower graph, 'Ovarian hormone levels,' plots Estradiol (yellow), which rises to a peak just before day 14, drops sharply after day 14, then rises again to a lower, broader second peak around day 21 before declining toward day 28, and Progesterone (green), which stays near zero until after day 14, then rises to a peak around day 21 and falls back toward zero by day 28." >}}
 Rising and falling hormone levels result in progression of the ovarian and menstrual cycles. (credit: modification of work by Mikael Häggström)
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements about the menstrual cycle is false?"
   answer="Menstruation occurs just after LH and FSH levels peak."
-  hint="Follow the vertical line marking ovulation on the graph and compare what the two pituitary curves are doing right at that point against what the text says is happening a day or so later, once the corpus luteum has formed."
+  hint="Compare each statement with the phase bars and hormone curves of the figure above."
 >}}
 Progesterone levels rise during the luteal phase of the ovarian cycle and the secretory phase of the uterine cycle.
 Menstruation occurs just after LH and FSH levels peak.
@@ -123,7 +123,7 @@ The male and female reproductive cycles are controlled by hormones released from
 ### Describe the roles of male and female reproductive hormones
 
 {{< textin
-  question="The hormone made by Sertoli cells that provides negative feedback to the hypothalamus in the control of FSH and GnRH release is called ________."
+  question="The hormone made by Sertoli cells that provides negative feedback to the hypothalamus is called ________."
   answer="inhibin"
   hint="Reread the Male Hormones subsection, on the negative feedback that controls sperm production."
 >}}
@@ -131,7 +131,7 @@ The male and female reproductive cycles are controlled by hormones released from
 {{< multiplechoice
   question="Which hormone causes Leydig cells to make testosterone?"
   answer="LH"
-  hint="One pituitary gonadotropin targets the Sertoli cells and sperm production directly; the other targets the Leydig cells and steroid hormone production — match the cell type named in the question to the right gonadotropin."
+  hint="Reread the first paragraph of the Male Hormones subsection."
 >}}
 FSH
 LH
@@ -142,7 +142,7 @@ estrogen
 {{< multiplechoice
   question="Which hormone causes FSH and LH to be released?"
   answer="GnRH"
-  hint="This signal comes from a gland one step upstream of the anterior pituitary — trace where in the signaling chain it originates, not where FSH and LH themselves are released."
+  hint="Reread the opening paragraph of the section, before Male Hormones."
 >}}
 testosterone
 estrogen
@@ -161,7 +161,7 @@ inhibin
 estrogen
 {{< /multiplechoice >}}
 
-{{< selfcheck question="If male reproductive pathways are not cyclical, how are they controlled?" hint="Name the two hormones this negative-feedback loop uses, and trace what each one shuts down when its own levels — or the sperm count it signals — get too high." >}}
+{{< selfcheck question="If male reproductive pathways are not cyclical, how are they controlled?" hint="Reread the Male Hormones subsection and its feedback diagram." >}}
 Negative feedback in the male system is supplied through two hormones: inhibin and testosterone. Inhibin is produced by Sertoli cells when the sperm count exceeds set limits. The hormone inhibits GnRH and FSH, decreasing the activity of the Sertoli cells. Increased levels of testosterone affect the release of both GnRH and LH, decreasing the activity of the Leydig cells, resulting in decreased testosterone and sperm production.
 ===CHECKS===
 negative feedback in the male system is supplied through inhibin and testosterone
@@ -172,15 +172,18 @@ resulting in decreased testosterone and sperm production
 
 ### Discuss the interplay of the ovarian and menstrual cycles
 
-{{< selfcheck question="Describe the events in the ovarian cycle leading up to ovulation." hint="Walk the sequence in order: what falling hormone starts the cycle, what the rising pituitary hormones do to the follicles, and what the follicles release that eventually triggers the LH spike." >}}
-Low levels of progesterone allow the hypothalamus to send GnRH to the anterior pituitary and cause the release of FSH and LH. FSH stimulates follicles on the ovary to grow and prepare the eggs for ovulation. As the follicles increase in size, they begin to release estrogen and a low level of progesterone into the blood. The level of estrogen rises to a peak, causing a spike in the concentration of LH. This causes the most mature follicle to rupture and ovulation occurs.
-===CHECKS===
-low progesterone allows the hypothalamus to send GnRH, causing release of FSH and LH
-FSH stimulates follicles on the ovary to grow and prepare the eggs for ovulation
-as follicles increase in size they release estrogen and a low level of progesterone
-the level of estrogen rises to a peak, causing a spike in LH
-this causes the most mature follicle to rupture and ovulation occurs
-{{< /selfcheck >}}
+{{< textin
+  question="The cycle of preparation of an egg for ovulation and the conversion of the follicle to the corpus luteum is called the ________."
+  answer="ovarian cycle"
+  hint="Reread the first paragraph of the subsection on the two female cycles."
+>}}
+
+{{< textin
+  question="The cycle of the degradation and regrowth of the endometrium is called the ________."
+  answer="menstrual cycle"
+  accept="uterine cycle"
+  hint="Reread the first paragraph of the subsection on the two female cycles."
+>}}
 
 {{< multiplechoice
   question="Which hormone causes the regrowth of the endometrial lining of the uterus?"
@@ -193,41 +196,39 @@ GnRH
 progesterone
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The cycle of preparation of an egg for ovulation and the conversion of the follicle to the corpus luteum is called the ________."
-  answer="ovarian cycle"
-  hint="Reread the first paragraph of the subsection on the two female cycles."
->}}
-
-{{< textin
-  question="The cycle of the degradation and regrowth of the endometrium is called the ________."
-  answer="menstrual cycle"
-  hint="Reread the first paragraph of the subsection on the two female cycles."
->}}
+{{< selfcheck question="Describe the events in the ovarian cycle leading up to ovulation." hint="Reread the subsection on the two female cycles, from the follicular phase through ovulation." >}}
+Low levels of progesterone allow the hypothalamus to send GnRH to the anterior pituitary and cause the release of FSH and LH. FSH stimulates follicles on the ovary to grow and prepare the eggs for ovulation. As the follicles increase in size, they begin to release estrogen and a low level of progesterone into the blood. The level of estrogen rises to a peak, causing a spike in the concentration of LH. This causes the most mature follicle to rupture and ovulation occurs.
+===CHECKS===
+low progesterone allows the hypothalamus to send GnRH, causing release of FSH and LH
+FSH stimulates follicles on the ovary to grow and prepare the eggs for ovulation
+as follicles increase in size they release estrogen and a low level of progesterone
+the level of estrogen rises to a peak, causing a spike in LH
+this causes the most mature follicle to rupture and ovulation occurs
+{{< /selfcheck >}}
 
 ### Describe the process of menopause
 
 {{< textin
   question="The loss of reproductive capacity due to decreased sensitivity of the ovaries to FSH and LH is called ________."
   answer="menopause"
-  hint="This term names the permanent stopping point of the menstrual cycle, not a single irregular period."
+  hint="Reread the first paragraph of the last subsection."
 >}}
 
 {{< multiplechoice
-  question="Supplementation of estrogen in the form of ________ can prevent bone loss after menopause, though it can also have negative side effects."
+  question="Supplementation of estrogen in the form of ________ can prevent bone loss, but the therapy can have negative side effects."
   answer="hormone replacement therapy (HRT)"
-  hint="Reread the second paragraph of the Menopause subsection."
+  hint="Reread the second paragraph of the last subsection."
 >}}
 gonadotropin-releasing hormone (GnRH)
-in vitro fertilization (IVF)
+in vitro fertilization
 hormone replacement therapy (HRT)
 assisted reproductive techniques (ART)
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Without estrogen after menopause, blood levels of calcium decrease; to replenish the blood, calcium is lost from bone, which may decrease the bone density and lead to ________."
+  question="Estrogen is involved in calcium metabolism and, without it, blood levels of calcium decrease; to replenish the blood, calcium is lost from bone, which may decrease the bone density and lead to ________."
   answer="osteoporosis"
-  hint="Reread the Menopause subsection's paragraph on estrogen and calcium metabolism."
+  hint="Reread the last subsection's paragraph on estrogen and calcium metabolism."
 >}}
 
 ---

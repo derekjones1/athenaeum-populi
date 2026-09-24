@@ -105,7 +105,7 @@ The early stages of embryonic development begin with fertilization. The process 
 
 ### Discuss how fertilization occurs
 
-{{< selfcheck question="What do you think would happen if multiple sperm fused with one egg?" hint="Think about what happens to the number of chromosome sets the resulting embryo would carry, and whether such an embryo could survive." >}}
+{{< selfcheck question="What do you think would happen if multiple sperm fused with one egg?" hint="Reread the last paragraph of the Fertilization subsection." >}}
 Multiple sperm can fuse with the egg, resulting in polyspermy. The resulting embryo is not genetically viable and dies within a few days.
 ===CHECKS===
 multiple sperm can fuse with the egg, resulting in polyspermy
@@ -120,10 +120,10 @@ it dies within a few days
 >}}
 
 {{< textin
-  question="The series of biochemical reactions that let a sperm break through that protective egg layer is called the ________."
+  question="The series of biochemical reactions that a sperm uses to break through the mammalian egg's protective glycoprotein layer is called the ________."
   answer="acrosomal reaction"
   accept="acrosome reaction"
-  hint="Reread the Fertilization subsection's first paragraph, on what happens when a sperm binds to the egg's protective layer."
+  hint="Reread the first paragraph of the Fertilization subsection."
 >}}
 
 ### Explain how the embryo forms from the zygote
@@ -142,20 +142,20 @@ does not change significantly
 {{< textin
   question="The structure formed when cells in the mammalian blastula separate into an inner and outer layer is called the ________."
   answer="blastocyst"
-  hint="This hollow structure has a stem-cell-containing cluster inside and an outer layer that will help form the placenta — name the whole structure they together make up."
+  hint="Reread the last paragraph of the Cleavage and Blastula Stage subsection."
 >}}
 
 {{< textin
-  question="The layer of cells inside the blastocyst that will differentiate into the embryo's stem cells is called the ________."
+  question="In mammals, the cluster of cells that will go on to form the embryo is called the ________."
   answer="inner cell mass"
   accept="embryoblast"
-  hint="This layer is distinct from the surrounding outer layer and consists of embryonic stem cells that will differentiate into the organism's cell types."
+  hint="Reread the last paragraph of the Cleavage and Blastula Stage subsection."
 >}}
 
 {{< textin
-  question="The outer layer of cells in the blastocyst, which will contribute to the placenta, is called the ________."
+  question="In mammals, the outer layer of cells that will contribute to the placenta and nourish the embryo is called the ________."
   answer="trophoblast"
-  hint="Reread the Cleavage and Blastula Stage paragraph on the two layers of the blastocyst."
+  hint="Reread the last paragraph of the Cleavage and Blastula Stage subsection."
 >}}
 
 ### Discuss the role of cleavage and gastrulation in animal development
@@ -171,32 +171,31 @@ The inner cell mass is a source of embryonic stem cells.
 The blastula is often a hollow ball of cells.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why do mammalian eggs have a small concentration of yolk, while bird and reptile eggs have a large concentration of yolk?" hint="Think about where each type of embryo gets its nutrition after fertilization — from a parent's body directly, or from reserves stored inside the egg." >}}
+{{< selfcheck question="Why do mammalian eggs have a small concentration of yolk, while bird and reptile eggs have a large concentration of yolk?" hint="Reread the Cleavage and Blastula Stage paragraph on the two ways cleavage can take place." >}}
 Mammalian eggs do not need a lot of yolk because the developing fetus obtains nutrients from the mother. Other species, in which the fetus develops outside of the mother's body, such as occurs with birds, require a lot of yolk in the egg to nourish the embryo during development.
 ===CHECKS===
 mammalian eggs do not need a lot of yolk because the developing fetus obtains nutrients from the mother
-other species, such as birds, develop outside of the mother's body
-those species require a lot of yolk in the egg to nourish the embryo during development
+other species, in which the fetus develops outside of the mother's body, such as occurs with birds, require a lot of yolk in the egg to nourish the embryo during development
 {{< /selfcheck >}}
 
 {{< textin
   question="The process in which the blastula folds over itself to form the three germ layers is called ________."
   answer="gastrulation"
-  hint="This process immediately follows the blastula stage and produces the endoderm, mesoderm, and ectoderm."
+  hint="Reread the first paragraph of the section's third subsection."
 >}}
 
 {{< textin
   question="Complete cleavage, which takes place in cells with a small amount of yolk, is called ________ cleavage."
   answer="holoblastic"
-  hint="This is the type of cleavage placental mammals undergo, since their eggs carry very little yolk."
+  hint="Reread the Cleavage and Blastula Stage paragraph on the two ways cleavage can take place."
 >}}
 
 {{< textin
   question="Partial cleavage, which takes place in cells with a large amount of yolk, is called ________ cleavage."
   answer="meroblastic"
-  hint="Birds, whose eggs carry a lot of yolk to nourish the embryo, undergo this type of cleavage instead of the placental-mammal kind."
+  hint="Reread the Cleavage and Blastula Stage paragraph on the two ways cleavage can take place."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 43.6: Fertilization and Early Embryonic Development](https://openstax.org/books/biology-2e/pages/43-6-fertilization-and-early-embryonic-development) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_43_05_01ab is a two-panel image whose second panel is a labeled line diagram, not a photograph throughout; Figure_43_05_04 and Figure_43_05_05 are a composited labeled chart and a line-drawing illustration, not captured photographs); a longdesc added to every diagram whose printed labels are not carried by its one-line caption — the fertilization cross-section, the cleavage/blastula panels, the labeled blastocyst, and the germ-layer derivatives chart — transcribing each drawing's own labels and leader-line counts in reading order; in-text pointers to figures ("Figure 43.23" through "Figure 43.26") replaced with "shown below," "pictured below," or "illustrated below," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/human_embryo redirect URL; the `everyday` note rendered as an Everyday Connection callout with its bold name and italic title, its own figure kept inside it; the two Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eight key-term recall items added from the glossary (zona pellucida, acrosomal reaction, blastocyst, inner cell mass, trophoblast, gastrulation, holoblastic, meroblastic — eight items across three groups), covering eight of the section's nine glossary terms.</small>
+<small>This section is adapted from [Biology 2e, Section 43.6: Fertilization and Early Embryonic Development](https://openstax.org/books/biology-2e/pages/43-6-fertilization-and-early-embryonic-development) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_43_05_01ab is a two-panel image whose second panel is a labeled line diagram, not a photograph throughout; Figure_43_05_04 and Figure_43_05_05 are a composited labeled chart and a line-drawing illustration, not captured photographs); a longdesc added to every diagram whose printed labels are not carried by its one-line caption — the fertilization cross-section, the cleavage/blastula panels, the labeled blastocyst, and the germ-layer derivatives chart — transcribing each drawing's own labels and leader-line counts in reading order; in-text pointers to figures ("Figure 43.23" through "Figure 43.26") replaced with "shown below," "pictured below," or "illustrated below," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/human_embryo redirect URL; the `everyday` note rendered as an Everyday Connection callout with its bold name and italic title, its own figure kept inside it; the two Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively) and placed under the objective each tests, so Critical Thinking Question 1 (polyspermy) comes first and Review Question 2 (cleavage) before Review Question 1; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eight key-term recall items added from the glossary (zona pellucida, acrosomal reaction, blastocyst, inner cell mass, trophoblast, gastrulation, holoblastic, meroblastic — eight items across three groups), covering eight of the section's nine glossary terms, the inner cell mass and trophoblast prompts worded from the section's own sentence on the two blastocyst layers rather than from the glossary definitions, which print the neighbouring item's answer.</small>

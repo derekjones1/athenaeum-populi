@@ -108,7 +108,7 @@ Populations are regulated by a variety of density-dependent and density-independ
 {{< multiplechoice
   question="According to this section, in many areas the carrying capacity of a habitat is lowest during which season?"
   answer="winter"
-  hint="The section directly contrasts two seasons, one where resources are scarcer and one where they are more abundant — find the sentence naming both and pick the scarcer one."
+  hint="Reread the fourth sentence of the section's opening paragraph."
 >}}
 winter
 summer
@@ -119,7 +119,7 @@ fall
 {{< multiplechoice
   question="Which of the following events would **not** negatively impact Yellowstone's grey wolf carrying capacity?"
   answer="a beaver damming a river upstream"
-  hint="Match three of the options to things this section says lower carrying capacity or raise mortality — a season, a density-independent event, and a disease, which the section counts among density-dependent factors; the answer is the one left over."
+  hint="Reread the section's opening paragraph and the first paragraph under each of the two regulation headings."
 >}}
 snow in winter
 a beaver damming a river upstream
@@ -129,7 +129,7 @@ chronic wasting disease in the deer population
 
 *(Source note: the source keys “snow in winter” for the question above, which this section's own text on winter carrying capacity and cold winter weather contradicts; the page keys a different option, and the footer gives the reasoning.)*
 
-{{< selfcheck question="According to this section's Evolution Connection, how did a 2008 study say climate change affected the geographic range available to woolly mammoths between 42,000 and 6,000 years ago?" hint="The paragraph gives two range figures in square miles, one for 42,000 years ago and one for 6,000 years ago — name both and say whether the range grew or shrank." >}}
+{{< selfcheck question="According to this section's Evolution Connection, how did a 2008 study say climate change affected the geographic range available to woolly mammoths between 42,000 and 6,000 years ago?" hint="Reread the third paragraph of the Evolution Connection." >}}
 A 2008 study estimated that climate change reduced the mammoths' range from 3,000,000 square miles 42,000 years ago to 310,000 square miles 6,000 years ago.
 ===CHECKS===
 climate change reduced the mammoths' range
@@ -139,10 +139,24 @@ to 310,000 square miles 6,000 years ago
 
 ### Compare and contrast density-dependent growth regulation and density-independent growth regulation, giving examples
 
+{{< textin
+  question="Competition between different species for resources in a shared habitat or environment is called ________."
+  answer="interspecific competition"
+  accept="inter-specific competition"
+  hint="Reread the end of the section's opening paragraph, on populations that do not exist in isolation."
+>}}
+
+{{< textin
+  question="Regulation of a population that is influenced by the population's own density, such as crowding effects, and that usually involves biotic factors, is called ________."
+  answer="density-dependent regulation"
+  accept="density-dependent"
+  hint="Reread the section's second paragraph and the first paragraph under the first heading."
+>}}
+
 {{< multiplechoice
   question="A forest fire is an example of ________ regulation."
   answer="density-independent"
-  hint="Reread the paragraph that opens Density-Independent Regulation and Interaction with Density-Dependent Factors, on the deer."
+  hint="Reread the first paragraph after the roundworm figure, on the deer."
 >}}
 density-dependent
 density-independent
@@ -150,25 +164,13 @@ r-selected
 K-selected
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Give an example of how density-dependent and density-independent factors might interact." hint="Think about a density-independent event, like a fire, striking at two different times, when the population's own density is either low or high — how would its impact and recovery differ?" >}}
+{{< selfcheck question="Give an example of how density-dependent and density-independent factors might interact." hint="Reread the paragraph just before the woolly mammoth feature." >}}
 If a natural disaster such as a fire happened in the winter, when populations are low, it would have a greater effect on the overall population and its recovery than if the same disaster occurred during the summer, when population levels are high.
 ===CHECKS===
 a natural disaster such as a fire happening in the winter, when populations are low
 would have a greater effect on the overall population and its recovery
 than if the same disaster occurred during the summer, when population levels are high
 {{< /selfcheck >}}
-
-{{< textin
-  question="Competition between different species for resources in a shared habitat or environment is called ________."
-  answer="interspecific competition"
-  hint="Reread the end of the section's opening paragraph, on populations that do not exist in isolation."
->}}
-
-{{< textin
-  question="Regulation of a population that is influenced by the population's own density, such as crowding effects, and that usually involves biotic factors, is called ________."
-  answer="density-dependent regulation"
-  hint="This kind of regulation gets stronger as a population gets more crowded — its name pairs with a second kind that acts the same regardless of crowding."
->}}
 
 ### Give examples of exponential and logistic growth in wild animal populations
 
@@ -186,6 +188,7 @@ accurate only for K-selected species
 {{< textin
   question="According to this section, implicit in the logistic model of population growth is that the carrying capacity of the environment does not ________."
   answer="change"
+  accept="vary"
   hint="Reread the second sentence of the section's opening paragraph."
 >}}
 
@@ -201,7 +204,7 @@ accurate only for K-selected species
 {{< multiplechoice
   question="Species that have many offspring at one time are usually:"
   answer="r-selected"
-  hint="A species that produces many offspring at once needs no long-term parental investment in any single one — which of the two life-history categories does that describe?"
+  hint="Reread the paragraph just before the table of life-history characteristics."
 >}}
 r-selected
 K-selected
@@ -234,18 +237,18 @@ K-selected species
 {{< textin
   question="A modern model of population dynamics that incorporates many features of the r- and K-selection theory is called a(n) ________."
   answer="demographic-based population model"
-  accept="demographic-based model|demographically-based model|demographically-based population model"
-  hint="Population biologists built this newer kind of model after finding that r- and K-selection theory ignored one important thing: how mortality changes with age."
+  accept="demographic-based model|demographically-based model|demographically-based population model|demographic model"
+  hint="Reread the last paragraph before the Summary."
 >}}
 
 {{< textin
-  question="A species suited to a stable, predictable environment that produces a few, relatively large offspring and provides parental care is called a(n) ________."
-  answer="K-selected species"
-  accept="K-selected"
-  hint="Reread the third paragraph of the life-histories subsection that follows the woolly mammoth feature."
+  question="Populations of K-selected species tend to exist close to their carrying capacity (hence the term K-selected) where ________ is high."
+  answer="intraspecific competition"
+  accept="intra-specific competition"
+  hint="Reread the third paragraph under the heading on the life histories of the two kinds of species."
 >}}
 
-{{< sortbins question="Assign each characteristic to the species type it describes." hint="Compare each pair directly — the table above lists one characteristic immediately followed by its opposite for the other species type." >}}
+{{< sortbins question="Assign each characteristic to the species type it describes." hint="Reread the table of life-history characteristics." >}}
 {"bins": ["K-selected species", "r-selected species"],
  "items": [
   {"label": "Mature late", "bin": 0},
@@ -264,4 +267,4 @@ K-selected species
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 45.4: Population Dynamics and Regulation](https://openstax.org/books/biology-2e/pages/45-4-population-dynamics-and-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension guess — Figure_45_04_01 (the fecundity-vs-population line graph) from "photo" to "diagram," and Figure_45_04_02 (the three woolly-mammoth photographs) from "diagram" to "photo"; Figure_45_04_03ab's "photo" guess confirmed after inspection. A longdesc added to Figure_45_04_01, the only figure whose axes and curve are not carried by its one-line caption, transcribing its axis labels, ranges, and the curve's trend from steep to leveling off; Figure_45_04_02's and Figure_45_04_03ab's alts lightly copyedited from the manifest's source alt (tense and phrasing only, no content added or removed). The four footnoted citations in the body prose and the one repeated in the roundworm figure's caption folded into parenthetical text following the sentences they support, as elsewhere in the corpus. The Woolly Mammoth Evolution Connection note rendered as a callout with its bold name and italicized title, its own figure kept inside the callout as the note prints it. In-text pointers ("Figure 45.11" through "Figure 45.13," "Table 45.2") replaced with "shown above," "shown below," or "the table above/below," since Hugo does not number figures or tables. The Characteristics of *K*-selected and *r*-selected species table kept as a Markdown table in the body (with its spanning title row folded into a bold lead-in sentence above the table, following the corpus convention for a top-titled CALS table) and also rendered as a `sortbins` exercise in the life-history Practice group, its twelve rows interleaved rather than grouped by species type. The end-of-section Review Questions and Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise (`fs-idm74770800`, `fs-idm96228320`, `fs-idm88520640`, `eip-132`, `eip-720`, `fs-idm59103088`); rubric checkpoints added to the two self-checks, decomposing each model answer (the source solution) into check-off clauses with no new claims. Four key-term recall items added from the glossary (interspecific competition, density-dependent regulation, K-selected species, demographic-based population model — the latter accepting the body's own shorter phrasing "demographic-based models"), covering four of the section's six glossary terms; density-independent regulation and r-selected species appear only in the Key terms list, the prose, and (for r-selected species) a multiple choice and the sortbins bins. The "Give examples of exponential and logistic growth in wild animal populations" objective has no dedicated Review, Critical Thinking, or Visual Connection item and no glossary term of its own in this module (its growth-curve examples are developed in Section 45.3); its three Practice items are built strictly from the section's own opening sentences (the third, a cloze on "cold and wet," replaced a self-check that re-asked the other two); likewise the first objective group carries two locally written items (a multiple choice on the season of lowest carrying capacity and a self-check on the woolly mammoth's shrinking range), each built strictly from the section's own sentence or its Evolution Connection, and both disclosed here and in the source ledger; the remaining local items there are built strictly from the section's own opening sentences describing the logistic model as "a simplification of real-world population dynamics" that assumes a constant carrying capacity, disclosed here and in the source ledger. Exercise `eip-720` is keyed **B**, "a beaver damming a river upstream," rather than the module's own printed key of A, "snow in winter," with a visible Source note directly below it, because the module's own text says "In many areas, the carrying capacity during the winter is much lower than it is during the summer," names cold winter weather, like a forest fire, a density-independent cause of mortality, and counts disease among density-dependent factors, which leaves the beaver dam as the only option the section never ties to lower carrying capacity or higher mortality — a source defect; the locally written season-of-lowest-carrying-capacity multiple choice now sits above it in the same objective group, so the source item's options no longer print that item's key above it. Exercise `eip-132` is kept at the module's own printed key, **C**, "newborn giraffes ... walking within an hour ... running within 24 hours" — the module's own text ties *K*-selection to few, large, long-cared-for offspring and late maturity, which options A, B, and D each illustrate; only C describes precocial, rapid independence at birth, which the section does not present as a *K*-selected trait.</small>
+<small>This section is adapted from [Biology 2e, Section 45.4: Population Dynamics and Regulation](https://openstax.org/books/biology-2e/pages/45-4-population-dynamics-and-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension guess — Figure_45_04_01 (the fecundity-vs-population line graph) from "photo" to "diagram," and Figure_45_04_02 (the three woolly-mammoth photographs) from "diagram" to "photo"; Figure_45_04_03ab's "photo" guess confirmed after inspection. A longdesc added to Figure_45_04_01, the only figure whose axes and curve are not carried by its one-line caption, transcribing its axis labels, ranges, and the curve's trend from steep to leveling off; all three figures' alts lightly copyedited from the manifest's source alt (tense and phrasing only, with Figure_45_04_01's alt naming the graph's printed title). The four footnoted citations in the body prose and the one repeated in the roundworm figure's caption folded into parenthetical text following the sentences they support, as elsewhere in the corpus. The Woolly Mammoth Evolution Connection note rendered as a callout with its bold name and italicized title, its own figure kept inside the callout as the note prints it. In-text pointers ("Figure 45.11" through "Figure 45.13," "Table 45.2") replaced with "shown above," "shown below," or "the table above/below," since Hugo does not number figures or tables. The Characteristics of *K*-selected and *r*-selected species table kept as a Markdown table in the body (with its spanning title row folded into a bold lead-in sentence above the table, following the corpus convention for a top-titled CALS table) and also rendered as a `sortbins` exercise in the life-history Practice group, its twelve rows interleaved rather than grouped by species type. The end-of-section Review Questions and Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise (`fs-idm74770800`, `fs-idm96228320`, `fs-idm88520640`, `eip-132`, `eip-720`, `fs-idm59103088`), each placed under the objective it tests, so the Review Questions run in the order 5, 2, 1, 4, 3 of the source's numbering, with the Critical Thinking Question after the second of them; rubric checkpoints added to the two self-checks, decomposing each model answer (the source solution) into check-off clauses with no new claims. Three key-term recall items added from the glossary (interspecific competition, density-dependent regulation, demographic-based population model — the latter accepting the body's own shorter phrasing "demographic-based models"), covering three of the section's six glossary terms; density-independent regulation, r-selected species, and K-selected species are keyed by the source's own Review Questions and are not asked again. One cloze recall item added to the life-history group from the *K*-selected species paragraph's own sentence ("…where intraspecific competition is high"). The "Give examples of exponential and logistic growth in wild animal populations" objective has no dedicated Review, Critical Thinking, or Visual Connection item and no glossary term of its own in this module (its growth-curve examples are developed in Section 45.3); its three Practice items are built strictly from the section's own opening sentences (a multiple choice on the logistic model as "a simplification of real-world population dynamics," a cloze on its assumption that the carrying capacity does not change, and a cloze on "cold and wet" summers); likewise the first objective group carries two locally written items (a multiple choice on the season of lowest carrying capacity and a self-check on the woolly mammoth's shrinking range), each built strictly from the section's own sentence or its Evolution Connection. Exercise `eip-720` is keyed **B**, "a beaver damming a river upstream," rather than the module's own printed key of A, "snow in winter," with a visible Source note directly below it, because the module's own text says "In many areas, the carrying capacity during the winter is much lower than it is during the summer," names cold winter weather, like a forest fire, a density-independent cause of mortality, and counts disease among density-dependent factors, which leaves the beaver dam as the only option the section never ties to lower carrying capacity or higher mortality — a source defect. Exercise `eip-132` is kept at the module's own printed key, **C**, "newborn giraffes ... walking within an hour ... running within 24 hours" — the module's own text ties *K*-selection to few, large, long-cared-for offspring and late maturity, which options A, B, and D each illustrate; only C describes precocial, rapid independence at birth, which the section does not present as a *K*-selected trait.</small>

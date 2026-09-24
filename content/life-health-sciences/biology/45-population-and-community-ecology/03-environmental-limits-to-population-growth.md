@@ -78,7 +78,7 @@ Yeast, a microscopic fungus used to make bread and alcoholic beverages, exhibits
 {{< multiplechoice
   question="If the major food source of the seals declines due to pollution or overfishing, which of the following would likely occur?"
   answer="The carrying capacity of seals would decrease, as would the seal population."
-  hint="A falling food supply changes how many individuals the environment can support before it changes anything else — decide which quantity in each option would drop first, then predict what happens to the other quantity in that same option as a result."
+  hint="Reread the first paragraph of the first subsection under Logistic Growth, then look at panel (b) of the figure above."
 >}}
 The carrying capacity of seals would decrease, as would the seal population.
 The carrying capacity of seals would decrease, but the seal population would remain the same.
@@ -141,7 +141,7 @@ biotic potential
 logistic growth pattern
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the rate of population growth that would be expected at various parts of the S-shaped curve of logistic growth." hint="Walk the curve left to right: how much does resource availability limit growth first, in the middle, and at the end?" >}}
+{{< selfcheck question="Describe the rate of population growth that would be expected at various parts of the S-shaped curve of logistic growth." hint="Reread the last paragraph of the first subsection under Logistic Growth." >}}
 In the first part of the curve, when few individuals of the species are present and resources are plentiful, growth is exponential, similar to a J-shaped curve. Later, growth slows due to the species using up resources. Finally, the population levels off at the carrying capacity of the environment, and it is relatively stable over time.
 ===CHECKS===
 in the first part of the curve, when few individuals are present and resources are plentiful, growth is exponential, similar to a J-shaped curve
@@ -158,7 +158,7 @@ finally, the population levels off at the carrying capacity of the environment a
 
 ### Give examples of exponential and logistic growth in natural populations
 
-{{< selfcheck question="Describe how the population of a species that survives a mass extinction event would change in size and growth pattern over time beginning immediately after the extinction event." hint="Start right after the event, when competitors are scarce, and follow the population forward as the environment fills back in." >}}
+{{< selfcheck question="Describe how the population of a species that survives a mass extinction event would change in size and growth pattern over time beginning immediately after the extinction event." hint="Reread the caption of the section's first figure, which compares the two growth models." >}}
 Following a mass extinction event, the few surviving species can be considered to have access to unlimited natural resources since there would be minimal competition (due to low organism density). This means that the species would initially experience rapid exponential population growth, and the number of species members in the environment would rapidly increase over time. However, the further time progresses past the mass extinction event, the more the environment becomes populated by the species and its competitors. As resource availability declines the population growth rate will slow and enter logistic growth. Eventually, the population will meet the carrying capacity of the environment and stop increasing.
 ===CHECKS===
 surviving species initially have access to unlimited resources since competition is minimal, due to low organism density
@@ -171,14 +171,13 @@ the population eventually meets the carrying capacity of the environment and sto
   question="The shape produced when population size is plotted against time under exponential growth is called a(n) ________."
   answer="J-shaped growth curve"
   accept="J-shaped curve|J curve"
-  hint="This growth pattern accelerates without ever leveling off, the way the bacteria-in-a-flask example does — picture the shape of the letter it is named for."
+  hint="Reread the last sentence of the second paragraph under Exponential Growth."
 >}}
 
 {{< textin
-  question="The shape produced when population size is plotted against time under logistic growth is called a(n) ________."
-  answer="S-shaped growth curve"
-  accept="S-shaped curve|S curve"
-  hint="This curve accelerates like exponential growth at first, then bends over and flattens near the carrying capacity, the way the yeast and seal examples do — picture the shape of the letter it is named for."
+  question="________, a microscopic fungus used to make bread and alcoholic beverages, exhibits the classical S-shaped curve when grown in a test tube."
+  answer="yeast"
+  hint="Reread the first sentence of the last subsection under Logistic Growth."
 >}}
 
 ### Describe how natural selection and environmental adaptation led to the evolution of particular life history patterns
@@ -187,28 +186,27 @@ the population eventually meets the carrying capacity of the environment and sto
   question="Competition between members of the same species for resources is called ________."
   answer="intraspecific competition"
   accept="intra-specific competition"
-  hint="Reread the first paragraph of the subsection on competition in the logistic model."
+  hint="Reread the second paragraph of the second subsection under Logistic Growth."
 >}}
 
-{{< selfcheck question="How does natural selection connect to intraspecific competition, according to this section?" hint="Start from why individuals within one population are not identical, then follow what that difference does to their chances of reproducing." >}}
-In the real world, phenotypic variation among individuals within a population means that some individuals will be better adapted to their environment than others. Individuals will compete, with members of their own or other species, for limited resources, and the successful ones will survive to pass on their own characteristics and traits to the next generation at a greater rate — this is natural selection. The resulting competition between population members of the same species for resources is termed intraspecific competition.
+{{< selfcheck question="How does natural selection connect to intraspecific competition, according to this section?" hint="Reread the opening paragraph under Logistic Growth and the second paragraph of its second subsection." >}}
+In the real world, phenotypic variation among individuals within a population means that some individuals will be better adapted to their environment than others. Individuals will compete, with members of their own or other species, for limited resources, and the successful ones will survive to pass on their own characteristics and traits to the next generation at a greater rate — this is natural selection.
 ===CHECKS===
 phenotypic variation among individuals means some are better adapted to their environment than others
 individuals compete for limited resources, and the successful ones pass on their traits to the next generation at a greater rate — natural selection
-competition between members of the same species for resources is called intraspecific competition
 {{< /selfcheck >}}
 
 {{< multiplechoice
   question="Intraspecific competition for resources is least likely to affect individuals in a population that is ________."
   answer="well below its carrying capacity"
-  hint="Reread the paragraph on competition in the logistic model, after the term is defined."
+  hint="Reread the second paragraph of the second subsection under Logistic Growth, after its bolded term."
 >}}
 well below its carrying capacity
 well above its carrying capacity
-still increasing toward its carrying capacity
+just below its carrying capacity
 already at its carrying capacity
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 45.3: Environmental Limits to Population Growth](https://openstax.org/books/biology-2e/pages/45-3-environmental-limits-to-population-growth) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text kept as printed; Figure_45_03_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (it is a two-panel line-graph illustration, not a captured photograph); a longdesc added to both figures, transcribing each graph's axes, its carrying-capacity line, and its curve shape/trend in reading order (the yeast/seal Visual Connection figure's longdesc names only the printed axes and curve trend and never states which of the four listed statements is false); five equations set as display math (`$$…$$`), the first dropping the source's inline English glosses ("(change in number)", "(birth rate)", etc.) that sit inside the MathML alongside the algebra, since those glosses are already carried by the surrounding prose; the module's own Visual Connection is kept in the body immediately after its figure as a multiple choice, rather than duplicated in Practice — its `<exercise>` copy (`fs-idp14262368`) opens with a stray "b" label before "If the major food source" (a leftover cross-reference to Figure 45.10's panel b that this site does not print); the stray label is dropped, and the note copy and the `<exercise>` copy are otherwise identical in wording and both key A; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items added from the glossary (zero population growth, J-shaped growth curve, S-shaped growth curve, intraspecific competition), covering four of the section's eleven glossary terms — the rest appear only in the Key terms list and the prose, several as the bolded defining term of their own paragraph; the third objective ("Describe how natural selection and environmental adaptation led to the evolution of particular life history patterns") is only lightly covered by this module's own prose (a single mention of Darwin's "struggle for existence" and natural selection, plus the Intraspecific Competition subsection), so its Practice group adds one self-check and one multiple choice built strictly from those two passages, with no claim beyond what the section states; Review Question `fs-idm266378560`'s prompt corrected from the source's "The maximum rate of increased characteristic of a species is called its ________" to "The maximum rate of increase characteristic of a species is called its ________" — a prose typo. Source defects: module `m66690`, equation `eip-622` (the logistic growth equation) — the raw CNXML and the printed PDF both set it as *dN*/*dT* = *r<sub>max</sub>* *dN*/*dT* = *r<sub>max</sub>N*(*K* − *N*)/*K*, with an extra "= *r<sub>max</sub>* *dN*/*dT*" step between the left-hand side and the final expression that does not hold mathematically (it would force *r<sub>max</sub>* = 1) and is not supported by the surrounding prose, which describes only two terms — "the right side of the equation reduces to *r<sub>max</sub>N*" when *N* is small, referring to the equation *dN*/*dT* = *r<sub>max</sub>N*(*K* − *N*)/*K*; the local page sets the equation without that extra step; module `m66690`, exercise `fs-idm266378560` — its printed prompt reads "The maximum rate of increased characteristic of a species is called its ________," which is ungrammatical; corrected to "increase" above.</small>
+<small>This section is adapted from [Biology 2e, Section 45.3: Environmental Limits to Population Growth](https://openstax.org/books/biology-2e/pages/45-3-environmental-limits-to-population-growth) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text kept as printed; Figure_45_03_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (it is a two-panel line-graph illustration, not a captured photograph); a longdesc added to both figures, transcribing each graph's axes, its carrying-capacity line, and its curve shape/trend in reading order (the yeast/seal Visual Connection figure's longdesc names only the printed axes and curve trend and never states which of the four listed outcomes would occur); five equations set as display math (`$$…$$`), the first dropping the source's inline English glosses ("(change in number)", "(birth rate)", etc.) that sit inside the MathML alongside the algebra, since those glosses are already carried by the surrounding prose; the module's own Visual Connection is kept in the body immediately after its figure as a multiple choice, rather than duplicated in Practice — its `<exercise>` copy (`fs-idp14262368`) opens with a stray "b" label before "If the major food source" (a leftover cross-reference to Figure 45.10's panel b that this site does not print); the stray label is dropped, and the note copy and the `<exercise>` copy are otherwise identical in wording and both key A; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items added from the glossary (zero population growth, J-shaped growth curve, intraspecific competition), covering three of the section's eleven glossary terms — the rest appear only in the Key terms list and the prose, several as the bolded defining term of their own paragraph, and S-shaped growth curve is not asked because the first Critical Thinking Question's own stem prints it; one cloze recall item added from the Examples of Logistic Growth subsection's first sentence (yeast) for the second objective; the third objective ("Describe how natural selection and environmental adaptation led to the evolution of particular life history patterns") is only lightly covered by this module's own prose (a single mention of Darwin's "struggle for existence" and natural selection, plus the Intraspecific Competition subsection), so its Practice group adds one self-check and one multiple choice built strictly from those two passages, with no claim beyond what the section states; Review Question `fs-idm266378560`'s prompt corrected from the source's "The maximum rate of increased characteristic of a species is called its ________" to "The maximum rate of increase characteristic of a species is called its ________" — a prose typo. Source defects: module `m66690`, equation `eip-622` (the logistic growth equation) — the raw CNXML and the printed PDF both set it as *dN*/*dT* = *r<sub>max</sub>* *dN*/*dT* = *r<sub>max</sub>N*(*K* − *N*)/*K*, with an extra "= *r<sub>max</sub>* *dN*/*dT*" step between the left-hand side and the final expression that does not hold mathematically (it would force *r<sub>max</sub>* = 1) and is not supported by the surrounding prose, which describes only two terms — "the right side of the equation reduces to *r<sub>max</sub>N*" when *N* is small, referring to the equation *dN*/*dT* = *r<sub>max</sub>N*(*K* − *N*)/*K*; the local page sets the equation without that extra step; module `m66690`, exercise `fs-idm266378560` — its printed prompt reads "The maximum rate of increased characteristic of a species is called its ________," which is ungrammatical; corrected to "increase" above.</small>

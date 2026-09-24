@@ -75,6 +75,20 @@ Sexual reproduction starts with the combination of a sperm and an egg in a proce
 
 ### Discuss internal and external methods of fertilization
 
+{{< textin
+  question="Fertilization of an egg by sperm inside the body of the female is called ________."
+  answer="internal fertilization"
+  accept="internal fertilisation"
+  hint="Reread the section's opening paragraph."
+>}}
+
+{{< textin
+  question="Fertilization of an egg by sperm outside the animal's body, often during spawning, is called ________."
+  answer="external fertilization"
+  accept="external fertilisation"
+  hint="Reread the section's opening paragraph."
+>}}
+
 {{< multiplechoice
   question="External fertilization occurs in which type of environment?"
   answer="aquatic"
@@ -86,7 +100,7 @@ savanna
 steppe
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the advantages and disadvantages of external and internal forms of fertilization?" hint="Think in pairs — for each method, one paragraph names an advantage in offspring numbers or protection, and the next names what that method costs in survival rate or required anatomy." >}}
+{{< selfcheck question="What are the advantages and disadvantages of external and internal forms of fertilization?" hint="Reread the paragraph just before the section's smaller, nested subheading and the last paragraph before The Evolution of Reproduction." >}}
 External fertilization can create large numbers of offspring without requiring specialized delivery or reproductive support organs. Offspring develop and mature quickly compared to internally fertilizing species. A disadvantage is that the offspring are out in the environment and predation can account for large loss of offspring. The embryos are susceptible to changes in the environment, which further depletes their numbers. Internally fertilizing species control their environment and protect their offspring from predators but must have specialized organs to complete these tasks and usually produce fewer embryos.
 ===CHECKS===
 external fertilization can create large numbers of offspring without specialized delivery or reproductive support organs
@@ -96,7 +110,7 @@ embryos are susceptible to environmental changes that further deplete their numb
 internally fertilizing species control their environment and protect offspring from predators but need specialized organs and produce fewer embryos
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why would paired external fertilization be preferable to group spawning?" hint="The paragraph on courtship behavior explains what choosing a partner adds that broadcasting gametes into open water does not." >}}
+{{< selfcheck question="Why would paired external fertilization be preferable to group spawning?" hint="Reread the paragraph on courtship behavior." >}}
 Paired external fertilization allows the female to select the male for mating. It also has a greater chance of fertilization taking place, whereas spawning just puts a large number of sperm and eggs together and random interactions result in the fertilization.
 ===CHECKS===
 paired external fertilization allows the female to select the male for mating
@@ -104,32 +118,19 @@ it has a greater chance of fertilization taking place than group spawning
 group spawning puts a large number of sperm and eggs together and relies on random interactions for fertilization
 {{< /selfcheck >}}
 
-{{< textin
-  question="Fertilization of an egg by sperm inside the body of the female is called ________."
-  answer="internal fertilization"
-  accept="internal fertilisation"
-  hint="This is the method humans use, in contrast to the one seahorses use."
->}}
-
-{{< textin
-  question="Fertilization of an egg by sperm outside the animal's body, often during spawning, is called ________."
-  answer="external fertilization"
-  accept="external fertilisation"
-  hint="This is the method most fish and aquatic invertebrates use, releasing gametes into the water rather than inside a body."
->}}
-
 ### Describe the methods used by animals for development of offspring during gestation
 
 {{< textin
-  question="The process in which young develop within the female, receiving nourishment from the mother's blood through a placenta, is called ________."
-  answer="viviparity"
-  hint="This is the reproductive strategy used by most mammals, where a placenta — not a yolk — is the nutrient source."
+  question="If the egg develops outside the body, it usually has a protective ________ over it."
+  answer="covering"
+  accept="shell"
+  hint="Reread the fifth sentence of the section summary."
 >}}
 
 {{< multiplechoice
   question="Which term applies to egg development within the female with nourishment derived from a yolk?"
   answer="ovoviviparity"
-  hint="This term keeps the egg inside the parent's body but still relies on the egg's own yolk for nourishment, rather than a placental blood supply — that combination is what separates it from the other two terms."
+  hint="Reread the paragraphs under Internal Fertilization on the three ways offspring are produced."
 >}}
 oviparity
 viviparity
@@ -140,7 +141,7 @@ ovoparity
 {{< multiplechoice
   question="Which term applies to egg development outside the female with nourishment derived from a yolk?"
   answer="oviparity"
-  hint="This is the option where the egg leaves the body before it hatches, unlike the other two terms, which both keep the developing egg inside the parent."
+  hint="Reread the paragraphs under Internal Fertilization on the three ways offspring are produced."
 >}}
 oviparity
 viviparity
@@ -154,27 +155,27 @@ ovovoparity
   question="The common body opening for the digestive, excretory, and reproductive systems found in non-mammals, such as birds, is called the ________."
   answer="cloaca"
   accept="cloacae"
-  hint="Birds line up this single shared opening with their mate's matching opening during coupling, instead of using separate organs."
+  hint="Reread the third paragraph under The Evolution of Reproduction."
 >}}
 
 {{< textin
   question="The specialized sac in some insects that stores sperm for later use, sometimes up to a year, is called a(n) ________."
   answer="spermatheca"
   accept="spermathecae"
-  hint="It lets the female time fertilization to when environmental or food conditions are best for the offspring, well after mating actually happens."
+  hint="Reread the second paragraph under The Evolution of Reproduction."
 >}}
 
 {{< multiplechoice
-  question="Which anatomical adaptation allows mammals to deliver sperm directly into the female's vagina, in contrast to the cloacal joining birds use for sperm transfer?"
+  question="Which anatomical adaptation allows mammals to deliver sperm directly into the female's vagina?"
   answer="a penis"
-  hint="The sentence describing sperm transfer names three different structures for three different groups — one for external fertilizers, one for birds, and one for the group being asked about here."
+  hint="Reread the last paragraph under The Evolution of Reproduction."
 >}}
-a cloaca
+an epididymis
 a penis
-a spermatheca
+a coelom
 a uterus
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 43.2: Fertilization](https://openstax.org/books/biology-2e/pages/43-2-fertilization) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alts (bare "Photo shows many salmon swimming up a shallow creek." and "Photo shows mating toads.") rewritten to describe what each photograph shows, since neither named a point the caption did not already carry; both figures are kept as `kind="photo"`, matching the manifest's guess; the prose's cross-reference "Frogs, like those shown in Figure 43.7, also spawn" is corrected to "Toads, like those shown below, also spawn" — a source defect; in-text pointers to figures ("Figure 43.6", "Figure 43.7") replaced with "shown below," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (external fertilization, internal fertilization, viviparity, cloaca, spermatheca), covering five of the section's seven glossary terms (oviparity and ovoviviparity are instead tested by their own source multiple-choice items rather than duplicated as recall); one local multiple-choice item added under the third objective, built strictly from the section's own sentence on sperm-transfer structures ("the development of a penis for direct delivery into the female's vagina in mammals"), because no source exercise or glossary term tests that objective on its own. Source defects: module `m66671` — the prose says "Frogs, like those shown in Figure 43.7, also spawn," but Figure 43.7's own caption and alt both describe toads ("During sexual reproduction in toads, the male grasps the female from behind..."; "Photo shows mating toads."), and the same photo appears captioned as toads in the printed PDF (page 1262). The figure shows toads, not frogs; "Frogs" is a wrong cross-reference, corrected to "Toads" above.</small>
+<small>This section is adapted from [Biology 2e, Section 43.2: Fertilization](https://openstax.org/books/biology-2e/pages/43-2-fertilization) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alts (bare "Photo shows many salmon swimming up a shallow creek." and "Photo shows mating toads.") rewritten to describe what each photograph shows, since neither named a point the caption did not already carry; both figures are kept as `kind="photo"`, matching the manifest's guess; the prose's cross-reference "Frogs, like those shown in Figure 43.7, also spawn" is corrected to "Toads, like those shown below, also spawn" — a source defect; in-text pointers to figures ("Figure 43.6", "Figure 43.7") replaced with "shown below," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items added from the glossary (external fertilization, internal fertilization, cloaca, spermatheca), covering four of the section's seven glossary terms (oviparity, ovoviviparity, and viviparity are the options of the two source multiple-choice items on egg development, so none is asked again as recall); one cloze recall item built from the section summary's sentence on eggs that develop outside the body ("...it usually has a protective ________ over it," answered "covering," with "shell," the module's word for the egg covering it describes, also accepted); one local multiple-choice item added under the third objective, built strictly from the section's own sentence on sperm-transfer structures ("the development of a penis for direct delivery into the female's vagina in mammals"), because no source exercise or glossary term tests that objective on its own; its distractors are other structures the module names (the epididymis, the coelom, the uterus), none of them the key of another item on the page. Source defects: module `m66671` — the prose says "Frogs, like those shown in Figure 43.7, also spawn," but Figure 43.7's own caption and alt both describe toads ("During sexual reproduction in toads, the male grasps the female from behind..."; "Photo shows mating toads."), and the same photo appears captioned as toads in the printed PDF (page 1262). The figure shows toads, not frogs; "Frogs" is a wrong cross-reference, corrected to "Toads" above.</small>
