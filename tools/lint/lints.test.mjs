@@ -3201,6 +3201,12 @@ test('an attribution footer naming run machinery (where a correction was logged 
     'Changes: see parent notes for the source of this correction.',
     'Changes: a value decided in run facts before the wave.',
     'Changes: the route named in Part C is now a real link.',
+    'Changes: a mislabeled cell reported as a source defect and corrected.',
+    'Changes: the misspelling is corrected on the page and reported below.',
+    'Changes: two typos corrected (both also reported).',
+    'Changes: one claim corrected with a Source note (erratum 414).',
+    'Changes: the caption kept as printed (errata 185–188).',
+    'Changes: a source defect recorded in this book\'s errata.',
   ];
   for (const small of cases) {
     const errors = lintHugo(wrap(small), 'content/x/y/01-a/01-b.md').errors
@@ -3212,7 +3218,7 @@ test('an attribution footer naming run machinery (where a correction was logged 
   // must not trip the rule, nor may an unrelated "reported"/"logged" used
   // outside the footer (a `logged` occurring in body prose, out of any
   // `<small>` block, is not this rule's concern).
-  const clean = wrap('A locally written multiple choice, disclosed here and in the ledger. A statistic reported below: 38 cases. A mislabeled cell reported as a source defect and corrected.');
+  const clean = wrap('A locally written multiple choice, disclosed here and in the ledger. The first-reported year of 38 cases in the Weekly Report. A mislabeled cell, a source defect, corrected.');
   assert.deepEqual(lintHugo(clean, 'content/x/y/01-a/01-b.md').errors.filter((e) => e.includes('names run machinery')), []);
   const outsideFooter = '# T\n\nA study logged 38 reported cases.\n\n<small>Adapted from [Book] by Authors, © OpenStax. Changes: none.</small>\n';
   assert.deepEqual(lintHugo(outsideFooter, 'content/x/y/01-a/01-b.md').errors.filter((e) => e.includes('names run machinery')), []);

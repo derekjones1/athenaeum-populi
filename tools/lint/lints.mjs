@@ -2778,10 +2778,12 @@ export function lintHugo(src, filename = '', options = {}) {
   // fetch"/"media pull" (the parent's media step, not the page), "parent
   // notes" (the scratchpad file) — plus "run facts" (the parent's prep
   // document) and "Part C" (the parent's decisions section) naming this
-  // run's own prep artifacts. "reported as a source defect" is NOT in the
-  // list: it is the established reader-facing disclosure on ~96 pages of
-  // both life-sciences books and names the correction, not the log.
-  const FOOTER_MACHINERY = /\blogged\b|\breported\s+(?:to|for)\s+the\s+(?:parent|errata)\b|\bfor\s+the\s+parent\b|\bflagged\b.{0,25}\bparent\b|\berrata log\b|\borchestrator\b|\bmedia (?:fetch|pull)\b|\bparent notes\b|\brun facts\b|\bPart C\b/gi;
+  // run's own prep artifacts. Since September 23, 2026 (Derek, after the
+  // Biology 21-25 re-review) the footer also never says THAT a defect was
+  // reported or which erratum records it: "reported as a source defect",
+  // "also reported", "reported below", "(erratum 414)", "errata 185–188"
+  // were swept from 200+ pages; the footer states the correction and why.
+  const FOOTER_MACHINERY = /\blogged\b|\breported\s+(?:as|below|here|for)\b|\b(?:also|and|each|both|three|four)\s+reported\b|\berrat(?:um|a)\s+\d|\(errat(?:um|a)\)|\bbook's errata\b|\breported\s+(?:to|for)\s+the\s+(?:parent|errata)\b|\bfor\s+the\s+parent\b|\bflagged\b.{0,25}\bparent\b|\berrata log\b|\borchestrator\b|\bmedia (?:fetch|pull)\b|\bparent notes\b|\brun facts\b|\bPart C\b/gi;
   // Footers and inline Source notes are the two reader-facing places a
   // correction is disclosed; both must name the correction, not the log.
   for (const m of mediaSrc.matchAll(/<small>[\s\S]*?<\/small>|\*\(Source note:[\s\S]*?\)\*/g)) {

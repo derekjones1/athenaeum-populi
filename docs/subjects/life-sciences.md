@@ -139,7 +139,13 @@ section map" rather than restating the number.
    never from memory or from the plan. **The clause names departures from
    the source, and only those** *(September 23, 2026)*: correcting the
    page's own earlier alt, `longdesc`, hint, or item text is not narrated
-   there.
+   there. **It states the correction and why, never its bookkeeping**
+   *(September 23, 2026)*: no "reported as a source defect", "also
+   reported", "reported below", "(erratum N)", or "this book's errata" —
+   the errata file and `DISCLOSED_DEVIATIONS` carry the numbers. A source
+   defect the page keeps as printed is "a source defect, kept as printed".
+   The footer-machinery lint enforces it (it also covers inline Source
+   notes).
 
 ## Notation
 
