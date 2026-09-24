@@ -154,11 +154,11 @@ checks ran a narrow brief (they carry no hints; the gap is nearby leaks).
 | [x] | 28. Invertebrates | 7 | 118 | 991–994, 1001–1004 | 6f4cddf | Sep 23: three and a half Opus fixers (~473k); 65 of 118 hint leaks; parent: 28.1 mesohyl, 28.2 Hydrozoa class + two model-answer source notes (kind solution), 28.6 desiccation option + superclasses source note |
 | [x] | 29. Vertebrates | 7 | 114 | 995–997, 1000 | 6f4cddf | Sep 23: three and a half Opus fixers (~493k); 55 of 114 hint leaks; parent re-keyed 29.1 closest relatives to urochordates (kind key; solver flag adjudicated), 29.7 Australopithecus model answer, 29.2 misspellings |
 | [x] | 30. Plant Form and Physiology | 6 | 117 | — | 6f4cddf | Sep 23: two and a half Opus fixers (~426k); 84 of 117 hint leaks; no new source defects |
-| [ ] | 31. Soil and Plant Nutrition | 3 | | | | |
-| [ ] | 32. Plant Reproduction | 3 | | | | |
-| [ ] | 33. The Animal Body: Basic Form and Function | 3 | | | | |
-| [ ] | 34. Animal Nutrition and the Digestive System | 4 | | | | |
-| [ ] | 35. The Nervous System | 5 | | | | |
+| [x] | 31. Soil and Plant Nutrition | 3 | 54 | — | c909153 | Sep 23: one and a half Opus fixers (~185k tokens), batched with ch32–35 (shared Fable solve 43/43, ~92k); ~34 of 54 hint leaks; five reverse re-asks replaced (sulfur, potassium, glacial drift, B and C horizons) |
+| [x] | 32. Plant Reproduction | 3 | 54 | — | c909153 | Sep 23: two and a half Opus fixers (~270k); ~32 of 54 hint leaks; synergid and dormancy reverse re-asks replaced (micropyle, testa) |
+| [x] | 33. The Animal Body: Basic Form and Function | 3 | 58 | 1008 | c909153 | Sep 23: two Opus fixers (~263k); 34 of 58 hint leaks; parent re-keyed the 33.1 dorsal/ventral plane question to coronal (kind key; the module's own goat figure), rewrote a garbled fixer-written 33.3 stem, fixed erratum 239's quotation |
+| [x] | 34. Animal Nutrition and the Digestive System | 4 | 63 | 1005–1006 | c909153 | Sep 23: two and a half Opus fixers (~300k); ~42 of 63 hint leaks; parent replaced a double-keying option in 34.1 (cow teeth) and 34.2 (fat) (kind options); trypsin textin accepts any of the three proteases |
+| [x] | 35. The Nervous System | 5 | 92 | 1007 | c909153 | Sep 23: three and a half Opus fixers (~400k); ~54 of 92 hint leaks; parent replaced the microglia option that double-keyed the 35.1 meningitis question (kind options); four reverse re-asks replaced |
 | [ ] | 36. Sensory Systems | 5 | | | | |
 | [ ] | 37. The Endocrine System | 5 | | | | |
 | [ ] | 38. The Musculoskeletal System | 4 | | | | |
