@@ -229,29 +229,30 @@ checks ran a narrow brief (they carry no hints; the gap is nearby leaks).
 
 **Why.** An Opus image-first sample on September 24, 2026 (50 random figures, 25 per book, seed 20260924, `docs/briefs/alt-pass/checker-brief.md`, parent opened every flagged image) found 6 real alt errors in 50 (about 1 in 8), plus 6 minor and 2 trivial or judgment flags. All 6 real errors were on **alt-only** figures (no `longdesc`). These figures had only the September 20–21 Sonnet image-first pass. The `longdesc` figures had the September 22–23 Opus read, and their sample flags were minor only. Scope: the roughly 1,030 alt-only figures (Biology 1,153 − 634 with `longdesc`; Microbiology 792 − 283). Estimate: about 8–10M Opus tokens, 3–4 sessions.
 
-### Sample fixes (confirmed against the image, NOT yet applied)
+### Sample fixes (confirmed against the image, applied September 24, 2026)
 
 Paths are under `content/life-health-sciences/`; line = the `{{< mediafigure` tag.
 
 | | Page:line | Alt says | Image shows → fix | Kind |
 |---|---|---|---|---|
-| [ ] | `microbiology/14-antimicrobial-drugs/06-testing-the-effectiveness-of-antimicrobials.md:56` | 8/16/32 µg/mL tubes hold "clearer broth with a thin band of sediment near the bottom" | the dark band is the backdrop seen through clear broth, halfway up; the tube bottoms are clear → "hold clear broth" | error |
-| [ ] | `microbiology/13-control-of-microbial-growth/01-controlling-microbial-growth.md:44` | "connected by a shared red coiled air hose, standing on a grated floor" | a separate coiled hose to each suit; a solid floor with one round drain | error |
-| [ ] | `microbiology/17-innate-nonspecific-host-defenses/01-physical-defenses.md:53` | desmosomes: "long strands weaving them together" (source alt, verbatim) | the fibres stay inside each cell; short linker proteins span the gap → rewrite; erratum + footer disclosure (source-inherited) | error |
-| [ ] | `microbiology/22-respiratory-system-infections/03-viral-infections-of-the-respiratory-tract.md:261` | (c) "small, raised, scabbed lesions … on an adult's torso" | intact fluid-filled blisters; no body site is identifiable | error |
-| [ ] | `biology/24-fungi/01-characteristics-of-fungi.md:111` | two labeled "Hyphae" "meeting at a round sporangium" | only the diagonal stalk ends in the sporangium; the other labeled hypha crosses above it | error |
-| [ ] | `biology/37-the-endocrine-system/01-types-of-hormones.md:49` | oxytocin "with one yellow sulfur" | two yellow sulfur spheres (the disulfide) | error |
-| [ ] | `biology/38-the-musculoskeletal-system/01-types-of-skeletal-systems.md:149` | "Two views"; longdesc "the left is identical" | a left and a right foot, mirror images, in one view | minor |
-| [ ] | `microbiology/12-modern-applications-of-microbial-genetics/01-microbes-and-the-tools-of-genetic-engineering.md:183` | needle "pointing at its nucleus" | the needle passes through the nucleus nearly to the far side | minor |
-| [ ] | `microbiology/03-the-cell/04-unique-characteristics-of-eukaryotic-cells.md:233` | (no scale) | the micrograph prints a 200 nm scale bar → add it (source alt also lacks it) | minor |
-| [ ] | `biology/14-dna-structure-and-function/06-dna-repair.md:23` | "a mismatched base marked with a red arrow" | name the G opposite A and the red arrow pointing back along the new strand (the polymerase backing up to proofread); the source alt had both | minor |
-| [ ] | `microbiology/08-microbial-metabolism/07-biogeochemical-cycles.md:75` | alt and longdesc tie "lithotrophic bacteria" and "anoxygenic photosynthetic" to the H₂S box; longdesc calls "organic sulfur" a box | both labels sit under the H₂S → SO oxidation arrow; "organic sulfur" is plain text | minor |
-| [ ] | `biology/45-population-and-community-ecology/06-community-ecology.md:187` | longdesc: "several young conifers" | panel 2 draws two (checker's reading; parent has not yet opened this image) | minor |
+| [x] | `microbiology/14-antimicrobial-drugs/06-testing-the-effectiveness-of-antimicrobials.md:56` | 8/16/32 µg/mL tubes hold "clearer broth with a thin band of sediment near the bottom" | the dark band is the backdrop seen through clear broth, halfway up; the tube bottoms are clear → "hold clear broth" | error |
+| [x] | `microbiology/13-control-of-microbial-growth/01-controlling-microbial-growth.md:44` | "connected by a shared red coiled air hose, standing on a grated floor" | a separate coiled hose to each suit; a solid floor with one round drain | error |
+| [x] | `microbiology/17-innate-nonspecific-host-defenses/01-physical-defenses.md:53` | desmosomes: "long strands weaving them together" (source alt, verbatim) | the fibres stay inside each cell; short linker proteins span the gap → rewrite; erratum + footer disclosure (source-inherited) | error |
+| [x] | `microbiology/22-respiratory-system-infections/03-viral-infections-of-the-respiratory-tract.md:261` | (c) "small, raised, scabbed lesions … on an adult's torso" | intact fluid-filled blisters; no body site is identifiable | error |
+| [x] | `biology/24-fungi/01-characteristics-of-fungi.md:111` | two labeled "Hyphae" "meeting at a round sporangium" | only the diagonal stalk ends in the sporangium; the other labeled hypha crosses above it | error |
+| [x] | `biology/37-the-endocrine-system/01-types-of-hormones.md:49` | oxytocin "with one yellow sulfur" | two yellow sulfur spheres (the disulfide) | error |
+| [x] | `biology/38-the-musculoskeletal-system/01-types-of-skeletal-systems.md:149` | "Two views"; longdesc "the left is identical" | a left and a right foot, mirror images, in one view | minor |
+| [x] | `microbiology/12-modern-applications-of-microbial-genetics/01-microbes-and-the-tools-of-genetic-engineering.md:183` | needle "pointing at its nucleus" | the needle passes through the nucleus nearly to the far side | minor |
+| [x] | `microbiology/03-the-cell/04-unique-characteristics-of-eukaryotic-cells.md:233` | (no scale) | the micrograph prints a 200 nm scale bar → add it (source alt also lacks it) | minor |
+| [x] | `biology/14-dna-structure-and-function/06-dna-repair.md:23` | "a mismatched base marked with a red arrow" | name the G opposite A and the red arrow pointing back along the new strand (the polymerase backing up to proofread); the source alt had both | minor |
+| [x] | `microbiology/08-microbial-metabolism/07-biogeochemical-cycles.md:75` | alt and longdesc tie "lithotrophic bacteria" and "anoxygenic photosynthetic" to the H₂S box; longdesc calls "organic sulfur" a box | both labels sit under the H₂S → SO oxidation arrow; "organic sulfur" is plain text | minor |
+| [x] | `biology/45-population-and-community-ecology/06-community-ecology.md:187` | longdesc: "several young conifers" | panel 2 draws two (parent confirmed on a zoom crop) | minor |
 
 Also from the sample:
-- Trivial: `microbiology/08-microbial-metabolism/06-photosynthesis.md:65`, where the panel (b) longdesc names a "horizontal axis" that is not drawn.
-- Judgment call for Derek: the `microbiology/06-acellular-pathogens/_index.md:8` chapter-opener Ebola map. The per-country counts were dropped because the source alt had them wrong (erratum 459), so none of the map's data or its "30 November 2014" date reaches the reader.
-- Erratum candidate: m66442's hemoglobin artwork (`Figure_03_04_05-3127`) prints "∝" for α on the α-subunit labels, the same kind as erratum 914. The page longdesc already says α.
+- Trivial (fixed with the sample): `microbiology/08-microbial-metabolism/06-photosynthesis.md:65`, where the panel (b) longdesc named a "horizontal axis" that is not drawn.
+- Applying the foot fix found the same "the left is identical" wording on the lower-limb figure (`biology/38-the-musculoskeletal-system/01-types-of-skeletal-systems.md:141`); the legs are mirror images too, so both were fixed. The desmosome alt is erratum 1046.
+- Decided by Derek (September 24, 2026), applied: the `microbiology/06-acellular-pathogens/_index.md:8` chapter-opener Ebola map now carries the totals and date in its alt and every country's counts in a new longdesc. Before that, the per-country counts were dropped because the source alt had them wrong (erratum 459), so none of the map's data or its "30 November 2014" date reaches the reader.
+- Logged as erratum 1047, with a footer note: m66442's hemoglobin artwork (`Figure_03_04_05-3127`) prints "∝" for α on the α-subunit labels, the same kind as erratum 914. The page longdesc already says α.
 
 Applying these: edit the alt/`longdesc` (never a straight `"` inside the attribute; `npm run lint`); a source-inherited claim gets an erratum and a footer `Changes:` clause. A figure that a graded item names is in that item's ledger hash, so re-solve (or parent re-read) the re-hashed items. Then run `npm test`.
 

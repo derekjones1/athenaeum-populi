@@ -180,7 +180,7 @@ Electroporation is one laboratory technique used to introduce DNA into eukaryoti
 
 An alternative method of transfection is called **microinjection**. Because eukaryotic cells are typically larger than those of prokaryotes, DNA fragments can sometimes be directly injected into the cytoplasm using a glass micropipette, as shown below.
 
-{{< mediafigure src="microbiology/OSC_Microbio_12_01_microinjec" alt="A grayscale micrograph of a thin microinjection needle passing through the plasma membrane of a round cell and pointing at its nucleus." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_12_01_microinjec" alt="A grayscale micrograph of a round cell held against a pipette at the left while a thin needle, labeled microinjection needle, enters from the right, passes through the cell membrane (labeled) and through the nucleus (labeled), and reaches nearly to the cell's far side." kind="photo" >}}
 Microinjection is another technique for introducing DNA into eukaryotic cells. A microinjection needle containing recombinant DNA is able to penetrate both the cell membrane and nuclear envelope.
 {{< /mediafigure >}}
 

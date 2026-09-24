@@ -108,7 +108,7 @@ Generalized fungal life cycle. Fungi may have both asexual and sexual stages of 
 
 There are many types of asexual spores. **Conidiospores** are unicellular or multicellular spores that are released directly from the tip or side of the hypha. Other asexual spores originate in the fragmentation of a hypha to form single cells that are released as spores; some of these have a thick wall surrounding the fragment. Yet others bud off the vegetative parent cell. In contrast to conidiospores, sporangiospores are produced directly from a sporangium (pictured below).
 
-{{< mediafigure src="biology/Figure_24_01_08" alt="Micrograph of thread-like blue-stained hyphae, two labeled 'Hyphae,' meeting at a round sporangium labeled 'Sporangium' that is dark blue at its neck and grainy white and blue elsewhere, with scattered small white oval spores already released nearby and a 25 µm scale bar at lower left." kind="photo" >}}
+{{< mediafigure src="biology/Figure_24_01_08" alt="Micrograph of thread-like blue-stained hyphae, two labeled 'Hyphae': one diagonal hypha ends in a round sporangium labeled 'Sporangium', and the other crosses above it without touching the sporangium. The sporangium is dark blue at its neck and grainy white and blue elsewhere, with scattered small white oval spores already released nearby and a 25 µm scale bar at lower left." kind="photo" >}}
 Sporangiospores. This bright field light micrograph shows the release of spores from a sporangium at the end of a hypha called a sporangiophore. The organism is a *Mucor* sp. fungus, a mold often found indoors. (credit: modification of work by Dr. Lucille Georg, CDC; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 

@@ -46,7 +46,7 @@ The structure of **peptide hormones** is that of a polypeptide chain (chain of a
 
 Secreted peptides like insulin are stored within vesicles in the cells that synthesize them. They are then released in response to stimuli such as high blood glucose levels in the case of insulin. Amino acid-derived and polypeptide hormones are water-soluble and insoluble in lipids. These hormones cannot pass through plasma membranes of cells; therefore, their receptors are found on the surface of the target cells.
 
-{{< mediafigure src="biology/Figure_37_01_03abc" kind="diagram" alt="Three space-filling molecular models: (a) oxytocin, a small compact peptide of gray, red, blue, and white spheres with one yellow sulfur; (b) growth hormone, a much larger folded protein in white and magenta; and (c) follicle stimulating hormone, a large multi-domain protein in blues, greens, and yellow." >}}
+{{< mediafigure src="biology/Figure_37_01_03abc" kind="diagram" alt="Three space-filling molecular models: (a) oxytocin, a small compact peptide of gray, red, blue, and white spheres with two yellow sulfur atoms joined to each other; (b) growth hormone, a much larger folded protein in white and magenta; and (c) follicle stimulating hormone, a large multi-domain protein in blues, greens, and yellow." >}}
 The structures of peptide hormones (a) oxytocin, (b) growth hormone, and (c) follicle-stimulating hormone are shown. These peptide hormones are much larger than those derived from cholesterol or amino acids.
 {{< /mediafigure >}}
 

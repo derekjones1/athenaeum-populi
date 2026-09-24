@@ -20,7 +20,7 @@ DNA replication is a highly accurate process, but mistakes can occasionally occu
 
 Most of the mistakes during DNA replication are promptly corrected by the proofreading ability of DNA polymerase itself, shown below. In **proofreading**, the DNA pol reads the newly added base before adding the next one, so a correction can be made. The polymerase checks whether the newly added base has paired correctly with the base in the template strand. If it is the right base, the next nucleotide is added. If an incorrect base has been added, the enzyme makes a cut at the phosphodiester bond and releases the wrong nucleotide. This is performed by the 3′ exonuclease action of DNA pol. Once the incorrect nucleotide has been removed, it can be replaced by the correct one.
 
-{{< mediafigure src="biology/Figure_14_06_01" kind="diagram" alt="A diagram of a large oval labeled DNA polymerase enclosing two paired DNA strands. The upper, newly synthesized strand runs 5′ to 3′ left to right and ends at a mismatched base marked with a red arrow; the lower template strand runs 3′ to 5′ left to right beneath it." eager="true" >}}
+{{< mediafigure src="biology/Figure_14_06_01" kind="diagram" alt="A diagram of a large oval labeled DNA polymerase enclosing two paired DNA strands. The upper, newly synthesized strand runs 5′ to 3′ left to right and ends at a mismatched G opposite an A on the template, with a red arrow curving back along the new strand from the mismatch to show the polymerase backing up to remove it; the lower template strand runs 3′ to 5′ left to right beneath it." eager="true" >}}
 Proofreading by DNA polymerase corrects errors during replication.
 {{< /mediafigure >}}
 
