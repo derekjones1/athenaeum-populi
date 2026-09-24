@@ -143,7 +143,7 @@ checks ran a narrow brief (they carry no hints; the gap is nearby leaks).
 | [x] | 17. Biotechnology and Genomics | 5 | — | — | a145b91 | Sep 22 full-scope sweep |
 | [x] | 18. Evolution and the Origin of Species | 3 | 29 | 983–984 | 71071e7 | 18.1 in the Sep 22 sweep; 18.2–18.3 Sep 23: one Opus fixer (~150k tokens) + Fable solve 7/7 (~60k); 15 of 29 were hint leaks |
 | [x] | 19. The Evolution of Populations | 3 | 34 | 985–986 | 3250fc9 | Sep 23: one Opus fixer (~160k tokens) + Fable solve 3/3 (~45k); 22 of 34 were hint leaks; parent caught one fixer-made leak (a cloze stem stating the next MC's key) |
-| [ ] | 20. Phylogenies and the History of Life | 3 | | | | |
+| [x] | 20. Phylogenies and the History of Life | 3 | 46 | 987 | — | Sep 23: one Opus fixer (~177k tokens) + Fable solve 8/8 (~53k); 27 of 46 were hint leaks; five reverse re-asks replaced with single-sentence clozes; parent turned the fixer's draft erratum (source "DNA" double-keys the phylogeny RQ) into an options deviation per errata 924/928/934 |
 | [ ] | 21. Viruses | 4 | | | | |
 | [ ] | 22. Prokaryotes: Bacteria and Archaea | 5 | | | | |
 | [ ] | 23. Protists | 4 | | | | |

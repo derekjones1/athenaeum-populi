@@ -1041,6 +1041,14 @@
     "result": "agrees"
    }
   },
+  "032b3fda8f88a7ac": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "032b7aacce535901": {
    "verdict": "ok",
    "note": "period of A tan(Bx) is pi/|B|; B=pi/6 gives P=6, independently computed."
@@ -1499,14 +1507,6 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "04954bacaf5c0ca3": {
-   "verdict": "ok",
-   "note": "m66530 exercise fs-idp177641920: source options in source order, solution D = 'Subspecies are the most specific category of classification.' Matches section text (species then subspecies is the most specific).",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -2701,6 +2701,15 @@
     "result": "agrees"
    }
   },
+  "0842675c82025c36": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idp85464784 (kingdom): meaning ('domain division...') used as prompt, term as answer; accept='kingdoms' (regular plural).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "settled against m66530's glossary, which defines kingdom as 'domain division in the taxonomic classification system' — the prompt quotes the glossary definition, so the key (kingdom) is right and the solver misparsed the phrasing"
+   }
+  },
   "0847d378f6d1a848": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -2717,6 +2726,10 @@
   },
   "0859979a781512a8": {
    "verdict": "ok"
+  },
+  "085c3b045bf356aa": {
+   "verdict": "ok",
+   "note": "m66530 exercise fs-idp20454112 (Critical Thinking): source solution transcribed verbatim as model answer; checkpoints are verbatim clauses of it. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "086471f3cf22d4c0": {
    "verdict": "ok",
@@ -2918,14 +2931,6 @@
    "verdict": "ok"
   },
   "08cada99f5f023d7": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "08cb345d8b50b62f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -6108,14 +6113,6 @@
     "result": "agrees"
    }
   },
-  "12580ef8347646d4": {
-   "verdict": "ok",
-   "note": "Review Question exercise fs-idp83844208: keyed C ('They are derived by similar environmental constraints.'), matches the section's own definition of analogy/homoplasy.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "1258352e3699c4ba": {
    "verdict": "ok",
    "solved": {
@@ -8164,6 +8161,10 @@
     "result": "agrees"
    }
   },
+  "18657cfdc2126a12": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-idp177675648 (why distinguish homology/analogy before building trees): source solution reproduced near-verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "18665533b8575ae7": {
    "verdict": "ok",
    "note": "Vertex of f(x)=x^2-2x: h=1,k=f(1)=-1, so (1,-1); computed via node, matches printed function."
@@ -8438,14 +8439,6 @@
   },
   "1931e59050ace8e9": {
    "verdict": "ok"
-  },
-  "19337a947daadf9c": {
-   "verdict": "ok",
-   "note": "Glossary recall (definition id fs-idp29655616, term 'molecular systematics'); prompt reworded from 'molecular evidence' to 'DNA sequence data' to avoid the answer's own word 'molecular' appearing in the question.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "193e14cea638cfbd": {
    "verdict": "ok",
@@ -8803,10 +8796,6 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
-  },
-  "1a3b89f6da887b31": {
-   "verdict": "ok",
-   "note": "selfcheck model answer is the source solution for fs-idm35642672 (Critical Thinking Q2) verbatim; checkpoints are its clauses restated with no new claim."
   },
   "1a3f3c2dc590c15a": {
    "verdict": "ok"
@@ -10394,6 +10383,10 @@
    "verdict": "ok",
    "note": "KC 1 5.4 § intro, m58805"
   },
+  "1ef4fb11af558ce9": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-idp96392800 (dolphins/fish): source solution reproduced near-verbatim as the model answer. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "1ef60bc547d32320": {
    "verdict": "ok"
   },
@@ -11362,14 +11355,6 @@
   },
   "2226ffb069aec43f": {
    "verdict": "ok"
-  },
-  "222980bb7f857f56": {
-   "verdict": "ok",
-   "note": "m66530 glossary definition fs-idp209954400 (phylogenetic tree): meaning used as prompt; accept='phylogenetic trees' (regular plural).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "222ba4d771bde928": {
    "verdict": "ok",
@@ -12853,6 +12838,14 @@
     "result": "agrees"
    }
   },
+  "27b608ea59501a2d": {
+   "verdict": "ok",
+   "note": "glossary recall (m66524 rooted); accept widened September 5, 2026 to take \"rooted tree\" / \"rooted phylogenetic tree\" (completion-audit checker: the prompt's \"is called ________\" invites the noun phrase) — parent re-read against the glossary; re-solved cold by the orchestrator | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "27b74c8b786bd383": {
    "verdict": "ok"
   },
@@ -14275,6 +14268,14 @@
     "result": "agrees"
    }
   },
+  "2c365f66a8a5cd66": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition id 'homology', term 'homology'). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2c38b816fa174827": {
    "verdict": "ok",
    "note": "KC 8 45.2 § body Early versus Late Reproduction (fs-idp89798640), m66688 — parent re-read against the module"
@@ -15136,10 +15137,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "2ef138f2b5a6893d": {
-   "verdict": "ok",
-   "note": "selfcheck model answer is the source solution for fs-idm75528944 (Critical Thinking Q1) verbatim; checkpoints are its three clauses restated with no new claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
   "2ef519a253294dcb": {
    "verdict": "ok",
@@ -17274,14 +17271,6 @@
   "35fd8131b67ded33": {
    "verdict": "ok"
   },
-  "3602a434da46584f": {
-   "verdict": "ok",
-   "note": "Glossary recall (definition id fs-idp48289568, term 'shared ancestral character'); prompt avoids the answer's own words ('shared', 'ancestral', 'character').; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "360372ff515a5394": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -17332,14 +17321,6 @@
   "3628d5e238464e2d": {
    "verdict": "ok",
    "note": "Section exercise fs-id1165137658781: k=100/(1*2*5)=10, so y=10xzw. Verified with node arithmetic; matches CNXML solution."
-  },
-  "362a287035256eb9": {
-   "verdict": "ok",
-   "note": "Glossary recall (definition id fs-idp60769824, term 'monophyletic group'); accept includes the source's own parenthetical synonym 'clade'/'clades'.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "362df27f658df4fa": {
    "verdict": "ok",
@@ -19132,14 +19113,6 @@
     "result": "agrees"
    }
   },
-  "3b7ba18c09408d64": {
-   "verdict": "ok",
-   "note": "textin built from the glossary definition of nucleus-first hypothesis (fs-idp66848096); answer matches the term exactly. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "3b8135bebb69f72b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -19764,14 +19737,6 @@
   "3df979f7dba08017": {
    "verdict": "ok"
   },
-  "3df9d47d862688e3": {
-   "verdict": "ok",
-   "note": "Glossary recall (definition id 'homology', term 'homology').",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "3df9f5e31f038db6": {
    "verdict": "ok"
   },
@@ -20179,6 +20144,14 @@
     "result": "agrees"
    }
   },
+  "3f3e1317765436ab": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idp209954400 (phylogenetic tree): meaning used as prompt; accept='phylogenetic trees' (regular plural).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3f3fc8671792e6d4": {
    "verdict": "ok"
   },
@@ -20394,6 +20367,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3fe3abb78913295a": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idm25913024 (taxon): meaning used as prompt; accept='taxa' per the glossary's own '(plural: taxa)' note.; plural-fold audit 2026-09-06: auditor flagged that the fold accepts \"taxons\" beside the already-listed \"taxa\"; adjudicated not a defect — the item accepted the plural before the fold, and a learner typing it knows the term | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -20837,6 +20818,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "414a671ab06061de": {
+   "verdict": "ok",
+   "note": "Visual Connection exercise fs-idp197183488 (fig-ch20_02_05): solution matches verbatim; short model answer split into two overlapping token-subset checkpoints. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "414de4634e3dce1f": {
    "verdict": "ok",
@@ -25406,6 +25391,14 @@
   "5003395ae727cd34": {
    "verdict": "ok"
   },
+  "50050f4c26ba2d88": {
+   "verdict": "ok",
+   "note": "parent re-verdict after accept gained 'homoplasies' and the stem's article was dropped so the accepted synonym is also grammatical; answer unchanged, re-read against m66531 glossary | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "500514526b4c1da4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -26795,14 +26788,6 @@
    "verdict": "ok",
    "note": "P(3)=558/(1+54.8*e^(-0.462*3))=37.95, rounds to 38, matching CNXML eip-idm1412767296 (wolves, #23)."
   },
-  "5512908337aa8719": {
-   "verdict": "ok",
-   "note": "sortbins built from table tab-ch20-03-01 (transcribed in the body); every item's bin assignment matches the table's Prokaryotes/Eukaryotes group label for its row; interleaved order P,E,P,P,E,P,E,E is not a fixed alternation.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "5514f160d9de626a": {
    "verdict": "ok",
    "note": "multiplechoice, converted from body CYU § Noncoding DNA ('What is the role of noncoding DNA?'), per checker finding. ONE module sentence fixes the whole answer: '...contribute to the regulation of transcription or translation through the production of small noncoding RNA molecules, DNA packaging, and chromosomal stability.' Distractors are the module's own sibling phrases describing what genes ('code for proteins, enzymes, or stable RNA molecules'), the origin of replication ('the location...where DNA replication initiates'), and plasmids ('a few nonessential genes that may be helpful under specific conditions') do instead — none of these is a role of noncoding DNA. Swept every other hint/stem on the page for 'chromosomal stability' and related phrasing: no leak found. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -27657,6 +27642,14 @@
   "57bb99fa4f27198c": {
    "verdict": "ok",
    "note": "m66427 visual-exercise fs-id1889238, solution fs-id1470941: '1: C; 2: F; 3: A; 4: B; 5: D; 6: E. The original hypothesis is incorrect, as the coffeemaker works when plugged into the outlet. Alternative hypotheses include that the toaster might be broken or that the toaster wasn't turned on.' Page model answer matches all six pairings and the incorrect-hypothesis conclusion; every ===CHECKS=== clause (step 1/c, step 3/a, step 4/b, step 6/e, hypothesis incorrect, toaster-broken-or-not-turned-on alternative) restates the source solution with no added claim."
+  },
+  "57bcbac3abfc5b23": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition id fs-idp29655616, term 'molecular systematics'); prompt reworded from 'molecular evidence' to 'DNA sequence data' to avoid the answer's own word 'molecular' appearing in the question. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "57bf88ae40fa0bd8": {
    "verdict": "ok",
@@ -28588,6 +28581,15 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 935): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "5af6f3f8f0664d29": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idm4716128 (phylum): meaning used as prompt; accept='phyla' per the glossary's own '(plural: phyla)' note. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "settled against m66530's glossary, which defines phylum as '(plural: phyla) kingdom division in the taxonomic classification system' — same glossary phrasing, key (phylum) is right"
+   }
+  },
   "5b01b7a31174509c": {
    "verdict": "ok"
   },
@@ -28906,15 +28908,6 @@
   "5bb9fc8796e5e058": {
    "verdict": "ok"
   },
-  "5bbc0d7f3d100e5e": {
-   "verdict": "ok",
-   "note": "m66530 glossary definition fs-idm4716128 (phylum): meaning used as prompt; accept='phyla' per the glossary's own '(plural: phyla)' note.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "settled against m66530's glossary, which defines phylum as '(plural: phyla) kingdom division in the taxonomic classification system' — same glossary phrasing, key (phylum) is right"
-   }
-  },
   "5bbf07f972afd0d3": {
    "verdict": "ok"
   },
@@ -29231,14 +29224,6 @@
   "5cb25967a8dfe3d5": {
    "verdict": "ok",
    "note": "CHECKER FIX (D: two-sentence key): reverted from `multiplechoice` to `selfcheck` — the honest answer needs both the double-helix-distortion sentence and the following DNA-polymerase skip-or-insert sentence of § Chemical Mutagens, so it does not reduce to one fixing sentence. Was hash 053eb9ab616193d5 (multiplechoice). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "5cba12f35ef4f93b": {
-   "verdict": "ok",
-   "note": "MC transcribes fs-idm62610816 (Review Q2) verbatim; source <solution> keys option D \"gene transfer agents\", matching fs-idp26893472 (GTAs described as marine-prokaryote gene-transfer particles).",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "5cbfa26ab535fdf5": {
    "verdict": "ok",
@@ -30832,15 +30817,6 @@
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
-   }
-  },
-  "629f7920cab84726": {
-   "verdict": "ok",
-   "note": "m66530 exercise fs-idp28640208: source options in source order (mutations/DNA/evolutionary history/organisms on earth), solution C = 'evolutionary history', which directly echoes the section's own opening definition of phylogeny ('phylogeny is the evolutionary history and relationship of an organism...'). Defensible as printed, not a defect.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "settled against m66530: the module's own Review Question solution keys C (evolutionary history), and its opening sentence defines phylogeny as evolutionary history; DNA is a means of inferring it, not the module's keyed answer"
    }
   },
   "629fe67f4804ef4c": {
@@ -32740,14 +32716,6 @@
     "result": "agrees"
    }
   },
-  "68fb175e7ec98e56": {
-   "verdict": "ok",
-   "note": "Locally written from section.summary sentence 'Historically, scientists organized organisms into a taxonomic classification system.' Distractors (phylogenetic tree, systematics, binomial nomenclature) are all module terms; disclosed in footer.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "69001b62610e26a9": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 729): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -34098,6 +34066,14 @@
     "result": "agrees"
    }
   },
+  "6d95ccac0c0a302e": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition id fs-idp48289568, term 'shared ancestral character'); prompt avoids the answer's own words ('shared', 'ancestral', 'character').; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6da276d2e647fbb1": {
    "verdict": "ok",
    "solved": {
@@ -34578,14 +34554,6 @@
   "6ef8b39623444848": {
    "verdict": "ok",
    "note": "P(5,2)=5*4=20 (node BigInt); confirmed retyping 'P(5,2)' grades incorrect against 20 via checkAnswer, so no answerForm needed."
-  },
-  "6efa79baedf9769c": {
-   "verdict": "ok",
-   "note": "textin built from the glossary definition of mitochondria-first hypothesis (fs-idp27897680); answer matches the glossary spelling, accept covers the singular-organelle spelling the meaning text itself uses (\"mitochondrion\"). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "6efd145cd7a87529": {
    "verdict": "ok",
@@ -36333,14 +36301,6 @@
     "result": "agrees"
    }
   },
-  "752d42bbbe73038c": {
-   "verdict": "ok",
-   "note": "textin built from the glossary definition of web of life (fs-idp26484048); answer matches the term; question paraphrases the meaning without the contiguous phrase \"web of life\".",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "752d8fcf3865b5cb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -36376,14 +36336,6 @@
    "note": "KC 1 2.1 § Electromagnetic Spectrum and Color, m58785",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "754f73feb8eec60d": {
-   "verdict": "ok",
-   "note": "glossary recall (m66524 rooted); accept widened September 5, 2026 to take \"rooted tree\" / \"rooted phylogenetic tree\" (completion-audit checker: the prompt's \"is called ________\" invites the noun phrase) — parent re-read against the glossary; re-solved cold by the orchestrator",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -36774,6 +36726,14 @@
     "result": "agrees"
    }
   },
+  "76f4df9a513effd9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "76f7601e032b9cdd": {
    "verdict": "ok"
   },
@@ -36994,10 +36954,6 @@
   },
   "777b63e41a915955": {
    "verdict": "ok"
-  },
-  "777b9f1e2dcd4e6e": {
-   "verdict": "ok",
-   "note": "m66530 exercise fs-idp34994416 (Critical Thinking): source solution transcribed verbatim as model answer; checkpoints are verbatim clauses of it."
   },
   "777c7505a637292f": {
    "verdict": "ok",
@@ -37430,6 +37386,14 @@
    "verdict": "ok",
    "note": "CYU § Cell Morphologies — Identify two differences: nucleus/nuclear membrane and membrane-bound organelles/cytoskeleton, from the intro paragraph. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "78d3d4a5ab4d5652": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "78d7accc47e48037": {
    "verdict": "ok",
    "note": "KC 5 24.6 § Flukes (Liver Flukes), m58932",
@@ -37696,10 +37660,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "79aee37d67999673": {
-   "verdict": "ok",
-   "note": "Visual Connection exercise fs-idp53820672 (fig-ch20_02_04): solution matches verbatim; model answer and checkpoints re-derived from the CNXML solution paragraph."
   },
   "79c099371710b0c5": {
    "verdict": "ok",
@@ -39314,14 +39274,6 @@
     "result": "agrees"
    }
   },
-  "7e1382d550c8d13d": {
-   "verdict": "ok",
-   "note": "Glossary recall (definition id fs-idp105098576, term 'shared derived character'); prompt avoids the answer's own words.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "7e144642af4ff24a": {
    "verdict": "ok",
    "solved": {
@@ -39817,6 +39769,14 @@
   },
   "7fb1f07baee89ff8": {
    "verdict": "ok"
+  },
+  "7fb45aa3875cdc8e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7fc1fb5de623e853": {
    "verdict": "ok",
@@ -43370,14 +43330,6 @@
   "8b617b7f096d9c7e": {
    "verdict": "ok"
   },
-  "8b62532f8a22d16e": {
-   "verdict": "ok",
-   "note": "textin built from the glossary definition of eukaryote-first hypothesis (fs-idp53549872); answer matches the term exactly.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "8b66b9197f50c573": {
    "verdict": "ok",
    "note": "MC: 'or' of two disjoint events uses the Addition Principle; matches source Section Exercise 3's own explanation."
@@ -46415,14 +46367,6 @@
     "result": "agrees"
    }
   },
-  "95afc25a99c464d6": {
-   "verdict": "ok",
-   "note": "parent re-verdict after accept gained the module's own compound form 'genomic fusion' and the plural; answer unchanged, re-read against m66532 glossary and prose; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "95b7d26a8fa5a001": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -46591,10 +46535,6 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
-  },
-  "96704f996e681463": {
-   "verdict": "ok",
-   "note": "Visual Connection exercise fs-idp197183488 (fig-ch20_02_05): solution matches verbatim; short model answer split into two overlapping token-subset checkpoints."
   },
   "96712024253eccaf": {
    "verdict": "ok",
@@ -46931,6 +46871,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "97702a8be0e6179f": {
+   "verdict": "ok",
+   "note": "Visual Connection exercise fs-idp53820672 (fig-ch20_02_04): solution matches verbatim; model answer and checkpoints re-derived from the CNXML solution paragraph. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "9772998b3989b92e": {
    "verdict": "ok"
@@ -49070,6 +49014,14 @@
   },
   "9e8b54ccad13f41c": {
    "verdict": "ok"
+  },
+  "9e8eb0d71abf9933": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9e924377b44b7985": {
    "verdict": "ok"
@@ -51605,6 +51557,14 @@
     "result": "agrees"
    }
   },
+  "a72aac6bb89470b7": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition id fs-idp105098576, term 'shared derived character'); prompt avoids the answer's own words.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a72b2f77056a76fd": {
    "verdict": "ok"
   },
@@ -52457,14 +52417,6 @@
   "a9c28c270a419f40": {
    "verdict": "ok"
   },
-  "a9c6021c2731ca37": {
-   "verdict": "ok",
-   "note": "m66530 glossary definition fs-idm53349056 (binomial nomenclature): meaning used as prompt, term as answer.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "a9cab236e3671298": {
    "verdict": "ok",
    "note": "Body selfcheck, Fungal Virulence CYU bullet 1. Model answer assembles adhesins (Candida), exotoxins/mycotoxins analogy, exoenzymes (Candida proteases/phospholipases), and capsule/phagocytosis resistance (Cryptococcus), all from this module's Fungal Virulence paragraphs; no claim beyond them."
@@ -52660,6 +52612,14 @@
   "aa65f1ffd6a11fc8": {
    "verdict": "ok",
    "note": "d=26-17=9; recursive rule a_n=a_{n-1}+9 for n>=2, matches source key exactly."
+  },
+  "aa79155a3dfae2c8": {
+   "verdict": "ok",
+   "note": "Review Question exercise fs-idp149139024: keyed A ('to decipher accurate phylogenies'), matches the section's framing of maximum parsimony as a tool for accurate phylogenies. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "aa82fcee747ac397": {
    "verdict": "ok",
@@ -52875,6 +52835,14 @@
   "aaf9da0c75e52f78": {
    "verdict": "ok",
    "note": "KC 4 16.1 § Etiology (fs-id1167660378783), m58871",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "aafbaf3a48591030": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -57090,14 +57058,6 @@
     "note": "the glossary defines assimilation with exactly this wording; net consumer productivity is the energy content available to the next level — key stands"
    }
   },
-  "b80d70e38558be60": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "b8110268be7d8c16": {
    "verdict": "ok"
   },
@@ -57202,10 +57162,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "b835f3e944ed9f1d": {
-   "verdict": "ok",
-   "note": "Critical Thinking exercise fs-idp96392800 (dolphins/fish): source solution reproduced near-verbatim as the model answer."
   },
   "b83695761d925fbf": {
    "verdict": "ok"
@@ -57633,15 +57589,6 @@
   "b9913461ac13bac7": {
    "verdict": "ok",
    "note": "x=-y^2+2y-3: axis y=1, vertex x=-1+2-3=-2 -> (-2,1); x-intercept (y=0) x=-3 -> (-3,0), mirror across y=1 is (-3,2); extra points at y=-1,3 both give x=-6 (checked by substitution), matching mirror pair across axis. Discriminant of y^2-2y+3 is -8 (no real y-intercepts), consistent with CNXML ('it has no y-intercepts'). All 5 points inside grid -8..2/-4..6, integer lattice."
-  },
-  "b99594d37ab3a42b": {
-   "verdict": "ok",
-   "note": "m66530 glossary definition fs-idp85464784 (kingdom): meaning ('domain division...') used as prompt, term as answer; accept='kingdoms' (regular plural).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "settled against m66530's glossary, which defines kingdom as 'domain division in the taxonomic classification system' — the prompt quotes the glossary definition, so the key (kingdom) is right and the solver misparsed the phrasing"
-   }
   },
   "b99a26746b0192a1": {
    "verdict": "ok",
@@ -58763,10 +58710,6 @@
     "result": "agrees"
    }
   },
-  "bdac161da95fc1a9": {
-   "verdict": "ok",
-   "note": "m66530 exercise fs-idp20454112 (Critical Thinking): source solution transcribed verbatim as model answer; checkpoints are verbatim clauses of it."
-  },
   "bdac33df34be267f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -58970,10 +58913,6 @@
     "result": "agrees"
    }
   },
-  "be4846efa7a09d03": {
-   "verdict": "ok",
-   "note": "Critical Thinking exercise fs-idp29739984 ('Describe maximum parsimony.'): source solution reproduced near-verbatim as the model answer."
-  },
   "be486334c940c24b": {
    "verdict": "ok",
    "solved": {
@@ -59031,14 +58970,6 @@
   },
   "be66be5236f34a01": {
    "verdict": "ok"
-  },
-  "be699ea34cb10957": {
-   "verdict": "ok",
-   "note": "Review Question exercise fs-idp149139024: keyed A ('to decipher accurate phylogenies'), matches the section's framing of maximum parsimony as a tool for accurate phylogenies.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "be71af388cc5ebc7": {
    "verdict": "ok",
@@ -59796,6 +59727,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c0aaeb3f3c22184b": {
+   "verdict": "ok",
+   "note": "Review Question exercise fs-idp83844208: keyed C ('They are derived by similar environmental constraints.'), matches the section's own definition of analogy/homoplasy. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -62883,6 +62822,14 @@
    "verdict": "ok",
    "note": "-3*pi/4 rad * 180/pi = -135 deg"
   },
+  "cade83f3c63eb0d2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cae67dabb03c35da": {
    "verdict": "ok",
    "solved": {
@@ -63483,6 +63430,14 @@
    "verdict": "ok",
    "note": "ln2+lnb+(1/2)ln(b+1)-(1/2)ln(b-1); numerically equal to key p1316 #33 form at b=3 to 1e-15"
   },
+  "cc7df0a347bc4edc": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cc7ebf37fa66d5f8": {
    "verdict": "ok",
    "note": "f(x)=4x^2-x^6+2x-6: highest power present is 6, so degree=6. Matches CNXML ti_03_03_03."
@@ -63598,6 +63553,10 @@
     "result": "adjudicated",
     "note": "key stands: the m66552 summary says 'descended from an archaean ancestor'; 'archaeal|archean' already in accept"
    }
+  },
+  "cce48d583cdaae78": {
+   "verdict": "ok",
+   "note": "selfcheck model answer is the source solution for fs-idm75528944 (Critical Thinking Q1) verbatim; checkpoints are its three clauses restated with no new claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "cceb2f4506d77ed1": {
    "verdict": "ok"
@@ -64419,6 +64378,14 @@
   "cfc1d951d7d08839": {
    "verdict": "ok",
    "note": "CT fs-id2762232, model answer = CNXML solution fs-id2395472 verbatim, CHECKS decompose its own sentences. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged"
+  },
+  "cfc3c3ca24783136": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "cfd1def13a227313": {
    "verdict": "ok",
@@ -65717,6 +65684,10 @@
   "d4c8211bba849dd7": {
    "verdict": "ok"
   },
+  "d4ce2e096884767d": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-idp29739984 ('Describe maximum parsimony.'): source solution reproduced near-verbatim as the model answer. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "d4ceb8060e182548": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -66584,6 +66555,10 @@
     "result": "agrees"
    }
   },
+  "d799cd47ef0e6050": {
+   "verdict": "ok",
+   "note": "selfcheck model answer is the source solution for fs-idm35642672 (Critical Thinking Q2) verbatim; checkpoints are its clauses restated with no new claim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "d7a7a80a8e7842df": {
    "verdict": "ok",
    "note": "Glossary textin for GTP (fs-id2009484); prompt is the glossary meaning, answer/accept match the term as printed. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -66754,10 +66729,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "d819a0f1359454a7": {
-   "verdict": "ok",
-   "note": "Critical Thinking exercise fs-idp177675648 (why distinguish homology/analogy before building trees): source solution reproduced near-verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
   "d81f4e418d8d773e": {
    "verdict": "ok",
@@ -68403,6 +68374,14 @@
     "result": "agrees"
    }
   },
+  "ddc5dfe389d3e1a1": {
+   "verdict": "ok",
+   "note": "Locally written from section.summary sentence 'Historically, scientists organized organisms into a taxonomic classification system.' Distractors (phylogenetic tree, systematics, binomial nomenclature) are all module terms; disclosed in footer. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ddc75f49a9e4224e": {
    "verdict": "ok",
    "solved": {
@@ -69300,14 +69279,6 @@
     "result": "agrees"
    }
   },
-  "e1054f53ca65fe2d": {
-   "verdict": "ok",
-   "note": "parent re-verdict after accept gained 'homoplasies' and the stem's article was dropped so the accepted synonym is also grammatical; answer unchanged, re-read against m66531 glossary",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "e105b2257e66cb6e": {
    "verdict": "ok",
    "note": "Author-written select-the-term MC, summary-sourced from the module's own sentence 'Net primary productivity is a measure of the amount of biomass produced by a biome.' Distractors (above-ground biomass, thermocline, biosphere) are the module's own terms; none is also correct by the module's text. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -69696,6 +69667,14 @@
   },
   "e2271b03d62ce958": {
    "verdict": "ok"
+  },
+  "e227bae3d27dfe46": {
+   "verdict": "ok",
+   "note": "m66530 exercise fs-idp177641920: source options in source order, solution D = 'Subspecies are the most specific category of classification.' Matches section text (species then subspecies is the most specific). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e23389db685cbd75": {
    "verdict": "ok"
@@ -71346,6 +71325,14 @@
   },
   "e7aa41d039c308a9": {
    "verdict": "ok"
+  },
+  "e7b185ada003fb29": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idm53349056 (binomial nomenclature): meaning used as prompt, term as answer. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e7b97a8220ade242": {
    "verdict": "ok"
@@ -73076,6 +73063,10 @@
     "result": "agrees"
    }
   },
+  "eda58571afca59ba": {
+   "verdict": "ok",
+   "note": "m66530 exercise fs-idp34994416 (Critical Thinking): source solution transcribed verbatim as model answer; checkpoints are verbatim clauses of it. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "eda58690ee93aa8a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -73261,6 +73252,10 @@
   },
   "ee2a7e0161e829b9": {
    "verdict": "ok"
+  },
+  "ee31ac55366c5fd1": {
+   "verdict": "ok",
+   "note": "m66530 exercise fs-idp32012832 (Visual Connection): source solution transcribed near-verbatim as the selfcheck model answer; checkpoints decompose it into 5 clauses, each a verbatim substring of the model. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "ee3240911dd207c1": {
    "verdict": "ok"
@@ -73585,6 +73580,14 @@
   "eef5a0ec741dd1fb": {
    "verdict": "ok",
    "note": "Repaired 2026-08-15. From (2,-2) with slope 4/3, rise 4 and run 3 land on (2+3,-2+4)=(5,2). The declared (6,2) gives slope 4/4=1 and contradicted the exercise's own hint."
+  },
+  "eefdad54e7f46f2d": {
+   "verdict": "ok",
+   "note": "parent re-verdict after accept gained the module's own compound form 'genomic fusion' and the plural; answer unchanged, re-read against m66532 glossary and prose; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ef033f25020bb596": {
    "verdict": "ok",
@@ -75589,6 +75592,14 @@
     "result": "agrees"
    }
   },
+  "f61071fd66609a84": {
+   "verdict": "ok",
+   "note": "MC transcribes fs-idm62610816 (Review Q2) verbatim; source <solution> keys option D \"gene transfer agents\", matching fs-idp26893472 (GTAs described as marine-prokaryote gene-transfer particles). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f6133552f575b5a8": {
    "verdict": "ok",
    "solved": {
@@ -76068,14 +76079,6 @@
   "f7979c3d8d253fa2": {
    "verdict": "ok"
   },
-  "f79d3fc5c9e4c5e3": {
-   "verdict": "ok",
-   "note": "m66530 glossary definition fs-idm25913024 (taxon): meaning used as prompt; accept='taxa' per the glossary's own '(plural: taxa)' note.; plural-fold audit 2026-09-06: auditor flagged that the fold accepts \"taxons\" beside the already-listed \"taxa\"; adjudicated not a defect — the item accepted the plural before the fold, and a learner typing it knows the term",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "f79e11cccdea7a75": {
    "verdict": "ok"
   },
@@ -76280,10 +76283,6 @@
   "f83eb4632d58d148": {
    "verdict": "ok",
    "note": "Critical Thinking Question eip-464; question's 'this effect the carbon cycle' corrected to 'affect' (source grammar typo, logged as errata); model answer = source solution verbatim."
-  },
-  "f83f85e3b33c7915": {
-   "verdict": "ok",
-   "note": "m66530 exercise fs-idp32012832 (Visual Connection): source solution transcribed near-verbatim as the selfcheck model answer; checkpoints decompose it into 5 clauses, each a verbatim substring of the model."
   },
   "f843df67bf1e5544": {
    "verdict": "ok",

@@ -584,6 +584,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     reason: 'the source distractor "Vertebrates" is true by the module\'s own "Craniata/Vertebrata" clade that "includes the primitively jawless Myxini (hagfishes)" and its Summary\'s "Craniata… is considered to be synonymous with Vertebrata", so the hagfish item was double-keyed; the page replaces that option with "Gnathostomes" (key unchanged)',
   },
   {
+    page: 'content/life-health-sciences/biology/20-phylogenies-and-the-history-of-life/01-organizing-life-on-earth.md',
+    exercise: 'fs-idp28640208',
+    kind: 'options',
+    erratum: 987,
+    reason: 'the source distractor "DNA" is true by the module\'s own sentence that researchers "may use data from fossils, from studying the body part structures, or molecules that an organism uses, and DNA analysis" to construct a phylogeny, so the item was double-keyed; the page replaces that option with "scientific names" (key "evolutionary history" unchanged)',
+  },
+  {
     page: 'content/life-health-sciences/biology/45-population-and-community-ecology/04-population-dynamics-and-regulation.md',
     exercise: 'eip-720',
     kind: 'key',
