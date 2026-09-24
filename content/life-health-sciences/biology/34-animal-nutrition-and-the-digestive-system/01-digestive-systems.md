@@ -125,7 +125,7 @@ The human stomach has an extremely acidic environment where most of the protein 
 {{< multiplechoice
   question="Which of the following statements about the digestive system is false?"
   answer="Food enters the large intestine before the small intestine."
-  hint="Follow the tract in the figure above from the stomach onward — which two organs come right after each other, and in what order?"
+  hint="Check each statement against the figure above and the Stomach and Small Intestine subsections."
 >}}
 Chyme is a mixture of food and digestive juices that is produced in the stomach.
 Food enters the large intestine before the small intestine.
@@ -229,6 +229,12 @@ Many organs work together to digest food and absorb nutrients. The mouth is the 
 
 ### Explain the processes of digestion and absorption
 
+{{< textin
+  question="The mixture of partially digested food and stomach juices is called ________."
+  answer="chyme"
+  hint="Look at the first paragraph after the stomach figure in the Stomach subsection."
+>}}
+
 {{< multiplechoice
   question="The acidic nature of chyme is neutralized by ________."
   answer="bicarbonates"
@@ -240,7 +246,7 @@ bicarbonates
 vinegar
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain how the villi and microvilli aid in absorption." hint="Think about what happens to the small intestine's absorptive surface when it is folded into many small projections rather than left smooth." >}}
+{{< selfcheck question="Explain how the villi and microvilli aid in absorption." hint="Look at the Small Intestine subsection and the figure that follows its first paragraph." >}}
 The villi and microvilli are folds on the surface of the small intestine. These folds increase the surface area of the intestine and provide more area for the absorption of nutrients.
 ===CHECKS===
 folds on the surface of the small intestine
@@ -248,13 +254,13 @@ increase the surface area of the intestine
 provide more area for the absorption of nutrients
 {{< /selfcheck >}}
 
-{{< textin
-  question="The mixture of partially digested food and stomach juices is called ________."
-  answer="chyme"
-  hint="Look at the Stomach subsection, at what the stomach's contents become before they pass to the small intestine."
->}}
-
 ### Compare and contrast different types of digestive systems
+
+{{< textin
+  question="An animal with a stomach divided into four compartments is called a ________."
+  answer="ruminant"
+  hint="Look at the Vertebrate Digestive Systems subsection that follows Avian and the goat figure in it."
+>}}
 
 {{< multiplechoice
   question="Which of the following is a pseudo-ruminant?"
@@ -270,11 +276,11 @@ camel
 {{< multiplechoice
   question="Which of the following statements is untrue?"
   answer="Birds eat large quantities at one time so that they can fly long distances."
-  hint="Reread the Avian subsection, then check each statement against the Ruminants and Pseudo-ruminants subsections."
+  hint="Check each statement against the subsections of Vertebrate Digestive Systems and the Evolution Connection box."
 >}}
 Roughage takes a long time to digest.
 Birds eat large quantities at one time so that they can fly long distances.
-Cows do not have upper teeth.
+Cows do not have upper incisor teeth.
 In pseudo-ruminants, roughage is digested in the cecum.
 {{< /multiplechoice >}}
 
@@ -289,13 +295,7 @@ earthworm
 eagle
 {{< /multiplechoice >}}
 
-{{< textin
-  question="An animal with a stomach divided into four compartments is called a ________."
-  answer="ruminant"
-  hint="Cows, sheep, and goats are the section's examples of this animal type, whose entire diet is roughage."
->}}
-
-{{< selfcheck question="How does the polygastric digestive system aid in digesting roughage?" hint="Think about how many stomach chambers are involved, what each one does, and what lives inside them." >}}
+{{< selfcheck question="How does the polygastric digestive system aid in digesting roughage?" hint="Look at the Vertebrate Digestive Systems subsection that follows Avian and the goat figure in it." >}}
 Animals with a polygastric digestive system have a multi-chambered stomach. The four compartments of the stomach are called the rumen, reticulum, omasum, and abomasum. These chambers contain many microbes that break down the cellulose and ferment the ingested food. The abomasum is the "true" stomach and is the equivalent of a monogastric stomach chamber where gastric juices are secreted. The four-compartment gastric chamber provides larger space and the microbial support necessary for ruminants to digest plant material.
 ===CHECKS===
 a multi-chambered stomach with four compartments — the rumen, reticulum, omasum, and abomasum
@@ -309,7 +309,7 @@ the four-compartment chamber provides larger space and microbial support for dig
 {{< multiplechoice
   question="The digestive juices from the liver are delivered to the ________."
   answer="duodenum"
-  hint="Look at the Small Intestine subsection, where the juices of the accessory organs enter the digestive tract."
+  hint="Look at the Small Intestine subsection, at the paragraph that divides it into three parts."
 >}}
 stomach
 liver
@@ -321,10 +321,10 @@ colon
   question="The organ that stores and concentrates bile is called the ________."
   answer="gallbladder"
   accept="gall bladder"
-  hint="Look at the Accessory Organs subsection, at where bile is kept after the liver produces it."
+  hint="Look at the last paragraph of the Accessory Organs subsection."
 >}}
 
-{{< selfcheck question="What is the role of the accessory organs in digestion?" hint="Consider which organs add secretions to the digestive tract without food actually passing through them." >}}
+{{< selfcheck question="What is the role of the accessory organs in digestion?" hint="Look at the Accessory Organs subsection." >}}
 Accessory organs play an important role in producing and delivering digestive juices to the intestine during digestion and absorption. Specifically, the salivary glands, liver, pancreas, and gallbladder play important roles. Malfunction of any of these organs can lead to disease states.
 ===CHECKS===
 producing and delivering digestive juices to the intestine during digestion and absorption
@@ -334,7 +334,7 @@ malfunction of any of these organs can lead to disease states
 
 ### Describe the ways in which organs work together to digest food and absorb nutrients
 
-{{< selfcheck question="How do birds digest their food in the absence of teeth?" hint="Consider the bird stomach's second chamber and what it physically does to food, sometimes with help from swallowed stones." >}}
+{{< selfcheck question="How do birds digest their food in the absence of teeth?" hint="Look at the Avian subsection and the bird digestive-tract figure in it." >}}
 Birds have a stomach chamber called a gizzard. Here, the food is stored, soaked, and ground into finer particles, often using pebbles. Once this process is complete, the digestive juices take over in the proventriculus and continue the digestive process.
 ===CHECKS===
 a stomach chamber called the gizzard
@@ -342,7 +342,7 @@ food is stored, soaked, and ground into finer particles, often using pebbles
 digestive juices take over in the proventriculus and continue digestion
 {{< /selfcheck >}}
 
-{{< selfcheck question="Name two components of the digestive system that perform mechanical digestion. Describe how mechanical digestion contributes to acquiring nutrients from food." hint="Think of the two places in the body where food is physically broken into smaller pieces before enzymes act on it." >}}
+{{< selfcheck question="Name two components of the digestive system that perform mechanical digestion. Describe how mechanical digestion contributes to acquiring nutrients from food." hint="Look at the first three subsections of Parts of the Digestive System." >}}
 The stomach and the teeth both perform mechanical digestion, which is physically (as opposed to chemically) breaking the food into smaller components. This exposes a larger surface area for chemical digestion and release of nutrients. The teeth are vital to mastication, which breaks large bites of food down into smaller pieces that are easily swallowed. The stomach's muscle contractions churn the food to expose all particles to the acid and digestive enzymes.
 ===CHECKS===
 the stomach and the teeth both perform mechanical digestion
@@ -355,9 +355,9 @@ the stomach's muscle contractions churn food to expose it to acid and digestive 
   question="Saliva contains an enzyme called ________ that breaks down carbohydrates."
   answer="amylase"
   accept="salivary amylase"
-  hint="The section names this same carbohydrate-digesting enzyme earlier as part of what the salivary glands secrete to begin converting starches into maltose."
+  hint="Look at the second paragraph of the Oral Cavity subsection."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 34.1: Digestive Systems](https://openstax.org/books/biology-2e/pages/34-1-digestive-systems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own alt text; seven figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_34_01_04ab, Figure_34_01_05ab, Figure_34_01_06, Figure_34_01_07, Figure_34_01_08ab, Figure_34_01_09, and Figure_34_01_12 (drawn line illustrations, not captured photographs, despite Figure_34_01_09's own source alt beginning "Photo shows"), while Figure_B34_01_10 and Figure_34_01_11f already carried the manifest's correct "diagram" guess; a longdesc added to the nine labeled diagrams (Figure_34_01_04ab, Figure_34_01_05ab, Figure_34_01_06, Figure_34_01_07, Figure_34_01_08ab, Figure_34_01_09, Figure_B34_01_10, Figure_34_01_11f, Figure_34_01_12) whose leader-line labels, panels, or arrow tracks are not carried by their one- or two-line captions; the two Visual Connections (the stomach's digestive-system overview and the small intestine's villi cross-section) rendered as their figure followed by a multiple choice, kept in the body where the module prints them; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (chyme, ruminant, gallbladder) added from the glossary; one cloze recall item (amylase, accepting the section's own compound form "salivary amylase") added from the Section Summary to round out the "organs work together" objective. the Review Question "Which of the following is a pseudo-ruminant?" has its keyed option "horse" replaced by "camel" (the three distractors kept as printed), because the section names only camels and alpacas as pseudo-ruminants and defines them by a three-chambered stomach (omasum, abomasum, reticulum) with cecal fermentation, a description a single-stomached horse does not meet. One claim is softened with a visible Source note: the appendix has a minor, not "insignificant," role in immunity, since this book's immunology chapter names it an induction site. In the gastrovascular-cavity figure (Figure_34_01_04ab), the source alt's claim that the jellyfish medusa has "tentacles hanging down from the edge of the bell" is corrected to what is drawn, a dome-shaped medusa with no tentacles.</small>
+<small>This section is adapted from [Biology 2e, Section 34.1: Digestive Systems](https://openstax.org/books/biology-2e/pages/34-1-digestive-systems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own alt text; seven figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_34_01_04ab, Figure_34_01_05ab, Figure_34_01_06, Figure_34_01_07, Figure_34_01_08ab, Figure_34_01_09, and Figure_34_01_12 (drawn line illustrations, not captured photographs, despite Figure_34_01_09's own source alt beginning "Photo shows"), while Figure_B34_01_10 and Figure_34_01_11f already carried the manifest's correct "diagram" guess; a longdesc added to the nine labeled diagrams (Figure_34_01_04ab, Figure_34_01_05ab, Figure_34_01_06, Figure_34_01_07, Figure_34_01_08ab, Figure_34_01_09, Figure_B34_01_10, Figure_34_01_11f, Figure_34_01_12) whose leader-line labels, panels, or arrow tracks are not carried by their one- or two-line captions; the two Visual Connections (the stomach's digestive-system overview and the small intestine's villi cross-section) rendered as their figure followed by a multiple choice, kept in the body where the module prints them; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (chyme, ruminant, gallbladder) added from the glossary; one cloze recall item (amylase, accepting the section's own compound form "salivary amylase") added from the Section Summary to round out the "organs work together" objective; the three recall items are placed first in their groups. The Review Questions and Critical Thinking Questions are placed under the objectives they test, which changes their source order: the chyme-neutralizing Review Question, third in the source, comes first, and the villi Critical Thinking Question, fourth in the source, comes first. The Review Question "Which of the following is a pseudo-ruminant?" has its keyed option "horse" replaced by "camel" (the three distractors kept as printed), because the section names only camels and alpacas as pseudo-ruminants and defines them by a three-chambered stomach (omasum, abomasum, reticulum) with cecal fermentation, a description a single-stomached horse does not meet. One claim is softened with a visible Source note: the appendix has a minor, not "insignificant," role in immunity, since this book's immunology chapter names it an induction site. In the gastrovascular-cavity figure (Figure_34_01_04ab), the source alt's claim that the jellyfish medusa has "tentacles hanging down from the edge of the bell" is corrected to what is drawn, a dome-shaped medusa with no tentacles. The Review Question "Which of the following statements is untrue?" prints its option "Cows do not have upper teeth" as "Cows do not have upper incisor teeth," the section's own wording, because as printed that option is also untrue (cows have upper molars) and the item had two keys; key unchanged.</small>

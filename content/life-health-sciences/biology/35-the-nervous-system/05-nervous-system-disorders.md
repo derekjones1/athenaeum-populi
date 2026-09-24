@@ -136,10 +136,42 @@ Some general themes emerge from the sampling of nervous system disorders present
 
 ### Describe the symptoms, potential causes, and treatment of several examples of nervous system disorders
 
+{{< textin
+  question="A neurological disorder characterized by recurrent seizures is called ________."
+  answer="epilepsy"
+  hint="See the first subsection under Other Neurological Disorders."
+>}}
+
+{{< textin
+  question="The mental disorder characterized by an inability to accurately perceive reality, in which patients often have difficulty thinking clearly and can suffer from delusions, is called ________."
+  answer="schizophrenia"
+  hint="See the first subsection under Mental Illnesses."
+>}}
+
+{{< textin
+  question="The neurodevelopmental disorder characterized by impaired social interaction and communication abilities is called ________."
+  answer="autism spectrum disorder"
+  accept="ASD|autism"
+  hint="See the first subsection under Neurodevelopmental Disorders."
+>}}
+
+{{< textin
+  question="The abnormal clumps that Alois Alzheimer and his colleagues reported in the brain of a woman with severe dementia are now called ________."
+  answer="amyloid plaques"
+  accept="plaques"
+  hint="See the third paragraph of the Alzheimer's Disease subsection."
+>}}
+
+{{< textin
+  question="Because the causes of most nervous system disorders have yet to be fully determined, treatment options are often lacking and only address ________."
+  answer="symptoms"
+  hint="See the last sentence of the Summary."
+>}}
+
 {{< multiplechoice
   question="Parkinson's disease is caused by the degeneration of neurons that release ________."
   answer="dopamine"
-  hint="This disease also destroys neurons in the substantia nigra, and one common drug treatment is converted into this same neurotransmitter by neurons in the brain."
+  hint="See the first paragraph of the Parkinson's Disease subsection."
 >}}
 serotonin
 dopamine
@@ -161,7 +193,7 @@ Anti-seizure
 {{< multiplechoice
   question="Strokes are often caused by ________."
   answer="blood clots or burst blood vessels"
-  hint="Think about what could interrupt the oxygen supplied to the brain by blood flow."
+  hint="See the Stroke subsection, just after its list of symptoms."
 >}}
 neurodegeneration
 blood clots or burst blood vessels
@@ -172,7 +204,7 @@ viruses
 {{< multiplechoice
   question="Why is it difficult to identify the cause of many nervous system disorders?"
   answer="all of the above"
-  hint="Consider whether more than one of the other three options holds true for at least some of the disorders described in this section."
+  hint="Compare the paragraphs on causes across the disorders this section describes, and the Summary."
 >}}
 The genes associated with the diseases are not known.
 There are no obvious defects in brain structure.
@@ -191,7 +223,7 @@ Behavioral therapies only improve neurodevelopmental disorders.
 Dysfunction in the brain can affect many aspects of the body.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the main symptoms of Alzheimer's disease?" hint="Think about what a family member might first notice — changes in day-to-day memory and thinking rather than a physical symptom." >}}
+{{< selfcheck question="What are the main symptoms of Alzheimer's disease?" hint="See the second paragraph of the Alzheimer's Disease subsection." >}}
 Symptoms of Alzheimer's disease include disruptive memory loss, confusion about time or place, difficulties planning or executing tasks, poor judgment, and personality changes.
 ===CHECKS===
 disruptive memory loss
@@ -201,7 +233,7 @@ poor judgment
 personality changes
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are possible treatments for patients with major depression?" hint="Think of one class of drugs that blocks an enzyme that degrades neurotransmitters, and another that blocks a neurotransmitter's reuptake." >}}
+{{< selfcheck question="What are possible treatments for patients with major depression?" hint="See the last part of the Depression subsection." >}}
 Possible treatments for patients with major depression include psychotherapy and prescription medications. MAO inhibitor drugs inhibit the breakdown of certain neurotransmitters (including dopamine, serotonin, norepinephrine) in the synaptic cleft. SSRI medications inhibit the reuptake of serotonin into the presynaptic neuron.
 ===CHECKS===
 psychotherapy and prescription medications
@@ -209,39 +241,6 @@ MAO inhibitor drugs inhibit the breakdown of certain neurotransmitters in the sy
 SSRI medications inhibit the reuptake of serotonin into the presynaptic neuron
 {{< /selfcheck >}}
 
-{{< textin
-  question="A neurological disorder characterized by recurrent seizures is called ________."
-  answer="epilepsy"
-  hint="Up to three percent of people in the United States will be diagnosed with this disorder in their lifetime, and very severe cases may be treated with brain surgery."
->}}
-
-{{< textin
-  question="The mental disorder characterized by an inability to accurately perceive reality, in which patients often have difficulty thinking clearly and can suffer from delusions, is called ________."
-  answer="schizophrenia"
-  hint="This disorder is thought to involve malfunctioning dopaminergic neurons, and its antipsychotic treatments work by blocking dopamine receptors."
->}}
-
-{{< textin
-  question="The mental illness characterized by prolonged periods of sadness is called ________."
-  answer="major depression"
-  accept="depression|major depressive disorder|clinical depression"
-  hint="This illness affects roughly 6.7 percent of American adults each year and is treated with SSRIs, among other medications."
->}}
-
-{{< textin
-  question="The neurodevelopmental disorder characterized by impaired social interaction and communication abilities is called ________."
-  answer="autism spectrum disorder"
-  accept="ASD|autism"
-  hint="This disorder is four times more prevalent in males than females, and up to 30 percent of patients with it also develop a seizure disorder."
->}}
-
-{{< textin
-  question="The neurodegenerative disorder characterized by problems with memory and thinking is called ________."
-  answer="Alzheimer's disease"
-  accept="Alzheimer's|Alzheimer disease"
-  hint="This disease is marked by amyloid plaques and neurofibrillary tangles; see the first disorder the Neurodegenerative Disorders discussion describes."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 35.5: Nervous System Disorders](https://openstax.org/books/biology-2e/pages/35-5-nervous-system-disorders) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (a labeled anatomical illustration, a hand-drawn illustration of a posture, and a data bar chart — none of them photographs); a longdesc added to the Alzheimer's-brain comparison (Figure_35_05_01) and the ADHD comorbidity bar chart (Figure_35_05_03), walking each figure's labels or bars in reading order, since neither figure's content is carried by its one-line caption; three Link to Learning notes rendered as callouts with descriptive link text in place of the source's bare "this website"/"this video" anchors, external URLs kept as printed; the Career Connection note rendered as a callout with its bold name and italic title; in-text pointers to the section's own figures ("Figure 35.30," "Figure 35.31," "Figure 35.32") replaced with "the figure below," since Hugo does not number figures; the Review Question "Parkinson's disease is a caused by the degeneration of neurons that release ________" corrected to "Parkinson's disease is caused by the degeneration of neurons that release ________," fixing a grammatical typo in the source's problem stem; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (epilepsy, schizophrenia, major depression, autism spectrum disorder, Alzheimer's disease) added from the glossary, out of the section's eight glossary terms.</small>
+<small>This section is adapted from [Biology 2e, Section 35.5: Nervous System Disorders](https://openstax.org/books/biology-2e/pages/35-5-nervous-system-disorders) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (a labeled anatomical illustration, a hand-drawn illustration of a posture, and a data bar chart — none of them photographs); a longdesc added to the Alzheimer's-brain comparison (Figure_35_05_01) and the ADHD comorbidity bar chart (Figure_35_05_03), walking each figure's labels or bars in reading order, since neither figure's content is carried by its one-line caption; three Link to Learning notes rendered as callouts with descriptive link text in place of the source's bare "this website"/"this video" anchors, external URLs kept as printed; the Career Connection note rendered as a callout with its bold name and italic title; in-text pointers to the section's own figures ("Figure 35.30," "Figure 35.31," "Figure 35.32") replaced with "the figure below," since Hugo does not number figures; the Review Question "Parkinson's disease is a caused by the degeneration of neurons that release ________" corrected to "Parkinson's disease is caused by the degeneration of neurons that release ________," fixing a grammatical typo in the source's problem stem; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (epilepsy, schizophrenia, autism spectrum disorder) added from the glossary, out of the section's eight glossary terms; one recall item written locally from the Alzheimer's Disease subsection's own sentence on the "abnormal clumps, which are now called amyloid plaques"; one summary-derived textin cloze added (blanking "symptoms" from the summary's closing sentence); the five recall items placed ahead of the source Review Questions.</small>

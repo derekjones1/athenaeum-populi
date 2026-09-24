@@ -660,6 +660,34 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 995,
     reason: 'source keys "cephalochordates" as the invertebrates most closely related to vertebrates, but the module\'s own phylogeny draws Urochordata as the sister of Vertebrata, its Summary calls the question debated, and phylogenomic analyses place the urochordates (tunicates) there; the page keys "urochordates", with a source note on the body sentence claiming molecular support for cephalochordates',
   },
+  {
+    page: 'content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/01-digestive-systems.md',
+    exercise: 'fs-idp82804064',
+    kind: 'options',
+    erratum: 1005,
+    reason: 'in an "untrue" question, the source option "Cows do not have upper teeth" is also untrue (the module says ruminants lack upper incisor teeth), so the item had two keys; the page prints "Cows do not have upper incisor teeth" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/02-nutrition-and-energy-production.md',
+    exercise: 'fs-idm12790176',
+    kind: 'options',
+    erratum: 1006,
+    reason: 'the source option "fat" is also true by the module ("stored as glycogen in the liver and muscle cells, and in fat cells"); the page prints "cellulose" in its place (key "glycogen" unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/35-the-nervous-system/01-neurons-and-glial-cells.md',
+    exercise: 'eip-837',
+    kind: 'options',
+    erratum: 1007,
+    reason: 'the source option "microglia" is as defensible as the keyed astrocytes (the module says microglia "protect the brain from invading microorganisms"); the page prints "oligodendrocytes" in its place (key "astrocytes" unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/01-animal-form-and-function.md',
+    exercise: 'fs-idm126918432',
+    kind: 'key',
+    erratum: 1008,
+    reason: 'source keys "transverse" for the plane dividing dorsal from ventral, but the module\'s own body-planes figure labels the goat\'s back-from-belly plane "Frontal plane" and the module names the frontal plane "coronal"; the page keys "coronal"',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

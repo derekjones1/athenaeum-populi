@@ -153,7 +153,7 @@ The vertebrate central nervous system contains the brain and the spinal cord, wh
 {{< multiplechoice
   question="The ________ lobe contains the visual cortex."
   answer="occipital"
-  hint="This lobe sits at the very back of the brain, farthest from the eyes themselves but where what they see is ultimately recognized."
+  hint="See the four-lobes diagram and the short paragraphs on each lobe that follow it."
 >}}
 frontal
 parietal
@@ -176,36 +176,55 @@ pituitary
   question="A membrane that covers and protects the central nervous system is called a ________."
   answer="meninge"
   accept="meninx"
-  hint="There are three of these layers around the brain and spinal cord, named for how hard, web-like, or soft each one is."
+  hint="See the paragraph that opens the section, before the first figure."
 >}}
 
 {{< textin
-  question="The tough outermost layer of the meninges is called the ________."
+  question="The tough outermost layer that covers the brain and spinal cord is called the ________."
   answer="dura mater"
   accept="dura"
-  hint="This layer also carries vein-like structures that return blood from the brain to the heart; see the meninges paragraph that opens the section."
+  hint="See the paragraph that opens the section."
 >}}
 
 {{< textin
-  question="The web-like middle layer of the meninges is called the ________."
+  question="The web-like middle one of the three protective layers covering the brain and spinal cord is called the ________."
   answer="arachnoid mater"
   accept="arachnoid"
-  hint="See the meninges paragraph that opens the section, between the outermost and innermost layers."
+  hint="See the paragraph that opens the section."
 >}}
 
 {{< textin
-  question="The thin meningeal layer that directly contacts and covers the brain and spinal cord, like plastic wrap, is called the ________."
+  question="The thin layer that directly contacts and covers the brain and spinal cord, like plastic wrap, is called the ________."
   answer="pia mater"
   accept="pia"
-  hint="See the meninges paragraph that opens the section; this layer is named just before cerebrospinal fluid is introduced."
+  hint="See the paragraph that opens the section, just before cerebrospinal fluid is introduced."
 >}}
 
 ### Describe the basic functions of the spinal cord, cerebral lobes, and other brain areas
 
+{{< textin
+  question="Interconnected brain areas involved in movement control, posture, and motivation are called the ________."
+  answer="basal ganglia"
+  accept="basal nuclei"
+  hint="See the subsection right after the Evolution Connection box."
+>}}
+
+{{< textin
+  question="The brain area that acts as a gateway, relaying sensory and motor information to and from the cortex, is called the ________."
+  answer="thalamus"
+  hint="See the second subsection after the Evolution Connection box."
+>}}
+
+{{< textin
+  question="The connected set of brain structures that regulates emotion and behaviors related to fear and motivation is called the ________."
+  answer="limbic system"
+  hint="See the subsection between Hypothalamus and Cerebellum."
+>}}
+
 {{< multiplechoice
   question="Neurons in the ________ control motor reflexes."
   answer="spinal cord"
-  hint="This structure carries the local synaptic connections responsible for automatic movements, like pulling a hand off a hot object, without needing the brain."
+  hint="See the paragraph on reflexes near the end of the section."
 >}}
 thalamus
 spinal cord
@@ -216,7 +235,7 @@ hippocampus
 {{< multiplechoice
   question="Phineas Gage was a 19th century railroad worker who survived an accident that drove a large iron rod through his head. If the injury resulted in him becoming temperamental and capricious what part of his brain was damaged?"
   answer="frontal lobe"
-  hint="Studies of patients with damage here tie this brain region to personality, socialization, and risk-assessment changes."
+  hint="See the paragraphs on each of the four cerebral lobes, after the lobes diagram."
 >}}
 frontal lobe
 hippocampus
@@ -233,7 +252,7 @@ they can disable or remove the area in an animal model
 fMRI can be used to correlate specific functions with increased blood flow to brain regions
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are the main functions of the spinal cord?" hint="Think about what travels along the spinal cord in each direction, and the one quick, local response it manages on its own." >}}
+{{< selfcheck question="What are the main functions of the spinal cord?" hint="See the first two paragraphs of the section's last main part, and the summary." >}}
 The spinal cord transmits sensory information from the body to the brain and motor commands from the brain to the body through its connections with peripheral nerves. It also controls motor reflexes.
 ===CHECKS===
 the spinal cord transmits sensory information from the body to the brain
@@ -241,31 +260,12 @@ and motor commands from the brain to the body through its connections with perip
 it also controls motor reflexes
 {{< /selfcheck >}}
 
-{{< selfcheck question="Alzheimer's disease involves three of the four lobes of the brain. Identify one of the involved lobes and describe the lobe's symptoms associated with the disease." hint="Alzheimer's disease affects three of the four cerebral lobes described earlier in this section — think about what change in ability follows from damage to each one." >}}
+{{< selfcheck question="Alzheimer's disease involves three of the four lobes of the brain. Identify one of the involved lobes and describe the lobe's symptoms associated with the disease." hint="See the paragraphs on each of the four cerebral lobes, after the lobes diagram." >}}
 A correct answer identifies one of the three lobes involved in Alzheimer's disease and describes that lobe's symptoms. If the frontal lobe is affected, Alzheimer's patients experience changes in personality, judgment, and behavior. If the parietal lobe is affected, Alzheimer's patients experience difficulties with recalling and using language as the disease progresses. If the temporal lobe is affected, the hippocampus—one of the main areas of the brain affected in Alzheimer's disease—is involved, and patients lose the ability to make new memories and access memories.
 ===CHECKS===
 identifies one of the three lobes involved in Alzheimer's disease
 describes that lobe's symptoms
 {{< /selfcheck >}}
-
-{{< textin
-  question="Interconnected brain areas involved in movement control, posture, and motivation are called the ________."
-  answer="basal ganglia"
-  accept="basal nuclei"
-  hint="Damage to these areas, as in Parkinson's disease, causes a shuffling gait when walking."
->}}
-
-{{< textin
-  question="The brain area that acts as a gateway, relaying sensory and motor information to and from the cortex, is called the ________."
-  answer="thalamus"
-  hint="A rare genetic disorder that degenerates its neurons causes fatal familial insomnia."
->}}
-
-{{< textin
-  question="The connected set of brain structures that regulates emotion and behaviors related to fear and motivation is called the ________."
-  answer="limbic system"
-  hint="It includes parts of the thalamus and hypothalamus as well as the hippocampus."
->}}
 
 ---
 

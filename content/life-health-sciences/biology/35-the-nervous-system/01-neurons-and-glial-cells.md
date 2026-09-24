@@ -135,10 +135,23 @@ The nervous system is made up of neurons and glia. Neurons are specialized cells
 
 ### List and describe the functions of the structural components of a neuron
 
+{{< textin
+  question="The gaps in the myelin sheath where the signal is recharged as it travels along the axon are called ________."
+  answer="nodes of Ranvier"
+  accept="node of Ranvier"
+  hint="See the second paragraph of Parts of a Neuron, near its end."
+>}}
+
+{{< textin
+  question="The junction between two neurons where neuronal signals are communicated is called a ________."
+  answer="synapse"
+  hint="See the first paragraph of Parts of a Neuron."
+>}}
+
 {{< multiplechoice
   question="Neurons contain ________, which can receive signals from other neurons."
   answer="dendrites"
-  hint="Reread the Parts of a Neuron paragraph that follows the list of organelles every cell body holds."
+  hint="See the first paragraph of Parts of a Neuron, after its list of cell-body organelles."
 >}}
 axons
 mitochondria
@@ -146,7 +159,7 @@ dendrites
 Golgi bodies
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How are neurons similar to other cells? How are they unique?" hint="Think about what every cell has in common, then what a neuron adds for communicating with other cells." >}}
+{{< selfcheck question="How are neurons similar to other cells? How are they unique?" hint="See the first paragraph of Parts of a Neuron and the caption of the labeled neuron figure." >}}
 Neurons contain organelles common to all cells, such as a nucleus and mitochondria. They are unique because they contain dendrites, which can receive signals from other neurons, and axons that can send these signals to other cells.
 ===CHECKS===
 neurons contain organelles common to all cells, such as a nucleus and mitochondria
@@ -154,7 +167,7 @@ they are unique because they contain dendrites, which can receive signals from o
 axons that can send these signals to other cells
 {{< /selfcheck >}}
 
-{{< selfcheck question="Multiple sclerosis causes demyelination of axons in the brain and spinal cord. Why is this problematic?" hint="Consider what the fatty covering normally does for the electrical signal as it travels down the axon." >}}
+{{< selfcheck question="Multiple sclerosis causes demyelination of axons in the brain and spinal cord. Why is this problematic?" hint="See the second paragraph of Parts of a Neuron." >}}
 Myelin provides insulation for signals traveling along axons. Without myelin, signal transmission can slow down and degrade over time. This would slow down neuronal communication across the nervous system and affect all downstream functions.
 ===CHECKS===
 myelin provides insulation for signals traveling along axons
@@ -162,7 +175,7 @@ without myelin, signal transmission can slow down and degrade over time
 this would slow down neuronal communication and affect all downstream functions
 {{< /selfcheck >}}
 
-{{< selfcheck question="Many neurons have only a single axon, but many terminals at the end of the axon. How does this end structure of the axon support its function?" hint="Think about what happens once the one signal traveling down the axon reaches its many branching endings." >}}
+{{< selfcheck question="Many neurons have only a single axon, but many terminals at the end of the axon. How does this end structure of the axon support its function?" hint="See the second paragraph of Parts of a Neuron, where the axon's endings are introduced." >}}
 A single axon means that a neuron can only send one signal at a time (one electrical impulse down the length of the axon). However, since the axon has multiple terminals it can send the signal to several other cells at once. This ensures that the signal is rapidly propagated to the rest of the body.
 ===CHECKS===
 a single axon means a neuron can only send one signal at a time
@@ -170,31 +183,19 @@ since the axon has multiple terminals it can send the signal to several other ce
 this ensures the signal is rapidly propagated to the rest of the body
 {{< /selfcheck >}}
 
-{{< textin
-  question="The fatty substance produced by glia that insulates axons is called ________."
-  answer="myelin"
-  accept="myelin sheath"
-  hint="This substance forms the segmented sheath that speeds up signal conduction, produced by cells other than the neuron itself."
->}}
-
-{{< textin
-  question="The junction between two neurons where neuronal signals are communicated is called a ________."
-  answer="synapse"
-  hint="Neurotransmitters cross this narrow gap between an axon terminal and the next cell's receiving surface."
->}}
-
 ### List and describe the four main types of neurons
 
 {{< textin
   question="There are four main types of neurons: unipolar, bipolar, multipolar, and ________ neurons."
   answer="pseudounipolar"
-  hint="This type's single process branches into two extensions a short distance from the soma, one carrying sensory information in and the other passing it on toward the spinal cord."
+  accept="pseudo-unipolar"
+  hint="See the Types of Neurons paragraph that names the four basic types."
 >}}
 
 {{< multiplechoice
   question="A(n) ________ neuron has one axon and one dendrite extending directly from the cell body."
   answer="bipolar"
-  hint="This type is exemplified by a retinal cell that relays a single signal from a photoreceptor toward ganglion cells."
+  hint="See the Types of Neurons paragraph, where it takes the four types one at a time."
 >}}
 unipolar
 bipolar
@@ -203,9 +204,9 @@ pseudounipolar
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which type of neuron has one axon and multiple dendrites, and is the most common neuron type found in the central nervous system?"
+  question="Which type of neuron contains one axon and multiple dendrites?"
   answer="multipolar"
-  hint="A Purkinje cell in the cerebellum is this type's textbook example — many branching dendrites, but only one axon."
+  hint="See the Types of Neurons paragraph, in its middle."
 >}}
 unipolar
 bipolar
@@ -215,33 +216,11 @@ pseudounipolar
 
 ### Compare the functions of different types of glial cells
 
-{{< multiplechoice
-  question="Glia that provide myelin for neurons in the brain are called ________."
-  answer="oligodendrocytes"
-  hint="This CNS glial cell can wrap myelin around several different axons at once — its PNS counterpart myelinates only one."
->}}
-Schwann cells
-oligodendrocytes
-microglia
-astrocytes
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Meningitis is a viral or bacterial infection of the brain. Which cell type is the first to have its function disrupted during meningitis?"
-  answer="astrocytes"
-  hint="This glial cell forms the blood-brain barrier that a bloodborne infection must cross first."
->}}
-astrocytes
-microglia
-neurons
-satellite glia
-{{< /multiplechoice >}}
-
 {{< textin
   question="The glia that serve as scaffolds for developing neurons as they migrate to their final destinations are called ________."
   answer="radial glia"
-  accept="radial glial cell"
-  hint="These cells provide a physical pathway that young neurons climb along on their way to where they will function permanently."
+  accept="radial glial cell|radial glia cell"
+  hint="See the Types of Glia paragraph, near its end."
 >}}
 
 {{< textin
@@ -255,9 +234,31 @@ satellite glia
   question="The glia that scavenge and degrade dead cells and protect the brain from invading microorganisms are called ________."
   answer="microglia"
   accept="microglial cell|microglial"
-  hint="See the Types of Glia paragraph, between the PNS support cells and the myelin-forming cells of the CNS."
+  hint="See the Types of Glia paragraph, in its middle."
 >}}
+
+{{< multiplechoice
+  question="Glia that provide myelin for neurons in the brain are called ________."
+  answer="oligodendrocytes"
+  hint="See the Types of Glia paragraph, in its sentences on myelin."
+>}}
+Schwann cells
+oligodendrocytes
+microglia
+astrocytes
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Meningitis is a viral or bacterial infection of the brain. Which cell type is the first to have its function disrupted during meningitis?"
+  answer="astrocytes"
+  hint="See the Types of Glia paragraph."
+>}}
+astrocytes
+oligodendrocytes
+neurons
+satellite glia
+{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 35.1: Neurons and Glial Cells](https://openstax.org/books/biology-2e/pages/35-1-neurons-and-glial-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_35_01_01 and Figure_35_01_06 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a hand-drawn six-panel comparative illustration and a two-panel labeled glial-cell schematic, neither a captured photograph); a longdesc added to the animal-nervous-systems figure (Figure_35_01_01), the labeled neuron diagram (Figure_35_01_02), and the labeled glial-cell diagram (Figure_35_01_06), walking each leader-line label in reading order, since none of their meanings are carried by their one-line captions; the two Link to Learning notes rendered as callouts with descriptive link text in place of the source's "Access multimedia content" and "This video" anchors, external URLs kept as printed; the Everyday Connection note rendered as a callout with its bold name and italic title, its figure and both paragraphs kept inside the box as printed; in-text pointers to figures ("Figure 35.2," "Figure 35.3," "Figure 35.4," "Figure 35.5," "Figure 35.6") replaced with "shown below" or "the figure below," since Hugo does not number figures; the note wrapping the neuron Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (myelin, synapse, satellite glia, microglia, radial glia) added from the glossary; one summary-derived textin cloze added to the second objective's group (blanking "pseudounipolar" from the closing summary's list of the four neuron types); and, because the source keys only one Review Question to the second objective, one multiple choice was written locally for that group, built strictly from the section's own sentence describing multipolar neurons ("Multipolar neurons are the most common type of neuron. Each multipolar neuron contains one axon and multiple dendrites... can be found in the central nervous system"), its distractors the module's own three other neuron-type names — both disclosed here and in the source ledger.</small>
+<small>This section is adapted from [Biology 2e, Section 35.1: Neurons and Glial Cells](https://openstax.org/books/biology-2e/pages/35-1-neurons-and-glial-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_35_01_01 and Figure_35_01_06 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a hand-drawn six-panel comparative illustration and a two-panel labeled glial-cell schematic, neither a captured photograph); a longdesc added to the animal-nervous-systems figure (Figure_35_01_01), the labeled neuron diagram (Figure_35_01_02), and the labeled glial-cell diagram (Figure_35_01_06), walking each leader-line label in reading order, since none of their meanings are carried by their one-line captions; the two Link to Learning notes rendered as callouts with descriptive link text in place of the source's "Access multimedia content" and "This video" anchors, external URLs kept as printed; the Everyday Connection note rendered as a callout with its bold name and italic title, its figure and both paragraphs kept inside the box as printed; in-text pointers to figures ("Figure 35.2," "Figure 35.3," "Figure 35.4," "Figure 35.5," "Figure 35.6") replaced with "shown below" or "the figure below," since Hugo does not number figures; the note wrapping the neuron Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (nodes of Ranvier, synapse, radial glia, satellite glia, microglia) added from the glossary, each placed ahead of its group's source items; one summary-derived textin cloze added to the second objective's group (blanking "pseudounipolar" from the closing summary's list of the four neuron types); and, because the source keys only one Review Question to the second objective, one multiple choice was written locally for that group, built strictly from the section's own sentence describing multipolar neurons ("Each multipolar neuron contains one axon and multiple dendrites"), its distractors the module's own three other neuron-type names. The meningitis Review Question has its option "microglia" replaced by "oligodendrocytes," because the section says microglia "protect the brain from invading microorganisms," which made them as defensible as the keyed astrocytes (which form the blood-brain barrier); the stem is kept as printed; key unchanged.</small>

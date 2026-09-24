@@ -40,7 +40,7 @@ The most important source of BNF is the symbiotic interaction between soil bacte
 Some common edible legumes—like (a) peanuts, (b) beans, and (c) chickpeas—are able to interact symbiotically with soil bacteria that fix nitrogen. (credit a: modification of work by Jules Clancy; credit b: modification of work by USDA)
 {{< /mediafigure >}}
 
-{{< selfcheck question="Farmers often rotate corn (a cereal crop) and soy beans (a legume), planting a field with each crop in alternate seasons. What advantage might this crop rotation confer?" hint="Think about what legume roots leave behind in the soil that a nitrogen-hungry cereal crop could use the following season." >}}
+{{< selfcheck question="Farmers often rotate corn (a cereal crop) and soy beans (a legume), planting a field with each crop in alternate seasons. What advantage might this crop rotation confer?" hint="Reread the paragraph that follows this question." >}}
 Soybeans are able to fix nitrogen in their roots, which are not harvested at the end of the growing season. The belowground nitrogen can be used in the next season by the corn.
 ===CHECKS===
 soybeans are able to fix nitrogen in their roots, which are not harvested at the end of the growing season
@@ -128,39 +128,17 @@ Atmospheric nitrogen is the largest pool of available nitrogen in terrestrial ec
 
 ### Understand the nutritional adaptations of plants
 
-{{< multiplechoice
-  question="What term describes a plant that requires nutrition from a living host plant?"
-  answer="parasite"
-  hint="This kind of plant, like the dodder, coils its stem around a host and taps directly into its vascular bundles for water and nutrients."
->}}
-parasite
-saprophyte
-epiphyte
-insectivorous
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="What is the term for the symbiotic association between fungi and cyanobacteria?"
-  answer="lichen"
-  hint="This crust-like growth clings to the bark of the pine trunk shown earlier in the section, and the module cross-references its own chapter on fungi for more."
->}}
-lichen
-mycorrhizae
-epiphyte
-nitrogen-fixing nodule
-{{< /multiplechoice >}}
-
 {{< textin
-  question="Parasitic plants that are fully photosynthetic and only use the host for water and minerals are called ________."
+  question="Plants that are fully photosynthetic and use a host plant only for water and minerals are called ________."
   answer="hemiparasites"
   accept="hemiparasitic plant|hemi-parasite"
-  hint="Reread the Plant Parasites paragraph after the dodder example."
+  hint="Reread the end of the first subsection under Nutrients from Other Sources."
 >}}
 
 {{< textin
   question="A plant that does not have chlorophyll and gets its food from dead matter is called a ________."
   answer="saprophyte"
-  hint="Unlike fungi (which are commonly, but incorrectly, given this same name), most of these rare plants don't digest dead matter directly — they parasitize a fungus that already has."
+  hint="Reread the second subsection under Nutrients from Other Sources."
 >}}
 
 {{< textin
@@ -172,22 +150,51 @@ nitrogen-fixing nodule
 {{< textin
   question="A plant that grows on other plants but is not dependent upon them for nutrition is called an ________."
   answer="epiphyte"
-  hint="This plant's clinging aerial roots pull nutrients from humus trapped in tree crevices, while its other aerial roots absorb moisture straight from the air."
+  hint="Reread the subsection that follows the photo of a pine trunk."
 >}}
 
 {{< textin
   question="A plant with specialized leaves that attract and digest insects is called a(n) ________."
   answer="insectivorous plant"
-  accept="insectivorous"
-  hint="The Venus flytrap is the best-known example: sensitive hairs inside the trap trigger the leaf to snap shut around its prey."
+  accept="insectivorous|insectivore"
+  hint="Reread the last subsection before the Summary."
 >}}
 
+{{< multiplechoice
+  question="What term describes a plant that requires nutrition from a living host plant?"
+  answer="parasite"
+  hint="Reread the first subsection under Nutrients from Other Sources."
+>}}
+parasite
+saprophyte
+epiphyte
+insectivorous
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="What is the term for the symbiotic association between fungi and cyanobacteria?"
+  answer="lichen"
+  hint="Read the caption of the photo of a pine trunk."
+>}}
+lichen
+mycorrhizae
+epiphyte
+nitrogen-fixing nodule
+{{< /multiplechoice >}}
+
 ### Describe mycorrhizae
+
+{{< textin
+  question="Ectomycorrhizae form an extensive dense sheath around the root, while ________ are embedded within the root tissue."
+  answer="endomycorrhizae"
+  accept="endomycorrhiza|endo-mycorrhizae|arbuscular mycorrhizae|arbuscular mycorrhiza"
+  hint="Reread the last paragraph of the fungi-and-roots subsection."
+>}}
 
 {{< multiplechoice
   question="Through mycorrhization, a plant obtains important nutrients such as ________."
   answer="phosphorus, zinc, and copper"
-  hint="Re-read the body paragraph naming exactly which trace minerals accompany the phosphate mycorrhizal fungi deliver to the plant."
+  hint="Reread the second paragraph of the fungi-and-roots subsection."
 >}}
 phosphorus, zinc, and copper
 phosphorus, zinc, and calcium
@@ -195,22 +202,15 @@ nickel, calcium, and zinc
 all of the above
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Ectomycorrhizae form an extensive dense sheath around the root, while ________ are embedded within the root tissue."
-  answer="endomycorrhizae"
-  accept="endomycorrhiza|arbuscular mycorrhizae|arbuscular mycorrhiza"
-  hint="This form doesn't build a dense mantle around the root — instead the fungal mycelium works directly into the root tissue, and it's the type found in more than 80 percent of terrestrial plants."
->}}
-
 {{< multiplechoice
-  question="Fungi form symbiotic associations called ________ with plants, becoming integrated into the physical structure of the root."
-  answer="mycorrhizae"
-  hint="Reread the opening paragraph of the section's fungi-and-roots subsection."
+  question="Mycorrhizae help increase the surface area of the plant root system because ________, which are narrow, can spread beyond the nutrient depletion zone."
+  answer="hyphae"
+  hint="Reread the second paragraph of the fungi-and-roots subsection."
 >}}
-mantles
-mycorrhizae
+nodules
 hyphae
-lichen
+mantles
+suckers
 {{< /multiplechoice >}}
 
 ### Explain nitrogen fixation
@@ -230,37 +230,37 @@ Calvin cycle
   question="The most important source of biological nitrogen fixation is the symbiotic interaction between soil bacteria and ________."
   answer="legumes"
   accept="legume plants"
-  hint="Peanuts, beans, chickpeas, and soybeans are the section's examples of these plants."
+  hint="Reread the paragraph just after the first subsection's chemical equation."
 >}}
 
 {{< textin
   question="The soil bacteria that symbiotically interact with legume roots to form nodules and fix nitrogen are collectively called ________."
   answer="rhizobia"
   accept="rhizobium"
-  hint="The soybean-nodule figure's transmission electron micrograph shows these nitrogen-fixing bacteria packed inside vesicles within a nodule cell."
+  hint="Reread the first sentence of the paragraph that follows the crop-rotation question."
 >}}
 
 {{< textin
   question="The enzyme responsible for the reduction of atmospheric nitrogen to ammonia is called ________."
   answer="nitrogenase"
-  hint="Rhizobia use this enzyme to carry out the exact chemical conversion the section's opening equation shows: atmospheric N₂ becoming ammonia."
+  hint="Reread the second sentence of the paragraph that follows the crop-rotation question."
 >}}
 
-{{< selfcheck question="Why is biological nitrogen fixation an environmentally friendly way of fertilizing plants?" hint="Think about what fossil resource chemical fertilizers depend on that this biological process does not." >}}
+{{< selfcheck question="Why is biological nitrogen fixation an environmentally friendly way of fertilizing plants?" hint="Reread the middle of the paragraph that follows the crop-rotation question." >}}
 Because it is natural and does not require use of a nonrenewable resource, such as natural gas.
 ===CHECKS===
 it is natural
 does not require use of a nonrenewable resource, such as natural gas
 {{< /selfcheck >}}
 
-{{< selfcheck question="What is the main difference, from an energy point of view, between photosynthesis and biological nitrogen fixation?" hint="Consider which process stores energy for later use and which process spends energy to run." >}}
+{{< selfcheck question="What is the main difference, from an energy point of view, between photosynthesis and biological nitrogen fixation?" hint="Look at the chemical equation in the section's first subsection." >}}
 Photosynthesis harvests and stores energy, whereas biological nitrogen fixation requires energy.
 ===CHECKS===
 photosynthesis harvests and stores energy
 biological nitrogen fixation requires energy
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why is a root nodule a nutritional adaptation of a plant?" hint="Think about which two organisms partner inside the nodule, and what the nitrogen-fixation reaction happening there gives the plant access to." >}}
+{{< selfcheck question="Why is a root nodule a nutritional adaptation of a plant?" hint="Reread the section's second opening paragraph and the paragraph that follows the crop-rotation question." >}}
 A nodule results from the symbiosis between a plant and bacterium. Within nodules, the process of nitrogen fixation allows the plant to obtain nitrogen from the air.
 ===CHECKS===
 a nodule results from the symbiosis between a plant and bacterium
@@ -269,4 +269,4 @@ nitrogen fixation allows the plant to obtain nitrogen from the air
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 31.3: Nutritional Adaptations of Plants](https://openstax.org/books/biology-2e/pages/31-3-nutritional-adaptations-of-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own bare "Photo shows…" alts; Figure_31_03_01abc re-kinded from the manifest's file-extension "diagram" guess to "photo" (three side-by-side photographs of legumes, not a diagram); the interactive note rendered as a Link to Learning callout keeping its video URL; the note wrapping the Visual Connection Question rendered as its figure followed by a self-check (the source keys prose, not a lettered choice), kept in the body; the genus name in Figure 31.11's caption, printed in the module as "Bradyrhyzobium japonicum," corrected to the standard spelling "Bradyrhizobium japonicum"; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items added from the glossary, one per definition except "parasitic plant," whose recall item would re-ask the source's parasite Review Question, so that slot is a recall item on hemiparasites built from the Plant Parasites paragraph's own sentence; the nodules recall item replaced by a Summary cloze on legumes ("The most important source of BNF is the symbiotic interaction between soil bacteria and legumes"), placed first after the nitrogen-fixation Review Question, because a source Review Question option ("nitrogen-fixing nodule") and the rhizobia item's stem both printed its key above it; the thin "Describe mycorrhizae" objective group — served by only one Review Question in the source — filled out with a cloze text-in and a select-the-term multiple choice, both built from the section's own summary sentence on ectomycorrhizae, endomycorrhizae, and mycorrhizae, with no new claim (the multiple choice's distractors are the section's own terms mantles, hyphae, and lichen).</small>
+<small>This section is adapted from [Biology 2e, Section 31.3: Nutritional Adaptations of Plants](https://openstax.org/books/biology-2e/pages/31-3-nutritional-adaptations-of-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own bare "Photo shows…" alts; Figure_31_03_01abc re-kinded from the manifest's file-extension "diagram" guess to "photo" (three side-by-side photographs of legumes, not a diagram); the interactive note rendered as a Link to Learning callout keeping its video URL; the note wrapping the Visual Connection Question rendered as its figure followed by a self-check (the source keys prose, not a lettered choice), kept in the body; the genus name in Figure 31.11's caption, printed in the module as "Bradyrhyzobium japonicum," corrected to the standard spelling "Bradyrhizobium japonicum"; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 3, 4, 2, 1 of the source's numbering; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; key-term recall items added from six of the glossary's eight terms (epiphyte, insectivorous plant, nitrogenase, rhizobia, saprophyte, symbiont), the four in the first objective group placed ahead of its two Review Questions; "parasitic plant" has no recall item because it would re-ask the source's parasite Review Question, and a recall item on hemiparasites, built from the Plant Parasites paragraph's own sentence on them, takes its slot at the head of that group; "nodules" has no recall item because a source Review Question option ("nitrogen-fixing nodule") and the rhizobia item's stem both print it, and a Summary cloze on legumes ("The most important source of BNF is the symbiotic interaction between soil bacteria and legumes") takes its slot, placed right after the nitrogen-fixation Review Question; the thin "Describe mycorrhizae" objective group — served by only one Review Question in the source — filled out with a cloze text-in built from the section's own summary sentence on ectomycorrhizae and endomycorrhizae and a select-the-term multiple choice built from the body's own sentence on how hyphae extend the root system's surface area, both with no new claim (the multiple choice's distractors are the section's own terms nodules, mantles, and suckers), the cloze placed ahead of the group's Review Question.</small>

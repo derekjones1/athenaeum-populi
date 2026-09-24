@@ -29,7 +29,7 @@ In the autonomic nervous system, a preganglionic neuron of the CNS synapses with
 {{< multiplechoice
   question="Which of the following statements is false?"
   answer="Parasympathetic neurons are responsible for releasing norepinephrine on the target organ, while sympathetic neurons are responsible for releasing acetylcholine."
-  hint="Check which neurotransmitter each branch actually releases onto its target organ, named in the figure above."
+  hint="Check each statement against the figure above and its caption."
 >}}
 The parasympathetic pathway is responsible for relaxing the body, while the sympathetic pathway is responsible for preparing for an emergency.
 Most preganglionic neurons in the sympathetic pathway originate in the spinal cord.
@@ -93,7 +93,7 @@ The peripheral nervous system contains both the autonomic and sensory-somatic ne
 {{< multiplechoice
   question="Activation of the sympathetic nervous system causes:"
   answer="an increased heart rate"
-  hint="Sympathetic activation prepares the body to escape danger — consider whether escaping requires more or less blood reaching the muscles and brain, and more or less digestion."
+  hint="See the first of the two subsections under Autonomic Nervous System."
 >}}
 increased blood flow into the skin
 a decreased heart rate
@@ -104,7 +104,7 @@ increased digestion
 {{< multiplechoice
   question="Where are parasympathetic preganglionic cell bodies located?"
   answer="brainstem"
-  hint="Reread the second of the two subsections under Autonomic Nervous System, where the preganglionic cell bodies are located."
+  hint="See the second of the two subsections under Autonomic Nervous System."
 >}}
 cerebellum
 brainstem
@@ -112,7 +112,7 @@ dorsal root ganglia
 skin
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the main differences between the sympathetic and parasympathetic branches of the autonomic nervous system?" hint="Contrast their neurotransmitters, where their neuron cell bodies sit, and their opposite effects on heart rate, blood pressure, digestion, and skin blood flow." >}}
+{{< selfcheck question="What are the main differences between the sympathetic and parasympathetic branches of the autonomic nervous system?" hint="Draw on both subsections under Autonomic Nervous System and the first figure of the section." >}}
 The sympathetic nervous system prepares the body for "fight or flight," whereas the parasympathetic nervous system allows the body to "rest and digest." Sympathetic neurons release norepinephrine onto target organs; parasympathetic neurons release acetylcholine. Sympathetic neuron cell bodies are located in sympathetic ganglia. Parasympathetic neuron cell bodies are located in the brainstem and sacral spinal cord. Activation of the sympathetic nervous system increases heart rate and blood pressure and decreases digestion and blood flow to the skin. Activation of the parasympathetic nervous system decreases heart rate and blood pressure and increases digestion and blood flow to the skin.
 ===CHECKS===
 the sympathetic nervous system prepares the body for "fight or flight," while the parasympathetic nervous system allows it to "rest and digest"
@@ -122,7 +122,7 @@ sympathetic activation increases heart rate and blood pressure and decreases dig
 parasympathetic activation decreases heart rate and blood pressure and increases digestion and blood flow to the skin
 {{< /selfcheck >}}
 
-{{< selfcheck question="Scientists have suggested that the autonomic nervous system is not well-adapted to modern human life. How is the sympathetic nervous system an ineffective response to the everyday challenges faced by modern humans?" hint="Think about what physically dangerous situations the fight-or-flight response evolved to handle, and how differently our common daily stressors work." >}}
+{{< selfcheck question="Scientists have suggested that the autonomic nervous system is not well-adapted to modern human life. How is the sympathetic nervous system an ineffective response to the everyday challenges faced by modern humans?" hint="Start from the first paragraph of the Sympathetic Nervous System subsection." >}}
 Many events in modern human life are not physical dangers; instead they are events we think of as "stress." Finding the money to pay your student loans or being nervous before a test still activate the sympathetic nervous system, but these situations do not require the fight-or-flight response to survive.
 ===CHECKS===
 many events in modern life are not physical dangers but are what we think of as "stress"
@@ -149,7 +149,7 @@ these situations do not require the fight-or-flight response to survive
 {{< multiplechoice
   question="________ is released by motor nerve endings onto muscle."
   answer="Acetylcholine"
-  hint="This is the same neurotransmitter released at both synapses of the autonomic pathway's parasympathetic branch — not the one sympathetic postganglionic neurons release onto their target organs."
+  hint="See the first paragraph under Sensory-Somatic Nervous System."
 >}}
 Acetylcholine
 Norepinephrine
@@ -157,14 +157,14 @@ Dopamine
 Serotonin
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the main functions of the sensory-somatic nervous system?" hint="Think about the two directions information flows: into the CNS from the body's sense organs, and back out to the muscles." >}}
+{{< selfcheck question="What are the main functions of the sensory-somatic nervous system?" hint="Reread the first paragraph under Sensory-Somatic Nervous System." >}}
 The sensory-somatic nervous system transmits sensory information from the skin, muscles, and sensory organs to the CNS. It also sends motor commands from the CNS to the muscles, causing them to contract.
 ===CHECKS===
 transmits sensory information from the skin, muscles, and sensory organs to the CNS
 sends motor commands from the CNS to the muscles, causing them to contract
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe how the sensory-somatic nervous system reacts by reflex to a person touching something hot. How does this allow for rapid responses in potentially dangerous situations?" hint="Trace the signal's path from skin receptor to spinal cord to muscle, and consider why that path skips the brain." >}}
+{{< selfcheck question="Describe how the sensory-somatic nervous system reacts by reflex to a person touching something hot. How does this allow for rapid responses in potentially dangerous situations?" hint="Draw on the spinal-nerve paragraph and the spinal cord cross-section after it." >}}
 A person's skin comes into contact with a hot object, and the high temperature is recognized by the thermoreceptors of a sensory neuron. The signal is relayed to the spinal cord, and sent to a motor neuron. The motor neuron relays the signal to its axon, and produces acetylcholine to contract the muscle that will pull the person away from the hot object. By connecting the sensory and motor neurons in the spinal cord (instead of integrating the signal in the brain) the body can respond faster.
 ===CHECKS===
 skin contacts a hot object and thermoreceptors of a sensory neuron recognize the high temperature
@@ -176,15 +176,15 @@ connecting the sensory and motor neurons in the spinal cord instead of the brain
 {{< textin
   question="A sensory and/or motor nerve that emanates from the brain is called a ________."
   answer="cranial nerve"
-  hint="Humans have twelve of these, each with its own name, and they differ from nerves that instead emerge from the vertebral column."
+  hint="See the second paragraph under Sensory-Somatic Nervous System."
 >}}
 
 {{< textin
-  question="A nerve that projects between skin or muscle and the spinal cord is called a ________."
+  question="A nerve that emerges from the vertebral column, rather than from the skull, is called a ________."
   answer="spinal nerve"
-  hint="Humans have 31 of these, and each emerges from the vertebral column rather than the skull."
+  hint="See the second paragraph under Sensory-Somatic Nervous System."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 35.4: The Peripheral Nervous System](https://openstax.org/books/biology-2e/pages/35-4-the-peripheral-nervous-system) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_35_04_03 and Figure_35_04_04 re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are labeled line illustrations, not captured photographs); a longdesc added to all four figures (the autonomic-pathway flow diagram, the labeled sympathetic/parasympathetic body diagram, the cranial-nerve diagram, and the spinal-cord cross-section) whose labels and structure are not carried by their one- or two-sentence captions; the note wrapping the Autonomic Nervous System Visual Connection rendered as its figure followed by a multiple choice, kept in the body — the module prints this item twice with different wording for option (a): the note copy reads "responsible for resting the body," the numbered Visual Connection Questions copy (used here, matching the printed exercise and its keyed solution "D") reads "responsible for relaxing the body"; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), the fourth Critical Thinking Question (the sympathetic nervous system and modern life) placed in the first objective's group, ahead of the second and third, which serve the sensory-somatic objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (parasympathetic nervous system, sympathetic nervous system, cranial nerve, spinal nerve) added from the glossary. One claim is corrected with a visible Source note: the olfactory nerve ends in the olfactory bulb, so it carries smell to the brain rather than "to the brainstem".</small>
+<small>This section is adapted from [Biology 2e, Section 35.4: The Peripheral Nervous System](https://openstax.org/books/biology-2e/pages/35-4-the-peripheral-nervous-system) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_35_04_03 and Figure_35_04_04 re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are labeled line illustrations, not captured photographs); a longdesc added to all four figures (the autonomic-pathway flow diagram, the labeled sympathetic/parasympathetic body diagram, the cranial-nerve diagram, and the spinal-cord cross-section) whose labels and structure are not carried by their one- or two-sentence captions; the note wrapping the Autonomic Nervous System Visual Connection rendered as its figure followed by a multiple choice, kept in the body — the module prints this item twice with different wording for option (a): the note copy reads "responsible for resting the body," the numbered Visual Connection Questions copy (used here, matching the printed exercise and its keyed solution "D") reads "responsible for relaxing the body"; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), the fourth Critical Thinking Question (the sympathetic nervous system and modern life) placed in the first objective's group, ahead of the second and third, which serve the sensory-somatic objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (parasympathetic nervous system, sympathetic nervous system, cranial nerve, spinal nerve) added from the glossary, the spinal-nerve item prompted from the section's sentence contrasting spinal with cranial nerves rather than from its glossary entry, which prints "spinal cord". One claim is corrected with a visible Source note: the olfactory nerve ends in the olfactory bulb, so it carries smell to the brain rather than "to the brainstem".</small>

@@ -112,6 +112,25 @@ Plants have different life spans, dependent on species, genotype, and environmen
 
 ### Compare the mechanisms and methods of natural and artificial asexual reproduction
 
+{{< textin
+  question="In one artificial method, part of the stem of a desirable plant is attached onto a rooted plant called the stock; the attached part is called the ________."
+  answer="scion"
+  hint="Reread the first subsection under Artificial Methods of Asexual Reproduction."
+>}}
+
+{{< textin
+  question="The method of asexual reproduction in which a portion of the stem containing nodes and internodes is placed in moist soil and allowed to root is called a ________."
+  answer="cutting"
+  accept="stem cutting"
+  hint="Reread the second subsection under Artificial Methods of Asexual Reproduction."
+>}}
+
+{{< textin
+  question="The process by which seeds are produced without fertilization of sperm and egg is called ________."
+  answer="apomixis"
+  hint="Reread the paragraph that follows the five-panel figure of stems."
+>}}
+
 {{< multiplechoice
   question="________ is a useful method of asexual reproduction for propagating hard-to-root plants."
   answer="grafting"
@@ -123,31 +142,12 @@ cuttings
 budding
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe natural and artificial methods of asexual reproduction in plants." hint="Consider which methods a plant carries out entirely on its own, versus which ones require human intervention." >}}
+{{< selfcheck question="Describe natural and artificial methods of asexual reproduction in plants." hint="Reread the opening paragraphs of the Natural Methods and Artificial Methods subsections." >}}
 Asexual reproduction in plants can take place by natural methods or artificial methods. Natural methods include strategies used by the plant to propagate itself. Artificial methods include grafting, cutting, layering, and micropropagation.
 ===CHECKS===
 natural methods include strategies used by the plant to propagate itself
 artificial methods include grafting, cutting, layering, and micropropagation
 {{< /selfcheck >}}
-
-{{< textin
-  question="The process by which seeds are produced without fertilization of sperm and egg is called ________."
-  answer="apomixis"
-  hint="Either the ovule or part of the diploid ovary gives rise to the new seed by this method, with no fusion of gametes at all."
->}}
-
-{{< textin
-  question="The part of a plant that is grafted onto the root stock of another plant is called the ________."
-  answer="scion"
-  hint="This piece supplies the desired stem and, eventually, the flowers and fruit, while its partner in the union supplies the roots."
->}}
-
-{{< textin
-  question="The method of asexual reproduction in which a portion of the stem containing nodes and internodes is placed in moist soil and allowed to root is called a ________."
-  answer="cutting"
-  accept="stem cutting"
-  hint="Look at the third of the artificial methods described under Artificial Methods of Asexual Reproduction, the one used for coleus and money plant."
->}}
 
 ### Describe the advantages and disadvantages of natural and artificial asexual reproduction
 
@@ -182,7 +182,7 @@ cuttings or buds taken from an adult plant produce progeny that mature faster an
 {{< multiplechoice
   question="Plants that flower once in their lifetime are known as ________."
   answer="monocarpic"
-  hint="Bamboo and yucca fit this category: they spend years building up reserves before a single, life-ending bloom."
+  hint="Reread the Plant Life Spans paragraph that classifies plants by flowering frequency."
 >}}
 monoecious
 dioecious
@@ -201,7 +201,7 @@ annuals
 polycarpic
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Discuss the life cycles of various plants." hint="Think about how many growing seasons each duration category needs before it completes its reproductive phase, from shortest-lived to longest-lived." >}}
+{{< selfcheck question="Discuss the life cycles of various plants." hint="Reread the Plant Life Spans paragraph that follows the bristlecone pine photo." >}}
 Plant species that complete their life cycle in one season are known as annuals. Biennials complete their life cycle in two seasons. In the first season, the plant has a vegetative phase, whereas in the next season, it completes its reproductive phase. Perennials, such as the magnolia, complete their life cycle in two years or more.
 ===CHECKS===
 plant species that complete their life cycle in one season are known as annuals
@@ -210,7 +210,7 @@ in the first season, the plant has a vegetative phase, whereas in the next seaso
 perennials, such as the magnolia, complete their life cycle in two years or more
 {{< /selfcheck >}}
 
-{{< selfcheck question="How are plants classified on the basis of flowering frequency?" hint="Consider what happens to a plant's nutrient budget when it commits everything to a single flowering event, compared with a plant that flowers repeatedly." >}}
+{{< selfcheck question="How are plants classified on the basis of flowering frequency?" hint="Reread the Plant Life Spans paragraph that classifies plants by flowering frequency." >}}
 Monocarpic plants flower only once during their lifetime. During the vegetative period of their lifecycle, these plants accumulate a great deal of food material that will be required during their once-in-a-lifetime flowering and setting of seed after fertilization. Soon after flowering, these plants die. Polycarpic plants flower several times during their life span; therefore, not all nutrients are channelled towards flowering.
 ===CHECKS===
 monocarpic plants flower only once during their lifetime
@@ -227,4 +227,4 @@ polycarpic plants flower several times during their life span; therefore, not al
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 32.3: Asexual Reproduction](https://openstax.org/books/biology-2e/pages/32-3-asexual-reproduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the section's opening sentence "Many different types of roots exhibit asexual reproduction" corrected to "stems" — the section's own next-sentence figure is captioned "Different types of stems allow for asexual reproduction," and every item the sentence goes on to list (corm, bulb, stem tuber, rhizome, stolon) is a modified stem, not a root, in the section's own subsequent explanation; figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own bare, panel-letter-only alt text; four figures re-kinded after inspection — Figure_37_03_01 from the manifest's file-extension "diagram" guess to "photo" (a five-panel photo composite, not a drawn illustration), and Figure_32_03_02, Figure_32_03_03, and Figure_32_03_04 from "photo" to "diagram" (line-drawn, labeled schematics, not captured photographs); a longdesc added to the three labeled diagrams (Figure_32_03_02, Figure_32_03_03, Figure_32_03_04), walking each one's labels and layout in reading order since their one-line captions do not carry that detail; figure print-number cross-references replaced with descriptive references ("pictured below"); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), covering all four of each; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (apomixis, scion, cutting, senescence) added from the glossary, and one cloze recall item added from the chapter summary sentence "Asexually reproducing plants thrive well in stable environments." One example is corrected with a visible Source note: garlic is dropped from the corm sentence, since it forms a bulb by this book's own account, and the stems figure's caption, which calls panel (a) "the corm of a garlic plant," now calls it the bulb of a garlic plant and sets the corm-versus-bulb contrast as a general statement, with a visible Source note. One claim is corrected with a visible Source note: the source says applications of cytokinins and ethylene delay or prevent senescence, but this book's own Plant Sensory Systems and Responses section (Section 30.6) ties ethylene to flower wilting, leaf fall, and abscission and says senescing leaves produce it, so the sentence now says ethylene promotes senescence, and the senescence recall item's hint, which repeated the source's claim, now only says where to look.</small>
+<small>This section is adapted from [Biology 2e, Section 32.3: Asexual Reproduction](https://openstax.org/books/biology-2e/pages/32-3-asexual-reproduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the second paragraph's opening sentence "Many different types of roots exhibit asexual reproduction" corrected to "stems" — the section's own next-sentence figure is captioned "Different types of stems allow for asexual reproduction," and every item the sentence goes on to list (corm, bulb, stem tuber, rhizome, stolon) is a modified stem, not a root, in the section's own subsequent explanation; figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own bare, panel-letter-only alt text; four figures re-kinded after inspection — Figure_37_03_01 from the manifest's file-extension "diagram" guess to "photo" (a five-panel photo composite, not a drawn illustration), and Figure_32_03_02, Figure_32_03_03, and Figure_32_03_04 from "photo" to "diagram" (line-drawn, labeled schematics, not captured photographs); a longdesc added to the three labeled diagrams (Figure_32_03_02, Figure_32_03_03, Figure_32_03_04), walking each one's labels and layout in reading order since their one-line captions do not carry that detail; figure print-number cross-references replaced with descriptive references ("pictured below"); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), covering all four of each, each placed under the objective it serves, so the first two Critical Thinking Questions appear in the reverse of the source's order; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (apomixis, scion, cutting, senescence) added from the glossary, the first three placed ahead of the grafting Review Question in their group and the scion item's prompt built from the Grafting subsection's own sentences, and one cloze recall item added from the section summary's sentence "Asexually reproducing plants thrive well in stable environments." One example is corrected with a visible Source note: garlic is dropped from the corm sentence, since it forms a bulb by this book's own account, and the stems figure's caption, which calls panel (a) "the corm of a garlic plant," now calls it the bulb of a garlic plant and sets the corm-versus-bulb contrast as a general statement, with a visible Source note. One claim is corrected with a visible Source note: the source says applications of cytokinins and ethylene delay or prevent senescence, but this book's own Plant Sensory Systems and Responses section (Section 30.6) ties ethylene to flower wilting, leaf fall, and abscission and says senescing leaves produce it, so the sentence now says ethylene promotes senescence, and the senescence recall item's hint, which repeated the source's claim, now only says where to look.</small>

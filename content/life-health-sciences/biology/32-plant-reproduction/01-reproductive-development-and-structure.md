@@ -90,7 +90,7 @@ As shown in this diagram of the embryo sac in angiosperms, the ovule is covered 
 {{< multiplechoice
   question="An embryo sac is missing the synergids. What specific impact would you expect this to have on fertilization?"
   answer="The pollen tube will form but will not be guided toward the egg."
-  hint="Recall what the synergids' chemical signals actually accomplish once a pollen tube is already growing, and note that the egg cell's nucleus is separate from the two synergid nuclei."
+  hint="Reread the sentence right after the synergids are named in the first paragraph of Female Gametophyte (The Embryo Sac)."
 >}}
 The pollen tube will be unable to form.
 The pollen tube will form but will not be guided toward the egg.
@@ -111,7 +111,7 @@ This image shows the lifecycle of a conifer. Pollen from male cones blows up int
 A male cone has a central axis on which bracts, a type of modified leaf, are attached. The bracts are known as **microsporophylls**, shown below, and are the sites where microspores will develop. The microspores develop inside the microsporangium. Within the microsporangium, cells known as microsporocytes divide by meiosis to produce four haploid microspores. Further mitosis of the microspore produces two nuclei: the generative nucleus, and the tube nucleus. Upon maturity, the male gametophyte (pollen) is released from the male cones and is carried by the wind to land on the female cone.
 
 {{< callout type="info" >}}
-**Link to Learning.** Watch [an animation of a cedar releasing its pollen in the wind](https://www.openstax.org/l/pollen_release).
+**Link to Learning.** Watch [a video of a cedar releasing its pollen in the wind](https://www.openstax.org/l/pollen_release).
 {{< /callout >}}
 
 ### Female Gametophyte
@@ -171,16 +171,18 @@ The diploid sporophyte of angiosperms and gymnosperms is the conspicuous and lon
 {{< textin
   question="The multicellular stage of a plant that gives rise to haploid gametes or spores is called the ________."
   answer="gametophyte"
-  hint="This stage is haploid and produces gametes by mitosis, not meiosis."
+  accept="gametophyte stage"
+  hint="Reread the section's opening paragraph, on the two stages of the lifecycle."
 >}}
 
 {{< textin
   question="The multicellular diploid stage in plants that forms after the fusion of male and female gametes is called the ________."
   answer="sporophyte"
-  hint="This stage is diploid and eventually produces spores by meiosis."
+  accept="sporophyte stage"
+  hint="Reread the section's opening paragraph and the alternation-of-generations figure after it."
 >}}
 
-{{< selfcheck question="Describe the two-stage lifecycle of plants: the gametophyte stage and the sporophyte stage." hint="Trace what meiosis and mitosis each produce in turn, and which stage begins with fertilization." >}}
+{{< selfcheck question="Describe the two-stage lifecycle of plants: the gametophyte stage and the sporophyte stage." hint="Reread the section's opening paragraph and the alternation-of-generations figure after it." >}}
 Plants have two distinct phases in their lifecycle: the gametophyte stage and the sporophyte stage. In the gametophyte stage, when reproductive cells undergo meiosis and produce haploid cells called spores, the gametophyte stage begins. Spores divide by cell division to form plant structures of an entirely new plant. The cells in these structures or plants are haploid. Some of these cells undergo cell division and form sex cells. Fertilization, the joining of haploid sex cells, begins the sporophyte stage. Cells formed in this stage have the diploid number of chromosomes. Meiosis in some of these cells forms spores, and the cycle begins again: a process known as alternation of generations.
 ===CHECKS===
 plants have two distinct phases: the gametophyte stage and the sporophyte stage
@@ -204,20 +206,21 @@ tapetum
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The type of cell in the embryo sac that secretes chemicals to guide the pollen tube toward the egg is called a ________."
-  answer="synergid"
-  hint="There are two of these cells, positioned right beside the egg cell at the micropylar end of the embryo sac."
+  question="The opening on the ovule sac through which the pollen tube can gain entry is called the ________."
+  answer="micropyle"
+  hint="Reread the paragraph on the integument in Female Gametophyte (The Embryo Sac)."
 >}}
 
 {{< textin
   question="The two nuclei in the embryo sac that fuse together and then fuse with a sperm cell to form the endosperm are called the ________."
   answer="polar nuclei"
-  hint="These two nuclei move to the equator of the embryo sac and fuse into a single diploid central cell before fertilization."
+  accept="polar nucleus"
+  hint="Reread the first paragraph of Female Gametophyte (The Embryo Sac), just after the embryo sac is named."
 >}}
 
 ### Describe the reproductive structures of a plant
 
-{{< selfcheck question="Describe the reproductive organs inside a flower." hint="Name each whorl's organ, what it produces, and where the ovules sit." >}}
+{{< selfcheck question="Describe the reproductive organs inside a flower." hint="Reread the opening paragraph of Flower Structure and the flower-structure figure after it." >}}
 Inside the flower are the reproductive organs of the plant. The stamen is the male reproductive organ. Pollen is produced in the stamen. The carpel is the female reproductive organ. The ovary is the swollen base of the carpel where ovules are found. Not all flowers have every one of the four parts.
 ===CHECKS===
 the stamen is the male reproductive organ
@@ -229,7 +232,7 @@ not all flowers have every one of the four parts
 {{< multiplechoice
   question="The pollen lands on which part of the flower?"
   answer="stigma"
-  hint="Study the flower diagram's enlarged carpel, whose labels run top to bottom."
+  hint="Study the lower-left panel of the flower-structure figure."
 >}}
 stigma
 style
@@ -240,13 +243,15 @@ integument
 {{< textin
   question="The sum of all the stamens in a flower is called the ________."
   answer="androecium"
-  hint="This whorl holds the anthers with their microsporangia — the flower's male reproductive part, not its female part."
+  accept="androecia"
+  hint="Reread the opening paragraph of Flower Structure, from the third whorl on."
 >}}
 
 {{< textin
   question="The sum of all the carpels in a flower is called the ________."
   answer="gynoecium"
-  hint="This is the flower's innermost whorl and its female reproductive part, made up of one or more carpels with a stigma, style, and ovary."
+  accept="gynoecia"
+  hint="Reread the last three sentences of the opening paragraph of Flower Structure."
 >}}
 
 ### Describe the components of a complete flower
@@ -273,7 +278,7 @@ tepals
 stamens
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the four main parts, or whorls, of a flower." hint="Work outside in: what protects the bud, what is often colorful, and what the two innermost whorls are made of." >}}
+{{< selfcheck question="Describe the four main parts, or whorls, of a flower." hint="Reread the opening paragraph of Flower Structure and the flower-structure figure after it." >}}
 A typical flower has four main parts, or whorls: the calyx, corolla, androecium, and gynoecium. The outermost whorl of the flower has green, leafy structures known as sepals, which are collectively called the calyx. It helps to protect the unopened bud. The second whorl is made up of brightly colored petals that are known collectively as the corolla. The third whorl is the male reproductive structure known as the androecium. The androecium has stamens, which have anthers on a stalk or filament. Pollen grains are borne on the anthers. The gynoecium is the female reproductive structure. The carpel is the individual structure of the gynoecium and has a stigma, the stalk or style, and the ovary.
 ===CHECKS===
 the calyx is the outermost whorl, made of sepals that protect the unopened bud
@@ -282,7 +287,7 @@ the androecium is the male reproductive structure, with stamens bearing anthers 
 the gynoecium is the female reproductive structure, with a carpel that has a stigma, style, and ovary
 {{< /selfcheck >}}
 
-{{< selfcheck question="Discuss the differences between a complete flower and an incomplete flower." hint="Distinguish complete from incomplete first, then staminate from carpellate, then monoecious from dioecious." >}}
+{{< selfcheck question="Discuss the differences between a complete flower and an incomplete flower." hint="Reread the two paragraphs of Flower Structure that follow its first figure's self-check." >}}
 If all four whorls of a flower are present, it is a complete flower. If any of the four parts is missing, it is known as incomplete. Flowers that contain both an androecium and gynoecium are called androgynous or hermaphrodites. Those that contain only an androecium are known as staminate flowers, and those that have only carpels are known as carpellate. If both male and female flowers are borne on the same plant, it is called monoecious, while plants with male and female flowers on separate plants are termed dioecious.
 ===CHECKS===
 if all four whorls of a flower are present, it is a complete flower
@@ -294,7 +299,7 @@ male and female flowers on the same plant is monoecious, while separate plants i
 {{< textin
   question="The part of the flower made up of the calyx and corolla together, forming its outer envelope, is called the ________."
   answer="perianth"
-  hint="This term combines the flower's two outermost whorls — the leafy protective whorl and the often colorful whorl inside it."
+  hint="Reread the opening paragraph of Flower Structure, just after the petal counts of monocots and dicots."
 >}}
 
 ### Describe the development of microsporangium and megasporangium in gymnosperms
@@ -310,21 +315,21 @@ male and female flowers on the same plant is monoecious, while separate plants i
   question="The tissue that gives rise to the female gamete, or egg, is called the ________."
   answer="megasporangium"
   accept="megasporangia"
-  hint="In a female gymnosperm cone, this tissue holds the megaspore mother cells, which divide by meiosis into four haploid megaspores."
+  hint="Reread the second sentence of the gymnosperm Female Gametophyte paragraph."
 >}}
 
 {{< textin
   question="A bract on the central axis of a male gymnosperm cone, where microspores develop, is called a ________."
   answer="microsporophyll"
-  hint="A male cone bears roughly 20 of these bracts, each producing hundreds of pollen grains."
+  hint="Reread the first two sentences of the gymnosperm Male Gametophyte paragraph."
 >}}
 
 {{< textin
-  question="A bract on the central axis of a female gymnosperm cone that carries the megaspore mother cells is called a ________."
+  question="A bract (a type of modified leaf) on the central axis of a female gymnosperm cone is called a ________."
   answer="megasporophyll"
-  hint="A female cone bears roughly 15 of these bracts, each containing an ovule with the megaspore mother cell inside."
+  hint="Reread the first sentence of the gymnosperm Female Gametophyte paragraph."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 32.1: Reproductive Development and Structure](https://openstax.org/books/biology-2e/pages/32-1-reproductive-development-and-structure) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own alt text; four figures re-kinded after inspection from the manifest's file-extension guess of "photo" to "diagram" — Figure_32_01_03 (a hand-colored botanical illustration of a corn plant, not a photograph), Figure_32_01_04ab (a labeled line-drawing comparison of ovary position, paired with two photographs), and Figure_32_01_06f (a hand-drawn pollen-development flow chart with one inset micrograph) — and Figure_37_01_10 from "diagram" to "photo" (a six-panel series of stained microscope images, not a hand-drawn diagram); a longdesc added to the two life-cycle diagrams (Figure_37_01_01, Figure_32_01_08), the two Visual Connection diagrams (Figure_32_01_02, Figure_32_01_07), the pollen-development diagrams (Figure_37_01_02, Figure_32_01_06f), and the superior/inferior ovary-position schematic (Figure_32_01_04ab), each counted and walked in reading order; both notes wrapping a Visual Connection rendered as their figure followed by a self-check or multiple choice, kept in the body, and not repeated in Practice; both Link to Learning notes kept as callouts with the module's own openstax.org/l/ redirect URLs; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; ten key-term recall items (gametophyte, sporophyte, synergid, polar nuclei, androecium, gynoecium, perianth, megasporangium, microsporophyll, megasporophyll) added from the glossary, the microsporangium glossary item left out because it would re-ask the source's pollen-development Review Question, and one recall item (archegonium) built from the gymnosperm Female Gametophyte paragraph's own sentence; a typo in the opening paragraph, "the male and females gametes," corrected to "the male and female gametes" — a source defect; the glossary definition of "microsporophyll," which reads "central axis of a male cone on which bracts … are attached," corrected to "bract (a type of modified leaf) on the central axis of a male cone," because the section's own sentence "The bracts are known as microsporophylls" identifies the bracts themselves, not the axis, as the microsporophylls — a source defect; the glossary definition of "megasporophyll" corrected from "central axis of a female gametophyte" to "central axis of a female cone," because the section's own sentence places the bracts "on a central axis" belonging to "the female cone," not the female gametophyte (the haploid generation the cone's megasporophylls give rise to) — a source defect; in the anther cross-section figure (Figure_37_01_02), whose printed leader lines point Microspore mother cells at the ring of small cells lining each pollen sac and Tapetum at the sac's center — the reverse of the section's own description of the tapetum as an inner layer of cells around the developing microspores — the alt and longdesc describe the lines as drawn and note that they appear swapped — a source defect.</small>
+<small>This section is adapted from [Biology 2e, Section 32.1: Reproductive Development and Structure](https://openstax.org/books/biology-2e/pages/32-1-reproductive-development-and-structure) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own alt text; four figures re-kinded after inspection: three from the manifest's file-extension guess of "photo" to "diagram" — Figure_32_01_03 (a hand-colored botanical illustration of a corn plant, not a photograph), Figure_32_01_04ab (a labeled line-drawing comparison of ovary position, paired with two photographs), and Figure_32_01_06f (a hand-drawn pollen-development flow chart with one inset micrograph) — and Figure_37_01_10 from "diagram" to "photo" (a six-panel series of stained microscope images, not a hand-drawn diagram); a longdesc added to the two life-cycle diagrams (Figure_37_01_01, Figure_32_01_08), the two Visual Connection diagrams (Figure_32_01_02, Figure_32_01_07), the pollen-development diagrams (Figure_37_01_02, Figure_32_01_06f), and the superior/inferior ovary-position schematic (Figure_32_01_04ab), each counted and walked in reading order; both notes wrapping a Visual Connection rendered as their figure followed by a self-check or multiple choice, kept in the body, and not repeated in Practice; the source's numbered figure pointers replaced by "shown below" or "shown above"; both Link to Learning notes kept as callouts with the module's own openstax.org/l/ redirect URLs; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block, and because Practice items are grouped by objective, the Review Question on where pollen lands (source fourth) comes ahead of the filament and calyx questions (source second and third), and the two-stage-lifecycle Critical Thinking Question (source second) comes ahead of the reproductive-organs question (source first); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; ten key-term recall items (gametophyte, sporophyte, micropyle, polar nuclei, androecium, gynoecium, perianth, megasporangium, microsporophyll, megasporophyll) added from the glossary, the microsporangium glossary item left out because it would re-ask the source's pollen-development Review Question and the synergid item because it would re-ask the missing-synergids Visual Connection question in reverse, and one recall item (archegonium) built from the gymnosperm Female Gametophyte paragraph's own sentence; a typo in the opening paragraph, "the male and females gametes," corrected to "the male and female gametes" — a source defect; the glossary definition of "microsporophyll," which reads "central axis of a male cone on which bracts … are attached," corrected to "bract (a type of modified leaf) on the central axis of a male cone," because the section's own sentence "The bracts are known as microsporophylls" identifies the bracts themselves, not the axis, as the microsporophylls — a source defect; the glossary definition of "megasporophyll" corrected from "central axis of a female gametophyte" to "central axis of a female cone," because the section's own sentence places the bracts "on a central axis" belonging to "the female cone," not the female gametophyte (the haploid generation the cone's megasporophylls give rise to) — a source defect; in the anther cross-section figure (Figure_37_01_02), whose printed leader lines point Microspore mother cells at the ring of small cells lining each pollen sac and Tapetum at the sac's center — the reverse of the section's own description of the tapetum as an inner layer of cells around the developing microspores — the alt and longdesc describe the lines as drawn and note that they appear swapped — a source defect.</small>

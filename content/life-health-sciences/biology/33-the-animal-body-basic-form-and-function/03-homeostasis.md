@@ -44,7 +44,7 @@ A **positive feedback loop** maintains the direction of the stimulus, possibly a
 The birth of a human infant is the result of positive feedback.
 {{< /mediafigure >}}
 
-{{< selfcheck question="State whether each of the following processes are regulated by a positive feedback loop or a negative feedback loop: (a) a person feels satiated after eating a large meal; (b) the blood has plenty of red blood cells, so erythropoietin — a hormone that stimulates the production of new red blood cells — is no longer released from the kidney." hint="In both cases, ask whether the body's response pushes the level further in the direction it was already moving, or pulls it back toward normal." >}}
+{{< selfcheck question="State whether each of the following processes are regulated by a positive feedback loop or a negative feedback loop. A person feels satiated after eating a large meal. The blood has plenty of red blood cells. As a result, erythropoietin, a hormone that stimulates the production of new red blood cells, is no longer released from the kidney." hint="Reread the Negative Feedback Mechanisms and Positive Feedback Loop subsections just above." >}}
 Both processes are the result of negative feedback loops. Negative feedback loops, which tend to keep a system at equilibrium, are more common than positive feedback loops.
 ===CHECKS===
 both processes are the result of negative feedback loops
@@ -98,7 +98,7 @@ The nervous system is important to **thermoregulation**, as illustrated below. T
 The body is able to regulate temperature in response to signals from the nervous system.
 {{< /mediafigure >}}
 
-{{< selfcheck question="When bacteria are destroyed by leukocytes, pyrogens are released into the blood. Pyrogens reset the body's thermostat to a higher temperature, resulting in fever. How might pyrogens cause the body temperature to rise?" hint="Think about what the hypothalamus does when it is reset to a higher set point — the same three responses the body uses when it is genuinely too cold." >}}
+{{< selfcheck question="When bacteria are destroyed by leukocytes, pyrogens are released into the blood. Pyrogens reset the body's thermostat to a higher temperature, resulting in fever. How might pyrogens cause the body temperature to rise?" hint="Look at the body-temperature flow chart just above and the paragraph below it." >}}
 Pyrogens increase body temperature by causing the blood vessels to constrict, inducing shivering, and stopping sweat glands from secreting fluid.
 ===CHECKS===
 causing the blood vessels to constrict
@@ -133,7 +133,7 @@ Homeostasis is a dynamic equilibrium that is maintained in body tissues and orga
 >}}
 
 {{< textin
-  question="It is in equilibrium because body functions are kept within a ________, with some fluctuations around a set point for the processes."
+  question="Homeostasis is in equilibrium because body functions are kept within a ________, with some fluctuations around a set point for the processes."
   answer="normal range"
   accept="specific range"
   hint="Look at the Section Summary's explanation of why homeostasis counts as an equilibrium."
@@ -147,10 +147,31 @@ Homeostasis is a dynamic equilibrium that is maintained in body tissues and orga
 
 ### Describe the factors affecting homeostasis
 
+{{< textin
+  question="The midpoint or target point in homeostasis is called the ________."
+  answer="set point"
+  accept="setpoint"
+  hint="Look at the first paragraph of Homeostatic Process."
+>}}
+
+{{< textin
+  question="When medication lowers blood pressure and also lowers the level that the blood-pressure feedback loop maintains, bringing it to a more healthy level, this is called a process of ________."
+  answer="alteration"
+  accept="alteration of the set point"
+  hint="Look at the paragraph on blood pressure and medication, after the positive-feedback figure."
+>}}
+
+{{< textin
+  question="In order to adjust to the lower oxygen levels at the new altitude, the body increases the number of ________ circulating in the blood to ensure adequate oxygen delivery to the tissues."
+  answer="red blood cells"
+  accept="erythrocytes|RBC"
+  hint="Look at the paragraph on an animal migrating to a higher altitude."
+>}}
+
 {{< multiplechoice
   question="Which of the following is not true about acclimatization?"
   answer="Acclimatization is passed on to offspring of acclimated individuals."
-  hint="Acclimatization is a change an individual animal's own body systems make in its lifetime, not a change to its genes."
+  hint="Reread the paragraph on an animal migrating to a higher altitude and on seasonal coats."
 >}}
 Acclimatization allows animals to compensate for changes in their environment.
 Acclimatization improves function in a new environment.
@@ -158,33 +179,13 @@ Acclimatization occurs when an animal tries to reestablish a homeostatic set poi
 Acclimatization is passed on to offspring of acclimated individuals.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How is a condition such as diabetes a good example of the failure of a set point in humans?" hint="Think about what the negative feedback loop for blood glucose normally does after a meal, and what fails to happen here." >}}
+{{< selfcheck question="How is a condition such as diabetes a good example of the failure of a set point in humans?" hint="Reread the Negative Feedback Mechanisms paragraph on blood glucose and the blood-sugar figure." >}}
 Diabetes is often associated with a lack in production of insulin. Without insulin, blood glucose levels go up after a meal, but never go back down to normal levels.
 ===CHECKS===
 diabetes is often associated with a lack in production of insulin
 without insulin, blood glucose levels go up after a meal
 blood glucose levels never go back down to normal levels
 {{< /selfcheck >}}
-
-{{< textin
-  question="A change of the set point in a homeostatic system is called an ________."
-  answer="alteration"
-  hint="Medication that lowers an elevated blood pressure set point to a healthier level is an example of this kind of change."
->}}
-
-{{< textin
-  question="Alteration in a body system in response to environmental change is called ________."
-  answer="acclimatization"
-  accept="acclimatisation|acclimation"
-  hint="An animal migrating to a higher altitude increasing its circulating red blood cells is an example."
->}}
-
-{{< textin
-  question="The midpoint or target point in homeostasis is called the ________."
-  answer="set point"
-  accept="setpoint"
-  hint="The body's systems usually attempt to return to this point after normal fluctuations away from it."
->}}
 
 ### Discuss positive and negative feedback mechanisms used in homeostasis
 
@@ -195,17 +196,10 @@ blood glucose levels never go back down to normal levels
   hint="Look at the second subsection under Control of Homeostasis."
 >}}
 
-{{< textin
-  question="Feedback to a control mechanism that increases or decreases a stimulus instead of maintaining it is called a ________."
-  answer="negative feedback loop"
-  accept="negative feedback"
-  hint="Look at the first subsection under Control of Homeostasis."
->}}
-
 {{< multiplechoice
   question="Which is an example of negative feedback?"
   answer="lowering of blood glucose after a meal"
-  hint="This is the option where the body's response moves a level back toward normal rather than pushing it further away."
+  hint="Look at the examples in the two subsections under Control of Homeostasis."
 >}}
 lowering of blood glucose after a meal
 blood clotting after an injury
@@ -213,7 +207,13 @@ lactation during nursing
 uterine contractions during labor
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why are negative feedback loops used to control body homeostasis?" hint="Consider what a feedback loop that pushed a level even further from normal, rather than back toward it, would do to the animal." >}}
+{{< textin
+  question="However, if an animal has not eaten and blood glucose levels decrease, this is sensed in another group of cells in the pancreas, and the hormone ________ is released causing glucose levels to increase."
+  answer="glucagon"
+  hint="Look at the first subsection under Control of Homeostasis."
+>}}
+
+{{< selfcheck question="Why are negative feedback loops used to control body homeostasis?" hint="Reread the Control of Homeostasis paragraph and its two feedback subsections." >}}
 An adjustment to a change in the internal or external environment requires a change in the direction of the stimulus. A negative feedback loop accomplishes this, while a positive feedback loop would continue the stimulus and result in harm to the animal.
 ===CHECKS===
 an adjustment to a change in the environment requires a change in the direction of the stimulus
@@ -226,7 +226,7 @@ a positive feedback loop would continue the stimulus and result in harm to the a
 {{< multiplechoice
   question="When faced with a sudden drop in environmental temperature, an endothermic animal will:"
   answer="increase muscle activity to generate heat"
-  hint="An endotherm's fastest response is a physiological reflex, not a change to its coat, which takes much longer to grow in."
+  hint="Reread the last paragraph of Heat Conservation and Dissipation."
 >}}
 experience a drop in its body temperature
 wait to see if it goes lower
@@ -237,7 +237,7 @@ add fur or fat to increase insulation
 {{< multiplechoice
   question="Which method of heat exchange occurs during direct contact between the source and animal?"
   answer="conduction"
-  hint="Think about an animal resting directly on a warm rock."
+  hint="Look at the paragraph on the four heat-exchange mechanisms and the four-panel figure below it."
 >}}
 radiation
 evaporation
@@ -248,7 +248,7 @@ conduction
 {{< multiplechoice
   question="The body's thermostat is located in the ________."
   answer="hypothalamus"
-  hint="Look at Homeostasis: Thermoregulation and Neural Control of Thermoregulation for where the set point for body temperature is maintained."
+  hint="Look at the section's final subsection, below its body-temperature flow chart."
 >}}
 homeostatic receptor
 hypothalamus
@@ -267,7 +267,7 @@ Seek out or avoid direct sunlight.
 Huddle in a group.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is a fever a \"good thing\" during a bacterial infection?" hint="Consider how raising body temperature affects the host's own enzymes differently from the invading bacteria's enzymes." >}}
+{{< selfcheck question="Why is a fever a \"good thing\" during a bacterial infection?" hint="Reread the paragraph on fever that closes the section and the paragraph on enzyme activity and body temperature." >}}
 Mammalian enzymes increase activity to the point of denaturation, increasing the chemical activity of the cells involved. Bacterial enzymes have a specific temperature for their most efficient activity and are inhibited at either higher or lower temperatures. Fever results in an increase in the destruction of the invading bacteria by increasing the effectiveness of body defenses and an inhibiting bacterial metabolism.
 ===CHECKS===
 mammalian enzymes increase activity to the point of denaturation
@@ -276,7 +276,7 @@ fever increases the destruction of the invading bacteria by increasing the effec
 an inhibiting bacterial metabolism
 {{< /selfcheck >}}
 
-{{< selfcheck question="On a molecular level, how can endotherms produce their own heat by adjusting processes associated with cellular respiration?" hint="Recall what the proton gradient across the inner mitochondrial membrane normally drives ATP synthase to do, and what happens when protons bypass that channel." >}}
+{{< selfcheck question="On a molecular level, how can endotherms produce their own heat by adjusting processes associated with cellular respiration? If needed, review Ch. 7 for details on respiration." hint="This section touches it only in the Heat Conservation and Dissipation paragraph on metabolic waste heat; the mechanism is in Chapter 7." >}}
 Animals are capable of thermal uncoupling when they need to generate heat to maintain their body temperatures. In this process, an uncoupling protein provides a channel in the inner mitochondrial membrane that allows protons to leave the lumen without moving through the ATP synthase. This generates heat rather than chemical energy as the final product of cellular respiration.
 ===CHECKS===
 animals are capable of thermal uncoupling when they need to generate heat
@@ -287,9 +287,9 @@ this generates heat rather than chemical energy as the final product of cellular
 {{< textin
   question="Regulation of body temperature is called ________."
   answer="thermoregulation"
-  hint="Look at the opening paragraph of the subsection that follows Control of Homeostasis."
+  hint="Look at the first sentence of the section's final subsection."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 33.3: Homeostasis](https://openstax.org/books/biology-2e/pages/33-3-homeostasis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_33_03_01 and Figure_B33_04_03 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (both are drawn flow charts, not photographs — Figure_33_03_01 embeds one small photo of a pizza inside its top box, and Figure_B33_04_03 is a fully drawn diagram); a longdesc added to Figure_33_03_01, Figure_33_03_02, and Figure_B33_04_03, the three cyclic flow-chart figures whose box text and arrow structure are not carried by their one-line captions; a custom alt written for Figure_33_03_03 describing what each of the four photo panels shows rather than reusing the source's bare "Photo A/B/C/D" alt; inline figure references ("as illustrated in", parenthetical figure links) changed to descriptive phrases ("illustrated below," "pictured below") since figures are not numbered here; both feature boxes rendered as Link to Learning callouts, keeping the source's own openstax.org/l/ redirect URLs; the two visual-connection notes (Positive Feedback Loop's feedback-loop classification and Neural Control of Thermoregulation's pyrogen question) kept in the body immediately after their figures and rendered as self-checks, since the source keys both to prose solutions rather than lettered options, using the separately printed Visual Connection Question copy for each (fs-idp20380880, fs-idp77964000) rather than the note copy; the first visual connection's note copy prints "State whether each of the following processes **is** regulated..." while its matching exercise copy prints "...processes **are** regulated..." — a grammatical mismatch between the two printings of the same item; the six end-of-section Review Questions and four Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), sorted under the objective each supports; rubric checkpoints added to each self-check (the two body self-checks and the four in Practice), decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (homeostasis, set point, alteration, acclimatization, negative feedback loop, positive feedback loop, thermoregulation) added from the glossary; a summary-derived cloze recall item ("normal range") and a body-derived cloze item ("steady state," from the section's opening sentence, in place of a "dynamic equilibrium" cloze that re-asked the homeostasis recall item in reverse) added under the first objective, which the source's own exercise sets do not otherwise test; in the feedback group the two feedback-loop recall items are placed before the negative-feedback Review Question, whose relative order with the Critical Thinking Question is unchanged.</small>
+<small>This section is adapted from [Biology 2e, Section 33.3: Homeostasis](https://openstax.org/books/biology-2e/pages/33-3-homeostasis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_33_03_01 and Figure_B33_04_03 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (both are drawn flow charts, not photographs — Figure_33_03_01 embeds one small photo of a pizza inside its top box, and Figure_B33_04_03 is a fully drawn diagram); a longdesc added to Figure_33_03_01, Figure_33_03_02, and Figure_B33_04_03, the three cyclic flow-chart figures whose box text and arrow structure are not carried by their one-line captions; a custom alt written for Figure_33_03_03 describing what each of the four photo panels shows rather than reusing the source's bare "Photo A/B/C/D" alt; inline figure references ("as illustrated in", parenthetical figure links) changed to descriptive phrases ("illustrated below," "pictured below") since figures are not numbered here; both feature boxes rendered as Link to Learning callouts, keeping the source's own openstax.org/l/ redirect URLs; the two visual-connection notes (Positive Feedback Loop's feedback-loop classification and Neural Control of Thermoregulation's pyrogen question) kept in the body immediately after their figures and rendered as self-checks, since the source keys both to prose solutions rather than lettered options, using the separately printed Visual Connection Question copy for each (fs-idp20380880, fs-idp77964000) rather than the note copy; the first visual connection's note copy prints "State whether each of the following processes **is** regulated..." while its matching exercise copy prints "...processes **are** regulated..." — a grammatical mismatch between the two printings of the same item; the six end-of-section Review Questions and four Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), sorted under the objective each supports, so the Review Questions run in the order 5, 2, 1, 3, 4, 6 of the source's numbering and the Critical Thinking Questions 3, 1, 2, 4; the first Visual Connection's two listed processes run into its stem as sentences; rubric checkpoints added to each self-check (the two body self-checks and the four in Practice), decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (homeostasis, set point, alteration, positive feedback loop, thermoregulation) added from the glossary, the alteration prompt worded from the module's own blood-pressure sentence so that it does not print the set-point item's key; a summary-derived cloze recall item ("normal range") and a body-derived cloze item ("steady state," from the section's opening sentence, in place of a "dynamic equilibrium" cloze that re-asked the homeostasis recall item in reverse) added under the first objective, which the source's own exercise sets do not otherwise test; two body-derived cloze items ("red blood cells," from the acclimatization paragraph, and "glucagon," from the negative-feedback paragraph) in place of acclimatization and negative-feedback-loop recall items that re-asked the acclimatization and negative-feedback Review Questions in reverse; the summary cloze's opening "It" replaced by the "Homeostasis" it refers to; and the set-point, alteration, red-blood-cell, and positive-feedback-loop recall items placed ahead of the Review and Critical Thinking Questions in their groups.</small>

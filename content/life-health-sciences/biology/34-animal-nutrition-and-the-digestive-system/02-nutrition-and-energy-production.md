@@ -160,7 +160,7 @@ Animal diet should be balanced and meet the needs of the body. Carbohydrates, pr
 
 ### Explain why an animal’s diet should be balanced and meet the needs of the body
 
-{{< selfcheck question="There are several nations where malnourishment is a common occurrence. What may be some of the health challenges posed by malnutrition?" hint="Malnutrition is not just too little food overall — think about what specific nutrients might also be missing." >}}
+{{< selfcheck question="There are several nations where malnourishment is a common occurrence. What may be some of the health challenges posed by malnutrition?" hint="Look at the Deficiencies Can Lead To columns of the section's vitamin and mineral tables." >}}
 Malnutrition, often in the form of not getting enough calories or not enough of the essential nutrients, can have severe consequences. Many malnourished children have vision and dental problems, and over the years may develop many serious health problems.
 ===CHECKS===
 not getting enough calories or not enough of the essential nutrients
@@ -172,19 +172,18 @@ may develop many serious health problems
   question="Animal diet should be ________ and meet the needs of the body."
   answer="balanced"
   accept="well balanced"
-  hint="This is the quality a diet needs to provide everything the body requires — not just abundant food, but food proportioned across groups."
+  hint="Look at the Section Summary's opening sentence."
 >}}
 
 {{< textin
-  question="The diet must be balanced to provide the minerals and vitamins that are required for ________."
-  answer="cellular function"
-  accept="cell function"
-  hint="Look at the opening sentence of Food Requirements."
+  question="The animal diet is the source of materials needed for building DNA and other complex molecules needed for growth, maintenance, and reproduction; collectively these processes are called ________."
+  answer="biosynthesis"
+  hint="Look at the section's opening paragraph."
 >}}
 
 ### Define the primary components of food
 
-{{< selfcheck question="In the 1990s fat-free foods became popular among people trying to lose weight. However, many dieticians now conclude that the fat-free trend made people less healthy and heavier. Describe how this could occur." hint="Consider fat's roles beyond calories — for hormones, vitamin absorption, and the brain's hunger signal — and what cutting it out might do to appetite and overall intake." >}}
+{{< selfcheck question="In the 1990s fat-free foods became popular among people trying to lose weight. However, many dieticians now conclude that the fat-free trend made people less healthy and heavier. Describe how this could occur." hint="Look at the second paragraph of Organic Precursors and at the Obesity feature under Food Energy and ATP." >}}
 Fats are an essential component of a healthy diet, and needed by the body to function. Fats are essential for many processes, including the absorption of fat-soluble vitamins and production of some hormones. Fats also send a satiation signal to the brain that regulates hunger. Without fats in their diets many people may have actually consumed more calories, which would have resulted in weight gain.
 ===CHECKS===
 fats are an essential component of a healthy diet, needed by the body to function
@@ -196,7 +195,7 @@ without fats, many people may have consumed more calories, resulting in weight g
 {{< textin
   question="During digestion, digestible carbohydrates are ultimately broken down into ________ and used to provide energy through metabolic pathways."
   answer="glucose"
-  hint="Look at the second paragraph of Food Energy and ATP."
+  hint="Look at the first paragraph of Organic Precursors."
 >}}
 
 {{< multiplechoice
@@ -204,9 +203,9 @@ without fats, many people may have consumed more calories, resulting in weight g
   answer="primary components"
   hint="Reread the Section Summary's opening sentences."
 >}}
-primary components
 essential nutrients
-organic precursors
+primary components
+minerals
 essential amino acids
 {{< /multiplechoice >}}
 
@@ -215,7 +214,7 @@ essential amino acids
 {{< multiplechoice
   question="Which of the following statements is not true?"
   answer="Essential nutrients can be synthesized by the body."
-  hint="Re-read the definition of an essential nutrient in this section for what makes it 'essential.'"
+  hint="Look at the Essential Nutrients subsection."
 >}}
 Essential nutrients can be synthesized by the body.
 Vitamins are required in small quantities for bodily function.
@@ -226,7 +225,7 @@ Vitamins come in two categories: fat-soluble and water-soluble.
 {{< multiplechoice
   question="Which of the following is a water-soluble vitamin?"
   answer="vitamin C"
-  hint="Three of these four options are fat-soluble, listed together in the section's second vitamin table."
+  hint="Compare the section's two vitamin tables."
 >}}
 vitamin A
 vitamin E
@@ -234,14 +233,14 @@ vitamin K
 vitamin C
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are essential nutrients?" hint="Think about where these nutrients must come from, since the body itself cannot make them." >}}
+{{< selfcheck question="What are essential nutrients?" hint="Look at the opening paragraph of Essential Nutrients." >}}
 Essential nutrients are those nutrients that must be obtained from the diet because they cannot be produced by the body. Vitamins and minerals are examples of essential nutrients.
 ===CHECKS===
 must be obtained from the diet because they cannot be produced by the body
 vitamins and minerals are examples of essential nutrients
 {{< /selfcheck >}}
 
-{{< selfcheck question="What is the role of minerals in maintaining good health?" hint="Consider what happens to everyday physical processes that rely on trace amounts of these inorganic cofactors when they go missing." >}}
+{{< selfcheck question="What is the role of minerals in maintaining good health?" hint="Look at the Function and Deficiencies Can Lead To columns of the minerals table." >}}
 Minerals—such as potassium, sodium, and calcium—are required for the functioning of many cellular processes, including muscle contraction and nerve conduction. While minerals are required in trace amounts, not having minerals in the diet can be potentially harmful.
 ===CHECKS===
 required for the functioning of many cellular processes, including muscle contraction and nerve conduction
@@ -250,37 +249,34 @@ not having minerals in the diet can be potentially harmful
 {{< /selfcheck >}}
 
 {{< textin
+  question="The omega-3 alpha-linolenic acid and the omega-6 linoleic acid are essential ________ needed to make some membrane phospholipids."
+  answer="fatty acids"
+  accept="essential fatty acids"
+  hint="Look at the opening sentence of the Essential Nutrients subsection's second paragraph."
+>}}
+
+{{< textin
   question="Vitamins are another class of essential organic molecules that are required in small quantities for many enzymes to function and, for this reason, are considered to be ________."
   answer="coenzymes"
   hint="Look at the Essential Nutrients subsection, at the sentence that introduces vitamins."
 >}}
 
-{{< sortbins question="Sort each vitamin into the category the section lists it under." hint="The section notes that dietary fat aids the absorption of one of these two categories — figure out which one from its name." >}}
-{"bins": ["Water-soluble", "Fat-soluble"],
- "items": [
-  {"label": "Vitamin B₁ (Thiamine)", "bin": 0},
-  {"label": "Vitamin A (Retinol)", "bin": 1},
-  {"label": "Vitamin C (Ascorbic acid)", "bin": 0},
-  {"label": "Vitamin D", "bin": 1},
-  {"label": "Vitamin B₉ (Folic acid)", "bin": 0},
-  {"label": "Vitamin E (Tocopherol)", "bin": 1},
-  {"label": "Vitamin B₃ (Niacin)", "bin": 0},
-  {"label": "Vitamin K (Phylloquinone)", "bin": 1},
-  {"label": "Vitamin B₆ (Pyridoxine)", "bin": 0},
-  {"label": "Vitamin B₁₂ (Cobalamin)", "bin": 0}]}
-{{< /sortbins >}}
-
 {{< textin
-  question="An inorganic, elemental molecule that carries out important roles in the body is called a ________."
-  answer="mineral"
-  hint="Calcium, sodium, and potassium are examples, each obtained from food rather than made by the body."
+  question="Among their many functions, minerals help in structure and regulation and are considered ________."
+  answer="cofactors"
+  hint="Look at the Essential Nutrients subsection, at the sentences on minerals."
 >}}
 
-{{< textin
-  question="An organic substance necessary in small amounts to sustain life is called a ________."
-  answer="vitamin"
-  hint="Look at the Essential Nutrients subsection and the two tables that follow it."
+{{< multiplechoice
+  question="A deficiency of which mineral can lead to goiter?"
+  answer="iodine"
+  hint="Look at the Deficiencies Can Lead To column of the minerals table."
 >}}
+iron
+calcium
+iodine
+zinc
+{{< /multiplechoice >}}
 
 ### Explain how energy is produced through diet and digestion
 
@@ -295,7 +291,7 @@ protein
 glycogen
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Generally describe how a piece of bread can power your legs as you walk up a flight of stairs." hint="Trace the bread's path organ by organ, from the mouth through to the muscle cells that finally use the ATP." >}}
+{{< selfcheck question="Generally describe how a piece of bread can power your legs as you walk up a flight of stairs." hint="Look at Food Energy and ATP; the steps of digestion are in Section 34.3, Digestive System Processes." >}}
 A piece of bread is eaten and converted into chemical energy. The bread is broken down in the mouth by mastication and salivary enzymes, then transferred to the stomach for further digestion. After digestion by the acid and digestive enzymes in the stomach, the macromolecules that made up the bread move into the small intestine. In the small intestine, the carbohydrates from the bread are absorbed through the microvilli into the bloodstream. In muscle cells in the legs, the carbohydrates can be broken down into glucose, and then used for cellular respiration to create ATP. The muscles in the leg then use the ATP to perform the mechanical work needed to climb a flight of stairs.
 ===CHECKS===
 the bread is broken down in the mouth by mastication and salivary enzymes, then transferred to the stomach for further digestion
@@ -308,6 +304,7 @@ the muscles use the ATP to perform the mechanical work needed to climb a flight 
 {{< textin
   question="ATP is the ________ of the cell and is obtained from the metabolic pathways."
   answer="energy currency"
+  accept="primary energy currency"
   hint="Look at the third paragraph of Food Energy and ATP, or the Section Summary."
 >}}
 
@@ -318,7 +315,7 @@ the muscles use the ATP to perform the mechanical work needed to climb a flight 
   answer="glycogen"
   hint="Look at the fourth paragraph of Food Energy and ATP, on what happens when ATP and glucose exceed the body's requirements."
 >}}
-fat
+cellulose
 glucagon
 glycogen
 it is not stored in the body
@@ -335,7 +332,7 @@ The glucose from the carbohydrates lets the muscles make excess ATP overnight.
 The excess carbohydrates can be stored in the muscles as glycogen.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Discuss why obesity is a growing epidemic." hint="Consider the two lifestyle trends the section names as contributors, both connected to the Let's Move! campaign discussed earlier." >}}
+{{< selfcheck question="Discuss why obesity is a growing epidemic." hint="Look at the Let's Move! Campaign feature under Food Requirements." >}}
 In the United States, obesity, particularly childhood obesity, is a growing concern. Some of the contributors to this situation include sedentary lifestyles and consuming more processed foods and less fruits and vegetables. As a result, even young children who are obese can face health concerns.
 ===CHECKS===
 sedentary lifestyles
@@ -345,4 +342,4 @@ even young children who are obese can face health concerns
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 34.2: Nutrition and Energy Production](https://openstax.org/books/biology-2e/pages/34-2-nutrition-and-energy-production) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B34_02_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a flat plate infographic/logo, not a captured photograph); both figure references in the prose ("illustrated graphically in [link]," "listed in [link]") rewritten as descriptive references to the figure or table below rather than a print number; the Link to Learning note and both Everyday Connection notes (Let's Move! Campaign, Obesity) rendered as callouts, each Everyday Connection keeping its bold name followed by its source title in italics; the Let's Move! note's link kept pointing at the module's own `openstax.org/l/Letsmove` redirect, with the visible link text set to the destination URL the module itself prints as the link's wording; the four vitamin/mineral/amino-acid tables (34.1–34.4) transcribed in full as Markdown tables, each preceded by its source spanning title row rendered as a bold line (Markdown tables cannot span a header cell across columns); the asterisk footnote below Table 34.3 ("*Greater than 200mg/day required") and below Table 34.4 (the histidine/arginine note) kept as plain text below their tables rather than as a table row, for the same reason; vitamin B-numbers set as Unicode subscripts and NAD/NADP charges as a trailing Unicode superscript, matching the book's chemical-notation convention; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; two key-term recall items (mineral, vitamin) added from the glossary, plus a cloze item ("coenzymes") from the section's own sentence introducing vitamins, in place of an essential-nutrient recall item that re-asked the Critical Thinking question "What are essential nutrients?" in reverse; two cloze recall items (balanced; energy currency) and one select-the-term multiple choice ("primary components") added from the section summary to strengthen the "balanced diet" and "primary components" objectives, which the glossary and exercise sets do not test directly; two local cloze items built strictly from the section's own sentences — "cellular function" from its opening sentence, to cover the "balanced diet" objective a third time since the module keys only one Critical Thinking question to it, and "glucose" from its digestion sentence, to cover the "primary components" objective a third time; a sortbins exercise added, built from the fat-soluble/water-soluble split across Tables 34.1 and 34.2 (ten of the thirteen listed vitamins, interleaved), per the module's own category distinction between the two tables. One table cell is corrected with a visible Source note: blood clotting is dropped from the vitamin D row, where the table's own vitamin K row places it.</small>
+<small>This section is adapted from [Biology 2e, Section 34.2: Nutrition and Energy Production](https://openstax.org/books/biology-2e/pages/34-2-nutrition-and-energy-production) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B34_02_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a flat plate infographic/logo, not a captured photograph); both figure references in the prose ("illustrated graphically in [link]," "listed in [link]") rewritten as descriptive references to the figure or table below rather than a print number; the Link to Learning note and both Everyday Connection notes (Let's Move! Campaign, Obesity) rendered as callouts, each Everyday Connection keeping its bold name followed by its source title in italics; the Let's Move! note's link kept pointing at the module's own `openstax.org/l/Letsmove` redirect, with the visible link text set to the destination URL the module itself prints as the link's wording; the four vitamin/mineral/amino-acid tables (34.1–34.4) transcribed in full as Markdown tables, each preceded by its source spanning title row rendered as a bold line (Markdown tables cannot span a header cell across columns); the asterisk footnote below Table 34.3 ("*Greater than 200mg/day required") and below Table 34.4 (the histidine/arginine note) kept as plain text below their tables rather than as a table row, for the same reason; vitamin B-numbers set as Unicode subscripts and NAD/NADP charges as a trailing Unicode superscript, matching the book's chemical-notation convention; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Critical Thinking Questions run in the order 4, 6, 1, 2, 5, 3 of the source's numbering; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; no key-term recall items, since the source's own questions already ask about all three glossary terms (essential nutrient, mineral, vitamin); seven cloze items built from single sentences of the section instead — "balanced" and "energy currency" from the Section Summary, and "biosynthesis," "glucose," "fatty acids," "coenzymes," and "cofactors" from the body; a select-the-term multiple choice ("primary components") added from the Section Summary; a multiple choice on the mineral whose deficiency can lead to goiter, built from the minerals table's Iodine row; the vitamin tables' fat-soluble/water-soluble split is left to the source Review Question that asks it rather than repeated as a sort-into-bins. One table cell is corrected with a visible Source note: blood clotting is dropped from the vitamin D row, where the table's own vitamin K row places it. The Review Question "Excess glucose is stored as ________" has its option "fat" replaced by "cellulose," a polysaccharide the section says humans cannot make use of, because the section also says excess food is stored "in fat cells" and that excess glycogen is converted to fats, which made "fat" a second key; key "glycogen" unchanged.</small>

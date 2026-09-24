@@ -35,7 +35,7 @@ The amount of each of the four major components of soil depends on the amount of
 The four major components of soil are shown: inorganic minerals, organic matter, water, and air.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Soil compaction can result when soil is compressed by heavy machinery or even foot traffic. How might this compaction change the soil composition?" hint="Think about what happens to the pore space between soil particles when soil is compressed, and which of the pie chart's four components fills that pore space." >}}
+{{< selfcheck question="Soil compaction can result when soil is compressed by heavy machinery or even foot traffic. How might this compaction change the soil composition?" hint="Compare the pie chart with the Soil Formation paragraph on pore space." >}}
 The air content of the soil decreases.
 ===CHECKS===
 the air content of the soil
@@ -82,7 +82,7 @@ Soils are named and classified based on their horizons. The soil profile has fou
 This soil profile shows the different soil layers (O horizon, A horizon, B horizon, and C horizon) found in typical soils. (credit: modification of work by USDA)
 {{< /mediafigure >}}
 
-{{< selfcheck question="Which horizon is considered the topsoil, and which is considered the subsoil?" hint="One of the four horizons is described above as the two-to-three-inch top layer of soil; another is explicitly named by its alternate one-word name earlier in this section's list of the four layers." >}}
+{{< selfcheck question="Which horizon is considered the topsoil, and which is considered the subsoil?" hint="See the paragraph above the soil-profile figure: its list of the four layers and its topsoil sentences." >}}
 The A horizon is the topsoil, and the B horizon is subsoil.
 ===CHECKS===
 the A horizon is the topsoil
@@ -138,9 +138,9 @@ Soil formation results from a combination of biological, physical, and chemical 
 ### Describe how soils are formed
 
 {{< textin
-  question="The organic and inorganic material in which soils form is called the ________."
-  answer="parent material"
-  hint="Reread the first of the five soil-formation subsections."
+  question="Besides soils that form from the weathering of the rock beneath them, other soils form in materials that came from elsewhere, such as sand and ________."
+  answer="glacial drift"
+  hint="See the first of the five soil-formation subsections."
 >}}
 
 {{< multiplechoice
@@ -157,7 +157,7 @@ all of the above
 {{< multiplechoice
   question="What is the term used to describe the solid rock that lies beneath the soil?"
   answer="bedrock"
-  hint="Mineral soils form directly from the weathering of this material, and share its original composition."
+  hint="See the first of the five soil-formation subsections."
 >}}
 sand
 bedrock
@@ -176,7 +176,7 @@ biological factors include the presence of living organisms that greatly affect 
 time affects soil because soil develops over long periods
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe how topography influences the characteristics and fertility of a soil." hint="Think about what topography does to water as it runs off the land, and which kind of terrain that process erodes fastest." >}}
+{{< selfcheck question="Describe how topography influences the characteristics and fertility of a soil." hint="See the third of the five soil-formation subsections." >}}
 Topography affects water runoff, which strips away parent material and affects plant growth. Steep soils are more prone to erosion and may be thinner than soils that are on level surfaces.
 ===CHECKS===
 topography affects water runoff
@@ -190,7 +190,7 @@ may be thinner than soils that are on level surfaces
 {{< multiplechoice
   question="Soil particles that are 0.1 to 2 mm in diameter are called ________."
   answer="sand"
-  hint="These are the largest of the three named mineral particle sizes."
+  hint="See the paragraph after the soil-composition pie chart."
 >}}
 sand
 silt
@@ -201,10 +201,10 @@ loam
 {{< textin
   question="The organic material of soil, made up of microorganisms and dead animals and plants in varying stages of decay, is called ________."
   answer="humus"
-  hint="This material improves soil structure and provides plants with water and minerals."
+  hint="See the paragraph after the soil-composition pie chart."
 >}}
 
-{{< selfcheck question="Describe the main differences between a mineral soil and an organic soil." hint="One forms from sedimentation, the other from the weathering of rock; each is named for what it is mostly composed of as a result." >}}
+{{< selfcheck question="Describe the main differences between a mineral soil and an organic soil." hint="See the section's second paragraph, before the Soil Composition heading." >}}
 A mineral soil forms from the weathering of rocks; it is inorganic material. An organic soil is formed from sedimentation; it mostly consists of humus.
 ===CHECKS===
 a mineral soil forms from the weathering of rocks
@@ -222,15 +222,29 @@ it mostly consists of humus
 ### Describe a soil profile
 
 {{< textin
-  question="The vertical section of a soil, made up of distinct layers, is called the ________."
-  answer="soil profile"
-  hint="Soil scientists divide this vertical section into zones called horizons."
+  question="The soil layer with freshly decomposing organic matter at its surface and decomposed vegetation at its base is called the ________."
+  answer="O horizon"
+  hint="Reread the Physical Properties of the Soil paragraph that lists the four soil layers in order."
+>}}
+
+{{< textin
+  question="The soil layer that is an accumulation of mostly fine material that has moved downward, resulting in a dense layer, is called the ________."
+  answer="B horizon"
+  accept="subsoil"
+  hint="See the Physical Properties of the Soil paragraph, after its topsoil sentences."
+>}}
+
+{{< textin
+  question="The soil layer that includes the parent material, plus the organic and inorganic material that is broken down to form soil, is called the ________."
+  answer="C horizon"
+  accept="soil base"
+  hint="See the end of the Physical Properties of the Soil paragraph."
 >}}
 
 {{< multiplechoice
   question="A soil consists of layers called ________ that taken together are called a ________."
   answer="horizons : soil profile"
-  hint="The smaller term names one layer; the larger term names the whole vertical stack of them."
+  hint="See the second paragraph of Soil Formation."
 >}}
 soil profiles : horizon
 horizons : soil profile
@@ -238,18 +252,6 @@ horizons : humus
 humus : soil profile
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The soil layer with freshly decomposing organic matter at its surface and decomposed vegetation at its base is called the ________."
-  answer="O horizon"
-  hint="Reread the Physical Properties of the Soil paragraph that lists the four soil layers in order."
->}}
-
-{{< textin
-  question="A soil layer with distinct physical and chemical properties that differ from those of other layers is called a ________."
-  answer="horizon"
-  hint="A soil profile is built from a stack of these zones."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 31.2: The Soil](https://openstax.org/books/biology-2e/pages/31-2-the-soil) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; a longdesc added to the two Visual Connection diagrams (the soil-composition pie chart, Figure_31_02_01, and the soil-horizon cross-section, Figure_31_02_02), whose percentage and depth labels are not fully carried by their one-line captions, the second written to avoid stating which horizon is topsoil and which is subsoil, the answer to the question beneath it; the two notes of class `visual-connection` rendered as their figure followed by a self-check, kept in the body, since both are keyed with prose solutions rather than a choice; the `interactive` and `career` notes rendered as a Link to Learning callout with descriptive link text and a Career Connection callout keeping its title and figure; the Career Connection's closing footnote citation kept as a parenthetical after the sentence it supports; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (parent material, humus, loam, soil profile, horizon, O horizon) added from the glossary to round out all three Practice groups with an auto-graded item each; and the Topography subsection's "Stees soils are more prone to erosion," repeated verbatim in the Critical Thinking solution for "Describe how topography influences the characteristics and fertility of a soil," corrected to "Steep soils are more prone to erosion" in both places — the printed edition sets the same sentence as "Steeps soils," a different misreading of the same word, confirming the CNXML's "Stees" is not a deliberate spelling — a source defect.</small>
+<small>This section is adapted from [Biology 2e, Section 31.2: The Soil](https://openstax.org/books/biology-2e/pages/31-2-the-soil) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; a longdesc added to the two Visual Connection diagrams (the soil-composition pie chart, Figure_31_02_01, and the soil-horizon cross-section, Figure_31_02_02), whose percentage and depth labels are not fully carried by their one-line captions, the second written to avoid stating which horizon is topsoil and which is subsoil, the answer to the question beneath it; the two notes of class `visual-connection` rendered as their figure followed by a self-check, kept in the body, since both are keyed with prose solutions rather than a choice; the `interactive` and `career` notes rendered as a Link to Learning callout with descriptive link text and a Career Connection callout keeping its title and figure; the Career Connection's closing footnote citation kept as a parenthetical after the sentence it supports; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (humus, loam, O horizon, B horizon, C horizon) added from the glossary and one cloze recall item (glacial drift) from the Parent Material subsection, to round out all three Practice groups with an auto-graded item each; the Review and Critical Thinking Questions placed under the objectives they test, which changes their source order — the Review Questions run soil quality, bedrock, sand, horizons (source order: soil quality, sand, horizons, bedrock), and the Critical Thinking Questions run soil-formation factors, topography, mineral versus organic soil (source order: mineral versus organic soil, soil-formation factors, topography); and the Topography subsection's "Stees soils are more prone to erosion," repeated verbatim in the Critical Thinking solution for "Describe how topography influences the characteristics and fertility of a soil," corrected to "Steep soils are more prone to erosion" in both places — the printed edition sets the same sentence as "Steeps soils," a different misreading of the same word, confirming the CNXML's "Stees" is not a deliberate spelling — a source defect.</small>

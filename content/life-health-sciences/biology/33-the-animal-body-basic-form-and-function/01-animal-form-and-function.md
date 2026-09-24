@@ -140,10 +140,24 @@ Animal bodies come in a variety of sizes and shapes. Limits on animal size and s
 
 ### Describe the various types of body plans that occur in animals
 
+{{< textin
+  question="The plane cutting through an animal that separates it into upper and lower portions is called the ________."
+  answer="transverse plane"
+  accept="horizontal plane|transverse (horizontal) plane|transverse|horizontal"
+  hint="Look at the paragraph describing the body planes and at the body-planes figure."
+>}}
+
+{{< textin
+  question="The plane cutting through an animal that separates it into right and left sides, without requiring the two sides to be equal, is called the ________."
+  answer="sagittal plane"
+  accept="sagittal"
+  hint="Look at the first plane described in the body-planes paragraph."
+>}}
+
 {{< multiplechoice
   question="The symmetry found in animals that move swiftly is ________."
   answer="bilateral"
-  hint="Look at the Body Plans paragraphs on symmetry and at the body-symmetry figure, then at which kind of animal each symmetry suits."
+  hint="Look at the Body Plans paragraph and the body-symmetry figure."
 >}}
 radial
 bilateral
@@ -154,7 +168,7 @@ interrupted
 {{< multiplechoice
   question="Although most animals are bilaterally symmetrical, a few exhibit radial symmetry. What is an advantage of radial symmetry?"
   answer="It allows the animal to gather food from all sides."
-  hint="Reread the Body Plans paragraph that follows the definition of radial symmetry and the kinds of animals that have it."
+  hint="Reread the Body Plans paragraph, at its sentences on radial symmetry."
 >}}
 It confuses predators.
 It allows the animal to gather food from all sides.
@@ -175,8 +189,8 @@ transverse
 
 {{< multiplechoice
   question="A plane that divides an animal into dorsal and ventral portions is ________."
-  answer="transverse"
-  hint="Look at the paragraph describing the body planes and at the body-planes figure; note which plane separates upper from lower."
+  answer="coronal"
+  hint="Look at the goat in the body-planes figure and at which labeled plane separates its back from its belly."
 >}}
 sagittal
 midsagittal
@@ -195,23 +209,9 @@ abdominal cavity
 pericardial cavity
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The plane cutting through an animal that separates it into front and back portions is called the ________."
-  answer="frontal plane"
-  accept="coronal plane|frontal (coronal) plane|frontal|coronal"
-  hint="Look at the paragraph describing the body planes and at the body-planes figure."
->}}
-
-{{< textin
-  question="The plane cutting through an animal that separates it into right and left sides, without requiring the two sides to be equal, is called the ________."
-  answer="sagittal plane"
-  accept="sagittal"
-  hint="Look at the first plane described in the body-planes paragraph."
->}}
-
 ### Describe limits on animal size and shape
 
-{{< selfcheck question="How does diffusion limit the size of an organism? How is this counteracted?" hint="Consider what happens at the center of a cell once the cell grows past the distance diffusion can effectively cover." >}}
+{{< selfcheck question="How does diffusion limit the size of an organism? How is this counteracted?" hint="Reread the Limiting Effects of Diffusion on Size and Development subsection." >}}
 Diffusion is effective over a very short distance. If a cell exceeds this distance in its size, the center of the cell cannot get adequate nutrients nor can it expel enough waste to survive. To compensate for this, cells can loosely adhere to each other in a liquid medium, or develop into multi-celled organisms that use circulatory and respiratory systems to deliver nutrients and remove wastes.
 ===CHECKS===
 diffusion is effective over a very short distance
@@ -220,7 +220,7 @@ cells can loosely adhere to each other in a liquid medium
 or develop into multi-celled organisms that use circulatory and respiratory systems to deliver nutrients and remove wastes
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain how using an open circulatory system constrains the size of animals." hint="Think about how far blood must diffuse through the tissue space once it leaves an open cavity, rather than staying inside vessels." >}}
+{{< selfcheck question="Explain how using an open circulatory system constrains the size of animals." hint="Reread the Limiting Effects of Diffusion on Size and Development subsection; open circulatory systems are described in Section 40.1." >}}
 In an open circulatory system, the heart(s) pump blood into an open cavity, bathing the tissues. As the blood diffuses through the tissue space, it delivers nutrients in exchange for receiving metabolic wastes. The blood then diffuses back to the heart to be pumped again. However, since this system relies on diffusion, the size of animals that use an open circulatory system is limited to fairly small volumes so that the blood can diffuse rapidly enough to efficiently exchange molecules with the tissues.
 ===CHECKS===
 the heart pumps blood into an open cavity, bathing the tissues
@@ -232,16 +232,29 @@ this limits animals with an open circulatory system to fairly small volumes, so 
 {{< textin
   question="An animal body shape that is tubular and tapered at both ends is called ________."
   answer="fusiform"
-  hint="This shape decreases drag as an animal with bilateral symmetry swims through water, letting it reach higher speeds."
+  accept="fusiform shape"
+  hint="Look at the opening paragraph of Limits on Animal Size and Shape."
 >}}
 
 {{< textin
   question="An ingrowth of an animal's exoskeleton that functions as an attachment site for muscles is called an ________."
   answer="apodeme"
-  hint="On a crab's claw, this structure sits above and below the fulcrum, similar in role to a tendon in an animal with an endoskeleton."
+  hint="Look at the paragraph on the arthropod exoskeleton and the crab-claw figure below it."
 >}}
 
 ### Relate bioenergetics to body size, levels of activity, and the environment
+
+{{< textin
+  question="A decrease in activity and metabolism that allows an animal to survive adverse conditions is called ________."
+  answer="torpor"
+  hint="Look at the opening sentences of Energy Requirements Related to Environment."
+>}}
+
+{{< textin
+  question="A long period of reduced activity and metabolism that an animal can maintain through the winter months is called ________."
+  answer="hibernation"
+  hint="Look at the first paragraph of Energy Requirements Related to Environment."
+>}}
 
 {{< multiplechoice
   question="Which type of animal maintains a constant internal body temperature?"
@@ -257,7 +270,7 @@ mesoderm
 {{< multiplechoice
   question="What term describes the condition of a desert mouse that lowers its metabolic rate and “sleeps” during the hot day?"
   answer="estivation"
-  hint="Look at the Energy Requirements Related to Environment paragraph, at the terms for torpor in different seasons."
+  hint="Look at the second paragraph of Energy Requirements Related to Environment."
 >}}
 turgid
 hibernation
@@ -268,7 +281,7 @@ normal sleep pattern
 {{< multiplechoice
   question="How could the increasing global temperature associated with climate change impact ectotherms?"
   answer="Ectotherms will be able to expand into new habitats."
-  hint="Think about a region that used to be too cold for a given ectotherm year-round, and what warming does to that limit."
+  hint="Reread the opening paragraph of Animal Bioenergetics, on what ectotherms depend on for body heat."
 >}}
 Ectotherm diversity will decrease in cool regions.
 Ectotherms will be able to be active all day in the tropics.
@@ -285,7 +298,7 @@ the small animal's relatively large surface area leads to increased heat loss it
 a large animal, having less relative surface area, does not lose as much heat and has a correspondingly lower BMR per body weight
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe one key environmental constraint for ectotherms and one for endotherms. Why are they limited by different factors?" hint="Endotherms generate their own heat and so depend on something they must consume; ectotherms depend on something in the surrounding environment." >}}
+{{< selfcheck question="Describe one key environmental constraint for ectotherms and one for endotherms. Why are they limited by different factors?" hint="Reread the opening paragraphs of Animal Bioenergetics and the Energy Requirements subsections." >}}
 Endotherms are constrained by the availability of food sources in the environment, while the temperature range in a geographic area limits ectotherms. The difference in how the two groups maintain their body temperature determines the key constraint for each group.
 ===CHECKS===
 endotherms are constrained by the availability of food sources in the environment
@@ -293,18 +306,6 @@ the temperature range in a geographic area limits ectotherms
 the difference in how the two groups maintain their body temperature determines the key constraint for each group
 {{< /selfcheck >}}
 
-{{< textin
-  question="A decrease in activity and metabolism that allows an animal to survive adverse conditions is called ________."
-  answer="torpor"
-  hint="Look at the opening sentences of Energy Requirements Related to Environment."
->}}
-
-{{< textin
-  question="Torpor over a long period of time, such as a winter, is called ________."
-  answer="hibernation"
-  hint="A ground squirrel entering this state can let its abdominal temperature drop to 0 °C."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 33.1: Animal Form and Function](https://openstax.org/books/biology-2e/pages/33-1-animal-form-and-function) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" — Figure_33_01_01 (body-symmetry illustration), Figure_B33_01_06-crab (apodeme illustration), and Figure_33_01_04 (body-planes illustration) are all drawings, not photographs; a longdesc added to the body-symmetry, apodeme, body-planes, and body-cavities figures (Figure_33_01_01, Figure_B33_01_06-crab, Figure_33_01_04, Figure_B33_01_05), each walking its labels in reading order; the body-metabolic-rate figure's (Figure_33_01_03) source alt, a data walk-through with a spacing artifact ("4,500 k g"), rewritten to describe the two photographs and their data-table layout using the figure's own printed value ("4,500,000 g"); the Link to Learning's "this site" replaced with descriptive link text naming the destination, its URL kept; the Career Connection feature box rendered as a callout with its bold name and italicized title; the maximum-speed table kept as a Markdown table (a table of example animals and their speeds, not a category comparison, so it is not also rendered as a sortbins exercise); the two genuine numeric exponents in the surface-to-volume-ratio sentence ($4\pi r^2$, $(4/3)\pi r^3$) set in KaTeX; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; the BMR Critical Thinking model answer (`fs-idp22243696`) corrected, with a visible Source note, from the source solution's "the large animal's large surface area… resulting in a higher BMR" to the small animal having the higher BMR per body weight, since this section's own Metabolic Rate text says a smaller endothermic animal has "a higher BMR, per body weight, than a larger endothermic animal"; and its rubric's last two checkpoints follow the corrected answer; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and six key-term recall items (frontal plane, sagittal plane, fusiform, apodeme, torpor, hibernation) added from the glossary — torpor in place of an estivation recall item that re-asked the desert-mouse Review Question to round out each objective's group.</small>
+<small>This section is adapted from [Biology 2e, Section 33.1: Animal Form and Function](https://openstax.org/books/biology-2e/pages/33-1-animal-form-and-function) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" — Figure_33_01_01 (body-symmetry illustration), Figure_B33_01_06-crab (apodeme illustration), and Figure_33_01_04 (body-planes illustration) are all drawings, not photographs; a longdesc added to the body-symmetry, apodeme, body-planes, and body-cavities figures (Figure_33_01_01, Figure_B33_01_06-crab, Figure_33_01_04, Figure_B33_01_05), each walking its labels in reading order; the body-metabolic-rate figure's (Figure_33_01_03) source alt, a data walk-through with a spacing artifact ("4,500 k g"), rewritten to describe the two photographs and their data-table layout using the figure's own printed value ("4,500,000 g"); the Link to Learning's "this site" replaced with descriptive link text naming the destination, its URL kept; the Career Connection feature box rendered as a callout with its bold name and italicized title; the maximum-speed table kept as a Markdown table (a table of example animals and their speeds, not a category comparison, so it is not also rendered as a sortbins exercise); the two genuine numeric exponents in the surface-to-volume-ratio sentence ($4\pi r^2$, $(4/3)\pi r^3$) set in KaTeX; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise, each placed under the objective it tests, so the Review Questions run in the order 2, 8, 4, 5, 6, 1, 3, 7 of the source's numbering and the Critical Thinking Questions in the order 1, 3, 2, 4; the BMR Critical Thinking model answer (`fs-idp22243696`) corrected, with a visible Source note, from the source solution's "the large animal's large surface area… resulting in a higher BMR" to the small animal having the higher BMR per body weight, since this section's own Metabolic Rate text says a smaller endothermic animal has "a higher BMR, per body weight, than a larger endothermic animal"; and its rubric's last two checkpoints follow the corrected answer; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and six key-term recall items (transverse plane, sagittal plane, fusiform, apodeme, torpor, hibernation) added from the glossary to round out each objective's group — torpor in place of an estivation recall item that re-asked the desert-mouse Review Question — with the plane and the torpor and hibernation items placed first in their groups, and the hibernation prompt worded from the module's own hibernation sentence rather than the glossary's "torpor over a long period of time", so that it does not print the torpor item's key. The Review Question on the plane that divides an animal into dorsal and ventral portions is keyed "coronal" where the source keys "transverse": the section's own body-planes figure labels the goat's horizontal plane, which separates its back (dorsal) from its belly (ventral), the frontal plane, the section gives "coronal" as the frontal plane's other name, while the figure's transverse plane is a vertical plane crossing the goat's torso (a source defect).</small>

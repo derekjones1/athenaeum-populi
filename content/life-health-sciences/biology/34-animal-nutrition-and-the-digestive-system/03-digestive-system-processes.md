@@ -86,7 +86,7 @@ Mechanical and chemical digestion of food takes place in many steps, beginning i
 {{< multiplechoice
   question="Which of the following statements about digestive processes is true?"
   answer="Bile emulsifies lipids in the small intestine."
-  hint="Check each statement against the digestion-and-absorption diagram above, organ by organ."
+  hint="Check each statement against the figure above and the nutrient subsections before it."
 >}}
 Amylase, maltase, and lactase in the mouth digest carbohydrates.
 Trypsin and lipase in the stomach digest protein.
@@ -132,13 +132,13 @@ Digestion begins with ingestion, where the food is taken in the mouth. Digestion
 {{< textin
   question="The act of taking in food through the mouth is called ________."
   answer="ingestion"
-  hint="This is the very first step in obtaining nutrition from food, before any mechanical or chemical breakdown begins."
+  hint="Reread the first subsection's paragraph."
 >}}
 
 {{< textin
   question="The mechanical and chemical breakdown of food into small organic fragments is called ________."
   answer="digestion"
-  hint="Reread the opening paragraph of the subsection that follows Ingestion."
+  hint="Reread the opening paragraph under the section's second heading."
 >}}
 
 {{< multiplechoice
@@ -168,7 +168,7 @@ jejunum
 {{< multiplechoice
   question="Lipases are enzymes that breakdown ________."
   answer="lipids"
-  hint="Recall what large globules bile salts emulsify before these enzymes can act efficiently."
+  hint="See the paragraph that asks why emulsification matters."
 >}}
 disaccharides
 lipids
@@ -176,7 +176,7 @@ proteins
 cellulose
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain why some dietary lipid is a necessary part of a balanced diet." hint="Think about lipids' calorie density, their role in helping the body absorb certain vitamins, and what they help synthesize." >}}
+{{< selfcheck question="Explain why some dietary lipid is a necessary part of a balanced diet." hint="Start from the Vitamins subsection, then consider the other roles fat plays in the diet." >}}
 Lipids add flavor to food and promote a sense of satiety or fullness. Fatty foods are sources of high energy; one gram of lipid contains nine calories. Lipids are also required in the diet to aid the absorption of lipid-soluble vitamins and for the production of lipid-soluble hormones.
 ===CHECKS===
 add flavor to food and promote a sense of satiety or fullness
@@ -185,7 +185,7 @@ required in the diet to aid the absorption of lipid-soluble vitamins
 required for the production of lipid-soluble hormones
 {{< /selfcheck >}}
 
-{{< selfcheck question="Many mammals become ill if they drink milk as adults even though they could consume it as babies. What causes this digestive issue?" hint="Consider what happens to the production of the lactose-digesting enzyme after mammals stop nursing." >}}
+{{< selfcheck question="Many mammals become ill if they drink milk as adults even though they could consume it as babies. What causes this digestive issue?" hint="Start from the Carbohydrates subsection's sentences on lactose." >}}
 As mammals wean from their mothers they stop drinking milk. Since they stop consuming the sugar lactose their bodies conserve resources by no longer making the enzyme lactase. If the animals then consume lactose at some point in the future their digestive system cannot break the lactose molecules into glucose and galactose for absorption. When gut bacteria further along the digestive tract interact with the lactose molecules it causes symptoms of lactose intolerance.
 ===CHECKS===
 mammals wean from their mothers and stop drinking milk
@@ -197,25 +197,26 @@ gut bacteria interacting with the lactose molecules causes symptoms of lactose i
 {{< textin
   question="The enzyme that breaks down maltose into glucose is called ________."
   answer="maltase"
-  hint="It acts on the disaccharide produced when amylase breaks down starch and glycogen."
+  hint="See the second paragraph of the Carbohydrates subsection, or the flow chart after it."
 >}}
 
 {{< textin
   question="The enzyme that breaks down sucrose into glucose and fructose is called ________."
   answer="sucrase"
-  hint="This brush-border enzyme acts on the sugar also known as table sugar."
+  hint="See the second paragraph of the Carbohydrates subsection, or the flow chart after it."
 >}}
 
 {{< textin
   question="The enzyme that breaks down lactose into glucose and galactose is called ________."
   answer="lactase"
-  hint="This brush-border enzyme acts on the sugar also known as milk sugar."
+  hint="See the Carbohydrates subsection's flow chart."
 >}}
 
 {{< textin
-  question="The pancreatic protease that breaks down protein and acts on peptides in the duodenum is called ________."
+  question="Name one of the three pancreatic proteases that act on peptides in the duodenum, reducing them to smaller peptides: ________."
   answer="trypsin"
-  hint="Reread the Protein subsection and its enzyme table."
+  accept="elastase|chymotrypsin"
+  hint="See the Protein subsection's enzyme table."
 >}}
 
 ### Define elimination
@@ -223,7 +224,7 @@ gut bacteria interacting with the lactose molecules causes symptoms of lactose i
 {{< multiplechoice
   question="Which of the following conditions is most likely to cause constipation?"
   answer="dehydration"
-  hint="Constipation results when too much water is removed from the feces in the colon."
+  hint="See the Common Problems with Elimination subsection."
 >}}
 bacterial infection
 dehydration
@@ -235,10 +236,10 @@ excessive cellulose consumption
   question="Elimination describes removal of undigested food contents and ________ from the body."
   answer="waste products"
   accept="waste"
-  hint="Think about what else the body discards along with undigested food — material the rectum stores until it triggers the urge to eliminate."
+  hint="Reread the Section Summary's sentence on elimination."
 >}}
 
-{{< selfcheck question="What triggers the urge to eliminate solid waste, and how is it finally expelled from the body?" hint="Think about what happens to the rectum as fecal matter accumulates, and which muscle movements push the waste out." >}}
+{{< selfcheck question="What triggers the urge to eliminate, and how is the rectum finally emptied?" hint="Reread the last two sentences of the Elimination section's opening paragraph." >}}
 As the rectum expands in response to storage of fecal matter, it triggers the neural signals required to set up the urge to eliminate. The solid waste is eliminated through the anus using peristaltic movements of the rectum.
 ===CHECKS===
 the rectum expands in response to storage of fecal matter
@@ -248,7 +249,7 @@ the solid waste is eliminated through the anus using peristaltic movements of th
 
 ### Explain the role of both the small and large intestines in absorption
 
-{{< selfcheck question="The gut microbiome (the bacterial colonies in the intestines) have become a popular area of study in biomedical research. How could varying gut microbiomes impact a person's nutrition?" hint="Think about what the bacteria themselves contribute to digestion, and what can happen if the wrong bacteria become established." >}}
+{{< selfcheck question="The gut microbiome (the bacterial colonies in the intestines) have become a popular area of study in biomedical research. How could varying gut microbiomes impact a person's nutrition?" hint="Start from the Elimination section's sentence on the colon's microflora." >}}
 The gut microbiome includes all the bacteria that aid in chemical digestion in the intestines. Changing its composition can change the way that food is digested since not all bacteria have the same macromolecule-digesting enzymes. Additionally, changes in gut microbiome can lead to the establishment of pathogenic bacteria populations that cause inflammation in the gut or other disease.
 ===CHECKS===
 includes all the bacteria that aid in chemical digestion in the intestines
@@ -270,16 +271,16 @@ the esophagus
 {{< textin
   question="A small lipid globule formed when fatty acids and monoglycerides recombine inside the intestinal absorptive cells is called a ________."
   answer="chylomicron"
-  hint="These leave the absorptive cells by exocytosis and enter the lymphatic vessels before reaching the blood."
+  hint="See the second paragraph of the Lipids subsection."
 >}}
 
 {{< textin
   question="The large intestine (colon) is also where ________ is formed."
   answer="feces"
-  accept="faeces"
-  hint="Recall what solid waste is called before it collects in the rectum for elimination."
+  accept="faeces|fecal matter|faecal matter"
+  hint="Reread the Section Summary's last sentence."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 34.3: Digestive System Processes](https://openstax.org/books/biology-2e/pages/34-3-digestive-system-processes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all four figures (Figure_34_03_01, Figure_B34_03_02, Figure_34_03_03, Figure_34_03_04) re-kinded from the manifest's file-extension "photo" guess (three of them) or its default "diagram" guess to an explicit "diagram" after inspection — all four are drawn illustrations or flow charts, none a captured photograph; a longdesc added to all four figures, walking through the boxes, arrows, numbered steps, and labeled structures their one- or two-sentence captions do not carry; the glossary's "carboxypeptidase" entry, printed as "secreted by the brush border of the small intestine," corrected to "produced by the pancreas" to match the section's own sentence ("Trypsin, elastase, carboxypeptidase, and chymotrypsin are produced by the pancreas") and Table 34.6 ("Carboxypeptidase | Pancreas") — a source defect; the Link to Learning note rendered as a callout with its source URL kept; the note wrapping the Visual Connection rendered as its figure followed by a multiple choice, kept in the body, using the identical wording of the note and exercise copies; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (ingestion, digestion, maltase, sucrase, lactase, trypsin, chylomicron) added from the glossary; two cloze recall items ("waste products," "feces") added from the section summary to help cover the "define elimination" and "role of the intestines in absorption" objectives, which the glossary alone does not test; one multiple choice on the section's own stated order of the four digestive steps, and one multiple choice on which organ absorbs most of the remaining water, added locally from the page's own sentences because those two objective groups were otherwise thin; one self-check on what triggers elimination, added locally from the page's own sentences for the same reason.</small>
+<small>This section is adapted from [Biology 2e, Section 34.3: Digestive System Processes](https://openstax.org/books/biology-2e/pages/34-3-digestive-system-processes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all four figures (Figure_34_03_01, Figure_B34_03_02, Figure_34_03_03, Figure_34_03_04) re-kinded from the manifest's file-extension "photo" guess (three of them) or its default "diagram" guess to an explicit "diagram" after inspection — all four are drawn illustrations or flow charts, none a captured photograph; a longdesc added to all four figures, walking through the boxes, arrows, numbered steps, and labeled structures their one- or two-sentence captions do not carry; the glossary's "carboxypeptidase" entry, printed as "secreted by the brush border of the small intestine," corrected to "produced by the pancreas" to match the section's own sentence ("Trypsin, elastase, carboxypeptidase, and chymotrypsin are produced by the pancreas") and Table 34.6 ("Carboxypeptidase | Pancreas") — a source defect; the Link to Learning note rendered as a callout with its source URL kept; the note wrapping the Visual Connection rendered as its figure followed by a multiple choice, kept in the body, using the identical wording of the note and exercise copies; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the lactose Critical Thinking Question, third in the source, comes before the gut-microbiome question; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (ingestion, digestion, maltase, sucrase, lactase, trypsin, chylomicron) added from the glossary, the trypsin item asking for any one of the three pancreatic proteases the Protein subsection names together and accepting each; two cloze recall items ("waste products," "feces") added from the section summary to help cover the "define elimination" and "role of the intestines in absorption" objectives, which the glossary alone does not test; one multiple choice on the section's own stated order of the four digestive steps, and one multiple choice on which organ absorbs most of the remaining water, added locally from the page's own sentences because those two objective groups were otherwise thin; one self-check on what triggers elimination, added locally from the page's own sentences for the same reason.</small>

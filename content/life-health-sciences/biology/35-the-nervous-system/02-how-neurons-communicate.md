@@ -66,7 +66,7 @@ A neuron can receive input from other neurons and, if this input is strong enoug
 The formation of an action potential can be divided into five steps: (1) A stimulus from a sensory cell or another neuron causes the target cell to depolarize toward the threshold potential. (2) If the threshold of excitation is reached, all Na⁺ channels open and the membrane depolarizes. (3) At the peak action potential, K⁺ channels open and K⁺ begins to leave the cell. At the same time, Na⁺ channels close. (4) The membrane becomes hyperpolarized as K⁺ ions continue to leave the cell. The hyperpolarized membrane is in a refractory period and cannot fire. (5) The K⁺ channels close and the Na⁺/K⁺ transporter restores the resting potential.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Potassium channel blockers, such as amiodarone and procainamide, which are used to treat abnormal electrical activity in the heart, called cardiac dysrhythmia, impede the movement of K⁺ through voltage-gated K⁺ channels. Which part of the action potential would you expect potassium channels to affect?" hint="Look at which numbered step in the graph above is the one where K⁺ channels open and drive the curve back down." >}}
+{{< selfcheck question="Potassium channel blockers, such as amiodarone and procainamide, which are used to treat abnormal electrical activity in the heart, called cardiac dysrhythmia, impede the movement of K⁺ through voltage-gated K⁺ channels. Which part of the action potential would you expect potassium channels to affect?" hint="Look at the numbered steps in the caption of the graph above." >}}
 Potassium channel blockers slow the repolarization phase, but have no effect on depolarization.
 ===CHECKS===
 potassium channel blockers slow the repolarization phase
@@ -200,7 +200,21 @@ Neurons have charged membranes because there are different concentrations of ion
 {{< textin
   question="The difference in electrical potential between the inside and outside of a cell is called the ________."
   answer="membrane potential"
-  hint="This difference is roughly −70 mV in a resting neuron, but the term itself applies whether the cell is at rest or mid-signal."
+  hint="Look at the last sentence of the Neuronal Charged Membranes subsection."
+>}}
+
+{{< textin
+  question="The change in a neuron's membrane potential to a more negative value is called ________."
+  answer="hyperpolarization"
+  accept="hyperpolarisation"
+  hint="Look near the end of the Action Potential subsection."
+>}}
+
+{{< textin
+  question="Voltage-gated ________ control the movement of ions into and out of a neuron."
+  answer="ion channels"
+  accept="channels"
+  hint="This is the second sentence of the Summary."
 >}}
 
 {{< multiplechoice
@@ -214,68 +228,26 @@ voltage-gated ion channels
 calcium cations
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The change in a neuron's membrane potential to a more negative value is called ________."
-  answer="hyperpolarization"
-  accept="hyperpolarisation"
-  hint="This is the opposite of depolarization, and it's what happens right after the peak of an action potential, before the membrane returns to rest."
->}}
-
-{{< textin
-  question="Voltage-gated ________ control the movement of ions into and out of a neuron."
-  answer="ion channels"
-  hint="These membrane proteins open and close in response to voltage changes, letting charged particles cross the membrane they otherwise couldn't cross."
->}}
-
 ### Explain the stages of an action potential and how action potentials are propagated
 
-{{< multiplechoice
-  question="For a neuron to fire an action potential, its membrane must reach ________."
-  answer="the threshold of excitation"
-  hint="This is the depolarization level at which voltage-gated Na⁺ channels all snap open at once, the trigger for the section's 'all-or-nothing' event."
+{{< textin
+  question="A self-propagating momentary change in the electrical potential of a neuron (or muscle) membrane is called an ________."
+  answer="action potential"
+  accept="nerve impulse"
+  hint="Look at the opening paragraph of the page's third subsection, the one after Resting Membrane Potential."
 >}}
-hyperpolarization
-the threshold of excitation
-the refractory period
-inhibitory postsynaptic potential
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="After an action potential, the opening of additional voltage-gated ________ channels and the inactivation of sodium channels, cause the membrane to return to its resting membrane potential."
-  answer="potassium"
-  hint="This cation's leakage channels already dominate the resting membrane; more of the same channel type open during repolarization to help the cell recover."
->}}
-sodium
-potassium
-calcium
-chloride
-{{< /multiplechoice >}}
-
-{{< selfcheck question="How does myelin aid propagation of an action potential along an axon? How do the nodes of Ranvier help this process?" hint="Think about what myelin prevents along the axon, and what has to happen for the signal to keep regenerating at only a few specific points rather than continuously." >}}
-Myelin prevents the leak of current from the axon. Nodes of Ranvier allow the action potential to be regenerated at specific points along the axon. They also save energy for the cell since voltage-gated ion channels and sodium-potassium transporters are not needed along myelinated portions of the axon.
-===CHECKS===
-myelin prevents the leak of current from the axon
-nodes of Ranvier allow the action potential to be regenerated at specific points along the axon
-they also save energy for the cell since voltage-gated ion channels and sodium-potassium transporters are not needed along myelinated portions of the axon
-{{< /selfcheck >}}
 
 {{< textin
   question="A decrease in the difference in voltage between the inside and outside of a neuron, making the membrane potential less negative, is called ________."
   answer="depolarization"
   accept="depolarisation"
-  hint="This shift toward a less negative charge happens when positive ions, like Na⁺, flow into the neuron."
->}}
-
-{{< textin
-  question="A brief reversal of the resting membrane potential, carried from dendrite to axon terminal within a neuron, is called an ________."
-  answer="action potential"
-  hint="This all-or-nothing event briefly flips the membrane from about −70 mV to roughly +40 mV before the cell resets."
+  hint="Look at the Action Potential subsection's sentence about excitatory synapses."
 >}}
 
 {{< textin
   question="The period after an action potential when it is more difficult or impossible to fire another one is called the ________."
   answer="refractory period"
-  hint="During this time the sodium channels that just opened cannot be reopened, no matter how strong the next stimulus is."
+  hint="Look at the middle of the Action Potential subsection."
 >}}
 
 {{< textin
@@ -288,15 +260,77 @@ they also save energy for the cell since voltage-gated ion channels and sodium-p
 {{< textin
   question="The 'jumping' of an action potential along an axon from one node of Ranvier to the next is called ________."
   answer="saltatory conduction"
-  hint="This name comes from the Latin word for 'to leap,' matching how the signal skips down myelinated stretches of the axon."
+  hint="Look at the Myelin and the Propagation of the Action Potential subsection."
 >}}
 
+{{< multiplechoice
+  question="For a neuron to fire an action potential, its membrane must reach ________."
+  answer="the threshold of excitation"
+  hint="Look at the third sentence of the Summary."
+>}}
+hyperpolarization
+the threshold of excitation
+the refractory period
+inhibitory postsynaptic potential
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="After an action potential, the opening of additional voltage-gated ________ channels and the inactivation of sodium channels, cause the membrane to return to its resting membrane potential."
+  answer="potassium"
+  hint="Look in the Action Potential subsection at the sentences that follow complete depolarization."
+>}}
+sodium
+potassium
+calcium
+chloride
+{{< /multiplechoice >}}
+
+{{< selfcheck question="How does myelin aid propagation of an action potential along an axon? How do the nodes of Ranvier help this process?" hint="Look at the Myelin and the Propagation of the Action Potential subsection." >}}
+Myelin prevents the leak of current from the axon. Nodes of Ranvier allow the action potential to be regenerated at specific points along the axon. They also save energy for the cell since voltage-gated ion channels and sodium-potassium transporters are not needed along myelinated portions of the axon.
+===CHECKS===
+myelin prevents the leak of current from the axon
+nodes of Ranvier allow the action potential to be regenerated at specific points along the axon
+they also save energy for the cell since voltage-gated ion channels and sodium-potassium transporters are not needed along myelinated portions of the axon
+{{< /selfcheck >}}
+
 ### Explain the similarities and differences between chemical and electrical synapses
+
+{{< textin
+  question="The space between the presynaptic and postsynaptic membranes is called the ________."
+  answer="synaptic cleft"
+  hint="Look at the Chemical Synapse subsection, just after the scanning electron micrograph."
+>}}
+
+{{< textin
+  question="A small membrane-bound structure that contains a neurotransmitter is called a ________."
+  answer="synaptic vesicle"
+  hint="Look at the opening paragraph of the Chemical Synapse subsection."
+>}}
+
+{{< textin
+  question="A depolarization of a postsynaptic membrane caused by neurotransmitter molecules released from a presynaptic cell is called an ________."
+  answer="excitatory postsynaptic potential"
+  accept="EPSP|excitatory post-synaptic potential"
+  hint="Look at the Chemical Synapse subsection's neuromuscular-junction example."
+>}}
+
+{{< textin
+  question="A hyperpolarization of a postsynaptic membrane caused by neurotransmitter molecules released from a presynaptic cell is called an ________."
+  answer="inhibitory postsynaptic potential"
+  accept="IPSP|inhibitory post-synaptic potential"
+  hint="Look at the Chemical Synapse subsection's GABA example."
+>}}
+
+{{< textin
+  question="The process by which multiple presynaptic inputs create EPSPs around the same time so a postsynaptic neuron becomes sufficiently depolarized to fire is called ________."
+  answer="summation"
+  hint="Look at the first paragraph after the Electrical Synapse subsection."
+>}}
 
 {{< multiplechoice
   question="What is the term for protein channels that connect two neurons at an electrical synapse?"
   answer="gap junction protein"
-  hint="These large pores let current, and even molecules like ATP, pass directly between two cells with almost no delay, unlike the vesicle-and-receptor route of the other kind of synapse."
+  hint="Look at the Electrical Synapse subsection."
 >}}
 synaptic vesicles
 voltage-gated ion channels
@@ -304,47 +338,15 @@ gap junction protein
 sodium-potassium exchange pumps
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The space between the presynaptic and postsynaptic membranes is called the ________."
-  answer="synaptic cleft"
-  hint="A neurotransmitter released here must diffuse all the way across before it can bind receptors on the other side."
->}}
-
-{{< textin
-  question="A small membrane-bound structure that contains a neurotransmitter is called a ________."
-  answer="synaptic vesicle"
-  hint="Calcium entering the axon terminal causes many of these to fuse with the presynaptic membrane and dump their contents outward."
->}}
-
-{{< textin
-  question="A depolarization of a postsynaptic membrane caused by neurotransmitter molecules released from a presynaptic cell is called an ________."
-  answer="excitatory postsynaptic potential"
-  accept="EPSP"
-  hint="Acetylcholine binding at a neuromuscular junction produces one of these by letting Na⁺ into the postsynaptic cell, making it more likely to fire."
->}}
-
-{{< textin
-  question="A hyperpolarization of a postsynaptic membrane caused by neurotransmitter molecules released from a presynaptic cell is called an ________."
-  answer="inhibitory postsynaptic potential"
-  accept="IPSP"
-  hint="GABA binding causes one of these by opening Cl⁻ channels, making the neuron less likely to fire."
->}}
-
-{{< selfcheck question="What are the main steps in chemical neurotransmission?" hint="Trace the sequence from the action potential's arrival at the terminal through calcium entry, vesicle fusion, and diffusion across the cleft, to what happens on the other side." >}}
+{{< selfcheck question="What are the main steps in chemical neurotransmission?" hint="Look at the Chemical Synapse subsection and the numbered steps of its synaptic-transmission figure." >}}
 An action potential travels along an axon until it depolarizes the membrane at an axon terminal. Depolarization of the membrane causes voltage-gated Ca²⁺ channels to open and Ca²⁺ to enter the cell. The intracellular calcium influx causes synaptic vesicles containing neurotransmitter to fuse with the presynaptic membrane. The neurotransmitter diffuses across the synaptic cleft and binds to receptors on the postsynaptic membrane. Depending on the specific neurotransmitter and postsynaptic receptor, this action can cause positive (excitatory postsynaptic potential) or negative (inhibitory postsynaptic potential) ions to enter the cell.
 ===CHECKS===
 an action potential travels along an axon until it depolarizes the membrane at an axon terminal
 depolarization causes voltage-gated Ca²⁺ channels to open and Ca²⁺ to enter the cell
 the calcium influx causes synaptic vesicles containing neurotransmitter to fuse with the presynaptic membrane
 the neurotransmitter diffuses across the synaptic cleft and binds to receptors on the postsynaptic membrane
-this can cause excitatory or inhibitory postsynaptic potentials depending on the neurotransmitter and receptor
+depending on the specific neurotransmitter and postsynaptic receptor, this action can cause positive or negative ions to enter the cell
 {{< /selfcheck >}}
-
-{{< textin
-  question="The process by which multiple presynaptic inputs create EPSPs around the same time so a postsynaptic neuron becomes sufficiently depolarized to fire is called ________."
-  answer="summation"
-  hint="This process happens at the axon hillock, where all of a neuron's excitatory and inhibitory inputs are added together."
->}}
 
 ### Describe long-term potentiation and long-term depression
 
@@ -352,10 +354,10 @@ this can cause excitatory or inhibitory postsynaptic potentials depending on the
   question="A persistent strengthening of a synaptic connection, based on the principle that cells which fire together wire together, is called ________."
   answer="long-term potentiation"
   accept="LTP"
-  hint="This process inserts additional AMPA receptors into the postsynaptic membrane, making the neuron more responsive to the next release of glutamate."
+  hint="Look at the first subsection under Synaptic Plasticity."
 >}}
 
-{{< selfcheck question="Describe how long-term potentiation can lead to a nicotine addiction." hint="Think about which brain region nicotine targets and what happens to the neurons' likelihood of firing as exposure continues." >}}
+{{< selfcheck question="Describe how long-term potentiation can lead to a nicotine addiction." hint="Look at the last sentence of the first subsection under Synaptic Plasticity, on drugs of abuse." >}}
 Long-term potentiation describes the process whereby exposure to a stimulus increases the likelihood that a neuron will depolarize in response to that stimulus in the future. Nicotine exposure causes long-term potentiation of neurons in the amygdala, and activates reward centers of the brain. As nicotine exposure continues, long-term potentiation reinforces the activation of the reward pathways in response to nicotine consumption.
 ===CHECKS===
 long-term potentiation increases the likelihood that a neuron will depolarize in response to a stimulus in the future
@@ -367,7 +369,7 @@ as nicotine exposure continues, long-term potentiation reinforces the activation
   question="A long-term weakening of a synaptic connection, essentially the reverse of LTP, is called ________."
   answer="long-term depression"
   accept="LTD"
-  hint="This process removes AMPA receptors from the postsynaptic membrane, making the neuron less responsive to glutamate release."
+  hint="Look at the second subsection under Synaptic Plasticity."
 >}}
 
 ---

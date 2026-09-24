@@ -73,7 +73,7 @@ Transitional epithelia of the urinary bladder undergo changes in thickness depen
 {{< multiplechoice
   question="Which of the following statements about types of epithelial cells is false?"
   answer="Simple columnar epithelial cells line the tissue of the lung."
-  hint="Check which epithelial type the table above actually lists for the lung's alveoli."
+  hint="Check each statement against the epithelial-tissue table and the figure captions above."
 >}}
 Simple columnar epithelial cells line the tissue of the lung.
 Simple cuboidal epithelial cells are involved in the filtering of blood in the kidney.
@@ -263,11 +263,11 @@ transitional
 {{< textin
   question="A layer of epithelia that appears multilayered, but is actually a simple covering, is called ________."
   answer="pseudostratified"
-  accept="pseudostratified epithelia|pseudostratified epithelium|pseudostratified columnar epithelia|pseudostratified columnar epithelium"
-  hint="This tissue lines the respiratory tract, where nuclei sit at staggered heights within a single layer of cells."
+  accept="pseudostratified epithelia|pseudostratified epithelium|pseudostratified columnar|pseudostratified columnar epithelia|pseudostratified columnar epithelium|pseudo-stratified"
+  hint="Look at the paragraph after the digestive-tract columnar figure."
 >}}
 
-{{< selfcheck question="How can squamous epithelia both facilitate diffusion and prevent damage from abrasion?" hint="Think about how the same cell type can appear in both a single thin layer and a thick stacked layer." >}}
+{{< selfcheck question="How can squamous epithelia both facilitate diffusion and prevent damage from abrasion?" hint="Look at the Squamous Epithelia subsection and its figure." >}}
 Squamous epithelia can be either simple or stratified. As a single layer of cells, it presents a very thin epithelia that minimally inhibits diffusion. As a stratified epithelia, the surface cells can be sloughed off and the cells in deeper layers protect the underlying tissues from damage.
 ===CHECKS===
 can be either simple or stratified
@@ -292,7 +292,7 @@ bone
 {{< multiplechoice
   question="Which type of connective tissue has a mineralized different matrix?"
   answer="bone"
-  hint="Only one of these connective tissues gets its hardness from calcium salts deposited in its matrix."
+  hint="Compare what the connective-tissue subsections say about each tissue's matrix."
 >}}
 loose connective tissue
 fibrous connective tissue
@@ -303,7 +303,7 @@ bone
 {{< multiplechoice
   question="The cell found in bone that breaks it down is called an ________."
   answer="osteoclast"
-  hint="This cell type provides access to calcium stored in bone tissue by breaking the tissue down, and is usually found on the tissue's surface."
+  hint="Look at the paragraph that names the three types of cells in bone."
 >}}
 osteoblast
 osteocyte
@@ -314,7 +314,7 @@ osteon
 {{< multiplechoice
   question="The cell found in bone that makes the bone is called an ________."
   answer="osteoblast"
-  hint="This cell type deposits new bone material during growth and remodeling, then continues living at a reduced metabolic rate once the matrix surrounds it."
+  hint="Look at the paragraph that names the three types of cells in bone."
 >}}
 osteoblast
 osteocyte
@@ -325,7 +325,7 @@ osteon
 {{< multiplechoice
   question="Plasma is the ________."
   answer="matrix of blood"
-  hint="This is the fluid, non-cellular portion of whole blood."
+  hint="Look at the first paragraph of the Blood subsection."
 >}}
 fibers in blood
 matrix of blood
@@ -337,10 +337,10 @@ cell fragment found in the tissue
   question="A space in cartilage and bone that contains living cells is called a ________."
   answer="lacuna"
   accept="lacunae"
-  hint="Osteocytes and chondrocytes both sit inside these small cavities within their tissue's matrix."
+  hint="Look at the first paragraph of the Cartilage subsection."
 >}}
 
-{{< selfcheck question="What are the similarities between cartilage and bone?" hint="Think about what each tissue's cells are called, where those cells sit within the tissue, and what larger body system both tissues help build." >}}
+{{< selfcheck question="What are the similarities between cartilage and bone?" hint="Compare the Cartilage and Bone subsections and the two tissues' rows of the connective-tissue table." >}}
 Both contain cells other than the traditional fibroblast. Both have cells that lodge in spaces within the tissue called lacunae. Both collagen and elastic fibers are found in bone and cartilage. Both tissues participate in vertebrate skeletal development and formation.
 ===CHECKS===
 both contain cells other than the traditional fibroblast
@@ -354,7 +354,7 @@ both tissues participate in vertebrate skeletal development and formation
 {{< multiplechoice
   question="The type of muscle cell under voluntary control is the ________."
   answer="skeletal muscle"
-  hint="Look at the first paragraph of Muscle Tissues, where each muscle type is introduced."
+  hint="Look at the Control column of the muscle-tissue table."
 >}}
 smooth muscle
 skeletal muscle
@@ -365,7 +365,7 @@ visceral muscle
 {{< multiplechoice
   question="Why are intercalated discs essential to the function of cardiac muscle?"
   answer="The discs ensure that all the cardiac muscle cells beat as a single unit."
-  hint="Think about what has to happen electrically for the whole heart to contract together rather than one cell at a time."
+  hint="Look at the last paragraph of the Cardiac Muscle subsection and the muscle figure's caption."
 >}}
 The discs maintain the barriers between the cells.
 The discs pass nutrients between cells.
@@ -373,7 +373,7 @@ The discs ensure that all the cardiac muscle cells beat as a single unit.
 The discs control the heart rate.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="When a person leads a sedentary life his skeletal muscles atrophy, but his smooth muscles do not. Why?" hint="Consider which muscle type needs a conscious decision to contract, and which one keeps working on its own regardless of the person's activity level." >}}
+{{< selfcheck question="When a person leads a sedentary life his skeletal muscles atrophy, but his smooth muscles do not. Why?" hint="Compare the Smooth Muscle and Skeletal Muscle subsections." >}}
 Skeletal muscles are involved in voluntary motion, so the person has to make the choice to work those muscles through exercise or movement. Smooth muscles are involved in involuntary activities of the body (ex. blood vessel expansion and contraction, intestinal peristalsis) so they are active even when a person is sedentary.
 ===CHECKS===
 skeletal muscles are involved in voluntary motion
@@ -383,24 +383,19 @@ they are active even when a person is sedentary
 {{< /selfcheck >}}
 
 {{< textin
-  question="The line that extends along the end of a cardiac muscle cell, joining it to the next cell in the row and helping pass an electrical impulse between them, is called the ________."
-  answer="intercalated disc"
-  accept="intercalated disk"
-  hint="Cardiac cells are shorter than skeletal muscle fibers, and each one connects end to end to its neighbor at this membrane structure."
+  question="Skeletal muscle has ________ across its cells caused by the arrangement of the contractile proteins actin and myosin."
+  answer="striations"
+  accept="cross striations|bands"
+  hint="Look at the first paragraph of the Skeletal Muscle subsection."
 >}}
 
 ### Describe nervous tissue
 
-{{< multiplechoice
-  question="The part of a neuron that contains the nucleus is the"
-  answer="cell body"
-  hint="Look at the Nervous Tissues paragraph that names a neuron's three parts, and at the neuron figure."
+{{< textin
+  question="The neuron has projections called ________ that receive signals and projections called axons that send signals."
+  answer="dendrites"
+  hint="Look at the neuron figure and its caption."
 >}}
-cell body
-dendrite
-axon
-glial
-{{< /multiplechoice >}}
 
 {{< textin
   question="The glial cells that regulate the chemical environment of the nerve cell are the ________."
@@ -408,13 +403,18 @@ glial
   hint="Look at the neuron figure's caption, which names two types of glial cells."
 >}}
 
-{{< textin
-  question="The glial cells that insulate a neuron's axon so the electrical nerve impulse is transferred more efficiently are the ________."
-  answer="oligodendrocytes"
-  hint="Look at the Nervous Tissues paragraph where the glial cells shown in the neuron figure are given their roles."
+{{< multiplechoice
+  question="The part of a neuron that contains the nucleus is the"
+  answer="cell body"
+  hint="Look at the Nervous Tissues paragraph that names a neuron's parts, and at the neuron figure."
 >}}
+cell body
+dendrite
+axon
+glial
+{{< /multiplechoice >}}
 
-{{< selfcheck question="Multiple sclerosis is a debilitating autoimmune disease that results in the loss of the insulation around neuron axons. What cell type is the immune system attacking, and how does this disrupt the transfer of messages by the nervous system?" hint="Reread the paragraph about which glial cell insulates the axon, and think about what the loss of that insulation does to signal speed." >}}
+{{< selfcheck question="Multiple sclerosis is a debilitating autoimmune disease that results in the loss of the insulation around neuron axons. What cell type is the immune system attacking, and how does this disrupt the transfer of messages by the nervous system?" hint="Look at the first paragraph of the Nervous Tissues section and the neuron figure's caption." >}}
 In multiple sclerosis, the immune system attacks the oligodendrocytes. The death of oligodendrocytes results in the loss of the insulating sheath around the axon of the neurons. When the sheath is gone, the electrical impulses travel much more slowly down the length of the axon.
 ===CHECKS===
 the immune system attacks the oligodendrocytes
@@ -424,4 +424,4 @@ the electrical impulses travel much more slowly down the length of the axon
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 33.2: Animal Primary Tissues](https://openstax.org/books/biology-2e/pages/33-2-animal-primary-tissues) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own alt text; eleven figures re-kinded after inspection — Figure_33_02_02, Figure_33_02_03, Figure_33_02_06, Figure_33_02_07, Figure_33_02_08, Figure_33_02_09, Figure_33_02_10, Figure_33_02_11, Figure_33_02_12abc, and Figure_33_02_13 from the manifest's file-extension "photo" guess to "diagram" (all ten are drawn, flat-color textbook illustrations, not photographs), and Figure_B33_02_01ab from "diagram" to "photo" (its panel (b) is a genuine photomicrograph of human cervix tissue, described alongside the drawn panel (a) in one alt); a longdesc added to the eight figures whose printed labels are not carried by their one-line captions (Figure_33_02_03, Figure_33_02_04, Figure_33_02_06, Figure_33_02_07, Figure_33_02_09, Figure_33_02_11, Figure_33_02_12abc, Figure_33_02_13); Figure 33.15(c)'s own printed label "Canaliculae" (its sibling panel (b) prints the correct "Canaliculi") corrected to "Canaliculi" in the longdesc — the artwork itself left as printed; the Visual Connection Questions exercise's option "Pseudostratisfied columnar epithilia occur in a single layer, but the arrangement of nuclei makes it appear that more than one layer is present" (also printed the same way inside the body's Visual Connection note) corrected to "Pseudostratified columnar epithelia occur in a single layer, but the arrangement of nuclei makes it appear that more than one layer is present"; the note wrapping the Transitional Epithelia Visual Connection rendered as its figure followed by a multiple choice (the exercise-set copy, identical in wording to the note's own copy), kept in the body; the end-of-chapter Review Questions and Critical Thinking Questions for this section adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; two key-term recall items (pseudostratified, lacuna) added from the glossary, plus three local recall items (intercalated disc, astrocyte, oligodendrocyte) built strictly from the section's own sentences, since the glossary defines no muscle- or nervous-tissue vocabulary; the Review Question "Which type of epithelial cell is best adapted to aid diffusion?" keeps its printed options but is re-keyed from the source's "columnar" to "squamous", because the section's own text ("they facilitate diffusion in tissues, such as the areas of gas exchange in the lungs") and its glossary ("squamous epithelia... specialized in aiding diffusion or preventing abrasion") both support squamous, not columnar — a source defect. A semicolon was inserted in the connective-tissue table's cartilage fibers cell ("hyaline: few: collagen; fibrocartilage: large amount of collagen"), which the source prints run together.</small>
+<small>This section is adapted from [Biology 2e, Section 33.2: Animal Primary Tissues](https://openstax.org/books/biology-2e/pages/33-2-animal-primary-tissues) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own alt text; eleven figures re-kinded after inspection — Figure_33_02_02, Figure_33_02_03, Figure_33_02_06, Figure_33_02_07, Figure_33_02_08, Figure_33_02_09, Figure_33_02_10, Figure_33_02_11, Figure_33_02_12abc, and Figure_33_02_13 from the manifest's file-extension "photo" guess to "diagram" (all ten are drawn, flat-color textbook illustrations, not photographs), and Figure_B33_02_01ab from "diagram" to "photo" (its panel (b) is a genuine photomicrograph of human cervix tissue, described alongside the drawn panel (a) in one alt); a longdesc added to the eight figures whose printed labels are not carried by their one-line captions (Figure_33_02_03, Figure_33_02_04, Figure_33_02_06, Figure_33_02_07, Figure_33_02_09, Figure_33_02_11, Figure_33_02_12abc, Figure_33_02_13); Figure 33.15(c)'s own printed label "Canaliculae" (its sibling panel (b) prints the correct "Canaliculi") corrected to "Canaliculi" in the longdesc — the artwork itself left as printed; the Visual Connection Questions exercise's option "Pseudostratisfied columnar epithilia occur in a single layer, but the arrangement of nuclei makes it appear that more than one layer is present" (also printed the same way inside the body's Visual Connection note) corrected to "Pseudostratified columnar epithelia occur in a single layer, but the arrangement of nuclei makes it appear that more than one layer is present"; the note wrapping the Transitional Epithelia Visual Connection rendered as its figure followed by a multiple choice (the exercise-set copy, identical in wording to the note's own copy), kept in the body; the end-of-chapter Review Questions and Critical Thinking Questions for this section adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; two key-term recall items (pseudostratified, lacuna) added from the glossary, plus three local recall items (striations, dendrites, astrocytes) built strictly from the section's own sentences and the neuron figure's caption, since the glossary defines no muscle- or nervous-tissue vocabulary; the Review Questions and Critical Thinking Questions placed under the objectives they test, which changes their source order in two places (the intercalated-disc Review Question, last in the source, comes before the neuron-nucleus question, and the sedentary-lifestyle Critical Thinking question, last in the source, comes before the multiple sclerosis question); the Review Question "Which type of epithelial cell is best adapted to aid diffusion?" keeps its printed options but is re-keyed from the source's "columnar" to "squamous", because the section's own text ("they facilitate diffusion in tissues, such as the areas of gas exchange in the lungs") and its glossary ("squamous epithelia... specialized in aiding diffusion or preventing abrasion") both support squamous, not columnar — a source defect. A semicolon was inserted in the connective-tissue table's cartilage fibers cell ("hyaline: few: collagen; fibrocartilage: large amount of collagen"), which the source prints run together.</small>

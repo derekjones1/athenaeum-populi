@@ -121,7 +121,7 @@ The structures of dicot and monocot seeds are shown. Dicots (left) have two coty
 {{< multiplechoice
   question="What is the function of the cotyledon?"
   answer="It provides nutrition for the embryo."
-  hint="Look at what the seed diagram's endosperm does in the corn kernel, then think about what a bean seed—with no endosperm at all—must rely on instead."
+  hint="Read the figure caption above, at its sentence on the monocot's single cotyledon."
 >}}
 It develops into the root.
 It provides nutrition for the embryo.
@@ -225,19 +225,19 @@ For fertilization to occur in angiosperms, pollen has to be transferred to the s
 {{< textin
   question="The transfer of pollen to the stigma is called ________."
   answer="pollination"
-  hint="This is the process that must happen before fertilization itself can occur — the placement of pollen on the flower's receptive surface."
+  hint="Look at the section's opening paragraph."
 >}}
 
 {{< textin
   question="The pollen tube gains entry into the ovule sac through the ________."
   answer="micropyle"
-  hint="The pollen tube is guided there by chemicals secreted by the synergids inside the embryo sac."
+  hint="Look at the Section Summary, at the sentence on how the pollen tube reaches the ovule."
 >}}
 
 {{< multiplechoice
   question="After pollen lands on the stigma, which cell gives rise to the pollen tube through which the generative nucleus migrates?"
   answer="the tube cell"
-  hint="This cell's counterpart inside the pollen tube is the one that divides into two sperm — a different cell entirely."
+  hint="Look at the first paragraph after the Evolution Connection box, where the two cells of a pollen grain are named."
 >}}
 the tube cell
 the generative cell
@@ -250,7 +250,7 @@ the polar nuclei
 {{< textin
   question="The transfer of pollen from the anther to the stigma of the same flower is called ________."
   answer="self-pollination"
-  hint="This method occurs when the stamen and carpel of one flower mature at the same time and are positioned so pollen lands on that flower's own stigma."
+  hint="Look at the paragraph that introduces the two forms of pollination."
 >}}
 
 {{< textin
@@ -263,7 +263,7 @@ the polar nuclei
 {{< textin
   question="A pigment pattern on a flower that guides an insect to the nectaries is called a ________."
   answer="nectar guide"
-  hint="Bees can see these regions on flower petals, but humans typically cannot."
+  hint="Look at the Pollination by Insects paragraph on bees."
 >}}
 
 {{< multiplechoice
@@ -282,7 +282,7 @@ pollen tube growth
 {{< multiplechoice
   question="The fertilized ovule gives rise to the ________."
   answer="seed"
-  hint="Look at the end of the Double Fertilization paragraph, where the fates of the fertilized ovule and the ovary tissues are given."
+  hint="Look at the end of the first paragraph after the Evolution Connection box, where the fates of the fertilized ovule and the ovary tissues are given."
 >}}
 fruit
 seed
@@ -293,7 +293,7 @@ embryo
 {{< multiplechoice
   question="What is the term for a fruit that develops from tissues other than the ovary?"
   answer="accessory fruit"
-  hint="Strawberries (from the receptacle) and apples (from the hypanthium) are both examples of this fruit type."
+  hint="Look at the paragraph in Development of Fruit and Fruit Types that classifies fruits by their origin."
 >}}
 simple fruit
 aggregate fruit
@@ -313,12 +313,12 @@ mesocarp
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A period of no growth and very slow metabolic processes is called ________."
-  answer="dormancy"
-  hint="A seed in this state may wait months, years, or even centuries for favorable conditions to return."
+  question="The outer layer of the seed coat is called the ________."
+  answer="testa"
+  hint="Look at the short paragraph in Development of the Seed on how the seed coat forms."
 >}}
 
-{{< selfcheck question="Why do some seeds undergo a period of dormancy, and how do they break dormancy?" hint="Think about what changes in the environment—rainfall, temperature, light—actually trigger a seed to resume growth." >}}
+{{< selfcheck question="Why do some seeds undergo a period of dormancy, and how do they break dormancy?" hint="Look at the opening paragraph of Seed Germination." >}}
 Many seeds enter a period of inactivity or extremely low metabolic activity, a process known as dormancy. Dormancy allows seeds to tide over unfavorable conditions and germinate on return to favorable conditions. Favorable conditions could be as diverse as moisture, light, cold, fire, or chemical treatments. After heavy rains, many new seedlings emerge. Forest fires also lead to the emergence of new seedlings.
 ===CHECKS===
 a period of inactivity or extremely low metabolic activity, a process known as dormancy
@@ -326,7 +326,7 @@ dormancy allows seeds to tide over unfavorable conditions and germinate on retur
 favorable conditions could be as diverse as moisture, light, cold, fire, or chemical treatments
 {{< /selfcheck >}}
 
-{{< selfcheck question="Discuss some ways in which fruit seeds are dispersed." hint="Think about the different physical adaptations — weight, shape, texture — that let a fruit hitch a ride on the wind, on water, or on an animal." >}}
+{{< selfcheck question="Discuss some ways in which fruit seeds are dispersed." hint="Look at the Fruit and Seed Dispersal subsection." >}}
 Some fruits have built-in mechanisms that allow them to disperse seeds by themselves, but others require the assistance of agents like wind, water, and animals. Fruit that are dispersed by the wind are light in weight and often have wing-like appendages that allow them to be carried by the wind; others have structures resembling a parachute that keep them afloat in the wind. Some fruits, such as those of dandelions, have hairy, weightless structures that allow them to float in the wind. Fruits dispersed by water are light and buoyant, giving them the ability to float; coconuts are one example. Animals and birds eat fruits and disperse their seeds by leaving droppings at distant locations. Other animals bury fruit that may later germinate. Some fruits stick to animals' bodies and are carried to new locations. People also contribute to seed dispersal when they carry fruits to new places.
 ===CHECKS===
 wind-dispersed fruit are light in weight, with wing-like or parachute-like structures, or hairy structures like the dandelion's
@@ -340,20 +340,20 @@ people also contribute to seed dispersal when they carry fruits to new places
 {{< textin
   question="The part of the growing embryo that makes connection with the maternal tissues is called the ________."
   answer="suspensor"
-  hint="Look at the paragraph that follows the zygote's first division into a terminal cell and a basal cell."
+  hint="Look at the paragraph that opens with the zygote's first division."
 >}}
 
 {{< textin
   question="The two fertilization events of angiosperms — one sperm fusing with the egg, the other fusing with the polar nuclei — are together called ________."
   answer="double fertilization"
   accept="double fertilisation"
-  hint="Only angiosperms carry out both of these fertilization events at once; gymnosperms do not."
+  hint="Look at the Section Summary, at the sentence right after the endosperm is called triploid."
 >}}
 
 {{< multiplechoice
   question="After double fertilization, a zygote and ________ form."
   answer="endosperm"
-  hint="Look at the Double Fertilization paragraph, at what each of the two sperm cells forms."
+  hint="Look at the first paragraph after the Evolution Connection box, at what each of the two sperm cells forms."
 >}}
 an ovule
 endosperm
@@ -363,4 +363,4 @@ a suspensor
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 32.2: Pollination and Fertilization](https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension guess after inspection — Figure_32_02_07 and Figure_32_02_10 from "photo" to "diagram" (a labeled double-fertilization schematic and a labeled monocot-germination illustration, neither a captured photograph); a custom alt written for every figure rather than the source's own bare "Photo depicts …"/"Illustration shows …" phrasing, including a correction to Figure_32_02_06's alt, whose source text calls the bee orchid's petals "white" when the image itself, and the printed PDF, show them pink; a longdesc added to the four figures whose content the caption does not carry — the double-fertilization diagram (Figure_32_02_07), the four-panel embryo-development micrographs (Figure_32_02_08abcd_a), the dicot/monocot seed-structure diagram (Figure_32_02_09), and the germinating monocot-seed diagram (Figure_32_02_10); the artwork of Figure_32_02_08abcd_a itself labels panel (d)'s shoot meristem "Short meristem," which nowhere else in the module or its own caption ("the space between the two ears is the shoot meristem") is spelled that way — the longdesc uses the correct word "shoot meristem," and the mislabeled artwork is unchanged; the Visual Connection wrapping Figure_32_02_09 prints two different questions in the module — the body note asks "What of the following statements is true?" (also a "What of" for "Which of" typo) with options about monocot/dicot endosperm, radicle, plumule, and epicotyl, while the numbered chapter-end exercise tied to the same figure asks "What is the function of the cotyledon?" with options about the root, nutrition, the embryo, and protection — the exercise copy (question ID fs-idm58176) is used in the body as instructed, with both copies quoted here for the record; the Link to Learning note rendered as a callout with descriptive link text in place of the source's bare "this interactive website"; the Everyday Connection and Evolution Connection notes rendered as callouts with their bold names and italic titles, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (pollination, self-pollination, cross-pollination, nectar guide, dormancy, suspensor, double fertilization) added from the glossary — suspensor in place of an endosperm recall item that re-asked the double-fertilization Review Question, plus one cloze recall item blanking "micropyle" in a sentence taken from the section's own text; because the first and second objective groups have no dedicated Review or Critical Thinking item of their own (all four Review Questions and both Critical Thinking Questions serve the third and fourth objectives), each group also carries one multiple choice built strictly from the section's own Section Summary sentence, naming "the tube cell" and "genetic diversity" respectively, with distractors drawn only from the module's own vocabulary — disclosed here and in the source ledger; the Critical Thinking model answer for seed dispersal reused as the self-check's model answer has a grammatical slip in the source ("other have structures resembling a parachute"), corrected here to "others have". The module's own glossary defines "gravitropism" ("response of a plant growth in the same direction as gravity"), a term this section's body never otherwise mentions; it is transcribed in Key terms as printed for completeness but not used as a Practice item, since no objective in this section covers it. One attribution is corrected with a visible Source note: teosinte was first cultivated by ancient Mesoamerican farmers, not "the ancient Mayans".</small>
+<small>This section is adapted from [Biology 2e, Section 32.2: Pollination and Fertilization](https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension guess after inspection — Figure_32_02_07 and Figure_32_02_10 from "photo" to "diagram" (a labeled double-fertilization schematic and a labeled monocot-germination illustration, neither a captured photograph); a custom alt written for every figure rather than the source's own bare "Photo depicts …"/"Illustration shows …" phrasing, including a correction to Figure_32_02_06's alt, whose source text calls the bee orchid's petals "white" when the image itself, and the printed PDF, show them pink; a longdesc added to the four figures whose content the caption does not carry — the double-fertilization diagram (Figure_32_02_07), the four-panel embryo-development micrographs (Figure_32_02_08abcd_a), the dicot/monocot seed-structure diagram (Figure_32_02_09), and the germinating monocot-seed diagram (Figure_32_02_10); the artwork of Figure_32_02_08abcd_a itself labels panel (d)'s shoot meristem "Short meristem," which nowhere else in the module or its own source alt text ("the space between the two ears is the shoot meristem") is spelled that way — the longdesc uses the correct word "shoot meristem," and the mislabeled artwork is unchanged; the Visual Connection wrapping Figure_32_02_09 prints two different questions in the module — the body note asks "What of the following statements is true?" (also a "What of" for "Which of" typo) with options about monocot/dicot endosperm, radicle, plumule, and epicotyl, while the numbered chapter-end exercise tied to the same figure asks "What is the function of the cotyledon?" with options about the root, nutrition, the embryo, and protection — the exercise copy is used in the body, with both copies quoted here for the record; the Link to Learning note rendered as a callout with descriptive link text in place of the source's bare "this interactive website"; the Everyday Connection and Evolution Connection notes rendered as callouts with their bold names and italic titles, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the first Review Question (on double fertilization) placed after the other three, under the fourth objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (pollination, self-pollination, cross-pollination, nectar guide, testa, suspensor, double fertilization) added from the glossary, plus one cloze recall item blanking "micropyle" in a sentence taken from the section's own text; because the first and second objective groups have no dedicated Review or Critical Thinking item of their own (all four Review Questions and both Critical Thinking Questions serve the third and fourth objectives), each group also carries one multiple choice built strictly from the section's own Section Summary sentence, naming "the tube cell" and "genetic diversity" respectively, with distractors drawn only from the module's own vocabulary; the Critical Thinking model answer for seed dispersal reused as the self-check's model answer has a grammatical slip in the source ("other have structures resembling a parachute"), corrected here to "others have". The module's own glossary defines "gravitropism" ("response of a plant growth in the same direction as gravity"), a term this section's body never otherwise mentions; it is transcribed in Key terms as printed for completeness but not used as a Practice item, since no objective in this section covers it. One attribution is corrected with a visible Source note: teosinte was first cultivated by ancient Mesoamerican farmers, not "the ancient Mayans".</small>

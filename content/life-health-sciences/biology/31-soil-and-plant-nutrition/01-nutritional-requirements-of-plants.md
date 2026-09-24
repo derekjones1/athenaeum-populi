@@ -108,7 +108,7 @@ biomolecules
 essential nutrients
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Research the life of Jan Baptista van Helmont. What did the van Helmont experiment show?" hint="One of his two conclusions about where a growing plant's added weight comes from has held up; the other has since been disproven." >}}
+{{< selfcheck question="Research the life of Jan Baptista van Helmont. What did the van Helmont experiment show?" hint="This one needs outside reading: the section does not discuss van Helmont or his experiment." >}}
 van Helmont showed that plants do not consume soil, which is correct. He also thought that plant growth and increased weight resulted from the intake of water, a conclusion that has since been disproven.
 ===CHECKS===
 plants do not consume soil, which is correct
@@ -119,8 +119,8 @@ that conclusion has since been disproven
 {{< textin
   question="Plants can absorb inorganic nutrients and water through their ________, and carbon dioxide from the environment."
   answer="root system"
-  accept="root"
-  hint="Fine hairs on this organ are the entry point, and the xylem carries what they take up upward to the leaves."
+  accept="root|root hairs"
+  hint="See the section's opening paragraph."
 >}}
 
 ### List the elements and compounds required for proper plant nutrition
@@ -128,7 +128,7 @@ that conclusion has since been disproven
 {{< multiplechoice
   question="The nutrient that is part of carbohydrates, proteins, and nucleic acids, and that forms biomolecules, is ________."
   answer="carbon"
-  hint="On average, this element makes up 45 percent of a cell's dry weight, more than any other."
+  hint="See the first paragraph after the essential-elements table."
 >}}
 nitrogen
 carbon
@@ -139,7 +139,7 @@ iron
 {{< multiplechoice
   question="Most ________ are necessary for enzyme function."
   answer="micronutrients"
-  hint="This book's Enzymes section (6.5) names iron and zinc ions as enzyme cofactors; find which column of the essential-elements table above holds those two elements."
+  hint="The section itself does not say; see the cofactors in this book's Enzymes section (6.5), then the essential-elements table above."
 >}}
 micronutrients
 macronutrients
@@ -154,7 +154,7 @@ essential macronutrients include carbon, hydrogen, oxygen, nitrogen, phosphorus,
 essential micronutrients include iron, manganese, boron, molybdenum, copper, zinc, chlorine, nickel, cobalt, sodium, and silicon
 {{< /selfcheck >}}
 
-{{< selfcheck question="What type of plant problems result from nitrogen and calcium deficiencies?" hint="The section names three visible symptoms that a deficiency of nutrients like these two can cause." >}}
+{{< selfcheck question="What type of plant problems result from nitrogen and calcium deficiencies?" hint="See the paragraph on deficiencies that follows the list of micronutrients." >}}
 Deficiencies in these nutrients could result in stunted growth, slow growth, and chlorosis.
 ===CHECKS===
 stunted growth
@@ -165,26 +165,29 @@ chlorosis
 {{< textin
   question="A chemical compound that contains carbon is called an ________ compound."
   answer="organic"
-  hint="Reread the opening paragraph of The Chemical Composition of Plants."
+  accept="organic compound"
+  hint="See the paragraph after the root-tip figure."
 >}}
 
 {{< textin
   question="A chemical compound that does not contain carbon, and is not part of or produced by a living organism, is called an ________ compound."
   answer="inorganic"
-  hint="Most of the soil solution is made of substances of this kind, commonly called minerals."
+  accept="inorganic compound"
+  hint="See the paragraph after the root-tip figure."
 >}}
 
 {{< textin
-  question="A nutrient that is required in large amounts for plant growth is called a ________."
-  answer="macronutrient"
-  hint="Carbon, hydrogen, oxygen, nitrogen, phosphorus, potassium, calcium, magnesium, and sulfur all belong to this group."
+  question="________ is part of certain amino acids, such as cysteine and methionine, and is present in several coenzymes."
+  answer="sulfur"
+  accept="S|sulphur"
+  hint="See the long paragraph that follows the cellulose figure."
 >}}
 
 {{< textin
-  question="A nutrient required in only small amounts is called a ________."
-  answer="micronutrient"
-  accept="trace element"
-  hint="Boron, chlorine, manganese, iron, zinc, copper, molybdenum, nickel, silicon, and sodium all belong to this group."
+  question="________ is important because of its role in regulating stomatal opening and closing."
+  answer="potassium"
+  accept="K"
+  hint="See the end of the long paragraph that follows the cellulose figure."
 >}}
 
 {{< sortbins question="Assign each essential element to the nutrient group it belongs to." hint="Compare each element's row in the essential-elements table above against the column it sits in." >}}
@@ -209,7 +212,7 @@ chlorosis
 {{< multiplechoice
   question="For an element to be regarded as essential, all of the following criteria must be met, except:"
   answer="The element is inorganic."
-  hint="Re-read the three genuine essentiality criteria in the paragraph above — one option restates none of them."
+  hint="Compare each option with the three criteria listed just before the essential-elements table."
 >}}
 No other element can perform the function.
 The element is directly involved in plant nutrition.
@@ -220,7 +223,7 @@ The plant cannot complete its lifecycle without the element.
 {{< multiplechoice
   question="Plants require only light, water, and about 20 elements to support all their biochemical needs; these 20 elements are called ________."
   answer="essential nutrients"
-  hint="The paragraph above opens by naming this exact term for the 20 elements, right before it lists the three criteria an element must meet."
+  hint="See the first sentence of the subsection that introduces the essential-elements table."
 >}}
 biomolecules
 essential nutrients
@@ -231,9 +234,9 @@ organic compounds
 {{< textin
   question="Essential elements are ________ elements for plant growth."
   answer="indispensable"
-  hint="This is the summary's one-word restatement of the criterion that a plant cannot complete its life cycle without the element."
+  hint="See the middle of the Summary."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 31.1: Nutritional Requirements of Plants](https://openstax.org/books/biology-2e/pages/31-1-nutritional-requirements-of-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the root-tip diagram (Figure_31_01_01) and the cellulose-fiber diagram (Figure_31_01_02) re-kinded from the manifest's file-extension "photo" guess to "diagram," since both are line drawings rather than captured photographs; a fresh alt written for all four vendored figures, describing what each drawing or photo shows rather than reusing the source's own terse alt text; the essential-elements table kept as a Markdown table in the body and also built as a `sortbins` exercise (a subset of twelve of its twenty elements, interleaved) in the Practice group for "List the elements and compounds required for proper plant nutrition"; the Everyday Connection note (Hydroponics) rendered as a callout with its bold name, italic title, and figure kept inside it; the Link to Learning note rendered as a callout with descriptive link text, keeping the source's own openstax.org short URL; the four Review Questions and all three Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (organic compound, inorganic compound, macronutrient, micronutrient) added from the glossary; two summary-derived cloze recall items added ("root system" and "indispensable"); one multiple choice written locally under "Describe an essential nutrient" (which elements are called "essential nutrients," built strictly from the section's own opening sentence of the Essential Nutrients subsection), since the module's own exercise sets leave that objective's group thin after its one Review Question is placed — disclosed in the ledger; the Critical Thinking question's "Jan Babtista van Helmont" and the solution's "micro nutrients" corrected to "Jan Baptista van Helmont" and "micronutrients" (source defects); the Link to Learning's openstax.org redirect (`/l/plant_mineral`) is no longer linked — its destination, kscience.co.uk/animations/minerals.htm, returned 404 on September 5, 2026, so the callout names the resource and its site for the reader to search instead.</small>
+<small>This section is adapted from [Biology 2e, Section 31.1: Nutritional Requirements of Plants](https://openstax.org/books/biology-2e/pages/31-1-nutritional-requirements-of-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the root-tip diagram (Figure_31_01_01) and the cellulose-fiber diagram (Figure_31_01_02) re-kinded from the manifest's file-extension "photo" guess to "diagram," since both are line drawings rather than captured photographs; a fresh alt written for all four vendored figures, describing what each drawing or photo shows rather than reusing the source's own terse alt text; the essential-elements table kept as a Markdown table in the body and also built as a `sortbins` exercise (a subset of twelve of its twenty elements, interleaved) in the Practice group for "List the elements and compounds required for proper plant nutrition"; the Everyday Connection note (Hydroponics) rendered as a callout with its bold name, italic title, and figure kept inside it; the Link to Learning note rendered as a callout with descriptive link text, keeping the source's own openstax.org short URL; the four Review Questions and all three Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; two key-term recall items (organic compound, inorganic compound) added from the glossary; two summary-derived cloze recall items added ("root system" and "indispensable"); two body-sentence cloze recall items added under "List the elements and compounds required for proper plant nutrition" (the sulfur and potassium sentences of the Macronutrients and Micronutrients subsection); one multiple choice written locally under "Describe an essential nutrient" (which elements are called "essential nutrients," built strictly from the section's own opening sentence of the Essential Nutrients subsection), since the module's own exercise sets leave that objective's group thin after its one Review Question is placed; the Review and Critical Thinking Questions placed under the objectives they test, which changes their source order — the Review Questions run water source, carbon, enzyme function, essentiality criteria (source order: criteria, carbon, enzyme function, water source), and the Critical Thinking Questions run van Helmont, list, deficiencies (source order: deficiencies, van Helmont, list); the Critical Thinking question's "Jan Babtista van Helmont" and the list question's "micro nutrients" corrected to "Jan Baptista van Helmont" and "micronutrients" (source defects); the Link to Learning's openstax.org redirect (`/l/plant_mineral`) is no longer linked — its destination, kscience.co.uk/animations/minerals.htm, returned 404 on September 5, 2026, so the callout names the resource and its site for the reader to search instead.</small>

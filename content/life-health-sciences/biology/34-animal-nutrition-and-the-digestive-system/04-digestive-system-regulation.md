@@ -73,19 +73,21 @@ The brain and the endocrine system control digestive processes. The brain contro
 {{< textin
   question="The brain controls the responses of hunger and ________."
   answer="satiety"
+  accept="fullness"
   hint="Reread the Section Summary."
 >}}
 
 {{< textin
-  question="The digestive phase that begins once food enters the stomach, when gastric acids and enzymes process the ingested materials, is called the ________."
+  question="The digestive phase that begins once food enters the stomach is called the ________."
   answer="gastric phase"
-  hint="This phase builds on the neural response your body started before you began eating."
+  hint="Look at the second paragraph of Digestive Phases."
 >}}
 
 {{< textin
   question="The third digestive phase, which begins when chyme enters the small intestine and controls the rate of gastric emptying, is called the ________."
   answer="intestinal phase"
-  hint="This phase starts once partially digested food leaves the stomach."
+  accept="intestinal"
+  hint="Look at the third paragraph of Digestive Phases."
 >}}
 
 {{< multiplechoice
@@ -101,10 +103,49 @@ elimination phase
 
 ### Explain how hormones regulate digestion
 
+{{< textin
+  question="The system that controls the response of the body's various glands and the release of hormones at the appropriate times is called the ________."
+  answer="endocrine system"
+  accept="endocrine"
+  hint="Look at the opening sentence of Hormonal Responses to Food."
+>}}
+
+{{< textin
+  question="The hormone that stimulates the secretion of hydrochloric acid in the stomach is called ________."
+  answer="gastrin"
+  hint="Look at the first paragraph after the endocrine system is introduced in Hormonal Responses to Food."
+>}}
+
+{{< textin
+  question="During the gastric phase, a hormone is secreted by ________ in the stomach in response to the presence of proteins."
+  answer="G cells"
+  hint="Look at the Hormonal Responses to Food paragraph on the stomach acid environment."
+>}}
+
+{{< textin
+  question="When the stomach is emptied, the acidic environment need not be maintained and a hormone stops the release of hydrochloric acid. This is controlled by a ________ mechanism."
+  answer="negative feedback"
+  accept="negative feedback loop"
+  hint="Look at the last sentence of the Hormonal Responses to Food paragraph on the stomach acid environment."
+>}}
+
+{{< textin
+  question="The hormone that stimulates sodium bicarbonate secretion in the small intestine is called ________."
+  answer="secretin"
+  hint="Look at the Hormonal Responses to Food paragraph on the duodenum."
+>}}
+
+{{< textin
+  question="The hormone secreted by the small intestine in the presence of fatty acids and sugars, which slows peristalsis to give fatty foods more time to be digested and absorbed, is called ________."
+  answer="gastric inhibitory peptide"
+  accept="GIP"
+  hint="Look at the Hormonal Responses to Food paragraph on the composition of food."
+>}}
+
 {{< multiplechoice
   question="Which hormone controls the release of bile from the gallbladder?"
   answer="CCK"
-  hint="This hormone also stimulates the pancreas to produce pancreatic juices, working in tandem with secretin in the duodenum."
+  hint="Look at the Hormonal Responses to Food paragraph on the duodenum."
 >}}
 pepsin
 amylase
@@ -123,7 +164,7 @@ secretin
 CCK
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe how hormones regulate digestion." hint="Think about the two hormones that control stomach acid — one that starts its release, one that stops it." >}}
+{{< selfcheck question="Describe how hormones regulate digestion." hint="Look at the Hormonal Responses to Food subsection." >}}
 Hormones control the different digestive enzymes that are secreted in the stomach and the intestine during the process of digestion and absorption. For example, the hormone gastrin stimulates stomach acid secretion in response to food intake. The hormone somatostatin stops the release of stomach acid.
 ===CHECKS===
 hormones control the digestive enzymes secreted in the stomach and the intestine
@@ -131,7 +172,7 @@ gastrin stimulates stomach acid secretion in response to food intake
 somatostatin stops the release of stomach acid
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe one or more scenarios where loss of hormonal regulation of digestion can lead to diseases." hint="Think about a substance the liver converts into bile, and what happens when that process breaks down." >}}
+{{< selfcheck question="Describe one or more scenarios where loss of hormonal regulation of digestion can lead to diseases." hint="The section does not discuss disease; start from the Hormonal Responses to Food paragraph on the duodenum, where bile enters digestion." >}}
 There are many cases where loss of hormonal regulation can lead to illnesses. For example, the bilirubin produced by the breakdown of red blood cells is converted to bile by the liver. When there is malfunction of this process, there is excess bilirubin in the blood and bile levels are low. As a result, the body struggles with dealing with fatty food. This is why a patient suffering from jaundice is asked to eat a diet with almost zero fat.
 ===CHECKS===
 bilirubin from the breakdown of red blood cells is converted to bile by the liver
@@ -140,7 +181,7 @@ the body struggles with dealing with fatty food
 a patient suffering from jaundice is asked to eat a diet with almost zero fat
 {{< /selfcheck >}}
 
-{{< selfcheck question="A scientist is studying a model that has a mutation in the receptor for somatostatin that prevents hormone binding. How would this mutation affect the structure and function of the digestive system?" hint="Think about what somatostatin normally switches off, and what happens once that switch cannot be reached." >}}
+{{< selfcheck question="A scientist is studying a model that has a mutation in the receptor for somatostatin that prevents hormone binding. How would this mutation affect the structure and function of the digestive system?" hint="Look at the Hormonal Responses to Food paragraph on the stomach acid environment." >}}
 Somatostatin is the hormone that inhibits the release of HCl into the stomach lumen after the chyme has moved to the intestine. If the receptor for somatostatin is nonfunctional, somatostatin cannot signal to the stomach parietal cells to stop acid secretion. Thus, acid secretion will continue when there is no food present, and can cause damage to the stomach tissue. However, as long as the stomach remains intact the mutation should not slow digestion since acid will always be present in the stomach to digest any new boluses of food.
 ===CHECKS===
 somatostatin normally inhibits the release of HCl into the stomach lumen after chyme has moved to the intestine
@@ -149,43 +190,6 @@ acid secretion continues when no food is present and can damage the stomach tiss
 the mutation should not slow digestion since acid is always present to digest new boluses of food
 {{< /selfcheck >}}
 
-{{< textin
-  question="The hormone that stimulates the secretion of hydrochloric acid in the stomach is called ________."
-  answer="gastrin"
-  hint="Look at the first paragraph after the endocrine system is introduced in Hormonal Responses to Food."
->}}
-
-{{< textin
-  question="During the gastric phase, the hormone gastrin is secreted by ________ in the stomach in response to the presence of proteins."
-  answer="G cells"
-  hint="Look at the Hormonal Responses to Food paragraph on the stomach acid environment."
->}}
-
-{{< textin
-  question="The system that controls the response of the body's various glands and the release of hormones at the appropriate times is called the ________."
-  answer="endocrine system"
-  hint="It is the body-wide network of glands responsible for hormonal signaling."
->}}
-
-{{< textin
-  question="The hormone secreted by the small intestine in the presence of fatty acids and sugars, which slows peristalsis to give fatty foods more time to be digested and absorbed, is called ________."
-  answer="gastric inhibitory peptide"
-  accept="GIP"
-  hint="This hormone gives foods high in lipids more time in the digestive tract."
->}}
-
-{{< textin
-  question="The hormone that stimulates sodium bicarbonate secretion in the small intestine is called ________."
-  answer="secretin"
-  hint="This hormone neutralizes acidic chyme by prompting the pancreas to release an alkaline solution to the duodenum."
->}}
-
-{{< textin
-  question="When the stomach is emptied, the acidic environment need not be maintained and a hormone called somatostatin stops the release of hydrochloric acid. This is controlled by a ________ mechanism."
-  answer="negative feedback"
-  hint="Look at the last sentence of the Hormonal Responses to Food paragraph on the stomach acid environment."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 34.4: Digestive System Regulation](https://openstax.org/books/biology-2e/pages/34-4-digestive-system-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP with a fuller alt describing what is actually visible (several plated dishes on a wood table) rather than the source's bare "Photo shows plates of food on a dinner table"; the `interactive`-class note rendered as a Link to Learning callout, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (endocrine system, gastric inhibitory peptide, gastric phase, gastrin, intestinal phase, secretin) added from the glossary, plus three cloze items built from single sentences of the section — "satiety" from the Section Summary, and "G cells" and "negative feedback" from the stomach-acid paragraph — in place of the cephalic phase, cholecystokinin, and somatostatin recall items, which re-asked the Pavlov, bile-release, and acid-secretion Review Questions; the Review Question "Which hormone controls the release of bile from the gallbladder" — printed without a closing question mark in both the CNXML and the PDF — given one for readability. One review-question distractor is replaced: the source's "gastric inhibitory peptide" is true by this section's own sentence that it "also inhibits acid production," so the page offers secretin instead; key unchanged and the change is disclosed in the source-key ledger.</small>
+<small>This section is adapted from [Biology 2e, Section 34.4: Digestive System Regulation](https://openstax.org/books/biology-2e/pages/34-4-digestive-system-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP with a fuller alt describing what is actually visible (several plated dishes on a wood table) rather than the source's bare "Photo shows plates of food on a dinner table"; the `interactive`-class note rendered as a Link to Learning callout, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Pavlov Review Question, third in the source, comes first; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (endocrine system, gastric inhibitory peptide, gastric phase, gastrin, intestinal phase, secretin) added from the glossary, plus three cloze items built from single sentences of the section — "satiety" from the Section Summary, and "G cells" and "negative feedback" from the stomach-acid paragraph, each with the hormone's name left out of its sentence so neither stem answers a neighbouring item — in place of the cephalic phase, cholecystokinin, and somatostatin recall items, which re-asked the Pavlov, bile-release, and acid-secretion Review Questions; the recall and cloze items of the hormone group placed before its source items; the Review Question "Which hormone controls the release of bile from the gallbladder" — printed without a closing question mark in both the CNXML and the PDF — given one for readability. One review-question distractor is replaced: the source's "gastric inhibitory peptide" is true by this section's own sentence that it "also inhibits acid production," so the page offers secretin instead; key unchanged.</small>
