@@ -114,6 +114,26 @@ All sensory signals, except those from the olfactory system, enter the central n
 
 ### Identify the general and special senses in humans
 
+{{< textin
+  question="The sense of body movement is called ________."
+  answer="kinesthesia"
+  accept="kinaesthesia"
+  hint="See the section's opening paragraph, in the sentence listing the senses that are part of somatosensation."
+>}}
+
+{{< textin
+  question="The sense of the position of bones, joints, and muscles is called ________."
+  answer="proprioception"
+  hint="See the section's opening paragraph, in the sentence listing the senses that are part of somatosensation."
+>}}
+
+{{< textin
+  question="An organism's sense of spatial orientation and balance is called the ________."
+  answer="vestibular sense"
+  accept="vestibular sensation|vestibular system|equilibrium"
+  hint="See the section's opening paragraph, in the sentence listing the senses that are part of somatosensation."
+>}}
+
 {{< multiplechoice
   question="Many people experience motion sickness while traveling in a car. This sensation results from contradictory inputs arising from which senses?"
   answer="Vision and Vestibular System"
@@ -125,7 +145,7 @@ Gustation and Vibration
 Vision and Vestibular System
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the difference in the localization of the sensory receptors for general and special senses in humans." hint="Think about where you'd find receptors for touch and pain, versus where you'd find the receptors for smell, taste, sight, and hearing." >}}
+{{< selfcheck question="Describe the difference in the localization of the sensory receptors for general and special senses in humans." hint="Compare the special senses and the general senses listed in the section's opening paragraph." >}}
 General sensory receptors are located throughout the body in the skin and internal organs. Conversely, special senses are all located in the head region, and require specialized organs.
 ===CHECKS===
 general sensory receptors are located throughout the body in the skin and internal organs
@@ -133,32 +153,55 @@ special senses are all located in the head region
 special senses require specialized organs
 {{< /selfcheck >}}
 
-{{< textin
-  question="The sense of body movement is called ________."
-  answer="kinesthesia"
-  accept="kinaesthesia"
-  hint="This sense works together with the sense of limb position to track how a limb is moving, not just where it currently sits."
->}}
-
-{{< textin
-  question="The sense of the position of bones, joints, and muscles is called ________."
-  answer="proprioception"
-  hint="This sense reports where a limb is right now, distinct from the sense that tracks how it is moving."
->}}
-
-{{< textin
-  question="An organism's sense of spatial orientation and balance is called the ________."
-  answer="vestibular sense"
-  accept="vestibular sensation|vestibular system|equilibrium"
-  hint="See the section's opening paragraph, in the sentence listing the senses that are part of somatosensation."
->}}
-
 ### Describe three important steps in sensory perception
+
+{{< textin
+  question="A specialized neuron, or another cell associated with a neuron, that is modified to receive a specific kind of sensory input is called a ________."
+  answer="sensory receptor"
+  hint="See the section's second opening paragraph, on the two types of cellular systems that perform sensory transduction."
+>}}
+
+{{< textin
+  question="Sensory receptors are either specialized cells associated with sensory neurons or the specialized ends of sensory neurons that are a part of the ________."
+  answer="peripheral nervous system"
+  accept="PNS"
+  hint="This is the Summary's fourth sentence."
+>}}
+
+{{< textin
+  question="The receipt of a signal, such as light or sound, by sensory receptors is called ________."
+  answer="reception"
+  hint="See the first sentence under the section's first heading."
+>}}
+
+{{< textin
+  question="The membrane potential in a sensory receptor that arises in response to detecting a stimulus is called the ________."
+  answer="receptor potential"
+  hint="See the first paragraph of the Transduction subsection."
+>}}
+
+{{< textin
+  question="The individual interpretation of a sensation, which is a brain function, is called ________."
+  answer="perception"
+  hint="See the first sentence of the subsection that follows Encoding and Transmission of Sensory Information."
+>}}
+
+{{< textin
+  question="A sensory receptor modified to respond to mechanical disturbance, such as being bent, touch, pressure, motion, or sound, is called a ________."
+  answer="mechanoreceptor"
+  hint="See the first paragraph of the Transduction subsection."
+>}}
+
+{{< textin
+  question="The region in space in which a stimulus can activate a given sensory receptor is called that receptor's ________."
+  answer="receptive field"
+  hint="See the paragraph under the section's first heading."
+>}}
 
 {{< multiplechoice
   question="Where does perception occur?"
   answer="cerebral cortex"
-  hint="This is the specific area the sensory signal is routed to only after leaving the thalamus, not the relay station itself."
+  hint="See the Perception subsection's second paragraph and the figure after it."
 >}}
 spinal cord
 cerebral cortex
@@ -180,7 +223,7 @@ transduction
 {{< multiplechoice
   question="After somatosensory transduction, the sensory signal travels through the brain as a(n) _____ signal."
   answer="electrical"
-  hint="Neurons signal using changes in membrane voltage, regardless of whether the original stimulus was pressure, light, or temperature."
+  hint="See the section's opening paragraph, on the common function all the sensory systems share."
 >}}
 electrical
 pressure
@@ -188,55 +231,12 @@ optical
 thermal
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A specialized neuron, or another cell associated with a neuron, that is modified to receive a specific kind of sensory input is called a ________."
-  answer="sensory receptor"
-  hint="Stimulating this cell activates an associated afferent neuron, which carries information about the stimulus toward the central nervous system."
->}}
-
-{{< selfcheck question="If a person sustains damage to axons leading from sensory receptors to the central nervous system, which step or steps of sensory perception will be affected?" hint="Reception happens at the receptor itself, before the axon; think about what a damaged axon would normally carry, and what that leaves downstream of it." >}}
+{{< selfcheck question="If a person sustains damage to axons leading from sensory receptors to the central nervous system, which step or steps of sensory perception will be affected?" hint="Trace the signal's path through the section's subsections, from the receptor to the brain." >}}
 Transmission of sensory information from the receptor to the central nervous system will be impaired, and thus, perception of stimuli, which occurs in the brain, will be halted.
 ===CHECKS===
 transmission of sensory information from the receptor to the central nervous system will be impaired
 perception of stimuli, which occurs in the brain, will be halted
 {{< /selfcheck >}}
-
-{{< textin
-  question="Sensory receptors are either specialized cells associated with sensory neurons or the specialized ends of sensory neurons that are a part of the ________."
-  answer="peripheral nervous system"
-  accept="PNS"
-  hint="This is the Summary's fourth sentence."
->}}
-
-{{< textin
-  question="The receipt of a signal, such as light or sound, by sensory receptors is called ________."
-  answer="reception"
-  hint="This is the very first of the three steps in sensory perception, before any conversion to an electrical signal takes place."
->}}
-
-{{< textin
-  question="The membrane potential in a sensory receptor that arises in response to detecting a stimulus is called the ________."
-  answer="receptor potential"
-  hint="It is produced right at the sensory receptor, and its magnitude is graded with the strength of the stimulus."
->}}
-
-{{< textin
-  question="The individual interpretation of a sensation, which is a brain function, is called ________."
-  answer="perception"
-  hint="This step happens at higher levels of the nervous system, in the brain, not at the sensory receptor itself."
->}}
-
-{{< textin
-  question="A sensory receptor modified to respond to mechanical disturbance, such as being bent, touch, pressure, motion, or sound, is called a ________."
-  answer="mechanoreceptor"
-  hint="This receptor type opens gated ion channels in its membrane when its dendrites are compressed or bent, shown in the figure above."
->}}
-
-{{< textin
-  question="The region in space in which a stimulus can activate a given sensory receptor is called that receptor's ________."
-  answer="receptive field"
-  hint="For touch this region must be in contact with the body; for hearing or vision it can be very far away."
->}}
 
 ### Explain the concept of just-noticeable difference in sensory perception
 
@@ -244,10 +244,10 @@ perception of stimuli, which occurs in the brain, will be halted
   question="The smallest difference in a stimulus that a person can detect is called the ________."
   answer="just-noticeable difference"
   accept="JND"
-  hint="This concept is illustrated by the rice-bag experiment above, and follows Weber's Law relating it to a stimulus's overall magnitude."
+  hint="See the Question step of the Scientific Method Connection note."
 >}}
 
-{{< selfcheck question="In what way does the overall magnitude of a stimulus affect the just-noticeable difference in the perception of that stimulus?" hint="Think about the rice-bag example: is the extra weight needed to notice a difference a fixed number of pounds, or a fixed percentage of the starting weight, whether that weight is small or large?" >}}
+{{< selfcheck question="In what way does the overall magnitude of a stimulus affect the just-noticeable difference in the perception of that stimulus?" hint="See the Draw a conclusion step of the Scientific Method Connection note." >}}
 The just-noticeable difference is a fraction of the overall magnitude of the stimulus and seems to be a relatively fixed proportion (such as 10 percent) whether the stimulus is large (such as a very heavy object) or small (such as a very light object).
 ===CHECKS===
 the just-noticeable difference is a fraction of the overall magnitude of the stimulus
@@ -268,4 +268,4 @@ whether the stimulus is large or small
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 36.1: Sensory Processes](https://openstax.org/books/biology-2e/pages/36-1-sensory-processes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; both figures (Figure_36_01_01f, Figure_36_01_02) re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection — both are hand-drawn, labeled line illustrations, not captured photographs; a longdesc added to both, walking the mechanoreceptor/stereocilia diagram's tethered-channel and ear-hair-cell labels and the brain diagram's thalamus and cortical-region labels in reading order; the two in-text figure pointers ("as shown in Figure 36.2," "the specific area of the cortex (Figure 36.3)") replaced with "shown below," since Hugo does not number figures; the Scientific Method Connection note rendered as a callout with its bold name and italic title, its bold procedural labels ("Question," "Background," "Hypothesis," "Test the hypothesis," "Record the observations," "Analyze the data/report the results," "Draw a conclusion") kept as the source repeats them, and its embedded data-collection table (title "Results of JND Testing," a title row spanning the columns in the source) transcribed as a Markdown table with the title kept as a bold line above it, blank data cells left blank as printed; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively), the fourth Review Question (motion sickness) and the third Critical Thinking Question (localization of general and special sense receptors) placed first, in the senses objective's group, ahead of the items that serve the later objectives; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items added from the glossary, covering every glossary term but sensory transduction, which the second Review Question already asks; one summary-derived textin cloze added to the second objective's group (blanking "peripheral nervous system" from the closing summary's sentence on what sensory receptors are); because the section has no Review Question or glossary term for just-noticeable difference (JND) itself, its objective group also carries two locally written items disclosed here: a text-recall item built strictly from the Scientific Method Connection note's own defining sentence ("This smallest detectible difference in stimuli is known as the just-noticeable difference (JND)"), and a multiple choice built strictly from the note's own Hypothesis step, asking which bag the proportional hypothesis predicts will first feel heavier than a 20-pound bag (the note's "20 pounds feels the same as 22 pounds or 23 pounds, but 20 pounds feels less than 24 pounds"). This module has no Visual Connection.</small>
+<small>This section is adapted from [Biology 2e, Section 36.1: Sensory Processes](https://openstax.org/books/biology-2e/pages/36-1-sensory-processes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; both figures (Figure_36_01_01f, Figure_36_01_02) re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection — both are hand-drawn, labeled line illustrations, not captured photographs; a longdesc added to both, walking the mechanoreceptor/stereocilia diagram's tethered-channel and ear-hair-cell labels and the brain diagram's thalamus and cortical-region labels in reading order; the two in-text figure pointers ("as shown in Figure 36.2," "the specific area of the cortex (Figure 36.3)") replaced with "shown below," since Hugo does not number figures; the Scientific Method Connection note rendered as a callout with its bold name and italic title, its bold procedural labels ("Question," "Background," "Hypothesis," "Test the hypothesis," "Record the observations," "Analyze the data/report the results," "Draw a conclusion") kept as the source repeats them, and its embedded data-collection table (title "Results of JND Testing," a title row spanning the columns in the source) transcribed as a Markdown table with the title kept as a bold line above it, blank data cells left blank as printed; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively), the fourth Review Question (motion sickness) and the third Critical Thinking Question (localization of general and special sense receptors) placed in the senses objective's group, ahead of the items that serve the later objectives; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items added from the glossary, covering every glossary term but sensory transduction, which the second Review Question already asks; one summary-derived textin cloze added to the second objective's group (blanking "peripheral nervous system" from the closing summary's sentence on what sensory receptors are); because the section has no Review Question or glossary term for just-noticeable difference (JND) itself, its objective group also carries two locally written items disclosed here: a text-recall item built strictly from the Scientific Method Connection note's own defining sentence ("This smallest detectible difference in stimuli is known as the just-noticeable difference (JND)"), and a multiple choice built strictly from the note's own Hypothesis step, asking which bag the proportional hypothesis predicts will first feel heavier than a 20-pound bag (the note's "20 pounds feels the same as 22 pounds or 23 pounds, but 20 pounds feels less than 24 pounds"). This module has no Visual Connection.</small>

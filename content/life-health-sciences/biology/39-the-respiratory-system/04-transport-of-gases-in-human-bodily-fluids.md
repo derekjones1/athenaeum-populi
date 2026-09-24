@@ -36,7 +36,7 @@ It is easier to bind a second and third oxygen molecule to Hb than the first mol
 The oxygen dissociation curve demonstrates that, as the partial pressure of oxygen increases, more oxygen binds hemoglobin. However, the affinity of hemoglobin for oxygen may shift to the left or the right depending on environmental conditions.
 {{< /mediafigure >}}
 
-{{< selfcheck question="The kidneys are responsible for removing excess H⁺ ions from the blood. If the kidneys fail, what would happen to blood pH and to hemoglobin affinity for oxygen?" hint="Think about what an inability to excrete H⁺ does to blood pH, and use the graph above to find which direction a pH change like that shifts the curve." >}}
+{{< selfcheck question="The kidneys are responsible for removing excess H⁺ ions from the blood. If the kidneys fail, what would happen to blood pH and to hemoglobin affinity for oxygen?" hint="Use the causes listed under the two dotted curves of the graph above." >}}
 The blood pH will drop and hemoglobin affinity for oxygen will decrease.
 ===CHECKS===
 the blood pH will drop
@@ -100,7 +100,7 @@ Carbon dioxide can be transported through the blood via three methods. It is dis
 {{< multiplechoice
   question="Which of the following will NOT facilitate the transfer of oxygen to tissues?"
   answer="decreased body temperature"
-  hint="Three of these conditions shift the oxygen dissociation curve to the right, releasing more oxygen to the tissues — find the one that shifts it the other way."
+  hint="Compare each option with the causes listed under the dotted curves of the oxygen dissociation curve figure and with Factors That Affect Oxygen Binding."
 >}}
 decreased body temperature
 decreased pH of the blood
@@ -119,7 +119,7 @@ binding to blood plasma
 binding to hemoglobin
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does the administration of 100 percent oxygen save a patient from carbon monoxide poisoning? Why wouldn't giving carbon dioxide work?" hint="Think about which molecule normally occupies the binding site that carbon monoxide is hijacking, and what raising its concentration does to the competition." >}}
+{{< selfcheck question="How does the administration of 100 percent oxygen save a patient from carbon monoxide poisoning? Why wouldn't giving carbon dioxide work?" hint="Reread the Carbon Monoxide Poisoning subsection." >}}
 Carbon monoxide has a higher affinity for hemoglobin than oxygen. This means that carbon monoxide will preferentially bind to hemoglobin over oxygen. Administration of 100 percent oxygen is an effective therapy because at that concentration, oxygen will displace the carbon monoxide from the hemoglobin.
 ===CHECKS===
 carbon monoxide has a higher affinity for hemoglobin than oxygen
@@ -131,7 +131,7 @@ carbon monoxide will preferentially bind to hemoglobin over oxygen
   question="The centralized iron-containing structure that is surrounded by the alpha and beta subunits of hemoglobin and binds a single oxygen molecule is called the ________."
   answer="heme group"
   accept="heme|haem|haem group"
-  hint="Each of hemoglobin's four subunits surrounds one of these; together they hold the iron that gives blood its red color."
+  hint="Look in the Hemoglobin subsection, in the sentence after the four subunits are named."
 >}}
 
 {{< textin
@@ -146,7 +146,7 @@ carbon monoxide will preferentially bind to hemoglobin over oxygen
 {{< multiplechoice
   question="The majority of carbon dioxide in the blood is transported by ________."
   answer="conversion to bicarbonate"
-  hint="This route carries about 85 percent of the CO₂ that leaves the tissues — compare that share with the other two transport methods."
+  hint="Compare the share of carbon dioxide each method carries in Transport of Carbon Dioxide in the Blood."
 >}}
 binding to hemoglobin
 dissolution in the blood
@@ -164,24 +164,23 @@ very little carbon dioxide, only 15 percent, would be transported away from the 
 {{< textin
   question="The molecule that forms when carbon dioxide, rather than oxygen, binds directly to hemoglobin is called ________."
   answer="carbaminohemoglobin"
-  accept="carbaminohaemoglobin"
-  hint="This binding is reversible, so the molecule releases its carbon dioxide again once it reaches the lungs."
+  accept="carbaminohaemoglobin|carbamino hemoglobin"
+  hint="Look in the paragraph of Transport of Carbon Dioxide in the Blood that gives the second transport method."
 >}}
 
 {{< textin
-  question="The enzyme inside red blood cells that quickly converts carbon dioxide and water into carbonic acid is called ________."
-  answer="carbonic anhydrase"
-  accept="CA"
-  hint="Look in the paragraph on the third carbon dioxide transport method, right after carbon dioxide diffuses into the red blood cells."
+  question="The newly synthesized bicarbonate ion is transported out of the red blood cell into the liquid component of the blood in exchange for another ion; this exchange is called the ________."
+  answer="chloride shift"
+  hint="Look near the end of the paragraph on the third carbon dioxide transport method."
 >}}
 
 {{< textin
-  question="The system that carries the majority of carbon dioxide out of the tissues while limiting the change to blood pH is called the ________."
-  answer="bicarbonate buffer system"
-  accept="bicarbonate system"
-  hint="It converts CO₂ into an unstable acid inside red blood cells, then into an ion exchanged for chloride at the tissues and back again at the lungs."
+  question="Since carbon dioxide is quickly converted inside red blood cells, this reaction allows for the continued uptake of carbon dioxide into the blood down its ________."
+  answer="concentration gradient"
+  accept="gradient"
+  hint="Look in the paragraph on the third carbon dioxide transport method, a few sentences after carbon dioxide diffuses into the red blood cells."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 39.4: Transport of Gases in Human Bodily Fluids](https://openstax.org/books/biology-2e/pages/39-4-transport-of-gases-in-human-bodily-fluids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the sickle-cell micrograph's alt gives the red blood cells as roughly 8 microns by the printed 25 µm scale bar, because the source alt's "about five microns" does not match the image; the carbon-monoxide Critical Thinking question keeps both of its printed sentences while its model answer, like the source solution, addresses only the first (why 100 percent oxygen works) — the source never answers why carbon dioxide would not, and no answer was invented (a source defect, kept as printed); figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" — Figure_39_04_01-8367 (a composite illustration of red blood cells and a hemoglobin ribbon diagram, not a photograph) and Figure_39_04_04 (a bar graph, not a photograph); a longdesc added to the hemoglobin-structure illustration, the oxygen dissociation curve, and the carbon-monoxide bar graph, each counted from the image (seven red blood cells and two labeled leader lines on the first; a solid curve plus two labeled, directional dotted shift-curves with three causes each on the second; five bars with their five values on the third); the inline P<sub>O2</sub> math markup rendered as P<sub>O₂</sub> and the ion notation (HCO₃⁻, H⁺, Cl⁻) set as Unicode throughout, per house notation; the display carbonic-acid reaction set as a Unicode text paragraph, keeping the source's ↔ arrows, rather than as KaTeX; in-text figure pointers ("Figure 39.19" through "Figure 39.22") replaced with "shown above"/"shown below," since Hugo does not number figures; the note.visual-connection rendered as its figure immediately followed by a body self-check, since the module keys it with a prose solution rather than a lettered choice; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise in the module; five key-term recall items added from the glossary (heme group, sickle cell anemia, carbonic anhydrase, carbaminohemoglobin, bicarbonate buffer system); the other six glossary terms (bicarbonate ion, chloride shift, hemoglobin, oxygen-carrying capacity, oxygen dissociation curve, thalassemia) appear only in the Key terms list and the prose; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 39.4: Transport of Gases in Human Bodily Fluids](https://openstax.org/books/biology-2e/pages/39-4-transport-of-gases-in-human-bodily-fluids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the sickle-cell micrograph's alt gives the red blood cells as roughly 8 microns by the printed 25 µm scale bar, because the source alt's "about five microns" does not match the image; the carbon-monoxide Critical Thinking question keeps both of its printed sentences while its model answer, like the source solution, addresses only the first (why 100 percent oxygen works) — the source never answers why carbon dioxide would not, and no answer was invented (a source defect, kept as printed); figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" — Figure_39_04_01-8367 (a composite illustration of red blood cells and a hemoglobin ribbon diagram, not a photograph) and Figure_39_04_04 (a bar graph, not a photograph); a longdesc added to the hemoglobin-structure illustration, the oxygen dissociation curve, and the carbon-monoxide bar graph, each counted from the image (eight red blood cells and two labeled leader lines on the first; a solid curve plus two labeled, directional dotted shift-curves with three causes each on the second; five bars with their five values on the third); the inline P<sub>O2</sub> math markup rendered as P<sub>O₂</sub> and the ion notation (HCO₃⁻, H⁺, Cl⁻) set as Unicode throughout, per house notation; the display carbonic-acid reaction set as a Unicode text paragraph, keeping the source's ↔ arrows, rather than as KaTeX; in-text figure pointers ("Figure 39.19" through "Figure 39.22") replaced with "shown above"/"shown below," since Hugo does not number figures; the note.visual-connection rendered as its figure immediately followed by a body self-check, since the module keys it with a prose solution rather than a lettered choice; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise in the module, each placed under the objective it tests, so the third Review Question comes before the second and the second Critical Thinking Question before the first; four key-term recall items added from the glossary (heme group, sickle cell anemia, carbaminohemoglobin, chloride shift) and one cloze text-in (concentration gradient) built from the bicarbonate-buffer paragraph's sentence on the continued uptake of carbon dioxide; the other seven glossary terms (bicarbonate buffer system, bicarbonate ion, carbonic anhydrase, hemoglobin, oxygen-carrying capacity, oxygen dissociation curve, thalassemia) appear only in the Key terms list and the prose — carbonic anhydrase because the first Critical Thinking question asks about it, and the bicarbonate buffer system because the second Review Question keys it; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

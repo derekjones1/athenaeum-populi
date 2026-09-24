@@ -199,6 +199,46 @@ The structural classification of joints divides them into bony, fibrous, cartila
 
 ### Classify the different types of joints on the basis of structure
 
+{{< textin
+  question="A joint that is immovable is called a ________."
+  answer="synarthrosis"
+  accept="synarthroses"
+  hint="Reread the Classification of Joints on the Basis of Function section."
+>}}
+
+{{< textin
+  question="A joint held together by fibrous connective tissue is called a ________."
+  answer="fibrous joint"
+  hint="Reread the first subsection under Classification of Joints on the Basis of Structure."
+>}}
+
+{{< textin
+  question="A short fiber of connective tissue that holds the skull bones tightly in place, found only in the skull, is called a ________."
+  answer="suture"
+  hint="Reread the paragraph just before the skull figure."
+>}}
+
+{{< textin
+  question="The joint in which a tooth fits into its socket like a peg is called a ________."
+  answer="gomphosis"
+  accept="gomphoses"
+  hint="Reread the paragraph just after the skull figure."
+>}}
+
+{{< textin
+  question="A joint in which the oval-shaped end of one bone fits into a similarly oval-shaped hollow of another bone is called a ________."
+  answer="condyloid joint"
+  accept="condyloid|ellipsoidal joint|ellipsoidal"
+  hint="Reread the fourth subsection of Types of Synovial Joints."
+>}}
+
+{{< textin
+  question="A joint with a rounded, ball-like end of one bone fitting into a cuplike socket of another bone is called a ________."
+  answer="ball-and-socket joint"
+  accept="ball-and-socket"
+  hint="Reread the last subsection of Types of Synovial Joints."
+>}}
+
 {{< multiplechoice
   question="Synchondroses and symphyses are:"
   answer="cartilaginous joints"
@@ -213,7 +253,7 @@ condyloid joints
 {{< multiplechoice
   question="Which of the following is not a characteristic of the synovial fluid?"
   answer="regulation of water balance in the joint"
-  hint="Reread the Synovial Joints paragraph on what fills the joint cavity and what that fluid does, then ask which option describes a job unrelated to the bones' moving surfaces."
+  hint="Reread the Synovial Joints subsection."
 >}}
 lubrication
 shock absorption
@@ -235,7 +275,7 @@ gliding
 {{< multiplechoice
   question="A high ankle sprain is an injury caused by over-stretching the ligaments connecting the tibia and fibula. What type of joint is involved in this sprain?"
   answer="syndesmosis"
-  hint="The tibia and fibula are joined by a fibrous joint; reread the Fibrous Joints subsection for the type that joins such bones."
+  hint="Reread the Classification of Joints on the Basis of Structure section for where the tibia and fibula are named."
 >}}
 ball and socket
 gomphosis
@@ -243,51 +283,49 @@ syndesmosis
 symphysis
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A joint that is immovable is called a ________."
-  answer="synarthrosis"
-  accept="synarthroses"
-  hint="Sutures, gomphoses, and synchondroses all belong to this functional category."
->}}
-
-{{< textin
-  question="A joint held together by fibrous connective tissue is called a ________."
-  answer="fibrous joint"
-  hint="This structural category has no cavity between the bones, so most examples barely move at all."
->}}
-
-{{< textin
-  question="A short fiber of connective tissue that holds the skull bones tightly in place, found only in the skull, is called a ________."
-  answer="suture"
-  hint="This is the only fibrous joint type found nowhere else in the body."
->}}
-
-{{< textin
-  question="The joint in which a tooth fits into its socket like a peg is called a ________."
-  answer="gomphosis"
-  accept="gomphoses"
-  hint="A periodontal ligament connects the tooth to its bony socket at this joint."
->}}
-
-{{< textin
-  question="A joint in which the oval-shaped end of one bone fits into a similarly oval-shaped hollow of another bone is called a ________."
-  answer="condyloid joint"
-  accept="ellipsoidal joint"
-  hint="The wrist and finger joints that move both side to side and up and down are this type."
->}}
-
-{{< textin
-  question="A joint with a rounded, ball-like end of one bone fitting into a cuplike socket of another bone is called a ________."
-  answer="ball-and-socket joint"
-  hint="The shoulder and hip are the two examples this section gives of this joint type."
->}}
-
 ### Explain the role of joints in skeletal movement
+
+{{< textin
+  question="The movement of a bone toward the midline of the body is called ________."
+  answer="adduction"
+  hint="Reread the second paragraph of the Angular Movement subsection."
+>}}
+
+{{< textin
+  question="Movement of a limb in a circular motion is called ________."
+  answer="circumduction"
+  hint="Reread the end of the Angular Movement subsection."
+>}}
+
+{{< textin
+  question="Extension past the regular anatomical position is called ________."
+  answer="hyperextension"
+  hint="Reread the first paragraph of the Angular Movement subsection."
+>}}
+
+{{< textin
+  question="Movement that occurs when relatively flat bone surfaces move past each other is called ________."
+  answer="gliding movement"
+  accept="gliding"
+  hint="Reread the first subsection of Movement at Synovial Joints."
+>}}
+
+{{< textin
+  question="The movement of the soles of the feet inward, toward the midline of the body, is called ________."
+  answer="inversion"
+  hint="Reread the Special Movements subsection."
+>}}
+
+{{< textin
+  question="The movement of the forearm in which the palm faces backward is called ________."
+  answer="pronation"
+  hint="Reread the end of the Special Movements subsection."
+>}}
 
 {{< multiplechoice
   question="The movement of bone away from the midline of the body is called ________."
   answer="abduction"
-  hint="Think about which term describes moving a limb laterally away from the body, as when lifting an arm out to the side."
+  hint="Reread the second paragraph of the Angular Movement subsection."
 >}}
 circumduction
 extension
@@ -295,67 +333,31 @@ adduction
 abduction
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What movements occur at the hip joint and knees as you bend down to touch your toes?" hint="Think separately about what happens to the angle at the hip versus the angle at the knee as you fold forward." >}}
+{{< selfcheck question="What movements occur at the hip joint and knees as you bend down to touch your toes?" hint="Reread the Angular Movement subsection." >}}
 The hip joint is flexed and the knees are extended.
 ===CHECKS===
 the hip joint is flexed
 the knees are extended
 {{< /selfcheck >}}
 
-{{< selfcheck question="What movement(s) occur(s) at the scapulae when you shrug your shoulders?" hint="Shrugging has two phases — the shoulders going up, then coming back down — name the movement for each." >}}
+{{< selfcheck question="What movement(s) occur(s) at the scapulae when you shrug your shoulders?" hint="Reread the Special Movements subsection." >}}
 Elevation is the movement of a bone upward, such as when the shoulders are shrugged, lifting the scapulae. Depression is the downward movement of a bone, such as after the shoulders are shrugged and the scapulae return to their normal position from an elevated position.
 ===CHECKS===
 elevation is the movement of a bone upward, such as when the shoulders are shrugged, lifting the scapulae
 depression is the downward movement of a bone
-depression occurs after the shoulders are shrugged and the scapulae return to their normal position from an elevated position
+such as after the shoulders are shrugged and the scapulae return to their normal position from an elevated position
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe the joints and motions involved in taking a step forward if a person is initially standing still. Assume the person holds his foot at the same angle throughout the motion." hint="Track the hip and knee separately through the swing phase (foot leaving the ground) and the stance phase (foot landing)." >}}
-Taking a step would require bending the knee (modified hinge joint) and moving the leg in the hip (ball and socket joint) since the motion of the foot is excluded. As the foot comes off the ground in the step, the hip joint is going to move the femur in a protracted motion and the knee will flex the shin toward the thigh. As the foot lands, the knee extends the leg and the hip retracts the femur.
+{{< selfcheck question="Describe the joints and motions involved in taking a step forward if a person is initially standing still. Assume the person holds his foot at the same angle throughout the motion." hint="Reread the Movement at Synovial Joints and Types of Synovial Joints sections." >}}
+Taking a step would require bending the knee (modified hinge joint) and moving the leg in the hip (ball and socket joint) since the motion of the foot is excluded. As the foot comes off the ground in the step, the hip joint is going to flex, swinging the femur forward, and the knee will flex the shin toward the thigh. As the foot lands, the knee extends the leg and the hip extends the femur. *(Source note: the source answer calls the hip's movement a "protracted motion" and says the hip "retracts the femur"; this section defines protraction and retraction as movements in the horizontal plane, and swinging the thigh forward and back at the hip is flexion and extension.)*
 ===CHECKS===
-taking a step requires bending the knee, a modified hinge joint
-taking a step requires moving the leg in the hip, a ball and socket joint
-as the foot comes off the ground, the hip joint moves the femur in a protracted motion and the knee flexes the shin toward the thigh
-as the foot lands, the knee extends the leg and the hip retracts the femur
+taking a step would require bending the knee (modified hinge joint)
+moving the leg in the hip (ball and socket joint)
+as the foot comes off the ground in the step, the hip joint flexes, swinging the femur forward
+the knee will flex the shin toward the thigh
+as the foot lands, the knee extends the leg and the hip extends the femur
 {{< /selfcheck >}}
-
-{{< textin
-  question="Movement of the limbs inward after abduction is called ________."
-  answer="adduction"
-  hint="This is the opposite of the movement that lifts a limb laterally out to the side."
->}}
-
-{{< textin
-  question="Movement of a limb in a circular motion is called ________."
-  answer="circumduction"
-  hint="Moving the whole arm in a circle, rather than back and forth in a single plane, is this movement."
->}}
-
-{{< textin
-  question="Extension past the regular anatomical position is called ________."
-  answer="hyperextension"
-  hint="Tilting the neck back to look upward, or bending the wrist so the hand moves away from the forearm, are examples of this movement."
->}}
-
-{{< textin
-  question="Movement that occurs when relatively flat bone surfaces move past each other is called ________."
-  answer="gliding movement"
-  accept="gliding"
-  hint="The carpal and tarsal bones are the section's examples of joints that produce this kind of movement, with very little rotation or angular change."
->}}
-
-{{< textin
-  question="The movement of the soles of the feet inward, toward the midline of the body, is called ________."
-  answer="inversion"
-  hint="This is the opposite of the movement that turns the sole of the foot outward, away from the midline."
->}}
-
-{{< textin
-  question="The movement of the forearm in which the palm faces backward is called ________."
-  answer="pronation"
-  hint="This is the opposite of the forearm movement that turns the palm to face forward."
->}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 38.3: Joints and Skeletal Movement](https://openstax.org/books/biology-2e/pages/38-3-joints-and-skeletal-movement) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; seven of the ten figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_38_03_01, _02, _03, _04, _07, _08, and _10 are hand-drawn line illustrations, not captured photographs — the manifest guesses from the source JPEG extension alone); a longdesc added to every figure whose printed labels or panel layout are not fully carried by its one-line caption — the skull-suture drawing, the labeled synovial-joint cross-section, the six-panel joint-and-movement composite (counting all six lettered panels, their body location, and the schematic motion arrows each shows), the labeled wrist, elbow, finger, thumb, and shoulder anatomy — transcribing each drawing's own printed labels in reading order; in-text pointers to figures ("Figure 38.20" and similar) replaced with "shown below," since Hugo does not number figures; the two feature notes (the Link to Learning animation of the six synovial joint types, and the Career Connection profiling a rheumatologist) rendered as callouts, the Career Connection keeping its bold name, italic title, and all four paragraphs verbatim; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; thirteen key-term recall items added from the glossary (fibrous joint, suture, gomphosis, synarthrosis, condyloid joint, ball-and-socket joint, adduction, circumduction, hyperextension, gliding movement, inversion, pronation, plus abduction as a Review Question key), covering a representative subset of the section's forty glossary terms rather than all of them; a typo in the pinned CNXML's own Section Summary — "syndesomes" — corrected to "syndesmoses" to match every other occurrence of the term in the same module (body prose, the functional-classification paragraph, and the glossary), a source defect; no Visual Connection question or comparison table appears in this module.</small>
+<small>This section is adapted from [Biology 2e, Section 38.3: Joints and Skeletal Movement](https://openstax.org/books/biology-2e/pages/38-3-joints-and-skeletal-movement) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; seven of the ten figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_38_03_01, _02, _03, _04, _07, _08, and _10 are hand-drawn line illustrations, not captured photographs — the manifest guesses from the source JPEG extension alone); a longdesc added to every figure whose printed labels or panel layout are not fully carried by its one-line caption — the skull-suture drawing, the labeled synovial-joint cross-section, the six-panel joint-and-movement composite (counting all six lettered panels, their body location, and the schematic motion arrows each shows), the labeled wrist, elbow, finger, thumb, and shoulder anatomy — transcribing each drawing's own printed labels in reading order; in-text pointers to figures ("Figure 38.20" and similar) replaced with "shown below," since Hugo does not number figures; the two feature notes (the Link to Learning animation of the six synovial joint types, and the Career Connection profiling a rheumatologist) rendered as callouts, the Career Connection keeping its bold name, italic title, and all four paragraphs verbatim; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; twelve key-term recall items added from the glossary (synarthrosis, fibrous joint, suture, gomphosis, condyloid joint, ball-and-socket joint, adduction, circumduction, hyperextension, gliding movement, inversion, pronation), covering a representative subset of the section's forty glossary terms rather than all of them, and placed first in their objective groups; the adduction item's prompt taken from the body's own sentence ("the movement of a bone toward the midline of the body") rather than the glossary's "movement of the limbs inward after abduction," so it does not print the neighbouring Review Question's key; Practice items placed under the objective each tests, so the Review Question on movement away from the midline, second in the source, comes after the other four; a typo in the pinned CNXML's own Section Summary — "syndesomes" — corrected to "syndesmoses" to match every other occurrence of the term in the same module (body prose, the functional-classification paragraph, and the glossary), a source defect; the step-forward Critical Thinking model answer's "protracted motion" and "retracts the femur" at the hip corrected to flexion and extension, with a visible Source note; no Visual Connection question or comparison table appears in this module.</small>

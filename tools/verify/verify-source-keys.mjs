@@ -688,6 +688,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 1008,
     reason: 'source keys "transverse" for the plane dividing dorsal from ventral, but the module\'s own body-planes figure labels the goat\'s back-from-belly plane "Frontal plane" and the module names the frontal plane "coronal"; the page keys "coronal"',
   },
+  {
+    page: 'content/life-health-sciences/biology/38-the-musculoskeletal-system/03-joints-and-skeletal-movement.md',
+    exercise: 'eip-407',
+    kind: 'solution',
+    erratum: 1011,
+    reason: 'the source solution says the hip moves the femur "in a protracted motion" and "retracts the femur" in a step, but the module defines protraction and retraction as horizontal-plane movements; the page\'s model answer and rubric say the hip flexes and extends, with a source note',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

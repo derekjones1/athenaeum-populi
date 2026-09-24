@@ -31,7 +31,7 @@ The cells and cellular components of human blood are shown. Red blood cells deli
 
 **Red blood cells**, or erythrocytes (erythro- = “red”; -cyte = “cell”), are specialized cells that circulate through the body delivering oxygen to cells; they are formed from stem cells in the bone marrow. In mammals, red blood cells are small biconcave cells that at maturity do not contain a nucleus or mitochondria and are only 7–8 µm in size. In birds and non-avian reptiles, a nucleus is still maintained in red blood cells.
 
-The red coloring of blood comes from the iron-containing protein hemoglobin, illustrated below (a). The principle job of this protein is to carry oxygen, but it also transports carbon dioxide as well. Hemoglobin is packed into red blood cells at a rate of about 250 million molecules of hemoglobin per cell. Each hemoglobin molecule binds four oxygen molecules so that each red blood cell carries one billion molecules of oxygen. There are approximately 25 trillion red blood cells in the five liters of blood in the human body, which could carry up to 25 sextillion ($25 \times 10^{21}$) molecules of oxygen in the body at any time. In mammals, the lack of organelles in erythrocytes leaves more room for the hemoglobin molecules, and the lack of mitochondria also prevents use of the oxygen for metabolic respiration. Only mammals have anucleated red blood cells, and some mammals (camels, for instance) have unusually shaped oval red blood cells, though still without nuclei. *(Source note: the source says camels "even have nucleated red blood cells"; camelid erythrocytes are anucleate ellipsoids (*Schalm's Veterinary Hematology*, 6th ed., "Hematology of Camelids").)* The advantage of nucleated red blood cells is that these cells can undergo mitosis. Anucleated red blood cells metabolize anaerobically (without oxygen), making use of a primitive metabolic pathway to produce ATP and increase the efficiency of oxygen transport.
+The red coloring of blood comes from the iron-containing protein hemoglobin, illustrated below (a). The principal job of this protein is to carry oxygen, but it also transports carbon dioxide as well. Hemoglobin is packed into red blood cells at a rate of about 250 million molecules of hemoglobin per cell. Each hemoglobin molecule binds four oxygen molecules so that each red blood cell carries one billion molecules of oxygen. There are approximately 25 trillion red blood cells in the five liters of blood in the human body, which could carry up to 25 sextillion ($25 \times 10^{21}$) molecules of oxygen in the body at any time. In mammals, the lack of organelles in erythrocytes leaves more room for the hemoglobin molecules, and the lack of mitochondria also prevents use of the oxygen for metabolic respiration. Only mammals have anucleated red blood cells, and some mammals (camels, for instance) have unusually shaped oval red blood cells, though still without nuclei. *(Source note: the source says camels "even have nucleated red blood cells"; camelid erythrocytes are anucleate ellipsoids (*Schalm's Veterinary Hematology*, 6th ed., "Hematology of Camelids").)* The advantage of nucleated red blood cells is that these cells can undergo mitosis. Anucleated red blood cells metabolize anaerobically (without oxygen), making use of a primitive metabolic pathway to produce ATP and increase the efficiency of oxygen transport.
 
 Not all organisms use hemoglobin as the method of oxygen transport. Invertebrates that utilize hemolymph rather than blood use different pigments to bind to the oxygen. These pigments use copper or iron to bind to the oxygen. Invertebrates have a variety of other respiratory pigments. Hemocyanin, a blue-green, copper-containing protein, illustrated below (b), is found in mollusks, crustaceans, and some of the arthropods. Chlorocruorin, a green-colored, iron-containing pigment is found in four families of polychaete tubeworms. Hemerythrin, a red, iron-containing protein is found in some polychaete worms and annelids and is illustrated below (c). Despite the name, hemerythrin does not contain a heme group and its oxygen-carrying capacity is poor compared to hemoglobin.
 
@@ -39,7 +39,7 @@ Not all organisms use hemoglobin as the method of oxygen transport. Invertebrate
 In most vertebrates, (a) hemoglobin delivers oxygen to the body and removes some carbon dioxide. Hemoglobin is composed of four protein subunits, two alpha chains and two beta chains, and a heme group that has iron associated with it. The iron reversibly associates with oxygen, and in so doing is oxidized from Fe²⁺ to Fe³⁺. In most mollusks and some arthropods, (b) hemocyanin delivers oxygen. Unlike hemoglobin, hemocyanin is not carried in blood cells, but floats free in the hemolymph. Copper instead of iron binds the oxygen, giving the hemolymph a blue-green color. In annelids, such as the earthworm, and some other invertebrates, (c) hemerythrin carries oxygen. Like hemoglobin, hemerythrin is carried in blood cells and has iron associated with it, but despite its name, hemerythrin does not contain heme.
 {{< /mediafigure >}}
 
-The small size and large surface area of red blood cells allows for rapid diffusion of oxygen and carbon dioxide across the plasma membrane. In the lungs, carbon dioxide is released and oxygen is taken in by the blood. In the tissues, oxygen is released from the blood and carbon dioxide is bound for transport back to the lungs. Studies have found that hemoglobin also binds nitrous oxide (NO). NO is a vasodilator that relaxes the blood vessels and capillaries and may help with gas exchange and the passage of red blood cells through narrow vessels. Nitroglycerin, a heart medication for angina and heart attacks, is converted to NO to help relax the blood vessels and increase oxygen flow through the body.
+The small size and large surface area of red blood cells allows for rapid diffusion of oxygen and carbon dioxide across the plasma membrane. In the lungs, carbon dioxide is released and oxygen is taken in by the blood. In the tissues, oxygen is released from the blood and carbon dioxide is bound for transport back to the lungs. Studies have found that hemoglobin also binds nitric oxide (NO). NO is a vasodilator that relaxes the blood vessels and capillaries and may help with gas exchange and the passage of red blood cells through narrow vessels. Nitroglycerin, a heart medication for angina and heart attacks, is converted to NO to help relax the blood vessels and increase oxygen flow through the body.
 
 A characteristic of red blood cells is their glycolipid and glycoprotein coating; these are lipids and proteins that have carbohydrate molecules attached. In humans, the surface glycoproteins and glycolipids on red blood cells vary between individuals, producing the different blood types, such as A, B, and O. Red blood cells have an average life span of 120 days, at which time they are broken down and recycled in the liver and spleen by phagocytic macrophages, a type of white blood cell.
 
@@ -59,7 +59,7 @@ One reason that HIV poses significant management challenges is because the virus
 
 ## Platelets and Coagulation Factors
 
-Blood must clot to heal wounds and prevent excess blood loss. Small cell fragments called platelets (thrombocytes) are attracted to the wound site where they adhere by extending many projections and releasing their contents. These contents activate other platelets and also interact with other coagulation factors, which convert fibrinogen, a water-soluble protein present in blood serum into fibrin (a non-water soluble protein), causing the blood to clot. Many of the clotting factors require vitamin K to work, and vitamin K deficiency can lead to problems with blood clotting. Many platelets converge and stick together at the wound site forming a platelet plug (also called a fibrin clot), as illustrated below (b). The plug or clot lasts for a number of days and stops the loss of blood. Platelets are formed from the disintegration of larger cells called megakaryocytes, like that shown below (a). For each megakaryocyte, 2000–3000 platelets are formed with 150,000 to 400,000 platelets present in each cubic millimeter of blood. Each platelet is disc shaped and 2–4 µm in diameter. They contain many small vesicles but do not contain a nucleus.
+Blood must clot to heal wounds and prevent excess blood loss. Small cell fragments called platelets (thrombocytes) are attracted to the wound site where they adhere by extending many projections and releasing their contents. These contents activate other platelets and also interact with other coagulation factors, which convert fibrinogen, a water-soluble protein present in blood plasma, into fibrin (a non-water soluble protein), causing the blood to clot. Many of the clotting factors require vitamin K to work, and vitamin K deficiency can lead to problems with blood clotting. Many platelets converge and stick together at the wound site forming a platelet plug (also called a fibrin clot), as illustrated below (b). The plug or clot lasts for a number of days and stops the loss of blood. Platelets are formed from the disintegration of larger cells called megakaryocytes, like that shown below (a). For each megakaryocyte, 2000–3000 platelets are formed with 150,000 to 400,000 platelets present in each cubic millimeter of blood. Each platelet is disc shaped and 2–4 µm in diameter. They contain many small vesicles but do not contain a nucleus.
 
 {{< mediafigure src="biology/Figure_40_02_04ab" kind="diagram" alt="Two panels: (a) a large, irregularly shaped Megakaryocyte shedding small, spindle-shaped Platelets, some pointed to by a forked leader line; (b) a wedge-shaped cross-section of a blood vessel packed with red blood cells, with a leader line labeling a tangled Fibrin clot at a breach in the vessel wall." longdesc="In panel (a), one leader line labels Megakaryocyte, the single large, irregularly lobed cell at center; a second leader line labeled Platelets forks into two branches, each pointing to one of the many small, spindle-shaped fragments scattered around it. In panel (b), one leader line labels Fibrin clot, a tangled mesh of blue fibrin threads with small tan platelets caught in it, plugging a notch torn in the vessel wall; the vessel's interior is otherwise filled with numerous unlabeled red blood cells and a scattering of the same small platelets." >}}
 (a) Platelets are formed from large cells called megakaryocytes. The megakaryocyte breaks up into thousands of fragments that become platelets. (b) Platelets are required for clotting of the blood. The platelets collect at a wound site in conjunction with other clotting factors, such as fibrinogen, to form a fibrin clot that prevents blood loss and allows the wound to heal.
@@ -105,6 +105,20 @@ Specific components of the blood include red blood cells, white blood cells, pla
 
 ### List the basic components of the blood
 
+{{< textin
+  question="The liquid component of blood that is left after the cells are removed is called ________."
+  answer="plasma"
+  accept="blood plasma"
+  hint="Look at the section's opening paragraph, where it lists what blood includes."
+>}}
+
+{{< textin
+  question="A small cellular fragment that cross-reacts with clotting factors to prevent blood loss is called a ________."
+  answer="platelet"
+  accept="thrombocyte"
+  hint="Look at the opening paragraph of the subsection on clotting."
+>}}
+
 {{< multiplechoice
   question="Platelet plug formation occurs at which point?"
   answer="when platelets are attracted to a site of blood vessel damage"
@@ -116,14 +130,7 @@ when platelets are attracted to a site of blood vessel damage
 none of the above
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The liquid component of blood that is left after the cells are removed is called ________."
-  answer="plasma"
-  accept="blood plasma"
-  hint="This is the 90-percent-water portion left in the tube after centrifuging separates out the cells and platelets."
->}}
-
-{{< selfcheck question="List some of the functions of blood in the body." hint="Think beyond gas transport — list every regulatory, transport, and protective job the section's opening paragraphs assign to blood." >}}
+{{< selfcheck question="List some of the functions of blood in the body." hint="Reread The Role of Blood in the Body." >}}
 Blood is important for regulation of the body's pH, temperature, and osmotic pressure, the circulation of nutrients and removal of wastes, the distribution of hormones from endocrine glands, the elimination of excess heat; it also contains components for the clotting of blood to prevent blood loss. Blood also transports clotting factors and disease-fighting agents.
 ===CHECKS===
 regulation of the body's pH, temperature, and osmotic pressure
@@ -134,19 +141,26 @@ components for the clotting of blood to prevent blood loss
 transports clotting factors and disease-fighting agents
 {{< /selfcheck >}}
 
+### Compare red and white blood cells
+
 {{< textin
-  question="A small cellular fragment that collects at wounds and forms a plug to prevent blood loss is called a ________."
-  answer="platelet"
-  accept="thrombocyte"
-  hint="Megakaryocytes break apart into thousands of these tiny fragments, which converge at a wound to help it clot."
+  question="A large cell with nuclei, of which there are many types with different roles, including cleaning up dead cells and other waste, is called a(n) ________."
+  answer="white blood cell"
+  accept="leukocyte|leucocyte|WBC|white cell"
+  hint="Look at the paragraph just before the granulocyte and agranulocyte figure."
 >}}
 
-### Compare red and white blood cells
+{{< textin
+  question="A small biconcave cell packed with hemoglobin that transports oxygen through the body is called a(n) ________."
+  answer="red blood cell"
+  accept="erythrocyte|RBC|red cell"
+  hint="Look at the opening paragraph of the subsection that follows the blood-cell figure."
+>}}
 
 {{< multiplechoice
   question="White blood cells:"
   answer="all of the above"
-  hint="Check the three statements about white blood cells separately — their two structural groups, their defensive role, and their alternate name — before deciding whether all three hold up."
+  hint="Reread the subsection that holds the granulocyte and agranulocyte figure, and that figure's caption, checking each statement against them."
 >}}
 can be classified as granulocytes or agranulocytes
 defend the body against bacteria and viruses
@@ -157,7 +171,7 @@ all of the above
 {{< multiplechoice
   question="The red blood cells of birds differ from mammalian red blood cells because:"
   answer="they have nuclei"
-  hint="Reread the opening paragraph of Red Blood Cells, which compares mammals with birds and non-avian reptiles."
+  hint="Reread the opening paragraph of the subsection that follows the blood-cell figure, which compares mammals with birds and non-avian reptiles."
 >}}
 they are white and have nuclei
 they do not have nuclei
@@ -165,21 +179,7 @@ they have nuclei
 they fight disease
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A large cell with a nucleus that protects the body from viruses and bacteria and cleans up dead cells and waste is called a(n) ________."
-  answer="white blood cell"
-  accept="leukocyte|leucocyte|WBC"
-  hint="Look in the section after the hemoglobin figure, at the paragraph that compares the morphology of the two cell types."
->}}
-
-{{< textin
-  question="A small biconcave cell packed with hemoglobin that transports oxygen through the body is called a(n) ________."
-  answer="red blood cell"
-  accept="erythrocyte|RBC"
-  hint="In mammals, this cell type lacks a nucleus and mitochondria at maturity, leaving more room for the oxygen-carrying pigment."
->}}
-
-{{< selfcheck question="How does the lymphatic system work with blood flow?" hint="Follow the fluid's path in the order the answer gives it: where does it go first, what filters it, which cells do the filtering, and what happens to the fluid afterward." >}}
+{{< selfcheck question="How does the lymphatic system work with blood flow?" hint="This section does not cover the lymphatic system; Section 40.4, Blood Flow and Blood Pressure Regulation, does, in its capillary-exchange discussion and lymph-capillary figure." >}}
 Lymph capillaries take fluid from the blood to the lymph nodes. The lymph nodes filter the lymph by percolation through connective tissue filled with white blood cells. The white blood cells remove infectious agents, such as bacteria and viruses, to clean the lymph before it returns to the bloodstream.
 ===CHECKS===
 lymph capillaries take fluid from the blood to the lymph nodes
@@ -192,7 +192,7 @@ the white blood cells remove infectious agents, such as bacteria and viruses, to
 {{< multiplechoice
   question="In humans, the plasma comprises what percentage of the blood?"
   answer="55 percent"
-  hint="The opening paragraph gives one percentage for the cellular components and the complementary percentage for the liquid portion — which one matches plasma?"
+  hint="Reread the section's opening paragraph."
 >}}
 45 percent
 55 percent
@@ -204,10 +204,10 @@ the white blood cells remove infectious agents, such as bacteria and viruses, to
   question="Plasma without the coagulation factors is called ________."
   answer="serum"
   accept="blood serum"
-  hint="Look in the section after Platelets and Coagulation Factors, at the start of its second paragraph."
+  hint="Look at the start of the second paragraph of the last subsection before the Evolution Connection box."
 >}}
 
-{{< selfcheck question="Describe the cause of different blood type groups." hint="Work through the three variables in the order the answer addresses them: what coats the red cell surface, what reacts to it in the plasma, and what the Rh marker adds separately." >}}
+{{< selfcheck question="Describe the cause of different blood type groups." hint="Reread the Evolution Connection box on blood types and its figure caption." >}}
 Red blood cells are coated with proteins called antigens made of glycolipids and glycoproteins. When type A and type B blood are mixed, the blood agglutinates because of antibodies in the plasma that bind with the opposing antigen. Type O blood has no antigens. The Rh blood group has either the Rh antigen (Rh+) or no Rh antigen (Rh–).
 ===CHECKS===
 red blood cells are coated with antigens made of glycolipids and glycoproteins
@@ -218,4 +218,4 @@ the Rh blood group has either the Rh antigen (Rh+) or no Rh antigen (Rh–)
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 40.2: Components of the Blood](https://openstax.org/books/biology-2e/pages/40-2-components-of-the-blood) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: two source misspellings corrected ("Immunoglobin" to "immunoglobulin", "agglutinougens" to "agglutinogens"); figures re-encoded as WebP with the source alt text edited where noted; all five figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_40_02_01, Figure_40_02_02abc, Figure_40_02_03ab, Figure_40_02_04ab, and Figure_40_02_05 are each a hand-drawn or computer-rendered illustration, not a captured photograph); a longdesc added to the three figures whose printed leader-line labels are not carried by their one-line caption — the blood-cell-types illustration, the hemoglobin/hemocyanin/hemerythrin molecular models, and the megakaryocyte/platelet-clot illustration — transcribing each drawing's own labels and leader-line counts, in reading order; ion charges (Fe²⁺, Fe³⁺) set in Unicode; the numeric exponent (25 × 10 to the 21st power) set in KaTeX per the house notation rule; in-text pointers to figures ("Figure 40.5" through "Figure 40.9") replaced with "shown below," "illustrated below," or "shown below (a)/(b)/(c)," since Hugo does not number figures; the `evolution` note rendered as an Evolution Connection callout and the `interactive` note as a Link to Learning callout, keeping the module's own openstax.org/l/blood_typing redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively) — all four Review Questions and all three Critical Thinking Questions are used; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (plasma, platelet, red blood cell, white blood cell, serum), covering every glossary term in the section. This module carries no comparison table, so no `sortbins` exercise applies. Two claims are corrected with visible Source notes: camel red blood cells are oval but anucleate, not nucleated, and white blood cells are 12–20 µm rather than 30 µm.</small>
+<small>This section is adapted from [Biology 2e, Section 40.2: Components of the Blood](https://openstax.org/books/biology-2e/pages/40-2-components-of-the-blood) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: three source misspellings corrected ("principle job" to "principal job", "Immunoglobin" to "immunoglobulin", "agglutinougens" to "agglutinogens"); figures re-encoded as WebP with the source alt text edited where noted; all five figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_40_02_01, Figure_40_02_02abc, Figure_40_02_03ab, Figure_40_02_04ab, and Figure_40_02_05 are each a hand-drawn or computer-rendered illustration, not a captured photograph); a longdesc added to the three figures whose printed leader-line labels are not carried by their one-line caption — the blood-cell-types illustration, the hemoglobin/hemocyanin/hemerythrin molecular models, and the megakaryocyte/platelet-clot illustration — transcribing each drawing's own labels and leader-line counts, in reading order; ion charges (Fe²⁺, Fe³⁺) set in Unicode; the numeric exponent (25 × 10 to the 21st power) set in KaTeX per the house notation rule; in-text pointers to figures ("Figure 40.5" through "Figure 40.9") replaced with "shown below," "illustrated below," or "shown below (a)/(b)/(c)," since Hugo does not number figures; the `evolution` note rendered as an Evolution Connection callout and the `interactive` note as a Link to Learning callout, keeping the module's own openstax.org/l/blood_typing redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 2, 1, 4, 3 of the source's numbering and the Critical Thinking Questions 2, 3, 1 — all four Review Questions and all three Critical Thinking Questions are used; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (plasma, platelet, red blood cell, white blood cell, serum), covering every glossary term in the section. This module carries no comparison table, so no `sortbins` exercise applies. Two claims are corrected with visible Source notes: camel red blood cells are oval but anucleate, not nucleated, and white blood cells are 12–20 µm rather than 30 µm. Two wordings are corrected without a note: the source's "nitrous oxide (NO)" reads "nitric oxide (NO)," the compound the abbreviation names, and fibrinogen is "present in blood plasma" rather than "in blood serum," since the module defines serum as plasma without the coagulation factors.</small>

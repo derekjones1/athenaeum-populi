@@ -145,6 +145,18 @@ Animal respiratory systems are designed to facilitate gas exchange. In mammals, 
 
 ### Describe the passage of air from the outside environment to the lungs
 
+{{< textin
+  question="In the lungs, air passes through the branching bronchi, reaching the ________, which house the first site of gas exchange."
+  answer="respiratory bronchioles"
+  hint="Reread the Summary."
+>}}
+
+{{< textin
+  question="A structure consisting of two or more alveoli that share a common opening is called a(n) ________."
+  answer="alveolar sac"
+  hint="Reread the Key terms list, and the last paragraph of Lungs: Bronchi and Alveoli."
+>}}
+
 {{< multiplechoice
   question="The respiratory system ________."
   answer="provides body tissues with oxygen"
@@ -167,7 +179,7 @@ nasal cavity, larynx, trachea, bronchioles, bronchi, alveoli
 nasal cavity, trachea, larynx, bronchioles, bronchi, alveoli
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the function of these terms and describe where they are located: main bronchus, trachea, alveoli, and acinus." hint="Work through the four structures in the order air actually travels through them, starting from where the trachea ends and finishing at the site where gas actually crosses into the blood." >}}
+{{< selfcheck question="Describe the function of these terms and describe where they are located: main bronchus, trachea, alveoli, and acinus." hint="Reread Mammalian Systems from the trachea paragraph through Lungs: Bronchi and Alveoli, and the Key terms list." >}}
 The main bronchus is the conduit in the lung that funnels air to the airways where gas exchange occurs. The main bronchus attaches the lungs to the very end of the trachea where it bifurcates. The trachea is the cartilaginous structure that extends from the pharynx to the primary bronchi. It serves to funnel air to the lungs. The alveoli are the sites of gas exchange; they are located at the terminal regions of the lung and are attached to the respiratory bronchioles. The acinus is the structure in the lung where gas exchange occurs.
 ===CHECKS===
 the main bronchus funnels air to the airways where gas exchange occurs
@@ -177,7 +189,7 @@ the alveoli are the sites of gas exchange, located at the terminal regions of th
 the acinus is the structure in the lung where gas exchange occurs
 {{< /selfcheck >}}
 
-{{< selfcheck question="How does the structure of alveoli maximize gas exchange?" hint="Two separate properties of the alveolar wall each help gas move faster across it — one is about how much wall there is, the other is about how thick it is." >}}
+{{< selfcheck question="How does the structure of alveoli maximize gas exchange?" hint="Reread the last paragraph of Lungs: Bronchi and Alveoli." >}}
 The sac-like structure of the alveoli increases their surface area. In addition, the alveoli are made of thin-walled parenchymal cells. These features allow gases to easily diffuse across the cells.
 ===CHECKS===
 the sac-like structure of the alveoli increases their surface area
@@ -185,27 +197,13 @@ the alveoli are made of thin-walled parenchymal cells
 these features allow gases to easily diffuse across the cells
 {{< /selfcheck >}}
 
-{{< textin
-  question="The cartilaginous tube that transports air from the larynx to the primary bronchi is called the ________."
-  answer="trachea"
-  accept="windpipe|tracheae"
-  hint="This structure sits between the voice box and the point where the airway first splits toward each lung — its walls are held open by incomplete rings of stiff tissue."
->}}
-
-{{< textin
-  question="The terminal region of the lung where gas exchange occurs is called a(n) ________."
-  answer="alveolus"
-  accept="alveoli|air sac"
-  hint="This is the single tiny sac at the very end of the branching airway — millions of them together give the lung its sponge-like texture."
->}}
-
 ### Explain how the lungs are protected from particulate matter
 
 {{< textin
   question="Small particles such as dust, dirt, viral particles, and bacteria that are in the air are known as ________."
   answer="particulate matter"
   accept="particulates"
-  hint="The nasal hairs and mucus are the first line of defense trapping this before it can reach deeper into the airway."
+  hint="Reread the first paragraph of Protective Mechanisms."
 >}}
 
 {{< multiplechoice
@@ -220,17 +218,17 @@ all of the above
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The sticky, protein-containing fluid secretion in the lung that traps particulate matter to be expelled from the body is called ________."
+  question="The sticky, protein-containing fluid secretion in the lung that traps airborne particles to be expelled from the body is called ________."
   answer="mucus"
-  hint="Cilia sweep this substance, along with whatever it has trapped, back up toward the throat to be swallowed."
+  hint="Reread the second paragraph of Protective Mechanisms."
 >}}
 
 {{< textin
-  question="The complex glycoprotein that, with salts and water, makes up the sticky substance the lungs produce to trap particulates is called ________."
+  question="The complex glycoprotein that, with salts and water, makes up the sticky substance the lungs produce is called ________."
   answer="mucin"
-  hint="Look at the Protective Mechanisms paragraph on what the lungs produce to trap particulates."
+  hint="Reread the second paragraph of Protective Mechanisms."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 39.1: Systems of Gas Exchange](https://openstax.org/books/biology-2e/pages/39-1-systems-of-gas-exchange) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the respiratory bronchiole Key terms entry reads "alveolar ducts" where the source glossary prints "alveoli ducts" (a source defect); figures re-encoded as WebP; four figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_B39_01_04, Figure_39_01_05, Figure_39_01_07, and Figure_39_01_09 are each a hand-drawn line illustration, not a captured photograph); a longdesc added to every diagram whose meaning is not carried by its one-line caption — the gill-anatomy illustration, the bee's tracheal system, the mammalian-respiratory-system Visual Connection figure, the trachea/bronchi illustration, the lung-lobes illustration, and the alveolar duct/sac illustration — transcribing each drawing's own printed labels and leader-line counts, in reading order; in-text pointers to figures ("Figure 39.1" through "Figure 39.11") replaced with "shown below," "shown above," or "illustrated below," since Hugo does not number figures; the note wrapping the mammalian-respiratory-system Visual Connection rendered as its figure followed by a multiple choice, kept in the body in the Mammalian Systems section — the note copy and the `<exercise>` copy print identical question and option wording, so no adjudication was needed; the `interactive interactive-long` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/lungs_pulmonary redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), one Review Question left in the body as the Visual Connection's multiple choice; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (trachea, alveolus, particulate matter, mucus, mucin), covering five of the section's sixteen glossary terms (the mucin prompt draws on the Protective Mechanisms sentence, because the glossary's "complex glycoprotein found in mucus" prints the answer's root) — the other eleven (alveolar duct, alveolar sac, bronchus, bronchiole, diaphragm, larynx, nasal cavity, pharynx, primary bronchus, respiratory bronchiole, terminal bronchiole) appear only in the Key terms list and the prose, several of them as the bolded defining term of their own paragraph.</small>
+<small>This section is adapted from [Biology 2e, Section 39.1: Systems of Gas Exchange](https://openstax.org/books/biology-2e/pages/39-1-systems-of-gas-exchange) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the respiratory bronchiole Key terms entry reads "alveolar ducts" where the source glossary prints "alveoli ducts" (a source defect); figures re-encoded as WebP; four figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_B39_01_04, Figure_39_01_05, Figure_39_01_07, and Figure_39_01_09 are each a hand-drawn line illustration, not a captured photograph); a longdesc added to every diagram whose meaning is not carried by its one-line caption — the gill-anatomy illustration, the bee's tracheal system, the mammalian-respiratory-system Visual Connection figure, the trachea/bronchi illustration, the lung-lobes illustration, and the alveolar duct/sac illustration — transcribing each drawing's own printed labels and leader-line counts, in reading order; in-text pointers to figures ("Figure 39.1" through "Figure 39.11") replaced with "shown below," "shown above," or "illustrated below," since Hugo does not number figures; the note wrapping the mammalian-respiratory-system Visual Connection rendered as its figure followed by a multiple choice, kept in the body in the Mammalian Systems section — the note copy and the `<exercise>` copy print identical question and option wording, so no adjudication was needed; the `interactive interactive-long` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/lungs_pulmonary redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), and the Visual Connection Question left in the body as its figure's multiple choice; the Review Questions placed under the objectives they test, so the third (the order of airflow) comes before the second (warming and humidifying); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; one recall item built from a Section Summary sentence (respiratory bronchioles) and four key-term recall items added from the glossary (alveolar sac, particulate matter, mucus, mucin), covering four of the section's sixteen glossary terms (the mucus prompt reads "airborne particles" for the glossary's "particulate matter," a neighbouring item's key; the mucin prompt draws on the Protective Mechanisms sentence, because the glossary's "complex glycoprotein found in mucus" prints the answer's root) — trachea and alveolus are not recall items, because the first Critical Thinking Question already asks for both, and the other ten (alveolar duct, bronchus, bronchiole, diaphragm, larynx, nasal cavity, pharynx, primary bronchus, respiratory bronchiole, terminal bronchiole) appear only in the Key terms list and the prose, several of them as the bolded defining term of their own paragraph.</small>

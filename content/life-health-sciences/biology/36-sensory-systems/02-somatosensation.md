@@ -40,7 +40,7 @@ Four of the primary mechanoreceptors in human skin are shown. Merkel's disks, wh
 {{< multiplechoice
   question="Which of the following statements about mechanoreceptors is false?"
   answer="Meissner's corpuscles extend into the lower dermis."
-  hint="Compare each statement's claim against where the figure and the passage place that receptor — one of the four moves a receptor into a layer the section doesn't put it in."
+  hint="Check each statement against the figure above and the paragraphs on each receptor."
 >}}
 Pacinian corpuscles are found in both glabrous and hairy skin.
 Merkel's disks are abundant on the fingertips and lips.
@@ -100,7 +100,7 @@ View [a video that animates the five phases of nociceptive pain](https://opensta
 
 Somatosensation includes all sensation received from the skin and mucous membranes, as well as from the limbs and joints. Somatosensation occurs all over the exterior of the body and at some interior locations as well, and a variety of receptor types, embedded in the skin and mucous membranes, play a role.
 
-There are several types of specialized sensory receptors. Rapidly adapting free nerve endings detect nociception, hot and cold, and light touch. Slowly adapting, encapsulated Merkel's disks are found in fingertips and lips, and respond to light touch. Meissner's corpuscles, found in glabrous skin, are rapidly adapting, encapsulated receptors that detect touch, low-frequency vibration, and flutter. Ruffini endings are slowly adapting, encapsulated receptors that detect skin stretch, joint activity, and warmth. Hair receptors are rapidly adapting nerve endings wrapped around the base of hair follicles that detect hair movement and skin deflection. Finally, Pacinian corpuscles are encapsulated, rapidly adapting receptors that detect transient pressure and high-frequency vibration.
+There are several types of specialized sensory receptors. Rapidly adapting free nerve endings detect nociception, hot and cold, and light touch. Slowly adapting, unencapsulated Merkel's disks are found in fingertips and lips, and respond to light touch. Meissner's corpuscles, found in glabrous skin, are rapidly adapting, encapsulated receptors that detect touch, low-frequency vibration, and flutter. Ruffini endings are slowly adapting, encapsulated receptors that detect skin stretch, joint activity, and warmth. Hair receptors are rapidly adapting nerve endings wrapped around the base of hair follicles that detect hair movement and skin deflection. Finally, Pacinian corpuscles are encapsulated, rapidly adapting receptors that detect transient pressure and high-frequency vibration.
 
 ## Key terms
 
@@ -118,10 +118,31 @@ There are several types of specialized sensory receptors. Rapidly adapting free 
 
 ### Describe four important mechanoreceptors in human skin
 
+{{< textin
+  question="An unencapsulated, slowly-adapting mechanoreceptor in the skin that responds to touch is called a ________."
+  answer="Merkel's disk"
+  accept="Merkel disk|Merkel's disc|Merkel disc"
+  hint="See the Somatosensory Receptors paragraph that introduces the four primary tactile mechanoreceptors."
+>}}
+
+{{< textin
+  question="A slowly-adapting, encapsulated mechanoreceptor in the skin that responds to skin stretch and joint position is called a ________."
+  answer="Ruffini ending"
+  accept="bulbous corpuscle"
+  hint="See the paragraph that follows the first photomicrograph."
+>}}
+
+{{< textin
+  question="An encapsulated mechanoreceptor in the skin that responds to deep pressure and vibration is called a ________."
+  answer="Pacinian corpuscle"
+  accept="Pacini corpuscle"
+  hint="See the paragraph just above the second photomicrograph."
+>}}
+
 {{< multiplechoice
   question="Many diabetic patients are warned by their doctors to test their glucose levels by pricking the sides of their fingers rather than the pads. Pricking the sides avoids stimulating which receptor?"
   answer="Meissner's corpuscles"
-  hint="Think about which receptor type is most densely packed in the glabrous skin of the fingertip pad, and which of the four is best suited to fine touch discrimination rather than deep pressure or pain."
+  hint="Compare the Somatosensory Receptors paragraphs on each receptor for where in the fingers and hands it is concentrated."
 >}}
 Krause end bulbs
 Meissner's corpuscles
@@ -132,7 +153,7 @@ Nociceptors
 {{< multiplechoice
   question="If you were to burn your epidermis, what receptor type would you most likely burn?"
   answer="free nerve endings"
-  hint="Reread the opening paragraph of Somatosensory Receptors for the receptor type said to extend into the middle of the epidermis."
+  hint="See the opening paragraph of Somatosensory Receptors."
 >}}
 free nerve endings
 Ruffini endings
@@ -140,28 +161,14 @@ Pacinian corpuscle
 hair receptors
 {{< /multiplechoice >}}
 
-{{< textin
-  question="An unencapsulated, slowly-adapting mechanoreceptor in the skin that responds to touch is called a ________."
-  answer="Merkel's disk"
-  accept="Merkel disk|Merkel's disc|Merkel disc"
-  hint="This receptor is densely packed in the fingertips and lips, with small, well-defined receptive fields well suited to sensing edges."
->}}
-
-{{< textin
-  question="A slowly-adapting, encapsulated mechanoreceptor in the skin that responds to skin stretch and joint position is called a ________."
-  answer="Ruffini ending"
-  accept="bulbous corpuscle"
-  hint="This receptor sits deep in the epidermis near its base, and detects warmth from a position deeper than the skin's cold detectors."
->}}
-
-{{< textin
-  question="An encapsulated mechanoreceptor in the skin that responds to deep pressure and vibration is called a ________."
-  answer="Pacinian corpuscle"
-  accept="Pacini corpuscle"
-  hint="This receptor sits deep in the dermis of both glabrous and hairy skin and is structurally similar to Meissner's corpuscles, but rapidly adapts to high-frequency vibration rather than fine, sustained touch."
->}}
-
 ### Describe the topographical distribution of somatosensory receptors between glabrous and hairy skin
+
+{{< textin
+  question="The non-hairy skin found on the palms and fingers, the soles of the feet, and the lips of humans and other primates is described as ________."
+  answer="glabrous"
+  accept="glabrous skin"
+  hint="See the Somatosensory Receptors paragraph that introduces the four primary tactile mechanoreceptors."
+>}}
 
 {{< multiplechoice
   question="_____ are found only in _____ skin, and detect skin deflection."
@@ -174,19 +181,12 @@ hair receptors; hairy
 Krause end bulbs; hairy
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What can be inferred about the relative sizes of the areas of cortex that process signals from skin not densely innervated with sensory receptors and skin that is densely innervated with sensory receptors?" hint="Think about how many separate receptor signals the cortex has to represent from each patch of skin, and how that scales with receptor density." >}}
+{{< selfcheck question="What can be inferred about the relative sizes of the areas of cortex that process signals from skin not densely innervated with sensory receptors and skin that is densely innervated with sensory receptors?" hint="See the Density of Mechanoreceptors subsection." >}}
 The cortical areas serving skin that is densely innervated likely are larger than those serving skin that is less densely innervated.
 ===CHECKS===
 cortical areas serving skin that is densely innervated likely are larger
 than those serving skin that is less densely innervated
 {{< /selfcheck >}}
-
-{{< textin
-  question="The non-hairy skin found on the palms and fingers, the soles of the feet, and the lips of humans and other primates is described as ________."
-  answer="glabrous"
-  accept="glabrous skin"
-  hint="Merkel's disks and Meissner's corpuscles are both especially dense in this type of skin, particularly at the fingertips."
->}}
 
 ### Explain why the perception of pain is subjective
 
@@ -195,13 +195,6 @@ than those serving skin that is less densely innervated
   answer="nociception"
   hint="See the first sentence of the Pain discussion."
 >}}
-
-{{< selfcheck question="Many studies have demonstrated that females are able to tolerate the same painful stimuli for longer than males. Why don't all people experience pain the same way?" hint="Recall how the Pain discussion separates nociception, the receptor signal, from pain, the perception of it." >}}
-Pain is a subjective sensation that relies on the brain interpreting the nociception signals received by the sensory receptors (perception). Therefore, even though two people experience identical stimuli, their brains can perceive them as very different sensory experiences.
-===CHECKS===
-pain is a subjective sensation that relies on the brain interpreting the nociception signals received by the sensory receptors
-even though two people experience identical stimuli, their brains can perceive them as very different sensory experiences
-{{< /selfcheck >}}
 
 {{< multiplechoice
   question="According to the section, nociception starts at the sensory receptors, but pain does not start until nociceptive signals are communicated to ________."
@@ -214,6 +207,13 @@ the skin
 the sensory receptors
 {{< /multiplechoice >}}
 
+{{< selfcheck question="Many studies have demonstrated that females are able to tolerate the same painful stimuli for longer than males. Why don't all people experience pain the same way?" hint="See the second paragraph of the Pain discussion." >}}
+Pain is a subjective sensation that relies on the brain interpreting the nociception signals received by the sensory receptors (perception). Therefore, even though two people experience identical stimuli, their brains can perceive them as very different sensory experiences.
+===CHECKS===
+pain is a subjective sensation that relies on the brain interpreting the nociception signals received by the sensory receptors
+even though two people experience identical stimuli, their brains can perceive them as very different sensory experiences
+{{< /selfcheck >}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 36.2: Somatosensation](https://openstax.org/books/biology-2e/pages/36-2-somatosensation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_36_02_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a hand-drawn labeled cross-section, not a captured photograph); alts rewritten from the manifest's walk-through-style source text to plain visual descriptions, with the walk-through moved into a longdesc for the skin cross-section and the mechanoreceptor-location diagram, whose meaning is not carried by their captions; in-text figure pointers ("Figure 36.4" through "Figure 36.7") replaced with "shown below," "seen below," or "below," since Hugo does not number figures; the note wrapping the mechanoreceptor Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the Link to Learning note rendered as a callout with descriptive link text in place of the source's "this video" anchor, external URL kept as printed; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), the Review Questions reordered by objective: the third (pricking the sides of the fingers) and the second (burning the epidermis) in the mechanoreceptor group, ahead of the first (skin deflection), which serves the glabrous-and-hairy-skin objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (Merkel's disk, Ruffini ending, Pacinian corpuscle, glabrous, nociception) added from the glossary; one multiple choice built locally from the Pain section's own sentence ("pain … does not start until it is communicated to the brain") to give the third objective a third item, since neither the source's keyed exercises nor the summary supply a third; the Visual Connection's exercise copy (`fs-idp18848768`) prints option (a) as "Pacini corpuscles," while the note copy printed in the body reads "Pacinian corpuscles" — the body's spelling "Pacinian corpuscles," used everywhere else in the module, is kept in the option text; the Review Question "_____ are found only in _____ skin, and detect skin deflection." (`fs-idm75363216`) keeps its source options but is keyed "hair receptors; hairy" rather than the source's key B ("Merkel's disks; glabrous"), because the section's own text says Merkel's disks are found "both in skin that has hair and on glabrous skin" (not only glabrous) and never credits them with detecting skin deflection, while hair receptors are explicitly described as "found on nerve endings that wrap around the base of hair follicles" and as detecting skin deflection; the opening paragraph's "as well from as the limbs and joints," printed the same way in both the CNXML and the PDF, corrected to "as well as from the limbs and joints". One key term is corrected with a visible Source note: the muscle spindle senses stretch and triggers the reflex that shortens the muscle, rather than shortening it itself.</small>
+<small>This section is adapted from [Biology 2e, Section 36.2: Somatosensation](https://openstax.org/books/biology-2e/pages/36-2-somatosensation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_36_02_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a hand-drawn labeled cross-section, not a captured photograph); alts rewritten from the manifest's walk-through-style source text to plain visual descriptions, with the walk-through moved into a longdesc for the skin cross-section and the mechanoreceptor-location diagram, whose meaning is not carried by their captions; in-text figure pointers ("Figure 36.4" through "Figure 36.7") replaced with "shown below," "seen below," or "below," since Hugo does not number figures; the note wrapping the mechanoreceptor Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the Link to Learning note rendered as a callout with descriptive link text in place of the source's "this video" anchor, external URL kept as printed; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), the Review Questions reordered by objective: the third (pricking the sides of the fingers) and the second (burning the epidermis) in the mechanoreceptor group, ahead of the first (skin deflection), which serves the glabrous-and-hairy-skin objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (Merkel's disk, Ruffini ending, Pacinian corpuscle, glabrous, nociception) added from the glossary; one multiple choice built locally from the Pain section's own sentence ("pain … does not start until it is communicated to the brain") to give the third objective a third item, since neither the source's keyed exercises nor the summary supply a third; the Visual Connection's exercise copy (`fs-idp18848768`) prints option (a) as "Pacini corpuscles," while the note copy printed in the body reads "Pacinian corpuscles" — the body's spelling "Pacinian corpuscles," used everywhere else in the module, is kept in the option text; the Review Question "_____ are found only in _____ skin, and detect skin deflection." (`fs-idm75363216`) keeps its source options but is keyed "hair receptors; hairy" rather than the source's key B ("Merkel's disks; glabrous"), because the section's own text says Merkel's disks are found "both in skin that has hair and on glabrous skin" (not only glabrous) and never credits them with detecting skin deflection, while hair receptors are explicitly described as "found on nerve endings that wrap around the base of hair follicles" and as detecting skin deflection; the opening paragraph's "as well from as the limbs and joints," printed the same way in both the CNXML and the PDF, corrected to "as well as from the limbs and joints". One key term is corrected with a visible Source note: the muscle spindle senses stretch and triggers the reflex that shortens the muscle, rather than shortening it itself. The Summary's "Slowly adapting, encapsulated Merkel's disks" reads "unencapsulated," as the section's own figure caption and glossary say.</small>

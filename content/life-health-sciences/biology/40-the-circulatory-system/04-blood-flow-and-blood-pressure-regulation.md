@@ -30,7 +30,7 @@ Blood flow through the capillary beds is regulated depending on the body's needs
 (a) Precapillary sphincters are rings of smooth muscle that regulate the flow of blood through capillaries; they help control the location of blood flow to where it is needed. (b) Valves in the veins prevent blood from moving backward. (credit a: modification of work by NCI)
 {{< /mediafigure >}}
 
-{{< selfcheck question="Varicose veins are veins that become enlarged because the valves no longer close properly, allowing blood to flow backward. Varicose veins are often most prominent on the legs. Why do you think this is the case?" hint="Picture the full round-trip blood takes from the heart down to the foot and back up again — where in that loop do the leg veins sit?" >}}
+{{< selfcheck question="Varicose veins are veins that become enlarged because the valves no longer close properly, allowing blood to flow backward. Varicose veins are often most prominent on the legs. Why do you think this is the case?" hint="Look at the second paragraph of this subsection, on how blood moves in the veins." >}}
 Blood in the legs is farthest away from the heart and has to flow up to reach it.
 ===CHECKS===
 blood in the legs is farthest away from the heart
@@ -91,28 +91,54 @@ Blood primarily moves through the body by the rhythmic movement of smooth muscle
 {{< textin
   question="A specialized organ that contains a large number of macrophages that clean the lymph before the fluid is returned to the heart is called a ________."
   answer="lymph node"
-  hint="This structure sits along the lymphatic vessels and filters out bacteria and viruses using white blood cells before the fluid rejoins the bloodstream."
+  hint="Look at the paragraph just after the Link to Learning box."
 >}}
 
 {{< textin
   question="A small muscle that controls blood circulation in the capillary beds is called a ________."
   answer="precapillary sphincter"
-  hint="When these rings of smooth muscle close, blood bypasses the capillary bed entirely through the thoroughfare channel."
+  accept="pre-capillary sphincter"
+  hint="Look at the third paragraph of How Blood Flows Through the Body and the figure after it."
 >}}
 
 {{< textin
   question="Blood is prevented from flowing backward in the veins by ________."
   answer="one-way valves"
   accept="valve"
-  hint="Look in How Blood Flows Through the Body, in the paragraph on how blood moves through the veins, and in the figure caption beside it."
+  hint="Look at the second paragraph of How Blood Flows Through the Body."
 >}}
 
 ### Describe how blood pressure is regulated
 
+{{< textin
+  question="The pressure of blood in the arteries that helps to push blood through the body is called ________."
+  answer="blood pressure"
+  accept="BP"
+  hint="Look at the section's opening sentence."
+>}}
+
+{{< textin
+  question="The volume of blood pumped into the aorta per contraction of the left ventricle is called the ________."
+  answer="stroke volume"
+  hint="Look at the parentheses in the second sentence of the section's last subsection."
+>}}
+
+{{< textin
+  question="The volume of blood pumped by the heart in one minute is called ________."
+  answer="cardiac output"
+  hint="Look at the opening sentence of the section's last subsection."
+>}}
+
+{{< textin
+  question="Resistance of the artery and blood vessel walls to the pressure placed on them by the force of the heart pumping is called ________."
+  answer="peripheral resistance"
+  hint="Look at the last sentence of the paragraph just before the pressure-and-velocity graph."
+>}}
+
 {{< multiplechoice
   question="High blood pressure would be a result of ________."
   answer="a high cardiac output and high peripheral resistance"
-  hint="Reread Blood Pressure Regulation and the paragraph on peripheral resistance at the end of Blood Pressure, then check each combination against them."
+  hint="Reread the section's last two subsections, then check each combination against them."
 >}}
 a high cardiac output and high peripheral resistance
 a high cardiac output and low peripheral resistance
@@ -120,7 +146,7 @@ a low cardiac output and high peripheral resistance
 a low cardiac output and low peripheral resistance
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does blood pressure change during heavy exercise?" hint="Think about two separate effects of heavy exercise — one on how fast and hard the heart beats, and another on the diameter of the smaller vessels feeding the muscles." >}}
+{{< selfcheck question="How does blood pressure change during heavy exercise?" hint="Reread the paragraph of the section's last subsection that discusses exercise and heavy exertion." >}}
 The heart rate increases, which increases the hydrostatic pressure against the artery walls. At the same time, the arterioles dilate in response to the increased exercise, which reduces peripheral resistance.
 ===CHECKS===
 the heart rate increases
@@ -128,31 +154,6 @@ which increases the hydrostatic pressure against the artery walls
 the arterioles dilate in response to the increased exercise
 which reduces peripheral resistance
 {{< /selfcheck >}}
-
-{{< textin
-  question="The volume of blood pumped into the aorta per contraction of the left ventricle is called the ________."
-  answer="stroke volume"
-  hint="Look in Blood Pressure Regulation, in the parentheses of its second sentence."
->}}
-
-{{< textin
-  question="The volume of blood pumped by the heart in one minute, calculated as heart rate multiplied by stroke volume, is called ________."
-  answer="cardiac output"
-  hint="Increasing either how fast or how forcefully the heart beats raises this quantity."
->}}
-
-{{< textin
-  question="The pressure of blood in the arteries that helps to push blood through the body is called ________."
-  answer="blood pressure"
-  accept="BP"
-  hint="Its two readings, such as 120 over 80, come from systole and diastole."
->}}
-
-{{< textin
-  question="Resistance of the artery and blood vessel walls to the pressure placed on them by the force of the heart pumping is called ________."
-  answer="peripheral resistance"
-  hint="Narrower vessels raise this resistance; wider ones lower it."
->}}
 
 ---
 

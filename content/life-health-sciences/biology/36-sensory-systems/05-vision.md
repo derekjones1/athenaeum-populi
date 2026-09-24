@@ -152,7 +152,7 @@ Visual signals travel from the eye over the axons of retinal ganglion cells, whi
 {{< multiplechoice
   question="A satellite is launched into space, but explodes after exiting the Earth's atmosphere. Which statement accurately reflects the observations made by an astronaut on a space walk outside the International Space Station during the explosion?"
   answer="The astronaut would see the explosion, but would not hear a boom."
-  hint="Compare what each kind of wave needs in order to travel: one of the two needs a physical medium to propagate, and outside the station there isn't one."
+  hint="See the first paragraph of the Light discussion."
 >}}
 The astronaut would see the explosion, but would not hear a boom.
 The astronaut will not sense the explosion.
@@ -161,26 +161,65 @@ The astronaut will feel the concussive force of the explosion, but will not see 
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The unit of measurement of luminous intensity, or brightness, approximately equal to the intensity of one common candle, is called the ________."
+  question="The unit of measurement of luminous intensity, or brightness, is called the ________."
   answer="candela"
   accept="cd"
-  hint="This is the light-wave counterpart to a sound wave's decibel — it measures amplitude, not wavelength."
+  hint="See the paragraph just after the electromagnetic-spectrum figure."
 >}}
 
 {{< textin
   question="The general sense that includes the ability to detect light patterns from the outside environment and interpret them into images is called ________."
   answer="vision"
-  hint="About one-third of the human cerebral cortex is dedicated to processing this one sense alone."
+  accept="sight"
+  hint="See the section's opening paragraph."
 >}}
 
 {{< textin
   question="Visible light travels in waves and is a very small slice of the ________."
   answer="electromagnetic radiation spectrum"
-  accept="electromagnetic spectrum"
-  hint="The full range runs from radio waves at one end to gamma rays at the other; what we can see is only a sliver of it."
+  accept="electromagnetic spectrum|EM spectrum"
+  hint="See the first paragraph of the Light discussion."
 >}}
 
 ### Trace the path of light through the eye to the point of the optic nerve
+
+{{< textin
+  question="The layer of photoreceptive and supporting cells on the inner surface of the back of the eye, where light is converted into a nervous signal, is called the ________."
+  answer="retina"
+  hint="See the opening sentence of Anatomy of the Eye."
+>}}
+
+{{< textin
+  question="The region in the center of the retina with a high density of photoreceptors, which is responsible for acute vision, is called the ________."
+  answer="fovea"
+  accept="fovea centralis"
+  hint="See the Anatomy of the Eye paragraph after the rod-and-cone figure."
+>}}
+
+{{< textin
+  question="The visual defect in which an elongated eyeball causes the image focus to fall in front of the retina — making distant objects blurry but close-up objects clear — is called ________."
+  answer="myopia"
+  accept="nearsightedness|near-sightedness|short-sightedness"
+  hint="See the Anatomy of the Eye paragraph right after the Visual Connection question."
+>}}
+
+{{< textin
+  question="The transparent layer over the front of the eye that helps focus light waves is called the ________."
+  answer="cornea"
+  hint="See the first paragraph of Anatomy of the Eye."
+>}}
+
+{{< textin
+  question="The pigmented, circular muscle at the front of the eye that regulates the amount of light entering the eye is called the ________."
+  answer="iris"
+  hint="See the first paragraph of Anatomy of the Eye."
+>}}
+
+{{< textin
+  question="The small opening through which light enters the eye is called the ________."
+  answer="pupil"
+  hint="See the end of the first paragraph of Anatomy of the Eye."
+>}}
 
 {{< multiplechoice
   question="Why do people over 55 often need reading glasses?"
@@ -215,7 +254,7 @@ thalamus
 superior colliculus
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Cataracts, the medical condition where the lens of the eye becomes cloudy, are a leading cause of blindness. Describe how developing a cataract would change the path of light through the eye." hint="Think about what the lens normally does to light on its way to the retina, and what a cloudy structure does to light passing through it instead of a clear one." >}}
+{{< selfcheck question="Cataracts, the medical condition where the lens of the eye becomes cloudy, are a leading cause of blindness. Describe how developing a cataract would change the path of light through the eye." hint="See the Anatomy of the Eye paragraph right after the Visual Connection question." >}}
 The purpose of the lens in the eye is to focus the light beams on the retina so that the image seen by the eye can be transmitted to the optic nerve and interpreted. When the lens becomes cloudy instead of clear, it scatters the light over the back of the retina. The vision system cannot interpret the image then.
 ===CHECKS===
 the lens's purpose is to focus light beams on the retina so the image can be transmitted to the optic nerve and interpreted
@@ -223,13 +262,7 @@ when the lens becomes cloudy instead of clear, it scatters light over the back o
 the vision system cannot interpret the image
 {{< /selfcheck >}}
 
-{{< textin
-  question="The transparent front layer of the eye that, along with the lens, refracts light to help focus the image on the retina is called the ________."
-  answer="cornea"
-  hint="See the first paragraph of Anatomy of the Eye."
->}}
-
-{{< selfcheck question="How could the pineal gland, the brain structure that plays a role in annual cycles, use visual information from the suprachiasmatic nucleus of the hypothalamus?" hint="Think about what varies about daylight over the course of a year, and how that information could be useful for timing reproduction or other annual behaviors." >}}
+{{< selfcheck question="How could the pineal gland, the brain structure that plays a role in annual cycles, use visual information from the suprachiasmatic nucleus of the hypothalamus?" hint="See the last paragraph of Higher Processing." >}}
 The pineal gland could use length-of-day information to determine the time of year, for example. Day length is shorter in the winter than it is in the summer. For many animals and plants, photoperiod cues them to reproduce at a certain time of year.
 ===CHECKS===
 the pineal gland could use length-of-day information to determine the time of year
@@ -237,40 +270,22 @@ day length is shorter in winter than in summer
 photoperiod cues many animals and plants to reproduce at a certain time of year
 {{< /selfcheck >}}
 
-{{< textin
-  question="The pigmented, circular muscle lying between the lens and cornea that regulates the amount of light entering the eye is called the ________."
-  answer="iris"
-  hint="This structure contracts in bright light to shrink the opening at its center and relaxes in dim light to enlarge it."
->}}
-
-{{< textin
-  question="The layer of photoreceptive and supporting cells on the inner surface of the back of the eye, where light is converted into a nervous signal, is called the ________."
-  answer="retina"
-  hint="Light passes through the cornea and other layers before finally reaching this structure lining the rear interior of the eye."
->}}
-
-{{< textin
-  question="The transparent, convex structure behind the cornea that focuses light on the retina, changing shape as its muscles stretch or thicken it, is called the ________."
-  answer="lens"
-  hint="Losing this structure's flexibility with age is what causes presbyopia."
->}}
-
-{{< textin
-  question="The visual defect in which an elongated eyeball causes the image focus to fall in front of the retina — making distant objects blurry but close-up objects clear — is called ________."
-  answer="myopia"
-  accept="nearsightedness|near-sightedness|short-sightedness"
-  hint="This is the opposite eyeball-length problem from the section's two 'farsightedness' conditions."
->}}
-
 ### Explain tonic activity as it is manifested in photoreceptors in the retina
 
 {{< textin
   question="The slight, continuous activity a neuron shows even at rest, before any stimulus arrives, is called ________."
   answer="tonic activity"
-  hint="Photoreceptors show this baseline firing constantly; a stimulus then raises or lowers the rate from that baseline instead of switching it on from zero."
+  hint="See the second paragraph of Retinal Processing."
 >}}
 
-{{< selfcheck question="How is the relationship between photoreceptors and bipolar cells different from other sensory receptors and adjacent cells?" hint="Think about what photoreceptors are doing to bipolar cells even in the dark, before any light stimulus arrives, and what happens to that baseline activity once light does arrive." >}}
+{{< textin
+  question="Visual signals travel from the eye over the axons of ________, which make up the optic nerves."
+  answer="retinal ganglion cells"
+  accept="ganglion cells"
+  hint="See the second paragraph of Retinal Processing."
+>}}
+
+{{< selfcheck question="How is the relationship between photoreceptors and bipolar cells different from other sensory receptors and adjacent cells?" hint="See the second paragraph of Retinal Processing." >}}
 The photoreceptors tonically inhibit the bipolar cells, and stimulation of the receptors turns this inhibition off, activating the bipolar cells.
 ===CHECKS===
 the photoreceptors tonically inhibit the bipolar cells
@@ -278,18 +293,6 @@ stimulation of the receptors turns this inhibition off
 this activates the bipolar cells
 {{< /selfcheck >}}
 
-{{< textin
-  question="The strongly photosensitive, achromatic photoreceptor that detects dim light is called a ________."
-  answer="rod"
-  hint="Like its color-detecting partner type, this photoreceptor is named for its general appearance: a long column with a straight stack of discs at its tip."
->}}
-
-{{< textin
-  question="The weakly photosensitive, chromatic photoreceptor that responds to bright light and supports color vision is called a ________."
-  answer="cone"
-  hint="This photoreceptor type comes in three varieties, each most responsive to a different wavelength."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 36.5: Vision](https://openstax.org/books/biology-2e/pages/36-5-vision) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; six figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_36_05_01, Figure_36_05_04, Figure_36_05_06, Figure_36_05_07, Figure_B36_05_03, and Figure_B36_05_07ab are all illustrations, a molecular-ribbon rendering, a data graph, or a flat-color graphic, none a captured photograph); alts rewritten from the manifest's source text to plain visual descriptions where it named the print figure letters without saying what each panel shows, with counted, label-by-label longdescs added to the electromagnetic-spectrum diagram, the Visual Connection eye/retina diagram, the rod-and-cone diagram, the rhodopsin/retinal-isomerization diagram, the phototransduction-cascade and dark/light rod-bipolar diagram, and the cone/rod absorbance graph — transcribing each drawing's own printed labels and peak values and counting its panels, subunits, or repeated ion labels; the Visual Connection note copy (`fs-idp52568064`) and the Visual Connection Questions exercise copy (`fs-idp141411600`) print identical option wording, so the exercise copy is used as printed with no correction needed; the two Link to Learning notes rendered as callouts with descriptive link text in place of the source's "anatomical structure" and "presentation" anchors, external URLs kept as printed; in-text pointers to figures ("Figure 36.17" through "Figure 36.23") replaced with "shown below," "illustrated below," or "look fixedly at the flag below," since Hugo does not number figures; the Visual Connection item kept in the body as a mediafigure followed by a multiple choice, since the source keys it as a lettered choice; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), placed by objective: the fourth Review Question (the satellite explosion) first, in the electromagnetic-waves group, ahead of the other three, and the third Critical Thinking Question (cataracts) ahead of the first (the pineal gland) in the light-path group, with the second (photoreceptors and bipolar cells) last, in the tonic-activity group; and every one of the four Review Questions, the Visual Connection, and all three Critical Thinking Questions used at least once; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; ten key-term recall items added from the glossary (candela, vision, cornea, iris, lens, retina, myopia, tonic activity, rod, cone); the remaining eight terms (circadian, fovea, hyperopia, presbyopia, pupil, rhodopsin, superior colliculus, suprachiasmatic nucleus) appear only in the Key terms list; one summary-derived textin cloze added to the first objective's group (blanking "electromagnetic radiation spectrum" from the closing summary's sentence "Visible light travels in waves and is a very small slice of the electromagnetic radiation spectrum"); ion notation set as a Unicode superscript (Na⁺) in place of the source's `<sup>+</sup>` markup, per house notation; the myopia textin's `accept` list adds the section's own "nearsightedness" synonym.</small>
+<small>This section is adapted from [Biology 2e, Section 36.5: Vision](https://openstax.org/books/biology-2e/pages/36-5-vision) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; six figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_36_05_01, Figure_36_05_04, Figure_36_05_06, Figure_36_05_07, Figure_B36_05_03, and Figure_B36_05_07ab are all illustrations, a molecular-ribbon rendering, a data graph, or a flat-color graphic, none a captured photograph); alts rewritten from the manifest's source text to plain visual descriptions where it named the print figure letters without saying what each panel shows, with counted, label-by-label longdescs added to the electromagnetic-spectrum diagram, the Visual Connection eye/retina diagram, the rod-and-cone diagram, the rhodopsin/retinal-isomerization diagram, the phototransduction-cascade and dark/light rod-bipolar diagram, and the cone/rod absorbance graph — transcribing each drawing's own printed labels and peak values and counting its panels, subunits, or repeated ion labels; the Visual Connection note copy (`fs-idp52568064`) and the Visual Connection Questions exercise copy (`fs-idp141411600`) print identical option wording, so the exercise copy is used as printed with no correction needed; the two Link to Learning notes rendered as callouts with descriptive link text in place of the source's "anatomical structure" and "presentation" anchors, external URLs kept as printed; in-text pointers to figures ("Figure 36.17" through "Figure 36.23") replaced with "shown below," "illustrated below," or "look fixedly at the flag below," since Hugo does not number figures; the Visual Connection item kept in the body as a mediafigure followed by a multiple choice, since the source keys it as a lettered choice; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), placed by objective: the fourth Review Question (the satellite explosion) first, in the electromagnetic-waves group, ahead of the other three, and the third Critical Thinking Question (cataracts) ahead of the first (the pineal gland) in the light-path group, with the second (photoreceptors and bipolar cells) last, in the tonic-activity group; and every one of the four Review Questions, the Visual Connection, and all three Critical Thinking Questions used at least once; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items added from the glossary (candela, vision, retina, fovea, myopia, cornea, iris, pupil, tonic activity); the remaining nine terms (circadian, cone, hyperopia, lens, presbyopia, rhodopsin, rod, superior colliculus, suprachiasmatic nucleus) appear only in the Key terms list, the lens, rod, and cone because a source question on the page already asks about them; two summary-derived textin clozes added, one to the first objective's group (blanking "electromagnetic radiation spectrum" from the sentence "Visible light travels in waves and is a very small slice of the electromagnetic radiation spectrum") and one to the tonic-activity group (blanking "retinal ganglion cells" from the sentence "Visual signals travel from the eye over the axons of retinal ganglion cells, which make up the optic nerves"); ion notation set as a Unicode superscript (Na⁺) in place of the source's `<sup>+</sup>` markup, per house notation; the myopia textin's `accept` list adds the section's own "nearsightedness" synonym, the vision textin's the glossary's "sight," and the fovea textin's the body's "fovea centralis."</small>

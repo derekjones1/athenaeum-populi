@@ -90,7 +90,7 @@ They help large insects develop.
 {{< multiplechoice
   question="Some animals use diffusion instead of a circulatory system. Examples include:"
   answer="none of the above"
-  hint="Check each pair of animals against what this section actually says about them — does each one truly lack a circulatory system, or does it have an open or closed one instead?"
+  hint="Check each animal against Circulatory System Variation in Animals and the first paragraph of Circulatory System Architecture."
 >}}
 birds and jellyfish
 flatworms and arthropods
@@ -108,9 +108,10 @@ blood then returns to the heart
 {{< /selfcheck >}}
 
 {{< textin
-  question="A system in which blood mixes with interstitial fluid and directly bathes the organs is called a(n) ________."
-  answer="open circulatory system"
-  hint="Insects, crustaceans, and most mollusks use this kind of system, where the pumped fluid enters a body cavity rather than staying inside vessels."
+  question="The most active mollusks, such as ________, have evolved a closed circulatory system and are able to move rapidly to catch prey."
+  answer="squids"
+  accept="octopuses|cephalopods"
+  hint="Look in the paragraph after the sponge and jellyfish figure."
 >}}
 
 {{< textin
@@ -124,28 +125,28 @@ blood then returns to the heart
 {{< textin
   question="The fluid found between cells is called ________."
   answer="interstitial fluid"
-  hint="In an open circulatory system, this fluid mixes directly with the circulating blood."
+  hint="Look in the Summary, in the sentence contrasting open and closed systems."
 >}}
 
 {{< textin
-  question="The mixture of blood and interstitial fluid found in insects, other arthropods, and most mollusks is called ________."
+  question="The mixture of blood and the fluid between cells that is found in insects, other arthropods, and most mollusks is called ________."
   answer="hemolymph"
   accept="haemolymph"
-  hint="This fluid forms because these animals' circulatory systems are open rather than closed."
+  hint="Look in the first paragraph of Circulatory System Architecture, and in the caption of the earthworm and bee illustration."
 >}}
 
 {{< textin
   question="The cavity into which blood is pumped in an open circulatory system is called the ________."
   answer="hemocoel"
   accept="haemocoel"
-  hint="This is the body cavity the pumped fluid fills as it circulates around an insect's organs before reentering the heart."
+  hint="Look in the first paragraph of Circulatory System Architecture, in the sentence that defines an open circulatory system."
 >}}
 
 {{< textin
-  question="A single hole between blood vessels that allows hemolymph to move through an insect's body is called an ________."
+  question="A single hole between blood vessels that lets the circulating fluid move through the body of an insect, arthropod, or mollusk with an open circulatory system is called an ________."
   answer="ostium"
   accept="ostia"
-  hint="Look at the end of the paragraph that introduces the hemocoel, and in the caption of the earthworm and bee illustration."
+  hint="Look at the end of the first paragraph of Circulatory System Architecture, and in the caption of the earthworm and bee illustration."
 >}}
 
 ### Compare and contrast the organization and evolution of the vertebrate circulatory system
@@ -153,7 +154,7 @@ blood then returns to the heart
 {{< multiplechoice
   question="Blood flow that is directed through the lungs and back to the heart is called ________."
   answer="pulmonary circulation"
-  hint="This is one of two circuits described for animals with lungs — the other circuit serves the brain, organs, and muscles rather than a gas-exchange surface."
+  hint="Look in the paragraph that names the two circuits of amphibians, reptiles, birds, and mammals."
 >}}
 unidirectional circulation
 gill circulation
@@ -161,7 +162,7 @@ pulmonary circulation
 pulmocutaneous circulation
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe systemic circulation." hint="This is the circuit that does NOT pass through the lungs — trace where the section says blood goes on its way out from, and back to, the heart." >}}
+{{< selfcheck question="Describe systemic circulation." hint="Compare this circuit's entry in Key terms." >}}
 Systemic circulation flows through the systems of the body. The blood flows away from the heart to the brain, liver, kidneys, stomach, and other organs, the limbs, and the muscles of the body; it then returns to the heart.
 ===CHECKS===
 flows through the systems of the body
@@ -171,16 +172,16 @@ blood then returns to the heart
 {{< /selfcheck >}}
 
 {{< textin
-  question="The heart chamber that receives blood from the veins and sends it to the ventricle is called the ________."
+  question="The superior heart chamber that receives blood returning from the veins is called the ________."
   answer="atrium"
   accept="atria"
-  hint="Fish have a single one of these chambers; mammals have two, one on each side of the heart."
+  hint="Look in the paragraph on the fish heart."
 >}}
 
 {{< textin
   question="Blood flow organized into two circuits — one through the lungs and one through the rest of the body — is called ________."
   answer="double circulation"
-  hint="Amphibians, reptiles, and mammals are all described this way, in contrast to the single circuit of fish."
+  hint="Look at the end of the paragraph on the amphibian heart."
 >}}
 
 {{< textin
@@ -190,11 +191,12 @@ blood then returns to the heart
 >}}
 
 {{< textin
-  question="The circulatory route through the gills, where blood is oxygenated in animals that have gills, is called ________."
-  answer="gill circulation"
-  hint="Fish rely on this single route rather than a separate lung-specific one."
+  question="In mammals and birds, the separation of oxygenated from deoxygenated blood is probably required for the ________ lifestyle of these animals."
+  answer="warm-blooded"
+  accept="endothermic"
+  hint="Look in the paragraph on the mammal and bird heart."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 40.1: Overview of the Circulatory System](https://openstax.org/books/biology-2e/pages/40-1-overview-of-the-circulatory-system) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_40_01_01ab and Figure_40_01_02ab are each a hand-drawn line illustration, not a captured photograph); a longdesc added to the earthworm/bee circulatory-system illustration and to the four-panel vertebrate circulatory-system diagram, transcribing each drawing's own printed labels, leader lines, and arrow directions in reading order; in-text pointers to figures ("Figure 40.2" through "Figure 40.4") replaced with "shown below," "shown above," or "illustrated below," and inline references to sub-panels kept as "(a)"–"(d)," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items added from the glossary (open circulatory system, interstitial fluid, hemolymph, hemocoel, ostium, atrium, ventricle, double circulation, gill circulation) and one cloze built from the Summary sentence "Closed circulatory systems are a characteristic of vertebrates" — of the remaining five glossary terms, closed circulatory system, systemic circulation, and pulmonary circulation are each tested by a retained Review Question or Critical Thinking Question, and pulmocutaneous circulation and unidirectional circulation appear only in the Key terms list and the prose.</small>
+<small>This section is adapted from [Biology 2e, Section 40.1: Overview of the Circulatory System](https://openstax.org/books/biology-2e/pages/40-1-overview-of-the-circulatory-system) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_40_01_01ab and Figure_40_01_02ab are each a hand-drawn line illustration, not a captured photograph); a longdesc added to the earthworm/bee circulatory-system illustration and to the four-panel vertebrate circulatory-system diagram, transcribing each drawing's own printed labels, leader lines, and arrow directions in reading order; in-text pointers to figures ("Figure 40.2" through "Figure 40.4") replaced with "shown below," "shown above," or "illustrated below," and inline references to sub-panels kept as "(a)"–"(d)," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items added from the glossary (interstitial fluid, hemolymph, hemocoel, ostium, atrium, ventricle, double circulation), one cloze built from the Summary sentence "Closed circulatory systems are a characteristic of vertebrates," and two cloze text-ins built from body sentences (squids, from the sentence on the most active mollusks; warm-blooded, from the paragraph on the mammal and bird heart) — of the remaining seven glossary terms, open circulatory system, closed circulatory system, systemic circulation, and pulmonary circulation are each tested by a retained Review Question or Critical Thinking Question, gill circulation is an option of the pulmonary-circulation Review Question, and pulmocutaneous circulation and unidirectional circulation appear only in the Key terms list and the prose.</small>

@@ -211,22 +211,36 @@ The three types of skeleton designs are hydrostatic skeletons, exoskeletons, and
 {{< textin
   question="A skeleton that consists of aqueous fluid held under pressure in a closed body compartment is called a ________."
   answer="hydrostatic skeleton"
-  hint="This is the skeleton design that lets soft-bodied invertebrates such as sea anemones and earthworms move using pressure from an internal fluid compartment, rather than any hard structure."
+  hint="Reread the first of the three skeleton-design subsections."
 >}}
 
 {{< textin
   question="A secreted, external skeleton that consists of a hard encasement on the surface of an organism is called a(n) ________."
   answer="exoskeleton"
-  hint="Crabs, lobsters, and insects carry this hard casing on the outside of the body, and must periodically shed it because it does not grow as the animal does."
+  hint="Reread the second of the three skeleton-design subsections."
 >}}
 
 {{< textin
   question="A skeleton of living cells that produces a hard, mineralized tissue located within the soft tissue of organisms is called a(n) ________."
   answer="endoskeleton"
-  hint="Humans and horses share this skeleton type, built from living, mineralized tissue that lies inside the body rather than surrounding it or replaced by an external casing."
+  hint="Reread the third of the three skeleton-design subsections."
 >}}
 
 ### Explain the role of the human skeletal system
+
+{{< textin
+  question="The bone that supports the structures of the face and protects the brain is called the ________."
+  answer="skull"
+  accept="cranium"
+  hint="Reread the first subsection of Human Axial Skeleton."
+>}}
+
+{{< textin
+  question="The structure that surrounds and protects the spinal cord, supports the head, and acts as an attachment point for the ribs and muscles of the back and neck is called the ________."
+  answer="vertebral column"
+  accept="spine|spinal column|backbone"
+  hint="Reread the first paragraph of the second subsection of Human Axial Skeleton."
+>}}
 
 {{< multiplechoice
   question="The forearm consists of the:"
@@ -253,7 +267,7 @@ clavicle and coccyx
 {{< multiplechoice
   question="All of the following are groups of vertebrae except ________, which is a curvature."
   answer="pelvic"
-  hint="Compare the options with the groups of vertebrae named in the vertebral-column figure's caption."
+  hint="Compare the options with the groups named in the caption of the two-panel figure in the second subsection of Human Axial Skeleton."
 >}}
 thoracic
 cervical
@@ -264,7 +278,7 @@ pelvic
 {{< multiplechoice
   question="Which of these is a facial bone?"
   answer="lacrimal"
-  hint="Look at the skull figure and the paragraphs of The Skull subsection that divide its bones into two categories."
+  hint="Look at the anterior-view figure and the paragraphs of the first subsection of Human Axial Skeleton that divide the head's bones into two categories."
 >}}
 frontal
 occipital
@@ -272,7 +286,7 @@ lacrimal
 temporal
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the major differences between the male pelvis and female pelvis that permit childbirth in females?" hint="Think about the section's description of pelvis shape, weight, depth, and the angle between the pubic bones." >}}
+{{< selfcheck question="What are the major differences between the male pelvis and female pelvis that permit childbirth in females?" hint="Reread the second paragraph of The Pelvic Girdle and the pelvis figure's caption." >}}
 The female pelvis is tilted forward and is wider, lighter, and shallower than the male pelvis. It also has a pubic angle that is broader than the male pelvis.
 ===CHECKS===
 the female pelvis is tilted forward
@@ -280,7 +294,7 @@ the female pelvis is wider, lighter, and shallower than the male pelvis
 the female pelvis has a broader pubic angle than the male pelvis
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are the major differences between the pelvic girdle and the pectoral girdle that allow the pelvic girdle to bear the weight of the body?" hint="Think about how securely each girdle attaches to the axial skeleton, how deep each girdle's sockets are, and where each carries its share of body weight." >}}
+{{< selfcheck question="What are the major differences between the pelvic girdle and the pectoral girdle that allow the pelvic girdle to bear the weight of the body?" hint="Reread the opening paragraphs of The Pectoral Girdle and The Pelvic Girdle." >}}
 The pelvic girdle is securely attached to the body by strong ligaments, unlike the pectoral girdle, which is sparingly attached to the ribcage. The sockets of the pelvic girdle are deep, allowing the femur to be more stable than the pectoral girdle, which has shallow sockets for the scapula. Most tetrapods have 75 percent of their weight on the front legs because the head and neck are so heavy; the advantage of the shoulder joint is more degrees of freedom in movement.
 ===CHECKS===
 the pelvic girdle is securely attached to the body by strong ligaments
@@ -290,7 +304,7 @@ most tetrapods carry about 75 percent of their weight on the front legs because 
 the advantage of the shoulder joint is more degrees of freedom in movement
 {{< /selfcheck >}}
 
-{{< selfcheck question="Scoliosis is a medical condition where the spine develops a sideways curvature. How would this change interfere with the normal function of the spine?" hint="Think about what a normally-aligned vertebral column does for support, cushioning, and posture, and what breaks down once it curves out of that alignment." >}}
+{{< selfcheck question="Scoliosis is a medical condition where the spine develops a sideways curvature. How would this change interfere with the normal function of the spine?" hint="Reread the second subsection of Human Axial Skeleton." >}}
 Normal vertebral columns are stacked in a vertical line. If the spine were to curve to the side instead this would disrupt the support and cushioning functions of the vertebrae. When the spine is out of alignment, it cannot absorb shock as well so normal activities can become painful and cause back problems later in life. The curvature also disrupts posture and structure, even disrupting lung expansion in severe cases due to changes to rib location.
 ===CHECKS===
 normal vertebral columns are stacked in a vertical line
@@ -298,20 +312,6 @@ a sideways curve disrupts the support and cushioning functions of the vertebrae
 an out-of-alignment spine cannot absorb shock as well, so normal activities can become painful and cause back problems later in life
 the curvature also disrupts posture and structure, even disrupting lung expansion in severe cases from changes to rib location
 {{< /selfcheck >}}
-
-{{< textin
-  question="The bone that supports the structures of the face and protects the brain is called the ________."
-  answer="skull"
-  accept="cranium"
-  hint="Reread the first subsection of Human Axial Skeleton."
->}}
-
-{{< textin
-  question="The structure that surrounds and protects the spinal cord, supports the head, and acts as an attachment point for the ribs and muscles of the back and neck is called the ________."
-  answer="vertebral column"
-  accept="spine|spinal column|backbone"
-  hint="This structure comprises 26 bones in the adult — 24 individual vertebrae plus the fused sacrum and coccyx — running from the neck down the back."
->}}
 
 ### Compare and contrast different skeletal systems
 
@@ -326,7 +326,7 @@ Exoskeletons provide greater protection of the internal organs.
 Exoskeletons provide less mechanical leverage.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Both hydrostatic and exoskeletons can protect internal organs from harm. Contrast the ways the skeletons perform these functions." hint="Think about what a fluid-filled compartment absorbs well versus what it cannot stop, and what a rigid outer casing absorbs well versus what it cannot stop." >}}
+{{< selfcheck question="Both hydrostatic and exoskeletons can protect internal organs from harm. Contrast the ways the skeletons perform these functions." hint="Reread the first two skeleton-design subsections." >}}
 Hydrostatic skeletons protect internal organs from harm by cushioning them from external shock. However, these skeletons do not provide protection from external trauma. Exoskeletons are hard structures that protect the organs from damage caused by their environment. However, since they are rigid, they provide little shock absorption, so the animal will need to have other ways of cushioning its internal organs.
 ===CHECKS===
 hydrostatic skeletons protect internal organs by cushioning them from external shock
@@ -344,4 +344,4 @@ exoskeletons, being rigid, provide little shock absorption
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 38.1: Types of Skeletal Systems](https://openstax.org/books/biology-2e/pages/38-1-types-of-skeletal-systems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; ten figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_38_01_04 through Figure_38_01_06, Figure_38_01_08 through Figure_38_01_14 are hand-drawn, labeled line illustrations saved as JPEG, none a captured photograph); a longdesc added to every one of those eleven diagrams (the ten re-kinded plus Figure_B38_01_07ab, already guessed "diagram"), each counting and placing its own leader-line and bracket labels — the axial-skeleton overview, the two skull views, the two-panel vertebral column, the thoracic cage, the appendicular-skeleton overview, the two-panel pectoral girdle, the upper limb, the pelvis comparison, the lower limb, and the foot; in-text pointers to figures ("Figure 38.2" through "Figure 38.15") replaced with "illustrated below," "shown below," or "illustrated above," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the Review Question comparing exoskeletons and endoskeletons (`eip-798`) keeps the source-keyed option "Exoskeletons provide less mechanical leverage." even though the section never discusses mechanical leverage at all — the other three options are each supported by the section's own sentences on growth (only exoskeletons fail to grow with the organism), defense (exoskeletons "provide defence against predators"), and endoskeleton support, so the key is kept on source authority rather than reworded from outside knowledge; five key-term recall items added from the glossary (hydrostatic skeleton, exoskeleton, endoskeleton, skull, vertebral column, with "spine" and "spinal column" accepted as the module's own synonyms for vertebral column), covering a representative subset of the section's thirty-five glossary terms rather than all of them; one locally written textin cloze added to the comparison objective's group, blanking "terrestrial" from the Hydrostatic Skeleton subsection's sentence "Although a hydrostatic skeleton is well-suited to invertebrate organisms such as earthworms and some aquatic organisms, it is not an efficient skeleton for terrestrial animals" (it replaces a summary cloze on "hard mineralized tissue," which the endoskeleton recall item's own prompt already printed).</small>
+<small>This section is adapted from [Biology 2e, Section 38.1: Types of Skeletal Systems](https://openstax.org/books/biology-2e/pages/38-1-types-of-skeletal-systems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; ten figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_38_01_04 through Figure_38_01_06, Figure_38_01_08 through Figure_38_01_14 are hand-drawn, labeled line illustrations saved as JPEG, none a captured photograph); a longdesc added to every one of those eleven diagrams (the ten re-kinded plus Figure_B38_01_07ab, already guessed "diagram"), each counting and placing its own leader-line and bracket labels — the axial-skeleton overview, the two skull views, the two-panel vertebral column, the thoracic cage, the appendicular-skeleton overview, the two-panel pectoral girdle, the upper limb, the pelvis comparison, the lower limb, and the foot; in-text pointers to figures ("Figure 38.2" through "Figure 38.15") replaced with "illustrated below," "shown below," or "illustrated above," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the Review Question comparing exoskeletons and endoskeletons keeps its source key, "Exoskeletons provide less mechanical leverage.", on source authority: the section never discusses mechanical leverage or which skeleton supports larger organisms, and prints only the growth statement (the exoskeleton "does not grow as the organism grows") and, loosely, the protection one (exoskeletons "provide defence against predators"); the third Critical Thinking question (hydrostatic skeletons and exoskeletons) placed under the comparison objective, after the fourth (scoliosis), which sits with the first two under the human-skeleton objective; five key-term recall items added from the glossary (hydrostatic skeleton, exoskeleton, endoskeleton, skull, vertebral column, with "spine" and "spinal column" accepted as the module's own synonyms for vertebral column), covering a representative subset of the section's thirty-five glossary terms rather than all of them; one locally written textin cloze added to the comparison objective's group, blanking "terrestrial" from the Hydrostatic Skeleton subsection's sentence "Although a hydrostatic skeleton is well-suited to invertebrate organisms such as earthworms and some aquatic organisms, it is not an efficient skeleton for terrestrial animals".</small>

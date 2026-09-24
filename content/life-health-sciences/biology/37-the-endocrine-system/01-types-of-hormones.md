@@ -76,39 +76,6 @@ There are three basic types of hormones: lipid-derived, amino acid-derived, and 
 
 ### List the different types of hormones
 
-{{< multiplechoice
-  question="A newly discovered hormone contains four amino acids linked together. Under which chemical class would this hormone be classified?"
-  answer="peptide hormone"
-  hint="Compare the structure the question describes with the structure the section gives for each of its three hormone classes, not with what each class is made from."
->}}
-lipid-derived hormone
-amino acid-derived hormone
-peptide hormone
-glycoprotein
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Which class of hormones can diffuse through plasma membranes?"
-  answer="lipid-derived hormones"
-  hint="The section's second paragraph names exactly one class whose members can cross the membrane on their own, contrasting it with the other two."
->}}
-lipid-derived hormones
-amino acid-derived hormones
-peptide hormones
-glycoprotein hormones
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Why are steroids able to diffuse across the plasma membrane?"
-  answer="They are non-polar molecules."
-  hint="Steroids are the section's primary class of lipid hormones; compare each option with the paragraph on which hormones are water-soluble and insoluble in lipids and why they cannot pass through plasma membranes."
->}}
-Their transport protein moves them through the membrane.
-They are amphipathic, allowing them to interact with the entire phospholipid.
-Cells express channels that let hormones flow down their concentration gradient into the cells.
-They are non-polar molecules.
-{{< /multiplechoice >}}
-
 {{< textin
   question="Epinephrine, norepinephrine, and thyroxine are relatively small molecules made from tyrosine and tryptophan; a hormone of this class is called a(n) ________."
   answer="amino acid-derived hormone"
@@ -119,17 +86,50 @@ They are non-polar molecules.
   question="A hormone derived mostly from cholesterol is called a(n) ________."
   answer="lipid-derived hormone"
   accept="lipid hormone|lipid-soluble hormone"
-  hint="Look at the first of the section's three hormone-class subsections, whose examples' chemical names end in '-ol' or '-one.'"
+  hint="Look at the first of the section's three hormone-class subsections."
 >}}
 
 {{< textin
-  question="A hormone composed of a polypeptide chain is called a ________."
+  question="Antidiuretic hormone, oxytocin, growth hormone, and follicle-stimulating hormone all belong to the hormone class called ________."
   answer="peptide hormone"
-  accept="polypeptide hormone"
-  hint="This class ranges from short chains such as antidiuretic hormone and oxytocin to large glycoproteins such as follicle-stimulating hormone."
+  accept="peptide|polypeptide hormone|polypeptide"
+  hint="Look at the third of the section's three hormone-class subsections."
 >}}
 
-{{< selfcheck question="Although there are many different hormones in the human body, they can be divided into three classes based on their chemical structure. What are these classes and what is one factor that distinguishes them?" hint="This section opens by naming the three hormone classes and pointing out exactly one property that separates one of them from the other two." >}}
+{{< multiplechoice
+  question="A newly discovered hormone contains four amino acids linked together. Under which chemical class would this hormone be classified?"
+  answer="peptide hormone"
+  hint="See the opening sentence of each of the section's three hormone-class subsections."
+>}}
+lipid-derived hormone
+amino acid-derived hormone
+peptide hormone
+glycoprotein
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which class of hormones can diffuse through plasma membranes?"
+  answer="lipid-derived hormones"
+  hint="See the section's second paragraph."
+>}}
+lipid-derived hormones
+amino acid-derived hormones
+peptide hormones
+glycoprotein hormones
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Why are steroids able to diffuse across the plasma membrane?"
+  answer="They are non-polar molecules."
+  hint="Compare each option with the paragraphs on which hormones are insoluble in water and which cannot pass through plasma membranes."
+>}}
+Their transport protein moves them through the membrane.
+They are amphipathic, allowing them to interact with the entire phospholipid.
+Cells express channels that let hormones flow down their concentration gradient into the cells.
+They are non-polar molecules.
+{{< /multiplechoice >}}
+
+{{< selfcheck question="Although there are many different hormones in the human body, they can be divided into three classes based on their chemical structure. What are these classes and what is one factor that distinguishes them?" hint="See the section's second paragraph." >}}
 Although there are many different hormones in the human body, they can be divided into three classes based on their chemical structure: lipid-derived, amino acid-derived, and peptide hormones. One of the key distinguishing features of the lipid-derived hormones is that they can diffuse across plasma membranes whereas the amino acid-derived and peptide hormones cannot.
 ===CHECKS===
 the three classes are lipid-derived, amino acid-derived, and peptide hormones
@@ -139,14 +139,14 @@ amino acid-derived and peptide hormones cannot diffuse across plasma membranes
 
 ### Explain their role in maintaining homeostasis
 
-{{< selfcheck question="Where is insulin stored, and why would it be released?" hint="Look at how the section describes where peptide hormones like insulin wait before secretion, and what blood condition triggers that secretion." >}}
+{{< selfcheck question="Where is insulin stored, and why would it be released?" hint="See the second paragraph of the Peptide Hormones subsection." >}}
 Secreted peptides such as insulin are stored within vesicles in the cells that synthesize them. They are then released in response to stimuli such as high blood glucose levels in the case of insulin.
 ===CHECKS===
 insulin is stored within vesicles in the cells that synthesize it
 insulin is released in response to stimuli such as high blood glucose levels
 {{< /selfcheck >}}
 
-{{< selfcheck question="Glucagon is the peptide hormone that signals for the body to release glucose into the bloodstream. How does glucagon contribute to maintaining homeostasis throughout the body? What other hormones are involved in regulating the blood glucose cycle?" hint="Think about what triggers this hormone's release, and which organ's stored fuel it acts on to raise blood glucose back toward a healthy level." >}}
+{{< selfcheck question="Glucagon is the peptide hormone that signals for the body to release glucose into the bloodstream. How does glucagon contribute to maintaining homeostasis throughout the body? What other hormones are involved in regulating the blood glucose cycle?" hint="See the Peptide Hormones paragraph on insulin; glucagon itself is taught in this chapter's Regulation of Body Processes section." >}}
 Glucagon acts in opposition to insulin, the peptide hormone that stimulates cells to take up glucose from the bloodstream, to maintain blood glucose within healthy levels. When glucagon is released into the blood in response to falling blood sugar levels, the liver catabolizes its glycogen stores to release glucose. If glucagon does not function properly, the blood sugar will drop too low from insulin signaling driving cellular uptake from the blood.
 ===CHECKS===
 glucagon acts in opposition to insulin
@@ -158,7 +158,7 @@ the liver catabolizes its glycogen stores to release glucose
 {{< textin
   question="The cells, tissues, and organs that secrete hormones make up the ________."
   answer="endocrine system"
-  hint="This is the collective name for every hormone-secreting gland and organ in the body, not the name of any one gland."
+  hint="See the section's opening paragraph."
 >}}
 
 {{< multiplechoice
@@ -174,4 +174,4 @@ It moves through the bloodstream faster than other cells.
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 37.1: Types of Hormones](https://openstax.org/books/biology-2e/pages/37-1-types-of-hormones) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the hormone-structures figure's alt describes oxytocin as a small compact peptide beside the two large proteins, because the source alt's "all large, with complex three-dimensional structures" does not fit panel (a); all three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_37_01_01abc, Figure_37_01_02ab, and Figure_37_01_03abc are molecular structure drawings and space-filling models, not captured photographs); the cholesterol/testosterone/estradiol figure's alt shortened from the manifest's 755-character source alt (over the 600-character limit) to a description under the limit, with the full per-panel structural detail — including the aromatic ring visible in estradiol's structure, which the source alt omits — moved into a longdesc; in-text pointers to figures ("Figure 37.2" through "Figure 37.4") replaced with "shown below" or "illustrated below," since Hugo does not number figures; the Career Connection note rendered as a callout with its bold feature name and the note's own title in italics; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items added from the section's complete three-term glossary (the amino acid-derived hormone prompt draws on the body's description of that class, because the glossary's own definition, "hormone derived from amino acids," prints the answer); the "Explain their role in maintaining homeostasis" objective's group, left thin by the source's two Critical Thinking items alone, filled with two locally written items built strictly from the page's own opening paragraph — a text-recall item on "endocrine system" and a multiple choice on what defines a hormone's target cell — disclosed here and in the source ledger.</small>
+<small>This section is adapted from [Biology 2e, Section 37.1: Types of Hormones](https://openstax.org/books/biology-2e/pages/37-1-types-of-hormones) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the hormone-structures figure's alt describes oxytocin as a small compact peptide beside the two large proteins, because the source alt's "all large, with complex three-dimensional structures" does not fit panel (a); all three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_37_01_01abc, Figure_37_01_02ab, and Figure_37_01_03abc are molecular structure drawings and space-filling models, not captured photographs); the cholesterol/testosterone/estradiol figure's alt shortened from the manifest's 755-character source alt (over the 600-character limit) to a description under the limit, with the full per-panel structural detail — including the aromatic ring visible in estradiol's structure, which the source alt omits — moved into a longdesc; in-text pointers to figures ("Figure 37.2" through "Figure 37.4") replaced with "shown below" or "illustrated below," since Hugo does not number figures; the Career Connection note rendered as a callout with its bold feature name and the note's own title in italics; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items added from the section's complete three-term glossary (the amino acid-derived hormone prompt draws on the body's description of that class, because the glossary's own definition, "hormone derived from amino acids," prints the answer, and the peptide hormone prompt on the body's list of that class's examples, because the glossary's "hormone composed of a polypeptide chain" is the fact the first Review Question asks), placed ahead of the Review Questions in their group; the "Explain their role in maintaining homeostasis" objective's group, left thin by the source's two Critical Thinking items alone, filled with two locally written items built strictly from the page's own opening paragraph — a text-recall item on "endocrine system" and a multiple choice on what defines a hormone's target cell — disclosed here and in the source ledger.</small>

@@ -200,6 +200,17 @@ Bone, or osseous tissue, is connective tissue that includes specialized cells, m
 ### Classify the different types of bones in the skeleton
 
 {{< multiplechoice
+  question="The Haversian canal:"
+  answer="contains the bone’s blood vessels and nerve fibers"
+  hint="Reread the opening paragraph of the Compact Bone Tissue subsection."
+>}}
+is arranged as rods or plates
+contains the bone’s blood vessels and nerve fibers
+is responsible for the lengthwise growth of long bones
+synthesizes and secretes matrix
+{{< /multiplechoice >}}
+
+{{< multiplechoice
   question="Compact bone is composed of ________."
   answer="osteons"
   hint="Reread the opening paragraph of the Compact Bone Tissue subsection."
@@ -211,20 +222,9 @@ calcium phosphate only
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="The Haversian canal:"
-  answer="contains the bone’s blood vessels and nerve fibers"
-  hint="Look at what actually flows through this canal, described in the text just above the figure — not what the canal itself is made of."
->}}
-is arranged as rods or plates
-contains the bone’s blood vessels and nerve fibers
-is responsible for the lengthwise growth of long bones
-synthesizes and secretes matrix
-{{< /multiplechoice >}}
-
-{{< multiplechoice
   question="While assembling a skeleton of a new species, a scientist points to one of the bones and observes that it looks like the most likely site of leg muscle attachment. What kind of bone did she indicate?"
   answer="flat bone"
-  hint="Broad surfaces for muscle attachment are named directly among the descriptions of the bone shapes near the start of this section — check which shape's definition mentions that role."
+  hint="Reread the descriptions of the bone shapes at the start of this section."
 >}}
 sesamoid bone
 long bone
@@ -232,7 +232,7 @@ trabecular bone
 flat bone
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the major differences between spongy bone and compact bone?" hint="Think about which layer sits on the outside versus the inside of a bone, and how the direction of applied stress differs between the two." >}}
+{{< selfcheck question="What are the major differences between spongy bone and compact bone?" hint="Reread the Compact Bone Tissue and Spongy Bone Tissue subsections." >}}
 Compact bone tissue forms the hard external layer of all bones and consists of osteons. Compact bone tissue is prominent in areas of bone at which stresses are applied in only a few directions. Spongy bone tissue forms the inner layer of all bones and consists of trabeculae. Spongy bone is prominent in areas of bones that are not heavily stressed or at which stresses arrive from many directions.
 ===CHECKS===
 compact bone tissue forms the hard external layer of all bones and consists of osteons
@@ -245,21 +245,22 @@ spongy bone is prominent in areas of bones that are not heavily stressed or at w
   question="The central shaft of a long bone, which contains bone marrow in a medullary cavity, is called the ________."
   answer="diaphysis"
   accept="diaphyses"
-  hint="It sits between the two rounded ends of a long bone."
+  hint="Reread the paragraph on long bones near the start of this section."
 >}}
 
 {{< textin
   question="A small, flat, irregularly shaped bone found between the flat bones of the skull is called a ________."
   answer="sutural bone"
-  hint="These bones vary in number, shape, size, and position, and are found only in one part of the skeleton."
+  hint="Reread the last paragraph before the Bone Tissue section."
 >}}
 
 ### Explain the role of the different cell types in bone
 
 {{< textin
-  question="A bone cell responsible for bone formation is called an ________."
-  answer="osteoblast"
-  hint="This cell secretes new bone matrix and later becomes trapped within it as a less active cell type."
+  question="The squamous stem cells of bone, which divide to produce daughter cells that differentiate into bone-forming cells, are called ________."
+  answer="osteoprogenitor cells"
+  accept="osteoprogenitor"
+  hint="Reread the Cell Types in Bones paragraph."
 >}}
 
 {{< multiplechoice
@@ -284,7 +285,7 @@ osteoblasts and chondrocytes
 osteocytes and chondrocytes
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the roles of osteoblasts, osteocytes, and osteoclasts?" hint="Match each of the three cell types to whether it forms, maintains, or breaks down bone tissue." >}}
+{{< selfcheck question="What are the roles of osteoblasts, osteocytes, and osteoclasts?" hint="Reread the Cell Types in Bones paragraph." >}}
 Osteocytes function in the exchange of nutrients and wastes with the blood. They also maintain normal bone structure by recycling the mineral salts in the bony matrix. Osteoclasts remove bone tissue by releasing lysosomal enzymes and acids that dissolve the bony matrix. Osteoblasts are bone cells that are responsible for bone formation.
 ===CHECKS===
 osteocytes function in the exchange of nutrients and wastes with the blood
@@ -295,10 +296,23 @@ osteoblasts are bone cells that are responsible for bone formation
 
 ### Explain how bone forms during development
 
+{{< textin
+  question="The process of bone formation by osteoblasts is called ________."
+  answer="ossification"
+  accept="osteogenesis"
+  hint="Reread the opening paragraph of the Development of Bone section."
+>}}
+
+{{< textin
+  question="The process of bone development from fibrous membranes, involved in forming the flat bones of the skull, the mandible, and the clavicles, is called ________."
+  answer="intramembranous ossification"
+  hint="Reread the paragraph just before the second heading under Development of Bone."
+>}}
+
 {{< multiplechoice
   question="The epiphyseal plate:"
   answer="is responsible for the lengthwise growth of long bones"
-  hint="This region lies between the diaphysis and each epiphysis, and hyaline cartilage persists there until adolescence."
+  hint="Reread the paragraph just before the six-panel bone-development figure."
 >}}
 is arranged as rods or plates
 contains the bone’s blood vessels and nerve fibers
@@ -306,27 +320,15 @@ is responsible for the lengthwise growth of long bones
 synthesizes and secretes bone matrix
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Thalidomide was a morning sickness drug given to pregnant people; it caused babies to be born without arm bones. If recent studies have shown that thalidomide prevents the formation of new blood vessels, describe the type of bone development inhibited by the drug and what stage of ossification was affected." hint="Focus on which of the two bone-development processes relies on cartilage being replaced by bone through a blood supply, since that is what the drug is described as blocking." >}}
+{{< selfcheck question="Thalidomide was a morning sickness drug given to pregnant people; it caused babies to be born without arm bones. If recent studies have shown that thalidomide prevents the formation of new blood vessels, describe the type of bone development inhibited by the drug and what stage of ossification was affected." hint="Reread the Development of Bone section." >}}
 Thalidomide affected the development of the long bones of the arms, disrupting endochondral ossification. The bones would have been able to develop into a template made of the calcified cartilage matrix, but new blood vessels could not be created. Since no vessels invade the template, the structure is not converted into trabecular bone.
 ===CHECKS===
-thalidomide affected the development of the long bones of the arms by disrupting endochondral ossification
-the bones could form a template of calcified cartilage matrix but new blood vessels could not be created
-because no vessels invade the template, the structure is not converted into trabecular bone
+thalidomide affected the development of the long bones of the arms, disrupting endochondral ossification
+the bones would have been able to develop into a template made of the calcified cartilage matrix
+new blood vessels could not be created
+since no vessels invade the template, the structure is not converted into trabecular bone
 {{< /selfcheck >}}
-
-{{< textin
-  question="The process of bone development from fibrous membranes, involved in forming the flat bones of the skull, the mandible, and the clavicles, is called ________."
-  answer="intramembranous ossification"
-  hint="This pathway does not go through a cartilage stage first — contrast it with the process used for most other bones."
->}}
-
-{{< textin
-  question="The process of bone formation by osteoblasts is called ________."
-  answer="ossification"
-  accept="osteogenesis"
-  hint="This general process includes two specific pathways described later in this section, one starting from fibrous membranes and one from cartilage."
->}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 38.2: Bone](https://openstax.org/books/biology-2e/pages/38-2-bone) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; four figures re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (Figure_38_02_01, Figure_38_02_02, Figure_38_02_05, and Figure_38_02_06 are all hand-drawn line illustrations saved as JPEG, none a captured photograph); a longdesc added to every diagram whose meaning is not carried by its one-line caption — the five-panel bone-shape overview, the labeled long-bone cross-section, the Visual Connection's osteon/Haversian-canal cross-section, the tension/compression trabeculae diagram, and the six-panel endochondral-ossification flow diagram — transcribing each drawing's own printed labels and counting its panels, arrows, or leader lines; the Visual Connection figure's alt kept to a plain visual description rather than the manifest's narrated source alt (which states outright that the Haversian canal carries "arteries, veins and nerve fibers"), moving that detail into the caption (kept verbatim, where the printed book itself also states it above the question) so the alt does not hand a screen-reader user the answer the sighted caption does not; in-text pointers to figures ("Figure 38.16" through "Figure 38.22") replaced with "shown above," "shown below," or "illustrated below," since Hugo does not number figures; the note wrapping the compact/spongy-bone Visual Connection (Haversian canals) rendered as its figure followed by a multiple choice, kept in the body in the Compact Bone Tissue subsection — the note copy and the `<exercise>` copy in the module's "Art Exercise" section print identical question and option wording, so no adjudication was needed and the exercise copy was used; the interactive note (a musculoskeletal-tissue micrograph link) rendered as a Link to Learning callout with descriptive link text, external URL kept as printed; the scientific note (Decalcification of Bones) rendered as a Scientific Method Connection callout with its bold name and italic title, its bold procedural labels ("Question," "Background," "Hypothesis," "Test the hypothesis," "Analyze the data," "Report the results," "Draw a conclusion") kept as the source repeats them; the four-stage bone-repair description kept as a numbered list, as printed; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the Critical Thinking solution on thalidomide (`eip-247`) corrects a source typo, "Thalidomide effected the development," to "Thalidomide affected the development," since "effected" cannot coherently pair with the same sentence's "disrupting"; the Review Question on leg-muscle attachment (`eip-955161`) keeps the source-keyed option "flat bone," which the section's own sentence on flat bones ("broad surfaces of muscle attachment are required") supports, so the key is kept on source authority; five key-term recall items added from the glossary (diaphysis, sutural bone, osteoblast, ossification with "osteogenesis" accepted, and intramembranous ossification), covering a representative subset of the section's twenty-seven glossary terms rather than all of them — compact bone and the Haversian canal are separately tested through multiple choice rather than recall; this module has no comparison table, so no sortbins exercise was built; the Link to Learning's openstax.org redirect (`/l/muscle_tissue`) is no longer linked — its destination, histology.medicine.umich.edu/resources/muscle, returned 404 on September 5, 2026, so the callout names the resource and its site for the reader to search instead.</small>
+<small>This section is adapted from [Biology 2e, Section 38.2: Bone](https://openstax.org/books/biology-2e/pages/38-2-bone) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; four figures re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (Figure_38_02_01, Figure_38_02_02, Figure_38_02_05, and Figure_38_02_06 are all hand-drawn line illustrations saved as JPEG, none a captured photograph); a longdesc added to every diagram whose meaning is not carried by its one-line caption — the five-panel bone-shape overview, the labeled long-bone cross-section, the Visual Connection's osteon/Haversian-canal cross-section, the tension/compression trabeculae diagram, and the six-panel endochondral-ossification flow diagram — transcribing each drawing's own printed labels and counting its panels, arrows, or leader lines; the Visual Connection figure's alt kept to a plain visual description rather than the manifest's narrated source alt (which states outright that the Haversian canal carries "arteries, veins and nerve fibers"), moving that detail into the caption (kept verbatim, where the printed book itself also states it above the question) so the alt does not hand a screen-reader user the answer the sighted caption does not; in-text pointers to figures ("Figure 38.16" through "Figure 38.22") replaced with "shown above," "shown below," or "illustrated below," since Hugo does not number figures; the note wrapping the compact/spongy-bone Visual Connection (Haversian canals) rendered as its figure followed by a multiple choice, kept in the body in the Compact Bone Tissue subsection — the note copy and the `<exercise>` copy in the module's "Art Exercise" section print identical question and option wording, so no adjudication was needed and the exercise copy was used; the interactive note (a musculoskeletal-tissue micrograph link) rendered as a Link to Learning callout with descriptive link text, external URL kept as printed; the scientific note (Decalcification of Bones) rendered as a Scientific Method Connection callout with its bold name and italic title, its bold procedural labels ("Question," "Background," "Hypothesis," "Test the hypothesis," "Analyze the data," "Report the results," "Draw a conclusion") kept as the source repeats them; the four-stage bone-repair description kept as a numbered list, as printed; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 1, 4, 6, 3, 5, 2 of the source's numbering; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the Critical Thinking solution on thalidomide (`eip-247`) corrects a source typo, "Thalidomide effected the development," to "Thalidomide affected the development," since "effected" cannot coherently pair with the same sentence's "disrupting"; the Review Question on leg-muscle attachment (`eip-955161`) keeps the source-keyed option "flat bone," which the section's own sentence on flat bones ("broad surfaces of muscle attachment are required") supports, so the key is kept on source authority; four key-term recall items added from the glossary (diaphysis, sutural bone, ossification with "osteogenesis" accepted, and intramembranous ossification), plus one text-recall item written locally from the Cell Types in Bones paragraph's own sentence on osteoprogenitor cells ("squamous stem cells that divide to produce daughter cells that differentiate into osteoblasts," with "osteoblasts" restated as "bone-forming cells," the module's own definition of them, so the stem does not print part of the osteoporosis question's key), since a recall item on osteoblasts re-asked the Critical Thinking question on the roles of osteoblasts, osteocytes, and osteoclasts; the recall items cover a representative subset of the section's twenty-seven glossary terms rather than all of them — compact bone and the Haversian canal are separately tested through multiple choice rather than recall; this module has no comparison table, so no sortbins exercise was built; the Link to Learning's openstax.org redirect (`/l/muscle_tissue`) is no longer linked — its destination, histology.medicine.umich.edu/resources/muscle, returned 404 on September 5, 2026, so the callout names the resource and its site for the reader to search instead.</small>

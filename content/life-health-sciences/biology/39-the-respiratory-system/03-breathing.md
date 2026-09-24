@@ -167,7 +167,7 @@ the respiratory rate is decreased while increasing the volume per breath
 both a and c
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain how a puncture to the thoracic cavity (from a knife wound, for instance) could alter the ability to inhale." hint="Think about what keeps the intrapleural pressure negative, and what happens to that seal if the thoracic cavity is opened to the outside air." >}}
+{{< selfcheck question="Explain how a puncture to the thoracic cavity (from a knife wound, for instance) could alter the ability to inhale." hint="See the paragraph after the Boyle's Law graph in The Mechanics of Human Breathing." >}}
 A puncture to the thoracic cavity would equalize the pressure inside the thoracic cavity to the outside environment. For the lung to function properly, the intrapleural pressure must be negative. This is caused by the contraction of the diaphragm pulling the lungs down and drawing air into the lungs.
 ===CHECKS===
 a puncture to the thoracic cavity would equalize the pressure inside the thoracic cavity to the outside environment
@@ -177,10 +177,24 @@ this negative pressure is caused by the contraction of the diaphragm pulling the
 
 ### Explain the importance of compliance and resistance in the lungs
 
+{{< textin
+  question="A measurement of the elasticity of the lung is called ________."
+  answer="compliance"
+  accept="lung compliance"
+  hint="See the first paragraph of the subsection after Surfactant, in The Work of Breathing."
+>}}
+
+{{< textin
+  question="A measurement of how much obstruction exists in the airways is called ________."
+  answer="resistance"
+  accept="airway resistance|lung resistance"
+  hint="See the first paragraph of the subsection after Surfactant, in The Work of Breathing."
+>}}
+
 {{< multiplechoice
   question="Restrictive airway diseases ________."
   answer="decrease the compliance of the lung"
-  hint="Reread the paragraph on restrictive diseases in Lung Resistance and Compliance."
+  hint="Reread the paragraph on restrictive diseases, in the subsection after Surfactant."
 >}}
 increase the compliance of the lung
 decrease the compliance of the lung
@@ -188,7 +202,7 @@ increase the lung volume
 decrease the work of breathing
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How would increased airway resistance affect intrapleural pressure during inhalation?" hint="Think about what has to happen to the volume and pressure inside the lung if air meets more resistance getting in." >}}
+{{< selfcheck question="How would increased airway resistance affect intrapleural pressure during inhalation?" hint="See the subsection after Surfactant, and the thoracic-cavity pressure sentences in The Mechanics of Human Breathing." >}}
 Increased airway resistance increases the volume and pressure in the lung; therefore, the intrapleural pressure would be less negative and breathing would be more difficult.
 ===CHECKS===
 increased airway resistance increases the volume and pressure in the lung
@@ -196,39 +210,27 @@ the intrapleural pressure would be less negative
 breathing would be more difficult
 {{< /selfcheck >}}
 
-{{< textin
-  question="A measurement of the elasticity of the lung is called ________."
-  answer="compliance"
-  hint="This value drops in a disease like pulmonary fibrosis, where the lung tissue becomes stiff and cannot stretch as easily."
->}}
-
-{{< textin
-  question="A measurement of how much obstruction exists in the airways is called ________."
-  answer="resistance"
-  hint="This value rises in a disease like asthma, where inflammation narrows the airways and makes it harder for air to flow through them."
->}}
-
 ### Discuss problems that may arise due to a V/Q mismatch
 
-{{< selfcheck question="When someone is standing, gravity stretches the bottom of the lung down toward the floor to a greater extent than the top of the lung. What implication could this have on the flow of air in the lungs? Where does gas exchange occur in the lungs?" hint="Think about which part of the lung — top or bottom — gravity pulls on more when a person is upright, and what that does to how much air reaches that part." >}}
+{{< textin
+  question="An area in the lung that lacks proper ventilation or perfusion is called ________."
+  answer="dead space"
+  hint="See the second paragraph of the V/Q mismatch subsection."
+>}}
+
+{{< textin
+  question="The process of opening airways that normally remain closed, which happens when cardiac output increases, is called ________."
+  answer="recruitment"
+  hint="See the first paragraph of the V/Q mismatch subsection."
+>}}
+
+{{< selfcheck question="When someone is standing, gravity stretches the bottom of the lung down toward the floor to a greater extent than the top of the lung. What implication could this have on the flow of air in the lungs? Where does gas exchange occur in the lungs?" hint="See the anatomical-shunt paragraph in the V/Q mismatch subsection." >}}
 The lung is particularly susceptible to changes in the magnitude and direction of gravitational forces. When someone is standing or sitting upright, the pleural pressure gradient leads to increased ventilation further down in the lung.
 ===CHECKS===
 the lung is particularly susceptible to changes in the magnitude and direction of gravitational forces
 when someone is standing or sitting upright, the pleural pressure gradient leads to increased ventilation further down in the lung
 {{< /selfcheck >}}
 
-{{< textin
-  question="An area in the lung that lacks proper ventilation or perfusion is called ________."
-  answer="dead space"
-  hint="This kind of lung tissue can develop from either an anatomical block or a functional problem such as infection or edema."
->}}
-
-{{< textin
-  question="The process of opening airways that normally remain closed, which happens when cardiac output increases, is called ________."
-  answer="recruitment"
-  hint="As blood flow through the lungs rises, additional capillaries and arteries that are normally inactive become perfused."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 39.3: Breathing](https://openstax.org/books/biology-2e/pages/39-3-breathing) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the module's "therapods" corrected to "theropods"; figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_39_03_02, Figure_39_03_03, and Figure_39_03_05f are a plotted-data line graph, a labeled two-panel illustration, and a labeled line graph, none a captured photograph); a longdesc added to every diagram whose meaning is not carried by its caption — the dinosaur/bird air-sac comparison, the Boyle's Law pressure-volume curve, the inhalation/expiration pressure-and-diaphragm diagram, the FEV1/FVC ratio graph, and the pleura cross-section — counting and tracing every label, dot, arrow, and curve from the image itself; the FEV1/FVC ratio figure's letter-spaced screen-reader alt ("F E V 1," "F V C") rewritten as a plain description of what is drawn, with the walk-through moved into its longdesc; in-text pointers to figures ("Figure 39.14" through "Figure 39.20") replaced with "shown above/below" and, for the two-panel breathing figure, "part a"/"part b," since Hugo does not number figures; the note wrapping the dinosaur/bird comparison figure (class "evolution") rendered as an Evolution Connection callout with its figure and both surrounding paragraphs kept inside it, as in the source; both Link to Learning notes (class "interactive") rendered as callouts keeping the module's own openstax.org redirect URLs, with descriptive link text in place of the source's bare "video" link text; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each self-check's model answer decomposed into rubric checkpoints with no new claims; four key-term recall items added from the glossary (compliance, resistance, dead space, recruitment), covering four of the section's twenty-one glossary terms, the remaining seventeen appearing in the Key terms list and the prose; one Critical Thinking question's source solution ("The lung is particularly susceptible to changes in the magnitude and direction of gravitational forces. When someone is standing or sitting upright, the pleural pressure gradient leads to increased ventilation further down in the lung.") addresses only the first half of its two-part printed question ("What implication could this have on the flow of air in the lungs? Where does gas exchange occur in the lungs?"); both question sentences and the solution are kept as printed, and the gap is a source defect, not answered locally.</small>
+<small>This section is adapted from [Biology 2e, Section 39.3: Breathing](https://openstax.org/books/biology-2e/pages/39-3-breathing) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the module's "therapods" corrected to "theropods"; figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_39_03_02, Figure_39_03_03, and Figure_39_03_05f are a plotted-data line graph, a labeled two-panel illustration, and a labeled line graph, none a captured photograph); a longdesc added to every diagram whose meaning is not carried by its caption — the dinosaur/bird air-sac comparison, the Boyle's Law pressure-volume curve, the inhalation/expiration pressure-and-diaphragm diagram, the FEV1/FVC ratio graph, and the pleura cross-section — counting and tracing every label, dot, arrow, and curve from the image itself; the FEV1/FVC ratio figure's letter-spaced screen-reader alt ("F E V 1," "F V C") rewritten as a plain description of what is drawn, with the walk-through moved into its longdesc; in-text pointers to figures ("Figure 39.14" through "Figure 39.20") replaced with "shown above/below" and, for the two-panel breathing figure, "part a"/"part b," since Hugo does not number figures; the note wrapping the dinosaur/bird comparison figure (class "evolution") rendered as an Evolution Connection callout with its figure and both surrounding paragraphs kept inside it, as in the source; both Link to Learning notes (class "interactive") rendered as callouts keeping the module's own openstax.org redirect URLs, with descriptive link text in place of the source's bare "video" link text; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 1, 3, 2 and the Critical Thinking Questions in the order 2, 1, 3 of the source's numbering, each self-check's model answer decomposed into rubric checkpoints with no new claims; four key-term recall items added from the glossary (compliance, resistance, dead space, recruitment) and placed first in their groups, covering four of the section's twenty-one glossary terms, the remaining seventeen appearing in the Key terms list and the prose; one Critical Thinking question's source solution ("The lung is particularly susceptible to changes in the magnitude and direction of gravitational forces. When someone is standing or sitting upright, the pleural pressure gradient leads to increased ventilation further down in the lung.") addresses only the first half of its two-part printed question ("What implication could this have on the flow of air in the lungs? Where does gas exchange occur in the lungs?"); both question sentences and the solution are kept as printed, and the gap is a source defect, not answered locally.</small>

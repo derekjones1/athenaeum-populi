@@ -140,7 +140,7 @@ The vestibular system has five parts that work together to provide the sense of 
 {{< multiplechoice
   question="In sound, pitch is measured in _____, and volume is measured in _____."
   answer="hertz (Hz); decibels (dB)"
-  hint="This section names the wave-cycles-per-second unit when it first describes frequency, and it names the loudness unit later, when it says how many of them normal human speech registers."
+  hint="See the paragraphs on frequency and amplitude, under Sound."
 >}}
 nanometers (nm); decibels (dB)
 decibels (dB); nanometers (nm)
@@ -148,7 +148,7 @@ decibels (dB); hertz (Hz)
 hertz (Hz); decibels (dB)
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How would a rise in altitude likely affect the speed of a sound transmitted through air? Why?" hint="Think about what a sound wave is actually moving through, and how the density of that medium changes as you go up." >}}
+{{< selfcheck question="How would a rise in altitude likely affect the speed of a sound transmitted through air? Why?" hint="See the first paragraph of Sound." >}}
 The sound would slow down, because it is transmitted through the particles (gas) and there are fewer particles (lower density) at higher altitudes.
 ===CHECKS===
 the sound would slow down
@@ -159,7 +159,7 @@ there are fewer particles, at a lower density, at higher altitudes
 {{< textin
   question="Sound frequencies above the human detectable ceiling of approximately 20,000 Hz are called ________."
   answer="ultrasound"
-  hint="Several other animals in this section — dogs, cats, bats, and dolphins among them — can hear frequencies in this range that stay silent to human ears."
+  hint="See the end of the paragraph on frequency, under Sound."
 >}}
 
 ### Trace the path of sound through the auditory system to the site of transduction of sound
@@ -167,7 +167,7 @@ there are fewer particles, at a lower density, at higher altitudes
 {{< multiplechoice
   question="Auditory hair cells are indirectly anchored to the _____."
   answer="basilar membrane"
-  hint="The glossary describes this structure as the one that 'indirectly anchors' the receptors — distinguish it from the membrane the stereocilia merely touch or embed into just above it."
+  hint="See the paragraph on the site of transduction, just after the cochlear-implant question, under Transduction of Sound."
 >}}
 basilar membrane
 oval window
@@ -175,7 +175,7 @@ tectorial membrane
 ossicles
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does the structure of the ear allow a person to determine where a sound originates?" hint="Think about why having two ears, one on each side of the head, might matter for locating where a sound came from." >}}
+{{< selfcheck question="How does the structure of the ear allow a person to determine where a sound originates?" hint="Start from the structure named in the first sentence of Reception of Sound." >}}
 The first step in processing a sound in humans is the collection of sound by the auricle. When a person encounters a sound, the auricle on both sides of the head will collect the vibrations. Since the waves originate from a single site, the two auricles will not collect the sound at the exact same time. When the sound is processed by the auditory system, the brain is able to use this slight difference in timing to determine the location of the sound.
 ===CHECKS===
 sound is collected by the auricle on both sides of the head
@@ -186,39 +186,40 @@ the brain uses this slight difference in timing to determine the location of the
 {{< textin
   question="The sense of hearing is called ________."
   answer="audition"
-  hint="This is the term the section uses throughout, rather than just saying 'hearing.'"
+  hint="See the opening sentence of this section."
 >}}
 
 {{< textin
   question="The cartilaginous outer ear is called the ________."
   answer="auricle"
-  hint="Sound waves are collected by this structure before traveling through the auditory canal to the eardrum."
+  hint="See the first sentence of Reception of Sound."
 >}}
 
 {{< textin
   question="The whorled structure that contains receptors for transduction of the mechanical wave into an electrical signal is called the ________."
   answer="cochlea"
-  hint="This structure is shaped like the shell of a snail."
+  hint="See the first paragraph of Transduction of Sound."
 >}}
 
 {{< textin
   question="In the basilar membrane, the site of the transduction of sound, a mechanical wave, to a neural signal is called the ________."
   answer="organ of Corti"
   accept="spiral organ"
-  hint="This structure sits above the basilar membrane and holds the hair cells whose stereocilia are embedded in or touch the membrane above them."
+  hint="See the paragraph just after the cochlear-implant question, under Transduction of Sound."
 >}}
 
 {{< textin
   question="The thin diaphragm between the outer and middle ears is called the ________."
   answer="tympanum"
   accept="tympanic membrane|eardrum|ear drum"
-  hint="Incoming sound waves cause this diaphragm to vibrate first, before three tiny bones pass the vibration onward."
+  hint="See the first sentence of Reception of Sound."
 >}}
 
 {{< textin
   question="Each of the three bones of the middle ear, whatever its individual name, is called an ________."
   answer="ossicle"
-  hint="These three tiny bones—nicknamed the hammer, anvil, and stirrup—transfer energy from the tympanum to the inner ear."
+  accept="ear ossicle"
+  hint="See the first paragraph of Reception of Sound."
 >}}
 
 ### Identify the structures of the vestibular system that respond to gravity
@@ -237,7 +238,7 @@ ossicles
 {{< multiplechoice
   question="Benign Paroxysmal Positional Vertigo is a disorder where some of the calcium carbonate crystals in the utricle migrate into the semicircular canals. Why does this condition cause periods of dizziness?"
   answer="The hair cells in the semicircular canals will now be stimulated by gravity."
-  hint="Compare what the Vestibular Information discussion says the utricle and saccule respond to with what it says the semicircular canals respond to."
+  hint="See the second paragraph of Vestibular Information and the paragraph after the vestibular-labyrinth figure."
 >}}
 The hair cells in the semicircular canals will be constantly activated.
 The hair cells in the semicircular canals will now be stimulated by gravity.
@@ -245,7 +246,7 @@ The utricle will no longer recognize acceleration.
 There will be too much volume in the semicircular canals for them to detect motion.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How might being in a place with less gravity than Earth has (such as Earth's moon) affect vestibular sensation, and why?" hint="Think about what actually moves the stereocilia in the utricle and saccule, and what happens to that force with less gravity." >}}
+{{< selfcheck question="How might being in a place with less gravity than Earth has (such as Earth's moon) affect vestibular sensation, and why?" hint="See the second paragraph of Vestibular Information." >}}
 Because vestibular sensation relies on gravity's effects on tiny crystals in the inner ear, a situation of reduced gravity would likely impair vestibular sensation.
 ===CHECKS===
 vestibular sensation relies on gravity's effects on tiny crystals in the inner ear
@@ -253,18 +254,18 @@ a situation of reduced gravity would likely impair vestibular sensation
 {{< /selfcheck >}}
 
 {{< textin
-  question="One of three half-circular, fluid-filled tubes in the vestibular labyrinth that monitors angular acceleration and deceleration is called a ________."
-  answer="semicircular canal"
-  accept="semi-circular canal"
-  hint="One of these three tubes lies horizontally, while the other two sit at about 45-degree angles to it."
+  question="At the base of each semicircular canal, the hairs of a cluster of hair cells project into a gelatinous cap called the ________."
+  answer="cupula"
+  accept="cupulae"
+  hint="See the paragraph after the vestibular-labyrinth figure."
 >}}
 
 {{< textin
   question="The ________ and saccule measure head orientation: their calcium carbonate crystals shift when the head is tilted, thereby activating hair cells."
   answer="utricle"
-  hint="This vestibular receptor organ, along with the saccule, responds to acceleration in a straight line, such as gravity — not to rotation."
+  hint="See the Summary's last paragraph."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 36.4: Hearing and Vestibular Sensation](https://openstax.org/books/biology-2e/pages/36-4-hearing-and-vestibular-sensation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_36_04_01 and Figure_36_04_04-bbc7 are both hand-drawn line graphics — a wavelength/amplitude graph and a labeled anatomical illustration — neither a captured photograph); a longdesc added to every diagram whose meaning is not carried by its one-line caption — the wavelength/amplitude graph, the labeled ear cross-section, the cochlear-implant Visual Connection's five-step sound-transduction diagram, the hair-cell diagram, and the vestibular-labyrinth illustration — transcribing each drawing's own printed labels and counting its panels, arrows, or numbered steps; in-text pointers to figures ("Figure 36.12" through "Figure 36.16") replaced with "shown below," "illustrated below," or "illustrated above," since Hugo does not number figures; a corrupted sentence in the pinned CNXML — "High-frequency (≥15.,ds." — present identically in the source PDF and the live openstax.org page, restored to "High-frequency (≥15,000 Hz) sounds are higher-pitched (short wavelength) than low-frequency (long wavelengths; ≤100 Hz) sounds," matching an independent mirror of the same OpenStax text (courses.lumenlearning.com) — a source defect; the note wrapping the cochlear-implant Visual Connection rendered as its figure followed by a multiple choice, kept in the body in the Transduction of Sound section — the note copy and the `<exercise>` copy print identical question and option wording, so no adjudication was needed; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), the third Critical Thinking Question (locating where a sound originates) placed in the sound-path objective's group, ahead of the second (vestibular sensation in low gravity), which serves the vestibular objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eight key-term recall items added from the glossary (audition, auricle, cochlea, organ of Corti, ossicle, tympanum, ultrasound, semicircular canal), covering a representative subset of the section's nineteen glossary terms rather than all of them, the other eleven (basilar membrane, incus, inner ear, labyrinth, malleus, middle ear, outer ear, oval window, stapes, stereocilia, tectorial membrane) appear only in the Key terms list and the prose, basilar membrane is also the key of a Review Question, and malleus/incus/stapes are near-duplicates of the ossicle item; one summary-derived textin cloze added to the vestibular objective's group (blanking "utricle" from the closing summary's sentence "The utricle and saccule measure head orientation…").</small>
+<small>This section is adapted from [Biology 2e, Section 36.4: Hearing and Vestibular Sensation](https://openstax.org/books/biology-2e/pages/36-4-hearing-and-vestibular-sensation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_36_04_01 and Figure_36_04_04-bbc7 are both hand-drawn line graphics — a wavelength/amplitude graph and a labeled anatomical illustration — neither a captured photograph); a longdesc added to every diagram whose meaning is not carried by its one-line caption — the wavelength/amplitude graph, the labeled ear cross-section, the cochlear-implant Visual Connection's five-step sound-transduction diagram, the hair-cell diagram, and the vestibular-labyrinth illustration — transcribing each drawing's own printed labels and counting its panels, arrows, or numbered steps; in-text pointers to figures ("Figure 36.12" through "Figure 36.16") replaced with "shown below," "illustrated below," or "illustrated above," since Hugo does not number figures; a corrupted sentence in the pinned CNXML — "High-frequency (≥15.,ds." — present identically in the source PDF and the live openstax.org page, restored to "High-frequency (≥15,000 Hz) sounds are higher-pitched (short wavelength) than low-frequency (long wavelengths; ≤100 Hz) sounds," matching an independent mirror of the same OpenStax text (courses.lumenlearning.com) — a source defect; the note wrapping the cochlear-implant Visual Connection rendered as its figure followed by a multiple choice, kept in the body in the Transduction of Sound section — the note copy and the `<exercise>` copy print identical question and option wording, so no adjudication was needed; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), the third Critical Thinking Question (locating where a sound originates) placed in the sound-path objective's group, ahead of the second (vestibular sensation in low gravity), which serves the vestibular objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items added from the glossary (audition, auricle, cochlea, organ of Corti, ossicle, tympanum, ultrasound), covering a representative subset of the section's nineteen glossary terms rather than all of them, the other twelve (basilar membrane, incus, inner ear, labyrinth, malleus, middle ear, outer ear, oval window, semicircular canal, stapes, stereocilia, tectorial membrane) appear only in the Key terms list and the prose, basilar membrane is also the key of a Review Question, semicircular canals are the subject of another, and malleus/incus/stapes are near-duplicates of the ossicle item; one body-derived textin cloze added to the vestibular objective's group (blanking "cupula" from the semicircular-canal paragraph's sentence "The hairs project into a gelatinous cap called the cupula…"); one summary-derived textin cloze added to the vestibular objective's group (blanking "utricle" from the closing summary's sentence "The utricle and saccule measure head orientation…").</small>

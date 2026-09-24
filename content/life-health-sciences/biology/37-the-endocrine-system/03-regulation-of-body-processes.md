@@ -100,7 +100,7 @@ Insulin and glucagon regulate blood glucose levels.
 {{< multiplechoice
   question="Pancreatic tumors may cause excess secretion of glucagon. Type I diabetes results from the failure of the pancreas to produce insulin. Which of the following statements about these two conditions is true?"
   answer="A pancreatic tumor and type I diabetes will both cause hyperglycemia."
-  hint="Use the insulin/glucagon cycle diagram just above: trace which way blood glucose moves when glucagon is in excess, and which way it moves when insulin is missing."
+  hint="Trace both conditions through the insulin/glucagon cycle diagram just above."
 >}}
 A pancreatic tumor and type I diabetes will have the opposite effects on blood sugar levels.
 A pancreatic tumor and type I diabetes will both cause hyperglycemia.
@@ -243,7 +243,7 @@ Parathyroid hormone (PTH) is produced by the parathyroid glands in response to l
 {{< multiplechoice
   question="Drinking alcoholic beverages causes an increase in urine output. This most likely occurs because alcohol:"
   answer="inhibits ADH release."
-  hint="ADH's whole job is to make the kidneys hold on to water — think about what has to happen to that hormone for more water to leave the body as urine instead."
+  hint="Reread the last sentence of the excretory-system discussion's second paragraph."
 >}}
 inhibits ADH release.
 stimulates ADH release.
@@ -254,32 +254,32 @@ stimulates TSH release.
 {{< textin
   question="The steroid hormone produced by the adrenal cortex that stimulates the reabsorption of Na⁺ from extracellular fluids and secretion of K⁺ is called ________."
   answer="aldosterone"
-  hint="Look at the section's paragraph on the chain of chemical releases that low blood pressure triggers."
+  hint="Look at the fourth paragraph of the excretory-system discussion."
 >}}
 
 {{< textin
   question="The hormone produced by the hypothalamus and released by the posterior pituitary that increases water reabsorption by the kidneys is called ________."
   answer="ADH"
-  accept="antidiuretic hormone|vasopressin"
-  hint="This hormone makes the kidney tubules more permeable to water by having water channels, aquaporins, temporarily inserted into them."
+  accept="antidiuretic hormone|anti-diuretic hormone|vasopressin"
+  hint="Look at the second paragraph of the excretory-system discussion."
 >}}
 
 {{< textin
   question="A corticosteroid that affects ion and water balance is called a ________."
   answer="mineralocorticoid"
-  hint="Aldosterone is the section's example of this class of adrenal-cortex hormone."
+  hint="Look at the fourth paragraph of the excretory-system discussion."
 >}}
 
 {{< textin
   question="The enzyme produced by the juxtaglomerular apparatus of the kidneys that reacts with angiotensinogen to cause the release of aldosterone is called ________."
   answer="renin"
-  hint="This enzyme starts the pathway that converts angiotensinogen into angiotensin I."
+  hint="Look at the last paragraph of the excretory-system discussion, before its figure."
 >}}
 
 {{< textin
   question="The disorder caused by underproduction of ADH is called ________."
   answer="diabetes insipidus"
-  hint="Without enough of this hormone, the kidneys cannot retain water, so it must be continually replaced by drinking."
+  hint="Look at the third paragraph of the excretory-system discussion."
 >}}
 
 ### Discuss the role of hormones in the reproductive system
@@ -298,7 +298,7 @@ PTH
 {{< multiplechoice
   question="How would mutations that completely ablate the function of the androgen receptor impact the phenotypic development of humans with XY chromosomes?"
   answer="Patients would appear phenotypically female."
-  hint="If target tissues cannot respond to androgens at all, work out what secondary sex characteristics are left to develop by default."
+  hint="Use the testicular-regulation discussion's paragraph on what testosterone produces."
 >}}
 Patients would appear phenotypically female.
 Patients would appear phenotypically male with underdeveloped secondary sex characteristics.
@@ -306,7 +306,7 @@ Patients would appear phenotypically male, but cannot produce sperm.
 Patients would express both male and female secondary sex characteristics.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Name and describe a function of one hormone produced by the anterior pituitary and one hormone produced by the posterior pituitary." hint="The section names one anterior-pituitary hormone that acts on the mammary glands and one posterior-pituitary hormone that acts on the uterus." >}}
+{{< selfcheck question="Name and describe a function of one hormone produced by the anterior pituitary and one hormone produced by the posterior pituitary." hint="Look at the two paragraphs that follow the ovarian-hormone figure." >}}
 In addition to producing FSH and LH, the anterior pituitary also produces the hormone prolactin (PRL) in females. Prolactin stimulates the production of milk by the mammary glands following childbirth. Prolactin levels are regulated by the hypothalamic hormones prolactin-releasing hormone (PRH) and prolactin-inhibiting hormone (PIH) which is now known to be dopamine. PRH stimulates the release of prolactin and PIH inhibits it. The posterior pituitary releases the hormone oxytocin, which stimulates contractions during childbirth. The uterine smooth muscles are not very sensitive to oxytocin until late in pregnancy when the number of oxytocin receptors in the uterus peaks. Stretching of tissues in the uterus and vagina stimulates oxytocin release in childbirth. Contractions increase in intensity as blood levels of oxytocin rise until the birth is complete.
 ===CHECKS===
 the anterior pituitary produces prolactin (PRL), which stimulates milk production by the mammary glands
@@ -326,23 +326,29 @@ contractions increase in intensity as blood levels of oxytocin rise until the bi
   question="A group of steroid hormones, including estradiol, that are produced by the ovaries and control the maturation of the ova is called ________."
   answer="estrogens"
   accept="oestrogen"
-  hint="Low levels of this hormone group have been connected to osteoporosis, while high levels correlate with increased cancer risk."
+  hint="Look at the second paragraph of the Summary."
 >}}
 
 {{< textin
-  question="The hormone produced by the anterior pituitary that stimulates milk production is called ________."
-  answer="prolactin"
-  accept="PRL|prolactin (PRL)"
-  hint="This anterior-pituitary hormone's release is inhibited by dopamine, acting here as a hypothalamic inhibiting hormone."
+  question="FSH stimulates the maturation of sperm cells in testes and is inhibited by the hormone ________, while LH stimulates the production of the androgen testosterone."
+  answer="inhibin"
+  hint="Look at the first paragraph under the testicular-regulation heading."
 >}}
 
 {{< textin
-  question="The hormone released by the posterior pituitary to stimulate uterine contractions during childbirth and milk let-down in the mammary glands is called ________."
-  answer="oxytocin"
-  hint="As blood levels of this hormone rise during labor, contractions intensify via a positive feedback mechanism until the birth is complete."
+  question="Because it stimulates androgen production in the testes, LH is also called ________."
+  answer="interstitial cell-stimulating hormone"
+  accept="ICSH"
+  hint="Look at the first paragraph under the testicular-regulation heading."
 >}}
 
 ### Describe how hormones regulate metabolism
+
+{{< textin
+  question="The hormone produced by the alpha cells of the pancreas in response to low blood sugar that functions to raise blood sugar levels is called ________."
+  answer="glucagon"
+  hint="Look at the paragraph that follows the diabetes-symptoms figure."
+>}}
 
 {{< multiplechoice
   question="What hormone is produced by beta cells of the pancreas?"
@@ -355,51 +361,45 @@ insulin
 T₄
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe one direct action of growth hormone (GH)." hint="The section describes two direct actions: one on adipocytes and one on the liver's glycogen stores." >}}
+{{< selfcheck question="Describe one direct action of growth hormone (GH)." hint="Look at the first paragraph of the section's growth discussion." >}}
 Growth hormone has direct and indirect mechanisms of action. The direct actions of GH include: 1) stimulation of fat breakdown (lipolysis) and release into the blood by adipocytes. This results in a switch by most tissues from utilizing glucose as an energy source to utilizing fatty acids. This process is called a glucose-sparing effect. 2) In the liver, GH stimulates glycogen breakdown, which is then released into the blood as glucose. Blood glucose levels increase as most tissues are utilizing fatty acids instead of glucose for their energy needs. The GH mediated increase in blood glucose levels is called a diabetogenic effect because it is similar to the high blood glucose levels seen in diabetes mellitus.
 ===CHECKS===
-GH stimulates fat breakdown (lipolysis) and release by adipocytes, called the glucose-sparing effect
-tissues switch from using glucose to using fatty acids as an energy source
-GH stimulates glycogen breakdown in the liver, which is released into the blood as glucose
-this glucose-level increase is called the diabetogenic effect because it resembles diabetes mellitus
+stimulation of fat breakdown (lipolysis) and release into the blood by adipocytes
+a switch by most tissues from utilizing glucose as an energy source to utilizing fatty acids, called a glucose-sparing effect
+in the liver, GH stimulates glycogen breakdown, which is then released into the blood as glucose
+the GH mediated increase in blood glucose levels is called a diabetogenic effect
 {{< /selfcheck >}}
-
-{{< textin
-  question="The hormone produced by the alpha cells of the pancreas in response to low blood sugar that functions to raise blood sugar levels is called ________."
-  answer="glucagon"
-  hint="This hormone stimulates the breakdown of glycogen into glucose, the opposite effect of insulin."
->}}
-
-{{< textin
-  question="A high blood sugar level is called ________."
-  answer="hyperglycemia"
-  accept="hyperglycaemia"
-  hint="This is the condition the kidneys struggle to fully recover glucose from, so some is lost in the urine."
->}}
-
-{{< textin
-  question="A low blood sugar level is called ________."
-  answer="hypoglycemia"
-  accept="hypoglycaemia"
-  hint="Oversecretion of insulin can cause this condition, which can lead to muscle weakness or, if untreated, unconsciousness."
->}}
 
 {{< textin
   question="The breakdown of glycogen into glucose is called ________."
   answer="glycogenolysis"
-  hint="Glucagon triggers this process in skeletal muscle cells and liver cells when blood glucose declines."
+  hint="Look at the paragraph that follows the diabetes-symptoms figure."
 >}}
 
 {{< textin
   question="The synthesis of glucose from amino acids is called ________."
   answer="gluconeogenesis"
-  hint="Glucagon stimulates the liver to absorb amino acids from the blood and convert them by this process."
+  hint="Look at the paragraph that follows the diabetes-symptoms figure."
 >}}
 
 {{< textin
   question="The disorder caused by low levels of insulin activity is called ________."
   answer="diabetes mellitus"
-  hint="This disorder's main symptoms include excessive thirst and hunger, blurred vision, and glucose appearing in the urine."
+  hint="Look at the paragraph that follows the Link to Learning in the blood-glucose discussion."
+>}}
+
+{{< textin
+  question="The body's ________ is controlled by the thyroid hormones thyroxine (T₄) and triiodothyronine (T₃)."
+  answer="basal metabolic rate"
+  accept="metabolic rate"
+  hint="Look at the third paragraph of the Summary."
+>}}
+
+{{< textin
+  question="Enlargement of the thyroid gland caused by insufficient dietary iodine levels is called ________."
+  answer="goiter"
+  accept="goitre"
+  hint="Look at the third paragraph of the section's thyroid-hormone discussion."
 >}}
 
 ### Explain the role of hormones in different diseases
@@ -408,13 +408,13 @@ this glucose-level increase is called the diabetogenic effect because it resembl
   question="The hormone released in response to low blood Ca²⁺ levels that raises them by targeting the skeleton, the kidneys, and the intestine is called ________."
   answer="PTH"
   accept="parathyroid hormone"
-  hint="This hormone triggers the formation of calcitriol, an active form of vitamin D, to increase intestinal calcium absorption."
+  hint="Look at the second paragraph of the section's blood-calcium discussion."
 >}}
 
 {{< multiplechoice
   question="When blood calcium levels are low, PTH stimulates:"
   answer="osteoclasts."
-  hint="Reread the sentence in the section's blood-calcium discussion on what PTH does in the skeleton."
+  hint="Reread the section's paragraph on how PTH raises blood calcium."
 >}}
 excretion of calcium from the kidneys.
 excretion of calcium from the intestines.
@@ -422,7 +422,7 @@ osteoblasts.
 osteoclasts.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Researchers have recently demonstrated that stressed people are more susceptible to contracting the common cold than people who are not stressed. What kind of stress must the infected patients be experiencing, and why does it make them more susceptible to the virus?" hint="One kind of stress response mobilizes long-term energy reserves and also suppresses the immune system — think about which one." >}}
+{{< selfcheck question="Researchers have recently demonstrated that stressed people are more susceptible to contracting the common cold than people who are not stressed. What kind of stress must the infected patients be experiencing, and why does it make them more susceptible to the virus?" hint="Look at the last subsection of the section's stress discussion." >}}
 The stressed patients that catch a cold must be chronically (long-term) stressed. Long-term stress results in the production of glucocorticoids, such as cortisol. These hormones inhibit the function of the immune system, which makes people more susceptible to infectious diseases.
 ===CHECKS===
 the patients must be chronically (long-term) stressed
@@ -434,41 +434,42 @@ this makes people more susceptible to infectious diseases
 {{< textin
   question="The condition caused by underproduction of GH in children, resulting in abnormally short stature with normal body proportions, is called ________."
   answer="pituitary dwarfism"
-  hint="This condition most often leaves affected individuals less than 4 feet (122 cm) tall."
+  accept="dwarfism"
+  hint="Look at the last paragraph of the section's growth discussion."
 >}}
 
 {{< textin
   question="The condition caused by overproduction of GH in children, causing excessive growth, is called ________."
   answer="gigantism"
-  hint="Some documented cases of this childhood condition have reached heights of over eight feet."
+  hint="Look at the last paragraph of the section's growth discussion."
 >}}
 
 {{< textin
   question="The condition caused by overproduction of GH in adults, resulting in enlargement of bones in the face, hands, and feet, is called ________."
   answer="acromegaly"
-  hint="Unlike the childhood overproduction condition, the bones affected here are ones still capable of growth in an adult."
+  hint="Look at the last paragraph of the section's growth discussion."
 >}}
 
 {{< textin
   question="The disorder caused by the hypersecretion of glucocorticoids, characterized by a shifting of fat storage to the face and neck, is called ________."
   answer="Cushing's disease"
   accept="Cushing disease"
-  hint="This disorder is the opposite of the one caused by corticosteroid hyposecretion."
+  hint="Look at the last paragraph before the Summary."
 >}}
 
 {{< textin
   question="The disorder caused by the hyposecretion of corticosteroids, which may result in bronzing of the skin and low electrolyte levels, is called ________."
   answer="Addison's disease"
   accept="Addison disease"
-  hint="This disorder is the opposite of the one caused by glucocorticoid hypersecretion."
+  hint="Look at the last paragraph before the Summary."
 >}}
 
 {{< textin
   question="Overactivity of the thyroid gland is called ________."
   answer="hyperthyroidism"
-  hint="This condition's effects include weight loss, excess heat production, sweating, and an increased heart rate; Graves' disease is one example."
+  hint="Look at the last paragraph of the section's thyroid-hormone discussion."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 37.3: Regulation of Body Processes](https://openstax.org/books/biology-2e/pages/37-3-regulation-of-body-processes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the reproductive-hormone figure's long description quotes the artwork's "hypothalamus" with the standard spelling although the artwork prints "hypothalmus"; the norepinephrine Key terms entry ends at "short-term stress" where the source glossary runs on into a stray fragment, "stress hormone production by the gonads", that belongs to no sentence; figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_37_03_01b, Figure_37_03_04, and Figure_37_03_05 are hand-drawn flow charts and body diagrams, not captured photographs; Figure_B37_03_02, Figure_B37_03_05, and Figure_B37_03_06 were already correctly guessed as diagrams and are confirmed here) — only Figure_37_03_02 (the Jason Giambi photograph) is a true photo; a longdesc added to every diagram whose meaning is not carried by its caption alone — the renin-angiotensin-aldosterone pathway, the ovarian hormone-feedback illustration, the diabetes-symptom body map, the insulin/glucagon cycle, the parathyroid-hormone pathway, and the growth-hormone pathway — transcribing each drawing's own printed labels and counting its boxes, arrows, and leader lines; letter-spaced text-to-speech alts in the source CNXML (e.g., "A D H," "P T H," "F S H and L H," "upper case G lower case n...") rewritten as plain prose alts, with the walk-through detail moved to each figure's longdesc; the growth-hormone pathway's longdesc corrects an artwork typo — the image itself prints "GHIN (GH-inhibiting hormone)," while the module's own glossary and prose consistently name this hormone "growth hormone-inhibiting hormone (GHIH)", with the artwork label left as printed; a corrupted-order phrase in the pinned CNXML — "describing the **flight**-or-flight response" in the second Link to Learning note, where every other instance in this section (including the note titled "Fight-or-Flight Response" two paragraphs above it) reads "fight-or-flight" — corrected to "fight-or-flight"; the Visual Connection question's stem ("Which of the following **statement** about these two conditions is true?", identical in both the body note and the exercise copy) corrected to "statements," a grammar fix disclosed here since it is retained exercise text; in-text pointers to figures ("the figure below," "Figure 37.9," etc.) replaced with "shown below," "illustrated below," or "below," since Hugo does not number figures; the note wrapping the pancreatic-tumor/type-I-diabetes Visual Connection rendered as its figure followed by a multiple choice, kept in the body in the Metabolism section — the note copy and the `<exercise>` copy print identical question and option wording (both quote "Which of the following statement..." and the same four lettered options), so no adjudication was needed, and the source's own key (B, "will both cause hyperglycemia") is kept as printed; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the growth-hormone self-check's model answer trims the source solution's opening two sentences ("Hormonal regulation is required for the growth and replication of most cells in the body. Growth hormone (GH), produced by the anterior pituitary, accelerates the rate of protein synthesis, particularly in skeletal muscles and bones."), which duplicate the Growth section's own opening paragraph word for word; twenty-two key-term recall (`textin`) items added from the glossary, a representative subset of the section's forty-seven glossary terms rather than all of them (insulin is additionally tested by a Review Question multiple choice; the rest appear only in the Key terms list and the prose), the PTH prompt drawn from the body's blood-calcium sentence because the glossary's "hormone produced by the parathyroid glands" spells out the accepted "parathyroid hormone," and placed first in its group, ahead of the PTH Review Question whose stem names it; the section's five Review Questions, three Critical Thinking Questions, and one Visual Connection are all used at least once across the body and Practice block.</small>
+<small>This section is adapted from [Biology 2e, Section 37.3: Regulation of Body Processes](https://openstax.org/books/biology-2e/pages/37-3-regulation-of-body-processes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the reproductive-hormone figure's long description quotes the artwork's "hypothalamus" with the standard spelling although the artwork prints "hypothalmus"; the norepinephrine Key terms entry ends at "short-term stress" where the source glossary runs on into a stray fragment, "stress hormone production by the gonads", that belongs to no sentence; figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_37_03_01b, Figure_37_03_04, and Figure_37_03_05 are hand-drawn flow charts and body diagrams, not captured photographs; Figure_B37_03_02, Figure_B37_03_05, and Figure_B37_03_06 were already correctly guessed as diagrams and are confirmed here) — only Figure_37_03_02 (the Jason Giambi photograph) is a true photo; a longdesc added to every diagram whose meaning is not carried by its caption alone — the renin-angiotensin-aldosterone pathway, the ovarian hormone-feedback illustration, the diabetes-symptom body map, the insulin/glucagon cycle, the parathyroid-hormone pathway, and the growth-hormone pathway — transcribing each drawing's own printed labels and counting its boxes, arrows, and leader lines; letter-spaced text-to-speech alts in the source CNXML (e.g., "A D H," "P T H," "F S H and L H," "upper case G lower case n...") rewritten as plain prose alts, with the walk-through detail moved to each figure's longdesc; the growth-hormone pathway's longdesc corrects an artwork typo — the image itself prints "GHIN (GH-inhibiting hormone)," while the module's own glossary and prose consistently name this hormone "growth hormone-inhibiting hormone (GHIH)", with the artwork label left as printed; a corrupted-order phrase in the pinned CNXML — "describing the **flight**-or-flight response" in the second Link to Learning note, where every other instance in this section (including the note titled "Fight-or-Flight Response" two paragraphs above it) reads "fight-or-flight" — corrected to "fight-or-flight"; the Visual Connection question's stem ("Which of the following **statement** about these two conditions is true?", identical in both the body note and the exercise copy) corrected to "statements," a grammar fix disclosed here since it is retained exercise text; in-text pointers to figures ("the figure below," "Figure 37.9," etc.) replaced with "shown below," "illustrated below," or "below," since Hugo does not number figures; the note wrapping the pancreatic-tumor/type-I-diabetes Visual Connection rendered as its figure followed by a multiple choice, kept in the body in the Metabolism section — the note copy and the `<exercise>` copy print identical question and option wording (both quote "Which of the following statement..." and the same four lettered options), so no adjudication was needed, and the source's own key (B, "will both cause hyperglycemia") is kept as printed; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the growth-hormone self-check's model answer trims the source solution's opening two sentences ("Hormonal regulation is required for the growth and replication of most cells in the body. Growth hormone (GH), produced by the anterior pituitary, accelerates the rate of protein synthesis, particularly in skeletal muscles and bones."), which duplicate the Growth section's own opening paragraph word for word; nineteen key-term recall (`textin`) items added, eighteen from glossary definitions (a subset of the section's forty-seven glossary terms) and the PTH prompt drawn from the body's blood-calcium sentence because the glossary's "hormone produced by the parathyroid glands" spells out the accepted "parathyroid hormone," placed first in its group, ahead of the PTH Review Question whose stem names it; three fill-in-the-blank items added, two from Summary sentences (inhibin; the basal metabolic rate) and one from the testicular-regulation paragraph (interstitial cell-stimulating hormone); the Review Questions and Critical Thinking Questions are placed under the objectives they test, so the fifth Review Question comes before the third and fourth, and the Critical Thinking Questions are interleaved with them; the section's five Review Questions, three Critical Thinking Questions, and one Visual Connection are all used at least once across the body and Practice block.</small>

@@ -93,7 +93,7 @@ Regarding olfaction, there are many thousands of odorants, but humans detect onl
 ## Key terms
 
 - **bipolar neuron** — neuron with two processes extending from the cell body, typically in opposite directions.
-- **glomerulus** — in the olfactory bulb, one of the two neural clusters that receives signals from one type of olfactory receptor.
+- **glomerulus** — in the olfactory bulb, one of the neural clusters that each receives signals from one type of olfactory receptor.
 - **gustation** — sense of taste.
 - **odorant** — airborne molecule that stimulates an olfactory receptor.
 - **olfaction** — sense of smell.
@@ -110,23 +110,12 @@ Regarding olfaction, there are many thousands of odorants, but humans detect onl
 
 ### Explain in what way smell and taste stimuli differ from other sensory stimuli
 
-{{< multiplechoice
-  question="All sensory signals except _____ travel to the _____ in the brain before the cerebral cortex."
-  answer="olfaction; thalamus"
-  hint="Recall which of the special senses sends its signal directly to the cerebral cortex, bypassing the structure that relays every other sense first."
+{{< textin
+  question="An airborne molecule that stimulates an olfactory receptor is called an ________."
+  answer="odorant"
+  accept="odor molecule|odour molecule"
+  hint="See the first paragraph of Reception and Transduction."
 >}}
-vision; thalamus
-olfaction; thalamus
-vision; cranial nerves
-olfaction; cranial nerves
-{{< /multiplechoice >}}
-
-{{< selfcheck question="From the perspective of the recipient of the signal, in what ways do pheromones differ from other odorants?" hint="Consider whether the recipient is aware of receiving the signal, and whether the response goes beyond simply smelling something." >}}
-Pheromones may not be consciously perceived, and pheromones can have direct physiological and behavioral effects on their recipients.
-===CHECKS===
-pheromones may not be consciously perceived
-pheromones can have direct physiological and behavioral effects on their recipients
-{{< /selfcheck >}}
 
 {{< textin
   question="The sense of taste is also called ________."
@@ -134,18 +123,30 @@ pheromones can have direct physiological and behavioral effects on their recipie
   hint="Reread the opening sentence of this section, on taste and smell."
 >}}
 
-{{< textin
-  question="The sense of smell is also called ________."
-  answer="olfaction"
-  hint="Reread the opening sentence of this section, on taste and smell."
+{{< multiplechoice
+  question="All sensory signals except _____ travel to the _____ in the brain before the cerebral cortex."
+  answer="olfaction; thalamus"
+  hint="See the last sentence of the paragraph on bipolar olfactory neurons, under Reception and Transduction."
 >}}
+vision; thalamus
+olfaction; thalamus
+vision; cranial nerves
+olfaction; cranial nerves
+{{< /multiplechoice >}}
+
+{{< selfcheck question="From the perspective of the recipient of the signal, in what ways do pheromones differ from other odorants?" hint="See the first paragraph of the Pheromones box." >}}
+Pheromones may not be consciously perceived, and pheromones can have direct physiological and behavioral effects on their recipients.
+===CHECKS===
+pheromones may not be consciously perceived
+pheromones can have direct physiological and behavioral effects on their recipients
+{{< /selfcheck >}}
 
 ### Identify the five primary tastes that can be distinguished by humans
 
 {{< multiplechoice
   question="Which of the following has the fewest taste receptors?"
   answer="filiform papillae"
-  hint="This is the papilla type the section describes as purely tactile, providing friction rather than sensing anything chemically."
+  hint="See the paragraphs on the types of papillae, under Taste."
 >}}
 fungiform papillae
 circumvallate papillae
@@ -167,7 +168,7 @@ It depends on the spot on the tongue.
 {{< multiplechoice
   question="Salty foods activate the taste cells by _____."
   answer="exciting the taste cell directly"
-  hint="Reread how sodium ions from a salty tastant interact with the taste neuron, and compare it to how sour tastants — which involve a different ion — are described as working instead."
+  hint="See the paragraph on how each of the five tastes is transduced, under Taste."
 >}}
 exciting the taste cell directly
 causing hydrogen ions to enter the cell
@@ -178,7 +179,7 @@ binding directly to the receptors
 {{< multiplechoice
   question="How is the ability to recognize the umami taste an evolutionary advantage?"
   answer="Umami identifies foods that might contain essential amino acids."
-  hint="Reread what molecule the taste of umami is attributed to, and what class of nutrient that molecule belongs to."
+  hint="See the paragraph that introduces umami, under Tastes and Odors."
 >}}
 Umami identifies healthy foods that are low in salt and sugar.
 Umami enhances the flavor of bland foods.
@@ -186,7 +187,7 @@ Umami identifies foods that might contain essential amino acids.
 Umami identifies foods that help maintain electrolyte balance.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What might be the effect on an animal of not being able to perceive taste?" hint="Think about what taste normally helps an animal tell apart — spoiled versus safe food, and nutrient-rich versus empty-calorie food." >}}
+{{< selfcheck question="What might be the effect on an animal of not being able to perceive taste?" hint="See the opening paragraph of this section, on the value of a sense of taste." >}}
 The animal might not be able to recognize the differences in food sources and thus might not be able to discriminate between spoiled food and safe food or between foods that contain necessary nutrients, such as proteins, and foods that do not.
 ===CHECKS===
 might not be able to recognize the differences in food sources
@@ -196,7 +197,7 @@ or between foods that contain necessary nutrients, such as proteins, and foods t
 
 ### Explain in anatomical terms why a dog's sense of smell is more acute than a human's
 
-{{< selfcheck question="A few recent cancer detection studies have used trained dogs to detect lung cancer in urine samples. What is the hypothesis behind this study? Why are dogs a better choice of detectors in this study than humans?" hint="Think about what these dogs are trained to detect chemically, and what anatomical count from this section explains their advantage over people." >}}
+{{< selfcheck question="A few recent cancer detection studies have used trained dogs to detect lung cancer in urine samples. What is the hypothesis behind this study? Why are dogs a better choice of detectors in this study than humans?" hint="See the first paragraph of Reception and Transduction." >}}
 These studies rely on the dogs' olfactory senses. The hypothesis behind the study is that the dogs are capable of detecting volatile compounds (evaporating scent molecules) that are only produced in people with cancer. The dogs are a better choice because their sense of smell is more sensitive due to the increased number of olfactory receptors.
 ===CHECKS===
 these studies rely on the dogs' olfactory senses
@@ -208,22 +209,22 @@ the dogs are a better choice because their sense of smell is more sensitive due 
   question="A neuron with two processes extending from the cell body, typically in opposite directions, is called a ________."
   answer="bipolar neuron"
   accept="bipolar cell"
-  hint="Every olfactory sensory neuron in the nose is built this way, with a single dendrite buried in the epithelium and an axon leading to the olfactory bulb."
+  hint="See the second paragraph of Reception and Transduction."
 >}}
 
 {{< textin
   question="A dendrite of a specialized neuron that responds to specific inhaled molecules is called an ________."
   answer="olfactory receptor"
-  hint="Humans have about 12 million of these; bloodhounds have about 4 billion."
+  hint="See the first paragraph of Reception and Transduction."
 >}}
 
 {{< textin
-  question="The specialized tissue in the back of the nasal cavity where olfactory receptors are located is called the ________."
+  question="The mucosa at the back of the nasal cavity is called the ________."
   answer="olfactory epithelium"
   accept="olfactory epithelia"
-  hint="This tissue spans about 5 cm² in humans but is many times larger in bloodhounds."
+  hint="See the first sentence of Reception and Transduction."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 36.3: Taste and Smell](https://openstax.org/books/biology-2e/pages/36-3-taste-and-smell) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_36_03_01, a bipolar-neuron schematic paired with a labeled anatomical illustration, and Figure_36_03_03, a labeled tongue diagram paired with a micrograph — neither a captured photograph on its own); alts rewritten as plain visual descriptions in place of the manifest's bare source alts; a longdesc added to every diagram whose meaning is not carried by its one-line caption — the bipolar-neuron/olfactory-anatomy figure, the papillae-location figure, and the taste-bud composite figure — transcribing each drawing's labels and leader lines in reading order and counting its panels and arrows; in-text pointers to figures ("as illustrated in", specific figure numbers) replaced with "illustrated below," "shown below," or "above," since Hugo does not number figures; the Pheromones note rendered as an Evolution Connection callout with its bold name and italic title, its three paragraphs and figure kept inside the box as printed; the Link to Learning note rendered as a callout with descriptive link text in place of the source's bare "animation" anchor, the external URL kept as printed; the end-of-section Review Questions and Critical Thinking Questions (drawn from the chapter's back-of-book exercise sets, which key to this section) adapted into the closing interactive Practice block (multiple choice and self-check respectively), the fourth Review Question (the sense whose signals skip the thalamus) placed first, in the smell-and-taste-stimuli objective's group, ahead of the other four, which serve the primary-tastes objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (gustation, olfaction, olfactory receptor, olfactory epithelium, bipolar neuron); ion notation set as Unicode superscripts (Na⁺, H⁺) and the area unit as a Unicode superscript (5 cm²) per house notation; the source's "detected by more than more receptor" corrected to "more than one receptor"; the Summary's "Like taste receptors, olfactory receptors are each responsive to only one odorant" (`fs-idp132349712`) corrected, with a visible Source note, to the body's own account that some receptors detect more than one odor and many odors are detected by more than one receptor.</small>
+<small>This section is adapted from [Biology 2e, Section 36.3: Taste and Smell](https://openstax.org/books/biology-2e/pages/36-3-taste-and-smell) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_36_03_01, a bipolar-neuron schematic paired with a labeled anatomical illustration, and Figure_36_03_03, a labeled tongue diagram paired with a micrograph — neither a captured photograph on its own); alts rewritten as plain visual descriptions in place of the manifest's bare source alts; a longdesc added to every diagram whose meaning is not carried by its one-line caption — the bipolar-neuron/olfactory-anatomy figure, the papillae-location figure, and the taste-bud composite figure — transcribing each drawing's labels and leader lines in reading order and counting its panels and arrows; in-text pointers to figures ("as illustrated in", specific figure numbers) replaced with "illustrated below," "shown below," or "above," since Hugo does not number figures; the Pheromones note rendered as an Evolution Connection callout with its bold name and italic title, its three paragraphs and figure kept inside the box as printed; the Link to Learning note rendered as a callout with descriptive link text in place of the source's bare "animation" anchor, the external URL kept as printed; the end-of-section Review Questions and Critical Thinking Questions (drawn from the chapter's back-of-book exercise sets, which key to this section) adapted into the closing interactive Practice block (multiple choice and self-check respectively), the fourth Review Question (the sense whose signals skip the thalamus) placed ahead of the other four, in the smell-and-taste-stimuli objective's group, which serve the primary-tastes objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary and the body (odorant, gustation, olfactory receptor, olfactory epithelium, bipolar neuron); ion notation set as Unicode superscripts (Na⁺, H⁺) and the area unit as a Unicode superscript (5 cm²) per house notation; the source's "detected by more than more receptor" corrected to "more than one receptor"; the Summary's "Like taste receptors, olfactory receptors are each responsive to only one odorant" (`fs-idp132349712`) corrected, with a visible Source note, to the body's own account that some receptors detect more than one odor and many odors are detected by more than one receptor; the glossary's "one of the two neural clusters" for glomerulus reads "one of the neural clusters," since the body says the olfactory bulb is composed of glomeruli, each specific to one receptor type.</small>

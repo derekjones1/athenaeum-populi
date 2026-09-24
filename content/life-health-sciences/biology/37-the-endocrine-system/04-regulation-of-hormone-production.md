@@ -22,7 +22,7 @@ Hormone production and release are primarily controlled by negative feedback. In
 The anterior pituitary stimulates the thyroid gland to release thyroid hormones T₃ and T₄. Increasing levels of these hormones in the blood results in feedback to the hypothalamus and anterior pituitary to inhibit further signaling to the thyroid gland. (credit: modification of work by Mikael Häggström)
 {{< /mediafigure >}}
 
-{{< selfcheck question="Hyperthyroidism is a condition in which the thyroid gland is overactive. Hypothyroidism is a condition in which the thyroid gland is underactive. Which of the conditions are the following two patients most likely to have? Patient A has symptoms including weight gain, cold sensitivity, low heart rate, and fatigue. Patient B has symptoms including weight loss, profuse sweating, increased heart rate, and difficulty sleeping." hint="Compare each patient's symptoms to what speeding up versus slowing down the body's metabolism would produce." >}}
+{{< selfcheck question="Hyperthyroidism is a condition in which the thyroid gland is overactive. Hypothyroidism is a condition in which the thyroid gland is underactive. Which of the conditions are the following two patients most likely to have? Patient A has symptoms including weight gain, cold sensitivity, low heart rate, and fatigue. Patient B has symptoms including weight loss, profuse sweating, increased heart rate, and difficulty sleeping." hint="Look at the effects labeled inside the figure's wide blue arrow." >}}
 Patient A has symptoms associated with decreased metabolism, and may be suffering from hypothyroidism. Patient B has symptoms associated with increased metabolism, and may be suffering from hyperthyroidism.
 ===CHECKS===
 Patient A has symptoms associated with decreased metabolism, and may be suffering from hypothyroidism
@@ -55,10 +55,16 @@ Hormone levels are primarily controlled through negative feedback, in which risi
 
 ### Explain how hormone production is regulated
 
+{{< textin
+  question="Under the primary mechanism that controls hormone production and release, the concentration of hormones in blood is maintained within a ________."
+  answer="narrow range"
+  hint="See the section's opening paragraph."
+>}}
+
 {{< multiplechoice
   question="Which mechanism of hormonal stimulation would be affected if signaling and hormone release from the hypothalamus was blocked?"
   answer="hormonal and neural stimuli"
-  hint="Read each of the section's three stimulus subsections and ask, for each, whether its example depends on a signal from the hypothalamus."
+  hint="Reread the section's three stimulus subsections."
 >}}
 humoral and hormonal stimuli
 hormonal and neural stimuli
@@ -66,7 +72,7 @@ neural and humoral stimuli
 hormonal and negative stimuli
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How is hormone production and release primarily controlled?" hint="This section names its one overarching control mechanism in its very first sentence — think about what happens once a hormone's blood concentration climbs high enough." >}}
+{{< selfcheck question="How is hormone production and release primarily controlled?" hint="See the section's opening paragraph." >}}
 Hormone production and release are primarily controlled by negative feedback. In negative feedback systems, a stimulus causes the release of a substance whose effects then inhibit further release. In this way, the concentration of hormones in blood is maintained within a narrow range. For example, the anterior pituitary signals the thyroid to release thyroid hormones. Increasing levels of these hormones in the blood then feed back to the hypothalamus and anterior pituitary to inhibit further signaling to the thyroid gland.
 ===CHECKS===
 hormone production and release are primarily controlled by negative feedback
@@ -75,13 +81,13 @@ the anterior pituitary signals the thyroid to release thyroid hormones
 increasing levels of these hormones in the blood feed back to the hypothalamus and anterior pituitary to inhibit further signaling to the thyroid gland
 {{< /selfcheck >}}
 
-{{< selfcheck question="Oral contraceptive pills work by delivering daily synthetic progestins to an ovary-based reproductive system. Describe why this is an effective method of birth control." hint="Trace what progesterone normally does to the hypothalamus, and think about what happens to that inhibition if progesterone levels are never allowed to fall." >}}
+{{< selfcheck question="Oral contraceptive pills work by delivering daily synthetic progestins to an ovary-based reproductive system. Describe why this is an effective method of birth control." hint="The reproductive-hormone passage of the previous section, Regulation of Body Processes, describes the feedback loop involved." >}}
 Progestins, including progesterone, are hormones that help to control the fertility cycle in women. When progesterone is released, it inhibits the production of GnRH in the hypothalamus. Without GnRH, FSH and LH are not produced in the pituitary gland, so the ovaries are not signaled to mature and release an ovum. If progesterone is delivered to the body every day, it will continuously inhibit this cycle.
 ===CHECKS===
-progestins inhibit the production of GnRH in the hypothalamus
+when progesterone is released, it inhibits the production of GnRH in the hypothalamus
 without GnRH, FSH and LH are not produced in the pituitary gland
 the ovaries are not signaled to mature and release an ovum
-delivering progesterone every day continuously inhibits this cycle
+if progesterone is delivered to the body every day, it will continuously inhibit this cycle
 {{< /selfcheck >}}
 
 ### Discuss the different stimuli that control hormone levels in the body
@@ -109,27 +115,13 @@ Insulin is produced in response to a rise in blood glucose in the brain.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The release of a hormone in response to another hormone is called ________."
-  answer="hormonal stimuli"
-  accept="hormonal stimulus"
-  hint="This is the mechanism behind the hypothalamus-to-pituitary-to-thyroid cascade described in this section, where each gland's hormone triggers the next gland's release."
+  question="The term \"humoral\" is derived from the term \"humor,\" which refers to ________ such as blood."
+  answer="bodily fluids"
+  accept="body fluids"
+  hint="See the first sentence of the first stimulus subsection."
 >}}
 
-{{< textin
-  question="The control of hormone release in response to changes in extracellular fluids such as blood or the ion concentration in the blood is called ________."
-  answer="humoral stimuli"
-  accept="humoral stimulus"
-  hint="Look at the first of the section's three stimulus subsections."
->}}
-
-{{< textin
-  question="Stimulation of endocrine glands by the nervous system is called ________."
-  answer="neural stimuli"
-  accept="neural stimulus"
-  hint="This is the mechanism the sympathetic nervous system uses to trigger the adrenal medulla's release of epinephrine and norepinephrine during a short-term stress response."
->}}
-
-{{< selfcheck question="Compare and contrast hormonal and humoral stimuli." hint="One of these mechanisms responds directly to a change in blood chemistry; the other responds to an incoming hormone from a different gland — trace the pancreas example for one and the hypothalamus-to-pituitary-to-thyroid chain for the other." >}}
+{{< selfcheck question="Compare and contrast hormonal and humoral stimuli." hint="See the first two stimulus subsections." >}}
 The term humoral is derived from the term humor, which refers to bodily fluids such as blood. Humoral stimuli refer to the control of hormone release in response to changes in extracellular fluids such as blood or the ion concentration in the blood. For example, a rise in blood glucose levels triggers the pancreatic release of insulin. Insulin causes blood glucose levels to drop, which signals the pancreas to stop producing insulin in a negative feedback loop.
 
 Hormonal stimuli refer to the release of a hormone in response to another hormone. A number of endocrine glands release hormones when stimulated by hormones released by other endocrine organs. For example, the hypothalamus produces hormones that stimulate the anterior pituitary. The anterior pituitary in turn releases hormones that regulate hormone production by other endocrine glands. For example, the anterior pituitary releases thyroid-stimulating hormone, which stimulates the thyroid gland to produce the hormones T₃ and T₄. As blood concentrations of T₃ and T₄ rise they inhibit both the pituitary and the hypothalamus in a negative feedback loop.
@@ -142,4 +134,4 @@ the hypothalamus stimulates the anterior pituitary, which releases hormones that
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 37.4: Regulation of Hormone Production](https://openstax.org/books/biology-2e/pages/37-4-regulation-of-hormone-production) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP; its manifest alt text — a letter-spaced screen-reader spelling ("T S H," "T 3 and T 4") — rewritten as a plain description of what the diagram shows, with the full step-by-step walkthrough of its arrows and labels moved into a longdesc; its kind confirmed "diagram" against the manifest's guess (a hand-drawn line illustration, not a photograph — not re-kinded); T₃ and T₄ set with Unicode subscripts throughout, replacing the CNXML's `<sub>` markup; the note wrapping the thyroid Visual Connection rendered as its figure followed immediately by a self-check in the body — the note copy and the `<exercise>` copy of the question print identical wording for both patients, so no adjudication was needed; the in-text pointer to the figure ("Figure 37.14") replaced with "as illustrated below," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise in the module; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items added covering the section's complete three-term glossary, each with an added singular-form `accept` ("humoral stimulus" as printed in the section; "hormonal stimulus" and "neural stimulus" as the natural singular of the glossary's plural headword).</small>
+<small>This section is adapted from [Biology 2e, Section 37.4: Regulation of Hormone Production](https://openstax.org/books/biology-2e/pages/37-4-regulation-of-hormone-production) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP; its manifest alt text — a letter-spaced screen-reader spelling ("T S H," "T 3 and T 4") — rewritten as a plain description of what the diagram shows, with the full step-by-step walkthrough of its arrows and labels moved into a longdesc; its kind confirmed "diagram" against the manifest's guess (a hand-drawn line illustration, not a photograph — not re-kinded); T₃ and T₄ set with Unicode subscripts throughout, replacing the CNXML's `<sub>` markup; the note wrapping the thyroid Visual Connection rendered as its figure followed immediately by a self-check in the body — the note copy and the `<exercise>` copy of the question print identical wording for both patients, so no adjudication was needed; the in-text pointer to the figure ("Figure 37.14") replaced with "as illustrated below," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise in the module, each placed under the objective it tests, so the Review Questions run in the order 2, 1, 3 of the source's numbering and the Critical Thinking Questions in the order 1, 3, 2; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; no recall items for the three glossary terms, which the source's Review Questions and Critical Thinking Questions already key or ask, so they stay Key-terms entries; in their place, two cloze items from the section's own sentences ("narrow range" from the opening paragraph and "bodily fluids" from the Humoral Stimuli subsection's opening sentence); the oral-contraceptive self-check's first rubric checkpoint follows the model answer's "when progesterone is released".</small>

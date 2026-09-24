@@ -29,7 +29,7 @@ Lipid-derived (soluble) hormones such as steroid hormones diffuse across the mem
 An intracellular nuclear receptor (NR) is located in the cytoplasm bound to a heat shock protein (HSP). Upon hormone binding, the receptor dissociates from the heat shock protein and translocates to the nucleus. In the nucleus, the hormone-receptor complex binds to a DNA sequence called a hormone response element (HRE), which triggers gene transcription and translation. The corresponding protein product can then mediate changes in cell function.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Heat shock proteins (HSP) are so named because they help refold misfolded proteins. In response to increased temperature (a \"heat shock\"), heat shock proteins are activated by release from the NR/HSP complex. At the same time, transcription of HSP genes is activated. Why do you think the cell responds to a heat shock by increasing the activity of proteins that help refold misfolded proteins?" hint="Think about what a rise in temperature physically does to a protein's folded shape." >}}
+{{< selfcheck question="Heat shock proteins (HSP) are so named because they help refold misfolded proteins. In response to increased temperature (a \"heat shock\"), heat shock proteins are activated by release from the NR/HSP complex. At the same time, transcription of HSP genes is activated. Why do you think the cell responds to a heat shock by increasing the activity of proteins that help refold misfolded proteins?" hint="Reread the question's first sentence on what heat shock proteins do." >}}
 Proteins unfold, or denature, at higher temperatures.
 ===CHECKS===
 proteins unfold
@@ -76,10 +76,43 @@ Lipid-derived (soluble) hormones can enter the cell by diffusing across the plas
 
 ### Explain how hormones work
 
+{{< textin
+  question="An increase in the number of hormone receptors in response to prolonged low hormone levels is called ________."
+  answer="up-regulation"
+  accept="upregulation"
+  hint="See the section's opening paragraph, on a cell's sensitivity to a hormone."
+>}}
+
+{{< textin
+  question="A membrane protein, activated when a hormone binds its receptor, that in turn activates formation of cyclic AMP is called a ________."
+  answer="G-protein"
+  hint="See the paragraph that introduces cyclic AMP as a second messenger."
+>}}
+
+{{< textin
+  question="The enzyme that catalyzes the conversion of ATP to cyclic AMP is called ________."
+  answer="adenylate cyclase"
+  accept="adenylyl cyclase"
+  hint="See the paragraph that follows the one introducing cyclic AMP, its opening sentences."
+>}}
+
+{{< textin
+  question="The transfer of a phosphate group from ATP to a substrate molecule is a process called ________."
+  answer="phosphorylation"
+  hint="See the paragraph that follows the one introducing cyclic AMP, its third sentence."
+>}}
+
+{{< textin
+  question="The enzyme that deactivates cAMP, stopping hormone activity, is called ________."
+  answer="phosphodiesterase"
+  accept="PDE"
+  hint="See the paragraph on how the pathway's effect is amplified, near its end."
+>}}
+
 {{< multiplechoice
   question="What effect will a cAMP inhibitor have on a peptide hormone-mediated signaling pathway?"
   answer="It will prevent activation of protein kinases."
-  hint="cAMP sits partway through this pathway — think about which step happens right after cAMP forms, not before it."
+  hint="Reread the paragraphs after the cAMP figure that trace the pathway step by step."
 >}}
 It will prevent the hormone from binding its receptor.
 It will prevent activation of a G-protein.
@@ -90,7 +123,7 @@ It will prevent activation of protein kinases.
 {{< multiplechoice
   question="When insulin binds to its receptor, the complex is endocytosed into the cell. This is an example of ______ in response to hormone signaling."
   answer="receptor down-regulation"
-  hint="Reread the section's opening paragraph on how the number of receptors that respond to a hormone can change over time."
+  hint="Reread the section's opening paragraph."
 >}}
 cAMP activation
 generating an intracellular receptor
@@ -98,7 +131,7 @@ activation of a hormone response element
 receptor down-regulation
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Name two important functions of hormone receptors." hint="The section names two opposite changes in receptor number, tied to two different hormone-level conditions." >}}
+{{< selfcheck question="Name two important functions of hormone receptors." hint="See the section's opening paragraph." >}}
 The number of receptors that respond to a hormone can change, resulting in increased or decreased cell sensitivity. The number of receptors can increase in response to prolonged low hormone levels, called up-regulation, making the cell more sensitive to the hormone and allowing for more cellular activity. The number of receptors can also decrease in response to rising hormone levels, called down-regulation, leading to reduced cellular activity.
 ===CHECKS===
 the number of receptors can change, resulting in increased or decreased cell sensitivity
@@ -106,53 +139,45 @@ the number of receptors can increase in response to prolonged low hormone levels
 the number of receptors can decrease in response to rising hormone levels, called down-regulation, leading to reduced cellular activity
 {{< /selfcheck >}}
 
-{{< selfcheck question="How can hormones mediate changes?" hint="The answer depends on where the receptor sits and what kind of hormone is binding it." >}}
+{{< selfcheck question="How can hormones mediate changes?" hint="See the section's second paragraph, just before its first subsection." >}}
 Depending on the location of the protein receptor on the target cell and the chemical structure of the hormone, hormones can mediate changes directly by binding to intracellular receptors and modulating gene transcription, or indirectly by binding to cell surface receptors and stimulating signaling pathways.
 ===CHECKS===
 hormones can mediate changes directly by binding to intracellular receptors and modulating gene transcription
 or indirectly by binding to cell surface receptors and stimulating signaling pathways
 {{< /selfcheck >}}
 
-{{< textin
-  question="An increase in the number of hormone receptors in response to prolonged low hormone levels is called ________."
-  answer="up-regulation"
-  accept="upregulation"
-  hint="This change makes a cell more sensitive to a hormone it isn't seeing much of, by adding more places for that hormone to bind — its opposite happens when hormone levels climb instead."
->}}
-
-{{< textin
-  question="A decrease in the number of hormone receptors in response to increased hormone levels is called ________."
-  answer="down-regulation"
-  accept="downregulation"
-  hint="This change reduces how strongly a cell responds once a hormone has been unusually plentiful for a while — it is the opposite of the process triggered by prolonged low hormone levels."
->}}
-
-{{< textin
-  question="A membrane protein activated by the hormone first messenger to activate formation of cyclic AMP is called a ________."
-  answer="G-protein"
-  hint="This protein sits in the cell membrane bound to GDP until a hormone binds its receptor, at which point it swaps GDP for GTP and switches on the enzyme that makes the second messenger."
->}}
-
-{{< textin
-  question="The enzyme that deactivates cAMP, stopping hormone activity, is called ________."
-  answer="phosphodiesterase"
-  accept="PDE"
-  hint="This enzyme is always present in the cell, breaking down the second messenger once its job is done so cellular product isn't overproduced; the section also gives it a two-letter short form."
->}}
-
-{{< textin
-  question="The enzyme that catalyzes the conversion of ATP to cyclic AMP is called ________."
-  answer="adenylate cyclase"
-  accept="adenylyl cyclase"
-  hint="This membrane-bound enzyme is switched on by the activated G-protein, one step before the second messenger appears."
->}}
-
 ### Discuss the role of different types of hormone receptors
+
+{{< textin
+  question="The cellular protein that binds to a hormone is called a ________."
+  answer="hormone receptor"
+  hint="See the section's opening sentences."
+>}}
+
+{{< textin
+  question="A hormone receptor located in the cytoplasm or nucleus of a cell is called a(n) ________."
+  answer="intracellular hormone receptor"
+  accept="intracellular receptor"
+  hint="See the section's second paragraph."
+>}}
+
+{{< textin
+  question="A hormone receptor on the surface of the plasma membrane of a cell is called a(n) ________."
+  answer="plasma membrane hormone receptor"
+  accept="cell surface receptor|plasma membrane receptor|membrane hormone receptor|membrane receptor"
+  hint="See the paragraph on amino acid-derived and polypeptide hormones."
+>}}
+
+{{< textin
+  question="The hormone that binds to a receptor on the outer surface of a cell to trigger a signal transduction pathway is called the ________."
+  answer="first messenger"
+  hint="See the last sentence of the paragraph on amino acid-derived and polypeptide hormones."
+>}}
 
 {{< multiplechoice
   question="A new antagonist molecule has been discovered that binds to and blocks plasma membrane receptors. What effect will this antagonist have on testosterone, a steroid hormone?"
   answer="It will not affect testosterone-mediated signaling."
-  hint="Testosterone is lipid-soluble — think about which kind of receptor it actually uses, and whether that receptor is the one this antagonist blocks."
+  hint="Reread the first subsection's opening paragraph, on steroid hormones."
 >}}
 It will block testosterone from binding to its receptor.
 It will block testosterone from activating cAMP signaling.
@@ -160,7 +185,7 @@ It will increase testosterone-mediated signaling.
 It will not affect testosterone-mediated signaling.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is cAMP-mediated signal amplification not required in steroid hormone signaling? Describe how steroid signaling is amplified instead." hint="Compare where each pathway does its amplifying: at the messenger step, or at the DNA itself." >}}
+{{< selfcheck question="Why is cAMP-mediated signal amplification not required in steroid hormone signaling? Describe how steroid signaling is amplified instead." hint="Compare the first subsection, on steroid hormones, with the paragraph on how a hormone's effect is amplified." >}}
 In steroid hormone signaling, the steroid interacts directly with its intracellular receptor rather than signaling through a second messenger like cAMP. The steroid-receptor complex then moves into the nucleus, and directly regulates the transcription of DNA. This will cause the cell to produce multiple copies of the target gene, amplifying the signal from the hormone at the transcriptional level rather than the second messenger level.
 ===CHECKS===
 the steroid interacts directly with its intracellular receptor rather than signaling through a second messenger like cAMP
@@ -168,32 +193,6 @@ the steroid-receptor complex moves into the nucleus and directly regulates the t
 this causes the cell to produce multiple copies of the target gene, amplifying the signal at the transcriptional level rather than the second messenger level
 {{< /selfcheck >}}
 
-{{< textin
-  question="The cellular protein that binds to a hormone is called a ________."
-  answer="hormone receptor"
-  hint="Only cells carrying this molecule for a given hormone are affected by it, even though the hormone itself circulates throughout the whole body."
->}}
-
-{{< textin
-  question="A hormone receptor located in the cytoplasm or nucleus of a cell is called a(n) ________."
-  answer="intracellular hormone receptor"
-  accept="intracellular receptor"
-  hint="Only a lipid-soluble hormone that can cross the plasma membrane ever reaches this kind of receptor."
->}}
-
-{{< textin
-  question="A hormone receptor on the surface of the plasma membrane of a cell is called a(n) ________."
-  answer="plasma membrane hormone receptor"
-  accept="cell surface receptor|plasma membrane receptor"
-  hint="A hormone that cannot dissolve in the lipid bilayer binds here instead, at the cell's outer surface, and never actually enters the cell."
->}}
-
-{{< textin
-  question="The hormone that binds to a receptor on the outer surface of a cell to trigger a signal transduction pathway is called the ________."
-  answer="first messenger"
-  hint="This is the hormone itself, named for its position at the very start of the signaling chain — a second one takes over once the pathway reaches inside the cell."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 37.2: How Hormones Work](https://openstax.org/books/biology-2e/pages/37-2-how-hormones-work) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_37_02_02 re-kinded from the manifest's file-extension "photo" guess to "diagram" (it is a hand-drawn signaling-cascade illustration, not a captured photograph); both figures' source alts were letter-spaced screen-reader spellings ("N R slash H S P", "G D P", "lower case c upper case A M P") and were rewritten as plain descriptions, with the label-by-label walk-throughs moved into a `longdesc` on each; the note wrapping the heat-shock-protein Visual Connection rendered as its figure followed by a self-check, kept in the body in the Intracellular Hormone Receptors section — the note copy and the `<exercise>` copy print identical question wording, so no adjudication was needed; the glossary's own definition of **up-regulation** ("an increase in the number of hormone receptors in response to increased hormone levels") is contradicted by the section's defining sentence for the term ("In up-regulation, the number of receptors increases in response to prolonged low hormone levels…") and by the parallel, correctly worded down-regulation definition — corrected on the page to "in response to prolonged low hormone levels"; the Critical Thinking solution for "Name two important functions of hormone receptors" repeats the same "rising hormone levels" wording for up-regulation, so its self-check model answer was corrected to match the section's own defining sentence and disclosed the same way; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer into check-off clauses with no new claims; nine key-term recall items added from the glossary, covering every glossary term in this short section (the first-messenger prompt says "a receptor on the outer surface of a cell" where the glossary says "a plasma membrane hormone receptor," so that it does not print the key of the recall item directly above it); the textin keyed to "adenylate cyclase" (the glossary's own spelling) accepts "adenylyl cyclase," the compound form the body prose uses at its defining occurrence.</small>
+<small>This section is adapted from [Biology 2e, Section 37.2: How Hormones Work](https://openstax.org/books/biology-2e/pages/37-2-how-hormones-work) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_37_02_02 re-kinded from the manifest's file-extension "photo" guess to "diagram" (it is a hand-drawn signaling-cascade illustration, not a captured photograph); both figures' source alts were letter-spaced screen-reader spellings ("N R slash H S P", "G D P", "lower case c upper case A M P") and were rewritten as plain descriptions, with the label-by-label walk-throughs moved into a `longdesc` on each; the note wrapping the heat-shock-protein Visual Connection rendered as its figure followed by a self-check, kept in the body in the Intracellular Hormone Receptors section — the note copy and the `<exercise>` copy print identical question wording, so no adjudication was needed; the glossary's own definition of **up-regulation** ("an increase in the number of hormone receptors in response to increased hormone levels") is contradicted by the section's defining sentence for the term ("In up-regulation, the number of receptors increases in response to prolonged low hormone levels…") and by the parallel, correctly worded down-regulation definition — corrected on the page to "in response to prolonged low hormone levels"; the Critical Thinking solution for "Name two important functions of hormone receptors" repeats the same "rising hormone levels" wording for up-regulation, so its self-check model answer was corrected to match the section's own defining sentence and disclosed the same way; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 2, 3, 1 of the source's numbering (the testosterone-antagonist question, first in the source, comes last); rubric checkpoints added to each self-check, decomposing its model answer into check-off clauses with no new claims; eight key-term recall items added from the glossary, covering every glossary term but **down-regulation**, which the insulin Review Question already keys and which stays a Key-terms entry, plus a body cloze on phosphorylation in its place; two recall prompts are reworded from the glossary so that they do not print another item's key (the first-messenger prompt says "a receptor on the outer surface of a cell" where the glossary says "a plasma membrane hormone receptor," and the G-protein prompt says "activated when a hormone binds its receptor" where the glossary says "activated by the hormone first messenger"); the textin keyed to "adenylate cyclase" (the glossary's own spelling) accepts "adenylyl cyclase," the compound form the body prose uses at its defining occurrence.</small>

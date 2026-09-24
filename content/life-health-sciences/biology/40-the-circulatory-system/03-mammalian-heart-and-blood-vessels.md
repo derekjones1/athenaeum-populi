@@ -27,7 +27,7 @@ The mammalian circulatory system is divided into three circuits: the systemic ci
 {{< multiplechoice
   question="Which of the following statements about the circulatory system is false?"
   answer="Blood in the pulmonary vein is deoxygenated."
-  hint="For each vessel, ask two things: does it carry blood toward the lungs or away from them, and does blood pick up oxygen or release it while it is inside the lungs? The module's own sentences about the pulmonary vein and the pulmonary arteries, later in this section, settle both questions."
+  hint="Check each option against the paragraph in Structure of the Heart that traces blood through the four chambers and the vessels attached to them."
 >}}
 Blood in the pulmonary vein is deoxygenated.
 Blood in the inferior vena cava is deoxygenated.
@@ -46,7 +46,7 @@ The heart muscle is asymmetrical as a result of the distance blood must travel i
 {{< multiplechoice
   question="Which of the following statements about the heart is false?"
   answer="Blood travels through the bicuspid valve to the left atrium."
-  hint="Trace where the bicuspid valve sits in the sequence blood follows through the left side of the heart — between which two chambers does the labeled diagram place it, and in which direction does blood move through a valve on its way toward the body?"
+  hint="Check each option against the labeled heart cutaway above and the first paragraph of Structure of the Heart."
 >}}
 The mitral valve separates the left ventricle from the left atrium.
 Blood travels through the bicuspid valve to the left atrium.
@@ -56,7 +56,7 @@ The mitral valve is an atrioventricular valve.
 
 The heart is composed of three layers; the epicardium, the myocardium, and the endocardium, illustrated above. The inner wall of the heart has a lining called the **endocardium**. The **myocardium** consists of the heart muscle cells that make up the middle layer and the bulk of the heart wall. The outer layer of cells is called the **epicardium**, of which the second layer is a membranous layered structure called the **pericardium** that surrounds and protects the heart; it allows enough room for vigorous pumping but also keeps the heart in place to reduce friction between the heart and other structures.
 
-The heart has its own blood vessels that supply the heart muscle with blood. The **coronary arteries** branch from the aorta and surround the outer surface of the heart like a crown. They diverge into capillaries where the heart muscle is supplied with oxygen before converging again into the **coronary veins** to take the deoxygenated blood back to the right atrium where the blood will be re-oxygenated through the pulmonary circuit. The heart muscle will die without a steady supply of blood. **Atherosclerosis** is the blockage of an artery by the buildup of fatty plaques. Because of the size (narrow) of the coronary arteries and their function in serving the heart itself, atherosclerosis can be deadly in these arteries. The slowdown of blood flow and subsequent oxygen deprivation that results from atherosclerosis causes severe pain, known as **angina**, and complete blockage of the arteries will cause **myocardial infarction**: the death of cardiac muscle tissue, commonly known as a heart attack. Marie M. Daly was the first to associate cholesterol, high blood pressure, and the causes of atheroclerosis, which led to a deeper understanding of ways to prevent heart attack and treat heart disease.
+The heart has its own blood vessels that supply the heart muscle with blood. The **coronary arteries** branch from the aorta and surround the outer surface of the heart like a crown. They diverge into capillaries where the heart muscle is supplied with oxygen before converging again into the **coronary veins** to take the deoxygenated blood back to the right atrium where the blood will be re-oxygenated through the pulmonary circuit. The heart muscle will die without a steady supply of blood. **Atherosclerosis** is the blockage of an artery by the buildup of fatty plaques. Because of the size (narrow) of the coronary arteries and their function in serving the heart itself, atherosclerosis can be deadly in these arteries. The slowdown of blood flow and subsequent oxygen deprivation that results from atherosclerosis causes severe pain, known as **angina**, and complete blockage of the arteries will cause **myocardial infarction**: the death of cardiac muscle tissue, commonly known as a heart attack. Marie M. Daly was the first to associate cholesterol, high blood pressure, and the causes of atherosclerosis, which led to a deeper understanding of ways to prevent heart attack and treat heart disease.
 
 ## The Cardiac Cycle
 
@@ -158,14 +158,14 @@ they are striated
 {{< textin
   question="The one-way membranous flap of connective tissue between the atrium and the ventricle on the right side of the heart is called the ________."
   answer="atrioventricular valve"
-  accept="tricuspid valve|right atrioventricular valve"
+  accept="tricuspid valve|tricuspid|right atrioventricular valve|AV valve|right AV valve"
   hint="Look in Structure of the Heart, where deoxygenated blood passes from the right atrium to the right ventricle; the text gives two names, and either is accepted."
 >}}
 
 {{< textin
   question="The heart muscle cells that make up the middle layer and the bulk of the heart wall are called the ________."
   answer="myocardium"
-  hint="This layer sits between the heart's inner lining and its outer tissue layer, and it is thicker than either of them."
+  hint="Look in the paragraph on the heart's three layers, in Structure of the Heart, and the wall-layer inset of the heart cutaway."
 >}}
 
 {{< textin
@@ -176,10 +176,17 @@ they are striated
 
 ### Describe the cardiac cycle
 
+{{< textin
+  question="The relaxation phase of the cardiac cycle, when the heart is relaxed and the ventricles fill with blood, is called ________."
+  answer="diastole"
+  accept="diastolic phase"
+  hint="Look in the first paragraph of The Cardiac Cycle, where the two phases are named."
+>}}
+
 {{< multiplechoice
   question="The heart’s internal pacemaker beats by:"
   answer="the excitation of cardiac muscle cells at the sinoatrial node followed by the atrioventricular node"
-  hint="Two options name the same two nodes in opposite order — check which node the pacemaker signal reaches first."
+  hint="Reread the paragraph on the internal pacemaker in The Cardiac Cycle, and the four-panel ECG figure below it."
 >}}
 an internal implant that sends an electrical impulse through the heart
 the excitation of cardiac muscle cells at the sinoatrial node followed by the atrioventricular node
@@ -198,16 +205,10 @@ contracting and relaxing
 filling with blood
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The relaxation phase of the cardiac cycle, when the heart is relaxed and the ventricles fill with blood, is called ________."
-  answer="diastole"
-  hint="Look in the first paragraph of The Cardiac Cycle, where the two phases are named."
->}}
-
-{{< selfcheck question="Describe the cardiac cycle." hint="Walk through the cycle in the order the signal travels — where it starts, where it pauses, and what the heart does during each of the two named phases." >}}
+{{< selfcheck question="Describe the cardiac cycle." hint="Draw on The Cardiac Cycle: its first paragraph and the paragraph on the internal pacemaker." >}}
 The heart receives an electrical signal from the sinoatrial node triggering the cardiac muscle cells in the atria to contract. The signal pauses at the atrioventricular node before spreading to the walls of the ventricles so the blood is pumped through the body. This is the systolic phase. The heart then relaxes in the diastole and fills again with blood.
 ===CHECKS===
-the heart receives an electrical signal from the sinoatrial node triggering the atria to contract
+the heart receives an electrical signal from the sinoatrial node triggering the cardiac muscle cells in the atria to contract
 the signal pauses at the atrioventricular node before spreading to the walls of the ventricles
 the blood is pumped through the body — this is the systolic phase
 the heart then relaxes in the diastole and fills again with blood
@@ -218,7 +219,7 @@ the heart then relaxes in the diastole and fills again with blood
 {{< multiplechoice
   question="How do arteries differ from veins?"
   answer="Arteries have thicker smooth muscle layers to accommodate the changes in pressure from the heart."
-  hint="Compare each option with the artery-and-vein cutaway figure and its caption in Arteries, Veins, and Capillaries."
+  hint="Compare each option with the artery-and-vein cutaway and the paragraph after it, at the end of Arteries, Veins, and Capillaries."
 >}}
 Arteries have thicker smooth muscle layers to accommodate the changes in pressure from the heart.
 Arteries carry blood.
@@ -226,27 +227,27 @@ Arteries have thinner smooth muscle layers and valves and move blood by the acti
 Arteries are thin walled and are used for gas exchange.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What happens in capillaries?" hint="Focus on how thin the wall is, what actually crosses it, and how the vessels are arranged into networks." >}}
+{{< selfcheck question="What happens in capillaries?" hint="Draw on the paragraph on capillary beds and the one on the three tunics of vessel walls, in Arteries, Veins, and Capillaries." >}}
 The capillaries basically exchange materials with their surroundings. Their walls are very thin and are made of one or two layers of cells, where gases, nutrients, and waste are diffused. They are distributed as beds, complex networks that link arteries as well as veins.
 ===CHECKS===
 capillaries exchange materials with their surroundings
 their walls are very thin, made of one or two layers of cells
-gases, nutrients, and waste are diffused across the walls
+where gases, nutrients, and waste are diffused
 capillaries are distributed as beds, complex networks that link arteries and veins
 {{< /selfcheck >}}
 
 {{< textin
   question="The small vessel that connects an artery to a capillary bed is called a(n) ________."
   answer="arteriole"
-  hint="This vessel sits on the artery side of a capillary bed, one step smaller than a minor artery."
+  hint="Look at the end of the first paragraph of Arteries, Veins, and Capillaries."
 >}}
 
 {{< textin
   question="The blood vessel that connects a capillary bed to a vein is called a(n) ________."
   answer="venule"
-  hint="This vessel sits on the vein side of a capillary bed, one step larger than a capillary."
+  hint="Look in the paragraph on capillary beds, in Arteries, Veins, and Capillaries."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 40.3: Mammalian Heart and Blood Vessels](https://openstax.org/books/biology-2e/pages/40-3-mammalian-heart-and-blood-vessels) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text edited where noted; four figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_40_03_03, Figure_40_03_05, Figure_40_03_06, and Figure_40_03_07 are each a hand-drawn or computer-rendered illustration, not a captured photograph), and Figure_B40_03_04 re-kinded the other way, from the manifest's "diagram" guess to "photo" (it is an actual light micrograph of cardiac tissue, and its alt was rewritten to name the inset magnification the source alt omitted); a longdesc added to every diagram whose printed labels or arrows are not carried by its one-line caption — the systemic/pulmonary circuit illustration, the labeled heart cutaway with pericardial-layer inset, the three-panel cardiac-cycle illustration, the four-panel pacemaker/ECG illustration, the major-vessels body illustration, and the artery/vein cross-section illustration — transcribing each drawing's own labels, leader-line counts, and (for the cardiac-cycle panels only, which carry no hidden exercise key) arrow counts and positions, in reading order; the two body Visual Connections' longdescs (the systemic/pulmonary circuit figure and the labeled heart cutaway) transcribe only the printed labels and never state which of that item's four statements is false; in-text pointers to figures ("Figure 40.10" through "Figure 40.16") replaced with "shown below," "shown above," or "illustrated below," since Hugo does not number figures; both notes wrapping a Visual Connection rendered as their figure followed by a multiple choice, kept in the body — the note copy and the `<exercise>` copy print identical question and option wording in both cases, so no adjudication was needed; exercise `fs-idm133142336` (the circulatory-system Visual Connection) is keyed **A** ("Blood in the pulmonary vein is deoxygenated") rather than the module's own printed answer key of C, because the module's own sentences contradict C — a source defect; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/electric_heart redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), both Visual Connection items left in the body rather than duplicated in Practice; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items added from the glossary (atrioventricular valve, myocardium, atherosclerosis, diastole, arteriole, venule — six items across three groups), covering six of the section's thirty-one glossary terms — the rest appear only in the Key terms list and the prose, several of them as the bolded defining term of their own paragraph. Source defects: module `m66653`, exercise `fs-idm133142336` — the module's own text says "the right ventricle pumps the blood through the semilunar valve … to the pulmonary arteries and on to the lungs for re-oxygenation" (the pulmonary artery carries blood that is still deoxygenated, so option C, "Blood in the pulmonary artery is deoxygenated," is true) and "the left atrium then receives the oxygen-rich blood from the lungs via the pulmonary veins" (the pulmonary vein carries oxygenated blood, so option A, "Blood in the pulmonary vein is deoxygenated," is false) — but the module's printed solution keys C. The false statement by the module's own text is A, not C; keyed A above.</small>
+<small>This section is adapted from [Biology 2e, Section 40.3: Mammalian Heart and Blood Vessels](https://openstax.org/books/biology-2e/pages/40-3-mammalian-heart-and-blood-vessels) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text edited where noted; four figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_40_03_03, Figure_40_03_05, Figure_40_03_06, and Figure_40_03_07 are each a hand-drawn or computer-rendered illustration, not a captured photograph), and Figure_B40_03_04 re-kinded the other way, from the manifest's "diagram" guess to "photo" (it is an actual light micrograph of cardiac tissue, and its alt was rewritten to name the inset magnification the source alt omitted); a longdesc added to every diagram whose printed labels or arrows are not carried by its one-line caption — the systemic/pulmonary circuit illustration, the labeled heart cutaway with pericardial-layer inset, the three-panel cardiac-cycle illustration, the four-panel pacemaker/ECG illustration, the major-vessels body illustration, and the artery/vein cross-section illustration — transcribing each drawing's own labels, leader-line counts, and (for the cardiac-cycle panels only, which carry no hidden exercise key) arrow counts and positions, in reading order; the two body Visual Connections' longdescs (the systemic/pulmonary circuit figure and the labeled heart cutaway) transcribe only the printed labels and never state which of that item's four statements is false; in-text pointers to figures ("Figure 40.10" through "Figure 40.16") replaced with "shown below," "shown above," or "illustrated below," since Hugo does not number figures; both notes wrapping a Visual Connection rendered as their figure followed by a multiple choice, kept in the body — the note copy and the `<exercise>` copy print identical question and option wording in both cases, so no adjudication was needed; exercise `fs-idm133142336` (the circulatory-system Visual Connection) is keyed **A** ("Blood in the pulmonary vein is deoxygenated") rather than the module's own printed answer key of C, because the module's own sentences contradict C — a source defect; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/electric_heart redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), both Visual Connection items left in the body rather than duplicated in Practice; the third Review Question (`fs-idm232681600`, on cardiomyocytes) placed first in Practice, under the heart-structure objective it tests, ahead of the pacemaker and systolic-phase questions that precede it in the source; the Marie M. Daly sentence's misspelling "atheroclerosis" corrected to "atherosclerosis"; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items added from the glossary (atrioventricular valve, myocardium, atherosclerosis, diastole, arteriole, venule — six items across three groups), covering six of the section's thirty-one glossary terms — the rest appear only in the Key terms list and the prose, several of them as the bolded defining term of their own paragraph. Source defects: module `m66653`, exercise `fs-idm133142336` — the module's own text says "the right ventricle pumps the blood through the semilunar valve … to the pulmonary arteries and on to the lungs for re-oxygenation" (the pulmonary artery carries blood that is still deoxygenated, so option C, "Blood in the pulmonary artery is deoxygenated," is true) and "the left atrium then receives the oxygen-rich blood from the lungs via the pulmonary veins" (the pulmonary vein carries oxygenated blood, so option A, "Blood in the pulmonary vein is deoxygenated," is false) — but the module's printed solution keys C. The false statement by the module's own text is A, not C; keyed A above.</small>

@@ -221,7 +221,7 @@ thyroid-stimulating hormone
 {{< multiplechoice
   question="Recent studies suggest that blue light exposure can impact human circadian rhythms. This suggests that blue light disrupts the function of the _____ gland(s)."
   answer="pineal"
-  hint="Reread the gland sections that follow Adrenal Glands."
+  hint="Search the gland-by-gland survey for the paragraph on circadian rhythms."
 >}}
 adrenal
 pituitary
@@ -247,12 +247,12 @@ their release is stimulated by neural impulses from the sympathetic nervous syst
   question="The clusters of endocrine cells in the pancreas are called the ________."
   answer="islets of Langerhans"
   accept="pancreatic islet|islet of Langerhans"
-  hint="These clusters contain alpha cells and beta cells, which release glucagon and insulin."
+  hint="Look at the Pancreas section's paragraph on the pancreas's endocrine cells."
 >}}
 
 ### Explain how the different glands work together to maintain homeostasis
 
-{{< selfcheck question="What does aldosterone regulate, and how is it stimulated?" hint="Aldosterone's release depends on three blood-related conditions falling or rising in a specific direction — think about what would signal the body needs to retain more sodium and fluid." >}}
+{{< selfcheck question="What does aldosterone regulate, and how is it stimulated?" hint="Reread Adrenal Cortex." >}}
 The main mineralocorticoid is aldosterone, which regulates the concentration of ions in urine, sweat, and saliva. Aldosterone release from the adrenal cortex is stimulated by a decrease in blood concentrations of sodium ions, blood volume, or blood pressure, or an increase in blood potassium levels.
 ===CHECKS===
 aldosterone regulates the concentration of ions in urine, sweat, and saliva
@@ -271,29 +271,30 @@ the hypothalamus would still be able to produce and release inhibiting hormones 
 {{< textin
   question="The system of blood vessels that carries hormones from the hypothalamus directly to the anterior pituitary, without first entering general circulation, is called the ________."
   answer="hypophyseal portal system"
-  hint="Reread the opening of Hypothalamic-Pituitary Axis."
+  accept="hypophyseal portal"
+  hint="Reread the first paragraph of Anterior Pituitary."
 >}}
 
 {{< textin
   question="The hormone produced by the kidneys that stimulates red blood cell production in the bone marrow in response to low oxygen levels is called ________."
   answer="erythropoietin"
   accept="EPO"
-  hint="Some athletes have misused this hormone to boost their blood's oxygen-carrying capacity, since greater red blood cell production allows for greater endurance."
+  hint="Look at the kidney paragraph of Organs with Secondary Endocrine Functions."
 >}}
 
 {{< textin
   question="The hormone produced by the heart in response to increased blood volume, which acts on the kidneys to reduce blood volume, pressure, and sodium concentration, is called ________."
   answer="atrial natriuretic peptide"
   accept="ANP"
-  hint="The cells that release this hormone do so when high blood volume stretches them; look at the heart paragraph of Organs with Secondary Endocrine Functions."
+  hint="Look at the heart paragraph of Organs with Secondary Endocrine Functions."
 >}}
 
 {{< textin
   question="The hormone produced by adipose tissue in response to food intake, which promotes feelings of satiety and must be present for GnRH and gonadotropin synthesis to occur, is called ________."
   answer="leptin"
-  hint="Extremely thin females may enter puberty late, and more adipose tissue means more of this hormone — a link between energy stores and fertility."
+  hint="Look at the adipose tissue paragraph of Organs with Secondary Endocrine Functions."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 37.5: Endocrine Glands](https://openstax.org/books/biology-2e/pages/37-5-endocrine-glands) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the adrenal-cortex sentence on aldosterone reads "Na⁺ ions in urine, sweat, and saliva" where the source prints "urine, sweat, pancreas, and saliva" — the module's own Critical Thinking solution lists "urine, sweat, and saliva", and the pancreas is not a secreted fluid (a source defect); figures re-encoded as WebP; five figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_37_05_01ab, Figure_37_05_02, Figure_37_05_03, Figure_37_05_04, and Figure_37_05_05 are all hand-drawn or digitally rendered anatomical illustrations, not captured photographs — Figure_37_05_06, the pancreatic-islet micrograph, is the one genuine photo and keeps that kind); a longdesc added to every diagram, walking each drawing's own printed leader-line labels (the two-panel pituitary figure, the thyroid, the parathyroid, the adrenal, and the pancreas illustrations) — the micrograph needed none, since its caption and alt already carry its content; the pituitary figure's alt rewritten from the source's single run-on sentence to explicitly name what panel (a) and panel (b) each show, since the source alt did not distinguish them; in-text pointers to figures ("Figure 37.15" through "Figure 37.20") replaced with "shown below" or "illustrated below," since Hugo does not number figures; ion charges and iodine-count subscripts set as Unicode (Na⁺, K⁺, Ca²⁺, T₃, T₄) in place of the source's `<sup>`/`<sub>` markup; the "Endocrine Glands and their Associated Hormones" table kept as a Markdown table in the body — its columns (gland, hormone, effect) name a gland/hormone pairing rather than categories, so it does not qualify for the `sortbins` "columns name categories" test and has no Practice-block counterpart; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items added from the glossary (colloid, islets of Langerhans, hypophyseal portal system, erythropoietin, atrial natriuretic peptide, leptin), covering six of the section's twenty-two glossary terms, the rest appearing only in the Key terms list and the prose. One claim is corrected with a visible Source note: the Summary says the adrenal glands "consist of the renal cortex and renal medulla," but this section's own Adrenal Glands text says they consist of an outer adrenal cortex and an inner adrenal medulla, as the Summary's own next two sentences also say, so the Summary sentence now reads "the adrenal cortex and adrenal medulla".</small>
+<small>This section is adapted from [Biology 2e, Section 37.5: Endocrine Glands](https://openstax.org/books/biology-2e/pages/37-5-endocrine-glands) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the adrenal-cortex sentence on aldosterone reads "Na⁺ ions in urine, sweat, and saliva" where the source prints "urine, sweat, pancreas, and saliva" — the module's own Critical Thinking solution lists "urine, sweat, and saliva", and the pancreas is not a secreted fluid (a source defect); figures re-encoded as WebP; five figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_37_05_01ab, Figure_37_05_02, Figure_37_05_03, Figure_37_05_04, and Figure_37_05_05 are all hand-drawn or digitally rendered anatomical illustrations, not captured photographs — Figure_37_05_06, the pancreatic-islet micrograph, is the one genuine photo and keeps that kind); a longdesc added to every diagram, walking each drawing's own printed leader-line labels (the two-panel pituitary figure, the thyroid, the parathyroid, the adrenal, and the pancreas illustrations) — the micrograph needed none, since its caption and alt already carry its content; the pituitary figure's alt rewritten from the source's single run-on sentence to explicitly name what panel (a) and panel (b) each show, since the source alt did not distinguish them; in-text pointers to figures ("Figure 37.15" through "Figure 37.20") replaced with "shown below" or "illustrated below," since Hugo does not number figures; ion charges and iodine-count subscripts set as Unicode (Na⁺, K⁺, Ca²⁺, T₃, T₄) in place of the source's `<sup>`/`<sub>` markup; the "Endocrine Glands and their Associated Hormones" table kept as a Markdown table in the body — its columns (gland, hormone, effect) name a gland/hormone pairing rather than categories, so it does not qualify for the `sortbins` "columns name categories" test and has no Practice-block counterpart; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the second Critical Thinking question (the adrenal medulla's two secretory cells) placed under the first objective, ahead of the first (aldosterone), which sits with the third under the second objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items added from the glossary (colloid, islets of Langerhans, hypophyseal portal system, erythropoietin, atrial natriuretic peptide, leptin), covering six of the section's twenty-two glossary terms, the rest appearing only in the Key terms list and the prose. One claim is corrected with a visible Source note: the Summary says the adrenal glands "consist of the renal cortex and renal medulla," but this section's own Adrenal Glands text says they consist of an outer adrenal cortex and an inner adrenal medulla, as the Summary's own next two sentences also say, so the Summary sentence now reads "the adrenal cortex and adrenal medulla".</small>

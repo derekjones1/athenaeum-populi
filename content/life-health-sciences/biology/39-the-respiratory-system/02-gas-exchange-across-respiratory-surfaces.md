@@ -161,6 +161,26 @@ The lungs can hold a large volume of air, but they are not usually filled to max
 
 ### Name and describe lung volumes and capacities
 
+{{< textin
+  question="The additional amount of air that can be exhaled after a normal exhalation is called the ________."
+  answer="expiratory reserve volume"
+  accept="ERV"
+  hint="See the paragraph on the four lung volumes in Lung Volumes and Capacities."
+>}}
+
+{{< textin
+  question="The amount of air remaining in the lung after a maximal expiration is called the ________."
+  answer="residual volume"
+  accept="RV"
+  hint="See the end of the paragraph on the four lung volumes in Lung Volumes and Capacities."
+>}}
+
+{{< textin
+  question="The technique used to measure lung volumes and to diagnose lung diseases is called ________."
+  answer="spirometry"
+  hint="See the last paragraph of Lung Volumes and Capacities."
+>}}
+
 {{< multiplechoice
   question="The inspiratory reserve volume measures the ________."
   answer="amount of air that can be further inhaled after a normal breath"
@@ -183,15 +203,7 @@ expiratory reserve volume + tidal volume + inspiratory reserve volume
 residual volume + expiratory reserve volume + tidal volume + inspiratory reserve volume
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is the reason for having residual volume in the lung?" hint="Think about what would happen to the alveoli's inner surfaces if a lung ever emptied all the way out." >}}
-If all the air in the lung were exhaled, then opening the alveoli for the next inspiration would be very difficult. This is because the tissues would stick together.
-===CHECKS===
-if all the air in the lung were exhaled
-opening the alveoli for the next inspiration would be very difficult
-the tissues would stick together
-{{< /selfcheck >}}
-
-{{< selfcheck question="What does FEV1/FVC measure? What factors may affect FEV1/FVC?" hint="One value is the air forced out in a fixed time, the other is the total forced out — think about what changes when the airways stiffen versus when they narrow." >}}
+{{< selfcheck question="What does FEV1/FVC measure? What factors may affect FEV1/FVC?" hint="See the last paragraph of Lung Volumes and Capacities." >}}
 FEV1/FVC measures the forced expiratory volume in one second in relation to the total forced vital capacity, the total amount of air that is exhaled from the lung from a maximal inhalation. This ratio changes with alterations in lung function that arise from diseases such as fibrosis, asthma, and COPD.
 ===CHECKS===
 FEV1/FVC measures the forced expiratory volume in one second in relation to the total forced vital capacity
@@ -199,32 +211,33 @@ the total forced vital capacity is the total amount of air exhaled from the lung
 this ratio changes with alterations in lung function that arise from diseases such as fibrosis, asthma, and COPD
 {{< /selfcheck >}}
 
-{{< textin
-  question="The additional amount of air that can be exhaled after a normal exhalation is called the ________."
-  answer="expiratory reserve volume"
-  accept="ERV"
-  hint="This volume, together with tidal volume and the inhaling-side reserve volume, sums to vital capacity."
->}}
-
-{{< textin
-  question="The amount of air remaining in the lung after a maximal expiration is called the ________."
-  answer="residual volume"
-  accept="RV"
-  hint="This is the only lung volume that cannot be measured directly, because it is impossible to completely empty the lungs of air."
->}}
-
-{{< textin
-  question="The technique used to measure lung volumes and to diagnose lung diseases is called ________."
-  answer="spirometry"
-  hint="An important measurement taken with this technique is how much air can be forced out of the lung in one second."
->}}
+{{< selfcheck question="What is the reason for having residual volume in the lung?" hint="See the middle of the paragraph on the four lung volumes in Lung Volumes and Capacities." >}}
+If all the air in the lung were exhaled, then opening the alveoli for the next inspiration would be very difficult. This is because the tissues would stick together.
+===CHECKS===
+if all the air in the lung were exhaled
+opening the alveoli for the next inspiration would be very difficult
+the tissues would stick together
+{{< /selfcheck >}}
 
 ### Understand how gas pressure influences how gases move into and out of the body
+
+{{< textin
+  question="The amount of pressure exerted by one gas within a mixture of gases is called ________."
+  answer="partial pressure"
+  hint="See the second paragraph of Basic Principles of Gas Exchange."
+>}}
+
+{{< textin
+  question="The ratio of carbon dioxide production to each oxygen molecule consumed is called the ________."
+  answer="respiratory quotient"
+  accept="RQ"
+  hint="See the first paragraph of Gas Exchange across the Alveoli."
+>}}
 
 {{< multiplechoice
   question="Of the following, which does not explain why the partial pressure of oxygen is lower in the lung than in the external air?"
   answer="Lungs exert a pressure on the air to reduce the oxygen pressure."
-  hint="Three of these options describe real reasons this section gives for the drop in oxygen's partial pressure inside the lung — the fourth invents a mechanism the section never describes."
+  hint="See the last paragraphs of Gas Pressure and Respiration and the second paragraph of Gas Exchange across the Alveoli."
 >}}
 Air in the lung is humidified; therefore, water vapor pressure alters the pressure.
 Carbon dioxide mixes with oxygen.
@@ -232,7 +245,7 @@ Oxygen is moved into the blood and is headed to the tissues.
 Lungs exert a pressure on the air to reduce the oxygen pressure.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How can a decrease in the percent of oxygen in the air affect the movement of oxygen in the body?" hint="Think about what drives oxygen from the inspired air into the blood and then into the tissues, and what happens to that driving force when less oxygen is available to begin with." >}}
+{{< selfcheck question="How can a decrease in the percent of oxygen in the air affect the movement of oxygen in the body?" hint="See the partial-pressure calculations in Gas Pressure and Respiration and the pressure gradients in Gas Exchange across the Alveoli." >}}
 Oxygen moves from the lung to the bloodstream to the tissues according to the pressure gradient. This is measured as the partial pressure of oxygen. If the amount of oxygen drops in the inspired air, there would be reduced partial pressure. This would decrease the driving force that moves the oxygen into the blood and into the tissues. P<sub>O₂</sub> is also reduced at high elevations: P<sub>O₂</sub> at high elevations is lower than at sea level because the total atmospheric pressure is less than atmospheric pressure at sea level.
 ===CHECKS===
 oxygen moves from the lung to the bloodstream to the tissues according to the pressure gradient
@@ -241,7 +254,7 @@ this would decrease the driving force that moves the oxygen into the blood and i
 oxygen's partial pressure is also reduced at high elevations, because the total atmospheric pressure there is less than at sea level
 {{< /selfcheck >}}
 
-{{< selfcheck question="If a patient has increased resistance in their lungs, how can this be detected by a doctor? What does this mean?" hint="Reread the spirometry paragraph in Lung Volumes and Capacities, which says what a high and a low FEV1/FVC ratio each indicate." >}}
+{{< selfcheck question="If a patient has increased resistance in their lungs, how can this be detected by a doctor? What does this mean?" hint="Reread the last paragraph of Lung Volumes and Capacities, which says what a high and a low FEV1/FVC ratio each indicate." >}}
 A doctor can detect an obstructive condition such as asthma, in which the FEV1/FVC ratio is low, using spirometry. By detecting the rate at which air can be expelled from the lung, a diagnosis of asthma or another obstructive condition can be made.
 ===CHECKS===
 a doctor can detect an obstructive condition such as asthma, in which the FEV1/FVC ratio is low, using spirometry
@@ -249,19 +262,6 @@ spirometry detects the rate at which air can be expelled from the lung
 a diagnosis of asthma or another obstructive condition can be made
 {{< /selfcheck >}}
 
-{{< textin
-  question="The measure of the concentration of the individual components in a mixture of gases is called ________."
-  answer="partial pressure"
-  hint="The total pressure exerted by a gas mixture is the sum of these for every component in it."
->}}
-
-{{< textin
-  question="The ratio of carbon dioxide production to each oxygen molecule consumed is called the ________."
-  answer="respiratory quotient"
-  accept="RQ"
-  hint="This ratio equals one if glucose is the only fuel used, but averages lower because protein and fat are also burned for energy."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 39.2: Gas Exchange across Respiratory Surfaces](https://openstax.org/books/biology-2e/pages/39-2-gas-exchange-across-respiratory-surfaces) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; both figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_39_02_01 is a hand-drawn spirogram trace with labeled arrows, and Figure_B39_02_02 is a hand-drawn circulatory-pressure illustration — neither is a captured photograph); both figures' source alt text, which ran well over the 600-character accessibility limit, was shortened to what each image shows, with the fuller walk-through — the spirogram's six labeled arrows and the circulatory diagram's six pressure circles and five vessel labels — moved into a `longdesc`; the source's genuine partial-pressure equations (the general partial-pressure formula, the atmospheric-pressure sum, the two worked atmospheric examples, the water-vapor subtraction, the humidified-air example, and the two alveolar-P<sub>O₂</sub> equations) set in KaTeX, one per display line, while every other partial-pressure mention in prose, the Visual Connection options, and the self-checks uses the inline P<sub>O₂</sub>/P<sub>CO₂</sub> form the section itself prints; the note wrapping the Visual Connection rendered as its figure followed by a multiple choice, kept in the body in the Gas Exchange across the Alveoli section — the note copy and the `<exercise>` copy print identical question and option wording, so no adjudication was needed; the Link to Learning video note rendered as a callout, its `openstax.org/l/spirometry` URL kept; the Career Connection note rendered as a callout with its bold name; the lung-volumes-and-capacities CALS table kept as a Markdown table with its spanning title as a bold line above it — its columns (definition, volume, equation) are quantities and formulas rather than categories, so it does not qualify for a `sortbins` conversion under the "columns name categories" test; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the Critical Thinking selfcheck on detecting increased lung resistance (`fs-idp77276032`) corrected from the source solution's "restrictive disease… fibrosis" language to "an obstructive condition such as asthma," since the module's own sentence in Lung Volumes and Capacities says "when the FEV1/FVC ratio is low, there is resistance in the lung that is characteristic of asthma," an obstructive rather than restrictive condition; five key-term recall items added from the glossary (expiratory reserve volume, residual volume, spirometry, partial pressure, respiratory quotient), covering a representative subset of the section's eighteen glossary terms rather than all of them — the other thirteen (alveolar P<sub>O₂</sub>, FEV1/FVC ratio, forced expiratory volume, functional residual capacity, inspiratory capacity, inspiratory reserve volume, lung capacity, lung volume, tidal volume, total lung capacity, venous P<sub>CO₂</sub>, venous P<sub>O₂</sub>, vital capacity) appear only in the Key terms list and the prose, since several carry a subscripted pressure symbol a learner cannot type into a text-recall field, and inspiratory reserve volume and total lung capacity are already the keys of the section's two Review Questions.</small>
+<small>This section is adapted from [Biology 2e, Section 39.2: Gas Exchange across Respiratory Surfaces](https://openstax.org/books/biology-2e/pages/39-2-gas-exchange-across-respiratory-surfaces) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; both figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_39_02_01 is a hand-drawn spirogram trace with labeled arrows, and Figure_B39_02_02 is a hand-drawn circulatory-pressure illustration — neither is a captured photograph); both figures' source alt text, which ran well over the 600-character accessibility limit, was shortened to what each image shows, with the fuller walk-through — the spirogram's six labeled arrows and the circulatory diagram's six pressure circles and five vessel labels — moved into a `longdesc`; the source's genuine partial-pressure equations (the general partial-pressure formula, the atmospheric-pressure sum, the two worked atmospheric examples, the water-vapor subtraction, the humidified-air example, and the two alveolar-P<sub>O₂</sub> equations) set in KaTeX, one per display line, while every other partial-pressure mention in prose, the Visual Connection options, and the self-checks uses the inline P<sub>O₂</sub>/P<sub>CO₂</sub> form the section itself prints; the note wrapping the Visual Connection rendered as its figure followed by a multiple choice, kept in the body in the Gas Exchange across the Alveoli section — the note copy and the `<exercise>` copy print identical question and option wording, so no adjudication was needed; the Link to Learning video note rendered as a callout, its `openstax.org/l/spirometry` URL kept; the Career Connection note rendered as a callout with its bold name; the lung-volumes-and-capacities CALS table kept as a Markdown table with its spanning title as a bold line above it — its columns (definition, volume, equation) are quantities and formulas rather than categories, so it does not qualify for a `sortbins` conversion under the "columns name categories" test; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 1, 3, 2 of the source's numbering; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the Critical Thinking selfcheck on detecting increased lung resistance (`fs-idp77276032`) corrected from the source solution's "restrictive disease… fibrosis" language to "an obstructive condition such as asthma," since the module's own sentence in Lung Volumes and Capacities says "when the FEV1/FVC ratio is low, there is resistance in the lung that is characteristic of asthma," an obstructive rather than restrictive condition; five key-term recall items added from the glossary (expiratory reserve volume, residual volume, spirometry, partial pressure, respiratory quotient) and placed first in their groups, covering a representative subset of the section's eighteen glossary terms rather than all of them — the other thirteen (alveolar P<sub>O₂</sub>, FEV1/FVC ratio, forced expiratory volume, functional residual capacity, inspiratory capacity, inspiratory reserve volume, lung capacity, lung volume, tidal volume, total lung capacity, venous P<sub>CO₂</sub>, venous P<sub>O₂</sub>, vital capacity) appear only in the Key terms list and the prose, since several carry a subscripted pressure symbol a learner cannot type into a text-recall field, and inspiratory reserve volume and total lung capacity are already the keys of the section's two Review Questions.</small>

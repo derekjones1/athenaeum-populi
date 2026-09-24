@@ -63,7 +63,7 @@ For a muscle cell to contract, the sarcomere must shorten. However, thick and th
 When (a) a sarcomere (b) contracts, the Z lines move closer together and the I band gets smaller. The A band stays the same width and, at full contraction, the thin filaments overlap.
 {{< /mediafigure >}}
 
-When a sarcomere shortens, some regions shorten whereas others stay the same length. A sarcomere is defined as the distance between two consecutive Z discs or Z lines; when a muscle contracts, the distance between the Z discs is reduced. The H zone—the central region of the A zone—contains only thick filaments and is shortened during contraction. The I band contains only thin filaments and also shortens. The A band does not shorten—it remains the same length—but A bands of different sarcomeres move closer together during contraction, eventually disappearing. Thin filaments are pulled by the thick filaments toward the center of the sarcomere until the Z discs approach the thick filaments. The zone of overlap, in which thin filaments and thick filaments occupy the same area, increases as the thin filaments move inward.
+When a sarcomere shortens, some regions shorten whereas others stay the same length. A sarcomere is defined as the distance between two consecutive Z discs or Z lines; when a muscle contracts, the distance between the Z discs is reduced. The H zone—the central region of the A band—contains only thick filaments and is shortened during contraction. The I band contains only thin filaments and also shortens. The A band does not shorten—it remains the same length—but A bands of different sarcomeres move closer together during contraction, eventually disappearing. Thin filaments are pulled by the thick filaments toward the center of the sarcomere until the Z discs approach the thick filaments. The zone of overlap, in which thin filaments and thick filaments occupy the same area, increases as the thin filaments move inward.
 
 ## ATP and Muscle Contraction
 
@@ -82,7 +82,7 @@ Watch [a video explaining how a muscle contraction is signaled](https://openstax
 {{< /callout >}}
 
 {{< mediafigure src="biology/Figure_38_04_05" kind="diagram" alt="A five-step diagram of the actin-myosin cross-bridge cycle: two beaded actin filaments coiled with a tropomyosin strand run beside a myosin filament whose single myosin head, carrying ADP and phosphate, binds, bends through its power stroke, and releases across the five numbered frames stacked top to bottom." longdesc="Five frames are stacked top to bottom, each pairing a numbered caption at left with a drawing at right of the same beaded actin double-helix, wound with a thinner tropomyosin strand, beside a myosin filament ending in one myosin head. Frame 1, captioned 'The active site on actin is exposed as Ca²⁺ binds troponin,' labels 'Troponin,' 'Ca²⁺,' and 'Tropomyosin' along the top of the actin strand, 'Active site' on the actin beads, 'Actin' on the beaded strand at the right edge, and 'Myosin head' on the orange head below it, which carries an 'ADP' oval and a 'P' oval. Frame 2, captioned 'The myosin head forms a cross-bridge with actin,' shows the myosin head now touching the actin strand at the active site, still carrying its ADP and P ovals. Frame 3, captioned 'During the power stroke, the myosin head bends, and ADP and phosphate are released,' shows the head bent toward the left, still bound to actin, with two curved arrows beside it, one pointing left and one pointing right toward the ADP and P ovals, now drawn separated from the head; the troponin and Ca²⁺ marker, and the site where the head binds, now sit further left than in frames 1 and 2, showing that the actin filament has slid, and they stay there in frames 4 and 5. Frame 4, captioned 'A new molecule of ATP attaches to the myosin head, causing the cross-bridge to detach,' shows the head detached from actin with an 'ATP' oval in place of the ADP and P ovals. Frame 5, captioned 'ATP hydrolyzes to ADP and phosphate, which returns the myosin to the cocked position,' shows the head upright again, carrying ADP and P ovals as in frame 1." >}}
-The cross-bridge muscle contraction cycle, which is triggered by Ca²⁺ binding to the actin active site, is shown. With each contraction cycle, actin moves relative to myosin.
+The cross-bridge muscle contraction cycle, which is triggered by Ca²⁺ binding to troponin, is shown. With each contraction cycle, actin moves relative to myosin.
 {{< /mediafigure >}}
 
 {{< multiplechoice
@@ -126,7 +126,7 @@ ACh is broken down by the enzyme **acetylcholinesterase** (AChE) into acetyl and
 This diagram shows excitation-contraction coupling in a skeletal muscle contraction. The sarcoplasmic reticulum is a specialized endoplasmic reticulum found in muscle cells.
 {{< /mediafigure >}}
 
-{{< selfcheck question="The deadly nerve gas Sarin irreversibly inhibits Acetylcholinesterase. What effect would Sarin have on muscle contraction?" hint="Acetylcholinesterase normally clears acetylcholine from the synapse after each signal — think about what keeps happening at the muscle membrane if that clearing never happens, and then what happens once the muscle fiber's ion gradients finally run down." >}}
+{{< selfcheck question="The deadly nerve gas Sarin irreversibly inhibits Acetylcholinesterase. What effect would Sarin have on muscle contraction?" hint="Reread the acetylcholinesterase paragraph above the figure, steps 5 to 7 of the figure, and the paragraph on ion gradients earlier in Excitation–Contraction Coupling." >}}
 In the presence of Sarin, acetylcholine is not removed from the synapse, resulting in continuous stimulation of the muscle plasma membrane. At first, muscle activity is intense and uncontrolled, but the ion gradients dissipate, so electrical signals in the T-tubules are no longer possible. The result is paralysis, leading to death by asphyxiation.
 ===CHECKS===
 acetylcholine is not removed from the synapse, so the muscle plasma membrane is continuously stimulated
@@ -173,6 +173,25 @@ The body contains three types of muscle tissue: skeletal muscle, cardiac muscle,
 
 ### Classify the different types of muscle tissue
 
+{{< textin
+  question="Muscle tissue that occurs in the walls of hollow organs such as the intestines, stomach, and urinary bladder, and around passages such as the respiratory tract and blood vessels, is called ________."
+  answer="smooth muscle tissue"
+  accept="smooth muscle"
+  hint="Reread the three paragraphs describing the muscle tissue types at the top of the section."
+>}}
+
+{{< textin
+  question="Long cylindrical structures that lie parallel to the muscle fiber are called ________."
+  answer="myofibril"
+  hint="Reread the first paragraph of Skeletal Muscle Fiber Structure."
+>}}
+
+{{< textin
+  question="The functional unit of skeletal muscle is called a ________."
+  answer="sarcomere"
+  hint="Reread the third paragraph of Skeletal Muscle Fiber Structure."
+>}}
+
 {{< multiplechoice
   question="The cell membrane of a muscle fiber is called a ________."
   answer="sarcolemma"
@@ -183,25 +202,6 @@ sarcolemma
 sarcoplasm
 myofilament
 {{< /multiplechoice >}}
-
-{{< textin
-  question="Muscle tissue that occurs in the walls of hollow organs such as the intestines, stomach, and urinary bladder, and around passages such as the respiratory tract and blood vessels, is called ________."
-  answer="smooth muscle tissue"
-  accept="smooth muscle"
-  hint="This tissue has no striations, is not under voluntary control, and has only one nucleus per cell, tapered at both ends."
->}}
-
-{{< textin
-  question="Long cylindrical structures that lie parallel to the muscle fiber are called ________."
-  answer="myofibril"
-  hint="Within each muscle fiber are hundreds to thousands of these structures, each running the fiber's whole length and only about 1.2 µm across."
->}}
-
-{{< textin
-  question="The functional unit of skeletal muscle is called a ________."
-  answer="sarcomere"
-  hint="This is the segment of a myofibril bounded by two consecutive Z discs, and it is what shortens when a muscle contracts."
->}}
 
 ### Explain the role of muscles in locomotion
 
@@ -230,7 +230,7 @@ acetylcholinesterase
 {{< multiplechoice
   question="The ability of a muscle to generate tension immediately after stimulation is dependent on:"
   answer="overlap of myosin and actin"
-  hint="Think about where cross-bridges can physically form between the two kinds of filament, and what determines how many can form at once."
+  hint="Reread the second and third paragraphs of Control of Muscle Tension."
 >}}
 myosin interaction with the M line
 overlap of myosin and actin
@@ -241,7 +241,7 @@ none of the above
 {{< multiplechoice
   question="Botulinum toxin causes flaccid paralysis of the muscles, and is used for cosmetic purposes under the name Botox. Which of the following is the most likely mechanism of action of Botox?"
   answer="Botox decreases the release of acetylcholine from motor neurons."
-  hint="Flaccid paralysis means the muscle cannot be signaled to contract at all — think about which step of excitation-contraction coupling would have to fail at its very start for that to happen."
+  hint="Reread the Excitation–Contraction Coupling subsection and the figure at its end."
 >}}
 Botox decreases the production of acetylcholinesterase.
 Botox increases calcium release from the sarcoplasmic reticulum.
@@ -249,7 +249,7 @@ Botox blocks the ATP binding site in actin.
 Botox decreases the release of acetylcholine from motor neurons.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How would muscle contractions be affected if ATP was completely depleted in a muscle fiber?" hint="Think about which step of the cross-bridge cycle needs a fresh ATP molecule to happen at all." >}}
+{{< selfcheck question="How would muscle contractions be affected if ATP was completely depleted in a muscle fiber?" hint="Reread the ATP and Muscle Contraction subsection and its cross-bridge cycle figure." >}}
 Because ATP is required for myosin to release from actin, muscles would remain rigidly contracted until more ATP was available for the myosin cross-bridge release. This is why dead vertebrates undergo rigor mortis.
 ===CHECKS===
 ATP is required for myosin to release from actin
@@ -257,7 +257,7 @@ muscles would remain rigidly contracted until more ATP was available for the myo
 this is why dead vertebrates undergo rigor mortis
 {{< /selfcheck >}}
 
-{{< selfcheck question="What factors contribute to the amount of tension produced in an individual muscle fiber?" hint="This section names three variables in its final two subsections — one about the fiber's size, one about how stretched or shortened its sarcomeres already are, and one about how often the nerve signals it." >}}
+{{< selfcheck question="What factors contribute to the amount of tension produced in an individual muscle fiber?" hint="Reread the Control of Muscle Tension subsection." >}}
 The cross-sectional area, the length of the muscle fiber at rest, and the frequency of neural stimulation.
 ===CHECKS===
 the cross-sectional area of the muscle fiber
@@ -265,14 +265,14 @@ the length of the muscle fiber at rest
 the frequency of neural stimulation
 {{< /selfcheck >}}
 
-{{< selfcheck question="What effect will low blood calcium have on neurons? What effect will low blood calcium have on skeletal muscles?" hint="Consider where each cell type gets the calcium it needs — one depends on an inward flow from outside the cell, and one keeps its own internal supply." >}}
+{{< selfcheck question="What effect will low blood calcium have on neurons? What effect will low blood calcium have on skeletal muscles?" hint="Reread the Excitation–Contraction Coupling subsection: its first paragraph, its acetylcholine paragraph, and the figure at its end." >}}
 Neurons will not be able to release neurotransmitter without calcium. Skeletal muscles have calcium stored and don't need any from the outside.
 ===CHECKS===
 neurons will not be able to release neurotransmitter without calcium
 skeletal muscles have calcium stored and don't need any from the outside
 {{< /selfcheck >}}
 
-{{< selfcheck question="Skeletal muscles can only produce a mechanical force as they are contracted, but a leg flexes and extends while walking. How can muscles perform this task?" hint="Think about what has to happen to the opposing muscle each time one muscle in a pair contracts." >}}
+{{< selfcheck question="Skeletal muscles can only produce a mechanical force as they are contracted, but a leg flexes and extends while walking. How can muscles perform this task?" hint="Think about how a leg's flexing and its straightening could each be driven by a contraction." >}}
 Muscles are able to drive locomotion (and other tasks involving opposing motions) because they are paired. When walking, the hamstring muscle contracts first, causing the leg to flex around the knee joint. The quadriceps muscle then contracts (while the hamstring relaxes and extends) to straighten the leg as the foot returns to the ground.
 ===CHECKS===
 muscles are able to drive locomotion because they are paired
@@ -283,4 +283,4 @@ straighten the leg as the foot returns to the ground
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 38.4: Muscle Contraction and Locomotion](https://openstax.org/books/biology-2e/pages/38-4-muscle-contraction-and-locomotion) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_38_04_02, Figure_B38_04_03-myofibril, and Figure_B38_04_04-filaments are hand-drawn labeled illustrations of muscle-fiber and sarcomere structure, not captured photographs); a longdesc added to every labeled-anatomy diagram whose meaning is not carried by its one-line caption — the muscle-fiber cutaway, the myofibril, the relaxed/contracted sarcomere pair, and both Visual Connection diagrams — transcribing each drawing's own printed labels and counting its leader lines, brackets, panels, and numbered steps; the alt text for Figure_38_04_05 and Figure_38_04_06f shortened from the manifest's full step-by-step narrative (over 600 characters and letter-spaced as text-to-speech spelling, "A D P," "A T P") to a plain structural description, with the step-by-step walk moved into each figure's longdesc; in-text pointers to figures ("Figure 38.33" through "Figure 38.38") replaced with "shown below" or "illustrated below," since Hugo does not number figures; both notes wrapping a Visual Connection rendered as their figure followed by an interactive item, kept in the body — the power-stroke question (note and `<exercise id="fs-idm185147552">` copies print identical wording) as a multiple choice, and the Sarin question (note and `<exercise id="fs-idm122702560">` copies print identical wording) as a self-check, both placed immediately after their figure per this chapter's chart; option "Ca2+" in the power-stroke Visual Connection set as "Ca²⁺" (Unicode), matching this page's ion-charge notation; a typo in exercise `fs-idm122702560`'s printed solution, "acetycholine," corrected to "acetylcholine" in the self-check model answer; a typo in the module's own Section Summary, "Skeleton muscle tissue," present identically in the pinned CNXML and the source PDF, corrected to "Skeletal muscle tissue"; Review Question `fs-idm30541680` ("The ability of a muscle to generate tension immediately after stimulation is dependent on") keyed **B**, "overlap of myosin and actin," rather than the source's own key D, "none of the above" — the module's own text says "The number of cross-bridges formed between actin and myosin determine the amount of tension that a muscle fiber can produce" and "maximal tension occurs when thick and thin filaments overlap to the greatest degree," so the module's own text makes option B true and the source key is a source defect; the end-of-section Visual Connection, Review, and Critical Thinking Questions adapted into the body and the closing interactive Practice block (multiple choice and self-check); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items added from the glossary (smooth muscle tissue, myofibril, sarcomere), covering a representative subset of the section's fifteen glossary terms rather than all of them — the other twelve (actin, acetylcholinesterase, cardiac muscle tissue, motor end plate, myofilament, myosin, sarcolemma, skeletal muscle tissue, thick filament, thin filament, tropomyosin, troponin) appear only in the Key terms list and the prose, sarcolemma and tropomyosin/acetylcholinesterase are also the keys of Review Questions kept in Practice.</small>
+<small>This section is adapted from [Biology 2e, Section 38.4: Muscle Contraction and Locomotion](https://openstax.org/books/biology-2e/pages/38-4-muscle-contraction-and-locomotion) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_38_04_02, Figure_B38_04_03-myofibril, and Figure_B38_04_04-filaments are hand-drawn labeled illustrations of muscle-fiber and sarcomere structure, not captured photographs); a longdesc added to every labeled-anatomy diagram whose meaning is not carried by its one-line caption — the muscle-fiber cutaway, the myofibril, the relaxed/contracted sarcomere pair, and both Visual Connection diagrams — transcribing each drawing's own printed labels and counting its leader lines, brackets, panels, and numbered steps; the alt text for Figure_38_04_05 and Figure_38_04_06f shortened from the manifest's full step-by-step narrative (over 600 characters and letter-spaced as text-to-speech spelling, "A D P," "A T P") to a plain structural description, with the step-by-step walk moved into each figure's longdesc; in-text pointers to figures ("Figure 38.33" through "Figure 38.38") replaced with "shown below" or "illustrated below," since Hugo does not number figures; both notes wrapping a Visual Connection rendered as their figure followed by an interactive item, kept in the body — the power-stroke question (note and `<exercise id="fs-idm185147552">` copies print identical wording) as a multiple choice, and the Sarin question (note and `<exercise id="fs-idm122702560">` copies print identical wording) as a self-check, both placed immediately after their figure per this chapter's chart; option "Ca2+" in the power-stroke Visual Connection set as "Ca²⁺" (Unicode), matching this page's ion-charge notation; a typo in exercise `fs-idm122702560`'s printed solution, "acetycholine," corrected to "acetylcholine" in the self-check model answer; a typo in the module's own Section Summary, "Skeleton muscle tissue," present identically in the pinned CNXML and the source PDF, corrected to "Skeletal muscle tissue"; Review Question `fs-idm30541680` ("The ability of a muscle to generate tension immediately after stimulation is dependent on") keyed **B**, "overlap of myosin and actin," rather than the source's own key D, "none of the above" — the module's own text says "The number of cross-bridges formed between actin and myosin determine the amount of tension that a muscle fiber can produce" and "maximal tension occurs when thick and thin filaments overlap to the greatest degree," so the module's own text makes option B true and the source key is a source defect; the end-of-section Visual Connection, Review, and Critical Thinking Questions adapted into the body and the closing interactive Practice block (multiple choice and self-check); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items added from the glossary (smooth muscle tissue, myofibril, sarcomere) and placed ahead of Review Question `fs-idm99696576` (sarcolemma) in the first objective's group, covering a representative subset of the section's fifteen glossary terms rather than all of them — the other twelve (actin, acetylcholinesterase, cardiac muscle tissue, motor end plate, myofilament, myosin, sarcolemma, skeletal muscle tissue, thick filament, thin filament, tropomyosin, troponin) appear only in the Key terms list and the prose, sarcolemma and tropomyosin/acetylcholinesterase are also the keys of Review Questions kept in Practice; the Review Questions are placed under the objectives they test, so the sarcolemma question (second in the source) comes before the tropomyosin question (first); in the Sliding Filament Model paragraph the source's "the central region of the A zone" reads "the A band," the module's own name for that region everywhere else; and the cross-bridge figure's caption, which in the source says the cycle is "triggered by Ca²⁺ binding to the actin active site," reads "binding to troponin," as the module's own text and the figure's first step state.</small>
