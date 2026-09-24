@@ -695,7 +695,7 @@ test('a text-in grades wrong then right, and an Enter-key submission focuses the
     '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/',
   );
 
-  const card = page.locator('text-in[data-answer="deductive"]');
+  const card = page.locator('text-in[data-answer="serendipity"]');
   await expect(card).toHaveCount(1);
   await waitForUpgrade(card, (el) => (
     Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check'))
@@ -714,7 +714,7 @@ test('a text-in grades wrong then right, and an Enter-key submission focuses the
   // Submitted through the field's own Enter key, not the Check button — the
   // path <fill-in>'s equivalent test exists to guard, and nothing here had
   // covered for <text-in>.
-  await field.fill('deductive');
+  await field.fill('serendipity');
   await field.press('Enter');
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
