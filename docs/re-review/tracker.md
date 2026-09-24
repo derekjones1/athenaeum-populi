@@ -206,11 +206,11 @@ checks ran a narrow brief (they carry no hints; the gap is nearby leaks).
 | [x] | 11. Mechanisms of Microbial Genetics | 7 | — | — | a145b91 | Sep 22 full-scope sweep |
 | [x] | 12. Modern Applications of Microbial Genetics | 4 | — | — | a145b91 | Sep 22 full-scope sweep |
 | [x] | 13. Control of Microbial Growth | 4 | — | — | a145b91 | Sep 22 full-scope sweep |
-| [~] | 14. Antimicrobial Drugs | 7 | | | | 14.1–14.4 done (mic08, full scope); resume at 14.5 |
-| [ ] | 15. Microbial Mechanisms of Pathogenicity | 4 | | | | |
-| [ ] | 16. Disease and Epidemiology | 4 | | | | |
-| [ ] | 17. Innate Nonspecific Host Defenses | 5 | | | | |
-| [ ] | 18. Adaptive Specific Host Defenses | 5 | | | | |
+| [x] | 14. Antimicrobial Drugs | 7 | 36 | 1026–1027 | 28741e9 | 14.1–14.4 in the Sep 22 sweep (mic08); 14.5–14.7 Sep 24: one Opus fixer (~162k tokens), batched with ch15–18 (shared Fable solve 47/47, ~255k); 18 of 36 hint leaks; 14.5 MRSA nasal FIB answered MC4 → MC4 restored ahead of it; 14.6 MIC re-ask → microdilution cloze; 14.6 Kirby-Bauer Short Answer stays folded into its self-check CYU (open question for Derek) |
+| [x] | 15. Microbial Mechanisms of Pathogenicity | 4 | 95 | 611 (deviation) | 28741e9 | Sep 24: two Opus fixers (~333k); 46 of 95 hint leaks; parent replaced 15.1's dog-bite option that double-keyed the noncommunicable MC (611, kind options; min-confirmed 4858→4859 net of two new confirmations); endotoxin/exotoxin re-asks → toxigenicity, LAL; 15.1 'incubation' accept logged not-errata |
+| [x] | 16. Disease and Epidemiology | 4 | 58 | — | 28741e9 | Sep 24: two Opus fixers (~290k); 34 of 58 hint leaks; 16.1 epidemic-disease re-ask → influenza MC; 16.3 droplet MC key stitched two sentences → re-keyed to the single vehicle-transmission sentence |
+| [x] | 17. Innate Nonspecific Host Defenses | 5 | 81 | 1028–1029 | 28741e9 | Sep 24: two Opus fixers (~332k); 49 of 81 hint leaks; 17.5 pyrogen CYU key never printed by the module → re-keyed to the LPS sentence; GobletCell alt's 'Figure a/b' (1028, image checked); 17.2 bacteriocins pair print each other's keys (source-verbatim, disclosed) |
+| [x] | 18. Adaptive Specific Host Defenses | 5 | 108 | 1030 | 28741e9 | Sep 24: three Opus fixers (~435k); 72 of 108 hint leaks; 18.4 BCR body MC → self-check (mirror rule); lag-period and central-tolerance re-asks replaced; 18.2 APC stem restored to source; 18.1 plasma-cells key logged not-errata |
 | [ ] | 19. Diseases of the Immune System | 5 | | | | |
 | [ ] | 20. Laboratory Analysis of the Immune Response | 5 | | | | |
 | [ ] | 21. Skin and Eye Infections | 5 | | | | |
