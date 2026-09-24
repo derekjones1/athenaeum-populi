@@ -211,16 +211,16 @@ checks ran a narrow brief (they carry no hints; the gap is nearby leaks).
 | [x] | 16. Disease and Epidemiology | 4 | 58 | — | 28741e9 | Sep 24: two Opus fixers (~290k); 34 of 58 hint leaks; 16.1 epidemic-disease re-ask → influenza MC; 16.3 droplet MC key stitched two sentences → re-keyed to the single vehicle-transmission sentence |
 | [x] | 17. Innate Nonspecific Host Defenses | 5 | 81 | 1028–1029 | 28741e9 | Sep 24: two Opus fixers (~332k); 49 of 81 hint leaks; 17.5 pyrogen CYU key never printed by the module → re-keyed to the LPS sentence; GobletCell alt's 'Figure a/b' (1028, image checked); 17.2 bacteriocins pair print each other's keys (source-verbatim, disclosed) |
 | [x] | 18. Adaptive Specific Host Defenses | 5 | 108 | 1030 | 28741e9 | Sep 24: three Opus fixers (~435k); 72 of 108 hint leaks; 18.4 BCR body MC → self-check (mirror rule); lag-period and central-tolerance re-asks replaced; 18.2 APC stem restored to source; 18.1 plasma-cells key logged not-errata |
-| [ ] | 19. Diseases of the Immune System | 5 | | | | |
-| [ ] | 20. Laboratory Analysis of the Immune Response | 5 | | | | |
-| [ ] | 21. Skin and Eye Infections | 5 | | | | |
-| [ ] | 22. Respiratory System Infections | 4 | | | | |
-| [ ] | 23. Urogenital System Infections | 6 | | | | |
-| [ ] | 24. Digestive System Infections | 6 | | | | |
-| [ ] | 25. Circulatory and Lymphatic System Infections | 4 | | | | |
-| [ ] | 26. Nervous System Infections | 4 | | | | |
-| [ ] | KC `knowledge-check-01-06` | — | | | | |
-| [ ] | KC `knowledge-check-07-12` | — | | | | |
-| [ ] | KC `knowledge-check-13-14` | — | | | | |
-| [ ] | KC `knowledge-check-15-20` | — | | | | |
-| [ ] | KC `knowledge-check-21-26` | — | | | | |
+| [x] | 19. Diseases of the Immune System | 5 | 93 | 1034–1036 | a188793 | Sep 24: three Opus fixers (~400k tokens), batched with ch20–26 and KC 01-06, 07-12 (shared Fable solve 93/93, ~500k); 52 of 93 hint leaks; 19.1 missing body paragraph restored; parent: mast-cell body textin → self-check (mirror rule), "vomiting center in the cerebellum" → brain stem with a Source note (1035, A&P 2e §15.4) |
+| [x] | 20. Laboratory Analysis of the Immune Response | 5 | 74 | 1037 | a188793 | Sep 24: two Opus fixers (~330k); 36 of 74 hint leaks; 20.4 Art Connection alt rewritten from the image (5 Y-shapes); 20.5 laser body MC → self-check (mirror rule); 1037 CD8 micrograph "tonsil" vs caption "bone marrow" (both as printed) |
+| [x] | 21. Skin and Eye Infections | 5 | 64 | 1038–1040 | a188793 | Sep 24: three Opus fixers (~390k); 35 of 64 hint leaks; oral-herpes cloze under the herpes MC → fifth disease; parent: bulla "no more than 5 mm" → at least 5 mm with a Source note (1039, the book's own 21.2) |
+| [x] | 22. Respiratory System Infections | 4 | 77 | 1041–1042 | a188793 | Sep 24: three Opus fixers (~410k); 44 of 77 hint leaks; 22.4 aspergillosis model answer claimed amphotericin B; 22.3 eradication MC double key re-optioned; measles caption letters corrected against the image (1042) |
+| [x] | 23. Urogenital System Infections | 6 | 65 | — | a188793 | Sep 24: three Opus fixers (~390k); 32 of 65 hint leaks; six author items replaced (reverse re-asks and stems printing a neighbour's key: leptospirosis, NGU, HPV, neonatal herpes, fluconazole, "trich") |
+| [x] | 24. Digestive System Infections | 6 | 61 | 1043–1044 | a188793 | Sep 24: three Opus fixers (~420k); 34 of 61 hint leaks; 24.2 cariogenic body textin → self-check (mirror rule); parent corrected "diptherioids"/"Bacteriodetes" page-wide (1043–1044) and cut a meta rubric clause |
+| [x] | 25. Circulatory and Lymphatic System Infections | 4 | 70 | — | a188793 | Sep 24: two Opus fixers (~325k); 38 of 70 hint leaks; 25.3 textins moved above MCs printing "Epstein-Barr virus"; parent added CMV accepts to the mononucleosis FIB (not-errata line) and disclosed the yellow-fever table comma |
+| [x] | 26. Nervous System Infections | 4 | 103 | 1045 | a188793 | Sep 24: two Opus fixers (~375k); 61 of 103 hint leaks; three sortbins double keys; botulism MC re-optioned to the three compared forms; leprosy "blowing nose" key stands (not-errata line) |
+| [x] | KC `knowledge-check-01-06` | — | 33 | — | a188793 | Sep 24: two Opus fixers (~490k) + one second checker (~195k, shared with 07-12); Needham MC was a reverse recall → van Helmont; Golgi stem de-claimed (erratum 380); the Fable solver caught the 5.2 Ascaris stem still printing the source's "greater than 1 meter" → 20–35 cm |
+| [x] | KC `knowledge-check-07-12` | — | 44 | — | a188793 | Sep 24: three Opus fixers (~650k); 8 replacements (spread rule, one-subsection sections); the ch11–12 fixer rewrote the shared file by script once (other fixers' edits verified intact); second checker replaced the Okazaki item (reverse recall) |
+| [x] | KC `knowledge-check-13-14` | — | 8 | — | a188793 | Sep 24: one Opus fixer (~210k), batched with KC 15-20, 21-26 (shared second checker ~255k, Fable solve 43/43, ~100k); 3 replacements (autoclave stem repeated "vacuum"; all 13.4 items came from the HPV subsection) |
+| [x] | KC `knowledge-check-15-20` | — | 46 | — | a188793 | Sep 24: three Opus fixers (~680k); 18 replacements, most for the spread rule (7 of ch17–18's 10 sections drew all items from one subsection); second checker reworded the 18.3 stem that ruled out a distractor |
+| [x] | KC `knowledge-check-21-26` | — | 38 | — | a188793 | Sep 24: three Opus fixers (~600k); 12 replacements; the attribution footer sat between Chapter 24 and 25 since assembly → moved, new lint (footer last, exactly one); second checker replaced the 25.1 germinal-centers item (a page rubric line) |
