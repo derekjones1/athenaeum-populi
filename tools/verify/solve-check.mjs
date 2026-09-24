@@ -221,6 +221,11 @@ export function gradeAnswer(exercise, written) {
     let cfg;
     try { cfg = parseSortbinsConfig(exercise.inner.trim()); }
     catch (error) { return { status: 'unrecognized', detail: `config unreadable: ${error.message}` }; }
+    // A solver that writes the mapping as a JSON string (Biology ch41–45
+    // solve, September 24, 2026: all four sortbins) means the object.
+    if (typeof written === 'string' && written.trim().startsWith('{')) {
+      try { written = JSON.parse(written); } catch { /* left unrecognized below */ }
+    }
     if (typeof written !== 'object' || written === null || Array.isArray(written)) {
       return { status: 'unrecognized', detail: 'a sortbins answer is an object mapping each item label to a bin label' };
     }

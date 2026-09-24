@@ -289,6 +289,7 @@ test('a sortbins answer is a full label→bin mapping graded against the config'
   assert.match(disagreement.detail, /Telomerase present.*solver: "Prokaryotes"; key: "Eukaryotes"/);
 
   assert.equal(gradeAnswer(exercise, 'Prokaryotes').status, 'unrecognized', 'a bare string is a solver slip');
+  assert.equal(gradeAnswer(exercise, JSON.stringify(right)).status, 'agrees', 'a mapping written as a JSON string is the mapping');
   assert.equal(gradeAnswer(exercise, { ...right, 'Telomerase present': 'Ribosomes' }).status, 'unrecognized', 'an unknown bin is a solver slip');
   const { 'PCNA sliding clamp': dropped, ...partial } = right;
   assert.equal(gradeAnswer(exercise, partial).status, 'unrecognized', 'a missing item is a solver slip');
