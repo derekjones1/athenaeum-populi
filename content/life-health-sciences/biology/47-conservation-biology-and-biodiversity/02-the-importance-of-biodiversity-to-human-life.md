@@ -49,13 +49,13 @@ The ability to create new crop varieties relies on the diversity of varieties av
 
 Since the 1920s, government agriculture departments have maintained seed banks of crop varieties as a way of maintaining crop diversity. This system has flaws because, over time, seed banks are lost through accidents, and there is no way to replace them. In 2008, the **Svalbard Global Seed Vault**, shown below, began storing seeds from around the world as a backup system to the regional seed banks. If a regional seed bank stores varieties in Svalbard, losses can be replaced from Svalbard. Conditions within the vault are maintained at ideal temperature and humidity for seed survival, but the deep underground location of the vault in the arctic means that failure of the vault's systems will not compromise the climatic conditions inside the vault.
 
-{{< mediafigure src="biology/Figure_47_02_02" kind="photo" alt="Photo of a tall, wedge-shaped concrete structure with a glowing triangular panel at its peak and a lit doorway at ground level, built into a snow-covered hillside, with floodlights and a railed walkway leading to the entrance." >}}
+{{< mediafigure src="biology/Figure_47_02_02" kind="photo" alt="Photo of a tall, wedge-shaped concrete structure with a glowing rectangular panel at the top of its front face and a lit doorway at ground level, built into a snow-covered hillside, with floodlights and a railed walkway leading to the entrance." >}}
 The Svalbard Global Seed Vault is a storage facility for seeds of Earth's diverse crops. (credit: Mari Tefre, Svalbard Global Seed Vault)
 {{< /mediafigure >}}
 
 {{< selfcheck
   question="The Svalbard Global Seed Vault is located on Spitsbergen island in Norway, which has an arctic climate. Why might an arctic climate be good for seed storage?"
-  hint="Think about what a naturally cold environment can preserve for a long time even without any power source."
+  hint="The seed-bank paragraph just above the figure."
 >}}
 The ground is permanently frozen so the seeds will keep even if the electricity fails.
 ===CHECKS===
@@ -104,15 +104,16 @@ Biodiversity may provide important psychological benefits to humans. Additionall
 ### Identify chemical diversity benefits to humans
 
 {{< textin
-  question="A compound produced as a byproduct of plant metabolic processes, usually toxic but sequestered by the plant to defend against herbivores, is known as a ________."
-  answer="secondary plant compound"
-  hint="Think about what a plant produces to poison the animals that try to eat it."
+  question="Loss of biodiversity will impact the number of ________ available to humans."
+  answer="pharmaceuticals"
+  accept="medicine|drug|medication"
+  hint="The first paragraph of the section summary."
 >}}
 
 {{< multiplechoice
   question="A secondary plant compound might be used for which of the following?"
   answer="a new drug"
-  hint="Reread the section's opening discussion of chemical diversity, where this kind of compound is defined."
+  hint="The first paragraph of Human Health."
 >}}
 a new crop variety
 a new drug
@@ -126,8 +127,8 @@ a pest of a crop pest
 >}}
 Secondary plant compounds are toxins produced by plants to kill predators trying to eat them, and some of these compounds can be used as drugs. Animal toxins, such as snake venom, can also be used as drugs. (Alternate answer: antibiotics are compounds produced by bacteria and fungi which can be used to kill bacteria.)
 ===CHECKS===
-secondary plant compounds are toxins plants produce to kill predators trying to eat them
-some secondary plant compounds can be used as drugs
+secondary plant compounds are toxins produced by plants to kill predators trying to eat them
+some of these compounds can be used as drugs
 animal toxins, such as snake venom, can also be used as drugs
 {{< /selfcheck >}}
 
@@ -135,13 +136,13 @@ animal toxins, such as snake venom, can also be used as drugs
 
 {{< selfcheck
   question="Explain how biodiversity loss can impact crop diversity."
-  hint="Think about where the genes that create new crop varieties originally come from."
+  hint="The Agricultural Diversity subsection."
 >}}
 Crop plants are derived from wild plants, and genes from wild relatives are frequently brought into crop varieties by plant breeders to add valued characteristics to the crops. If the wild species are lost, then this genetic variation would no longer be available.
 ===CHECKS===
 crop plants are derived from wild plants
-genes from wild relatives are brought into crop varieties by plant breeders to add valued characteristics
-if the wild species are lost, that genetic variation would no longer be available
+genes from wild relatives are frequently brought into crop varieties by plant breeders to add valued characteristics
+if the wild species are lost, then this genetic variation would no longer be available
 {{< /selfcheck >}}
 
 {{< textin
@@ -151,14 +152,14 @@ if the wild species are lost, that genetic variation would no longer be availabl
 >}}
 
 {{< selfcheck
-  question="According to the section, why does a fishery collapse usually restructure a marine ecosystem instead of driving the harvested species extinct?"
-  hint="Think about what happens to an ecosystem's balance when a dominant species becomes rare rather than disappearing altogether."
+  question="According to the section, what do fishery extinctions usually do to the harvested species and to its marine ecosystem?"
+  hint="The second paragraph of Wild Food Sources."
 >}}
 Fishery extinctions rarely lead to complete extinction of the harvested species, but rather to a radical restructuring of the marine ecosystem in which a dominant species is so over-harvested that it becomes a minor player, ecologically.
 ===CHECKS===
 fishery extinctions rarely lead to complete extinction of the harvested species
-instead, they lead to a radical restructuring of the marine ecosystem
-a dominant species becomes a minor player, ecologically
+a radical restructuring of the marine ecosystem
+a dominant species is so over-harvested that it becomes a minor player, ecologically
 {{< /selfcheck >}}
 
 ### Describe ecosystem services
@@ -187,7 +188,7 @@ predators of pests
 
 {{< selfcheck
   question="What benefits do the diverse organisms living in soil ecosystems provide to humans, according to the section?"
-  hint="Think about what soil organisms do to organic matter and soil texture, and who benefits from that work."
+  hint="The Agricultural Diversity paragraph on crop success and soil."
 >}}
 Diverse organisms living in soil ecosystems maintain nutrient cycles and soil texture, and in doing so they provide benefits to human food production, drinking water availability, and breathable air.
 ===CHECKS===
@@ -198,4 +199,4 @@ they provide benefits to drinking water availability and breathable air
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 47.2: The Importance of Biodiversity to Human Life](https://openstax.org/books/biology-2e/pages/47-2-the-importance-of-biodiversity-to-human-life) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: two figures re-encoded as WebP; Figure_47_02_02 re-kinded from the manifest's file-extension "diagram" guess to "photo" (it is a photograph of the Svalbard vault entrance, not a drawn illustration), and its source alt, which named only the door and snowbank, rewritten to also describe the glowing rooftop panel, the floodlights, and the railed walkway visible in the image; in-text pointers to the two figures ("Figure 47.8", "Figure 47.9") replaced with "shown below," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/declining_fish redirect URL; the module's one Visual Connection (its note and its `<exercise>` copy `fs-idp4784704` are identical in wording) kept in the body immediately after its figure as a self-check, with rubric checkpoints decomposing its model answer (the source solution) into two check-off clauses with no new claims; all three Review Questions adapted into the closing interactive Practice block as multiple choice, and both Critical Thinking Questions adapted as self-checks with rubric checkpoints; the section's one glossary term (secondary plant compound) added as a key-term recall item. Because this module carries only three objectives, five keyed exercises, one Visual Connection, and one glossary term against this book's floor of three items per objective group and eight per section, four items were written locally, disclosed here: a glossary text-recall item built from the definition's own wording, its prompt rephrased to avoid restating the answer term; a cloze text-recall built from the section summary's own sentence on food security; a self-check built from the section's own sentence on fishery collapses restructuring rather than eliminating a marine ecosystem; and a self-check paraphrasing the section's own sentence on what benefits soil organisms provide to humans, with no new claim.</small>
+<small>This section is adapted from [Biology 2e, Section 47.2: The Importance of Biodiversity to Human Life](https://openstax.org/books/biology-2e/pages/47-2-the-importance-of-biodiversity-to-human-life) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: two figures re-encoded as WebP; Figure_47_02_02 re-kinded from the manifest's file-extension "diagram" guess to "photo" (it is a photograph of the Svalbard vault entrance, not a drawn illustration), and its source alt, which named only the door and snowbank, rewritten to also describe the glowing panel atop its front face, the floodlights, and the railed walkway visible in the image; in-text pointers to the two figures ("Figure 47.8", "Figure 47.9") replaced with "shown below," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/declining_fish redirect URL; the module's one Visual Connection (its note and its `<exercise>` copy `fs-idp4784704` are identical in wording) kept in the body immediately after its figure as a self-check, with rubric checkpoints decomposing its model answer (the source solution) into two check-off clauses with no new claims; all three Review Questions adapted into the closing interactive Practice block as multiple choice, and both Critical Thinking Questions adapted as self-checks with rubric checkpoints, in reverse source order (the medications question, placed under the chemical-diversity objective, before the crop-diversity question); the section's one glossary term (secondary plant compound) stays a Key-terms bullet rather than a recall item, since the first Review Question already asks about it. Because this module carries only three objectives, five keyed exercises, one Visual Connection, and one glossary term against this book's floor of three items per objective group and eight per section, four items were written locally, disclosed here: two cloze text-recall items built from the section summary's own sentences, on pharmaceuticals and on food security; a self-check built from the section's own sentence on what fishery extinctions do to the harvested species and its marine ecosystem; and a self-check paraphrasing the section's own sentence on what benefits soil organisms provide to humans, with no new claim.</small>

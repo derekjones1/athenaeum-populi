@@ -123,10 +123,17 @@ The core threats to biodiversity are human population growth and unsustainable r
 
 ### Identify significant threats to biodiversity
 
+{{< textin
+  question="A species that has been intentionally or unintentionally introduced into an ecosystem in which it did not evolve is called a(n) ________."
+  answer="exotic species"
+  accept="invasive species|introduced species"
+  hint="Reread the opening sentence of the third threat subsection."
+>}}
+
 {{< multiplechoice
   question="Converting a prairie to a farm field is an example of ________."
   answer="habitat loss"
-  hint="Reread the section's opening paragraph, which names the greatest proximate threats, then the first subsection after it."
+  hint="Reread the section's opening paragraph, which names the major threats, and the subsections that describe each one."
 >}}
 overharvesting
 habitat loss
@@ -134,7 +141,7 @@ exotic species
 climate change
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the mechanisms by which human population growth and resource use causes increased extinction rates." hint="This section opens by naming the three or four threats that follow directly from a growing population's need for space, food, and energy — trace each one back to that need." >}}
+{{< selfcheck question="Describe the mechanisms by which human population growth and resource use causes increased extinction rates." hint="Reread the section's opening paragraph, which traces the threats back to their human causes." >}}
 Human population growth leads to unsustainable resource use, which causes habitat destruction to build new human settlements, create agricultural fields, and so on. Larger human populations have also led to unsustainable fishing and hunting of wild animal populations. Excessive use of fossil fuels also leads to global warming.
 ===CHECKS===
 human population growth leads to unsustainable resource use
@@ -143,19 +150,12 @@ larger human populations have led to unsustainable fishing and hunting of wild a
 excessive use of fossil fuels also leads to global warming
 {{< /selfcheck >}}
 
-{{< textin
-  question="A species that has been intentionally or unintentionally introduced into an ecosystem in which it did not evolve is called a(n) ________."
-  answer="exotic species"
-  accept="invasive species"
-  hint="Organisms of this kind often undergo dramatic population increases in a new environment because they left their natural predators behind — what two-word term does this section use for such organisms?"
->}}
-
-{{< sortbins question="Sort each event described in this section into the threat to biodiversity it illustrates." hint="Think about which events remove or convert the physical surroundings a species lives in, which involve taking organisms directly from the wild, which involve an organism arriving somewhere it did not evolve, and which involve a shifting global climate." >}}
+{{< sortbins question="Sort each event described in this section into the threat to biodiversity it illustrates." hint="Each event comes from one of the section's four threat subsections; find where each one is described." >}}
 {"bins": ["Habitat Loss", "Overharvesting", "Exotic Species", "Climate Change"],
  "items": [
   {"label": "Half of Sumatra's forest is now gone", "bin": 0},
   {"label": "The introduction of modern factory trawlers in the 1980s caused the western Atlantic cod fishery to become unsustainable", "bin": 1},
-  {"label": "The intentional introduction of the Nile perch caused the extinction of about 200 kinds of endemic cichlids in Lake Victoria", "bin": 2},
+  {"label": "The intentional introduction of the Nile perch was largely responsible for the extinction of about 200 kinds of endemic cichlids in Lake Victoria", "bin": 2},
   {"label": "The geographic range of grizzly bears now overlaps that of polar bears", "bin": 3},
   {"label": "Forests are removed for timber and to plant palm oil plantations", "bin": 0},
   {"label": "Commercialization of the bush meat trade has pushed hunting rates to the level of unsustainability", "bin": 1},
@@ -169,7 +169,7 @@ excessive use of fossil fuels also leads to global warming
 {{< multiplechoice
   question="Which two extinction risks may be a direct result of the pet trade?"
   answer="overharvesting and exotic species introduction"
-  hint="Find the paragraphs that mention the pet trade and home aquaria, and note which threat subsection each one sits in."
+  hint="Reread the paragraph on coral reefs and home marine aquaria, and the paragraph on the amphibian fungus spread by a laboratory and pet species."
 >}}
 climate change and exotic species introduction
 habitat loss and overharvesting
@@ -215,7 +215,7 @@ tropical forests
 
 ### Identify the early and predicted effects of climate change on biodiversity
 
-{{< selfcheck question="Explain what extinction threats a frog living on a mountainside in Costa Rica might face." hint="This section names four major threats — think about which of them would shift a species' comfortable temperature zone up a mountain, which introduces new predators or pathogens, and which removes the forest itself." >}}
+{{< selfcheck question="Explain what extinction threats a frog living on a mountainside in Costa Rica might face." hint="Reread each of the section's four threat subsections and ask which could reach a mountainside frog." >}}
 The frog is at risk from global warming shifting its preferred habitat up the mountain. In addition, it will be at risk from exotic species, either as a new predator or through the impact of transmitted diseases such as chytridiomycosis. It is also possible that habitat destruction will threaten the species.
 ===CHECKS===
 the frog is at risk from global warming shifting its preferred habitat up the mountain
@@ -242,4 +242,4 @@ Climate change
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 47.3: Threats to Biodiversity](https://openstax.org/books/biology-2e/pages/47-3-threats-to-biodiversity) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: six figures re-encoded as WebP; `kind` set explicitly on every one after looking at the image — two of the manifest's file-extension guesses were wrong and corrected here (the atmospheric CO₂ line graph and the grizzly/polar-bear range map are both diagrams, not photos, despite being JPEGs), while the five-panel Sumatra/Borneo composite (already guessed `diagram` because one panel is a map) and the three wildlife photographs (snake, frog, bat) needed no change; a `longdesc` added to the CO₂ graph, walking its reversed time axis and its four labeled swings between roughly 180 and 300 ppm before the modern rise to about 395 ppm, and to the grizzly/polar-bear map, walking its three-region legend and where the ranges overlap — the other four figures need no `longdesc`, since their captions already carry what they show; three source alts that opened "Photo shows…" rewritten as plain descriptions of what is visible (the snake, the frog, and the bat), since these are locally authored accessibility fields; in-text figure pointers ("Figure 47.10" through "Figure 47.14") replaced with "shown below" or dropped where the source itself carried no inline pointer (the grizzly/polar-bear map), since Hugo does not number figures; the section's one `everyday` note and three `interactive` notes rendered as an Everyday Connection and three Link to Learning callouts, keeping the module's own openstax.org/l/habitat_map, /l/ocean_matters, and /l/exotic_invasive redirect URLs; the module's own "Visual Connection Questions" item (`fs-idp115769792`, keyed **B**, habitat loss), both Review Questions, and both Critical Thinking Questions adapted into the closing interactive Practice block — the module carries no `note class="visual-connection"` wrapping that item in the body, so it appears only in Practice, as a plain multiple choice, with no accompanying figure; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; all five of the section's glossary terms (bush meat, chytridiomycosis, exotic species, tragedy of the commons, white-nose syndrome) added as key-term recall items, giving this section complete glossary coverage; because the module carries only five glossary terms and five keyed exercises against this book's floor of three items per objective group and eight per section, three items were written locally and are disclosed here: two summary-built items for the climate-change objective (a select-the-term multiple choice naming climate change as the threat the Summary predicts will become significant, with the section's other three named threats as distractors, and a cloze text-recall on the Summary's own sentence that its impacts are greatest in the arctic), and a sort-into-bins exercise assigning eight of the section's own sentences (two per threat) to the threat each one illustrates — several of those eight sentences were reworded in one to three words each (dropping or replacing "species," "harvest," and "habitat") solely to avoid printing a bin's own label word on an item, with no change to the fact each sentence reports.</small>
+<small>This section is adapted from [Biology 2e, Section 47.3: Threats to Biodiversity](https://openstax.org/books/biology-2e/pages/47-3-threats-to-biodiversity) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: six figures re-encoded as WebP; `kind` set explicitly on every one after looking at the image — two of the manifest's file-extension guesses were wrong and corrected here (the atmospheric CO₂ line graph and the grizzly/polar-bear range map are both diagrams, not photos, despite being JPEGs), while the five-panel Sumatra/Borneo composite (already guessed `diagram` because one panel is a map) and the three wildlife photographs (snake, frog, bat) needed no change; a `longdesc` added to the CO₂ graph, walking its reversed time axis and its four labeled swings between roughly 180 and 300 ppm before the modern rise to about 395 ppm, and to the grizzly/polar-bear map, walking its three-region legend and where the ranges overlap — the other four figures need no `longdesc`, since their captions already carry what they show; three source alts that opened "Photo shows…" rewritten as plain descriptions of what is visible (the snake, the frog, and the bat), since these are locally authored accessibility fields; in-text figure pointers ("Figure 47.10" through "Figure 47.14") replaced with "shown below" or dropped where the source itself carried no inline pointer (the grizzly/polar-bear map), since Hugo does not number figures; the section's one `everyday` note and three `interactive` notes rendered as an Everyday Connection and three Link to Learning callouts, keeping the module's own openstax.org/l/habitat_map, /l/ocean_matters, and /l/exotic_invasive redirect URLs; the module's own "Visual Connection Questions" item (`fs-idp115769792`, keyed **B**, habitat loss), both Review Questions, and both Critical Thinking Questions adapted into the closing interactive Practice block — the module carries no `note class="visual-connection"` wrapping that item in the body, so it appears only in Practice, as a plain multiple choice, with no accompanying figure; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; all five of the section's glossary terms (bush meat, chytridiomycosis, exotic species, tragedy of the commons, white-nose syndrome) added as key-term recall items, giving this section complete glossary coverage; because the module carries only five glossary terms and five keyed exercises against this book's floor of three items per objective group and eight per section, three items were written locally and are disclosed here: two summary-built items for the climate-change objective (a select-the-term multiple choice naming climate change as the threat the Summary predicts will become significant, with the section's other three named threats as distractors, and a cloze text-recall on the Summary's own sentence that its impacts are greatest in the arctic), and a sort-into-bins exercise assigning eight of the section's own sentences (two per threat) to the threat each one illustrates — several of those eight sentences were condensed or given their referent (the cod fishery, the bush meat trade, the two bear species), and "species," "harvest," and "habitat" were replaced or dropped where they would print a bin's own label word on an item, with no change to the fact each sentence reports.</small>

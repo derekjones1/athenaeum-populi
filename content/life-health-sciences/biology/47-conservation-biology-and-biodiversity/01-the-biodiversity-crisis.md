@@ -133,14 +133,14 @@ The cause of this extinction is now understood to be the result of a cataclysmic
 
 Another possibility, perhaps coincidental with the impact of the Yucatan asteroid, was extensive volcanism that began forming about 66 million years ago, about the same time as the Yucatan asteroid impact, at the end of the Cretaceous. The lava flows covered over 50 percent of what is now India. The release of volcanic gases, particularly sulfur dioxide, during the extensive eruptions contributed to climate change, which may have induced the mass extinction.
 
-{{< mediafigure src="biology/Figure_47_01_05" kind="photo" alt="A close-up photo of layered sedimentary rock with a rock hammer laid across it. A thin, pale band running horizontally through the middle of the rock marks the K–Pg boundary; the rock below that band has fine dark-and-light-gray bands, distinct from the smoother, redder-brown rock above it." >}}
+{{< mediafigure src="biology/Figure_47_01_05" kind="photo" alt="A close-up photo of layered sedimentary rock, with a rock hammer standing upright against it at the right. A thin, pale band running horizontally through the middle of the rock marks the K–Pg boundary; the rock below that band has fine dark-and-light-gray bands, distinct from the smoother, redder-brown rock above it." >}}
 In 1980, Luis and Walter Alvarez, Frank Asaro, and Helen Michels discovered, across the world, a spike in the concentration of iridium within the sedimentary layer at the K–Pg boundary. These researchers hypothesized that this iridium spike was caused by an asteroid impact that resulted in the K–Pg mass extinction. In the photo, the iridium layer is the light band. (credit: USGS)
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Scientists measured the relative abundance of fern spores above and below the K–Pg boundary in this rock sample. Which of the following statements most likely represents their findings?"
   answer="An abundance of fern spores from several species was found below the K–Pg boundary, but none was found above."
-  hint="Think about what a mass extinction event does to the diversity and abundance of a group's fossils on the older side of a boundary compared with the younger side — the rock in this photo spans exactly that kind of transition."
+  hint="Look at the K–Pg boundary photo just above and the end-Cretaceous paragraphs under The Five Mass Extinctions."
 >}}
 An abundance of fern spores from several species was found below the K–Pg boundary, but none was found above.
 An abundance of fern spores from several species was found above the K–Pg boundary, but none was found below.
@@ -217,7 +217,7 @@ Five mass extinctions with losses of more than 50 percent of extant species are 
 {{< multiplechoice
   question="The number of currently described species on the planet is about ________."
   answer="1.5 million"
-  hint="The Current Species Diversity discussion gives one number for species science has already named and described, and a much larger number for its own rough guess at how many exist in total — pick the smaller, already-described figure."
+  hint="The first paragraph of Current Species Diversity."
 >}}
 17,000
 150,000
@@ -228,14 +228,14 @@ Five mass extinctions with losses of more than 50 percent of extant species are 
 {{< textin
   question="The variety of a biological system — typically thought of as the number of species, but also applied to genes, biochemistry, and ecosystems — is called ________."
   answer="biodiversity"
-  hint="Ecologists have separate words for genetic variety, chemical variety, and ecosystem variety; this is the umbrella word that covers all of them, defined in this section's opening paragraph."
+  hint="The section's opening paragraph."
 >}}
 
 {{< textin
   question="A species found in only one location is called a(n) ________."
   answer="endemic species"
   accept="endemic"
-  hint="Lake Victoria's now-vanished cichlids were an example of this kind of species — restricted to a single lake and nowhere else on Earth."
+  hint="The first paragraph of Patterns of Biodiversity."
 >}}
 
 ### Describe biodiversity as the equilibrium of naturally fluctuating rates of extinction and speciation
@@ -254,7 +254,7 @@ evidence of an asteroid impact
 {{< multiplechoice
   question="With an extinction rate of 100 E/MSY and an estimated 10 million species, how many extinctions are expected to occur in a century?"
   answer="100,000"
-  hint="E/MSY already scales the rate to a million species, so find how many million-species groups are in 10 million, multiply by the rate to get extinctions per year, then multiply by the number of years in a century."
+  hint="The background-extinction paragraph under Estimates of Present-Time Extinction Rates works one such conversion."
 >}}
 100
 10,000
@@ -266,11 +266,11 @@ evidence of an asteroid impact
   question="The relationship between the area surveyed and the number of species encountered, typically measured by increasing the surveyed area step by step and tracking the cumulative species count, is called the ________."
   answer="species-area relationship"
   accept="species-area curve"
-  hint="This is the second of the two methods for estimating present-time extinction rates described in this section — it works by shrinking or growing the size of a habitat and watching how many species come with it."
+  hint="The paragraph on the second approach under Estimates of Present-Time Extinction Rates."
 >}}
 
-{{< selfcheck question="Describe the two methods used to calculate contemporary extinction rates." hint="This section names two separate approaches under 'Estimates of Present-Time Extinction Rates' — one uses written historical records of species loss, the other uses habitat measurements." >}}
-Extinction rates are calculated based on the recorded extinction of species in the past 500 years, with adjustments made for unobserved extinctions and undiscovered species. The second method is a calculation based on the amount of habitat destruction and species-area curves.
+{{< selfcheck question="Describe the two methods used to calculate contemporary extinction rates." hint="Estimates of Present-Time Extinction Rates." >}}
+Extinction rates are calculated based on the recorded extinction of species in the past 500 years. Adjustments are made for unobserved extinctions and undiscovered species. The second method is a calculation based on the amount of habitat destruction and species-area curves.
 ===CHECKS===
 extinction rates are calculated based on the recorded extinction of species in the past 500 years
 adjustments are made for unobserved extinctions and undiscovered species
@@ -282,7 +282,7 @@ the second method is a calculation based on the amount of habitat destruction an
 {{< multiplechoice
   question="A mass extinction is defined as ________."
   answer="a loss of 50 percent of species"
-  hint="The paragraph introducing the five mass extinctions gives a percentage range for lost genera and a separate, larger fraction for lost species overall — look for the species figure, not the genera range."
+  hint="The paragraph just before The Five Mass Extinctions, under Biodiversity Change through Geological Time."
 >}}
 a loss of 95 percent of species
 an asteroid impact
@@ -290,7 +290,7 @@ a boundary between geological periods
 a loss of 50 percent of species
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the evidence for the cause of the Cretaceous–Paleogene (K–Pg) mass extinction." hint="The section names two separate physical clues found in the rock record itself — one a chemical signature in a thin layer, the other a geological scar on the map — that both point to the same kind of event." >}}
+{{< selfcheck question="Describe the evidence for the cause of the Cretaceous–Paleogene (K–Pg) mass extinction." hint="The end-Cretaceous paragraphs under The Five Mass Extinctions." >}}
 The hypothesized cause of the K–Pg extinction event is an asteroid impact. The first piece of evidence of the impact is a spike in iridium (an element that is rare on Earth, but common in meteors) in the geological layers that mark the K–Pg transition. The second piece of evidence is an impact crater off the Yucatán Peninsula that is the right size and age to have caused the extinction event.
 ===CHECKS===
 the hypothesized cause of the K–Pg extinction event is an asteroid impact
@@ -301,15 +301,15 @@ an impact crater off the Yucatán Peninsula that is the right size and age to ha
 {{< textin
   question="Large vertebrate animals such as the woolly mammoth and giant ground sloth are collectively called ________."
   answer="megafauna"
-  hint="This term names an entire group of animals by size alone — it comes up in this section's discussion of the Pleistocene, when North America's largest mammals disappeared."
+  hint="The first paragraph of the Pleistocene subsection."
 >}}
 
 {{< textin
   question="The complete disappearance of a species from Earth is called ________."
   answer="extinction"
-  hint="This section opens by contrasting the everyday, background rate of this process with five much larger spikes recorded in the fossil record."
+  hint="The section's introduction, in the paragraph on the Nile perch in Lake Victoria."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 47.1: The Biodiversity Crisis](https://openstax.org/books/biology-2e/pages/47-1-the-biodiversity-crisis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; four figures re-kinded from the manifest's file-extension guess — Figure_47_01_02 (the amphibian species map), Figure_47_01_03 (the biodiversity hotspots map), Figure_B47_01_04-extinctions (the extinction-intensity graph), and Figure_47_01_06 (the species-area graph) from "photo" to "diagram," and Figure_47_01_05 (the K–Pg boundary rock photo) from "diagram" to "photo"; Figure_47_01_01abf's "photo" guess confirmed after inspection. Figure_47_01_05's letter-spaced source alt ("K dash P g boundary") rewritten in plain prose. Figure_47_01_03's source alt, which named only a few of the 34 hotspots and misspelled "Australia" and "Caribbean" and printed "California cost" for "coast," rewritten to describe the map generally, with the full list of 34 hotspots moved into a longdesc. Figure_B47_01_04-extinctions's source alt (788 characters) shortened to fit the 600-character limit, with the peak readings moved into a longdesc that reads the drawn dots against the gridlines (about 22 percent for the late Devonian, 29 percent for the end-Triassic, and 66 million years ago for the end-Cretaceous, where the source alt says 25 percent, 30 percent, and roughly 70 million years ago — a source defect). Longdescs added to Figure_47_01_02, Figure_47_01_03, Figure_B47_01_04-extinctions, and Figure_47_01_06, transcribing legend classes, the full list of labeled hotspots, the five labeled extinction peaks with their axis values, and the graph's axis ranges and data trend, respectively. Figure_47_01_02's source alt, kept as the page alt, placed the 61–144 class "in the Amazon region"; the map shows that class only in a narrow band on the northern coast of South America and a patch of west-central Africa, with the Amazon basin shaded 41–60, so the alt now says so — a source defect. The Biogeographer Career Connection note rendered as a callout with its bold name and italicized title; the Link to Learning note rendered as a callout keeping its printed `openstax.org/l/extinctions` URL. Two source footnotes carrying full citations (Chapman 2009, whose citation also prints a URL, and the International Institute for Species Exploration's 2011 State of Observed Species report) folded into parenthetical text, as elsewhere in the corpus; the Chapman citation's URL kept as `openstax.org/l/Aus_diversity`; the IISE citation's URL is printed without a hyperlink (see the end of this clause). Both source tables kept as Markdown tables in the body (no `sortbins`, since neither table's columns name categories); the "Estimates of the Numbers of Described and Predicted Species by Taxonomic Group" table's two-row header collapsed into one row per source column, and its three source citations moved to a sentence below it. In-text pointers to numbered figures and tables replaced with "shown above/below" or "the table above/below," since Hugo does not number figures or tables. The body Visual Connection Question (`fs-idp3595520`) kept at the module's own printed key, **A** — the module says nothing else about fern spores or the K–Pg fossil record beyond this item, so its own text cannot overturn the key; the end-matter exercise copy's option C prints "boundary , and many" with a space before the comma (the in-body note copy already prints it correctly, "boundary, and many"), a source defect, and the page uses the note copy's correct spacing. The end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block, using every keyed exercise (`fs-idm50545184`, `fs-idp36989440`, `fs-idp51516512`, `fs-idm88859952`, `fs-idm111141248`, `fs-idp2875584`); rubric checkpoints added to both self-checks, decomposing each model answer (the source solution, lightly reformatted into complete sentences) into check-off clauses with no new claims. Five key-term recall items added from the glossary (biodiversity, endemic species, species-area relationship, megafauna, extinction), covering five of the section's twelve glossary terms; the remaining seven (adaptive radiation, biodiversity hotspot, chemical diversity, ecosystem diversity, extinction rate, genetic diversity, heterogeneity) appear only in the prose and Key terms list. Objective groups assigned by subsection: "Types of Biodiversity," "Current Species Diversity," "Patterns of Biodiversity," and "Conservation of Biodiversity" to the first objective; the "Biodiversity Change through Geological Time" introduction and "Estimates of Present-Time Extinction Rates" to the second (naturally fluctuating rates); "The Five Mass Extinctions," "The Pleistocene Extinction," and "Recent Extinctions" to the third (historical causes). No local items were needed; every Practice item traces to a keyed source exercise or the section's own glossary; the State of Observed Species citation's openstax.org redirect (`/l/observed_species`) is no longer a hyperlink — its destination, esf.edu/species, returned 404 on September 5, 2026, so the citation prints the URL as plain text.</small>
+<small>This section is adapted from [Biology 2e, Section 47.1: The Biodiversity Crisis](https://openstax.org/books/biology-2e/pages/47-1-the-biodiversity-crisis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; four figures re-kinded from the manifest's file-extension guess — Figure_47_01_02 (the amphibian species map), Figure_47_01_03 (the biodiversity hotspots map), Figure_B47_01_04-extinctions (the extinction-intensity graph), and Figure_47_01_06 (the species-area graph) from "photo" to "diagram," and Figure_47_01_05 (the K–Pg boundary rock photo) from "diagram" to "photo"; Figure_47_01_01abf's "photo" guess confirmed after inspection. Figure_47_01_05's letter-spaced source alt ("K dash P g boundary") rewritten in plain prose. Figure_47_01_03's source alt, which named only a few of the 34 hotspots and misspelled "Australia" and "Caribbean" and printed "California cost" for "coast," rewritten to describe the map generally, with the full list of 34 hotspots moved into a longdesc. Figure_B47_01_04-extinctions's source alt (788 characters) shortened to fit the 600-character limit, with the peak readings moved into a longdesc that reads the drawn dots against the gridlines (about 22 percent for the late Devonian, 29 percent for the end-Triassic, and 66 million years ago for the end-Cretaceous, where the source alt says 25 percent, 30 percent, and roughly 70 million years ago — a source defect). Longdescs added to Figure_47_01_02, Figure_47_01_03, Figure_B47_01_04-extinctions, and Figure_47_01_06, transcribing legend classes, the full list of labeled hotspots, the five labeled extinction peaks with their axis values, and the graph's axis ranges and data trend, respectively. Figure_47_01_02's source alt, kept as the page alt, placed the 61–144 class "in the Amazon region"; the map shows that class only in a narrow band on the northern coast of South America and a patch of west-central Africa, with the Amazon basin shaded 41–60, so the alt now says so — a source defect. The Biogeographer Career Connection note rendered as a callout with its bold name and italicized title; the Link to Learning note rendered as a callout keeping its printed `openstax.org/l/extinctions` URL. Two source footnotes carrying full citations (Chapman 2009, whose citation also prints a URL, and the International Institute for Species Exploration's 2011 State of Observed Species report) folded into parenthetical text, as elsewhere in the corpus; the Chapman citation's URL kept as `openstax.org/l/Aus_diversity`; the IISE citation's URL is printed without a hyperlink (see the end of this clause). Both source tables kept as Markdown tables in the body (no `sortbins`, since neither table's columns name categories); the "Estimates of the Numbers of Described and Predicted Species by Taxonomic Group" table's two-row header collapsed into one row per source column, and its three source citations moved to a sentence below it. In-text pointers to numbered figures and tables replaced with "shown above/below" or "the table above/below," since Hugo does not number figures or tables. The body Visual Connection Question (`fs-idp3595520`) kept at the module's own printed key, **A** — the module says nothing else about fern spores or the K–Pg fossil record beyond this item, so its own text cannot overturn the key; the end-matter exercise copy's option C prints "boundary , and many" with a space before the comma (the in-body note copy already prints it correctly, "boundary, and many"), a source defect, and the page uses the note copy's correct spacing. The end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block, using every keyed exercise (`fs-idm50545184`, `fs-idp36989440`, `fs-idp51516512`, `fs-idm88859952`, `fs-idm111141248`, `fs-idp2875584`); rubric checkpoints added to both self-checks, decomposing each model answer (the source solution, lightly reformatted into complete sentences) into check-off clauses with no new claims. Five key-term recall items added from the glossary (biodiversity, endemic species, species-area relationship, megafauna, extinction), covering five of the section's twelve glossary terms; the remaining seven (adaptive radiation, biodiversity hotspot, chemical diversity, ecosystem diversity, extinction rate, genetic diversity, heterogeneity) appear only in the prose and Key terms list. Objective groups assigned by subsection: "Types of Biodiversity," "Current Species Diversity," "Patterns of Biodiversity," and "Conservation of Biodiversity" to the first objective; the "Biodiversity Change through Geological Time" introduction and "Estimates of Present-Time Extinction Rates" to the second (naturally fluctuating rates); "The Five Mass Extinctions," "The Pleistocene Extinction," and "Recent Extinctions" to the third (historical causes). Placing items by objective reorders the source sets: the Review Questions appear as described species, adaptive radiation, the E/MSY calculation, and mass extinction (source order: the E/MSY calculation, adaptive radiation, described species, mass extinction), and the two Critical Thinking Questions appear in reverse source order (the extinction-rate methods before the K–Pg evidence). No local items were needed; every Practice item traces to a keyed source exercise or the section's own glossary; the State of Observed Species citation's openstax.org redirect (`/l/observed_species`) is no longer a hyperlink — its destination, esf.edu/species, returned 404 on September 5, 2026, so the citation prints the URL as plain text.</small>

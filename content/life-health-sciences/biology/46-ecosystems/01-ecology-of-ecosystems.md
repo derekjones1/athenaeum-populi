@@ -117,7 +117,7 @@ Conceptual models are also used to show the flow of energy through particular ec
 This conceptual model shows the flow of energy through a spring ecosystem in Silver Springs, Florida. Notice that the energy decreases with each increase in trophic level.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Why do you think the value for gross productivity of the primary producers is the same as the value for total heat and respiration (20,810 kcal/m²/yr)?" hint="Which basic law of physics governs the total amount of energy in a closed system as it changes form — can that total amount ever grow or shrink?" >}}
+{{< selfcheck question="Why do you think the value for gross productivity of the primary producers is the same as the value for total heat and respiration (20,810 kcal/m²/yr)?" hint="Trace where every red and blue branch of the flow chart above ends up." >}}
 According to the first law of thermodynamics, energy can neither be created nor destroyed. Eventually, all energy consumed by living systems is lost as heat or used for respiration, and the total energy output of the system must equal the energy that went into it.
 ===CHECKS===
 energy can neither be created nor destroyed, according to the first law of thermodynamics
@@ -172,13 +172,13 @@ Ecosystems exist on land, at sea, in the air, and underground. Different ways of
 {{< textin
   question="A community of living organisms together with their interactions with the surrounding, nonliving physical environment is called a(n) ________."
   answer="ecosystem"
-  hint="This term names the whole system — the organisms plus the nonliving surroundings they interact with — not just the organisms by themselves."
+  hint="Reread the section's second paragraph, which introduces this term in bold."
 >}}
 
 {{< multiplechoice
   question="The ability of an ecosystem to return to its equilibrium state after an environmental disturbance is called ________."
   answer="resilience"
-  hint="One of these four terms differs from 'resistance' by describing how fast a system springs back after a disturbance, rather than whether it resists changing in the first place."
+  hint="Reread the last paragraph before the Food Chains and Food Webs subsection, which names two parameters used to measure changes in ecosystems."
 >}}
 resistance
 restoration
@@ -186,7 +186,7 @@ reformation
 resilience
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe freshwater, ocean, and terrestrial ecosystems." hint="Recall which category covers the least of Earth's surface, which performs the most photosynthesis worldwide, and which is grouped into named biome types." >}}
+{{< selfcheck question="Describe freshwater, ocean, and terrestrial ecosystems." hint="Reread the paragraphs between the tide-pool and rainforest figure and the desert figure." >}}
 Freshwater ecosystems are the rarest, but have great diversity of freshwater fish and other aquatic life. Ocean ecosystems are the most common and are responsible for much of the photosynthesis that occurs on Earth. Terrestrial ecosystems are very diverse; they are grouped based on their species and environment (biome), which includes forests, deserts, and tundras.
 ===CHECKS===
 freshwater ecosystems are the rarest but have great diversity of freshwater fish and other aquatic life
@@ -195,6 +195,18 @@ terrestrial ecosystems are very diverse and are grouped based on their species a
 {{< /selfcheck >}}
 
 ### Explain the methods that ecologists use to study ecosystem structure and dynamics
+
+{{< textin
+  question="A portion of a natural ecosystem that is set aside to be used for experiments is called a ________."
+  answer="mesocosm"
+  hint="Reread the paragraph in the experimentation-and-modeling subsection that names the two kinds of controlled experimental system."
+>}}
+
+{{< textin
+  question="The study of the changes in structure of a natural system, caused by shifts in its environment or by forces within it, is called ________."
+  answer="ecosystem dynamics"
+  hint="The opening sentence of the subsection on experimentation and modeling defines this field of study."
+>}}
 
 {{< multiplechoice
   question="A re-created ecosystem in a laboratory environment is known as a ________."
@@ -207,24 +219,12 @@ microcosm
 reproduction
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does the microcosm modeling approach differ from utilizing a holistic model for ecological research?" hint="Compare who decides which organisms and conditions are present — nature itself, or the researcher setting up the tanks." >}}
+{{< selfcheck question="How does the microcosm modeling approach differ from utilizing a holistic model for ecological research?" hint="Reread the experimentation-and-modeling subsection's paragraphs on holistic ecosystem models and on controlled experimental systems." >}}
 In a microcosm model, an ecologist recreates an ecosystem in a controlled environment. Since the ecologist is populating the environment, he can control the variables and the different species involved in the study to ask specific questions.
 ===CHECKS===
 in a microcosm model, an ecologist recreates an ecosystem in a controlled environment
 since the ecologist is populating the environment, they can control the variables and species involved to ask specific questions
 {{< /selfcheck >}}
-
-{{< textin
-  question="A portion of a natural setting that is partitioned off and used for controlled experiments, without fully recreating the ecosystem indoors, is called a ________."
-  answer="mesocosm"
-  hint="This is the option that still uses a piece of the original natural setting, rather than rebuilding an ecosystem entirely in an indoor or outdoor laboratory."
->}}
-
-{{< textin
-  question="The study of the changes in structure of a natural system, caused by shifts in its environment or by forces within it, is called ________."
-  answer="ecosystem dynamics"
-  hint="The opening sentence of the subsection on experimentation and modeling defines this field of study."
->}}
 
 ### Identify the different methods of ecosystem modeling
 
@@ -232,19 +232,19 @@ since the ecologist is populating the environment, they can control the variable
   question="An ecosystem model built from flow charts that show how the living and nonliving parts of a system interact is called a(n) ________."
   answer="conceptual model"
   accept="compartment model"
-  hint="This is the descriptive, flow-chart type of model, not the kind built from mathematical formulas or from complex computer code."
+  hint="Reread the paragraph just before the first model-type subsection, which names and defines three basic types of ecosystem modeling."
 >}}
 
 {{< textin
   question="An ecosystem model built using complex computer programs to holistically predict how disturbances will affect a system is called a(n) ________."
   answer="simulation model"
-  hint="This is the most computationally demanding of the three model types, capable of running individual-based modeling of every organism."
+  hint="Reread the paragraph just before the first model-type subsection, which names and defines three basic types of ecosystem modeling."
 >}}
 
 {{< multiplechoice
   question="What term describes the use of mathematical equations in the modeling of linear aspects of ecosystems?"
   answer="analytical modeling"
-  hint="This approach uses simple mathematical formulas rather than flow charts or complex computer algorithms — which of the four names literally points at 'using equations'?"
+  hint="Reread the definitions of the three basic types of ecosystem modeling in the experimentation-and-modeling subsection."
 >}}
 analytical modeling
 simulation modeling
@@ -252,7 +252,7 @@ conceptual modeling
 individual-based modeling
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How do conceptual and analytical models of ecosystems complement each other?" hint="One model shows the whole picture qualitatively; the other predicts numerically but loses complexity — what does each contribute that the other lacks?" >}}
+{{< selfcheck question="How do conceptual and analytical models of ecosystems complement each other?" hint="Reread the two model-type subsections at the end of the experimentation-and-modeling discussion." >}}
 Conceptual models allow ecologists to see the "big picture" of how different components of the ecosystem interact with each other, energy sources, and resources. However, this approach is more descriptive than quantitative, so it is difficult to make conclusions about the resistance or resilience of a system. Analytical modeling creates a model that can predict how the ecosystem's relationships will change in response to disturbances, but does not convey the complexity of the relationships seen with conceptual modeling.
 ===CHECKS===
 conceptual models let ecologists see the big picture of how different ecosystem components interact with each other, energy sources, and resources
@@ -265,7 +265,7 @@ analytical modeling predicts how the ecosystem's relationships change in respons
 {{< multiplechoice
   question="Decomposers are associated with which class of food web?"
   answer="detrital"
-  hint="Recall which type of food web is built on organisms that feed on dead and decaying matter rather than on living producers."
+  hint="Reread the paragraph after the food web simulator Link to Learning, which names two general types of food webs."
 >}}
 grazing
 detrital
@@ -287,7 +287,7 @@ phytoplankton
 {{< multiplechoice
   question="The position of an organism along a food chain is known as its ________."
   answer="trophic level"
-  hint="This term names an organism's specific rung on the producer-or-consumer ladder, not a general word for 'place.'"
+  hint="Reread the paragraph that defines a food chain at the start of the Food Chains and Food Webs subsection."
 >}}
 locus
 location
@@ -298,7 +298,7 @@ microcosm
 {{< multiplechoice
   question="The loss of an apex consumer would impact which trophic level of a food web?"
   answer="all of the above"
-  hint="Trace the Lake Ontario food web figure from the apex consumer downward, following which organisms are linked to it directly or indirectly."
+  hint="Look at the Lake Ontario food web figure and the paragraph just above it."
 >}}
 primary producers
 primary consumers
@@ -309,7 +309,7 @@ all of the above
 {{< multiplechoice
   question="A food chain would be a better resource than a food web to answer which question?"
   answer="How does energy move from an organism in one trophic level to an organism on the next trophic level?"
-  hint="A food chain draws a single linear path — which question asks about movement along just that one path, rather than something only a web's overlapping connections could show?"
+  hint="Reread the food-chain definition and the paragraph after the Lake Ontario food web figure that compares the two structural models."
 >}}
 How does energy move from an organism in one trophic level to an organism on the next trophic level?
 How does energy move within a trophic level?
@@ -317,7 +317,7 @@ What preys on grasses?
 How is organic matter recycled in a forest?
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Compare and contrast food chains and food webs. What are the strengths of each concept in describing ecosystems?" hint="Food chains follow one single path; food webs capture many overlapping paths — think about which shape is simpler to model and which shape better matches a real ecosystem's complexity." >}}
+{{< selfcheck question="Compare and contrast food chains and food webs. What are the strengths of each concept in describing ecosystems?" hint="Reread the paragraph after the Lake Ontario food web figure that compares the two types of structural ecosystem models." >}}
 Food webs show interacting groups of different species and their many interconnections with each other and the environment. Food chains are linear aspects of food webs that describe the succession of organisms consuming one another at defined trophic levels. Food webs are a more accurate representation of the structure and dynamics of an ecosystem. Food chains are easier to model and use for experimental studies.
 ===CHECKS===
 food webs show interacting groups of different species and their many interconnections with each other and the environment
@@ -326,7 +326,7 @@ food webs are a more accurate representation of the structure and dynamics of an
 food chains are easier to model and use for experimental studies
 {{< /selfcheck >}}
 
-{{< selfcheck question="Compare grazing and detrital food webs. Why would they both be present in the same ecosystem?" hint="Think about what happens to a producer's body once it dies — which food web recycles that dead material, and why would a grazing food web need it recycled?" >}}
+{{< selfcheck question="Compare grazing and detrital food webs. Why would they both be present in the same ecosystem?" hint="Reread the paragraph after the food web simulator Link to Learning, which introduces the two general types of food webs." >}}
 Grazing food webs have a primary producer at their base, which is either a plant for terrestrial ecosystems or a phytoplankton for aquatic ecosystems. The producers pass their energy to the various trophic levels of consumers. At the base of detrital food webs are the decomposers, which pass this energy to a variety of other consumers. Detrital food webs are important for the health of many grazing food webs because they eliminate dead and decaying organic material, thus, clearing space for new organisms and removing potential causes of disease. By breaking down dead organic matter, decomposers also make mineral nutrients available to primary producers; this process is a vital link in nutrient cycling.
 ===CHECKS===
 grazing food webs have a primary producer at their base — a plant on land or a phytoplankton in the water
@@ -337,4 +337,4 @@ decomposers make mineral nutrients available to primary producers, a vital link 
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 46.1: Ecology of Ecosystems](https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_46_01_03 (the Lake Ontario food chain) and Figure_46_01_04 (the trophic-level bar graph) re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are illustrations, not captured photographs); a longdesc added to Figure_46_01_03, Figure_46_01_04, Figure_B46_01_05, and Figure_46_01_07-b018, each walking the diagram in reading order and, for the two graphs, transcribing every printed value or axis position (the Visual Connection figure's longdesc names only the printed values and arrows and never states the first-law reasoning that answers the question beneath it); the Figure_B46_01_05 food web's long source alt (1,371 characters, over the 600-character limit) was shortened to a plain visible-structure description with the full organism list, tier colors, and the six feeding exceptions moved into its longdesc, two of which are corrected from the source's own claim that the blue arrows run from *every* secondary consumer to every tertiary/apex consumer: Lake Whitefish's only blue arrow, zoomed, goes to Sea Lamprey alone, and Rainbow Smelt's only outgoing arrow, zoomed, feeds Yellow Perch (its own row) and reaches no tertiary/apex consumer, so Sea Lamprey's own exception is now "every secondary consumer except Rainbow Smelt" — a source defect; the source's underline emphasis on "Food Web" in the food-web Link to Learning note is rendered as bold; both Link to Learning notes rendered as callouts with descriptive link text, keeping the source's own openstax.org/l/ redirect URLs exactly as printed, including the second Darwin-Project URL's own misspelling ("Darwin_projct2"); the evolution note ("Evolution Connection. *Three-spined Stickleback.*") rendered as a callout with its figure and footnote citation kept inline as a parenthetical; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), and the Visual Connection kept in the body, immediately after its figure, as a self-check (the module keys it with prose, not a lettered choice); rubric checkpoints added to every self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (ecosystem, mesocosm, ecosystem dynamics, conceptual model, simulation model) to give two Practice groups an additional auto-graded item; four-plus-digit energy values in prose given digit-grouping commas for consistency with the figures (3368 → 3,368); no summary or locally authored practice item was needed — the module's fourteen keyed exercises already meet the section's practice floor with every objective covered by at least one source item. Source defect: module `m66701`'s own media alt for Figure_B46_01_05 says "Sea lamprey eat all tertiary and secondary consumers," but the artwork draws no blue arrow from Rainbow Smelt to Sea Lamprey (or to any tertiary/apex consumer) — Rainbow Smelt's only outgoing arrow feeds Yellow Perch, in its own row; the page's longdesc now states the exception. Source defect: module `m66701`'s own prose (paragraph beginning "The loss of energy between trophic levels...") states the primary producers' and primary consumers' Silver Springs values as 20,819 and 3,368 kcal/m²/yr, while the module's own Figure_46_01_07-b018 (the Visual Connection energy-flow diagram, drawing on the same Odum 1957 study) prints 20,810 and 3,373 kcal/m²/yr for the same two quantities — both figures are printed as shown in the pinned CNXML and the local PDF (pp. 1376 and 1381), a source defect kept as printed, since the page transcribes each value exactly as printed in its own location. One date is corrected with a visible Source note: Odum's Silver Springs study is from the 1950s, not the 1940s.</small>
+<small>This section is adapted from [Biology 2e, Section 46.1: Ecology of Ecosystems](https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_46_01_03 (the Lake Ontario food chain) and Figure_46_01_04 (the trophic-level bar graph) re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are illustrations, not captured photographs); a longdesc added to Figure_46_01_03, Figure_46_01_04, Figure_B46_01_05, and Figure_46_01_07-b018, each walking the diagram in reading order and, for the two graphs, transcribing every printed value or axis position (the Visual Connection figure's longdesc names only the printed values and arrows and never states the first-law reasoning that answers the question beneath it); the Figure_B46_01_05 food web's long source alt (1,371 characters, over the 600-character limit) was shortened to a plain visible-structure description with the full organism list, tier colors, and the six feeding exceptions moved into its longdesc, two of which are corrected from the source's own claim that the blue arrows run from *every* secondary consumer to every tertiary/apex consumer: Lake Whitefish's only blue arrow, zoomed, goes to Sea Lamprey alone, and Rainbow Smelt's only outgoing arrow, zoomed, feeds Yellow Perch (its own row) and reaches no tertiary/apex consumer, so Sea Lamprey's own exception is now "every secondary consumer except Rainbow Smelt" — a source defect; the source's underline emphasis on "Food Web" in the food-web Link to Learning note is rendered as bold; both Link to Learning notes rendered as callouts with descriptive link text, keeping the source's own openstax.org/l/ redirect URLs exactly as printed, including the second Darwin-Project URL's own misspelling ("Darwin_projct2"); the evolution note ("Evolution Connection. *Three-spined Stickleback.*") rendered as a callout with its figure and footnote citation kept inline as a parenthetical; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), and the Visual Connection kept in the body, immediately after its figure, as a self-check (the module keys it with prose, not a lettered choice); rubric checkpoints added to every self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (ecosystem, mesocosm, ecosystem dynamics, conceptual model, simulation model) to bring the first three Practice groups to the three-item floor, placed ahead of the source questions in each group; four-plus-digit energy values in prose given digit-grouping commas for consistency with the figures (3368 → 3,368); no summary or other locally authored practice item was needed — every objective is covered by at least one of the module's fourteen keyed exercises; each source question is placed under the objective it tests, so the Review Questions run in the order 1, 2, 5, 3, 4, 6, 7, 8 of the source's numbering and the Critical Thinking Questions in the order 2, 4, 5, 1, 3. Source defect: module `m66701`'s own media alt for Figure_B46_01_05 says "Sea lamprey eat all tertiary and secondary consumers," but the artwork draws no blue arrow from Rainbow Smelt to Sea Lamprey (or to any tertiary/apex consumer) — Rainbow Smelt's only outgoing arrow feeds Yellow Perch, in its own row; the page's longdesc now states the exception. Source defect: module `m66701`'s own prose (paragraph beginning "The loss of energy between trophic levels...") states the primary producers' and primary consumers' Silver Springs values as 20,819 and 3,368 kcal/m²/yr, while the module's own Figure_46_01_07-b018 (the Visual Connection energy-flow diagram, drawing on the same Odum 1957 study) prints 20,810 and 3,373 kcal/m²/yr for the same two quantities — both figures are printed as shown in the pinned CNXML and the local PDF (pp. 1376 and 1381), a source defect kept as printed, since the page transcribes each value exactly as printed in its own location. One date is corrected with a visible Source note: Odum's Silver Springs study is from the 1950s, not the 1940s.</small>

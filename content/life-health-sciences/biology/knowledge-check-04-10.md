@@ -64,14 +64,14 @@ the higher the resolution, the better the image's clarity and detail
 {{< textin
   question="Pili exchange genetic material between two bacteria through direct contact in a process called ________."
   answer="conjugation"
+  accept="bacterial conjugation"
 >}}
 
 {{< selfcheck question="How do microbiologists in the pharmaceutical sector help fight bacterial infections?" >}}
 Microbiologists who work in the pharmaceutical sector serve key roles in research and development by identifying new antibiotic sources that can treat bacterial infections.
 ===CHECKS===
 serve key roles in research and development
-identifying new antibiotic sources
-treat bacterial infections
+identifying new antibiotic sources that can treat bacterial infections
 {{< /selfcheck >}}
 
 ### 4.3 Eukaryotic Cells
@@ -86,8 +86,9 @@ photosynthetic protists
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A eukaryotic cell's \"little organs\" — membrane-bound compartments or sacs, each with a specialized cellular function — are called ________."
-  answer="organelles"
+  question="The plasma membranes of cells that specialize in absorption, such as those lining the small intestine, fold into fingerlike projections called ________."
+  answer="microvilli"
+  accept="microvillus"
 >}}
 
 {{< selfcheck question="How do a vesicle and a vacuole differ, and how do their membranes behave differently?" >}}
@@ -184,15 +185,16 @@ Gap junction
   question="Fish adapt to cold environments by changing the proportion of which membrane component?"
   answer="unsaturated fatty acids"
 >}}
-saturated fatty acids
+peripheral proteins
 glycolipids
 unsaturated fatty acids
 integral proteins
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A non-polar molecule that does not have the ability to bond with water, and that tends to cluster with other non-polar molecules rather than interact with polar ones, is called ________."
-  answer="hydrophobic"
+  question="A molecule, such as a phospholipid, that has a positively or negatively charged area and an uncharged, or non-polar, area is described as ________."
+  answer="amphiphilic"
+  accept="amphipathic"
 >}}
 
 {{< selfcheck question="How is a complex integral protein with several folded segments oriented within the membrane relative to its hydrophilic and hydrophobic regions?" >}}
@@ -232,19 +234,20 @@ plants lose turgor pressure in this condition and wilt
 
 ### 5.3 Active Transport
 
-{{< multiplechoice
-  question="Which of these active-transport pumps carries only one kind of ion, rather than two different kinds?"
-  answer="Ca²⁺ ATPase"
->}}
-Na⁺-K⁺ ATPase
-Ca²⁺ ATPase
-H⁺-K⁺ ATPase
-{{< /multiplechoice >}}
-
 {{< textin
-  question="The three carrier-protein types that active transport uses to facilitate movement — uniporters, symporters, and antiporters — are collectively known as ________."
-  answer="transporters"
+  question="Active transport mechanisms, which work against electrochemical gradients and usually require energy in the form of ATP, are also called ________."
+  answer="pumps"
+  accept="membrane pumps|ion pumps"
 >}}
+
+{{< multiplechoice
+  question="The Na⁺-K⁺ ATPase and the H⁺-K⁺ ATPase are both examples of which type of carrier protein?"
+  answer="antiporter"
+>}}
+uniporter
+symporter
+antiporter
+{{< /multiplechoice >}}
 
 {{< selfcheck question="How does the secondary active transport process that stores high-energy hydrogen ions in the mitochondria ultimately produce ATP?" >}}
 The potential energy that accumulates in the stored hydrogen ions translates into kinetic energy as the ions surge through the channel protein ATP synthase, and that energy then converts ADP into ATP.
@@ -262,9 +265,9 @@ that energy then converts ADP into ATP
 >}}
 
 {{< selfcheck question="What happens to a person's blood cholesterol level when familial hypercholesterolemia leaves their LDL receptors defective or missing?" >}}
-In the human genetic disease familial hypercholesterolemia, the LDL receptors are defective or missing entirely. Because receptor-mediated endocytosis normally removes LDL from the blood, people with this condition have life-threatening levels of cholesterol in their blood, because their cells cannot clear LDL particles.
+Receptor-mediated endocytosis removes low density lipoprotein or LDL (or "bad" cholesterol) from the blood. In the human genetic disease familial hypercholesterolemia, the LDL receptors are defective or missing entirely. People with this condition have life-threatening levels of cholesterol in their blood, because their cells cannot clear LDL particles.
 ===CHECKS===
-the LDL receptors are defective or missing entirely
+receptor-mediated endocytosis removes low density lipoprotein or LDL from the blood
 people with this condition have life-threatening levels of cholesterol in their blood
 their cells cannot clear LDL particles
 {{< /selfcheck >}}
@@ -277,7 +280,7 @@ their cells cannot clear LDL particles
   {"label": "Osmosis", "bin": 0},
   {"label": "Receptor-mediated endocytosis", "bin": 1},
   {"label": "Facilitated transport/diffusion", "bin": 0},
-  {"label": "Pinocytosis and potocytosis", "bin": 1}]}
+  {"label": "Pinocytosis", "bin": 1}]}
 {{< /sortbins >}}
 
 ## Chapter 6: Metabolism
@@ -303,8 +306,9 @@ under ideal conditions, energy from 18 molecules of ATP is required to synthesiz
 {{< /selfcheck >}}
 
 {{< textin
-  question="A series of interconnected biochemical reactions that convert a substrate molecule or molecules, step-by-step, through a series of metabolic intermediates, eventually yielding a final product or products, is called a ________."
+  question="A series of interconnected biochemical reactions that convert a substrate molecule or molecules, step-by-step, through a series of intermediates, eventually yielding a final product or products, is called a ________."
   answer="metabolic pathway"
+  accept="pathway"
 >}}
 
 ### 6.2 Potential, Kinetic, Free, and Activation Energy
@@ -318,30 +322,31 @@ under ideal conditions, energy from 18 molecules of ATP is required to synthesiz
   question="According to the second law of thermodynamics, every energy transfer loses some energy in an unusable form such as heat, resulting in increased ________."
   answer="entropy"
 >}}
-enthalpy
+potential energy
 entropy
 free energy
 activation energy
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain why the activation energy of a reaction is always a positive value, regardless of whether the reaction is exergonic or endergonic." >}}
-Whether a reaction is exergonic or endergonic determines whether its products exist at a lower or higher energy state than its reactants. However, regardless of this, the transition state of the reaction exists at a higher energy state than the reactants, and thus activation energy is always positive.
+{{< selfcheck question="What would happen to a cell's chemical reactions, and to the cell, if the cell were a closed system, and why does this not happen in a living cell?" >}}
+If a cell were a closed system, its chemical reactions would reach equilibrium, and it would die because there would be insufficient free energy left to perform the necessary work to maintain life. In a living cell, chemical reactions are constantly moving towards equilibrium, but never reach it. This is because a living cell is an open system. Materials pass in and out, the cell recycles the products of certain chemical reactions into other reactions, and there is never chemical equilibrium.
 ===CHECKS===
-whether a reaction is exergonic or endergonic determines whether its products exist at a lower or higher energy state than its reactants
-the transition state of the reaction exists at a higher energy state than the reactants
-thus activation energy is always positive
+its chemical reactions would reach equilibrium, and it would die
+there would be insufficient free energy left to perform the necessary work to maintain life
+chemical reactions are constantly moving towards equilibrium, but never reach it
+a living cell is an open system
+materials pass in and out, the cell recycles the products of certain chemical reactions into other reactions
 {{< /selfcheck >}}
 
 ### 6.3 The Laws of Thermodynamics
 
 {{< multiplechoice
-  question="Plants perform one of the most biologically useful energy transformations on Earth by converting sunlight energy into which form of energy stored within organic molecules?"
-  answer="Chemical energy"
+  question="The first law of thermodynamics states that the total amount of energy in the universe is ________."
+  answer="constant"
 >}}
-Light energy
-Heat energy
-Electrical energy
-Chemical energy
+increasing
+decreasing
+constant
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Using the analogy of a student's messy bedroom, explain how putting energy into a system relates to its entropy." >}}
@@ -379,9 +384,9 @@ the reactants are ATP and a water molecule
 {{< /selfcheck >}}
 
 {{< textin
-  question="A phosphorylated molecule is at a higher-energy state and is ________ than its unphosphorylated form."
-  answer="less stable"
-  accept="unstable|more unstable"
+  question="The phosphorylated molecule is at a higher-energy state and is less stable than its unphosphorylated form, and this added energy from phosphate allows the molecule to undergo its ________ reaction."
+  answer="endergonic"
+  accept="nonspontaneous|non-spontaneous"
 >}}
 
 ### 6.5 Enzymes
@@ -389,26 +394,26 @@ the reactants are ATP and a water molecule
 {{< textin
   question="DNA polymerase, the enzyme that builds DNA molecules, requires a bound metal ion as a cofactor in order to function. That metal is ________."
   answer="zinc"
-  accept="zinc ion|Zn²⁺"
+  accept="zinc ion|Zn²⁺|Zn"
 >}}
 
 {{< multiplechoice
-  question="When relative ADP levels are high compared to ATP, the cell is triggered to produce more ATP through which process?"
-  answer="Sugar catabolism"
+  question="Statins, a class of drugs that reduces cholesterol levels, are essentially inhibitors of which enzyme?"
+  answer="HMG-CoA reductase"
 >}}
-Feedback inhibition
-Sugar catabolism
-Enzyme compartmentalization
-Allosteric inhibition
+cyclooxygenase
+HMG-CoA reductase
+DNA polymerase
+pyruvate dehydrogenase
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain how compartmentalizing enzymes into different organelles in eukaryotic cells regulates enzyme activity, and give two examples." >}}
-In eukaryotic cells, enzymes are usually compartmentalized into different organelles, which allows for another level of regulation of enzyme activity. Enzymes required only for certain cellular processes are sometimes housed separately along with their substrates, allowing for more efficient chemical reactions. The enzymes involved in the latter stages of cellular respiration take place exclusively in the mitochondria, and the enzymes involved in digesting cellular debris and foreign materials are located within lysosomes.
+{{< selfcheck question="Explain how compartmentalizing enzymes in eukaryotic cells regulates enzyme activity, and give two examples." >}}
+In eukaryotic cells, enzymes are usually compartmentalized into different organelles, which allows for another level of regulation of enzyme activity. Enzymes required only for certain cellular processes are sometimes housed separately along with their substrates, allowing for more efficient chemical reactions. Examples include the enzymes involved in the latter stages of cellular respiration, which take place exclusively in the mitochondria, and the enzymes involved in digesting cellular debris and foreign materials, located within lysosomes.
 ===CHECKS===
 enzymes are usually compartmentalized into different organelles, which allows for another level of regulation of enzyme activity
 enzymes required only for certain cellular processes are sometimes housed separately along with their substrates, allowing for more efficient chemical reactions
-the enzymes involved in the latter stages of cellular respiration take place exclusively in the mitochondria
-the enzymes involved in digesting cellular debris and foreign materials are located within lysosomes
+the enzymes involved in the latter stages of cellular respiration, which take place exclusively in the mitochondria
+the enzymes involved in digesting cellular debris and foreign materials, located within lysosomes
 {{< /selfcheck >}}
 
 ## Chapter 7: Cellular Respiration
@@ -472,7 +477,7 @@ the negatively charged phosphate will not allow it to cross the hydrophobic inte
   answer="ATP is in short supply"
 >}}
 ATP levels increase
-succinyl CoA accumulates
+citrate accumulates
 NADH levels are high
 ATP is in short supply
 {{< /multiplechoice >}}
@@ -480,6 +485,7 @@ ATP is in short supply
 {{< textin
   question="A pathway that is both catabolic and anabolic, such as the citric acid cycle, is described as ________."
   answer="amphibolic"
+  accept="amphibolic pathway"
 >}}
 
 {{< selfcheck question="Why does the conversion of succinyl CoA to succinate in the citric acid cycle produce ATP in some tissues and GTP in others?" >}}
@@ -504,7 +510,7 @@ three
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The third complex of the electron transport chain, composed of cytochrome b, a Rieske center, and cytochrome c proteins, is also called ________."
+  question="The third complex of the electron transport chain, which contains a Rieske (2Fe-2S) center and pumps protons through the membrane, is also called ________."
   answer="cytochrome oxidoreductase"
 >}}
 
@@ -520,7 +526,7 @@ the removal of the hydrogen ions from the system contributes to the ion gradient
 ### 7.5 Metabolism without Oxygen
 
 {{< multiplechoice
-  question="Methanogens, archaeans found in soil and the digestive tracts of ruminants, oxidize NADH by reducing carbon dioxide to ________."
+  question="A group of archaeans found in soil and in the digestive tracts of ruminants, such as cows and sheep, oxidizes NADH by reducing carbon dioxide to ________."
   answer="methane"
 >}}
 hydrogen sulfide
@@ -583,17 +589,16 @@ glucose-6-phosphate
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A molecule that binds an allosteric site on an enzyme, increasing or decreasing its activity depending on conditions, is called a(n) ________."
+  question="A regulator molecule, most commonly one of the nucleotides ATP, ADP, AMP, NAD⁺, or NADH, that attaches to an enzyme and alters its structure, usually the configuration of its active site, so that the enzyme's activity increases or decreases depending on prevailing conditions, is called a(n) ________."
   answer="allosteric effector"
   accept="allosteric regulator"
 >}}
 
 {{< selfcheck question="How is pyruvate kinase's activity controlled by phosphorylation and dephosphorylation?" >}}
-The regulation of pyruvate kinase involves phosphorylation by a kinase, resulting in a less-active enzyme. Dephosphorylation by a phosphatase reactivates it. Pyruvate kinase is also regulated by ATP, a negative allosteric effect.
+The regulation of pyruvate kinase involves phosphorylation by a kinase, resulting in a less-active enzyme. Dephosphorylation by a phosphatase reactivates it.
 ===CHECKS===
 the regulation of pyruvate kinase involves phosphorylation by a kinase, resulting in a less-active enzyme
 dephosphorylation by a phosphatase reactivates it
-pyruvate kinase is also regulated by ATP, a negative allosteric effect
 {{< /selfcheck >}}
 
 ## Chapter 8: Photosynthesis
@@ -637,6 +642,7 @@ Visible light and radio waves
 {{< textin
   question="The ejection of an electron from a reaction center, using the energy of an absorbed photon, is called a(n) ________."
   answer="photoact"
+  accept="photo-act"
 >}}
 
 {{< selfcheck question="How does the buildup of hydrogen ions in the thylakoid lumen ultimately allow ATP synthase to produce ATP?" >}}
@@ -677,18 +683,19 @@ both processes use electron transport chains to capture the energy necessary to 
 ### 9.1 Signaling Molecules and Cellular Receptors
 
 {{< multiplechoice
-  question="When a ligand binds a G-protein-linked receptor and activates the G-protein, what happens to the guanine nucleotide bound to the alpha subunit?"
-  answer="GDP is released and GTP is bound to the alpha subunit."
+  question="In cholera, the toxin choleragen enters the cells lining the small intestine and modifies a G-protein there, resulting in large losses of fluids from the body. The opening of which channel does that G-protein control?"
+  answer="a chloride channel"
 >}}
-GDP is released and GTP is bound to the alpha subunit.
-The alpha subunit splits from the beta-gamma subunit.
-GTP bound to the alpha subunit is hydrolyzed to GDP.
-The alpha subunit and beta-gamma subunit reassociate to form the inactive G-protein.
+a chloride channel
+a sodium channel
+a calcium channel
+a magnesium channel
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A chemical ligand that carries a signal from one nerve cell to the next is called a(n) ________."
-  answer="neurotransmitter"
+  question="The small space between the axon terminals and dendrites of nerve cells, across which neurotransmitters travel from one cell to the next, is called a ________."
+  answer="chemical synapse"
+  accept="synapse|synaptic gap|synaptic cleft"
 >}}
 
 {{< selfcheck question="How does autocrine signaling during early development help ensure that a group of neighboring cells reach the correct developmental outcome?" >}}
@@ -713,7 +720,7 @@ ensuring the proper developmental outcome
 second messenger
 signal integration
 phosphorylation
-dimerization
+signal transduction
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Why is the concentration of free calcium ions inside a cell normally kept very low, and how does a cell raise it when signaling occurs?" >}}
@@ -727,13 +734,13 @@ raises the concentration of cytoplasmic Ca²⁺
 ### 9.3 Response to the Signal
 
 {{< multiplechoice
-  question="Cyclic AMP activates PKA (protein kinase A) in muscle cells, which phosphorylates two enzymes: glycogen phosphorylase kinase and glycogen synthase. What effect does PKA phosphorylation have on glycogen synthase?"
-  answer="Phosphorylation inhibits glycogen synthase's ability to form glycogen from glucose."
+  question="In a muscle cell responding to adrenaline, cyclic AMP activates PKA (protein kinase A), which phosphorylates glycogen synthase. What is the effect of that phosphorylation on glycogen synthase?"
+  answer="It inhibits the enzyme's ability to form glycogen from glucose."
 >}}
-Phosphorylation activates glycogen phosphorylase kinase, which in turn activates glycogen phosphorylase.
-Adrenaline binding β-adrenergic receptors raises cyclic AMP inside the muscle cell.
-Phosphorylation inhibits glycogen synthase's ability to form glycogen from glucose.
-Phosphorylated glycogen phosphorylase catabolizes glycogen into its constituent glucose monomers.
+It activates the enzyme, which then catabolizes glycogen into its constituent glucose monomers.
+It releases the enzyme from an inhibitor, so that it can enter the nucleus and initiate transcription.
+It inhibits the enzyme's ability to form glycogen from glucose.
+It unfolds the enzyme's associated mRNA, allowing protein synthesis to begin.
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Why do hydrophobic hormones like estrogen and testosterone trigger long-lasting signaling events?" >}}
@@ -749,8 +756,8 @@ they also protect the hormones from degradation by circulating enzymes
   answer="It activates the MAP kinase pathway, which stimulates expression of proteins that initiate cell division."
 >}}
 It phosphorylates Iκ-B, allowing NF-κB to enter the nucleus and initiate transcription.
-It phosphorylates glycogen synthase, inhibiting its ability to form glycogen from glucose.
-It binds carrier proteins, allowing an insoluble hormone to become soluble in the blood.
+It degrades cyclic AMP into AMP, terminating the signal.
+It removes the phosphate groups that kinases attached to proteins, terminating the signal.
 It activates the MAP kinase pathway, which stimulates expression of proteins that initiate cell division.
 {{< /multiplechoice >}}
 
@@ -784,13 +791,12 @@ similar to G-proteins
 ### 10.1 Cell Division
 
 {{< multiplechoice
-  question="Which trait often spreads through a bacterial colony by plasmid exchange from resistant donors to recipient cells?"
-  answer="antibiotic resistance"
+  question="In the third level of chromosome compaction, a variety of fibrous proteins pack the chromatin. What do these fibrous proteins also ensure about each chromosome in a non-dividing cell?"
+  answer="It occupies its own area of the nucleus, overlapping no other chromosome."
 >}}
-antibiotic resistance
-hair color
-eye color
-blood type
+It occupies its own area of the nucleus, overlapping no other chromosome.
+It wraps around a core of eight histone proteins at regular intervals.
+It coils, with its linker DNA, into a 30-nm chromatin fiber.
 {{< /multiplechoice >}}
 
 {{< textin
@@ -809,7 +815,7 @@ the genes found on the X and Y chromosomes are different
 ### 10.2 The Cell Cycle
 
 {{< multiplechoice
-  question="Which spindle microtubules do not engage the chromosomes, instead overlapping midway between the two poles to contribute to cell elongation?"
+  question="Which spindle microtubules do not engage the chromosomes, but instead overlap one another at the metaphase plate and slide against each other during anaphase, elongating the cell?"
   answer="polar microtubules"
 >}}
 kinetochore microtubules
@@ -843,8 +849,9 @@ eight minutes
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A protein whose concentration fluctuates throughout the cell cycle, and which helps regulate the cell's progress through its checkpoints, is called a ________."
+  question="A positive regulator protein whose concentration rises and falls in a predictable pattern, accumulating toward each major checkpoint and then being degraded by cytoplasmic enzymes once the cell moves to the next stage, is called a ________."
   answer="cyclin"
+  accept="cyclin protein"
 >}}
 
 {{< selfcheck question="Why is the cell cycle of a fertilized fruit fly egg completed in only about eight minutes?" >}}
@@ -870,6 +877,7 @@ apoptosis
 {{< textin
   question="In addition to monitoring DNA for damage, the normal p53 protein monitors the cell's supply of ________."
   answer="oxygen"
+  accept="O₂"
 >}}
 
 {{< selfcheck question="If a cell carrying a newly acquired oncogene mutation cannot reproduce further, why does the organism remain unharmed, and what can happen instead if its daughter cells are able to keep dividing?" >}}
@@ -883,18 +891,18 @@ if the atypical daughter cells are able to undergo further cell divisions, subse
 ### 10.5 Prokaryotic Cell Division
 
 {{< multiplechoice
-  question="Which eukaryotic chromosome-compaction proteins are related to the packing proteins found in the bacterial nucleoid?"
+  question="The proteins that pack the DNA of the bacterial nucleoid into a compact size are related to which eukaryotic proteins?"
   answer="cohesin and condensin proteins"
 >}}
 cohesin and condensin proteins
 histone proteins
-FtsZ
-tubulin
+tubulin proteins
 {{< /multiplechoice >}}
 
 {{< textin
   question="Replication of the bacterial chromosome's DNA is described as ________, moving away from the origin on both strands of the loop simultaneously."
   answer="bidirectional"
+  accept="bi-directional"
 >}}
 
 {{< selfcheck question="How are FtsZ and tubulin structurally and functionally similar, and what energy source do both proteins use to rapidly assemble and disassemble their structures?" >}}

@@ -23,7 +23,7 @@ weight: 4
 ### 1.1 The Science of Biology
 
 {{< multiplechoice
-  question="Which pair of disciplines builds on both the life and the physical sciences and is described as interdisciplinary?"
+  question="Which pair of disciplines are interdisciplinary, each building on both the life and the physical sciences?"
   answer="biophysics and biochemistry"
 >}}
 astronomy and geology
@@ -72,14 +72,15 @@ heat-resistant Archaea that live in boiling hotsprings
 Molecular biology studies biological processes at the molecular level,
 including interactions among molecules such as DNA, RNA, and proteins, and
 the way they are regulated. Neurobiology studies the biology of the nervous
-system; because of its interdisciplinary nature it is also known as
-neuroscience, and it studies nervous system functions using molecular,
+system; although it is a branch of biology, it is also an interdisciplinary
+field of study known as neuroscience. Because of its interdisciplinary
+nature, it studies nervous system functions using molecular,
 cellular, developmental, medical, and computational approaches.
 ===CHECKS===
 molecular biology studies biological processes at the molecular level, including interactions among DNA, RNA, and proteins
 neurobiology studies the biology of the nervous system
-neurobiology is also known as neuroscience because of its interdisciplinary nature
-it studies nervous system functions using molecular, cellular, developmental, medical, and computational approaches
+although it is a branch of biology, neurobiology is also an interdisciplinary field of study known as neuroscience
+because of its interdisciplinary nature, it studies nervous system functions using molecular, cellular, developmental, medical, and computational approaches
 {{< /selfcheck >}}
 
 ## Chapter 2: The Chemical Foundation of Life
@@ -92,7 +93,7 @@ it studies nervous system functions using molecular, cellular, developmental, me
 >}}
 mass number
 atomic number
-atomic weight
+electric charge
 {{< /multiplechoice >}}
 
 {{< textin
@@ -122,6 +123,7 @@ the nitrogen is needed as a constituent of proteins and DNA
 {{< textin
   question="The process in which atoms or groups of atoms break off a molecule and form ions is called ________."
   answer="dissociation"
+  accept="ionization|ionisation"
 >}}
 
 {{< selfcheck question="Why does water's oxygen atom carry a partial negative charge while its hydrogen atoms carry a partial positive charge?" >}}
@@ -144,8 +146,9 @@ double
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A molecule consisting of closed rings of carbon atoms with alternating single and double bonds is called a(n) ________."
-  answer="aromatic hydrocarbon"
+  question="The class of molecules, including benzene, that consist of closed rings of carbon atoms with alternating single and double bonds is called ________."
+  answer="aromatic hydrocarbons"
+  accept="aromatic"
 >}}
 
 {{< selfcheck question="Why can't a molecule's D and L enantiomers be superimposed on each other?" >}}
@@ -161,18 +164,18 @@ the two forms are non-superimposable mirror images of each other
 ### 3.1 Synthesis of Biological Macromolecules
 
 {{< multiplechoice
-  question="Which enzyme breaks down lipids into smaller molecules?"
-  answer="lipases"
+  question="Which enzyme breaks down carbohydrates into smaller molecules?"
+  answer="amylase"
 >}}
-lipases
 amylase
-proteases
+lipase
+pepsin
 peptidase
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The smallest unit of a larger molecule that is a polymer is called a ________."
-  answer="monomer"
+  question="A polymer is more than the sum of its parts: it acquires new characteristics, and leads to a(n) ________ that is much lower than that formed by its ingredients."
+  answer="osmotic pressure"
 >}}
 
 {{< selfcheck question="How can one kind of monomer combine to form several different polymers, and what example illustrates this?" >}}
@@ -215,8 +218,9 @@ sucrose
 ### 3.3 Lipids
 
 {{< textin
-  question="A drop of phospholipids placed in water spontaneously forms a structure in which the hydrophilic phosphate heads face the outside and the fatty acids face the interior. This structure is called a ________."
-  answer="micelle"
+  question="A molecule such as a phospholipid, which has both a hydrophobic and a hydrophilic part, is described as ________."
+  answer="amphipathic"
+  accept="amphiphilic"
 >}}
 
 {{< selfcheck question="What health benefits are associated with omega-3 fatty acids?" >}}
@@ -246,7 +250,7 @@ triacylglycerols
 {{< textin
   question="A protein that assists another protein during the folding process is called a ________."
   answer="chaperone"
-  accept="chaperonin"
+  accept="chaperonin|molecular chaperone"
 >}}
 
 {{< multiplechoice
@@ -259,19 +263,21 @@ Contractile
 Storage
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does comparing cytochrome c's amino acid sequence across species provide evidence of evolutionary kinship?" >}}
+{{< selfcheck question="What does comparing cytochrome c's amino acid sequence across different species show, and what does the result suggest about their ancestry?" >}}
 Protein sequencing has shown that there is a considerable amount of
 cytochrome c amino acid sequence homology among different species. In other
 words, we can assess evolutionary kinship by measuring the similarities or
 differences among various species' DNA or protein sequences. Human
 cytochrome c contains 104 amino acids. For each cytochrome c molecule from
 different organisms that scientists have sequenced to date, 37 of these
-amino acids appear in the same position in all cytochrome c samples.
+amino acids appear in the same position in all cytochrome c samples. This
+indicates that there may have been a common ancestor.
 ===CHECKS===
 protein sequencing has shown that there is a considerable amount of cytochrome c amino acid sequence homology among different species
 we can assess evolutionary kinship by measuring the similarities or differences among various species' DNA or protein sequences
 human cytochrome c contains 104 amino acids
 37 of these amino acids appear in the same position in all cytochrome c samples
+this indicates that there may have been a common ancestor
 {{< /selfcheck >}}
 
 ### 3.5 Nucleic Acids

@@ -702,6 +702,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 1018,
     reason: 'the source option "asexual" is also true of the keyed fragmentation, which the module lists as a form of asexual reproduction; the page prints "sexual" in its place (key "fragmentation" unchanged)',
   },
+  {
+    page: 'content/life-health-sciences/biology/46-ecosystems/03-biogeochemical-cycles.md',
+    exercise: 'eip-996',
+    kind: 'options',
+    erratum: 1021,
+    reason: 'the source options "Increase use of fuel sources that do not produce carbon dioxide as a by-product" and "Decrease livestock agriculture" also reduce carbon dioxide (the module says animal husbandry increases atmospheric carbon) and the module ranks no approach; the page prints "Increase the burning of fossil fuels" and "Increase livestock agriculture" in their place (key unchanged)',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

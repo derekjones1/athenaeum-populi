@@ -78,7 +78,7 @@ Pyramid ecosystem modeling can also be used to show energy flow through the trop
 Ecological pyramids depict the (a) biomass, (b) number of organisms, and (c) energy in each trophic level.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Pyramids depicting the number of organisms or biomass may be inverted, upright, or even diamond-shaped. Energy pyramids, however, are always upright. Why?" hint="Think about the two laws of thermodynamics named earlier in this section — one about where each trophic level's energy has to come from, and one about what happens to some of that energy at every transfer." >}}
+{{< selfcheck question="Pyramids depicting the number of organisms or biomass may be inverted, upright, or even diamond-shaped. Energy pyramids, however, are always upright. Why?" hint="Reread the paragraph on pyramids of energy just above the figure, and the Ecological Efficiency subsection's explanation of why energy is lost between trophic levels." >}}
 Pyramids of organisms may be inverted or diamond-shaped because a large organism, such as a tree, can sustain many smaller organisms. Likewise, a low biomass of organisms can sustain a larger biomass at the next trophic level because the organisms reproduce rapidly and thus supply continuous nourishment. Energy pyramids, however, must always be upright because of the laws of thermodynamics. The first law of thermodynamics states that energy can neither be created nor destroyed; thus, each trophic level must acquire energy from the trophic level below. The second law of thermodynamics states that, during the transfer of energy, some energy is always lost as heat; thus, less energy is available at each higher trophic level.
 ===CHECKS===
 pyramids of organisms may be inverted or diamond-shaped because a large organism can sustain many smaller organisms
@@ -121,21 +121,28 @@ Organisms in an ecosystem acquire energy in a variety of ways, which is transfer
 
 ### Describe how organisms acquire energy in a food web and in associated food chains
 
-{{< multiplechoice
-  question="The mussels that live at the NW Eifuku volcano are examples of _______."
-  answer="primary consumers"
-  hint="The section says chemoautotrophic bacteria make the food at this vent — decide whether the mussels are the ones making that food or the ones eating it."
+{{< textin
+  question="Many chemoautotrophs in hydrothermal vents use ________, which is released from the vents, as a source of chemical energy."
+  answer="hydrogen sulfide"
+  accept="H2S|hydrogen sulphide"
+  hint="Reread the paragraph on chemoautotrophs just above the hydrothermal-vent photograph."
 >}}
-chemoautotrophs
-photoautotrophs
-apex predators
-primary consumers
+
+{{< multiplechoice
+  question="Which term describes the process whereby toxic substances increase along trophic levels of an ecosystem?"
+  answer="biomagnification"
+  hint="Reread the first paragraph of the section's last subsection, on the consequences of food webs."
+>}}
+biomassification
+biomagnification
+bioentropy
+heterotrophy
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Choose the term that encompasses all organisms that can make their own food using inorganic molecules:"
   answer="autotrophs"
-  hint="Reread the first paragraph of the discussion of how organisms acquire energy, and read the stem's word 'encompasses' closely."
+  hint="Reread the second paragraph of the How Organisms Acquire Energy in a Food Web subsection."
 >}}
 autotrophs
 heterotrophs
@@ -144,28 +151,35 @@ chemoautotrophs
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which term describes the process whereby toxic substances increase along trophic levels of an ecosystem?"
-  answer="biomagnification"
-  hint="Re-read the paragraph describing DDT and PCBs increasing up the food chain — the correct option is the section's own name for that specific process, not a word invented to sound similar."
+  question="The mussels that live at the NW Eifuku volcano are examples of _______."
+  answer="primary consumers"
+  hint="Reread the caption of the hydrothermal-vent photograph."
 >}}
-biomassification
-biomagnification
-bioentropy
-heterotrophy
+chemoautotrophs
+photoautotrophs
+apex predators
+primary consumers
 {{< /multiplechoice >}}
 
+### Explain how the efficiency of energy transfers between trophic levels affects ecosystem structure and dynamics
+
 {{< textin
-  question="An organism that synthesizes its own food using inorganic molecules, rather than sunlight, as its energy source is called a ________."
-  answer="chemoautotroph"
-  hint="This organism lives in places without sunlight, such as dark caves or hydrothermal vents, and uses an inorganic energy source such as hydrogen sulfide instead of sunlight."
+  question="The energy that remains in the primary producers after accounting for the organisms' respiration and heat loss is called ________."
+  answer="net primary productivity"
+  accept="net productivity"
+  hint="Reread the last paragraph of the Productivity within Trophic Levels subsection."
 >}}
 
-### Explain how the efficiency of energy transfers between trophic levels affects ecosystem structure and dynamics
+{{< textin
+  question="The energy content generated per unit area by the present trophic level, after accounting for the energy lost to incomplete ingestion, respiration, and waste, is called ________."
+  answer="assimilation"
+  hint="Reread the paragraph just after the NPE formula."
+>}}
 
 {{< multiplechoice
   question="The weight of living organisms in an ecosystem at a particular point in time is called:"
   answer="biomass"
-  hint="This term is bolded early in the Productivity section and defined as a total weight measured in a unit area — the other three options name different concepts entirely."
+  hint="Reread the first paragraph of the Productivity within Trophic Levels subsection."
 >}}
 energy
 production
@@ -176,7 +190,7 @@ biomass
 {{< multiplechoice
   question="In the English Channel ecosystem, the number of primary producers is smaller than the number of primary consumers because________."
   answer="the primary producers have a high turnover rate"
-  hint="The passage on the inverted English Channel biomass pyramid explains this exact example — decide whether the producers replace themselves quickly or slowly."
+  hint="Reread the paragraph on pyramids of biomass that contrasts Silver Springs with the English Channel."
 >}}
 the apex consumers have a low turnover rate
 the primary producers have a low turnover rate
@@ -195,14 +209,7 @@ the conservation of matter
 the conservation of energy
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The measure of how well a trophic level converts the energy it receives from the previous trophic level into biomass is called ________."
-  answer="net production efficiency"
-  accept="NPE"
-  hint="This measure is much higher in cold-blooded ectotherms than in warm-blooded endotherms, because endotherms lose more energy as body heat."
->}}
-
-{{< selfcheck question="How does the amount of food a warm-blooded animal (endotherm) eats relate to its net production efficiency (NPE)?" hint="Compare how much body heat an endotherm generates to an ectotherm, then follow what that heat cost does to how much of its food's energy converts into new biomass — and how often it must eat as a result." >}}
+{{< selfcheck question="How does the amount of food a warm-blooded animal (endotherm) eats relate to its net production efficiency (NPE)?" hint="Reread the paragraph after the NPE formula's term definitions, which compares cold-blooded and warm-blooded animals." >}}
 NPE measures the rate at which one trophic level can use and make biomass from what it attained in the previous level, taking into account respiration, defecation, and heat loss. Endotherms have high metabolism and generate a lot of body heat. Although this gives them advantages in their activity level in colder temperatures, these organisms are 10 times less efficient at harnessing the energy from the food they eat compared with cold-blooded animals, and thus have to eat more and more often.
 ===CHECKS===
 NPE measures the rate at which one trophic level can use and make biomass from what it attained in the previous level, accounting for respiration, defecation, and heat loss
@@ -211,38 +218,7 @@ endotherms are 10 times less efficient at harnessing energy from their food comp
 endotherms have to eat more and more often
 {{< /selfcheck >}}
 
-{{< textin
-  question="The biomass of the present trophic level after accounting for the energy lost to incomplete ingestion, respiration, and waste is called ________."
-  answer="assimilation"
-  hint="This is the denominator of the NPE formula — the energy actually taken in and kept after incomplete eating, respiration, and waste are subtracted."
->}}
-
 ### Discuss trophic levels and how ecological pyramids are used to model them
-
-{{< selfcheck question="Compare the three types of ecological pyramids and how well they describe ecosystem structure. Identify which ones can be inverted and give an example of an inverted pyramid for each." hint="Go pyramid by pyramid — numbers, then biomass, then energy — and name which of the three can flip upside down and which cannot." >}}
-Pyramids of numbers display the number of individual organisms on each trophic level. These pyramids can be either upright or inverted, depending on the number of the organisms. Pyramids of biomass display the weight of organisms at each level. Inverted pyramids of biomass can occur when the primary producer has a high turnover rate. Pyramids of energy are usually upright and are the best representation of energy flow and ecosystem structure.
-===CHECKS===
-pyramids of numbers display the number of individual organisms on each trophic level, and can be upright or inverted depending on the number of organisms
-pyramids of biomass display the weight of organisms at each level
-inverted pyramids of biomass can occur when the primary producer has a high turnover rate
-pyramids of energy are usually upright and are the best representation of energy flow and ecosystem structure
-{{< /selfcheck >}}
-
-{{< selfcheck question="A study uses an inverted pyramid to demonstrate the relationship between sharks, their aquatic prey, and phytoplankton in an ocean region. What type of pyramid must be used? What does this convey to readers about predation in the area?" hint="Only one of the three pyramid types can be shown inverted for a predator-prey-producer relationship like this one — decide which, then think about what an inverted shape says about how much prey is being eaten relative to how much exists at any one time." >}}
-An inverted ecological pyramid describing the relationship between the three groups must be a biomass pyramid. This model suggests that the area is subject to heavy predation, with the prey species feeding heavily on the phytoplankton, and in turn being consumed by the sharks.
-===CHECKS===
-an inverted ecological pyramid describing the relationship between the three groups must be a biomass pyramid
-this model suggests that the area is subject to heavy predation, with the prey species feeding heavily on the phytoplankton
-the prey are in turn consumed by the sharks
-{{< /selfcheck >}}
-
-{{< selfcheck question="Describe what a pyramid of numbers would look like if an ecologist models the relationship between bird parasites, blue jays, and oak trees in a hectare. Does this match the energy flow pyramid?" hint="Rank the three groups from most numerous to least by how many of each one organism at the level below can support, then compare that shape to the Silver Springs energy pyramid." >}}
-In this ecological model, the oak trees (producers) would be at the bottom, the blue jays would be in the middle level (primary consumer of acorns), and the parasites would be at the top level (secondary consumer). However, the pyramid would be inverted since each bird could support several parasites, and each tree could support several birds. This pyramid would appear to be the opposite of the energy flow pyramid.
-===CHECKS===
-the oak trees (producers) would be at the bottom, the blue jays would be the primary consumers in the middle, and the parasites would be the secondary consumers at the top
-the pyramid would be inverted since each bird could support several parasites, and each tree could support several birds
-this pyramid would appear to be the opposite of the energy flow pyramid
-{{< /selfcheck >}}
 
 {{< textin
   question="A graphical representation of different trophic levels in an ecosystem based on organism numbers, biomass, or energy content is called a(n) ________."
@@ -251,6 +227,31 @@ this pyramid would appear to be the opposite of the energy flow pyramid
   hint="The paragraph that opens the discussion of how ecosystem structure is visualized names this model."
 >}}
 
+{{< selfcheck question="Compare the three types of ecological pyramids and how well they describe ecosystem structure. Identify which ones can be inverted and give an example of an inverted pyramid for each." hint="Reread the ecological-pyramids subsection, one paragraph per pyramid type, and the figure that follows it." >}}
+Pyramids of numbers display the number of individual organisms on each trophic level. These pyramids can be either upright or inverted, depending on the number of the organisms. Pyramids of biomass display the weight of organisms at each level. Inverted pyramids of biomass can occur when the primary producer has a high turnover rate. Pyramids of energy are usually upright and are the best representation of energy flow and ecosystem structure.
+===CHECKS===
+pyramids of numbers display the number of individual organisms on each trophic level, and can be upright or inverted depending on the number of organisms
+pyramids of biomass display the weight of organisms at each level
+inverted pyramids of biomass can occur when the primary producer has a high turnover rate
+pyramids of energy are usually upright and are the best representation of energy flow and ecosystem structure
+{{< /selfcheck >}}
+
+{{< selfcheck question="A study uses an inverted pyramid to demonstrate the relationship between sharks, their aquatic prey, and phytoplankton in an ocean region. What type of pyramid must be used? What does this convey to readers about predation in the area?" hint="Reread the paragraphs of the ecological-pyramids subsection that explain how a pyramid can be inverted." >}}
+An inverted ecological pyramid describing the relationship between the three groups must be a biomass pyramid. This model suggests that the area is subject to heavy predation, with the prey species feeding heavily on the phytoplankton, and in turn being consumed by the sharks.
+===CHECKS===
+an inverted ecological pyramid describing the relationship between the three groups must be a biomass pyramid
+this model suggests that the area is subject to heavy predation, with the prey species feeding heavily on the phytoplankton
+the prey are in turn consumed by the sharks
+{{< /selfcheck >}}
+
+{{< selfcheck question="Describe what a pyramid of numbers would look like if an ecologist models the relationship between bird parasites, blue jays, and oak trees in a hectare. Does this match the energy flow pyramid?" hint="Reread the ecological-pyramids subsection's paragraph on pyramids of numbers and its temperate-forest example, then its paragraph on pyramids of energy." >}}
+In this ecological model, the oak trees (producers) would be at the bottom, the blue jays would be in the middle level (primary consumer of acorns), and the parasites would be at the top level (secondary consumer). However, the pyramid would be inverted since each bird could support several parasites, and each tree could support several birds. This pyramid would appear to be the opposite of the energy flow pyramid.
+===CHECKS===
+the oak trees (producers) would be at the bottom, the blue jays would be the primary consumers in the middle, and the parasites would be the secondary consumers at the top
+the pyramid would be inverted since each bird could support several parasites, and each tree could support several birds
+this pyramid would appear to be the opposite of the energy flow pyramid
+{{< /selfcheck >}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 46.2: Energy Flow through Ecosystems](https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_46_02_03 re-kinded from the media manifest's file-extension "photo" guess to "diagram" (it is a drawn line chart with illustrated fish and invertebrate icons along the curve, not a captured photograph); a longdesc added to Figure_46_02_02 and Figure_46_02_03, each transcribing every printed value, bar, and labeled organism in reading order (the ecological-pyramids figure's longdesc names only what is drawn and never states why energy pyramids alone are always upright); the module's four cross-references to the Silver Springs energy-flow compartment diagram in the adjoining section 46.1 (`fig-ch46_01_07`, printed as "Figure 46.8") are reworded as prose descriptions ("described in the previous section") since that figure is not vendored on this page; two equations (trophic level transfer efficiency and net production efficiency) set as display math (`$$…$$`) with `\text{}` around each word phrase, matching the module's own MathML structure; the module's own Visual Connection is kept in the body immediately after its figure as a self-check, since the source keys it with prose rather than a lettered option — its `<exercise>` copy (`fs-idm113565312`) is used for the model answer, and it is not duplicated in Practice; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); four key-term recall items added from the glossary (chemoautotroph, assimilation, net production efficiency, ecological pyramid), covering four of the section's ten glossary terms — the rest (biomagnification, biomass, gross primary productivity, net consumer productivity, net primary productivity, trophic level transfer efficiency) appear only in the Key terms list and the prose, several as the bolded defining term of their own paragraph, and biomagnification and biomass are additionally exercised as select-the-term multiple choice from the Review Questions. The glossary entry for "ecological pyramid" prints "based of organism numbers" in the source; the page reads "based on". The module quotes the Silver Springs net production as 7,633 kcal/m²/yr in one paragraph and 7618 in the next, and the primary consumers' available energy as 3373 in prose where the pyramid figure prints 3368; each number is kept as its own location prints it. Critical Thinking Question `eip-433`'s stem corrected from the source's "Describe what a pyramid of numbers **would like** if an ecologist models…" to "…**would look like**…," a dropped word. Source keys: Review Question `fs-idm130633648` ("Choose the term that encompasses all organisms that can make their own food using inorganic molecules") is source-keyed D, chemoautotrophs; the module's own text — "Photosynthetic and chemosynthetic organisms are both grouped into a category known as autotrophs: organisms capable of synthesizing their own food (more specifically, capable of using inorganic carbon as a carbon source)" — makes autotrophs, not chemoautotrophs, the term that encompasses both photoautotrophs and chemoautotrophs, so this page keys **A, autotrophs**. Review Question `eip-183` (the NW Eifuku mussels) is kept on source authority as **D, primary consumers**: the module states "the ecosystem is supported by chemoautotrophic bacteria and organic material that sinks from the ocean's surface," so the mussels that feed there are consumers of that food, not the chemoautotrophs that make it.</small>
+<small>This section is adapted from [Biology 2e, Section 46.2: Energy Flow through Ecosystems](https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_46_02_03 re-kinded from the media manifest's file-extension "photo" guess to "diagram" (it is a drawn line chart with illustrated fish and invertebrate icons along the curve, not a captured photograph); a longdesc added to Figure_46_02_02 and Figure_46_02_03, each transcribing every printed value, bar, and labeled organism in reading order (the ecological-pyramids figure's longdesc names only what is drawn and never states why energy pyramids alone are always upright); the module's four cross-references to the Silver Springs energy-flow compartment diagram in the adjoining section 46.1 (`fig-ch46_01_07`, printed as "Figure 46.8") are reworded as prose descriptions ("described in the previous section") since that figure is not vendored on this page; two equations (trophic level transfer efficiency and net production efficiency) set as display math (`$$…$$`) with `\text{}` around each word phrase, matching the module's own MathML structure; the module's own Visual Connection is kept in the body immediately after its figure as a self-check, since the source keys it with prose rather than a lettered option — its `<exercise>` copy (`fs-idm113565312`) is used for the model answer, and it is not duplicated in Practice; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items added from the glossary (net primary productivity, assimilation, ecological pyramid) and one locally written recall item built from the chemoautotroph paragraph's own sentence (hydrogen sulfide as the vents' source of chemical energy), placed ahead of the source questions in each group; chemoautotroph and net production efficiency are not asked as recall items because the source's own Review and Critical Thinking Questions already ask about them, and biomagnification and biomass are exercised as select-the-term multiple choice from the Review Questions; the remaining glossary terms (gross primary productivity, net consumer productivity, trophic level transfer efficiency) appear in the Key terms list and the prose; each source question is placed under the objective it tests, so the Review Questions run in the order 2, 3, 6, 1, 4, 5 of the source's numbering and the Critical Thinking Questions in the order 2, 1, 3, 4. The glossary entry for "ecological pyramid" prints "based of organism numbers" in the source; the page reads "based on". The module quotes the Silver Springs net production as 7,633 kcal/m²/yr in one paragraph and 7618 in the next, and the primary consumers' available energy as 3373 in prose where the pyramid figure prints 3368; each number is kept as its own location prints it. Critical Thinking Question `eip-433`'s stem corrected from the source's "Describe what a pyramid of numbers **would like** if an ecologist models…" to "…**would look like**…," a dropped word. Source keys: Review Question `fs-idm130633648` ("Choose the term that encompasses all organisms that can make their own food using inorganic molecules") is source-keyed D, chemoautotrophs; the module's own text — "Photosynthetic and chemosynthetic organisms are both grouped into a category known as autotrophs: organisms capable of synthesizing their own food (more specifically, capable of using inorganic carbon as a carbon source)" — makes autotrophs, not chemoautotrophs, the term that encompasses both photoautotrophs and chemoautotrophs, so this page keys **A, autotrophs**. Review Question `eip-183` (the NW Eifuku mussels) is kept on source authority as **D, primary consumers**: the module states "the ecosystem is supported by chemoautotrophic bacteria and organic material that sinks from the ocean's surface," so the mussels that feed there are consumers of that food, not the chemoautotrophs that make it.</small>

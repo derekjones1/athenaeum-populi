@@ -23,7 +23,7 @@ weight: 20
 ### 11.1 The Process of Meiosis
 
 {{< multiplechoice
-  question="Which structure do most animal cells and some fungi use to divide the cytoplasm during cytokinesis?"
+  question="In nearly all species of animals and some fungi, which structure separates the cell contents during cytokinesis?"
   answer="cleavage furrow"
 >}}
 synaptonemal complex
@@ -35,7 +35,7 @@ kinetochore
 {{< textin
   question="The brief period of rest between meiosis I and meiosis II is called ________."
   answer="interkinesis"
-  accept="interphase II"
+  accept="interphase II|interphase 2"
 >}}
 
 {{< selfcheck question="Why have biologists had difficulty testing hypotheses about how meiosis evolved from mitosis, and what four events did Wilkins and Holliday identify as necessary for that evolution?" >}}
@@ -83,8 +83,8 @@ self-fertilizing within individual flowers
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Mendel worked with traits inherited in distinct classes, such as violet versus white flowers, rather than a continuous range of forms — an inheritance pattern known as ________."
-  answer="discontinuous variation"
+  question="A characteristic such as human height, determined by the action of many genes, shows a range of trait values with small gradations rather than large gaps between them — an inheritance pattern called ________."
+  answer="continuous variation"
 >}}
 
 {{< selfcheck question="What is the difference between an empirical probability and a theoretical probability, and where does each come from?" >}}
@@ -98,19 +98,15 @@ theoretical probabilities come from knowing how the events are produced and assu
 
 ### 12.2 Characteristics and Traits
 
-{{< sortbins question="Sort each human trait into the inheritance pattern it follows." >}}
+{{< sortbins question="Sort each human trait or condition by whether it is inherited in a dominant or a recessive pattern." >}}
 {"bins": ["Dominant Traits", "Recessive Traits"],
  "items": [
-  {"label": "Achondroplasia", "bin": 0},
-  {"label": "Albinism", "bin": 1},
-  {"label": "Huntington’s disease", "bin": 0},
-  {"label": "Cystic fibrosis", "bin": 1},
-  {"label": "Neurofibromatosis", "bin": 0},
+  {"label": "Galactosemia", "bin": 1},
+  {"label": "Brachydactyly", "bin": 0},
   {"label": "Phenylketonuria", "bin": 1},
   {"label": "Widow’s peak", "bin": 0},
-  {"label": "Sickle-cell anemia", "bin": 1},
-  {"label": "Wooly hair", "bin": 0},
-  {"label": "Tay-Sachs disease", "bin": 1}]}
+  {"label": "Duchenne muscular dystrophy", "bin": 1},
+  {"label": "Wooly hair", "bin": 0}]}
 {{< /sortbins >}}
 
 {{< multiplechoice
@@ -120,12 +116,13 @@ theoretical probabilities come from knowing how the events are produced and assu
 incomplete dominance
 codominance
 multiple alleles
-hemizygous
+sex linkage
 {{< /multiplechoice >}}
 
 {{< textin
-  question="An inheritance pattern in which an allele is lethal both when present as a single copy and as two copies, and so can only be passed on if death occurs after reproductive age, is called ________."
+  question="An inheritance pattern in which an allele causes death in both the homozygote and the heterozygote, and so can be transmitted only if the death occurs after reproductive age, is called ________."
   answer="dominant lethal"
+  accept="dominant lethal inheritance|dominant lethal pattern"
 >}}
 
 ### 12.3 Laws of Inheritance
@@ -136,13 +133,13 @@ hemizygous
 >}}
 law of segregation
 law of independent assortment
-linkage
 law of dominance
 {{< /multiplechoice >}}
 
 {{< textin
   question="A cross between two true-breeding parents that express different traits for two characteristics is called a ________ cross."
   answer="dihybrid"
+  accept="dihybrid cross"
 >}}
 
 {{< selfcheck question="What happens to maternal and paternal alleles during recombination between homologous chromosomes, and does this change the order of the genes?" >}}
@@ -158,13 +155,13 @@ maternal and paternal alleles are combined onto the same chromosome
 ### 13.1 Chromosomal Theory and Genetic Linkage
 
 {{< multiplechoice
-  question="Which scientist's 1902 observation that proper sea urchin embryonic development does not occur unless chromosomes are present helped establish the Chromosomal Theory of Inheritance?"
-  answer="Theodor Boveri"
+  question="Critics of the Chromosomal Theory of Inheritance pointed out that individuals have many more traits than they have chromosomes. What explains how this can be so?"
+  answer="Each chromosome can carry many linked genes."
 >}}
-Walter Sutton
-Theodor Boveri
-Alfred Sturtevant
-Thomas Hunt Morgan
+Chromosomes are required for proper embryonic development.
+Chromosomes separate into daughter cells during meiosis.
+Each chromosome can carry many linked genes.
+Chromosomes assort independently into gametes.
 {{< /multiplechoice >}}
 
 {{< textin
@@ -250,10 +247,10 @@ four
 {{< textin
   question="In prokaryotes such as *E. coli*, the twisting of DNA that is either under-wound or over-wound from its relaxed state, letting a 4.6-million-base-pair chromosome fit inside a small bacterial cell, is called ________."
   answer="supercoiling"
-  accept="DNA supercoiling"
+  accept="DNA supercoiling|super-coiling"
 >}}
 
-{{< selfcheck question="What recognition did Fred Sanger's dideoxy chain termination method for sequencing DNA earn him, and in what year?" >}}
+{{< selfcheck question="What recognition did Fred Sanger's method for sequencing DNA earn him, and in what year?" >}}
 For his work on DNA sequencing, Sanger received a Nobel Prize in Chemistry in 1980.
 ===CHECKS===
 Sanger received a Nobel Prize in Chemistry
@@ -263,7 +260,7 @@ in 1980
 ### 14.3 Basics of DNA Replication
 
 {{< multiplechoice
-  question="In which model of DNA replication do both copies of DNA end up with double-stranded segments of parental DNA and newly synthesized DNA interspersed within a single strand?"
+  question="In which model of DNA replication do both copies of DNA end up with double-stranded segments of parental DNA and newly synthesized DNA interspersed?"
   answer="dispersive"
 >}}
 conservative
@@ -276,11 +273,14 @@ dispersive
   answer="buoyant density"
 >}}
 
-{{< selfcheck question="What did Watson and Crick's 1953 paper say the specific base pairing they had postulated immediately suggested?" >}}
-Watson and Crick wrote that the specific pairing they had postulated immediately suggested a possible copying mechanism for the genetic material.
+{{< selfcheck question="What did Meselson and Stahl observe in the DNA harvested from cells grown for two generations in ¹⁴N, and what did they conclude from it?" >}}
+The DNA harvested from cells grown for two generations in ¹⁴N formed two bands: one DNA band was at the intermediate position between ¹⁵N and ¹⁴N, and the other corresponded to the band of ¹⁴N DNA. These results could only be explained if DNA replicates in a semi-conservative manner, and for this reason the other two models were ruled out.
 ===CHECKS===
-the specific pairing they had postulated
-a possible copying mechanism for the genetic material
+the DNA formed two bands
+one DNA band was at the intermediate position between ¹⁵N and ¹⁴N
+the other corresponded to the band of ¹⁴N DNA
+these results could only be explained if DNA replicates in a semi-conservative manner
+the other two models were ruled out
 {{< /selfcheck >}}
 
 ### 14.4 DNA Replication in Prokaryotes
@@ -291,13 +291,13 @@ a possible copying mechanism for the genetic material
 >}}
 DNA pol I
 DNA pol II
-primase
 DNA pol III
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A ring-shaped protein that binds to the DNA and holds the DNA polymerase in place while it continues adding nucleotides is called the ________."
+  question="In prokaryotic DNA replication, the ring-shaped protein that binds to the DNA and holds the DNA polymerase in place as it continues to add nucleotides is called the ________."
   answer="sliding clamp"
+  accept="sliding clamp protein"
 >}}
 
 {{< selfcheck question="Why does the leading strand need only one primer, while the lagging strand needs a new primer for each Okazaki fragment?" >}}
@@ -311,13 +311,13 @@ each of which requires its own new primer to start synthesis
 ### 14.5 DNA Replication in Eukaryotes
 
 {{< multiplechoice
-  question="Which protein holds DNA polymerase in place on the DNA during eukaryotic replication?"
-  answer="PCNA"
+  question="In which of these cells is telomerase typically *not* active?"
+  answer="adult somatic cells"
 >}}
-PCNA
-RNase H
-DNA pol I
-telomerase
+adult stem cells
+cancer cells
+adult somatic cells
+cells of human embryos
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -327,7 +327,6 @@ telomerase
 pol α
 pol ε
 pol δ
-DNA pol III
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Why is the rate of DNA replication lower in eukaryotes than in prokaryotes?" >}}
@@ -368,19 +367,18 @@ often represents the same amino acid as the original codon
 ### 15.1 The Genetic Code
 
 {{< multiplechoice
-  question="Because only 16 possible two-nucleotide combinations exist, nucleotide doublets cannot specify every amino acid. How many possible nucleotide triplets exist to encode the 20 amino acids?"
+  question="Scientists theorized that single amino acids must be represented by combinations of nucleotides, because nucleotide doublets would not be sufficient to specify every amino acid. How many possible nucleotide triplets are there?"
   answer="64"
 >}}
-64
 16
+64
 20
-200
 {{< /multiplechoice >}}
 
 {{< textin
   question="The flow of genetic information in cells from DNA to mRNA to protein is described by the ________."
   answer="central dogma"
-  accept="central dogma of molecular biology"
+  accept="central dogma of molecular biology|central dogma of DNA-protein synthesis"
 >}}
 
 {{< selfcheck question="Why is it considered powerful evidence for a single common origin of life that a horse-globin mRNA transferred into a tulip cell would be translated into horse globin?" >}}
@@ -409,13 +407,12 @@ a polycistronic mRNA
 a nontemplate strand
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain why the E. coli RNA polymerase's core enzyme cannot accurately begin transcription without its σ subunit." >}}
-The fifth subunit, *σ*, is involved only in transcription initiation. It confers transcriptional specificity such that the polymerase begins to synthesize mRNA from an appropriate initiation site. Without *σ*, the core enzyme would transcribe from random sites and would produce mRNA molecules that specified protein gibberish.
+{{< selfcheck question="During prokaryotic transcription elongation, what holds the DNA template and the growing mRNA together, and why is it needed?" >}}
+The base pairing between DNA and RNA is not stable enough to maintain the stability of the mRNA synthesis components. Instead, the RNA polymerase acts as a stable linker between the DNA template and the nascent RNA strands to ensure that elongation is not interrupted prematurely.
 ===CHECKS===
-*σ* is involved only in transcription initiation
-*σ* confers transcriptional specificity so the polymerase begins to synthesize mRNA from an appropriate initiation site
-without *σ*, the core enzyme would transcribe from random sites
-this would produce mRNA molecules that specified protein gibberish
+the base pairing between DNA and RNA is not stable enough to maintain the stability of the mRNA synthesis components
+the RNA polymerase acts as a stable linker between the DNA template and the nascent RNA strands
+to ensure that elongation is not interrupted prematurely
 {{< /selfcheck >}}
 
 ### 15.3 Eukaryotic Transcription
@@ -472,10 +469,11 @@ the tRNA folds to position the anticodon at the other end
 {{< textin
   question="A tRNA that interacts with the start codon, binds directly to the ribosome's P site, and links to a special methionine to begin a polypeptide chain is called the ________."
   answer="initiator tRNA"
+  accept="tRNAi|tRNAfMet"
 >}}
 
 {{< multiplechoice
-  question="Which ribosomal component is responsible for binding the mRNA template, while the other subunit sequentially binds tRNAs?"
+  question="Which part of the ribosome is responsible for binding the mRNA template?"
   answer="the small subunit"
 >}}
 the A site
@@ -513,15 +511,21 @@ regulation of DNA transcription
 physical separation of transcription and translation
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does the pattern of gene expression differ between prokaryotic and eukaryotic organisms?" >}}
-Prokaryotic organisms express most of their genes most of the time. However, some genes are expressed only when they are needed. Eukaryotic organisms, on the other hand, express only a subset of their genes in any given cell.
+{{< selfcheck question="How does regulating gene expression, rather than expressing every gene at all times, conserve a cell's energy and space?" >}}
+It would require a significant amount of energy for an organism to express every gene at all times, so it is more energy efficient to turn on the genes only when they are required. In addition, only expressing a subset of genes in each cell saves space because DNA must be unwound from its tightly coiled structure to transcribe and translate the DNA. Cells would have to be enormous if every protein were expressed in every cell all the time.
 ===CHECKS===
-prokaryotic organisms express most of their genes most of the time
-some genes are expressed only when they are needed
-eukaryotic organisms express only a subset of their genes in any given cell
+it would require a significant amount of energy for an organism to express every gene at all times
+it is more energy efficient to turn on the genes only when they are required
+only expressing a subset of genes in each cell saves space because DNA must be unwound from its tightly coiled structure to transcribe and translate the DNA
+cells would have to be enormous if every protein were expressed in every cell all the time
 {{< /selfcheck >}}
 
 ### 16.2 Prokaryotic Gene Regulation
+
+{{< textin
+  question="When lactose is present, its metabolite ________ binds to the *lac* repressor and changes its shape so that it cannot bind to the *lac* operator to prevent transcription."
+  answer="allolactose"
+>}}
 
 {{< multiplechoice
   question="The Z gene of the *lac* operon encodes which product, the one that breaks lactose down into glucose and galactose?"
@@ -530,33 +534,26 @@ eukaryotic organisms express only a subset of their genes in any given cell
 the CAP protein
 beta-galactosidase
 the *lac* repressor
-allolactose
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The series of genes necessary to synthesize tryptophan in prokaryotic cells is called the ________."
-  answer="trp operon"
-  accept="tryptophan operon"
->}}
-
-{{< selfcheck question="Explain how a drop in glucose levels leads to increased transcription of the genes needed to process an alternative sugar source, in terms of cAMP and CAP." >}}
-When glucose levels drop, cyclic AMP (cAMP) begins to accumulate in the cell. Accumulating cAMP binds to the positive regulator catabolite activator protein (CAP), and when cAMP binds to CAP, the complex binds to the promoter region of the genes needed to use the alternate sugar source. CAP binding stabilizes the binding of RNA polymerase to the promoter region and increases transcription of the associated protein-coding genes.
+{{< selfcheck question="How does the presence of tryptophan in the cell switch off transcription of the *trp* operon?" >}}
+The *trp* repressor alone cannot bind to the operator. When tryptophan is present in the cell, two tryptophan molecules bind to the *trp* repressor, which changes the shape of the repressor protein to a form that can bind to the *trp* operator. Binding of the tryptophan–repressor complex at the operator physically prevents the RNA polymerase from binding to the promoter and transcribing the downstream genes.
 ===CHECKS===
-when glucose levels drop, cyclic AMP (cAMP) begins to accumulate in the cell
-accumulating cAMP binds to the positive regulator catabolite activator protein (CAP)
-the complex binds to the promoter region of the genes needed to use the alternate sugar source
-CAP binding stabilizes the binding of RNA polymerase to the promoter region and increases transcription
+the *trp* repressor alone cannot bind to the operator
+two tryptophan molecules bind to the *trp* repressor
+this changes the shape of the repressor protein to a form that can bind to the *trp* operator
+binding of the tryptophan–repressor complex at the operator physically prevents the RNA polymerase from binding to the promoter and transcribing the downstream genes
 {{< /selfcheck >}}
 
 ### 16.3 Eukaryotic Epigenetic Gene Regulation
 
 {{< multiplechoice
-  question="Adding acetyl groups to histone proteins makes their charge less positive. What effect does this have on the binding between the histones and DNA?"
-  answer="It relaxes the binding, loosening the DNA."
+  question="If DNA encoding a specific gene is to be transcribed into RNA, what can the nucleosomes surrounding that region of DNA do?"
+  answer="They can slide down the DNA to open that chromosomal region."
 >}}
-It tightens the binding, winding the DNA more closely.
-It methylates the cytosine bases in nearby CpG islands.
-It relaxes the binding, loosening the DNA.
+They pack closely together, so transcription factors cannot bind.
+They can slide down the DNA to open that chromosomal region.
+Their histones are deacetylated, and the region becomes tightly coiled.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -590,8 +587,9 @@ RNA polymerase
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Proteins that bend the DNA so that a distant enhancer region can come into contact with the promoter are called ________ proteins."
+  question="Because an enhancer region may be distant from the promoter, the DNA must change shape so that the proteins at the two sites can come into contact. The proteins that help do this and bring the enhancer and promoter regions together are called ________ proteins."
   answer="DNA bending"
+  accept="DNA bending proteins"
 >}}
 
 {{< selfcheck question="How do transcriptional repressors block gene transcription in eukaryotic cells?" >}}
@@ -610,28 +608,28 @@ they use that response to prevent the binding of activating transcription factor
 >}}
 
 {{< multiplechoice
-  question="After a mature miRNA binds to a complementary mRNA sequence as part of the RNA-induced silencing complex (RISC), what can happen to that mRNA?"
-  answer="Its translation can be impeded, or it can be degraded."
+  question="MicroRNAs are made in the nucleus as longer pre-miRNAs. Which protein chops these pre-miRNAs into mature miRNAs?"
+  answer="Dicer"
 >}}
-It is spliced to remove its introns.
-It is exported to the cytoplasm through the nuclear pore complex.
-It is protected from exonuclease attack by a 5′ cap and poly-A tail.
-Its translation can be impeded, or it can be degraded.
+an RNA-binding protein
+RISC
+a 5′ exonuclease
+Dicer
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How do the 5′ cap and poly-A tail protect a eukaryotic mRNA molecule?" >}}
-Before mRNA leaves the nucleus, it is given two protective structures: a 5′ cap, usually a methylated guanosine triphosphate molecule attached to the 5′ end, and a poly-A tail, a long chain of adenine nucleotides attached to the 3′ end. These modifications protect the two ends of the RNA molecule from exonuclease attack.
+{{< selfcheck question="How does the rate at which an mRNA decays in the cytoplasm influence how much protein is made from it?" >}}
+Each RNA molecule has a defined lifespan and decays at a specific rate. This rate of decay can influence how much protein is in the cell. If the decay rate is increased, the RNA will not exist in the cytoplasm as long, shortening the time available for translation of the mRNA to occur. Conversely, if the rate of decay is decreased, the mRNA molecule will reside in the cytoplasm longer and more protein can be translated.
 ===CHECKS===
-before mRNA leaves the nucleus, it is given two protective structures
-a 5′ cap, usually a methylated guanosine triphosphate molecule attached to the 5′ end
-a poly-A tail, a long chain of adenine nucleotides attached to the 3′ end
-these modifications protect the two ends of the RNA molecule from exonuclease attack
+each RNA molecule has a defined lifespan and decays at a specific rate
+if the decay rate is increased, the RNA will not exist in the cytoplasm as long
+this shortens the time available for translation of the mRNA to occur
+if the rate of decay is decreased, the mRNA molecule will reside in the cytoplasm longer and more protein can be translated
 {{< /selfcheck >}}
 
 ### 16.6 Eukaryotic Translational and Post-translational Gene Regulation
 
 {{< multiplechoice
-  question="In eukaryotes, translation is initiated by binding the initiating met-tRNAi to ________."
+  question="In eukaryotic translation initiation, the tRNA-eIF2-GTP complex binds to ________."
   answer="the 40S ribosome"
 >}}
 the 60S ribosomal subunit
@@ -640,13 +638,12 @@ the cap-binding protein eIF4F
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="During eukaryotic translation initiation, the ribosome scans along the mRNA until it finds a start codon AUG. What happens once the tRNA's anticodon and the start codon are aligned?"
-  answer="The GTP is hydrolyzed, the initiation factors are released, and the large 60S ribosomal subunit binds."
+  question="The binding of eIF-2 to the RNA is controlled by phosphorylation. What happens when eIF-2 is phosphorylated?"
+  answer="It undergoes a conformational change and cannot bind to GTP."
 >}}
-The GTP is hydrolyzed, the initiation factors are released, and the large 60S ribosomal subunit binds.
-The eIF-2 protein binds to the high-energy molecule GTP.
-The cap-binding protein eIF4F brings the mRNA complex together with the 40S ribosome complex.
-eIF-2 undergoes a conformational change and cannot bind to GTP.
+It binds the high-energy molecule GTP, and the initiation complex forms normally.
+It recognizes the 5′ cap and forms the mRNA into a loop.
+It undergoes a conformational change and cannot bind to GTP.
 {{< /multiplechoice >}}
 
 {{< selfcheck question="What does the addition of a ubiquitin group signal for a protein, and where is that protein sent as a result?" >}}
@@ -672,15 +669,15 @@ It acts as a transcription factor that binds to gene promoters to initiate trans
 {{< textin
   question="The protein that mediates the cell-death pathway and comes in a long and a short form is called ________."
   answer="c-Flip"
+  accept="cFLIP|c-Flip protein"
 >}}
 
-{{< selfcheck question="What is personalized medicine, and how does understanding gene expression patterns in individual tumors make it possible?" >}}
-Scientists are using what is known about the regulation of gene expression in disease states, including cancer, to develop new ways to treat and prevent disease development. Many scientists are designing drugs on the basis of the gene expression patterns within individual tumors. This idea, that therapy and medicines can be tailored to an individual, has given rise to the field of personalized medicine. With an increased understanding of gene regulation and gene function, medicines can be designed to specifically target diseased cells without harming healthy cells.
+{{< selfcheck question="Specific cancers have altered expression of miRNAs. Why could overexpression of miRNAs be detrimental to normal cellular activity?" >}}
+Because miRNAs bind to the 3′ UTR of RNA molecules to degrade them, overexpression of these miRNAs could be detrimental to normal cellular activity. Too many miRNAs could dramatically decrease the RNA population, leading to a decrease in protein expression.
 ===CHECKS===
-scientists are using what is known about the regulation of gene expression in disease states to develop new ways to treat and prevent disease development
-many scientists are designing drugs on the basis of the gene expression patterns within individual tumors
-this idea, that therapy and medicines can be tailored to an individual, has given rise to the field of personalized medicine
-medicines can be designed to specifically target diseased cells without harming healthy cells
+miRNAs bind to the 3′ UTR of RNA molecules to degrade them
+too many miRNAs could dramatically decrease the RNA population
+leading to a decrease in protein expression
 {{< /selfcheck >}}
 
 ## Chapter 17: Biotechnology and Genomics
@@ -688,7 +685,7 @@ medicines can be designed to specifically target diseased cells without harming 
 ### 17.1 Biotechnology
 
 {{< multiplechoice
-  question="Which bacterium is the source of Taq polymerase, the heat-stable enzyme PCR uses to synthesize new DNA strands?"
+  question="PCR uses a DNA polymerase that is able to withstand the high temperatures of the reaction. From which bacterium is this polymerase isolated?"
   answer="*Thermus aquaticus*"
 >}}
 *Thermus aquaticus*
@@ -702,12 +699,13 @@ medicines can be designed to specifically target diseased cells without harming 
   answer="sticky end"
 >}}
 
-{{< selfcheck question="What is parthenogenesis, and how does fertilization determine whether an insect or reptile's parthenogenic egg develops into a male or a female?" >}}
-Parthenogenesis, or "virgin birth," is a form of asexual reproduction in which an embryo grows and develops without egg fertilization. In species that lay parthenogenic eggs, a fertilized egg is diploid and develops into a female, while an unfertilized egg remains haploid and develops into a male.
+{{< selfcheck question="What is parthenogenesis, and in a species where the female lays an egg that may or may not be fertilized, how does fertilization determine whether the individual develops into a female or a male?" >}}
+Parthenogenesis, or "virgin birth," occurs when an embryo grows and develops without egg fertilization; it is a form of asexual reproduction. In one example, the female lays an egg: if the egg is fertilized, it is a diploid egg and the individual develops into a female. If the egg is not fertilized, it remains a haploid egg and develops into a male.
 ===CHECKS===
-parthenogenesis is a form of asexual reproduction in which an embryo grows and develops without egg fertilization
-a fertilized egg is diploid and develops into a female
-an unfertilized egg remains haploid and develops into a male
+parthenogenesis occurs when an embryo grows and develops without egg fertilization
+it is a form of asexual reproduction
+if the egg is fertilized, it is a diploid egg and the individual develops into a female
+if the egg is not fertilized, it remains a haploid egg and develops into a male
 {{< /selfcheck >}}
 
 ### 17.2 Mapping Genomes
@@ -724,15 +722,15 @@ an unfertilized egg remains haploid and develops into a male
 cytogenetic mapping
 sequence mapping
 radiation hybrid mapping
-linkage analysis
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How do variable number of tandem repeats (VNTRs) and microsatellite polymorphisms differ from each other?" >}}
-VNTRs are repeated sets of nucleotides present in DNA's non-coding regions, and the number of repeats may vary in a population's individual organisms. Microsatellite polymorphisms are similar to VNTRs, but the repeat unit is very small.
+{{< selfcheck question="What do genetic maps and physical maps each contribute to studying a genome, and why are both needed?" >}}
+Genetic maps provide the outline and physical maps provide the details. Genetic maps provide the big picture, similar to an interstate highway map, while physical maps present the intimate details of smaller chromosome regions, similar to a detailed road map. Both genetic linkage maps and physical maps are required to build a genome's complete picture.
 ===CHECKS===
-VNTRs are repeated sets of nucleotides present in DNA's non-coding regions
-the number of repeats may vary in a population's individual organisms
-microsatellite polymorphisms are similar to VNTRs, but the repeat unit is very small
+genetic maps provide the outline and physical maps provide the details
+genetic maps provide the big picture, similar to an interstate highway map
+physical maps present the intimate details of smaller chromosome regions, similar to a detailed road map
+both genetic linkage maps and physical maps are required to build a genome's complete picture
 {{< /selfcheck >}}
 
 ### 17.3 Whole-Genome Sequencing
@@ -740,24 +738,24 @@ microsatellite polymorphisms are similar to VNTRs, but the repeat unit is very s
 {{< textin
   question="An individual DNA monomer that is missing a hydroxyl group at the site where another nucleotide normally attaches is called a ________."
   answer="dideoxynucleotide"
-  accept="ddNTP"
+  accept="ddNTP|dideoxy nucleotide"
 >}}
 
 {{< multiplechoice
-  question="Which technique can provide information about all six billion base pairs in the human genome, compared to the roughly one million genotypic abnormalities detectable by DNA microarrays?"
+  question="DNA microarrays can discover almost one million genotypic abnormalities. Which approach can instead provide information about all six billion base pairs in the human genome?"
   answer="whole-genome sequencing"
 >}}
-DNA microarrays
-chain termination method
-shotgun sequencing
+whole-exome sequencing
 whole-genome sequencing
+genome annotation
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does pairwise-end sequencing improve on the original shotgun sequencing method, which analyzed only one end of each DNA fragment for overlaps?" >}}
-Originally, shotgun sequencing only analyzed one end of each fragment for overlaps, which was sufficient only for small genomes. The desire to sequence larger genomes, such as the human genome, led to developing pairwise-end sequencing, in which scientists analyze each fragment's end for overlap. Pairwise-end sequencing is more cumbersome than shotgun sequencing, but it is easier to reconstruct the sequence because there is more available information.
+{{< selfcheck question="Why was pairwise-end sequencing developed, and how does it compare with the original shotgun sequencing method?" >}}
+Originally, shotgun sequencing only analyzed one end of each fragment for overlaps. This was sufficient for sequencing small genomes. However, the desire to sequence larger genomes, such as that of a human, led to developing double-barrel shotgun sequencing, or pairwise-end sequencing. In pairwise-end sequencing, scientists analyze each fragment's end for overlap. Pairwise-end sequencing is, therefore, more cumbersome than shotgun sequencing, but it is easier to reconstruct the sequence because there is more available information.
 ===CHECKS===
-shotgun sequencing only analyzed one end of each fragment for overlaps
-the desire to sequence larger genomes, such as the human genome, led to developing pairwise-end sequencing
+shotgun sequencing only analyzed one end of each fragment for overlaps, which was sufficient for sequencing small genomes
+the desire to sequence larger genomes, such as that of a human, led to developing pairwise-end sequencing
+in pairwise-end sequencing, scientists analyze each fragment's end for overlap
 pairwise-end sequencing is more cumbersome than shotgun sequencing
 it is easier to reconstruct the sequence because there is more available information
 {{< /selfcheck >}}
@@ -765,7 +763,7 @@ it is easier to reconstruct the sequence because there is more available informa
 ### 17.4 Applying Genomics
 
 {{< multiplechoice
-  question="According to genome analysis at the individual level, approximately what percentage of diseases in developed countries results from a single-gene defect?"
+  question="Predicting disease risk by genome analysis at the individual level is most applicable when the problem resides within a single gene defect. Such defects account for approximately what percentage of diseases in developed countries?"
   answer="5 percent"
 >}}
 1.4 percent
@@ -778,23 +776,24 @@ it is easier to reconstruct the sequence because there is more available informa
   answer="polygenic"
 >}}
 
-{{< selfcheck question="How can a patient's genome sequence information help a doctor prescribe medication under pharmacogenomics?" >}}
-Medical professionals can use personal genome sequence information to prescribe medications that will be most effective and least toxic on the basis of the individual patient's genotype. Studying changes in gene expression could provide information about the transcription profile in the drug's presence, which can be used as an early indicator of the potential for toxic effects.
+{{< selfcheck question="In pharmacogenomics, how can studying changes in gene expression in a drug's presence help evaluate the drug's safety?" >}}
+Studying changes in gene expression could provide information about the transcription profile in the drug's presence, which can be used as an early indicator of the potential for toxic effects. For example, genes involved in cellular growth and controlled cell death, when disturbed, could lead to cancerous cell growth. Genome-wide studies can also help to find new genes involved in drug toxicity.
 ===CHECKS===
-medical professionals can use personal genome sequence information to prescribe medications that will be most effective and least toxic on the basis of the individual patient's genotype
 studying changes in gene expression could provide information about the transcription profile in the drug's presence
 this can be used as an early indicator of the potential for toxic effects
+genes involved in cellular growth and controlled cell death, when disturbed, could lead to cancerous cell growth
+genome-wide studies can also help to find new genes involved in drug toxicity
 {{< /selfcheck >}}
 
 ### 17.5 Genomics and Proteomics
 
 {{< multiplechoice
   question="Which protein-imaging technique uses atoms' magnetic properties to determine a protein's three-dimensional structure in aqueous solution?"
-  answer="nuclear magnetic resonance (NMR)"
+  answer="nuclear magnetic resonance"
 >}}
 mass spectrometry
 X-ray crystallography
-nuclear magnetic resonance (NMR)
+nuclear magnetic resonance
 two-hybrid screening
 {{< /multiplechoice >}}
 

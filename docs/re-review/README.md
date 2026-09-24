@@ -46,8 +46,9 @@ Figure and alt work runs on Opus, never Sonnet.
 
 0. **Brief.** Life sciences: `docs/re-review/brief-life-sciences.md` (the
    September 22 full-scope brief, updated). A knowledge-check row uses it
-   for the nearby-leak read, keys, and accept lists (checks carry no
-   hints). Math: `docs/re-review/brief-math.md` does not exist yet — the
+   with `docs/re-review/brief-knowledge-check.md` (the nearby-leak read,
+   keys, accept lists, reverse recall; checks carry no hints; its parent
+   duties add a second checker on replacements). Math: `docs/re-review/brief-math.md` does not exist yet — the
    first math row writes it from `docs/subjects/math.md`, the
    life-sciences brief's shape, and the standard above, and shows Derek
    before fanning out. That row is the pilot: record its cost in Notes and
