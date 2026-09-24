@@ -224,3 +224,46 @@ checks ran a narrow brief (they carry no hints; the gap is nearby leaks).
 | [x] | KC `knowledge-check-13-14` | — | 8 | — | a188793 | Sep 24: one Opus fixer (~210k), batched with KC 15-20, 21-26 (shared second checker ~255k, Fable solve 43/43, ~100k); 3 replacements (autoclave stem repeated "vacuum"; all 13.4 items came from the HPV subsection) |
 | [x] | KC `knowledge-check-15-20` | — | 46 | — | a188793 | Sep 24: three Opus fixers (~680k); 18 replacements, most for the spread rule (7 of ch17–18's 10 sections drew all items from one subsection); second checker reworded the 18.3 stem that ruled out a distractor |
 | [x] | KC `knowledge-check-21-26` | — | 38 | — | a188793 | Sep 24: three Opus fixers (~600k); 12 replacements; the attribution footer sat between Chapter 24 and 25 since assembly → moved, new lint (footer last, exactly one); second checker replaced the 25.1 germinal-centers item (a page rubric line) |
+
+## Alt-only figure pass (Biology 2e, Microbiology)
+
+**Why.** An Opus image-first sample on September 24, 2026 (50 random figures, 25 per book, seed 20260924, `docs/briefs/alt-pass/checker-brief.md`, parent opened every flagged image) found 6 real alt errors in 50 (about 1 in 8), plus 6 minor and 2 trivial or judgment flags. All 6 real errors were on **alt-only** figures (no `longdesc`). These figures had only the September 20–21 Sonnet image-first pass. The `longdesc` figures had the September 22–23 Opus read, and their sample flags were minor only. Scope: the roughly 1,030 alt-only figures (Biology 1,153 − 634 with `longdesc`; Microbiology 792 − 283). Estimate: about 8–10M Opus tokens, 3–4 sessions.
+
+### Sample fixes (confirmed against the image, NOT yet applied)
+
+Paths are under `content/life-health-sciences/`; line = the `{{< mediafigure` tag.
+
+| | Page:line | Alt says | Image shows → fix | Kind |
+|---|---|---|---|---|
+| [ ] | `microbiology/14-antimicrobial-drugs/06-testing-the-effectiveness-of-antimicrobials.md:56` | 8/16/32 µg/mL tubes hold "clearer broth with a thin band of sediment near the bottom" | the dark band is the backdrop seen through clear broth, halfway up; the tube bottoms are clear → "hold clear broth" | error |
+| [ ] | `microbiology/13-control-of-microbial-growth/01-controlling-microbial-growth.md:44` | "connected by a shared red coiled air hose, standing on a grated floor" | a separate coiled hose to each suit; a solid floor with one round drain | error |
+| [ ] | `microbiology/17-innate-nonspecific-host-defenses/01-physical-defenses.md:53` | desmosomes: "long strands weaving them together" (source alt, verbatim) | the fibres stay inside each cell; short linker proteins span the gap → rewrite; erratum + footer disclosure (source-inherited) | error |
+| [ ] | `microbiology/22-respiratory-system-infections/03-viral-infections-of-the-respiratory-tract.md:261` | (c) "small, raised, scabbed lesions … on an adult's torso" | intact fluid-filled blisters; no body site is identifiable | error |
+| [ ] | `biology/24-fungi/01-characteristics-of-fungi.md:111` | two labeled "Hyphae" "meeting at a round sporangium" | only the diagonal stalk ends in the sporangium; the other labeled hypha crosses above it | error |
+| [ ] | `biology/37-the-endocrine-system/01-types-of-hormones.md:49` | oxytocin "with one yellow sulfur" | two yellow sulfur spheres (the disulfide) | error |
+| [ ] | `biology/38-the-musculoskeletal-system/01-types-of-skeletal-systems.md:149` | "Two views"; longdesc "the left is identical" | a left and a right foot, mirror images, in one view | minor |
+| [ ] | `microbiology/12-modern-applications-of-microbial-genetics/01-microbes-and-the-tools-of-genetic-engineering.md:183` | needle "pointing at its nucleus" | the needle passes through the nucleus nearly to the far side | minor |
+| [ ] | `microbiology/03-the-cell/04-unique-characteristics-of-eukaryotic-cells.md:233` | (no scale) | the micrograph prints a 200 nm scale bar → add it (source alt also lacks it) | minor |
+| [ ] | `biology/14-dna-structure-and-function/06-dna-repair.md:23` | "a mismatched base marked with a red arrow" | name the G opposite A and the red arrow pointing back along the new strand (the polymerase backing up to proofread); the source alt had both | minor |
+| [ ] | `microbiology/08-microbial-metabolism/07-biogeochemical-cycles.md:75` | alt and longdesc tie "lithotrophic bacteria" and "anoxygenic photosynthetic" to the H₂S box; longdesc calls "organic sulfur" a box | both labels sit under the H₂S → SO oxidation arrow; "organic sulfur" is plain text | minor |
+| [ ] | `biology/45-population-and-community-ecology/06-community-ecology.md:187` | longdesc: "several young conifers" | panel 2 draws two (checker's reading; parent has not yet opened this image) | minor |
+
+Also from the sample:
+- Trivial: `microbiology/08-microbial-metabolism/06-photosynthesis.md:65`, where the panel (b) longdesc names a "horizontal axis" that is not drawn.
+- Judgment call for Derek: the `microbiology/06-acellular-pathogens/_index.md:8` chapter-opener Ebola map. The per-country counts were dropped because the source alt had them wrong (erratum 459), so none of the map's data or its "30 November 2014" date reaches the reader.
+- Erratum candidate: m66442's hemoglobin artwork (`Figure_03_04_05-3127`) prints "∝" for α on the α-subunit labels, the same kind as erratum 914. The page longdesc already says α.
+
+Applying these: edit the alt/`longdesc` (never a straight `"` inside the attribute; `npm run lint`); a source-inherited claim gets an erratum and a footer `Changes:` clause. A figure that a graded item names is in that item's ledger hash, so re-solve (or parent re-read) the re-hashed items. Then run `npm test`.
+
+### Process for the full pass
+
+1. `python3 tools/source/alt-pass-packets.py <biology|microbiology> $SP/alt/<book>` writes one packet per chapter. Keep only the figures with no `longdesc`: read each line's tag plus 3 lines and drop any with `longdesc=`. Regroup them into packets of about 30–40 figures. Photographs are rarely wrong but still in scope: 4 of the 6 sample errors were photos.
+2. Run one Opus agent per packet (never Sonnet; see the kit README), 10–12 at a time, report-only, following `docs/briefs/alt-pass/checker-brief.md`. Crops and scripts are named per packet.
+3. The parent opens the image for every flag before editing (checkers mis-read about 1 flag in 7), then fixes the page as above. Errata continue after the last number in `docs/openstax-errata.md` (1045 on September 24, 2026).
+4. Per batch: `npm run lint`, ledger re-solve of re-hashed items, then `npm test`. Commit "Alt-only figure pass: <Book> chapters N–M".
+5. Track progress in the table below, one row per chapter range. Record the figure count, confirmed fixes, errata and commit.
+
+| | Book | Chapters | Alt-only figures | Fixed | Errata | Commit | Notes |
+|---|---|---|---|---|---|---|---|
+| [ ] | Microbiology | 1–26 | ~509 | | | | split into packets at run time |
+| [ ] | Biology 2e | 1–47 | ~519 | | | | split into packets at run time |
