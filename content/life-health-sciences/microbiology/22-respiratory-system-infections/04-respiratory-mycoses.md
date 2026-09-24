@@ -31,15 +31,15 @@ Signs and symptoms of pulmonary histoplasmosis include fever, headache, and weak
 
 **Check Your Understanding**
 
-{{< selfcheck question="In what environments is one more likely to be infected with histoplasmosis?" hint="The paragraph names the fungus's soil reservoir and what makes it especially rich." >}}
-Histoplasmosis is acquired by inhaling spores from the environment. The primary reservoir for the fungus is soil, particularly in locations rich in bat or bird feces. The disease is not transmitted from human to human.
+{{< selfcheck question="In what environments is one more likely to be infected with histoplasmosis?" hint="See the first two paragraphs of the Histoplasmosis subsection." >}}
+Histoplasmosis is acquired by inhaling microconidial spores in the air. The primary reservoir for the fungus is soil, particularly in locations rich in bat or bird feces. The disease is not transmitted from human to human.
 ===CHECKS===
-acquired by inhaling spores from the environment
+acquired by inhaling microconidial spores in the air
 the primary reservoir is soil, particularly in locations rich in bat or bird feces
 not transmitted from human to human
 {{< /selfcheck >}}
 
-{{< selfcheck question="Identify at least two similarities between histoplasmosis and tuberculosis." hint="Compare how the fungal cells survive after being phagocytized, and how the resulting lesions and disease course compare to TB's own." >}}
+{{< selfcheck question="Identify at least two similarities between histoplasmosis and tuberculosis." hint="See the third paragraph of the Histoplasmosis subsection." >}}
 In many ways, the course of histoplasmosis is similar to that of tuberculosis. Following inhalation, the spores enter the lungs and are phagocytized by alveolar macrophages, and the fungal cells then survive and multiply within these phagocytes. Focal infections cause the formation of granulomatous lesions, which can lead to calcifications that resemble the Ghon complexes of tuberculosis, even in asymptomatic cases. Also like tuberculosis, histoplasmosis can become chronic, and reactivation can occur, along with dissemination to other areas of the body.
 ===CHECKS===
 the fungal cells survive and multiply within alveolar macrophages after being phagocytized
@@ -105,7 +105,7 @@ Diagnosing mucormycosis can be challenging. Currently, there are no serological 
 
 **Check Your Understanding**
 
-{{< selfcheck question="Compare the modes of transmission for coccidioidomycosis, blastomycosis, and mucormycosis." hint="Look at how each fungus's spores get into the body — one is airborne from hyphal fragments, one comes from disturbed soil, and one isn't limited to inhalation at all." >}}
+{{< selfcheck question="Compare the modes of transmission for coccidioidomycosis, blastomycosis, and mucormycosis." hint="See the Coccidioidomycosis, Blastomycosis, and Mucormycosis subsections." >}}
 Coccidioidomycosis is acquired by inhaling fungal spores—arthrospores formed by hyphal fragmentation. Blastomycosis spores can likewise be inhaled, in this case from disturbed soil, since *Blastomyces*, like *Histoplasma* and *Coccidioides*, uses the soil as a reservoir. Mucormycosis is different: although exposure to its spores from the environment typically occurs through inhalation, the spores can also infect the skin through a wound or the gastrointestinal tract if ingested.
 ===CHECKS===
 coccidioidomycosis is acquired by inhaling arthrospores formed by hyphal fragmentation
@@ -113,7 +113,7 @@ blastomycosis spores are inhaled from disturbed soil, since Blastomyces uses the
 mucormycosis spores are typically inhaled but can also infect the skin through a wound or the gastrointestinal tract if ingested
 {{< /selfcheck >}}
 
-{{< selfcheck question="In general, which are more serious: the pulmonary or disseminated forms of these infections?" hint="Compare how each subsection describes its self-limiting lung infection against what happens once the fungus disseminates." >}}
+{{< selfcheck question="In general, which are more serious: the pulmonary or disseminated forms of these infections?" hint="See the Histoplasmosis through Mucormycosis subsections." >}}
 In general, the disseminated forms of these fungal infections are more serious than the pulmonary forms. Histoplasmosis and coccidioidomycosis are usually self-limiting when confined to the lungs, but disseminated coccidioidomycosis can lead to serious complications such as fatal meningitis. Blastomycosis is typically a mild, self-limiting lung infection, but systemic (disseminated) blastomycosis, though rare, is always fatal if untreated. Mucormycosis can also become disseminated in severe cases, involving the central nervous system and leading to coma and death.
 ===CHECKS===
 the disseminated forms of these infections are more serious than the pulmonary forms
@@ -152,7 +152,7 @@ Infection by the encapsulated yeast *Cryptococcus neoformans* causes **cryptococ
 
 **Check Your Understanding**
 
-{{< selfcheck question="What populations are most at risk for developing *Pneumocystis* pneumonia or cryptococcosis?" hint="Both diseases are described as affecting one particular group of patients — look at who is named in each subsection." >}}
+{{< selfcheck question="What populations are most at risk for developing *Pneumocystis* pneumonia or cryptococcosis?" hint="See the *Pneumocystis* Pneumonia and Cryptococcosis subsections." >}}
 *Pneumocystis* pneumonia is a leading cause of pneumonia in patients with acquired immunodeficiency syndrome (AIDS) and can also be seen in other compromised patients and premature infants. Cryptococcal infections are more common in immunocompromised people, such as those with AIDS, and these patients typically require life-long suppressive therapy to control the infection.
 ===CHECKS===
 Pneumocystis pneumonia is a leading cause of pneumonia in patients with AIDS
@@ -160,11 +160,11 @@ it can also be seen in other compromised patients and premature infants
 cryptococcal infections are more common in immunocompromised people, such as those with AIDS
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why are these infections fatal if left untreated?" hint="Think about where each infection can spread when untreated, and what happens once it gets there." >}}
-Left untreated, *Pneumocystis* pneumonia is often fatal, especially since it mainly affects patients with AIDS and other immunocompromised or premature patients whose immune systems cannot control the respiratory infection. Left untreated, cryptococcosis is also often fatal because, in immunocompromised patients, pulmonary infections often disseminate to the brain, producing meningitis that causes headaches, sensitivity to light, and confusion.
+{{< selfcheck question="Why are these infections fatal if left untreated?" hint="See the *Pneumocystis* Pneumonia and Cryptococcosis subsections." >}}
+Left untreated, PCP infections are often fatal; the respiratory infection leads to fever, cough, and shortness of breath, and this section names no further reason for the fatality. Left untreated, cryptococcosis is also often fatal because, in immunocompromised patients, pulmonary infections often disseminate to the brain; the resulting meningitis produces headaches, sensitivity to light, and confusion.
 ===CHECKS===
-Pneumocystis pneumonia is often fatal if left untreated, especially in immunocompromised or premature patients
-in immunocompromised patients, cryptococcosis pulmonary infections often disseminate to the brain
+left untreated, PCP infections are often fatal
+in immunocompromised patients, pulmonary infections often disseminate to the brain
 the resulting meningitis produces headaches, sensitivity to light, and confusion
 {{< /selfcheck >}}
 
@@ -246,13 +246,13 @@ cryptococcosis
 
 {{< textin question="Coccidioidomycosis may develop when *Coccidioides immitis* ________ are inhaled." answer="arthrospores" hint="See the second paragraph of the Coccidioidomycosis subsection." >}}
 
-{{< textin question="In some mycoses, fungal balls called ________ form in the lungs." answer="aspergillomas" accept="aspergillomata" hint="This term names the fungal ball itself, formed when hyphal colonies collect in the lungs." >}}
+{{< textin question="In some mycoses, fungal balls called ________ form in the lungs." answer="aspergillomas" accept="aspergillomata" hint="See the first paragraph of the subsection after Mucormycosis." >}}
 
 ### Compare the major characteristics of specific fungal diseases of the respiratory tract
 
-{{< textin question="Most US cases of coccidioidomycosis occur in ________." answer="the desert southwest" accept="the southwestern United States|the Southwest|southwestern US|southwestern U.S." hint="Recall the semi-arid and arid region of the US, beyond California's own Valley-fever region, where the related species is found." >}}
+{{< textin question="Most US cases of coccidioidomycosis occur in ________." answer="the desert southwest" accept="the southwestern United States|the Southwest|southwestern US|southwestern U.S." hint="See the first paragraph of the Coccidioidomycosis subsection." >}}
 
-{{< textin question="In coccidioidomycosis, ________ containing many endospores form in the lungs." answer="spherules" hint="This is the structure the fungus differentiates into once inside the body, filled with its infectious offspring cells." >}}
+{{< textin question="In coccidioidomycosis, ________ containing many endospores form in the lungs." answer="spherules" hint="See the second paragraph of the Coccidioidomycosis subsection." >}}
 
 {{< textin question="In cryptococcosis, the main fungal virulence factor is the ________, which helps the pathogen avoid phagocytosis." answer="capsule" accept="polysaccharide capsule" hint="See the first paragraph of the Cryptococcosis subsection." >}}
 
@@ -270,7 +270,7 @@ in Colorado river valley.
 {{< multiplechoice
   question="Which of the following infections can be diagnosed using a skin test similar to the tuberculin test?"
   answer="aspergillosis"
-  hint="This skin test is compared directly to the Mantoux tuberculin test used for tuberculosis — recall which fungal disease's diagnosis section makes that comparison."
+  hint="See the second paragraph of the subsection after Mucormycosis."
 >}}
 histoplasmosis
 cryptococcosis
@@ -278,7 +278,7 @@ blastomycosis
 aspergillosis
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Which pulmonary fungal infection is most likely to be confused with tuberculosis? How can we discriminate between these two types of infection?" hint="This disease's course is explicitly compared to tuberculosis's earlier in the section; check whether a specific discriminating test is actually named." >}}
+{{< selfcheck question="Which pulmonary fungal infection is most likely to be confused with tuberculosis? How can we discriminate between these two types of infection?" hint="See the first subsection of this section." >}}
 Histoplasmosis is most likely to be confused with tuberculosis: in many ways, the course of this disease is similar to that of tuberculosis, and focal infections can lead to calcifications that resemble the Ghon complexes of tuberculosis, even in asymptomatic cases. This section does not name a specific test or sign that discriminates histoplasmosis from tuberculosis; it says only that histoplasmosis is diagnosed by chest radiographs, cultures grown on fungal selective media such as Sabouraud's dextrose agar, direct fluorescence antibody staining, Giemsa staining, a complement fixation assay, and histoplasmin sensitivity testing.
 ===CHECKS===
 histoplasmosis is most likely to be confused with tuberculosis
@@ -286,19 +286,20 @@ calcifications from focal infections resemble the Ghon complexes of tuberculosis
 this section does not name a specific test or sign that discriminates histoplasmosis from tuberculosis
 {{< /selfcheck >}}
 
-{{< selfcheck question="Compare and contrast aspergillosis and mucormycosis." hint="Compare how each fungus enters the body, what symptoms it causes, and how each is treated." >}}
-Both aspergillosis and mucormycosis are fungal infections that mainly affect immunocompromised patients and can become disseminated. Aspergillosis is caused by inhaling spores of the mold *Aspergillus*; the symptoms commonly include shortness of breath, wheezing, coughing, runny nose, and headaches, fungal balls (aspergillomas) can form when hyphal colonies collect in the lungs, and the hyphae can invade host tissues, leading to pulmonary hemorrhage and a bloody cough. Mucormycosis is caused by fungi in the order Mucorales, such as *Rhizopus* and *Mucor*; unlike aspergillosis, its spores can infect the skin through a wound or the gastrointestinal tract if ingested, in addition to being inhaled, and after inhalation the fungi grow by extending hyphae into the host's tissues, producing rhinocerebral disease (headache, fever, facial swelling, congestion, and black lesions in the oral cavity) or pulmonary disease (fever, cough, chest pain, and shortness of breath). Both diseases are typically treated with amphotericin B, and both can lead to death in severe, disseminated cases.
+{{< selfcheck question="Compare and contrast aspergillosis and mucormycosis." hint="See the Mucormycosis and Aspergillosis subsections." >}}
+Both aspergillosis and mucormycosis are fungal infections that mainly affect immunocompromised patients and can become disseminated. Aspergillosis is caused by inhaling spores of the mold *Aspergillus*; the symptoms commonly include shortness of breath, wheezing, coughing, runny nose, and headaches, fungal balls (aspergillomas) can form when hyphal colonies collect in the lungs, and the hyphae can invade host tissues, leading to pulmonary hemorrhage and a bloody cough. Mucormycosis is caused by fungi in the order Mucorales, such as *Rhizopus* and *Mucor*; its spores can infect the skin through a wound or the gastrointestinal tract if ingested, in addition to being inhaled, and after inhalation the fungi grow by extending hyphae into the host's tissues, producing rhinocerebral disease (headache, fever, facial swelling, congestion, and black lesions in the oral cavity) or pulmonary disease (fever, cough, chest pain, and shortness of breath). Aspergillosis is treated with intravenous antifungal agents, including itraconazole and voriconazole, whereas mucormycosis is typically treated by the intravenous administration of amphotericin B, with superficial infections removed by surgical debridement. Both can lead to death in severe, disseminated cases.
 ===CHECKS===
 aspergillosis is caused by inhaling spores of the mold Aspergillus and can form fungal balls (aspergillomas) in the lungs
 mucormycosis is caused by fungi in the order Mucorales, such as Rhizopus and Mucor
-mucormycosis spores can infect the skin through a wound or the gastrointestinal tract if ingested, unlike aspergillosis
-both are treated with amphotericin B and can be fatal in severe, disseminated cases
+mucormycosis spores can infect the skin through a wound or the gastrointestinal tract if ingested
+aspergillosis is treated with itraconazole and voriconazole, whereas mucormycosis is typically treated by the intravenous administration of amphotericin B
+both can lead to death in severe, disseminated cases
 {{< /selfcheck >}}
 
 {{< multiplechoice
   question="Why are fungal pulmonary infections rarely transmissible from person to person?"
   answer="They are acquired by inhaling environmental spores and are not transmitted between humans."
-  hint="The Disease Profile box above explains how people are exposed to these fungi and who is at risk."
+  hint="See the opening paragraph of the Disease Profile box above."
 >}}
 They only cause disease in immunocompromised patients.
 Most infections are self-limiting and resolve without antifungal therapy.

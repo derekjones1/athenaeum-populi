@@ -32,7 +32,7 @@ The mechanisms by which cancer cells alter immune responses are still not yet fu
 
 **Check Your Understanding**
 
-{{< selfcheck question="How do cancer cells suppress the immune system?" hint="The module names two separate strategies: one where the immune cells themselves become abnormal, and one where the cancer cells resist a normal immune killing signal." >}}
+{{< selfcheck question="How do cancer cells suppress the immune system?" hint="Reread the third paragraph of Cell-Mediated Response to Tumors." >}}
 Malignant tumors actively suppress the immune response in several ways. In some cancers, such as leukemia, the immune cells themselves become cancerous, so the lymphocytes that would normally facilitate the immune response become abnormal. In other cancers, the cancerous cells become resistant to induction of apoptosis, which can happen through the expression of membrane proteins that shut off cytotoxic T cells or that induce regulatory T cells that shut down immune responses.
 ===CHECKS===
 in cancers such as leukemia, the immune cells themselves become cancerous and the lymphocytes that would normally facilitate the immune response become abnormal
@@ -40,7 +40,7 @@ cancerous cells can become resistant to induction of apoptosis
 membrane proteins on cancer cells can shut off cytotoxic T cells or induce regulatory T cells that shut down immune responses
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe how the immune system recognizes and destroys cancer cells." hint="Trace the chain from tumor antigen presentation, through TH1 cells and NK cells, to the two mechanisms cytotoxic T cells use to induce apoptosis." >}}
+{{< selfcheck question="Describe how the immune system recognizes and destroys cancer cells." hint="Reread the first two paragraphs of Cell-Mediated Response to Tumors." >}}
 Cancer cells often lack the normal complement of self-proteins and may present tumor antigens, making them targets for elimination by the immune system. Presentation of tumor antigens can stimulate naïve helper T cells to become activated by cytokines such as IL-12 and differentiate into TH1 cells, which release cytokines that activate NK cells and enhance the killing activity of cytotoxic T cells. Both NK cells and cytotoxic T cells can recognize and target cancer cells, inducing apoptosis through the action of perforins and granzymes, and activated cytotoxic T cells can also induce apoptosis by a second killing mechanism, the CD95 (Fas) cytotoxic pathway.
 ===CHECKS===
 cancer cells often lack the normal complement of self-proteins and may present tumor antigens, making them targets for elimination
@@ -59,7 +59,7 @@ The first FDA-approved therapeutic cancer vaccine was sipuleucel-T (Provenge), a
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain the difference between preventative and therapeutic cancer vaccines." hint="One kind of vaccine is given before disease develops; the other is given to a patient who already has cancer." >}}
+{{< selfcheck question="Explain the difference between preventative and therapeutic cancer vaccines." hint="Reread the first paragraph of Cancer Vaccines." >}}
 There are two types of cancer vaccines: preventive and therapeutic. Preventive vaccines are used to prevent cancer from occurring, and most target viral infections known to lead to cancer, such as human papillomavirus (HPV) and hepatitis B, which help prevent cervical and liver cancer, respectively. Therapeutic vaccines, by contrast, are used to treat patients who already have cancer; most are still in the experimental stage, and they work by exploiting tumor-specific antigens to stimulate the immune system to selectively attack the cancer cells already present.
 ===CHECKS===
 preventive vaccines are used to prevent cancer from occurring and mostly target viral infections known to lead to cancer, such as HPV and hepatitis B
@@ -122,19 +122,18 @@ T-cell receptors
   answer="the CD95 (Fas) cytotoxic pathway"
   hint="Reread the last sentence of the second paragraph of Cell-Mediated Response to Tumors."
 >}}
-activation by interleukin-12 (IL-12)
+activation by cytokines such as IL-12
 the CD95 (Fas) cytotoxic pathway
 the perforin and granzyme pathway
 differentiation into T<sub>H</sub>1 cells
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How can tumor antigens be effectively targeted without inducing an autoimmune (anti-self) response?" hint="The module does not directly answer the 'without inducing autoimmunity' half of this question — read the tumor-antigen and cell-mediated-response passages for what it does say." >}}
-The module does not directly explain how autoimmunity is avoided when the immune system targets tumor antigens; it states only that tumor antigens are self-antigens that were never part of the screening process that eliminates self-reactive lymphocytes during development, which is exactly why they are able to stimulate and drive adaptive immune responses against abnormal cells in the first place. The responses this section describes are also targeted narrowly rather than broadly: cytotoxic T cells and NK cells recognize and induce apoptosis specifically in cells presenting these tumor antigens, and therapeutic cancer vaccines are described as exploiting tumor-specific antigens to selectively attack cancer cells.
+{{< selfcheck question="How can tumor antigens be effectively targeted without inducing an autoimmune (anti-self) response?" hint="Reread the first two paragraphs of Cell-Mediated Response to Tumors." >}}
+This section does not directly explain how an autoimmune response is avoided when the immune system targets tumor antigens. It states only that tumor antigens are not a part of the screening process used to eliminate lymphocytes during development, so even though they are self-antigens, they can stimulate and drive adaptive immune responses against abnormal cells. The responses it describes are directed at those abnormal cells: both NK cells and cytotoxic T cells can recognize and target cancer cells and induce apoptosis.
 ===CHECKS===
-tumor antigens are self-antigens that were never part of the screening process that eliminates self-reactive lymphocytes during development
-that is exactly why tumor antigens can stimulate adaptive immune responses against abnormal cells
-cytotoxic T cells and NK cells recognize and induce apoptosis specifically in cells presenting tumor antigens
-therapeutic cancer vaccines exploit tumor-specific antigens to selectively attack cancer cells
+tumor antigens are not a part of the screening process used to eliminate lymphocytes during development
+even though they are self-antigens, they can stimulate and drive adaptive immune responses against abnormal cells
+both NK cells and cytotoxic T cells can recognize and target cancer cells and induce apoptosis
 {{< /selfcheck >}}
 
 ### Discuss the risks and benefits of tumor vaccines
@@ -143,28 +142,28 @@ therapeutic cancer vaccines exploit tumor-specific antigens to selectively attac
   question="A ________ cancer vaccine is one that stops the disease from occurring in the first place."
   answer="preventive"
   accept="preventative"
-  hint="This kind of vaccine is given before disease develops, to keep it from occurring at all."
+  hint="Reread the first paragraph of Cancer Vaccines."
 >}}
 
 {{< textin
   question="A ________ cancer vaccine is one that will help to treat the disease after it has occurred."
   answer="therapeutic"
-  hint="This kind of vaccine is given to a patient after cancer has already developed."
+  hint="Reread the first paragraph of Cancer Vaccines."
 >}}
 
 {{< textin
-  question="Most preventive cancer vaccines target viral infections known to lead to cancer, including vaccines against human papillomavirus (HPV) and ________, which help prevent cervical and liver cancer, respectively."
-  answer="hepatitis B"
-  accept="HBV|hep B|hepatitis B virus"
-  hint="This vaccine, like the HPV vaccine, targets a virus known to lead to cancer — but it helps prevent liver cancer rather than cervical cancer."
+  question="For sipuleucel-T (Provenge), ________ are removed from the patient and cultured with a tumor-specific molecule; the cells are then returned to the patient."
+  answer="APCs"
+  accept="antigen-presenting cells"
+  hint="Reread the third paragraph of Cancer Vaccines."
 >}}
 
 {{< textin
   question="Talimogene laherparepvec (T-VEC, also called Imlygic) was approved by the FDA in 2015 to treat ________, a form of skin cancer."
   answer="melanoma"
-  hint="Reread the paragraph on the first FDA-approved therapeutic cancer vaccines in Cancer Vaccines."
+  hint="Reread the third paragraph of Cancer Vaccines."
 >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 19.5: Cancer Immunobiology and Immunotherapy](https://openstax.org/books/microbiology/pages/19-5-cancer-immunobiology-and-immunotherapy) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: this module's Micro Connection ("Using Viruses to Cure Cancer") is rendered as a callout; its source footnote (National Institutes of Health, National Cancer Institute, "Cancer Vaccines," accessed May 20, 2016) is rendered as an inline parenthetical citation after the sentence it supports, with the bare access URL dropped; the module's one cross-reference to another module (the DNA vaccines Micro Connection in *Vaccines*, Section 18.5) is rendered as an absolute site-root Markdown link, since that section is authored; the two Multiple Choice items are rendered as `multiplechoice`, keeping the source's options and order; the two Fill in the Blank items are rendered as `textin`, keeping the source's exact wording, with `accept="preventative"` added to the preventive item since the module's own body Check Your Understanding box uses that spelling for the same concept; the source's one unkeyed Short Answer question ("How can tumor antigens be effectively targeted without inducing an autoimmune (anti-self) response?") stays a `selfcheck`, since the module states why tumor antigens CAN be targeted (they are self-antigens not screened out during lymphocyte development) but never addresses how autoimmunity specifically is avoided, so its model answer and rubric are assembled from the module's tumor-antigen and cell-mediated-response passages and stop where the module stops; all four of the module's body Check Your Understanding bullets stay body self-checks, since none is fixed by a single module sentence (each needs two or more sentences assembled); this module contains no `<figure>` and no table with a `summary` attribute, so no figure and no `sortbins` item appear on this page; three author-written filler items round the two objective groups out to this book's floor of three items per group and eight per section, since the module's own five exercises alone fall two short of it — one `multiplechoice` built from this section's own cell-mediated-response paragraph (the CD95 (Fas) cytotoxic pathway as the "second" apoptosis-inducing mechanism cytotoxic T cells use, with distractors drawn from the same paragraph's own terms) and two `textin` clozes built from this section's own Cancer Vaccines paragraphs (hepatitis B, melanoma). No source exercise item is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 19.5: Cancer Immunobiology and Immunotherapy](https://openstax.org/books/microbiology/pages/19-5-cancer-immunobiology-and-immunotherapy) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: this module's Micro Connection ("Using Viruses to Cure Cancer") is rendered as a callout; its source footnote (National Institutes of Health, National Cancer Institute, "Cancer Vaccines," accessed May 20, 2016) is rendered as an inline parenthetical citation after the sentence it supports, with the bare access URL dropped; the module's one cross-reference to another module (the DNA vaccines Micro Connection in *Vaccines*, Section 18.5) is rendered as an absolute site-root Markdown link, since that section is authored; the two Multiple Choice items are rendered as `multiplechoice`, keeping the source's options and order; the two Fill in the Blank items are rendered as `textin`, keeping the source's exact wording, with `accept="preventative"` added to the preventive item since the module's own body Check Your Understanding box uses that spelling for the same concept; the source's one unkeyed Short Answer question ("How can tumor antigens be effectively targeted without inducing an autoimmune (anti-self) response?") stays a `selfcheck`, since the module states why tumor antigens CAN be targeted (they are self-antigens not screened out during lymphocyte development) but never addresses how autoimmunity specifically is avoided, so its model answer and rubric are assembled from the module's tumor-antigen and cell-mediated-response passages and stop where the module stops; all four of the module's body Check Your Understanding bullets stay body self-checks, since none is fixed by a single module sentence (each needs two or more sentences assembled); this module contains no `<figure>` and no table with a `summary` attribute, so no figure and no `sortbins` item appear on this page; three author-written filler items round the two objective groups out to this book's floor of three items per group and eight per section, since the module's own five exercises alone fall two short of it — one `multiplechoice` built from this section's own cell-mediated-response paragraph (the CD95 (Fas) cytotoxic pathway as the "second" apoptosis-inducing mechanism cytotoxic T cells use, with distractors drawn from the same paragraph's own terms) and two `textin` clozes built from this section's own third Cancer Vaccines paragraph (the APCs of sipuleucel-T, with the referent "For sipuleucel-T (Provenge)" added to the sentence, and melanoma); the source's "T<sub>H</sub>1cells," missing its space, is printed as "T<sub>H</sub>1 cells." No source exercise item is omitted.</small>

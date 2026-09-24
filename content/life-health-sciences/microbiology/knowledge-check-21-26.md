@@ -27,13 +27,14 @@ weight: 31
 >}}
 
 {{< textin
-  question="A deep, pus-filled abscess generally formed from multiple furuncles is called a ________."
-  answer="carbuncle"
+  question="Swollen, inflamed skin that itches or burns, such as from an insect bite, is called a ________."
+  answer="wheal"
 >}}
 
 {{< textin
-  question="Swollen, inflamed skin that itches or burns, such as from an insect bite, is called a ________."
-  answer="wheal"
+  question="Use of ________ can cause changes in the normal microbiota of the conjunctiva by introducing another surface into the natural anatomy of the eye."
+  answer="contact lenses"
+  accept="contacts"
 >}}
 
 ### 21.2 Bacterial Infections of the Skin and Eyes
@@ -51,11 +52,13 @@ Protein A
 {{< textin
   question="*Pseudomonas aeruginosa* can be detected using ________, a medium selective for *Pseudomonas* species."
   answer="cetrimide agar"
+  accept="cetrimide"
 >}}
 
 {{< textin
   question="Cells within a biofilm may differentiate to create dormant subpopulations called ________ cells."
   answer="persister"
+  accept="persister cells"
 >}}
 
 ### 21.3 Viral Infections of the Skin and Eyes
@@ -63,6 +66,7 @@ Protein A
 {{< textin
   question="Long, threadlike warts that grow quickly are called ________ warts."
   answer="filiform"
+  accept="filiform warts"
 >}}
 
 {{< textin
@@ -83,18 +87,18 @@ erythema infectiosum
 ### 21.4 Mycoses of the Skin
 
 {{< multiplechoice
-  question="*Trichophyton*, *Epidermophyton*, and *Microsporum* are three genera of fungal molds that require keratin for growth. Fungi of these genera are collectively called what?"
+  question="*Trichophyton*, *Epidermophyton*, and *Microsporum* are three genera of fungi that require keratin for growth. Fungi of these genera are collectively called what?"
   answer="dermatophytes"
 >}}
 dermatophytes
-*Candida* species
-*Aspergillus* species
-*Sporothrix* species
+yeasts
+dimorphic fungi
 {{< /multiplechoice >}}
 
 {{< textin
   question="The microscopic morphology of *Sporothrix* can be observed by staining a slide culture of the mold with ________."
   answer="lactophenol cotton blue"
+  accept="lactophenol cotton blue stain"
 >}}
 
 {{< textin
@@ -107,11 +111,13 @@ dermatophytes
 {{< textin
   question="An advanced case of *Acanthamoeba* keratitis may require a ________ to prevent blindness."
   answer="corneal transplant"
+  accept="corneal transplantation|cornea transplant"
 >}}
 
 {{< textin
   question="Areas of allergic inflammation caused by migrating *Loa loa* worms are known as ________ swellings."
   answer="Calabar"
+  accept="Calabar swellings"
 >}}
 
 {{< multiplechoice
@@ -146,10 +152,10 @@ It beats to dislodge and propel mucus, and any trapped microbes, upward to the e
 
 {{< multiplechoice
   question="Which of the following respiratory pathogens has no vaccine currently available?"
-  answer="SARS-associated coronavirus (SARS-CoV)"
+  answer="SARS-associated coronavirus"
 >}}
 Influenza viruses
-SARS-associated coronavirus (SARS-CoV)
+SARS-associated coronavirus
 Measles virus
 *Corynebacterium diphtheriae*
 {{< /multiplechoice >}}
@@ -186,7 +192,7 @@ Invasive medical devices such as catheters, medical implants, and ventilators ca
 ### 22.3 Viral Infections of the Respiratory Tract
 
 {{< textin
-  question="A rare complication of influenza and certain other viral infections, marked by swelling of the liver and brain and linked to aspirin use in children, is called ________."
+  question="A complication of influenza that occurs primarily in children and teenagers, causing swelling in the liver and brain and associated with the use of aspirin, is called ________."
   answer="Reye syndrome"
   accept="Reye's syndrome"
 >}}
@@ -213,7 +219,7 @@ By inhalation of material shed from skin lesions
 
 ### 22.4 Respiratory Mycoses
 
-{{< selfcheck question="How common is prior exposure to *Histoplasma capsulatum* in areas where histoplasmosis is endemic, and how does that compare with how many exposed people actually develop symptoms?" >}}
+{{< selfcheck question="How common is prior exposure to *Histoplasma capsulatum* in areas where histoplasmosis is endemic, how many of those exposed actually develop symptoms, and who is most likely to be affected?" >}}
 The incidence of histoplasmosis exposure is high in endemic areas, with 60%–90% of the population having anti-*Histoplasma* antibodies, depending on location; however, relatively few individuals exposed to the fungus actually experience symptoms. Those most likely to be affected are the very young, the elderly, and immunocompromised people.
 ===CHECKS===
 exposure is high in endemic areas, with 60%–90% of the population having anti-*Histoplasma* antibodies
@@ -224,17 +230,17 @@ those most likely to be affected are the very young, the elderly, and immunocomp
 {{< textin
   question="Until 2012, *Coccidioides immitis* was considered a bioterrorism 'select agent' and classified as a ________ microbe."
   answer="BSL-3"
-  accept="BSL3|biosafety level 3"
+  accept="BSL3|biosafety level 3|biosafety level three"
 >}}
 
 {{< multiplechoice
   question="Since no serological or PCR-based test exists for mucormycosis, how is it diagnosed?"
-  answer="Tissue biopsy specimens must be examined for the presence of the fungal pathogens"
+  answer="Examining tissue biopsy specimens for the presence of the fungal pathogens"
 >}}
 Observing the characteristic budding yeast forms in sputum samples
-Tissue biopsy specimens must be examined for the presence of the fungal pathogens
+Examining tissue biopsy specimens for the presence of the fungal pathogens
 Culturing clinical samples on Sabouraud's dextrose agar at 35 °C (95 °F)
-Detecting *Pneumocystis jirovecii* with a PCR-based test in asymptomatic patients with AIDS
+Detecting fungal antigens with a commercially available urine antigen test
 {{< /multiplechoice >}}
 
 ## Chapter 23: Urogenital System Infections
@@ -252,8 +258,7 @@ Detecting *Pneumocystis jirovecii* with a PCR-based test in asymptomatic patient
 >}}
 Salpingitis
 Vaginitis
-Prostatitis
-Orchitis
+Cervicitis
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Besides regulating vaginal lactic acid production, what role does estrogen play in defending the vagina against infection, and what happens to that defense when estrogen levels are low?" >}}
@@ -270,6 +275,7 @@ this thinning increases the risk of tears and abrasions, which compromise the pr
 {{< textin
   question="Blood in the urine, one of the common symptoms of cystitis, is called ________."
   answer="hematuria"
+  accept="haematuria"
 >}}
 
 {{< textin
@@ -279,18 +285,19 @@ this thinning increases the risk of tears and abrasions, which compromise the pr
 >}}
 
 {{< multiplechoice
-  question="Which species is described as a more common cause of urethritis in most settings than *Neisseria gonorrhoeae*, although less common than *Chlamydia trachomatis*?"
-  answer="*Mycoplasma genitalium*"
+  question="Which of the following is a gram-positive pathogen associated with cystitis?"
+  answer="*Staphylococcus saprophyticus*"
 >}}
-*Mycoplasma genitalium*
-*Ureaplasma urealyticum*
-*Mycoplasma hominis*
+*Proteus vulgaris*
+*Klebsiella pneumoniae*
+*Staphylococcus saprophyticus*
+*Pseudomonas aeruginosa*
 {{< /multiplechoice >}}
 
 ### 23.3 Bacterial Infections of the Reproductive System
 
 {{< textin
-  question="Vaginal epithelium that appears granular or stippled because bacteria are attached to its surface is described as ________."
+  question="Epithelial cells in a vaginal smear that appear granular or stippled because bacterial cells are attached to their surface are called ________."
   answer="clue cells"
 >}}
 
@@ -318,7 +325,7 @@ Condylomata lata
 {{< textin
   question="Which herpes simplex virus protein helps the virus replicate and inhibits the maturation of dendritic cells, helping it evade the immune system?"
   answer="ICP 34.5"
-  accept="ICP34.5"
+  accept="ICP34.5|infected cell protein 34.5"
 >}}
 
 {{< selfcheck question="How does the outcome of a herpes simplex virus infection acquired by a newborn during childbirth typically compare with the outcome when the virus crosses the placenta before birth?" >}}
@@ -348,15 +355,16 @@ Types 6, 11, 16, and 18
 >}}
 
 {{< textin
-  question="*Candida* spp. can protect themselves from the host immune system by changing their ________."
-  answer="phenotypes"
+  question="In *Candida*, the asexual spores that result from budding are called ________."
+  answer="blastospores"
 >}}
 
-{{< selfcheck question="Besides vaginal candidiasis, what other conditions can *Candida* infections cause, and where on the body do they occur?" >}}
-Other forms of candidiasis include cutaneous candidiasis, an infection of the skin, and oral thrush, an infection of the mouth.
+{{< selfcheck question="In which body sites are *Candida* spp. commonly found as part of the normal, healthy microbiota, and under what conditions do they typically cause disease in the female reproductive tract?" >}}
+*Candida* spp. are commonly found in the normal, healthy microbiota of the skin, gastrointestinal tract, respiratory system, and female urogenital tract. However, they typically only cause disease in the female reproductive tract under conditions that compromise the host's defenses.
 ===CHECKS===
-cutaneous candidiasis, an infection of the skin
-oral thrush, an infection of the mouth
+commonly found in the normal, healthy microbiota of the skin, gastrointestinal tract
+respiratory system, and female urogenital tract
+typically only cause disease in the female reproductive tract under conditions that compromise the host's defenses
 {{< /selfcheck >}}
 
 ### 23.6 Protozoan Infections of the Urogenital System
@@ -371,11 +379,12 @@ oral thrush, an infection of the mouth
   answer="tetraspanins"
 >}}
 
-{{< selfcheck question="Besides its direct symptoms, what two additional health risks does a trichomoniasis infection increase?" >}}
-Infection increases the risk of transmitting or acquiring HIV and is associated with pregnancy complications such as preterm birth.
+{{< selfcheck question="Which law sets the standards for protecting patient information, and why can contacting the sexual partners of a patient with a sexually transmitted infection conflict with it?" >}}
+The Health Insurance Portability and Accountability Act (HIPAA), passed into law in 1996, sets the standards for the protection of patient information. It requires businesses that use health information, such as insurance companies and healthcare providers, to maintain strict confidentiality of patient records. Contacting a patient's sexual partners may therefore violate the patient's privacy rights if the patient's diagnosis is revealed as a result.
 ===CHECKS===
-increases the risk of transmitting or acquiring HIV
-associated with pregnancy complications such as preterm birth
+the Health Insurance Portability and Accountability Act (HIPAA), passed into law in 1996, sets the standards for the protection of patient information
+it requires businesses that use health information, such as insurance companies and healthcare providers, to maintain strict confidentiality of patient records
+contacting a patient's sexual partners may therefore violate the patient's privacy rights if the patient's diagnosis is revealed
 {{< /selfcheck >}}
 
 ## Chapter 24: Digestive System Infections
@@ -448,7 +457,7 @@ A hemolysin
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Among individuals with underlying disease, such as chronic liver disease, who develop *Vibrio vulnificus* infection, the fatality rate is about what percentage?"
+  question="Among patients with underlying disease who develop *Vibrio vulnificus* infection, the fatality rate is about what percentage?"
   answer="50%"
 >}}
 10%
@@ -483,11 +492,11 @@ HDV
 ### 24.5 Protozoan Infections of the Gastrointestinal Tract
 
 {{< multiplechoice
-  question="How does the flagellar movement of *Giardia lamblia* help it adhere to the intestinal mucosa?"
-  answer="It draws fluid out from under the adhesive disk, creating an area of lower pressure that promotes its adhesion."
+  question="How does *Giardia lamblia* attach to the intestinal mucosa?"
+  answer="Its flagella draw fluid out from under an adhesive disk, creating an area of lower pressure."
 >}}
-It draws fluid out from under the adhesive disk, creating an area of lower pressure that promotes its adhesion.
-It secretes proteases that penetrate and degrade host tissue.
+Its flagella draw fluid out from under an adhesive disk, creating an area of lower pressure.
+It uses a scolex to attach to the intestinal wall.
 It uses pili to adhere to epithelial cells.
 It embeds part of its body in the intestinal mucosa.
 {{< /multiplechoice >}}
@@ -503,7 +512,7 @@ Amoebiasis
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Cyclosporiasis signs and symptoms, when they occur, typically begin within how many days after ingestion of the parasite?"
+  question="When cyclosporiasis signs and symptoms occur, how soon after ingestion of the parasite do they typically begin?"
   answer="7 to 10 days"
 >}}
 1 to 6 hours
@@ -515,8 +524,8 @@ Amoebiasis
 ### 24.6 Helminthic Infections of the Gastrointestinal Tract
 
 {{< multiplechoice
-  question="Which hookworm species is found predominantly in the United States and Australia?"
-  answer="*Necator americanus*"
+  question="Which hookworm species is found in southern Europe, North Africa, the Middle East, and Asia?"
+  answer="*Ancylostoma duodenale*"
 >}}
 *Necator americanus*
 *Ancylostoma duodenale*
@@ -537,10 +546,8 @@ Skin penetration by soil-dwelling larvae
 {{< textin
   question="Liver flukes such as *Fasciola hepatica* spend part of their life cycle in an intermediate host, the ________."
   answer="freshwater snail"
-  accept="snail"
+  accept="snail|fresh water snail"
 >}}
-
-<small>This knowledge check is written for Chapters 21–26 (Infections of the Body Systems) of [Microbiology](https://openstax.org/books/microbiology/pages/1-introduction) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: every question is locally written from the pinned text of the chapters' own modules — their body passages, feature boxes, tables, key terms, and the book's Glossary appendix — and none is transcribed from the book's exercise sets or repeats a question from the section pages' Practice blocks or body self-checks; no question carries a hint, and every self-check carries a rubric that decomposes a model answer made of the module's own sentences.</small>
 
 ## Chapter 25: Circulatory and Lymphatic System Infections
 
@@ -549,11 +556,13 @@ Skin penetration by soil-dwelling larvae
 {{< textin
   question="The presence of viruses in the blood is called ________."
   answer="viremia"
+  accept="viraemia"
 >}}
 
 {{< textin
-  question="Inflammation of the heart's muscle tissue is called ________."
-  answer="myocarditis"
+  question="In the lymphatic system, bone marrow contains the ________ that differentiate and mature into the various types of blood cells and lymphocytes."
+  answer="hematopoietic stem cells"
+  accept="HSC|haematopoietic stem cells"
 >}}
 
 {{< multiplechoice
@@ -591,7 +600,7 @@ Rocky Mountain spotted fever
 {{< textin
   question="Besides ticks, tularemia can also be transmitted to humans through the bite of which arthropod vector?"
   answer="deer flies"
-  accept="deerflies|deer fly|Chrysops"
+  accept="deerflies|deer fly|deerfly|Chrysops|Chrysops spp."
 >}}
 
 ### 25.3 Viral Infections of the Circulatory and Lymphatic Systems
@@ -599,11 +608,12 @@ Rocky Mountain spotted fever
 {{< textin
   question="Cells infected with cytomegalovirus develop enlarged nuclei with a distinctive appearance described as looking like a(n) ________."
   answer="owl's eye"
+  accept="owl eye"
 >}}
 
 {{< textin
-  question="Diagnosis of cytomegalovirus infection during pregnancy is usually achieved by serology, since CMV is the \"C\" in prenatal ________ screening."
-  answer="TORCH"
+  question="The species that cause Ebola virus disease (EVD) are BSL-4 viruses of the kind called ________."
+  answer="filovirus"
 >}}
 
 {{< multiplechoice
@@ -628,7 +638,7 @@ the infection can be fatal
 {{< textin
   question="The swelling of the eyelids or the side of the face that can occur near a triatomine bug bite during the acute phase of Chagas disease is called ________."
   answer="Romaña's sign"
-  accept="Romaña sign"
+  accept="Romaña sign|Romaña"
 >}}
 
 {{< multiplechoice
@@ -656,6 +666,7 @@ Glial cells
 {{< textin
   question="Microbial damage to peripheral nerves can cause a tingling or numbness sensation known as ________."
   answer="neuropathy"
+  accept="peripheral neuropathy"
 >}}
 
 {{< selfcheck question="How does Guillain-Barré syndrome (GBS) typically develop following an infection, and how might cross-reactive antibodies explain the connection?" >}}
@@ -728,13 +739,11 @@ Histological examination of brain biopsies for amyloid plaques and prion protein
 Freshwater rivers and lakes
 Pigeon droppings
 Cat feces
-Tsetse fly bites
 {{< /multiplechoice >}}
 
 {{< textin
-  question="*Naegleria fowleri* amoebae seen in a patient's CSF can be stained for identification with several stains, including a modified trichrome stain or ________."
-  answer="Giemsa-Wright"
-  accept="Giemsa-Wright stain|Wright-Giemsa|Wright-Giemsa stain"
+  question="A new experimental drug called ________ shows some promise for treating *Naegleria fowleri* infections."
+  answer="miltefosine"
 >}}
 
 {{< selfcheck question="How is a successfully treated African trypanosomiasis patient monitored for relapse, and what is described as the most effective way to prevent this disease?" >}}
@@ -744,3 +753,6 @@ patients still need to have follow-up examinations of their CSF for two years to
 the most effective means of preventing these diseases is to control the insect vector populations
 {{< /selfcheck >}}
 
+---
+
+<small>This knowledge check is written for Chapters 21–26 (Infections of the Body Systems) of [Microbiology](https://openstax.org/books/microbiology/pages/1-introduction) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: every question is locally written from the pinned text of the chapters' own modules — their body passages, feature boxes, tables, figure captions, key terms, and the book's Glossary appendix — and none is transcribed from the book's exercise sets or repeats a question from the section pages' Practice blocks or body self-checks; no question carries a hint, and every self-check carries a rubric that decomposes a model answer made of the module's own sentences.</small>

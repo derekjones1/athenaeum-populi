@@ -32,7 +32,7 @@ There are no effective antiviral treatments for the common cold and antibacteria
 {{< multiplechoice
   question="How are colds transmitted?"
   answer="direct contact and droplet transmission"
-  hint="This section's opening paragraph names the two routes most cold viruses use to reach a new host."
+  hint="See the first paragraph of The Common Cold subsection."
 >}}
 transplacental infection from mother to fetus
 direct contact and droplet transmission
@@ -130,7 +130,7 @@ During the spring of 2013, a new strain of H7N9 influenza was reported in China.
 
 **Check Your Understanding**
 
-{{< sortbins question="Sort each fact about influenza viruses under the group it describes." hint="Check the severity and population-spread rows of the table above for each group." >}}
+{{< sortbins question="Compare the severity of the three types of influenza viruses by sorting each fact under the type it describes." hint="See the table of the three influenza types in the Influenza subsection." >}}
 {"bins": ["Influenza A", "Influenza B", "Influenza C"],
  "items": [
   {"label": "Severe disease", "bin": 0},
@@ -163,7 +163,7 @@ Respiratory syncytial virus (RSV) infections are fairly common in infants; most 
 {{< multiplechoice
   question="Who is most likely to contract viral pneumonia?"
   answer="Children and the elderly"
-  hint="This section's opening sentence about viral pneumonia names the two age groups most affected."
+  hint="See the first sentence of the Viral Pneumonia subsection."
 >}}
 Children and the elderly
 Healthy young adults, especially during a pandemic strain
@@ -174,7 +174,7 @@ Individuals who have not received the MMR vaccine
 {{< multiplechoice
   question="What is the recommended treatment for viral pneumonia?"
   answer="No specific antiviral therapies or vaccines are available."
-  hint="This section's Viral Pneumonia subsection says directly what is and is not available to treat it."
+  hint="See the second paragraph of the Viral Pneumonia subsection."
 >}}
 Zanamivir, inhaled at the onset of symptoms
 No specific antiviral therapies or vaccines are available.
@@ -192,9 +192,9 @@ MERS was first reported in Saudi Arabia in 2012. *Source note: the source prints
 
 **Check Your Understanding**
 
-{{< textin question="What is the cause of SARS?" answer="coronavirus" accept="corona virus|SARS-CoV|SARS coronavirus|SARS-associated coronavirus" hint="This section's opening sentence names the type of virus responsible for both SARS and MERS." >}}
+{{< textin question="What is the cause of SARS?" answer="coronavirus" accept="corona virus|SARS-CoV|SARS coronavirus|SARS-associated coronavirus" hint="See the first sentence of the SARS and MERS subsection." >}}
 
-{{< selfcheck question="What are the signs and symptoms of MERS?" hint="List the symptoms this section's MERS paragraph gives, from the common ones to the complication that can follow." >}}
+{{< selfcheck question="What are the signs and symptoms of MERS?" hint="See the MERS paragraph of the SARS and MERS subsection." >}}
 Some people infected with MERS are asymptomatic or have only mild cold-like symptoms, but most develop a high fever, aches, and cough, along with a severe respiratory infection that can progress to pneumonia.
 ===CHECKS===
 some infected individuals are asymptomatic or have mild cold-like symptoms
@@ -213,7 +213,7 @@ The measles virus (MeV) causes the highly contagious disease **measles**, also k
 The measles virus is a single-stranded, negative-strand RNA virus and, like the influenza virus, it possesses an envelope with spikes of embedded hemagglutinin. The infection is spread by direct contact with infectious secretions or inhalation of airborne droplets spread by breathing, coughing, or sneezing. Measles is initially characterized by a high fever, conjunctivitis, and a sore throat. The virus then moves systemically through the bloodstream and causes a characteristic rash. The measles rash initially forms on the face and later spreads to the extremities. The red, raised macular rash will eventually become confluent and can last for several days. At the same time, extremely high fevers (higher than 40.6 °C [105 °F]) can occur. Another diagnostic sign of measles infections is **Koplik's spots**, white spots that form on the inner lining of inflamed cheek tissues (shown below).
 
 {{< mediafigure src="microbiology/OSC_Microbio_22_03_Measles" kind="photo" alt="Four panels. (a) A raised red rash covers a child's neck and shoulder. (b) A gloved hand pulls back a child's cheek to show white spots against the pink inner lining of the mouth. (c) A black bar covers the eyes of a child whose face is covered in a red, blotchy rash. (d) A round virus particle in a black-and-white electron micrograph, surrounded by cell debris." >}}
-(a and b) Measles typically presents as a raised macular rash that begins on the face and spreads to the extremities. (c) Koplik's spots on the oral mucosa are also characteristic of measles. (d) A thin-section transmission electron micrograph of a measles virion. (credit a: a. Betty G. Partin/CDC.; b, c: modification of work by Centers for Disease Control and Prevention)
+(a and c) Measles typically presents as a raised macular rash that begins on the face and spreads to the extremities. (b) Koplik's spots on the oral mucosa are also characteristic of measles. (d) A thin-section transmission electron micrograph of a measles virion. (credit a: a. Betty G. Partin/CDC.; b, c: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
 Although measles is usually self-limiting, it can lead to pneumonia, encephalitis, and death. In addition, the inhibition of immune system cells by the measles virus predisposes patients to secondary infections. In severe infections with highly virulent strains, measles fatality rates can be as high as 10% to 15%. There were more than 145,000 measles deaths (mostly young children) worldwide in 2013 (World Health Organization, "Measles Factsheet," 2016).
@@ -267,7 +267,7 @@ The primary diagnosis of chickenpox in children is mainly based on the presentat
 {{< multiplechoice
   question="Why does measles often lead to secondary infections?"
   answer="The measles virus inhibits immune system cells, predisposing patients to secondary infections."
-  hint="This section's paragraph on measles complications names what the virus does to the immune system itself."
+  hint="See the paragraph after the measles figure in the Measles (Rubeola) subsection."
 >}}
 The measles virus inhibits immune system cells, predisposing patients to secondary infections.
 Reactivation of the virus along sensory nerves
@@ -275,7 +275,7 @@ An association with aspirin use in children
 The formation of pustular lesions that burst and scab
 {{< /multiplechoice >}}
 
-{{< sortbins question="Sort each sign or symptom under the disease it distinguishes." hint="Rubella's own subsection lists exactly how its rash and fever compare with measles." >}}
+{{< sortbins question="What signs or symptoms would distinguish rubella and measles? Sort each under the disease it describes." hint="Compare the rash and fever sentences of the Measles (Rubeola) subsection with the first paragraph of the next subsection." >}}
 {"bins": ["Measles", "Rubella"],
  "items": [
   {"label": "Rash becomes confluent and can last several days", "bin": 0},
@@ -286,7 +286,7 @@ The formation of pustular lesions that burst and scab
   {"label": "Fever is lower, around 101 °F [38.3 °C]", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="Why can chickenpox lead to shingles later in life?" hint="Trace the virus's path from the original chickenpox infection to its reactivation years later." >}}
+{{< selfcheck question="Why can chickenpox lead to shingles later in life?" hint="See the paragraph after the chickenpox figure in the Chickenpox and Shingles subsection." >}}
 After the initial chickenpox infection, the varicella-zoster virus moves along sensory nerves to the dorsal ganglia in the spinal cord, where it can remain latent for decades. A variety of stimuli, including stress, aging, and immunosuppression, can reactivate these dormant viruses, and the reactivated virus then moves back along sensory nerves to the skin of the face or trunk, producing the painful lesions of shingles.
 ===CHECKS===
 the virus moves along sensory nerves to the dorsal ganglia, where it can remain latent for decades
@@ -374,9 +374,9 @@ Koplik's spots
 syncytia
 {{< /multiplechoice >}}
 
-{{< textin question="The ________ virus is responsible for causing German measles." answer="rubella" accept="rubella virus" hint="The subsection on German measles names the virus responsible for it in its very first sentence." >}}
+{{< textin question="The ________ virus is responsible for causing German measles." answer="rubella" accept="rubella virus" hint="See the first paragraph of the second subsection under Viral Respiratory Diseases Causing Skin Rashes." >}}
 
-{{< textin question="In cases of shingles, the antiviral drug ________ may be prescribed." answer="acyclovir" accept="aciclovir" hint="This antiviral drug is named in the shingles treatment paragraph." >}}
+{{< textin question="In cases of shingles, the antiviral drug ________ may be prescribed." answer="acyclovir" accept="aciclovir" hint="See the diagnosis and treatment paragraph of the Chickenpox and Shingles subsection." >}}
 
 {{< multiplechoice
   question="Since we all have experienced many colds in our lifetime, why are we not resistant to future infections?"
@@ -405,7 +405,7 @@ influenza
 {{< multiplechoice
   question="Which of the following diseases is not associated with coronavirus infections?"
   answer="German measles"
-  hint="Three of these are directly tied to a coronavirus elsewhere in this section; the fourth is caused by a different kind of virus entirely."
+  hint="Check which virus this section names as the cause of each disease."
 >}}
 Middle East respiratory syndrome
 German measles
@@ -428,9 +428,9 @@ variola major virus
 
 {{< textin question="The slow accumulation of genetic changes to an influenza virus over time is referred to as ________." answer="antigenic drift" hint="See the Influenza subsection's paragraph on the two mechanisms of evolutionary change." >}}
 
-{{< textin question="The ________ vaccine is effective in controlling both measles and rubella." answer="MMR" accept="measles mumps and rubella|measles mumps rubella" hint="This section names one vaccine that protects against both measles and rubella." >}}
+{{< textin question="The ________ vaccine is effective in controlling both measles and rubella." answer="MMR" accept="MMR vaccine|measles mumps and rubella|measles mumps rubella" hint="See the treatment paragraph of the Measles (Rubeola) subsection." >}}
 
-{{< selfcheck question="What role does the common cold have in the rise of antibiotic-resistant strains of bacteria in the United States?" hint="Think about why a physician might prescribe an antibacterial drug for a viral infection anyway." >}}
+{{< selfcheck question="What role does the common cold have in the rise of antibiotic-resistant strains of bacteria in the United States?" hint="See the closing paragraph of The Common Cold subsection." >}}
 This section states that there are no effective antiviral treatments for the common cold and that antibacterial drugs should not be prescribed for it unless a secondary bacterial infection has been established; the section does not itself explain how treating colds with antibacterial drugs affects the rise of antibiotic-resistant bacteria.
 ===CHECKS===
 there are no effective antiviral treatments for the common cold
@@ -441,15 +441,15 @@ the section does not itself explain how treating colds with antibacterial drugs 
 {{< multiplechoice
   question="Why is it highly unlikely that influenza A virus will ever be eradicated, like the smallpox virus?"
   answer="Influenza A can infect a variety of animal reservoirs, unlike smallpox, whose only reservoir was infected humans."
-  hint="Compare what this section says about where each virus can live between human outbreaks."
+  hint="Compare the table of the three influenza types with the Eye on Ethics box."
 >}}
-There are currently 18 known subtypes of hemagglutinin and 11 known subtypes of neuraminidase.
-Only about 50% of the influenza vaccines developed over the past decade have been effective.
+Influenza viruses are serologically characterized by the type of H and N proteins that they possess.
+The influenza viruses A, B, and C make up three of the five major groups of orthomyxoviruses.
 Only a few of the nearly 200 possible combinations of hemagglutinin and neuraminidase are associated with human disease.
 Influenza A can infect a variety of animal reservoirs, unlike smallpox, whose only reservoir was infected humans.
 {{< /multiplechoice >}}
 
-{{< sortbins question="Sort each sign or symptom under the disease it more strongly describes." hint="The table above lists influenza's signs as more severe versions of the common cold's." >}}
+{{< sortbins question="Sort each sign or symptom under the disease it more strongly describes." hint="See the table comparing the two diseases in the Influenza subsection." >}}
 {"bins": ["Common cold", "Influenza"],
  "items": [
   {"label": "Low-grade fever, about 37.2 °C [99 °F]", "bin": 0},
@@ -466,4 +466,4 @@ Influenza A can infect a variety of animal reservoirs, unlike smallpox, whose on
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 22.3: Viral Infections of the Respiratory Tract](https://openstax.org/books/microbiology/pages/22-3-viral-infections-of-the-respiratory-tract) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all five of the module's photographic figures (Measles, Rubella, Chicken, Shingles) are re-encoded as WebP and rendered as `mediafigure`s with `kind="photo"` after image inspection, overriding the media manifest's guess of `kind="photo"` for two of them and `kind="diagram"` for the other two — every panel in each figure is itself a photograph or micrograph, with the only added ink being lettering and a scale bar, so all four are photos; the Influenza figure is rendered with `kind="diagram"`, correcting the manifest's photo guess (drawn against a JPEG source), and carries `eager="true"` as the page's first figure; all five alts are rewritten from the images after inspection to describe what is drawn or photographed rather than the source's own alt wording; the Disease Profile box's table image (`OSC_Microbio_22_03_Viruses`) is not vendored — it is transcribed as a Markdown table inside the callout, read from the image and checked against the PDF page, per this book's Disease Profile rule; all eighteen of the module's footnotes are rendered as inline parenthetical citations placed after the sentences they support, bare access URLs dropped, author names and titles kept verbatim, with the two "Ibid." footnotes (the Disneyland-outbreak citation and the second smallpox-specimen citation) written out with the same full citation as the footnote they refer back to; the historical-outbreaks table's serotype for the 1957–1958 Asian flu is corrected from the source's printed "N2N2" to the well-established H2N2, with a visible Source note beside the table, since no strain of that designation exists and the "N" for "H" is a plain transcription defect (both the CNXML and the PDF print the same error); MERS's first-reported year is corrected from the source's printed "2013" to 2012, with a visible Source note beside the sentence, since WHO and CDC date the first report of MERS to September 2012 (the Key terms entry, drawn from the same claim, is corrected the same way without a separate note); one duplicated word is silently corrected without an inline note — the Common Cold subsection's "such as nasal excess nasal secretions (runny nose)" is corrected to "such as excess nasal secretions (runny nose)"; one one-word correction is likewise made without an inline note in the Influenza subsection, where the module's own cross-reference sentence prints "antigen drift" although every other of the module's own four uses of the term (the summary, the Fill in the Blank key, and the term's own two other mentions) spell it "antigenic drift," so the cross-reference sentence is corrected to match; the module's cross-reference to *Virulence Factors of Bacterial and Viral Pathogens* is rendered as a link to that already-authored page; the Clinical Focus Part 3 box's "Jump to the next/previous Clinical Focus box" links are replaced with a sentence linking to Section 22.1, where the case began, and Section 22.4, where it continues; the module's five Multiple Choice items and five Fill in the Blank items are rendered exactly as keyed, in source order and source option order (the Fill in the Blank items as `textin`); of the module's eleven body Check Your Understanding bullets, nine are graded at their body position rather than left as self-checks — "How are colds transmitted?" and "What is responsible for the symptoms of a cold?" become `multiplechoice` items keyed from this section's own transmission and inflammation sentences; "Compare the severity of the three types of influenza viruses" is rendered as a `sortbins` sorting the Three Major Groups table's own severity and population-spread facts among Influenza A/B/C, replacing the bullet at its body position; "Why must new influenza vaccines be developed each year?" becomes a `multiplechoice` keyed from this section's antigenic-change sentence; "Who is most likely to contract viral pneumonia?" and "What is the recommended treatment for viral pneumonia?" become `multiplechoice` items keyed from the Viral Pneumonia subsection's own sentences; "What is the cause of SARS?" becomes a `textin` keyed "coronavirus"; "Why does measles often lead to secondary infections?" becomes a `multiplechoice` keyed from the measles-complications sentence; "What signs or symptoms would distinguish rubella and measles?" is rendered as a `sortbins` sorting the two diseases' own distinguishing rash and fever facts between Measles and Rubella bins; "What are the signs and symptoms of MERS?" and "Why can chickenpox lead to shingles later in life?" remain self-checks with model answers assembled from this section's own text, since each needs more than one sentence to answer honestly; the Comparing the Common Cold and Influenza table keeps the source's bracketed Fahrenheit/Celsius notation as printed and gets its own `sortbins` in Practice, pairing each sign with its cell value under the objective the table serves, since no body item already asks that table's contrast; the Three Major Groups of Influenza table's animal-reservoir and genome-segment and antigenic-variation rows are not used in the body sortbins because two of the three influenza types share an identical cell value in each of those rows, which would make an item's correct bin unguessable from its own wording — only the severity and population-spread rows, whose three values are all distinct, are used; the Historical Influenza Outbreaks table is transcribed as a Markdown table without a `sortbins`, since it compares quantities and dates rather than categories; the unkeyed Short Answer question about resistance to future colds is rendered as a `multiplechoice` keyed from the section's own "Given the number of viruses that cause colds" sentence; the unkeyed Critical Thinking question about antibiotic resistance and the common cold remains a self-check, since the section's nearest sentence does not itself connect the two; the unkeyed Critical Thinking question about influenza A's eradication is rendered as a `multiplechoice` keyed from the section's own animal-reservoir sentences, contrasted with the Eye on Ethics box's sentence on smallpox's human-only reservoir; no source exercise, table, or Check Your Understanding bullet is omitted; key terms are compiled from the module's twelve `<term>` elements and the book's Glossary appendix, giving twelve distinct bullets, all from the Glossary (none sentence-derived). The chickenpox figure's alt gives no size for the herpesvirus particle, because the source alt's "approximately 300 nanometers according to a scale bar on the bottom right" refers to a scale bar the vendored micrograph does not print.</small>
+<small>This section is adapted from [Microbiology, Section 22.3: Viral Infections of the Respiratory Tract](https://openstax.org/books/microbiology/pages/22-3-viral-infections-of-the-respiratory-tract) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four of the module's photographic figures (Measles, Rubella, Chicken, Shingles) are re-encoded as WebP and rendered as `mediafigure`s with `kind="photo"` after image inspection, overriding the media manifest's guess of `kind="diagram"` for three of them (Measles, Chicken, Shingles) — every panel in each figure is itself a photograph or micrograph, with the only added ink being lettering and a scale bar, so all four are photos; the Influenza figure is rendered with `kind="diagram"`, correcting the manifest's photo guess (drawn against a JPEG source), and carries `eager="true"` as the page's first figure; all five alts are rewritten from the images after inspection to describe what is drawn or photographed rather than the source's own alt wording; the measles figure's caption letters are corrected to match the image, whose panel (b) shows the inside of the cheek and panel (c) the rash-covered face, so the source's "(a and b)" rash and "(c)" Koplik's spots read "(a and c)" and "(b)"; the Disease Profile box's table image (`OSC_Microbio_22_03_Viruses`) is not vendored — it is transcribed as a Markdown table inside the callout, read from the image and checked against the PDF page, per this book's Disease Profile rule; all eighteen of the module's footnotes are rendered as inline parenthetical citations placed after the sentences they support, bare access URLs dropped, author names and titles kept verbatim, with the two "Ibid." footnotes (the Disneyland-outbreak citation and the second smallpox-specimen citation) written out with the same full citation as the footnote they refer back to; the historical-outbreaks table's serotype for the 1957–1958 Asian flu is corrected from the source's printed "N2N2" to the well-established H2N2, with a visible Source note beside the table, since no strain of that designation exists and the "N" for "H" is a plain transcription defect (both the CNXML and the PDF print the same error); MERS's first-reported year is corrected from the source's printed "2013" to 2012, with a visible Source note beside the sentence, since WHO and CDC date the first report of MERS to September 2012 (the Key terms entry, drawn from the same claim, is corrected the same way without a separate note); one duplicated word is silently corrected without an inline note — the Common Cold subsection's "such as nasal excess nasal secretions (runny nose)" is corrected to "such as excess nasal secretions (runny nose)"; one one-word correction is likewise made without an inline note in the Influenza subsection, where the module's own cross-reference sentence prints "antigen drift" although every other of the module's own four uses of the term (the summary, the Fill in the Blank key, and the term's own two other mentions) spell it "antigenic drift," so the cross-reference sentence is corrected to match; the module's cross-reference to *Virulence Factors of Bacterial and Viral Pathogens* is rendered as a link to that already-authored page; the Clinical Focus Part 3 box's "Jump to the next/previous Clinical Focus box" links are replaced with a sentence linking to Section 22.1, where the case began, and Section 22.4, where it continues; the module's five Multiple Choice items and five Fill in the Blank items are rendered exactly as keyed and in source option order (the Fill in the Blank items as `textin`), each under the objective it tests, which places the third Multiple Choice item (syncytia) before the second (smallpox) and the third Fill in the Blank item (acyclovir) before the second (cytokine storm); of the module's eleven body Check Your Understanding bullets, nine are graded at their body position rather than left as self-checks — "How are colds transmitted?" and "What is responsible for the symptoms of a cold?" become `multiplechoice` items keyed from this section's own transmission and inflammation sentences; "Compare the severity of the three types of influenza viruses" is rendered at its body position as a `sortbins`, the bullet's question kept with a sort instruction appended, sorting the Three Major Groups table's own severity and population-spread facts among Influenza A/B/C; "Why must new influenza vaccines be developed each year?" becomes a `multiplechoice` keyed from this section's antigenic-change sentence; "Who is most likely to contract viral pneumonia?" and "What is the recommended treatment for viral pneumonia?" become `multiplechoice` items keyed from the Viral Pneumonia subsection's own sentences; "What is the cause of SARS?" becomes a `textin` keyed "coronavirus"; "Why does measles often lead to secondary infections?" becomes a `multiplechoice` keyed from the measles-complications sentence; "What signs or symptoms would distinguish rubella and measles?" is rendered as a `sortbins`, the bullet's question kept with a sort instruction appended, sorting the two diseases' own distinguishing rash and fever facts between Measles and Rubella bins; "What are the signs and symptoms of MERS?" and "Why can chickenpox lead to shingles later in life?" remain self-checks with model answers assembled from this section's own text, since the MERS answer is a multi-part list of symptoms and the shingles answer needs several sentences; the Comparing the Common Cold and Influenza table keeps the source's bracketed Fahrenheit/Celsius notation as printed and gets its own `sortbins` in Practice, pairing each sign with its cell value under the objective the table serves, since no body item already asks that table's contrast; the Three Major Groups of Influenza table's animal-reservoir and genome-segment and antigenic-variation rows are not used in the body sortbins because two of the three influenza types share an identical cell value in each of those rows, which would make an item's correct bin unguessable from its own wording — only the severity and population-spread rows, whose three values are all distinct, are used; the Historical Influenza Outbreaks table is transcribed as a Markdown table without a `sortbins`, since it compares quantities and dates rather than categories; the unkeyed Short Answer question about resistance to future colds is rendered as a `multiplechoice` keyed from the section's own "Given the number of viruses that cause colds" sentence; the unkeyed Critical Thinking question about antibiotic resistance and the common cold remains a self-check, since the section's nearest sentence does not itself connect the two; the unkeyed Critical Thinking question about influenza A's eradication is rendered as a `multiplechoice` keyed from the section's own animal-reservoir sentences, contrasted with the Eye on Ethics box's sentence on smallpox's human-only reservoir; no source exercise, table, or Check Your Understanding bullet is omitted; key terms are compiled from the module's twelve `<term>` elements and the book's Glossary appendix, giving twelve distinct bullets, all from the Glossary (none sentence-derived). The chickenpox figure's alt gives no size for the herpesvirus particle, because the source alt's "approximately 300 nanometers according to a scale bar on the bottom right" refers to a scale bar the vendored micrograph does not print.</small>

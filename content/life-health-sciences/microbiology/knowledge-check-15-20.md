@@ -32,13 +32,14 @@ Neoplastic
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The number of cases of a disease in a population, monitored by the WHO's International Classification of Diseases, is called ________."
-  answer="morbidity"
+  question="*Helicobacter pylori* colonizes the stomach and persists in its highly acidic environment by producing the enzyme ________, which modifies the local acidity."
+  answer="urease"
 >}}
 
 {{< textin
   question="Diseases that do not present any noticeable signs or symptoms are called asymptomatic or ________."
   answer="subclinical"
+  accept="sub-clinical"
 >}}
 
 ### 15.2 How Pathogens Cause Disease
@@ -64,39 +65,40 @@ Hepatitis A virus
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which of the following is described as the most important portal of entry for microbes?"
-  answer="Mucosal surfaces"
+  question="Which condition can result in a high concentration of glucose in the saliva, providing an optimal environment for the growth of *Candida* that results in thrush?"
+  answer="untreated diabetes"
 >}}
-Skin
-Mucosal surfaces
-Parenteral routes
-Placenta
+low estrogen levels
+antibacterial medication
+immunodeficiency
+untreated diabetes
 {{< /multiplechoice >}}
 
 ### 15.3 Virulence Factors of Bacterial and Viral Pathogens
 
 {{< multiplechoice
-  question="The fimbriae of certain species of *Streptococcus* contain a virulence factor that alters the bacterial surface and inhibits phagocytosis by blocking the binding of complement molecules. What is this factor called?"
-  answer="M protein"
+  question="Which A-B toxin has an A subunit that acts as a protease, cleaving proteins involved in a neuron's release of acetylcholine and so inhibiting muscle contractions?"
+  answer="botulinum toxin"
 >}}
-protease
-coagulase
-hyaluronidase
-M protein
+botulinum toxin
+cholera toxin
+diphtheria toxin
+tetanus toxin
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The class of exoenzymes that trigger the conversion of plasminogen to plasmin, digesting fibrin clots and allowing trapped pathogens to escape, is called ________."
+  question="The bacterial enzymes that trigger the conversion of plasminogen to plasmin, digesting fibrin clots and allowing trapped pathogens to escape, are called ________."
   answer="kinases"
 >}}
 
-{{< selfcheck question="Explain how the VlsE surface protein of *Borrelia burgdorferi* helps the bacterium cause chronic Lyme disease." >}}
-Because of genetic recombination during DNA replication and repair, the VlsE surface lipoprotein of *B. burgdorferi* undergoes antigenic variation. Each time fever occurs, VlsE can differ so much that antibodies against previous VlsE sequences are no longer effective, and this variation is believed to contribute to the bacterium's ability to cause chronic disease.
+{{< selfcheck question="Why must vaccines against Influenzavirus be given annually?" >}}
+The rate of antigenic variation in influenza viruses is very high, making it difficult for the immune system to recognize the many different strains of Influenzavirus. Although the body may develop immunity to one strain through natural exposure or vaccination, antigenic variation results in the continual emergence of new strains that the immune system will not recognize. Each year's influenza vaccine provides protection against the most prevalent strains for that year, but new or different strains may be more prevalent the following year.
 ===CHECKS===
-genetic recombination during DNA replication and repair
-the VlsE surface lipoprotein of *B. burgdorferi* undergoes antigenic variation
-antibodies against previous VlsE sequences are no longer effective
-this variation is believed to contribute to the bacterium's ability to cause chronic disease
+the rate of antigenic variation in influenza viruses is very high
+the body may develop immunity to one strain through natural exposure or vaccination
+antigenic variation results in the continual emergence of new strains that the immune system will not recognize
+each year's influenza vaccine provides protection against the most prevalent strains for that year
+new or different strains may be more prevalent the following year
 {{< /selfcheck >}}
 
 ### 15.4 Virulence Factors of Eukaryotic Pathogens
@@ -162,6 +164,7 @@ Gonorrhea
 {{< textin
   question="In 1546, Girolamo Fracastoro proposed the germ theory of disease, which for many years remained in competition with an alternative explanation called the ________."
   answer="miasma hypothesis"
+  accept="miasma|miasma theory"
 >}}
 
 {{< multiplechoice
@@ -182,13 +185,13 @@ Propagated spread
 ### 16.3 Modes of Disease Transmission
 
 {{< multiplechoice
-  question="Which disease do various species of mammals usually transmit to humans by means of a bite that transmits the virus?"
-  answer="rabies"
+  question="Although many viruses are soon destroyed once in contact with air, water, or other non-physiological conditions, some can persist outside a living cell. Which viruses are somewhat fragile, typically surviving less than a day outside of physiological fluids?"
+  answer="rhinoviruses"
 >}}
-avian influenza
-typhoid fever
-rabies
-Lyme disease
+influenza viruses
+hantavirus
+hepatitis B virus
+rhinoviruses
 {{< /multiplechoice >}}
 
 {{< textin
@@ -227,6 +230,7 @@ typhus
 {{< textin
   question="In 2003, WHO established a collaborative effort that identified the causative agent of SARS as a ________ associated with horseshoe bats."
   answer="coronavirus"
+  accept="SARS coronavirus"
 >}}
 
 ## Chapter 17: Innate Nonspecific Host Defenses
@@ -247,23 +251,23 @@ Gap junctions
   answer="hypodermis"
 >}}
 
-{{< selfcheck question="Explain how the epidermis creates an environment that is inhospitable to microbes, apart from shedding its dead cells." >}}
-The epidermis is packed with keratin, which makes the skin's surface mechanically tough and resistant to degradation by bacterial enzymes. Fatty acids on the skin's surface also create a dry, salty, and acidic environment that inhibits the growth of some microbes and is highly resistant to breakdown by bacterial enzymes.
+{{< selfcheck question="Explain the role urine plays as a mechanical defense of the urinary tract." >}}
+The flushing action of urine is largely responsible for keeping the urinary tract, which includes the kidneys, ureters, and urinary bladder, free of transient microorganisms that may include pathogens. Urine passing out of the body washes out transient microorganisms, preventing them from taking up residence.
 ===CHECKS===
-keratin makes the skin's surface mechanically tough and resistant to degradation by bacterial enzymes
-fatty acids on the skin's surface create a dry, salty, and acidic environment that inhibits the growth of some microbes
+the flushing action of urine is largely responsible for keeping the urinary tract free of transient microorganisms that may include pathogens
+urine passing out of the body washes out transient microorganisms, preventing them from taking up residence
 {{< /selfcheck >}}
 
 ### 17.2 Chemical Defenses
 
 {{< multiplechoice
-  question="Lysozyme is more effective against which type of bacteria, because they lack the protective outer membrane found in the other type?"
-  answer="gram-positive bacteria"
+  question="Which pair of complement fragments are well-characterized anaphylatoxins that activate mast cells, causing degranulation and the release of inflammatory chemical signals?"
+  answer="C3a and C5a"
 >}}
-gram-negative bacteria
-gram-positive bacteria
-acid-fast bacteria
-spore-forming bacteria
+C3b and C4b
+C3a and C5a
+C1q and C3b
+C8 and C9
 {{< /multiplechoice >}}
 
 {{< textin
@@ -292,7 +296,7 @@ lymphocytes
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Leukocytes that lack abundant granules in the cytoplasm, and that are categorized as either lymphocytes or monocytes, are called ________."
+  question="The white blood cells that are categorized as either lymphocytes or monocytes are collectively called ________."
   answer="agranulocytes"
 >}}
 
@@ -306,13 +310,13 @@ artificially inducing pus formation does not promote recovery
 ### 17.4 Pathogen Recognition and Phagocytosis
 
 {{< multiplechoice
-  question="During the respiratory burst, a phagocyte's increased consumption of oxygen is directed toward which purpose?"
-  answer="producing superoxide anion, hydrogen peroxide, and other reactive oxygen species"
+  question="During extravasation, which leukocytes are typically the first to arrive at the site of a bacterial infection, often within hours?"
+  answer="neutrophils"
 >}}
-producing superoxide anion, hydrogen peroxide, and other reactive oxygen species
-generating ATP for the cell's own energy needs
-synthesizing new lysosomal digestive enzymes
-forming the pseudopod that wraps around the pathogen
+monocytes
+eosinophils
+neutrophils
+basophils
 {{< /multiplechoice >}}
 
 {{< textin
@@ -320,11 +324,12 @@ forming the pseudopod that wraps around the pathogen
   answer="peroxynitrite"
 >}}
 
-{{< selfcheck question="Explain how the parasite Leishmania is able to survive after being phagocytosed by a macrophage." >}}
-Leishmania cells are phagocytosed, lose their flagella, and multiply in a form known as an amastigote within the phagolysosome. Survival of the amastigotes is maintained by the presence of surface lipophosphoglycan and acid phosphatase, which inhibit the macrophage respiratory burst and lysosomal enzymes.
+{{< selfcheck question="Some pattern recognition receptors (PRRs) are embedded in the membranes of a phagocyte's interior compartments and organelles rather than on its surface. Why are these interior PRRs useful?" >}}
+These interior PRRs can be useful for the binding and recognition of intracellular pathogens that may have gained access to the inside of the cell before phagocytosis could take place. Viral nucleic acids, for example, might encounter an interior PRR, triggering production of the antiviral cytokine interferon.
 ===CHECKS===
-Leishmania cells are phagocytosed, lose their flagella, and multiply as amastigotes within the phagolysosome
-surface lipophosphoglycan and acid phosphatase inhibit the macrophage respiratory burst and lysosomal enzymes
+interior PRRs can be useful for the binding and recognition of intracellular pathogens
+intracellular pathogens that may have gained access to the inside of the cell before phagocytosis could take place
+viral nucleic acids might encounter an interior PRR, triggering production of the antiviral cytokine interferon
 {{< /selfcheck >}}
 
 ### 17.5 Inflammation and Fever
@@ -336,12 +341,12 @@ surface lipophosphoglycan and acid phosphatase inhibit the macrophage respirator
 >}}
 
 {{< multiplechoice
-  question="Which bacterium can produce a superantigen that causes toxic shock syndrome?"
-  answer="Staphylococcus aureus"
+  question="Immediately following a tissue injury, which vascular response occurs first, minimizing blood loss?"
+  answer="vasoconstriction"
 >}}
-Staphylococcus aureus
-Streptococcus pyogenes
-Mycobacterium tuberculosis
+vasodilation
+increased vascular permeability
+vasoconstriction
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Besides tuberculosis, what other diseases are linked to chronic inflammation?" >}}
@@ -392,7 +397,6 @@ IgA or IgE
   question="Macrophages and dendritic cells function as phagocytes that ingest and kill pathogens, but B cells do not phagocytose pathogens. What primary role do B cells play instead?"
   answer="the production and secretion of antibodies"
 >}}
-ingesting and killing pathogens that penetrate the skin and mucous membranes
 recognizing pathogens through nonspecific receptor interactions, such as PAMPs and toll-like receptors
 signaling natural killer cells that a cell is normal and "self"
 the production and secretion of antibodies
@@ -401,20 +405,20 @@ the production and secretion of antibodies
 ### 18.3 T Lymphocytes and Cellular Immunity
 
 {{< multiplechoice
-  question="About what percentage of thymocytes are eliminated by the three steps of thymic selection?"
-  answer="98%"
+  question="Besides cytokines from the APC, proliferation and differentiation of cytotoxic T cells is stimulated by cytokines secreted from T<sub>H</sub>1 cells. Without this stimulation from T<sub>H</sub>1 cells, what happens to the activation of cytotoxic T cells?"
+  answer="activation still occurs but is not as effective or long-lasting"
 >}}
-2%
-98%
-25%
-50%
+activation cannot occur at all
+activation still occurs but is not as effective or long-lasting
+activation then requires antigen presented with MHC II
+the activated cells differentiate only into memory cells
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What happens to patients who lack sufficient TH17 cells in the mucosa, and which patients are given as an example?" >}}
-Patients who lack sufficient TH17 cells in the mucosa may be more susceptible to bacteremia and gastrointestinal infections. HIV patients are given as an example of such patients.
+{{< selfcheck question="Patients who lack sufficient T<sub>H</sub>17 cells in the mucosa may be more susceptible to which kinds of infections, and what is one group of such patients?" >}}
+Patients who lack sufficient T<sub>H</sub>17 cells in the mucosa (e.g., HIV patients) may be more susceptible to bacteremia and gastrointestinal infections.
 ===CHECKS===
-patients who lack sufficient TH17 cells in the mucosa may be more susceptible to bacteremia and gastrointestinal infections
-HIV patients are given as an example of such patients
+may be more susceptible to bacteremia and gastrointestinal infections
+HIV patients
 {{< /selfcheck >}}
 
 {{< textin
@@ -435,13 +439,13 @@ the MHC II molecules used for antigen presentation
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Besides being produced in greater and more sustained quantities, how do the antibodies of the secondary antibody response differ in quality from those of the primary response?"
-  answer="they bind with higher affinity to the targeted epitopes"
+  question="Negative selection of a self-reacting B cell in the bone marrow can involve elimination by apoptosis or induction of anergy. What third mechanism can it involve?"
+  answer="editing or modification of the B cell's receptors so they are no longer self-reactive"
 >}}
-they bind with higher affinity to the targeted epitopes
-the lag period is longer, delaying detectable antibody
-class switching first occurs, from IgG back to IgM
-only IgM antibody is produced, as in the initial stage of the primary response
+transport of the B cell to the thymus for a further round of selection
+differentiation of the B cell into an antibody-secreting plasma cell
+editing or modification of the B cell's receptors so they are no longer self-reactive
+transport of the B cell to the spleen for its final stages of maturation
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -457,17 +461,19 @@ only a few days
 ### 18.5 Vaccines
 
 {{< textin
-  question="Protection of susceptible individuals in a population because there are too few of them for a disease to spread effectively is called ________."
-  answer="herd immunity"
+  question="Jenner's vaccine worked because the cowpox virus is genetically and antigenically related to the ________ viruses that caused smallpox."
+  answer="Variola"
+  accept="Variola virus"
 >}}
 
 {{< textin
   question="A DNA vaccine is produced by incorporating genes for antigens into a recombinant ________, which is taken up by some of a patient's cells and transcribed and translated to produce antigens for presentation with MHC I."
   answer="plasmid"
+  accept="plasmid vaccine"
 >}}
 
-{{< sortbins question="Sort each description of acquired immunity below under whether it is naturally or artificially acquired." >}}
-{"bins":["Natural acquired","Artificial acquired"],"items":[{"label":"Immunity from antibodies passed through breast milk or placenta","bin":0},{"label":"Immunity gained through antibodies harvested from another person or an animal","bin":1},{"label":"Immunity gained through illness and recovery","bin":0},{"label":"Immunity gained through a vaccine","bin":1}]}
+{{< sortbins question="Sort each example of adaptive immunity below under whether it is naturally or artificially acquired." >}}
+{"bins":["Natural acquired","Artificial acquired"],"items":[{"label":"Lifelong immunity that develops after recovery from a chickenpox infection","bin":0},{"label":"Blood transfusions from recovering Ebola patients given to patients with active Ebola infections","bin":1},{"label":"Placental transfer of maternal IgG to the fetus","bin":0},{"label":"Donor antibodies used to treat cytomegalovirus infections in immunocompromised patients","bin":1},{"label":"Secretory IgA transferred to an infant through breast milk","bin":0},{"label":"Donor antibodies used to treat botulism, a disease caused by a bacterial toxin","bin":1}]}
 {{< /sortbins >}}
 
 ## Chapter 19: Diseases of the Immune System
@@ -486,6 +492,7 @@ Blocking antibodies
 {{< textin
   question="Procedures that track transfusion information from the donor source to the follow-up of recipient patients, used to minimize the risk of hemolytic transfusion reactions due to clerical error, are called ________ systems."
   answer="hemovigilance"
+  accept="haemovigilance"
 >}}
 
 {{< selfcheck question="How does hypersensitivity pneumonitis (HP) combine two different types of hypersensitivity reaction in its pathology?" >}}
@@ -523,8 +530,8 @@ Cytokine activation of keratinocytes that speeds up epidermal cell turnover
 ### 19.3 Organ Transplantation and Rejection
 
 {{< textin
-  question="Scientists are attempting to grow new organs ________, from an individual's own harvested cells, to replace damaged organs without risk of rejection."
-  answer="in vitro"
+  question="Besides damaging the skin, gastrointestinal tract, liver, and eyes, acute graft-versus-host disease (GVHD) may lead to a potentially fatal, unregulated secretion of signaling proteins called a(n) ________."
+  answer="cytokine storm"
 >}}
 
 {{< multiplechoice
@@ -554,8 +561,9 @@ the more similar the MHC gene match, the more likely the graft is to be tolerate
 >}}
 
 {{< textin
-  question="In patients with SCID, ________ vaccines can actually cause the infection they are intended to prevent, because these patients cannot develop immunological memory."
+  question="In patients with SCID, ________ vaccines, such as those for varicella-zoster, measles virus, rotavirus, and poliovirus, can actually cause the infection they are intended to prevent."
   answer="live attenuated"
+  accept="attenuated"
 >}}
 
 {{< selfcheck question="How did David Vetter, the 'Bubble Boy,' die despite receiving a bone marrow transplant intended to treat his SCID?" >}}
@@ -571,15 +579,17 @@ he died at the age of 12
 {{< textin
   question="Reolysin, a drug currently in testing, uses reoviruses that can infect and kill cancer cells with an activated ________ pathway, a common mutation in cancerous cells."
   answer="Ras-signaling"
+  accept="Ras|Ras-signalling"
 >}}
 
 {{< multiplechoice
-  question="Which virus, also known as the measles virus, can be genetically engineered to aggressively attack tumor cells that overexpress certain surface receptors?"
-  answer="Rubeola"
+  question="Sipuleucel-T (Provenge), the first therapeutic cancer vaccine approved by the FDA, was approved in 2010 to treat certain cases of which cancer?"
+  answer="prostate cancer"
 >}}
-Rubeola
-Reoviruses
-Herpesvirus
+skin cancer
+cervical cancer
+prostate cancer
+liver cancer
 {{< /multiplechoice >}}
 
 {{< textin
@@ -592,13 +602,14 @@ Herpesvirus
 ### 20.1 Polyclonal and Monoclonal Antibody Production
 
 {{< textin
-  question="Since normal B cells cannot proliferate forever, they are fused with immortal, cancerous B cells called myeloma cells, to yield ________ cells, which can grow continuously in culture while producing antibody."
+  question="Since normal B cells cannot proliferate forever, they are fused with immortal, cancerous B cells to yield ________ cells, which can grow continuously in culture while producing antibody."
   answer="hybridoma"
 >}}
 
 {{< textin
-  question="A chemical that provokes a generalized activation of the immune system and is often mixed with an antigen prior to injection, to stimulate greater antibody production, is called a(n) ________."
-  answer="adjuvant"
+  question="The humanized monoclonal antibody drug ________ has been helpful for the treatment of some types of breast cancer."
+  answer="Herceptin"
+  accept="trastuzumab"
 >}}
 
 {{< multiplechoice
@@ -615,15 +626,16 @@ it binds with high affinity to only one epitope on the antigen.
 {{< textin
   question="The release of hemoglobin from red blood cells, which will turn a solution noticeably pink even when only a small number of cells are affected, is called ________."
   answer="hemolysis"
+  accept="haemolysis"
 >}}
 
 {{< textin
-  question="A molecule that fluoresces when excited by light, sometimes used to label a secondary antibody in place of an enzyme, is called a(n) ________."
+  question="In a western blot, the secondary antibody that binds the primary antibody is coupled to another molecule: either an enzyme or a(n) ________, a molecule that emits light when it is excited by light."
   answer="fluorophore"
 >}}
 
 {{< multiplechoice
-  question="Immunoelectrophoresis (IEP) is particularly useful in the diagnosis of which condition, a cancer of antibody-secreting cells?"
+  question="Immunoelectrophoresis (IEP) is particularly useful in the diagnosis of which of the following?"
   answer="multiple myeloma"
 >}}
 syphilis
@@ -647,12 +659,13 @@ which allows the detection of agglutinizing antibodies in the donor serum
 this test is rarely necessary because transfusions generally use packed red blood cells with most of the plasma removed by centrifugation
 {{< /selfcheck >}}
 
-{{< selfcheck question="Which patients are especially likely to carry antibodies against certain red blood cell antigens they have not previously been screened for, and what must be done if a patient's antibody screen shows agglutination?" >}}
-Patients who have had multiple pregnancies or multiple transfusions may carry such antibodies because of repeated exposure to these antigens. If a patient's antibody screen shows agglutination, the antigen to which the patient is responding must be identified, and it must be determined not to be present in the donor unit.
+{{< selfcheck question="On what principle are the National Institutes of Health (NIH) guidelines for using laboratory animals based, and what does each part of that principle ask of researchers?" >}}
+The NIH guidelines are based on the principle of the three R's: replace, refine, and reduce. Researchers should strive to replace animal models with nonliving models, replace vertebrates with invertebrates whenever possible, or use computer-models when applicable. They should refine husbandry and experimental procedures to reduce pain and suffering, and use experimental designs and procedures that reduce the number of animals needed to obtain the desired information.
 ===CHECKS===
-patients who have had multiple pregnancies or multiple transfusions may carry such antibodies because of repeated exposure
-if a patient's antibody screen shows agglutination, the antigen to which the patient is responding must be identified
-it must be determined not to be present in the donor unit
+the NIH guidelines are based on the principle of the three R's: replace, refine, and reduce
+replace animal models with nonliving models, replace vertebrates with invertebrates whenever possible, or use computer-models
+refine husbandry and experimental procedures to reduce pain and suffering
+use experimental designs and procedures that reduce the number of animals needed to obtain the desired information
 {{< /selfcheck >}}
 
 ### 20.4 EIAs and ELISAs
@@ -663,11 +676,11 @@ it must be determined not to be present in the donor unit
 >}}
 
 {{< multiplechoice
-  question="A direct ELISA is faster than a sandwich ELISA because it uses only one antibody, but has the disadvantage that"
-  answer="the signal from a direct ELISA is lower (lower sensitivity)."
+  question="Because it requires the use of only one antibody, a direct ELISA is faster, but it has the disadvantage that"
+  answer="its signal is lower, so its sensitivity is lower."
 >}}
 it can only be used to detect antibodies, not antigens.
-the signal from a direct ELISA is lower (lower sensitivity).
+its signal is lower, so its sensitivity is lower.
 it requires use of a fluorogen instead of a chromogen.
 {{< /multiplechoice >}}
 
@@ -688,8 +701,9 @@ it requires use of a fluorogen instead of a chromogen.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="In the indirect fluorescent antibody test used to help diagnose systemic lupus erythematosus, fixed cells are incubated with patient serum and a fluorescent secondary antibody, then examined for fluorescence evident around the ________."
-  answer="nucleus"
+  question="Besides *Legionella pneumophila*, which bacterium can direct fluorescent antibody (DFA) techniques identify in sputum samples?"
+  answer="Mycoplasma pneumoniae"
+  accept="M. pneumoniae|Mycoplasma"
 >}}
 
 {{< textin

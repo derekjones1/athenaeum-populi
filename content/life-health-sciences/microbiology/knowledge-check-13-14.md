@@ -51,13 +51,12 @@ BSL-4
 >}}
 
 {{< multiplechoice
-  question="Which type of autoclave removes air completely using a high-speed vacuum before introducing steam, allowing the steam to more easily penetrate wrapped items?"
-  answer="Prevacuum sterilizer"
+  question="Which class of biological safety cabinet is gas tight, passes materials entering or exiting through a double-door system, and exhausts all of its air through HEPA filters and an air incineration system directly to the outdoors?"
+  answer="Class III"
 >}}
-Gravity displacement autoclave
-Prevacuum sterilizer
-Dry-heat sterilizer
-Incineration
+Class I
+Class II
+Class III
 {{< /multiplechoice >}}
 
 {{< selfcheck question="How does lyophilization combine two separate methods of microbial control, and what advantage does it have over conventional desiccation?" >}}
@@ -98,10 +97,15 @@ Nitrites
 
 ### 13.4 Testing the Effectiveness of Antiseptics and Disinfectants
 
-{{< textin
-  question="Human papillomavirus (HPV) cannot be ________, so the standard methods for testing disinfectant effectiveness do not work for it."
-  answer="cultured"
+{{< multiplechoice
+  question="In the in-use test, a diluted sample of a used disinfectant solution is plated onto two agar plates. Growth of how many or more colonies on either plate suggests that viable microbial cells existed in the solution?"
+  answer="five"
 >}}
+three
+five
+seven
+ten
+{{< /multiplechoice >}}
 
 {{< selfcheck question="How does researcher Michelle Ozbun's method for quantifying live HPV on a surface differ from the typical method for counting HPV, and why is her method more accurate?" >}}
 The typical method for counting viruses like HPV is to grind up infected cells and measure the amount of viral DNA, but this method is imprecise and does not demonstrate the scope of the infection. Instead of grinding up infected cells, Ozbun applied a stain that only attaches to viral RNA. Using advanced microscopy, the quantities of infected cells can then be determined with great accuracy.
@@ -111,15 +115,7 @@ Ozbun applied a stain that only attaches to viral RNA
 using advanced microscopy, the quantities of infected cells can be determined with great accuracy
 {{< /selfcheck >}}
 
-{{< multiplechoice
-  question="In a study by researcher Michelle Ozbun, applying various disinfectants to samples of HPV was found to reduce the amount of virus by approximately how much?"
-  answer="10,000 times"
->}}
-100 times
-1,000 times
-10,000 times
-1,000,000 times
-{{< /multiplechoice >}}
+{{< textin question="A bacterial strain that has developed resistance to the majority of commonly used antibiotics is called a ________." answer="superbug" accept="super bug|multidrug-resistant microbe|multidrug-resistant strain|multidrug-resistant bacterium|MDR" >}}
 
 ## Chapter 14: Antimicrobial Drugs
 
@@ -137,7 +133,7 @@ Dorothy Hodgkin and Selman Waksman
 Gerhard Domagk and Josef Klarer
 {{< /multiplechoice >}}
 
-{{< textin question="In the early 1940s, scientist Dorothy Hodgkin, who studied crystallography at Oxford University, used ________ to analyze the structure of a variety of natural products." answer="X-rays" >}}
+{{< textin question="In the early 1940s, scientist Dorothy Hodgkin, who studied crystallography at Oxford University, used ________ to analyze the structure of a variety of natural products." answer="X-rays" accept="X-ray crystallography" >}}
 
 ### 14.2 Fundamentals of Antimicrobial Chemotherapy
 
@@ -203,7 +199,7 @@ avermectins
 
 ### 14.5 Drug Resistance
 
-{{< textin question="In *Mycobacterium tuberculosis*, fluoroquinolone resistance can involve production of a protein that resembles DNA, causing DNA gyrase to bind to it instead of DNA and preventing fluoroquinolones from binding DNA gyrase. This protein is called ________." answer="MfpA" >}}
+{{< textin question="In *Mycobacterium tuberculosis*, fluoroquinolone resistance can involve production of a protein that resembles DNA, causing DNA gyrase to bind to it instead of DNA and preventing fluoroquinolones from binding DNA gyrase. This protein is called ________." answer="MfpA" accept="Mycobacterium fluoroquinolone resistance protein A" >}}
 
 {{< textin question="The spectrum of β-lactams inactivated by extended-spectrum β-lactamases (ESBLs) provides for resistance to all penicillins, cephalosporins, monobactams, and β-lactamase-inhibitor combinations, but not the ________." answer="carbapenems" >}}
 
@@ -227,9 +223,9 @@ avermectins
 
 ### 14.7 Current Strategies for Antimicrobial Discovery
 
-{{< textin question="The search for new antimicrobial drugs is considered essential to prevent the onset of the ________ era." answer="postantibiotic" >}}
+{{< textin question="The search for new antimicrobial drugs is considered essential to prevent the onset of the ________ era." answer="postantibiotic" accept="post-antibiotic" >}}
 
-{{< textin question="Methods that use automation to test large numbers of soil and microbial product samples simultaneously for antimicrobial activity are called ________ methods." answer="high-throughput screening" >}}
+{{< textin question="Methods that use automation to test large numbers of soil and microbial product samples simultaneously for antimicrobial activity are called ________ methods." answer="high-throughput screening" accept="high-throughput" >}}
 
 {{< selfcheck question="What federal actions did the U.S. government take between September 2014 and March 2015 to address antimicrobial resistance?" >}}
 In September 2014, the White House released an executive order entitled "Combating Antibiotic Resistant Bacteria," calling upon various government agencies and the private sector to work together to accelerate research and development for new antimicrobials. As a result, as of March 2015, President Obama's proposed fiscal year 2016 budget doubled the amount of federal funding to \$1.2 billion for combating and preventing antibiotic resistance.

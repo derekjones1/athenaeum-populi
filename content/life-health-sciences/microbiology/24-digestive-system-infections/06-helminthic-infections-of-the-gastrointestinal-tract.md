@@ -36,7 +36,7 @@ Ascariasis is self-limiting, but can last one to two years because the worms can
 
 **Check Your Understanding**
 
-{{< selfcheck question="Describe the route by which A. lumbricoides reaches the host's intestines as an adult worm." hint="Follow the larva from ingestion through the tissue, the bloodstream, and the lungs to where it is finally swallowed again." >}}
+{{< selfcheck question="Describe the route by which A. lumbricoides reaches the host's intestines as an adult worm." hint="Read the second paragraph of the Ascariasis subsection." >}}
 After an embryonated *Ascaris lumbricoides* egg is consumed, it travels to the intestine, where the larva hatches; *Ascaris* produces proteases that let it penetrate and degrade host tissue. The juvenile worm then enters the circulatory system and migrates to the lungs, where it enters the alveoli. From there it crawls to the pharynx, is swallowed, and follows the gut lumen back to the small intestine, where it matures into an adult roundworm.
 ===CHECKS===
 the larva hatches in the intestine after an embryonated egg is consumed
@@ -78,8 +78,8 @@ As with other helminths, direct examination of the stool is important in diagnos
 >}}
 The larvae can reinfect the host by entering the tissue of the intestines and the skin around the anus.
 The larvae migrate to the alveolar spaces of the lungs, where they are coughed up and swallowed again.
-The free-living adult forms in the soil continue to reproduce and reinfect the same host repeatedly.
-Females in the intestinal epithelium produce eggs asexually, which are then excreted before hatching.
+The larvae are excreted in the stool and become free-living adults rather than developing into the parasitic form.
+Females live in the intestinal epithelium and produce eggs that develop asexually.
 {{< /multiplechoice >}}
 
 ## Pinworms (Enterobiasis)
@@ -165,7 +165,7 @@ Cysts present in the liver can cause enlargement of the liver, nausea, vomiting,
 
 **Check Your Understanding**
 
-{{< selfcheck question="Describe the risks of the cysts associated with taeniasis and hydatid disease." hint="Taeniasis cysts and hydatid cysts settle in different organs and carry different dangers — locate each in its own paragraph." >}}
+{{< selfcheck question="Describe the risks of the cysts associated with taeniasis and hydatid disease." hint="Read the first two paragraphs after the tapeworm figure, and the second paragraph of the Hydatid Disease subsection." >}}
 In taeniasis, *Taenia solium* larvae can form cysts in tissue — a condition called cysticercosis — most seriously in the brain (neurocysticercosis), where the encysted larvae can cause headaches and seizures and can be life-threatening; cysts in muscle may be asymptomatic or painful. In hydatid disease, *Echinococcus granulosus* larvae form hydatid cysts in internal organs, especially the lungs and liver, that grow slowly and often go undetected until they are large, and if a cyst bursts it can trigger a severe allergic reaction (anaphylaxis).
 ===CHECKS===
 Taenia solium larvae can form cysts in tissue, called cysticercosis
@@ -203,12 +203,12 @@ Diagnosis is the same as with liver flukes: examination of feces or other sample
 
 {{< multiplechoice
   question="How are flukes transmitted?"
-  answer="Through aquatic plants or fish that carry the infective larvae"
+  answer="Through aquatic plants or fish"
   hint="Read the last bullet of the Summary."
 >}}
-Through contaminated soil that penetrates bare skin
+Through larvae in contaminated soil that penetrate bare skin
 By eating undercooked pork or beef containing cysts
-Through aquatic plants or fish that carry the infective larvae
+Through aquatic plants or fish
 Through the fecal–oral route from contaminated hands
 {{< /multiplechoice >}}
 
@@ -290,14 +290,14 @@ ascariasis
 {{< textin
   question="The soil-transmitted intestinal infection caused by the helminth *S. stercoralis* is called ________."
   answer="strongyloidiasis"
-  hint="This is the disease name for infection by this soil-transmitted helminth, whose larvae exist in both free-living and parasitic forms."
+  hint="Look at the first sentence of the third disease subsection."
 >}}
 
 {{< textin
   question="The intestinal infection caused by the nematode *T. spiralis*, transmitted through consumption of undercooked meat, is called ________."
   answer="trichinosis"
   accept="trichinellosis|trichenellosis"
-  hint="This is the disease name for infection by this nematode, spread by eating undercooked meat rather than through soil contact."
+  hint="Look at the first sentence of the sixth disease subsection."
 >}}
 
 {{< multiplechoice
@@ -327,13 +327,13 @@ tapeworm
 {{< textin
   question="Liver flukes are often found in the ________ duct."
   answer="bile"
-  hint="This is named earlier in the section as the duct liver flukes interfere with, causing cholangitis and gallstones."
+  hint="Look at the first sentence of the Liver Flukes subsection."
 >}}
 
 {{< textin
   question="A serious cestode infection also known as cystic echinococcosis, caused by Echinococcus granulosus, is called ________."
   answer="hydatid disease"
-  hint="This is the name for the cestode infection whose larvae form slow-growing cysts in organs such as the lungs and liver."
+  hint="Look at the first sentence of the subsection that follows the sushi Micro Connection box."
 >}}
 
 {{< multiplechoice

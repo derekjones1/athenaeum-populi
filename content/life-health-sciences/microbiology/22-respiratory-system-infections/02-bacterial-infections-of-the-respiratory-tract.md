@@ -45,7 +45,7 @@ Acute rheumatic fever can follow pharyngitis caused by specific rheumatogenic st
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are the symptoms of strep throat?" hint="The section lists five classic signs, from fever through swollen lymph nodes." >}}
+{{< selfcheck question="What are the symptoms of strep throat?" hint="See the paragraph after the micrograph of S. pyogenes." >}}
 The classic signs of streptococcal pharyngitis are a fever higher than 38 °C (100.4 °F); intense pharyngeal pain and erythema from pharyngeal inflammation; swollen, dark-red palatine tonsils, often dotted with patches of pus; and petechiae (microcapillary hemorrhages) on the soft or hard palate. The submandibular lymph nodes beneath the angle of the jaw are also often swollen.
 ===CHECKS===
 fever higher than 38 °C (100.4 °F)
@@ -55,7 +55,7 @@ petechiae on the soft or hard palate
 swollen submandibular lymph nodes
 {{< /selfcheck >}}
 
-{{< selfcheck question="What is erythrogenic toxin and what effect does it have?" hint="This exotoxin is an example of phage conversion — trace what it attacks and the two named clinical results." >}}
+{{< selfcheck question="What is erythrogenic toxin and what effect does it have?" hint="See the paragraph after the photos of strep throat and a skin rash." >}}
 Erythrogenic toxin is an exotoxin produced by some strains of group A streptococci, encoded by a temperate bacteriophage (an example of phage conversion). It attacks the plasma membranes of capillary endothelial cells and leads to scarlet fever, a disseminated fine red rash on the skin, and strawberry tongue, a red rash on the tongue. Severe cases may even lead to streptococcal toxic shock syndrome (STSS), from massive superantigen production causing septic shock and death.
 ===CHECKS===
 encoded by a temperate bacteriophage, an example of phage conversion
@@ -64,7 +64,7 @@ leads to scarlet fever, a disseminated fine red rash, and strawberry tongue
 severe cases can lead to streptococcal toxic shock syndrome (STSS)
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are the causes of rheumatic fever and acute glomerulonephritis?" hint="Both are sequelae of specific strains of S. pyogenes, but the underlying mechanisms described are not identical." >}}
+{{< selfcheck question="What are the causes of rheumatic fever and acute glomerulonephritis?" hint="See the second paragraph of the subsection on the sequelae of S. pyogenes infections." >}}
 Acute rheumatic fever can follow pharyngitis caused by specific rheumatogenic strains of S. pyogenes; molecular mimicry between the M protein of these strains and heart tissue is thought to initiate the autoimmune attack. Acute glomerulonephritis also results from an immune response to streptococcal antigens following pharyngitis or cutaneous infections, primarily through the formation of immune complexes between S. pyogenes antigens and antibodies that deposit between endothelial cells of the glomeruli of the kidney, triggering an inflammatory response.
 ===CHECKS===
 rheumatic fever follows pharyngitis by rheumatogenic strains of S. pyogenes
@@ -95,14 +95,14 @@ The microbial community of the nasopharynx is extremely diverse and harbors many
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are the usual causative agents of acute otitis media?" hint="The section names one common group for neonates and a different, overlapping group for older infants and children." >}}
+{{< selfcheck question="What are the usual causative agents of acute otitis media?" hint="See the third paragraph of the Acute Otitis Media subsection." >}}
 Among neonates, S. pneumoniae is the most common cause of AOM, but E. coli, Enterococcus spp., and group B Streptococcus species can also be involved. In older infants and children younger than 14, the most common bacterial causes are S. pneumoniae, H. influenzae, or M. catarrhalis.
 ===CHECKS===
 in neonates, S. pneumoniae is most common, along with E. coli, Enterococcus, and group B Streptococcus
 in older infants and children, the most common causes are S. pneumoniae, H. influenzae, or M. catarrhalis
 {{< /selfcheck >}}
 
-{{< selfcheck question="What factors facilitate acute otitis media with effusion in young children?" hint="The section names three factors: how many respiratory infections children get, the shape of their eustachian tubes, and how they are commonly fed." >}}
+{{< selfcheck question="What factors facilitate acute otitis media with effusion in young children?" hint="See the paragraph after the otoscope photos." >}}
 Children have more upper respiratory infections in general, and their eustachian tubes are shorter and drain at a shallower angle. Young children also tend to spend more time lying down, which facilitates drainage from the nasopharynx into the middle ear, and bottle feeding while lying down enhances this risk because the sucking action causes negative pressure that promotes the movement of fluid and bacteria into the middle ear.
 ===CHECKS===
 more upper respiratory infections and shorter, shallower-draining eustachian tubes
@@ -283,7 +283,7 @@ This short animation (the CDC's "How TB Spreads" page at cdc.gov) describes the 
 
 **Check Your Understanding**
 
-{{< textin question="What characteristic of Mycobacterium tuberculosis allows it to evade the immune response?" answer="mycolic acid" accept="waxy mycolic acid|waxy cell wall" hint="Look at what protects the phagocytized bacterium's cell wall so that macrophages cannot destroy it." >}}
+{{< textin question="What characteristic of Mycobacterium tuberculosis allows it to evade the immune response?" answer="mycolic acid" accept="waxy mycolic acid|waxy cell wall|mycolic acid cell wall" hint="See the third paragraph of the Tuberculosis subsection, on what happens once macrophages take up the bacteria." >}}
 
 {{< multiplechoice
   question="What happens to cause miliary tuberculosis?"
@@ -296,7 +296,7 @@ Legionella pneumophila inserts proteins into the macrophage's endosomal membrane
 The pseudomembrane obstructs the fauces of the pharynx or trachea, leading to suffocation
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain the limitations of the Mantoux tuberculin skin test." hint="One limitation is about a cause of false positives; the other is about what additional test is then required." >}}
+{{< selfcheck question="Explain the limitations of the Mantoux tuberculin skin test." hint="See the paragraph that introduces the Mantoux tuberculin skin test." >}}
 Prior vaccination with the BCG vaccine can cause false-positive results on the Mantoux tuberculin skin test. Because of this, chest radiographs to detect Ghon complex formation are required to confirm exposure.
 ===CHECKS===
 prior BCG vaccination can cause false-positive results
@@ -333,7 +333,7 @@ This interactive [map](https://openstax.org/l/22intmapprevacc) shows outbreaks o
 
 {{< textin question="What accounts for the mucus production in a pertussis infection?" answer="tracheal cytotoxin" hint="See the second paragraph of the Pertussis subsection." >}}
 
-{{< selfcheck question="What are the signs and symptoms associated with the three stages of pertussis?" hint="Walk through the catarrhal, paroxysmal, and convalescence stages in order." >}}
+{{< selfcheck question="What are the signs and symptoms associated with the three stages of pertussis?" hint="See the third paragraph of the Pertussis subsection." >}}
 In the catarrhal stage, symptoms are relatively mild — nasal congestion, a runny nose, sneezing, and a low-grade fever — and this is the stage in which B. pertussis is most infectious. In the paroxysmal stage, mucus accumulation leads to uncontrollable coughing spasms that can last several minutes and frequently induce vomiting, lasting for several weeks. The convalescence stage is a long stage during which patients experience a chronic cough that can last for up to several months.
 ===CHECKS===
 catarrhal stage: mild nasal congestion, runny nose, sneezing, and low-grade fever, most infectious
@@ -421,7 +421,7 @@ Numerous pathogens can cause infections of the respiratory tract. Many of these 
 | *Haemophilus* pneumonia | *Haemophilus influenzae* | Cough, fever or low body temperature, chills, chest pain, headache, fatigue | Inhalation of respiratory droplets or aerosols from infected person or asymptomatic carrier | Culture on chocolate agar, serotyping of blood or cerebrospinal fluid samples | Cephalosporins, fluoroquinolones | Hib |
 | *Klebsiella* pneumonia | *Klebsiella pneumoniae*, others | Lung necrosis, "currant jelly" sputum; often fatal | Health care associated; bacteria introduced via contaminated ventilators, intubation, or other medical equipment | Culture, PCR | Multidrug resistant; antibiotic susceptibility testing necessary | None |
 | Mycoplasma pneumonia (walking pneumonia) | *Mycoplasma pneumoniae* | Low fever, persistent cough | Inhalation of respiratory droplets or aerosols from infected person | Culture with penicillin, thallium acetate | Macrolides | None |
-| Pneumococcal pneumonia | *Streptococcus pneumoniae* | Productive cough, bloody sputum, fever, chills, chest pain, respiratory distress | Direct contact with respiratory secretions | Gram stain, blood agar culture with optichin and sodium deoxycholate, quellung reaction | β-lactams, macrolides or cephalosporin, fluoroquinolones | Pneumococcal conjugate vaccine (PCV13), pneumococcal polysaccharide vaccine (PPSV23) |
+| Pneumococcal pneumonia | *Streptococcus pneumoniae* | Productive cough, bloody sputum, fever, chills, chest pain, respiratory distress | Direct contact with respiratory secretions | Gram stain, blood agar culture with optochin and sodium deoxycholate, quellung reaction | β-lactams, macrolides or cephalosporin, fluoroquinolones | Pneumococcal conjugate vaccine (PCV13), pneumococcal polysaccharide vaccine (PPSV23) |
 | *Pseudomonas* pneumonia | *Pseudomonas aeruginosa* | Viscous fluid and chronic inflammation of lungs; often fatal | Health care associated; bacteria introduced via contaminated ventilators; also frequently affects patients with cystic fibrosis | Culture from sputum or other body fluid | Multidrug resistant; antibiotic susceptibility testing necessary | None |
 {{< /callout >}}
 
@@ -486,6 +486,13 @@ diphtheria
 walking pneumonia
 {{< /multiplechoice >}}
 
+{{< selfcheck question="Name three bacteria that commonly cause pneumonia. Which is the most common cause?" hint="One sentence names the three species right at the start of the Bacterial Pneumonia section; a later sentence names the single most common one." >}}
+Three bacterial species cause most clinical cases of pneumonia: Streptococcus pneumoniae, H. influenzae, and Mycoplasma pneumoniae. The most common cause of community-acquired bacterial pneumonia is Streptococcus pneumoniae.
+===CHECKS===
+three species cause most clinical cases: S. pneumoniae, H. influenzae, and M. pneumoniae
+the most common cause of community-acquired bacterial pneumonia is S. pneumoniae
+{{< /selfcheck >}}
+
 {{< multiplechoice
   question="What is the causative agent of Q fever?"
   answer="*Coxiella burnetii*"
@@ -507,13 +514,6 @@ walking pneumonia
 *Mycoplasma pneumoniae*
 *Chlamydia pneumoniae*
 {{< /multiplechoice >}}
-
-{{< selfcheck question="Name three bacteria that commonly cause pneumonia. Which is the most common cause?" hint="One sentence names the three species right at the start of the Bacterial Pneumonia section; a later sentence names the single most common one." >}}
-Three bacterial species cause most clinical cases of pneumonia: Streptococcus pneumoniae, H. influenzae, and Mycoplasma pneumoniae. The most common cause of community-acquired bacterial pneumonia is Streptococcus pneumoniae.
-===CHECKS===
-three species cause most clinical cases: S. pneumoniae, H. influenzae, and M. pneumoniae
-the most common cause of community-acquired bacterial pneumonia is S. pneumoniae
-{{< /selfcheck >}}
 
 ### Compare the major characteristics of specific bacterial diseases of the respiratory tract
 
@@ -539,17 +539,17 @@ paroxysmal
 prodromal
 {{< /multiplechoice >}}
 
-{{< textin question="Calcified lesions called ________ form in the lungs of patients with TB." answer="Ghon complexes" hint="These structures are visible on chest radiographs after tuberculosis lesions heal." >}}
+{{< textin question="Calcified lesions called ________ form in the lungs of patients with TB." answer="Ghon complexes" hint="See the paragraph after the tuberculosis infectious-cycle figure." >}}
 
 {{< textin question="An inflammation of the middle ear is called ________." answer="otitis media" accept="acute otitis media|AOM" hint="See the first sentence of the subsection after Streptococcal Infections." >}}
 
 {{< textin question="The ________ is used to serologically identify Streptococcus pneumoniae isolates." answer="quellung reaction" accept="quellung" hint="See the identification paragraph of the Pneumococcal Pneumonia subsection." >}}
 
-{{< textin question="________ is a zoonotic infection that can be contracted by people who handle birds." answer="Psittacosis" hint="See the subsection that follows the Mycoplasma subsection." >}}
+{{< textin question="________ is a zoonotic infection that can be contracted by people who handle birds." answer="Psittacosis" hint="See the fourth subsection of Bacterial Pneumonia." >}}
 
-{{< textin question="The main virulence factor involved in scarlet fever is the ________." answer="erythrogenic toxin" hint="See the scarlet fever paragraph in the Streptococcal Infections subsection." >}}
+{{< textin question="The main virulence factor involved in scarlet fever is the ________." answer="erythrogenic toxin" accept="erythrogenic exotoxin" hint="See the scarlet fever paragraph in the Streptococcal Infections subsection." >}}
 
-{{< selfcheck question="How does smoking make an individual more susceptible to infections?" hint="This section names secondhand smoke as one environmental factor among several that affect a person's susceptibility to infection." >}}
+{{< selfcheck question="How does smoking make an individual more susceptible to infections?" hint="See the third paragraph of the Case in Point box about Tracy." >}}
 This section notes that environmental factors such as exposure to secondhand smoke can make some individuals more susceptible to infection, by producing conditions favorable to microbial growth or by compromising the immune system.
 ===CHECKS===
 exposure to secondhand smoke can make individuals more susceptible to infection
@@ -589,4 +589,4 @@ Incomplete therapy allows the bacterium to lose its cell wall and become resista
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 22.2: Bacterial Infections of the Respiratory Tract](https://openstax.org/books/microbiology/pages/22-2-bacterial-infections-of-the-respiratory-tract) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all ten photographic and micrograph figures re-encoded as WebP and rendered as mediafigures with `kind="photo"` after image inspection, except the tuberculosis infectious-cycle figure, which is rendered `kind="diagram"` (overriding the media manifest's JPEG-based photo guess) with a `longdesc` walking through its four numbered steps; the Pyogenes figure carries `eager="true"` as the page's first figure; the two Disease Profile table images (`OSC_Microbio_22_02_BacPathTab`, `OSC_Microbio_22_02_BacPathTab2`) are transcribed as Markdown tables from the images (checked against the PDF) rather than vendored, per this book's Disease Profile rule — the pneumonia table's pneumococcal Antimicrobial Drugs cell follows the pinned source text ("β-lactams, macrolides or cephalosporin, fluoroquinolones"), where the printed table image omits "or cephalosporin"; the chest-radiograph alt is rewritten from the image as cyan-tinted rather than the source alt's "black background," and the chocolate-agar-plate alt is rewritten to describe a culture plate rather than the source alt's "micrograph," neither of which the artwork supports; feature boxes rendered as callouts; the Clinical Focus Part 2 box's "Jump to the next/previous Clinical Focus box" links are replaced with plain sentences naming that the case began in Section 22.1 and continues in Section 22.3 (both authored this run); the four footnote citations and the nine other footnoted citations are rendered as inline parenthetical citations, bare access URLs dropped; the cross-references to Section 6.2 (*The Viral Life Cycle*), Section 15.3 (*Virulence Factors of Bacterial and Viral Pathogens*), and Section 19.1 (*Hypersensitivities*, cited twice) are links to those pages; the five source Multiple Choice and five Fill in the Blank items are adapted into Practice unchanged with their source keys; of the three unkeyed Short Answer questions, all three remain self-checks with author-written model answers assembled from this module's own sentences — the smoking-susceptibility answer draws only on this module's own "Why Me?" Case in Point sentence about secondhand smoke, not on Section 22.1's separate Case in Point about tobacco smoke, since the fixing content must come from this module; of the two unkeyed Critical Thinking questions, both are graded as `multiplechoice` from this module's own sentences (the β-lactam/cell-wall sentence and the MDR-TB/XDR-TB sentence); of this section's nineteen body Check Your Understanding bullets, nine are graded (six `multiplechoice` and three `textin`) from a single fixing sentence of their own subsection and ten remain self-checks whose model answers are assembled from this module's own text, because each needs more than one sentence, a paragraph boundary, or a list longer than a form holds to answer honestly (the "most likely to affect young people" bullet among them: the module never names an age group for mycoplasma pneumonia, only "crowded environments like college campuses and military bases," so no single sentence fixes its key); the Short Answer question naming three pneumonia bacteria and the body Check Your Understanding bullet asking the same three pathogens are both kept, since the Short Answer additionally asks which is most common, a fact the body bullet does not ask; four one-word or short-phrase source departures are corrected: "M. cattarhalis" to "M. catarrhalis" in the Acute Otitis Media subsection, "it caused more 50,000 deaths" to "it caused more than 50,000 deaths" in the Bacterial Pneumonia subsection, the Disease Profile table's "DtaP" to "DTaP" (matching this module's own capitalization convention for full-strength vaccine doses), and the Chlamydial Pneumonias subsection's bare genus "Chlamydia" completed to "Chlamydia pneumoniae" as its first-listed species (matching the same paragraph's own later references to "Chlamydia pneumoniae" as the most common and most-transmitted of the three); a claim correction in the Q Fever subsection replaces the source's "is caused by a rickettsia, Coxiella burnetii" with "is caused by Coxiella burnetii, an obligate intracellular bacterium once classified among the rickettsias" and "Diagnosing rickettsial infection" with "Diagnosing this infection," with a visible Source note beside the passage, because this book's own Chapter 4 places Coxiella in Gammaproteobacteria and Rickettsia in Alphaproteobacteria and the genus left order Rickettsiales in 1989. The tuberculosis Link to Learning's redirect (openstax.org/l/22mycotublegpnean, to www.cdc.gov/tb/topic/basics/howtbspreads.htm) returned 404 on September 14, 2026, so the callout names the resource and its site in plain text instead of linking it. The Pneumococ figure's panel (b) alt is rewritten from the image (about four clustered spherical cells) in place of the source alt's "two dumbbell shaped blue cells," which the artwork does not show.</small>
+<small>This section is adapted from [Microbiology, Section 22.2: Bacterial Infections of the Respiratory Tract](https://openstax.org/books/microbiology/pages/22-2-bacterial-infections-of-the-respiratory-tract) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all ten photographic and micrograph figures re-encoded as WebP and rendered as mediafigures with `kind="photo"` after image inspection, except the tuberculosis infectious-cycle figure, which is rendered `kind="diagram"` (overriding the media manifest's JPEG-based photo guess) with a `longdesc` walking through its four numbered steps; the Pyogenes figure carries `eager="true"` as the page's first figure; the two Disease Profile table images (`OSC_Microbio_22_02_BacPathTab`, `OSC_Microbio_22_02_BacPathTab2`) are transcribed as Markdown tables from the images (checked against the PDF) rather than vendored, per this book's Disease Profile rule — the pneumonia table's pneumococcal Antimicrobial Drugs cell follows the pinned source text ("β-lactams, macrolides or cephalosporin, fluoroquinolones"), where the printed table image omits "or cephalosporin"; the chest-radiograph alt is rewritten from the image as cyan-tinted rather than the source alt's "black background," and the chocolate-agar-plate alt is rewritten to describe a culture plate rather than the source alt's "micrograph," neither of which the artwork supports; feature boxes rendered as callouts; the Clinical Focus Part 2 box's "Jump to the next/previous Clinical Focus box" links are replaced with plain sentences naming that the case began in Section 22.1 and continues in Section 22.3 (both authored this run); the four footnote citations and the nine other footnoted citations are rendered as inline parenthetical citations, bare access URLs dropped; the cross-references to Section 6.2 (*The Viral Life Cycle*), Section 15.3 (*Virulence Factors of Bacterial and Viral Pathogens*), and Section 19.1 (*Hypersensitivities*, cited twice) are links to those pages; the five source Multiple Choice and five Fill in the Blank items are adapted into Practice unchanged with their source keys, grouped by objective: the exotoxin and whooping-sound Multiple Choice items (first and third in the source) follow the other three, and the pneumonia-bacteria Short Answer sits between the two Q fever items so that neither prints its key directly above the other; of the three unkeyed Short Answer questions, all three remain self-checks with author-written model answers assembled from this module's own sentences — the smoking-susceptibility answer draws only on this module's own "Why Me?" Case in Point sentence about secondhand smoke, not on Section 22.1's separate Case in Point about tobacco smoke, since the fixing content must come from this module; of the two unkeyed Critical Thinking questions, both are graded as `multiplechoice` from this module's own sentences (the β-lactam/cell-wall sentence and the MDR-TB/XDR-TB sentence); of this section's nineteen body Check Your Understanding bullets, nine are graded (six `multiplechoice` and three `textin`) from a single fixing sentence of their own subsection and ten remain self-checks whose model answers are assembled from this module's own text, because each needs more than one sentence, a paragraph boundary, or a list longer than a form holds to answer honestly (the "most likely to affect young people" bullet among them: the module never names an age group for mycoplasma pneumonia, only "crowded environments like college campuses and military bases," so no single sentence fixes its key); the Short Answer question naming three pneumonia bacteria and the body Check Your Understanding bullet asking the same three pathogens are both kept, since the Short Answer additionally asks which is most common, a fact the body bullet does not ask; five one-word or short-phrase source departures are corrected: "M. cattarhalis" to "M. catarrhalis" in the Acute Otitis Media subsection, "it caused more 50,000 deaths" to "it caused more than 50,000 deaths" in the Bacterial Pneumonia subsection, the Disease Profile table's "DtaP" to "DTaP", the pneumonia table's "optichin" to "optochin" (the spelling of the Pneumococcal Pneumonia subsection's own identification paragraph) (matching this module's own capitalization convention for full-strength vaccine doses), and the Chlamydial Pneumonias subsection's bare genus "Chlamydia" completed to "Chlamydia pneumoniae" as its first-listed species (matching the same paragraph's own later references to "Chlamydia pneumoniae" as the most common and most-transmitted of the three); a claim correction in the Q Fever subsection replaces the source's "is caused by a rickettsia, Coxiella burnetii" with "is caused by Coxiella burnetii, an obligate intracellular bacterium once classified among the rickettsias" and "Diagnosing rickettsial infection" with "Diagnosing this infection," with a visible Source note beside the passage, because this book's own Chapter 4 places Coxiella in Gammaproteobacteria and Rickettsia in Alphaproteobacteria and the genus left order Rickettsiales in 1989. The tuberculosis Link to Learning's redirect (openstax.org/l/22mycotublegpnean, to www.cdc.gov/tb/topic/basics/howtbspreads.htm) returned 404 on September 14, 2026, so the callout names the resource and its site in plain text instead of linking it. The Pneumococ figure's panel (b) alt is rewritten from the image (about four clustered spherical cells) in place of the source alt's "two dumbbell shaped blue cells," which the artwork does not show.</small>

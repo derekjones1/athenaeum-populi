@@ -40,7 +40,7 @@ Although matching all of the MHC genes can lower the risk for rejection, there a
 
 **Check Your Understanding**
 
-{{< selfcheck question="What part of the immune response is responsible for graft rejection?" hint="Name the host cell that first processes the foreign HLAs, then the two kinds of T cells it activates." >}}
+{{< selfcheck question="What part of the immune response is responsible for graft rejection?" hint="Reread the paragraph that opens Transplant Rejection." >}}
 Rejection occurs when the recipient's immune system recognizes the donor tissue as foreign (non-self), triggering an immune response. The host's dendritic cells may recognize the HLAs expressed in the transplanted tissue as non-self molecules; if this occurs, the dendritic cells process and present the foreign HLAs to the host's helper T cells and cytotoxic T cells, activating them. Cytotoxic T cells then target and kill the grafted cells through the same mechanism they use to kill virus-infected cells, and helper T cells may release cytokines that activate macrophages to kill graft cells.
 ===CHECKS===
 the recipient's immune system recognizes the donor tissue as foreign (non-self)
@@ -49,7 +49,7 @@ cytotoxic T cells target and kill the grafted cells through the same mechanism t
 helper T cells may release cytokines that activate macrophages to kill graft cells
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain why blood relatives are preferred as organ donors." hint="Think about what a parent or sibling is more likely to share with the recipient at the MHC genes." >}}
+{{< selfcheck question="Explain why blood relatives are preferred as organ donors." hint="Reread the paragraph that follows the Types of Tissue and Organ Grafts table." >}}
 A parent or a sibling may be the best donor in many situations because a genetic match between the MHC genes is much more likely between blood relatives, which makes the organ much less likely to be rejected.
 ===CHECKS===
 a parent or a sibling may be the best donor in many situations
@@ -57,10 +57,10 @@ a genetic match between the MHC genes is much more likely between blood relative
 the organ is much less likely to be rejected
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe the role of immunosuppression in transplantation." hint="Immunosuppressant drugs lower the risk of one problem while raising the risk of two others." >}}
-Most transplant recipients, even those with tissues well matched to their MHC genes, require treatment with immunosuppressant drugs for the rest of their lives to lower the risk of rejection. This can make them more vulnerable than the general population to complications from infectious diseases, and it can also result in transplant-related malignancies because the body's normal defenses against cancer cells are being suppressed.
+{{< selfcheck question="Describe the role of immunosuppression in transplantation." hint="Reread the last paragraph before this box." >}}
+Most transplant recipients, even those with tissues well matched to their MHC genes, require treatment with immunosuppressant drugs for the rest of their lives to avoid rejection. This can make them more vulnerable than the general population to complications from infectious diseases, and it can also result in transplant-related malignancies because the body's normal defenses against cancer cells are being suppressed.
 ===CHECKS===
-require treatment with immunosuppressant drugs for the rest of their lives to lower the risk of rejection
+require treatment with immunosuppressant drugs for the rest of their lives to avoid rejection
 more vulnerable than the general population to complications from infectious diseases
 transplant-related malignancies because the body's normal defenses against cancer cells are being suppressed
 {{< /selfcheck >}}
@@ -78,7 +78,7 @@ To minimize the risk of GVHD, it is critically important to match the HLAs of th
 {{< multiplechoice
   question="Why does GVHD occur specifically in bone marrow transplants?"
   answer="The transplanted tissue is capable of producing immune cells of its own."
-  hint="Think about what makes a bone marrow transplant different from a solid-organ transplant like a kidney or skin graft — what does the donated tissue itself contain?"
+  hint="Reread the paragraph that opens Graft-versus-Host Disease."
 >}}
 The transplanted tissue is capable of producing immune cells of its own.
 The recipient's immune system cannot recognize bone marrow as foreign.
@@ -86,7 +86,7 @@ Bone marrow transplants are never matched for HLA type.
 Donated bone marrow contains no antigen-presenting cells.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What cells are responsible for GVHD?" hint="Name the donor cells that first recognize the host as foreign, then the donor cells that go on to attack the recipient's tissue." >}}
+{{< selfcheck question="What cells are responsible for GVHD?" hint="Reread the paragraph that opens Graft-versus-Host Disease." >}}
 APCs in the donated bone marrow may recognize the host cells as non-self, leading to activation of the donor's cytotoxic T cells. Once activated, the donor's T cells attack the recipient's cells, causing GVHD.
 ===CHECKS===
 APCs in the donated bone marrow may recognize the host cells as non-self
@@ -145,21 +145,17 @@ Over the next 6 months, Kerry follows her treatment plan and her symptoms do not
   hint="Reread the paragraph that opens Transplant Rejection."
 >}}
 
-{{< multiplechoice
-  question="Which three genes does this section name as the highly polymorphic MHC I genes that determine transplant compatibility?"
-  answer="HLA-A, HLA-B, and HLA-C"
-  hint="Reread the first sentence of the paragraph on the odds that a randomly chosen donor matches a recipient."
+{{< textin
+  question="In a recipient's six-allele genotype, the two alleles at each locus are expressed ________."
+  answer="codominantly"
+  accept="codominant|co-dominantly|co-dominant"
+  hint="Reread the paragraph that follows the Types of Tissue and Organ Grafts table."
 >}}
-HLA-A, HLA-B, and HLA-C
-HLA-D, HLA-E, and HLA-F
-HLA-A, HLA-B, and HLA-DR
-MHC I, MHC II, and HLA
-{{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Why is a parent usually a better match for transplanted tissue to a donor than a random individual of the same species?"
   answer="A genetic match between the MHC genes is much more likely between a parent and the recipient."
-  hint="Reread the last sentence of the paragraph on the odds that a randomly chosen donor matches a recipient."
+  hint="Reread the last sentence of the paragraph that follows the Types of Tissue and Organ Grafts table."
 >}}
 A genetic match between the MHC genes is much more likely between a parent and the recipient.
 A parent's tissue requires no immunosuppressive therapy after transplantation.
@@ -172,7 +168,7 @@ The recipient's dendritic cells cannot process a parent's HLA molecules.
 {{< multiplechoice
   question="Which type of graft is one in which the donor and recipient are the same individual?"
   answer="autograft"
-  hint="This is the only graft type in the list where the donor and the recipient are one and the same person."
+  hint="Reread the paragraph that opens this section."
 >}}
 autograft
 allograft
@@ -194,7 +190,7 @@ isograft
 {{< multiplechoice
   question="Which type of graft is one in which the donor is a different species than the recipient?"
   answer="xenograft"
-  hint="This is the only graft type in the list where the donor is an entirely different species."
+  hint="Reread the Procedure column of the Types of Tissue and Organ Grafts table."
 >}}
 autograft
 allograft
@@ -205,7 +201,7 @@ isograft
 {{< multiplechoice
   question="Which type of graft is one in which the donor is an identical twin of the recipient?"
   answer="isograft"
-  hint="This is the only graft type in the list where the donor and recipient are monozygotic twins."
+  hint="Reread the paragraph that opens this section."
 >}}
 autograft
 allograft
@@ -240,4 +236,4 @@ years
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 19.3: Organ Transplantation and Rejection](https://openstax.org/books/microbiology/pages/19-3-organ-transplantation-and-rejection) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the module's three MHC I gene names (*HLA-A*, *HLA-B*, *HLA-C*) keep the source's own italics, and no other rule for gene-name italics existed in the corpus before this page; the module's one table ("Types of Tissue and Organ Grafts and Their Complications") is transcribed as a Markdown table from the cells, checked against the PDF, with no `sortbins` built from it, since its four row-terms (autograft, isograft, allograft, xenograft) are the same terms the source's Matching exercise already keys and a `sortbins` here would duplicate those graded items; the source's one Matching exercise (`fs-id1167661294027`) is rendered as four multiple-choice items, one per printed description, each offering all four graft terms — autograft, allograft, xenograft, isograft, the exercise's own printed order — as options; its two Fill in the Blank items are rendered as plain `textin`s ("MHC" and "graft-versus-host"), neither exceeding the four-word cap; its one Short Answer question, "Why is a parent usually a better match for transplanted tissue to a donor than a random individual of the same species?," prints no source key and is graded as a multiple choice, keyed by this module's own sentence that a genetic match between the MHC genes is much more likely between a parent and the recipient, with distractors built from other sentences of this module (no immunosuppression required, a guaranteed identical match, dendritic cells unable to process the tissue at all) that this same module's text contradicts; three Practice items are author-written, with no source exercise behind them: one from this module's own MHC I gene-name sentence (which three genes are *HLA-A*, *HLA-B*, and *HLA-C*), one from its acute-GVHD timing sentence, and one a cloze on its "chronic GVHD" sentence ("The mechanisms responsible for ________ GVHD are not well understood."), to bring the first and third objective's groups to the book's three-item floor; the module has five body Check Your Understanding bullets, rendered at their note positions: "What part of the immune response is responsible for graft rejection?" stays a self-check, since its honest answer assembles two adjacent sentences naming dendritic cells, helper T cells, cytotoxic T cells, and macrophages in turn; "Explain why blood relatives are preferred as organ donors" also stays a self-check, even though one module sentence would fix it, because that same sentence already keys the Short Answer-derived multiple choice above and a second graded item from the identical sentence would ask the same fact twice; "Describe the role of immunosuppression in transplantation" stays a self-check, needing two adjacent sentences; "Why does GVHD occur specifically in bone marrow transplants?" is graded as a multiple choice keyed by the sentence that the transplanted tissue is capable of producing immune cells of its own, with distractors this module's text contradicts; "What cells are responsible for GVHD?" stays a self-check, since its honest answer needs the same paragraph's two adjacent sentences naming first the donor's APCs and then the donor's cytotoxic T cells; none of the five is repeated in the Practice block. Two one-word corrections: the source prints "GHVD" for "GVHD" in the Graft-versus-Host Disease subsection's opening sentence ("GHVD presents a unique situation…"), and this same bullet's stem prints a doubled "in" ("Why does GVHD occur in specifically in bone marrow transplants?"); this page prints "GVHD," matching every other instance of the term on the page and in the module itself, and prints the bullet's stem with the doubled "in" removed. The source's "Go back to the previous Clinical Focus box" link, which closes the Resolution part of the chapter's Kerry case, is replaced with a sentence naming where the case began (Section 19.1, where Parts 1–3 run); the Link to Learning's URL is kept, with its link text rewritten from "this" to describe the destination. No source exercise item is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 19.3: Organ Transplantation and Rejection](https://openstax.org/books/microbiology/pages/19-3-organ-transplantation-and-rejection) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the module's three MHC I gene names (*HLA-A*, *HLA-B*, *HLA-C*) keep the source's own italics, and no other rule for gene-name italics existed in the corpus before this page; the module's one table ("Types of Tissue and Organ Grafts and Their Complications") is transcribed as a Markdown table from the cells, checked against the PDF, with no `sortbins` built from it, since its four row-terms (autograft, isograft, allograft, xenograft) are the same terms the source's Matching exercise already keys and a `sortbins` here would duplicate those graded items; the source's one Matching exercise (`fs-id1167661294027`) is rendered as four multiple-choice items, one per printed description, each offering all four graft terms — autograft, allograft, xenograft, isograft, the exercise's own printed order — as options; its two Fill in the Blank items are rendered as plain `textin`s ("MHC" and "graft-versus-host"), neither exceeding the four-word cap; its one Short Answer question, "Why is a parent usually a better match for transplanted tissue to a donor than a random individual of the same species?," prints no source key and is graded as a multiple choice, keyed by this module's own sentence that a genetic match between the MHC genes is much more likely between a parent and the recipient, with distractors built from other sentences of this module (no immunosuppression required, a guaranteed identical match, dendritic cells unable to process the tissue at all) that this same module's text contradicts; three Practice items are author-written, with no source exercise behind them: one a cloze on this module's own parenthetical that the two alleles at each MHC I locus are expressed "codominantly", one from its acute-GVHD timing sentence, and one a cloze on its "chronic GVHD" sentence ("The mechanisms responsible for ________ GVHD are not well understood."), to bring the first and third objective's groups to the book's three-item floor; the module has five body Check Your Understanding bullets, rendered at their note positions: "What part of the immune response is responsible for graft rejection?" stays a self-check, since its honest answer assembles two adjacent sentences naming dendritic cells, helper T cells, cytotoxic T cells, and macrophages in turn; "Explain why blood relatives are preferred as organ donors" also stays a self-check, even though one module sentence would fix it, because that same sentence already keys the Short Answer-derived multiple choice above and a second graded item from the identical sentence would ask the same fact twice; "Describe the role of immunosuppression in transplantation" stays a self-check, needing two adjacent sentences; "Why does GVHD occur specifically in bone marrow transplants?" is graded as a multiple choice keyed by the sentence that the transplanted tissue is capable of producing immune cells of its own, with distractors this module's text contradicts; "What cells are responsible for GVHD?" stays a self-check, since its honest answer needs the same paragraph's two adjacent sentences naming first the donor's APCs and then the donor's cytotoxic T cells; none of the five is repeated in the Practice block. Two one-word corrections: the source prints "GHVD" for "GVHD" in the Graft-versus-Host Disease subsection's opening sentence ("GHVD presents a unique situation…"), and this same bullet's stem prints a doubled "in" ("Why does GVHD occur in specifically in bone marrow transplants?"); this page prints "GVHD," matching every other instance of the term on the page and in the module itself, and prints the bullet's stem with the doubled "in" removed. The source's "Go back to the previous Clinical Focus box" link, which closes the Resolution part of the chapter's Kerry case, is replaced with a sentence naming where the case began (Section 19.1, where Parts 1–3 run); the Link to Learning's URL is kept, with its link text rewritten from "this" to describe the destination. No source exercise item is omitted.</small>

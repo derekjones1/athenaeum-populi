@@ -46,7 +46,7 @@ vaginitis is inflammation of the vagina, often caused by a bacterial infection
 bacterial vaginosis is an imbalance in the normal vaginal microbiota that occurs without inflammation
 {{< /selfcheck >}}
 
-{{< selfcheck question="What organisms are responsible for vaginosis and what organisms typically hold it at bay?" hint="One genus dominates a healthy vagina; note what happens to its population, and to the vaginal pH, when vaginosis develops." >}}
+{{< selfcheck question="What organisms are responsible for vaginosis and what organisms typically hold it at bay?" hint="Read the first two paragraphs of the Bacterial Vaginitis and Vaginosis subsection." >}}
 The major causative agent of bacterial vaginosis is *Gardnerella vaginalis*, along with other anaerobic species such as members of the genera *Bacteroides* and *Fusobacterium*; ureaplasma and mycoplasma may also be involved. *Lactobacillus* spp. are part of the normal vaginal microbiota that hold vaginosis at bay — when the population of *Lactobacillus* spp. decreases and the vaginal pH increases, *G. vaginalis* flourishes and causes vaginosis.
 ===CHECKS===
 Gardnerella vaginalis is the major causative agent of bacterial vaginosis
@@ -74,7 +74,7 @@ Also known as the clap, **gonorrhea** is a common sexually transmitted disease o
 
 Many infected individuals are asymptomatic carriers of gonorrhea. When symptoms do occur, they manifest differently in males and females. Males may develop pain and burning during urination and discharge from the penis that may be yellow, green, or white (shown below). Less commonly, the testicles may become swollen or tender. Over time, these symptoms can increase and spread. In some cases, chronic infection develops. The disease can also develop in the rectum, causing symptoms such as discharge, soreness, bleeding, itching, and pain (especially in association with bowel movements).
 
-{{< mediafigure src="microbiology/OSC_Microbio_23_03_Gonorrheae" kind="photo" alt="(a) A photo of an erect penis with reddened lesions near the tip and white-yellow discharge. (b) A photo of a metal speculum spreading the vaginal opening during a pelvic exam. (c) A micrograph of a blood smear stained pink, with small clusters of purple diplococci inside and among the larger red-staining cells; an inset zooms in on one cluster, and a 10 µm scale bar is shown." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_23_03_Gonorrheae" kind="photo" alt="(a) A close-up photo of the head of a penis with small reddened lesions and a drop of white-yellow discharge at the tip. (b) A photo of a metal speculum spreading the vaginal opening during a pelvic exam. (c) A pink-stained micrograph of a smear crowded with large cells whose dark red nuclei are lobed, with small clusters of dark paired cocci inside and among them; an inset enlarges one cluster, and a 10 µm scale bar is shown." >}}
 (a) Clinical photograph of gonococcal discharge from penis. The lesions on the skin could indicate co-infection with another STI. (b) Purulent discharge originating from the cervix and accumulating in the vagina of a patient with gonorrhea. (c) A micrograph of urethral discharge shows gram-negative diplococci (paired cells) both inside and outside the leukocytes (large cells with lobed nuclei). These results could be used to diagnose gonorrhea in a male patient, but female vaginal samples may contain other *Neisseria* spp. even if the patient is not infected with *N. gonorrhoeae*. (credit a, b: modification of work by Centers for Disease Control and Prevention; credit c: modification of work by American Society for Microbiology)
 {{< /mediafigure >}}
 
@@ -86,7 +86,7 @@ Urethritis caused by *N. gonorrhoeae* can be difficult to treat due to antibioti
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are some of the serious consequences of a gonorrhea infection?" hint="Follow the infection's possible path beyond the reproductive tract — into the fallopian tubes, and then into the bloodstream." >}}
+{{< selfcheck question="What are some of the serious consequences of a gonorrhea infection?" hint="Read the paragraph on symptoms in females and the paragraph after it in the Gonorrhea subsection." >}}
 An untreated gonorrhea infection can spread to the endometrium and fallopian tubes and cause pelvic inflammatory disease, which can lead to infertility through scarring and blockage of the fallopian tubes (salpingitis) and can increase the risk of a life-threatening ectopic pregnancy. If the infection disseminates through the bloodstream, it can also affect the heart (gonorrheal endocarditis), the joints (gonorrheal arthritis), and the meninges (meningitis).
 ===CHECKS===
 pelvic inflammatory disease can lead to infertility through scarring and blockage of the fallopian tubes
@@ -98,7 +98,7 @@ disseminated infection can affect the heart, joints, and meninges
   question="What organism commonly coinfects with *N. gonorrhoeae*?"
   answer="Chlamydia trachomatis"
   accept="C. trachomatis|Chlamydia"
-  hint="The CDC's combination antibiotic regimen for gonorrhea also treats this common co-infecting pathogen."
+  hint="Look at the treatment paragraph at the end of the Gonorrhea subsection."
 >}}
 
 {{< callout type="info" >}}
@@ -123,12 +123,12 @@ Urogenital infections caused by *C. trachomatis* can be treated using azithromyc
 
 **Check Your Understanding**
 
-{{< selfcheck question="Compare the signs and symptoms of chlamydia infection in males and females." hint="Look at what nongonococcal urethritis affects in males versus what pelvic inflammatory disease affects in females." >}}
-In males, chlamydia is a major cause of nongonococcal urethritis and may also cause epididymitis and orchitis. In females, chlamydia infections can cause urethritis, salpingitis, and pelvic inflammatory disease, and they may also be associated with an increased risk of cervical cancer. Many chlamydia infections in both sexes are asymptomatic.
+{{< selfcheck question="Compare the signs and symptoms of chlamydia infection in males and females." hint="Read the first paragraph of the Chlamydia subsection." >}}
+In males, chlamydia is a major cause of nongonococcal urethritis and may also cause epididymitis and orchitis. In females, chlamydia infections can cause urethritis, salpingitis, and pelvic inflammatory disease, and they may also be associated with an increased risk of cervical cancer. Many chlamydia infections are asymptomatic.
 ===CHECKS===
 in males, chlamydia can cause nongonococcal urethritis, epididymitis, and orchitis
 in females, chlamydia can cause urethritis, salpingitis, and pelvic inflammatory disease
-many chlamydia infections in both sexes are asymptomatic
+many chlamydia infections are asymptomatic
 {{< /selfcheck >}}
 
 ## Syphilis
@@ -166,7 +166,7 @@ Congenital syphilis is passed during pregnancy to a fetus when untreated primary
 {{< multiplechoice
   question="What aspect of tertiary syphilis can lead to death?"
   answer="Damage to the cardiovascular and central nervous systems (cardiovascular syphilis and neurosyphilis)"
-  hint="Tertiary syphilis's most deadly lesions target two organ systems named in the text — not the earlier, non-lethal stages."
+  hint="Read the paragraph on tertiary syphilis in the Syphilis subsection."
 >}}
 Damage to the cardiovascular and central nervous systems (cardiovascular syphilis and neurosyphilis)
 The painless hard chancre of primary syphilis
@@ -262,7 +262,7 @@ Many bacterial infections affecting the reproductive system are transmitted thro
 {{< textin
   question="Soft chancres on the genitals are characteristic of the sexually transmitted disease known as ________."
   answer="chancroid"
-  hint="This is the STI whose soft chancres are distinguished from syphilis's hard chancre."
+  hint="Look at the first sentence of the last disease subsection before the Disease Profile box."
 >}}
 
 {{< multiplechoice
@@ -276,14 +276,14 @@ Many bacterial infections affecting the reproductive system are transmitted thro
 *Haemophilus ducreyi*.
 {{< /multiplechoice >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_23_03_ArtConnect_img" kind="photo" alt="A darkfield micrograph on a gray background showing several thin, tightly coiled spiral cells." >}}
-A darkfield micrograph of several thin, coiled cells. (credit: modification of work by Centers for Disease Control and Prevention)
+{{< mediafigure src="microbiology/OSC_Microbio_23_03_ArtConnect_img" kind="photo" alt="A grayscale micrograph with a three-dimensional look showing several thin, tightly coiled spiral cells lying on a textured surface." >}}
+(credit: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Based on its shape, which microbe is this?"
   answer="*Treponema pallidum*"
-  hint="The image shows a distinctive corkscrew shape — think about which of the four pathogens has that shape."
+  hint="Compare the cells' shape with the micrographs of each pathogen earlier in this section."
 >}}
 *Neisseria gonorrhoeae*
 *Chlamydia trachomatis*
@@ -322,10 +322,10 @@ gonococcal urethritis is caused by Neisseria gonorrhoeae
 in males, gonorrhea can cause pain and burning during urination and a penile discharge that may be yellow, green, or white
 Chlamydia trachomatis is a major cause of nongonococcal urethritis
 many chlamydia infections are asymptomatic
-untreated chlamydia can also cause epididymitis and orchitis in males
+it can also lead to epididymitis and orchitis in males
 {{< /selfcheck >}}
 
-{{< selfcheck question="Chlamydia is often asymptomatic. Why might it be important for an individual to know if they were infected?" hint="Consider what can happen to the reproductive system if an asymptomatic infection is never caught and treated." >}}
+{{< selfcheck question="Chlamydia is often asymptomatic. Why might it be important for an individual to know if they were infected?" hint="Read the first two paragraphs of the Chlamydia subsection." >}}
 Even though many chlamydia infections cause no symptoms, the infection can still lead to substantial complications if it isn't found and treated — in males it can cause epididymitis and orchitis, and in females it can cause urethritis, salpingitis, and pelvic inflammatory disease, along with an increased risk of cervical cancer. Because of this risk, routine screening is recommended for sexually active females under 25, those at high risk, or those beginning prenatal care, so that an asymptomatic infection can still be caught and treated.
 ===CHECKS===
 many chlamydia infections cause no symptoms
@@ -334,7 +334,7 @@ untreated infection can cause salpingitis and pelvic inflammatory disease in fem
 routine screening is recommended for sexually active females under 25, those at high risk, or those beginning prenatal care
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why does the CDC recommend a two-drug treatment regimen to cover both *C. trachomatis* and *N. gonorrhoeae* if testing to distinguish between the two is not available? Additionally, how does the two-drug treatment regimen address antibiotic resistance?" hint="The module gives two separate reasons, from two different passages — one about diagnosis, one about resistance." >}}
+{{< selfcheck question="Why does the CDC recommend a two-drug treatment regimen to cover both *C. trachomatis* and *N. gonorrhoeae* if testing to distinguish between the two is not available? Additionally, how does the two-drug treatment regimen address antibiotic resistance?" hint="Read the treatment paragraph at the end of the Gonorrhea subsection and the Micro Connection box after it." >}}
 Co-infection with *C. trachomatis* is common among people infected with *N. gonorrhoeae*, so when testing cannot distinguish between the two, treating with both ceftriaxone and azithromycin together covers either pathogen without waiting for a definitive test result. The CDC also recommends this same two-drug combination — ceftriaxone and azithromycin — because using two medications together, rather than a single antibiotic, is intended to slow the spread of antibiotic resistance in *N. gonorrhoeae*.
 ===CHECKS===
 co-infection with C. trachomatis is common among people infected with N. gonorrhoeae
@@ -342,4 +342,4 @@ treating with both ceftriaxone and azithromycin together covers either pathogen 
 the CDC recommends the same two-drug combination to slow the spread of antibiotic resistance
 {{< /selfcheck >}}
 
-<small>This section is adapted from [Microbiology, Section 23.3: Bacterial Infections of the Reproductive System](https://openstax.org/books/microbiology/pages/23-3-bacterial-infections-of-the-reproductive-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all seven photographic and micrograph figures re-encoded as WebP and rendered as mediafigures with `kind="photo"` after image inspection (none carries a drawn or diagrammed panel); the VagSmear figure carries `eager="true"` as the page's first figure; the VagSmear, Gonorrheae, and Ctrachomat alts are rewritten from the images (describing the labeled clusters, the three photographic panels including the micrograph inset and scale bar, and the swollen groin panel) rather than reused from the source's own vaguer or partly inaccurate alt text; the Disease Profile table (`OSC_Microbio_23_03_RepInfTbl`) is transcribed as a Markdown table from the source alt, checked cell by cell against the printed PDF page (no divergence found), rather than vendored, per this book's Disease Profile rule; feature boxes rendered as callouts; the Clinical Focus Part 2 box's "Jump to the next/previous Clinical Focus box" links are replaced with a plain sentence naming that the case began in Section 23.1 and continues in Section 23.5 (both authored this run); the internal cross-reference to the Micro Connection box is rendered "(see the Micro Connection box below)"; the module's five footnote citations are rendered as inline parenthetical citations after the sentences they support, bare access URLs dropped (the repeated "Ibid." citation is rendered as the same CDC chancroid citation it repeats); the four source Multiple Choice and one Fill in the Blank items are adapted into Practice unchanged with their source keys, except that Multiple Choice option D, printed upstream as "*Haemophilis ducreyi*" on both the Lymphogranuloma-venereum item and the Art Connection item, is corrected to "*Haemophilus ducreyi*" in both places (a one-word source misspelling, corrected without an inline note); of the section's one unkeyed Short Answer and two unkeyed Critical Thinking questions, all three remain self-checks with author-written model answers assembled from this module's own sentences, since none is fixed by a single sentence, table, or figure of the module; of this section's nine body Check Your Understanding bullets, five are graded (four `multiplechoice` and one `textin`) from a single fixing sentence of their own subsection, and four remain self-checks whose model answers are assembled from more than one of this module's own sentences; the Art Connection exercise image (`OSC_Microbio_23_03_ArtConnect_img`) keeps its source key (C, *Treponema pallidum*) and is rendered as a `mediafigure` with an author-written caption (the source prints none) followed by its item, in the first objective's Practice group; key terms compiled from the module's eleven `<term>` elements (no repeats) and the book's Glossary appendix, giving eleven distinct bullets, all with a Glossary entry; three of them — "Syphilis," "Nontreponemal serologic tests," and "Treponemal serologic tests" — are lower-cased in this derived list because none is a proper noun, even though the source capitalizes each at its sentence-initial defining occurrence in the body text (which is transcribed as printed); no source exercise, table, or Check Your Understanding bullet is omitted. Multiple Choice option D ("*Haemophilis ducreyi*" for "*Haemophilus ducreyi*") is misspelled identically on both the fs-id1167662475199 (Lymphogranuloma venereum) and fs-id1167660287101 (Art Connection) items — the same one-word correction named above.</small>
+<small>This section is adapted from [Microbiology, Section 23.3: Bacterial Infections of the Reproductive System](https://openstax.org/books/microbiology/pages/23-3-bacterial-infections-of-the-reproductive-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all seven photographic and micrograph figures re-encoded as WebP and rendered as mediafigures with `kind="photo"` after image inspection (none carries a drawn or diagrammed panel); the VagSmear figure carries `eager="true"` as the page's first figure; the VagSmear, Gonorrheae, and Ctrachomat alts are rewritten from the images (describing the labeled clusters, the three photographic panels including the micrograph inset and scale bar, and the swollen groin panel) rather than reused from the source's own vaguer or partly inaccurate alt text; the Disease Profile table (`OSC_Microbio_23_03_RepInfTbl`) is transcribed as a Markdown table from the source alt, checked cell by cell against the printed PDF page (no divergence found), rather than vendored, per this book's Disease Profile rule; feature boxes rendered as callouts; the Clinical Focus Part 2 box's "Jump to the next/previous Clinical Focus box" links are replaced with a plain sentence naming that the case began in Section 23.1 and continues in Section 23.5; the internal cross-reference to the Micro Connection box is rendered "(see the Micro Connection box below)"; the module's five footnote citations are rendered as inline parenthetical citations after the sentences they support, bare access URLs dropped (the repeated "Ibid." citation is rendered as the same CDC chancroid citation it repeats); the four source Multiple Choice and one Fill in the Blank items are adapted into Practice with their source keys and sorted by objective — the Fill in the Blank on chancroid, the Lymphogranuloma-venereum item, and the Art Connection item in the first objective's group, ahead of the serological-testing and latent-stage items that precede them in the source, which open the second objective's group in their source order — unchanged except that Multiple Choice option D, printed upstream as "*Haemophilis ducreyi*" on both the Lymphogranuloma-venereum item and the Art Connection item, is corrected to "*Haemophilus ducreyi*" in both places (a one-word source misspelling, corrected without an inline note); of the section's one unkeyed Short Answer and two unkeyed Critical Thinking questions, all three remain self-checks with author-written model answers assembled from this module's own sentences, since none is fixed by a single sentence, table, or figure of the module; of this section's nine body Check Your Understanding bullets, five are graded (four `multiplechoice` and one `textin`) from a single fixing sentence of their own subsection, and four remain self-checks whose model answers are assembled from more than one of this module's own sentences; the Art Connection exercise image (`OSC_Microbio_23_03_ArtConnect_img`) keeps its source key (C, *Treponema pallidum*) and is rendered as a `mediafigure` whose caption is the source's credit line alone, followed by its item, in the first objective's Practice group; key terms compiled from the module's eleven `<term>` elements (no repeats) and the book's Glossary appendix, giving eleven distinct bullets, all with a Glossary entry; three of them — "Syphilis," "Nontreponemal serologic tests," and "Treponemal serologic tests" — are lower-cased in this derived list because none is a proper noun, even though the source capitalizes each at its sentence-initial defining occurrence in the body text (which is transcribed as printed); no source exercise, table, or Check Your Understanding bullet is omitted.</small>

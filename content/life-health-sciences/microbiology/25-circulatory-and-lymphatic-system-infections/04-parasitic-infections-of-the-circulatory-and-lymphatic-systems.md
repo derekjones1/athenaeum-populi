@@ -52,7 +52,7 @@ The Nothing But Nets campaign, an initiative of the United Nations Foundation, h
 
 **Check Your Understanding**
 
-{{< selfcheck question="Why is malaria one of the most important infectious diseases?" hint="Look at the two sentences right after the section's opening claim: one names how many people are at risk, the other gives the WHO's case and death counts." >}}
+{{< selfcheck question="Why is malaria one of the most important infectious diseases?" hint="See the first paragraph of the Malaria subsection." >}}
 Malaria remains one of the most important infectious diseases because of its widespread distribution — it places more than half of the world's population in jeopardy. In 2015, the WHO estimated about 214 million cases worldwide, resulting in about 438,000 deaths, with about 88% of cases and 91% of deaths occurring in Africa.
 ===CHECKS===
 places more than half of the world's population in jeopardy
@@ -86,7 +86,7 @@ The infectious cycle of *Toxoplasma gondii*. (credit "diagram": modification of 
 
 **Check Your Understanding**
 
-{{< selfcheck question="How does T. gondii infect humans?" hint="The section names several routes across the life-cycle paragraph and the pregnancy paragraph — trace each host and pathway rather than naming only one." >}}
+{{< selfcheck question="How does T. gondii infect humans?" hint="See the Toxoplasmosis subsection's first paragraph, its pregnancy paragraph, and its life-cycle figure." >}}
 Infected cats shed *T. gondii* oocysts in their feces, and these oocysts spread to humans through contact with fecal matter on cats' bodies, in litter boxes, or in garden beds. Humans can also become infected by eating undercooked meat from animals harboring tissue cysts, by blood transfusion or organ transplantation, or, during pregnancy, when tachyzoites cross the placenta from mother to fetus.
 ===CHECKS===
 contact with fecal matter on cats' bodies, in litter boxes, or in garden beds
@@ -131,12 +131,12 @@ The medications nifurtimox and benznidazole are effective treatments during the 
 {{< multiplechoice
   question="How do kissing bugs infect humans with Trypanosoma cruzi?"
   answer="They bite the face or around the eyes and defecate near the bite, and the bitten person rubs the infected feces into the bite wound."
-  hint="The mechanism is not the bite itself — it is what the bug leaves behind near the bite, and what the bitten person then does."
+  hint="See the first paragraph of the Chagas Disease subsection."
 >}}
-They infect people through contaminated blood transfusions or organ transplants, the way the disease's other reservoirs do.
+People swallow food or water contaminated with the bugs' feces, the way *T. gondii* oocysts in cat feces are ingested.
 They inject the parasite directly into the bloodstream through their bite, the way *Anopheles* mosquitoes transmit malaria.
 They bite the face or around the eyes and defecate near the bite, and the bitten person rubs the infected feces into the bite wound.
-They transmit the parasite in their saliva during the blood meal, the way sand flies transmit *Leishmania*.
+They transmit the parasite through their bite, the way sand flies transmit *Leishmania*.
 {{< /multiplechoice >}}
 
 ## Leishmaniasis
@@ -161,10 +161,9 @@ Cutaneous leishmaniasis is usually not treated. The lesions will resolve after w
 
 **Check Your Understanding**
 
-{{< sortbins question="Compare the mucosal and cutaneous forms of leishmaniasis." hint="Think about which body surface each form's lesions occur on — the skin at the insect-bite site, or a mucosal lining elsewhere in the body — and how often each form is treated and how each usually resolves." >}}
+{{< sortbins question="Compare the mucosal and cutaneous forms of leishmaniasis." hint="See the Leishmaniasis subsection's paragraphs on the three clinical forms, on the mucosal form, and on treatment." >}}
 {"bins": ["Cutaneous leishmaniasis", "Mucosal leishmaniasis"],
  "items": [
-  {"label": "The most common form of the disease", "bin": 0},
   {"label": "Associated with the mucous membranes of the mouth, nares, or pharynx", "bin": 1},
   {"label": "Starts as papules or nodules before becoming large ulcers at the bite site", "bin": 0},
   {"label": "Can be destructive and disfiguring", "bin": 1},
@@ -191,12 +190,12 @@ The cercaria of some species of *Schistosoma* can only transform into adult worm
 {{< multiplechoice
   question="How do schistosome infections in humans occur?"
   answer="Cercariae released by infected snails penetrate the skin of swimmers or bathers in contaminated freshwater."
-  hint="Follow the miracidia through the snail host to the free-swimming stage that leaves the snail and enters the water — that stage is what infects a person."
+  hint="See the first two paragraphs of the Schistosomiasis subsection."
 >}}
-By ingesting eggs or cysts in contaminated food or water, as with most other trematode infections.
+By ingestion, the way all other trematodes infect.
 Cercariae released by infected snails penetrate the skin of swimmers or bathers in contaminated freshwater.
 By the bite of an infected mosquito, the way malaria is transmitted.
-By the bite of an infected triatomine bug, the way Chagas disease is transmitted.
+Through the feces of infected triatomine bugs, the way Chagas disease is transmitted.
 {{< /multiplechoice >}}
 
 {{< callout type="info" >}}
@@ -270,6 +269,7 @@ Schistosoma mansoni
 {{< textin
   question="The ________ mosquito is the biological vector for malaria."
   answer="Anopheles"
+  accept="Anopheles mosquito"
   hint="Name the mosquito genus given in the Malaria section's first paragraph, right after the list of Plasmodium species."
 >}}
 
@@ -291,7 +291,7 @@ Schistosoma mansoni
 {{< multiplechoice
   question="Which of the following diseases is caused by a helminth?"
   answer="schistosomiasis"
-  hint="Three of these four diseases are protozoan infections; only one is caused by a fluke."
+  hint="See the page's opening paragraph and the first paragraph of each disease subsection."
 >}}
 leishmaniasis
 malaria
@@ -313,7 +313,7 @@ intestinal
 {{< multiplechoice
   question="Which of the following diseases does not involve an arthropod vector?"
   answer="schistosomiasis"
-  hint="This disease's intermediate host is a freshwater snail, not an insect or a tick."
+  hint="See the sentence in each disease subsection on how the pathogen reaches humans."
 >}}
 schistosomiasis
 malaria
@@ -325,7 +325,7 @@ babesiosis
   question="Cercarial dermatitis is also known as ________."
   answer="swimmer's itch"
   accept="clam digger's itch"
-  hint="The section names two common nicknames for the itchy reaction to cercaria that cannot complete their life cycle in human skin; either one is accepted here."
+  hint="See the Cercarial Dermatitis subsection."
 >}}
 
 {{< multiplechoice
@@ -336,10 +336,10 @@ babesiosis
 Plasmodium sporozoites being injected from the mosquito's salivary gland
 Plasmodium multiplying inside liver cells before entering the blood
 The synchronous rupture of red blood cells as Plasmodium emerges from them
-Sludge blood forming as clumped red blood cells block small vessels
+Sludge blood, in which the red blood cells agglutinate into clumps
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why should pregnant people avoid cleaning their cat's litter box or do so with protective gloves?" hint="Trace both halves of the answer: where the oocysts a litter box carries come from, and what they can do to a developing fetus." >}}
+{{< selfcheck question="Why should pregnant people avoid cleaning their cat's litter box or do so with protective gloves?" hint="See the Toxoplasmosis subsection's first paragraph and its pregnancy paragraph." >}}
 Cats shed *Toxoplasma gondii* oocysts in their feces, and these oocysts typically spread to humans through contact with fecal matter in litter boxes. If a pregnant person becomes infected, tachyzoites can cross the placenta and cause serious infection in the developing fetus — congenital toxoplasmosis often leads to fetal loss or premature birth and can damage the central nervous system, manifesting as mental retardation, deafness, or blindness.
 ===CHECKS===
 cats shed Toxoplasma gondii oocysts in their feces
@@ -347,11 +347,11 @@ oocysts spread to humans through contact with fecal matter in litter boxes
 tachyzoites can cross the placenta and cause serious infection in the developing fetus
 {{< /selfcheck >}}
 
-{{< selfcheck question="What measures can be taken to reduce the likelihood of malaria reemerging in the US?" hint="The section names only one category of preventive measure for limiting the disease's spread — look at the sentence right before the one about a vaccine." >}}
+{{< selfcheck question="What measures can be taken to reduce the likelihood of malaria reemerging in the US?" hint="See the Malaria subsection's first paragraph and its paragraph on diagnosis, drugs, and prevention." >}}
 The module discusses vector control as the general prevention measure against malaria: use of insecticides and insecticide-treated bed nets can limit the spread of malaria. It does not address measures specific to preventing malaria's reemergence in the US; despite efforts to develop a vaccine, none is currently available.
 ===CHECKS===
 use of insecticides and insecticide-treated bed nets can limit the spread of malaria
 despite efforts to develop a vaccine, none is currently available
 {{< /selfcheck >}}
 
-<small>This section is adapted from [Microbiology, Section 25.4: Parasitic Infections of the Circulatory and Lymphatic Systems](https://openstax.org/books/microbiology/pages/25-4-parasitic-infections-of-the-circulatory-and-lymphatic-systems) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the Summary's "can causes malaria-like symptoms" is corrected to "can cause" (a one-word source grammar slip); the Toxoplasma life-cycle figure's source alt mislabels and drops its steps 8–9, so the page's longdesc is written from the artwork and the alt defect is a source defect; all seven ordinary figures re-encoded as WebP and rendered as mediafigures after image inspection, with `kind="diagram"` set on the Malaria and Toxoplasma life-cycle figures (each carries genuinely drawn human/mosquito or human/animal schematics, not just annotation on photographs) and `kind="photo"` on the remaining five (BloodSmear, SabinFeld, babesia, Trypanosom, Leishmania are each photographic or micrographic, including their leader-line labels, which are annotation rather than drawn art); the Malaria figure carries `eager="true"` as the page's first figure; all seven alts are rewritten from the images rather than reused from the source's own alts, and the Malaria and Toxoplasma figures each carry a `longdesc` walking through their numbered life-cycle steps, since neither figure's meaning is in its short caption; the Disease Profile table image (`OSC_Microbio_25_04_Protozoa`) is not vendored, per this book's Disease Profile rule, and is transcribed as two Markdown tables inside the Disease Profile callout, titled "Protozoa" and "Helminths" after the image's own two row-group headers — the source's own `alt` attribute garbles both headers (it lists "Protozoa" as a seventh column and appends the word "Helminths." onto the Toxoplasmosis row's Antimicrobial Drugs cell), so the six-column, two-row-group structure is transcribed from the printed image rather than the alt; the same alt also reads "in pregnant people" for the Toxoplasmosis row's Signs and Symptoms cell where the printed image itself reads "in pregnant women" — the alt is transcribed as the pinned transcription authority; the section's four source Multiple Choice items keep their source options, order, and key (D, A, C, A) unchanged; the three source Fill in the Blank items are rendered as `textin`, keeping their source keys unchanged, and the "Cercarial dermatitis is also known as ________" item's `accept` adds "clam digger's itch," the module's own parenthetical second name for the same blank; the section's one unkeyed Short Answer question asking the main cause of *P. falciparum* symptoms is graded as a `multiplechoice`, keyed by the module's single sentence naming the synchronous rupture of infected red blood cells, with distractors built from the module's own liver-stage and sludge-blood material; the section's other unkeyed Short Answer question (the litter-box question) and its one unkeyed Critical Thinking question (measures against a US malaria reemergence) remain self-checks, since each needs more than one module sentence to answer honestly, and the Critical Thinking self-check's model answer states plainly that the module's own prevention material never addresses US reemergence specifically; of this section's five body Check Your Understanding bullets, two are graded — the kissing-bug transmission bullet as a `multiplechoice` keyed by the one sentence naming the bite-and-defecation mechanism, and the schistosome-infection bullet as a `multiplechoice` keyed by the sentence naming cercarial skin penetration, with distractors drawn from the malaria and Chagas disease vector mechanisms described earlier in this same section — one (the mucosal/cutaneous leishmaniasis comparison) is graded as a `sortbins` built from the module's own distinguishing phrases for each form, and two (the malaria-importance and *T. gondii*-transmission bullets) remain self-checks whose model answers are assembled from more than one sentence of this module; no source exercise, table, or Check Your Understanding bullet is omitted; the module's ten footnote citations are rendered as inline parenthetical citations, bare access URLs dropped, with one repeated "Ibid." rendered as "(ibid.)"; the cross-reference to the "When Phagocytosis Fails" Micro Connection box (m58880, *Pathogen Recognition and Phagocytosis*) and the cross-reference to the schistosome life-cycle figure (m58803, *Parasitic Helminths*) are each rendered as a link to that page; the Clinical Focus Resolution box's closing "Go back to the previous Clinical Focus box" link is rendered as a link to Section 25.2's Part 2, plus a sentence naming that the case began in Section 25.1, since this chapter's three-part case skips Section 25.3; the Link to Learning box keeps both of its paragraphs and both of its URLs in one callout, and its own "Nothing But Nets campaign" no-emphasis term stays plain prose; key terms are compiled from the module's six `<term>` elements (no repeats, six distinct bullets) plus one sentence-derived bullet, "Chagas disease," which the CNXML never wraps in a `<term>` element anywhere in the body even though it has its own body subsection, a keyed Fill in the Blank answer, a Check Your Understanding question, a bold Summary bullet, and a Disease Profile table row — its definition is taken verbatim from the book's Glossary appendix, which does carry a headword entry for it.</small>
+<small>This section is adapted from [Microbiology, Section 25.4: Parasitic Infections of the Circulatory and Lymphatic Systems](https://openstax.org/books/microbiology/pages/25-4-parasitic-infections-of-the-circulatory-and-lymphatic-systems) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the Summary's "can causes malaria-like symptoms" is corrected to "can cause" (a one-word source grammar slip); the Toxoplasma life-cycle figure's source alt mislabels and drops its steps 8–9, so the page's longdesc is written from the artwork and the alt defect is a source defect; all seven ordinary figures re-encoded as WebP and rendered as mediafigures after image inspection, with `kind="diagram"` set on the Malaria and Toxoplasma life-cycle figures (each carries genuinely drawn human/mosquito or human/animal schematics, not just annotation on photographs) and `kind="photo"` on the remaining five (BloodSmear, SabinFeld, babesia, Trypanosom, Leishmania are each photographic or micrographic, including their leader-line labels, which are annotation rather than drawn art); the Malaria figure carries `eager="true"` as the page's first figure; all seven alts are rewritten from the images rather than reused from the source's own alts, and the Malaria and Toxoplasma figures each carry a `longdesc` walking through their numbered life-cycle steps, since neither figure's meaning is in its short caption; the Disease Profile table image (`OSC_Microbio_25_04_Protozoa`) is not vendored, per this book's Disease Profile rule, and is transcribed as two Markdown tables inside the Disease Profile callout, titled "Protozoa" and "Helminths" after the image's own two row-group headers — the source's own `alt` attribute garbles both headers (it lists "Protozoa" as a seventh column and appends the word "Helminths." onto the Toxoplasmosis row's Antimicrobial Drugs cell), so the six-column, two-row-group structure is transcribed from the printed image rather than the alt; the same alt also reads "in pregnant people" for the Toxoplasmosis row's Signs and Symptoms cell where the printed image itself reads "in pregnant women" — the alt is transcribed as the pinned transcription authority; the section's four source Multiple Choice items keep their source options, option order, and keys (D, A, C, A) unchanged; the three source Fill in the Blank items are rendered as `textin`, keeping their source keys unchanged; each source item sits in the Practice group of the objective it tests, which changes the source's order — the first group holds the causative-agent Multiple Choice item (the source's third) and the *Anopheles* and kissing-bug Fill in the Blank items, and the second holds the helminth, leishmaniasis-form, and arthropod-vector Multiple Choice items, then the cercarial dermatitis Fill in the Blank item; the *Anopheles* item's `accept` adds "Anopheles mosquito," and the "Cercarial dermatitis is also known as ________" item's `accept` adds "clam digger's itch," the module's own parenthetical second name for the same blank; the section's one unkeyed Short Answer question asking the main cause of *P. falciparum* symptoms is graded as a `multiplechoice`, keyed by the module's single sentence naming the synchronous rupture of infected red blood cells, with distractors built from the module's own liver-stage and sludge-blood material; the section's other unkeyed Short Answer question (the litter-box question) and its one unkeyed Critical Thinking question (measures against a US malaria reemergence) remain self-checks, since each needs more than one module sentence to answer honestly, and the Critical Thinking self-check's model answer states plainly that the module's own prevention material never addresses US reemergence specifically; of this section's five body Check Your Understanding bullets, two are graded — the kissing-bug transmission bullet as a `multiplechoice` keyed by the one sentence naming the bite-and-defecation mechanism, and the schistosome-infection bullet as a `multiplechoice` keyed by the sentence naming cercarial skin penetration, with distractors drawn from the module's statement that all other trematodes infect by ingestion and from the malaria and Chagas disease transmission mechanisms described earlier in this same section — one (the mucosal/cutaneous leishmaniasis comparison) is graded as a `sortbins` built from the module's own distinguishing phrases for each form, and two (the malaria-importance and *T. gondii*-transmission bullets) remain self-checks whose model answers are assembled from more than one sentence of this module; no source exercise, table, or Check Your Understanding bullet is omitted; the module's ten footnote citations are rendered as inline parenthetical citations, bare access URLs dropped, with one repeated "Ibid." rendered as "(ibid.)"; the cross-reference to the "When Phagocytosis Fails" Micro Connection box (m58880, *Pathogen Recognition and Phagocytosis*) and the cross-reference to the schistosome life-cycle figure (m58803, *Parasitic Helminths*) are each rendered as a link to that page; the Clinical Focus Resolution box's closing "Go back to the previous Clinical Focus box" link is rendered as a link to Section 25.2's Part 2, plus a sentence naming that the case began in Section 25.1, since this chapter's three-part case skips Section 25.3; the Link to Learning box keeps both of its paragraphs and both of its URLs in one callout, and its own "Nothing But Nets campaign" no-emphasis term stays plain prose; key terms are compiled from the module's six `<term>` elements (no repeats, six distinct bullets) plus one sentence-derived bullet, "Chagas disease," which the CNXML never wraps in a `<term>` element anywhere in the body even though it has its own body subsection, a keyed Fill in the Blank answer, a Check Your Understanding question, a bold Summary bullet, and a Disease Profile table row — its definition is taken verbatim from the book's Glossary appendix, which does carry a headword entry for it.</small>

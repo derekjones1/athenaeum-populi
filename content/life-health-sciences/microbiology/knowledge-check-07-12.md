@@ -29,7 +29,7 @@ weight: 14
 >}}
 
 {{< multiplechoice
-  question="Which amino acid enantiomer is found in bacterial cell walls, as distinct from the enantiomer found in human cells?"
+  question="Which enantiomer is found in bacterial cell walls, as distinct from its mirror-image form found in human cells?"
   answer="D-alanine"
 >}}
 D-alanine
@@ -39,7 +39,7 @@ L-glucose
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which functional group, with the structure R—O—R′, is found in disaccharides, polysaccharides, and lipids?"
+  question="Which functional group has the general structure R—O—R′?"
   answer="Ether"
 >}}
 Methyl
@@ -56,7 +56,7 @@ Phosphate
 >}}
 
 {{< textin
-  question="The grain sugar disaccharide made of two glucose molecules linked together is called ________."
+  question="The grain sugar made of two glucose molecules linked together is called ________."
   answer="maltose"
 >}}
 
@@ -64,9 +64,9 @@ Phosphate
   question="N-acetyl glucosamine (NAG) and N-acetyl muramic acid (NAM) together are found in which structure?"
   answer="bacterial cell wall peptidoglycan"
 >}}
-chitin
+bacterial glycogen granules
 bacterial cell wall peptidoglycan
-cellulose fiber
+plant cell wall cellulose
 {{< /multiplechoice >}}
 
 ### 7.3 Lipids
@@ -86,9 +86,9 @@ carboxylic acid group
 >}}
 
 {{< textin
-  question="The bacterium that feeds on the skin's lipids, generating short-chain fatty acids and contributing to the production of acne, is ________."
+  question="One of the most prominent skin-microbiota bacteria that feed on lipids, using the skin's lipids to generate short-chain fatty acids, is ________."
   answer="Cutibacterium acnes"
-  accept="C. acnes"
+  accept="C. acnes|Propionibacterium acnes|P. acnes"
 >}}
 
 ### 7.4 Proteins
@@ -100,7 +100,7 @@ carboxylic acid group
 >}}
 
 {{< multiplechoice
-  question="Which carrier protein, produced in the root nodules formed by rhizobia symbiotically interacting with legume roots, binds with high affinity to oxygen?"
+  question="Which carrier protein, produced in the root nodules formed by rhizobia symbiotically interacting with the roots of plants such as soybeans, peanuts, or beans, binds with high affinity to oxygen?"
   answer="leghemoglobin"
 >}}
 hemoglobin
@@ -120,7 +120,7 @@ a glycoprotein
 {{< textin
   question="A carbon- and energy-storage compound found in the granules of some nonfluorescent species of the genus *Pseudomonas* is ________."
   answer="poly-β-hydroxybutyrate"
-  accept="PHB"
+  accept="PHB|poly-beta-hydroxybutyrate"
 >}}
 
 {{< textin
@@ -154,25 +154,16 @@ feedback inhibition
   answer="apoenzyme"
 >}}
 
-{{< selfcheck question="What is an allosteric activator, and how does its effect on an enzyme's active site compare with that of an inhibitor?" >}}
-Allosteric activators bind to locations on an enzyme away from the active site, inducing a conformational change that increases the affinity of the enzyme's active site(s) for its substrate(s) — the opposite effect of an inhibitor, which reduces that affinity or blocks the active site outright.
+{{< selfcheck question="Why are the bonds between the phosphate groups of ATP called high-energy phosphate bonds, and what happens when they are broken?" >}}
+Phosphate groups are negatively charged and thus repel one another when they are arranged in series, as they are in ADP and ATP. This repulsion makes the ADP and ATP molecules inherently unstable. Thus, the bonds between phosphate groups (one in ADP and two in ATP) are called high-energy phosphate bonds. When these high-energy bonds are broken to release one phosphate (called inorganic phosphate [Pᵢ]) or two connected phosphate groups (called pyrophosphate [PPᵢ]) from ATP through a process called dephosphorylation, energy is released to drive endergonic reactions.
 ===CHECKS===
-allosteric activators bind to locations on an enzyme away from the active site
-inducing a conformational change
-increases the affinity of the enzyme's active site(s) for its substrate(s)
+phosphate groups are negatively charged and thus repel one another
+this repulsion makes the ADP and ATP molecules inherently unstable
+the high-energy bonds are broken through a process called dephosphorylation
+energy is released to drive endergonic reactions
 {{< /selfcheck >}}
 
 ### 8.2 Catabolism of Carbohydrates
-
-{{< multiplechoice
-  question="The type of glycolysis most common in animals and microbes, the EMP pathway, is named after Gustav Embden, Otto Meyerhof, and which other scientist?"
-  answer="Jakub Parnas"
->}}
-Jakub Parnas
-Nathan Entner
-Michael Doudoroff
-Hans Adolf Krebs
-{{< /multiplechoice >}}
 
 {{< textin
   question="The pentose phosphate pathway is also called the phosphogluconate pathway or the ________."
@@ -187,6 +178,16 @@ pyruvate
 citric acid
 glyceraldehyde 3-phosphate
 coenzyme A
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="In the Krebs cycle, the two-carbon acetyl group from the transition reaction is added to an intermediate containing how many carbon atoms?"
+  answer="four"
+>}}
+two
+three
+four
+six
 {{< /multiplechoice >}}
 
 ### 8.3 Cellular Respiration
@@ -247,12 +248,12 @@ important in maintaining the health of the gastrointestinal tract
 phospholipases
 lipases
 proteases
-caseinase
 {{< /multiplechoice >}}
 
 {{< textin
   question="Phospholipid structure is similar to a triglyceride's, except that one of the fatty acids is replaced by a ________."
   answer="phosphorylated head group"
+  accept="phosphate|modified phosphate group|phosphate group|phosphate head group|polar head group"
 >}}
 
 {{< multiplechoice
@@ -294,8 +295,8 @@ Joan Mary Anderson
 ### 8.7 Biogeochemical Cycles
 
 {{< textin
-  question="Methane accumulation in the environment is a significant concern because it is a strong ________ gas."
-  answer="greenhouse"
+  question="Bacteria and archaea that use methane as their carbon source are called ________."
+  answer="methanotrophs"
 >}}
 
 {{< multiplechoice
@@ -324,29 +325,29 @@ silica
 
 {{< multiplechoice
   question="In a 2023 study, what surface treatment prevented biofilm growth in experiments on Earth and aboard the International Space Station?"
-  answer="A layer of lubricant infused into the surface's tiny crevices, which eliminated microbial adhesion"
+  answer="A layer of lubricant infused into the surface's tiny crevices"
 >}}
 An anti-bacterial coating that killed the microorganisms on the surface
-A layer of lubricant infused into the surface's tiny crevices, which eliminated microbial adhesion
+A layer of lubricant infused into the surface's tiny crevices
 A layer of dead biofilm cells that blocked new cells from attaching
 Periodic replacement of the components where biofilm built up
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="What does a chemostat do?"
-  answer="It maintains a continuous culture in the logarithmic phase of growth by supplying nutrients and removing wastes at a steady rate."
+  answer="It keeps a continuous culture in the log phase by adding nutrients and removing suspension at the same rate."
 >}}
 It measures the turbidity of a bacterial suspension using a light beam and a detector.
-It maintains a continuous culture in the logarithmic phase of growth by supplying nutrients and removing wastes at a steady rate.
+It keeps a continuous culture in the log phase by adding nutrients and removing suspension at the same rate.
 It estimates cell density by measuring the dry weight of a filtered, washed, and dried sample.
 It counts colonies growing on solid medium after a series of dilutions are plated.
 {{< /multiplechoice >}}
 
-{{< textin question="A dormant cell that survives in the death phase and is resistant to most antibiotics is called a ________." answer="persister" >}}
+{{< textin question="A dormant cell that survives in the death phase and is resistant to most antibiotics is called a ________." answer="persister" accept="persister cell" >}}
 
 ### 9.2 Oxygen Requirements for Microbial Growth
 
-{{< textin question="The active ingredient of household bleach, and an example of a reactive oxygen species, is the ________." answer="hypochlorite ion" accept="hypochlorite" >}}
+{{< textin question="The active ingredient of household bleach, and an example of a reactive oxygen species, is the ________." answer="hypochlorite ion" accept="hypochlorite|OCl−" >}}
 
 {{< multiplechoice
   question="Which enzyme catalyzes the reaction 2O₂⁻ + 2H⁺ → H₂O₂ + O₂, breaking down a powerful reactive ion generated by aerobic metabolism?"
@@ -373,10 +374,9 @@ thioglycolate tube culture
   question="What environment inactivates *Vibrio cholerae*, even though the organism can survive a pH as high as 11.0?"
   answer="the acid of the stomach"
 >}}
-a soda lake at pH 10.5
-hot springs and sulfur mud fields
+a soda lake in the African Rift Valley
 the acid of the stomach
-the near-neutral growth environment of *Salmonella* spp. (pH 7.0–7.5)
+a slightly basic environment
 {{< /multiplechoice >}}
 
 {{< textin question="*Bacillus firmus* derives the energy for transport reactions and motility from a ________ rather than a proton motive force." answer="Na⁺ ion gradient" accept="sodium ion gradient|Na⁺ gradient|sodium gradient" >}}
@@ -471,9 +471,8 @@ the Chromosomal Theory of Inheritance
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A mobile segment of DNA that can excise from one location in a genome and integrate elsewhere, first identified by Barbara McClintock as a \"jumping gene,\" is called a ________."
-  answer="transposon"
-  accept="transposable element"
+  question="In the 1860s, Friedrich Miescher isolated chemicals from white blood cells in the pus on used bandages; they would eventually be known as RNA and DNA. What did he name these chemicals?"
+  answer="nuclein"
 >}}
 
 {{< selfcheck question="Describe the outcome of Mendel's cross between true-breeding violet-flowered pea plants and true-breeding white-flowered pea plants, from the P generation through the F₂ generation." >}}
@@ -526,12 +525,12 @@ Rosalind Franklin and R.G. Gosling
   answer="nucleolus"
 >}}
 
-{{< selfcheck question="How was rRNA's catalytic role in protein synthesis experimentally confirmed?" >}}
-Although rRNA had long been thought to serve primarily a structural role, its catalytic role within the ribosome was proven in 2000. Scientists in the laboratories of Thomas Steitz and Peter Moore at Yale University were able to crystallize the ribosome structure from *Haloarcula marismortui*, a halophilic archaeon isolated from the Dead Sea.
+{{< selfcheck question="DNA and RNA differ subtly in their sugars. How does that difference suit DNA to storing genetic information and RNA to its other roles in the cell?" >}}
+The subtle structural difference between the sugars gives DNA added stability, making DNA more suitable for storage of genetic information, whereas the relative instability of RNA makes it more suitable for its more short-term functions.
 ===CHECKS===
-its catalytic role within the ribosome was proven in 2000
-Scientists in the laboratories of Thomas Steitz and Peter Moore at Yale University were able to crystallize the ribosome structure
-Haloarcula marismortui, a halophilic archaeon isolated from the Dead Sea
+gives DNA added stability
+making DNA more suitable for storage of genetic information
+the relative instability of RNA makes it more suitable for its more short-term functions
 {{< /selfcheck >}}
 
 ### 10.4 Structure and Function of Cellular Genomes
@@ -551,7 +550,7 @@ constitutive genes
   answer="epigenetics"
 >}}
 
-{{< selfcheck question="Why do bacterial endosymbionts and obligate or facultative intracellular pathogens tend to have smaller genomes than free-living bacteria?" >}}
+{{< selfcheck question="Why do bacterial endosymbionts and obligate or facultative intracellular pathogens tend to have small genomes?" >}}
 When a bacterium relies on the host cell to carry out certain functions, it loses the genes encoding the abilities to carry out those functions itself. Because host cells can supply most of their nutrients, obligate and facultative intracellular pathogens tend to have a reduced number of genes encoding metabolic functions.
 ===CHECKS===
 when a bacterium relies on the host cell to carry out certain functions, it loses the genes encoding the abilities to carry out those functions itself
@@ -566,10 +565,10 @@ a reduced number of genes encoding metabolic functions
 {{< textin
   question="A 2008 law bars health insurance companies and employers from treating people differently when genome sequencing reveals a predisposition to a disease, although it does not cover life, disability, or long-term care insurance policies. This law is called the ________."
   answer="Genetic Information Nondiscrimination Act"
-  accept="GINA"
+  accept="GINA|Genetic Information Non-discrimination Act|Genetic Information Nondiscrimination Act of 2008"
 >}}
 
-{{< selfcheck question="Why might genetic differences between human hosts affect their susceptibility to infection with an opportunistic pathogen like *Haemophilus influenzae*?" >}}
+{{< selfcheck question="Why might some people carry an opportunistic pathogen like *Haemophilus influenzae* in the upper respiratory tract without symptoms while others become seriously ill when infected, and what host differences have been implicated?" >}}
 There is evidence suggesting that differences in susceptibility to infection between patients may be a result, at least in part, of genetic differences between human hosts. For example, genetic differences in human leukocyte antigens (HLAs) and red blood cell antigens among hosts have been implicated in different immune responses and resulting disease progression from infection with *H. influenzae*.
 ===CHECKS===
 differences in susceptibility to infection between patients may be a result, at least in part, of genetic differences between human hosts
@@ -595,8 +594,8 @@ a month
 >}}
 
 {{< textin
-  question="After replication, the circular chromosomes of prokaryotes are interlocked, or ________, and must be separated from each other by bacterial topoisomerase IV."
-  answer="concatenated"
+  question="As the DNA opens up at the origin of replication, the Y-shaped structures that form are called ________."
+  answer="replication forks"
 >}}
 
 {{< multiplechoice
@@ -622,7 +621,7 @@ six
 {{< /multiplechoice >}}
 
 {{< textin
-  question="During transcription, the partially unwound region of the DNA double helix where RNA synthesis occurs is called the ________."
+  question="The region in which the DNA double helix partially unwinds so that an RNA strand can be synthesized from one of its strands is called the ________."
   answer="transcription bubble"
 >}}
 
@@ -638,8 +637,9 @@ RNA polymerase III
 ### 11.4 Protein Synthesis (Translation)
 
 {{< textin
-  question="As an adaptor molecule of translation, a tRNA interacts with three factors: aminoacyl tRNA synthetases, ribosomes, and ________."
-  answer="mRNA"
+  question="During elongation of translation, formation of the bond between the amino group of the amino acid attached to the A-site tRNA and the carboxyl group of the amino acid attached to the P-site tRNA is catalyzed by ________, an RNA-based ribozyme integrated into the 50S ribosomal subunit."
+  answer="peptidyl transferase"
+  accept="peptidyltransferase"
 >}}
 
 {{< multiplechoice
@@ -655,6 +655,7 @@ between 600 and 900
 {{< textin
   question="During protein targeting and folding, proper folding of a polypeptide and association of multiple polypeptide subunits is often facilitated by ________ proteins."
   answer="chaperone"
+  accept="chaperone protein"
 >}}
 
 ### 11.5 Mutations
@@ -662,20 +663,20 @@ between 600 and 900
 {{< textin
   question="Most mistakes introduced during DNA replication are promptly corrected by DNA polymerases through a function called ________, in which the polymerase reads each newly added base to ensure it is complementary to the template base before adding the next one."
   answer="proofreading"
+  accept="proof reading"
 >}}
 
-{{< selfcheck question="Why is ionizing radiation exposure used to sterilize medical devices and foods, and how does it damage DNA?" >}}
-Strong ionizing radiation like X-rays and gamma rays can cause single- and double-stranded breaks in the DNA backbone through the formation of hydroxyl radicals on radiation exposure. Ionizing radiation exposure is used to kill microbes to sterilize medical devices and foods, because of its dramatic nonspecific effect in damaging DNA, proteins, and other cellular components.
+{{< selfcheck question="Why is exposure to ionizing radiation, such as X-rays and gamma rays, used to kill microbes when sterilizing medical devices and foods?" >}}
+Ionizing radiation exposure is used to kill microbes to sterilize medical devices and foods because of its dramatic nonspecific effect in damaging DNA, proteins, and other cellular components.
 ===CHECKS===
-forms hydroxyl radicals, causing single- and double-stranded breaks in the DNA backbone
-used to kill microbes to sterilize medical devices and foods
-its dramatic nonspecific effect in damaging DNA, proteins, and other cellular components
+its dramatic nonspecific effect
+damaging DNA, proteins, and other cellular components
 {{< /selfcheck >}}
 
 {{< textin
-  question="In 1998, researchers found that up to 14% of some Eurasian populations carry a deletion mutation, called ________, in the gene encoding CCR5."
+  question="In 1998, researchers found that up to 14% of people in some Eurasian ethnic groups carry a deletion mutation, called ________, in the gene for a T-cell surface coreceptor that many strains of HIV need to enter the host cell."
   answer="CCR5-delta 32"
-  accept="CCR5-Δ32|delta 32"
+  accept="CCR5-Δ32|CCR5Δ32|Δ32|delta 32|CCR5-delta32|delta32"
 >}}
 
 ### 11.6 How Asexual Prokaryotes Achieve Genetic Diversity
@@ -683,12 +684,13 @@ its dramatic nonspecific effect in damaging DNA, proteins, and other cellular co
 {{< textin
   question="The transmission of genetic information from generation to generation, the main mode of transmission of genetic information in all cells, is called ________ gene transfer."
   answer="vertical"
+  accept="vertical gene transfer"
 >}}
 
 {{< textin
   question="Severe diarrheal disease caused by verotoxin-producing *E. coli* (VTEC) may result in a condition called ________."
   answer="hemolytic uremic syndrome"
-  accept="HUS"
+  accept="HUS|haemolytic uraemic syndrome"
 >}}
 
 {{< multiplechoice
@@ -768,7 +770,7 @@ Radioactive phosphorus label
 >}}
 
 {{< multiplechoice
-  question="In 454 sequencing (pyrosequencing), what is released — and detected as a flash of light — when a nucleotide is incorporated into a growing DNA strand?"
+  question="In 454 sequencing, what is released as a byproduct of polymerization, emitting a small flash of light that a detector records, each time a nucleotide is incorporated into a growing DNA strand?"
   answer="A pyrophosphate molecule"
 >}}
 A pyrophosphate molecule
@@ -782,16 +784,17 @@ A radioactive phosphorus atom
 {{< textin
   question="Studying the gene-expression patterns of an entire microbial community, rather than of a single species, is called ________."
   answer="metatranscriptomics"
+  accept="meta-transcriptomics"
 >}}
 
 {{< multiplechoice
-  question="The naturally occurring antibiotic synthesis pathways of which microorganism, long known for antibiotic production, have been genetically modified to generate more than 200 new antibiotics?"
-  answer="*Streptomyces* spp."
+  question="The naturally occurring antibiotic synthesis pathways of species of which genus, long known for their antibiotic production, have been genetically modified to generate more than 200 new antibiotics?"
+  answer="*Streptomyces*"
 >}}
-*Streptomyces* spp.
-*Escherichia coli*
-*Yersinia pestis*
-*Borrelia burgdorferi*
+*Streptomyces*
+*Escherichia*
+*Yersinia*
+*Borrelia*
 {{< /multiplechoice >}}
 
 {{< textin
@@ -804,7 +807,7 @@ A radioactive phosphorus atom
 {{< textin
   question="In 1999, 18-year-old Jesse Gelsinger died four days after receiving gene therapy for a condition called ________ deficiency, which leads to ammonia accumulation in the blood."
   answer="ornithine transcarbamylase"
-  accept="OTC"
+  accept="OTC|ornithine transcarbamylase deficiency|OTC deficiency"
 >}}
 
 {{< textin
@@ -817,9 +820,9 @@ A radioactive phosphorus atom
   answer="The National Academy of Medicine"
 >}}
 The National Academy of Medicine
-The Food and Drug Administration (FDA)
-The Office of Human Research Protection (OHRP)
-The Recombinant DNA Advisory Committee (RAC)
+The Food and Drug Administration
+The Office of Human Research Protection
+The Recombinant DNA Advisory Committee
 {{< /multiplechoice >}}
 
 ---

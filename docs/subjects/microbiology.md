@@ -1,5 +1,7 @@
 # Microbiology — subject playbook
 
+Re-reviewed to the A&P standard, completed September 24, 2026.
+
 The subject-specific half of the authoring rules for OpenStax
 **Microbiology**. `docs/authoring-playbook.md` is the shared core;
 `docs/subjects/life-sciences.md` is the life-sciences baseline this book

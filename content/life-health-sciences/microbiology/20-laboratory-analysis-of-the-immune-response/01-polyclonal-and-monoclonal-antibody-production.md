@@ -106,8 +106,8 @@ in immunocompromised patients the immune system may not produce a detectable lev
 {{< textin
   question="If a patient tests negative on a highly sensitive test, what is the likelihood that the person is infected with the pathogen?"
   answer="low"
-  accept="unlikely|very low|very unlikely|low probability|low likelihood|not likely"
-  hint="A highly sensitive test rarely misses an infection that is actually present."
+  accept="unlikely|very low|very unlikely|low probability|low likelihood|not likely|not very likely|low chance|small|very small|improbable"
+  hint="Read the paragraph on test sensitivity and test specificity in Clinical Uses of Polyclonal Antisera."
 >}}
 
 ## Producing Monoclonal Antibodies
@@ -140,7 +140,7 @@ One promising technology for inexpensive mAbs is the use of genetically engineer
 
 **Check Your Understanding**
 
-{{< selfcheck question="How are humanized monoclonal antibodies produced?" hint="Two gene regions are combined — one still from the mouse, one now human." >}}
+{{< selfcheck question="How are humanized monoclonal antibodies produced?" hint="Read the first paragraph of Clinical Uses of Monoclonal Antibodies." >}}
 The antibody is genetically engineered in the mouse B cell: the variable regions of the mouse light and heavy chain genes are ligated to human constant regions, and the chimeric gene is then transferred into a host cell. This allows production of a mAb that is mostly "human" with only the antigen-binding site being of mouse origin.
 ===CHECKS===
 the antibody is genetically engineered in the mouse B cell
@@ -149,7 +149,7 @@ the chimeric gene is transferred into a host cell
 the resulting mAb is mostly human, with only the antigen-binding site of mouse origin
 {{< /selfcheck >}}
 
-{{< selfcheck question="What does the \"monoclonal\" of monoclonal antibodies mean?" hint="Contrast this with what the comparison table says polyclonal antibodies recognize." >}}
+{{< selfcheck question="What does the \"monoclonal\" of monoclonal antibodies mean?" hint="Read the first paragraph of Producing Monoclonal Antibodies and the comparison table after the production figure." >}}
 All of the antibodies in a monoclonal preparation bind with high affinity to a single epitope. Unlike polyclonal antibodies, which recognize multiple epitopes on an antigen, monoclonal antibodies recognize a single epitope on an antigen.
 ===CHECKS===
 all of the antibodies in a monoclonal preparation bind to a single epitope
@@ -221,8 +221,8 @@ They are produced by a mouse's immune system as a natural response to an infecti
 {{< textin
   question="If we used normal mouse mAbs to treat human disease, multiple doses would cause the patient to respond with ________ against the mouse antibodies."
   answer="neutralizing antibodies"
-  accept="neutralizing antibody|neutralising antibodies"
-  hint="The human immune system recognizes repeatedly injected mouse antibody as foreign and mounts its own antibody response against it."
+  accept="neutralizing antibody|neutralising antibodies|neutralising antibody"
+  hint="Read the first paragraph of Clinical Uses of Monoclonal Antibodies, on why mouse antibodies cannot be injected repeatedly."
 >}}
 
 {{< sortbins question="Sort each characteristic under the type of antibody preparation it describes." hint="Check each phrase against the Characteristics of Polyclonal and Monoclonal Antibodies table in Producing Monoclonal Antibodies." >}}
@@ -232,21 +232,21 @@ They are produced by a mouse's immune system as a natural response to an infecti
   {"label": "Inexpensive production", "bin": 1},
   {"label": "Long production time", "bin": 0},
   {"label": "Rapid production", "bin": 1},
-  {"label": "Large quantities of a single, specific antibody", "bin": 0},
-  {"label": "Large quantities of many nonspecific antibody types", "bin": 1},
+  {"label": "Large quantities of specific antibody", "bin": 0},
+  {"label": "Large quantities of nonspecific antibody", "bin": 1},
   {"label": "Recognize a single epitope on an antigen", "bin": 0},
   {"label": "Recognize multiple epitopes on an antigen", "bin": 1},
   {"label": "Production is continuous and uniform once the hybridoma is made", "bin": 0},
   {"label": "Different batches vary in composition", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="Suppose you were screening produce in a grocery store for the presence of E. coli contamination. Would it be better to use a polyclonal anti-E. coli antiserum or a mAb against an E. coli membrane protein? Explain." hint="Weigh the cost and production time of a mAb against how a polyclonal test's false positives are normally handled." >}}
-For screening produce for *E. coli* contamination, a polyclonal anti-*E. coli* antiserum would be the more practical choice. Antibody-based tests using polyclonal antisera are typically used only for screening, whereas monoclonal antibody production is a very expensive and time-consuming process that can take weeks of culturing and many liters of media. This makes monoclonal antibody production impractical for routine, large-scale screening. The tradeoff is that a polyclonal antiserum cross-reacts more easily with inappropriate antigens, so a positive screening result would need a confirmatory test, exactly as this section describes for other antibody-based screening tests.
+{{< selfcheck question="Suppose you were screening produce in a grocery store for the presence of *E. coli* contamination. Would it be better to use a polyclonal anti-*E. coli* antiserum or a mAb against an *E. coli* membrane protein? Explain." hint="Read the last paragraph of Clinical Uses of Polyclonal Antisera, then the second paragraph of Producing Monoclonal Antibodies." >}}
+This section supports the polyclonal anti-*E. coli* antiserum for this screening. Polyclonal antisera can detect the presence of bacteria in clinical and food industry settings, and antibody-based tests are often used only as screening tests; if the results are positive, other confirmatory tests are used to make sure that the results were not a false positive. Monoclonal antibody production, by contrast, is a very expensive and time-consuming process: it may take weeks of culturing and many liters of media to provide enough mAbs for an experiment.
 ===CHECKS===
-polyclonal antisera are typically used only for screening tests
-monoclonal antibody production is expensive and time-consuming, taking weeks of culturing and many liters of media
-this makes monoclonal antibody production impractical for routine, large-scale screening
-a polyclonal antiserum's positive result would need a confirmatory test, since polyclonal tests cross-react more easily
+polyclonal antisera can detect the presence of bacteria in clinical and food industry settings
+antibody-based tests are often used only as screening tests
+if the results are positive, other confirmatory tests are used to make sure that the results were not a false positive
+monoclonal antibody production is a very expensive and time-consuming process
 {{< /selfcheck >}}
 
 ### Explain the nature of antibody cross-reactivity and why this is less of a problem with monoclonal antibodies
@@ -268,15 +268,15 @@ reactivity
   hint="Read the first paragraph of Producing Polyclonal Antibodies, on why an antigen yields multiple antibodies."
 >}}
 
-{{< selfcheck question="Describe two reasons why polyclonal antibodies are more likely to exhibit cross-reactivity than monoclonal antibodies." hint="One reason is about how MANY different antibodies a polyclonal response makes; the other is about their average affinity." >}}
-Polyclonal antisera contain antibodies from multiple clones of B cells, with each B cell responding to a specific epitope on the antigen, so a polyclonal response includes many different antibodies against many different epitopes — any one of which could cross-react with a similar epitope on another antigen. In addition, cross-reactivity is more likely to occur between antibodies and antigens that have low affinity or avidity, and a polyclonal antiserum's mixture of antibodies is more likely to include such lower-affinity antibodies than a single monoclonal antibody selected and produced for high affinity to one target.
+{{< selfcheck question="Describe two reasons why polyclonal antibodies are more likely to exhibit cross-reactivity than monoclonal antibodies." hint="Read the opening discussion's paragraphs on cross-reactivity, the last paragraph of Clinical Uses of Polyclonal Antisera, and the first paragraph of Producing Monoclonal Antibodies." >}}
+First, with the many specificities of antibody present in a polyclonal antiserum, there is a significant likelihood that the antiserum will cross-react with antigens to which the individual was never exposed: a single protein with multiple epitopes may stimulate the production of many different antibodies, some of which may bind to chemically identical epitopes on other proteins. Second, cross-reactivity is more likely to occur between antibodies and antigens that have low affinity or avidity, whereas monoclonal antibodies bind to a single epitope and usually have high affinity.
 ===CHECKS===
-a polyclonal response contains antibodies from multiple B-cell clones, each responding to a different epitope
-any one of these many antibodies could cross-react with a similar epitope on another antigen
-cross-reactivity is more likely between antibodies and antigens with low affinity or avidity
-a polyclonal mixture is more likely to include such lower-affinity antibodies than a single monoclonal antibody
+with the many specificities of antibody present in a polyclonal antiserum, there is a significant likelihood that the antiserum will cross-react
+many different antibodies, some of which may bind to chemically identical epitopes on other proteins
+cross-reactivity is more likely to occur between antibodies and antigens that have low affinity or avidity
+monoclonal antibodies bind to a single epitope and usually have high affinity
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 20.1: Polyclonal and Monoclonal Antibody Production](https://openstax.org/books/microbiology/pages/20-1-polyclonal-and-monoclonal-antibody-production) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection, all three `kind="diagram"` (each is a labeled schematic or a multi-step process diagram, not a photograph), overriding the media manifest's JPEG-based photo guess; the Epitope figure carries `eager="true"` as the page's first figure; a `longdesc` walk-through was added to the polyclonal- and monoclonal-production figures because their multi-step content is not fully carried by the caption or a 600-character alt; the module's one table (Characteristics of Polyclonal and Monoclonal Antibodies) is transcribed as a Markdown table in the body, and, because it is a genuine two-way comparison serving Objective 1's own contrast, also becomes a `sortbins` in that objective's Practice group with the column headers as bins and all ten cells as items; all three of the module's footnotes (Saylor et al., Nakanishi et al., Qiu et al.) are rendered as inline parenthetical citations placed after the sentence they support, with authors, title, journal, and year kept verbatim (none carries a bare access URL or a DOI); the module's two Multiple Choice and four Fill in the Blank items are rendered exactly as keyed, in source order and source option order, as `multiplechoice` and `textin`; the module's one unkeyed Short Answer and one unkeyed Critical Thinking question are rendered as `selfcheck`s in Practice, since no single module sentence fixes either — the source prints no answer key for them, and their model answers are assembled from this module's own sentences and stop where the module stops; of the module's seven body Check Your Understanding bullets across three boxes, two are graded from a single module sentence — "What property makes antibodies useful for research and clinical diagnosis?" (`textin`, keyed "specificity" from "The high specificity of antibodies makes them an excellent tool for detecting and quantifying...") and "If a patient tests negative on a highly sensitive test, what is the likelihood that the person is infected with the pathogen?" (`textin`, keyed "low" from "If a test has high sensitivity, the probability of a false negative is low") — and the remaining five stay body self-checks, since their honest answers span more than one sentence or a paragraph boundary, with model answers assembled from this section's own text; no source exercise, table, or Check Your Understanding bullet is omitted; key terms are compiled from the module's 14 `<term>` elements and the book's Glossary appendix, giving 14 distinct bullets — 13 with a Glossary entry and 1 sentence-derived ("polyclonal antibody," which has no appendix entry of its own sense; the nearest headwords, "antibody" and "tumor-inducing (Ti) plasmid," are wrong-sense); two one-word or one-character source defects are corrected in place with no inline note — "hepatitic C virus" to "hepatitis C virus" in the Clinical Uses of Polyclonal Antisera section, and a trailing comma corrected to a period at the end of the fourth Fill in the Blank's stem; the Clinical Focus case (a hospital employee tampering with syringes) opens in this section as Part 1; its closing "jump to the next Clinical Focus box" is replaced by a link to where the case continues, [EIAs and ELISAs](/life-health-sciences/microbiology/20-laboratory-analysis-of-the-immune-response/04-eias-and-elisas/); the closing questions inside the Clinical Focus box stay as unanswered bulleted prose, as printed.</small>
+<small>This section is adapted from [Microbiology, Section 20.1: Polyclonal and Monoclonal Antibody Production](https://openstax.org/books/microbiology/pages/20-1-polyclonal-and-monoclonal-antibody-production) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection, all three `kind="diagram"` (each is a labeled schematic or a multi-step process diagram, not a photograph), overriding the media manifest's JPEG-based photo guess; the Epitope figure carries `eager="true"` as the page's first figure; a `longdesc` walk-through was added to the polyclonal- and monoclonal-production figures because their multi-step content is not fully carried by the caption or a 600-character alt; the module's one table (Characteristics of Polyclonal and Monoclonal Antibodies) is transcribed as a Markdown table in the body, and, because it is a genuine two-way comparison serving Objective 1's own contrast, also becomes a `sortbins` in that objective's Practice group with the column headers as bins and all ten cells as items, two of them ("Large quantities of specific antibodies" and "Large quantities of nonspecific antibodies") set in the singular "antibody" so that no item prints the bins' word "antibodies"; all three of the module's footnotes (Saylor et al., Nakanishi et al., Qiu et al.) are rendered as inline parenthetical citations placed after the sentence they support, with authors, title, journal, and year kept verbatim (none carries a bare access URL or a DOI); the module's two Multiple Choice and four Fill in the Blank items are rendered exactly as keyed, in source option order, as `multiplechoice` and `textin`, each under the objective it tests — which places the source's second Multiple Choice ("How are monoclonal antibodies produced?") before its first ("…they lack sufficient ________…"), the Fill in the Blank items keeping their source order; the module's one unkeyed Short Answer and one unkeyed Critical Thinking question are rendered as `selfcheck`s in Practice — the Critical Thinking question under the first objective, ahead of the Short Answer under the second — since no single module sentence fixes either — the source prints no answer key for them, and their model answers are assembled from this module's own sentences and stop where the module stops; of the module's seven body Check Your Understanding bullets across three boxes, two are graded from a single module sentence — "What property makes antibodies useful for research and clinical diagnosis?" (`textin`, keyed "specificity" from "The high specificity of antibodies makes them an excellent tool for detecting and quantifying...") and "If a patient tests negative on a highly sensitive test, what is the likelihood that the person is infected with the pathogen?" (`textin`, keyed "low" from "If a test has high sensitivity, the probability of a false negative is low") — and the remaining five stay body self-checks, since their honest answers span more than one sentence or a paragraph boundary, with model answers assembled from this section's own text; no source exercise, table, or Check Your Understanding bullet is omitted; key terms are compiled from the module's 14 `<term>` elements and the book's Glossary appendix, giving 14 distinct bullets — 13 with a Glossary entry and 1 sentence-derived ("polyclonal antibody," which has no appendix entry of its own sense; the nearest headwords, "antibody" and "tumor-inducing (Ti) plasmid," are wrong-sense); two one-word or one-character source defects are corrected in place with no inline note — "hepatitic C virus" to "hepatitis C virus" in the Clinical Uses of Polyclonal Antisera section, and a trailing comma corrected to a period at the end of the fourth Fill in the Blank's stem; the Clinical Focus case (a hospital employee tampering with syringes) opens in this section as Part 1; its closing "jump to the next Clinical Focus box" is replaced by a link to where the case continues, [EIAs and ELISAs](/life-health-sciences/microbiology/20-laboratory-analysis-of-the-immune-response/04-eias-and-elisas/); the closing questions inside the Clinical Focus box stay as unanswered bulleted prose, as printed.</small>

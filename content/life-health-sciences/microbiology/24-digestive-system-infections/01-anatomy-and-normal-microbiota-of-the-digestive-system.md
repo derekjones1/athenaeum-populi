@@ -56,7 +56,7 @@ Microbes such as bacteria and archaea are abundant in the mouth and coat all of 
 
 **Check Your Understanding**
 
-{{< selfcheck question="What factors make the mouth inhospitable for certain microbes?" hint="The module names a mechanical factor, an enzyme, and a set of immune components — gather all three." >}}
+{{< selfcheck question="What factors make the mouth inhospitable for certain microbes?" hint="Read the last paragraph of the oral-cavity subsection." >}}
 Chewing allows microbes to mix better with saliva so they can be swallowed or spit out more easily. Saliva also contains the enzyme lysozyme, which can damage microbial cells by cleaving the β-(1,4) glycosidic linkages in bacterial peptidoglycan. Fluids containing immunoglobulins and phagocytic cells are also produced in the gingival spaces.
 ===CHECKS===
 chewing mixes microbes into saliva so they are swallowed or spit out more easily
@@ -74,7 +74,7 @@ As food leaves the oral cavity, it travels through the pharynx, or the back of t
 
 Digested food leaves the small intestine and moves into the large intestine, or colon, where there is a more diverse microbiota. Near this junction, there is a small pouch in the large intestine called the cecum, which attaches to the appendix. Further digestion occurs throughout the colon and water is reabsorbed, then waste is excreted through the rectum, the last section of the colon, and out of the body through the anus.
 
-The environment of most of the GI tract is harsh, which serves two purposes: digestion and immunity. The stomach is an extremely acidic environment (pH 1.5–3.5) due to the gastric juices that break down food and kill many ingested microbes; this helps prevent infection from pathogens. The environment in the small intestine is less harsh and is able to support microbial communities. Microorganisms present in the small intestine can include lactobacilli, diptherioids and the fungus *Candida*. On the other hand, the large intestine (colon) contains a diverse and abundant microbiota that is important for normal function. These microbes include *Bacteriodetes* (especially the genera *Bacteroides* and *Prevotella*) and *Firmicutes* (especially members of the genus *Clostridium*). Methanogenic archaea and some fungi are also present, among many other species of bacteria. These microbes all aid in digestion and contribute to the production of feces, the waste excreted from the digestive tract, and flatus, the gas produced from microbial fermentation of undigested food. They can also produce valuable nutrients. For example, lactic acid bacteria such as bifidobacteria can synthesize vitamins, such as vitamin B12, folate, and riboflavin, that humans cannot synthesize themselves. *E. coli* found in the intestine can also break down food and help the body produce vitamin K, which is important for blood coagulation.
+The environment of most of the GI tract is harsh, which serves two purposes: digestion and immunity. The stomach is an extremely acidic environment (pH 1.5–3.5) due to the gastric juices that break down food and kill many ingested microbes; this helps prevent infection from pathogens. The environment in the small intestine is less harsh and is able to support microbial communities. Microorganisms present in the small intestine can include lactobacilli, diphtheroids and the fungus *Candida*. On the other hand, the large intestine (colon) contains a diverse and abundant microbiota that is important for normal function. These microbes include *Bacteroidetes* (especially the genera *Bacteroides* and *Prevotella*) and *Firmicutes* (especially members of the genus *Clostridium*). Methanogenic archaea and some fungi are also present, among many other species of bacteria. These microbes all aid in digestion and contribute to the production of feces, the waste excreted from the digestive tract, and flatus, the gas produced from microbial fermentation of undigested food. They can also produce valuable nutrients. For example, lactic acid bacteria such as bifidobacteria can synthesize vitamins, such as vitamin B12, folate, and riboflavin, that humans cannot synthesize themselves. *E. coli* found in the intestine can also break down food and help the body produce vitamin K, which is important for blood coagulation.
 
 The GI tract has several other methods of reducing the risk of infection by pathogens. Small aggregates of underlying lymphoid tissue in the ileum, called **Peyer's patches**, detect pathogens in the intestines via microfold (M) cells, which transfer antigens from the lumen of the intestine to the lymphocytes on Peyer's patches to induce an immune response. The Peyer's patches then secrete IgA and other pathogen-specific antibodies into the intestinal lumen to help keep intestinal microbes at safe levels. Goblet cells, which are modified simple columnar epithelial cells, also line the GI tract. Goblet cells secrete a gel-forming mucin, which is the major component of mucus. The production of a protective layer of mucus helps reduce the risk of pathogens reaching deeper tissues.
 
@@ -87,11 +87,11 @@ A magnified image of intestinal villi in the GI tract shows goblet cells. These 
 **Check Your Understanding**
 
 {{< selfcheck question="Compare and contrast the microbiota of the small and large intestines." hint="Read the paragraph on the harsh environment of the GI tract, from the stomach onward." >}}
-The small intestine's environment is less harsh than the stomach's and supports microbial communities that can include lactobacilli, diptherioids, and the fungus *Candida*. The large intestine (colon), by contrast, contains a more diverse and abundant microbiota, including *Bacteriodetes* (especially the genera *Bacteroides* and *Prevotella*) and *Firmicutes* (especially the genus *Clostridium*), along with methanogenic archaea and other fungi and bacteria.
+The small intestine's environment is less harsh than the stomach's and supports microbial communities that can include lactobacilli, diphtheroids, and the fungus *Candida*. The large intestine (colon), by contrast, contains a more diverse and abundant microbiota, including *Bacteroidetes* (especially the genera *Bacteroides* and *Prevotella*) and *Firmicutes* (especially the genus *Clostridium*), along with methanogenic archaea and other fungi and bacteria.
 ===CHECKS===
-the small intestine's microbiota can include lactobacilli, diptherioids, and the fungus Candida
+the small intestine's microbiota can include lactobacilli, diphtheroids, and the fungus Candida
 the large intestine's microbiota is more diverse and abundant
-the large intestine's microbiota includes Bacteriodetes and Firmicutes
+the large intestine's microbiota includes Bacteroidetes and Firmicutes
 the large intestine also hosts methanogenic archaea and other fungi and bacteria
 {{< /selfcheck >}}
 
@@ -105,7 +105,7 @@ Infections and intoxications of the lower GI tract often produce symptoms such a
 
 **Check Your Understanding**
 
-{{< selfcheck question="List possible causes and signs and symptoms of food poisoning." hint="The module gives oral causes, GI causes, and the general symptom list separately — gather all three." >}}
+{{< selfcheck question="List possible causes and signs and symptoms of food poisoning." hint="Read the first three paragraphs of the General Signs and Symptoms subsection." >}}
 Food poisoning is a catch-all term for GI infections and intoxications, though not all GI disease originates with foodborne pathogens or toxins. In the mouth, fermentation by anaerobic microbes produces acids that can lead to tooth decay, cavities, and periodontal disease, along with sores and other lesions. Infections and intoxications of the lower GI tract often produce symptoms such as nausea, vomiting, diarrhea, aches, and fever, and in some cases severe dehydration.
 ===CHECKS===
 food poisoning is a catch-all term for GI infections and intoxications, not always foodborne
@@ -141,7 +141,7 @@ in some cases, lower GI infections and intoxications can produce severe dehydrat
 {{< multiplechoice
   question="Which layer of a tooth is the hardest material in the body?"
   answer="Enamel"
-  hint="It covers the crown and has to withstand the force of biting and chewing."
+  hint="Read the paragraph on the structure of a tooth."
 >}}
 Enamel
 Dentin
@@ -152,18 +152,18 @@ Pulp
 {{< textin
   question="The material that works with the periodontal ligament to anchor a tooth in place in the jaw bone is called ________."
   answer="cementum"
-  hint="It covers the root and some of the crown, beneath the gum line."
+  hint="Read the end of the paragraph on the structure of a tooth."
 >}}
 
 {{< multiplechoice
   question="Which structure carries food from the pharynx to the stomach without adding any digestive enzymes?"
   answer="The esophagus"
-  hint="It's the tube food travels down; the digestive enzymes are added before and after this structure, not during the trip."
+  hint="Read the first sentence of the subsection on the anatomy of the GI tract."
 >}}
 The esophagus
 The duodenum
 The pyloric sphincter
-The trachea
+The larynx
 {{< /multiplechoice >}}
 
 ### Describe the normal microbiota of various regions in the human digestive system
@@ -183,13 +183,13 @@ Archaea and fungi only
   question="The part of the gastrointestinal tract with the largest natural microbiota is the ________."
   answer="large intestine"
   accept="colon"
-  hint="It's the section of the GI tract that comes after the small intestine, where digested food is further processed before waste leaves the body."
+  hint="Read the paragraph that follows the villi figure."
 >}}
 
 {{< textin
-  question="The genus name of the fungus found among the small intestine's normal microorganisms, alongside lactobacilli and diptherioids, is ________."
+  question="The genus name of the fungus found among the small intestine's normal microorganisms, alongside lactobacilli and diphtheroids, is ________."
   answer="Candida"
-  hint="This fungal genus is more familiar for infections it causes elsewhere in the body, but here it is simply part of the normal microbiota."
+  hint="Read the sentence on the small intestine's microorganisms in the paragraph on the harsh environment of the GI tract."
 >}}
 
 ### Explain how microorganisms overcome the defenses of the digestive tract to cause infection or intoxication
@@ -213,7 +213,7 @@ It generates large quantities of oxygen that kill anaerobic pathogens.
 {{< textin
   question="Protein toxins secreted by some members of the microbiota that bind to specific receptors on the surface of susceptible bacteria are called ________."
   answer="bacteriocins"
-  hint="They are toxins, not antibodies, and they act on other bacteria directly by binding surface receptors."
+  hint="Read the last sentence of the paragraph that begins with the constant movement of materials through the gastrointestinal tract."
 >}}
 
 ### Describe general signs and symptoms associated with infections of the digestive system
@@ -232,19 +232,19 @@ Nausea, aches, and fever accompany the diarrhea, but the stool's water content i
 {{< textin
   question="A condition characterized by chronic inflammation and erosion of the gums is called ________."
   answer="periodontal disease"
-  hint="It follows tooth decay and cavities caused by fermentation acids in the mouth."
+  hint="Read the paragraph on disease in the mouth, under General Signs and Symptoms of Oral and GI Disease."
 >}}
 
 {{< textin
   question="An open sore in the mouth or GI tract is typically called an ________."
   answer="ulcer"
-  hint="It's the general term for a sore, whether it appears in the mouth or elsewhere in the GI tract."
+  hint="Read the last sentence of the paragraph on disease in the mouth."
 >}}
 
 {{< textin
   question="Inflammation of the liver is called ________."
   answer="hepatitis"
-  hint="You may recognize this term from viral infections that specifically target the liver."
+  hint="Read the paragraph on clinical terms for gastrointestinal symptoms."
 >}}
 
-<small>This section is adapted from [Microbiology, Section 24.1: Anatomy and Normal Microbiota of the Digestive System](https://openstax.org/books/microbiology/pages/24-1-anatomy-and-normal-microbiota-of-the-digestive-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all five figures re-encoded as WebP and rendered as mediafigures, `kind="diagram"` for the four labeled line-art figures (GITract, OralCavity, Tooth, Villi) and `kind="photo"` for the goblet-cell micrograph, after each image was inspected; GITract carries `eager="true"` as the page's first figure; the GITract, OralCavity, Tooth, and Villi alts are rewritten as plain descriptions from the images (the source alts ran 552–1,224 characters and read as full label transcripts rather than accessible descriptions), with the full label walk-through moved into a `longdesc` for each; the GobletCell alt is likewise rewritten from the image; the Clinical Focus box's "Jump to the next Clinical Focus box" link is replaced with a plain sentence naming that the case continues in Section 24.3 (authored this run); the two internal cross-references to figures already shown in the body (the GI-tract diagram, referenced a second time at the anus mention; the villi diagram, referenced a second time at the Peyer's-patches mention) are dropped rather than repeated, since Hugo does not number figures and the sentences read cleanly without them; the cross-reference to Chemical Defenses (m58878) is rendered as a link to Section 17.2; the two source Multiple Choice items and the one Fill in the Blank item are adapted into Practice unchanged with their source keys (the Fill in the Blank's four-word key "Large intestine or colon" becomes a `textin` keyed "large intestine" with "colon" in `accept`, per this book's rule for a key printed as the module's own "A or B" synonym pair); the section's one unkeyed Short Answer question ("How does the diarrhea caused by dysentery differ from other types of diarrhea?") is graded as a `multiplechoice`, since one sentence of the module fixes the whole answer, keyed to that sentence with distractors drawn from the module's own sibling symptom sentences; none of the section's three body Check Your Understanding bullets is fixed by a single module sentence, so all three remain self-checks with model answers assembled from this module's own text; seven `textin` items fill out the four objective groups: three from `## Key terms` (periodontal disease, ulcer, hepatitis) and four built from the module's own body sentences for terms the source never bolds (cementum, *Candida*, competitive exclusion, bacteriocins); objective group 1 ("Describe the major anatomical features…") has no source exercise of its own, so it is filled with two author-built `multiplechoice` fillers, each keyed to one module sentence ("Which layer of a tooth is the hardest material in the body?", keyed Enamel, from "The crown is covered with enamel, which is the hardest material in the body"; "Which structure carries food from the pharynx to the stomach without adding any digestive enzymes?", keyed The esophagus, from the esophagus sentence); the source Multiple Choice "Which of the following is NOT a way the normal microbiota of the intestine helps to prevent infection?" is triple-keyed at the source — the module credits the intestinal microbiota only with competitive exclusion and bacteriocins, and attributes stomach acid to the stomach and the flushing of transient pathogens to "the constant movement of materials through the gastrointestinal tract", so the source options "It produces acids that lower the pH of the stomach." and "It speeds up the process by which microbes are flushed from the digestive tract." are as much NOT a way as the keyed option — so the first is replaced with the module's bacteriocin sentence ("It secretes protein toxins that bind to specific receptors on the surface of susceptible bacteria.", worded without the term, which a textin below keys) and the second is dropped, because the module prints no other microbiota defense to put in its place; the item runs with three options and its source key; key terms compiled from the module's nine `<term>` elements (no repeats), all with a Glossary appendix entry; no source exercise, table, or Check Your Understanding bullet is omitted. The villi figure's longdesc calls the two structures at the base of the cutaway unlabeled rings, because the source alt's "duodenal glands" names a label the vendored drawing does not print.</small>
+<small>This section is adapted from [Microbiology, Section 24.1: Anatomy and Normal Microbiota of the Digestive System](https://openstax.org/books/microbiology/pages/24-1-anatomy-and-normal-microbiota-of-the-digestive-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all five figures re-encoded as WebP and rendered as mediafigures, `kind="diagram"` for the four labeled line-art figures (GITract, OralCavity, Tooth, Villi) and `kind="photo"` for the goblet-cell micrograph, after each image was inspected; GITract carries `eager="true"` as the page's first figure; the GITract, OralCavity, Tooth, and Villi alts are rewritten as plain descriptions from the images (the source alts ran 552–1,224 characters and read as full label transcripts rather than accessible descriptions), with the full label walk-through moved into a `longdesc` for each; the GobletCell alt is likewise rewritten from the image; the Clinical Focus box's "Jump to the next Clinical Focus box" link is replaced with a plain sentence naming that the case continues in Section 24.3; the two internal cross-references to figures already shown in the body (the GI-tract diagram, referenced a second time at the anus mention; the villi diagram, referenced a second time at the Peyer's-patches mention) are dropped rather than repeated, since Hugo does not number figures and the sentences read cleanly without them; the cross-reference to Chemical Defenses (m58878) is rendered as a link to Section 17.2; the two source Multiple Choice items and the one Fill in the Blank item are adapted into Practice with their source keys (the Fill in the Blank's four-word key "Large intestine or colon" becomes a `textin` keyed "large intestine" with "colon" in `accept`, per this book's rule for a key printed as the module's own "A or B" synonym pair); the section's one unkeyed Short Answer question ("How does the diarrhea caused by dysentery differ from other types of diarrhea?") is graded as a `multiplechoice`, since one sentence of the module fixes the whole answer, keyed to that sentence with distractors drawn from the module's own sibling symptom sentences; none of the section's three body Check Your Understanding bullets is fixed by a single module sentence, so all three remain self-checks with model answers assembled from this module's own text; seven `textin` items fill out the four objective groups: three from `## Key terms` (periodontal disease, ulcer, hepatitis) and four built from the module's own body sentences for terms the source never bolds (cementum, *Candida*, competitive exclusion, bacteriocins); objective group 1 ("Describe the major anatomical features…") has no source exercise of its own, so it is filled with two author-built `multiplechoice` fillers, each keyed to one module sentence ("Which layer of a tooth is the hardest material in the body?", keyed Enamel, from "The crown is covered with enamel, which is the hardest material in the body"; "Which structure carries food from the pharynx to the stomach without adding any digestive enzymes?", keyed The esophagus, from the esophagus sentence); the source Multiple Choice "Which of the following is NOT a way the normal microbiota of the intestine helps to prevent infection?" is triple-keyed at the source — the module credits the intestinal microbiota only with competitive exclusion and bacteriocins, and attributes stomach acid to the stomach and the flushing of transient pathogens to "the constant movement of materials through the gastrointestinal tract", so the source options "It produces acids that lower the pH of the stomach." and "It speeds up the process by which microbes are flushed from the digestive tract." are as much NOT a way as the keyed option — so the first is replaced with the module's bacteriocin sentence ("It secretes protein toxins that bind to specific receptors on the surface of susceptible bacteria.", worded without the term, which a textin below keys) and the second is dropped, because the module prints no other microbiota defense to put in its place; the item runs with three options and its source key; key terms compiled from the module's nine `<term>` elements (no repeats), all with a Glossary appendix entry; no source exercise, table, or Check Your Understanding bullet is omitted. The villi figure's longdesc calls the two structures at the base of the cutaway unlabeled rings, because the source alt's "duodenal glands" names a label the vendored drawing does not print. Two source misspellings are corrected wherever they appear on the page: "diptherioids" is printed "diphtheroids" and "*Bacteriodetes*" is printed "*Bacteroidetes*".</small>

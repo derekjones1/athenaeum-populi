@@ -90,12 +90,12 @@ Though not as virulent as *S. aureus*, the staphylococcus *S. epidermidis* can c
 
 **Check Your Understanding**
 
-{{< selfcheck question="Why are *Staphylococcus aureus* infections often purulent?" hint="Think about the specific virulence factor named earlier in this section that targets white blood cells." >}}
+{{< selfcheck question="Why are *Staphylococcus aureus* infections often purulent?" hint="Read the first paragraph of Superficial Staphylococcal Infections." >}}
 *S. aureus* is often associated with pyoderma, purulent skin infections. Pus formation occurs because many strains of *S. aureus* produce leukocidins, which kill white blood cells. These purulent infections may initially manifest as folliculitis but can progress to furuncles or deeper abscesses called carbuncles.
 ===CHECKS===
 S. aureus is often associated with pyoderma, purulent skin infections
 many strains of S. aureus produce leukocidins, which kill white blood cells
-these purulent infections may progress from folliculitis to furuncles or carbuncles
+these purulent infections may initially manifest as folliculitis but can progress to furuncles or deeper abscesses called carbuncles
 {{< /selfcheck >}}
 
 ## Streptococcal Infections of the Skin
@@ -134,12 +134,13 @@ Necrotizing fasciitis does not always originate from a skin infection; in some c
 
 **Check Your Understanding**
 
-{{< selfcheck question="How do staphylococcal infections differ in general presentation from streptococcal infections?" hint="Contrast the purulent, pus-forming pattern of one genus with the warm, inflamed-patch pattern of the other, and note which one can spread rapidly through tissue." >}}
-Staphylococcal infections such as folliculitis, furuncles, and carbuncles are typically purulent, producing pus-filled lesions, and *S. aureus* can also cause staphylococcal scalded skin syndrome, which produces widespread skin peeling. Streptococcal infections such as cellulitis and erysipelas instead present as warm, painful, inflamed patches of the dermis and hypodermis, and *S. pyogenes* is also one of several possible causes of the rare but severe necrotizing fasciitis, in which tissue death can spread very rapidly.
+{{< selfcheck question="How do staphylococcal infections differ in general presentation from streptococcal infections?" hint="Compare the subsections of Staphylococcal Infections of the Skin with those of Streptococcal Infections of the Skin." >}}
+Staphylococcal infections such as folliculitis, furuncles, and carbuncles are typically purulent, producing pus-filled lesions, and *S. aureus* can also cause staphylococcal scalded skin syndrome, which produces severe peeling of the skin. Streptococcal infections instead include cellulitis, which presents as a reddened area of the skin that is warm to the touch and painful, and erysipelas, which presents as a large, intensely inflamed patch of skin involving the dermis. *S. pyogenes* is also one of several possible causes of the rare but severe necrotizing fasciitis, in which tissue death can spread very rapidly.
 ===CHECKS===
 staphylococcal infections such as folliculitis, furuncles, and carbuncles are typically purulent
-S. aureus can also cause staphylococcal scalded skin syndrome, with widespread skin peeling
-streptococcal infections such as cellulitis and erysipelas present as warm, painful, inflamed patches of the dermis and hypodermis
+S. aureus can also cause staphylococcal scalded skin syndrome, which produces severe peeling of the skin
+cellulitis, which presents as a reddened area of the skin that is warm to the touch and painful
+erysipelas, which presents as a large, intensely inflamed patch of skin involving the dermis
 S. pyogenes is one of several possible causes of the rare but severe necrotizing fasciitis, in which tissue death can spread very rapidly
 {{< /selfcheck >}}
 
@@ -172,7 +173,7 @@ Wounds infected with *P. aeruginosa* have a distinctive odor resembling grape so
 
 **Check Your Understanding**
 
-{{< selfcheck question="Name at least two types of skin infections commonly caused by *Pseudomonas* spp." hint="One is linked to pools and hot tubs; another is an ear infection." >}}
+{{< selfcheck question="Name at least two types of skin infections commonly caused by *Pseudomonas* spp." hint="Read the first paragraph of Pseudomonas Infections of the Skin." >}}
 *Pseudomonas aeruginosa* commonly causes hot tub rash, a folliculitis that frequently afflicts users of pools and hot tubs, and otitis externa (swimmer's ear), an infection of the ear canal. It is also a common cause of opportunistic wound and burn infections.
 ===CHECKS===
 hot tub rash, a folliculitis affecting users of pools and hot tubs
@@ -196,7 +197,7 @@ Treatment of acne depends on the severity of the case. There are multiple ways t
 
 **Check Your Understanding**
 
-{{< selfcheck question="What is the role of *Cutibacterium acnes* in causing acne?" hint="Consider both what it feeds on and what it secretes." >}}
+{{< selfcheck question="What is the role of *Cutibacterium acnes* in causing acne?" hint="Read the paragraph after the acne figure." >}}
 Comedones caused by clogged hair follicles often become infected by *Cutibacterium acnes*, a bacterium that consumes components of sebum. *C. acnes* secretes enzymes that damage the hair follicle, causing inflammatory lesions that may include papules, pustules, nodules, or pseudocysts.
 ===CHECKS===
 comedones caused by clogged hair follicles often become infected by Cutibacterium acnes, which consumes components of sebum
@@ -284,7 +285,7 @@ A newborn suffering from gonoccocal opthalmia neonatorum. Left untreated, purule
 
 **Check Your Understanding**
 
-{{< selfcheck question="Compare and contrast bacterial conjunctivitis with neonatal conjunctivitis." hint="Contrast the general cause and course of ordinary pinkeye with how and when neonatal conjunctivitis is acquired and why it is treated so aggressively." >}}
+{{< selfcheck question="Compare and contrast bacterial conjunctivitis with neonatal conjunctivitis." hint="Read Bacterial Conjunctivitis and its Neonatal Conjunctivitis subsection." >}}
 Bacterial conjunctivitis is an inflammation of the conjunctiva most commonly caused by *Haemophilus influenzae*; it is very contagious but usually resolves on its own in a few days. Neonatal conjunctivitis, in contrast, is contracted by infants during passage through the birth canal, caused by *Neisseria gonorrhoeae* (gonococcal ophthalmia neonatorum) or *Chlamydia trachomatis* (inclusion conjunctivitis), and is treated aggressively with oral or intravenous antibiotics because, left untreated, it can spread to the cornea and cause permanent blindness.
 ===CHECKS===
 bacterial conjunctivitis is most commonly caused by Haemophilus influenzae and usually resolves on its own in a few days
@@ -295,7 +296,7 @@ it is treated aggressively because untreated it can spread to the cornea and cau
 
 ## Trachoma
 
-**trachoma**, or granular conjunctivitis, is a common cause of preventable blindness that is rare in the United States but widespread in developing countries, especially in Africa and Asia. The condition is caused by the same species that causes neonatal inclusion conjunctivitis in infants, *Chlamydia trachomatis*. *C. trachomatis* can be transmitted easily through fomites such as contaminated towels, bed linens, and clothing and also by direct contact with infected individuals. *C. trachomatis* can also be spread by flies that transfer infected mucous containing *C. trachomatis* from one human to another.
+**Trachoma**, or granular conjunctivitis, is a common cause of preventable blindness that is rare in the United States but widespread in developing countries, especially in Africa and Asia. The condition is caused by the same species that causes neonatal inclusion conjunctivitis in infants, *Chlamydia trachomatis*. *C. trachomatis* can be transmitted easily through fomites such as contaminated towels, bed linens, and clothing and also by direct contact with infected individuals. *C. trachomatis* can also be spread by flies that transfer infected mucous containing *C. trachomatis* from one human to another.
 
 Infection by *C. trachomatis* causes chronic conjunctivitis, which leads to the formation of necrotic follicles and scarring in the upper eyelid. The scars turn the eyelashes inward (a condition known as trichiasis) and mechanical abrasion of the cornea leads to blindness (shown below). Antibiotics such as azithromycin are effective in treating trachoma, and outcomes are good when the disease is treated promptly. In areas where this disease is common, large public health efforts are focused on reducing transmission by teaching people how to avoid the risks of the infection.
 
@@ -305,12 +306,13 @@ Infection by *C. trachomatis* causes chronic conjunctivitis, which leads to the 
 
 **Check Your Understanding**
 
-{{< selfcheck question="Why is trachoma rare in the United States?" hint="Think about what the SAFE initiative targets in the regions where trachoma is common." >}}
-Trachoma is a common cause of preventable blindness that is rare in the United States but widespread in developing countries, especially Africa and Asia, where communities often have limited access to clean water and sanitation. Public health efforts such as the SAFE initiative — Surgery, Antibiotics, Facial cleanliness, and Environmental improvement — reduce transmission by improving hygiene and sanitation and by reducing the fly populations that spread *Chlamydia trachomatis*.
+{{< selfcheck question="Why is trachoma rare in the United States?" hint="Read the first paragraph of this section and the Micro Connection box after this item." >}}
+Trachoma is rare in the United States but widespread in developing countries. The vast majority of those affected live in isolated rural or desert communities with limited access to clean water and sanitation, conditions that are conducive to the growth and spread of *Chlamydia trachomatis* via wastewater and eye-seeking flies. *C. trachomatis* can be transmitted easily through fomites such as contaminated towels, bed linens, and clothing, and by direct contact with infected individuals. Where the disease is common, public health efforts such as the SAFE initiative (Surgery, Antibiotics, Facial cleanliness, and Environmental improvement) reduce transmission; building household latrines reduces the open sewage that provides breeding grounds for the flies that spread trachoma.
 ===CHECKS===
-trachoma is widespread in developing countries with limited access to clean water and sanitation
-the SAFE initiative promotes surgery, antibiotics, facial cleanliness, and environmental improvement
-improved sanitation reduces the fly populations that spread Chlamydia trachomatis
+those affected live in isolated rural or desert communities with limited access to clean water and sanitation
+conditions that are conducive to the growth and spread of Chlamydia trachomatis via wastewater and eye-seeking flies
+C. trachomatis can be transmitted easily through fomites and by direct contact with infected individuals
+building household latrines reduces the open sewage that provides breeding grounds for the flies that spread trachoma
 {{< /selfcheck >}}
 
 {{< callout type="info" >}}
@@ -404,7 +406,7 @@ A number of bacteria are able to cause infection when introduced to the mucosa o
 {{< multiplechoice
   question="M protein is produced by"
   answer="Streptococcus pyogenes"
-  hint="This cell wall protein is one of the virulence factors discussed alongside streptolysins and hyaluronidase."
+  hint="Read the paragraph that introduces the Lancefield groups."
 >}}
 Pseudomonas aeruginosa
 Staphylococcus aureus
@@ -426,14 +428,14 @@ Bacillus anthracis
 {{< textin
   question="What is a good first test to distinguish streptococcal infections from staphylococcal infections?"
   answer="catalase test"
-  accept="catalase|catalase assay"
+  accept="catalase|catalase assay|catalase testing"
   hint="Read the paragraph on confirming a suspected staphylococcal skin infection, near the start of Staphylococcal Infections of the Skin."
 >}}
 
 {{< textin
   question="The blue pigment produced by some strains of Pseudomonas aeruginosa is called ________."
   answer="pyocyanin"
-  hint="Its partner pigment, pyoverdin, is yellow-green or yellow-brown instead."
+  hint="Read the Key terms entries for the pigments of Pseudomonas aeruginosa."
 >}}
 
 ### Compare the major characteristics of specific bacterial diseases affecting the skin and eyes
@@ -452,7 +454,7 @@ gram-negative
 {{< multiplechoice
   question="___________ is a major cause of preventable blindness that can be reduced through improved sanitation."
   answer="Trachoma"
-  hint="Read the first paragraph of the subsection that follows Bacterial Conjunctivitis."
+  hint="Read the section after Neonatal Conjunctivitis and the Micro Connection box that closes it."
 >}}
 Ophthalmia neonatorum
 Keratitis
@@ -466,6 +468,12 @@ Cutaneous anthrax
   hint="Read the first paragraph of Superficial Staphylococcal Infections."
 >}}
 
+{{< textin
+  question="A skin infection that presents as a large, intensely inflamed, red patch of skin involving the dermis, usually with clear borders, typically on the legs or face, is called ________."
+  answer="erysipelas"
+  hint="Read the first paragraph of the first subsection of Streptococcal Infections of the Skin."
+>}}
+
 {{< multiplechoice
   question="How are leukocidins associated with pus production?"
   answer="They kill white blood cells"
@@ -477,12 +485,6 @@ They inhibit phagocytosis by binding to antibodies
 They help the bacterium scavenge iron in low-iron environments
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A skin infection typically caused by Streptococcus pyogenes that presents as a large, intensely inflamed, red patch of skin with clear borders, usually on the legs or face, is called ________."
-  answer="erysipelas"
-  hint="This condition can become bullous when the infection is suppurative."
->}}
-
 ---
 
-<small>This section is adapted from [Microbiology, Section 21.2: Bacterial Infections of the Skin and Eyes](https://openstax.org/books/microbiology/pages/21-2-bacterial-infections-of-the-skin-and-eyes) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all 16 of the module's figures are re-encoded as WebP and rendered as mediafigures after image and PDF inspection; the two Disease Profile figures (`DPSkinInfe`, `EyeInfec`) are NOT vendored, per this book's rule for Disease Profile boxes, and are instead transcribed as Markdown tables from the images themselves, checked against the PDF — the eye-infections table's neonatal-conjunctivitis Transmission cell follows the pinned source text ("birth canal of a pregnant person"), where the printed table image reads "birth canal of mother"; `kind="photo"` is set explicitly on 13 figures and `kind="diagram"` on the acne and trichiasis figures (each carries at least one genuinely drawn panel — the acne figure's labeled pore cross-sections and the trichiasis figure's illustrated eye — overriding the media manifest's file-type guess), with a `longdesc` added to both because their drawn panels' progression and labels are not fully carried by the caption; the boil figure is set `kind="photo"` overriding the manifest's PNG-based "diagram" guess, since both of its panels are photographs. In the Disease Profile "Bacterial Infections of the Skin" table, the acne row's pathogen is corrected from "*Propionibacterium acnes*" (as printed in the source table image) to "*Cutibacterium acnes*," matching this section's own body prose, which uses the current name throughout — a visible Source note accompanies the correction. The subsection heading "Cellulitis, Erysipelas, and Erythema Nosodum" and the parallel Summary bullet are corrected to "Erythema Nodosum"/"erythema nodosum," a one-word source misspelling (the body prose itself spells the term correctly throughout), corrected in place with no inline note. The nosocomial-infections multiple choice's third distractor is corrected from "*Proproniobacterium acnes*" to "*Propionibacterium acnes*," a one-word source typo, corrected in place with no inline note. The Summary's "Community-acquired and hospital-acquired staphyloccocal infections" is corrected to "staphylococcal," another one-word source typo, corrected in place with no inline note. The key term "trachoma" and its one body bolded occurrence are set lower-case, including at its sentence-initial defining occurrence, to match its Glossary appendix headword. The module's 9 footnotes (2 in Streptococcal Infections, 7 in Anthrax) are rendered as inline parenthetical citations after the sentences they support, with author names, titles, and journals or publishers kept and their bare access URLs and "Accessed" dates dropped. Three cross-references to other chapters are rendered as absolute site-root Markdown links to their authored pages (toxic shock syndrome toxin-1 → [Virulence Factors of Bacterial and Viral Pathogens](/life-health-sciences/microbiology/15-microbial-mechanisms-of-pathogenicity/03-virulence-factors-of-bacterial-and-viral-pathogens/); the hot tub rash Clinical Focus recall → [Microbial Biochemistry](/life-health-sciences/microbiology/07-microbial-biochemistry/01-organic-molecules/)); the same-module Eye on Ethics cross-reference is rendered as a plain italicized description rather than a same-page link. The Clinical Focus chain's Part 2 and Resolution both land on this page at their source positions; Part 2 closes "The case began in [Anatomy and Normal Microbiota of the Skin and Eyes](/life-health-sciences/microbiology/21-skin-and-eye-infections/01-anatomy-and-normal-microbiota-of-the-skin-and-eyes/). The case continues in Resolution, below." and Resolution closes "The case began in [Anatomy and Normal Microbiota of the Skin and Eyes](/life-health-sciences/microbiology/21-skin-and-eye-infections/01-anatomy-and-normal-microbiota-of-the-skin-and-eyes/)," replacing the source's internal "jump to the next"/"go back to the previous" box links. All 8 of the section's body Check Your Understanding bullets are rendered as body items at their note's position; 2 are graded because one sentence of this module fixes the whole answer — the cutaneous anthrax "characteristic feature" bullet and the "why are contact lens wearers at greater risk for keratitis" bullet are each graded as a `multiplechoice` keyed to a single module sentence (the black-eschar sentence; the lens-adherence sentence), each keeping the CYU bullet's own question verbatim, with distractors built from the module's own other sentences (skin-lesion descriptions for the anthrax item; Pseudomonas siderophores, biofilm antibiotic resistance, and staphylococcal leukocidins for the keratitis item) — and the remaining 6 stay `selfcheck`s with model answers and rubrics built only from this section's own text. The module's 4 keyed Multiple Choice items and 1 keyed Fill in the Blank item are rendered as scored components in source order and source option order (subject to the one-word distractor correction above). Of the module's 2 unkeyed Short Answer questions, neither of which prints a source key, "How are leukocidins associated with pus production?" is graded as a `multiplechoice` keyed to the module's own leukocidin sentence, with distractors built from three of the module's other virulence-factor sentences (coagulase, Protein A, Pseudomonas siderophores), and "What is a good first test to distinguish streptococcal infections from staphylococcal infections?" is graded as a `textin` keyed "catalase test" (`accept="catalase"`) from the module's own catalase-test sentence; no source exercise is omitted. Two additional `textin` term-recall items (pyocyanin, erysipelas) are added from Key terms to bring both Practice groups above the section floor. Key terms are compiled from the module's 23 class-less defined-term elements (no repeats) and the book's Glossary appendix, giving 23 distinct bullets, all glossary-sourced (none sentence-derived). This module has no `<table>` element with a `summary` attribute (both Disease Profile tables are images, not CNXML tables), so no in-body Markdown table beyond the two Disease Profile transcriptions is built, and neither Disease Profile table becomes a `sortbins`, per this book's rule for a section-level recap table.</small>
+<small>This section is adapted from [Microbiology, Section 21.2: Bacterial Infections of the Skin and Eyes](https://openstax.org/books/microbiology/pages/21-2-bacterial-infections-of-the-skin-and-eyes) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: 14 of the module's 16 figures are re-encoded as WebP and rendered as mediafigures after image and PDF inspection; the other two, the Disease Profile figures (`DPSkinInfe`, `EyeInfec`) are NOT vendored, per this book's rule for Disease Profile boxes, and are instead transcribed as Markdown tables from the images themselves, checked against the PDF — the eye-infections table's neonatal-conjunctivitis Transmission cell follows the pinned source text ("birth canal of a pregnant person"), where the printed table image reads "birth canal of mother"; `kind="photo"` is set explicitly on 12 figures and `kind="diagram"` on the acne and trichiasis figures (each carries at least one genuinely drawn panel — the acne figure's labeled pore cross-sections and the trichiasis figure's illustrated eye — overriding the media manifest's file-type guess), with a `longdesc` added to both because their drawn panels' progression and labels are not fully carried by the caption; the boil figure is set `kind="photo"` overriding the manifest's PNG-based "diagram" guess, since both of its panels are photographs. In the Disease Profile "Bacterial Infections of the Skin" table, the acne row's pathogen is corrected from "*Propionibacterium acnes*" (as printed in the source table image) to "*Cutibacterium acnes*," matching this section's own body prose, which uses the current name throughout — a visible Source note accompanies the correction. The subsection heading "Cellulitis, Erysipelas, and Erythema Nosodum" and the parallel Summary bullet are corrected to "Erythema Nodosum"/"erythema nodosum," a one-word source misspelling (the body prose itself spells the term correctly throughout), corrected in place with no inline note. The nosocomial-infections multiple choice's third distractor is corrected from "*Proproniobacterium acnes*" to "*Propionibacterium acnes*," a one-word source typo, corrected in place with no inline note. The Summary's "Community-acquired and hospital-acquired staphyloccocal infections" is corrected to "staphylococcal," another one-word source typo, corrected in place with no inline note. The module's 9 footnotes (2 in Streptococcal Infections, 7 in Anthrax) are rendered as inline parenthetical citations after the sentences they support, with author names, titles, and journals or publishers kept and their bare access URLs and "Accessed" dates dropped. Three cross-references to other modules are rendered as absolute site-root Markdown links to their authored pages (the Clinical Focus closes below link to Anatomy and Normal Microbiota of the Skin and Eyes; toxic shock syndrome toxin-1 → [Virulence Factors of Bacterial and Viral Pathogens](/life-health-sciences/microbiology/15-microbial-mechanisms-of-pathogenicity/03-virulence-factors-of-bacterial-and-viral-pathogens/); the hot tub rash Clinical Focus recall → [Microbial Biochemistry](/life-health-sciences/microbiology/07-microbial-biochemistry/01-organic-molecules/)); the same-module Eye on Ethics cross-reference is rendered as a plain italicized description rather than a same-page link. The Clinical Focus chain's Part 2 and Resolution both land on this page at their source positions; Part 2 closes "The case began in [Anatomy and Normal Microbiota of the Skin and Eyes](/life-health-sciences/microbiology/21-skin-and-eye-infections/01-anatomy-and-normal-microbiota-of-the-skin-and-eyes/). The case continues in Resolution, below." and Resolution closes "The case began in [Anatomy and Normal Microbiota of the Skin and Eyes](/life-health-sciences/microbiology/21-skin-and-eye-infections/01-anatomy-and-normal-microbiota-of-the-skin-and-eyes/)," replacing the source's internal "jump to the next"/"go back to the previous" box links. All 8 of the section's body Check Your Understanding bullets are rendered as body items at their note's position; 2 are graded because one sentence of this module fixes the whole answer — the cutaneous anthrax "characteristic feature" bullet and the "why are contact lens wearers at greater risk for keratitis" bullet are each graded as a `multiplechoice` keyed to a single module sentence (the black-eschar sentence; the lens-adherence sentence), each keeping the CYU bullet's own question verbatim, with distractors built from the module's own other sentences (skin-lesion descriptions for the anthrax item; Pseudomonas siderophores, biofilm antibiotic resistance, and staphylococcal leukocidins for the keratitis item) — and the remaining 6 stay `selfcheck`s with model answers and rubrics built only from this section's own text. The module's 4 keyed Multiple Choice items and 1 keyed Fill in the Blank item are rendered as scored components in source option order (subject to the one-word distractor correction above), placed under the objectives they test, which changes their source order: the source prints the coagulase, M protein, trachoma, and nosocomial-infection Multiple Choice items in that order, and the page places the M protein and nosocomial-infection items in the first group and the coagulase and trachoma items in the second. Of the module's 2 unkeyed Short Answer questions, neither of which prints a source key, "How are leukocidins associated with pus production?" is graded as a `multiplechoice` keyed to the module's own leukocidin sentence, with distractors built from three of the module's other virulence-factor sentences (coagulase, Protein A, Pseudomonas siderophores), and "What is a good first test to distinguish streptococcal infections from staphylococcal infections?" is graded as a `textin` keyed "catalase test" from the module's own catalase-test sentence; no source exercise is omitted. Two additional `textin` term-recall items (pyocyanin, erysipelas) are added from Key terms to bring both Practice groups above the section floor; the erysipelas prompt leaves out the Glossary definition's causative organism, which another item on the page keys, and is placed before the leukocidin item. Key terms are compiled from the module's 23 class-less defined-term elements (no repeats) and the book's Glossary appendix, giving 23 distinct bullets, all glossary-sourced (none sentence-derived). This module has no `<table>` element with a `summary` attribute (both Disease Profile tables are images, not CNXML tables), so no in-body Markdown table beyond the two Disease Profile transcriptions is built, and neither Disease Profile table becomes a `sortbins`, per this book's rule for a section-level recap table.</small>

@@ -50,7 +50,7 @@ David Vetter, popularly known as "The Bubble Boy," was born with SCID and lived 
 {{< multiplechoice
   question="What is the fundamental cause of a primary immunodeficiency?"
   answer="Inherited defects of innate or adaptive immune defenses"
-  hint="This is what makes an immunodeficiency 'primary' rather than 'secondary.'"
+  hint="Reread the first paragraph of Primary Immunodeficiency."
 >}}
 Inherited defects of innate or adaptive immune defenses
 An HIV infection acquired later in life
@@ -58,7 +58,7 @@ Malnutrition or another nutritional deficiency
 Immunosuppressive treatment such as chemotherapy
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain why patients with chronic granulomatous disease are especially susceptible to bacterial infections." hint="Think about what phagocytic cells need to produce in the phagolysosome in order to kill bacteria." >}}
+{{< selfcheck question="Explain why patients with chronic granulomatous disease are especially susceptible to bacterial infections." hint="Reread the Chronic Granulomatous Disease subsection." >}}
 Chronic granulomatous disease is caused by defects in the NADPH oxidase system of phagocytic cells, including neutrophils and macrophages, that prevent the production of superoxide radicals in phagolysosomes. Because phagocytes cannot produce superoxide radicals, their antibacterial activity is impaired, so bacterial infections in these patients persist longer than normal.
 ===CHECKS===
 defects in the NADPH oxidase system of phagocytic cells prevent the production of superoxide radicals in phagolysosomes
@@ -66,7 +66,7 @@ phagocytes cannot produce superoxide radicals, so their antibacterial activity i
 infections in these patients persist longer than normal
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain why individuals with selective IgA deficiency are susceptible to respiratory and gastrointestinal infections." hint="Consider which antibody class normally defends the lungs and gut, and what these patients cannot produce." >}}
+{{< selfcheck question="Explain why individuals with selective IgA deficiency are susceptible to respiratory and gastrointestinal infections." hint="Reread the Selective IgA Deficiency subsection." >}}
 Individuals with selective IgA deficiency produce normal levels of IgG and IgM but are not able to produce secretory IgA. Because secretory IgA is normally an important defense mechanism for the lungs and gastrointestinal tract, this deficiency predisposes these individuals to lung and gastrointestinal infections.
 ===CHECKS===
 individuals with selective IgA deficiency are not able to produce secretory IgA
@@ -97,7 +97,7 @@ The most common cause of secondary immunodeficiency worldwide is severe malnutri
   hint="Reread the last paragraph of Secondary Immunodeficiency."
 >}}
 
-{{< selfcheck question="Explain why secondary immunodeficiencies can sometimes be reversed." hint="Think about what a secondary immunodeficiency has, that a primary one does not." >}}
+{{< selfcheck question="Explain why secondary immunodeficiencies can sometimes be reversed." hint="Reread the paragraph that follows the list of causes in Secondary Immunodeficiency." >}}
 Unlike primary immunodeficiencies, which have a genetic basis, secondary immunodeficiencies are often reversible if the underlying cause of the impairment is resolved.
 ===CHECKS===
 primary immunodeficiencies have a genetic basis, unlike secondary immunodeficiencies
@@ -139,7 +139,7 @@ The table below summarizes primary and secondary immunodeficiencies, their effec
 - **chronic granulomatous disease** — primary immunodeficiency caused by an impaired ability of phagocytic cells to kill ingested bacteria in the phagolysosome.
 - **X-linked agammaglobulinemia** — genetic disorder resulting in an inability to produce antibodies.
 - **selective IgA deficiency** — primary immunodeficiency in which individuals produce normal levels of IgG and IgM, but are unable to produce secretory IgA.
-- **severe combined immunodeficiency (SCID)** — primary immunodeficiency causing B-cell and T-cell defects that impair T-cell–dependent antibody responses and cell-mediated immune responses.
+- **severe combined immunodeficiency (SCID)** — genetic disorder resulting in impaired function of B cells and T cells.
 - **secondary immunodeficiency** — impaired immune response due to infection, metabolic disturbance, poor diet, stress, or other acquired factors.
 - **acquired immunodeficiency syndrome (AIDS)** — disease caused by HIV, characterized by opportunistic infections and rare cancers.
 
@@ -150,7 +150,7 @@ The table below summarizes primary and secondary immunodeficiencies, their effec
 {{< multiplechoice
   question="Which of the following is a genetic disease that results in lack of production of antibodies?"
   answer="agammaglobulinemia"
-  hint="This disorder blocks B-cell maturation before antibody-producing plasma cells can form."
+  hint="Reread the subsections under Primary Immunodeficiency and match each disorder to its defect."
 >}}
 agammaglobulinemia
 myasthenia gravis
@@ -161,7 +161,7 @@ chronic granulomatous disease
 {{< multiplechoice
   question="Which of the following is a genetic disease that results in almost no adaptive immunity due to lack of B and/ or T cells?"
   answer="severe combined immunodeficiency"
-  hint="Its most common form is inherited on the X chromosome and occurs mostly in males."
+  hint="Reread the subsections under Primary Immunodeficiency and compare which cells each disorder affects."
 >}}
 agammaglobulinemia
 severe combined immunodeficiency
@@ -172,7 +172,7 @@ chronic granulomatous disease
 {{< multiplechoice
   question="All but which one of the following are examples of secondary immunodeficiencies?"
   answer="chronic granulomatous disease"
-  hint="Three of these four are acquired; one is present from birth."
+  hint="Compare each option with the examples listed at the end of the first paragraph of Primary Immunodeficiency."
 >}}
 HIV/AIDS
 malnutrition
@@ -193,7 +193,7 @@ immunosuppression due to measles infection
   hint="Reread the opening sentence of Secondary Immunodeficiency."
 >}}
 
-{{< sortbins question="Sort each disease under whether it is a primary or a secondary immunodeficiency." hint="A primary immunodeficiency is inherited; a secondary one develops from an outside cause." >}}
+{{< sortbins question="Sort each disease under whether it is a primary or a secondary immunodeficiency." hint="Use the table that closes the section." >}}
 {"bins": ["Primary", "Secondary"],
  "items": [
   {"label": "Chronic granulomatous disease", "bin": 0},
@@ -207,8 +207,8 @@ immunosuppression due to measles infection
 
 ### Describe treatments for primary and secondary immunodeficiencies
 
-{{< selfcheck question="Compare the treatments for primary and secondary immunodeficiencies." hint="The module names one specific treatment for a primary immunodeficiency, and one general condition for reversing a secondary one." >}}
-The module does not name a general treatment for primary immunodeficiencies, but in patients with severe combined immunodeficiency — the module's own example of a primary immunodeficiency — a bone marrow transplant may correct the defects in lymphocyte development that cause the disease, though this approach is not without risk. Secondary immunodeficiencies, unlike primary ones, do not have a genetic basis, so they are often reversible if the underlying cause of the impairment is resolved.
+{{< selfcheck question="Compare the treatments for primary and secondary immunodeficiencies." hint="Reread the second paragraph of Severe Combined Immunodeficiency and the paragraph that follows the list of causes in Secondary Immunodeficiency." >}}
+This section does not name a general treatment for primary immunodeficiencies, but in patients with severe combined immunodeficiency (SCID) — one of this section's examples of a primary immunodeficiency — a bone marrow transplant may correct the defects in lymphocyte development that cause the disease, though this approach is not without risk. Secondary immunodeficiencies, unlike primary ones, do not have a genetic basis, so they are often reversible if the underlying cause of the impairment is resolved.
 ===CHECKS===
 in SCID, a bone marrow transplant may correct the defects in lymphocyte development that cause the disease
 this approach is not without risk
@@ -235,4 +235,4 @@ They cannot produce secretory IgA
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 19.4: Immunodeficiency](https://openstax.org/books/microbiology/pages/19-4-immunodeficiency) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the section's one source figure is re-encoded as WebP and rendered as a mediafigure after image and PDF inspection, `kind="photo"` set after looking at the photograph, and `eager="true"` as the page's only figure; the feature box is rendered as a callout with its bold name and title, transcribed in the source's own document order; the one summary-attribute table ("Primary and Secondary Immunodeficiencies") is transcribed as a Markdown table from the CNXML cells, its merged first column rendered as a bold group-label row above each group's diseases, and it additionally gets a two-bin `sortbins` (Primary/Secondary) in Practice under the first objective, matching the table's own grouping; the source's three Multiple Choice items and two Fill in the Blank items (rendered as `textin`) keep their source wording, options, order, and keys; the one Short Answer question, for which the source prints no key, stays a `selfcheck` with a model answer and rubric assembled from this section's own text — the module names no general treatment for primary immunodeficiencies, so the model answer says so and gives only the SCID bone-marrow-transplant passage and the secondary-immunodeficiency reversibility sentence; of the module's five body Check Your Understanding bullets, two are graded from a single module sentence — "What is the fundamental cause of a primary immunodeficiency?" (`multiplechoice`, keyed to the module's own causes sentence, distractors drawn from the module's own list of secondary-immunodeficiency causes) and "What is the most common cause of secondary immunodeficiencies?" (`textin`, answer "severe malnutrition," the sentence's own words) — and the remaining three stay body self-checks, since each needs more than one module sentence assembled (the primary-immunodeficiency `multiplechoice`'s keyed option, "Inherited defects…", also answers the source Fill in the Blank "Diseases due to ________ abnormalities are termed primary immunodeficiencies" (key genetic); both are source questions and the body item stays at its note position, so both are kept); two filler items are added under the second objective, since the module's treatment content is thin: a `multiplechoice` built from the SCID sentence that vaccines provide no protection because these patients cannot develop immunological memory (its distractors are the module's own defects of chronic granulomatous disease, X-linked agammaglobulinemia, and selective IgA deficiency; it replaces an earlier cloze of the SCID bone-marrow-transplant sentence, which the Short Answer self-check directly above uses as its model answer), and a `textin` that clozes the AIDS/CD4 T-cell lymphopenia sentence (the reversibility sentence is not clozed a second time, since the body self-check on the same objective already uses it as its model answer and a second item on it would re-ask that self-check and leak its answer), disclosed here and in the source ledger; a missing word in the source's secondary-immunodeficiency definition ("occurs as a result an acquired impairment," missing "of") is corrected in place with no inline note; key terms compiled from the module's six `<term>` elements and the book's Glossary appendix, giving six distinct bullets, with one — severe combined immunodeficiency (SCID) — sentence-derived from the module's own defining sentence rather than the appendix, since no matching appendix entry was found under that headword. No source exercise item is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 19.4: Immunodeficiency](https://openstax.org/books/microbiology/pages/19-4-immunodeficiency) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the section's one source figure is re-encoded as WebP and rendered as a mediafigure after image and PDF inspection, `kind="photo"` set after looking at the photograph, and `eager="true"` as the page's only figure; the feature box is rendered as a callout with its bold name and title, transcribed in the source's own document order; the one summary-attribute table ("Primary and Secondary Immunodeficiencies") is transcribed as a Markdown table from the CNXML cells, its merged first column rendered as a bold group-label row above each group's diseases, and it additionally gets a two-bin `sortbins` (Primary/Secondary) in Practice under the first objective, matching the table's own grouping; the source's three Multiple Choice items and two Fill in the Blank items (rendered as `textin`) keep their source wording, options, order, and keys; the one Short Answer question, for which the source prints no key, stays a `selfcheck` with a model answer and rubric assembled from this section's own text — the module names no general treatment for primary immunodeficiencies, so the model answer says so and gives only the SCID bone-marrow-transplant passage and the secondary-immunodeficiency reversibility sentence; of the module's five body Check Your Understanding bullets, two are graded from a single module sentence — "What is the fundamental cause of a primary immunodeficiency?" (`multiplechoice`, keyed to the module's own causes sentence, distractors drawn from the module's own list of secondary-immunodeficiency causes) and "What is the most common cause of secondary immunodeficiencies?" (`textin`, answer "severe malnutrition," the sentence's own words) — and the remaining three stay body self-checks, since each needs more than one module sentence assembled (the primary-immunodeficiency `multiplechoice`'s keyed option, "Inherited defects…", also answers the source Fill in the Blank "Diseases due to ________ abnormalities are termed primary immunodeficiencies" (key genetic); both are source questions and the body item stays at its note position, so both are kept); two filler items are added under the second objective, since the module's treatment content is thin: a `multiplechoice` built from the SCID sentence that vaccines provide no protection because these patients cannot develop immunological memory (its distractors are the module's own defects of chronic granulomatous disease, X-linked agammaglobulinemia, and selective IgA deficiency; it replaces an earlier cloze of the SCID bone-marrow-transplant sentence, which the Short Answer self-check directly above uses as its model answer), and a `textin` that clozes the AIDS/CD4 T-cell lymphopenia sentence (the reversibility sentence is not clozed a second time, since the body self-check on the same objective already uses it as its model answer and a second item on it would re-ask that self-check and leak its answer), disclosed here and in the source ledger; a missing word in the source's secondary-immunodeficiency definition ("occurs as a result an acquired impairment," missing "of") is corrected in place with no inline note; key terms compiled from the module's six `<term>` elements and the book's Glossary appendix, giving six distinct bullets, all with the appendix's definitions — the severe combined immunodeficiency (SCID) bullet takes the appendix entry headed "severe combined immunodeficiency disease (SCID)"; the source's first two Multiple Choice stems ("Which of the following is a genetic disease…") and its second Fill in the Blank stem ("…rather than genetic") print "genetic," the first Fill in the Blank's key, and all three stay in source wording and order. No source exercise item is omitted.</small>

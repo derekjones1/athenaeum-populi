@@ -108,7 +108,7 @@ Watch a [video](https://openstax.org/l/22HPVpercep) of how perceptions of HPV af
 {{< multiplechoice
   question="What is the motivation for HPV vaccination?"
   answer="To prevent infection with oncogenic (cancer-causing) HPV types"
-  hint="The section names this single most effective strategy right after discussing the two available vaccines."
+  hint="Read the last paragraph before the Link to Learning box."
 >}}
 To eliminate all existing genital warts in an infected person
 To replace the need for regular Pap testing
@@ -162,7 +162,7 @@ The table below summarizes the most important features of viral diseases affecti
 {{< multiplechoice
   question="Genital herpes is most commonly caused by"
   answer="herpes simplex virus 2"
-  hint="This section names two herpes simplex virus types; only one is usually linked to genital, rather than oral, infection."
+  hint="Look at the paragraph that contrasts the two herpes simplex virus types."
 >}}
 herpes simplex virus 1
 varicella-zoster virus
@@ -170,15 +170,30 @@ herpes simplex virus 2
 cytomegalovirus
 {{< /multiplechoice >}}
 
-{{< textin question="Condylomata are ________." answer="warts" accept="genital warts|venereal warts" hint="The section gives this everyday name for condylomata acuminata right where it first introduces them." >}}
+{{< textin question="Condylomata are ________." answer="warts" accept="genital warts|venereal warts" hint="Look at the first paragraph of the Human Papillomas subsection." >}}
 
-{{< textin question="A group of common sexually transmitted viruses that may cause genital growths or a cervical malignancy is called the ________." answer="human papillomavirus" accept="HPV" hint="This virus's abbreviation appears throughout the section." >}}
+{{< textin question="HPV is a small, ________ virus with a circular double-stranded DNA genome." answer="non-enveloped" accept="nonenveloped" hint="Look at the first sentence of the second paragraph of the Human Papillomas subsection." >}}
 
 {{< textin question="Herpes simplex virus type 1 (HSV-1) is generally associated with oral lesions like ________ or fever blisters." answer="cold sores" hint="Look in the paragraph that contrasts the two herpes simplex virus types." >}}
 
-{{< textin question="Herpes infection of the newborn, generally caused by exposure to the virus during childbirth, is called ________." answer="neonatal herpes" hint="See the bold term in the paragraph that follows the recommended antiviral medications." >}}
+{{< multiplechoice
+  question="Which virus does the section name as the cause of the most common STI in the United States?"
+  answer="human papillomavirus"
+  hint="Look at the opening paragraph of the section, before the Genital Herpes subsection."
+>}}
+herpes simplex virus 2
+human papillomavirus
+herpes simplex virus 1
+varicella-zoster virus
+{{< /multiplechoice >}}
 
 ### Compare the major characteristics of specific viral diseases affecting the reproductive system
+
+{{< textin question="The recommended medications for managing HSV-2 infections include acyclovir, famciclovir, and ________." answer="valacyclovir" accept="valaciclovir" hint="Look at the last paragraph of the Genital Herpes subsection, before Neonatal Herpes." >}}
+
+{{< textin question="Some strains of HPV cause genital warts, while other strains cause ________." answer="cervical cancer" accept="cancer of the cervix" hint="Look at the last bullet of the Summary." >}}
+
+{{< textin question="Koilocytes have a distinct clear appearance around the nucleus called a ________." answer="perinuclear halo" hint="Look at the last sentence of the paragraph on liquid-based cytology." >}}
 
 {{< multiplechoice
   question="Koilocytes are characteristic of"
@@ -198,35 +213,30 @@ cervical cancer cells
 >}}
 No — HPV cannot be detected by any test, including a Pap smear
 No — HPV infection is often asymptomatic, and only some types cause warts
-Yes — every HPV type that causes cervical cancer also causes genital warts
+Yes — every oncogenic HPV type also causes genital warts
 Yes — genital warts are the first symptom to appear in every HPV infection
 {{< /multiplechoice >}}
-
-{{< textin question="The recommended medications for managing HSV-2 infections include acyclovir, famciclovir, and ________." answer="valacyclovir" hint="This is the third of three antiviral drugs the section lists together for managing HSV-2." >}}
-
-{{< textin question="Some strains of HPV cause genital warts, while other strains cause ________." answer="cervical cancer" hint="This is named in the section's own summary bullet about what human papillomaviruses cause." >}}
 
 {{< multiplechoice
   question="At what age does the section recommend a first HPV screening, done at the same time as a Pap test?"
   answer="age 30"
-  hint="This age appears in the same sentence that first mentions pairing HPV testing with Pap testing."
+  hint="Look at the paragraph on HPV screening guidelines."
 >}}
-age 18
-age 21
+age 15
+age 24
 age 30
-age 40
+age 49
 {{< /multiplechoice >}}
 
-{{< textin question="Koilocytes have a distinct clear appearance around the nucleus called a ________." answer="perinuclear halo" hint="Look at the last sentence of the paragraph on liquid-based cytology." >}}
-
 {{< selfcheck question="Recently, studies have shown a reduction in the prevalence of some strains of HPV in younger females. What might be the reason for this?" hint="Reread the last paragraph of the Human Papillomas subsection." >}}
-The module states that vaccination is the most effective way to prevent infection with oncogenic HPV, and that it is recommended for all young people prior to sexual activity, usually between the ages of nine and fifteen. The observed reduction in HPV prevalence among younger females is consistent with growing uptake of this vaccination, though the module does not directly state the cause of the decline.
+The module states that vaccines for some of the high-risk HPV types are now available, that vaccination is the most effective way to prevent infection with oncogenic HPV, though not all oncogenic HPV types are covered by the available vaccines, and that it is recommended for all young people prior to sexual activity, usually between the ages of nine and fifteen. A reduction in some HPV strains among younger females is consistent with this vaccination, though the module does not directly state the cause of the decline.
 ===CHECKS===
+vaccines for some of the high-risk HPV types are now available
 vaccination is the most effective way to prevent infection with oncogenic HPV
-it is recommended for all young people prior to sexual activity, usually between ages nine and fifteen
-the module does not directly state the cause of the decline
+not all oncogenic HPV types are covered by the available vaccines
+it is recommended for all young people prior to sexual activity
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 23.4: Viral Infections of the Reproductive System](https://openstax.org/books/microbiology/pages/23-4-viral-infections-of-the-reproductive-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four photographic and micrograph figures re-encoded as WebP and rendered as mediafigures with `kind="photo"` after image inspection, with the Herpes micrograph carrying `eager="true"` as the page's first figure; the HerpLesion figure's source alt ("Photo of penis with white sored. B) Photo of skin with red raised bumps.") is ungrammatical and does not describe the artwork, so it is rewritten from the image, as are the Herpes, GenWarts, and CervixCell alts, each to describe what is drawn rather than the source's brief phrasing; the Disease Profile table image (`OSC_Microbio_23_04_VirInfTbl`) is transcribed as a Markdown table from its alt (checked cell by cell against the PDF page, no divergence found) rather than vendored, per this book's Disease Profile rule, with the alt's run-together "Disease Pathogen" header split into its own two columns as printed in the image; feature boxes rendered as callouts, the Link to Learning keeping its external URL; the six footnote citations are rendered as inline parenthetical citations, bare access URLs dropped; the cross-references to Section 21.3 (*Viral Infections of the Skin and Eyes*, linked twice), Section 15.2 (*How Pathogens Cause Disease*), and Section 23.6 (*Protozoan Infections of the Urogenital System*, inside the Micro Connection box) are links to those pages; the two source Multiple Choice items and the one Fill in the Blank item are adapted into Practice unchanged with their source keys; of the section's two unkeyed Short Answer questions, "Is it true that human papillomaviruses can always be detected by the presence of genital warts?" is graded as a `multiplechoice` from the module's own sentence that HPV infection is often asymptomatic and only some types cause warts, and "How is neonatal herpes transmitted?" is the same question, reworded, as the body Check Your Understanding bullet "How is neonatal herpes contracted?" — both stems ask how neonatal herpes is transmitted — so it is graded once, at the body position, rather than duplicated in Practice; the one unkeyed Critical Thinking question (on reduced HPV prevalence in younger females) remains a self-check, since the module does not state the cause of the decline and the model answer says only what the module gives; of this section's four body Check Your Understanding bullets, all four are graded (three `multiplechoice`, one `textin`) from a single fixing sentence of their own subsection; seven of the twelve Practice items are author-written from this section's own Key terms and body/summary sentences (two term-recall `textin`s, three body-sentence cloze `textin`s — on valacyclovir, cold sores, and the perinuclear halo — one summary-sentence cloze `textin`, and one age-recall `multiplechoice`); an HSV-2 abbreviation recall that re-asked the source Multiple Choice on the cause of genital herpes, and a genital-warts definition recall that re-asked the source Fill in the Blank on condylomata, were replaced by the cold-sores and perinuclear-halo clozes, alongside the four source-derived items (three source-keyed plus the converted Short Answer); the source Multiple Choice item on koilocytes and the body Check Your Understanding `textin` on the same cells test the fact from opposite directions (recognizing the cell type versus naming it) and are both kept as the source's own distinct items. A claim correction in the Genital Herpes subsection replaces the source's "ganglia in the spine (either the trigeminal ganglion or the lumbar-sacral ganglia)" with "sensory ganglia (either the trigeminal ganglion, in the head, or the lumbar-sacral ganglia, in the spine)," with a visible Source note beside the passage, because the trigeminal ganglion is a cranial nerve ganglion inside the skull, not a spinal one. No other one-word or claim-level departures from the CNXML were found on a word-by-word check against the module.</small>
+<small>This section is adapted from [Microbiology, Section 23.4: Viral Infections of the Reproductive System](https://openstax.org/books/microbiology/pages/23-4-viral-infections-of-the-reproductive-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four photographic and micrograph figures re-encoded as WebP and rendered as mediafigures with `kind="photo"` after image inspection, with the Herpes micrograph carrying `eager="true"` as the page's first figure; the HerpLesion figure's source alt ("Photo of penis with white sored. B) Photo of skin with red raised bumps.") is ungrammatical and does not describe the artwork, so it is rewritten from the image, as are the Herpes, GenWarts, and CervixCell alts, each to describe what is drawn rather than the source's brief phrasing; the Disease Profile table image (`OSC_Microbio_23_04_VirInfTbl`) is transcribed as a Markdown table from its alt (checked cell by cell against the PDF page, no divergence found) rather than vendored, per this book's Disease Profile rule, with the alt's run-together "Disease Pathogen" header split into its own two columns as printed in the image; feature boxes rendered as callouts, the Link to Learning keeping its external URL; the six footnote citations are rendered as inline parenthetical citations, bare access URLs dropped; the cross-references to Section 21.3 (*Viral Infections of the Skin and Eyes*, linked twice), Section 15.2 (*How Pathogens Cause Disease*), and Section 23.6 (*Protozoan Infections of the Urogenital System*, inside the Micro Connection box) are links to those pages; the two source Multiple Choice items and the one Fill in the Blank item are adapted into Practice with their source keys and sorted by objective, the Fill in the Blank on condylomata placed in the first objective's group, ahead of the koilocyte Multiple Choice that precedes it in the source; in the second objective's group the three author-written cloze `textin`s come first, ahead of the source items; of the section's two unkeyed Short Answer questions, "Is it true that human papillomaviruses can always be detected by the presence of genital warts?" is graded as a `multiplechoice` from the module's own sentence that HPV infection is often asymptomatic and only some types cause warts, and "How is neonatal herpes transmitted?" is the same question, reworded, as the body Check Your Understanding bullet "How is neonatal herpes contracted?" — both stems ask how neonatal herpes is transmitted — so it is graded once, at the body position, rather than duplicated in Practice; the one unkeyed Critical Thinking question (on reduced HPV prevalence in younger females) remains a self-check, since the module does not state the cause of the decline and the model answer says only what the module gives; of this section's four body Check Your Understanding bullets, all four are graded (three `multiplechoice`, one `textin`) from a single fixing sentence of their own subsection; seven of the twelve Practice items are author-written from this section's own body and summary sentences (four body-sentence cloze `textin`s — on non-enveloped HPV, cold sores, valacyclovir, and the perinuclear halo — one summary-sentence cloze `textin`, one `multiplechoice` on the screening age, and one `multiplechoice` on the virus behind the most common STI, from the opening paragraph), alongside the five source-derived items (three source-keyed, the converted Short Answer, and the Critical Thinking self-check); no Key-terms recall item is used, because each of the section's terms is already tested by a source or Check Your Understanding item; the source Multiple Choice item on koilocytes and the body Check Your Understanding `textin` on the same cells test the fact from opposite directions (recognizing the cell type versus naming it) and are both kept as the source's own distinct items. A claim correction in the Genital Herpes subsection replaces the source's "ganglia in the spine (either the trigeminal ganglion or the lumbar-sacral ganglia)" with "sensory ganglia (either the trigeminal ganglion, in the head, or the lumbar-sacral ganglia, in the spine)," with a visible Source note beside the passage, because the trigeminal ganglion is a cranial nerve ganglion inside the skull, not a spinal one. No other one-word or claim-level departures from the CNXML were found on a word-by-word check against the module.</small>

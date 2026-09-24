@@ -2796,6 +2796,23 @@ export function lintHugo(src, filename = '', options = {}) {
     }
   }
 
+  // ---- attribution footer: last thing on the page ---------------------------
+  // The `<small>This … adapted from …</small>` footer closes the page. The
+  // Microbiology Knowledge Check for chapters 21-26 shipped from September
+  // 20 to 24, 2026 with its footer between Chapter 24 and Chapter 25 (an
+  // assembly splice), so two chapters of questions rendered below the
+  // attribution; no gate noticed (re-review, September 24, 2026).
+  {
+    const footers = [...src.matchAll(/<small>This\b/g)];
+    if (footers.length > 1) err(footers[1].index, 'a second attribution footer (`<small>This …`) — a page carries exactly one, at the end');
+    if (footers.length) {
+      const close = src.indexOf('</small>', footers[footers.length - 1].index);
+      if (close >= 0 && src.slice(close + '</small>'.length).trim()) {
+        err(close, 'content follows the attribution footer — the `<small>` footer must be the last thing on the page');
+      }
+    }
+  }
+
   // ---- Knowledge Check page rule -------------------------------------------
   if (isKnowledgeCheck) {
     for (const m of src.matchAll(/\bhint="/g)) {

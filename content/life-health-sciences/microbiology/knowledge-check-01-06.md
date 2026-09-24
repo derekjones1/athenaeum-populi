@@ -25,7 +25,7 @@ weight: 7
 ### 1.1 What Our Ancestors Knew
 
 {{< multiplechoice
-  question="Which piece of microbiology lab equipment is a flat-lidded dish, typically 10–11 centimeters in diameter, used to hold growth media?"
+  question="Which piece of microbiology lab equipment, made of plastic or glass with a flat lid, is typically 10–11 centimeters in diameter and 1–1.5 centimeters high and is used to hold growth media?"
   answer="Petri dish"
 >}}
 Petri dish
@@ -62,6 +62,7 @@ the shape of its square cells
 {{< textin
   question="The pathogenic strain of *Escherichia coli* linked to several large outbreaks that originated in undercooked hamburgers during the 1990s is *E. coli* ________."
   answer="O157:H7"
+  accept="0157:H7|E. coli O157:H7|Escherichia coli O157:H7"
 >}}
 
 {{< selfcheck question="What is horizontal gene transfer, and how has its discovery affected how some scientists describe the relationships among organisms?" >}}
@@ -95,7 +96,6 @@ centimeter
 Immunology, the study of the immune system, is often included in the study of microbiology because host-pathogen interactions are central to our understanding of infectious disease processes.
 ===CHECKS===
 immunology is the study of the immune system
-it is often included in the study of microbiology
 host-pathogen interactions are central to our understanding of infectious disease processes
 {{< /selfcheck >}}
 
@@ -141,7 +141,7 @@ Zaccharias Janssen
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="In Latin, what does the word Robert Hooke borrowed to name the boxlike structures he observed in cork — 'cell' — literally mean?"
+  question="In Latin, what does 'cell' — the word Robert Hooke used for the boxlike structures he observed in cork — literally mean?"
   answer="small room"
 >}}
 honeycomb
@@ -173,7 +173,7 @@ confocal
  "items": [
   {"label": "primary antibodies are stained with a fluorochrome", "bin": 0},
   {"label": "secondary antibodies, not primary antibodies, are stained with a fluorochrome", "bin": 1},
-  {"label": "the stained antibodies attach directly to the pathogen", "bin": 0},
+  {"label": "the stained antibodies bind to the pathogen itself", "bin": 0},
   {"label": "increases the number of fluorescent antibodies attached to the specimen", "bin": 1}]}
 {{< /sortbins >}}
 
@@ -223,13 +223,12 @@ The cotton contained dust but no microorganisms.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="After a few days, what did John Needham observe in the broth inside his sealed flasks?"
-  answer="The broth had become cloudy, and a single drop contained numerous microscopic creatures."
+  question="Jan Baptista van Helmont proposed that mice could arise from rags and wheat kernels left in an open container for 3 weeks. What actually accounted for the mice?"
+  answer="The habitat provided ideal food sources and shelter for mouse populations."
 >}}
-The broth remained perfectly clear, with no sign of growth.
-The broth had become cloudy, and a single drop contained numerous microscopic creatures.
-No maggots appeared in either the gauze-covered or the tightly sealed jars.
-Sterilized broth in the swan-neck flask remained sterile as long as the neck stayed intact.
+The rags and wheat contained pneuma, which gave rise to the mice.
+A life force entering the open container caused the mice to arise.
+The habitat provided ideal food sources and shelter for mouse populations.
 {{< /multiplechoice >}}
 
 {{< selfcheck question="How did the Paris Academy of Sciences respond to the ongoing debate over spontaneous generation, and how did Pasteur respond to their action?" >}}
@@ -275,7 +274,7 @@ Ibn Zuhr's discovery gave more evidence that unseen substances or creatures caus
 They often carry genes that confer advantageous traits such as antibiotic resistance.
 They are found only in bacteria and never in archaea or eukaryotic organisms.
 They are large, linear DNA molecules bound within a membrane.
-They replace the cell's single chromosome entirely.
+A cell that has plasmids usually carries only one of them.
 {{< /multiplechoice >}}
 
 {{< textin
@@ -298,14 +297,13 @@ may help the cell withstand osmotic pressure and interact with the host immune s
   question="Protozoans of the genus *Paramecium* typically have two complete nuclei. What is the role of each?"
   answer="A small micronucleus used for reproduction and a large macronucleus that directs cellular metabolism."
 >}}
-A small nucleolus that synthesizes rRNA and a large nucleus that stores DNA.
-Two identical nuclei, each containing a full copy of the genome for backup.
-One nucleus for mitosis and a second nucleus for meiosis only.
+A small micronucleus that directs cellular metabolism and a large macronucleus used for reproduction.
+A small nucleolus where ribosomal RNA is made and a large nucleus that directs cellular metabolism.
 A small micronucleus used for reproduction and a large macronucleus that directs cellular metabolism.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="In 1898, which Italian scientist developed a novel staining technique that revealed stacked membrane structures within nerve cells — work for which an organelle of the endomembrane system now bears his name?"
+  question="In 1898, which Italian scientist developed a novel staining technique that revealed stacked membrane structures within cells — work for which an organelle of the endomembrane system now bears his name?"
   answer="Camillo Golgi"
   accept="Golgi"
 >}}
@@ -329,7 +327,7 @@ nitrogen fixation
 symbiosis
 {{< /multiplechoice >}}
 
-{{< textin question="Within the human microbiome, the microorganisms that constantly live in or on our bodies make up the ________ microbiota." answer="resident" accept="normal" >}}
+{{< textin question="Within the human microbiome, the microorganisms that constantly live in or on our bodies make up the ________ microbiota." answer="resident" accept="normal|commensal|resident microbiota" >}}
 
 {{< selfcheck question="How did David Hendricks Bergey's manual contribute to bacterial taxonomy, and how has it since been expanded?" >}}
 In 1923, Bergey published *A Manual in Determinative Bacteriology*, summarizing the kinds of bacteria known at that time using Latin binomial classification and including their morphological, physiological, and biochemical properties. A more recent sister publication, the five-volume *Bergey's Manual of Systematic Bacteriology*, expands on Bergey's original manual, adding many additional species along with up-to-date taxonomic descriptions, and incorporates the approved names of bacteria determined by the List of Prokaryotic Names with Standing in Nomenclature (LPSN).
@@ -344,8 +342,8 @@ incorporates the approved names determined by the List of Prokaryotic Names with
 
 {{< textin question="Bacteria capable of living in low-nutrient environments such as deep oceanic sediments, glacial ice, or deep undersurface soil are called ________." answer="oligotrophs" >}}
 
-{{< sortbins question="Sort each characteristic under the Alphaproteobacteria genus described in the comparison table." >}}
-{"bins":["Ehrlichia","Hyphomicrobium","Methylocystis"],"items":[{"label":"Very small, gram-negative, coccoid or ovoid bacteria","bin":0},{"label":"Gram-negative bacilli that grow from a stalk","bin":1},{"label":"Gram-negative, coccoid or short bacilli","bin":2},{"label":"Obligatory intracellular bacteria transmitted by ticks, causing ehrlichiosis in humans and dogs","bin":0},{"label":"Similar to Caulobacter","bin":1},{"label":"Nitrogen-fixing aerobic bacteria","bin":2}]}
+{{< sortbins question="Sort each characteristic under the genus of Alphaproteobacteria it describes." >}}
+{"bins":["Ehrlichia","Hyphomicrobium","Methylocystis"],"items":[{"label":"Very small, gram-negative, coccoid or ovoid bacteria","bin":0},{"label":"Gram-negative bacilli that grow from a stalk","bin":1},{"label":"Gram-negative, coccoid or short bacilli","bin":2},{"label":"Obligatory intracellular bacteria transmitted by ticks, destroying white blood cells in humans and dogs","bin":0},{"label":"Similar to Caulobacter","bin":1},{"label":"Nitrogen-fixing aerobic bacteria","bin":2}]}
 {{< /sortbins >}}
 
 {{< selfcheck question="How did the bacterium *Legionella* get its name, and where does it tend to live?" >}}
@@ -380,14 +378,14 @@ has been used as a model for studies of bacterial photosynthesis since the 1950s
 
 ### 4.4 Gram-Positive Bacteria
 
-{{< multiplechoice question="Which *Clostridium* species produces the most lethal biological toxin known, used in small concentrations to treat muscle pathologies and, cosmetically, to eliminate wrinkles?" answer="*Clostridium botulinum*" >}}
+{{< multiplechoice question="Which bacterium of the class Clostridia produces the most lethal biological toxin known, used in small concentrations to treat muscle pathologies and, cosmetically, to eliminate wrinkles?" answer="*Clostridium botulinum*" >}}
 *Clostridium botulinum*
 *Clostridium tetani*
 *Clostridium perfringens*
 *Clostridioides difficile*
 {{< /multiplechoice >}}
 
-{{< textin question="*Streptococcus* species that inhabit the human mouth but do not belong to any Lancefield group, most of which are commensals, are called the ________ streptococci." answer="nonpyogenic" accept="non-pyogenic|viridans" >}}
+{{< textin question="*Streptococcus* species that inhabit the human mouth but do not belong to any Lancefield group are called the ________ streptococci." answer="nonpyogenic" accept="non-pyogenic|viridans" >}}
 
 {{< selfcheck question="What toxin-related effects can strains of *Staphylococcus aureus* have on the body?" >}}
 Certain strains of *S. aureus* produce a substance called enterotoxin, which can cause severe enteritis, often called staph food poisoning. Some strains of *S. aureus* produce the toxin responsible for toxic shock syndrome, which can result in cardiovascular collapse and death.
@@ -406,7 +404,7 @@ hot springs
 thermal ocean vents
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="Bacteria of the genus *Aquifex* are hyperthermophiles that live in hot springs above what temperature?" answer="90 °C" >}}
+{{< multiplechoice question="Bacteria of the genus *Aquifex* are hyperthermophiles that live in hot springs. What is the lower limit of those springs' temperature?" answer="90 °C" >}}
 58 °C
 90 °C
 138 °C
@@ -454,10 +452,10 @@ trichomoniasis
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which ciliate is the only one capable of parasitizing humans, causing intestinal illness?"
-  answer="*Balantidium coli*"
+  question="The only ciliate capable of parasitizing humans, causing intestinal illness, belongs to which genus?"
+  answer="*Balantidium*"
 >}}
-*Balantidium coli*
+*Balantidium*
 *Paramecium*
 *Stentor*
 {{< /multiplechoice >}}
@@ -473,8 +471,9 @@ plasmodial slime molds exist as large, multinucleate amoeboid cells that form re
 ### 5.2 Parasitic Helminths
 
 {{< textin
-  question="The largest nematode intestinal parasite found in humans is *________ lumbricoides*."
+  question="The largest nematode intestinal parasite found in humans, whose females may reach lengths of 20–35 cm, belongs to the genus ________."
   answer="Ascaris"
+  accept="Ascaris lumbricoides|A. lumbricoides"
 >}}
 
 {{< textin
@@ -483,19 +482,19 @@ plasmodial slime molds exist as large, multinucleate amoeboid cells that form re
 >}}
 
 {{< multiplechoice
-  question="Which larval tapeworm form hatches from an egg swallowed by the intermediate host and migrates to a tissue where it develops into a cysticercus?"
-  answer="the oncosphere"
+  question="Which nematode is known as the Old World hookworm?"
+  answer="*Ancylostoma duodenale*"
 >}}
-the oncosphere
-the scolex
-the proglottid
-the cysticercus
+*Necator americanus*
+*Enterobius vermicularis*
+*Ancylostoma duodenale*
+*Trichinella spiralis*
 {{< /multiplechoice >}}
 
 ### 5.3 Fungi
 
 {{< textin
-  question="Whereas animals have cholesterol in their cell membranes, fungal cell membranes have different sterols called ________."
+  question="Fungal cell membranes contain ________ where animal cell membranes have cholesterol."
   answer="ergosterols"
 >}}
 
@@ -522,6 +521,7 @@ some species have substantial economic impact because of their ability to reduce
 {{< textin
   question="Algae are important ecologically and environmentally because they are responsible for the production of approximately 70% of the ________ and organic matter in aquatic environments."
   answer="oxygen"
+  accept="O2"
 >}}
 
 {{< multiplechoice
@@ -576,7 +576,7 @@ Naked or enveloped structure and positive- or negative-strand RNA
 Viral genetics, chemistry, morphology, and mechanism of multiplication
 {{< /multiplechoice >}}
 
-{{< textin question="Individual protein subunits that make up the capsid are called ________." answer="capsomere" >}}
+{{< textin question="The protein coat surrounding a virus's nucleic acid is composed of protein subunits called ________." answer="capsomeres" accept="capsomer" >}}
 
 {{< selfcheck question="What is the difference between a zoonosis and a reverse zoonosis?" >}}
 Viruses that can be transmitted from an animal host to a human host can cause zoonoses. Reverse zoonoses are caused by infection of an animal by a virus that originated in a human.
@@ -592,12 +592,12 @@ reverse zoonoses are caused by infection of an animal by a virus that originated
   answer="Host enzymes synthesize a second, complementary strand to produce dsDNA."
 >}}
 Viral RNA-dependent RNA polymerase (RdRP) replicates it into +ssRNA.
-Reverse transcriptase copies it into a complementary ssDNA (cDNA).
+It integrates directly into the host chromosome as a provirus.
 The genome is translated directly by host ribosomes, acting like cellular mRNA.
 Host enzymes synthesize a second, complementary strand to produce dsDNA.
 {{< /multiplechoice >}}
 
-{{< textin question="The number of virions per unit volume is called the ________." answer="viral titer" accept="titer" >}}
+{{< textin question="The number of virions per unit volume is called the ________." answer="viral titer" accept="titer|viral titre|titre" >}}
 
 {{< selfcheck question="By what mechanisms does HIV interfere with immune function to maintain a chronic infection?" >}}
 HIV maintains chronic persistence through several mechanisms that interfere with immune function, including preventing expression of viral antigens on the surface of infected cells, altering immune cells themselves, restricting expression of viral genes, and rapidly changing viral antigens through mutation.
@@ -611,16 +611,16 @@ rapidly changing viral antigens through mutation
 ### 6.3 Isolation, Culture, and Identification of Viruses
 
 {{< multiplechoice
-  question="How does RT-PCR differ from PCR in detecting a virus?"
-  answer="RT-PCR uses the enzyme reverse transcriptase to make a cDNA copy from viral RNA before amplification."
+  question="Which test detects RNA viruses by using an enzyme to make a cDNA from the small amount of viral RNA in a specimen, then amplifying that cDNA?"
+  answer="RT-PCR"
 >}}
-RT-PCR detects hemagglutinins binding to red blood cell receptors.
-RT-PCR relies on antibodies attaching to a target antigen tagged with a colorless enzyme.
-RT-PCR observes cell shape changes and inclusion bodies under a microscope.
-RT-PCR uses the enzyme reverse transcriptase to make a cDNA copy from viral RNA before amplification.
+PCR
+EIA
+RT-PCR
+HAI assay
 {{< /multiplechoice >}}
 
-{{< textin question="The first continuous tissue-culture cell line, established from cervical cancer cells taken from a patient in 1951, is called the ________." answer="HeLa cell line" accept="HeLa cells|HeLa" >}}
+{{< textin question="The first continuous tissue-culture cell line, established from cervical cancer cells taken from a patient in 1951, is called the ________." answer="HeLa cell line" accept="HeLa cells|HeLa|HeLa line" >}}
 
 {{< multiplechoice
   question="Besides filtration, what other method can separate virions in a liquid medium from the host cells?"
@@ -628,24 +628,24 @@ RT-PCR uses the enzyme reverse transcriptase to make a cDNA copy from viral RNA 
 >}}
 Enzyme immunoassay
 Hemagglutination
-Reverse transcriptase-PCR
+Polymerase chain reaction
 Centrifugation
 {{< /multiplechoice >}}
 
 ### 6.4 Viroids, Virusoids, and Prions
 
 {{< sortbins question="Sort each effect under the viroid that causes it." >}}
-{"bins":["Tomato planta macho viroid (TPMVd)","Avocado sunblotch viroid (ASBVd)","Peach latent mosaic viroid (PLMVd)"],"items":[{"label":"Loss of chlorophyll","bin":0},{"label":"Lower yields","bin":1},{"label":"Necrosis of flower buds and branches","bin":2},{"label":"Disfigured and brittle leaves","bin":0},{"label":"Poorer-quality fruit","bin":1},{"label":"Wounding of ripened fruit","bin":2},{"label":"Very small tomatoes","bin":0}]}
+{"bins":["Tomato planta macho viroid (TPMVd)","Avocado sunblotch viroid (ASBVd)","Peach latent mosaic viroid (PLMVd)"],"items":[{"label":"Loss of chlorophyll","bin":0},{"label":"Lower yields","bin":1},{"label":"Necrosis of flower buds and branches","bin":2},{"label":"Disfigured and brittle leaves","bin":0},{"label":"Poorer-quality fruit","bin":1},{"label":"Wounding of ripened fruit","bin":2}]}
 {{< /sortbins >}}
 
 {{< multiplechoice
-  question="Stanley Prusiner discovered in 1982 that a fatal, degenerative disease was caused by proteinaceous infectious particles. Which disease was he studying?"
-  answer="scrapie"
+  question="Which satellite RNA that infects humans has been described by some scientists as a virusoid?"
+  answer="hepatitis delta virus (HDV)"
 >}}
-kuru
-chronic wasting disease
-scrapie
-mad cow disease
+hepatitis B virus (HBV)
+hepatitis delta virus (HDV)
+subterranean clover mottle virus
+potato spindle tuber viroid (PSTV)
 {{< /multiplechoice >}}
 
 {{< multiplechoice

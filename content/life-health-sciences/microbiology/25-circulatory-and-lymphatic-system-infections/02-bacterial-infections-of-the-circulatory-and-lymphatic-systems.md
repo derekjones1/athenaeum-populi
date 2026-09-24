@@ -39,7 +39,7 @@ A syndrome with signs and symptoms similar to staphylococcal TSS can be caused b
 
 **Check Your Understanding**
 
-{{< selfcheck question="How can large amounts of pro-inflammatory cytokines lead to septic shock?" hint="Trace the chain from cytokines to blood vessels to blood pressure to the definition of septic shock given earlier in this subsection." >}}
+{{< selfcheck question="How can large amounts of pro-inflammatory cytokines lead to septic shock?" hint="Look at the first paragraph of this subsection." >}}
 IL-1 and TNF-α induce vasodilation and reduce the tight junctions between vascular endothelial cells, leading to widespread edema. As fluids move out of circulation into tissues, blood pressure begins to drop, and if left unchecked, the blood pressure can fall below the level necessary to maintain proper kidney and respiratory functions — this is septic shock. The excessive release of cytokines also promotes the formation of blood clots, and the combination of low blood pressure and blood clots can result in multiple organ failure and death.
 ===CHECKS===
 IL-1 and TNF-α induce vasodilation and reduce the tight junctions between vascular endothelial cells, causing edema
@@ -115,13 +115,13 @@ The heart of an individual who had subacute bacterial endocarditis of the mitral
 
 **Check Your Understanding**
 
-{{< selfcheck question="Compare acute and subacute bacterial endocarditis." hint="One form destroys the valves within days; the other damages them slowly, with vegetations protecting the bacteria along the way." >}}
-Acute endocarditis can rapidly destroy the heart valves and, if untreated, lead to death in just a few days. In subacute bacterial endocarditis, by contrast, heart valve damage occurs slowly over a period of months: blood clots form in the heart and protect the bacteria from phagocytes, forming tissue-associated bacterial patches called vegetations, and the resulting damage — partly from the immune response causing fibrosis of the heart valves — can necessitate heart valve replacement. Outward signs of subacute endocarditis may include only a fever.
+{{< selfcheck question="Compare acute and subacute bacterial endocarditis." hint="Look at the first two paragraphs of the Bacterial Endocarditis and Pericarditis subsection." >}}
+Acute endocarditis can rapidly destroy the heart valves and, if untreated, lead to death in just a few days. In subacute bacterial endocarditis, by contrast, heart valve damage occurs slowly over a period of months: blood clots form in the heart and protect the bacteria from phagocytes, forming tissue-associated bacterial patches called vegetations, and the resulting damage — partly from the immune response causing fibrosis of the heart valves — can necessitate heart valve replacement. Outward signs of subacute endocarditis may include a fever.
 ===CHECKS===
 acute endocarditis can rapidly destroy the heart valves and lead to death in a few days if untreated
 subacute endocarditis damages the valves slowly, over months
-in subacute endocarditis, blood clots (vegetations) form in the heart and protect the bacteria from phagocytes
-subacute damage can necessitate heart valve replacement, and outward signs may include only a fever
+in subacute endocarditis, blood clots form in the heart and protect the bacteria from phagocytes, forming tissue-associated bacterial patches called vegetations
+subacute damage can necessitate heart valve replacement, and outward signs of subacute endocarditis may include a fever
 {{< /selfcheck >}}
 
 ## Gas Gangrene
@@ -162,8 +162,8 @@ Two important virulence factors produced by *Brucella* spp. are urease, which al
 
 **Check Your Understanding**
 
-{{< selfcheck question="Compare the pathogenesis of tularemia and brucellosis." hint="Both are gram-negative facultative intracellular pathogens transmitted from animals — compare how each one moves through the body once it infects a host." >}}
-Both *Francisella tularensis* (tularemia) and *Brucella* spp. (brucellosis) are gram-negative facultative intracellular pathogens acquired from animal contact. In tularemia, after the bacteria enter through a break in the skin they move to the lymph nodes, are ingested by phagocytes, escape the phagosome, and multiply intracellularly in the cytoplasm of phagocytes before disseminating through the blood to organs such as the liver, lungs, and spleen, producing granulomas. In brucellosis, the bacteria are likewise phagocytized by host neutrophils and macrophages, escape the phagosome, and grow within the cytoplasm; bacteria carried by macrophages disseminate throughout the body and form granulomas in many body sites, including bone, liver, spleen, lung, genitourinary tract, brain, heart, eye, and skin — a wider range of sites than tularemia's.
+{{< selfcheck question="Compare the pathogenesis of tularemia and brucellosis." hint="Look at the Tularemia and Brucellosis subsections' paragraphs on what the bacteria do after they enter the body." >}}
+Both *Francisella tularensis* (tularemia) and *Brucella* spp. (brucellosis) are gram-negative facultative intracellular pathogens acquired from animal contact. In tularemia, after the bacteria enter through a break in the skin they move to the lymph nodes, are ingested by phagocytes, escape the phagosome, and multiply intracellularly in the cytoplasm of phagocytes before disseminating through the blood to organs such as the liver, lungs, and spleen, producing granulomas. In brucellosis, the bacteria are likewise phagocytized by host neutrophils and macrophages, escape the phagosome, and grow within the cytoplasm; bacteria carried by macrophages disseminate throughout the body and form granulomas in many body sites, including bone, liver, spleen, lung, genitourinary tract, brain, heart, eye, and skin.
 ===CHECKS===
 both are gram-negative facultative intracellular pathogens
 tularemia bacteria move to the lymph nodes, are ingested by phagocytes, escape the phagosome, and multiply in the cytoplasm before disseminating to the liver, lungs, and spleen
@@ -215,7 +215,7 @@ This Wright's stain of a blood sample from a patient with plague shows the chara
 
 **Check Your Understanding**
 
-{{< selfcheck question="Compare bubonic plague, septicemic plague, and pneumonic plague." hint="Compare how each form is transmitted or acquired, its incubation period, and its mortality rate treated versus untreated." >}}
+{{< selfcheck question="Compare bubonic plague, septicemic plague, and pneumonic plague." hint="Look at the three paragraphs of the Plague subsection that each describe one form." >}}
 Bubonic plague, the most common form, follows the bite of an infected flea; after a 2- to 6-day incubation it causes fever, headache, hypotension, and chills, with the pathogen localizing in lymph nodes and causing swollen, hemorrhagic buboes, and has an average mortality rate of about 55% untreated and about 10% with treatment. Septicemic plague occurs when *Y. pestis* is introduced directly into the bloodstream through a cut or wound; after a 1- to 3-day incubation it causes fever, chills, extreme weakness, abdominal pain, and shock, with disseminated intravascular coagulation producing thrombi, ischemia, and blackened necrosis in the extremities, and is nearly 100% fatal untreated and about 50% fatal even with treatment. Pneumonic plague is a lung infection, acquired by inhaling aerosolized droplets or by spread from bubonic or septicemic disease elsewhere in the body; after a 1- to 3-day incubation it causes a rapidly developing pneumonia with shortness of breath, chest pain, and bloody or watery cough, is the only form spread person to person by infectious aerosol, and is likewise nearly 100% fatal untreated and about 50% fatal with treatment.
 ===CHECKS===
 bubonic plague follows a flea bite and causes swollen, hemorrhagic buboes in the lymph nodes
@@ -329,13 +329,13 @@ epidemic typhus is caused by Rickettsia prowazekii
 epidemic typhus is transmitted by body lice, Pediculus humanus
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe the life cycle of the deer tick and how it spreads Lyme disease." hint="Walk through all four developmental stages of the tick over its two-year life span, and note when in that cycle the spirochete is picked up and when it is transmitted." >}}
+{{< selfcheck question="Describe the life cycle of the deer tick and how it spreads Lyme disease." hint="Look at the second paragraph of the Lyme Disease subsection and the figure after it." >}}
 The black-legged (deer) tick, *Ixodes scapularis*, has a two-year life cycle with four stages, each requiring a blood meal. In spring, eggs hatch into six-legged larvae, which do not yet carry *Borrelia burgdorferi*; they may acquire the spirochete during their first blood meal, typically from a mouse. The larvae overwinter and molt into eight-legged nymphs the following spring, which feed primarily on small rodents but may also bite humans; it typically takes about 24 hours for an infected nymph to transmit enough *B. burgdorferi* to infect a human host during this feeding. Nymphs then mature into adult ticks, which feed on larger animals such as deer or, occasionally, humans, and then mate and lay eggs to continue the cycle. Lyme disease is spread to humans when an infected nymph or, less often, an infected adult tick takes a blood meal from a person.
 ===CHECKS===
 the tick has a two-year life cycle with four stages: egg, larva, nymph, and adult
 larvae do not carry Borrelia burgdorferi at hatching and may acquire it from their first blood meal, typically from a mouse
 nymphs feed on small rodents but may also bite humans, and take about 24 hours of feeding to transmit an infectious dose
-adults feed on larger animals such as deer or humans, then mate and lay eggs; humans are infected mainly by nymphs
+adults feed on larger animals such as deer or, occasionally, humans, and then mate and lay eggs
 {{< /selfcheck >}}
 
 {{< callout type="info" >}}
@@ -439,7 +439,7 @@ Although the circulatory system is a closed system, bacteria can enter the blood
 {{< multiplechoice
   question="What disease is most associated with *Clostridium perfringens*?"
   answer="gas gangrene"
-  hint="This anaerobic bacterium germinates in ischemic tissue and produces alpha-toxin and theta-toxin."
+  hint="Find the subsection that names this species as a causative agent."
 >}}
 endocarditis
 osteomyelitis
@@ -461,13 +461,13 @@ rat bite fever
 {{< textin
   question="________ refers to a loss of blood pressure resulting from a system-wide infection."
   answer="septic shock"
-  hint="It develops when pro-inflammatory cytokines cause vasodilation and edema severe enough to drop blood pressure below the level needed for kidney and respiratory function."
+  hint="Look at the paragraph on what large amounts of pro-inflammatory cytokines do to blood pressure."
 >}}
 
-{{< selfcheck question="Why are most vascular pathogens poorly communicable from person to person?" hint="Look at how the individual diseases in this section are actually acquired — from animals, arthropod bites, or a breach of the skin barrier — rather than from another sick person." >}}
-The module does not state a single general reason why vascular pathogens are poorly communicable person to person; it only shows, disease by disease, that most are acquired from an animal reservoir, an arthropod-vector bite, or a breach in the skin barrier rather than from casual contact with an infected person. Tularemia, for example, is explicitly described as "not directly communicable between humans," and is instead contracted from infected animal tissue or arthropod bites. Anaplasmosis, ehrlichiosis, the typhus diseases, Rocky Mountain spotted fever, Lyme disease, relapsing fever, and trench fever are likewise transmitted from an animal or human reservoir through an arthropod vector (tick, flea, or louse) rather than directly between people, and plague's bubonic and septicemic forms likewise require a flea vector or a wound — only pneumonic plague is described as spreading between humans, by infectious aerosol droplet.
+{{< selfcheck question="Why are most vascular pathogens poorly communicable from person to person?" hint="Look at the Summary and at the Transmission column of the Disease Profile tables." >}}
+Bacterial pathogens usually require a breach in the immune defenses to colonize the circulatory system; most often, this involves a wound or the bite of an arthropod vector. The module shows, disease by disease, that most are acquired from an animal reservoir, an arthropod-vector bite, or a wound rather than from an infected person. Tularemia, for example, is explicitly described as "not directly communicable between humans," and is instead contracted from infected animal tissue or arthropod bites. Anaplasmosis, ehrlichiosis, the typhus diseases, Rocky Mountain spotted fever, Lyme disease, relapsing fever, and trench fever are likewise transmitted from an animal or human reservoir through an arthropod vector (tick, flea, or louse) rather than directly between people, and plague's bubonic and septicemic forms likewise require a flea vector or a wound — only pneumonic plague is described as spreading between humans, by infectious aerosol droplet.
 ===CHECKS===
-the module does not state a single general reason why vascular pathogens are poorly communicable person to person
+bacterial pathogens usually require a breach in the immune defenses to colonize the circulatory system; most often, this involves a wound or the bite of an arthropod vector
 tularemia is explicitly described as not directly communicable between humans, and is instead acquired from infected animals or arthropod bites
 most of the arthropod-borne diseases in this section (anaplasmosis, ehrlichiosis, the typhus diseases, RMSF, Lyme disease, relapsing fever, trench fever) require a tick, flea, or louse vector rather than direct person-to-person contact
 pneumonic plague is the module's one described exception, spreading between humans by infectious aerosol droplet
@@ -478,7 +478,7 @@ pneumonic plague is the module's one described exception, spreading between huma
 {{< multiplechoice
   question="Which of the following diseases is caused by a spirochete?"
   answer="relapsing fever"
-  hint="The opening paragraph of Zoonotic Febrile Diseases names the one genus of spirochetes; then check which disease's subsection names that genus as its cause."
+  hint="Look at the opening paragraph of the Zoonotic Febrile Diseases subsection and at the subsections under it."
 >}}
 tularemia
 relapsing fever
@@ -489,7 +489,7 @@ Rocky Mountain spotted fever
 {{< multiplechoice
   question="Which of the following diseases is transmitted by body lice?"
   answer="epidemic typhus"
-  hint="Its pathogen, *Rickettsia prowazekii*, is transmitted by *Pediculus humanus*."
+  hint="Check the vector that each option's subsection names."
 >}}
 tularemia
 bubonic plague
@@ -504,7 +504,7 @@ epidemic typhus
   hint="See the Lyme Disease subsection's paragraph on the early-localized stage of symptoms."
 >}}
 
-{{< selfcheck question="What are the three forms of plague and how are they contracted?" hint="Each form is named for where in the body Yersinia pestis is introduced or localizes — the skin and lymph nodes, the bloodstream, or the lungs." >}}
+{{< selfcheck question="What are the three forms of plague and how are they contracted?" hint="Look at the Plague subsection's paragraphs on each form." >}}
 Bubonic plague, the most common form, is contracted through the bite of an infected flea, which introduces *Yersinia pestis* into the tissues and blood circulation, most often of the lower extremities; the pathogen then localizes in the lymph nodes. Septicemic plague is contracted when *Y. pestis* is directly introduced into the bloodstream through a cut or wound and circulates through the body. Pneumonic plague is contracted through inhalation of aerosolized droplets from an infected individual, or when a bubonic or septicemic infection elsewhere in the body spreads to the lungs; it is the only form that can be spread from person to person by infectious aerosol droplet.
 ===CHECKS===
 bubonic plague is contracted through the bite of an infected flea, and the pathogen localizes in the lymph nodes
@@ -513,7 +513,7 @@ pneumonic plague is contracted by inhaling aerosolized droplets, or by spread fr
 pneumonic plague is the only form that spreads person to person, by infectious aerosol droplet
 {{< /selfcheck >}}
 
-{{< selfcheck question="Compare epidemic and murine typhus." hint="Compare their causative pathogens, their arthropod vectors, and how long their fevers last." >}}
+{{< selfcheck question="Compare epidemic and murine typhus." hint="Look at the Epidemic Typhus and Murine (Endemic) Typhus subsections." >}}
 Epidemic typhus is caused by *Rickettsia prowazekii* and is transmitted by body lice (*Pediculus humanus*); it is characterized by a high fever and body aches lasting about 2 weeks, with a rash that develops on the abdomen and chest and radiates to the extremities, and severe cases can cause death from shock or damage to the heart and brain. Murine (endemic) typhus is caused by *Rickettsia typhi* and is transmitted by the bite of the rat flea (*Xenopsylla cheopis*), with infected rats as the main reservoir; its signs and symptoms include a rash and chills accompanied by headache and fever lasting about 12 days, with some patients also developing a cough and pneumonia-like symptoms, and severe illness in immunocompromised patients can include seizures, coma, and renal and respiratory failure.
 ===CHECKS===
 epidemic typhus is caused by Rickettsia prowazekii and transmitted by body lice
@@ -532,5 +532,5 @@ the module's own tick-removal guidelines reduce the chances of exposure to patho
 {{< /selfcheck >}}
 
 <small>
-This section is adapted from [Microbiology, Section 25.2: Bacterial Infections of the Circulatory and Lymphatic Systems](https://openstax.org/books/microbiology/pages/25-2-bacterial-infections-of-the-circulatory-and-lymphatic-systems) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with `kind` set from the rendered image and alt text rewritten to describe what is drawn; the Clinical Focus box's closing "jump to the next/previous box" sentence is replaced with plain-text links naming where the case began (25.1) and where it concludes (25.4), since the case skips 25.3; the two Disease Profile table images are transcribed as two Markdown tables rather than vendored as images, from the CNXML alt checked against the printed image; the alt's "[MISSING]" Diagnostic Tests cell for toxic shock-like syndrome (STSS) is filled from the printed image's reading, "Serology, blood culture, urinalysis"; the printed table image's doubled-letter misspelling "SStaphylococcus" in the Endocarditis/pericarditis Pathogen cell is corrected to "Staphylococcus," matching the CNXML alt, which already prints the name correctly; the alt's "Rickettsia rickettsia" for Rocky Mountain spotted fever's pathogen is corrected to "Rickettsia rickettsii," matching the module's own body text; the printed table's "cephtriaxone" misspelling is corrected to "ceftriaxone"; the body prose's "Staphylcoccus" (missing "o," § Bacterial Endocarditis and Pericarditis) is corrected to "Staphylococcus"; the Key terms "rat-bite fever" bullet's organism name is corrected from the Glossary appendix's "Bacillus moniliformis" to "Streptobacillus moniliformis," the name this section's own text uses three times, with a visible source note beside the correction, and the Practice distractor that repeated the appendix's wrong genus is replaced with the correct one; the Tick Tips box's "two body segments, the cephalothorax and the head" is corrected to "two body regions, the capitulum, which bears the mouthparts, and the idiosoma," with a visible source note beside the correction, since ticks have no cephalothorax; the cross-reference to m58791 is linked with the target page's own title, "Foundations of Modern Cell Theory," rather than the source's own reversed link text, "Modern Foundations of Cell Theory"; footnotes become inline parenthetical citations with bare URLs dropped; the body Check Your Understanding question "What bacterium the most common cause of both septic arthritis and osteomyelitis?" is corrected to "What bacterium **is** the most common cause..." (one word restored); every body Check Your Understanding question, and all of the source's unkeyed Short Answer and Critical Thinking questions (2 each), remain self-checks with model answers assembled from this section's own text — the source prints no key for any of them, and although one module sentence fixes "What is the vector associated with epidemic typhus?" on its own terms, the Practice block already keys a source multiple-choice item to the same body-lice/epidemic-typhus fact in reverse ("Which of the following diseases is transmitted by body lice?"), so this bullet stays a self-check rather than re-asking that fact as a second graded item; the end-of-section exercises are adapted into the interactive Practice block; a key-term recall item is not needed to fill either Practice group, since the source's own keyed exercises already meet the group floor.
+This section is adapted from [Microbiology, Section 25.2: Bacterial Infections of the Circulatory and Lymphatic Systems](https://openstax.org/books/microbiology/pages/25-2-bacterial-infections-of-the-circulatory-and-lymphatic-systems) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with `kind` set from the rendered image and alt text rewritten to describe what is drawn; the Clinical Focus box's closing "jump to the next/previous box" sentence is replaced with plain-text links naming where the case began (25.1) and where it concludes (25.4), since the case skips 25.3; the two Disease Profile table images are transcribed as two Markdown tables rather than vendored as images, from the CNXML alt checked against the printed image; the alt's "[MISSING]" Diagnostic Tests cell for toxic shock-like syndrome (STSS) is filled from the printed image's reading, "Serology, blood culture, urinalysis"; the printed table image's doubled-letter misspelling "SStaphylococcus" in the Endocarditis/pericarditis Pathogen cell is corrected to "Staphylococcus," matching the CNXML alt, which already prints the name correctly; the alt's "Rickettsia rickettsia" for Rocky Mountain spotted fever's pathogen is corrected to "Rickettsia rickettsii," matching the module's own body text; the printed table's "cephtriaxone" misspelling is corrected to "ceftriaxone"; the body prose's "Staphylcoccus" (missing "o," § Bacterial Endocarditis and Pericarditis) is corrected to "Staphylococcus"; the Key terms "rat-bite fever" bullet's organism name is corrected from the Glossary appendix's "Bacillus moniliformis" to "Streptobacillus moniliformis," the name this section's own text uses three times, with a visible source note beside the correction, and the Practice distractor that repeated the appendix's wrong genus is replaced with the correct one; the Tick Tips box's "two body segments, the cephalothorax and the head" is corrected to "two body regions, the capitulum, which bears the mouthparts, and the idiosoma," with a visible source note beside the correction, since ticks have no cephalothorax; the cross-reference to m58791 is linked with the target page's own title, "Foundations of Modern Cell Theory," rather than the source's own reversed link text, "Modern Foundations of Cell Theory"; footnotes become inline parenthetical citations with bare URLs dropped; the body Check Your Understanding question "What bacterium the most common cause of both septic arthritis and osteomyelitis?" is corrected to "What bacterium **is** the most common cause..." (one word restored); every body Check Your Understanding question, and all of the source's unkeyed Short Answer and Critical Thinking questions (2 each), remain self-checks with model answers assembled from this section's own text — the source prints no key for any of them, and although one module sentence fixes "What is the vector associated with epidemic typhus?" on its own terms, the Practice block already keys a source multiple-choice item to the same body-lice/epidemic-typhus fact in reverse ("Which of the following diseases is transmitted by body lice?"), so this bullet stays a self-check rather than re-asking that fact as a second graded item; the end-of-section exercises are adapted into the interactive Practice block and grouped under the objective each tests, which changes the source's printed order: the *Clostridium perfringens* and plague Multiple Choice items, the septic-shock Fill in the Blank, and the person-to-person Critical Thinking question come first, ahead of the spirochete and body-lice Multiple Choice items, the Lyme-disease Fill in the Blank, and the two Short Answer questions; a key-term recall item is not needed to fill either Practice group, since the source's own keyed exercises already meet the group floor.
 </small>

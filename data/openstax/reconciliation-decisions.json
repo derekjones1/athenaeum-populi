@@ -1959,6 +1959,28 @@
       "status": "correct-local-source-defect",
       "errataEntry": 961,
       "rationale": "The Short Answer exercise fs-id1172100537950 (para fs-id1172098317960) asks \"Why are Mycoplasma and Chlamydia classified as obligate intracellular pathogens?\" The book never classifies Mycoplasma as obligate intracellular: its Section 4.4 (m58798) describes Mycoplasma as the smallest, wall-less, pleomorphic low G+C bacteria, and only Chlamydia is called obligate intracellular (Section 4.3, m58797: \"Members of the genus Chlamydia are gram-negative, obligate intracellular pathogens\"). The page restores the dropped Short Answer as a self-check with the source stem verbatim; its model answer gives the module's definition of an obligate intracellular pathogen and a visible Source note correcting the question's premise for Mycoplasma, disclosed in the footer. Found by the mic02 practice sweep, September 22, 2026; restored September 23, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/19-diseases-of-the-immune-system/01-hypersensitivities.md",
+      "bundle": "microbiology",
+      "moduleId": "m58892",
+      "sourceElementIds": [
+        "fs-id1167661591010"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1035,
+      "rationale": "The module places the vomiting center in the cerebellum. OpenStax Anatomy and Physiology 2e §15.4 (m46587, paragraph fs-id2146339) identifies the area postrema, next to the fourth ventricle in the brain stem, as “the part of the brain responsible for vomiting, or emesis.” The page prints “brain stem” in place of “cerebellum” with a visible Source note beside the sentence, and the correction is disclosed in the footer. Found by the Microbiology chapter 19 re-review, September 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/21-skin-and-eye-infections/01-anatomy-and-normal-microbiota-of-the-skin-and-eyes.md",
+      "bundle": "microbiology",
+      "moduleId": "m58906",
+      "sourceElementIds": [
+        "fs-id1167662552650"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1039,
+      "rationale": "The medical-terms table defines a bulla as “fluid-filled blister no more than 5 mm in diameter,” which describes a vesicle and duplicates the table's own vesicle row. This book's own §21.2 (m58907, paragraph fs-id1167663536370) says “Bullae are large, fluid-filled blisters that measure at least 5 mm in diameter.” The page's table reads “at least 5 mm in diameter,” matching §21.2, with a visible Source note beside it and disclosure in the footer. Found by the Microbiology chapter 21 re-review, September 24, 2026."
     }
   ]
 }

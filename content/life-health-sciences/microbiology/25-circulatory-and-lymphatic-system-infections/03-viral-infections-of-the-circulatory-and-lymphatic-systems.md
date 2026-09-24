@@ -50,13 +50,13 @@ Cells infected with CMV become enlarged and have a characteristic "owl's eye" nu
 
 **Check Your Understanding**
 
-{{< selfcheck question="Compare the diseases caused by HHV-4 and HHV-5." hint="Note what both viruses cause in common — a form of mononucleosis — before contrasting who each is most dangerous for." >}}
-HHV-4 (Epstein-Barr virus) and HHV-5 (cytomegalovirus) both can cause a form of infectious mononucleosis and both establish lifelong latent infections, but the diseases the two are otherwise best known for differ. HHV-4 causes classic infectious mononucleosis in young adults, with pharyngitis, fever, fatigue, and lymph node swelling, and, in patients with malaria or HIV, can lead to the malignant cancer Burkitt lymphoma. HHV-5 causes most cases of non-Epstein-Barr infectious mononucleosis, is usually asymptomatic, but is an important pathogen in immunocompromised hosts: it can cause serious congenital infection when transmitted from a pregnant person to a fetus, and in transplant recipients or patients with AIDS it can cause fever, transplant rejection, encephalitis, or retinitis leading to blindness.
+{{< selfcheck question="Compare the diseases caused by HHV-4 and HHV-5." hint="Compare the first subsection with the Cytomegalovirus Infections subsection." >}}
+HHV-4 (Epstein-Barr virus) and HHV-5 (cytomegalovirus) both can cause a form of infectious mononucleosis, and both, like all herpes viruses, can remain dormant in a latent state, but the diseases the two are otherwise best known for differ. HHV-4 causes classic infectious mononucleosis in young adults, with pharyngitis, fever, fatigue, and lymph node swelling, and, in patients with malaria or HIV, can lead to the malignant cancer Burkitt lymphoma. HHV-5 is the major cause of non-Epstein-Barr infectious mononucleosis, is usually asymptomatic, but is an important pathogen in immunocompromised hosts: it can cause serious congenital infection when transmitted from a pregnant person to a fetus, and in transplant recipients or patients with AIDS it can cause fever, transplant rejection, encephalitis, or retinitis leading to blindness.
 ===CHECKS===
-both HHV-4 and HHV-5 can cause a form of infectious mononucleosis and establish lifelong latent infection
+both HHV-4 and HHV-5 can cause a form of infectious mononucleosis and, like all herpes viruses, can remain dormant in a latent state
 HHV-4 causes classic infectious mononucleosis in young adults, with pharyngitis, fever, fatigue, and lymph node swelling
 in patients with malaria or HIV, HHV-4 can lead to Burkitt lymphoma
-HHV-5 causes most non-Epstein-Barr infectious mononucleosis and is usually asymptomatic
+HHV-5 is the major cause of non-Epstein-Barr infectious mononucleosis and is usually asymptomatic
 HHV-5 can cause serious congenital infection and, in transplant recipients or patients with AIDS, fever, transplant rejection, encephalitis, or retinitis
 {{< /selfcheck >}}
 
@@ -108,7 +108,7 @@ Use this [interactive map](https://openstax.org/l/22denguemap) to explore the gl
 
 **Check Your Understanding**
 
-{{< selfcheck question="Name three arboviral diseases and explain why they are so named." hint="The section names the vector class in the same sentence it introduces the word arbovirus." >}}
+{{< selfcheck question="Name three arboviral diseases and explain why they are so named." hint="See the opening paragraph of the subsection after Cytomegalovirus Infections, then each disease's own subsection." >}}
 This section discusses three arboviral diseases: yellow fever, dengue fever, and chikungunya fever. They are called arboviruses because they are arthropod-borne viruses — viruses transmitted by arthropod vectors, such as mosquitoes; each of these three diseases is transmitted to humans by a mosquito vector (infected monkeys to humans via *Aedes africanus* or *Haemagogus* spp., or between humans via *Aedes aegypti*, for yellow fever; *A. aegypti* or *A. albopictus* for dengue fever and chikungunya fever).
 ===CHECKS===
 the three arboviral diseases discussed are yellow fever, dengue fever, and chikungunya fever
@@ -119,8 +119,8 @@ each of the three diseases is transmitted to humans by a mosquito vector
 {{< textin
   question="What is the best method for controlling outbreaks of arboviral diseases?"
   answer="vector control"
-  accept="controlling vectors|controlling the vectors"
-  hint="This section states the same strategy for chikungunya fever that it recommends for yellow fever's mosquito vectors."
+  accept="controlling vectors|controlling the vectors|mosquito control"
+  hint="See the last paragraph of the Dengue Fever subsection or of the Chikungunya Fever subsection."
 >}}
 
 ## Ebola Virus Disease
@@ -140,7 +140,7 @@ An Ebola virus particle viewed with electron microscopy. These filamentous virus
 {{< multiplechoice
   question="How is Ebola transmitted?"
   answer="Through direct contact with body fluids such as blood, saliva, sweat, urine, feces, or vomit, and through indirect contact with contaminated fomites."
-  hint="Think about what kind of contact spreads EVD — not an insect bite, not contaminated food, not rodent urine."
+  hint="See the first paragraph of the Ebola Virus Disease subsection."
 >}}
 Through direct contact with body fluids such as blood, saliva, sweat, urine, feces, or vomit, and through indirect contact with contaminated fomites.
 Through the bite of an infected *Aedes* mosquito.
@@ -158,7 +158,7 @@ ELISA, Western blot, rapid immunoblot strip assay (RIBA), and RT-PCR detect host
 
 **Check Your Understanding**
 
-{{< selfcheck question="Compare the two Hantavirus diseases discussed in this section." hint="One of the two diseases has not been reported in the US; check which symptoms and mortality rate belong to which." >}}
+{{< selfcheck question="Compare the two Hantavirus diseases discussed in this section." hint="See all three paragraphs of the subsection after Ebola Virus Disease." >}}
 This section discusses two hantavirus syndromes. Hantavirus pulmonary syndrome (HPS), found in North America, begins as a nonspecific flu-like illness with headache, fever, myalgia, nausea, vomiting, diarrhea, and abdominal pain; patients rapidly develop pulmonary edema and hypotension resulting in pneumonia, shock, and death, with a mortality rate of up to 50%. Hemorrhagic fever with renal syndrome (HFRS), which has not been reported in the US, instead begins with high fever, headache, chills, nausea, inflammation or redness of the eyes, or a rash, with later symptoms of hemorrhaging, hypotension, kidney failure, shock, and death; its mortality rate can be as high as 15%. There are no clinical treatments other than general supportive care for HPS, while HFRS can be treated with ribavirin.
 ===CHECKS===
 HPS, found in North America, begins as a flu-like illness and can progress to pulmonary edema, hypotension, pneumonia, shock, and death, with a mortality rate up to 50%
@@ -196,12 +196,12 @@ As a consequence of provirus formation, it is currently not possible to eliminat
 
 **Check Your Understanding**
 
-{{< selfcheck question="Why is it not yet possible to cure HIV infections?" hint="The module names one mechanism that keeps the virus permanently in the body and one reason antibodies can't finish the job." >}}
-It is not yet possible to cure HIV infections because of provirus formation: once HIV's genetic material has integrated into the host cell as a provirus, it is currently not possible to eliminate the virus from an infected patient's body. Elimination by specific antibodies is also ineffective, because the virus mutates rapidly — a result of the error-prone reverse transcriptase and its inability to correct errors. Antiviral treatments can greatly extend life expectancy and, combined as antiretroviral therapy (ART), combat the problem of drug resistance, but they do not eliminate the provirus.
+{{< selfcheck question="Why is it not yet possible to cure HIV infections?" hint="See the paragraph just above this item." >}}
+It is not yet possible to cure HIV infections because, as a consequence of provirus formation, it is currently not possible to eliminate HIV from an infected patient's body. Elimination by specific antibodies is also ineffective, because the virus mutates rapidly — a result of the error-prone reverse transcriptase and its inability to correct errors. Antiviral treatments, however, can greatly extend life expectancy, and combinations of antiretroviral drugs called antiretroviral therapy (ART) are used to combat the problem of drug resistance.
 ===CHECKS===
 provirus formation means it is currently not possible to eliminate HIV from an infected patient's body
 elimination by specific antibodies is ineffective because the virus mutates rapidly, from an error-prone reverse transcriptase that cannot correct errors
-antiviral treatments, combined as ART, extend life expectancy and combat drug resistance but do not eliminate the provirus
+antiviral treatments can greatly extend life expectancy, and combinations of antiretroviral drugs called ART are used to combat the problem of drug resistance
 {{< /selfcheck >}}
 
 {{< callout type="info" >}}
@@ -257,33 +257,11 @@ Many viruses are able to cause systemic, difficult-to-treat infections because o
 
 ### Identify common viral pathogens that cause infections of the circulatory and lymphatic systems
 
-{{< multiplechoice
-  question="Which of the following viruses is most widespread in the human population?"
-  answer="Epstein-Barr virus"
-  hint="Nearly all people have been exposed to this virus at some point in childhood, according to serological testing."
->}}
-human immunodeficiency virus
-Ebola virus
-Epstein-Barr virus
-hantavirus
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Which of these viruses is spread through mouse urine or feces?"
-  answer="hantavirus"
-  hint="This virus is shed by wild rodents and reaches humans through inhaled aerosols of their waste."
->}}
-Epstein-Barr
-hantavirus
-human immunodeficiency virus
-cytomegalovirus
-{{< /multiplechoice >}}
-
 {{< textin
-  question="________ is a cancer that forms in patients with HHV-4 and malaria coinfections."
-  answer="Burkitt lymphoma"
-  accept="Burkitt's lymphoma"
-  hint="See the first subsection's paragraph on patients with malaria or HIV."
+  question="Infectious mononucleosis is caused by ________ infections."
+  answer="Epstein-Barr virus"
+  accept="EBV|Epstein-Barr|HHV-4|HHV4|human herpesvirus 4|cytomegalovirus|CMV|HHV-5|HHV5|human herpesvirus 5"
+  hint="See the first subsection's paragraph on uninfected young adults."
 >}}
 
 {{< textin
@@ -294,11 +272,33 @@ cytomegalovirus
 >}}
 
 {{< textin
-  question="Infectious mononucleosis is caused by ________ infections."
-  answer="Epstein-Barr virus"
-  accept="EBV|Epstein-Barr|HHV-4|human herpesvirus 4"
-  hint="See the first subsection's paragraph on uninfected young adults."
+  question="________ is a cancer that forms in patients with HHV-4 and malaria coinfections."
+  answer="Burkitt lymphoma"
+  accept="Burkitt's lymphoma"
+  hint="See the first subsection's paragraph on patients with malaria or HIV."
 >}}
+
+{{< multiplechoice
+  question="Which of the following viruses is most widespread in the human population?"
+  answer="Epstein-Barr virus"
+  hint="See the opening paragraph of the page's first subsection."
+>}}
+human immunodeficiency virus
+Ebola virus
+Epstein-Barr virus
+hantavirus
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which of these viruses is spread through mouse urine or feces?"
+  answer="hantavirus"
+  hint="See the first paragraph of the subsection after Ebola Virus Disease."
+>}}
+Epstein-Barr
+hantavirus
+human immunodeficiency virus
+cytomegalovirus
+{{< /multiplechoice >}}
 
 ### Compare the major characteristics of specific viral diseases affecting the circulatory and lymphatic systems
 
@@ -312,7 +312,7 @@ cytomegalovirus
 3
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the progression of an HIV infection over time with regard to the number of circulating viruses, host antibodies, and CD4 T cells." hint="Trace the AIDS progression figure's three stages, and note when antibody testing becomes reliable." >}}
+{{< selfcheck question="Describe the progression of an HIV infection over time with regard to the number of circulating viruses, host antibodies, and CD4 T cells." hint="See the Human Immunodeficiency Virus subsection's three-stage list, the graph after it, and the diagnosis paragraph that follows." >}}
 During Stage 1 (acute HIV infection, weeks 2–4 after infection), patients have more than 500 CD4 T cells/µL and a large amount of circulating virus, and are very contagious; it can take weeks or months for the body to produce detectable antibodies, so a fourth-generation antibody-antigen test or a nucleic acid test is used to confirm infection at this early stage. During Stage 2 (clinical latency), CD4 T-cell counts stay between 200 and 499 cells/µL while HIV reproduces at low levels, sometimes for a decade or longer; near the end of this stage, viral load increases again and the CD4 T-cell count begins to decrease. In Stage 3 (AIDS), the CD4 T-cell count drops below 200 cells/µL, viral load is high, patients are highly infectious, and, without treatment, typically survive about 3 years.
 ===CHECKS===
 Stage 1 (acute infection): more than 500 CD4 T cells/µL and a large amount of circulating virus; patients are very contagious
@@ -322,7 +322,7 @@ near the end of the latent stage, viral load increases again and the CD4 T-cell 
 Stage 3 (AIDS): CD4 T-cell count drops below 200 cells/µL, viral load is high, patients highly infectious, survive about 3 years without treatment
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe the general types of diagnostic tests used to diagnose patients infected with HIV." hint="The module names three kinds of test, in the order it introduces them." >}}
+{{< selfcheck question="Describe the general types of diagnostic tests used to diagnose patients infected with HIV." hint="See the paragraph just after the HIV progression graph." >}}
 The module describes three general types of diagnostic tests for HIV. The initial diagnosis is a serological test for antibody production against the pathogen, with positive results confirmed by Western blot or PCR tests. Because it can take weeks or months for the body to produce antibodies, fourth-generation tests instead detect both HIV antibodies and HIV antigens, which are present even before the body begins producing antibodies. A third type, nucleic acid tests (NATs), are relatively expensive and uncommon but can detect HIV directly in blood and determine the viral load.
 ===CHECKS===
 a serological antibody test is the initial diagnosis, confirmed by Western blot or PCR
@@ -330,15 +330,15 @@ fourth-generation tests detect both HIV antibodies and HIV antigens, present eve
 nucleic acid tests (NATs) are a third, relatively expensive and uncommon type that can detect HIV directly and determine viral load
 {{< /selfcheck >}}
 
-{{< selfcheck question="Identify the general categories of drugs used in ART used to treat patients infected with HIV." hint="The module groups ART drugs by which step of the virus's replication each class blocks." >}}
-The module names three general categories of antiretroviral drug targets. One class of drugs inhibits HIV entry into the cell. Other classes inhibit reverse transcriptase by blocking the virus's viral RNA-dependent and DNA-dependent DNA polymerase activity. Still others inhibit one of the three HIV enzymes needed for the virus to replicate inside human cells; the module does not name these enzymes or any specific drugs further.
+{{< selfcheck question="Identify the general categories of drugs used in ART used to treat patients infected with HIV." hint="See the last paragraph of the Human Immunodeficiency Virus subsection." >}}
+The module names three general categories of antiretroviral drug targets. One class of drugs inhibits HIV entry into the cell. Other classes inhibit reverse transcriptase by blocking viral RNA-dependent and DNA-dependent DNA polymerase activity. Still others inhibit one of the three HIV enzymes needed for the virus to replicate inside human cells; the module does not name these enzymes or any specific drugs further.
 ===CHECKS===
 one class of drugs inhibits HIV entry into the cell
 other classes inhibit reverse transcriptase by blocking viral RNA-dependent and DNA-dependent DNA polymerase activity
 other classes inhibit one of the three HIV enzymes needed for the virus to replicate inside human cells
 {{< /selfcheck >}}
 
-{{< selfcheck question="Which is a bigger threat to the US population, Ebola or yellow fever? Why?" hint="Check whether the module actually states a verdict before assembling the facts it does give for each disease." >}}
+{{< selfcheck question="Which is a bigger threat to the US population, Ebola or yellow fever? Why?" hint="See the first and last paragraphs of the Yellow Fever subsection and of the Ebola Virus Disease subsection." >}}
 This section states no verdict on which disease is the bigger threat to the US population; it gives no comparative risk assessment. What it does state, for each disease individually, is this: yellow fever was once common in the US and caused serious outbreaks between 1700 and 1900, but has since been eliminated from the US through vector control, and no effective treatment exists though a vaccine is available; the 2014 Ebola epidemic, by contrast, occurred in Guinea, Liberia, and Sierra Leone, infecting more than 28,000 people in 10 countries and killing more than 11,000, and Ebola remains extremely hazardous to health-care workers wherever an outbreak occurs, with no effective, approved treatment beyond supportive care.
 ===CHECKS===
 the module states no comparative verdict on which disease is the bigger threat to the US population
@@ -346,4 +346,4 @@ yellow fever was once common in the US, caused serious outbreaks between 1700 an
 the 2014 Ebola epidemic occurred in Guinea, Liberia, and Sierra Leone, infecting more than 28,000 people in 10 countries and killing more than 11,000, with no effective, approved treatment beyond supportive care
 {{< /selfcheck >}}
 
-<small>This section is adapted from [Microbiology, Section 25.3: Viral Infections of the Circulatory and Lymphatic Systems](https://openstax.org/books/microbiology/pages/25-3-viral-infections-of-the-circulatory-and-lymphatic-systems) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the HIV micrograph's source caption places the budding virions "(top right)" while the vendored artwork shows the particle-studded lymphocyte at left of centre; the caption is kept as printed and the mismatch is a source defect; all six ordinary figures re-encoded as WebP and rendered as mediafigures with `kind` set explicitly after each image was inspected — `kind="photo"` for Burkitts, CMV, Ebola, and HIV (each photographic or micrograph) and `kind="diagram"` for HIVPrev and AIDS (a drawn map and a drawn graph); Burkitts carries `eager="true"` as the page's first figure; the Burkitts, CMV, Ebola, and HIV alts are rewritten as plain descriptions from the images, each checked against the vendored WebP; the HIVPrev alt is kept as the source's own, since it already reads as a plain, complete description checked against the image with no divergence found; the AIDS graph's alt is rewritten as a short description with its full stage-by-stage walk-through moved into a `longdesc`, since the multi-stage, broken-axis graph overflows the 600-character alt cap; the `longdesc`'s classical-latency clause omits the source alt's "(T-cell depletion, immune dysfunction, and neurocognitive impairment)" parenthetical, since the artwork itself prints no such text under that bracket — a `longdesc` describes what is drawn; the seventh figure, the Disease Profile table image (`OSC_Microbio_25_03_Viruses`), is transcribed as a Markdown table from the source alt, checked against the printed PDF pages, and is not vendored, per this book's Disease Profile rule; the Cytomegalovirus infection row's Transmission cell diverges between the two source artifacts — the pinned CNXML alt reads "infected people can transmit virus to fetus...", while the printed table image (and PDF p-1054) read "infected mothers can transmit virus to fetus..." — the alt is transcribed as printed ("infected people"), per this book's rule that the pinned alt wins a Disease Profile table's alt/image divergence; the module's sixteen footnote citations are rendered as inline parenthetical citations after the sentences they support, with the bare access URLs and "Accessed" dates dropped and the one DOI-bearing citation unaffected (none of this module's citations carry a DOI); three consecutive "ibid." footnotes are kept as printed, each following the citation it repeats; the three source Multiple Choice items and the three source Fill in the Blank items are adapted into Practice unchanged with their source options and keys (C, B, A; Burkitt lymphoma, Arboviruses, Epstein-Barr virus), in their printed order — the "Arboviruses" `textin` accepts the module's own expansion, "arthropod-borne viruses," the "Epstein-Barr virus" `textin` accepts the module's own names for the virus (`EBV`, `HHV-4`, "human herpesvirus 4") and "Epstein-Barr" alone, the "Burkitt lymphoma" `textin` accepts "Burkitt's lymphoma," and the body "vector control" `textin` accepts "controlling vectors"; of the section's three unkeyed Short Answer questions and one unkeyed Critical Thinking question, all four remain self-checks with author-written model answers assembled from this module's own sentences, since the source prints no key for any of them and each needs more than one module sentence to answer honestly (the HIV-progression answer draws on the Stage 1–3 list and the antibody-timing sentence; the diagnostic-tests and ART-drug-category answers each draw on their own paragraph and name no term the module does not use; the Ebola-vs-yellow-fever answer states plainly that the module gives no comparative verdict and reasons only from what the module says about each disease separately); of this section's six body Check Your Understanding bullets, two are graded from a single fixing sentence of their own subsection — "How is Ebola transmitted?" as a `multiplechoice` and "What is the best method for controlling outbreaks of arboviral diseases?" as a `textin` keyed "vector control" — and the remaining four stay self-checks whose model answers assemble more than one of this module's own sentences (the HHV-4/HHV-5 comparison, the arboviral-diseases-naming bullet paired with the graded vector-control bullet in the same box, the two Hantavirus diseases, and why HIV cannot yet be cured); key terms are compiled from the module's nine `<term>` elements (no repeats) plus two additional bullets, Ebola virus disease (EVD) and acquired immunodeficiency syndrome (AIDS), neither of which carries a `<term>` tag anywhere in the body CNXML despite each having its own body discussion (EVD its own subsection; AIDS its own bolded Stage-3 list item), a bold Summary appearance, and a Disease-Profile table row — both Key terms bullets are section-derived rather than `<term>`-tagged, with their definitions taken verbatim from the book's Glossary appendix (m58950), which prints a headword for each ("Ebola virus disease (EVD)" and "acquired immunodeficiency syndrome (AIDS)"); "Antiretroviral therapy (ART)" is likewise bold-only in the Summary and not `<term>`-tagged, but the Glossary appendix prints no headword for it, so it gets no Key terms bullet; all eleven Key terms bullets are Glossary-sourced, none sentence-derived from a defining clause; three occurrences of the Greek small letter mu before the unit L in the CD4 T-cell-count list are normalized to the micro sign before L per this book's house notation rule, silently, since it is a character-encoding normalization rather than a content correction; "EBV⁺ B cells" is set with the Unicode superscript plus sign, matching the source's inline superscript; this module carries no `<link document="…">` cross-reference to another module, so no cross-book link appears on this page; the HIV section's opening sentence, which the source prints as "Human T-lymphotropic viruses (HTLV), also called human immunodeficiency viruses (HIV) are retroviruses that are the causative agent of acquired immune deficiency syndrome (AIDS)," is corrected to "Human immunodeficiency viruses (HIV) are retroviruses that are the causative agent of acquired immune deficiency syndrome (AIDS)" with a visible source note beside it, since HTLV-1 and HTLV-2 are distinct deltaretroviruses (causing adult T-cell leukemia and HAM/TSP) and not another name for HIV, a lentivirus that briefly carried the provisional designation HTLV-III in 1984; no source exercise, table, or Check Your Understanding bullet is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 25.3: Viral Infections of the Circulatory and Lymphatic Systems](https://openstax.org/books/microbiology/pages/25-3-viral-infections-of-the-circulatory-and-lymphatic-systems) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the HIV micrograph's source caption places the budding virions "(top right)" while the vendored artwork shows the particle-studded lymphocyte at left of centre; the caption is kept as printed and the mismatch is a source defect; all six ordinary figures re-encoded as WebP and rendered as mediafigures with `kind` set explicitly after each image was inspected — `kind="photo"` for Burkitts, CMV, Ebola, and HIV (each photographic or micrograph) and `kind="diagram"` for HIVPrev and AIDS (a drawn map and a drawn graph); Burkitts carries `eager="true"` as the page's first figure; the Burkitts, CMV, Ebola, and HIV alts are rewritten as plain descriptions from the images, each checked against the vendored WebP; the HIVPrev alt is kept as the source's own, since it already reads as a plain, complete description checked against the image with no divergence found; the AIDS graph's alt is rewritten as a short description with its full stage-by-stage walk-through moved into a `longdesc`, since the multi-stage, broken-axis graph overflows the 600-character alt cap; the `longdesc`'s classical-latency clause omits the source alt's "(T-cell depletion, immune dysfunction, and neurocognitive impairment)" parenthetical, since the artwork itself prints no such text under that bracket — a `longdesc` describes what is drawn; the seventh figure, the Disease Profile table image (`OSC_Microbio_25_03_Viruses`), is transcribed as a Markdown table from the source alt, checked against the printed PDF pages, and is not vendored, per this book's Disease Profile rule; the Cytomegalovirus infection row's Transmission cell diverges between the two source artifacts — the pinned CNXML alt reads "infected people can transmit virus to fetus...", while the printed table image (and PDF p-1054) read "infected mothers can transmit virus to fetus..." — the alt is transcribed as printed ("infected people"), per this book's rule that the pinned alt wins a Disease Profile table's alt/image divergence; the Yellow fever row's stray comma in the alt's "mucosal, hemorrhaging" is dropped ("mucosal hemorrhaging," as the body's "mucosal hemorrhages" reads); the Fill in the Blank "Infectious mononucleosis is caused by ________ infections" also accepts cytomegalovirus (CMV, HHV-5) beside the source's Epstein-Barr virus, since this module names CMV as "the major cause of non-Epstein-Barr infectious mononucleosis" and lists it in the Infectious mononucleosis row of its Disease Profile table; the module's sixteen footnote citations are rendered as inline parenthetical citations after the sentences they support, with the bare access URLs and "Accessed" dates dropped; the three "ibid." footnotes are kept as printed, each following the citation it repeats; the three source Multiple Choice items and the three source Fill in the Blank items are adapted into Practice unchanged with their source options and keys (C, B, A; Burkitt lymphoma, Arboviruses, Epstein-Barr virus), but not in their printed order: the first Practice group puts the three Fill in the Blank items before the two Multiple Choice items it holds, and the "Infectious mononucleosis is caused by ________ infections" item before the other two, so that no item above a `textin` prints its key or an accepted name ("Epstein-Barr virus" is an option of the first two Multiple Choice items, and "HHV-4" is printed in the Burkitt lymphoma item's stem) — the "Arboviruses" `textin` accepts the module's own expansion, "arthropod-borne viruses," the "Epstein-Barr virus" `textin` accepts the module's own names for the virus (`EBV`, `HHV-4` and its unhyphenated spelling `HHV4`, "human herpesvirus 4") and "Epstein-Barr" alone, the "Burkitt lymphoma" `textin` accepts "Burkitt's lymphoma," and the body "vector control" `textin` accepts "controlling vectors," "controlling the vectors," and "mosquito control," since every arbovirus this section discusses has a mosquito vector; of the section's three unkeyed Short Answer questions and one unkeyed Critical Thinking question, all four remain self-checks with author-written model answers assembled from this module's own sentences, since the source prints no key for any of them and each needs more than one module sentence to answer honestly (the HIV-progression answer draws on the Stage 1–3 list and the antibody-timing sentence; the diagnostic-tests and ART-drug-category answers each draw on their own paragraph and name no term the module does not use; the Ebola-vs-yellow-fever answer states plainly that the module gives no comparative verdict and reasons only from what the module says about each disease separately); of this section's six body Check Your Understanding bullets, two are graded from a single fixing sentence of their own subsection — "How is Ebola transmitted?" as a `multiplechoice` and "What is the best method for controlling outbreaks of arboviral diseases?" as a `textin` keyed "vector control" — and the remaining four stay self-checks whose model answers assemble more than one of this module's own sentences (the HHV-4/HHV-5 comparison, the arboviral-diseases-naming bullet paired with the graded vector-control bullet in the same box, the two Hantavirus diseases, and why HIV cannot yet be cured); key terms are compiled from the module's nine `<term>` elements (no repeats) plus two additional bullets, Ebola virus disease (EVD) and acquired immunodeficiency syndrome (AIDS), neither of which carries a `<term>` tag anywhere in the body CNXML despite each having its own body discussion (EVD its own subsection; AIDS its own bolded Stage-3 list item), a bold Summary appearance, and a Disease-Profile table row — both Key terms bullets are section-derived rather than `<term>`-tagged, with their definitions taken verbatim from the book's Glossary appendix (m58950), which prints a headword for each ("Ebola virus disease (EVD)" and "acquired immunodeficiency syndrome (AIDS)"); "Antiretroviral therapy (ART)" is likewise bold-only in the Summary and not `<term>`-tagged, but the Glossary appendix prints no headword for it, so it gets no Key terms bullet; all eleven Key terms bullets are Glossary-sourced, none sentence-derived from a defining clause; three occurrences of the Greek small letter mu before the unit L in the CD4 T-cell-count list are normalized to the micro sign before L per this book's house notation rule, silently, since it is a character-encoding normalization rather than a content correction; "EBV⁺ B cells" is set with the Unicode superscript plus sign, matching the source's inline superscript; this module carries no `<link document="…">` cross-reference to another module, so no cross-book link appears on this page; the HIV section's opening sentence, which the source prints as "Human T-lymphotropic viruses (HTLV), also called human immunodeficiency viruses (HIV) are retroviruses that are the causative agent of acquired immune deficiency syndrome (AIDS)," is corrected to "Human immunodeficiency viruses (HIV) are retroviruses that are the causative agent of acquired immune deficiency syndrome (AIDS)" with a visible source note beside it, since HTLV-1 and HTLV-2 are distinct deltaretroviruses (causing adult T-cell leukemia and HAM/TSP) and not another name for HIV, a lentivirus that briefly carried the provisional designation HTLV-III in 1984; no source exercise, table, or Check Your Understanding bullet is omitted.</small>

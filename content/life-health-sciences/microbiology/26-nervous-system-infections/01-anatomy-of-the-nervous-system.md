@@ -68,9 +68,9 @@ View [this video about the blood-brain barrier](https://www.openstax.org/l/22bld
 {{< multiplechoice
   question="What is the primary function of the blood-brain barrier?"
   answer="It protects the cerebrospinal fluid from contamination and is effective at excluding potential microbial pathogens."
-  hint="This section states the barrier's job in one sentence, right at the start of the Blood-Brain Barrier subsection's second paragraph — not what the meninges do, and not what the choroid plexus does."
+  hint="See the start of the Blood-Brain Barrier subsection's second paragraph."
 >}}
-It produces the cerebrospinal fluid that cushions the brain.
+It produces the cerebrospinal fluid that delivers nutrients and removes waste from neural tissues.
 It protects the cerebrospinal fluid from contamination and is effective at excluding potential microbial pathogens.
 It anchors the skin of the scalp to the bones of the skull.
 It transmits electrochemical signals between neurons.
@@ -86,13 +86,13 @@ Tissues of the PNS and CNS are formed of cells called **glial cells** (neuroglia
 
 Neurons are specialized cells found throughout the nervous system that transmit signals through the nervous system using electrochemical processes. The basic structure of a neuron is shown below. The cell body (or **soma**) is the metabolic center of the neuron and contains the nucleus and most of the cell's organelles. The many finely branched extensions from the soma are called **dendrites**. The soma also produces an elongated extension, called the **axon**, which is responsible for the transmission of electrochemical signals through elaborate ion transport processes. Axons of some types of neurons can extend up to one meter in length in the human body. To facilitate electrochemical signal transmission, some neurons have a **myelin sheath** surrounding the axon. Myelin, formed from the cell membranes of glial cells like the Schwann cells in the PNS and oligodendrocytes in the CNS, surrounds and insulates the axon, significantly increasing the speed of electrochemical signal transmission along the axon. The end of an axon forms numerous branches that end in bulbs called synaptic terminals. Neurons form junctions with other cells, such as another neuron, with which they exchange signals. The junctions, which are actually gaps between neurons, are referred to as **synapses**. At each synapse, there is a presynaptic neuron and a postsynaptic neuron (or other cell). The synaptic terminals of the axon of the presynaptic terminal form the synapse with the dendrites, soma, or sometimes the axon of the postsynaptic neuron, or a part of another type of cell such as a muscle cell. The synaptic terminals contain vesicles filled with chemicals called **neurotransmitters**. When the electrochemical signal moving down the axon reaches the synapse, the vesicles fuse with the membrane, and neurotransmitters are released, which diffuse across the synapse and bind to receptors on the membrane of the postsynaptic cell, potentially initiating a response in that cell. That response in the postsynaptic cell might include further propagation of an electrochemical signal to transmit information or contraction of a muscle fiber.
 
-{{< mediafigure src="microbiology/OSC_Microbio_26_01_Neruron" kind="diagram" alt="Two-panel diagram. (a) A neuron with a cell body containing the nucleus, short branching dendrites, and a long axon wrapped in a myelin sheath that has gaps called nodes of Ranvier, ending in a synapse. (b) A synapse where a presynaptic neuron releases neurotransmitters that cross the gap and bind to receptors on a postsynaptic neuron." longdesc="(a) The neuron's cell body (soma) holds the nucleus and gives rise to short, branching dendrites and one long axon. Oligodendrocytes form a myelin sheath that wraps most of the axon's length, leaving small uncovered gaps called nodes of Ranvier at intervals; the axon ends in branches labeled synapse beside the faded branches of a next cell, and a faded myelinated axon from another neuron reaches this neuron's dendrites at upper left. (b) The synapse panel shows a presynaptic neuron above, in which round vesicles filled with neurotransmitter (labeled neurotransmitter) move down, by arrows, to its membrane and open there, so that single neurotransmitter molecules are released into the synapse (labeled); arrows show these molecules crossing the gap and attach to receptors on the postsynaptic neuron below, the two neurons never touching." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_26_01_Neruron" kind="diagram" alt="Two-panel diagram. (a) A neuron with a cell body containing the nucleus, short branching dendrites, and a long axon wrapped in a myelin sheath that has gaps called nodes of Ranvier, ending in a synapse. (b) A synapse where a presynaptic neuron releases neurotransmitters that cross the gap and bind to receptors on a postsynaptic neuron." longdesc="(a) The neuron's cell body (soma) holds the nucleus and gives rise to short, branching dendrites and one long axon. Oligodendrocytes form a myelin sheath that wraps most of the axon's length, leaving small uncovered gaps called nodes of Ranvier at intervals; the axon ends in branches labeled synapse beside the faded branches of a next cell, and a faded myelinated axon from another neuron reaches this neuron's dendrites at upper left. (b) The synapse panel shows a presynaptic neuron above, in which round vesicles filled with neurotransmitter (labeled neurotransmitter) move down, by arrows, to its membrane and open there, so that single neurotransmitter molecules are released into the synapse (labeled); arrows show these molecules crossing the gap and attaching to receptors on the postsynaptic neuron below, the two neurons never touching." >}}
 (a) A myelinated neuron is associated with oligodendrocytes. Oligodendrocytes are a type of glial cell that forms the myelin sheath in the CNS that insulates the axon so that electrochemical nerve impulses are transferred more efficiently. (b) A synapse consists of the axonal end of the presynaptic neuron (top) that releases neurotransmitters that cross the synaptic space (or cleft) and bind to receptors on dendrites of the postsynaptic neuron (bottom).
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
-{{< selfcheck question="What cells are associated with neurons, and what is their function?" hint="Name the cell type the module pairs with neurons in its opening sentence, then give the three things that same sentence says these cells do." >}}
+{{< selfcheck question="What cells are associated with neurons, and what is their function?" hint="See the opening paragraph of The Cells of the Nervous System." >}}
 Tissues of the PNS and CNS are formed of cells called glial cells (neuroglial cells) and neurons (nerve cells). Glial cells assist in the organization of neurons, provide a scaffold for some aspects of neuronal function, and aid in recovery from neural injury.
 ===CHECKS===
 tissues of the PNS and CNS are formed of cells called glial cells and neurons
@@ -100,7 +100,7 @@ glial cells assist in the organization of neurons and provide a scaffold for som
 glial cells aid in recovery from neural injury
 {{< /selfcheck >}}
 
-{{< selfcheck question="What is the structure and function of a synapse?" hint="Trace the whole path: the gap itself, the two neurons on either side of it, and what crosses it to make the postsynaptic cell respond." >}}
+{{< selfcheck question="What is the structure and function of a synapse?" hint="See the second half of The Cells of the Nervous System's neuron paragraph, and panel (b) of the figure after it." >}}
 A synapse is a junction, actually a gap, between a neuron and another cell, with a presynaptic neuron on one side and a postsynaptic neuron (or other cell) on the other. The synaptic terminals of the presynaptic neuron's axon contain vesicles filled with neurotransmitters; when an electrochemical signal reaches the synapse, the vesicles fuse with the membrane and release neurotransmitters, which diffuse across the synapse and bind to receptors on the postsynaptic cell, potentially initiating a response such as further signal propagation or contraction of a muscle fiber.
 ===CHECKS===
 a synapse is a gap between a presynaptic neuron and a postsynaptic neuron or other cell
@@ -116,14 +116,14 @@ Meningitis and encephalitis can be caused by many different types of microbial p
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are the two types of inflammation that can impact the CNS?" hint="The module names one term for inflammation of the meninges and a separate term for inflammation of the brain tissue itself; a third term for when both occur together is not one of these two." >}}
+{{< selfcheck question="What are the two types of inflammation that can impact the CNS?" hint="See the first paragraph of Meningitis and Encephalitis." >}}
 The two types of inflammation that can impact the CNS are meningitis, an inflammation of the meninges, and encephalitis, an inflammation of brain tissue. (When both occur together, the condition is called meningoencephalitis.)
 ===CHECKS===
 meningitis is an inflammation of the meninges
 encephalitis is an inflammation of brain tissue
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why do both forms of inflammation have such serious consequences?" hint="Combine the mechanical reason the section opens with — what swelling inside the skull leads to — with the list of possible outcomes it gives for all three forms of inflammation." >}}
+{{< selfcheck question="Why do both forms of inflammation have such serious consequences?" hint="See the first and last sentences of the first paragraph of Meningitis and Encephalitis." >}}
 Any swelling of the brain or meninges that results from inflammation can cause intracranial pressure, leading to severe damage of the brain tissues, which have limited space to expand within the inflexible bones of the skull. All three forms of inflammation are serious and can lead to blindness, deafness, coma, and death.
 ===CHECKS===
 swelling of the brain or meninges causes intracranial pressure
@@ -173,6 +173,30 @@ GBS is solely identified by the appearance of clinical symptoms. There are no ot
 
 ### Describe the major anatomical features of the nervous system
 
+{{< textin
+  question="The cell body of a neuron is called the ________."
+  answer="soma"
+  hint="See The Cells of the Nervous System's paragraph describing the basic structure of a neuron."
+>}}
+
+{{< textin
+  question="A signal is transmitted down the ________ of a nerve cell."
+  answer="axon"
+  hint="See The Cells of the Nervous System's paragraph describing the basic structure of a neuron."
+>}}
+
+{{< textin
+  question="The ________ is filled with cerebrospinal fluid."
+  answer="subarachnoid space"
+  hint="See The Central Nervous System's paragraph on the layers beneath the skull, and the figure that follows it."
+>}}
+
+{{< textin
+  question="The ________ are a set of membranes that cover and protect the brain."
+  answer="meninges"
+  hint="See The Central Nervous System's paragraph on the layers beneath the skull."
+>}}
+
 {{< multiplechoice
   question="What is the outermost membrane surrounding the brain called?"
   answer="dura mater"
@@ -198,7 +222,7 @@ synapses
 {{< multiplechoice
   question="Chemicals called ________ are stored in neurons and released when the cell is stimulated by a signal."
   answer="neurotransmitters"
-  hint="These chemicals are held in vesicles at the synaptic terminal and diffuse across the synapse to bind receptors on the next cell."
+  hint="See the end of The Cells of the Nervous System's neuron paragraph."
 >}}
 toxins
 cytokines
@@ -209,7 +233,7 @@ neurotransmitters
 {{< multiplechoice
   question="The central nervous system is made up of"
   answer="the brain and spinal column."
-  hint="This system is the one protected by the skull and vertebrae, not the network of nerves reaching the muscles and sensory organs."
+  hint="See the paragraph that opens the section, just before The Central Nervous System."
 >}}
 sensory organs and muscles.
 the brain and muscles.
@@ -217,31 +241,7 @@ the sensory organs and spinal cord.
 the brain and spinal column.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The cell body of a neuron is called the ________."
-  answer="soma"
-  hint="This structure is the neuron's metabolic center and holds the nucleus and most of the cell's organelles."
->}}
-
-{{< textin
-  question="A signal is transmitted down the ________ of a nerve cell."
-  answer="axon"
-  hint="See The Cells of the Nervous System's paragraph describing the basic structure of a neuron."
->}}
-
-{{< textin
-  question="The ________ is filled with cerebrospinal fluid."
-  answer="subarachnoid space"
-  hint="See The Central Nervous System's paragraph on the layers beneath the skull, and the figure that follows it."
->}}
-
-{{< textin
-  question="The ________ are a set of membranes that cover and protect the brain."
-  answer="meninges"
-  hint="This is the collective name for the dura mater, arachnoid mater, and pia mater together."
->}}
-
-{{< selfcheck question="Briefly describe the defenses of the brain against trauma and infection." hint="Work outward to inward: the bony case, the three membranes beneath it, and the barrier that screens the blood supply itself." >}}
+{{< selfcheck question="Briefly describe the defenses of the brain against trauma and infection." hint="See The Central Nervous System and its Blood-Brain Barrier subsection." >}}
 The brain is protected by the bones of the skull, which are in turn covered by the scalp. Below the skull are three layers of membranes called meninges — the dura mater, arachnoid mater, and pia mater — with the CSF-filled subarachnoid space between the arachnoid mater and pia mater. The blood-brain barrier further protects the brain by excluding most microbes and other materials in the circulatory system from interacting with the CNS directly.
 ===CHECKS===
 the skull, covered by the scalp, protects the brain
@@ -249,7 +249,7 @@ three meninges — the dura mater, arachnoid mater, and pia mater — lie beneat
 the blood-brain barrier excludes most microbes and other materials from interacting with the CNS directly
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe how the blood-brain barrier is formed." hint="Name the cell type that forms the barrier's junctions, and the feature of cranial capillaries that makes them different from capillaries elsewhere in the body." >}}
+{{< selfcheck question="Describe how the blood-brain barrier is formed." hint="See the first paragraph of The Blood-Brain Barrier subsection." >}}
 The capillary endothelial cells associated with the blood vessels of the brain form tight junctions that control the transfer of blood components to the brain. In addition, cranial capillaries have far fewer fenestra (pore-like structures sealed by a membrane) and pinocytotic vesicles than other capillaries, further limiting the ability of materials in the circulatory system to interact with the CNS directly.
 ===CHECKS===
 capillary endothelial cells form tight junctions that control the transfer of blood components to the brain
@@ -264,7 +264,7 @@ This neuron's structures are labeled A through E for identification in the exerc
 {{< multiplechoice
   question="In the neuron pictured above, structure E is the ________."
   answer="myelin sheath"
-  hint="This segmented structure wraps the long projection labeled B and is formed from the cell membranes of glial cells such as oligodendrocytes."
+  hint="Compare this drawing with the labeled neuron figure in The Cells of the Nervous System."
 >}}
 axon
 dendrite
@@ -289,16 +289,8 @@ D marks the synapse at the end of the axon
 {{< textin
   question="The ________ ________ prevents access of microbes in the blood from gaining access to the central nervous system."
   answer="blood-brain barrier"
-  hint="This barrier is formed by the tight junctions of cranial capillary endothelial cells."
+  hint="See the subsection under The Central Nervous System on the extra protection of CNS tissues."
 >}}
-
-{{< selfcheck question="What important function does the blood-brain barrier serve? How might this barrier be problematic at times?" hint="The barrier's protective job and its drawback both concern what can and cannot cross it — pathogens on one hand, treatments on the other." >}}
-The blood-brain barrier protects the cerebrospinal fluid from contamination and can be quite effective at excluding potential microbial pathogens; as a result, there is no normal microbiota in the cerebrospinal fluid. This same barrier can be problematic, however, because it also inhibits the movement of many drugs into the brain, particularly compounds that are not lipid soluble, making it difficult for drugs to cross the blood-brain barrier to interact with pathogens that cause CNS infections.
-===CHECKS===
-the blood-brain barrier protects the cerebrospinal fluid from contamination and excludes potential microbial pathogens
-there is no normal microbiota in the cerebrospinal fluid as a result
-the barrier also inhibits the movement of many drugs, particularly those that are not lipid soluble, into the brain
-{{< /selfcheck >}}
 
 {{< multiplechoice
   question="Since the blood-brain barrier excludes most microbes, there is no normal ________ in the CNS."
@@ -310,6 +302,14 @@ microbiota
 cerebrospinal fluid
 neurotransmitters
 {{< /multiplechoice >}}
+
+{{< selfcheck question="What important function does the blood-brain barrier serve? How might this barrier be problematic at times?" hint="See the second paragraph of The Blood-Brain Barrier subsection." >}}
+The blood-brain barrier protects the cerebrospinal fluid from contamination and can be quite effective at excluding potential microbial pathogens; as a result, there is no normal microbiota in the cerebrospinal fluid. This same barrier can be problematic, however, because it also inhibits the movement of many drugs into the brain, particularly compounds that are not lipid soluble, making it difficult for drugs to cross the blood-brain barrier to interact with pathogens that cause CNS infections.
+===CHECKS===
+the blood-brain barrier protects the cerebrospinal fluid from contamination and excludes potential microbial pathogens
+there is no normal microbiota in the cerebrospinal fluid as a result
+the barrier also inhibits the movement of many drugs, particularly those that are not lipid soluble, into the brain
+{{< /selfcheck >}}
 
 ### Explain how microorganisms overcome defenses of the nervous system to cause infection
 
@@ -327,7 +327,7 @@ nonhematogenous entry
 {{< multiplechoice
   question="Pathogen bypasses the blood-brain barrier by travel along the olfactory or trigeminal cranial nerves."
   answer="nonhematogenous entry"
-  hint="This strategy lets a pathogen reach the brain without ever encountering the blood-brain barrier at all."
+  hint="See the paragraph that groups the pathogens' entry strategies into four categories."
 >}}
 intercellular entry
 transcellular entry
@@ -338,7 +338,7 @@ nonhematogenous entry
 {{< multiplechoice
   question="Pathogen passes through the cells of the blood-brain barrier."
   answer="transcellular entry"
-  hint="This strategy uses virulence factors that trigger vacuole- or receptor-mediated uptake through, rather than around, the barrier's own cells."
+  hint="See the paragraph that groups the pathogens' entry strategies into four categories."
 >}}
 intercellular entry
 transcellular entry
@@ -360,21 +360,21 @@ nonhematogenous entry
 ### Identify and describe general symptoms associated with various infections of the nervous system
 
 {{< textin
-  question="An inflammation of the meninges is called ________."
-  answer="meningitis"
-  hint="This is one of two named types of CNS inflammation in this section — not the one affecting brain tissue, and not the one naming both together."
+  question="To determine whether the inflammation is caused by a pathogen, a ________ is performed to obtain a sample of CSF."
+  answer="lumbar puncture"
+  hint="See the second paragraph of Meningitis and Encephalitis."
 >}}
 
 {{< textin
   question="When inflammation affects both the meninges and the brain tissue, the condition is called ________."
   answer="meningoencephalitis"
-  hint="This single term names what happens when the two separately named forms of CNS inflammation occur together."
+  hint="See the end of the first paragraph of the section's last main subsection."
 >}}
 
 {{< multiplechoice
   question="What term refers to an inflammation of brain tissues?"
   answer="encephalitis"
-  hint="This is distinct from the term for inflammation of the meninges, and from the term used when both are inflamed together."
+  hint="See the first paragraph of the section's last main subsection."
 >}}
 encephalitis
 meningitis
@@ -382,4 +382,4 @@ sinusitis
 meningoencephalitis
 {{< /multiplechoice >}}
 
-<small>This section is adapted from [Microbiology, Section 26.1: Anatomy of the Nervous System](https://openstax.org/books/microbiology/pages/26-1-anatomy-of-the-nervous-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the source's garbled "an infectioninflinin" at the end of the Meningitis and Encephalitis section's second paragraph is corrected to "an infection" (a one-word source defect); the Blood-Brain Barrier subsection's Dionna Williams passage carries three further one-word source defects, each corrected in place without an inline note — "Johns Hopkin's" to "Johns Hopkins'," "studies the impact" to "study the impact" (subject-verb agreement with the plural "Researchers"), and "Williams also researchers the mechanisms" to "Williams also researches the mechanisms"; all four vendored figures (NervSys, Meninges, Neruron, and the ArtConnect neuron) are re-encoded as WebP and rendered as mediafigures after image inspection, each set `kind="diagram"` (overriding the media manifest's photo guess, since every one of them is genuinely drawn line art, not a photograph or micrograph); the NervSys figure carries `eager="true"` as the page's first figure; the Meninges and Neruron alts are rewritten under the 600-character cap with a `longdesc` walk-through added for each, since the source alts run long for what a caption alone can carry; the Link to Learning box's anchor text is expanded from "video" to "this video about the blood-brain barrier" so the link names its own destination, its URL kept unchanged; the module's two footnote citations (Yuki 2012, Cao-Lormeau 2016), neither of which carries a URL or a DOI in the CNXML, are rendered as inline parenthetical citations inside the Micro Connections box exactly as printed; the Clinical Focus box is titled *Part 1*, and its closing "Jump to the next Clinical Focus box" link is replaced with a sentence naming where the case continues, [Acellular Diseases of the Nervous System](/life-health-sciences/microbiology/26-nervous-system-infections/03-acellular-diseases-of-the-nervous-system/) (26.2 carries no Clinical Focus box in this chapter's chain); its own three closing questions stay inside the callout as unanswered plain bullets; the section's five source Multiple Choice items and five source Fill in the Blank items keep their source options, order, and keys unchanged (the two-blank Fill in the Blank keyed "blood-brain barrier" is rendered as one `textin` spanning both printed blanks, and grades correctly with no `accept` list needed, since hyphen-versus-space and case are already folded by the grader); in the first Practice group, the "meninges" Fill in the Blank is placed ahead of the Short Answer self-check "Briefly describe the defenses of the brain against trauma and infection," whose model answer and rubric name the meninges, so that self-check does not sit directly above the text-entry blank; the module's one Matching exercise (four rows) is the first Matching set this book has shipped — per this book's Matching rule, each of its four lettered descriptions becomes its own `multiplechoice` whose options are all four terms in the table's own order, keyed by the source's letter-to-term resolution (D, C, A, B read against the printed term order); the source table itself carries no data summary (`summary="No Summary"` is a layout placeholder, not a transcribable table), so no Markdown table duplicates it in the body; the section's one Short Answer question bearing the exercise image (`OSC_Microbio_26_01_ArtConnect_img`, source prints no key) is rendered as a `mediafigure`, an author-written caption (the source prints none), one figure-keyed `multiplechoice` asking what letter E marks — keyed "myelin sheath" from the module's own myelin-sheath sentence — and a `selfcheck` carrying the source's full labeling question verbatim, its model answer walking the letter-to-structure mapping the vendored image actually draws (A soma, B axon, C a dendrite, D the synapse, E the myelin sheath); the source's own exercise-image `alt` claims additional labels "F" (gaps) and "G" (dendrites) and describes the myelin sheath as "made from" structure C, none of which the printed artwork carries — the artwork instead draws exactly five lettered points (A–E), matching this book's own labeled twin figure (`OSC_Microbio_26_01_Neruron`), where the same lower-left branch cluster is labeled "dendrite" and "oligodendrocyte" points elsewhere entirely — a source alt-vs-image defect; the section's other two Short Answer questions and its one Critical Thinking question remain self-checks, since none is fixed by a single module sentence, with model answers and rubrics assembled only from this module's own text; no source exercise, table, or Check Your Understanding bullet is omitted; of this section's five body Check Your Understanding bullets (three boxes), one — the blood-brain barrier's primary function — is graded as a `multiplechoice`, keyed verbatim by the module's own one-sentence statement of that function, with distractors built from this module's own sibling facts (CSF production by the choroid plexus, the aponeurosis's anchoring role, and neurotransmitter signaling) that are true of the module but false as answers to this question; the remaining four (glial cells and their function; the structure and function of a synapse; the two types of CNS inflammation; why both forms of inflammation are so serious) remain self-checks, since each needs more than one module sentence assembled honestly; three fillers of two kinds are added to bring the second and fourth objective groups to this book's three-item floor — one select-the-term `multiplechoice` built from the Summary's own "no normal microbiota" sentence (second objective), and two `textin` text-recall items, "meningitis" and "meningoencephalitis," each built from a single body sentence of this module (fourth objective) — disclosed here and in the source ledger; key terms are compiled from the module's 19 `<term>` elements (no repeats), all 19 definitions taken directly from the book's Glossary appendix, with no sentence-derived definitions needed; the Key terms bullet for "arachnoid mater" keeps the Glossary appendix's wording but carries a visible Source note, since this section's own body attributes CSF production to the choroid plexus rather than the arachnoid mater, which instead bounds the CSF-filled subarachnoid space — a claim correction, disclosed in place. The nervous-system figure's alt says the peripheral nervous system is labeled only "nerves", because the source alt's "ganglions (near the spinal cord)" names a structure the drawing neither draws nor labels.</small>
+<small>This section is adapted from [Microbiology, Section 26.1: Anatomy of the Nervous System](https://openstax.org/books/microbiology/pages/26-1-anatomy-of-the-nervous-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the source's garbled "an infectioninflinin" at the end of the Meningitis and Encephalitis section's second paragraph is corrected to "an infection" (a one-word source defect); the Blood-Brain Barrier subsection's Dionna Williams passage carries three further one-word source defects, each corrected in place without an inline note — "Johns Hopkin's" to "Johns Hopkins'," "studies the impact" to "study the impact" (subject-verb agreement with the plural "Researchers"), and "Williams also researchers the mechanisms" to "Williams also researches the mechanisms"; all four vendored figures (NervSys, Meninges, Neruron, and the ArtConnect neuron) are re-encoded as WebP and rendered as mediafigures after image inspection, each set `kind="diagram"` (overriding the media manifest's photo guess, since every one of them is genuinely drawn line art, not a photograph or micrograph); the NervSys figure carries `eager="true"` as the page's first figure; the Meninges and Neruron alts are rewritten under the 600-character cap with a `longdesc` walk-through added for each, since the source alts run long for what a caption alone can carry; the Link to Learning box's anchor text is expanded from "video" to "this video about the blood-brain barrier" so the link names its own destination, its URL kept unchanged; the module's two footnote citations (Yuki 2012, Cao-Lormeau 2016), neither of which carries a URL or a DOI in the CNXML, are rendered as inline parenthetical citations inside the Micro Connections box exactly as printed; the Clinical Focus box is titled *Part 1*, and its closing "Jump to the next Clinical Focus box" link is replaced with a sentence naming where the case continues, [Acellular Diseases of the Nervous System](/life-health-sciences/microbiology/26-nervous-system-infections/03-acellular-diseases-of-the-nervous-system/) (26.2 carries no Clinical Focus box in this chapter's chain); its own three closing questions stay inside the callout as unanswered plain bullets; the section's five source Multiple Choice items and five source Fill in the Blank items keep their source options, option order, and keys unchanged (the two-blank Fill in the Blank keyed "blood-brain barrier" is rendered as one `textin` spanning both printed blanks, and grades correctly with no `accept` list needed, since hyphen-versus-space and case are already folded by the grader); in the first Practice group, the four Fill in the Blank items ("soma," "axon," "subarachnoid space," "meninges") are placed ahead of the four Multiple Choice items, reversing the source's printed order of the two sets, so that no multiple choice listing "soma" or "axons" sits above those text-entry blanks, and the "meninges" Fill in the Blank stays ahead of the Short Answer self-check "Briefly describe the defenses of the brain against trauma and infection," whose model answer and rubric name the meninges; the Multiple Choice item on inflammation of brain tissues is placed in the fourth Practice group, the objective it tests; in the second Practice group, the Summary-built "microbiota" multiple choice is placed ahead of the Critical Thinking self-check, whose model answer and rubric state that there is no normal microbiota in the cerebrospinal fluid; the module's one Matching exercise (four rows) is the first Matching set this book has shipped — per this book's Matching rule, each of its four lettered descriptions becomes its own `multiplechoice` whose options are all four terms in the table's own order, keyed by the source's letter-to-term resolution (D, C, A, B read against the printed term order); the source table itself carries no data summary (`summary="No Summary"` is a layout placeholder, not a transcribable table), so no Markdown table duplicates it in the body; the section's one Short Answer question bearing the exercise image (`OSC_Microbio_26_01_ArtConnect_img`, source prints no key) is rendered as a `mediafigure`, an author-written caption (the source prints none), one figure-keyed `multiplechoice` asking what letter E marks — keyed "myelin sheath" from the module's own myelin-sheath sentence — and a `selfcheck` carrying the source's full labeling question verbatim, its model answer walking the letter-to-structure mapping the vendored image actually draws (A soma, B axon, C a dendrite, D the synapse, E the myelin sheath); the source's own exercise-image `alt` claims additional labels "F" (gaps) and "G" (dendrites) and describes the myelin sheath as "made from" structure C, none of which the printed artwork carries — the artwork instead draws exactly five lettered points (A–E), matching this book's own labeled twin figure (`OSC_Microbio_26_01_Neruron`), where the same lower-left branch cluster is labeled "dendrite" and "oligodendrocyte" points elsewhere entirely — a source alt-vs-image defect; the section's other two Short Answer questions and its one Critical Thinking question remain self-checks, since none is fixed by a single module sentence, with model answers and rubrics assembled only from this module's own text; no source exercise, table, or Check Your Understanding bullet is omitted; of this section's five body Check Your Understanding bullets (three boxes), one — the blood-brain barrier's primary function — is graded as a `multiplechoice`, keyed verbatim by the module's own one-sentence statement of that function, with distractors built from this module's own sibling facts (CSF production by the choroid plexus, the aponeurosis's anchoring role, and neurotransmitter signaling) that are true of the module but false as answers to this question; the remaining four (glial cells and their function; the structure and function of a synapse; the two types of CNS inflammation; why both forms of inflammation are so serious) remain self-checks, since each needs more than one module sentence assembled honestly; three fillers of two kinds are added to bring the second and fourth objective groups to this book's three-item floor — one select-the-term `multiplechoice` built from the Summary's own "no normal microbiota" sentence (second objective), and two `textin` items, each built from a single body sentence of this module (fourth objective) — a cloze keyed "lumbar puncture" on the sentence about testing whether the inflammation is caused by a pathogen, and a recall item keyed "meningoencephalitis" — disclosed here and in the source ledger; key terms are compiled from the module's 19 `<term>` elements (no repeats), all 19 definitions taken directly from the book's Glossary appendix, with no sentence-derived definitions needed; the Key terms bullet for "arachnoid mater" keeps the Glossary appendix's wording but carries a visible Source note, since this section's own body attributes CSF production to the choroid plexus rather than the arachnoid mater, which instead bounds the CSF-filled subarachnoid space — a claim correction, disclosed in place. The nervous-system figure's alt says the peripheral nervous system is labeled only "nerves", because the source alt's "ganglions (near the spinal cord)" names a structure the drawing neither draws nor labels.</small>

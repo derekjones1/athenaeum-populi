@@ -46,6 +46,8 @@ For susceptible individuals, a first exposure to an allergen activates a strong 
 
 On subsequent exposure, allergens bind to multiple IgE molecules on mast cells, cross-linking the IgE molecules. Within minutes, this cross-linking of IgE activates the mast cells and triggers **degranulation**, a reaction in which the contents of the granules in the mast cell are released into the extracellular environment. Preformed components that are released from granules include histamine, serotonin, and bradykinin (see the table below). The activated mast cells also release newly formed lipid mediators (leukotrienes and prostaglandins from membrane arachidonic acid metabolism) and cytokines such as tumor necrosis factor (see the table below).
 
+The chemical mediators released by mast cells collectively cause the inflammation and signs and symptoms associated with type I hypersensitivity reactions. Histamine stimulates mucus secretion in nasal passages and tear formation from lacrimal glands, promoting the runny nose and watery eyes of allergies. Interaction of histamine with nerve endings causes itching and sneezing. The vasodilation caused by several of the mediators can result in hives, headaches, angioedema (swelling that often affects the lips, throat, and tongue), and hypotension (low blood pressure). Bronchiole constriction caused by some of the chemical mediators leads to wheezing, dyspnea (difficulty breathing), coughing, and, in more severe cases, cyanosis (bluish color to the skin or mucous membranes). Vomiting can result from stimulation of the vomiting center in the brain stem by histamine and serotonin. *(Source note: the source places the vomiting center in the cerebellum. The part of the brain that triggers vomiting, the area postrema, lies in the brain stem beside the fourth ventricle, as OpenStax *Anatomy and Physiology 2e*, Section 15.4, describes.)* Histamine can also cause relaxation of intestinal smooth muscles and diarrhea.
+
 **Selected Preformed Components of Mast Cell Granules**
 
 | Granule Component | Activity |
@@ -83,13 +85,14 @@ Individuals who possess genes for maladaptive traits, such as intense type I hyp
 
 **Check Your Understanding**
 
-{{< textin
-  question="What are the cells that cause a type I hypersensitivity reaction?"
-  answer="mast cells"
-  hint="Reread the second and third paragraphs of Type I Hypersensitivities."
->}}
+{{< selfcheck question="What are the cells that cause a type I hypersensitivity reaction?" hint="Reread the paragraphs of Type I Hypersensitivities on what happens at a subsequent exposure to an allergen." >}}
+Mast cells. The chemical mediators released by mast cells collectively cause the inflammation and signs and symptoms associated with type I hypersensitivity reactions.
+===CHECKS===
+mast cells
+the chemical mediators released by mast cells cause the inflammation and signs and symptoms of type I hypersensitivity
+{{< /selfcheck >}}
 
-{{< selfcheck question="Describe the differences between immediate and late-phase type I hypersensitivity reactions." hint="One phase happens within minutes; the other is a second wave hours later, driven by different recruited cells." >}}
+{{< selfcheck question="Describe the differences between immediate and late-phase type I hypersensitivity reactions." hint="Reread the degranulation paragraph and the late-phase paragraph of Type I Hypersensitivities." >}}
 The immediate phase begins within minutes of a sensitized individual's exposure to an allergen: allergen cross-links IgE on mast cells, triggering degranulation and the release of preformed mediators such as histamine along with newly formed mediators such as leukotrienes, which produce the immediate signs and symptoms. The late-phase reaction develops 4 to 12 hours after the early phase and is mediated by eosinophils, neutrophils, and lymphocytes that are recruited by chemotactic factors released from mast cells. Activation of these recruited cells releases more chemical mediators, causing tissue damage and late-phase symptoms such as swelling and redness of the skin, coughing, wheezing, and nasal discharge.
 ===CHECKS===
 the immediate phase begins within minutes as allergen cross-links IgE on mast cells, triggering degranulation
@@ -98,13 +101,14 @@ it is mediated by eosinophils, neutrophils, and lymphocytes recruited by chemota
 late-phase symptoms include swelling and redness of the skin, coughing, wheezing, and nasal discharge
 {{< /selfcheck >}}
 
-{{< selfcheck question="List the signs and symptoms of anaphylaxis." hint="This is the systemic form of type I hypersensitivity — look for the symptoms severe enough to threaten the airway and blood pressure." >}}
-Anaphylaxis, or anaphylactic shock, is a systemic type I hypersensitivity reaction. Its signs and symptoms include swelling of the tongue and trachea, blockage of the airways, a dangerous drop in blood pressure, and development of shock, which can make anaphylaxis especially severe and life-threatening; death can occur within minutes of the onset of signs and symptoms.
+{{< selfcheck question="List the signs and symptoms of anaphylaxis." hint="Reread the paragraph on localized and systemic reactions in Type I Hypersensitivities, and the Anaphylaxis row of the table at the end of that subsection." >}}
+Anaphylaxis, or anaphylactic shock, is a systemic type I hypersensitivity reaction. Its signs and symptoms include swelling of the tongue and trachea, blockage of the airways, a dangerous drop in blood pressure, and development of shock, which can make anaphylaxis especially severe and life-threatening; death can occur within minutes of the onset of signs and symptoms. The Type I Hypersensitivities table also lists hives, itching, swelling of the tongue and throat, nausea, vomiting, low blood pressure, and shock among its signs and symptoms.
 ===CHECKS===
 swelling of the tongue and trachea
 blockage of the airways
 a dangerous drop in blood pressure
 development of shock, which can be life-threatening within minutes
+hives, itching, nausea, and vomiting
 {{< /selfcheck >}}
 
 {{< callout type="info" >}}
@@ -138,7 +142,7 @@ The recognition that individuals have different blood types was first described 
 
 It is important to note that the RBCs of all four ABO blood types share a common protein receptor molecule, and it is the addition of specific carbohydrates to the protein receptors that determines A, B, and AB blood types. The genes that are inherited for the A, B, and AB blood types encode enzymes that add the carbohydrate component to the protein receptor. Individuals with O blood type still have the protein receptor but lack the enzymes that would add carbohydrates that would make their red blood cell type A, B, or AB.
 
-IgM antibodies in plasma that cross-react with blood group antigens not present on an individual's own RBCs are called **isohemagglutinin**s (shown above). Isohemagglutinins are produced within the first few weeks after birth and persist throughout life. These antibodies are produced in response to exposure to environmental antigens from food and microorganisms. A person with type A blood has A antigens on the surface of their RBCs and will produce anti-B antibodies to environmental antigens that resemble the carbohydrate component of B antigens. A person with type B blood has B antigens on the surface of their RBCs and will produce anti-A antibodies to environmental antigens that are similar to the carbohydrate component of A antigens. People with blood type O lack both A and B antigens on their RBCs and, therefore, produce both anti-A and anti-B antibodies. Conversely, people with AB blood type have both A and B antigens on their RBCs and, therefore, lack anti-A and anti-B antibodies.
+IgM antibodies in plasma that cross-react with blood group antigens not present on an individual's own RBCs are called **isohemagglutinin**s (shown below). Isohemagglutinins are produced within the first few weeks after birth and persist throughout life. These antibodies are produced in response to exposure to environmental antigens from food and microorganisms. A person with type A blood has A antigens on the surface of their RBCs and will produce anti-B antibodies to environmental antigens that resemble the carbohydrate component of B antigens. A person with type B blood has B antigens on the surface of their RBCs and will produce anti-A antibodies to environmental antigens that are similar to the carbohydrate component of A antigens. People with blood type O lack both A and B antigens on their RBCs and, therefore, produce both anti-A and anti-B antibodies. Conversely, people with AB blood type have both A and B antigens on their RBCs and, therefore, lack anti-A and anti-B antibodies.
 
 {{< mediafigure src="microbiology/OSC_Microbio_19_01_ABO" alt="A table of the four ABO blood types with the red blood cell surface antigens and isohemagglutinin antibodies of each, detailed below." longdesc="Type A blood: red blood cells carry the A antigen; the plasma carries anti-B isohemagglutinins. Type B blood: red blood cells carry the B antigen; the plasma carries anti-A isohemagglutinins. Type AB blood: red blood cells carry both A and B antigens; the plasma carries neither isohemagglutinin. Type O blood: red blood cells carry neither antigen; the plasma carries both anti-A and anti-B isohemagglutinins." kind="diagram" >}}
 {{< /mediafigure >}}
@@ -180,7 +184,7 @@ Use this interactive [Blood Typing Game](https://openstax.org/l/22actbloodtyping
 {{< multiplechoice
   question="What happens to cells that possess incompatible antigens in a type II hypersensitivity reaction?"
   answer="They are lysed through complement activation, or destroyed by antibody-dependent cell-mediated cytotoxicity (ADCC)"
-  hint="Reread the opening paragraph of Type II (Cytotoxic) Hypersensitivities."
+  hint="Reread the opening paragraph of the subsection on type II hypersensitivities."
 >}}
 They are lysed through complement activation, or destroyed by antibody-dependent cell-mediated cytotoxicity (ADCC)
 They are coated by immune complexes that deposit on their surface and trigger inflammation
@@ -188,7 +192,7 @@ They activate helper T cells, which release cytokines that recruit macrophages a
 They trigger IgE cross-linking on nearby mast cells, causing degranulation
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe hemolytic disease of the newborn and explain how it can be prevented." hint="Trace the antibody from its FIRST production, through a later pregnancy, to the injection that stops it from ever forming." >}}
+{{< selfcheck question="Describe hemolytic disease of the newborn and explain how it can be prevented." hint="Reread Rh Factors from the paragraph on incompatibility between a pregnant person and fetus through the paragraph on prevention." >}}
 Hemolytic disease of the newborn (HDN) is a type II hypersensitivity reaction that occurs when an Rh− pregnant person carries an Rh+ fetus. Fetal Rh+ red blood cells can enter the pregnant person's circulation, usually late in pregnancy or during delivery, triggering a primary immune response and production of anti-Rh IgG antibodies. These IgG antibodies persist after birth, and during a subsequent pregnancy with another Rh+ fetus they can cross the placenta and destroy the fetal Rh+ red blood cells, potentially causing a lethal condition for the baby. HDN is prevented by injecting the pregnant person with human Rho(D) immune globulin (such as RhoGAM) during the 28th week of pregnancy and again within 72 hours after delivery; the anti-Rh antibodies in the immune globulin bind any fetal Rh+ red blood cells that enter the pregnant person's bloodstream, preventing them from triggering a primary antibody response.
 ===CHECKS===
 HDN occurs when an Rh− pregnant person carries an Rh+ fetus and anti-Rh IgG antibodies form
@@ -240,7 +244,7 @@ It activates helper T cells to release cytokines that recruit macrophages
 Together with a relatively low antigen concentration, it produces small immune complexes that deposit on blood vessel and tissue surfaces
 {{< /multiplechoice >}}
 
-{{< sortbins question="Describe the differences between the Arthus reaction and serum sickness by sorting each description under the type III hypersensitivity it belongs to." hint="Reread the Arthus paragraph that opens Type III Hypersensitivities and the paragraph on systemic type III hypersensitivity." >}}
+{{< sortbins question="Describe the differences between the Arthus reaction and serum sickness by sorting each description under the type III hypersensitivity it belongs to." hint="Reread the first and fourth paragraphs of Type III Hypersensitivities." >}}
 {"bins": ["Arthus reaction", "Serum sickness"],
  "items": [
   {"label": "A localized subcutaneous hemorrhage and edema develop at the site of injection", "bin": 0},
@@ -289,7 +293,7 @@ Exposure to hapten antigens in poison ivy can cause contact dermatitis, a type I
 
 **Check Your Understanding**
 
-{{< sortbins question="Describe the three subtypes of type IV hypersensitivity by sorting each phrase under the subcategory it describes." hint="Two of the three subcategories share the same antigen form — sort by the effector mechanism and outcome instead." >}}
+{{< sortbins question="Describe the three subtypes of type IV hypersensitivity by sorting each phrase under the subcategory it describes." hint="Reread the Type IV Hypersensitivities table row by row, and the three subcategory paragraphs above it." >}}
 {"bins": ["Subcategory 1", "Subcategory 2", "Subcategory 3"],
  "items": [
   {"label": "Activated macrophages damage tissue and promote an inflammatory response", "bin": 0},
@@ -301,7 +305,7 @@ Exposure to hapten antigens in poison ivy can cause contact dermatitis, a type I
   {"label": "Examples include contact dermatitis from poison ivy and tissue-transplant rejection", "bin": 2}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="Explain how T cells contribute to tissue damage in type IV hypersensitivity." hint="There are three separate T-cell routes to damage here — one through macrophages, one through eosinophils, one through direct killing." >}}
+{{< selfcheck question="Explain how T cells contribute to tissue damage in type IV hypersensitivity." hint="Reread the three subcategory paragraphs of Type IV Hypersensitivities." >}}
 In the first type IV subcategory, sensitized memory T<sub>H</sub>1 cells release cytokines on subsequent exposure to the antigen that activate macrophages, and these activated macrophages are responsible for much of the tissue damage. In the second subcategory, T<sub>H</sub>2-mediated reactions recruit and activate eosinophils, which release cytokines and inflammatory mediators. In the third subcategory, CD8 cytotoxic T lymphocytes (CTLs) are activated after antigen-presenting cells present antigen with MHC I; the activated CTLs then induce granzyme-mediated apoptosis in target cells presenting the same antigen, which may be the body's own cells that absorbed a foreign antigen or transplanted tissue cells displaying donor antigen.
 ===CHECKS===
 memory TH1 cells release cytokines that activate macrophages, which cause much of the tissue damage
@@ -336,13 +340,14 @@ Occupational exposure to dust, mold, and other allergens can result in hypersens
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain why hypersensitivity pneumonitis is considered an occupational disease." hint="The section's own names for this disease all point to a specific job or workplace." >}}
-Hypersensitivity pneumonitis (HP) is often an occupational or environmental disease that occurs when the lungs become inflamed due to an allergic reaction to inhaled dust, endospores, bird feathers, bird droppings, molds, or chemicals. Because these allergens are encountered through daily work, HP goes by many different names associated with specific forms of occupational exposure: HP from bird droppings is called pigeon fancier's lung or poultry worker's lung, both common in bird breeders and handlers, and HP from mold exposure in various work environments is called cheese handler's disease, farmer's lung, sauna takers' disease, or hot-tub lung.
+{{< selfcheck question="Explain why hypersensitivity pneumonitis is considered an occupational disease." hint="Reread the opening paragraph of Hypersensitivity Pneumonitis and the caption of the occupational-exposure figure." >}}
+Hypersensitivity pneumonitis (HP) is often an occupational or environmental disease that occurs when the lungs become inflamed due to an allergic reaction to inhaled dust, endospores, bird feathers, bird droppings, molds, or chemicals. HP goes by many different names associated with various forms of exposure. HP associated with bird droppings is sometimes called pigeon fancier's lung or poultry worker's lung, both common in bird breeders and handlers; cheese handler's disease, farmer's lung, sauna takers' disease, and hot-tub lung are other names for HP associated with exposure to molds in various environments. As the figure shows, people exposed daily to large numbers of birds may be susceptible to poultry worker's lung, and workers in a cheese factory may become sensitized to different types of molds and develop cheese handler's disease.
 ===CHECKS===
-HP occurs when the lungs are inflamed by an allergic reaction to inhaled dust, mold, or similar allergens
-these allergens are encountered through daily work, giving HP its occupational names
-bird-exposure HP is called pigeon fancier's lung or poultry worker's lung
-mold-exposure HP is called cheese handler's disease, farmer's lung, sauna takers' disease, or hot-tub lung
+HP is often an occupational or environmental disease
+the lungs become inflamed due to an allergic reaction to inhaled dust, endospores, bird feathers, bird droppings, molds, or chemicals
+HP goes by many different names associated with various forms of exposure
+HP associated with bird droppings is called pigeon fancier's lung or poultry worker's lung, common in bird breeders and handlers
+people exposed daily to large numbers of birds may be susceptible to poultry worker's lung, and workers in a cheese factory may develop cheese handler's disease
 {{< /selfcheck >}}
 
 The table below summarizes the mechanisms and effects of each type of hypersensitivity discussed in this section.
@@ -375,15 +380,15 @@ Results of an allergy skin-prick test to test for type I hypersensitivity to a g
 {{< multiplechoice
   question="Describe the prick puncture skin test."
   answer="Allergens are introduced through a series of superficial skin pricks on the patient's back or arms"
-  hint="This test is named for how the allergen reaches the skin — not by injection."
+  hint="Reread the first paragraph of Diagnosis of Hypersensitivities."
 >}}
 A small needle injects allergen into the dermis
 Allergens are introduced through a series of superficial skin pricks on the patient's back or arms
-A sample of lung fluid is examined by bronchoalveolar lavage
-The lungs are imaged by high-resolution computed tomography
+A bronchoalveolar lavage (BAL) is performed
+A high-resolution computed tomography (HRCT) scan is performed
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain why type III hypersensitivities can be difficult to diagnose." hint="The symptoms themselves are not unique to this condition — think about what else they could look like." >}}
+{{< selfcheck question="Explain why type III hypersensitivities can be difficult to diagnose." hint="Reread the second paragraph of Diagnosis of Hypersensitivities." >}}
 Type III hypersensitivities can often be misdiagnosed because of their nonspecific inflammatory nature. Their symptoms are easily visible, but they may be associated with any of a number of other diseases, so a strong, comprehensive patient history is crucial to proper and accurate diagnosis.
 ===CHECKS===
 type III hypersensitivities can be misdiagnosed because of their nonspecific inflammatory nature
@@ -407,7 +412,7 @@ Treatment of type IV hypersensitivities includes antihistamines, anti-inflammato
 
 **Check Your Understanding**
 
-{{< selfcheck question="Describe desensitization therapy." hint="Track the therapy through three things: the dose schedule, the safety precaution, and the antibody class it favors." >}}
+{{< selfcheck question="Describe desensitization therapy." hint="Reread the first two paragraphs of Treatments of Hypersensitivities." >}}
 Desensitization, or hyposensitization, therapy reduces a hypersensitivity reaction through repeated injections of allergens. Extremely dilute concentrations of known allergens, determined from allergen testing, are injected into the patient at prescribed intervals, such as weekly. The quantity of allergen delivered is slowly increased over a buildup period until an effective dose is determined, and that dose is maintained for the duration of treatment, which can last years. Patients are usually encouraged to remain in the doctor's office for 30 minutes after the injection in case of a severe systemic reaction, and offices administering the therapy must be prepared to provide resuscitation and drug treatment if that happens. The allergy shots elicit production of IgG antibodies instead of IgE; the excess IgG can act as blocking antibodies that neutralize the allergen before it binds IgE on mast cells.
 ===CHECKS===
 repeated injections of increasing, dilute concentrations of known allergens are given at prescribed intervals
@@ -419,7 +424,7 @@ the allergy shots elicit production of IgG antibodies instead of IgE, and the ex
 {{< multiplechoice
   question="Explain the role of epinephrine in treatment of hypersensitivity reactions."
   answer="It counteracts the drop in blood pressure during systemic anaphylaxis"
-  hint="This is the FIRST drug given for a severe systemic reaction, and it addresses the most dangerous symptom."
+  hint="Reread the third paragraph of Treatments of Hypersensitivities."
 >}}
 It prevents late-phase reactions during the days after exposure
 It neutralizes the allergen by outcompeting IgE for its binding sites
@@ -468,7 +473,7 @@ It increases production of IgG antibodies to shift the response away from IgE
 {{< multiplechoice
   question="Which of the following is the type of cell largely responsible for type I hypersensitivity responses?"
   answer="mast cell"
-  hint="This cell's degranulation directly produces the symptoms of the reaction."
+  hint="Reread the paragraphs of Type I Hypersensitivities on what happens at a subsequent exposure to an allergen."
 >}}
 erythrocyte
 mast cell
@@ -490,7 +495,7 @@ degranulation
 {{< multiplechoice
   question="Which of the following are the main mediators/initiators of type II hypersensitivity reactions?"
   answer="antibodies"
-  hint="Reread the opening sentence of Type II (Cytotoxic) Hypersensitivities."
+  hint="Reread the opening sentence of the subsection on type II hypersensitivities."
 >}}
 antibodies
 mast cells
@@ -501,7 +506,7 @@ histamines
 {{< multiplechoice
   question="Inflammatory molecules are released by mast cells in type I hypersensitivities; type II hypersensitivities, however, are characterized by which of the following?"
   answer="cell lysis (cytotoxicity)"
-  hint="Type II antibodies target antigens on the surface of cells themselves."
+  hint="Reread the opening paragraph of the subsection on type II hypersensitivities."
 >}}
 cell lysis (cytotoxicity)
 strong antibody reactions against antigens
@@ -512,7 +517,7 @@ localized tissue reactions, such as hives
 {{< multiplechoice
   question="An immune complex is an aggregate of which of the following?"
   answer="antibody and antigen molecules"
-  hint="The term names what the complex is made of, not just one side of the binding."
+  hint="Reread the Arthus-reaction paragraph that opens Type III Hypersensitivities."
 >}}
 antibody molecules
 antigen molecules
@@ -556,29 +561,32 @@ hemolytic disease of the newborn
 {{< textin
   question="Antibodies involved in type I hypersensitivities are of the ________ class."
   answer="IgE"
-  hint="This is the antibody class that binds to mast cells and sensitizes them."
+  accept="immunoglobulin E"
+  hint="Reread the second paragraph of Type I Hypersensitivities."
 >}}
 
 {{< textin
   question="Allergy shots work by shifting antibody responses to produce ________ antibodies."
   answer="IgG"
-  hint="Desensitization therapy favors production of the blocking-antibody class instead of IgE."
+  accept="immunoglobulin G"
+  hint="Reread the second paragraph of Treatments of Hypersensitivities."
 >}}
 
 {{< textin
   question="A person who is blood type A would have IgM hemagglutinin antibodies against type ________ red blood cells in their plasma."
   answer="B"
+  accept="type B"
   hint="Reread the isohemagglutinin paragraph in ABO Blood Group Incompatibility."
 >}}
 
 {{< textin
   question="The itchy and blistering rash that develops with contact to poison ivy is caused by a type ________ hypersensitivity reaction."
   answer="IV"
-  accept="4"
+  accept="4|type IV|type 4"
   hint="Find the paragraph that names contact dermatitis due to poison ivy among its target-cell examples."
 >}}
 
-{{< sortbins question="Sort each mast cell mediator into the group that describes when it is released relative to mast cell activation." hint="One group is already stored in the granules before activation; the other is synthesized only after activation." >}}
+{{< sortbins question="Sort each mast cell mediator into the group that describes when it is released relative to mast cell activation." hint="Reread the two mast-cell mediator tables in Type I Hypersensitivities." >}}
 {"bins": ["Preformed", "Newly formed"],
  "items": [
   {"label": "Heparin stimulates the generation of bradykinin, increasing vascular permeability and bronchiole constriction", "bin": 0},
@@ -599,10 +607,10 @@ hemolytic disease of the newborn
   {"label": "Produces labored breathing and coughing", "bin": 0},
   {"label": "Causes swelling of the tongue and throat", "bin": 1},
   {"label": "Produces a runny nose and watery eyes", "bin": 2},
-  {"label": "Produces a raised, bumpy skin rash", "bin": 3}]}
+  {"label": "Its bumps may converge into large raised areas", "bin": 3}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="Although both type I and type II hypersensitivities involve antibodies as immune effectors, different mechanisms are involved with these different hypersensitivities. Differentiate the two." hint="Contrast what the antibody binds to — free allergen versus antigen on a cell surface." >}}
+{{< selfcheck question="Although both type I and type II hypersensitivities involve antibodies as immune effectors, different mechanisms are involved with these different hypersensitivities. Differentiate the two." hint="Reread the paragraphs of Type I Hypersensitivities on first and subsequent exposure, and the opening paragraph of the subsection on type II hypersensitivities." >}}
 Type I hypersensitivity is mediated by IgE antibodies. On first exposure to an allergen, IgE antibodies are produced and bind to receptors on mast cells, sensitizing them. On a later exposure, the allergen cross-links the IgE molecules on the mast cells, triggering degranulation and the release of inflammatory mediators such as histamine, which cause the immediate signs and symptoms of the reaction. Type II hypersensitivity is mediated by IgG and IgM antibodies that bind directly to antigens on the surface of cells, such as blood-group antigens on red blood cells. This binding activates the complement cascade, causing lysis of the targeted cells, or it triggers antibody-dependent cell-mediated cytotoxicity by cytotoxic T cells.
 ===CHECKS===
 type I hypersensitivity is mediated by IgE antibodies that sensitize mast cells
@@ -619,7 +627,7 @@ antibody excess, together with a relatively low concentration of antigen, is the
 this imbalance produces small immune complexes that deposit on blood vessel or tissue surfaces
 {{< /selfcheck >}}
 
-{{< selfcheck question="Patients are frequently given instructions to avoid allergy medications for a period of time prior to allergy testing. Why would this be important?" hint="Look for what the module says the skin test actually measures, and notice how far its treatment discussion goes." >}}
+{{< selfcheck question="Patients are frequently given instructions to avoid allergy medications for a period of time prior to allergy testing. Why would this be important?" hint="Reread the first paragraph of Diagnosis of Hypersensitivities and the paragraph on milder allergic reactions in Treatments of Hypersensitivities." >}}
 This section describes the two tests used to identify a type I allergen: the prick puncture skin test (PPST), in which allergens are introduced through a series of superficial skin pricks, and the intradermal test, in which a small needle injects allergen into the dermis. Both are observed for 15–20 minutes for a wheal-flare reaction — a raised, itchy bump (wheal) and surrounding redness (flare) — whose size indicates the patient's sensitivity to the allergen. This section also describes antihistamines as a treatment for allergic reactions, but it does not state why medications must be avoided before testing; reasoning about that connection goes beyond what this section says.
 ===CHECKS===
 the PPST introduces allergens through a series of superficial skin pricks
@@ -628,7 +636,7 @@ both tests are read for a wheal-flare reaction within 15–20 minutes, whose siz
 this section describes antihistamines as an allergy treatment but does not explain why medications are avoided before testing
 {{< /selfcheck >}}
 
-{{< selfcheck question="In some areas of the world, a tuberculosis vaccine known as bacillus Calmette-Guérin (BCG) is used. It is not used in the United States. Every person who has received this vaccine and mounted a protective response will have a positive reaction in a tuberculin skin test. Why? What does this mean for the usefulness of this skin test in those countries where this vaccine is used?" hint="The module explains what a positive tuberculin test actually detects — recall, not necessarily active disease." >}}
+{{< selfcheck question="In some areas of the world, a tuberculosis vaccine known as bacillus Calmette-Guérin (BCG) is used. It is not used in the United States. Every person who has received this vaccine and mounted a protective response will have a positive reaction in a tuberculin skin test. Why? What does this mean for the usefulness of this skin test in those countries where this vaccine is used?" hint="Reread the third paragraph of the Micro Connection box on using delayed hypersensitivity to test for TB." >}}
 This section explains that the tuberculin skin test is a type IV, T-cell-mediated hypersensitivity reaction: tuberculin protein is introduced into the skin, and a positive reaction — a delayed, localized swelling — develops because memory T cells that recognize the antigen are reactivated. The section notes that a positive test does not necessarily mean the patient is currently infected with active TB, because the memory T cells being reactivated may have been created years earlier, from a past infection that was cleared or became latent, rather than from a current infection. The vaccine itself and its effect on skin-test results are not discussed in this section.
 ===CHECKS===
 the tuberculin skin test is a type IV, T-cell-mediated hypersensitivity reaction
@@ -639,4 +647,4 @@ the vaccine itself and its effect on the test are not discussed in this section
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 19.1: Hypersensitivities](https://openstax.org/books/microbiology/pages/19-1-hypersensitivities) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all eleven source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="photo"` set on the Allergen, tine-test, occupational-exposure, and skin-test figures (four photographic panels or photo-only compositions) and `kind="diagram"` on the mast-cell-sensitization, ABO, HTR, HDN, Type III, Type IV, and hypersensitivity-types-recap figures (each has at least one drawn or rendered-table panel, and the drawn half is what the caption or the page teaches), overriding the media manifest's JPEG-based photo guess for the diagrams; the Allergen figure carries `eager="true"` as the page's first figure; a `longdesc` walk-through was added to the mast-cell-sensitization (5 steps), ABO (4-cell table), hemolytic-transfusion-reaction (3 steps), hemolytic-disease-of-the-newborn (two panels, 4 and 3 steps), type III (two-panel mechanism-and-consequence), and type IV (two-panel sensitization-and-response) figures, because their multi-part content is not fully carried by the caption or alt; the ABO figure prints no caption in the source and is rendered with none; the hypersensitivity-types-recap figure (`OSC_Microbio_19_01_Types`), a rendered table image, is transcribed as a Markdown table from the image (checked against the PDF page) rather than from the source alt, which carries three defects this page's transcription does not reproduce: a typo ("secreete"), a doubled period, and a "Local and systemic" phrase copied onto the Type III examples cell from the Type I cell — the rendered image itself shows no such phrase on the Type III row — and the vendored figure is kept after it with an alt describing the table's layout rather than repeating the values already transcribed; four one-word or one-character source defects are corrected in place with no inline note — "arachadonic acid" to "arachidonic acid" in the degranulation-mediators paragraph, the Strayer et al. citation's stray "2" before "Philadelphia," the doubled "with a with a" in the HDN figure caption, and the missing noun in "the next pregnancy with an Rh+ will have minimal risk," corrected to "the next pregnancy with an Rh+ fetus will have minimal risk"; the HDN figure's source alt uses an ASCII hyphen for "Rh-" where the prose uses the minus sign "Rh−," so this page's rewritten alt and longdesc spell out "Rh-positive"/"Rh-negative" throughout, which resolves the inconsistency without a separate disclosure; all twelve of the module's footnotes are rendered as inline parenthetical citations placed after the sentence they support, with the one bare access URL (the CDC's Diphtheria Antitoxin page) dropped and every other citation's authors, title, journal, and year kept verbatim; the Fill in the Blank items are rendered as `textin`, keeping the source's exact wording; the five tables with a `summary` are all transcribed as Markdown, and three become a `sortbins` in the Practice block or body — the two mast-cell-mediator tables (preformed and newly formed components) as one combined `Preformed`/`Newly formed` sortbins, and the Type I Hypersensitivities conditions table as one four-bin sortbins, both placed in Practice under the section's single objective; the Common Type II Hypersensitivities table (two rows) is left as Markdown only, too thin for a sortbins without inventing items; the Type IV Hypersensitivities table becomes a `Subcategory 1`/`2`/`3` sortbins built with the row's effector mechanism and examples (and, for subcategory 3 only, its antigen form, since subcategories 1 and 2 share the same "soluble antigen" antigen form and an item built from it would not identify a single bin) — this sortbins is placed at the position of, and replaces, the body Check Your Understanding bullet "Describe the three subtypes of type IV hypersensitivity," per the rule that a body item already asking a table's own contrast is the one that becomes the sortbins, so it is not duplicated in Practice; of the module's fourteen body Check Your Understanding bullets across seven boxes, seven are graded from a single module sentence, a table, or a compare-and-contrast pair of module passages — "What are the cells that cause a type I hypersensitivity reaction?" (`textin`, keyed from "The chemical mediators released by mast cells collectively cause the inflammation and signs and symptoms associated with type I hypersensitivity reactions"), "What happens to cells that possess incompatible antigens in a type II hypersensitivity reaction?" (`multiplechoice`), "Why is antibody excess important in type III hypersensitivity?" (`multiplechoice`), "Describe the differences between the Arthus reaction and serum sickness" (`sortbins`, two bins), "Describe the three subtypes of type IV hypersensitivity" (`sortbins`, described above), "Describe the prick puncture skin test" (`multiplechoice`), and "Explain the role of epinephrine in treatment of hypersensitivity reactions" (`multiplechoice`, keyed from "Emergency systemic anaphylaxis is treated initially with an epinephrine injection, which can counteract the drop in blood pressure") — and the remaining seven stay body self-checks, with model answers assembled from this section's own text; the module's two unkeyed Short Answer questions and two unkeyed Critical Thinking questions are rendered as `selfcheck`s in Practice, since no single module sentence fixes any of the four — the two Critical Thinking model answers say what the section states about skin testing and the tuberculin test and stop, since the section does not state the reasoning the questions ask for; the module's eight Multiple Choice and four Fill in the Blank items are rendered exactly as keyed, in source order and source option order; four author-written `multiplechoice` items built from the body Check Your Understanding bullets above vary their key position (A, B, C, D across the four) rather than clustering; two body items overlap Practice source items and cannot be separated, because body Check Your Understanding items stay at their note positions: the mast-cell `textin` asks the same fact as the source Multiple Choice "Which of the following is the type of cell largely responsible for type I hypersensitivity responses?", and the antibody-excess `multiplechoice`'s keyed option prints the "why" half of the source Short Answer "What types of antibodies are most common in type III hypersensitivities, and why?"; all four are kept as printed; no source exercise, table, or Check Your Understanding bullet is omitted; key terms are compiled from the module's 23 `<term>` elements and the book's Glossary appendix, giving 23 distinct bullets, all with a Glossary entry (none sentence-derived); the source's cross-references to *Adaptive Specific Host Defenses*, *B Lymphocytes and Humoral Immunity* (twice), *Chemical Defenses*, *Vaccines*, and *Autoimmune Disorders* (twice) are rendered as live links to their authored pages; the Clinical Focus case (patient Kerry) runs Parts 1–3 within this section — each of Part 1 and Part 2's closing "jump to the next box" sentence is replaced with a same-page "The case continues in *Part N* below," and the source's "go back to the previous box" pointers are dropped as redundant on a single page — and Part 3's closing sentence is replaced with a link to where the case resolves, [Organ Transplantation and Rejection](/life-health-sciences/microbiology/19-diseases-of-the-immune-system/03-organ-transplantation-and-rejection/); the closing questions inside each Clinical Focus part stay as unanswered bulleted prose, as printed.</small>
+<small>This section is adapted from [Microbiology, Section 19.1: Hypersensitivities](https://openstax.org/books/microbiology/pages/19-1-hypersensitivities) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all eleven source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="photo"` set on the Allergen, tine-test, occupational-exposure, and skin-test figures (four photographic panels or photo-only compositions) and `kind="diagram"` on the mast-cell-sensitization, ABO, HTR, HDN, Type III, Type IV, and hypersensitivity-types-recap figures (each has at least one drawn or rendered-table panel, and the drawn half is what the caption or the page teaches), overriding the media manifest's JPEG-based photo guess for the diagrams; the Allergen figure carries `eager="true"` as the page's first figure; a `longdesc` walk-through was added to the mast-cell-sensitization (5 steps), ABO (4-cell table), hemolytic-transfusion-reaction (3 steps), hemolytic-disease-of-the-newborn (two panels, 4 and 3 steps), type III (two-panel mechanism-and-consequence), and type IV (two-panel sensitization-and-response) figures, because their multi-part content is not fully carried by the caption or alt; the ABO figure prints no caption in the source and is rendered with none; the hypersensitivity-types-recap figure (`OSC_Microbio_19_01_Types`), a rendered table image, is transcribed as a Markdown table from the image (checked against the PDF page) rather than from the source alt, which carries three defects this page's transcription does not reproduce: a typo ("secreete"), a doubled period, and a "Local and systemic" phrase copied onto the Type III examples cell from the Type I cell — the rendered image itself shows no such phrase on the Type III row — and the vendored figure is kept after it with an alt describing the table's layout rather than repeating the values already transcribed; five one-word or one-character source defects are corrected in place with no inline note — "arachadonic acid" to "arachidonic acid" in the degranulation-mediators paragraph, the Micro Connection box's "Clemans von Pirquet" to "Clemens von Pirquet" (the spelling its own Huber citation prints), the Strayer et al. citation's stray "2" before "Philadelphia," the doubled "with a with a" in the HDN figure caption, and the missing noun in "the next pregnancy with an Rh+ will have minimal risk," corrected to "the next pregnancy with an Rh+ fetus will have minimal risk"; the HDN figure's source alt uses an ASCII hyphen for "Rh-" where the prose uses the minus sign "Rh−," so this page's rewritten alt and longdesc spell out "Rh-positive"/"Rh-negative" throughout, which resolves the inconsistency without a separate disclosure; all twelve of the module's footnotes are rendered as inline parenthetical citations placed after the sentence they support, with the one bare access URL (the CDC's Diphtheria Antitoxin page) dropped and every other citation's authors, title, journal, and year kept verbatim; the Fill in the Blank items are rendered as `textin`, keeping the source's exact wording; the five tables with a `summary` are all transcribed as Markdown, and three become a `sortbins` in the Practice block or body — the two mast-cell-mediator tables (preformed and newly formed components) as one combined `Preformed`/`Newly formed` sortbins, and the Type I Hypersensitivities conditions table as one four-bin sortbins, both placed in Practice under the section's single objective; the Common Type II Hypersensitivities table (two rows) is left as Markdown only, too thin for a sortbins without inventing items; the Type IV Hypersensitivities table becomes a `Subcategory 1`/`2`/`3` sortbins built with the row's effector mechanism and examples (and, for subcategory 3 only, its antigen form, since subcategories 1 and 2 share the same "soluble antigen" antigen form and an item built from it would not identify a single bin) — this sortbins is placed at the position of, and replaces, the body Check Your Understanding bullet "Describe the three subtypes of type IV hypersensitivity," per the rule that a body item already asking a table's own contrast is the one that becomes the sortbins, so it is not duplicated in Practice; of the module's fourteen body Check Your Understanding bullets across seven boxes, six are graded from a single module sentence, a table, or a compare-and-contrast pair of module passages — "What happens to cells that possess incompatible antigens in a type II hypersensitivity reaction?" (`multiplechoice`), "Why is antibody excess important in type III hypersensitivity?" (`multiplechoice`), "Describe the differences between the Arthus reaction and serum sickness" (`sortbins`, two bins), "Describe the three subtypes of type IV hypersensitivity" (`sortbins`, described above), "Describe the prick puncture skin test" (`multiplechoice`), and "Explain the role of epinephrine in treatment of hypersensitivity reactions" (`multiplechoice`, keyed from "Emergency systemic anaphylaxis is treated initially with an epinephrine injection, which can counteract the drop in blood pressure") — and the remaining eight stay body self-checks, with model answers assembled from this section's own text; "What are the cells that cause a type I hypersensitivity reaction?" is one of the eight, because the source Multiple Choice "Which of the following is the type of cell largely responsible for type I hypersensitivity responses?" keys the same fact in Practice; the module's two unkeyed Short Answer questions and two unkeyed Critical Thinking questions are rendered as `selfcheck`s in Practice, since no single module sentence fixes any of the four — the two Critical Thinking model answers say what the section states about skin testing and the tuberculin test and stop, since the section does not state the reasoning the questions ask for; the module's eight Multiple Choice and four Fill in the Blank items are rendered exactly as keyed, in source order and source option order; four author-written `multiplechoice` items built from the body Check Your Understanding bullets above vary their key position (A, B, C, D across the four) rather than clustering; one body item overlaps a Practice source item and cannot be separated, because body Check Your Understanding items stay at their note positions: the antibody-excess `multiplechoice`'s keyed option prints the "why" half of the source Short Answer "What types of antibodies are most common in type III hypersensitivities, and why?"; both are kept as printed; no source exercise, table, or Check Your Understanding bullet is omitted; key terms are compiled from the module's 23 `<term>` elements and the book's Glossary appendix, giving 23 distinct bullets, all with a Glossary entry (none sentence-derived); the source's cross-references to *Adaptive Specific Host Defenses*, *B Lymphocytes and Humoral Immunity* (twice), *Chemical Defenses*, *Vaccines*, and *Autoimmune Disorders* (twice) are rendered as live links to their authored pages; the Clinical Focus case (patient Kerry) runs Parts 1–3 within this section — each of Part 1 and Part 2's closing "jump to the next box" sentence is replaced with a same-page "The case continues in *Part N* below," and the source's "go back to the previous box" pointers are dropped as redundant on a single page — and Part 3's closing sentence is replaced with a link to where the case resolves, [Organ Transplantation and Rejection](/life-health-sciences/microbiology/19-diseases-of-the-immune-system/03-organ-transplantation-and-rejection/); the closing questions inside each Clinical Focus part stay as unanswered bulleted prose, as printed. One claim is corrected with a visible Source note: the vomiting center lies in the brain stem, not the cerebellum.</small>

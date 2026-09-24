@@ -54,7 +54,7 @@ To diagnose tineas, the dermatophytes may be grown on a Sabouraud dextrose CC ag
 
 **Check Your Understanding**
 
-{{< selfcheck question="Why are tineas, caused by fungal molds, often called ringworm?" hint="Look at how the lesion grows and heals over time — the resulting shape is what gives the condition its misleading name." >}}
+{{< selfcheck question="Why are tineas, caused by fungal molds, often called ringworm?" hint="Read the paragraph on tinea corporis in Tineas." >}}
 Tineas on the body (tinea corporis) often produce lesions that grow radially and heal towards the center. This causes the formation of a red ring, which leads to the misleading name of ringworm, even though the condition is caused by a fungus and not by a worm.
 ===CHECKS===
 lesions grow radially and heal towards the center
@@ -76,7 +76,7 @@ Cutaneous aspergillosis is diagnosed using patient history, culturing, histopath
 
 **Check Your Understanding**
 
-{{< sortbins question="Identify the sources of infection for primary and secondary cutaneous aspergillosis by sorting each phrase under the form it describes." hint="Read the first and third paragraphs of Cutaneous Aspergillosis." >}}
+{{< sortbins question="Identify the sources of infection for primary and secondary cutaneous aspergillosis by sorting each phrase under the form it describes." hint="Read the first two paragraphs of Cutaneous Aspergillosis." >}}
 {"bins": ["Primary cutaneous aspergillosis", "Secondary cutaneous aspergillosis"],
  "items": [
   {"label": "The infection begins in the skin, often at the site of an injury", "bin": 0},
@@ -99,7 +99,7 @@ Candidiasis of the skin and nails is diagnosed through clinical observation and 
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are the signs and symptoms of candidiasis of the skin and nails?" hint="This section names two separate presentations — a rash, and a change somewhere else that is not skin." >}}
+{{< selfcheck question="What are the signs and symptoms of candidiasis of the skin and nails?" hint="Read the first paragraph of Candidiasis of the Skin and Nails." >}}
 Candidiasis of the skin can produce intertrigo, a general term for a rash that occurs in a skin fold, or other localized rashes on the skin. Candidiasis of the nails causes them to become yellow and harden.
 ===CHECKS===
 intertrigo, a rash in a skin fold, or other localized rashes on the skin
@@ -116,7 +116,7 @@ Whereas cutaneous mycoses are superficial, subcutaneous mycoses can spread from 
 
 **Check Your Understanding**
 
-{{< selfcheck question="Describe the progression of a Sporothrix schenkii infection." hint="Trace the infection through three stages: how it starts, what happens as it spreads locally, and what happens in the rare severe case." >}}
+{{< selfcheck question="Describe the progression of a Sporothrix schenkii infection." hint="Read the second paragraph of Sporotrichosis." >}}
 *Sporothrix* infections initially present as small ulcers in the skin, but the fungus can spread to the lymphatic system and sometimes beyond. When the infection spreads, nodules appear, become necrotic, and may ulcerate. As more lymph nodes become affected, abscesses and ulceration may develop over a larger area, often on one arm or hand. In severe cases, the infection may spread more widely throughout the body, although this is relatively uncommon.
 ===CHECKS===
 infections initially present as small ulcers in the skin
@@ -186,7 +186,7 @@ viruses
 {{< textin
   question="What yeasts commonly cause opportunistic infections?"
   answer="Candida albicans"
-  accept="C. albicans|Candida|Candida spp.|Candida species"
+  accept="C. albicans|Candida|Candida spp.|Candida species|Candida yeasts|genus Candida|yeasts of the genus Candida"
   hint="Read the caption of the figure with the rash, nail, and culture-plate photos."
 >}}
 
@@ -225,19 +225,19 @@ amphotericin
 nystatin
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What steps might you recommend to a patient for reducing the risk of developing a fungal infection of the toenails?" hint="This section's prevention advice for repeat infections actually describes cutaneous candidiasis, not toenail infections specifically — read carefully before answering." >}}
-This section does not give preventive steps specifically for toenail fungal infections (tinea unguium); the closest guidance it gives is for reducing repeat cutaneous candidiasis infections, which can be lowered by carefully following treatment recommendations, avoiding excessive moisture, maintaining good health, practicing good hygiene, and having appropriate clothing (including footwear).
+{{< selfcheck question="What steps might you recommend to a patient for reducing the risk of developing a fungal infection of the toenails?" hint="Read the figure caption and the paragraph after it in Candidiasis of the Skin and Nails." >}}
+Fungal infections of the nail (tinea unguium) can be caused by dermatophytes or *Candida* spp. For candidiasis of the skin and nails, the risk of repeat infections can be reduced by carefully following treatment recommendations, avoiding excessive moisture, maintaining good health, practicing good hygiene, and having appropriate clothing (including footwear).
 ===CHECKS===
-this section does not give prevention steps specifically for toenail infections, only for cutaneous candidiasis
+carefully following treatment recommendations
 avoiding excessive moisture
-maintaining good health and practicing good hygiene
-having appropriate clothing, including footwear
+maintaining good health, practicing good hygiene
+having appropriate clothing (including footwear)
 {{< /selfcheck >}}
 
 {{< multiplechoice
   question="Which tinea is associated with the feet?"
   answer="Tinea pedis (athlete's foot)"
-  hint="The section describes this tinea spreading in public showers and in sweaty shoes and socks."
+  hint="Check the Some Common Tineas and Location on the Body table."
 >}}
 Tinea corporis (ringworm)
 Tinea capitis (ringworm)
@@ -250,7 +250,7 @@ Tinea unguium (onychomycosis)
 {{< multiplechoice
   question="Which tinea is associated with the groin?"
   answer="Tinea cruris (jock itch)"
-  hint="The section describes this tinea spreading in communal living environments and warm, moist undergarments."
+  hint="Check the Some Common Tineas and Location on the Body table."
 >}}
 Tinea corporis (ringworm)
 Tinea capitis (ringworm)
@@ -263,7 +263,7 @@ Tinea unguium (onychomycosis)
 {{< multiplechoice
   question="Which tinea is associated with the body?"
   answer="Tinea corporis (ringworm)"
-  hint="This is the tinea whose lesions grow radially and heal toward the center, forming a ring."
+  hint="Check the Some Common Tineas and Location on the Body table."
 >}}
 Tinea corporis (ringworm)
 Tinea capitis (ringworm)
@@ -275,4 +275,4 @@ Tinea unguium (onychomycosis)
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 21.4: Mycoses of the Skin](https://openstax.org/books/microbiology/pages/21-4-mycoses-of-the-skin) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four of the module's non-Disease-Profile figures are re-encoded as WebP and rendered as mediafigures after image and PDF inspection, all `kind="photo"` (every panel in all four is a photograph or photomicrograph, none a drawn diagram), with the tineas figure carrying `eager="true"` as the page's first figure; three source-alt corrections are made with no inline note — the dermatophyte-colony alt's "blackn" to "black," the aspergillosis alt's "think strands" to "thin strands," and the candidiasis-plate alt's "fuzzy" reworded to "smooth, lobed" after comparing the image, whose colonies are glossy and lobed rather than cottony — and each figure's alt lettering is normalized to a lowercase "(a)/(b)/(c)" style matching its caption; two punctuation corrections restore the source's own convention rather than the raw CNXML's printed form: the ringworm sentence's missing parentheses around "recall the Clinical Focus case in [The Eukaryotes of Microbiology]" are added, matching this page's own later "(recall [Case in Point: Every Rose Has Its Thorn])" construction and the parallel form used elsewhere in the book, in place of the raw CNXML's unpunctuated "ringworm recall the Clinical Focus case in"; and the stray, unmatched closing parenthesis the source prints after the Pulmonary-aspergillosis cross-reference to "Respiratory Mycoses)" is dropped; the module's fifth figure, the Disease Profile's `OSC_Microbio_21_04_DMycoses` table image, is not vendored and is instead transcribed as a Markdown table inside the Disease Profile callout, from the image, checked cell by cell against the PDF page — the Candidiasis row's Transmission cell is transcribed as "Overgrowth of normal skin microbiota, especially in moist, dark areas," which the image and the PDF both print, correcting the source alt attribute's own mistaken text for that cell ("Opportunistic infections in immunocompromised patients," copied from the Signs-and-Symptoms phrasing used elsewhere in the same alt); the module's one table with a `summary` (the six-row tineas/location table) is transcribed as Markdown and, per this run's decision for a one-item-per-bin table, is not a `sortbins` — instead three of its rows (feet, groin, body) become per-row `multiplechoice` items in Practice offering all six tinea names as options in the table's own order, the correct option's position varying row to row on its own, in the shape of a converted Matching set; the cross-reference to Pulmonary aspergillosis is linked to [Respiratory Mycoses](/life-health-sciences/microbiology/22-respiratory-system-infections/04-respiratory-mycoses/), a section of this same two-chapter authoring run; the cross-reference to the ringworm Clinical Focus case is linked to this book's authored [Unicellular Eukaryotic Parasites](/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/01-unicellular-eukaryotic-parasites/); the cross-reference to the sporotrichosis Case in Point is linked to this book's authored [Physical Defenses](/life-health-sciences/microbiology/17-innate-nonspecific-host-defenses/01-physical-defenses/), which contains that box; the cross-references to vaginal candidiasis and oral thrush stay plain text naming their (not yet authored) sections, *Fungal Infections of the Reproductive System* and *Microbial Diseases of the Mouth and Oral Cavity*; of the module's four body Check Your Understanding bullets, one — "Identify the sources of infection for primary and secondary cutaneous aspergillosis" — is graded as a two-bin `sortbins` built from the module's own primary/secondary compare-and-contrast paragraph, and the remaining three (the ringworm-naming question, the candidiasis signs-and-symptoms question, and the *Sporothrix* progression question) stay body self-checks, since each needs more than one module sentence to answer honestly; the module's unkeyed Short Answer question ("What yeasts commonly cause opportunistic infections?") is graded as a `textin` keyed `Candida albicans` (`accept="C. albicans|Candida|Candida spp.|Candida species"`) from the candidiasis figure's own caption, which names the yeast; the module's unkeyed Critical Thinking question (steps to reduce toenail fungal infection risk) stays a `selfcheck`, whose model answer discloses that the section's only relevant prevention sentence in fact describes repeat cutaneous candidiasis infections rather than toenail infections specifically; the module's four Multiple Choice and one Fill in the Blank items are rendered exactly as keyed, in source order and source option order (the Fill in the Blank as a `textin`); key terms are compiled from the module's eleven `<term>` elements, giving eleven distinct bullets; three of these — cutaneous, subcutaneous, and systemic mycoses — have no entry in the book's Glossary appendix and are defined from the module's own defining sentence rather than a glossary quotation; no source exercise, table, or Check Your Understanding bullet is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 21.4: Mycoses of the Skin](https://openstax.org/books/microbiology/pages/21-4-mycoses-of-the-skin) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four of the module's non-Disease-Profile figures are re-encoded as WebP and rendered as mediafigures after image and PDF inspection, all `kind="photo"` (every panel in all four is a photograph or photomicrograph, none a drawn diagram), with the tineas figure carrying `eager="true"` as the page's first figure; three source-alt corrections are made with no inline note — the dermatophyte-colony alt's "blackn" to "black," the aspergillosis alt's "think strands" to "thin strands," and the candidiasis-plate alt's "fuzzy" reworded to "smooth, lobed" after comparing the image, whose colonies are glossy and lobed rather than cottony — and each figure's alt lettering is normalized to a lowercase "(a)/(b)/(c)" style matching its caption; two punctuation corrections restore the source's own convention rather than the raw CNXML's printed form: the ringworm sentence's missing parentheses around "recall the Clinical Focus case in [The Eukaryotes of Microbiology]" are added, matching this page's own later "(recall [Case in Point: Every Rose Has Its Thorn])" construction and the parallel form used elsewhere in the book, in place of the raw CNXML's unpunctuated "ringworm recall the Clinical Focus case in"; and the stray, unmatched closing parenthesis the source prints after the Pulmonary-aspergillosis cross-reference to "Respiratory Mycoses)" is dropped; the module's fifth figure, the Disease Profile's `OSC_Microbio_21_04_DMycoses` table image, is not vendored and is instead transcribed as a Markdown table inside the Disease Profile callout, from the image, checked cell by cell against the PDF page — the Candidiasis row's Transmission cell is transcribed as "Overgrowth of normal skin microbiota, especially in moist, dark areas," which the image and the PDF both print, correcting the source alt attribute's own mistaken text for that cell ("Opportunistic infections in immunocompromised patients," copied from the Signs-and-Symptoms phrasing used elsewhere in the same alt); the module's one table with a `summary` (the six-row tineas/location table) is transcribed as Markdown and, per this run's decision for a one-item-per-bin table, is not a `sortbins` — instead three of its rows (feet, groin, body) become per-row `multiplechoice` items in Practice offering all six tinea names as options in the table's own order, the correct option's position varying row to row on its own, in the shape of a converted Matching set; the cross-reference to Pulmonary aspergillosis is linked to [Respiratory Mycoses](/life-health-sciences/microbiology/22-respiratory-system-infections/04-respiratory-mycoses/), a section of this same two-chapter authoring run; the cross-reference to the ringworm Clinical Focus case is linked to this book's authored [Unicellular Eukaryotic Parasites](/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/01-unicellular-eukaryotic-parasites/); the cross-reference to the sporotrichosis Case in Point is linked to this book's authored [Physical Defenses](/life-health-sciences/microbiology/17-innate-nonspecific-host-defenses/01-physical-defenses/), which contains that box; the cross-references to vaginal candidiasis and oral thrush stay plain text naming their (not yet authored) sections, *Fungal Infections of the Reproductive System* and *Microbial Diseases of the Mouth and Oral Cavity*; of the module's four body Check Your Understanding bullets, one — "Identify the sources of infection for primary and secondary cutaneous aspergillosis" — is graded as a two-bin `sortbins` built from the module's own primary/secondary compare-and-contrast paragraph, and the remaining three (the ringworm-naming question, the candidiasis signs-and-symptoms question, and the *Sporothrix* progression question) stay body self-checks, since each needs more than one module sentence to answer honestly; the module's unkeyed Short Answer question ("What yeasts commonly cause opportunistic infections?") is graded as a `textin` keyed `Candida albicans` (`accept="C. albicans|Candida|Candida spp.|Candida species|Candida yeasts|genus Candida|yeasts of the genus Candida"`) from the candidiasis figure's own caption, which names the yeast; the module's unkeyed Critical Thinking question (steps to reduce toenail fungal infection risk) stays a `selfcheck`, whose model answer is written from the candidiasis figure's caption (nail infections can be caused by dermatophytes or *Candida* spp.) and the section's repeat-infection sentence for candidiasis of the skin and nails; the module's four Multiple Choice and one Fill in the Blank items are rendered exactly as keyed and in source option order (the Fill in the Blank as a `textin`), each under the objective it tests, which moves the third Multiple Choice item (Sabouraud dextrose agar CC) and the Fill in the Blank item ahead of the first two Multiple Choice items; the Fill in the Blank (keyed sporotrichosis) is placed before the source Multiple Choice item whose stem names sporotrichosis, which stays verbatim; key terms are compiled from the module's eleven `<term>` elements, giving eleven distinct bullets; three of these — cutaneous, subcutaneous, and systemic mycoses — have no entry in the book's Glossary appendix and are defined from the module's own defining sentence rather than a glossary quotation; no source exercise, table, or Check Your Understanding bullet is omitted.</small>

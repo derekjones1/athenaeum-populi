@@ -3224,3 +3224,15 @@ test('an attribution footer naming run machinery (where a correction was logged 
   const outsideFooter = '# T\n\nA study logged 38 reported cases.\n\n<small>Adapted from [Book] by Authors, © OpenStax. Changes: none.</small>\n';
   assert.deepEqual(lintHugo(outsideFooter, 'content/x/y/01-a/01-b.md').errors.filter((e) => e.includes('names run machinery')), []);
 });
+
+test('the attribution footer must be the last thing on the page, and there is only one', () => {
+  const footer = '<small>This section is adapted from [Book, Section 1.1] by Authors and OpenStax. Changes: none.</small>';
+  const ok = `# T\n\nProse.\n\n---\n\n${footer}\n`;
+  const rule = (e) => e.includes('attribution footer');
+  assert.deepEqual(lintHugo(ok, 'content/x/y/01-a/01-b.md').errors.filter(rule), []);
+  // The Microbiology KC 21-26 splice: two chapters of questions below the footer.
+  const spliced = `# T\n\n## Chapter 24\n\nQ.\n\n${footer}\n\n## Chapter 25\n\nQ.\n`;
+  assert.equal(lintHugo(spliced, 'content/x/y/01-a/01-b.md').errors.filter(rule).length, 1);
+  const twice = `# T\n\n${footer}\n\nProse.\n\n${footer}\n`;
+  assert.ok(lintHugo(twice, 'content/x/y/01-a/01-b.md').errors.some((e) => e.includes('second attribution footer')));
+});

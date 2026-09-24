@@ -55,16 +55,17 @@ This interactive map (the ArboNET disease map at the CDC) identifies cases of se
 
 **Check Your Understanding**
 
-{{< selfcheck question="Why is it unlikely that arboviral encephalitis viruses will be eradicated in the future?" hint="Look at what the module names as the natural reservoir for each of these viruses — birds, mostly — and what that means for eliminating them from nature." >}}
-Each arboviral disease described here has an animal reservoir — birds for eastern equine, western equine, St. Louis, and West Nile encephalitis, and pigs and wading birds for Japanese encephalitis — and mosquitoes spread the viruses among those animal populations independently of human infection. Because the viruses persist in wild reservoirs rather than in humans alone, and mosquitoes themselves are extremely difficult to eliminate, vaccinating or treating humans cannot remove these viruses from circulation in nature.
+{{< selfcheck question="Why is it unlikely that arboviral encephalitis viruses will be eradicated in the future?" hint="See the Arboviral Encephalitis paragraphs, disease by disease." >}}
+Each arboviral disease described here has an animal reservoir: birds are the natural reservoirs for eastern equine, western equine, St. Louis, and West Nile encephalitis, and the biological reservoirs for Japanese encephalitis include pigs and wading birds. Humans are infected accidentally, by the bite of a mosquito vector — for EEE, neither horses nor humans serve as reservoirs — so the viruses persist in their animal reservoirs whatever happens in human populations, and vaccinating or treating humans cannot remove them from nature.
 ===CHECKS===
-birds (and pigs and wading birds) are the natural reservoirs for these viruses
-mosquitoes spread the viruses among animal populations independently of human infection
-vaccinating or treating humans cannot remove these viruses from circulation in nature
+birds are the natural reservoirs for eastern equine, western equine, St. Louis, and West Nile encephalitis
+the biological reservoirs for Japanese encephalitis include pigs and wading birds
+neither horses nor humans serve as reservoirs
+the viruses persist in their animal reservoirs whatever happens in human populations
 {{< /selfcheck >}}
 
-{{< selfcheck question="Which is the most common form of viral encephalitis in the United States?" hint="Compare the case-count numbers given for each of these five diseases — the largest is not the one you'd guess by name alone." >}}
-Comparing the case counts described for each disease, West Nile encephalitis is the most common form in the United States: more than 35,000 cases, including 1400 deaths, were confirmed in just the five years between 1999 and 2004, and WNV infection remains reportable to the CDC. That far exceeds the numbers described for the others — eastern equine encephalitis is very rare, western equine encephalitis's largest outbreak on record was about 3400 cases in 1941, St. Louis encephalitis's worst outbreak was about 2000 cases in 1975, and Japanese encephalitis is not endemic to the United States at all.
+{{< selfcheck question="Which is the most common form of viral encephalitis in the United States?" hint="Compare the case counts the Arboviral Encephalitis paragraphs give for each disease." >}}
+Comparing the case counts described for each disease, West Nile encephalitis is the most common form in the United States: more than 35,000 cases, including 1400 deaths, were confirmed in just the five years between 1999 and 2004, and WNV infection remains reportable to the CDC. That far exceeds the numbers described for the others — eastern equine encephalitis is very rare, western equine encephalitis's largest outbreak on record was more than 3400 cases in 1941, St. Louis encephalitis's worst outbreak was over 2000 cases in 1975, and Japanese encephalitis is not endemic to the United States at all.
 ===CHECKS===
 West Nile encephalitis is the most common form in the United States
 more than 35,000 cases, including 1400 deaths, were confirmed between 1999 and 2004
@@ -109,7 +110,7 @@ Fever, a slight rash, or conjunctivitis
 Flaccid paralysis progressing to fatal respiratory failure
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is Zika virus infection considered a serious public health threat?" hint="The mild symptoms most infected adults get are not why this virus worries public health officials — look at what the figure right above this box shows happening during pregnancy." >}}
+{{< selfcheck question="Why is Zika virus infection considered a serious public health threat?" hint="See the second paragraph of Zika Virus Infection and the figure below it." >}}
 Although most Zika virus infections cause only mild symptoms such as fever, a slight rash, or conjunctivitis, infections in pregnant people can adversely affect the developing fetus. Reports in 2015 indicated that fetal infections can result in brain damage, including a serious birth defect called microcephaly, in which the infant is born with an abnormally small head and brain.
 ===CHECKS===
 most Zika virus infections cause only mild symptoms
@@ -142,17 +143,17 @@ Virions of the rabies virus have a characteristic bullet-like shape. (credit: mo
 {{< multiplechoice
   question="How does the bite from an infected animal transmit rabies?"
   answer="The virus moves from the bite site into peripheral nerve axons and spreads nerve-to-nerve by retrograde transport until it reaches the CNS."
-  hint="See the Rabies paragraph on the incubation period and how the virus moves from the site of the bite."
+  hint="See the Rabies paragraph on the incubation period."
 >}}
-The virus moves from the bite site into peripheral nerve axons and spreads nerve-to-nerve by retrograde transport until it reaches the CNS.
 The virus invades local lymphoid tissue, enters the bloodstream, and then infects cells of the CNS — the same route poliovirus takes.
-The virus is destroyed by the immune system at the bite site in almost every case, which is why human rabies is rare in the United States.
+The virus moves from the bite site into peripheral nerve axons and spreads nerve-to-nerve by retrograde transport until it reaches the CNS.
+Misfolded proteins induce normal proteins in the brain to misfold — the way prions spread.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="What is the goal of wildlife vaccination programs for rabies?"
   answer="To protect wild animals, such as raccoons and foxes, from becoming infected."
-  hint="This program targets animals, not people — look at the paragraph right after the one about US vaccination requirements for pet dogs and cats."
+  hint="See the Rabies paragraph on the low incidence of rabies in the United States."
 >}}
 To eliminate the need for domestic pet vaccination requirements.
 To test wild animal populations for evidence of past rabies infection.
@@ -160,7 +161,7 @@ To treat wild animals that are already infected with rabies virus.
 To protect wild animals, such as raccoons and foxes, from becoming infected.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How is rabies treated in a human?" hint="Two separate treatments are named — one that trains the patient's own immune system, and one that supplies ready-made antibodies." >}}
+{{< selfcheck question="How is rabies treated in a human?" hint="See the last Rabies paragraph, just above the micrograph." >}}
 Human rabies infections are treated by immunization with multiple doses of an attenuated vaccine to develop active immunity; this can work despite the infection already being present because rabies progresses slowly enough to give the immune system time to respond. Patients may also be treated with human rabies immune globulin — antibodies to the rabies virus — to provide passive immunity and neutralize any free viral particles.
 ===CHECKS===
 multiple doses of an attenuated vaccine to develop active immunity
@@ -217,7 +218,7 @@ Sexually, or via a blood transfusion, the way Zika virus can spread.
 {"bins": ["Salk vaccine", "Sabin vaccine"],
  "items": [
   {"label": "Contains an inactivated (killed) virus", "bin": 0},
-  {"label": "Contains an attenuated (weakened) live virus", "bin": 1},
+  {"label": "Contains an attenuated virus", "bin": 1},
   {"label": "Delivered by intramuscular injection", "bin": 0},
   {"label": "Delivered orally", "bin": 1},
   {"label": "First introduced in 1955", "bin": 0},
@@ -261,7 +262,7 @@ No — prions are infectious proteins that contain no nucleic acid, so they cann
 No — prions are destroyed by the host's immune system before they can spread.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is the connection between prions and the removal of animal byproducts from the food of farm animals?" hint="Look for what this section actually says about how mad cow disease and other prion diseases spread — and notice what it never itself mentions about animal feed." >}}
+{{< selfcheck question="What is the connection between prions and the removal of animal byproducts from the food of farm animals?" hint="See the first three Transmissible Spongiform Encephalopathies paragraphs." >}}
 This section does not itself describe any policy of removing animal byproducts from farm animal feed. What it does state is that mad cow disease is seen in cattle and can be transmitted to humans through the consumption of infected nerve tissues, and that prions in general are typically transmitted by exposure to and ingestion of infected nervous system tissues, tissue transplants, blood transfusions, or contaminated fomites. Beyond naming these transmission routes, the section gives no further information connecting prions to farm animal feed practices.
 ===CHECKS===
 this section does not itself describe removing animal byproducts from farm animal feed
@@ -313,26 +314,36 @@ Serious consequences are the common thread among these neurological diseases. Se
 
 ### Identify the most common acellular pathogens that can cause infections of the nervous system
 
+{{< textin
+  question="________ are the most common reservoir for the rabies virus worldwide."
+  answer="Dogs"
+  accept="domestic dogs"
+  hint="See the Rabies paragraphs on reservoirs and on rabies in the United States."
+>}}
+
+{{< textin
+  question="________ is a prion disease of deer and elk."
+  answer="Chronic wasting disease"
+  accept="CWD"
+  hint="See the Transmissible Spongiform Encephalopathies paragraph listing TSEs in animals."
+>}}
+
+{{< textin
+  question="The rogue form of prion protein exists primarily in the ________ conformation."
+  answer="beta sheet"
+  accept="beta-pleated sheet|β sheet|β-pleated sheet"
+  hint="See the paragraph that first contrasts the normal and misfolded prion protein forms."
+>}}
+
 {{< multiplechoice
   question="Which of these diseases does NOT require the introduction of foreign nucleic acid?"
   answer="kuru"
-  hint="Prions have no genetic material of their own — that's what makes one of these four different from the rest."
+  hint="See the Transmissible Spongiform Encephalopathies paragraphs."
 >}}
 kuru
 polio
 rabies
 St. Louis encephalitis
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Which of the following animals is NOT a typical reservoir for the spread of rabies?"
-  answer="chicken"
-  hint="Look at the four wild and domestic mammal reservoirs the Rabies section names for the United States."
->}}
-dog
-bat
-skunk
-chicken
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -346,33 +357,24 @@ amyloid plaques
 PrPSc
 {{< /multiplechoice >}}
 
-{{< textin
-  question="________ are the most common reservoir for the rabies virus worldwide."
-  answer="Dogs"
-  accept="domestic dogs"
-  hint="This is the worldwide answer, not the US-specific one (where wild mammals dominate instead)."
+{{< multiplechoice
+  question="Which of the following animals is NOT a typical reservoir for the spread of rabies?"
+  answer="chicken"
+  hint="See the Rabies paragraph on the most common reservoirs in the United States."
 >}}
+dog
+bat
+skunk
+chicken
+{{< /multiplechoice >}}
 
-{{< textin
-  question="________ is a prion disease of deer and elk."
-  answer="Chronic wasting disease"
-  accept="CWD"
-  hint="See the Transmissible Spongiform Encephalopathies paragraph listing TSEs in animals."
->}}
-
-{{< textin
-  question="The rogue form of prion protein exists primarily in the ________ conformation."
-  answer="beta sheet"
-  accept="beta-pleated sheet"
-  hint="See the paragraph that first contrasts the normal and misfolded prion protein forms."
->}}
-
-{{< selfcheck question="Explain how a person could contract variant Creutzfeldt-Jakob disease by consuming products from a cow with bovine spongiform encephalopathy (mad cow disease)." hint="Quote the section's one sentence about how mad cow disease reaches humans, and check whether it ever itself uses the phrase in the question." >}}
-This section states that mad cow disease is seen in cattle and can be transmitted to humans through the consumption of infected nerve tissues, and it separately names Creutzfeldt-Jakob disease among the human prion diseases. The section does not itself use the phrase "variant Creutzfeldt-Jakob disease," nor does it state in one sentence that eating BSE-infected cattle nerve tissue causes that particular human disease — beyond naming mad cow disease's transmission route and listing Creutzfeldt-Jakob disease as a human prion disease, it draws no explicit connection between the two.
+{{< selfcheck question="Explain how a person could contract variant Creutzfeldt-Jakob disease by consuming products from a cow with bovine spongiform encephalopathy (mad cow disease)." hint="See the Transmissible Spongiform Encephalopathies paragraphs." >}}
+Mad cow disease is seen in cattle and can be transmitted to humans through the consumption of infected nerve tissues; prions are typically transmitted by exposure to and ingestion of infected nervous system tissues. The misfolded prion protein, PrPSc, can induce the normal PrPC to become misfolded and produce more rogue protein. As PrPSc accumulates, it aggregates and forms fibrils within nerve cells, and these protein complexes ultimately cause the cells to die, giving the brain a spongy appearance. This section names Creutzfeldt-Jakob disease as a human prion disease but does not itself use the term "variant Creutzfeldt-Jakob disease."
 ===CHECKS===
-mad cow disease can be transmitted to humans through consuming infected nerve tissue
-Creutzfeldt-Jakob disease is named as a human prion disease
-the section never itself states that consuming BSE-infected tissue causes variant Creutzfeldt-Jakob disease specifically
+mad cow disease can be transmitted to humans through the consumption of infected nerve tissues
+PrPSc can induce the normal PrPC to become misfolded and produce more rogue protein
+as PrPSc accumulates, it aggregates and forms fibrils within nerve cells
+these protein complexes ultimately cause the cells to die
 {{< /selfcheck >}}
 
 ### Compare the major characteristics of specific viral diseases affecting the nervous system
@@ -380,7 +382,7 @@ the section never itself states that consuming BSE-infected tissue causes varian
 {{< multiplechoice
   question="Which of these diseases can be prevented with a vaccine for humans?"
   answer="Japanese encephalitis"
-  hint="Only one of these four arboviral diseases gets its own paragraph naming an effective, recommended vaccine."
+  hint="See the Arboviral Encephalitis paragraphs, disease by disease."
 >}}
 eastern equine encephalitis
 western equine encephalitis
@@ -392,7 +394,7 @@ Japanese encephalitis
   question="________ was the scientist who developed the inactivated polio vaccine."
   answer="Jonas Salk"
   accept="Salk"
-  hint="The scientist credited with the inactivated, injected vaccine first introduced in 1955."
+  hint="See the Poliomyelitis paragraph on the two vaccines and the caption of the figure of the two virologists."
 >}}
 
 {{< multiplechoice
@@ -406,12 +408,13 @@ mimics the normal route of infection
 is an inactivated vaccine
 {{< /multiplechoice >}}
 
-{{< selfcheck question="If the Sabin vaccine is being used to eliminate polio worldwide, explain why a country with a near zero infection rate would opt to use the Salk vaccine but not the Sabin vaccine?" hint="Name the risk the Sabin vaccine itself created once natural infections were nearly gone, and contrast it with what makes the Salk vaccine safe by design." >}}
-By the late 1990s, the few polio cases still originating in the United States could be traced back to the Sabin vaccine itself, because mutations of the attenuated virus following vaccination could allow the microbe to revert to a virulent form. A country with a near-zero infection rate has little to gain from the Sabin vaccine's advantages and everything to lose from this risk, so it instead uses the Salk vaccine: because the Salk vaccine contains an inactivated virus, there is no risk of transmission to others.
+{{< selfcheck question="If the Sabin vaccine is being used to eliminate polio worldwide, explain why a country with a near zero infection rate would opt to use the Salk vaccine but not the Sabin vaccine?" hint="See the Poliomyelitis paragraph on why the United States changed vaccines." >}}
+Attenuated viruses from the Sabin vaccine are shed in the feces of immunized individuals and thus have the potential to infect nonimmunized individuals. By the late 1990s, the few polio cases originating in the United States could be traced back to the Sabin vaccine, because mutations of the attenuated virus following vaccination likely allowed the microbe to revert to a virulent form. For this reason, the United States switched exclusively to the Salk vaccine in 2000: because the Salk vaccine contains an inactivated virus, there is no risk of transmission to others.
 ===CHECKS===
-US polio cases by the late 1990s were traced back to the Sabin vaccine itself
-mutations of the attenuated virus could allow it to revert to a virulent form
-the Salk vaccine contains an inactivated virus, so it carries no risk of transmission to others
+attenuated viruses from the Sabin vaccine are shed in the feces of immunized individuals
+the few polio cases originating in the United States could be traced back to the Sabin vaccine
+mutations of the attenuated virus following vaccination likely allowed the microbe to revert to a virulent form
+the Salk vaccine contains an inactivated virus, there is no risk of transmission to others
 {{< /selfcheck >}}
 
-<small>This section is adapted from [Microbiology, Section 26.3: Acellular Diseases of the Nervous System](https://openstax.org/books/microbiology/pages/26-3-acellular-diseases-of-the-nervous-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the source's "Arborviral encephalitis diseases found in the United States" is corrected to "Arboviral encephalitis diseases…" and the Summary's "bacterial menigitis" is corrected to "bacterial meningitis" (two one-word source typos, each a source defect); the module's superscripted prion notation (PrP<sup>C</sup>, PrP<sup>Sc</sup>) is printed flat as PrPC/PrPSc throughout, matching how Section 6.4 renders the same notation, and the Fill in the Blank keyed to the rogue form is rendered as a `multiplechoice` rather than a `textin`, because the flattened key cannot be typed or matched against the source's own superscripted solution as a plain string, with distractors drawn from other protein names this module prints (`PrPC`, the "14-3-3 protein," "amyloid plaques"); all six ordinary figures re-encoded as WebP and rendered as mediafigures after image inspection — `kind="photo"` on the WNV, Rabies, IronLung, and SabinSalk figures (each photographic or micrographic throughout) and `kind="diagram"` on the Zika figure (its panel (b) is a drawn comparison illustration, not a photograph) and the Prioncycle figure (a drawn flow diagram, overriding the manifest's photo guess for both); the Prioncycle figure carries a `longdesc` walking its cycle in reading order, since its meaning is not in its one-line caption; all six alts are rewritten from the images rather than reused from the source's own alts; the Disease Profile table image (`OSC_Microbio_26_03_AcelTBL`) is not vendored, per this book's Disease Profile rule, and is transcribed as a Markdown table inside the Disease Profile callout from the source's own alt, checked against the PDF page; the printed table image itself reads "in pregnant women" for the Zika virus infection row's Signs and Symptoms cell where the source's own `alt` (the pinned transcription authority) reads "in pregnant people" — the alt's wording is used on the page, and the printed-image discrepancy is a source defect; the module's four source Multiple Choice items and five Fill in the Blank items keep their source options, order, and keys unchanged, except that the `Jonas Salk` `textin` is moved above the Sabin-versus-Salk multiple choice so that no item directly above a text-entry blank prints its key, reversing their printed order; the section's one unkeyed Short Answer question and one unkeyed Critical Thinking question remain self-checks, since each needs more than one module sentence assembled to answer honestly, with model answers and rubrics built only from this module's own text; of this section's eleven body Check Your Understanding bullets, six are graded from a single module sentence or comparison — the Zika signs/symptoms bullet and the two Rabies bullets (bite transmission, wildlife-vaccination goal) as `multiplechoice`, the Poliovirus-transmission bullet as `multiplechoice`, the prion-reproduction bullet as `multiplechoice`, and the polio-vaccine comparison bullet as a `sortbins` built from the module's own distinguishing facts about the Salk and Sabin vaccines — and five remain self-checks whose model answers are assembled from more than one sentence of this module (the two arboviral-encephalitis bullets, the Zika public-health-threat bullet — left ungraded because the figure directly above it already names the fetal-microcephaly connection its answer would key on — the rabies-treatment bullet, and the prion/animal-byproduct bullet, whose model answer states plainly that this section never itself discusses removing animal byproducts from farm animal feed); no source exercise, table, or Check Your Understanding bullet is omitted; the module's thirteen footnote citations are rendered as inline parenthetical citations, bare access URLs dropped, with one repeated citation (the two "Global Health – Polio" footnotes) rendered as "(ibid.)"; a missing space between two sentences in the Zika paragraph ("in 2016.The Zika virus") is silently corrected as a print-layout artifact — a source defect; the Clinical Focus Part 2 box's closing "Jump to the previous/next Clinical Focus box" links are rendered as a link back to Section 26.1's Part 1 and a sentence naming where the case continues in Section 26.4; the cross-reference to the rabies-vaccine Clinical Focus feature is rendered as a link to Section 6's chapter landing page, since the source's own link points at the chapter-level intro module rather than a numbered section; the cross-references to [Modes of Disease Transmission], [Vaccines], and [Viroids, Virusoids, and Prions] (the latter cited twice, once for TSEs generally and once for the CJD brain-scan figure) are each rendered as a link to that page; of this section's three Link to Learning URLs, two are confirmed dead (404, checked September 14, 2026) and are no longer linked: `https://www.openstax.org/l/22arboviralUS` (redirects to `https://wwwn.cdc.gov/arbonet/maps/ADB_Diseases_Map/index.html`) is replaced with a plain-text description naming the CDC's ArboNET disease map, and `https://www.openstax.org/l/22WHOprion` (redirects to `https://www.who.int/csr/resources/publications/bse/whocdscsraph2003.pdf`) is replaced with a plain-text description naming the World Health Organization publication; the third, `https://www.openstax.org/l/22CDCprion`, returns a 403 to scripted checks — a bot wall, not a dead page — and stays linked with the source's own descriptive anchor text; key terms are compiled from the module's thirteen `<term>` elements (no repeats, thirteen distinct bullets), all taken directly from the book's Glossary appendix with no sentence-derived definitions needed; five bullets — eastern equine encephalitis, western equine encephalitis, rabies, poliomyelitis (polio), and mad cow disease — are set lower-case to match their own Glossary headwords and their non-sentence-initial spelling elsewhere in the module, since each is capitalized in the CNXML only because its defining occurrence happens to open a sentence.</small>
+<small>This section is adapted from [Microbiology, Section 26.3: Acellular Diseases of the Nervous System](https://openstax.org/books/microbiology/pages/26-3-acellular-diseases-of-the-nervous-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the source's "Arborviral encephalitis diseases found in the United States" is corrected to "Arboviral encephalitis diseases…" and the Summary's "bacterial menigitis" is corrected to "bacterial meningitis" (two one-word source typos, each a source defect); the module's superscripted prion notation (PrP<sup>C</sup>, PrP<sup>Sc</sup>) is printed flat as PrPC/PrPSc throughout, matching how Section 6.4 renders the same notation, and the Fill in the Blank keyed to the rogue form is rendered as a `multiplechoice` rather than a `textin`, because the flattened key cannot be typed or matched against the source's own superscripted solution as a plain string, with distractors drawn from other protein names this module prints (`PrPC`, the "14-3-3 protein," "amyloid plaques"); all six ordinary figures re-encoded as WebP and rendered as mediafigures after image inspection — `kind="photo"` on the WNV, Rabies, IronLung, and SabinSalk figures (each photographic or micrographic throughout) and `kind="diagram"` on the Zika figure (its panel (b) is a drawn comparison illustration, not a photograph) and the Prioncycle figure (a drawn flow diagram, overriding the manifest's photo guess for both); the Prioncycle figure carries a `longdesc` walking its cycle in reading order, since its meaning is not in its one-line caption; all six alts are rewritten from the images rather than reused from the source's own alts; the Disease Profile table image (`OSC_Microbio_26_03_AcelTBL`) is not vendored, per this book's Disease Profile rule, and is transcribed as a Markdown table inside the Disease Profile callout from the source's own alt, checked against the PDF page; the printed table image itself reads "in pregnant women" for the Zika virus infection row's Signs and Symptoms cell where the source's own `alt` (the pinned transcription authority) reads "in pregnant people" — the alt's wording is used on the page, and the printed-image discrepancy is a source defect; the module's four source Multiple Choice items and five Fill in the Blank items keep their source options and keys, but each is placed under the objective it tests, so their order differs from the source's: the first Practice group runs the dogs, chronic-wasting-disease, and beta-sheet Fill in the Blank items first, then the kuru Multiple Choice, the rogue-prion-protein Fill in the Blank, and the rabies-reservoir Multiple Choice last, so that no item near a text-entry blank prints its key (the rabies-reservoir options include "dog"); the second group holds the Japanese-encephalitis Multiple Choice, the `Jonas Salk` Fill in the Blank, and the Sabin-versus-Salk Multiple Choice, the `Jonas Salk` item placed above the Sabin-versus-Salk item, whose stem prints its key, reversing their printed order; the section's one unkeyed Short Answer question and one unkeyed Critical Thinking question remain self-checks, since each needs more than one module sentence assembled to answer honestly, with model answers and rubrics built only from this module's own text; of this section's eleven body Check Your Understanding bullets, six are graded from a single module sentence or comparison — the Zika signs/symptoms bullet and the two Rabies bullets (bite transmission, wildlife-vaccination goal) as `multiplechoice`, the Poliovirus-transmission bullet as `multiplechoice`, the prion-reproduction bullet as `multiplechoice`, and the polio-vaccine comparison bullet as a `sortbins` built from the module's own distinguishing facts about the Salk and Sabin vaccines — and five remain self-checks whose model answers are assembled from more than one sentence of this module (the two arboviral-encephalitis bullets, the Zika public-health-threat bullet — left ungraded because the figure directly above it already names the fetal-microcephaly connection its answer would key on — the rabies-treatment bullet, and the prion/animal-byproduct bullet, whose model answer states plainly that this section never itself discusses removing animal byproducts from farm animal feed); no source exercise, table, or Check Your Understanding bullet is omitted; the module's thirteen footnote citations are rendered as inline parenthetical citations, bare access URLs dropped, with one repeated citation (the two "Global Health – Polio" footnotes) rendered as "(ibid.)"; a missing space between two sentences in the Zika paragraph ("in 2016.The Zika virus") is silently corrected as a print-layout artifact — a source defect; the Clinical Focus Part 2 box's closing "Jump to the previous/next Clinical Focus box" links are rendered as a link back to Section 26.1's Part 1 and a sentence naming where the case continues in Section 26.4; the cross-reference to the rabies-vaccine Clinical Focus feature is rendered as a link to Section 6's chapter landing page, since the source's own link points at the chapter-level intro module rather than a numbered section; the cross-references to [Modes of Disease Transmission], [Vaccines], and [Viroids, Virusoids, and Prions] (the latter cited twice, once for TSEs generally and once for the CJD brain-scan figure) are each rendered as a link to that page; of this section's three Link to Learning URLs, two are confirmed dead (404, checked September 14, 2026) and are no longer linked: `https://www.openstax.org/l/22arboviralUS` (redirects to `https://wwwn.cdc.gov/arbonet/maps/ADB_Diseases_Map/index.html`) is replaced with a plain-text description naming the CDC's ArboNET disease map, and `https://www.openstax.org/l/22WHOprion` (redirects to `https://www.who.int/csr/resources/publications/bse/whocdscsraph2003.pdf`) is replaced with a plain-text description naming the World Health Organization publication; the third, `https://www.openstax.org/l/22CDCprion`, returns a 403 to scripted checks — a bot wall, not a dead page — and stays linked with the source's own descriptive anchor text; key terms are compiled from the module's thirteen `<term>` elements (no repeats, thirteen distinct bullets), all taken directly from the book's Glossary appendix with no sentence-derived definitions needed; five bullets — eastern equine encephalitis, western equine encephalitis, rabies, poliomyelitis (polio), and mad cow disease — are set lower-case to match their own Glossary headwords and their non-sentence-initial spelling elsewhere in the module, since each is capitalized in the CNXML only because its defining occurrence happens to open a sentence.</small>

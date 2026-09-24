@@ -44,8 +44,8 @@ The oral cavity is a secondary opening for the respiratory tract. The oral and n
 
 **Check Your Understanding**
 
-{{< selfcheck question="Identify the sequence of anatomical structures through which microbes would pass on their way from the nares to the larynx." hint="Trace the path from the external nose down through the throat, following the route air itself takes toward the larynx." >}}
-Starting at the nares, microbes would pass into the nasal cavity, then into the nasopharynx (the part of the pharynx just behind the nasal cavity). From the nasopharynx, the path continues through the oropharynx and then the laryngopharynx, the pharynx's other two regions, before reaching the larynx, which the laryngopharynx connects to directly.
+{{< selfcheck question="Identify the sequence of anatomical structures through which microbes would pass on their way from the nares to the larynx." hint="See both paragraphs of the upper-tract anatomy subsection." >}}
+Starting at the nares, microbes would pass into the nasal cavity, then into the nasopharynx, the part of the pharynx extending from the posterior nasal cavity. From the nasopharynx, the path continues through the oropharynx and then the laryngopharynx, the pharynx's other two regions, before reaching the larynx, which the laryngopharynx connects to directly.
 ===CHECKS===
 nares to the nasal cavity
 nasal cavity to the nasopharynx, the part of the pharynx extending from the posterior nasal cavity
@@ -84,7 +84,7 @@ The upper respiratory system is under constant surveillance by mucosa-associated
 
 **Check Your Understanding**
 
-{{< selfcheck question="Identify the sequence of anatomical structures through which microbes would pass on their way from the larynx to the alveoli." hint="Follow the airway downward from the larynx, through the tube that bifurcates, to where gas exchange finally happens." >}}
+{{< selfcheck question="Identify the sequence of anatomical structures through which microbes would pass on their way from the larynx to the alveoli." hint="See the first paragraph of the lower-tract anatomy subsection." >}}
 From the larynx, microbes would pass into the trachea, which bifurcates into the left and right bronchi. The bronchi branch repeatedly to form the smaller bronchioles, and the terminal bronchioles end in cul-de-sacs called the alveoli.
 ===CHECKS===
 larynx to the trachea
@@ -93,7 +93,7 @@ bronchi branch repeatedly to form the bronchioles
 terminal bronchioles end in the alveoli
 {{< /selfcheck >}}
 
-{{< selfcheck question="Name some defenses of the respiratory system that protect against microbial infection." hint="Consider the sticky secretion, the beating structures that move it, and the immune tissue and cells named in this subsection." >}}
+{{< selfcheck question="Name some defenses of the respiratory system that protect against microbial infection." hint="See both paragraphs of the Defenses of the Respiratory System subsection." >}}
 The goblet cells of the respiratory epithelium secrete a layer of sticky, acidic mucus that inhibits microbial attachment. Ciliated epithelial cells beat to dislodge and propel this mucus, and any trapped microbes, upward to the epiglottis to be swallowed — the mucociliary escalator effect. The upper respiratory system is also under surveillance by mucosa-associated lymphoid tissue (MALT), including the adenoids and tonsils, and by secreted antibodies (IgA), lysozyme, surfactant, and antimicrobial peptides called defensins. The lower respiratory tract is additionally protected by alveolar macrophages, which phagocytize any microbes that evade the other defenses.
 ===CHECKS===
 goblet cells secrete sticky, acidic mucus that inhibits microbial attachment
@@ -130,15 +130,15 @@ Vaccines have been developed for many of the most serious bacterial and viral pa
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are some pathogenic bacteria that are part of the normal microbiota of the respiratory tract?" hint="Look for the species this subsection names by name, in both the upper and the lower respiratory tract." >}}
-As much as 20% of the population asymptomatically carries *Staphylococcus aureus* in their nostrils. The pharynx can be colonized with pathogenic strains of *Streptococcus*, *Haemophilus*, and *Neisseria*. In the lower respiratory tract, species of *Pseudomonas*, *Streptococcus*, *Prevotella*, *Fusobacterium*, and *Veillonella* are the most common, though it is unclear whether these constitute a true normal microbiota or are simply transients.
+{{< selfcheck question="What are some pathogenic bacteria that are part of the normal microbiota of the respiratory tract?" hint="See the first paragraph of the Normal Microbiota subsection." >}}
+Many healthy humans asymptomatically carry potential pathogens in the upper respiratory tract. As much as 20% of the population carries *Staphylococcus aureus* in their nostrils, and the pharynx, too, can be colonized with pathogenic strains of *Streptococcus*, *Haemophilus*, and *Neisseria*.
 ===CHECKS===
-as much as 20% of the population asymptomatically carries *Staphylococcus aureus* in their nostrils
-pharynx can be colonized with pathogenic strains of *Streptococcus*, *Haemophilus*, and *Neisseria*
-lower respiratory tract: species of *Pseudomonas*, *Streptococcus*, *Prevotella*, *Fusobacterium*, and *Veillonella* are the most common
+many healthy humans asymptomatically carry potential pathogens in the upper respiratory tract
+as much as 20% of the population carries *Staphylococcus aureus* in their nostrils
+the pharynx can be colonized with pathogenic strains of *Streptococcus*, *Haemophilus*, and *Neisseria*
 {{< /selfcheck >}}
 
-{{< selfcheck question="What virulence factors are used by pathogens to overcome the immune protection of the respiratory tract?" hint="This subsection names factors for attachment, for evading phagocytosis, and for damaging or surviving inside host cells." >}}
+{{< selfcheck question="What virulence factors are used by pathogens to overcome the immune protection of the respiratory tract?" hint="See the third paragraph of the Normal Microbiota subsection." >}}
 Many mucosal pathogens produce adhesins that mediate attachment to host epithelial cells, or polysaccharide capsules that allow microbes to evade phagocytosis. The endotoxins of gram-negative bacteria can stimulate a strong inflammatory response that damages respiratory cells. Other pathogens produce exotoxins, and still others have the ability to survive within the host cells. Established infections also tend to impair the mucociliary escalator, making it easier for pathogens to multiply and spread.
 ===CHECKS===
 adhesins mediate attachment to host epithelial cells
@@ -153,7 +153,7 @@ Microbial diseases of the respiratory system typically result in an acute inflam
 
 **Check Your Understanding**
 
-{{< selfcheck question="Describe the typical symptoms of rhinitis, sinusitis, pharyngitis, and laryngitis." hint="Only some of these four are directly described by their effect on the patient in this subsection; for the others, the symptom is inflammation of the named site itself." >}}
+{{< selfcheck question="Describe the typical symptoms of rhinitis, sinusitis, pharyngitis, and laryngitis." hint="See the Signs and Symptoms paragraph." >}}
 Rhinitis is an inflammation of the nasal cavities, often characteristic of the common cold and also associated with hay fever allergies or other irritants. Sinusitis is an inflammation of the sinuses. Pharyngitis, commonly known as a sore throat, can be caused by a variety of microbes. Laryngitis is an inflammation of the larynx that may interfere with vocal cord function, causing voice loss.
 ===CHECKS===
 rhinitis: inflammation of the nasal cavities, as in the common cold or hay fever
@@ -213,7 +213,7 @@ Smokers are at a greater risk of developing pneumonia than the general populatio
 {{< multiplechoice
   question="Which of the following is not directly connected to the nasopharynx?"
   answer="lacrimal glands"
-  hint="See the first anatomy paragraph's sentences on what connects to the nasal cavity and what connects to the nasopharynx."
+  hint="See the first paragraph of the upper-tract anatomy subsection."
 >}}
 middle ear
 oropharynx
@@ -243,8 +243,8 @@ epiglottis
 palatine tonsil
 {{< /multiplechoice >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_22_01_ArtConnect_img" kind="diagram" alt="A rear view of a person's head, neck, and torso. Near the top of the head, D marks a space inside the nose. Just below it, E marks a tube behind the mouth. F marks a wider region below E, and G marks a narrow, ringed tube below F that runs down into the chest. G forks into two tubes, one running into each lung; A labels the one entering the lung drawn in cutaway, where it branches repeatedly into smaller tubes labeled B, and C marks a small boxed close-up near the lower edge of that same lung." >}}
-A rear view of a person's head, neck, and torso, with seven pointer lines to unlabeled structures of the respiratory tract, lettered A through G. (credit: modification of work by National Cancer Institute)
+{{< mediafigure src="microbiology/OSC_Microbio_22_01_ArtConnect_img" kind="diagram" alt="A drawing of a person's upper body, head in profile, airway and lungs inside the torso. Near the top of the head, D marks a space inside the nose. Just below it, E marks a tube behind the mouth. F marks a wider region below E, and G marks a narrow, ringed tube below F that runs down into the chest. G forks into two tubes, one running into each lung; A labels the one entering the lung drawn in cutaway, where it branches repeatedly into smaller tubes labeled B, and C marks a small boxed close-up near the lower edge of that same lung." >}}
+A drawing of a person's upper body, head in profile, with seven pointer lines to unlabeled structures of the respiratory tract, lettered A through G. (credit: modification of work by National Cancer Institute)
 {{< /mediafigure >}}
 
 {{< multiplechoice
@@ -261,8 +261,8 @@ F
 G
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Name each of the structures of the respiratory tract shown, and state whether each has a relatively large or small normal microbiota." hint="Work down from the top of the diagram, and recall that the boundary between a large and a small normal microbiota falls at the larynx." >}}
-D is the nasal cavity, part of the upper respiratory tract, which has an abundant and diverse normal microbiota. E is the pharynx, also part of the upper respiratory tract; it too can be colonized with pathogenic strains of bacteria, so it likewise has a large normal microbiota. F is the larynx, where the lower respiratory system begins, below the epiglottis; the lower respiratory tract is only scantily populated with microbes, so F has a relatively small microbiota. G is the trachea, also part of the lower respiratory tract and similarly sparsely colonized. A marks the bronchi, the tubes the trachea bifurcates into, again with a small microbiota. B marks the bronchioles, the smaller tubes the bronchi branch into repeatedly, likewise with a small microbiota. C marks an alveolus, at the very end of this branching network; alveolar macrophages help keep the lower respiratory tract nearly devoid of colonized microbes, so C has the smallest microbiota of all.
+{{< selfcheck question="Name each of the structures of the respiratory tract shown, and state whether each has a relatively large or small normal microbiota." hint="Compare the letters with the two anatomy figures earlier in this section, then see the first two paragraphs of the Normal Microbiota subsection." >}}
+D is the nasal cavity, part of the upper respiratory tract, which has an abundant and diverse normal microbiota. E is the pharynx, also part of the upper respiratory tract; it too can be colonized with pathogenic strains of bacteria, so it likewise has a large normal microbiota. F is the larynx, where the lower respiratory system begins, below the epiglottis; the lower respiratory tract is only scantily populated with microbes, so F has a relatively small microbiota. G is the trachea, also part of the lower respiratory tract and similarly sparsely colonized. A marks the bronchi, the tubes the trachea bifurcates into, again with a small microbiota. B marks the bronchioles, the smaller tubes the bronchi branch into repeatedly, likewise with a small microbiota. C marks an alveolus, at the very end of this branching network; alveolar macrophages help keep the lower respiratory tract nearly devoid of colonized microbes, so C, too, has a small microbiota.
 ===CHECKS===
 D is the nasal cavity, part of the upper respiratory tract, with a large, diverse microbiota
 E is the pharynx, also part of the upper respiratory tract, colonized by pathogenic strains
@@ -276,7 +276,7 @@ C is an alveolus, kept nearly devoid of microbes by alveolar macrophages
 {{< multiplechoice
   question="Which bacterium is asymptomatically carried in the nostrils of as much as 20% of the population?"
   answer="*Staphylococcus aureus*"
-  hint="This section names the exact percentage of the population that carries this organism, citing a study on its nasal carriage."
+  hint="See the first paragraph of the Normal Microbiota subsection."
 >}}
 *Staphylococcus epidermidis*
 *Corynebacterium* spp.
@@ -284,13 +284,13 @@ C is an alveolus, kept nearly devoid of microbes by alveolar macrophages
 *Pseudomonas*
 {{< /multiplechoice >}}
 
-{{< textin question="According to the table of important respiratory diseases and vaccines, what pathogen causes the common cold?" answer="Rhinovirus" hint="Find the Common cold row of the table earlier in this section; the table lists no vaccine for it." >}}
+{{< textin question="According to the table of important respiratory diseases and vaccines, what pathogen causes the common cold?" answer="Rhinovirus" hint="See the vaccines table in the Normal Microbiota subsection." >}}
 
 {{< textin question="According to the table of important respiratory diseases and vaccines, what pathogen causes tuberculosis?" answer="Mycobacterium tuberculosis" accept="M. tuberculosis" hint="Find the Tuberculosis row of the table." >}}
 
 ### Explain how microorganisms overcome defenses of upper and lower respiratory-tract membranes to cause infection
 
-{{< textin question="Many bacterial pathogens produce _______ to evade phagocytosis." answer="capsules" hint="See the virulence-factor sentence in the third paragraph of the Normal Microbiota subsection." >}}
+{{< textin question="Many bacterial pathogens produce _______ to evade phagocytosis." answer="capsules" accept="polysaccharide capsules" hint="See the virulence-factor sentence in the third paragraph of the Normal Microbiota subsection." >}}
 
 {{< multiplechoice
   question="What type of cells produce the mucus for the mucous membranes?"
@@ -320,7 +320,7 @@ capsules
 
 {{< textin question="_______ phagocytize potential pathogens in the lower lung." answer="Alveolar macrophages" hint="See the last paragraph of the Defenses subsection." >}}
 
-{{< selfcheck question="Explain why the lower respiratory tract is essentially sterile." hint="This subsection names several defenses working together on the way down from the larynx to the alveoli." >}}
+{{< selfcheck question="Explain why the lower respiratory tract is essentially sterile." hint="See the Defenses of the Respiratory System subsection." >}}
 The beating cilia propel the mucus, and any trapped microbes, upward to the epiglottis, where they are swallowed; this mucociliary escalator effect is an important mechanism that prevents inhaled microorganisms from migrating further into the lower respiratory tract. The mucosal defenses also include secreted antibodies (IgA), lysozyme, surfactant, and antimicrobial peptides called defensins, and the lower respiratory tract itself is protected by alveolar macrophages, phagocytes that efficiently kill any microbes that manage to evade the other defenses. The combined action of these factors renders the lower respiratory tract nearly devoid of colonized microbes.
 ===CHECKS===
 the mucociliary escalator effect prevents inhaled microorganisms from migrating further into the lower respiratory tract
@@ -329,7 +329,7 @@ alveolar macrophages efficiently kill any microbes that manage to evade the othe
 the combined action of these factors renders the lower respiratory tract nearly devoid of colonized microbes
 {{< /selfcheck >}}
 
-{{< selfcheck question="Cystic fibrosis causes, among other things, excess mucus to be formed in the lungs. The mucus is very dry and caked, unlike the moist, more-fluid mucus of normal lungs. What effect do you think that has on the lung's defenses?" hint="Think about what the mucus layer needs to be like for the beating cilia to move it, and any trapped microbes, upward toward the epiglottis." >}}
+{{< selfcheck question="Cystic fibrosis causes, among other things, excess mucus to be formed in the lungs. The mucus is very dry and caked, unlike the moist, more-fluid mucus of normal lungs. What effect do you think that has on the lung's defenses?" hint="See the first paragraph of the Defenses of the Respiratory System subsection." >}}
 This section describes the mucociliary escalator as depending on the beating cilia dislodging and propelling the mucus, and any trapped microbes, upward to the epiglottis to be swallowed. Mucus that is dry and caked, rather than moist and fluid, would be harder for the beating cilia to dislodge and propel, so the mucociliary escalator would be less able to move trapped microbes out of the lower respiratory tract, leaving them to multiply there instead.
 ===CHECKS===
 the mucociliary escalator depends on beating cilia dislodging and propelling the mucus (and trapped microbes) upward
@@ -339,11 +339,11 @@ the mucociliary escalator would be less able to move trapped microbes out of the
 
 ### Explain how microbes and the respiratory system interact and modify each other in healthy individuals and during an infection
 
-{{< textin question="_______ results from an inflammation of the 'voice box.'" answer="Laryngitis" hint="See the Signs and Symptoms paragraph's list of conditions named with '-itis'." >}}
+{{< textin question="_______ results from an inflammation of the 'voice box.'" answer="Laryngitis" hint="See the Signs and Symptoms paragraph." >}}
 
-{{< textin question="Pulmonary inflammation that causes the lungs to fill with fluids is called ________." answer="pneumonia" hint="See the closing sentences of the Signs and Symptoms paragraph." >}}
+{{< textin question="Inflammation of the ear is called ________." answer="otitis" hint="See the Signs and Symptoms paragraph." >}}
 
-{{< selfcheck question="Explain why pneumonia is often a life-threatening disease." hint="Think about what fills the alveoli during pneumonia, and what that does to the lungs' basic job of exchanging gases." >}}
+{{< selfcheck question="Explain why pneumonia is often a life-threatening disease." hint="See the closing sentences of the Signs and Symptoms paragraph." >}}
 In pneumonia, the alveoli in the lungs are infected and become inflamed; pus and edema accumulate and fill the alveoli with fluids, called consolidations. This reduces the lungs' ability to exchange gases and often results in a productive cough expelling phlegm and mucus. Cases of pneumonia can range from mild to life-threatening, and it remains an important cause of mortality in the very young and very old.
 ===CHECKS===
 pus and edema fill the alveoli with fluids (consolidations)
@@ -352,7 +352,7 @@ pneumonia can range from mild to life-threatening
 an important cause of mortality in the very young and very old
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why do you think smokers are more likely to suffer from respiratory tract infections?" hint="The Case in Point above names three specific defenses tobacco smoke has been shown to impair." >}}
+{{< selfcheck question="Why do you think smokers are more likely to suffer from respiratory tract infections?" hint="See the Case in Point box above." >}}
 As the Case in Point above describes, several components of tobacco smoke have been demonstrated to impair the lungs' immune defenses. These effects include disrupting the function of the ciliated epithelial cells, inhibiting phagocytosis, and blocking the action of antimicrobial peptides, together leading to a dysfunction of the mucociliary escalator effect. Because the mucociliary escalator no longer works properly, organisms trapped in the mucus are able to colonize the lungs and cause infections rather than being expelled or swallowed.
 ===CHECKS===
 tobacco smoke disrupts the function of the ciliated epithelial cells
@@ -363,4 +363,4 @@ organisms trapped in the mucus can colonize the lungs rather than being expelled
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 22.1: Anatomy and Normal Microbiota of the Respiratory Tract](https://openstax.org/books/microbiology/pages/22-1-anatomy-and-normal-microbiota-of-the-respiratory-tract) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection, with `kind="diagram"` set on the UpperResp, LowerResp, and Art Connection figures and `kind="photo"` kept on the MucousMem micrograph, overriding the media manifest's JPEG-based guess of `photo` for the two drawn anatomy figures; the UpperResp figure carries `eager="true"` as the page's first figure; a `longdesc` added for the UpperResp and LowerResp figures, walking each drawn panel's labels in reading order, since neither figure's caption names what its labels show; the alt and caption of all four figures are written from the rendered image rather than the source's own alt text, which is a screen-reader-style walkthrough of the print figure's callout labels; feature boxes rendered as callouts; the Clinical Focus "Part 1" box's "Jump to the next Clinical Focus box" link is replaced with a sentence linking to Section 22.2, where the case continues; the footnote in the Normal Microbiota subsection is rendered as an inline parenthetical citation; the cross-reference to the vaccines table is rendered as "the table below" rather than a figure number, since Hugo does not number tables; the vaccines table is transcribed as a Markdown table from its cells, with its own footnote (the full vaccine names) kept as a plain italic note below it; the five source Multiple Choice items and the five Fill in the Blank items are adapted into Practice unchanged with their source keys (the Fill in the Blank items as `textin`, all five keys being four words or fewer); one body Check Your Understanding bullet is graded from this module's own sentences rather than left in prose — "What two anatomical points do the eustachian tubes connect?" is now a `multiplechoice` keyed by the anatomy subsection's own sentence naming the middle ear and the nasopharynx, with distractors built from the module's other described connections (the nasolacrimal duct, the sinuses, the tympanic membrane) — the source prints no key for it; the other six body Check Your Understanding bullets remain self-checks with model answers assembled from this section's own text, because each needs more than one sentence (a multi-structure sequence or a list of several facts) to answer honestly; the unkeyed Critical Thinking Art Connection question is rendered as a `mediafigure` (its source alt would otherwise name the pictured structures, so the alt here describes only their positions and shapes, and the caption above is author-written since the source prints none but a photo credit) followed by two items in the anatomy objective's Practice group: a figure-keyed `multiplechoice` asking which label marks the trachea, and a self-check naming all seven labeled structures with their relative microbiota size, reasoned from this module's own upper/lower-tract and microbiota paragraphs; the unkeyed Short Answer question about the lower respiratory tract's sterility and the unkeyed Critical Thinking question about cystic fibrosis are self-checks whose model answers are assembled from this section's own defenses paragraphs; the unkeyed Short Answer question about pneumonia's severity and the unkeyed Critical Thinking question about smokers are self-checks whose model answers are assembled from this section's own Signs and Symptoms paragraph and its own Case in Point box, respectively — contrary to a preparatory note for this run, the smoking mechanism these two questions draw on is printed in this module's own Case in Point box, not in a later section, so no cross-module reach was needed; the second objective group (normal microbiota) has no source exercise of its own, so it is filled with one multiple choice built strictly from this section's own sentence naming *Staphylococcus aureus* nasal carriage and two `textin` items keyed from the vaccines table's own cells (the common cold's and tuberculosis's pathogens), and the fourth objective group is filled out with a key-term recall `textin` for "pneumonia"; in the third objective group the Fill in the Blank on capsules is moved ahead of the Multiple Choice items on goblet cells and adhesins, because the adhesins item lists "capsules" as an option; key terms compiled from the module's 24 defined terms and the book's Glossary appendix, all 24 taken directly from the appendix. The vaccines table itself prints the diphtheria vaccine abbreviation as "DtaP" in its Diphtheria row and its own footnote but as "DTaP" in its Pertussis row; both spellings are transcribed exactly as printed in the source CNXML and PDF (confirmed against both), and the discrepancy is noted as a reviewed, undisclosed source inconsistency rather than corrected, since it does not misstate a fact; the source's own sentence "Inflammation of the sinuses is called sinusitis inflammation of the ear is called otitis." runs two sentences together with no terminal punctuation between them (confirmed identical in the CNXML and the PDF), corrected in place with a period and a capital letter, with no other wording changed. The Art Connection figure's alt says only one of the two bronchi carries the letter A, as the drawing prints it; the source alt says both are labeled A.</small>
+<small>This section is adapted from [Microbiology, Section 22.1: Anatomy and Normal Microbiota of the Respiratory Tract](https://openstax.org/books/microbiology/pages/22-1-anatomy-and-normal-microbiota-of-the-respiratory-tract) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection, with `kind="diagram"` set on the UpperResp, LowerResp, and Art Connection figures and `kind="photo"` kept on the MucousMem micrograph, overriding the media manifest's JPEG-based guess of `photo` for the two drawn anatomy figures; the UpperResp figure carries `eager="true"` as the page's first figure; a `longdesc` added for the UpperResp and LowerResp figures, walking each drawn panel's labels in reading order, since neither figure's caption names what its labels show; the alt and caption of all four figures are written from the rendered image rather than the source's own alt text, which is a screen-reader-style walkthrough of the print figure's callout labels; feature boxes rendered as callouts; the Clinical Focus "Part 1" box's "Jump to the next Clinical Focus box" link is replaced with a sentence linking to Section 22.2, where the case continues; the footnote in the Normal Microbiota subsection is rendered as an inline parenthetical citation; the cross-reference to the vaccines table is rendered as "the table below" rather than a figure number, since Hugo does not number tables; the vaccines table is transcribed as a Markdown table from its cells, with its own footnote (the full vaccine names) kept as a plain italic note below it; the five source Multiple Choice items and the five Fill in the Blank items are adapted into Practice unchanged with their source keys (the Fill in the Blank items as `textin`, all five keys being four words or fewer); one body Check Your Understanding bullet is graded from this module's own sentences rather than left in prose — "What two anatomical points do the eustachian tubes connect?" is now a `multiplechoice` keyed by the anatomy subsection's own sentence naming the middle ear and the nasopharynx, with distractors built from the module's other described connections (the nasolacrimal duct, the sinuses, the tympanic membrane) — the source prints no key for it; the other six body Check Your Understanding bullets remain self-checks with model answers assembled from this section's own text, because each needs more than one sentence (a multi-structure sequence or a list of several facts) to answer honestly; the unkeyed Critical Thinking Art Connection question is rendered as a `mediafigure` (its source alt would otherwise name the pictured structures, so the alt here describes only their positions and shapes, and the caption above is author-written since the source prints none but a photo credit) followed by two items in the anatomy objective's Practice group: a figure-keyed `multiplechoice` asking which label marks the trachea, and a self-check naming all seven labeled structures with their relative microbiota size, reasoned from this module's own upper/lower-tract and microbiota paragraphs; the unkeyed Short Answer question about the lower respiratory tract's sterility and the unkeyed Critical Thinking question about cystic fibrosis are self-checks whose model answers are assembled from this section's own defenses paragraphs; the unkeyed Short Answer question about pneumonia's severity and the unkeyed Critical Thinking question about smokers are self-checks whose model answers are assembled from this section's own Signs and Symptoms paragraph and its own Case in Point box, respectively — contrary to a preparatory note for this run, the smoking mechanism these two questions draw on is printed in this module's own Case in Point box, not in a later section, so no cross-module reach was needed; the second objective group (normal microbiota) has no source exercise of its own, so it is filled with one multiple choice built strictly from this section's own sentence naming *Staphylococcus aureus* nasal carriage and two `textin` items keyed from the vaccines table's own cells (the common cold's and tuberculosis's pathogens), and the fourth objective group is filled out with a key-term recall `textin` for "otitis", a cloze of the Signs and Symptoms sentence "Inflammation of the ear is called otitis"; in the third objective group the Fill in the Blank on capsules is moved ahead of the Multiple Choice items on goblet cells and adhesins, because the adhesins item lists "capsules" as an option; key terms compiled from the module's 24 defined terms and the book's Glossary appendix, all 24 taken directly from the appendix. The vaccines table itself prints the diphtheria vaccine abbreviation as "DtaP" in its Diphtheria row and its own footnote but as "DTaP" in its Pertussis row; both spellings are transcribed exactly as printed in the source CNXML and PDF (confirmed against both), and the discrepancy is noted as a reviewed, undisclosed source inconsistency rather than corrected, since it does not misstate a fact; the source's own sentence "Inflammation of the sinuses is called sinusitis inflammation of the ear is called otitis." runs two sentences together with no terminal punctuation between them (confirmed identical in the CNXML and the PDF), corrected in place with a period and a capital letter, with no other wording changed. The Art Connection figure's alt says only one of the two bronchi carries the letter A, as the drawing prints it; the source alt says both are labeled A.</small>

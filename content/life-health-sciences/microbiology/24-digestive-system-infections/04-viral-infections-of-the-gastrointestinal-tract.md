@@ -173,7 +173,7 @@ Noroviruses
 {{< textin
   question="Rotaviruses are double-stranded RNA viruses in the family ________."
   answer="Reoviridae"
-  hint="The family name appears in the very first sentence of this subsection, right after 'double-stranded RNA viruses.'"
+  hint="Look at the first sentence of the rotavirus subsection."
 >}}
 
 ### Compare the major characteristics of specific viral diseases affecting the GI tract and liver
@@ -181,7 +181,7 @@ Noroviruses
 {{< multiplechoice
   question="Which form of hepatitis virus can only infect an individual who is already infected with another hepatitis virus?"
   answer="HDV"
-  hint="This form cannot replicate without another hepatitis virus already established in the same host."
+  hint="Look at the figure caption of the five hepatitis viruses, or the per-virus paragraphs that follow the jaundice figure."
 >}}
 HDV
 HAV
@@ -217,7 +217,7 @@ HBV
 HEV
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Based on what you know about HBV, what are some ways that its transmission could be reduced in a health-care setting?" hint="The Micro Connection box above lists several concrete precautions, from protective equipment to post-exposure treatment to surface disinfection." >}}
+{{< selfcheck question="Based on what you know about HBV, what are some ways that its transmission could be reduced in a health-care setting?" hint="Reread the Micro Connection box on health-care settings." >}}
 Health-care workers can reduce the risk of HBV transmission by avoiding contact with body fluids, especially blood, through wearing gloves and face protection and using disposable syringes and needles; by washing exposed skin with soap and water; by using post-exposure treatment, including hepatitis B immunoglobulin (HBIG) and vaccination, after a possible exposure; and by disinfecting surfaces, for example with a 10% bleach solution.
 ===CHECKS===
 avoiding contact with body fluids, especially blood, through wearing gloves and face protection and using disposable syringes and needles
