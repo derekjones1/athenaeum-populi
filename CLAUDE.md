@@ -27,3 +27,6 @@ Sonnet agent as run.md prescribes — without being asked.
 An Anatomy and Physiology chapter runs the same way from
 `docs/briefs/anatomy-physiology/run.md` (the same kit with this book's
 content rules; prep tool `tools/source/anatomy-physiology-prep.py`).
+
+To re-review a finished book's chapter to the A&P standard, follow
+`docs/re-review/README.md` and tick the row in `docs/re-review/tracker.md`.
