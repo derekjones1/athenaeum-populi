@@ -96,7 +96,7 @@ One form of sympatric speciation can begin with a serious chromosomal error duri
 Aneuploidy results when the gametes have too many or too few chromosomes due to nondisjunction during meiosis. In this example, the resulting offspring will have 2*n*+1 or 2*n*-1 chromosomes.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Which is most likely to survive, offspring with 2*n*+1 chromosomes or offspring with 2*n*-1 chromosomes?" hint="Think about which is worse for a cell: having one extra chromosome's worth of genetic material, or missing a chromosome's worth of it entirely." >}}
+{{< selfcheck question="Which is most likely to survive, offspring with 2*n*+1 chromosomes or offspring with 2*n*-1 chromosomes?" hint="Compare the middle and bottom resulting cells in the figure above." >}}
 Loss of genetic material is almost always lethal, so offspring with 2*n*+1 chromosomes are more likely to survive.
 ===CHECKS===
 loss of genetic material is almost always lethal
@@ -195,19 +195,19 @@ Speciation occurs along two main pathways: geographic separation (allopatric spe
 {{< textin
   question="A group of populations that interbreed and produce fertile offspring is called a(n) ________."
   answer="species"
-  hint="The word is spelled the same whether it refers to one such group or many."
+  hint="Reread the definition that opens the first subsection."
 >}}
 
 {{< textin
-  question="If humans fertilized a bald eagle's egg with an African fish eagle's sperm and a chick did hatch, that offspring would be called a(n) ________."
-  answer="hybrid"
-  hint="Reread the eagle example in the first subsection."
+  question="Populations of a species share a(n) ________: a collection of all the gene variants in the species."
+  answer="gene pool"
+  hint="Reread the last paragraph of the first subsection."
 >}}
 
 {{< multiplechoice
   question="Which reproductive combination produces hybrids?"
   answer="when members of closely related species reproduce"
-  hint="Reread the first subsection's paragraph on species that look alike, and the paragraph after it."
+  hint="Reread the eagle example in the first subsection and the opening paragraph of the Speciation subsection."
 >}}
 when individuals of the same species in different geographical areas reproduce
 when any two individuals sharing the same habitat reproduce
@@ -228,7 +228,7 @@ the source of the extra chromosomes
 the number of mutations in the extra chromosomes
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why can polyploidy individuals lead to speciation fairly quickly?" hint="Consider how many generations it takes to form gametes with a new n number, compared to how many generations of gradual divergence allopatric speciation usually requires." >}}
+{{< selfcheck question="Why can polyploidy individuals lead to speciation fairly quickly?" hint="Reread the Sympatric Speciation paragraph that works through a plant species with 2*n* = 6." >}}
 The formation of gametes with new *n* numbers can occur in one generation. After a couple of generations, enough of these new hybrids can form to reproduce together as a new species.
 ===CHECKS===
 the formation of gametes with new *n* numbers can occur in one generation
@@ -236,18 +236,31 @@ after a couple of generations, enough of these new hybrids can form to reproduce
 {{< /selfcheck >}}
 
 {{< textin
-  question="Polyploidy formed within a single species, rather than between two species, is called a(n) ________."
-  answer="autopolyploid"
-  accept="autopolyploidy"
-  hint="Reread the Sympatric Speciation paragraph that follows the aneuploidy figure's question."
+  question="The condition of a cell having an extra chromosome or missing a chromosome for its species is called ________."
+  answer="aneuploidy"
+  accept="aneuploid"
+  hint="Reread the caption of the Sympatric Speciation figure on nondisjunction during meiosis."
 >}}
 
 ### Identify prezygotic and postzygotic reproductive barriers
 
+{{< textin
+  question="A reproductive isolation mechanism that occurs after zygote formation is called a(n) ________."
+  answer="postzygotic barrier"
+  accept="post-zygotic barrier"
+  hint="Reread the second paragraph of the Reproductive Isolation subsection."
+>}}
+
+{{< textin
+  question="Differences in breeding schedules that can act as a form of reproductive isolation are called ________."
+  answer="temporal isolation"
+  hint="Reread the Reproductive Isolation paragraph on species that reproduce only at certain times of the year."
+>}}
+
 {{< multiplechoice
   question="Which condition is the basis for a species to be reproductively isolated from other members?"
   answer="It does not exchange genetic information with other species."
-  hint="Reproductive isolation is defined as the inability to interbreed — think about what that prevents."
+  hint="Reread the opening paragraph of the Reproductive Isolation subsection."
 >}}
 It does not share its habitat with related species.
 It does not exist out of a single habitat.
@@ -266,24 +279,12 @@ Two species of birds display different mating dances.
 Two species of insects produce infertile offspring.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A reproductive isolation mechanism that occurs after zygote formation is called a(n) ________."
-  answer="postzygotic barrier"
-  hint="Hybrid inviability and hybrid sterility are both examples of this kind of barrier."
->}}
-
-{{< textin
-  question="Differences in breeding schedules that can act as a form of prezygotic barrier leading to reproductive isolation are called ________."
-  answer="temporal isolation"
-  hint="Reread the Reproductive Isolation paragraph on species that reproduce only at certain times of the year."
->}}
-
 ### Explain allopatric and sympatric speciation
 
 {{< multiplechoice
   question="Which situation would most likely lead to allopatric speciation?"
   answer="Flood causes the formation of a new lake."
-  hint="Allopatric speciation begins with a geographic barrier that physically divides a population."
+  hint="Reread the Allopatric Speciation paragraph that lists ways populations become isolated."
 >}}
 Flood causes the formation of a new lake.
 A storm causes several large trees to fall down.
@@ -294,7 +295,7 @@ An injury causes an organism to seek out a new food source.
 {{< multiplechoice
   question="What is the main difference between dispersal and vicariance?"
   answer="One involves the movement of the organism, and the other involves a change in the environment."
-  hint="Reread the last paragraph of the Allopatric Speciation subsection before the spotted owl figure."
+  hint="Reread the Allopatric Speciation paragraph that sorts allopatric processes into two categories."
 >}}
 One leads to allopatric speciation, whereas the other leads to sympatric speciation.
 One involves the movement of the organism, and the other involves a change in the environment.
@@ -313,7 +314,7 @@ increased instances of hybrid formation
 equivalent numbers of individuals in each population
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Two species of fish had recently undergone sympatric speciation. The males of each species had a different coloring through which the females could identify and choose a partner from her own species. After some time, pollution made the lake so cloudy that it was hard for females to distinguish colors. What might take place in this situation?" hint="Think about what keeps the two species from interbreeding in the first place, and what happens once that mechanism stops working." >}}
+{{< selfcheck question="Two species of fish had recently undergone sympatric speciation. The males of each species had a different coloring through which the females could identify and choose a partner from her own species. After some time, pollution made the lake so cloudy that it was hard for females to distinguish colors. What might take place in this situation?" hint="Reread the Reproductive Isolation paragraph on firefly light patterns." >}}
 It is likely the two species would start to reproduce with each other. Depending on the viability of their offspring, they may fuse back into one species.
 ===CHECKS===
 the two species would start to reproduce with each other
@@ -323,12 +324,13 @@ depending on the viability of their offspring, they may fuse back into one speci
 ### Describe adaptive radiation
 
 {{< textin
-  question="Multiple new species evolving from a single ancestral species that has spread into different isolated habitats is called ________."
-  answer="adaptive radiation"
-  hint="The Hawaiian honeycreepers, each with a different beak shape and food source, are the section's example."
+  question="In the Hawaiian honeycreeper example, the single species from which numerous species have evolved is called the ________ species."
+  answer="founder"
+  accept="founder species"
+  hint="Reread the paragraph just before the honeycreeper diagram."
 >}}
 
-{{< selfcheck question="Why do island chains provide ideal conditions for adaptive radiation to occur?" hint="Think about what the water surrounding each island in a chain does to organisms that disperse there." >}}
+{{< selfcheck question="Why do island chains provide ideal conditions for adaptive radiation to occur?" hint="Reread the paragraph just before the honeycreeper diagram, on island archipelagos." >}}
 Organisms of one species can arrive to an island together and then disperse throughout the chain, each settling into different niches and exploiting different food resources to reduce competition.
 ===CHECKS===
 organisms of one species can arrive to an island together and then disperse throughout the chain
@@ -347,4 +349,4 @@ a thicker, stronger beak suited to break hard nuts
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 18.2: Formation of New Species](https://openstax.org/books/biology-2e/pages/18-2-formation-of-new-species) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the dog-breeds figure's alt drops the source alt's "shorter legs than the poodle" for the cockapoo, since the sitting dog's legs are not visible to compare; nine of the section's thirteen figures re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection — every JPEG figure that turned out to be a scanned historical sketch, an illustrated map, or hand-drawn artwork rather than a photograph of a living organism (only the dog, eagle, and frog photographs, plus the PNG aneuploidy diagram, matched the manifest's own guess); a plain descriptive alt written from each image, since several source alts under-described what the image actually draws; a longdesc added to the Darwin sketch/elephant-evolution figure, the spotted-owl range map, the honeycreeper wheel, and both the aneuploidy and allopolyploidy flow diagrams, since none of their panel-by-panel content is carried by its caption alone; every cross-reference to a numbered print figure reworded as a descriptive reference ("see the photos below," "the diagram above") since figures are not numbered here; the interactive note rendered as a Link to Learning callout with descriptive anchor text in place of the source's bare "video"; the note wrapping the aneuploidy Visual Connection question kept in the body immediately after its figure, rendered as a self-check since the source keys it to a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); six key-term recall items (species, hybrid, autopolyploid, temporal isolation, postzygotic barrier, adaptive radiation) added from the glossary — temporal isolation in place of a prezygotic barrier recall item that re-asked, in reverse, the Review Question "Which situation is not an example of a prezygotic barrier?" — the hybrid item prompted by the section's own eagle example rather than the glossary definition, whose wording printed the key of the Review Question directly below it; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one multiple choice written locally under "Describe adaptive radiation," strictly from the section's own sentences on the honeycreepers' beaks (it replaces an earlier locally written item that re-asked the adaptive radiation recall item), since none of the module's seven keyed Review Questions test that objective.</small>
+<small>This section is adapted from [Biology 2e, Section 18.2: Formation of New Species](https://openstax.org/books/biology-2e/pages/18-2-formation-of-new-species) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the dog-breeds figure's alt drops the source alt's "shorter legs than the poodle" for the cockapoo, since the sitting dog's legs are not visible to compare; nine of the section's thirteen figures re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection — every JPEG figure that turned out to be a scanned historical sketch, an illustrated map, or hand-drawn artwork rather than a photograph of a living organism (only the dog, eagle, and frog photographs, plus the PNG aneuploidy diagram, matched the manifest's own guess); a plain descriptive alt written from each image, since several source alts under-described what the image actually draws; a longdesc added to the Darwin sketch/elephant-evolution figure, the spotted-owl range map, the honeycreeper wheel, and both the aneuploidy and allopolyploidy flow diagrams, since none of their panel-by-panel content is carried by its caption alone; every cross-reference to a numbered print figure reworded as a descriptive reference ("see the photos below," "the diagram above") since figures are not numbered here; the interactive note rendered as a Link to Learning callout with descriptive anchor text in place of the source's bare "video"; the note wrapping the aneuploidy Visual Connection question kept in the body immediately after its figure, rendered as a self-check since the source keys it to a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 5, 4, 6, 7, 1, 2, 3 and the Critical Thinking Questions in the order 3, 2, 1 of the source's numbering; four key-term recall items (species, aneuploidy, postzygotic barrier, temporal isolation) added from the glossary, the temporal isolation item prompted by the section's own sentence on breeding schedules rather than the glossary definition, which names the prezygotic barrier a Review Question asks about, and the two reproductive-barrier recall items placed first in their objective group — no recall item for hybrid, autopolyploid, prezygotic barrier, or adaptive radiation, since a Review Question or Critical Thinking Question on the page already asks about each; two cloze recall items written locally from the section's own sentences (the gene pool a species' populations share; the honeycreepers' founder species); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one multiple choice written locally under "Describe adaptive radiation," strictly from the section's own sentences on the honeycreepers' beaks, since none of the module's seven keyed Review Questions test that objective.</small>

@@ -26,7 +26,7 @@ After speciation, two species may recombine or even continue interacting indefin
 After speciation has occurred, the two separate but closely related species may continue to produce offspring in an area called the hybrid zone. Reinforcement, fusion, or stability may result, depending on reproductive barriers and the relative fitness of the hybrids.
 {{< /mediafigure >}}
 
-{{< selfcheck question="If two species eat a different diet but one of the food sources is eliminated and both species are forced to eat the same foods, what change in the hybrid zone is most likely to occur?" hint="Losing a food source pushes the two species back into more contact with each other, not less." >}}
+{{< selfcheck question="If two species eat a different diet but one of the food sources is eliminated and both species are forced to eat the same foods, what change in the hybrid zone is most likely to occur?" hint="Compare the three outcomes labeled in the figure above." >}}
 Fusion is most likely to occur because the two species will interact more and similar traits in food acquisition will be selected.
 ===CHECKS===
 fusion is most likely to occur
@@ -79,15 +79,22 @@ Speciation is not a precise division: overlap between closely related species ca
 ### Describe pathways of species evolution in hybrid zones
 
 {{< textin
-  question="In a hybrid zone, the ________ of the hybrid offspring can affect the two species' evolutionary path."
-  answer="fitness"
-  hint="Reread the paragraph just after the hybrid-zone figure's question."
+  question="An area where two closely related species continue to interact and reproduce after speciation is called a ________."
+  answer="hybrid zone"
+  hint="Reread the first paragraph of the Reconnection subsection."
+>}}
+
+{{< textin
+  question="Over time, the area where two species interbreed after speciation may change depending on the fitness of the hybrids and the ________."
+  answer="reproductive barriers"
+  accept="barriers"
+  hint="Reread the caption of the first figure."
 >}}
 
 {{< multiplechoice
   question="Which term is used to describe the continued divergence of species based on the low fitness of hybrid offspring?"
   answer="reinforcement"
-  hint="It is the term the section uses for hybrids' low success driving the two species further apart."
+  hint="Reread the last paragraph of the Reconnection subsection."
 >}}
 reinforcement
 fusion
@@ -95,7 +102,7 @@ stability
 punctuated equilibrium
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe a situation where hybrid reproduction would cause two species to fuse into one." hint="Think about what happens when hybrid offspring are not at any disadvantage compared to their parents." >}}
+{{< selfcheck question="Describe a situation where hybrid reproduction would cause two species to fuse into one." hint="Reread the last paragraph of the Reconnection subsection and the center panel of the first figure." >}}
 If the hybrid offspring are as fit or more fit than the parents, reproduction would likely continue between both species and the hybrids, eventually bringing all organisms under the umbrella of one species.
 ===CHECKS===
 the hybrid offspring are as fit or more fit than the parents
@@ -103,18 +110,26 @@ reproduction would likely continue between both species and the hybrids
 bringing all organisms under the umbrella of one species
 {{< /selfcheck >}}
 
+### Explain the two major theories on rates of speciation
+
 {{< textin
-  question="The area where two closely related species continue to interact and reproduce with each other, producing offspring with mixed traits, is called a ________."
-  answer="hybrid zone"
-  hint="It is where reinforcement, fusion, or stability plays out after speciation."
+  question="The theory that species diverge slowly, changing in small increments over time, is called the ________."
+  answer="gradual speciation model"
+  accept="gradual speciation|gradual model|gradualism"
+  hint="Reread the second paragraph of the Varying Rates of Speciation subsection."
 >}}
 
-### Explain the two major theories on rates of speciation
+{{< textin
+  question="In the punctuated equilibrium model, a new species undergoes changes quickly from the parent species, and then remains largely ________ for long periods of time afterward."
+  answer="unchanged"
+  accept="the same"
+  hint="Reread the caption of the figure on the two rates of speciation."
+>}}
 
 {{< multiplechoice
   question="Which components of speciation would be least likely to be a part of punctuated equilibrium?"
   answer="ongoing gene flow among all individuals"
-  hint="Punctuated equilibrium begins when a small population is cut off from the rest — think about what an isolated population would not keep."
+  hint="Reread the snail example in the Varying Rates of Speciation subsection."
 >}}
 a division of populations
 a change in environmental conditions
@@ -122,27 +137,13 @@ ongoing gene flow among all individuals
 a large number of mutations taking place at once
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What do both rate of speciation models have in common?" hint="Both models still describe change within the same broader evolutionary mechanism." >}}
+{{< selfcheck question="What do both rate of speciation models have in common?" hint="Reread the last sentence of the Summary." >}}
 Both models continue to conform to the rules of natural selection, and the influences of gene flow, genetic drift, and mutation.
 ===CHECKS===
 conform to the rules of natural selection
 the influences of gene flow, genetic drift, and mutation
 {{< /selfcheck >}}
 
-{{< textin
-  question="The theory that species diverge slowly, changing in small increments over time, is called the ________."
-  answer="gradual speciation model"
-  accept="gradual speciation"
-  hint="It is the opposite tempo from a model with a rapid burst of change."
->}}
-
-{{< textin
-  question="The model for rapid speciation that can occur when an event isolates a small portion of a population from the rest is called ________."
-  answer="punctuated equilibrium"
-  accept="punctuated equilibrium model|punctuated equilibria"
-  hint="Reread the second paragraph of the Varying Rates of Speciation subsection."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 18.3: Reconnection and Speciation Rates](https://openstax.org/books/biology-2e/pages/18-3-reconnection-and-speciation-rates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (both kinds matched the manifest's "diagram" guess after inspection); an extended description added to both figures, since neither the arrow diagram's shapes, colors, and printed labels, nor the beak diagram's arrows and intermediate steps, are fully carried by its caption; the two feature boxes wrapping the Visual Connection questions rendered as, respectively, the first figure plus a self-check (the source keys it as open-ended prose) and the second figure plus a multiple choice (the source keys a lettered option), both kept in the body; the source's own cross-reference for the fusion sentence in Reconnection — which in both the CNXML and the printed page points at the beak-speciation-rate figure rather than the hybrid-zone figure whose own fusion panel illustrates the sentence — redirected to a descriptive reference to the hybrid-zone figure above it; the interactive note rendered as a Link to Learning callout with its URL kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items added from the glossary, plus one summary cloze (the hybrid offspring's fitness, with "In a hybrid zone" added as its referent) that replaces a reinforcement recall item which re-asked the Review Question on the same term; and rubric checkpoints added to every self-check, in the body and in Practice, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 18.3: Reconnection and Speciation Rates](https://openstax.org/books/biology-2e/pages/18-3-reconnection-and-speciation-rates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (both kinds matched the manifest's "diagram" guess after inspection); an extended description added to both figures, since neither the arrow diagram's shapes, colors, and printed labels, nor the beak diagram's arrows and intermediate steps, are fully carried by its caption; the two feature boxes wrapping the Visual Connection questions rendered as, respectively, the first figure plus a self-check (the source keys it as open-ended prose) and the second figure plus a multiple choice (the source keys a lettered option), both kept in the body; the source's own cross-reference for the fusion sentence in Reconnection — which in both the CNXML and the printed page points at the beak-speciation-rate figure rather than the hybrid-zone figure whose own fusion panel illustrates the sentence — redirected to a descriptive reference to the hybrid-zone figure above it; the interactive note rendered as a Link to Learning callout with its URL kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Critical Thinking Questions run in the order 2, 1 of the source's numbering; two key-term recall items added from the glossary (hybrid zone, gradual speciation model) — none for reinforcement or punctuated equilibrium, which the page's Review Questions already key or ask about — and two cloze recall items written locally from the section's own sentences (the reproductive barriers on which a hybrid zone's course depends; the punctuated-equilibrium species that remains largely unchanged afterward), the four recall items placed first in their objective groups; and rubric checkpoints added to every self-check, in the body and in Practice, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

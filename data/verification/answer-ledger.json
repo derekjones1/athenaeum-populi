@@ -1720,6 +1720,10 @@
   "05083a6739e26809": {
    "verdict": "ok"
   },
+  "050b49614c305f52": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question 2 (m66521 exercise fs-idm59561840); model answer transcribes the CNXML <solution> verbatim; checked against the Reconnection paragraph on fit-or-more-fit hybrids fusing the two species. Printed PDF p.489 Q25 confirms wording. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "050d65131fff6de7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -2563,14 +2567,6 @@
     "result": "agrees"
    }
   },
-  "07f6a7bad04e7c7a": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "07f74f63d710078f": {
    "verdict": "ok"
   },
@@ -3296,6 +3292,14 @@
   "09f2970f5809a2a6": {
    "verdict": "ok",
    "note": "Figure triangle base 12 / height 5 / hyp 13; α is opposite the base (12) and adjacent to the height (5): sinα=12/13, cosα=5/13. sin2α=120/169, cos2α=-119/169, tan2α=-120/119 (node-checked; the negative cos2α is correct since α>45°)."
+  },
+  "09f75e2e6733c711": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "09fbc118c8476bc4": {
    "verdict": "ok"
@@ -6378,6 +6382,14 @@
   "13222422f3662872": {
    "verdict": "ok"
   },
+  "1331603a2c41bdc2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1334a365b5e6fc72": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -7538,6 +7550,14 @@
   },
   "16bec161628b3a05": {
    "verdict": "ok"
+  },
+  "16c1696cd0223f8c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "16c6110f994018b4": {
    "verdict": "ok",
@@ -10312,6 +10332,10 @@
     "result": "agrees"
    }
   },
+  "1ed32ecd957305b4": {
+   "verdict": "ok",
+   "note": "Critical Thinking Q fs-idm120483648: model answer transcribes the source solution verbatim (gametes with new n numbers form in one generation). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "1ee00082e5526117": {
    "verdict": "ok",
    "note": "KC 1 2.1 § body Ions and Ionic Bonds (fs-idp140338797093616), m66430 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -12888,14 +12912,6 @@
    "verdict": "ok",
    "note": "parent edit after checker/claim-pass review (Sep 7 2026) re-hashed this selfcheck — re-read against the CNXML and the page: Given the life cycle of the *Schistosoma* parasite, suggest a method of prevention of the disease."
   },
-  "27e8aa809ce3f918": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "27ec8a02bc25ba9c": {
    "verdict": "ok"
   },
@@ -14226,14 +14242,6 @@
     "result": "agrees"
    }
   },
-  "2c09c50d6af756ca": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "2c0d8e3e52d67cf1": {
    "verdict": "ok",
    "note": "KC 2 10.5 § body Binary Fission, bidirectional-replication sentence (parent replacement of the origin recall), m66481 — parent re-read against the module",
@@ -15345,6 +15353,10 @@
    "verdict": "ok",
    "note": "(-5+3i)-(6-i)=(-5-6)+(3+1)i=-11+4i; recomputed independently, matches CNXML end-of-section answer key."
   },
+  "2f8a352a8040d264": {
+   "verdict": "ok",
+   "note": "Critical Thinking Q fs-idm40145904: model answer transcribes the source solution verbatim (island dispersal into distinct niches). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "2f8c73842fda7bba": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16276,10 +16288,6 @@
     "result": "agrees"
    }
   },
-  "326f048091c6f4c2": {
-   "verdict": "ok",
-   "note": "Critical Thinking Q fs-idm40145904: model answer transcribes the source solution verbatim (island dispersal into distinct niches)."
-  },
   "326f098fac57271c": {
    "verdict": "ok",
    "note": "Infinite geometric a1=2,r=1/3; S=a1/(1-r)=3 (node); matches CNXML ti_11_04_12."
@@ -17038,6 +17046,14 @@
   "353219995cc79c72": {
    "verdict": "ok",
    "note": "Body CYU bullet 1 ('What factors can lead to candidiasis?'), selfcheck; model answer and both rubric clauses assembled from the two disruptions/immunosuppression sentences of the module (two sentences, so stays selfcheck)."
+  },
+  "35396cf5df7265d1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "354281bb9b5eda36": {
    "verdict": "ok",
@@ -20787,6 +20803,10 @@
    "verdict": "ok",
    "note": "Body selfcheck, CYU bullet 2 (shared male structure). Fixed by checker defect 2 on 2026-09-14: the fact is answerable from a single sentence, but was reverted from a graded textin to a selfcheck because the source's own keyed Practice MC (fs-id1167660187259) already grades the identical fact, avoiding a duplicate ask."
   },
+  "4118f3d0a93f1d26": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question 1 (m66521 exercise fs-idm23889104); model answer transcribes the CNXML <solution> verbatim. Printed PDF p.489 Q24 confirms wording. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "411afab90c434976": {
    "verdict": "ok",
    "note": "CYU body selfcheck, § Organic Molecules and Isomerism: assembled from 'Carbon ... has four valence electrons in its outer orbitals and can form four single covalent bonds with up to four other atoms at the same time' and 'carbon atoms can bind together in large numbers, thus producing a chain or carbon skeleton ... which allows for a huge number and variety of compounds.' Stays selfcheck because the honest answer combines two sentences from two different paragraphs. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -21293,10 +21313,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "42ff3837bec6744b": {
-   "verdict": "ok",
-   "note": "Critical Thinking Q fs-idm120483648: model answer transcribes the source solution verbatim (gametes with new n numbers form in one generation)."
   },
   "4300da85748cc5f8": {
    "verdict": "ok",
@@ -26656,6 +26672,14 @@
   "549046c1d37516a1": {
    "verdict": "ok"
   },
+  "54909a45cb4b9525": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5493067cbc8929a5": {
    "verdict": "ok",
    "note": "KC 1 4.5 § body (Thermotogae paragraph, no named subsection), m58799"
@@ -27276,10 +27300,6 @@
   "56a03bde49b87338": {
    "verdict": "ok"
   },
-  "56a7d33caabbce8d": {
-   "verdict": "ok",
-   "note": "Visual Connection question for fig-ch18_03_01 (m66521 exercise fs-idm52493472); model answer transcribes the CNXML <solution> verbatim (\"Fusion is most likely to occur because the two species will interact more and similar traits in food acquisition will be selected.\"); checked against the section's Reconnection prose, which supports fusion when barriers weaken."
-  },
   "56b2fa4a97c50395": {
    "verdict": "ok",
    "note": "u^2-u-110=0 -> u=11 (u=-10 rejected) -> x=ln11; key p1316 #45"
@@ -27443,6 +27463,14 @@
   },
   "57310da5a4fed533": {
    "verdict": "ok"
+  },
+  "573652ce08407587": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5739e45a24f21563": {
    "verdict": "ok",
@@ -30468,14 +30496,6 @@
   },
   "60f9b0d8fc2b5893": {
    "verdict": "ok"
-  },
-  "6102f1b3a52aef6a": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "6106aca73bf3bbd7": {
    "verdict": "ok"
@@ -35155,10 +35175,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "70db55ecf869011e": {
-   "verdict": "ok",
-   "note": "Visual Connection selfcheck (fs-idm138590288/fs-idm156177184): model answer transcribes the source solution verbatim; 2n+1 (extra material) survives more often than 2n-1 (missing material) matches genetics generally and the source's own reasoning."
   },
   "70de7adeff0defe9": {
    "verdict": "ok",
@@ -41874,6 +41890,14 @@
    "verdict": "ok",
    "note": "parent re-record after adding 'give the exact answer in terms of pi' and answerForm exact: V'(r)=4 pi r^2, V'(3)=36 pi (central difference 113.0973 = 36 pi checked in parent-derive.py)."
   },
+  "864d039c37c5e13f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "866066b06efe17df": {
    "verdict": "ok",
    "note": "Review Q fs-id2188234, keyed D = 'electrochemical gradient', 4th option in source order; matches glossary definition. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -42708,14 +42732,6 @@
     "result": "agrees"
    }
   },
-  "891c98d068b6acca": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "8921078b29d58ce1": {
    "verdict": "ok",
    "note": "KC 5 22.2 § Health Care-Associated Pneumonia, m58913"
@@ -43261,14 +43277,6 @@
   "8afd68c2205f7a56": {
    "verdict": "ok"
   },
-  "8b08afcbbc7f8409": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "8b0cf212c7d81509": {
    "verdict": "ok",
    "note": "det3([[5,1,-1],[2,3,1],[3,-6,-3]]) = 15, run in Node; matches CNXML solution 15 (fs-id1365782)."
@@ -43490,6 +43498,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8be5157b6ffcc17a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -44148,14 +44164,6 @@
   },
   "8e184063f0d4dc19": {
    "verdict": "ok"
-  },
-  "8e19620df81742b5": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "8e1c41ef6f99f624": {
    "verdict": "ok",
@@ -46538,14 +46546,6 @@
     "result": "agrees"
    }
   },
-  "964c6bcbc9f0e909": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "9655edb796790794": {
    "verdict": "ok"
   },
@@ -46914,6 +46914,14 @@
     "result": "agrees"
    }
   },
+  "976c66aa65119560": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "976f4cee867d8545": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -47229,14 +47237,6 @@
   },
   "98539db7756c2b7e": {
    "verdict": "ok"
-  },
-  "98617b825b1ed920": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "9868367300831068": {
    "verdict": "ok",
@@ -47699,14 +47699,6 @@
   "99ef6b6c893c892d": {
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=3\\sin(2\\theta)$ for symmetry. Which sym)"
-  },
-  "99f0f2b6a575b827": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "99f5413bd1d3e274": {
    "verdict": "ok",
@@ -49516,10 +49508,6 @@
     "result": "agrees"
    }
   },
-  "a02b975a1c5cba04": {
-   "verdict": "ok",
-   "note": "Critical Thinking Q fs-idm75358256: model answer transcribes the source solution verbatim (species fuse back together if the color barrier fails)."
-  },
   "a02d66ff76c40660": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -50031,6 +50019,14 @@
   "a202f2c43f357045": {
    "verdict": "ok",
    "note": "Model answer paraphrases the inorganic-compound definition and the H2O/HCl examples with no new claim; checkpoints copy the model answer's own clauses."
+  },
+  "a203ce2178b85f99": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a20642cc01fc4f67": {
    "verdict": "ok",
@@ -50624,6 +50620,14 @@
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a4174fd3054314ad": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -53916,6 +53920,10 @@
     "result": "agrees"
    }
   },
+  "ae00774bedea217f": {
+   "verdict": "ok",
+   "note": "selfcheck, body Visual Connection; source-keyed prose solution unchanged, rubric clauses unchanged; parent re-read Sep 23 2026 (Biology ch18 re-review): only the hint changed, now a location in the figure above"
+  },
   "ae05d78aea19bc5b": {
    "verdict": "ok",
    "note": "Review Question fs-idm71000707; keyed option C = tertiary matches CNXML solution (tertiary is a single polypeptide's own 3D shape, which is what misfolds in prion disease). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -56740,6 +56748,14 @@
    "verdict": "ok",
    "note": "Critical Thinking exercise fs-idp2066832: selfcheck model answer is the CNXML solution verbatim (source's own 'features includes' grammar kept as printed, a minor source typo not a content defect); checkpoints are one per phylum, its own clauses."
   },
+  "b6e616fbd24212d1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b6e678a8ca0070d3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -57319,14 +57335,6 @@
    "verdict": "ok",
    "note": "g(x)=0.875^x has 0<b<1, a valid exponential base; independently confirmed."
   },
-  "b89cec9ecf2acb70": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "b8a32cb28d1fced6": {
    "verdict": "ok",
    "note": "Review Question fs-idp62360928: keyed option C matches CNXML solution C, confirmed against the section's own equation and summary. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -57738,6 +57746,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "ba11fb0fb26ded42": {
+   "verdict": "ok",
+   "note": "Critical Thinking Q fs-idm75358256: model answer transcribes the source solution verbatim (species fuse back together if the color barrier fails). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "ba1568a99be3d2a9": {
    "verdict": "ok",
@@ -58524,6 +58536,14 @@
    "verdict": "ok",
    "note": "node: 1.2*Math.exp(6)-0.3 = 483.81456... -> 483.8146; matches CNXML solution."
   },
+  "bcc7f1129e56eae0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "bccbff196f5a23ce": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -58664,10 +58684,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "bd4f6052f555be59": {
-   "verdict": "ok",
-   "note": "Critical Thinking Question 1 (m66521 exercise fs-idm23889104); model answer transcribes the CNXML <solution> verbatim. Printed PDF p.489 Q24 confirms wording."
   },
   "bd4f6fc45ec7169d": {
    "verdict": "ok",
@@ -60100,14 +60116,6 @@
    "verdict": "ok",
    "note": "body CYU, spoilage onset; selfcheck, needs HTST+UHT sentences combined | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "c1c1420b10bbf379": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "c1c6141a428fde53": {
    "verdict": "ok"
   },
@@ -60294,14 +60302,6 @@
   "c255162525d48083": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "c25ae026d6cbec24": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -61745,14 +61745,6 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "c744e3d5a0990df5": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -68267,6 +68259,14 @@
     "result": "agrees"
    }
   },
+  "dd597b2cdc021179": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dd5cab5a29681c69": {
    "verdict": "ok",
    "note": "Matches m66449 exercise fs-id909432, solution fs-id1433806 (mitochondria vs. chloroplasts). 'Stacks (grana) surrounded by the stroma' is not an added claim: the same section's Chloroplasts prose states 'We call the fluid enclosed by the inner membrane that surrounds the grana the stroma.' 'own DNA' likewise grounded in the section's own 'chloroplasts have their own DNA and ribosomes.' All six CHECKS restate solution/section content. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -71564,6 +71564,10 @@
   "e8c62691ae4db080": {
    "verdict": "ok"
   },
+  "e8ca927fdf8dddce": {
+   "verdict": "ok",
+   "note": "selfcheck, body Visual Connection; source-keyed prose solution unchanged, rubric clauses unchanged; parent re-read Sep 23 2026 (Biology ch18 re-review): only the hint changed, now a location in the figure above"
+  },
   "e8d70dfcff5678c7": {
    "verdict": "ok",
    "note": "-120 + 360 = 240 deg, within [0,360)"
@@ -74202,14 +74206,6 @@
     "result": "agrees"
    }
   },
-  "f132ff1ff4baaee6": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "f1373f696ecf0649": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -76000,6 +75996,14 @@
     "result": "agrees"
    }
   },
+  "f762cc4de1d86a1c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f76726e88cab8856": {
    "verdict": "ok"
   },
@@ -76212,10 +76216,6 @@
   "f81047ce7ecb7f58": {
    "verdict": "ok",
    "note": "(pi/6)(x+6) -> shift -6; key p1336 PT#17"
-  },
-  "f811ffd3387b7a0b": {
-   "verdict": "ok",
-   "note": "Critical Thinking Question 2 (m66521 exercise fs-idm59561840); model answer transcribes the CNXML <solution> verbatim; checked against the Reconnection paragraph on fit-or-more-fit hybrids fusing the two species. Printed PDF p.489 Q25 confirms wording."
   },
   "f812118672733793": {
    "verdict": "ok",
@@ -77585,14 +77585,6 @@
     "result": "agrees"
    }
   },
-  "fc2af190cd16fad8": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "fc2b90384610a243": {
    "verdict": "ok"
   },
@@ -78768,6 +78760,14 @@
   "ffb21a4fa3978478": {
    "verdict": "ok",
    "note": "m66467 critical-thinking solution fs-id2205482 (circular vs. linear pathway) matches the page's model answer verbatim; all five checks restate it with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "ffbba6691351503f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ffc41599aa26abf6": {
    "verdict": "ok",
