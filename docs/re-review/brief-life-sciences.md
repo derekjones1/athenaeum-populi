@@ -75,7 +75,10 @@ when both halves do; do not list either in `accept`).
 3. The footer `Changes:` clause: counts from a tally of the page, claims
    true; never where a correction is logged or who it was reported to.
 4. After your edits, re-check every textin's item above (a reorder creates
-   new adjacencies), then `npm run verify-section -- <page>` and
+   new adjacencies), and every replacement item's own stem against the
+   keys of the items below it (a cloze quoting a whole module sentence can
+   state a neighbour's key: Biology 19.1's "no … selective pressure"
+   stem sat above an MC keyed "natural selection"), then `npm run verify-section -- <page>` and
    `npm run lint`.
 
 ## What you may and may not change
