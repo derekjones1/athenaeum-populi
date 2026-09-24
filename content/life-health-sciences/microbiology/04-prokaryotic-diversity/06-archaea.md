@@ -42,7 +42,7 @@ Another genus, *Thermoproteus*, is represented by strictly anaerobic organisms w
 
 **Check Your Understanding**
 
-{{< selfcheck question="What types of environments do Crenarchaeota prefer?" hint="Identify the habitat shared by all members described here, then distinguish the common temperature preference from the universal claim." >}}
+{{< selfcheck question="What types of environments do Crenarchaeota prefer?" hint="Reread the first two paragraphs of Crenarchaeota." >}}
 All Crenarchaeota are aquatic organisms and are thought to be the most abundant microorganisms in the oceans. Most, but not all, are hyperthermophiles; for example, *Pyrolobus* can grow at temperatures up to 113 °C. *Sulfolobus* is a thermophile that prefers 70–80°C and an acidophile that prefers a pH of 2–3.
 ===CHECKS===
 All Crenarchaeota are aquatic organisms
@@ -68,7 +68,7 @@ Notable species of Halobacteria include *Halobacterium salinarum*, which may be 
 {{< multiplechoice
   question="Where do Halobacteria live?"
   answer="In aquatic environments with sodium chloride concentrations close to saturation, such as the Dead Sea and some salty lakes."
-  hint="Look for the required salt condition and the named water environments, rather than an organism’s temperature range."
+  hint="Reread the Halobacteria paragraph in Euryarchaeota."
 >}}
 In aquatic environments with sodium chloride concentrations close to saturation, such as the Dead Sea and some salty lakes.
 Only in acidic hot springs with a pH of 2–3.
@@ -107,7 +107,7 @@ There remains no good answer as to why archaea do not seem to be pathogenic, but
 {{< multiplechoice
   question="Archaea and Bacteria are most similar in terms of their ________."
   answer="unicellular structure"
-  hint="Compare the shared cellular organization with the differences in genetics, cell walls, and ecology summarized at the start of the section."
+  hint="Reread the opening paragraph of this section and the Summary."
 >}}
 genetics
 cell wall structure
@@ -116,15 +116,15 @@ unicellular structure
 {{< /multiplechoice >}}
 
 {{< textin
-  question="________ is a genus of Archaea with an optimal environmental temperature of 70 °C to 80 °C and an optimal pH of 2–3; it oxidizes sulfur and produces sulfuric acid."
+  question="________ is a genus of Archaea. Its optimal environmental temperature ranges from 70 °C to 80 °C, and its optimal pH is 2–3. It oxidizes sulfur and produces sulfuric acid."
   answer="Sulfolobus"
-  hint="Use the genus described as both thermophilic and acidophilic in the Crenarchaeota section."
+  hint="Reread the second paragraph of Crenarchaeota."
 >}}
 
 {{< multiplechoice
   question="Which statement correctly describes Thermoproteus?"
   answer="It is strictly anaerobic, has an optimal growth temperature of 85 °C, and has a membrane in which lipids form a monolayer."
-  hint="Combine its stated oxygen requirement, growth temperature, and membrane organization."
+  hint="Reread the Thermoproteus paragraph in Crenarchaeota."
 >}}
 It is strictly anaerobic, has an optimal growth temperature of 85 °C, and has a membrane in which lipids form a monolayer.
 It is an aerobic salt-loving archaeon that requires sodium chloride near saturation.
@@ -135,16 +135,16 @@ It is a thermophile that stores sulfuric acid in granules at a preferred pH of 2
 ### Explain why archaea might not be associated with human microbiomes or pathology
 
 {{< textin
-  question="________ was once thought to be the cause of periodontal disease, but the causal relationship was not confirmed."
+  question="________ was once thought to be the cause of periodontal disease, but, more recently, the causal relationship between this archaean and the disease was not confirmed."
   answer="Methanobrevibacter oralis"
   accept="M. oralis"
-  hint="Use the named archaean found in the gums of patients with periodontal disease."
+  hint="Reread the Micro Connection box."
 >}}
 
 {{< multiplechoice
   question="What accounts for the purple color in salt ponds inhabited by halophilic archaea?"
   answer="They perform photosynthesis using the protein bacteriorhodopsin."
-  hint="Identify the protein tied to both their light-using metabolism and the pond color."
+  hint="Reread the Halobacteria paragraph in Euryarchaeota."
 >}}
 They perform photosynthesis using the protein bacteriorhodopsin.
 They reduce carbon dioxide in the presence of hydrogen.
@@ -155,7 +155,7 @@ They form ether linkages with branched isoprene chains.
 {{< multiplechoice
   question="What evidence supports the hypothesis that some archaea live on Mars?"
   answer="The mixture of gases produced by methanogens resembles the makeup of the Martian atmosphere."
-  hint="Compare the stated products of methane-producing archaea with the atmospheric evidence named in the Euryarchaeota section."
+  hint="Reread the first paragraph of Euryarchaeota."
 >}}
 The mixture of gases produced by methanogens resembles the makeup of the Martian atmosphere.
 Methanogens have been directly isolated from Martian soil.
@@ -166,23 +166,23 @@ Archaea cause infectious diseases in astronauts.
 ### Give common examples of archaea commonly associated with unique environmental habitats
 
 {{< multiplechoice
-  question="Which statement is true of archaea that produce methane?"
+  question="Which of the following is true of archaea that produce methane?"
   answer="They live in the most extreme environments."
-  hint="Use the environmental range stated for these organisms, not a claim about Mars or a replacement of hydrogen with another reactant."
+  hint="Reread the first paragraph of Euryarchaeota."
 >}}
 They reduce carbon dioxide in the presence of nitrogen.
 They live in the most extreme environments.
-They perform photosynthesis using the protein bacteriorhodopsin.
+They oxidize sulfur to produce sulfuric acid.
 They have been discovered on Mars.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Which archaeal genus can grow at temperatures up to 113 °C?"
   answer="*Pyrolobus*"
-  hint="Look for the genus named as an example of a Crenarchaeota hyperthermophile."
+  hint="Reread the first paragraph of Crenarchaeota."
 >}}
 *Pyrolobus*
-*Sulfolobus*
+*Halobacterium salinarum*
 *Thermoproteus*
 *Haloferax volcanii*
 {{< /multiplechoice >}}
@@ -191,7 +191,7 @@ They have been discovered on Mars.
 A methane bog with bubbles rising through its waterlogged surface. (credit: Chad Skeers)
 {{< /mediafigure >}}
 
-{{< selfcheck question="What is the connection between this methane bog and archaea?" hint="Use the process that this section says only archaea can perform and the gaseous product it makes." >}}
+{{< selfcheck question="What is the connection between this methane bog and archaea?" hint="Reread the first paragraph of Euryarchaeota." >}}
 Methanogens are archaea that reduce carbon dioxide in the presence of hydrogen, producing methane. The methane bubbles in a bog can therefore be connected to the activity of methanogenic archaea.
 ===CHECKS===
 Methanogens are archaea
@@ -201,4 +201,4 @@ producing methane
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 4.6: Archaea](https://openstax.org/books/microbiology/pages/4-6-archaea) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection, with explicit `kind="photo"`; alts rewritten from the incomplete or inaccurate source alts, including correction of 'mircrograph' and 'diamond-shpaed' in the *Sulfolobus* alt and the Art Connection image, and its credit-only source caption expanded to describe the visible methane-bog bubbles without naming the answer to the paired item; the Critical Thinking Art Connection figure appears immediately above its Practice self-check; the Micro Connection feature box rendered as a callout; source footnotes rendered as inline parenthetical citations, with the bare access URL in the Mars citation removed; same-module figure references rendered as describing prose and the cross-reference to Section 3.3 linked to its local page; the two source Multiple Choice and two Fill in the Blank items adapted into Practice, and the two unkeyed Short Answer questions adapted into multiple-choice items from one named module sentence; the unkeyed Art Connection Critical Thinking item remains a self-check with a model answer and rubric assembled only from this module’s methanogen sentence; two author-written multiple-choice items, on *Thermoproteus* and *Pyrolobus*, are built strictly from this module’s text to provide three items per objective; the Crenarchaeota Check Your Understanding question remains a body self-check from its preceding text, while the Halobacteria question becomes a body multiple-choice from one paragraph; key terms compiled from the module’s two defined terms and the book’s Glossary appendix, with both definitions taken directly from the Glossary and the capitalized domain sense selected for Archaea. The Halobacteria paragraph and caption's agreement errors are corrected, and its citation title's “DA” is corrected to “DNA” with the remaining title capitalization normalized to the cited article. No source exercise was omitted. The methanogen multiple-choice item's distractor “They are always anaerobes” is replaced with a false statement about bacteriorhodopsin, because this book's Section 9.2 caption of the bog-and-rumen figure calls methanogens obligate anaerobes, which made that distractor a second correct option (erratum 373).</small>
+<small>This section is adapted from [Microbiology, Section 4.6: Archaea](https://openstax.org/books/microbiology/pages/4-6-archaea) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection, with explicit `kind="photo"`; alts rewritten from the incomplete or inaccurate source alts, including correction of 'mircrograph' and 'diamond-shpaed' in the *Sulfolobus* alt and the Art Connection image, and its credit-only source caption expanded to describe the visible methane-bog bubbles without naming the answer to the paired item; the Critical Thinking Art Connection figure appears immediately above its Practice self-check; the Micro Connection feature box rendered as a callout; source footnotes rendered as inline parenthetical citations, with the bare access URL in the Mars citation removed; same-module figure references rendered as describing prose and the cross-reference to Section 3.3 linked to its local page; the two source Multiple Choice and two Fill in the Blank items adapted into Practice, and the two unkeyed Short Answer questions adapted into multiple-choice items from one named module sentence; the unkeyed Art Connection Critical Thinking item remains a self-check with a model answer and rubric assembled only from this module’s methanogen sentence; two author-written multiple-choice items, on *Thermoproteus* and *Pyrolobus*, are built strictly from this module’s text to provide three items per objective; the Crenarchaeota Check Your Understanding question remains a body self-check from its preceding text, while the Halobacteria question becomes a body multiple-choice from one paragraph; key terms compiled from the module’s two defined terms and the book’s Glossary appendix, with both definitions taken directly from the Glossary and the capitalized domain sense selected for Archaea. The Halobacteria paragraph and caption's agreement errors are corrected, and its citation title's “DA” is corrected to “DNA” with the remaining title capitalization normalized to the cited article. No source exercise was omitted. The methanogen multiple-choice item's distractor “They are always anaerobes” is replaced with a statement this section makes about *Sulfolobus* (sulfur oxidation to sulfuric acid), not about methanogens, because this book's Section 9.2 caption of the bog-and-rumen figure calls methanogens obligate anaerobes, which made that distractor a second correct option (erratum 373).</small>

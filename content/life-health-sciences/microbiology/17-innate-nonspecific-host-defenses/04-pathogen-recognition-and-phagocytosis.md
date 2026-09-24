@@ -62,7 +62,7 @@ The structures that allow phagocytic cells to detect PAMPs are called **pattern 
 
 In addition to providing the first step of pathogen recognition, the interaction between PAMPs and PRRs on macrophages provides an intracellular signal that activates the phagocyte, causing it to transition from a dormant state of readiness and slow proliferation to a state of hyperactivity, proliferation, production/secretion of cytokines, and enhanced intracellular killing. PRRs on macrophages also respond to chemical distress signals from damaged or stressed cells. This allows macrophages to extend their responses beyond protection from infectious diseases to a broader role in the inflammatory response initiated from injuries or other diseases.
 
-{{< mediafigure src="microbiology/OSC_Microbio_17_04_PRR" alt="A diagram of a phagocyte with several types of pattern recognition receptors (PRRs). Surface receptors for lipopeptide, flagellin, and peptidoglycan sit on the outer membrane, each signaling toward the nucleus. An interior nucleic acid receptor sits on a phagosome and also signals the nucleus, which responds by directing production and secretion of antiviral interferons and other cytokines." longdesc="The cell's outer membrane carries three surface receptors, each bound to its matching molecule: a lipopeptide receptor bound to a lipopeptide, a flagellin receptor bound to flagellin, and a peptidoglycan receptor bound to peptidoglycan; each sends an arrow inward to the nucleus, which contains a strand of DNA. Inside the cytoplasm, a phagosome — a small membrane-bound vesicle — contains a captured strand of nucleic acid, and a nucleic acid receptor on the phagosome's membrane also sends a signal to the nucleus. A final arrow leads from the nucleus outward to the label production and secretion of antiviral interferons and other cytokines, showing the cell's response to any of these four receptor signals." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_17_04_PRR" alt="A diagram of a phagocyte with several types of pattern recognition receptors (PRRs). Surface receptors for lipopeptide, flagellin, and peptidoglycan sit on the outer membrane, each signaling toward the nucleus. An interior nucleic acid receptor sits on a phagosome and also signals the nucleus, which responds by directing production and secretion of antiviral interferons and other cytokines." longdesc="The cell's outer membrane carries three surface receptors, each bound to its matching molecule: a lipopeptide receptor bound to a lipopeptide, a flagellin receptor bound to flagellin, and a peptidoglycan receptor bound to peptidoglycan; each sends an arrow inward to the nucleus, which contains a strand of DNA. Inside the cytoplasm, a phagosome — a small membrane-bound vesicle — contains a captured nucleic acid, drawn as a small red triangle, and a nucleic acid receptor on the phagosome's inner membrane reaches toward it and also sends a signal to the nucleus. A final arrow leads from the nucleus outward to the label production and secretion of antiviral interferons and other cytokines, showing the cell's response to any of these four receptor signals." kind="diagram" >}}
 Phagocytic cells contain pattern recognition receptors (PRRs) capable of recognizing various pathogen-associated molecular patterns (PAMPs). These PRRs can be found on the plasma membrane or in internal phagosomes. When a PRR recognizes a PAMP, it sends a signal to the nucleus that activates genes involved in phagocytosis, cellular proliferation, production and secretion of antiviral interferons and proinflammatory cytokines, and enhanced intracellular killing.
 {{< /mediafigure >}}
 
@@ -94,7 +94,7 @@ In addition to the reactive oxygen species produced by the respiratory burst, re
 
 Once degradation is complete, leftover waste products are excreted from the cell in an exocytic vesicle. However, it is important to note that not all remains of the pathogen are excreted as waste. Macrophages and dendritic cells are also antigen-presenting cells involved in the specific adaptive immune response. These cells further process the remains of the degraded pathogen and present key antigens (specific pathogen proteins) on their cellular surface. This is an important step for stimulation of some adaptive immune responses, as will be discussed in more detail in the next chapter.
 
-{{< mediafigure src="microbiology/OSC_Microbio_17_04_Phagocytos" alt="A diagram of a macrophage's phagocytosis steps, arrows moving left to right: a bacterium is engulfed into a phagosome; the phagosome merges with a lysosome containing digestive enzymes to form a phagolysosome, which digests the bacterium; the resulting undigested waste is then expelled from the cell." longdesc="Inside a single macrophage, labeled at the bottom, red arrows trace the stages of phagocytosis left to right. A bacterium — a small dark oval — is shown enclosed in a membrane-bound phagosome. An arrow leads from the phagosome down to a separate vesicle labeled lysosome containing digestive enzymes. Another arrow shows the phagosome and the lysosome merging into one vesicle labeled phagolysosome, which now holds both the bacterium and the digestive enzymes together. A final arrow leads from the phagolysosome to a vesicle of small dots at the cell's edge, labeled undigested waste, shown exiting the cell." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_17_04_Phagocytos" alt="A diagram of a macrophage's phagocytosis steps, arrows moving left to right: a bacterium is engulfed into a phagosome; the phagosome merges with a lysosome containing digestive enzymes to form a phagolysosome, which digests the bacterium; the resulting undigested waste is then expelled from the cell." longdesc="Inside a single macrophage, labeled at the bottom, red arrows trace the stages of phagocytosis left to right. At the cell's upper-left edge, a bacterium — a small dark oval, labeled — sits in a pocket of the cell membrane as it is engulfed; an arrow leads to the same bacterium enclosed in a membrane-bound vesicle labeled phagosome. An arrow leads from the phagosome down and to the right, and a second arrow leads in from a separate vesicle labeled lysosome, containing digestive enzymes; both arrows point to the same spot, where the phagosome and the lysosome are shown fusing into one vesicle labeled phagolysosome, holding both the bacterium and the digestive enzymes together, each still visible in its own half of the fused vesicle. A final arrow leads from the phagolysosome to a vesicle of small tan dots labeled undigested waste; beside it, at the cell's right edge, an opening in the membrane releases small green particles outside the cell." kind="diagram" >}}
 The stages of phagocytosis include the engulfment of a pathogen, the formation of a phagosome, the digestion of the pathogenic particle in the phagolysosome, and the expulsion of undigested materials from the cell.
 {{< /mediafigure >}}
 
@@ -155,12 +155,13 @@ There are several different forms of leishmaniasis. The most common is a localiz
 {{< textin
   question="________, also known as diapedesis, refers to the exit from the bloodstream of neutrophils and other circulating leukocytes."
   answer="extravasation"
-  hint="This general term for the exit process appears in this subsection's title."
+  hint="See the first paragraph of this section's first subsection."
 >}}
 
 {{< textin
   question="The specific step in which a leukocyte flattens out and squeezes through a capillary's cellular junction is called ________."
   answer="transendothelial migration"
+  accept="trans-endothelial migration"
   hint="This is the final, most specific stage in the exit process — the actual squeezing through the vessel wall at a junction."
 >}}
 
@@ -175,10 +176,17 @@ this lets the leukocyte exit the bloodstream and enter the infected tissue to be
 
 ### Explain the mechanisms by which leukocytes recognize pathogens
 
+{{< textin
+  question="Toll-like receptors are examples of ________."
+  answer="pattern-recognition receptors (PRRs)"
+  accept="PRRs|pattern recognition receptors"
+  hint="This is the general class of receptor that Toll-like receptors belong to."
+>}}
+
 {{< multiplechoice
   question="PAMPs would be found on the surface of which of the following?"
   answer="pathogen"
-  hint="PAMPs are molecular patterns common to invading microbes, not to the host's own tissues."
+  hint="See the paragraph just before the bulleted list of common PAMPs."
 >}}
 pathogen
 phagocyte
@@ -189,7 +197,7 @@ blood vessel wall
 {{< multiplechoice
   question="________ on phagocytes bind to PAMPs on bacteria, which triggers the uptake and destruction of the bacterial pathogens?"
   answer="PRRs"
-  hint="The blank names the receptor itself, not the pattern it recognizes."
+  hint="See the paragraph just after the bulleted list of common PAMPs."
 >}}
 PRRs
 AMPs
@@ -200,20 +208,13 @@ PMNs
 {{< multiplechoice
   question="Which of the following best characterizes the mode of pathogen recognition for opsonin-dependent phagocytosis?"
   answer="A pathogen is first coated with a molecule such as a complement protein, which allows it to be recognized by phagocytes."
-  hint="Reread the sentence introducing opsonins at the start of this section, then rule out any option describing chemotaxis or immediate cell lysis rather than recognition itself."
+  hint="Reread the sentence on opsonization at the start of the Pathogen Recognition subsection, then rule out any option describing chemotaxis or immediate cell lysis rather than recognition itself."
 >}}
 Opsonins produced by a pathogen attract phagocytes through chemotaxis.
 A PAMP on the pathogen's surface is recognized by a phagocyte's toll-like receptors.
 A pathogen is first coated with a molecule such as a complement protein, which allows it to be recognized by phagocytes.
 A pathogen is coated with a molecule such as a complement protein that immediately lyses the cell.
 {{< /multiplechoice >}}
-
-{{< textin
-  question="Toll-like receptors are examples of ________."
-  answer="pattern-recognition receptors (PRRs)"
-  accept="PRRs|pattern recognition receptors"
-  hint="This is the general class of receptor that Toll-like receptors belong to."
->}}
 
 ### Explain the process of phagocytosis and the mechanisms by which phagocytes destroy and degrade pathogens
 
@@ -232,9 +233,9 @@ A pathogen is coated with a molecule such as a complement protein that immediate
 {{< textin
   question="When a phagosome fuses with one or more lysosomes, the resulting compartment — whose acidification and digestive enzymes destroy the enclosed pathogen — is called a ________."
   answer="phagolysosome"
-  hint="Its name combines the names of the two compartments that fused to form it."
+  hint="See the first paragraph of the Pathogen Degradation subsection."
 >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 17.4: Pathogen Recognition and Phagocytosis](https://openstax.org/books/microbiology/pages/17-4-pathogen-recognition-and-phagocytosis) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on the injury-site, PRR, and phagocytosis figures and `kind="photo"` on the Leishmania figure, overriding the media manifest's JPEG-based guess for the three drawn figures; the injury-site figure carries `eager="true"` as the page's first figure; a `longdesc` was added for the three diagram figures, walking each in reading order, because their labels and multi-step processes are not fully carried by the caption; the source alt for the PRR figure names only three of the figure's four labeled receptor types (lipopeptide, flagellin, and peptidoglycan) and omits the drawn and body-discussed interior nucleic acid receptor on the phagosome, and the page's own alt and longdesc include all four; the two Link to Learning boxes keep their source URLs and sentences, except the second box's anchor text is changed from the source's placeholder word "link" to a description of the video, per the site's link-text policy; the Micro Connection box ("When Phagocytosis Fails") is rendered as a callout with its figure and footnote kept in document order, the WHO leishmaniasis-factsheet footnote rendered as an inline parenthetical citation with its bare URL dropped, and the misspelled species "L. viannia brasilienfsis" corrected in place to "L. viannia brasiliensis" (an extra inserted letter), with no inline note; the extravasation subsection's "By contract, monocytes may take several days..." is corrected in place to "By contrast" (a one-word typo), with no inline note; there is no Clinical Focus box in this module, so the case begun in 17.1–17.3 is not referenced here; the five PAMPs printed as `no-emphasis` terms in the body list are transcribed unbolded, as index entries rather than key terms; key terms compiled from the module's nine defined terms and the book's Glossary appendix (all nine taken from the glossary; none sentence-derived); all four of the section's body Check Your Understanding bullets, across three boxes, are rendered as body self-checks at their notes' positions, because none is fixed by a single module sentence, table, or figure — the PAMPs bullet asks for four of a five-item list (longer than a single-answer form holds), the phagocyte-activation and phagosome-versus-lysosome bullets each need more than one module sentence assembled, and the adhesion-molecules bullet needs the whole paragraph; the module's three keyed Multiple Choice items and two keyed Fill in the Blank items keep their source options, order, and key; the module's one unkeyed Short Answer question (summarize the events leading to transendothelial migration) stays a self-check with a model answer and rubric assembled from this section's own text, because the answer spans a full paragraph rather than one sentence; the module's six source exercises are the whole of what the source keys or asks here, but they fall short of the book's nine-item practice floor, so four author-written `textin` term-recall items — one for transendothelial migration and three for phagocytosis, phagosome, and phagolysosome — are added from this section's own Key terms definitions to meet the floor, disclosed here and in the ledger; every added item is auto-graded. No source exercise item is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 17.4: Pathogen Recognition and Phagocytosis](https://openstax.org/books/microbiology/pages/17-4-pathogen-recognition-and-phagocytosis) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on the injury-site, PRR, and phagocytosis figures and `kind="photo"` on the Leishmania figure, overriding the media manifest's JPEG-based guess for the three drawn figures; the injury-site figure carries `eager="true"` as the page's first figure; a `longdesc` was added for the three diagram figures, walking each in reading order, because their labels and multi-step processes are not fully carried by the caption; the source alt for the PRR figure names only three of the figure's four labeled receptor types (lipopeptide, flagellin, and peptidoglycan) and omits the drawn and body-discussed interior nucleic acid receptor on the phagosome, and the page's own alt and longdesc include all four; the two Link to Learning boxes keep their source URLs and sentences, except the second box's anchor text is changed from the source's placeholder word "link" to a description of the video, per the site's link-text policy; the Micro Connection box ("When Phagocytosis Fails") is rendered as a callout with its figure and footnote kept in document order, the WHO leishmaniasis-factsheet footnote rendered as an inline parenthetical citation with its bare URL dropped, and the misspelled species "L. viannia brasilienfsis" corrected in place to "L. viannia brasiliensis" (an extra inserted letter), with no inline note; the extravasation subsection's "By contract, monocytes may take several days..." is corrected in place to "By contrast" (a one-word typo), with no inline note; there is no Clinical Focus box in this module, so the case begun in 17.1–17.3 is not referenced here; the five PAMPs printed as `no-emphasis` terms in the body list are transcribed unbolded, as index entries rather than key terms; key terms compiled from the module's nine defined terms and the book's Glossary appendix (all nine taken from the glossary; none sentence-derived); all four of the section's body Check Your Understanding bullets, across three boxes, are rendered as body self-checks at their notes' positions, because none is fixed by a single module sentence, table, or figure — the PAMPs bullet asks for four of a five-item list (longer than a single-answer form holds), the phagocyte-activation and phagosome-versus-lysosome bullets each need more than one module sentence assembled, and the adhesion-molecules bullet needs the whole paragraph; the module's three keyed Multiple Choice items and two keyed Fill in the Blank items keep their source options, order, and key; the module's one unkeyed Short Answer question (summarize the events leading to transendothelial migration) stays a self-check with a model answer and rubric assembled from this section's own text, because the answer spans a full paragraph rather than one sentence; the module's six source exercises are the whole of what the source keys or asks here, but they fall short of the book's nine-item practice floor, so four author-written `textin` term-recall items — one for transendothelial migration and three for phagocytosis, phagosome, and phagolysosome — are added from this section's own Key terms definitions to meet the floor, disclosed here and in the ledger; every added item is auto-graded. The Toll-like-receptor Fill in the Blank is placed first in its Practice group, ahead of the three Multiple Choice items, because the second Multiple Choice prints its key ("PRRs") as an option. No source exercise item is omitted.</small>

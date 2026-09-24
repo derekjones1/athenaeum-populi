@@ -108,6 +108,90 @@ alt can cross the 600-character cap (two did — lint caught both); an
 existing erratum can itself be an alt-first misreading, so a checker's
 "contradicts erratum N" is adjudicated on the image like any other flag.
 
+## Practice sweep and long-description pass (September 22–23, 2026)
+
+The second review of Anatomy and Physiology chapters 1–2
+(`docs/history/anatomy-physiology.md`) found hint and leak defects that
+every earlier gate had passed, and an Opus sample audit of this book found
+the same classes here: about 6.9 confirmed defects per page, 55 in 107
+sampled items, most of them hints that state the key or the correct
+option's fact (the Biology briefs had asked only for a "strategy hint", so
+the checkers passed them by design). Derek approved bringing the book to
+the A&P re-review standard. Microbiology ran the same sweep in the same
+session (`docs/history/microbiology.md`).
+
+- **Practice sweep:** 19 section units (bio01–19, every chapter) and 4
+  Knowledge Check units (all eight unit KCs), Opus fixers. Units bio01–06
+  ran at full scope; after ten units Derek chose a narrow scope for the
+  rest (keys, double keys, dishonest keys, accept gaps, false hints,
+  giveaway hints, directly-above leaks, duplicate asks, source fidelity),
+  which left objective-heading leaks out. Yield: about 1,285 hints
+  rewritten to say where to look, about 232 nearby or directly-above leaks
+  (about 85 of them a textin keyed to its own objective heading or the
+  page title, in the full-scope units), about 130 accept gaps, about 130
+  footers corrected, about 77 duplicate asks. **No source key was wrong.**
+  Two policies were set during the sweep and hold going forward: a leak is
+  fixed without changing the item's type (never textin → MC to escape
+  it), and every source exercise is rendered.
+- **The needs-parent batch** (two Opus agents, 45 pages, plus the KC
+  agent's 30 items): 11 claim corrections, among them 3.2's "form the
+  starch" (amylose), 4.3's CT premise that red blood cells are rich in
+  ribosomes, 7.4's cyanide solution that "pumps electrons" and its "FAD⁺",
+  33.1's BMR model answer that teaches the reverse, 43.3's meiosis I
+  yielding "a primary oocyte", and 45.4's wolf item, re-keyed to the
+  beaver on the module's own reasoning (erratum 948, a `key` deviation);
+  double-keyed items replaced and disclosed (10.4, 16.4, 22.3, 28.6,
+  29.1); numeric-key textins converted to MC (4.2's `5.0 µm`, 7.2, 7.4);
+  and two stems restored verbatim (4.3, 28.1) that had been reworded
+  without disclosure.
+- **Long-description pass:** every `mediafigure` with a `longdesc`,
+  read by the inventory method (every panel, printed label, count, and
+  arrow as `source → target`, both ends zoomed) before any words. Units
+  fbio01–12 (chapters 1–37, 509 figures) ran on Opus fixers on September
+  22 and fixed 381 (75%); the leading classes were connections,
+  positions, counts, and mislabels. Units fbio13–15 (chapters 38–47, 123
+  figures) ran on Sonnet fixers on September 23, which reported 24 fixes;
+  an Opus second read then found 72 of the 100 Sonnet "clean" figures
+  wrong and 19 of the 24 Sonnet fixes incomplete or regressions (a fish's
+  "Vein" moved onto the wrong tube, an extinction timeline's colour band
+  shifted by 50 million years), and fixed about 90. Source-inherited
+  defects went to errata with footer disclosures; the parent added three
+  on its own image check (a Meiosis I bracket that omits prophase I, a
+  food web's stray arrowhead, the MALT alt's lymph-node trip that is not
+  drawn).
+- **Errata:** 898–954, 57 entries (11 claims, the rest alts, art typos,
+  and double keys), with dated amendments to 139 (the "wont" typo is in
+  the VC solution), 180 (a second Lyme-alt defect), and 196 (the quote is
+  "diffirent", verified on the image); 10 of the sweep's 13 new
+  `DISCLOSED_DEVIATIONS` lines and 11 reconciliation-decisions entries.
+- **Ledger and floors:** the carry rule (AGENTS.md, "Re-solving after a
+  sweep") carried every item whose stem, options, and key were unchanged
+  and whose graded forms still grade; the rest, both books together, went
+  to six fresh Fable solvers (570 items; 569 merged after adjudication,
+  and the last, a KC stem, was reworded because FMN is also
+  riboflavin-derived and re-solved) and 89 selfchecks to an Opus re-read. The confirmed source-key
+  count and the replay and ledger floors moved (4873, 10360, 14643) with
+  Derek's approval, each drop traced to a replaced or converted item.
+- **Grader and lints landed from the sweep:** accept members may run to
+  seven words (the key stays four), since `central dogma of molecular
+  biology` and `major histocompatibility complex class I` were marked
+  wrong; an "X (Y)" answer grades when both halves are correct; three
+  lints (a numeric textin, a selfcheck hint that restates its rubric, a
+  hint saying "not X" where X is accepted). A heading/title-leak textin
+  lint was measured (about 140 raw hits in this book) and **decided
+  against** on September 23: a heading-printed key is the weakest leak,
+  so the rule became an authoring preference (life-sciences "Text
+  recall"), checkers stop flagging it, and the hits stay.
+
+Lessons folded into the life-sciences playbook, this book's delta, the KC
+playbook, and the kits: hints say where to look, never the fact, with the
+cover test (cover the options; if stem plus hint answers the item, cut the
+hint); a textin is never keyed to a term its own heading or the page title
+prints; figure, alt, and `longdesc` work runs on Opus, never Sonnet, and
+the parent spot-checks one "clean" verdict after any delegated model's
+first unit; a footer's `Changes:` clause names departures from the source,
+never corrections to our own earlier text.
+
 ## Build budgets: the completion measurement record
 
 The book is complete, so these are no longer projections — they are what

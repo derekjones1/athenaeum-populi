@@ -18,7 +18,7 @@ weight: 3
 
 An important quality for an antimicrobial drug is **selective toxicity**, meaning that it selectively kills or inhibits the growth of microbial targets while causing minimal or no harm to the host. Most antimicrobial drugs currently in clinical use are antibacterial because the prokaryotic cell provides a greater variety of unique targets for selective toxicity, in comparison to fungi, parasites, and viruses. Each class of antibacterial drugs has a unique **mode of action** (the way in which a drug affects microbes at the cellular level), and these are summarized in the figure and table below.
 
-{{< mediafigure src="microbiology/OSC_Microbio_14_02_Modes" alt="A cutaway diagram of a rod-shaped bacterial cell with five labeled call-out boxes, one for each targeted structure — the cell wall, the plasma membrane, the ribosomes, the DNA/RNA synthesis machinery, and the metabolic pathways — each box listing the drug classes and named drugs that act there." longdesc="Five call-out boxes surround a cutaway drawing of a rod-shaped bacterial cell, each connected by a line to the structure it labels. The Cell wall box (left) lists β-lactams — penicillins, cephalosporins, monobactams, carbapenems — Glycopeptides — vancomycin — and Bacitracin. The Plasma membrane box (top) lists Polymyxins — polymyxin B, colistin — and Lipopeptide — daptomycin. The Ribosomes box (right) points into the cytoplasm and lists the 30S subunit — aminoglycosides, tetracyclines — and the 50S subunit — macrolides, lincosamides, chloramphenicol, oxazolidinones. A DNA synthesis / RNA synthesis box (bottom left) points to a DNA double helix drawn in the cytoplasm and lists Fluoroquinolones — ciprofloxacin, levofloxacin, moxifloxacin — under DNA synthesis and Rifamycins — rifampin — under RNA synthesis. The Metabolic pathways box (bottom right) lists Folic acid synthesis — sulfonamides, sulfones, trimethoprim — and Mycolic acid synthesis — isoniazid." kind="diagram" eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_14_02_Modes" alt="A cutaway diagram of a rod-shaped bacterial cell with five labeled call-out boxes, one for each targeted structure — the cell wall, the plasma membrane, the ribosomes, the DNA/RNA synthesis machinery, and the metabolic pathways — each box listing the drug classes and named drugs that act there." longdesc="Five call-out boxes surround a cutaway drawing of a rod-shaped bacterial cell, each connected by a line to the structure it labels. The Cell wall box (left) lists β-lactams — penicillins, cephalosporins, monobactams, carbapenems — Glycopeptides — vancomycin — and Bacitracin. The Plasma membrane box (top) lists Polymyxins — polymyxin B, colistin — and Lipopeptide — daptomycin. The Ribosomes box (right) sends two lines to two of the small red dots scattered through the cytoplasm (the ribosomes) and lists the 30S subunit — aminoglycosides, tetracyclines — and the 50S subunit — macrolides, lincosamides, chloramphenicol, oxazolidinones. A DNA synthesis / RNA synthesis box (bottom left) points to a DNA double helix drawn in the cytoplasm and lists Fluoroquinolones — ciprofloxacin, levofloxacin, moxifloxacin — under DNA synthesis and Rifamycins — rifampin — under RNA synthesis. The Metabolic pathways box (bottom right) sends a line ending in the open cytoplasm near the cell's right end, on no particular structure, and lists Folic acid synthesis — sulfonamides, sulfones, trimethoprim — and Mycolic acid synthesis — isoniazid." kind="diagram" eager="true" >}}
 There are several classes of antibacterial compounds that are typically classified based on their bacterial target.
 {{< /mediafigure >}}
 
@@ -54,7 +54,7 @@ The drug **vancomycin**, a member of a class of compounds called the **glycopept
 
 The drug **bacitracin** consists of a group of structurally similar peptide antibiotics originally isolated from *Bacillus subtilis*. Bacitracin blocks the activity of a specific cell-membrane molecule that is responsible for the movement of peptidoglycan precursors from the cytoplasm to the exterior of the cell, ultimately preventing their incorporation into the cell wall. Bacitracin is effective against a wide range of bacteria, including gram-positive organisms found on the skin, such as *Staphylococcus* and *Streptococcus*. Although it may be administered orally or intramuscularly in some circumstances, bacitracin has been shown to be nephrotoxic (damaging to the kidneys). Therefore, it is more commonly combined with neomycin and polymyxin in topical ointments such as Neosporin.
 
-{{< mediafigure src="microbiology/OSC_Microbio_14_02_BetaLactam" alt="A diagram of four β-lactam drug structures — penicillin, cephalosporin, monobactam, and carbapenem — each with its β-lactam ring highlighted and arrowed, above a table giving each one's R group structure, drug name, spectrum of activity, and route of administration for five specific drugs: penicillin G, penicillin V, ampicillin, amoxicillin, and methicillin." longdesc="Top row: four chemical structures, each built around a four-membered β-lactam ring (a square of three carbons and one nitrogen, with one carbon double-bonded to oxygen) highlighted in pink and arrowed — penicillin's ring is fused to a five-membered sulfur-containing ring; cephalosporin's is fused to a six-membered sulfur-containing ring; monobactam's stands alone, attached to a sulfonate group; carbapenem's is fused to a five-membered sulfur-containing ring, with a hydroxyl-bearing side chain, a thioether (S-R) substituent, and a carboxylic acid (CO₂H) group. Below is a table with four rows — R group, Drug name, Spectrum of activity, and Route of administration — and five columns, one per drug: penicillin G's R group is a benzyl group, active against gram-positive bacteria and a few gram-negative bacteria, given parenterally; penicillin V's R group is a phenoxymethyl group, with similar activity, given orally; ampicillin's R group carries an amino group on a benzyl ring, active against gram-positive bacteria and more gram-negative bacteria than penicillin, given orally and parenterally; amoxicillin's R group is similar to ampicillin's with an added hydroxyl group on the ring, with similar activity, given orally; methicillin's R group is a dimethoxyphenyl ring, active against gram-positive bacteria only, including β-lactamase producers, given parenterally." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_14_02_BetaLactam" alt="A diagram of four β-lactam drug structures — penicillin, cephalosporin, monobactam, and carbapenem — each with its β-lactam ring highlighted and arrowed, above a table giving each one's R group structure, drug name, spectrum of activity, and route of administration for five specific drugs: penicillin G, penicillin V, ampicillin, amoxicillin, and methicillin." longdesc="Top row: four chemical structures, each built around a four-membered β-lactam ring (a square of three carbons and one nitrogen, with one carbon double-bonded to oxygen) drawn in blue and pointed out by a pink arrow labeled 'β-lactam ring' — penicillin's ring is fused to a five-membered sulfur-containing ring; cephalosporin's is fused to a six-membered sulfur-containing ring; monobactam's stands alone, attached to a sulfonate group; carbapenem's is fused to a five-membered sulfur-containing ring, with a hydroxyl-bearing side chain, a thioether (S-R) substituent, and a carboxylic acid (CO₂H) group. Below is a table with four rows — R group, Drug name, Spectrum of activity, and Route of administration — and five columns, one per drug: penicillin G's R group is a benzyl group, active against gram-positive bacteria and a few gram-negative bacteria, given parenterally; penicillin V's R group is a phenoxymethyl group, with similar activity, given orally; ampicillin's R group carries an amino group on a benzyl ring, active against gram-positive bacteria and more gram-negative bacteria than penicillin, given orally and parenterally; amoxicillin's R group is similar to ampicillin's with an added hydroxyl group on the ring, with similar activity, given orally ('better than ampicillin'); methicillin's R group is a dimethoxyphenyl ring, active against gram-positive bacteria only, including β-lactamase producers, given parenterally." kind="diagram" >}}
 Penicillins, cephalosporins, monobactams, and carbapenems all contain a β-lactam ring, the site of attack by inactivating β-lactamase enzymes. Although they all share the same nucleus, various penicillins differ from each other in the structure of their R groups. Chemical changes to the R groups provided increased spectrum of activity, acid stability, and resistance to β-lactamase degradation.
 {{< /mediafigure >}}
 
@@ -80,7 +80,7 @@ Penicillins, cephalosporins, monobactams, and carbapenems all contain a β-lacta
 {{< multiplechoice
   question="Describe the mode of action of β-lactams."
   answer="They block the crosslinking of peptide chains during peptidoglycan biosynthesis by mimicking the peptidoglycan subunit recognized by the transpeptidase (penicillin-binding protein) enzyme"
-  hint="Recall which structural similarity lets the β-lactam ring interfere with the crosslinking enzyme, described early in this section."
+  hint="Reread the second paragraph of Inhibitors of Cell Wall Biosynthesis."
 >}}
 They bind to the end of the peptide chain of cell wall precursors, blocking their incorporation into the growing peptidoglycan backbone
 They block the crosslinking of peptide chains during peptidoglycan biosynthesis by mimicking the peptidoglycan subunit recognized by the transpeptidase (penicillin-binding protein) enzyme
@@ -108,7 +108,7 @@ The drug **chloramphenicol** represents yet another structurally distinct class 
 
 The **oxazolidinones**, including linezolid, are a new broad-spectrum class of synthetic protein synthesis inhibitors that bind to the 50S ribosomal subunit of both gram-positive and gram-negative bacteria. However, their mechanism of action seems somewhat different from that of the other 50S subunit-binding protein synthesis inhibitors already discussed. Instead, they seem to interfere with formation of the initiation complex (association of the 50S subunit, 30S subunit, and other factors) for translation, a step that precedes elongation. *(Source note: the source's sentence adds that oxazolidinones "prevent translocation of the growing protein from the ribosomal A site to the P site"; translocation is an elongation step, and the mechanistic study of linezolid found that it inhibits neither elongation nor peptidyl transfer but blocks formation of the 70S initiation complex (Swaney, Aoki, Ganoza, and Shinabarger, *Antimicrobial Agents and Chemotherapy* 42 no. 12 (1998): 3251–3255), so the clause is dropped. The module's own summary table, printed below, names only the initiation-complex step.)* The table below summarizes the protein synthesis inhibitors.
 
-{{< mediafigure src="microbiology/OSC_Microbio_14_02_ProtSynInh" alt="A diagram of a ribosome translating an mRNA strand, with three labeled call-out boxes describing where each drug class binds and what it blocks: chloramphenicol, macrolides, and lincosamides at the 50S subunit; aminoglycosides at the 30S subunit; and tetracyclines also at the 30S subunit." longdesc="A ribosome, drawn as a light-blue 30S small subunit beneath a larger tan 50S large subunit, sits on an mRNA strand (labeled 3' at the left end and 5' at the right) with a tRNA delivering an amino acid to a growing polypeptide chain that emerges from the top. Three call-out boxes point to this structure: the top box, 'Chloramphenicol, macrolides, and lincosamides,' points to the 50S large subunit and lists binding to the 50S ribosomal subunit, preventing peptide bond formation, and stopping protein synthesis; the middle box, 'Aminoglycosides,' points to the 30S small subunit and lists binding to the 30S ribosomal subunit and impairing proofreading, resulting in production of faulty proteins; the bottom box, 'Tetracyclines,' also points to the 30S small subunit and lists binding to the 30S ribosomal subunit and blocking the binding of tRNAs, thereby inhibiting protein synthesis." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_14_02_ProtSynInh" alt="A diagram of a ribosome translating an mRNA strand, with three labeled call-out boxes describing where each drug class binds and what it blocks: chloramphenicol, macrolides, and lincosamides at the 50S subunit; aminoglycosides at the 30S subunit; and tetracyclines also at the 30S subunit." longdesc="A ribosome, drawn as a light-blue 30S small subunit beneath a larger tan 50S large subunit, sits on an mRNA strand (labeled 3' at the left end and 5' at the right). Three tRNAs stand in the ribosome over the mRNA: at left a light-blue tRNA carrying a single amino acid, in the middle a red tRNA holding the growing polypeptide chain (a bracketed string of amino acids) that emerges from the top, and at right a purple tRNA, labeled tRNA, leaving. Three call-out boxes point to this structure: the top box, 'Chloramphenicol, macrolides, and lincosamides,' points into the 50S large subunit, its arrowhead at the amino acid on the left tRNA, and lists binding to the 50S ribosomal subunit, preventing peptide bond formation, and stopping protein synthesis; the middle box, 'Aminoglycosides,' points into the 30S small subunit just below the middle of the mRNA and lists binding to the 30S ribosomal subunit and impairing proofreading, resulting in production of faulty proteins; the bottom box, 'Tetracyclines,' also points to the 30S small subunit, at its left edge beneath the incoming light-blue tRNA, and lists binding to the 30S ribosomal subunit and blocking the binding of tRNAs, thereby inhibiting protein synthesis." kind="diagram" >}}
 The major classes of protein synthesis inhibitors target the 30S or 50S subunits of cytoplasmic ribosomes.
 {{< /mediafigure >}}
 
@@ -125,7 +125,7 @@ The major classes of protein synthesis inhibitors target the 30S or 50S subunits
 
 **Check Your Understanding**
 
-{{< sortbins question="Compare and contrast the different types of protein synthesis inhibitors by sorting each one under the ribosomal subunit it binds." hint="Match each drug class to the subunit table above, using its own listed mechanism to tell macrolides, lincosamides, chloramphenicol, and oxazolidinones apart from the 30S binders." >}}
+{{< sortbins question="Compare and contrast the different types of protein synthesis inhibitors by sorting each one under the ribosomal subunit it binds." hint="Reread the two protein synthesis subsections, or the table above." >}}
 {"bins":["30S subunit","50S subunit"],"items":[{"label":"Macrolides — block peptide bond formation; broad-spectrum, bacteriostatic","bin":1},{"label":"Aminoglycosides — cause mismatches between codons and anticodons, producing faulty proteins; bactericidal","bin":0},{"label":"Lincosamides — block peptide bond formation; narrow-spectrum, bacteriostatic","bin":1},{"label":"Tetracyclines — block the association of tRNAs with the ribosome; bacteriostatic","bin":0},{"label":"Chloramphenicol — blocks peptide bond formation; broad-spectrum, bacteriostatic","bin":1},{"label":"Oxazolidinones — interfere with formation of the translation initiation complex; broad-spectrum, bacteriostatic","bin":1}]}
 {{< /sortbins >}}
 
@@ -146,7 +146,7 @@ A small group of antibacterials target the bacterial membrane as their mode of a
 {{< multiplechoice
   question="How do polymyxins inhibit membrane function?"
   answer="They are lipophilic and interact with the lipopolysaccharide of the gram-negative outer membrane, disrupting both the outer and inner membranes"
-  hint="Recall which outer-membrane component polymyxins' detergent-like properties target, described in this section's opening paragraph."
+  hint="Reread the paragraph under Inhibitors of Membrane Function."
 >}}
 They insert into the gram-positive cytoplasmic membrane, disrupting it directly
 They bind penicillin-binding proteins in the cell wall, blocking peptidoglycan crosslinking
@@ -169,7 +169,7 @@ One member of the quinolone family, a group of synthetic antimicrobials, is **na
 
 **Check Your Understanding**
 
-{{< selfcheck question="Why do inhibitors of bacterial nucleic acid synthesis not target host cells?" hint="Compare the bacterial enzymes rifamycins and fluoroquinolones each target with their human counterparts." >}}
+{{< selfcheck question="Why do inhibitors of bacterial nucleic acid synthesis not target host cells?" hint="Reread the two paragraphs of Inhibitors of Nucleic Acid Synthesis." >}}
 Rifampin blocks bacterial RNA polymerase activity, and the RNA polymerase enzymes in bacteria are structurally different from those in eukaryotes, providing for selective toxicity against bacterial cells. Similarly, nalidixic acid and the fluoroquinolones selectively inhibit the activity of bacterial DNA gyrase, an enzyme these drugs target for its role in bacterial DNA replication, so they can block DNA replication in bacteria without the same effect on host cells.
 ===CHECKS===
 rifampin blocks bacterial RNA polymerase activity
@@ -185,7 +185,7 @@ Trimethoprim is a synthetic antimicrobial compound that serves as an antimetabol
 
 The drug **isoniazid** is an antimetabolite with specific toxicity for mycobacteria and has long been used in combination with rifampin or streptomycin in the treatment of tuberculosis. It is administered as a prodrug, requiring activation through the action of an intracellular bacterial peroxidase enzyme, forming isoniazid-nicotinamide adenine dinucleotide (NAD) and isoniazid-nicotinamide adenine dinucleotide phosphate (NADP), ultimately preventing the synthesis of mycolic acid, which is essential for mycobacterial cell walls. Possible side effects of isoniazid use include hepatotoxicity, neurotoxicity, and hematologic toxicity (anemia).
 
-{{< mediafigure src="microbiology/OSC_Microbio_14_02_SulfTri" alt="Three parallel reaction columns showing the bacterial folic-acid synthesis pathway and where two drugs block it. Left: sulfonamide, a structural analog of PABA, is blocked by a red X from being converted by the first enzyme. Middle: PABA is converted by the first enzyme into trimethoprim, itself a structural analog of dihydrofolic acid, which is blocked by a red X from being converted by the second enzyme. Right: the unblocked pathway converts PABA through dihydrofolic acid and tetrahydrofolic acid into nucleotides." longdesc="Left column: a sulfonamide structure sits above a purple enzyme shape with a red X below it, and a caption box reads that sulfonamide, a structural analog of PABA, competitively inhibits the synthesis of dihydrofolic acid. Middle column: a PABA structure sits above the same enzyme shape (unblocked here), an arrow leads down to a trimethoprim structure, which sits above a second purple enzyme shape with a red X below it, and a caption box reads that trimethoprim, a structural analog of dihydrofolic acid, competitively inhibits the synthesis of tetrahydrofolic acid. Right column: a PABA structure sits above the first enzyme, an arrow leads to a dihydrofolic acid structure, then to the second enzyme, then to tetrahydrofolic acid, then to nucleotides — the pathway running unblocked from top to bottom." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_14_02_SulfTri" alt="Three parallel reaction columns showing the bacterial folic-acid synthesis pathway and where two drugs block it. Left: sulfonamide, a structural analog of PABA, is blocked by a red X from being converted by the first enzyme. Middle: PABA passes the first enzyme unblocked; below it, in the place the right column gives dihydrofolic acid, sits trimethoprim, a structural analog of dihydrofolic acid, which is blocked by a red X from being converted by the second enzyme. Right: the unblocked pathway converts PABA through dihydrofolic acid and tetrahydrofolic acid into nucleotides." longdesc="In both PABA structures, the aniline ring portion is highlighted green and its carboxyl group orange; the sulfonamide structure's matching aniline portion is highlighted the same green, with its sulfonamide group highlighted the same orange, visually marking the two as structural analogs of each other (the trimethoprim and dihydrofolic acid structures carry no such highlighting). Left column: a sulfonamide structure sits above a purple enzyme shape with a red X below it, and a caption box reads that sulfonamide, a structural analog of PABA, competitively inhibits the synthesis of dihydrofolic acid. Middle column: a PABA structure sits above the same enzyme shape (unblocked here); an arrow then leads down to a trimethoprim structure, drawn where the right column has dihydrofolic acid, which sits above a second purple enzyme shape with a red X below it, and a caption box reads that trimethoprim, a structural analog of dihydrofolic acid, competitively inhibits the synthesis of tetrahydrofolic acid. Right column: a PABA structure sits above the first enzyme, an arrow leads to a dihydrofolic acid structure, then to the second enzyme, then to tetrahydrofolic acid, then to nucleotides — the pathway running unblocked from top to bottom." kind="diagram" >}}
 Sulfonamides and trimethoprim are examples of antimetabolites that interfere in the bacterial synthesis of folic acid by blocking purine and pyrimidine biosynthesis, thus inhibiting bacterial growth.
 {{< /mediafigure >}}
 
@@ -200,8 +200,8 @@ Sulfonamides and trimethoprim are examples of antimetabolites that interfere in 
 
 **Check Your Understanding**
 
-{{< selfcheck question="How do sulfonamides and trimethoprim selectively target bacteria?" hint="Recall where humans obtain folic acid, and which two sequential enzymes of the same bacterial pathway sulfonamides and trimethoprim each block." >}}
-Sulfonamides (sulfa drugs) are structural analogues of PABA that inhibit the enzyme involved in the production of dihydrofolic acid, and trimethoprim is a structural analogue of dihydrofolic acid that inhibits a later step in the same folic acid synthesis pathway. Because humans obtain folic acid from food instead of synthesizing it intracellularly, sulfonamides are selectively toxic for bacteria, and trimethoprim, acting within that same pathway, is selective for the same reason.
+{{< selfcheck question="How do sulfonamides and trimethoprim selectively target bacteria?" hint="Reread the first two paragraphs of Inhibitors of Metabolic Pathways." >}}
+Sulfonamides (sulfa drugs) are structural analogues of PABA that inhibit the enzyme involved in the production of dihydrofolic acid, and trimethoprim is a structural analogue of dihydrofolic acid that inhibits a later step in the same folic acid synthesis pathway. Because humans obtain folic acid from food instead of synthesizing it intracellularly, sulfonamides are selectively toxic for bacteria; trimethoprim acts within that same folic acid synthesis pathway.
 ===CHECKS===
 sulfonamides are structural analogues of PABA that inhibit the enzyme involved in the production of dihydrofolic acid
 trimethoprim is a structural analogue of dihydrofolic acid and inhibits a later step in the metabolic pathway
@@ -278,7 +278,7 @@ The case began in [History of Chemotherapy and Antimicrobial Discovery](/life-he
 {{< multiplechoice
   question="Which of the following terms refers to the ability of an antimicrobial drug to harm the target microbe without harming the host?"
   answer="selective toxicity"
-  hint="This is the section's own name for a drug's ability to selectively kill microbial targets while sparing the host, defined in the opening paragraph."
+  hint="Reread the first sentence of this section."
 >}}
 mode of action
 therapeutic level
@@ -289,7 +289,7 @@ selective toxicity
 {{< multiplechoice
   question="Which of the following is not a type of β-lactam antimicrobial?"
   answer="glycopeptides"
-  hint="Recall which of these four classes is a large molecule that binds peptidoglycan subunits directly, rather than sharing the β-lactam ring structure."
+  hint="Reread the second paragraph of Inhibitors of Cell Wall Biosynthesis, which lists the members of the class."
 >}}
 penicillins
 glycopeptides
@@ -300,7 +300,7 @@ monobactams
 {{< multiplechoice
   question="Which of the following does not bind to the 50S ribosomal subunit?"
   answer="tetracyclines"
-  hint="Recall which ribosomal subunit tetracyclines bind, in contrast with the other three classes listed."
+  hint="Reread the two subsections on protein synthesis inhibitors, noting which subunit each drug class binds."
 >}}
 tetracyclines
 lincosamides
@@ -311,7 +311,7 @@ chloramphenicol
 {{< multiplechoice
   question="Which of the following antimicrobials inhibits the activity of DNA gyrase?"
   answer="nalidixic acid"
-  hint="Name the quinolone-family drug the Inhibitors of Nucleic Acid Synthesis discussion credits with first inhibiting this bacterial enzyme."
+  hint="Reread the second paragraph of Inhibitors of Nucleic Acid Synthesis."
 >}}
 polymyxin B
 clindamycin
@@ -322,18 +322,18 @@ rifampin
 {{< multiplechoice
   question="β-lactamases can degrade vancomycin."
   answer="False"
-  hint="Compare the chemical structure of vancomycin, a glycopeptide, to the β-lactam ring that β-lactamases specifically cleave."
+  hint="Reread the cephalosporin and vancomycin paragraphs of Inhibitors of Cell Wall Biosynthesis."
 >}}
 True
 False
 {{< /multiplechoice >}}
 
-{{< textin question="Selective toxicity antimicrobials are easier to develop against bacteria because they are ________ cells, whereas human cells are eukaryotic." answer="prokaryotic" accept="prokaryotes" hint="Name the cell type of bacteria, contrasted with the eukaryotic cells of humans, introduced in the section's opening paragraph." >}}
+{{< textin question="Selective toxicity antimicrobials are easier to develop against bacteria because they are ________ cells, whereas human cells are eukaryotic." answer="prokaryotic" accept="prokaryotes" hint="Reread the second sentence of this section." >}}
 
 {{< multiplechoice
   question="If human cells and bacterial cells perform transcription, how are the rifamycins specific for bacterial infections?"
   answer="The RNA polymerase enzymes in bacteria are structurally different from those in eukaryotes"
-  hint="Recall which specific enzyme rifampin targets, and how that bacterial enzyme differs from its human counterpart."
+  hint="Reread the first paragraph of Inhibitors of Nucleic Acid Synthesis."
 >}}
 Human cells do not synthesize folic acid intracellularly, but bacterial cells do
 The cytoplasmic ribosomes in bacterial cells (70S) are structurally distinct from those in human cells (80S)
@@ -341,7 +341,7 @@ Human cells do not synthesize peptidoglycan
 The RNA polymerase enzymes in bacteria are structurally different from those in eukaryotes
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What bacterial structural target would make an antibacterial drug selective for gram-negative bacteria? Provide one example of an antimicrobial compound that targets this structure." hint="Name the outer-membrane component of gram-negative bacteria, and the class of lipophilic, detergent-like drugs that interact with it." >}}
+{{< selfcheck question="What bacterial structural target would make an antibacterial drug selective for gram-negative bacteria? Provide one example of an antimicrobial compound that targets this structure." hint="Reread the paragraph under Inhibitors of Membrane Function." >}}
 The lipopolysaccharide (LPS) component of the outer membrane of gram-negative bacteria is a bacterial structural target that a drug can exploit for gram-negative selectivity. Polymyxins, such as polymyxin B and polymyxin E (colistin), are lipophilic, detergent-like compounds that interact with this LPS component, disrupting both the outer and inner membranes and killing the bacterial cells.
 ===CHECKS===
 the lipopolysaccharide (LPS) component of the outer membrane of gram-negative bacteria
@@ -352,7 +352,7 @@ disrupting both the outer and inner membranes and killing the bacterial cells
 {{< multiplechoice
   question="In considering the cell structure of prokaryotes compared with that of eukaryotes, propose one possible reason for side effects in humans due to treatment of bacterial infections with protein synthesis inhibitors."
   answer="Human mitochondria contain 70S ribosomes similar to those found in bacteria, so protein synthesis inhibitors may also disrupt mitochondrial protein synthesis in human cells"
-  hint="Recall which structure inside human cells is described as similar to bacterial ribosomes, discussed in the chloramphenicol paragraph."
+  hint="Reread the chloramphenicol paragraph of the 50S subunit subsection."
 >}}
 Human mitochondria contain 70S ribosomes similar to those found in bacteria, so protein synthesis inhibitors may also disrupt mitochondrial protein synthesis in human cells
 Human cells synthesize peptidoglycan just like bacterial cells, so cell wall synthesis inhibitors act on both

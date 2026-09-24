@@ -24,7 +24,7 @@ Currently, a number of vertebrate species face extinction primarily due to habit
 
 Vertebrates are members of the kingdom Animalia and the phylum Chordata (below). Recall that animals that possess bilateral symmetry can be divided into two groups—protostomes and deuterostomes—based on their patterns of embryonic development. The deuterostomes, whose name translates as "second mouth," consist of two major phyla: Echinodermata and Chordata. Echinoderms are invertebrate marine animals that have pentaradial symmetry and a spiny body covering, a group that includes sea stars, sea urchins, and sea cucumbers. The most conspicuous and familiar members of Chordata are vertebrates, but this phylum also includes two groups of invertebrate chordates.
 
-{{< mediafigure src="biology/Figure_B29_01_01" kind="diagram" eager="true" alt="A cladogram of the deuterostomes. From a Deuterostomes root, Echinodermata branches off first, then Cephalochordata, then Urochordata; the remaining lineage, labeled Vertebrata, splits into a Myxini-and-Petromyzontida pair and a Gnathostomes lineage that runs on through Chondrichthyes, Actinopterygii, Actinistia, Dipnoi, Amphibia, Reptilia, and Mammalia, with the amniotic-egg and four-limb traits marked along the way." longdesc="A rectangular cladogram, read left (ancestral) to right (tips), with tips listed top to bottom. The root, labeled Deuterostomes, splits into Echinodermata (sea stars, sea urchins) at the top and a lineage labeled Chordates (notochord) — annotated by a pointer reading 'Chordate ancestor (possessed notochord)' — continuing right. That lineage splits into Cephalochordata (lancelets) at top and a continuing lineage. That lineage splits into Urochordata (tunicates) at top and a lineage labeled Vertebrata (vertebral column) continuing right. The Vertebrata lineage splits into two sister tips, Myxini (hagfishes) and Petromyzontida (lampreys), as one branch, and a lineage labeled Gnathostomes (jaw) as the other. The Gnathostomes lineage splits into Chondrichthyes (sharks, rays, chimaeras) at top and a continuing lineage, which splits into Actinopterygii (ray-finned fishes) at top and a lineage labeled Lungs. The Lungs lineage splits into Actinistia (coelacanths) at top and a lineage labeled Four limbs, which splits into Dipnoi (lungfishes) at top and a lineage labeled Tetrapods (four legs), which splits into Amphibia (frogs, salamanders) at top and a lineage labeled Amniota (amniotic egg), which splits into two final sister tips, Reptilia (turtles, snakes, crocodiles, birds) and Mammalia (mammals), the mammal branch labeled Mammals (milk)." >}}
+{{< mediafigure src="biology/Figure_B29_01_01" kind="diagram" eager="true" alt="A cladogram of the deuterostomes. From a Deuterostomes root, Echinodermata branches off first, then Cephalochordata, then Urochordata; the remaining lineage, labeled Vertebrata, splits into a Myxini-and-Petromyzontida pair and a Gnathostomes lineage that runs on through Chondrichthyes, Actinopterygii, Actinistia, Dipnoi, Amphibia, Reptilia, and Mammalia, with the amniotic-egg and four-limb traits marked along the way." longdesc="A rectangular cladogram, read left (ancestral) to right (tips), with tips listed top to bottom. The root, labeled Deuterostomes, splits into Echinodermata (sea stars, sea urchins) at the top and a lineage labeled Chordates (notochord) — annotated by a pointer reading 'Chordate ancestor (possessed notochord)' — continuing right. That lineage splits into Cephalochordata (lancelets) at top and a continuing lineage. That lineage splits into Urochordata (tunicates) at top and a lineage labeled Vertebrata (vertebral column) continuing right. The Vertebrata lineage splits into two sister tips, Myxini (hagfishes) and Petromyzontida (lampreys), as one branch, and a lineage labeled Gnathostomes (jaw) as the other. The Gnathostomes lineage splits into Chondrichthyes (sharks, rays, chimaeras) at top and a lineage labeled Lungs, which splits into Actinopterygii (ray-finned fishes) at top and an unlabeled continuing lineage. That lineage splits into Actinistia (coelacanths) at top and a lineage labeled Four limbs, which splits into Dipnoi (lungfishes) at top and a lineage labeled Tetrapods (four legs), which splits into Amphibia (frogs, salamanders) at top and a lineage labeled Amniota (amniotic egg), which splits into two final sister tips, Reptilia (turtles, snakes, crocodiles, birds) and Mammalia (mammals), the mammal branch labeled Mammals (milk)." >}}
 Deuterostome phylogeny. All chordates are deuterostomes possessing a notochord at some stage of their life cycle.
 {{< /mediafigure >}}
 
@@ -34,14 +34,14 @@ Animals in the phylum **Chordata** share five key characteristics that appear at
 
 The chordates are named for the **notochord**, which is a flexible, rod-shaped mesodermal structure that is found in the embryonic stage of all chordates and in the adult stage of some chordate species. It is strengthened with glycoproteins similar to cartilage and covered with a collagenous sheath. The notochord is located between the digestive tube and the nerve cord, and provides rigid skeletal support as well as a flexible location for attachment of axial muscles. In some chordates, the notochord acts as the primary axial support of the body throughout the animal's lifetime. However, in vertebrates (craniates), the notochord is present only during embryonic development, at which time it induces the development of the neural tube and serves as a support for the developing embryonic body. The notochord, however, is not found in the postembryonic stages of vertebrates; at this point, it has been replaced by the vertebral column (that is, the spine).
 
-{{< mediafigure src="biology/Figure_29_01_02" kind="diagram" alt="A labeled side-on illustration of a generalized, fish-shaped chordate showing a dorsal hollow nerve cord along its back, a notochord running beneath the nerve cord, diagonal pharyngeal slits toward the front, and a post-anal tail at the rear." longdesc="A fish-shaped outline, labeled left to right and top to bottom. 'Dorsal hollow nerve cord' labels a long thin strip running the length of the body along the top. Immediately beneath it, 'Notochord' labels a second strip also running the full length of the body. Below the notochord, 'Pharyngeal slits' labels a set of diagonal red gill-like slits cut into the tissue toward the front of the body. 'Post-anal tail' labels the tapering rear extension of the body beyond the trunk." >}}
+{{< mediafigure src="biology/Figure_29_01_02" kind="diagram" alt="A labeled side-on illustration of a generalized, fish-shaped chordate showing a dorsal hollow nerve cord along its back, a notochord running beneath the nerve cord, diagonal pharyngeal slits toward the front, and a post-anal tail at the rear." longdesc="A fish-shaped outline, labeled left to right and top to bottom. 'Dorsal hollow nerve cord' labels a long thin strip running the length of the body along the top. Immediately beneath it, 'Notochord' labels a second strip also running the full length of the body. Below the notochord, 'Pharyngeal slits' labels a set of pale diagonal slits cut into a pink-red pharynx toward the front of the body. 'Post-anal tail' labels the tapering rear extension of the body beyond the trunk." >}}
 Chordate features. In chordates, four common features appear at some point during development: a notochord, a dorsal hollow nerve cord, pharyngeal slits, and a post-anal tail. The endostyle is embedded in the floor of the pharynx.
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements about common features of chordates is true?"
   answer="The dorsal hollow nerve cord is part of the chordate central nervous system."
-  hint="The section explains what actually becomes of the pharyngeal slits, the notochord, and the tail in vertebrates and in humans — check each of those three claims against that account before picking the option about the nerve cord."
+  hint="Check each option against the paragraphs that describe the chordate features one by one."
 >}}
 The dorsal hollow nerve cord is part of the chordate central nervous system.
 In vertebrate fishes, the pharyngeal slits become the gills.
@@ -132,16 +132,29 @@ The five characteristic features of chordates present during some time of their 
 
 ### Describe the distinguishing characteristics of chordates
 
+{{< textin
+  question="The phylum of animals distinguished, among other features, by a dorsal hollow nerve cord and pharyngeal slits at some point in development is called ________."
+  answer="Chordata"
+  accept="chordates"
+  hint="This phylum groups the two invertebrate subphyla discussed in this section together with every vertebrate."
+>}}
+
 {{< multiplechoice
   question="Which of the following is **not** contained in phylum Chordata?"
   answer="Echinodermata"
-  hint="Recall which phylum the section lists sea stars, sea urchins, and sea cucumbers under — it is introduced as a sister group to the chordates within the deuterostomes, not a member of Chordata itself."
+  hint="Compare each option with the groups the section's opening paragraphs and the Summary place inside Chordata."
 >}}
 Cephalochordata
 Echinodermata
 Urochordata
 Vertebrata
 {{< /multiplechoice >}}
+
+{{< textin
+  question="A muscular, posterior elongation of the body extending beyond the anus, found in chordates, is called the ________."
+  answer="post-anal tail"
+  hint="In humans and other great apes this structure is reduced to the vestigial coccyx that aids balance while sitting."
+>}}
 
 {{< selfcheck question="What are the characteristic features of the chordates?" hint="The section opens by naming exactly five shared traits, though one of them — the endostyle/thyroid gland — sits outside this particular exercise's model answer." >}}
 The characteristic features of the phylum Chordata are a notochord, a dorsal hollow nerve cord, pharyngeal slits, and a post-anal tail.
@@ -152,28 +165,15 @@ pharyngeal slits
 a post-anal tail
 {{< /selfcheck >}}
 
-{{< textin
-  question="The phylum of animals distinguished by a notochord, a dorsal hollow nerve cord, pharyngeal slits, and a post-anal tail at some point in development is called ________."
-  answer="Chordata"
-  accept="chordates"
-  hint="This phylum groups the two invertebrate subphyla discussed in this section together with every vertebrate."
->}}
-
-{{< textin
-  question="A muscular, posterior elongation of the body extending beyond the anus, found in chordates, is called the ________."
-  answer="post-anal tail"
-  hint="In humans and other great apes this structure is reduced to the vestigial coccyx that aids balance while sitting."
->}}
-
 ### Identify the derived characters of craniates that sets them apart from other chordates
 
 {{< multiplechoice
   question="Hagfish, lampreys, sharks, and tuna are all chordates that can also be classified into which group?"
   answer="Craniates"
-  hint="The section notes that hagfishes have a cranium but lack a backbone, so the term covering all four animals — including one without a spine — is not the one defined by having a backbone."
+  hint="Look at the first paragraph of the vertebrate subsection, on which jawless animals it includes and what they lack."
 >}}
 Craniates
-Vertebrates
+Gnathostomes
 Cartilaginous fish
 Cephalochordata
 {{< /multiplechoice >}}
@@ -181,7 +181,7 @@ Cephalochordata
 {{< multiplechoice
   question="Which group of invertebrates is most closely related to vertebrates?"
   answer="cephalochordates"
-  hint="Traditional phylogenies and most current molecular analyses place this invertebrate subphylum as the sister clade to the vertebrates, a view also supported by a fossil genus resembling modern lancelets."
+  hint="Look at the paragraph that weighs how the vertebrates relate to the two invertebrate chordate subphyla."
 >}}
 cephalochordates
 echinoderms
@@ -193,7 +193,7 @@ urochordates
   question="A bony, cartilaginous, or fibrous structure that surrounds the brain, jaw, and facial bones is called a ________."
   answer="cranium"
   accept="crania"
-  hint="Animals that have this structure, together with all vertebrates, make up the clade Craniata."
+  hint="Reread the definition that opens the vertebrate subsection."
 >}}
 
 {{< textin
@@ -203,15 +203,6 @@ urochordates
 >}}
 
 ### Describe the developmental fate of the notochord in vertebrates
-
-{{< selfcheck question="What is the structural advantage of the notochord in the human embryo? Be sure to compare the notochord with the corresponding structure in adults." hint="Weigh what a flexible rod supports against what a rigid, bony one restricts, for a body still folded inside the uterus." >}}
-The notochord is a flexible structure that provides support for the embryo's body and formation of the neural tube. In the adults, the notochord has been replaced by the bony, rigid vertebral column. This loss of flexibility restricts the movement of adult humans, and would make it unlikely that the embryo would fit within the small space it is allotted inside the uterus.
-===CHECKS===
-the notochord is a flexible structure that provides support for the embryo's body and formation of the neural tube
-in the adults, the notochord has been replaced by the bony, rigid vertebral column
-this loss of flexibility restricts the movement of adult humans
-would make it unlikely that the embryo would fit within the small space it is allotted inside the uterus
-{{< /selfcheck >}}
 
 {{< textin
   question="The flexible, rod-shaped support structure found in the embryonic stage of every chordate, and in the adult stage of some, is called the ________."
@@ -226,6 +217,15 @@ would make it unlikely that the embryo would fit within the small space it is al
   hint="In most vertebrates, the notochord's remnant becomes the nucleus pulposus that cushions each segment of this jointed structure."
 >}}
 
+{{< selfcheck question="What is the structural advantage of the notochord in the human embryo? Be sure to compare the notochord with the corresponding structure in adults." hint="Weigh what a flexible rod supports against what a rigid, bony one restricts, for a body still folded inside the uterus." >}}
+The notochord is a flexible structure that provides support for the embryo's body and formation of the neural tube. In the adults, the notochord has been replaced by the bony, rigid vertebral column. This loss of flexibility restricts the movement of adult humans, and would make it unlikely that the embryo would fit within the small space it is allotted inside the uterus.
+===CHECKS===
+the notochord is a flexible structure that provides support for the embryo's body and formation of the neural tube
+in the adults, the notochord has been replaced by the bony, rigid vertebral column
+this loss of flexibility restricts the movement of adult humans
+would make it unlikely that the embryo would fit within the small space it is allotted inside the uterus
+{{< /selfcheck >}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 29.1: Chordates](https://openstax.org/books/biology-2e/pages/29-1-chordates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B29_01_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a drawn cladogram, not a photograph) and given a rewritten alt and a longdesc tracing every branch and label in reading order, because the source alt describes a "Craniata" node and a Myxini/Vertebrata split that the actual figure does not draw — the image instead pairs Myxini and Petromyzontida as sister tips under a lineage labeled Vertebrata, with no "Craniata" label anywhere — reported as a source defect; Figure_29_01_05 re-kinded from "photo" to "diagram" (a line illustration, not a photograph); a longdesc added to Figure_29_01_02, Figure_29_01_04, Figure_B29_01_02abc, and Figure_29_01_05, walking each labeled diagram in reading order (Figure_B29_01_02abc's panel (b) prints its own notochord label as "notocord," an artwork typo corrected in the longdesc's wording, not in the image); the note wrapping the chordate-features Visual Connection rendered as its figure followed by a multiple choice, kept in the body, using the four options and key of the module's own visual-exercise item (the note's inline list of the same question in the body prints a fifth option, "The endostyle secretes steroid hormones," that the graded exercise does not carry — the multiple choice keeps the graded exercise's four options rather than inventing a distractor) — reported as a source defect; the "interactive interactive-long" note rendered as a Link to Learning callout; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each self-check given rubric checkpoints decomposing its model answer with no new claims; six key-term recall items (Chordata, post-anal tail, cranium, Craniata, notochord, vertebral column) added from the glossary.</small>
+<small>This section is adapted from [Biology 2e, Section 29.1: Chordates](https://openstax.org/books/biology-2e/pages/29-1-chordates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B29_01_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a drawn cladogram, not a photograph) and given a rewritten alt and a longdesc tracing every branch and label in reading order, because the source alt describes a "Craniata" node and a Myxini/Vertebrata split that the actual figure does not draw — the image instead pairs Myxini and Petromyzontida as sister tips under a lineage labeled Vertebrata, with no "Craniata" label anywhere — reported as a source defect; Figure_29_01_05 re-kinded from "photo" to "diagram" (a line illustration, not a photograph); a longdesc added to Figure_29_01_02, Figure_29_01_04, Figure_B29_01_02abc, and Figure_29_01_05, walking each labeled diagram in reading order (Figure_B29_01_02abc's panel (b) prints its own notochord label as "notocord," an artwork typo corrected in the longdesc's wording, not in the image); the note wrapping the chordate-features Visual Connection rendered as its figure followed by a multiple choice, kept in the body, using the four options and key of the module's own visual-exercise item (the note's inline list of the same question in the body prints a fifth option, "The endostyle secretes steroid hormones," that the graded exercise does not carry — the multiple choice keeps the graded exercise's four options rather than inventing a distractor) — reported as a source defect; the "interactive interactive-long" note rendered as a Link to Learning callout; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each self-check given rubric checkpoints decomposing its model answer with no new claims; six key-term recall items (Chordata, post-anal tail, cranium, Craniata, notochord, vertebral column) added from the glossary; Practice items placed under the objective each tests, so the hagfish Review Question, third in the source, comes before the question on which invertebrates are most closely related to vertebrates; in that hagfish Review Question (`fs-idm71000689`), the distractor "Vertebrates" replaced with "Gnathostomes," because the section's own text names the clade "Craniata/Vertebrata," says it "includes the primitively jawless Myxini (hagfishes)," and says "The name Craniata… is considered to be synonymous with Vertebrata" — leaving the source item with two supportable answers — while the section defines gnathostomes as the animals that possess jaws, which excludes hagfishes and lampreys (reported as a source defect; key unchanged).</small>

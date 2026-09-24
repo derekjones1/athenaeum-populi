@@ -196,7 +196,7 @@ Plants respond to light by changes in morphology and activity. Irradiation by re
 {{< multiplechoice
   question="The main photoreceptor that triggers phototropism is a ________."
   answer="phototropin"
-  hint="Rule out the red/far-red receptor (phytochrome) and the blue receptor that sets circadian rhythm (cryptochrome); a carotenoid is a pigment, not a receptor, in this system."
+  hint="Reread the Blue Light Responses subsection's paragraphs on the receptors behind the phototropic response."
 >}}
 phytochrome
 cryptochrome
@@ -207,7 +207,7 @@ carotenoid
 {{< multiplechoice
   question="Phytochrome is a plant pigment protein that:"
   answer="mediates morphological changes in response to red and far-red light"
-  hint="Phytochrome's two forms interconvert as light quality changes — think about what that switch changes in the plant, not a single fixed effect like uniform growth promotion, inhibition, or infection."
+  hint="Reread the first subsection under Plant Responses to Light and its diagram of phytochrome's two forms."
 >}}
 mediates plant infection
 promotes plant growth
@@ -231,6 +231,7 @@ long periods of illumination with light enriched in the red range of the spectru
 {{< textin
   question="The directional bending of a plant toward a light source is called ________."
   answer="phototropism"
+  accept="positive phototropism"
   hint="It is the positive form of the light-directed growth response; its opposite, growth away from light, is skototropism."
 >}}
 
@@ -271,7 +272,7 @@ the seedling grows towards light to enable photosynthesis
 {{< multiplechoice
   question="After buying green bananas or unripe avocadoes, they can be kept in a brown bag to ripen. The hormone released by the fruit and trapped in the bag is probably:"
   answer="ethylene"
-  hint="This hormone is a volatile gas that speeds fruit ripening — the same one horticulturists vent out of greenhouses to slow it back down."
+  hint="Reread the Growth Responses subsections, looking for the hormone the section associates with fruit ripening."
 >}}
 abscisic acid
 cytokinin
@@ -304,7 +305,7 @@ ventilation removes the ethylene gas that speeds up fruit ripening
 >}}
 
 {{< textin
-  question="The plant hormone that promotes cytokinesis (cell division) is called a ________."
+  question="The plant hormone that promotes cell division is called a ________."
   answer="cytokinin"
   hint="It was first identified through its effect on plant embryos cultured with the liquid endosperm of coconuts."
 >}}
@@ -321,7 +322,7 @@ ventilation removes the ethylene gas that speeds up fruit ripening
 {{< multiplechoice
   question="A seedling germinating under a stone grows at an angle away from the stone and upward. This response to touch is called ________."
   answer="thigmotropism"
-  hint="Rule out gravitropism (that's about gravity, not touch) and skototropism (growth away from light); unlike thigmonasty, this response's direction depends on where the contact happens."
+  hint="Reread Plant Responses to Wind and Touch, and compare the touch responses whose direction depends on the stimulus with those whose direction does not."
 >}}
 gravitropism
 thigmonasty
@@ -330,16 +331,16 @@ skototropism
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A touch response that is independent of the direction of the stimulus is called a ________ response."
-  answer="thigmonastic"
-  accept="thigmonasty"
-  hint="The Venus flytrap's leaves close this way no matter which of several trigger hairs is touched first."
->}}
-
-{{< textin
   question="A slow developmental change in the shape of a plant subjected to continuous mechanical stress is called ________."
   answer="thigmomorphogenesis"
   hint="Trees bending in constant wind develop this response, usually with stunted growth and a thickened trunk."
+>}}
+
+{{< textin
+  question="A touch response that is independent of the direction of the stimulus is called a ________ response."
+  answer="thigmonastic"
+  accept="thigmonasty|thigmonastism"
+  hint="The Venus flytrap's leaves close this way no matter which of several trigger hairs is touched first."
 >}}
 
 ### Explain how plants defend themselves from predators and respond to wounds
@@ -361,7 +362,7 @@ abscisic acid is the stress hormone responsible for inducing closing of stomata
 {{< multiplechoice
   question="Which of the following is described in this section as a plant's first line of defense against herbivores and pathogens?"
   answer="an intact, impenetrable barrier such as bark or a waxy cuticle"
-  hint="This defense doesn't have to activate in response to damage — it's already in place, the way skin protects an animal."
+  hint="Reread the opening paragraph of Defense Responses against Herbivores and Pathogens."
 >}}
 an intact, impenetrable barrier such as bark or a waxy cuticle
 the release of toxic secondary metabolites

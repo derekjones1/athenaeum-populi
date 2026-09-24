@@ -62,7 +62,7 @@ The **optimum oxygen concentration**, as the name implies, is the ideal concentr
 {{< multiplechoice
   question="Would you expect the oldest bacterial lineages to be aerobic or anaerobic?"
   answer="anaerobic"
-  hint="Recall that oxygen levels rose only after cyanobacteria began releasing oxygen by photosynthesis, long after life first appeared."
+  hint="Reread the second paragraph of the section's introduction."
 >}}
 aerobic
 anaerobic
@@ -71,7 +71,7 @@ anaerobic
 {{< multiplechoice
   question="Which bacteria grow at the top of a thioglycolate tube, and which grow at the bottom of the tube?"
   answer="Obligate aerobes grow at the top of the tube; obligate anaerobes grow at the bottom of the tube."
-  hint="Recall which tube (A or B) in the thioglycolate diagram shows all its growth at the top and which shows all its growth at the bottom."
+  hint="Reread the paragraph that walks through tubes A to E of the thioglycolate diagram."
 >}}
 Obligate aerobes grow at the top of the tube; obligate anaerobes grow at the bottom of the tube.
 Obligate anaerobes grow at the top of the tube; obligate aerobes grow at the bottom of the tube.
@@ -122,13 +122,13 @@ Bacteria that grow best in a higher concentration of CO₂ and a lower concentra
   question="What substance is added to a sample to detect catalase?"
   answer="hydrogen peroxide"
   accept="H2O2"
-  hint="Recall the compound a drop of culture is rapidly mixed with in the catalase test, which is also the substrate of Reaction 3."
+  hint="Reread the paragraph after Reaction 3."
 >}}
 
 {{< multiplechoice
   question="What is the function of the candle in a candle jar?"
   answer="It burns and consumes most of the oxygen in the jar while releasing CO₂."
-  hint="Recall what happens to the jar's atmosphere as the lit candle inside it burns with the lid closed."
+  hint="Reread the paragraph on capnophiles, the last before this box."
 >}}
 It burns and consumes most of the oxygen in the jar while releasing CO₂.
 It sterilizes the jar's interior with heat before the cultures are added.
@@ -214,7 +214,7 @@ The organisms are obligate aerobes.
 {{< textin
   question="The lowest concentration of oxygen that still allows an organism to grow is called the ________."
   answer="minimum permissive oxygen concentration"
-  hint="Contrast this term with the maximum permissive oxygen concentration, the highest tolerated concentration."
+  hint="Reread the last paragraph before the first Check Your Understanding box."
 >}}
 
 ### Identify and describe different categories of microbes with requirements for growth with or without oxygen: obligate aerobe, obligate anaerobe, facultative anaerobe, aerotolerant anaerobe, microaerophile, and capnophile
@@ -226,7 +226,7 @@ Four thioglycolate tube cultures, each showing a different pattern of bacterial 
 {{< multiplechoice
   question="Which type of bacteria is growing in tube (a)?"
   answer="obligate anaerobe"
-  hint="Cells clustered at the very bottom of the tube, farthest from the oxygen diffusing in at the top, belong to the organism that is killed by oxygen."
+  hint="Compare tube (a) with the thioglycolate diagram and the paragraph that walks through its tubes."
 >}}
 facultative anaerobe
 obligate anaerobe
@@ -238,7 +238,7 @@ obligate aerobe
 {{< multiplechoice
   question="Which type of bacteria is growing in tube (b)?"
   answer="obligate aerobe"
-  hint="Cells growing right at the tube's opening, where the oxygen concentration is highest, belong to the organism that cannot grow without an abundant supply of oxygen."
+  hint="Compare tube (b) with the thioglycolate diagram and the paragraph that walks through its tubes."
 >}}
 facultative anaerobe
 obligate anaerobe
@@ -250,7 +250,7 @@ obligate aerobe
 {{< multiplechoice
   question="Which type of bacteria is growing in tube (c)?"
   answer="microaerophile"
-  hint="Cells growing in a narrow band just below the surface, avoiding both the fully oxygenated top and the oxygen-free bottom, belong to the organism that needs a low, minimum level of oxygen."
+  hint="Compare tube (c) with the thioglycolate diagram and the paragraph that walks through its tubes."
 >}}
 facultative anaerobe
 obligate anaerobe
@@ -262,7 +262,7 @@ obligate aerobe
 {{< multiplechoice
   question="Which type of bacteria is growing in tube (d)?"
   answer="facultative anaerobe"
-  hint="Cells scattered throughout the tube but denser near the oxygen-rich top belong to the organism that grows better with oxygen but can also grow without it."
+  hint="Compare tube (d) with the thioglycolate diagram and the paragraph that walks through its tubes."
 >}}
 facultative anaerobe
 obligate anaerobe
@@ -276,7 +276,7 @@ obligate aerobe
 {{< multiplechoice
   question="*Pseudomonas aeruginosa* is a common pathogen that infects the airways of patients with cystic fibrosis. It does not grow in the absence of oxygen. The bacterium is probably which of the following?"
   answer="an obligate aerobe"
-  hint="Recall which category of organism cannot grow at all without oxygen."
+  hint="Reread the paragraph that walks through tubes A to E of the thioglycolate diagram."
 >}}
 an aerotolerant anaerobe
 an obligate aerobe
@@ -287,7 +287,7 @@ a facultative anaerobe
 {{< multiplechoice
   question="*Streptococcus mutans* is a major cause of cavities. It resides in the gum pockets, does not have catalase activity, and can be grown outside of an anaerobic chamber. The bacterium is probably which of the following?"
   answer="an aerotolerant anaerobe"
-  hint="Recall which category of organism lacks catalase, does not use oxygen, but is not harmed by its presence and needs no special anaerobic equipment."
+  hint="Reread the paragraph after Reaction 3 and the paragraph that walks through the thioglycolate tubes."
 >}}
 a facultative anaerobe
 an obligate aerobe
@@ -298,7 +298,7 @@ an aerotolerant anaerobe
 {{< multiplechoice
   question="Why do the instructions for the growth of *Neisseria gonorrhoeae* recommend a CO₂-enriched atmosphere?"
   answer="It is a capnophile."
-  hint="Recall the term for an organism that grows best in a higher-than-atmospheric concentration of CO₂."
+  hint="Reread the last paragraph under Detoxification of Reactive Oxygen Species."
 >}}
 It uses CO₂ as a final electron acceptor in respiration.
 It is an obligate anaerobe.
@@ -306,7 +306,7 @@ It is a capnophile.
 It fixes CO₂ through photosynthesis.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="In terms of oxygen requirements, what type of organism would most likely be responsible for a foodborne illness associated with canned foods?" hint="The module never mentions canned foods; recall instead where obligate anaerobes are found in nature and which named genus of obligate anaerobe the module discusses." >}}
+{{< selfcheck question="In terms of oxygen requirements, what type of organism would most likely be responsible for a foodborne illness associated with canned foods?" hint="The answer draws on the first paragraph after the thioglycolate diagram." >}}
 The module does not discuss canned foods, so it does not itself answer which organism causes this kind of foodborne illness; what it gives is the general habitat and identity of obligate anaerobes. Obligate anaerobes are found in the environment where anaerobic conditions exist, such as in deep sediments of soil, still waters, and at the bottom of the deep ocean where there is no photosynthetic life. The gram-positive, rod-shaped *Clostridioides* and *Clostridium* spp. are obligate anaerobes encountered in the human body, and their ability to form endospores allows them to survive in the presence of oxygen.
 ===CHECKS===
 Obligate anaerobes are found in the environment where anaerobic conditions exist
@@ -315,7 +315,7 @@ the gram-positive, rod-shaped Clostridioides and Clostridium spp. are obligate a
 their ability to form endospores allows them to survive in the presence of oxygen
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why are some obligate anaerobes able to grow in tissues (e.g., gum pockets) that are not completely free of oxygen?" hint="Recall what happens locally, in a mixed infection, when a facultative anaerobe growing alongside an obligate anaerobe consumes the oxygen present." >}}
+{{< selfcheck question="Why are some obligate anaerobes able to grow in tissues (e.g., gum pockets) that are not completely free of oxygen?" hint="Reread the paragraph on staphylococci and Enterobacteriaceae." >}}
 It is not unusual to see mixed bacterial infections in which the facultative anaerobes use up the oxygen, creating an environment for the obligate anaerobes to flourish. In a tissue niche such as a gum pocket, the facultative anaerobes sharing that space can consume the oxygen that is present, producing a locally anaerobic pocket in which the obligate anaerobes can then grow even though the tissue as a whole is not completely free of oxygen.
 ===CHECKS===
 facultative anaerobes use up the oxygen, creating an environment for the obligate anaerobes to flourish
@@ -323,7 +323,7 @@ facultative anaerobes sharing that space can consume the oxygen that is present
 producing a locally anaerobic pocket in which the obligate anaerobes can then grow
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why should *Haemophilus influenzae* be grown in a candle jar?" hint="Recall what a candle jar's burning candle does to the oxygen and CO₂ levels inside it, and which category of organism needs that atmosphere." >}}
+{{< selfcheck question="Why should *Haemophilus influenzae* be grown in a candle jar?" hint="Reread the last paragraph under Detoxification of Reactive Oxygen Species." >}}
 The module does not name *Haemophilus influenzae*'s own growth requirements; it establishes only the general reason a candle jar is used. A candle jar consists of a jar with a tight-fitting lid that can accommodate cultures and a candle; as the candle burns, it consumes most of the oxygen present and releases CO₂, producing a higher-CO₂, lower-oxygen atmosphere than found in air — the atmosphere that capnophiles, organisms that grow best in a higher-than-atmospheric CO₂ concentration, need to grow.
 ===CHECKS===
 as the candle burns, it consumes most of the oxygen present and releases CO₂
@@ -331,7 +331,7 @@ producing a higher-CO₂, lower-oxygen atmosphere than found in air
 capnophiles ... grow best in a higher-than-atmospheric CO₂ concentration
 {{< /selfcheck >}}
 
-{{< selfcheck question="A microbiology instructor prepares cultures for a gram-staining practical laboratory by inoculating growth medium with a gram-positive coccus (nonmotile) and a gram-negative rod (motile). The goal is to demonstrate staining of a mixed culture. The flask is incubated at 35 °C for 24 hours without aeration. A sample is stained and reveals only gram-negative rods. Both cultures are known facultative anaerobes. Give a likely reason for success of the gram-negative rod. Assume that the cultures have comparable intrinsic growth rates." hint="Both organisms are facultative anaerobes with comparable growth rates, so the difference the stem specifies — motility — is the variable left to explain the outcome." >}}
+{{< selfcheck question="A microbiology instructor prepares cultures for a gram-staining practical laboratory by inoculating growth medium with a gram-positive coccus (nonmotile) and a gram-negative rod (motile). The goal is to demonstrate staining of a mixed culture. The flask is incubated at 35 °C for 24 hours without aeration. A sample is stained and reveals only gram-negative rods. Both cultures are known facultative anaerobes. Give a likely reason for success of the gram-negative rod. Assume that the cultures have comparable intrinsic growth rates." hint="The answer draws on the paragraph that walks through the thioglycolate tubes and the details the question gives." >}}
 Facultative anaerobes thrive in the presence of oxygen but also grow in its absence. Because the flask was incubated without aeration, oxygen would have been present, if at all, only in whatever small amount remained undepleted, such as near the surface of the medium. The gram-negative rod is motile, so it could move through the medium toward any such residual pockets of oxygen, while the nonmotile gram-positive coccus was confined to wherever it was inoculated and could not relocate to more favorable conditions — a likely advantage for the rod even though the two organisms have comparable intrinsic growth rates.
 ===CHECKS===
 Facultative anaerobes thrive in the presence of oxygen but also grow in its absence

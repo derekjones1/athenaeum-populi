@@ -214,7 +214,7 @@ Most respiratory mycoses are caused by fungi that inhabit the environment. Such 
 {{< multiplechoice
   question="Which of these infections is also referred to as Valley fever?"
   answer="coccidioidomycosis"
-  hint="Recall which fungus is endemic to California's San Joaquin Valley."
+  hint="See the first paragraph of the section's second subsection."
 >}}
 histoplasmosis
 coccidioidomycosis
@@ -225,7 +225,7 @@ aspergillosis
 {{< multiplechoice
   question="Which of the following is not caused by a dimorphic fungus?"
   answer="aspergillosis"
-  hint="Three of these four causative fungi are explicitly called dimorphic in the text; one is described only as a mold."
+  hint="Check how each subsection first describes its causative fungus."
 >}}
 histoplasmosis
 coccidioidomycosis
@@ -236,7 +236,7 @@ aspergillosis
 {{< multiplechoice
   question="Which of the following is caused by infections by bread molds?"
   answer="mucormycosis"
-  hint="Recall which disease is linked to fungi such as Rhizopus and Mucor."
+  hint="See the first paragraph of the subsection that follows Blastomycosis."
 >}}
 mucormycosis
 coccidioidomycosis
@@ -244,22 +244,22 @@ cryptococcosis
 *Pneumocystis* pneumonia
 {{< /multiplechoice >}}
 
-{{< textin question="Coccidioidomycosis may develop when *Coccidioides immitis* ________ are inhaled." answer="arthrospores" hint="These are spores formed when the fungus's hyphae break apart." >}}
+{{< textin question="Coccidioidomycosis may develop when *Coccidioides immitis* ________ are inhaled." answer="arthrospores" hint="See the second paragraph of the Coccidioidomycosis subsection." >}}
 
-{{< textin question="In some mycoses, fungal balls called ________ form in the lungs." answer="aspergillomas" hint="This term names the fungal ball itself, formed when hyphal colonies collect in the lungs." >}}
+{{< textin question="In some mycoses, fungal balls called ________ form in the lungs." answer="aspergillomas" accept="aspergillomata" hint="This term names the fungal ball itself, formed when hyphal colonies collect in the lungs." >}}
 
 ### Compare the major characteristics of specific fungal diseases of the respiratory tract
 
-{{< textin question="Most US cases of coccidioidomycosis occur in ________." answer="the desert southwest" accept="the southwestern United States|the Southwest" hint="Recall the semi-arid and arid region of the US, beyond California's own Valley-fever region, where the related species is found." >}}
+{{< textin question="Most US cases of coccidioidomycosis occur in ________." answer="the desert southwest" accept="the southwestern United States|the Southwest|southwestern US|southwestern U.S." hint="Recall the semi-arid and arid region of the US, beyond California's own Valley-fever region, where the related species is found." >}}
 
 {{< textin question="In coccidioidomycosis, ________ containing many endospores form in the lungs." answer="spherules" hint="This is the structure the fungus differentiates into once inside the body, filled with its infectious offspring cells." >}}
 
-{{< textin question="In cryptococcosis, the main fungal virulence factor is the ________, which helps the pathogen avoid phagocytosis." answer="capsule" hint="This structure surrounds the yeast cell and is visualized with India ink preparations." >}}
+{{< textin question="In cryptococcosis, the main fungal virulence factor is the ________, which helps the pathogen avoid phagocytosis." answer="capsule" accept="polysaccharide capsule" hint="See the first paragraph of the Cryptococcosis subsection." >}}
 
 {{< multiplechoice
   question="In the United States, most histoplasmosis cases occur"
   answer="in the Mississippi river valley."
-  hint="Recall which US region is named for this fungus's environmental reservoir."
+  hint="See the first sentence of the Histoplasmosis subsection."
 >}}
 in the Pacific northwest.
 in the desert southwest.

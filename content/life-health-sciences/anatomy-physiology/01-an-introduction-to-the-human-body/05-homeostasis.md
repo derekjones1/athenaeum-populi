@@ -19,15 +19,15 @@ Maintaining homeostasis requires that the body continuously monitor its internal
 
 ## Negative Feedback
 
-A negative feedback system has three basic components (**a**). A **sensor**, also referred to a receptor, is a component of a feedback system that monitors a physiological value. This value is reported to the control center. The **control center** is the component in a feedback system that compares the value to the normal range. If the value deviates too much from the set point, then the control center activates an effector. An **effector** is the component in a feedback system that causes a change to reverse the situation and return the value to the normal range.
+A negative feedback system has three basic components (see the figure below, panel a). A **sensor**, also referred to a receptor, is a component of a feedback system that monitors a physiological value. This value is reported to the control center. The **control center** is the component in a feedback system that compares the value to the normal range. If the value deviates too much from the set point, then the control center activates an effector. An **effector** is the component in a feedback system that causes a change to reverse the situation and return the value to the normal range.
 
-{{< mediafigure src="anatomy-physiology/105_Negative_Feedback_Loops" kind="diagram" eager="true" alt="Two flow charts labeled (a) and (b). Chart (a) shows the general negative feedback loop: stimulus, sensor, control center, effector, response — which feeds back to inhibit the stimulus. Chart (b) applies the loop to body temperature regulation, from body temperature exceeding 37 °C (98.6 °F) to increased heat loss." longdesc="Chart (a), the general negative feedback loop, five boxes connected top to bottom by red arrows, with a red arrow returning from the bottom box to the top: Stimulus, then Sensor, then Control Center, then Effector, then Response, and the Response arrow loops back up the left side to inhibit the Stimulus box. Chart (b), the same five-step loop applied to body temperature: Body temperature exceeds 37 °C, then Nerve cells in skin and brain, then Temperature regulatory center in brain, then Sweat glands throughout body, then Increased heat loss, with the same feedback arrow looping back to inhibit the rising body temperature." >}}
+{{< mediafigure src="anatomy-physiology/105_Negative_Feedback_Loops" kind="diagram" eager="true" alt="Two flow charts labeled (a) and (b). Chart (a) shows the general negative feedback loop: stimulus, sensor, control center, effector, response — which feeds back to inhibit the stimulus. Chart (b) applies the loop to body temperature regulation, from body temperature exceeding 37 °C to increased heat loss." longdesc="Chart (a), the general negative feedback loop, five boxes connected top to bottom by red arrows, with a red arrow returning from the bottom box to the top: Stimulus, then Sensor, then Control Center, then Effector, then Response, and the Response arrow loops back up the left side to inhibit the Stimulus box. Chart (b), the same five-step loop applied to body temperature: Body temperature exceeds 37 °C, then Nerve cells in skin and brain, then Temperature regulatory center in brain, then Sweat glands throughout body, then Increased heat loss, with the same feedback arrow looping back to inhibit the rising body temperature." >}}
 In a negative feedback system, a stimulus—a deviation from a set point—is resisted through a physiological process that returns the body to homeostasis. (a) A negative feedback system has five basic steps. (b) Body temperature is regulated by negative feedback.
 {{< /mediafigure >}}
 
 In order to set the system in motion, a stimulus must drive a physiological parameter beyond its normal range (that is, beyond homeostasis). This stimulus is "heard" by a specific sensor. For example, in the control of blood glucose, specific endocrine cells in the pancreas detect excess glucose (the stimulus) in the bloodstream. These pancreatic beta cells respond to the increased level of blood glucose by releasing the hormone insulin into the bloodstream. The insulin signals skeletal muscle fibers, fat cells (adipocytes), and liver cells to take up the excess glucose, removing it from the bloodstream. As glucose concentration in the bloodstream drops, the decrease in concentration—the actual negative feedback—is detected by the pancreatic beta cells, which reduce their insulin release, while the pancreatic alpha cells respond by releasing glucagon, the hormone that raises blood glucose. *(Source note: the source prints "is detected by pancreatic alpha cells, and insulin release stops"; the book's own endocrine and metabolism chapters, Sections 17.9 and 24.5, describe beta cells reducing insulin secretion as glucose falls and alpha cells releasing glucagon in response, and the sentence is corrected to that mechanism.)* This prevents blood sugar levels from continuing to drop below the normal range.
 
-Humans have a similar temperature regulation feedback system that works by promoting either heat loss or heat gain (**b**). When the brain's temperature regulation center receives data from the sensors indicating that the body's temperature exceeds its normal range, it stimulates a cluster of brain cells referred to as the "heat-loss center." This stimulation has three major effects:
+Humans have a similar temperature regulation feedback system that works by promoting either heat loss or heat gain (panel b). When the brain's temperature regulation center receives data from the sensors indicating that the body's temperature exceeds its normal range, it stimulates a cluster of brain cells referred to as the "heat-loss center." This stimulation has three major effects:
 
 - Blood vessels in the skin begin to dilate allowing more blood from the body core to flow to the surface of the skin allowing the heat to radiate into the environment.
 - As blood flow to the skin increases, sweat glands are activated to increase their output. As the sweat evaporates from the skin surface into the surrounding air, it takes heat with it.
@@ -76,7 +76,7 @@ A second example of positive feedback centers on reversing extreme damage to the
 {{< multiplechoice
   question="After you eat lunch, nerve cells in your stomach respond to the distension (the stimulus) resulting from the food. They relay this information to ________."
   answer="a control center"
-  hint="The nerve cells here detect and report the change — where does that report go next?"
+  hint="Place the stomach's nerve cells in chart (a) of the negative feedback figure, then follow the arrow to the next box."
 >}}
 a control center
 a set point
@@ -85,14 +85,15 @@ sensors
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The restricted set of values around that ideal value that is optimally healthful and stable is called the ________."
+  question="The restricted set of values that is optimally healthful and stable for a physiological parameter is called the ________."
   answer="normal range"
-  hint="This is the acceptable band of fluctuation, not the fixed target value itself."
+  hint="Reread the definitions in the paragraph that opens this section."
 >}}
 
 {{< textin
   question="The physiological value around which the body's normal range fluctuates is called the ________."
   answer="set point"
+  accept="setpoint"
   hint="Body temperature's version of this value is approximately 37 °C (98.6 °F)."
 >}}
 
@@ -108,7 +109,7 @@ sensors
 {{< multiplechoice
   question="Stimulation of the heat-loss center causes ________."
   answer="sweat glands to increase their output"
-  hint="Heat loss works by radiating and evaporating heat away from the skin — which listed effect does that?"
+  hint="Reread the three bulleted effects of stimulating the heat-loss center, and test each option against them."
 >}}
 blood vessels in the skin to constrict
 breathing to become slow and shallow
@@ -119,7 +120,7 @@ All of the above
 {{< multiplechoice
   question="Which of the following is an example of a normal physiologic process that uses a positive feedback loop?"
   answer="childbirth"
-  hint="Three of these four keep a value within its normal range by reversing a deviation; the fourth intensifies a change until a single, definite endpoint is reached."
+  hint="Reread the opening paragraph of the Positive Feedback subsection."
 >}}
 blood pressure regulation
 childbirth
@@ -127,7 +128,7 @@ regulation of fluid balance
 temperature regulation
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Identify the four components of a negative feedback loop and explain what would happen if secretion of a body chemical controlled by a negative feedback system became too great." hint="Trace the loop from where the change is first detected through to what causes the actual response." >}}
+{{< selfcheck question="Identify the four components of a negative feedback loop and explain what would happen if secretion of a body chemical controlled by a negative feedback system became too great." hint="Use chart (a) of the negative feedback figure." >}}
 The four components of a negative feedback loop are: stimulus, sensor, control center, and effector. If too great a quantity of the chemical were excreted, sensors would activate a control center, which would in turn activate an effector. In this case, the effector (the secreting cells) would be adjusted downward.
 ===CHECKS===
 the four components of a negative feedback loop are stimulus, sensor, control center, and effector
@@ -136,7 +137,7 @@ the control center would in turn activate an effector
 the effector (the secreting cells) would be adjusted downward
 {{< /selfcheck >}}
 
-{{< selfcheck question="What regulatory processes would your body use if you were trapped by a blizzard in an unheated, uninsulated cabin in the woods?" hint="Think about the brain's heat-gain center, and what shivering and hormone release do to heat production." >}}
+{{< selfcheck question="What regulatory processes would your body use if you were trapped by a blizzard in an unheated, uninsulated cabin in the woods?" hint="Reread the Negative Feedback subsection's paragraph on the body's response to cold." >}}
 Any prolonged exposure to extreme cold would activate the brain's heat-gain center. This would reduce blood flow to your skin, and shunt blood returning from your limbs away from the digits and into a network of deep veins. Your brain's heat-gain center would also increase your muscle contraction, causing you to shiver. This increases the energy consumption of skeletal muscle and generates more heat. Your body would also produce thyroid hormone and epinephrine, chemicals that promote increased metabolism and heat production.
 ===CHECKS===
 prolonged exposure to extreme cold would activate the brain's heat-gain center
@@ -147,23 +148,11 @@ your body would also produce thyroid hormone and epinephrine, chemicals that pro
 {{< /selfcheck >}}
 
 {{< textin
-  question="A homeostatic mechanism that reverses a deviation from the set point, preventing an excessive response to a stimulus, is called ________."
-  answer="negative feedback"
-  hint="This is the more common of the two feedback types, in near-constant use throughout the body."
->}}
-
-{{< textin
-  question="A mechanism that intensifies a change in the body's physiological condition, moving it farther from the normal range until a definite end point is reached, is called ________."
-  answer="positive feedback"
-  hint="This type is normal in the body only when it has a clear stopping point, such as birth or blood clotting."
->}}
-
-{{< textin
   question="The feedback-system component that causes a change to reverse a deviation and return a value to the normal range is called the ________."
   answer="effector"
-  hint="In the blood-glucose example, this is the pancreatic cells that respond by releasing insulin — the last step before the response itself."
+  hint="Reread the Negative Feedback subsection's paragraph on the three basic components of a feedback system."
 >}}
 
 ---
 
-<small>This section is adapted from [Anatomy and Physiology 2e, Section 1.5: Homeostasis](https://openstax.org/books/anatomy-and-physiology-2e/pages/1-5-homeostasis) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: a missing period after "98.6 °F)" in the opening paragraph restored; figures re-encoded as WebP; both figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" — 105_Negative_Feedback_Loops and 106_Pregnancy-Positive_Feedback are flow-chart drawings, not photographs; both figures' alt text rewritten from the image (the source alt for 105_Negative_Feedback_Loops spelled out "37 degrees Celsius" where this page uses the house notation "37 °C (98.6 °F)"), with a longdesc added to each walking its steps in reading order; the bare cross-reference to the childbirth figure ("(<i>link with no text</i>)") replaced with "illustrated below"; the Link to Learning's bare "video" link text replaced with descriptive link text naming the destination, its URL kept; the Interactive Link Question's callout keeps its question as a plain sentence, but the item is not rendered as a graded exercise — the module never prints which organ controls water levels, only the exercise's own answer key does, so the question stands as a prompt only and is not counted toward the Practice floor; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and six key-term recall items (set point, normal range, sensor, negative feedback, positive feedback, effector) added from the glossary to round out each objective's group; the insulin-feedback sentence corrected with a visible Source note (the source attributes the detection of falling glucose and the stopping of insulin release to alpha cells; the book's own Sections 17.9 and 24.5 assign the insulin response to beta cells and glucagon release to alpha cells); the sensor recall item's `accept` list corrected to include "receptor" (the module's own synonym for sensor; the grader otherwise rejects it) and its hint reworded to drop that name now that it is a graded accept member; the first Objective 1 Practice items reordered (the normal-range and set-point recall items swapped) so the multiple-choice question's own distractors — "a set point" and "sensors" — no longer sit directly above the recall items they would key; two further hints (the positive-feedback multiple choice, the four-components self-check) reworded to describe a role rather than name a sibling recall item's key term.</small>
+<small>This section is adapted from [Anatomy and Physiology 2e, Section 1.5: Homeostasis](https://openstax.org/books/anatomy-and-physiology-2e/pages/1-5-homeostasis) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: a missing period after "98.6 °F)" in the opening paragraph restored; figures re-encoded as WebP; both figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" — 105_Negative_Feedback_Loops and 106_Pregnancy-Positive_Feedback are flow-chart drawings, not photographs; both figures' alt text rewritten from the image (the source alt for 105_Negative_Feedback_Loops spelled out "37 degrees Celsius" where this page uses the house notation "37 °C", the value the artwork prints), with a longdesc added to each walking its steps in reading order; the bare cross-reference to the childbirth figure ("(<i>link with no text</i>)") replaced with "illustrated below", and the two panel references to the negative feedback figure (the figure number followed by a bold "a" or "b") replaced with "(see the figure below, panel a)" and "(panel b)"; the Link to Learning's bare "video" link text replaced with descriptive link text naming the destination, its URL kept; the Interactive Link Question's callout keeps its question as a plain sentence, but the item is not rendered as a graded exercise — the module never prints which organ controls water levels, only the exercise's own answer key does, so the question stands as a prompt only and is not counted toward the Practice floor; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and four key-term recall items (set point, normal range, sensor, effector) added from the glossary to round out each objective's group; negative feedback and positive feedback are headline terms and not recall items, because the second objective's heading, the childbirth multiple choice, and the four-components self-check necessarily print them, so a recall key would be leaked by its siblings; the insulin-feedback sentence corrected with a visible Source note (the source attributes the detection of falling glucose and the stopping of insulin release to alpha cells; the book's own Sections 17.9 and 24.5 assign the insulin response to beta cells and glucagon release to alpha cells); the sensor recall item's `accept` list corrected to include "receptor" (the module's own synonym for sensor; the grader otherwise rejects it) and its hint reworded to drop that name now that it is a graded accept member; the first Objective 1 Practice items reordered (the normal-range and set-point recall items swapped) so the multiple-choice question's own distractors — "a set point" and "sensors" — no longer sit directly above the recall items they would key; two further hints (the positive-feedback multiple choice, the four-components self-check) reworded to describe a role rather than name a sibling recall item's key term.</small>

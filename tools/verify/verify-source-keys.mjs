@@ -108,7 +108,7 @@ import {
 import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
 import { parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
-import { pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
+import { foldedForms } from '../../assets/js/lib/text/check-text.mjs';
 
 /** A page question must share this much of a source problem's vocabulary to
  * count as a transcription of it; below this it is an author-written item. */
@@ -204,7 +204,7 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     exercise: 'fs-id1172097276615',
     kind: 'options',
     erratum: 373,
-    reason: 'the source distractor "They are always anaerobes." is true by the module\'s own Art Connection caption (methanogens among "obligate anaerobic" organisms in an oxygen-free rumen), so the item was double-keyed; the page replaces that option with a false bacteriorhodopsin statement (key unchanged)',
+    reason: 'the source distractor "They are always anaerobes." is true by the module\'s own Art Connection caption (methanogens among "obligate anaerobic" organisms in an oxygen-free rumen), so the item was double-keyed; the page replaces that option with "They oxidize sulfur to produce sulfuric acid.", which the module prints of Sulfolobus, a crenarchaeote, not of the methanogens (key unchanged)',
   },
   {
     page: 'content/life-health-sciences/microbiology/04-prokaryotic-diversity/04-gram-positive-bacteria.md',
@@ -520,6 +520,96 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     kind: 'options',
     erratum: 798,
     reason: 'source distractor "Entameba histolyticum" misspells both genus and epithet; the page prints "Entamoeba histolytica" (one-word typo rule); option order and key unchanged.',
+  },  {
+    page: 'content/life-health-sciences/biology/04-cell-structure/03-eukaryotic-cells.md',
+    exercise: 'fs-id1419640',
+    kind: 'solution',
+    erratum: 901,
+    reason: 'the model answer keeps the source solution verbatim but appends a Source note correcting the question\'s premise that red blood cells are ribosome-rich (mature erythrocytes have no organelles, Section 40.2); the note lowers the solution-word coverage below the floor',
+  },
+  {
+    page: 'content/life-health-sciences/biology/07-cellular-respiration/04-oxidative-phosphorylation.md',
+    exercise: 'fs-idp50822512',
+    kind: 'solution',
+    erratum: 910,
+    reason: 'the source solution says the chain "can no longer pump electrons into the intermembrane space", but the module\'s own caption says protons are pumped there; the page\'s model answer says "pump protons (hydrogen ions)" and adds a Source note',
+  },
+  {
+    page: 'content/life-health-sciences/biology/10-cell-reproduction/04-cancer-and-the-cell-cycle.md',
+    exercise: 'fs-idp23568448',
+    kind: 'options',
+    erratum: 918,
+    reason: 'the source option "E6 inactivates p53" is also true of the keyed "E6 binding marks p53 for degradation", so the item was double-keyed; the page prints "E6 binding causes p53 to trigger apoptosis" in its place (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/14-dna-structure-and-function/01-historical-basis-of-modern-understanding.md',
+    exercise: 'eip-758',
+    kind: 'options',
+    erratum: 922,
+    reason: 'the source option "Bacteriophages could spread DNA encoding toxins to new bacteria" describes transduction, which the book\'s Section 22.2 separates from transformation, so the keyed "All of the above" was wrong as printed; the page prints "Bacteria could take up DNA encoding toxins that other bacteria shed into their environment" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/14-dna-structure-and-function/06-dna-repair.md',
+    exercise: 'fs-id2008893',
+    kind: 'solution',
+    erratum: 923,
+    reason: 'the source solution cites xeroderma pigmentosa as a mismatch-repair failure, but the same module attributes it to defective nucleotide excision repair enzymes; the page\'s model answer drops the example and adds a Source note',
+  },
+  {
+    page: 'content/life-health-sciences/biology/16-gene-expression/04-eukaryotic-transcription-gene-regulation.md',
+    exercise: 'fs-id1808039',
+    kind: 'options',
+    erratum: 924,
+    reason: 'the source options "a transcription factor" (required by the module\'s own opening paragraph and Summary) and "a protein" (true of RNA polymerase itself) made the item double-keyed; the page prints "a repressor" and "mRNA" in their place (key "RNA polymerase" unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/03-prokaryotic-metabolism.md',
+    exercise: 'eip-113',
+    kind: 'options',
+    erratum: 928,
+    reason: 'the source distractor "photoautotrophs" is true by the module\'s own definition (photoautotrophs use sunlight and carbon dioxide; phototrophs that "do not fix carbon" are "not photosynthetic"), so the cyanobacteria item was double-keyed; the page replaces that option with "photoheterotrophs" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/28-invertebrates/06-superphylum-ecdysozoa-arthropods.md',
+    exercise: 'fs-idp45105856',
+    kind: 'options',
+    erratum: 933,
+    reason: 'the source option "Insects have both dorsal and ventral blood vessels." is also false by the module (only "the tubular dorsal blood vessel"; the figure\'s alt: "a dorsal blood vessel that has multiple hearts along its length"), so the "which is false" item was double-keyed; the page prints "Insects have a dorsal blood vessel with multiple hearts along its length." (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/29-vertebrates/01-chordates.md',
+    exercise: 'fs-idm71000689',
+    kind: 'options',
+    erratum: 934,
+    reason: 'the source distractor "Vertebrates" is true by the module\'s own "Craniata/Vertebrata" clade that "includes the primitively jawless Myxini (hagfishes)" and its Summary\'s "Craniata… is considered to be synonymous with Vertebrata", so the hagfish item was double-keyed; the page replaces that option with "Gnathostomes" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/45-population-and-community-ecology/04-population-dynamics-and-regulation.md',
+    exercise: 'eip-720',
+    kind: 'key',
+    erratum: 948,
+    reason: 'source keys "snow in winter" as the event that would not lower Yellowstone\'s grey wolf carrying capacity, but the module\'s own text says winter carrying capacity "is much lower than it is during the summer," names cold winter weather and forest fire as density-independent mortality and disease as density-dependent; the page keys "a beaver damming a river upstream," the one option the module does not tie to lower carrying capacity',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/02-parasitic-helminths.md',
+    exercise: 'fs-id1172102097375',
+    kind: 'options',
+    erratum: 963,
+    reason: 'the source distractors "fluke" and "trematode" are true by the module\'s own sentence that "the flukes (trematodes) are nonsegmented flatworms that ... attach to the inner walls of intestines", so the item was double-keyed; the page replaces them with "cestode" and "tapeworm" (key "nematode" unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/06-how-asexual-prokaryotes-achieve-genetic-diversity.md',
+    exercise: 'fs-id1167663637654',
+    kind: 'options',
+    erratum: 973,
+    reason: 'the source distractor "transformation" is true by the module\'s own sentence that "bacterial transformation is an important mechanism for the acquisition of genetic elements encoding virulence factors and antibiotic resistance", so the item was double-keyed; the page replaces that option with "vertical gene transfer" (key "conjugation" unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/24-digestive-system-infections/01-anatomy-and-normal-microbiota-of-the-digestive-system.md',
+    exercise: 'fs-id1167663737442',
+    kind: 'options',
+    erratum: 980,
+    reason: 'the source distractors "It produces acids that lower the pH of the stomach." and "It speeds up the process by which microbes are flushed from the digestive tract." are also NOT ways by the module (it credits the microbiota only with competitive exclusion and bacteriocins, stomach acid to the stomach, and flushing to the constant movement of materials), so the item had three keys; the page replaces the first with the module\'s bacteriocin sentence ("It secretes protein toxins that bind to specific receptors on the surface of susceptible bacteria.") and drops the second (three options; key D unchanged)',
   },
 ]);
 
@@ -880,6 +970,14 @@ export function judgeTextin(item, source) {
   // reading and the blind solve.)
   if (source.summary.includes(` ${normalizeText(item.answer)} `)) return { status: 'summary' };
   if (source.text.includes(` ${normalizeText(item.answer)} `)) return { status: 'body' };
+  // The grader folds a regular plural both ways, so a key the module prints
+  // only in its other number is still printed ("clone" against "clones").
+  // The fold also bridges markup that splits a plural: textContent joins
+  // child nodes with a space, so "<term>plasmid</term>s" reads "plasmid s",
+  // and the key "plasmids" is found as its folded "plasmid".
+  for (const form of foldedForms(normalizeText(item.answer))) {
+    if (source.text.includes(` ${form} `)) return { status: 'body' };
+  }
   return { status: 'unsourced', detail: `${JSON.stringify(item.answer)} is not a glossary term, a bolded term, or a phrase the module prints` };
 }
 
@@ -891,9 +989,9 @@ export function judgeTextin(item, source) {
  * body-print gate (`unprintableFillInTheBlank`) and by
  * `tools/verify/measure-body-keys.mjs`'s corpus measurement.
  *
- * A form is "printed" when, after the runtime grader's own plural fold
- * (`pluralFolds`, assets/js/lib/text/check-text.mjs — a trailing "s"/"es"
- * only):
+ * A form is "printed" when, after the runtime grader's own two-way plural
+ * fold (`foldedForms`, assets/js/lib/text/check-text.mjs — a trailing
+ * "s"/"es" added, or stripped from a regular-plural-shaped last word):
  *   - the compact key or an accept alternate is a substring of the compact
  *     body ("LD50" against a body that prints "LD<sub>50</sub>", which text
  *     extraction renders "LD 50" — compact strips the space either way);
@@ -915,7 +1013,7 @@ export function keyPrintedInBody(answer, accept, source) {
   for (const candidate of candidates) {
     const normalized = normalizeText(candidate);
     if (!normalized) continue;
-    for (const form of [normalized, ...pluralFolds(normalized)]) {
+    for (const form of [normalized, ...foldedForms(normalized)]) {
       if (bodyCompact.includes(compact(form))) return true;
     }
   }
@@ -966,11 +1064,19 @@ export function unprintableFillInTheBlank(item, source) {
  * not exercises at all — bulleted items inside a <note> — so readModule never
  * sees them and their self-checks report 'unmatched'.)
  */
+const OPEN_ANSWER_RE = /^(?:the )?(?:answers?|responses?) (?:is open|are open|will vary)(?: and will vary)?\.?$/i;
+
 export function judgeSelfcheck(item, source) {
   if (isCheckQuestion(item.question, source)) return { status: 'unmatched' };
   const exercise = bestExercise(item.question, source.exercises);
   if (!exercise) return { status: 'unmatched' };
   if (!normalizeWhitespace(exercise.solution)) return { status: 'unkeyed', exercise };
+  // "Answer is open and will vary." keys nothing: the page's model answer
+  // must add checkable criteria (Biology 21.2), which no overlap with the
+  // source's one sentence can measure. A solution that goes on to give a
+  // sample answer ("Responses will vary. A possible answer is …") is still
+  // compared.
+  if (OPEN_ANSWER_RE.test(normalizeWhitespace(exercise.solution))) return { status: 'unkeyed', exercise };
   const coverage = phraseCoverage(item.model, exercise.solution);
   if (coverage >= 0.95) return { status: 'verbatim', exercise, coverage };
   if (coverage >= MODEL_COVERAGE_FLOOR) return { status: 'reworded', exercise, coverage };
@@ -1005,7 +1111,11 @@ export function judgeSortbins(item, source) {
     if (table.header.length < 2 || !table.rows.length) continue;
     const columns = item.bins.map((bin) => {
       let top = null;
-      for (let column = 1; column < table.header.length; column += 1) {
+      // Column 0 is usually the row-label column, but a table with no label
+      // column (tab-ch12-02-01) keys its first bin there, so it is scanned
+      // too; the distinct-anchor rule below still rejects a label column
+      // that happens to resemble a bin.
+      for (let column = 0; column < table.header.length; column += 1) {
         const score = tokenSimilarity(bin, table.header[column]);
         if (!top || score > top.score) top = { score, column };
       }
@@ -1039,7 +1149,9 @@ export function judgeSortbins(item, source) {
   const coverageFor = (entry, bin) => {
     if (match.columns) {
       return Math.max(0, ...table.rows.map(
-        (row) => phraseCoverage(entry.label, `${row[0] || ''} ${row[match.columns[bin]] || ''}`),
+        (row) => phraseCoverage(entry.label, match.columns[bin] === 0
+          ? row[0] || ''
+          : `${row[0] || ''} ${row[match.columns[bin]] || ''}`),
       ));
     }
     const row = table.rows[match.rows[bin]] || [];

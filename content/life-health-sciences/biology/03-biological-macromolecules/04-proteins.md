@@ -54,7 +54,7 @@ Scientists use the name "amino acid" because these acids contain both amino grou
 There are 20 common amino acids commonly found in proteins, each with a different R group (variant group) that determines its chemical nature.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Which categories of amino acid would you expect to find on the surface of a soluble protein, and which would you expect to find in the interior? What distribution of amino acids would you expect to find in a protein embedded in a lipid bilayer?" hint="Think about which side chains are hydrophilic and which are hydrophobic, and which environment — water, or a membrane's fatty interior — each would prefer to face." >}}
+{{< selfcheck question="Which categories of amino acid would you expect to find on the surface of a soluble protein, and which would you expect to find in the interior? What distribution of amino acids would you expect to find in a protein embedded in a lipid bilayer?" hint="Use the figure's side-chain categories, then reread the Tertiary Structure paragraph on R groups and the phospholipid bilayer in the Lipids section." >}}
 Polar and charged amino acid residues (the remainder after peptide bond formation) are more likely to be found on the surface of soluble proteins where they can interact with water, and nonpolar amino acid side chains are more likely to be found in the interior where they are sequestered from water. In membrane proteins, nonpolar and hydrophobic amino acid side chains associate with the hydrophobic tails of phospholipids, while polar and charged amino acid side chains interact with the polar head groups or with the aqueous solution. However, there are exceptions. Sometimes, positively and negatively charged amino acid side chains interact with one another in the interior of a protein, and polar or charged amino acid side chains that interact with a ligand can be found in the ligand binding pocket.
 ===CHECKS===
 polar and charged amino acid residues are more likely to be found on the surface of soluble proteins where they can interact with water
@@ -95,13 +95,13 @@ As we discussed earlier, a protein's shape is critical to its function. For exam
 
 Amino acids' unique sequence in a polypeptide chain is its **primary structure**. For example, the pancreatic hormone insulin has two polypeptide chains, A and B, and they are linked together by disulfide bonds. The N terminal amino acid of the A chain is glycine; whereas, the C terminal amino acid is asparagine (below). The amino acid sequences in the A and B chains are unique to insulin.
 
-{{< mediafigure src="biology/Figure_03_04_04" kind="diagram" alt="The amino acid sequences for the A chain and B chain of bovine insulin. The A chain is 21 amino acids in length, and the B chain is 30 amino acids in length. One disulfide, or S-S, bond connects two cysteine residues in the A chain. Two other disulfide linkages connect the A chain to the B chain." longdesc="Two horizontal rows of amino-acid circles, each labeled with its three-letter code. The A chain (top, 21 residues) begins with glycine and ends with asparagine. The B chain (bottom, 30 residues) begins with phenylalanine and curls into a short second row ending in alanine. Three disulfide (S-S) bonds, drawn as bars linking cysteine residues, hold the structure together: one within the A chain connecting its two internal cysteines, and two between the A and B chains." >}}
+{{< mediafigure src="biology/Figure_03_04_04" kind="diagram" alt="The amino acid sequences for the A chain and B chain of bovine insulin. The A chain is 21 amino acids in length, and the B chain is 30 amino acids in length. One disulfide, or S-S, bond connects two cysteine residues in the A chain. Two other disulfide linkages connect the A chain to the B chain." longdesc="Two horizontal rows of amino-acid circles, each labeled with its three-letter code. The A chain (top, 21 residues) begins with glycine and ends with asparagine. The B chain (bottom, 30 residues) begins with phenylalanine and, after its 19th residue, curls down and back to the left into a short second row ending in alanine. Three disulfide (S-S) bonds, drawn as bars linking cysteine residues, hold the structure together: one within the A chain, drawn above it, connecting its 6th and 11th residues (both cysteine), and two between the chains: A-chain residue 7 to B-chain residue 7, and A-chain residue 20 to B-chain residue 19 (the A chain's four cysteines are residues 6, 7, 11, and 20)." >}}
 Bovine serum insulin is a protein hormone comprised of two peptide chains, A (21 amino acids long) and B (30 amino acids long). In each chain, three-letter abbreviations that represent the amino acids' names in the order they are present indicate primary structure. The amino acid cysteine (cys) has a sulfhydryl (SH) group as a side chain. Two sulfhydryl groups can react in the presence of oxygen to form a disulfide (S-S) bond. Two disulfide bonds connect the A and B chains together, and a third helps the A chain fold into the correct shape. Note that all disulfide bonds are the same length, but we have drawn them different sizes for clarity.
 {{< /mediafigure >}}
 
 The gene encoding the protein ultimately determines the unique sequence for every protein. A change in nucleotide sequence of the gene's coding region may lead to adding a different amino acid to the growing polypeptide chain, causing a change in protein structure and function. In sickle cell anemia, the hemoglobin β chain (a small portion of which we show below) has a single amino acid substitution, causing a change in protein structure and function. Specifically, valine in the β chain substitutes the amino acid glutamic. What is most remarkable to consider is that a hemoglobin molecule is comprised of two alpha and two beta chains that each consist of about 150 amino acids. The molecule, therefore, has about 600 amino acids. The structural difference between a normal hemoglobin molecule and a sickle cell molecule—which dramatically decreases life expectancy—is a single amino acid of the 600. What is even more remarkable is that three nucleotides each encode those 600 amino acids, and a single base change (point mutation), 1 in 1,800 bases causes the mutation.
 
-{{< mediafigure src="biology/Figure_03_04_05-3127" kind="diagram" alt="Several representations of hemoglobin proteins under normal and sickle-cell conditions. In primary structure, the sixth amino acid is replaced by valine. In secondary and tertiary structures, the sickle-cell molecule is misshapen. As a result, normal hemoglobins do not associate with each other and each can carry oxygen, but sickle-cell proteins aggregate into a fiber and their oxygen-carrying capacity is reduced." longdesc="A four-row comparison of normal and sickle-cell hemoglobin, arranged in two columns. Row 1, Primary Structure: both columns show the same seven-residue stretch; position 6 is glutamate (Glu) in the normal column and valine (Val), highlighted, in the sickle-cell column. Row 2, Secondary and Tertiary Structures: the normal β subunit is a rounded blue shape; the sickle-cell β subunit is a similarly shaped but reddish, misshapen form. Row 3, Quaternary Structure: normal hemoglobin shows two blue β subunits and two purple α subunits assembled into a compact molecule; sickle-cell hemoglobin shows the same arrangement but with the β subunits in red. Row 4, Function: normal hemoglobin molecules are shown as separate, unassociated units, each free to carry oxygen; sickle-cell hemoglobin molecules are shown aggregating into a long fiber, with reduced oxygen-carrying capacity noted." >}}
+{{< mediafigure src="biology/Figure_03_04_05-3127" kind="diagram" alt="Several representations of hemoglobin proteins under normal and sickle-cell conditions. In primary structure, the sixth amino acid is replaced by valine. In secondary and tertiary structures, the sickle-cell molecule is misshapen. As a result, normal hemoglobins do not associate with each other and each can carry oxygen, but sickle-cell proteins aggregate into a fiber and their oxygen-carrying capacity is reduced." longdesc="A four-row comparison of normal and sickle-cell hemoglobin, arranged in two columns. Row 1, Primary Structure: both columns show a numbered seven-residue stretch, Val, His, Leu, Thr, Pro, then position 6, then Glu at position 7; position 6 is glutamate (Glu) in the normal column and valine (Val), highlighted, in the sickle-cell column. Row 2, Secondary and Tertiary Structures: the normal β subunit is a rounded blue shape; the sickle-cell β subunit is a similarly shaped but reddish, misshapen form. Row 3, Quaternary Structure: normal hemoglobin shows two blue β subunits and two purple α subunits assembled into a compact molecule; sickle-cell hemoglobin shows the same arrangement but with the β subunits in red. Row 4, Function: normal hemoglobin molecules are shown as separate, unassociated units, each free to carry oxygen; sickle-cell hemoglobin molecules are shown aggregating into a long fiber, with reduced oxygen-carrying capacity noted." >}}
 Because of this change of one amino acid in the chain, hemoglobin molecules form long fibers that distort the biconcave, or disc-shaped, red blood cells and causes them to assume a crescent or "sickle" shape, which clogs blood vessels (below). The beta (β)-chain of hemoglobin is 146 amino acids in length *(Source note: the source says 147, the length of the translated chain including its initiator methionine; the mature β-chain in hemoglobin is 146 residues (UniProt P68871), the numbering under which the sickle-cell substitution above sits at position 6)*, yet a single amino acid substitution in the primary sequence leads to changes in secondary, tertiary, and quaternary structures and sickle cell anemia. In normal hemoglobin, the amino acid at position six is glutamate. In sickle cell hemoglobin glutamate is replaced by valine. (credit: Rao, A., Tag, A. Ryan, K. and Fletcher, S. Department of Biology, Texas A&M University)
 {{< /mediafigure >}}
 
@@ -115,7 +115,7 @@ In this blood smear, visualized at 535x magnification using bright field microsc
 
 The local folding of the polypeptide in some regions gives rise to the **secondary structure** of the protein. The most common are the **α-helix** and **β-pleated sheet** structures (below). Both structures are held in shape by hydrogen bonds. The hydrogen bonds form between the oxygen atom in the carbonyl group in one amino acid and another amino acid that is four amino acids farther along the chain.
 
-{{< mediafigure src="biology/Figure_03_04_07-ffb1" kind="diagram" alt="An illustration of an alpha-helix protein structure, which coils like a spring, and a beta-pleated sheet structure, which forms flat sheets stacked together. In the alpha-helix, hydrogen bonding occurs between the carbonyl group of one amino acid and the amino group of the amino acid four residues later. In the beta-pleated sheet, hydrogen bonding occurs between two antiparallel lengths of peptide." longdesc="Two labeled panels under the heading Secondary Structure. Top panel, α Helix: a ribbon-and-ball-and-stick model of a coiled polypeptide backbone forming a spring-like helix, with dotted lines labeled Hydrogen Bond connecting turns of the coil. Bottom panel, β Pleated Sheet: three stacked ribbon strands, one labeled β Strand, running side by side in an accordion-fold pattern, with dotted lines labeled Hydrogen Bond connecting atoms on adjacent strands." >}}
+{{< mediafigure src="biology/Figure_03_04_07-ffb1" kind="diagram" alt="An illustration of an alpha-helix protein structure, which coils like a spring, and a beta-pleated sheet structure, which forms flat sheets stacked together. In the alpha-helix, hydrogen bonding occurs between the carbonyl group of one amino acid and the amino group of the amino acid four residues later. In the beta-pleated sheet, hydrogen bonding occurs between two antiparallel lengths of peptide." longdesc="Two labeled panels under the heading Secondary Structure. Top panel, α Helix: a ribbon-and-ball-and-stick model of a coiled polypeptide backbone forming a spring-like helix, with dotted lines labeled Hydrogen Bond connecting turns of the coil. Bottom panel, β Pleated Sheet: three pleated ribbon strands lying side by side, one labeled β Strand, each drawn as a broad arrow — the top and bottom strands point right and the middle one points left, so neighboring strands run antiparallel — with dotted lines labeled Hydrogen Bond connecting atoms on adjacent strands." >}}
 The α-helix and β-pleated sheet are secondary protein structures formed when hydrogen bonds form between the carbonyl oxygen and the amino hydrogen in the peptide backbone. Certain amino acids have a propensity to form an α-helix while others favor β-pleated sheet formation. Black = carbon, White = hydrogen, Blue = nitrogen, and Red = oxygen. Credit: Rao, A., Ryan, K. Fletcher, S. and Tag, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -181,24 +181,24 @@ Proteins are organized at four levels: primary, secondary, tertiary, and (option
 {{< textin
   question="A catalyst in a biochemical reaction, usually a complex or conjugated protein, is called a(n) ________."
   answer="enzyme"
-  hint="It speeds up a reaction, such as digestion, without itself being consumed."
+  hint="Reread the first paragraph of Types and Functions of Proteins."
 >}}
 
 {{< textin
   question="A chemical-signaling molecule, usually a small protein or steroid, secreted by endocrine cells to control or regulate a specific physiological process is called a(n) ________."
   answer="hormone"
-  hint="Insulin, which helps regulate the blood glucose level, is an example."
+  hint="Reread the second paragraph of Types and Functions of Proteins."
 >}}
 
 {{< multiplechoice
-  question="Proteins help in metabolism by acting as enzymes, carriers, or ________, and provide structural support."
-  answer="hormones"
-  hint="Insulin, a chemical-signaling molecule that regulates blood glucose, is an example of this kind of protein."
+  question="In the section's table of protein types and functions, immunoglobulins are listed under which type?"
+  answer="Defense"
+  hint="Use the Protein Types and Functions table."
 >}}
-chaperones
-amino acids
-polypeptides
-hormones
+Storage
+Defense
+Transport
+Contractile
 {{< /multiplechoice >}}
 
 ### Discuss the relationship between amino acids and proteins
@@ -206,7 +206,7 @@ hormones
 {{< multiplechoice
   question="The monomers that make up proteins are called ________."
   answer="amino acids"
-  hint="These molecules link together by peptide bonds to build a polypeptide chain."
+  hint="Reread the section's opening paragraph."
 >}}
 nucleotides
 disaccharides
@@ -215,23 +215,30 @@ chaperones
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The monomer of a protein — a central carbon bonded to an amino group, a carboxyl group, a hydrogen atom, and a variable side chain — is called a(n) ________."
-  answer="amino acid"
-  hint="Twenty common types of this monomer, each with a different side chain, link together to build every protein."
+  question="A long chain of amino acids is called a ________."
+  answer="polypeptide"
+  hint="Reread the paragraph after the figure of two amino acids joining."
 >}}
 
 {{< textin
-  question="A long chain of amino acids joined together by peptide bonds is called a ________."
-  answer="polypeptide"
-  hint="The term is often used loosely to mean the same thing as \"protein,\" though the two are technically distinct."
+  question="The bond formed between two amino acids by a dehydration reaction is called a ________."
+  answer="peptide bond"
+  hint="Reread the paragraph just before the figure of two amino acids joining."
 >}}
 
 ### Explain the four levels of protein organization
 
+{{< textin
+  question="The level of protein organization formed when two or more separate polypeptide subunits associate together is its ________ structure."
+  answer="quaternary"
+  accept="quaternary structure"
+  hint="Reread the last subsection of Protein Structure."
+>}}
+
 {{< multiplechoice
   question="The α-helix and the β-pleated sheet are part of which protein structure?"
   answer="secondary"
-  hint="This level is the local folding pattern held together by hydrogen bonds along the peptide backbone — one step up from the raw amino acid sequence."
+  hint="Reread the subsections of Protein Structure."
 >}}
 primary
 secondary
@@ -242,7 +249,7 @@ quaternary
 {{< multiplechoice
   question="Mad cow disease is an infectious disease where one misfolded protein causes all other copies of the protein to begin misfolding. This is an example of a disease impacting ____ structure."
   answer="tertiary"
-  hint="Ask which level of structure describes a single polypeptide's own three-dimensional shape, as opposed to its sequence or its assembly with other chains."
+  hint="Reread the subsections of Protein Structure and the section after them."
 >}}
 primary
 secondary
@@ -250,7 +257,7 @@ tertiary
 quaternary
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the differences in the four protein structures." hint="Work through the four levels in order, from a single chain's amino acid sequence to the assembly of separate polypeptide subunits." >}}
+{{< selfcheck question="Describe the differences in the four protein structures." hint="Reread the four subsections of Protein Structure." >}}
 The sequence and number of amino acids in a polypeptide chain is its primary structure. The local folding of the polypeptide in some regions is the secondary structure of the protein. The three-dimensional structure of a polypeptide is known as its tertiary structure, created in part by chemical interactions such as hydrogen bonds between polar side chains, van der Waals interactions, disulfide linkages, and hydrophobic interactions. Some proteins are formed from multiple polypeptides, also known as subunits, and the interaction of these subunits forms the quaternary structure.
 ===CHECKS===
 the sequence and number of amino acids in a polypeptide chain is its primary structure
@@ -260,16 +267,9 @@ some proteins are formed from multiple polypeptides, also known as subunits
 the interaction of these subunits forms the quaternary structure
 {{< /selfcheck >}}
 
-{{< textin
-  question="The level of protein organization formed when two or more separate polypeptide subunits associate together is its ________ structure."
-  answer="quaternary"
-  accept="quaternary structure"
-  hint="Hemoglobin's four separate globin chains combine at this level."
->}}
-
 ### Describe the ways in which protein shape and function are linked
 
-{{< selfcheck question="Explain what happens if even one amino acid is substituted for another in a polypeptide chain. Provide a specific example." hint="Think about how a change at the level of the gene can propagate upward through every level of a protein's structure." >}}
+{{< selfcheck question="Explain what happens if even one amino acid is substituted for another in a polypeptide chain. Provide a specific example." hint="Reread the second paragraph of Primary Structure and the hemoglobin figure after it." >}}
 A change in gene sequence can lead to a different amino acid being added to a polypeptide chain instead of the normal one. This causes a change in protein structure and function. For example, in sickle cell anemia, the hemoglobin β chain has a single amino acid substitution—the amino acid glutamic acid in position six is substituted by valine. Because of this change, hemoglobin molecules form aggregates, and the disc-shaped red blood cells assume a crescent shape, which results in serious health problems.
 ===CHECKS===
 a change in gene sequence can lead to a different amino acid being added to a polypeptide chain
@@ -280,7 +280,7 @@ hemoglobin molecules form aggregates
 the disc-shaped red blood cells assume a crescent shape
 {{< /selfcheck >}}
 
-{{< selfcheck question="Aquaporins are proteins embedded in the plasma membrane that allow water molecules to move between the extracellular matrix and the intracellular space. Based on its function and location, describe the key features of the protein's shape and the chemical characteristics of its amino acids." hint="Consider which part of the channel touches the membrane's fatty interior and which part touches the water passing through it." >}}
+{{< selfcheck question="Aquaporins are proteins embedded in the plasma membrane that allow water molecules to move between the extracellular matrix and the intracellular space. Based on its function and location, describe the key features of the protein's shape and the chemical characteristics of its amino acids." hint="Reread the Tertiary Structure paragraph on where hydrophobic and hydrophilic R groups lie, and the phospholipid bilayer in the Lipids section." >}}
 The protein must form a channel in the plasma membrane that allows water into the cell since water cannot cross the plasma membrane by itself. Since aquaporins are embedded in the plasma membrane and connect with both the intracellular and extracellular spaces, it must be amphipathic like the plasma membrane. The top and bottom of the protein must contain charged or polar amino acids (hydrophilic) to interact with the aqueous environments. The exterior transmembrane region must contain non-polar amino acids (hydrophobic) that can interact with the phospholipid tails. However, the inside of this channel must contain hydrophilic amino acids since they will interact with the traveling water molecules.
 ===CHECKS===
 the protein must form a channel in the plasma membrane that allows water into the cell
@@ -293,9 +293,9 @@ the inside of this channel must contain hydrophilic amino acids since they will 
 {{< textin
   question="The loss of a protein's shape — without loss of its underlying amino acid sequence — as a result of changes in temperature, pH, or chemical exposure is called ________."
   answer="denaturation"
-  hint="Frying an egg does this irreversibly to the albumin protein in the egg white."
+  hint="Reread the paragraph after the four-levels illustration."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 3.4: Proteins](https://openstax.org/books/biology-2e/pages/3-4-proteins) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with seven of the nine re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a molecular illustration, not a photograph — only the sickle-cell blood smear is a true photo) and a longer extended description added for the six figures that are labeled diagrams whose full reading is not carried by their captions (the twenty-amino-acid chart, the insulin chain, the hemoglobin/sickle-cell comparison, the α-helix/β-pleated-sheet illustration, the tertiary-structure interaction diagram, and the four-levels-of-structure diagram); the sickle-cell blood-smear alt corrected from the source's "electron micrograph" to the bright-field light micrograph its own caption names; the twenty-amino-acid figure's alt shortened from over 600 characters to what the image shows, with its category walk-through moved into the longdesc; inline references to figures and the table changed from the source's print numbers ("Table 3.1," "Figure 3.22," "(Figure 3.27)" inside a caption) to descriptive phrases ("the table below," "below," "above") since figures and tables are not numbered here; feature boxes (two Link to Learning notes and one Evolution Connection) rendered as callouts with their bold names; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option, with the solution's garbled parenthetical "nonpolar (e.g., amino acid side chains)" read as "nonpolar amino acid side chains"; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and six key-term recall items (enzyme, hormone, amino acid, polypeptide, quaternary structure, denaturation) added from the glossary to round out every objective group with an auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived select-the-term multiple choice added (protein functions, naming hormones from the summary's "enzymes, carriers, or hormones" list, with distractors drawn from the module's own terms) since the first objective's two glossary recall items were both textin and left that group short of three exercises. Three claims are corrected with visible Source notes: cysteine is replaced by lysine in the essential-amino-acid example (this book's own nutrition table makes cysteine non-essential), the human–yeast cytochrome c comparison reads 44 differing positions rather than "the 44th position," and the hemoglobin β-chain is 146 residues rather than 147 (errata 385–387).</small>
+<small>This section is adapted from [Biology 2e, Section 3.4: Proteins](https://openstax.org/books/biology-2e/pages/3-4-proteins) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with seven of the nine re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a molecular illustration, not a photograph — only the sickle-cell blood smear is a true photo) and a longer extended description added for the six figures that are labeled diagrams whose full reading is not carried by their captions (the twenty-amino-acid chart, the insulin chain, the hemoglobin/sickle-cell comparison, the α-helix/β-pleated-sheet illustration, the tertiary-structure interaction diagram, and the four-levels-of-structure diagram); the sickle-cell blood-smear alt corrected from the source's "electron micrograph" to the bright-field light micrograph its own caption names; the twenty-amino-acid figure's alt shortened from over 600 characters to what the image shows, with its category walk-through moved into the longdesc; inline references to figures and the table changed from the source's print numbers ("Table 3.1," "Figure 3.22," "(Figure 3.27)" inside a caption) to descriptive phrases ("the table below," "below," "above") since figures and tables are not numbered here; feature boxes (two Link to Learning notes and one Evolution Connection) rendered as callouts with their bold names; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option, with the solution's garbled parenthetical "nonpolar (e.g., amino acid side chains)" read as "nonpolar amino acid side chains"; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and six key-term recall items (enzyme, hormone, polypeptide, peptide bond, quaternary structure, denaturation) added from the glossary to round out every objective group with an auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one multiple choice built from the section's Protein Types and Functions table (the type under which it lists immunoglobulins) added since the first objective's two glossary recall items were both textin and left that group short of three exercises. Three claims are corrected with visible Source notes: cysteine is replaced by lysine in the essential-amino-acid example (this book's own nutrition table makes cysteine non-essential), the human–yeast cytochrome c comparison reads 44 differing positions rather than "the 44th position," and the hemoglobin β-chain is 146 residues rather than 147 (errata 385–387).</small>

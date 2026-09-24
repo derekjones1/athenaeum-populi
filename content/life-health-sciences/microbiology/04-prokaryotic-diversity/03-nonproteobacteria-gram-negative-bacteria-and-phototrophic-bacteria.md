@@ -26,7 +26,7 @@ The majority of the gram-negative bacteria belong to the phylum Proteobacteria, 
 
 Members of the genus *Chlamydia* are gram-negative, obligate intracellular pathogens that are extremely resistant to the cellular defenses, giving them the ability to spread from host to host rapidly via elementary bodies. The metabolically and reproductively inactive **elementary bodies** are the endospore-like form of intracellular bacteria that enter an epithelial cell, where they become active. The diagram below illustrates the life cycle of *Chlamydia*.
 
-{{< mediafigure src="microbiology/OSC_Microbio_04_02_Chlamydia" alt="A circular diagram of the life cycle of Chlamydia in yellow epithelial cells. Purple elementary bodies enter a cell, become red reticulate bodies by 12 hours, multiply into an inclusion by 24 hours, change back into elementary bodies by 48 hours, and are released when the host cell ruptures at 72 hours." kind="diagram" longdesc="Following the arrows clockwise: free purple elementary bodies approach an epithelial cell and enter it. At 12 hours, the cell contains red reticulate bodies. At 24 hours, many red reticulate bodies fill a labeled inclusion. At 48 hours, the inclusion contains both red reticulate bodies and purple elementary bodies. At 72 hours, the cell ruptures and releases many purple elementary bodies, which can enter another epithelial cell." eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_04_02_Chlamydia" alt="A circular diagram of the Chlamydia life cycle in yellow epithelial cells, read clockwise. Purple elementary bodies enter a cell; past the arrow marked 12 hours they have become three red reticulate bodies, each in its own vacuole; past 24 hours one inclusion is packed with red reticulate bodies; purple elementary bodies then appear among them, and past 48 hours the inclusion is packed with elementary bodies, only two reticulate bodies left; at 72 hours the cell bursts, releasing elementary bodies." kind="diagram" longdesc="Following the arrows clockwise from the top: an uninfected cell labeled epithelial cell; a cell with purple elementary bodies (one labeled elementary body) entering through its top edge, more waiting outside; an arrow beside the label 12 hours leads to a cell holding three red reticulate bodies (labeled), each in its own small vacuole; an arrow beside the label 24 hours leads to a cell whose single labeled inclusion is packed with red reticulate bodies; the next cell's inclusion holds a mix of purple elementary bodies and four red reticulate bodies; an arrow beside the label 48 hours leads to a cell whose enlarged inclusion is packed with purple elementary bodies (labeled elementary bodies) among only two red reticulate bodies; and next, beside the label 72 hours, a cell has burst open at the top, releasing a stream of purple elementary bodies (one labeled elementary body), with an arrow back to the uninfected epithelial cell. The time labels sit inside the ring, each beside the arrow that leads into the stage it marks. The title Life cycle of Chlamydia is printed in the center." >}}
 *Chlamydia* begins infection of a host when the metabolically inactive elementary bodies enter an epithelial cell. Once inside the host cell, the elementary bodies turn into active reticulate bodies. The reticulate bodies multiply and release more elementary bodies when the cell dies after the *Chlamydia* uses all of the host cell’s ATP. (credit: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
@@ -34,7 +34,7 @@ Members of the genus *Chlamydia* are gram-negative, obligate intracellular patho
 
 Spirochetes are characterized by their long (up to 250 µm), spiral-shaped bodies. Most **spirochetes** are also very thin, which makes it difficult to examine gram-stained preparations under a conventional brightfield microscope. Darkfield fluorescent microscopy is typically used instead. Spirochetes are also difficult or even impossible to culture. They are highly motile, using their axial filament to propel themselves. The axial filament is similar to a flagellum, but it wraps around the cell and runs inside the cell body of a spirochete in the periplasmic space between the outer membrane and the plasma membrane.
 
-{{< mediafigure src="microbiology/OSC_Microbio_04_03_spirochete" alt="A composite figure of spirochetes: a darkfield micrograph of bright spiral cells, a TEM cross-section and matching cutaway diagram showing the axial filament in the periplasmic space, and an SEM with a schematic of the filament winding around the cell." kind="diagram" longdesc="At left, a circular darkfield micrograph shows several thin, bright white spiral spirochetes on blue. Red lines connect one cell to a TEM cross-section at top center and an SEM at bottom center. At top right, a cutaway cross-section labels axial filament and endoflagella in the periplasmic space between the cell membrane and outer membrane; it also labels the nucleoid and cytoplasm. At lower right, a schematic shows an axial filament wrapping around the long spiral body, with an arrow indicating the twisting motion." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_04_03_spirochete" alt="A composite figure of spirochetes: a darkfield micrograph of bright spiral cells, a TEM cross-section and matching cutaway diagram showing the axial filament in the periplasmic space, and an SEM with a schematic of the filament winding around the cell." kind="diagram" longdesc="At left, a circular darkfield micrograph shows several thin, bright white spiral spirochetes on blue. Red lines connect one cell to a TEM cross-section at top center and an SEM at bottom center. At top right, a drawn cross-section matches the TEM: an oval axial filament packed with small red dots, the endoflagella, forms a bulge in the periplasmic space between the cell membrane and the outer membrane, and inside the cell membrane lie the nucleoid and cytoplasm. The labels axial filament, endoflagella, cell membrane, periplasmic space, and outer membrane sit between the TEM and the drawing, each with one leader line to the micrograph and one to the drawing; nucleoid and cytoplasm label the drawing only. At lower right, a schematic shows a red axial filament winding around the pale, long spiral body, with a red circular arrow around it indicating the twisting motion; one axial filament label has leader lines to both this schematic and the SEM, where a thinner strand winds around the cell." >}}
 Spirochetes are typically observed using darkfield microscopy (left). However, electron microscopy (top center, bottom center) provides a more detailed view of their cellular morphology. The flagella found between the inner and outer membranes of spirochetes wrap around the bacterium, causing a twisting motion used for locomotion. (credit “spirochetes” micrograph: modification of work by Centers for Disease Control and Prevention; credit “SEM/TEM”: modification of work by Guyard C, Raffel SJ, Schrumpf ME, Dahlstrom E, Sturdevant D, Ricklefs SM, Martens C, Hayes SF, Fischer ER, Hansen BT, Porcella SF, Schwan TG)
 {{< /mediafigure >}}
 
@@ -47,7 +47,7 @@ Another genus of spirochete, *Borrelia*, contains a number of pathogenic species
 {{< multiplechoice
   question="Why do scientists typically use darkfield fluorescent microscopy to visualize spirochetes?"
   answer="Because most spirochetes are very thin, making gram-stained preparations difficult to examine under a conventional brightfield microscope."
-  hint="Compare the body shape described for these organisms with what a conventional brightfield preparation can show."
+  hint="Reread the opening paragraph of Spirochetes."
 >}}
 Because most spirochetes are very thin, making gram-stained preparations difficult to examine under a conventional brightfield microscope.
 Because spirochetes are difficult or even impossible to culture.
@@ -72,7 +72,7 @@ Only a few species of *Bacteroides* are pathogenic. *B. melaninogenicus*, for ex
 {{< multiplechoice
   question="Why are Cytophaga, Fusobacterium, and Bacteroides classified together as the CFB group?"
   answer="They share similarities in the sequence of nucleotides in their DNA."
-  hint="Look for the stated shared basis of classification, rather than a habitat or a disease association."
+  hint="Reread the opening paragraph of the CFB-group subsection."
 >}}
 They share similarities in the sequence of nucleotides in their DNA.
 They all cause the same disease in humans.
@@ -105,7 +105,7 @@ The table below summarizes the characteristics of some of the most clinically re
 {{< multiplechoice
   question="How do Planctomycetes reproduce?"
   answer="By budding: a mother cell forms a bud that detaches and lives as an independent cell."
-  hint="Contrast their division process with a maternal cell splitting into two equal daughter cells."
+  hint="Reread the Planctomycetes paragraph."
 >}}
 By budding: a mother cell forms a bud that detaches and lives as an independent cell.
 By binary fission: a maternal cell splits into two equal daughter cells.
@@ -165,7 +165,7 @@ The table below summarizes the characteristics of important phototrophic bacteri
 {{< multiplechoice
   question="What characteristic makes phototrophic bacteria different from other prokaryotes?"
   answer="They use sunlight as their primary source of energy."
-  hint="Focus on the energy source that defines this group, rather than on a shared taxonomic rank."
+  hint="Reread the opening paragraph of Phototrophic Bacteria."
 >}}
 They use sunlight as their primary source of energy.
 They are all members of one phylum.
@@ -205,9 +205,9 @@ They all deposit sulfur inside the cell.
 ### Describe the unique features of nonproteobacteria gram-negative bacteria
 
 {{< multiplechoice
-  question="Which structure do spirochetes use to propel themselves?"
+  question="Which of the following is the organelle that spirochetes use to propel themselves?"
   answer="axial filament"
-  hint="Use the structure that wraps around the cell in the periplasmic space and produces a twisting motion."
+  hint="Reread the opening paragraph of Spirochetes."
 >}}
 plasma membrane
 axial filament
@@ -215,11 +215,11 @@ pilum
 fimbria
 {{< /multiplechoice >}}
 
-{{< sortbins question="Sort each characteristic under the Planctomycete cell form it describes." hint="Contrast the motile, unattached form with the attached form that can reproduce." >}}
+{{< sortbins question="Sort each characteristic under the Planctomycete cell form it describes." hint="Reread the Planctomycetes paragraph and the caption of its figure." >}}
 {"bins":["Swarmer cells","Sessile cells"],"items":[{"label":"Motile and not attached to a surface","bin":0},{"label":"Have an appendage called a holdfast","bin":1},{"label":"Soon differentiate into the other cell form","bin":0},{"label":"The only cell form able to reproduce","bin":1}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="Explain the term CFB group and name the genera that this group includes." hint="Give both what the initials stand for and the shared classification described in this section." >}}
+{{< selfcheck question="Explain the term CFB group and name the genera that this group includes." hint="Reread the opening paragraph of the CFB-group subsection." >}}
 The CFB group is the phylum of gram-negative nonproteobacteria formed by the genera *Cytophaga*, *Fusobacterium*, and *Bacteroides*. Although they are phylogenetically diverse, they share similarities in their DNA nucleotide sequences. They are rod-shaped bacteria adapted to anaerobic environments and are avid fermenters.
 ===CHECKS===
 the genera Cytophaga, Fusobacterium, and Bacteroides
@@ -231,14 +231,10 @@ avid fermenters
 
 ### Give an example of a nonproteobacteria bacterium in each category
 
-{{< sortbins question="Sort each characteristic under the nonproteobacteria genus described by the comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
-{"bins":["Chlamydia","Bacteroides","Cytophaga","Leptospira"],"items":[{"label":"Obligatory intracellular bacteria","bin":0},{"label":"Abundant in the human gastrointestinal tract","bin":1},{"label":"Moves by gliding and decomposes cellulose","bin":2},{"label":"A very thin spiral-shaped bacterium","bin":3},{"label":"Some species cause trachoma and pneumonia","bin":0},{"label":"Usually mutualistic, although some species are opportunistic pathogens","bin":1},{"label":"Lives in soil or water and may cause disease in fish","bin":2},{"label":"May be transmitted to humans in infected animals' urine","bin":3}]}
-{{< /sortbins >}}
-
 {{< multiplechoice
-  question="Which bacteria are the most prevalent in the human gut?"
+  question="Which of the following bacteria are the most prevalent in the human gut?"
   answer="*Bacteroides*"
-  hint="Use the genus described as making up about 30% of the entire gut microbiome."
+  hint="Reread the second paragraph of the CFB-group subsection."
 >}}
 cyanobacteria
 staphylococci
@@ -250,26 +246,30 @@ staphylococci
   question="The bacterium that causes syphilis is called ________."
   answer="Treponema pallidum pallidum"
   accept="T. pallidum pallidum|Treponema pallidum|T. pallidum"
-  hint="Look for the named subspecies of the genus associated with this sexually transmitted infection."
+  hint="Reread the second paragraph of Spirochetes."
 >}}
 
 {{< multiplechoice
   question="Name and briefly describe the bacterium that causes Lyme disease."
   answer="*Borrelia burgdorferi*; a pathogenic spirochete transmitted by ticks that often produces a bull’s eye rash, fever, fatigue, and sometimes debilitating arthritis."
-  hint="Use the genus and species named just before the list of tick genera, then identify the illness features given there."
+  hint="Reread the third paragraph of Spirochetes."
 >}}
-*Treponema pallidum pallidum*; a pathogenic spirochete transmitted by ticks that often produces a bull’s eye rash, fever, fatigue, and sometimes debilitating arthritis.
+*Chlamydia trachomatis*; a pathogenic spirochete transmitted by ticks that often produces a bull’s eye rash, fever, fatigue, and sometimes debilitating arthritis.
 *Borrelia burgdorferi*; a pathogenic spirochete transmitted by ticks that often produces a bull’s eye rash, fever, fatigue, and sometimes debilitating arthritis.
 *Borrelia recurrens*; a pathogenic spirochete transmitted by ticks that often produces a bull’s eye rash, fever, fatigue, and sometimes debilitating arthritis.
 *Bacteroides melaninogenicus*; a pathogenic spirochete transmitted by ticks that often produces a bull’s eye rash, fever, fatigue, and sometimes debilitating arthritis.
 {{< /multiplechoice >}}
 
+{{< sortbins question="Sort each characteristic under the nonproteobacteria genus described by the comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
+{"bins":["Chlamydia","Bacteroides","Cytophaga","Leptospira"],"items":[{"label":"Obligatory intracellular bacteria","bin":0},{"label":"Abundant in the human gastrointestinal tract","bin":1},{"label":"Moves by gliding and decomposes cellulose","bin":2},{"label":"A very thin spiral-shaped bacterium","bin":3},{"label":"Some species cause trachoma and pneumonia","bin":0},{"label":"Usually mutualistic, although some species are opportunistic pathogens","bin":1},{"label":"Lives in soil or water and may cause disease in fish","bin":2},{"label":"May be transmitted to humans in infected animals' urine","bin":3}]}
+{{< /sortbins >}}
+
 ### Describe the unique features of phototrophic bacteria
 
 {{< multiplechoice
-  question="Which term refers to photosynthesis performed by bacteria with the use of water as the donor of electrons?"
+  question="Which of the following refers to photosynthesis performed by bacteria with the use of water as the donor of electrons?"
   answer="oxygenic"
-  hint="Compare whether the process produces oxygen with whether it does not."
+  hint="Reread the opening paragraph of Phototrophic Bacteria."
 >}}
 oxygenic
 anoxygenic
@@ -280,7 +280,8 @@ phototrophic
 {{< textin
   question="Bacteria in the genus Rhodospirillum that use hydrogen for oxidation and fix nitrogen are ________ bacteria."
   answer="purple nonsulfur"
-  hint="Use the color-and-sulfur category contrasted with purple sulfur bacteria."
+  accept="purple non-sulfur"
+  hint="Reread the paragraph that introduces the genus Rhodospirillum."
 >}}
 
 {{< multiplechoice
@@ -318,7 +319,7 @@ inclusions
 elementary bodies
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Characterize the phylum Cyanobacteria." hint="Include their photosynthetic type, the environmental role attributed to them, and the range of forms and habitats described in the section." >}}
+{{< selfcheck question="Characterize the phylum Cyanobacteria." hint="Reread the Cyanobacteria paragraphs at the end of Phototrophic Bacteria." >}}
 Cyanobacteria are oxygen-producing, chlorophyll-containing phototrophic bacteria that perform oxygenic photosynthesis. They are thought to have played a critical role in changing Earth’s anoxic atmosphere to the oxygen-rich environment we have today. They thrive in marine and freshwater environments, soil, and rocks; can be unicellular, colonial, or filamentous; and many fix nitrogen in specialized cells called heterocysts. Some genera can form harmful cyanobacterial blooms that produce toxins.
 ===CHECKS===
 oxygen-producing, chlorophyll-containing phototrophic bacteria that perform oxygenic photosynthesis

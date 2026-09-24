@@ -56,7 +56,7 @@ Animal development begins with **cleavage**, a series of mitotic cell divisions,
 
 Further cell division and cellular rearrangement leads to a process called gastrulation. **Gastrulation** results in two important events: the formation of the primitive gut (archenteron) or digestive cavity, and the formation of the embryonic germ layers, as we have discussed above. These germ layers are programmed to develop into certain tissue types, organs, and organ systems during a process called **organogenesis**. *Diploblastic* organisms have two germ layers, endoderm and ectoderm. Endoderm forms the wall of the digestive tract, and ectoderm covers the surface of the animal. In *triploblastic* animals, a third layer forms: mesoderm, which differentiates into various structures between the ectoderm and endoderm, including the lining of the body cavity.
 
-{{< mediafigure src="biology/Figure_27_01_03" kind="diagram" alt="The left part of the illustration shows a single-celled zygote. The initial cleavage, or cell division, results in a ball of cells, called the eight-cell stage. The cells do not grow during cleavage, so the eight-cell stage ball is about the same diameter as the zygote. Further cleavage results in a hollow ball of cells called a blastula. Upon gastrulation, part of the ball of cells invaginates, forming an inner cavity whose small opening at the surface is labeled the blastopore." longdesc="The diagram runs left to right across four panels on a peach background, joined by three gray arrows. The first panel, labeled 'Zygote,' shows one round cell with a single purple nucleus. An arrow labeled 'Cleavage' leads to the second panel, labeled 'Eight-cell stage,' a cluster of eight rounded cells, each with its own purple nucleus, packed into roughly the same overall size as the zygote. A second arrow labeled 'Cleavage' leads to the third panel, labeled 'Blastula cross section,' a hollow ball whose wall is a single layer of cells surrounding an empty center. An arrow labeled 'Gastrulation' leads to the fourth panel, labeled 'Gastrula cross section,' where the wall has folded inward on one side to form a second, inner layer of cells, leaving a small opening at the surface labeled 'Blastopore.'" >}}
+{{< mediafigure src="biology/Figure_27_01_03" kind="diagram" alt="The left part of the illustration shows a single-celled zygote. The initial cleavage, or cell division, results in a ball of cells, called the eight-cell stage. The cells do not grow during cleavage, so the eight-cell stage ball is about the same diameter as the zygote. Further cleavage results in a hollow ball of cells called a blastula. Upon gastrulation, part of the ball of cells invaginates, forming an inner cavity whose small opening at the surface is labeled the blastopore." longdesc="The diagram runs left to right across four panels on a peach background, joined by three gray arrows. The first panel, labeled 'Zygote,' shows one round cell with a single purple nucleus. An arrow labeled 'Cleavage' leads to the second panel, labeled 'Eight-cell stage,' a ball of rounded cells (seven visible, the eighth hidden behind them; six show a purple nucleus), packed into roughly the same overall size as the zygote. A second arrow labeled 'Cleavage' leads to the third panel, labeled 'Blastula cross section,' a hollow ball whose wall is a single layer of cells surrounding an empty center. An arrow labeled 'Gastrulation' leads to the fourth panel, labeled 'Gastrula cross section,' where the wall has folded inward on one side to form a second, inner layer of cells, leaving a small opening at the surface labeled 'Blastopore.'" >}}
 Development of a simple embryo. During embryonic development, the zygote undergoes a series of mitotic cell divisions, or cleavages, that subdivide the egg into smaller and smaller blastomeres. Note that the 8-cell stage and the blastula are about the same size as the original zygote. In many invertebrates, the blastula consists of a single layer of cells around a hollow space. During a process called gastrulation, the cells from the blastula move inward on one side to form an inner cavity. This inner cavity becomes the primitive gut (archenteron) of the gastrula ("little gut") stage. The opening into this cavity is called the *blastopore*, and in some invertebrates it is destined to form the mouth.
 {{< /mediafigure >}}
 
@@ -80,7 +80,7 @@ Genes with homeoboxes encode protein transcription factors. One group of animal 
 
 While there are a great many genes that play roles in the morphological development of an animal, including other homeobox-containing genes, what makes *Hox* genes so powerful is that they serve as "master control genes" that can turn on or off large numbers of other genes. *Hox* genes do this by encoding transcription factors that control the expression of numerous other genes. *Hox* genes are homologous across the animal kingdom, that is, the genetic sequences of *Hox* genes and their positions on chromosomes are remarkably similar across most animals because of their presence in a common ancestor, from worms to flies, mice, and humans (shown in the figure below). In addition, the order of the genes reflects the anterior-posterior axis of the animal's body. One of the contributions to increased animal body complexity is that *Hox* genes have undergone at least two and perhaps as many as four duplication events during animal evolution, with the additional genes allowing for more complex body types to evolve. All vertebrates have four (or more) sets of *Hox* genes, while invertebrates have only one set.
 
-{{< mediafigure src="biology/Figure_27_01_04" kind="diagram" alt="This illustration shows the four clusters of Hox genes found in vertebrates: Hox A, Hox B, Hox C, and Hox D. There are 13 Hox genes, but not all of them are found in each cluster. In both mice and humans, genes 1 through 4 regulate the development of the head. Genes 5 and 6 regulate the development of the neck. Genes 7 and 8 regulate the development of the torso, and genes 9 through 13 regulate the development of the arms and legs." longdesc="A numbered header reads 1 through 13 above four horizontal rows of colored boxes, labeled top to bottom 'Hox-A,' 'Hox-B,' 'Hox-C,' and 'Hox-D' — one box per Hox gene present in that cluster, aligned under its gene number. Hox-A carries boxes at positions 1 through 7, a gap at 8, boxes at 9 through 11, a gap at 12, and a single box at 13 (11 boxes in all). Hox-B carries one unbroken run of 9 boxes at positions 1 through 9, with none at 10 through 13. Hox-C carries boxes at 4 through 6, a gap at 7, then boxes at 8 through 13 (9 boxes in all). Hox-D carries a single box at 1, a gap at 2, boxes at 3 and 4, a gap at 5 through 7, then boxes at 8 through 13 (9 boxes in all). Across all four rows, boxes at positions 1 through 4 are shades of orange, 5 through 6 are shades of purple, 7 through 8 are blue, and 9 through 13 are green. Below the four rows, a cutaway drawing labeled 'Mouse embryo' shows the same four color groups as bands running along its back from snout to tail, in the order orange, purple, blue, green. Beside it, an upright figure labeled 'Adult human' is shaded the same way: orange over the head and face, a purple band at the neck, blue over the torso, and green down the arms and legs. A key beneath the human figure repeats the four colors next to the labels '1 to 4,' '5 to 6,' '7 to 8,' and '9 to 13.'" >}}
+{{< mediafigure src="biology/Figure_27_01_04" kind="diagram" alt="This illustration shows the four clusters of Hox genes found in vertebrates: Hox A, Hox B, Hox C, and Hox D. There are 13 Hox genes, but not all of them are found in each cluster. In both mice and humans, genes 1 through 4 regulate the development of the head. Genes 5 and 6 regulate the development of the neck. Genes 7 and 8 regulate the development of the torso, and genes 9 through 13 regulate the development of the arms and legs." longdesc="A numbered header reads 1 through 13 above four horizontal rows of colored boxes, labeled top to bottom 'Hox-A,' 'Hox-B,' 'Hox-C,' and 'Hox-D' — one box per Hox gene present in that cluster, aligned under its gene number. Hox-A carries boxes at positions 1 through 7, a gap at 8, boxes at 9 through 11, a gap at 12, and a single box at 13 (11 boxes in all). Hox-B carries one unbroken run of 9 boxes at positions 1 through 9, with none at 10 through 13. Hox-C carries boxes at 4 through 6, a gap at 7, then boxes at 8 through 13 (9 boxes in all). Hox-D carries a single box at 1, a gap at 2, boxes at 3 and 4, a gap at 5 through 7, then boxes at 8 through 13 (9 boxes in all). Across all four rows, each gene number has its own shade, shifting gradually along the row: orange at 1 and 2, salmon at 3, red at 4, mauve at 5, lavender at 6, periwinkle at 7, blue at 8 through 10, slate blue at 11, and olive green at 12 and 13 — so the box colors only roughly follow the four groups of the key. Below the four rows, a cutaway drawing labeled 'Mouse embryo' shows the same shades as a band running along its back from the head to the tail, in the order orange, purple, blue, green. Beside it, an upright figure labeled 'Adult human' is shaded the same way: salmon over the face (the hair is left white), a purple band at the neck, blue over the torso, and green down the arms and legs. A key beneath the human figure repeats the four colors next to the labels '1 to 4,' '5 to 6,' '7 to 8,' and '9 to 13.'" >}}
 *Hox* genes. *Hox* genes are *highly conserved genes* encoding transcription factors that determine the course of embryonic development in animals. In vertebrates, the genes have been duplicated into four clusters on *different chromosomes*: *Hox-A*, *Hox-B*, *Hox-C*, and *Hox-D*. Genes within these clusters are expressed in certain body segments at certain stages of development. Shown here is the homology between *Hox* genes in mice and humans. Note how *Hox* gene expression, as indicated with orange, pink, blue, and green shading, occurs in the same body segments in both the mouse and the human. While at least one copy of each Hox gene is present in humans and other vertebrates, some *Hox* genes are missing in some chromosomal sets.
 {{< /mediafigure >}}
 
@@ -111,10 +111,16 @@ Animals constitute an incredibly diverse kingdom of organisms. Although animals 
 
 ### List the features that distinguish the kingdom Animalia from other kingdoms
 
+{{< textin
+  question="The morphology, or defining shape, of an organism, fixed by cues during its embryonic development, is called its ________."
+  answer="body plan"
+  hint="A fruit fly's version of this is disrupted when a single Hox mutation grows a leg where an antenna belongs."
+>}}
+
 {{< multiplechoice
   question="Which of the following is not a feature common to *most* animals?"
   answer="asexual reproduction"
-  hint="The section says only a few groups—cnidarians, flatworms, and roundworms—reproduce this way; most animals reproduce differently."
+  hint="Check each option against the section summary's list of features most animals share, and against the opening paragraph of the Animal Reproduction and Development subsection."
 >}}
 development into a fixed body plan
 asexual reproduction
@@ -138,12 +144,6 @@ as heterotrophs, humans obtain nutrients by ingesting other organisms
 humans undergo sexual reproduction and the same embryonic developmental stages as other animals
 a fixed and motile body plan controlled in large part by Hox genes
 {{< /selfcheck >}}
-
-{{< textin
-  question="The morphology, or defining shape, of an organism, fixed by cues during its embryonic development, is called its ________."
-  answer="body plan"
-  hint="A fruit fly's version of this is disrupted when a single Hox mutation grows a leg where an antenna belongs."
->}}
 
 ### Explain the processes of animal reproduction and embryonic development
 
@@ -179,21 +179,28 @@ the organogenesis stage
 {{< textin
   question="The stage of animal development marked by the formation of the primitive digestive cavity is called the ________."
   answer="gastrula"
-  hint="Its name comes from the Latin root for “little gut,” and the opening into its cavity is the blastopore."
+  hint="Look at the caption of the figure on the development of a simple embryo, which follows this stage from the blastula."
 >}}
 
 {{< textin
-  question="The formation of organs during animal embryogenesis is called ________."
-  answer="organogenesis"
-  hint="This is the process that turns the three germ layers into specific tissue types, organs, and organ systems."
+  question="A form of uniparental reproduction, found in some insects and a few vertebrates, in which progeny develop from a gamete but without fertilization is called ________."
+  answer="parthenogenesis"
+  hint="Look at the paragraph after the discussion of budding and fragmentation in the Processes of Animal Reproduction and Embryonic Development subsection."
 >}}
 
 ### Describe the roles that Hox genes play in development
 
+{{< textin
+  question="A master control gene that can turn on or off large numbers of other genes during embryogenesis is called a ________."
+  answer="Hox gene"
+  accept="homeobox gene"
+  hint="This class of genes was first sequenced in the fruit fly, and the order of its members along the chromosome mirrors the animal's own head-to-tail axis."
+>}}
+
 {{< multiplechoice
   question="Which of the following phenotypes would most likely be the result of a *Hox* gene mutation?"
   answer="two fewer appendages than normal"
-  hint="Hox genes govern the number and placement of appendages and body segments, not an animal's coloring or its susceptibility to disease."
+  hint="Compare each option with what the Hox gene subsection says this cluster of genes determines about an animal's general body plan."
 >}}
 abnormal body length or height
 two different eye colors
@@ -209,13 +216,6 @@ Hox genes can affect the spatial arrangements of organs and body parts
 a mutated or duplicated Hox gene could affect where a leg is on a fruit fly or how far apart a person's fingers are
 {{< /selfcheck >}}
 
-{{< textin
-  question="A master control gene that can turn on or off large numbers of other genes during embryogenesis is called a ________."
-  answer="Hox gene"
-  accept="homeobox gene"
-  hint="This class of genes was first sequenced in the fruit fly, and the order of its members along the chromosome mirrors the animal's own head-to-tail axis."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 27.1: Features of the Animal Kingdom](https://openstax.org/books/biology-2e/pages/27-1-features-of-the-animal-kingdom) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the cleavage-and-gastrulation figure's alt calls the blastopore the opening of the invaginated cavity, because the source alt's "a cavity called a blastopore" names the cavity rather than the labeled opening (erratum 845); Figure_27_01_02 (insect metamorphosis) and Figure_27_01_03 (embryonic development) re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are line/color drawings, not photographs); a longdesc added to Figure_27_01_03 (the zygote-to-gastrula sequence) and to Figure_27_01_04 (the Hox-gene cluster chart), whose panel structure, gaps, and color groups are not carried by their one-line captions; the two Link to Learning notes rendered as callouts with descriptive link text; the note wrapping the Hox-gene Visual Connection rendered as its figure followed by a self-check, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; all seven glossary terms (body plan, cleavage, blastula, germ layer, gastrula, organogenesis, Hox gene) added as key-term recall items; the Review Question "During embryonic development, unique cell layers develop into specific groups of tissues or organs during a stage called ________" keeps its source options but its printed key "the gastrula stage" is corrected to "the organogenesis stage," because the section's own text states that germ layers "are programmed to develop into certain tissue types, organs, and organ systems during a process called organogenesis," while gastrulation is described only as forming the primitive gut and the germ layers themselves — reported as a source defect. One claim is corrected with a visible Source note: placozoans are free-living, not parasitic (erratum 424).</small>
+<small>This section is adapted from [Biology 2e, Section 27.1: Features of the Animal Kingdom](https://openstax.org/books/biology-2e/pages/27-1-features-of-the-animal-kingdom) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the cleavage-and-gastrulation figure's alt calls the blastopore the opening of the invaginated cavity, because the source alt's "a cavity called a blastopore" names the cavity rather than the labeled opening (erratum 845); Figure_27_01_02 (insect metamorphosis) and Figure_27_01_03 (embryonic development) re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are line/color drawings, not photographs); a longdesc added to Figure_27_01_03 (the zygote-to-gastrula sequence) and to Figure_27_01_04 (the Hox-gene cluster chart), whose panel structure, gaps, and color groups are not carried by their one-line captions; the two Link to Learning notes rendered as callouts with descriptive link text; the note wrapping the Hox-gene Visual Connection rendered as its figure followed by a self-check, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six glossary terms (body plan, cleavage, blastula, germ layer, gastrula, Hox gene) added as key-term recall items, organogenesis left out because the corrected Review Question already asks for it, and one recall item (parthenogenesis) built from the body sentence that defines it; the Review Question "During embryonic development, unique cell layers develop into specific groups of tissues or organs during a stage called ________" keeps its source options but its printed key "the gastrula stage" is corrected to "the organogenesis stage," because the section's own text states that germ layers "are programmed to develop into certain tissue types, organs, and organ systems during a process called organogenesis," while gastrulation is described only as forming the primitive gut and the germ layers themselves — reported as a source defect. One claim is corrected with a visible Source note: placozoans are free-living, not parasitic (erratum 424).</small>

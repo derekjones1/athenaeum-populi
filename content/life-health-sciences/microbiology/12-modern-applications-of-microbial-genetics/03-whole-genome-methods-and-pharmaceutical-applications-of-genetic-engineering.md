@@ -44,20 +44,20 @@ Additionally, researchers can use reverse genetics, a technique related to class
 
 **Check Your Understanding**
 
-{{< selfcheck question="How is genomics different from traditional genetics?" hint="Recall the scope this section's own definition of genomics gives — what it studies as a whole, not gene by gene." >}}
-This section defines genomics as the study and comparison of entire genomes: the complete set of genes, their nucleotide sequence and organization, and their interactions within a species and with other species. Genomics is therefore a genome-wide, holistic level of study; this section does not itself define "traditional genetics" for comparison.
+{{< selfcheck question="How is genomics different from traditional genetics?" hint="Reread the first paragraph after the section's introduction, and the Summary's first bullet." >}}
+This section defines genomics as the study and comparison of entire genomes, including the complete set of genes and their nucleotide sequence and organization. The science of genomics allows researchers to study organisms on a holistic level; this section does not itself define "traditional genetics" for comparison.
 ===CHECKS===
 the study and comparison of entire genomes
-the complete set of genes, their nucleotide sequence and organization, and their interactions within a species and with other species
-a genome-wide, holistic level of study
+including the complete set of genes and their nucleotide sequence and organization
+allows researchers to study organisms on a holistic level
 {{< /selfcheck >}}
 
-{{< textin question="If you wanted to study how two different cells in the body respond to an infection, what –omics field would you apply?" answer="transcriptomics" hint="This section names the field that compares gene expression patterns between infected and uninfected host cells." >}}
+{{< textin question="If you wanted to study how two different cells in the body respond to an infection, what –omics field would you apply?" answer="transcriptomics" accept="transcriptomic|proteomics" hint="Reread the second paragraph after the section's introduction, and the Summary's second bullet." >}}
 
 {{< multiplechoice
   question="What are the biomarkers uncovered in proteomics used for?"
   answer="Detecting various forms of cancer as well as infections caused by pathogens"
-  hint="This section names the diseases biomarkers are currently being used to detect."
+  hint="Reread the paragraph on biomarkers."
 >}}
 Comparing gene expression patterns between infected and uninfected cells
 Detecting various forms of cancer as well as infections caused by pathogens
@@ -104,9 +104,9 @@ Genetic engineering has also been important in the production of other therapeut
 
 **Check Your Understanding**
 
-{{< textin question="What bacterium has been genetically engineered to produce human insulin for the treatment of diabetes?" answer="E. coli" accept="Escherichia coli" hint="Name the bacterial species this section says has produced large-scale quantities of human insulin since 1982." >}}
+{{< textin question="What bacterium has been genetically engineered to produce human insulin for the treatment of diabetes?" answer="E. coli" accept="Escherichia coli" hint="Reread the fourth paragraph of Recombinant DNA Technology and Pharmaceutical Production." >}}
 
-{{< selfcheck question="Explain how microorganisms can be engineered to produce vaccines." hint="The hepatitis B example names the gene inserted into yeast and why the resulting protein triggers immunity." >}}
+{{< selfcheck question="Explain how microorganisms can be engineered to produce vaccines." hint="Reread the third paragraph of Recombinant DNA Technology and Pharmaceutical Production." >}}
 Genetic engineering can produce subunit vaccines, which contain only a single antigenic molecule and lack any part of the genome of the pathogen. For example, a gene encoding a hepatitis B surface protein is inserted into a yeast; the yeast then produces this protein, which the human immune system recognizes as an antigen. The antigenic protein is purified from yeast cultures and administered to patients as a vaccine, and even though the vaccine does not contain the hepatitis B virus, the presence of the antigenic protein stimulates the immune system to produce antibodies that will protect the patient against the virus.
 ===CHECKS===
 subunit vaccines, which contain only a single antigenic molecule and lack any part of the genome of the pathogen
@@ -160,7 +160,7 @@ This diagram illustrates the process of using siRNA or miRNA in a eukaryotic cel
 {{< multiplechoice
   question="The science of studying the entire collection of mRNA molecules produced by cells, allowing scientists to monitor differences in gene expression patterns between cells, is called:"
   answer="transcriptomics"
-  hint="Recall the field defined near the start of this section as the science of the entire collection of mRNA molecules."
+  hint="Reread the second paragraph after the section's introduction."
 >}}
 genomics
 transcriptomics
@@ -171,7 +171,7 @@ pharmacogenomics
 {{< multiplechoice
   question="The science of studying genomic fragments from microbial communities, allowing researchers to study genes from a collection of multiple species, is called:"
   answer="metagenomics"
-  hint="Recall the field this section names for applying genomics to an entire microbial community rather than a single organism."
+  hint="Reread the third paragraph after the section's introduction."
 >}}
 pharmacogenomics
 transcriptomics
@@ -179,14 +179,14 @@ metagenomics
 proteomics
 {{< /multiplechoice >}}
 
-{{< textin question="The application of genomics to evaluate the effectiveness and safety of drugs on the basis of information from an individual's genomic sequence is called ____________." answer="pharmacogenomics" accept="toxicogenomics" hint="This section gives this field two names; either is accepted." >}}
+{{< textin question="A gene whose expression can be easily visualized and monitored is called a ________." answer="reporter gene" hint="Reread the reverse-genetics paragraph just above the GFP figure." >}}
 
-{{< textin question="A gene whose expression can be easily visualized and monitored is called a ________." answer="reporter gene" hint="This section names the type of gene attached to a gene of interest so its expression can be tracked, such as GFP or lacZ." >}}
+{{< textin question="The application of genomics to evaluate the effectiveness and safety of drugs on the basis of information from an individual's genomic sequence is called ____________." answer="pharmacogenomics" accept="toxicogenomics" hint="Reread the fourth paragraph after the section's introduction." >}}
 
 {{< multiplechoice
   question="If all cellular proteins are encoded by the cell's genes, what information does proteomics provide that genomics cannot?"
   answer="Which proteins are actually expressed, since the proteome varies and is dynamic while the genome stays constant"
-  hint="Recall the sentence contrasting what stays constant in a cell with what varies and is dynamic within an organism."
+  hint="Reread the proteomics paragraph."
 >}}
 The complete nucleotide sequence and organization of the genes
 The pattern of mRNA expression differences between infected and uninfected cells
@@ -199,7 +199,7 @@ Which proteins are actually expressed, since the proteome varies and is dynamic 
 {{< multiplechoice
   question="The insulin produced by recombinant DNA technology is"
   answer="Identical to human insulin produced in the pancreas."
-  hint="Recall how this section contrasts recombinant human insulin with the pig insulin it replaced."
+  hint="Reread the insulin sentences of the fourth paragraph of Recombinant DNA Technology and Pharmaceutical Production."
 >}}
 A combination of *E. coli* and human insulin.
 Identical to human insulin produced in the pancreas.
@@ -210,7 +210,7 @@ Engineered to be more effective than human insulin.
 {{< multiplechoice
   question="RNA interference does not influence the sequence of genomic DNA."
   answer="True"
-  hint="Recall whether this section's opening paragraph describes RNA interference as acting on DNA or on messenger RNA molecules."
+  hint="Reread the first paragraph of RNA Interference Technology."
 >}}
 True
 False
@@ -227,7 +227,7 @@ Treatment of severe anemia with kidney damage
 Used as antibiotics
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are some advantages of cloning human genes into bacteria to treat human diseases caused by specific protein deficiencies?" hint="The insulin and human growth hormone examples describe what recombinant production improves on compared to the animal-derived alternative." >}}
+{{< selfcheck question="What are some advantages of cloning human genes into bacteria to treat human diseases caused by specific protein deficiencies?" hint="Reread the fourth paragraph of Recombinant DNA Technology and Pharmaceutical Production." >}}
 Cloning human genes into bacteria such as *E. coli* allows large-scale quantities of a needed protein to be produced in a relatively inexpensive process, avoiding the supply limitations of an animal-derived alternative such as pig insulin. It also avoids the allergic reactions caused by small differences between the animal and human versions of the protein, and yields a more consistently effective pharmaceutical product.
 ===CHECKS===
 large-scale quantities ... in a relatively inexpensive process
@@ -238,4 +238,4 @@ yields a more consistently effective pharmaceutical product
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 12.3: Whole Genome Methods and Pharmaceutical Applications of Genetic Engineering](https://openstax.org/books/microbiology/pages/12-3-whole-genome-methods-and-pharmaceutical-applications-of-genetic-engineering) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures are re-encoded as WebP and rendered as mediafigures; the GFP figure (all three panels photographs) is `kind="photo"`, the Noncoding and siRNA figures (drawn process diagrams) are `kind="diagram"`; the GFP alt is rewritten to describe what the three photographs show rather than reprint the caption's own narration, and panel (a) is written from the image rather than the source alt's "glow ... over most of their bodies," since the green fluorescence is concentrated at the ears, nose, feet, and tail of the two outer mice and the middle mouse shows none; the Noncoding and siRNA alts keep the source's step-by-step wording, with one one-word typo corrected in each ("mrNA" to "mRNA" in the Noncoding alt, "Dicer than cuts" to "Dicer then cuts" in the siRNA alt) and one further correction in the Noncoding alt ("Antisense mRNA" to "Antisense RNA," matching the artwork's own label and this section's body prose) — all three source-alt defects, disclosed here per the one-word-typo rule, with no inline note. The five footnoted citations are rendered as inline parenthetical citations after the sentences they support; the two bare access URLs (the vaccines.gov and rxlist citations) are dropped, no DOI is printed for any of the five. The single-summary table (Some Genetically Engineered Pharmaceutical Products and Applications) is a lookup table, not a comparison of categories, so it is transcribed as a Markdown table with no `sortbins`; one filler Practice item ("Which application is Erythropoietin ... used for?") is built from one of its rows, with the other rows' applications as distractors. Both body Check Your Understanding boxes are rendered as body items at their note positions: of the five bullets, three are graded from a single module sentence each (two textin, one multiple choice) and two are self-checks with model answers assembled only from this module's own sentences, because their honest answers require assembling more than one sentence or, for "How is genomics different from traditional genetics?", the module never defines "traditional genetics" for the contrast the question asks for — the self-check model answer restates the module's own genomics definition and says so rather than inventing a comparison. Of the module's eight source exercises, all three Multiple Choice, the one True/False (rendered as a two-option multiple choice), and both Fill in the Blank items are adapted into Practice verbatim and keyed as printed; the unkeyed Short Answer question ("what information does proteomics provide that genomics cannot?") is fixed by one module sentence ("the genome is constant, but the proteome varies and is dynamic within an organism") and is converted to a multiple choice whose distractors are this module's own descriptions of genomics, transcriptomics, and metagenomics; the unkeyed Critical Thinking question needs several sentences assembled from the insulin and human growth hormone discussion, so it stays a self-check with a model answer written strictly from this module's own text. One filler `textin` recalls "reporter gene" from `## Key terms`. Key terms are compiled from the module's 13 defined-term elements and the book's Glossary appendix, rendered as 12 bullets: `toxicogenomics` has no distinct appendix entry of its own and is merged into the `pharmacogenomics (toxicogenomics)` bullet, whose meaning is the appendix's `pharmacogenomics (toxicogenomics)` entry. The cross-reference to [Structure and Function of RNA](/life-health-sciences/microbiology/10-biochemistry-of-the-genome/03-structure-and-function-of-rna/) (m58837) is kept as a link with its source link text; the cross-reference to *Vaccines* (m58888, a later, not-yet-authored chapter) is left as plain italicized text naming the target rather than a link. Clinical Focus Resolution names [Visualizing and Characterizing DNA, RNA, and Protein](/life-health-sciences/microbiology/12-modern-applications-of-microbial-genetics/02-visualizing-and-characterizing-dna-rna-and-protein/) as where the previous box appears (the source's "go back to the previous box" link, which points at Part 3 of the case, printed in that section) and [Microbes and the Tools of Genetic Engineering](/life-health-sciences/microbiology/12-modern-applications-of-microbial-genetics/01-microbes-and-the-tools-of-genetic-engineering/) as where the case began.</small>
+<small>This section is adapted from [Microbiology, Section 12.3: Whole Genome Methods and Pharmaceutical Applications of Genetic Engineering](https://openstax.org/books/microbiology/pages/12-3-whole-genome-methods-and-pharmaceutical-applications-of-genetic-engineering) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures are re-encoded as WebP and rendered as mediafigures; the GFP figure (all three panels photographs) is `kind="photo"`, the Noncoding and siRNA figures (drawn process diagrams) are `kind="diagram"`; the GFP alt is rewritten to describe what the three photographs show rather than reprint the caption's own narration, and panel (a) is written from the image rather than the source alt's "glow ... over most of their bodies," since the green fluorescence is concentrated at the ears, nose, feet, and tail of the two outer mice and the middle mouse shows none; the Noncoding and siRNA alts keep the source's step-by-step wording, with one one-word typo corrected in each ("mrNA" to "mRNA" in the Noncoding alt, "Dicer than cuts" to "Dicer then cuts" in the siRNA alt) and one further correction in the Noncoding alt ("Antisense mRNA" to "Antisense RNA," matching the artwork's own label and this section's body prose) — all three source-alt defects, disclosed here per the one-word-typo rule, with no inline note. The five footnoted citations are rendered as inline parenthetical citations after the sentences they support; the two bare access URLs (the vaccines.gov and rxlist citations) are dropped, no DOI is printed for any of the five. The single-summary table (Some Genetically Engineered Pharmaceutical Products and Applications) is a lookup table, not a comparison of categories, so it is transcribed as a Markdown table with no `sortbins`; one filler Practice item ("Which application is Erythropoietin ... used for?") is built from one of its rows, with the other rows' applications as distractors. Both body Check Your Understanding boxes are rendered as body items at their note positions: of the five bullets, three are graded from a single module sentence each (two textin, one multiple choice) and two are self-checks with model answers assembled only from this module's own sentences, because their honest answers require assembling more than one sentence or, for "How is genomics different from traditional genetics?", the module never defines "traditional genetics" for the contrast the question asks for — the self-check model answer restates the module's own genomics definition and says so rather than inventing a comparison. Of the module's eight source exercises, all three Multiple Choice, the one True/False (rendered as a two-option multiple choice), and both Fill in the Blank items are adapted into Practice verbatim and keyed as printed, except that the "reporter gene" and "pharmacogenomics" Fill in the Blank items are reversed from their printed order so that no item directly above a text-entry blank prints its key; the unkeyed Short Answer question ("what information does proteomics provide that genomics cannot?") is fixed by one module sentence ("the genome is constant, but the proteome varies and is dynamic within an organism") and is converted to a multiple choice whose distractors are this module's own descriptions of genomics, transcriptomics, and metagenomics; the unkeyed Critical Thinking question needs several sentences assembled from the insulin and human growth hormone discussion, so it stays a self-check with a model answer written strictly from this module's own text. The only author-written Practice item is that Erythropoietin filler. Key terms are compiled from the module's 13 defined-term elements and the book's Glossary appendix, rendered as 12 bullets: `toxicogenomics` has no distinct appendix entry of its own and is merged into the `pharmacogenomics (toxicogenomics)` bullet, whose meaning is the appendix's `pharmacogenomics (toxicogenomics)` entry. The cross-reference to [Structure and Function of RNA](/life-health-sciences/microbiology/10-biochemistry-of-the-genome/03-structure-and-function-of-rna/) (m58837) is kept as a link with its source link text; the cross-reference to *Vaccines* (m58888, a later, not-yet-authored chapter) is left as plain italicized text naming the target rather than a link. Clinical Focus Resolution names [Visualizing and Characterizing DNA, RNA, and Protein](/life-health-sciences/microbiology/12-modern-applications-of-microbial-genetics/02-visualizing-and-characterizing-dna-rna-and-protein/) as where the previous box appears (the source's "go back to the previous box" link, which points at Part 3 of the case, printed in that section) and [Microbes and the Tools of Genetic Engineering](/life-health-sciences/microbiology/12-modern-applications-of-microbial-genetics/01-microbes-and-the-tools-of-genetic-engineering/) as where the case began. The body Check Your Understanding text-entry item on which –omics field compares two cells' responses (transcriptomics) and the source Multiple Choice defining transcriptomics ask the same fact; both are source items and both are kept.</small>

@@ -128,6 +128,18 @@ test('emit --pages-out writes each page whole with every key, accept, hint, and 
   assert.doesNotMatch(masked, /answer="photosystem I"|carotenoids|A hint the solver|Another hint|Model answer\.|8,22|Let n be/);
 });
 
+test('emit --pages-out keeps two books\' same-named pages apart', () => {
+  const dir = scratch();
+  for (const book of ['bio', 'micro']) {
+    mkdirSync(join(dir, 'content/life-health-sciences', book), { recursive: true });
+    writeFileSync(join(dir, 'content/life-health-sciences', book, 'a.md'), PAGE.replace('Which complex is not involved', `Which ${book} complex is not involved`));
+  }
+  const result = spawnSync(process.execPath, [TOOL, 'emit', 'content', '--out', join(dir, 'packets'), '--pages-out', join(dir, 'masked')], { cwd: dir, encoding: 'utf8' });
+  assert.equal(result.status, 0, result.stderr);
+  assert.match(readFileSync(join(dir, 'masked', 'bio--a.md'), 'utf8'), /Which bio complex/);
+  assert.match(readFileSync(join(dir, 'masked', 'micro--a.md'), 'utf8'), /Which micro complex/);
+});
+
 test('emit --pages-out blanks the provenance footer, which names keys in prose', () => {
   const dir = scratch();
   const page = join(dir, 'content/life-health-sciences/a.md');

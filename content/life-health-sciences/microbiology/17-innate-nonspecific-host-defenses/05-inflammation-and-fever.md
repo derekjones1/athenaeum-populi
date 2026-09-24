@@ -56,7 +56,7 @@ erythema, granuloma, heat, pain, and altered function
 {{< multiplechoice
   question="Is a granuloma an acute or chronic form of inflammation? Explain."
   answer="Chronic — granulomas are pockets of infected tissue walled off and surrounded by white blood cells."
-  hint="Recall which type of inflammation occurs when the immediate response cannot clear the pathogen."
+  hint="See the paragraph that defines granulomas."
 >}}
 Chronic — granulomas are pockets of infected tissue walled off and surrounded by white blood cells.
 Acute — granulomas are pockets of infected tissue walled off and surrounded by white blood cells.
@@ -80,7 +80,7 @@ Elephantiasis (chronic edema) of the legs due to filariasis. (credit: modificati
 
 A **fever** is an inflammatory response that extends beyond the site of infection and affects the entire body, resulting in an overall increase in body temperature. Body temperature is normally regulated and maintained by the hypothalamus, an anatomical section of the brain that functions to maintain homeostasis in the body. However, certain bacterial or viral infections can result in the production of **pyrogens**, chemicals that effectively alter the "thermostat setting" of the hypothalamus to elevate body temperature and cause fever. Pyrogens may be exogenous or endogenous. For example, the endotoxin lipopolysaccharide (LPS), produced by gram-negative bacteria, is an exogenous pyrogen that may induce the leukocytes to release endogenous pyrogens such as interleukin-1 (IL-1), IL-6, interferon-γ (IFN-γ), and tumor necrosis factor (TNF). In a cascading effect, these molecules can then lead to the release of prostaglandin E₂ (PGE₂) from other cells, resetting the hypothalamus to initiate fever (illustrated below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_17_06_Hypothal" alt="A diagram in two parts. Left: a sagittal MRI brain scan with a red arrow pointing to the hypothalamus near the brainstem. Right: a flow chart in which exogenous pyrogens (LPS) lead to a box labeled leukocytes; the leukocytes lead to a list of endogenous pyrogens (IL-1, IL-6, IFN-γ, TNF); these lead to PGE2, which leads to a box labeled hypothalamus, which leads to a glowing oval labeled fever." longdesc="The left panel is a brain MRI with a red arrow pointing to the hypothalamus, just above the brainstem. The right panel is a flow chart, read top to bottom: an entry labeled 'exogenous pyrogens (LPS)' has an arrow pointing down to a box labeled 'leukocytes'; the leukocytes box has an arrow pointing down to an entry labeled 'endogenous pyrogens: IL-1, IL-6, IFN-γ, TNF'; from there an arrow leads to 'PGE2'; PGE2 has an arrow pointing down to a box labeled 'hypothalamus'; the hypothalamus box has an arrow pointing down to a glowing oval labeled 'fever'." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_17_06_Hypothal" alt="A diagram in two parts. Left: a grayscale sagittal MRI brain scan with a red arrow pointing to a green-tinted region marking the hypothalamus near the brainstem. Right: a flow chart in which exogenous pyrogens [LPS] lead to a box labeled leukocytes; the leukocytes lead to a list of endogenous pyrogens (IL-1, IL-6, IFN-γ, TNF); these lead to PGE2, which leads to a box labeled hypothalamus, with a glowing oval labeled fever directly beneath it." longdesc="The left panel is a grayscale brain MRI with a red arrow pointing up to a small region tinted green, marking the hypothalamus, just above the brainstem. The right panel is a flow chart, read top to bottom: an entry labeled 'exogenous pyrogens [LPS]' has an arrow pointing down to a box labeled 'leukocytes'; the leukocytes box has an arrow pointing down to an entry labeled 'endogenous pyrogens: IL-1, IL-6, IFN-γ, TNF'; from there an arrow leads to 'PGE2'; PGE2 has an arrow pointing down to a box labeled 'hypothalamus'; directly beneath the hypothalamus box, with no arrow between them, sits a glowing red oval labeled 'fever'." kind="diagram" >}}
 The role of the hypothalamus in the inflammatory response. Macrophages recognize pathogens in an area and release cytokines that trigger inflammation. The cytokines also send a signal up the vagus nerve to the hypothalamus.
 {{< /mediafigure >}}
 
@@ -153,7 +153,7 @@ The case began in [Physical Defenses](/life-health-sciences/microbiology/17-inna
 {{< multiplechoice
   question="Which refers to swelling as a result of inflammation?"
   answer="edema"
-  hint="This is fluid buildup — distinguish it from the redness, the walled-off pocket, and the vessel-widening that come with it."
+  hint="See the sentence in this section's first subsection that names the five observable signs."
 >}}
 erythema
 edema
@@ -164,7 +164,7 @@ vasodilation
 {{< textin
   question="The ________ is the part of the body responsible for regulating body temperature."
   answer="hypothalamus"
-  hint="This brain structure resets its own 'thermostat' when pyrogens act on it."
+  hint="See the first paragraph of the Fever subsection."
 >}}
 
 {{< textin
@@ -173,7 +173,7 @@ vasodilation
   hint="This is one of the five signs of inflammation, and it is not the swelling."
 >}}
 
-{{< sortbins question="Differentiate exogenous and endogenous pyrogens, and provide an example of each, by sorting each substance below under the pyrogen type it represents." hint="One substance is the bacterial toxin itself; the rest are chemicals the host's leukocytes release in response to it." >}}
+{{< sortbins question="Differentiate exogenous and endogenous pyrogens, and provide an example of each, by sorting each substance below under the pyrogen type it represents." hint="See the first paragraph of the Fever subsection and the flow chart after it." >}}
 {"bins": ["Exogenous pyrogen", "Endogenous pyrogen"],
  "items": [
   {"label": "IL-1", "bin": 1},
@@ -188,7 +188,7 @@ vasodilation
 {{< multiplechoice
   question="Which type of inflammation occurs at the site of an injury or infection?"
   answer="acute"
-  hint="This kind is short-lived and localized — not a long-term battle, and not a description of where a pyrogen comes from."
+  hint="Compare the first two subsections of this section."
 >}}
 acute
 chronic

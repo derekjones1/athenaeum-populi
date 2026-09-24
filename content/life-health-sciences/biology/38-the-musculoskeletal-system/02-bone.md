@@ -23,13 +23,13 @@ The mineral salts primarily include hydroxyapatite, a mineral formed from calciu
 
 The bones of the human skeleton are classified by their shape: long bones, short bones, flat bones, sutural bones, sesamoid bones, and irregular bones (illustrated below).
 
-{{< mediafigure src="biology/Figure_38_02_01" kind="diagram" eager="true" alt="An illustration of a full human skeleton surrounded by five labeled bone-type panels, each linked to the skeleton by an arrow: a ridged flat bone (sternum), an irregular bone with a central opening (vertebra), a slender long bone (femur), a small rounded sesamoid bone in a knee joint (patella), and three adjoining short bones of the foot (the cuneiforms)." longdesc="A central illustration of the full human skeleton is surrounded by five labeled panels, each connected to the skeleton by a gray arrow pointing outward from the skeleton to the panel. Top left: an arrow leads to a panel labeled 'Flat bone,' showing a long ridged plate labeled 'Sternum.' Top right: an arrow leads to a panel labeled 'Irregular bone,' showing a vertebra with a central opening and projecting arms, labeled 'Vertebra.' Middle left: an arrow leads to a panel labeled 'Long bone,' showing a slender bone with rounded ends labeled 'Femur.' Bottom left: a second arrow leads to a panel labeled 'Sesamoid bone,' showing a small rounded bone set into a knee joint, labeled 'Patella.' Bottom right: an arrow leads to a panel labeled 'Short bones,' showing three adjoining foot bones labeled, left to right, 'Lateral cuneiform,' 'Intermediate cuneiform,' and 'Medial cuneiform.'" >}}
+{{< mediafigure src="biology/Figure_38_02_01" kind="diagram" eager="true" alt="An illustration of a full human skeleton surrounded by five labeled bone-type panels, each linked to the skeleton by an arrow: a ridged flat bone (sternum), an irregular bone with a central opening (vertebra), a slender long bone (femur), a small rounded sesamoid bone in a knee joint (patella), and three adjoining short bones of the foot (the cuneiforms)." longdesc="A central illustration of the full human skeleton is surrounded by five labeled panels, each connected to the skeleton by a gray arrow pointing outward from the skeleton to the panel. Top left: an arrow from the sternum leads to a panel labeled 'Flat bone,' showing a long ridged plate labeled 'Sternum.' Top right: an arrow from the lower spine leads to a panel labeled 'Irregular bone,' showing a vertebra with a central opening and projecting arms, labeled 'Vertebra.' Middle left: an arrow from the thigh of the leg on the viewer's left leads to a panel labeled 'Long bone,' showing a slender bone with rounded ends labeled 'Femur.' Bottom left: an arrow from the knee of that same leg leads to a panel labeled 'Sesamoid bone,' showing a small rounded bone set into a knee joint, labeled 'Patella.' Bottom right: an arrow from the ankle of the other leg leads to a panel labeled 'Short bones,' showing three adjoining foot bones labeled, left to right, 'Lateral cuneiform,' 'Intermediate cuneiform,' and 'Medial cuneiform.'" >}}
 Shown are different types of bones: flat, irregular, long, short, and sesamoid.
 {{< /mediafigure >}}
 
 **Long bones** are longer than they are wide and have a shaft and two ends. The **diaphysis**, or central shaft, contains bone marrow in a medullary (marrow) cavity. The rounded ends, the **epiphyses**, are covered with articular cartilage and are filled with red bone marrow, which produces blood cells (shown below). Most of the limb bones are long bones—for example, the femur, tibia, ulna, and radius. Exceptions to this include the patella and the bones of the wrist and ankle.
 
-{{< mediafigure src="biology/Figure_38_02_02" kind="diagram" alt="A long bone drawn upright, with its two rounded ends bracketed as the epiphyses (each capped with articular cartilage and filled with speckled spongy bone) and its long narrow shaft bracketed as the diaphysis, with a leader line to its hollow center labeled medullary cavity." longdesc="The illustration is titled 'Long Bone' and shows a single long bone standing upright, with labels and leader lines to the left and right. At the top, a bracket labeled 'Epiphysis' spans the rounded end, which has a blue cap labeled 'Articular cartilage' and a speckled red interior labeled 'Spongy bone.' Below it, a leader line labeled 'Medullary cavity' points to the hollow center of the long, narrow shaft, which a bracket labels 'Diaphysis'; partway down the shaft, a short yellow band and a branching red line are drawn but not separately labeled. At the bottom, a bracket labeled 'Epiphysis' spans the other rounded end, which has a blue cap labeled 'Articular cartilage.'" >}}
+{{< mediafigure src="biology/Figure_38_02_02" kind="diagram" alt="A long bone drawn upright, with its two rounded ends bracketed as the epiphyses (each capped with articular cartilage, the upper one cut open to show speckled spongy bone) and its long narrow shaft bracketed as the diaphysis, with a leader line to its hollow center labeled medullary cavity." longdesc="The illustration is titled 'Long Bone' and shows a single long bone standing upright, with labels and leader lines to the left and right. At the top, a bracket labeled 'Epiphysis' spans the rounded end, which has a blue cap labeled 'Articular cartilage' and a speckled red interior labeled 'Spongy bone.' Below it, a leader line labeled 'Medullary cavity' points to the hollow center of the long, narrow shaft, which a bracket labels 'Diaphysis'; partway down the shaft, a short yellow band and a branching red line are drawn but not separately labeled. At the bottom, a bracket labeled 'Epiphysis' spans the other rounded end, which has a blue cap labeled 'Articular cartilage.'" >}}
 The long bone is covered by articular cartilage at either end and contains bone marrow (shown in yellow in this illustration) in the medullary cavity.
 {{< /mediafigure >}}
 
@@ -55,7 +55,7 @@ Bones are considered organs because they contain various types of tissue, such a
 
 **Compact bone** (or cortical bone) forms the hard external layer of all bones and surrounds the medullary cavity, or bone marrow. It provides protection and strength to bones. Compact bone tissue consists of units called osteons or Haversian systems. **Osteons** are cylindrical structures that contain a mineral matrix and living osteocytes connected by canaliculi, which transport blood. They are aligned parallel to the long axis of the bone. Each osteon consists of **lamellae**, which are layers of compact matrix that surround a central canal called the Haversian canal. The **Haversian canal** (osteonic canal) contains the bone’s blood vessels and nerve fibers (shown below). Osteons in compact bone tissue are aligned in the same direction along lines of stress and help the bone resist bending or fracturing. Therefore, compact bone tissue is prominent in areas of bone at which stresses are applied in only a few directions.
 
-{{< mediafigure src="biology/Figure_38_02_04" kind="diagram" alt="A cylinder of bone tissue cut away to show its interior: a solid rod-shaped osteon projects from the dense outer wall, a narrow channel runs through its center, and porous, lattice-like tissue fills the interior of the cylinder." longdesc="A cylindrical cross-section of bone is drawn at an angle, cut away to reveal its internal structure. At upper left, 'Lamellae' labels the concentric rings of a partly exposed rod near the top of the cylinder. At upper middle, 'Osteon of compact bone' labels the dense outer wall of the cylinder. At upper right, 'Trabeculae of spongy bone' labels the porous, lattice-like tissue filling the interior of the cylinder. A line from 'Haversian canal' points to a narrow central channel running down the middle of the projecting osteon rod, where thin red and blue lines converge. At lower left, 'Osteon' labels the shaft of a solid cylindrical rod projecting from the outer wall, the same rod whose tip is labeled 'Lamellae.'" >}}
+{{< mediafigure src="biology/Figure_38_02_04" kind="diagram" alt="A cylinder of bone tissue cut away to show its interior: a solid rod-shaped osteon projects from the dense outer wall, a narrow channel runs through its center, and porous, lattice-like tissue fills the interior of the cylinder." longdesc="A cylindrical cross-section of bone is drawn at an angle, cut away to reveal its internal structure. At upper left, 'Lamellae' labels the concentric rings of a partly exposed rod near the top of the cylinder. At upper middle, 'Osteon of compact bone' labels the dense outer wall of the cylinder. At upper right, 'Trabeculae of spongy bone' labels the porous, lattice-like tissue filling the interior of the cylinder. 'Haversian canal,' at right, has two lines: one to the central channel at the top of the projecting osteon rod, where a red and a blue vessel emerge side by side, and one to a vertical channel carrying red vessels in the cut face of the outer wall. At lower left, 'Osteon' labels the shaft of a solid cylindrical rod projecting from the outer wall, the same rod whose tip is labeled 'Lamellae.'" >}}
 Compact bone tissue consists of osteons that are aligned parallel to the long axis of the bone, and the Haversian canal that contains the bone’s blood vessels and nerve fibers. The inner layer of bones consists of spongy bone tissue. The small dark ovals in the osteon represent the living osteocytes. (credit: modification of work by NCI, NIH)
 {{< /mediafigure >}}
 
@@ -78,7 +78,7 @@ Spongy bone reduces the density of bone and allows the ends of long bones to com
 
 The neck of the femur is horizontal like the toothpick in the wall. The weight of the body pushes it down near the joint, but the vertical diaphysis of the femur pushes it up at the other end. The neck of the femur must be strong enough to transfer the downward force of the body weight horizontally to the vertical shaft of the femur (shown below).
 
-{{< mediafigure src="biology/Figure_38_02_05" kind="diagram" alt="A side outline of a hip and thigh bone with two bundles of curved lines sweeping through it in an X pattern: one bundle, labeled 'Tension lines,' curves down the near side of the bone, and the other, labeled 'Compression lines,' curves down the far side." longdesc="A side outline of a hip and thigh bone shows two bundles of curved lines sweeping through it. One cluster of lines curves from the upper portion of the bone down through the neck and along one side of the shaft to a label at the bottom left reading 'Tension lines.' A second, denser cluster of lines curves from the upper portion down through the neck and along the opposite side of the shaft to a label at the bottom right reading 'Compression lines.' The two bundles cross in an X pattern through the neck of the bone before separating toward the two labels." >}}
+{{< mediafigure src="biology/Figure_38_02_05" kind="diagram" alt="An outline of the upper end of a thigh bone, its rounded head at upper right, with two bundles of curved lines crossing through it: blue lines, labeled 'Tension lines,' run down the left side of the shaft, and red lines, labeled 'Compression lines,' run down the right side." longdesc="An outline of the upper end of a thigh bone shows its rounded head at the upper right, the neck below it, a knob at the upper left, and the shaft running down to the bottom. Blue lines arc from the head leftward across the neck and bend down along the left side of the shaft to a label at the bottom left reading 'Tension lines.' Red lines run from the top of the head down through the neck and along the right side of the shaft to a label at the bottom right reading 'Compression lines'; a few more red arcs cross the knob at upper left and the small bump on the right edge of the shaft. The blue and red lines cross each other in a grid through the head and neck before separating toward the two labels." >}}
 Trabeculae in spongy bone are arranged such that one side of the bone bears tension and the other withstands compression.
 {{< /mediafigure >}}
 
@@ -108,7 +108,7 @@ In long bones, chondrocytes form a template of the hyaline cartilage diaphysis. 
 
 In the last stage of prenatal bone development, the centers of the epiphyses begin to calcify. Secondary ossification centers form in the epiphyses as blood vessels and osteoblasts enter these areas and convert hyaline cartilage into spongy bone. Until adolescence, hyaline cartilage persists at the **epiphyseal plate** (growth plate), which is the region between the diaphysis and epiphysis that is responsible for the lengthwise growth of long bones (shown below).
 
-{{< mediafigure src="biology/Figure_38_02_06" kind="diagram" alt="A six-panel flow diagram showing a long bone developing from a plain cartilage outline through a denser-stippled outline and a mottled center, a vessel-lined shaft with a hollow cavity, to a mature bone with a capped end, spongy interior, thin growth-plate band, and dense outer shaft." longdesc="Six bone-shaped panels are arranged left to right, connected by five rightward arrows, showing a long bone developing in stages. Panel 1, labeled 'Hyaline cartilage model,' shows a plain gray bone-shaped outline. Panel 2, unlabeled, shows the same outline with a denser band of dark stippling gathering in its narrow middle. Panel 3, labeled 'Primary ossification center,' shows the shape with a mottled red patch and small red vessels in its middle. Panel 4 shows a taller bone shape labeled 'Periosteum (covers compact bone)' around its outside, with 'Medullary cavity' labeling a hollow space inside the shaft and 'Artery and vein (provide nutrients to bone)' labeling red and blue vessels entering near the bottom. Panel 5 repeats this shape with 'Secondary ossification center' labeling a stippled patch that has appeared in the rounded end, and the same 'Artery and vein' label on its vessels. Panel 6, the largest, shows the mature long bone with 'Articular cartilage' labeling its pale rounded cap, 'Spongy bone' labeling the speckled tissue beneath it, 'Epiphyseal plate' labeling a thin band separating the cap from the shaft, and 'Compact bone' labeling the dense outer shaft." >}}
+{{< mediafigure src="biology/Figure_38_02_06" kind="diagram" alt="A six-panel flow diagram showing a long bone developing from a plain cartilage outline through a denser-stippled outline and a mottled center, a vessel-lined shaft with a hollow cavity, to a mature bone with a capped end, spongy interior, thin growth-plate band, and dense outer shaft." longdesc="Six bone-shaped panels are arranged left to right, connected by five rightward arrows, showing a long bone developing in stages. Panel 1, labeled 'Hyaline cartilage model,' shows a plain gray bone-shaped outline. Panel 2, unlabeled, shows the same outline with a denser band of dark stippling gathering in its narrow middle. Panel 3, labeled 'Primary ossification center,' shows the shape with a mottled red patch and small red vessels in its middle. Panel 4 shows a taller bone shape labeled 'Periosteum (covers compact bone)' around its outside, with 'Medullary cavity' labeling a hollow space inside the shaft and 'Artery and vein (provide nutrients to bone)' labeling red and blue vessels entering near the bottom. Panel 5 repeats this shape with 'Secondary ossification center' labeling red and blue vessels that now run across the middle of the rounded end, and the same 'Artery and vein' label on its vessels. Panel 6, the largest, shows the mature long bone with 'Articular cartilage' labeling its pale rounded cap, 'Spongy bone' labeling the speckled tissue beneath it, 'Epiphyseal plate' labeling a thin band separating the cap from the shaft, and 'Compact bone' labeling the dense outer shaft." >}}
 Endochondral ossification is the process of bone development from hyaline cartilage. The periosteum is the connective tissue on the outside of bone that acts as the interface between bone, blood vessels, tendons, and ligaments.
 {{< /mediafigure >}}
 
@@ -202,7 +202,7 @@ Bone, or osseous tissue, is connective tissue that includes specialized cells, m
 {{< multiplechoice
   question="Compact bone is composed of ________."
   answer="osteons"
-  hint="This section names the cylindrical structural units aligned along the bone's length earlier in the same paragraph."
+  hint="Reread the opening paragraph of the Compact Bone Tissue subsection."
 >}}
 trabeculae
 compacted collagen
@@ -256,10 +256,16 @@ spongy bone is prominent in areas of bones that are not heavily stressed or at w
 
 ### Explain the role of the different cell types in bone
 
+{{< textin
+  question="A bone cell responsible for bone formation is called an ________."
+  answer="osteoblast"
+  hint="This cell secretes new bone matrix and later becomes trapped within it as a less active cell type."
+>}}
+
 {{< multiplechoice
   question="The cells responsible for bone resorption are ________."
   answer="osteoclasts"
-  hint="This is the cell type described earlier as removing bone structure by releasing enzymes and acids."
+  hint="Reread the Cell Types in Bones paragraph and the Bone Remodeling and Repair opening."
 >}}
 osteoclasts
 osteoblasts
@@ -270,7 +276,7 @@ osteocytes
 {{< multiplechoice
   question="Osteoporosis is a condition where bones become weak and brittle. It is caused by an imbalance in the activity of which cells?"
   answer="osteoclasts and osteoblasts"
-  hint="Osteoporosis reflects too much removal relative to formation — think about which two cell types are responsible for those opposite processes."
+  hint="Reread the opening paragraph of Bone Remodeling and Repair."
 >}}
 osteoclasts and osteoblasts
 osteoclasts and osteocytes
@@ -286,12 +292,6 @@ osteocytes maintain normal bone structure by recycling the mineral salts in the 
 osteoclasts remove bone tissue by releasing lysosomal enzymes and acids that dissolve the bony matrix
 osteoblasts are bone cells that are responsible for bone formation
 {{< /selfcheck >}}
-
-{{< textin
-  question="A bone cell responsible for bone formation is called an ________."
-  answer="osteoblast"
-  hint="This cell secretes new bone matrix and later becomes trapped within it as a less active cell type."
->}}
 
 ### Explain how bone forms during development
 
@@ -315,16 +315,16 @@ because no vessels invade the template, the structure is not converted into trab
 {{< /selfcheck >}}
 
 {{< textin
+  question="The process of bone development from fibrous membranes, involved in forming the flat bones of the skull, the mandible, and the clavicles, is called ________."
+  answer="intramembranous ossification"
+  hint="This pathway does not go through a cartilage stage first — contrast it with the process used for most other bones."
+>}}
+
+{{< textin
   question="The process of bone formation by osteoblasts is called ________."
   answer="ossification"
   accept="osteogenesis"
   hint="This general process includes two specific pathways described later in this section, one starting from fibrous membranes and one from cartilage."
->}}
-
-{{< textin
-  question="The process of bone development from fibrous membranes, involved in forming the flat bones of the skull, the mandible, and the clavicles, is called ________."
-  answer="intramembranous ossification"
-  hint="This pathway does not go through a cartilage stage first — contrast it with the process used for most other bones."
 >}}
 
 ---

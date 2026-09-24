@@ -80,3 +80,56 @@ and the extractor is a convenience. A hint-prints-key lint was measured
 hint defects stated an option's *fact*, not its text, which no regex
 reads. `mediafigure` emits no `id`, so a cross-page figure reference links
 the sibling page, not the figure.
+
+## Second review of chapters 1–2 (September 22, 2026)
+
+Four Opus reviewers re-read the committed chapters 1–2, the kit, and the
+corpus's lint gaps. No key was wrong and no source exercise was missing,
+but chapter 1 carried 37 findings and chapter 2 about 45 that the Sonnet
+checkers, the claim pass, and the blind solve had passed: hints that
+state the key, a root of it, or the correct option's fact (the largest
+class, 32 items; 2.3's checker had reported none); a stem directly above
+a textin printing its key; headline terms kept as recall items; accept
+gaps; alts that misdescribe the drawing (1.6's arm arrow is on the
+woman's left arm; 2.2's δ⁻ electron pairs are unshared); footers quoting
+the floor as 12 or 15. Two Opus fixers applied them (ch1–2 hints now say
+where to look), four more claim corrections landed (errata 882–884, 886),
+and the chapter-2 Interactive Link items graded from two sentences became
+prompts. Sample audits of Biology and Microbiology found the same hint
+class at similar rates — their briefs had asked only for a "strategy
+hint", so their checkers passed fact-stating hints by design.
+
+Supersedes the chapter-2 lesson above: the hint-prints-key lint landed in
+a tighter form, with five other rules, in `tools/lint/lints-leaks.mjs`
+(HTML entities in shortcode params, ASCII chemistry, an item directly
+above a textin printing its key, a textin key's root in its own hint, an
+acronym spelled before its blank, an MC hint printing its keyed option);
+the hint rule ("say where to look") is now in the life-sciences baseline
+and both kits; the textin plural fold is two-way; the per-section checker
+runs on Opus. Errata 879–896.
+
+## Sweep close-out (September 23, 2026)
+
+The second review's findings led to a sweep of Biology and Microbiology
+to the same standard (`docs/history/biology.md` and
+`docs/history/microbiology.md`, "Practice sweep and long-description
+pass"). What it changed for this book:
+
+- **Coverage gate:** `verify-source-coverage` counts 85/85 of chapters
+  1–2's exercise units rendered (77 as items, the Interactive Link
+  Questions as one graded CT and seven prompts). With `--verbose` it
+  prints the per-page Interactive Link tally the footer must state.
+- **Grader and lints**, landed for the corpus and clean here: accept
+  members up to seven words (the key stays four), an "X (Y)" answer
+  grading when both halves are correct, and three lints (numeric textin,
+  a selfcheck hint restating its rubric, a hint saying "not X" where X is
+  accepted). The heading/title-leak lint was measured (about 10 raw hits
+  on these pages) and decided against: the rule became an authoring
+  preference, not a defect, and the hits stay.
+- **Kit (`docs/briefs/anatomy-physiology/run.md`):** figure, alt, and
+  `longdesc` work runs on Opus, never Sonnet, including the alt-errata
+  verifier, and the parent spot-checks one "clean" verdict after any
+  delegated model's first unit; agents sharing the scratchpad name their
+  helper scripts by unit; the parent counts from the packet list, not an
+  agent's totals; and after a sweep only what the ledger carry rule does
+  not carry is re-solved.

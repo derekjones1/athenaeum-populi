@@ -157,9 +157,8 @@ some species may be harmed by the marking technique, reducing their survival
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The number of population members divided by the area or volume being measured is called ________."
-  answer="population density"
-  accept="population densities"
+  question="Uniform dispersion is observed in plants that secrete substances inhibiting the growth of nearby individuals, such as the release of toxic chemicals by the sage plant *Salvia leucophylla*, a phenomenon called ________."
+  answer="allelopathy"
 >}}
 
 {{< selfcheck question="How do a population's size and density affect its birth and death rates?" >}}
@@ -183,9 +182,8 @@ the Chinook salmon and the pronghorn antelope
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A hormonally induced physiological condition that prepares the body for successful mating, informally called \"heat,\" is known as the ________."
-  answer="estrus cycle"
-  accept="oestrus cycle|estrous cycle|estrus|oestrus"
+  question="Which plant, given as an example of a species that reproduces only once during its lifetime, flowers once and then dies?"
+  answer="bamboo"
 >}}
 
 {{< selfcheck question="Describe the tradeoffs organisms face when reproducing early versus late in life." >}}
@@ -202,6 +200,7 @@ they risk that they will not survive to reproductive age
 {{< textin
   question="The number of organisms added to a population in each reproductive generation is called the ________."
   answer="population growth rate"
+  accept="growth rate"
 >}}
 
 {{< multiplechoice
@@ -241,9 +240,9 @@ lower fecundity, containing fewer eggs
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Regulation of a population by a factor whose effect on mortality does not depend on how dense the population is, such as weather or a natural disaster, is called ________."
-  answer="density-independent regulation"
-  accept="density-independent"
+  question="Scientists who have sequenced at least half of the woolly mammoth's genome believe mammoths are between 98 and 99 percent identical to which modern animals?"
+  answer="elephants"
+  accept="modern elephants"
 >}}
 
 ### 45.5 Human Population Growth
@@ -302,9 +301,9 @@ the exoskeletons of living and dead coral make up most of the reef structure, pr
 ### 45.7 Behavioral Biology: Proximate and Ultimate Causes of Behavior
 
 {{< textin
-  question="The change in an organism's activity in response to a stimulus is called ________."
-  answer="behavior"
-  accept="behaviour"
+  question="An involuntary and rapid response to a stimulus, such as pulling a hand away from a hot stove, is called a(n) ________."
+  answer="reflex action"
+  accept="reflex"
 >}}
 
 {{< selfcheck question="What is conditioned behavior, and how does operant conditioning modify it?" >}}
@@ -334,13 +333,8 @@ the extension of population biology and evolutionary theory to social organizati
 secondary consumers
 primary consumers
 tertiary consumers
-apex consumers
+primary producers
 {{< /multiplechoice >}}
-
-{{< textin
-  question="The organism positioned at the very top of a food chain, with no higher-level consumers preying on it, is called a(n) ________."
-  answer="apex consumer"
->}}
 
 {{< selfcheck question="What is a holistic ecosystem model, and why is this type of ecosystem study limited in practice?" >}}
 A holistic ecosystem model attempts to quantify the composition, interaction, and dynamics of entire ecosystems, and it is the most representative model of the ecosystem in its natural state. However, this type of study is limited by time and expense, and it is neither feasible nor ethical to do experiments on large natural ecosystems.
@@ -350,6 +344,11 @@ it is the most representative model of the ecosystem in its natural state
 this type of study is limited by time and expense
 it is neither feasible nor ethical to do experiments on large natural ecosystems
 {{< /selfcheck >}}
+
+{{< textin
+  question="The organism positioned at the very top of a food chain, with no higher-level consumers preying on it, is called a(n) ________."
+  answer="apex consumer"
+>}}
 
 ### 46.2 Energy Flow through Ecosystems
 

@@ -97,7 +97,7 @@ government agencies might instead assume responsibility for developing critical 
 {{< multiplechoice
   question="What did the development of the iChip allow researchers to do?"
   answer="Investigate the antimicrobial-producing capabilities of soil microbes that are difficult to grow by standard laboratory cultivation techniques"
-  hint="Recall what the iChip lets researchers do to soil microbes without bringing them into the lab at all."
+  hint="Reread the sentence in the opening paragraph that introduces the iChip and its Nature citation."
 >}}
 Investigate the antimicrobial-producing capabilities of soil microbes that are difficult to grow by standard laboratory cultivation techniques
 Make a large number of related antimicrobial compounds from simple chemical precursors

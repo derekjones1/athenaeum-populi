@@ -12,7 +12,7 @@ your section number.
 
 **Never run a git command of any kind. Do not spawn sub-agents.** Do not run
 `npm test`, `npm run ci`, `npm run build`, `baseline:update`, `ledger:merge`,
-`validate-content`, or any `source:*` command. Do not edit the chapter
+`validate`, or any `source:*` command. Do not edit the chapter
 `_index.md`, the errata file, the media manifest, the playbooks, or another
 section. `npm run verify-section -- <your page>` is the one command you run
 repeatedly.
@@ -36,22 +36,32 @@ at once).
 ## 1. Read, in this order — and only this
 
 1. `$SP/run-facts.md`.
-2. `docs/subjects/anatomy-physiology.md` — all of it. It wins wherever it
-   differs from the baseline. Its "What is the same as Biology 2e" section
-   is the mapping table you build from; its rules 1–5 are this book's own.
-3. `docs/subjects/life-sciences.md` — the baseline: the page skeleton
+2. `docs/subjects/anatomy-physiology.md` — all of it except "Where the
+   files go" after the tree, "Knowledge checks", and "Build budgets". It
+   wins wherever it differs from the baseline. Its "What is the same as
+   Biology 2e" section is the mapping table you build from; its rules 1–5
+   are this book's own; its chapter 1–2 lessons (end of "Exercises") are
+   the defects the last runs shipped.
+3. `docs/subjects/life-sciences.md` — skip "Where the files go",
+   "Knowledge checks", "Completion audit", and "Done checklist". The
+   baseline: the page skeleton
    ("The section page, in order"), media and alt policy, `textin`/
    `selfcheck`/`sortbins` rules, **"Unkeyed source questions: graded when
    the module fixes the answer"** (the honest graded forms — you apply them
    to feature-box questions and to Interactive Link Questions), the table →
    `sortbins` rule, **"No source exercise is ever dropped, and 'duplicate'
    is a claim to prove"**, and "What the first retrofit's checkers caught".
-4. `docs/authoring-playbook.md` — **§0 (source-first), §3 (the component
-   contract and the `## Practice` block), and §5 (working rules) only.**
-   Grep `^## ` for the line numbers and Read those ranges; §1, §2, §4, and
-   §6 are math-only or parent-only.
-5. The shortcode contracts you will use: `layouts/shortcodes/multiplechoice.html`,
-   `textin.html`, `selfcheck.html`, `mediafigure.html`, `sortbins.html`.
+4. `docs/authoring-playbook.md` — **§0 rules 4–5 only; in §3 only the
+   Multiple choice (text mode), Callouts, Text recall, Self-check, Sort
+   into bins, and Media figure paragraphs and "The section-final
+   `## Practice` block" up to "Knowledge Checks"; and §5 (working
+   rules).** Grep `^## \|^\*\*` for the line numbers and Read those
+   ranges; the rest is math-only, KC-only, or parent-only (§0 rule 1's
+   `git status` is the parent's, never yours).
+5. The shortcode contracts: only the leading `{{- /* … */ -}}` comment (the
+   param list) of `layouts/shortcodes/multiplechoice.html`, `textin.html`,
+   `selfcheck.html`, `mediafigure.html`, `sortbins.html`; `verify-section`
+   rejects an unknown param.
 6. ONE exemplar page named in the run facts, once, for voice and shape.
 
 Do not read `AGENTS.md`, `docs/history/`, `docs/subjects/biology.md`,
@@ -67,9 +77,9 @@ or the checker/claim-pass briefs.
 - **Visual authority:** `$SP/pdf/chNN/p-0NNN.png` (ranges in the run facts).
   The section's exercises are in the CNXML per section; the pooled PDF
   pages are visual confirmation only. **The PDF is older than the CNXML**:
-  if the run facts list your module among the September 8, 2026 errata
-  modules, the CNXML's wording or image is the corrected one and the PDF's
-  is not a defect to report.
+  if your module is in the playbook's September-8 table, the CNXML's
+  wording or image is the corrected one and the PDF's is not a defect to
+  report.
 - **Pre-extracted by the parent** (a convenience, never the authority —
   confirm every key against the raw CNXML): `$SP/keys-N.M.txt` (objectives,
   defined terms with context, the glossary, summary, every feature box with
@@ -103,8 +113,11 @@ those do not print or what authors most often get wrong.
    class-less `<term>` at its defining occurrence (this book has no
    `no-emphasis` terms). Footnotes become inline parenthetical citations
    (bare access URLs dropped, DOIs kept). A one-word source typo is printed
-   correctly WITHOUT an inline note but named in the footer AND in your
-   ledger; **a factual claim you believe wrong is transcribed as printed**
+   correctly WITHOUT an inline note (never a Source note, whatever the run
+   facts seem to say) but named in the footer AND in your ledger. Every
+   figure cross-reference you reword ("see the figure below, panel a" for a
+   `<link>` + "a") is named in the footer — none dropped, none silent;
+   **a factual claim you believe wrong is transcribed as printed**
    and listed under "suspected claim errors" — the claim pass and the
    parent adjudicate it.
 4. Feature boxes as callouts per the playbook's table (rule 2), headed with
@@ -122,7 +135,17 @@ those do not print or what authors most often get wrong.
    where the caption does not, the labeled structures in the artwork's
    order (a `longdesc` for a multi-panel or label-dense figure); `kind`
    explicit on every figure, judged from the picture; `eager="true"` on the
-   first only. List each source-alt error in your ledger.
+   first only. Describe panels, sides, and counts from the drawing, never
+   from the source alt: left/right is the subject's (1.6's arm arrow is on
+   the woman's LEFT arm), and bands, views, and panels are counted in the
+   image. Before writing a `longdesc`, write in your ledger an inventory
+   of the image: panels, every printed label, every count, and every arrow
+   or leader line as `source → target`, both ends zoomed (crop and upscale
+   with PIL); then every printed label is in the alt, `longdesc`, or
+   caption, and every sentence matches the inventory — a third of the
+   shipped Biology and Microbiology `longdesc`s failed exactly this.
+   List each source-alt error in your ledger. A figure's file name
+   is not reader-visible: never write a Source note about a stem.
 6. Tables with a `summary`: Markdown from the CELLS, checked against the
    PDF; each comparison table gets ONE `sortbins` (decision in the run
    facts). A spanning header row is the caption line, not a data row.
@@ -136,7 +159,10 @@ those do not print or what authors most often get wrong.
    page — counts of graded items and `selfcheck`s, the Interactive Link
    Questions graded vs standing as prompts, every filler item and its
    sentence, every one-word correction, every reordered item, every
-   author-written caption. The parent logs errata at close-out; the footer
+   author-written caption, every reworded figure reference. Every number
+   comes from your ledger's tally (§5), written after the last
+   `verify-section`; the floor, if the footer cites it, is 3 per objective
+   and 8 per section — never 12 or 15. The parent logs errata at close-out; the footer
    names a correction as a correction and says nothing about where it is
    logged — neither "logged as an erratum" nor "reported to the parent".
 
@@ -160,18 +186,52 @@ playbooks. Apply them literally; these are the recurring failures:
   sibling terms — never invented.
 - **Never edit a source option, stem, or key to dodge a leak** — reorder
   and disclose, or drop and name it in the footer.
-- **Leaks:** grep every stem, hint, option list, alt, caption, and
-  `longdesc` on the page for every key you add, forwards and backwards. A
-  distractor directly above a `textin` may not be its key. A figure whose
-  alt or `longdesc` names the answer sends that item back to `selfcheck` or
-  gets a rewritten alt — anatomy figures label everything, so this bites
-  every labelling item.
+- **Leaks — the top defect class in both runs and in their re-review.**
+  (1) Nothing in the item directly above a `textin` — its stem, its
+  options, OR its hint — prints the `textin`'s key or the key's root,
+  singular, or plural; stems were the gap, not just options. Order the
+  group so every recall item comes first. (2) Grep every stem, hint,
+  option list, alt, caption, and `longdesc` on the page for every key,
+  forwards and backwards. (3) A figure whose alt or `longdesc` names the
+  answer sends that item back to `selfcheck` or gets a rewritten alt —
+  anatomy figures label everything, so this bites every labelling item.
+  (4) A glossary term that sibling items necessarily print, or that a
+  source Review Question on the page already keys or asks about, is a
+  Key-terms bullet, not a recall item — pick another term (playbook
+  "Headline glossary terms"; life-sciences "Each thing once"). Prefer a
+  term the group's own `###` objective heading and the page title do not
+  print, when the objective offers one. (5) Fix a
+  leak by order or wording; never convert a `textin` to a multiple choice
+  to escape one.
+- **Hints say WHERE to look** — the subsection, the figure, the table —
+  never the key, a root or derivative of it (*pronation* for prone,
+  *nutrient* for micronutrients), the fact the correct option asserts, or a
+  fact the module never states. The forms the September 22 sweep rewrote
+  about 2,470 times in Biology and Microbiology: translating the key's
+  Greek or Latin root, restating the definition that is the key,
+  eliminating the distractors by name, naming a heading whose title is the
+  key, listing a `selfcheck`'s rubric clauses, steering away from an
+  answer the accept list takes. Read each hint against its own key and
+  options, then against the stem, options, and hint of the item above;
+  then cover the options — if the stem and hint alone answer it, cut the
+  hint to the location.
+- The literal forms of these leaks and of ASCII chemistry are now
+  lint-enforced (playbook, end of "Exercises"), which also catches a
+  `textin` hint word built on a five-letter-plus key's root (*pronation*
+  for `prone`) and an MC hint naming a subsection whose title is the key;
+  the lints do not see the fact the correct option asserts, a fact the
+  module never states, or other paraphrases — you do.
 - **`textin`:** unpaired tag; answer 1–4 words; no `$`; the answer in
   neither question nor hint; `accept` is `|`-separated and lists only what
-  the grader would otherwise miss (irregular plural or singular of a keyed
-  plural, a module abbreviation, a Latin/English pair the module prints, a
-  hyphen between letters) — a member that normalizes to the answer is
-  rejected. Run every member through the real grader:
+  the grader would otherwise miss (an irregular plural or singular, a
+  module abbreviation, a Latin/English pair the module prints, a hyphen
+  between letters). The grader folds a regular plural BOTH ways — a plural
+  key accepts its singular and a singular key its plural — so never list
+  either; a member that normalizes to the answer is rejected. Run every
+  member, and every natural variant a correct learner types (the full name
+  with and without its head noun, the module's synonyms and
+  abbreviations), through the real grader — the sweep added about eight
+  missing accepts per unit:
   `node -e 'import("./assets/js/lib/text/check-text.mjs").then(m=>console.log(m.checkText("<variant>","<answer>",{accept:"<accept>"})))'`
 - **Key-term recall `textin`s** come from the glossary: the meaning is the
   question, the term the answer; a term whose meaning the glossary states
@@ -185,7 +245,11 @@ playbooks. Apply them literally; these are the recurring failures:
 - **Fillers** (summary/body cloze, select-the-term, term recall) name their
   sentence in the ledger and leak into each other as readily as source
   items.
-- Every regular-section item needs a concise, strategy-oriented `hint`.
+- Every regular-section item needs a concise `hint` that says where to
+  look (above).
+- **Never a numeric `textin`** — not a digit, not a number word (`three`),
+  not a measurement: a summary cloze that would blank a count blanks a
+  different phrase, or the count becomes a `multiplechoice`.
 
 ## 5. Verify, then report
 
@@ -200,7 +264,12 @@ playbooks. Apply them literally; these are the recurring failures:
   rewritten and why, whether a `longdesc` exists; every Interactive Link
   Question with "graded — fixing sentence: …" or "prompt only"; every
   suspected source defect (module id, element id, text, why, correction)
-  and, separately, every suspected claim error.
+  and, separately, every suspected claim error. End it with a **tally**:
+  source items by kind, Interactive Link graded/prompt, author-written
+  items by kind, glossary recall, summary clozes, figure references
+  reworded, one-word corrections. The footer's numbers are copied FROM
+  the tally after the last `verify-section`, and the tally's totals match
+  the run facts' per-section counts.
 - **Answer-ledger results** `$SP/ledger-results/N.M.json`, shaped
   `{"results":[{"hash":"…","verdict":"ok","note":"…"}]}`; hashes from
   `node tools/verify/answer-ledger.mjs list content --unverified` (a JSON

@@ -684,9 +684,10 @@ the objective it serves is the practice form *(chapters 17–18)*.
 Gram stain` beside `Gram stain`, `a simple microscope` beside `simple
 microscope`, and bare `400` or `400 X` beside `400×` with `400x|400 x`,
 because grading already folds hyphens, articles, case, and punctuation. List
-only spellings the grader would otherwise miss — an irregular plural
-(`bacteria`, `flagella`; a regular `s`/`es` plural is folded by the grader
-and rejected by the lint), an abbreviation the module itself uses (`AFM`),
+only spellings the grader would otherwise miss — an irregular plural or
+singular (`bacteria`, `flagella`, `bacterium`; a regular `s`/`es` plural or
+singular is folded by the grader both ways and rejected by the lint), an
+abbreviation the module itself uses (`AFM`),
 an abbreviated binomial — and run each
 through the real grader (`assets/js/lib/text/check-text.mjs`) rather than
 guessing. Three of the four chapter-2 authors lost a verify round to this.
@@ -704,7 +705,11 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
 - `npm run verify:source-keys` reports an author-written model answer as
   `unkeyed` (its question transcribes an exercise the source does not key)
   or `unmatched` (no source exercise), and a `multiplechoice` converted
-  from an unkeyed question as `unkeyed`. All correct. It must never report
+  from an unkeyed question as `unkeyed`. All correct. A source solution
+  that says only "Answer is open and will vary." counts as no key
+  (`unkeyed`), and the check that a `textin` key is printed in the module
+  folds regular plurals, markup-split ones included
+  (`<term>plasmid</term>s`) *(September 23, 2026)*. It must never report
   a graded item keyed differently from the source without a
   `DISCLOSED_DEVIATIONS` entry and an erratum. **The `kind` is `key` when
   the corrected option IS the keyed one and `options` only when it is a
@@ -712,7 +717,8 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
   disclosed `kind: key`)*; `baseline:update` refuses an entry filed under
   the wrong kind.
 - **Three readings, none redundant:** the author keys from the CNXML; one
-  Sonnet checker per section re-derives every key, answers every graded
+  checker per section (Opus since September 22, 2026 — life-sciences
+  "Independent checker") re-derives every key, answers every graded
   item with the key covered, and reads every figure against its image; a
   fresh Fable solver answers every `multiplechoice`, `textin`, and
   `sortbins` from the masked pages (`solve:emit --pages-out`), and the
@@ -743,7 +749,10 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
   stem, and option list on the page for every `textin` and
   `multiplechoice` key, across groups, forwards and backwards *(chapter 2)*.
 - A distractor directly above a `textin` may not be its key *(chapter 3)*;
-  the rule is a substring rule, not an adjacency rule *(chapter 8)*.
+  the rule is a substring rule, not an adjacency rule *(chapter 8)*. The
+  adjacency half is a lint error for every book since September 22, 2026,
+  widened to the stem and the hint of the item above; 65 Microbiology
+  groups were reordered to land it (only recall items moved).
 - A True/False hint must not assert the tested fact *(chapter 3)*.
 - An author-written caption or alt must not restate a paired item's
   answer set; an exercise image's SOURCE alt usually does *(chapter 7)* —
@@ -751,12 +760,21 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
   every key and rubric clause of the paired item.
 - A `## Key terms` bullet leaks its term-recall `textin` by design
   (accepted); a body item under a figure whose caption names the answer
-  reverts to a `selfcheck` *(chapters 5–6)*.
+  stays a `selfcheck` *(chapters 5–6)* — an authoring-time choice: a
+  shipped graded item is fixed by reordering or rewording, not converted
+  *(September 22, 2026)*.
 - Author-built fillers leak into each other exactly as source items do
   *(chapter 9)*.
 - Two source-verbatim items that print each other's key are **reordered
   and disclosed, never dropped and never edited** *(chapter 8)*; an
   unmovable one keeps a footer disclosure.
+- **What nine chapter kits of these rules still shipped** *(September 22,
+  2026 Opus sweep of all 127 pages)*: about 1,190 hints that stated the
+  key's fact (about 9 a page), about 115 nearby leaks (about 30 of them a
+  recall `textin` keyed to its own objective heading), about 170 accept
+  gaps, 15 double-keyed items, and 0 wrong source keys. The rules are in
+  life-sciences "Text recall"; the defect was the checker's model, not a
+  missing rule, so the per-section checker now runs on Opus.
 
 ### Conversions and forms
 
@@ -859,11 +877,14 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
 
 ### Keys and `accept` lists
 
-- The plural fold is one-directional: a plural KEY lists its singular
-  (`alcohols`, `chlorophylls and carotenoids` — every mixed form and
-  order); a Greek/Latin plural lists its `-um`/`-on` singular; a prefixed
-  key lists the hyphenated spelling; a keyed-plural `textin` lists only the
-  SINGULAR of an alternative term *(chapters 5–11)*.
+- The plural fold runs both ways since September 22, 2026: a plural KEY
+  accepts its regular singular (`alcohols`→`alcohol`, `chlorophylls and
+  carotenoids`→`…carotenoid`), so do not list it. A mixed form or reordered
+  compound (`chlorophyll and carotenoids`, `carotenoids and chlorophylls`)
+  is not a fold and is still listed. A Greek/Latin plural lists its
+  `-um`/`-on`/`-us`/`-is` singular; a key ending `-oes` lists its `-o`
+  singular; a prefixed key lists the hyphenated spelling *(chapters 5–11;
+  direction changed Sep 22, 2026)*.
 - Members that differ only by hyphen/space or case are duplicates the lint
   rejects; a hyphen BETWEEN LETTERS does not fold (`semi-conservative`)
   and needs listing *(chapters 8, 10–11)*.
@@ -876,7 +897,7 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
   one-word spelling (`wildtype`) — list every spelling a correct learner
   would type and run each through `check-text` *(chapters 10–11)*.
 - A why-question keyed to one abstract noun is the weakest `textin` form;
-  extend its accept list within the 4-word cap or ask it as a
+  extend its accept list within the 7-word accept cap or ask it as a
   `multiplechoice` *(chapters 10–11)*.
 - A filler cloze may not be cut from the sentence an adjacent self-check
   uses as its model answer — that re-asks the item and leaks its key
@@ -992,7 +1013,10 @@ the close-out order — is `docs/briefs/microbiology/run.md`.
 - Footer claims the checkers falsify every run: graded/selfcheck counts,
   filler counts, "no appendix entry" for headwords that exist, and "logged
   as an erratum" for entries the parent has not written — the parent logs
-  at close-out, and an author never claims it *(chapters 10–11)*.
+  at close-out, and an author never claims it *(chapters 10–11)*. The
+  September 22, 2026 sweep still corrected about 85 of this book's
+  footers; the author copies every number from the ledger's tally after
+  the last `verify-section`.
 - Every reordering, every dropped item, every one-word correction, every
   table-image transcription, every author-written caption, and every
   filler with its sentence is named — an unexplained gap between the
@@ -1051,7 +1075,7 @@ because verify-section's phrase-coverage gate accepts paraphrase.
 ## How a chapter is run
 
 The parent's recipe — prep scripts, the wave of Sonnet authors and
-checkers, the per-chapter claim pass, the blind solve in a fresh Fable
+Opus checkers, the per-chapter claim pass, the blind solve in a fresh Fable
 subagent, the close-out order, and the context-hygiene rules that keep the
 run inside a usage window — is `docs/briefs/microbiology/run.md`; the
 agents' briefs are beside it (`author.md`, `checker.md`, `claim-pass.md`,

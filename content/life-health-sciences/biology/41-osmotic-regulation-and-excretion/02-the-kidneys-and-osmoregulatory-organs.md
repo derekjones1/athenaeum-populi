@@ -25,7 +25,7 @@ Although the kidneys are the major osmoregulatory organ, the skin and lungs also
 
 The **kidneys**, shown below, are a pair of bean-shaped structures that are located just below and posterior to the liver in the peritoneal cavity. The adrenal glands sit on top of each kidney and are also called the suprarenal glands. Kidneys filter blood and purify it. All the blood in the human body is filtered many times a day by the kidneys; these organs use up almost 25 percent of the oxygen absorbed through the lungs to perform this function. Oxygen allows the kidney cells to efficiently manufacture chemical energy in the form of ATP through aerobic respiration. The filtrate coming out of the kidneys is called **urine**.
 
-{{< mediafigure src="biology/Figure_41_03_01" kind="diagram" eager="true" alt="Illustration shows the placement of the kidneys and bladder in a human man. The two kidneys face one another and are located on the posterior side, about halfway up the back. A renal artery and a renal vein extend from the inside middle of each kidney, toward a major blood vessel that runs up the middle of the body. A ureter runs down from each kidney to the bladder, a sac that sits just above the pelvis. The urethra runs down from the bottom of the bladder and through the penis. The adrenal glands are lumpy masses that sit on top of the kidneys." longdesc="Seven leader-line labels point to a front view of a human torso from the kidneys to the groin. Adrenal gland labels the yellowish cap sitting on top of the left kidney. Renal artery labels the central red vessel that branches out to each kidney. Kidney labels the left bean-shaped organ itself. Renal vein labels the central blue vessel running alongside the artery. Ureter labels the tube descending from the right kidney toward the pelvis. Bladder labels the pear-shaped sac just above the pelvis. Urethra labels the tube leading from the bottom of the bladder down through the body." >}}
+{{< mediafigure src="biology/Figure_41_03_01" kind="diagram" eager="true" alt="Illustration shows the placement of the kidneys and bladder in a human man. The two kidneys face one another and are located on the posterior side, about halfway up the back. A renal artery and a renal vein extend from the inside middle of each kidney, toward a major blood vessel that runs up the middle of the body. A ureter runs down from each kidney to the bladder, a sac that sits just above the pelvis. The urethra runs down from the bottom of the bladder and through the penis. The adrenal glands are lumpy masses that sit on top of the kidneys." longdesc="Seven leader-line labels point to a front view of a human torso from the kidneys to the groin. Adrenal gland labels the yellowish cap sitting on top of the kidney on the left of the image (both kidneys have one, but only this one is labeled). Renal artery labels the short red branch running from the central red vessel to the kidney on the right of the image (a matching branch serves the other kidney). Kidney labels the bean-shaped organ on the left of the image. Renal vein labels the short blue branch just below it, running from that kidney to the central blue vessel beside the red one. Ureter labels the tube descending toward the pelvis on the right of the image. Bladder labels the pear-shaped sac just above the pelvis. Urethra labels the tube leading from the bottom of the bladder down through the body." >}}
 Kidneys filter the blood, producing urine that is stored in the bladder prior to elimination through the urethra. (credit: modification of work by NCI)
 {{< /mediafigure >}}
 
@@ -33,14 +33,14 @@ Kidneys filter the blood, producing urine that is stored in the bladder prior to
 
 Externally, the kidneys are surrounded by three layers, shown below. The outermost layer is a tough connective tissue layer called the **renal fascia**. The second layer is called the **perirenal fat capsule**, which helps anchor the kidneys in place. The third and innermost layer is the **renal capsule**. Internally, the kidney has three regions—an outer **cortex**, a **medulla** in the middle, and the **renal pelvis** in the region called the **hilum** of the kidney. The hilum is the concave part of the bean-shape where blood vessels and nerves enter and exit the kidney; it is also the point of exit for the ureters. The renal cortex is granular due to the presence of **nephrons**—the functional unit of the kidney. The medulla consists of multiple pyramidal tissue masses, called the **renal pyramids**. In between the pyramids are spaces called **renal columns** through which the blood vessels pass. The tips of the pyramids, called renal papillae, point toward the renal pelvis. There are, on average, eight renal pyramids in each kidney. The renal pyramids along with the adjoining cortical region are called the **lobes of the kidney**. The renal pelvis leads to the **ureter** on the outside of the kidney. On the inside of the kidney, the renal pelvis branches out into two or three extensions called the major **calyces**, which further branch into the minor calyces. The ureters are urine-bearing tubes that exit the kidney and empty into the **urinary bladder**.
 
-{{< mediafigure src="biology/Figure_41_03_02" kind="diagram" alt="Cross-section of a bean-shaped kidney. An outer renal fascia and capsule cover a granular cortex; beneath it, striped renal pyramids fill the medulla, narrowing toward the pale renal pelvis at the center. The renal artery and vein enter, and the ureter exits, from the concave side." longdesc="A bean-shaped kidney is shown in cross-section with thirteen leader-line labels. Down the left side, top to bottom: Capillaries labels three small branching vessels at the outer edge; Arteriole and Venule each label one of the red and blue vessels just inside them; Renal vein and Renal artery label the two larger vessels entering the concave side; Medulla labels, with a bracket, the striped pyramidal tissue running down the lower portion of the kidney; Ureter labels the tube leaving the bottom of the concave side; Renal fascia and capsule labels, at the base of the same bracket, the thin outer covering along the bottom edge. Down the right side, top to bottom: Renal pyramid labels one of the triangular tissue masses; Renal pelvis labels the hollow pale area at the center; Major calyx and Minor calyx label branching structures within the pelvis; Cortex labels, with a bracket, the granular outer band along the bottom-right edge." >}}
+{{< mediafigure src="biology/Figure_41_03_02" kind="diagram" alt="Cross-section of a bean-shaped kidney. An outer renal fascia and capsule cover a granular cortex; beneath it, striped renal pyramids fill the medulla, narrowing toward the pale renal pelvis at the center. The renal artery and vein enter, and the ureter exits, from the concave side." longdesc="A bean-shaped kidney is shown in cross-section with thirteen leader-line labels. Down the left side, top to bottom: Capillaries labels, with two leader lines, the small branching vessels at the outer edge; Arteriole and Venule each label one of the red and blue vessels just inside them; Renal vein and Renal artery label the two larger vessels entering the concave side; Medulla labels, with a bracket, the striped pyramidal tissue running down the lower portion of the kidney; Ureter labels the tube leaving the bottom of the concave side; Renal fascia and capsule labels, at the base of the same bracket, the thin outer covering along the bottom edge. Down the right side, top to bottom: Renal pyramid labels one of the triangular tissue masses; Renal pelvis labels the hollow pale area at the center; Major calyx and Minor calyx label branching structures within the pelvis; Cortex labels, with a bracket, the granular outer band along the bottom-right edge." >}}
 The internal structure of the kidney is shown. (credit: modification of work by NCI)
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements about the kidney is false?"
   answer="The cortex covers the capsule."
-  hint="Check each statement about the kidney's regions and structures against the description of the three outer covering layers and the three internal regions above — one statement gets the relationship between two of those layers backward."
+  hint="Check each statement against the kidney cross-section figure above and the Kidney Structure paragraph that describes it."
 >}}
 The renal pelvis drains into the ureter.
 The renal pyramids are in the medulla.
@@ -52,7 +52,7 @@ Because the kidney filters blood, its network of blood vessels is an important c
 
 As mentioned previously, the functional unit of the kidney is the nephron, shown below. Each kidney is made up of over one million nephrons that dot the renal cortex, giving it a granular appearance when sectioned sagittally. There are two types of nephrons—**cortical nephrons** (85 percent), which are deep in the renal cortex, and **juxtamedullary nephrons** (15 percent), which lie in the renal cortex close to the renal medulla. A nephron consists of three parts—a **renal corpuscle**, a **renal tubule**, and the associated capillary network, which originates from the cortical radiate arteries.
 
-{{< mediafigure src="biology/Figure_41_03_03" kind="diagram" alt="Three connected illustrations: a small whole-kidney cross-section with one region boxed, an enlarged wedge of cortex and medulla labeled around a nephron, and an enlarged nephron showing the glomerulus with its capsule and arterioles, the convoluted tubules, the loop of Henle, and the collecting duct." longdesc="Three panels connected left to right by two gray arrows. The first is a small whole-kidney icon with a black box outlining one region near its top. The second is an enlarged wedge of that region, labeled Nephron (a bracket spanning its outer edge), Renal pyramid (the triangular tissue mass within the wedge), and Cortex and Medulla (bracketed regions on the right, cortex above medulla). The third panel enlarges the nephron itself, with ten leader-line labels: Proximal convoluted tubule and Efferent arteriole at the top left, Peritubular capillaries and Distal convoluted tubule at the top right, Glomerulus, Bowman's capsule, and Afferent arteriole down the left side in that order, Loop of Henle and Vasa recta at the bottom, and Collecting duct labeling the vertical line at the far right." >}}
+{{< mediafigure src="biology/Figure_41_03_03" kind="diagram" alt="Three connected illustrations: a small whole-kidney cross-section with one region boxed, an enlarged wedge of cortex and medulla labeled around a nephron, and an enlarged nephron showing the glomerulus with its capsule and arterioles, the convoluted tubules, the loop of Henle, and the collecting duct." longdesc="Three panels connected left to right by two gray arrows. The first is a small whole-kidney icon with a black box outlining one region near its top. The second is an enlarged wedge of that region, labeled Nephron (a bracket just inside its outer edge, spanning a small nephron drawn from the cortex down into the medulla, from which the second gray arrow leads), Renal pyramid (the triangular tissue mass within the wedge), and Cortex and Medulla (bracketed regions on the right, cortex above medulla). The third panel enlarges the nephron itself, with ten leader-line labels: Proximal convoluted tubule and Efferent arteriole at the top left, Peritubular capillaries and Distal convoluted tubule at the top right, Glomerulus, Bowman's capsule, and Afferent arteriole down the left side in that order, Loop of Henle and Vasa recta at the bottom, and Collecting duct labeling the vertical line at the far right." >}}
 The nephron is the functional unit of the kidney. The glomerulus and convoluted tubules are located in the kidney cortex, while collecting ducts are located in the pyramids of the medulla. (credit: modification of work by NIDDK)
 {{< /mediafigure >}}
 
@@ -109,7 +109,7 @@ Tubular reabsorption occurs in the PCT part of the renal tubule. Almost all nutr
 
 In the loop of Henle, the permeability of the membrane changes. The descending limb is permeable to water, not solutes; the opposite is true for the ascending limb. Additionally, the loop of Henle invades the renal medulla, which is naturally high in salt concentration and tends to absorb water from the renal tubule and concentrate the filtrate. The osmotic gradient increases as it moves deeper into the medulla. Because two sides of the loop of Henle perform opposing functions, as shown below, it acts as a **countercurrent multiplier**. The vasa recta around it acts as the **countercurrent exchanger**.
 
-{{< mediafigure src="biology/Figure_41_03_05" kind="diagram" alt="A U-shaped loop-of-Henle diagram showing filtrate osmolality decreasing up the ascending limb and increasing down the descending limb, with water and NaCl arrows exchanging with the surrounding interstitial fluid at each level." longdesc="A U-shaped tube, open at the top on both sides. At the upper left, 'Filtrate enters the descending limb' labels a downward arrow into the left tube; at the upper right, 'Filtrate exits the ascending limb' labels an upward arrow out of the right tube. Reading down the descending limb, the filtrate's osmolality is 300, then 700, then 1000 milliosmoles per liter (mOsm/L) just before the bend. Reading up the ascending limb from the bend, it is 1000, then 500, then 100 mOsm/L at the top. Between the two limbs, at three matched heights, the interstitial fluid reads 500, 700, and 900 mOsm/L, each flanked by a rightward arrow labeled H₂O leaving the descending limb and a leftward arrow labeled NaCl leaving the ascending limb, the NaCl arrow at each of the three heights marked with a light blue circled plus sign. At the very bottom of the loop, where the two limbs join, the interstitial fluid reads 1200 mOsm/L, its highest value, with a second, diagonal pair of H₂O and NaCl arrows marked with a light blue circled X. 'Loop of Henle' labels the tube itself at the lower left; 'Interstitial fluid' labels the space around it at the lower right." >}}
+{{< mediafigure src="biology/Figure_41_03_05" kind="diagram" alt="A U-shaped loop-of-Henle diagram showing filtrate osmolality decreasing up the ascending limb and increasing down the descending limb, with water and NaCl arrows exchanging with the surrounding interstitial fluid at each level." longdesc="A U-shaped tube, open at the top on both sides. At the upper left, 'Filtrate enters the descending limb' labels a downward arrow into the left tube; at the upper right, 'Filtrate exits the ascending limb' labels an upward arrow out of the right tube. Reading down the descending limb, the filtrate's osmolality is 300, then 700, then 1000 milliosmoles per liter (mOsm/L) just before the bend. Reading up the ascending limb from the bend, it is 1000, then 500, then 100 mOsm/L at the top. Between the two limbs, at three matched heights, the interstitial fluid reads 500, 700, and 900 mOsm/L, each flanked by a rightward arrow labeled H₂O leaving the descending limb and a leftward arrow labeled NaCl leaving the ascending limb, the NaCl arrow at each of the three heights marked with a light blue circled plus sign. At the very bottom of the loop, inside the bend where the two limbs join, the filtrate reads 1200 mOsm/L, the figure's highest value, with curved arrows carrying it around the bend; just above the bend, a diagonal H₂O arrow leaves the foot of the descending limb and a diagonal NaCl arrow leaves the foot of the ascending limb, both pointing up into the interstitial fluid, the NaCl arrow marked with a light blue circled X where it crosses the tube wall. 'Loop of Henle' labels the tube itself at the lower left; 'Interstitial fluid' labels the space around it at the lower right." >}}
 The loop of Henle acts as a countercurrent multiplier that uses energy to create concentration gradients. The descending limb is water permeable. Water flows from the filtrate to the interstitial fluid, so osmolality inside the limb increases as it descends into the renal medulla. At the bottom, the osmolality is higher inside the loop than in the interstitial fluid. Thus, as filtrate enters the ascending limb, Na⁺ and Cl⁻ ions exit through ion channels present in the cell membrane. Further up, Na⁺ is actively transported out of the filtrate and Cl⁻ follows. Osmolarity is given in units of milliosmoles per liter (mOsm/L).
 {{< /mediafigure >}}
 
@@ -204,6 +204,12 @@ There are three steps in the formation of urine: glomerular filtration, which oc
 
 ### Explain how the kidneys serve as the main osmoregulatory organs in mammalian systems
 
+{{< textin
+  question="The organ that performs excretory and osmoregulatory functions is called the ________."
+  answer="kidney"
+  hint="Look at the first sentence of the Summary."
+>}}
+
 {{< multiplechoice
   question="The osmolarity of body fluids is maintained at ________."
   answer="300 mOsm"
@@ -221,24 +227,25 @@ it is not constantly maintained
   hint="This is the fluid the kidneys produce as their final output, discussed throughout the section."
 >}}
 
-{{< textin
-  question="The organ that performs excretory and osmoregulatory functions is called the ________."
-  answer="kidney"
-  hint="It comes in a pair and is the organ this whole section is about."
->}}
-
 ### Describe the structure of the kidneys and the functions of the parts of the kidney
 
 {{< multiplechoice
   question="The gland located at the top of the kidney is the ________ gland."
   answer="adrenal"
-  hint="The text calls this gland by two names, one of which literally means 'above the kidney.'"
+  hint="Look in the first paragraph of Kidneys: The Main Osmoregulatory Organ, where the kidneys' location is described."
 >}}
 adrenal
 pituitary
 thyroid
 thymus
 {{< /multiplechoice >}}
+
+{{< textin
+  question="The region in the renal pelvis where blood vessels, nerves, and ureters bunch before entering or exiting the kidney is called the ________."
+  answer="hilum"
+  accept="hila"
+  hint="This concave region of the bean-shaped kidney is also the point where the ureter exits."
+>}}
 
 {{< selfcheck question="Describe the structure of the kidney." hint="Think in terms of outside-in: how many covering layers wrap the kidney, and how many internal regions does its cross-section show?" >}}
 Externally, the kidneys are surrounded by three layers. The outermost layer is a tough connective tissue layer called the renal fascia. The second layer is called the perirenal fat capsule, which helps anchor the kidneys in place. The third and innermost layer is the renal capsule. Internally, the kidney has three regions—an outer cortex, a medulla in the middle, and the renal pelvis in the region called the hilum of the kidney, which is the concave part of the "bean" shape.
@@ -249,13 +256,6 @@ the third and innermost layer is the renal capsule
 internally the kidney has three regions: an outer cortex, a medulla in the middle, and the renal pelvis
 the renal pelvis sits in the hilum, the concave part of the kidney's "bean" shape
 {{< /selfcheck >}}
-
-{{< textin
-  question="The region in the renal pelvis where blood vessels, nerves, and ureters bunch before entering or exiting the kidney is called the ________."
-  answer="hilum"
-  accept="hila"
-  hint="This concave region of the bean-shaped kidney is also the point where the ureter exits."
->}}
 
 ### Describe how the nephron is the functional unit of the kidney and explain how it actively filters blood and generates urine
 
@@ -274,7 +274,7 @@ present in blood capillaries.
   question="The part of the renal tubule that lies close to the glomerulus is called the ________."
   answer="PCT"
   accept="proximal convoluted tubule"
-  hint="This segment stays in the renal cortex and is named for its position immediately after the glomerulus."
+  hint="Look in Renal Tubule, where the tubule's segments are named in order."
 >}}
 
 {{< textin
@@ -305,7 +305,7 @@ the kidneys maintain the osmolality of the rest of the body at a constant 300 mO
 {{< textin
   question="The process of secretion of wastes that do not get reabsorbed is called ________."
   answer="tubular secretion"
-  hint="This is the third of the three steps in urine formation, and it works in essence opposite to reabsorption."
+  hint="Look at the last sentence of the Summary."
 >}}
 
 ---

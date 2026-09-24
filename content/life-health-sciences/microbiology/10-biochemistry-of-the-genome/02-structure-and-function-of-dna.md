@@ -35,22 +35,19 @@ Nitrogenous bases within DNA are categorized into the two-ringed purines adenine
 
 Individual nucleoside triphosphates combine with each other by covalent bonds known as 5′-3′ **phosphodiester bonds**, or linkages whereby the phosphate group attached to the 5′ carbon of the sugar of one nucleotide bonds to the hydroxyl group of the 3′ carbon of the sugar of the next nucleotide. Phosphodiester bonding between nucleotides forms the **sugar-phosphate backbone**, the alternating sugar-phosphate structure composing the framework of a nucleic acid strand (the figure below). During the polymerization process, deoxynucleotide triphosphates (dNTP) are used. To construct the sugar-phosphate backbone, the two terminal phosphates are released from the dNTP as a pyrophosphate. The resulting strand of nucleic acid has a free phosphate group at the 5′ carbon end and a free hydroxyl group at the 3′ carbon end. The two unused phosphate groups from the nucleotide triphosphate are released as pyrophosphate during phosphodiester bond formation. Pyrophosphate is subsequently hydrolyzed, releasing the energy used to drive nucleotide polymerization.
 
-{{< mediafigure src="microbiology/OSC_Microbio_10_02_NAcidStrand" alt="Three linked nucleotides drawn top to bottom, each a deoxyribose sugar with carbons numbered 1′ through 5′: the top sugar carries a thymine base and a phosphate group on its 5′ carbon; the middle sugar carries a cytosine base, its 5′ phosphate joined to the 3′ carbon of the sugar above it; the bottom sugar carries a guanine base, its 5′ phosphate joined to the 3′ carbon of the sugar above it, with its own 3′ carbon left as a free OH. Red arrows and brackets label the two 'ester bond' linkages that together make up each 'phosphodiester bond.'" longdesc="Reading top to bottom, three nucleotides are linked by two phosphodiester bonds. The top nucleotide (thymine base) carries a free phosphate on its 5′ carbon, circled. The middle nucleotide's (cytosine base) 5′-carbon phosphate is joined to the 3′ carbon of the sugar above it (thymine); the bottom nucleotide's (guanine base) 5′-carbon phosphate is in turn joined to the 3′ carbon of the sugar above it (cytosine), and guanine's own 3′ carbon, circled, is left as a free OH at the bottom of the strand. A bracket labeled 'phosphodiester bond' spans the upper linkage, with red arrows pointing to its two 'ester bond' labels — one at the phosphate's join to the upper sugar's 3′ carbon, one at its join to the lower sugar's 5′ carbon — that together make up that phosphodiester bond." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_10_02_NAcidStrand" alt="Three linked nucleotides drawn top to bottom, each a deoxyribose sugar with carbons numbered 1′ through 5′: the top sugar carries a thymine base and a phosphate group on its 5′ carbon; the middle sugar carries a cytosine base, its 5′ phosphate joined to the 3′ carbon of the sugar above it; the bottom sugar carries a guanine base, its 5′ phosphate joined to the 3′ carbon of the sugar above it, with its own 3′ carbon left as a free OH. A red-arrowed bracket labels the two 'ester bond' bonds of the top linkage's 'phosphodiester bond' only; the lower linkage is unlabeled." longdesc="Reading top to bottom, three nucleotides are linked by two phosphodiester bonds. The top nucleotide (thymine base) carries a free phosphate on its 5′ carbon, circled. The middle nucleotide's (cytosine base) 5′-carbon phosphate is joined to the 3′ carbon of the sugar above it (thymine); the bottom nucleotide's (guanine base) 5′-carbon phosphate is in turn joined to the 3′ carbon of the sugar above it (cytosine), and guanine's own 3′ carbon, circled, is left as a free OH at the bottom of the strand. A bracket labeled 'phosphodiester bond' spans the upper linkage, with red arrows pointing to its two 'ester bond' labels — one at the phosphate's join to the upper sugar's 3′ carbon, one at its join to the lower sugar's 5′ carbon — that together make up that phosphodiester bond. In the lower, unlabeled linkage, the oxygen bonded to the middle sugar's 3′ carbon is drawn in red." kind="diagram" >}}
 Phosphodiester bonds form between the phosphate group attached to the 5′ carbon of one nucleotide and the hydroxyl group of the 3′ carbon in the next nucleotide, bringing about polymerization of nucleotides in to nucleic acid strands. Note the 5′ and 3′ ends of this nucleic acid strand.
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
-{{< multiplechoice
-  question="What is meant by the 5′ and 3′ ends of a nucleic acid strand?"
-  answer="The 5′ end has a free phosphate group, and the 3′ end has a free hydroxyl group."
-  hint="Recall which of the two terminal groups — phosphate or hydroxyl — the strand carries at each numbered carbon end."
->}}
-The 5′ end has a free hydroxyl group, and the 3′ end has a free phosphate group.
-Both ends have a free phosphate group.
-The 5′ end has a free phosphate group, and the 3′ end has a free hydroxyl group.
-Both ends have a free hydroxyl group.
-{{< /multiplechoice >}}
+{{< selfcheck question="What is meant by the 5′ and 3′ ends of a nucleic acid strand?" hint="Reread the first paragraph of DNA Nucleotides and the fifth sentence of the phosphodiester-bond paragraph." >}}
+The carbon atoms of the five-carbon deoxyribose are numbered 1′, 2′, 3′, 4′, and 5′. The resulting strand of nucleic acid has a free phosphate group at the 5′ carbon end and a free hydroxyl group at the 3′ carbon end.
+===CHECKS===
+the carbon atoms of the five-carbon deoxyribose are numbered 1′, 2′, 3′, 4′, and 5′
+a free phosphate group at the 5′ carbon end
+a free hydroxyl group at the 3′ carbon end
+{{< /selfcheck >}}
 
 ## Discovering the Double Helix
 
@@ -73,7 +70,7 @@ In 1953, James Watson and Francis Crick built this model of the structure of DNA
 {{< multiplechoice
   question="Which scientists are given most of the credit for describing the molecular structure of DNA?"
   answer="James Watson and Francis Crick"
-  hint="This section names several scientists whose work fed into the discovery; identify the pair who published the model and became famous for it."
+  hint="Reread the third paragraph of Discovering the Double Helix."
 >}}
 Erwin Chargaff
 James Watson and Francis Crick
@@ -87,7 +84,7 @@ Watson and Crick proposed that DNA is made up of two strands that are twisted ar
 
 Analysis of the diffraction patterns of DNA has determined that there are approximately 10 bases per turn in DNA. The asymmetrical spacing of the sugar-phosphate backbones generates major grooves (where the backbone is far apart) and minor grooves (where the backbone is close together) (the figure below). These grooves are locations where proteins can bind to DNA. The binding of these proteins can alter the structure of DNA, regulate replication, or regulate transcription of DNA into RNA.
 
-{{< mediafigure src="microbiology/OSC_Microbio_10_02_DoubHelix" alt="Three panels of the DNA double helix. (a) A twisted-ladder cartoon with a backbone on each side and colored base-pair rungs, with wide major grooves and narrow minor grooves where the backbones twist apart or come close together. (b) The same pairs as a flattened, untwisted ladder labeled A-T and G-C, each strand's 3′ and 5′ ends at opposite corners. (c) A chemical-structure segment of the antiparallel strands, backbone linking carbon 3′ of one nucleotide to carbon 5′ of the next, with dashed hydrogen bonds between the bases." longdesc="Panel (a) shows the double helix as a twisted ladder: the sugar-phosphate backbones run along the outside as ribbons, and paired bases form the rungs, colored red for adenine, yellow for thymine, blue for guanine, and green for cytosine, with alternating wide major grooves and narrow minor grooves. Panel (b) untwists the same ladder into a flat rung diagram labeled by base letters, with the left strand's 3′ end at top and 5′ end at bottom while the right strand's 5′ end is at top and 3′ end at bottom, showing the antiparallel orientation. Panel (c) zooms into four rungs' worth of chemical structure (an A-T pair, then a C-G pair, then a T-A pair, then a G-C pair, reading top to bottom), showing the sugar-phosphate backbone linking each nucleotide's 3′ carbon to the next nucleotide's 5′ phosphate, and dashed lines marking two hydrogen bonds in each A-T pair and three hydrogen bonds in each C-G pair." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_10_02_DoubHelix" alt="Three panels of the DNA double helix. (a) A twisted-ladder cartoon with a backbone on each side and colored base-pair rungs, with wide major grooves and narrow minor grooves where the backbones twist apart or come close together. (b) The same pairs as a flattened, untwisted ladder labeled A-T and G-C, each strand's 3′ and 5′ ends at opposite corners. (c) A chemical-structure segment of the antiparallel strands, backbone linking carbon 3′ of one nucleotide to carbon 5′ of the next, with dashed hydrogen bonds between the bases." longdesc="Panel (a) shows the double helix as a twisted ladder: the sugar-phosphate backbones run along the outside as ribbons, and paired bases form the rungs, colored red for adenine, yellow for thymine, blue for guanine, and green for cytosine, with alternating wide major grooves and narrow minor grooves. Panel (b) untwists the same ladder into a flat rung diagram labeled by base letters, with the left strand's 3′ end at top and 5′ end at bottom while the right strand's 5′ end is at top and 3′ end at bottom, showing the antiparallel orientation. Panel (c) zooms into four rungs' worth of chemical structure (an A-T pair, then a C-G pair, then a T-A pair, then a G-C pair, reading top to bottom), showing the sugar-phosphate backbone linking each nucleotide's 3′ carbon to the next nucleotide's 5′ phosphate, and dashed lines marking two hydrogen bonds in each A-T pair and three hydrogen bonds in each C-G pair. Beside panel (c), a long gray arrow runs down the left strand from a boxed 5′ at top to a boxed 3′ at bottom, and another runs up the right strand from a boxed 5′ at bottom to a boxed 3′ at top, marking the two strands' opposite directions." kind="diagram" >}}
 Watson and Crick proposed the double helix model for DNA. (a) The sugar-phosphate backbones are on the outside of the double helix and purines and pyrimidines form the "rungs" of the DNA helix ladder. (b) The two DNA strands are antiparallel to each other. (c) The direction of each strand is identified by numbering the carbons (1 through 5) in each sugar molecule. The 5′ end is the one where carbon #5 is not bound to another nucleotide; the 3′ end is the one where carbon #3 is not bound to another nucleotide.
 {{< /mediafigure >}}
 
@@ -114,7 +111,7 @@ View an [animation on DNA structure](https://www.openstax.org/l/22dnastruanim) f
 {{< multiplechoice
   question="What are the two complementary base pairs of DNA and how are they bonded together?"
   answer="Adenine and thymine form two hydrogen bonds; cytosine and guanine form three hydrogen bonds."
-  hint="Recall the two purine-pyrimidine pairings this section names as complementary, and the different hydrogen-bond counts given for each."
+  hint="Reread the base-pairing paragraph under DNA Structure."
 >}}
 Adenine and guanine form two hydrogen bonds; cytosine and thymine form three hydrogen bonds.
 All base pairs form the same number of hydrogen bonds.
@@ -131,8 +128,8 @@ DNA stores the information needed to build and control the cell. The transmissio
 {{< textin
   question="How does DNA transmit genetic information to offspring?"
   answer="DNA replication"
-  accept="replication"
-  hint="Name the process by which a cell makes a duplicate copy of its DNA before dividing, so that each resulting cell receives a copy."
+  accept="replication|vertical gene transfer"
+  hint="Reread the DNA Function paragraph above."
 >}}
 
 {{< callout type="info" >}}
@@ -205,7 +202,7 @@ The case continues in [Structure and Function of Cellular Genomes](/life-health-
 {{< multiplechoice
   question="Which of the following is not found within DNA?"
   answer="amino acids"
-  hint="Recall the four kinds of molecules DNA is actually built from and stabilized by, and identify the one that belongs to proteins instead."
+  hint="Reread DNA Nucleotides and the base-pairing paragraph under DNA Structure."
 >}}
 thymine
 phosphodiester bonds
@@ -216,14 +213,14 @@ amino acids
 {{< textin
   question="The end of a nucleic acid strand with a free phosphate group is called the ________."
   answer="5′ end"
-  accept="5 prime end|five prime end"
-  hint="Recall which numbered carbon of the terminal sugar carries the unattached phosphate group, and how that end of the strand is named."
+  accept="5 prime end|five prime end|5′|5 prime|five prime"
+  hint="Reread the fifth sentence of the phosphodiester-bond paragraph under DNA Nucleotides."
 >}}
 
 {{< multiplechoice
   question="What is the role of phosphodiester bonds within the sugar-phosphate backbone of DNA?"
   answer="They link nucleotides together, forming the sugar-phosphate backbone that is the framework of the nucleic acid strand."
-  hint="This bond links successive sugars through their 5′ phosphate and 3′ hydroxyl groups; think about what structure that linkage builds, not what holds the two strands' bases together."
+  hint="Reread the first two sentences of the phosphodiester-bond paragraph under DNA Nucleotides."
 >}}
 They form hydrogen bonds between complementary nitrogenous bases.
 They hold the two antiparallel strands of DNA together.
@@ -236,7 +233,7 @@ They determine which nitrogenous base attaches to each sugar.
 {{< multiplechoice
   question="If 30% of the bases within a DNA molecule are adenine, what is the percentage of thymine?"
   answer="30%"
-  hint="Apply the equality between adenine and thymine that Chargaff discovered."
+  hint="Reread the Chargaff paragraph that opens Discovering the Double Helix."
 >}}
 20%
 25%
@@ -247,7 +244,7 @@ They determine which nitrogenous base attaches to each sugar.
 {{< multiplechoice
   question="Which of the following statements about base pairing in DNA is incorrect?"
   answer="Adenine binds to guanine."
-  hint="Recall which two bases actually pair together, and check each statement about hydrogen bonds and helix geometry against that pairing."
+  hint="Reread the first and third paragraphs of DNA Structure."
 >}}
 Purines always base pairs with pyrimidines.
 Adenine binds to guanine.
@@ -258,7 +255,7 @@ Base pairing occurs at the interior of the double helix.
 {{< multiplechoice
   question="During denaturation of DNA, which of the following happens?"
   answer="Hydrogen bonds between complementary bases break."
-  hint="Consider which of the two bond types in DNA — the ones stacking bases together or the ones lining the backbone — is broken by heat or chemicals."
+  hint="Reread the denaturation paragraph under DNA Structure."
 >}}
 Hydrogen bonds between complementary bases break.
 Phosphodiester bonds break within the sugar-phosphate backbone.
@@ -282,7 +279,7 @@ This table lists the four nitrogenous bases in DNA, with only thymine's percenta
 {{< multiplechoice
   question="A certain DNA sample is found to have a makeup consisting of 22% thymine. Use Chargaff's rules to fill in the percentages for the other three nitrogenous bases."
   answer="adenine 22%, guanine 28%, cytosine 28%"
-  hint="Use A = T and G = C to complete the remaining three percentages so all four sum to 100%."
+  hint="Reread the Chargaff paragraph that opens Discovering the Double Helix."
 >}}
 adenine 28%, guanine 22%, cytosine 28%
 adenine 22%, guanine 28%, cytosine 28%
@@ -293,7 +290,7 @@ adenine 39%, guanine 20%, cytosine 19%
 {{< multiplechoice
   question="Why is DNA with a high GC content more difficult to denature than that with a low GC content?"
   answer="Because of the additional hydrogen bonding between the C-G base pair, compared with the A-T base pair."
-  hint="Recall which base pair this section says has additional hydrogen bonding, and what that additional bonding does to how easily the strands separate."
+  hint="Reread the last sentence of the denaturation paragraph under DNA Structure."
 >}}
 Because of the additional hydrogen bonding between the A-T base pair, compared with the C-G base pair.
 Because high-GC DNA contains more phosphodiester bonds than low-GC DNA, strengthening its backbone.
@@ -306,7 +303,7 @@ Because of the additional hydrogen bonding between the C-G base pair, compared w
 {{< multiplechoice
   question="If a DNA strand contains the sequence 5′-ATTCCGGATCGA-3′, which of the following is the sequence of the complementary strand of DNA?"
   answer="5′-TCGATCCGGAAT-3′"
-  hint="Remember that the complementary strand is written in the opposite direction from the original, not the same direction."
+  hint="Reread the first and third paragraphs of DNA Structure, then check both ends of each option."
 >}}
 5′-TAAGGCCTAGCT-3′
 5′-ATTCCGGATCGA-3′
@@ -317,7 +314,7 @@ Because of the additional hydrogen bonding between the C-G base pair, compared w
 {{< multiplechoice
   question="The work of Rosalind Franklin and R.G. Gosling was important in demonstrating the helical nature of DNA."
   answer="True"
-  hint="Recall whose X-ray diffraction images demonstrated DNA's helical shape."
+  hint="Reread the second paragraph of Discovering the Double Helix."
 >}}
 True
 False
@@ -326,7 +323,7 @@ False
 {{< multiplechoice
   question="What is meant by the term antiparallel?"
   answer="The two strands run in opposite directions: the 3′ end of one strand faces the 5′ end of the other."
-  hint="Recall which end of each strand faces which end of its partner strand."
+  hint="Reread the first paragraph of DNA Structure."
 >}}
 The two strands run in the same direction, both from 5′ to 3′.
 The two strands run in opposite directions: the 3′ end of one strand faces the 5′ end of the other.
@@ -334,7 +331,7 @@ Each strand has a free phosphate group at both of its ends.
 The two strands are joined end-to-end to form one continuous strand.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="In considering the structure of the DNA double helix, how would you expect the structure to differ if there was base pairing between two purines? Between two pyrimidines?" hint="Think about how the double-ring size of a purine compares with the single-ring size of a pyrimidine, and what that means for the width of the helix." >}}
+{{< selfcheck question="In considering the structure of the DNA double helix, how would you expect the structure to differ if there was base pairing between two purines? Between two pyrimidines?" hint="Reread the purine and pyrimidine paragraph under DNA Nucleotides and the base-pairing paragraph under DNA Structure." >}}
 This section states that base pairing normally occurs between a purine and a pyrimidine. Purines (adenine and guanine) have a double-ring structure with a six-carbon ring fused to a five-carbon ring, while pyrimidines (cytosine and thymine) have only a single six-carbon ring. Two purines paired together would combine two double-ring bases, and two pyrimidines paired together would combine two single-ring bases — pairings this section does not describe as occurring in DNA. Beyond this size difference, the section gives no further detail about how such alternative pairings would affect the geometry of the helix.
 ===CHECKS===
 base pairing normally occurs between a purine and a pyrimidine
@@ -345,4 +342,4 @@ the section gives no further detail about how such alternative pairings would af
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 10.2: Structure and Function of DNA](https://openstax.org/books/microbiology/pages/10-2-structure-and-function-of-dna) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all ten figures (the module's nine body figures plus the Chargaff Art Connection exercise image) re-encoded as WebP; the manifest's photo guess is overridden to `kind="diagram"` for the Nucleotide, Bases, NAcidStrand, DoubHelix, BasePairs, Denatured, and Chargaff Art Connection figures (all drawn structures or a rendered table, not photographs) and kept as `kind="photo"` for the X-ray diffraction pattern, the wire-model museum photo, and the two Eye on Ethics photographs; every alt was rewritten from the image itself rather than the source alt's screen-reader phrasing ("1-prime", "B)" for a lettered panel), and a `longdesc` was added for the NAcidStrand, DoubHelix, and Denatured process figures to walk their labelled steps in reading order. The module's eleven footnotes (six body journal citations — Kresge 2005, Pauling 1953, Watson and Crick 1953, Wilkins et al. 1953, Franklin and Gosling 1953, Day et al. 1973 — and five web-sourced citations inside the Eye on Ethics — Wolfinger/*The Atlantic*, Seabury/*JAMA*, Chung/*CBC News*, AAUW, NASA) are rendered as inline parenthetical citations after the sentences they support, with the Eye on Ethics citations' bare access URLs and "Accessed" dates dropped. The Pauling footnote's journal name is corrected from "Proceedings of the National Academy of Science" (the source's one-word typo, missing the plural) to "Proceedings of the National Academy of Sciences"; the "Journal of the American Medical Association Internal Medicine" citation and the "heat-stabile" spelling are transcribed as printed (defensible on the source's own terms). Primes are normalized to U+2032 (′) throughout, including in the two title primes of the Day et al. citation; the source's FIB key "5ʹ end" (using the modifier letter prime, U+02B9) is rendered as the textin answer "5′ end" with `accept="5 prime end|five prime end"`, since the grader folds the curly and straight apostrophes onto U+2032 but not U+02B9. The Link to Learning, Eye on Ethics, and Clinical Focus boxes are rendered as callouts in source order; the Clinical Focus box's "Jump to the next / go back to the previous Clinical Focus box" links are replaced by a sentence naming where the case continues, [Structure and Function of Cellular Genomes](/life-health-sciences/microbiology/10-biochemistry-of-the-genome/04-structure-and-function-of-cellular-genomes/), and where it began, [Using Microbiology to Discover the Secrets of Life](/life-health-sciences/microbiology/10-biochemistry-of-the-genome/01-using-microbiology-to-discover-the-secrets-of-life/); its closing question stays inside the callout as an unanswered plain bullet. All four body Check Your Understanding bullets are graded body items, since each is fixed by one sentence or passage of this section: three `multiplechoice` (the 5′/3′ ends; the scientists credited for the double-helix model; the hydrogen-bond counts of the two complementary base pairs) and one `textin` keeping the source's own stem verbatim ("How does DNA transmit genetic information to offspring?"), answer "DNA replication" with `accept="replication"`, fixed by the sentence "it occurs through the process of DNA replication"; a page-wide grep confirmed no other stem or hint prints "replication" ahead of this item. Of the source's unkeyed exercises, all three Short Answer questions and one of the two Critical Thinking questions are graded `multiplechoice` from this module's own sentences and figure — the phosphodiester-bond role, the antiparallel definition, the GC-content/denaturation reasoning (keyed by the single sentence "Because of the additional hydrogen bonding between the C = G base pair, DNA with a high GC content is more difficult to denature than DNA with a lower GC content," without relying on the separate two-versus-three hydrogen-bond count given earlier), and the Chargaff percentage table (mediafigure, keyed by the Chargaff's-rules sentence, distractors built from the module's own bases in other, rule-violating combinations); the source prints no answer key for any of these five. The remaining Critical Thinking question (purine-purine and pyrimidine-pyrimidine base pairing) stays a `selfcheck`: it asks the learner to reason about a pairing the module never describes, so its model answer states only what the module gives — the ring-size difference between purines and pyrimidines — and stops there. All 13 of the module's source exercises (5 Multiple Choice, 2 True/False as two-option multiple choice, 1 Fill in the Blank as textin, 3 Short Answer, and 2 Critical Thinking) are adapted into the Practice block; none is omitted. Key terms are compiled from the module's 17 defined terms, all 17 definitions taken directly from the book's Glossary appendix (none sentence-derived). Same-module figure and table cross-references are rendered as describing prose ("the figure below"); cross-references to other modules are absolute site-root links (Microbial Metabolism, Mechanisms of Microbial Genetics, Proteins).</small>
+<small>This section is adapted from [Microbiology, Section 10.2: Structure and Function of DNA](https://openstax.org/books/microbiology/pages/10-2-structure-and-function-of-dna) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all ten figures (the module's nine body figures plus the Chargaff Art Connection exercise image) re-encoded as WebP; the manifest's photo guess is overridden to `kind="diagram"` for the Nucleotide, Bases, NAcidStrand, DoubHelix, BasePairs, Denatured, and Chargaff Art Connection figures (all drawn structures or a rendered table, not photographs) and kept as `kind="photo"` for the X-ray diffraction pattern, the wire-model museum photo, and the two Eye on Ethics photographs; every alt was rewritten from the image itself rather than the source alt's screen-reader phrasing ("1-prime", "B)" for a lettered panel), and a `longdesc` was added for the NAcidStrand, DoubHelix, and Denatured process figures to walk their labelled steps in reading order. The module's eleven footnotes (six body journal citations — Kresge 2005, Pauling 1953, Watson and Crick 1953, Wilkins et al. 1953, Franklin and Gosling 1953, Day et al. 1973 — and five web-sourced citations inside the Eye on Ethics — Wolfinger/*The Atlantic*, Seabury/*JAMA*, Chung/*CBC News*, AAUW, NASA) are rendered as inline parenthetical citations after the sentences they support, with the Eye on Ethics citations' bare access URLs and "Accessed" dates dropped. The Pauling footnote's journal name is corrected from "Proceedings of the National Academy of Science" (the source's one-word typo, missing the plural) to "Proceedings of the National Academy of Sciences"; the "Journal of the American Medical Association Internal Medicine" citation and the "heat-stabile" spelling are transcribed as printed (defensible on the source's own terms). Primes are normalized to U+2032 (′) throughout, including in the two title primes of the Day et al. citation; the source's FIB key "5ʹ end" (using the modifier letter prime, U+02B9) is rendered as the textin answer "5′ end" with `accept="5 prime end|five prime end|5′|5 prime|five prime"` (the bare "5′" a learner may type into the blank before "end" is otherwise marked wrong), since the grader folds the curly and straight apostrophes onto U+2032 but not U+02B9. The Link to Learning, Eye on Ethics, and Clinical Focus boxes are rendered as callouts in source order; the Clinical Focus box's "Jump to the next / go back to the previous Clinical Focus box" links are replaced by a sentence naming where the case continues, [Structure and Function of Cellular Genomes](/life-health-sciences/microbiology/10-biochemistry-of-the-genome/04-structure-and-function-of-cellular-genomes/), and where it began, [Using Microbiology to Discover the Secrets of Life](/life-health-sciences/microbiology/10-biochemistry-of-the-genome/01-using-microbiology-to-discover-the-secrets-of-life/); its closing question stays inside the callout as an unanswered plain bullet. Three of the four body Check Your Understanding bullets are graded body items, since each is fixed by one sentence or passage of this section: two `multiplechoice` (the scientists credited for the double-helix model; the hydrogen-bond counts of the two complementary base pairs) and one `textin` keeping the source's own stem verbatim ("How does DNA transmit genetic information to offspring?"), answer "DNA replication" with `accept="replication|vertical gene transfer"`, fixed by the sentence "it occurs through the process of DNA replication" — the Summary's own "This information is transmitted from parent to offspring through vertical gene transfer" answers the same question, so that term is accepted too; the fourth bullet, "What is meant by the 5′ and 3′ ends of a nucleic acid strand?", is a `selfcheck` whose model answer is the module's carbon-numbering sentence and its free-phosphate/free-hydroxyl sentence, because the keyed source Fill in the Blank in Practice ("The end of a nucleic acid strand with a free phosphate group is called the ________") asks the same fact and stays the graded item; a page-wide grep confirmed no other stem or hint prints "replication" ahead of this item. Of the source's unkeyed exercises, all three Short Answer questions and one of the two Critical Thinking questions are graded `multiplechoice` from this module's own sentences and figure — the phosphodiester-bond role, the antiparallel definition, the GC-content/denaturation reasoning (keyed by the single sentence "Because of the additional hydrogen bonding between the C = G base pair, DNA with a high GC content is more difficult to denature than DNA with a lower GC content," without relying on the separate two-versus-three hydrogen-bond count given earlier), and the Chargaff percentage table (mediafigure, keyed by the Chargaff's-rules sentence, distractors built from the module's own bases in other, rule-violating combinations); the source prints no answer key for any of these four. The remaining Critical Thinking question (purine-purine and pyrimidine-pyrimidine base pairing) stays a `selfcheck`: it asks the learner to reason about a pairing the module never describes, so its model answer states only what the module gives — the ring-size difference between purines and pyrimidines — and stops there. All 13 of the module's source exercises (5 Multiple Choice, 2 True/False as two-option multiple choice, 1 Fill in the Blank as textin, 3 Short Answer, and 2 Critical Thinking) are adapted into the Practice block; none is omitted. Key terms are compiled from the module's 17 defined terms, all 17 definitions taken directly from the book's Glossary appendix (none sentence-derived). Same-module figure and table cross-references are rendered as describing prose ("the figure below"); cross-references to other modules are absolute site-root links (Microbial Metabolism, Mechanisms of Microbial Genetics, Proteins).</small>

@@ -23,7 +23,7 @@ Many plants are able to propagate themselves using asexual reproduction. This me
 Many different types of stems exhibit asexual reproduction (pictured below). The corm is used by gladiolus. *(Source note: the source adds garlic here; garlic forms a bulb, as this page's own figure and the Stems section's bulb examples show.)* Bulbs, such as a scaly bulb in lilies and a tunicate bulb in daffodils, are other common examples. A potato is a stem tuber, while parsnip propagates from a taproot. Ginger and iris produce rhizomes, while ivy uses an adventitious root (a root arising from a plant part other than the main or primary root), and the strawberry plant has a stolon, which is also called a runner.
 
 {{< mediafigure src="biology/Figure_37_03_01" kind="photo" eager="true" alt="A five-panel photo grid: (a) a basket piled with whole garlic bulbs, green stems still attached; (b) a single leafy plant photographed against a black background, its short stem narrowing into a pale, elongated bulb trailing fine roots; (c) a mass of knobby, tan ginger rhizomes; (d) three oval, tan potatoes speckled with eyes; (e) a strawberry plant trailing along bare ground, its red ripening berries and green runners visible among dead leaves." >}}
-Different types of stems allow for asexual reproduction. (a) The corm of a garlic plant looks similar to (b) a tulip bulb, but the corm is solid tissue, while the bulb consists of layers of modified leaves that surround an underground stem. Both corms and bulbs can self-propagate, giving rise to new plants. (c) Ginger forms masses of stems called rhizomes that can give rise to multiple plants. (d) Potato plants form fleshy stem tubers. Each eye in the stem tuber can give rise to a new plant. (e) Strawberry plants form stolons: stems that grow at the soil surface or just below ground and can give rise to new plants. (credit a: modification of work by Dwight Sipler; credit c: modification of work by Albert Cahalan, USDA ARS; credit d: modification of work by Richard North; credit e: modification of work by Julie Magro)
+Different types of stems allow for asexual reproduction. (a) The bulb of a garlic plant looks similar to (b) a tulip bulb; a corm, by contrast, is solid tissue, while a bulb consists of layers of modified leaves that surround an underground stem. *(Source note: the source calls panel (a) "the corm of a garlic plant"; garlic forms a bulb, as the photo's layered bulbs and the onion bulb of the Stems section show — corrected here.)* Both corms and bulbs can self-propagate, giving rise to new plants. (c) Ginger forms masses of stems called rhizomes that can give rise to multiple plants. (d) Potato plants form fleshy stem tubers. Each eye in the stem tuber can give rise to a new plant. (e) Strawberry plants form stolons: stems that grow at the soil surface or just below ground and can give rise to new plants. (credit a: modification of work by Dwight Sipler; credit c: modification of work by Albert Cahalan, USDA ARS; credit d: modification of work by Richard North; credit e: modification of work by Julie Magro)
 {{< /mediafigure >}}
 
 Some plants can produce seeds without fertilization. Either the ovule or part of the ovary, which is diploid in nature, gives rise to a new seed. This method of reproduction is known as **apomixis**.
@@ -58,7 +58,7 @@ Plants such as coleus and money plant are propagated through stem **cuttings**, 
 
 **Layering** is a method in which a stem attached to the plant is bent and covered with soil. Young stems that can be bent easily without any injury are preferred. Jasmine and bougainvillea (paper flower) can be propagated this way (pictured below). In some plants, a modified form of layering known as air layering is employed. A portion of the bark or outermost covering of the stem is removed and covered with moss, which is then taped. Some gardeners also apply rooting hormone. After some time, roots will appear, and this portion of the plant can be removed and transplanted into a separate pot.
 
-{{< mediafigure src="biology/Figure_32_03_04" kind="diagram" alt="A diagram of a thin stem tied to a stake with two cords, dipping into a cross-section of soil in a buried arch, then rising up to merge into the base of a mature tree with a thick trunk and spreading roots." longdesc="At left, a short stake driven into the ground; a thin stem is tied to it with two pink cords, one near the top and one lower down, both above the soil line. Below the ties the stem bends down into a cross-section of soil, marked by a small red peg where it first dips under, then arcs back up on the right and merges into the base of a mature tree with a thick trunk and a wide, spreading root system. Grass tufts mark the soil surface on both sides of the buried arch." >}}
+{{< mediafigure src="biology/Figure_32_03_04" kind="diagram" alt="A diagram of a thin branch growing from the trunk of a mature tree: it arches over to the left, dips briefly under the soil where a small red peg pins it down, then rises again and is tied upright to a stake with two cords, its tip sprouting." longdesc="At right, a mature tree with a thick trunk and a wide, spreading root system. A thin branch leaves the trunk partway up, above the ground, arches up and over to the left, and bends down into a cross-section of soil, where it runs a short way underground in a shallow U; a small red peg pins it at its lowest point. It then rises out of the soil at the left and runs straight up a short stake driven into the ground, tied to it with two pink cords, one near the top and one lower down, both above the soil line; above the stake its tip forks into a few thin shoots. Grass lines the soil surface." >}}
 In layering, a part of the stem is buried so that it forms a new plant. (credit: modification of work by Pearson Scott Foresman, donated to the Wikimedia Foundation)
 {{< /mediafigure >}}
 
@@ -88,7 +88,7 @@ As is the case with all living organisms, genetics and environmental conditions 
 
 The aging of a plant and all the associated processes is known as **senescence**, which is marked by several complex biochemical changes. One of the characteristics of senescence is the breakdown of chloroplasts, which is characterized by the yellowing of leaves. The chloroplasts contain components of photosynthetic machinery such as membranes and proteins. Chloroplasts also contain DNA. The proteins, lipids, and nucleic acids are broken down by specific enzymes into smaller molecules and salvaged by the plant to support the growth of other plant tissues.
 
-The complex pathways of nutrient recycling within a plant are not well understood. Hormones are known to play a role in senescence. Applications of cytokinins and ethylene delay or prevent senescence; in contrast, abscisic acid causes premature onset of senescence.
+The complex pathways of nutrient recycling within a plant are not well understood. Hormones are known to play a role in senescence. Applications of cytokinins delay or prevent senescence; in contrast, ethylene promotes senescence, and abscisic acid causes premature onset of senescence. *(Source note: the source says "Applications of cytokinins and ethylene delay or prevent senescence"; this book's own Plant Sensory Systems and Responses section says cytokinins "delay senescence in leaf tissues" but that ethylene "is associated with fruit ripening, flower wilting, and leaf fall," that "aging tissues (especially senescing leaves)" produce it, and that it "triggers leaf and fruit abscission, flower fading and dropping" — corrected here.)*
 
 ## Summary
 
@@ -115,7 +115,7 @@ Plants have different life spans, dependent on species, genotype, and environmen
 {{< multiplechoice
   question="________ is a useful method of asexual reproduction for propagating hard-to-root plants."
   answer="grafting"
-  hint="This technique bypasses the need for the desired stem to grow its own roots at all, by joining it directly onto an already-rooted stock plant."
+  hint="Reread Artificial Methods of Asexual Reproduction."
 >}}
 grafting
 layering
@@ -145,7 +145,8 @@ artificial methods include grafting, cutting, layering, and micropropagation
 {{< textin
   question="The method of asexual reproduction in which a portion of the stem containing nodes and internodes is placed in moist soil and allowed to root is called a ________."
   answer="cutting"
-  hint="Coleus and money plant are propagated this way, and some species — like the African violet — will even root when the stem piece is left undisturbed in water."
+  accept="stem cutting"
+  hint="Look at the third of the artificial methods described under Artificial Methods of Asexual Reproduction, the one used for coleus and money plant."
 >}}
 
 ### Describe the advantages and disadvantages of natural and artificial asexual reproduction
@@ -153,7 +154,7 @@ artificial methods include grafting, cutting, layering, and micropropagation
 {{< multiplechoice
   question="Which of the following is an advantage of asexual reproduction?"
   answer="When cuttings or buds are taken from an adult plant or plant parts, the resulting plant will grow into an adult faster than a seedling."
-  hint="Consider what stage of development a cutting or bud starts from, compared with a seed germinating from scratch."
+  hint="Reread the paragraph just before Natural Methods of Asexual Reproduction."
 >}}
 Cuttings taken from an adult plant show increased resistance to diseases.
 Grafted plants can more successfully endure drought.
@@ -161,7 +162,7 @@ When cuttings or buds are taken from an adult plant or plant parts, the resultin
 Asexual reproduction takes advantage of a more diverse gene pool.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are some advantages of asexual reproduction in plants?" hint="Think about which energetically costly processes asexual reproduction skips, and how starting from adult tissue affects growth rate and genetic makeup." >}}
+{{< selfcheck question="What are some advantages of asexual reproduction in plants?" hint="Reread the section's opening paragraphs, before Natural Methods of Asexual Reproduction." >}}
 Asexual reproduction does not require the expenditure of the plant's resources and energy that would be involved in producing a flower, attracting pollinators, or dispersing seeds. Asexual reproduction results in plants that are genetically identical to the parent plant, since there is no mixing of male and female gametes, resulting in better survival. The cuttings or buds taken from an adult plant produce progeny that mature faster and are sturdier than a seedling grown from a seed.
 ===CHECKS===
 does not require the expenditure of the plant's resources and energy involved in producing a flower, attracting pollinators, or dispersing seeds
@@ -172,8 +173,8 @@ cuttings or buds taken from an adult plant produce progeny that mature faster an
 {{< textin
   question="Asexually reproducing plants thrive well in ________."
   answer="stable environments"
-  accept="stable environment"
-  hint="Because these plants carry genes identical to their parents, they do best when conditions stay the same from one generation to the next — but that same genetic uniformity becomes a liability if conditions change."
+  accept="stable environmental conditions|stable conditions"
+  hint="Reread the Summary."
 >}}
 
 ### Discuss plant life spans
@@ -192,7 +193,7 @@ monocarpic
 {{< multiplechoice
   question="Plant species that complete their lifecycle in one season are known as ________."
   answer="annuals"
-  hint="This category needs only one growing season to flower and set seed, unlike the two-season and multi-year categories nearby."
+  hint="Look at the Plant Life Spans paragraph that classifies plants by how many seasons their lifecycle takes."
 >}}
 biennials
 perennials
@@ -221,9 +222,9 @@ polycarpic plants flower several times during their life span; therefore, not al
 {{< textin
   question="The aging of a plant and all its associated biochemical processes is called ________."
   answer="senescence"
-  hint="This process includes the breakdown of chloroplasts and the yellowing of leaves; cytokinins and ethylene delay it, while abscisic acid brings it on early."
+  hint="Reread the last two paragraphs of Plant Life Spans."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 32.3: Asexual Reproduction](https://openstax.org/books/biology-2e/pages/32-3-asexual-reproduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the section's opening sentence "Many different types of roots exhibit asexual reproduction" corrected to "stems" — the section's own next-sentence figure is captioned "Different types of stems allow for asexual reproduction," and every item the sentence goes on to list (corm, bulb, stem tuber, rhizome, stolon) is a modified stem, not a root, in the section's own subsequent explanation — reported as a source defect; figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own bare, panel-letter-only alt text; four figures re-kinded after inspection — Figure_37_03_01 from the manifest's file-extension "diagram" guess to "photo" (a five-panel photo composite, not a drawn illustration), and Figure_32_03_02, Figure_32_03_03, and Figure_32_03_04 from "photo" to "diagram" (line-drawn, labeled schematics, not captured photographs); a longdesc added to the three labeled diagrams (Figure_32_03_02, Figure_32_03_03, Figure_32_03_04), walking each one's labels and layout in reading order since their one-line captions do not carry that detail; figure print-number cross-references replaced with descriptive references ("pictured below"); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), covering all four of each; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (apomixis, scion, cutting, senescence) added from the glossary, and one cloze recall item added from the chapter summary sentence "Asexually reproducing plants thrive well in stable environments." One example is corrected with a visible Source note: garlic is dropped from the corm sentence, since it forms a bulb by this book's own account (erratum 438).</small>
+<small>This section is adapted from [Biology 2e, Section 32.3: Asexual Reproduction](https://openstax.org/books/biology-2e/pages/32-3-asexual-reproduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the section's opening sentence "Many different types of roots exhibit asexual reproduction" corrected to "stems" — the section's own next-sentence figure is captioned "Different types of stems allow for asexual reproduction," and every item the sentence goes on to list (corm, bulb, stem tuber, rhizome, stolon) is a modified stem, not a root, in the section's own subsequent explanation — reported as a source defect; figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own bare, panel-letter-only alt text; four figures re-kinded after inspection — Figure_37_03_01 from the manifest's file-extension "diagram" guess to "photo" (a five-panel photo composite, not a drawn illustration), and Figure_32_03_02, Figure_32_03_03, and Figure_32_03_04 from "photo" to "diagram" (line-drawn, labeled schematics, not captured photographs); a longdesc added to the three labeled diagrams (Figure_32_03_02, Figure_32_03_03, Figure_32_03_04), walking each one's labels and layout in reading order since their one-line captions do not carry that detail; figure print-number cross-references replaced with descriptive references ("pictured below"); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), covering all four of each; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (apomixis, scion, cutting, senescence) added from the glossary, and one cloze recall item added from the chapter summary sentence "Asexually reproducing plants thrive well in stable environments." One example is corrected with a visible Source note: garlic is dropped from the corm sentence, since it forms a bulb by this book's own account (erratum 438), and the stems figure's caption, which calls panel (a) "the corm of a garlic plant," now calls it the bulb of a garlic plant and sets the corm-versus-bulb contrast as a general statement, with a visible Source note (erratum 889). One claim is corrected with a visible Source note: the source says applications of cytokinins and ethylene delay or prevent senescence, but this book's own Plant Sensory Systems and Responses section (Section 30.6) ties ethylene to flower wilting, leaf fall, and abscission and says senescing leaves produce it, so the sentence now says ethylene promotes senescence, and the senescence recall item's hint, which repeated the source's claim, now only says where to look (erratum 887).</small>

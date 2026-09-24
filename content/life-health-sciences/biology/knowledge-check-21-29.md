@@ -34,6 +34,7 @@ animals
 {{< textin
   question="The protein subunit that makes up a viral capsid is called a ________."
   answer="capsomere"
+  accept="capsomer"
 >}}
 
 {{< selfcheck question="Why can't the methods scientists use to classify prokaryotic and eukaryotic cells by shared genomic sequence, such as 16S rRNA analysis, be applied to classify most viruses by common ancestry?" >}}
@@ -84,7 +85,7 @@ protease
 {{< textin
   question="The 'drug cocktail' combination approach that attacks HIV at multiple stages of its replicative cycle at once, so the virus cannot develop resistance to every drug simultaneously, is known by the acronym ________."
   answer="HAART"
-  accept="highly active antiretroviral therapy"
+  accept="highly active antiretroviral therapy|highly active anti-retroviral therapy"
 >}}
 
 {{< selfcheck question="Why must the molecular targets of an antiviral drug be proteins encoded by viral genes, rather than molecules already present in a healthy host cell?" >}}
@@ -99,7 +100,7 @@ viral growth is inhibited without damaging the host
 ### 21.4 Other Acellular Entities: Prions and Viroids
 
 {{< multiplechoice
-  question="Which prion disease, native to humans in Papua New Guinea, was historically spread from person to person through ritualistic cannibalism?"
+  question="Which prion disease is native to humans in Papua New Guinea?"
   answer="kuru"
 >}}
 bovine spongiform encephalopathy
@@ -114,7 +115,6 @@ variant Creutzfeldt-Jakob disease
 practicing ritualistic cannibalism
 feeding cattle nervous tissue to other cattle
 donating blood from affected regions
-eating beef from infected animals
 {{< /multiplechoice >}}
 
 {{< selfcheck question="How does a single PrP<sup>sc</sup> molecule introduced into the body lead to an exponential increase of the infectious prion protein?" >}}
@@ -226,13 +226,12 @@ bacteria called methane oxidizers oxidize the methane to carbon dioxide
   accept="zoonoses|zoonotic disease"
 >}}
 
-{{< selfcheck question="Once a biofilm infection is established in the body, why is it especially difficult to eradicate with antibiotics?" >}}
-Biofilms tend to be resistant to most methods used to control microbial growth, including antibiotics, because the matrix that attaches the cells to a substrate and to one another protects the cells from antibiotics or drugs. Because biofilms also grow slowly, they are less responsive to agents that interfere with cell growth, and they can resist up to 1,000 times the antibiotic concentrations used to kill the same bacteria when they are free-living.
+{{< selfcheck question="Why were non-acidic canned foods, homemade pickles, and processed meats once common sources of botulism, and what has reduced the incidence of this disease?" >}}
+Botulism is the potentially fatal disease produced by a toxin from the anaerobic bacterium *Clostridium botulinum*. The can, jar, or package created a suitable anaerobic environment where *Clostridium* could grow. Proper sterilization and canning procedures have reduced the incidence of this disease.
 ===CHECKS===
-biofilms tend to be resistant to most methods used to control microbial growth, including antibiotics
-the matrix that attaches the cells to a substrate and to one another protects the cells from antibiotics or drugs
-biofilms also grow slowly, they are less responsive to agents that interfere with cell growth
-resist up to 1,000 times the antibiotic concentrations used to kill the same bacteria when they are free-living
+botulism is produced by a toxin from the anaerobic bacterium Clostridium botulinum
+the can, jar, or package created a suitable anaerobic environment where Clostridium could grow
+proper sterilization and canning procedures have reduced the incidence of this disease
 {{< /selfcheck >}}
 
 ### 22.5 Beneficial Prokaryotes
@@ -381,7 +380,6 @@ without saprobe species, life would cease to exist as all organic carbon became 
 {{< textin
   question="Fungi that only perform anaerobic respiration and often cannot survive in the presence of oxygen are called ________."
   answer="obligate anaerobes"
-  accept="obligate anaerobe"
 >}}
 
 {{< selfcheck question="Why did scientists historically classify fungi as plants, and what does molecular evidence now show about their true evolutionary relationships?" >}}
@@ -406,7 +404,7 @@ Basidiomycota
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The fruiting body of an ascomycete, formed by the growth of many hyphae, is called a(n) ________."
+  question="In ascomycetes, the fruiting body that thousands of asci fill is called a(n) ________."
   answer="ascocarp"
 >}}
 
@@ -493,12 +491,13 @@ model research organisms
 *Beauveria*
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain why fungal insecticides such as Beauveria bassiana pose little risk to animals and plants other than their target insect pest." >}}
-Fungal insecticides such as *Beauveria bassiana* are very specific to the insects they attack, and do not infect other animals or plants. Fungi are currently under investigation as potential microbial insecticides, with several already on the market.
+{{< selfcheck question="Why is the mycorrhizal relationship important to farming, and what is known about the commercial mycorrhizal inoculants sold to gardeners?" >}}
+The mycorrhizal relationship between fungi and plant roots is essential for the productivity of farm land. Without the fungal partner in root systems, 80–90 percent of trees and grasses would not survive. Mycorrhizal fungal inoculants are available as soil amendments from gardening supply stores and are promoted by supporters of organic agriculture, but there is little evidence as to the effectiveness.
 ===CHECKS===
-fungal insecticides such as Beauveria bassiana are very specific to the insects they attack
-do not infect other animals or plants
-fungi are currently under investigation as potential microbial insecticides, with several already on the market
+the mycorrhizal relationship between fungi and plant roots is essential for the productivity of farm land
+without the fungal partner in root systems, 80–90 percent of trees and grasses would not survive
+mycorrhizal fungal inoculants are available as soil amendments from gardening supply stores
+there is little evidence as to the effectiveness
 {{< /selfcheck >}}
 
 ## Chapter 25: Seedless Plants
@@ -511,14 +510,8 @@ fungi are currently under investigation as potential microbial insecticides, wit
 >}}
 homosporous
 heterosporous
-diplontic
-haplontic
+non-vascular
 {{< /multiplechoice >}}
-
-{{< textin
-  question="In a life cycle where the diploid stage is dominant and the only haploid cells are the gametes, the cycle is described as ________."
-  answer="diplontic"
->}}
 
 {{< selfcheck question="In the vascular tissue of land plants, what does xylem transport, and what does phloem transport?" >}}
 Xylem conducts water and minerals absorbed from the soil up to the shoot, while phloem transports food derived from photosynthesis throughout the entire plant.
@@ -526,6 +519,11 @@ Xylem conducts water and minerals absorbed from the soil up to the shoot, while 
 xylem conducts water and minerals absorbed from the soil up to the shoot
 phloem transports food derived from photosynthesis throughout the entire plant
 {{< /selfcheck >}}
+
+{{< textin
+  question="In a life cycle where the diploid stage is dominant and the only haploid cells are the gametes, the cycle is described as ________."
+  answer="diplontic"
+>}}
 
 ### 25.2 Green Algae: Precursors of Land Plants
 
@@ -557,13 +555,11 @@ than the Charales or the Coleochaetales
 {{< textin
   question="In hornworts, thin branched cells called ________ surround the spores and help propel them farther into the environment."
   answer="pseudoelaters"
-  accept="pseudoelater"
 >}}
 
 {{< textin
-  question="Liverworts reproduce asexually by spreading small, complete pieces of plant called ________, produced in a cup on the thallus and splashed out by raindrops."
-  answer="gemmae"
-  accept="gemma"
+  question="In the life cycle of a lobate liverwort, the stalk-like structures that grow from the thallus and carry the antheridia and archegonia are called ________."
+  answer="gametophores"
 >}}
 
 {{< selfcheck question="How do the calyptra and operculum protect a moss sporangium before its spores are released?" >}}
@@ -589,7 +585,6 @@ They release flagellated sperm that must swim through a layer of moisture.
 {{< textin
   question="The vascular plants, whose more than 260,000 species represent over 90 percent of Earth's vegetation, are also called ________."
   answer="tracheophytes"
-  accept="tracheophyte"
 >}}
 
 {{< selfcheck question="What is the difference between primary succession and secondary succession, as illustrated by moss and liverwort colonization?" >}}
@@ -617,7 +612,6 @@ sporangium
 {{< textin
   question="In seed plants, the gametophytes shrank while the ________ became prominent structures."
   answer="sporophytes"
-  accept="sporophyte"
 >}}
 
 {{< selfcheck question="In seed plants, how do the sperm of cycads and *Ginkgo* differ from the sperm of modern gymnosperms and all angiosperms, and how are they nonetheless delivered to the female gametophyte?" >}}
@@ -721,17 +715,17 @@ nerve tissue
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Two of the five animal clades—the Ctenophora and the ________—entirely lack *Hox* genes."
-  answer="Porifera"
-  accept="Parazoa"
+  question="The presence of a *Hox* gene in the Placozoa, together with similarities in the genomic organization of the Placozoa, Cnidaria, and Bilateria, has led to the inclusion of those three groups in a clade called the ________."
+  answer="Parahoxozoa"
 >}}
 
-{{< selfcheck question="Explain what parthenogenesis is and why only female animals typically produce parthenogenetic offspring." >}}
-Parthenogenesis is a form of uniparental reproduction in which progeny develop from a gamete without fertilization. Because of the nutrients stored in eggs, only females produce parthenogenetic offspring.
+{{< selfcheck question="How does incomplete metamorphosis in insects differ from complete metamorphosis, and what advantage can complete metamorphosis give?" >}}
+In insects with incomplete metamorphosis, such as grasshoppers, the young resemble wingless adults, but gradually produce larger and larger wing buds during successive molts, until finally producing functional wings and sex organs during the last molt. Other animals, such as some insects and echinoderms, undergo complete metamorphosis in which the embryo develops into one or more feeding larval stages that may differ greatly in structure and function from the adult. For animals with complete metamorphosis, the larva and the adult may have different diets, limiting competition for food between them.
 ===CHECKS===
-parthenogenesis is a form of uniparental reproduction
-progeny develop from a gamete without fertilization
-because of the nutrients stored in eggs, only females produce parthenogenetic offspring
+in insects with incomplete metamorphosis, the young resemble wingless adults
+gradually produce larger and larger wing buds during successive molts
+in complete metamorphosis the embryo develops into one or more feeding larval stages that may differ greatly in structure and function from the adult
+the larva and the adult may have different diets, limiting competition for food between them
 {{< /selfcheck >}}
 
 ### 27.2 Features Used to Classify Animals
@@ -748,6 +742,7 @@ the pleural cavity
 {{< textin
   question="In protostomes, the cleavage pattern in which the developmental fate of each embryonic cell is already fixed at this early stage is called ________."
   answer="determinate cleavage"
+  accept="determinate"
 >}}
 
 {{< selfcheck question="Explain why deuterostome development makes the existence of embryonic stem cells possible." >}}
@@ -780,12 +775,13 @@ annelids and mollusks
 arthropods and nematodes
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain what evidence supports the hypothesis that animals (Metazoa) evolved from an ancestor resembling modern colonial choanoflagellates." >}}
-The feeding cells of sponges, called choanocytes, closely resemble choanoflagellate protists. This similarity has been used to suggest that Metazoa evolved from a common ancestral organism that resembled the modern colonial choanoflagellates.
+{{< selfcheck question="Which features of the comb jellies, or Ctenophora, have been used to argue that they should be considered basal to the rest of the animal kingdom?" >}}
+Recent molecular analysis has shown that many of the genes that support neural development in other animals are absent from the Ctenophore genome. The muscle cells are restricted to the mouth and tentacles and are derived from cells in the mesoglea. The mitochondrial genome of the Ctenophores is small and lacks many genes found in other animal mitochondrial genomes. These features, plus the absence of *Hox* genes from the Ctenophores, have been used to argue that the Ctenophores should be considered basal.
 ===CHECKS===
-the feeding cells of sponges, called choanocytes, closely resemble choanoflagellate protists
-this similarity has been used to suggest that Metazoa evolved from a common ancestral organism
-that resembled the modern colonial choanoflagellates
+many of the genes that support neural development in other animals are absent from the Ctenophore genome
+the muscle cells are restricted to the mouth and tentacles and are derived from cells in the mesoglea
+the mitochondrial genome of the Ctenophores is small and lacks many genes found in other animal mitochondrial genomes
+the absence of Hox genes from the Ctenophores
 {{< /selfcheck >}}
 
 ### 27.4 The Evolutionary History of the Animal Kingdom
@@ -852,7 +848,6 @@ helps to encourage cross-fertilization and genetic diversity
 {{< textin
   question="Cnidocytes have large stinging organelles that usually contain a barb at the base of a long coiled thread; these organelles are called ________."
   answer="nematocysts"
-  accept="nematocyst"
 >}}
 
 {{< multiplechoice
@@ -875,7 +870,7 @@ additional mechanical support for the body of the anemone
 ### 28.3 Superphylum Lophotrochozoa: Flatworms, Rotifers, and Nemerteans
 
 {{< textin
-  question="Embryonic development of nemertean worms proceeds via a ________ or trochophore-like larval stage."
+  question="Embryonic development of nemertean worms proceeds via a trochophore-like larval stage or via a ________ larval stage, a larval form distinct from the pilidium."
   answer="planuliform"
 >}}
 
@@ -927,7 +922,7 @@ they have a symbiotic relationship with bacteria living in their bodies
 {{< textin
   question="In marine nematodes, the excretory cells that are unique to nematodes are called ________."
   answer="renette cells"
-  accept="renette cell|renette"
+  accept="renette"
 >}}
 
 {{< multiplechoice
@@ -936,7 +931,7 @@ they have a symbiotic relationship with bacteria living in their bodies
 >}}
 posterior ganglion
 pharyngeal nerve ring
-renette cells
+ventral nerve cord
 copulatory spicules
 {{< /multiplechoice >}}
 
@@ -971,7 +966,7 @@ a ventral nerve cord connects additional segmental ganglia
 {{< textin
   question="Winged insects, which bear jointed legs on the prothorax, mesothorax, and metathorax along with veined wings on the mesothorax and metathorax, are called the ________."
   answer="pterygotes"
-  accept="pterygote|Pterygota"
+  accept="Pterygota"
 >}}
 
 ### 28.7 Superphylum Deuterostomia
@@ -1030,13 +1025,12 @@ tetrapods include amphibians, reptiles, birds, and mammals
 ### 29.2 Fishes
 
 {{< multiplechoice
-  question="Which of the following features do lampreys share with the gnathostomes, unlike hagfishes?"
-  answer="a true cerebellum"
+  question="In most shark species, the fertilized egg is retained in the mother's oviduct, the embryo is nourished by the egg yolk, and the young hatch in the uterus and are born alive. What is this reproductive mode called?"
+  answer="ovoviviparous"
 >}}
-a cartilaginous skull
-slime glands
-a true cerebellum
-sensory barbels around the mouth
+oviparous
+viviparous
+ovoviviparous
 {{< /multiplechoice >}}
 
 {{< textin
@@ -1109,13 +1103,13 @@ great dynamic expansion of the gape and independent motion of the two sides
 ### 29.5 Birds
 
 {{< multiplechoice
-  question="Which type of feather has barbules that do not interlock, trapping air between adjacent feathers to reduce heat loss?"
-  answer="down feathers"
+  question="In birds, which structure allows water to be reabsorbed from waste back into the bloodstream, so that uric acid is expelled as concentrated urate salts instead of being held in a urinary bladder?"
+  answer="the cloaca"
 >}}
-contour feathers
-flight feathers
-down feathers
-primary feathers
+the syrinx
+the furcula
+the cloaca
+the air sacs
 {{< /multiplechoice >}}
 
 {{< textin

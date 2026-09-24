@@ -24,12 +24,12 @@ How does the replication machinery know where to begin? It turns out that there 
 
 DNA polymerase has two important restrictions: it is able to add nucleotides only in the 5′ to 3′ direction (a new DNA strand can be only extended in this direction). It also requires a free 3′-OH group to which it can add nucleotides by forming a phosphodiester bond between the 3′-OH end and the 5′ phosphate of the next nucleotide. This essentially means that it cannot add nucleotides if a free 3′-OH group is not available. Then how does it add the first nucleotide? The problem is solved with the help of a primer that provides the free 3′-OH end. Another enzyme, RNA **primase**, synthesizes an RNA segment that is about five to ten nucleotides long and complementary to the template DNA. Because this sequence primes the DNA synthesis, it is appropriately called the **primer**. DNA polymerase can now extend this RNA primer, adding nucleotides one-by-one that are complementary to the template strand (the figure below).
 
-{{< mediafigure src="biology/Figure_14_04_01-02d6" kind="diagram" alt="A DNA double helix opening into two single strands at a replication fork, with topoisomerase, helicase, single-strand binding proteins, and primase labeled at their positions along the strands, and primase synthesizing a short RNA primer near the open fork." longdesc="The diagram reads left to right along one DNA molecule drawn as an orange ladder-like ribbon. At the far left the ribbon is still a closed double helix, its two strands labeled 5′ (top) and 3′ (bottom); a purple blob labeled Topoisomerase sits on top of the helix there. Just to its right a teal ring labeled Helicase marks the point where the double helix opens into two single strands. From the helicase, the upper single strand curves up and to the right; partway along it, a diagonal cluster of tan oval beads labeled Single-Strand Binding Proteins coats the strand. Farther right on this same strand, an olive-green blob labeled Primase sits on the strand beside a short red segment labeled RNA Primer, with 3′ marked at the segment's left edge and 5′ at its right edge. The lower single strand curves down and then back to the right below the upper strand; a second, smaller cluster of tan Single-Strand Binding Protein beads coats it partway along, and the strand ends at the right labeled 5′ with no further protein bound." eager="true" >}}
+{{< mediafigure src="biology/Figure_14_04_01-02d6" kind="diagram" alt="A DNA double helix opening into two single strands at a replication fork, with topoisomerase, helicase, single-strand binding proteins, and primase labeled at their positions along the strands, and primase synthesizing a short RNA primer near the open fork." longdesc="The diagram reads left to right along one DNA molecule drawn as an orange ladder-like ribbon. At the far left the ribbon is still a closed double helix, its two strands labeled 5′ (top) and 3′ (bottom); a purple blob labeled Topoisomerase (Relieves additional coiling) straddles the helix there. Just to its right a teal ring labeled Helicase (Unzip) marks the point where the double helix opens into two single strands. From the helicase, the upper single strand curves up and to the right; partway along it, a diagonal cluster of tan oval beads coats the strand, marked by two leader lines from the label Single-Strand Binding Proteins (Stabilizes ssDNA and keep strands open). Farther right on this same strand, an olive-green two-lobed blob labeled Primase (Makes RNA primer) straddles the strand around a short red segment labeled RNA Primer (5-10 Nucleotides long), with 3′ marked at the segment's left edge and 5′ at its right edge; a white arrow points left from the primer's 3′ end. The lower single strand curves down and then back to the right below the upper strand; a second, unlabeled cluster of the same tan beads coats it partway along, and the strand ends at the right labeled 5′ with no further protein bound." eager="true" >}}
 First Components of DNA Replication. As DNA replication begins, DNA Helicase, a large enzyme, separates the two strands of DNA so that they can act as templates for replication. Single-strand binding proteins bind to each strand to stabilize and prevent them from reforming the double helix. Primase, an RNA polymerase, binds to the single stranded DNA and synthesizes a short RNA primer in the 5′ to 3′ direction that is antiparallel to the parental strand. This RNA primer allows for DNA polymerase to begin replicating the DNA. Topoisomerase binds to the double helix upstream of the replication fork to prevent additional coiling by making small cuts in one of the DNA strands.
 Credit: Rao, A., Ryan, K. Fletcher, S. and Tag, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
-{{< selfcheck question="You isolate a cell strain in which the joining of Okazaki fragments is impaired and suspect that a mutation has occurred in an enzyme found at the replication fork. Which enzyme is most likely to be mutated?" hint="Think about which enzyme specifically seals the gaps between Okazaki fragments once they are synthesized." >}}
+{{< selfcheck question="You isolate a cell strain in which the joining of Okazaki fragments is impaired and suspect that a mutation has occurred in an enzyme found at the replication fork. Which enzyme is most likely to be mutated?" hint="Use the table of enzymes and their functions later in this section." >}}
 DNA ligase, as this enzyme joins together Okazaki fragments.
 ===CHECKS===
 DNA ligase
@@ -100,7 +100,7 @@ Replication in prokaryotes starts from a sequence found on the chromosome called
 {{< multiplechoice
   question="In which direction does DNA replication take place?"
   answer="5′-3′"
-  hint="DNA polymerase can only add nucleotides to a free 3′-OH end of a growing strand."
+  hint="Reread the paragraph on DNA polymerase’s two important restrictions."
 >}}
 5′-3′
 3′-5′
@@ -108,14 +108,14 @@ Replication in prokaryotes starts from a sequence found on the chromosome called
 3′
 {{< /multiplechoice >}}
 
-{{< selfcheck question="DNA replication is bidirectional and discontinuous; explain your understanding of those concepts." hint="Bidirectional describes how many replication forks form at the origin and which ways they move; discontinuous describes how one of the two new strands is built." >}}
+{{< selfcheck question="DNA replication is bidirectional and discontinuous; explain your understanding of those concepts." hint="Reread the origin-of-replication paragraph and the two paragraphs after the Visual Connection question." >}}
 At an origin of replication, two replication forks are formed that are extended in two directions. On the lagging strand, Okazaki fragments are formed in a discontinuous manner.
 ===CHECKS===
 two replication forks are formed that are extended in two directions
 on the lagging strand, Okazaki fragments are formed in a discontinuous manner
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are Okazaki fragments and how are they formed?" hint="Think about which strand cannot be copied continuously toward the fork, and what enzyme builds its short pieces." >}}
+{{< selfcheck question="What are Okazaki fragments and how are they formed?" hint="Reread the paragraph after the Visual Connection question." >}}
 Short DNA fragments are formed on the lagging strand synthesized in a direction away from the replication fork. These are synthesized by DNA pol.
 ===CHECKS===
 short DNA fragments are formed on the lagging strand
@@ -123,14 +123,14 @@ synthesized in a direction away from the replication fork
 synthesized by DNA pol
 {{< /selfcheck >}}
 
-{{< selfcheck question="If the rate of replication in a particular prokaryote is 900 nucleotides per second, how long would it take 1.2 million base pair genomes to make two copies?" hint="Divide the number of base pairs by the rate, then convert seconds to minutes." >}}
+{{< selfcheck question="If the rate of replication in a particular prokaryote is 900 nucleotides per second, how long would it take 1.2 million base pair genomes to make two copies?" hint="Work from the rate and genome size the question gives." >}}
 1333 seconds or 22.2 minutes.
 ===CHECKS===
 1333 seconds
 22.2 minutes
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain the events taking place at the replication fork. If the gene for helicase is mutated, what part of replication will be affected?" hint="List each protein or enzyme active at the fork before considering what a helicase mutation would block." >}}
+{{< selfcheck question="Explain the events taking place at the replication fork. If the gene for helicase is mutated, what part of replication will be affected?" hint="Use the numbered summary of the replication steps and the replication-fork figure." >}}
 At the replication fork, the events taking place are helicase action, binding of single-strand binding proteins, primer synthesis, and synthesis of new strands. If there is a mutated helicase gene, the replication fork will not be extended.
 ===CHECKS===
 helicase action, binding of single-strand binding proteins, primer synthesis, and synthesis of new strands
@@ -142,7 +142,7 @@ if there is a mutated helicase gene, the replication fork will not be extended
 {{< multiplechoice
   question="Which of the following components is not involved during the formation of the replication fork?"
   answer="ligase"
-  hint="Ligase seals gaps late in replication, after new strands are made — think about what forming the fork itself requires."
+  hint="Reread the replication steps in order from the start, and stop once the fork has formed."
 >}}
 single-strand binding proteins
 helicase
@@ -153,7 +153,7 @@ ligase
 {{< multiplechoice
   question="Which of the following does the enzyme primase synthesize?"
   answer="RNA primer"
-  hint="Primase is itself an RNA polymerase — what kind of nucleic acid segment does it lay down?"
+  hint="Reread the paragraph on DNA polymerase’s two important restrictions."
 >}}
 DNA primer
 RNA primer
@@ -164,7 +164,7 @@ phosphodiester linkage
 {{< multiplechoice
   question="A scientist randomly mutates the DNA of a bacterium. She then sequences the bacterium's daughter cells, and finds that the daughters have many errors in their replicated DNA. The parent bacterium likely acquired a mutation in which enzyme?"
   answer="DNA pol II"
-  hint="The section names which polymerase, alongside DNA pol I, is primarily required for repair rather than for the main synthesis reaction."
+  hint="Reread the end of the paragraph that introduces DNA polymerase."
 >}}
 DNA ligase
 DNA pol II
@@ -172,7 +172,7 @@ Primase
 DNA pol I
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is the role of a primer in DNA replication? What would happen if you forgot to add a primer in a tube containing the reaction mix for a DNA sequencing reaction?" hint="DNA polymerase can never start a brand-new strand on its own — what free chemical group does it always need first?" >}}
+{{< selfcheck question="What is the role of a primer in DNA replication? What would happen if you forgot to add a primer in a tube containing the reaction mix for a DNA sequencing reaction?" hint="Reread the paragraph on DNA polymerase’s two important restrictions." >}}
 Primer provides a 3′-OH group for DNA pol to start adding nucleotides. There would be no reaction in the tube without a primer, and no bands would be visible on the electrophoresis.
 ===CHECKS===
 primer provides a 3′-OH group for DNA pol to start adding nucleotides
@@ -180,7 +180,7 @@ there would be no reaction in the tube without a primer
 no bands would be visible on the electrophoresis
 {{< /selfcheck >}}
 
-{{< selfcheck question="Quinolone antibiotics treat bacterial infections by blocking the activity of topoisomerase. Why does this treatment work? Explain what occurs at the molecular level." hint="Think about what has to happen to the DNA ahead of the fork as helicase unwinds it, and what stops that process when topoisomerase cannot act." >}}
+{{< selfcheck question="Quinolone antibiotics treat bacterial infections by blocking the activity of topoisomerase. Why does this treatment work? Explain what occurs at the molecular level." hint="Reread the topoisomerase sentences in the paragraph after the Visual Connection question, and the table’s topoisomerase row." >}}
 Bacteria treated with quinolones will no longer be able to replicate their DNA. Topoisomerase relieves the excess DNA supercoiling that occurs ahead of the replication fork as DNA is unwound for replication. If topoisomerase is inhibited, DNA helicase will only be able to unwind the DNA for a short stretch before the supercoiling becomes too overwound for replication to continue.
 ===CHECKS===
 bacteria treated with quinolones will no longer be able to replicate their DNA
@@ -190,4 +190,4 @@ if topoisomerase is inhibited, DNA helicase will only be able to unwind the DNA 
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 14.4: DNA Replication in Prokaryotes](https://openstax.org/books/biology-2e/pages/14-4-dna-replication-in-prokaryotes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a colored illustrated schematic of the replication fork, not a photograph); its source alt (a letter-spaced, screen-reader spelling — "D N A", "R N A", "s s D N A" — with a typo, "stablize") rewritten from the image, and a longdesc added describing the drawing's enzymes, strand curves, and 5′/3′ labels as positioned, since that spatial layout is not carried by the caption; the Visual Connection note kept in the body immediately after its figure, rendered as a self-check because its solution is prose rather than a lettered option; the interactive note rendered as a Link to Learning callout with descriptive anchor text in place of the source's bare "here"; every prime mark set as the Unicode ′ in place of a straight apostrophe or the source's right single quotation mark throughout the prose, figure caption, table, key terms, and exercise text; the end-of-section Review Questions (4) and Critical Thinking Questions (6) adapted into the closing interactive Practice block, split across the section's two objectives; rubric checkpoints added to every self-check (the body item and the six Practice self-checks), decomposing each model answer — the source's own solution — into check-off clauses with no new claims. No summary-derived or locally written items were needed: the ten source exercises alone meet this book's floor for both objective groups. The comparison table of enzymes and their functions is kept as a Markdown table only; its columns name an enzyme and its function rather than two categories to sort between, so it is not rendered as a sort-into-bins exercise.</small>
+<small>This section is adapted from [Biology 2e, Section 14.4: DNA Replication in Prokaryotes](https://openstax.org/books/biology-2e/pages/14-4-dna-replication-in-prokaryotes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a colored illustrated schematic of the replication fork, not a photograph); its source alt (a letter-spaced, screen-reader spelling — "D N A", "R N A", "s s D N A" — with a typo, "stablize") rewritten from the image, and a longdesc added describing the drawing's enzymes, strand curves, and 5′/3′ labels as positioned, since that spatial layout is not carried by the caption; the Visual Connection note kept in the body immediately after its figure, rendered as a self-check because its solution is prose rather than a lettered option; the interactive note rendered as a Link to Learning callout with descriptive anchor text in place of the source's bare "here"; every prime mark set as the Unicode ′ in place of a straight apostrophe or the source's right single quotation mark throughout the prose, figure caption, table, key terms, and exercise text; the end-of-section Review Questions (4) and Critical Thinking Questions (6) adapted into the closing interactive Practice block, split across the section's two objectives; rubric checkpoints added to every self-check (the body item and the six Practice self-checks), decomposing each model answer — the source's own solution — into check-off clauses with no new claims. No summary-derived or locally written items were needed: the ten source exercises alone meet this book's floor for both objective groups. Because Practice items are grouped by objective, the direction Review Question (source third) comes first, ahead of the replication-fork and primase questions. The comparison table of enzymes and their functions is kept as a Markdown table only; its columns name an enzyme and its function rather than two categories to sort between, so it is not rendered as a sort-into-bins exercise.</small>

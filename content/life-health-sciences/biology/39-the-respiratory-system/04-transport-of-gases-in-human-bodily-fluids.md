@@ -26,7 +26,7 @@ Although oxygen dissolves in blood, only a small amount of oxygen is transported
 
 **Hemoglobin**, or Hb, is a protein molecule found in red blood cells (erythrocytes) made of four subunits: two alpha subunits and two beta subunits (shown below). Each subunit surrounds a central **heme group** that contains iron and binds one oxygen molecule, allowing each hemoglobin molecule to bind four oxygen molecules. Molecules with more oxygen bound to the heme groups are brighter red. As a result, oxygenated arterial blood where the Hb is carrying four oxygen molecules is bright red, while venous blood that is deoxygenated is darker red.
 
-{{< mediafigure src="biology/Figure_39_04_01-8367" kind="diagram" eager="true" alt="Eight small red disc-shaped cells at left, with an arrow leading from one of them to a ribbon-diagram protein structure at right made of pink coiled subunits arranged in two mirror-image halves. Leader lines labeled 'Oxygen' and 'Heme' point to small gray-and-red clusters nested inside the structure." longdesc="Panel (a), left, captioned 'Red blood cells': eight identical red discs are scattered above the caption; a curved gray arrow leads from the rightmost disc to panel (b). Panel (b), right, captioned 'Hemoglobin': the molecule is drawn as pink ribbon coils forming two mirror-image halves, left and right, each a bundle of helices. A leader line labeled 'Oxygen' points down to a small red-and-gray space-filling cluster nested in the left half; a second leader line labeled 'Heme' points to a similar gray cluster in the right half. Matching gray/red clusters are visible in both halves, showing the molecule's symmetry, though only the left cluster is labeled Oxygen and only the right one is labeled Heme." >}}
+{{< mediafigure src="biology/Figure_39_04_01-8367" kind="diagram" eager="true" alt="Eight small red disc-shaped cells at left, with an arrow leading from one of them to a ribbon-diagram protein structure at right made of pink coiled subunits arranged in two mirror-image halves. Leader lines labeled 'Oxygen' and 'Heme' point to small gray-and-red clusters nested inside the structure." longdesc="Panel (a), left, captioned 'Red blood cells': eight identical red discs are scattered above the caption; a curved gray arrow leads from the rightmost disc to panel (b). Panel (b), right, captioned 'Hemoglobin': the molecule is drawn as pink ribbon coils forming two mirror-image halves, left and right, each a bundle of helices. A leader line labeled 'Oxygen' points down to a small red-and-gray space-filling cluster nested in the left half; a second leader line labeled 'Heme' points to a similar gray cluster low in the right half. Four such clusters are drawn in all, two in each half: the upper-left one and the lower-right one sit in front, each carrying a pair of red oxygen atoms, and two paler ones (upper right, lower left) sit behind the ribbons, showing the molecule's symmetry, though only the upper-left cluster's red atoms are labeled Oxygen and only the lower-right cluster is labeled Heme." >}}
 The protein inside (a) red blood cells that carries oxygen to cells and carbon dioxide to the lungs is (b) hemoglobin. Hemoglobin is made up of four symmetrical subunits and four heme groups. Iron associated with the heme binds oxygen. It is the iron in hemoglobin that gives blood its red color.
 {{< /mediafigure >}}
 
@@ -111,7 +111,7 @@ increased exercise
 {{< multiplechoice
   question="The majority of oxygen in the blood is transported by ________."
   answer="binding to hemoglobin"
-  hint="Recall what percentage of oxygen dissolves directly in the blood versus how much attaches to the iron-containing protein in red blood cells."
+  hint="Reread the opening paragraph of Transport of Oxygen in the Blood."
 >}}
 dissolution in the blood
 being carried as bicarbonate ions
@@ -130,13 +130,15 @@ carbon monoxide will preferentially bind to hemoglobin over oxygen
 {{< textin
   question="The centralized iron-containing structure that is surrounded by the alpha and beta subunits of hemoglobin and binds a single oxygen molecule is called the ________."
   answer="heme group"
+  accept="heme|haem|haem group"
   hint="Each of hemoglobin's four subunits surrounds one of these; together they hold the iron that gives blood its red color."
 >}}
 
 {{< textin
   question="The genetic disorder that makes red blood cells crescent-shaped, elongated, and stiffened, so they can no longer pass through capillaries, is called ________."
   answer="sickle cell anemia"
-  hint="This disorder gets its name from the curved farm tool its affected red blood cells resemble."
+  accept="sickle cell anaemia"
+  hint="Look in Factors That Affect Oxygen Binding, beside the micrograph of misshapen red blood cells."
 >}}
 
 ### Explain how carbon dioxide is transported from body tissues to the lungs
@@ -152,7 +154,7 @@ conversion to bicarbonate
 binding to plasma proteins
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What would happen if no carbonic anhydrase were present in red blood cells?" hint="This enzyme's action inside red blood cells is what lets the bicarbonate buffer system carry the majority of the blood's carbon dioxide." >}}
+{{< selfcheck question="What would happen if no carbonic anhydrase were present in red blood cells?" hint="Reread the paragraph in Transport of Carbon Dioxide in the Blood that describes the third transport method step by step." >}}
 Without carbonic anhydrase, carbon dioxide would not be hydrolyzed into carbonic acid or bicarbonate. Therefore, very little carbon dioxide (only 15 percent) would be transported in the blood away from the tissues.
 ===CHECKS===
 carbon dioxide would not be hydrolyzed into carbonic acid or bicarbonate
@@ -160,21 +162,23 @@ very little carbon dioxide, only 15 percent, would be transported away from the 
 {{< /selfcheck >}}
 
 {{< textin
-  question="The enzyme inside red blood cells that quickly converts carbon dioxide and water into carbonic acid is called ________."
-  answer="carbonic anhydrase"
-  accept="CA"
-  hint="Without this enzyme, carbon dioxide could not be hydrolyzed into the unstable intermediate that dissociates into bicarbonate."
+  question="The molecule that forms when carbon dioxide, rather than oxygen, binds directly to hemoglobin is called ________."
+  answer="carbaminohemoglobin"
+  accept="carbaminohaemoglobin"
+  hint="This binding is reversible, so the molecule releases its carbon dioxide again once it reaches the lungs."
 >}}
 
 {{< textin
-  question="The molecule that forms when carbon dioxide, rather than oxygen, binds directly to hemoglobin is called ________."
-  answer="carbaminohemoglobin"
-  hint="This binding is reversible, so the molecule releases its carbon dioxide again once it reaches the lungs."
+  question="The enzyme inside red blood cells that quickly converts carbon dioxide and water into carbonic acid is called ________."
+  answer="carbonic anhydrase"
+  accept="CA"
+  hint="Look in the paragraph on the third carbon dioxide transport method, right after carbon dioxide diffuses into the red blood cells."
 >}}
 
 {{< textin
   question="The system that carries the majority of carbon dioxide out of the tissues while limiting the change to blood pH is called the ________."
   answer="bicarbonate buffer system"
+  accept="bicarbonate system"
   hint="It converts CO₂ into an unstable acid inside red blood cells, then into an ion exchanged for chloride at the tissues and back again at the lungs."
 >}}
 

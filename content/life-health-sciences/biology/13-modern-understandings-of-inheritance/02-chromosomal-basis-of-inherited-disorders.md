@@ -25,7 +25,7 @@ Inherited disorders can arise when chromosomes behave abnormally during meiosis.
 
 Chromosome isolation and microscopic observation forms the basis of cytogenetics and is the primary method by which clinicians detect chromosomal abnormalities in humans. A **karyotype** is the number and appearance of chromosomes, and includes their length, banding pattern, and centromere position. To obtain a view of an individual's karyotype, cytologists photograph the chromosomes and then cut and paste each chromosome into a chart, or **karyogram**. Another name is an ideogram (below).
 
-{{< mediafigure src="biology/Figure_13_03_01" kind="photo" alt="A karyotype image: two rows of paired, banded chromosome images running from largest to smallest, arranged in numbered columns 1 through 22 with a final column labeled X." longdesc="Two rows of paired, banded chromosome images, each pair stained with a matching pattern of red and green bands and matched for length. The top row holds twelve pairs, numbered 1 through 12 in decreasing size. The bottom row holds eleven pairs, numbered 13 through 22, followed by one more pair labeled X. No pair is labeled Y." eager="true" >}}
+{{< mediafigure src="biology/Figure_13_03_01" kind="photo" alt="A karyotype image: two rows of paired, banded chromosome images running from largest to smallest, arranged in numbered columns 1 through 22 with a final column labeled X." longdesc="Two rows of paired, banded chromosome images, each pair stained with a matching pattern of red and green bands and matched for length. The top row holds twelve pairs, numbered 1 through 12 in decreasing size. The bottom row holds eleven pairs: ten numbered 13 through 22, followed by one pair labeled X. No pair is labeled Y." eager="true" >}}
 This karyotype is of a female human. Notice that homologous chromosomes are the same size, and have the same centromere positions and banding patterns. A human male would have an XY chromosome pair instead of the XX pair. (credit: Andreas Blozer et al)
 {{< /mediafigure >}}
 
@@ -56,7 +56,7 @@ Nondisjunction occurs when homologous chromosomes or sister chromatids fail to s
 {{< multiplechoice
   question="Which of the following statements about nondisjunction is true?"
   answer="Nondisjunction occurring during meiosis II results in 50 percent normal gametes."
-  hint="Check each panel of the diagram above: count how many of the four resulting gametes in each case are labeled n, rather than n + 1 or n − 1."
+  hint="Compare the four gametes at the bottom of each panel of the diagram above."
 >}}
 Nondisjunction only results in gametes with n+1 or n–1 chromosomes.
 Nondisjunction occurring during meiosis II results in 50 percent normal gametes.
@@ -120,7 +120,7 @@ Pericentric inversions include the centromere, and paracentric inversions do not
 
 When one homologous chromosome undergoes an inversion but the other does not, the individual is an inversion heterozygote. To maintain point-for-point synapsis during meiosis, one homolog must form a loop, and the other homolog must mold around it. Although this topology can ensure that the genes correctly align, it also forces the homologs to stretch and can occur with imprecise synapsis regions (below).
 
-{{< mediafigure src="biology/Figure_13_03_08" kind="diagram" alt="A diagram titled 'Inversion Pairing' showing two homologous chromosomes, numbered 1 through 8 along their length, running side by side; near the middle of their length, one chromosome loops out and the other curls into a circle so that both still present their numbered segments in matching order at the point of contact." longdesc="Two horizontal chromosomes drawn as parallel bands and numbered 1 through 8 along their length: a blue chromosome labeled 'Conforming chromosome' on top, and an orange chromosome labeled 'Looped chromosome' below. Both read 1, 2, 3, 4 from the left. At that point, the blue conforming chromosome arcs upward and over in an open loop carrying segments 7, 6, and 5, left to right, before rejoining the line and continuing to segment 8. The orange looped chromosome, at the same position, curls into a closed circle carrying the same segments — 7, 6, and 5 — arranged around the loop, before also continuing to segment 8. The loop lets each chromosome present its segments in the same 1-2-3-4-5-6-7-8 order as its partner at every point of contact, despite one chromosome carrying an inverted segment." >}}
+{{< mediafigure src="biology/Figure_13_03_08" kind="diagram" alt="A diagram titled 'Inversion Pairing' showing two homologous chromosomes, numbered 1 through 8 along their length, running side by side; near the middle of their length, one chromosome loops out and the other curls into a circle so that both still present their numbered segments in matching order at the point of contact." longdesc="Two horizontal chromosomes drawn as parallel bands and numbered 1 through 8 along their length: a blue chromosome labeled 'Conforming chromosome' on top, and an orange chromosome labeled 'Looped chromosome' below. Both read 1, 2, 3, 4 from the left. At that point, the blue conforming chromosome arcs upward and over in an open loop carrying segments 7, 6, and 5, left to right, before rejoining the line and continuing to segment 8. The orange looped chromosome, at the same position, curls into a closed circle carrying the same segments — 7, 6, and 5 — arranged around the loop, before also continuing to segment 8. Both chromosomes are labeled in the same order, 1, 2, 3, 4, 7, 6, 5, 8, so the loop lets each segment lie against its matching partner segment at every point of contact, despite one chromosome carrying an inverted segment." >}}
 When one chromosome undergoes an inversion but the other does not, one chromosome must form an inverted loop to retain point-for-point interaction during synapsis. This inversion pairing is essential to maintaining gene alignment during meiosis and to allow for recombination.
 {{< /mediafigure >}}
 
@@ -170,7 +170,7 @@ The number, size, shape, and banding pattern of chromosomes make them easily ide
 {{< multiplechoice
   question="Which of the following codes describes position 12 on the long arm of chromosome 13?"
   answer="13q12"
-  hint="The long arm of a chromosome is abbreviated q, and the naming order is chromosome number, then arm, then position."
+  hint="Reread the paragraph after the first figure in Chromosome Identification, on how chromosome arms and positions are named."
 >}}
 13p12
 13q12
@@ -181,40 +181,39 @@ The number, size, shape, and banding pattern of chromosomes make them easily ide
 {{< textin
   question="The number and appearance of an individual's chromosomes — including their length, banding pattern, and centromere position — is called a(n) ________."
   answer="karyotype"
-  hint="Cytologists capture this by photographing an individual's chromosomes."
+  hint="Reread the opening paragraph of Chromosome Identification."
 >}}
 
 {{< textin
-  question="The chart cytologists create by cutting and pasting each of an individual's photographed chromosomes into an ordered arrangement is called a(n) ________."
-  answer="karyogram"
-  accept="ideogram"
-  hint="Geneticists read this chart to spot an extra, missing, or rearranged chromosome; its name ends in -gram."
+  question="Any of the non-sex chromosomes is called a(n) ________."
+  answer="autosome"
+  hint="Reread the paragraph after the first figure in Chromosome Identification."
 >}}
 
 ### Explain how nondisjunction leads to disorders in chromosome number
 
 {{< textin
-  question="The failure of synapsed homologs to completely separate and migrate to separate poles during the first cell division of meiosis is called ________."
-  answer="nondisjunction"
-  accept="non-disjunction"
-  hint="Both homologous chromosome pairs and sister chromatids can fail this way, at either meiotic division, and its risk increases with the parents' age."
+  question="An individual with the appropriate number of chromosomes for their species is called ________."
+  answer="euploid"
+  accept="euploidy"
+  hint="Reread the paragraph just before the maternal-age graph."
 >}}
 
 {{< textin
   question="An otherwise diploid genotype missing one entire chromosome is called ________."
   answer="monosomy"
   accept="monosomies"
-  hint="It is one of the two forms of aneuploidy; the other is an extra rather than a missing chromosome."
+  hint="Reread the paragraph just before the maternal-age graph."
 >}}
 
 {{< textin
   question="An otherwise diploid genotype in which one entire chromosome has duplicated is called ________."
   answer="trisomy"
   accept="trisomies"
-  hint="Down syndrome, the most common form among viable births, is an example of this affecting chromosome 21."
+  hint="Reread the paragraph just before the maternal-age graph."
 >}}
 
-{{< selfcheck question="Using diagrams, illustrate how nondisjunction can result in an aneuploid zygote." hint="Think about which structure — a homologous pair or a pair of sister chromatids — fails to separate, and at which meiotic division." >}}
+{{< selfcheck question="Using diagrams, illustrate how nondisjunction can result in an aneuploid zygote." hint="Use the two-panel diagram in Chromosome Number Disorders as your model." >}}
 Exact diagram style will vary; the diagram should look like the nondisjunction diagram above.
 ===CHECKS===
 diagram style will vary
@@ -223,10 +222,17 @@ the diagram should look like the nondisjunction diagram above
 
 ### Compare disorders that aneuploidy causes
 
+{{< textin
+  question="According to the section summary, disorders in chromosome number, or aneuploidies, are typically ________ to the embryo, although a few trisomic genotypes are viable."
+  answer="lethal"
+  accept="fatal"
+  hint="Reread the section summary's second sentence."
+>}}
+
 {{< multiplechoice
   question="In agriculture, polyploid crops (like coffee, strawberries, or bananas) tend to produce ________."
   answer="larger yields"
-  hint="Polyploid plants tend to be larger and more robust than their diploid, euploid counterparts."
+  hint="Reread the end of the Polyploidy paragraph and the daylily figure's caption."
 >}}
 more uniformity
 more variety
@@ -237,7 +243,7 @@ smaller yields
 {{< multiplechoice
   question="The genotype XXY corresponds to"
   answer="Klinefelter syndrome"
-  hint="This genotype corresponds to phenotypically male individuals with small testes, enlarged breasts, and reduced body hair."
+  hint="Reread the last paragraph of Sex Chromosome Nondisjunction in Humans."
 >}}
 Klinefelter syndrome
 Turner syndrome
@@ -248,7 +254,7 @@ Jacob syndrome
 {{< multiplechoice
   question="Abnormalities in the number of X chromosomes tends to have milder phenotypic effects than the same abnormalities in autosomes because of ________."
   answer="X inactivation"
-  hint="All but one X chromosome in a cell condenses into a Barr body, regardless of how many X chromosomes are present."
+  hint="Reread the first paragraph of Sex Chromosome Nondisjunction in Humans."
 >}}
 deletions
 nonhomologous recombination
@@ -256,19 +262,12 @@ synapsis
 X inactivation
 {{< /multiplechoice >}}
 
-{{< textin
-  question="An individual with an error in chromosome number, whether by loss or by gain, is called ________."
-  answer="aneuploid"
-  accept="aneuploidy"
-  hint="It is the umbrella term for both monosomy and trisomy."
->}}
-
 ### Describe how errors in chromosome structure occur through inversions and translocations
 
 {{< multiplechoice
   question="Assume a pericentric inversion occurred in one of two homologs prior to meiosis. The other homolog remains normal. During meiosis, what structure—if any—would these homologs assume in order to pair accurately along their lengths?"
   answer="loop"
-  hint="One homolog must bend to let its inverted segment align with its non-inverted partner."
+  hint="Reread the paragraph just before the Inversion Pairing figure."
 >}}
 V formation
 cruciform
@@ -279,7 +278,7 @@ pairing would not be possible
 {{< multiplechoice
   question="By definition, a pericentric inversion includes the ________."
   answer="centromere"
-  hint="This is what distinguishes it from a paracentric inversion, which occurs entirely on one side of it."
+  hint="Reread the second paragraph of Chromosome Inversions and the figure after it."
 >}}
 centromere
 chiasma
@@ -288,25 +287,25 @@ synapse
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The detachment, 180° rotation, and reinsertion of part of a chromosome is called a(n) ________."
-  answer="chromosome inversion"
-  accept="inversion|chromosomal inversion"
-  hint="It can be pericentric or paracentric, depending on whether it includes the centromere."
->}}
-
-{{< textin
   question="An inversion that occurs entirely outside the centromere is called ________."
   answer="paracentric"
   accept="paracentric inversion"
-  hint="Unlike a pericentric inversion, this kind cannot change the relative lengths of the chromosome arms."
+  hint="Look at the inversion figure and its caption in Chromosome Inversions."
 >}}
 
 {{< textin
-  question="The process by which a chromosome segment dissociates and reattaches to a different, nonhomologous chromosome is called a(n) ________."
-  answer="translocation"
-  hint="A reciprocal one exchanges segments between two nonhomologous chromosomes with no net gain or loss of genetic material."
+  question="In a translocation, a chromosome segment dissociates and reattaches to a different, ________ chromosome."
+  answer="nonhomologous"
+  accept="non-homologous"
+  hint="Reread the first sentence of Translocations."
+>}}
+
+{{< textin
+  question="According to the section summary, because they force chromosomes to assume unnatural topologies during meiosis, inversions and translocations often occur with ________ because of the likelihood of nondisjunction."
+  answer="reduced fertility"
+  hint="Reread the section summary's last sentence."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 13.2: Chromosomal Basis of Inherited Disorders](https://openstax.org/books/biology-2e/pages/13-2-chromosomal-basis-of-inherited-disorders) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with four of the nine re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the Down-syndrome-risk line graph and the three chromosome-rearrangement schematics — pericentric/paracentric inversion, inversion pairing, and reciprocal translocation — are all drawings, not photographs); a longdesc extended description added for the karyotype, the nondisjunction diagram, the maternal-age graph, and the three chromosome-rearrangement diagrams, none of whose full reading is carried by its caption alone; the karyotype figure's alt rewritten to describe the grid's layout rather than restate the caption's female/XX conclusion, and the cri-du-chat figure's alt rewritten to describe the four photographs rather than restate the caption's ages; the Career Connection, Evolution Connection, and Link to Learning notes rendered as callouts with their bold feature name first, the Career and Evolution Connection titles kept in italics, and the Evolution Connection's footnote citation kept as a parenthetical after the sentence it supports; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice, since the source keys it to a lettered option; the end-of-section Review Questions and Critical Thinking Question adapted into the closing interactive Practice block (six multiple choice and one self-check, respectively); nine key-term recall items added from the glossary (karyotype, karyogram, nondisjunction, monosomy, trisomy, aneuploid, chromosome inversion, paracentric, and translocation) so every objective group carries at least one auto-graded item; and rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims — every Practice group in this section already met the three-item floor, so no further items were added. One term is corrected with a visible Source note: an unfertilized egg developing into offspring is parthenogenesis, as this book's animal-diversity chapter names it, not haplodiploidy (erratum 399).</small>
+<small>This section is adapted from [Biology 2e, Section 13.2: Chromosomal Basis of Inherited Disorders](https://openstax.org/books/biology-2e/pages/13-2-chromosomal-basis-of-inherited-disorders) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with four of the nine re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the Down-syndrome-risk line graph and the three chromosome-rearrangement schematics — pericentric/paracentric inversion, inversion pairing, and reciprocal translocation — are all drawings, not photographs); a longdesc extended description added for the karyotype, the nondisjunction diagram, the maternal-age graph, and the three chromosome-rearrangement diagrams, none of whose full reading is carried by its caption alone; the karyotype figure's alt rewritten to describe the grid's layout rather than restate the caption's female/XX conclusion, and the cri-du-chat figure's alt rewritten to describe the four photographs rather than restate the caption's ages; the Career Connection, Evolution Connection, and Link to Learning notes rendered as callouts with their bold feature name first, the Career and Evolution Connection titles kept in italics, and the Evolution Connection's footnote citation kept as a parenthetical after the sentence it supports; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice, since the source keys it to a lettered option; the end-of-section Review Questions and Critical Thinking Question adapted into the closing interactive Practice block (six multiple choice and one self-check, respectively); seven key-term recall items added from the glossary (karyotype, autosome, euploid, monosomy, trisomy, paracentric, and a cloze of the translocation definition keyed "nonhomologous") and two cloze textins from the section's own `Section Summary` sentences (aneuploidies "lethal to the embryo"; inversions and translocations with "reduced fertility"), so every objective group carries at least three items and an auto-graded one; rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and, because Practice items are grouped by objective, the Review Questions do not keep the source's relative order: the pericentric-inversion pairing question (source third) follows the XXY and X-inactivation questions. One term is corrected with a visible Source note: an unfertilized egg developing into offspring is parthenogenesis, as this book's animal-diversity chapter names it, not haplodiploidy (erratum 399).</small>

@@ -24,7 +24,7 @@ The substance of the universe—from a grain of sand to a star—is called **mat
 
 All matter in the natural world is composed of one or more of the 92 fundamental substances called elements. An **element** is a pure substance that is distinguished from all other matter by the fact that it cannot be created or broken down by ordinary chemical means. While your body can assemble many of the chemical compounds needed for life from their constituent elements, it cannot make elements. They must come from the environment. A familiar example of an element that you must take in is calcium (Ca). Calcium is essential to the human body; it is absorbed and used for a number of processes, including strengthening bones. When you consume dairy products your digestive system breaks down the food into components small enough to cross into the bloodstream. Among these is calcium, which, because it is an element, cannot be broken down further. The elemental calcium in cheese, therefore, is the same as the calcium that forms your bones. Some other elements you might be familiar with are oxygen, sodium, and iron. The elements in the human body are shown below, beginning with the most abundant: oxygen (O), carbon (C), hydrogen (H), and nitrogen (N). Each element's name can be replaced by a one- or two-letter symbol; you will become familiar with some of these during this course. All the elements in your body are derived from the foods you eat and the air you breathe.
 
-{{< mediafigure src="anatomy-physiology/201_Elements_of_the_Human_Body-01" kind="diagram" eager="true" alt="A color-coded human silhouette shaded in bands labeled by element and percentage of body mass, beside a table listing eleven elements with their chemical symbols and exact percentages, plus a footnote naming fourteen trace elements at under 1.0 percent combined." longdesc="Left panel: a human silhouette shaded in five bands from head to feet, each labeled with an element and its share of body mass — Others at the top of the head; Nitrogen at the neck (3%); Hydrogen across the shoulders, chest, and arms (10%); Carbon across the mid-torso (18%); and Oxygen across the lower torso, legs, and feet (65%). Right panel: a table with one row per element — Oxygen (O) 65.0%; Carbon (C) 18.5%; Hydrogen (H) 9.5%; Nitrogen (N) 3.2%; Calcium (Ca) 1.5%; Phosphorus (P) 1.0%; Potassium (K) 0.4%; Sulfur (S) 0.3%; Sodium (Na) 0.2%; Chlorine (Cl) 0.2%; Magnesium (Mg) 0.1%; and a final row naming fourteen trace elements — boron, chromium, cobalt, copper, fluorine, iodine, iron, manganese, molybdenum, selenium, silicon, tin, vanadium, and zinc — together making up less than 1.0%." >}}
+{{< mediafigure src="anatomy-physiology/201_Elements_of_the_Human_Body-01" kind="diagram" eager="true" alt="A color-coded human silhouette shaded in bands labeled by element and percentage of body mass, beside a table listing eleven elements with their chemical symbols and exact percentages, plus a final row naming fourteen trace elements at less than 1.0 percent combined." longdesc="Left panel: a human silhouette shaded in five bands from head to feet, each labeled with an element and its share of body mass — Others at the top of the head; Nitrogen at the neck (3%); Hydrogen across the shoulders and upper chest (10%); Carbon across the mid-torso and down the arms to the wrists (18%); and Oxygen across the lower torso, the hands, the legs, and the feet (65%). Right panel: a table with one row per element — Oxygen (O) 65.0%; Carbon (C) 18.5%; Hydrogen (H) 9.5%; Nitrogen (N) 3.2%; Calcium (Ca) 1.5%; Phosphorus (P) 1.0%; Potassium (K) 0.4%; Sulfur (S) 0.3%; Sodium (Na) 0.2%; Chlorine (Cl) 0.2%; Magnesium (Mg) 0.1%; and a final row naming fourteen trace elements — boron, chromium, cobalt, copper, fluorine, iodine, iron, manganese, molybdenum, selenium, silicon, tin, vanadium, and zinc — together making up less than 1.0%." >}}
 The main elements that compose the human body are shown from most abundant to least abundant.
 {{< /mediafigure >}}
 
@@ -40,7 +40,7 @@ Atoms are made up of even smaller subatomic particles, three types of which are 
 
 The figure below shows two models that can help you imagine the structure of an atom—in this case, helium (He). In the planetary model, helium's two electrons are shown circling the nucleus in a fixed orbit depicted as a ring. Although this model is helpful in visualizing atomic structure, in reality, electrons do not travel in fixed orbits, but whiz around the nucleus erratically in a so-called electron cloud.
 
-{{< mediafigure src="anatomy-physiology/202_Two_Models_of_Atomic_Structure" kind="diagram" alt="(a) A large teal sphere labeled He at the center, circled by a gray ring carrying two small blue spheres labeled electron. (b) A hazy blue sphere labeled Cloud of negative charge (2 electrons) surrounding two small red spheres marked with plus signs and labeled Nucleus at the center." >}}
+{{< mediafigure src="anatomy-physiology/202_Two_Models_of_Atomic_Structure" kind="diagram" alt="(a) A large teal sphere labeled He at the center, circled by a gray ring carrying two small blue spheres labeled electron. (b) A hazy blue sphere labeled Cloud of negative charge (2 electrons) surrounding a nucleus labeled Nucleus at the center: two small red spheres marked with plus signs (protons) and two yellow spheres (neutrons)." >}}
 (a) In the planetary model, the electrons of helium are shown in fixed orbits, depicted as rings, at a precise distance from the nucleus, somewhat like planets orbiting the sun. (b) In the electron cloud model, the electrons of helium are shown in the variety of locations they would have at different distances from the nucleus over time.
 {{< /mediafigure >}}
 
@@ -61,18 +61,10 @@ The **periodic table of the elements**, shown below, is a chart identifying the 
 {{< callout type="info" >}}
 **Interactive Link**
 
-Visit [an interactive periodic table](http://openstax.org/l/ptable) to view the elements. In the periodic table of the elements, elements in a single column have the same number of electrons that can participate in a chemical reaction. These electrons are known as “valence electrons.” For example, the elements in the first column all have a single valence electron—an electron that can be “donated” in a chemical reaction with another atom. What is the meaning of a mass number shown in parentheses?
-{{< /callout >}}
+Visit [an interactive periodic table website](http://openstax.org/l/ptable) to view the periodic table. In the periodic table of the elements, elements in a single column have the same number of electrons that can participate in a chemical reaction. These electrons are known as “valence electrons.” For example, the elements in the first column all have a single valence electron, an electron that can be “donated” in a chemical reaction with another atom. What is the meaning of a mass number shown in parentheses?
 
-{{< selfcheck
-  question="What is the meaning of a mass number shown in parentheses?"
-  hint="This section defines a term for exactly this sum earlier — reread its definition of mass number."
->}}
-The mass number is the total number of protons and neutrons in the nucleus of an atom.
-===CHECKS===
-the mass number is the total number of protons and neutrons
-protons and neutrons in the nucleus of an atom
-{{< /selfcheck >}}
+*Source note: the printed answer to this question — "The mass number is the total number of protons and neutrons in the nucleus of an atom" — defines mass number but does not say what the parentheses mean; the periodic table's own footnote, described with the figure above, says a mass number in parentheses is that of the element's longest-lived isotope. Because no sentence in the module fixes this question's answer, it stands here as a prompt rather than a graded item.*
+{{< /callout >}}
 
 ### Isotopes
 
@@ -91,7 +83,7 @@ The controlled use of radioisotopes has advanced medical diagnosis and treatment
 
 Radioisotopes emit subatomic particles that can be detected and tracked by imaging technologies. One of the most advanced uses of radioisotopes in medicine is the positron emission tomography (PET) scanner, which detects the activity in the body of a very small injection of radioactive glucose, the simple sugar that cells use for energy. The PET camera reveals to the medical team which of the patient's tissues are taking up the most glucose. Thus, the most metabolically active tissues show up as bright “hot spots” on the images (see below). PET can reveal some cancerous masses because cancer cells consume glucose at a high rate to fuel their rapid reproduction.
 
-{{< mediafigure src="anatomy-physiology/205_Multi-image_Panel_of_PET_Scan-01" kind="photo" alt="A medical-imaging workstation screen showing nine linked views of one PET/CT scan: small axial slices at upper left, a row of larger coronal CT, PET, and fused PET/CT images across the top, a matching row of sagittal views below, a full-body coronal PET rendering at right, and software control panels at the edges. Bright white and orange hotspots of high glucose uptake appear in the neck and upper chest and in the pelvis on the PET and fused images, marking the sites of tumor spread." >}}
+{{< mediafigure src="anatomy-physiology/205_Multi-image_Panel_of_PET_Scan-01" kind="photo" alt="A medical-imaging workstation screen showing ten linked views of one PET/CT scan: three small axial slices (CT, PET, and fused) in a column at left, a row of three larger coronal views (CT, PET, and fused PET/CT) across the top, a matching row of three sagittal views below, and a full-body PET rendering at right, with software control panels at the edges. Bright white and orange foci of high glucose uptake appear as a small spot at the base of the neck, a large ring-shaped focus low in the chest near the upper abdomen, and, on the full-body rendering, a spot low in the pelvis." >}}
 PET highlights areas in the body where there is relatively high glucose use, which is characteristic of cancerous tissue. This PET scan shows sites of the spread of a large primary tumor to other sites.
 {{< /mediafigure >}}
 {{< /callout >}}
@@ -145,7 +137,7 @@ In nature, atoms of one element tend to join with atoms of other elements in cha
 {{< multiplechoice
   question="Together, just four elements make up more than 95 percent of the body's mass. These include ________."
   answer="oxygen, carbon, hydrogen, and nitrogen"
-  hint="The introduction to this section names these same four elements as the ones your body obtains from the food you eat and the air you breathe."
+  hint="Reread Elements and Compounds, where the body's elements are listed beginning with the most abundant."
 >}}
 calcium, magnesium, iron, and carbon
 oxygen, calcium, iron, and nitrogen
@@ -156,7 +148,7 @@ oxygen, carbon, hydrogen, and nitrogen
 {{< multiplechoice
   question="The smallest unit of an element that still retains the distinctive behavior of that element is an ________."
   answer="atom"
-  hint="This is the term this section defines right after 'element.'"
+  hint="Reread the definition that opens the subsection after Elements and Compounds."
 >}}
 electron
 atom
@@ -173,17 +165,6 @@ the body cannot make elements, so it is helpful to have them in consumables
 
 ### Distinguish between atomic number and mass number
 
-{{< multiplechoice
-  question="The characteristic that gives an element its distinctive properties is its number of ________."
-  answer="protons"
-  hint="This is the same particle count the section calls the atomic number."
->}}
-protons
-neutrons
-electrons
-atoms
-{{< /multiplechoice >}}
-
 {{< textin
   question="The sum of the number of protons and neutrons in the nucleus of an atom is called its ________."
   answer="mass number"
@@ -193,12 +174,23 @@ atoms
 {{< multiplechoice
   question="On the periodic table of the elements, mercury (Hg) has an atomic number of 80 and a mass number of 200.59. It has seven stable isotopes. The most abundant of these probably have ________."
   answer="more than 80 neutrons each"
-  hint="Atomic number counts only protons; compare that fixed count with the higher average total to estimate the typical neutron count."
+  hint="Compare the atomic number with the much larger mass number given, recalling which particles each of the two numbers counts."
 >}}
 about 80 neutrons each
 fewer than 80 neutrons each
 more than 80 neutrons each
 more electrons than neutrons
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="The characteristic that gives an element its distinctive properties is its number of ________."
+  answer="protons"
+  hint="Reread Atomic Number and Mass Number on what makes carbon so different from sodium or iron."
+>}}
+protons
+neutrons
+electrons
+atoms
 {{< /multiplechoice >}}
 
 ### Identify the key distinction between isotopes of the same element
@@ -235,7 +227,7 @@ in its most abundant stable form, it has eight neutrons, too, for a mass number 
 {{< multiplechoice
   question="Nitrogen has an atomic number of seven. How many electron shells does it likely have?"
   answer="two"
-  hint="The first shell holds at most two electrons; see how many are left over for a second shell."
+  hint="The first shell holds at most two electrons and the second as many as eight; place nitrogen's seven electrons shell by shell."
 >}}
 one
 two
@@ -253,4 +245,4 @@ it is therefore likely to participate in chemical reactions in which it donates 
 
 ---
 
-<small>This section is adapted from [Anatomy and Physiology 2e, Section 2.1: Elements and Atoms: The Building Blocks of Matter](https://openstax.org/books/anatomy-and-physiology-2e/pages/2-1-elements-and-atoms-the-building-blocks-of-matter) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP; all six figures re-kinded from the media manifest's file-extension "photo" guess — five to "diagram" (201_Elements_of_the_Human_Body, 202_Two_Models_of_Atomic_Structure, 203_Periodic_Table, 204_Isotopes_of_Hydrogen, and 206_Electron_Shells are all line-art illustrations or charts, not photographs) and 205_Multi-image_Panel_of_PET_Scan kept "photo" (a genuine screen capture of scan imagery); the five thinnest source alts (201, 202, 204, 205, 206) rewritten from the image to name what is drawn rather than restate the caption or a bare panel count; a longdesc added to the body-elements figure (201, walking its table's exact percentages) and to the periodic table (203, describing its layout and quoting the footnote that a mass number in parentheses is an element's longest-lived isotope, since a graded item below depends on it); all six printed figure cross-references ("shown in [link]") replaced with "shown below"/"the figure below"/"(see below)" wording, since Hugo does not number figures; the Interactive Link Question's bare "website" link text replaced with "an interactive periodic table," its URL kept; that Interactive Link Question graded as a `selfcheck` immediately after its callout (1 of 1 graded) — the module's own mass-number definition fixes the printed key, even though neither the key nor the module explains the parentheses convention itself; the Career Connection box's contained PET-scan figure kept inside the callout, matching the source's own nesting; the five Review Questions and three Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall (textin) items added from the glossary ("mass number," "isotope," "radioactive isotope," and "valence shell," with "radioisotope" accepted as the source's own alternate name) to round out three of the four objective groups, which the source's own exercises leave at or near the book's three-per-objective floor; that group's mass-number recall item placed before, not after, the mercury Review Question, the valence-shell recall item placed before, not after, the magnesium self-check, and the isotope recall item placed before, not after, the oxygen-isotopes self-check (whose hint also had its plural "isotopes" reworded to "All three" to remove the giveaway twice over), so that no recall item is preceded by an item whose own stem, hint, or model answer prints its key; a corrected claim, with a visible inline Source note, drops the source's "at close to the speed of light" from the electron-motion sentence (ground-state electron speeds for the light elements this section teaches are a small fraction of light speed).</small>
+<small>This section is adapted from [Anatomy and Physiology 2e, Section 2.1: Elements and Atoms: The Building Blocks of Matter](https://openstax.org/books/anatomy-and-physiology-2e/pages/2-1-elements-and-atoms-the-building-blocks-of-matter) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP; all six figures re-kinded from the media manifest's file-extension "photo" guess — five to "diagram" (201_Elements_of_the_Human_Body, 202_Two_Models_of_Atomic_Structure, 203_Periodic_Table, 204_Isotopes_of_Hydrogen, and 206_Electron_Shells are all line-art illustrations or charts, not photographs) and 205_Multi-image_Panel_of_PET_Scan kept "photo" (a genuine screen capture of scan imagery); the five thinnest source alts (201, 202, 204, 205, 206) rewritten from the image to name what is drawn rather than restate the caption or a bare panel count; a longdesc added to the body-elements figure (201, walking its table's exact percentages) and to the periodic table (203, describing its layout and quoting the footnote that a mass number in parentheses is an element's longest-lived isotope, since the Interactive Link Question depends on it); all six printed figure cross-references ("shown in [link]") replaced with "shown below"/"the figure below"/"(see below)" wording, since Hugo does not number figures; the Interactive Link's bare "website" link text replaced with "an interactive periodic table website," its URL kept, and the callout follows the in-body note's wording ("to view the periodic table," and a comma where the pooled exercise copy prints a dash); that Interactive Link Question stands as a prompt in its callout, with a Source note, and is not graded (0 of 1 graded) — its printed key defines mass number but does not answer what a mass number in parentheses means, which only the periodic table's footnote states, so no module sentence fixes the answer (erratum 881); the Career Connection box's contained PET-scan figure kept inside the callout, matching the source's own nesting; the five Review Questions and three Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall (textin) items added from the glossary ("mass number," "isotope," "radioactive isotope," and "valence shell," with "radioisotope" accepted as the source's own alternate name) to round out three of the four objective groups, which the source's own exercises leave at or near the book's three-per-objective floor; that group's mass-number recall item placed before, not after, the mercury Review Question, and the protons Review Question moved after the mercury Review Question (reversing their source order) so that the mercury stem's "isotopes" does not sit directly above the isotope recall item, the valence-shell recall item placed before, not after, the magnesium self-check, and the isotope recall item placed before, not after, the oxygen-isotopes self-check (whose hint also had its plural "isotopes" reworded to "All three" to remove the giveaway twice over), so that no recall item is preceded by an item whose own stem, hint, or model answer prints its key; a corrected claim, with a visible inline Source note, drops the source's "at close to the speed of light" from the electron-motion sentence (ground-state electron speeds for the light elements this section teaches are a small fraction of light speed).</small>

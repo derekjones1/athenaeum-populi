@@ -53,7 +53,7 @@ Scientists drill for ice cores in polar regions. The ice contains air bubbles an
 
 The data represented in the graph below is an example of such analyses. The 0 °C on this graph refers to the long-term average. Temperatures that are greater than 0 °C exceed Earth's long-term average temperature. Conversely, temperatures that are less than 0 °C are less than Earth's average temperature. This figure shows that there have been periodic cycles of increasing and decreasing temperature.
 
-{{< mediafigure src="biology/Figure_44_05_01" kind="diagram" alt="Top graph plots temperature change in degrees Celsius versus years before present, beginning 400,000 years ago. Temperature shows a cyclical variation, from about 2 degrees Celsius above today's average temperature, to about 8 degrees below. Carbon dioxide levels also show a cyclical variation. The graph shows that the current trend is the carbon dioxide levels are rising. In the past, it cycled between 180 and 300 parts per million. The temperature and carbon dioxide cycles, which repeat at about a hundred thousand year scale, closely mirror one another." longdesc="Two stacked line graphs share the x-axis label Years before present, printed left to right in four steps of 400,000, 300,000, 200,000, and 100,000 before reaching 0 at the right edge. The upper graph's y-axis, Temperature change (°C), is printed from −10 to 4 in steps of 2; its single blue line rises and falls through four broad cycles across the plotted span, each crest reaching roughly 2 °C to 3 °C above the 0 °C baseline and each trough falling to roughly −6 °C to −9 °C below it, with the line's final, steepest rise cut off partway up near the right edge. The lower graph's y-axis, CO2 concentration (ppm), is printed from 175 to 300 in steps of 25; its single red line traces the same four-cycle pattern in step with the upper line, cresting near 275–300 ppm and dropping to roughly 180–200 ppm at each trough, also cut off partway up its final rise at the right edge." >}}
+{{< mediafigure src="biology/Figure_44_05_01" kind="diagram" alt="Top graph plots temperature change in degrees Celsius versus years before present, beginning 400,000 years ago. Temperature shows a cyclical variation, from about 2 degrees Celsius above today's average temperature, to about 8 degrees below. Carbon dioxide levels also show a cyclical variation. The graph shows that the current trend is the carbon dioxide levels are rising. In the past, it cycled between 180 and 300 parts per million. The temperature and carbon dioxide cycles, which repeat at about a hundred thousand year scale, closely mirror one another." longdesc="Two stacked line graphs share the x-axis label Years before present, printed left to right in four steps of 400,000, 300,000, 200,000, and 100,000 before reaching 0 at the right edge. The upper graph's y-axis, Temperature change (°C), is printed from −10 to 4 in steps of 2; its single blue line rises and falls through four broad cycles across the plotted span, each crest reaching roughly 2 °C to 3 °C above the 0 °C baseline and each trough falling to roughly −6 °C to −9 °C below it, with a final, steep rise within the last 20,000 years or so to near 0 °C, where the line fluctuates between about −1 °C and 2 °C up to the right edge. The lower graph's y-axis, CO₂ concentration (ppm), is printed from 175 to 300 in steps of 25; its single red line traces the same four-cycle pattern in step with the upper line, cresting near 275–300 ppm and dropping to roughly 180–200 ppm at each trough, ending its own final steep rise at about 285 ppm at the right edge." >}}
 Ice at the Russian Vostok station in East Antarctica was laid down over the course of 420,000 years and reached a depth of over 3,000 m. By measuring the amount of CO₂ trapped in the ice, scientists have determined past atmospheric CO₂ concentrations. Temperatures relative to modern day were determined from the amount of *deuterium* (a nonradioactive isotope of hydrogen) present.
 {{< /mediafigure >}}
 
@@ -65,7 +65,7 @@ The **Little Ice Age** was a cold period that occurred between 1550 AD and 1850 
 
 The *Industrial Revolution*, which began around 1750, was characterized by changes in much of human society. Advances in agriculture increased the food supply, which improved the standard of living for people in Europe and the United States. New technologies were invented that provided jobs and cheaper goods. These new technologies were powered using fossil fuels, especially coal. The Industrial Revolution starting in the early nineteenth century ushered in the beginning of the Industrial Era. When a fossil fuel is burned, carbon dioxide is released. With the beginning of the Industrial Era, atmospheric carbon dioxide began to rise, shown below.
 
-{{< mediafigure src="biology/Figure_44_05_02" kind="diagram" alt="A line graph titled Atmospheric CO2 Concentration plots CO2 concentration in parts per million on the y-axis against year on the x-axis, with a single red line climbing continuously from lower left to upper right." longdesc="A line graph titled Atmospheric CO2 Concentration. The y-axis, CO2 concentration (ppm), is printed from 300 to 400 in steps of 25; the x-axis, Year, is printed at 1955, 1965, 1975, 1985, 1995, and 2005. A single red line begins at roughly 315 ppm near 1958 and climbs without interruption to roughly 390 ppm at the graph's right edge, near 2008, with the line's upward slope increasing slightly through the second half of the plotted years." >}}
+{{< mediafigure src="biology/Figure_44_05_02" kind="diagram" alt="A line graph titled Atmospheric CO₂ Concentration plots CO₂ concentration in parts per million on the y-axis against year on the x-axis, with a single red line climbing continuously from lower left to upper right." longdesc="A line graph titled Atmospheric CO₂ Concentration. The y-axis, CO₂ concentration (ppm), is printed from 300 to 400 in steps of 25; the x-axis, Year, is printed at 1955, 1965, 1975, 1985, 1995, and 2005. A single red line begins at roughly 315 ppm near 1958 and climbs without interruption to roughly 390 ppm at the graph's right edge, about 2010, with the line's upward slope increasing slightly through the second half of the plotted years." >}}
 The atmospheric concentration of CO₂ has risen steadily since the beginning of industrialization.
 {{< /mediafigure >}}
 
@@ -111,7 +111,7 @@ Watch [a NASA video about the mixed effects of global warming on plant growth](h
 
 A number of global events have occurred that may be attributed to climate change during our lifetimes. *Glacier National Park* in Montana is undergoing the retreat of many of its glaciers, a phenomenon known as glacier recession. In 1850, the area contained approximately 150 glaciers. By 2010, however, the park contained only about 24 glaciers greater than 25 acres in size. One of these glaciers is the *Grinnell Glacier*, shown below, at Mount Gould.
 
-{{< mediafigure src="biology/Figure_44_05_04" kind="photo" alt="A horizontal strip of four color and black-and-white photographs shows Grinnell Glacier and the lake below it receding over time: a 1938 black-and-white photo where the lake is completely frozen; a 1981 photo where about a third of the lake has thawed; a 1998 photo where about two-thirds of the lake has thawed; and a 2009 photo where the lake is mostly open water dotted with floating ice chunks and the glacier has retreated further up the mountain." longdesc="Reading left to right, each panel is labeled with its year and photographer credit as printed on the image: 1938, T. J. Hileman photo, courtesy of GNP Archives; 1981, Carl Key photo, USGS; 1998, D. Fagre photo, USGS; 2009, Lindsey Bengtson photo, USGS." >}}
+{{< mediafigure src="biology/Figure_44_05_04" kind="photo" alt="A horizontal strip of four color and black-and-white photographs shows Grinnell Glacier retreating from the basin below the cliffs: in 1938 (black-and-white) crevassed glacier ice fills the basin with no open water; in 1981 a small lake has opened beyond the glacier, which still covers the foreground; in 1998 the lake is larger and the glacier smaller; and in 2009 the glacier in the basin is nearly gone, leaving a lake dotted with floating ice chunks below a remnant ice field on the ledge above." longdesc="Reading left to right, each panel is labeled with its year and photographer credit as printed on the image: 1938, T. J. Hileman photo, courtesy of GNP Archives; 1981, Carl Key photo, USGS; 1998, D. Fagre photo, USGS; 2009, Lindsey Bengtson photo, USGS." >}}
 The effect of global warming can be seen in the continuing retreat of Grinnel Glacier. The mean annual temperature in the park has increased 1.33 °C since 1900. The loss of a glacier results in the loss of summer meltwaters, sharply reducing seasonal water supplies and severely affecting local ecosystems. (credit: modification of work by USGS)
 {{< /mediafigure >}}
 
@@ -146,7 +146,7 @@ The burning of fossil fuels is an important source of greenhouse gases, which pl
 {{< multiplechoice
   question="Which of the following is an example of a weather event?"
   answer="A windstorm blew down trees in the Boundary Waters Canoe Area in Minnesota on July 4, 1999."
-  hint="Three of these four statements describe a pattern that holds true across years or decades; only one names something that happened on one specific date — that is the hallmark of weather, not climate."
+  hint="Reread the section's first subsection, which sets two terms side by side with examples."
 >}}
 The hurricane season lasts from June 1 through November 30.
 The amount of atmospheric CO₂ has steadily increased during the last century.
@@ -189,7 +189,7 @@ It has stayed essentially constant.
 {{< multiplechoice
   question="What did this section identify as the trigger for atmospheric carbon dioxide beginning to rise at the start of the Industrial Era?"
   answer="the burning of fossil fuels"
-  hint="The paragraph introducing the Industrial Era names one human activity as the direct cause, right before pointing to the rising graph — the other three options are natural drivers the section covers afterward."
+  hint="Reread the paragraph on the Industrial Revolution, just before the carbon dioxide graph."
 >}}
 the burning of fossil fuels
 the Milankovitch cycles
@@ -211,7 +211,7 @@ changes in seasonal temperatures may alter lifecycles and interrupt breeding pat
 {{< multiplechoice
   question="Which of the following natural forces is responsible for the release of carbon dioxide and other atmospheric gases?"
   answer="volcanoes"
-  hint="Two of these four options shift climate without releasing new gases into the atmosphere, and one of the four is a human activity rather than a natural force — the section's paragraph on this driver names the gases and solids it releases directly."
+  hint="Reread the paragraphs on the three drivers that operated before the Industrial Era, checking what each one releases."
 >}}
 the Milankovitch cycles
 volcanoes
@@ -220,22 +220,21 @@ burning of fossil fuels
 {{< /multiplechoice >}}
 
 {{< textin
+  question="A global cooling phenomenon that occurs when dust, ash, or other particles from a volcanic eruption block out sunlight is called ________."
+  answer="haze-effect cooling"
+  hint="Reread the paragraph on the 1783 Iceland eruptions."
+>}}
+
+{{< textin
   question="The cyclic changes in Earth's orbit that may affect climate, recurring on a scale of about 19,000 to 100,000 years, are called the ________."
   answer="Milankovitch cycles"
-  accept="Milankovitch cycle"
-  hint="This factor is named for changes in the planet's own orbital path, not for anything in the atmosphere itself."
+  hint="Reread the paragraph on the first of the three drivers that operated before the Industrial Era."
 >}}
 
 {{< textin
   question="The amount of solar power or energy the sun emits in a given amount of time is called ________."
   answer="solar intensity"
   hint="As this quantity rises or falls, Earth's temperature rises or falls with it — this section proposes it as one explanation for the Little Ice Age."
->}}
-
-{{< textin
-  question="A global cooling phenomenon that occurs when dust, ash, or other particles from a volcanic eruption block out sunlight is called ________."
-  answer="haze-effect cooling"
-  hint="This phenomenon is named for the atmospheric condition the blocked sunlight produces, and it can last a year or more after an eruption before fading."
 >}}
 
 {{< selfcheck question="Compare and contrast how natural- and human-induced processes have influenced global climate change." hint="Natural drivers shift climate up and down over time; human activity has been pushing it in one direction only — name the natural drivers this section covers and the one human activity linked to a steady rise in a specific gas." >}}
@@ -249,25 +248,24 @@ human activity, through emissions from the burning of fossil fuels, has caused a
 ### List two or more greenhouse gases and describe their role in the greenhouse effect
 
 {{< textin
-  question="The warming of Earth due to carbon dioxide and other greenhouse gases in the atmosphere is called the ________."
-  answer="greenhouse effect"
-  hint="This process is named by analogy to a garden structure whose glass panes trap heat inside in a similar way."
+  question="Atmospheric gases such as carbon dioxide and methane that absorb and emit radiation, trapping heat in Earth's atmosphere, are called ________."
+  answer="greenhouse gases"
+  accept="greenhouse gasses"
+  hint="This section names five such gases affecting Earth, including water vapor, nitrous oxide, and ozone alongside the two named in the question."
 >}}
 
 {{< textin
-  question="Atmospheric gases such as carbon dioxide and methane that absorb and emit radiation, trapping heat in Earth's atmosphere, are called ________."
-  answer="greenhouse gases"
-  accept="greenhouse gasses|greenhouse gas"
-  hint="This section names five such gases affecting Earth, including water vapor, nitrous oxide, and ozone alongside the two named in the question."
+  question="The warming of Earth due to carbon dioxide and other greenhouse gases in the atmosphere is called the ________."
+  answer="greenhouse effect"
+  hint="Reread the paragraph that lists the gases trapping the sun's heat."
 >}}
 
 {{< textin
   question="Frozen chunks of ice and methane found at the bottom of the ocean are called ________."
   answer="clathrates"
-  accept="clathrate"
   hint="As ocean water warms, these chunks melt and release the methane trapped inside, adding to the atmosphere's greenhouse gases."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 44.5: Climate and the Effects of Global Climate Change](https://openstax.org/books/biology-2e/pages/44-5-climate-and-the-effects-of-global-climate-change) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension guess — Figure_B44_26 from "diagram" to "photo" (it is a pair of photographs: researchers drilling an ice core and the extracted ice-core sample, not a hand-drawn or computer-rendered image) and Figure_44_05_01 and Figure_44_05_02 from "photo" to "diagram" (both are plotted line graphs, not captured photographs); the source alt of Figure_44_05_01 kept with its "todays" typo corrected to "today's"; the alts of Figure_44_05_02 and Figure_44_05_04 rewritten from letter-spaced screen-reader spellings ("19 60 to 20 10," "19 38," "19 81," "19 98") to plain descriptions; the alt of Figure_44_05_03 corrected from the source's singular "a smokestack" to describe both smokestacks actually visible in the photograph; the alt of Figure_B44_26 rewritten from a terse two-sentence description to a plain description of what each panel shows; longdescs added to the two climate-graph figures (Figure_44_05_01, Figure_44_05_02), transcribing each graph's axes, its printed tick values, and its plotted trend, and to Figure_44_05_04, transcribing the year and photographer credit printed on each of its four panels; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/climate_plants redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items added from the glossary (clathrates, climate, global climate change, greenhouse effect, greenhouse gases, haze-effect cooling, Milankovitch cycles, solar intensity, weather), covering all nine of the section's glossary terms; two local multiple-choice items added to the Industrial Revolution/CO₂ objective's Practice group, built strictly from the page's own figure caption and prose sentences, since the module keeps no Review or Critical Thinking item testing that objective specifically; the glossary entry for "solar intensity" corrected from "amount of solar power energy the sun emits" to "amount of solar power or energy the sun emits," matching the section's own prose definition of the term — reported as a source defect below. Source defects: module `m66419`, glossary definition `fs-idp133556656` ("solar intensity") reads "amount of solar power energy the sun emits in a given amount of time," dropping the "or" that the section's own prose uses in the sentence "Solar intensity is the amount of solar power or energy the sun emits in a given amount of time" — corrected on the page as noted above. One number is corrected with a visible Source note: atmospheric carbon dioxide in 1950 was about 310 ppm, not the pre-industrial 280 (erratum 455).</small>
+<small>This section is adapted from [Biology 2e, Section 44.5: Climate and the Effects of Global Climate Change](https://openstax.org/books/biology-2e/pages/44-5-climate-and-the-effects-of-global-climate-change) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the manifest's file-extension guess — Figure_B44_26 from "diagram" to "photo" (it is a pair of photographs: researchers drilling an ice core and the extracted ice-core sample, not a hand-drawn or computer-rendered image) and Figure_44_05_01 and Figure_44_05_02 from "photo" to "diagram" (both are plotted line graphs, not captured photographs); the source alt of Figure_44_05_01 kept with its "todays" typo corrected to "today's"; the alts of Figure_44_05_02 and Figure_44_05_04 rewritten from letter-spaced screen-reader spellings ("19 60 to 20 10," "19 38," "19 81," "19 98") to plain descriptions; the source alt's claim that Grinnell Glacier's lake was "completely frozen" in 1938 and one-third and two-thirds "thawed" in 1981 and 1998 is corrected to what the photographs show — crevassed glacier ice filling the basin in 1938 and a lake opening as the glacier retreats — reported as a source defect; the alt of Figure_44_05_03 corrected from the source's singular "a smokestack" to describe both smokestacks actually visible in the photograph; the alt of Figure_B44_26 rewritten from a terse two-sentence description to a plain description of what each panel shows; longdescs added to the two climate-graph figures (Figure_44_05_01, Figure_44_05_02), transcribing each graph's axes, its printed tick values, and its plotted trend, and to Figure_44_05_04, transcribing the year and photographer credit printed on each of its four panels; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/climate_plants redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items added from the glossary (clathrates, climate, global climate change, greenhouse effect, greenhouse gases, haze-effect cooling, Milankovitch cycles, solar intensity, weather), covering all nine of the section's glossary terms; two local multiple-choice items added to the Industrial Revolution/CO₂ objective's Practice group, built strictly from the page's own figure caption and prose sentences, since the module keeps no Review or Critical Thinking item testing that objective specifically; the glossary entry for "solar intensity" corrected from "amount of solar power energy the sun emits" to "amount of solar power or energy the sun emits," matching the section's own prose definition of the term — reported as a source defect below. Source defects: module `m66419`, glossary definition `fs-idp133556656` ("solar intensity") reads "amount of solar power energy the sun emits in a given amount of time," dropping the "or" that the section's own prose uses in the sentence "Solar intensity is the amount of solar power or energy the sun emits in a given amount of time" — corrected on the page as noted above. One number is corrected with a visible Source note: atmospheric carbon dioxide in 1950 was about 310 ppm, not the pre-industrial 280 (erratum 455).</small>

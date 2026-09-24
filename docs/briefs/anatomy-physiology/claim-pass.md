@@ -27,12 +27,13 @@ direction of effect, a hormone's source or target, a normal value or range. Igno
    `content/life-health-sciences/anatomy-physiology/` and other modules
    under `sources/openstax/osbooks-anatomy-physiology/modules/` (each
    module's own `<glossary>`). **Then the September 8, 2026 upstream
-   errata** (`git -C sources/openstax/osbooks-anatomy-physiology diff
-   716383a4 HEAD -- modules/<id>` — the parent runs this for you if you
-   ask; never run git yourself): a claim upstream already corrected in
-   the pinned CNXML is not a finding, and a claim the diff shows was
-   corrected in ANOTHER module but not this one is a finding with the
-   diff as evidence. A claim another section contradicts is a
+   errata:** the table in `docs/subjects/anatomy-physiology.md` "Source
+   and authority". A claim upstream already corrected is not a finding. A
+   claim the table shows was corrected in ANOTHER module but not this one
+   is a finding, with the table row as evidence. **Then the book's errata
+   so far** (`$SP/ap-errata.txt`, named in your task): an item already
+   there, as an erratum or under "Reviewed and *not* errata", is not
+   re-filed. A claim another section contradicts is a
    defect on the module's own terms; quote both with element ids
    (`fs-id…`) or page line numbers. Two modules' rounded estimates
    differing is NOT a defect.

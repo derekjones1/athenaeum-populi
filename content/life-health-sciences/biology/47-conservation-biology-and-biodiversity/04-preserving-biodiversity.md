@@ -28,7 +28,7 @@ Numerous computer databases now provide information about named species and a fr
 
 There is also the problem of understanding which species known to science are threatened and to what degree they are threatened. This task is carried out by the non-profit **IUCN** which, as previously mentioned, maintains the Red List—an online listing of endangered species categorized by taxonomy, type of threat, and other criteria, shown below. The Red List is supported by scientific research. In 2011, the list contained 61,000 species, all with supporting documentation.
 
-{{< mediafigure src="biology/Figure_47_04_01" kind="diagram" eager="true" alt="A horizontal stacked bar chart with eight animal and plant groups listed top to bottom on the y-axis and percent of species from 0 to 30 percent on the x-axis; each bar is divided into three color-coded segments for critically endangered, endangered, and vulnerable species, with a legend below the chart." longdesc="Reading the eight bars from top to bottom: Mammals — about 20 percent of species are on the Red List, split into roughly 4 percent critically endangered, 7 percent endangered, and 10 percent vulnerable. Birds — about 12 percent, split into about 2 percent critically endangered, 4 percent endangered, and 6 percent vulnerable. Reptiles — about 5 percent, split into about 1 percent critically endangered, 2 percent endangered, and 3 percent vulnerable. Amphibians — about 29 percent, the largest total, split into about 7 percent critically endangered, 12 percent endangered, and 10 percent vulnerable. Fishes — about 4 percent, split into about 1 percent critically endangered, 1 percent endangered, and 2 percent vulnerable. Insects — less than 1 percent, with no segment breakdown shown. Mollusks — about 1.5 percent, split into about 0.25 percent critically endangered, 0.25 percent endangered, and 1 percent vulnerable. Plants — about 3 percent, split into about 0.5 percent critically endangered, 0.5 percent endangered, and 2 percent vulnerable." >}}
+{{< mediafigure src="biology/Figure_47_04_01" kind="diagram" eager="true" alt="A horizontal stacked bar chart with eight animal and plant groups listed top to bottom on the y-axis and percent of species from 0 to 30 percent on the x-axis; each bar is divided into three color-coded segments for critically endangered, endangered, and vulnerable species, with a legend below the chart." longdesc="Reading the eight bars from top to bottom: Mammals — about 20 percent of species are on the Red List, split into roughly 3 percent critically endangered, 6.5 percent endangered, and 10.5 percent vulnerable. Birds — about 12 percent, split into about 2 percent critically endangered, 4 percent endangered, and 6 percent vulnerable. Reptiles — about 5 percent, split into about 1 percent critically endangered, 2 percent endangered, and 3 percent vulnerable. Amphibians — about 29 percent, the largest total, split into about 7 percent critically endangered, 12 percent endangered, and 10 percent vulnerable. Fishes — about 4 percent, split into about 1 percent critically endangered, 1 percent endangered, and 2 percent vulnerable. Insects — less than 1 percent, drawn as a single thin red (critically endangered) sliver. Mollusks — about 1.5 percent, split into about 0.25 percent critically endangered, 0.25 percent endangered, and 1 percent vulnerable. Plants — about 3 percent, split into about 0.5 percent critically endangered, 0.5 percent endangered, and 2 percent vulnerable." >}}
 This chart shows the percentage of various animal species, by group, on the IUCN Red List as of 2007.
 {{< /mediafigure >}}
 
@@ -125,7 +125,7 @@ Habitat restoration has the potential to restore ecosystems to previous biodiver
   question="A molecular genetic method that identifies a unique genetic sequence to associate with a species is called ________."
   answer="DNA barcoding"
   accept="DNA barcode|barcoding|DNA bar coding"
-  hint="This technique reads a short stretch of a mitochondrial gene (cytochrome c oxidase 1) the way a retail scanner reads a printed pattern to identify a product."
+  hint="Reread the paragraph on molecular genetics and data processing that opens the discussion of measuring biodiversity."
 >}}
 
 {{< multiplechoice
@@ -155,7 +155,7 @@ mollusks
 {{< multiplechoice
   question="Certain parrot species cannot be brought to the United States to be sold as pets. What is the name of the legislation that makes this illegal?"
   answer="CITES"
-  hint="This treaty controls the movement of listed species and their parts across national borders, rather than protecting habitat or migratory birds specifically."
+  hint="Reread the paragraphs on the legislative framework, which describe each of these names in turn."
 >}}
 Red List
 Migratory Bird Act
@@ -166,7 +166,7 @@ Endangered Species Act (ESA)
 {{< multiplechoice
   question="Which measures can protect biodiversity?"
   answer="all of the above"
-  hint="This section describes legislative, preserve-based, and restoration approaches side by side, as complementary methods rather than substitutes for each other."
+  hint="Look back at the headings of this section's subsections on protecting biodiversity."
 >}}
 legal protections
 conservation efforts
@@ -196,6 +196,13 @@ efforts focus on a few highly visible and charismatic species, at the expense of
 15 percent
 {{< /multiplechoice >}}
 
+{{< textin
+  question="The zones of suboptimal habitat surrounding a preserve, which let organisms leave the preserve's boundaries without immediate harm, are called ________."
+  answer="buffer zones"
+  accept="buffer"
+  hint="This ring of lower-quality habitat sits right at a preserve's edge, easing the transition rather than sealing organisms sharply inside a hard boundary."
+>}}
+
 {{< selfcheck question="Describe two considerations in conservation preserve design." hint="List two separate factors — one about a preserve's overall size or shape, and one about how exposed it is at its edges." >}}
 Larger preserves will contain more species. Preserves should have a buffer around them to protect species from edge effects. Preserves that are round or square are better than preserves with many thin arms.
 ===CHECKS===
@@ -203,13 +210,6 @@ larger preserves will contain more species
 preserves should have a buffer around them to protect species from edge effects
 preserves that are round or square are better than preserves with many thin arms
 {{< /selfcheck >}}
-
-{{< textin
-  question="The zones of suboptimal habitat surrounding a preserve, which let organisms leave the preserve's boundaries without immediate harm, are called ________."
-  answer="buffer zones"
-  accept="buffer zone"
-  hint="This ring of lower-quality habitat sits right at a preserve's edge, easing the transition rather than sealing organisms sharply inside a hard boundary."
->}}
 
 ### Identify examples of the effects of habitat restoration
 
@@ -220,22 +220,22 @@ a keystone species is removed from an ecosystem
 many species will disappear from the ecosystem
 {{< /selfcheck >}}
 
-{{< textin
-  question="A species whose presence is instrumental in maintaining the diversity of an ecosystem, so that its removal can cause a collapse in diversity, is called a ________."
-  answer="keystone species"
-  hint="The wolf plays this role after being reintroduced to Yellowstone, and migrating salmon are described as playing the same role elsewhere in this section."
->}}
-
 {{< multiplechoice
   question="Which change followed the 1995 reintroduction of wolves to Yellowstone National Park, according to this section?"
   answer="Elk populations were suppressed, allowing revegetation of riparian areas."
-  hint="Follow the food chain the wolves sit at the top of — a predator that suppresses two prey and competitor populations should increase, not decrease, the resources available further down that chain."
+  hint="Reread the habitat-restoration paragraph on the wolves' reintroduction and the caption of the Yellowstone figure."
 >}}
 Elk populations were suppressed, allowing revegetation of riparian areas.
 Coyote populations increased sharply across the park.
 The park's beaver colonies disappeared entirely.
 The number of carrion-eating species decreased.
 {{< /multiplechoice >}}
+
+{{< textin
+  question="A species whose presence is instrumental in maintaining the diversity of an ecosystem, so that its removal can cause a collapse in diversity, is called a ________."
+  answer="keystone species"
+  hint="The wolf plays this role after being reintroduced to Yellowstone, and migrating salmon are described as playing the same role elsewhere in this section."
+>}}
 
 ### Discuss the role of zoos in biodiversity conservation
 
@@ -260,7 +260,7 @@ zoo facilities are far too limited for the numbers of species now at risk
 {{< multiplechoice
   question="Besides captive breeding, what other conservation-related role do zoos play, according to this section's summary?"
   answer="education"
-  hint="This role depends on giving urban visitors direct contact with wildlife they would otherwise rarely encounter."
+  hint="Reread the Summary's closing sentences about zoos."
 >}}
 education
 habitat restoration
@@ -270,4 +270,4 @@ legislative advocacy
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 47.4: Preserving Biodiversity](https://openstax.org/books/biology-2e/pages/47-4-preserving-biodiversity) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: two figures re-encoded as WebP with the manifest's kind guess kept as-is for both after inspection (diagram for the IUCN Red List bar chart, photo for the four-panel Yellowstone image); a longdesc added to the bar chart transcribing all eight groups' printed critically-endangered/endangered/vulnerable percentages in reading order (top to bottom), reusing the source's own media-alt figures, without stating which of the Visual Connection's four statements is unsupported; the Yellowstone figure's source alt ("Photo A shows…Photo B shows…") lightly rewritten to (a)/(b)/(c)/(d) phrasing matching the caption's own panel labels, with no content change, and given no longdesc since its caption already narrates every panel; in-text pointers to the figures ("Figure 47.16," "Figure 47.17") replaced with "shown below"/"the wolves, shown below," since Hugo does not number figures; the footnoted MacArthur & Wilson (1967) island-biogeography citation kept as a parenthetical after the sentence it supports rather than as a footnote marker; the note wrapping the section's one Visual Connection rendered as its figure followed by a multiple choice, kept in the body — the note copy and the `<exercise>` copy (`fs-idp27680144`) print identical question and option wording, so no adjudication was needed, and the item is keyed **C** ("Within each group, there are more critically endangered species than vulnerable species"), matching the module's own printed solution; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/protected_areas redirect URL and rephrasing its lead-in sentence slightly for link flow, with no change to the destination; all three Review Questions and both Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims — the keystone-species self-check's one-sentence source solution is split into two clauses rather than paraphrased further; the section's one glossary term (DNA barcoding) added as a key-term recall item; because the module carries only one glossary term, five keyed exercises, and no Critical Thinking or Review Question at all for the "zoos" objective, against this book's floor of three items per objective group and eight per section (fifteen for this five-objective section), nine items were written locally, strictly from the section's own sentences and its summary, and disclosed here: two multiple choice items on DNA barcoding's plant exception and the ~500-year cataloging estimate; one self-check on why the Endangered Species Act is hard to use effectively; one text-recall item on buffer zones (a term the section defines in prose but does not carry in its glossary); one text-recall item and one multiple choice on keystone species and the Yellowstone wolf reintroduction's observed effects (keystone species is likewise prose-defined, not a glossary entry); and two multiple choice items plus one self-check on the Role of Captive Breeding section and its summary sentence on education, since no source exercise tests that objective at all.</small>
+<small>This section is adapted from [Biology 2e, Section 47.4: Preserving Biodiversity](https://openstax.org/books/biology-2e/pages/47-4-preserving-biodiversity) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: two figures re-encoded as WebP with the manifest's kind guess kept as-is for both after inspection (diagram for the IUCN Red List bar chart, photo for the four-panel Yellowstone image); a longdesc added to the bar chart transcribing all eight groups' printed critically-endangered/endangered/vulnerable percentages in reading order (top to bottom), reusing the source's own media-alt figures except where the drawn bars differ (the mammal bar's segments end near 3, 9.5, and 20 percent, so about 3 percent critically endangered, 6.5 endangered, and 10.5 vulnerable, where the source alt says 4, 7, and 10 — reported as a source defect), without stating which of the Visual Connection's four statements is unsupported; the Yellowstone figure's source alt ("Photo A shows…Photo B shows…") lightly rewritten to (a)/(b)/(c)/(d) phrasing matching the caption's own panel labels, with no content change, and given no longdesc since its caption already narrates every panel; in-text pointers to the figures ("Figure 47.16," "Figure 47.17") replaced with "shown below"/"the wolves, shown below," since Hugo does not number figures; the footnoted MacArthur & Wilson (1967) island-biogeography citation kept as a parenthetical after the sentence it supports rather than as a footnote marker; the note wrapping the section's one Visual Connection rendered as its figure followed by a multiple choice, kept in the body — the note copy and the `<exercise>` copy (`fs-idp27680144`) print identical question and option wording, so no adjudication was needed, and the item is keyed **C** ("Within each group, there are more critically endangered species than vulnerable species"), matching the module's own printed solution; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/protected_areas redirect URL and rephrasing its lead-in sentence slightly for link flow, with no change to the destination; all three Review Questions and both Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims — the keystone-species self-check's one-sentence source solution is split into two clauses rather than paraphrased further; the section's one glossary term (DNA barcoding) added as a key-term recall item; because the module carries only one glossary term, five keyed exercises, and no Critical Thinking or Review Question at all for the "zoos" objective, against this book's floor of three items per objective group and eight per section (fifteen for this five-objective section), nine items were written locally, strictly from the section's own sentences and its summary, and disclosed here: two multiple choice items on DNA barcoding's plant exception and the ~500-year cataloging estimate; one self-check on why the Endangered Species Act is hard to use effectively; one text-recall item on buffer zones (a term the section defines in prose but does not carry in its glossary); one text-recall item and one multiple choice on keystone species and the Yellowstone wolf reintroduction's observed effects (keystone species is likewise prose-defined, not a glossary entry); and two multiple choice items plus one self-check on the Role of Captive Breeding section and its summary sentence on education, since no source exercise tests that objective at all.</small>

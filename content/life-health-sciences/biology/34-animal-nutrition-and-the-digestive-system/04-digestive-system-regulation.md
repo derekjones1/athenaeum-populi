@@ -70,21 +70,10 @@ The brain and the endocrine system control digestive processes. The brain contro
 
 ### Discuss the role of neural regulation in digestive processes
 
-{{< multiplechoice
-  question="In the famous conditioning experiment, Pavlov demonstrated that his dogs started drooling in response to a bell sounding. What part of the digestive process did he stimulate?"
-  answer="cephalic phase"
-  hint="This phase is triggered by sensory cues — sight, sound, or thought of food — before any food is actually eaten."
->}}
-cephalic phase
-gastric phase
-intestinal phase
-elimination phase
-{{< /multiplechoice >}}
-
 {{< textin
-  question="The first phase of digestion, controlled by the neural response to the stimulus provided by food, is called the ________."
-  answer="cephalic phase"
-  hint="It's the phase triggered by seeing, smelling, or thinking about food, before any food is actually eaten."
+  question="The brain controls the responses of hunger and ________."
+  answer="satiety"
+  hint="Reread the Section Summary."
 >}}
 
 {{< textin
@@ -98,6 +87,17 @@ elimination phase
   answer="intestinal phase"
   hint="This phase starts once partially digested food leaves the stomach."
 >}}
+
+{{< multiplechoice
+  question="In the famous conditioning experiment, Pavlov demonstrated that his dogs started drooling in response to a bell sounding. What part of the digestive process did he stimulate?"
+  answer="cephalic phase"
+  hint="Look at the Digestive Phases subsection, at what starts each phase."
+>}}
+cephalic phase
+gastric phase
+intestinal phase
+elimination phase
+{{< /multiplechoice >}}
 
 ### Explain how hormones regulate digestion
 
@@ -115,7 +115,7 @@ gastrin
 {{< multiplechoice
   question="Which hormone stops acid secretion in the stomach?"
   answer="somatostatin"
-  hint="This hormone acts through a negative feedback mechanism once the stomach has emptied."
+  hint="Look at the Hormonal Responses to Food paragraph on the stomach acid environment."
 >}}
 gastrin
 somatostatin
@@ -150,10 +150,15 @@ the mutation should not slow digestion since acid is always present to digest ne
 {{< /selfcheck >}}
 
 {{< textin
-  question="The hormone that stimulates the contraction of the gallbladder to release bile is called ________."
-  answer="cholecystokinin"
-  accept="CCK"
-  hint="This hormone works alongside secretin in the duodenum and also prompts the pancreas to release its digestive juices."
+  question="The hormone that stimulates the secretion of hydrochloric acid in the stomach is called ________."
+  answer="gastrin"
+  hint="Look at the first paragraph after the endocrine system is introduced in Hormonal Responses to Food."
+>}}
+
+{{< textin
+  question="During the gastric phase, the hormone gastrin is secreted by ________ in the stomach in response to the presence of proteins."
+  answer="G cells"
+  hint="Look at the Hormonal Responses to Food paragraph on the stomach acid environment."
 >}}
 
 {{< textin
@@ -170,23 +175,17 @@ the mutation should not slow digestion since acid is always present to digest ne
 >}}
 
 {{< textin
-  question="The hormone that stimulates the secretion of hydrochloric acid in the stomach is called ________."
-  answer="gastrin"
-  hint="It is secreted by G cells in response to the presence of proteins."
->}}
-
-{{< textin
   question="The hormone that stimulates sodium bicarbonate secretion in the small intestine is called ________."
   answer="secretin"
   hint="This hormone neutralizes acidic chyme by prompting the pancreas to release an alkaline solution to the duodenum."
 >}}
 
 {{< textin
-  question="The hormone released to stop acid secretion once the stomach is empty is called ________."
-  answer="somatostatin"
-  hint="This hormone works through negative feedback and has the opposite job of the one that stimulates acid release."
+  question="When the stomach is emptied, the acidic environment need not be maintained and a hormone called somatostatin stops the release of hydrochloric acid. This is controlled by a ________ mechanism."
+  answer="negative feedback"
+  hint="Look at the last sentence of the Hormonal Responses to Food paragraph on the stomach acid environment."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 34.4: Digestive System Regulation](https://openstax.org/books/biology-2e/pages/34-4-digestive-system-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP with a fuller alt describing what is actually visible (several plated dishes on a wood table) rather than the source's bare "Photo shows plates of food on a dinner table"; the `interactive`-class note rendered as a Link to Learning callout, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items (cephalic phase, cholecystokinin, endocrine system, gastric inhibitory peptide, gastric phase, gastrin, intestinal phase, secretin, somatostatin) added from the glossary; the Review Question "Which hormone controls the release of bile from the gallbladder" — printed without a closing question mark in both the CNXML and the PDF — given one for readability. One review-question distractor is replaced: the source's "gastric inhibitory peptide" is true by this section's own sentence that it "also inhibits acid production," so the page offers secretin instead; key unchanged and the change is disclosed in the source-key ledger (erratum 442).</small>
+<small>This section is adapted from [Biology 2e, Section 34.4: Digestive System Regulation](https://openstax.org/books/biology-2e/pages/34-4-digestive-system-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP with a fuller alt describing what is actually visible (several plated dishes on a wood table) rather than the source's bare "Photo shows plates of food on a dinner table"; the `interactive`-class note rendered as a Link to Learning callout, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (endocrine system, gastric inhibitory peptide, gastric phase, gastrin, intestinal phase, secretin) added from the glossary, plus three cloze items built from single sentences of the section — "satiety" from the Section Summary, and "G cells" and "negative feedback" from the stomach-acid paragraph — in place of the cephalic phase, cholecystokinin, and somatostatin recall items, which re-asked the Pavlov, bile-release, and acid-secretion Review Questions; the Review Question "Which hormone controls the release of bile from the gallbladder" — printed without a closing question mark in both the CNXML and the PDF — given one for readability. One review-question distractor is replaced: the source's "gastric inhibitory peptide" is true by this section's own sentence that it "also inhibits acid production," so the page offers secretin instead; key unchanged and the change is disclosed in the source-key ledger (erratum 442).</small>

@@ -24,6 +24,14 @@ Hence:
   not to the conversation. Every long command output goes to a file and
   the parent reads its tail (`> $SP/x.log 2>&1; tail -20 $SP/x.log`).
   Agents' final messages are ten lines; their reports are files.
+- **Work from the packet list, not an agent's totals** *(September 23,
+  2026)*: reports miscount and skip (one figure fixer skipped 7 verdicts,
+  others misstated their fix counts), so tick each packet line against
+  the report before accepting a unit.
+- **Agents sharing `$SP` name their helper files by unit**
+  (`$SP/<unit>-*.py`, `$SP/zoom/<unit>-*.png`): parallel agents writing
+  one generic helper name overwrote each other's *(September 23, 2026)*.
+  Say so in every brief that lets an agent write a helper.
 - **Authors read the compact brief + the run facts, and the playbook
   sections named there** — not the whole core playbook, not the history.
 - **The blind solve runs in a fresh Fable subagent** with only the packets
@@ -94,6 +102,11 @@ render, the extraction commands, PART C, and reading two ten-line reports.
 Everything checklist-shaped goes to a Sonnet agent — this is the standing
 rule, not a per-run choice: Derek asked (September 12, 2026) that the
 token-saving shape apply every run without being requested.
+Checklist-shaped means text: anything that reads or fixes a figure, alt,
+or `longdesc` against its image runs on Opus (life-sciences "Figure, alt,
+and `longdesc` reading and fixing run on Opus", *September 23, 2026*),
+and after the first unit of any agent on a task new to its model the
+parent spot-checks one of its "clean" verdicts against the image.
    A run-specific correction to a brief is an edit to the repo copy, then
    the scratchpad copy — never a fork.
 
@@ -103,9 +116,17 @@ One Sonnet author per section, launched together, each prompt three lines:
 section number, module id, output path, PDF page range, "read
 `$SP/author.md` first". Names cannot contain a dot (`author-10-1`).
 
-As each author reports: launch its checker (one Sonnet per section, prompt
-= page path + "read `$SP/checker.md`"). **A prompt line naming one item for
-"specific attention" narrows a Sonnet checker to that item alone**, returning
+As each author reports: launch its checker (one **Opus** agent per
+section, `model: "opus"`, prompt = page path + "read `$SP/checker.md`").
+Opus since September 22, 2026: the per-section Sonnet checkers had passed
+the 7–10 confirmed defects per page (two-thirds hints) that an Opus
+sample and then an Opus sweep of every page of this book found, while no
+reading had found a wrong source key — the leak, hint, accept, and figure
+reading is the one whose model was the gap (the A&P kit made the same
+change). Authors, prep, claim pass, and close-out stay Sonnet, except the
+alt-errata verifier (§4 step 0).
+**A prompt line naming one item for
+"specific attention" narrows a checker to that item alone**, returning
 a partial pass instead of the full brief *(chapter 25: three of four
 checkers came back partial and had to be resumed for the full pass)* — say
 "run the FULL pass, and in addition…", never a bare pointer. When a
@@ -169,10 +190,12 @@ exercise (key: D, E, B, A, C)") and the chapter 16 solver read the leak.
 
 Every disagreement or flag gets an `adjudicated` note settled against the
 module's sentence (a why-question keyed to one abstract noun usually wants
-its accept list extended within the 4-word cap). A compare that hits ONE
+its accept list extended within the 7-word accept cap). A compare that hits ONE
 unresolved disagreement writes NOTHING for the whole file — re-run it after
 adjudicating. A page edited after its solve re-hashes: re-emit that page
-and solve it again.
+and solve it again. After a sweep, re-solve only what the carry rule in
+AGENTS.md ("The answer ledger") does not carry *(September 23, 2026)* —
+`npm run ledger:carry` applies it; snapshot BEFORE the sweep's first edit.
 
 ## 4. Close-out, in this order
 
@@ -180,7 +203,7 @@ and solve it again.
    once the pages are stable**. Agents are addressed by their raw agent id
    for `SendMessage`, never by their description string — record each
    author's id when it is launched *(chapters 21–22)*. (a) an alt-errata
-   verifier — every
+   verifier, **on Opus** (it reads images; see §1) — every
    author/checker "suspected source defect" and every alt-vs-image claim,
    checked against the vendored image and the CNXML, verdicts to
    `$SP/alt-errata.md`. **Its brief must say it never runs `source:media` or

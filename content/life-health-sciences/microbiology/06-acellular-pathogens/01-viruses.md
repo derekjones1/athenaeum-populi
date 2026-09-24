@@ -51,7 +51,7 @@ Today, we can see viruses using electron microscopes (see the micrograph and dis
 {{< multiplechoice
   question="What did Beijerinck conclude about the agent causing tobacco mosaic disease, which passed through a porcelain filter?"
   answer="That it was not a bacterium but a contagious living fluid that multiplied only within the host."
-  hint="Look for the conclusion this section attributes to Beijerinck, as distinct from what Ivanovski and Stanley found."
+  hint="Reread the latter half of this section's first paragraph."
 >}}
 That it was an extremely small bacterium or bacterial spore.
 That it was not a bacterium but a contagious living fluid that multiplied only within the host.
@@ -84,12 +84,12 @@ Phages have also been used to prevent food spoilage. In 2006, the US Food and Dr
 **Check Your Understanding**
 
 {{< selfcheck question="Why do humans not have to be concerned about the presence of bacteriophages in their food?" hint="Combine what the section says about a virus's host range with what it says about how phages act on bacteria." >}}
-Viruses typically infect only specific hosts and specific cell types within those hosts, and bacteriophages are viruses that infect only bacteria. Phages also kill only one specific bacterium rather than acting broadly, so a bacteriophage preparation sprayed on food to control a pathogen like *Listeria monocytogenes* targets only bacteria, not the human consumer.
+Most viruses will only be able to infect the cells of one or a few species of organism, and viruses will typically only infect specific hosts and only specific cell types within those hosts. The viruses that infect bacteria are called bacteriophages, and phages kill only one specific bacterium.
 ===CHECKS===
-viruses typically infect only specific hosts and specific cell types
-bacteriophages are viruses that infect only bacteria
+viruses will typically only infect specific hosts
+only specific cell types within those hosts
+The viruses that infect bacteria are called bacteriophages
 phages kill only one specific bacterium
-targets only bacteria, not the human consumer
 {{< /selfcheck >}}
 
 {{< selfcheck question="What are three ways that viruses can be transmitted between hosts?" hint="The section states three transmission methods in a single sentence, right after introducing the term host range." >}}
@@ -108,7 +108,7 @@ In general, virions (viral particles) are small and cannot be observed using a r
 (a) In this transmission electron micrograph, a bacteriophage (a virus that infects bacteria) is dwarfed by the bacterial cell it infects. (b) An illustration of the bacteriophage in the micrograph. (credit a: modification of work by U.S. Department of Energy, Office of Science, LBL, PBD)
 {{< /mediafigure >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_06_01_sizes" alt="A logarithmic size scale running from 0.1 nanometers to 1 millimeter, with illustrations of chemical and biological entities positioned along it in increasing order of size: an atom, the C60 fullerene, lipids, a protein, a polio virus, a flu virus, a smallpox virus, mitochondria, bacteria, a red blood cell, an animal cell, a plant cell, pollen, a human egg cell, and a frog egg. Brackets below the scale mark the size ranges resolved by an electron microscope and by a light microscope." longdesc="Reading the scale from smallest to largest: an atom sits at the 0.1 nm tick; the C60 fullerene and lipid molecules sit near the 1 nm tick; a protein sits near the 10 nm tick; a polio virus sits in the tens of nanometers; a flu virus and a smallpox virus sit between the 100 nm and 1 µm ticks; mitochondria and bacteria sit near the 1 µm tick; a red blood cell sits in the low micrometers; an animal cell and a plant cell sit in the tens of micrometers; pollen and a human egg cell sit near the 100 µm tick; and a frog egg sits at the 1 mm tick. A bracket beneath the scale spans roughly the 0.1 nm to 1 µm range as what an electron microscope resolves, and a second bracket spans roughly the 1 µm to 1 mm range as what a light microscope resolves." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_06_01_sizes" alt="A logarithmic size scale running from 0.1 nanometers to 1 millimeter, with illustrations of chemical and biological entities positioned along it in increasing order of size: an atom, the C60 fullerene, lipids, a protein, a polio virus, a flu virus, a smallpox virus, mitochondria, bacteria, a red blood cell, an animal cell, a plant cell, pollen, a human egg cell, and a frog egg. Brackets below the scale mark the size ranges resolved by an electron microscope and by a light microscope." longdesc="The scale, titled Relatives sizes on a logarithmic scale, has ticks at 0.1 nm, 1 nm, 10 nm, 100 nm, 1 µm, 10 µm, 100 µm, and 1 mm, and each illustration sits on a dashed guide line. Reading from smallest to largest: an atom sits at the 0.1 nm tick; the C60 fullerene at the 1 nm tick; lipids over a small bracket spanning about 1.5 to 3 nm; a protein over a bracket spanning about 3 to 10 nm; a polio virus at about 20 nm; a flu virus at the 100 nm tick; a smallpox virus at about 300 nm; mitochondria and bacteria just below the 1 µm tick; a red blood cell at about 5 µm; an animal cell and a plant cell over a bracket spanning 10 to 100 µm; pollen and a human egg at about 0.2 mm; and a frog egg at the 1 mm tick. Beneath the scale, a bracket labeled Electron microscope spans from about 0.3 nm (midway between the 0.1 nm and 1 nm ticks) to the 1 µm tick, and a bracket labeled Light microscope spans from the 100 nm tick to past the 1 mm tick, so the two ranges overlap between 100 nm and 1 µm." kind="diagram" >}}
 The size of a virus is small relative to the size of most bacterial and eukaryotic cells and their organelles.
 {{< /mediafigure >}}
 
@@ -135,7 +135,7 @@ Viral capsids can be (a) helical, (b) polyhedral, or (c) have a complex shape. (
 {{< multiplechoice
   question="Which types of viruses have spikes?"
   answer="Some naked viruses and some enveloped viruses."
-  hint="Spikes extend from the capsid on two of the section's three capsid-composition categories, not all three."
+  hint="Reread the first sentence of the paragraph just before the atadenovirus and HIV figure."
 >}}
 Only enveloped viruses.
 Only complex viruses.
@@ -192,7 +192,7 @@ For example, when a patient seeks treatment for a viral infection, ICD codes are
 
 **Check Your Understanding**
 
-{{< selfcheck question="Identify two locations where you would likely find an ICD code." hint="The section lists several places ICD codes appear, from medical records to death certificates; name any two." >}}
+{{< selfcheck question="Identify two locations where you would likely find an ICD code." hint="Reread the second paragraph of Classification of Viral Diseases." >}}
 Two places an ICD code appears are on death certificates, where vital-records keepers record the cause of death, and in insurance reimbursement claims, which medical billers process using the code.
 ===CHECKS===
 death certificates
@@ -252,7 +252,7 @@ Meanwhile, the saliva sample was used for reverse transcriptase-polymerase chain
 
 ### Describe the general characteristics of viruses as pathogens
 
-{{< multiplechoice question="True or False: Scientists have identified viruses that are able to infect fungal cells." answer="True" hint="The section opens by naming every kingdom and domain whose cells viruses are known to infect." >}}
+{{< multiplechoice question="True or False: Scientists have identified viruses that are able to infect fungal cells." answer="True" hint="Reread the first sentence of Hosts and Viral Transmission." >}}
 True
 False
 {{< /multiplechoice >}}
@@ -260,7 +260,7 @@ False
 {{< multiplechoice
   question="In naming viruses, the family name ends with ________ and genus name ends with _________."
   answer="*−viridae; −virus*"
-  hint="Recall the two example names the section gives, Parvoviridae and Parvovirus."
+  hint="Reread the first paragraph of Classification and Taxonomy of Viruses."
 >}}
 *−virus; −viridae*
 *−viridae; −virus*
@@ -276,7 +276,7 @@ Beijerinck concluded the causative agent was not a bacterium
 a contagious living fluid that multiplied only within the host
 {{< /selfcheck >}}
 
-{{< selfcheck question="In terms of evolution, which do you think arises first? The virus or the host? Explain your answer." hint="The section states directly that this question is unresolved; look for that sentence rather than the module's account of a specific historical discovery." >}}
+{{< selfcheck question="In terms of evolution, which do you think arises first? The virus or the host? Explain your answer." hint="Reread the second paragraph of this section." >}}
 This module does not settle which arose first. It states only that viruses are distinct biological entities and that their evolutionary origin is still a matter of speculation.
 ===CHECKS===
 distinct biological entities
@@ -285,10 +285,12 @@ evolutionary origin is still a matter of speculation
 
 ### Describe viral genomes
 
+{{< textin question="An inert particle that is the reproductive form of a virus is called a(n) ________." answer="virion" hint="Reread the second paragraph of this section." >}}
+
 {{< multiplechoice
   question="A virus's genome consists of ________."
   answer="DNA or RNA, but never both"
-  hint="The structures section states this as a parenthetical right before naming the capsid."
+  hint="Reread the Viral Structures paragraph that follows the Wendell Stanley paragraph."
 >}}
 DNA and RNA together
 DNA or RNA, but never both
@@ -296,9 +298,7 @@ protein and lipid only
 RNA and protein together
 {{< /multiplechoice >}}
 
-{{< textin question="Classification of viruses is based on morphology, type of ________, host range, cell specificity, and enzymes carried within the virion." answer="nucleic acid" hint="This phrase names the molecule type distinguishing DNA viruses from RNA viruses; look in the Key Concepts and Summary list." >}}
-
-{{< textin question="An inert particle that is the reproductive form of a virus is called a(n) ________." answer="virion" hint="This is the term the section uses for a complete, released virus particle." >}}
+{{< textin question="Classification of viruses is based on morphology, type of ________, host range, cell specificity, and enzymes carried within the virion." answer="nucleic acid" hint="Reread the Summary's sixth bullet." >}}
 
 ### Describe the general characteristics of viral life cycles
 
@@ -313,23 +313,26 @@ conjugation with a neighboring cell
 spontaneous generation
 {{< /multiplechoice >}}
 
-{{< textin question="New virions transport the viral genome to another host cell to carry out another round of ________." answer="infection" hint="This is the general term for what happens when a virus's genome reaches a new host cell." >}}
+{{< textin question="New virions transport the viral genome to another host cell to carry out another round of ________." answer="infection" hint="Reread the second paragraph of this section." >}}
 
-{{< selfcheck question="Briefly describe how a virus produces new virions once its genome has entered a host cell." hint="Follow the lead paragraph's account from genome entry through assembly to the next round of infection." >}}
-The genome of a virus enters a host cell and directs the production of the viral components, proteins and nucleic acids, needed to form new virus particles called virions. New virions are made in the host cell by assembly of viral components, and the new virions transport the viral genome to another host cell to carry out another round of infection.
-===CHECKS===
-directs the production of the viral components
-New virions are made in the host cell by assembly of viral components
-transport the viral genome to another host cell
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="Which influenza virus enzyme allows the virus to detach from the cell surface during release?"
+  answer="neuraminidase (N)"
+  hint="Reread the paragraph just before the atadenovirus and HIV figure."
+>}}
+hemagglutinin (H)
+neuraminidase (N)
+reverse transcriptase
+capsomere protein
+{{< /multiplechoice >}}
 
 ### Differentiate among bacteriophages, plant viruses, and animal viruses
 
-{{< textin question="A virus that infects a bacterium is called a/an ___________________." answer="bacteriophage" accept="phage" hint="Use the term this section gives for the viruses that infect bacteria, in the Hosts and Viral Transmission discussion; the Greek-derived short form is accepted too." >}}
+{{< textin question="A virus that infects a bacterium is called a/an ___________________." answer="bacteriophage" accept="phage" hint="Reread the first paragraph of Hosts and Viral Transmission." >}}
 
-{{< textin question="The ____________ _____________ on the bacteriophage allow for binding to the bacterial cell." answer="tail fibers" hint="These are one of two structures, along with tail pins, that project from the base of the phage's sheath." >}}
+{{< textin question="The ____________ _____________ on the bacteriophage allow for binding to the bacterial cell." answer="tail fibers" accept="tail fibres" hint="Reread the end of the capsid-shape paragraph in Viral Structures." >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_06_01_T4_img" alt="A labeled illustration of a bacteriophage: a hexagonal head sits above a cylindrical tube, which connects to several long, angled legs radiating from its base. Four arrows, lettered A through D from top to bottom, each point to one part of the structure." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_06_01_T4_img" alt="A labeled illustration of a bacteriophage: a hexagonal head with a coiled strand inside it sits above a cylindrical tube, which connects to several long, angled legs radiating from its base. Four arrows, lettered A through D from top to bottom, point to the parts: A to the outer edge of the head, B to the coiled strand inside the head, C to the tube, and D to one of the long legs." kind="diagram" >}}
 An illustration of a bacteriophage with four of its structures marked by lettered arrows.
 {{< /mediafigure >}}
 
@@ -380,7 +383,7 @@ sheath
 {{< multiplechoice
   question="Which of the following is a virus that specifically infects plants?"
   answer="Tobacco mosaic virus (TMV)"
-  hint="One of the section's own example figures shows this virus's effect on diseased leaves."
+  hint="Reread this section's opening paragraph."
 >}}
 Human immunodeficiency virus (HIV)
 Bacteriophage T4
@@ -390,10 +393,14 @@ Tobacco mosaic virus (TMV)
 
 ### Describe the characteristics used to identify viruses as obligate intracellular parasites
 
+{{< textin question="A virus containing only nucleic acid and a capsid is called a(n) ________ virus." answer="naked" accept="nonenveloped|non-enveloped" hint="Reread the paragraph on the two categories of viruses based on general composition." >}}
+
+{{< textin question="A/an __________ virus possesses characteristics of both a polyhedral and helical virus." answer="complex" hint="Reread the capsid-shape paragraph in Viral Structures." >}}
+
 {{< multiplechoice
   question="The component(s) of a virus that is/are extended from the envelope for attachment is/are the:"
   answer="spikes"
-  hint="These structures project outward from the capsid or envelope and let the virus attach to a new cell."
+  hint="Reread the paragraph just before the atadenovirus and HIV figure."
 >}}
 capsomeres
 spikes
@@ -401,14 +408,14 @@ nucleic acid
 viral whiskers
 {{< /multiplechoice >}}
 
-{{< sortbins question="Which of the following does a virus lack? Sort each into whether a virus lacks it or can have it." hint="Recall which of these a virus needs a host cell to provide, versus which are part of the virion itself." >}}
+{{< sortbins question="Which of the following does a virus lack? Sort each into whether a virus lacks it or can have it." hint="Reread the Characteristics of Viruses table and the Viral Structures paragraph on what the capsid's interior contains." >}}
 {"bins":["A virus lacks this","A virus can have this"],"items":[{"label":"ribosomes","bin":0},{"label":"nucleic acid","bin":1},{"label":"metabolic processes","bin":0},{"label":"glycoprotein","bin":1}]}
 {{< /sortbins >}}
 
 {{< multiplechoice
   question="The envelope of a virus is derived from the host's"
   answer="membrane structures"
-  hint="The section states the phospholipid layer's origin right after introducing the term viral envelope."
+  hint="Reread the Viral Structures paragraph on the two categories of viruses based on general composition."
 >}}
 nucleic acids
 membrane structures
@@ -419,7 +426,7 @@ genome
 {{< multiplechoice
   question="What is another name for a nonenveloped virus?"
   answer="naked virus"
-  hint="This is the section's other name for a virus with no lipid layer surrounding its capsid."
+  hint="Reread the Viral Structures paragraph on the two categories of viruses based on general composition."
 >}}
 enveloped virus
 provirus
@@ -427,14 +434,18 @@ naked virus
 latent virus
 {{< /multiplechoice >}}
 
-{{< textin question="A/an __________ virus possesses characteristics of both a polyhedral and helical virus." answer="complex" hint="This shape combines features of the other two categories." >}}
-
-{{< textin question="A virus containing only nucleic acid and a capsid is called a(n) ________ virus." answer="naked" accept="nonenveloped" hint="The section gives two names for this kind of virus; either one is correct here." >}}
-
 {{< sortbins question="Discuss the geometric differences among helical, polyhedral, and complex viruses: sort each description under the shape it fits." hint="Match each phrase to the capsid-shape paragraph's own wording." >}}
-{"bins":["Helical","Polyhedral (icosahedral)","Complex"],"items":[{"label":"Cylindrical or rod shaped","bin":0},{"label":"A three-dimensional, 20-sided structure with 12 vertices","bin":1},{"label":"Combines features of the other two capsid categories","bin":2},{"label":"The genome fits just inside the length of the capsid","bin":0},{"label":"Resembles a soccer ball","bin":1},{"label":"Often brick shaped with intricate surface characteristics not seen in the other two categories","bin":2}]}
+{"bins":["Helical","Polyhedral (icosahedral)","Complex"],"items":[{"label":"Cylindrical or rod shaped","bin":0},{"label":"A three-dimensional, 20-sided structure with 12 vertices","bin":1},{"label":"The shape of T4 phage and of poxviruses such as vaccinia virus","bin":2},{"label":"The genome fits just inside the length of the capsid","bin":0},{"label":"Resembles a soccer ball","bin":1},{"label":"Often brick shaped with intricate surface characteristics not seen in the other two categories","bin":2}]}
 {{< /sortbins >}}
+
+{{< selfcheck question="Do you think it is possible to create a virus in the lab? Imagine that you are a mad scientist. Describe how you would go about creating a new virus." hint="This section does not discuss making a virus; gather what it says a virion is made of and what a virus needs in order to reproduce." >}}
+This section does not describe creating a virus in the lab. It says only what a virus is made of and how it reproduces: a virus consists of a nucleic acid surrounded by a protein coat called a capsid, and in order to survive and reproduce, viruses must infect a cellular host. The genome of a virus enters a host cell and directs the production of the viral components needed to form new virus particles.
+===CHECKS===
+a nucleic acid surrounded by a protein coat called a capsid
+viruses must infect a cellular host
+directs the production of the viral components
+{{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 6.1: Viruses](https://openstax.org/books/microbiology/pages/6-1-viruses) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all six source figures (five body figures and the bacteriophage Critical Thinking image) are re-encoded as WebP and rendered as mediafigures after image and PDF inspection; only the TMV figure matches the media manifest's guessed `kind="photo"`, and the other five (the bacteriophage micrograph-plus-diagram, the size-scale chart, the atadenovirus/HIV structure figure, the three-shape figure, and the labeled bacteriophage illustration) are explicit `kind="diagram"` because each carries a genuinely drawn, labeled panel; the size-scale figure's alt is rewritten to fix the source alt's typos ("sentities," "ad," "pllen," "reange," "uner") and to add the C60 fullerene icon the source alt omitted entirely, with a longdesc walking the scale from smallest to largest entity; the seven source footnotes are rendered as inline parenthetical citations, with the bare access URLs in the CDC and FDA citations dropped; both Clinical Focus boxes in this module (Part 1 and Part 2) are rendered as callouts, with the source's "Jump to the next / go back to the previous Clinical Focus box" links replaced by plain sentences — Part 1 says the case continues in Part 2 below, and Part 2 links to Isolation, Culture, and Identification of Viruses and says the case began in Part 1 above; the Micro Connection and Link to Learning boxes are rendered as callouts; both CALS tables are transcribed from the CNXML cells — the single-column "Characteristics of Viruses" table is not a comparison table and gets no sortbins, while the four-column genome-classification table (which prints seven genome categories) is represented by a sortbins built from four of those categories (dsDNA enveloped, dsDNA naked, +ssRNA naked, and −ssRNA enveloped), placed in the body at the Check Your Understanding bullet that already asks "What are the types of virus genomes?" rather than as a separate Practice item; all six body Check Your Understanding bullets are rendered as body items at their note positions — two are multiple-choice, one is the table-built sortbins just described, and three are self-checks with model answers and rubrics assembled only from this module's own sentences; of the module's fifteen source exercises, all five Multiple Choice, the one True/False, and all four Fill in the Blank items are adapted into Practice (the True/False as a two-option multiple choice; one Fill in the Blank's two blanks are collapsed into a single textin blank with the source's other term as an `accept` alternate, since a single text field cannot hold two blanks); the "Which of the following does a virus lack? Select all that apply" multiple choice, keyed to two letters, is rendered as a sortbins ("lacks" vs. "can have") because a single-answer multiple choice cannot hold a two-answer key; of the two unkeyed Short Answer questions, the capsid-shape comparison is graded as a sortbins built from this module's own shape-describing sentences and the "meaning of the word virus" question is a self-check with a model answer from this module's discovery narrative; of the three unkeyed Critical Thinking questions, the bacteriophage-labeling Art Connection (bare media, no source caption) is rendered as a mediafigure with an author-written caption immediately followed by four multiple-choice items, one per lettered arrow, whose options and keys are the same four part names (capsid, viral genome, sheath, tail fibers) the module's own labeled bacteriophage illustration prints — a sortbins could not hold a four-bin, one-item-per-bin mapping because the grader's interleave check requires more contiguous runs than bins, which a bijective assignment can never produce, so four single-letter multiple-choice items carry the labeling instead; the evolutionary-origin question is a self-check whose model answer states only that the module calls the question a matter of speculation, and the "imagine you are a mad scientist and describe how you would create a new virus" question is omitted because this module gives no sentence to build a model answer from; seven Practice items with no corresponding source exercise are author-written strictly from this module's own sentences: six cover the Viral Genomes and Viral Life Cycles objectives, which no source exercise tests directly (a genome-composition multiple choice and a "nucleic acid" cloze from the Key Concepts and Summary list and a "virion" recall from Key terms for Viral Genomes; an "assembly of viral components" multiple choice, an "infection" cloze, and a self-check for Viral Life Cycles), and one is a plant-versus-animal-virus multiple choice for Differentiate Among Bacteriophages, Plant Viruses, and Animal Viruses, built from the TMV and structure-figure captions since the source's own bacteriophage-only Fill in the Blank items do not test that distinction; key terms are compiled from the module's 21 defined terms and the book's Glossary appendix, all with a `glossary` provenance — the appendix's `helical virus`, `polyhedral virus`, and `complex virus` headwords supply the definitions bolded on the page as `helical`, `polyhedral`, and `complex`; cross-references to same-module figures and tables are rendered as describing phrases. The account of Beijerinck's conclusion is corrected with a visible Source note, per this book's prose claim pass: the source says he concluded in 1899 that the agent was "possibly a chemical, like a biological poison"; his 1898 paper proposed a contagious living fluid (contagium vivum fluidum) that multiplied in the host, so the sentence, the body Check Your Understanding item built on it (whose stem is reworded to ask what Beijerinck concluded), and the Practice self-check on the word "virus" follow the cited account. The source's "(e.g," before *Parvoviridae* is printed as "(e.g.," (a punctuation typo).</small>
+<small>This section is adapted from [Microbiology, Section 6.1: Viruses](https://openstax.org/books/microbiology/pages/6-1-viruses) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all six source figures (five body figures and the bacteriophage Critical Thinking image) are re-encoded as WebP and rendered as mediafigures after image and PDF inspection; only the TMV figure matches the media manifest's guessed `kind="photo"`, and the other five (the bacteriophage micrograph-plus-diagram, the size-scale chart, the atadenovirus/HIV structure figure, the three-shape figure, and the labeled bacteriophage illustration) are explicit `kind="diagram"` because each carries a genuinely drawn, labeled panel; the size-scale figure's alt is rewritten to fix the source alt's typos ("sentities," "ad," "pllen," "reange," "uner") and to add the C60 fullerene icon the source alt omitted entirely, with a longdesc walking the scale from smallest to largest entity; the seven source footnotes are rendered as inline parenthetical citations, with the bare access URLs in the CDC and FDA citations dropped; both Clinical Focus boxes in this module (Part 1 and Part 2) are rendered as callouts, with the source's "Jump to the next / go back to the previous Clinical Focus box" links replaced by plain sentences — Part 1 says the case continues in Part 2 below, and Part 2 links to Isolation, Culture, and Identification of Viruses and says the case began in Part 1 above; the Micro Connection and Link to Learning boxes are rendered as callouts; both CALS tables are transcribed from the CNXML cells — the single-column "Characteristics of Viruses" table is not a comparison table and gets no sortbins, while the four-column genome-classification table (which prints seven genome categories) is represented by a sortbins built from four of those categories (dsDNA enveloped, dsDNA naked, +ssRNA naked, and −ssRNA enveloped), placed in the body at the Check Your Understanding bullet that already asks "What are the types of virus genomes?" rather than as a separate Practice item; all six body Check Your Understanding bullets are rendered as body items at their note positions — two are multiple-choice, one is the table-built sortbins just described, and three are self-checks with model answers and rubrics assembled only from this module's own sentences; of the module's fifteen source exercises, all five Multiple Choice, the one True/False, and all four Fill in the Blank items are adapted into Practice (the True/False as a two-option multiple choice; one Fill in the Blank's two blanks are collapsed into a single textin blank with the source's other term as an `accept` alternate, since a single text field cannot hold two blanks); in the obligate-intracellular-parasites group the two Fill in the Blank textins (the naked/nonenveloped virus and the complex virus) are placed first, ahead of the source Multiple Choice items printed before them, because the "What is another name for a nonenveloped virus?" item prints "naked virus" among its options; the "Which of the following does a virus lack? Select all that apply" multiple choice, keyed to two letters, is rendered as a sortbins ("lacks" vs. "can have") because a single-answer multiple choice cannot hold a two-answer key; of the two unkeyed Short Answer questions, the capsid-shape comparison is graded as a sortbins built from this module's own shape-describing sentences and the "meaning of the word virus" question is a self-check with a model answer from this module's discovery narrative; of the three unkeyed Critical Thinking questions, the bacteriophage-labeling Art Connection (bare media, no source caption) is rendered as a mediafigure with an author-written caption immediately followed by four multiple-choice items, one per lettered arrow, whose options and keys are the same four part names (capsid, viral genome, sheath, tail fibers) the module's own labeled bacteriophage illustration prints — a sortbins could not hold a four-bin, one-item-per-bin mapping because the grader's interleave check requires more contiguous runs than bins, which a bijective assignment can never produce, so four single-letter multiple-choice items carry the labeling instead; the evolutionary-origin question is a self-check whose model answer states only that the module calls the question a matter of speculation, and the "imagine you are a mad scientist and describe how you would create a new virus" question is a self-check, placed last in the obligate-intracellular-parasites group, whose model answer says the module does not describe making a virus and gives only what the module says a virus is made of and how it reproduces in a host; seven Practice items with no corresponding source exercise are author-written strictly from this module's own sentences: six cover the Viral Genomes and Viral Life Cycles objectives, which no source exercise tests directly (a "virion" recall from Key terms, placed first in its group because later items print "virions", a genome-composition multiple choice, and a "nucleic acid" cloze from the Key Concepts and Summary list for Viral Genomes; an "assembly of viral components" multiple choice, an "infection" cloze, and a neuraminidase multiple choice from the spikes paragraph, its distractors the module's own hemagglutinin, reverse transcriptase, and capsomere protein, for Viral Life Cycles), and one is a plant-versus-animal-virus multiple choice for Differentiate Among Bacteriophages, Plant Viruses, and Animal Viruses, built from the TMV and structure-figure captions since the source's own bacteriophage-only Fill in the Blank items do not test that distinction; key terms are compiled from the module's 21 defined terms and the book's Glossary appendix, all with a `glossary` provenance — the appendix's `helical virus`, `polyhedral virus`, and `complex virus` headwords supply the definitions bolded on the page as `helical`, `polyhedral`, and `complex`; cross-references to same-module figures and tables are rendered as describing phrases. The account of Beijerinck's conclusion is corrected with a visible Source note, per this book's prose claim pass: the source says he concluded in 1899 that the agent was "possibly a chemical, like a biological poison"; his 1898 paper proposed a contagious living fluid (contagium vivum fluidum) that multiplied in the host, so the sentence, the body Check Your Understanding item built on it (whose stem is reworded to ask what Beijerinck concluded), and the Practice self-check on the word "virus" follow the cited account. The source's "(e.g," before *Parvoviridae* is printed as "(e.g.," (a punctuation typo). Two overlaps are kept with every source item verbatim: the body Check Your Understanding multiple choice on what Beijerinck concluded and the Practice self-check on the meaning of the word "virus" rest on the same Beijerinck sentence (the self-check also asks the word's Latin meaning), and three source items in the obligate-intracellular-parasites group print "nucleic acid," the key of the author-built genome-classification cloze, which sits above them in an earlier group.</small>

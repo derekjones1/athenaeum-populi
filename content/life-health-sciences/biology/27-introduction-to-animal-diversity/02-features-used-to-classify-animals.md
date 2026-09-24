@@ -18,7 +18,7 @@ weight: 2
 
 Scientists have developed a classification scheme that categorizes all members of the animal kingdom, although there are exceptions to most "rules" governing animal classification (see the phylogenetic tree below). Animals have been traditionally classified according to two characteristics: body plan and developmental pathway. The major feature of the body plan is its symmetry: how the body parts are distributed along the major body axis. Symmetrical animals can be divided into roughly equivalent halves along at least one axis. Developmental characteristics include the number of germ tissue layers formed during development, the origin of the mouth and anus, the presence or absence of an internal body cavity, and other features of embryological development, such as larval types or whether or not periods of growth are interspersed with molting.
 
-{{< mediafigure src="biology/Figure_B27_02_01" kind="diagram" eager="true" alt="A phylogenetic tree branching from the animal kingdom into a no-tissue lineage leading to sponges and a specialized-tissue lineage that splits into a radially symmetrical, two-layered branch and a bilaterally symmetrical, three-layered branch, the latter further splitting by the presence of a body cavity into two lineages, each ending in several named phyla." longdesc="Reading the tree from its top branches down: 'Ecdysozoa' leads to 'Arthropoda (arthropods)' and 'Nematoda (roundworms).' Below it, 'Lophotrochozoa' leads to 'Rotifera (rotifers),' 'Ectoprocta,' 'Brachiopoda,' 'Annelida (annelids),' and 'Mollusca (mollusks).' Ecdysozoa and Lophotrochozoa both branch from 'Protostomia.' Below that, 'Deuterostomia' leads to 'Chordata (chordates)' and 'Echinodermata (echinoderms).' Protostomia and Deuterostomia both branch from a node labeled 'Possess body cavity.' Below that node, 'Acoelomates (no coelom)' leads to 'Acoela' and 'Platyhelminthes (flatworms).' The body-cavity node and Acoelomates both branch from 'Bilateria (bilateral symmetry, triploblastic).' Below Bilateria, 'Radiata (radial symmetry, diploblastic)' leads to 'Cnidaria (cnidarians)' and 'Ctenophora (comb jellies).' Bilateria and Radiata both branch from 'Eumetazoa (specialized tissues),' which joins at the root, 'Metazoa (animals),' with 'Parazoa (no tissues),' the bottommost branch, leading to 'Porifera (sponges).'" >}}
+{{< mediafigure src="biology/Figure_B27_02_01" kind="diagram" eager="true" alt="A phylogenetic tree branching from the animal kingdom into a no-tissue lineage leading to sponges and a specialized-tissue lineage that splits into two radially symmetrical, two-layered phyla and a bilaterally symmetrical, three-layered branch, the latter further splitting by the presence of a body cavity into two lineages, each ending in several named phyla." longdesc="Reading the tree from its top branches down: 'Ecdysozoa' leads to 'Arthropoda (arthropods)' and 'Nematoda (roundworms).' Below it, 'Lophotrochozoa' leads to 'Rotifera (rotifers),' 'Ectoprocta,' 'Brachiopoda,' 'Annelida (annelids),' and 'Mollusca (mollusks).' Ecdysozoa and Lophotrochozoa both branch from 'Protostomia.' Below that, 'Deuterostomia' leads to 'Chordata (chordates)' and 'Echinodermata (echinoderms).' Protostomia and Deuterostomia both branch from a node labeled 'Possess body cavity.' Below that node, 'Acoelomates (no coelom)' leads to 'Acoela' and 'Platyhelminthes (flatworms).' The body-cavity node and Acoelomates both branch from 'Bilateria (bilateral symmetry, triploblastic).' Below Bilateria, two separate lines run to 'Cnidaria (cnidarians)' and 'Ctenophora (comb jellies),' with the label 'Radiata (radial symmetry, diploblastic)' printed between them; Radiata is a label, not a node of its own, so Bilateria, Cnidaria, and Ctenophora all branch from one bar, 'Eumetazoa (specialized tissues),' which joins at the root, 'Metazoa (animals),' with 'Parazoa (no tissues),' the bottommost branch, leading to 'Porifera (sponges).'" >}}
 Animal phylogeny. The phylogenetic tree of animals is based on morphological, fossil, and genetic evidence. The Ctenophora and Porifera are both considered to be basal because of the absence of Hox genes in this group, but how they are related to the "Parahoxozoa" (Placozoa + Eumetazoa) or to each other, continues to be a matter of debate. The represented tree is one of several proposed relationships based on genetic and other data.
 {{< /mediafigure >}}
 
@@ -45,7 +45,7 @@ Symmetry in animals. The (a) sponge is asymmetrical. The (b) jellyfish and (c) a
 
 **Bilateral symmetry** involves the division of the animal through a midsagittal plane, resulting in two superficially mirror images, right and left halves, such as those of a butterfly, crab, or human body. Animals with bilateral symmetry have a "head" and "tail" (anterior vs. posterior), front and back (dorsal vs. ventral), and right and left sides (see the figure below). All Eumetazoa except those with secondary radial symmetry are bilaterally symmetrical. The evolution of bilateral symmetry that allowed for the formation of anterior and posterior (head and tail) ends promoted a phenomenon called cephalization, which refers to the collection of an organized nervous system at the animal's anterior end. In contrast to radial symmetry, which is best suited for stationary or limited-motion lifestyles, bilateral symmetry allows for streamlined and directional motion. In evolutionary terms, this simple form of symmetry promoted active and controlled directional mobility and increased sophistication of resource-seeking and predator-prey relationships.
 
-{{< mediafigure src="biology/Figure_27_02_03" kind="diagram" alt="A drawn human figure on a blue background intersected by three shaded planes meeting at right angles through the body, with double-headed arrows labeling the axes medial/lateral, dorsal/ventral, cranial/caudal, and proximal/distal on one raised arm." longdesc="At the top, a double-headed arrow crosses the head, labeled 'Medial' at its center and 'Lateral' at each end. Below it, a longer double-headed arrow runs through the shoulders, labeled 'Dorsal' at its back end and 'Ventral' at its front end. At the far left, a vertical double-headed arrow spans the whole figure, labeled 'Cranial' at the top and 'Caudal' at the bottom. On the raised right arm, a short double-headed arrow reads 'Proximal' near the shoulder and 'Distal' near the hand. Three shaded planes pass through the body: a vertical plane parallel to the body's front, labeled 'Coronal plane' at its lower-left corner and 'XZ' near its top, dividing the body into front and back; a second vertical plane at a right angle to the first, labeled 'Sagittal plane' at its lower-right corner and 'YZ' near its top, dividing the body into left and right; and a horizontal plane at the hips, labeled 'Transverse plane' at its right edge, dividing the body into upper and lower." >}}
+{{< mediafigure src="biology/Figure_27_02_03" kind="diagram" alt="A drawn human figure on a blue background intersected by three shaded planes meeting at right angles through the body, with double-headed arrows labeling the axes medial/lateral, dorsal/ventral, cranial/caudal, and proximal/distal on one arm." longdesc="At the top, above the head, two double-headed arrows meet at a short vertical tick labeled 'Medial' over the head's midline, and each runs outward to an end labeled 'Lateral.' Below it, a longer double-headed arrow runs through the shoulders, labeled 'Dorsal' at its back end and 'Ventral' at its front end. At the far left, a vertical double-headed arrow spans the whole figure, labeled 'Cranial' at the top and 'Caudal' at the bottom. Along the figure's right arm, which hangs at its side, a short double-headed arrow reads 'Proximal' near the shoulder and 'Distal' at its lower end, near the forearm. Three shaded planes pass through the body: a vertical plane parallel to the body's front, labeled 'Coronal plane' at its lower-left corner and 'XZ' near its top, dividing the body into front and back; a second vertical plane at a right angle to the first, labeled 'Sagittal plane' at its lower-right corner and 'YZ' near its top, dividing the body into left and right; and a horizontal plane at the hips, labeled 'Transverse plane' at its right edge and 'XY' where it crosses the body, dividing the body into upper and lower." >}}
 Bilateral symmetry. The bilaterally symmetrical human body can be divided by several planes.
 {{< /mediafigure >}}
 
@@ -94,7 +94,7 @@ One of these differences between protostomes and deuterostomes is the method of 
 
 Another difference in organization of protostome and deuterostome embryos is expressed during cleavage. Protostomes undergo **spiral cleavage**, meaning that the cells of one pole of the embryo are rotated, and thus misaligned, with respect to the cells of the opposite pole. This is due to the oblique angle of cleavage relative to the two poles of the embryo. Deuterostomes undergo **radial cleavage**, where the cleavage axes are either parallel or perpendicular to the polar axis, resulting in the parallel (up-and-down) alignment of the cells between the two poles.
 
-{{< mediafigure src="biology/Figure_27_02_06" kind="diagram" alt="A four-panel diagram comparing early development in protostomes (left column) and deuterostomes (right column): a top row of cutaway gastrulas with a blastopore and forming mesoderm, and a bottom row of mature body plans with the mouth and anus positioned oppositely between the two columns." longdesc="Top row, bracketed 'Gastrula': the left cutaway sphere, labeled 'Protostomes,' shows a 'Blastopore' opening at the top leading into a hollow interior, with two crescent-shaped 'Mesoderm' masses just inside the opening, one enclosing a small 'Coelom' cavity. The right cutaway sphere, labeled 'Deuterostomes,' shows the same blastopore opening, but its mesoderm instead forms as two pouches budding inward from the gut lining. An arrow leads down from each gastrula to the bottom row. Bottom left, the mature protostome body shows a continuous ringed 'Digestive tube' with 'Mouth' labeled at the top opening and 'Anus' at the bottom opening. Bottom right, the mature deuterostome body shows the same ringed digestive tube, but 'Anus' is labeled at the top opening and 'Mouth' at the bottom opening." >}}
+{{< mediafigure src="biology/Figure_27_02_06" kind="diagram" alt="A four-panel diagram comparing early development in protostomes (left column) and deuterostomes (right column): a top row of cutaway gastrulas with a blastopore and forming mesoderm, and a bottom row of mature body plans with the mouth and anus positioned oppositely between the two columns." longdesc="Top row, bracketed 'Gastrula': the left cutaway sphere, labeled 'Protostomes,' shows a 'Blastopore' opening at the top leading into a hollow interior, with two closed, ring-shaped pink 'Mesoderm' masses in the tissue on either side of the opening, each enclosing a small cavity; the 'Coelom' label points into one of these cavities. The right cutaway sphere, labeled 'Deuterostomes,' shows the same blastopore opening, but its mesoderm instead forms as two pink-lined pouches budding outward from the far end of the gut lining; the same 'Blastopore,' 'Coelom,' and 'Mesoderm' labels each have a second leader line into this sphere. An arrow leads down from each gastrula to the bottom row. Bottom left, the mature protostome body shows a continuous ringed 'Digestive tube' with 'Mouth' labeled at the top opening and 'Anus' at the bottom opening. Bottom right, the mature deuterostome body shows the same ringed digestive tube, but 'Anus' is labeled at the top opening and 'Mouth' at the bottom opening." >}}
 Protostomes and deuterostomes. Eucoelomates can be divided into two groups based on their early embryonic development. In protostomes, the mouth forms at or near the site of the blastopore and the body cavity forms by splitting the mesodermal mass during the process of schizocoely. In deuterostomes, the mouth forms at a site opposite the blastopore end of the embryo and the mesoderm pinches off to form the coelom during the process of enterocoely.
 {{< /mediafigure >}}
 
@@ -147,10 +147,24 @@ jellyfish
 insect
 {{< /multiplechoice >}}
 
+{{< textin
+  question="The lined body cavity that houses the digestive, urinary, and reproductive systems along with the heart, lungs, and major blood vessels is called a(n) ________."
+  answer="coelom"
+  accept="coelomic cavity"
+  hint="Its subdivisions in mammals include the thoracic and abdominal cavities."
+>}}
+
+{{< textin
+  question="An animal whose body cavity is completely lined with mesodermal tissue — an annelid, mollusk, arthropod, echinoderm, or chordate — is called a(n) ________."
+  answer="eucoelomate"
+  accept="coelomate"
+  hint="Look at the paragraphs beside the body-cavity figure, which sort triploblasts into three groups by how their body cavity is lined."
+>}}
+
 {{< multiplechoice
   question="Which of the following is not possible?"
   answer="diploblastic eucoelomate"
-  hint="A coelom is a body cavity that develops within the mesoderm — and a diploblast, by definition, never forms that third germ layer."
+  hint="Check each pairing against what the section says about germ layers and where a true coelom arises."
 >}}
 radially symmetrical diploblast
 diploblastic eucoelomate
@@ -169,26 +183,12 @@ loose placement of organs allows spatial freedom for growth and arrangement
 space for a circulatory system to distribute fluids and gases
 {{< /selfcheck >}}
 
-{{< textin
-  question="An animal whose body cavity is completely lined with mesodermal tissue — an annelid, mollusk, arthropod, echinoderm, or chordate — is called a(n) ________."
-  answer="eucoelomate"
-  accept="coelomate"
-  hint="This term names the group with a true coelom, as opposed to the group whose cavity is only partly lined by mesoderm."
->}}
-
-{{< textin
-  question="The lined body cavity that houses the digestive, urinary, and reproductive systems along with the heart, lungs, and major blood vessels is called a(n) ________."
-  answer="coelom"
-  accept="coelomic cavity"
-  hint="Its subdivisions in mammals include the thoracic and abdominal cavities."
->}}
-
 ### Compare and contrast the embryonic development of protostomes and deuterostomes
 
 {{< multiplechoice
   question="An animal whose development is marked by radial cleavage and enterocoely is ________."
   answer="a deuterostome"
-  hint="Match each developmental feature to the group defined by 'mouth second.'"
+  hint="Look at the four-panel early-development figure and the paragraphs on cleavage and coelom formation beside it."
 >}}
 a deuterostome
 an annelid or mollusk
@@ -205,15 +205,15 @@ deuterostomes, with radial and indeterminate cleavage
 {{< /selfcheck >}}
 
 {{< textin
-  question="The opening that first connects the primitive gut cavity to the outside of the embryo is called the ________."
-  answer="blastopore"
-  hint="In protostomes this site becomes the mouth; in deuterostomes it becomes the anus."
+  question="An animal in which the mouth develops at the same site where the primitive gut first opened to the outside of the embryo is a(n) ________."
+  answer="protostome"
+  hint="Look at the paragraph that introduces the two groups of true coelomates and the development figure beside it."
 >}}
 
 {{< textin
-  question="An animal in which the mouth develops at the same site where the primitive gut first opened to the outside of the embryo is a(n) ________."
-  answer="protostome"
-  hint="Its name literally means 'mouth first.'"
+  question="The opening that first connects the primitive gut cavity to the outside of the embryo is called the ________."
+  answer="blastopore"
+  hint="In protostomes this site becomes the mouth; in deuterostomes it becomes the anus."
 >}}
 
 {{< textin
@@ -230,4 +230,4 @@ deuterostomes, with radial and indeterminate cleavage
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 27.2: Features Used to Classify Animals](https://openstax.org/books/biology-2e/pages/27-2-features-used-to-classify-animals) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than the manifest's guessed text; five figures re-kinded after inspection from the manifest's file-extension guess — Figure_B27_02_01 (phylogenetic tree), Figure_27_02_03 (labeled body-plane illustration), Figure_27_02_05 (body-cavity ring diagrams with photo insets), and Figure_27_02_06 (protostome/deuterostome development diagram) from "photo" to "diagram," and Figure_B27_02_02abcd (five photographs of representative animals) from "diagram" to "photo"; a longdesc added to the phylogenetic tree, the labeled body-plane diagram, the diploblast/triploblast ring diagram, the body-cavity ring diagrams, and the protostome/deuterostome development diagram, none of whose labels, rings, or panel arrangement are carried by their one- or two-line captions; both Visual Connection notes rendered as their figure followed by a multiple choice, kept in the body; the Visual Connection question on symmetry keeps the body note's own wording of option (a) ("Animals that display only radial symmetry during their lifespans are diploblasts"), which differs from the end-of-section Visual Connection Questions list's wording of the same item ("Animals that display radial symmetry are diploblasts") without changing the keyed answer; the Link to Learning and Evolution Connection feature boxes rendered as callouts; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (eucoelomate, coelom, blastopore, protostome, schizocoely, enterocoely) added from the glossary.</small>
+<small>This section is adapted from [Biology 2e, Section 27.2: Features Used to Classify Animals](https://openstax.org/books/biology-2e/pages/27-2-features-used-to-classify-animals) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than the manifest's guessed text; the animal-phylogeny figure's (Figure_B27_02_01) source alt describes a different tree from the one drawn (Ctenophora beside the sponges, a Parahoxozoa branch holding Placozoa, Acoela alone as the acoelomates, and Platyhelminthes inside Lophotrochozoa), so the page's alt and longdesc follow the drawing, in which Porifera is the lone Parazoa branch, Cnidaria and Ctenophora branch from the Eumetazoa bar beside Bilateria, no Placozoa appears, and Acoela and Platyhelminthes together form the acoelomate branch — reported as a source defect; five figures re-kinded after inspection from the manifest's file-extension guess — Figure_B27_02_01 (phylogenetic tree), Figure_27_02_03 (labeled body-plane illustration), Figure_27_02_05 (body-cavity ring diagrams with photo insets), and Figure_27_02_06 (protostome/deuterostome development diagram) from "photo" to "diagram," and Figure_B27_02_02abcd (five photographs of representative animals) from "diagram" to "photo"; a longdesc added to the phylogenetic tree, the labeled body-plane diagram, the diploblast/triploblast ring diagram, the body-cavity ring diagrams, and the protostome/deuterostome development diagram, none of whose labels, rings, or panel arrangement are carried by their one- or two-line captions; both Visual Connection notes rendered as their figure followed by a multiple choice, kept in the body; the Visual Connection question on symmetry keeps the body note's own wording of option (a) ("Animals that display only radial symmetry during their lifespans are diploblasts"), which differs from the end-of-section Visual Connection Questions list's wording of the same item ("Animals that display radial symmetry are diploblasts") without changing the keyed answer; the Link to Learning and Evolution Connection feature boxes rendered as callouts; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items (eucoelomate, coelom, blastopore, protostome, schizocoely, enterocoely) added from the glossary.</small>

@@ -50,7 +50,7 @@ Depending on the number of carbons in the sugar, they can be trioses (three
 carbons), pentoses (five carbons), and/or hexoses (six carbons). The figure
 below illustrates monosaccharides.
 
-{{< mediafigure src="biology/Figure_03_02_01-40f7" alt="Glyceraldehyde, drawn with its carbonyl group double-bonded to oxygen at the top of a three-carbon chain, beside dihydroxyacetone, drawn with its carbonyl group double-bonded to oxygen in the middle of a three-carbon chain. Below, the linear structures of glyceraldehyde, ribose, and glucose are shown side by side, with three, five, and six carbons respectively, each with its carbonyl group at the top of the chain." longdesc="Top row, labeled Monosaccharides: glyceraldehyde, a three-carbon chain (H, then a carbon double-bonded to O, then two carbons each bearing an H and an OH, then a terminal H), tagged Aldose; beside it, dihydroxyacetone, a three-carbon chain with a CH₂OH carbon, then the carbon double-bonded to O in the middle, then another CH₂OH carbon, tagged Ketose. Bottom row: the linear structures of glyceraldehyde (three carbons, tagged Triose), ribose (five carbons, tagged Pentose), and glucose, set off in a highlighted box (six carbons, tagged Hexose); in all three, the carbonyl carbon sits at the top of the chain, and every carbon below it bears an OH group (in glucose the third carbon's OH is drawn on the left, the rest on the right) down to a terminal H." kind="diagram" eager="true" >}}
+{{< mediafigure src="biology/Figure_03_02_01-40f7" alt="Glyceraldehyde, drawn with its carbonyl group double-bonded to oxygen at the top of a three-carbon chain, beside dihydroxyacetone, drawn with its carbonyl group double-bonded to oxygen in the middle of a three-carbon chain. Below, the linear structures of glyceraldehyde, ribose, and glucose are shown side by side, with three, five, and six carbons respectively, each with its carbonyl group at the top of the chain." longdesc="The whole figure sits under a Monosaccharides heading. Top row: glyceraldehyde, a three-carbon chain (H, then a carbon double-bonded to O, then two carbons each bearing an H and an OH, then a terminal H), tagged Aldose; beside it, dihydroxyacetone, a three-carbon chain with a CH₂OH carbon, then the carbon double-bonded to O in the middle, then another CH₂OH carbon, tagged Ketose. Bottom row: the linear structures of glyceraldehyde (three carbons, tagged Triose), ribose (five carbons, tagged Pentose), and glucose, set off in a highlighted box (six carbons, tagged Hexose); in all three, the carbonyl carbon sits at the top of the chain, and every carbon below it bears an OH group (in glucose the third carbon's OH is drawn on the left, the rest on the right) down to a terminal H." kind="diagram" eager="true" >}}
 Scientists classify monosaccharides based on the position of their carbonyl group and the number of carbons in the backbone. Aldoses have a carbonyl group (indicated in green) at the end of the carbon chain, and ketoses have a carbonyl group in the middle of the carbon chain. Trioses, pentoses, and hexoses have three-, five-, and six- carbon backbones, respectively.
 {{< /mediafigure >}}
 
@@ -70,11 +70,11 @@ arrangement of functional groups around the asymmetric carbon. All these
 monosaccharides have more than one asymmetric carbon, as the figure below
 shows.
 
-{{< mediafigure src="biology/Figure_03_02_02" alt="Three six-carbon sugars drawn as vertical chains of carbons with attached H and OH groups. In glucose and galactose, the top carbon is double-bonded to an oxygen and carries a single H. In fructose, the second carbon from the top is double-bonded to an oxygen, and the top carbon carries only a CH₂OH group. Glucose and galactose differ from each other in which side several of their hydroxyl groups point." longdesc="Glucose: a six-carbon chain with the top carbon double-bonded to O and bearing a single H; going down the chain, the hydroxyl group is on the right at carbon 2, on the left at carbon 3, and on the right at carbons 4, 5, and 6, with carbon 6 also bearing an extra H. Galactose: the same top-carbon arrangement; going down, the hydroxyl group is on the left at carbons 3 and 4, and on the right at carbons 2, 5, and 6. Fructose: the top carbon bears a CH₂OH group instead; the second carbon is double-bonded to O; going down, the hydroxyl group is on the left at carbon 3 and on the right at carbons 4, 5, and 6, with the bottom carbon bearing a CH₂OH group." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_03_02_02" alt="Three six-carbon sugars drawn as vertical chains of carbons with attached H and OH groups. In glucose and galactose, the top carbon is double-bonded to an oxygen and carries a single H. In fructose, the second carbon from the top is double-bonded to an oxygen, and the top carbon is itself a CH₂OH group, bearing two H and an OH. Glucose and galactose differ from each other in which side several of their hydroxyl groups point." longdesc="Glucose: a six-carbon chain with the top carbon double-bonded to O and bearing a single H; going down the chain, the hydroxyl group is on the right at carbon 2, on the left at carbon 3, and on the right at carbons 4, 5, and 6, with carbon 6 also bearing an extra H. Galactose: the same top-carbon arrangement; going down, the hydroxyl group is on the left at carbons 3 and 4, and on the right at carbons 2, 5, and 6. Fructose: the top carbon is instead a CH₂OH group, bearing two H and an OH on the right; the second carbon is double-bonded to O; going down, the hydroxyl group is on the left at carbon 3 and on the right at carbons 4, 5, and 6, with carbon 6 also bearing an extra H." kind="diagram" >}}
 Glucose, galactose, and fructose are all hexoses. They are structural isomers, meaning they have the same chemical formula (C₆H₁₂O₆) but a different atom arrangement.
 {{< /mediafigure >}}
 
-{{< selfcheck question="What kind of sugars are these, aldose or ketose?" hint="An aldose's carbonyl group sits at the end of the carbon chain; a ketose's sits in the middle." >}}
+{{< selfcheck question="What kind of sugars are these, aldose or ketose?" hint="Reread the aldose and ketose sentences in the first paragraph of Monosaccharides, then find each sugar's carbonyl group in the figure." >}}
 Glucose and galactose are aldoses. Fructose is a ketose.
 ===CHECKS===
 glucose and galactose are aldoses
@@ -93,7 +93,7 @@ ring formation process). If the hydroxyl group is below carbon number 1 in
 the sugar, it is in the alpha (*α*) position, and if it is above the plane,
 it is in the beta (*β*) position.
 
-{{< mediafigure src="biology/Figure_03_02_03" alt="Glucose's linear chain converting to two ring forms by a curved arrow: in α-glucose, the hydroxyl group on carbon 1 is drawn below the ring; in β-glucose, it is drawn above the ring. Below, the five-membered ring forms of ribose and fructose are also shown, each with one ring oxygen and hydroxyl or CH₂OH groups at its corners." longdesc="Top: a linear glucose chain (a CH₂OH carbon, several CH-OH carbons, and a terminal CHO group) with a curved arrow showing the chain closing into a six-membered ring. Two ring outcomes are drawn beside it: α-glucose, with the carbon-1 hydroxyl group drawn below the ring, and β-glucose, with the same hydroxyl group drawn above the ring; the two rings are otherwise identical. Bottom: the five-membered ring forms of ribose (a ring of four carbons and one oxygen at the top, with a CH₂OH group at the top-left corner, a hydroxyl group at the top-right corner, and hydroxyl groups on both lower carbons) and fructose (the same ring shape, with CH₂OH groups at both top corners, a hydroxyl group on the right-hand corner carbon as well, and hydroxyl groups on both lower carbons, the remaining positions carrying hydrogen)." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_03_02_03" alt="Glucose's linear chain, with a curved arrow marking the bond that closes the ring, linked by a double-headed arrow to two ring forms: in α-glucose, the hydroxyl group on carbon 1 is drawn below the ring; in β-glucose, it is drawn above the ring. Below, the five-membered ring forms of ribose and fructose are also shown, each with one ring oxygen and hydroxyl or CH₂OH groups at its corners." longdesc="Top panel, headed Conversion between Linear and Ring Forms of Glucose: a linear glucose chain (a CH₂OH carbon, several CH-OH carbons, and a terminal CHO group), drawn bent round into a ring shape, with a curved arrow showing the chain closing into a six-membered ring. A double-headed arrow links it to two ring outcomes drawn to its right: α-glucose, with the carbon-1 hydroxyl group drawn below the ring, and β-glucose, with the same hydroxyl group drawn above the ring; the two rings are otherwise identical. Bottom panel, headed Ring Forms of Ribose and Fructose: the five-membered ring forms of ribose (a ring of four carbons and one oxygen at the top, with a CH₂OH group at the top-left corner, a hydroxyl group at the top-right corner, and hydroxyl groups on both lower carbons) and fructose (the same ring shape, with CH₂OH groups at both top corners, a hydroxyl group on the right-hand corner carbon as well, and hydroxyl groups on both lower carbons, the remaining positions carrying hydrogen)." kind="diagram" >}}
 Five and six carbon monosaccharides exist in equilibrium between linear and ring forms. When the ring forms, the side chain it closes on locks into an *α* or *β* position. Fructose and ribose also form rings, although they form five-membered rings as opposed to the six-membered ring of glucose.
 {{< /mediafigure >}}
 
@@ -111,7 +111,7 @@ is formed when the OH group on the carbon-1 of the first glucose is below
 the ring plane, and a beta bond is formed when the OH group on the
 carbon-1 is above the ring plane.
 
-{{< mediafigure src="biology/Figure_03_02_04" alt="Glucose, with carbon 1 marked, and fructose, with carbon 2 marked, drawn as separate rings; an arrow leads to sucrose, in which the two rings are joined by an oxygen bridging glucose's carbon 1 to fructose's carbon 2 — the glycosidic bond." longdesc="Top: a six-membered glucose ring with carbon 1 marked in color, beside a five-membered fructose ring with carbon 2 marked in color. An arrow points down to sucrose, where the two rings are now joined: the bond that was the hydroxyl oxygen on glucose's carbon 1 bridges directly to fructose's carbon 2, and the bridge is labeled Glycosidic Bond." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_03_02_04" alt="Glucose and fructose, each with its carbons numbered 1 to 6, drawn as separate rings; an arrow leads to sucrose, in which the two rings are joined by an oxygen bridging glucose's carbon 1 to fructose's carbon 2 — the glycosidic bond." longdesc="Top: a six-membered glucose ring beside a five-membered fructose ring, each with its carbons numbered 1 to 6 in teal; the OH on glucose's carbon 1 is printed in red, and so is the H of the OH on fructose's carbon 2. An arrow points down to sucrose, where the two rings are now joined: a single oxygen bridges glucose's carbon 1 (still numbered 1) to fructose's carbon 2 (still numbered 2), and a blue arrow from below labels that oxygen Glycosidic Bond." kind="diagram" >}}
 Sucrose forms when a glucose monomer and a fructose monomer join in a dehydration reaction to form a glycosidic bond. In the process, a water molecule is lost. By convention, the carbon atoms in a monosaccharide are numbered from the terminal carbon closest to the carbonyl group. In sucrose, a glycosidic linkage forms between carbon 1 in glucose and carbon 2 in fructose.
 {{< /mediafigure >}}
 
@@ -122,7 +122,7 @@ disaccharide formed by a dehydration reaction between two glucose
 molecules. The most common disaccharide is sucrose, or table sugar, which
 is comprised of glucose and fructose monomers.
 
-{{< mediafigure src="biology/Figure_03_02_05" alt="The ring structures of three disaccharides, each formed from two hexose rings joined by a glycosidic bond: maltose (two glucose rings, joined by an oxygen bridging down from the first ring), lactose (a glucose ring and a galactose ring, joined by an oxygen bridging up from the glucose ring), and sucrose (a glucose ring and a fructose ring, joined by an oxygen bridging down from the glucose ring)." longdesc="Maltose: two six-membered glucose rings, the first ring's carbon-1 oxygen bridging downward and across to the second ring. Lactose: a six-membered glucose ring and a six-membered galactose ring, joined the same way, but the bridging oxygen from the glucose ring points upward before crossing to the galactose ring. Sucrose: a six-membered glucose ring and a five-membered fructose ring, joined by an oxygen bridging downward from the glucose ring to the fructose ring." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_03_02_05" alt="The ring structures of three disaccharides, each formed from two hexose rings joined by a glycosidic bond: maltose (two glucose rings, joined by an oxygen bridging down from the first ring), lactose (a galactose ring and a glucose ring, joined by an oxygen bridging up from the galactose ring), and sucrose (a glucose ring and a fructose ring, joined by an oxygen bridging down from the glucose ring)." longdesc="Maltose: two six-membered glucose rings, the first ring's carbon-1 oxygen bridging downward and across to the second ring. Lactose: a six-membered galactose ring on the left (its carbon-4 OH drawn above the ring) and a six-membered glucose ring set higher on the right; the bridging oxygen from the galactose ring's carbon 1 points upward to the glucose ring, and hydrogens are omitted from this drawing. Sucrose: a six-membered glucose ring and a five-membered fructose ring, joined by an oxygen bridging downward from the glucose ring to the fructose ring." kind="diagram" >}}
 Common disaccharides include maltose (grain sugar), lactose (milk sugar), and sucrose (table sugar).
 {{< /mediafigure >}}
 
@@ -150,10 +150,14 @@ Glucose starch comprises monomers that are joined by *α* 1-4 or *α* 1-6
 glycosidic bonds. The numbers 1-4 and 1-6 refer to the carbon number of the
 two residues that have joined to form the bond. As the figure below
 illustrates, unbranched glucose monomer chains (only *α* 1-4 linkages) form
-the starch; whereas, amylopectin is a branched polysaccharide (*α* 1-6
-linkages at the branch points).
+amylose; whereas, amylopectin is a branched polysaccharide (*α* 1-6
+linkages at the branch points). *(Source note: the source says the
+unbranched chains "form the starch"; the figure's own caption says
+"Unbranched glucose monomer chains comprise amylose," and the section's
+Critical Thinking answer says starch "has two different forms, one
+unbranched (amylose) and one branched (amylopectin)" — corrected here.)*
 
-{{< mediafigure src="biology/Figure_03_02_06" alt="The chemical structures of amylose and amylopectin. Amylose consists of unbranched chains of glucose subunits, and amylopectin consists of branched chains of glucose subunits." longdesc="Amylose: a single helical coil of glucose rings linked end to end by α 1-4 bonds, drawn as one continuous strand with no side branches. Amylopectin: helical coils of glucose rings linked the same way along each strand, but with an additional α 1-6 bond at one ring (numbered 6) branching off to start a second strand — the branch point that distinguishes it from amylose." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_03_02_06" alt="The chemical structures of amylose and amylopectin. Amylose consists of unbranched chains of glucose subunits, and amylopectin consists of branched chains of glucose subunits." longdesc="Two labeled panels, each with a green helical ribbon above a structural formula. Amylose: a single unbranched helical ribbon; below it, three glucose rings joined end to end through bridging oxygens, the middle ring in square brackets with a subscript n for the repeating unit, and the link from one ring's carbon 1 to the next ring's carbon 4 numbered 1 and 4. Amylopectin: a helical ribbon with a second ribbon branching down from its middle and a third branching right off that second one; below it, two chains of three glucose rings, each with its middle ring bracketed with a subscript n, and the upper chain's last ring joined from its carbon 1 (numbered 1), through an oxygen, down to the CH₂ at carbon 6 (numbered 6) of the lower chain's bracketed ring — the 1-6 branch point that distinguishes it from amylose." kind="diagram" >}}
 Amylose and amylopectin are two different starch forms. Unbranched glucose monomer chains comprise amylose by *α* 1-4 glycosidic linkages. Branched glucose monomer chains comprise amylopectin by *α* 1-4 and *α* 1-6 glycosidic linkages. Because of the way the subunits are joined, the glucose chains have a helical structure. Glycogen (not shown) is similar in structure to amylopectin but more highly branched.
 {{< /mediafigure >}}
 
@@ -295,16 +299,10 @@ cause the cell to uptake excessive water.
 
 ### Discuss the role of carbohydrates in cells and in the extracellular materials of animals and plants
 
-{{< textin
-  question="A biological macromolecule with a 1:2:1 ratio of carbon to hydrogen to oxygen that serves as an energy source and provides structural support, including the arthropod exoskeleton, is called a ________."
-  answer="carbohydrate"
-  hint="Its name literally combines \"carbo-\" (carbon) and \"hydrate\" (water)."
->}}
-
 {{< multiplechoice
   question="Which of the following is not an extracellular matrix role of carbohydrates?"
   answer="provide energy for muscle movement"
-  hint="Three of these are about structural support outside the cell; the odd one out is about energy metabolism inside the cell."
+  hint="Reread the last paragraphs of Molecular Structures, on cell walls and exoskeletons."
 >}}
 protect an insect's internal organs from external trauma
 prevent plant cells from lysing after the plant is watered
@@ -312,7 +310,13 @@ maintain the shape of a fungal spore
 provide energy for muscle movement
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is it impossible for humans to digest food that contains cellulose?" hint="Think about which enzyme breaks the β 1-4 linkage, and which digestive systems have it." >}}
+{{< textin
+  question="The type of carbohydrate that forms the outer skeleton of all arthropods, including crustaceans and insects, and also forms fungal cell walls is called ________."
+  answer="chitin"
+  hint="Reread the paragraph just before the bee photo."
+>}}
+
+{{< selfcheck question="Why is it impossible for humans to digest food that contains cellulose?" hint="Reread the paragraph after the cellulose microfibril figure." >}}
 The *β* 1-4 glycosidic linkage in cellulose cannot be broken down by human digestive enzymes. Herbivores such as cows, koalas, and buffalos are able to digest grass that is rich in cellulose and use it as a food source because bacteria and protists in their digestive systems, especially in the rumen, secrete the enzyme cellulase. Cellulases can break down cellulose into glucose monomers that can be used as an energy source by the animal.
 ===CHECKS===
 the β 1-4 glycosidic linkage in cellulose cannot be broken down by human digestive enzymes
@@ -322,10 +326,16 @@ cellulases can break down cellulose into glucose monomers
 
 ### Explain carbohydrate classifications
 
+{{< textin
+  question="Two monosaccharides joined together by a glycosidic bond form a ________."
+  answer="disaccharide"
+  hint="Reread the first paragraph of the subsection after Monosaccharides."
+>}}
+
 {{< multiplechoice
   question="An example of a monosaccharide is ________."
   answer="all of the above"
-  hint="Each of these three sugars is itself a single sugar unit — check the definition of monosaccharide."
+  hint="Reread the first paragraphs of the Monosaccharides subsection."
 >}}
 fructose
 glucose
@@ -336,7 +346,7 @@ all of the above
 {{< multiplechoice
   question="Cellulose and starch are examples of:"
   answer="polysaccharides"
-  hint="Both are long chains of many linked sugar units — what is that class called?"
+  hint="Reread the first paragraph of the last subsection of Molecular Structures."
 >}}
 monosaccharides
 disaccharides
@@ -344,18 +354,7 @@ lipids
 polysaccharides
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the similarities and differences between glycogen and starch." hint="Think about which organisms store which molecule, and whether each is branched or unbranched." >}}
-Glycogen and starch are polysaccharides. They are the storage form of glucose. Glycogen is stored in animals in the liver and in muscle cells, whereas starch is stored in the roots, seeds, and leaves of plants. Starch has two different forms, one unbranched (amylose) and one branched (amylopectin), whereas glycogen is a single type of a highly branched molecule.
-===CHECKS===
-glycogen and starch are polysaccharides
-they are the storage form of glucose
-glycogen is stored in animals in the liver and in muscle cells
-starch is stored in the roots, seeds, and leaves of plants
-starch has two different forms, one unbranched (amylose) and one branched (amylopectin)
-glycogen is a single type of a highly branched molecule
-{{< /selfcheck >}}
-
-{{< selfcheck question="Describe the structural difference between the ketose and aldose forms of a three-carbon sugar with the chemical formula C₃H₆O₃, and name the family of enzymes that interconverts them in the human body." hint="One structure has its carbonyl group at an end of the chain; the other has it in the middle." >}}
+{{< selfcheck question="Describe the structural difference between the ketose and aldose forms of a three-carbon sugar with the chemical formula C₃H₆O₃, and name the family of enzymes that interconverts them in the human body." hint="Reread the first paragraph of Monosaccharides and the glyceraldehyde and dihydroxyacetone drawings that follow it." >}}
 The human body switches carbohydrates between their aldose and ketose forms using a family of enzymes called isomerases. The ketose triose, dihydroxyacetone, has its carbonyl group double-bonded to the middle carbon. The aldose, glyceraldehyde, has its carbonyl group double-bonded to an end carbon of the chain.
 ===CHECKS===
 the human body switches carbohydrates between their aldose and ketose forms using a family of enzymes called isomerases
@@ -363,18 +362,24 @@ the ketose triose, dihydroxyacetone, has its carbonyl group double-bonded to the
 the aldose, glyceraldehyde, has its carbonyl group double-bonded to an end carbon of the chain
 {{< /selfcheck >}}
 
+### List common monosaccharides, disaccharides, and polysaccharides
+
 {{< textin
-  question="Two monosaccharides joined together by a glycosidic bond form a ________."
-  answer="disaccharide"
-  hint="Di- means \"two\" — count the sugar units being joined."
+  question="The storage form of glucose in plants, found in roots and seeds, is called ________."
+  answer="starch"
+  hint="Reread the second paragraph under Polysaccharides."
 >}}
 
-### List common monosaccharides, disaccharides, and polysaccharides
+{{< textin
+  question="The highly branched storage form of glucose found in the liver and muscle cells of humans and other vertebrates is called ________."
+  answer="glycogen"
+  hint="Reread the paragraph after the amylose and amylopectin figure."
+>}}
 
 {{< multiplechoice
   question="Plant cell walls contain which of the following in abundance?"
   answer="cellulose"
-  hint="Which of these polysaccharides makes up the rigid plant cell wall?"
+  hint="Reread the paragraph just before the microfibril figure."
 >}}
 starch
 cellulose
@@ -385,7 +390,7 @@ lactose
 {{< multiplechoice
   question="Lactose is a disaccharide formed by the formation of a ________ bond between glucose and ________."
   answer="glycosidic; galactose"
-  hint="Disaccharides form through dehydration reactions that create this type of bond; lactose's two monomers are glucose and this other sugar."
+  hint="Reread the Disaccharides subsection and its three-disaccharide figure."
 >}}
 glycosidic; lactose
 glycosidic; galactose
@@ -393,18 +398,17 @@ hydrogen; sucrose
 hydrogen; fructose
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The storage form of glucose in plants, found in roots and seeds, is called ________."
-  answer="starch"
-  hint="Plants convert their excess glucose into this storage polysaccharide."
->}}
-
-{{< textin
-  question="The highly branched storage form of glucose found in the liver and muscle cells of humans and other vertebrates is called ________."
-  answer="glycogen"
-  hint="This is the animal equivalent of a plant's storage polysaccharide."
->}}
+{{< selfcheck question="Describe the similarities and differences between glycogen and starch." hint="Reread the starch and glycogen paragraphs under Polysaccharides and the amylose/amylopectin figure." >}}
+Glycogen and starch are polysaccharides. They are the storage form of glucose. Glycogen is stored in animals in the liver and in muscle cells, whereas starch is stored in the roots, seeds, and leaves of plants. Starch has two different forms, one unbranched (amylose) and one branched (amylopectin), whereas glycogen is a single type of a highly branched molecule.
+===CHECKS===
+glycogen and starch are polysaccharides
+they are the storage form of glucose
+glycogen is stored in animals in the liver and in muscle cells
+starch is stored in the roots, seeds, and leaves of plants
+starch has two different forms, one unbranched (amylose) and one branched (amylopectin)
+glycogen is a single type of a highly branched molecule
+{{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 3.2: Carbohydrates](https://openstax.org/books/biology-2e/pages/3-2-carbohydrates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with every structural-formula figure re-kinded from the manifest's guessed "photo" to "diagram" (Figures 03.02.01, 03.02.03, 03.02.04, 03.02.05, and 03.02.07 were guessed photo; only the bee photograph, Figure 03.02.08, was a photo); the source alt text for the maltose/lactose/sucrose figure (03.02.05) was corrected to name lactose's second monomer as galactose rather than glucose, matching the section's own prose, and reported as a source defect; the source alt text for the monosaccharide-comparison figure (03.02.01, over 600 characters) and the aldose/ketose Visual Connection figure (03.02.02, over 600 characters) was shortened, with the full structural walk-through moved to an extended description, and the Visual Connection figure's description was written to name only the drawn carbonyl positions, never the aldose/ketose classification the question asks for; a Career Connection and a Link to Learning note rendered as callouts with their bold names; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the third Critical Thinking question ("draw the ketose and aldose forms…") adapted from a drawing task into a descriptive self-check, since the browser components do not grade a drawn answer, and the two structure drawings printed with its solution are not shown — the model answer describes the structures in words; and four key-term recall items (carbohydrate, disaccharide, starch, glycogen) added from the glossary to round out the objective groups; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 3.2: Carbohydrates](https://openstax.org/books/biology-2e/pages/3-2-carbohydrates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with every structural-formula figure re-kinded from the manifest's guessed "photo" to "diagram" (Figures 03.02.01, 03.02.03, 03.02.04, 03.02.05, and 03.02.07 were guessed photo; only the bee photograph, Figure 03.02.08, was a photo); the source alt text for the maltose/lactose/sucrose figure (03.02.05) was corrected to name lactose's second monomer as galactose rather than glucose, matching the section's own prose, and reported as a source defect; the source alt text for the monosaccharide-comparison figure (03.02.01, over 600 characters) and the aldose/ketose Visual Connection figure (03.02.02, over 600 characters) was shortened, with the full structural walk-through moved to an extended description, and the Visual Connection figure's description was written to name only the drawn carbonyl positions, never the aldose/ketose classification the question asks for; a Career Connection and a Link to Learning note rendered as callouts with their bold names; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the third Critical Thinking question ("draw the ketose and aldose forms…") adapted from a drawing task into a descriptive self-check, since the browser components do not grade a drawn answer, and the two structure drawings printed with its solution are not shown — the model answer describes the structures in words; and four key-term recall items (chitin, disaccharide, starch, glycogen) added from the glossary to round out the objective groups, with the glycogen-and-starch Critical Thinking question moved from the second objective group to the end of the third, after the starch and glycogen recall items, so that its stem no longer prints their keys above them; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One claim is corrected with a visible Source note: the source says unbranched glucose chains with only α 1-4 linkages "form the starch," but the section's own figure caption and Critical Thinking answer name those chains amylose, one of starch's two forms, so the sentence now says they form amylose (reported as a source defect).</small>

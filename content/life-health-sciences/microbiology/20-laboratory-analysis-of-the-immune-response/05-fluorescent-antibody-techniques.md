@@ -71,7 +71,7 @@ In this test for antinuclear antibodies (ANA), cells are exposed to serum from a
 {{< multiplechoice
   question="In an indirect fluorescent antibody test, what does the fluorescent antibody bind to?"
   answer="the patient's antibodies"
-  hint="The IFA diagram's third step names what the fluorescently labeled secondary antibody binds, if the patient's antibodies are present."
+  hint="Reread Indirect Fluorescent Antibody Techniques and its diagram."
 >}}
 a target antigen
 the patient's antibodies
@@ -82,6 +82,7 @@ a fluorogen alone
 {{< textin
   question="What is the ANA test looking for, in the diagnosis of SLE and other autoimmune diseases?"
   answer="antinuclear antibodies"
+  accept="antinuclear antibody|anti-nuclear antibodies|antinuclear autoantibodies"
   hint="The section names these autoantibodies right where it introduces SLE."
 >}}
 
@@ -91,7 +92,7 @@ Fluorescently labeled antibodies can be used to quantify cells of a specific typ
 
 The figure below shows the obscuration bar in front of the forward-scatter detector that prevents laser light from hitting the detector. As a cell passes through the laser bar, the forward-scatter detector detects light scattered around the obscuration bar. The scattered light is transformed into a voltage pulse, and the cytometer counts a cell. The fluorescence from a labeled cell is detected by the side-scatter detectors. The light passes through various dichroic mirrors such that the light emitted from the fluorophore is received by the correct detector.
 
-{{< mediafigure src="microbiology/OSC_Microbio_20_05_Flow" alt="A schematic of a flow cytometer: a cell sample and flow sheath pass through a nozzle into a narrow stream crossed by a laser; scattered and fluorescent light are split by dichroic mirrors and filters toward several detectors, all wired to an analysis workstation." kind="diagram" longdesc="A labeled diagram, left to right. A vertical tube carries the cell sample (nonlabeled and labeled cells, drawn as ovals) and the flow sheath down through a nozzle to a narrow stream. A laser fires horizontally into the stream from the left; where the beam meets the stream, an obscuration bar blocks the direct beam from the forward-scatter detector positioned in line with the laser. Fluorescence from a labeled cell, excited by the laser, radiates upward at an angle through a dichroic mirror, then a beam splitter that separates the light by wavelength toward three secondary-scatter detectors, each behind its own colored filter (red, green, blue). Lines from the forward-scatter detector and the three secondary-scatter detectors all lead to a boxed analysis workstation (a monitor and tower) at the right." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_20_05_Flow" alt="A schematic of a flow cytometer: a cell sample and flow sheath pass through a nozzle into a narrow stream crossed by a laser; scattered and fluorescent light are split by dichroic mirrors and filters toward several detectors, all wired to an analysis workstation." kind="diagram" longdesc="A labeled diagram, left to right. A vertical tube carries the cell sample (nonlabeled and labeled cells, drawn as ovals) and the flow sheath down through a nozzle to a narrow stream. A laser fires horizontally into the stream from the left; where the beam meets the stream, an obscuration bar blocks the direct beam from the forward-scatter detector positioned in line with the laser. Fluorescence from a labeled cell, excited by the laser, radiates upward at an angle past three dark plates in turn. The first, labeled dichroic mirror, sends a branch right to a detector behind a blue filter (labeled 'filter'); the second sends a branch to a detector behind a green filter; the third, labeled 'Beam splitter separates light according to wavelength,' sends a branch to a detector behind a red filter, and the beam continues up to a fourth, unfiltered detector at its end. The label 'secondary-scatter detectors' points to the red, green, and blue detectors. Wires from all four of these detectors and from the forward-scatter detector run to a gray box, which is wired to the analysis workstation (a monitor and tower) below it at the right." >}}
 In flow cytometry, a mixture of fluorescently labeled and unlabeled cells passes through a narrow capillary. A laser excites the fluorogen, and the fluorescence intensity of each cell is measured by a detector. (credit: modification of work by "Kierano"/Wikimedia Commons)
 {{< /mediafigure >}}
 
@@ -197,19 +198,19 @@ Table 20.5 compares the mechanisms of the fluorescent antibody techniques discus
 ### Describe the benefits of immunofluorescent antibody assays in comparison to nonfluorescent assays
 
 {{< textin
+  question="Assays that label an antibody with a fluorogen, making an antigen or a cell easy to visualize, are known by the two-letter abbreviation ________."
+  answer="FA"
+  hint="This abbreviation is given right after the technique is first named."
+>}}
+
+{{< textin
   question="Fluorescent antibody techniques attach a fluorogen to an antibody, producing a reporter molecule that is quick to use, easy to see or measure, and able to bind target markers with high ________."
   answer="specificity"
   hint="The section's opening sentence lists three qualities of the fluorescent reporter molecule; this is the last of them."
 >}}
 
-{{< textin
-  question="The general name for assays that attach a fluorescent marker to an antibody to make an antigen or a cell easy to visualize is fluorescent antibody, or ________, techniques."
-  answer="FA"
-  hint="This abbreviation is given right after the technique is first named."
->}}
-
-{{< selfcheck question="Briefly describe two reasons why a DFA test might be better for detecting Legionella pneumophila than standard bacteriology techniques." hint="The section names one advantage in speed and one in the bacterium's own growth requirements." >}}
-A DFA test is valuable for visualizing bacteria such as *Legionella pneumophila* that are difficult to isolate or culture from patient samples, so it can identify the bacterium directly on a slide without needing to first grow it. A DFA test is also fast: the diagnosis is ready in a matter of minutes, letting a clinician start treatment before the patient even leaves the clinic, rather than waiting on the days a culture-based identification would take.
+{{< selfcheck question="A clinician suspects that a patient with pneumonia may be infected by Legionella pneumophila. Briefly describe two reasons why a DFA test might be better for detecting this pathogen than standard bacteriology techniques." hint="Reread the opening paragraph of the Direct Fluorescent Antibody Techniques subsection." >}}
+A DFA test is valuable for visualizing bacteria such as *Legionella pneumophila* that are difficult to isolate or culture from patient samples, so it can identify the bacterium directly on a slide without needing to first grow it. A DFA test is also fast: the diagnosis is ready in a matter of minutes, letting a clinician start treatment before the patient even leaves the clinic, rather than waiting on a culture.
 ===CHECKS===
 a DFA test is valuable for visualizing bacteria that are difficult to isolate or culture from patient samples
 a DFA test's diagnosis is ready in a matter of minutes, rather than waiting on a culture
@@ -218,7 +219,7 @@ a DFA test's diagnosis is ready in a matter of minutes, rather than waiting on a
 ### Compare direct and indirect fluorescent antibody assays
 
 {{< textin
-  question="A fluorescent antibody test in which a labeled monoclonal antibody directly binds and illuminates a target antigen is called a(n) ________ fluorescent antibody test."
+  question="A fluorescent antibody test in which a labeled monoclonal antibody binds and illuminates a target antigen is called a(n) ________ fluorescent antibody test."
   answer="direct"
   hint="This is the section's first named technique, contrasted with the one that instead detects a patient's own antibodies."
 >}}
@@ -226,13 +227,13 @@ a DFA test's diagnosis is ready in a matter of minutes, rather than waiting on a
 {{< textin
   question="A fluorescent antibody test that instead looks for a patient's own antibodies in serum, detecting them with a labeled secondary antibody, is called a(n) ________ fluorescent antibody test."
   answer="indirect"
-  hint="This technique needs an extra, secondary antibody step that the direct test does not."
+  hint="Read the section's second paragraph, on the two ways FA methods can work."
 >}}
 
 {{< multiplechoice
   question="In a direct fluorescent antibody test, which of the following would we most likely be looking for using a fluorescently-labeled mAb?"
   answer="bacteria in a patient sample"
-  hint="A DFA test's labeled antibody binds directly to its target, with no patient serum or secondary antibody step involved."
+  hint="Read the first paragraph of Direct Fluorescent Antibody Techniques."
 >}}
 bacteria in a patient sample
 bacteria isolated from a patient and grown on agar plates
@@ -241,10 +242,11 @@ antiserum from a patient that had bound to antigen-coated beads
 {{< /multiplechoice >}}
 
 {{< selfcheck question="A patient suspected of having syphilis is tested using both the VDRL test and IFA. The IFA test comes back positive, but the VDRL test is negative. What is the most likely reason for these results?" hint="The section compares the two tests' reliability directly: one is more prone to a particular kind of wrong result than the other." >}}
-The VDRL is more likely to generate false-positive reactions than the IFA test; the section also notes that a VDRL-negative result does not necessarily mean an infection is absent, since the VDRL is better suited to determining whether an infection is currently active than to detecting past or low-level infection. The most likely explanation is a false-negative VDRL result in a patient whose IFA-detected antibodies reflect a genuine, but perhaps not currently florid, syphilis infection.
+This section states two facts that bear on these results: the VDRL is more likely to generate false-positive reactions than the IFA test, and the VDRL is a better test for determining whether an infection is currently active. Read together, a positive IFA with a negative VDRL fits a patient who has antibodies against *T. pallidum* but whose infection may not be currently active; the section does not discuss this combination of results directly.
 ===CHECKS===
 the VDRL is more likely to generate false-positive reactions than the IFA test
-the VDRL is a better test for determining whether an infection is currently active than for detecting one that is not
+the VDRL is a better test for determining whether an infection is currently active
+a patient who has antibodies against T. pallidum but whose infection may not be currently active
 {{< /selfcheck >}}
 
 ### Explain how a flow cytometer can be used to quantify specific subsets of cells present in a complex mixture of cell types
@@ -252,13 +254,14 @@ the VDRL is a better test for determining whether an infection is currently acti
 {{< textin
   question="In flow cytometry, cell subsets are labeled using a fluorescent antibody to a membrane protein. The fluorogen is activated by a(n) ________ as the cells pass by the detectors."
   answer="laser"
+  accept="laser beam|laser light"
   hint="The same device excites the fluorogen and is aimed at the narrow stream of cells as they pass through the capillary."
 >}}
 
 {{< multiplechoice
   question="Fluorescence in a flow cytometer is measured by a detector set at an angle to the light source. There is also an in-line detector that can detect cell clumps or ________."
   answer="fragments"
-  hint="The in-line, forward-scatter detector catches laser light scattered around the obscuration bar by whatever passes through the beam, not the light the fluorogen emits."
+  hint="Read the paragraph in Flow Cytometry on the obscuration bar and the forward-scatter detector."
 >}}
 fragments
 fluorescence intensity
@@ -295,7 +298,7 @@ one-third
 ### Explain how a fluorescence-activated cell sorter can be used to separate unique types of cells
 
 {{< textin
-  question="A flow cytometer modified to physically sort cells from a sample into purified subpopulations is called a fluorescence-activated cell sorter, or ________."
+  question="A flow cytometer modified to physically sort cells from a sample into purified subpopulations is known by the four-letter abbreviation ________."
   answer="FACS"
   hint="The section gives this abbreviation right where it first names the device."
 >}}
@@ -303,20 +306,21 @@ one-third
 {{< textin
   question="One limitation of a FACS is that it only works on ________ cells, rather than cells still embedded in a tissue."
   answer="isolated"
+  accept="single|individual"
   hint="The section names this limitation right after describing what a FACS does."
 >}}
 
 {{< multiplechoice
-  question="What does a fluorescence-activated cell sorter (FACS) do that an ordinary flow cytometer does not?"
-  answer="it physically separates cells into different collecting vessels"
-  hint="Both machines detect and count fluorescing cells; only one of them also acts on the droplet carrying each cell."
+  question="In a FACS, what moves the charged droplet containing a cell into one collecting vessel or another?"
+  answer="an electrostatic deflector"
+  hint="Read the first paragraph of Cell Sorting Using Immunofluorescence."
 >}}
-it physically separates cells into different collecting vessels
-it works directly on cells still embedded in a tissue
-it requires no laser to excite the fluorogen
-it can only count cells, never sort them
+an obscuration bar
+a dichroic mirror
+an electrostatic deflector
+a forward-scatter detector
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 20.5: Fluorescent Antibody Techniques](https://openstax.org/books/microbiology/pages/20-5-fluorescent-antibody-techniques) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all six source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="photo"` set on the two micrographs (Legionella, ANA) and `kind="diagram"` on the IFA composite, the flow-cytometer schematic, the histogram, and the review-question histogram, overriding the media manifest's JPEG-based photo guess for the four drawn figures; the Legionella figure carries `eager="true"` as the page's first figure; the IFA figure's alt and longdesc were rewritten to also cover panel (b)'s micrograph and its "syncytia" label, which the source alt (written for panel (a) only) does not mention; the flow-cytometer schematic's alt and longdesc were rewritten to name the labeled parts (nozzle, obscuration bar, dichroic mirrors, filters, detectors) that the source alt omits; the ANA and histogram alts were lightly reworded from the source's TTS-style phrasing to plain description of what each image shows; feature boxes rendered as callouts; the Clinical Focus Resolution box's "Jump to the previous Clinical Focus box" link points to Section 20.4's Part 3; "1300" is set with the house digit-grouping comma ("1,300") in both Resolution paragraphs that use it; two one-word source typos are corrected in place with no inline note ("fluoresence" to "fluorescence" in the Flow Cytometry section, and the recap table's "patent serum" to "patient serum" for the Indirect fluorescent antibody row); a footnote (Gill et al. 2003) is rendered as an inline parenthetical citation; the source prints three of its four author names in all capitals ("ANNA M. Quisel, PETER V. Rocca, and DENE T. Walters"), a source defect, and the citation here normalizes them to standard capitalization ("Anna M. Quisel, Peter V. Rocca, and Dene T. Walters"); the cross-references to "Detecting Antigen-Antibody Complexes" (Section 20.2) and "EIAs and ELISAs" (Section 20.4) link to those sections, as do "Autoimmune Disorders" and "Instruments of Microscopy". All six body Check Your Understanding bullets are rendered as graded items at their note's position (five `multiplechoice`, one `textin`), each keyed to one sentence, figure caption, or figure step of this module, none left as a self-check, under this book's rule for an unkeyed question the module's own text fixes; the ANA bullet ("What is the ANA test looking for?") is rendered as its own `textin`, keyed to "antinuclear antibodies" (no `accept` list, since the question itself already prints "ANA"), with only "in the diagnosis of SLE and other autoimmune diseases" added as a referent. The section's three source Multiple Choice items and two Fill in the Blank items keep their source options, order, and keys; the two review-question items (both keyed to the same histogram) share one `mediafigure` in the flow-cytometry objective's Practice group rather than repeating the image, per this run's decision for a two-question, one-figure shape; the source's own alt for that image is not reused verbatim, so as not to restate either item's own axis reading. Both source Critical Thinking questions (the source prints no key for either) are rendered as self-checks with author-written model answers and rubrics assembled from this section's own text. Six filler `textin` items (specificity, FA, direct, indirect, FACS, isolated) and one author-written `multiplechoice` (FACS vs. ordinary flow cytometry, built from this section's own sentences) are added across the first, second, and fourth objective groups, which the source's own exercise set leaves thin; each is disclosed in the source ledger. No source exercise item is omitted. The source's Fill in the Blank keyed "fragments" (the in-line detector) is asked as a multiplechoice with the source key and three of the module's own terms as distractors, because the module prose never states the keyed word and a blind solver could not recover it from the page. The first Link to Learning's redirect (openstax.org/l/22dirfluorant, to courses.cit.cornell.edu/biomi290/microscopycases/methods/fabs.htm) returned 404 on September 13, 2026, so the callout names the resource and its site in plain text instead of linking it. The Review Questions histogram's alt gives the second peak as about 150 counts, read against the printed gridlines, where the source alt says 100 (erratum 829); the three-to-one height ratio matches the ratio the question stipulates.</small>
+<small>This section is adapted from [Microbiology, Section 20.5: Fluorescent Antibody Techniques](https://openstax.org/books/microbiology/pages/20-5-fluorescent-antibody-techniques) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all six source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="photo"` set on the two micrographs (Legionella, ANA) and `kind="diagram"` on the IFA composite, the flow-cytometer schematic, the histogram, and the review-question histogram, overriding the media manifest's JPEG-based photo guess for the four drawn figures; the Legionella figure carries `eager="true"` as the page's first figure; the IFA figure's alt and longdesc were rewritten to also cover panel (b)'s micrograph and its "syncytia" label, which the source alt (written for panel (a) only) does not mention; the flow-cytometer schematic's alt and longdesc were rewritten to name the labeled parts (nozzle, obscuration bar, dichroic mirrors, filters, detectors) that the source alt omits; the ANA and histogram alts were lightly reworded from the source's TTS-style phrasing to plain description of what each image shows; feature boxes rendered as callouts; the Clinical Focus Resolution box's "Jump to the previous Clinical Focus box" link points to Section 20.4's Part 3; "1300" is set with the house digit-grouping comma ("1,300") in both Resolution paragraphs that use it; two one-word source typos are corrected in place with no inline note ("fluoresence" to "fluorescence" in the Flow Cytometry section, and the recap table's "patent serum" to "patient serum" for the Indirect fluorescent antibody row); a footnote (Gill et al. 2003) is rendered as an inline parenthetical citation; the source prints three of its four author names in all capitals ("ANNA M. Quisel, PETER V. Rocca, and DENE T. Walters"), a source defect, and the citation here normalizes them to standard capitalization ("Anna M. Quisel, Peter V. Rocca, and Dene T. Walters"); the cross-references to "Detecting Antigen-Antibody Complexes" (Section 20.2) and "EIAs and ELISAs" (Section 20.4) link to those sections, as do "Autoimmune Disorders" and "Instruments of Microscopy". All six body Check Your Understanding bullets are rendered as graded items at their note's position (five `multiplechoice`, one `textin`), each keyed to one sentence, figure caption, or figure step of this module, none left as a self-check, under this book's rule for an unkeyed question the module's own text fixes; the ANA bullet ("What is the ANA test looking for?") is rendered as its own `textin`, keyed to "antinuclear antibodies" (its `accept` list adds the singular, the hyphenated "anti-nuclear" spelling, and the section's own "autoantibodies" wording, but not "ANA", which the question itself already prints), with only "in the diagnosis of SLE and other autoimmune diseases" added as a referent. The section's three source Multiple Choice items and two Fill in the Blank items keep their source options, order, and keys; the two review-question items (both keyed to the same histogram) share one `mediafigure` in the flow-cytometry objective's Practice group rather than repeating the image, per this run's decision for a two-question, one-figure shape; the source's own alt for that image is not reused verbatim, so as not to restate either item's own axis reading. Both source Critical Thinking questions (the source prints no key for either) are rendered as self-checks with author-written model answers and rubrics assembled from this section's own text. Six filler `textin` items (specificity, FA, direct, indirect, FACS, isolated) and one author-written `multiplechoice` (what moves a FACS's charged droplet, keyed from this section's electrostatic-deflector sentence, with the flow-cytometer figure's own part names as distractors) are added across the first, second, and fourth objective groups, which the source's own exercise set leaves thin; each is disclosed in the source ledger. No source exercise item is omitted. The source's Fill in the Blank keyed "fragments" (the in-line detector) is asked as a multiplechoice with the source key and three of the module's own terms as distractors, because the module prose never states the keyed word and a blind solver could not recover it from the page. The first Link to Learning's redirect (openstax.org/l/22dirfluorant, to courses.cit.cornell.edu/biomi290/microscopycases/methods/fabs.htm) returned 404 on September 13, 2026, so the callout names the resource and its site in plain text instead of linking it. The Review Questions histogram's alt gives the second peak as about 150 counts, read against the printed gridlines, where the source alt says 100 (erratum 829); the three-to-one height ratio matches the ratio the question stipulates.</small>

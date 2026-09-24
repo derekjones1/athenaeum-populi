@@ -37,7 +37,7 @@ Overall, in this process of glycolysis, the net gain from the breakdown of a sin
 - two NADH molecules, and
 - two pyruvate molecules.
 
-{{< mediafigure src="microbiology/OSC_Microbio_08_02_Glycolysis" kind="diagram" eager="true" alt="A flow diagram of the Embden-Meyerhof-Parnas pathway. In the energy investment phase, a six-carbon glucose (drawn as a ring of six dark carbon spheres) uses two ATP to form the intermediate fructose diphosphate, which splits into two three-carbon glyceraldehyde 3-phosphate molecules, each carrying a phosphate group (Pᵢ). In the energy payoff phase, each glyceraldehyde 3-phosphate is oxidized to three-carbon pyruvate, and each conversion reduces one NAD⁺ to NADH and adds two phosphates from ADP to make two ATP." longdesc="Energy investment phase: one six-carbon glucose molecule (a ring of six dark carbon spheres) reacts with two ATP, releasing two ADP, and is relabeled as the intermediate fructose diphosphate (named but not drawn as spheres); fructose diphosphate splits into two three-carbon glyceraldehyde 3-phosphate molecules, each drawn as three carbon spheres bonded to one blue phosphate sphere (Pᵢ). Energy payoff phase, shown once for each of the two three-carbon branches: each glyceraldehyde 3-phosphate reacts with NAD⁺ to release one NADH, then reacts with two ADP to release two ATP, ending as a three-carbon pyruvate (three carbon spheres, no phosphate). Because both payoff-phase reactions run once per branch, and there are two branches, the diagram's totals are two ATP spent, four ATP made (a net of two), two NADH made, and two pyruvate molecules made per glucose." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_08_02_Glycolysis" kind="diagram" eager="true" alt="A flow diagram of the Embden-Meyerhof-Parnas pathway. In the energy investment phase, a six-carbon glucose (drawn as a ring of six dark carbon spheres) uses two ATP to form the intermediate fructose diphosphate, which splits into two three-carbon glyceraldehyde 3-phosphate molecules, each carrying a phosphate group (Pᵢ). In the energy payoff phase, each glyceraldehyde 3-phosphate is oxidized to three-carbon pyruvate, and each conversion reduces one NAD⁺ to NADH and converts two ADP to two ATP." longdesc="Energy investment phase: one six-carbon glucose molecule (a ring of six dark carbon spheres) reacts with two ATP, releasing two ADP, and is relabeled as the intermediate fructose diphosphate (named but not drawn as spheres); fructose diphosphate splits into two three-carbon glyceraldehyde 3-phosphate molecules, each drawn as three carbon spheres bonded to one blue phosphate sphere (Pᵢ). Energy payoff phase, shown once for each of the two three-carbon branches: each glyceraldehyde 3-phosphate reacts with NAD⁺ to release one NADH, then reacts with two ADP to release two ATP, ending as a three-carbon pyruvate (three carbon spheres, no phosphate). Because both payoff-phase reactions run once per branch, and there are two branches, the diagram's totals are two ATP spent, four ATP made (a net of two), two NADH made, and two pyruvate molecules made per glucose." >}}
 The energy investment phase of the Embden-Meyerhof-Parnas glycolysis pathway uses two ATP molecules to phosphorylate glucose, forming two glyceraldehyde 3-phosphate (G3P) molecules. The energy payoff phase harnesses the energy in the G3P molecules, producing four ATP molecules, two NADH molecules, and two pyruvates.
 {{< /mediafigure >}}
 
@@ -53,7 +53,7 @@ A third type of glycolytic pathway that occurs in all cells, which is quite diff
 
 **Check Your Understanding**
 
-{{< selfcheck question="When might an organism use the ED pathway or the PPP for glycolysis?" hint="Consider which bacteria are limited to the ED pathway, and what the PPP's intermediates are used to build." >}}
+{{< selfcheck question="When might an organism use the ED pathway or the PPP for glycolysis?" hint="Reread the Other Glycolytic Pathways subsection." >}}
 Some bacteria, such as the opportunistic gram-negative pathogen *Pseudomonas aeruginosa*, contain only the ED pathway for glycolysis, so those organisms use it because it is their only glycolytic route; other bacteria, like *E. coli*, can use either the ED pathway or the EMP pathway. The pentose phosphate pathway may be favored when the cell has need for nucleic acid and/or protein synthesis, because its intermediates are used for the biosynthesis of nucleotides and amino acids.
 ===CHECKS===
 contain only the ED pathway for glycolysis
@@ -78,7 +78,7 @@ Although many organisms use the Krebs cycle as described as part of glucose meta
 The Krebs cycle, also known as the citric acid cycle, is summarized here. Note incoming two-carbon acetyl results in the main outputs per turn of two CO₂, three NADH, one FADH₂, and one ATP (or GTP) molecules made by substrate-level phosphorylation. Two turns of the Krebs cycle are required to process all of the carbon from one glucose molecule.
 {{< /mediafigure >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_08_02_KrebsUsage" kind="diagram" alt="A detailed Krebs-cycle diagram naming each four-, five-, or six-carbon intermediate around the loop and the biosynthetic pathways that branch off several of them: citrate feeds fatty acids and sterols, α-ketoglutarate feeds glutamate (then other amino acids and nucleotides), succinyl-CoA feeds porphyrins, heme, and chlorophyll, and oxaloacetate feeds aspartate (then other amino acids and nucleotides)." longdesc="Eight numbered intermediates run clockwise from the top. (1) Acetyl-CoA (C2) combines with water and the four-carbon oxaloacetate, releasing CoA-SH, to form the six-carbon citrate; a side arrow shows citrate can be drawn off to build fatty acids and sterols. (2) Citrate (C6) converts to isocitrate (C6). (3) Isocitrate reacts with NAD⁺, releasing NADH/H⁺ and one CO₂, to form the five-carbon α-ketoglutarate; a side arrow shows α-ketoglutarate can be converted to glutamate, which in turn feeds other amino acids and nucleotides. (4) α-ketoglutarate reacts with NAD⁺ and CoA-SH, releasing NADH/H⁺ and one CO₂, to form the four-carbon succinyl-CoA; a side arrow shows succinyl-CoA can be drawn off to build porphyrins, heme, and chlorophyll. (5) Succinyl-CoA reacts with phosphate and ADP or GDP, releasing CoA-SH and forming ATP or GTP, to give the four-carbon succinate. (6) Succinate is oxidized to the four-carbon fumarate, reducing FAD to FADH₂, shown passing electrons to the carrier Q to form QH₂. (7) Fumarate reacts with water to form the four-carbon malate. (8) Malate reacts with NAD⁺, releasing NADH/H⁺, to regenerate the four-carbon oxaloacetate that started the cycle; a side arrow shows oxaloacetate can be converted to aspartate, which in turn feeds other amino acids and nucleotides. Across the full turn the cycle releases two CO₂, produces three NADH/H⁺, one FADH₂, and one ATP (or GTP), consistent with the summary diagram above." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_08_02_KrebsUsage" kind="diagram" alt="A detailed Krebs-cycle diagram naming each four-, five-, or six-carbon intermediate around the loop and the biosynthetic pathways that branch off several of them: citrate feeds fatty acids and sterols, α-ketoglutarate feeds glutamate (then other amino acids and nucleotides), succinyl-CoA feeds porphyrins, heme, and chlorophyll, and oxaloacetate feeds aspartate (then other amino acids and nucleotides)." longdesc="Eight steps, numbered here (the artwork prints no numbers), run clockwise from the top. (1) Acetyl-CoA (C2) combines with water and the four-carbon oxaloacetate, releasing CoA-SH, to form the six-carbon citrate; a side arrow shows citrate can be drawn off to build fatty acids and sterols. (2) Citrate (C6) converts to isocitrate (C6). (3) Isocitrate reacts with NAD⁺, releasing NADH/H⁺ and one CO₂, to form the five-carbon α-ketoglutarate; a side arrow shows α-ketoglutarate can be converted to glutamate, which in turn feeds other amino acids and nucleotides. (4) α-ketoglutarate reacts with NAD⁺ and CoA-SH, releasing NADH/H⁺ and one CO₂, to form the four-carbon succinyl-CoA; a side arrow shows succinyl-CoA can be drawn off to build porphyrins, heme, and chlorophyll. (5) Succinyl-CoA reacts with phosphate and ADP or GDP, releasing CoA-SH and forming ATP or GTP, to give the four-carbon succinate. (6) Succinate is oxidized to the four-carbon fumarate, reducing FAD to FADH₂, shown passing electrons to the carrier Q to form QH₂. (7) Fumarate reacts with water to form the four-carbon malate. (8) Malate reacts with NAD⁺, releasing NADH/H⁺, to regenerate the four-carbon oxaloacetate that started the cycle; a side arrow shows oxaloacetate can be converted to aspartate, which in turn feeds other amino acids and nucleotides. Across the full turn the cycle releases two CO₂, produces three NADH/H⁺, one FADH₂, and one ATP (or GTP), consistent with the summary diagram above." >}}
 Many organisms use intermediates from the Krebs cycle, such as amino acids, fatty acids, and nucleotides, as building blocks for biosynthesis.
 {{< /mediafigure >}}
 
@@ -118,9 +118,9 @@ False
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Although glycolysis itself does not use oxygen, what does this section say can happen to the pyruvate it produces?"
+  question="What does this section say can happen to the pyruvate that glycolysis produces?"
   answer="It can be broken down further through either aerobic or anaerobic respiration"
-  hint="Glycolysis itself is oxygen-independent; review what the module says can happen next to the pyruvate it leaves behind."
+  hint="Reread the first paragraph of the Glycolysis subsection."
 >}}
 It can be broken down further through aerobic respiration only
 It can be broken down further through anaerobic respiration only
@@ -145,13 +145,13 @@ It generates ATP only when coupled to fermentation
   question="Most commonly, glycolysis occurs by the ________ pathway."
   answer="Embden-Meyerhof"
   accept="Embden-Meyerhof-Parnas|EMP"
-  hint="Identify the type of glycolysis found in animals and most common in microbes, the same pathway named for its three discoverers earlier in this subsection."
+  hint="Reread the second paragraph of the Glycolysis subsection."
 >}}
 
 {{< multiplechoice
   question="During which of the following is ATP not made by substrate-level phosphorylation?"
   answer="Transition reaction"
-  hint="Substrate-level phosphorylation makes ATP directly in glycolysis and in the Krebs cycle; find the one listed process that makes no ATP of its own."
+  hint="Reread the substrate-level phosphorylation paragraph of the Glycolysis subsection and the paragraphs on the transition reaction and the Krebs cycle."
 >}}
 Embden-Meyerhof pathway
 Transition reaction
@@ -162,7 +162,7 @@ Entner-Doudoroff pathway
 {{< multiplechoice
   question="Which of the following products is made during Embden-Meyerhof glycolysis?"
   answer="pyruvate"
-  hint="Glycolysis's net products are ATP, NADH, and one three-carbon molecule — the other three options are either consumed, made only later, or never made in this section's glycolysis."
+  hint="Reread the net-gain list in the Glycolysis subsection."
 >}}
 NAD⁺
 pyruvate
@@ -170,7 +170,7 @@ CO₂
 two-carbon acetyl
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is substrate-level phosphorylation? When does it occur during the breakdown of glucose to CO2?" hint="Give the phosphate-transfer definition, then name the two places in this section's pathways where the section says it happens." >}}
+{{< selfcheck question="What is substrate-level phosphorylation? When does it occur during the breakdown of glucose to CO₂?" hint="Reread the substrate-level phosphorylation paragraph of the Glycolysis subsection and the Krebs cycle paragraph." >}}
 In substrate-level phosphorylation, a phosphate group is removed from an organic molecule and is directly transferred to an available ADP molecule, producing ATP. This happens during the energy payoff phase of glycolysis, when high-energy phosphate groups from the intermediate molecules are added to ADP to make ATP, and again in the Krebs cycle, where one ATP (or GTP) is produced per turn by substrate-level phosphorylation.
 ===CHECKS===
 a phosphate group is removed from an organic molecule and is directly transferred to an available ADP molecule, producing ATP
@@ -184,13 +184,13 @@ in the Krebs cycle, where one ATP (or GTP) is produced per turn by substrate-lev
   question="The enzyme complex ________ decarboxylates pyruvate to a two-carbon acetyl group in the transition reaction."
   answer="pyruvate dehydrogenase"
   accept="pyruvate dehydrogenase complex"
-  hint="Name the enzyme complex introduced at the start of the paragraph about the transition reaction."
+  hint="Reread the first paragraph of the Transition Reaction, Coenzyme A, and the Krebs Cycle subsection."
 >}}
 
 {{< textin
   question="In prokaryotes, the transition reaction occurs in the ________ because prokaryotes lack membrane-enclosed organelles."
   answer="cytoplasm"
-  hint="Name the cell compartment where this reaction occurs in a prokaryote, contrasted with the mitochondrial-matrix location in a eukaryote."
+  hint="Reread the first paragraph of the Transition Reaction, Coenzyme A, and the Krebs Cycle subsection."
 >}}
 
 {{< selfcheck question="What would be the consequences to a cell of having a mutation that knocks out coenzyme A synthesis?" hint="Review what coenzyme A carries, and where it carries it, in the paragraphs about the transition reaction and the Krebs cycle." >}}
@@ -206,7 +206,7 @@ the transition reaction could not hand its product on to the Krebs cycle
 {{< multiplechoice
   question="During the catabolism of glucose, which of the following is produced only in the Krebs cycle?"
   answer="FADH₂"
-  hint="Two of these four are also made during glycolysis; find the electron carrier this section says is made only in the Krebs cycle."
+  hint="Compare the net-gain list in the Glycolysis subsection with the Krebs cycle paragraph."
 >}}
 ATP
 NADH
@@ -228,7 +228,7 @@ FADH₂
 {{< multiplechoice
   question="Which of the following is not a name for the cycle resulting in the conversion of a two-carbon acetyl to one ATP, two CO₂, one FADH₂, and three NADH molecules?"
   answer="Calvin cycle"
-  hint="Three of these four are synonyms this section gives for the same cycle; the fourth names a different pathway this section never describes."
+  hint="Reread the Krebs cycle paragraph of the Transition Reaction, Coenzyme A, and the Krebs Cycle subsection."
 >}}
 Krebs cycle
 tricarboxylic acid cycle
@@ -239,31 +239,32 @@ citric acid cycle
 ### Explain how intermediate carbon molecules of the Krebs cycle can be used in a cell
 
 {{< textin
-  question="Because citric acid has three carboxyl groups in its structure, the Krebs cycle is also known as the ________ acid cycle."
-  answer="tricarboxylic"
-  hint="This alternate name counts the three carboxyl (-COOH) groups in citric acid."
+  question="Unlike glycolysis, the Krebs cycle is a ________: the last part of the pathway regenerates the compound used in the first step."
+  answer="closed loop"
+  accept="loop"
+  hint="Reread the Krebs cycle paragraph of the Transition Reaction, Coenzyme A, and the Krebs Cycle subsection."
 >}}
 
 {{< textin
-  question="The Krebs cycle is named after its discoverer, British scientist ________ (1900–1981)."
-  answer="Hans Adolf Krebs"
-  accept="Hans Krebs"
-  hint="Name the British biochemist the cycle is named after, introduced at the start of this paragraph."
+  question="In eukaryotic cells, the Krebs cycle takes place in the ________, where the transition reaction also occurs."
+  answer="mitochondrial matrix"
+  accept="mitochondria|mitochondrion"
+  hint="Reread the Krebs cycle paragraph of the Transition Reaction, Coenzyme A, and the Krebs Cycle subsection."
 >}}
 
-{{< sortbins question="Why is the Krebs cycle important in both catabolism and anabolism? Sort each output or use below into the role it represents." hint="Group each phrase by whether it is an energy-yielding output released every turn, or a class of molecules the cycle's intermediates are used to build." >}}
+{{< sortbins question="Why is the Krebs cycle important in both catabolism and anabolism? Sort each output or use below into the role it represents." hint="Reread the last two paragraphs of the Transition Reaction, Coenzyme A, and the Krebs Cycle subsection." >}}
 {"bins": ["Catabolic (energy-yielding) output", "Anabolic (biosynthetic) use"],
  "items": [
-  {"label": "Two CO₂ molecules released per turn", "bin": 0},
+  {"label": "CO₂ released each turn", "bin": 0},
   {"label": "Amino acids built from cycle intermediates", "bin": 1},
-  {"label": "Three NADH molecules produced per turn", "bin": 0},
+  {"label": "NADH produced each turn", "bin": 0},
   {"label": "Chlorophylls built from cycle intermediates", "bin": 1},
-  {"label": "One FADH₂ molecule produced per turn", "bin": 0},
+  {"label": "FADH₂ produced each turn", "bin": 0},
   {"label": "Fatty acids built from cycle intermediates", "bin": 1},
-  {"label": "One ATP (or GTP) made by substrate-level phosphorylation per turn", "bin": 0},
+  {"label": "ATP (or GTP) made by substrate-level phosphorylation each turn", "bin": 0},
   {"label": "Nucleotides built from cycle intermediates", "bin": 1}]}
 {{< /sortbins >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 8.2: Catabolism of Carbohydrates](https://openstax.org/books/microbiology/pages/8-2-catabolism-of-carbohydrates) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all five source figures are re-encoded as WebP and rendered as mediafigures, all given explicit `kind="diagram"` after image inspection (the media manifest guessed "photo" for all five because every source file is a JPEG, but all five are drawn schematics); the substrate-level-phosphorylation figure's source alt is corrected — it read "An enzyme has 2 substrates bound: ATP and another substrate. One of the phosphates from ATP is transferred to the other substrate," but the image shows pyruvate kinase binding phosphoenolpyruvate and ADP and releasing pyruvate and ATP (a phosphate moves FROM phosphoenolpyruvate TO ADP, making ATP, not the reverse), so this is reported as a source-alt defect and the alt is rewritten from the image; the Krebs-cycle-intermediates figure's source alt is also rewritten (it contained several typos — "for form," "SH-CO," "from NADH" where the reaction is from NAD⁺ — reported as source-alt defects) and a `longdesc` numbers its eight steps with the molecule counts as drawn; a `longdesc` is likewise added to the glycolysis and Krebs-cycle-summary figures, walking their steps and per-turn counts; five same-module figure cross-references (`<link target-id>`) are rendered as describing phrases ("shown below," "the figure below"); the four cross-references to Appendix C (`m58948`, not authored) are plain text; two one-word source typos are corrected without an inline note and disclosed here — the introductory paragraph's "chemoheterorophs" is printed "chemoheterotrophs," and the glycolysis net-yield list's "two NADH molecule" is printed "two NADH molecules" — both suspected source defects; the four-blank Fill in the Blank (keyed "2; 1; 3; 1") is rendered as one multiple choice whose key is the source's ordered quadruple and whose three distractors are other CO₂/ATP/NADH/FADH₂ quadruples in the same format, never four separate cloze fields; the "Embden-Meyerhof" Fill in the Blank keeps the source's own word as the graded answer, with `accept="Embden-Meyerhof-Parnas|EMP"` because the module also prints the pathway's full name and abbreviation; **residual key exposure, disclosed rather than fixed where it could not be reordered away**: the source's own multiple-choice options and stems are transcribed verbatim, and in three places that verbatim text prints another item's exact key — (1) the "ATP not made by substrate-level phosphorylation" multiple choice has "Embden-Meyerhof pathway" as its first distractor, printing the Embden-Meyerhof `textin`'s key, so that `textin` is placed first in its Practice group, before this multiple choice, to reduce (not eliminate, since the whole page is visible at once) the exposure; (2) the source's own "which of the following is not a name for the cycle…" multiple choice states the cycle's full per-turn quadruple in its stem ("one ATP, two CO₂, one FADH₂, and three NADH"), which is exactly the key of the four-blank-FIB-derived quadruple multiple choice in the same group, so that item is placed before the "not a name" item; and (3) that same "not a name" multiple choice's own second distractor, "tricarboxylic acid cycle," prints the exact key of the `textin` built from the next objective's Krebs-cycle-naming sentence — this one could not be reordered away without disturbing the objective-group order the source's learning objectives fix, so it is disclosed here instead. None of the three stems or option lists can be reworded without violating source-verbatim transcription, and dropping any of the affected items would leave a source exercise set (this section's only Fill in the Blank set, or its only Multiple Choice set) under-represented; the section's one body Check Your Understanding question stays a self-check, because its honest answer needs the ED pathway's and the PPP's circumstances assembled from two separate sentences, not one; of the two unkeyed Short Answer questions, "What is substrate-level phosphorylation? When does it occur…" stays a self-check, because its "when" draws on two separate mentions (glycolysis's energy payoff phase and the Krebs cycle) that must be assembled, while "Why is the Krebs cycle important in both catabolism and anabolism?" is graded as a sort-into-bins item whose two bins (catabolic output, anabolic use) and eight items are the module's own sentence naming the cycle's per-turn products and its biosynthetic uses; the unkeyed Critical Thinking question (the coenzyme A synthesis mutation) stays a self-check, because its consequence is an inference the module does not state outright, though its model answer is assembled from the module's own sentences about what coenzyme A carries; three Practice groups short of the book's floor are filled with author-built multiple-choice and `textin` items built strictly from this module's own sentences — the fate of pyruvate after glycolysis and glycolysis as a sole ATP source for non-respiring organisms (both from the module's own Glycolysis paragraph, unrelated to the substrate-level-phosphorylation self-check above), the enzyme and the prokaryotic location of the transition reaction (from the Transition Reaction paragraph), and the "tricarboxylic" and "Hans Adolf Krebs" name-recall items (from the Krebs cycle paragraph) — each disclosed in the ledger with the sentence it came from; the pyruvate-dehydrogenase `textin`'s `accept` list adds "pyruvate dehydrogenase complex" (parent-adjudicated, grader-checked) because the module itself calls it "the enzyme complex pyruvate dehydrogenase," so a learner who mirrors that phrasing types a name the bare grading would otherwise mark wrong; key terms are compiled from the module's twelve defined terms, all twelve definitions taken directly from the book's Glossary appendix. No source exercise item is otherwise omitted.</small>
+<small>This section is adapted from [Microbiology, Section 8.2: Catabolism of Carbohydrates](https://openstax.org/books/microbiology/pages/8-2-catabolism-of-carbohydrates) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all five source figures are re-encoded as WebP and rendered as mediafigures, all given explicit `kind="diagram"` after image inspection (the media manifest guessed "photo" for all five because every source file is a JPEG, but all five are drawn schematics); the substrate-level-phosphorylation figure's source alt is corrected — it read "An enzyme has 2 substrates bound: ATP and another substrate. One of the phosphates from ATP is transferred to the other substrate," but the image shows pyruvate kinase binding phosphoenolpyruvate and ADP and releasing pyruvate and ATP (a phosphate moves FROM phosphoenolpyruvate TO ADP, making ATP, not the reverse), so this is reported as a source-alt defect and the alt is rewritten from the image; the Krebs-cycle-intermediates figure's source alt is also rewritten (it contained several typos — "for form," "SH-CO," "from NADH" where the reaction is from NAD⁺ — reported as source-alt defects) and a `longdesc` numbers its eight steps with the molecule counts as drawn; a `longdesc` is likewise added to the glycolysis and Krebs-cycle-summary figures, walking their steps and per-turn counts; five same-module figure cross-references (`<link target-id>`) are rendered as describing phrases ("shown below," "the figure below"); the four cross-references to Appendix C (`m58948`, not authored) are plain text; two one-word source typos are corrected without an inline note and disclosed here — the introductory paragraph's "chemoheterorophs" is printed "chemoheterotrophs," and the glycolysis net-yield list's "two NADH molecule" is printed "two NADH molecules" — both suspected source defects; the four-blank Fill in the Blank (keyed "2; 1; 3; 1") is rendered as one multiple choice whose key is the source's ordered quadruple and whose three distractors are other CO₂/ATP/NADH/FADH₂ quadruples in the same format, never four separate cloze fields; the "Embden-Meyerhof" Fill in the Blank keeps the source's own word as the graded answer, with `accept="Embden-Meyerhof-Parnas|EMP"` because the module also prints the pathway's full name and abbreviation; **residual key exposure, disclosed rather than fixed where it could not be reordered away**: the source's own multiple-choice options and stems are transcribed verbatim, and in two places that verbatim text prints another item's exact key — (1) the "ATP not made by substrate-level phosphorylation" multiple choice has "Embden-Meyerhof pathway" as its first distractor, printing the Embden-Meyerhof `textin`'s key, so that `textin` is placed first in its Practice group, before this multiple choice, to reduce (not eliminate, since the whole page is visible at once) the exposure; (2) the source's own "which of the following is not a name for the cycle…" multiple choice states the cycle's full per-turn quadruple in its stem ("one ATP, two CO₂, one FADH₂, and three NADH"), which is exactly the key of the four-blank-FIB-derived quadruple multiple choice in the same group, so that item is placed before the "not a name" item. None of these stems or option lists can be reworded without violating source-verbatim transcription, and dropping any of the affected items would leave a source exercise set (this section's only Fill in the Blank set, or its only Multiple Choice set) under-represented; the section's one body Check Your Understanding question stays a self-check, because its honest answer needs the ED pathway's and the PPP's circumstances assembled from two separate sentences, not one; of the two unkeyed Short Answer questions, "What is substrate-level phosphorylation? When does it occur…" stays a self-check, because its "when" draws on two separate mentions (glycolysis's energy payoff phase and the Krebs cycle) that must be assembled, while "Why is the Krebs cycle important in both catabolism and anabolism?" is graded as a sort-into-bins item whose two bins (catabolic output, anabolic use) and eight items are the module's own sentence naming the cycle's per-turn products and its biosynthetic uses; the unkeyed Critical Thinking question (the coenzyme A synthesis mutation) stays a self-check, because its consequence is an inference the module does not state outright, though its model answer is assembled from the module's own sentences about what coenzyme A carries; three Practice groups short of the book's floor are filled with author-built multiple-choice and `textin` items built strictly from this module's own sentences — the fate of pyruvate after glycolysis and glycolysis as a sole ATP source for non-respiring organisms (both from the module's own Glycolysis paragraph, unrelated to the substrate-level-phosphorylation self-check above), the enzyme and the prokaryotic location of the transition reaction (from the Transition Reaction paragraph), and the Krebs cycle's closed-loop structure and its eukaryotic location (two cloze `textin` items from the Krebs cycle paragraph) — each disclosed in the ledger with the sentence it came from; the pyruvate-dehydrogenase `textin`'s `accept` list adds "pyruvate dehydrogenase complex" (parent-adjudicated, grader-checked) because the module itself calls it "the enzyme complex pyruvate dehydrogenase," so a learner who mirrors that phrasing types a name the bare grading would otherwise mark wrong; key terms are compiled from the module's twelve defined terms, all twelve definitions taken directly from the book's Glossary appendix. No source exercise item is otherwise omitted.</small>

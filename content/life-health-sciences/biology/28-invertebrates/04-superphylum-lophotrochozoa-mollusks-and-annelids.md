@@ -26,7 +26,7 @@ The annelids and the mollusks are the most familiar of the lophotrochozoan proto
 
 The name "Mollusca" means "soft" body, since the earliest descriptions of mollusks came from observations of "squishy," unshelled cuttlefish. Molluscs are predominantly a marine group of animals; however, they are also known to inhabit freshwater as well as terrestrial habitats. This enormous phylum includes chitons, tusk shells, snails, slugs, nudibranchs, sea butterflies, clams, mussels, oysters, squids, octopuses, and nautiluses. Mollusks display a wide range of morphologies in each class and subclass, but share a few key characteristics. The chief locomotor structure is usually a muscular **foot**. Most internal organs are contained in a region called the **visceral mass**. Overlying the visceral mass is a fold of tissue called the **mantle**; within the cavity formed by the mantle are respiratory structures called **gills**, that typically fold over the visceral mass. The mouths of most mollusks, except bivalves (e.g., clams) contain a specialized feeding organ called a **radula**, an abrasive tonguelike structure. Finally, the mantle secretes a calcium-carbonate-hardened shell in most mollusks, although this is greatly reduced in the class Cephalopoda, which contains the octopuses and squids.
 
-{{< mediafigure src="biology/Figure_28_03_08" kind="diagram" eager="true" alt="A labeled cutaway diagram of a snail-like mollusk body, with arrows from seventeen labels pointing to a coiled visceral mass, a foot, and the surrounding mantle and shell." longdesc="Reading the labels left to right, top to bottom: across the top, five labels — Mantle, Coelom, Intestine, Gonad, and Shell — each with a line pointing down into the body: Mantle to the thin outer layer, Coelom to a solid medium-blue rounded lobe at the top of the coiled mass, Intestine to a looping tube within the mass, Gonad to a yellow patch, and Shell to the outer curved covering. Down the left side, three labels point rightward into the body: Anus, at the front edge of the coiled mass; Mantle cavity, the open space between the mantle and the body beneath it; and Gill, a feathery structure inside that cavity. Down the right side, three labels point leftward: Digestive gland, a lobed purple mass; Stomach, just below it; and Foot, the long muscular structure extending forward beneath the body. Along the bottom, from left to right: Mouth, at the front tip of the foot; Radula, a small coiled structure just inside the mouth; Nerve cords, two lines running back along the foot; Crop, a pouch along the digestive tract; Visceral mass, the central body mass as a whole; and Heart, a small structure near the base of the coiled mass." >}}
+{{< mediafigure src="biology/Figure_28_03_08" kind="diagram" eager="true" alt="A labeled cutaway diagram of a snail-like mollusk body, with leader lines from seventeen labels pointing to a coiled visceral mass, a foot, and the surrounding mantle and shell." longdesc="Reading the labels left to right, top to bottom: across the top, five labels — Mantle, Coelom, Intestine, Gonad, and Shell — each with a line pointing down into the body: Mantle to the thin outer layer, Coelom to a solid medium-blue rounded lobe at the top of the coiled mass, Intestine to a looping tube within the mass, Gonad to a yellow patch, and Shell to the outer curved covering. Down the left side, three labels point rightward into the body: Anus, at the front edge of the coiled mass; Mantle cavity, the open space between the mantle and the body beneath it; and Gill, a feathery structure inside that cavity. Down the right side, three labels point leftward: Digestive gland, a lobed purple mass; Stomach, just below it; and Foot, the long muscular structure extending forward beneath the body. Along the bottom, from left to right: Mouth, at the front tip of the foot; Radula, the small toothed structure just inside the mouth; Nerve cords, two lines running back along the foot from a blue ring around the gut behind the mouth; Crop, a pouch along the digestive tract; Visceral mass, the central body mass as a whole; and Heart, a small structure near the base of the coiled mass." >}}
 Molluscan body regions. There are many species and variations of mollusks; this illustration shows the anatomy of an aquatic gastropod. In a terrestrial gastropod, the mantle cavity itself would serve as a respiratory organ.
 {{< /mediafigure >}}
 
@@ -89,7 +89,7 @@ A key characteristic of some gastropods is the embryonic development of **torsio
 
 Gastropods also have a foot that is modified for crawling. Most gastropods have a well-defined head with tentacles and eyes. A complex radula is used to scrape up food particles. In aquatic gastropods, the mantle cavity encloses the gills (ctenidia), but in land gastropods, the mantle itself is the major respiratory structure, acting as a kind of lung. **Nephridia** ("kidneys") are also found in the mantle cavity.
 
-{{< mediafigure src="biology/Figure_28_03_12" kind="diagram" alt="Two views of a gastropod body labeled with the visceral mass and digestive system: (a) a side view and (b) a top view of the same coiled digestive tract." longdesc="Panel (a), the side view, shows a snail-like body with two tentacles at the front and a coiled hump at the back. Two lines point into the hump: 'Visceral mass' points to the body of the hump as a whole, and 'Digestive system' points to a tube coiled inside it that runs from the mouth back into the hump, loops, and returns forward to end just above and behind the mouth. Panel (b), the top view, shows the same body seen from above, with the same coiled tube visible inside the outline of the body but without labels; the tube leaves the mouth, curves toward one side, hooks around, and runs back toward the front of the animal." >}}
+{{< mediafigure src="biology/Figure_28_03_12" kind="diagram" alt="Two views of a gastropod body labeled with the visceral mass and digestive system: (a) a side view and (b) a top view of the same coiled digestive tract." longdesc="Panel (a), the side view, shows a snail-like body with two tentacles at the front and a coiled hump at the back. Two lines point into the hump: 'Visceral mass' points to the body of the hump as a whole, and 'Digestive system' points to a purple sac at the rear of the hump, part of a tube that runs from the mouth back along the foot to that sac, then loops forward over the top of the hump and ends at the hump's front edge, above the head. Panel (b), the top view, shows the same body seen from above, head at the top with two long and two short tentacles, with the same tube visible inside the outline of the body but without labels; the tube leaves the mouth, curves toward one side, hooks around, and runs back toward the front of the animal." >}}
 Torsion in gastropods. During embryonic development of some gastropods, the visceral mass undergoes torsion, or counterclockwise rotation of the visceral anatomical features. As a result, the anus of the adult animal is located over the head. Although torsion is always counterclockwise, the shell may coil in either direction; thus coiling of a shell is *not* the same as torsion of the visceral mass.
 {{< /mediafigure >}}
 
@@ -143,7 +143,7 @@ Most annelids have a well-developed and complete digestive system. Feeding mecha
 
 Most annelids possess a closed circulatory system of dorsal and ventral blood vessels that run parallel to the alimentary canal as well as capillaries that service individual tissues. In addition, the dorsal and ventral vessels are connected by transverse loops in every segment. Some polychaetes and leeches have an open system in which the major blood vessels open into a hemocoel. In many species, the blood contains hemoglobin, but not contained in cells. Annelids lack a well-developed respiratory system, and gas exchange occurs across the moist body surface. In the polychaetes, the parapodia are highly vascular and serve as respiratory structures. Excretion is facilitated by a pair of metanephridia (a type of primitive "kidney" that consists of a convoluted tubule and an open, ciliated funnel) that is present in every segment toward the ventral side. Annelids show well-developed nervous systems with a ring of fused ganglia present around the pharynx. The nerve cord is ventral in position and bears enlarged nodes or ganglia in each segment.
 
-{{< mediafigure src="biology/Figure_28_03_17" kind="diagram" alt="A cutaway diagram of three consecutive annelid body segments, labeled with the dorsal blood vessel, intestine, ventral nerve cord, ventral blood vessel, and a nephridium." longdesc="The diagram shows three consecutive body segments cut away in cross-section, each separated from the next by a partition. A label at upper left, 'Dorsal blood vessel,' points to a vessel running along the top of a U-shaped intestine, labeled 'Intestine,' that runs lengthwise through the middle of the segments. Below the intestine, 'Ventral nerve cord' points to a yellow branching cord running along the bottom, and 'Ventral blood vessel' points to a vessel just above that cord. Short transverse vessels connect the dorsal and ventral vessels within each segment. At lower right, 'Nephridium' points to a coiled tubule ending in a trumpet-shaped, ciliated opening, attached to the partition between the last two segments." >}}
+{{< mediafigure src="biology/Figure_28_03_17" kind="diagram" alt="A cutaway diagram of two consecutive annelid body segments, labeled with the dorsal blood vessel, intestine, ventral nerve cord, ventral blood vessel, and a nephridium." longdesc="The diagram shows a block of worm body cut away to reveal two consecutive segments, separated by a partition. A label at upper left, 'Dorsal blood vessel,' points to a vessel running along the top of a U-shaped intestine, labeled 'Intestine,' that runs lengthwise through the middle of the segments. Below the intestine, 'Ventral nerve cord' points to a yellow branching cord running along the bottom, and 'Ventral blood vessel' points to a vessel just above that cord. Short transverse vessels connect the dorsal and ventral vessels within each segment. At lower right, 'Nephridium' points to a coiled tubule ending in a trumpet-shaped, ciliated opening, attached to the partition between the two segments; a second ciliated funnel sits at the front partition." >}}
 Segmental anatomy of an earthworm. This schematic drawing shows the basic anatomy of annelids in a cross-sectional view.
 {{< /mediafigure >}}
 
@@ -211,17 +211,17 @@ nemertines have a closed circulatory system, while mollusks have an open circula
 {{< /selfcheck >}}
 
 {{< textin
-  question="The phylum of protostomes with soft bodies and no segmentation is called ________."
-  answer="Mollusca"
-  accept="mollusk|mollusc"
-  hint="Its name literally means 'soft' body, from early descriptions of unshelled cuttlefish."
->}}
-
-{{< textin
   question="The phylum of vermiform animals with metamerism is called ________."
   answer="Annelida"
   accept="annelid"
   hint="Its name comes from the Latin word for a small ring, describing the animal's ring-like segments."
+>}}
+
+{{< textin
+  question="The phylum of protostomes with soft bodies and no segmentation is called ________."
+  answer="Mollusca"
+  accept="mollusk|mollusc"
+  hint="Its name literally means 'soft' body, from early descriptions of unshelled cuttlefish."
 >}}
 
 {{< textin
@@ -236,7 +236,7 @@ nemertines have a closed circulatory system, while mollusks have an open circula
 {{< multiplechoice
   question="Annelids have (a):"
   answer="true coelom."
-  hint="A coelom is a fluid-filled body cavity fully lined with tissue derived from mesoderm — annelids have the real thing, not a partial or absent version."
+  hint="Look at the last sentence of the section's introduction, which classifies both the annelids and the mollusks."
 >}}
 pseudocoelom.
 true coelom.
@@ -247,7 +247,7 @@ none of the above
 {{< textin
   question="Phylum Mollusca is a large group of protostome ________ invertebrates that occupy marine, freshwater, and terrestrial habitats."
   answer="schizocoelous"
-  hint="This is the same term the introduction uses to describe how both mollusks and annelids form their coelom, by the splitting of mesodermal tissue."
+  hint="Look at the last sentence of the section's introduction."
 >}}
 
 {{< textin
@@ -258,16 +258,12 @@ none of the above
 
 ### Identify an important extracoelomic cavity in mollusks
 
-{{< multiplechoice
-  question="A mantle and mantle cavity are present in:"
-  answer="phylum Mollusca."
-  hint="This cavity, formed by a fold of tissue overlying the visceral mass, houses the gills in the phylum whose body plan this whole section describes."
+{{< textin
+  question="The specialized gill structure found in mollusks is called a ________."
+  answer="ctenidium"
+  accept="ctenidia"
+  hint="Look at the Classification of Phylum Mollusca paragraph on how bivalves capture food particles from incoming water."
 >}}
-phylum Echinodermata.
-phylum Adversoidea.
-phylum Mollusca.
-phylum Nemertea.
-{{< /multiplechoice >}}
 
 {{< textin
   question="The specialized epidermis that encloses a mollusk's visceral organs and secretes its shell is called the ________."
@@ -276,12 +272,16 @@ phylum Nemertea.
   hint="Its cavity, not the coelom, is the major internal body chamber in most mollusks."
 >}}
 
-{{< textin
-  question="The specialized gill structure found in mollusks is called a ________."
-  answer="ctenidium"
-  accept="ctenidia"
-  hint="A pair of these, housed in the mantle cavity, lets bivalves capture food particles from incoming water."
+{{< multiplechoice
+  question="A mantle and mantle cavity are present in:"
+  answer="phylum Mollusca."
+  hint="Check each option against the phyla this section and the previous section describe."
 >}}
+phylum Echinodermata.
+phylum Adversoidea.
+phylum Mollusca.
+phylum Nemertea.
+{{< /multiplechoice >}}
 
 ### Describe the major body regions of Mollusca and how they vary in different molluscan classes
 
@@ -330,7 +330,7 @@ a closed circulatory system also allows the development of larger organisms
 {{< multiplechoice
   question="How does segmentation enhance annelid locomotion?"
   answer="Muscle contractions can be localized to specific regions of the body to coordinate movement."
-  hint="Think about what repeating, individually controllable compartments let an animal do with its muscles that a single undivided body cannot."
+  hint="Look at the Morphology subsection of Phylum Annelida."
 >}}
 Segmentation creates repeating body structures so the entire organism functions in synchrony.
 Segmentation allows specialization of different body regions.
@@ -369,7 +369,7 @@ makes their movement more efficient
 {{< multiplechoice
   question="Which of the following is the annelid group that has no parapodia and fewer bristles or no bristles at all?"
   answer="Oligochaeta"
-  hint="This group, which includes the earthworms and leeches, is named for having 'few bristles.'"
+  hint="Look at the Classification of Phylum Annelida subsection."
 >}}
 Polychaeta
 Oligochaeta
@@ -379,4 +379,4 @@ Cephalopoda
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 28.4: Superphylum Lophotrochozoa: Mollusks and Annelids](https://openstax.org/books/biology-2e/pages/28-4-superphylum-lophotrochozoa-mollusks-and-annelids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own walk-through-style alt text; three figures re-kinded after inspection — Figure_B28_05_07 from the manifest's file-extension "diagram" guess to "photo" (two photographs, of mussels and a scallop), and Figure_28_03_12 and Figure_28_03_17 from "photo" to "diagram" (a torsion schematic and a segmental-anatomy schematic, neither a captured photograph); a longdesc added to the molluscan body-plan diagram (Figure_28_03_08), the gastropod torsion diagram (Figure_28_03_12), and the annelid segmental-anatomy diagram (Figure_28_03_17), walking each figure's labels in reading order without stating the Visual Connection's answer; the note wrapping the molluscan body-plan Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the Everyday Connection's embedded figure (Figure_28_03_13) kept nested inside its callout; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; thirteen key-term recall items added from the glossary (every glossary term except veliger); two cloze textins and one multiple choice built from the section's own Summary and body sentences (the coelom's schizocoelous formation, the mantle cavity's relation to the reduced coelom, and the distinction between Polychaeta and Oligochaeta), disclosed here since none is drawn from a keyed source exercise; the body Visual Connection keeps the note's own wording of option (a) ("Most mollusks have a radula for grinding food"), which differs from the end-of-section Visual Connection Questions list's wording of the same item ("Mollusks have a radula for grinding food") — the section's "present in all groups except the bivalves" makes the unqualified form a second false statement — without changing the keyed answer; reported as a source defect. One number is corrected with a visible Source note: the summary counts the eight molluscan classes the section names, not seven (erratum 425).</small>
+<small>This section is adapted from [Biology 2e, Section 28.4: Superphylum Lophotrochozoa: Mollusks and Annelids](https://openstax.org/books/biology-2e/pages/28-4-superphylum-lophotrochozoa-mollusks-and-annelids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own walk-through-style alt text; three figures re-kinded after inspection — Figure_B28_05_07 from the manifest's file-extension "diagram" guess to "photo" (two photographs, of mussels and a scallop), and Figure_28_03_12 and Figure_28_03_17 from "photo" to "diagram" (a torsion schematic and a segmental-anatomy schematic, neither a captured photograph); a longdesc added to the molluscan body-plan diagram (Figure_28_03_08), the gastropod torsion diagram (Figure_28_03_12), and the annelid segmental-anatomy diagram (Figure_28_03_17), walking each figure's labels in reading order without stating the Visual Connection's answer; the note wrapping the molluscan body-plan Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the Everyday Connection's embedded figure (Figure_28_03_13) kept nested inside its callout; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; thirteen key-term recall items added from the glossary (every glossary term except veliger); two cloze textins, one multiple choice, and one self-check built from the section's own Summary and body sentences (the coelom's schizocoelous formation, the mantle cavity's relation to the reduced coelom, the distinction between Polychaeta and Oligochaeta, and the advantage of metameric segmentation, whose model answer is the body's own sentence), disclosed here since none is drawn from a keyed source exercise; the body Visual Connection keeps the note's own wording of option (a) ("Most mollusks have a radula for grinding food"), which differs from the end-of-section Visual Connection Questions list's wording of the same item ("Mollusks have a radula for grinding food") — the section's "present in all groups except the bivalves" makes the unqualified form a second false statement — without changing the keyed answer; reported as a source defect. One number is corrected with a visible Source note: the summary counts the eight molluscan classes the section names, not seven (erratum 425).</small>

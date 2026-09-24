@@ -43,7 +43,7 @@ Solute potential (Ψ<sub>s</sub>), also called osmotic potential, is related to 
 
 Plant cells can metabolically manipulate Ψ<sub>s</sub> (and by extension, Ψ<sub>total</sub>) by adding or removing solute molecules. Therefore, plants have control over Ψ<sub>total</sub> via their ability to exert metabolic control over Ψ<sub>s</sub>.
 
-{{< mediafigure src="biology/Figure_B30_05_01" kind="diagram" alt="A U-shaped tube of pure water with equal levels on both sides, above three more U-tubes: one with solute added to its right side and a higher right-side level, one with positive pressure applied to its left side and a higher right-side level, and one with negative pressure applied to its left side and a higher left-side level." longdesc="At top, a single U-shaped tube labeled 'Pure water' holds equal water levels (marked H₂O) on both sides, with three black arrows branching down to three more U-tubes below. The left U-tube shows red dots labeled 'Solute' added to the right side only, with the right water level higher than the left, captioned 'Adding solute to the right side lowers Ψs, causing water to move to the right side of the tube.' The middle U-tube shows a red downward arrow labeled 'Positive pressure' applied to the left side, with the right water level higher than the left, captioned 'Applying positive pressure to the left side increases Ψp, causing water to move to the right side of the tube.' The right U-tube shows a red upward arrow labeled 'Negative pressure' applied to the left side, with the left water level higher than the right, captioned 'Applying negative pressure to the left side lowers Ψp, causing water to move to the left side of the tube.'" >}}
+{{< mediafigure src="biology/Figure_B30_05_01" kind="diagram" alt="A U-shaped tube of pure water with equal levels on both sides, above three more U-tubes: one with solute added to its right side and a higher right-side level, one with positive pressure applied to its left side and a higher right-side level, and one with negative pressure applied to its left side and a higher left-side level." longdesc="At top, a single U-shaped tube labeled 'Pure water' holds equal water levels on both sides; as in every tube, a vertical dashed line at the bottom of the U marks the membrane, and a double-headed blue arrow labeled H₂O crosses it. Three black arrows branch down to three more U-tubes below, each with a curved black arrow beneath it showing the net direction water moves. The left U-tube shows red dots labeled 'Solute' added to the right side only, with the right water level higher than the left and the curved arrow pointing right, captioned 'Adding solute to the right side lowers Ψs, causing water to move to the right side of the tube.' The middle U-tube shows a red downward arrow labeled 'Positive pressure' applied to the left side, with the right water level higher than the left and the curved arrow pointing right, captioned 'Applying positive pressure to the left side increases Ψp, causing water to move to the right side of the tube.' The right U-tube shows a red upward arrow labeled 'Negative pressure' applied to the left side, with the left water level higher than the right and the curved arrow pointing left, captioned 'Applying negative pressure to the left side lowers Ψp, causing water to move to the left side of the tube.'" >}}
 In this example with a semipermeable membrane between two aqueous systems, water will move from a region of higher to lower water potential until equilibrium is reached. Solutes (Ψ<sub>s</sub>), pressure (Ψ<sub>p</sub>), and gravity (Ψ<sub>g</sub>) influence total water potential for each side of the tube (Ψ<sub>total</sub> <sup>right or left</sup>), and therefore, the difference between Ψ<sub>total</sub> on each side (ΔΨ). (Ψ<sub>m</sub>, the potential due to interaction of water with solid substrates, is ignored in this example because glass is not especially hydrophilic). Water moves in response to the difference in water potential between two systems (the left and right sides of the tube).
 {{< /mediafigure >}}
 
@@ -126,7 +126,7 @@ Photosynthates, such as sucrose, are produced in the mesophyll cells of photosyn
 
 Phloem STEs have reduced cytoplasmic contents, and are connected by a sieve plate with pores that allow for pressure-driven bulk flow, or translocation, of phloem sap. Companion cells are associated with STEs. They assist with metabolic activities and produce energy for the STEs (see the figure below).
 
-{{< mediafigure src="biology/Figure_30_05_06" kind="diagram" alt="A single vertical column of large barrel-shaped sieve-tube elements stacked end to end, each pinched into a wavy junction with the next; a narrower companion cell runs alongside, and one segment shows a diagonally stippled sieve tube plate." longdesc="A vertical column of large, barrel-shaped cells is stacked end to end, each pinched into a wavy-lined junction with the next. 'Sieve tube element' labels the body of the topmost cell; a column of narrower, lighter-green cells, each with an oval nucleus, running down the right side is labeled 'Companion cell.' Partway down, a small bracket on the side wall, where the sieve tube element meets the companion cell, is labeled 'Lateral sieve area.' Near the bottom, a bracket labels a diagonally stippled oval patch inside one segment 'Sieve tube plate.'" >}}
+{{< mediafigure src="biology/Figure_30_05_06" kind="diagram" alt="A single vertical column of large barrel-shaped sieve-tube elements stacked end to end, each pinched into a wavy junction with the next; lighter companion cells line both sides, and a perforated, oval sieve tube plate crosses the column at each junction." longdesc="A vertical column of large, barrel-shaped cells is stacked end to end, each pinched into a wavy-lined junction with the next. 'Sieve tube element' labels the body of the upper cell; lighter-green cells, each with an oval nucleus, line both sides of the column, and the label 'Companion cell' points to one on the right. Partway down, a small bracket on the left side wall, where the sieve tube element meets a companion cell, is labeled 'Lateral sieve area.' At each of the three junctions drawn (top, middle, and bottom), a perforated oval plate lies across the column; a bracket labels the bottom one 'Sieve tube plate.'" >}}
 Phloem is comprised of cells called sieve-tube elements. Phloem sap travels through perforations called sieve tube plates. Neighboring companion cells carry out metabolic functions for the sieve-tube elements and provide them with energy. Lateral sieve areas connect the sieve-tube elements to the companion cells.
 {{< /mediafigure >}}
 
@@ -154,16 +154,16 @@ Water potential (Ψ) is a measure of the difference in potential energy between 
 ### Define water potential and explain how it is influenced by solutes, pressure, gravity, and the matric potential
 
 {{< textin
-  question="The pressure units used to measure water potential are called ________."
-  answer="megapascals"
-  accept="megapascal|MPa"
-  hint="This SI-derived pressure unit is what water potential (Ψ) is expressed in throughout the section."
->}}
-
-{{< textin
   question="The potential energy of a water solution per unit volume, relative to pure water at atmospheric pressure and ambient temperature, is called ________."
   answer="water potential"
   hint="This is denoted with the Greek letter Ψ throughout the section, and pure water is defined to have a value of zero."
+>}}
+
+{{< textin
+  question="The pressure units used to measure water potential are called ________."
+  answer="megapascals"
+  accept="MPa"
+  hint="This SI-derived pressure unit is what water potential (Ψ) is expressed in throughout the section."
 >}}
 
 {{< multiplechoice
@@ -173,16 +173,22 @@ Water potential (Ψ) is a measure of the difference in potential energy between 
 >}}
 Solute potential (Ψ<sub>s</sub>) is zero in a plant cell and negative in distilled water.
 Pressure potential (Ψ<sub>p</sub>) may be positive or negative.
-Gravity potential (Ψ<sub>g</sub>) can be manipulated by the plant.
-Matric potential (Ψ<sub>m</sub>) is largest in a water-saturated system.
+Gravity potential (Ψ<sub>g</sub>) is always positive.
+Matric potential (Ψ<sub>m</sub>) is positive in a dry seed.
 {{< /multiplechoice >}}
 
 ### Describe how water potential, evapotranspiration, and stomatal regulation influence how water is transported in plants
 
+{{< textin
+  question="The loss of water vapor to the atmosphere through stomata is called ________."
+  answer="transpiration"
+  hint="This passive process requires no metabolic energy in the form of ATP."
+>}}
+
 {{< multiplechoice
   question="When stomata open, what occurs?"
   answer="Water vapor is lost to the external environment, increasing the rate of transpiration."
-  hint="Stomata are the pathway through which both carbon dioxide enters and water vapor exits the leaf — think about which direction water moves through an open pore, and what that does to the rate."
+  hint="Reread the Control of Transpiration subsection on what the opening and closing of stomata regulates."
 >}}
 Water vapor is lost to the external environment, increasing the rate of transpiration.
 Water vapor is lost to the external environment, decreasing the rate of transpiration.
@@ -191,15 +197,9 @@ Water vapor enters the spaces in the mesophyll, decreasing the rate of transpira
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The loss of water vapor to the atmosphere through stomata is called ________."
-  answer="transpiration"
-  hint="This passive process requires no metabolic energy and is the main driver of water movement in the xylem."
->}}
-
-{{< textin
   question="Water potential and transpiration influence how water is transported through the ________ in plants."
   answer="xylem"
-  hint="This vascular tissue's vessels and tracheids are structurally adapted to withstand the tension created by transpiration."
+  hint="Reread the Section Summary's sentences on how water moves through the plant."
 >}}
 
 ### Explain how photosynthates are transported in plants
@@ -207,7 +207,7 @@ Water vapor enters the spaces in the mesophyll, decreasing the rate of transpira
 {{< multiplechoice
   question="Which cells are responsible for the movement of photosynthates through a plant?"
   answer="sieve-tube elements, companion cells"
-  hint="Tracheids and vessel elements belong to the xylem, the tissue for water transport — rule those combinations out and think about which phloem cell type carries the sugar solution, plus the cell type that powers it."
+  hint="Reread the section's drawing of the cells that make up phloem, and its caption."
 >}}
 tracheids, vessel elements
 tracheids, companion cells

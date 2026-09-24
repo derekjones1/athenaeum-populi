@@ -14,11 +14,12 @@ swapped for this book's: no appendix glossary (each module's own
 `<glossary>` is the Key-terms list), no unkeyed source questions (every
 exercise is keyed), no Check Your Understanding or Clinical Focus boxes; in
 their place the Interactive Link Questions rule, the References list, the
-figure `kind` check, and the 19-module upstream-diff check. The process —
-parent context kept small, Sonnet prep and close-out agents, one Sonnet
-author and one Sonnet checker per section, a claim pass per chapter, the
-blind solve in a fresh Fable subagent with masked pages — is unchanged; it
-is the process that earned its keep, not the content it was written for.
+figure `kind` check, and the September-8 table (playbook "Source and
+authority"). The process — parent context kept small, Sonnet prep and
+close-out agents, one Sonnet author per section, a claim pass per chapter,
+the blind solve in a fresh Fable subagent with masked pages — is unchanged;
+it is the process that earned its keep, not the content it was written for.
+One change: **the per-section checker runs on Opus**, not Sonnet (§0).
 
 ## 0. Shape, and why
 
@@ -26,12 +27,26 @@ Measured on the Microbiology chapters 10–11 run (eleven sections, one
 wave): the parent spent 118M context-tokens over 410 Fable turns; the
 eleven Sonnet authors 216M; the checkers 52M; the claim pass 8M. The
 checkers and claim pass found ~35 defects and 4 claim corrections on
-lint-clean pages, so they stay. Hence:
+lint-clean pages, so they stay. In this book the Sonnet checkers found 12
+and 9 defects on chapters 1–2, and an independent Opus re-review of the
+same shipped pages then found about 80 more — leaks (stems, roots, hints
+stating the key's fact) and alt-vs-image errors above all. The checker is
+the one per-section reading whose model was the gap, so it runs on Opus;
+authors, prep, and close-out agents stay Sonnet, except the alt-errata
+verifier (§4 step 0). Hence:
 
 - **Parent context stays small.** Every note goes to `$SP/PARENT-NOTES.md`,
   not to the conversation. Every long command output goes to a file and
   the parent reads its tail (`> $SP/x.log 2>&1; tail -20 $SP/x.log`).
   Agents' final messages are ten lines; their reports are files.
+- **Work from the packet list, not an agent's totals** *(September 23,
+  2026)*: reports miscount and skip (one figure fixer skipped 7 verdicts,
+  others misstated their fix counts), so tick each packet line against
+  the report before accepting a unit.
+- **Agents sharing `$SP` name their helper files by unit**
+  (`$SP/<unit>-*.py`, `$SP/zoom/<unit>-*.png`): parallel agents writing
+  one generic helper name overwrote each other's *(September 23, 2026)*.
+  Say so in every brief that lets an agent write a helper.
 - **Authors read the compact brief + the run facts, and the playbook
   sections named there** — not the whole core playbook, not the history.
 - **The blind solve runs in a fresh Fable subagent** with only the packets
@@ -54,35 +69,41 @@ parent runs them.
    manifest's `kind` will read `photo` for nearly all of them — the author
    sets it from the image (playbook rule 4).
 3. **PDF pages.** Find the chapter's true PDF index range with `pdftotext`
-   (printed folio = index − 16 held for chapter 1; re-check), then
+   (printed folio = index − 16 held for chapters 1–2; re-check), then
    `pdftoppm -f A -l B -r 110 -png sources/anatomy-and-physiology-2e_-_WEB.pdf $SP/pdf/chNN/p`.
    **The PDF predates the pin** (playbook "Source and authority"): for a
-   module in the September 8, 2026 errata set, the PDF shows the old text
-   or image; the CNXML wins and the diff is not an erratum.
+   module in the September-8 table, the PDF shows the old text or image;
+   the CNXML wins and the table row explains it — not an erratum.
 4. **Extraction, per module** (`tools/source/anatomy-physiology-prep.py`):
    `keys <moduleId> > $SP/keys-N.M.txt` and `terms <moduleId> >
    $SP/terms-N.M.md`. The parent does NOT read the keys files whole; a
    Sonnet agent reads them for step 6.
-   The extractor flattens an inline `<sup>`/`<sub>` inside an option list
-   (chapter 2: `²H` read "2 H") — authors key every option from the raw CNXML.
+   The extractor renders `<sup>`/`<sub>` as Unicode (fixed September 22,
+   2026, with a test); authors still key from the raw CNXML.
 5. **Landing page** `content/…/NN-<slug>/_index.md` from the intro module,
    in final form (bullets naming the sections; the chapter-objectives note
    as a list; no `authoring_status`). **Delegated:** one Sonnet agent,
-   prompt = two finished chapter landings as exemplars (Sections bullets are plain text, never links — the pilot agent linked them) (a Biology one and,
-   once it exists, this book's previous chapter), the intro module id, the
-   section list, the OpenStax deep link; it views the splash image for the
-   alt. Launched together with the step-6 drafter.
+   prompt = the chapter 1 and 2 landings as exemplars (Sections bullets are
+   plain text, never links), the intro module id, the section list, the
+   OpenStax deep link; it views the splash image for the alt. Launched
+   together with the step-6 drafter.
 6. **Run facts** — copy `run-facts-template.md` to `$SP/run-facts.md`.
    **Delegated, in two parts**: one Sonnet agent fills PART A (every
-   factual field, from the `keys` files and the raw CNXML) and appends
-   PART B, "DECISIONS NEEDED" — a numbered list of every Interactive Link
-   Question (with the ONE module sentence that could fix its answer,
-   quoted, or "no single sentence"), every feature box that ends in a
-   question, every comparison table, every table with images or spanning
-   cells, any notation, any module in the September-8 errata set, any
-   figure whose alt lists labels rather than describes, and every route,
-   with the raw data beside each. The parent reads PART B only and writes
-   PART C, the decisions — made HERE, once, by the parent, not seven times
+   factual field, from the `keys` files and the raw CNXML) in
+   `$SP/run-facts.md`, and writes PART B, "DECISIONS NEEDED", to a
+   SEPARATE file, `$SP/run-facts-B.md` — authors and checkers never read
+   it. Part B is a numbered list of every Interactive Link Question (with
+   the ONE module sentence that could fix its answer, quoted, or "no single
+   sentence"; and whether the pooled exercise repeats the note's question
+   verbatim, differs, or has a key that answers a different question),
+   every feature box that ends in a question, every comparison table, every
+   table with images or spanning cells, any notation (with its first corpus
+   precedent, `grep -rn '<glyph>' content/life-health-sciences | head -1`,
+   or "none"), any module in the September-8 table, any figure whose alt
+   lists labels rather than describes, every `section.references` with its
+   paragraph count, and every route, with the raw data beside each. The
+   parent reads PART B only and writes PART C into `$SP/run-facts.md`, the
+   decisions — made HERE, once, by the parent, not seven times
    by authors. A decision names the playbook rule it applies, and a shape
    the playbook already fixes is NOT re-decided: before the wave, grep
    `docs/subjects/anatomy-physiology.md` for every form Part C names and
@@ -98,6 +119,11 @@ render, the extraction commands, PART C, and reading two ten-line reports.
 Everything checklist-shaped goes to a Sonnet agent — this is the standing
 rule, not a per-run choice: Derek asked (September 12, 2026) that the
 token-saving shape apply every run without being requested.
+Checklist-shaped means text: anything that reads or fixes a figure, alt,
+or `longdesc` against its image runs on Opus (life-sciences "Figure, alt,
+and `longdesc` reading and fixing run on Opus", *September 23, 2026*),
+and after the first unit of any agent on a task new to its model the
+parent spot-checks one of its "clean" verdicts against the image.
    A run-specific correction to a brief is an edit to the repo copy, then
    the scratchpad copy — never a fork.
 
@@ -107,15 +133,18 @@ One Sonnet author per section, launched together, each prompt three lines:
 section number, module id, output path, PDF page range, "read
 `$SP/author.md` first". Names cannot contain a dot (`author-1-1`).
 
-As each author reports: launch its checker (one Sonnet per section, prompt
-= page path + "read `$SP/checker.md`"). **A prompt line naming one item for
-"specific attention" narrows a Sonnet checker to that item alone** — say
-"run the FULL pass, and in addition…", never a bare pointer. When a
-chapter's last page is on disk: launch its claim-pass checker (one Sonnet
-per chapter, prompt = the page paths with module ids, PLUS the landing page
-path with its intro module id — the landing page is Sonnet-written and this
-is its only reading — + "read `$SP/claim-pass.md`", report path
-`$SP/claims-chNN.md`).
+As each author reports: launch its checker (one **Opus** agent per
+section, `model: "opus"`, prompt = page path + "read `$SP/checker.md`").
+**A prompt line naming one item for "specific attention" narrows a checker
+to that item alone** — say "run the FULL pass, and in addition…", never a
+bare pointer. When a chapter's last page is on disk: launch its claim-pass
+checker (one Sonnet per chapter, prompt = the page paths with module ids,
+PLUS the landing page path with its intro module id — the landing page is
+Sonnet-written and this is its only reading — + "read
+`$SP/claim-pass.md`", report path `$SP/claims-chNN.md`). Before launching
+it, `grep -n 'Anatomy' docs/openstax-errata.md > $SP/ap-errata.txt` (the
+book's existing errata and "Reviewed and *not* errata" lines) and name
+that file in the prompt.
 
 After the last author reports, grep every page of the wave for plain-text
 cross-references to sibling sections that are now on disk — authors
@@ -163,27 +192,33 @@ npm run solve:compare -- $SP/solve/chNN/answers.json content --out $SP/solve-res
 
 Every disagreement or flag gets an `adjudicated` note settled against the
 module's sentence (a why-question keyed to one abstract noun usually wants
-its accept list extended within the 4-word cap). A compare that hits ONE
+its accept list extended within the 7-word accept cap). A compare that hits ONE
 unresolved disagreement writes NOTHING for the whole file — re-run it after
 adjudicating. A page edited after its solve re-hashes: re-emit that page
-and solve it again.
+and solve it again. After a sweep, re-solve only what the carry rule in
+AGENTS.md ("The answer ledger") does not carry *(September 23, 2026)* —
+`npm run ledger:carry` applies it; snapshot BEFORE the sweep's first edit.
 
 ## 4. Close-out, in this order
 
 0. **Delegate the mechanical close-out to Sonnet agents, launched together
    once the pages are stable**. Agents are addressed by their raw agent id
    for `SendMessage`, never by their description string — record each
-   author's id when it is launched. (a) an alt-errata verifier — every
+   author's id when it is launched. (a) an alt-errata verifier, **on
+   Opus** (it reads images; see §1) — every
    author/checker "suspected source defect" and every alt-vs-image claim,
    checked against the vendored image, the CNXML, AND the September-8
-   upstream diff for a module in that set, verdicts to `$SP/alt-errata.md`.
+   table in the playbook for a module in that set, verdicts to
+   `$SP/alt-errata.md`.
    **Its brief must say it never runs `source:media` or `vendor-media`**;
    (b) an errata drafter — reads the previous run's block for format,
    `$SP/alt-errata.md`, `claims-chNN.md`, and PARENT-NOTES, writes
    `$SP/errata-block.md` and `$SP/decisions-entries.json` (claim
    corrections only get decisions entries; alt and typo errata do not) and
    reports every footer that does not disclose what its erratum says; (c) a
-   pins agent — step 3 below, with the old→new values in its report; (d)
+   pins agent — step 3 below, with the old→new values in its report; it
+   leaves the claim-pass-ledger errata column to the parent, who fills it
+   from `$SP/errata-block.md` (claim errata only) once numbered; (d)
    any tool bug a checker found. The parent inserts, appends, and applies
    the footer one-liners.
 1. Errata block inserted after the previous block (before the plain
@@ -207,7 +242,11 @@ and solve it again.
    $SP/ledger-results --out $SP/ledger-results-fixed --book
    life-health-sciences/anatomy-physiology` (rebuilds the author hashes
    your post-filing edits changed), then merge: author results → solve
-   records → prune. A page with more than one stale entry stops the
+   records → prune (`npm run ledger:merge -- $SP/ledger-results-fixed >
+   $SP/merge1.log 2>&1`; `npm run ledger:merge -- $SP/solve-results/chNN >
+   $SP/merge2.log 2>&1`; `node tools/verify/answer-ledger.mjs prune content
+   > $SP/prune.log 2>&1`; `baseline:update` in step 6 moves
+   `--min-exercises` to the new total). A page with more than one stale entry stops the
    rebuild and nothing is written for it or the pages after it: map stale
    → uncovered by question text against the solve packet's hashes, write
    the patched file, and merge that too.

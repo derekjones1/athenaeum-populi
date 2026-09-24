@@ -23,7 +23,7 @@ Inside the cell, ligands bind to their internal receptors, allowing them to dire
 
 Some signal transduction pathways regulate the transcription of RNA. Others regulate the translation of proteins from mRNA. An example of a protein that regulates translation in the nucleus is the MAP kinase ERK. The MAPK/ERK pathway (also known as the Ras-Raf-MEK-ERK pathway) is a chain of proteins in the cell that communicates a signal from a receptor on the surface of the cell to the nuclear DNA. ERK is activated in a phosphorylation cascade when epidermal growth factor (EGF) binds the EGF receptor, as described in the section on propagation of the signal. Upon phosphorylation, ERK enters the nucleus and activates a protein kinase that, in turn, regulates protein translation (below).
 
-{{< mediafigure src="biology/Figure_09_03_01" kind="diagram" alt="Two stacked panels of a translation-initiation complex on an mRNA strand, before and after the ERK cascade phosphorylates it." longdesc="Two boxed panels, one above the other, joined by a downward arrow. Top panel: a green oval labeled ERK, carrying a red circle labeled P, sits at upper left with a curved arrow reaching down to an orange rounded rectangle labeled MNK1. MNK1 sits beside a large blue oval labeled eIF-4E, which is flanked by three smaller boxes labeled eIF-4G, eIF-4A, and eIF-4B. This whole complex rests on a red horizontal line labeled mRNA that loops upward into a hairpin stem-loop just to its right. Bottom panel: the same ERK–P oval sits alone at upper left, no longer joined to MNK1. MNK1 now carries its own red P circle, and the blue eIF-4E oval carries a red P circle at its upper-left edge; the eIF-4G/eIF-4A/eIF-4B cluster sits beside it as before. The mRNA line no longer loops into a hairpin — it runs straight across the panel — and a purple arrow beneath it, labeled protein synthesis, points to the right." eager="true" >}}
+{{< mediafigure src="biology/Figure_09_03_01" kind="diagram" alt="Two stacked panels of a translation-initiation complex on an mRNA strand, before and after the ERK cascade phosphorylates it." longdesc="Two boxed panels, one above the other, joined by a downward arrow. Top panel: a green oval labeled ERK, carrying a red circle labeled P, sits at upper left with a curved arrow reaching down to an orange rounded rectangle labeled MNK1. MNK1 sits beside a large blue oval labeled eIF-4E, which is flanked by three smaller boxes labeled eIF-4G, eIF-4A, and eIF-4B. This whole complex rests on a red horizontal line labeled mRNA that loops upward into a hairpin stem-loop just to its right. Bottom panel: the same ERK–P oval sits alone at upper left, with no arrow from it. MNK1 now carries its own red P circle, and the blue eIF-4E oval carries a red P circle at its upper-left edge; the eIF-4G/eIF-4A/eIF-4B cluster sits beside it as before. The mRNA line no longer loops into a hairpin — it runs straight across the panel — and a purple arrow beneath it, labeled protein synthesis, points to the right. A text block to the right of the panels reads: The MAP kinase ERK phosphorylates MNK1. MNK1 in turn phosphorylates eIF-4E, which is associated with mRNA. The mRNA unfolds and protein synthesis begins." eager="true" >}}
 ERK is a MAP kinase that activates translation when it is phosphorylated. ERK phosphorylates MNK1, which in turn phosphorylates eIF-4E, an elongation initiation factor that, with other initiation factors, is associated with mRNA. When eIF-4E becomes phosphorylated, the mRNA unfolds, allowing protein synthesis in the nucleus to begin. (See the phosphorylation pathway that activates ERK, described in the section on propagation of the signal.)
 {{< /mediafigure >}}
 
@@ -82,7 +82,7 @@ The initiation of a signaling pathway is a response to external stimuli. This re
 {{< multiplechoice
   question="What is the function of a phosphatase?"
   answer="A phosphatase removes the phosphate group from phosphorylated amino acid residues in a protein."
-  hint="A phosphatase reverses what a kinase does."
+  hint="Reread the second paragraph under Termination of the Signal Cascade."
 >}}
 A phosphatase removes phosphorylated amino acids from proteins.
 A phosphatase removes the phosphate group from phosphorylated amino acid residues in a protein.
@@ -93,23 +93,23 @@ A phosphatase degrades second messengers in the cell.
 {{< textin
   question="A ligand that binds to cell-surface receptors and stimulates a cell to divide is called a ________."
   answer="growth factor"
-  hint="Most bind to receptor tyrosine kinases (RTKs), which activate the RAS/MAP kinase pathway."
+  hint="Reread the first paragraph under Cell Growth."
 >}}
 
 {{< textin
   question="The enzyme that degrades cAMP into AMP, terminating a signal, is called ________."
   answer="phosphodiesterase"
-  hint="Its name describes what it does to a phosphodiester bond."
+  hint="Reread the second paragraph under Termination of the Signal Cascade."
 >}}
 
-{{< selfcheck question="What is a possible result of a mutation in a kinase that controls a pathway that stimulates cell growth?" hint="Consider both directions a mutation can push a kinase: locked on, or unable to function at all." >}}
+{{< selfcheck question="What is a possible result of a mutation in a kinase that controls a pathway that stimulates cell growth?" hint="Reread the Cell Growth section and the Cancer Biologist box." >}}
 If a kinase is mutated so that it is always activated, it will continuously signal through the pathway and lead to uncontrolled growth and possibly cancer. If a kinase is mutated so that it cannot function, the cell will not respond to ligand binding.
 ===CHECKS===
 if a kinase is mutated so that it is always activated, it will continuously signal through the pathway and lead to uncontrolled growth and possibly cancer
 if a kinase is mutated so that it cannot function, the cell will not respond to ligand binding
 {{< /selfcheck >}}
 
-{{< selfcheck question="A scientist notices that a cancer cell line shows high levels of phosphorylated ERK in the absence of EGF. What are two possible explanations for the increase in phosphorylated ERK? Be specific in which proteins are involved." hint="Think about every step between the EGF receptor and phosphorylated ERK that could get stuck in the 'on' position or fail to get switched back off." >}}
+{{< selfcheck question="A scientist notices that a cancer cell line shows high levels of phosphorylated ERK in the absence of EGF. What are two possible explanations for the increase in phosphorylated ERK? Be specific in which proteins are involved." hint="Reread the first paragraph under Gene Expression and the section Termination of the Signal Cascade." >}}
 Possible explanations:
 
 - EGFR dimer cannot separate.
@@ -125,10 +125,17 @@ the cell has a mutation preventing the expression or function of the ERK-specifi
 
 ### Identify the function of PKC in signal transduction pathways
 
+{{< textin
+  question="Some pathways activate enzymes that interact with DNA transcription factors. Others modify proteins and induce them to change their ________ in the cell."
+  answer="location"
+  accept="position"
+  hint="Reread the Summary's fourth and fifth sentences."
+>}}
+
 {{< multiplechoice
   question="How does NF-κB induce gene expression?"
   answer="Phosphorylation of the inhibitor Iκ-B dissociates the complex between it and NF-κB, and allows NF-κB to enter the nucleus and stimulate transcription."
-  hint="PKC is the kinase that phosphorylates the inhibitor holding NF-κB out of the nucleus."
+  hint="Reread the second paragraph under Gene Expression."
 >}}
 A small, hydrophobic ligand binds to NF-κB, activating it.
 Phosphorylation of the inhibitor Iκ-B dissociates the complex between it and NF-κB, and allows NF-κB to enter the nucleus and stimulate transcription.
@@ -139,7 +146,7 @@ NF-κB is a kinase that phosphorylates a transcription factor that binds DNA and
 {{< multiplechoice
   question="What is the effect of an inhibitor binding an enzyme?"
   answer="The enzyme is inactivated."
-  hint="An inhibitor is defined by what it does to the protein it binds."
+  hint="Reread the second paragraph under Gene Expression."
 >}}
 The enzyme is degraded.
 The enzyme is activated.
@@ -150,7 +157,7 @@ The complex is transported out of the cell.
 {{< multiplechoice
   question="How does PKC's signaling role change in response to growth factor signaling versus an immune response?"
   answer="PKC interacts directly with signaling molecules in growth factor cascades, but interacts with signaling inhibitors during immune signaling."
-  hint="In the immune pathway, PKC's target is the inhibitor Iκ-B rather than a signaling protein itself."
+  hint="Reread the first two paragraphs under Gene Expression."
 >}}
 PKC interacts directly with signaling molecules in both cascades, but only exhibits kinase activity during growth factor signaling.
 PKC interacts directly with signaling molecules in growth factor cascades, but interacts with signaling inhibitors during immune signaling.
@@ -158,18 +165,18 @@ PKC amplifies growth factor cascades, but turns off immune cascades.
 PKC is activated during growth factor cascades, but is inactivated during immune response cascades.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A molecule that binds to a protein — usually an enzyme — and keeps it from functioning is called a(n) ________."
-  answer="inhibitor"
-  hint="Iκ-B plays this role toward NF-κB until PKC phosphorylates it."
->}}
-
 ### Recognize the role of apoptosis in the development and maintenance of a healthy organism
+
+{{< textin
+  question="The use of cellular signaling to organize the dismantling of a cell ensures that harmful molecules from the cytoplasm are not released into the spaces between cells, as they are in uncontrolled death, ________."
+  answer="necrosis"
+  hint="Reread the Summary's sentences on programmed cell death."
+>}}
 
 {{< multiplechoice
   question="Apoptosis can occur in a cell when the cell is ________________."
   answer="all of the above"
-  hint="Check whether each of the first three options, on its own, is a real trigger for apoptosis."
+  hint="Reread the first paragraph under Cell Death."
 >}}
 damaged
 no longer needed
@@ -180,7 +187,7 @@ all of the above
 {{< multiplechoice
   question="A scientist notices that a cancer cell line fails to die when they add an inducer of apoptosis to his culture of cells. Which hypothesis could explain why the cells fail to die?"
   answer="All of the above."
-  hint="Consider a break at the start of the pathway, a missing receptor, and an opposing pathway that overrides the signal."
+  hint="Reread the Cell Growth and Cell Death sections."
 >}}
 The cells have a mutation that prevents the initiation of apoptosis signaling.
 The cells have lost expression of the receptor for the apoptosis-inducing ligand.
@@ -188,7 +195,7 @@ The cells overexpress a growth factor pathway that inhibits apoptosis.
 All of the above.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does the extracellular matrix control the growth of cells?" hint="Ask what happens to a cell's survival signaling the moment it loses contact with the matrix." >}}
+{{< selfcheck question="How does the extracellular matrix control the growth of cells?" hint="Reread the Cell Death section." >}}
 Receptors on the cell surface must be in contact with the extracellular matrix in order to receive positive signals that allow the cell to live. If the receptors are not activated by binding, the cell will undergo apoptosis. This ensures that cells are in the correct place in the body and helps to prevent invasive cell growth as occurs in metastasis in cancer.
 ===CHECKS===
 receptors on the cell surface must be in contact with the extracellular matrix in order to receive positive signals that allow the cell to live
@@ -196,12 +203,6 @@ if the receptors are not activated by binding, the cell will undergo apoptosis
 helps to prevent invasive cell growth as occurs in metastasis in cancer
 {{< /selfcheck >}}
 
-{{< textin
-  question="Programmed cell death that allows a cell to die in a controlled manner, without releasing potentially damaging molecules, is called ________."
-  answer="apoptosis"
-  hint="Fingers and toes separate during embryonic development because this process removes the webbing between them."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 9.3: Response to the Signal](https://openstax.org/books/biology-2e/pages/9-3-response-to-the-signal) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the ERK/eIF-4E cascade figure's alt was rewritten from the source's letter-by-letter spelled-out form ("E R K," "lower e upper I upper F dash 4 E") to plain text naming the proteins, with a new extended description walking both panels of the flow diagram as drawn; the mouse-paw micrograph's alt was rewritten to describe what is visually depicted (stain color, digit buds, webbing, scale bar) rather than repeat the caption; the Career Connection feature box was rendered as a callout with its bold name, its embedded citation kept as a live external link; two cross-references to a figure in the previous section (Figure 9.10, not on this page) were reworded from a numbered figure citation to a prose reference to the section that carries it, since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions were adapted into the closing interactive Practice block (multiple choice and self-check respectively), with each item's original source order and wording preserved; and four key-term recall items (growth factor, phosphodiesterase, inhibitor, apoptosis) were added from the glossary to round out every objective group with an auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 9.3: Response to the Signal](https://openstax.org/books/biology-2e/pages/9-3-response-to-the-signal) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the ERK/eIF-4E cascade figure's alt was rewritten from the source's letter-by-letter spelled-out form ("E R K," "lower e upper I upper F dash 4 E") to plain text naming the proteins, with a new extended description walking both panels of the flow diagram as drawn and quoting the artwork's side text with the standard spelling "synthesis" (the artwork prints "sythesis"); the mouse-paw micrograph's alt was rewritten to describe what is visually depicted (stain color, digit buds, webbing, scale bar) rather than repeat the caption; the Career Connection feature box was rendered as a callout with its bold name, its embedded citation kept as a live external link; two cross-references to a figure in the previous section (Figure 9.10, not on this page) were reworded from a numbered figure citation to a prose reference to the section that carries it, since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions were adapted into the closing interactive Practice block (multiple choice and self-check respectively), with each item's original source order and wording preserved; and two key-term recall items (growth factor, phosphodiesterase) were added from the glossary, and two summary-derived cloze `textin` items (the change of location some pathways induce in proteins, and necrosis), to round out every objective group with an auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

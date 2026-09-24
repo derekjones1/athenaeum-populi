@@ -19,7 +19,7 @@ weight: 3
 
 The core threat to biodiversity on the planet, and therefore a threat to human welfare, is the combination of human population growth and resource exploitation. The human population requires resources to survive and grow, and those resources are being removed unsustainably from the environment. The three greatest proximate threats to biodiversity are habitat loss, overharvesting, and the introduction of exotic species. The first two of these are a direct result of human population growth and resource use. The third results from increased mobility and trade. A fourth major cause of extinction, anthropogenic climate change, has not yet had a large impact, but it is predicted to become significant during this century. Global climate change is also a consequence of human population needs for energy and the use of fossil fuels to meet those needs, shown below. Environmental issues, such as toxic pollution, have specific targeted effects on species, but they are not generally seen as threats at the magnitude of the others.
 
-{{< mediafigure src="biology/Figure_B47_03_01" kind="diagram" eager="true" alt="A line graph of atmospheric carbon dioxide concentration in parts per million against years before present, from about 425,000 years ago on the left to the present day on the right. The concentration cycles between roughly 180 and 300 ppm across repeated swings, then rises sharply just before the present to about 395 ppm." longdesc="The x-axis runs from about 425,000 years before present on the left to 0 (the present) on the right, so time decreases moving rightward; the y-axis is CO₂ concentration in ppm, gridlined at 175, 225, 275, 325, and 375. Reading left to right, the curve completes four broad swings: it opens near 280 ppm, falls to a trough near 190 ppm around 350,000 years ago, rises to the graph's highest point, about 300 ppm, near 320,000 years ago, then falls to a trough near 190 ppm around 260,000 years ago; it rises again to about 280 ppm near 240,000 years ago and falls to a trough near 185 ppm around 155,000 years ago; it rises to about 290 ppm near 128,000 years ago, then falls and fluctuates mostly between about 190 and 250 ppm for an extended stretch, before dropping to the lowest trough on the graph, about 180 ppm, around 20,000 years ago. From that trough the line climbs sharply, crossing above every earlier peak, to about 395 ppm at the right edge, where a blue arrow labeled \"Present day\" marks the endpoint." >}}
+{{< mediafigure src="biology/Figure_B47_03_01" kind="diagram" eager="true" alt="A line graph of atmospheric carbon dioxide concentration in parts per million against years before present, from about 425,000 years ago on the left to the present day on the right. The concentration cycles between roughly 180 and 300 ppm across repeated swings, then rises sharply just before the present to about 395 ppm." longdesc="The x-axis, Years before present, is labeled 400,000, 300,000, 200,000, 100,000, and 0 and extends a little past 400,000 at the left, where the curve begins at about 420,000 years ago; time decreases moving rightward to the present at the right edge. The y-axis is CO₂ concentration (ppm), labeled at 175, 225, 275, 325, and 375. Reading left to right, the curve completes four broad swings: it opens near 280 ppm, falls to a trough near 190 ppm around 350,000 years ago, rises to the highest of the ancient peaks, about 300 ppm, near 320,000 years ago, then falls to a trough near 190 ppm around 260,000 years ago; it rises again to about 280 ppm near 240,000 years ago and falls to a trough near 185 ppm around 155,000 years ago; it rises to about 290 ppm near 128,000 years ago, then falls and fluctuates mostly between about 190 and 250 ppm for an extended stretch, before dropping to the lowest trough on the graph, about 180 ppm, around 20,000 years ago. From that trough the line climbs sharply, crossing above every earlier peak, to about 395 ppm at the right edge, where a blue arrow labeled \"Present day\" marks the endpoint." >}}
 Atmospheric carbon dioxide levels fluctuate in a cyclical manner. However, the burning of fossil fuels in recent history has caused a dramatic increase in the levels of carbon dioxide in the Earth's atmosphere, which have now reached levels never before seen in human history. Scientists predict that the addition of this "greenhouse gas" to the atmosphere is resulting in climate change that will significantly impact biodiversity in the coming century.
 {{< /mediafigure >}}
 
@@ -97,7 +97,7 @@ This little brown bat in Greeley Mine, Vermont, March 26, 2009, was found to hav
 
 **Climate change**, and specifically the *anthropogenic* (meaning, caused by humans) warming trend presently escalating, is recognized as a major extinction threat, particularly when combined with other threats such as habitat loss and the expansion of disease organisms. Scientists disagree about the likely magnitude of the effects, with extinction rate estimates ranging from 15 percent to 40 percent of species destined for extinction by 2050. Scientists do agree, however, that climate change will alter regional climates, including rainfall and snowfall patterns, making habitats less hospitable to the species living in them, in particular, the endemic species. The warming trend will shift colder climates toward the north and south poles, forcing species to move with their adapted climate norms while facing habitat gaps along the way. The shifting ranges will impose new competitive regimes on species as they find themselves in contact with other species not present in their historic range. One such unexpected species contact is between polar bears and grizzly bears. Previously, these two distinct species had separate ranges. Now, their ranges are overlapping and there are documented cases of these two species mating and producing viable offspring, which may or may not be viable crossing back to either parental species. Changing climates also throw off species' delicate timed adaptations to seasonal food resources and breeding times. Many contemporary mismatches to shifts in resource availability and timing have already been documented.
 
-{{< mediafigure src="biology/Figure_B47_03_06" kind="diagram" alt="A map of North America shaded with three overlapping regions: a dark brown area for historic grizzly bear range, a lighter tan area for the present range of grizzly bears, and a red diagonally hatched area for polar bear range." longdesc="The map's legend lists three regions: historic grizzly bear range (dark brown), present-day grizzly bear range (tan), and polar bear range (red diagonal hatching). The dark-brown historic range covers the western United States, from the Mexican border north through the Rocky Mountain states into the mid-latitudes of Canada. The tan present-day range borders that historic area along roughly the US–Canada line and extends much farther north, covering all of Alaska and most of Canada up to the Arctic coastline and islands. The red-hatched polar bear range covers the Canadian Arctic islands and the northern coastline of Alaska and Canada, overlapping the northern edge of the tan present-day grizzly range along that coastline." >}}
+{{< mediafigure src="biology/Figure_B47_03_06" kind="diagram" alt="A map of North America shaded with three overlapping regions: a dark brown area for historic grizzly bear range, a lighter tan area for the present range of grizzly bears, and a red diagonally hatched area for polar bear range." longdesc="The map's legend lists three regions: Historic grizzly bear habitat (dark brown), Present range of grizzly bear habitat (tan), and Polar bear habitat (red diagonal hatching). The dark-brown historic habitat covers the western United States from the Pacific coast east through the Rocky Mountain states, extends south into northern Mexico, and reaches north across the border into the southern prairies of Canada. The tan present range meets the historic area in southern Canada, where two narrow tan tongues run south into the brown area to about the US–Canada border, and extends much farther north, covering Alaska and western and northern mainland Canada east to Hudson Bay, up to the Arctic coastline; eastern Canada and the Arctic islands are not tan. The red-hatched polar bear habitat covers the Canadian Arctic islands, the northern coastline of Alaska and Canada, and the shores of Hudson Bay, overlapping the northern and eastern edges of the tan present-day grizzly range along the Arctic coast and west of Hudson Bay." >}}
 Since 2008, grizzly bears (*Ursus arctos horribilis*) have been spotted farther north than their historic range, a possible consequence of climate change. As a result, grizzly bear habitat now overlaps polar bear (*Ursus maritimus*) habitat. The two species of bears, which are capable of mating and producing viable offspring, are considered separate "ecological" species because historically they lived in different habitats and never met. However, in 2006 a hunter shot a wild grizzly-polar bear hybrid known as a grolar bear, the first wild hybrid ever found.
 {{< /mediafigure >}}
 
@@ -126,7 +126,7 @@ The core threats to biodiversity are human population growth and unsustainable r
 {{< multiplechoice
   question="Converting a prairie to a farm field is an example of ________."
   answer="habitat loss"
-  hint="This section's opening paragraph names the elimination of an ecosystem a species depends on as one of the three greatest proximate threats — what happens to that ecosystem when the land itself is converted to a different use?"
+  hint="Reread the section's opening paragraph, which names the greatest proximate threats, then the first subsection after it."
 >}}
 overharvesting
 habitat loss
@@ -169,7 +169,7 @@ excessive use of fossil fuels also leads to global warming
 {{< multiplechoice
   question="Which two extinction risks may be a direct result of the pet trade?"
   answer="overharvesting and exotic species introduction"
-  hint="One paragraph on aquarium fish and another on turtles, amphibians, and birds both point to the same two mechanisms — taking too many individuals from the wild, and moving them somewhere they do not belong."
+  hint="Find the paragraphs that mention the pet trade and home aquaria, and note which threat subsection each one sits in."
 >}}
 climate change and exotic species introduction
 habitat loss and overharvesting
@@ -180,7 +180,7 @@ habitat loss and climate change
 {{< multiplechoice
   question="Exotic species are especially threatening to what kind of ecosystem?"
   answer="islands"
-  hint="This section explains that this kind of ecosystem holds a disproportionate number of endemic species because of its isolation from mainland ancestors — think about what that isolation means once a new predator or competitor arrives."
+  hint="Reread the paragraph on introduced species that gives the Lake Victoria and Guam examples."
 >}}
 deserts
 marine ecosystems
@@ -226,7 +226,7 @@ it is also possible that habitat destruction will threaten the species
 {{< multiplechoice
   question="The Summary states that which of the following threats is predicted to be a significant cause of extinctions in the coming century?"
   answer="Climate change"
-  hint="This is the one of the four threats this section says has not yet had a large impact, unlike the other three."
+  hint="Reread the Summary's opening sentences, which separate the causes of extinctions to date from the one predicted for the future."
 >}}
 Habitat loss
 Overharvesting
@@ -237,7 +237,7 @@ Climate change
 {{< textin
   question="According to this section's Summary, the impacts of climate change are greatest in the ________."
   answer="arctic"
-  hint="The Summary's sentence on where climate-change impacts are greatest names one of the two polar regions."
+  hint="Reread the Summary's sentences on climate change, near its end."
 >}}
 
 ---

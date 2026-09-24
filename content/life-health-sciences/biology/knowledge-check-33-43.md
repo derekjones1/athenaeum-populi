@@ -85,7 +85,7 @@ it is also found around and between most body organs
 >}}
 vasoconstriction
 vasodilation
-countercurrent heat exchange
+shivering
 evaporation
 {{< /multiplechoice >}}
 
@@ -192,12 +192,13 @@ chyme in the small intestine
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="During the gastric phase, G cells in the stomach secrete the hormone gastrin in response to the presence of which of the following?"
-  answer="proteins"
+  question="In reaction to the smell, sight, or thought of food, what is the first response the body makes in preparation for digestion?"
+  answer="salivation"
 >}}
-fatty acids
-proteins
-sugars
+release of somatostatin
+salivation
+release of bile from the gallbladder
+slowing of intestinal peristalsis
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Besides controlling the rate of gastric emptying, what does the intestinal phase coordinate once chyme enters the small intestine?" >}}
@@ -224,7 +225,7 @@ dendrite
 {{< textin
   question="The glial cells that line the brain's fluid-filled ventricles and the spinal cord's central canal, producing the cerebrospinal fluid that cushions the brain, are called ________."
   answer="ependymal cells"
-  accept="ependymal|ependymal cell"
+  accept="ependymal"
 >}}
 
 {{< selfcheck question="What is neurogenesis, and what factors are known to promote or inhibit it in the hippocampus?" >}}
@@ -239,8 +240,8 @@ stress has the opposite effect
 ### 35.2 How Neurons Communicate
 
 {{< multiplechoice
-  question="Once all of a neuron's Na⁺ channels open during an action potential, to what membrane potential does the neuron completely depolarize?"
-  answer="about +40 mV"
+  question="A stimulus from a sensory cell or another neuron depolarizes a target neuron to its threshold potential. About what membrane potential is that threshold?"
+  answer="about −55 mV"
 >}}
 about −70 mV
 about +40 mV
@@ -270,23 +271,22 @@ it can be recycled, sometimes called reuptake, by the presynaptic neuron
 the cerebellum
 the hypothalamus
 the thalamus
-the amygdala
+the hippocampus
 {{< /multiplechoice >}}
+
+{{< selfcheck question="How did a 25-year-old businessman behave after a wasp sting led to bilateral damage to his basal ganglia?" >}}
+When a wasp sting led to bilateral basal ganglia damage in a 25-year-old businessman, he began to spend all his days in bed and showed no interest in anything or anybody, but when he was externally stimulated, as when someone asked to play a card game with him, he was able to function normally, and he did not report feeling bored or frustrated by his state.
+===CHECKS===
+he began to spend all his days in bed and showed no interest in anything or anybody
+when he was externally stimulated he was able to function normally
+he did not report feeling bored or frustrated by his state
+{{< /selfcheck >}}
 
 {{< textin
   question="The temporal-lobe structure within the limbic system that is important for the sensation of fear and for recognizing fearful faces is called the ________."
   answer="amygdala"
   accept="amygdalae"
 >}}
-
-{{< selfcheck question="Besides movement control, what other function do the basal ganglia serve, and what did a case of bilateral basal ganglia damage from a wasp sting reveal about it?" >}}
-The basal ganglia also regulate motivation. When a wasp sting led to bilateral basal ganglia damage in a 25-year-old businessman, he began to spend all his days in bed and showed no interest in anything or anybody, but when he was externally stimulated, as when someone asked to play a card game with him, he was able to function normally, and he did not report feeling bored or frustrated by his state.
-===CHECKS===
-the basal ganglia also regulate motivation
-a wasp sting led to bilateral basal ganglia damage in a 25-year-old businessman, who began to spend all his days in bed and showed no interest in anything or anybody
-when he was externally stimulated he was able to function normally
-he did not report feeling bored or frustrated by his state
-{{< /selfcheck >}}
 
 ### 35.4 The Peripheral Nervous System
 
@@ -332,11 +332,12 @@ the prefrontal cortex
 the substantia nigra
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How do antipsychotic medications treat schizophrenia, and what side effect can this treatment cause?" >}}
-Antipsychotic medications work by blocking dopamine receptors and decreasing dopamine neurotransmission in the brain. This decrease in dopamine can cause Parkinson's disease-like symptoms in some patients.
+{{< selfcheck question="What happened to the 1990s research paper that linked autism to a common vaccine given to children?" >}}
+The paper was retracted when it was discovered that the author falsified data, and follow-up studies showed no connection between vaccines and autism.
 ===CHECKS===
-antipsychotic medications work by blocking dopamine receptors and decreasing dopamine neurotransmission in the brain
-this decrease in dopamine can cause Parkinson's disease-like symptoms in some patients
+the paper was retracted
+it was discovered that the author falsified data
+follow-up studies showed no connection between vaccines and autism
 {{< /selfcheck >}}
 
 ## Chapter 36: Sensory Systems
@@ -354,12 +355,13 @@ olfaction
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Receptive fields differ among the senses. For which sense must a stimulus come into contact with the body?"
-  answer="touch"
+  question="Which of the following is one way that sensory systems encode the intensity of a stimulus?"
+  answer="the rate of action potentials produced by the sensory receptor"
 >}}
-hearing
-touch
-vision
+the dedicated system of axons its signals travel over
+the region in space that forms the receptor's receptive field
+the rate of action potentials produced by the sensory receptor
+the relay of its signals through the thalamus
 {{< /multiplechoice >}}
 
 {{< selfcheck question="What are the two broad types of cellular systems that perform sensory transduction, and what serves as the sensory receptor in each?" >}}
@@ -459,9 +461,8 @@ candela
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The region in the center back of the eye that has a high density of cones and is responsible for acute vision is called the ________."
-  answer="fovea"
-  accept="fovea centralis"
+  question="The main photopigment in vertebrates, whose light-absorbing retinal changes from a bent cis form to a linear trans form when light hits it, is called ________."
+  answer="rhodopsin"
 >}}
 
 {{< selfcheck question="Describe how the information carried by the magnocellular and parvocellular pathways differs, from the optic nerve through the thalamus." >}}
@@ -512,7 +513,7 @@ In the nucleus of the target cell.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The hormone that binds to a plasma membrane receptor is called a first messenger, and the cellular component it activates is called a ________."
+  question="A hormone that binds to a plasma membrane receptor is called a first messenger; the molecule it activates in the cytoplasm is called a ________."
   answer="second messenger"
 >}}
 
@@ -528,19 +529,14 @@ a small amount of hormone can trigger the formation of a large amount of cellula
 ### 37.3 Regulation of Body Processes
 
 {{< multiplechoice
-  question="Within the thyroid follicle, TSH triggers the production of T₃ and T₄ from which substance?"
+  question="Which glycoprotein, present in the follicles where T₃ and T₄ are made, is converted into these hormones with the addition of iodine?"
   answer="thyroglobulin"
 >}}
 thyroglobulin
-calcitonin
-parathyroid hormone
+prolactin
+glucagon
 insulin
 {{< /multiplechoice >}}
-
-{{< textin
-  question="The hormone ________, produced by the parafollicular or C cells of the thyroid, has the opposite effect on blood calcium levels as does PTH."
-  answer="calcitonin"
->}}
 
 {{< selfcheck question="How does growth hormone act indirectly, through the liver, to promote tissue growth?" >}}
 The indirect mechanism of GH action is mediated by insulin-like growth factors (IGFs), which are a family of growth-promoting proteins produced by the liver. IGFs stimulate the uptake of amino acids from the blood, allowing the formation of new proteins, particularly in skeletal muscle cells, cartilage cells, and other target cells.
@@ -551,16 +547,21 @@ IGFs stimulate the uptake of amino acids from the blood
 this allows the formation of new proteins in skeletal muscle cells, cartilage cells, and other target cells
 {{< /selfcheck >}}
 
+{{< textin
+  question="The hormone ________, produced by the parafollicular or C cells of the thyroid, decreases blood calcium levels by inhibiting osteoclasts, stimulating osteoblasts, and stimulating calcium excretion by the kidneys."
+  answer="calcitonin"
+>}}
+
 ### 37.4 Regulation of Hormone Production
 
 {{< multiplechoice
-  question="Which hormone released by the anterior pituitary stimulates the thyroid gland to produce the hormones T₃ and T₄?"
+  question="Which hormone released by the anterior pituitary causes the hormones T₃ and T₄ to be produced?"
   answer="thyroid-stimulating hormone"
 >}}
-epinephrine and norepinephrine
+growth hormone
 thyroid-stimulating hormone
-the thyroid hormones T₃ and T₄
-insulin
+prolactin
+adrenocorticotropic hormone
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -569,14 +570,14 @@ insulin
 >}}
 a further rise in blood glucose levels
 a drop in blood glucose levels
-release of thyroid-stimulating hormone
+a rise in blood T₃ and T₄ levels
 neuronal signaling from the sympathetic nervous system
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does the nervous system trigger the release of epinephrine and norepinephrine during a stress response, and what is this mechanism called?" >}}
-In some cases, the nervous system directly stimulates endocrine glands to release hormones, which is referred to as neural stimuli. Neuronal signaling from the sympathetic nervous system directly stimulates the adrenal medulla to release the hormones epinephrine and norepinephrine in response to stress.
+{{< selfcheck question="What do the hormones epinephrine and norepinephrine provide in a short-term stress response, and how is their release brought about?" >}}
+In a short-term stress response, the hormones epinephrine and norepinephrine are important for providing the bursts of energy required for the body to respond. Neuronal signaling from the sympathetic nervous system directly stimulates the adrenal medulla to release the hormones epinephrine and norepinephrine in response to stress.
 ===CHECKS===
-the nervous system directly stimulates endocrine glands to release hormones, which is called neural stimuli
+epinephrine and norepinephrine are important for providing the bursts of energy required for the body to respond
 neuronal signaling from the sympathetic nervous system directly stimulates the adrenal medulla
 the adrenal medulla releases the hormones epinephrine and norepinephrine in response to stress
 {{< /selfcheck >}}
@@ -611,13 +612,13 @@ the thymus produces hormones called thymosins, which contribute to the developme
 ### 38.1 Types of Skeletal Systems
 
 {{< multiplechoice
-  question="The adult vertebral column comprises how many bones?"
-  answer="26"
+  question="The skull's 22 bones are divided into cranial bones and facial bones. How many cranial bones form the cavity that encloses the brain?"
+  answer="eight"
 >}}
-22
-26
-30
-33
+six
+eight
+12
+14
 {{< /multiplechoice >}}
 
 {{< selfcheck question="What are the five main functions of the human endoskeleton?" >}}
@@ -639,12 +640,12 @@ allowing for movement
 ### 38.2 Bone
 
 {{< multiplechoice
-  question="Which type of bone is longer than it is wide and has a shaft and two ends?"
-  answer="long bone"
+  question="Which type of bone, such as the patella, develops inside tendons and may be found near joints at the knees, hands, and feet?"
+  answer="sesamoid bone"
 >}}
-long bone
+sesamoid bone
 short bone
-flat bone
+sutural bone
 irregular bone
 {{< /multiplechoice >}}
 
@@ -688,7 +689,6 @@ the presence or absence of a cavity in the joint
 >}}
 the hands, feet, and cervical spine
 the knees, elbows, and shoulders
-the wrist and fingers
 the shoulder and hip
 {{< /multiplechoice >}}
 
@@ -738,12 +738,13 @@ lungs
   answer="diaphragm"
 >}}
 
-{{< selfcheck question="How do cilia in the bronchi and bronchioles help protect the lungs, and how does cigarette smoke interfere with that protection?" >}}
-The bronchi and bronchioles contain cilia, small hair-like projections that line the walls of the bronchi and bronchioles. These cilia beat in unison and move mucus and particles out of the bronchi and bronchioles back up to the throat where it is swallowed and eliminated via the esophagus. Tar and other substances in cigarette smoke destroy or paralyze the cilia, making the removal of particles more difficult, and smoking causes the lungs to produce more mucus, which the damaged cilia are not able to move.
+{{< selfcheck question="How does cigarette smoke damage the airways' cilia, and what are the consequences for a smoker?" >}}
+In humans, tar and other substances in cigarette smoke destroy or paralyze the cilia, making the removal of particles more difficult. In addition, smoking causes the lungs to produce more mucus, which the damaged cilia are not able to move. This causes a persistent cough, as the lungs try to rid themselves of particulate matter, and makes smokers more susceptible to respiratory ailments.
 ===CHECKS===
-these cilia beat in unison and move mucus and particles out of the bronchi and bronchioles back up to the throat where it is swallowed and eliminated via the esophagus
 tar and other substances in cigarette smoke destroy or paralyze the cilia, making the removal of particles more difficult
 smoking causes the lungs to produce more mucus, which the damaged cilia are not able to move
+this causes a persistent cough, as the lungs try to rid themselves of particulate matter
+makes smokers more susceptible to respiratory ailments
 {{< /selfcheck >}}
 
 ### 39.2 Gas Exchange across Respiratory Surfaces
@@ -759,9 +760,9 @@ smoking causes the lungs to produce more mucus, which the damaged cilia are not 
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The maximum amount of air that can be inhaled or exhaled during a single respiratory cycle, equal to the sum of the expiratory reserve volume, tidal volume, and inspiratory reserve volume, is called the ________."
-  answer="vital capacity"
-  accept="VC"
+  question="The amount of air that can be inhaled after the end of a normal expiration is called the ________."
+  answer="inspiratory capacity"
+  accept="IC"
 >}}
 
 {{< selfcheck question="Why does oxygen diffuse out of the alveoli and into the blood of the surrounding capillaries?" >}}
@@ -914,16 +915,17 @@ this is important in the overall regulation of blood pressure
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The pressure of the blood flow in the body is produced by the ________ of the fluid (blood) against the walls of the blood vessels."
-  answer="hydrostatic pressure"
+  question="Whales living in cold water keep their blood warm because their veins and arteries lie close together, so warmth passes between the two kinds of vessel. This mechanism is called a ________."
+  answer="countercurrent heat exchanger"
+  accept="countercurrent heat exchange|counter-current heat exchanger|countercurrent exchanger"
 >}}
 
-{{< selfcheck question="What are two ways cardiac output can be increased?" >}}
-Cardiac output can be increased by increasing heart rate, as when exercising. Cardiac output can also be increased by increasing stroke volume, such as if the heart contracts with greater strength. Stroke volume can also be increased by speeding blood circulation through the body so that more blood enters the heart between contractions.
+{{< selfcheck question="Each capillary is far narrower than the aorta, yet blood moves through the capillary beds much more slowly. Why, and how does this slow rate help the body?" >}}
+While the diameter of each individual arteriole and capillary is far narrower than the diameter of the aorta, and according to the law of continuity, fluid should travel faster through a narrower diameter tube, the rate is actually slower due to the overall diameter of all the combined capillaries being far greater than the diameter of the individual aorta. The slow rate of travel through the capillary beds, which reach almost every cell in the body, assists with gas and nutrient exchange and also promotes the diffusion of fluid into the interstitial space.
 ===CHECKS===
-cardiac output can be increased by increasing heart rate, as when exercising
-cardiac output can also be increased by increasing stroke volume, such as if the heart contracts with greater strength
-stroke volume can also be increased by speeding blood circulation through the body so that more blood enters the heart between contractions
+the rate is actually slower due to the overall diameter of all the combined capillaries being far greater than the diameter of the individual aorta
+the slow rate of travel through the capillary beds assists with gas and nutrient exchange
+it also promotes the diffusion of fluid into the interstitial space
 {{< /selfcheck >}}
 
 ## Chapter 41: Osmotic Regulation and Excretion
@@ -981,12 +983,12 @@ which constrict or relax to change the glomerular filtration rate of the kidneys
 
 ### 41.3 Excretion Systems
 
-{{< selfcheck question="How are contractile vacuoles different from ordinary vacuoles in a unicellular organism, and how do they expel wastes from the cell?" >}}
-Contractile vacuoles should not be confused with vacuoles, which store food or water. In unicellular eukaryotic organisms such as the amoeba, cellular wastes and excess water are excreted by exocytosis, when the contractile vacuoles merge with the cell membrane and expel wastes into the environment.
+{{< selfcheck question="What kind of organelle do prokaryotes such as bacteria lack that the amoeba uses for excretion, and how does a contractile vacuole differ from an ordinary vacuole?" >}}
+Prokaryotes such as bacteria do not contain membrane-bound vacuoles. In the amoeba, cellular wastes and excess water are excreted by exocytosis, when the contractile vacuoles merge with the cell membrane and expel wastes into the environment. Contractile vacuoles should not be confused with vacuoles, which store food or water.
 ===CHECKS===
+prokaryotes such as bacteria do not contain membrane-bound vacuoles
+cellular wastes and excess water are excreted by exocytosis, when the contractile vacuoles merge with the cell membrane and expel wastes into the environment
 contractile vacuoles should not be confused with vacuoles, which store food or water
-cellular wastes and excess water are excreted by exocytosis
-the contractile vacuoles merge with the cell membrane and expel wastes into the environment
 {{< /selfcheck >}}
 
 {{< multiplechoice
@@ -1010,9 +1012,8 @@ Na⁺
 ### 41.4 Nitrogenous Wastes
 
 {{< textin
-  question="An agent that prevents cell destruction by reactive oxygen species is called a(n) ________."
-  answer="antioxidant"
-  accept="anti-oxidant"
+  question="The painful condition in which uric acid crystals accumulate in the joints is called ________."
+  answer="gout"
 >}}
 
 {{< multiplechoice
@@ -1036,13 +1037,13 @@ they must detoxify ammonia by converting it into a relatively nontoxic form such
 ### 41.5 Hormonal Control of Osmoregulatory Functions
 
 {{< multiplechoice
-  question="Besides promoting sodium reabsorption, aldosterone concurrently stimulates the renal tubules to do which of the following?"
-  answer="secrete potassium"
+  question="During extreme stress, epinephrine and norepinephrine temporarily halt kidney function. How do they do it?"
+  answer="by constricting the afferent arterioles"
 >}}
-release renin
-convert angiotensin I to angiotensin II
-release anti-diuretic hormone
-secrete potassium
+by constricting the afferent arterioles
+by inserting aquaporins in the collecting ducts
+by blocking sodium reabsorption in the renal tubules
+by converting angiotensin I to angiotensin II
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1054,11 +1055,11 @@ sleep apnea
 hemorrhaging
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How does atrial natriuretic peptide (ANP) lower blood pressure, and how do its actions relate to aldosterone, ADH, and renin?" >}}
-Atrial natriuretic peptide lowers blood pressure by acting as a vasodilator. It also prevents sodium reabsorption by the renal tubules, decreasing water reabsorption and lowering blood pressure. Its actions suppress the actions of aldosterone, ADH, and renin.
+{{< selfcheck question="Besides its effect on blood vessels, how does atrial natriuretic peptide (ANP) act on the kidney to lower blood pressure, and how do its actions relate to aldosterone, ADH, and renin?" >}}
+Atrial natriuretic peptide prevents sodium reabsorption by the renal tubules, decreasing water reabsorption and lowering blood pressure. Its actions suppress the actions of aldosterone, ADH, and renin.
 ===CHECKS===
-atrial natriuretic peptide lowers blood pressure by acting as a vasodilator
-it prevents sodium reabsorption by the renal tubules, decreasing water reabsorption and lowering blood pressure
+it prevents sodium reabsorption by the renal tubules
+decreasing water reabsorption and lowering blood pressure
 its actions suppress the actions of aldosterone, ADH, and renin
 {{< /selfcheck >}}
 
@@ -1178,12 +1179,12 @@ an individual does not need to find a mate to reproduce
 the rapid rates of asexual reproduction may allow for a speedy response to environmental changes
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is hermaphroditism, and in what two ways can hermaphroditic animals reproduce?" >}}
-Hermaphroditism occurs in animals where one individual has both male and female reproductive parts. Hermaphrodites may self-fertilize or may mate with another of their species, fertilizing each other and both producing offspring.
+{{< selfcheck question="In what two ways can hermaphroditic animals reproduce?" >}}
+Hermaphrodites may self-fertilize or may mate with another of their species, fertilizing each other and both producing offspring.
 ===CHECKS===
-hermaphroditism occurs in animals where one individual has both male and female reproductive parts
 hermaphrodites may self-fertilize
-or may mate with another of their species, fertilizing each other and both producing offspring
+or may mate with another of their species
+fertilizing each other and both producing offspring
 {{< /selfcheck >}}
 
 {{< textin
@@ -1259,12 +1260,12 @@ flaring of the hips
   answer="morula"
 >}}
 
-{{< selfcheck question="How can the loss of estrogen at menopause lead to osteoporosis?" >}}
-Estrogen is involved in calcium metabolism and, without it, blood levels of calcium decrease. To replenish the blood, calcium is lost from bone which may decrease the bone density and lead to osteoporosis.
+{{< selfcheck question="Late in the ovarian cycle, what happens to the corpus luteum, its hormones, and the endometrium if no fertilized egg is implanted into the uterus?" >}}
+If no fertilized egg is implanted into the uterus, the corpus luteum degenerates and the levels of estrogen and progesterone decrease. The endometrium begins to degenerate as the progesterone levels drop, initiating the next menstrual cycle.
 ===CHECKS===
-estrogen is involved in calcium metabolism, and without it blood levels of calcium decrease
-to replenish the blood, calcium is lost from bone
-this may decrease the bone density and lead to osteoporosis
+the corpus luteum degenerates
+the levels of estrogen and progesterone decrease
+the endometrium begins to degenerate as the progesterone levels drop, initiating the next menstrual cycle
 {{< /selfcheck >}}
 
 ### 43.5 Human Pregnancy and Birth
@@ -1307,12 +1308,12 @@ the slow block involved changing the membrane structure itself
 >}}
 
 {{< multiplechoice
-  question="Which germ layer gives rise to the muscle cells and connective tissue in the body?"
-  answer="the mesoderm"
+  question="What does the procedure known as prenatal genetic diagnosis (PGD) involve?"
+  answer="screening human embryos as part of the process of in vitro fertilization"
 >}}
-the ectoderm
-the endoderm
-the mesoderm
+selecting donated sperm exclusively from donors with high IQs
+screening human embryos as part of the process of in vitro fertilization
+forcibly sterilizing people judged to be unfit
 {{< /multiplechoice >}}
 
 ### 43.7 Organogenesis and Vertebrate Axis Formation

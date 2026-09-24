@@ -25,7 +25,7 @@ The name Actinobacteria comes from the Greek words for *rays* and *small rod*, b
 
 The genus *Actinomyces* is a much studied representative of Actinobacteria. *Actinomyces* spp. play an important role in soil ecology, and some species are human pathogens. A number of *Actinomyces* spp. inhabit the human mouth and are opportunistic pathogens, causing infectious diseases like periodontitis (inflammation of the gums) and oral abscesses. The species *A. israelii* is an anaerobe notorious for causing endocarditis (inflammation of the inner lining of the heart).
 
-{{< mediafigure src="microbiology/OSC_Microbio_04_04_Actinobac" alt="Three panels. (a) A false-color scanning electron micrograph of thick, branching orange rod-shaped Actinomyces cells. (b) A stained light micrograph of short violet rods, several arranged in V-shaped pairs, with an arrow labeling the palisades. (c) A Pap smear with large pink epithelial cells, each with one dark central nucleus and a granular, stippled border; an arrow points to a small dark speck between the cells." kind="photo" longdesc="Panel (a) shows branched Actinomyces israelii cells. Panel (b) shows Corynebacterium diphtheriae as short rods in scattered V-shaped pairs and a cluster labeled palisades. Panel (c) shows a Gardnerella vaginalis Pap smear: large pink epithelial cells, each with a single dark central nucleus and a granular, stippled edge where small bacteria coat the cell; an arrow points to a small dark speck between the cells." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_04_04_Actinobac" alt="Three panels. (a) A false-color scanning electron micrograph of thick, branching orange rod-shaped Actinomyces cells. (b) A stained light micrograph of short violet rods, several arranged in V-shaped pairs, with a leader line labeling one V-shaped pair palisades. (c) A Pap smear with large pink epithelial cells, each with one dark central nucleus and a granular, stippled border; a small black arrow points to the pale, faintly granular area just off the left edge of one cell." kind="photo" longdesc="Panel (a) shows branched Actinomyces israelii cells. Panel (b) shows Corynebacterium diphtheriae as short, club-ended rods, scattered singly, in V-shaped pairs, and in a loose group near the center; the leader line from the label palisades ends on one V-shaped pair near the upper left. Panel (c) shows a Gardnerella vaginalis Pap smear: large pink epithelial cells, each with a single dark central nucleus and a granular, stippled edge where small bacteria coat the cell; a small black arrow near the upper left points down and to the left at the pale, faintly granular area just off the left edge of one cell." >}}
 (a) *Actinomyces israelii* (false-color scanning electron micrograph [SEM]) has a branched structure. (b) *Corynebacterium diphtheriae* causes the deadly disease diphtheria. Note the distinctive palisades. (c) The gram-variable bacterium *Gardnerella vaginalis* causes bacterial vaginosis. This micrograph shows a Pap smear from a person with vaginosis. (credit a: modification of work by “GrahamColm”/Wikimedia Commons; credit b: modification of work by Centers for Disease Control and Prevention; credit c: modification of work by Mwakigonja AR, Torres LM, Mwakyoma HA, Kaaya EE)
 {{< /mediafigure >}}
 
@@ -136,7 +136,7 @@ Many strains of *S. aureus* have developed resistance to antibiotics. Some antib
 
 Although *Mycoplasma* spp. do not possess a cell wall and, therefore, are not stained by Gram-stain reagents, this genus is still included with the low G+C gram-positive bacteria. The genus *Mycoplasma* includes more than 100 species, which share several unique characteristics. They are very small cells, some with a diameter of about 0.2 µm, which is smaller than some large viruses. They have no cell walls and, therefore, are **pleomorphic**, meaning that they may take on a variety of shapes and can even resemble very small animal cells. Because they lack a characteristic shape, they can be difficult to identify. One species, *M. pneumoniae*, causes the mild form of pneumonia known as “walking pneumonia” or “atypical pneumonia.” This form of pneumonia is typically less severe than forms caused by other bacteria or viruses.
 
-The table below summarizes the characteristics of notable genera low G+C gram-positive bacteria.
+The table below summarizes the characteristics of notable genera of low G+C gram-positive bacteria.
 
 | Bacilli: Low G+C Gram-Positive Bacteria |  | |
 | --- | --- | --- |
@@ -153,7 +153,7 @@ The table below summarizes the characteristics of notable genera low G+C gram-po
 
 **Check Your Understanding**
 
-{{< selfcheck question="Name some ways in which streptococci are classified." hint="Look for the two bases used after the text identifies streptococci as a genus responsible for many diseases." >}}
+{{< selfcheck question="Name some ways in which streptococci are classified." hint="Reread the second paragraph of Lactobacillales." >}}
 Streptococci are usually classified by serotypes called Lancefield groups and by their ability to lyse red blood cells when grown on blood agar. *S. pyogenes* belongs to Lancefield group A and is β-hemolytic.
 ===CHECKS===
 classified by serotypes called Lancefield groups
@@ -218,42 +218,42 @@ For many years, it was unclear what rights government agencies, private corporat
 
 ### Describe the unique features of each category of high G+C and low G+C gram-positive bacteria
 
-{{< multiplechoice question="Which of the following bacterial species is classified as high G+C gram-positive?" answer="*Corynebacterium diphtheriae*" hint="The high G+C discussion names this species as the cause of diphtheria." >}}
+{{< multiplechoice question="Which of the following bacterial species is classified as high G+C gram-positive?" answer="*Corynebacterium diphtheriae*" hint="Reread the Actinobacteria subsection." >}}
 *Corynebacterium diphtheriae*
 *Staphylococcus aureus*
 *Bacillus anthracis*
 *Streptococcus pneumoniae*
 {{< /multiplechoice >}}
 
-{{< textin question="Cutibacterium belongs to ________ G+C gram-positive bacteria." answer="high" hint="Find Cutibacterium in the table headed by its taxonomic class." >}}
+{{< textin question="The ability to change shape is described as being ________." answer="pleomorphic" hint="Reread the Mycoplasmas subsection." >}}
 
-{{< textin question="The ability to change shape is described as being ________." answer="pleomorphic" hint="The Mycoplasmas discussion names this feature after explaining that these bacteria lack cell walls." >}}
+{{< textin question="Cutibacterium belongs to ________ G+C gram-positive bacteria." answer="high" hint="Find Cutibacterium in the table headed by its taxonomic class." >}}
 
 ### Identify similarities and differences between high G+C and low G+C bacterial groups
 
-{{< sortbins question="Sort each genus under the G+C group to which this section assigns it." hint="Use the two comparison tables: the first is Actinobacteria and the second is Bacilli." >}}
+{{< sortbins question="Sort each of these bacteria under the G+C group to which this section assigns it." hint="Use the two comparison tables: the first is Actinobacteria and the second is Bacilli." >}}
 {"bins":["High G+C gram-positive bacteria","Low G+C gram-positive bacteria"],"items":[{"label":"Actinomyces","bin":0},{"label":"Clostridium","bin":1},{"label":"Mycobacterium","bin":0},{"label":"Mycoplasma","bin":1},{"label":"Corynebacterium","bin":0},{"label":"Staphylococcus","bin":1}]}
 {{< /sortbins >}}
 
-{{< multiplechoice question="Which feature distinguishes the high G+C group from the low G+C group?" answer="High G+C bacteria have more than 50% guanine and cytosine nucleotides in their DNA." hint="Compare the numerical DNA-composition threshold in the opening classification paragraph." >}}
+{{< multiplechoice question="Which feature distinguishes the high G+C group from the low G+C group?" answer="High G+C bacteria have more than 50% guanine and cytosine nucleotides in their DNA." hint="Reread the second paragraph of this section's introduction." >}}
 High G+C bacteria have more than 50% guanine and cytosine nucleotides in their DNA.
 High G+C bacteria have no peptidoglycan cell wall.
 Low G+C bacteria cannot contain pathogenic species.
 Low G+C bacteria are all gram-negative.
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="Which feature is shared by the high G+C Actinobacteria and low G+C Bacilli discussed here?" answer="Both groups are gram-positive bacterial groups classified in part by DNA G+C content." hint="Start with the common wording in both group names, then consider the basis used to distinguish the two groups." >}}
-Both groups are gram-positive bacterial groups classified in part by DNA G+C content.
-Both groups are composed only of spherical cells.
-Both groups lack cell walls.
-Both groups are all obligate anaerobes.
+{{< multiplechoice question="Which of these high G+C bacteria is oxidase-positive, as opposed to the morphologically similar *S. aureus*?" answer="*Micrococcus*" hint="Reread the Actinobacteria table." >}}
+*Arthrobacter*
+*Nocardia*
+*Micrococcus*
+*Streptomyces*
 {{< /multiplechoice >}}
 
 ### Give an example of a bacterium of high G+C and low G+C group commonly associated with each category
 
 {{< textin question="Streptococcus is the ________ of bacteria that is responsible for many human diseases." answer="genus" hint="The Lactobacillales discussion introduces Streptococcus at the taxonomic rank asked for here." >}}
 
-{{< textin question="One species of Streptococcus, *S. pyogenes*, is classified as a ________ pathogen because infections it causes characteristically produce pus." answer="pyogenic" hint="The passage defines this adjective from the associated pus production." >}}
+{{< textin question="One species of Streptococcus, *S. pyogenes*, is classified as a ________ pathogen due to the characteristic production of pus in infections it causes." answer="pyogenic" hint="Reread the third paragraph of Lactobacillales." >}}
 
 {{< multiplechoice question="Name and describe two types of *S. aureus* that show multiple antibiotic resistance." answer="Methicillin-resistant *S. aureus* (MRSA) and vancomycin-resistant *S. aureus* (VRSA)" hint="The antibiotic-resistance paragraph gives the two designations and their expanded names." >}}
 Methicillin-resistant *S. aureus* (MRSA) and vancomycin-resistant *S. aureus* (VRSA)
@@ -262,11 +262,11 @@ Acid-fast *M. tuberculosis* and *M. leprae*
 *B. anthracis* and *B. cereus*
 {{< /multiplechoice >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_04_04_ArtConn2_img" alt="A false-color scanning electron micrograph showing many orange spherical bacterial cells grouped in irregular grape-like clusters across a textured blue surface; a 10 µm scale bar appears at lower right." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_04_04_ArtConn2_img" alt="A false-color scanning electron micrograph showing many orange spherical bacterial cells grouped in irregular clusters across a textured blue surface; a 10 µm scale bar appears at lower right." kind="photo" >}}
 Clusters of spherical bacterial cells. (credit: modification of work by Janice Haney Carr/Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
-{{< multiplechoice question="The microscopic growth pattern shown is characteristic of which genus of bacteria?" answer="Staphylococcus" hint="Compare the image's clusters of spherical cells with the genus whose name means “bunches of grapes.”" >}}
+{{< multiplechoice question="The microscopic growth pattern shown is characteristic of which genus of bacteria?" answer="Staphylococcus" hint="Compare the image with the micrographs and descriptions of each genus in this section." >}}
 Streptococcus
 Staphylococcus
 Mycobacterium
@@ -275,4 +275,4 @@ Clostridium
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 4.4: Gram-Positive Bacteria](https://openstax.org/books/microbiology/pages/4-4-gram-positive-bacteria) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the Clinical Focus and Eye on Ethics boxes are rendered as callouts; their unavailable continuation and back-reference targets are rendered as plain text; the two source comparison tables are transcribed as Markdown and represented once by a sort-bins activity; seven source figures, including the Art Connection figure beside its Practice item and the Clinical Focus colony image, are re-encoded as WebP with image-checked `kind="photo"`, rewritten descriptive alt text, and a long description for the three-panel Actinobacteria micrograph; the Check Your Understanding questions are rendered at their source positions as one graded question and two self-checks with model answers and rubrics assembled from this section’s text; the Multiple Choice and three Fill in the Blank questions are adapted into the closing interactive Practice block; the unkeyed Short Answer is graded as a multiple choice because one named paragraph fixes both designations, and the unkeyed figure-based Critical Thinking question is graded from the depicted cell arrangement; two comparison items and one key-term recall item fill the Practice groups with distinct prompts; no source end-matter exercise is omitted; the source’s duplicated “life threatening” after necrotizing fasciitis is reduced to one occurrence, its source’s “is a classified” is corrected to “is classified,” its source’s missing “the” in “characteristics of notable genera low G+C” is corrected to “characteristics of notable genera of low G+C,” its “cocccus-shaped” is corrected to “coccus-shaped,” its caption and paragraph spellings of *Corynebacterium diphtheria* are corrected to *Corynebacterium diphtheriae*, and its multiple-choice distractor *Streptococcus pneumonia* is corrected to *Streptococcus pneumoniae*.</small>
+<small>This section is adapted from [Microbiology, Section 4.4: Gram-Positive Bacteria](https://openstax.org/books/microbiology/pages/4-4-gram-positive-bacteria) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the Clinical Focus and Eye on Ethics boxes are rendered as callouts; their unavailable continuation and back-reference targets are rendered as plain text; the two source comparison tables are transcribed as Markdown and represented once by a sort-bins activity; seven source figures, including the Art Connection figure beside its Practice item and the Clinical Focus colony image, are re-encoded as WebP with image-checked `kind="photo"`, rewritten descriptive alt text, and a long description for the three-panel Actinobacteria micrograph; the Check Your Understanding questions are rendered at their source positions as one graded question and two self-checks with model answers and rubrics assembled from this section’s text; the Multiple Choice and three Fill in the Blank questions are adapted into the closing interactive Practice block; the unkeyed Short Answer is graded as a multiple choice because one named paragraph fixes both designations, and the unkeyed figure-based Critical Thinking question is graded from the depicted cell arrangement; two comparison items (the G+C threshold and the *Micrococcus*-versus-*S. aureus* table contrast) and one key-term recall item fill the Practice groups with distinct prompts; the *Cutibacterium* Fill in the Blank keeps only its first sentence, dropping “One of its species is used in the food industry and another causes acne,” whose food-industry claim this module does not make; no source end-matter exercise is omitted; the source’s duplicated “life threatening” after necrotizing fasciitis is reduced to one occurrence, its source’s “is a classified” is corrected to “is classified,” its source’s missing “the” in “characteristics of notable genera low G+C” is corrected to “characteristics of notable genera of low G+C,” its “cocccus-shaped” is corrected to “coccus-shaped,” its caption and paragraph spellings of *Corynebacterium diphtheria* are corrected to *Corynebacterium diphtheriae*, and its multiple-choice distractor *Streptococcus pneumonia* is corrected to *Streptococcus pneumoniae*. The source Art Connection stem "…characteristic of which genus of bacteria?" prints "genus," the key of the source Fill in the Blank "*Streptococcus* is the ________ of bacteria…" in the same group; the blank is already placed first, so the overlap is kept with both items verbatim.</small>

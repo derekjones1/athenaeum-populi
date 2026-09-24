@@ -21,7 +21,7 @@ weight: 5
 
 If you were to remove all the organelles from a cell, would the plasma membrane and the cytoplasm be the only components left? No. Within the cytoplasm, there would still be ions and organic molecules, plus a network of protein fibers that help maintain the cell's shape, secure some organelles in specific positions, allow cytoplasm and vesicles to move within the cell, and enable cells within multicellular organisms to move. Collectively, scientists call this network of protein fibers the **cytoskeleton**. There are three types of fibers within the cytoskeleton: microfilaments, intermediate filaments, and microtubules (below). Here, we will examine each.
 
-{{< mediafigure src="biology/Figure_04_05_01" kind="diagram" eager="true" alt="Two labeled diagrams of a generalized cell showing where each cytoskeletal fiber type sits: microfilaments line the inside of the plasma membrane, intermediate filaments form a network throughout the cell, and microtubules radiate out from the center." longdesc="Top panel: a cross-section of a generalized cell labeled, from outside in, Cell membrane (the outer boundary), Microfilaments (thin blue zigzag lines just inside the membrane and scattered through the cytoplasm), Intermediate filaments (dark red strands radiating outward from around the nucleus), Microtubules (lighter purple strands also radiating from near the nucleus), Nucleus (the central circle), and Cytoplasm (the space between the nucleus and the membrane). Bottom panel: a single cell outlined by a coiled green ring labeled Microfilaments, containing two brown, star-shaped clusters of radiating fibers — one nearer the upper left, one nearer the lower right — labeled Microtubules." >}}
+{{< mediafigure src="biology/Figure_04_05_01" kind="diagram" eager="true" alt="Two labeled diagrams of a generalized cell showing where each cytoskeletal fiber type sits: microfilaments line the inside of the plasma membrane, intermediate filaments form a network throughout the cell, and microtubules radiate out from the center." longdesc="Top panel: a cross-section of a generalized cell, with labels at the right, top to bottom: Cell membrane (the pink outer boundary); Microfilaments and Intermediate filaments, whose pointers end close together near the upper right edge, where two fiber types form rings — thin blue branching lines just inside the membrane and wavy purple strands just inside those (the Microfilaments pointer crosses the blue lines and ends on a purple strand, and the Intermediate filaments pointer ends on a blue line); Microtubules (dark red strands radiating outward from a single point just above the nucleus); Nucleus (a circle left of center); and Cytoplasm (the space between the nucleus and the membrane). Bottom panel: a single cell outlined by a coiled green ring labeled Microfilaments, containing two brown, star-shaped clusters of radiating fibers — one nearer the upper left, one nearer the lower right — labeled Microtubules." >}}
 Microfilaments thicken the cortex around the cell's inner edge. Like rubber bands, they resist tension. There are microtubules in the cell's interior where they maintain their shape by resisting compressive forces. There are intermediate filaments throughout the cell that hold organelles in place.
 {{< /mediafigure >}}
 
@@ -29,7 +29,7 @@ Microfilaments thicken the cortex around the cell's inner edge. Like rubber band
 
 Of the three types of protein fibers in the cytoskeleton, **microfilaments** are the narrowest. They function in cellular movement, have a diameter of about 7 nm, and are comprised of two globular protein intertwined strands, which we call actin (below). For this reason, we also call microfilaments actin filaments.
 
-{{< mediafigure src="biology/Figure_04_05_02" kind="diagram" alt="An illustration of two actin filaments wound together, each a chain of ball-shaped actin subunits, with one subunit and a stretch of the double strand labeled." longdesc="A vertical chain of two intertwined strands of ball-shaped actin subunits, one strand slightly offset from the other in a twisted double-strand pattern. A leader line labeled 'Actin subunit' points to a single ball partway down the chain. A bracket labeled 'Actin filaments' spans a short stretch of the twisted double strand near the middle of the chain." >}}
+{{< mediafigure src="biology/Figure_04_05_02" kind="diagram" alt="An illustration of two actin filaments wound together, each a chain of ball-shaped actin subunits, with one subunit and a stretch of the double strand labeled." longdesc="A vertical chain of two intertwined strands of ball-shaped actin subunits, one strand slightly offset from the other in a twisted double-strand pattern. A leader line labeled 'Actin subunit' points to a single ball partway down the chain. A bracket labeled 'Actin filaments' sits in the lower half of the chain, its upper arm ending on a ball of the right-hand strand and its lower arm on a ball of the left-hand strand, so that it points to both strands." >}}
 Two intertwined actin strands comprise microfilaments.
 {{< /mediafigure >}}
 
@@ -117,32 +117,32 @@ The cytoskeleton has three different protein element types. From narrowest to wi
 {{< textin
   question="A network of protein fibers that maintains a cell's shape, secures organelles in specific positions, and allows cytoplasm, vesicles, and the whole cell to move is called the ________."
   answer="cytoskeleton"
-  hint="It is not a single organelle but a network of protein fibers running throughout the cytoplasm."
+  hint="Reread the section's opening paragraph."
+>}}
+
+{{< textin
+  question="Biologists often associate microfilaments with ________."
+  answer="myosin"
+  hint="Reread the second paragraph of Microfilaments."
 >}}
 
 {{< multiplechoice
   question="Which of the following have the ability to disassemble and reform quickly?"
   answer="microfilaments and microtubules"
-  hint="Both of these fiber types can quickly disassemble and reform, which is what lets a cell rapidly change shape."
+  hint="Reread the section's subsection on each fiber type."
 >}}
 microfilaments and intermediate filaments
 microfilaments and microtubules
 intermediate filaments and microtubules
 only intermediate filaments
 {{< /multiplechoice >}}
-
-{{< textin
-  question="From narrowest to widest, they are the microfilaments (actin filaments), intermediate filaments, and ________."
-  answer="microtubules"
-  hint="The section's summary lists the three cytoskeletal fiber types in size order, ending with the widest."
->}}
 
 ### Compare the roles of microfilaments, intermediate filaments, and microtubules
 
 {{< multiplechoice
   question="Which of the following do not play a role in intracellular movement?"
   answer="only intermediate filaments"
-  hint="Which of the three fiber types is described as purely structural, with no role in cell movement?"
+  hint="Check what each fiber-type subsection says about movement."
 >}}
 microfilaments and intermediate filaments
 microfilaments and microtubules
@@ -150,7 +150,7 @@ intermediate filaments and microtubules
 only intermediate filaments
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe how microfilaments and microtubules are involved in the phagocytosis and destruction of a pathogen by a macrophage." hint="Trace the pathogen's route: which fiber type reshapes the membrane around it, and which fiber type moves the resulting vesicle to a lysosome?" >}}
+{{< selfcheck question="Describe how microfilaments and microtubules are involved in the phagocytosis and destruction of a pathogen by a macrophage." hint="Reread the Microfilaments paragraph on white blood cells, then the Microtubules subsection's list of functions." >}}
 A macrophage engulfs a pathogen by rearranging its actin microfilaments to bend the plasma membrane around the pathogen. Once the pathogen is sealed in an endosome inside the macrophage, the vesicle is walked along microtubules until it combines with a lysosome to digest the pathogen.
 ===CHECKS===
 rearranging its actin microfilaments to bend the plasma membrane around the pathogen
@@ -160,22 +160,22 @@ combines with a lysosome to digest the pathogen
 {{< /selfcheck >}}
 
 {{< textin
-  question="The narrowest of the three cytoskeletal fiber types, composed of two intertwined strands of the protein actin, is called a(n) ________."
-  answer="microfilament"
-  accept="actin filament"
-  hint="Its diameter is about 7 nm — the narrowest of the three — and it drives muscle contraction and the crawling of cells."
+  question="A cytoskeletal component made of several intertwined fibrous protein strands that bears tension, supports cell-cell junctions, and anchors cells to extracellular structures is called a(n) ________."
+  answer="intermediate filament"
+  hint="Reread the second fiber-type subsection."
 >}}
 
 {{< textin
-  question="A cytoskeletal component made of several intertwined fibrous protein strands that bears tension, supports cell-cell junctions, and anchors cells to extracellular structures is called a(n) ________."
-  answer="intermediate filament"
-  hint="Its diameter, 8 to 10 nm, falls between the other two fiber types, which is how it got its name."
+  question="The narrowest of the three cytoskeletal fiber types, composed of two intertwined strands of the protein actin, is called a(n) ________."
+  answer="microfilament"
+  accept="actin filament"
+  hint="Reread the first fiber-type subsection."
 >}}
 
 {{< textin
   question="The widest of the three cytoskeletal fiber types, which resists compression, serves as a track for organelle movement, and pulls replicated chromosomes apart during cell division, is called a(n) ________."
   answer="microtubule"
-  hint="At about 25 nm across, it is the widest of the three, and it forms the core of centrioles, cilia, and flagella."
+  hint="Reread the third fiber-type subsection."
 >}}
 
 ### Compare and contrast cilia and flagella
@@ -183,7 +183,7 @@ combines with a lysosome to digest the pathogen
 {{< multiplechoice
   question="In humans, _____ are used to move a cell within its environment while _____ are used to move the environment relative to the cell."
   answer="flagella; cilia"
-  hint="One of these structures moves the whole cell; the other moves material past a stationary cell."
+  hint="Reread the subsection at the end of the Microtubules discussion."
 >}}
 cilia, pseudopodia
 flagella; cilia
@@ -191,7 +191,7 @@ microtubules; flagella
 microfilaments; microtubules
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the similarities and differences between the structures of centrioles and flagella?" hint="Both are built from microtubules, but only one has two rings of the same structure arranged at right angles to one another." >}}
+{{< selfcheck question="What are the similarities and differences between the structures of centrioles and flagella?" hint="Compare the previous section's centrosome description with this section's flagella micrograph and its caption." >}}
 Centrioles and flagella are alike in that they are made up of microtubules. In centrioles, two rings of nine microtubule "triplets" are arranged at right angles to one another. This arrangement does not occur in flagella.
 ===CHECKS===
 centrioles and flagella are alike in that they are made up of microtubules
@@ -199,7 +199,21 @@ two rings of nine microtubule "triplets" are arranged at right angles to one ano
 this arrangement does not occur in flagella
 {{< /selfcheck >}}
 
-{{< selfcheck question="How do cilia and flagella differ?" hint="Compare their length, and how many of each a single cell typically has." >}}
+{{< textin
+  question="A short, hair-like structure that extends from the plasma membrane in large numbers and moves either the entire cell or substances along the cell's outer surface is called a(n) ________."
+  answer="cilium"
+  accept="cilia"
+  hint="Reread the subsection at the end of the Microtubules discussion."
+>}}
+
+{{< textin
+  question="A long, hair-like structure that extends from the plasma membrane and moves the entire cell is called a(n) ________."
+  answer="flagellum"
+  accept="flagella"
+  hint="Reread the first paragraph of the subsection at the end of the Microtubules discussion."
+>}}
+
+{{< selfcheck question="How do cilia and flagella differ?" hint="Reread the first paragraph of the Flagella and Cilia subsection." >}}
 Cilia and flagella are alike in that they are made up of microtubules. Cilia are short, hair-like structures that exist in large numbers and usually cover the entire surface of the plasma membrane. Flagella, in contrast, are long, hair-like structures; when flagella are present, a cell has just one or two.
 ===CHECKS===
 cilia and flagella are alike in that they are made up of microtubules
@@ -208,23 +222,9 @@ flagella, in contrast, are long, hair-like structures
 when flagella are present, a cell has just one or two
 {{< /selfcheck >}}
 
-{{< textin
-  question="A long, hair-like structure that extends from the plasma membrane and moves the entire cell is called a(n) ________."
-  answer="flagellum"
-  accept="flagella"
-  hint="A cell that has one of these — such as a sperm cell — has only one or a few."
->}}
-
-{{< textin
-  question="A short, hair-like structure that extends from the plasma membrane in large numbers and moves either the entire cell or substances along the cell's outer surface is called a(n) ________."
-  answer="cilium"
-  accept="cilia"
-  hint="A cell covered in many of these short structures uses them to move itself or to move substances past its surface."
->}}
-
 ### Summarize the differences among the components of prokaryotic cells, animal cells, and plant cells
 
-{{< selfcheck question="Compare and contrast the boundaries that plant, animal, and bacteria cells use to separate themselves from their surrounding environment." hint="Start with the plasma membrane, which every cell type has, then ask which two of the three types add a cell wall outside it — and of what material." >}}
+{{< selfcheck question="Compare and contrast the boundaries that plant, animal, and bacteria cells use to separate themselves from their surrounding environment." hint="Use the table above together with the previous sections' descriptions of each cell type." >}}
 All three cell types have a plasma membrane that borders the cytoplasm on its interior side. In animal cells, the exterior side of the plasma membrane is in contact with the extracellular environment. However, in plant and bacteria cells, a cell wall surrounds the outside of the plasma membrane. In plants, the cell wall is made of cellulose, while in bacteria the cell wall is made of peptidoglycan. Gram-negative bacteria also have an additional outer membrane containing lipopolysaccharides that surrounds their cell wall. *(Source note: the source solution calls this layer a "capsule made of lipopolysaccharides"; this book's Structure of Prokaryotes section describes it as an outer envelope containing lipopolysaccharides and treats the capsule as a separate, optional structure.)*
 ===CHECKS===
 all three cell types have a plasma membrane that borders the cytoplasm on its interior side
@@ -258,4 +258,4 @@ Cytoskeleton
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 4.5: The Cytoskeleton](https://openstax.org/books/biology-2e/pages/4-5-the-cytoskeleton) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with all five re-kinded from the manifest's file-extension guess of "photo" — every source file is a JPEG — to their actual kind after inspection: four are diagrams (the two labeled cell schematics, the actin-subunit illustration, the intermediate-filament bundle illustration, and the paired microtubule molecular-model/schematic figure, whose teaching point is its labeled schematic panel) and only the flagella cross-section is a true photograph (a transmission electron micrograph); a longer extended description added for the three figures whose full labeling is not carried by their captions (the two-panel cell diagram, the labeled actin-subunit illustration, and the paired microtubule model/schematic); the flagella micrograph's alt corrected from the source's singular "a cross section" to the two cross sections the image and its own caption both show; inline references to the figures and the table changed from the source's print numbers ("Figure 4.22," "Table 4.1") to descriptive phrases ("below," "the table below") since figures and tables are not numbered here; the one Link to Learning feature box rendered as a callout with its bold name and its embedded video's real URL kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); six key-term recall items (cytoskeleton, microfilament, intermediate filament, microtubule, flagellum, cilium) added from the glossary so every objective group has at least one; one multiple-choice item written directly from the section's own comparison table (asking which structure is present in prokaryotic and plant cells but absent in animal cells) because neither the Review Questions nor the Critical Thinking Questions test the fourth objective with an auto-gradable item; a second table-derived multiple choice added under the same objective to reach the raised per-objective floor (asking which structure is present in animal and plant cells but absent in prokaryotic cells), disclosed here as locally written since it draws only on the page's own table with no new claim; a comparison-table sortbins was evaluated for this section's prokaryote/animal/plant table and rejected — the table's overlapping "Yes/Yes/No" and "Some" values leave only three cells (centrosome, cell wall, chloroplasts) that distinguish a single category without ambiguity, short of the format's four-item minimum; a summary-derived cloze item added under the first objective ("microtubules," completing the fiber-size ordering the summary states); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One source solution is corrected with a visible Source note: the lipopolysaccharide layer of gram-negative bacteria is their outer membrane, not a capsule, as this book's own prokaryote-structure section describes it (erratum 388).</small>
+<small>This section is adapted from [Biology 2e, Section 4.5: The Cytoskeleton](https://openstax.org/books/biology-2e/pages/4-5-the-cytoskeleton) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with all five re-kinded from the manifest's file-extension guess of "photo" — every source file is a JPEG — to their actual kind after inspection: four are diagrams (the two labeled cell schematics, the actin-subunit illustration, the intermediate-filament bundle illustration, and the paired microtubule molecular-model/schematic figure, whose teaching point is its labeled schematic panel) and only the flagella cross-section is a true photograph (a transmission electron micrograph); a longer extended description added for the three figures whose full labeling is not carried by their captions (the two-panel cell diagram, the labeled actin-subunit illustration, and the paired microtubule model/schematic); the flagella micrograph's alt corrected from the source's singular "a cross section" to the two cross sections the image and its own caption both show; inline references to the figures and the table changed from the source's print numbers ("Figure 4.22," "Table 4.1") to descriptive phrases ("below," "the table below") since figures and tables are not numbered here; the one Link to Learning feature box rendered as a callout with its bold name and its embedded video's real URL kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); six key-term recall items (cytoskeleton, microfilament, intermediate filament, microtubule, flagellum, cilium) added from the glossary so every objective group has at least one; one multiple-choice item written directly from the section's own comparison table (asking which structure is present in prokaryotic and plant cells but absent in animal cells) because neither the Review Questions nor the Critical Thinking Questions test the fourth objective with an auto-gradable item; a second table-derived multiple choice added under the same objective to reach the raised per-objective floor (asking which structure is present in animal and plant cells but absent in prokaryotic cells), disclosed here as locally written since it draws only on the page's own table with no new claim; a comparison-table sortbins was evaluated for this section's prokaryote/animal/plant table and rejected — the table's overlapping "Yes/Yes/No" and "Some" values leave only three cells (centrosome, cell wall, chloroplasts) that distinguish a single category without ambiguity, short of the format's four-item minimum; a summary-derived cloze item added under the first objective ("myosin", from the summary's sentence associating microfilaments with myosin); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One source solution is corrected with a visible Source note: the lipopolysaccharide layer of gram-negative bacteria is their outer membrane, not a capsule, as this book's own prokaryote-structure section describes it (erratum 388).</small>

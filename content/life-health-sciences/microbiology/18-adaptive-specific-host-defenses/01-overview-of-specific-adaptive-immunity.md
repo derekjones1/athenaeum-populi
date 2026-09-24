@@ -125,7 +125,7 @@ The two 'arms' of the Y-shaped antibody molecule are known as the **Fab region**
 
 The constant region of the antibody molecule includes the trunk of the Y and lower portion of each arm of the Y. The trunk of the Y is also called the **Fc region**, for "fragment of crystallization," and is the site of complement factor binding and binding to phagocytic cells during antibody-mediated opsonization.
 
-{{< mediafigure src="microbiology/OSC_Microbio_18_04_ABstruct" alt="(a) A drawn Y-shaped antibody diagram: the two inner heavy chains form the stem and upper arms, the two shorter light chains sit against the outer edge of each arm's tip, and disulfide bonds link the chains at the stem and each arm. The arm tips, made of both heavy and light chain, are the variable region and antigen-binding site; the lower arms and stem, the constant region, split into the Fc region (stem only) and the two Fab regions (arms). (b) A ribbon-model rendering of the same four-chain antibody structure in purple and green." longdesc="Panel (a): the antibody is drawn as a Y. The two long inner strands forming the stem and inner arms are the heavy chains (dark purple); the two shorter strands sitting against the outer edge of the upper arms are the light chains (green). Short black lines mark disulfide bonds at the base of the arms and at the stem. The very tips of the Y — the ends of both heavy and light chains — are bracketed as the variable region, with an arrow marking the antigen-binding site at each tip. Everything below the variable region is bracketed as the constant region; within it, the stem alone (heavy chains only) is labeled the Fc region, and each full arm (heavy plus light chain) is labeled a Fab region. Panel (b): a ribbon-diagram rendering of the same four-chain molecule, colored purple for the heavy chains and green for the light chains, with the two arms open at the top and the stem trailing below." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_18_04_ABstruct" alt="(a) A drawn Y-shaped antibody diagram: the two inner heavy chains form the stem and upper arms, the two shorter light chains sit against the outer edge of each arm's tip, and disulfide bonds link the chains at the stem and each arm. The arm tips, made of both heavy and light chain, are the variable region and antigen-binding site; the lower arms and stem, the constant region, split into the Fc region (stem only) and the two Fab regions (arms). (b) A ribbon-model rendering of the same four-chain antibody structure in purple and green." longdesc="Panel (a): the antibody is drawn as a Y. Each arm is two parallel strands: an inner strand, pale lavender at its very tip and dark purple below, and an outer strand, pale green at its tip and darker green below. The two inner strands continue down into the stem's two dark-purple bars; together, both tips and both bars make up the two heavy chains. The two outer, green-toned strands sitting against the outer edge of each arm are the two light chains. Two short bars join the two heavy chains at the hinge where the arms meet the stem, and a short link joins each light chain to its heavy chain; the label 'disulfide bonds' has leader lines to both hinge bars and to the right arm's link. The very tips of the Y — the ends of both heavy and light chains — are bracketed as the variable region, with an arrow marking the antigen-binding site at each tip. Everything below the variable region is bracketed as the constant region; within it, the stem alone (heavy chains only) is labeled the Fc region, and each full arm (heavy plus light chain) is labeled a Fab region. Panel (b): a ribbon-diagram rendering of the same four-chain molecule, colored purple for the heavy chains and green for the light chains, with the two arms open at the top and the stem trailing below." kind="diagram" >}}
 (a) The typical four-chain structure of a generic antibody monomer. (b) The corresponding three-dimensional structure of the antibody IgG. (credit b: modification of work by Tim Vickers)
 {{< /mediafigure >}}
 
@@ -298,15 +298,15 @@ in ADCC, an effector cell's Fc receptors bind the antibody's Fc region and the e
 ### Define memory, primary response, secondary response, and specificity
 
 {{< textin
-  question="There are two critically important aspects of adaptive immunity. The first is specificity, while the second is ________."
-  answer="memory"
-  hint="Think about what lets the immune system respond faster the second time it meets the same pathogen."
+  question="The adaptive immune system's ability to target a particular pathogen or toxin, rather than pathogens in general, is called ________."
+  answer="specificity"
+  hint="See the first two sentences of this section."
 >}}
 
 {{< textin
-  question="The adaptive immune system's ability to target a particular pathogen or toxin, rather than pathogens in general, is called ________."
-  answer="specificity"
-  hint="This is the OTHER defining characteristic of adaptive immunity."
+  question="There are two critically important aspects of adaptive immunity. The first is specificity, while the second is ________."
+  answer="memory"
+  hint="See the first sentence of this section, after the Clinical Focus box."
 >}}
 
 {{< textin
@@ -319,6 +319,7 @@ in ADCC, an effector cell's Fc receptors bind the antibody's Fc region and the e
 {{< textin
   question="The adaptive immune response produced in response to a specific antigen to which the body has previously been exposed is called the ________."
   answer="secondary response"
+  accept="secondary immune response"
   hint="This is the response that follows a REPEAT exposure, not the first one."
 >}}
 
@@ -327,7 +328,7 @@ in ADCC, an effector cell's Fc receptors bind the antibody's Fc region and the e
 {{< multiplechoice
   question="Antibodies are produced by ________."
   answer="plasma cells"
-  hint="Think about the differentiated B cell that specializes in antibody secretion."
+  hint="This section says B cells are responsible for the production of antibodies; none of the other three options is given that role here."
 >}}
 plasma cells
 T cells
@@ -338,7 +339,7 @@ Macrophages
 {{< multiplechoice
   question="Cellular adaptive immunity is carried out by ________."
   answer="T cells"
-  hint="This cell type orchestrates both innate and adaptive responses and destroys cells infected with intracellular pathogens."
+  hint="See the paragraph that contrasts where B cells and T cells mature and what each does."
 >}}
 B cells
 T cells
@@ -364,7 +365,7 @@ cellular immunity involves T cells and targets cells infected with intracellular
 {{< multiplechoice
   question="A single antigen molecule may be composed of many individual ________."
   answer="epitopes"
-  hint="These are the smaller exposed regions on an antigen's surface that antibodies and T cells actually bind."
+  hint="See the paragraph just before the one on an antigen's size."
 >}}
 T-cell receptors
 B-cell receptors
@@ -375,7 +376,7 @@ epitopes
 {{< multiplechoice
   question="Which class of molecules is the most antigenic?"
   answer="proteins"
-  hint="This molecular class has the most complex three-dimensional structure of the options listed."
+  hint="See the paragraph on the molecular classes that antigens may belong to."
 >}}
 polysaccharides
 lipids
@@ -396,19 +397,19 @@ a hapten must attach to a larger carrier molecule to become antigenic
 {{< textin
   question="The heavy chains of an antibody molecule contain ________ region segments, which help to determine its class or isotype."
   answer="constant"
-  hint="This region also gives its name to the Fc portion of the antibody."
+  hint="See the first sentence of the Antibody Classes subsection."
 >}}
 
 {{< textin
   question="The variable regions of the heavy and light chains form the ________ sites of an antibody."
   answer="antigen-binding"
-  hint="This is what the variable region — the tip of each arm — is specialized to do."
+  hint="See the second paragraph of the Antibodies section."
 >}}
 
 {{< multiplechoice
   question="This class of antibody is found in very large amounts in mucus secretions."
   answer="IgA"
-  hint="This class is dimeric and defends the mucous membranes."
+  hint="Compare the five paragraphs that describe each antibody class in the Antibody Classes subsection, or the table after them."
 >}}
 IgA
 IgD
@@ -420,7 +421,7 @@ IgM
 {{< multiplechoice
   question="This class of antibody is not secreted by B cells but is expressed on the surface of naïve B cells."
   answer="IgD"
-  hint="This class stays on the B-cell surface and is barely found free in serum."
+  hint="Compare the five paragraphs that describe each antibody class in the Antibody Classes subsection, or the table after them."
 >}}
 IgA
 IgD
@@ -432,7 +433,7 @@ IgM
 {{< multiplechoice
   question="This class of antibody is involved in the defense against parasitic infections and involved in allergic responses."
   answer="IgE"
-  hint="This is the least abundant serum class, and its Fc region binds mast cells and basophils."
+  hint="Compare the five paragraphs that describe each antibody class in the Antibody Classes subsection, or the table after them."
 >}}
 IgA
 IgD
@@ -444,7 +445,7 @@ IgM
 {{< multiplechoice
   question="This class of antibody is the only one that can cross the placenta."
   answer="IgG"
-  hint="This is the most abundant class in blood and penetrates tissue spaces efficiently."
+  hint="Compare the five paragraphs that describe each antibody class in the Antibody Classes subsection, or the table after them."
 >}}
 IgA
 IgD
@@ -456,7 +457,7 @@ IgM
 {{< multiplechoice
   question="This class of antibody is the first to appear after activation of B cells."
   answer="IgM"
-  hint="This class assembles into a pentamer once secreted."
+  hint="Compare the five paragraphs that describe each antibody class in the Antibody Classes subsection, or the table after them."
 >}}
 IgA
 IgD
@@ -476,4 +477,4 @@ the effector cell secretes cytotoxins such as perforin and granzymes that kill t
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 18.1: Overview of Specific Adaptive Immunity](https://openstax.org/books/microbiology/pages/18-1-overview-of-specific-adaptive-immunity) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all nine source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on all nine, overriding the media manifest's JPEG-based photo guess, since every one is a drawn schematic (including the ribbon-model panel of the antibody-structure figure and the illustrated table-of-values figure); the primary/secondary-response graph carries `eager="true"` as the page's first figure; a `longdesc` was added for the epitope-binding and antibody-structure figures, walking each in reading order, because their multi-part narratives are not fully carried by the caption; the antibody-classes table image (`OSC_Microbio_18_04_ABClassTBL`), which the CNXML prints as a bare `<figure>` with no `<table summary=…>` element and no caption, is transcribed as a Markdown table from the image (checked against the PDF page) with an author-written bold title taken from the image's own heading, and the vendored figure is kept after it with an alt describing the column layout rather than repeating the values already in the table; a one-word source defect in that image is corrected in place with no inline note — "cyotoxicity" to "cytotoxicity" in the IgG row; a second one-word source defect, the Glossary appendix's "IgD... membrane-**body** antibody monomer" (the appendix's own "B-cell receptors (BCRs)" entry correctly reads "membrane-**bound**" for the same fact two paragraphs later), is corrected to "membrane-bound" in the Key terms bullet with no inline note; a third source defect, the CNXML's unclosed parenthesis after the *Diseases of the Immune System* cross-reference ("...allergic reactions (see Diseases of the Immune System." with no closing parenthesis, reproduced identically in the printed PDF), is closed on the page ("...allergic reactions (see *Diseases of the Immune System*).") with no inline note; the Fill in the Blank items are rendered as `textin`, keeping the source's exact wording and case; the five-row Matching exercise is rendered as five per-row `multiplechoice` items, each row's printed description as the stem and all five Ig classes as options in table order, per this run's matching rule — it is not additionally transcribed as a body Markdown table, since the exercise table is end matter, not a body comparison table; all three of the source's unkeyed Short Answer questions stay `selfcheck`, with model answers and rubrics assembled from this section's own text, since none is fixed by a single module sentence; of the module's thirteen body Check Your Understanding bullets, three are graded from a single module sentence or a compare-and-contrast pair of sentences — "What is the difference between an antigen and an epitope?" (`multiplechoice`), "Describe the different functions of the Fab region and the Fc region" (`sortbins`, two bins), and "Describe the difference in structure between IgM and IgG" (`sortbins`, two bins) — and the remaining ten stay body self-checks; five of those ten are deliberately left as self-checks, rather than converted, because a graded item elsewhere on the page already grades the identical fact and converting them would re-ask it: "List the two defining characteristics of adaptive immunity" and "What class of antibody is involved in protection against parasites?" and "Which class of antibody crosses the placenta, providing protection to the fetus?" and "Where is IgA normally found?" each duplicate a fact a Practice item already grades (the objective-1 `textin` items for memory, from the source's own Fill in the Blank exercise, and for specificity, a filler; the Matching-derived multiple choice for IgE and parasitic/allergic disease; the Matching-derived multiple choice for IgG and the placenta; the Matching-derived multiple choice for IgA and mucus secretions, respectively), and "What part of an antibody molecule determines its class?" duplicates the source's own Fill in the Blank item (keyed "constant"); the source's two cross-chapter figure references (to the hematopoietic-stem-cell figure in *Cellular Defenses* and to the complement-pathway figure in *Chemical Defenses*) and the plain-text references to *Pathogen Recognition and Phagocytosis* and *Diseases of the Immune System* are left as plain italic text, since none of those modules is authored in this run; three filler `textin` items are added under the first objective, recalling this section's Key terms for specificity, primary response, and secondary response, alongside the source's own Fill in the Blank item keyed to memory, so that all four of the objective's named concepts are graded; disclosed here and in the ledger; key terms compiled from the module's 30 `<term>` elements and the book's Glossary appendix, giving 28 distinct bullets: two name-and-common-form pairs each merge into one bullet ("B lymphocytes (B cells)" and "T lymphocytes (T cells)"), following the appendix's own "; B cell" / "; T cell" notation, and "immunogens" reuses the same appendix entry as "antigens" (headworded "antigen (also, immunogen)") rather than being sentence-derived. No source exercise item is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 18.1: Overview of Specific Adaptive Immunity](https://openstax.org/books/microbiology/pages/18-1-overview-of-specific-adaptive-immunity) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all nine source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on all nine, overriding the media manifest's JPEG-based photo guess, since every one is a drawn schematic (including the ribbon-model panel of the antibody-structure figure and the illustrated table-of-values figure); the primary/secondary-response graph carries `eager="true"` as the page's first figure; a `longdesc` was added for the epitope-binding and antibody-structure figures, walking each in reading order, because their multi-part narratives are not fully carried by the caption; the antibody-classes table image (`OSC_Microbio_18_04_ABClassTBL`), which the CNXML prints as a bare `<figure>` with no `<table summary=…>` element and no caption, is transcribed as a Markdown table from the image (checked against the PDF page) with an author-written bold title taken from the image's own heading, and the vendored figure is kept after it with an alt describing the column layout rather than repeating the values already in the table; a one-word source defect in that image is corrected in place with no inline note — "cyotoxicity" to "cytotoxicity" in the IgG row; a second one-word source defect, the Glossary appendix's "IgD... membrane-**body** antibody monomer" (the appendix's own "B-cell receptors (BCRs)" entry correctly reads "membrane-**bound**" for the same fact two paragraphs later), is corrected to "membrane-bound" in the Key terms bullet with no inline note; a third source defect, the CNXML's unclosed parenthesis after the *Diseases of the Immune System* cross-reference ("...allergic reactions (see Diseases of the Immune System." with no closing parenthesis, reproduced identically in the printed PDF), is closed on the page ("...allergic reactions (see *Diseases of the Immune System*).") with no inline note; the Fill in the Blank items are rendered as `textin`, keeping the source's exact wording and case; the five-row Matching exercise is rendered as five per-row `multiplechoice` items, each row's printed description as the stem and all five Ig classes as options in table order, per this run's matching rule — it is not additionally transcribed as a body Markdown table, since the exercise table is end matter, not a body comparison table; all three of the source's unkeyed Short Answer questions stay `selfcheck`, with model answers and rubrics assembled from this section's own text, since none is fixed by a single module sentence; of the module's thirteen body Check Your Understanding bullets, three are graded from a single module sentence or a compare-and-contrast pair of sentences — "What is the difference between an antigen and an epitope?" (`multiplechoice`), "Describe the different functions of the Fab region and the Fc region" (`sortbins`, two bins), and "Describe the difference in structure between IgM and IgG" (`sortbins`, two bins) — and the remaining ten stay body self-checks; five of those ten are deliberately left as self-checks, rather than converted, because a graded item elsewhere on the page already grades the identical fact and converting them would re-ask it: "List the two defining characteristics of adaptive immunity" and "What class of antibody is involved in protection against parasites?" and "Which class of antibody crosses the placenta, providing protection to the fetus?" and "Where is IgA normally found?" each duplicate a fact a Practice item already grades (the objective-1 `textin` items for memory, from the source's own Fill in the Blank exercise, and for specificity, a filler; the Matching-derived multiple choice for IgE and parasitic/allergic disease; the Matching-derived multiple choice for IgG and the placenta; the Matching-derived multiple choice for IgA and mucus secretions, respectively), and "What part of an antibody molecule determines its class?" duplicates the source's own Fill in the Blank item (keyed "constant"); the source's two cross-chapter figure references (to the hematopoietic-stem-cell figure in *Cellular Defenses* and to the complement-pathway figure in *Chemical Defenses*) and the plain-text references to *Pathogen Recognition and Phagocytosis* and *Diseases of the Immune System* are left as plain italic text, since none of those modules is authored in this run; three filler `textin` items are added under the first objective, recalling this section's Key terms for specificity, primary response, and secondary response, alongside the source's own Fill in the Blank item keyed to memory, so that all four of the objective's named concepts are graded; the specificity filler opens that group, ahead of the memory Fill in the Blank, because the Fill in the Blank's own stem prints "specificity"; disclosed here and in the ledger; key terms compiled from the module's 30 `<term>` elements and the book's Glossary appendix, giving 28 distinct bullets: two name-and-common-form pairs each merge into one bullet ("B lymphocytes (B cells)" and "T lymphocytes (T cells)"), following the appendix's own "; B cell" / "; T cell" notation, and "immunogens" reuses the same appendix entry as "antigens" (headworded "antigen (also, immunogen)") rather than being sentence-derived. No source exercise item is omitted.</small>

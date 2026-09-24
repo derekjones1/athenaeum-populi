@@ -65,10 +65,16 @@ The laws of thermodynamics are a series of laws that describe the properties and
 
 ### Discuss the concept of entropy
 
+{{< textin
+  question="A measure of randomness or disorder within a system is called ________."
+  answer="entropy"
+  hint="Reread the second paragraph of the section's second main heading."
+>}}
+
 {{< multiplechoice
   question="In each of the three systems, determine the state of entropy (low or high) when comparing the first and second: i. the instant that a perfume bottle is sprayed compared with 30 seconds later, ii. an old 1950s car compared with a brand new car, and iii. a living cell compared with a dead cell."
   answer="i. low, ii. high, iii. low"
-  hint="For each pair, ask whether the first item is more ordered (lower entropy) or more disordered (higher entropy) than the second."
+  hint="Reread the second paragraph of the section's second main heading."
 >}}
 i. low, ii. high, iii. low
 i. low, ii. high, iii. high
@@ -76,7 +82,7 @@ i. high, ii. low, iii. high
 i. high, ii. low, iii. low
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Imagine an elaborate ant farm with tunnels and passageways through the sand where ants live in a large community. Now imagine that an earthquake shook the ground and demolished the ant farm. In which of these two scenarios, before or after the earthquake, was the ant farm system in a state of higher or lower entropy?" hint="Compare how ordered the tunnel structure is in each scenario — order corresponds to low entropy, and disorder corresponds to high entropy." >}}
+{{< selfcheck question="Imagine an elaborate ant farm with tunnels and passageways through the sand where ants live in a large community. Now imagine that an earthquake shook the ground and demolished the ant farm. In which of these two scenarios, before or after the earthquake, was the ant farm system in a state of higher or lower entropy?" hint="Reread the bedroom example under the section's second main heading." >}}
 The ant farm had lower entropy before the earthquake because it was a highly ordered system. After the earthquake, the system became much more disordered and had higher entropy.
 ===CHECKS===
 the ant farm had lower entropy before the earthquake because it was a highly ordered system
@@ -84,15 +90,10 @@ after the earthquake, the system became much more disordered and had higher entr
 {{< /selfcheck >}}
 
 {{< textin
-  question="A measure of randomness or disorder within a system is called ________."
-  answer="entropy"
-  hint="High values of this quantity describe a highly disordered state; low values describe a highly ordered one."
->}}
-
-{{< textin
   question="It takes energy to make a system ________."
   answer="more ordered"
-  hint="Think about what happens to a system's entropy when energy is invested to organize it."
+  accept="ordered|more orderly"
+  hint="Reread the summary's first paragraph."
 >}}
 
 ### Explain the first and second laws of thermodynamics
@@ -100,7 +101,7 @@ after the earthquake, the system became much more disordered and had higher entr
 {{< multiplechoice
   question="Which of the following is not an example of an energy transformation?"
   answer="turning on a light switch"
-  hint="Three of the choices convert energy from one form into another; one of them just completes a circuit without itself being that conversion."
+  hint="Reread the examples of energy transformations under the section's first main heading."
 >}}
 turning on a light switch
 solar panels at work
@@ -108,7 +109,20 @@ formation of static electricity
 none of the above
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Energy transfers take place constantly in everyday activities. Think of two scenarios: cooking on a stove and driving. Explain how the second law of thermodynamics applies to these two scenarios." hint="Identify where usable energy escapes as heat in each scenario, and connect that loss to an increase in entropy." >}}
+{{< textin
+  question="Energy transferred from one system to another that is not work is called ________."
+  answer="heat"
+  accept="heat energy"
+  hint="Reread the first paragraph of the section's second main heading."
+>}}
+
+{{< textin
+  question="The study of energy and energy transfer involving physical matter is called ________."
+  answer="thermodynamics"
+  hint="Reread the section's opening sentence."
+>}}
+
+{{< selfcheck question="Energy transfers take place constantly in everyday activities. Think of two scenarios: cooking on a stove and driving. Explain how the second law of thermodynamics applies to these two scenarios." hint="Reread the first and last paragraphs of the section's second main heading." >}}
 While cooking, food is heating up on the stove, but not all of the heat goes to cooking the food, some of it is lost as heat energy to the surrounding air, increasing entropy. While driving, cars burn gasoline to run the engine and move the car. This reaction is not completely efficient, as some energy during this process is lost as heat energy, which is why the hood and the components underneath it heat up while the engine is turned on. The tires also heat up because of friction with the pavement, which is additional energy loss. This energy transfer, like all others, also increases entropy.
 ===CHECKS===
 some of it is lost as heat energy to the surrounding air, increasing entropy
@@ -116,19 +130,6 @@ cars burn gasoline to run the engine and move the car
 this reaction is not completely efficient, as some energy during this process is lost as heat energy
 this energy transfer, like all others, also increases entropy
 {{< /selfcheck >}}
-
-{{< textin
-  question="Energy transferred from one system to another that is not work is called ________."
-  answer="heat"
-  accept="heat energy"
-  hint="An airplane loses some of this to friction with the surrounding air as it flies."
->}}
-
-{{< textin
-  question="The study of energy and energy transfer involving physical matter is called ________."
-  answer="thermodynamics"
-  hint="This chapter's first and second laws both take their name from this field."
->}}
 
 ---
 

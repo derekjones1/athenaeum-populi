@@ -156,6 +156,12 @@ this trait is probably analogous
 {{< /selfcheck >}}
 
 {{< textin
+  question="A technique that uses DNA sequence data to identify phylogenetic relationships is called ________."
+  answer="molecular systematics"
+  hint="It compares DNA rather than physical form to work out relationships between organisms."
+>}}
+
+{{< textin
   question="A characteristic that is similar between organisms because of convergent evolution, rather than a shared evolutionary path, is called ________."
   answer="analogy"
   accept="analogies|homoplasy|homoplasies"
@@ -169,18 +175,12 @@ this trait is probably analogous
   hint="Bat and bird wings share this kind of similarity because both evolved from the same ancestral forelimb bones."
 >}}
 
-{{< textin
-  question="A technique that uses DNA sequence data to identify phylogenetic relationships is called ________."
-  answer="molecular systematics"
-  hint="It compares DNA rather than physical form to work out relationships between organisms."
->}}
-
 ### Discuss the purpose of cladistics
 
 {{< multiplechoice
   question="What do scientists use to apply cladistics?"
   answer="homologous traits"
-  hint="Cladistics sorts organisms based on features that stem from a shared evolutionary past, not independently evolved ones."
+  hint="Reread the first paragraph of the Building Phylogenetic Trees subsection."
 >}}
 homologous traits
 homoplasies
@@ -191,7 +191,7 @@ monophyletic groups
 {{< multiplechoice
   question="What is true about organisms that are a part of the same clade?"
   answer="They evolved from a shared ancestor."
-  hint="A clade is defined by descent, not by how similar the organisms look today."
+  hint="Reread the Building Phylogenetic Trees paragraph that defines the term, and the caption of the clade-examples figure."
 >}}
 They all share the same basic characteristics.
 They evolved from a shared ancestor.
@@ -199,7 +199,7 @@ They usually fall into the same classification taxa.
 They have identical phylogenies.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is it so important for scientists to distinguish between homologous and analogous characteristics before building phylogenetic trees?" hint="Think about what happens to every later branch point built on top of one wrong connection." >}}
+{{< selfcheck question="Why is it so important for scientists to distinguish between homologous and analogous characteristics before building phylogenetic trees?" hint="Think about what happens to every later part of the tree built on top of one wrong connection." >}}
 Phylogenetic trees are based on evolutionary connections. If an analogous similarity were used on a tree, this would be erroneous and, furthermore, would cause the subsequent branches to be inaccurate.
 ===CHECKS===
 phylogenetic trees are based on evolutionary connections
@@ -208,9 +208,15 @@ would cause the subsequent branches to be inaccurate
 {{< /selfcheck >}}
 
 {{< textin
-  question="The system used to organize homologous traits in order to describe phylogenies is called ________."
-  answer="cladistics"
-  hint="It sorts organisms into clades — groups that descended from a single ancestor."
+  question="Clades can vary in size depending on which ________ one references."
+  answer="branch point"
+  hint="Reread the paragraph between the two clade figures."
+>}}
+
+{{< textin
+  question="A trait on a phylogenetic tree that every organism on the tree has in common is called a ________."
+  answer="shared ancestral character"
+  hint="In the Vertebrata figure, having a vertebral column is this kind of trait for every tip shown."
 >}}
 
 {{< textin
@@ -221,18 +227,19 @@ would cause the subsequent branches to be inaccurate
 >}}
 
 {{< textin
-  question="A trait on a phylogenetic tree that every organism on the tree has in common is called a ________."
-  answer="shared ancestral character"
-  hint="In the Vertebrata figure, having a vertebral column is this kind of trait for every tip shown."
->}}
-
-{{< textin
   question="A trait that arose at some point along a phylogenetic tree and belongs only to one particular clade is called a ________."
   answer="shared derived character"
-  hint="In the Vertebrata figure, the amniotic egg is this kind of trait for lizards, rabbits, and humans, but not fish or lampreys."
+  hint="Reread the first paragraph of the Shared Characteristics subsection, where the amniotic egg is the example."
 >}}
 
 ### Describe maximum parsimony
+
+{{< textin
+  question="In evolution, the simplest path that maximum parsimony predicts would be the path with the least number of major ________ that correlate with the evidence."
+  answer="divergences"
+  accept="events|steps"
+  hint="Reread the last sentence of the Summary."
+>}}
 
 {{< multiplechoice
   question="Why do scientists apply the concept of maximum parsimony?"
@@ -252,12 +259,6 @@ maximum parsimony hypothesizes that events occurred in the simplest, most obviou
 the pathway of evolution probably includes the fewest major events that coincide with the evidence at hand
 {{< /selfcheck >}}
 
-{{< textin
-  question="The concept of explaining evolutionary events in the simplest, most obvious way, using the fewest possible steps, is called ________."
-  answer="maximum parsimony"
-  hint="Think of a group of hikers following established trails rather than forging new ones."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 20.2: Determining Evolutionary Relationships](https://openstax.org/books/biology-2e/pages/20-2-determining-evolutionary-relationships) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all five figures (Figure_20_02_01-5b8b, Figure_20_02_02-6526, Figure_20_02_03-eb43, Figure_20_02_04-43b5, Figure_20_02_05) re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (the first two are photographs overlaid with a line-drawn bone-structure diagram that carries the homology/analogy teaching point; the third is a line-engraved botanical illustration, not a photograph; the last two are drawn cladograms); a longdesc added for Figure_20_02_04-43b5 and Figure_20_02_05 (the root, branch order, and tip labels of each cladogram are not carried by the caption); the alts for all five figures rewritten from the images, since the source alts either used the word "analogous" loosely in a way that could be confused with this section's technical distinction, or were too terse to carry what each panel shows; the two interactive notes rendered as Link to Learning callouts with descriptive link text ("a site with examples of how appearances can be misleading…," "a site explaining how researchers use maximum parsimony…") in place of the source's bare "website"; the "Why Does Phylogeny Matter?" evolution note rendered as an Evolution Connection callout with its embedded figure kept inside it; the two visual-connection notes rendered as their mediafigure immediately followed by a self-check carrying the source's own solution, with rubric checkpoints decomposing each model answer into check-off clauses with no new claims; the inline forward/backward figure references reworded as "the figure below"/"the figure above"/"that same figure" since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); eight key-term recall items added from the glossary (analogy, homology, molecular systematics, cladistics, monophyletic group, shared ancestral character, shared derived character, maximum parsimony); and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 20.2: Determining Evolutionary Relationships](https://openstax.org/books/biology-2e/pages/20-2-determining-evolutionary-relationships) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all five figures (Figure_20_02_01-5b8b, Figure_20_02_02-6526, Figure_20_02_03-eb43, Figure_20_02_04-43b5, Figure_20_02_05) re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (the first two are photographs overlaid with a line-drawn bone-structure diagram that carries the homology/analogy teaching point; the third is a line-engraved botanical illustration, not a photograph; the last two are drawn cladograms); a longdesc added for Figure_20_02_04-43b5 and Figure_20_02_05 (the root, branch order, and tip labels of each cladogram are not carried by the caption); the alts for all five figures rewritten from the images, since the source alts either used the word "analogous" loosely in a way that could be confused with this section's technical distinction, or were too terse to carry what each panel shows; the two interactive notes rendered as Link to Learning callouts with descriptive link text ("a site with examples of how appearances can be misleading…," "a site explaining how researchers use maximum parsimony…") in place of the source's bare "website"; the "Why Does Phylogeny Matter?" evolution note rendered as an Evolution Connection callout with its embedded figure kept inside it; the two visual-connection notes rendered as their mediafigure immediately followed by a self-check carrying the source's own solution, with rubric checkpoints decomposing each model answer into check-off clauses with no new claims; the inline forward/backward figure references reworded as "the figure below"/"the figure above"/"that same figure" since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); six key-term recall items added from the glossary (molecular systematics, analogy, homology, monophyletic group, shared ancestral character, shared derived character), the first three placed after the dolphin Critical Thinking question whose stem prints "homologous or analogous", and one body-sentence cloze ("Clades can vary in size depending on which branch point one references") in place of a cladistics recall item that re-asked, in reverse, the Review Question "What do scientists use to apply cladistics?", plus one summary cloze (the fewest major divergences) that replaces a maximum parsimony recall item which re-asked the "Describe maximum parsimony" Critical Thinking question; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

@@ -90,7 +90,12 @@ Before writing:
      - **A corrected claim, value, answer, or figure label** carries a
        visible source note beside it on the page AND an entry in
        `data/openstax/reconciliation-decisions.json`, so a later audit
-       cannot silently reverse it.
+       cannot silently reverse it. On a graded item the note goes after
+       the item (or inside a `selfcheck`'s model answer), never inside the
+       stem: a noted stem no longer matches the source exercise, so
+       `verify-source-keys` reports the item `unmatched` and stops checking
+       its key. Inside an italic note, write a species name plain — a
+       nested `*` closes the italics *(September 23, 2026)*.
      - **A one-word typo** — a misspelling, a malformed binomial, a wrong
        journal volume — is corrected in place with no inline note and no
        decisions entry: an interruption mid-sentence costs the reader more
@@ -254,7 +259,12 @@ verbatim — no MDX doubling). `question`/`hint`/`answerDisplay` support inline
 self-grade `correct`.
 
 Every regular-section exercise needs a concise, strategy-oriented `hint`.
-Knowledge Checks deliberately omit hints.
+Strategy means the step to take or the place to look, never the result or
+the fact that decides the item: in a math item the method, in a
+vocabulary item the subsection, figure, or table (the life-sciences rule,
+`docs/subjects/life-sciences.md` "Text recall" — a hint that stated the
+key's fact was the largest class of the September 22, 2026 life-sciences
+sweep, about 2,470 rewritten). Knowledge Checks deliberately omit hints.
 
 Re-expression prompts (asking the learner to restate a printed value in
 another form) need an `answerForm` so the grader checks the shape, not just
@@ -433,13 +443,41 @@ must not contain `$…$` math — a text field has no spoken-math name; use
 spellings graded as correct too, **`|`-separated** (`accept="a|b|c"` — a
 comma joins the items into one member the grader can never match, and the
 lint rejects it); grading already ignores case, diacritics, punctuation,
-hyphen-versus-space, and a leading article, and it accepts the **regular
-plural** of every listed form (a typed `cells` for `cell`, `gases` for
-`gas` — exactly a trailing `s` or `es`, one direction only, no stemming), so
-list only an irregular plural (`hypotheses` above, `septa`, `bacteria`); a
-regular plural in `accept` is a lint error. A prompt or hint that prints a
-member's regular plural is the same retype hazard as one that prints the
-member.
+hyphen-versus-space, and a leading article, and it folds the **regular
+plural both ways** on every listed form: a typed `cells` for `cell` and
+`gases` for `gas` (a trailing `s` or `es`), and a typed `receptor` for
+`receptors` and `gas` for `gases` (the `s`, or an `es` after s/x/z/ch/sh,
+stripped from a last word shaped like a regular plural; never from one
+ending `-ss`, `-us`, `-is`, `-ics`, `-ies`, or a digit + `s`, so `genus`,
+`mitosis`, `species`, `genetics`, `70S` do not fold), with no stemming. So
+list only an irregular plural or singular (`hypotheses` above, `septa`,
+`bacteria`/`bacterium`, `mosquito` for `mosquitoes`); a regular plural or
+singular in `accept` is a lint error. A prompt or hint that prints a
+member's regular plural or singular is the same retype hazard as one that
+prints the member.
+
+Three neighbour and hint rules are lint errors since September 22, 2026
+(`tools/lint/lints-leaks.mjs`). In a Practice group or a Knowledge Check
+section, the item directly above a `textin` — its stem, its options, or its
+hint — may not print the textin's key, an accept member, or a plural or
+singular the grader folds onto either; order the group so the recall item
+comes first, never edit a source stem or option to pass. A `textin` hint may
+not print a word built on a one-word key of five letters or more — a word
+containing it (*micronutrients* for `nutrient`) or sharing its first
+max(4, length − 2) letters (*pronation* for `prone`, *lignified* for
+`lignin`). And an acronym `textin` may not have its expansion spelled out
+right before the blank ("…fluorescence-activated cell sorter, or
+________" keyed `FACS`); ask "…known by the four-letter abbreviation
+________" instead. A hint says where to look — a subsection, figure, or
+table — and a subsection whose title IS the key is named by position ("the
+last of the Heavy Metals subsections"), not by title; it never states the
+fact the correct option asserts. One leak no lint sees yet: a glossary
+`textin` that re-asks a source item on the same page in reverse — pick
+another term. (A `textin` keyed to a term its own `###` objective heading
+prints is avoided when the objective offers another term, but it is a
+preference, not a defect.)
+Fix a leak by reordering or rewording, never by changing the item's type
+(`docs/subjects/life-sciences.md` Exercises).
 
 **Self-check (`selfcheck`)** — a free-response prompt with a model answer to
 compare against. Nothing is graded or stored: the learner writes, reveals
@@ -525,6 +563,16 @@ math books' prohibition on every other file-backed image form (`![]()`,
 `<img>`, `{{< figure >}}`, CSS images) is unchanged; the vendoring pipeline,
 the image-accessibility policy, and every other detail of this component are
 subject-specific — for the life sciences, see `docs/subjects/life-sciences.md`.
+
+A shortcode param never holds an HTML character reference (`&quot;`,
+`&amp;`, `&#39;`): the template escapes attribute text, so it ships
+double-escaped and a screen reader reads the entity's letters. Quote inside a
+param with '…' or "…". Lint error since September 22, 2026. **Never a
+straight `"` inside a double-quoted param**: it ends the attribute, and the
+shortcode parser then misreads everything after it on the page (a figure-pass
+fixer broke two whole pages this way, 174 and 81 lint errors). Use single or
+curly quotes, or Hugo's `\"` escape, and run `npm run lint` after every page
+you edit, not once at the end *(September 23, 2026)*.
 
 ### The section-final `## Practice` block
 

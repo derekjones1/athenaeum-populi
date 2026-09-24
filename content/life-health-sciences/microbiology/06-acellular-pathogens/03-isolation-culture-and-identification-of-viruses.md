@@ -28,7 +28,7 @@ Membrane filters can be used to remove cells or viruses from a solution. (a) Thi
 
 **Check Your Understanding**
 
-{{< selfcheck question="What size filter pore is needed to collect a virus?" hint="Compare the two labeled pore sizes in the filtration diagram and identify which one blocks everything except the smallest particles." >}}
+{{< selfcheck question="What size filter pore is needed to collect a virus?" hint="Read the two labeled pore sizes in the filtration diagram in the Isolation of Viruses subsection." >}}
 The filtration diagram shows that a filter with a pore size of 200 nm (0.2 µm) lets only the smallest particles, the virions, pass through, so a filter with pores that small is needed to collect a virus.
 ===CHECKS===
 a pore size of 200 nm (0.2 µm)
@@ -53,7 +53,7 @@ The embryo or host animal serves as an incubator for viral replication (see the 
 
 For in vitro studies, various types of cells can be used to support the growth of viruses. A primary cell culture is freshly prepared from animal organs or tissues. Cells are extracted from tissues by mechanical scraping or mincing to release cells or by an enzymatic method using trypsin or collagenase to break up tissue and release single cells into suspension. Because of anchorage-dependence requirements, primary cell cultures require a liquid culture medium in a Petri dish or tissue-culture flask so cells have a solid surface such as glass or plastic for attachment and growth. Primary cultures usually have a limited life span. When cells in a primary culture undergo mitosis and a sufficient density of cells is produced, cells come in contact with other cells. When this cell-to-cell-contact occurs, mitosis is triggered to stop. This is called contact inhibition and it prevents the density of the cells from becoming too high. To prevent contact inhibition, cells from the primary cell culture must be transferred to another vessel with fresh growth medium. This is called a secondary cell culture. Periodically, cell density must be reduced by pouring off some cells and adding fresh medium to provide space and nutrients to maintain cell growth. In contrast to primary cell cultures, continuous cell lines, usually derived from transformed cells or tumors, are often able to be subcultured many times or even grown indefinitely (in which case they are called immortal). Continuous cell lines may not exhibit anchorage dependency (they will grow in suspension) and may have lost their contact inhibition. As a result, continuous cell lines can grow in piles or lumps resembling small tumor growths (see the diagram below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_06_03_cult" alt="A two-row flow diagram. (a) A micrograph of pink-and-purple stained lung tissue leads to a sparse plate of round cells labeled primary cell culture; an arrow leads to a second plate showing the cells grown into a dense, touching layer labeled contact inhibition; some cells from that plate are then transferred to a new, sparse plate labeled secondary cell culture. (b) The same lung-tissue micrograph leads to a plate of cells labeled continuous cell line, and a further arrow leads to a plate where the cells have grown into a thick, piled-up mass rather than a single flat layer." kind="diagram" longdesc="Row (a): a micrograph of lung tissue is labeled individual cells isolated from tissue, and an arrow leads to a plate of sparse, separated round cells labeled primary cell culture. An arrow leads to a second plate where the cells have grown to cover the entire surface and touch one another, labeled contact inhibition. An arrow labeled some cells transferred to new medium leads from a few of those cells to a new plate of sparse cells labeled secondary cell culture. Row (b): the same lung-tissue micrograph is labeled transformed cells or individual cells isolated from a tumor, and an arrow leads to a plate of sparse cells labeled continuous cell line. A further arrow leads to a plate where the cells have piled up on top of one another rather than stopping at a single layer." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_06_03_cult" alt="A two-row flow diagram. (a) A micrograph of pink-and-purple stained lung tissue leads to a sparse plate of round cells labeled primary cell culture; an arrow leads to a second plate showing the cells grown into a dense, touching layer labeled contact inhibition; some cells from that plate are then transferred to a new, sparse plate labeled secondary cell culture. (b) The same lung-tissue micrograph leads to a plate of cells labeled continuous cell line, and a further arrow leads to a plate where the cells have grown into a thick, piled-up mass rather than a single flat layer." kind="diagram" longdesc="Row (a): a micrograph labeled lung tissue is followed by an arrow labeled individual cells isolated from tissue, which leads to a plate of sparse, separated round cells labeled primary cell culture. An arrow leads to a second plate where the cells have grown to cover the entire surface and touch one another, labeled contact inhibition. A further arrow leads to a small group of those cells, and a curved arrow labeled some cells transferred to new medium carries them to a new plate of sparse cells labeled secondary cell culture. Row (b): the same lung-tissue micrograph is followed by an arrow labeled transformed cells or individual cells isolated from a tumor, which leads to a plate of sparse cells labeled continuous cell line. A further arrow leads to a plate where the cells have piled up on top of one another rather than stopping at a single layer." >}}
 Cells for culture are prepared by separating them from their tissue matrix. (a) Primary cell cultures grow attached to the surface of the culture container. Contact inhibition slows the growth of the cells once they become too dense and begin touching each other. At this point, growth can only be sustained by making a secondary culture. (b) Continuous cell cultures are not affected by contact inhibition. They continue to grow regardless of cell density. (credit "micrographs": modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
@@ -61,7 +61,7 @@ An example of an immortal cell line is the HeLa cell line, which was originally 
 
 **Check Your Understanding**
 
-{{< textin question="What property of cells makes periodic dilutions of primary cell cultures necessary?" answer="contact inhibition" hint="Identify the process, named earlier in this subsection, that halts mitosis once cells grow dense enough to touch one another." >}}
+{{< textin question="What property of cells makes periodic dilutions of primary cell cultures necessary?" answer="contact inhibition" hint="Reread the paragraph on primary cell cultures in the Cultivation of Viruses subsection." >}}
 
 {{< callout type="info" >}}
 **Eye on Ethics.** *The Immortal Cell Line of Henrietta Lacks*
@@ -119,11 +119,11 @@ This chart shows the possible outcomes of a hemagglutination test. Row A: Erythr
 {{< multiplechoice
   question="What is the outcome of a positive HAI test?"
   answer="No agglutination occurs, because the antibody has inhibited it."
-  hint="Compare what happens when antibody is present against what happens when only the virus and erythrocytes are mixed."
+  hint="Reread the second paragraph of the Hemagglutination Assay subsection."
 >}}
 No agglutination occurs, because the antibody has inhibited it.
 The virus and erythrocytes agglutinate, producing an even red color throughout the well.
-The infected cells show cytopathic effects, such as rounding and inclusion bodies.
+The infected cells round up and form inclusion bodies.
 A substrate reacts with a bound enzyme and the product is measured.
 {{< /multiplechoice >}}
 
@@ -153,7 +153,7 @@ Similar to rapid, over-the-counter pregnancy tests, EIAs for viral antigens requ
 
 **Check Your Understanding**
 
-{{< textin question="What typically indicates a positive EIA test?" answer="color change" accept="colour change" hint="Recall what the enzyme-substrate reaction in the last step of the diagram produces when the antibody stays bound to the filter." >}}
+{{< textin question="What typically indicates a positive EIA test?" answer="color change" accept="colour change|change in color|change in colour|colored end product|coloured end product" hint="Reread the caption of the EIA diagram." >}}
 
 {{< callout type="info" >}}
 **Clinical Focus.** *Part 3*
@@ -189,7 +189,7 @@ The case continues in [Viroids, Virusoids, and Prions](/life-health-sciences/mic
 {{< multiplechoice
   question="What can a filter physically remove from a solution containing viruses?"
   answer="Anything present in the solution that is larger than the virions."
-  hint="Compare the sizes described in the filtration diagram rather than the detection assays discussed later in the section."
+  hint="Reread the first paragraph of the Isolation of Viruses subsection."
 >}}
 Antibodies that inhibit hemagglutination.
 The virus and erythrocytes agglutinate, producing an even red color throughout the well.
@@ -202,18 +202,22 @@ Nucleotide sequences amplified by PCR.
   answer="Released virions."
   hint="Use the summary sentence about what filtration yields, not the sentence about what filtration removes."
 >}}
-Cytopathic effects.
-Hemagglutinins.
-A colored end product.
+Erythrocytes.
+Clotting factors.
+Antibodies.
 Released virions.
 {{< /multiplechoice >}}
 
 ### Describe the cultivation of viruses and specimen collection and handling
 
+{{< textin question="Viruses can be diagnosed and observed using a(n) ________ microscope." answer="electron" accept="brightfield|bright-field|fluorescent|fluorescence" hint="Reread the first sentence of the Detection of a Virus subsection." >}}
+
+{{< textin question="Cell abnormalities resulting from a viral infection are called ________." answer="cytopathic effects" accept="CPE" hint="Use the term this section defines near the start of the Detection of a Virus heading, then abbreviates for the rest of the section." >}}
+
 {{< multiplechoice
   question="Which of the following cannot be used to culture viruses?"
   answer="liquid medium only"
-  hint="Compare each option against the requirement, stated at the start of the Cultivation of Viruses subsection, that viruses need a living host cell."
+  hint="Reread the first sentence of the Isolation of Viruses subsection."
 >}}
 tissue culture
 liquid medium only
@@ -224,7 +228,7 @@ animal host
 {{< multiplechoice
   question="Which of the following tests can be used to detect the presence of a specific virus?"
   answer="all of the above"
-  hint="Consider whether each named test individually detects viral presence, then decide whether more than one applies."
+  hint="Reread the Nucleic Acid Amplification Test and Enzyme Immunoassay subsections."
 >}}
 EIA
 RT-PCR
@@ -235,7 +239,7 @@ all of the above
 {{< multiplechoice
   question="Which of the following is NOT a cytopathic effect?"
   answer="mononucleated cell"
-  hint="Recall that CPEs include fusion of cytoplasmic membranes into multinucleated syncytia, not single-nucleus cells."
+  hint="Reread the list in the first paragraph of the Detection of a Virus subsection."
 >}}
 transformation
 cell fusion
@@ -243,11 +247,7 @@ mononucleated cell
 inclusion bodies
 {{< /multiplechoice >}}
 
-{{< textin question="Viruses can be diagnosed and observed using a(n) ________ microscope." answer="electron" hint="Name the type of microscope needed to see particles as small as viruses." >}}
-
-{{< textin question="Cell abnormalities resulting from a viral infection are called ________." answer="cytopathic effects" accept="cytopathic effect|CPE" hint="Use the term this section defines near the start of the Detection of a Virus heading, then abbreviates for the rest of the section." >}}
-
-{{< selfcheck question="Briefly explain the various methods of culturing viruses." hint="Cover both the in vivo hosts and the in vitro cell cultures this section describes, plus the bacteriophage technique." >}}
+{{< selfcheck question="Briefly explain the various methods of culturing viruses." hint="Reread the Isolation of Viruses and Cultivation of Viruses subsections." >}}
 Viruses require a living host cell for replication, so cultivation methods provide that host cell in vivo or in vitro. In vivo methods introduce the virus into a developing embryo, such as within an embryonated bird's egg, or into a whole host animal. In vitro methods grow the virus in cultured cells, either primary cell cultures freshly prepared from animal tissue or continuous cell lines that can be subcultured indefinitely. Bacteriophages are cultivated by growing them in the presence of a dense bacterial lawn in a Petri dish or flask.
 ===CHECKS===
 Viruses require a living host cell for replication
@@ -271,7 +271,7 @@ A bacteriophage plaque assay plate, with two arrows pointing to different featur
 {{< multiplechoice
   question="In the figure above, what does the arrow labeled (A) point to?"
   answer="The confluent bacterial lawn."
-  hint="The lawn is the unbroken area of bacterial growth; a plaque is a distinct clear spot within it."
+  hint="Reread the first paragraph of the Cultivation of Viruses subsection, then look where the arrow ends on the plate."
 >}}
 A single, isolated plaque.
 The confluent bacterial lawn.
@@ -280,7 +280,7 @@ The confluent bacterial lawn.
 {{< multiplechoice
   question="In the figure above, what does the arrow labeled (B) point to?"
   answer="A single, isolated plaque."
-  hint="The lawn is the unbroken area of bacterial growth; a plaque is a distinct clear spot within it."
+  hint="Reread the first paragraph of the Cultivation of Viruses subsection, then look where the arrow ends on the plate."
 >}}
 A single, isolated plaque.
 The confluent bacterial lawn.
@@ -288,16 +288,16 @@ The confluent bacterial lawn.
 
 ### Compare in vivo and in vitro techniques used to cultivate viruses
 
-{{< textin question="Growing a virus within a whole living organism, plant, or animal is called growing it ________." answer="in vivo" hint="Use the Latin phrase meaning “within the living,” defined at the start of the Cultivation of Viruses subsection." >}}
+{{< textin question="Viral cultivation requires the presence of some form of ________ (whole organism, embryo, or cell culture)." answer="host cell" accept="living host cell" hint="Reread the first bullet of the Summary." >}}
 
-{{< textin question="Growing a virus outside a living organism, in cells in an artificial environment, is called growing it ________." answer="in vitro" hint="Use the Latin phrase meaning “within glass,” defined alongside the previous term at the start of the Cultivation of Viruses subsection." >}}
+{{< textin question="When cells from a primary cell culture are transferred to another vessel with fresh growth medium, the result is called a ________." answer="secondary cell culture" accept="secondary culture" hint="Reread the paragraph on primary cell cultures in the Cultivation of Viruses subsection." >}}
 
 {{< multiplechoice
   question="Which of the following is an example of an in vivo technique for cultivating a virus?"
   answer="Injecting the virus into the amniotic cavity of a developing chicken egg."
-  hint="Distinguish the option that uses a whole developing organism from the three that use cells grown outside one."
+  hint="Reread the Cultivation of Viruses subsection: its opening definitions and the examples that follow them."
 >}}
-Growing bacteriophages on a bacterial lawn in a Petri dish.
+Growing the virus in cells in a flat horizontal cell culture flask.
 Injecting the virus into the amniotic cavity of a developing chicken egg.
 Growing the virus in a primary cell culture prepared from animal tissue.
 Growing the virus in an immortal continuous cell line.
@@ -305,4 +305,4 @@ Growing the virus in an immortal continuous cell line.
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 6.3: Isolation, Culture, and Identification of Viruses](https://openstax.org/books/microbiology/pages/6-3-isolation-culture-and-identification-of-viruses) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all 9 figures re-encoded as WebP, with `kind` set explicitly after inspection — `diagram` for the filters, egg, culture-flow, and hemagglutination/EIA process figures (each has at least one genuinely drawn panel), `photo` for the flask/plaque photos, the HeLa fluorescence micrograph, the cytopathic-effects table's micrograph panels, and the Art Connection plate photo — overriding the media manifest's JPEG-based guess on the four diagrams; alts rewritten from the served images (the source alt's "Figure a is... Figure b is..." phrasing tightened to parenthetical (a)/(b) form) and a `longdesc` added to the four labeled diagrams and process charts, walking each in reading order; the cytopathic-effects table (printed upstream as a table image) is transcribed as a Markdown table from the image, checked against the PDF page, with the vendored figure kept immediately after it, `kind="photo"`, its alt limited to the micrograph column and its credit-only source caption extended with a short author-written phrase naming what the panels show; the Eye on Ethics and Case in Point notes rendered as callouts, each keeping its own bold feature name and italicized title; the Case in Point box's closing physician's question kept as an unanswered bulleted prompt inside its callout, as printed; the Link to Learning URL kept, its sentence's doubled "video" phrasing tightened so the link text alone names the destination; the Clinical Focus *Part 3* box's closing question kept as an unanswered bulleted prompt, and the source's "Jump to the next / Go back to the previous Clinical Focus box" links replaced with plain sentences naming both the chapter's earlier part (in Viruses) and its next part (in Viroids, Virusoids, and Prions); the cross-references to *Agglutination Assays* (m58902) and *EIAs and ELISAs* (m58903), both in chapter 20, left as plain text because those pages are not yet authored; three of the four Check Your Understanding bullets are graded from this module's own sentences rather than answered in prose, since the source prints no key for them, and the filtration-pore question stays a self-check whose answer is read from the figure's own printed pore sizes (the module's prose never states the value) — a `textin` from the contact-inhibition sentence, a `multiplechoice` from the hemagglutination-inhibition sentence (with cytopathic-effect and EIA facts from elsewhere in this module as its distractors), and a `textin` from the EIA figure's own caption; the three Multiple Choice and two Fill in the Blank items are adapted into the Practice block under the objective on cultivation and specimen handling, with the source's "followings" corrected to "following" (a one-word typo); the body Check Your Understanding question about the hemagglutination inhibition assay corrected from the source's "positive HIA test" to "positive HAI test" (the module defines the assay's abbreviation as HAI two sentences earlier; a one-word typo), and the Eye on Ethics box's link text corrected from "Thermo Fischer Scientific" to "Thermo Fisher Scientific," the company's real name, which the same box's own preceding sentence already spells correctly (a one-word typo); a missing closing parenthesis after the "in vitro" definition's opening sentence silently closed (the source's parenthetical is never closed before its period); the two unkeyed end-of-section questions remain self-checks with model answers and rubrics assembled only from this module's own sentences, because the Short Answer question's honest answer assembles several sentences about different cultivation methods and the Critical Thinking question compares to a subject (a computer virus) this module never discusses, so its model answer states only what the module gives about a biological virus's host dependency and stops; the Critical Thinking Art Connection figure (a bare `<figure>` inside the exercise, printing no caption) is rendered as a `mediafigure` with an author-written caption, immediately followed by two `multiplechoice` items that label its two lettered arrows from the module's own "bacterial lawn" and "plaque" vocabulary, keyed from the image; three filler items (one cloze `textin` from the section's opening sentence and two select-the-term `multiplechoice` items from its Isolation and Summary sentences) fill the first objective group, which the source's own exercise set does not reach, and three further items (two term-recall `textin`s from Key terms and one author-built `multiplechoice` contrasting an in vivo and three in vitro cultivation examples) fill the third objective group for the same reason; no source exercise was omitted; key terms compiled from the module's four defined terms and the book's Glossary appendix, with the *cytopathic effects (CPEs)* bullet printed lower-case to match how the module's own Summary sentence uses the term, since its body's capital "Cytopathic" is only a sentence-initial capital, not a proper noun (correcting the pre-extracted scaffold).</small>
+<small>This section is adapted from [Microbiology, Section 6.3: Isolation, Culture, and Identification of Viruses](https://openstax.org/books/microbiology/pages/6-3-isolation-culture-and-identification-of-viruses) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all 9 figures re-encoded as WebP, with `kind` set explicitly after inspection — `diagram` for the filters, egg, culture-flow, and hemagglutination/EIA process figures (each has at least one genuinely drawn panel), `photo` for the flask/plaque photos, the HeLa fluorescence micrograph, the cytopathic-effects table's micrograph panels, and the Art Connection plate photo — overriding the media manifest's JPEG-based guess on the four diagrams; alts rewritten from the served images (the source alt's "Figure a is... Figure b is..." phrasing tightened to parenthetical (a)/(b) form) and a `longdesc` added to the four labeled diagrams and process charts, walking each in reading order; the cytopathic-effects table (printed upstream as a table image) is transcribed as a Markdown table from the image, checked against the PDF page, with the vendored figure kept immediately after it, `kind="photo"`, its alt limited to the micrograph column and its credit-only source caption extended with a short author-written phrase naming what the panels show; the Eye on Ethics and Case in Point notes rendered as callouts, each keeping its own bold feature name and italicized title; the Case in Point box's closing physician's question kept as an unanswered bulleted prompt inside its callout, as printed; the Link to Learning URL kept, its sentence's doubled "video" phrasing tightened so the link text alone names the destination; the Clinical Focus *Part 3* box's closing question kept as an unanswered bulleted prompt, and the source's "Jump to the next / Go back to the previous Clinical Focus box" links replaced with plain sentences naming both the chapter's earlier part (in Viruses) and its next part (in Viroids, Virusoids, and Prions); the cross-references to *Agglutination Assays* (m58902) and *EIAs and ELISAs* (m58903), both in chapter 20, left as plain text because those pages are not yet authored; three of the four Check Your Understanding bullets are graded from this module's own sentences rather than answered in prose, since the source prints no key for them, and the filtration-pore question stays a self-check whose answer is read from the figure's own printed pore sizes (the module's prose never states the value) — a `textin` from the contact-inhibition sentence, a `multiplechoice` from the hemagglutination-inhibition sentence (with cytopathic-effect and EIA facts from elsewhere in this module as its distractors), and a `textin` from the EIA figure's own caption; the three Multiple Choice and two Fill in the Blank items are adapted into the Practice block under the objective on cultivation and specimen handling, with the source's "followings" corrected to "following" (a one-word typo), and the microscope Fill in the Blank (source key "electron") also accepts "brightfield" and "fluorescent", because this section's only sentence on observing infected samples names "a brightfield, electron, or fluorescent microscope"; in that group the two Fill in the Blank items are placed before the three Multiple Choice items, reversing the source's section order, because the stem "Which of the following is NOT a cytopathic effect?" prints the key of the cytopathic-effects blank; the body Check Your Understanding question about the hemagglutination inhibition assay corrected from the source's "positive HIA test" to "positive HAI test" (the module defines the assay's abbreviation as HAI two sentences earlier; a one-word typo), and the Eye on Ethics box's link text corrected from "Thermo Fischer Scientific" to "Thermo Fisher Scientific," the company's real name, which the same box's own preceding sentence already spells correctly (a one-word typo); a missing closing parenthesis after the "in vitro" definition's opening sentence silently closed (the source's parenthetical is never closed before its period); the two unkeyed end-of-section questions remain self-checks with model answers and rubrics assembled only from this module's own sentences, because the Short Answer question's honest answer assembles several sentences about different cultivation methods and the Critical Thinking question compares to a subject (a computer virus) this module never discusses, so its model answer states only what the module gives about a biological virus's host dependency and stops; the Critical Thinking Art Connection figure (a bare `<figure>` inside the exercise, printing no caption) is rendered as a `mediafigure` with an author-written caption, immediately followed by two `multiplechoice` items that label its two lettered arrows from the module's own "bacterial lawn" and "plaque" vocabulary, keyed from the image; three filler items (one cloze `textin` from the section's opening sentence and two select-the-term `multiplechoice` items from its Isolation and Summary sentences) fill the first objective group, which the source's own exercise set does not reach, and three further items (a cloze `textin` from the Summary's host-cell sentence, a cloze `textin` from the Cultivation of Viruses sentence naming a secondary cell culture, and one author-built `multiplechoice` contrasting an in vivo and three in vitro cultivation examples) fill the third objective group for the same reason; no source exercise was omitted; key terms compiled from the module's four defined terms and the book's Glossary appendix, with the *cytopathic effects (CPEs)* bullet printed lower-case to match how the module's own Summary sentence uses the term, since its body's capital "Cytopathic" is only a sentence-initial capital, not a proper noun (correcting the pre-extracted scaffold).</small>

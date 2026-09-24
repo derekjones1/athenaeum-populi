@@ -30,7 +30,7 @@ Maladaptive immune responses toward harmless foreign substances or self antigens
 
 The immune reaction that results from immediate hypersensitivities in which an antibody-mediated immune response occurs within minutes of exposure to a harmless antigen is called an **allergy**. In the United States, 20 percent of the population exhibits symptoms of allergy or asthma, whereas 55 percent test positive against one or more allergens. Upon initial exposure to a potential allergen, an allergic individual synthesizes antibodies of the IgE class via the typical process of APCs presenting processed antigen to T<sub>H</sub> cells that stimulate B cells to produce IgE. This class of antibodies also mediates the immune response to parasitic worms. The constant domain of the IgE molecules interact with mast cells embedded in connective tissues. This process primes, or sensitizes, the tissue. Upon subsequent exposure to the same allergen, IgE molecules on mast cells bind the antigen via their variable domains and stimulate the mast cell to release the modified amino acids histamine and serotonin; these chemical mediators then recruit eosinophils which mediate allergic responses. The illustration below shows an example of an allergic response to ragweed pollen. The effects of an allergic reaction range from mild symptoms like sneezing and itchy, watery eyes to more severe or even life-threatening reactions involving intensely itchy welts or hives, airway contraction with severe respiratory distress, and plummeting blood pressure. This extreme reaction is known as anaphylactic shock. If not treated with epinephrine to counter the blood pressure and breathing effects, this condition can be fatal.
 
-{{< mediafigure src="biology/Figure_B42_04_02" kind="diagram" eager="true" alt="A flow chart, top to bottom, showing ragweed pollen binding a B cell; an arrow to a plasma cell that produces IgE antibodies; an arrow to a mast cell already coated with IgE; a second exposure showing pollen re-binding the mast cell's IgE while the cell releases chemicals; and a final arrow to a cloud labeled Symptoms." longdesc="The chart reads top to bottom in seven labeled elements joined by five arrows. A red pollen particle labeled 'Ragweed pollen' sits bound to a receptor on a tan cell labeled 'B cell.' An arrow points down to a second tan cell labeled 'Plasma cell.' From the plasma cell, one arrow points right to a cluster of Y-shaped antibodies labeled 'IgE,' and a second, diagonal arrow points down and to the left to a blue-gray granular cell labeled 'Mast cell,' already coated with Y-shaped IgE antibodies on its surface; beside these three elements, text reads 'Upon initial exposure to the antigen, IgE antibody is produced and attached to mast cells.' A third arrow points straight down to a second blue-gray granular cell labeled 'Chemicals,' drawn with a red pollen particle now bound to the IgE on its surface and small orange flecks released from its base; beside it, text reads 'Upon a second exposure, binding of the antigen to the IgE-primed mast cells causes the release of chemical mediators that elicit an allergic reaction.' A final arrow points down to a pink cloud labeled 'Symptoms.'" >}}
+{{< mediafigure src="biology/Figure_B42_04_02" kind="diagram" eager="true" alt="A flow chart, top to bottom, showing ragweed pollen binding a B cell; an arrow to a plasma cell that produces IgE antibodies; an arrow to a mast cell already coated with IgE; a second exposure showing pollen re-binding the mast cell's IgE while the cell releases chemicals; and a final arrow to a cloud labeled Symptoms." longdesc="The chart reads top to bottom in seven labeled elements joined by four arrows. A red pollen particle labeled 'Ragweed pollen' sits bound to a receptor on a tan cell labeled 'B cell.' An arrow points down to a second tan cell labeled 'Plasma cell.' From the plasma cell, one arrow points right to a cluster of Y-shaped antibodies labeled 'IgE,' and a second, diagonal arrow, starting below the antibodies, points down and to the left to a blue-gray cell labeled 'Mast cell,' holding six round granules and already carrying two Y-shaped IgE antibodies on its top surface; beside these three elements, text reads 'Upon initial exposure to the antigen, IgE antibody is produced and attached to mast cells.' No arrow joins the mast cell to the drawing below it: the same kind of blue-gray cell, now with a red pollen particle bound between its two IgE antibodies, only three granules left inside, and three white burst vesicles at its base releasing small orange flecks, over the label 'Chemicals'; beside it, text reads 'Upon a second exposure, binding of the antigen to the IgE-primed mast cells causes the release of chemical mediators that elicit an allergic reaction.' A third arrow points down from it to a pink cloud labeled 'Symptoms.'" >}}
 On first exposure to an allergen, an IgE antibody is synthesized by plasma cells in response to a harmless antigen. The IgE molecules bind to mast cells, and on secondary exposure, the mast cells release histamines and other modulators that affect the symptoms of allergy. (credit: modification of work by NIH)
 {{< /mediafigure >}}
 
@@ -40,7 +40,7 @@ Delayed hypersensitivity is a cell-mediated immune response that takes approxima
 
 **Autoimmunity** is a type of hypersensitivity to self antigens that affects approximately five percent of the population. Most types of autoimmunity involve the humoral immune response. Antibodies that inappropriately mark self components as foreign are termed **autoantibodies**. In patients with the autoimmune disease myasthenia gravis, muscle cell receptors that induce contraction in response to acetylcholine are targeted by antibodies. The result is muscle weakness that may include marked difficulty with fine and/or gross motor functions. In systemic lupus erythematosus, a diffuse autoantibody response to the individual's own DNA and proteins results in various systemic diseases. As illustrated below, systemic lupus erythematosus may affect the heart, joints, lungs, skin, kidneys, central nervous system, or other tissues, causing tissue damage via antibody binding, complement recruitment, lysis, and inflammation.
 
-{{< mediafigure src="biology/Figure_42_04_02" kind="diagram" alt="An illustration of a body with five leader lines pointing to affected regions: a red rash across the nose and cheeks, ulcers of the mouth and nose, muscle tissue in one arm, the heart and lungs beneath the ribs, and a blood vessel running to the hand." longdesc="Five leader lines run to the body illustration. Reading roughly top to bottom: 'Face rash' points to a red, mask-like rash drawn across the bridge of the nose and both cheeks, beneath a transparent skull that shows the brain. 'Ulcers of the mouth and nose' points to the mouth. 'Muscle aches' points to the muscle and bone of the arm on the image's left, shown without skin in tan and yellow. 'Inflammation of the pericardium' points to a pink area over the heart and lungs, visible beneath the ribs on the image's right. 'Poor circulation in the fingers and toes' points up and to the left to the red blood-vessel line that runs down the right arm and ends at the drawn hand; no foot is drawn in the figure." >}}
+{{< mediafigure src="biology/Figure_42_04_02" kind="diagram" alt="An illustration of a body with five leader lines pointing to affected regions: a red rash across the nose and cheeks, ulcers of the mouth and nose, muscle tissue in one arm, the heart and lungs beneath the ribs, and a blood vessel running to the hand." longdesc="Five leader lines run to the body illustration. Reading roughly top to bottom: 'Face rash' points to a red, mask-like rash drawn across the bridge of the nose and both cheeks, beneath a transparent skull that shows the brain. 'Ulcers of the mouth and nose' points to the mouth. 'Muscle aches' points to the muscle and bone of the arm on the image's left, shown without skin in tan and yellow. 'Inflammation of the pericardium' points to a pink area over the heart and lungs, visible beneath the ribs on the image's right. 'Poor circulation in the fingers and toes' points down and to the left to the fingertips of the hand on the image's right, reached by a red blood-vessel line that runs down that arm; no foot is drawn in the figure." >}}
 Systemic lupus erythematosus is characterized by autoimmunity to the individual's own DNA and/or proteins, which leads to varied dysfunction of the organs. (credit: modification of work by Mikael Häggström)
 {{< /mediafigure >}}
 
@@ -65,7 +65,7 @@ Immune disruptions may involve insufficient immune responses or inappropriate im
 {{< multiplechoice
   question="Allergy to pollen is classified as:"
   answer="immediate hypersensitivity"
-  hint="This response begins minutes after contact with the allergen, not days later — which type of hypersensitivity involves that fast a timeline?"
+  hint="Reread the first sentence of the first subsection under Hypersensitivities."
 >}}
 an autoimmune reaction
 immunodeficiency
@@ -76,7 +76,7 @@ immediate hypersensitivity
 {{< multiplechoice
   question="________ are misdirected responses either to harmless foreign particles, as in the case of allergies, or to host factors, as in the case of autoimmunity."
   answer="Hypersensitivities"
-  hint="This is the section's own heading for the broad category spanning both allergic and autoimmune reactions."
+  hint="This is the third sentence of the section summary; the subsection after Immunodeficiency also defines the term."
 >}}
 Hypersensitivities
 Immunodeficiencies
@@ -85,16 +85,17 @@ Allergies
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The immune reaction that results from immediate hypersensitivities in which an antibody-mediated immune response occurs within minutes of exposure to a harmless antigen is called a(n) ________."
-  answer="allergy"
-  accept="allergies"
-  hint="Not autoimmunity or immunodeficiency — this is the everyday word for a reaction to pollen, dust, or pet dander."
+  question="Immune disruptions may involve insufficient immune responses or ________."
+  answer="inappropriate immune targets"
+  accept="inappropriate targets"
+  hint="This is the first sentence of the section summary."
 >}}
 
 {{< textin
-  question="Immune disruptions may involve insufficient immune responses or ________."
-  answer="inappropriate immune targets"
-  hint="Hypersensitivity is not a weak response — it is a response aimed at the wrong thing."
+  question="The immune reaction that results from immediate hypersensitivities in which an antibody-mediated immune response occurs within minutes of exposure to a harmless antigen is called a(n) ________."
+  answer="allergy"
+  accept="allergies"
+  hint="Reread the first sentence of the subsection on immediate hypersensitivities, the first subsection under Hypersensitivities."
 >}}
 
 ### Define autoimmunity
@@ -102,7 +103,7 @@ Allergies
 {{< multiplechoice
   question="A potential cause of acquired autoimmunity is ________."
   answer="molecular mimicry"
-  hint="The section explains how an antibody raised against a pathogen's surface molecules can end up recognizing the body's own similarly shaped proteins — what is that phenomenon called?"
+  hint="Reread the last paragraph of the section's final subsection."
 >}}
 tissue hypersensitivity
 molecular mimicry
@@ -113,7 +114,7 @@ radiation exposure
 {{< multiplechoice
   question="Autoantibodies are probably involved in:"
   answer="systemic lupus erythematosus"
-  hint="Look for the disease described as a diffuse antibody response against the person's own DNA and proteins."
+  hint="Reread the first paragraph of the section's final subsection and the illustration that follows it."
 >}}
 reactions to poison ivy
 pollen allergies
@@ -124,7 +125,7 @@ HIV/AIDS
 {{< multiplechoice
   question="Which of the following diseases is not due to autoimmunity?"
   answer="HIV/AIDS"
-  hint="Three of these four are explicitly described in this section as autoimmune diseases — the fourth is caused directly by a virus destroying immune cells, not by the body attacking itself."
+  hint="Compare the diseases named in the section's final subsection with the causes listed in the Immunodeficiency subsection."
 >}}
 rheumatic fever
 systemic lupus erythematosus
@@ -133,16 +134,16 @@ HIV/AIDS
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The type of hypersensitivity to self antigens is called ________."
-  answer="autoimmunity"
-  hint="This is one of the three subtypes of hypersensitivity introduced earlier — the one where the immune system attacks the body's own tissue instead of a foreign invader."
->}}
-
-{{< textin
   question="An antibody that incorrectly marks 'self' components as foreign and stimulates the immune response is called a(n) ________."
   answer="autoantibody"
   accept="autoantibodies"
-  hint="This is simply an antibody-class protein — the same kind the body normally makes against pathogens — misdirected against its own molecules."
+  hint="Reread the first paragraph of the section's final subsection."
+>}}
+
+{{< textin
+  question="The type of hypersensitivity to self antigens is called ________."
+  answer="autoimmunity"
+  hint="This is one of the three subtypes of hypersensitivity introduced earlier — the one where the immune system attacks the body's own tissue instead of a foreign invader."
 >}}
 
 ---

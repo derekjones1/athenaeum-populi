@@ -19,7 +19,7 @@ weight: 5
 
 A substance that helps a chemical reaction to occur is a catalyst, and the special molecules that catalyze biochemical reactions are enzymes. Almost all enzymes are proteins, comprised of amino acid chains, and they perform the critical task of lowering the activation energies of chemical reactions inside the cell. Enzymes do this by binding to the reactant molecules, and holding them in such a way as to make the chemical bond-breaking and bond-forming processes take place more readily. It is important to remember that enzymes do not change the reaction's ΔG. In other words, they do not change whether a reaction is exergonic (spontaneous) or endergonic. This is because they do not change the reactants' or products' free energy. They only reduce the activation energy required to reach the transition state (below).
 
-{{< mediafigure src="biology/Figure_06_05_01-7ad6" kind="diagram" alt="A graph of energy against reaction path, comparing a reaction with and without a catalyst. Both curves start at the same reactants level, rise over an activation-energy hump, and settle at the same, lower products level; the catalyzed curve's hump is smaller." longdesc="A line graph titled Activation Energy, with Energy on the vertical axis and Reaction path on the horizontal axis. Two curves start together at a flat 'reactants' level on the left, each rise to a peak, then drop to a flat 'products' level on the right, lower than the start. The solid purple curve (Reaction without catalyst) rises to a taller peak; the dashed red curve (Reaction with catalyst) rises to a shorter peak partway up the purple one. A double-headed arrow from the reactants level to each peak marks that curve's activation energy, and a double-headed arrow labeled ΔG marks the drop from the reactants level to the shared products level, the same for both curves." eager="true" >}}
+{{< mediafigure src="biology/Figure_06_05_01-7ad6" kind="diagram" alt="A graph of energy against reaction path, comparing a reaction with and without a catalyst. Both curves start at the same reactants level, rise over an activation-energy hump, and settle at the same products level, which is higher than the reactants level; the catalyzed curve's hump is smaller." longdesc="A line graph titled Activation Energy, with Energy on the vertical axis and Reaction path on the horizontal axis. Two curves start together at a flat 'reactants' level on the left, each rise to a peak, then fall to a flat 'products' level on the right, which sits higher than the start. The solid purple curve (Reaction without catalyst) rises to a taller peak; the dashed red curve (Reaction with catalyst) rises to a shorter peak partway up the purple one. On the left, a double-headed arrow from the reactants level to each peak (purple to the purple peak, red to the red peak) marks that curve's activation energy. On the right, a purple double-headed arrow labeled ΔG spans the rise from the reactants level up to the shared products level, the same for both curves; beside it a red double-headed arrow spans the same reactants-to-products gap, and a short red double-headed arrow above it spans the products level up to the height of the red peak." eager="true" >}}
 Enzymes lower the reaction's activation energy but do not change the reaction's free energy.
 {{< /mediafigure >}}
 
@@ -61,7 +61,7 @@ Competitive and noncompetitive inhibition affect the reaction's rate differently
 
 Some inhibitor molecules bind to enzymes in a location where their binding induces a conformational change that reduces the enzyme's affinity for its substrate. This type of inhibition is an **allosteric inhibition** (below). More than one polypeptide comprise most allosterically regulated enzymes, meaning that they have more than one protein subunit. When an allosteric inhibitor binds to an enzyme, all active sites on the protein subunits change slightly such that they bind their substrates with less efficiency. There are allosteric activators as well as inhibitors. Allosteric activators bind to locations on an enzyme away from the active site, inducing a conformational change that increases the affinity of the enzyme's active site(s) for its substrate(s).
 
-{{< mediafigure src="biology/Figure_06_05_05-d31b" kind="diagram" alt="Two side-by-side diagrams of a four-subunit allosteric enzyme: one shows an inhibitor binding away from the active site and locking the enzyme in its inactive form, and the other shows an activator binding away from the active site and stabilizing the enzyme's active form." longdesc="Diagram titled Allosteric Activators and Inhibitors, showing a four-lobed, pinwheel-shaped enzyme with an active site (one of four) and a regulatory site (one of four) labeled on one copy. Top row: the enzyme's 'Inactive Form,' with a non-functional active site, sits at left; a red, crescent-shaped inhibitor approaches from above and, once bound at the regulatory site, produces the 'Stabilized Inactive Form' at right. Bottom row: the enzyme's 'Active Form' sits at left; a green, triangular activator approaches from below and, once bound, produces the 'Stabilized Active Form' at right, drawn with the single green triangle seated in the notch at the top of the enzyme. A double-headed vertical arrow labeled 'Oscillation' connects the inactive and active forms in the left column, showing the enzyme naturally toggles between the two shapes until a regulator locks it in one." >}}
+{{< mediafigure src="biology/Figure_06_05_05-d31b" kind="diagram" alt="A diagram of a four-subunit allosteric enzyme in two rows: the top row shows an inhibitor binding away from the active site and locking the enzyme in its inactive form, and the bottom row shows an activator binding away from the active site and stabilizing the enzyme's active form." longdesc="Diagram titled Allosteric Activators and Inhibitors, showing a four-lobed, pinwheel-shaped enzyme with an active site (one of four) and a regulatory site (one of four) labeled on one copy. Top row: the enzyme's 'Inactive Form,' with a non-functional active site, sits at left; a red, crescent-shaped inhibitor approaches from above and, once bound at the regulatory site, produces the 'Stabilized Inactive Form' at right. Bottom row: the enzyme's 'Active Form' sits at left; a green, triangular activator approaches from below and, once bound, produces the 'Stabilized Active Form' at right, drawn with the single green triangle seated at the top of the enzyme, in the cleft between the two upper subunits. A pair of vertical arrows labeled 'Oscillation', one pointing down and one pointing up, connects the inactive and active forms in the left column, showing the enzyme naturally toggles between the two shapes until a regulator locks it in one." >}}
 Allosteric inhibitors modify the enzyme's active site so that substrate binding is reduced or prevented. In contrast, allosteric activators modify the enzyme's active site so that the affinity for the substrate increases. Credit: Rao, A., Hawkins, A., Fletcher, S. and Tag, A.
 Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
@@ -94,7 +94,7 @@ In eukaryotic cells, molecules such as enzymes are usually compartmentalized int
 
 Molecules can regulate enzyme function in many ways. However, a major question remains: What are these molecules and from where do they come? Some are cofactors and coenzymes, ions, and organic molecules, as you have learned. What other molecules in the cell provide enzymatic regulation, such as allosteric modulation, and competitive and noncompetitive inhibition? The answer is that a wide variety of molecules can perform these roles. Some include pharmaceutical and non-pharmaceutical drugs, toxins, and poisons from the environment. Perhaps the most relevant sources of enzyme regulatory molecules, with respect to cellular metabolism, are cellular metabolic reaction products themselves. In a most efficient and elegant way, cells have evolved to use their own reactions' products for feedback inhibition of enzyme activity. **Feedback inhibition** involves using a reaction product to regulate its own further production (below). The cell responds to the abundance of specific products by slowing down production during anabolic or catabolic reactions. Such reaction products may inhibit the enzymes that catalyzed their production through the mechanisms that we described above.
 
-{{< mediafigure src="biology/Figure_06_05_07-c078" kind="diagram" alt="A metabolic pathway flow chart in which threonine deaminase converts threonine through four intermediates and five enzymes into the end product isoleucine, which then feeds back to bind the enzyme's allosteric site and block the pathway." longdesc="A flow chart with two loops sharing the threonine deaminase enzyme. Top loop, drawn with green arrows: 'Initial Substrate (Threonine)' feeds into 'Threonine is in Active Site' of 'Enzyme 1 (Threonine Deaminase),' which converts it stepwise through Intermediate A, Enzyme 2, Intermediate B, Enzyme 3, Intermediate C, Enzyme 4, Intermediate D, Enzyme 5, down to the 'End Product (Isoleucine).' Bottom loop, drawn with a red inhibition bar: the end product isoleucine loops back and binds threonine deaminase's allosteric site, labeled 'Isoleucine Binds to Allosteric Site,' which blocks the active site ('Feedback Inhibition — Active Site No Longer Available; Pathway Halted') so threonine cannot bind. A separate arrow labeled 'Isoleucine Dissociates' shows the enzyme returning to its open state, with 'Active Site Available,' once isoleucine leaves, ready for threonine to bind again." >}}
+{{< mediafigure src="biology/Figure_06_05_07-c078" kind="diagram" alt="A metabolic pathway flow chart in which threonine deaminase converts threonine through four intermediates and five enzymes into the end product isoleucine, which then feeds back to bind the enzyme's allosteric site and block the pathway." longdesc="A flow chart that runs clockwise with green arrows. At top center, 'Initial Substrate (Threonine)' curves down into an arrow that enters 'Enzyme 1 (Threonine Deaminase)' at top right, labeled 'Threonine is in Active Site.' From there arrows lead down a column of boxes: Intermediate A, then Intermediate B (the arrow labeled Enzyme 2), Intermediate C (Enzyme 3), and Intermediate D (Enzyme 4), and then leftward (Enzyme 5) to the 'End Product (Isoleucine)' at bottom center. A further arrow carries isoleucine left, labeled 'Isoleucine Used by Cell.' A red inhibition bar runs from the end product up to a copy of threonine deaminase at lower left, labeled 'Isoleucine Binds to Allosteric Site,' with the note 'Feedback Inhibition — Active Site No Longer Available; Pathway Halted.' An arrow rises from this inhibited enzyme and splits: one branch points left, labeled 'Isoleucine Dissociates,' and the other curves right to the freed enzyme, labeled 'Threonine Deaminase,' with 'Active Site Available' and 'Allosteric Site' marked on it. An arrow then leads from the freed enzyme right to Enzyme 1, where threonine binds again, closing the loop." >}}
 Metabolic pathways are a series of reactions that multiple enzymes catalyze. Feedback inhibition, where the pathway's end product inhibits an upstream step, is an important regulatory mechanism in cells. Metabolic pathways are a series of reactions catalyzed by
 multiple enzymes (Intermediates A – D, Enzymes 1 – 5). Feedback inhibition occurs when the pathway's end product (here isoleucine) inhibits an upstream
 enzyme (indicated by red bar). In this example, isoleucine will bind to Threonine Deaminase (at the allosteric site) and prevent threonine from binding to
@@ -130,7 +130,7 @@ Enzyme action must be regulated so that in a given cell at a given time, the des
 {{< multiplechoice
   question="Which of the following is not true about enzymes?"
   answer="They increase ΔG of reactions."
-  hint="Enzymes speed up a reaction by lowering its activation energy — they never change the free-energy difference between reactants and products."
+  hint="Reread the section's opening paragraph."
 >}}
 They increase ΔG of reactions.
 They are usually made of amino acids.
@@ -141,10 +141,10 @@ Each one is specific to the particular substrate(s) to which it binds.
 {{< textin
   question="An abundance of a metabolic pathway's own end product can slow the pathway's first enzyme through ________, in which the product itself binds and blocks further production."
   answer="feedback inhibition"
-  hint="Isoleucine binding to threonine deaminase, its own pathway's first enzyme, is the section's worked example."
+  hint="Reread the last subsection of the section's final main heading."
 >}}
 
-{{< selfcheck question="Explain in your own words how enzyme feedback inhibition benefits a cell." hint="Think about what would happen to a cell's energy budget if a pathway kept producing a product it no longer needed." >}}
+{{< selfcheck question="Explain in your own words how enzyme feedback inhibition benefits a cell." hint="Reread the section's last subsection and its pathway figure." >}}
 Feedback inhibition allows cells to control the amounts of metabolic products produced. If there is too much of a particular product relative to the cell's needs, feedback inhibition effectively causes the cell to decrease production of that particular product. In general, this reduces the production of superfluous products and conserves energy, maximizing energy efficiency.
 ===CHECKS===
 feedback inhibition allows cells to control the amounts of metabolic products produced
@@ -154,10 +154,16 @@ this reduces the production of superfluous products and conserves energy, maximi
 
 ### Explain how enzymes function as molecular catalysts
 
+{{< textin
+  question="A chemical reactant to which an enzyme binds, and upon which it acts, is called the enzyme's ________."
+  answer="substrate"
+  hint="Reread the opening paragraph of the section's first main heading."
+>}}
+
 {{< multiplechoice
   question="Which of the following analogies best describes the induced-fit model of enzyme-substrate binding?"
   answer="a hug between two people"
-  hint="Look for the analogy where BOTH partners adjust their shape to fit each other, rather than one rigid shape simply slotting into another."
+  hint="Reread the Induced Fit and Enzyme Function subsection."
 >}}
 a hug between two people
 a key fitting into a lock
@@ -168,13 +174,7 @@ the fitting together of two jigsaw puzzle pieces
 {{< textin
   question="The region of an enzyme where its substrate binds is called the ________."
   answer="active site"
-  hint="Its unique combination of amino acid residues creates the specific chemical environment that binds the substrate."
->}}
-
-{{< textin
-  question="A chemical reactant to which an enzyme binds, and upon which it acts, is called the enzyme's ________."
-  answer="substrate"
-  hint="An enzyme is specific to this molecule (or these molecules) the way a lock is specific to its key."
+  hint="Reread the opening paragraph of the section's first main heading."
 >}}
 
 ### Discuss enzyme regulation by various factors
@@ -182,7 +182,7 @@ the fitting together of two jigsaw puzzle pieces
 {{< multiplechoice
   question="An allosteric inhibitor does which of the following?"
   answer="Binds to an enzyme away from the active site and changes the conformation of the active site, decreasing its affinity for the substrate."
-  hint="Allosteric means \"other site\" — the inhibitor never touches the active site itself, but reshapes it from a distance."
+  hint="Reread the paragraph that follows the inhibition graph."
 >}}
 Binds to an enzyme away from the active site and changes the conformation of the active site, increasing its affinity for substrate binding.
 Binds to the active site and blocks it from binding substrate.
@@ -193,17 +193,17 @@ Binds directly to the active site and mimics the substrate.
 {{< textin
   question="An inhibitor molecule that binds directly to an enzyme's active site, blocking the substrate from binding there, causes ________."
   answer="competitive inhibition"
-  hint="The inhibitor and the substrate are competing for the very same site."
+  hint="Reread the first paragraph of Molecular Regulation of Enzymes."
 >}}
 
 {{< textin
   question="A process that changes a substance's natural properties, such as an enzyme losing its shape from heat, extreme pH, or chemical exposure, is called ________."
   answer="denature"
   accept="denaturation|denatured|denaturing"
-  hint="This is the same process, by another name, that changes egg white when it is fried."
+  hint="Reread the second paragraph of the section's first main heading."
 >}}
 
-{{< selfcheck question="With regard to enzymes, why are vitamins necessary for good health? Give examples." hint="Think about what an enzyme cannot do on its own, and which class of dietary molecule supplies the missing piece." >}}
+{{< selfcheck question="With regard to enzymes, why are vitamins necessary for good health? Give examples." hint="Reread the paragraph that follows the Everyday Connection box, and the vitamin figure." >}}
 Most vitamins and minerals act as coenzymes and cofactors for enzyme action. Many enzymes require the binding of certain cofactors or coenzymes to be able to catalyze their reactions. Since enzymes catalyze many important reactions, it is critical to obtain sufficient vitamins and minerals from the diet and from supplements. Vitamin C (ascorbic acid) is a coenzyme necessary for the action of enzymes that build collagen, an important protein component of connective tissue throughout the body. Magnesium ion (Mg²⁺) is an important cofactor that is necessary for the enzyme pyruvate dehydrogenase to catalyze part of the pathway that breaks down sugar to produce energy. Vitamins cannot be produced in the human body and therefore must be obtained in the diet.
 ===CHECKS===
 most vitamins and minerals act as coenzymes and cofactors for enzyme action
@@ -217,9 +217,9 @@ vitamins cannot be produced in the human body and must be obtained in the diet
   question="A small organic molecule, such as a vitamin or its derivative, required to enhance an enzyme's activity is called a(n) ________."
   answer="coenzyme"
   accept="co-enzyme"
-  hint="Unlike a cofactor, this helper molecule is organic — built on a carbon-and-hydrogen framework."
+  hint="Reread the paragraph that follows the Everyday Connection box."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 6.5: Enzymes](https://openstax.org/books/biology-2e/pages/6-5-enzymes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with five of the seven re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a graph or illustration, not a photograph — only the red-capsule image is a true photo) and an extended description added for the five figures whose full reading (axis behavior, drawn panels, or flow-chart structure) is not carried by their captions (the activation-energy graph, the four-panel induced-fit sequence, the enzyme-inhibition graph, the allosteric activators/inhibitors diagram, and the feedback-inhibition pathway); ion charges in prose changed from the source's "Fe++"/"Mg++"/"Zn++" to the site's standard trailing-superscript notation ("Fe²⁺", "Mg²⁺", "Zn²⁺"); inline references to figures changed from the source's parenthetical figure links to descriptive phrases ("below," "above") since figures are not numbered here; the Everyday Connection note kept its own figure (the pharmaceutical capsules) nested inside the callout, in its source position; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and six key-term recall items (feedback inhibition, active site, substrate, competitive inhibition, denature, and coenzyme) added from the glossary to round out every objective group with an auto-graded item; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 6.5: Enzymes](https://openstax.org/books/biology-2e/pages/6-5-enzymes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with five of the seven re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a graph or illustration, not a photograph — only the red-capsule image is a true photo) and an extended description added for the five figures whose full reading (axis behavior, drawn panels, or flow-chart structure) is not carried by their captions (the activation-energy graph, the four-panel induced-fit sequence, the enzyme-inhibition graph, the allosteric activators/inhibitors diagram, and the feedback-inhibition pathway), with the source alt's claim that the allosteric diagram's "left part" shows inhibition and its "right part" activation corrected to its top and bottom rows; ion charges in prose changed from the source's "Fe++"/"Mg++"/"Zn++" to the site's standard trailing-superscript notation ("Fe²⁺", "Mg²⁺", "Zn²⁺"); inline references to figures changed from the source's parenthetical figure links to descriptive phrases ("below," "above") since figures are not numbered here; the Everyday Connection note kept its own figure (the pharmaceutical capsules) nested inside the callout, in its source position; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and six key-term recall items (feedback inhibition, active site, substrate, competitive inhibition, denature, and coenzyme) added from the glossary to round out every objective group with an auto-graded item; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

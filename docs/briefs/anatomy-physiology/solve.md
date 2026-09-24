@@ -6,7 +6,8 @@ double-keyed, or an accept-list gap surfaces before the tree goes green.
 You run in a fresh context on purpose — read nothing but what this brief
 names.
 
-Repository root: `/Users/derek/GolandProjects/athenaeum-populi`. **Never
+Repository root: `/Users/derek/GolandProjects/athenaeum-populi`. `SP` is
+the scratchpad directory named in your task. **Never
 run a git command. Do not spawn sub-agents. Do not run any `npm` script.**
 **Do not open the live page under `content/`** — it prints the keys. Do
 not read `data/verification/`, `$SP/ledger-*`, `$SP/check-*`, `$SP/keys-*`,

@@ -18,11 +18,11 @@ weight: 4
 
 The endomembrane system (endo = "within") is a group of membranes and organelles in eukaryotic cells that works together to modify, package, and transport lipids and proteins. It includes the nuclear envelope, lysosomes, and vesicles, which we have already mentioned, and the endoplasmic reticulum and Golgi apparatus, which we will cover shortly. Although not technically *within* the cell, the plasma membrane is included in the endomembrane system because, as you will see, it interacts with the other endomembranous organelles. The endomembrane system does not include either mitochondria or chloroplast membranes.
 
-{{< mediafigure src="biology/Figure_04_04_01-08bf" kind="diagram" eager="true" alt="A flow diagram showing an integral membrane protein's path from the rough endoplasmic reticulum, through the Golgi apparatus, to the plasma membrane: a vesicle carrying the protein and an attached carbohydrate buds from the ER, fuses with the Golgi's cis face, and the protein gains more carbohydrate as it passes through the Golgi's stacked membranes before budding from the trans face and fusing with the plasma membrane." longdesc="A vertical cross-section, top to bottom. At top, a rounded purple nucleus sits beside the rough endoplasmic reticulum, drawn as stacked, folded blue membrane sheets studded with small red dots (ribosomes). A green integral membrane protein, with a purple carbohydrate attached on the side facing into the membrane sac, sits within the ER membrane. An arrow shows a small circular vesicle carrying the same green protein and purple carbohydrate budding from the ER and moving down to the Golgi apparatus, drawn as a stack of curved orange-and-pink membrane layers labeled cis face (top, nearest the ER) and trans face (bottom). As the protein passes through the Golgi's stacked cisternae, arrows show it gaining additional purple carbohydrate. A vesicle then buds from the Golgi's trans face and travels down to the plasma membrane at the bottom of the figure, where it fuses; the carbohydrate, originally facing the inside of the ER membrane, now faces outward from the cell surface, and a transport vesicle icon at lower left labels the vesicle stage." >}}
+{{< mediafigure src="biology/Figure_04_04_01-08bf" kind="diagram" eager="true" alt="A flow diagram showing an integral membrane protein's path from the rough endoplasmic reticulum, through the Golgi apparatus, to the plasma membrane: a vesicle carrying the protein and an attached carbohydrate buds from the ER, fuses with the Golgi's cis face, and the protein gains more carbohydrate as it passes through the Golgi's stacked membranes before budding from the trans face and fusing with the plasma membrane." longdesc="A vertical cross-section, top to bottom. At top, a rounded purple nucleus sits beside the rough endoplasmic reticulum, drawn as stacked, folded blue membrane sheets studded with small red dots (ribosomes). A green integral membrane protein, with a purple carbohydrate attached on the side facing into the membrane sac, sits within the ER membrane. An arrow shows a small circular vesicle carrying the same green protein and purple carbohydrate budding from the ER and moving down to the Golgi apparatus, drawn as a stack of curved orange-and-pink membrane layers labeled cis face (top, nearest the ER) and trans face (lower right), with a bracket at the right labeling the stacked layers cisternae. The protein is drawn again, without arrows, in two successive cisternae, its purple carbohydrate a single strand in the first and forked in the second, and then in a branched form at the Golgi's lower edge. There a vesicle buds off; a curved arrow leads down to it, a second arrow leads right to the vesicle fusing with the plasma membrane at the bottom of the figure, and a third leads up to the protein now sitting in the plasma membrane; the carbohydrate, originally facing the inside of the ER membrane, now faces outward from the cell surface. Separately, an empty round vesicle at lower left is labeled transport vesicle." >}}
 Membrane and secretory proteins are synthesized in the rough endoplasmic reticulum (RER). The RER also sometimes modifies proteins. In this illustration, a (green) integral membrane protein is modified by attachment of a (purple) carbohydrate in the ER. Vesicles with the integral protein bud from the ER and fuse with the Golgi apparatus' cis face. As the protein passes along the Golgi's cisternae, the addition of more carbohydrates further modifies it. After its synthesis is complete, it exits as an integral membrane protein of the vesicle that buds from the Golgi's **trans** face. When the vesicle fuses with the cell membrane, the protein becomes an integral portion of that cell membrane. (credit: modification of work by Magnus Manske)
 {{< /mediafigure >}}
 
-{{< selfcheck question="If a peripheral membrane protein were synthesized in the lumen (inside) of the ER, would it end up on the inside or outside of the plasma membrane?" hint="Follow the carbohydrate in the figure above: note which face of the vesicle it sits on at each stage, and what happens to that face when the vesicle fuses with the plasma membrane." >}}
+{{< selfcheck question="If a peripheral membrane protein were synthesized in the lumen (inside) of the ER, would it end up on the inside or outside of the plasma membrane?" hint="Follow the purple carbohydrate through the figure above, from the ER to the plasma membrane." >}}
 It would end up on the outside. After the vesicle passes through the Golgi apparatus and fuses with the plasma membrane, it turns inside out.
 ===CHECKS===
 it would end up on the outside
@@ -39,7 +39,7 @@ We call the ER tubules' hollow portion the lumen or cisternal space. The ER's me
 
 Scientists have named the **rough endoplasmic reticulum (RER)** as such because the ribosomes attached to its cytoplasmic surface give it a studded appearance when viewing it through an electron microscope (below).
 
-{{< mediafigure src="biology/Figure_04_04_02_new" kind="photo" alt="A grayscale transmission electron micrograph of a cell's nucleus and surrounding cytoplasm, with six labeled parts and a scale bar." longdesc="Labels point from the image to six features. 'Mitochondrion overlaying part of the RER' and 'Rough endoplasmic reticulum' point to a striated, layered membrane band curving across the upper portion of the image. 'Nuclear envelope' and 'Nuclear pore' point to the boundary of the large dark circular body that fills most of the frame. 'Nucleus' points to that dark circular body, and 'Nucleolus' points to a smaller, denser dark patch within it. A scale bar in the lower left reads 500 nm." >}}
+{{< mediafigure src="biology/Figure_04_04_02_new" kind="photo" alt="A grayscale transmission electron micrograph of a cell's nucleus and surrounding cytoplasm, with six labeled parts and a scale bar." longdesc="Labels point from the image to six features. 'Mitochondrion overlaying part of the RER' and 'Rough endoplasmic reticulum' point to a striated, layered membrane band curving across the upper portion of the image. 'Nuclear envelope' and 'Nuclear pore' point to the upper right edge of the large, rounded, speckled gray body that fills most of the frame. 'Nucleus' points to that speckled body, and 'Nucleolus' points to a large, dense, uniformly dark patch within it at the lower right, running off the edge of the frame. A scale bar in the lower left reads 500 nm." >}}
 This transmission electron micrograph shows the rough endoplasmic reticulum and other organelles in a pancreatic cell. (credit: modification of work by Louisa Howard)
 {{< /mediafigure >}}
 
@@ -97,7 +97,7 @@ Geneticists analyze prenatal genetic test results and may counsel pregnant peopl
 
 In addition to their role as the digestive component and organelle-recycling facility of animal cells, lysosomes are part of the endomembrane system. Lysosomes also use their hydrolytic enzymes to destroy pathogens (disease-causing organisms) that might enter the cell. A good example of this occurs in macrophages, a group of white blood cells which are part of your body's immune system. In a process that scientists call phagocytosis or endocytosis, a section of the macrophage's plasma membrane invaginates (folds in) and engulfs a pathogen. The invaginated section, with the pathogen inside, then pinches itself off from the plasma membrane and becomes a vesicle. The vesicle fuses with a lysosome. The lysosome's hydrolytic enzymes then destroy the pathogen (below).
 
-{{< mediafigure src="biology/Figure_04_04_04-4e69" kind="diagram" alt="A five-step flow diagram titled Phagocytosis, showing an amoeba-like cell with thin branching surface projections engulfing and digesting a bacterium." longdesc="A large tan cell body fringed with thin, branching blue surface projections labeled Pseudopods. A small green oval labeled Bacterium sits just outside the cell at upper left. A red arrow points from it to a shallow dent in the cell's edge labeled Phagocytosis, where the membrane is folding around the bacterium. A second red arrow leads to the first of four circles arranged in a row across the cell's interior: the first circle, labeled Phagosome, contains only the green bacterium; a nearby cluster of small brown dots is labeled Lysosome containing digestive enzymes. Red arrows connect the four circles in sequence, showing the brown dots merging into each circle while the green shape shrinks and fragments — intact in the first circle, partly broken up in the second and third, and reduced to a few small green flecks among the brown dots in the fourth. A final red arrow leads outside the cell to a small scatter of dots labeled Exocytic vesicle containing undigested material." >}}
+{{< mediafigure src="biology/Figure_04_04_04-4e69" kind="diagram" alt="A flow diagram titled Phagocytosis, showing an amoeba-like cell with thin branching surface projections engulfing and digesting a bacterium." longdesc="A large tan cell body fringed with thin, branching blue surface projections labeled Pseudopods. A small green oval bacterium sits just outside the cell at upper left. A red arrow points from it to a pocket in the cell's upper left edge, where the membrane is folding around a bacterium labeled Bacterium; the word Phagocytosis is printed just below this pocket. A second red arrow leads to a circle labeled Phagosome that holds the intact green bacterium. A third red arrow leads down to a pair of circles fusing together: the phagosome with its still-intact bacterium, and a circle of small brown dots. Just left of the pair, a lysosome, another circle of brown dots labeled Lysosome containing digestive enzymes, has its own red arrow into the fusing pair. Red arrows then lead to two more circles in turn, each full of brown dots with the green bacterium broken into fragments, fewer and smaller in the second. A final red arrow leads to an opening in the cell's right edge, where dots and green flecks spill outside; it is labeled Exocytic vesicle containing undigested material." >}}
 A macrophage has engulfed (phagocytized) a potentially pathogenic bacterium and then fuses with lysosomes within the cell to destroy the pathogen. Other organelles are present in the cell but for simplicity we do not show them.
 {{< /mediafigure >}}
 
@@ -119,10 +119,16 @@ The RER modifies proteins and synthesizes phospholipids in cell membranes. The S
 
 ### List the components of the endomembrane system
 
+{{< textin
+  question="A group of organelles and membranes in eukaryotic cells that work together to modify, package, and transport lipids and proteins is called the ________."
+  answer="endomembrane system"
+  hint="Reread the section's opening paragraph."
+>}}
+
 {{< multiplechoice
   question="Which of the following is not a component of the endomembrane system?"
   answer="mitochondrion"
-  hint="Three of these four are named in the section as endomembrane-system components; the fourth has its own separate set of membranes, outside the system."
+  hint="Reread the section's opening paragraph."
 >}}
 mitochondrion
 Golgi apparatus
@@ -133,7 +139,7 @@ lysosome
 {{< multiplechoice
   question="Congenital disorders of glycosylation are a growing class of rare diseases. Which organelle would be most commonly involved in the glycoprotein disorder portion of the group?"
   answer="Golgi apparatus"
-  hint="Glycosylation means attaching sugar chains to a protein — recall which organelle performs that particular modification once the RER has handed the protein off."
+  hint="Reread the paragraph that follows the white-blood-cell micrograph."
 >}}
 RER
 ribosomes
@@ -141,13 +147,7 @@ endosomes
 Golgi apparatus
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A group of organelles and membranes in eukaryotic cells that work together to modify, package, and transport lipids and proteins is called the ________."
-  answer="endomembrane system"
-  hint="It is the name for the whole group — the nuclear envelope, ER, Golgi apparatus, lysosomes, vesicles, and plasma membrane all belong to it."
->}}
-
-{{< selfcheck question="In your opinion, is the nuclear membrane part of the endomembrane system? Why or why not? Defend your answer." hint="Check whether the nuclear envelope is continuous with a structure the section already places inside the endomembrane system." >}}
+{{< selfcheck question="In your opinion, is the nuclear membrane part of the endomembrane system? Why or why not? Defend your answer." hint="Reread the first two paragraphs of the section's first subsection." >}}
 Since the external surface of the nuclear membrane is continuous with the rough endoplasmic reticulum, which is part of the endomembrane system, then it is correct to say that it is part of the system.
 ===CHECKS===
 the external surface of the nuclear membrane is continuous with the rough endoplasmic reticulum
@@ -160,7 +160,7 @@ it is correct to say that it is part of the system
 {{< multiplechoice
   question="The process by which a cell engulfs a foreign particle is known as:"
   answer="phagocytosis"
-  hint="This is the term the macrophage example uses for a cell folding its membrane around a pathogen and engulfing it."
+  hint="Reread the macrophage example in the Lysosomes subsection."
 >}}
 endosymbiosis
 phagocytosis
@@ -171,7 +171,7 @@ membrane synthesis
 {{< multiplechoice
   question="Which of the following is most likely to have the greatest concentration of smooth endoplasmic reticulum?"
   answer="a cell that makes steroid hormones"
-  hint="Match the organelle to one of the SER's specific functions — protein secretion and pathogen destruction point to different organelles instead."
+  hint="Reread the Smooth ER subsection."
 >}}
 a cell that secretes enzymes
 a cell that destroys pathogens
@@ -182,7 +182,7 @@ a cell that engages in photosynthesis
 {{< multiplechoice
   question="Which of the following sequences correctly lists in order the steps involved in the incorporation of a proteinaceous molecule within a cell?"
   answer="synthesis of the protein on the ribosome; modification in the endoplasmic reticulum; tagging in the Golgi; distribution via the vesicle"
-  hint="Trace the path in the order this section describes it — ribosome, then ER, then Golgi, then vesicle — and rule out any option that gives the ribosome or the vesicle the wrong job."
+  hint="Follow the section's first figure and its caption from start to finish."
 >}}
 protein synthesis of the protein on the ribosome; modification in the Golgi apparatus; packaging in the endoplasmic reticulum; tagging in the vesicle
 synthesis of the protein on the lysosome; tagging in the Golgi; packaging in the vesicle; distribution in the endoplasmic reticulum
@@ -190,14 +190,7 @@ synthesis of the protein on the ribosome; modification in the endoplasmic reticu
 synthesis of the protein on the lysosome; packaging in the vesicle; distribution via the Golgi; tagging in the endoplasmic reticulum
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A series of interconnected membranous sacs and tubules within eukaryotic cells that collectively modifies proteins and synthesizes lipids is called the ________."
-  answer="endoplasmic reticulum"
-  accept="ER"
-  hint="It has two functionally distinct regions — one studded with ribosomes, one without."
->}}
-
-{{< selfcheck question="In the context of cell biology, what do we mean by form follows function? What are at least two examples of this concept?" hint="Look back at the section's own arm-and-wing example, then think of a second body part or organelle whose shape matches what it does." >}}
+{{< selfcheck question="In the context of cell biology, what do we mean by form follows function? What are at least two examples of this concept?" hint="Find the paragraphs in this section and the previous one that call something an example of form following function." >}}
 "Form follows function" refers to the idea that the function of a body part dictates the form of that body part. As an example, compare your arm to a bat's wing. While the bones of the two correspond, the parts serve different functions in each organism and their forms have adapted to follow that function.
 ===CHECKS===
 the function of a body part dictates the form of that body part
@@ -206,6 +199,13 @@ the bones of the two correspond
 the parts serve different functions in each organism and their forms have adapted to follow that function
 {{< /selfcheck >}}
 
+{{< textin
+  question="A series of interconnected membranous sacs and tubules within eukaryotic cells that collectively modifies proteins and synthesizes lipids is called the ________."
+  answer="endoplasmic reticulum"
+  accept="ER"
+  hint="Reread the opening paragraph of the section's first subsection."
+>}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 4.4: The Endomembrane System and Proteins](https://openstax.org/books/biology-2e/pages/4-4-the-endomembrane-system-and-proteins) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with one re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the phagocytosis illustration is a drawn cartoon, not a photograph, despite its JPEG source); a longer extended description added for the three figures that are labeled diagrams or micrographs whose full reading is not carried by their captions (the ER-to-Golgi-to-membrane flow diagram, the labeled rough-ER micrograph, and the phagocytosis flow diagram); the first figure's alt shortened from over 600 characters to what the image shows, with its step-by-step walk-through moved into the longdesc; inline references to figures changed from the source's parenthetical figure links to descriptive phrases ("above," "below") since figures are not numbered here; the Link to Learning note's bare "here" replaced with descriptive link text; two Career Connection notes rendered as callouts with their bold names and italicized job titles; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (endomembrane system, endoplasmic reticulum) added from the glossary to round out both objective groups with an auto-graded item; and rubric checkpoints added to each self-check (the body self-check on the peripheral membrane protein included), decomposing its model answer (the source solution) into check-off clauses with no new claims — no new Practice items were needed, since both objective groups already carried the module's full Review Question and Critical Thinking Question sets at or above the raised per-objective and per-section floors.</small>
+<small>This section is adapted from [Biology 2e, Section 4.4: The Endomembrane System and Proteins](https://openstax.org/books/biology-2e/pages/4-4-the-endomembrane-system-and-proteins) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with one re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the phagocytosis illustration is a drawn cartoon, not a photograph, despite its JPEG source); a longer extended description added for the three figures that are labeled diagrams or micrographs whose full reading is not carried by their captions (the ER-to-Golgi-to-membrane flow diagram, the labeled rough-ER micrograph, and the phagocytosis flow diagram); the first figure's alt shortened from over 600 characters to what the image shows, with its step-by-step walk-through moved into the longdesc; inline references to figures changed from the source's parenthetical figure links to descriptive phrases ("above," "below") since figures are not numbered here; the Link to Learning note's bare "here" replaced with descriptive link text; two Career Connection notes rendered as callouts with their bold names and italicized job titles; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); two key-term recall items (endomembrane system, endoplasmic reticulum) added from the glossary to round out both objective groups with an auto-graded item; and rubric checkpoints added to each self-check (the body self-check on the peripheral membrane protein included), decomposing its model answer (the source solution) into check-off clauses with no new claims — no new Practice items were needed, since both objective groups already carried the module's full Review Question and Critical Thinking Question sets at or above the raised per-objective and per-section floors.</small>

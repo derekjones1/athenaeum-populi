@@ -95,7 +95,7 @@ The dynamic pressure of body fluids is also important to human survival. For exa
 {{< multiplechoice
   question="Humans have the most urgent need for a continuous supply of ________."
   answer="oxygen"
-  hint="Brain damage from a lack of this begins within about five minutes; the other choices can be gone without for days, weeks, or longer."
+  hint="Compare the survival times the Summary gives for going without each requirement."
 >}}
 food
 nitrogen
@@ -106,7 +106,7 @@ water
 {{< multiplechoice
   question="Which of the following statements about nutrients is true?"
   answer="All classes of nutrients are essential to human survival."
-  hint="The three basic classes are water, the energy-yielding and body-building nutrients, and the micronutrients — think about whether the section says any one class is optional."
+  hint="Reread the Nutrients subsection, testing each option against its opening definition and its paragraph on macronutrients and micronutrients."
 >}}
 All classes of nutrients are essential to human survival.
 Because the body cannot store any micronutrients, they need to be consumed nearly every day.
@@ -115,9 +115,9 @@ Macronutrients are vitamins and minerals.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A substance in foods and beverages that is essential to human survival is called a ________."
-  answer="nutrient"
-  hint="Water, the energy-yielding and body-building substances, and the micronutrients are the three basic classes of this."
+  question="Some micronutrients, such as vitamin C and most of the B vitamins, are ________ and cannot be stored, so you need to consume them every day or two."
+  answer="water-soluble"
+  hint="Reread the last sentence of the Nutrients subsection."
 >}}
 
 ### Explain why extreme heat and extreme cold threaten human survival
@@ -125,7 +125,7 @@ Macronutrients are vitamins and minerals.
 {{< multiplechoice
   question="C.J. is stuck in their car during a bitterly cold blizzard. Their body responds to the cold by ________."
   answer="breaking down stored energy"
-  hint="The body generates heat two ways in the cold: random muscle movement, and this second response, which draws down an internal reserve."
+  hint="Reread the paragraph on the body's responses to short-term exposure to cold, just after the desert photo, and test each option against it."
 >}}
 increasing the blood to the hands and feet
 becoming lethargic to conserve heat
@@ -136,10 +136,10 @@ significantly increasing blood oxygen levels
 {{< textin
   question="The summary describes the body as responding to low temperatures by ________ and increased fuel consumption."
   answer="shivering"
-  hint="This response is random muscle movement that generates heat — the same response the Everyday Connection box describes medicating away during controlled hypothermia."
+  hint="The paragraph on short-term exposure to cold names this response first."
 >}}
 
-{{< selfcheck question="On his midsummer trek through the desert, Josh ran out of water. Why is this particularly dangerous?" hint="Think about which fluid the body's main response to heat draws on, and what happens to blood pressure once that fluid runs low." >}}
+{{< selfcheck question="On his midsummer trek through the desert, Josh ran out of water. Why is this particularly dangerous?" hint="Reread the Narrow Range of Temperature paragraph on the body's response to heat, and the section's closing paragraph on blood pressure." >}}
 The primary way that the body responds to high environmental heat is by sweating; however, sweating requires water, which comes from body fluids, including blood plasma. If Josh becomes dehydrated, he will be unable to sweat adequately to cool his body, and he will be at risk for heat stroke as his blood pressure drops too much from the loss of water from the blood plasma.
 ===CHECKS===
 the primary way the body responds to high environmental heat is by sweating
@@ -150,7 +150,14 @@ he will be at risk for heat stroke as his blood pressure drops too much from the
 
 ### Explain how the pressure exerted by gases and fluids influences human survival
 
-{{< selfcheck question="When you open a bottle of sparkling water, the carbon dioxide gas in the bottle forms bubbles. If the bottle is left open, the water will eventually “go flat.” Explain these phenomena in terms of atmospheric pressure." hint="Compare the pressure the gas is kept under while the bottle is sealed with the pressure above the liquid once the bottle is opened." >}}
+{{< textin
+  question="A person with decompression sickness is treated with pure oxygen and then moved into a ________ chamber, a reinforced, closed chamber that is pressurized to greater than atmospheric pressure."
+  answer="hyperbaric"
+  accept="hyperbaric chamber"
+  hint="Reread the last paragraph of the Decompression Sickness box, on treatment."
+>}}
+
+{{< selfcheck question="When you open a bottle of sparkling water, the carbon dioxide gas in the bottle forms bubbles. If the bottle is left open, the water will eventually “go flat.” Explain these phenomena in terms of atmospheric pressure." hint="Reread the carbonated-drink example in the Decompression Sickness box." >}}
 In a sealed bottle of sparkling water, carbon dioxide gas is kept dissolved in the water under a very high pressure. When you open the bottle, the pressure of the gas above the liquid changes from artificially high to normal atmospheric pressure. The dissolved carbon dioxide gas expands, and rises in bubbles to the surface. When a bottle of sparkling water is left open, it eventually goes flat because its gases continue to move out of solution until the pressure in the water is approximately equal to atmospheric pressure.
 ===CHECKS===
 in a sealed bottle, carbon dioxide gas is kept dissolved in the water under a very high pressure
@@ -159,16 +166,10 @@ the dissolved carbon dioxide gas expands and rises in bubbles to the surface
 left open, it eventually goes flat because its gases move out of solution until the pressure in the water is approximately equal to atmospheric pressure
 {{< /selfcheck >}}
 
-{{< textin
-  question="A force exerted by a substance that is in contact with another substance is called ________."
-  answer="pressure"
-  hint="The atmosphere and the blood both exert this same kind of force on the body."
->}}
-
 {{< multiplechoice
   question="Decompression sickness (DCS) is brought about by a reduction in ________."
   answer="barometric pressure"
-  hint="Divers surfacing too quickly and pilots in unpressurized cabins both experience this same drop, which lets dissolved gases come out of solution."
+  hint="Reread the opening sentence of the Decompression Sickness box's second paragraph."
 >}}
 core body temperature
 blood oxygen levels
@@ -178,4 +179,4 @@ nutrient stores
 
 ---
 
-<small>This section is adapted from [Anatomy and Physiology 2e, Section 1.4: Requirements for Human Life](https://openstax.org/books/anatomy-and-physiology-2e/pages/1-4-requirements-for-human-life) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP, each kept `kind="photo"` after viewing the image (a match for the manifest's guess); feature boxes rendered as callouts with their bold names and italicized titles; the two in-text figure references ("Figure 1.8", "Figure 1.9") replaced with "shown below" since Hugo does not number figures; the three temperatures given in the source's `N°C (M°F)` form set with a thin space as `N °C (M °F)`; the source's "form bubbles" in a Critical Thinking stem printed as "forms bubbles"; the Controlled Hypothermia box's "approximately 91 degrees" is transcribed as printed, with no unit added, matching the source; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; two key-term recall items (nutrient, pressure) added from the key terms; one cloze recall item ("shivering") added from the chapter summary sentence; and one multiple choice ("barometric pressure") added from the Homeostatic Imbalances box's own sentence to bring the pressure objective's thin source coverage (one Critical Thinking question) up to the section's practice floor; the adult body-water figure corrected from the source's "about 70 percent" to "about 50 to 60 percent" with a visible Source note, on the authority of the book's own Section 26.1.</small>
+<small>This section is adapted from [Anatomy and Physiology 2e, Section 1.4: Requirements for Human Life](https://openstax.org/books/anatomy-and-physiology-2e/pages/1-4-requirements-for-human-life) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP, each kept `kind="photo"` after viewing the image (a match for the manifest's guess); feature boxes rendered as callouts with their bold names and italicized titles; the two in-text figure references ("Figure 1.8", "Figure 1.9") replaced with "shown below" since Hugo does not number figures; the three temperatures given in the source's `N°C (M°F)` form set with a space as `N °C (M °F)`; the source's "form bubbles" in a Critical Thinking stem printed as "forms bubbles"; the Controlled Hypothermia box's "approximately 91 degrees" is transcribed as printed, with no unit added, matching the source; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the module's two glossary terms, nutrient and pressure, are headline terms and not recall items, because their objectives' headings and sibling items necessarily print them (the nutrients Review Question and its options; the sparkling-water question's "atmospheric pressure" and the decompression item's "barometric pressure"), so a recall key would be leaked by its siblings; three clozes added instead: the Nutrients subsection's sentence on vitamin C and the B vitamins ("water-soluble"), the chapter summary's sentence on responses to low temperatures ("shivering"), and the Decompression Sickness box's treatment sentences ("hyperbaric"); and one multiple choice ("barometric pressure") added from the Homeostatic Imbalances box's own sentence to bring the pressure objective's thin source coverage (one Critical Thinking question) up to the section's practice floor; the adult body-water figure corrected from the source's "about 70 percent" to "about 50 to 60 percent" with a visible Source note, on the authority of the book's own Section 26.1.</small>

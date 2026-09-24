@@ -90,7 +90,7 @@ There are numerous other AMPs throughout the body. The characteristics of a few 
 {{< multiplechoice
   question="Why are antimicrobial peptides (AMPs) considered nonspecific defenses?"
   answer="Because AMPs act broadly against many different types of microbes rather than targeting one specific pathogen."
-  hint="Nonspecific means the response does not target one particular kind of pathogen — look at how broadly AMPs are described as acting."
+  hint="See the opening sentence of the Antimicrobial Peptides subsection."
 >}}
 Because AMPs are produced only in response to a specific pathogen.
 Because AMPs work only inside host cells, never outside them.
@@ -135,7 +135,7 @@ The classical pathway provides a more efficient mechanism of activating the comp
 
 The lectin activation pathway is similar to the classical pathway, but it is triggered by the binding of mannose-binding lectin, an acute-phase protein, to carbohydrates on the microbial surface. Like other acute-phase proteins, lectins are produced by liver cells and are commonly upregulated in response to inflammatory signals received by the body during an infection.
 
-{{< mediafigure src="microbiology/OSC_Microbio_17_03_ClassAltPa" alt="A flowchart of the three complement activation pathways converging on one cascade. The classical pathway (antibody-antigen complex) and the lectin pathway (mannose-binding lectin) both lead into C1 or C2 and C4 and then to C3; the alternative pathway triggers spontaneous activation of C3 directly. All three converge on C3b, which leads to C5 and then C5b, which recruits C6, C7, C8, and C9, boxed together as the membrane attack complex." longdesc="Reading left to right: the classical pathway (an antibody-antigen complex) and the lectin pathway (mannose-binding lectin) both feed into the main line at C1, then C2 and C4, then C3. The alternative pathway's own C3 undergoes spontaneous activation and joins the main line directly at C3b. C3 splits into C3a, which branches off, and C3b, which continues the line to C5. C5 splits into C5a, which branches off, and C5b, which continues to a shaded box holding C6, C7, C8, and C9, labeled the membrane attack complex." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_17_03_ClassAltPa" alt="A flowchart of the three complement activation pathways converging on one cascade. The classical pathway (antibody-antigen complex) leads into C1; the lectin pathway (mannose-binding lectin) leads into C2 and C4 further along the same line; both continue to C3. The alternative pathway triggers spontaneous activation of C3 directly. All three converge on C3b, which leads to C5 and then C5b, which recruits C6, C7, C8, and C9, boxed together as the membrane attack complex." longdesc="Reading left to right: the classical pathway (an antibody-antigen complex) feeds into the main line at C1; the lectin pathway (mannose-binding lectin) feeds in further along, at C2 and C4; from there the line continues to C3. The alternative pathway's own C3 drops straight down, by an arrow labeled 'spontaneous activation,' into the main line at C3b, and a short arrow from that label points to a separate C3a. On the main line, C3 leads to C3b, from which an arrow drops to another C3a; C3b continues the line to C5, from which an arrow drops to C5a; C5 leads to C5b, which continues to a shaded box holding C6, C7, C8, and C9, labeled the membrane attack complex." kind="diagram" >}}
 The three complement activation pathways have different triggers, as shown here, but all three result in the activation of the complement protein C3, which produces C3a and C3b. The latter binds to the surface of the target cell and then works with other complement proteins to cleave C5 into C5a and C5b. C5b also binds to the cell surface and then recruits C6 through C9; these molecules form a ring structure called the membrane attack complex (MAC), which punches through the cell membrane of the invading pathogen, causing it to swell and burst.
 {{< /mediafigure >}}
 
@@ -289,7 +289,7 @@ The table below provides a summary of the chemical defenses discussed in this se
 {{< multiplechoice
   question="Which of the following chemical mediators is secreted onto the surface of the skin?"
   answer="sebum"
-  hint="This mediator comes from a gland attached to a hair follicle, discussed at the start of this section."
+  hint="See the first paragraph of the Chemical and Enzymatic Mediators Found in Body Fluids subsection."
 >}}
 cerumen
 sebum
@@ -297,17 +297,10 @@ gastric acid
 prostaglandin
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Chemicals or enzymes produced by a variety of cells that provide nonspecific antimicrobial defense mechanisms are collectively known as ________."
-  answer="chemical mediators"
-  accept="chemical mediator"
-  hint="This is the general term this whole section defines in its opening paragraph."
->}}
-
 {{< multiplechoice
   question="According to this section, about what is the average pH of urine, which helps inhibit the growth of many microbes and potential pathogens in the urinary tract?"
   answer="about 6"
-  hint="Look at the paragraph on the urinary tract; the value is close to neutral, but slightly below it."
+  hint="Look at the paragraph on the urinary tract."
 >}}
 about 2
 about 6
@@ -315,12 +308,18 @@ about 8
 about 10
 {{< /multiplechoice >}}
 
+{{< textin
+  question="Chemicals or enzymes produced by a variety of cells that provide nonspecific antimicrobial defense mechanisms are collectively known as ________."
+  answer="chemical mediators"
+  hint="This is the general term this whole section defines in its opening paragraph."
+>}}
+
 ### List and describe the function of antimicrobial peptides, complement components, cytokines, and acute-phase proteins
 
 {{< multiplechoice
   question="Which of the following serve as chemical signals between cells and stimulate a wide range of nonspecific defenses?"
   answer="cytokines"
-  hint="This kind of signal can act on the very cell that released it, on a nearby cell, or on a distant cell reached through the blood."
+  hint="See the first paragraph of the subsection just before Inflammation-Eliciting Mediators."
 >}}
 cytokines
 antimicrobial peptides
@@ -331,7 +330,7 @@ antibodies
 {{< multiplechoice
   question="Bacteriocins and defensins are types of which of the following?"
   answer="antimicrobial peptides"
-  hint="Both are described early in the section named for this general class of cell-derived mediator."
+  hint="See the third paragraph of this section's second subsection."
 >}}
 leukotrienes
 cytokines
@@ -342,20 +341,20 @@ antimicrobial peptides
 {{< textin
   question="________ is the fluid portion of a blood sample that has been drawn in the presence of an anticoagulant compound."
   answer="plasma"
+  accept="blood plasma"
   hint="The Micro Connection box above distinguishes this term from serum, the fluid left after clotting."
 >}}
 
 {{< textin
   question="________ are antimicrobial peptides produced by members of the normal microbiota."
   answer="bacteriocins"
-  accept="bacteriocin"
   hint="This class of AMP is produced exogenously by resident gut microbes, not by the host's own cells."
 >}}
 
 {{< multiplechoice
   question="Histamine, leukotrienes, prostaglandins, and bradykinin are examples of which of the following?"
   answer="chemical mediators that promote inflammation"
-  hint="These four are the subjects of this section's final subsection, named for the immune process they trigger."
+  hint="See this section's final subsection."
 >}}
 chemical mediators primarily found in the digestive system
 chemical mediators that promote inflammation
@@ -379,7 +378,7 @@ complement proteins that form MACs
 {{< multiplechoice
   question="Identify the complement activation pathway that is triggered by the binding of an acute-phase protein to a pathogen."
   answer="lectin"
-  hint="This pathway shares its name with a plant-derived carbohydrate-binding protein and is triggered by one that binds mannose."
+  hint="See the paragraph on the third activation pathway, just before the complement-pathways figure."
 >}}
 classical
 alternate
@@ -390,6 +389,7 @@ cathelicidin
 {{< textin
   question="The process by which cells are drawn or attracted to an area by a microbe invader is known as ________."
   answer="chemotaxis"
+  accept="chemoattraction"
   hint="This process draws phagocytes and other immune cells toward an invading microbe."
 >}}
 
@@ -414,4 +414,4 @@ Vasodilation, inflammation, chemotaxis, and cytolysis
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 17.2: Chemical Defenses](https://openstax.org/books/microbiology/pages/17-2-chemical-defenses) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on all four (the manifest guessed "photo" for every one because every source file is a JPEG, but the Sebum figure is a schematic-plus-micrograph pair, and ClassAltPa, Cytokine, and Interferon are all drawn flowcharts), overriding the guess; the Sebum figure carries `eager="true"` as the page's first figure; a `longdesc` was added to the ClassAltPa and Cytokine figures, walking each in reading order, because their captions do not name every labeled step or panel; the Sebum and Interferon captions already name their labels, so no `longdesc` was added for either; feature boxes rendered as callouts, with the Clinical Focus box's "Jump to the next / Go back to the previous" links replaced by two Markdown links to Sections 17.3 and 17.1 (this run's own routes, per the parent's run-facts, even though neither page was on disk at authoring time); the cross-references to "Cellular Defenses" (m58879) and "Inflammation and Fever" (m58881, twice) are left as plain italic text, since neither module is authored in this run; the three Multiple Choice items whose questions test acute-phase proteins, plasma protein mediators, and complement pathways keep their source options, order, and key, as do the two remaining Multiple Choice items on cytokines and inflammation-eliciting mediators; the three Fill in the Blank items are rendered as `textin`, with `accept` entries listing the singular of each plural-noun key ("bacteriocin" for "bacteriocins") since the grader's plural fold runs only from a listed form to its own regular plural, not the reverse; of the section's two Short Answer questions, neither has a source key: the complement-cascades question stays a `selfcheck`, since honestly differentiating three pathways needs three separate sentences: the four-outcomes question is graded as a `multiplechoice` whose key is the source's own four-item list and whose three distractors each swap one outcome for a different non-outcome the module names elsewhere (phagocytosis, antibody production, vasodilation), per the run's decision; of the section's six body Check Your Understanding bullets, three are graded — the endogenous/exogenous distinction (`multiplechoice`, fixed by one sentence in the section's second paragraph), the "why nonspecific" AMP question (`multiplechoice`, fixed by the Antimicrobial Peptides subsection's own opening sentence), and the autocrine/paracrine/endocrine question (`sortbins`, fixed by the one paragraph that defines all three) — and three stay self-checks — the pH question (needs four separate body-fluid examples assembled), the "what do the three pathways have in common" question (its honest one-sentence answer duplicates the Practice four-outcomes item's own key, so its model answer and rubric name only the pathways' distinct triggers and that they converge, without repeating the four-item list, to avoid asking the same fact as a graded item twice), and the "name two mediators" question (the module's own final subsection names only four, the same four the Practice multiple choice on inflammation-eliciting mediators also uses as its stem — this overlap could not be avoided without dropping content from one of the two, since both draw on the same short list, so it is disclosed here rather than edited); the acute-phase-proteins table is also rendered as a `sortbins` (four bins, six items) in the Practice block under the AMP/complement/cytokine objective, per the run's table decision; the AMP-characteristics table (five rows) and the chapter-length "Chemical Defenses of Nonspecific Innate Immunity" recap table (a section-summary table, not a single-objective comparison) are both transcribed as Markdown only, with no `sortbins` built for either, per the run's decision that a five-row table exceeding the four-bin cap and a whole-section recap table are transcribed rather than sorted; two filler items (one `textin` and one `multiplechoice`) are added to reach the book's three-item floor for the first objective group, each built from a single sentence of this module and disclosed here: the "chemical mediators" term recall from the section's own key terms, and the urine-pH multiple choice from the Urinary Tract paragraph's own sentence; two disclosed same-page overlaps remain even after reordering, since neither item's text is editable: the "Bacteriocins and defensins are types of which of the following?" multiple choice prints the word "bacteriocins" in its own source-verbatim stem, and the `textin` keyed to that same word from the section's own Fill in the Blank set is placed two items later in the same objective group (with the plasma `textin` between them) rather than immediately after it, to remove the back-to-back adjacency; and three of the four options on the four-outcomes multiple choice contain the word "chemotaxis" at least once (including the keyed option — the fourth distractor swaps chemotaxis itself out for phagocytosis), next to the `textin` keyed to that same word from the same Fill in the Blank set — this second overlap is structurally forced by keeping the source's own four-item outcome list as the key while rotating which single outcome each distractor swaps out, and a self-check already separates the two items on the page. No source exercise item is omitted. The complement-pathways figure's alt and longdesc describe only the flow chart that is drawn (C1 through C5b and the membrane attack complex, with the three pathways' entry points), because the source alt narrates a different, more granular diagram — a pathogen with bound antibodies, C3 convertase, C5 convertase, a membrane pore, and host-membrane protection — none of which appears in the vendored image (erratum 821).</small>
+<small>This section is adapted from [Microbiology, Section 17.2: Chemical Defenses](https://openstax.org/books/microbiology/pages/17-2-chemical-defenses) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on all four (the manifest guessed "photo" for every one because every source file is a JPEG, but the Sebum figure is a schematic-plus-micrograph pair, and ClassAltPa, Cytokine, and Interferon are all drawn flowcharts), overriding the guess; the Sebum figure carries `eager="true"` as the page's first figure; a `longdesc` was added to the ClassAltPa and Cytokine figures, walking each in reading order, because their captions do not name every labeled step or panel; the Sebum and Interferon captions already name their labels, so no `longdesc` was added for either; feature boxes rendered as callouts, with the Clinical Focus box's "Jump to the next / Go back to the previous" links replaced by two Markdown links to Sections 17.3 and 17.1 (this run's own routes, per the parent's run-facts, even though neither page was on disk at authoring time); the cross-references to "Cellular Defenses" (m58879) and "Inflammation and Fever" (m58881, twice) are left as plain italic text, since neither module is authored in this run; the three Multiple Choice items whose questions test acute-phase proteins, plasma protein mediators, and complement pathways keep their source options, order, and key, as do the two remaining Multiple Choice items on cytokines and inflammation-eliciting mediators; the three Fill in the Blank items are rendered as `textin` with their source keys; of the section's two Short Answer questions, neither has a source key: the complement-cascades question stays a `selfcheck`, since honestly differentiating three pathways needs three separate sentences: the four-outcomes question is graded as a `multiplechoice` whose key is the source's own four-item list and whose three distractors each swap one outcome for a different non-outcome the module names elsewhere (phagocytosis, antibody production, vasodilation), per the run's decision; of the section's six body Check Your Understanding bullets, three are graded — the endogenous/exogenous distinction (`multiplechoice`, fixed by one sentence in the section's second paragraph), the "why nonspecific" AMP question (`multiplechoice`, fixed by the Antimicrobial Peptides subsection's own opening sentence), and the autocrine/paracrine/endocrine question (`sortbins`, fixed by the one paragraph that defines all three) — and three stay self-checks — the pH question (needs four separate body-fluid examples assembled), the "what do the three pathways have in common" question (its honest one-sentence answer duplicates the Practice four-outcomes item's own key, so its model answer and rubric name only the pathways' distinct triggers and that they converge, without repeating the four-item list, to avoid asking the same fact as a graded item twice), and the "name two mediators" question (the module's own final subsection names only four, the same four the Practice multiple choice on inflammation-eliciting mediators also uses as its stem — this overlap could not be avoided without dropping content from one of the two, since both draw on the same short list, so it is disclosed here rather than edited); the acute-phase-proteins table is also rendered as a `sortbins` (four bins, six items) in the Practice block under the AMP/complement/cytokine objective, per the run's table decision; the AMP-characteristics table (five rows) and the chapter-length "Chemical Defenses of Nonspecific Innate Immunity" recap table (a section-summary table, not a single-objective comparison) are both transcribed as Markdown only, with no `sortbins` built for either, per the run's decision that a five-row table exceeding the four-bin cap and a whole-section recap table are transcribed rather than sorted; two filler items (one `textin` and one `multiplechoice`) are added to reach the book's three-item floor for the first objective group, each built from a single sentence of this module and disclosed here: the "chemical mediators" term recall from the section's own key terms, and the urine-pH multiple choice from the Urinary Tract paragraph's own sentence; two disclosed same-page overlaps remain even after reordering, since neither item's text is editable: the "Bacteriocins and defensins are types of which of the following?" multiple choice prints the word "bacteriocins" in its own source-verbatim stem, and the `textin` keyed to that same word from the section's own Fill in the Blank set is placed two items later in the same objective group (with the plasma `textin` between them) rather than immediately after it, to remove the back-to-back adjacency; and three of the four options on the four-outcomes multiple choice contain the word "chemotaxis" at least once (including the keyed option — the fourth distractor swaps chemotaxis itself out for phagocytosis), next to the `textin` keyed to that same word from the same Fill in the Blank set — this second overlap is structurally forced by keeping the source's own four-item outcome list as the key while rotating which single outcome each distractor swaps out, and a self-check already separates the two items on the page. No source exercise item is omitted. The complement-pathways figure's alt and longdesc describe only the flow chart that is drawn (C1 through C5b and the membrane attack complex, with the three pathways' entry points), because the source alt narrates a different, more granular diagram — a pathogen with bound antibodies, C3 convertase, C5 convertase, a membrane pore, and host-membrane protection — none of which appears in the vendored image (erratum 821).</small>

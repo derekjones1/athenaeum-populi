@@ -94,7 +94,7 @@ The **periodic table** organizes and displays different elements. Devised by Rus
 
 In the periodic table below, the elements are organized and displayed according to their atomic number and are arranged in a series of rows and columns based on shared chemical and physical properties. In addition to providing the atomic number for each element, the periodic table also displays the element's atomic mass. Looking at carbon, for example, its symbol (C) and name appear, as well as its atomic number of six (in the upper left-hand corner) and its atomic mass of 12.01.
 
-{{< mediafigure src="biology/Figure_02_01_04" kind="diagram" alt="The periodic table of elements, arranged in a grid of 18 numbered groups (columns) and 7 numbered periods (rows), with a two-row block of lanthanide and actinide elements set apart below the main table. Each cell shows an element's atomic number, chemical symbol, atomic mass, and name, color-coded as a metal, metalloid, or nonmetal." longdesc="The table organizes every element by atomic number, increasing left to right and top to bottom, into 18 numbered groups (columns) — elements sharing the same number of valence electrons — and 7 numbered periods (rows) — elements whose highest-energy electrons occupy the same shell. A typical cell reads, top to bottom: the atomic number, the one- or two-letter chemical symbol, the atomic mass to two decimal places, and the element's name. A background color code marks each cell as a metal, metalloid, or nonmetal; a diagonal band of metalloids runs from period 2 group 13 to period 6 group 17, separating the metals to its left from the nonmetals to its right. A second, independent color code colors the symbol and name text to show each element's physical state at room temperature: black for solid, blue for liquid (only bromine and mercury), and red for gas (hydrogen and most of the nonmetals on the table's right edge). Elements 57 to 71 (the lanthanides) and 89 to 103 (the actinides) are pulled out of periods 6 and 7 into two rows beneath the main table to keep it compact, with an arrow marking where each row belongs." >}}
+{{< mediafigure src="biology/Figure_02_01_04" kind="diagram" alt="The periodic table of elements, arranged in a grid of 18 numbered groups (columns) and 7 numbered periods (rows), with a two-row block of lanthanide and actinide elements set apart below the main table. Each cell shows an element's atomic number, chemical symbol, atomic mass, and name, color-coded as a metal, metalloid, or nonmetal." longdesc="The table organizes every element by atomic number, increasing left to right and top to bottom, into 18 numbered groups (columns) — elements sharing the same number of valence electrons — and 7 numbered periods (rows) — elements whose highest-energy electrons occupy the same shell. A typical cell reads, top to bottom: the atomic number, the one- or two-letter chemical symbol, the atomic mass (to four significant figures, such as 1.008 for hydrogen, or a bracketed mass number such as [222] for radon), and the element's name; a key below the table labels these four parts on hydrogen's cell. A background color code marks each cell as a metal, metalloid, or nonmetal; a diagonal band of metalloids runs from period 2 group 13 to period 6 group 17, separating the metals to its left from the nonmetals to its right; hydrogen is a nonmetal, and elements 109 to 118, except copernicium (112), have white, uncoded cells. A second, independent color code colors the chemical symbol to show each element's physical state at room temperature: black for solid, blue for liquid (only bromine and mercury), and red for gas (hydrogen and most of the nonmetals on the table's right edge). Elements 57 to 71 (the lanthanides) and 89 to 103 (the actinides) are pulled out of periods 6 and 7 into two rows beneath the main table to keep it compact; a red outline around the placeholder cells La–Lu and Ac–Lr in group 3 and a curved red arrow lead down to the two rows, marked * and ** to match." >}}
 The periodic table shows each element's atomic mass and atomic number. The atomic number appears above the symbol for the element and the approximate atomic mass appears below it.
 {{< /mediafigure >}}
 
@@ -114,11 +114,11 @@ Electrons fill orbitals in a consistent order: they first fill the orbitals clos
 
 Under standard conditions, atoms fill the inner shells first, often resulting in a variable number of electrons in the outermost shell. The innermost shell has a maximum of two valence electrons but the next two electron shells can each have eight valence electrons. This is known as the **octet rule**, which states, with the exception of the innermost shell, that atoms are more stable energetically when they have eight electrons in their **valence shell**, the outermost electron shell. The diagram below shows examples of some neutral atoms and their electron configurations: helium has a complete outer electron shell, with two electrons filling its first and only shell, and neon has a complete outer 2n shell containing eight electrons. In contrast, chlorine and sodium have seven and one in their outer shells, respectively, but theoretically they would be more energetically stable if they followed the octet rule and had eight valence electrons.
 
-{{< mediafigure src="biology/Figure_02_01_06" kind="diagram" alt="Bohr diagrams of ten elements arranged in a grid: periods 1 to 3 (rows, as the 1n, 2n, and 3n shells each fill in turn) by groups 1, 14, 17, and 18 (columns). Each diagram shows the element's nucleus and shells, with dots marking its valence electrons." longdesc="Reading by period (row) and group (column). Period 1, in which the 1n shell fills: group 1 hydrogen has one valence electron; group 18 helium has two, filling the 1n shell's maximum of two electrons — a stable, full shell. Period 2, in which the 2n shell fills: group 1 lithium has one valence electron; group 14 carbon has four; group 17 fluorine has seven; group 18 neon has eight, a full octet. Period 3, in which the 3n shell fills: group 1 sodium has one valence electron; group 14 silicon has four; group 17 chlorine has seven; group 18 argon has eight, a full octet." >}}
+{{< mediafigure src="biology/Figure_02_01_06" kind="diagram" alt="Bohr diagrams of ten elements arranged in a grid: periods 1 to 3 (rows, as the 1n, 2n, and 3n shells each fill in turn) by groups 1, 14, 17, and 18 (columns). Each diagram shows the element's nucleus and gray inner shells, with dots marking all its electrons and the outermost, valence shell drawn in red; the group 14, period 1 cell is empty." longdesc="Reading by period (row) and group (column). Period 1, in which the 1n shell fills: group 1 hydrogen has one valence electron; group 18 helium has two, filling the 1n shell's maximum of two electrons — a stable, full shell. Period 2, in which the 2n shell fills: group 1 lithium has one valence electron; group 14 carbon has four; group 17 fluorine has seven; group 18 neon has eight, a full octet. Period 3, in which the 3n shell fills: group 1 sodium has one valence electron; group 14 silicon has four; group 17 chlorine has seven; group 18 argon has eight, a full octet." >}}
 Bohr diagrams indicate how many electrons fill each principal shell. Group 18 elements (helium, neon, and argon) have a full outer, or valence, shell. A full valence shell is the most stable electron configuration. Elements in other groups have partially filled valence shells and gain or lose electrons to achieve a stable electron configuration.
 {{< /mediafigure >}}
 
-{{< selfcheck question="An atom may give, take, or share electrons with another atom to achieve a full valence shell, the most stable electron configuration. Looking at the diagram above, how many electrons do elements in group 1 need to lose in order to achieve a stable electron configuration? How many electrons do elements in groups 14 and 17 need to gain to achieve a stable configuration?" hint="Compare each group's valence electron count against the eight electrons a full outer shell needs." >}}
+{{< selfcheck question="An atom may give, take, or share electrons with another atom to achieve a full valence shell, the most stable electron configuration. Looking at the diagram above, how many electrons do elements in group 1 need to lose in order to achieve a stable electron configuration? How many electrons do elements in groups 14 and 17 need to gain to achieve a stable configuration?" hint="Count each group's valence electrons in the Bohr-diagram grid above, and reread the octet-rule paragraph before it." >}}
 Elements in group 1 need to lose one electron to achieve a stable electron configuration. Elements in groups 14 and 17 need to gain four and one electrons, respectively, to achieve a stable configuration.
 ===CHECKS===
 elements in group 1 need to lose one electron to achieve a stable electron configuration
@@ -149,7 +149,7 @@ The second electron shell may contain eight electrons. This shell contains anoth
 
 All elements are most stable when their outermost shell is filled with electrons according to the octet rule. This is because it is energetically favorable for atoms to be in that configuration and it makes them stable. However, since not all elements have enough electrons to fill their outermost shells, atoms form **chemical bonds** with other atoms thereby obtaining the electrons they need to attain a stable electron configuration. When two or more atoms chemically bond with each other, the resultant chemical structure is a molecule. The familiar water molecule, H₂O, consists of two hydrogen atoms and one oxygen atom. These bond together to form water, as the illustration below shows. Atoms can form molecules by donating, accepting, or sharing electrons to fill their outer shells.
 
-{{< mediafigure src="biology/Figure_02_01_17" kind="diagram" alt="Before-and-after diagram of two hydrogen atoms bonding with one oxygen atom. Before: an oxygen atom with six valence electrons (two lone pairs, two unpaired) sits between two separate hydrogen atoms, each with one electron. After: each hydrogen's electron pairs with one of oxygen's unpaired electrons, joining the three atoms; the same bond is also shown as the structure H-O-H with a dash for each bond." longdesc="Left panel (before the reaction): a hydrogen atom with one electron sits above an oxygen atom that has six valence electrons — four paired at the top and right of its shell, two unpaired at the bottom and left — with a second hydrogen atom below. Right panel (after the reaction): each hydrogen's electron has paired with one of oxygen's unpaired electrons, linking the three atoms into a water molecule shown as overlapping rings that share electron pairs, with the equivalent structure H-O-H underneath, each bond drawn as a dash." >}}
+{{< mediafigure src="biology/Figure_02_01_17" kind="diagram" alt="Before-and-after diagram of two hydrogen atoms bonding with one oxygen atom. Before: an oxygen atom with six valence electrons (two lone pairs, two unpaired) has two separate hydrogen atoms beside it, one to its left and one below, each with one electron. After: each hydrogen's electron pairs with one of oxygen's unpaired electrons, joining the three atoms; the same bonds are also shown as a structural formula with a dash for each bond." longdesc="Left panel (before the reaction), labeled 2H + O: a hydrogen atom with one electron sits to the left of an oxygen atom that has six valence electrons — four paired at the top and right of its shell, two unpaired at the bottom and left — with a second hydrogen atom below the oxygen. A large arrow points right. Right panel (after the reaction): each hydrogen's electron has paired with one of oxygen's unpaired electrons, linking the three atoms into a water molecule shown as overlapping rings that share electron pairs, one hydrogen at the oxygen's upper left and one below it, with the equivalent structural formula underneath: H joined by a dash to O, and a second dash running down from O to the other H." >}}
 Two or more atoms may bond with each other to form a molecule. When two hydrogens and an oxygen share electrons via covalent bonds it forms a water molecule.
 {{< /mediafigure >}}
 
@@ -294,14 +294,23 @@ Matter is anything that occupies space and has mass. It is comprised of elements
 
 ### Define matter and elements
 
-{{< textin question="Anything that has mass and occupies space is called ________." answer="matter" hint="This is the most general scientific word for anything with mass, whether living or not." >}}
+{{< textin
+  question="Summary: Matter is anything that occupies ________ and has mass."
+  answer="space"
+  hint="Reread the section summary's opening sentence."
+>}}
 
-{{< textin question="One of the 118 unique substances that cannot be broken down into smaller substances by ordinary chemical reactions is called a(n) ________." answer="element" hint="There are 118 of these, but only 98 occur naturally — they are the periodic table's basic building blocks." >}}
+{{< textin
+  question="An organizational chart of elements indicating each element's atomic number and atomic mass is called the ________."
+  answer="periodic table"
+  accept="periodic table of elements"
+  hint="Reread the first paragraph of the section just before Electron Shells and the Bohr Model."
+>}}
 
 {{< multiplechoice
-  question="The section states there are 118 known elements. How many of them occur naturally?"
+  question="How many of the 118 known unique substances that cannot be broken down by ordinary chemical reactions occur naturally?"
   answer="98"
-  hint="Re-read the section's opening paragraph — one number counts every known element, the other counts only those found in nature."
+  hint="Reread the section's opening paragraph."
 >}}
 118
 98
@@ -314,7 +323,7 @@ Matter is anything that occupies space and has mass. It is comprised of elements
 {{< multiplechoice
   question="If xenon has an atomic number of 54 and a mass number of 108, how many neutrons does it have?"
   answer="54"
-  hint="Mass number is the sum of protons and neutrons — subtract the atomic number (its proton count) from the mass number."
+  hint="Reread Atomic Number and Mass on what the atomic number and the mass number each count."
 >}}
 54
 27
@@ -325,7 +334,7 @@ Matter is anything that occupies space and has mass. It is comprised of elements
 {{< multiplechoice
   question="Atoms that vary in the number of neutrons found in their nuclei are called ________."
   answer="isotopes"
-  hint="These atoms share the same number of protons but differ in mass number."
+  hint="Reread the first paragraph of Atomic Number and Mass."
 >}}
 ions
 neutrons
@@ -336,7 +345,7 @@ isotopes
 {{< multiplechoice
   question="Potassium has an atomic number of 19. What is its electron configuration?"
   answer="shells 1, 2 and 3 are full and shell 4 has one electron"
-  hint="Shells 1, 2, and 3 hold 2, 8, and 8 electrons when full — that accounts for 18 of potassium's 19 electrons."
+  hint="Reread the octet-rule paragraph of Electron Shells and the Bohr Model, then count potassium's electrons shell by shell."
 >}}
 shells 1 and 2 are full, and shell 3 has nine electrons
 shells 1, 2 and 3 are full and shell 4 has three electrons
@@ -349,7 +358,7 @@ shells 1, 2 and 3 are full and no other electrons are present
 {{< multiplechoice
   question="Which type of bond represents a weak chemical bond?"
   answer="hydrogen bond"
-  hint="This bond forms between a slightly positive hydrogen atom on one molecule and a slightly negative atom on another — 'atomic bond' is not a real bond type."
+  hint="Reread the first paragraph of the last subsection of Covalent Bonds and Other Bonds and Interactions."
 >}}
 hydrogen bond
 atomic bond
@@ -357,7 +366,7 @@ covalent bond
 nonpolar covalent bond
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What makes ionic bonds different from covalent bonds?" hint="Think about whether the electrons are transferred completely or shared, and which bond takes more energy to break." >}}
+{{< selfcheck question="What makes ionic bonds different from covalent bonds?" hint="Reread Ions and Ionic Bonds and the first paragraph of the last subsection of Covalent Bonds and Other Bonds and Interactions." >}}
 Ionic bonds are created between ions. The electrons are not shared between the atoms, but rather are associated more with one ion than the other. Ionic bonds are strong bonds, but are weaker than covalent bonds, meaning it takes less energy to break an ionic bond compared with a covalent one.
 ===CHECKS===
 ionic bonds are created between ions
@@ -369,28 +378,27 @@ it takes less energy to break an ionic bond compared with a covalent one
 {{< textin
   question="Electrons can transfer, share, or cause charge disparities between atoms to create bonds, including ionic, covalent, and hydrogen bonds, as well as ________."
   answer="van der Waals interactions"
-  accept="van der waals interaction"
-  hint="This weak interaction is not driven by electron transfer or sharing, but by temporary fluctuations in electron density — the summary's last-listed bond type."
+  hint="Reread the section summary's last sentence."
 >}}
 
 ### Explain the ways in which naturally occurring elements combine to create molecules, cells, tissues, organ systems, and organisms
 
-{{< textin question="A chemical structure consisting of at least two atoms held together by one or more chemical bonds is called a ________." answer="molecule" hint="Two or more of these, bonded together, from the simplest gas to the largest protein." >}}
+{{< textin question="A substance composed of molecules consisting of atoms of at least two different elements is called a(n) ________." answer="compound" hint="Reread the paragraph after the hydrogen peroxide equation in Chemical Reactions and Molecules." >}}
 
-{{< selfcheck question="Why are hydrogen bonds and van der Waals interactions necessary for cells?" hint="Think about what gives proteins and DNA the three-dimensional shape they need to function." >}}
+{{< textin
+  question="An interaction between two or more of the same or different atoms that results in forming molecules is called a ________."
+  answer="chemical bond"
+  accept="bond"
+  hint="Reread the first paragraph of Chemical Reactions and Molecules."
+>}}
+
+{{< selfcheck question="Why are hydrogen bonds and van der Waals interactions necessary for cells?" hint="Reread the last subsection of Covalent Bonds and Other Bonds and Interactions." >}}
 Hydrogen bonds and van der Waals interactions form weak associations between different molecules or within different regions of the same molecule. They provide the structure and shape necessary for proteins and DNA within cells so that they function properly.
 ===CHECKS===
 hydrogen bonds and van der Waals interactions form weak associations between different molecules or within different regions of the same molecule
 they provide the structure and shape necessary for proteins and DNA within cells so that they function properly
 {{< /selfcheck >}}
 
-{{< textin
-  question="The section summary states that naturally occurring elements combine in various ways to create molecules, which in turn combine to form cells, tissues, organ systems, and ________."
-  answer="organisms"
-  accept="organism"
-  hint="This is the top level of the hierarchy the summary's opening sentences build up to, from atom to element to molecule and beyond."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 2.1: Atoms, Isotopes, Ions, and Molecules: The Building Blocks](https://openstax.org/books/biology-2e/pages/2-1-atoms-isotopes-ions-and-molecules-the-building-blocks) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with `kind` set explicitly for all eleven; the oxygen double-bond figure's alt counts each atom's valence electrons as two lone pairs plus two unpaired, because the source alt's "two that are paired and two that are unpaired" does not add up to the six electrons drawn (erratum 835) — seven are line diagrams the media manifest had guessed were photos from their JPEG or PNG source files, and only the mammoth-excavation figure is a true photo; the periodic table, the Bohr-diagram grid, the water-formation diagram, the sodium/chlorine diagram, and the polar/nonpolar comparison table each had a source alt over the 600-character accessibility limit, so each was shortened to a structural description and gained a `longdesc` walking its content in reading order (the periodic table's `longdesc` also names the image's second, independent color code — text color marking each element's physical state as solid, liquid, or gas — which the source alt omitted entirely), and the mammoth-excavation photo's bare "Photo shows scientists unearthing a mammoth skeleton" alt was rewritten to describe what is visible; both Visual Connection questions are kept in the body immediately after their figures, rendered as self-check since both source solutions are prose rather than a keyed choice; feature boxes (one Evolution Connection, three Link to Learning notes — the source's `interactive` class throughout — and one Career Connection) rendered as callouts with their bold names, external simulation and video URLs kept and given descriptive link text; the section's two tables kept as Markdown tables, each with the source's title line as a bold caption above it, since neither table's cells include drawn chemistry that a table can't hold; the section's four display chemical equations set as Unicode text paragraphs with arrows rather than KaTeX, since they are chemistry, not mathematics; the two genuine numeric exponents in the atomic/electron mass sentence ($1.67 \times 10^{-24}$ grams, $9.11 \times 10^{-28}$ grams) are set in KaTeX rather than Unicode superscripts, since a superscript minus before a digit is a mathematical exponent and not an ion charge; inline pointers to figures and tables ("as Figure 2.x illustrates," "as Table 2.x shows") replaced with descriptive phrases ("the diagram above/below") since figures and tables are not numbered here; and the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with three key-term recall items (matter, element, molecule) added from the glossary to round out thin objective groups; rubric checkpoints added to each self-check, including the two body Visual Connection self-checks, decomposing each model answer (the source solution) into check-off clauses with no new claims; one summary-derived textin cloze added under the third objective from the section summary's own sentence naming van der Waals interactions among the bond types electrons create; one summary-derived textin cloze added under the fourth objective from the section summary's own sentence on elements combining into molecules, cells, tissues, organ systems, and organisms; and one multiple choice written locally under the first objective, strictly from the section's own opening paragraph distinguishing the 118 known elements from the 98 that occur naturally, since neither of the summary's first two sentences could be blanked without duplicating the two keyed recall items (matter, element) already in that group — disclosed in the ledger. Three ion and isotope counts are corrected with visible Source notes: sodium's neutron count from 11 to 12, chlorine's from 17 to 18 (matching this section's own isotope discussion), and carbon-14's decay from "electrons or positrons emission" to electron emission (errata 375–376).</small>
+<small>This section is adapted from [Biology 2e, Section 2.1: Atoms, Isotopes, Ions, and Molecules: The Building Blocks](https://openstax.org/books/biology-2e/pages/2-1-atoms-isotopes-ions-and-molecules-the-building-blocks) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with `kind` set explicitly for all eleven; the oxygen double-bond figure's alt counts each atom's valence electrons as two lone pairs plus two unpaired, because the source alt's "two that are paired and two that are unpaired" does not add up to the six electrons drawn (erratum 835) — seven are line diagrams the media manifest had guessed were photos from their JPEG or PNG source files, and only the mammoth-excavation figure is a true photo; the periodic table, the Bohr-diagram grid, the water-formation diagram, the sodium/chlorine diagram, and the polar/nonpolar comparison table each had a source alt over the 600-character accessibility limit, so each was shortened to a structural description and gained a `longdesc` walking its content in reading order (the periodic table's `longdesc` also names the image's second, independent color code — text color marking each element's physical state as solid, liquid, or gas — which the source alt omitted entirely, and gives atomic masses to four significant figures, as printed, where the source alt's claim that they are "estimated to two decimal places" is corrected), and the mammoth-excavation photo's bare "Photo shows scientists unearthing a mammoth skeleton" alt was rewritten to describe what is visible; both Visual Connection questions are kept in the body immediately after their figures, rendered as self-check since both source solutions are prose rather than a keyed choice; feature boxes (one Evolution Connection, three Link to Learning notes — the source's `interactive` class throughout — and one Career Connection) rendered as callouts with their bold names, external simulation and video URLs kept and given descriptive link text; the section's two tables kept as Markdown tables, each with the source's title line as a bold caption above it, since neither table's cells include drawn chemistry that a table can't hold; the section's four display chemical equations set as Unicode text paragraphs with arrows rather than KaTeX, since they are chemistry, not mathematics; the two genuine numeric exponents in the atomic/electron mass sentence ($1.67 \times 10^{-24}$ grams, $9.11 \times 10^{-28}$ grams) are set in KaTeX rather than Unicode superscripts, since a superscript minus before a digit is a mathematical exponent and not an ion charge; inline pointers to figures and tables ("as Figure 2.x illustrates," "as Table 2.x shows") replaced with descriptive phrases ("the diagram above/below") since figures and tables are not numbered here; and the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with three key-term recall items (periodic table, compound, chemical bond) added from the glossary to round out thin objective groups; rubric checkpoints added to each self-check, including the two body Visual Connection self-checks, decomposing each model answer (the source solution) into check-off clauses with no new claims; one summary-derived textin cloze added under the third objective from the section summary's own sentence naming van der Waals interactions among the bond types electrons create; one summary-derived textin cloze added under the first objective from the section summary's opening sentence ("anything that occupies space and has mass"); and one multiple choice written locally under the first objective, strictly from the section's own opening paragraph distinguishing the 118 known elements from the 98 that occur naturally — disclosed in the ledger. Three ion and isotope counts are corrected with visible Source notes: sodium's neutron count from 11 to 12, chlorine's from 17 to 18 (matching this section's own isotope discussion), and carbon-14's decay from "electrons or positrons emission" to electron emission (errata 375–376).</small>

@@ -111,7 +111,7 @@ On the underside of each mature fern frond are groups of sporangia called sori (
 Fern reproductive stages. Sori (a) appear as small bumps on the underside of a fern frond. (credit: Myriam Feldman). (b) Fern gametophyte and young sporophyte. The sporophyte and gametophyte are labeled. (credit: modification of work by "Vlmastra"/Wikimedia Commons)
 {{< /mediafigure >}}
 
-{{< mediafigure src="biology/Figure_B25_04_06" kind="diagram" alt="A circular life-cycle diagram split into a light-blue 'Diploid 2n' band on top and a grey 'Haploid 1n' band on the bottom, with red FERTILIZATION and MEIOSIS boxes straddling the divide between them." longdesc="The cycle runs clockwise. In the diploid (2n) band: a small egg-shaped Zygote (top left) points by an arrow labeled Mitosis to a photo of leafy fern fronds labeled Sporophyte, which points to a close-up of a frond underside labeled Sporangia; an arrow leads down from Sporangia into a red MEIOSIS box that straddles the band boundary. Below the boundary, in the haploid (1n) band: an arrow leads down from MEIOSIS to small oval Spores, which point by an arrow labeled Mitosis to a photo labeled Germination, which points left to a photo of a heart-shaped gametophyte lying on soil labeled Gametophyte. From the gametophyte, arrows lead up to a green cup-shaped Antheridium (labeled with Sperm beside it) and a green flask-shaped Archegonium (labeled with Egg beside it); a small circled inset on the gametophyte photo is labeled Sporophyte, showing where the next sporophyte will emerge. Antheridium and Archegonium both feed into a red FERTILIZATION box that straddles the band boundary, and an arrow rises from FERTILIZATION back up to the Zygote, closing the cycle." >}}
+{{< mediafigure src="biology/Figure_B25_04_06" kind="diagram" alt="A circular life-cycle diagram split into a light-blue 'Diploid 2n' band on top and a grey 'Haploid 1n' band on the bottom, with red FERTILIZATION and MEIOSIS boxes straddling the divide between them." longdesc="The cycle runs clockwise. In the diploid (2n) band: a small egg-shaped Zygote (top left) points by an arrow labeled Mitosis to a photo of leafy fern fronds labeled Sporophyte, which points to a close-up of a frond underside labeled Sporangia; an arrow leads down from Sporangia into a red MEIOSIS box that straddles the band boundary. Below the boundary, in the haploid (1n) band: an arrow leads down from MEIOSIS to small oval Spores, which point by an arrow to a drawing of a germinating spore, labeled Mitosis and Germination, which points left to a photo of a ruffled green gametophyte on soil labeled Gametophyte; a young leaf rising from the gametophyte in the photo is labeled Sporophyte. From a circled patch on the gametophyte, two arrows lead left: one to a green cup-shaped Antheridium releasing Sperm, and one to a green flask-shaped Archegonium holding an Egg. Antheridium and Archegonium both feed into a red FERTILIZATION box that straddles the band boundary, and an arrow rises from FERTILIZATION back up to the Zygote, closing the cycle." >}}
 Reproductive cycle of a fern. This life cycle of a fern shows alternation of generations with a dominant sporophyte stage. (credit "fern": modification of work by Cory Zanker; credit "gametophyte": modification of work by "Vlmastra"/Wikimedia Commons)
 {{< /mediafigure >}}
 
@@ -202,7 +202,7 @@ Both mosses and ferns play an essential role in the balance of the ecosystems. M
 {{< multiplechoice
   question="The production of megaphylls by many different species of plants is an example of ________."
   answer="parallel evolution"
-  hint="The section notes megaphylls appeared independently several times in the course of evolution, not from a single shared origin."
+  hint="Reread the Leaves, Sporophylls, and Strobili subsection, on how the two leaf types arose."
 >}}
 parallel evolution
 analogy
@@ -213,13 +213,13 @@ homology
 {{< textin
   question="The tissue responsible for the storage and long-distance transport of water and nutrients in a vascular plant is the ________."
   answer="xylem"
-  hint="Its conductive cells incorporate lignin into their walls and are described as lignified."
+  hint="Reread the first paragraph of the subsection on vascular tissue."
 >}}
 
 {{< textin
   question="A small leaf with a simple vascular system and a single unbranched vein running through its center is called a ________."
   answer="microphyll"
-  hint="This leaf type is seen in club mosses and probably preceded the evolution of larger, multi-veined leaves."
+  hint="Reread the Leaves, Sporophylls, and Strobili subsection."
 >}}
 
 ### Discuss how each trait is important for adaptation to life on land
@@ -243,7 +243,7 @@ provided more energy for plant growth
 {{< textin
   question="The complex polymer, impermeable to water, that gives xylem cell walls their mechanical strength is called ________."
   answer="lignin"
-  hint="Xylem conductive cells that incorporate this compound into their walls are described as lignified."
+  hint="Reread the Vascular Tissue: Xylem and Phloem subsection."
 >}}
 
 ### Identify the classes of seedless tracheophytes
@@ -251,7 +251,7 @@ provided more energy for plant growth
 {{< multiplechoice
   question="Microphylls are characteristic of which types of plants?"
   answer="club mosses"
-  hint="This leaf type has a single unbranched vein and is named for the phylum Lycophyta's common name."
+  hint="Reread the Leaves, Sporophylls, and Strobili subsection, then the phylum subsections that follow it."
 >}}
 mosses
 liverworts
@@ -262,7 +262,7 @@ ferns
 {{< multiplechoice
   question="A plant in the understory of a forest displays a segmented stem and slender leaves arranged in a whorl. It is probably a ________."
   answer="horsetail"
-  hint="Joints, or nodes, along the stem give this class of Monilophyta its phylum name, Arthrophyta."
+  hint="Compare the stems and leaves described for each class of seedless vascular plant."
 >}}
 club moss
 whisk fern
@@ -289,7 +289,7 @@ they form large leaves and branching roots
 {{< multiplechoice
   question="The following structures are found on the underside of fern leaves and contain sporangia:"
   answer="sori"
-  hint="These small clusters of sporangia are visible as bumps on a mature frond's underside."
+  hint="Reread the paragraph on fern reproduction and the caption of the fern reproductive-stages photos."
 >}}
 sori
 rhizomes
@@ -300,7 +300,7 @@ microphylls
 {{< multiplechoice
   question="The dominant organism in fern is the ________."
   answer="sporophyte"
-  hint="This is the stage that bears the large, photosynthetic, spore-producing fronds."
+  hint="Reread the caption of the fern life-cycle diagram."
 >}}
 sperm
 spore
@@ -309,14 +309,14 @@ sporophyte
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="According to the section summary, the support and conductive properties of vascular tissues have allowed which generation of vascular plants to become increasingly dominant?"
-  answer="sporophyte"
-  hint="This is the diploid generation, the fern plant itself, that grows from a fertilized zygote."
+  question="Fern spores that land on a suitable substrate germinate and form a heart-shaped ________, or prothallus, which is attached to the ground by thin filamentous rhizoids."
+  answer="gametophyte"
+  hint="Reread the paragraph on fern reproduction that follows the fiddlehead photos."
 >}}
-gametophyte
-spore
-zygote
 sporophyte
+gametophyte
+sorus
+strobilus
 {{< /multiplechoice >}}
 
 ### Explain the role of seedless plants in the ecosystem
@@ -324,7 +324,7 @@ sporophyte
 {{< multiplechoice
   question="What seedless plant is a renewable source of energy?"
   answer="sphagnum moss"
-  hint="Dried, this moss is burned as fuel in some parts of Europe."
+  hint="Reread The Importance of Seedless Plants subsection, on seedless plants' uses in human life."
 >}}
 club moss
 horsetail
@@ -335,7 +335,7 @@ fern
 {{< multiplechoice
   question="How do mosses contribute to returning nitrogen to the soil?"
   answer="Mosses harbor cyanobacteria that fix nitrogen."
-  hint="Mosses form a symbiotic relationship rather than fixing nitrogen with their own cells."
+  hint="Reread the paragraph on mosses and liverworts as the first organisms to colonize an area, at its last sentence."
 >}}
 Mosses fix nitrogen from the air.
 Mosses harbor cyanobacteria that fix nitrogen.
@@ -355,4 +355,4 @@ Many other living plants and animals will benefit from the added habitat
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 25.4: Seedless Vascular Plants](https://openstax.org/books/biology-2e/pages/25-4-seedless-vascular-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the two composite two-panel photos (Figure_25_04_06's fiddleheads and Figure_B25_04_09's sori/gametophyte pair) given a custom alt naming what each lettered panel shows, since the source alts described only one panel or the pair's outcome rather than both images; a longdesc added to the fern-life-cycle diagram (Figure_B25_04_06), tracing its clockwise Diploid 2n/Haploid 1n bands, boxes, and arrows as drawn, written to avoid stating which stage the in-body Visual Connection question keys as false; the "Phylum Lycophyta: Club Mosses" subsection heading's leading space trimmed; the two interactive/link-to-learning notes rendered as Link to Learning callouts with descriptive link text and the source's own openstax.org short URLs; the note wrapping the Visual Connection question rendered as its figure followed by the multiple choice, kept in the body; the Career Connection box kept its title and figure; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (xylem, microphyll, phloem, lignin, whisk fern) added from the glossary to round out the first, second, and third objective groups with an auto-graded item each; and one summary-derived multiple choice added under the fourth objective (select-the-term on "sporophyte," from the summary's sentence on the dominant generation), since the module's two fern-life-cycle Review Questions left that objective at the book's floor; the Review Question "How do mosses contribute to returning nitrogen to the soil?" is keyed "Mosses harbor cyanobacteria that fix nitrogen" where the source keys "Mosses decompose rocks and release nitrogen", because the section's own sentence says mosses "establish symbiotic relationships with nitrogen-fixing cyanobacteria" and nothing in it says mosses decompose rock — reported as a source defect; and the fern life-cycle drawing's own label is misspelled "Sporongia" in the artwork, which the alt and longdesc give as "Sporangia".</small>
+<small>This section is adapted from [Biology 2e, Section 25.4: Seedless Vascular Plants](https://openstax.org/books/biology-2e/pages/25-4-seedless-vascular-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the two composite two-panel photos (Figure_25_04_06's fiddleheads and Figure_B25_04_09's sori/gametophyte pair) given a custom alt naming what each lettered panel shows, since the source alts described only one panel or the pair's outcome rather than both images; a longdesc added to the fern-life-cycle diagram (Figure_B25_04_06), tracing its clockwise Diploid 2n/Haploid 1n bands, boxes, and arrows as drawn, written to avoid stating which stage the in-body Visual Connection question keys as false; the "Phylum Lycophyta: Club Mosses" subsection heading's leading space trimmed; the two interactive/link-to-learning notes rendered as Link to Learning callouts with descriptive link text and the source's own openstax.org short URLs; the note wrapping the Visual Connection question rendered as its figure followed by the multiple choice, kept in the body; the Career Connection box kept its title and figure; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (xylem, microphyll, phloem, lignin, whisk fern) added from the glossary to round out the first, second, and third objective groups with an auto-graded item each; and one body-sentence select-the-term multiple choice added under the fourth objective ("gametophyte," from the fern-reproduction paragraph's sentence on what a germinating spore forms), since the module's two fern-life-cycle Review Questions left that objective at the book's floor; the Review Question "How do mosses contribute to returning nitrogen to the soil?" is keyed "Mosses harbor cyanobacteria that fix nitrogen" where the source keys "Mosses decompose rocks and release nitrogen", because the section's own sentence says mosses "establish symbiotic relationships with nitrogen-fixing cyanobacteria" and nothing in it says mosses decompose rock — reported as a source defect; and the fern life-cycle drawing's own label is misspelled "Sporongia" in the artwork, which the alt and longdesc give as "Sporangia".</small>

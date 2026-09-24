@@ -21,7 +21,7 @@ Phylum **Cnidaria** includes animals that exhibit radial or biradial symmetry an
 
 Whereas the defining cell type for the sponges is the choanocyte, the defining cell type for the cnidarians is the **cnidocyte**, or stinging cell. These cells are located around the mouth and on the tentacles, and serve to capture prey or repel predators. Cnidocytes have large stinging organelles called **nematocysts**, which usually contain barbs at the base of a long coiled thread. The outer wall of the cell has a hairlike projection called a *cnidocil*, which is sensitive to tactile stimulation. If the cnidocils are touched, the hollow threads evert with enormous acceleration, approaching 40,000 times that of gravity. The microscopic threads then either entangle the prey or instantly penetrate the flesh of the prey or predator, releasing toxins (including neurotoxins and pore-forming toxins that can lead to cell lysis) into the target, thereby immobilizing it or paralyzing it (see the diagram below).
 
-{{< mediafigure src="biology/Figure_28_02_01" kind="diagram" eager="true" alt="A two-panel diagram of a nematocyst inside a boxy cnidocyte cell: (a) before firing, a coiled thread and inverted barb sit inside the oval nematocyst, with a touch-sensitive hairlike projection reaching the cell surface; (b) after firing, a lid has opened and the barb and uncoiled thread project outward through the cell membrane." longdesc="Four labels sit above both panels, each with a line to one of them. 'Touch-sensitive hairlike projection,' 'Cnidocyte,' and 'Thread' all point into panel (a), labeled 'Nematocyst with stored thread and barb': a rectangular cnidocyte cell contains a large oval nematocyst, with a hairlike projection reaching from its top to the cell's outer surface and a coiled thread wound inside it around a small hidden barb. 'Barb' points instead into panel (b), labeled 'Nematocyst after firing': the same cell now has a lid open at its top, and the barb, trailing the now fully uncoiled thread, projects outward through the opening well beyond the cell's boundary." >}}
+{{< mediafigure src="biology/Figure_28_02_01" kind="diagram" eager="true" alt="A two-panel diagram of a nematocyst inside a boxy cnidocyte cell: (a) before firing, a coiled thread and inverted barb sit inside the oval nematocyst, with a touch-sensitive hairlike projection reaching the cell surface; (b) after firing, a lid has opened and the barb and uncoiled thread project outward through the cell membrane." longdesc="Four labels are drawn around the panels. 'Touch-sensitive hairlike projection' and 'Cnidocyte' point into panel (a), 'Thread' has two leader lines, one into each panel, labeled 'Nematocyst with stored thread and barb': a rectangular cnidocyte cell contains a large oval nematocyst, with a small white hairlike projection sticking up from the cell's surface beside the nematocyst's blue-capped top, and a green thread coiled inside it around a long red barb that points inward, inverted inside the capsule. 'Barb' points only into panel (b), labeled 'Nematocyst after firing': the same cell, still with its hairlike projection, now has its blue lid flipped open to one side, and the barb, trailing the now fully uncoiled thread, projects outward through the opening well beyond the cell's boundary." >}}
 Cnidocytes. Animals from the phylum Cnidaria have stinging cells called cnidocytes. Cnidocytes contain large organelles called (a) nematocysts that store a coiled thread and barb, the nematocyst. When the hairlike cnidocil on the cell surface is touched, even lightly, (b) the thread, barb, and a toxin are fired from the organelle.
 {{< /mediafigure >}}
 
@@ -31,7 +31,7 @@ Cnidocytes. Animals from the phylum Cnidaria have stinging cells called cnidocyt
 
 Two distinct body plans are found in Cnidarians: the polyp or tuliplike "stalk" form and the medusa or "bell" form (see the diagram below). An example of the polyp form is found in the genus *Hydra*, whereas the most typical form of medusa is found in the group called the "sea jellies" (jellyfish). Polyp forms are sessile as adults, with a single opening (the mouth/anus) to the digestive cavity facing up with tentacles surrounding it. Medusa forms are motile, with the mouth and tentacles hanging down from an umbrella-shaped bell.
 
-{{< mediafigure src="biology/Figure_28_02_02" kind="diagram" alt="A side-by-side diagram comparing two cross-sectioned cnidarian body plans: (a) the dome-shaped medusa, with a thick gray mesoglea layer filling the top of the dome above a narrower central cavity; (b) the tree-shaped polyp, upright with a narrow trunk and branching tentacles at the top, its thinner mesoglea layer running down the stalk." longdesc="At left, (a) Medusa: an upside-down dome outlined in red on the outside and blue on the inside, with a thick gray band filling most of the dome's interior above a narrower central body cavity that opens downward. At right, (b) Polyp: an upright, narrower tree-like shape with the same red outer and blue inner outlines, four tentacle-like projections at the top — two hollow arms continuing the red-and-blue body wall and two solid pink tentacles rising between them — opening into a central body cavity, and only a thin gap between the red and blue outlines running down the stalk. A single label, 'Mesoglea,' has two lines: one to the gray band inside the medusa's dome, the other to the thin gap between the polyp's outlines, naming both as the same layer at two different thicknesses." >}}
+{{< mediafigure src="biology/Figure_28_02_02" kind="diagram" alt="A side-by-side diagram comparing two cross-sectioned cnidarian body plans: (a) the dome-shaped medusa, with a thick gray mesoglea layer filling the top of the dome above a narrower central cavity; (b) the tree-shaped polyp, upright with a narrow trunk and branching tentacles at the top, its thinner mesoglea layer running down the stalk." longdesc="At left, (a) Medusa: a bell-shaped dome, rounded side up and open at the bottom, outlined in red on the outside and blue on the inside, with a thick gray band filling most of the dome's interior above a narrower central body cavity that opens downward. At right, (b) Polyp: an upright, narrower tree-like shape with the same red outer and blue inner outlines, four tentacle-like projections at the top — two hollow arms continuing the red-and-blue body wall and two solid pink tentacles rising between them — opening into a central body cavity, and only a thin gap between the red and blue outlines running down the stalk. A single label, 'Mesoglea,' has two lines: one to the gray band inside the medusa's dome, the other to the thin gap between the polyp's outlines, naming both as the same layer at two different thicknesses." >}}
 Cnidarian body forms. Cnidarians have two distinct body plans, the medusa (a) and the polyp (b). All cnidarians have two membrane layers, with a jelly-like mesoglea between them.
 {{< /mediafigure >}}
 
@@ -61,7 +61,7 @@ The phylum Cnidaria contains about 10,000 described species divided into two mon
 
 The class Anthozoa ("flower animals") includes sea anemones (see the photo below), sea pens, and corals, with an estimated number of 6,100 described species. Sea anemones are usually brightly colored and can attain a size of 1.8 to 10 cm in diameter. Individual animals are cylindrical in shape and are attached directly to a substrate.
 
-{{< mediafigure src="biology/Figure_28_02_04" kind="photo" alt="(a) A photo of a sea anemone with a pink, ruffled oval body and thick, waving tentacles. (b) A cutaway diagram of a sea anemone's tube-shaped body: tentacles ring a central mouth at the top, opening into a central gastrovascular cavity divided into wedge-like segments by ribbon-like septa, with a mesoglea layer separating the inner and outer surfaces, and an outer epidermis at the body's rim." longdesc="In panel (b), several slender tentacles fan upward from the rim of the anemone's tube-shaped body, labeled 'Tentacles (contain cnidocytes, or stinging cells, that bear the nematocysts)' at upper left. A 'Mouth' label points to the opening at the center of the tentacle ring. 'Outer epidermis' labels the body's outer wall at upper right. Below the mouth, a wavy-walled 'Gastrovascular cavity,' labeled at lower left, runs down the body's center, its folded walls forming a 'Septum,' labeled at right. 'Mesoglea,' labeled at upper right, names the pale layer between the gastrovascular cavity's wall and the outer epidermis." >}}
+{{< mediafigure src="biology/Figure_28_02_04" kind="photo" alt="(a) A photo of a sea anemone with a pink, ruffled oval body and thick, waving tentacles. (b) A cutaway diagram of a sea anemone's tube-shaped body: tentacles ring a central mouth at the top, opening into a central gastrovascular cavity divided into wedge-like segments by ribbon-like septa, with a mesoglea layer separating the inner and outer surfaces, and an outer epidermis at the body's rim." longdesc="In panel (b), about six thick, knob-tipped pink tentacles (two of them cut off at the sides) fan upward and outward from the top of the anemone's tube-shaped body, labeled 'Tentacles (contain cnidocytes, or stinging cells, that bear the nematocysts)' at upper left. A 'Mouth' label points to the opening at the center of the tentacle ring. 'Outer epidermis' labels the body's outer wall at upper right. Below the mouth, a dark, wavy-walled 'Gastrovascular cavity,' labeled at left, runs down the body's center and branches at the bottom into finger-like pockets; the wavy partitions that divide it are labeled 'Septum' at right. The base of the body sits sunk in pale substrate. 'Mesoglea,' labeled at upper right, names the pale layer between the gastrovascular cavity's wall and the outer epidermis." >}}
 Sea anemone. The sea anemone is shown (a) photographed and (b) in a diagram illustrating its morphology. (credit a: modification of work by "Dancing With Ghosts"/Flickr; credit b: modification of work by NOAA)
 {{< /mediafigure >}}
 
@@ -77,7 +77,7 @@ Anthozoans remain *polypoid* (note that this term is easily confused with "polyp
 
 Class Scyphozoa ("cup animals") includes only marine jellies, with about 200 known species. The medusa is the prominent stage in the life cycle, although there is a polyp stage in the life cycle of most species. Most jellies range from 2 to 40 cm in length but the largest scyphozoan species, *Cyanea capillata*, can reach a size of two meters in diameter. Scyphozoans display a characteristic bell-like morphology (see the photo below).
 
-{{< mediafigure src="biology/Figure_28_02_05ab" kind="photo" alt="(a) A photo of a bright red jellyfish with a dome-shaped bell, long trailing tentacles at the bell's edge, and ribbon-like oral arms hanging from its center. (b) A cutaway diagram of a jellyfish's dome: nematocyst-bearing tentacles hang from the bell's rim around a central mouth/anus opening that leads into a gastrovascular cavity lined by the gastrodermis, with the epidermis covering the outer surface and the mesoglea layer between them." longdesc="In panel (b), three labels sit across the top of the dome: 'Gastrovascular cavity' at top center, pointing into the dark space inside the dome; 'Epidermis' at upper right, pointing to the outer surface; and 'Mesoglea' at the far right, pointing to the thick pale layer beneath it. On the left, 'Gastrodermis' points to the inner lining and, lower down, 'Radial canal' points to a channel running along the dome's inner edge. A central opening beneath the dome is labeled 'Mouth/Anus.' At the bottom, the label 'Nematocyst-bearing tentacles' points up to the pink frilly structures hanging beneath the mouth; short tentacles also fringe the bell's rim." >}}
+{{< mediafigure src="biology/Figure_28_02_05ab" kind="photo" alt="(a) A photo of a bright red jellyfish with a dome-shaped bell, long trailing tentacles at the bell's edge, and ribbon-like oral arms hanging from its center. (b) A cutaway diagram of a jellyfish's dome: nematocyst-bearing tentacles hang from the bell's rim around a central mouth/anus opening that leads into a gastrovascular cavity lined by the gastrodermis, with the epidermis covering the outer surface and the mesoglea layer between them." longdesc="In panel (b), three labels sit across the top of the dome: 'Gastrovascular cavity' at top center, pointing into the gray band that arches through the dome; 'Epidermis' at upper right, pointing to the outer surface; and 'Mesoglea' at the far right, pointing to the thick pale layer beneath it. On the left, 'Gastrodermis' points to the inner lining and, lower down, 'Radial canal' points to a dark green channel running along the dome's inner edge. Beneath the gray band lies a purple inner region with pink frilly strands hanging through it; a small opening at the top center of that region, where it meets the gray cavity, is bracketed and labeled 'Mouth/Anus.' At the bottom, the label 'Nematocyst-bearing tentacles' points up to the gray finger-like tentacles that fringe the underside of the bell, with longer ones hanging at its two rims; small pink knobbed projections also stud the outer surface of the dome." >}}
 A sea jelly. A jelly is shown (a) photographed and (b) in a diagram illustrating its morphology. (credit a: modification of work by "Jimg944"/Flickr; credit b: modification of work by Mariana Ruiz Villareal)
 {{< /mediafigure >}}
 
@@ -85,7 +85,7 @@ In the sea jelly, a mouth opening is present on the underside of the animal, sur
 
 In scyphozoans, nerve cells are organized in a nerve net that extends over the entire body, with a nerve ring around the edge of the bell. Clusters of sensory organs called rhopalia may be present in pockets in the edge of the bell. Jellies have a ring of muscles lining the dome of the body, which provides the contractile force required to swim through water, as well as to draw in food from the water as they swim. Scyphozoans have separate sexes. The gonads are formed from the gastrodermis and gametes are expelled through the mouth. Planula larvae are formed by external fertilization; they settle on a substratum in a polypoid form. These polyps may bud to form additional polyps or begin immediately to produce medusa buds. In a few species, the planula larva may develop directly into the medusa. The life cycle of most scyphozoans, shown below, includes both sexual medusoid and asexual polypoid body forms.
 
-{{< mediafigure src="biology/Figure_28_02_06" kind="diagram" alt="The illustration shows the lifecycle of a jellyfish, which begins when sperm fertilizes an egg, forming a zygote. The zygote divides and grows into a planula larva, which looks like a swimming millipede. The planula larva anchors itself to the sea bottom and grows into a tube-shaped polyp. The polyp forms tentacles. Buds break off from the polyp and become dome-shaped ephyra, which resemble small jellyfish. The ephyra grow into medusas, the mature forms of the jellyfish." longdesc="Seven stages run clockwise around a circular diagram. At top center, a photographed 'Medusa' — a red-and-white jellyfish trailing long tentacles — sits in a navy box. An arrow leads right and down to 'Sperm' and 'Egg' cells at upper right. A second arrow leads down to a round orange 'Zygote.' A third arrow leads down to a spiky, oval 'Planula larva.' A fourth arrow leads down and left to a small stalked 'Polyp' at bottom center. A fifth arrow leads left to a 'Budding polyp' at bottom left, shown sprouting a smaller second polyp from its side. A sixth arrow leads up to a bell-shaped 'Ephyra' at left. A seventh arrow leads up and right, closing the loop back at the Medusa." >}}
+{{< mediafigure src="biology/Figure_28_02_06" kind="diagram" alt="The illustration shows the lifecycle of a jellyfish, which begins when sperm fertilizes an egg, forming a zygote. The zygote divides and grows into a planula larva, which looks like a swimming millipede. The planula larva anchors itself to the sea bottom and grows into a tube-shaped polyp. The polyp forms tentacles. Buds break off from the polyp and become dome-shaped ephyra, which resemble small jellyfish. The ephyra grow into medusas, the mature forms of the jellyfish." longdesc="Seven stages run clockwise around a circular diagram. At top center, a photographed 'Medusa' — a red-and-white jellyfish trailing long tentacles — sits in a navy box. An arrow leads right and down to 'Sperm' and 'Egg' cells at upper right. A second arrow leads down to a round orange 'Zygote.' A third arrow leads down to a spiky, oval 'Planula larva.' A fourth arrow leads down and left to a small stalked 'Polyp' at bottom center. A fifth arrow leads left to a taller 'Budding polyp' at bottom left: a stalked cup crowned with six long orange tentacles, a small pale bud sitting in the cup among them. A sixth arrow leads up to a bell-shaped 'Ephyra' at left. A seventh arrow leads up and right, closing the loop back at the Medusa." >}}
 Scyphozoan life cycle. The lifecycle of most jellyfish includes two stages: the medusa stage and the polyp stage. The polyp reproduces asexually by budding, and the medusa reproduces sexually. (credit "medusa": modification of work by Francesco Crippa)
 {{< /mediafigure >}}
 
@@ -141,21 +141,13 @@ Cnidarians represent a more complex level of organization than Porifera. They po
 {{< multiplechoice
   question="Cnidocytes are found in _____."
   answer="phylum Cnidaria"
-  hint="This stinging cell type is what defines the phylum, replacing the sponge's choanocyte."
+  hint="Look at the opening paragraphs of the section and the figure that follows them."
 >}}
 phylum Porifera
 phylum Nemertea
 phylum Nematoda
 phylum Cnidaria
 {{< /multiplechoice >}}
-
-{{< selfcheck question="Compare the structural differences between Porifera and Cnidaria." hint="Consider tissue organization — only one of these phyla has true tissues." >}}
-Poriferans do not possess true tissues, while cnidarians do have tissues. Because of this difference, poriferans do not have a nervous system or muscles for locomotion, which cnidarians have.
-===CHECKS===
-poriferans do not possess true tissues, while cnidarians do have tissues
-poriferans do not have a nervous system or muscles for locomotion
-cnidarians have a nervous system and muscles for locomotion
-{{< /selfcheck >}}
 
 {{< selfcheck question="Explain the function of nematocysts in cnidarians." hint="Think about what happens to prey once the cnidocil is touched." >}}
 Nematocysts are “stinging cells” designed to paralyze prey. The nematocysts contain a neurotoxin that renders prey immobile.
@@ -165,10 +157,18 @@ contain a neurotoxin
 renders prey immobile
 {{< /selfcheck >}}
 
+{{< selfcheck question="Compare the structural differences between Porifera and Cnidaria." hint="Consider tissue organization — only one of these phyla has true tissues." >}}
+Poriferans do not possess true tissues, while cnidarians do have tissues. Because of this difference, poriferans do not have a nervous system or muscles for locomotion, which cnidarians have.
+===CHECKS===
+poriferans do not possess true tissues, while cnidarians do have tissues
+poriferans do not have a nervous system or muscles for locomotion
+cnidarians have a nervous system and muscles for locomotion
+{{< /selfcheck >}}
+
 {{< textin
-  question="The specialized stinging cell found in Cnidaria is called a ________."
-  answer="cnidocyte"
-  hint="This cell type replaces the sponge's choanocyte as the phylum's defining feature, and houses the harpoon-like nematocyst."
+  question="The rudimentary cnidarian nervous system, in which nerve cells are organized in a network scattered across the body, is called a ________."
+  answer="nerve net"
+  hint="Look at the paragraph on the cnidarian nervous system."
 >}}
 
 ### Describe the progressive development of tissues and their relevance to animal complexity
@@ -214,18 +214,19 @@ renders prey immobile
 {{< textin
   question="An organism or group of organisms possessing multiple body plans within its life cycle is described as ________."
   answer="polymorphic"
+  accept="dimorphic"
   hint="Obelia's alternation between an asexual budding stage and a free-swimming, gamete-producing stage is one example."
 >}}
 
 {{< multiplechoice
-  question="Which of the following is one of the two general cnidarian body forms, sessile as an adult, with a single mouth/anus opening facing upward and tentacles surrounding it?"
-  answer="the polyp"
-  hint="It stays fixed in place, unlike the free-swimming bell shape; the other two options are life-cycle stages rather than one of the two general body forms."
+  question="In the sessile asexual colony of the colonial hydroid Obelia, which type of polyp is adapted for capturing prey and feeding?"
+  answer="the gastrozooid"
+  hint="Look at the paragraph on the colonial hydroid Obelia and the caption of its figure."
 >}}
-the medusa
-the polyp
+the gonozooid
+the gastrozooid
+the coenosarc
 the planula larva
-the ephyra
 {{< /multiplechoice >}}
 
 ### Describe the identifying features of the major cnidarian classes
@@ -233,7 +234,7 @@ the ephyra
 {{< multiplechoice
   question="Cubozoans are ________."
   answer="polymorphs"
-  hint="This class's polyps eventually transform into a single medusa, so members pass through more than one body plan over a lifetime."
+  hint="Look at the Class Cubozoa subsection's description of the life cycle."
 >}}
 polyps
 medusoids
@@ -244,7 +245,7 @@ sponges
 {{< multiplechoice
   question="While collecting specimens, a marine biologist finds a sessile Cnidarian. The medusas that bud from it swim by contracting a ring of muscle in their bells. To which class does this specimen belong?"
   answer="Class Scyphozoa"
-  hint="This class's jellies have a ring of muscles lining the dome of the body that provides the contractile force needed for swimming."
+  hint="Compare the swimming mechanism in the question with the descriptions in the Class Scyphozoa, Class Cubozoa, and Class Hydrozoa subsections."
 >}}
 Class Hydrozoa
 Class Cubozoa
@@ -264,7 +265,7 @@ internal fertilization increases the likelihood of ova and spermatozoa meeting
 {{< multiplechoice
   question="Which cnidarian clade includes only sessile polyp forms, never a medusa stage?"
   answer="Anthozoa"
-  hint="This clade's members — anemones, sea pens, and corals — remain polypoid throughout their lives."
+  hint="Look at the paragraph that divides the phylum into its two monophyletic clades."
 >}}
 Anthozoa
 Hydrozoa
@@ -274,4 +275,4 @@ Cubozoa
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 28.2: Phylum Cnidaria](https://openstax.org/books/biology-2e/pages/28-2-phylum-cnidaria) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; four figures re-kinded after inspection — Figure_28_02_01, Figure_28_02_02, Figure_28_02_03, and Figure_28_02_06 — from the manifest's file-extension "photo" guess to "diagram" (line drawings, not captured photographs), while Figure_28_02_04, Figure_28_02_05ab, Figure_28_02_07, and Figure_28_02_08abcd keep the manifest's "photo" guess (each is a single vendored image whose photographed panel(s) dominate, even where a labeled schematic panel sits alongside); a longdesc added to the nematocyst-firing diagram (Figure_28_02_01), the body-plan diagram (Figure_28_02_02), the labeled sea-anemone and sea-jelly cross-sections (panel (b) of Figure_28_02_04 and Figure_28_02_05ab), and the scyphozoan life-cycle diagram (Figure_28_02_06, walking its seven clockwise stages) — none of whose captions carry their label or arrow content; two Link to Learning notes rendered as callouts, replacing their "click here"/bare "video" link text with a description of each destination; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eight key-term recall items (cnidocyte, epidermis, gastrodermis, mesoglea, extracellular digestion, polyp, medusa, and polymorphic, each once) added from the glossary — the glossary's "siphon" entry (a mantle-cavity water inlet) is kept in Key terms for completeness but has no counterpart anywhere in this module's text and was not used for a recall item, since the section teaches no such structure — reported as a source defect; two locally written multiple-choice items added (distinguishing the polyp from the medusa and other life-cycle stages, and identifying Anthozoa as the only polyp-only clade), both built strictly from the section's own sentences, to round out the "body forms" and "cnidarian classes" objective groups.</small>
+<small>This section is adapted from [Biology 2e, Section 28.2: Phylum Cnidaria](https://openstax.org/books/biology-2e/pages/28-2-phylum-cnidaria) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; four figures re-kinded after inspection — Figure_28_02_01, Figure_28_02_02, Figure_28_02_03, and Figure_28_02_06 — from the manifest's file-extension "photo" guess to "diagram" (line drawings, not captured photographs), while Figure_28_02_04, Figure_28_02_05ab, Figure_28_02_07, and Figure_28_02_08abcd keep the manifest's "photo" guess (each is a single vendored image whose photographed panel(s) dominate, even where a labeled schematic panel sits alongside); a longdesc added to the nematocyst-firing diagram (Figure_28_02_01), the body-plan diagram (Figure_28_02_02), the labeled sea-anemone and sea-jelly cross-sections (panel (b) of Figure_28_02_04 and Figure_28_02_05ab), and the scyphozoan life-cycle diagram (Figure_28_02_06, walking its seven clockwise stages) — none of whose captions carry their label or arrow content; two Link to Learning notes rendered as callouts, replacing their "click here"/bare "video" link text with a description of each destination; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (epidermis, gastrodermis, mesoglea, extracellular digestion, polyp, medusa, and polymorphic, each once) added from the glossary, and one (nerve net) built from the body sentence that names it in bold — the glossary's "siphon" entry (a mantle-cavity water inlet) is kept in Key terms for completeness but has no counterpart anywhere in this module's text and was not used for a recall item, since the section teaches no such structure — reported as a source defect; two locally written multiple-choice items added (naming the Obelia polyp adapted for feeding, and identifying Anthozoa as the only polyp-only clade), both built strictly from the section's own sentences, to round out the "body forms" and "cnidarian classes" objective groups.</small>

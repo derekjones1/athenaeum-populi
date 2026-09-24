@@ -30,7 +30,7 @@ Other types of lipids can also be degraded by certain microbes. For example, the
 
 **Check Your Understanding**
 
-{{< selfcheck question="How can lipases and phospholipases contribute to virulence in microbes?" hint="Look for what these lipid-degrading, virulence-linked enzymes actually do to host cells once they have acted." >}}
+{{< selfcheck question="How can lipases and phospholipases contribute to virulence in microbes?" hint="Reread the first paragraph under Lipid Catabolism." >}}
 These enzymes contribute to the virulence of certain microbes, such as the bacterium *Staphylococcus aureus* and the fungus *Cryptococcus neoformans*. These microbes use phospholipases to destroy lipids and phospholipids in host cells and then use the catabolic products for energy.
 ===CHECKS===
 contribute to the virulence of certain microbes, such as the bacterium Staphylococcus aureus and the fungus Cryptococcus neoformans
@@ -46,7 +46,7 @@ After extracellular protease degradation and uptake of peptides in the cell, the
 
 **Check Your Understanding**
 
-{{< selfcheck question="How can protein catabolism help identify microbes?" hint="Name the general basis for the distinction, then use the two named examples of proteases as illustrations." >}}
+{{< selfcheck question="How can protein catabolism help identify microbes?" hint="Reread the first paragraph under Protein Catabolism." >}}
 Some clinically important pathogens can be identified by their ability to produce a specific type of extracellular protease. For example, production of the extracellular protease gelatinase by members of the genera *Proteus* and *Serratia* can be used to distinguish them from other gram-negative enteric bacteria, because it prevents gelatin broth from solidifying when refrigerated. Production of the extracellular protease caseinase, detected as a zone of clearing on skim milk agar, can likewise be used to distinguish the opportunist pathogen *Pseudomonas aeruginosa* from other related gram-negative bacteria.
 ===CHECKS===
 Some clinically important pathogens can be identified by their ability to produce a specific type of extracellular protease
@@ -89,7 +89,7 @@ The clinical laboratory performed a Gram stain on Hannah's blood and CSF samples
 {{< multiplechoice
   question="Which of the following molecules is not produced during the breakdown of phospholipids?"
   answer="glucose"
-  hint="Recall what the module says is released when phospholipids are broken down at the glycerol backbone."
+  hint="Reread the first two paragraphs under Lipid Catabolism."
 >}}
 glucose
 glycerol
@@ -97,10 +97,17 @@ acetyl groups
 fatty acids
 {{< /multiplechoice >}}
 
+{{< textin
+  question="The process by which two-carbon units are sequentially removed from fatty acids, producing acetyl-CoA, FADH₂, and NADH is called ________."
+  answer="β-oxidation"
+  accept="beta-oxidation"
+  hint="Reread the second paragraph under Lipid Catabolism."
+>}}
+
 {{< multiplechoice
   question="Which of the following is the first step in triglyceride degradation?"
   answer="removal of fatty acids"
-  hint="Recall the first action performed on triglycerides before glycerol and fatty acids can be further processed."
+  hint="Reread the first paragraph under Lipid Catabolism."
 >}}
 removal of fatty acids
 β-oxidation
@@ -109,20 +116,13 @@ formation of smaller peptides
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The process by which two-carbon units are sequentially removed from fatty acids, producing acetyl-CoA, FADH₂, and NADH is called ________."
-  answer="β-oxidation"
-  accept="beta-oxidation"
-  hint="Name the process that removes two-carbon acetyl groups one pair at a time from the ends of fatty acid chains."
->}}
-
-{{< textin
   question="The NADH and FADH₂ produced during β-oxidation are used to make ________."
   answer="ATP by oxidative phosphorylation"
   accept="ATP"
-  hint="Name what these carried electrons are ultimately used to generate through the cell's electron transport chain."
+  hint="Reread the second paragraph under Lipid Catabolism."
 >}}
 
-{{< selfcheck question="Do you think that β-oxidation can occur in an organism incapable of cellular respiration? Why or why not?" hint="Recall what happens to the electrons carried by the NADH and FADH2 produced from fatty acid degradation." >}}
+{{< selfcheck question="Do you think that β-oxidation can occur in an organism incapable of cellular respiration? Why or why not?" hint="Reread the second paragraph under Lipid Catabolism." >}}
 The module states that fatty acid degradation reduces NAD⁺ and FAD to NADH and FADH₂, whose electrons can be used to make ATP by oxidative phosphorylation, and that the resulting acetyl groups are carried to the Krebs cycle for further degradation to CO₂. Beyond this connection to oxidative phosphorylation and the Krebs cycle, the module does not state whether this fatty acid degradation could proceed in an organism lacking cellular respiration.
 ===CHECKS===
 reduces NAD⁺ and FAD to NADH and FADH₂, whose electrons can be used to make ATP by oxidative phosphorylation
@@ -135,7 +135,7 @@ the module does not state whether this fatty acid degradation could proceed in a
 {{< multiplechoice
   question="Which fungus uses phospholipases to destroy lipids and phospholipids in host cells, contributing to its virulence?"
   answer="*Cryptococcus neoformans*"
-  hint="Look for the organism named as a fungus, not a bacterium, in the sentence naming both host-lipid-destroying microbes."
+  hint="Reread the first paragraph under Lipid Catabolism."
 >}}
 *Staphylococcus aureus*
 *Mycobacterium tuberculosis*
@@ -146,7 +146,7 @@ the module does not state whether this fatty acid degradation could proceed in a
 {{< multiplechoice
   question="The ability to degrade cholesterol contributes to the virulence of which pathogen?"
   answer="*Mycobacterium tuberculosis*"
-  hint="Identify the pathogen this section names as degrading cholesterol, distinguishing it from the bacterium and fungus named earlier in the same subsection."
+  hint="Reread the third paragraph under Lipid Catabolism."
 >}}
 *Cryptococcus neoformans*
 *Staphylococcus aureus*
@@ -157,7 +157,8 @@ the module does not state whether this fatty acid degradation could proceed in a
 {{< textin
   question="The resulting products of cholesterol ring degradation, including ________, can be further catabolized in the Krebs cycle."
   answer="pyruvate"
-  hint="Name the three-carbon breakdown product the module lists among the results of the cholesterol ring-breaking process."
+  accept="pyruvic acid"
+  hint="Reread the third paragraph under Lipid Catabolism."
 >}}
 
 ### Describe how proteins are catabolized
@@ -165,7 +166,7 @@ the module does not state whether this fatty acid degradation could proceed in a
 {{< multiplechoice
   question="Caseinase is which type of enzyme?"
   answer="extracellular protease"
-  hint="Compare where caseinase acts (inside or outside the cell) with the enzymes described earlier in this section that break down lipids."
+  hint="Reread the first paragraph under Protein Catabolism."
 >}}
 phospholipase
 lipase
@@ -173,7 +174,7 @@ extracellular protease
 intracellular protease
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How are the products of lipid and protein degradation connected to glucose metabolism pathways?" hint="Trace where glycerol, the acetyl groups released from fatty acids, and deaminated amino acids each enter glycolysis or the Krebs cycle." >}}
+{{< selfcheck question="How are the products of lipid and protein degradation connected to glucose metabolism pathways?" hint="The answer spans the second paragraph under Lipid Catabolism and the last paragraph under Protein Catabolism." >}}
 Glycerol from lipid catabolism can be phosphorylated to glycerol-3-phosphate and converted to glyceraldehyde 3-phosphate, which continues through glycolysis. The acetyl groups produced during fatty acid degradation are carried by coenzyme A to the Krebs cycle. After amino acids are deaminated to remove their amino group, the remaining molecules can enter the transition reaction or the Krebs cycle.
 ===CHECKS===
 Glycerol can be phosphorylated to glycerol-3-phosphate and converted to glyceraldehyde 3-phosphate, which continues through glycolysis
@@ -181,7 +182,7 @@ The acetyl groups produced during fatty acid degradation are carried by coenzyme
 amino acids are deaminated to remove their amino group, the remaining molecules can enter the transition reaction or the Krebs cycle
 {{< /selfcheck >}}
 
-{{< selfcheck question="What is the general strategy used by microbes for the degradation of macromolecules?" hint="Compare how the lipid-degrading and protein-degrading enzymes each act on a macromolecule outside the cell before smaller products are taken up." >}}
+{{< selfcheck question="What is the general strategy used by microbes for the degradation of macromolecules?" hint="The answer draws on the first two paragraphs under Lipid Catabolism and both paragraphs under Protein Catabolism." >}}
 For both lipids and proteins, microbes first use extracellular enzymes to break the macromolecule down outside the cell into smaller pieces: lipases and phospholipases release fatty acids (and, for phospholipids, the phosphorylated head group) from the glycerol backbone, while extracellular proteases cut proteins internally into smaller peptides. These smaller products can then be taken up by the cell, where further breakdown occurs — fatty acids are degraded by β-oxidation, and peptides are broken down further into individual amino acids by additional intracellular proteases — so that the resulting molecules can enter glycolysis, the transition reaction, or the Krebs cycle.
 ===CHECKS===
 microbes first use extracellular enzymes to break the macromolecule down outside the cell into smaller pieces
@@ -195,13 +196,13 @@ these smaller products can then be taken up by the cell, where further breakdown
 {{< textin
   question="________ is a type of medium used to detect the production of an extracellular protease called caseinase."
   answer="Skim milk agar"
-  hint="Name the type of solid growth medium containing casein that changes appearance around microbial growth when this protease acts."
+  hint="Reread the first paragraph under Protein Catabolism."
 >}}
 
 {{< multiplechoice
   question="Production of which extracellular protease distinguishes members of the genera Proteus and Serratia from other gram-negative enteric bacteria?"
   answer="gelatinase"
-  hint="Look for the protease detected by testing whether gelatin resolidifies after refrigeration, not the one detected on a casein-based medium."
+  hint="Reread the first paragraph under Protein Catabolism."
 >}}
 gelatinase
 caseinase
@@ -212,7 +213,7 @@ phospholipase
 {{< multiplechoice
   question="Which visible result indicates that a microbe is producing the extracellular protease caseinase?"
   answer="a zone of clearing around the microbial growth"
-  hint="Distinguish the caseinase result from the refrigerated-gelatin test used for a different protease enzyme."
+  hint="Reread the first paragraph under Protein Catabolism."
 >}}
 prevention of gelatin from solidifying when refrigerated
 a zone of clearing around the microbial growth
@@ -222,4 +223,4 @@ a positive result on an oxidase test
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 8.5: Catabolism of Lipids and Proteins](https://openstax.org/books/microbiology/pages/8-5-catabolism-of-lipids-and-proteins) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: this section has no figures and no CALS table; the two self-closing same-passage cross-references to Section 7.3's triglyceride and phospholipid figures (`<link document="m58815">`) are rendered as two Markdown links to the Lipids section page, with link text supplied from that section's title (a describing phrase supplied by the author, since the source left both links unnamed); the cross-reference to Appendix C (`m58948`, not authored) is left as plain text naming the appendix; the cross-reference to chapter 15's *Virulence Factors of Bacterial and Viral Pathogens* (`m58868`, not authored) is left as plain text naming the chapter and section title; the Clinical Focus box is rendered as a callout, its "Jump to the next / Go back to the previous Clinical Focus box" links replaced by a plain sentence naming that the case continues in Biogeochemical Cycles and began in Energy, Matter, and Enzymes; both of the section's body Check Your Understanding bullets remain self-checks (body graded 0, self-check 2): the first (how lipases and phospholipases contribute to virulence) needs two separate module sentences — the general "contribute to the virulence of certain microbes" sentence and the more specific phospholipase-mechanism sentence — assembled together, since the module states the destroy-host-lipids-for-energy mechanism only for phospholipases, not lipases by name; the second (how protein catabolism identifies microbes) remains a self-check because its honest answer assembles the general principle with both the gelatinase and caseinase examples; the three source Multiple Choice and three source Fill in the Blank items keep the source's own keys, option order, and wording, except that the "ATP by oxidative phosphorylation" fill-in-the-blank also accepts the shorter answer "ATP" (adjudicated: a learner who fills the blank with only "ATP" is not wrong, even though the source's fuller phrase stays the primary key); of the section's two unkeyed Short Answer questions, both remain self-checks with model answers and rubrics assembled only from this module's own sentences, because each honest answer requires assembling facts from across both the Lipid Catabolism and Protein Catabolism subsections; the unkeyed Critical Thinking question (whether β-oxidation requires cellular respiration) remains a self-check whose model answer states only what the module gives about β-oxidation feeding oxidative phosphorylation and the Krebs cycle, and explicitly stops there because the module never states whether the pathway requires a functioning respiratory chain; five filler items (two multiple-choice items on which pathogen is linked to which lipid-degrading virulence trait, one cloze `textin` naming pyruvate from the module's own cholesterol-ring-degradation sentence — chosen over an earlier draft that clozed "phospholipases," which turned out to duplicate a literal word in the source-verbatim body Check Your Understanding question above it — and two multiple-choice items on the gelatinase/caseinase identification tests, the second of which draws its two wrong-context distractors from the module's own Clinical Focus test-result sentences, gray nonhemolytic colonies and a positive oxidase test, rather than invented results) round out the "identify microbes" and "identify bacteria" Practice groups, which the section's own six keyed exercises do not reach on their own; no source exercise was omitted; key terms are compiled from the module's four defined terms and the book's Glossary appendix, except for **protease**, whose Glossary sense ("removes individual amino acids from the ends of peptide chains," an exopeptidase description) does not match this module's own sentence, which describes extracellular proteases as cutting proteins internally into smaller peptides (an endopeptidase description); the Key terms bullet for protease is therefore sentence-derived from the module's own text instead of the Glossary appendix. One claim is corrected against the book itself: the source's statement that phospholipids compose the membranes of all organisms "except the archaea" contradicts the book's own account of ether-linked archaeal membrane phospholipids, so the sentence is corrected with a visible Source note (erratum 512).</small>
+<small>This section is adapted from [Microbiology, Section 8.5: Catabolism of Lipids and Proteins](https://openstax.org/books/microbiology/pages/8-5-catabolism-of-lipids-and-proteins) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: this section has no figures and no CALS table; the two self-closing same-passage cross-references to Section 7.3's triglyceride and phospholipid figures (`<link document="m58815">`) are rendered as two Markdown links to the Lipids section page, with link text supplied from that section's title (a describing phrase supplied by the author, since the source left both links unnamed); the cross-reference to Appendix C (`m58948`, not authored) is left as plain text naming the appendix; the cross-reference to chapter 15's *Virulence Factors of Bacterial and Viral Pathogens* (`m58868`, not authored) is left as plain text naming the chapter and section title; the Clinical Focus box is rendered as a callout, its "Jump to the next / Go back to the previous Clinical Focus box" links replaced by a plain sentence naming that the case continues in Biogeochemical Cycles and began in Energy, Matter, and Enzymes; both of the section's body Check Your Understanding bullets remain self-checks (body graded 0, self-check 2): the first (how lipases and phospholipases contribute to virulence) needs two separate module sentences — the general "contribute to the virulence of certain microbes" sentence and the more specific phospholipase-mechanism sentence — assembled together, since the module states the destroy-host-lipids-for-energy mechanism only for phospholipases, not lipases by name; the second (how protein catabolism identifies microbes) remains a self-check because its honest answer assembles the general principle with both the gelatinase and caseinase examples; the three source Multiple Choice and three source Fill in the Blank items keep the source's own keys, option order, and wording, except that the "ATP by oxidative phosphorylation" fill-in-the-blank also accepts the shorter answer "ATP" (adjudicated: a learner who fills the blank with only "ATP" is not wrong, even though the source's fuller phrase stays the primary key), and the β-oxidation fill-in-the-blank was moved above the "first step in triglyceride degradation" multiple choice so that no item directly above a text-entry blank prints its key, reversing their printed order; of the section's two unkeyed Short Answer questions, both remain self-checks with model answers and rubrics assembled only from this module's own sentences, because each honest answer requires assembling facts from across both the Lipid Catabolism and Protein Catabolism subsections; the unkeyed Critical Thinking question (whether β-oxidation requires cellular respiration) remains a self-check whose model answer states only what the module gives about β-oxidation feeding oxidative phosphorylation and the Krebs cycle, and explicitly stops there because the module never states whether the pathway requires a functioning respiratory chain; five filler items (two multiple-choice items on which pathogen is linked to which lipid-degrading virulence trait, one cloze `textin` naming pyruvate from the module's own cholesterol-ring-degradation sentence — chosen over an earlier draft that clozed "phospholipases," which turned out to duplicate a literal word in the source-verbatim body Check Your Understanding question above it — and two multiple-choice items on the gelatinase/caseinase identification tests, the second of which draws its two wrong-context distractors from the module's own Clinical Focus test-result sentences, gray nonhemolytic colonies and a positive oxidase test, rather than invented results) round out the "identify microbes" and "identify bacteria" Practice groups, which the section's own six keyed exercises do not reach on their own; no source exercise was omitted; key terms are compiled from the module's four defined terms and the book's Glossary appendix, except for **protease**, whose Glossary sense ("removes individual amino acids from the ends of peptide chains," an exopeptidase description) does not match this module's own sentence, which describes extracellular proteases as cutting proteins internally into smaller peptides (an endopeptidase description); the Key terms bullet for protease is therefore sentence-derived from the module's own text instead of the Glossary appendix. One claim is corrected against the book itself: the source's statement that phospholipids compose the membranes of all organisms "except the archaea" contradicts the book's own account of ether-linked archaeal membrane phospholipids, so the sentence is corrected with a visible Source note (erratum 512).</small>

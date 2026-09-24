@@ -29,7 +29,7 @@ On the other hand, BSE was initially thought to only affect cattle. Cattle dying
 
 The cause of spongiform encephalopathies, such as kuru and BSE, is an infectious structural variant of a normal cellular protein called PrP (prion protein). It is this variant that constitutes the prion particle. PrP exists in two forms, **PrP<sup>c</sup>**, the normal form of the protein, and **PrP<sup>sc</sup>**, the infectious form. Once introduced into the body, the PrP<sup>sc</sup> contained within the prion binds to PrP<sup>c</sup> and converts it to PrP<sup>sc</sup>. This leads to an exponential increase of the PrP<sup>sc</sup> protein, which aggregates. PrP<sup>sc</sup> is folded abnormally, and the resulting conformation (shape) is directly responsible for the lesions seen in the brains of infected cattle. Thus, although not without some detractors among scientists, the prion seems likely to be an entirely new form of infectious agent, the first one found whose transmission is not reliant upon genes made of DNA or RNA.
 
-{{< mediafigure src="biology/Figure_21_04_01ab" kind="diagram" eager="true" alt="Two-panel figure. Panel (a) is a labeled flow diagram showing normal PrPc converting to the infectious PrPsc form and PrPsc accumulating through a cyclic pathway. Panel (b) is a light micrograph of prion-infected brain tissue showing a spongy, vacuolated texture." longdesc="Panel (a) is a cyclic flow diagram of green dots (PrPc) and red spiky dots (PrPsc) connected by curved arrows. A cluster of green dots at upper left is labeled 'Endogenous PrPc'; a single dot at upper middle is labeled 'PrPsc.' Both lead into a green-and-red dot at right labeled 'Interaction between PrPc and PrPsc.' At left, a boxed list names three ways PrPsc can arise — 'Spontaneous generation of PrPsc,' 'Conversion of mutant PrP into PrPsc,' and 'Inoculation of PrPsc' — with an arrow leading right to a red spiky dot. An arrow connects that dot up to the interaction node, and another arrow leads down from the interaction node to a pair of red spiky dots labeled 'Conversion of PrP into PrPsc,' which arrow back into the boxed dot, closing the loop, and also arrows down and left to a cluster of red spiky dots labeled 'Accumulation of PrPsc.' Panel (b) is a light micrograph of pink-stained brain tissue filled with round, pale vacuoles of varying size among small dark purple nuclei, with a black scale bar reading '25 µm' at the lower right." >}}
+{{< mediafigure src="biology/Figure_21_04_01ab" kind="diagram" eager="true" alt="Two-panel figure. Panel (a) is a labeled flow diagram showing normal PrPc converting to the infectious PrPsc form and PrPsc accumulating through a cyclic pathway. Panel (b) is a light micrograph of prion-infected brain tissue showing a spongy, vacuolated texture." longdesc="Panel (a) is a cyclic flow diagram of green dots (PrPc) and red spiky dots (PrPsc) connected by curved arrows. A cluster of eight green dots at the top is labeled 'Endogenous PrPc,' and a curved arrow leads from it into a green-and-red dot pair at right labeled 'Interaction between PrPc and PrPsc,' whose red dot a separate line labels 'PrPsc.' At left, a boxed list names three ways PrPsc can arise — 'Spontaneous generation of PrPsc,' 'Conversion of mutant PrP into PrPsc,' and 'Inoculation of PrPsc' — with an arrow leading right to a red spiky dot. An arrow connects that dot up to the interaction node, and another arrow leads down from the interaction node to a pair of red spiky dots labeled 'Conversion of PrP into PrPsc,' which arrow back up into the red spiky dot beside the box, closing the loop, and also arrows down and left to a cluster of red spiky dots labeled 'Accumulation of PrPsc.' Panel (b) is a light micrograph of pink-stained brain tissue filled with round, pale vacuoles of varying size among small dark purple nuclei, with a black scale bar reading '25 µm' at the lower right." >}}
 Mad Cow Disease in humans. (a) Endogenous normal prion protein (PrP<sup>c</sup>) is converted into the disease-causing form (PrP<sup>sc</sup>) when it encounters this variant form of the protein. PrP<sup>sc</sup> may arise spontaneously in brain tissue, especially if a mutant form of the protein is present, or it may occur via the spread of misfolded prions consumed in food into brain tissue. (b) This prion-infected brain tissue, visualized using light microscopy, shows the vacuoles that give it a spongy texture, typical of transmissible spongiform encephalopathies. (credit b: modification of work by Dr. Al Jenny, USDA APHIS; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
@@ -90,7 +90,7 @@ consumption of infected meat
 {{< textin
   question="An agent with the ability to cause disease is called a ________."
   answer="pathogen"
-  hint="The section's opening sentence uses this general term for both prions and viroids."
+  hint="The section's opening sentence uses this general term for both acellular agents it covers."
 >}}
 
 {{< textin
@@ -100,6 +100,12 @@ consumption of infected meat
 >}}
 
 ### Define viroids and their targets of infection
+
+{{< textin
+  question="A plant pathogen that produces only a single, specific RNA molecule is called a ________."
+  answer="viroid"
+  hint="The second of the two acellular agents this section covers; it infects plants only."
+>}}
 
 {{< multiplechoice
   question="Which statement is true of viroids?"
@@ -128,12 +134,6 @@ the RNA can infect plant cells without a capsid
 the RNA replicates
 not translated to produce proteins
 {{< /selfcheck >}}
-
-{{< textin
-  question="A plant pathogen that produces only a single, specific RNA molecule is called a ________."
-  answer="viroid"
-  hint="The second of the two acellular agents this section covers; it infects plants only."
->}}
 
 ---
 

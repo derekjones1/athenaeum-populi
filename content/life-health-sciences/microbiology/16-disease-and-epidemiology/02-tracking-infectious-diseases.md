@@ -41,7 +41,7 @@ Florence Nightingale's work is another example of an early epidemiological study
 
 Joseph Lister provided early epidemiological evidence leading to good public health practices in clinics and hospitals. These settings were notorious in the mid-1800s for fatal infections of surgical wounds at a time when the germ theory of disease was not yet widely accepted (see [Foundations of Modern Cell Theory](/life-health-sciences/microbiology/03-the-cell/02-foundations-of-modern-cell-theory/)). Most physicians did not wash their hands between patient visits or clean and sterilize their surgical tools. Lister, however, discovered the disinfecting properties of carbolic acid, also known as phenol (see [Using Chemicals to Control Microorganisms](/life-health-sciences/microbiology/13-control-of-microbial-growth/03-using-chemicals-to-control-microorganisms/)). He introduced several disinfection protocols that dramatically lowered post-surgical infection rates (O.M. Lidwell, "Joseph Lister and Infection from the Air," *Epidemiology and Infection* 99 (1987): 569–578). He demanded that surgeons who worked for him use a 5% carbolic acid solution to clean their surgical tools between patients, and even went so far as to spray the solution onto bandages and over the surgical site during operations. He also took precautions not to introduce sources of infection from his skin or clothing by removing his coat, rolling up his sleeves, and washing his hands in a dilute solution of carbolic acid before and during the surgery.
 
-{{< mediafigure src="microbiology/OSC_Microbio_16_02_Flor" kind="diagram" alt="(a) A studio portrait of Florence Nightingale in mid-19th-century dress. (b) Nightingale's rose diagram: a circular chart divided into twelve wedges, one per month from April 1854 to March 1855, each wedge's area sized to that month's total deaths and its colored bands showing the deaths from wounds, from preventable infectious disease, and from all other causes." longdesc="The diagram is a circular histogram (a 'rose diagram') with twelve wedges arranged clockwise for the months from April 1854 through March 1855. Each wedge's radius grows with that month's number of deaths, and each wedge is divided into colored bands: a large band for deaths from preventable infectious disease, a smaller band for deaths from wounds, and a dark band for deaths from all other causes. The infectious-disease band is the largest band in nearly every month, and the wedges are noticeably larger in the colder months than in the warmer ones, illustrating that disease, not combat, caused most of the deaths." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_16_02_Flor" kind="diagram" alt="(a) A studio portrait of Florence Nightingale in mid-19th-century dress. (b) Nightingale's rose diagram: a circular chart divided into twelve wedges, one per month from April 1854 to March 1855, each wedge's area sized to that month's total deaths and its colored bands showing the deaths from wounds, from preventable infectious disease, and from all other causes." longdesc="The diagram, titled 'Diagram of the Causes of Mortality in the Army in the East, April 1854 to March 1855,' is a circular histogram (a 'rose diagram') with twelve wedges arranged clockwise for the months from April 1854 through March 1855; two place names printed at wedge boundaries, 'Bulgaria' between June and July and 'Crimea' between September and October, mark where the army was. Each wedge's radius grows with that month's number of deaths, and each wedge is divided into colored bands: a large band for deaths from preventable infectious disease, a smaller band for deaths from wounds, and a dark band for deaths from all other causes. The infectious-disease band is the largest band in nearly every month, the wounds band reaches farthest in October and November, and the wedges are largest in the winter months, November through March, peaking in January 1855, and smallest from April to June, illustrating that disease, not combat, caused most of the deaths." >}}
 (a) Florence Nightingale reported on the data she collected as a nurse in the Crimean War. (b) Nightingale's diagram shows the number of fatalities in soldiers by month of the conflict from various causes. The total number dead in a particular month is equal to the area of the wedge for that month. The colored sections of the wedge represent different causes of death: wounds (pink), preventable infectious diseases (gray), and all other causes (brown).
 {{< /mediafigure >}}
 
@@ -114,7 +114,7 @@ Experimental studies provide the strongest evidence for the etiology of disease,
 
 **Check Your Understanding**
 
-{{< selfcheck question="Describe the advantages and disadvantages of observational studies and experimental studies." hint="Weigh ease and ethics against what each design can prove about cause." >}}
+{{< selfcheck question="Describe the advantages and disadvantages of observational studies and experimental studies." hint="Reread the first two paragraphs of the Observational Studies subsection and the first two of the subsection that follows it." >}}
 Observational studies are usually easier to carry out than experimental studies and are sometimes the only ethical option, but because the researcher never manipulates the subjects, they can only show an association between a disease and a possible cause, not prove that the cause is responsible. Experimental studies, in which the researcher manipulates the subjects and compares them with an untreated control group, provide the strongest evidence of causation, but manipulating subjects is often more difficult and sometimes impossible for ethical reasons, and the studies must be carefully designed — often as double-blind studies — to eliminate bias.
 ===CHECKS===
 observational studies are usually easier to carry out than experimental studies and are sometimes the only ethical option
@@ -178,19 +178,19 @@ The case continues in [Modes of Disease Transmission](/life-health-sciences/micr
 {{< textin
   question="________ occurs when an infected individual passes the infection on to other individuals, who pass it on to still others, increasing the penetration of the infection into the susceptible population."
   answer="Propagated spread"
-  hint="This is the mode of transmission with no single source, spreading directly from person to person."
+  hint="Reread the Pioneers of Epidemiology paragraph just before John Snow's portrait."
 >}}
 
 {{< textin
   question="A batch of food contaminated with botulism exotoxin, consumed at a family reunion by most of the members of a family, would be an example of a ________ outbreak."
   answer="point source"
-  hint="This is the type of common source spread in which the source operates for a period shorter than the pathogen's incubation period."
+  hint="Reread the Pioneers of Epidemiology paragraph that lists the types of common source spread."
 >}}
 
 {{< multiplechoice
   question="Which pioneer of epidemiology compiled data on causes of mortality in soldiers, leading to innovations in military medical care?"
   answer="Florence Nightingale"
-  hint="She is the nurse whose wedge-chart diagram of causes of death appears above."
+  hint="Reread the Pioneers of Epidemiology paragraph on the Crimean War."
 >}}
 Florence Nightingale
 Robert Koch
@@ -201,7 +201,7 @@ John Snow
 {{< multiplechoice
   question="Which pioneer of epidemiology developed a methodology for conclusively determining the etiology of disease?"
   answer="Robert Koch"
-  hint="This pioneer's postulates for pinning down a disease's causative agent are named later in this section, under Experimental Studies."
+  hint="Reread the second paragraph of the last subsection of Types of Epidemiological Studies."
 >}}
 Florence Nightingale
 Robert Koch
@@ -212,7 +212,7 @@ John Snow
 {{< multiplechoice
   question="Which pioneer of epidemiology showed that surgical wound infection rates could be dramatically reduced by using carbolic acid to disinfect surgical tools, bandages, and surgical sites?"
   answer="Joseph Lister"
-  hint="He is the surgeon shown spraying a disinfectant over the surgical site in the illustration above."
+  hint="Reread the Pioneers of Epidemiology paragraph on fatal infections of surgical wounds."
 >}}
 Florence Nightingale
 Robert Koch
@@ -223,7 +223,7 @@ John Snow
 {{< multiplechoice
   question="Which pioneer of epidemiology determined the source of a cholera outbreak in London?"
   answer="John Snow"
-  hint="He is the physician who mapped cholera cases around a single water pump."
+  hint="Reread the first paragraph of the Pioneers of Epidemiology discussion."
 >}}
 Florence Nightingale
 Robert Koch
@@ -231,7 +231,7 @@ Joseph Lister
 John Snow
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What activity did John Snow conduct, other than mapping, that contemporary epidemiologists also use when trying to understand how to control a disease?" hint="Look at what Snow did with the water sources of infected and unaffected people, before and in addition to plotting cases on a map." >}}
+{{< selfcheck question="What activity did John Snow conduct, other than mapping, that contemporary epidemiologists also use when trying to understand how to control a disease?" hint="Reread the first paragraph of the Pioneers of Epidemiology discussion, which describes the two ways Snow investigated the 1854 epidemic." >}}
 Besides mapping cholera cases, Snow traced where the infected obtained their drinking water: he found that many affected individuals drew their water from the River Thames downstream of London, where it was contaminated with sewage, while noting that brewery workers, who drank beer instead of water, did not contract cholera. This comparison of drinking-water sources between affected and unaffected groups — tracing exposure back to its source — is the activity contemporary epidemiologists still use.
 ===CHECKS===
 traced where the infected obtained their drinking water
@@ -244,7 +244,7 @@ noted that brewery workers, who drank beer instead of water, did not contract ch
 {{< multiplechoice
   question="Which type of epidemiological study involves use of a set of test subjects (human or animal) and control subjects that are treated the same as the test subjects except for the specific treatment being studied?"
   answer="experimental"
-  hint="This is the only type among the options that directly manipulates its subjects, rather than only observing them."
+  hint="Reread the last subsection of Types of Epidemiological Studies."
 >}}
 experimental
 analytical
@@ -256,7 +256,7 @@ retrospective
 {{< multiplechoice
   question="Which type of epidemiological study involves observing groups of individuals to look for associations with disease?"
   answer="analytical"
-  hint="This approach observes carefully selected groups without manipulating them, to uncover associations."
+  hint="Reread the fourth paragraph of the Observational Studies subsection."
 >}}
 experimental
 analytical
@@ -268,7 +268,7 @@ retrospective
 {{< multiplechoice
   question="Which type of epidemiological study involves a comparison of a cohort of individuals through the course of the study?"
   answer="prospective"
-  hint="This design follows subjects forward from the present into the future, rather than looking back."
+  hint="Reread the sixth paragraph of the Observational Studies subsection."
 >}}
 experimental
 analytical
@@ -280,7 +280,7 @@ retrospective
 {{< multiplechoice
   question="Which type of epidemiological study involves examination of current case histories, interviews with patients and their contacts, interpretation of medical test results; frequently conducted while outbreak is still in progress?"
   answer="descriptive"
-  hint="This approach interviews patients and examines records early on, often while the outbreak is still unfolding."
+  hint="Reread the third paragraph of the Observational Studies subsection."
 >}}
 experimental
 analytical
@@ -292,7 +292,7 @@ retrospective
 {{< multiplechoice
   question="Which type of epidemiological study involves examination of past case histories and medical test results conducted on patients in an outbreak?"
   answer="retrospective"
-  hint="This design looks backward at case histories and records that already exist."
+  hint="Reread the fifth paragraph of the Observational Studies subsection."
 >}}
 experimental
 analytical

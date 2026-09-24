@@ -78,7 +78,7 @@ Sexual reproduction starts with the combination of a sperm and an egg in a proce
 {{< multiplechoice
   question="External fertilization occurs in which type of environment?"
   answer="aquatic"
-  hint="Think about where both eggs and sperm need to be released into the same medium at the same time for sperm to reach the egg — spawning depends on it."
+  hint="Reread the first sentence of the section's first subsection."
 >}}
 aquatic
 forested
@@ -105,20 +105,26 @@ group spawning puts a large number of sperm and eggs together and relies on rand
 {{< /selfcheck >}}
 
 {{< textin
-  question="Fertilization of an egg by sperm outside the animal's body, often during spawning, is called ________."
-  answer="external fertilization"
-  accept="external fertilisation"
-  hint="This is the method most fish and aquatic invertebrates use, releasing gametes into the water rather than inside a body."
->}}
-
-{{< textin
   question="Fertilization of an egg by sperm inside the body of the female is called ________."
   answer="internal fertilization"
   accept="internal fertilisation"
   hint="This is the method humans use, in contrast to the one seahorses use."
 >}}
 
+{{< textin
+  question="Fertilization of an egg by sperm outside the animal's body, often during spawning, is called ________."
+  answer="external fertilization"
+  accept="external fertilisation"
+  hint="This is the method most fish and aquatic invertebrates use, releasing gametes into the water rather than inside a body."
+>}}
+
 ### Describe the methods used by animals for development of offspring during gestation
+
+{{< textin
+  question="The process in which young develop within the female, receiving nourishment from the mother's blood through a placenta, is called ________."
+  answer="viviparity"
+  hint="This is the reproductive strategy used by most mammals, where a placenta — not a yolk — is the nutrient source."
+>}}
 
 {{< multiplechoice
   question="Which term applies to egg development within the female with nourishment derived from a yolk?"
@@ -141,12 +147,6 @@ viviparity
 ovoviviparity
 ovovoparity
 {{< /multiplechoice >}}
-
-{{< textin
-  question="The process in which young develop within the female, receiving nourishment from the mother's blood through a placenta, is called ________."
-  answer="viviparity"
-  hint="This is the reproductive strategy used by most mammals, where a placenta — not a yolk — is the nutrient source."
->}}
 
 ### Describe the anatomical adaptations that occurred in animals to facilitate reproduction
 

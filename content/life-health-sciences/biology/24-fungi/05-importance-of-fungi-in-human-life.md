@@ -45,6 +45,12 @@ Fungi are important to everyday human life. Fungi are important decomposers in m
 
 ### Describe the importance of fungi to the balance of the environment
 
+{{< textin
+  question="Fungi are important ________ in most ecosystems."
+  answer="decomposers"
+  hint="Reread the second sentence of this section's summary."
+>}}
+
 {{< multiplechoice
   question="Why are fungal insecticides an attractive alternative to chemical pesticides for growing food crops?"
   answer="Human consumption of fungal insecticides would not make a person sick, but ingestion of chemical pesticides can be harmful to humans."
@@ -67,19 +73,12 @@ decomposition by fungi also releases nitrogen for use by living organisms
 the nitrogen is released from organic compounds in the form of ammonia
 {{< /selfcheck >}}
 
-{{< textin
-  question="Fungi are important ________ in most ecosystems."
-  answer="decomposers"
-  accept="decomposer"
-  hint="This is the role fungi play at the very start of a food web's breakdown side — turning dead matter back into reusable nutrients."
->}}
-
 ### Summarize the role of fungi in agriculture and food and beverage preparation
 
 {{< multiplechoice
   question="Yeast is a facultative anaerobe. This means that alcohol fermentation takes place only if:"
   answer="the atmosphere does not contain oxygen"
-  hint="Facultative anaerobes switch to fermentation only when a particular gas is missing from their surroundings."
+  hint="Reread the fermentation paragraph, on the conditions under which wild yeasts ferment sugars."
 >}}
 the temperature is close to 37°C
 the atmosphere does not contain oxygen
@@ -97,11 +96,21 @@ it was one of Louis Pasteur's achievements to purify reliable strains of baker's
 {{< textin
   question="Fungi, as food, play a role in human nutrition in the form of ________, and also as agents of fermentation in the production of bread, cheeses, alcoholic beverages, and numerous other food preparations."
   answer="mushrooms"
-  accept="mushroom"
   hint="Named earlier in this section as delicacies such as morels and truffles."
 >}}
 
 ### Describe the importance of fungi in the chemical and pharmaceutical industries
+
+{{< multiplechoice
+  question="Secondary metabolites of fungi are used as medicines, such as ________ and anticoagulants."
+  answer="antibiotics"
+  hint="Reread the paragraph on the secondary metabolites of fungi."
+>}}
+steroid hormones
+antibiotics
+ergot alkaloids
+psilocybin
+{{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Fungi naturally produce antibiotics in order to ________."
@@ -112,17 +121,6 @@ reduce the risk of rejection after organ transplant
 control the population of damaging pests
 kill or inhibit the growth of bacteria
 ferment sugars into CO₂ and ethyl alcohol
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Secondary metabolites of fungi are used as medicines, such as ________ and anticoagulants."
-  answer="antibiotics"
-  hint="Penicillin and the cephalosporins, named in the secondary-metabolites paragraph, are examples of this drug class."
->}}
-steroid hormones
-antibiotics
-ergot alkaloids
-psilocybin
 {{< /multiplechoice >}}
 
 {{< textin
@@ -137,7 +135,7 @@ psilocybin
 {{< multiplechoice
   question="The advantage of yeast cells over bacterial cells to express human proteins is that:"
   answer="yeast cells are eukaryotic and modify proteins similarly to human cells"
-  hint="Which option concerns how the cell processes proteins internally, rather than growth speed or ease of genetic manipulation?"
+  hint="Reread the paragraph on fungi as model organisms, at its sentences on yeast."
 >}}
 yeast cells grow faster
 yeast cells are easier to manipulate genetically
@@ -165,4 +163,4 @@ decomposers
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 24.5: Importance of Fungi in Human Life](https://openstax.org/books/biology-2e/pages/24-5-importance-of-fungi-in-human-life) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure B24.05.02's alt text rewritten from the manifest's terse "Part a … Part b …" phrasing to a plain description of each photographed panel, and its `kind` corrected from the manifest's diagram guess to photo (both panels are photographs, not diagrams); two inline print figure cross-references ("Figure 24.28", "Figure 24.29") changed to descriptive phrases ("see the photo below") since figures are not numbered here; the fermentation paragraph's CO<sub>2</sub> set as Unicode CO₂; this module has no glossary, so its "Key terms" heading is omitted; the three Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); four cloze text-recall and select-the-term multiple-choice items added from the section summary, and three items added from the section's own prose in place of the usual glossary-derived recall items — text-recall items for the immunosuppressant drug cyclosporine and the red bread mold Neurospora crassa, and a multiple choice on why fungi produce antibiotics, with distractors drawn from the other fungal-product roles the same paragraphs name; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One date is corrected with a visible Source note: Pasteur's brewer's-yeast work and patent date to the 1870s, not the late 1850s (erratum 417).</small>
+<small>This section is adapted from [Biology 2e, Section 24.5: Importance of Fungi in Human Life](https://openstax.org/books/biology-2e/pages/24-5-importance-of-fungi-in-human-life) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure B24.05.02's alt text rewritten from the manifest's terse "Part a … Part b …" phrasing to a plain description of each photographed panel, and its `kind` corrected from the manifest's diagram guess to photo (both panels are photographs, not diagrams); two inline print figure cross-references ("Figure 24.28", "Figure 24.29") changed to descriptive phrases ("see the photo below") since figures are not numbered here; the fermentation paragraph's CO<sub>2</sub> set as Unicode CO₂; this module has no glossary, so its "Key terms" heading is omitted; the three Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 3, 1, 2 and the Critical Thinking Questions in the order 2, 1 of the source's numbering; four cloze text-recall and select-the-term multiple-choice items added from the section summary, and three items added from the section's own prose in place of the usual glossary-derived recall items — text-recall items for the immunosuppressant drug cyclosporine and the red bread mold Neurospora crassa, and a multiple choice on why fungi produce antibiotics, with distractors drawn from the other fungal-product roles the same paragraphs name; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One date is corrected with a visible Source note: Pasteur's brewer's-yeast work and patent date to the 1870s, not the late 1850s (erratum 417).</small>

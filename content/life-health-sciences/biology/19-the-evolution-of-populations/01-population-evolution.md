@@ -87,13 +87,20 @@ The modern synthesis of evolutionary theory grew out of the cohesion of Darwin's
 {{< multiplechoice
   question="What is the difference between micro- and macroevolution?"
   answer="Microevolution describes the evolution of organisms in populations, while macroevolution describes the evolution of species over long periods of time."
-  hint="The opening paragraph names microevolution as population change over time and macroevolution as the processes that gave rise to new species and higher taxonomic groups."
+  hint="Reread the section's opening paragraph, which introduces both terms."
 >}}
 Microevolution describes the evolution of small organisms, such as insects, while macroevolution describes the evolution of large organisms, like people and elephants.
 Microevolution describes the evolution of microscopic entities, such as molecules and proteins, while macroevolution describes the evolution of whole organisms.
 Microevolution describes the evolution of organisms in populations, while macroevolution describes the evolution of species over long periods of time.
 Microevolution describes the evolution of organisms over their lifetimes, while macroevolution describes the evolution of organisms over multiple generations.
 {{< /multiplechoice >}}
+
+{{< textin
+  question="The rate at which a specific allele appears within a population is called its ________."
+  answer="allele frequency"
+  accept="gene frequency|allele frequencies|gene frequencies"
+  hint="Reread the first paragraph of the Population Genetics subsection."
+>}}
 
 {{< multiplechoice
   question="Population genetics is the study of:"
@@ -109,7 +116,7 @@ the degree of inbreeding in a population
 {{< multiplechoice
   question="One of the original Amish colonies rose from a ship of colonists that came from Europe. The ship's captain, who had polydactyly, a rare dominant trait, was one of the original colonists. Today, we see a much higher frequency of polydactyly in the Amish population. This is an example of:"
   answer="b and c"
-  hint="A rare trait becoming common because one early colonist of a small, isolated founding population happened to carry it — not because the trait was favored — is this section's founder effect, a random change in allele frequencies rather than selection."
+  hint="Reread the Population Genetics paragraph on random changes in allele frequencies, and the event it names right after, then decide whether more than one option fits."
 >}}
 natural selection
 genetic drift
@@ -117,19 +124,12 @@ founder effect
 b and c
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The rate at which a specific allele appears within a population is called its ________."
-  answer="allele frequency"
-  accept="gene frequency|allele frequencies|gene frequencies"
-  hint="Population geneticists track how this rate shifts from one generation to the next; the Key terms list gives it a second, gene-based name."
->}}
-
 ### Define the Hardy-Weinberg principle and discuss its importance
 
 {{< multiplechoice
   question="Which of the following populations is not in Hardy-Weinberg equilibrium?"
   answer="a population undergoing natural selection"
-  hint="Hardy-Weinberg equilibrium assumes no evolutionary force is acting on the population; natural selection is one such force."
+  hint="Reread the Hardy-Weinberg paragraph that says what must be true of a population at equilibrium, then test each option against it."
 >}}
 a population with 6 homozygous dominant individuals (YY), 12 heterozygous individuals (Yy), and 6 homozygous recessive individuals (yy)
 a population in which the allele frequencies do not change over time
@@ -157,6 +157,12 @@ generation after generation of the population would carry the same genes
 individuals would, as a whole, look essentially the same
 {{< /selfcheck >}}
 
+{{< textin
+  question="The distribution of the different possible genotypes in a population is called its ________."
+  answer="genetic structure"
+  hint="From this, scientists can surmise how the population's phenotypes are distributed."
+>}}
+
 {{< selfcheck question="Imagine you are trying to test whether a population of flowers is undergoing evolution. You suspect there is selection pressure on the color of the flower: bees seem to cluster around the red flowers more often than the blue flowers. In a separate experiment, you discover blue flower color is dominant to red flower color. In a field, you count 600 blue flowers and 200 red flowers. What would you expect the genetic structure of the flowers to be?" hint="Red is recessive, so the 200 red flowers are the only individuals whose genotype you can read directly from their phenotype — start there." >}}
 Red is recessive so q<sup>2</sup> = 200/800 = 0.25; q = 0.5; p = 1 - q = 0.5; p<sup>2</sup> = 0.25; 2pq = 0.5. You would expect 200 homozygous blue flowers, 400 heterozygous blue flowers, and 200 red flowers.
 ===CHECKS===
@@ -167,12 +173,6 @@ p² = 0.25
 2pq = 0.5
 you would expect 200 homozygous blue flowers, 400 heterozygous blue flowers, and 200 red flowers
 {{< /selfcheck >}}
-
-{{< textin
-  question="The distribution of the different possible genotypes in a population is called its ________."
-  answer="genetic structure"
-  hint="From this, scientists can surmise how the population's phenotypes are distributed."
->}}
 
 ---
 

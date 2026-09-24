@@ -44,7 +44,7 @@ Collenchyma cell walls are uneven in thickness, as seen in this light micrograph
 
 **Sclerenchyma cells** also provide support to the plant, but unlike collenchyma cells, many of them are dead at maturity. There are two types of sclerenchyma cells: fibers and sclereids. Both types have secondary cell walls that are thickened with deposits of lignin, an organic compound that is a key component of wood. Fibers are long, slender cells; sclereids are smaller-sized. Sclereids give pears their gritty texture. Humans use sclerenchyma fibers to make linen and rope (pictured below).
 
-{{< mediafigure src="biology/Figure_30_02_04abcf" kind="photo" alt="A three-panel composite: (a) a micrograph cross section of a flax stem showing concentric tissue rings from a pale central pith out through xylem and phloem to sclerenchyma, cortex, and epidermis; (b) a fourteenth-century painting of women preparing linen cloth; (c) a photo of tall flax plants with long, strap-like leaves tapering to narrow tips, against the sky." longdesc="Panel (a) is a micrograph cross section of a flax stem labeled from the center outward: 'Pith' (two dark dots at the middle), 'Xylem' (the ring just outside the pith), and 'Phloem' (the ring outside the xylem), then, along the rim, 'Epidermis', 'Cortex', and 'Sclerenchyma'; a 100 µm scale bar sits at lower right. Panel (b) is a fourteenth-century painting of five women preparing linen inside a red-roofed room: one smooths a length of white cloth on a table while a second gestures beside her, and three more sit on a bench and the floor working cloth in their laps. Panel (c) is a photo of flax plants' long, tapering leaves against a blue sky." >}}
+{{< mediafigure src="biology/Figure_30_02_04abcf" kind="photo" alt="A three-panel composite: (a) a micrograph cross section of a flax stem showing concentric tissue rings from a pale central pith out through xylem and phloem to sclerenchyma, cortex, and epidermis; (b) a fourteenth-century painting of women preparing linen cloth; (c) a photo of tall flax plants with long, strap-like leaves tapering to narrow tips, against the sky." longdesc="Panel (a) is a micrograph cross section of a flax stem labeled from the center outward: 'Pith' (the pale pink tissue at the middle, where two dark dots sit), 'Xylem' (two leader lines, to the wide dark-blue ring and to the pale cells at its inner edge), and 'Phloem' (the thin pale band outside the xylem), then, along the rim, 'Epidermis', 'Cortex', and 'Sclerenchyma'; a 100 µm scale bar sits at lower right. Panel (b) is a fourteenth-century painting of five women preparing linen beside a red building with a tiled roof and a dark doorway at the right: one smooths a length of white cloth on a table while a second gestures beside her, and three more sit on a bench and the floor working cloth in their laps. Panel (c) is a photo of flax plants' long, tapering leaves against a blue sky." >}}
 The central pith and outer cortex of the (a) flax stem are made up of parenchyma cells. Inside the cortex is a layer of sclerenchyma cells, which make up the fibers in flax rope and clothing. Humans have grown and harvested flax for thousands of years. In (b) this drawing, fourteenth-century women prepare linen. The (c) flax plant is grown and harvested for its fibers, which are used to weave linen, and for its seeds, which are the source of linseed oil. (credit a: modification of work by Emmanuel Boutet based on original work by Ryan R. MacKenzie; credit c: modification of work by Brian Dearth; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
@@ -65,7 +65,7 @@ Like the rest of the plant, the stem has three tissue systems: dermal, vascular,
 
 The dermal tissue of the stem consists primarily of **epidermis**, a single layer of cells covering and protecting the underlying tissue. Woody plants have a tough, waterproof outer layer of cork cells commonly known as **bark**, which further protects the plant from damage. Epidermal cells are the most numerous and least differentiated of the cells in the epidermis. The epidermis of a leaf also contains openings known as stomata, through which the exchange of gases takes place (pictured below). Two cells, known as **guard cells**, surround each leaf stoma, controlling its opening and closing and thus regulating the uptake of carbon dioxide and the release of oxygen and water vapor. **Trichomes** are hair-like structures on the epidermal surface. They help to reduce **transpiration** (the loss of water by aboveground plant parts), increase solar reflectance, and store compounds that defend the leaves against predation by herbivores.
 
-{{< mediafigure src="biology/Figure_30_02_05abc" kind="photo" alt="A three-panel composite: (a) a green scanning-electron micrograph of a leaf surface with one open stoma pore; (b) two black-and-white light micrographs comparing an open and a closed stoma; (c) a green schematic diagram of a stomatal pore flanked by two guard cells within a layer of epidermal cells." longdesc="Panel (a) is a green-toned electron micrograph of a wrinkled leaf surface with one oval stoma near center and a 10 µm scale bar at lower right. Panel (b) shows two black-and-white light micrographs side by side: the left one, labeled 'Guard cells' (two leader lines) and 'Open stoma', shows a round open pore; the right one, labeled 'Closed stoma', shows the same paired cells pressed shut; a 10 µm scale bar sits between them. Panel (c) is a green schematic of a leaf epidermis: a central oval 'Stomatal pore' is flanked by two kidney-shaped 'Guard cells', surrounded by six-sided 'Epidermal cells' each with a small purple oval nucleus." >}}
+{{< mediafigure src="biology/Figure_30_02_05abc" kind="photo" alt="A three-panel composite: (a) a green scanning-electron micrograph of a leaf surface with one open stoma pore; (b) two black-and-white light micrographs comparing an open and a closed stoma; (c) a green schematic diagram of a stomatal pore flanked by two guard cells within a layer of epidermal cells." longdesc="Panel (a) is a green-toned electron micrograph of a wrinkled leaf surface with one oval stoma near center and a 10 µm scale bar at lower right. Panel (b) shows two black-and-white light micrographs side by side: the left one, labeled 'Guard cells' (two leader lines) and 'Open stoma', shows a round open pore; the right one, labeled 'Closed stoma', shows the same paired cells pressed shut; a 10 µm scale bar sits at the right micrograph's lower right. Panel (c) is a green schematic of a leaf epidermis: a central oval 'Stomatal pore' is flanked by two kidney-shaped 'Guard cells' (two leader lines), surrounded by six rectangular 'Epidermal cells' (two leader lines) in two rows of three, each with a small purple oval nucleus." >}}
 Openings called stomata (singular: stoma) allow a plant to take up carbon dioxide and release oxygen and water vapor. The (a) colorized scanning-electron micrograph shows a closed stoma of a dicot. Each stoma is flanked by two guard cells that regulate its (b) opening and closing. The (c) guard cells sit within the layer of epidermal cells. (credit a: modification of work by Louisa Howard, Rippel Electron Microscope Facility, Dartmouth College; credit b: modification of work by June Kwak, University of Maryland; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
@@ -73,7 +73,7 @@ Openings called stomata (singular: stoma) allow a plant to take up carbon dioxid
 
 The xylem and phloem that make up the vascular tissue of the stem are arranged in distinct strands called vascular bundles, which run up and down the length of the stem. When the stem is viewed in cross section, the vascular bundles of dicot stems are arranged in a ring. In plants with stems that live for more than one year, the individual bundles grow together and produce the characteristic growth rings. In monocot stems, the vascular bundles are randomly scattered throughout the ground tissue (pictured below).
 
-{{< mediafigure src="biology/Figure_30_02_06" kind="diagram" alt="Two circular stem cross sections side by side: the dicot stem's xylem-phloem-sclerenchyma bundles form an even ring around a central ground tissue, while the monocot stem's smaller bundles are scattered at random throughout the ground tissue instead of forming a ring." longdesc="Two circular cross sections sit side by side, headed 'Dicot stem' at left and 'Monocot stem' at right. The dicot stem has about ten wedge-shaped vascular bundles evenly spaced in a ring near its outer edge, each with a dark-green 'Xylem' cap toward the center of the stem, a purple 'Phloem' band next to it, and a purple 'Sclerenchyma' cap at its outermost tip; a light-green 'Ground tissue' with pale dots fills the center and the spaces between bundles. A 'Vascular bundle' label points with two lines to two adjacent bundles in the dicot ring and with a third line across to one bundle in the monocot stem, where dozens of smaller purple-and-green bundles are scattered at random throughout the ground tissue instead of forming a ring." >}}
+{{< mediafigure src="biology/Figure_30_02_06" kind="diagram" alt="Two circular stem cross sections side by side: the dicot stem's xylem-phloem-sclerenchyma bundles form an even ring around a central ground tissue, while the monocot stem's smaller bundles are scattered at random throughout the ground tissue instead of forming a ring." longdesc="Two circular cross sections sit side by side, headed 'Dicot stem' at left and 'Monocot stem' at right. The dicot stem has about ten wedge-shaped vascular bundles evenly spaced in a ring near its outer edge, each with a dark-green 'Xylem' cap toward the center of the stem, an olive-green 'Phloem' band next to it, and a purple 'Sclerenchyma' cap at its outermost tip; a light-green 'Ground tissue' with pale dots fills the center and the spaces between bundles, its label sending one line into each stem. A 'Vascular bundle' label sends one line to a bracket over a single bundle in the dicot ring and two lines across to two bundles in the monocot stem, where dozens of smaller purple-and-green bundles are scattered at random throughout the ground tissue instead of forming a ring." >}}
 In (a) dicot stems, vascular bundles are arranged around the periphery of the ground tissue. The xylem tissue is located toward the interior of the vascular bundle, and phloem is located toward the exterior. Sclerenchyma fibers cap the vascular bundles. In (b) monocot stems, vascular bundles composed of xylem and phloem tissues are scattered throughout the ground tissue.
 {{< /mediafigure >}}
 
@@ -251,7 +251,6 @@ phloem cells transport carbohydrates and are alive at maturity
 {{< textin
   question="Hair-like structures on the epidermal surface that reduce transpiration and increase solar reflectance are called ________."
   answer="trichomes"
-  accept="trichome"
   hint="These structures also store compounds that defend leaves against predation by herbivores."
 >}}
 
@@ -321,13 +320,6 @@ annual rings can indicate climate conditions
 conditions that prevailed during each growing season
 {{< /selfcheck >}}
 
-{{< textin
-  question="In woody plants, especially trees, ________ may form as growth slows at the end of each season."
-  answer="annual rings"
-  accept="annual ring|annual growth ring|growth ring"
-  hint="Counting these bands, and examining their size and cell-wall thickness, can reveal a tree's age and past growing conditions."
->}}
-
 {{< multiplechoice
   question="Secondary xylem cells that form during the spring growing season, with a large internal diameter and cell walls that are not extensively thickened, are known as ________."
   answer="early wood"
@@ -339,16 +331,14 @@ periderm
 vascular cambium
 {{< /multiplechoice >}}
 
-### List and describe examples of modified stems
+{{< textin
+  question="In woody plants, especially trees, ________ may form as growth slows at the end of each season."
+  answer="annual rings"
+  accept="annual growth ring|growth ring"
+  hint="Counting these bands, and examining their size and cell-wall thickness, can reveal a tree's age and past growing conditions."
+>}}
 
-{{< selfcheck question="Give two examples of modified stems and explain how each example benefits the plant." hint="Consider which modified stems help a plant spread or clone itself and which ones mainly store food." >}}
-Answers will vary. Rhizomes, stolons, and runners can give rise to new plants. Corms, tubers, and bulbs can also produce new plants and can store food. Tendrils help a plant to climb, while thorns discourage herbivores.
-===CHECKS===
-rhizomes, stolons, and runners can give rise to new plants
-corms, tubers, and bulbs can also produce new plants and can store food
-tendrils help a plant to climb
-thorns discourage herbivores
-{{< /selfcheck >}}
+### List and describe examples of modified stems
 
 {{< textin
   question="A modified stem that grows horizontally underground and has nodes and internodes is called a ________."
@@ -367,6 +357,15 @@ thorns discourage herbivores
   answer="bulb"
   hint="This underground storage unit is not a swollen stolon end like a tuber, but a bud surrounded by leaf scales."
 >}}
+
+{{< selfcheck question="Give two examples of modified stems and explain how each example benefits the plant." hint="Consider which modified stems help a plant spread or clone itself and which ones mainly store food." >}}
+Answers will vary. Rhizomes, stolons, and runners can give rise to new plants. Corms, tubers, and bulbs can also produce new plants and can store food. Tendrils help a plant to climb, while thorns discourage herbivores.
+===CHECKS===
+rhizomes, stolons, and runners can give rise to new plants
+corms, tubers, and bulbs can also produce new plants and can store food
+tendrils help a plant to climb
+thorns discourage herbivores
+{{< /selfcheck >}}
 
 ---
 

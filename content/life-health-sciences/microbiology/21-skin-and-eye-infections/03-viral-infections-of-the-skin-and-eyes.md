@@ -51,7 +51,7 @@ HSV-1 infections are commonly diagnosed from their appearance, although laborato
 {{< multiplechoice
   question="What are the most common sites for the appearance of herpetic lesions?"
   answer="the lips, mouth, and face"
-  hint="The module names one set of body sites as most common, before describing where lesions can spread on athletes or on the fingers."
+  hint="Read the paragraph after the cold-sore figure."
 >}}
 the trigeminal nerve ganglia
 the lips, mouth, and face
@@ -76,7 +76,7 @@ In children, the disease usually resolves on its own without medical treatment b
 {{< multiplechoice
   question="Identify at least one similarity and one difference between roseola and fifth disease."
   answer="They have similar presentations, but they are caused by different viruses."
-  hint="The module opens this comparison by stating what these two illnesses have in common and what sets their causes apart."
+  hint="Read the opening sentence of the subsection this box follows."
 >}}
 They are both caused by parvovirus B19.
 They have completely different presentations and are caused by the same virus.
@@ -143,7 +143,7 @@ parvovirus B19.
 {{< multiplechoice
   question="Which of these viruses can spread to the eye to cause a form of keratitis?"
   answer="herpes simplex virus 1"
-  hint="The Herpes Keratitis subsection names the virus type that can spread to the eye from elsewhere on the body."
+  hint="Read the last subsection of this section, just before the Disease Profile."
 >}}
 human papillomavirus
 herpes simplex virus 1
@@ -155,13 +155,13 @@ circoviruses
   question="Human herpesvirus 6 is the causative agent of ________."
   answer="roseola"
   accept="roseola infantum|exanthem subitum"
-  hint="This mild childhood illness typically begins with a high fever, followed a few days later by a rash on the chest and abdomen."
+  hint="Read the first paragraph of the third subsection of this section."
 >}}
 
 {{< multiplechoice
   question="Cold sores are associated with:"
   answer="herpes simplex viruses"
-  hint="This is the virus family this section's Oral Herpes subsection focuses on."
+  hint="Read the paragraph that introduces the cold-sore figure."
 >}}
 human papillomavirus
 roseola
@@ -191,7 +191,7 @@ viral conjunctivitis
 {{< multiplechoice
   question="Adenoviruses can cause:"
   answer="viral conjunctivitis"
-  hint="This is the eye condition this section associates with the common cold."
+  hint="Read the second paragraph of the fourth subsection of this section."
 >}}
 viral conjunctivitis
 herpetic conjunctivitis

@@ -32,7 +32,7 @@ When a change occurs in an animal’s environment, an adjustment must be made. T
 
 Any homeostatic process that changes the direction of the stimulus is a **negative feedback loop**. It may either increase or decrease the stimulus, but the stimulus is not allowed to continue as it did before the receptor sensed it. In other words, if a level is too high, the body does something to bring it down, and conversely, if a level is too low, the body does something to make it go up. Hence the term negative feedback. An example is animal maintenance of blood glucose levels. When an animal has eaten, blood glucose levels rise. This is sensed by the nervous system. Specialized cells in the pancreas sense this, and the hormone insulin is released by the endocrine system. Insulin causes blood glucose levels to decrease, as would be expected in a negative feedback system, as illustrated below. However, if an animal has not eaten and blood glucose levels decrease, this is sensed in another group of cells in the pancreas, and the hormone glucagon is released causing glucose levels to increase. This is still a negative feedback loop, but not in the direction expected by the use of the term “negative.” Another example of an increase as a result of the feedback loop is the control of blood calcium. If calcium levels decrease, specialized cells in the parathyroid gland sense this and release parathyroid hormone (PTH), causing an increased absorption of calcium through the intestines and kidneys and, possibly, the breakdown of bone in order to liberate calcium. The effects of PTH are to raise blood levels of the element. Negative feedback loops are the predominant mechanism used in homeostasis.
 
-{{< mediafigure src="biology/Figure_33_03_01" kind="diagram" eager="true" alt="A four-box circular flow chart with a photo of a pizza in the top box, tracing blood glucose regulation clockwise from a meal that raises glucose, through insulin secretion, to glucose storage, and finally to insulin secretion stopping." longdesc="Reading clockwise from the top: a box over a photo of a pizza reads 'Food is consumed and digested, causing blood level glucose to rise.' A gray arrow curves down to a box at the right, 'In response to higher glucose levels, the pancreas secretes insulin into the blood.' A second arrow curves down to a box at the bottom, 'In response to higher insulin levels, glucose is transported into cells and liver cells store glucose as glycogen. As a result, glucose levels drop.' A third arrow curves up to a box at the left, 'In response to the lower concentration of glucose, the pancreas stops secreting insulin.' A fourth arrow curves back up to the top box, closing the loop." >}}
+{{< mediafigure src="biology/Figure_33_03_01" kind="diagram" eager="true" alt="A four-box circular flow chart with a photo of a pizza above the top box, tracing blood glucose regulation clockwise from a meal that raises glucose, through insulin secretion, to glucose storage, and finally to insulin secretion stopping." longdesc="Reading clockwise from the top: a photo of a pizza sits above a box that reads 'Food is consumed and digested, causing blood level glucose to rise.' A gray arrow curves down to a box at the right, 'In response to higher glucose levels, the pancreas secretes insulin into the blood.' A second arrow curves down to a box at the bottom, 'In response to higher insulin levels, glucose is transported into cells and liver cells store glucose as glycogen. As a result, glucose levels drop.' A third arrow curves up to a box at the left, 'In response to the lower concentration of glucose, the pancreas stops secreting insulin.' A fourth arrow curves back up to the top box, closing the loop." >}}
 Blood sugar levels are controlled by a negative feedback loop. (credit: modification of work by Jon Sullivan)
 {{< /mediafigure >}}
 
@@ -40,7 +40,7 @@ Blood sugar levels are controlled by a negative feedback loop. (credit: modifica
 
 A **positive feedback loop** maintains the direction of the stimulus, possibly accelerating it. Few examples of positive feedback loops exist in animal bodies, but one is found in the cascade of chemical reactions that result in blood clotting, or coagulation. As one clotting factor is activated, it activates the next factor in sequence until a fibrin clot is achieved. The final factor, a protein called thrombin, converts inactive fibrinogen to fibrin. Thrombin also activates additional clotting factor molecules earlier in the cascade, resulting in the activation of even more thrombin. This positive feedback loop amplifies the cascade for faster, more effective formation of a blood clot. Another example of positive feedback is uterine contractions during childbirth, as illustrated below. The hormone oxytocin, made by the endocrine system, stimulates the contraction of the uterus. This stimulation is sensed by the nervous system. Instead of lowering the oxytocin, more oxytocin is produced until the contractions are powerful enough to produce childbirth.
 
-{{< mediafigure src="biology/Figure_33_03_02" kind="diagram" alt="A four-box circular flow chart around a cutaway illustration of a fetus inside the uterus, labeled uterus, umbilical cord, and cervix, tracing the positive feedback loop of childbirth clockwise from cervical stretching through oxytocin release to uterine contraction." longdesc="Reading clockwise from the top: a box reads 'The baby pushes against the cervix, causing it to stretch.' A gray arrow curves down to a box at the right, 'Stretching of the cervix causes nerve impulses to be sent to the brain.' A second arrow curves down to a box at the bottom, 'The brain stimulates the pituitary to release oxytocin.' A third arrow curves up to a box at the left, 'Oxytocin causes the uterus to contract.' A fourth arrow curves back up to the top box, closing the loop. At the center, a cutaway illustration of a fetus curled inside the uterus is labeled Uterus at upper left, Umbilical cord at lower left, and Cervix at lower right." >}}
+{{< mediafigure src="biology/Figure_33_03_02" kind="diagram" alt="A four-step circular flow chart of unboxed text around a cutaway illustration of a head-down fetus inside the uterus, labeled uterus, umbilical cord, and cervix, tracing the positive feedback loop of childbirth clockwise from cervical stretching through oxytocin release to uterine contraction." longdesc="Four steps of plain text (no boxes) are joined by gray arrows. Reading clockwise from the top: 'The baby pushes against the cervix, causing it to stretch.' A gray arrow curves down to the text at the right, 'Stretching of the cervix causes nerve impulses to be sent to the brain.' A second arrow curves down to the text at the bottom, 'The brain stimulates the pituitary to release oxytocin.' A third arrow curves up to the text at the left, 'Oxytocin causes the uterus to contract.' A fourth arrow curves back up to the top text, closing the loop. At the center, a cutaway illustration of a fetus curled head-down inside the uterus, its head toward the cervix, is labeled Uterus at upper left, Umbilical cord at lower left, and Cervix at lower right." >}}
 The birth of a human infant is the result of positive feedback.
 {{< /mediafigure >}}
 
@@ -94,7 +94,7 @@ Many animals, especially mammals, use metabolic waste heat as a heat source. Whe
 
 The nervous system is important to **thermoregulation**, as illustrated below. The processes of homeostasis and temperature control are centered in the hypothalamus of the advanced animal brain.
 
-{{< mediafigure src="biology/Figure_B33_04_03" kind="diagram" alt="A body-temperature regulation flow chart centered on a human silhouette, with a 'Normal body temperature' box branching into a cold-response loop at left (blood vessels constrict, shivering, heat retained) and a warm-response loop at right (blood vessels dilate, sweating, heat lost), each loop closing back to normal." longdesc="A human silhouette sits at the center. Below it, a box reads 'Normal body temperature.' Two arrows lead up from that box: one to a box at upper left, 'Body temperature falls,' and one to a box at upper right, 'Body temperature rises.' From 'Body temperature falls,' an arrow leads down to a box at the left, 'Blood vessels constrict so that heat is conserved. Sweat glands do not secrete fluid. Shivering (involuntary contraction of muscles) generates heat, which warms the body.' An arrow from that box leads down to a box at lower left, 'Heat is retained,' and an arrow from that box leads back up to the 'Normal body temperature' box, closing the cold-response loop. Mirroring this at right, an arrow from 'Body temperature rises' leads down to a box at the right, 'Blood vessels dilate, resulting in heat loss to the environment. Sweat glands secrete fluid. As the fluid evaporates, heat is lost from the body.' An arrow from that box leads down to a box at lower right, 'Heat is lost to the environment,' and an arrow from that box leads back up to the 'Normal body temperature' box, closing the warm-response loop." >}}
+{{< mediafigure src="biology/Figure_B33_04_03" kind="diagram" alt="A body-temperature regulation flow chart centered on a human silhouette, with a 'Normal body temperature' box branching into a cold-response loop at left (blood vessels constrict, shivering, heat retained) and a warm-response loop at right (blood vessels dilate, sweating, heat lost), each loop closing back to normal." longdesc="A human silhouette sits at the center. Just below its knees, a box reads 'Normal body temperature.' Two arrows curve up and outward from beside the silhouette's shoulders (not from the box): one to a box at upper left, 'Body temperature falls,' and one to a box at upper right, 'Body temperature rises.' From 'Body temperature falls,' an arrow leads down to a box at the left, 'Blood vessels constrict so that heat is conserved. Sweat glands do not secrete fluid. Shivering (involuntary contraction of muscles) generates heat, which warms the body.' An arrow from that box leads down to a box at lower left, 'Heat is retained,' and an arrow from that box leads back up to the 'Normal body temperature' box, closing the cold-response loop. Mirroring this at right, an arrow from 'Body temperature rises' leads down to a box at the right, 'Blood vessels dilate, resulting in heat loss to the environment. Sweat glands secrete fluid. As the fluid evaporates, heat is lost from the body.' An arrow from that box leads down to a box at lower right, 'Heat is lost to the environment,' and an arrow from that box leads back up to the 'Normal body temperature' box, closing the warm-response loop." >}}
 The body is able to regulate temperature in response to signals from the nervous system.
 {{< /mediafigure >}}
 
@@ -129,19 +129,20 @@ Homeostasis is a dynamic equilibrium that is maintained in body tissues and orga
 {{< textin
   question="The dynamic equilibrium that maintains appropriate body functions is called ________."
   answer="homeostasis"
-  hint="This process keeps body functions within specific ranges even in an animal that appears inactive."
->}}
-
-{{< textin
-  question="Homeostasis is a ________ that is maintained in body tissues and organs."
-  answer="dynamic equilibrium"
-  hint="This section's opening paragraph pairs two words for this idea: one meaning the body is constantly adjusting, the other meaning its functions are kept within a range."
+  hint="Look at the section's opening paragraph, before Homeostatic Process."
 >}}
 
 {{< textin
   question="It is in equilibrium because body functions are kept within a ________, with some fluctuations around a set point for the processes."
   answer="normal range"
-  hint="The section's opening paragraph calls this the specific ranges body functions are kept within."
+  accept="specific range"
+  hint="Look at the Section Summary's explanation of why homeostasis counts as an equilibrium."
+>}}
+
+{{< textin
+  question="Animal organs and organ systems constantly adjust to internal and external changes through a process called homeostasis (“________”)."
+  answer="steady state"
+  hint="Look at the section's first sentence, which glosses the term in parentheses."
 >}}
 
 ### Describe the factors affecting homeostasis
@@ -166,12 +167,6 @@ blood glucose levels never go back down to normal levels
 {{< /selfcheck >}}
 
 {{< textin
-  question="The midpoint or target point in homeostasis is called the ________."
-  answer="set point"
-  hint="The body's systems usually attempt to return to this point after normal fluctuations away from it."
->}}
-
-{{< textin
   question="A change of the set point in a homeostatic system is called an ________."
   answer="alteration"
   hint="Medication that lowers an elevated blood pressure set point to a healthier level is an example of this kind of change."
@@ -184,7 +179,28 @@ blood glucose levels never go back down to normal levels
   hint="An animal migrating to a higher altitude increasing its circulating red blood cells is an example."
 >}}
 
+{{< textin
+  question="The midpoint or target point in homeostasis is called the ________."
+  answer="set point"
+  accept="setpoint"
+  hint="The body's systems usually attempt to return to this point after normal fluctuations away from it."
+>}}
+
 ### Discuss positive and negative feedback mechanisms used in homeostasis
+
+{{< textin
+  question="Feedback to a control mechanism that continues the direction of a stimulus is called a ________."
+  answer="positive feedback loop"
+  accept="positive feedback"
+  hint="Look at the second subsection under Control of Homeostasis."
+>}}
+
+{{< textin
+  question="Feedback to a control mechanism that increases or decreases a stimulus instead of maintaining it is called a ________."
+  answer="negative feedback loop"
+  accept="negative feedback"
+  hint="Look at the first subsection under Control of Homeostasis."
+>}}
 
 {{< multiplechoice
   question="Which is an example of negative feedback?"
@@ -204,20 +220,6 @@ an adjustment to a change in the environment requires a change in the direction 
 a negative feedback loop accomplishes this
 a positive feedback loop would continue the stimulus and result in harm to the animal
 {{< /selfcheck >}}
-
-{{< textin
-  question="Feedback to a control mechanism that increases or decreases a stimulus instead of maintaining it is called a ________."
-  answer="negative feedback loop"
-  accept="negative feedback"
-  hint="Blood glucose rising after a meal, then falling again as insulin is released, is an example of this kind of loop."
->}}
-
-{{< textin
-  question="Feedback to a control mechanism that continues the direction of a stimulus is called a ________."
-  answer="positive feedback loop"
-  accept="positive feedback"
-  hint="Uterine contractions that keep growing stronger as more oxytocin is released during childbirth are an example of this kind of loop."
->}}
 
 ### Describe thermoregulation of endothermic and ectothermic animals
 
@@ -246,7 +248,7 @@ conduction
 {{< multiplechoice
   question="The body's thermostat is located in the ________."
   answer="hypothalamus"
-  hint="This structure is part of the advanced animal brain and centers the processes of homeostasis and temperature control."
+  hint="Look at Homeostasis: Thermoregulation and Neural Control of Thermoregulation for where the set point for body temperature is maintained."
 >}}
 homeostatic receptor
 hypothalamus
@@ -257,7 +259,7 @@ vasodilation center
 {{< multiplechoice
   question="Which of the following is not a way that ectotherms can change their body temperatures?"
   answer="Sweating for evaporative cooling."
-  hint="The section describes ectotherms changing where and when they are active — seeking shade, basking on rocks, seeking water, huddling — rather than this mammalian physiological response."
+  hint="Reread the Heat Conservation and Dissipation paragraph on how some ectothermic animals regulate their body temperature, and the heat-exchange paragraph before it."
 >}}
 Sweating for evaporative cooling.
 Adjusting the timing of their daily activities.
@@ -285,9 +287,9 @@ this generates heat rather than chemical energy as the final product of cellular
 {{< textin
   question="Regulation of body temperature is called ________."
   answer="thermoregulation"
-  hint="This process is centered in the hypothalamus of the advanced animal brain."
+  hint="Look at the opening paragraph of the subsection that follows Control of Homeostasis."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 33.3: Homeostasis](https://openstax.org/books/biology-2e/pages/33-3-homeostasis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_33_03_01 and Figure_B33_04_03 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (both are drawn flow charts, not photographs — Figure_33_03_01 embeds one small photo of a pizza inside its top box, and Figure_B33_04_03 is a fully drawn diagram); a longdesc added to Figure_33_03_01, Figure_33_03_02, and Figure_B33_04_03, the three cyclic flow-chart figures whose box text and arrow structure are not carried by their one-line captions; a custom alt written for Figure_33_03_03 describing what each of the four photo panels shows rather than reusing the source's bare "Photo A/B/C/D" alt; inline figure references ("as illustrated in", parenthetical figure links) changed to descriptive phrases ("illustrated below," "pictured below") since figures are not numbered here; both feature boxes rendered as Link to Learning callouts, keeping the source's own openstax.org/l/ redirect URLs; the two visual-connection notes (Positive Feedback Loop's feedback-loop classification and Neural Control of Thermoregulation's pyrogen question) kept in the body immediately after their figures and rendered as self-checks, since the source keys both to prose solutions rather than lettered options, using the separately printed Visual Connection Question copy for each (fs-idp20380880, fs-idp77964000) rather than the note copy; the first visual connection's note copy prints "State whether each of the following processes **is** regulated..." while its matching exercise copy prints "...processes **are** regulated..." — a grammatical mismatch between the two printings of the same item — reported as a source defect; the six end-of-section Review Questions and four Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), sorted under the objective each supports; rubric checkpoints added to each self-check (the two body self-checks and the four in Practice), decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (homeostasis, set point, alteration, acclimatization, negative feedback loop, positive feedback loop, thermoregulation) added from the glossary; and two summary-derived cloze recall items ("dynamic equilibrium," "normal range") added under the first objective, which the source's own exercise sets do not otherwise test.</small>
+<small>This section is adapted from [Biology 2e, Section 33.3: Homeostasis](https://openstax.org/books/biology-2e/pages/33-3-homeostasis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_33_03_01 and Figure_B33_04_03 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (both are drawn flow charts, not photographs — Figure_33_03_01 embeds one small photo of a pizza inside its top box, and Figure_B33_04_03 is a fully drawn diagram); a longdesc added to Figure_33_03_01, Figure_33_03_02, and Figure_B33_04_03, the three cyclic flow-chart figures whose box text and arrow structure are not carried by their one-line captions; a custom alt written for Figure_33_03_03 describing what each of the four photo panels shows rather than reusing the source's bare "Photo A/B/C/D" alt; inline figure references ("as illustrated in", parenthetical figure links) changed to descriptive phrases ("illustrated below," "pictured below") since figures are not numbered here; both feature boxes rendered as Link to Learning callouts, keeping the source's own openstax.org/l/ redirect URLs; the two visual-connection notes (Positive Feedback Loop's feedback-loop classification and Neural Control of Thermoregulation's pyrogen question) kept in the body immediately after their figures and rendered as self-checks, since the source keys both to prose solutions rather than lettered options, using the separately printed Visual Connection Question copy for each (fs-idp20380880, fs-idp77964000) rather than the note copy; the first visual connection's note copy prints "State whether each of the following processes **is** regulated..." while its matching exercise copy prints "...processes **are** regulated..." — a grammatical mismatch between the two printings of the same item — reported as a source defect; the six end-of-section Review Questions and four Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), sorted under the objective each supports; rubric checkpoints added to each self-check (the two body self-checks and the four in Practice), decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items (homeostasis, set point, alteration, acclimatization, negative feedback loop, positive feedback loop, thermoregulation) added from the glossary; a summary-derived cloze recall item ("normal range") and a body-derived cloze item ("steady state," from the section's opening sentence, in place of a "dynamic equilibrium" cloze that re-asked the homeostasis recall item in reverse) added under the first objective, which the source's own exercise sets do not otherwise test; in the feedback group the two feedback-loop recall items are placed before the negative-feedback Review Question, whose relative order with the Critical Thinking Question is unchanged.</small>

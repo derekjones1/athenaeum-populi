@@ -127,6 +127,7 @@ Clinical symptoms can be used to recognize the early signs of African trypanosom
 {{< textin
   question="What is the symptom of a systemic *Trypanosoma* infection?"
   answer="undulating fever"
+  accept="undulant fever"
   hint="The module names this symptom right after describing the flagellates moving into the circulatory system, before the disease reaches its final, neurological phase."
 >}}
 
@@ -252,7 +253,7 @@ EIA and ELISA are also used to detect antigens associated with the pathogen
 {{< multiplechoice
   question="Which of these diseases results in meningitis caused by an encapsulated yeast?"
   answer="cryptococcosis"
-  hint="This yeast's thick capsule is the virulence factor described at the start of the Cryptococcocal Meningitis section."
+  hint="See the opening paragraph of this page's first section."
 >}}
 cryptococcosis
 histoplasmosis
@@ -272,15 +273,16 @@ fluorescent stain
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The ________ is the main virulence factor of *Cryptococcus neoformans*."
-  answer="capsule"
-  hint="This structure is named early in the Cryptococcocal Meningitis section as what inhibits clearance by phagocytosis."
->}}
-
-{{< textin
   question="The drug of choice for fungal infections of the nervous system is ________."
   answer="Amphotericin B"
   hint="This drug appears in the Antimicrobial Drugs column for every disease in the Neuromycoses table."
+>}}
+
+{{< textin
+  question="The ________ is the main virulence factor of *Cryptococcus neoformans*."
+  answer="capsule"
+  accept="thick capsule"
+  hint="This structure is named early in the Cryptococcocal Meningitis section as what inhibits clearance by phagocytosis."
 >}}
 
 {{< multiplechoice
@@ -308,7 +310,7 @@ sand fly
 {{< multiplechoice
   question="Which of the following is the causative agent of East African trypanosomiasis?"
   answer="Trypanosoma brucei rhodesiense"
-  hint="This subspecies of the hemoflagellate is distinguished from the one causing the West African form."
+  hint="See the opening paragraph of Human African Trypanosomiasis."
 >}}
 Trypanosoma cruzi
 Trypanosoma vivax
@@ -319,25 +321,14 @@ Trypanosoma brucei gambiense
 {{< textin
   question="________ sign appears as swollen lymph nodes at the back of the neck in early African trypanosomiasis."
   answer="Winterbottom's"
-  hint="This early clinical sign is named for the person credited with describing it, right beside the mention of a chancre at the infection site."
+  hint="See the Human African Trypanosomiasis paragraph on the clinical symptoms used to recognize early signs of the disease."
 >}}
 
 {{< textin
   question="________ African trypanosomiasis causes a chronic form of sleeping sickness."
   answer="West"
-  hint="This is the form transmitted by Trypanosoma brucei gambiense and reported far more often than the acute form."
+  hint="See the Human African Trypanosomiasis paragraphs comparing how long each form of the disease runs its course."
 >}}
-
-{{< multiplechoice
-  question="How do humans usually contract neurocysticercosis?"
-  answer="ingestion of undercooked pork"
-  hint="This section's larval-form infection begins with the pork tapeworm, whose eggs are ingested along with contaminated meat."
->}}
-the bite of an infected arthropod
-exposure to contaminated cat feces
-swimming in contaminated water
-ingestion of undercooked pork
-{{< /multiplechoice >}}
 
 {{< textin
   question="The larval forms of a tapeworm are known as ________."
@@ -347,9 +338,20 @@ ingestion of undercooked pork
 >}}
 
 {{< multiplechoice
+  question="How do humans usually contract neurocysticercosis?"
+  answer="ingestion of undercooked pork"
+  hint="See the Neurocysticercosis paragraphs on the tapeworm's life cycle."
+>}}
+the bite of an infected arthropod
+exposure to contaminated cat feces
+swimming in contaminated water
+ingestion of undercooked pork
+{{< /multiplechoice >}}
+
+{{< multiplechoice
   question="Which of these is the most important cause of adult onset epilepsy?"
   answer="neurocysticercosis"
-  hint="This is the leading cause named in the developing world, caused by the pork tapeworm's larvae invading the brain."
+  hint="See the opening paragraph of the section that follows Neurotoxoplasmosis."
 >}}
 neurocysticercosis
 neurotoxoplasmosis
@@ -360,7 +362,7 @@ African trypanosomiasis
 {{< textin
   question="The definitive host for *Toxoplasma gondii* is ________."
   answer="cats"
-  accept="cat"
+  accept="domestic cats"
   hint="This animal sheds the oocysts that most commonly infect humans, and is named at the start of the Neurotoxoplasmosis section."
 >}}
 
@@ -373,7 +375,7 @@ African trypanosomiasis
 {{< multiplechoice
   question="Why do nervous system infections by fungi require such long treatment times?"
   answer="Antifungal drugs have difficulty crossing the blood-brain barrier and their side effects require low doses"
-  hint="Two factors work together — how well the drugs reach the site of infection, and how much of the drug a patient can tolerate."
+  hint="See the Cryptococcocal Meningitis paragraph on treatment."
 >}}
 Antihelminthic drugs like albendazole and praziquantel may acutely worsen symptoms by killing viable cysts, requiring cautious dosing
 Harsher drugs such as melarsoprol are needed only once the sleeping-sickness phase begins, extending treatment
@@ -454,4 +456,4 @@ WAT is caused by Trypanosoma brucei gambiense, more commonly reported with 7000 
 WAT tends to be a more chronic disease, often occurring over months to years
 {{< /selfcheck >}}
 
-<small>This section is adapted from [Microbiology, Section 26.4: Fungal and Parasitic Diseases of the Nervous System](https://openstax.org/books/microbiology/pages/26-4-fungal-and-parasitic-diseases-of-the-nervous-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the module's own two Learning Objectives name only "fungi" and "fungal diseases," even though roughly two-thirds of this section's content and exercises concern parasitic (protozoan and helminthic) rather than fungal disease; the objectives are transcribed as printed, and Practice items about parasitic material are grouped by exercise type (identification versus comparison) rather than by topic, since neither objective's wording literally covers them; two source Multiple Choice options carry one-word misspellings corrected in place with no inline note — the keyed option "Trypanosoma brucei rhodanese" to "Trypanosoma brucei rhodesiense" (the key letter is unchanged), and the distractor "Entameba histolyticum" to "Entamoeba histolytica"; all six vendored source figures re-encoded as WebP and rendered as mediafigures after image inspection — `kind="photo"` on all six, since each is a micrograph, gross-pathology photograph, or CT scan rather than drawn art; the Cryptococcocal Meningitis figure carries `eager="true"` as the page's first figure; all six alts are rewritten from the images rather than reused from the source's own alts; the two Disease Profile table images (`OSC_Microbio_26_04_neuromycos`, "Neuromycoses," and `OSC_Microbio_26_04_ParaTBL`, "Parasitic Diseases of the Nervous System") are not vendored, per this book's Disease Profile rule, and are each transcribed as a Markdown table inside its own callout at its own position in the module (the Neuromycoses table inside the Cryptococcocal Meningitis subsection, the Parasitic Diseases table near the end of the module) — both alts were checked cell by cell against the printed PDF page; the Neuromycoses alt matched exactly; the Parasitic Diseases of the Nervous System table carried three one-word source typos, present in both the alt and the printed PDF image alike, each corrected on the page with no inline note: "ameobae" read "amoebae" (Granulomatous amoebic encephalitis row's and Primary amoebic meningoencephalitis row's Transmission cells), "suramine" read "suramin" (Human African trypanosomiasis row's Antimicrobial Drugs cell, matching this module's own body spelling), and "oocytes" read "oocysts" (Neurotoxoplasmosis row's Transmission cell, matching this module's own body sentence, "ingesting oocysts shed in the feces of cats"); the section's seven source Multiple Choice items keep their source options, order, and keys unchanged (aside from the two distractor misspellings above); the seven source Fill in the Blank items are rendered as `textin`, keeping their source keys unchanged, with `accept="cysticercus"` added for the keyed plural "cysticerci" and `accept="cat"` added for the keyed plural "cats," since the grader's regular-plural fold runs singular-to-plural only; the section's one unkeyed Short Answer question asking why fungal nervous-system infections require long treatment times is graded as a `multiplechoice`, keyed by the module's single sentence naming difficulty crossing the blood-brain barrier plus low-dose side effects, with distractors built from this module's own material on antihelminthic, trypanosomiasis, and antigenic-variation treatment considerations; the section's other two unkeyed Short Answer questions (how humans are infected by *Naegleria fowleri*; how humans develop neurocysticercosis) and all three unkeyed Critical Thinking questions (the temperature-graph pattern; fungal versus bacterial meningoencephalitis in AIDS patients; East versus West African trypanosomiasis) remain self-checks, since each needs more than one module sentence assembled to answer honestly — the AIDS self-check's model answer states plainly that the module does not itself compare fungal and bacterial infections, and the East/West self-check keeps this question a self-check per the parent's run-facts classification even though the module's own comparison could support a `sortbins`, so as not to duplicate the East African trypanosomiasis Multiple Choice item's fact; the Critical Thinking question about the trypanosomiasis fever graph (`OSC_Microbio_26_04_ArtConnect_img`, which carries a real `<figure>` with a credit-only caption and no source key) is rendered as a `mediafigure` — its alt describing only the graph's peaks and plateaus, never naming the undulating pattern or antigenic variation — immediately followed by one `selfcheck` carrying the source's two-part question verbatim, its model answer naming the undulating/relapsing pattern and the antigenic-variation mechanism from this module's own sentences; of this section's ten body Check Your Understanding bullets, two are graded — the cryptococcal-acquisition bullet as a `multiplechoice` keyed by the Neuromycoses table's own Transmission cell for the Cryptococcosis row ("Inhalation"), with distractors drawn from the same table's other rows, and the systemic-*Trypanosoma*-symptom bullet as a `textin` keyed to the module's own two-word phrase "undulating fever" — one more (the neurological-*Trypanosoma*-symptom bullet) is graded as a `multiplechoice` whose key is the module's own three-item list verbatim, with distractors built from this module's own symptom descriptions of other diseases in this section; the remaining seven stay self-checks, since each needs either a multi-sentence mechanism (neuromycoses rarity, GAE diagnosis, trypanosome eradication difficulty, Toxoplasma's blood-brain-barrier mechanism, neurocysticercosis diagnosis) or would re-ask, in reverse, the fact the neurocysticercosis/epilepsy Multiple Choice item already grades (kept a self-check for that reason) or needs two sentences joined by "however" to answer honestly (the conditions under which Toxoplasma infection is serious); no source exercise or Check Your Understanding bullet is omitted; the module's eight footnote citations are rendered as inline parenthetical citations, bare access URLs dropped; the Neuromycoses Disease Profile table's own six disease rows and the Parasitic Diseases table's own five disease rows each additionally carry a `sortbins` in Practice, built from the module's own pathogen, transmission, and drug cells, interleaved and unique against every row of their respective tables; the cross-references to [Respiratory Mycoses] (m58915), [Protozoan and Helminthic Infections of the Eyes] (m58910 — the module's own link text names "the Eyes," though the target page's actual title is "Protozoan and Helminthic Infections of the Skin and Eyes," transcribed as printed), [Parasitic Infections of the Circulatory and Lymphatic Systems] (m58938), and [Helminthic Infections of the Gastrointestinal Tract] (m58932) are each rendered as a link to that authored page; the Clinical Focus Resolution box's closing "Jump to the previous Clinical Focus box" link is rendered as a link to Section 26.3's Part 2, plus a sentence naming that the case began in Section 26.1, since this chapter's three-part case skips Section 26.2; key terms are compiled from the module's eleven `<term>` elements (no repeats, eleven distinct bullets); ten are taken directly from the book's Glossary appendix, and one — "neuromycoses" — has no Glossary entry, so its definition is written from the module's own defining sentence instead.</small>
+<small>This section is adapted from [Microbiology, Section 26.4: Fungal and Parasitic Diseases of the Nervous System](https://openstax.org/books/microbiology/pages/26-4-fungal-and-parasitic-diseases-of-the-nervous-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the module's own two Learning Objectives name only "fungi" and "fungal diseases," even though roughly two-thirds of this section's content and exercises concern parasitic (protozoan and helminthic) rather than fungal disease; the objectives are transcribed as printed, and Practice items about parasitic material are grouped by exercise type (identification versus comparison) rather than by topic, since neither objective's wording literally covers them; two source Multiple Choice options carry one-word misspellings corrected in place with no inline note — the keyed option "Trypanosoma brucei rhodanese" to "Trypanosoma brucei rhodesiense" (the key letter is unchanged), and the distractor "Entameba histolyticum" to "Entamoeba histolytica"; all six vendored source figures re-encoded as WebP and rendered as mediafigures after image inspection — `kind="photo"` on all six, since each is a micrograph, gross-pathology photograph, or CT scan rather than drawn art; the Cryptococcocal Meningitis figure carries `eager="true"` as the page's first figure; all six alts are rewritten from the images rather than reused from the source's own alts; the two Disease Profile table images (`OSC_Microbio_26_04_neuromycos`, "Neuromycoses," and `OSC_Microbio_26_04_ParaTBL`, "Parasitic Diseases of the Nervous System") are not vendored, per this book's Disease Profile rule, and are each transcribed as a Markdown table inside its own callout at its own position in the module (the Neuromycoses table inside the Cryptococcocal Meningitis subsection, the Parasitic Diseases table near the end of the module) — both alts were checked cell by cell against the printed PDF page; the Neuromycoses alt matched exactly; the Parasitic Diseases of the Nervous System table carried three one-word source typos, present in both the alt and the printed PDF image alike, each corrected on the page with no inline note: "ameobae" read "amoebae" (Granulomatous amoebic encephalitis row's and Primary amoebic meningoencephalitis row's Transmission cells), "suramine" read "suramin" (Human African trypanosomiasis row's Antimicrobial Drugs cell, matching this module's own body spelling), and "oocytes" read "oocysts" (Neurotoxoplasmosis row's Transmission cell, matching this module's own body sentence, "ingesting oocysts shed in the feces of cats"); the section's seven source Multiple Choice items keep their source options, order, and keys unchanged (aside from the two distractor misspellings above); the seven source Fill in the Blank items are rendered as `textin`, keeping their source keys unchanged, with `accept="cysticercus"` added for the keyed Latin plural "cysticerci," which the grader's regular-plural fold does not reach (the fold already accepts "cat" for "cats"); the `Amphotericin B` and `capsule` `textin` items are reversed from their printed order so that no item directly above a text-entry blank prints its key; the "cysticerci" `textin` is moved from after the neurocysticercosis Multiple Choice to just before it, because that item's stem ("How do humans usually contract neurocysticercosis?") prints the key's root directly above the blank; the section's one unkeyed Short Answer question asking why fungal nervous-system infections require long treatment times is graded as a `multiplechoice`, keyed by the module's single sentence naming difficulty crossing the blood-brain barrier plus low-dose side effects, with distractors built from this module's own material on antihelminthic, trypanosomiasis, and antigenic-variation treatment considerations; the section's other two unkeyed Short Answer questions (how humans are infected by *Naegleria fowleri*; how humans develop neurocysticercosis) and all three unkeyed Critical Thinking questions (the temperature-graph pattern; fungal versus bacterial meningoencephalitis in AIDS patients; East versus West African trypanosomiasis) remain self-checks, since each needs more than one module sentence assembled to answer honestly — the AIDS self-check's model answer states plainly that the module does not itself compare fungal and bacterial infections, and the East/West self-check keeps this question a self-check per the parent's run-facts classification even though the module's own comparison could support a `sortbins`, so as not to duplicate the East African trypanosomiasis Multiple Choice item's fact; the Critical Thinking question about the trypanosomiasis fever graph (`OSC_Microbio_26_04_ArtConnect_img`, which carries a real `<figure>` with a credit-only caption and no source key) is rendered as a `mediafigure` — its alt describing only the graph's peaks and plateaus, never naming the undulating pattern or antigenic variation — immediately followed by one `selfcheck` carrying the source's two-part question verbatim, its model answer naming the undulating/relapsing pattern and the antigenic-variation mechanism from this module's own sentences; of this section's ten body Check Your Understanding bullets, two are graded — the cryptococcal-acquisition bullet as a `multiplechoice` keyed by the Neuromycoses table's own Transmission cell for the Cryptococcosis row ("Inhalation"), with distractors drawn from the same table's other rows, and the systemic-*Trypanosoma*-symptom bullet as a `textin` keyed to the module's own two-word phrase "undulating fever" — one more (the neurological-*Trypanosoma*-symptom bullet) is graded as a `multiplechoice` whose key is the module's own three-item list verbatim, with distractors built from this module's own symptom descriptions of other diseases in this section; the remaining seven stay self-checks, since each needs either a multi-sentence mechanism (neuromycoses rarity, GAE diagnosis, trypanosome eradication difficulty, Toxoplasma's blood-brain-barrier mechanism, neurocysticercosis diagnosis) or would re-ask, in reverse, the fact the neurocysticercosis/epilepsy Multiple Choice item already grades (kept a self-check for that reason) or needs two sentences joined by "however" to answer honestly (the conditions under which Toxoplasma infection is serious); no source exercise or Check Your Understanding bullet is omitted; the module's eight footnote citations are rendered as inline parenthetical citations, bare access URLs dropped; the Neuromycoses Disease Profile table's own six disease rows and the Parasitic Diseases table's own five disease rows each additionally carry a `sortbins` in Practice, built from the module's own pathogen, transmission, and drug cells, interleaved and unique against every row of their respective tables; the cross-references to [Respiratory Mycoses] (m58915), [Protozoan and Helminthic Infections of the Eyes] (m58910 — the module's own link text names "the Eyes," though the target page's actual title is "Protozoan and Helminthic Infections of the Skin and Eyes," transcribed as printed), [Parasitic Infections of the Circulatory and Lymphatic Systems] (m58938), and [Helminthic Infections of the Gastrointestinal Tract] (m58932) are each rendered as a link to that authored page; the Clinical Focus Resolution box's closing "Jump to the previous Clinical Focus box" link is rendered as a link to Section 26.3's Part 2, plus a sentence naming that the case began in Section 26.1, since this chapter's three-part case skips Section 26.2; key terms are compiled from the module's eleven `<term>` elements (no repeats, eleven distinct bullets); ten are taken directly from the book's Glossary appendix, and one — "neuromycoses" — has no Glossary entry, so its definition is written from the module's own defining sentence instead.</small>

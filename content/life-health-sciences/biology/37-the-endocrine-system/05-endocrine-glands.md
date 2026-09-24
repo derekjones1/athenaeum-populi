@@ -25,7 +25,7 @@ The **hypothalamus** in vertebrates integrates the endocrine and nervous systems
 
 The **pituitary gland**, sometimes called the hypophysis or "master gland" is located at the base of the brain in the sella turcica, a groove of the sphenoid bone of the skull, shown below. It is attached to the hypothalamus via a stalk called the **pituitary stalk** (or infundibulum). The anterior portion of the pituitary gland is regulated by releasing or release-inhibiting hormones produced by the hypothalamus, and the posterior pituitary receives signals via neurosecretory cells to release hormones produced by the hypothalamus. The pituitary has two distinct regions—the anterior pituitary and the posterior pituitary—which between them secrete nine different peptide or protein hormones. The posterior lobe of the pituitary gland contains axons of the hypothalamic neurons.
 
-{{< mediafigure src="biology/Figure_37_05_01ab" kind="diagram" eager="true" alt="Two illustrations: (a) a sagittal section of the head showing the small pituitary gland hanging from the hypothalamus below the brain, above the brain stem and spinal cord, with the cerebellum behind it; (b) a close-up of the pituitary region showing the hypothalamus narrowing into the pituitary stalk, which leads into the darker anterior lobe and the lighter posterior lobe of the pituitary gland." longdesc="Two panels. (a) A shaded sagittal outline of the brain and upper spinal column. A leader line labeled 'Pituitary gland' points to a small oval structure hanging just below the brain; 'Brain stem' points to the stalk-like structure directly beneath it, which continues down into 'Spinal cord'; 'Cerebellum' points to the folded, cauliflower-shaped structure at the back of the brain. (b) A close-up view: at upper left, a wedge-shaped 'Hypothalamus' narrows into the 'Pituitary stalk,' labeled at upper right, which leads down into the pituitary body. The larger, darker-shaded lobe on the left of that body is labeled 'Anterior pituitary'; the lighter-shaded lobe on the right is labeled 'Posterior pituitary.'" >}}
+{{< mediafigure src="biology/Figure_37_05_01ab" kind="diagram" eager="true" alt="Two illustrations: (a) a sagittal section of the head showing the small pituitary gland hanging from the hypothalamus below the brain, above the brain stem and spinal cord, with the cerebellum behind it; (b) a close-up of the pituitary region showing the hypothalamus narrowing into the pituitary stalk, which leads into the darker anterior lobe and the lighter posterior lobe of the pituitary gland." longdesc="Two panels. (a) A shaded sagittal outline of the brain and upper spinal column. A leader line labeled 'Pituitary gland' points to a small oval structure hanging just below the brain; 'Brain stem' points to the stalk-like structure directly beneath it, which continues down into 'Spinal cord'; 'Cerebellum' points to the folded, cauliflower-shaped structure at the back of the brain. (b) A close-up view: at upper left, a wedge-shaped 'Hypothalamus' narrows into the 'Pituitary stalk,' labeled at upper right, which leads down into the pituitary body. The darker-shaded lobe curving around the lower left of that body is labeled 'Anterior pituitary'; the larger, lighter-shaded lobe at the upper right, continuous with the stalk, is labeled 'Posterior pituitary.'" >}}
 The pituitary gland is located at (a) the base of the brain and (b) connected to the hypothalamus by the pituitary stalk. (credit a: modification of work by NCI; credit b: modification of work by Gray's Anatomy)
 {{< /mediafigure >}}
 
@@ -95,7 +95,7 @@ The release of epinephrine and norepinephrine is stimulated by neural impulses f
 
 The **pancreas**, shown below, is an elongated organ that is located between the stomach and the proximal portion of the small intestine. It contains both exocrine cells that excrete digestive enzymes and endocrine cells that release hormones. It is sometimes referred to as a heterocrine gland because it has both endocrine and exocrine functions.
 
-{{< mediafigure src="biology/Figure_37_05_05" kind="diagram" alt="The pancreas is a grainy, teardrop-shaped organ tucked between the stomach and intestine. A common bile duct extends from the pancreas to a small pouch like structure called a gall bladder." longdesc="At upper right, 'Stomach' labels a large orange, curved organ. At upper left, 'Gall bladder' labels a small green oval hanging beside it. 'Common bile duct' labels a thin green tube running from the gall bladder down past the stomach's lower curve. Below, 'Duodenum' labels the pale tube looping at lower left, and 'Pancreas' labels the speckled, teardrop-shaped organ at lower right that the duodenum wraps around." >}}
+{{< mediafigure src="biology/Figure_37_05_05" kind="diagram" alt="The pancreas is a grainy, teardrop-shaped organ tucked between the stomach and intestine. A common bile duct extends from the pancreas to a small pouch like structure called a gall bladder." longdesc="At upper right, 'Stomach' labels a large orange, curved organ. At upper left, 'Gall bladder' labels a small green oval hanging beside it. 'Common bile duct' labels a thin green tube running from the gall bladder down past the stomach's lower curve into the left end of the pancreas, where it branches. Below, 'Duodenum' labels the pale tube looping at lower left, and 'Pancreas' labels the speckled, teardrop-shaped organ at lower right that the duodenum wraps around." >}}
 The pancreas is found underneath the stomach and points toward the spleen. (credit: modification of work by NCI)
 {{< /mediafigure >}}
 
@@ -161,7 +161,7 @@ The pituitary gland is located at the base of the brain and is attached to the h
 
 The thyroid gland is located in the neck and is composed of two lobes connected by the isthmus. The thyroid is made up of follicle cells that produce the hormones thyroxine and triiodothyronine. Parafollicular cells of the thyroid produce calcitonin. The parathyroid glands lie on the posterior surface of the thyroid gland and produce parathyroid hormone.
 
-The adrenal glands are located on top of the kidneys and consist of the renal cortex and renal medulla. The adrenal cortex is the outer part of the adrenal gland and produces the corticosteroids, glucocorticoids, and mineralocorticoids. The adrenal medulla is the inner part of the adrenal gland and produces the catecholamines epinephrine and norepinephrine.
+The adrenal glands are located on top of the kidneys and consist of the adrenal cortex and adrenal medulla. *(Source note: the source says "consist of the renal cortex and renal medulla"; this section's own Adrenal Glands text says "The adrenal glands consist of an outer adrenal cortex and an inner adrenal medulla," and the renal cortex and medulla are regions of the kidney — corrected here.)* The adrenal cortex is the outer part of the adrenal gland and produces the corticosteroids, glucocorticoids, and mineralocorticoids. The adrenal medulla is the inner part of the adrenal gland and produces the catecholamines epinephrine and norepinephrine.
 
 The pancreas lies in the abdomen between the stomach and the small intestine. Clusters of endocrine cells in the pancreas form the islets of Langerhans, which are composed of alpha cells that release glucagon and beta cells that release insulin.
 
@@ -199,7 +199,7 @@ Some organs possess endocrine activity as a secondary function but have another 
 {{< multiplechoice
   question="Which endocrine glands are associated with the kidneys?"
   answer="adrenal glands"
-  hint="This gland pair sits directly atop the organs named in the question, and the section's own discussion of it opens with that same detail."
+  hint="Reread the opening paragraphs of each gland's section."
 >}}
 thyroid glands
 pituitary glands
@@ -210,7 +210,7 @@ gonads
 {{< multiplechoice
   question="Which of the following hormones is not produced by the anterior pituitary?"
   answer="oxytocin"
-  hint="Three of these four are among the seven hormones the anterior pituitary itself produces; the fourth is produced by the hypothalamus and only stored and released by the pituitary's other lobe."
+  hint="Reread Anterior Pituitary and Posterior Pituitary."
 >}}
 oxytocin
 growth hormone
@@ -221,7 +221,7 @@ thyroid-stimulating hormone
 {{< multiplechoice
   question="Recent studies suggest that blue light exposure can impact human circadian rhythms. This suggests that blue light disrupts the function of the _____ gland(s)."
   answer="pineal"
-  hint="This gland's hormone production is directly driven by light input from the visual pathways, and it governs the sleep-wake cycle."
+  hint="Reread the gland sections that follow Adrenal Glands."
 >}}
 adrenal
 pituitary
@@ -229,7 +229,7 @@ pineal
 thyroid
 {{< /multiplechoice >}}
 
-{{< selfcheck question="The adrenal medulla contains two types of secretory cells, what are they and what are their functions?" hint="Think about the two hormones released in response to sympathetic nervous system signals during the fight-or-flight response, and what each does to heart rate, breathing, and blood glucose." >}}
+{{< selfcheck question="The adrenal medulla contains two types of secretory cells, what are they and what are their functions?" hint="Reread Adrenal Medulla." >}}
 The adrenal medulla contains two types of secretory cells, one that produces epinephrine (adrenaline) and another that produces norepinephrine (noradrenaline). Epinephrine is the primary adrenal medulla hormone accounting for 75–80 percent of its secretions. Epinephrine and norepinephrine increase heart rate, breathing rate, cardiac muscle contractions, and blood glucose levels. They also accelerate the breakdown of glucose in skeletal muscles and stored fats in adipose tissue. The release of epinephrine and norepinephrine is stimulated by neural impulses from the sympathetic nervous system. These neural impulses originate from the hypothalamus in response to stress to prepare the body for the fight-or-flight response.
 ===CHECKS===
 one type of secretory cell produces epinephrine (adrenaline) and another produces norepinephrine (noradrenaline)
@@ -240,7 +240,7 @@ their release is stimulated by neural impulses from the sympathetic nervous syst
 {{< textin
   question="The viscous fluid inside the thyroid gland that stores the glycoprotein thyroglobulin is called ________."
   answer="colloid"
-  hint="This fluid fills the spherical thyroid follicles and can either store thyroid hormone precursor or be released into the surrounding capillary network."
+  hint="Look at the Thyroid Gland section's sentence on what the spherical thyroid follicles contain."
 >}}
 
 {{< textin
@@ -260,7 +260,7 @@ its release from the adrenal cortex is stimulated by a decrease in blood concent
 its release is also stimulated by an increase in blood potassium levels
 {{< /selfcheck >}}
 
-{{< selfcheck question="How would damage to the posterior pituitary gland affect the production and release of ADH and inhibiting hormones?" hint="Remember which of the two hormones named in the question are actually produced by the posterior pituitary itself, versus merely released through it, and which gland's regulatory role over the anterior pituitary lies elsewhere entirely." >}}
+{{< selfcheck question="How would damage to the posterior pituitary gland affect the production and release of ADH and inhibiting hormones?" hint="Reread Hypothalamic-Pituitary Axis and Posterior Pituitary." >}}
 Damage to the posterior pituitary gland would prevent the release of ADH and oxytocin into the body. However, the hypothalamus's ability to produce ADH would not be affected. The hypothalamus would also still be able to produce and release inhibiting hormones to regulate the anterior pituitary.
 ===CHECKS===
 damage to the posterior pituitary would prevent the release of ADH and oxytocin into the body
@@ -271,7 +271,7 @@ the hypothalamus would still be able to produce and release inhibiting hormones 
 {{< textin
   question="The system of blood vessels that carries hormones from the hypothalamus directly to the anterior pituitary, without first entering general circulation, is called the ________."
   answer="hypophyseal portal system"
-  hint="A 'portal system' carries blood from one capillary network to another rather than back to the heart first — this one links two endocrine structures directly."
+  hint="Reread the opening of Hypothalamic-Pituitary Axis."
 >}}
 
 {{< textin
@@ -285,15 +285,15 @@ the hypothalamus would still be able to produce and release inhibiting hormones 
   question="The hormone produced by the heart in response to increased blood volume, which acts on the kidneys to reduce blood volume, pressure, and sodium concentration, is called ________."
   answer="atrial natriuretic peptide"
   accept="ANP"
-  hint="This hormone's cells are stretched by high blood volume, and its effect on the kidneys works in the opposite direction of aldosterone's."
+  hint="The cells that release this hormone do so when high blood volume stretches them; look at the heart paragraph of Organs with Secondary Endocrine Functions."
 >}}
 
 {{< textin
   question="The hormone produced by adipose tissue in response to food intake, which promotes feelings of satiety and must be present for GnRH and gonadotropin synthesis to occur, is called ________."
   answer="leptin"
-  hint="Extremely thin individuals, who produce less of this hormone, may enter puberty later than typical — a link between energy stores and reproductive hormone release."
+  hint="Extremely thin females may enter puberty late, and more adipose tissue means more of this hormone — a link between energy stores and fertility."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 37.5: Endocrine Glands](https://openstax.org/books/biology-2e/pages/37-5-endocrine-glands) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the adrenal-cortex sentence on aldosterone reads "Na⁺ ions in urine, sweat, and saliva" where the source prints "urine, sweat, pancreas, and saliva" — the module's own Critical Thinking solution lists "urine, sweat, and saliva", and the pancreas is not a secreted fluid (reported as a source defect); figures re-encoded as WebP; five figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_37_05_01ab, Figure_37_05_02, Figure_37_05_03, Figure_37_05_04, and Figure_37_05_05 are all hand-drawn or digitally rendered anatomical illustrations, not captured photographs — Figure_37_05_06, the pancreatic-islet micrograph, is the one genuine photo and keeps that kind); a longdesc added to every diagram, walking each drawing's own printed leader-line labels (the two-panel pituitary figure, the thyroid, the parathyroid, the adrenal, and the pancreas illustrations) — the micrograph needed none, since its caption and alt already carry its content; the pituitary figure's alt rewritten from the source's single run-on sentence to explicitly name what panel (a) and panel (b) each show, since the source alt did not distinguish them; in-text pointers to figures ("Figure 37.15" through "Figure 37.20") replaced with "shown below" or "illustrated below," since Hugo does not number figures; ion charges and iodine-count subscripts set as Unicode (Na⁺, K⁺, Ca²⁺, T₃, T₄) in place of the source's `<sup>`/`<sub>` markup; the "Endocrine Glands and their Associated Hormones" table kept as a Markdown table in the body — its columns (gland, hormone, effect) name a gland/hormone pairing rather than categories, so it does not qualify for the `sortbins` "columns name categories" test and has no Practice-block counterpart; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items added from the glossary (colloid, islets of Langerhans, hypophyseal portal system, erythropoietin, atrial natriuretic peptide, leptin), covering six of the section's twenty-two glossary terms, the rest appearing only in the Key terms list and the prose.</small>
+<small>This section is adapted from [Biology 2e, Section 37.5: Endocrine Glands](https://openstax.org/books/biology-2e/pages/37-5-endocrine-glands) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the adrenal-cortex sentence on aldosterone reads "Na⁺ ions in urine, sweat, and saliva" where the source prints "urine, sweat, pancreas, and saliva" — the module's own Critical Thinking solution lists "urine, sweat, and saliva", and the pancreas is not a secreted fluid (reported as a source defect); figures re-encoded as WebP; five figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_37_05_01ab, Figure_37_05_02, Figure_37_05_03, Figure_37_05_04, and Figure_37_05_05 are all hand-drawn or digitally rendered anatomical illustrations, not captured photographs — Figure_37_05_06, the pancreatic-islet micrograph, is the one genuine photo and keeps that kind); a longdesc added to every diagram, walking each drawing's own printed leader-line labels (the two-panel pituitary figure, the thyroid, the parathyroid, the adrenal, and the pancreas illustrations) — the micrograph needed none, since its caption and alt already carry its content; the pituitary figure's alt rewritten from the source's single run-on sentence to explicitly name what panel (a) and panel (b) each show, since the source alt did not distinguish them; in-text pointers to figures ("Figure 37.15" through "Figure 37.20") replaced with "shown below" or "illustrated below," since Hugo does not number figures; ion charges and iodine-count subscripts set as Unicode (Na⁺, K⁺, Ca²⁺, T₃, T₄) in place of the source's `<sup>`/`<sub>` markup; the "Endocrine Glands and their Associated Hormones" table kept as a Markdown table in the body — its columns (gland, hormone, effect) name a gland/hormone pairing rather than categories, so it does not qualify for the `sortbins` "columns name categories" test and has no Practice-block counterpart; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items added from the glossary (colloid, islets of Langerhans, hypophyseal portal system, erythropoietin, atrial natriuretic peptide, leptin), covering six of the section's twenty-two glossary terms, the rest appearing only in the Key terms list and the prose. One claim is corrected with a visible Source note: the Summary says the adrenal glands "consist of the renal cortex and renal medulla," but this section's own Adrenal Glands text says they consist of an outer adrenal cortex and an inner adrenal medulla, as the Summary's own next two sentences also say, so the Summary sentence now reads "the adrenal cortex and adrenal medulla" (erratum 888).</small>

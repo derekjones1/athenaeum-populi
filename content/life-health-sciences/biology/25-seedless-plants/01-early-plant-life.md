@@ -47,7 +47,7 @@ All sexually reproducing organisms have both haploid and diploid cells in their 
 
 Alternation of generations describes a life cycle in which an organism has both haploid and diploid multicellular stages. This type of life cycle, which is found in all plants, is described as **haplodiplontic**.
 
-{{< mediafigure src="biology/Figure_25_01_01" alt="A life-cycle diagram titled 'Alternation of generations,' split into a pale-yellow haploid (n) band on top and a green diploid (2n) band on the bottom. Arrows run clockwise: spores undergo mitosis to form a gametophyte, which produces gametes; two gametes fuse to form a zygote, which undergoes mitosis to form a sporophyte; the sporophyte undergoes meiosis to produce spores again, completing the cycle." longdesc="The diagram has two horizontal bands: a pale-yellow band labeled 'n' on top and a green band labeled '2n' on the bottom, with a boxed title, 'Alternation of generations,' centered across the boundary between them. The cycle runs clockwise. In the n band, three small open circles at the upper left are labeled 'Spores'; an arrow labeled 'Mitosis' curves right from them to a large white, cell-textured oval labeled 'Gametophyte' at top center. From the Gametophyte, an arrow curves down-right to two small open circles labeled 'Gametes' at the upper right. An arrow labeled 'Fusion' leads down from the Gametes to a single small green dot labeled 'Zygote,' sitting on the boundary between the two bands at the right. From the Zygote, an arrow labeled 'Mitosis' curves left into the green band to a large dark-green, cell-textured oval labeled 'Sporophyte' at the bottom. A long arrow labeled 'Meiosis' runs from the Sporophyte back up along the left edge of the diagram to the three Spores circles, completing the cycle." kind="diagram" eager="true" >}}
+{{< mediafigure src="biology/Figure_25_01_01" alt="A life-cycle diagram titled 'Alternation of generations,' split into a pale-yellow haploid (n) band on top and a green diploid (2n) band on the bottom. Arrows run clockwise: spores undergo mitosis to form a gametophyte, which produces gametes; two gametes fuse to form a zygote, which undergoes mitosis to form a sporophyte; the sporophyte undergoes meiosis to produce spores again, completing the cycle." longdesc="The diagram has two horizontal bands: a pale-yellow band labeled 'n' on top and a green band labeled '2n' on the bottom, with a boxed title, 'Alternation of generations,' centered across the boundary between them. The cycle runs clockwise. In the n band, four small open circles at the upper left are labeled 'Spores'; an arrow labeled 'Mitosis' curves right from the rightmost one to a large white, cell-textured oval labeled 'Gametophyte' at top center. From the Gametophyte, an arrow curves down-right to two small open circles labeled 'Gametes' at the upper right. An arrow labeled 'Fusion' leads down from the Gametes to a single small green dot labeled 'Zygote,' just below the boundary, inside the green band at the right. From the Zygote, an arrow labeled 'Mitosis' curves left into the green band to a large dark-green, cell-textured oval labeled 'Sporophyte' at the bottom. A long arrow labeled 'Meiosis' runs from a circled cell at the Sporophyte's left end back up along the left edge of the diagram and splits into four arrowheads, one to each Spores circle, completing the cycle." kind="diagram" eager="true" >}}
 Alternation of generations between the 1*n* gametophyte and 2*n* sporophyte is shown. Mitosis occurs in both gametophyte and sporophyte generations. Diploid sporophytes produce haploid spores by meiosis, while haploid gametophytes produce gametes by mitosis. (credit: Peter Coxhead)
 {{< /mediafigure >}}
 
@@ -75,7 +75,7 @@ The spores of seedless plants are surrounded by thick cell walls containing a to
 
 Shoots and roots of plants increase in length through rapid cell division in a tissue called the apical meristem, which is a small mitotically active zone of cells found at the shoot tip or root tip. The apical meristem is made of undifferentiated cells that continue to proliferate throughout the life of the plant. Meristematic cells give rise to all the specialized tissues of the organism. Elongation of the shoots and roots allows a plant to access additional space and resources: light in the case of the shoot, and water and minerals in the case of roots. A separate meristem, called the lateral meristem, produces cells that increase the diameter of tree trunks.
 
-{{< mediafigure src="biology/Figure_25_01_03" alt="A labeled illustration of a root tip narrowing to a rounded point. A column of larger, rectangular cream-colored cells fills the tapering upper section and center, and a layer of smaller, curved, tan cells wraps around the sides and bottom of the rounded tip." longdesc="The root tip is drawn as a shape narrowing from a flat top (continuing upward out of frame) down to a rounded bottom point. The interior is filled with tall, rectangular cells shown in cream and pale tan running lengthwise down the root's axis, densest and most orderly near the top and becoming less orderly toward the tip. A leader line from the label 'Apical meristem' points into this interior tissue just above the tip, where the cells are smallest and most tightly packed. A separate, curved layer of smaller, overlapping tan cells wraps around the outside of the tip like a cap, covering its rounded bottom and lower sides; a leader line from the label 'Root cap' points to this outer layer." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_25_01_03" alt="A labeled illustration of a root tip narrowing to a rounded point. Rows of cream-colored cells with a dark brown central column fill the upper section, a zone of small grayish cells fills the lower tip, and a single layer of larger, elongated tan cells wraps around the sides and bottom of the rounded tip." longdesc="The root tip is drawn as a shape narrowing from a flat top (continuing upward out of frame) down to a rounded bottom point. The upper part is filled with orderly rows of rounded, cream-colored cells, with a column of dark brown cells running down the center of the root and ending in a point partway down. Below it, the lower part of the tip is a U-shaped zone of smaller, grayish cells that fan out from a point near the bottom; a leader line from the label 'Apical meristem' points into this zone, just below where the dark column ends. A single outer layer of larger, elongated, overlapping tan cells wraps around the outside of the tip like a cap, covering its rounded bottom and running up both sides to about the level where the gray zone begins; a leader line from the label 'Root cap' points to this outer layer on the right side." kind="diagram" >}}
 Apical meristem at a root tip. Addition of new cells in a root occurs at the apical meristem. Subsequent enlargement of these cells causes the organ to grow and elongate. The root cap protects the fragile apical meristem as the root tip is pushed through the soil by cell elongation.
 {{< /mediafigure >}}
 
@@ -93,7 +93,7 @@ Plants cannot avoid being eaten by animals. Instead, they synthesize a large ran
 
 No discussion of the evolution of plants on land can be undertaken without a brief review of the timeline of the geological eras. The early era, known as the Paleozoic, is divided into six periods. It starts with the Cambrian period, followed by the Ordovician, Silurian, Devonian, Carboniferous, and Permian. The major event to mark the Ordovician, more than 500 million years ago, was the colonization of land by the ancestors of modern land plants. Fossilized cells, cuticles, and spores of early land plants have been dated as far back as the Ordovician period in the early Paleozoic era. The oldest-known vascular plants have been identified in deposits from the late Silurian and early Devonian. One of the richest sources of information is the Rhynie chert, a sedimentary rock deposit found in Rhynie, Scotland, where embedded fossils of some of the earliest vascular plants have been identified.
 
-{{< mediafigure src="biology/Figure_B25_01_04_new" alt="Two-panel figure of a Rhynie chert fossil. Panel (a) is a photo of a rock slab banded in blue-gray, black, and brown, with a white dashed circle around a cluster of small round fossil features near the lower left. Panel (b) is a rendered reconstruction of the plant Cooksonia: several pale green stalks rising from a common base, each ending in a rounded orange-brown sporangium, set against a rock-textured background." longdesc="Panel (a), on the left, is a close-up photo of a polished rock slab, its surface banded in swirling blue-gray, black, and brown mineral layers with scattered dark speckles; a 2 mm scale bar sits at the lower right, and a white dashed circle near the lower left of the banded region marks a cluster of small round fossil impressions (the fossilized corms). Panel (b), on the right, is a photorealistic reconstruction set against a similar rock-textured backdrop: thin, pale green stalks rise from a shared base and branch upward into five rounded cup-shaped sporangia: three with orange-brown tops, one small green cup with an orange rim, and one green sporangium curving to the right and shown edge-on." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_B25_01_04_new" alt="Two-panel figure of a Rhynie chert fossil. Panel (a) is a photo of a rock slab banded in blue-gray, black, and brown, with a thin white circle around a cluster of small round fossil features near the lower left. Panel (b) is a rendered reconstruction of the plant Cooksonia: several pale green stalks rising from a common base, each ending in a cup-shaped sporangium, some orange-brown and some green, set against a rock-textured background." longdesc="Panel (a), on the left, is a close-up photo of a polished rock slab, its upper half mottled blue-gray, white, and black with many dark oval fossil sections, and its lower half banded in wavy brown layers; a 2 mm scale bar sits at the lower right, and a thin white circle at the left edge, straddling the boundary between the two zones, marks a cluster of small round, dark fossil sections (the fossilized corms). Panel (b), on the right, is a photorealistic reconstruction set against a similar rock-textured backdrop: thin, pale green stalks rise from a shared base and branch upward into five cup-shaped sporangia: two, seen from the side, with orange-brown tops; two open cups seen from the front, a small green one with a thin orange-brown rim and a larger one with a broad orange-brown rim around a green center; and one green sporangium curving to the right and shown edge-on." kind="diagram" >}}
 Early vascular plant fossils. This Rhynie chert (a) contains fossilized material from vascular plants. Reconstruction of *Cooksonia* (b), is shown based upon the fossilized remains inside the circle in (a). (credit b: modification of work by Peter Coxhead based on original image by “Smith609”/Wikimedia Commons; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
@@ -111,7 +111,7 @@ Some paleobotanists are skeptical of the conclusions drawn from the analysis of 
 
 The green algae and land plants are grouped together into a subphylum called the Streptophyta, and thus are called Streptophytes. In a further division, land plants are classified into two major groups according to the absence or presence of vascular tissue, as detailed in the diagram below. Plants that lack vascular tissue, which is formed of specialized cells for the transport of water and nutrients, are referred to as **non-vascular plants**. Liverworts, mosses, and hornworts are seedless, non-vascular plants that likely appeared early in land plant evolution. Vascular plants developed a network of cells that conduct water and solutes. The first vascular plants appeared in the late Ordovician (500 to 435 MYA) and were probably similar to lycophytes, which include club mosses (not to be confused with the mosses) and the monilophytes (ferns, horsetails, and whisk ferns). Lycophytes and monilophytes are referred to as seedless vascular plants, because they do not produce seeds. The seed plants, or spermatophytes, form the largest group of all existing plants, and hence dominate the landscape. Seed plants include gymnosperms, most notably conifers, which produce "naked seeds," and the most successful of all plants, the flowering plants (angiosperms). Angiosperms protect their seeds inside chambers at the center of a flower; the walls of the chamber later develop into a fruit.
 
-{{< mediafigure src="biology/Figure_25_01_05" alt="A nested classification diagram of Streptophytes (green plants), dividing them into Charophytes and Embryophytes (land plants); land plants split into Nonvascular and Vascular groups, each subdivided down to individual plant lineages such as mosses, ferns, gymnosperms, and angiosperms." longdesc="The diagram is a nested, color-coded grid read top to bottom. A green band spans the full width across the top and reads 'Streptophytes: The Green Plants.' Below it, a light-blue column at the left reads 'Charophytes' and runs the full height of the diagram with no further subdivisions; the remaining tan band to its right reads 'Embryophytes: The Land Plants.' That band splits into two columns: 'Nonvascular' (narrower, left) and 'Vascular' (wider, right). Under Nonvascular, a green cell reads 'Seedless Plants / Bryophytes' and splits at the bottom row into three columns: 'Liverworts,' 'Hornworts,' and 'Mosses.' Under Vascular, two cells split it into 'Seedless Plants' (left, green, itself divided into 'Lycophytes' and 'Monilophytes' sub-columns) and 'Seed Plants / Spermatophytes' (right, tan). The Lycophytes column lists three stacked rows — 'Club Mosses,' 'Quillworts,' 'Spike Mosses' — and the Monilophytes column lists three stacked rows — 'Whisk Ferns,' 'Horsetails,' 'Ferns.' The Spermatophytes cell splits at the bottom into two columns, 'Gymnosperms' and 'Angiosperms.'" kind="diagram" >}}
+{{< mediafigure src="biology/Figure_25_01_05" alt="A nested classification diagram of Streptophytes (green plants), dividing them into Charophytes and Embryophytes (land plants); land plants split into Nonvascular and Vascular groups, each subdivided down to individual plant lineages such as mosses, ferns, gymnosperms, and angiosperms." longdesc="The diagram is a nested, color-coded grid read top to bottom. A green band spans the full width across the top and reads 'Streptophytes: The Green Plants.' Below it, a light-blue column at the left reads 'Charophytes' and runs the full height of the diagram with no further subdivisions; the remaining tan band to its right reads 'Embryophytes: The Land Plants.' That band splits into two columns: 'Nonvascular' (narrower, left) and 'Vascular' (wider, right). Under Nonvascular, a green cell reads 'Seedless Plants / Bryophytes' and splits at the bottom row into three columns: 'Liverworts,' 'Hornworts,' and 'Mosses.' Under Vascular, two cells split it into 'Seedless Plants' (left, green, itself divided into 'Lycophytes' and 'Monilophytes' sub-columns) and 'Seed Plants / Spermatophytes' (right, the same green). The Lycophytes column lists three stacked rows — 'Club Mosses,' 'Quillworts,' 'Spike Mosses' — and the Monilophytes column lists three stacked rows — 'Whisk Ferns,' 'Horsetails,' 'Ferns.' The Spermatophytes cell splits at the bottom into two columns, 'Gymnosperms' and 'Angiosperms.'" kind="diagram" >}}
 Streptophytes. This table shows the major divisions of green plants.
 {{< /mediafigure >}}
 
@@ -164,7 +164,7 @@ there is no need to collect light at additional wavelengths
 made available by other pigment coloration
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe at least two challenges that cactuses had to overcome that cattails did not." hint="Consider what a desert lacks compared to a swamp — in moisture, population density, and daily temperature swing." >}}
+{{< selfcheck question="Describe at least two challenges that cactuses had to overcome that cattails did not." hint="Compare a desert habitat with a swamp habitat, feature by feature." >}}
 Possible challenges include differences in climate, reproduction, and temperature. Deserts are more arid than swamps, so there is less humidity in the air and less water in the soil. Cactuses are often not densely populated, whereas cattails occur in groups. During the day, deserts are usually hot, which increases the risk of desiccation, and the desert climate also has broader temperature ranges (extremes).
 ===CHECKS===
 deserts are more arid than swamps
@@ -177,7 +177,7 @@ deserts are usually hot during the day, which increases the risk of desiccation,
   question="Land plants acquired traits that made it possible to colonize land and survive ________."
   answer="out of the water"
   accept="out of water"
-  hint="This phrase names the aquatic habitat every land-plant adaptation in this section works around."
+  hint="Reread the first sentence of this section's summary."
 >}}
 
 ### Describe the adaptations that allowed plants to colonize the land
@@ -185,7 +185,7 @@ deserts are usually hot during the day, which increases the risk of desiccation,
 {{< multiplechoice
   question="Alternation of generations means that plants produce:"
   answer="both haploid and diploid multicellular organisms"
-  hint="Recall that both a gametophyte and a sporophyte generation are multicellular in this life cycle — check which option includes both."
+  hint="Reread the Alternation of Generations subsection and its life-cycle diagram."
 >}}
 only haploid multicellular organisms
 only diploid multicellular organisms
@@ -196,7 +196,7 @@ both haploid and diploid multicellular organisms
 {{< multiplechoice
   question="Which of the following traits of land plants allows them to grow in height?"
   answer="tracheids"
-  hint="Which structure conducts water and adds lignin-reinforced support so a shoot can grow taller?"
+  hint="Reread the Additional Land Plant Adaptations paragraph on growing taller and the tissue that made it possible."
 >}}
 alternation of generations
 waxy cuticle
@@ -207,7 +207,7 @@ sporopollenin
 {{< multiplechoice
   question="How does a haplontic plant population maintain genetic diversity?"
   answer="Zygotes are produced by random fusion."
-  hint="In a haplontic cycle, meiosis happens right after fertilization — diversity has to come from how gametes combine, not from a diploid multicellular stage."
+  hint="Reread the Alternation of Generations subsection's description of the haplontic life cycle."
 >}}
 Zygotes are produced by random fusion.
 Gametes are created through meiosis.
@@ -236,10 +236,9 @@ The zygote undergoes meiosis to generate a haploid sporophyte.
 >}}
 
 {{< textin
-  question="Because the female gametophyte protects and nourishes the developing embryo, land plants are also known as ________."
+  question="Because, in both seedless and seed plants, the female gametophyte provides protection and nutrients to the offspring as it develops into the new sporophyte, land plants are also known as ________."
   answer="embryophytes"
-  accept="embryophyte"
-  hint="The name refers to the structure every land-plant life cycle shelters inside the parent gametophyte."
+  hint="Reread the last sentences of the Alternation of Generations subsection."
 >}}
 
 ### Describe the timeline of plant evolution and the impact of land plants on other living things
@@ -247,7 +246,7 @@ The zygote undergoes meiosis to generate a haploid sporophyte.
 {{< multiplechoice
   question="The land plants are probably descendants of which of these groups?"
   answer="green algae"
-  hint="Recall which algal lineage shares chlorophyll *a* and *b* plus the same carotene proportion with land plants."
+  hint="Reread the opening paragraph of this section."
 >}}
 green algae
 red algae
@@ -255,7 +254,7 @@ brown algae
 angiosperms
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is the difference between extant and extinct?" hint="One word describes species still around today; the other describes species known only from fossils." >}}
+{{< selfcheck question="What is the difference between extant and extinct?" hint="Reread the Evolution of Land Plants subsection, where paleobotanists use both terms." >}}
 Paleobotanists distinguish between extinct species, which no longer live, and extant species, which are still living.
 ===CHECKS===
 extinct species no longer live
@@ -274,6 +273,7 @@ providing a source of water
 {{< textin
   question="The group of green algae considered the closest living relative of land plants is called a ________."
   answer="charophyte"
+  accept="Charophyta"
   hint="This section's opening paragraph names this group alongside the Chlorophytes as sharing chlorophyll a and b with land plants."
 >}}
 

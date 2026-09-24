@@ -67,15 +67,10 @@ All three important disaccharides form by dehydration synthesis.
 {{< /mediafigure >}}
 
 {{< callout type="info" >}}
-**Interactive Link.** Watch [a video showing the formation of a disaccharide](http://openstax.org/l/disaccharide). What happens when water encounters a glycosidic bond?
-{{< /callout >}}
+**Interactive Link**
 
-{{< selfcheck question="Watch this video to observe the formation of a disaccharide. What happens when water encounters a glycosidic bond?" hint="Think about what hydrolysis does to a bond in general, then apply it to the bond that links two monosaccharides." >}}
-The water hydrolyses, or breaks, the glycosidic bond, forming two monosaccharides.
-===CHECKS===
-the water hydrolyses, or breaks, the glycosidic bond
-forming two monosaccharides
-{{< /selfcheck >}}
+Watch [a video about disaccharides](http://openstax.org/l/disaccharide) to observe the formation of a disaccharide. What happens when water encounters a glycosidic bond?
+{{< /callout >}}
 
 ### Polysaccharides
 
@@ -134,7 +129,7 @@ Fatty acids are also components of glycolipids, which are sugar-fat compounds fo
 
 As its name suggests, a **phospholipid** is a bond between the glycerol component of a lipid and a phosphorous molecule. In fact, phospholipids are similar in structure to triglycerides. However, instead of having three fatty acids, a phospholipid is generated from a diglyceride, a glycerol with just two fatty acid chains (shown below). The third binding site on the glycerol is taken up by the phosphate group, which in turn is attached to a polar “head” region of the molecule. Recall that triglycerides are nonpolar and hydrophobic. This still holds for the fatty acid portion of a phospholipid compound. However, the head of a phospholipid contains charges on the phosphate groups, as well as on the nitrogen atom. These charges make the phospholipid head hydrophilic. Therefore, phospholipids are said to have hydrophobic tails, containing the neutral fatty acids, and hydrophilic heads, containing the charged phosphate groups and nitrogen atom.
 
-{{< mediafigure src="anatomy-physiology/222_Other_Important_Lipids-01" kind="diagram" alt="Three labeled diagrams: (a) a phospholipid — a choline-and-phosphate polar head bonded to a glycerol backbone with two fatty acid tails, plus a simplified head-and-two-tails icon beside it; (b) cholesterol — four fused hydrocarbon rings with a hydroxyl group and a branched side chain; (c) two prostaglandins, PGF₂α and PGE₂, each a five-membered ring with attached hydrocarbon chains ending in a carboxyl group." >}}
+{{< mediafigure src="anatomy-physiology/222_Other_Important_Lipids-01" kind="diagram" alt="Three labeled diagrams: (a) a phospholipid, phosphatidylcholine — a phosphorus-containing polar head bonded to a glycerol backbone with two fatty acid tails, one straight and one kinked at a double bond, plus a simplified head-and-two-tails icon beside it; (b) cholesterol — four fused hydrocarbon rings with a hydroxyl group and a branched side chain; (c) two prostaglandins, PGF₂α and PGE₂, each a five-membered ring with attached hydrocarbon chains ending in a carboxyl group." longdesc="The image prints its own explanatory text. (a) Phospholipids: Two fatty acid chains and a phosphorus-containing group are attached to the glycerol backbone. Example: Phosphatidylcholine. Brackets label the Phosphorus-containing group (polar 'head'), the Glycerol backbone, and the 2 fatty acid chains (nonpolar 'tail'); the upper chain is straight, and the lower chain bends where a carbon–carbon double bond interrupts it. At right, a schematic phospholipid, a ball with two wavy tails, is labeled Polar 'head' and Nonpolar 'tail' (schematic phospholipid). (b) Sterols: Four interlocking hydrocarbon rings from a steroid. Example: Cholesterol (cholesterol is the basis for all steroids formed in the body). The structure shows three six-membered rings and one five-membered ring, an HO group on the first ring, and a branched hydrocarbon side chain on the last. (c) Prostaglandins: two structures, labeled PGF₂α (printed PGF₂X in the image) and PGE₂, each a five-membered ring bearing two hydrocarbon chains, one ending in COOH and the other carrying an OH group." >}}
 (a) Phospholipids are composed of two fatty acids, glycerol, and a phosphate group. (b) Sterols are ring-shaped lipids. Shown here is cholesterol. (c) Prostaglandins are derived from unsaturated fatty acids. Prostaglandin E2 (PGE2) includes hydroxyl and carboxyl groups.
 {{< /mediafigure >}}
 
@@ -163,12 +158,12 @@ Proteins are polymers made up of nitrogen-containing monomers called amino acids
 Structure of an Amino Acid
 {{< /mediafigure >}}
 
-Notice that all amino acids contain both an acid (the carboxyl group) and a base (the amino group) (amine = “nitrogen-containing”). For this reason, they make excellent buffers, helping the body regulate acid–base balance. What distinguishes the 20 amino acids from one another is their variable group, which is referred to as a side chain or an R-group. This group can vary in size and can be polar or nonpolar, giving each amino acid its unique characteristics. For example, the side chains of two amino acids—cysteine and methionine—contain sulfur. Sulfur does not readily participate in hydrogen bonds, whereas all other amino acids do. This variation influences the way that proteins containing cysteine and methionine are assembled.
+Notice that all amino acids contain both an acid (the carboxyl group) and a base (the amino group) (amine = “nitrogen-containing”). For this reason, they make excellent buffers, helping the body regulate acid–base balance. What distinguishes the 20 amino acids from one another is their variable group, which is referred to as a side chain or an R-group. This group can vary in size and can be polar or nonpolar, giving each amino acid its unique characteristics. For example, the side chains of two amino acids—cysteine and methionine—contain sulfur. Sulfur does not readily participate in hydrogen bonds, whereas the side chains of many other amino acids do. *(Source note: the source prints "…whereas all other amino acids do"; this section says side chains "can be polar or nonpolar," and that the secondary structure of every polypeptide "is maintained by hydrogen bonds between amino acids," cysteine and methionine included, so the contrast is restated as one between side chains.)* This variation influences the way that proteins containing cysteine and methionine are assembled.
 
 Amino acids join via dehydration synthesis to form protein polymers (shown below). The unique bond holding amino acids together is called a peptide bond. A **peptide bond** is a covalent bond between two amino acids that forms by dehydration synthesis. A peptide, in fact, is a very short chain of amino acids. Strands containing fewer than about 100 amino acids are generally referred to as polypeptides rather than proteins.
 
 {{< mediafigure src="anatomy-physiology/224_Peptide_Bond-01" kind="diagram" alt="Two structural diagrams of amino acids bonding: top, two separate amino acids with R1 and R2 side chains, with a highlighted blue box around the OH and H that will be removed; bottom, the same two amino acids now joined, with a bracket labeling the new peptide bond between them." >}}
-Different amino acids join together to form peptides, polypeptides, or proteins via dehydration synthesis. The bonds between the amino acids are peptide bonds R1 and R2 may be the same or different side chains.
+Different amino acids join together to form peptides, polypeptides, or proteins via dehydration synthesis. The bonds between the amino acids are peptide bonds. R1 and R2 may be the same or different side chains.
 {{< /mediafigure >}}
 
 The body is able to synthesize most of the amino acids from components of other molecules; however, nine cannot be synthesized and have to be consumed in the diet. These are known as the essential amino acids.
@@ -182,8 +177,6 @@ Just as a fork cannot be used to eat soup and a spoon cannot be used to spear me
 {{< mediafigure src="anatomy-physiology/225_Peptide_Bond-01" kind="diagram" alt="Four diagrams showing protein structure levels: (a) primary structure, a chain of eleven numbered amino acid spheres; (b) secondary structure, the same eleven-unit chain coiled into an alpha-helix ribbon or folded into a pleated sheet, shown as two alternative panels; (c) tertiary structure, a single chain folded and knotted into a compact globular shape with an embedded purple heme unit; (d) quaternary structure, four such folded subunits combined into hemoglobin, each carrying its own purple heme unit." >}}
 (a) The primary structure is the sequence of amino acids that make up the polypeptide chain. (b) The secondary structure, which can take the form of an alpha-helix or a beta-pleated sheet, is maintained by hydrogen bonds between amino acids in different regions of the original polypeptide strand. (c) The tertiary structure occurs as a result of further folding and bonding of the secondary structure. (d) The quaternary structure occurs as a result of interactions between two or more tertiary subunits. The example shown here is hemoglobin, a protein in red blood cells which transports oxygen to body tissues.
 {{< /mediafigure >}}
-
-*(Source note: the source names this figure's file "225_Peptide_Bond," reusing the previous figure's stem, but its own title and caption are "The Shape of Proteins," and it depicts the primary through quaternary structure of proteins, not a peptide bond. The alt above is written from what the image shows, not from the file name.)*
 
 Although some polypeptides exist as linear chains, most are twisted or folded into more complex secondary structures that form when bonding occurs between amino acids with different properties at different regions of the polypeptide. The most common secondary structure is a spiral called an alpha-helix. If you were to take a length of string and simply twist it into a spiral, it would not hold the shape. Similarly, a strand of amino acids could not maintain a stable spiral shape without the help of hydrogen bonds, which create bridges between different regions of the same strand (see above, (b)). Less commonly, a polypeptide chain can form a beta-pleated sheet, in which hydrogen bonds form bridges between different regions of a single polypeptide that has folded back upon itself, or between two or more adjacent polypeptide chains.
 
@@ -203,8 +196,8 @@ Enzymatic reactions—chemical reactions catalyzed by enzymes—begin when subst
 
 Due to this jigsaw puzzle-like match between an enzyme and its substrates, enzymes are known for their specificity. In fact, as an enzyme binds to its substrate(s), the enzyme structure changes slightly to find the best fit between the transition state (a structural intermediate between the substrate and product) and the active site, just as a rubber glove molds to a hand inserted into it. This active-site modification in the presence of substrate, along with the simultaneous formation of the transition state, is called induced fit. Overall, there is a specifically matched enzyme for each substrate and, thus, for each chemical reaction; however, there is some flexibility as well. Some enzymes have the ability to act on several different structurally related substrates.
 
-{{< mediafigure src="anatomy-physiology/227_Steps_in_an_Enzymatic_Reaction-01" kind="diagram" alt="Four diagrams of an enzyme, a green rounded shape with a notched active site, and two substrates S1 and S2: (a) the substrates approach the active site; (b) they bind, forming an enzyme–substrate complex; (c) the bound substrates are relabeled Product as the reaction completes; (d) the product detaches above the unchanged enzyme, with an arrow showing the enzyme is ready to repeat the cycle." >}}
-According to the induced-fit model, the active site of the enzyme undergoes conformational changes upon binding with the substrate.(a) Substrates approach active sites on enzyme. (b) Substrates bind to active sites, producing an enzyme–substrate complex. (c) Changes internal to the enzyme–substrate complex facilitate interaction of the substrates. (d) Products are released and the enzyme returns to its original form, ready to facilitate another enzymatic reaction.
+{{< mediafigure src="anatomy-physiology/227_Steps_in_an_Enzymatic_Reaction-01" kind="diagram" alt="Four diagrams of an enzyme, a green rounded shape with two notched active sites, and two substrates S₁ and S₂: (a) the substrates approach the active sites; (b) they bind side by side, labeled Substrates form a product; (c) the bound substrates are drawn as one shape labeled Product; (d) an upward arrow shows the product detaching from the unchanged enzyme, labeled Product detaches and process can repeat." >}}
+According to the induced-fit model, the active site of the enzyme undergoes conformational changes upon binding with the substrate. (a) Substrates approach active sites on enzyme. (b) Substrates bind to active sites, producing an enzyme–substrate complex. (c) Changes internal to the enzyme–substrate complex facilitate interaction of the substrates. (d) Products are released and the enzyme returns to its original form, ready to facilitate another enzymatic reaction.
 {{< /mediafigure >}}
 
 Binding of a substrate produces an enzyme–substrate complex. It is likely that enzymes speed up chemical reactions in part because the enzyme–substrate complex undergoes a set of temporary and reversible changes that cause the substrates to be oriented toward each other in an optimal position to facilitate their interaction. This promotes increased reaction speed. The enzyme then releases the product(s), and resumes its original shape. The enzyme is then free to engage in the process again, and will do so as long as substrate remains.
@@ -235,15 +228,13 @@ Nucleotides can be assembled into nucleic acids (DNA or RNA) or the energy compo
 
 The nucleic acids differ in their type of pentose sugar. **Deoxyribonucleic acid (DNA)** is nucleotide that stores genetic information. DNA contains deoxyribose (so-called because it has one less atom of oxygen than ribose) plus one phosphate group and one nitrogen-containing base. The “choices” of base for DNA are adenine, cytosine, guanine, and thymine. **Ribonucleic acid (RNA)** is a ribose-containing nucleotide that helps manifest the genetic code as protein. RNA contains ribose, one phosphate group, and one nitrogen-containing base, but the “choices” of base for RNA are adenine, cytosine, guanine, and uracil.
 
-The nitrogen-containing bases adenine and guanine are classified as purines. A **purine** is a nitrogen-containing molecule with a double ring structure, which accommodates several nitrogen atoms. The bases cytosine, thymine (found in DNA only) and uracil (found in RNA only) are pyrimidines. *(Source note: the source prints "pyramidines" here and again in the next sentence's defining term; the module's own glossary and Review Question fs-id2022623 both spell the term "pyrimidine," so this page uses that spelling.)* A **pyrimidine** is a nitrogen-containing base with a single ring structure.
+The nitrogen-containing bases adenine and guanine are classified as purines. A **purine** is a nitrogen-containing molecule with a double ring structure, which accommodates several nitrogen atoms. The bases cytosine, thymine (found in DNA only) and uracil (found in RNA only) are pyrimidines. A **pyrimidine** is a nitrogen-containing base with a single ring structure.
 
 Bonds formed by dehydration synthesis between the pentose sugar of one nucleic acid monomer and the phosphate group of another form a “backbone,” from which the components’ nitrogen-containing bases protrude. In DNA, two such backbones attach at their protruding bases via hydrogen bonds. These twist to form a shape known as a double helix (shown below). The sequence of nitrogen-containing bases within a strand of DNA form the genes that act as a molecular code instructing cells in the assembly of amino acids into proteins. Humans have almost 22,000 genes in their DNA, locked up in the 46 chromosomes inside the nucleus of each cell (except red blood cells which lose their nuclei during development). These genes carry the genetic code to build one’s body, and are unique for each individual except identical twins.
 
 {{< mediafigure src="anatomy-physiology/229_Nucleotides-01" kind="diagram" alt="A DNA double helix diagram: two light-blue sugar-phosphate backbone strands twisted around each other, connected by colored base-pair rungs — adenine red, thymine yellow, guanine blue, cytosine green, per the legend — with leader lines labeling one base pair and the sugar-phosphate backbone." >}}
 In the DNA double helix, two strands attach via hydrogen bonds between the bases of the component nucleotides.
 {{< /mediafigure >}}
-
-*(Source note: the source names this figure's file "229_Nucleotides," sharing the previous figure's stem, but its own title is "DNA" and it depicts only the double helix, not the general nucleotide panels of the figure above. The alt above is written from what the image shows.)*
 
 In contrast, RNA consists of a single strand of sugar-phosphate backbone studded with bases. Messenger RNA (mRNA) is created during protein synthesis to carry the genetic instructions from the DNA to the cell’s protein manufacturing plants in the cytoplasm, the ribosomes.
 
@@ -317,7 +308,7 @@ Cells can also transfer a phosphate group from ATP to another organic compound. 
 {{< textin
   question="Any large molecule, whether or not it is built of repeating monomers, is called a ________."
   answer="macromolecule"
-  hint="The prefix meaning 'large' names this general term."
+  hint="Reread the paragraph that follows the Functional Groups table."
 >}}
 
 ### Explain the chemistry behind carbon’s affinity for covalently bonding in organic compounds
@@ -325,7 +316,8 @@ Cells can also transfer a phosphate group from ATP to another organic compound. 
 {{< textin
   question="In the table above, the group written as —CH₃ is named the ________ group."
   answer="methyl"
-  hint="It appears in amino acids as one possible side-chain group, written with three hydrogens."
+  accept="methyl group"
+  hint="Read across the table row whose structural formula is —CH₃."
 >}}
 
 {{< textin
@@ -350,7 +342,7 @@ Methyl
 {{< multiplechoice
   question="C₆H₁₂O₆ is the chemical formula for a ________."
   answer="hexose monosaccharide"
-  hint="Count the carbon atoms in the formula, then decide whether that count matches a hexose or a pentose sugar."
+  hint="Reread Monosaccharides, then count the carbon atoms in the formula."
 >}}
 polymer of carbohydrate
 pentose monosaccharide
@@ -361,7 +353,7 @@ all of the above
 {{< multiplechoice
   question="What organic compound do brain cells primarily rely on for fuel?"
   answer="glucose"
-  hint="Recall which single sugar the Functions of Carbohydrates section says neurons and red blood cells can use for fuel."
+  hint="Reread the second paragraph of Functions of Carbohydrates."
 >}}
 glucose
 glycogen
@@ -382,7 +374,8 @@ a molecule of water is removed during its formation via dehydration synthesis
 {{< textin
   question="A lipid compound composed of a glycerol molecule bonded with three fatty acid chains is called a ________."
   answer="triglyceride"
-  hint="It is the most abundant lipid in the body and the type commonly called a fat."
+  accept="neutral fat"
+  hint="Reread the first lipid group described under Lipids."
 >}}
 
 {{< multiplechoice
@@ -409,7 +402,7 @@ the outer protein envelope enables them to transport fats in the bloodstream
 {{< multiplechoice
   question="Which of the following is a functional group that is part of a building block of proteins?"
   answer="amino"
-  hint="Recall which of the five functional groups from the earlier table forms part of every amino acid's structure."
+  hint="Reread the bulleted list under Microstructure of Proteins."
 >}}
 phosphate
 adenine
@@ -437,16 +430,16 @@ specialty
 ### Identify the building blocks of nucleic acids, and the roles of DNA, RNA, and ATP in human functioning
 
 {{< textin
-  question="The deoxyribose-containing nucleotide that stores genetic information is abbreviated ________."
+  question="The deoxyribose-containing nucleotide that stores genetic information is called ________."
   answer="DNA"
-  accept="deoxyribonucleic acid"
-  hint="Its name describes the sugar it contains — one oxygen atom fewer than the sugar RNA uses."
+  accept="deoxyribonucleic acid|deoxyribonucleic acid (DNA)"
+  hint="Reread the paragraph that follows the figure of nucleotide building blocks."
 >}}
 
 {{< multiplechoice
   question="A pentose sugar is a part of the monomer used to build which type of macromolecule?"
   answer="nucleic acids"
-  hint="Recall which macromolecule's monomer includes a five-carbon sugar, described in the Nucleotides section."
+  hint="Reread which of this section's monomers includes a pentose sugar among its subunits."
 >}}
 polysaccharides
 nucleic acids
@@ -468,7 +461,7 @@ double helix
 {{< multiplechoice
   question="Uracil ________."
   answer="all of the above"
-  hint="Reread the Nucleic Acids section for uracil's base class and which nucleic acid contains it, then decide how many of the other options that supports."
+  hint="Reread the Nucleic Acids section."
 >}}
 contains nitrogen
 is a pyrimidine
@@ -478,4 +471,4 @@ all of the above
 
 ---
 
-<small>This section is adapted from [Anatomy and Physiology 2e, Section 2.5: Organic Compounds Essential to Human Functioning](https://openstax.org/books/anatomy-and-physiology-2e/pages/2-5-organic-compounds-essential-to-human-functioning) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP; the functional-groups paragraph carries a Source note because the source's table prints four rows (hydroxyl, carboxyl, amino, methyl) for the five groups the sentence names, and the table is transcribed as printed; the Other Important Lipids figure's alt names both drawn prostaglandins, PGF₂α and PGE₂, where the source caption and body name only PGE₂, and reads the raster's "PGF₂X" label as PGF₂α; all 13 figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" (every one is a line-art or ball-and-stick illustration, not a photograph); every alt rewritten from the image rather than the source's thin placeholder text, with a longdesc added to the amino-acid-structure figure per the book's image-accessibility policy; the two figures whose file stems ("225_Peptide_Bond," "229_Nucleotides") repeat an earlier figure's name are captioned and alt-texted from their own titles and content ("The Shape of Proteins," "DNA") rather than the misleading file name, with a visible Source note on each; the Functional Groups table transcribed as a Markdown table, its spanning title row set as a caption line above the table, and its one image cell (the carboxyl structural formula) rewritten as the text formula —COOH in the same style as the table's other rows, with a visible Source note disclosing the substitution; the table's own cross-references to itself as "(see [link])" replaced with "the table above"; every in-text figure cross-reference ("shown in **a**", "(see [link])") replaced with "shown below"/"shown above" phrasing, since Hugo does not number figures; the section's one cross-chapter figure reference is kept as a live relative link to Section 2.4's own page; the module's only feature box, an Interactive Link, is kept with its external URL and descriptive link text in place of the source's bare "video"; its pooled Interactive Link Question is graded as a `selfcheck` — the module's own sentences on hydrolysis (breaking bonds via the donation of a water molecule) and on disaccharides splitting into monosaccharides via hydrolysis fix the printed key, so the model answer is the source solution (1 of 1 graded); the body's two instances of "pyramidine"/"pyramidines" are corrected in place to "pyrimidine"/"pyrimidines," and the Key terms glossary bullet's "thiamine" is corrected to "thymine," each with a visible Source note (the parent logs these as errata); the eight end-of-section Review Questions and two Critical Thinking Questions are adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints were added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall (`textin`) items (carbohydrate, lipid, macromolecule) were added from the glossary for the first objective, two more (functional group, triglyceride) for the second and fourth objectives, one (peptide bond) for the fifth, and one (DNA, with "deoxyribonucleic acid" accepted) for the sixth; two further author-written items were added from the module's own Functional Groups table, not the glossary — a multiple choice (hydroxyl) and a text-recall cloze (methyl) — to round out the second objective's thin source coverage; the triglyceride recall item is placed before the phospholipid multiple choice in the fourth objective's group, and the methyl cloze before the functional-group recall and the hydroxyl multiple choice in the second, so that no item's source-verbatim option list or glossary meaning immediately precedes the recall item it would key; the module has no References section, so none appears on this page.</small>
+<small>This section is adapted from [Anatomy and Physiology 2e, Section 2.5: Organic Compounds Essential to Human Functioning](https://openstax.org/books/anatomy-and-physiology-2e/pages/2-5-organic-compounds-essential-to-human-functioning) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP; the functional-groups paragraph carries a Source note because the source's table prints four rows (hydroxyl, carboxyl, amino, methyl) for the five groups the sentence names, and the table is transcribed as printed; the Other Important Lipids figure's alt names both drawn prostaglandins, PGF₂α and PGE₂, where the source caption and body name only PGE₂, and reads the raster's "PGF₂X" label as PGF₂α; all 13 figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" (every one is a line-art or ball-and-stick illustration, not a photograph); every alt rewritten from the image rather than the source's thin placeholder text, with a longdesc added to the amino-acid-structure figure per the book's image-accessibility policy and to the Other Important Lipids figure, transcribing the explanatory text and labels that image prints; the two figures whose file stems ("225_Peptide_Bond," "229_Nucleotides") repeat an earlier figure's name are captioned and alt-texted from their own titles and content ("The Shape of Proteins," "DNA") rather than the misleading file name (a file name is not reader-visible, so no note is printed); the Functional Groups table transcribed as a Markdown table, its spanning title row set as a caption line above the table, and its one image cell (the carboxyl structural formula) rewritten as the text formula —COOH in the same style as the table's other rows, with a visible Source note disclosing the substitution; the table's own cross-references to itself as "(see [link])" replaced with "the table above"; every in-text figure cross-reference ("shown in **a**", "(see [link])") replaced with "shown below"/"shown above" phrasing, since Hugo does not number figures; the section's one cross-chapter figure reference is kept as a live relative link to Section 2.4's own page; the module's only feature box, an Interactive Link, is kept with its external URL and descriptive link text in place of the source's bare "video"; its pooled Interactive Link Question stands as a prompt in its callout and is not graded (0 of 1 graded) — the printed key ("The water hydrolyses, or breaks, the glycosidic bond, forming two monosaccharides") needs two module sentences pieced together, the one on hydrolysis breaking bonds via a molecule of water and the one on disaccharides splitting into monosaccharides via hydrolysis, and no single sentence fixes it; the body's two instances of "pyramidine"/"pyramidines" are corrected in place to "pyrimidine"/"pyrimidines" as a one-word typo (the module's own glossary and its Review Question on uracil spell the term "pyrimidine"); the Key terms glossary bullet's "thiamine" (a different substance, vitamin B1) is corrected to "thymine," with a visible Source note; two figure captions have a missing period restored ("peptide bonds. R1 and R2") and a missing space restored ("the substrate. (a)"); the eight end-of-section Review Questions and two Critical Thinking Questions are adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints were added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall (`textin`) items (carbohydrate, lipid, macromolecule) were added from the glossary for the first objective, two more (functional group, triglyceride) for the second and fourth objectives, one (peptide bond) for the fifth, and one (DNA, with "deoxyribonucleic acid" accepted) for the sixth; the methyl cloze also accepts "methyl group," and the triglyceride recall item accepts "neutral fat," the name the triglyceride figure prints; two further author-written items were added from the module's own Functional Groups table, not the glossary — a multiple choice (hydroxyl) and a text-recall cloze (methyl) — to round out the second objective's thin source coverage; the triglyceride recall item is placed before the phospholipid multiple choice in the fourth objective's group, and the methyl cloze before the functional-group recall and the hydroxyl multiple choice in the second, so that no item's source-verbatim option list or glossary meaning immediately precedes the recall item it would key; the module has no References section, so none appears on this page; a corrected claim, with a visible inline Source note, restates the source's "Sulfur does not readily participate in hydrogen bonds, whereas all other amino acids do" as a contrast with "the side chains of many other amino acids," since this section itself says side chains can be polar or nonpolar and that hydrogen bonds between amino acids maintain every polypeptide's secondary structure (erratum 886).</small>

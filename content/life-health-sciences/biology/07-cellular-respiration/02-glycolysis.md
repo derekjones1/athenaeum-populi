@@ -36,7 +36,7 @@ Glycolysis begins with an energy investment phase which requires 2 ATP to phosph
 
 **Step 5**. In the fifth step, an isomerase transforms the dihydroxyacetone-phosphate into its isomer, glyceraldehyde-3-phosphate. Thus, the pathway will continue with two molecules of a glyceraldehyde-3-phosphate. At this point in the pathway, there is a net investment of energy from two ATP molecules in the breakdown of one glucose molecule.
 
-{{< mediafigure src="biology/Figure_07_02_01-0ee2" kind="diagram" alt="The five steps of the first half of glycolysis, drawn as a chain of chemical structures from glucose to two three-carbon molecules, with the enzyme catalyzing each step named above its arrow and the ATP spent at steps one and three shown as curved arrows." longdesc="A left-to-right chain of five labeled reaction steps, each numbered 1 through 5 in a yellow circle. Step 1: glucose (a six-membered ring) reacts with ATP, releasing ADP, catalyzed by hexokinase, to form glucose-6-phosphate. Step 2: glucose-6-phosphate is rearranged by phosphoglucose isomerase into fructose-6-phosphate, drawn as an open-chain structure. Step 3: fructose-6-phosphate reacts with a second ATP, releasing ADP, catalyzed by phosphofructokinase, to form fructose-1,6-bisphosphate, now carrying two phosphate groups. Step 4: fructose bisphosphate aldolase splits fructose-1,6-bisphosphate into two separate three-carbon branches. Step 5, shown with a double-headed arrow linking the two branches: triose phosphate isomerase interconverts the upper branch, dihydroxyacetone phosphate, with the lower branch, glyceraldehyde-3-phosphate." >}}
+{{< mediafigure src="biology/Figure_07_02_01-0ee2" kind="diagram" alt="The five steps of the first half of glycolysis, drawn as a chain of chemical structures from glucose to two three-carbon molecules, with the enzyme catalyzing each step named beside its arrow and the ATP spent at steps one and three shown as curved arrows." longdesc="A left-to-right chain of five labeled reaction steps, each numbered 1 through 5 in a yellow circle. Step 1: glucose (a six-membered ring) reacts with ATP, releasing ADP, catalyzed by hexokinase, to form glucose-6-phosphate. Step 2: glucose-6-phosphate is rearranged by phosphoglucose isomerase into fructose-6-phosphate, drawn as an open-chain structure. Step 3: fructose-6-phosphate reacts with a second ATP, releasing ADP, catalyzed by phosphofructokinase, to form fructose-1,6-bisphosphate, now carrying two phosphate groups. Step 4: fructose bisphosphate aldolase splits fructose-1,6-bisphosphate into two separate three-carbon branches. Step 5, shown with a pair of opposed arrows (one pointing down, one pointing up) linking the two branches: triose phosphate isomerase interconverts the upper branch, dihydroxyacetone phosphate, with the lower branch, glyceraldehyde-3-phosphate." >}}
 The first half of glycolysis uses two ATP molecules in the phosphorylation of glucose, which is then split into two three-carbon molecules.
 {{< /mediafigure >}}
 
@@ -46,7 +46,7 @@ So far, glycolysis has cost the cell two ATP molecules and produced two small, t
 
 **Step 6**. The sixth step in glycolysis (below) oxidizes the sugar (glyceraldehyde-3-phosphate), extracting high-energy electrons, which are picked up by the electron carrier NAD⁺, producing NADH. The sugar is then phosphorylated by the addition of a second phosphate group, producing 1,3-bisphosphoglycerate. Note that the second phosphate group does not require another ATP molecule.
 
-{{< mediafigure src="biology/Figure_07_02_02" kind="diagram" alt="The five steps of the second half of glycolysis, drawn as a chain of chemical structures from glyceraldehyde-3-phosphate to pyruvate, with the enzyme catalyzing each step named above its arrow and the ATP produced at steps seven and ten shown as curved arrows." longdesc="A chain of five labeled reaction steps, numbered 6 through 10 in yellow circles, running top to bottom and then right to left. Step 6, at top right: glyceraldehyde-3-phosphate reacts with NAD⁺ and inorganic phosphate, releasing NADH and H⁺, catalyzed by glyceraldehyde-3-phosphate dehydrogenase (doubled, since two three-carbon molecules pass through), to form 1,3-bisphosphoglycerate, now carrying two phosphate groups. Step 7: 1,3-bisphosphoglycerate reacts with ADP, releasing ATP, catalyzed by phosphoglycerate kinase, to form 3-phosphoglycerate. Step 8: phosphoglycerate mutase rearranges 3-phosphoglycerate into 2-phosphoglycerate, moving the remaining phosphate to the adjacent carbon. Step 9: enolase removes a water molecule from 2-phosphoglycerate, forming phosphoenolpyruvate (PEP). Step 10, at far left: PEP reacts with ADP, releasing ATP, catalyzed by pyruvate kinase, to form pyruvate." >}}
+{{< mediafigure src="biology/Figure_07_02_02" kind="diagram" alt="The five steps of the second half of glycolysis, drawn as a chain of chemical structures from glyceraldehyde-3-phosphate to pyruvate, with the enzyme catalyzing each step named beside its arrow and the ATP produced at steps seven and ten shown as curved arrows." longdesc="A chain of five labeled reaction steps, numbered 6 through 10 in yellow circles, running top to bottom and then right to left. Step 6, at top right: glyceraldehyde-3-phosphate reacts with NAD⁺ and inorganic phosphate, releasing NADH and H⁺, catalyzed by glyceraldehyde-3-phosphate dehydrogenase (doubled, since two three-carbon molecules pass through), to form 1,3-bisphosphoglycerate, now carrying two phosphate groups. Step 7: 1,3-bisphosphoglycerate reacts with ADP, releasing ATP, catalyzed by phosphoglycerate kinase, to form 3-phosphoglycerate. Step 8: phosphoglycerate mutase rearranges 3-phosphoglycerate into 2-phosphoglycerate, moving the remaining phosphate to the adjacent carbon. Step 9: enolase removes a water molecule from 2-phosphoglycerate, forming phosphoenolpyruvate (PEP). Step 10, at far left: PEP reacts with ADP, releasing ATP, catalyzed by pyruvate kinase, to form pyruvate." >}}
 The second half of glycolysis involves phosphorylation without ATP investment (step 6) and produces two NADH and four ATP molecules per glucose.
 {{< /mediafigure >}}
 
@@ -87,19 +87,31 @@ Glycolysis is the first pathway within the cytoplasm used in the breakdown of gl
 ### Describe the overall result in terms of molecules produced during the chemical breakdown of glucose by glycolysis
 
 {{< textin
-  question="The process of breaking glucose into two three-carbon molecules with the production of ATP and NADH is called ________."
-  answer="glycolysis"
-  hint="This is the section's own subject: the first pathway in the breakdown of glucose, and it takes place in the cytoplasm without using oxygen directly."
+  question="A process that does not use oxygen is described as ________."
+  answer="anaerobic"
+  accept="anaerobic process"
+  hint="Reread the section's opening paragraph."
 >}}
 
 {{< textin
   question="The three-carbon keto acid that is the end product of glycolysis, and that can be decarboxylated and oxidized to make acetyl CoA, is called ________."
   answer="pyruvate"
   accept="pyruvic acid"
-  hint="Two molecules of it are produced from each glucose molecule that enters the pathway."
+  hint="Reread the section's second paragraph, just before the overview figure."
 >}}
 
-{{< selfcheck question="Nearly all organisms on Earth carry out some form of glycolysis. How does this fact support or not support the assertion that glycolysis is one of the oldest metabolic pathways?" hint="Think about what it would mean for a pathway's distribution across the tree of life if that pathway had evolved only recently, in one lineage." >}}
+{{< multiplechoice
+  question="The first part of glycolysis prepares the six-carbon ring of glucose for cleavage into ________ three-carbon sugars."
+  answer="two"
+  hint="Reread the Summary's third sentence."
+>}}
+two
+three
+four
+six
+{{< /multiplechoice >}}
+
+{{< selfcheck question="Nearly all organisms on Earth carry out some form of glycolysis. How does this fact support or not support the assertion that glycolysis is one of the oldest metabolic pathways?" hint="Reread the section's opening paragraph and the start of the Summary." >}}
 If glycolysis evolved relatively late, it likely would not be as universal in organisms as it is. It probably evolved in very primitive organisms and persisted, with the addition of other pathways of carbohydrate metabolism that evolved later.
 ===CHECKS===
 if glycolysis evolved relatively late, it likely would not be as universal in organisms as it is
@@ -107,18 +119,12 @@ it probably evolved in very primitive organisms and persisted
 other pathways of carbohydrate metabolism evolved later
 {{< /selfcheck >}}
 
-{{< textin
-  question="The first part of glycolysis prepares the six-carbon ring of glucose for cleavage into ________ three-carbon sugars."
-  answer="two"
-  hint="The section's summary states how many three-carbon sugars the six-carbon ring is split into."
->}}
-
 ### Compare the output of glycolysis in terms of ATP molecules and NADH molecules produced
 
 {{< multiplechoice
   question="During the second half of glycolysis, what occurs?"
   answer="ATP is made."
-  hint="The first half of the pathway spends ATP to prime the sugar for cleavage; the second half's job is the opposite."
+  hint="Reread the opening paragraph of the section's second step-by-step heading."
 >}}
 ATP is used up.
 Fructose is split in two.
@@ -126,7 +132,18 @@ ATP is made.
 Glucose becomes fructose.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Because they lose their mitochondria during development, red blood cells cannot perform aerobic respiration; however, they do perform glycolysis in the cytoplasm. Why do all cells need an energy source, and what would happen if glycolysis were blocked in a red blood cell?" hint="Consider what ATP does for a cell's membrane pumps, and what a red blood cell's only ATP-producing pathway is." >}}
+{{< multiplechoice
+  question="Glycolysis produces a net gain of two ATP and two ________ molecules for the cell."
+  answer="NADH"
+  hint="Reread the parenthetical note in the first paragraph of Outcomes of Glycolysis."
+>}}
+NAD⁺
+NADH
+glucose
+ATP
+{{< /multiplechoice >}}
+
+{{< selfcheck question="Because they lose their mitochondria during development, red blood cells cannot perform aerobic respiration; however, they do perform glycolysis in the cytoplasm. Why do all cells need an energy source, and what would happen if glycolysis were blocked in a red blood cell?" hint="Reread the red blood cell sentences in the first paragraph of Outcomes of Glycolysis." >}}
 All cells must consume energy to carry out basic functions, such as pumping ions across membranes. A red blood cell would lose its membrane potential if glycolysis were blocked, and it would eventually die.
 ===CHECKS===
 all cells must consume energy to carry out basic functions, such as pumping ions across membranes
@@ -134,23 +151,17 @@ a red blood cell would lose its membrane potential if glycolysis were blocked
 it would eventually die
 {{< /selfcheck >}}
 
-{{< textin
+{{< multiplechoice
   question="Two ATP molecules are invested in the first half of glycolysis and ________ ATP molecules are formed by substrate phosphorylation during the second half."
   answer="four"
-  hint="The section's summary gives the count of ATP molecules formed by substrate phosphorylation in the second half."
+  hint="Reread the Summary's second-to-last sentence."
 >}}
-
-{{< multiplechoice
-  question="Glycolysis produces a net gain of two ATP and two ________ molecules for the cell."
-  answer="NADH"
-  hint="This is the other high-energy electron carrier the pathway reduces, alongside its net ATP gain."
->}}
-pyruvate
-NADH
-glucose
-ATP
+two
+three
+four
+six
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 7.2: Glycolysis](https://openstax.org/books/biology-2e/pages/7-2-glycolysis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" for all three (each is a schematic pathway illustration, not a photograph); the alt text for all three was rewritten from the source (the source alts for the two step-by-step figures ran 663 and 723 characters, spelling out each letter of "ATP"/"NADH" and using "dash" for hyphens) — each now gives a short summary of what the figure teaches, with the full step-by-step walk-through moved into a `longdesc`, added to each since none of their meanings is fully carried by its caption; the source's underline emphasis on "bi" in "fructose-1,6-bisphosphate" (a typographic cue about the bis- prefix, not a defining term) is dropped in favor of plain text; inline references to figures changed from the source's print numbers ("Figure 7.8," "Figure 7.9") to descriptive phrases ("below") since figures are not numbered here; the Link to Learning note is rendered as a callout with a descriptive link ("this interactive animation of glycolysis") in place of the source's bare "site"; the end-of-section Review Question and Critical Thinking Questions are adapted into the closing interactive Practice block (one multiple choice and two self-checks); two key-term recall items (glycolysis, pyruvate) are added from the glossary to give the first objective's group an auto-graded item, with "pyruvic acid" accepted for pyruvate since the section itself treats the acid and its salt form as the same answer; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and three summary-derived items added — a cloze textin on the number of three-carbon sugars from the first-half sentence (first objective), a cloze textin on the four ATP molecules formed in the second half, and a select-the-term multiple choice on the NADH molecules named in the pathway's net-gain sentence (both second objective) — to raise the second objective's group and the section as a whole to the practice floor.</small>
+<small>This section is adapted from [Biology 2e, Section 7.2: Glycolysis](https://openstax.org/books/biology-2e/pages/7-2-glycolysis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" for all three (each is a schematic pathway illustration, not a photograph); the alt text for all three was rewritten from the source (the source alts for the two step-by-step figures ran 663 and 723 characters, spelling out each letter of "ATP"/"NADH" and using "dash" for hyphens) — each now gives a short summary of what the figure teaches, with the full step-by-step walk-through moved into a `longdesc`, added to each since none of their meanings is fully carried by its caption; the source's underline emphasis on "bi" in "fructose-1,6-bisphosphate" (a typographic cue about the bis- prefix, not a defining term) is dropped in favor of plain text; inline references to figures changed from the source's print numbers ("Figure 7.8," "Figure 7.9") to descriptive phrases ("below") since figures are not numbered here; the Link to Learning note is rendered as a callout with a descriptive link ("this interactive animation of glycolysis") in place of the source's bare "site"; the end-of-section Review Question and Critical Thinking Questions are adapted into the closing interactive Practice block (one multiple choice and two self-checks); two key-term recall items (anaerobic, pyruvate) are added from the glossary to give the first objective's group an auto-graded item, with "pyruvic acid" accepted for pyruvate since the section itself treats the acid and its salt form as the same answer; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and three summary-derived items added — a cloze multiple choice on the number of three-carbon sugars from the first-half sentence (first objective), a cloze multiple choice on the four ATP molecules formed in the second half, and a select-the-term multiple choice on the NADH molecules named in the pathway's net-gain sentence (both second objective) — to raise the second objective's group and the section as a whole to the practice floor; the two number clozes are multiple choices rather than text entry, because a numeric answer is never graded as typed text here, each offering the numbers the Summary itself prints (two, three, four, six).</small>

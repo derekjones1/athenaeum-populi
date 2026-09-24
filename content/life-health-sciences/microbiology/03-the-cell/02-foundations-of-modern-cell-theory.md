@@ -63,12 +63,12 @@ In academia, plagiarism represents the theft of both individual thought and rese
   hint="Think back to the two tenets named at the very start of this section."
 >}}
 Cells form through crystallization, and cells are the fundamental units of organisms.
-All cells only come from other cells, and every cell contains a membrane-bound nucleus.
-Cells form through crystallization, and every cell contains a membrane-bound nucleus.
+All cells only come from other cells, and diseases may result from microbial infection.
+Cells form through crystallization, and diseases may result from microbial infection.
 All cells only come from other cells, and cells are the fundamental units of organisms.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What contributions did Rudolf Virchow and Robert Remak make to the development of the cell theory?" hint="Think about what each man published, and which of the two tenets of cell theory his publication is usually credited with." >}}
+{{< selfcheck question="What contributions did Rudolf Virchow and Robert Remak make to the development of the cell theory?" hint="Reread the last paragraph of The Origins of Cell Theory." >}}
 In 1852, Robert Remak published convincing evidence that cells are derived from other cells as a result of cell division. Three years later, Rudolf Virchow published an editorial essay entitled "Cellular Pathology," which popularized the concept of cell theory using the Latin phrase omnis cellula a cellula ("all cells arise from cells"), which is essentially the second tenet of modern cell theory.
 ===CHECKS===
 Robert Remak published convincing evidence that cells are derived from other cells as a result of cell division
@@ -88,7 +88,7 @@ Wallin's ideas regarding the endosymbiotic hypothesis were largely ignored for t
 
 Again, this hypothesis was not initially popular, but mounting genetic evidence due to the advent of DNA sequencing supported the **endosymbiotic theory**, which is now defined as the theory that mitochondria and chloroplasts arose as a result of prokaryotic cells establishing a symbiotic relationship within a eukaryotic host (shown below). With Margulis' initial endosymbiotic theory gaining wide acceptance, she expanded on the theory in her 1981 book *Symbiosis in Cell Evolution*. In it, she explains how endosymbiosis is a major driving factor in the evolution of organisms. More recent genetic sequencing and phylogenetic analysis show that mitochondrial DNA and chloroplast DNA are highly related to their bacterial counterparts, both in DNA sequence and chromosome structure. However, mitochondrial DNA and chloroplast DNA are reduced compared with nuclear DNA because many of the genes have moved from the organelles into the host cell's nucleus. Additionally, mitochondrial and chloroplast ribosomes are structurally similar to bacterial ribosomes, rather than to the eukaryotic ribosomes of their hosts. Last, the binary fission of these organelles strongly resembles the binary fission of bacteria, as compared with mitosis performed by eukaryotic cells. Since Margulis' original proposal, scientists have observed several examples of bacterial endosymbionts in modern-day eukaryotic cells. Examples include the endosymbiotic bacteria found within the guts of certain insects, such as cockroaches (A.E. Douglas, "The Microbial Dimension in Insect Nutritional Ecology," *Functional Ecology* 23 (2009): 38–47), and photosynthetic bacteria-like organelles found in protists (J.M. Jaynes and L.P. Vernon, "The Cyanelle of *Cyanophora paradoxa*: Almost a Cyanobacterial Chloroplast," *Trends in Biochemical Sciences* 7, no. 1 (1982): 22–24).
 
-{{< mediafigure src="microbiology/OSC_Microbio_03_02_Endosymbio" alt="A labeled diagram titled The Endosymbiotic Theory, showing a proto-eukaryote cell connected by arrows through three numbered steps: infoldings of its membrane give rise to a nucleus and endoplasmic reticulum; the resulting cell engulfs an aerobic bacterium that becomes a mitochondrion, producing a modern heterotrophic eukaryote; and a further branch shows the cell also engulfing a photosynthetic bacterium that becomes a chloroplast, producing a modern photosynthetic eukaryote." kind="diagram" longdesc="Reading left to right: a plain oval proto-eukaryote cell containing only DNA. Step 1: infoldings in the plasma membrane of the ancestral cell give rise to endomembrane components, including a nucleus and endoplasmic reticulum — the cell now shows a membrane-bound nucleus and folds of endoplasmic reticulum. Step 2: in a first endosymbiotic event, the ancestral eukaryote consumes an aerobic bacterium, drawn entering the cell and then labeled a mitochondrion once inside; the resulting cell is labeled a modern heterotrophic eukaryote. Step 3: in a second endosymbiotic event, the early eukaryote consumes a photosynthetic bacterium, drawn entering the cell and then labeled a chloroplast once inside, alongside the mitochondrion already present; the resulting cell is labeled a modern photosynthetic eukaryote." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_03_02_Endosymbio" alt="A labeled diagram titled The Endosymbiotic Theory, showing a proto-eukaryote cell connected by arrows through three numbered steps: infoldings of its membrane give rise to a nucleus and endoplasmic reticulum; the resulting cell engulfs an aerobic bacterium that becomes a mitochondrion, producing a modern heterotrophic eukaryote; and a further branch shows the cell also engulfing a photosynthetic bacterium that becomes a chloroplast, producing a modern photosynthetic eukaryote." kind="diagram" longdesc="Reading left to right: a plain oval proto-eukaryote cell containing only DNA. Step 1: infoldings in the plasma membrane of the ancestral cell give rise to endomembrane components, including a nucleus and endoplasmic reticulum — the cell now shows a membrane-bound nucleus and folds of endoplasmic reticulum. Step 2: in a first endosymbiotic event, the ancestral eukaryote consumes aerobic bacteria that evolve into mitochondria; the next cell has an orange aerobic bacterium, so labeled, entering at its lower right. From this cell the path forks. A downward arrow leads to a cell labeled modern heterotrophic eukaryote, which holds two small striped mitochondria, one labeled mitochondrion. An upward arrow numbered 3 leads to step 3: in a second endosymbiotic event, the early eukaryote consumes photosynthetic bacteria that evolve into chloroplasts; this cell already holds two mitochondria and has a green photosynthetic bacterium, so labeled, entering at its lower edge. A final arrow leads to a cell labeled modern photosynthetic eukaryote, holding two mitochondria and two green chloroplast-like ovals; no label on the drawing names the chloroplasts." >}}
 According to the endosymbiotic theory, mitochondria and chloroplasts are each derived from the uptake of bacteria. These bacteria established a symbiotic relationship with their host cell that eventually led to the bacteria evolving into mitochondria and chloroplasts.
 {{< /mediafigure >}}
 
@@ -97,15 +97,15 @@ According to the endosymbiotic theory, mitochondria and chloroplasts are each de
 {{< multiplechoice
   question="What does the modern endosymbiotic theory state?"
   answer="Mitochondria and chloroplasts arose as a result of prokaryotic cells establishing a symbiotic relationship within a eukaryotic host."
-  hint="Think about which two organelles this theory concerns and what kind of relationship it says gave rise to them."
+  hint="Reread the paragraph just above the proto-eukaryote diagram."
 >}}
 Disease originated from particles emanating from decomposing matter, such as that in sewage or cesspits.
 Mitochondria and chloroplasts arose as a result of prokaryotic cells establishing a symbiotic relationship within a eukaryotic host.
 Diseases may result from microbial infection.
-All cells only come from other cells, and cells are the fundamental units of organisms.
+Cells formed through crystallization, rather than cell division.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What evidence supports the endosymbiotic theory?" hint="Think about what genetic sequencing has shown about mitochondrial and chloroplast DNA, their ribosomes, and how these organelles divide." >}}
+{{< selfcheck question="What evidence supports the endosymbiotic theory?" hint="Reread the paragraph just above the proto-eukaryote diagram." >}}
 Genetic sequencing and phylogenetic analysis show that mitochondrial DNA and chloroplast DNA are highly related to their bacterial counterparts, both in DNA sequence and chromosome structure. Mitochondrial and chloroplast ribosomes are structurally similar to bacterial ribosomes, rather than to the eukaryotic ribosomes of their hosts. The binary fission of these organelles strongly resembles the binary fission of bacteria, as compared with mitosis performed by eukaryotic cells.
 ===CHECKS===
 mitochondrial DNA and chloroplast DNA are highly related to their bacterial counterparts
@@ -143,7 +143,7 @@ A few years later, Robert Koch (shown below) proposed a series of postulates (Ko
 
 **Check Your Understanding**
 
-{{< sortbins question="Compare and contrast the miasma theory of disease with the germ theory of disease." hint="Think about what each theory says causes disease and how it is thought to spread from person to person." >}}
+{{< sortbins question="Compare and contrast the miasma theory of disease with the germ theory of disease." hint="Reread the first two paragraphs of The Germ Theory of Disease and the Snow paragraph." >}}
 {"bins": ["Miasma theory", "Germ theory"],
  "items": [
   {"label": "particles emanating from decomposing matter cause disease", "bin": 0},
@@ -154,7 +154,7 @@ A few years later, Robert Koch (shown below) proposed a series of postulates (Ko
   {"label": "the Black Death was thought to originate from decomposing matter", "bin": 0}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="How did Joseph Lister's work contribute to the debate between the miasma theory and germ theory and how did this increase the success of medical procedures?" hint="Think about which earlier scientists' work Lister drew on, and what he began doing during surgery as a result." >}}
+{{< selfcheck question="How did Joseph Lister's work contribute to the debate between the miasma theory and germ theory and how did this increase the success of medical procedures?" hint="Reread the Lister paragraph in The Germ Theory of Disease." >}}
 Lister was familiar with the work of Semmelweis and Pasteur, so he insisted on handwashing and extreme cleanliness during surgery, and in 1867 he began using carbolic acid (phenol) spray disinfectant/antiseptic during surgery, further decreasing the incidence of postsurgical wound infections. His extremely successful efforts to reduce postsurgical infection caused his techniques to become a standard medical practice.
 ===CHECKS===
 Lister was familiar with the work of Semmelweis and Pasteur ... he insisted on handwashing and extreme cleanliness during surgery
@@ -197,10 +197,17 @@ The case continues in [Unique Characteristics of Prokaryotic Cells](/life-health
 
 ### Explain the key points of cell theory and the individual contributions of Hooke, Schleiden, Schwann, Remak, and Virchow
 
+{{< textin
+  question="The scientist who first described cells was ________."
+  answer="Robert Hooke"
+  accept="Hooke"
+  hint="Reread the first paragraph of The Origins of Cell Theory."
+>}}
+
 {{< multiplechoice
   question="Which of the following individuals did not contribute to the establishment of cell theory?"
   answer="Girolamo Fracastoro"
-  hint="This individual is associated instead with an early version of the germ theory of disease, proposed nearly three centuries before the others on this list did their work."
+  hint="Reread The Origins of Cell Theory."
 >}}
 Girolamo Fracastoro
 Matthias Schleiden
@@ -208,17 +215,10 @@ Robert Remak
 Robert Hooke
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The scientist who first described cells was ________."
-  answer="Robert Hooke"
-  accept="Hooke"
-  hint="This English scientist coined the term after observing thin sections of cork under a microscope of his own design in 1665."
->}}
-
 {{< multiplechoice
   question="How did the explanation of Virchow and Remak for the origin of cells differ from that of Schleiden and Schwann?"
   answer="Schleiden believed cells formed through crystallization, while Remak and Virchow showed that cells are derived from other cells by cell division."
-  hint="Think about what Schleiden believed caused new cells to form, and what Remak's evidence showed instead."
+  hint="Reread the Schleiden paragraph and the last paragraph of The Origins of Cell Theory."
 >}}
 Schleiden believed cells formed through crystallization, while Remak and Virchow showed that cells are derived from other cells by cell division.
 Schleiden believed cells are derived from other cells by cell division, while Remak and Virchow believed cells formed through crystallization.
@@ -228,10 +228,17 @@ Schwann believed cells formed through crystallization, while Schleiden showed th
 
 ### Explain the key points of endosymbiotic theory and cite the evidence that supports this concept
 
+{{< textin
+  question="________ states that mitochondria and chloroplasts, organelles found in many types of organisms, have their origins in bacteria."
+  answer="Endosymbiotic theory"
+  accept="endosymbiotic hypothesis"
+  hint="Reread the second bullet of the Summary."
+>}}
+
 {{< multiplechoice
   question="Whose proposal of the endosymbiotic theory of mitochondrial and chloroplast origin was ultimately accepted by the greater scientific community?"
   answer="Lynn Margulis"
-  hint="This American geneticist published her ideas in 1967, after the discovery of mitochondrial and chloroplast DNA revived a hypothesis that had been largely ignored for decades."
+  hint="Reread the paragraph that dates the discovery of mitochondrial and chloroplast DNA to the 1960s, and the paragraph after it."
 >}}
 Rudolf Virchow
 Ignaz Semmelweis
@@ -239,13 +246,7 @@ Lynn Margulis
 Theodor Schwann
 {{< /multiplechoice >}}
 
-{{< textin
-  question="________ states that mitochondria and chloroplasts, organelles found in many types of organisms, have their origins in bacteria."
-  answer="Endosymbiotic theory"
-  hint="This theory holds that these organelles began as free-living prokaryotes taken up by an ancestral eukaryotic host cell."
->}}
-
-{{< selfcheck question="Why are mitochondria and chloroplasts unable to multiply outside of a host cell?" hint="Think about what happened to much of the genome these organelles once carried on their own, and what genes they would need to reproduce independently." >}}
+{{< selfcheck question="Why are mitochondria and chloroplasts unable to multiply outside of a host cell?" hint="Reread the Wallin paragraph and the paragraph just above the proto-eukaryote diagram." >}}
 Modern genome sequencing work shows that much of the genome of mitochondria had been transferred to the host cell's nucleus, preventing the mitochondria from being able to live on their own. Because mitochondrial DNA and chloroplast DNA are reduced compared with nuclear DNA — many of their genes having moved into the host cell's nucleus — the organelles lack the genes they would need to multiply independently of the host cell.
 ===CHECKS===
 much of the genome of mitochondria had been transferred to the host cell's nucleus
@@ -258,7 +259,7 @@ mitochondrial DNA and chloroplast DNA are reduced compared with nuclear DNA
 {{< multiplechoice
   question="Which of the following developed a set of postulates for determining whether a particular disease is caused by a particular pathogen?"
   answer="Robert Koch"
-  hint="These postulates, associated with this scientist's name, let him and his colleagues definitively identify the causative pathogens of diseases such as anthrax, tuberculosis, and cholera."
+  hint="Reread the last paragraph before the two-portrait figure near the end of The Germ Theory of Disease."
 >}}
 John Snow
 Robert Koch
@@ -269,16 +270,17 @@ Louis Pasteur
 {{< textin
   question="John Snow is known as the Father of ________."
   answer="epidemiology"
-  hint="Snow's tracing of London's cholera outbreaks to two contaminated water sources represents the first known study of this kind."
+  hint="Reread the Snow paragraph in The Germ Theory of Disease."
 >}}
 
 {{< textin
   question="The ________ theory states that disease may originate from proximity to decomposing matter and is not due to person-to-person contact."
   answer="miasma"
-  hint="The ancient Greeks proposed this theory; it held that particles from sources such as sewage or cesspits caused disease in anyone nearby."
+  accept="miasma theory"
+  hint="Reread the first paragraph of The Germ Theory of Disease."
 >}}
 
-{{< selfcheck question="What were the differences in mortality rates due to puerperal fever that Ignaz Semmelweis observed? How did he propose to reduce the occurrence of puerperal fever? Did it work?" hint="Think about the two mortality rates Semmelweis compared, what he asked physicians and students to do between patients, and what happened to the higher rate afterward." >}}
+{{< selfcheck question="What were the differences in mortality rates due to puerperal fever that Ignaz Semmelweis observed? How did he propose to reduce the occurrence of puerperal fever? Did it work?" hint="Reread the two Semmelweis paragraphs." >}}
 Semmelweis observed that people who gave birth in wards staffed by physicians and medical students died of puerperal fever at a 10%–20% mortality rate, compared with a 1% mortality rate in wards staffed by midwives. He proposed that the number of cases could be reduced if physicians and medical students washed their hands with chlorinated lime water before and after examining every patient. When this practice was implemented, the maternal mortality rate in people cared for by physicians dropped to the same 1% rate observed among people cared for by midwives, so it worked.
 ===CHECKS===
 people who gave birth in wards staffed by physicians and medical students ... 10%–20% mortality rate ... 1% mortality rate [for midwives]
@@ -286,7 +288,7 @@ washed their hands with chlorinated lime water before and after examining every 
 the maternal mortality rate ... dropped to the same 1% mortality rate observed among people cared for by midwives
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why was the work of Snow so important in supporting the germ theory?" hint="Think about what kind of study Snow's work represents for the first time, and what it demonstrated about how disease spreads that the prevailing theory of the day could not explain." >}}
+{{< selfcheck question="Why was the work of Snow so important in supporting the germ theory?" hint="Reread the Snow paragraph in The Germ Theory of Disease." >}}
 Snow's work is influential in that it represents the first known epidemiological study, and it resulted in the first known public health response to an epidemic. The work of both Semmelweis and Snow clearly refuted the prevailing miasma theory of the day, showing that disease is not only transmitted through the air but also through contaminated items.
 ===CHECKS===
 represents the first known epidemiological study
@@ -296,4 +298,4 @@ disease is not only transmitted through the air but also through contaminated it
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 3.2: Foundations of Modern Cell Theory](https://openstax.org/books/microbiology/pages/3-2-foundations-of-modern-cell-theory) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with `kind="diagram"` set on the three drawn figures (Hooke's cork illustration, the endosymbiotic-theory schematic, and the germ-theory timeline, the last because its dated milestone track is itself drawn even though five entries carry a small photo or drawing) and `kind="photo"` on the four portrait and radiograph figures, overriding the media manifest's JPEG-based guess; alts rewritten for all seven figures to describe what is visibly drawn or photographed, since the source alt for the endosymbiotic-theory figure garbles "plasma membrane" as "plasm amembrane" and misprints "now" as "how" in its Step 2 sentence (both reported as source defects); longdesc added for the endosymbiotic-theory diagram and the germ-theory timeline, walking each in reading order; the eleven footnoted citations condensed into seven inline parenthetical citations placed after the sentences they support (grouped where several consecutive footnotes support one sentence boundary) (none of them carries an access URL or a DOI); the Eye on Ethics box rendered as a callout, with its figure kept inside the callout at its source position; three of the six Check Your Understanding bullets (one from each of the three boxes) rendered as body self-checks, with model answers and rubrics assembled from this section's own preceding text; the Clinical Focus *Part 2* box's closing links replaced with a plain sentence noting that the case continues in Section 3.3 and began in Section 3.1, both of which exist; the cross-reference to Pasteur's swan-neck flask figure in Section 3.1 rendered as a link to that section page, since it exists; the cross-reference to *How Pathogens Cause Disease* (m58867, a later, unauthored chapter) kept as plain italicized text naming the module; the end-of-section Multiple Choice and Fill in the Blank questions keep the source's own keys, options, and order; model answers for one Short Answer and two Critical Thinking questions are written from this section's own text, since the source prints no answer key for either set; one summary-derived cloze `textin` ("Endosymbiotic theory states that mitochondria and chloroplasts...") fills out the second objective group after its own Short Answer question ("What evidence exists that supports the endosymbiotic theory?") was dropped as a near-duplicate of the body Check Your Understanding bullet asking the same thing, and is named here rather than used in the Practice block; key terms compiled from the module's two defined terms, both taken from the book's Glossary appendix (none sentence-derived). One Short Answer question and three Check Your Understanding questions are graded from the module's own sentences rather than answered in prose; the source prints no key for them: the "key points of cell theory" and "what does the endosymbiotic theory state" Check Your Understanding bullets became `multiplechoice` items keyed by the section's own tenet and theory statements, the "compare and contrast the miasma theory ... with the germ theory" Check Your Understanding bullet became a sort-into-bins item over the module's own statements of each theory, and the Practice group's "How did the explanation of Virchow and Remak ... differ from that of Schleiden and Schwann?" Short Answer question (`fs-id1172100616952`) became a `multiplechoice` item keyed by the section's own crystallization-versus-cell-division sentences. John Snow's cholera study is dated 1854 rather than the source prose's 1848, matching the module's own timeline figure, with a visible Source note (erratum 379).</small>
+<small>This section is adapted from [Microbiology, Section 3.2: Foundations of Modern Cell Theory](https://openstax.org/books/microbiology/pages/3-2-foundations-of-modern-cell-theory) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with `kind="diagram"` set on the three drawn figures (Hooke's cork illustration, the endosymbiotic-theory schematic, and the germ-theory timeline, the last because its dated milestone track is itself drawn even though five entries carry a small photo or drawing) and `kind="photo"` on the four portrait and radiograph figures, overriding the media manifest's JPEG-based guess; alts rewritten for all seven figures to describe what is visibly drawn or photographed, since the source alt for the endosymbiotic-theory figure garbles "plasma membrane" as "plasm amembrane" and misprints "now" as "how" in its Step 2 sentence (both reported as source defects); longdesc added for the endosymbiotic-theory diagram and the germ-theory timeline, walking each in reading order; the eleven footnoted citations condensed into seven inline parenthetical citations placed after the sentences they support (grouped where several consecutive footnotes support one sentence boundary) (none of them carries an access URL or a DOI); the Eye on Ethics box rendered as a callout, with its figure kept inside the callout at its source position; three of the six Check Your Understanding bullets (one from each of the three boxes) rendered as body self-checks, with model answers and rubrics assembled from this section's own preceding text; the Clinical Focus *Part 2* box's closing links replaced with a plain sentence noting that the case continues in Section 3.3 and began in Section 3.1, both of which exist; the cross-reference to Pasteur's swan-neck flask figure in Section 3.1 rendered as a link to that section page, since it exists; the cross-reference to *How Pathogens Cause Disease* (m58867, a later, unauthored chapter) kept as plain italicized text naming the module; the end-of-section Multiple Choice and Fill in the Blank questions keep the source's own keys, options, and order, and the "Robert Hooke" Fill in the Blank item is placed first in its group, ahead of the "did not contribute to the establishment of cell theory" Multiple Choice item whose options print its key; model answers for one Short Answer and two Critical Thinking questions are written from this section's own text, since the source prints no answer key for either set; one summary-derived cloze `textin` ("Endosymbiotic theory states that mitochondria and chloroplasts...") fills out the second objective group after its own Short Answer question ("What evidence exists that supports the endosymbiotic theory?") was dropped as a near-duplicate of the body Check Your Understanding bullet asking the same thing, and is named here rather than used in the Practice block; key terms compiled from the module's two defined terms, both taken from the book's Glossary appendix (none sentence-derived). One Short Answer question and three Check Your Understanding questions are graded from the module's own sentences rather than answered in prose; the source prints no key for them: the "key points of cell theory" and "what does the endosymbiotic theory state" Check Your Understanding bullets became `multiplechoice` items keyed by the section's own tenet and theory statements, their distractors pairing or listing the module's own statements of Schleiden's crystallization belief and of the miasma and germ theories, the "compare and contrast the miasma theory ... with the germ theory" Check Your Understanding bullet became a sort-into-bins item over the module's own statements of each theory, and the Practice group's "How did the explanation of Virchow and Remak ... differ from that of Schleiden and Schwann?" Short Answer question (`fs-id1172100616952`) became a `multiplechoice` item keyed by the section's own crystallization-versus-cell-division sentences. John Snow's cholera study is dated 1854 rather than the source prose's 1848, matching the module's own timeline figure, with a visible Source note (erratum 379).</small>

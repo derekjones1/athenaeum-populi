@@ -68,7 +68,7 @@ A fungal mycelium. The mycelium of the fungus *Neotestudina rosati* can be patho
 
 Most fungal hyphae are divided into separate cells by *endwalls* called **septa** (singular, **septum**) (pictured below, a and c). In most phyla of fungi, tiny holes in the septa allow for the rapid flow of nutrients and small molecules from cell to cell along the hypha. They are described as *perforated septa*. The hyphae in bread molds (which belong to the Phylum Zygomycota) are not separated by septa. Instead, they are formed by large cells containing many nuclei (multinucleate), an arrangement described as *coenocytic hyphae* (pictured below, b).
 
-{{< mediafigure src="biology/Figure_24_01_04abcf" alt="Three-panel figure: (a) a drawing of septated hyphae, each rectangular cell holding its own dark dot (nucleus) and joined end to end in two branching filaments; (b) a drawing of coenocytic hyphae, similar branching filaments but undivided by any cross-walls, with several dots (nuclei) scattered freely inside the shared cytoplasm; (c) a light micrograph of septated hyphae from Phialophora richardsiae, showing branching threadlike filaments with visible cross-walls, alongside a 5 µm scale bar." longdesc="Panel (a) draws two branching chains of rectangular cells; each cell is outlined separately with its own dark central dot representing a nucleus, and thin lines mark the septum, or cross-wall, between adjacent cells. Panel (b), drawn at the same scale and style, shows similarly branching filaments with no internal cross-walls at all — the outline is one continuous tube — and several dark dots (nuclei) sit loose inside the shared cytoplasm rather than one per cell. Panel (c) is a light micrograph of real hyphae: several long, branching, threadlike filaments cross the field at different angles, each showing faint septa as darker cross-bands, with a 5 µm scale bar at lower right for scale." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_24_01_04abcf" alt="Three-panel figure: (a) a drawing of septated hyphae, each rectangular cell holding its own dark dot (nucleus) and joined end to end in two branching filaments; (b) a drawing of coenocytic hyphae, similar branching filaments but undivided by any cross-walls, with several dots (nuclei) scattered freely inside the shared cytoplasm; (c) a light micrograph of septated hyphae from Phialophora richardsiae, showing a long hypha with many short, cross-walled side branches, alongside a 5 µm scale bar." longdesc="Panel (a) draws two branching chains of rectangular cells; each cell is outlined separately with its own dark central dot representing a nucleus, and thin lines mark the septum, or cross-wall, between adjacent cells. Panel (b), drawn at the same scale and style, shows similarly branching filaments with no internal cross-walls at all — the outline is one continuous tube — and several dark dots (nuclei) sit loose inside the shared cytoplasm rather than one per cell. Panel (c) is a light micrograph of real hyphae: one long, dark hypha runs across the lower part of the field and bears many short side branches, pale and cross-walled, several ending in small flared, funnel-shaped tips; a fainter hypha crosses the upper left, and a 5 µm scale bar sits at lower right." kind="diagram" >}}
 Fungal hyphae. Fungal hyphae may be (a) septated or (b) coenocytic (coeno- = “common”; -cytic = “cell”) with many nuclei present in a single hypha. A bright field light micrograph of (c) *Phialophora richardsiae* shows septa that divide the hyphae. (credit c: modification of work by Dr. Lucille Georg, CDC; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
@@ -88,7 +88,7 @@ Fungi reproduce sexually and/or asexually. Some fungi reproduce both sexually an
 
 In both sexual and asexual reproduction, fungi produce spores that disperse from the parent organism by either floating on the wind or hitching a ride on an animal. Fungal spores are smaller and lighter than plant seeds. For example, the giant puffball mushroom bursts open and releases trillions of spores in a massive cloud of what looks like finely particulate dust. The huge number of spores released increases the likelihood of landing in an environment that will support growth (pictured below).
 
-{{< mediafigure src="biology/Figure_24_01_05abf" alt="Two-panel figure: (a) a nighttime photo of a round, white puffball mushroom sitting in grass, its surface torn open in two places; (b) a black-and-white line drawing of a puffball seen from outside, its top ruptured open and a cloud of dots (spores) drifting upward from the opening." longdesc="Panel (a) is a photograph of a smooth, round, off-white puffball resting on dark grass, with two torn openings exposing paler tissue beneath the outer skin. Panel (b) is a pen-and-ink drawing of a puffball drawn as a rounded sac atop a short stalk, both shaded with fine hatched lines; the top of the sac is torn open in a jagged crown, and a scatter of small dots representing spores rises from the opening into the space above the drawing." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_24_01_05abf" alt="Two-panel figure: (a) a photo of a round, white puffball mushroom sitting in dark grass, its surface torn open in two places; (b) a black-and-white line drawing of a puffball seen from outside, its top ruptured open and a cloud of dots (spores) drifting upward from the opening." longdesc="Panel (a) is a photograph of a smooth, round, off-white puffball resting on dark grass, with two torn openings exposing paler tissue beneath the outer skin. Panel (b) is a pen-and-ink drawing of a puffball drawn as a rounded sac atop a short stalk, both shaded with fine hatched lines; the top of the sac is torn open in a jagged crown, and a scatter of small dots representing spores rises from the opening into the space above the drawing." kind="diagram" >}}
 Puffball and spores. The (a) giant puffball mushroom releases (b) a cloud of spores when it reaches maturity. (credit a: modification of work by Roger Griffith; credit b: modification of work by Pearson Scott Foresman, donated to the Wikimedia Foundation)
 {{< /mediafigure >}}
 
@@ -155,7 +155,7 @@ Fungi are eukaryotic organisms that appeared on land more than 450 million years
 {{< multiplechoice
   question="Which polysaccharide is usually found in the cell wall of fungi?"
   answer="chitin"
-  hint="This polysaccharide is also found in the exoskeletons of arthropods such as insects."
+  hint="Reread the opening paragraph's list of the traits fungi share with animals."
 >}}
 starch
 glycogen
@@ -166,7 +166,7 @@ cellulose
 {{< multiplechoice
   question="Which of these organelles is not found in a fungal cell?"
   answer="chloroplast"
-  hint="This organelle carries the photosynthetic pigments that fungi, like animals, lack."
+  hint="Reread the summary's sentence on what fungi contain neither of."
 >}}
 chloroplast
 nucleus
@@ -193,11 +193,17 @@ animals and fungi store polysaccharides as glycogen, while plants store them as 
 {{< textin
   question="Fungi that require oxygen to survive, such as humans do, are called ________."
   answer="obligate aerobes"
-  accept="obligate aerobe"
   hint="This is the opposite of a fungus that can only respire without oxygen."
 >}}
 
 ### Describe the composition of the mycelium
+
+{{< textin
+  question="A single fungal filament composed of one or more cells is called a ________."
+  answer="hypha"
+  accept="hyphae"
+  hint="This structure can be divided into cells by septa, or left undivided as one continuous tube."
+>}}
 
 {{< multiplechoice
   question="The wall dividing individual cells in a fungal filament is called a"
@@ -209,13 +215,6 @@ hypha
 mycelium
 septum
 {{< /multiplechoice >}}
-
-{{< textin
-  question="A single fungal filament composed of one or more cells is called a ________."
-  answer="hypha"
-  accept="hyphae"
-  hint="This structure can be divided into cells by septa, or left undivided as one continuous tube."
->}}
 
 {{< textin
   question="A single hypha that lacks septa and contains many nuclei is called a ________ hypha."
@@ -260,7 +259,7 @@ having a large surface area increases the amount of digested molecules that are 
 {{< multiplechoice
   question="During sexual reproduction, a homothallic mycelium contains"
   answer="both mating types"
-  hint="The prefix homo- means same — think about what that implies for the mating types present."
+  hint="Reread the sentence in the sexual-reproduction discussion that contrasts homothallic and heterothallic mycelia."
 >}}
 all septated hyphae
 all haploid nuclei
@@ -271,7 +270,7 @@ none of the above
 {{< multiplechoice
   question="The life cycles of perfect fungi are most similar to which other organism?"
   answer="Haploid-dominant green algae"
-  hint="The generalized fungal life cycle spends most of its time in the haploid state, with only a brief diploid zygote stage — think about which organism shares that same pattern."
+  hint="Trace the generalized fungal life-cycle diagram in the Reproduction discussion and compare its stages with each option."
 >}}
 Hydra that undergo asexual budding
 Diploid-dominant pea plants
@@ -301,4 +300,4 @@ increases the odds of developing new adaptations better suited to a changed envi
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 24.1: Characteristics of Fungi](https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures (Figure_24_01_04abcf, the septated/coenocytic hyphae drawing, and Figure_24_01_05abf, the puffball) re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection, since each pairs a photograph with a drawing that carries the teaching; a longdesc added to those two figures and to the generalized life-cycle diagram (Figure_B24_01_07), whose panel drawings, arrows, and stage labels are not carried by their one-line captions; the nine bare parenthetical figure cross-references with no source link text rendered as "(pictured below)" (eight) and "(pictured above)" (one), since figures are not numbered here; the life-cycle drawing's own Plasmogamy label is misspelled "diffrent" in the artwork and the longdesc quotes it as "different"; the career note and the interactive note rendered as, respectively, a Career Connection callout and a Link to Learning callout with descriptive link text; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and nine key-term recall items (yeast, obligate aerobes, hypha, coenocytic hypha, mycelium, saprobe, haustoria, plasmogamy, karyogamy) added from the glossary.</small>
+<small>This section is adapted from [Biology 2e, Section 24.1: Characteristics of Fungi](https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures (Figure_24_01_04abcf, the septated/coenocytic hyphae drawing, and Figure_24_01_05abf, the puffball) re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection, since each pairs a photograph with a drawing that carries the teaching; a longdesc added to those two figures and to the generalized life-cycle diagram (Figure_B24_01_07), whose panel drawings, arrows, and stage labels are not carried by their one-line captions; the nine bare parenthetical figure cross-references with no source link text rendered as "(pictured below)" (eight) and "(pictured above)" (one), since figures are not numbered here; the life-cycle drawing's own Plasmogamy label is misspelled "diffirent" in the artwork and the longdesc quotes it as "different"; the career note and the interactive note rendered as, respectively, a Career Connection callout and a Link to Learning callout with descriptive link text; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Critical Thinking Questions run in the order 2, 3, 1 of the source's numbering; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and nine key-term recall items (yeast, obligate aerobes, hypha, coenocytic hypha, mycelium, saprobe, haustoria, plasmogamy, karyogamy) added from the glossary.</small>

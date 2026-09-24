@@ -28,7 +28,7 @@ Both seeds and pollen distinguish seed plants from seedless vascular plants. The
 
 Both adaptations expanded the colonization of land begun by the bryophytes and their ancestors. Fossils place the earliest distinct seed plants at about 350 million years ago. The first reliable record of gymnosperms dates their appearance to the transition of Devonian to Carboniferous period, about 319 million years ago (figure below). Gymnosperms were preceded by progymnosperms, the forerunners of the naked seed plants, which arose about 380–390 million years ago. *(Source note: the source calls progymnosperms "the first naked seed plants" and in the next sentence says they reproduced like ferns by releasing spores, so they are described here as forerunners of the seed plants rather than seed plants.)* *Progymnosperms* were a transitional group of plants that superficially resembled conifers (cone bearers) because they produced wood from the secondary growth of the vascular tissues; however, they still reproduced like ferns, releasing spores into the environment. At least some species were heterosporous. Progymnosperms, like the extinct *Archaeopteris* (not to be confused with the ancient bird *Archaeopteryx*), dominated the forests of the late Devonian period. However, by the early (Triassic, c. 240 MYA) and middle (Jurassic, c. 205 MYA) Mesozoic era, the landscape was dominated by the true gymnosperms. Angiosperms surpassed gymnosperms by the middle of the Cretaceous (c. 100 MYA) in the late Mesozoic era, and today are the most abundant and biologically diverse plant group in most terrestrial biomes.
 
-{{< mediafigure src="biology/Figure_B26_01_09" kind="diagram" eager="true" alt="A geologic time table with four columns — eon, era, period, and millions of years ago — running from the Hadean at the bottom to the Quaternary at top, with five plant-group labels positioned beside the periods in which each group is thought to have evolved." longdesc="Read top (most recent) to bottom (oldest). The Phanerozoic eon spans three eras. The Cenozoic era lists the Quaternary period (boundary 2.6 million years ago), the Neogene (23), and the Paleogene (66). The Mesozoic era lists the Cretaceous (138) — labeled 'Angiosperms' to its right — the Jurassic (205), and the Triassic (250). The Paleozoic era lists the Permian (290), the Carboniferous (319) — labeled 'Gymnosperms' and, beneath it, 'Pterophytes,' both beside the 319 tick at the Carboniferous–Devonian boundary — the Devonian (410), the Silurian (435) — labeled 'Lycophytes' — the Ordovician (500) — labeled 'Liverworts and Mosses,' spanning the Ordovician–Cambrian boundary — and the Cambrian (540). Below the Phanerozoic, the Proterozoic eon (its era column listing the Late, Middle, and Early Proterozoic, with no period column) reaches back to 2,500 million years ago, and the Archean eon (Late, Middle, and Early Archean) reaches back to roughly 3,800 million years ago. The bottom row, the Hadean eon, spans the full width of the table with no era or period subdivision." >}}
+{{< mediafigure src="biology/Figure_B26_01_09" kind="diagram" eager="true" alt="A geologic time table with four columns — eon, era, period, and millions of years ago — running from the Hadean at the bottom to the Quaternary at top, with five plant-group labels positioned beside the periods in which each group is thought to have evolved." longdesc="Read top (most recent) to bottom (oldest). The Phanerozoic eon spans three eras. The Cenozoic era lists the Quaternary period (boundary 2.6 million years ago), the Neogene (23), and the Paleogene (66). The Mesozoic era lists the Cretaceous (138) — labeled 'Angiosperms' to its right — the Jurassic (205), and the Triassic (250). The Paleozoic era lists the Permian (290), the Carboniferous (319) — labeled 'Gymnosperms' beside the middle of the Carboniferous row and, just beneath it, 'Pterophytes' beside the 319 tick at the Carboniferous–Devonian boundary — the Devonian (410), the Silurian (435) — labeled 'Lycophytes' — the Ordovician (500) — labeled 'Liverworts and Mosses,' spanning the Ordovician–Cambrian boundary — and the Cambrian (540). Below the Phanerozoic, the Proterozoic eon (its era column listing the Late, Middle, and Early Proterozoic, with no period column) reaches back to 2,500 million years ago, and the Archean eon (Late, Middle, and Early Archean) reaches back to roughly 3,800 million years ago (printed '3800?'). The bottom row, the Hadean eon, spans the eon, era, and period columns with no era or period subdivision." >}}
 Plant timeline. Various plant species evolved in different eras. (credit: modification of work by United States Geological Survey)
 {{< /mediafigure >}}
 
@@ -79,7 +79,7 @@ Following fertilization of the egg, the ovule grows into a seed. The surrounding
 
 All living organisms display patterns of relationships derived from their evolutionary history. Phylogeny is the science that describes the relative connections between organisms, in terms of ancestral and descendant species. Phylogenetic trees, such as the plant evolutionary history shown below, are tree-like branching diagrams that depict these relationships. Species are found at the tips of the branches. Each branching point, called a node, is the point at which a single taxonomic group (taxon), such as a species, separates into two or more species.
 
-{{< mediafigure src="biology/Figure_B26_01_07" kind="diagram" alt="A color-coded cladogram of plant evolution running left to right from an ancestral green-algae root to modern lineages, each major clade set off in its own colored band with its member taxa named to the right." longdesc="Read left to right. A gray node labeled 'Ancestral green algae' splits into an upper (yellow) branch and a lower branch. The upper branch leads to two tips, top to bottom: Cholechaetes (green algae) and Charophytes (green algae) — neither belongs to the land-plant clade. The lower branch drops to a purple node labeled 'Embryophytes,' which splits into a top branch to Marchantiophyta (liverworts) and a further purple split into Anthocerotophyta (hornworts) and Bryopsida (mosses); these three tips are bracketed together as 'Bryophytes.' The remaining lineage (green) splits into Aglaophyton (extinct), then again into Rhyniopsida (extinct), before reaching the node where the tree turns red. That red branch leads into the 'Lycophytes' clade of six tips: Zosterophyllopsida (extinct), drawn at the bottom, branches off first; the rest form a nested ladder, top to bottom, of Drepanophycales (extinct), Lycopodiaceae (club mosses), Protolepidodendrales (extinct), and finally the pair Selaginellales (spike mosses) and Isoetales (quillworts). The remaining lineage (blue) first splits off Psilophyton (extinct), the top tip of the 'Pterophytes' clade; its other branch splits once more into the pair Sphenopsids (horsetails) and Pteridophyta (ferns) on one side and, at the very bottom of the tree (orange), the 'Spermatophytes' clade on the other, which splits into Gymnosperms above Angiosperms — so the seed plants are drawn as nested within the pterophyte lineage, sister to horsetails plus ferns." >}}
+{{< mediafigure src="biology/Figure_B26_01_07" kind="diagram" alt="A color-coded cladogram of plant evolution running left to right from an ancestral green-algae root to modern lineages, each major clade set off in its own colored band with its member taxa named to the right." longdesc="Read left to right. A short gray stem labeled 'Ancestral green algae' meets a single vertical bar from which three lineages leave at once, with no order of branching shown among them: two yellow lines run to the top two tips, Cholechaetes (green algae) and Charophytes (green algae) — neither belongs to the land-plant clade — and the third, purple line drops to a node labeled 'Embryophytes,' which splits into a top branch to Marchantiophyta (liverworts) and a further purple split into Anthocerotophyta (hornworts) and Bryopsida (mosses); these three tips are bracketed together as 'Bryophytes.' The remaining lineage (green) splits into Aglaophyton (extinct), then again into Rhyniopsida (extinct), before reaching the node where the tree turns red. That red branch leads into the 'Lycophytes' clade of six tips: Zosterophyllopsida (extinct), drawn at the bottom, branches off first; the rest form a nested ladder, top to bottom, of Drepanophycales (extinct), Lycopodiaceae (club mosses), Protolepidodendrales (extinct), and finally the pair Selaginellales (spike mosses) and Isoetales (quillworts). The remaining lineage (blue) first splits off Psilophyton (extinct), the top tip of the 'Pterophytes' clade; its other branch splits once more into the pair Sphenopsids (horsetails) and Pteridophyta (ferns) on one side and, at the very bottom of the tree (orange), the 'Spermatophytes' clade on the other, which splits into Gymnosperms above Angiosperms — so the seed plants are drawn as nested within the pterophyte lineage, sister to horsetails plus ferns." >}}
 Plant phylogeny. This phylogenetic tree shows the evolutionary relationships of plants.
 {{< /mediafigure >}}
 
@@ -109,10 +109,16 @@ In the gymnosperms, which appeared during the drier Permian period and became th
 
 ### Describe the two major innovations that allowed seed plants to reproduce in the absence of water
 
+{{< textin
+  question="The structure containing an embryo, storage tissue, and a protective coat is called a ________."
+  answer="seed"
+  hint="This structure lets a plant disperse its next generation through both space and time, remaining dormant until conditions favor growth."
+>}}
+
 {{< multiplechoice
   question="Besides the seed, what other major structure diminishes a plant's reliance on water for reproduction?"
   answer="pollen"
-  hint="This male gametophyte structure is encased in a protective coat and can travel far from the parent sporophyte, spreading the plant's genes without depending on water."
+  hint="Reread this section's summary, at its sentence on the two major innovations."
 >}}
 flower
 fruit
@@ -128,18 +134,12 @@ allowed them to expand their range onto dry land
 allowed them to survive drought conditions
 {{< /selfcheck >}}
 
-{{< textin
-  question="The structure containing an embryo, storage tissue, and a protective coat is called a ________."
-  answer="seed"
-  hint="This structure lets a plant disperse its next generation through both space and time, remaining dormant until conditions favor growth."
->}}
-
 ### Explain when seed plants first appeared and when gymnosperms became the dominant plant group
 
 {{< multiplechoice
   question="In which of the following geological periods would gymnosperms dominate the landscape?"
   answer="Triassic"
-  hint="Giant fern trees dominated the wet period just before this one; by this period the climate had turned dry, and true gymnosperms had overtaken the ferns."
+  hint="Reread this section's summary, at its sentence on when gymnosperms appeared and when they became dominant."
 >}}
 Carboniferous
 Permian
@@ -156,7 +156,7 @@ Eocene (present)
 {{< textin
   question="The Greek-derived term for a seed plant — literally 'seed' plus 'plant' — is a ________."
   answer="spermatophyte"
-  hint="Every plant in this category is heterosporous, producing separate megaspores and microspores."
+  hint="Reread the opening paragraph of this section."
 >}}
 
 ### Discuss the purpose of pollen grains and seeds
@@ -164,7 +164,7 @@ Eocene (present)
 {{< multiplechoice
   question="Seed plants are ________."
   answer="all heterosporous"
-  hint="Every one of them produces two distinct spore types without exception, unlike the lower vascular plants, which mostly produce just one."
+  hint="Reread the opening paragraph of this section, on the types of spores plants produce."
 >}}
 all homosporous
 mostly homosporous with some heterosporous
@@ -175,7 +175,7 @@ all heterosporous
 {{< multiplechoice
   question="Which of the following structures widens the geographic range of a species and is an agent of dispersal?"
   answer="seed"
-  hint="This structure can be carried by wind, floated on water, or carried away by animals, letting the plant colonize ground far from its parent."
+  hint="Reread the opening paragraphs of this section, on dispersing the next generation."
 >}}
 seed
 flower
@@ -186,7 +186,8 @@ root
 {{< textin
   question="The structure that contains the male gametophyte of a seed plant is called a ________."
   answer="pollen grain"
-  hint="It is encased in a protective coat and can be carried by wind, water, or a pollinator to reach a female gametophyte."
+  accept="pollen"
+  hint="Reread the subsection on the adaptations to dry land, at its sentences on how sperm reach the female gametophyte."
 >}}
 
 {{< textin

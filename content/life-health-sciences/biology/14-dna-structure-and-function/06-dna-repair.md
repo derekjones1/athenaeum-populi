@@ -26,13 +26,13 @@ Proofreading by DNA polymerase corrects errors during replication.
 
 Some errors are not corrected during replication, but are instead corrected after replication is completed; this type of repair is known as **mismatch repair**, shown below. Specific repair enzymes recognize the mispaired nucleotide and excise part of the strand that contains it; the excised region is then resynthesized. If the mismatch remains uncorrected, it may lead to more permanent damage when the mismatched DNA is replicated. How do mismatch repair enzymes recognize which of the two bases is the incorrect one? In *E. coli*, after replication, the nitrogenous base adenine acquires a methyl group; the parental DNA strand will have methyl groups, whereas the newly synthesized strand lacks them. Thus, DNA polymerase is able to remove the wrongly incorporated bases from the newly synthesized, non-methylated strand. In eukaryotes, the mechanism is not very well understood, but it is believed to involve recognition of unsealed nicks in the new strand, as well as a short-term continuing association of some of the replication proteins with the new daughter strand after replication has completed.
 
-{{< mediafigure src="biology/Figure_14_06_02" kind="diagram" alt="A diagram of mismatch repair showing a DNA replication fork twice, stacked one above the other. In the top copy, a shaded, circled base pair on the newly synthesized (green) daughter strand shows a mismatch; a leader line labels the two newly synthesized strands as 'Daughter strands.' A downward arrow leads to the bottom copy, where the same shaded, circled position now shows a corrected, properly paired base." longdesc="Each of the two stacked diagrams shows a replication fork: two parental template strands, both drawn in blue, running into a Y-shaped junction and continuing on the right, where the newly synthesized daughter-strand segments, drawn in green, pair with them. In the top diagram, one base pair just past the fork is highlighted with an orange oval — the daughter strand carries a mismatched base opposite its partner on the parental strand. A leader line from the label 'Daughter strands' points to the two newly synthesized strands. A downward arrow separates the top diagram from an identical one below it, where the same highlighted position now shows the mismatched base replaced with the correctly paired base, so the double helix is fully paired at that position." >}}
+{{< mediafigure src="biology/Figure_14_06_02" kind="diagram" alt="A diagram of mismatch repair showing a DNA replication fork twice, stacked one above the other. In the top copy, a shaded, circled base pair on the newly synthesized (green) daughter strand shows a mismatch; a leader line labels the two newly synthesized strands as 'Daughter strands.' A downward arrow leads to the bottom copy, where the same shaded position now shows a corrected, properly paired base." longdesc="Each of the two stacked diagrams shows a replication fork: two parental template strands, both drawn in blue, running into a Y-shaped junction and continuing on the right, where the newly synthesized daughter-strand segments, drawn in green, pair with them. In the top diagram, one base pair just past the fork is highlighted with an orange oval — the green daughter strand carries a T opposite a G on the upper parental strand, and both strands bulge outward in small loops around the mismatch. A leader line from the label 'Daughter strands' points to the two newly synthesized strands. A downward arrow separates the top diagram from an identical one below it, where the same highlighted position now shows the T replaced by a C paired with the G, with no bulge, so the double helix is fully paired at that position." >}}
 In mismatch repair, the incorrectly added base is detected after replication. The mismatch repair proteins detect this base and remove it from the newly synthesized strand by nuclease action. The gap is now filled with the correctly paired base.
 {{< /mediafigure >}}
 
 Another type of repair mechanism, **nucleotide excision repair**, is similar to mismatch repair, except that it is used to remove damaged bases rather than mismatched ones. The repair enzymes replace abnormal bases by making a cut on both the 3′ and 5′ ends of the damaged base, as shown below. The segment of DNA is removed and replaced with the correctly paired nucleotides by the action of DNA pol. Once the bases are filled in, the remaining gap is sealed with a phosphodiester linkage catalyzed by DNA ligase. This repair mechanism is often employed when UV exposure causes the formation of pyrimidine dimers.
 
-{{< mediafigure src="biology/Figure_14_06_03-3edf" kind="diagram" alt="A four-step labeled diagram of nucleotide excision repair. A DNA double helix, drawn as an orange ladder with a distorted rung marking a thymine dimer, is acted on in sequence by a nuclease, DNA polymerase, and DNA ligase, each shown as a colored shape enveloping the damaged site, with the ladder repaired by the final step." longdesc="Four orange DNA-ladder diagrams are stacked top to bottom, each labeled 5′ and 3′ at both ends of both strands, connected by white downward arrows. Step 1 (top): the ladder has one distorted, bent rung representing the thymine dimer. Step 2, labeled 'Nuclease – Cuts the DNA on each side of the dimer and removes the single strand of DNA containing the dimer': a teal shape covers the damaged region, scissors icons mark cuts on either side of the dimer, and the ladder now shows a gap with missing rungs. Step 3, labeled 'DNA Polymerase – Synthesizes new DNA to repair the hole using the other strand as template': a red shape covers the same region, and blue rungs now fill part of the gap. Step 4, labeled 'DNA Ligase – Forms the final phosphodiester bond between the new DNA (5′) and old DNA (3′)': a dark blue shape covers the region, and the ladder is shown fully repaired with no remaining gap." >}}
+{{< mediafigure src="biology/Figure_14_06_03-3edf" kind="diagram" alt="A four-step labeled diagram of nucleotide excision repair. A DNA double helix, drawn as an orange ladder with a distorted rung marking a thymine dimer, is acted on in sequence by a nuclease, DNA polymerase, and DNA ligase, each shown as a colored shape enveloping the damaged site, with the ladder repaired by the final step." longdesc="Four orange DNA-ladder diagrams are stacked top to bottom, each labeled 5′ and 3′ at both ends of both strands, connected by white downward arrows. Step 1 (top): the ladder has one distorted, bent rung representing the thymine dimer. Step 2, labeled 'Nuclease – Cuts the DNA on each side of the dimer and removes the single strand of DNA containing the dimer': a teal shape covers the damaged region, scissors icons mark cuts on either side of the dimer, and the cut stretch of the top strand, still holding the dimer, is tilted up as it lifts away from the ladder. Step 3, labeled 'DNA Polymerase – Synthesizes new DNA to repair the hole using the other strand as template': a red shape covers the same region, and a new light blue stretch of top strand fills the gap except for a small break at its right end. Step 4, labeled 'DNA Ligase – Forms the final phosphodiester bond between the new DNA (5′) and old DNA (3′)': a dark blue shape sits over the right end of the new light blue stretch, where it meets the old strand, and the ladder is shown fully repaired with no remaining gap." >}}
 Nucleotide excision repairs thymine dimers. When exposed to UV light, thymines lying adjacent to each other can form thymine dimers. In normal cells, they are excised and replaced. Credit: Rao, A., Fletcher, S. and Tag, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -48,11 +48,11 @@ Mutations may have a wide range of effects. Point mutations are those mutations 
 
 Some mutations can result in an increased number of copies of the same codon. These are called trinucleotide repeat expansions and result in repeated regions of the same amino acid. Mutations can also be the result of the addition of a base, known as an insertion, or the removal of a base, also known as deletion. If an insertion or deletion results in the alteration of the translational reading frame (a frameshift mutation), the resultant protein is usually nonfunctional. Sometimes a piece of DNA from one chromosome may get translocated to another chromosome or to another region of the same chromosome; this is also known as translocation. These mutation types are shown below.
 
-{{< mediafigure src="biology/Figure_14_06_05" kind="diagram" alt="A two-part diagram. The top part, 'Point Mutations,' shows the same 12-base original sequence, grouped into four codons with their amino acids below, changed three separate ways: a silent change with no amino-acid change, a missense change swapping one amino acid, and a nonsense change replacing the last amino acid with a stop codon. The bottom part, 'Frameshift Mutations,' shows the same original sequence changed so that a stretch of nucleotides is deleted and the codon groupings shift, changing the last two amino acids." longdesc="Point Mutations box: all three rows start from the same original sequence AGC-GTA-CCC-TAC, translating to Ser-Val-Pro-Tyr, with an arrow to a changed sequence. Row 1, 'Silent: has no effect on the protein sequence': the sixth base changes (A to T, inside the second codon), giving AGC-GTT-CCC-TAC, still Ser-Val-Pro-Tyr. Row 2, 'Missense: results in an amino acid substitution': the seventh base changes (C to A, inside the third codon), giving AGC-GTA-ACC-TAC, translated Ser-Val-Thr-Tyr. Row 3, 'Nonsense: substitutes a stop codon for an amino acid': the twelfth base changes (C to G, inside the fourth codon), giving AGC-GTA-CCC-TAG, translated Ser-Val-Pro-Stop. Frameshift Mutations box, below the heading 'Insertions or deletions of nucleotides may result in a shift in the reading frame or insertion of a stop codon': the same original sequence AGC-GTA-CCC-TAC (with the fifth and sixth bases, T and A, circled) changes to AGC-GCC-CTA-CTT, which the figure's printed labels translate Ser-Val-Leu-Leu (the Val label on the GCC codon is a defect in the source artwork — GCC encodes Ala) — the circled bases are removed and every codon boundary after them shifts, changing the last two amino acids from the original Pro-Tyr." >}}
+{{< mediafigure src="biology/Figure_14_06_05" kind="diagram" alt="A two-part diagram. The top part, 'Point Mutations,' shows the same 12-base original sequence, grouped into four codons with their amino acids below, changed three separate ways: a silent change with no amino-acid change, a missense change swapping one amino acid, and a nonsense change replacing the last amino acid with a stop codon. The bottom part, 'Frameshift Mutations,' shows the same original sequence changed so that a stretch of nucleotides is deleted and the codon groupings shift, changing the last two amino acids." longdesc="Point Mutations box: all three rows start from the same original sequence AGC-GTA-CCC-TAC, translating to Ser-Val-Pro-Tyr, with an arrow to a changed sequence. Row 1, 'Silent: has no effect on the protein sequence': the sixth base changes (A to T, inside the second codon), giving AGC-GTT-CCC-TAC, still Ser-Val-Pro-Tyr. Row 2, 'Missense: results in an amino acid substitution': the seventh base changes (C to A, inside the third codon), giving AGC-GTA-ACC-TAC, translated Ser-Val-Thr-Tyr. Row 3, 'Nonsense: substitutes a stop codon for an amino acid': the twelfth base changes (C to G, inside the fourth codon), giving AGC-GTA-CCC-TAG, translated Ser-Val-Pro-Stop. Frameshift Mutations box, below the heading 'Insertions or deletions of nucleotides may result in a shift in the reading frame or insertion of a stop codon': the same original sequence AGC-GTA-CCC-TAC (with the fifth and sixth bases, T and A, highlighted together) changes to AGC-GCC-CTA-CTT, which the figure's printed labels translate Ser-Val-Leu-Leu (the Val label on the GCC codon is a defect in the source artwork — GCC encodes Ala) — the highlighted bases are removed, two new bases (T, T) close the sequence, and every codon boundary after the deletion shifts, changing the last two amino acids from the original Pro-Tyr." >}}
 Mutations can lead to changes in the protein sequence encoded by the DNA.
 {{< /mediafigure >}}
 
-{{< selfcheck question="A frameshift mutation that results in the insertion of three nucleotides is often less deleterious than a mutation that results in the insertion of one nucleotide. Why?" hint="Compare how many extra bases each insertion adds against the length of one codon." >}}
+{{< selfcheck question="A frameshift mutation that results in the insertion of three nucleotides is often less deleterious than a mutation that results in the insertion of one nucleotide. Why?" hint="Reread the paragraph on insertions, deletions, and frameshifts, and the frameshift panel of the figure above." >}}
 If three nucleotides are added, one additional amino acid will be incorporated into the protein chain, but the reading frame won't shift.
 ===CHECKS===
 one additional amino acid will be incorporated into the protein chain
@@ -84,7 +84,7 @@ Most mistakes are corrected, and if they are not, they may result in a mutation,
 
 ### Discuss the different types of mutations in DNA
 
-{{< selfcheck question="An adult with a history of tanning has his genome sequenced. The beginning of a protein-coding region of his DNA reads ATGGGGATATGGCAT. If the protein-coding region of a healthy adult reads ATGGGGATATGAGCAT, identify the site and type of mutation." hint="Line the two sequences up letter by letter and find where they first diverge." >}}
+{{< selfcheck question="An adult with a history of tanning has his genome sequenced. The beginning of a protein-coding region of his DNA reads ATGGGGATATGGCAT. If the protein-coding region of a healthy adult reads ATGGGGATATGAGCAT, identify the site and type of mutation." hint="Compare the two sequences with the frameshift panel of the mutation figure." >}}
 This is a frameshift mutation with a deletion of an "A" in the 12th position of the coding region.
 
 - Patient: ATGGGGATATGGCAT
@@ -98,36 +98,55 @@ deletion of an "A" in the 12th position of the coding region
   question="A mutation that results from exposure to chemicals, UV rays, x-rays, or some other environmental agent is called a(n) ________."
   answer="induced mutation"
   accept="induced"
-  hint="Charlotte Auerbach and J.M Robson discovered that mustard gas can cause this kind of mutation."
+  hint="Reread the paragraph just after the xeroderma pigmentosa photo."
 >}}
 
 {{< textin
   question="A mutation that occurs without any exposure to an environmental agent, as a result of natural reactions taking place within the body, is called a(n) ________."
   answer="spontaneous mutation"
   accept="spontaneous"
-  hint="It is the opposite category from a mutation caused by chemicals, UV rays, or x-rays."
+  hint="Reread the paragraph just after the xeroderma pigmentosa photo."
 >}}
 
 {{< textin
   question="Replacing a purine with a different purine, or a pyrimidine with a different pyrimidine, is a ________."
   answer="transition substitution"
   accept="transition"
-  hint="The text's example is a purine such as adenine being replaced by the purine guanine."
+  hint="Reread the paragraph on point mutations and substitutions."
 >}}
 
 {{< textin
   question="Replacing a purine with a pyrimidine, or a pyrimidine with a purine, is a ________."
   answer="transversion substitution"
   accept="transversion"
-  hint="The text's example is cytosine, a pyrimidine, being replaced by adenine, a purine."
+  hint="Reread the paragraph on point mutations and substitutions."
 >}}
 
 ### Explain DNA repair mechanisms
 
+{{< textin
+  question="The type of DNA repair mechanism in which the wrong base, along with a few nucleotides upstream or downstream, is removed is called ________."
+  answer="nucleotide excision repair"
+  hint="Reread the paragraph after the second repair figure."
+>}}
+
+{{< textin
+  question="Some errors are not corrected during replication but are instead corrected after replication is completed. This type of repair is known as ________."
+  answer="mismatch repair"
+  hint="Reread the paragraph after the proofreading figure."
+>}}
+
+{{< textin
+  question="According to the section summary, the ends of the newly synthesized fragment are attached to the rest of the DNA using ________, which creates a phosphodiester bond."
+  answer="DNA ligase"
+  accept="ligase"
+  hint="Reread the first paragraph of the section summary."
+>}}
+
 {{< multiplechoice
   question="During proofreading, which of the following enzymes reads the DNA?"
   answer="DNA polymerase"
-  hint="This is the same enzyme that adds nucleotides during replication and can back up to remove a mismatched one."
+  hint="Reread the paragraph that introduces proofreading."
 >}}
 primase
 topoisomerase
@@ -138,7 +157,7 @@ helicase
 {{< multiplechoice
   question="The initial mechanism for repairing nucleotide errors in DNA is ________."
   answer="DNA polymerase proofreading"
-  hint="Think about which repair mechanism acts first, during replication itself, before any other repair pathway is needed."
+  hint="Reread the section's first two paragraphs."
 >}}
 mismatch repair
 DNA polymerase proofreading
@@ -149,7 +168,7 @@ thymine dimers
 {{< multiplechoice
   question="A scientist creates fruit fly larvae with a mutation that eliminates the exonuclease function of DNA pol. Which prediction about the mutational load in the adult fruit flies is most likely to be correct?"
   answer="The adults with the DNA pol mutation will have slightly more mutations than average."
-  hint="The exonuclease function lets DNA polymerase proofread and remove a wrongly added base, but it is only one of several repair mechanisms working in the cell."
+  hint="Reread the paragraphs on proofreading and on the repair that follows replication."
 >}}
 The adults with the DNA pol mutation will have significantly more mutations than average.
 The adults with the DNA pol mutation will have slightly more mutations than average.
@@ -157,32 +176,13 @@ The adults with the DNA pol mutation will have the same number of mutations as a
 The adults with the DNA pol mutation will have fewer mutations than average.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is the consequence of mutation of a mismatch repair enzyme? How will this affect the function of a gene?" hint="Think about what happens to a mismatch that mismatch repair would otherwise have caught, as in xeroderma pigmentosa." >}}
-Mutations are not repaired, as in the case of xeroderma pigmentosa. Gene function may be affected or it may not be expressed.
+{{< selfcheck question="What is the consequence of mutation of a mismatch repair enzyme? How will this affect the function of a gene?" hint="Reread the paragraph after the proofreading figure and the section's last paragraph." >}}
+Mutations are not repaired. Gene function may be affected or it may not be expressed. *(Source note: the source answer reads "Mutations are not repaired, as in the case of xeroderma pigmentosa"; this section says people with xeroderma pigmentosa cannot repair thymine dimers "because of a defect in the nucleotide excision repair enzymes," not the mismatch repair enzymes this question asks about, so the example is dropped here.)*
 ===CHECKS===
-mutations are not repaired, as in the case of xeroderma pigmentosa
+mutations are not repaired
 gene function may be affected or it may not be expressed
 {{< /selfcheck >}}
 
-{{< textin
-  question="The type of repair mechanism in which mismatched bases are removed after replication is called ________."
-  answer="mismatch repair"
-  hint="In E. coli, this repair machinery can tell the two strands apart because only the parental strand carries methyl groups."
->}}
-
-{{< textin
-  question="The type of DNA repair mechanism in which the wrong base, along with a few nucleotides upstream or downstream, is removed is called ________."
-  answer="nucleotide excision repair"
-  hint="This mechanism is often used to remove thymine dimers formed after UV exposure."
->}}
-
-{{< textin
-  question="The function of DNA polymerase in which it reads the newly added base before adding the next one is called ________."
-  answer="proofreading"
-  accept="proof reading"
-  hint="A wrongly added base is removed by the 3′ exonuclease action of this same enzyme."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 14.6: DNA Repair](https://openstax.org/books/biology-2e/pages/14-6-dna-repair) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_14_06_01, Figure_14_06_02, and Figure_14_06_03-3edf re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (all three are colored line illustrations, not photographs); all five source alts rewritten from the images (three were letter-spaced screen-reader spellings — "Illustration shows D N A polymerase…" — and the xeroderma pigmentosa photo's alt was a bare "Photo shows…" that did not describe what is visible), with a full panel-by-panel or step-by-step walkthrough moved into a longdesc for the mismatch-repair diagram, the nucleotide-excision-repair flow chart, and the point-mutation/frameshift-mutation diagram, since none of their one-line captions carries that detail; the Visual Connection note kept in the body immediately after its figure and rendered as a self-check, since the source keys it to a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; seven key-term recall items added from the glossary; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and the Critical Thinking solution's typographical "wont" corrected to "won't" (reported as a source defect).</small>
+<small>This section is adapted from [Biology 2e, Section 14.6: DNA Repair](https://openstax.org/books/biology-2e/pages/14-6-dna-repair) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_14_06_01, Figure_14_06_02, and Figure_14_06_03-3edf re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (all three are colored line illustrations, not photographs); all five source alts rewritten from the images (three were letter-spaced screen-reader spellings — "Illustration shows D N A polymerase…" — and the xeroderma pigmentosa photo's alt was a bare "Photo shows…" that did not describe what is visible), with a full panel-by-panel or step-by-step walkthrough moved into a longdesc for the mismatch-repair diagram, the nucleotide-excision-repair flow chart, and the point-mutation/frameshift-mutation diagram, since none of their one-line captions carries that detail; the Visual Connection note kept in the body immediately after its figure and rendered as a self-check, since the source keys it to a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; six key-term recall items added from the glossary (induced mutation, spontaneous mutation, transition substitution, transversion substitution, nucleotide excision repair, mismatch repair — the last prompted from the body's own sentence rather than the glossary's "mismatched bases" wording, which prints its key), plus one cloze textin ("DNA ligase") built from the section's own `Section Summary`; because Practice items are grouped by objective, the two Critical Thinking Questions appear in reverse of the source's order; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and the Visual Connection solution's typographical "wont" corrected to "won't" (reported as a source defect). One claim is corrected with a visible Source note: the mismatch-repair Critical Thinking answer cites xeroderma pigmentosa as its example, but this section itself names xeroderma pigmentosa as a defect in the nucleotide excision repair enzymes, so the model answer and its first rubric checkpoint drop the example (reported as a source defect).</small>

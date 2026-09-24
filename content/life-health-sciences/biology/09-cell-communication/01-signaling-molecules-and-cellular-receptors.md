@@ -37,7 +37,7 @@ One example of paracrine signaling is the transfer of signals across synapses be
 
 When the neurotransmitter binds the receptor on the surface of the postsynaptic cell, the electrochemical potential of the target cell changes, and the next electrical impulse is launched. The neurotransmitters that are released into the chemical synapse are degraded quickly or get reabsorbed by the presynaptic cell so that the recipient nerve cell can recover quickly and be prepared to respond rapidly to the next synaptic signal.
 
-{{< mediafigure src="biology/Figure_09_01_02" kind="diagram" alt="A synapse diagram: a bulbous presynaptic cell terminal sits above a postsynaptic cell membrane studded with receptors. Round vesicles inside the presynaptic terminal release neurotransmitter molecules into the gap between the cells; the released molecules diffuse across and bind receptors on the postsynaptic membrane, while an enzyme positioned in the gap breaks down unbound neurotransmitter." longdesc="Labeled top to bottom. 'Presynaptic cell' forms a bulbous terminal at the top, containing three round vesicles, with two more fusing with the membrane below them labeled 'Neurotransmitter,' each holding several small blue dots. Arrows lead from the vesicles down to the cell membrane, where a label reads 'Neurotransmitter released into synapse' as dots pass into the gap below. An orange capsule shape at the left edge of the gap is labeled 'Enzyme that destroys neurotransmitter.' Below the gap, the 'Postsynaptic cell' membrane is studded with a row of purple receptor proteins; one dot sits docked on a receptor, labeled 'Neurotransmitter attached to receptor.'" >}}
+{{< mediafigure src="biology/Figure_09_01_02" kind="diagram" alt="A synapse diagram: a bulbous presynaptic cell terminal sits above a postsynaptic cell membrane studded with receptors. Round vesicles inside the presynaptic terminal release neurotransmitter molecules into the gap between the cells; the released molecules diffuse across and bind receptors on the postsynaptic membrane, while an enzyme positioned in the gap breaks down unbound neurotransmitter." longdesc="Labeled top to bottom. 'Presynaptic cell' forms a bulbous terminal at the top, containing three round vesicles, with two more fusing with the membrane below them labeled 'Neurotransmitter,' each holding several small blue dots. Two arrows lead from vesicles down to the fusing ones at the cell membrane, where a label reads 'Neurotransmitter released into synapse' as dots pass into the gap below; two more arrows, one curved and one straight, lead from released dots down to receptors. An orange capsule shape at the left edge of the gap, with dots on it, is labeled 'Enzyme that destroys neurotransmitter.' Below the gap, the 'Postsynaptic cell' membrane is studded with a row of seven purple receptor proteins; two dots sit docked on receptors, one of them labeled 'Neurotransmitter attached to receptor.'" >}}
 The distance between the presynaptic cell and the postsynaptic cell—called the synaptic gap—is very small and allows for rapid diffusion of the neurotransmitter. Enzymes in the synaptic gap degrade some types of neurotransmitters to terminate the signal.
 {{< /mediafigure >}}
 
@@ -87,7 +87,7 @@ Cell-surface receptors are involved in most of the signaling in multicellular or
 
 **Ion channel-linked receptors** bind a ligand and open a channel through the membrane that allows specific ions to pass through. To form a channel, this type of cell-surface receptor has an extensive membrane-spanning region. In order to interact with the double layer of phospholipid fatty acid tails that form the center of the plasma membrane, many of the amino acids in the membrane-spanning region are hydrophobic in nature. Conversely, the amino acids that line the inside of the channel are hydrophilic to allow for the passage of water or ions. When a ligand binds to the extracellular region of the channel, there is a conformational change in the protein's structure that allows ions such as sodium, calcium, magnesium, and hydrogen to pass through (below).
 
-{{< mediafigure src="biology/Figure_09_01_04-54fe" kind="diagram" alt="Three side-by-side panels, A, B, and C, showing a gated ion-channel receptor embedded in the plasma membrane, with small yellow ions scattered above and below it. In panel A the channel is closed as a signaling molecule approaches from outside. In panel B the signaling molecule is bound and the channel is open, letting ions flow through into the cell interior. In panel C the signaling molecule has detached and the channel is closed again." longdesc="Panel A: a closed channel protein spans the membrane; a teardrop-shaped signaling molecule approaches from above on a red arrow, while yellow ion dots are scattered on both sides of the membrane. Panel B: the signaling molecule has docked in the channel's binding site, and a red arrow through the open channel shows yellow ions flowing from outside to inside. Panel C: the signaling molecule is shown detaching upward on a red arrow, and the channel has returned to its closed shape, with ions again scattered on both sides rather than flowing through." >}}
+{{< mediafigure src="biology/Figure_09_01_04-54fe" kind="diagram" alt="Three panels, A, B, and C, showing a gated ion-channel receptor embedded in the plasma membrane. In panel A the channel is closed as a signaling molecule approaches from outside, and all the small yellow ions are outside the cell. In panel B the signaling molecule is bound and the channel is open, letting ions flow through into the cell interior. In panel C the signaling molecule has detached and the channel is closed again, with some ions now inside the cell." longdesc="Panel A: a closed channel protein spans the membrane; a teardrop-shaped signaling molecule approaches from above on a red arrow, while yellow ion dots are scattered only in the extracellular fluid above the membrane. Panel B: the signaling molecule has docked in the channel's binding site, and a red arrow through the open channel shows yellow ions flowing from outside to inside. Panel C: the signaling molecule is shown detaching upward on a red arrow, and the channel has returned to its closed shape, with ions now on both sides of the membrane rather than flowing through." >}}
 Gated ion channels located in the plasma membrane allow for the controlled flow of ions into and out of the cell. The channel proteins remain closed until a signaling molecule (orange teardrop) binds to the channel protein. Then the channel protein changes conformation and allows ions (yellow circles) to flow into (or out of) the cell. When the signaling molecule is released, the channel protein resumes its closed conformation, preventing ion flow. Credit: Rao, A. and Fletcher, S. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -107,14 +107,14 @@ Transmitted primarily through contaminated drinking water, cholera is a major ca
 
 **Enzyme-linked receptors** are cell-surface receptors with intracellular domains that are associated with an enzyme. In some cases, the intracellular domain of the receptor itself is an enzyme. Other enzyme-linked receptors have a small intracellular domain that interacts directly with an enzyme. The enzyme-linked receptors normally have large extracellular and intracellular domains, but the membrane-spanning region consists of a single alpha-helical region of the peptide strand. When a ligand binds to the extracellular domain, a signal is transferred through the membrane, activating the enzyme. Activation of the enzyme sets off a chain of events within the cell that eventually leads to a response. One example of this type of enzyme-linked receptor is the tyrosine kinase receptor (below). A kinase is an enzyme that transfers phosphate groups from ATP to another protein. The tyrosine kinase receptor transfers phosphate groups to tyrosine molecules (tyrosine residues). First, signaling molecules bind to the extracellular domain of two nearby tyrosine kinase receptors. The two neighboring receptors then bond together, or dimerize. Phosphates are then added to tyrosine residues on the intracellular domain of the receptors (phosphorylation). The phosphorylated residues can then transmit the signal to the next messenger within the cytoplasm.
 
-{{< mediafigure src="biology/Figure_09_01_07-83ac" kind="diagram" alt="Four numbered panels showing two receptor tyrosine kinase monomers embedded in the plasma membrane. Upon binding of a signaling molecule to the extracellular domain, the receptors dimerize. Tyrosine residues on the intracellular surface are then phosphorylated, and the phosphorylated receptor recruits relay proteins that produce Cellular Response 1 and Cellular Response 2." longdesc="Four numbered panels tracing receptor tyrosine kinase activation. Panel 1: two separate, inactive receptor tyrosine kinase monomers span the membrane, each with three intracellular tyrosine (Tyr) residues; two inactive, unshaded relay proteins sit nearby in the cytoplasm. Panel 2: two signal molecules bind the extracellular binding sites, and the two receptors come together to form a dimer. Panel 3: ATP phosphorylates the six tyrosine residues of the dimer, adding a phosphate (P) to each; an ATP starburst feeds the reaction arrow and 6 ADP leaves it, producing the fully activated, phosphorylated receptor. Panel 4: the phosphorylated tyrosines recruit and activate the two relay proteins, which are shown triggering Cellular Response 1 and Cellular Response 2." >}}
+{{< mediafigure src="biology/Figure_09_01_07-83ac" kind="diagram" alt="Four numbered panels showing two receptor tyrosine kinase monomers embedded in the plasma membrane. Upon binding of a signaling molecule to the extracellular domain, the receptors dimerize. Tyrosine residues on the intracellular surface are then phosphorylated, and the phosphorylated receptor recruits relay proteins that produce Cellular Response 1 and Cellular Response 2." longdesc="Four numbered panels tracing receptor tyrosine kinase activation. Panel 1: two separate receptor tyrosine kinase monomers, labeled Receptor Tyrosine Kinase Proteins (Inactive Monomers), span the membrane, each with a cup-shaped signal-binding site on top, a stretch in the membrane labeled α Helix in the Membrane, and three intracellular tyrosine (Tyr) residues labeled Tyrosines; two purple relay proteins labeled Inactive Relay Proteins sit nearby in the cytoplasm. Panel 2: two signal molecules bind the extracellular binding sites, and the two receptors come together to form a dimer. Panel 3: ATP phosphorylates the six tyrosine residues of the dimer, adding a phosphate (P) to each; an ATP starburst feeds the reaction arrow and 6 ADP leaves it, producing the fully activated, phosphorylated receptor. Panel 4: an arrow leads from a pair of Inactive Relay Proteins at lower right to two Activated Relay Proteins bound to the phosphorylated tyrosines on the dimer's right side, and dashed yellow arrows run from them to Cellular Response 1 and Cellular Response 2." >}}
 1) A receptor tyrosine kinase is an enzyme-linked receptor with a single helical transmembrane region, and extracellular and intracellular domains. 2) Binding of a signaling molecule to the extracellular domain causes the receptor to dimerize. 3) Tyrosine residues on the intracellular domain are then autophosphorylated, 4) triggering a downstream cellular response. The signal is terminated by a phosphatase that removes the phosphates from the phosphotyrosine residues. Credit: Rao, A., Ryan, K., Tag, A., Fletcher, S. and Hawkins, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="HER2 is a receptor tyrosine kinase. In 30 percent of human breast cancers, HER2 is permanently activated, resulting in unregulated cell division. Lapatinib, a drug used to treat breast cancer, inhibits HER2 receptor tyrosine kinase autophosphorylation (the process by which the receptor adds phosphates onto itself), thus reducing tumor growth by 50 percent. Besides autophosphorylation, which of the following steps would be inhibited by Lapatinib?"
   answer="The downstream cellular response"
-  hint="Autophosphorylation is step 3 in the figure above; ask which later step depends on it and would therefore never happen if it is blocked."
+  hint="Use the numbered steps in the tyrosine-kinase-receptor figure above."
 >}}
 Signaling molecule binding, dimerization, and the downstream cellular response
 Dimerization, and the downstream cellular response
@@ -176,15 +176,16 @@ Internal receptors are found in the cell cytoplasm. Here, they bind ligand molec
 ### Describe four types of signaling mechanisms found in multicellular organisms
 
 {{< textin
-  question="A molecule produced by a signaling cell that binds a specific receptor, delivering a signal in the process, is called a ________."
-  answer="ligand"
-  hint="Its own name says what it does: it binds."
+  question="A chemical signal (neurotransmitter) that travels between nerve cells is called a ________."
+  answer="synaptic signal"
+  accept="synaptic signaling"
+  hint="Reread the Paracrine Signaling subsection."
 >}}
 
 {{< multiplechoice
   question="The secretion of hormones by the pituitary gland is an example of ________."
   answer="endocrine signaling"
-  hint="The pituitary's hormones travel through the bloodstream to reach distant target cells."
+  hint="Reread the second of the four signaling subsections."
 >}}
 autocrine signaling
 paracrine signaling
@@ -192,10 +193,24 @@ endocrine signaling
 direct signaling across gap junctions
 {{< /multiplechoice >}}
 
+{{< selfcheck question="What is the difference between intracellular signaling and intercellular signaling?" hint="Reread the section's first paragraph." >}}
+Intracellular signaling occurs within a cell, and intercellular signaling occurs between cells.
+===CHECKS===
+intracellular signaling occurs within a cell
+intercellular signaling occurs between cells
+{{< /selfcheck >}}
+
+{{< selfcheck question="How are the effects of paracrine signaling limited to an area near the signaling cells?" hint="Reread the first paragraph of the first signaling subsection." >}}
+The secreted ligands are quickly removed by degradation or reabsorption into the cell so that they cannot travel far.
+===CHECKS===
+the secreted ligands are quickly removed by degradation or reabsorption into the cell
+they cannot travel far
+{{< /selfcheck >}}
+
 {{< multiplechoice
   question="Endocrine signals are transmitted more slowly than paracrine signals because ________."
   answer="the ligands are transported through the bloodstream and travel greater distances"
-  hint="Compare how far each signal has to travel and by what route."
+  hint="Reread the two paragraphs of the second of the four signaling subsections."
 >}}
 the ligands are transported through the bloodstream and travel greater distances
 the target and signaling cells are close together
@@ -203,26 +218,12 @@ the ligands are degraded rapidly
 the ligands don't bind to carrier proteins during transport
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is the difference between intracellular signaling and intercellular signaling?" hint="Look at what the Latin prefixes inter- and intra- mean." >}}
-Intracellular signaling occurs within a cell, and intercellular signaling occurs between cells.
-===CHECKS===
-intracellular signaling occurs within a cell
-intercellular signaling occurs between cells
-{{< /selfcheck >}}
-
-{{< selfcheck question="How are the effects of paracrine signaling limited to an area near the signaling cells?" hint="Think about what happens to the ligand molecules once they are released." >}}
-The secreted ligands are quickly removed by degradation or reabsorption into the cell so that they cannot travel far.
-===CHECKS===
-the secreted ligands are quickly removed by degradation or reabsorption into the cell
-they cannot travel far
-{{< /selfcheck >}}
-
 ### Compare internal receptors with cell-surface receptors
 
 {{< multiplechoice
   question="What property prevents the ligands of cell-surface receptors from entering the cell?"
   answer="The molecules are hydrophilic and cannot penetrate the hydrophobic interior of the plasma membrane."
-  hint="Ask what kind of molecule can cross a lipid membrane unaided, and what kind cannot."
+  hint="Reread the Water-Soluble Ligands subsection."
 >}}
 The molecules bind to the extracellular domain.
 The molecules are hydrophilic and cannot penetrate the hydrophobic interior of the plasma membrane.
@@ -233,7 +234,7 @@ The ligands are able to penetrate the membrane and directly influence gene expre
 {{< multiplechoice
   question="Why are ion channels necessary to transport ions into or out of a cell?"
   answer="Ions are charged particles and cannot diffuse through the hydrophobic interior of the membrane."
-  hint="Ions carry a charge; think about what kind of environment a charged particle can and cannot cross unaided."
+  hint="Reread the paragraphs on the three general categories of cell-surface receptors."
 >}}
 Ions are too large to diffuse through the membrane.
 Ions are charged particles and cannot diffuse through the hydrophobic interior of the membrane.
@@ -244,7 +245,7 @@ Ions bind to carrier proteins in the bloodstream, which must be removed before t
 {{< multiplechoice
   question="A scientist notices that when she adds a small, water-soluble molecule to a dish of cells, the cells turn off transcription of a gene. She hypothesizes that the ligand she added binds to a(n) ________ receptor."
   answer="Enzyme-linked"
-  hint="A water-soluble molecule cannot cross the membrane, so it must act through a cell-surface receptor that starts a signaling chain reaching the nucleus."
+  hint="Reread the paragraphs on the three general categories of cell-surface receptors."
 >}}
 Intracellular
 Hormone
@@ -252,7 +253,7 @@ Enzyme-linked
 Gated ion channel-linked
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are the differences between internal receptors and cell-surface receptors?" hint="Consider where each receptor sits, whether the ligand enters the cell, and how each one influences protein production." >}}
+{{< selfcheck question="What are the differences between internal receptors and cell-surface receptors?" hint="Reread the two subsections under Types of Receptors." >}}
 Internal receptors are located inside the cell, and their ligands enter the cell to bind the receptor. The complex formed by the internal receptor and the ligand then enters the nucleus and directly affects protein production by binding to the chromosomal DNA and initiating the making of mRNA that codes for proteins. Cell-surface receptors, however, are embedded in the plasma membrane, and their ligands do not enter the cell. Binding of the ligand to the cell-surface receptor initiates a cell signaling cascade and does not directly influence the making of proteins; however, it may involve the activation of intracellular proteins.
 ===CHECKS===
 internal receptors are located inside the cell
@@ -262,7 +263,7 @@ cell-surface receptors are embedded in the plasma membrane, and their ligands do
 binding of the ligand to the cell-surface receptor initiates a cell signaling cascade
 {{< /selfcheck >}}
 
-{{< selfcheck question="Cells grown in the laboratory are mixed with a dye molecule that is unable to pass through the plasma membrane. If a ligand is added to the cells, observations show that the dye enters the cells. What type of receptor did the ligand bind to on the cell surface?" hint="Think about what kind of cell-surface receptor, once triggered, forms a physical opening through the membrane." >}}
+{{< selfcheck question="Cells grown in the laboratory are mixed with a dye molecule that is unable to pass through the plasma membrane. If a ligand is added to the cells, observations show that the dye enters the cells. What type of receptor did the ligand bind to on the cell surface?" hint="Reread the paragraphs on the three general categories of cell-surface receptors." >}}
 An ion channel receptor opened up a pore in the membrane, which allowed the ionic dye to move into the cell.
 ===CHECKS===
 an ion channel receptor opened up a pore in the membrane
@@ -271,10 +272,17 @@ allowed the ionic dye to move into the cell
 
 ### Recognize the relationship between a ligand’s structure and its mechanism of action
 
+{{< textin
+  question="Small hydrophobic ligands (like steroids) are able to penetrate the plasma membrane and bind to ________."
+  answer="internal receptors"
+  accept="intracellular receptors|cytoplasmic receptors"
+  hint="Reread the Summary's second-to-last sentence."
+>}}
+
 {{< multiplechoice
   question="A ligand that is small and hydrophobic, such as a steroid hormone, typically reaches its target by ________."
   answer="diffusing directly across the plasma membrane to bind an internal receptor"
-  hint="Ask whether the ligand's chemical nature lets it cross the lipid membrane on its own."
+  hint="Reread the Small Hydrophobic Ligands subsection."
 >}}
 diffusing directly across the plasma membrane to bind an internal receptor
 binding the extracellular domain of a cell-surface receptor
@@ -282,14 +290,7 @@ opening a ligand-gated ion channel
 triggering the exchange of GDP for GTP on a membrane-bound G-protein
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Small hydrophobic ligands (like steroids) are able to penetrate the plasma membrane and bind to ________."
-  answer="internal receptors"
-  accept="internal receptor"
-  hint="This section's summary distinguishes these from the receptors that water-soluble ligands must use instead."
->}}
-
-{{< selfcheck question="Insulin is a hormone that regulates blood sugar by binding to its receptor, insulin receptor tyrosine kinase. How does insulin's behavior differ from steroid hormone signaling, and what can you infer about its structure?" hint="Ask whether insulin has to cross the plasma membrane to act, and what that implies about whether it is polar or nonpolar." >}}
+{{< selfcheck question="Insulin is a hormone that regulates blood sugar by binding to its receptor, insulin receptor tyrosine kinase. How does insulin's behavior differ from steroid hormone signaling, and what can you infer about its structure?" hint="Reread the Small Hydrophobic Ligands subsection and the tyrosine kinase paragraph under Cell-Surface Receptors." >}}
 Insulin's receptor is an enzyme-linked transmembrane receptor, as can be determined from the "tyrosine kinase" in its name. This receptor is embedded in the plasma membrane, and insulin binds to its extracellular (outer) surface to initiate intracellular signaling cascades.
 
 Normally, steroid hormones cross the plasma membrane to bind with intracellular receptors. These intracellular hormone-receptor complexes then interact directly with DNA to regulate transcription. This limits steroid hormones to be small, non-polar molecules so they can cross the plasma membrane. However, since insulin does not have to cross into the cell it could be large or polar (it is a small, polar molecule).
@@ -303,4 +304,4 @@ it could be large or polar
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 9.1: Signaling Molecules and Cellular Receptors](https://openstax.org/books/biology-2e/pages/9-1-signaling-molecules-and-cellular-receptors) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with five of the eight re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a drawn illustration, not a photograph — only the 1866 cholera-poster reproduction is a true photo); a `longdesc` added to the five figures that are labeled diagrams or flow charts whose full reading is not carried by their captions (the synapse diagram, the intracellular-receptor diagram, the gated-ion-channel panels, the G-protein cycle, and the tyrosine-kinase-receptor panels); the synapse figure's alt rewritten to clean up a source typo ("neutrotransmitter"/"neurotrasmitter") and the intracellular-receptor figure's alt rewritten to spell out "DNA" in place of the source's letter-by-letter "D N A"; ion charges and calcium set as Unicode (Ca²⁺); inline references to figures changed from the source's numbered pointers to descriptive phrases ("below," "above") since figures are not numbered here; Cao et al. 2011) omitted as bibliographic apparatus rather than section content; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice, since the source keys it to a lettered option; the Key Terms entry for "intercellular signaling," whose glossary definition read "communication between a cell," corrected to "communication between cells" to match the section's own definition of the term (reported as a source defect); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); one Critical Thinking Question (the insulin/steroid comparison) placed under the third objective rather than the second, since it argues the relationship between ligand structure and receptor type; a multiple choice item written from the section's own text on small hydrophobic ligands added to give the third objective an auto-graded item, since no source exercise or glossary term tests it directly; and one key-term recall item (ligand) added from the glossary to round out the first objective group; the Evolution Connection's two reference citations are kept as a parenthetical after the sentence they support; four small source typos are corrected on the page — the glossary's "bind" (for "binds"), a caption's "synapatic", an option's "downsteam", and the letter-spaced "G D P"/"G T P" in two alts are corrected on the page; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived recall item (internal receptors) added under the third objective from the section summary's own sentence. One claim is corrected with a visible Source note: GTP is expanded as guanosine triphosphate rather than the source's "guanosine 3-phosphate" (erratum 395).</small>
+<small>This section is adapted from [Biology 2e, Section 9.1: Signaling Molecules and Cellular Receptors](https://openstax.org/books/biology-2e/pages/9-1-signaling-molecules-and-cellular-receptors) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with five of the eight re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a drawn illustration, not a photograph — only the 1866 cholera-poster reproduction is a true photo); a `longdesc` added to the five figures that are labeled diagrams or flow charts whose full reading is not carried by their captions (the synapse diagram, the intracellular-receptor diagram, the gated-ion-channel panels, the G-protein cycle, and the tyrosine-kinase-receptor panels); the synapse figure's alt rewritten to clean up a source typo ("neutrotransmitter"/"neurotrasmitter") and the intracellular-receptor figure's alt rewritten to spell out "DNA" in place of the source's letter-by-letter "D N A"; ion charges and calcium set as Unicode (Ca²⁺); inline references to figures changed from the source's numbered pointers to descriptive phrases ("below," "above") since figures are not numbered here; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice, since the source keys it to a lettered option; the Key Terms entry for "intercellular signaling," whose glossary definition read "communication between a cell," corrected to "communication between cells" to match the section's own definition of the term (reported as a source defect); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); one Critical Thinking Question (the insulin/steroid comparison) placed under the third objective rather than the second, since it argues the relationship between ligand structure and receptor type; a multiple choice item written from the section's own text on small hydrophobic ligands added to give the third objective an auto-graded item, since no source exercise or glossary term tests it directly; and one key-term recall item (synaptic signal) added from the glossary to round out the first objective group, in place of a ligand recall item whose key the page's source questions and the third objective's heading print throughout; the Evolution Connection's two reference citations are kept as a parenthetical after the sentence they support; four small source typos are corrected on the page — the glossary's "bind" (for "binds"), a caption's "synapatic", an option's "downsteam", and the letter-spaced "G D P"/"G T P" in two alts; the tyrosine-kinase-receptor artwork prints its membrane label as "∝ Helix in the Membrane," with a proportionality sign for α, and the long description reads it as "α Helix in the Membrane"; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived recall item (internal receptors) added under the third objective from the section summary's own sentence; and the Review Question on why endocrine signals are slower placed after the first objective's two Critical Thinking self-checks rather than directly under the pituitary question, since its stem prints that question's key. One claim is corrected with a visible Source note: GTP is expanded as guanosine triphosphate rather than the source's "guanosine 3-phosphate" (erratum 395).</small>

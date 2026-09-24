@@ -30,7 +30,7 @@ Hydrophobic lipids in aquatic mammals' fur, such as this river otter, protect th
 
 A fat molecule consists of two main components—glycerol and fatty acids. Glycerol is an organic compound (alcohol) with three carbons, five hydrogens, and three hydroxyl (OH) groups. Fatty acids have a long chain of hydrocarbons to which a carboxyl group is attached, hence the name "fatty acid." The number of carbons in the fatty acid may range from 4 to 36. The most common are those containing 12–18 carbons. In a fat molecule, the fatty acids attach to each of the glycerol molecule's three carbons with an ester bond through an oxygen atom (below).
 
-{{< mediafigure src="biology/Figure_03_03_02-f094" alt="Structural diagrams of glycerol, a fatty acid, and the triacylglycerol they form. Glycerol is a three-carbon chain with a hydroxyl (OH) group on each carbon; the fatty acid is a long hydrocarbon chain ending in a carboxyl (COOH) group. In triacylglycerol, each of glycerol's three hydroxyl groups has reacted with a fatty acid's carboxyl group to form an ester bond, releasing a water molecule at each linkage." longdesc="Top box, labeled Glycerol: a vertical chain of three carbons, each bearing an H on the left and an OH group on the right, with the third carbon's OH highlighted. A plus sign leads to the middle box, labeled Fatty Acid: a long chain of repeating CH2 units ending, at its left end, in a carboxyl group (HO-C=O) with the HO highlighted. An arrow points down to the bottom box, labeled Triacylglycerol: three long fatty-acid chains, drawn as zig-zags, each attached to one of glycerol's three carbons through an ester linkage (C-O-C, with that carbon also double-bonded to an oxygen) at the position where the highlighted OH and HO groups reacted and released water." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_03_03_02-f094" alt="Structural diagrams of glycerol, a fatty acid, and the triacylglycerol they form. Glycerol is a three-carbon chain with a hydroxyl (OH) group on each carbon; the fatty acid is a long hydrocarbon chain ending in a carboxyl (COOH) group. In triacylglycerol, each of glycerol's three hydroxyl groups has reacted with a fatty acid's carboxyl group to form an ester bond, releasing a water molecule at each linkage." longdesc="Top box, labeled Glycerol: a vertical chain of three carbons, each bearing an H on the left and an OH group on the right, with the H of the third carbon's OH highlighted. A plus sign leads to the middle box, labeled Fatty Acid: a 16-carbon chain of repeating CH₂ units, ending in CH₃ at its right end and, at its left end, in a carboxyl group (HO-C=O) with the HO highlighted. An arrow points down to the bottom box, labeled Triacylglycerol: three fatty-acid chains of different lengths (12, 16, and 14 carbons from top to bottom), drawn as zig-zags, each attached to one of glycerol's three carbons through an ester linkage (C-O-C, with that carbon also double-bonded to an oxygen) at the position where the highlighted H and HO groups reacted and released water." kind="diagram" >}}
 Joining three fatty acids to a glycerol backbone in a dehydration reaction forms triacylglycerol. Three water molecules release in the process.
 {{< /mediafigure >}}
 
@@ -38,13 +38,13 @@ During this ester bond formation, three water molecules are released. The three 
 
 Fatty acids may be saturated or unsaturated. In a fatty acid chain, if there are only single bonds between neighboring carbons in the hydrocarbon chain, the fatty acid is saturated. Saturated fatty acids are saturated with hydrogen. In other words, the number of hydrogen atoms attached to the carbon skeleton is maximized. Stearic acid is an example of a saturated fatty acid (below).
 
-{{< mediafigure src="biology/Figure_03_03_03-9520" alt="The structural formula of stearic acid: a straight hydrocarbon chain of seventeen CH2 units ending in a carboxyl (COOH) group, with every carbon-carbon bond in the chain a single bond." longdesc="A straight horizontal chain of seventeen carbons, each bonded to a hydrogen above and below, joined end to end entirely by single bonds, with a carboxyl group (a carbon double-bonded to one oxygen and single-bonded to a hydroxyl) at the right end. No double bonds appear anywhere in the chain." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_03_03_03-9520" alt="The structural formula of stearic acid: a straight hydrocarbon chain of seventeen carbons (a CH₃ end and sixteen CH₂ units) ending in a carboxyl (COOH) group, with every carbon-carbon bond in the chain a single bond." longdesc="A straight horizontal chain of seventeen carbons, each bonded to a hydrogen above and below (the leftmost carbon also to a third hydrogen at the end), joined end to end entirely by single bonds, with a carboxyl group (a carbon double-bonded to one oxygen and single-bonded to a hydroxyl) at the right end. No double bonds appear anywhere in the chain." kind="diagram" >}}
 Stearic acid is a common saturated fatty acid.
 {{< /mediafigure >}}
 
 When the hydrocarbon chain contains a double bond, the fatty acid is **unsaturated**. Oleic acid is an example of an unsaturated fatty acid (below).
 
-{{< mediafigure src="biology/Figure_03_03_04-a3a2" alt="The structural formula of oleic acid: a hydrocarbon chain of seventeen CH2 units ending in a carboxyl (COOH) group, with a single double bond between the eighth and ninth carbons." longdesc="The same seventeen-carbon chain and carboxyl group as stearic acid, except for one double bond, marked C=C, between the eighth and ninth carbons counting from the carboxyl end." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_03_03_04-a3a2" alt="The structural formula of oleic acid: a hydrocarbon chain of seventeen carbons ending in a carboxyl (COOH) group, with a single double bond between the eighth and ninth chain carbons counting from the carboxyl end." longdesc="The same seventeen-carbon chain and carboxyl group as stearic acid, except for one double bond, marked C=C, between the eighth and ninth carbons counting from the carboxyl end; each of those two carbons carries a single hydrogen, drawn below it, with none above." kind="diagram" >}}
 Oleic acid is a common unsaturated fatty acid.
 {{< /mediafigure >}}
 
@@ -66,7 +66,7 @@ Margarine, some types of peanut butter, and shortening are examples of artificia
 
 Essential fatty acids are those that the human body requires but does not synthesize. Consequently, they have to be supplemented through ingestion via the diet. **Omega**-3 fatty acids (like those below) fall into this category and are one of only two known for humans (the other is omega-6 fatty acid). These are polyunsaturated fatty acids and are omega-3 because a double bond connects the third carbon from the hydrocarbon chain's end to its neighboring carbon.
 
-{{< mediafigure src="biology/Figure_03_03_07-cb9e" alt="The structural formula of alpha-linolenic acid, an omega-3 fatty acid: a hydrocarbon chain with three double bonds that together give the molecule a hooked, curved shape." longdesc="A hydrocarbon chain ending in a COOH group at the upper right, hooking downward through three double bonds, each marked C=C with a hydrogen on each side, spaced a few carbons apart. Each double bond puts a cis-style bend in the chain, so the three bends together curve the whole molecule into a hooked shape rather than a straight line. Individual carbon atoms and their remaining hydrogens are not drawn, only the zig-zag bond lines." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_03_03_07-cb9e" alt="The structural formula of alpha-linolenic acid, an omega-3 fatty acid: a hydrocarbon chain with three double bonds that together give the molecule a hooked, curved shape." longdesc="A hydrocarbon chain ending in a COOH group at the upper right, hooking down and back to the right through three double bonds, each drawn as a double line whose two carbons each carry one drawn hydrogen, both hydrogens on the outer (left) side, spaced a few carbons apart; the chain ends at the lower right in a CH₃ group. Each double bond puts a cis-style bend in the chain, so the three bends together curve the whole molecule into a hooked shape rather than a straight line. Individual carbon atoms and their remaining hydrogens are not drawn, only the zig-zag bond lines." kind="diagram" >}}
 Alpha-linolenic acid is an example of an omega-3 fatty acid. It has three *cis* double bonds and, as a result, a curved shape. For clarity, the diagram does not show the carbons. Each singly bonded carbon has two hydrogens associated with it, which the diagram also does not show.
 {{< /mediafigure >}}
 
@@ -86,13 +86,13 @@ Lipids comprise waxy coverings on some leaves. (credit: Roger Griffith)
 
 **Phospholipids** are major plasma membrane constituents that comprise cells' outermost layer. Like fats, they are comprised of fatty acid chains attached to a glycerol or sphingosine backbone. However, instead of three fatty acids attached as in triglycerides, there are two fatty acids forming diacylglycerol, and a modified phosphate group occupies the glycerol backbone's third carbon (below). A phosphate group alone attached to a diacylglycerol does not qualify as a phospholipid. It is phosphatidate (diacylglycerol 3-phosphate), the precursor of phospholipids. An alcohol modifies the phosphate group. Phosphatidylcholine and phosphatidylserine are two important phospholipids that are in plasma membranes.
 
-{{< mediafigure src="biology/Figure_03_03_08" alt="Three side-by-side views of a phospholipid: its structural formula, a space-filling model, and the simplified symbol used elsewhere in this chapter." longdesc="Three side-by-side panels. (a) Structural formula: a circle labeled Hydrophilic head encloses a glycerol backbone (CH2-CH-CH2) with a phosphate group (a phosphorus bonded to two oxygens and an O⁻, plus an R group) attached to one carbon and two fatty acid chains attached to the other two carbons through ester linkages; one fatty acid chain is drawn straight and labeled Saturated fatty acid, the other is drawn with a kink and labeled Unsaturated fatty acid, and together they are labeled Hydrophobic tails. (b) Space-filling model: the same molecule rendered as clustered spheres in the same arrangement, labeled Phosphate, Glycerol, and Fatty acids. (c) Phospholipid symbol: the simplified icon used elsewhere in the chapter, a circle labeled Hydrophilic head atop two wavy lines labeled Hydrophobic tails." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_03_03_08" alt="Three side-by-side views of a phospholipid: its structural formula, a space-filling model, and the simplified symbol used elsewhere in this chapter." longdesc="Three side-by-side panels. (a) Structural formula: a circle labeled Hydrophilic head encloses a glycerol backbone (CH2-CH-CH2) with a phosphate group (a phosphorus bonded to four oxygens: one double-bonded, one O⁻, one leading up to an R group, and one bridging down to the glycerol) attached to one carbon and two fatty acid chains attached to the other two carbons through ester linkages; one fatty acid chain is drawn straight and labeled Saturated fatty acid, the other is drawn with a kink and labeled Unsaturated fatty acid, and together they are labeled Hydrophobic tails. (b) Space-filling model: the same molecule rendered as clustered spheres in the same arrangement, topped by the R group (a cluster with a blue atom at its center), with lines from panel (a) marking the parts labeled Phosphate, Glycerol, and Fatty acids. (c) Phospholipid symbol: the simplified icon used elsewhere in the chapter, a red-orange ball labeled Hydrophilic head atop two long, slightly curved yellow tails labeled Hydrophobic tails." kind="diagram" >}}
 A phospholipid is a molecule with two fatty acids and a modified phosphate group attached to a glycerol backbone. Adding a charged or polar chemical group may modify the phosphate.
 {{< /mediafigure >}}
 
 A phospholipid is an amphipathic molecule, meaning it has a hydrophobic and a hydrophilic part. The fatty acid chains are hydrophobic and cannot interact with water; whereas, the phosphate-containing group is hydrophilic and interacts with water (below).
 
-{{< mediafigure src="biology/Figure_03_03_09-0814" alt="A schematic of a phospholipid bilayer, with two rows of phospholipids arranged tail to tail." longdesc="Two horizontal rows of phospholipids. Each row shows circular head groups facing outward, away from the center, with their zig-zag hydrophobic tails pointing inward toward the tails of the opposite row, so the two rows of tails meet in the middle of the bilayer while both rows of heads face the aqueous solution on the outside." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_03_03_09-0814" alt="A schematic of a phospholipid bilayer, with two rows of phospholipids arranged tail to tail." longdesc="Two horizontal rows of phospholipids, each about ten molecules across with a paler row drawn behind for depth. Each row shows red circular head groups facing outward, away from the center, each with a pair of wavy yellow hydrophobic tails pointing inward toward the tails of the opposite row, so the two rows of tails meet in the middle of the bilayer while both rows of heads face the aqueous solution on the outside. A bracket at the right spanning both rows is labeled Phospholipid bilayer, and leader lines label one tail Hydrophobic tail and one head Hydrophilic head group." kind="diagram" >}}
 The phospholipid bilayer is the major component of all cellular membranes. The hydrophilic head groups of the phospholipids face the aqueous solution. The hydrophobic tails are sequestered in the middle of the bilayer.
 {{< /mediafigure >}}
 
@@ -104,7 +104,7 @@ Phospholipids are responsible for the plasma membrane's dynamic nature. If a dro
 
 Unlike the phospholipids and fats that we discussed earlier, **steroids** have a fused ring structure. Although they do not resemble the other lipids, scientists group them with them because they are also hydrophobic and insoluble in water. All steroids have four linked carbon rings and several of them, like cholesterol, have a short tail (below). Many steroids also have the –OH functional group, which puts them in the alcohol classification (sterols).
 
-{{< mediafigure src="biology/Figure_03_03_10-a6ce" alt="Structural formulas of cholesterol and cortisol, both built from four fused carbon rings but differing in their side groups." longdesc="Two structural formulas, each built from the same four fused rings — three six-carbon rings and one five-carbon ring. Cholesterol (top): a hydroxyl (HO) group on the first ring, a double bond in the second ring, two methyl (CH3) branches at ring junctions, and a branched hydrocarbon tail carrying three more methyl groups attached to the five-carbon ring. Cortisol (bottom): the same four-ring skeleton, but with its double bond in the first ring beside a ketone (C=O) that replaces cholesterol's hydroxyl group, a hydroxyl group added on the third ring (the six-carbon ring next to the five-carbon ring), and the long tail replaced by a short two-carbon side chain carrying a hydroxyl group, a ketone, and a CH2OH group." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_03_03_10-a6ce" alt="Structural formulas of cholesterol and cortisol, both built from four fused carbon rings but differing in their side groups." longdesc="Two structural formulas, each built from the same four fused rings — three six-carbon rings and one five-carbon ring. Cholesterol (top): a hydroxyl (HO) group on the first ring, a double bond in the second ring, two methyl (CH₃) branches at ring junctions, and a branched hydrocarbon tail carrying three more methyl groups attached to the five-carbon ring. Cortisol (bottom): the same four-ring skeleton, but with its double bond in the first ring beside a ketone (C=O) that replaces cholesterol's hydroxyl group, a hydroxyl group added on the third ring (the six-carbon ring next to the five-carbon ring), a second hydroxyl group on the five-carbon ring, at the carbon where the side chain attaches, and the long tail replaced by a short two-carbon side chain: a ketone carbon (C=O) followed by a CH₂OH group." kind="diagram" >}}
 Four fused hydrocarbon rings comprise steroids such as cholesterol and cortisol.
 {{< /mediafigure >}}
 
@@ -134,6 +134,18 @@ Lipids are a class of macromolecules that are nonpolar and hydrophobic in nature
 
 ### Describe the four major types of lipids
 
+{{< textin
+  question="A lipid made of a long-chain fatty acid esterified to a long-chain alcohol, which serves as a protective coating on some feathers, aquatic mammal fur, and leaves, is called a ________."
+  answer="wax"
+  hint="Reread the subsection just before Phospholipids."
+>}}
+
+{{< textin
+  question="Lipids' major types include fats and oils, waxes, phospholipids, and ________."
+  answer="steroids"
+  hint="Reread the last sentence of the section's opening paragraph."
+>}}
+
 {{< selfcheck question="Explain at least three functions that lipids serve in plants and/or animals." hint="Think of one function for each major lipid type discussed in this section." >}}
 Fat serves as a valuable way for animals to store energy. It can also provide insulation. Waxes can protect plant leaves and mammalian fur from getting wet. Phospholipids and steroids are important components of animal cell membranes, as well as plant, fungal, and bacterial membranes.
 ===CHECKS===
@@ -143,22 +155,9 @@ waxes can protect plant leaves and mammalian fur from getting wet
 phospholipids and steroids are important components of animal cell membranes
 {{< /selfcheck >}}
 
-{{< textin
-  question="A macromolecule that is nonpolar and insoluble in water is called a ________."
-  answer="lipid"
-  hint="This is the general term for fats, oils, waxes, phospholipids, and steroids together."
->}}
-
-{{< textin
-  question="Lipids' major types include fats and oils, waxes, phospholipids, and ________."
-  answer="steroids"
-  accept="steroid"
-  hint="Cholesterol and cortisol, both built from four fused rings, belong to this fourth major type named in the summary."
->}}
-
 ### Explain the role of fats in storing energy
 
-{{< selfcheck question="Why are fatty acids better than glycogen for storing large amounts of chemical energy?" hint="Compare the energy density and the packaging of fats to that of a branched carbohydrate." >}}
+{{< selfcheck question="Why are fatty acids better than glycogen for storing large amounts of chemical energy?" hint="Reread the calorie comparison in Benefits of Carbohydrates in the previous section, and the fat-storage sentences in Fats and Oils." >}}
 Fats have a higher energy density than carbohydrates (averaging 9 kcal/gram versus 4.3 kcal/gram respectively). Thus, on a per gram basis, more energy can be stored in fats than can be stored in carbohydrates. Additionally, fats are packaged into spherical globules to minimize interactions with the water-based plasma membrane, while glycogen is a large branched carbohydrate that cannot be compacted for storage.
 ===CHECKS===
 fats have a higher energy density than carbohydrates (averaging 9 kcal/gram versus 4.3 kcal/gram respectively)
@@ -171,13 +170,13 @@ glycogen is a large branched carbohydrate that cannot be compacted for storage
   question="A fat molecule made of three fatty acids linked to a glycerol molecule is called a ________."
   answer="triacylglycerol"
   accept="triglyceride"
-  hint="This is the storage form of fat in adipocytes, and its name describes the three fatty acid chains it carries."
+  hint="Reread the paragraph after the glycerol and fatty acid figure."
 >}}
 
 {{< multiplechoice
-  question="Fats are a ________ and are also known as triacylglycerols or triglycerides."
+  question="According to the section summary, fats are a ________."
   answer="stored form of energy"
-  hint="Compare this role, named in the summary, to what waxes, phospholipids, and steroids do instead."
+  hint="Reread the summary's third sentence."
 >}}
 waxy protective coating
 membrane's major constituent
@@ -187,10 +186,23 @@ stored form of energy
 
 ### Differentiate between saturated and unsaturated fatty acids
 
+{{< textin
+  question="A fat formed artificially by hydrogenating oils, which rearranges its double bonds compared with naturally occurring lipids, is called a ________."
+  answer="trans fat"
+  hint="Reread the subsection that follows the saturated and unsaturated comparison figure."
+>}}
+
+{{< textin
+  question="A polyunsaturated fat that the human body requires but cannot make itself, and so must obtain from the diet, is called a(n) ________."
+  answer="omega fat"
+  accept="omega fatty acid|essential fatty acid|omega-3 fatty acid|omega-6 fatty acid"
+  hint="Reread the first paragraph of the last subsection of Fats and Oils."
+>}}
+
 {{< multiplechoice
   question="Saturated fats have all of the following characteristics except:"
   answer="they tend to dissolve in water easily"
-  hint="Lipids are hydrophobic — which property below contradicts that?"
+  hint="Reread the section's opening paragraph and the saturated-fat sentences in Fats and Oils."
 >}}
 they are solid at room temperature
 they have single bonds within the carbon chain
@@ -198,7 +210,7 @@ they are usually obtained from animal sources
 they tend to dissolve in water easily
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why have trans fats been banned from some restaurants? How are they created?" hint="Consider what hydrogenation does to the double bonds in the hydrocarbon chain." >}}
+{{< selfcheck question="Why have trans fats been banned from some restaurants? How are they created?" hint="Reread the Trans Fats subsection." >}}
 Trans fats are created artificially when hydrogen gas is bubbled through oils to solidify them. The double bonds of the *cis* conformation in the hydrocarbon chain may be converted to double bonds in the *trans* configuration. Some restaurants are banning trans fats because they cause higher levels of LDL, or "bad" cholesterol.
 ===CHECKS===
 trans fats are created artificially when hydrogen gas is bubbled through oils to solidify them
@@ -206,25 +218,12 @@ the double bonds of the cis conformation in the hydrocarbon chain may be convert
 some restaurants are banning trans fats because they cause higher levels of LDL, or bad cholesterol
 {{< /selfcheck >}}
 
-{{< textin
-  question="A long-chain hydrocarbon with one or more double bonds in its carbon chain is called a(n) ________."
-  answer="unsaturated fatty acid"
-  hint="Oleic acid, with a double bond at its eighth carbon, is an example."
->}}
-
-{{< textin
-  question="A polyunsaturated fat that the human body requires but cannot make itself, and so must obtain from the diet, is called a(n) ________."
-  answer="omega fat"
-  accept="omega fatty acid|essential fatty acid"
-  hint="Alpha-linolenic acid (ALA), EPA, and DHA are examples, and salmon and tuna are good dietary sources."
->}}
-
 ### Describe phospholipids and their role in cells
 
 {{< multiplechoice
   question="Phospholipids are important components of ________."
   answer="the plasma membrane of cells"
-  hint="Phospholipids form the bilayer that makes up which cellular structure?"
+  hint="Reread the first paragraph of Phospholipids."
 >}}
 the plasma membrane of cells
 the ring structure of steroids
@@ -233,26 +232,28 @@ the double bond in hydrocarbon chains
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The major constituent of plasma membranes, made of two fatty acids and a phosphate-containing group attached to a glycerol backbone, is called a ________."
-  answer="phospholipid"
-  hint="It has a hydrophilic head and two hydrophobic tails."
+  question="Summary: Phospholipids have a glycerol or sphingosine backbone to which two fatty acid chains and a ________ are attached."
+  answer="phosphate-containing group"
+  accept="modified phosphate group"
+  hint="Reread the first paragraph of Phospholipids and the caption of the phospholipid structure figure."
 >}}
 
 {{< textin
   question="Phospholipids comprise the membrane's ________."
   answer="matrix"
-  hint="The summary names this structural role phospholipids play in every cellular membrane."
+  hint="Reread the paragraph after the phospholipid bilayer figure."
 >}}
 
 ### Define the basic structure of a steroid and some steroid functions
 
 {{< textin
-  question="A lipid built from four fused hydrocarbon rings forming a planar structure is called a ________."
-  answer="steroid"
-  hint="Cholesterol and cortisol both belong to this class of lipid."
+  question="Summary: Steroids are another class of lipids. Their basic structure has four fused ________."
+  answer="carbon rings"
+  accept="rings|hydrocarbon rings"
+  hint="Reread the summary's sentences on steroids."
 >}}
 
-{{< selfcheck question="Part of cortisol's role in the body involves passing through the plasma membrane to initiate signaling inside a cell. Describe how the structures of cortisol and the plasma membrane allow this to occur." hint="Think about which part of the phospholipid bilayer a hydrophobic steroid would interact with." >}}
+{{< selfcheck question="Part of cortisol's role in the body involves passing through the plasma membrane to initiate signaling inside a cell. Describe how the structures of cortisol and the plasma membrane allow this to occur." hint="Reread the paragraph after the phospholipid bilayer figure and the first paragraph of Steroids." >}}
 Cortisol is a small, generally hydrophobic molecule, while the phospholipids that create plasma membranes have a hydrophilic head and hydrophobic tails. Since cortisol is hydrophobic, it can interact with the sequestered tails of the phospholipids in the center of the plasma membrane. This, along with its small size, allows cortisol to move through the plasma membrane to the inside of the cell.
 ===CHECKS===
 cortisol is a small, generally hydrophobic molecule
@@ -265,7 +266,7 @@ allows cortisol to move through the plasma membrane to the inside of the cell
   question="Cholesterol is also the precursor of steroid hormones such as ________."
   answer="testosterone"
   accept="estradiol"
-  hint="This sex hormone is named in the summary as an example of a steroid hormone cholesterol precedes."
+  hint="Reread the summary's last sentence."
 >}}
 
 ### Explain how cholesterol helps maintain the plasma membrane's fluid nature
@@ -273,7 +274,7 @@ allows cortisol to move through the plasma membrane to the inside of the cell
 {{< multiplechoice
   question="Cholesterol is an integral part of plasma membranes. Based on its structure, where is it found in the membrane?"
   answer="within the tail bilayer"
-  hint="Cholesterol is hydrophobic — which region of the bilayer is nonpolar?"
+  hint="Reread the last paragraph of Steroids and the phospholipid bilayer figure."
 >}}
 on the extracellular surface
 embedded with the phospholipid heads
@@ -281,18 +282,27 @@ within the tail bilayer
 attached to the intracellular surface
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A fat formed artificially by hydrogenating oils, which rearranges its double bonds compared with naturally occurring lipids, is called a ________."
-  answer="trans fat"
-  hint="Margarine and shortening are often made this way, and eating a lot of it raises LDL cholesterol."
+{{< multiplechoice
+  question="In plant cells, which molecule does the section name as the plasma-membrane counterpart of cholesterol in animal cells?"
+  answer="phytosterol"
+  hint="Reread the last paragraph of Steroids."
 >}}
+cortisol
+phytosterol
+estradiol
+{{< /multiplechoice >}}
 
-{{< textin
-  question="Cholesterol is an important constituent of the plasma membrane, where it helps to maintain the membrane's ________."
-  answer="fluid nature"
-  hint="The summary names this property of the membrane that cholesterol keeps intact."
+{{< multiplechoice
+  question="Besides steroid hormones, which of these does the section say cholesterol is also a precursor to?"
+  answer="vitamin D"
+  hint="Reread the last paragraph of Steroids."
 >}}
+omega-3 fatty acids
+phosphatidylcholine
+vitamin D
+glycerol
+{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 3.3: Lipids](https://openstax.org/books/biology-2e/pages/3-3-lipids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the manifest's file-type kind guess was wrong for seven of the ten figures (it called every JPEG a photo; the PNG phospholipid diagram it guessed right) — every structural-formula diagram (glycerol/fatty acid/triacylglycerol, stearic acid, oleic acid, the saturated/unsaturated comparison, alpha-linolenic acid, the phospholipid panel, the phospholipid bilayer, and cholesterol/cortisol) is a JPEG or PNG line drawing, not a photo, and is now marked `kind="diagram"`; only the otter and the waxy leaves are true photos. Several source alts used garbled OCR-style phrasing (e.g., "upper O upper H" for OH) and were rewritten to describe the structure cleanly, and a `longdesc` was added to every structural-formula and schematic figure, walking through the molecules and the structural difference each one shows (the kink at a *cis* double bond, the shared four-ring skeleton of cholesterol and cortisol); the two photos keep short alts with no `longdesc`. The one Link to Learning note is rendered as a callout with its bold name and the source URL kept. The end-of-section Review Questions and Critical Thinking Questions are adapted into the closing interactive Practice block (multiple choice and self-check respectively), lightly adding a space between number and unit in one Critical Thinking solution for readability ("9 kcal/gram", "4.3 kcal/gram") and a missing space before "bad" cholesterol in another; the last objective (cholesterol and membrane fluidity) is served by the source's only exercise on cholesterol, its position in the membrane, plus a recall item, because the section's own text and exercises never explain the fluidity mechanism; and seven key-term recall items (lipid, triacylglycerol, unsaturated fatty acid, omega fat, phospholipid, steroid, trans fat) are added from the glossary to round out every objective group to at least two exercises; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and five summary-derived items added, one per objective group left short of three exercises after the glossary pass — a cloze naming steroids as lipids' fourth major type, a select-the-term multiple choice on fats' role as a stored form of energy (distractors drawn from the module's own descriptions of what waxes, phospholipids, and steroids do instead), a cloze naming the membrane's matrix as phospholipids' structural role, a cloze naming testosterone as an example steroid hormone, and a cloze naming the membrane's fluid nature that cholesterol maintains — all four cloze items and the multiple choice drawn from the section's own Summary sentences; and the body's "alpha-linoleic acid (ALA)" corrected to "alpha-linolenic acid", the omega-3 that the module's own figure and caption name (linoleic acid is an omega-6), reported as a source defect.</small>
+<small>This section is adapted from [Biology 2e, Section 3.3: Lipids](https://openstax.org/books/biology-2e/pages/3-3-lipids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the manifest's file-type kind guess was wrong for seven of the ten figures (it called every JPEG a photo; the PNG phospholipid diagram it guessed right) — every structural-formula diagram (glycerol/fatty acid/triacylglycerol, stearic acid, oleic acid, the saturated/unsaturated comparison, alpha-linolenic acid, the phospholipid panel, the phospholipid bilayer, and cholesterol/cortisol) is a JPEG or PNG line drawing, not a photo, and is now marked `kind="diagram"`; only the otter and the waxy leaves are true photos. Several source alts used garbled OCR-style phrasing (e.g., "upper O upper H" for OH) and were rewritten to describe the structure cleanly, and a `longdesc` was added to every structural-formula and schematic figure, walking through the molecules and the structural difference each one shows (the kink at a *cis* double bond, the shared four-ring skeleton of cholesterol and cortisol); the two photos keep short alts with no `longdesc`. The one Link to Learning note is rendered as a callout with its bold name and the source URL kept. The end-of-section Review Questions and Critical Thinking Questions are adapted into the closing interactive Practice block (multiple choice and self-check respectively), lightly adding a space between number and unit in one Critical Thinking solution for readability ("9 kcal/gram", "4.3 kcal/gram") and a missing space before "bad" cholesterol in another; the last objective (cholesterol and membrane fluidity) is served by the source's only exercise on cholesterol, its position in the membrane, plus two multiple-choice items written from the Steroids subsection's own sentences (the plant counterpart of cholesterol, and cholesterol as a precursor to vitamin D), because the section's own text and exercises never explain the fluidity mechanism; four key-term recall items (wax, triacylglycerol, trans fat, omega fat) are added from the glossary; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and six summary-derived items added — a cloze naming steroids as lipids' fourth major type, a select-the-term multiple choice on fats' role as a stored form of energy (the summary sentence's first clause as its stem; distractors drawn from the module's own descriptions of what waxes, phospholipids, and steroids do instead), a cloze naming the phosphate-containing group attached to phospholipids' backbone, a cloze naming the membrane's matrix as phospholipids' structural role, a cloze naming the four fused carbon rings of a steroid's basic structure, and a cloze naming testosterone as an example steroid hormone — all five cloze items and the multiple choice drawn from the section's own Summary sentences; and the body's "alpha-linoleic acid (ALA)" corrected to "alpha-linolenic acid", the omega-3 that the module's own figure and caption name (linoleic acid is an omega-6), reported as a source defect. One cross-item overlap between two source items is kept and named here: the cortisol Critical Thinking question's model answer, revealed on request, says cortisol interacts with the phospholipid tails "in the center of the plasma membrane," which bears on the next group's Review Question on where cholesterol sits in the membrane (key "within the tail bilayer"); each item stays in its own objective group, so neither can be moved past the other.</small>

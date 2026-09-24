@@ -1667,6 +1667,16 @@ test('textin shortcode rules', () => {
       .errors.some((e) => e.includes('is 5 words')),
     'a text answer over four words (after normalization drops the leading article) is rejected',
   );
+  assert.equal(
+    lintHugo('{{< textin question="Name it." answer="central dogma" accept="central dogma of molecular biology" hint="h" >}}', 'content/test.md').errors.length,
+    0,
+    'an accept member may run to seven words, to credit the full form of a short answer',
+  );
+  assert(
+    lintHugo('{{< textin question="Name it." answer="cell" accept="one thin cell membrane that surrounds all organelles" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('is 8 words') && e.includes('accept member')),
+    'an accept member over seven words is rejected',
+  );
   assert(
     lintHugo('{{< textin question="Name it." answer="cell" accept="cell" hint="h" >}}', 'content/test.md')
       .errors.some((e) => e.includes('normalizes the same as')),
@@ -3111,7 +3121,7 @@ test('a mediafigure directly above an item may not print that item\'s answer', (
 // The grader folds a regular plural (form + s / + es) onto every accepted
 // form (September 6, 2026), so a listed regular plural is dead weight and a
 // prompt that prints the folded plural is a retype hazard.
-test('textin: a regular-plural accept member is redundant; an irregular plural is not', () => {
+test('textin: a regular-plural or regular-singular accept member is redundant; an irregular one is not', () => {
   const redundant = lintHugo('{{< textin question="Name the unit." answer="cell" accept="cells" hint="h" >}}', 'content/test.md').errors;
   assert.ok(redundant.some((e) => e.includes('accept member "cells" is the regular plural of answer "cell"')), redundant.join('\n'));
   const esForm = lintHugo('{{< textin question="Name it." answer="gas" accept="gases" hint="h" >}}', 'content/test.md').errors;
@@ -3121,16 +3131,29 @@ test('textin: a regular-plural accept member is redundant; an irregular plural i
   const irregular = lintHugo('{{< textin question="Name it." answer="hypothesis" accept="hypotheses" hint="h" >}}', 'content/test.md').errors;
   assert.ok(!irregular.some((e) => e.includes('regular plural')), irregular.join('\n'));
   const singular = lintHugo('{{< textin question="Name them." answer="organisms" accept="organism" hint="h" >}}', 'content/test.md').errors;
-  assert.ok(!singular.some((e) => e.includes('regular plural')), 'a singular alternate of a plural key is not a fold');
+  assert.ok(singular.some((e) => e.includes('accept member "organism" is the regular singular of answer "organisms"')), singular.join('\n'));
+  const irregularSingular = lintHugo('{{< textin question="Name them." answer="bacteria" accept="bacterium" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(!irregularSingular.some((e) => e.includes('regular singular')), irregularSingular.join('\n'));
+  const notAPlural = lintHugo('{{< textin question="Name the rank." answer="genus" accept="genu" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(!notAPlural.some((e) => e.includes('regular singular')), 'genus is not a plural, so genu is not a fold');
+  // A mutually-folding pair beside another key flags only the second member.
+  const pair = lintHugo('{{< textin question="Name them." answer="AChR" accept="receptors|receptor" hint="h" >}}', 'content/test.md').errors
+    .filter((e) => e.includes('regular singular') || e.includes('regular plural'));
+  assert.equal(pair.length, 1, pair.join('\n'));
+  assert.ok(pair[0].includes('accept member "receptor" is the regular singular of accept member "receptors"'), pair[0]);
 });
 
-test('textin: a question or hint that prints the folded plural of a member is a retype hazard', () => {
+test('textin: a question or hint that prints the folded plural or singular of a member is a retype hazard', () => {
   const q = lintHugo('{{< textin question="Ribosomes build proteins; name one such organelle." answer="ribosome" hint="h" >}}', 'content/test.md').errors;
   assert.ok(q.some((e) => e.includes('answer "ribosome"\'s plural "ribosomes" appears as a whole-word run in the question')), q.join('\n'));
   const h = lintHugo('{{< textin question="Name the organelle." answer="ribosome" hint="Think of ribosomes." >}}', 'content/test.md').errors;
   assert.ok(h.some((e) => e.includes('plural "ribosomes" appears as a whole-word run in the hint')), h.join('\n'));
   const clean = lintHugo('{{< textin question="Name the organelle that builds proteins." answer="ribosome" hint="Ribosomal RNA is part of it." >}}', 'content/test.md').errors;
   assert.ok(!clean.some((e) => e.includes('whole-word run')), clean.join('\n'));
+  const singularQ = lintHugo('{{< textin question="Each receptor binds one ligand; name the class of proteins." answer="receptors" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(singularQ.some((e) => e.includes('answer "receptors"\'s singular "receptor" appears as a whole-word run in the question')), singularQ.join('\n'));
+  const singularH = lintHugo('{{< textin question="Name the class of proteins." answer="receptors" hint="Think of a receptor." >}}', 'content/test.md').errors;
+  assert.ok(singularH.some((e) => e.includes('singular "receptor" appears as a whole-word run in the hint')), singularH.join('\n'));
 });
 
 // ---------------------------------------------------------------------------

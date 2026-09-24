@@ -45,7 +45,7 @@ A New World monkey. The howler monkey is native to Central and South America. It
 
 Apes evolved from the catarrhines in Africa midway through the Cenozoic, approximately 25 million years ago. Apes are generally larger than monkeys and they do not possess a tail. All apes are capable of moving through trees, although many species spend most their time on the ground. When walking quadrupedally, monkeys walk on their palms, while apes support the upper body on their knuckles. Apes are more intelligent than monkeys, and they have larger brains relative to body size. The apes are divided into two groups. The lesser apes comprise the family **Hylobatidae**, including gibbons and siamangs. The great apes include the genera **_Pan_** (chimpanzees and bonobos) **_Gorilla_** (gorillas), **_Pongo_** (orangutans), and **_Homo_** (humans) (pictured below).
 
-{{< mediafigure src="biology/Figure_29_07_02b" kind="diagram" alt="A line drawing of five upright-walking skeletons in profile, left to right and each labeled beneath by name: a small, forward-bent gibbon skeleton with very long arms; a tall, straight-standing human skeleton with short arms; a stooped chimpanzee skeleton with arms reaching to the knees; a large, heavily built, hunched gorilla skeleton with very long, thick arms; and a stooped orangutan skeleton with the longest arms of the five and short, bowed legs." longdesc="Five skeletons stand in profile, left to right, each labeled by name below it. Gibbon: the smallest skeleton, bent forward at the hips, with very long arms reaching nearly to the ground and short legs. Human: the tallest and only fully erect skeleton, spine and legs straight, arms hanging at the sides and reaching only to mid-thigh. Chimpanzee: a moderate-sized, forward-leaning skeleton with arms longer than the legs, hands reaching toward the knees. Gorilla: the largest and most heavily built skeleton, hunched forward with very long, thick arms and a pronounced browridge on the skull. Orangutan: a stooped skeleton with the longest arms relative to its body of the five, short bowed legs, and long curved fingers." >}}
+{{< mediafigure src="biology/Figure_29_07_02b" kind="diagram" alt="A line drawing of five standing skeletons in profile, left to right and each labeled beneath by name: a small, upright gibbon skeleton with very long arms; a tall, straight-standing human skeleton with short arms; a stooped chimpanzee skeleton with arms reaching to the knees; a large, heavily built, hunched gorilla skeleton with very long, thick arms; and a stooped orangutan skeleton with the longest arms of the five and short, bowed legs." longdesc="Five skeletons stand in profile, left to right, each labeled by name below it. Gibbon: the smallest skeleton, standing upright with a vertical spine, with very long arms reaching nearly to the ground and short legs. Human: the tallest skeleton, standing erect with spine and legs straight, arms angled slightly forward with the hands at about hip level. Chimpanzee: a moderate-sized, forward-leaning skeleton with arms longer than the legs, hands reaching toward the knees. Gorilla: the largest and most heavily built skeleton, hunched forward with very long, thick arms and a pronounced browridge on the skull. Orangutan: a stooped skeleton with the longest arms relative to its body of the five, short bowed legs, and long curved fingers." >}}
 Primate skeletons. All great apes have a similar skeletal structure. (credit: modification of work by Tim Vickers)
 {{< /mediafigure >}}
 
@@ -61,7 +61,7 @@ The family Hominidae of order Primates includes the hominoids: the great apes an
 
 Determining the true lines of descent in hominins is difficult. In years past, when relatively few hominin fossils had been recovered, some scientists believed that considering them in order, from oldest to youngest, would demonstrate the course of evolution from early hominins to modern humans. In the past several years, however, many new fossils have been found, and it is clear that there was often more than one species alive at any one time and that many of the fossils found (and species named) represent hominin species that died out and are not ancestral to modern humans.
 
-{{< mediafigure src="biology/Figure_B29_07_03" kind="diagram" alt="A cladogram tracing primate relationships from a shared ancestor through Old World monkeys, gibbons, orangutans, gorillas, and chimpanzees to a lineage of Australopithecus, Paranthropus, and Homo species ending at modern humans." longdesc="The tree's trunk runs left to right, with terminal branches ending in taxon names at the right edge, listed here top to bottom as drawn. First fork: Cercopithecoidae (common name Baboon) branches off; the remaining trunk is labeled Hominoidea. Second fork: Hylobatidae (Gibbon) branches off; the remaining trunk is labeled Hominidae. Third fork: Pongidae (Orangutan) branches off; the remaining trunk is labeled Homininae. Fourth fork, off Homininae: Gorillinae (Gorilla) branches off. Fifth fork: the trunk splits into a branch for Panini (Chimpanzee) and the human line; on the human line, an unresolved branch marked with a question mark for Sahelanthropus tchadensis and Ardipithecus (no common name given) leaves first, and the trunk is labeled Hominini beyond that point. From Hominini, the remaining taxa branch off in this order, top to bottom: Australopithecus anamensis; a branch labeled Orrorin, marked with an asterisk noting its position is still debated; then a cluster of four close branches — Australopithecus afarensis, Australopithecus bahrelghazali, Australopithecus garhi, and Australopithecus africanus; then a cluster of three — Paranthropus aethiopicus, Paranthropus boisei, and Paranthropus robustus; then three single branches in sequence closer to the genus Homo — Homo gautengensis, Homo habilis, and Homo erectus — followed by a final cluster of four at the bottom — Homo neanderthalensis, Homo heidelbergensis, Homo rhodesiensis, and Homo sapiens, labeled Humans. No dates are printed on the chart; only the branching order and the asterisk marking Orrorin's debated placement." >}}
+{{< mediafigure src="biology/Figure_B29_07_03" kind="diagram" alt="A cladogram tracing primate relationships from a shared ancestor through Old World monkeys, gibbons, orangutans, gorillas, and chimpanzees to a lineage of Australopithecus, Paranthropus, and Homo species ending at modern humans." longdesc="The tree's trunk runs left to right, with terminal branches ending in taxon names at the right edge, listed here top to bottom as drawn. First fork: Cercopithecoidae (common name Baboon) branches off; the remaining trunk is labeled Hominoidea. Second fork: Hylobatidae (Gibbon) branches off; the remaining trunk is labeled Hominidae. Third fork: Pongidae (Orangutan) branches off; the remaining trunk is labeled Homininae. Homininae then forks into just two branches: Gorillinae (Gorilla) at top and Panini (Chimpanzee) below. Between those two branches sits the label '? Sahelanthropus tchadensis, Ardipithecus' (no common name given); from beneath its question mark a line runs down, crossing the Panini branch without joining it, to a lineage labeled Hominini, so the chart leaves the human line's attachment unresolved. The Hominini line runs straight on to a tip labeled Orrorin, marked with an asterisk noting its position is still debated. From a node on that line, one branch leads up to Australopithecus anamensis and the other down to a lineage that splits three ways: a cluster of four close branches — Australopithecus afarensis, Australopithecus bahrelghazali, Australopithecus garhi, and Australopithecus africanus; a cluster of three — Paranthropus aethiopicus, Paranthropus boisei, and Paranthropus robustus; and a Homo group whose branches are Homo gautengensis, Homo habilis, Homo erectus, and a final cluster of four at the bottom — Homo neanderthalensis, Homo heidelbergensis, Homo rhodesiensis, and Homo sapiens, labeled Humans. No dates are printed on the chart; only the branching order, the question mark, and the asterisk marking Orrorin's debated placement." >}}
 Hominin phylogeny. This chart shows evolutionary relationship among Hominins and hypothesized relation to modern humans. (*still debated phylogeny position).
 {{< /mediafigure >}}
 
@@ -158,14 +158,8 @@ All primate species possess adaptations for climbing trees and probably descende
 A rotating shoulder joint
 Detection and processing of three-color vision
 Nails at the end of each digit
-Stereoscopic vision that allows the perception of depth
+A brain larger than those of most other mammals
 {{< /multiplechoice >}}
-
-{{< textin
-  question="Two overlapping fields of vision from the eyes that produce depth perception are called ________."
-  answer="stereoscopic vision"
-  hint="Forward-facing primate eyes are what make this depth-perceiving overlap possible."
->}}
 
 {{< textin
   question="Movement through the branches of trees by swinging using the arms is called ________."
@@ -173,12 +167,18 @@ Stereoscopic vision that allows the perception of depth
   hint="A rotating shoulder joint is one of the primate adaptations that makes this arm-swinging locomotion possible."
 >}}
 
+{{< textin
+  question="Two overlapping fields of vision from the eyes that produce depth perception are called ________."
+  answer="stereoscopic vision"
+  hint="Forward-facing primate eyes are what make this depth-perceiving overlap possible."
+>}}
+
 ### Describe the defining features of the major groups of primates
 
 {{< multiplechoice
   question="Which of the following is not an anthropoid?"
   answer="Lemurs"
-  hint="Anthropoids are monkeys, apes, and humans; this option belongs to the wet-nosed, prosimian side of the primate order instead."
+  hint="Look at the Evolution of Primates paragraphs that divide the primates into their two main groups."
 >}}
 Lemurs
 Monkeys
@@ -190,7 +190,7 @@ Humans
   question="The clade of New World monkeys, named for their broad noses, is called ________."
   answer="Platyrrhini"
   accept="platyrrhine"
-  hint="Its name literally means 'flat-nosed' and describes the arboreal monkeys of Central and South America."
+  hint="Look at the Evolution of Primates paragraph on the two groups of monkeys."
 >}}
 
 {{< textin
@@ -220,19 +220,20 @@ lacking a prominent chin
 {{< textin
   question="The genus of hominins that evolved in eastern Africa approximately four million years ago is ________."
   answer="Australopithecus"
-  hint="Its name means 'southern ape,' and the fossil nicknamed Lucy belongs to one of its species."
+  hint="Look at the Human Evolution paragraphs on the fossil nicknamed Lucy."
+>}}
+
+{{< textin
+  question="Anatomically modern humans are formally named ________."
+  answer="Homo sapiens sapiens"
+  accept="H. sapiens sapiens"
+  hint="Look at the Human Evolution paragraph on the origin of anatomically modern humans."
 >}}
 
 {{< textin
   question="A species that is more closely related to humans than to chimpanzees is called a ________."
   answer="hominin"
   hint="This term designates the species that evolved after the split of the primate line leading to humans."
->}}
-
-{{< textin
-  question="Anatomically modern humans are formally named ________."
-  answer="Homo sapiens sapiens"
-  hint="The species name is repeated twice to distinguish this subspecies from archaic forms such as Neanderthals."
 >}}
 
 ### Explain why scientists are having difficulty determining the true lines of descent in hominids
@@ -249,7 +250,7 @@ by about 2.5 million years ago there were at least two evolutionary lines of hom
 {{< multiplechoice
   question="Which of the following is part of a clade believed to have died out, leaving no descendants?"
   answer="*Paranthropus robustus*"
-  hint="This species belongs to a genus the section calls a dead end — one that left no descendants among modern humans."
+  hint="Check each option's genus against the Human Evolution subsections."
 >}}
 *Paranthropus robustus*
 *Australopithecus africanus*
@@ -270,4 +271,4 @@ All hominin species named to date turned out to be direct ancestors of modern hu
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 29.7: The Evolution of Primates](https://openstax.org/books/biology-2e/pages/29-7-the-evolution-of-primates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with alt text rewritten from each image rather than the manifest's source alt (several of which were bare or letter-spaced descriptions); Figure_29_07_02b (the five-species skeleton comparison) and Figure_B29_07_03 (the hominin phylogeny) re-kinded from the manifest's file-extension "photo" guess to "diagram," since both are line drawings rather than photographs; a longdesc added to both of those figures, walking the labeled skeletons left to right and the phylogeny's branches top to bottom, since neither one-line caption carries that detail; the "Link to Learning" note rendered as a callout with its embedded video kept as an external link; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with rubric checkpoints added to each self-check decomposing its model answer into check-off clauses with no new claims; eight key-term recall items (stereoscopic vision, brachiation, Platyrrhini, Catarrhini, prosimian, Australopithecus, hominin, Homo sapiens sapiens) added from the glossary; one locally written multiple choice ("Why can't hominin fossils simply be arranged from oldest to youngest…") added to the fourth Practice group from the section's own paragraph on the difficulty of ordering hominin fossils, since the module keys no other item to that objective; the Review Question "Which of the following human traits is not a shared characteristic of primates?" keeps its source key but replaces two distractors ("Hip structure supporting bipedalism" and "Enlarged brain area associated with vision, and reduced area associated with smell") with traits from the section's own list of shared primate adaptations (a rotating shoulder joint; stereoscopic vision), because the section says bipedalism differentiates humans from the other hominoids, which made the first a second correct answer, and never mentions the olfactory claim — reported as a source defect.</small>
+<small>This section is adapted from [Biology 2e, Section 29.7: The Evolution of Primates](https://openstax.org/books/biology-2e/pages/29-7-the-evolution-of-primates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with alt text rewritten from each image rather than the manifest's source alt (several of which were bare or letter-spaced descriptions); Figure_29_07_02b (the five-species skeleton comparison) and Figure_B29_07_03 (the hominin phylogeny) re-kinded from the manifest's file-extension "photo" guess to "diagram," since both are line drawings rather than photographs; a longdesc added to both of those figures, walking the labeled skeletons left to right and the phylogeny's branches top to bottom, since neither one-line caption carries that detail; the "Link to Learning" note rendered as a callout with its embedded video kept as an external link; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with rubric checkpoints added to each self-check decomposing its model answer into check-off clauses with no new claims; Practice items placed under the objective each tests, so the Review Question on shared primate characteristics, third in the source, comes first, before the anthropoid and dead-end-clade questions; eight key-term recall items (stereoscopic vision, brachiation, Platyrrhini, Catarrhini, prosimian, Australopithecus, hominin, Homo sapiens sapiens) added from the glossary; one locally written multiple choice ("Why can't hominin fossils simply be arranged from oldest to youngest…") added to the fourth Practice group from the section's own paragraph on the difficulty of ordering hominin fossils, since the module keys no other item to that objective; the Review Question "Which of the following human traits is not a shared characteristic of primates?" keeps its source key but replaces two distractors ("Hip structure supporting bipedalism" and "Enlarged brain area associated with vision, and reduced area associated with smell") with traits from the section's own list of shared primate characteristics (a rotating shoulder joint; a brain larger than those of most other mammals), because the section says bipedalism differentiates humans from the other hominoids, which made the first a second correct answer, and never mentions the olfactory claim — reported as a source defect.</small>

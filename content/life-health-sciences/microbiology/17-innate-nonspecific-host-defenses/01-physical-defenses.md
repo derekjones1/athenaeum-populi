@@ -196,7 +196,7 @@ the production of antibody molecules against pathogens
 {{< multiplechoice
   question="Which of the following constantly sheds dead cells along with any microbes that may be attached to those cells?"
   answer="epidermis"
-  hint="Which skin layer sits right at the surface, where dead, keratin-filled cells are continually replaced from below?"
+  hint="See the paragraph after the skin-layer figure in The Skin Barrier subsection."
 >}}
 epidermis
 dermis
@@ -207,7 +207,7 @@ mucous membrane
 {{< multiplechoice
   question="Which of the following uses a particularly dense suite of tight junctions to prevent microbes from entering the underlying tissue?"
   answer="the blood-brain barrier"
-  hint="This barrier protects the central nervous system, one of the body's most sensitive areas."
+  hint="See the Endothelia subsection."
 >}}
 the mucociliary escalator
 the epidermis
@@ -218,19 +218,21 @@ the urethra
 {{< textin
   question="The muscular contraction of the intestines that results in movement of material through the digestive tract is called ________."
   answer="peristalsis"
-  hint="This is the same mechanical action, named earlier in the section, that moves sloughed mucus through the intestines and rectum."
+  hint="See the paragraph on the digestive tract near the end of the Mucous Membranes subsection."
 >}}
 
 {{< textin
   question="______ are the hair-like appendages of cells lining parts of the respiratory tract that sweep debris away from the lungs."
   answer="cilia"
-  hint="Their beating motion drives the mucociliary blanket up and out of the lungs."
+  accept="cilium"
+  hint="Reread the Mucous Membranes subsection, on the lining of the respiratory tract."
 >}}
 
 {{< textin
   question="Secretions that bathe and moisten the interior of the intestines are produced by _______ cells."
   answer="goblet"
-  hint="These mucus-secreting cells are interspersed among the epithelial cells lining the intestinal tract."
+  accept="goblet cell"
+  hint="See the paragraph on the digestive tract near the end of the Mucous Membranes subsection, and the figure after it."
 >}}
 
 {{< sortbins question="Sort each item below under the type of physical defense it represents." hint="Cellular barriers are structures that block pathogens from entering the body; mechanical defenses are actions that physically remove pathogens once they are present." >}}
@@ -272,8 +274,8 @@ disruption of the mucociliary escalator, such as from smoking or cystic fibrosis
 {{< textin
   question="One strategy for treating *Clostridioides difficile* infections by restoring a patient's disrupted microbiota is called ________."
   answer="fecal transplantation"
-  accept="fecal transplant"
-  hint="This procedure transfers screened fecal material from a donor into the recipient's intestines."
+  accept="fecal transplant|faecal transplantation|faecal transplant|fecal microbiota transplantation|fecal microbiota transplant"
+  hint="See the last sentence of the Microbiome subsection's second paragraph."
 >}}
 
 {{< selfcheck question="Explain why treatment with antibiotics can increase a person's risk of a severe diarrheal infection such as one caused by *Clostridioides difficile*." hint="Think about what antibiotics do to the microbiota that ordinarily competes with pathogens for resources." >}}

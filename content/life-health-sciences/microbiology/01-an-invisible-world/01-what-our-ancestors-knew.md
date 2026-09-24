@@ -93,7 +93,7 @@ beverages like wine come from microbial fermentation
 the process bacteria, mold, or yeast use to convert sugars into alcohol, gases, and organic acids
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain how historical understandings of disease contributed to attempts to treat and contain disease." hint="Consider the quarantine practices and the treatments described earlier in this section." >}}
+{{< selfcheck question="Explain how historical understandings of disease contributed to attempts to treat and contain disease." hint="Reread The Iceman and Evidence of Early Treatments and Early Notions of Disease, Contagion, and Containment." >}}
 Ancient understandings of disease led people to both treat and contain it. Ötzi the Iceman appears to have tried to treat his infections with the woody fruit of the Fomitopsis betulinus fungus, which has laxative and antibiotic properties. To contain disease, the Bible describes quarantining people with leprosy and other diseases, showing an early understanding that disease could be communicable, and Ibn Sina advanced the practice of isolating sick people, laying the foundation for quarantine methods. Romans also built aqueducts and the Cloaca Maxima sewer to carry waste away from the city, infrastructure some researchers believe helped protect them from epidemics of waterborne illness.
 ===CHECKS===
 Ötzi the Iceman appears to have tried to treat his infections with the woody fruit of the Fomitopsis betulinus fungus
@@ -117,7 +117,7 @@ As microbiology has developed, it has allowed the broader discipline of biology 
 
 **Check Your Understanding**
 
-{{< selfcheck question="How did the discovery of microbes change human understanding of disease?" hint="Consider what could not be confirmed about microbes before Leeuwenhoek's observations, and what the microbiologists who followed him were then able to show." >}}
+{{< selfcheck question="How did the discovery of microbes change human understanding of disease?" hint="Reread The Birth of Microbiology." >}}
 The discovery of microbes, beginning with Leeuwenhoek's microscope observations in 1675, allowed scientists to move from suspecting that invisible creatures caused disease to demonstrating it. During the Golden Age of Microbiology, Robert Koch was the first to demonstrate the connection between a single, isolated microbe and a known human disease, discovering the bacteria that cause anthrax, cholera, and tuberculosis. Louis Pasteur showed that individual microbial strains had unique properties and demonstrated that fermentation is caused by microorganisms.
 ===CHECKS===
 allowed scientists to move from suspecting that invisible creatures caused disease to demonstrating it
@@ -162,22 +162,23 @@ Because individual microbes are generally too small to be seen with the naked ey
 
 ### Describe how our ancestors improved food with the use of invisible microbes
 
+{{< textin
+  question="The process by which microbes turn grape juice into wine is called ________."
+  answer="fermentation"
+  accept="microbial fermentation"
+  hint="Reread the paragraph just above the yeast-and-bread figure."
+>}}
+
 {{< multiplechoice
   question="Which of the following foods is NOT made by fermentation?"
   answer="orange juice"
-  hint="Three of these are made by microbes converting sugars into alcohol, gases, and acids; ask which one is simply squeezed from fruit, with no microbial step."
+  hint="Reread the first paragraph of Fermented Foods and Beverages."
 >}}
 beer
 bread
 cheese
 orange juice
 {{< /multiplechoice >}}
-
-{{< textin
-  question="The process by which microbes turn grape juice into wine is called ________."
-  answer="fermentation"
-  hint="This is the process that converts sugars into alcohol, gases, and organic acids using bacteria, mold, or yeast."
->}}
 
 {{< selfcheck question="What are some ways people use microbes?" hint="Think about the fermented foods and beverages described earlier in this section." >}}
 One way ancient and modern people have used microbes is to make fermented foods and beverages, such as beer, wine, bread, yogurt, cheese, and pickled vegetables, using bacteria, mold, or yeast to convert sugars into alcohol, gases, and organic acids. People have also used microorganisms without knowing it, such as yeast, whose cells metabolize the carbohydrates in flour and produce the carbon dioxide that causes bread to rise.
@@ -188,7 +189,7 @@ yeast, whose cells metabolize the carbohydrates in flour
 produce the carbon dioxide that causes bread to rise
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain how the discovery of fermented foods likely benefited our ancestors." hint="Consider what fermentation does to food besides changing its taste, and how people first stumbled onto it." >}}
+{{< selfcheck question="Explain how the discovery of fermented foods likely benefited our ancestors." hint="Reread Fermented Foods and Beverages." >}}
 Fermentation likely benefited our ancestors by helping them preserve food and enhance its taste, even though they discovered this by accident—perhaps by drinking old milk that had curdled or old grape juice that had fermented. Once they understood this, they were able to harness the power of fermentation deliberately to make products like bread, cheese, and wine.
 ===CHECKS===
 helping them preserve food and enhance its taste
@@ -202,7 +203,7 @@ harness the power of fermentation deliberately to make products like bread, chee
 {{< multiplechoice
   question="Who is considered the \"father of Western medicine\"?"
   answer="Hippocrates"
-  hint="This Greek physician rejected supernatural explanations for disease, posited natural causes instead, and is credited with the oath new physicians take to do no harm."
+  hint="Reread the paragraphs that follow the Cloaca Maxima figure."
 >}}
 Marcus Terentius Varro
 Thucydides
@@ -213,7 +214,7 @@ Hippocrates
 {{< multiplechoice
   question="Who proposed that swamps might harbor tiny, disease-causing animals too small to see?"
   answer="Marcus Terentius Varro"
-  hint="This Roman writer described \"certain minute creatures . . . which cannot be seen by the eye\" living in swamps."
+  hint="Reread the paragraph that quotes *Res Rusticae*."
 >}}
 Thucydides
 Marcus Terentius Varro
@@ -224,20 +225,20 @@ Louis Pasteur
 {{< textin
   question="Thucydides is known as the father of ________."
   answer="scientific history"
-  hint="He is remembered for advocating evidence-based analysis of cause-and-effect reasoning, using the Athenian plague as his evidence."
+  hint="Reread the first sentence of the Thucydides paragraph."
 >}}
 
 {{< textin
   question="Researchers think that Ötzi the Iceman may have been infected with ________ disease."
   answer="Lyme"
   accept="Lyme disease"
-  hint="Researchers found evidence of the bacterium Borrelia burgdorferi in his remains."
+  hint="Reread The Iceman and Evidence of Early Treatments."
 >}}
 
 {{< multiplechoice
   question="What did Thucydides learn by observing the Athenian plague?"
   answer="Survivors did not get re-infected, even while caring for the sick"
-  hint="Think about what happened to people who survived the plague and then cared for the sick."
+  hint="Reread the Thucydides paragraph in Early Notions of Disease, Contagion, and Containment."
 >}}
 Disease was caused by bad air, or "miasmatic odors"
 Survivors did not get re-infected, even while caring for the sick
@@ -245,7 +246,7 @@ Minute creatures too small to see could float in the air and cause serious disea
 People with leprosy should be quarantined
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What evidence would you use to support this statement: Ancient people thought that disease was transmitted by things they could not see." hint="Consider the quarantine practices and the theories about bad air or unseen creatures described in this section." >}}
+{{< selfcheck question="What evidence would you use to support this statement: Ancient people thought that disease was transmitted by things they could not see." hint="Reread Early Notions of Disease, Contagion, and Containment." >}}
 The Bible's practice of quarantining people with leprosy and other diseases suggests that people understood diseases could be communicable, even though they could not see the cause. The ancient Greeks attributed disease to bad air, or "miasmatic odors." Marcus Terentius Varro went further, writing that "certain minute creatures . . . which cannot be seen by the eye . . . float in the air and enter the body through the mouth and nose and there cause serious diseases."
 ===CHECKS===
 quarantining people with leprosy and other diseases suggests that people understood diseases could be communicable
@@ -259,7 +260,7 @@ certain minute creatures . . . which cannot be seen by the eye . . . float in th
 {{< multiplechoice
   question="Who was the first to observe \"animalcules\" under the microscope?"
   answer="Antonie van Leeuwenhoek"
-  hint="This Dutch cloth merchant built a lens powerful enough to observe single-celled organisms in a drop of rain water in 1675."
+  hint="Reread the first paragraph of The Birth of Microbiology."
 >}}
 Antonie van Leeuwenhoek
 Ötzi the Iceman
@@ -270,10 +271,11 @@ Robert Koch
 {{< textin
   question="During the ________ (1857–1914), microbiologists, including Louis Pasteur and Robert Koch, discovered many new connections between the fields of microbiology and medicine."
   answer="Golden Age of Microbiology"
-  hint="This 57-year period is named for a burst of major discoveries, roughly two centuries after microbes were first seen under a microscope."
+  accept="Golden Age"
+  hint="Reread the second paragraph of The Birth of Microbiology."
 >}}
 
-{{< selfcheck question="Why was the invention of the microscope important for microbiology?" hint="Consider what could not be confirmed about microbes before Leeuwenhoek's observations." >}}
+{{< selfcheck question="Why was the invention of the microscope important for microbiology?" hint="Reread the first paragraph of The Birth of Microbiology." >}}
 Before the microscope, the existence of microbes could not be definitively confirmed, even though some people suspected invisible "minute creatures" caused disease. The microscope let Antonie van Leeuwenhoek observe single-celled organisms for the first time in 1675, and it later let Golden Age microbiologists such as Robert Koch demonstrate the connection between a single, isolated microbe and a known human disease.
 ===CHECKS===
 the existence of microbes could not be definitively confirmed
@@ -283,4 +285,4 @@ Robert Koch demonstrate the connection between a single, isolated microbe and a 
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 1.1: What Our Ancestors Knew](https://openstax.org/books/microbiology/pages/1-1-what-our-ancestors-knew) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP; two of the six re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the lumbar-puncture and Cloaca Maxima figures each carry a genuine drawn diagram — an anatomical overlay and a historical city map — alongside a photo panel), the other four confirmed as "photo"; every alt rewritten from the source's alt text to describe only what is visible in the vendored image (dropping an unverifiable count of latrine openings the source alt gave and adding the "CO₂" caption text baked into the fermentation figure); the two Check Your Understanding boxes (three bullets total) rendered as three body self-checks, each with a model answer and rubric assembled from the sentences of this module's preceding subsections, since the source prints no answer key for them; the Clinical Focus box rendered as a callout with its closing question kept as unanswered bulleted prose and its "Jump to the next Clinical Focus box" link replaced with a plain sentence linking to Section 1.2; the Micro Connection box rendered as a callout with its tool-name bolding kept; eight footnoted citations rendered as inline parenthetical citations after the sentences they support (their bare access URLs dropped, DOIs kept); the module's cross-reference to "How We See the Invisible World" (m58784, the start of Chapter 2, not yet authored) kept as plain text with no link; the source's misprint "Vibrio cholera" corrected to the valid binomial "Vibrio cholerae", which the book itself prints in twelve other modules (reported as a source defect); the source's misspelling "refered" in the al-Razi paragraph corrected to "referred" (also reported); the four Multiple Choice and three Fill in the Blank items keep the source's own keys, options, and order and were sorted into the Practice block by objective; model answers for two Short Answer and two Critical Thinking questions are written from this section's text, since the source prints no answer key for them (four, plus the three Check Your Understanding self-checks above — seven author-written model answers on this page in total); one cloze text-recall item ("Golden Age of Microbiology") added from the module's own summary sentence to round out the birth-of-microbiology objective group, which the source's own exercise sets left thin; key terms compiled from the module's two defined terms, both defined from the book's Glossary appendix (no sentence-derived definitions on this page); 1 of the source's unkeyed Short Answer questions is graded from the module's own sentence rather than answered in prose — the source prints no key for it: the Thucydides Short Answer question is now a `multiplechoice` keyed by the module's sentence that survivors did not get re-infected, with distractors drawn from the module's other attributed ideas about the causes of disease (miasmatic odors, minute airborne creatures, quarantine of lepers). The Athenian plague's end date is corrected from the source's 410 BC to 426 BC with a visible Source note (erratum 377).</small>
+<small>This section is adapted from [Microbiology, Section 1.1: What Our Ancestors Knew](https://openstax.org/books/microbiology/pages/1-1-what-our-ancestors-knew) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP; two of the six re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the lumbar-puncture and Cloaca Maxima figures each carry a genuine drawn diagram — an anatomical overlay and a historical city map — alongside a photo panel), the other four confirmed as "photo"; every alt rewritten from the source's alt text to describe only what is visible in the vendored image (dropping an unverifiable count of latrine openings the source alt gave and adding the "CO₂" caption text baked into the fermentation figure); the two Check Your Understanding boxes (three bullets total) rendered as three body self-checks, each with a model answer and rubric assembled from the sentences of this module's preceding subsections, since the source prints no answer key for them; the Clinical Focus box rendered as a callout with its closing question kept as unanswered bulleted prose and its "Jump to the next Clinical Focus box" link replaced with a plain sentence linking to Section 1.2; the Micro Connection box rendered as a callout with its tool-name bolding kept; eight footnoted citations rendered as inline parenthetical citations after the sentences they support (their bare access URLs dropped, DOIs kept); the module's cross-reference to "How We See the Invisible World" (m58784, the start of Chapter 2, not yet authored) kept as plain text with no link; the source's misprint "Vibrio cholera" corrected to the valid binomial "Vibrio cholerae", which the book itself prints in twelve other modules (reported as a source defect); the source's misspelling "refered" in the al-Razi paragraph corrected to "referred" (also reported); the four Multiple Choice and three Fill in the Blank items keep the source's own keys, options, and order and were sorted into the Practice block by objective, with the fermentation Fill in the Blank item placed first in its group, ahead of the orange-juice Multiple Choice item whose stem prints its key; model answers for two Short Answer and two Critical Thinking questions are written from this section's text, since the source prints no answer key for them (four, plus the three Check Your Understanding self-checks above — seven author-written model answers on this page in total); one cloze text-recall item ("Golden Age of Microbiology") added from the module's own summary sentence to round out the birth-of-microbiology objective group, which the source's own exercise sets left thin; key terms compiled from the module's two defined terms, both defined from the book's Glossary appendix (no sentence-derived definitions on this page); 1 of the source's unkeyed Short Answer questions is graded from the module's own sentence rather than answered in prose — the source prints no key for it: the Thucydides Short Answer question is now a `multiplechoice` keyed by the module's sentence that survivors did not get re-infected, with distractors drawn from the module's other attributed ideas about the causes of disease (miasmatic odors, minute airborne creatures, quarantine of lepers). The Athenian plague's end date is corrected from the source's 410 BC to 426 BC with a visible Source note (erratum 377).</small>

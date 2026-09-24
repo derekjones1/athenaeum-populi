@@ -9,8 +9,7 @@ tracks the RETROACTIVE sweep over sections authored before the rule existed
 errata numbers, and any kept-as-printed calls.
 
 **How to run a chapter.** One Sonnet checker per chapter, read-only, briefed
-with the checker brief (the parent's memory holds it verbatim under the
-microbiology brief, §8; the rules are the playbook's). The parent
+with `docs/briefs/<book>/claim-pass.md` (the rules are the playbook's). The parent
 adjudicates every finding against the cited evidence before editing, then
 handles each accepted finding like a corrected key: visible source note,
 `data/openstax/reconciliation-decisions.json` entry (one per page, all

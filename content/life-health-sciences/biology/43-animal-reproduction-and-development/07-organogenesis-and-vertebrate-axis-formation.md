@@ -28,7 +28,7 @@ In vertebrates, one of the primary steps during organogenesis is the formation o
 
 The neural plate undergoes a series of cell movements where it rolls up and forms a tube called the **neural tube**, shown below. In further development, the neural tube will give rise to the brain and the spinal cord.
 
-{{< mediafigure src="biology/Figure_43_06_01" kind="diagram" eager="true" alt="Illustration shows a flat sheet. The middle of the sheet is the neural plate, and the epidermis is at either end. The neural plate border separates the neural plate from the epidermis. During convergence the plate folds, bringing the neural folds together. The neural folds fuse, forming the neural plate into a neural tube. The epidermis separates and folds around the outside." longdesc="Three panels, top to bottom, connected by two downward black block arrows. Panel 1: a flat layered sheet, colored (left to right) blue, a thin green stripe, wide purple, a thin green stripe, and blue again. Three leader lines label it: 'Neural plate border' points to the left green stripe (a matching green stripe sits at the right, unlabeled), 'Neural plate' points to the wide purple middle, and 'Epidermis' points to the right blue block. Panel 2: the same sheet has begun folding — its two edges have risen into a pair of flaps (each blue on the outside, green in the middle, purple at the base) tilting toward each other over a deepening purple groove. Two curved black arrows, labeled 'Convergence' at the left, curl inward from each flap toward the top center. A leader line labeled 'Neural fold' points to the raised edge of the right-hand flap. Panel 3: the sheet has closed into a wavy blue layer, labeled 'Epidermis', spanning the top; beneath it, a purple tube tapering to a point, labeled 'Neural tube' by a leader line, with a lighter purple line running down its center marking the lumen. Fourteen small green ovals — seven on each side, in two loosely staggered rows — sit tucked between the epidermis and the widening top of the tube." >}}
+{{< mediafigure src="biology/Figure_43_06_01" kind="diagram" eager="true" alt="Illustration shows a flat sheet. The middle of the sheet is the neural plate, and the epidermis is at either end. The neural plate border separates the neural plate from the epidermis. During convergence the plate folds, bringing the neural folds together. The neural folds fuse, forming the neural plate into a neural tube. The epidermis separates and folds around the outside." longdesc="Three panels, top to bottom, connected by two downward black block arrows. Panel 1: a flat layered sheet, colored (left to right) blue, a thin green stripe, wide purple, a thin green stripe, and blue again. Three leader lines label it: 'Neural plate border' points to the left green stripe (a matching green stripe sits at the right, unlabeled), 'Neural plate' points to the wide purple middle, and 'Epidermis' points to the right blue block. Panel 2: the same sheet has begun folding — its two edges have risen into a pair of flaps (each blue on the outside, green in the middle, purple at the base) tilting toward each other over a deepening purple groove. Two curved black arrows, labeled 'Convergence' at the left, curl inward from each flap toward the top center. A leader line labeled 'Neural fold' points to the raised edge of the right-hand flap. Panel 3: the sheet has closed into a wavy blue layer, labeled 'Epidermis', spanning the top; beneath it, an elongated purple tube with a rounded bottom and a green cap at its top, just under the epidermis, labeled 'Neural tube' by a leader line, with a lighter purple line running down its center marking the lumen. Fourteen small green ovals — seven on each side, in two loosely staggered rows — sit tucked between the epidermis and the widening top of the tube." >}}
 The central region of the ectoderm forms the neural tube, which gives rise to the brain and the spinal cord.
 {{< /mediafigure >}}
 
@@ -78,7 +78,7 @@ none of the above
 {{< multiplechoice
   question="The ribs form from the ________."
   answer="somites"
-  hint="This structure also gives rise to the vertebrae, the dermis of the dorsal skin, and the skeletal muscles of the back — one of four options names the segmented groups of mesoderm cells responsible for all of them."
+  hint="Reread the paragraph on what the mesoderm develops into."
 >}}
 notochord
 neural plate
@@ -115,6 +115,19 @@ the process of differentiation is regulated by cellular signaling cascades
 
 ### Identify the anatomical axes formed in vertebrates
 
+{{< textin
+  question="Formation of vertebrate ________ is another important developmental stage."
+  answer="axis"
+  accept="axes"
+  hint="This is the last sentence of the section summary."
+>}}
+
+{{< textin
+  question="In the Spemann and Mangold transplant experiment, dorsal cells moved into the belly region of another embryo were found to be genetically programmed to form the ________, which defines the axis."
+  answer="notochord"
+  hint="Reread the Vertebrate Axis Formation paragraph on the Spemann and Mangold experiment."
+>}}
+
 {{< selfcheck question="Explain the role of axis formation in development." hint="Name the three axes first, then explain what the Spemann and Mangold transplant experiment showed about how one of them gets set up." >}}
 Animal bodies have lateral-medial (left-right), dorsal-ventral (back-belly), and anterior-posterior (head-feet) axes. The dorsal cells are genetically programmed to form the notochord and define the axis. There are many genes responsible for axis formation. Mutations in these genes lead to the loss of symmetry required for organism development.
 ===CHECKS===
@@ -123,19 +136,6 @@ the dorsal cells are genetically programmed to form the notochord and define the
 there are many genes responsible for axis formation
 mutations in these genes lead to the loss of symmetry required for organism development
 {{< /selfcheck >}}
-
-{{< textin
-  question="Formation of vertebrate ________ is another important developmental stage."
-  answer="axis"
-  accept="axes"
-  hint="This is the section's own word for the line of symmetry it describes as lateral-medial, dorsal-ventral, and anterior-posterior."
->}}
-
-{{< textin
-  question="In the Spemann and Mangold transplant experiment, dorsal cells moved into the belly region of another embryo were found to be genetically programmed to form the ________, which defines the axis."
-  answer="notochord"
-  hint="This rod-shaped structure, described earlier as forming the central axis of the animal body, appeared a second time at the transplant site."
->}}
 
 ---
 

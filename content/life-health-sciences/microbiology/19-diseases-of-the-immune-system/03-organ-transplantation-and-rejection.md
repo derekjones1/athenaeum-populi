@@ -141,13 +141,14 @@ Over the next 6 months, Kerry follows her treatment plan and her symptoms do not
 {{< textin
   question="For a transplant to have the best chances of avoiding rejection, the genes coding for the ________ molecules should be closely matched between donor and recipient."
   answer="MHC"
-  hint="This is the same gene complex named in this section's human leukocyte antigen (HLA) discussion — its general abbreviation, not the human-specific one."
+  accept="HLA|major histocompatibility complex|human leukocyte antigen"
+  hint="Reread the paragraph that opens Transplant Rejection."
 >}}
 
 {{< multiplechoice
   question="Which three genes does this section name as the highly polymorphic MHC I genes that determine transplant compatibility?"
   answer="HLA-A, HLA-B, and HLA-C"
-  hint="These three gene names share the same two-letter human leukocyte antigen prefix, differing only in the final letter."
+  hint="Reread the first sentence of the paragraph on the odds that a randomly chosen donor matches a recipient."
 >}}
 HLA-A, HLA-B, and HLA-C
 HLA-D, HLA-E, and HLA-F
@@ -158,7 +159,7 @@ MHC I, MHC II, and HLA
 {{< multiplechoice
   question="Why is a parent usually a better match for transplanted tissue to a donor than a random individual of the same species?"
   answer="A genetic match between the MHC genes is much more likely between a parent and the recipient."
-  hint="Think about what the six-allele MHC genotype paragraph says is more likely to match within a family."
+  hint="Reread the last sentence of the paragraph on the odds that a randomly chosen donor matches a recipient."
 >}}
 A genetic match between the MHC genes is much more likely between a parent and the recipient.
 A parent's tissue requires no immunosuppressive therapy after transplantation.
@@ -182,7 +183,7 @@ isograft
 {{< multiplechoice
   question="Which type of graft is one in which the donor is the same species as the recipient, but genetically different?"
   answer="allograft"
-  hint="This is the graft type most human organ transplants use — a matched species, but not a genetically identical or related donor by definition."
+  hint="Reread the Procedure column of the Types of Tissue and Organ Grafts table."
 >}}
 autograft
 allograft
@@ -217,7 +218,7 @@ isograft
 {{< textin
   question="Because it is a “transplant” that can include APCs and T cells from the donor, a bone marrow transplant may induce a very specific type of rejection known as ________ disease."
   answer="graft-versus-host"
-  hint="This is the disease whose donor immune cells attack the recipient's tissue, rather than the reverse."
+  hint="Reread the opening sentence of the subsection that follows Transplant Rejection."
 >}}
 
 {{< multiplechoice
@@ -234,7 +235,7 @@ years
 {{< textin
   question="The mechanisms responsible for ________ GVHD are not well understood."
   answer="chronic"
-  hint="This is the type of GVHD that can develop months after a bone marrow transplant, in contrast to the acute type discussed earlier in the same paragraph."
+  hint="Reread the second paragraph of the subsection that follows Transplant Rejection."
 >}}
 
 ---

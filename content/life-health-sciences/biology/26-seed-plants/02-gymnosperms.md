@@ -34,7 +34,7 @@ Female cones, or **ovulate cones**, contain two ovules per scale. Each ovule has
 
 The figure below illustrates the life cycle of a conifer. The sporophyte (2*n*) phase is the longest phase in the life of a gymnosperm. The gametophytes (1*n*)—produced by microspores and megaspores—are reduced in size. It may take more than a year between pollination and fertilization while the pollen tube grows towards the growing female gametophyte (1*n*), which develops from a single megaspore. The slow growth of the pollen tube allows the female gametophyte time to produce eggs (1*n*).
 
-{{< mediafigure src="biology/Figure_26_02_01" kind="diagram" eager="true" alt="A three-panel flow diagram: a wide top panel with a mature pine tree and arrows to a female cone and a male cone; a gray arrow down to a cutaway of a cone scale showing a pollen tube growing toward an ovule, with labeled pollen and sperm nuclei; and a gray arrow left to a scatter of loose seeds, closing the cycle back to the tree." longdesc="Three panels — one wide panel across the top and two below — read clockwise starting at the top. Top panel: a mature pine tree labeled 'Sporophyte (2n) (mature tree),' with two black arrows pointing right — the upper arrow to a rounded, scaly female cone captioned 'Female cones grow in the upper branches where they may be fertilized by pollen blown on the wind from the male cones,' and the lower arrow to an elongated, cream-colored male cone captioned 'Male cones grow in the lower branches.' A large gray arrow points down from this panel to the lower-right panel: a cutaway of a cone scale labeled, left to right, 'Pollen grain,' 'Pollen tube,' and 'Ovule,' with 'Generative (sperm) nuclei (1n)' and 'Tube nucleus' naming structures inside the pollen tube, 'Megaspore (1n)' inside the ovule, and 'Scale' naming the woody structure itself; captioned 'A pollen tube forms, allowing the pollen to migrate toward the female gametophyte. Upon fertilization, a diploid zygote forms.' A second gray arrow points left from this panel to the lower-left panel: a scatter of oval seeds labeled 'Seeds (2n),' captioned 'Seeds are dispersed and grow into mature trees' — closing the cycle back to the mature tree at upper left." >}}
+{{< mediafigure src="biology/Figure_26_02_01" kind="diagram" eager="true" alt="A three-panel flow diagram: a wide top panel with a mature pine tree and arrows to a female cone and a male cone; a gray arrow down to a cutaway of a cone scale showing a pollen tube growing toward an ovule, with labeled pollen and sperm nuclei; and a gray arrow left to a scatter of loose seeds, whose caption closes the cycle back to the tree." longdesc="Three panels — one wide panel across the top and two below — read clockwise starting at the top. Top panel: a mature pine tree labeled 'Sporophyte (2n) (mature tree),' with two black arrows pointing right — the upper arrow to a rounded, scaly female cone captioned 'Female cones grow in the upper branches where they may be fertilized by pollen blown on the wind from the male cones,' and the lower arrow to an elongated, cream-colored male cone captioned 'Male cones grow in the lower branches.' A large gray arrow points down from this panel to the lower-right panel: a cutaway of a cone scale labeled, left to right, 'Pollen grain,' 'Pollen tube,' and 'Ovule,' with 'Generative (sperm) nuclei (1n)' naming two red dots and 'Tube nucleus' a blue dot at the tip, inside the pollen tube, 'Megaspore (1n)' inside the ovule, and 'Scale' naming the woody structure itself; captioned 'A pollen tube forms, allowing the pollen to migrate toward the female gametophyte. Upon fertilization, a diploid zygote forms.' A second gray arrow points left from this panel to the lower-left panel: a scatter of oval seeds labeled 'Seeds (2n),' captioned 'Seeds are dispersed and grow into mature trees' — the caption, not a drawn arrow, closes the cycle back to the mature tree at upper left." >}}
 Conifer life cycle. This image shows the life cycle of a conifer. Pollen from male cones blows up into upper branches, where it fertilizes female cones. The megaspore shown in the image develops into the female gametophyte as the pollen tube slowly grows toward it, eventually fusing with the egg and delivering a male nucleus, which combines with the female nucleus of the mature egg.
 {{< /mediafigure >}}
 
@@ -129,15 +129,15 @@ The gametophyte is the longest phase of the life cycle.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A seed plant with naked seeds exposed on modified leaves or in cones is called a(n) ________."
-  answer="gymnosperm"
-  hint="Its name comes from the Greek for “naked seed.”"
+  question="The layer of sporophyte tissue that surrounds the megasporangium, and later the embryo, is called the ________."
+  answer="integument"
+  hint="Reread this section's key terms."
 >}}
 
 {{< textin
-  question="The layer of sporophyte tissue that surrounds the megasporangium, and later the embryo, is called the ________."
-  answer="integument"
-  hint="This tissue layer becomes part of the mature seed coat."
+  question="Gymnosperms are ________ seed plants that produce naked seeds."
+  answer="heterosporous"
+  hint="Reread the first sentence of this section's summary."
 >}}
 
 {{< textin
@@ -152,7 +152,7 @@ The gametophyte is the longest phase of the life cycle.
 {{< multiplechoice
   question="In the northern forests of Siberia, a tall tree is most likely a:"
   answer="conifer"
-  hint="Cold, dry taiga forests favor the phylum whose thick cuticle and needle-shaped leaves reduce water loss and shed snow easily."
+  hint="Reread the paragraphs describing each gymnosperm phylum, at the one on the taiga."
 >}}
 conifer
 cycad
@@ -160,7 +160,7 @@ cycad
 gnetophyte
 {{< /multiplechoice >}}
 
-{{< selfcheck question="The Mediterranean landscape along the sea shore is dotted with pines and cypresses. The weather is not cold, and the trees grow at sea level. What evolutionary adaptation of conifers makes them suitable to the Mediterranean climate?" hint="Conifers are adapted to more than just cold — think about what a dry Mediterranean summer and a dry taiga winter have in common." >}}
+{{< selfcheck question="The Mediterranean landscape along the sea shore is dotted with pines and cypresses. The weather is not cold, and the trees grow at sea level. What evolutionary adaptation of conifers makes them suitable to the Mediterranean climate?" hint="Reread the description of the largest gymnosperm phylum, on the weather it has a selective advantage in." >}}
 The trees are adapted to arid weather, and do not lose as much water due to transpiration as non-conifers.
 ===CHECKS===
 adapted to arid weather
@@ -170,20 +170,11 @@ do not lose as much water due to transpiration as non-conifers
 {{< textin
   question="Gymnosperms appeared in the ________ period and were the dominant plant life during the Mesozoic era."
   answer="Paleozoic"
-  accept="Palaeozoic"
-  hint="This era comes before the Mesozoic, during which the gymnosperms' dominance later peaked."
+  accept="Palaeozoic|Permian"
+  hint="Reread the second sentence of this section's summary."
 >}}
 
 ### List the four groups of modern-day gymnosperms and provide examples of each
-
-{{< selfcheck question="What are the four modern-day phyla of gymnosperms?" hint="Two of the four phyla are named directly after a genus or species introduced earlier in this section." >}}
-The four modern-day phyla of gymnosperms are Coniferophyta, Cycadophyta, Ginkgophyta, and Gnetophyta.
-===CHECKS===
-Coniferophyta
-Cycadophyta
-Ginkgophyta
-Gnetophyta
-{{< /selfcheck >}}
 
 {{< textin
   question="The dominant phylum of gymnosperms with the greatest variety of trees is called the ________."
@@ -193,7 +184,7 @@ Gnetophyta
 >}}
 
 {{< textin
-  question="A gymnosperm that grows in tropical climates and resembles a palm tree, and belongs to the phylum Cycadophyta, is called a(n) ________."
+  question="A gymnosperm that grows in tropical climates and resembles a palm tree is called a(n) ________."
   answer="cycad"
   hint="Its large cones may be pollinated by beetles instead of wind, which is unusual for a gymnosperm."
 >}}
@@ -201,8 +192,18 @@ Gnetophyta
 {{< textin
   question="A gymnosperm of the group that has only one extant species, a tree with fan-shaped leaves, is called a(n) ________."
   answer="ginkgophyte"
+  accept="Ginkgophyta|ginkgo|Ginkgo biloba"
   hint="Its one living species is cultivated in monasteries and city parks partly for its resistance to pollution."
 >}}
+
+{{< selfcheck question="What are the four modern-day phyla of gymnosperms?" hint="Two of the four phyla are named directly after a genus or species introduced earlier in this section." >}}
+The four modern-day phyla of gymnosperms are Coniferophyta, Cycadophyta, Ginkgophyta, and Gnetophyta.
+===CHECKS===
+Coniferophyta
+Cycadophyta
+Ginkgophyta
+Gnetophyta
+{{< /selfcheck >}}
 
 ### Describe the life cycle of a typical gymnosperm
 
@@ -220,7 +221,7 @@ female gametophytes
 {{< multiplechoice
   question="What is the ploidy of the following structures: gametophyte, seed, spore, sporophyte?"
   answer="1*n*, 2*n*, 1*n*, 2*n*"
-  hint="The gametophyte and the spore it germinates from share the same ploidy; the seed encloses the embryo, whose ploidy matches the sporophyte's."
+  hint="Reread the Life Cycle of a Conifer subsection and the ploidy labels on its diagram."
 >}}
 1*n*, 1*n*, 2*n*, 2*n*
 1*n*, 2*n*, 1*n*, 2*n*
@@ -244,9 +245,9 @@ female gametophytes
   question="The diploid mother cell that undergoes meiosis inside the ovule to produce the large spores of a heterosporous plant is called a ________."
   answer="megasporocyte"
   accept="megaspore mother cell"
-  hint="This is the larger of the two mother cells; the smaller one, which produces male gametophytes, is prefixed 'micro-' instead."
+  hint="Reread the Life Cycle of a Conifer subsection, on what happens inside each ovule."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 26.2: Gymnosperms](https://openstax.org/books/biology-2e/pages/26-2-gymnosperms) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_26_02_04 re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (it is a colored 19th-century botanical illustration plate, not a captured photograph); a longdesc added to the conifer life-cycle diagram (Figure_26_02_01) walking its three panels, its four arrows, and its ploidy labels in the clockwise reading order the arrows draw, since neither the caption nor the source alt carries the panel layout or the labeled structures; the two interactive notes (a seed-production video, a Welwitschia video) rendered as Link to Learning callouts with descriptive link text in place of the source's bare "Watch this video"; the Visual Connection note rendered as its figure followed by a multiple choice, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items (gymnosperm, integument, strobilus, conifer, cycad, ginkgophyte, monoecious, dioecious, megasporocyte) added from the glossary to round out each objective's group; and one summary-derived cloze textin added under the second objective, naming the Paleozoic period from the section summary's own sentence, since the module's single Critical Thinking item for that objective left the group under the book's floor; the gnetophyte figure's source alt describes the Welwitschia crown as bearing "pink buds", which the photograph does not show (its crown carries brown, dry, cone-like growths) — the alt here describes what is visible, and the source alt is reported as a defect (erratum 319). Two key terms are corrected with visible Source notes: the megasporocyte and microsporocyte are the diploid mother cells that undergo meiosis to make spores, as the section's own text says, not spores themselves (erratum 423).</small>
+<small>This section is adapted from [Biology 2e, Section 26.2: Gymnosperms](https://openstax.org/books/biology-2e/pages/26-2-gymnosperms) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_26_02_04 re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (it is a colored 19th-century botanical illustration plate, not a captured photograph); a longdesc added to the conifer life-cycle diagram (Figure_26_02_01) walking its three panels, its four arrows, and its ploidy labels in the clockwise reading order the arrows draw, since neither the caption nor the source alt carries the panel layout or the labeled structures; the two interactive notes (a seed-production video, a Welwitschia video) rendered as Link to Learning callouts with descriptive link text in place of the source's bare "Watch this video"; the Visual Connection note rendered as its figure followed by a multiple choice, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 1, 4, 2, 3 of the source's numbering; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eight key-term recall items (integument, strobilus, conifer, cycad, ginkgophyte, monoecious, dioecious, megasporocyte) added from the glossary to round out each objective's group, plus a summary cloze (heterosporous) in place of a gymnosperm recall item that re-asked the source's gymnosperm-traits Review Question; and one summary-derived cloze textin added under the second objective, naming the Paleozoic period from the section summary's own sentence, since the module's single Critical Thinking item for that objective left the group under the book's floor; the gnetophyte figure's source alt describes the Welwitschia crown as bearing "pink buds", which the photograph does not show (its crown carries brown, dry, cone-like growths) — the alt here describes what is visible, and the source alt is reported as a defect (erratum 319). Two key terms are corrected with visible Source notes: the megasporocyte and microsporocyte are the diploid mother cells that undergo meiosis to make spores, as the section's own text says, not spores themselves (erratum 423).</small>

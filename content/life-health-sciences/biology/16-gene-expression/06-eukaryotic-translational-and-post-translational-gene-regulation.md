@@ -27,7 +27,7 @@ Like transcription, translation is controlled by proteins that bind and initiate
 Gene expression can be controlled by factors that bind the translation initiation complex.
 {{< /mediafigure >}}
 
-{{< selfcheck question="An increase in phosphorylation levels of eIF-2 has been observed in patients with neurodegenerative diseases such as Alzheimer's, Parkinson's, and Huntington's. What impact do you think this might have on protein synthesis?" hint="Compare the two states in the diagram above — what happens to translation when eIF-2 carries the phosphate group?" >}}
+{{< selfcheck question="An increase in phosphorylation levels of eIF-2 has been observed in patients with neurodegenerative diseases such as Alzheimer's, Parkinson's, and Huntington's. What impact do you think this might have on protein synthesis?" hint="Compare the two states in the diagram above." >}}
 Protein synthesis would be inhibited.
 ===CHECKS===
 protein synthesis
@@ -42,7 +42,7 @@ Chemical modifications occur in response to external stimuli such as stress, the
 
 The addition of a ubiquitin group to a protein marks that protein for degradation. Ubiquitin acts like a flag indicating that the protein lifespan is complete. These proteins are moved to the **proteasome**, an organelle that functions to remove proteins, to be degraded (see the diagram below). One way to control gene expression, therefore, is to alter the longevity of the protein.
 
-{{< mediafigure src="biology/Figure_16_06_02" alt="A tangled protein strand reacting with ATP and three ubiquitin circles to gain a chain of ubiquitin tags, then entering a barrel-shaped proteasome that breaks it into scattered amino acids while releasing ADP and the ubiquitin circles." longdesc="A left-to-right diagram with four stages connected by black arrows. Stage 1: a loosely coiled blue protein strand sits beside three separate pink circles and an orange oval labeled 'ATP.' Stage 2: the same coiled protein now carries a straight chain of pink circles rising from it, labeled 'Ubiquitin.' Stage 3: an arrow carries the tagged protein into a barrel-shaped structure of green and purple subunits labeled 'Proteasome.' Stage 4: two arrows leave the proteasome — one to a blue oval labeled 'ADP' and a released pink circle, the other to a cluster of short orange rod shapes labeled 'Amino acids.'" kind="diagram" >}}
+{{< mediafigure src="biology/Figure_16_06_02" alt="A tangled protein strand reacting with ATP and three ubiquitin circles to gain a chain of ubiquitin tags, then entering a barrel-shaped proteasome that breaks it into scattered amino acids while releasing ADP and the ubiquitin circles." longdesc="A left-to-right diagram with four stages connected by black arrows. Stage 1: a loosely coiled blue protein strand; three separate pink circles above the first arrow feed into it by a curved arrow that passes an orange oval labeled 'ATP.' Stage 2: the same coiled protein now carries a straight chain of three pink circles rising from it, labeled 'Ubiquitin.' Stage 3: an arrow carries the tagged protein into a barrel-shaped structure of green and purple subunits labeled 'Proteasome,' with the ubiquitin chain sticking out of its top and bits of the protein strand at its top and bottom. Stage 4: the arrow leaving the proteasome splits three ways — up to a released pink circle, straight on to a cluster of short red-orange rod shapes labeled 'Amino acids,' and down to a blue oval labeled 'ADP.'" kind="diagram" >}}
 Proteins with ubiquitin tags are marked for degradation within the proteasome.
 {{< /mediafigure >}}
 
@@ -68,17 +68,17 @@ Changing the status of the RNA or the protein itself can affect the amount of pr
   question="The energy-providing molecule that binds to eIF-2 and is needed for translation is called ________."
   answer="GTP"
   accept="guanosine triphosphate|guanosine triphosphate (GTP)"
-  hint="It is the high-energy molecule the eIF-2 protein must bind before the initiation complex can form."
+  hint="Reread the opening sentences of the section's first subsection."
 >}}
 
 {{< textin
   question="The protein complex containing eIF-2 that starts translation is called the ________."
   answer="initiation complex"
-  accept="translation initiation complex"
-  hint="This is the same complex whose assembly is blocked when eIF-2 carries a phosphate group."
+  accept="translation initiation complex|initiator complex"
+  hint="Reread the second sentence of the section's first subsection."
 >}}
 
-{{< selfcheck question="Alternative forms of a protein can be beneficial or harmful to a cell. What do you think would happen if too much of an alternative protein bound to the 3′ UTR of an RNA and caused it to degrade?" hint="Trace what happens to protein output once the RNA that encodes it is gone." >}}
+{{< selfcheck question="Alternative forms of a protein can be beneficial or harmful to a cell. What do you think would happen if too much of an alternative protein bound to the 3′ UTR of an RNA and caused it to degrade?" hint="Reread the section's opening paragraph." >}}
 If the RNA degraded, then less of the protein that the RNA encodes would be translated. This could have dramatic implications for the cell.
 ===CHECKS===
 if the RNA degraded, then less of the protein that the RNA encodes would be translated
@@ -87,10 +87,16 @@ this could have dramatic implications for the cell
 
 ### Describe how the initiation complex controls translation
 
+{{< textin
+  question="Modifications (such as ________) of the proteins that assemble on the RNA to start translation can prevent proper translation from occurring."
+  answer="phosphorylation"
+  hint="Reread the Summary's third sentence."
+>}}
+
 {{< multiplechoice
   question="A scientist mutates eIF-2 to eliminate its GTP hydrolysis capability. How would this mutated form of eIF-2 alter translation?"
   answer="The large ribosomal subunit would not be able to interact with mRNA transcripts."
-  hint="Re-read what GTP hydrolysis normally triggers in the sequence — it is the step that lets a specific ribosomal subunit join the complex."
+  hint="Reread the section's first subsection, following its steps in order."
 >}}
 Initiation factors would not be able to bind to mRNA.
 The large ribosomal subunit would not be able to interact with mRNA transcripts.
@@ -98,7 +104,7 @@ tRNAi-Met would not scan mRNA transcripts for the start codon.
 eIF-2 would not be able to interact with the small ribosomal subunit.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="A scientist discovers a virus encoding a Protein X that degrades a subunit of the eIF4F complex. Knowing that this virus transcribes its own mRNAs in the cytoplasm of human cells, why would Protein X be an effective virulence factor?" hint="Think about which mRNA feature eIF4F recognizes, and which mRNAs — the cell's own or the virus's — carry that feature." >}}
+{{< selfcheck question="A scientist discovers a virus encoding a Protein X that degrades a subunit of the eIF4F complex. Knowing that this virus transcribes its own mRNAs in the cytoplasm of human cells, why would Protein X be an effective virulence factor?" hint="Reread the sentences of the section's first subsection on the second complex that forms on the mRNA." >}}
 Degrading the eIF4F complex prevents the pre-initiation complex (eIF-2-GTP, tRNAi-Met, and 40S ribosomal subunit) from being recruited to the 5′ cap of mature mRNAs in the cell. This allows the virus to hijack the translation machinery of the human cell to translate its own (uncapped) mRNA transcripts instead.
 ===CHECKS===
 degrading the eIF4F complex prevents the pre-initiation complex from being recruited to the 5′ cap of mature mRNAs in the cell
@@ -106,19 +112,12 @@ the pre-initiation complex is eIF-2-GTP, tRNAi-Met, and 40S ribosomal subunit
 this allows the virus to hijack the translation machinery of the human cell to translate its own uncapped mRNA transcripts instead
 {{< /selfcheck >}}
 
-{{< textin
-  question="The protein initiation factor that binds first to an mRNA to initiate translation is ________."
-  answer="eIF-2"
-  accept="eIF2|eukaryotic initiation factor-2"
-  hint="Its binding to GTP is required before the complex can dock on the small ribosomal subunit."
->}}
-
 ### Explain the different ways in which the post-translational control of gene expression takes place
 
 {{< multiplechoice
   question="Post-translational modifications of proteins can affect which of the following?"
   answer="all of the above"
-  hint="Recall the phosphorylation self-check below: because proteins are involved in every stage of gene regulation, modifying one can reach chromatin, transcription, and more."
+  hint="Reread the second paragraph of Chemical Modifications, Protein Activity, and Longevity."
 >}}
 protein function
 transcriptional regulation
@@ -126,7 +125,7 @@ chromatin modification
 all of the above
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Protein modification can alter gene expression in many ways. Describe how phosphorylation of proteins can alter gene expression." hint="The section lists several stages of gene regulation a single phosphorylated protein can influence — name as many as you can." >}}
+{{< selfcheck question="Protein modification can alter gene expression in many ways. Describe how phosphorylation of proteins can alter gene expression." hint="Reread the second paragraph of Chemical Modifications, Protein Activity, and Longevity." >}}
 Because proteins are involved in every stage of gene regulation, phosphorylation of a protein (depending on the protein that is modified) can alter accessibility to the chromosome, can alter translation (by altering the transcription factor binding or function), can change nuclear shuttling (by influencing modifications to the nuclear pore complex), can alter RNA stability (by binding or not binding to the RNA to regulate its stability), can modify translation (increase or decrease), or can change post-translational modifications (add or remove phosphates or other chemical modifications).
 ===CHECKS===
 phosphorylation of a protein can alter accessibility to the chromosome
@@ -137,7 +136,7 @@ can modify translation (increase or decrease)
 can change post-translational modifications by adding or removing phosphates or other chemical modifications
 {{< /selfcheck >}}
 
-{{< selfcheck question="Changes in epigenetic modifications alter the accessibility and transcription of DNA. Describe how environmental stimuli, such as ultraviolet light exposure, could modify gene expression." hint="Think of the two kinds of chemical groups the section names — one removed from histones, one added to DNA." >}}
+{{< selfcheck question="Changes in epigenetic modifications alter the accessibility and transcription of DNA. Describe how environmental stimuli, such as ultraviolet light exposure, could modify gene expression." hint="Reread the second paragraph of Chemical Modifications, Protein Activity, and Longevity, and recall the epigenetic mechanisms of Section 16.3." >}}
 Environmental stimuli, like ultraviolet light exposure, can alter the modifications to the histone proteins or DNA. Such stimuli may change an actively transcribed gene into a silenced gene by removing acetyl groups from histone proteins or by adding methyl groups to DNA.
 ===CHECKS===
 environmental stimuli can alter the modifications to the histone proteins or DNA
@@ -148,4 +147,4 @@ adding methyl groups to DNA
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 16.6: Eukaryotic Translational and Post-translational Gene Regulation](https://openstax.org/books/biology-2e/pages/16-6-eukaryotic-translational-and-post-translational-gene-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_16_06_01 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (its JPEG source is a colored line drawing, not a photograph); its source alt, a letter-spaced text-to-speech spelling ("lower case e lower case I upper case F dash 2…"), rewritten from the image, with a longdesc added since the two phosphorylation states are not carried by the caption; a longdesc also added to Figure_16_06_02 walking its four-stage degradation sequence; the note wrapping the Visual Connection question rendered as its mediafigure (kept eager as the first figure) immediately followed by a self-check carrying the source solution; the print cross-reference to the first figure changed to "see the diagram below" since figures are not numbered here; source apostrophes in "5'" normalized to the Unicode prime (5′); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); two key-term recall items (GTP, the initiation complex) and one term-identification recall item (eIF-2) added from the glossary; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and the post-translational-modification Review Question re-keyed from the source's "protein function" to "all of the above", because the module's own phosphorylation solution states that modifying a protein can alter accessibility to the chromosome and transcription-factor function — so the source's other options are also true by the module's own text (reported as a source defect). One key term is corrected with a visible Source note: GDP is guanosine diphosphate, matching the GTP entry beside it, not "guanine diphosphate" (erratum 404).</small>
+<small>This section is adapted from [Biology 2e, Section 16.6: Eukaryotic Translational and Post-translational Gene Regulation](https://openstax.org/books/biology-2e/pages/16-6-eukaryotic-translational-and-post-translational-gene-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_16_06_01 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (its JPEG source is a colored line drawing, not a photograph); its source alt, a letter-spaced text-to-speech spelling ("lower case e lower case I upper case F dash 2…"), rewritten from the image, with a longdesc added since the two phosphorylation states are not carried by the caption; a longdesc also added to Figure_16_06_02 walking its four-stage degradation sequence; the note wrapping the Visual Connection question rendered as its mediafigure (kept eager as the first figure) immediately followed by a self-check carrying the source solution; the print cross-reference to the first figure changed to "see the diagram below" since figures are not numbered here; source apostrophes in "5'" normalized to the Unicode prime (5′); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); two key-term recall items (GTP, the initiation complex) added from the glossary and placed first in their objective group, and one summary-derived recall item (the sentence on modifications of initiator-complex proteins) added under the second objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and the post-translational-modification Review Question re-keyed from the source's "protein function" to "all of the above", because the module's own phosphorylation solution states that modifying a protein can alter accessibility to the chromosome and transcription-factor function — so the source's other options are also true by the module's own text (reported as a source defect). One key term is corrected with a visible Source note: GDP is guanosine diphosphate, matching the GTP entry beside it, not "guanine diphosphate" (erratum 404).</small>

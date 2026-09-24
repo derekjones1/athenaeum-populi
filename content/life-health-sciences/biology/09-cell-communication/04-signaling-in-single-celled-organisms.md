@@ -36,14 +36,14 @@ Quorum sensing uses autoinducers as signaling molecules. **Autoinducers** are si
 
 Some species of bacteria that use quorum sensing form biofilms, complex colonies of bacteria (often containing several species) that exchange chemical signals to coordinate the release of toxins that will attack the host. Bacterial biofilms (below) can sometimes be found on medical equipment; when biofilms invade implants such as hip or knee replacements or heart pacemakers, they can cause life-threatening infections.
 
-{{< mediafigure src="biology/Figure_09_04_02" kind="diagram" alt="A two-panel diagram contrasting bacterial autoinducer signaling at low versus high cell density: at low density a single bacterial cell releases an autoinducer that diffuses away without binding; at high density many crowded cells produce enough autoinducer to bind their own receptors, switching on the genes that make more autoinducer in a self-amplifying loop." longdesc="Two side-by-side panels labeled Low Cell Density and High Cell Density. In the Low Cell Density panel, one tan oval bacterial cell contains a blue circular DNA strand with a receptor (drawn as a small triangle) attached to it and four loose triangles scattered in the cytoplasm, with a single red autoinducer dot inside the cell as well; labels point to \"Bacterial cell,\" \"Receptor,\" and \"Genes regulated by autoinducers\" (a bracket beside the DNA); outside the cell, a single red dot labeled \"Autoinducer\" sits apart with an arrow, and the panel's own caption reads \"When cell density is low, autoinducers diffuse away from the cell.\" In the High Cell Density panel, several tan oval bacterial cells are packed together, each showing its triangular receptor bound to a red autoinducer dot at the DNA ring, with additional red autoinducer dots scattered in the space between the cells; the panel's own caption reads \"When cell density is high, more autoinducers are present. They bind to receptors that regulate the transcription of certain genes. Genes responsible for the production of autoinducers are expressed, resulting in a positive-feedback loop.\"" >}}
+{{< mediafigure src="biology/Figure_09_04_02" kind="diagram" alt="A two-panel diagram contrasting bacterial autoinducer signaling at low versus high cell density: at low density a single bacterial cell releases an autoinducer that diffuses away without binding; at high density many crowded cells produce enough autoinducer to bind their own receptors, switching on the genes that make more autoinducer in a self-amplifying loop." longdesc="Two side-by-side panels labeled Low Cell Density and High Cell Density. In the Low Cell Density panel, one tan oval bacterial cell contains a blue circular DNA strand with a band of colored gene segments, and five receptors (drawn as small blue triangles) scattered loose in the cytoplasm, none attached to the DNA or to an autoinducer, with a single red autoinducer dot inside the cell as well; labels point to \"Bacterial cell,\" \"Receptor\" (one of the loose triangles), and \"Genes regulated by autoinducers\" (a bracket over the colored segments of the DNA); outside the cell, a single red dot labeled \"Autoinducer\" sits apart, and the panel's own caption reads \"When cell density is low, autoinducers diffuse away from the cell.\" In the High Cell Density panel, seven tan oval bacterial cells (four whole, three cut off at the panel's edges) are packed together, each holding several triangular receptors, most of them now bound to red autoinducer dots and one such pair sitting on the colored gene segments of the DNA ring, with additional red autoinducer dots scattered in the space between the cells; the panel's own caption reads \"When cell density is high, more autoinducers are present. They bind to receptors that regulate the transcription of certain genes. Genes responsible for the production of autoinducers are expressed, resulting in a positive-feedback loop.\"" >}}
 Autoinducers are small molecules or proteins produced by bacteria that regulate gene expression.
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements about quorum sensing is false?"
   answer="Autoinducer can only act on a different cell: it cannot act on the cell in which it is made."
-  hint="Look at what happens as cell density rises: does the autoinducer a cell makes ever come back to affect that same cell?"
+  hint="Reread the autoinducer paragraph under Signaling in Bacteria and the cell-density diagram above this question."
 >}}
 Autoinducer must bind to receptor to turn on transcription of genes responsible for the production of more autoinducer.
 The receptor stays in the bacterial cell, but the autoinducer diffuses out.
@@ -55,7 +55,7 @@ Autoinducer turns on genes that enable the bacteria to form a biofilm.
 Cell-cell communication enables these (a) *Staphylococcus aureus* bacteria to work together to form a biofilm inside a hospital patient's catheter, seen here via scanning electron microscopy. *S. aureus* is the main cause of hospital-acquired infections. (b) Hawaiian bobtail squid have a symbiotic relationship with the bioluminescent bacteria *Vibrio fischeri*. The luminescence makes it difficult to see the squid from below because it effectively eliminates its shadow. In return for camouflage, the squid provides food for the bacteria. Free-living *V. fischeri* do not produce luciferase, the enzyme responsible for luminescence, but *V. fischeri* living in a symbiotic relationship with the squid do. Quorum sensing determines whether the bacteria should produce the luciferase enzyme. (credit a: modifications of work by CDC/Janice Carr; credit b: modifications of work by Cliff1066/Flickr)
 {{< /mediafigure >}}
 
-{{< selfcheck question="What advantage might biofilm production confer on the *S. aureus* inside the catheter?" hint="Think about what a dense, crowded surface does to how well a drug can reach every cell in it." >}}
+{{< selfcheck question="What advantage might biofilm production confer on the *S. aureus* inside the catheter?" hint="Reread the biofilm paragraph under Signaling in Bacteria." >}}
 *S. aureus* produces a biofilm because the higher cell density in the biofilm permits the formation of a dense surface that helps protect the bacteria from antibiotics.
 ===CHECKS===
 the higher cell density in the biofilm permits the formation of a dense surface
@@ -98,10 +98,16 @@ Bacterial signaling is called quorum sensing. Bacteria secrete signaling molecul
 
 ### Describe how single-celled yeasts use cell signaling to communicate with one another
 
+{{< textin
+  question="Yeasts use ________ and signaling cascades to communicate information on mating with other yeast cells."
+  answer="cell-surface receptors"
+  hint="Reread the Summary's second sentence."
+>}}
+
 {{< multiplechoice
   question="Which type of molecule acts as a signaling molecule in yeasts?"
   answer="mating factor"
-  hint="It is the molecule budding yeast cells secrete to find a nearby partner for mating."
+  hint="Reread the paragraph under Signaling in Yeast."
 >}}
 steroid
 autoinducer
@@ -109,13 +115,7 @@ mating factor
 second messenger
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The signaling molecule that budding yeast cells secrete to tell nearby yeast cells they are ready to mate is called ________."
-  answer="mating factor"
-  hint="A yeast cell that receives it stops its normal growth cycle and starts a signaling cascade."
->}}
-
-{{< selfcheck question="What characteristics make yeasts a good model for learning about signaling in humans?" hint="Compare a yeast's biology (eukaryote or not, single- or multicellular, generation time) with our own." >}}
+{{< selfcheck question="What characteristics make yeasts a good model for learning about signaling in humans?" hint="Reread the last two paragraphs of the Evolution Connection box." >}}
 Yeasts are eukaryotes and have many of the same systems that humans do; however, they are single-celled, so they are easy to grow, grow rapidly, have a short generation time, and are much simpler than humans.
 ===CHECKS===
 yeasts are eukaryotes and have many of the same systems that humans do
@@ -123,7 +123,7 @@ they are single-celled, so they are easy to grow, grow rapidly, have a short gen
 much simpler than humans
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why is signaling in multicellular organisms more complicated than signaling in single-celled organisms?" hint="Think about how many different cell types, tissues, and distances a multicellular organism's signal has to reach, compared with a single free-living cell." >}}
+{{< selfcheck question="Why is signaling in multicellular organisms more complicated than signaling in single-celled organisms?" hint="Reread the Evolution Connection box." >}}
 Multicellular organisms must coordinate many different events in different cell types that may be very distant from each other. Single-celled organisms are only concerned with their immediate environment and the presence of other cells in the area.
 ===CHECKS===
 multicellular organisms must coordinate many different events in different cell types that may be very distant from each other
@@ -132,10 +132,22 @@ single-celled organisms are only concerned with their immediate environment and 
 
 ### Relate the role of quorum sensing to the ability of some bacteria to form biofilms
 
+{{< textin
+  question="A signaling molecule that bacteria secrete to communicate with other bacteria of the same kind is called a(n) ________."
+  answer="autoinducer"
+  hint="Reread the paragraph after the bobtail-squid paragraph under Signaling in Bacteria."
+>}}
+
+{{< textin
+  question="The hydrophobic autoinducers, such as AHL, bind ________ and directly affect gene expression."
+  answer="transcription factors"
+  hint="Reread the Summary's last two sentences."
+>}}
+
 {{< multiplechoice
   question="Quorum sensing is triggered to begin when ___________."
   answer="a sufficient number of bacteria are present"
-  hint="The name itself comes from the political and business sense of a minimum number of members needed to act."
+  hint="Reread the paragraph on the bobtail squid's bacterium under Signaling in Bacteria."
 >}}
 treatment with antibiotics occurs
 bacteria release growth hormones
@@ -146,7 +158,7 @@ a sufficient number of bacteria are present
 {{< multiplechoice
   question="A doctor is researching new ways to treat biofilms on artificial joints. Which approach would best help prevent bacterial colonization of the medical implants?"
   answer="Inhibit quorum sensing"
-  hint="Biofilm formation itself depends on bacteria coordinating their behavior through a density-dependent signal."
+  hint="Reread the biofilm paragraph and the research paragraph after the biofilm figure, under Signaling in Bacteria."
 >}}
 Increase antibiotic dosing
 Create implants with rougher surfaces
@@ -154,19 +166,7 @@ Vaccinate patients against all pathogenic bacteria
 Inhibit quorum sensing
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The method of cellular communication bacteria use that informs them of how many similar (or different) bacteria are present in the environment is called ________."
-  answer="quorum sensing"
-  hint="The name comes from the minimum number of members needed to be present to vote on an issue in politics and business."
->}}
-
-{{< textin
-  question="A signaling molecule that bacteria secrete to communicate with other bacteria of the same kind is called a(n) ________."
-  answer="autoinducer"
-  hint="Acyl-homoserine lactone, or AHL, is one small, hydrophobic example of this kind of molecule."
->}}
-
-{{< selfcheck question="*Pseudomonas* infections are very common in hospital settings. Why would it be important for doctors to determine the bacterial load before treating an infected patient?" hint="Consider what changes about a bacterial population's gene expression and drug resistance once its density crosses the quorum-sensing threshold." >}}
+{{< selfcheck question="*Pseudomonas* infections are very common in hospital settings. Why would it be important for doctors to determine the bacterial load before treating an infected patient?" hint="Reread the paragraphs under Signaling in Bacteria." >}}
 Doctors would need to determine if the patient is simply infected with free bacteria, or has developed a biofilm. Biofilms of *Pseudomonas aeruginosa* have a different pattern of gene expression than free bacteria, leading to increased virulence and resistance to many antibiotics.
 ===CHECKS===
 doctors would need to determine if the patient is simply infected with free bacteria, or has developed a biofilm
@@ -176,4 +176,4 @@ leading to increased virulence and resistance to many antibiotics
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 9.4: Signaling in Single-Celled Organisms](https://openstax.org/books/biology-2e/pages/9-4-signaling-in-single-celled-organisms) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the biofilm/squid photograph re-kinded from the manifest's file-extension guess of "diagram" to "photo" after inspection (both panels are photographs — a scanning electron micrograph and a camera photograph — not a drawn illustration), and the yeast micrograph's alt rewritten from the source's bare "The photo shows yeast cells, some of which have buds protruding from them" to describe the budding stage actually visible; a longdesc added for the low-/high-cell-density autoinducer diagram, whose labeled panels are not fully carried by its one-line caption; feature boxes (two Link to Learning notes and one Evolution Connection) rendered as callouts with their bold names, the interactive-long note's embedded video rendered as a linked title instead of an iframe; both Visual Connection questions kept in the body immediately after their figures — the first (quorum sensing false-statement question) rendered as multiple choice since the source keys a lettered option, the second (catheter biofilm advantage) rendered as a self-check since the source keys a prose solution; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the second Critical Thinking question ("Why is signaling in multicellular organisms more complicated...") grouped under the yeast-signaling objective since it compares single-celled to multicellular signaling in general rather than testing quorum sensing specifically; and three key-term recall items (mating factor, quorum sensing, autoinducer) added from the module's own glossary to give both objective groups an auto-graded item beyond the Review Questions; the Evolution Connection's reference citation is kept as a parenthetical after the sentence it supports; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 9.4: Signaling in Single-Celled Organisms](https://openstax.org/books/biology-2e/pages/9-4-signaling-in-single-celled-organisms) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the biofilm/squid photograph re-kinded from the manifest's file-extension guess of "diagram" to "photo" after inspection (both panels are photographs — a scanning electron micrograph and a camera photograph — not a drawn illustration), and the yeast micrograph's alt rewritten from the source's bare "The photo shows yeast cells, some of which have buds protruding from them" to describe the budding stage actually visible; a longdesc added for the low-/high-cell-density autoinducer diagram, whose labeled panels are not fully carried by its one-line caption; feature boxes (two Link to Learning notes and one Evolution Connection) rendered as callouts with their bold names, the interactive-long note's embedded video rendered as a linked title instead of an iframe; both Visual Connection questions kept in the body immediately after their figures — the first (quorum sensing false-statement question) rendered as multiple choice since the source keys a lettered option, the second (catheter biofilm advantage) rendered as a self-check since the source keys a prose solution; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the second Critical Thinking question ("Why is signaling in multicellular organisms more complicated...") grouped under the yeast-signaling objective since it compares single-celled to multicellular signaling in general rather than testing quorum sensing specifically; and one key-term recall item (autoinducer) added from the module's own glossary and two summary-derived cloze `textin` items (the cell-surface receptors yeasts signal with, the transcription factors hydrophobic autoinducers bind) to give both objective groups an auto-graded item beyond the Review Questions; the Evolution Connection's reference citation is kept as a parenthetical after the sentence it supports; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

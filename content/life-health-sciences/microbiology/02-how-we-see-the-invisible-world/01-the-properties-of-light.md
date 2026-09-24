@@ -51,7 +51,7 @@ In addition to interfering with each other, light waves can also interact with s
 {{< multiplechoice
   question="If a light wave has a long wavelength, is it likely to have a low or high frequency?"
   answer="low frequency"
-  hint="Think about how many wave peaks pass a point per unit time when the peaks are spaced farther apart."
+  hint="Reread the paragraph just below the electromagnetic-spectrum figure."
 >}}
 low frequency
 high frequency
@@ -60,7 +60,7 @@ high frequency
 {{< multiplechoice
   question="If an object is transparent, does it reflect, absorb, or transmit light?"
   answer="transmit light"
-  hint="Transparency and opacity describe how much light passes through a material versus how much is blocked."
+  hint="Reread the first paragraph of Interactions of Light."
 >}}
 reflect light
 absorb light
@@ -96,7 +96,7 @@ Images are commonly manipulated by controlling the distances between the object,
 {{< multiplechoice
   question="Explain how a lens focuses light at the image point."
   answer="It refracts light so that it all meets at a single point."
-  hint="Think about what a lens does to light that strikes its curved boundary from many different points."
+  hint="Reread the paragraph just above the prism-and-lenses figure."
 >}}
 It reflects light so that it all meets at a single point.
 It absorbs light so that it all meets at a single point.
@@ -107,7 +107,7 @@ It diffracts light so that it all meets at a single point.
 {{< multiplechoice
   question="Name some factors that affect the focal length of a lens."
   answer="the distances between the object, the lens, and the screen, and the curvature of the lens"
-  hint="This is about where images come into focus, not about how sharp or magnified they appear."
+  hint="Reread the last paragraph of Lenses and Refraction."
 >}}
 the intensity of the light source and the size of the specimen
 the magnification and contrast of the image
@@ -119,7 +119,7 @@ the distances between the object, the lens, and the screen, and the curvature of
 
 Visible light is just one form of electromagnetic radiation (EMR), a type of energy that is all around us. Other forms of EMR include microwaves, X-rays, and radio waves, among others. The different types of EMR fall on the electromagnetic spectrum, which is defined in terms of wavelength and frequency. The spectrum of visible light occupies a relatively small range of frequencies between infrared and ultraviolet light (illustrated below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_02_01_Emspectrum" alt="A horizontal chart of the electromagnetic spectrum, from short-wavelength, high-energy radiation on the left to long-wavelength, low-energy radiation on the right, with a colored band showing the visible-light range enlarged above it and three number lines below giving each region's approximate energy, frequency, and wavelength." kind="diagram" longdesc="Reading left to right, the labeled regions are cosmic radiation, gamma rays, X-rays, ultraviolet, a narrow visible band, infrared, terahertz radiation, radar, television and radio broadcasting, and AC circuits. Above the visible band, a colored strip is enlarged to show violet at about 400 nanometers shading through blue, green, yellow, and orange to red at about 700 nanometers. Below the regions, three number lines run in the same left-to-right order: energy in electron volts, from about 10¹² on the left down to about 10⁻¹² on the right; frequency in hertz, from more than 10²⁴ down to about 1; and wavelength in meters, from about 10⁻¹⁸ up to about 10⁶." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_02_01_Emspectrum" alt="A horizontal chart of the electromagnetic spectrum, from short-wavelength, high-energy radiation on the left to long-wavelength, low-energy radiation on the right, with a colored band showing the visible-light range enlarged above it and three number lines below giving each region's approximate energy, frequency, and wavelength." kind="diagram" longdesc="Reading left to right, the labeled regions are cosmic radiation, gamma rays, X-rays, ultraviolet, a narrow visible band, infrared, terahertz radiation, radar, television and radio broadcasting, and AC circuits. Above the visible band, labeled VISIBLE, a colored strip labeled Wavelength is enlarged, with ticks at 400, 500, 600, and 700 nanometers: violet at the 400 nm tick shades through blue to blue-green at 500 nm, green, yellow at about 600 nm, and orange to red at 700 nm, darkening beyond it. Below the regions, three number lines run in the same left-to-right order: energy in electron volts, from about 10¹² on the left down to about 10⁻¹² on the right; frequency in hertz, from more than 10²⁴ down to about 1; and wavelength in meters, from about 10⁻¹⁸ up to about 10⁶." >}}
 The electromagnetic spectrum ranges from high-frequency gamma rays to low-frequency radio waves. Visible light is the relatively small range of electromagnetic frequencies that can be sensed by the human eye. On the electromagnetic spectrum, visible light falls between ultraviolet and infrared light. (credit: modification of work by Johannes Ahlmann)
 {{< /mediafigure >}}
 
@@ -138,7 +138,7 @@ The fluorescent dyes absorbed by these bovine pulmonary artery endothelial cells
 {{< multiplechoice
   question="Which has a higher frequency: red light or green light?"
   answer="green light"
-  hint="Think about which end of the visible spectrum — red or violet — has the lowest frequency."
+  hint="Reread the second paragraph below the electromagnetic-spectrum figure."
 >}}
 red light
 green light
@@ -147,7 +147,7 @@ green light
 {{< multiplechoice
   question="Explain why dispersion occurs when white light passes through a prism."
   answer="because, for a given material, the refractive index is different for different frequencies of light"
-  hint="Think about whether every frequency of light bends by the same amount when it enters a new medium."
+  hint="Reread the last two sentences of the second paragraph below the electromagnetic-spectrum figure."
 >}}
 because the prism reflects different colors of light in different directions
 because the prism absorbs different colors of light by different amounts
@@ -155,7 +155,7 @@ because, for a given material, the refractive index is different for different f
 because the prism causes different colors of light to fluoresce
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why do fluorescent dyes emit a different color of light than they absorb?" hint="Think about how much of the absorbed energy comes back out in a single emitted photon." >}}
+{{< selfcheck question="Why do fluorescent dyes emit a different color of light than they absorb?" hint="Reread the paragraph just above the fluorescence micrograph." >}}
 Fluorescent dyes absorb energy that causes electrons to jump to higher energy states; when the electrons fall back down, not all of the absorbed energy is emitted in a given photon, so the emitted photons are of lower energy, and thus lower frequency, than the absorbed ones — which shifts the emitted color.
 ===CHECKS===
 electrons jump to higher energy states
@@ -179,7 +179,7 @@ Even when a microscope has high resolution, it can be difficult to distinguish s
 
 **Check Your Understanding**
 
-{{< sortbins question="Sort each phrase under the imaging property it describes." hint="One property is about how large the image is, one about how fine a detail it can separate, and one about how easily a structure stands out from its surroundings." >}}
+{{< sortbins question="Sort each phrase under the imaging property it describes." hint="Reread Magnification, Resolution, and Contrast." >}}
 {"bins": ["Magnification", "Resolution", "Contrast"],
  "items": [
   {"label": "enlarges the image of an object compared to the real object", "bin": 0},
@@ -193,7 +193,7 @@ Even when a microscope has high resolution, it can be difficult to distinguish s
 {{< multiplechoice
   question="Name two factors that affect resolution."
   answer="wavelength and numerical aperture"
-  hint="One factor is a property of the light or electron beam itself; the other is a property of the lens."
+  hint="Reread the second paragraph of Magnification, Resolution, and Contrast."
 >}}
 magnification and contrast
 wavelength and numerical aperture
@@ -245,7 +245,7 @@ amplitude and frequency
 {{< multiplechoice
   question="Which of the following has the highest energy?"
   answer="light with a short wavelength"
-  hint="Shorter wavelengths correspond to higher frequencies, and a wave's frequency is directly related to how much energy its photons carry."
+  hint="Reread the paragraph just below the electromagnetic-spectrum figure."
 >}}
 light with a long wavelength
 light with an intermediate wavelength
@@ -256,7 +256,7 @@ It is impossible to tell from the information given.
 {{< multiplechoice
   question="You place a specimen under the microscope and notice that parts of the specimen begin to emit light immediately. These materials can be described as _____________."
   answer="fluorescent"
-  hint="One of these two light-emitting processes releases its light right away after absorbing energy; the other releases it only after a delay."
+  hint="Reread the paragraph just above the fluorescence micrograph."
 >}}
 fluorescent
 phosphorescent
@@ -267,19 +267,19 @@ opaque
 {{< textin
   question="When you see light bend as it moves from air into water, you are observing _________."
   answer="refraction"
-  hint="This is the name for a change in a light wave's direction when it passes from one medium into another."
+  hint="Reread the paragraph and photo about a pole resting in shallow water, and the paragraph above the two-panel light-beam figure."
 >}}
 
 {{< textin
   question="The height of a light wave's peak — or the depth of its trough — is called its ________."
   answer="amplitude"
-  hint="This wave property is distinct from wavelength (peak-to-peak distance) and frequency (rate of vibration)."
+  hint="Reread the paragraph just above the wave diagrams."
 >}}
 
 {{< multiplechoice
   question="Looking at the electromagnetic spectrum figure above, which of these has the lowest energy — visible light, X-rays, ultraviolet rays, or infrared rays?"
   answer="infrared rays"
-  hint="Energy rises with frequency and falls with wavelength; find which of the four regions sits farthest toward the long-wavelength, low-frequency end of the spectrum shown in the figure above."
+  hint="Find the four regions on the electromagnetic-spectrum figure and read their positions against its energy number line."
 >}}
 visible light
 X-rays
@@ -292,7 +292,7 @@ infrared rays
 {{< multiplechoice
   question="Which type of lens can be used to magnify an object because it can focus at closer range than the human eye, producing a larger image?"
   answer="convex lens"
-  hint="This lens type bulges outward at its center, in contrast with the lens type that curves inward."
+  hint="Reread the paragraph just above the prism-and-lenses figure."
 >}}
 convex lens
 concave lens
@@ -303,13 +303,14 @@ mirror
 {{< textin
   question="A lens is a medium with a ________ that refracts and focuses light to produce an image."
   answer="curved surface"
-  hint="Think about the physical shape of the boundary that lets a lens bend light toward a single point, not what the lens is made of."
+  accept="curved boundary"
+  hint="Reread the lens bullet of the Summary."
 >}}
 
 {{< textin
   question="A measure of a lens's ability to gather light, where a higher value means better resolution, is called its ________."
   answer="numerical aperture"
-  hint="This property of a lens is one of two factors that affect resolution; the other is a property of the light itself."
+  hint="Reread the second paragraph of Magnification, Resolution, and Contrast."
 >}}
 
 ---

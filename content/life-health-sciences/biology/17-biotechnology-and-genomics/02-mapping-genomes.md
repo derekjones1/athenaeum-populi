@@ -26,7 +26,7 @@ The study of genetic maps begins with **linkage analysis**, a procedure that ana
 
 Observations that certain traits were always linked and certain others were not linked came from studying the offspring of crosses between parents with different traits. For example, in garden pea experiments, researchers discovered, that the flower's color and plant pollen's shape were linked traits, and therefore the genes encoding these traits were in close proximity on the same chromosome. We call exchanging DNA between homologous chromosome pairs **genetic recombination**, which occurs by crossing over DNA between homologous DNA strands, such as nonsister chromatids. Linkage analysis involves studying the recombination frequency between any two genes. The greater the distance between two genes, the higher the chance that a recombination event will occur between them, and the higher the recombination frequency between them. The figure below shows two possibilities for recombination between two nonsister chromatids during meiosis. If the recombination frequency between two genes is less than 50 percent, they are linked.
 
-{{< mediafigure src="biology/Figure_17_02_01-b38e" kind="diagram" eager="true" alt="Two rows of chromosome diagrams, each showing a homologous chromosome pair with genes labeled A, B, and C (and a, b, c) before and after a crossover. In the top row the crossover falls between genes A and B, so the recombinant chromosomes swap both B and C; in the bottom row it falls between B and C, so only C is swapped." longdesc="Two rows, each showing a homologous chromosome pair — drawn as two joined X-shaped sister-chromatid sets, one arm colored blue and labeled A at the top with B and C down its lower arm, the other colored red and labeled a at the top with b and c down its lower arm, meeting at yellow centromeres — before and after a crossover, connected by a gray arrow. In each row, one chromatid from the blue chromosome and one from the red chromosome cross and swap color at a single point; the other two chromatids stay unchanged. Top row: the crossover point sits just below the centromere, between the A/a level and the B/b level, so the swapped chromatids carry A above the crossover and b, c below it (or a above and B, C below); a bracket beside the two recombinant chromosomes reads 'Crossover region resulting in A-B recombination,' spanning the larger swapped segment. Bottom row: the crossover point sits farther down, between the B/b level and the C/c level, so the swapped chromatids keep their original A, B (or a, b) and exchange only C (or c) at the very tip; the bracket there reads 'Crossover region resulting in B-C recombination,' spanning the much narrower swapped segment." >}}
+{{< mediafigure src="biology/Figure_17_02_01-b38e" kind="diagram" eager="true" alt="Two rows of chromosome diagrams, each showing a homologous chromosome pair with genes labeled A, B, and C (and a, b, c) before and after a crossover. In the top row the crossover falls between genes A and B, so the recombinant chromosomes swap both B and C; in the bottom row it falls between B and C, so only C is swapped." longdesc="Two rows, each showing a homologous chromosome pair — drawn as two joined X-shaped sister-chromatid sets, one arm colored blue and labeled A at the top with B and C down its lower arm, the other colored red and labeled a at the top with b and c down its lower arm, meeting at yellow centromeres — before and after a crossover, connected by a gray arrow. In each row, one chromatid from the blue chromosome and one from the red chromosome cross and swap color at a single point; the other two chromatids stay unchanged. Top row: the crossover point sits just below the centromere, between the A/a level and the B/b level, so the swapped chromatids carry A above the crossover and b, c below it (or a above and B, C below); a tall bracket at the far right reads 'Crossover region resulting in A-B recombination,' running from the A/a level at the top down to the B/b level — the whole stretch between genes A and B. Bottom row: the crossover point sits farther down, between the B/b level and the C/c level, so the swapped chromatids keep their original A, B (or a, b) and exchange only C (or c) at the very tip; the bracket there reads 'Crossover region resulting in B-C recombination,' and is much shorter, running only from the B/b level down to the C/c level." >}}
 Crossover may occur at different locations on the chromosome. Recombination between genes *A* and *B* is more frequent than recombination between genes *B* and *C* because genes *A* and *B* are farther apart. Therefore, a crossover is more likely to occur between them.
 {{< /mediafigure >}}
 
@@ -40,7 +40,7 @@ Because genetic maps rely completely on the natural process of recombination, na
 
 A physical map provides detail of the actual physical distance between genetic markers, as well as the number of nucleotides. There are three methods scientists use to create a physical map: cytogenetic mapping, radiation hybrid mapping, and sequence mapping. **Cytogenetic mapping** uses information from microscopic analysis of stained chromosome sections (see the figure below). It is possible to determine the approximate distance between genetic markers using cytogenetic mapping, but not the exact distance (number of base pairs). **Radiation hybrid mapping** uses radiation, such as x-rays, to break the DNA into fragments. We can adjust the radiation amount to create smaller or larger fragments. This technique overcomes the limitation of genetic mapping, and we can adjust the radiation so that increased or decreased recombination frequency does not affect it. **Sequence mapping** resulted from DNA sequencing technology that allowed for creating detailed physical maps with distances measured in terms of the number of base pairs. Creating **genomic libraries** and **complementary DNA (cDNA) libraries** (collections of cloned sequences or all DNA from a genome) has sped the physical mapping process. A genetic site that scientists use to generate a physical map with sequencing technology (a sequence-tagged site, or STS) is a unique sequence in the genome with a known exact chromosomal location. An **expressed sequence tag (EST)** and a single sequence length polymorphism (SSLP) are common STSs. An EST is a short STS that we can identify with cDNA libraries, while we obtain SSLPs from known genetic markers, which provide a link between genetic and physical maps.
 
-{{< mediafigure src="biology/Figure_17_02_02-61ad" kind="diagram" alt="Cytogenetic ideograms of the 22 human autosomes and the X and Y sex chromosomes, each drawn as a vertical bar with its own pattern of black, white, and gray bands." longdesc="Twenty-four chromosome ideograms are arranged in a grid: a large box holds the 22 autosomes in four rows — row 1: chromosomes 1 through 5 (1 through 3 grouped together, then 4 and 5 set apart to the right); row 2: chromosomes 6 through 12, all similar in length; row 3: chromosomes 13 through 15, each with a small stalked short arm, followed by 16 through 18, progressively shorter; row 4: chromosomes 19 through 22, the shortest of the autosomes, with 21 and 22 carrying the same small stalked short arm as 13 through 15. A separate box at the bottom right holds the sex chromosomes, X and Y, with X close in length to the mid-size autosomes and Y the shortest bar in the whole figure. Every bar carries its own sequence of black, white, and gray horizontal bands, and the chromosome number is printed below each bar." >}}
+{{< mediafigure src="biology/Figure_17_02_02-61ad" kind="diagram" alt="Cytogenetic ideograms of the 22 human autosomes and the X and Y sex chromosomes, each drawn as a vertical bar with its own pattern of black, white, and gray bands." longdesc="Twenty-four chromosome ideograms are arranged in a grid: a large box holds the 22 autosomes in four rows — row 1: chromosomes 1 through 5 (1 through 3 grouped together, then 4 and 5 set apart to the right); row 2: chromosomes 6 through 12, growing gradually shorter from 6 to 12; row 3: chromosomes 13 through 15, each with a small stalked short arm, followed by 16 through 18, progressively shorter; row 4: chromosomes 19 through 22, the shortest of the autosomes, with 21 and 22 carrying the same small stalked short arm as 13 through 15. A separate box at the bottom right holds the sex chromosomes, X and Y, with X close in length to the mid-size autosomes and Y a short bar, only slightly longer than chromosomes 21 and 22, the shortest bars in the figure. Beneath the large box is the label 'Autosomes,' and beneath the small one 'Sex Chromosomes.' Every bar carries its own sequence of black, white, and gray horizontal bands, and the chromosome number is printed below each bar." >}}
 A cytogenetic map shows the appearance of a chromosome after scientists stain and exam it under a microscope. (credit: National Human Genome Research Institute)
 {{< /mediafigure >}}
 
@@ -94,7 +94,19 @@ Genome mapping is similar to solving a big, complicated puzzle with pieces of in
 
 ### Define genomics
 
-{{< selfcheck question="Why is so much effort being poured into genome mapping applications?" hint="The opening paragraph lists genome mapping's practical payoffs — disease genes, pollution cleanup, and crop yields — think about what having that information lets researchers do." >}}
+{{< textin
+  question="The process of finding the location of genes on each chromosome is called ________."
+  answer="genome mapping"
+  hint="Reread the section's opening paragraph."
+>}}
+
+{{< textin
+  question="A gene or sequence on a chromosome that co-segregates (shows genetic linkage) with a specific trait is called a ________."
+  answer="genetic marker"
+  hint="Reread the section's opening paragraph."
+>}}
+
+{{< selfcheck question="Why is so much effort being poured into genome mapping applications?" hint="Reread the section's opening paragraph." >}}
 Genome mapping has many different applications and provides comprehensive information that can be used for predictive purposes.
 ===CHECKS===
 genome mapping has many different applications
@@ -102,24 +114,18 @@ provides comprehensive information
 used for predictive purposes
 {{< /selfcheck >}}
 
-{{< textin
-  question="The study of entire genomes, including the complete set of genes, their nucleotide sequence and organization, and their interactions within a species and with other species, is called ________."
-  answer="genomics"
-  hint="This is the very first term the section defines, in its opening sentence."
->}}
-
-{{< textin
-  question="The process of finding the location of genes on each chromosome is called ________."
-  answer="genome mapping"
-  hint="It's the process the whole section describes — genetic maps and physical maps are two of its products."
->}}
-
 ### Describe genetic and physical maps
+
+{{< textin
+  question="Markers that are similar to VNTRs, but whose repeat unit is very small, are called ________."
+  answer="microsatellite polymorphism"
+  hint="Reread the fourth paragraph of Genetic Maps."
+>}}
 
 {{< multiplechoice
   question="Genetic recombination occurs by which process?"
   answer="crossing over"
-  hint="The sentence that defines genetic recombination names the exchange process directly."
+  hint="Reread the second paragraph of Genetic Maps."
 >}}
 independent assortment
 crossing over
@@ -130,7 +136,7 @@ sister chromatids
 {{< multiplechoice
   question="Individual genetic maps in a given species are:"
   answer="genetically similar"
-  hint="The section says individuals of a species share genetic similarity without being identical — that's exactly what makes their minor differences useful as markers."
+  hint="Reread the third paragraph of Genetic Maps."
 >}}
 genetically similar
 genetically identical
@@ -138,7 +144,7 @@ genetically dissimilar
 not useful in species analysis
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How could a genetic map of the human genome help find a cure for cancer?" hint="Think about what a genetic map lets researchers locate on a chromosome, and how pinpointing that location connects to disease risk." >}}
+{{< selfcheck question="How could a genetic map of the human genome help find a cure for cancer?" hint="Reread the section's opening paragraph." >}}
 A human genetic map can help identify genetic markers and sequences associated with high cancer risk, which can help to screen and provide early detection of different types of cancer.
 ===CHECKS===
 identify genetic markers and sequences associated with high cancer risk
@@ -146,18 +152,19 @@ help to screen
 provide early detection of different types of cancer
 {{< /selfcheck >}}
 
-{{< textin
-  question="A representation of the actual distance, measured in nucleotides, between genes or genetic markers is called a ________."
-  answer="physical map"
-  hint="It is the section's second boxed definition, right after genetic map — its scale is nucleotides, not chromosome position."
->}}
-
 ### Describe genomic mapping methods
+
+{{< textin
+  question="Variation between individuals in the length of DNA fragments produced by restriction endonucleases is known by the abbreviation ________."
+  answer="RFLP"
+  accept="restriction fragment length polymorphism"
+  hint="Reread the fourth paragraph of Genetic Maps."
+>}}
 
 {{< multiplechoice
   question="ESTs are ________."
   answer="all of the above"
-  hint="Check the definition against each option — an EST is a short STS identified with a cDNA library, so more than one option holds true."
+  hint="Reread the last sentences of the first paragraph of Physical Maps."
 >}}
 generated after a cDNA library is made
 unique sequences in the genome
@@ -168,7 +175,7 @@ all of the above
 {{< multiplechoice
   question="Linkage analysis ________."
   answer="is based on the natural recombination process"
-  hint="Linkage analysis opens the Genetic Maps section — it studies a process that happens naturally during meiosis, not one that radiation or lab tools create."
+  hint="Reread the first paragraph of Genetic Maps."
 >}}
 is used to create a physical map
 is based on the natural recombination process
@@ -179,7 +186,7 @@ involves breaking and rejoining of DNA artificially
 {{< multiplechoice
   question="Information obtained by microscopic analysis of stained chromosomes is used in:"
   answer="cytogenetic mapping"
-  hint="The Physical Maps section names the one mapping method that works directly from a microscope and stained chromosomes."
+  hint="Reread the first paragraph of Physical Maps."
 >}}
 radiation hybrid mapping
 sequence mapping
@@ -187,13 +194,6 @@ RFLP mapping
 cytogenetic mapping
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Variation between individuals in the length of DNA fragments produced by restriction endonucleases is known by the abbreviation ________."
-  answer="RFLP"
-  accept="restriction fragment length polymorphism"
-  hint="The section gives its phonetic nickname, \"rif-lips,\" right after naming the abbreviation."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 17.2: Mapping Genomes](https://openstax.org/books/biology-2e/pages/17-2-mapping-genomes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; both figures re-kinded from the manifest's file-extension guess of "photo" to "diagram" (a colored crossover schematic and a chromosome-ideogram chart, neither a photograph); Figure_17_02_01's alt rewritten from the image — the source alt ran to 680 characters, over the 600-character accessibility limit, so a shorter alt was written and the panel-by-panel walkthrough moved into a longdesc; a longdesc also added for Figure_17_02_02, walking its four rows of autosomes and the boxed sex chromosomes; the two source cross-references to these figures ("Figure 17.11," "Figure 17.12") rewritten as "the figure below," since figures are not numbered here; both feature boxes rendered as callouts with their bold names — the "scientific" note as Scientific Method Connection, kept with its title, problem statement, and hypothesis prompt, and the "interactive" note as Link to Learning — with the source's generic anchor text ("this website," "Click this link") replaced by link text describing each destination from the box's own following sentence; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; four key-term recall items added from the glossary (genomics and genome mapping under "Define genomics," physical map under "Describe genetic and physical maps," and RFLP under "Describe genomic mapping methods") to give every objective group an item beyond the source exercise sets; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 17.2: Mapping Genomes](https://openstax.org/books/biology-2e/pages/17-2-mapping-genomes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; both figures re-kinded from the manifest's file-extension guess of "photo" to "diagram" (a colored crossover schematic and a chromosome-ideogram chart, neither a photograph); Figure_17_02_01's alt rewritten from the image — the source alt ran to 680 characters, over the 600-character accessibility limit, so a shorter alt was written and the panel-by-panel walkthrough moved into a longdesc; a longdesc also added for Figure_17_02_02, walking its four rows of autosomes and the boxed sex chromosomes; the two source cross-references to these figures ("Figure 17.11," "Figure 17.12") rewritten as "the figure below," since figures are not numbered here; both feature boxes rendered as callouts with their bold names — the "scientific" note as Scientific Method Connection, kept with its title, problem statement, and hypothesis prompt, and the "interactive" note as Link to Learning — with the source's generic anchor text ("this website," "Click this link") replaced by link text describing each destination from the box's own following sentence; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; four key-term recall items added from the glossary (genome mapping and genetic marker under "Define genomics," the latter's prompt worded from the body's own sentence, microsatellite polymorphism under "Describe genetic and physical maps," its prompt worded from the body's own sentence, and RFLP under "Describe genomic mapping methods") to give every objective group an item beyond the source exercise sets, each placed first in its group; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

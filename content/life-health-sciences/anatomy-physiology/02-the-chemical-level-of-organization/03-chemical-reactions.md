@@ -46,7 +46,7 @@ Just as you can express mathematical calculations in equations such as 2 + 7 = 9
 
 Notice that, in the first example, a nitrogen (N) atom and three hydrogen (H) atoms bond to form a compound. This anabolic reaction requires energy, which is then stored within the compound’s bonds. Such reactions are referred to as synthesis reactions. A **synthesis reaction** is a chemical reaction that results in the synthesis (joining) of components that were formerly separate (shown as (a) in the figure below). Again, nitrogen and hydrogen are reactants in a synthesis reaction that yields ammonia as the product. The general equation for a synthesis reaction is A + B → AB.
 
-{{< mediafigure src="anatomy-physiology/211_Three_Fundamental_Chemical_Reactions-01" kind="diagram" eager="true" alt="Three word-equation diagrams stand in for chemical reactions, each built from the words NOTE, BOOK, NOTEBOOK, and WORM: (a) a synthesis reaction, NOTE + BOOK arrow NOTEBOOK; (b) a decomposition reaction, BOOKWORM arrow BOOK + WORM; (c) an exchange reaction, NOTEBOOK + WORM arrow NOTE + BOOKWORM." >}}
+{{< mediafigure src="anatomy-physiology/211_Three_Fundamental_Chemical_Reactions-01" kind="diagram" eager="true" alt="Three word-equation diagrams stand in for chemical reactions, each built from the words NOTE, BOOK, NOTEBOOK, and WORM: (a) a synthesis reaction, NOTE + BOOK arrow NOTEBOOK; (b) a decomposition reaction, BOOKWORM arrow BOOK + WORM; (c) an exchange reaction, NOTEBOOK + WORM arrow NOTE + BOOKWORM." longdesc="Each word equation sits under a printed sentence. (a) In a synthesis reaction, two components bond to make a larger molecule. Energy is required and is stored in the bond: NOTE + BOOK → NOTEBOOK. (b) In a decomposition reaction, bonds between components of a larger molecule are broken, resulting in smaller products: BOOKWORM → BOOK + WORM. (c) In an exchange reaction, bonds are both formed and broken such that the components of the reactants are rearranged: NOTEBOOK + WORM → NOTE + BOOKWORM." >}}
 The atoms and molecules involved in the three fundamental chemical reactions can be imagined as words.
 {{< /mediafigure >}}
 
@@ -123,7 +123,7 @@ Enzymes are critical to the body’s healthy functioning. They assist, for examp
 {{< multiplechoice
   question="The energy stored in a foot of snow on a steep roof is ________."
   answer="potential energy"
-  hint="The snow is not moving yet; its stored energy would convert to motion if it slid off the roof."
+  hint="Reread The Role of Energy in Chemical Reactions."
 >}}
 potential energy
 kinetic energy
@@ -134,7 +134,7 @@ activation energy
 {{< multiplechoice
   question="________ reactions release energy."
   answer="Catabolic, exergonic, and decomposition"
-  hint="Think about which of these terms name reactions that break bonds and release the energy that was stored in them, and whether more than one term fits."
+  hint="Reread the section's opening paragraph and its paragraph on exergonic reactions."
 >}}
 Catabolic
 Exergonic
@@ -153,7 +153,7 @@ Catabolic, exergonic, and decomposition
 {{< multiplechoice
   question="Which form of energy is emitted and transmitted as waves rather than matter, ranging from long radio waves to short gamma waves?"
   answer="radiant energy"
-  hint="This spectrum includes the wavelengths your eyes evolved to see as visible light, from red to violet."
+  hint="Reread the bulleted list under Forms of Energy Important in Human Functioning."
 >}}
 mechanical energy
 radiant energy
@@ -164,7 +164,7 @@ chemical energy
 {{< multiplechoice
   question="Which form of energy, stored in physical systems such as machines, engines, or the human body, directly powers the movement of matter?"
   answer="mechanical energy"
-  hint="Think about what your own muscles provide when you lift a brick into place on a wall."
+  hint="Reread the first bullet under Forms of Energy Important in Human Functioning."
 >}}
 electrical energy
 chemical energy
@@ -177,7 +177,7 @@ radiant energy
 {{< multiplechoice
   question="The bonding of calcium, phosphorus, and other elements produces mineral crystals that are found in bone. This is an example of a(n) ________ reaction."
   answer="synthesis"
-  hint="Separate components are joining together to form something larger — which of the three basic reaction types does that?"
+  hint="Decide whether bonds are being formed, broken, or both."
 >}}
 catabolic
 synthesis
@@ -188,7 +188,7 @@ exchange
 {{< multiplechoice
   question="AB → A + B is a general notation for a(n) ________ reaction."
   answer="decomposition"
-  hint="A single reactant is splitting apart into two separate products."
+  hint="Compare the numbers of reactants and products with the general equations given in this section."
 >}}
 anabolic
 endergonic
@@ -210,7 +210,7 @@ a component not present in the reactants cannot suddenly appear in the products
 {{< multiplechoice
   question="Which of the following combinations of atoms is most likely to result in a chemical reaction?"
   answer="hydrogen and hydrogen"
-  hint="The most reactive combination pairs two atoms of the same highly reactive element, rather than an inert noble gas."
+  hint="Reread Properties of the Reactants on which elements react readily and which do not."
 >}}
 hydrogen and hydrogen
 hydrogen and helium
@@ -221,7 +221,7 @@ neon and helium
 {{< multiplechoice
   question="Chewing a bite of bread mixes it with saliva and facilitates its chemical breakdown. This is most likely due to the fact that ________."
   answer="saliva contains enzymes"
-  hint="Chewing increases surface area, but the chemical breakdown itself needs a biological catalyst."
+  hint="Reread Factors Influencing the Rate of Chemical Reactions, then test each option against it."
 >}}
 the inside of the mouth maintains a very high temperature
 chewing stores potential energy
@@ -240,4 +240,4 @@ they can quickly dissolve into their reactive components when added to the water
 
 ---
 
-<small>This section is adapted from [Anatomy and Physiology 2e, Section 2.3: Chemical Reactions](https://openstax.org/books/anatomy-and-physiology-2e/pages/2-3-chemical-reactions) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP; both figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" (both are line-art illustrations, not photographs); both figures' alt text rewritten from the image, since the source alts described almost nothing ("This figure shows three chemical reactions," "The left panel shows a graph...the right panel shows the graph...") — the rewritten alts name the word-equations and panel labels actually drawn; the source's reversible-reaction arrow (⇄) is set as ⇌, the corpus's existing convention for a reversible chemical equation; the module's six Review Questions and two Critical Thinking Questions are adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; two key-term recall (textin) items ("kinetic energy," "chemical energy") and two author-written multiple-choice items ("radiant energy," "mechanical energy," built from this section's own sentences with the section's own sibling terms as distractors) added to round out the two energy-related objective groups to the book's three-per-objective, twelve-per-section floor, since no source exercise tests kinetic/potential energy recall or the individual non-chemical forms of energy; each added key-term recall item is placed first in its group, ahead of the multiple choice whose own option list repeats that same term, so no option list prints a recall item's key before the learner reaches it. The module has no feature box, comparison table, or References section, so none appears on this page.</small>
+<small>This section is adapted from [Anatomy and Physiology 2e, Section 2.3: Chemical Reactions](https://openstax.org/books/anatomy-and-physiology-2e/pages/2-3-chemical-reactions) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP; both figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" (both are line-art illustrations, not photographs); both figures' alt text rewritten from the image, since the source alts described almost nothing ("This figure shows three chemical reactions," "The left panel shows a graph...the right panel shows the graph...") — the rewritten alts name the word-equations and panel labels actually drawn; the source's reversible-reaction arrow (⇄) is set as ⇌, the corpus's existing convention for a reversible chemical equation; a `longdesc` added to the three-reactions figure transcribing the three explanatory sentences the image prints above its word equations, since no caption or alt carries them; the module's six Review Questions and two Critical Thinking Questions are adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; two key-term recall (textin) items ("kinetic energy," "chemical energy") and two author-written multiple-choice items ("radiant energy," "mechanical energy," built from this section's own sentences with the section's own sibling terms as distractors) added to round out the two energy-related objective groups to the book's three-per-objective floor (8 per section), since the source's exercises give the first objective two items and test none of the individual forms of energy; each added key-term recall item is placed first in its group, ahead of the multiple choice whose own option list repeats that same term, so no option list prints a recall item's key before the learner reaches it. The module has no feature box, comparison table, or References section, so none appears on this page.</small>

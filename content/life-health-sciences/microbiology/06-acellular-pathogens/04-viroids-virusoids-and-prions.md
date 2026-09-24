@@ -34,7 +34,8 @@ Viroids can result in devastating losses of commercially important agricultural 
 {{< textin
   question="What is the genome of a viroid made of?"
   answer="circular RNA"
-  hint="Look at the shape and the molecule type named in the sentence that first defines a viroid."
+  accept="RNA|circular ssRNA|ssRNA|single-stranded RNA|circular single-stranded RNA|ribonucleic acid|circular ribonucleic acid"
+  hint="Reread the sentence that defines viroids in the Viroids subsection."
 >}}
 
 ## Virusoids
@@ -45,13 +46,13 @@ Virusoids belong to a larger group of infectious agents called satellite RNAs, w
 
 **Check Your Understanding**
 
-{{< sortbins question="What is the main difference between a viroid and a virusoid? Sort each phrase below under the type it describes." hint="Compare which type replicates on its own and which type needs another virus present." >}}
+{{< sortbins question="What is the main difference between a viroid and a virusoid? Sort each phrase below under the type it describes." hint="Reread the sentence defining viroids and the first two sentences of the Virusoids subsection." >}}
 {"bins": ["Viroid", "Virusoid"],
  "items": [
-  {"label": "Consists of a short strand of circular RNA capable of self-replication", "bin": 0},
+  {"label": "Capable of self-replication", "bin": 0},
   {"label": "Best described as a non–self-replicating ssRNA", "bin": 1},
   {"label": "Discovered in 1971 by pathologist Theodor Diener", "bin": 0},
-  {"label": "Requires that the host cell also be infected with a specific helper virus", "bin": 1}]}
+  {"label": "Requires that the host cell also be infected with a specific virus", "bin": 1}]}
 {{< /sortbins >}}
 
 ## Prions
@@ -60,7 +61,7 @@ At one time, scientists believed that any infectious particle must contain DNA o
 
 A prion is a misfolded rogue form of a normal protein (PrPc) found in the cell. This rogue prion protein (PrPsc), which may be caused by a genetic mutation or occur spontaneously, can be infectious, stimulating other endogenous normal proteins to become misfolded, forming plaques (see the diagram below). Today, prions are known to cause various forms of **transmissible spongiform encephalopathy** (TSE) in human and animals. TSE is a rare degenerative disorder that affects the brain and nervous system. The accumulation of rogue proteins causes the brain tissue to become sponge-like, killing brain cells and forming holes in the tissue, leading to brain damage, loss of motor coordination, and dementia (see the brain scans below). Infected individuals are mentally impaired and become unable to move or speak. There is no cure, and the disease progresses rapidly, eventually leading to death within a few months or years.
 
-{{< mediafigure src="microbiology/OSC_Microbio_06_04_prion" alt="Panel a is a labeled flow diagram: green circles marked endogenous PrPC lead to a step labeled interaction between PrPC and PrPSc, shown as a green circle beside a red spiked shape marked PrPSc; a boxed list of three inputs — spontaneous generation of PrPSc, conversion of mutant PrP into PrPSc, and inoculation of PrPSc — feeds the cycle, which continues through conversion of PrP into PrPSc and accumulation of PrPSc, shown as growing clusters of red spiked shapes. Panel b is a micrograph of pink-stained brain tissue with pale round holes and dark-stained nuclei, and a 25 µm scale bar." longdesc="The diagram in panel (a) reads left to right and cycles back on itself. At upper left, a cluster of green circles is labeled endogenous PrPC, with an arrow leading right to a step labeled interaction between PrPC and PrPSc, shown as a green circle beside a red spiked shape marked PrPSc. A separate box at left lists three ways PrPSc can arise — spontaneous generation of PrPSc, conversion of mutant PrP into PrPSc, and inoculation of PrPSc — with an arrow from the box to a red spiked shape below the interaction step. An arrow leads from the interaction step down and right to a small cluster of red spiked shapes labeled conversion of PrP into PrPSc, and a final arrow leads left to a larger cluster of red spiked shapes labeled accumulation of PrPSc, completing the cycle." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_06_04_prion" alt="Panel a is a labeled flow diagram: green circles marked endogenous PrPC lead to a step labeled interaction between PrPC and PrPSc, shown as a green circle beside a red spiked shape marked PrPSc; a boxed list of three inputs — spontaneous generation of PrPSc, conversion of mutant PrP into PrPSc, and inoculation of PrPSc — feeds the cycle, which continues through conversion of PrP into PrPSc and accumulation of PrPSc, shown as growing clusters of red spiked shapes. Panel b is a micrograph of pink-stained brain tissue with pale round holes and dark-stained nuclei, and a 25 µm scale bar." longdesc="The diagram in panel (a) reads left to right and cycles back on itself. At upper left, a cluster of green circles is labeled endogenous PrPC, with an arrow leading right to a step labeled interaction between PrPC and PrPSc, shown as a green circle beside a red spiked shape marked PrPSc. A separate box at left lists three ways PrPSc can arise — spontaneous generation of PrPSc, conversion of mutant PrP into PrPSc, and inoculation of PrPSc — with an arrow from the box to a single red spiked shape below and left of the interaction step; a second arrow curves up from that same shape to the interaction step. An arrow leads from the interaction step down to a pair of red spiked shapes labeled conversion of PrP into PrPSc. The arrow leaving that pair runs left and forks: one branch turns up into the same box-fed shape, closing the cycle, and the other turns down to a larger cluster of six red spiked shapes labeled accumulation of PrPSc. Panel (b) is a pink-stained brain-tissue micrograph riddled with pale round holes, with dark nuclei and a 25 µm scale bar." kind="diagram" >}}
 Endogenous normal prion protein (PrPc) is converted into the disease-causing form (PrPsc) when it encounters this variant form of the protein. PrPsc may arise spontaneously in brain tissue, especially if a mutant form of the protein is present, or it may originate from misfolded prions consumed in food that eventually find their way into brain tissue. (credit b: modification of work by USDA)
 {{< /mediafigure >}}
 
@@ -86,12 +87,12 @@ Prions are extremely difficult to destroy because they are resistant to heat, ch
 
 {{< multiplechoice
   question="Does a prion have a genome?"
-  answer="No — prions are proteins and do not contain DNA or RNA."
-  hint="Recall what infectious particles are made of, according to the paragraph that introduces prions."
+  answer="No — a prion consists of protein alone."
+  hint="Reread the first paragraph of the Prions subsection."
 >}}
-Yes — a prion's genome is a short strand of circular RNA.
-Yes — but it needs a helper virus to replicate its genome.
-No — prions are proteins and do not contain DNA or RNA.
+Yes — its genome is the same kind as a viroid's.
+Yes — its genome is the same kind as a virusoid's.
+No — a prion consists of protein alone.
 {{< /multiplechoice >}}
 
 {{< callout type="info" >}}
@@ -130,23 +131,24 @@ The case began in [Viruses](/life-health-sciences/microbiology/06-acellular-path
 ### Describe viroids and their unique characteristics
 
 {{< textin
-  question="A ________ is an infectious plant pathogen composed of RNA."
-  answer="viroid"
-  hint="Name the acellular RNA particle Theodor Diener discovered and described at the start of this section."
+  question="Unlike viruses, viroids do not have a ________ to protect their genetic information."
+  answer="protein coat"
+  hint="Reread the first paragraph under the section's first subheading."
 >}}
 
 {{< textin
   question="In 1971, pathologist Theodor Diener named this newly discovered acellular particle a viroid, meaning \"________.\""
   answer="virus-like"
-  hint="Recall the literal meaning of the coined term, based on its resemblance to a familiar infectious agent."
+  accept="viruslike|like a virus"
+  hint="Reread the first sentence of the Viroids subsection."
 >}}
 
 {{< multiplechoice
-  question="Which viroid, the first ever discovered, was found to cause potato tuber spindle disease?"
-  answer="potato spindle tuber viroid (PSTV)"
-  hint="Match the viroid named in the same sentence as potato tuber spindle disease, also shown in the photograph above."
+  question="Which viroid is the smallest discovered thus far that infects plants?"
+  answer="Avocado sunblotch viroid (ASBVd)"
+  hint="Reread the second paragraph of the Viroids subsection."
 >}}
-potato spindle tuber viroid (PSTV)
+Potato spindle tuber viroid (PSTV)
 Tomato planta macho viroid (TPMVd)
 Avocado sunblotch viroid (ASBVd)
 Peach latent mosaic viroid (PLMVd)
@@ -155,21 +157,22 @@ Peach latent mosaic viroid (PLMVd)
 ### Describe virusoids and their unique characteristics
 
 {{< textin
-  question="Both viroids and virusoids have a(n) ________ genome."
-  answer="RNA"
-  hint="Identify the type of nucleic acid both of these subviral agents are made of, not the shape of that molecule."
+  question="Virusoids belong to a larger group of infectious agents called ________; unlike plant virusoids, members of this group may encode for proteins."
+  answer="satellite RNAs"
+  hint="Reread the second paragraph under the section's second subheading."
 >}}
 
 {{< textin
   question="Unlike viroids, virusoids require a(n) ________ to reproduce."
   answer="helper virus"
-  hint="Name what a virusoid needs to infect a cell, unlike a viroid, described earlier in this section."
+  hint="Reread the second sentence of the Virusoids subsection."
 >}}
 
 {{< textin
-  question="A ________ is a small piece of RNA associated with the larger RNA of some infectious plant viruses."
-  answer="virusoid"
-  hint="Name the subviral RNA particle described at the start of this section, distinct from a viroid."
+  question="Both viroids and virusoids have a(n) ________ genome."
+  answer="RNA"
+  accept="ssRNA|single-stranded RNA|ribonucleic acid"
+  hint="Reread the definition of viroids and the first sentence of the Virusoids subsection."
 >}}
 
 ### Describe prions and their unique characteristics
@@ -177,7 +180,7 @@ Peach latent mosaic viroid (PLMVd)
 {{< multiplechoice
   question="Which of these infectious agents do not have nucleic acid?"
   answer="prions"
-  hint="Recall which of these agents is made only of protein, with no DNA or RNA genome at all."
+  hint="Reread the first paragraph under the section's third subheading."
 >}}
 viroids
 viruses
@@ -204,7 +207,7 @@ brain damage, loss of motor coordination, and dementia
 mentally impaired and unable to move or speak
 {{< /selfcheck >}}
 
-{{< selfcheck question="Does a prion replicate? Explain." hint="Consider what a prion is made of, and how the rogue protein form spreads without a genome to copy." >}}
+{{< selfcheck question="Does a prion replicate? Explain." hint="Reread the first two paragraphs of the Prions subsection." >}}
 A prion does not replicate the way a virus or a cell does, because proteins are acellular and do not contain DNA or RNA. Instead, the rogue prion protein (PrPsc) is infectious because it stimulates other endogenous normal prion proteins (PrPc) to become misfolded into more PrPsc, which accumulate and form plaques.
 ===CHECKS===
 proteins are acellular and do not contain DNA or RNA
@@ -214,4 +217,4 @@ accumulate and form plaques
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 6.4: Viroids, Virusoids, and Prions](https://openstax.org/books/microbiology/pages/6-4-viroids-virusoids-and-prions) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; the PrPc/PrPsc conversion-cycle figure is set `kind="diagram"` (overriding the manifest's photo guess) because its panel (a) is a drawn flow diagram, with a `longdesc` walking that diagram in reading order, while the potato and brain-scan/micrograph figures are `kind="photo"`; the PSTV alt was expanded from the bare source alt to describe the visible deformities and the PSTV card; the CJD brain-scan alt was rewritten from the image rather than the source alt, which claims the CJD scan shows "larger spaces" and "more black regions" — the rendered scan instead reads as more uniformly hazy and blurred with reduced gray/white contrast, not as darker or more open, a suspected source-alt defect; same-module figure cross-references rendered as describing prose ("the photograph below," "the diagram below," "the brain scans below/above"); the Link to Learning kept its URL and describes its destination; the Clinical Focus box is titled *Resolution*, and its closing "Go back to the previous Clinical Focus box" link is replaced with a sentence naming where the case began, [Viruses](/life-health-sciences/microbiology/06-acellular-pathogens/01-viruses/); the table's footnote is rendered as an inline parenthetical citation with its bare access URL dropped; the TSEs-in-Humans table is transcribed as a Markdown table from the CNXML cells (its spanning `<thead>` title is dropped as a data row, standing in for the sentence that already introduces it), and was evaluated against the table→sortbins rule and skipped: its rows are eight individual named diseases with individual, non-categorical transmission notes, not a 2–4 category axis on either orientation, so no sortbins was built; two one-word source typos are corrected without an inline note — "prior protein" to "prion protein" in the Sporadic CJD row of the TSE table, and the missing possessive in "David symptoms improve" to "David's symptoms improve" in the Clinical Focus Resolution — both suspected source defects; all three body Check Your Understanding bullets are graded from this module's own text: the Viroids bullet is a text-recall keyed from the sentence defining a viroid's genome, the Virusoids bullet (asking the main difference between a viroid and a virusoid) is a sort-into-bins built from this module's own distinguishing phrases, and the Prions bullet is a multiple-choice keyed from the paragraph stating that proteins contain no DNA or RNA, with distractors built from the viroid and virusoid genome facts stated earlier in this module; the module's two Multiple Choice and one two-blank Fill in the Blank exercise are adapted into Practice, the Fill in the Blank split into two text-recall items (one per blank), both kept in the Virusoids group; the module's unkeyed Short Answer and Critical Thinking questions remain self-checks, since each needs several of this module's own sentences assembled into an explanation, with model answers and rubrics built only from this module's text; no source exercise was omitted; four author-written items were added to bring the objective groups to this book's floor — in the Viroids group, two text-recall items from this section's Key terms and body text and one multiple-choice built from the four viroid names this module names, and in the Virusoids group, one text-recall item keyed from the Key terms definition of a virusoid, disclosed here and in the source ledger; this section's one Link to Learning URL, the WHO prion-contaminated-materials guidance link (`https://www.openstax.org/l/22whocontaminat`, redirecting to `https://www.who.int/csr/resources/publications/biosafety/Labbiosafety.pdf`), is confirmed dead (404, checked September 15, 2026) and is no longer linked, replaced with a plain-text description naming the World Health Organization's laboratory biosafety guidelines; key terms compiled from the module's four defined terms and the book's Glossary appendix, all four definitions taken directly from the Glossary, with the plural terms `viroids`, `virusoids`, and `prions` bolded and lower-cased in the Key terms list to match how each is printed at its defining, sentence-initial occurrence in the body.</small>
+<small>This section is adapted from [Microbiology, Section 6.4: Viroids, Virusoids, and Prions](https://openstax.org/books/microbiology/pages/6-4-viroids-virusoids-and-prions) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; the PrPc/PrPsc conversion-cycle figure is set `kind="diagram"` (overriding the manifest's photo guess) because its panel (a) is a drawn flow diagram, with a `longdesc` walking that diagram in reading order, while the potato and brain-scan/micrograph figures are `kind="photo"`; the PSTV alt was expanded from the bare source alt to describe the visible deformities and the PSTV card; the CJD brain-scan alt was rewritten from the image rather than the source alt, which claims the CJD scan shows "larger spaces" and "more black regions" — the rendered scan instead reads as more uniformly hazy and blurred with reduced gray/white contrast, not as darker or more open, a suspected source-alt defect; same-module figure cross-references rendered as describing prose ("the photograph below," "the diagram below," "the brain scans below/above"); the Link to Learning kept its URL and describes its destination; the Clinical Focus box is titled *Resolution*, and its closing "Go back to the previous Clinical Focus box" link is replaced with a sentence naming where the case began, [Viruses](/life-health-sciences/microbiology/06-acellular-pathogens/01-viruses/); the table's footnote is rendered as an inline parenthetical citation with its bare access URL dropped; the TSEs-in-Humans table is transcribed as a Markdown table from the CNXML cells (its spanning `<thead>` title is dropped as a data row, standing in for the sentence that already introduces it), and was evaluated against the table→sortbins rule and skipped: its rows are eight individual named diseases with individual, non-categorical transmission notes, not a 2–4 category axis on either orientation, so no sortbins was built; two one-word source typos are corrected without an inline note — "prior protein" to "prion protein" in the Sporadic CJD row of the TSE table, and the missing possessive in "David symptoms improve" to "David's symptoms improve" in the Clinical Focus Resolution — both suspected source defects; all three body Check Your Understanding bullets are graded from this module's own text: the Viroids bullet is a text-recall keyed from the sentence defining a viroid's genome, the Virusoids bullet (asking the main difference between a viroid and a virusoid) is a sort-into-bins built from this module's own distinguishing phrases (its virusoid phrase reads "infected with a specific virus," dropping the module's word "helper" so the body item does not print the key of the Practice helper-virus blank), and the Prions bullet is a multiple-choice keyed from the paragraph stating that proteins contain no DNA or RNA, with distractors built from the viroid and virusoid genome facts stated earlier in this module; the module's two Multiple Choice and one two-blank Fill in the Blank exercise are adapted into Practice, the Fill in the Blank split into two text-recall items (one per blank), both kept in the Virusoids group, with the RNA-genome blank moved below the helper-virus blank so that no item directly above a text-entry blank prints its key, reversing their printed order; the module's unkeyed Short Answer and Critical Thinking questions remain self-checks, since each needs several of this module's own sentences assembled into an explanation, with model answers and rubrics built only from this module's text; no source exercise was omitted; four author-written items were added to bring the objective groups to this book's floor — in the Viroids group, two cloze text-recall items from this section's Viroids body sentences (the "virus-like" naming and the missing protein coat) and one multiple-choice built from the four viroid names this module names, and in the Virusoids group, one cloze text-recall item from the body sentence placing virusoids among satellite RNAs, disclosed here and in the source ledger; this section's one Link to Learning URL, the WHO prion-contaminated-materials guidance link (`https://www.openstax.org/l/22whocontaminat`, redirecting to `https://www.who.int/csr/resources/publications/biosafety/Labbiosafety.pdf`), is confirmed dead (404, checked September 15, 2026) and is no longer linked, replaced with a plain-text description naming the World Health Organization's laboratory biosafety guidelines; key terms compiled from the module's four defined terms and the book's Glossary appendix, all four definitions taken directly from the Glossary, with the plural terms `viroids`, `virusoids`, and `prions` bolded and lower-cased in the Key terms list to match how each is printed at its defining, sentence-initial occurrence in the body.</small>

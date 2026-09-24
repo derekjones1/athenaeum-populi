@@ -18,7 +18,7 @@ weight: 1
 
 Scientists use the term **bioenergetics** to discuss the concept of energy flow through living systems, such as cells. Cellular processes such as building and breaking down complex molecules occur through stepwise chemical reactions. Some of these chemical reactions are spontaneous and release energy; whereas, others require energy to proceed. Just as living things must continually consume food to replenish what they have used, cells must continually obtain more energy to replenish that which the many energy-requiring chemical reactions that constantly take place use. All of the chemical reactions that transpire inside cells, including those that use and release energy, are the cell's **metabolism**.
 
-{{< mediafigure src="biology/Figure_06_01_01" kind="diagram" alt="This diagram shows energy from the sun being transferred to producers, such as plants, as well as releasing heat. The producers in turn transfer the energy to consumers and decomposers, which release heat. Animals also transfer energy to decomposers." longdesc="A flow chart. An orange arrow labeled 'Heat' and a pink arrow labeled 'Light Energy' both curve downward, pointing into a box labeled 'Producers: plants.' Beside those two labeled arrows, a photograph of the sun is captioned 'Energy.' A gray arrow points right from 'Producers: plants' to a box labeled 'Consumers: animals.' Gray arrows from both 'Producers: plants' and 'Consumers: animals' point down and inward to a box labeled 'Decomposers: fungi, bacteria, worms,' and a final gray arrow points down from that box to a box labeled 'Heat' at the bottom." eager="true" >}}
+{{< mediafigure src="biology/Figure_06_01_01" kind="diagram" alt="This diagram shows energy from the sun being transferred to producers, such as plants, as well as releasing heat. The producers in turn transfer the energy to consumers and decomposers, which release heat. Animals also transfer energy to decomposers." longdesc="A flow chart. At the top right, a photograph of the sun is captioned 'Energy.' Two broad arrows leave the photograph's left edge, run left, and bend down into a box labeled 'Producers: plants': the outer, orange one labeled 'Heat' and the inner, pink one labeled 'Light Energy.' A gray arrow points right from 'Producers: plants' to a box labeled 'Consumers: animals.' Gray arrows from both 'Producers: plants' and 'Consumers: animals' point down and inward to a box labeled 'Decomposers: fungi, bacteria, worms,' and a final gray arrow points down from that box to a box labeled 'Heat' at the bottom." eager="true" >}}
 Most life forms on earth obtain their energy from the sun. Plants use photosynthesis to capture sunlight, and herbivores eat those plants to obtain energy. Carnivores eat the herbivores, and decomposers digest plant and animal matter.
 {{< /mediafigure >}}
 
@@ -64,7 +64,7 @@ ATP is an important molecule for cells to have in sufficient supply at all times
 
 It is important to know that metabolic pathway chemical reactions do not take place spontaneously. A protein called an enzyme facilitates or catalyzes each reaction step. Enzymes are important for catalyzing all types of biological reactions—those that require energy as well as those that release energy.
 
-{{< mediafigure src="biology/Figure_06_01_03" kind="diagram" alt="Anabolic and catabolic pathways are shown. In the anabolic pathway (top), four small molecules have energy added to them to make one large molecule. In the catabolic pathway (bottom), one large molecule is broken down into two components: four small molecules plus energy." longdesc="Two horizontal panels stacked under the heading 'Metabolic pathways.' The top panel, tinted pale blue and labeled 'Anabolic,' shows four separate green circles, the bold label '+ Energy,' a plain arrow, and then four green circles joined into one row. The bottom panel, tinted pale orange and labeled 'Catabolic,' shows the reverse: four joined green circles, an arrow, and then four separate green circles beside the label '+ Energy.'" >}}
+{{< mediafigure src="biology/Figure_06_01_03" kind="diagram" alt="Anabolic and catabolic pathways are shown. In the anabolic pathway (top), four small molecules have energy added to them to make one large molecule. In the catabolic pathway (bottom), one large molecule is broken down into two components: four small molecules plus energy." longdesc="Two horizontal panels stacked under the heading 'Metabolic pathways.' The top panel, tinted pale blue, is headed 'Anabolic: Small molecules assemble into large ones. Energy is required.' It shows four separate green circles, the bold label '+ Energy,' a plain arrow, and then four green circles joined into one row. The bottom panel, tinted pale orange, is headed 'Catabolic: Large molecules break down into small ones. Energy is released.' It shows the reverse: four joined green circles, an arrow, and then four separate green circles beside the label '+ Energy.'" >}}
 Anabolic pathways are those that require energy to synthesize larger molecules. Catabolic pathways are those that generate energy by breaking down larger molecules. Both types of pathways are required for maintaining the cell's energy balance.
 {{< /mediafigure >}}
 
@@ -83,10 +83,24 @@ Cells perform the functions of life through various chemical reactions. A cell's
 
 ### Explain metabolic pathways and describe the two major types
 
+{{< textin
+  question="Pathways that require an input of energy to synthesize complex molecules from simpler ones are called ________ pathways."
+  answer="anabolic"
+  accept="anabolism"
+  hint="Reread the first paragraph of the subsection on the two pathway types."
+>}}
+
+{{< textin
+  question="Pathways in which complex molecules break down into simpler ones are called ________ pathways."
+  answer="catabolic"
+  accept="catabolism"
+  hint="Reread the second paragraph of the subsection on the two pathway types."
+>}}
+
 {{< multiplechoice
   question="DNA replication involves unwinding two strands of parent DNA, copying each strand to synthesize complementary strands, and releasing the parent and daughter DNA. Which of the following accurately describes this process?"
   answer="This is an anabolic process."
-  hint="Ask whether the process builds a new, more complex molecule from simpler building blocks, or breaks a complex molecule apart."
+  hint="Reread the first paragraph of the subsection on the two pathway types."
 >}}
 This is an anabolic process.
 This is a catabolic process.
@@ -94,21 +108,7 @@ This is both anabolic and catabolic.
 This is a metabolic process but is neither anabolic nor catabolic.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Pathways that require an input of energy to synthesize complex molecules from simpler ones are called ________ pathways."
-  answer="anabolic"
-  accept="anabolism"
-  hint="Building sugar from carbon dioxide, or building a protein from amino acids, are examples."
->}}
-
-{{< textin
-  question="Pathways in which complex molecules break down into simpler ones are called ________ pathways."
-  answer="catabolic"
-  accept="catabolism"
-  hint="Breaking glucose down to release its stored energy is an example."
->}}
-
-{{< selfcheck question="Does physical exercise involve anabolic and/or catabolic processes? Give evidence for your answer." hint="Think about what happens to sugars during muscle contraction, and what happens to muscle tissue afterward." >}}
+{{< selfcheck question="Does physical exercise involve anabolic and/or catabolic processes? Give evidence for your answer." hint="Reread the subsection on the two pathway types." >}}
 Physical exercise involves both anabolic and catabolic processes. Body cells break down sugars to provide ATP to do the work necessary for exercise, such as muscle contractions. This is catabolism. Muscle cells also must repair muscle tissue damaged by exercise by building new muscle. This is anabolism.
 ===CHECKS===
 physical exercise involves both anabolic and catabolic processes
@@ -121,7 +121,7 @@ muscle cells must repair muscle tissue damaged by exercise by building new muscl
 {{< multiplechoice
   question="Energy is stored long-term in the bonds of ________ and used short-term to perform work from a(n) ________ molecule."
   answer="glucose : ATP"
-  hint="Think about which molecule the cell stockpiles and which one it spends immediately to do work."
+  hint="Reread the paragraph that follows the oak-and-squirrel figure."
 >}}
 ATP : glucose
 an anabolic molecule : catabolic molecule
@@ -132,16 +132,10 @@ a catabolic molecule : anabolic molecule
 {{< textin
   question="All of the chemical reactions that take place inside a cell, including anabolism and catabolism, are collectively that cell's ________."
   answer="metabolism"
-  hint="Bioenergetics is the study of energy flowing through this collection of reactions."
+  hint="Reread the section's opening paragraph."
 >}}
 
-{{< textin
-  question="The study of energy flowing through living systems is called ________."
-  answer="bioenergetics"
-  hint="The term names a field of study, not any single reaction."
->}}
-
-{{< selfcheck question="Name two different cellular functions that require energy that parallel human energy-requiring functions." hint="Think about how a cell moves itself and how it breaks down food, and compare each to something the human body does." >}}
+{{< selfcheck question="Name two different cellular functions that require energy that parallel human energy-requiring functions." hint="Reread the section's opening paragraph, then recall the cell structures from the previous chapter that move a cell or digest material." >}}
 Energy is required for cellular motion, through beating of cilia or flagella, as well as human motion, produced by muscle contraction. Cells also need energy to perform digestion, as humans require energy to digest food.
 ===CHECKS===
 energy is required for cellular motion, through beating of cilia or flagella
@@ -150,6 +144,12 @@ cells need energy to perform digestion
 humans require energy to digest food
 {{< /selfcheck >}}
 
+{{< textin
+  question="The study of energy flowing through living systems is called ________."
+  answer="bioenergetics"
+  hint="Reread the section's opening paragraph."
+>}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 6.1: Energy and Metabolism](https://openstax.org/books/biology-2e/pages/6-1-energy-and-metabolism) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with two of the four re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the sun-energy-flow chart and the evolutionary-tree diagram are both labeled illustrations, not photographs; only the oak-tree/squirrel figure is a true photo pair); a longdesc extended description added for the three figures that are labeled diagrams whose full visual layout (arrows, colors, box arrangement) is not carried by their captions (the energy-flow chart, the evolutionary tree, and the anabolic/catabolic pathway diagram); the two chemical equations for glucose breakdown and synthesis set as Unicode text rather than KaTeX, since the source prints them as reactions, not mathematics; a source typo ("temporally stores itself," which the printed PDF gives as "temporarily stores itself") corrected to "temporarily" — reported as a source defect; the Evolution Connection feature box rendered as a callout with its bold name and the note's own subheading kept as an italic clause; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); and four key-term recall items (anabolic, catabolic, metabolism, bioenergetics) added from the glossary so every objective group carries at least one auto-graded item; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 6.1: Energy and Metabolism](https://openstax.org/books/biology-2e/pages/6-1-energy-and-metabolism) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with two of the four re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the sun-energy-flow chart and the evolutionary-tree diagram are both labeled illustrations, not photographs; only the oak-tree/squirrel figure is a true photo pair); a longdesc extended description added for the three figures that are labeled diagrams whose full visual layout (arrows, colors, box arrangement) is not carried by their captions (the energy-flow chart, the evolutionary tree, and the anabolic/catabolic pathway diagram); the two chemical equations for glucose breakdown and synthesis set as Unicode text rather than KaTeX, since the source prints them as reactions, not mathematics; a source typo ("temporally stores itself," which the printed PDF gives as "temporarily stores itself") corrected to "temporarily" — reported as a source defect; the Evolution Connection feature box rendered as a callout with its bold name and the note's own subheading kept as an italic clause; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); four key-term recall items (anabolic, catabolic, metabolism, bioenergetics) added from the glossary so every objective group carries at least one auto-graded item; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

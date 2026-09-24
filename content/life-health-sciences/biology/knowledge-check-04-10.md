@@ -32,12 +32,12 @@ upside-down and facing right
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="In his 1665 publication *Micrographia*, ________ coined the term \"cell\" for the box-like structures he observed when viewing cork tissue through a lens."
-  answer="Robert Hooke"
+  question="Which Dutch shopkeeper, skilled in crafting lenses, observed the movements of single-celled organisms that he collectively termed \"animalcules\"?"
+  answer="Antony van Leeuwenhoek"
 >}}
-Antony van Leeuwenhoek
-Matthias Schleiden
 Robert Hooke
+Matthias Schleiden
+Antony van Leeuwenhoek
 Theodor Schwann
 {{< /multiplechoice >}}
 
@@ -52,13 +52,13 @@ the higher the resolution, the better the image's clarity and detail
 ### 4.2 Prokaryotic Cells
 
 {{< multiplechoice
-  question="All cells, including prokaryotes, share four basic components: a plasma membrane, cytoplasm, DNA, and ________."
-  answer="ribosomes"
+  question="A cube-shaped cell 1 mm on a side has a surface area-to-volume ratio of 6 to 1. What is the surface area-to-volume ratio of a cube-shaped cell 2 mm on a side?"
+  answer="3 to 1"
 >}}
-ribosomes
-a cell wall
-a capsule
-flagella
+3 to 1
+6 to 1
+12 to 1
+1 to 1
 {{< /multiplechoice >}}
 
 {{< textin
@@ -77,19 +77,17 @@ treat bacterial infections
 ### 4.3 Eukaryotic Cells
 
 {{< multiplechoice
-  question="The endosymbiosis theory holds that chloroplasts evolved from which group of bacteria that ancient host cells ingested?"
-  answer="autotrophic bacteria (cyanobacteria)"
+  question="The endosymbiosis theory holds that chloroplasts evolved from which organisms, ingested by ancient host cells?"
+  answer="autotrophic bacteria"
 >}}
 aerobic bacteria
-autotrophic bacteria (cyanobacteria)
-host cells
+autotrophic bacteria
 photosynthetic protists
 {{< /multiplechoice >}}
 
 {{< textin
   question="A eukaryotic cell's \"little organs\" — membrane-bound compartments or sacs, each with a specialized cellular function — are called ________."
   answer="organelles"
-  accept="organelle"
 >}}
 
 {{< selfcheck question="How do a vesicle and a vacuole differ, and how do their membranes behave differently?" >}}
@@ -115,7 +113,6 @@ secrete proteins
 {{< textin
   question="In plant cells, the Golgi apparatus has the additional role of synthesizing ________, some of which are incorporated into the cell wall."
   answer="polysaccharides"
-  accept="polysaccharide"
 >}}
 
 {{< selfcheck question="Describe the steps by which a macrophage engulfs and destroys a pathogen using phagocytosis." >}}
@@ -157,7 +154,6 @@ move to an infection site and phagocytize the pathogen
 {{< textin
   question="In the extracellular matrix, collagen fibers are interwoven with carbohydrate-containing protein molecules called ________."
   answer="proteoglycans"
-  accept="proteoglycan"
 >}}
 
 {{< selfcheck question="Using the blood-clotting example, explain how the extracellular matrix enables cells to communicate when a blood vessel is damaged." >}}
@@ -237,19 +233,17 @@ plants lose turgor pressure in this condition and wilt
 ### 5.3 Active Transport
 
 {{< multiplechoice
-  question="Which of the following carrier proteins transports only calcium ions, rather than two different kinds of ions?"
+  question="Which of these active-transport pumps carries only one kind of ion, rather than two different kinds?"
   answer="Ca²⁺ ATPase"
 >}}
 Na⁺-K⁺ ATPase
 Ca²⁺ ATPase
 H⁺-K⁺ ATPase
-H⁺ ATPase
 {{< /multiplechoice >}}
 
 {{< textin
   question="The three carrier-protein types that active transport uses to facilitate movement — uniporters, symporters, and antiporters — are collectively known as ________."
   answer="transporters"
-  accept="transporter"
 >}}
 
 {{< selfcheck question="How does the secondary active transport process that stores high-energy hydrogen ions in the mitochondria ultimately produce ATP?" >}}
@@ -393,8 +387,9 @@ the reactants are ATP and a water molecule
 ### 6.5 Enzymes
 
 {{< textin
-  question="An inorganic ion, such as iron or magnesium, required for optimal enzyme activity is called a ________."
-  answer="cofactor"
+  question="DNA polymerase, the enzyme that builds DNA molecules, requires a bound metal ion as a cofactor in order to function. That metal is ________."
+  answer="zinc"
+  accept="zinc ion|Zn²⁺"
 >}}
 
 {{< multiplechoice
@@ -430,8 +425,9 @@ Its potential energy decreases, and it is reduced.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The process that produces ATP in cellular metabolism through the involvement of a proton gradient across a membrane is called ________."
-  answer="chemiosmosis"
+  question="The riboflavin-derived electron carrier that the citric acid cycle reduces, alongside NAD⁺, is abbreviated ________."
+  answer="FAD"
+  accept="flavin adenine dinucleotide"
 >}}
 
 {{< selfcheck question="How does an intermediate complex allow ATP to transfer the energy of its third phosphate group to a substrate during phosphorylation?" >}}
@@ -536,7 +532,6 @@ ethanol
 {{< textin
   question="Prokaryotes such as Clostridia, which live and grow only in the absence of molecular oxygen and are killed by exposure to it, are called ________."
   answer="obligate anaerobes"
-  accept="obligate anaerobe"
 >}}
 
 {{< selfcheck question="What coenzyme does the first reaction of alcohol fermentation use, and what does that reaction do to pyruvic acid?" >}}
@@ -561,8 +556,9 @@ a carbon dioxide molecule
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The polymer of glucose that serves as an energy storage molecule in liver and muscle cells is called ________."
-  answer="glycogen"
+  question="An early form of photosynthesis harnessed the sun's energy using water as a source of hydrogen atoms but did not produce free oxygen. It is called ________ photosynthesis."
+  answer="anoxygenic"
+  accept="anoxygenic photosynthesis"
 >}}
 
 {{< selfcheck question="How do the glycerol and fatty acid components of a triglyceride each enter the pathways of glucose catabolism?" >}}
@@ -639,9 +635,8 @@ Visible light and radio waves
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A photon strikes the antenna pigments of ________ to initiate photosynthesis."
-  answer="photosystem II"
-  accept="PSII"
+  question="The ejection of an electron from a reaction center, using the energy of an absorbed photon, is called a(n) ________."
+  answer="photoact"
 >}}
 
 {{< selfcheck question="How does the buildup of hydrogen ions in the thylakoid lumen ultimately allow ATP synthase to produce ATP?" >}}
@@ -665,9 +660,8 @@ this flow of hydrogen ions through ATP synthase is called chemiosmosis
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Once carbon dioxide enters a leaf through the stomata, it diffuses over short distances through the ________ until it reaches the mesophyll cells."
-  answer="intercellular spaces"
-  accept="intercellular space"
+  question="The most outdated name for the light-independent reactions of photosynthesis, misleading because it implies that they occur only at night, is the ________."
+  answer="dark reaction"
 >}}
 
 {{< selfcheck question="Why is carbon dioxide not really a form of 'waste,' even though cellular respiration releases it as a byproduct?" >}}
@@ -693,8 +687,8 @@ The alpha subunit and beta-gamma subunit reassociate to form the inactive G-prot
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The region of a cell-surface receptor that is located on the cell surface and binds an external ligand is called the ________."
-  answer="extracellular domain"
+  question="A chemical ligand that carries a signal from one nerve cell to the next is called a(n) ________."
+  answer="neurotransmitter"
 >}}
 
 {{< selfcheck question="How does autocrine signaling during early development help ensure that a group of neighboring cells reach the correct developmental outcome?" >}}
@@ -762,14 +756,19 @@ It activates the MAP kinase pathway, which stimulates expression of proteins tha
 
 ### 9.4 Signaling in Single-Celled Organisms
 
-{{< multiplechoice
-  question="Bacterial autoinducers include small, hydrophobic molecules such as acyl-homoserine lactone (AHL) and larger peptide-based molecules. How does AHL affect gene expression once it enters a target bacterium?"
-  answer="It binds to transcription factors, which then switch gene expression on or off."
+{{< textin
+  question="As the number of bacteria increases, so does the concentration of the autoinducer, triggering increased expression of certain genes including autoinducers; this results in a self-amplifying cycle, also known as a ________."
+  answer="positive feedback loop"
+  accept="positive feedback"
 >}}
-It causes nearby cells that bind it to stop their normal growth cycles.
-It binds to transcription factors, which then switch gene expression on or off.
-It diffuses away from the cell without binding to a receptor.
-It stimulates signaling pathways that include bacterial kinases.
+
+{{< multiplechoice
+  question="Hawaiian bobtail squid live in a symbiotic relationship with the bacterium *Vibrio fischeri*. In these symbiotic bacteria, what does quorum sensing determine?"
+  answer="whether the bacteria produce the light-emitting enzyme luciferase"
+>}}
+whether the squid provides the bacteria with food
+whether the bacteria produce the light-emitting enzyme luciferase
+whether the bacteria release toxins that attack the squid
 {{< /multiplechoice >}}
 
 {{< selfcheck question="What happens inside a yeast cell when mating factor binds to its cell-surface receptors?" >}}
@@ -779,12 +778,6 @@ the yeast cell stops its normal growth cycle
 initiates a cell signaling cascade that includes protein kinases and GTP-binding proteins
 similar to G-proteins
 {{< /selfcheck >}}
-
-{{< textin
-  question="The peptide-based autoinducer molecules bind ________ and initiate signaling cascades in the cells."
-  answer="kinases"
-  accept="kinase"
->}}
 
 ## Chapter 10: Cell Reproduction
 
@@ -801,9 +794,8 @@ blood type
 {{< /multiplechoice >}}
 
 {{< textin
-  question="In a prokaryote, the region of the cell that contains the single, circular chromosome is called the ________."
-  answer="nucleoid"
-  accept="nucleoid region"
+  question="An arrangement of a cell's condensed chromosomes, removed during mitosis and artificially arranged according to length, is called a ________."
+  answer="karyotype"
 >}}
 
 {{< selfcheck question="How much genetic difference typically exists between any pair of human homologous chromosomes, and which chromosome pair is the exception to that uniformity?" >}}
@@ -826,8 +818,8 @@ astral microtubules
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The microtubule apparatus that orchestrates the movement of chromosomes during mitosis is called the ________."
-  answer="mitotic spindle"
+  question="Roughly at the center of each animal cell, the centrosomes are associated with a pair of rod-like objects, positioned at right angles to each other, that help organize cell division. These objects are called ________."
+  answer="centrioles"
 >}}
 
 {{< selfcheck question="What are the two named portions of the mitotic phase, and what does each one accomplish?" >}}
@@ -851,7 +843,7 @@ eight minutes
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A protein whose concentration fluctuates throughout the cell cycle and that must bind to a Cdk to help regulate the cell's progress through its checkpoints is called a ________."
+  question="A protein whose concentration fluctuates throughout the cell cycle, and which helps regulate the cell's progress through its checkpoints, is called a ________."
   answer="cyclin"
 >}}
 
@@ -866,13 +858,13 @@ many nuclei located along the periphery of the cell membrane
 ### 10.4 Cancer and the Cell Cycle
 
 {{< multiplechoice
-  question="Any disruption of the cell cycle's ________ can allow other mistakes to be passed on to the daughter cells."
-  answer="monitoring system"
+  question="In an adult organism, normal cell division is balanced by ________, which maintains a constant cell number."
+  answer="apoptosis"
 >}}
-proto-oncogene
-oncogene
-tumor suppressor gene
-monitoring system
+cytokinesis
+karyokinesis
+necrosis
+apoptosis
 {{< /multiplechoice >}}
 
 {{< textin

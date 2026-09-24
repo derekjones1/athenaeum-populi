@@ -93,13 +93,14 @@ Runners demonstrate two characteristics of living humans—responsiveness and mo
 {{< textin
   question="The body's largest organ system, which includes the skin and structures such as hair and nails, is the ________ system."
   answer="integumentary"
+  accept="integumentary system"
   hint="This system's surface tissue is described, in the same paragraph, as acting as a barrier against microorganisms and toxins."
 >}}
 
 {{< multiplechoice
   question="According to the section, what keeps blood inside a closed system as it moves through the body?"
   answer="blood vessels"
-  hint="The sentence names the structure that specifically holds blood, separate from what wraps nerves and muscles."
+  hint="Reread the second paragraph of the Organization subsection, which names several structures and what each keeps separate."
 >}}
 nerves
 blood vessels
@@ -121,7 +122,7 @@ must not be allowed to circulate freely inside the body
 {{< multiplechoice
   question="Metabolism can be defined as the ________."
   answer="sum of all chemical reactions in an organism"
-  hint="This is the sum of the section's two energy-reaction types together, not either one by itself."
+  hint="Compare each option with the definition sentence that follows the Metabolism subsection's two bulleted reaction types."
 >}}
 adjustment by an organism to external or internal changes
 process whereby all unspecialized cells become specialized to perform distinct functions
@@ -132,7 +133,7 @@ sum of all chemical reactions in an organism
 {{< multiplechoice
   question="Adenosine triphosphate (ATP) is an important molecule because it ________."
   answer="stores energy for use by body cells"
-  hint="The section says the cell stores energy in ATP, then breaks it down again in a controlled way to fuel a specific job — not in an uncontrolled burst."
+  hint="Reread the paragraph on adenosine triphosphate that follows the metabolism figure, and test each option against it."
 >}}
 is the result of catabolism
 releases energy in uncontrolled bursts
@@ -141,14 +142,15 @@ All of the above
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The process by which smaller, simpler molecules are combined into larger, more complex substances is called ________."
-  answer="anabolism"
-  hint="This is the opposite of catabolism, which breaks large molecules down and releases energy."
+  question="The first law of thermodynamics holds that energy can neither be created nor destroyed—it can only ________."
+  answer="change form"
+  accept="change its form"
+  hint="Reread the opening sentence of the Metabolism subsection."
 >}}
 
 ### Provide at least two examples of human responsiveness and human movement
 
-{{< selfcheck question="Explain why the smell of smoke when you are sitting at a campfire does not trigger alarm, but the smell of smoke in your residence hall does." hint="Think about which situation involves a sudden change from what your senses expect, versus a smell that has been present the whole time." >}}
+{{< selfcheck question="Explain why the smell of smoke when you are sitting at a campfire does not trigger alarm, but the smell of smoke in your residence hall does." hint="Reread the section's definition of responsiveness and its example of moving away from perceived dangers, then ask what is new in each setting." >}}
 When you are sitting at a campfire, your sense of smell adapts to the smell of smoke. Only if that smell were to suddenly and dramatically intensify would you be likely to notice and respond. In contrast, the smell of even a trace of smoke would be new and highly unusual in your residence hall, and would be perceived as danger.
 ===CHECKS===
 your sense of smell adapts to the smell of smoke
@@ -158,15 +160,15 @@ would be perceived as danger
 {{< /selfcheck >}}
 
 {{< textin
-  question="The ability of an organism to adjust to changes in its internal and external environment is called ________."
-  answer="responsiveness"
-  hint="Moving toward food and water, or away from perceived dangers, are the section's own examples of this in action."
+  question="As you read these words, red and white blood cells are moving throughout your body, muscle cells are contracting and relaxing to maintain your posture and to focus your vision, and ________ are secreting chemicals to regulate body functions."
+  answer="glands"
+  hint="Reread the Movement subsection's sentence on what is moving in your body as you read."
 >}}
 
 {{< multiplechoice
   question="The section says runners sweating and their skin blood vessels dilating as body temperature rises is an example of which function of human life?"
   answer="responsiveness"
-  hint="The runners' actual running is the section's example of movement; this question asks about their sweating and blood-vessel response instead, which is a different one of the six functions."
+  hint="Reread the runners figure's caption, which names two characteristics of living humans, and decide which one the sweating belongs to."
 >}}
 movement
 development
@@ -179,7 +181,7 @@ reproduction
 {{< multiplechoice
   question="Cancer cells can be characterized as “generic” cells that perform no specialized body function. Thus cancer cells lack ________."
   answer="differentiation"
-  hint="Generic, unspecialized cells lack the process by which cells become specialized in structure and function — not the process of producing new organisms or reacting to stimuli, both of which cancer cells still do."
+  hint="Reread the section's last three paragraphs, and match 'no specialized body function' to one of the processes they define."
 >}}
 differentiation
 reproduction
@@ -187,7 +189,7 @@ responsiveness
 both reproduction and responsiveness
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Identify three different ways that growth can occur in the human body." hint="The section's Growth paragraph gives three mechanisms — one about cell count, one about cell size, and one about material that is not cells at all." >}}
+{{< selfcheck question="Identify three different ways that growth can occur in the human body." hint="Reread the paragraph on growth, between the paragraph on differentiation and the one on reproduction." >}}
 Growth can occur by increasing the number of existing cells, increasing the size of existing cells, or increasing the amount of non-cellular material around cells.
 ===CHECKS===
 increasing the number of existing cells
@@ -198,9 +200,9 @@ increasing the amount of non-cellular material around cells
 {{< textin
   question="All of the changes the body goes through in life, including growth and repair, are called ________."
   answer="development"
-  hint="This term is broader than growth alone — it also includes cells becoming specialized to perform specific tasks in the body."
+  hint="Reread the paragraph that introduces differentiation."
 >}}
 
 ---
 
-<small>This section is adapted from [Anatomy and Physiology 2e, Section 1.3: Functions of Human Life](https://openstax.org/books/anatomy-and-physiology-2e/pages/1-3-functions-of-human-life) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: a one-word typo in the glossary's "responsiveness" definition ("an organisms") silently corrected to "an organism"; the two source cross-references to Figure 1.6 and Figure 1.7 replaced with plain descriptions of each figure's position on the page; figures re-encoded as WebP; 103_Metabolism re-kinded from the media manifest's file-extension "photo" guess to "diagram" (it is a labeled illustration, not a photograph), and its alt rewritten to describe the food/catabolism/anabolism flow the image actually draws rather than restate its caption; 01_05_Marathon_Runners kept "photo" and its source alt as printed; the Link to Learning's bare "video" link text replaced with descriptive link text naming the destination, its URL kept; the Interactive Link Question's callout keeps both of the in-body note's questions and adds the exercise's own third question, all as plain sentences — the module never states the heart's fuel source, so the item stands as a prompt only and is not counted toward the Practice floor; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (anabolism, responsiveness, development) added from the glossary; "adenosine triphosphate (ATP)" stays bold in the body at its defining occurrence but is not a Key-terms bullet, since the glossary does not define it; "renewal" is a Key-terms bullet even though the body never bolds it as a term, since the glossary defines it; and four author-written items — an integumentary-system recall, a blood-vessels multiple choice, and a self-check on why the body maintains distinct internal compartments (all three built strictly from body sentences, the Organization objective having no source exercise of its own) plus a multiple choice distinguishing the runners' responsiveness from their movement — added to round out objective groups the source's own exercises leave thin.</small>
+<small>This section is adapted from [Anatomy and Physiology 2e, Section 1.3: Functions of Human Life](https://openstax.org/books/anatomy-and-physiology-2e/pages/1-3-functions-of-human-life) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: a one-word typo in the glossary's "responsiveness" definition ("an organisms") silently corrected to "an organism"; the two source cross-references to Figure 1.6 and Figure 1.7 replaced with plain descriptions of each figure's position on the page; figures re-encoded as WebP; 103_Metabolism re-kinded from the media manifest's file-extension "photo" guess to "diagram" (it is a labeled illustration, not a photograph), and its alt rewritten to describe the food/catabolism/anabolism flow the image actually draws rather than restate its caption; 01_05_Marathon_Runners kept "photo" and its source alt as printed; the Link to Learning's bare "video" link text replaced with descriptive link text naming the destination, its URL kept; the Interactive Link Question's callout keeps both of the in-body note's questions and adds the exercise's own third question, all as plain sentences — the module never states the heart's fuel source, so the item stands as a prompt only and is not counted toward the Practice floor; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; one key-term recall item (development) added from the glossary; metabolism, anabolism, catabolism, and responsiveness are headline terms and not recall items, because the group headings and sibling items necessarily print them (the Metabolism group's heading names all three metabolic terms, and the responsiveness group's heading and its multiple choice name responsiveness), so a recall key would be leaked by its siblings; two body clozes added in their place, the Metabolism subsection's first-law-of-thermodynamics sentence ("change form") and the Movement subsection's sentence on what is moving in your body as you read ("glands"); "adenosine triphosphate (ATP)" stays bold in the body at its defining occurrence but is not a Key-terms bullet, since the glossary does not define it; "renewal" is a Key-terms bullet even though the body never bolds it as a term, since the glossary defines it; and four author-written items — an integumentary-system recall, a blood-vessels multiple choice, and a self-check on why the body maintains distinct internal compartments (all three built strictly from body sentences, the Organization objective having no source exercise of its own) plus a multiple choice distinguishing the runners' responsiveness from their movement — added to round out objective groups the source's own exercises leave thin.</small>

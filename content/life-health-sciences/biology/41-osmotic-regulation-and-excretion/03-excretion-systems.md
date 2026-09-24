@@ -23,7 +23,7 @@ Microorganisms and invertebrate animals use more primitive and simple mechanisms
 
 The most fundamental feature of life is the presence of a cell. In other words, a cell is the simplest functional unit of a life. Bacteria are unicellular, prokaryotic organisms that have some of the least complex life processes in place; however, prokaryotes such as bacteria do not contain membrane-bound vacuoles. The cells of microorganisms like bacteria, protozoa, and fungi are bound by cell membranes and use them to interact with the environment. Some cells, including some leucocytes in humans, are able to engulf food by endocytosis—the formation of vesicles by involution of the cell membrane within the cells. The same vesicles are able to interact and exchange metabolites with the intracellular environment. In some unicellular eukaryotic organisms such as the amoeba, shown below, cellular wastes and excess water are excreted by exocytosis, when the contractile vacuoles merge with the cell membrane and expel wastes into the environment. Contractile vacuoles (CV) should not be confused with vacuoles, which store food or water.
 
-{{< mediafigure src="biology/Figure_41_02_01" kind="diagram" eager="true" alt="In this illustration, a cell extends a pseudopod to consume a food particle. The consumed particle is encapsulated in a vesicle. The vesicle fuses with a lysosome, and proteins inside the lysosome digest the food particle. After the food is digested, the vesicle fuses with the cell membrane, and undigested remains are excreted." longdesc="Reading left to right: at the cell's upper left edge, a scalloped pseudopod has just enclosed an orange particle, labeled Food particle, inside a blue-rimmed sac — the step labeled Endocytosis. A first red arrow carries it right to a second, identical sac, the one labeled Vesicle; a second red arrow carries it down toward the lower half of the cell, where a third red arrow brings in the pale, unlabeled sac pointed to by the label Lysosome, fusing with it. A fourth red arrow carries the fused vesicle up and to the right, its contents now shown broken into small speckled fragments as digestion proceeds. A fifth red arrow carries this vesicle to the cell's upper right edge, where the fragments have separated into loose brown specks shown passing through the membrane to the outside, completing exocytosis." >}}
+{{< mediafigure src="biology/Figure_41_02_01" kind="diagram" eager="true" alt="In this illustration, a cell extends a pseudopod to consume a food particle. The consumed particle is encapsulated in a vesicle. The vesicle fuses with a lysosome, and proteins inside the lysosome digest the food particle. After the food is digested, the vesicle fuses with the cell membrane, and undigested remains are excreted." longdesc="Reading left to right: at the cell's upper left edge, a scalloped pseudopod has just enclosed an orange particle, labeled Food particle, inside a blue-rimmed sac. A first red arrow carries it right to a second, identical sac, the one labeled Vesicle, with the word Endocytosis printed just below and to its left; a second red arrow carries it down toward the lower half of the cell, where a third red arrow brings in the pale, empty sac labeled Lysosome from the left, fusing with it. A fourth red arrow carries the fused vesicle up and to the right, its contents now shown broken into small speckled fragments as digestion proceeds. A fifth red arrow carries this vesicle to the cell's upper right edge, where the fragments have separated into loose brown specks shown passing through the membrane to the outside, completing exocytosis." >}}
 Some unicellular organisms, such as the amoeba, ingest food by endocytosis. The food vesicle fuses with a lysosome, which digests the food. Waste is excreted by exocytosis.
 {{< /mediafigure >}}
 
@@ -31,7 +31,7 @@ Some unicellular organisms, such as the amoeba, ingest food by endocytosis. The 
 
 As multicellular systems evolved to have organ systems that divided the metabolic needs of the body, individual organs evolved to perform the excretory function. Planaria are flatworms that live in freshwater. Their excretory system consists of two tubules connected to a highly branched duct system. The cells in the tubules are called **flame cells** (or **protonephridia**) because they have a cluster of cilia that looks like a flickering flame when viewed under the microscope, as illustrated below. The cilia propel waste matter down the tubules and out of the body through excretory pores that open on the body surface; cilia also draw water from the interstitial fluid, allowing for filtration. Any valuable metabolites are recovered by reabsorption. Flame cells are found in flatworms, including parasitic tapeworms and free-living planaria. They also maintain the organism's osmotic balance.
 
-{{< mediafigure src="biology/Figure_41_02_02" kind="diagram" alt="Two illustrations: (a) a flame cell of a planarian, a bulb-shaped green cell with a tuft of cilia at one end, tapering into a tubule that leads to a bulbous tube cell; (b) a cutaway of an earthworm segment showing a coiled nephridium tube running past the intestine from a ciliated opening in one segment wall to an opening in the next." longdesc="Panel (a), left: a green, bulb-shaped structure labeled Flame cell holds a blue oval labeled Nucleus at its wide end; from its narrow end a red, comb-like tuft labeled Cilia projects into the opening of a red tube labeled Tubule, which narrows, then winds down to a second, smaller red bulb labeled Tube cell (itself holding an unlabeled nucleus) before continuing past it. Panel (b), right: a cutaway of a segmented earthworm body, its walls dividing the cavity into chambers; a small pale blue coiled tube labeled Nephridium, distinct from the red blood vessels beside it, runs between two small ciliated funnel-openings, one in each of two segment walls, passing alongside the paler Intestine that runs the length of the body." >}}
+{{< mediafigure src="biology/Figure_41_02_02" kind="diagram" alt="Two illustrations: (a) a flame cell of a planarian, a bulb-shaped green cell with a tuft of cilia at one end, tapering into a tubule that leads to a bulbous tube cell; (b) a cutaway of an earthworm segment showing a nephridium: a ciliated funnel on one segment wall leads through the wall to a coiled tube in the next segment, which ends in a small bulb opening toward the body wall." longdesc="Panel (a), left: a green, bulb-shaped structure labeled Flame cell holds a blue oval labeled Nucleus at its wide end; from its narrow end a green, striped, comb-like tuft labeled Cilia projects into the opening of a red tube labeled Tubule, which narrows, then winds down to a second, smaller red bulb labeled Tube cell (itself holding an unlabeled nucleus) before continuing past it. Panel (b), right: a cutaway of a segmented earthworm body, its walls dividing the cavity into chambers; a small pale blue coiled tube labeled Nephridium, distinct from the red blood vessels beside it, lies in the second chamber below the paler Intestine that runs the length of the body; it starts at a small ciliated funnel in the first chamber, just in front of the wall between the two chambers, passes through that wall, coils, and ends in a small bulb with a pore pointing toward the body wall. A second, identical ciliated funnel sits on the next wall along, the start of the next segment's nephridium." >}}
 In the excretory system of the (a) planaria, cilia of flame cells propel waste through a tubule formed by a tube cell. Tubules are connected into branched structures that lead to pores located all along the sides of the body. The filtrate is secreted through these pores. In (b) annelids such as earthworms, nephridia filter fluid from the coelom, or body cavity. Beating cilia at the opening of the nephridium draw water from the coelom into a tubule. As the filtrate passes down the tubules, nutrients and other solutes are reabsorbed by capillaries. Filtered fluid containing nitrogenous and other wastes is stored in a bladder and then secreted through a pore in the side of the body.
 {{< /mediafigure >}}
 
@@ -67,10 +67,16 @@ Many systems have evolved for excreting wastes that are simpler than the kidney 
 
 ### Explain how vacuoles, present in microorganisms, work to excrete waste
 
+{{< textin
+  question="The simplest excretory system is that of ________ present in microorganisms."
+  answer="contractile vacuoles"
+  hint="This structure merges with the cell membrane during exocytosis to expel wastes, as shown in the amoeba illustration above."
+>}}
+
 {{< multiplechoice
   question="Contractile vacuoles in microorganisms:"
   answer="both b and c"
-  hint="Check whether the vacuoles do more than one job, and where they come from according to the section — one option covers each, and only one option combines them."
+  hint="Check each option against Contractile Vacuoles in Microorganisms and the amoeba illustration."
 >}}
 exclusively perform an excretory function
 can perform many functions, one of which is excretion of metabolic wastes
@@ -86,13 +92,6 @@ flatworms use flame cells, a cluster of cilia that propel waste matter down tubu
 annelids use nephridia, a tubule with cilia that empties through the nephridiopore, with tubular reabsorption by a capillary network before excretion
 insects use Malpighian tubules, which are convoluted and lined with microvilli, actively transporting K⁺ ions so that water follows to form urine
 {{< /selfcheck >}}
-
-{{< textin
-  question="The simplest excretory system is that of ________ present in microorganisms."
-  answer="contractile vacuoles"
-  accept="contractile vacuole"
-  hint="This structure merges with the cell membrane during exocytosis to expel wastes, as shown in the amoeba illustration above."
->}}
 
 ### Describe the way in which flame cells and nephridia in worms perform excretory functions and maintain osmotic balance
 
@@ -115,13 +114,6 @@ having organs that specialize in this process and that operate separately from o
 {{< /selfcheck >}}
 
 {{< textin
-  question="An excretory cell found in flatworms is called a(n) ________."
-  answer="flame cell"
-  accept="protonephridia|protonephridium"
-  hint="It's named for how its tuft of beating cilia looks when viewed under a microscope."
->}}
-
-{{< textin
   question="Excretory structures found in annelids, such as earthworms, are called ________."
   answer="nephridia"
   accept="nephridium"
@@ -129,12 +121,18 @@ having organs that specialize in this process and that operate separately from o
 >}}
 
 {{< textin
-  question="The pore through which a nephridium releases waste to the exterior is called the ________."
+  question="The opening at the end of an earthworm's excretory tubule, through which excretion occurs, is called the ________."
   answer="nephridiopore"
-  hint="Its name combines the structure it drains with the word for an opening to the outside."
+  hint="Look in the paragraph on earthworms in Flame Cells of Planaria and Nephridia of Worms."
 >}}
 
 ### Explain how insects use Malpighian tubules to excrete wastes and maintain osmotic balance
+
+{{< textin
+  question="Excretory structures that line the gut of some arthropods and are convoluted to increase their surface area are called ________."
+  answer="Malpighian tubules"
+  hint="They work with specialized glands in the wall of the rectum and are usually found in pairs."
+>}}
 
 {{< multiplechoice
   question="Active transport of K⁺ in Malpighian tubules ensures that:"
@@ -148,13 +146,6 @@ neither a nor b
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Excretory structures that line the gut of some arthropods and are convoluted to increase their surface area are called ________."
-  answer="Malpighian tubules"
-  accept="Malpighian tubule"
-  hint="They work with specialized glands in the wall of the rectum and are usually found in pairs."
->}}
-
-{{< textin
   question="Cellular processes that increase the surface area of cells are called ________."
   answer="microvilli"
   accept="microvillus"
@@ -163,4 +154,4 @@ neither a nor b
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 41.3: Excretion Systems](https://openstax.org/books/biology-2e/pages/41-3-excretion-systems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_41_02_01, Figure_41_02_02, and Figure_41_02_03 are each a hand-drawn line illustration, not a captured photograph); a longdesc added to every diagram — the amoeba endocytosis/exocytosis sequence, the two-panel flame-cell/nephridium illustration, and the bee's Malpighian-tubule anatomy — transcribing each drawing's own printed labels and leader lines, in reading order; ion charges (H⁺, K⁺, Na⁺) set in Unicode where the source prints "H+", "K+", "Na+"; in-text pointers to figures ("Figure 41.9" through "Figure 41.11") replaced with "shown below" or "illustrated above," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/malpighian redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); the Critical Thinking solution to "explain two different excretory systems other than the kidneys" — a numbered "(1)...(2)...(3)...(4)..." list in the source, printed here as sentences in order with the numbering removed — is kept in full (all four systems, though the question asks for two), since it makes no new claim beyond the source's own text; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (flame cell, nephridia, nephridiopore, Malpighian tubule, microvilli), covering every glossary term in the section; one summary-sourced cloze text-recall item added (contractile vacuoles), since the section's glossary carries no term for that system.</small>
+<small>This section is adapted from [Biology 2e, Section 41.3: Excretion Systems](https://openstax.org/books/biology-2e/pages/41-3-excretion-systems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_41_02_01, Figure_41_02_02, and Figure_41_02_03 are each a hand-drawn line illustration, not a captured photograph); a longdesc added to every diagram — the amoeba endocytosis/exocytosis sequence, the two-panel flame-cell/nephridium illustration, and the bee's Malpighian-tubule anatomy — transcribing each drawing's own printed labels and leader lines, in reading order; ion charges (H⁺, K⁺, Na⁺) set in Unicode where the source prints "H+", "K+", "Na+"; in-text pointers to figures ("Figure 41.9" through "Figure 41.11") replaced with "shown below" or "illustrated above," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/malpighian redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); the Critical Thinking solution to "explain two different excretory systems other than the kidneys" — a numbered "(1)...(2)...(3)...(4)..." list in the source, printed here as sentences in order with the numbering removed — is kept in full (all four systems, though the question asks for two), since it makes no new claim beyond the source's own text; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items added from the glossary (nephridia, nephridiopore, Malpighian tubule, microvilli) — flame cell is not a recall item because the Review Question on where flame cells are found already asks it in reverse — and the nephridiopore prompt worded as "the opening at the end of an earthworm's excretory tubule" rather than the glossary's "pore found at the end of nephridia," which spells out the term; one summary-sourced cloze text-recall item added (contractile vacuoles), since the section's glossary carries no term for that system.</small>

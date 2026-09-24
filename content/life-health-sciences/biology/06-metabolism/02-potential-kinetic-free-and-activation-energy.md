@@ -96,7 +96,7 @@ The activation energy of a particular reaction determines the rate at which it w
 Activation energy is the energy required for a reaction to proceed, and it is lower if the reaction is catalyzed. This diagram's horizontal axis describes the sequence of events in time.
 {{< /mediafigure >}}
 
-{{< selfcheck question="If no activation energy were required to break down sucrose (table sugar), would you be able to store it in a sugar bowl?" hint="Ask what would happen to a stable, energy-storing molecule if nothing were holding back its breakdown." >}}
+{{< selfcheck question="If no activation energy were required to break down sucrose (table sugar), would you be able to store it in a sugar bowl?" hint="Reread the final paragraph of Activation Energy." >}}
 No. We can store chemical energy because of the need to overcome the barrier to its breakdown.
 ===CHECKS===
 we can store chemical energy
@@ -129,13 +129,14 @@ A reaction's ΔG can be negative or positive, meaning that the reaction releases
 {{< textin
   question="The potential energy stored within molecular bonds, released when those bonds break, is called ________."
   answer="chemical energy"
-  hint="It is what fuel molecules and the food we eat store, and what our cells eventually harness."
+  hint="Reread the paragraph that follows the dam-and-waterfall figure."
 >}}
 
 {{< textin
   question="The total bond energy of the reactants or products in a chemical reaction is called ________."
   answer="heat energy"
-  hint="It is what typically supplies the activation energy that pushes a reaction over its barrier."
+  accept="heat"
+  hint="Reread the third paragraph of Activation Energy."
 >}}
 
 {{< multiplechoice
@@ -151,10 +152,24 @@ store mass
 
 ### Explain the difference between kinetic and potential energy
 
+{{< textin
+  question="Energy associated with an object or particle in motion is called ________."
+  answer="kinetic energy"
+  accept="kinetic"
+  hint="Reread the first paragraph of Energy Types."
+>}}
+
+{{< textin
+  question="Stored energy that an object has because of its position or structure is called ________."
+  answer="potential energy"
+  accept="potential"
+  hint="Reread the second and third paragraphs of Energy Types."
+>}}
+
 {{< multiplechoice
   question="Consider a pendulum swinging. Which type(s) of energy is/are associated with the pendulum in the following instances: i. the moment at which it completes one cycle, just before it begins to fall back towards the other end, ii. the moment that it is in the middle between the two ends, and iii. just before it reaches the end of one cycle (just before instant i.)."
   answer="i. potential, ii. kinetic, iii. potential and kinetic"
-  hint="Potential energy peaks where the pendulum is momentarily still at each end; kinetic energy peaks as it swings through the bottom."
+  hint="Reread the wrecking-ball paragraph in Energy Types."
 >}}
 i. potential and kinetic, ii. potential and kinetic, iii. kinetic
 i. potential, ii. potential and kinetic, iii. potential and kinetic
@@ -162,24 +177,12 @@ i. potential, ii. kinetic, iii. potential and kinetic
 i. potential and kinetic, ii. kinetic iii. kinetic
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Energy associated with an object or particle in motion is called ________."
-  answer="kinetic energy"
-  hint="A speeding bullet and a walking person both have this kind of energy."
->}}
-
-{{< textin
-  question="Energy that is stored because of an object's position or structure, and that could do work if released, is called ________."
-  answer="potential energy"
-  hint="A compressed spring and water held behind a dam both have this kind of energy."
->}}
-
 ### Discuss the concepts of free energy and activation energy
 
 {{< multiplechoice
   question="Which of the following is the best way to judge the relative activation energies between two given chemical reactions?"
   answer="Compare their reaction rates."
-  hint="A higher barrier makes a reaction proceed more slowly, regardless of whether it is spontaneous."
+  hint="Reread the final paragraph of Activation Energy."
 >}}
 Compare the ΔG values between the two reactions.
 Compare their reaction rates.
@@ -191,10 +194,10 @@ Compare the spontaneity between the two reactions.
   question="The usable energy in a chemical reaction that is available to do work is called ________."
   answer="free energy"
   accept="Gibbs free energy"
-  hint="Josiah Willard Gibbs developed this measurement, denoted G."
+  hint="Reread the first paragraph of the section's second main heading."
 >}}
 
-{{< selfcheck question="Describe the position of the transition state on a vertical energy scale, from low to high, relative to the position of the reactants and products, for both endergonic and exergonic reactions." hint="This high-energy, unstable state sits between the reactants and the products, however the reaction runs." >}}
+{{< selfcheck question="Describe the position of the transition state on a vertical energy scale, from low to high, relative to the position of the reactants and products, for both endergonic and exergonic reactions." hint="Reread the second paragraph of Activation Energy and study the activation-energy plot." >}}
 The transition state is always higher in energy than the reactants and the products of a reaction (therefore, above), regardless of whether the reaction is endergonic or exergonic.
 ===CHECKS===
 the transition state is always higher in energy than the reactants and the products of a reaction
@@ -206,7 +209,7 @@ regardless of whether the reaction is endergonic or exergonic
 {{< multiplechoice
   question="Which of the following comparisons or contrasts between endergonic and exergonic reactions is false?"
   answer="Endergonic reactions take place slowly and exergonic reactions take place quickly."
-  hint="Rate depends on a reaction's own activation energy, not on whether it releases or consumes energy overall."
+  hint="Reread the subsection under Free Energy, then the final paragraph of Activation Energy."
 >}}
 Endergonic reactions have a positive ΔG and exergonic reactions have a negative ΔG.
 Endergonic reactions consume energy and exergonic reactions release energy.
@@ -214,19 +217,7 @@ Both endergonic and exergonic reactions require a small amount of energy to over
 Endergonic reactions take place slowly and exergonic reactions take place quickly.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A chemical reaction that requires an input of energy in order to proceed is described as ________."
-  answer="endergonic"
-  hint="Such a reaction has a positive ΔG and is non-spontaneous."
->}}
-
-{{< textin
-  question="A chemical reaction that releases free energy as it proceeds is described as ________."
-  answer="exergonic"
-  hint="Such a reaction has a negative ΔG and is considered spontaneous, even if it happens slowly, like rusting."
->}}
-
-{{< selfcheck question="Explain in your own words the difference between a spontaneous reaction and one that occurs instantaneously, and what causes this difference." hint="Rusting iron is spontaneous, but it is not fast; think about what makes a spontaneous reaction slow." >}}
+{{< selfcheck question="Explain in your own words the difference between a spontaneous reaction and one that occurs instantaneously, and what causes this difference." hint="Reread the first paragraph of the subsection under Free Energy and the final paragraph of Activation Energy." >}}
 A spontaneous reaction is one that has a negative ΔG and thus releases energy. However, a spontaneous reaction need not occur quickly or suddenly like an instantaneous reaction. It may occur over long periods due to a large energy of activation, which prevents the reaction from occurring quickly.
 ===CHECKS===
 a spontaneous reaction is one that has a negative ΔG and releases energy
@@ -234,6 +225,18 @@ a spontaneous reaction need not occur quickly or suddenly like an instantaneous 
 it may occur over long periods due to a large energy of activation, which prevents the reaction from occurring quickly
 {{< /selfcheck >}}
 
+{{< textin
+  question="A chemical reaction that requires an input of energy in order to proceed is described as ________."
+  answer="endergonic"
+  hint="Reread the second paragraph of the subsection under Free Energy."
+>}}
+
+{{< textin
+  question="A chemical reaction that releases free energy as it proceeds is described as ________."
+  answer="exergonic"
+  hint="Reread the first paragraph of the subsection under Free Energy."
+>}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 6.2: Potential, Kinetic, Free, and Activation Energy](https://openstax.org/books/biology-2e/pages/6-2-potential-kinetic-free-and-activation-energy) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with four of the five re-kinded from the manifest's file-extension guess — the two Gibbs-free-energy line graphs and the octane figure corrected from "photo" to "diagram" (plotted charts and molecular-structure drawings, not photographs), and the four-panel Visual Connection figure corrected from "diagram" to "photo" (all four panels are photographs); a longdesc extended description added for the two Gibbs-free-energy graphs, whose axis labels, curves, and arrows are not fully carried by their captions; the source alt for the four-panel Visual Connection figure ("There are four photos show...") rewritten from the image, since the source text is grammatically broken and does not name what each lettered panel shows — reported as a source defect; a missing space in the Figure 6.9 caption ("...to occur.Credit: Tag...") restored to "...to occur. Credit: Tag..." — reported as a source defect, also present in the printed PDF; the display equation ΔG = ΔH − TΔS set in KaTeX as the one genuine mathematical expression in the section, with ΔG/ΔH/ΔS elsewhere in prose kept as Unicode Δ; the source's increment symbol (∆, U+2206) normalized to the Greek capital delta (Δ, U+0394) throughout for a single consistent glyph; E<sub>A</sub> set with an HTML subscript, since no Unicode subscript "A" glyph exists; both Link to Learning boxes given descriptive anchor text in place of the source's bare "site"/"this"; both Visual Connection questions kept in the body immediately after their figures and rendered as self-checks, since the source keys each with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); and seven key-term recall items (chemical energy, heat energy, kinetic energy, potential energy, free energy, endergonic, exergonic) added from the glossary so every objective group carries at least one auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one multiple choice written locally, strictly from the section's own opening sentence defining energy, since the module's Review Questions and Critical Thinking Questions all map to the section's other three objectives and left "Define energy" with only two recall items, disclosed in the ledger.</small>
+<small>This section is adapted from [Biology 2e, Section 6.2: Potential, Kinetic, Free, and Activation Energy](https://openstax.org/books/biology-2e/pages/6-2-potential-kinetic-free-and-activation-energy) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with four of the five re-kinded from the manifest's file-extension guess — the two Gibbs-free-energy line graphs and the octane figure corrected from "photo" to "diagram" (plotted charts and molecular-structure drawings, not photographs), and the four-panel Visual Connection figure corrected from "diagram" to "photo" (all four panels are photographs); a longdesc extended description added for the two Gibbs-free-energy graphs, whose axis labels, curves, and arrows are not fully carried by their captions; the source alt for the four-panel Visual Connection figure ("There are four photos show...") rewritten from the image, since the source text is grammatically broken and does not name what each lettered panel shows — reported as a source defect; a missing space in the Figure 6.9 caption ("...to occur.Credit: Tag...") restored to "...to occur. Credit: Tag..." — reported as a source defect, also present in the printed PDF; the display equation ΔG = ΔH − TΔS set in KaTeX as the one genuine mathematical expression in the section, with ΔG/ΔH/ΔS elsewhere in prose kept as Unicode Δ; the source's increment symbol (∆, U+2206) normalized to the Greek capital delta (Δ, U+0394) throughout for a single consistent glyph; E<sub>A</sub> set with an HTML subscript, since no Unicode subscript "A" glyph exists; both Link to Learning boxes given descriptive anchor text in place of the source's bare "site"/"this"; both Visual Connection questions kept in the body immediately after their figures and rendered as self-checks, since the source keys each with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); seven key-term recall items (chemical energy, heat energy, kinetic energy, potential energy, free energy, endergonic, exergonic) added from the glossary so every objective group carries at least one auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one multiple choice written locally, strictly from the section's own opening sentence defining energy, since the module's Review Questions and Critical Thinking Questions all map to the section's other three objectives and left "Define energy" with only two recall items, disclosed in the ledger.</small>

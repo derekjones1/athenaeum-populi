@@ -103,10 +103,16 @@ Biodiversity may provide important psychological benefits to humans. Additionall
 
 ### Identify chemical diversity benefits to humans
 
+{{< textin
+  question="A compound produced as a byproduct of plant metabolic processes, usually toxic but sequestered by the plant to defend against herbivores, is known as a ________."
+  answer="secondary plant compound"
+  hint="Think about what a plant produces to poison the animals that try to eat it."
+>}}
+
 {{< multiplechoice
   question="A secondary plant compound might be used for which of the following?"
   answer="a new drug"
-  hint="Consider what pharmaceutical science does with the toxins plants produce to deter the animals that eat them."
+  hint="Reread the section's opening discussion of chemical diversity, where this kind of compound is defined."
 >}}
 a new crop variety
 a new drug
@@ -116,20 +122,14 @@ a pest of a crop pest
 
 {{< selfcheck
   question="Describe two types of compounds from living things that are used as medications."
-  hint="Think about compounds plants make to deter predators, and about substances derived from animals."
+  hint="Reread the Human Health subsection."
 >}}
-Secondary plant compounds are toxins produced by plants to kill predators trying to eat them, and some of these compounds can be used as drugs. Animal toxins, such as snake venom, can also be used as drugs.
+Secondary plant compounds are toxins produced by plants to kill predators trying to eat them, and some of these compounds can be used as drugs. Animal toxins, such as snake venom, can also be used as drugs. (Alternate answer: antibiotics are compounds produced by bacteria and fungi which can be used to kill bacteria.)
 ===CHECKS===
 secondary plant compounds are toxins plants produce to kill predators trying to eat them
 some secondary plant compounds can be used as drugs
 animal toxins, such as snake venom, can also be used as drugs
 {{< /selfcheck >}}
-
-{{< textin
-  question="A compound produced as a byproduct of plant metabolic processes, usually toxic but sequestered by the plant to defend against herbivores, is known as a ________."
-  answer="secondary plant compound"
-  hint="Think about what a plant produces to poison the animals that try to eat it, and how many of these compounds humans have turned into drugs."
->}}
 
 ### Identify biodiversity components that support human agriculture
 
@@ -147,7 +147,7 @@ if the wild species are lost, that genetic variation would no longer be availabl
 {{< textin
   question="Crop diversity is a requirement for ________, and it is being lost."
   answer="food security"
-  hint="Think about what a nation's people need in order to be reliably fed."
+  hint="This sentence opens the section summary's discussion of agriculture."
 >}}
 
 {{< selfcheck
@@ -166,7 +166,7 @@ a dominant species becomes a minor player, ecologically
 {{< multiplechoice
   question="Pollination is an example of ________."
   answer="an ecosystem service"
-  hint="Recall the term this section uses for beneficial processes, like nutrient cycling and pest control, that ecosystems provide to people."
+  hint="Reread the paragraph on plant pollination in the discussion of what supports human agriculture."
 >}}
 a possible source of new drugs
 chemical diversity
@@ -177,7 +177,7 @@ crop pest control
 {{< multiplechoice
   question="What is an ecosystem service that performs the same function as a pesticide?"
   answer="predators of pests"
-  hint="Think about who naturally controls pest populations without any chemicals at all."
+  hint="Reread the paragraph on crop pests and pesticides that closes the discussion of agriculture."
 >}}
 pollination
 secondary plant compounds

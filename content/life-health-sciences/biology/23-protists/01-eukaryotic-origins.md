@@ -110,7 +110,7 @@ not all eukaryotic cells have chloroplasts
 
 This evidence suggests the possibility that an ancestral cell (already containing a photosynthetic endosymbiont) was engulfed by another eukaryote cell, resulting in a secondary endosymbiosis. Molecular and morphological evidence suggest that the *chlorarachniophyte protists* are derived from a secondary endosymbiotic event. Chlorarachniophytes are rare algae indigenous to tropical seas and sand. They are classified into the Rhizarian supergroup. Chlorarachniophytes are reticulose amoebae, extending thin cytoplasmic strands that interconnect them with other chlorarachniophytes in a cytoplasmic network. These protists are thought to have originated when a eukaryote engulfed a green alga, the latter of which had previously established an endosymbiotic relationship with a photosynthetic cyanobacterium (see the diagram below).
 
-{{< mediafigure src="biology/Figure_B23_01_07" alt="A labeled flow diagram in six stages showing plastid membranes accumulating and then being lost across a primary and a secondary endosymbiotic event, ending in a plastid with a vestigial nucleus." longdesc="Six cell outlines run left to right, joined by rightward arrows. First (yellow cell, pointer-labeled 'Heterotrophic eukaryote'): a small purple oval nucleus and, near the top, a green rod labeled 'Cyanobacterium' wrapped in a double outline. An arrow labeled 'Primary endosymbiosis' leads to the second cell, where the green rod is now wrapped in three concentric membrane layers. A second arrow, captioned 'One of the three membranes surrounding the plastid is lost,' leads to a third, similar yellow cell where the wrapped organelle has only two membrane layers. A fourth, unlabeled arrow leads to a larger blue cell (the secondary host) shown with a fold in its outline, engulfing the entire third cell; this arrow is captioned 'Secondary endosymbiosis.' A fifth arrow leads to a cell where the engulfed structure now sits fully enclosed inside the blue cell. A sixth arrow leads to the rightmost blue cell, where pointer lines label the small purple dot inside the nested structure 'Vestigial nucleus' and the green organelle beside it 'Plastid.'" kind="diagram" >}}
+{{< mediafigure src="biology/Figure_B23_01_07" alt="A labeled flow diagram in six stages showing plastid membranes accumulating and then being lost across a primary and a secondary endosymbiotic event, ending in a plastid with a vestigial nucleus." longdesc="Six cell outlines run left to right, joined by five rightward arrows. First (yellow cell, pointer-labeled 'Heterotrophic eukaryote'): a small purple oval nucleus and, near the top, a green rod labeled 'Cyanobacterium' held in a cup-shaped fold of the cell's outline. An arrow labeled 'Primary endosymbiosis' leads to the second cell, where the green rod sits inside the cell wrapped in three concentric membrane layers; a pointer from it reads 'One of the three membranes surrounding the plastid is lost.' A second, unlabeled arrow leads to a third, similar yellow cell where the wrapped organelle has only two membrane layers. A third, unlabeled arrow leads to a larger blue cell (the secondary host) with a cup-shaped fold in its outline, engulfing a whole yellow cell with its nucleus and plastid. A fourth arrow, labeled 'Secondary endosymbiosis,' leads to a cell where the engulfed yellow cell now sits fully enclosed inside the blue cell. A fifth arrow leads to the rightmost blue cell, where the engulfed cell has shrunk to a thin layer around its plastid, and pointer lines label the small purple dot inside the nested structure 'Vestigial nucleus' and the green organelle beside it 'Plastid.'" kind="diagram" >}}
 Secondary endosymbiosis. The hypothesized process of several endosymbiotic events leading to the evolution of chlorarachniophytes is shown. In a primary endosymbiotic event, a heterotrophic eukaryote consumed a cyanobacterium. In a secondary endosymbiotic event, the cell resulting from primary endosymbiosis was consumed by a second cell. The resulting organelle became a plastid in modern chlorarachniophytes.
 {{< /mediafigure >}}
 
@@ -138,7 +138,7 @@ The ancestral cytoskeletal system included the ability to make cilia/flagella du
 {{< multiplechoice
   question="Which characteristic is shared by prokaryotes and eukaryotes?"
   answer="DNA-based genome"
-  hint="Three of these four options are unifying characteristics of eukaryotes alone; the fourth is common to every domain of life."
+  hint="Compare the options with the numbered list in Characteristics of Eukaryotes and ask which one prokaryotes have as well."
 >}}
 cytoskeleton
 nuclear envelope
@@ -146,10 +146,16 @@ DNA-based genome
 mitochondria
 {{< /multiplechoice >}}
 
+{{< textin
+  question="The last common ancestor's chromosomes were linear and contained DNA associated with ________."
+  answer="histones"
+  hint="Item 5 of the numbered list in Characteristics of Eukaryotes names these."
+>}}
+
 {{< multiplechoice
   question="In 2016, scientists published the genome of *Monocercomonoides*, and demonstrated that this organism has no detectable mitochondrial genes. However, its genome was arranged in linear chromosomes wrapped around histones which are contained within the nucleus. *Monocercomonoides* is therefore a(n) _________."
   answer="Eukaryote"
-  hint="This organism has a nucleus, linear chromosomes, and histones — the single feature the section calls both necessary and sufficient to define this group."
+  hint="Compare the features the stem lists with the first item of the section's numbered list of characteristics."
 >}}
 Bacteria
 Archaea
@@ -157,19 +163,12 @@ Eukaryote
 Endosymbiont
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The last common ancestor's chromosomes were linear and contained DNA associated with ________."
-  answer="histones"
-  accept="histone"
-  hint="Eukaryotic chromosomes coil around these basic, alkaline proteins; the section's numbered list of characteristics names them directly."
->}}
-
 ### Describe what scientists know about the origins of eukaryotes based on the last common ancestor
 
 {{< multiplechoice
   question="What event is thought to have contributed to the evolution of eukaryotes?"
   answer="oxygenation of the atmosphere"
-  hint="The section traces a billions-of-years build-up of this atmospheric gas from cyanobacteria to explain when eukaryotes could rely on aerobic respiration."
+  hint="The Prokaryotic Metabolism subsection explains which change in early Earth's conditions coincided with the rapid diversification of eukaryotes."
 >}}
 global warming
 glaciation
@@ -180,7 +179,7 @@ oxygenation of the atmosphere
 {{< multiplechoice
   question="Which of the following observations about a bacterium would distinguish it from the last eukaryotic common ancestor?"
   answer="Lack of a membrane-bound structure surrounding the genome"
-  hint="Only one of these four is the single characteristic the section calls both necessary and sufficient to define a eukaryote."
+  hint="Look for the option that contradicts one of the numbered characteristics every eukaryote has."
 >}}
 A double-stranded DNA genome
 Lack of a membrane-bound structure surrounding the genome
@@ -192,7 +191,7 @@ Enclosed by a cell wall
   question="The nuclear genome seems to be descended from an ________ ancestor."
   answer="archaean"
   accept="archaeal|archean"
-  hint="The Endosymbiotic Theory subsection says the nuclear machinery for replication and expression is more closely related to this domain than to Bacteria."
+  hint="Reread the last paragraph of the Endosymbiotic Theory subsection, on where our nuclear genes appear to come from."
 >}}
 
 ### Explain the endosymbiotic theory
@@ -200,7 +199,7 @@ Enclosed by a cell wall
 {{< multiplechoice
   question="Mitochondria most likely evolved by _____________."
   answer="endosymbiosis"
-  hint="This is the same process, described earlier in the section, in which one cell engulfs another and both benefit."
+  hint="Reread the Mitochondria subsection on where these organelles came from."
 >}}
 a photosynthetic cyanobacterium
 cytoskeletal elements
@@ -211,7 +210,7 @@ membrane proliferation
 {{< multiplechoice
   question="Which of these protists is believed to have evolved following a secondary endosymbiosis?"
   answer="chlorarachniophytes"
-  hint="The Evolution Connection box names the group whose plastid came from engulfing an alga that already had its own cyanobacterial endosymbiont."
+  hint="The six-stage diagram near the end of the section and its caption answer this."
 >}}
 green algae
 cyanobacteria
@@ -246,4 +245,4 @@ the resulting eukaryote would retain features from both original cells
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 23.1: Eukaryotic Origins](https://openstax.org/books/biology-2e/pages/23-1-eukaryotic-origins) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_23_01_02 re-kinded from the manifest's file-extension "photo" guess to "diagram" (it pairs a cross-section illustration with a corroborating micrograph); the source alts for Figure_23_01_01, Figure_23_01_02, and Figure_23_01_03ab rewritten from the images to say what each figure shows; a longdesc added for Figure_23_01_04 and Figure_B23_01_07, since neither diagram's numbered steps, arrows, and cell labels are carried by its caption; the inline forward/backward figure references reworded as "see the diagram/illustration/photographs below" since figures are not numbered here; the visual-connection note rendered as its mediafigure immediately followed by a self-check carrying the source's own solution, with rubric checkpoints decomposing the model answer into check-off clauses with no new claims; the evolution note rendered as an Evolution Connection callout with its embedded figure kept inside it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); one Review Question's distractor "Archea" corrected to "Archaea" (a source misspelling of the domain name); one key-term recall item (plastid) added from the glossary; two summary-derived cloze recall items added (histones, archaean) to fill out thin objective groups, since none of the module's three glossary terms tests the eukaryote-characteristics or last-common-ancestor objectives directly; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 23.1: Eukaryotic Origins](https://openstax.org/books/biology-2e/pages/23-1-eukaryotic-origins) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_23_01_02 re-kinded from the manifest's file-extension "photo" guess to "diagram" (it pairs a cross-section illustration with a corroborating micrograph); the source alts for Figure_23_01_01, Figure_23_01_02, and Figure_23_01_03ab rewritten from the images to say what each figure shows; a longdesc added for Figure_23_01_04 and Figure_B23_01_07, since neither diagram's numbered steps, arrows, and cell labels are carried by its caption; the inline forward/backward figure references reworded as "see the diagram/illustration/photographs below" since figures are not numbered here; the visual-connection note rendered as its mediafigure immediately followed by a self-check carrying the source's own solution, with rubric checkpoints decomposing the model answer into check-off clauses with no new claims; the evolution note rendered as an Evolution Connection callout with its embedded figure kept inside it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each Review Question placed under the objective it tests, so they run in the order 2, 5, 1, 6, 3, 4 of the source's numbering; one Review Question's distractor "Archea" corrected to "Archaea" (a source misspelling of the domain name); one key-term recall item (plastid) added from the glossary; two summary-derived cloze recall items added (histones, archaean) to fill out thin objective groups, since none of the module's three glossary terms tests the eukaryote-characteristics or last-common-ancestor objectives directly; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

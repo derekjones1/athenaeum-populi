@@ -155,7 +155,7 @@ Plants play a key role in ecosystems. They are a source of food and medicinal co
 {{< multiplechoice
   question="Which of the following plant structures is not a defense against herbivory?"
   answer="nectar"
-  hint="Three of these compounds or structures physically or chemically ward off animals; one attracts them instead."
+  hint="Check each option against the plant defenses described in the first Animals and Plants subsection."
 >}}
 thorns
 spines
@@ -164,15 +164,16 @@ alkaloids
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The consumption of plants by insects and other animals is called ________."
-  answer="herbivory"
-  hint="This is the force believed to have driven diversification as much as pollination did."
+  question="Conversely, ________ can be aided by animals that eat plant fruits."
+  answer="seed dispersal"
+  accept="dispersal of seeds"
+  hint="Look at the short paragraph after the plant-defenses figure, which describes a mutualism between plants and the animals that eat their fruit."
 >}}
 
 {{< textin
-  question="Conversely, ________ can be aided by animals that eat plant fruits."
-  answer="seed dispersal"
-  hint="Herbivorous animals that eat fruit end up carrying away and spreading a plant's genetic material — the direct benefit of fruit to a plant."
+  question="The consumption of plants by insects and other animals is called ________."
+  answer="herbivory"
+  hint="This is the force believed to have driven diversification as much as pollination did."
 >}}
 
 ### Describe ways in which pollination occurs
@@ -180,7 +181,7 @@ alkaloids
 {{< multiplechoice
   question="White and sweet-smelling flowers with abundant nectar are probably pollinated by"
   answer="bees and butterflies"
-  hint="Rule out the pollinators the section says respond to strong red color, night blooming, or wind — sweetness points to insects with a keen sense of smell active by day."
+  hint="Match the flower traits in the question against the Pollination subsection's pairings of flower traits with pollinators, and recall what the previous section says sweet scents attract."
 >}}
 bees and butterflies
 flies
@@ -191,20 +192,13 @@ wind
 {{< multiplechoice
   question="Abundant and powdery pollen produced by small, indistinct flowers is probably transported by:"
   answer="wind"
-  hint="The Pollination section opens by describing exactly this kind of flower and naming what carries its pollen over large distances."
+  hint="Look at the opening paragraph of the second Animals and Plants subsection, which describes small, inconspicuous flowers."
 >}}
 bees and butterflies
 flies
 birds
 wind
 {{< /multiplechoice >}}
-
-{{< selfcheck question="Biosynthesis of nectar and nutrient-rich pollen is energetically very expensive for a plant. Yet, plants funnel large amounts of energy into animal pollination. What are the evolutionary advantages that offset the cost of attracting animal pollinators?" hint="Consider what happens to pollen delivery accuracy when an animal carries it directly to another flower of the same species, versus scattering it randomly on the wind." >}}
-Using animal pollinators promotes cross-pollination and increases genetic diversity. The odds that the pollen will reach another flower are greatly increased compared with the randomness of wind pollination.
-===CHECKS===
-using animal pollinators promotes cross-pollination and increases genetic diversity
-the odds that the pollen will reach another flower are greatly increased compared with the randomness of wind pollination
-{{< /selfcheck >}}
 
 {{< textin
   question="Technically, the transfer of pollen from the anther to the stigma is called ________."
@@ -218,18 +212,32 @@ the odds that the pollen will reach another flower are greatly increased compare
   hint="Bird- or insect-pollinated flowers secrete this liquid alongside both fertile and nutrient-rich sterile pollen."
 >}}
 
+{{< selfcheck question="Biosynthesis of nectar and nutrient-rich pollen is energetically very expensive for a plant. Yet, plants funnel large amounts of energy into animal pollination. What are the evolutionary advantages that offset the cost of attracting animal pollinators?" hint="Consider what happens to pollen delivery accuracy when an animal carries it directly to another flower of the same species, versus scattering it randomly on the wind." >}}
+Using animal pollinators promotes cross-pollination and increases genetic diversity. The odds that the pollen will reach another flower are greatly increased compared with the randomness of wind pollination.
+===CHECKS===
+using animal pollinators promotes cross-pollination and increases genetic diversity
+the odds that the pollen will reach another flower are greatly increased compared with the randomness of wind pollination
+{{< /selfcheck >}}
+
 ### Discuss the roles that plants play in ecosystems and how deforestation threatens plant biodiversity
 
 {{< multiplechoice
   question="Plants are a source of ________."
   answer="all of the above"
-  hint="The Importance of Seed Plants section discusses three separate human uses of plants before this option lumps them together."
+  hint="Check each option against The Importance of Seed Plants in Human Life subsection."
 >}}
 food
 fuel
 medicine
 all of the above
 {{< /multiplechoice >}}
+
+{{< textin
+  question="A cultivated plant is called a ________."
+  answer="crop"
+  accept="crop plant"
+  hint="Rice, wheat, and potatoes dominate this category of agricultural plants."
+>}}
 
 {{< selfcheck question="What is biodiversity and why is it important to an ecosystem?" hint="Think about the different scales at which this variation can be measured, and the concrete resources and services plant life is described as providing." >}}
 Biodiversity is the variation in all forms of life. It can refer to variation within a species, within an ecosystem, or on an entire planet. It is important because it ensures a resource for new food crops and medicines. Plant life balances the ecosystems, protects watersheds, mitigates erosion, moderates climate, and provides shelter for many animal species.
@@ -241,12 +249,6 @@ plant life balances ecosystems, protects watersheds, mitigates erosion, moderate
 {{< /selfcheck >}}
 
 {{< textin
-  question="A cultivated plant is called a ________."
-  answer="crop"
-  hint="Rice, wheat, and potatoes dominate this category of agricultural plants."
->}}
-
-{{< textin
   question="A seed from a plant that was grown historically, but has not been used in modern agriculture on a large scale, is a ________."
   answer="heirloom seed"
   hint="Preserving these is one line of action for protecting plant biodiversity, alongside a DNA-based species-identification technique."
@@ -255,6 +257,7 @@ plant life balances ecosystems, protects watersheds, mitigates erosion, moderate
 {{< textin
   question="The technique of identifying a species through one or more short, well-characterized gene sequences taken from its genome is called ________."
   answer="barcoding"
+  accept="DNA barcoding"
   hint="This DNA-analysis technique is named alongside the preservation of heirloom seeds as a line of action for protecting plant biodiversity."
 >}}
 

@@ -56,7 +56,7 @@ Incidence and prevalence both count only the new cases of a disease, but over di
 Incidence measures the number of deaths from a disease; prevalence measures the total number of illness cases.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe how morbidity and mortality rates are expressed." hint="Give each rate's two possible forms: a count against a standard population size, or a percentage." >}}
+{{< selfcheck question="Describe how morbidity and mortality rates are expressed." hint="Reread the Analyzing Disease in a Population paragraphs on morbidity and on mortality." >}}
 The morbidity rate can be expressed as the number of diseased individuals out of a standard number of individuals in the population, such as 100,000, or as a percent of the population. A mortality rate can be expressed as the percentage of the population that has died from a disease or as the number of deaths per 100,000 persons (or another suitable standard number).
 ===CHECKS===
 the morbidity rate can be expressed as the number of diseased individuals out of a standard number of individuals in the population, such as 100,000
@@ -132,7 +132,7 @@ Robert Koch was the first scientist to specifically demonstrate the causative ag
 
 **Check Your Understanding**
 
-{{< selfcheck question="List some challenges to determining the causative agent of a disease outbreak." hint="Name the difficulty with proving causation, then the difficulty with detecting the pathogen itself, then the difficulty with its signs and symptoms." >}}
+{{< selfcheck question="List some challenges to determining the causative agent of a disease outbreak." hint="Reread the first paragraph of the Etiology discussion." >}}
 Connecting a disease to a specific pathogen can be challenging because of the extra effort typically required to demonstrate direct causation, as opposed to a simple association; it is not enough to observe an association between a disease and a suspected pathogen, since controlled experiments are needed to eliminate other possible causes. Pathogens are also typically difficult to detect when there is no immediate clue as to what is causing the outbreak, and signs and symptoms of disease are commonly nonspecific, meaning that many different agents can give rise to the same set of signs and symptoms.
 ===CHECKS===
 the extra effort typically required to demonstrate direct causation, as opposed to a simple association
@@ -164,7 +164,7 @@ The current [*Morbidity and Mortality Weekly Report*](https://openstax.org/l/22m
 
 **Check Your Understanding**
 
-{{< selfcheck question="Describe how health agencies obtain data about the incidence of diseases of public health importance." hint="Name the reporting requirement first, then the CDC's own surveillance system and its publication." >}}
+{{< selfcheck question="Describe how health agencies obtain data about the incidence of diseases of public health importance." hint="Reread both paragraphs of The Role of Public Health Organizations discussion." >}}
 The CDC oversees the National Notifiable Disease Surveillance System (NNDSS) in cooperation with regional, state, and territorial public health departments, monitoring diseases considered to be of public health importance on a national scale. A physician treating a patient with a notifiable disease is legally required to submit a report on the case, and the resulting data is used to inform health-care providers and the public about possible risks; the CDC publishes the *Morbidity and Mortality Weekly Report* (*MMWR*) with updates on public health issues and the latest data pertaining to notifiable diseases.
 ===CHECKS===
 the CDC oversees the National Notifiable Disease Surveillance System (NNDSS) in cooperation with regional, state, and territorial public health departments
@@ -251,7 +251,7 @@ intravenous drug use, owning particular pets, or membership in an institution, s
 {{< multiplechoice
   question="Which term matches this description: 'a disease found occasionally in a region with cases occurring mainly in isolation from each other'?"
   answer="sporadic disease"
-  hint="This disease pattern has no constant presence and no large-scale surge."
+  hint="Reread the first paragraph of the Patterns of Incidence discussion."
 >}}
 sporadic disease
 endemic disease
@@ -263,7 +263,7 @@ mortality rate
 {{< multiplechoice
   question="Which term matches this description: 'a disease found regularly in a region'?"
   answer="endemic disease"
-  hint="This disease pattern is a constant, steady presence, not an occasional or sudden one."
+  hint="Reread the second paragraph of the Patterns of Incidence discussion."
 >}}
 sporadic disease
 endemic disease
@@ -275,7 +275,7 @@ mortality rate
 {{< multiplechoice
   question="Which term matches this description: 'a disease in higher than expected numbers around the world'?"
   answer="pandemic disease"
-  hint="This disease pattern's scale is worldwide, not just regional."
+  hint="Reread the Patterns of Incidence paragraph just before the 2007–2008 influenza graph."
 >}}
 sporadic disease
 endemic disease
@@ -285,9 +285,9 @@ mortality rate
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which term describes an illness with a higher-than-expected incidence in a given period within a given population?"
+  question="Which term describes a disease for which a larger than expected number of cases occurs in a short time within a geographic region?"
   answer="epidemic disease"
-  hint="This disease pattern is regional and short-lived, unlike the worldwide pattern or the constant, low-level one."
+  hint="Reread the third paragraph of the Patterns of Incidence discussion."
 >}}
 sporadic disease
 endemic disease
@@ -298,10 +298,17 @@ pandemic disease
 ### Explain the use of Koch's postulates and their modifications to determine the etiology of disease
 
 {{< textin
-  question="Which scientist was the first to specifically demonstrate the causative agent of a disease (anthrax), in the late 1800s?"
+  question="Which scientist was the first to specifically demonstrate the cause of a particular disease (anthrax), in the late 1800s?"
   answer="Robert Koch"
   accept="Koch"
-  hint="This scientist's four criteria for linking a disease to a pathogen are named after him."
+  hint="Reread the paragraph just before the third Check Your Understanding box."
+>}}
+
+{{< textin
+  question="The science of the causes of disease is called ________."
+  answer="etiology"
+  accept="aetiology"
+  hint="This word names the study of WHY a disease occurs, not the disease itself."
 >}}
 
 {{< textin
@@ -310,16 +317,10 @@ pandemic disease
   hint="This module gives two names for the same thing; the other name appears in the question."
 >}}
 
-{{< textin
-  question="The science of the causes of disease is called ________."
-  answer="etiology"
-  hint="This word names the study of WHY a disease occurs, not the disease itself."
->}}
-
 {{< multiplechoice
   question="How do the molecular Koch's postulates differ in purpose from Koch's original postulates?"
   answer="They establish a link between the disease state and virulence traits unique to a pathogenic strain of a microbe, rather than linking a disease to a pathogenic microbe as a whole."
-  hint="The molecular version links the disease to specific traits of a strain, not to the microbe as a whole."
+  hint="Reread the Etiology sentence that begins 'Today, we use the molecular Koch's postulates'."
 >}}
 They establish a link between the disease state and virulence traits unique to a pathogenic strain of a microbe, rather than linking a disease to a pathogenic microbe as a whole.
 They link a disease to a pathogenic microbe as a whole, rather than to specific virulence traits of a strain.
@@ -332,7 +333,7 @@ They replace the need for a controlled experiment when establishing causation.
 {{< multiplechoice
   question="The ________ collects data and conducts epidemiologic studies in the United States."
   answer="Centers for Disease Control and Prevention (CDC)"
-  hint="This is the agency of the Department of Health and Human Services that oversees the National Notifiable Disease Surveillance System."
+  hint="Reread the first paragraph of The Role of Public Health Organizations discussion."
 >}}
 Centers for Disease Control and Prevention (CDC)
 Food and Drug Administration (FDA)
@@ -347,7 +348,7 @@ U.S. Department of Agriculture (USDA)
   hint="This module gives two names for the same thing; either one is correct."
 >}}
 
-{{< selfcheck question="In what publication would you find data on emerging/reemerging diseases in the United States?" hint="Name the CDC's own weekly publication and what it reports on." >}}
+{{< selfcheck question="In what publication would you find data on emerging/reemerging diseases in the United States?" hint="Reread the second paragraph of The Role of Public Health Organizations discussion." >}}
 This module states that the CDC publishes the *Morbidity and Mortality Weekly Report* (*MMWR*), which provides physicians and health-care workers with updates on public health issues and the latest data pertaining to notifiable diseases. The module discusses this publication in terms of notifiable diseases generally; it does not use the phrase "emerging/reemerging diseases" or name a publication specifically for that category.
 ===CHECKS===
 the CDC publishes the Morbidity and Mortality Weekly Report (MMWR)
@@ -356,4 +357,4 @@ updates on public health issues and the latest data pertaining to notifiable dis
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 16.1: The Language of Epidemiologists](https://openstax.org/books/microbiology/pages/16-1-the-language-of-epidemiologists) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures re-encoded as WebP and rendered as mediafigures, all given explicit `kind="diagram"` after image inspection (the manifest guessed "photo" for all three because every source file is a JPEG, but each is a drawn line graph, not a photograph); all three source alts rewritten from the image after inspection — the source alts contained typos ("There as a short plateau," "The number o people," "an pneumonia," "usually large") and named lines and thresholds without giving their approximate values, which the rewritten alts supply by reading the graphs; the two body cross-references to Virulence Factors of Bacterial and Viral Pathogens (Section 15.3) and How Pathogens Cause Disease (Section 15.2) are absolute site-root links, as is Part 2's "Jump to the next Clinical Focus box," which points to the Tracking Infectious Diseases section (16.2); the Clinical Focus box's "Jump to the next Clinical Focus box" between Part 1 and Part 2 is omitted, because both parts are on this same page and the reader simply continues reading, and Part 2's own "Go back to the previous Clinical Focus box" is omitted for the same same-page reason; the source's four footnotes are rendered as inline parenthetical citations after the sentences they support, with the one bare access URL (the CDC plague citation) dropped and its access date kept; the source's Matching exercise (key: D, E, B, A, C) is rendered as five multiple-choice items, one per printed description, each offering all five of the set's terms (sporadic disease, endemic disease, pandemic disease, morbidity rate, mortality rate, the table's own order) as options — three (keyed to sporadic disease, endemic disease, pandemic disease) placed under the sporadic/endemic/epidemic/pandemic objective and two (keyed to morbidity rate, mortality rate) placed under the prevalence/incidence objective; a sixth item recalling epidemic disease's own definition (not part of the Matching set) is added under the same objective, from this module's own Key terms definition, with the other three disease-pattern terms as distractors, to cover all four disease patterns the objective names; the Fill in the Blank item ("The ________ collects data and conducts epidemiologic studies in the United States," keyed "Centers for Disease Control and Prevention, or CDC") is rendered as a multiple choice keyed to the full CDC name, with the Food and Drug Administration, National Institutes of Health, and U.S. Department of Agriculture as distractors, since this module names no other public-health agency and those three are named in earlier chapters of this book; of the section's two Short Answer questions and one Critical Thinking question, none has a source key, and none is dropped: all three stay self-checks — the prevalence-during-an-epidemic question because the module's only relevant sentence is written about a chronic disease (HIV) specifically rather than about epidemics generally; the emerging/reemerging-diseases question because the module's closest sentence is about notifiable diseases generally and never uses the phrase "emerging/reemerging" (that discussion is in Section 16.4, out of this module's bounds); and the population-size question because it asks the learner to supply their own example, though the model answer supplies one built from this module's own list of what can define a susceptible population; three of the section's six body Check Your Understanding questions (incidence versus prevalence, sporadic versus endemic disease, and endemic versus epidemic disease) are graded as multiple-choice items, each a compare-and-contrast pair the module states in two adjacent or near-adjacent sentences, with distractors built by reversing or otherwise recombining the module's own defining clauses; the other three (morbidity/mortality rate expression, challenges to determining a causative agent, and how health agencies obtain incidence data) stay self-checks, each needing sentences from more than one paragraph to answer honestly; the Practice block adds three text-recall items (Robert Koch, causative agent, etiology) and one text-recall item (notifiable/reportable disease) from the module's own Key terms and defining sentences, and one multiple-choice item contrasting Koch's postulates with the molecular Koch's postulates, to fill the Koch's-postulates and public-health objective groups, since this module's own exercise sets carry no items for either; key terms compiled from the module's seventeen defined terms and the book's Glossary appendix, with one (reportable disease) taken from this module's own defining sentence because the appendix has no entry for it (*Morbidity and Mortality Weekly Report* / *MMWR* does have a Glossary entry and uses its wording); the `textin` keyed to Robert Koch accepts the bare surname "Koch," since the module itself later refers to him only by surname; two one-word source typos are corrected in place, without an inline note: "determinate" to "determine" (§ Etiology) and "an usually large" to "an unusually large" (§ Patterns of Incidence). No source exercise item is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 16.1: The Language of Epidemiologists](https://openstax.org/books/microbiology/pages/16-1-the-language-of-epidemiologists) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures re-encoded as WebP and rendered as mediafigures, all given explicit `kind="diagram"` after image inspection (the manifest guessed "photo" for all three because every source file is a JPEG, but each is a drawn line graph, not a photograph); all three source alts rewritten from the image after inspection — the source alts contained typos ("There as a short plateau," "The number o people," "an pneumonia," "usually large") and named lines and thresholds without giving their approximate values, which the rewritten alts supply by reading the graphs; the two body cross-references to Virulence Factors of Bacterial and Viral Pathogens (Section 15.3) and How Pathogens Cause Disease (Section 15.2) are absolute site-root links, as is Part 2's "Jump to the next Clinical Focus box," which points to the Tracking Infectious Diseases section (16.2); the Clinical Focus box's "Jump to the next Clinical Focus box" between Part 1 and Part 2 is omitted, because both parts are on this same page and the reader simply continues reading, and Part 2's own "Go back to the previous Clinical Focus box" is omitted for the same same-page reason; the source's four footnotes are rendered as inline parenthetical citations after the sentences they support, with the one bare access URL (the CDC plague citation) dropped and its access date kept; the source's Matching exercise (key: D, E, B, A, C) is rendered as five multiple-choice items, one per printed description, each offering all five of the set's terms (sporadic disease, endemic disease, pandemic disease, morbidity rate, mortality rate, the table's own order) as options — three (keyed to sporadic disease, endemic disease, pandemic disease) placed under the sporadic/endemic/epidemic/pandemic objective and two (keyed to morbidity rate, mortality rate) placed under the prevalence/incidence objective; a sixth item recalling epidemic disease's own definition (not part of the Matching set) is added under the same objective, its stem the module's own defining sentence ("Diseases for which a larger than expected number of cases occurs in a short time within a geographic region"), whose regional scope keeps the pandemic-disease distractor from also fitting, with the other three disease-pattern terms as distractors, to cover all four disease patterns the objective names; the Fill in the Blank item ("The ________ collects data and conducts epidemiologic studies in the United States," keyed "Centers for Disease Control and Prevention, or CDC") is rendered as a multiple choice keyed to the full CDC name, with the Food and Drug Administration, National Institutes of Health, and U.S. Department of Agriculture as distractors, since this module names no other public-health agency and those three are named in earlier chapters of this book; of the section's two Short Answer questions and one Critical Thinking question, none has a source key, and none is dropped: all three stay self-checks — the prevalence-during-an-epidemic question because the module's only relevant sentence is written about a chronic disease (HIV) specifically rather than about epidemics generally; the emerging/reemerging-diseases question because the module's closest sentence is about notifiable diseases generally and never uses the phrase "emerging/reemerging" (that discussion is in Section 16.4, out of this module's bounds); and the population-size question because it asks the learner to supply their own example, though the model answer supplies one built from this module's own list of what can define a susceptible population; three of the section's six body Check Your Understanding questions (incidence versus prevalence, sporadic versus endemic disease, and endemic versus epidemic disease) are graded as multiple-choice items, each a compare-and-contrast pair the module states in two adjacent or near-adjacent sentences, with distractors built by reversing or otherwise recombining the module's own defining clauses; the other three (morbidity/mortality rate expression, challenges to determining a causative agent, and how health agencies obtain incidence data) stay self-checks, each needing sentences from more than one paragraph to answer honestly; the Practice block adds three text-recall items (Robert Koch, causative agent, etiology) and one text-recall item (notifiable/reportable disease) from the module's own Key terms and defining sentences, and one multiple-choice item contrasting Koch's postulates with the molecular Koch's postulates, to fill the Koch's-postulates and public-health objective groups, since this module's own exercise sets carry no items for either; key terms compiled from the module's seventeen defined terms and the book's Glossary appendix, with one (reportable disease) taken from this module's own defining sentence because the appendix has no entry for it (*Morbidity and Mortality Weekly Report* / *MMWR* does have a Glossary entry and uses its wording); the `textin` keyed to Robert Koch accepts the bare surname "Koch," since the module itself later refers to him only by surname, and its stem says "the cause of a particular disease" rather than the module's "causative agent," which is the key of a later recall item in its group; the `etiology` recall item accepts the British spelling "aetiology"; in the public-health group the notifiable-disease recall item comes before the *MMWR* Short Answer self-check, whose model answer names notifiable diseases; two one-word source typos are corrected in place, without an inline note: "determinate" to "determine" (§ Etiology) and "an usually large" to "an unusually large" (§ Patterns of Incidence). No source exercise item is omitted.</small>

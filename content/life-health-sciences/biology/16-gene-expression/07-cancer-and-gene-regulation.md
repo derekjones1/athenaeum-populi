@@ -82,10 +82,23 @@ Cancer can be described as a disease of altered gene expression. Changes at ever
 
 ### Describe how changes to gene expression can cause cancer
 
+{{< textin
+  question="The transcription factor that is aberrantly activated in Burkitt lymphoma, a cancer of the lymph system, is called ________."
+  answer="myc"
+  hint="Reread the last paragraph before Cancer and Epigenetic Alterations."
+>}}
+
+{{< textin
+  question="The epigenetic modification that leads to gene expression is called ________."
+  answer="histone acetylation"
+  accept="acetylation"
+  hint="Reread the second paragraph of Cancer: Disease of Altered Gene Expression."
+>}}
+
 {{< multiplechoice
   question="Cancer causing genes are called ________."
   answer="oncogenes"
-  hint="Re-read what a proto-oncogene becomes when it is mutated and starts to cause uncontrolled cell growth."
+  hint="Reread the last paragraph before Cancer and Epigenetic Alterations."
 >}}
 transformation genes
 tumor suppressor genes
@@ -93,33 +106,22 @@ oncogenes
 mutated genes
 {{< /multiplechoice >}}
 
-{{< textin
-  question="An oncogene that causes cancer in many cancer cells is called ________."
-  answer="myc"
-  hint="It is named as an example of an oncogene aberrantly activated in Burkett’s Lymphoma."
->}}
-
-{{< textin
-  question="The epigenetic modification that leads to gene expression by adding or removing an acetyl functional group is called ________."
-  answer="histone acetylation"
-  hint="It is the opposite mark from the one associated with silenced genes in cancer cells."
->}}
-
 ### Explain how changes to gene expression at different levels can disrupt the cell cycle
 
 {{< textin
-  question="The epigenetic modification that leads to gene silencing by adding a methyl group to the DNA molecule is called ________."
+  question="The epigenetic modification that silences genes and, in cancer cells, is made on cytosine residues in the CpG islands of a promoter is called ________."
   answer="DNA methylation"
-  hint="This mark is found on cytosine DNA residues in CpG islands of a silenced gene's promoter region."
+  accept="methylation"
+  hint="Reread the first paragraph of Cancer and Epigenetic Alterations."
 >}}
 
 {{< textin
-  question="According to the section summary, changes at every level of ________ can be detected in some form of cancer at some point in time."
-  answer="eukaryotic gene expression"
-  hint="The summary opens by naming the broad process this whole section has been describing changes to."
+  question="One example of a gene modification that alters the growth rate is increased phosphorylation of ________, a protein that controls the progression of a cell through the cell cycle."
+  answer="cyclin B"
+  hint="Reread the section's opening paragraph."
 >}}
 
-{{< selfcheck question="Name the different levels of gene regulation at which changes have been detected in cancer cells." hint="The section's third paragraph lists five different points along the path from DNA to functioning protein where a change can occur." >}}
+{{< selfcheck question="Name the different levels of gene regulation at which changes have been detected in cancer cells." hint="Reread the second paragraph of Cancer: Disease of Altered Gene Expression." >}}
 Changes have been detected in cancer at the level of epigenetic regulation, transcription, RNA stability, protein translation, and post-translational control.
 ===CHECKS===
 epigenetic regulation
@@ -134,7 +136,7 @@ post-translational control
 {{< multiplechoice
   question="Targeted therapies are used in patients with a set gene expression pattern. A targeted therapy that prevents the activation of the estrogen receptor in breast cancer would be beneficial to which type of patient?"
   answer="patients with lots of the estrogen receptor expressed in their tumor"
-  hint="A therapy that blocks a receptor from activating only helps a patient whose tumor actually has that receptor present."
+  hint="Reread New Drugs to Combat Cancer: Targeted Therapies."
 >}}
 patients who express the EGFR receptor in normal cells
 patients with a mutation that inactivates the estrogen receptor
@@ -142,7 +144,7 @@ patients with lots of the estrogen receptor expressed in their tumor
 patients that have no estrogen receptor expressed in their tumor
 {{< /multiplechoice >}}
 
-{{< selfcheck question="New drugs are being developed that decrease DNA methylation and prevent the removal of acetyl groups from histone proteins. Explain how these drugs could affect gene expression to help kill tumor cells." hint="Think about what these drugs do to the chromosomal configuration around a gene that has been silenced." >}}
+{{< selfcheck question="New drugs are being developed that decrease DNA methylation and prevent the removal of acetyl groups from histone proteins. Explain how these drugs could affect gene expression to help kill tumor cells." hint="Reread the first paragraph of Cancer and Epigenetic Alterations." >}}
 These drugs will keep the histone proteins and the DNA methylation patterns in the open chromosomal configuration so that transcription is feasible. If a gene is silenced, these drugs could reverse the epigenetic configuration to re-express the gene.
 ===CHECKS===
 keep the histone proteins and the DNA methylation patterns in the open chromosomal configuration
@@ -151,7 +153,7 @@ reverse the epigenetic configuration
 re-express the gene
 {{< /selfcheck >}}
 
-{{< selfcheck question="How can understanding the gene expression pattern in a cancer cell tell you something about that specific form of cancer?" hint="Think about what learning which genes are switched on in a tumor lets a doctor decide about treatment." >}}
+{{< selfcheck question="How can understanding the gene expression pattern in a cancer cell tell you something about that specific form of cancer?" hint="Reread New Drugs to Combat Cancer: Targeted Therapies." >}}
 Understanding which genes are expressed in a cancer cell can help diagnose the specific form of cancer. It can also help identify treatment options for that patient. For example, if a breast cancer tumor expresses the EGFR in high numbers, it might respond to specific anti-EGFR therapy. If that receptor is not expressed, it would not respond to that therapy.
 ===CHECKS===
 diagnose the specific form of cancer
@@ -162,4 +164,4 @@ if that receptor is not expressed, it would not respond to that therapy
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 16.7: Cancer and Gene Regulation](https://openstax.org/books/biology-2e/pages/16-7-cancer-and-gene-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: this module carries no figure, so none was vendored; the two feature boxes (the interactive note on p53 and the career note) rendered as a Link to Learning callout with descriptive link text and a Career Connection callout keeping its source title; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items (DNA methylation, histone acetylation, myc) added from the glossary; one summary-derived cloze recall item added from the section summary's own sentence on changes occurring at every level of gene expression; one locally written self-check added, drawn strictly from the section's own list of gene-regulation levels (epigenetic regulation, transcription, RNA stability, protein translation, and post-translational control), since the module's two keyed Review Questions and two Critical Thinking Questions all map to the first and third objectives and left the second objective ("Explain how changes to gene expression at different levels can disrupt the cell cycle") without a source item; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution, or, for the locally written item, the section's own list) into check-off clauses with no new claims. One name is corrected with a visible Source note: Burkitt lymphoma, for its describer Denis Burkitt, where the source prints "Burkett's" (erratum 405).</small>
+<small>This section is adapted from [Biology 2e, Section 16.7: Cancer and Gene Regulation](https://openstax.org/books/biology-2e/pages/16-7-cancer-and-gene-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: this module carries no figure, so none was vendored; the two feature boxes (the interactive note on p53 and the career note) rendered as a Link to Learning callout with descriptive link text and a Career Connection callout keeping its source title; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items (DNA methylation, histone acetylation, myc) added from the glossary, the myc and DNA-methylation prompts worded from the body's own sentences so that no prompt prints part of its answer, and placed ahead of the Review Question in the first objective group; one locally written cloze recall item added from the section's opening sentence on the phosphorylation of cyclin B; one locally written self-check added, drawn strictly from the section's own list of gene-regulation levels (epigenetic regulation, transcription, RNA stability, protein translation, and post-translational control), since the module's two keyed Review Questions and two Critical Thinking Questions all map to the first and third objectives and left the second objective ("Explain how changes to gene expression at different levels can disrupt the cell cycle") without a source item; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution, or, for the locally written item, the section's own list) into check-off clauses with no new claims. One name is corrected with a visible Source note: Burkitt lymphoma, for its describer Denis Burkitt, where the source prints "Burkett's" (erratum 405).</small>

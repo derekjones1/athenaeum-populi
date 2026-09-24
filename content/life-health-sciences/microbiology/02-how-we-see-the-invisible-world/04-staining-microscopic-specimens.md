@@ -88,7 +88,7 @@ It prevents the specimen from becoming charged by an electron beam.
 {{< multiplechoice
   question="What types of specimens should be chemically fixed as opposed to heat-fixed?"
   answer="tissue specimens"
-  hint="Think about which kind of specimen — cells in suspension or a solid tissue sample — heat could damage."
+  hint="Reread the paragraph on heat fixing and chemical fixatives under Preparing Specimens for Light Microscopy."
 >}}
 tissue specimens
 urine samples
@@ -154,7 +154,7 @@ In this specimen, the gram-positive bacterium *Staphylococcus aureus* retains cr
 {{< multiplechoice
   question="Explain the role of Gram's iodine in the Gram stain procedure."
   answer="mordant"
-  hint="Think about what a mordant does to the crystal violet dye once it is inside the cell wall."
+  hint="Reread the Gram Staining subsection step by step."
 >}}
 decolorizing agent
 primary stain
@@ -165,7 +165,7 @@ counterstain
 {{< multiplechoice
   question="Explain the role of alcohol in the Gram stain procedure."
   answer="decolorizing agent"
-  hint="Think about how the thickness of a cell's peptidoglycan layer affects how easily this step removes the crystal violet dye."
+  hint="Reread step 3 of the Gram stain procedure."
 >}}
 mordant
 decolorizing agent
@@ -179,7 +179,7 @@ counterstain
   hint="Think about which dye is retained by thick peptidoglycan layers and which dye colors the cells that lose it."
 >}}
 red and purple
-blue and pink
+red and blue
 green and pink
 purple and red
 {{< /multiplechoice >}}
@@ -244,7 +244,7 @@ One common negative staining technique for identifying encapsulated yeast and ba
 {{< multiplechoice
   question="How does negative staining help us visualize capsules?"
   answer="The dye stains the background but does not penetrate the capsules, which appear like halos around the borders of the cell."
-  hint="Think about which part of the specimen the dye actually colors when the capsule itself resists most basic dyes."
+  hint="Reread the first paragraph of Capsule Staining."
 >}}
 The dye stains the background but does not penetrate the capsules, which appear like halos around the borders of the cell.
 The primary stain colors the capsule directly, adding color to it so it stands out.
@@ -267,7 +267,7 @@ Endospore-staining techniques are important for identifying *Bacillus*, *Clostri
 {{< multiplechoice
   question="Is endospore staining an example of positive, negative, or differential staining?"
   answer="differential"
-  hint="Think back to how many different stains this technique applies, and to the earlier sentence that named it among the differential techniques."
+  hint="Reread the first paragraph of Endospore Staining."
 >}}
 positive
 negative
@@ -307,7 +307,7 @@ sputter-coated with metal ... prevents the specimen from becoming charged by the
 {{< textin
   question="Name the device that is used to create thin sections of specimens for electron microscopy."
   answer="ultramicrotome"
-  hint="This device's name combines a prefix meaning very small with the word for an instrument that cuts thin slices."
+  hint="Reread the first paragraph of Preparing Specimens for Electron Microscopy."
 >}}
 
 {{< callout type="info" >}}
@@ -337,7 +337,7 @@ Sample preparation for two-photon microscopy is similar to fluorescence microsco
 {{< multiplechoice
   question="What is the main difference between preparing a sample for fluorescence microscopy versus light microscopy?"
   answer="Fluorochromes are used instead of ordinary stains."
-  hint="Think about what kind of dye replaces an ordinary stain for this microscopy type."
+  hint="Reread the first paragraph of Preparation and Staining for Other Microscopes."
 >}}
 Fluorochromes are used instead of ordinary stains.
 The specimen must be embedded in plastic resin.
@@ -413,7 +413,7 @@ A sick patient might reasonably object to this stingy approach to prescribing an
 {{< multiplechoice
   question="Which of the following is a differential staining technique?"
   answer="Gram staining"
-  hint="Three of these options are ways to prepare a specimen for viewing, not stains at all; the fourth uses more than one dye to distinguish bacteria by their cell walls."
+  hint="Reread the paragraph just before the Differential stains table."
 >}}
 Gram staining
 wet mount
@@ -422,21 +422,21 @@ chemical fixation
 {{< /multiplechoice >}}
 
 {{< textin
-  question="________ staining uses a single dye to emphasize particular structures in a specimen, so it generally makes every organism in a sample appear to be the same color."
+  question="In ________ staining, a single dye is used to emphasize particular structures in the specimen."
   answer="Simple"
   accept="simple stain|simple staining"
-  hint="This is the opposite of the staining approach that uses more than one dye and can make different organisms appear as different colors."
+  hint="Reread the paragraph just after the first stains table."
 >}}
 
 {{< multiplechoice
-  question="If a mixed sample containing two different species of bacteria is stained with a simple stain, would the two species look different from each other afterward? Explain your answer."
-  answer="No — a simple stain uses a single dye, so it generally makes every organism in a sample appear to be the same color, even if the sample contains more than one type of organism."
-  hint="Think about how many dyes a simple stain applies, and whether that lets different organisms end up different colors."
+  question="If a mixed sample containing two different species of bacteria is stained with a differential stain, could the two species look different from each other afterward? Explain your answer."
+  answer="Yes — differential staining distinguishes organisms based on their interactions with multiple stains, so two organisms in a differentially stained sample may appear to be different colors."
+  hint="Reread the paragraph just before the Differential stains table."
 >}}
-No — a simple stain uses a single dye, so it generally makes every organism in a sample appear to be the same color, even if the sample contains more than one type of organism.
-Yes — a simple stain uses more than one dye, so different organisms end up different colors.
-Yes — a simple stain distinguishes organisms based on their interactions with multiple stains.
-No — a simple stain colors the background rather than the organisms, so no organism shows color at all.
+No — a differential stain applies one dye, which every organism in the sample absorbs equally.
+Yes — differential staining distinguishes organisms based on their interactions with multiple stains, so two organisms in a differentially stained sample may appear to be different colors.
+No — a differential stain colors only the background, so every organism appears as the same clear outline.
+Yes — a differential stain colors each species' capsule a different color, while the cells themselves stay clear.
 {{< /multiplechoice >}}
 
 ### Describe the unique features of commonly used stains
@@ -444,7 +444,7 @@ No — a simple stain colors the background rather than the organisms, so no org
 {{< multiplechoice
   question="What is one difference between specimen preparation for a transmission electron microscope (TEM) and preparation for a scanning electron microscope (SEM)?"
   answer="Only the SEM specimen requires sputter-coating."
-  hint="Both types of specimens must be dehydrated with an ethanol series; only one of them is coated with metal afterward."
+  hint="Reread Preparing Specimens for Electron Microscopy."
 >}}
 Only the TEM specimen requires sputter coating.
 Only the SEM specimen requires sputter-coating.
@@ -471,7 +471,7 @@ the specimen does not need to be heat-fixed prior to negative staining
 {{< multiplechoice
   question="What mordant is used in Gram staining?"
   answer="iodine"
-  hint="This substance makes the crystal violet dye clump and stay trapped within thick peptidoglycan layers in the cell wall."
+  hint="Reread step 2 of the Gram stain procedure."
 >}}
 crystal violet
 safranin
@@ -482,21 +482,21 @@ iodine
 {{< textin
   question="Ziehl-Neelsen staining, a type of ________ staining, is diagnostic for *Mycobacterium tuberculosis*."
   answer="acid-fast"
-  accept="acidfast"
+  accept="acidfast|acid-fast staining|acid-fast stain"
   hint="Both Ziehl-Neelsen and Kinyoun are variants of the same staining approach; one uses heat to help the primary stain penetrate the cell wall."
 >}}
 
 {{< textin
   question="The ________ is used to differentiate bacterial cells based on the components of their cell walls."
   answer="Gram stain"
-  accept="Gram staining"
+  accept="Gram staining|Gram stain procedure|Gram staining procedure"
   hint="This procedure applies crystal violet, then a mordant, then a decolorizing agent, and finally a safranin counterstain."
 >}}
 
 {{< multiplechoice
   question="How could you identify whether a particular bacterial sample contained specimens with mycolic acid-rich cell walls?"
   answer="Acid-fast stain"
-  hint="Think about which staining technique distinguishes cells with waxy cell-wall components from those without, and what color the two groups end up after its counterstain."
+  hint="Reread the Differential stains table and the first paragraph of each stain's subsection."
 >}}
 Gram stain
 Acid-fast stain
@@ -514,4 +514,4 @@ the L-form bacterium would appear pink, the color of a gram-negative cell
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 2.4: Staining Microscopic Specimens](https://openstax.org/books/microbiology/pages/2-4-staining-microscopic-specimens) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with `kind="photo"` set explicitly on twelve photographic figures and `kind="diagram"` on the two drawn/labeled figures (the Gram stain process table and the indirect-immunofluorescence schematic), overriding the media manifest's JPEG-based guess; alts rewritten for all fourteen figures to describe what is visibly drawn or photographed, since this chapter's source alts contain defects (the Gram-stain-process alt misspells "purple" as "pruple," and the two stain-table alts misspell "fuchsin" as "fuschsin," "India ink" as "india in k," and contain a 1,000-character run-on of cells) rather than reused; a longdesc added for the Gram stain process figure (required) and the indirect-immunofluorescence diagram, walking each in reading order; the two summary tables printed as images in the source (Simple Stains, Differential Stains) are transcribed as Markdown tables from the image, checked against the printed page, because the source alt for both misspells several dye names (the Differential Stains image itself prints "pararosaline" in its flagella-stain row; the transcribed table prints pararosaniline, the spelling this section's own text uses, and the image's spelling is reported as a source defect) — the source images are kept immediately after their tables for their sample micrographs only, with alts limited to the micrograph column and not re-transcribing the table cells; both tables are placed at the point in the text where the module's own sentence introduces them ("provides more detail" / "provides more detail on these differential staining techniques"), not at their later position in the source's print layout, where they are typeset at the end of the Flagella Staining section for page-fit reasons that do not apply to a continuously scrolling page; feature boxes rendered as callouts; of the fourteen Check Your Understanding bullets, eleven are now graded — eight `multiplechoice`, two `sortbins` (one built from the Simple Stains table, one classifying named techniques as simple or differential), and one `textin` — from this section's own sentences and tables (11 Check Your Understanding questions graded from the module's own sentences or tables rather than answered in prose; the source prints no key for them), and three (why acid-fast stains are useful; why cells must be dehydrated before electron microscopy; and the difference between a positive and a negative stain) remain body self-checks with model answers and rubrics assembled from this section's own preceding text, because each combines more than one module sentence rather than resting on a single one; the source's single five-bullet box split into two labeled "Check Your Understanding" runs of three and two so no more than three self-checks run back to back without intervening prose or a figure; a second sortbins for the Differential Stains table was considered and skipped, since four of its five rows' distinguishing facts (Gram stain's mordant/decolorizer/counterstain roles and color outcome; acid-fast stain's mycolic-acid identification; endospore staining's classification; capsule staining's background-only mechanism) are already asked by converted items elsewhere on the page, leaving only the flagella-stain row untested — not enough for a second 4-item sortbins without repeating a fact; the Clinical Focus box's *Part 3* now names all three earlier parts of the case — it began in Section 2.1, continued in Section 2.3, and continues in the Resolution below — replacing the source's "Jump to the next / Go back to the previous Clinical Focus box" links, and the Resolution names where the case began, since it is not accurate to call Part 2 "where the case began" once a case runs across three sections; the Link to Learning sentence's title, which the source printed twice in a row (once as plain text, once repeated as the link text), is printed once as the Markdown link text; the end-of-section Multiple Choice and Fill in the Blank questions and the unkeyed Short Answer and Critical Thinking questions are adapted into the closing interactive Practice block, sorted under the objective each supports; of the two, the Short Answer question (identifying mycolic-acid-rich cell walls) is now a `multiplechoice` graded from this section's own sentence, among the differential-stain names this section's tables print (1 of the source's unkeyed Short Answer questions is graded from the module's own sentence rather than answered in prose; the source prints no key for it), and the model answer for the remaining Critical Thinking question is written from this section's own text, because the source prints no answer key for it; five filler items (one multiple choice and one self-check for the first objective, one text-recall and one self-check for the second, both from this section's own body sentences) fill out the first two objective groups, which the source's own exercise set does not reach on its own — the first objective's filler self-check (whether two species look different under a simple stain) is now a `multiplechoice`, and the second objective's filler self-check (why capsule staining needs no heat-fixing) remains a self-check, because the module states only the one reason and no alternative module-printed mechanism exists to build defensible wrong options from; key terms compiled from the module's twenty-three defined terms and the book's Glossary appendix (all twenty-three taken from the glossary; none from a defining sentence); the *Treponema pallidum* figure's caption is printed verbatim, including the source's "used to visualized" (reported as a source defect rather than corrected, because the caption rule keeps the source's wording); the µm figure in the syphilis Micro Connection is set with the micro sign (µ), not the Greek letter mu, per the book's notation rule; cross-references to Sections 2.1 and 2.3 rendered as absolute links, since both pages exist.</small>
+<small>This section is adapted from [Microbiology, Section 2.4: Staining Microscopic Specimens](https://openstax.org/books/microbiology/pages/2-4-staining-microscopic-specimens) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with `kind="photo"` set explicitly on twelve photographic figures and `kind="diagram"` on the two drawn/labeled figures (the Gram stain process table and the indirect-immunofluorescence schematic), overriding the media manifest's JPEG-based guess; alts rewritten for all fourteen figures to describe what is visibly drawn or photographed, since this chapter's source alts contain defects (the Gram-stain-process alt misspells "purple" as "pruple," and the two stain-table alts misspell "fuchsin" as "fuschsin," "India ink" as "india in k," and contain a 1,000-character run-on of cells) rather than reused; a longdesc added for the Gram stain process figure (required) and the indirect-immunofluorescence diagram, walking each in reading order; the two summary tables printed as images in the source (Simple Stains, Differential Stains) are transcribed as Markdown tables from the image, checked against the printed page, because the source alt for both misspells several dye names (the Differential Stains image itself prints "pararosaline" in its flagella-stain row; the transcribed table prints pararosaniline, the spelling this section's own text uses, and the image's spelling is reported as a source defect) — the source images are kept immediately after their tables for their sample micrographs only, with alts limited to the micrograph column and not re-transcribing the table cells; both tables are placed at the point in the text where the module's own sentence introduces them ("provides more detail" / "provides more detail on these differential staining techniques"), not at their later position in the source's print layout, where they are typeset at the end of the Flagella Staining section for page-fit reasons that do not apply to a continuously scrolling page; feature boxes rendered as callouts; of the fourteen Check Your Understanding bullets, eleven are now graded — eight `multiplechoice`, two `sortbins` (one built from the Simple Stains table, one classifying named techniques as simple or differential), and one `textin` — from this section's own sentences and tables (11 Check Your Understanding questions graded from the module's own sentences or tables rather than answered in prose; the source prints no key for them), and three (why acid-fast stains are useful; why cells must be dehydrated before electron microscopy; and the difference between a positive and a negative stain) remain body self-checks with model answers and rubrics assembled from this section's own preceding text, because each combines more than one module sentence rather than resting on a single one; the source's single five-bullet box split into two labeled "Check Your Understanding" runs of three and two so no more than three self-checks run back to back without intervening prose or a figure; a second sortbins for the Differential Stains table was considered and skipped, since four of its five rows' distinguishing facts (Gram stain's mordant/decolorizer/counterstain roles and color outcome; acid-fast stain's mycolic-acid identification; endospore staining's classification; capsule staining's background-only mechanism) are already asked by converted items elsewhere on the page, leaving only the flagella-stain row untested — not enough for a second 4-item sortbins without repeating a fact; the Clinical Focus box's *Part 3* now names all three earlier parts of the case — it began in Section 2.1, continued in Section 2.3, and continues in the Resolution below — replacing the source's "Jump to the next / Go back to the previous Clinical Focus box" links, and the Resolution names where the case began, since it is not accurate to call Part 2 "where the case began" once a case runs across three sections; the Link to Learning sentence's title, which the source printed twice in a row (once as plain text, once repeated as the link text), is printed once as the Markdown link text; the end-of-section Multiple Choice and Fill in the Blank questions and the unkeyed Short Answer and Critical Thinking questions are adapted into the closing interactive Practice block, sorted under the objective each supports; of the two, the Short Answer question (identifying mycolic-acid-rich cell walls) is now a `multiplechoice` graded from this section's own sentence, among the differential-stain names this section's tables print (1 of the source's unkeyed Short Answer questions is graded from the module's own sentence rather than answered in prose; the source prints no key for it), and the model answer for the remaining Critical Thinking question is written from this section's own text, because the source prints no answer key for it; five filler items (one multiple choice, one text-recall, and one self-check for the first objective; one text-recall and one self-check for the second, all from this section's own body sentences) fill out the first two objective groups, which the source's own exercise set does not reach on its own — the first objective's filler self-check is now a `multiplechoice` asking whether two species could look different after a differential stain, so that it does not re-ask the simple-staining sentence the text-recall directly above it keys, and the second objective's filler self-check (why capsule staining needs no heat-fixing) remains a self-check, because the module states only the one reason and no alternative module-printed mechanism exists to build defensible wrong options from; key terms compiled from the module's twenty-three defined terms and the book's Glossary appendix (all twenty-three taken from the glossary; none from a defining sentence); the *Treponema pallidum* figure's caption is printed verbatim, including the source's "used to visualized" (reported as a source defect rather than corrected, because the caption rule keeps the source's wording); the capsule-staining paragraph's "leaving halo around each cell" is printed "leaving a halo around each cell," restoring the missing article, and the capital "The" after that sentence's colon is lower-cased (erratum 890); the µm figure in the syphilis Micro Connection is set with the micro sign (µ), not the Greek letter mu, per the book's notation rule; cross-references to Sections 2.1 and 2.3 rendered as absolute links, since both pages exist.</small>

@@ -28,7 +28,7 @@ The other type of nucleic acid, RNA, is mostly involved in protein synthesis. Th
 
 DNA and RNA are comprised of monomers that scientists call **nucleotides**. The nucleotides combine with each other to form a **polynucleotide**, DNA or RNA. Three components comprise each nucleotide: a nitrogenous base, a pentose (five-carbon) sugar, and a phosphate group (below). Each nitrogenous base in a nucleotide is attached to a sugar molecule, which is attached to one or more phosphate groups.
 
-{{< mediafigure src="biology/Figure_03_05_01-d787" kind="diagram" eager="true" alt="The molecular structure of a nucleotide is shown. The core of the nucleotide is a pentose whose carbon residues are numbered one prime through five prime. The base is attached to the one prime carbon, and the phosphate is attached to the five prime carbon. Two kinds of pentose are found in nucleotides: ribose and deoxyribose. Deoxyribose has an H instead of O H at the two prime position. Five kinds of base are found in nucleotides. Two of these, adenine and guanine, are purine bases with two rings fused together. The other three, cytosine, thymine and uracil, have one six-membered ring." longdesc="Two boxes at the top show the five nitrogenous bases' ring structures: a Pyrimidines box with cytosine, thymine, and uracil (each a single six-membered ring with its own attached groups), and a Purines box with adenine and guanine (each a fused two-ring structure). Both boxes point down to one shared nucleotide diagram in the middle, where a pentose sugar (labeled \"Deoxyribose or ribose sugar\") is bonded on one side to a nitrogenous base (labeled \"Base\") and on the other side to a phosphate group (labeled \"Phosphate\"). To the right, the same nucleotide is redrawn larger with the sugar's 5′ carbon, 3′ carbon, and 2′ carbon positions boxed in red and labeled. Below, two pentose sugars are drawn side by side for comparison: deoxyribose (used in DNA), and ribose (used in RNA), which has an extra OH group at the 2′ position that deoxyribose lacks." >}}
+{{< mediafigure src="biology/Figure_03_05_01-d787" kind="diagram" eager="true" alt="The molecular structure of a nucleotide is shown. The core of the nucleotide is a pentose whose carbon residues are numbered one prime through five prime. The base is attached to the one prime carbon, and the phosphate is attached to the five prime carbon. Two kinds of pentose are found in nucleotides: ribose and deoxyribose. Deoxyribose has an H instead of O H at the two prime position. Five kinds of base are found in nucleotides. Two of these, adenine and guanine, are purine bases with two rings fused together. The other three, cytosine, thymine and uracil, have one six-membered ring." longdesc="A box at the top, in two sections, shows the five nitrogenous bases' ring structures: Pyrimidines — cytosine (C), thymine (T, in DNA), and uracil (U, in RNA), each a single six-membered ring with its own attached groups — and Purines — adenine (A) and guanine (G), each a fused two-ring structure. A funnel widens from the Base box of the nucleotide diagram below up to this box, marking it as the range of possible bases. In that nucleotide diagram, a pentose sugar (labeled \"Deoxyribose or ribose sugar\") carries a nitrogenous base above it (labeled \"Base\"; the one drawn is guanine) and a phosphate group to its left (labeled \"Phosphate\"). To the right, the same nucleotide is redrawn at the same size with the sugar's 5′ carbon, 3′ carbon, and 2′ carbon positions boxed in red and labeled. Below, a second funnel widens from the sugar box down to two pentose sugars drawn side by side for comparison: deoxyribose (used in DNA), and ribose (used in RNA), which has an extra OH group at the 2′ position that deoxyribose lacks." >}}
 Three components comprise a nucleotide: a nitrogenous base, a pentose sugar, and one or more phosphate groups. Carbon residues in the pentose are numbered 1′ through 5′ (the prime distinguishes these residues from those in the base, which are numbered without using a prime notation). The base is attached to the ribose's 1′ position, and the phosphate is attached to the 5′ position. When a polynucleotide forms, the incoming nucleotide's 5′ phosphate attaches to the 3′ hydroxyl group at the end of the growing chain. Two types of pentose are in nucleotides, deoxyribose (found in DNA) and ribose (found in RNA). Deoxyribose is similar in structure to ribose, but it has an H instead of an OH at the 2′ position. We can divide bases into two categories: purines and pyrimidines. Purines have a double ring structure, and pyrimidines have a single ring.
 {{< /mediafigure >}}
 
@@ -52,7 +52,7 @@ Only certain types of base pairing are allowed. For example, a certain purine ca
 In a double stranded DNA molecule, the two strands run antiparallel to one another so that one strand runs 5′ to 3′ and the other 3′ to 5′. The phosphate backbone is located on the outside, and the bases are in the middle. Adenine forms hydrogen bonds (or base pairs) with thymine, and guanine base pairs with cytosine.
 {{< /mediafigure >}}
 
-{{< selfcheck question="A mutation occurs, and cytosine is replaced with adenine. What impact do you think this will have on the DNA structure?" hint="Compare the size and ring structure of a purine (adenine) with a pyrimidine (cytosine), and think about what a size mismatch would do to the width of the double helix." >}}
+{{< selfcheck question="A mutation occurs, and cytosine is replaced with adenine. What impact do you think this will have on the DNA structure?" hint="Reread the base-pairing paragraph and the nucleotide figure's caption, then compare the two bases' ring structures." >}}
 Adenine is larger than cytosine and will not be able to base pair properly with the guanine on the opposing strand. This will cause the DNA to bulge. DNA repair enzymes may recognize the bulge and replace the incorrect nucleotide.
 ===CHECKS===
 adenine is larger than cytosine and will not be able to base pair properly with the guanine on the opposing strand
@@ -66,7 +66,7 @@ Ribonucleic acid, or RNA, is mainly involved in the process of protein synthesis
 
 There are four major types of RNA: messenger RNA (mRNA), ribosomal RNA (rRNA), transfer RNA (tRNA), and microRNA (miRNA). The first, mRNA, carries the message from DNA, which controls all of the cellular activities in a cell. If a cell requires synthesizing a certain protein, the gene for this product turns "on" and the messenger RNA synthesizes in the nucleus. The RNA base sequence is complementary to the DNA's coding sequence from which it has been copied. However, in RNA, the base T is absent and U is present instead. If the DNA strand has a sequence AATTGCGC, the sequence of the complementary RNA is UUAACGCG. In the cytoplasm, the mRNA interacts with ribosomes and other cellular machinery (below).
 
-{{< mediafigure src="biology/Figure_03_05_04" kind="diagram" alt="An illustration of a ribosome is shown. m R N A sits between the large and small subunits. t R N A molecules bind the ribosome and add amino acids to the growing peptide chain." longdesc="A large gray ribosome subunit sits above a smaller gray subunit, with a strand of mRNA (a light gray backbone with colored base shapes) threading between them from a 5′ end on the left to a 3′ end on the right. Two tRNA molecules, drawn as blue and orange bent shapes, sit within the ribosome, each pairing with a codon on the mRNA strand. A chain of colored beads labeled \"Growing peptide chain\" extends upward from the ribosome, representing the amino acids the tRNAs have added in sequence." >}}
+{{< mediafigure src="biology/Figure_03_05_04" kind="diagram" alt="An illustration of a ribosome is shown. m R N A sits between the large and small subunits. t R N A molecules bind the ribosome and add amino acids to the growing peptide chain." longdesc="A large gray ribosome subunit sits above a smaller gray subunit, with a strand of mRNA (a light gray backbone with colored base shapes) threading between them from a 5′ end on the left to a 3′ end on the right. Three tRNA molecules, drawn as bent shapes (one labeled tRNA), sit in three slots of the ribosome: at left, a blue one with no amino acid, tilting out of the ribosome; in the middle, an orange one paired with a codon and holding the end of the growing chain; at right, a blue one paired with the next codon and carrying a single blue amino acid. A yellow arrow runs from the end of the chain to that single amino acid, and a curved black arrow joins the lower ends of the middle and right tRNAs. A chain of colored beads labeled \"Growing peptide chain\" extends upward from the ribosome, representing the amino acids the tRNAs have added in sequence. The two subunits are labeled Ribosome large subunit and Ribosome small subunit, and the strand is labeled mRNA." >}}
 A ribosome has two parts: a large subunit and a small subunit. The mRNA sits in between the two subunits. A tRNA molecule recognizes a codon on the mRNA, binds to it by complementary base pairing, and adds the correct amino acid to the growing peptide chain.
 {{< /mediafigure >}}
 
@@ -115,10 +115,17 @@ Nucleic acids are molecules comprised of nucleotides that direct cellular activi
 
 ### Describe nucleic acids' structure and define the two types of nucleic acids
 
+{{< textin
+  question="A type of nitrogenous base in DNA and RNA, of which adenine and guanine are the examples, is called a ________."
+  answer="purine"
+  accept="purine base"
+  hint="Reread the second paragraph after the nucleotide figure."
+>}}
+
 {{< multiplechoice
   question="The building blocks of nucleic acids are ________."
   answer="nucleotides"
-  hint="Sugars and nitrogenous bases are only two of the three parts that combine into a single monomer — what is the monomer itself called?"
+  hint="Reread the fourth paragraph of DNA and RNA."
 >}}
 sugars
 nitrogenous bases
@@ -126,13 +133,7 @@ peptides
 nucleotides
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A biological macromolecule that carries the cell's genetic blueprint and instructions for the cell's functioning is called a ________."
-  answer="nucleic acid"
-  hint="This is the name for the whole class of molecule that DNA and RNA both belong to."
->}}
-
-{{< selfcheck question="What are the structural differences between RNA and DNA?" hint="Compare the two nucleic acids' strand count (single- versus double-stranded), their sugars, and which four bases each one uses." >}}
+{{< selfcheck question="What are the structural differences between RNA and DNA?" hint="Reread the first paragraph of RNA and the DNA and RNA Features table." >}}
 DNA has a double-helix structure. The sugar and the phosphate are on the outside of the helix and the nitrogenous bases are in the interior. The monomers of DNA are nucleotides containing deoxyribose, one of the four nitrogenous bases (A, T, G and C), and a phosphate group. RNA is usually single-stranded and is made of ribonucleotides that are linked by phosphodiester linkages. A ribonucleotide contains ribose (the pentose sugar), one of the four nitrogenous bases (A, U, G, and C), and the phosphate group.
 ===CHECKS===
 DNA has a double-helix structure
@@ -147,7 +148,7 @@ a ribonucleotide contains ribose (the pentose sugar), one of the four nitrogenou
 {{< multiplechoice
   question="A nucleotide of DNA may contain ________."
   answer="deoxyribose, thymine, and a phosphate group"
-  hint="DNA's sugar lacks a hydroxyl group at the 2′ carbon, and one of its four bases is not found in RNA."
+  hint="Use the DNA and RNA Features table."
 >}}
 ribose, uracil, and a phosphate group
 deoxyribose, uracil, and a phosphate group
@@ -155,10 +156,17 @@ deoxyribose, thymine, and a phosphate group
 ribose, thymine, and a phosphate group
 {{< /multiplechoice >}}
 
+{{< textin
+  question="The covalent bond that holds a polynucleotide chain together, with a phosphate group linking neighboring nucleotides' two pentose sugars, is called a ________ linkage."
+  answer="phosphodiester"
+  accept="phosphodiester linkage|phosphodiester bond"
+  hint="Reread the paragraph just before DNA Double-Helix Structure."
+>}}
+
 {{< multiplechoice
   question="How does the double helix structure of DNA support its role in encoding the genome?"
   answer="Complementary base pairing creates a very stable structure."
-  hint="Look for the option that names a stabilizing property of the helix itself, rather than a role in replication, a job done by tRNA, or a claim about editing strands."
+  hint="Reread the base-pairing paragraph in DNA Double-Helix Structure."
 >}}
 The sugar-phosphate backbone provides a template for DNA replication.
 tRNA pairing with the template strand creates proteins encoded by the genome.
@@ -166,16 +174,23 @@ Complementary base pairing creates a very stable structure.
 Complementary base pairing allows for easy editing of both strands of DNA.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The double-helical molecule that carries a cell's hereditary information is known by the abbreviation ________."
-  answer="DNA"
-  accept="deoxyribonucleic acid"
-  hint="Its full name ends in \"nucleic acid,\" preceded by a word meaning it lacks an oxygen atom that its RNA counterpart has."
->}}
-
 ### Explain RNA's structure and roles
 
-{{< selfcheck question="What are the four types of RNA and how do they function?" hint="Name each RNA type and match it to the step of protein synthesis it participates in." >}}
+{{< textin
+  question="The RNA that carries activated amino acids to the site of protein synthesis on the ribosome is called ________."
+  answer="tRNA"
+  accept="transfer RNA|transfer ribonucleic acid"
+  hint="Reread the paragraph after the ribosome figure."
+>}}
+
+{{< textin
+  question="The ________ regulates using mRNA for protein synthesis."
+  answer="microRNA"
+  accept="miRNA"
+  hint="Reread the summary's closing sentence."
+>}}
+
+{{< selfcheck question="What are the four types of RNA and how do they function?" hint="Reread the second paragraph of RNA and the paragraph after the ribosome figure." >}}
 The four types of RNA are messenger RNA, ribosomal RNA, transfer RNA, and microRNA. Messenger RNA carries the information from the DNA that controls all cellular activities. The mRNA binds to the ribosomes that are constructed of proteins and rRNA, and tRNA transfers the correct amino acid to the site of protein synthesis. microRNA regulates the availability of mRNA for translation.
 ===CHECKS===
 the four types of RNA are messenger RNA, ribosomal RNA, transfer RNA, and microRNA
@@ -185,20 +200,7 @@ tRNA transfers the correct amino acid to the site of protein synthesis
 microRNA regulates the availability of mRNA for translation
 {{< /selfcheck >}}
 
-{{< textin
-  question="The type of RNA that carries information from DNA to the ribosomes during protein synthesis is called ________."
-  answer="mRNA"
-  accept="messenger RNA|messenger ribonucleic acid"
-  hint="This RNA's common name describes its job: it carries a message."
->}}
-
-{{< textin
-  question="The ________ regulates using mRNA for protein synthesis."
-  answer="microRNA"
-  accept="miRNA"
-  hint="This is the smallest of the four RNA types, named last in the section's summary of RNA functions."
->}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 3.5: Nucleic Acids](https://openstax.org/books/biology-2e/pages/3-5-nucleic-acids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and re-kinded from the manifest's guess to `diagram` for all three drawn figures (the nucleotide-component chart, the rendered double-helix model, and the ribosome illustration) since none is a camera photograph; a longer extended description added for the nucleotide-component figure and the ribosome figure, both labeled diagrams whose full reading is not carried by their captions; the Visual Connection kept in the body immediately after its figure, combining the source's embedded question with the separately printed Visual Connection Question into one self-check, with the printed solution as its model answer; inline references to figures changed from the source's numbered pointers to descriptive phrases ("the figure below") since figures are not numbered here; the DNA-and-RNA-features table kept as a Markdown table in the body; the Link to Learning note rendered as a callout with its URL kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; and three key-term recall items (nucleic acid, deoxyribonucleic acid/DNA, messenger RNA/mRNA) added from the glossary, with `accept` covering each term's other form, to round out thin objective groups; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived cloze added (microRNA, from the section summary's closing sentence on what regulates mRNA availability) since the third objective group was left with only two exercises after the glossary pass. The DNA-and-RNA-features table's Purines row is identical between the two columns ("Adenine, guanine" for both DNA and RNA) and so is not distinguishing between the categories; the table was judged against the sortbins criteria but not converted, since doing so was not needed to reach this section's practice floor and would not have served the specific objective group that was short.</small>
+<small>This section is adapted from [Biology 2e, Section 3.5: Nucleic Acids](https://openstax.org/books/biology-2e/pages/3-5-nucleic-acids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and re-kinded from the manifest's guess to `diagram` for all three drawn figures (the nucleotide-component chart, the rendered double-helix model, and the ribosome illustration) since none is a camera photograph; a longer extended description added for the nucleotide-component figure and the ribosome figure, both labeled diagrams whose full reading is not carried by their captions; the Visual Connection kept in the body immediately after its figure, combining the source's embedded question with the separately printed Visual Connection Question into one self-check, with the printed solution as its model answer; inline references to figures changed from the source's numbered pointers to descriptive phrases ("the figure below") since figures are not numbered here; the DNA-and-RNA-features table kept as a Markdown table in the body; the Link to Learning note rendered as a callout with its URL kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; and three key-term recall items (purine, phosphodiester linkage, transfer RNA/tRNA) added from the glossary, with `accept` covering the terms' other forms, to round out thin objective groups; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived cloze added (microRNA, from the section summary's closing sentence on what regulates mRNA availability) since the third objective group was left with only two exercises after the glossary pass. The DNA-and-RNA-features table's Purines row is identical between the two columns ("Adenine, guanine" for both DNA and RNA) and so is not distinguishing between the categories; the table was judged against the sortbins criteria but not converted, since doing so was not needed to reach this section's practice floor and would not have served the specific objective group that was short.</small>

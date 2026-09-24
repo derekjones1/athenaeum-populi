@@ -57,7 +57,7 @@ It is read by ribosomes to catalyze protein synthesis during translation.
 {{< multiplechoice
   question="Distinguish between the genotype and phenotype of a cell."
   answer="Genotype is the full collection of genes a cell contains, while phenotype is the set of observable characteristics that result from those genes."
-  hint="Match each term to whether it describes the genes a cell has or the traits that result from them."
+  hint="Reread the paragraph that follows the central dogma figure."
 >}}
 Genotype is the full collection of genes a cell contains, while phenotype is the set of observable characteristics that result from those genes.
 Phenotype is the full collection of genes a cell contains, while genotype is the set of observable characteristics that result from those genes.
@@ -65,7 +65,7 @@ Genotype changes constantly in response to the environment, while phenotype rema
 Genotype and phenotype both refer only to the proteins a cell is producing at a given time.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How can cells have the same genotype but differ in their phenotype?" hint="Think about what stays fixed for a cell and what its regulation of protein production is free to change." >}}
+{{< selfcheck question="How can cells have the same genotype but differ in their phenotype?" hint="Reread the paragraph that follows the central dogma figure and the caption of the figure after it." >}}
 Although a cell's genotype remains constant, not all of its genes are used to direct the production of their proteins simultaneously. Cells carefully regulate expression of their genes, only using genes to make specific proteins when those proteins are needed, so the same genotype can produce different phenotypes depending on which genes are being expressed at a given time and under given environmental conditions.
 ===CHECKS===
 a cell's genotype remains constant
@@ -100,10 +100,22 @@ However, as this day quickly approaches, there are many ethical concerns with wh
 
 ### Explain the two functions of the genome
 
+{{< textin
+  question="To preserve the integrity of this genetic information, DNA must be ________ with great accuracy, with minimal errors that introduce changes to the DNA sequence."
+  answer="replicated"
+  hint="Reread the first paragraph of this section."
+>}}
+
+{{< textin
+  question="A genome contains the full complement of DNA within a cell and is organized into smaller, discrete units called genes that are arranged on chromosomes and ________."
+  answer="plasmids"
+  hint="Reread the first paragraph of this section."
+>}}
+
 {{< multiplechoice
   question="DNA does all but which of the following?"
   answer="is read by ribosomes during the process of translation"
-  hint="Distinguish what DNA itself is used for from what happens to messenger RNA once it has been made."
+  hint="Reread the first two paragraphs of this section."
 >}}
 serves as the genetic material passed from parent to offspring
 remains constant despite changes in environmental conditions
@@ -111,24 +123,12 @@ provides the instructions for the synthesis of messenger RNA
 is read by ribosomes during the process of translation
 {{< /multiplechoice >}}
 
-{{< textin
-  question="DNA serves two important cellular functions: it is the ________ passed from parent to offspring, and it directs and regulates the construction of the proteins the cell needs."
-  answer="genetic material"
-  hint="Name what DNA is, as stated at the start of this section's summary."
->}}
-
-{{< textin
-  question="A genome contains the full complement of DNA within a cell and is organized into smaller, discrete units called ________ that are arranged on chromosomes and plasmids."
-  answer="genes"
-  hint="Name the discrete units into which a genome's DNA is organized."
->}}
-
 ### Explain the meaning of the central dogma of molecular biology
 
 {{< multiplechoice
   question="According to the central dogma, which of the following represents the flow of genetic information in cells?"
   answer="DNA to RNA to protein"
-  hint="Follow the two arrows in the central dogma figure above, from genetic material to messenger RNA to protein."
+  hint="Reread the sentence that introduces the central dogma figure, and the figure itself."
 >}}
 protein to DNA to RNA
 DNA to RNA to protein
@@ -139,13 +139,13 @@ DNA to protein to RNA
 {{< textin
   question="The process of making an RNA copy of a gene is called ________."
   answer="transcription"
-  hint="Name the process in which a gene is read to produce messenger RNA from a DNA template."
+  hint="Reread the second paragraph of this section."
 >}}
 
 {{< textin
-  question="The combined processes of transcription and translation are referred to as ________."
+  question="________ is the synthesis of a specific protein with a sequence of amino acids that is encoded in the gene."
   answer="gene expression"
-  hint="Name the term this section uses for the two processes shown together in the central dogma figure."
+  hint="Reread the second paragraph of this section."
 >}}
 
 ### Differentiate between genotype and phenotype and explain how environmental factors influence phenotype
@@ -153,7 +153,7 @@ DNA to protein to RNA
 {{< multiplechoice
   question="Cells are always producing proteins from every gene they possess."
   answer="False"
-  hint="Compare this claim with what the section says about a cell's full collection of genes staying fixed while the proteins it produces change."
+  hint="Reread the paragraph that follows the central dogma figure."
 >}}
 True
 False
@@ -163,10 +163,10 @@ False
   question="A cell's ________ remains constant whereas its phenotype changes in response to environmental influences."
   answer="genotype"
   accept="genome"
-  hint="Name the term for a cell's full collection of genes, which does not change."
+  hint="Reread the paragraph that follows the central dogma figure."
 >}}
 
-{{< selfcheck question="A pure culture of an unknown bacterium was streaked onto plates of a variety of media. You notice that the colony morphology is strikingly different on plates of minimal media with glucose compared to that seen on trypticase soy agar plates. How can you explain these differences in colony morphology?" hint="Think about what changes when a cell's environment changes, even though its full set of genes stays the same." >}}
+{{< selfcheck question="A pure culture of an unknown bacterium was streaked onto plates of a variety of media. You notice that the colony morphology is strikingly different on plates of minimal media with glucose compared to that seen on trypticase soy agar plates. How can you explain these differences in colony morphology?" hint="Reread the paragraph that follows the central dogma figure and the caption of the figure after it." >}}
 Although the bacterium's genotype remains constant on both types of media, its phenotype can differ because cells carefully regulate expression of their genes, only using genes to make specific proteins when those proteins are needed under specific environmental conditions. The different nutrient compositions of minimal glucose medium and trypticase soy agar represent different environmental conditions, so the cells may express different genes and produce different proteins on each medium, resulting in the different colony morphologies observed.
 ===CHECKS===
 the bacterium's genotype remains constant on both types of media
@@ -176,4 +176,4 @@ the different nutrient compositions of minimal glucose medium and trypticase soy
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 11.1: The Functions of Genetic Material](https://openstax.org/books/microbiology/pages/11-1-the-functions-of-genetic-material) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: both source figures re-encoded as WebP and rendered as mediafigures with explicit `kind="diagram"` (the manifest guessed "photo" for both; each is a drawn flow chart, not a photograph), each with a `longdesc` walking its boxes, colors, and arrows in reading order; the source's "Jump to the next Clinical Focus box" link is replaced with a sentence naming where the case continues, in [RNA Transcription](/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/03-rna-transcription/); the Eye on Ethics feature box rendered as a callout with its one footnote rendered as an inline parenthetical citation; the cross-reference to Section 10.1 rendered as a link to its local page; the module's two body Check Your Understanding questions that a single body sentence or definition fixes ("What are the two functions of DNA?" and "Distinguish between the genotype and phenotype of a cell.") are rendered as graded body multiple-choice items, and the third ("How can cells have the same genotype but differ in their phenotype?"), whose honest answer assembles two sentences, remains a body self-check with a model answer and rubric from this section's text; the two source Multiple Choice items, the True/False item (rendered as a two-option multiple choice), and the two Fill in the Blank items are adapted into Practice unchanged; the source's unkeyed Short Answer question ("Can two observably different cells have the same genotype? Explain?") is a reworded repeat of the body Check Your Understanding question above and is not used a second time in Practice, per the life-sciences distinct-item rule; the unkeyed Critical Thinking question about colony morphology on different media remains a self-check, because its answer requires assembling this section's genotype/phenotype/environment sentences and applying them to a scenario the section does not itself describe; three filler items — two cloze `textin`s from this section's summary and body text (the "genetic material" and "genes" blanks) and one term-recall `textin` for "gene expression" — fill the first two Practice groups to the section's three-per-objective floor; key terms compiled from the module's two defined terms, both definitions taken directly from the book's Glossary appendix.</small>
+<small>This section is adapted from [Microbiology, Section 11.1: The Functions of Genetic Material](https://openstax.org/books/microbiology/pages/11-1-the-functions-of-genetic-material) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: both source figures re-encoded as WebP and rendered as mediafigures with explicit `kind="diagram"` (the manifest guessed "photo" for both; each is a drawn flow chart, not a photograph), each with a `longdesc` walking its boxes, colors, and arrows in reading order; the source's "Jump to the next Clinical Focus box" link is replaced with a sentence naming where the case continues, in [RNA Transcription](/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/03-rna-transcription/); the Eye on Ethics feature box rendered as a callout with its one footnote rendered as an inline parenthetical citation; the cross-reference to Section 10.1 rendered as a link to its local page; the module's two body Check Your Understanding questions that a single body sentence or definition fixes ("What are the two functions of DNA?" and "Distinguish between the genotype and phenotype of a cell.") are rendered as graded body multiple-choice items, and the third ("How can cells have the same genotype but differ in their phenotype?"), whose honest answer assembles two sentences, remains a body self-check with a model answer and rubric from this section's text; the two source Multiple Choice items, the True/False item (rendered as a two-option multiple choice), and the two Fill in the Blank items are adapted into Practice unchanged; the source's unkeyed Short Answer question ("Can two observably different cells have the same genotype? Explain.") is a reworded repeat of the body Check Your Understanding question above and is not used a second time in Practice, per the life-sciences distinct-item rule; the unkeyed Critical Thinking question about colony morphology on different media remains a self-check, because its answer requires assembling this section's genotype/phenotype/environment sentences and applying them to a scenario the section does not itself describe; three filler items — two cloze `textin`s from this section's first body paragraph (the "replicated" and "plasmids" blanks, the second blanking the last word of the genome sentence rather than its "genes", which the transcription Fill in the Blank and the gene-expression prompt both print; the "replicated" cloze replaced a Summary "genetic material" cloze that re-asked the body two-functions item and whose key that item's options print) and one term-recall `textin` for "gene expression", prompted by the body's own defining sentence ("Gene expression is the synthesis of a specific protein…") rather than by "the processes of transcription and translation", which would print the key of the transcription Fill in the Blank beside it — fill the first two Practice groups to the section's three-per-objective floor; key terms compiled from the module's two defined terms, both definitions taken directly from the book's Glossary appendix.</small>

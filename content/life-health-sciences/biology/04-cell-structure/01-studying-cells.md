@@ -93,7 +93,7 @@ A cell is the smallest unit of life. Most cells are so tiny that we cannot see t
 {{< multiplechoice
   question="The ________ is the basic unit of life."
   answer="cell"
-  hint="Unified cell theory names this as the smallest living unit — tissues, organs, and organisms all build up from it."
+  hint="Reread the subsection that follows Microscopy."
 >}}
 organism
 cell
@@ -113,15 +113,28 @@ several systems that function together form an organism
 {{< textin
   question="A cell is the ________ unit of life."
   answer="smallest"
-  hint="This is the section's opening sentence, distinct from the cell theory's own \"basic unit of life\" wording."
+  hint="Reread the section's opening sentence."
 >}}
 
 ### Compare and contrast light microscopy and electron microscopy
 
+{{< textin
+  question="Summary: Most cells are so tiny that we cannot see them with the ________. Therefore, scientists use microscopes to study cells."
+  answer="naked eye"
+  hint="Reread the section summary's opening sentences."
+>}}
+
+{{< textin
+  question="Summary: Electron microscopes provide higher magnification, higher ________, and more detail than light microscopes."
+  answer="resolution"
+  accept="resolving power"
+  hint="Reread the third paragraph of Light Microscopes."
+>}}
+
 {{< multiplechoice
   question="When viewing a specimen through a light microscope, scientists use ________ to distinguish the individual components of cells."
   answer="special stains"
-  hint="Staining adds color to otherwise transparent cell components — though it usually kills the cells in the process."
+  hint="Reread the Light Microscopes subsection."
 >}}
 a beam of electrons
 radioactive isotopes
@@ -129,40 +142,28 @@ special stains
 high temperatures
 {{< /multiplechoice >}}
 
-{{< textin
-  question="An instrument that magnifies an object using a beam of visible light that passes and bends through a lens system to visualize a specimen is called a(n) ________."
-  answer="light microscope"
-  hint="Its light beam does not kill the specimen, unlike the electron-based alternative."
->}}
-
-{{< textin
-  question="An instrument that magnifies an object using an electron beam that passes and bends through a lens system to visualize a specimen is called a(n) ________."
-  answer="electron microscope"
-  hint="It requires a vacuum for its electron beam, so it cannot image a living specimen."
->}}
-
-{{< selfcheck question="In your everyday life, you have probably noticed that certain instruments are ideal for certain situations. For example, you would use a spoon rather than a fork to eat soup because a spoon is shaped for scooping, while soup would slip between the tines of a fork. The use of ideal instruments also applies in science. In what situation(s) would the use of a light microscope be ideal, and why?" hint="Light microscopes let you view a living specimen without killing it first." >}}
+{{< selfcheck question="In your everyday life, you have probably noticed that certain instruments are ideal for certain situations. For example, you would use a spoon rather than a fork to eat soup because a spoon is shaped for scooping, while soup would slip between the tines of a fork. The use of ideal instruments also applies in science. In what situation(s) would the use of a light microscope be ideal, and why?" hint="Reread the Light Microscopes subsection." >}}
 A light microscope would be ideal when viewing a small living organism, especially when the cell has been stained to reveal details.
 ===CHECKS===
 ideal when viewing a small living organism
 the cell has been stained to reveal details
 {{< /selfcheck >}}
 
-{{< selfcheck question="In what situation(s) would the use of a scanning electron microscope be ideal, and why?" hint="Think about which kind of electron microscope images a cell's outer surface rather than its interior." >}}
+{{< selfcheck question="In what situation(s) would the use of a scanning electron microscope be ideal, and why?" hint="Reread the Electron Microscopes subsection and the Salmonella figure." >}}
 A scanning electron microscope would be ideal when you want to view the minute details of a cell's surface, because its beam of electrons moves back and forth over the surface to convey the image.
 ===CHECKS===
 ideal when you want to view the minute details of a cell's surface
 its beam of electrons moves back and forth over the surface
 {{< /selfcheck >}}
 
-{{< selfcheck question="In what situation(s) would a transmission electron microscope be ideal, and why?" hint="This type of electron microscope sends its beam all the way through the specimen rather than scanning its surface." >}}
+{{< selfcheck question="In what situation(s) would a transmission electron microscope be ideal, and why?" hint="Reread the Electron Microscopes subsection." >}}
 A transmission electron microscope would be ideal for viewing the cell's internal structures, because many of the internal structures have membranes that are not visible by the light microscope.
 ===CHECKS===
 ideal for viewing the cell's internal structures
 many of the internal structures have membranes that are not visible by the light microscope
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are the advantages and disadvantages of each of these types of microscopes?" hint="Weigh accessibility and the ability to keep the specimen alive against the amount of detail each instrument can reveal." >}}
+{{< selfcheck question="What are the advantages and disadvantages of each of these types of microscopes?" hint="Reread both microscope subsections." >}}
 The advantages of light microscopes are that they are easily obtained, and the light beam does not kill the cells. However, typical light microscopes are somewhat limited in the amount of detail they can reveal. Electron microscopes are ideal because you can view intricate details, but they are bulky and costly, and preparation for the microscopic examination kills the specimen.
 ===CHECKS===
 light microscopes are easily obtained
@@ -173,17 +174,21 @@ preparation for the microscopic examination kills the specimen
 
 ### Summarize cell theory
 
-{{< textin
-  question="The biological concept stating that one or more cells comprise all organisms, the cell is the basic unit of life, and new cells arise from existing cells is called the ________."
-  answer="unified cell theory"
-  accept="cell theory"
-  hint="Schleiden and Schwann proposed it in the late 1830s; Virchow later made important contributions to it."
+{{< multiplechoice
+  question="Which scientist coined the term \"cell\" for the box-like structures he observed when viewing cork tissue through a lens?"
+  answer="Robert Hooke"
+  hint="Reread the second paragraph of Cell Theory."
 >}}
+Antony van Leeuwenhoek
+Matthias Schleiden
+Robert Hooke
+Rudolf Virchow
+{{< /multiplechoice >}}
 
 {{< multiplechoice
   question="According to the unified cell theory, new cells arise from ________."
   answer="existing cells"
-  hint="This is the theory's third tenet — think about where a new cell's material ultimately comes from."
+  hint="Reread the third paragraph of Cell Theory."
 >}}
 spontaneous generation
 existing cells
@@ -191,7 +196,7 @@ non-living matter
 viral infection
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain how the formation of an adult human follows the cell theory." hint="Start from a single fertilized cell and track how every added cell after that arises." >}}
+{{< selfcheck question="Explain how the formation of an adult human follows the cell theory." hint="Reread the cell theory's statement in the third paragraph of Cell Theory." >}}
 The cell theory states that all living things are made of cells, that the cell is the most basic unit of life, and that new cells arise from existing cells. All humans are multicellular organisms whose smallest building blocks are cells. Adult humans begin with the fusion of a male gamete cell with a female gamete cell to form a fertilized egg, a single cell. That cell then divides into two cells, which each divide into two more cells, and so forth, until all the cells of a human embryo are made. As the embryo passes through all the developmental stages to make an adult human, the cells that are added arise from division of existing cells.
 ===CHECKS===
 all living things are made of cells
@@ -203,4 +208,4 @@ the cells that are added arise from division of existing cells
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 4.1: Studying Cells](https://openstax.org/books/biology-2e/pages/4-1-studying-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (all three photographic — two micrographs and one photo of physical instruments — matching the manifest's guess, so none were re-kinded); inline references to figures changed from the source's print numbers ("Figure 4.2a," "Figure 4.3," "Figure 4.4") to "above"/"below" since figures are not numbered here; the two Link to Learning/interactive notes and the Career Connection feature box rendered as callouts with their bold names, the Career Connection's own title set in italics beside the bold name, and its figure kept inside the same callout as in the source; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items (light microscope, electron microscope, unified cell theory) added from the glossary to round out two objective groups with an auto-graded item; because no end-of-section exercise or glossary term addresses the "role of cells in organisms" objective, its group holds the source's "basic unit of life" review question plus one self-check written directly from the section's own cell-tissue-organ-organism paragraph (no new claims), disclosed here since it is not itself a keyed source item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and two summary-derived recall items added, one under each objective the summary sentences reach but the source's own exercises did not fully round out to three items apiece ("smallest unit of life" under the first objective, "new cells arise from existing cells" as a multiple choice under the third).</small>
+<small>This section is adapted from [Biology 2e, Section 4.1: Studying Cells](https://openstax.org/books/biology-2e/pages/4-1-studying-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (all three photographic — two micrographs and one photo of physical instruments — matching the manifest's guess, so none were re-kinded); inline references to figures changed from the source's print numbers ("Figure 4.2a," "Figure 4.3," "Figure 4.4") to "above"/"below" since figures are not numbered here; the two Link to Learning/interactive notes and the Career Connection feature box rendered as callouts with their bold names, the Career Connection's own title set in italics beside the bold name, and its figure kept inside the same callout as in the source; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); one multiple choice written from the Cell Theory subsection's own sentence on Robert Hooke added under the third objective; because no end-of-section exercise or glossary term addresses the "role of cells in organisms" objective, its group holds the source's "basic unit of life" review question plus one self-check written directly from the section's own cell-tissue-organ-organism paragraph (no new claims), disclosed here since it is not itself a keyed source item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and four summary-derived items added where the source's own exercises did not give an objective an auto-graded item or three items ("smallest unit of life" under the first objective; "the naked eye" and "higher resolution" as cloze recall under the second; "new cells arise from existing cells" as a multiple choice under the third).</small>

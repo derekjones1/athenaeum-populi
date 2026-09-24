@@ -85,7 +85,7 @@ All species have evolved a pattern of living, called a life history strategy, in
 {{< multiplechoice
   question="Which of the following is associated with long-term parental care?"
   answer="few offspring"
-  hint="Weigh the energy tradeoff: a parent that spends heavily raising each individual young can only support raising a small number of them at once."
+  hint="Reread the paragraph on mammals such as humans, kangaroos, and pandas."
 >}}
 few offspring
 many offspring
@@ -96,7 +96,7 @@ fecundity
 {{< multiplechoice
   question="Which of the following is associated with the reproductive potential of a species?"
   answer="fecundity"
-  hint="One of these four options names the raw reproductive capacity itself — the maximum output a body could theoretically achieve — rather than a strategy or a specific count of young."
+  hint="Reread the opening sentences of the subsection on parental care."
 >}}
 few offspring
 many offspring
@@ -131,21 +131,10 @@ this increases the likelihood the next generation is well-adapted to its environ
 {{< textin
   question="The allocation of energy resources for body maintenance, reproduction, and parental care is called an organism's ________."
   answer="energy budget"
-  hint="Picture it as an accounting ledger: what comes in from feeding has to be divided among staying alive, growing, and producing the next generation."
+  hint="Reread the section's opening paragraph, which ends with bears building up body fat."
 >}}
 
 ### Explain different life history patterns and how different reproductive strategies affect species’ survival
-
-{{< multiplechoice
-  question="Which of the following is associated with multiple reproductive episodes during a species’ lifetime?"
-  answer="iteroparity"
-  hint="This term describes an animal that can attempt reproduction again in a future season or year, rather than one whose single reproductive event ends its life."
->}}
-semiparity
-iteroparity
-semelparity
-fecundity
-{{< /multiplechoice >}}
 
 {{< textin
   question="A life history strategy characterized by a single reproductive event followed by death is called ________."
@@ -154,11 +143,23 @@ fecundity
 >}}
 
 {{< textin
-  question="A life history strategy characterized by multiple reproductive events during the lifetime of a species is called ________."
-  answer="iteroparity"
-  hint="This pattern matches the pronghorn antelope, which survives its yearly mating season to breed again the following year."
+  question="The pronghorn antelope goes into a seasonal ________ cycle (“heat”): a hormonally induced physiological condition preparing the body for successful mating."
+  answer="estrus"
+  accept="oestrus|estrous|oestrous"
+  hint="Reread the paragraph on the pronghorn antelope and the primates."
 >}}
+
+{{< multiplechoice
+  question="Which of the following is associated with multiple reproductive episodes during a species’ lifetime?"
+  answer="iteroparity"
+  hint="Reread the Single versus Multiple Reproductive Events subsection."
+>}}
+semiparity
+iteroparity
+semelparity
+fecundity
+{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 45.2: Life Histories and Natural Selection](https://openstax.org/books/biology-2e/pages/45-2-life-histories-and-natural-selection) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text kept, except that the life-history figure's alt describes the salmon as lying among rocks after spawning rather than "swimming" (erratum 853) and the mating-ratio table's alt reports the printed ratios (8 ± 5, 15 ± 5) rather than percentages (erratum 854); Figure_45_02_02 (the sperm-depleted/non-depleted mating-ratio table) re-kinded from the manifest's file-extension "photo" guess to "diagram," since it is a rendered data table, not a captured photograph; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/mating_game redirect URL; the "Energy Budgets, Reproductive Costs, and Sexual Selection in *Drosophila*" Evolution Connection rendered as a callout with its own figure kept inside it; its footnote citation (Byrne and Rice, 2006) rendered as a parenthetical after the sentence it supports rather than as a footnote marker; in-text pointers to the shared three-panel figure ("Figure 45.7a," "Figure 45.7b," "Figure 45.7c") replaced with "shown below," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items added from the glossary (life history, energy budget, semelparity, iteroparity), covering four of the section's five glossary terms — fecundity is instead tested by a Review Question multiple choice. Source defects: module `m66688`, exercise `fs-idm109424304` prints the distractor "semiparity" (a garbled misspelling of "semelparity") among its four options; the misspelling is kept as printed rather than corrected, since the exercise's other three options and its printed solution (B, iteroparity) are unaffected and unambiguous.</small>
+<small>This section is adapted from [Biology 2e, Section 45.2: Life Histories and Natural Selection](https://openstax.org/books/biology-2e/pages/45-2-life-histories-and-natural-selection) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text kept, except that the life-history figure's alt describes the salmon as lying among rocks after spawning rather than "swimming" (erratum 853) and the mating-ratio table's alt reports the printed ratios (8 ± 5, 15 ± 5) rather than percentages (erratum 854); Figure_45_02_02 (the sperm-depleted/non-depleted mating-ratio table) re-kinded from the manifest's file-extension "photo" guess to "diagram," since it is a rendered data table, not a captured photograph; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/mating_game redirect URL; the "Energy Budgets, Reproductive Costs, and Sexual Selection in *Drosophila*" Evolution Connection rendered as a callout with its own figure kept inside it; its footnote citation (Byrne and Rice, 2006) rendered as a parenthetical after the sentence it supports rather than as a footnote marker; in-text pointers to the shared three-panel figure ("Figure 45.7a," "Figure 45.7b," "Figure 45.7c") replaced with "shown below," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items added from the glossary (life history, energy budget, semelparity) — fecundity and iteroparity are instead tested by Review Question multiple choices — and one cloze recall item built from the pronghorn antelope sentence (blanking "estrus"; it replaced an iteroparity glossary item that re-asked the iteroparity Review Question directly below it). Source defects: module `m66688`, exercise `fs-idm109424304` prints the distractor "semiparity" (a garbled misspelling of "semelparity") among its four options; the misspelling is kept as printed rather than corrected, since the exercise's other three options and its printed solution (B, iteroparity) are unaffected and unambiguous.</small>

@@ -261,7 +261,7 @@ provides new methods of data analyses and their interpretation. This will
 increase the demand for specialists in both biology and computer science, a
 promising career opportunity.
 
-{{< mediafigure src="biology/Figure_01_01_05-9aa6" kind="diagram" alt="A flow chart of the scientific method, from making an observation to reporting results, with a loop back to a new hypothesis when the current one is not supported." longdesc="Reading top to bottom: make an observation, ask a question, form a hypothesis that answers the question, make a prediction based on the hypothesis, do an experiment to test the prediction, and analyze the results. The results branch two ways. If the hypothesis is supported, the flow proceeds to report results. If the hypothesis is not supported, an arrow labeled \"Try again…\" loops back to forming a new hypothesis, which again leads to a prediction, an experiment, and analyzed results, ending either way at reporting results." >}}
+{{< mediafigure src="biology/Figure_01_01_05-9aa6" kind="diagram" alt="A flow chart of the scientific method, from making an observation to reporting results, with a loop back to a new hypothesis when the current one is not supported." longdesc="Reading top to bottom: make an observation, ask a question, form a hypothesis that answers the question, make a prediction based on the hypothesis, do an experiment to test the prediction, and analyze the results. The results branch two ways. If the hypothesis is supported, the flow proceeds to report results. If the hypothesis is not supported, one arrow leads to report results and another leads up to a box labeled \"Try again…\", which points back to forming a hypothesis; the new hypothesis again leads to a prediction, an experiment, and analyzed results." >}}
 The scientific method consists of a series of well-defined steps. If a
 hypothesis is not supported by experimental data, one can propose a new
 hypothesis.
@@ -295,7 +295,7 @@ the original hypothesis is incorrect
 the toaster itself might be broken, or the toaster was not turned on
 {{< /selfcheck >}}
 
-{{< mediafigure src="biology/Figure_01_01_09new" alt="A two-column diagram comparing inductive and deductive reasoning, each illustrated with a worked example about adaptation to a warming climate." longdesc="Inductive reasoning column: three observations — members of a species are not all the same; individuals compete for resources; species are generally adapted to their environment — lead to the conclusion that individuals most adapted to their environment are more likely to survive and pass their traits on to the next generation. Deductive reasoning column: from the general premise that individuals most adapted to their environment are more likely to survive and pass their traits on to the next generation, the diagram predicts that if global climate change raises an ecosystem's temperature, individuals better adapted to a warmer climate will outcompete those that are not." >}}
+{{< mediafigure src="biology/Figure_01_01_09new" alt="A two-column diagram comparing inductive and deductive reasoning, each illustrated with a worked example about adaptation." longdesc="Title: Two Types of Reasoning. Inductive reasoning column, headed \"from a number of observations, a general conclusion is drawn\": three observations — members of a species are not all the same; individuals compete for resources; species are generally adapted to their environment — lead to the conclusion that individuals most adapted to their environment are more likely to survive and pass their traits on to the next generation. Deductive reasoning column, headed \"from a general premise, specific results are predicted\": from the general premise that individuals most adapted to their environment are more likely to survive and pass their traits on to the next generation, the diagram predicts that if global climate change raises an ecosystem's temperature, individuals better adapted to a warmer climate will outcompete those that are not." >}}
 Scientists use two types of reasoning, inductive and deductive reasoning, to
 advance scientific knowledge. As is the case in this example, the
 conclusion from inductive reasoning can often become the premise for
@@ -636,7 +636,7 @@ time.
 {{< multiplechoice
   question="The first forms of life on Earth were ________."
   answer="microorganisms"
-  hint="Complex life could not survive Earth's earliest, harshest conditions — think about which organisms are simplest and hardiest."
+  hint="Reread the caption of the opening cyanobacteria and stromatolite photos."
 >}}
 plants
 microorganisms
@@ -647,7 +647,7 @@ dinosaurs
 {{< multiplechoice
   question="Which of the following sciences is not considered a natural science?"
   answer="computer science"
-  hint="Natural sciences study the physical world and its phenomena — ask which option instead studies computation and information."
+  hint="Reread the opening paragraph of the Natural Sciences subsection."
 >}}
 biology
 astronomy
@@ -655,7 +655,7 @@ physics
 computer science
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Name two topics that are likely to be studied by biologists, and two areas of scientific study that would fall outside the realm of biology." hint="Biology is the study of life, so ask which topics involve living things and which involve only nonliving matter or processes." >}}
+{{< selfcheck question="Name two topics that are likely to be studied by biologists, and two areas of scientific study that would fall outside the realm of biology." hint="Reread the Natural Sciences subsection where it divides the natural sciences into two groups." >}}
 Answers will vary. Topics inside the area of biological study could include
 how diseases affect human bodies, how pollution impacts a species' habitat,
 or how plants respond to their environments. Topics outside of biology (the
@@ -674,7 +674,7 @@ how planetary orbits function
 {{< multiplechoice
   question="A suggested and testable explanation for an event is called a ________."
   answer="hypothesis"
-  hint="It is proposed before an experiment runs, and the experiment's results can disprove it."
+  hint="Reread the second paragraph of The Process of Science."
 >}}
 hypothesis
 variable
@@ -685,7 +685,7 @@ control
 {{< multiplechoice
   question="The process of ________ helps to ensure that a scientist's research is original, significant, logical, and thorough."
   answer="peer review"
-  hint="Ask who checks a scientist's work for quality before it is published, rather than the act of publishing itself."
+  hint="Reread the first paragraph of Reporting Scientific Work."
 >}}
 publication
 public speaking
@@ -709,10 +709,17 @@ the hypothesis is accepted
 
 ### Compare inductive reasoning with deductive reasoning
 
+{{< textin
+  question="The form of science that aims to observe, explore, and discover is called ________ science."
+  answer="descriptive"
+  accept="descriptive science|discovery|discovery science"
+  hint="Reread the last paragraph of the Scientific Reasoning subsection."
+>}}
+
 {{< multiplechoice
   question="The type of logical thinking that uses related observations to arrive at a general conclusion is called ________."
   answer="inductive reasoning"
-  hint="This reasoning moves from many specific observations toward one general conclusion."
+  hint="Reread the two definitions in the Scientific Reasoning subsection."
 >}}
 deductive reasoning
 the scientific method
@@ -723,7 +730,7 @@ inductive reasoning
 {{< multiplechoice
   question="A person notices that her houseplants that are regularly exposed to music seem to grow more quickly than those in rooms with no music. As a result, she determines that plants grow better when exposed to music. This example most closely resembles which type of reasoning?"
   answer="inductive reasoning"
-  hint="A specific set of observations leads to one general conclusion, rather than a general principle predicting one specific result."
+  hint="Compare the example with the brain-studies and climate-change examples in the Scientific Reasoning subsection."
 >}}
 inductive reasoning
 deductive reasoning
@@ -731,16 +738,15 @@ neither, because no hypothesis was made
 both inductive and deductive reasoning
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Reasoning that starts from a general principle or law and uses it to predict a specific result is called ________ reasoning."
-  answer="deductive"
-  accept="deductive reasoning"
-  hint="This is the opposite direction of reasoning from a set of observations toward one general conclusion."
->}}
-
 ### Describe the goals of basic science and applied science
 
-{{< selfcheck question="Give an example of how applied science has had a direct effect on your daily life." hint="Applied science solves real-world problems — think of a technology or treatment you use that came from solving one." >}}
+{{< textin
+  question="A discovery made by means of a fortunate accident or a lucky surprise, as with Fleming's penicillin, is said to be made by ________."
+  answer="serendipity"
+  hint="Reread the last paragraph of Two Types of Science."
+>}}
+
+{{< selfcheck question="Give an example of how applied science has had a direct effect on your daily life." hint="Reread the examples of applied science in the Two Types of Science section." >}}
 Answers will vary. One example is the availability of vaccines: vaccines to
 prevent diseases such as polio, measles, tetanus, and influenza affect
 daily life by contributing to individual and societal health.
@@ -751,7 +757,7 @@ affect daily life
 contributing to individual and societal health
 {{< /selfcheck >}}
 
-{{< selfcheck question="Thinking about the topic of cancer, write a basic science question and an applied science question that a researcher interested in this topic might ask." hint="A basic science question seeks understanding for its own sake; an applied science question seeks a solution to a practical problem." >}}
+{{< selfcheck question="Thinking about the topic of cancer, write a basic science question and an applied science question that a researcher interested in this topic might ask." hint="Reread the two definitions at the start of Two Types of Science." >}}
 Answers will vary. Basic science: what evolutionary purpose might cancer
 serve? Applied science: what strategies might be found to prevent cancer
 from reproducing at the cellular level?
@@ -760,13 +766,6 @@ Basic science: what evolutionary purpose might cancer serve
 Applied science: what strategies might be found to prevent cancer from reproducing at the cellular level
 {{< /selfcheck >}}
 
-{{< textin
-  question="Improving crop yields, finding cures for disease, and rehabilitating storm-displaced wildlife are all goals of this type of science, which aims to solve real-world problems."
-  answer="applied science"
-  accept="applied"
-  hint="Contrast this with the type of science that seeks knowledge for its own sake."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 1.1: The Science of Biology](https://openstax.org/books/biology-2e/pages/1-1-the-science-of-biology) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the source alt text edited for the cyanobacteria/stromatolite, E. coli, Francis Bacon, and squirrel photos to describe what is visually shown rather than restate the caption or use a bare "photo depicts" phrase, and a corrected spelling ("stromatolites"); the cyanobacteria photo's alt describes five colonies of many small cells, each colony roughly 15 to 20 microns across by the printed 25-micron scale bar, because the source alt's "each algae cell is about 5 microns across" does not match the image (erratum 833); a longer extended description added for the scientific-method flow chart and the inductive/deductive reasoning diagram, both diagrams whose full reading is not carried by their captions; inline references to figures changed from the source's parenthetical figure pointers to descriptive phrases ("see the diagram below") since figures are not numbered here; the source's embedded visual-connection note and its separately printed Visual Connection Question were combined into one on-page item — the matching table kept as a Markdown table in the body, immediately followed by a self-check with the source's answer as the model response — for each of the two visual connections; an unbalanced parenthesis in the Human Genome Project figure's credit line corrected, and its embedded link kept as a Markdown link; double-hyphen dashes normalized to em dashes; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block, sorted under the objective each supports; and two key-term recall items (deductive reasoning, applied science) added from the glossary to round out thin objective groups; and rubric checkpoints added to each of the section's six self-checks — the two body self-checks that follow the toaster-matching table and the inductive/deductive-reasoning diagram, and the four in the closing Practice block — decomposing each model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 1.1: The Science of Biology](https://openstax.org/books/biology-2e/pages/1-1-the-science-of-biology) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the source alt text edited for the cyanobacteria/stromatolite, E. coli, Francis Bacon, and squirrel photos to describe what is visually shown rather than restate the caption or use a bare "photo depicts" phrase, and a corrected spelling ("stromatolites"); the cyanobacteria photo's alt describes five colonies of many small cells, each colony roughly 15 to 20 microns across by the printed 25-micron scale bar, because the source alt's "each algae cell is about 5 microns across" does not match the image (erratum 833); a longer extended description added for the scientific-method flow chart and the inductive/deductive reasoning diagram, both diagrams whose full reading is not carried by their captions; inline references to figures changed from the source's parenthetical figure pointers to descriptive phrases ("see the diagram below") since figures are not numbered here; the source's embedded visual-connection note and its separately printed Visual Connection Question were combined into one on-page item — the matching table kept as a Markdown table in the body, immediately followed by a self-check with the source's answer as the model response — for each of the two visual connections; an unbalanced parenthesis in the Human Genome Project figure's credit line corrected, and its embedded link kept as a Markdown link; double-hyphen dashes normalized to em dashes; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block, sorted under the objective each supports; and two key-term recall items (descriptive science, serendipity) added from the glossary to round out thin objective groups; and rubric checkpoints added to each of the section's six self-checks — the two body self-checks that follow the toaster-matching table and the inductive/deductive-reasoning diagram, and the four in the closing Practice block — decomposing each model answer (the source solution) into check-off clauses with no new claims.</small>

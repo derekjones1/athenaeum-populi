@@ -39,9 +39,9 @@ Monosaccharides of four or more carbon atoms are typically more stable when they
   hint="Look at the sentence introducing ring structures, just before the example of glucose forming a six-membered ring."
 >}}
 They are more stable as cyclic (ring) structures than as open, linear chains.
-Ring formation increases the number of carbons in the molecule.
-Rings dissolve less easily in water than open chains do.
-The carbonyl group reacts with the hydroxyl group on the adjacent carbon.
+They are the building blocks (monomers) for the synthesis of polymers.
+They are not sweet and, in general, not soluble in water.
+They are classified based on the number of carbons in the molecule.
 {{< /multiplechoice >}}
 
 ## Disaccharides
@@ -64,13 +64,13 @@ Polysaccharides are very diverse in their structure. Three of the most biologica
 
 Modified glucose molecules can be fundamental components of other structural polysaccharides. Examples of these types of structural polysaccharides are N-acetyl glucosamine (NAG) and N-acetyl muramic acid (NAM) found in bacterial cell wall peptidoglycan. Polymers of NAG form chitin, which is found in fungal cell walls and in the exoskeleton of insects.
 
-{{< mediafigure src="microbiology/OSC_Microbio_07_02_polysacch" alt="Two branching diagrams of chains of hexagons represent the glucose polymers amylose (a straight chain) and amylopectin (a branching chain), which together make up starch; a more highly branching chain of hexagons represents glycogen; and many rows of hexagons linked into a flat lattice represent cellulose fiber. Below, micrographs show starch granules resembling round bubbles, glycogen granules resembling ovals inside a cell, and cellulose fibers resembling long strands." longdesc="Top row, left to right: amylose, a single unbranched chain of linked glucose hexagons, and amylopectin, a branching chain of the same hexagons, together forming starch; glycogen, an even more densely branched chain of hexagons; and cellulose (fiber), many parallel rows of hexagons cross-linked into a flat, grid-like sheet. Bottom row: a light micrograph of wheat starch granules appearing as round, bubble-like bodies; an electron micrograph of a cyanobacterial cell containing oval glycogen granules; and an electron micrograph of tangled, thread-like bacterial cellulose fibers with a 0.2 µm scale bar." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_07_02_polysacch" alt="Two diagrams of chains of hexagons represent the glucose polymers amylose (a straight chain) and amylopectin (a branching chain), which together make up starch; a more highly branching chain of hexagons represents glycogen; and many rows of hexagons linked into a flat lattice represent cellulose fiber. Below, micrographs show starch granules resembling round bubbles, glycogen granules resembling ovals inside a cell, and cellulose fibers resembling long strands." longdesc="Top row, left to right: amylose, a single unbranched chain of linked glucose hexagons, and amylopectin, a branching chain of the same hexagons, together forming starch; glycogen, an even more densely branched chain of hexagons; and cellulose (fiber), many parallel rows of hexagons cross-linked into a flat, grid-like sheet. Bottom row: a light micrograph of wheat starch granules appearing as round, bubble-like bodies; an electron micrograph of a cyanobacterial cell containing oval glycogen granules; and an electron micrograph of tangled, thread-like bacterial cellulose fibers with a 0.2 µm scale bar." kind="diagram" >}}
 Starch, glycogen, and cellulose are three of the most important polysaccharides. In the top row, hexagons represent individual glucose molecules. Micrographs (bottom row) show wheat starch granules stained with iodine (left), glycogen granules (G) inside the cell of a cyanobacterium (middle), and bacterial cellulose fibers (right). (credit “iodine granules”: modification of work by Kiselov Yuri; credit “glycogen granules”: modification of work by Stöckel J, Elvitigala TR, Liberton M, Pakrasi HB; credit “cellulose”: modification of work by American Society for Microbiology)
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are the most biologically important polysaccharides and why are they important?" hint="Name the three polysaccharides the module calls most biologically important, then separate their structural role from their storage role." >}}
+{{< selfcheck question="What are the most biologically important polysaccharides and why are they important?" hint="Reread the second paragraph of the Polysaccharides subsection." >}}
 Three of the most biologically important polysaccharides are starch, glycogen, and cellulose, all composed of repetitive glucose units, although they differ in structure. Cellulose consists of a linear chain of glucose molecules and is a common structural component of cell walls in plants and other organisms. Glycogen and starch are branched polymers; glycogen is the primary energy-storage molecule in animals and bacteria, whereas plants primarily store energy in starch.
 ===CHECKS===
 starch, glycogen, and cellulose ... are all composed of repetitive glucose units
@@ -106,7 +106,7 @@ plants primarily store energy in starch
 {{< multiplechoice
   question="By definition, carbohydrates contain which elements?"
   answer="carbon, hydrogen, and oxygen"
-  hint="Read the sentence naming which elements every carbohydrate always contains, even though a few also carry nitrogen, phosphorus, or sulfur."
+  hint="Reread the section's opening paragraph, before the first subheading."
 >}}
 carbon and hydrogen
 carbon, hydrogen, and nitrogen
@@ -129,7 +129,7 @@ Structural formulas of glucose, galactose, and fructose, drawn atom by atom to s
 {{< multiplechoice
   question="Based on the position of its carbonyl group, is glucose an aldose or a ketose?"
   answer="aldose"
-  hint="An aldose carries its carbonyl group at a terminal carbon; find where glucose's double-bonded oxygen sits."
+  hint="Compare glucose in the figure above with the monosaccharide classification figure in the Monosaccharides subsection."
 >}}
 aldose
 ketose
@@ -138,7 +138,7 @@ ketose
 {{< multiplechoice
   question="Based on the position of its carbonyl group, is galactose an aldose or a ketose?"
   answer="aldose"
-  hint="Galactose's double-bonded oxygen sits at the same carbon as glucose's."
+  hint="Compare galactose in the figure above with the monosaccharide classification figure in the Monosaccharides subsection."
 >}}
 ketose
 aldose
@@ -147,20 +147,28 @@ aldose
 {{< multiplechoice
   question="Based on the position of its carbonyl group, is fructose an aldose or a ketose?"
   answer="ketose"
-  hint="A ketose carries its carbonyl group at an internal carbon, not a terminal one."
+  hint="Compare fructose in the figure above with the monosaccharide classification figure in the Monosaccharides subsection."
 >}}
 aldose
 ketose
 {{< /multiplechoice >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_07_02_artCon4_img" alt="A chain of 5 carbons. Carbon 1 has a double-bonded O and an H. Carbons 2, 3, and 4 each have an OH above the chain and an H below. Carbon 5 has an OH and 2 Hs. The second image is a pentagon: the top point is an O, moving clockwise the next 3 points are each attached to an OH and an H, and the last point is attached to an H and a CH2OH." kind="diagram" >}}
+{{< selfcheck question="The chemical formula of these compounds (glucose, galactose, and fructose, shown above) is the same, although the structural formula is different. What are such compounds called?" hint="This section never names them; reread the isomerism subsection of the previous section." >}}
+They are isomers: molecules with the same atomic makeup but a different structural arrangement of atoms. Because glucose, galactose, and fructose share the molecular formula C₆H₁₂O₆ but differ in the bonding sequence of their atoms, they are structural isomers, as the previous section, [Organic Molecules](/life-health-sciences/microbiology/07-microbial-biochemistry/01-organic-molecules/), explains with these same three sugars.
+===CHECKS===
+isomers: molecules with the same atomic makeup but a different structural arrangement of atoms
+share the molecular formula C₆H₁₂O₆ but differ in the bonding sequence of their atoms
+structural isomers
+{{< /selfcheck >}}
+
+{{< mediafigure src="microbiology/OSC_Microbio_07_02_artCon4_img" alt="A chain of 5 carbons. Carbon 1 has a double-bonded O and an H. Carbons 2, 3, and 4 each have an OH above the chain and an H below. Carbon 5 has an OH and 2 Hs. The second image is a pentagon: the top point is an O, moving clockwise the next 3 points are each attached to an OH and an H, and the last point is attached to an H and a CH₂OH." kind="diagram" >}}
 The linear and cyclic (ring) forms of a single monosaccharide, drawn atom by atom.
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Counting the carbon, hydrogen, and oxygen atoms in the linear structure shown, what is this monosaccharide's molecular formula?"
   answer="C₅H₁₀O₅"
-  hint="Count the carbons in the chain, then apply the empirical carbohydrate formula (CH₂O)ₙ."
+  hint="Count each kind of atom in the linear structure, and check the result against the section's opening paragraph."
 >}}
 C₄H₈O₄
 C₆H₁₂O₆
@@ -170,19 +178,27 @@ C₅H₁₀O₅
 {{< multiplechoice
   question="In the linear structure shown, which hydroxyl group reacts with the carbonyl carbon to close the ring drawn beside it?"
   answer="the hydroxyl group on carbon 4"
-  hint="Compare the linear chain to the ring: the module says the carbonyl group reacts with 'a relatively distant hydroxyl group,' and the ring in the picture has five members."
+  hint="Compare the linear chain with the ring beside it, and reread the ring-structure paragraph of the Monosaccharides subsection."
 >}}
 the hydroxyl group on carbon 2
 the hydroxyl group on carbon 3
 the hydroxyl group on carbon 4
 {{< /multiplechoice >}}
 
+{{< selfcheck question="The term “dextrose” is commonly used in medical settings when referring to the biologically relevant isomer of the monosaccharide glucose. Explain the logic of this alternative name." hint="This section never discusses dextrose; reread the optical-isomer paragraph of the previous section." >}}
+Glucose, like other chiral molecules, exists as two enantiomers, or optical isomers, that rotate plane-polarized light in opposite directions. The previous section, [Organic Molecules](/life-health-sciences/microbiology/07-microbial-biochemistry/01-organic-molecules/), explains that the form rotating light clockwise (+) is labeled the *d* form, from the Latin *dexter* (on the right), and its mirror image the *l* form, from *laevus* (on the left). “Dextrose” carries that same root: it names the *d* form of glucose, the isomer that is biologically relevant.
+===CHECKS===
+exists as two enantiomers, or optical isomers
+the form rotating light clockwise (+) is labeled the *d* form, from the Latin *dexter* (on the right)
+it names the *d* form of glucose, the isomer that is biologically relevant
+{{< /selfcheck >}}
+
 ### Describe the function of monosaccharides and polysaccharides within a cell
 
 {{< multiplechoice
   question="Monosaccharides may link together to form polysaccharides by forming which type of bond?"
   answer="glycosidic"
-  hint="Identify the name given to the covalent bond formed between two monosaccharides."
+  hint="Reread the first paragraph of the Disaccharides subsection."
 >}}
 hydrogen
 peptide
@@ -193,7 +209,7 @@ glycosidic
 {{< multiplechoice
   question="Which polysaccharide is a structural polymer found in cell walls of fungi and exoskeletons of some animals?"
   answer="chitin"
-  hint="This polysaccharide is built from polymers of NAG, described alongside NAM in the Polysaccharides section."
+  hint="Reread the third paragraph of the Polysaccharides subsection."
 >}}
 chitin
 glycogen
@@ -204,7 +220,7 @@ cellulose
 {{< multiplechoice
   question="Which polysaccharide is an energy-storage polymer found in animal cells and bacteria?"
   answer="glycogen"
-  hint="Of the two energy-storage polysaccharides named in this section, one belongs to plants and the other to animals and bacteria."
+  hint="Reread the second paragraph of the Polysaccharides subsection."
 >}}
 chitin
 glycogen
@@ -215,7 +231,7 @@ cellulose
 {{< multiplechoice
   question="Which polysaccharide is an energy-storage polymer in plants?"
   answer="starch"
-  hint="Of the two energy-storage polysaccharides named in this section, one belongs to animals and bacteria and the other to plants."
+  hint="Reread the second paragraph of the Polysaccharides subsection."
 >}}
 chitin
 glycogen
@@ -226,7 +242,7 @@ cellulose
 {{< multiplechoice
   question="Which polysaccharide is a structural polymer found in plants?"
   answer="cellulose"
-  hint="This polysaccharide forms a linear chain of glucose molecules in plant cell walls."
+  hint="Reread the second paragraph of the Polysaccharides subsection."
 >}}
 chitin
 glycogen
@@ -236,4 +252,4 @@ cellulose
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 7.2: Carbohydrates](https://openstax.org/books/microbiology/pages/7-2-carbohydrates) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all six source figures re-encoded as WebP and rendered as mediafigures, all given explicit `kind="diagram"` after image inspection (the manifest guessed "photo" for all six, wrongly, because every source file is a JPEG; the polysaccharide figure is a composite of drawn diagrams above micrographs and is classified `diagram` because its top row is drawn art); the polysaccharide figure's source alt was corrected — it read "Amylose is a chain of hexagons. Starch is a branching chain of hexagons," but the image draws amylose (linear) and amylopectin (branching) as the two glucose polymers that together make up starch, so the alt is rewritten and a `longdesc` walks all three panels and their micrographs; the disaccharide-bond `<equation>` is rendered as plain Unicode text with an arrow, its underbrace label "disaccharide" rendered as a trailing parenthetical since plain text cannot draw an underbrace; the "described in the previous section of this chapter" cross-reference is linked to [Organic Molecules](/life-health-sciences/microbiology/07-microbial-biochemistry/01-organic-molecules/); four same-module figure cross-references are rendered as "(shown below)"; the two source Multiple Choice items and the one source Matching item (keyed C, D, A, B) are adapted into Practice — the Matching item becomes four multiple-choice items, one per polysaccharide, each offering all four polysaccharides as options in the table's own order, so the correct option's position varies row to row on its own; the module's two Check Your Understanding questions become one body multiple-choice (the ring-stability question, graded from one sentence) and one body self-check (the "most biologically important polysaccharides" question, whose honest answer assembles several sentences); of the section's three Critical Thinking questions and one Short Answer question, the unkeyed Short Answer ("What are monosaccharides, disaccharides, and polysaccharides?") stays a self-check whose model answer and rubric are assembled from this module's own definitions; the aldose/ketose Critical Thinking question's part (a) is graded as three multiple-choice items (one per sugar), keyed from the position of the carbonyl group visible in the image and from this module's own monosaccharide figure, which defines aldose and ketose by that same position; its part (b) ("What are such compounds called?") is omitted because the answer, *isomers*, is a term this module never uses (it is defined only in Section 7.1); the linear/cyclic Critical Thinking question is graded as two multiple-choice items — the molecular formula from counting the image's atoms against this module's own empirical formula (CH₂O)ₙ, and the ring-closing hydroxyl group from the image together with the module's "a relatively distant hydroxyl group" sentence; the third Critical Thinking question (about the term "dextrose") is omitted entirely because this module never discusses dextrose or biologically relevant isomers and gives nothing to answer it with; the two Critical-Thinking figures carry author-written captions, since the source prints none, describing only what each image shows; key terms compiled from the module's nine defined terms and the book's Glossary appendix, all nine definitions taken directly from the Glossary. No source exercise item is otherwise omitted.</small>
+<small>This section is adapted from [Microbiology, Section 7.2: Carbohydrates](https://openstax.org/books/microbiology/pages/7-2-carbohydrates) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all six source figures re-encoded as WebP and rendered as mediafigures, all given explicit `kind="diagram"` after image inspection (the manifest guessed "photo" for all six, wrongly, because every source file is a JPEG; the polysaccharide figure is a composite of drawn diagrams above micrographs and is classified `diagram` because its top row is drawn art); the polysaccharide figure's source alt was corrected — it read "Amylose is a chain of hexagons. Starch is a branching chain of hexagons," but the image draws amylose (linear) and amylopectin (branching) as the two glucose polymers that together make up starch, so the alt is rewritten and a `longdesc` walks all three panels and their micrographs; the disaccharide-bond `<equation>` is rendered as plain Unicode text with an arrow, its underbrace label "disaccharide" rendered as a trailing parenthetical since plain text cannot draw an underbrace; the "described in the previous section of this chapter" cross-reference is linked to [Organic Molecules](/life-health-sciences/microbiology/07-microbial-biochemistry/01-organic-molecules/); four same-module figure cross-references are rendered as "(shown below)"; the two source Multiple Choice items and the one source Matching item (keyed C, D, A, B) are adapted into Practice — the Matching item becomes four multiple-choice items, one per polysaccharide, each offering all four polysaccharides as options in the table's own order, so the correct option's position varies row to row on its own; the module's two Check Your Understanding questions become one body multiple-choice (the ring-stability question, graded from one sentence) and one body self-check (the "most biologically important polysaccharides" question, whose honest answer assembles several sentences); of the section's three Critical Thinking questions and one Short Answer question, the unkeyed Short Answer ("What are monosaccharides, disaccharides, and polysaccharides?") stays a self-check whose model answer and rubric are assembled from this module's own definitions; the aldose/ketose Critical Thinking question's part (a) is graded as three multiple-choice items (one per sugar), keyed from the position of the carbonyl group visible in the image and from this module's own monosaccharide figure, which defines aldose and ketose by that same position; its part (b) is rendered as a self-check placed right after those three items, its stem gaining the referent "(glucose, galactose, and fructose, shown above)" for "these compounds", because the answer, *isomers*, is a term this module never uses; the model answer draws on the previous section, Organic Molecules, which defines isomers with these three sugars, and links to it; the linear/cyclic Critical Thinking question is graded as two multiple-choice items — the molecular formula from counting the image's atoms against this module's own empirical formula (CH₂O)ₙ, and the ring-closing hydroxyl group from the image together with the module's "a relatively distant hydroxyl group" sentence; the third Critical Thinking question (about the term "dextrose") is rendered as a self-check in its source position, after the linear/cyclic items, because this module never discusses dextrose; its model answer draws on the previous section's account of *d* and *l* optical isomers and links to it; the two Critical-Thinking figures carry author-written captions, since the source prints none, describing only what each image shows; key terms compiled from the module's nine defined terms and the book's Glossary appendix, all nine definitions taken directly from the Glossary. No source exercise item is otherwise omitted.</small>

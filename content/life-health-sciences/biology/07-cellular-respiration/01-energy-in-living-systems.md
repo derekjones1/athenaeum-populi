@@ -52,7 +52,7 @@ When ATP is broken down, usually by the removal of its terminal phosphate group,
 
 At the heart of ATP is a molecule of adenosine monophosphate (AMP), which is composed of an adenine molecule bonded to a ribose molecule and to a single phosphate group (below). Ribose is a five-carbon sugar found in RNA, and AMP is one of the nucleotides in RNA. The addition of a second phosphate group to this core molecule results in the formation of adenosine *di*phosphate (ADP); the addition of a third phosphate group forms adenosine *tri*phosphate (ATP).
 
-{{< mediafigure src="biology/Figure_07_01_02" kind="diagram" alt="The molecular structure of ATP: an adenine ring joined to a ribose sugar, joined in turn to a chain of three phosphate groups labeled alpha, beta, and gamma." longdesc="An adenine ring (fused five- and six-membered rings with an NH₂ group and three ring nitrogens) at upper right, bonded to a five-membered ribose sugar bearing two OH groups at lower right, labeled Ribose. The ribose is bonded on its left to a chain of three phosphate groups in a row, each drawn as a phosphorus atom double-bonded to one oxygen above and single-bonded to a negatively charged oxygen below, with the chain linked oxygen-to-phosphorus; the outermost gamma phosphate carries a second negatively charged oxygen at the chain's free end. The three phosphates are labeled, nearest the ribose outward, Alpha phosphate group, Beta phosphate group, and Gamma phosphate group." >}}
+{{< mediafigure src="biology/Figure_07_01_02" kind="diagram" alt="The molecular structure of ATP: an adenine ring joined to a ribose sugar, joined in turn to a chain of three phosphate groups labeled alpha, beta, and gamma." longdesc="An adenine ring (fused five- and six-membered rings with an NH₂ group and four ring nitrogens) at upper right, bonded to a five-membered ribose sugar bearing two OH groups at lower right, labeled Ribose. The ribose is bonded on its left to a chain of three phosphate groups in a row, each drawn as a phosphorus atom double-bonded to one oxygen above and single-bonded to a negatively charged oxygen below, with the chain linked oxygen-to-phosphorus; the outermost gamma phosphate carries a second negatively charged oxygen at the chain's free end. The three phosphates are labeled, nearest the ribose outward, Alpha phosphate group, Beta phosphate group, and Gamma phosphate group." >}}
 ATP (adenosine triphosphate) has three phosphate groups that can be removed by hydrolysis (addition of H₂O) to form ADP (adenosine diphosphate) or AMP (adenosine monophosphate). The negative charges on the phosphate group naturally repel each other, requiring energy to bond them together and releasing energy when these bonds are broken.
 {{< /mediafigure >}}
 
@@ -84,7 +84,7 @@ In phosphorylation reactions, the gamma (third) phosphate of ATP is attached to 
 
 Most of the ATP generated during glucose catabolism, however, is derived from a much more complex process, chemiosmosis, which takes place in mitochondria (below) within a eukaryotic cell or the plasma membrane of a prokaryotic cell. **Chemiosmosis**, a process of ATP production in cellular metabolism, is used to generate 90 percent of the ATP made during glucose catabolism and is also the method used in the light reactions of photosynthesis to harness the energy of sunlight. The production of ATP using the process of chemiosmosis is called **oxidative phosphorylation** because of the involvement of oxygen in the process.
 
-{{< mediafigure src="biology/Figure_07_01_04-30c9" kind="diagram" alt="A cutaway illustration of a mitochondrion, labeling the outer membrane, inner membrane, cristae, intermembrane space, and matrix, with ATP synthase and the electron transport chain embedded in the inner membrane." longdesc="A bean-shaped mitochondrion drawn in cross-section. A tan outer membrane surrounds a red inner membrane, which folds inward repeatedly to form finger-like ridges labeled Cristae. The narrow tan-colored gap between the outer and inner membranes is labeled Intermembrane space. The blue-green interior enclosed by the folded inner membrane is labeled Matrix, and contains scattered small colored shapes representing enzymes and metabolites. Along the inner membrane, small embedded protein shapes are labeled ATP synthase enzymes and the electron transport chain are embedded in the inner membrane, with leader lines pointing to several of the ridge surfaces." >}}
+{{< mediafigure src="biology/Figure_07_01_04-30c9" kind="diagram" alt="A cutaway illustration of a mitochondrion, labeling the outer membrane, inner membrane, cristae, intermembrane space, and matrix, with ATP synthase and the electron transport chain embedded in the inner membrane." longdesc="A bean-shaped mitochondrion drawn with its near half cut away. Its tan outer surface is the outer membrane, whose cut edge is outlined in red. Inside, a yellow-outlined inner membrane folds inward repeatedly to form finger-like ridges labeled Cristae. The narrow dark reddish-brown gap between the outer and inner membranes is labeled Intermembrane space. The blue-green interior enclosed by the folded inner membrane is labeled Matrix, and contains scattered small colored shapes representing enzymes and metabolites. A label at top reads ATP synthase enzymes and the electron transport chain are embedded in the inner membrane, with two leader lines pointing to the yellow inner-membrane edges of two ridges; leader lines at lower right mark the Inner membrane and the Outer membrane." >}}
 In eukaryotes, oxidative phosphorylation takes place in mitochondria. In prokaryotes, this process takes place in the plasma membrane. (Credit: modification of work by Mariana Ruiz Villareal)
 {{< /mediafigure >}}
 
@@ -112,7 +112,7 @@ ATP functions as the energy currency for cells. It allows the cell to store ener
 {{< multiplechoice
   question="A reducing chemical reaction ________."
   answer="adds an electron to the substrate"
-  hint="Reduction is what happens to the compound that gains the electron a reducing agent gives up."
+  hint="Reread the Electron Carriers paragraph on reducing and oxidizing agents."
 >}}
 reduces the compound to a simpler form
 adds an electron to the substrate
@@ -123,14 +123,15 @@ is a catabolic reaction
 {{< textin
   question="A chemical reaction that consists of the coupling of an oxidation reaction and a reduction reaction is called a(n) ________ reaction."
   answer="redox"
-  hint="The name blends the two halves of the coupled reaction: reduction and oxidation."
+  accept="redox reaction|oxidation-reduction|oxidation-reduction reaction"
+  hint="Reread the section's opening paragraph, before Electrons and Energy."
 >}}
 
 {{< textin
   question="The high-energy electron carrier derived from vitamin B₃ (niacin), whose oxidized and reduced forms recur throughout the pathways that extract energy from food, is abbreviated ________."
   answer="NAD"
   accept="nicotinamide adenine dinucleotide"
-  hint="Its reduced form, after accepting two electrons and a proton, is NADH."
+  hint="Reread the first paragraph of Electron Carriers."
 >}}
 
 ### Explain how ATP is used by cells as an energy source
@@ -138,7 +139,7 @@ is a catabolic reaction
 {{< multiplechoice
   question="The energy currency used by cells is ________."
   answer="ATP"
-  hint="This molecule releases energy when its terminal phosphate group is removed."
+  hint="Reread the paragraph just before the one on muscle contraction and the sodium-potassium pump."
 >}}
 ATP
 ADP
@@ -149,16 +150,18 @@ adenosine
 {{< textin
   question="Production of ATP from ADP using the excess energy from a chemical reaction and a phosphate group from a reactant is called ________ phosphorylation."
   answer="substrate-level"
-  hint="This is the direct method of phosphorylation, as opposed to the process that runs through the electron transport chain."
+  accept="substrate-level phosphorylation"
+  hint="Reread the first of the two subsections on how ATP is generated during the breakdown of glucose."
 >}}
 
 {{< textin
   question="Production of ATP using chemiosmosis in the presence of oxygen is called ________ phosphorylation."
   answer="oxidative"
-  hint="This process generates about 90 percent of the ATP made during glucose catabolism."
+  accept="oxidative phosphorylation"
+  hint="Reread the last subsection before the Career Connection box."
 >}}
 
-{{< selfcheck question="Why is it beneficial for cells to use ATP rather than energy directly from the bonds of carbohydrates? What are the greatest drawbacks to harnessing energy directly from the bonds of several different compounds?" hint="Think about how a rechargeable-battery model of energy handling compares with drawing power straight from a fuel source." >}}
+{{< selfcheck question="Why is it beneficial for cells to use ATP rather than energy directly from the bonds of carbohydrates? What are the greatest drawbacks to harnessing energy directly from the bonds of several different compounds?" hint="Reread the opening paragraph of ATP in Living Systems and the Energy from ATP subsection." >}}
 ATP provides the cell with a way to handle energy in an efficient manner. The molecule can be charged, stored, and used as needed. Moreover, the energy from hydrolyzing ATP is delivered as a consistent amount. Harvesting energy from the bonds of several different compounds would result in energy deliveries of different quantities.
 ===CHECKS===
 ATP provides the cell with a way to handle energy in an efficient manner
@@ -170,7 +173,7 @@ harvesting energy from the bonds of several different compounds would result in 
 {{< textin
   question="The removal of a phosphate group from a molecule is called ________."
   answer="dephosphorylation"
-  hint="This is the process that releases the energy stored when one or two phosphate groups leave ATP."
+  hint="Reread the paragraph just after the ATP structure figure."
 >}}
 
 ---

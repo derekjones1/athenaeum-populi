@@ -4,7 +4,7 @@
  *   node tools/verify/verify-section.mjs [--skip-lint] content/<subject>/<book>/<ch>/<sec>.md [...]
  *
  * Runs, per file:
- *   1. mechanical lints (tools/lint/lints.mjs)
+ *   1. mechanical lints (tools/lint/lints.mjs, tools/lint/lints-leaks.mjs)
  *   2. KaTeX render of every $…$ / $$…$$ math run (catches broken LaTeX)
  *   3. every {{< fillin >}} answer through the REAL grader (check-answer.mjs):
  *      it must self-grade 'correct' under its own answerForm — a
@@ -40,6 +40,7 @@ import { parseGraphPlotConfig } from '../../assets/js/lib/math/graph-plot-config
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { checkSortbins, parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
 import { lintHugo } from '../lint/lints.mjs';
+import { lintLeaks } from '../lint/lints-leaks.mjs';
 import { parseCliArgs } from '../lib/cli.mjs';
 import { hasUnpairedDollar, maskCode, mathSpans, shortcodes } from '../lib/content.mjs';
 import { loadPracticeIndexForBook } from '../lib/practice-index.mjs';
@@ -170,6 +171,8 @@ for (const f of files) {
     //    copy of a check at a mirrored path is compared with the real
     //    sections), through tools/lib/practice-index.mjs.
     lintHugo(src, f, { loadPracticeIndex: loadPracticeIndexForBook }).errors.forEach(bad);
+    // The leak and notation rules (tools/lint/lints-leaks.mjs), in their own module.
+    lintLeaks(src, f).errors.forEach(bad);
 
     // 2. body math
     for (const { tex, display } of mathSpans(src, { maskCode: true })) {

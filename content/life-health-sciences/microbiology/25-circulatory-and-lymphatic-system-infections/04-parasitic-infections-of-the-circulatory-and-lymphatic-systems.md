@@ -34,7 +34,7 @@ In addition, some trophozoites alternatively develop into male and female gameto
 
 Diagnosis of malaria is by microscopic observation of developmental forms of *Plasmodium* in blood smears and rapid EIA assays that detect *Plasmodium* antigens or enzymes (shown below). Drugs such as chloroquine, atovaquone, artemether, and lumefantrine may be prescribed for both acute and prophylactic therapy, although some *Plasmodium* spp. have shown resistance to antimalarial drugs. Use of insecticides and insecticide-treated bed nets can limit the spread of malaria. Despite efforts to develop a vaccine for malaria, none is currently available.
 
-{{< mediafigure src="microbiology/OSC_Microbio_25_04_Malaria" kind="diagram" eager="true" alt="A circular diagram of the Plasmodium life cycle. In the human liver stages, a mosquito injects Plasmodium into a person, which infects and multiplies inside a liver cell. In the human blood stages, the parasite enters the blood, passes through immature and mature ring stages and a schizont stage inside red blood cells, and produces gametocytes. In the mosquito stages, a mosquito ingests the gametocytes, which fertilize, form a zygote, undergo mitosis, and produce sporozoites that migrate to the mosquito's salivary gland to complete the cycle." longdesc="The diagram loops through three labeled zones around a central drawing of a person and a mosquito. Human liver stages: (1) a mosquito takes a blood meal and injects Plasmodium into a human; (2) Plasmodium infects a liver cell; (3) Plasmodium multiplies in the liver cell, forming a ruptured schizont that releases merozoites. Human blood stages: (4) Plasmodium enters the blood; an immature ring stage inside a red blood cell matures into a mature ring stage and undergoes mitosis to produce a schizont, which ruptures the cell and releases more merozoites; (5) some parasites develop into male and female gametocytes (1n) by meiosis. Mosquito stages: (6) a mosquito takes a blood meal and ingests the gametocytes; (7) a microgamete fertilizes a macrogamete; (8) a zygote (2n) forms; (9) the zygote undergoes mitosis, becoming ruptured oocysts that release sporozoites; (10) the parasite differentiates and enters the mosquito's salivary gland, ready to be injected into the next human host." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_25_04_Malaria" kind="diagram" eager="true" alt="A circular diagram of the Plasmodium life cycle. In the human liver stages, a mosquito injects Plasmodium into a person, which infects and multiplies inside a liver cell. In the human blood stages, the parasite enters the blood, passes through immature and mature ring stages and a schizont stage inside red blood cells, and produces gametocytes. In the mosquito stages, a mosquito ingests the gametocytes, which fertilize, form a zygote, undergo mitosis, and produce sporozoites that migrate to the mosquito's salivary gland to complete the cycle." longdesc="The diagram loops through three labeled zones around a central drawing of a person and a mosquito. Human liver stages: (1) a mosquito takes a blood meal and injects Plasmodium into a human; (2) Plasmodium infects a liver cell; (3) Plasmodium multiplies in the liver cell, forming a ruptured schizont that releases merozoites. Human blood stages: (4) Plasmodium enters the blood; an immature ring stage inside a red blood cell matures into a mature ring stage and undergoes mitosis to produce a schizont, which ruptures the cell and releases more merozoites that infect new red blood cells; (5) a second arrow from the immature ring stage leads instead through an elongated cell to female and male gametocytes, beside a box reading 'Gametes (1n) produced by meiosis.' Mosquito stages: (6) a mosquito takes a blood meal and ingests gametes (the box's wording; the drawing shows the two gametocytes inside the mosquito); (7) a microgamete fertilizes a macrogamete; (8) a zygote (2n) forms; (9) the zygote undergoes mitosis, becoming ruptured oocysts that release sporozoites; (10) 'Parasite differentiates and enters saliva': an arrow leads from the sporozoites back to the biting mosquito of step 1, and from there down to a box of thread-like sporozoites, ready to be injected into the next human host." >}}
 The life cycle of *Plasmodium*. (credit: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
@@ -76,7 +76,7 @@ Preventing infection is the best first-line defense against toxoplasmosis. Preve
 
 Most immunocompetent patients do not require clinical intervention for *Toxoplasma* infections. However, neonates, pregnant people, and immunocompromised patients can be treated with pyrimethamine and sulfadiazine—except during the first trimester of pregnancy, because these drugs can cause birth defects. Spiramycin has been used safely to reduce transmission in pregnant people with primary infection during the first trimester because it does not cross the placenta.
 
-{{< mediafigure src="microbiology/OSC_Microbio_25_04_Toxoplasma" kind="diagram" alt="A circular diagram of the Toxoplasma gondii life cycle linking a cat, wild birds and rodents, farm animals, and two human figures. Oocysts shed in cat feces infect birds and rodents, forming tissue cysts; cats become infected by eating those animals. Farm animals ingest oocysts from contaminated soil, water, or plants. Humans become infected by eating undercooked meat of infected animals, by contact with cat feces or a litter box, by blood transfusion or organ transplant, or across the placenta to a fetus. Small triangular icons mark each infective and diagnostic stage." longdesc="Numbered steps read: (1) unsporulated oocysts are shed in the cat's feces; (2) intermediate hosts in nature, including birds and rodents, become infected after ingesting soil, water, or plant material contaminated with oocysts; (3) oocysts transform into tachyzoites shortly after ingestion, which localize in neural and muscle tissue and develop into tissue cyst bradyzoites; (4) the cat eats infected animals such as rodents or birds and sheds unsporulated oocysts; (5) intermediate hosts such as pigs and cows ingest oocysts from contaminated water, soil, or plant material; (6) humans become infected when they eat undercooked meat of infected animals harboring tissue cysts; (7) humans become infected when they consume food or water contaminated with cat feces or by handling fecal-contaminated soil or a cat's litter box; (8) humans become infected via blood transfusion or organ transplantation; (9) humans also become infected via the placenta from mother to fetus; (10) tissue cysts can form in skeletal muscle, myocardium, brain, and eyes; (11) diagnosis of congenital infection can be achieved by detecting T. gondii DNA in amniotic fluid using molecular methods such as PCR. A legend marks two icon shapes: one for an infective stage, one for a diagnostic stage, placed beside the steps above where each applies." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_25_04_Toxoplasma" kind="diagram" alt="A circular diagram of the Toxoplasma gondii life cycle linking a cat, wild birds and rodents, farm animals, and two human figures. Oocysts shed in cat feces infect birds and rodents, forming tissue cysts; cats become infected by eating those animals. Farm animals ingest oocysts from contaminated soil, water, or plants. Humans become infected by eating undercooked meat of infected animals, by contact with cat feces or a litter box, by blood transfusion or organ transplant, or across the placenta to a fetus. Small triangular icons mark each infective and diagnostic stage." longdesc="Numbered steps read: (1) unsporulated oocysts are shed in the cat's feces; (2) intermediate hosts in nature, including birds and rodents, become infected after ingesting soil, water, or plant material contaminated with oocysts; (3) oocysts transform into tachyzoites shortly after ingestion, which localize in neural and muscle tissue and develop into tissue cyst bradyzoites; (4) the cat eats infected animals such as rodents or birds and sheds unsporulated oocysts; (5) intermediate hosts such as pigs and cows ingest oocysts from contaminated water, soil, or plant material; (6) humans become infected when they eat undercooked meat of infected animals harboring tissue cysts; (7) humans become infected when they consume food or water contaminated with cat feces or by handling fecal-contaminated soil or a cat's litter box; (8) humans become infected via blood transfusion or organ transplantation; (9) humans also become infected via the placenta from mother to fetus; (10) tissue cysts can form in skeletal muscle, myocardium, brain, and eyes; (11) diagnosis of congenital infection can be achieved by detecting T. gondii DNA in amniotic fluid using molecular methods such as PCR. Arrows: a micrograph of fecal oocysts (step 1) leads by red arrows to a rooster and a mouse (step 2), then to a micrograph labeled tissue cysts (step 3), then to a cat (step 4), and back to the fecal oocysts. Brown arrows also lead from the fecal oocysts to a cow and a pig (step 5), whose tissue-cyst micrograph and step 6 lead by an arrow to a standing man; and to fruit, a glass of water, and a litter box (step 7), from which an arrow leads up to step 9, drawn below a woman. A blood bag points to the man (step 8). The woman's abdomen is circled (step 11), and a tissue-cyst micrograph sits beside her (step 10). A legend defines two triangle icons, i = infective stage and d = diagnostic stage: an i marks the arrow into the rooster-and-mouse cysts, the arrow to the man from the meat, the blood bag, and the arrow up to the woman; a d marks her circled abdomen and the micrograph beside her." >}}
 The infectious cycle of *Toxoplasma gondii*. (credit "diagram": modification of work by Centers for Disease Control and Prevention; credit "cat": modification of work by "KaCey97078"/Flickr)
 {{< /mediafigure >}}
 
@@ -259,7 +259,7 @@ Venous catheters are common life-saving interventions for many patients requirin
 {{< multiplechoice
   question="Which of the following is a causative agent of malaria?"
   answer="Plasmodium falciparum"
-  hint="This is the most common and most lethal species named at the start of the Malaria section, where it is also called falciparum malaria."
+  hint="See the opening paragraphs of the Malaria subsection."
 >}}
 Trypanosoma cruzi
 Toxoplasma gondii
@@ -276,13 +276,14 @@ Schistosoma mansoni
 {{< textin
   question="The kissing bug is the biological vector for ________."
   answer="Chagas disease"
-  hint="This is the disease named in its own subsection heading, caused by the flagellated protozoan Trypanosoma cruzi."
+  accept="Chagas|American trypanosomiasis"
+  hint="See the opening paragraph of the subsection that follows Babesiosis."
 >}}
 
 {{< textin
-  question="The protozoan disease caused by Leishmania spp. and transmitted by sand fly vectors is called ________."
+  question="The protozoan disease transmitted by sand fly vectors is called ________."
   answer="leishmaniasis"
-  hint="This is the Key terms entry naming the disease itself, not the genus of protozoan parasite that causes it."
+  hint="See the opening paragraph of the fifth disease subsection on this page."
 >}}
 
 ### Compare the major characteristics of specific parasitic diseases affecting the circulatory and lymphatic systems
@@ -301,7 +302,7 @@ schistosomiasis
 {{< multiplechoice
   question="Which of these is the most common form of leishmaniasis?"
   answer="cutaneous"
-  hint="This is the form described as producing sores that start as papules or nodules at the site of the insect bite."
+  hint="See the paragraph that lists the disease's three major clinical forms."
 >}}
 cutaneous
 mucosal
@@ -330,7 +331,7 @@ babesiosis
 {{< multiplechoice
   question="Describe main cause of Plasmodium falciparum infection symptoms."
   answer="The synchronous rupture of red blood cells as Plasmodium emerges from them"
-  hint="Look for the sentence naming what happens 'synchronously' right after the section describes the classic fever-and-chill cycle."
+  hint="See the Malaria subsection's paragraph on the classic cycles of fever and chills."
 >}}
 Plasmodium sporozoites being injected from the mosquito's salivary gland
 Plasmodium multiplying inside liver cells before entering the blood

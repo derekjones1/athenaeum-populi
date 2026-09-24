@@ -12,7 +12,8 @@ math book did not: a media pipeline, an image-accessibility policy,
 text-answer exercises, the answer-form rules for keyed and unkeyed source
 questions, and the three-reading answer discipline. Each book then has a
 short playbook of its own — `docs/subjects/biology.md`,
-`docs/subjects/microbiology.md` — that records the pinned source, the file
+`docs/subjects/microbiology.md`, `docs/subjects/anatomy-physiology.md` —
+that records the pinned source, the file
 layout, the CNXML-to-page mapping of that book's feature boxes and end
 matter, and every rule where the book differs from this baseline. Read the
 core, then this file, then the book's file before authoring a section; the
@@ -140,7 +141,17 @@ says "the committed section map" rather than restating the number.
    the source alt text edited where noted, feature boxes rendered as
    callouts, the end-of-section exercises adapted into the interactive
    Practice block, key-term recall items added from the key terms, any
-   reordered multiple-choice options, and anything omitted.
+   reordered multiple-choice options, and anything omitted. Every count
+   and claim in it is copied from a tally of the finished page taken after
+   the last `verify-section` (its `facts:` panel gives most counts) —
+   never from memory or from the plan. The September 22, 2026 sweep
+   corrected about 200 Biology and Microbiology footers that had passed
+   their checkers: recall, summary, and author-item lists miscounted,
+   source reorders unnamed, fixes claimed that were never made. **The
+   clause names departures from the source, and only those**: correcting
+   the page's own earlier alt, `longdesc`, hint, or item text is not
+   narrated there — a September 23, 2026 figure fixer added 22 such
+   clauses, two of them false, and all were pruned.
 
 ## Notation
 
@@ -152,6 +163,15 @@ then `docs/subjects/math.md`'s notation rules apply to that span. Units and
 numbers:
 `5 µm`, `37 °C`, `1,000` with a plain comma in prose. Never put math in a
 `textin` question or answer — the lint rejects it.
+
+The lint enforces this since September 22, 2026: an ASCII formula or ion
+(`CO2`, `H+`, `Ca2+`, `NO3-`, `NADP+`) in prose, item params and options,
+captions, alt, or longdesc is an error, with the Unicode spelling in the
+message. Exempt: `accept` members (what a learner types), `$…$` math, code,
+the attribution footer (which quotes the source's ASCII), a token quoted
+whole ("N2N2"), and an italic gene symbol (*USP14*). The message's
+suggestion subscripts every count; an oxidation state is a superscript
+(`S⁰`), so write what the artwork prints.
 
 Exercise-string parameters (`question`, `hint`, `answerDisplay`, and a
 multiple choice's option lines) render through the `mathtext` partial, which
@@ -264,8 +284,10 @@ Cases Biology 2e's cell chapters settled (unit 2), and the ones later books adde
 - **`accept` lists the irregular plural of an answer** (`septa`, `bacteria`,
   `hypotheses`) and the compound form the section itself uses (`integral
   membrane protein` for a textin keyed `integral`); every checker in unit 2
-  found one missing. A regular plural (`glucose transporters`) is folded by
-  the grader since September 2026 and is a lint error in `accept`.
+  found one missing. A regular plural (`glucose transporters`) or, for a
+  plural key, a regular singular (`receptor` beside `receptors`) is folded
+  by the grader (plural since September 6, singular since September 22,
+  2026) and is a lint error in `accept`.
 - **`P<sub>i</sub>`** is the one sanctioned inline HTML subscript (no
   Unicode subscript letter exists); everything with a glyph — `H⁺`, `CO₂`,
   `FADH₂`, `Ca²⁺`, `PO₄³⁻`, `G₁`, `IP₃` — uses it. ΔG/ΔH/ΔS in prose are the
@@ -373,7 +395,12 @@ that use them.
   prose, the caption, or the `longdesc`.
 - Read every vendored image at review: open the WebP, compare it with the
   PDF page, and confirm the alt and any `longdesc` against what is actually
-  drawn, not against the source alt text.
+  drawn, not against the source alt text. Write a `longdesc` from an
+  inventory of the image taken first — panels, every printed label, every
+  count, every arrow as `source → target` with both ends zoomed — and say
+  whose left and right you mean (the viewer's, or the subject's in
+  anatomy); "Completion audit" below has why (a third of shipped
+  `longdesc`s failed it).
 - A mediafigure directly above an item — only whitespace between its closing
   tag and the next `textin`/`multiplechoice`/`selfcheck` — may not print that
   item's answer in `alt` or `longdesc` (lint): microbiology 2.3 once shipped
@@ -391,7 +418,8 @@ keys some sets and not others. The component rules below are shared.
 
 **Multiple choice.** Options are the source's, in the source's order, each
 on its own line of the shortcode body; `answer` is the keyed option verbatim.
-Write a strategy hint (regular sections only). The text-mode distractor
+Write a hint that says where to look (regular sections only; the hint rules
+under **Text recall** below hold for every item type). The text-mode distractor
 rules are the core's (`docs/authoring-playbook.md` §3). The corpus-wide
 answer-position gate measures each book on its own; if it fails, reorder with
 a deterministic seeded shuffle and say so in `Changes:` — never hand-pick
@@ -424,15 +452,26 @@ in the core (§3); the rules specific to a term-built item:
   provided") and the lint now rejects it; the `/>}}` spelling is not parsed
   by the repository tools.
 - One to four words; the lint rejects longer answers — a definition is not a
-  recall item.
+  recall item. An `accept` member may run to seven words, so the full form of
+  a correct answer is credited ("central dogma of molecular biology",
+  "major histocompatibility complex class I") *(September 23, 2026: a
+  4-word cap on accept members marked those answers wrong)*.
 - `accept` lists the spellings a correct learner might type, `|`-separated
   (`accept="a|b|c"` — a comma joins the items into one member the grader
-  can never match, and the lint rejects it): an irregular plural (`septa`,
-  `bacteria`), British spelling (`fertilisation`), a standard abbreviation
-  (`DNA` for a keyed `deoxyribonucleic acid`, or the reverse). Grading
-  already ignores case, diacritics, punctuation, hyphen-versus-space, and a
-  leading article, and folds a regular plural (a trailing `s` or `es`) onto
-  every listed form, so do not list those. An accept member that normalizes to the
+  can never match, and the lint rejects it): an irregular plural or singular
+  (`septa`, `bacteria`, `bacterium`), British spelling (`fertilisation`), a
+  standard abbreviation (`DNA` for a keyed `deoxyribonucleic acid`, or the
+  reverse). Grading already ignores case, diacritics, punctuation,
+  hyphen-versus-space, and a leading article, and folds the regular plural
+  both ways (a trailing `s`/`es` added to every listed form, or stripped
+  from one whose last word is shaped like a regular plural — not
+  `-ss`/`-us`/`-is`/`-ics`/`-ies` or digit + `s`), so do not list those.
+  It also reads a term typed with its abbreviation or expansion in
+  parentheses (`cyclic AMP (cAMP)`) as correct when each half grades correct
+  on its own, so a combined `accept` member like `catabolite activator
+  protein (CAP)` is unnecessary once both halves are listed *(September 23,
+  2026)*. An
+  accept member that normalizes to the
   answer (hyphen versus space, a leading article, `400 X` versus `400 x`)
   is rejected by `verify-section` — list only spellings the grader would
   otherwise miss. There is no typo tolerance by design:
@@ -451,8 +490,69 @@ in the core (§3); the rules specific to a term-built item:
   checker duty, not a lint — ordinary vocabulary ("element", "polymer")
   recurs in sibling hints 486 times across the book — so a checker reads
   every hint on the page against every new key.
+- A hint says WHERE to look — a subsection, figure, table, or paragraph
+  topic — never the key, a root or derivative of it, the fact the correct
+  option asserts, or a fact the module never states; and nothing in the item
+  directly above a `textin` — its stem, its options, or its hint — prints
+  its key. The lint catches the literal forms since September 22, 2026
+  (`tools/lint/lints-leaks.mjs`); a hint that states the correct option's
+  fact instead of pointing at it, or a fact the module never states, is a
+  checker read against its own key and options. It is the largest class
+  this shelf has shipped: the September 22, 2026 Opus sweep of every
+  Biology 2e and Microbiology Practice block rewrote about 2,470 hints on
+  pages that had passed every gate and a Sonnet checker, and about 190
+  more stated something false or unsaid. The forms that recur are
+  translating the key's Greek or Latin root (the `cis-acting` and
+  `epistasis` hints; "This process's name means 'cell drinking'" for
+  pinocytosis), restating the glossary definition that IS the key, a
+  paraphrase that eliminates every distractor by name, naming a heading
+  whose title is the key, a `selfcheck` hint that lists its own rubric
+  clauses, and a hint that steers away from a correct answer (Microbiology
+  19.3's MHC hint said the answer was "not the human-specific"
+  abbreviation, so a correct `HLA` graded wrong). The
+  author's test: cover the options, read the stem and hint alone, and if
+  they answer the item, cut the hint to the location. Two of these forms
+  are lint errors since September 23, 2026 (`tools/lint/lints-leaks.mjs`):
+  a `selfcheck` hint that covers two or more of its own `===CHECKS===`
+  clauses (phrase coverage ≥ 0.8), and a `textin` hint that says "not X"
+  of the key or an accept member, or "not the … abbreviation" when an
+  abbreviation is accepted.
+- **Prefer a `textin` key that its own `###` objective heading and the
+  page title do not print** (singular or plural). The heading sits
+  directly above the group, so a key it prints is copied rather than
+  recalled; when the objective offers another glossary term or a summary
+  cloze, use that. When it does not, the item stays: the heading is true
+  content the learner has just read, and the item still reinforces it. A
+  source item stays as printed either way. **This is an authoring
+  preference, not a defect** *(September 23, 2026)*: checkers do not flag
+  it and no lint checks it. The September 22 sweep had already replaced
+  more than 100 author textins of this shape; the roughly 205 raw hits
+  left (Biology 140, Microbiology 55, A&P 10) stay as they are, and the
+  lint was decided against — the weakest leak there is, not worth a
+  three-book edit and re-solve.
+- **Fix a leak without changing the item's type.** Reorder the group
+  (recall items first), then reword the author item that prints the key,
+  then reword the leaking `textin`'s own stem from its glossary sentence;
+  never convert a `textin` to a multiple choice or drop it to escape a
+  leak. The glossary and summary `textin`s are the part of the block
+  `verify-source-keys` confirms against the module *(Sep 22, 2026: six
+  such conversions on Biology chapters 1–4 set the rule)*.
+- A multiple-choice hint may not print the keyed option (normalized, plural
+  and singular folded) unless it names a distractor the same way (a
+  contrast) or the stem already prints the key; a count key is exempt. Lint
+  error since September 22, 2026, when 17 such hints were rewritten. The
+  same rule covers a hint that names a subsection whose title is the key
+  ("the Copper, Nickel, and Zinc discussion") — point at it by position
+  instead.
 - Never a textin whose answer is a number, a formula, or a sentence: numbers
-  are `fillin` territory, sentences are `selfcheck`.
+  are `fillin` territory, sentences are `selfcheck`. A number word is a
+  number (`two`, `three`), and so is a measurement (`5.0 µm`): the
+  September 22 sweep found seven shipped (Biology 4.2, 7.2, 7.4;
+  Microbiology 11.4, 11.5), each a summary cloze whose blank fell on a
+  count. Blank a different phrase of the sentence, or make the count a
+  `multiplechoice` whose options are counts. Lint error since September
+  23, 2026: a `textin` answer that is digits, a number word, or a number
+  with a unit (or holds a number-and-unit run, `every 10 years`).
 
 **Summary items.** The module's `<section class="summary">` is the largest
 keyed corpus after the exercise sets, and it tests concepts where the
@@ -565,7 +665,24 @@ do antimicrobial-producing microbes commonly also have resistance genes?"
 are different asks, as are "Why is HIV difficult to treat with antivirals?"
 and "How does the biology of HIV necessitate multiple drugs?"). Quote both
 stems in the ledger note when claiming the fold, and never assert in the
-footer that a set is fully represented without counting it.
+footer that a set is fully represented without counting it. The same
+holds for wording and order: a source stem or option is transcribed
+verbatim, and every reorder that changes two source items' relative order
+is named in the footer. The September 22, 2026 sweep, on pages that had
+passed their checkers, restored dropped Critical Thinking questions on
+three pages and left four more for a decision, restored about 25 source
+stems reworded without disclosure (nine on Microbiology 3.3–4.6 alone), and
+disclosed 22 source reorders on Biology chapters 13–15 and 21–23 that no
+footer named.
+
+**Restoring a question its own module cannot answer** *(September 23,
+2026)*: it goes back as a `selfcheck` in source position. Its model answer
+may draw on the section that teaches the point, with a cross-link and a
+sentence saying so (Microbiology 7.2's isomer and dextrose questions,
+answered from 7.1). A question the module DOES address keeps a model answer
+within that one module (23.6's two-module synthesis was rewritten to one).
+A question whose premise the book contradicts gets a Source note inside the
+model answer (4.2's Mycoplasma/Chlamydia question).
 
 It **stays a `selfcheck`** when the honest answer needs several module
 sentences assembled (explain / describe / why questions whose module answer
@@ -676,6 +793,21 @@ body passage of the same module. A thin objective group reaches for a
 different summary sentence, a glossary term, or a body passage — never a
 second blank in a sentence already asked.
 
+The lint is exact; a reworded re-ask is the author's and the checker's to
+catch, and the September 22, 2026 sweep still replaced about 110 on the
+section pages. The commonest form was **reverse recall inside one page**:
+a glossary `textin` asking for a term that a source Review Question on
+the same page already keys or asks about (Biology 3.1's `hydrolysis` and
+3.4's `amino acid` beside source multiple choices keyed on them; 20.2's
+`cladistics` textin under the cladistics question). Before writing a
+glossary recall item, read the source items of the page and skip any term
+a source stem or key already tests — the source item stays and the term
+stays a Key-terms bullet. A page whose unit already has a Knowledge Check
+is checked against it too: grep the check for every new key before
+settling an item, since three section edits collided with check items on
+September 22 (the duplicate-stem lint caught them; a reworded collision it
+would not).
+
 ## Verification
 
 - `npm run verify-section -- <page>` runs the lints and self-grades every
@@ -690,11 +822,26 @@ second blank in a sentence already asked.
   `textin` it means the prompt names exactly one glossary term and the
   accept list covers its ordinary variants. Nothing is computed; the checker
   reads the exercise against the CNXML solution and the section prose.
-- **Independent checker.** One per chapter, briefed as in the math
-  checker brief: re-read every Practice item against the raw CNXML
-  exercise and solution (not the page), every figure alt against the PDF
-  page, and every key-term item against the source definition; report
+- **Independent checker.** One per section, briefed by the book's kit
+  (`docs/briefs/<book>/checker.md`): re-read every Practice item against
+  the raw CNXML exercise and solution (not the page), every figure against
+  its image, and every key-term item against the source definition; report
   defects to the parent, which owns the errata file and the ledger merge.
+  **It runs on Opus** *(September 22, 2026)*: an Opus re-review of A&P
+  chapters 1–2 found about 80 defects the per-section Sonnet checkers had
+  passed, Opus samples of Biology 2e and Microbiology measured 7–10
+  confirmed defects per page, and the full sweep that followed confirmed
+  it in both books —
+  keys held everywhere (0 wrong source keys), so the gap is the leak,
+  hint, accept, and figure reading, which is model-bound. Three duties no
+  gate performs: (1) answer every graded item with the key covered BEFORE
+  comparing — a distractor the module also makes true turned up in 19 of
+  the 40 sweep units, section pages and checks alike (about 35 items); (2) run the real
+  grader on every natural variant of every `textin` (the full name with
+  and without its head noun "system/cell/group", the module's synonyms and
+  abbreviations, irregular plurals, hyphen versus space) — about 300
+  accept gaps on the section pages, some eight per unit; (3) read every model answer and rubric
+  clause for a claim the module never makes.
 - **Prose claim pass** *(chapter 4 of Microbiology, September 6, 2026)*.
   The key, transcription, and figure readings above prove the page says
   what the module says; none of them asks whether the module is right.
@@ -726,7 +873,11 @@ second blank in a sentence already asked.
     that is loose but defensible on the module's own terms → as printed,
     same list. Distractors are claims too: a distractor that is true — by
     the module, the book, or a citation — is a double-keyed item (see the
-    text-mode distractor rule); replace it, disclose it, log it.
+    text-mode distractor rule); replace it, disclose it, log it. The
+    fill-in half *(September 23, 2026)*: when the module lets a second
+    word fill a source Fill in the Blank or `textin` blank, add it as an
+    `accept` member; an erratum only when the source's own solution is
+    wrong.
   - **Where the retroactive sweep stands.** `docs/source/claim-pass-ledger.md`
     lists every chapter of every life-sciences book with its pass status,
     date, and errata; update it when a chapter lands.
@@ -792,15 +943,18 @@ before building one.
 When a book's last section and last Knowledge Check have landed, one more
 pass is due that the per-section gates do not perform: a cold random
 sample (seeded, stratified by unit or by chapter block) read by fresh
-Sonnet checkers briefed to answer each item before opening the page, then
+Opus checkers briefed to answer each item before opening the page, then
 to check page against CNXML, and to read every sampled image before
 judging its alt and longdesc; the parent verifies every flag on the image
-or the module. Biology 2e's record is in its playbook. Rates to plan the
-sample by, from that audit: about 1 alt defect in 12 figures read cold
-against the image, about 1 hint or accept defect in 90 items, and no key
-defects — the key pipeline (source cross-check, checker, orchestrator
-solve) holds; the figure descriptions are where a completion sample earns
-its cost.
+or the module. Biology 2e's record is in its playbook. The key pipeline
+(source cross-check, checker, orchestrator solve) holds: no audit has
+found a wrong source key. The rest depends on the reader's model. The
+September 5, 2026 Sonnet sample measured about 1 hint or accept defect in
+90 items; the September 22, 2026 Opus samples of the same two books found
+7–10 confirmed defects per page (about one item in two in Biology, two in
+five in Microbiology), two-thirds of them hints, and the sweep of every
+page that followed confirmed that rate.
+Plan the sample on Opus and by the second number.
 
 **Image-first alt pass (required).** The sample is not the end of the
 figure work. Microbiology's audit projected 1 alt defect in 13 figures;
@@ -817,12 +971,44 @@ claim by claim; the parent verifies every flag on the image, fixes the
 page, and writes an erratum for each claim inherited from the source alt.
 About a fifth of the defects are inherited; the rest are the page's own,
 and counts, colours, directions, and "labeled" claims are where they
-cluster. Budget roughly 200k Sonnet tokens per chapter. The kit is
+cluster. The kit is
 `docs/briefs/alt-pass/` (checker brief, run shape) with
 `tools/source/alt-pass-packets.py <book> <out-dir>` building the
 packets; Biology 2e's pass (September 21, 2026, `docs/history/biology.md`)
 measured 1 in 8.5 and found the checkers' own mis-counts to be the largest
 rejected class, so the parent's look at every flag is not optional.
+
+**Image-first is not enough for a `longdesc`: read it by inventory**
+*(September 22, 2026)*. A 60-figure sample after both passes still found
+7 of 22 `longdesc` figures wrong (32%, against 1 of 38 without one):
+arrows joined to the wrong box or pointing the wrong way in pathway maps
+and food webs, a panel row dropped, a subunit placed wrong, bracket
+endpoints off on a scale, a structure the art does not draw, printed
+vessel labels left out. The pass over every `longdesc` figure that
+followed read 914 of them image-first (Biology's first 511 by Opus fixers
+on September 22; Biology chapters 38–47 and all of Microbiology by Sonnet
+fixers plus an Opus second read on September 23) and found roughly 70%
+wrong (connections, positions, and counts leading; many fixes small;
+errata 898–982). The earlier passes had
+read the image first too; they missed
+detail, not order. So a `longdesc` is written and checked against an
+inventory taken from the image before any words are read: every panel and
+row, every printed label and number, every count, and every arrow as
+`source → target` with both ends zoomed (crop and upscale small print
+with PIL); then each sentence is ticked against it, each drawn arrow that
+carries the figure's meaning is described, and each printed label is
+found in the alt, `longdesc`, caption, or an adjacent table. The alt-pass
+kit runs this method on Opus, `longdesc` figures first.
+
+**Figure, alt, and `longdesc` reading and fixing run on Opus, never
+Sonnet** *(September 23, 2026)*. On the ten units given to Sonnet fixers,
+an Opus second read found about 70% of their "clean" figures wrong, and
+most Sonnet fixes regressed or stopped short (Microbiology chapters 5–8:
+10 of 12 fixes were regressions; chapters 22–26: 9 of 14);
+Sonnet plus an Opus check cost more than Opus alone. Sonnet stays right
+for checklist-shaped text work (compiling lists, drafting errata from
+verdicts). Whatever model a task is first delegated to, the parent
+spot-checks one "clean" verdict against the image after its first unit.
 
 ## Done checklist (in addition to the core checklist)
 
@@ -830,6 +1016,8 @@ rejected class, so the parent's look at every flag is not optional.
 - [ ] every feature box a callout with its bold name; every Link to Learning URL kept
 - [ ] `## Summary` and `## Key terms` transcribed in full, in source order
 - [ ] Practice: every group has an auto-graded item; every source exercise set represented; key-term recall items lint-clean; every comparison table has its `sortbins`; every unkeyed question that ONE module artifact fixes is graded, and every pre-existing hint on the page read against every new key
+- [ ] every hint names a location and, with the options covered, does not answer its item; no `textin` re-asking a source item; footer counts copied from the tally
+- [ ] every `longdesc` checked against an arrow/count/label inventory of the image
 - [ ] prose claim pass run by the checker on every section; every corrected claim carries a source note, a decisions entry, a footer sentence, and an erratum; every dismissed suspicion is in "Reviewed and *not* errata"
 - [ ] footer: CC BY-NC-SA 4.0, deep link, full `Changes:` clause
 - [ ] `npm run verify-section`, `npm test`, ledger verdicts merged, `node tools/source/openstax-source.mjs build-map` rerun and the map committed

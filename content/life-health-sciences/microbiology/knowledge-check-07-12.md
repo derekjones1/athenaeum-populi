@@ -67,18 +67,17 @@ Phosphate
 chitin
 bacterial cell wall peptidoglycan
 cellulose fiber
-a starch granule
 {{< /multiplechoice >}}
 
 ### 7.3 Lipids
 
 {{< multiplechoice
   question="Which functional group terminates the long hydrocarbon chain of a fatty acid?"
-  answer="carboxylic acid"
+  answer="carboxylic acid group"
 >}}
 hydroxyl group
 phosphate group
-carboxylic acid
+carboxylic acid group
 {{< /multiplechoice >}}
 
 {{< textin
@@ -113,6 +112,7 @@ a glycoprotein
 {{< textin
   question="Bonds between the sulfhydryl (–SH) functional groups on amino acid side chains, one of the interactions that gives rise to tertiary structure, are called ________."
   answer="disulfide bridges"
+  accept="disulfide bonds|disulfide linkages"
 >}}
 
 ### 7.5 Using Biochemistry to Identify Microorganisms
@@ -128,12 +128,12 @@ a glycoprotein
   answer="Biolog"
 >}}
 
-{{< selfcheck question="How can different species within the genus *Pseudomonas* be classified using PHB and fluorescent pigments, and which two named species exemplify fluorescent, non-PHB-accumulating members of the genus?" >}}
-Different species within the genus Pseudomonas can be classified by the presence or the absence of PHB and fluorescent pigments. The human pathogen P. aeruginosa and the plant pathogen P. syringae are two examples of fluorescent Pseudomonas species that do not accumulate PHB granules.
+{{< selfcheck question="Why is accurate identification of bacterial isolates essential in a clinical microbiology laboratory?" >}}
+Accurate identification of bacterial isolates is essential in a clinical microbiology laboratory because the results often inform decisions about treatment that directly affect patient outcomes. For example, cases of food poisoning require accurate identification of the causative agent so that physicians can prescribe appropriate treatment. Likewise, it is important to accurately identify the causative pathogen during an outbreak of disease so that appropriate strategies can be employed to contain the epidemic.
 ===CHECKS===
-classified by the presence or the absence of PHB and fluorescent pigments
-the human pathogen P. aeruginosa and the plant pathogen P. syringae
-two examples of fluorescent Pseudomonas species that do not accumulate PHB granules
+the results often inform decisions about treatment that directly affect patient outcomes
+cases of food poisoning require accurate identification of the causative agent so that physicians can prescribe appropriate treatment
+accurately identify the causative pathogen during an outbreak of disease so that appropriate strategies can be employed to contain the epidemic
 {{< /selfcheck >}}
 
 ## Chapter 8: Microbial Metabolism
@@ -141,13 +141,12 @@ two examples of fluorescent Pseudomonas species that do not accumulate PHB granu
 ### 8.1 Energy, Matter, and Enzymes
 
 {{< multiplechoice
-  question="Which of the following organism types is unique to the microbial world, obtaining energy from inorganic compounds such as hydrogen sulfide or reduced iron?"
-  answer="lithotrophs"
+  question="Sulfa drugs, which treat bacterial infections by blocking an enzyme in the bacterial folic acid synthesis pathway, are a good example of which kind of enzyme inhibition?"
+  answer="competitive inhibition"
 >}}
-chemotrophs
-lithotrophs
-organotrophs
-autotrophs
+noncompetitive (allosteric) inhibition
+competitive inhibition
+feedback inhibition
 {{< /multiplechoice >}}
 
 {{< textin
@@ -181,11 +180,13 @@ Hans Adolf Krebs
 >}}
 
 {{< multiplechoice
-  question="In eukaryotic cells, the Krebs cycle takes place in the mitochondrial matrix, the same location where the transition reaction occurs."
-  answer="True"
+  question="In the energy investment phase of the EMP pathway, glucose is modified so that it can be split evenly into two phosphorylated three-carbon molecules called what?"
+  answer="glyceraldehyde 3-phosphate"
 >}}
-True
-False
+pyruvate
+citric acid
+glyceraldehyde 3-phosphate
+coenzyme A
 {{< /multiplechoice >}}
 
 ### 8.3 Cellular Respiration
@@ -225,7 +226,7 @@ biofuels
 {{< textin
   question="The heterolactic fermenter used for souring vegetables like cucumbers and cabbage, producing pickles and sauerkraut, is *________*."
   answer="Leuconostoc mesenteroides"
-  accept="L. mesenteroides"
+  accept="L. mesenteroides|Leuconostoc"
 >}}
 
 {{< selfcheck question="Why is lactic acid production by the normal microbiota clinically important?" >}}
@@ -302,8 +303,8 @@ Joan Mary Anderson
   answer="*Azotobacter*"
 >}}
 *Nitrosomonas*
-*Pseudomonas*
-*Clostridium*
+*Rhodococcus*
+*Alcanivorax*
 *Azotobacter*
 {{< /multiplechoice >}}
 
@@ -322,13 +323,13 @@ silica
 ### 9.1 How Microbes Grow
 
 {{< multiplechoice
-  question="How does a Coulter counter detect and count cells as they pass through its aperture?"
-  answer="It detects changes in electrical resistance in an electrolyte solution as each cell passes through a small opening."
+  question="In a 2023 study, what surface treatment prevented biofilm growth in experiments on Earth and aboard the International Space Station?"
+  answer="A layer of lubricant infused into the surface's tiny crevices, which eliminated microbial adhesion"
 >}}
-It detects changes in electrical resistance in an electrolyte solution as each cell passes through a small opening.
-It measures the decrease in light transmission through a bacterial suspension.
-It compares a pattern of positive and negative tubes to a probability table.
-It weighs a filtered, washed, and dried sample of cells.
+An anti-bacterial coating that killed the microorganisms on the surface
+A layer of lubricant infused into the surface's tiny crevices, which eliminated microbial adhesion
+A layer of dead biofilm cells that blocked new cells from attaching
+Periodic replacement of the components where biofilm built up
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -378,7 +379,7 @@ the acid of the stomach
 the near-neutral growth environment of *Salmonella* spp. (pH 7.0–7.5)
 {{< /multiplechoice >}}
 
-{{< textin question="*Bacillus firmus* derives the energy for transport reactions and motility from a ________ rather than a proton motive force." answer="Na⁺ ion gradient" accept="sodium ion gradient" >}}
+{{< textin question="*Bacillus firmus* derives the energy for transport reactions and motility from a ________ rather than a proton motive force." answer="Na⁺ ion gradient" accept="sodium ion gradient|Na⁺ gradient|sodium gradient" >}}
 
 {{< selfcheck question="Besides denaturing proteins, how does extreme pH damage a cell's DNA and lipids?" >}}
 Extreme pH affects the structure of all macromolecules, not just proteins. The hydrogen bonds holding together strands of DNA break up at high pH, and lipids are hydrolyzed by an extremely basic pH.
@@ -390,7 +391,7 @@ lipids are hydrolyzed by an extremely basic pH
 
 ### 9.4 Temperature and Microbial Growth
 
-{{< textin question="Which two nutrients does artificial fertilizer provide that, in excess runoff, trigger algal blooms in lakes and coastal ecosystems?" answer="nitrogen and phosphorus" accept="phosphorus and nitrogen" >}}
+{{< textin question="Which two nutrients does artificial fertilizer provide that, in excess runoff, trigger algal blooms in lakes and coastal ecosystems?" answer="nitrogen and phosphorus" accept="phosphorus and nitrogen|nitrogen phosphorus|phosphorus nitrogen" >}}
 
 {{< textin question="The toxins produced by cyanobacterial blooms in Lake Erie, which can cause allergic reactions and liver damage when ingested, are called ________." answer="microcystins" >}}
 
@@ -429,7 +430,7 @@ the characteristics of these microorganisms are largely unknown
 cyanobacteria
 green sulfur bacteria
 purple nonsulfur bacteria
-the archaea of the class Halobacteria
+purple sulfur bacteria
 {{< /multiplechoice >}}
 
 ### 9.6 Media Used for Bacterial Growth
@@ -451,7 +452,6 @@ beef extract
   answer="It turns yellow as the cocci ferment mannitol and acidify the phenol red indicator."
 >}}
 It turns yellow as the cocci ferment mannitol and acidify the phenol red indicator.
-It turns hot pink as the cocci ferment lactose.
 It releases bubbles, indicating a positive catalase reaction.
 It shows no unusual coloration, as seen on the MacConkey and sorbitol-MacConkey plates inoculated with the patient's stool.
 {{< /multiplechoice >}}
@@ -530,7 +530,7 @@ Rosalind Franklin and R.G. Gosling
 Although rRNA had long been thought to serve primarily a structural role, its catalytic role within the ribosome was proven in 2000. Scientists in the laboratories of Thomas Steitz and Peter Moore at Yale University were able to crystallize the ribosome structure from *Haloarcula marismortui*, a halophilic archaeon isolated from the Dead Sea.
 ===CHECKS===
 its catalytic role within the ribosome was proven in 2000
-Steitz and Moore ... were able to crystallize the ribosome structure
+Scientists in the laboratories of Thomas Steitz and Peter Moore at Yale University were able to crystallize the ribosome structure
 Haloarcula marismortui, a halophilic archaeon isolated from the Dead Sea
 {{< /selfcheck >}}
 
@@ -564,7 +564,7 @@ a reduced number of genes encoding metabolic functions
 ### 11.1 The Functions of Genetic Material
 
 {{< textin
-  question="A 2008 federal law currently prohibits discriminatory practices based on genetic information by both health insurance companies and employers. This law is called the ________."
+  question="A 2008 law bars health insurance companies and employers from treating people differently when genome sequencing reveals a predisposition to a disease, although it does not cover life, disability, or long-term care insurance policies. This law is called the ________."
   answer="Genetic Information Nondiscrimination Act"
   accept="GINA"
 >}}
@@ -595,18 +595,18 @@ a month
 >}}
 
 {{< textin
-  question="The origin of replication is rich in adenine-thymine (AT) sequences because these sequences have fewer ________ than guanine-cytosine (GC) sequences, giving them weaker interactions."
-  answer="hydrogen bonds"
+  question="After replication, the circular chromosomes of prokaryotes are interlocked, or ________, and must be separated from each other by bacterial topoisomerase IV."
+  answer="concatenated"
 >}}
 
 {{< multiplechoice
-  question="In which of the following human cell types is telomerase typically NOT active?"
-  answer="adult somatic cells"
+  question="In which of the following is telomerase typically NOT active?"
+  answer="human adult somatic cells"
 >}}
-germ cells
-adult stem cells
-adult somatic cells
-fungal and protozoan cells
+human germ cells
+human adult stem cells
+human adult somatic cells
+fungi and protozoans
 {{< /multiplechoice >}}
 
 ### 11.3 RNA Transcription
@@ -633,7 +633,6 @@ six
 RNA polymerase II
 RNA polymerase I
 RNA polymerase III
-the bacterial RNA polymerase
 {{< /multiplechoice >}}
 
 ### 11.4 Protein Synthesis (Translation)
@@ -645,12 +644,12 @@ the bacterial RNA polymerase
 
 {{< multiplechoice
   question="Approximately how many types of tRNA typically exist in bacterial species?"
-  answer="60 to 90"
+  answer="between 60 and 90"
 >}}
-4
-20
-61
-60 to 90
+between 10 and 20
+between 60 and 90
+between 200 and 300
+between 600 and 900
 {{< /multiplechoice >}}
 
 {{< textin
@@ -661,8 +660,8 @@ the bacterial RNA polymerase
 ### 11.5 Mutations
 
 {{< textin
-  question="A mutation that occurs through an error in DNA replication rather than through exposure to a mutagen is called a ________ mutation."
-  answer="spontaneous"
+  question="Most mistakes introduced during DNA replication are promptly corrected by DNA polymerases through a function called ________, in which the polymerase reads each newly added base to ensure it is complementary to the template base before adding the next one."
+  answer="proofreading"
 >}}
 
 {{< selfcheck question="Why is ionizing radiation exposure used to sterilize medical devices and foods, and how does it damage DNA?" >}}
@@ -693,13 +692,13 @@ its dramatic nonspecific effect in damaging DNA, proteins, and other cellular co
 >}}
 
 {{< multiplechoice
-  question="Which of the following pathogenic bacteria is virulent because of a toxin-encoding gene introduced into its chromosome by a lysogenic bacteriophage?"
-  answer="*Corynebacterium diphtheriae*"
+  question="*Corynebacterium diphtheriae* and *Clostridium botulinum* are virulent because toxin-encoding genes were carried into them by which process?"
+  answer="lysogenic conversion"
 >}}
-*Escherichia coli*
-*Corynebacterium diphtheriae*
-*Streptococcus pneumoniae*
-*Shigella dysenteriae*
+transformation
+conjugation
+lysogenic conversion
+transposition
 {{< /multiplechoice >}}
 
 ### 11.7 Gene Regulation: Operon Theory
@@ -715,9 +714,9 @@ attenuation
 {{< /multiplechoice >}}
 
 {{< textin
-  question="French scientists François Jacob and Jacques Monod were the first to show the organization of bacterial genes into operons through their studies of which operon in *E. coli*?"
-  answer="lac operon"
-  accept="lactose operon"
+  question="The first demonstration that bacterial genes are organized into operons, work that won the 1965 Nobel Prize in Physiology or Medicine, came from studies of the ________ operon of *E. coli*."
+  answer="lac"
+  accept="lactose|lac operon|lactose operon"
 >}}
 
 {{< textin
@@ -736,17 +735,18 @@ attenuation
 >}}
 
 {{< multiplechoice
-  question="In 1972, Paul Berg, a Stanford biochemist, was the first to produce a recombinant DNA molecule by combining the SV40 monkey virus with which organism's bacteriophage lambda?"
-  answer="*E. coli*"
+  question="Herbert Boyer and Stanley Cohen demonstrated the complete molecular cloning process by cloning genes from which source into a bacterial plasmid?"
+  answer="the African clawed frog"
 >}}
-*E. coli*
-*Bacillus* spp.
-*Agrobacterium tumefaciens*
+the SV40 monkey virus
+the African clawed frog
+the human insulin gene
 {{< /multiplechoice >}}
 
 {{< textin
   question="The first transgenic plant sold commercially, which came to market in 1994, was the ________ delayed-ripening tomato."
   answer="Flavr Savr"
+  accept="FlavrSavr"
 >}}
 
 ### 12.2 Visualizing and Characterizing DNA, RNA, and Protein
@@ -780,7 +780,7 @@ A radioactive phosphorus atom
 ### 12.3 Whole Genome Methods and Pharmaceutical Applications of Genetic Engineering
 
 {{< textin
-  question="Studying the mRNA gene-expression patterns of an entire microbial community, rather than a single species, is called ________."
+  question="Studying the gene-expression patterns of an entire microbial community, rather than of a single species, is called ________."
   answer="metatranscriptomics"
 >}}
 

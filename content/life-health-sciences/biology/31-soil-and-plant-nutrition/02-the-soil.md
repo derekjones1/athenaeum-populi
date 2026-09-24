@@ -78,7 +78,7 @@ Time is an important factor in soil formation because soils develop over long pe
 
 Soils are named and classified based on their horizons. The soil profile has four distinct layers: 1) O horizon; 2) A horizon; 3) B horizon, or subsoil; and 4) C horizon, or soil base (shown below). The **O horizon** has freshly decomposing organic matter—humus—at its surface, with decomposed vegetation at its base. Humus enriches the soil with nutrients and enhances soil moisture retention. Topsoil—the top layer of soil—is usually two to three inches deep, but this depth can vary considerably. For instance, river deltas like the Mississippi River delta have deep layers of topsoil. Topsoil is rich in organic material; microbial processes occur there, and it is the “workhorse” of plant production. The **A horizon** consists of a mixture of organic material with inorganic products of weathering, and it is therefore the beginning of true mineral soil. This horizon is typically darkly colored because of the presence of organic matter. In this area, rainwater percolates through the soil and carries materials from the surface. The **B horizon** is an accumulation of mostly fine material that has moved downward, resulting in a dense layer in the soil. In some soils, the B horizon contains nodules or a layer of calcium carbonate. The **C horizon**, or soil base, includes the parent material, plus the organic and inorganic material that is broken down to form soil. The parent material may be either created in its natural place, or transported from elsewhere to its present location. Beneath the C horizon lies bedrock.
 
-{{< mediafigure src="biology/Figure_31_02_02" kind="diagram" alt="A cube-shaped cross-section of soil beneath a strip of grass, labeled top to bottom with four soil horizons — O, A, B, and C — each marked with its depth range in inches, threaded with root lines that are densest near the surface and taper out partway down, and scattered with light orange oval rock fragments in the lowest band." longdesc="The block is cut away to show its cross-section, with grass growing from the top surface. A vertical scale at the left, labeled 'Horizons,' marks four bands top to bottom. The O horizon runs from 0 to 2 inches: a thin, near-black band of freshly decomposing organic matter just beneath the grass. The A horizon runs from 2 to 10 inches: a near-black band, barely distinguishable from the O horizon above it, from which the grass roots descend. The B horizon runs from 10 to 30 inches: a reddish-orange band threaded with the branching roots, which grow sparser and thicker downward, tapering out about two-thirds of the way down and not reaching the band's base. The C horizon runs from 30 to 48 inches: the lightest, tan-colored band, with no roots and about a dozen light orange oval rock fragments scattered through it." >}}
+{{< mediafigure src="biology/Figure_31_02_02" kind="diagram" alt="A cube-shaped cross-section of soil beneath a strip of grass, labeled top to bottom with four soil horizons — O, A, B, and C — each marked with its depth range in inches, threaded with root lines that are densest near the surface and reach nearly to the base of the third band, and scattered with light orange oval rock fragments in the lowest band." longdesc="The block is cut away to show its cross-section, with grass growing from the top surface. A vertical scale at the left, labeled 'Horizons,' marks four bands top to bottom. The O horizon runs from 0 to 2 inches: a thin, near-black band of freshly decomposing organic matter just beneath the grass. The A horizon runs from 2 to 10 inches: a near-black band, barely distinguishable from the O horizon above it, from which the grass roots descend. The B horizon runs from 10 to 30 inches: a reddish-orange band threaded with the branching roots, which grow sparser and finer downward, the longest reaching nearly to the band's base; one small orange oval rock sits in its lower part. The C horizon runs from 30 to 48 inches: the lightest, tan-colored band, with no roots and about a dozen light orange oval rock fragments scattered through it." >}}
 This soil profile shows the different soil layers (O horizon, A horizon, B horizon, and C horizon) found in typical soils. (credit: modification of work by USDA)
 {{< /mediafigure >}}
 
@@ -137,10 +137,16 @@ Soil formation results from a combination of biological, physical, and chemical 
 
 ### Describe how soils are formed
 
+{{< textin
+  question="The organic and inorganic material in which soils form is called the ________."
+  answer="parent material"
+  hint="Reread the first of the five soil-formation subsections."
+>}}
+
 {{< multiplechoice
   question="Which factors affect soil quality?"
   answer="all of the above"
-  hint="The section's opening paragraph names three of these on their own, then the fourth option gathers them together with one more."
+  hint="Reread the section's opening paragraph on what soil quality depends on."
 >}}
 chemical composition
 history of the soil
@@ -179,12 +185,6 @@ steep soils are more prone to erosion
 may be thinner than soils that are on level surfaces
 {{< /selfcheck >}}
 
-{{< textin
-  question="The organic and inorganic material in which soils form is called the ________."
-  answer="parent material"
-  hint="Mineral soils form directly from the weathering of bedrock, one example of this."
->}}
-
 ### Explain soil composition
 
 {{< multiplechoice
@@ -198,6 +198,12 @@ clay
 loam
 {{< /multiplechoice >}}
 
+{{< textin
+  question="The organic material of soil, made up of microorganisms and dead animals and plants in varying stages of decay, is called ________."
+  answer="humus"
+  hint="This material improves soil structure and provides plants with water and minerals."
+>}}
+
 {{< selfcheck question="Describe the main differences between a mineral soil and an organic soil." hint="One forms from sedimentation, the other from the weathering of rock; each is named for what it is mostly composed of as a result." >}}
 A mineral soil forms from the weathering of rocks; it is inorganic material. An organic soil is formed from sedimentation; it mostly consists of humus.
 ===CHECKS===
@@ -208,18 +214,18 @@ it mostly consists of humus
 {{< /selfcheck >}}
 
 {{< textin
-  question="The organic material of soil, made up of microorganisms and dead animals and plants in varying stages of decay, is called ________."
-  answer="humus"
-  hint="This material improves soil structure and provides plants with water and minerals."
->}}
-
-{{< textin
   question="A soil that has no dominant particle size, containing a mixture of sand, silt, and humus, is called a ________."
   answer="loam"
-  hint="It is the balanced mix of sand, silt, clay, and humus that gardeners prize — no single particle size dominates."
+  hint="Reread the Soil Composition paragraph on the sizes of soil particles."
 >}}
 
 ### Describe a soil profile
+
+{{< textin
+  question="The vertical section of a soil, made up of distinct layers, is called the ________."
+  answer="soil profile"
+  hint="Soil scientists divide this vertical section into zones called horizons."
+>}}
 
 {{< multiplechoice
   question="A soil consists of layers called ________ that taken together are called a ________."
@@ -233,21 +239,15 @@ humus : soil profile
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The vertical section of a soil, made up of distinct layers, is called the ________."
-  answer="soil profile"
-  hint="Soil scientists divide this vertical section into zones called horizons."
+  question="The soil layer with freshly decomposing organic matter at its surface and decomposed vegetation at its base is called the ________."
+  answer="O horizon"
+  hint="Reread the Physical Properties of the Soil paragraph that lists the four soil layers in order."
 >}}
 
 {{< textin
   question="A soil layer with distinct physical and chemical properties that differ from those of other layers is called a ________."
   answer="horizon"
   hint="A soil profile is built from a stack of these zones."
->}}
-
-{{< textin
-  question="The soil layer with freshly decomposing organic matter at its surface and decomposed vegetation at its base is called the ________."
-  answer="O horizon"
-  hint="This uppermost layer is where topsoil is found."
 >}}
 
 ---

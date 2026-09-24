@@ -60,10 +60,24 @@ In both prokaryotic and eukaryotic cell division, the genomic DNA is replicated 
 
 ### Describe the process of binary fission in prokaryotes
 
+{{< textin
+  question="Bacteria have a single, circular DNA chromosome but no ________."
+  answer="nucleus"
+  accept="nuclei"
+  hint="Reread the middle of the section summary."
+>}}
+
+{{< textin
+  question="The region of the prokaryotic chromosome where DNA replication begins is called the ________."
+  answer="origin"
+  accept="ORI|origin of replication"
+  hint="Reread the second paragraph of Binary Fission."
+>}}
+
 {{< multiplechoice
   question="Which eukaryotic cell-cycle event is missing in binary fission?"
   answer="karyokinesis"
-  hint="Karyokinesis is the eukaryotic term for nuclear division; ask whether a prokaryote has a true nucleus to divide."
+  hint="Reread the section's opening paragraph, before Binary Fission."
 >}}
 cell growth
 DNA duplication
@@ -74,7 +88,7 @@ cytokinesis
 {{< multiplechoice
   question="FtsZ proteins direct the formation of a ________ that will eventually form the new cell walls of the daughter cells."
   answer="septum"
-  hint="This section names the structure that forms between the daughter nucleoids as the FtsZ ring recruits membrane and cell wall material."
+  hint="Reread the second paragraph of Binary Fission."
 >}}
 contractile ring
 cell plate
@@ -82,15 +96,13 @@ cytoskeleton
 septum
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe how the duplicated bacterial chromosomes are distributed into new daughter cells without the direction of the mitotic spindle." hint="Consider what the chromosome is attached to as the cell elongates." >}}
-As the chromosome is being duplicated, each origin moves away from the starting point of replication. The chromosomes are attached to the cell membrane via proteins; the growth of the membrane as the cell elongates aids in their movement.
-===CHECKS===
-each origin moves away from the starting point of replication
-the chromosomes are attached to the cell membrane
-growth of the membrane as the cell elongates aids their movement
-{{< /selfcheck >}}
+{{< textin
+  question="Ingrowth of membrane and cell wall material from the ________ of the cells results in the formation of a septum that eventually constructs the separate cell walls of the daughter cells."
+  answer="periphery"
+  hint="Reread the last sentence of the section summary."
+>}}
 
-{{< selfcheck question="Name the common components of eukaryotic cell division and binary fission." hint="Think about what must happen to the genetic material and to the cytoplasm in any dividing cell." >}}
+{{< selfcheck question="Name the common components of eukaryotic cell division and binary fission." hint="Reread the section's opening paragraph." >}}
 The common components of eukaryotic cell division and binary fission are DNA duplication, segregation of duplicated chromosomes, and division of the cytoplasmic contents.
 ===CHECKS===
 DNA duplication
@@ -98,46 +110,32 @@ segregation of duplicated chromosomes
 division of the cytoplasmic contents
 {{< /selfcheck >}}
 
-{{< textin
-  question="The region of the prokaryotic chromosome where DNA replication begins is called the ________."
-  answer="origin"
-  accept="ORI|origin of replication"
-  hint="It sits close to where the chromosome binds to the plasma membrane."
->}}
-
-{{< textin
-  question="The structure that forms between the daughter nucleoids in a dividing bacterial cell, and that eventually becomes the new cell walls of the two daughter cells, is called the ________."
-  answer="septum"
-  accept="septa"
-  hint="A ring of a protein called FtsZ directs where this structure forms."
->}}
-
-{{< textin
-  question="The prokaryotic cell-division process in which a single circular chromosome is replicated and the cell splits into two genetically identical daughter cells is called ________."
-  answer="binary fission"
-  accept="prokaryotic fission|binary (prokaryotic) fission"
-  hint="It does not require karyokinesis, because there is no true nucleus to divide."
->}}
+{{< selfcheck question="Describe how the duplicated bacterial chromosomes are distributed into new daughter cells without the direction of the mitotic spindle." hint="Reread the second paragraph of Binary Fission." >}}
+As the chromosome is being duplicated, each origin moves away from the starting point of replication. The chromosomes are attached to the cell membrane via proteins; the growth of the membrane as the cell elongates aids in their movement.
+===CHECKS===
+each origin moves away from the starting point of replication
+the chromosomes are attached to the cell membrane
+growth of the membrane as the cell elongates aids their movement
+{{< /selfcheck >}}
 
 ### Explain how FtsZ and tubulin proteins are examples of homology
+
+{{< textin
+  question="Bacterial ________ is directed by a ring composed of a protein called FtsZ."
+  answer="cytokinesis"
+  hint="Reread the section summary's second-to-last sentence."
+>}}
 
 {{< multiplechoice
   question="According to this section, which statement correctly describes the evolutionary relationship between FtsZ and tubulin?"
   answer="FtsZ is the ancestor protein to tubulin"
-  hint="The section names one of the two proteins as the older, ancestral form from which the other evolved."
+  hint="Reread the second paragraph of the Evolution Connection."
 >}}
 FtsZ is the ancestor protein to tubulin
 Tubulin is the ancestor protein to FtsZ
 FtsZ and tubulin share no common evolutionary origin
 FtsZ evolved from tubulin after eukaryotes diversified
 {{< /multiplechoice >}}
-
-{{< textin
-  question="The tubulin-like protein that assembles into a ring to direct cytokinesis in prokaryotic cells — its name short for “filamenting temperature-sensitive mutant Z” — is called ________."
-  answer="FtsZ"
-  accept="Fts Z"
-  hint="It is structurally and functionally similar to tubulin, the building block of the eukaryotic mitotic spindle."
->}}
 
 {{< sortbins question="Assign each cell-division feature to the group of organisms it belongs to." hint="Revisit the Evolution Connection table — genetic-material structure, nuclear division, and daughter-cell separation for each group of organisms." >}}
 {
@@ -156,4 +154,4 @@ FtsZ evolved from tubulin after eukaryotes diversified
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 10.5: Prokaryotic Cell Division](https://openstax.org/books/biology-2e/pages/10-5-prokaryotic-cell-division) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" (it is a labeled illustration, not a photograph), with a longdesc added since its five numbered steps are not carried by its caption; the source's cross-reference to a figure in this chapter's first section is rendered as a descriptive phrase, and the remaining in-text figure and table references are rendered as descriptive phrases ("as shown below," "the table below") since figures and tables are not numbered here; the Evolution Connection feature box (with its nested comparison table) rendered as a callout with its bold name; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block as multiple choice and self-check respectively, with the second Review Question's keyed option corrected from "cell plate" to "septum" (see the source ledger); and five key-term recall items added from the glossary — four from the section's own four glossary terms and one multiple choice written from the feature box's own text — to give each objective group an auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one sort-into-bins exercise added under the homology objective, its items and assignments taken from the Evolution Connection table's own rows (tab-ch10_05_01).</small>
+<small>This section is adapted from [Biology 2e, Section 10.5: Prokaryotic Cell Division](https://openstax.org/books/biology-2e/pages/10-5-prokaryotic-cell-division) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" (it is a labeled illustration, not a photograph), with a longdesc added since its five numbered steps are not carried by its caption; the source's cross-reference to a figure in this chapter's first section is rendered as a descriptive phrase, and the remaining in-text figure and table references are rendered as descriptive phrases ("as shown below," "the table below") since figures and tables are not numbered here; the Evolution Connection feature box (with its nested comparison table) rendered as a callout with its bold name; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block as multiple choice and self-check respectively, with the second Review Question's keyed option corrected from "cell plate" to "septum" (see the source ledger); one key-term recall item (origin) added from the glossary and three summary-derived recall items (nucleus and periphery under the binary-fission objective, cytokinesis under the homology objective), each a cloze of one summary sentence — glossary items for binary fission and FtsZ are not used because the objective headings print those terms, and none for septum because it would re-ask the second Review Question — plus one multiple choice written from the feature box's own text; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one sort-into-bins exercise added under the homology objective, its items and assignments taken from the Evolution Connection table's own rows (tab-ch10_05_01).</small>

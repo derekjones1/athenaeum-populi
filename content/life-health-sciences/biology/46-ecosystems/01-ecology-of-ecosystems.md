@@ -63,7 +63,7 @@ The relative energy in trophic levels in a Silver Springs, Florida, ecosystem is
 
 There is one problem when using food chains to accurately describe most ecosystems. Even when all organisms are grouped into appropriate trophic levels, some of these organisms can feed on species from more than one trophic level; likewise, some of these organisms can be eaten by species from multiple trophic levels. In other words, the linear model of ecosystems, the food chain, is not completely descriptive of ecosystem structure. A holistic model—which accounts for all the interactions between different species and their complex interconnected relationships with each other and with the environment—is a more accurate and descriptive model for ecosystems. A **food web** is a graphic representation of a holistic, nonlinear web of primary producers, primary consumers, and higher-level consumers used to describe ecosystem structure and dynamics.
 
-{{< mediafigure src="biology/Figure_B46_01_05" kind="diagram" alt="A food web diagram with four tiers of boxed organism icons rising from primary producers at the bottom to apex consumers at the top, each tier outlined in a different color, connected by arrows pointing from each consumed organism up to the organisms that consume it." longdesc="Reading bottom to top. Bottom row, outlined green (primary producers), four boxes: Diatoms, Green algae, Blue-green algae, Flagellates. Second row, outlined orange (primary consumers), nine boxes: Zebra/Quagga mussels, Chironomids, Mollusks, Calanoids, Native waterflea, Raptorial waterflea, Rotifers, Amphipods, Invasive waterflea. Third row, outlined blue (secondary consumers), nine boxes: Lake Whitefish, Round Goby, Slimy Sculpin, Rainbow Smelt, Yellow Perch, Alewife, American Eel, Opossum Shrimp, Cyclopoids. Top row, outlined purple (tertiary/apex consumers), ten boxes: Sea Lamprey at the upper left, then Burbot, Lake Trout, Chinook Salmon, Coho Salmon, Smallmouth Bass, Brown Trout, Rainbow Trout, Walleye, Atlantic Salmon. Green arrows generally run from every primary producer box up to every primary consumer box, orange arrows from every primary consumer up to every secondary consumer, and blue arrows from every secondary consumer up to every tertiary/apex consumer, with six exceptions: Lake Whitefish eats only Zebra/Quagga mussels; Round Goby eats every primary consumer; every other secondary consumer eats every primary consumer except Zebra/Quagga mussels; Yellow Perch also eats two of its own row, Slimy Sculpin and Rainbow Smelt; Opossum Shrimp eats the primary consumers in the row below it and also reaches down two rows to eat all four primary producers; and Sea Lamprey, at the top, eats every tertiary and secondary consumer." >}}
+{{< mediafigure src="biology/Figure_B46_01_05" kind="diagram" alt="A food web diagram with four tiers of boxed organism icons rising from primary producers at the bottom to apex consumers at the top, each tier outlined in a different color, connected by arrows pointing from each consumed organism up to the organisms that consume it." longdesc="Reading bottom to top. Bottom row, outlined green (primary producers), four boxes: Diatoms, Green algae, Blue-green algae, Flagellates. Second row, outlined orange (primary consumers), nine boxes: Zebra/Quagga mussels, Chironomids, Mollusks, Calanoids, Native waterflea, Raptorial waterflea, Rotifers, Amphipods, Invasive waterflea. Third row, outlined blue (secondary consumers), nine boxes: Lake Whitefish, Round Goby, Slimy Sculpin, Rainbow Smelt, Yellow Perch, Alewife, American Eel, Opossum Shrimp, Cyclopoids. Top row, outlined purple (tertiary/apex consumers), ten boxes: Sea Lamprey at the upper left, then Burbot, Lake Trout, Chinook Salmon, Coho Salmon, Smallmouth Bass, Brown Trout, Rainbow Trout, Walleye, Atlantic Salmon. Green arrows generally run from every primary producer box up to every primary consumer box, orange arrows from every primary consumer up to every secondary consumer, and blue arrows from every secondary consumer up to every tertiary/apex consumer, with six exceptions: Lake Whitefish eats only Zebra/Quagga mussels and is itself eaten only by Sea Lamprey, not by every tertiary/apex consumer; Round Goby eats every primary consumer; every other secondary consumer eats every primary consumer except Zebra/Quagga mussels; Yellow Perch also eats two of its own row, Slimy Sculpin and Rainbow Smelt, and Rainbow Smelt's only outgoing arrow feeds Yellow Perch rather than any tertiary/apex consumer; Opossum Shrimp eats the primary consumers in the row below it and also reaches down two rows to eat all four primary producers; and Sea Lamprey, at the top, eats every tertiary consumer and every secondary consumer except Rainbow Smelt." >}}
 This food web shows the interactions between organisms across trophic levels in the Lake Ontario ecosystem. Primary producers are outlined in green, primary consumers in orange, secondary consumers in blue, and tertiary (apex) consumers in purple. Arrows point from an organism that is consumed to the organism that consumes it. Notice how some lines point to more than one trophic level. For example, the opossum shrimp eats both primary producers and primary consumers. (credit: NOAA, GLERL)
 {{< /mediafigure >}}
 
@@ -113,7 +113,7 @@ To model the cycling of mineral nutrients, organic and inorganic nutrients are s
 
 Conceptual models are also used to show the flow of energy through particular ecosystems. The figure below is based on Howard T. Odum's classical study of the Silver Springs, Florida, holistic ecosystem in the mid-twentieth century (Howard T. Odum, "Trophic Structure and Productivity of Silver Springs, Florida," *Ecological Monographs* 27, no. 1 (1957): 47–112). This study shows the energy content and transfer between various ecosystem compartments.
 
-{{< mediafigure src="biology/Figure_46_01_07-b018" kind="diagram" alt="A flow chart with a sunlight circle at the top feeding down through a vertical stack of four consumer-level boxes and a decomposers box, connected by green downward arrows; a red line branches from each level toward a Total heat and respiration box on the left, and a blue line branches from each level toward the Decomposers box on the right, with a Gross productivity/Net productivity color key below." longdesc="Reading top to bottom. A Sunlight circle at the top reads 1,700,000 kcal/m²/yr, feeding a green arrow down into the Primary producers box, which prints two values stacked: 20,810 (light blue fill, Gross productivity) above 7,623 (salmon fill, Net productivity). A red line branches left from Primary producers labeled 13,187, running down the left margin; a blue line branches right labeled 4,250, running down the right margin. A green arrow carries the remainder down into Primary consumers, printing 3,373 above 1,103, with a red branch of 2,270 to the left margin and a blue branch of 720 to the right margin. A green arrow continues into Secondary consumers, printing 383 above 111, with a red branch of 272 and a blue branch of 90. A green arrow continues into Tertiary consumers, printing 21 above 5, with a red branch of 16 and a blue branch of 5. The right-margin blue line, having collected the 4,250, 720, 90, and 5 branches, arrives at a Decomposers box that prints 5,065. The left-margin red line, having collected the 13,187, 2,270, 272, and 16 branches plus the Decomposers box's 5,065, arrives at a boxed label reading Total heat and respiration, 20,810. A key below the chart marks the light blue fill as Gross productivity and the salmon fill as Net productivity." >}}
+{{< mediafigure src="biology/Figure_46_01_07-b018" kind="diagram" alt="A flow chart with a sunlight circle at the top feeding down through a vertical stack of four trophic-level boxes (primary producers and three consumer levels) and a decomposers box, connected by downward arrows (yellow from the sun, green below); a red line branches from each level toward a Total heat and respiration box on the left, and a blue line branches from each level toward the Decomposers box on the right, with a Gross productivity/Net productivity color key below." longdesc="Reading top to bottom. A Sunlight circle at the top reads 1,700,000 kcal/m²/yr, feeding a yellow arrow down into the Primary producers box, which prints two values stacked: 20,810 (light blue fill, Gross productivity) above 7,623 (salmon fill, Net productivity). A red line branches left from Primary producers labeled 13,187, running down the left margin beside the vertical printed label 'respiration + heat'; a blue line branches right labeled 4,250, running down the right margin beside the vertical printed label 'to decomposers'. A green arrow carries the remainder down into Primary consumers, printing 3,373 above 1,103, with a red branch of 2,270 to the left margin and a blue branch of 720 to the right margin. A green arrow continues into Secondary consumers, printing 383 above 111, with a red branch of 272 and a blue branch of 90. A green arrow continues into Tertiary consumers, printing 21 above 5, with a red branch of 16 and a blue branch of 5, and a last green arrow runs from Tertiary consumers down into the Decomposers box. The right-margin blue line, having collected the 4,250, 720, 90, and 5 branches, arrives at a Decomposers box that prints 5,065. The left-margin red line, having collected the 13,187, 2,270, 272, and 16 branches plus the Decomposers box's 5,065, arrives at a boxed label reading Total heat and respiration, 20,810. A key below the chart marks the light blue fill as Gross productivity and the salmon fill as Net productivity." >}}
 This conceptual model shows the flow of energy through a spring ecosystem in Silver Springs, Florida. Notice that the energy decreases with each increase in trophic level.
 {{< /mediafigure >}}
 
@@ -169,6 +169,12 @@ Ecosystems exist on land, at sea, in the air, and underground. Different ways of
 
 ### Describe the basic ecosystem types
 
+{{< textin
+  question="A community of living organisms together with their interactions with the surrounding, nonliving physical environment is called a(n) ________."
+  answer="ecosystem"
+  hint="This term names the whole system — the organisms plus the nonliving surroundings they interact with — not just the organisms by themselves."
+>}}
+
 {{< multiplechoice
   question="The ability of an ecosystem to return to its equilibrium state after an environmental disturbance is called ________."
   answer="resilience"
@@ -188,18 +194,12 @@ ocean ecosystems are the most common and are responsible for much of the photosy
 terrestrial ecosystems are very diverse and are grouped based on their species and environment (biome), which includes forests, deserts, and tundras
 {{< /selfcheck >}}
 
-{{< textin
-  question="A community of living organisms together with their interactions with the surrounding, nonliving physical environment is called a(n) ________."
-  answer="ecosystem"
-  hint="This term names the whole system — the organisms plus the nonliving surroundings they interact with — not just the organisms by themselves."
->}}
-
 ### Explain the methods that ecologists use to study ecosystem structure and dynamics
 
 {{< multiplechoice
   question="A re-created ecosystem in a laboratory environment is known as a ________."
   answer="microcosm"
-  hint="The word is built from a prefix meaning 'small' plus 'world' — think about rebuilding an entire ecosystem indoors, as opposed to only partitioning off a piece of a natural one."
+  hint="Reread the sentence in the experimentation-and-modeling subsection that names the two kinds of controlled experimental system."
 >}}
 mesocosm
 simulation
@@ -223,10 +223,23 @@ since the ecologist is populating the environment, they can control the variable
 {{< textin
   question="The study of the changes in structure of a natural system, caused by shifts in its environment or by forces within it, is called ________."
   answer="ecosystem dynamics"
-  hint="Pair the word for the community-plus-environment system being studied with the word ecologists use for its ongoing pattern of change."
+  hint="The opening sentence of the subsection on experimentation and modeling defines this field of study."
 >}}
 
 ### Identify the different methods of ecosystem modeling
+
+{{< textin
+  question="An ecosystem model built from flow charts that show how the living and nonliving parts of a system interact is called a(n) ________."
+  answer="conceptual model"
+  accept="compartment model"
+  hint="This is the descriptive, flow-chart type of model, not the kind built from mathematical formulas or from complex computer code."
+>}}
+
+{{< textin
+  question="An ecosystem model built using complex computer programs to holistically predict how disturbances will affect a system is called a(n) ________."
+  answer="simulation model"
+  hint="This is the most computationally demanding of the three model types, capable of running individual-based modeling of every organism."
+>}}
 
 {{< multiplechoice
   question="What term describes the use of mathematical equations in the modeling of linear aspects of ecosystems?"
@@ -247,19 +260,6 @@ conceptual models are more descriptive than quantitative, so it is difficult to 
 analytical modeling predicts how the ecosystem's relationships change in response to disturbances but does not convey the complexity seen with conceptual modeling
 {{< /selfcheck >}}
 
-{{< textin
-  question="An ecosystem model built from flow charts that show how the living and nonliving parts of a system interact is called a(n) ________."
-  answer="conceptual model"
-  accept="compartment model"
-  hint="This is the descriptive, flow-chart type of model, not the kind built from mathematical formulas or from complex computer code."
->}}
-
-{{< textin
-  question="An ecosystem model built using complex computer programs to holistically predict how disturbances will affect a system is called a(n) ________."
-  answer="simulation model"
-  hint="This is the most computationally demanding of the three model types, capable of running individual-based modeling of every organism."
->}}
-
 ### Differentiate between food chains and food webs and recognize the importance of each
 
 {{< multiplechoice
@@ -276,7 +276,7 @@ aquatic
 {{< multiplechoice
   question="The primary producers in an ocean grazing food web are usually ________."
   answer="phytoplankton"
-  hint="Land-based grazing food webs start with plants — what is the ocean's photosynthetic equivalent, floating near the water's surface?"
+  hint="Reread the paragraph on the bottom of the food chain, and the description of ocean ecosystems early in the section."
 >}}
 plants
 animals
@@ -298,7 +298,7 @@ microcosm
 {{< multiplechoice
   question="The loss of an apex consumer would impact which trophic level of a food web?"
   answer="all of the above"
-  hint="Removing the top of a food web can ripple down through every level beneath it — consider how many trophic levels ultimately depend, directly or indirectly, on what the apex consumer keeps in check."
+  hint="Trace the Lake Ontario food web figure from the apex consumer downward, following which organisms are linked to it directly or indirectly."
 >}}
 primary producers
 primary consumers
@@ -337,4 +337,4 @@ decomposers make mineral nutrients available to primary producers, a vital link 
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 46.1: Ecology of Ecosystems](https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_46_01_03 (the Lake Ontario food chain) and Figure_46_01_04 (the trophic-level bar graph) re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are illustrations, not captured photographs); a longdesc added to Figure_46_01_03, Figure_46_01_04, Figure_B46_01_05, and Figure_46_01_07-b018, each walking the diagram in reading order and, for the two graphs, transcribing every printed value or axis position (the Visual Connection figure's longdesc names only the printed values and arrows and never states the first-law reasoning that answers the question beneath it); the Figure_B46_01_05 food web's long source alt (1,371 characters, over the 600-character limit) was shortened to a plain visible-structure description with the full organism list, tier colors, and the six feeding exceptions moved into its longdesc; the source's underline emphasis on "Food Web" in the food-web Link to Learning note is rendered as bold; both Link to Learning notes rendered as callouts with descriptive link text, keeping the source's own openstax.org/l/ redirect URLs exactly as printed, including the second Darwin-Project URL's own misspelling ("Darwin_projct2"); the evolution note ("Evolution Connection. *Three-spined Stickleback.*") rendered as a callout with its figure and footnote citation kept inline as a parenthetical; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), and the Visual Connection kept in the body, immediately after its figure, as a self-check (the module keys it with prose, not a lettered choice); rubric checkpoints added to every self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (ecosystem, mesocosm, ecosystem dynamics, conceptual model, simulation model) to give two Practice groups an additional auto-graded item; four-plus-digit energy values in prose given digit-grouping commas for consistency with the figures (3368 → 3,368); no summary or locally authored practice item was needed — the module's fourteen keyed exercises already meet the section's practice floor with every objective covered by at least one source item. Source defect: module `m66701`'s own prose (paragraph beginning "The loss of energy between trophic levels...") states the primary producers' and primary consumers' Silver Springs values as 20,819 and 3,368 kcal/m²/yr, while the module's own Figure_46_01_07-b018 (the Visual Connection energy-flow diagram, drawing on the same Odum 1957 study) prints 20,810 and 3,373 kcal/m²/yr for the same two quantities — both figures are printed as shown in the pinned CNXML and the local PDF (pp. 1376 and 1381), reported here as a source defect rather than corrected, since the page transcribes each value exactly as printed in its own location. One date is corrected with a visible Source note: Odum's Silver Springs study is from the 1950s, not the 1940s (erratum 457).</small>
+<small>This section is adapted from [Biology 2e, Section 46.1: Ecology of Ecosystems](https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_46_01_03 (the Lake Ontario food chain) and Figure_46_01_04 (the trophic-level bar graph) re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are illustrations, not captured photographs); a longdesc added to Figure_46_01_03, Figure_46_01_04, Figure_B46_01_05, and Figure_46_01_07-b018, each walking the diagram in reading order and, for the two graphs, transcribing every printed value or axis position (the Visual Connection figure's longdesc names only the printed values and arrows and never states the first-law reasoning that answers the question beneath it); the Figure_B46_01_05 food web's long source alt (1,371 characters, over the 600-character limit) was shortened to a plain visible-structure description with the full organism list, tier colors, and the six feeding exceptions moved into its longdesc, two of which are corrected from the source's own claim that the blue arrows run from *every* secondary consumer to every tertiary/apex consumer: Lake Whitefish's only blue arrow, zoomed, goes to Sea Lamprey alone, and Rainbow Smelt's only outgoing arrow, zoomed, feeds Yellow Perch (its own row) and reaches no tertiary/apex consumer, so Sea Lamprey's own exception is now "every secondary consumer except Rainbow Smelt" — reported as a source defect below; the source's underline emphasis on "Food Web" in the food-web Link to Learning note is rendered as bold; both Link to Learning notes rendered as callouts with descriptive link text, keeping the source's own openstax.org/l/ redirect URLs exactly as printed, including the second Darwin-Project URL's own misspelling ("Darwin_projct2"); the evolution note ("Evolution Connection. *Three-spined Stickleback.*") rendered as a callout with its figure and footnote citation kept inline as a parenthetical; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), and the Visual Connection kept in the body, immediately after its figure, as a self-check (the module keys it with prose, not a lettered choice); rubric checkpoints added to every self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (ecosystem, mesocosm, ecosystem dynamics, conceptual model, simulation model) to give two Practice groups an additional auto-graded item; four-plus-digit energy values in prose given digit-grouping commas for consistency with the figures (3368 → 3,368); no summary or locally authored practice item was needed — the module's fourteen keyed exercises already meet the section's practice floor with every objective covered by at least one source item. Source defect: module `m66701`'s own media alt for Figure_B46_01_05 says "Sea lamprey eat all tertiary and secondary consumers," but the artwork draws no blue arrow from Rainbow Smelt to Sea Lamprey (or to any tertiary/apex consumer) — Rainbow Smelt's only outgoing arrow feeds Yellow Perch, in its own row; the page's longdesc now states the exception. Source defect: module `m66701`'s own prose (paragraph beginning "The loss of energy between trophic levels...") states the primary producers' and primary consumers' Silver Springs values as 20,819 and 3,368 kcal/m²/yr, while the module's own Figure_46_01_07-b018 (the Visual Connection energy-flow diagram, drawing on the same Odum 1957 study) prints 20,810 and 3,373 kcal/m²/yr for the same two quantities — both figures are printed as shown in the pinned CNXML and the local PDF (pp. 1376 and 1381), reported here as a source defect rather than corrected, since the page transcribes each value exactly as printed in its own location. One date is corrected with a visible Source note: Odum's Silver Springs study is from the 1950s, not the 1940s (erratum 457).</small>

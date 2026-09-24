@@ -189,8 +189,8 @@ glucose monomers are the constituents of starch, glycogen, and cellulose
 ### 3.2 Carbohydrates
 
 {{< textin
-  question="The nitrogen-containing polysaccharide that forms the exoskeleton of arthropods and the cell walls of fungi is called ________."
-  answer="chitin"
+  question="A monosaccharide such as glucose, with six carbons in its backbone, is classified as a(n) ________."
+  answer="hexose"
 >}}
 
 {{< selfcheck question="How does dietary fiber help remove excess cholesterol from the body?" >}}
@@ -215,8 +215,8 @@ sucrose
 ### 3.3 Lipids
 
 {{< textin
-  question="A lipid made of long-chain fatty acids esterified to long-chain alcohols, which forms a protective coating on some feathers and leaf surfaces, is called a ________."
-  answer="wax"
+  question="A drop of phospholipids placed in water spontaneously forms a structure in which the hydrophilic phosphate heads face the outside and the fatty acids face the interior. This structure is called a ________."
+  answer="micelle"
 >}}
 
 {{< selfcheck question="What health benefits are associated with omega-3 fatty acids?" >}}

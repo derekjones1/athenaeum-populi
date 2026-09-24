@@ -21,7 +21,7 @@ The kingdom Fungi contains five major phyla that were established according to t
 
 The five true phyla of fungi are the Chytridiomycota (Chytrids), the Zygomycota (conjugated fungi), the Ascomycota (sac fungi), the Basidiomycota (club fungi) and the recently described Phylum Glomeromycota (pictured below).
 
-{{< mediafigure src="biology/Figure_B24_02_01" kind="diagram" eager="true" alt="A cladogram with six lineages branching from a shared common ancestor: Basidiomycota, Ascomycota, Glomeromycota, Zygomycota, and Chytridiomycota nested together as fungal lineages, with Animalia branching separately outside the fungi." longdesc="The tree's root sits at the bottom and its six tip labels — each paired with a small drawn icon — read left to right: Basidiomycota (a cluster of yellow mushrooms), Ascomycota (an orange morel), Glomeromycota (an olive branching structure with round spores), Zygomycota (a gray branching sporangium structure), Chytridiomycota (a purple branching structure), and Animalia (a red ant), each on its own colored vertical line. Basidiomycota's yellow line and Ascomycota's orange line join first, closest to the tips, in an orange node. That combined line joins Glomeromycota's olive line next, in an olive node. That combined line then joins Zygomycota's gray line, in a purple node, and the result joins Chytridiomycota's purple line in a second purple node — grouping all five fungal phyla into one lineage. That fungal lineage finally joins Animalia's red line at the tree's root, the common ancestor shared by fungi and animals." >}}
+{{< mediafigure src="biology/Figure_B24_02_01" kind="diagram" eager="true" alt="A cladogram with six lineages branching from a shared common ancestor: Basidiomycota, Ascomycota, Glomeromycota, Zygomycota, and Chytridiomycota nested together as fungal lineages, with Animalia branching separately outside the fungi." longdesc="The tree's root sits at the bottom and its six tip labels — each paired with a small drawn icon — read left to right: Basidiomycota (a cluster of yellow mushrooms), Ascomycota (an orange morel), Glomeromycota (an olive branching structure with round spores), Zygomycota (a gray branching sporangium structure), Chytridiomycota (a purple branching structure), and Animalia (a red ant), each on its own colored vertical line. Basidiomycota's yellow line and Ascomycota's orange line join first, closest to the tips, in an orange node. That combined line joins Glomeromycota's olive line next, in an olive node. That combined line, Zygomycota's gray line, and Chytridiomycota's purple line then all meet on one horizontal bar, a single three-way node with no order of branching shown among them — grouping all five fungal phyla into one lineage. That fungal lineage finally joins Animalia's red line at the tree's root, the common ancestor shared by fungi and animals." >}}
 Fungal phyla. Note: "-mycota" is used to designate a phylum while "-mycetes" formally denotes a class or is used informally to refer to all members of the phylum.
 {{< /mediafigure >}}
 
@@ -86,7 +86,7 @@ The lifecycle of basidiomycetes includes sexual and asexual reproduction (illust
 
 Each basidiospore germinates and generates *monokaryotic haploid hyphae*. The mycelium that results is called a primary mycelium. Mycelia of different mating strains can combine and produce a secondary mycelium that contains haploid nuclei of two different mating strains. This is the dominant dikaryotic stage of the basidiomycete life cycle. Thus, each cell in this mycelium has two haploid nuclei, which will not fuse until formation of the basidium. Eventually, the secondary mycelium generates a **basidiocarp**, a fruiting body that protrudes from the ground—this is what we think of as a mushroom. The basidiocarp bears the developing basidia on the gills under its cap.
 
-{{< mediafigure src="biology/Figure_B24_02_07" kind="diagram" alt="A circular life-cycle diagram titled 'Basidiomycete Life Cycle,' with plus and minus mating-type mycelia fusing into a dikaryotic mycelium that grows into a mushroom-shaped structure labeled 'Basidiocarp,' with club-shaped cells labeled 'Basidia' in its gills that release basidiospores back into the cycle." longdesc="The cycle runs counterclockwise from the upper left, down the left side, along the bottom, and up the right. Germination produces plus and minus mating-type mycelia (1n), each cell shown with a red or blue dot. Plasmogamy fuses the two mating types into a dikaryotic mycelium whose cells each carry one red and one blue dot. Under the right conditions, mitosis of this mycelium produces a mushroom-shaped structure labeled 'Basidiocarp'; club-shaped cells in its gills are labeled 'Basidia.' Karyogamy inside each basidium fuses the two nuclei into a diploid (2n) zygote. Meiosis then produces a basidium with four haploid nuclei (1n), drawn as four purple dots. Cell division forms four basidiospores, which are dispersed and germinate, completing the cycle back to new mycelia." >}}
+{{< mediafigure src="biology/Figure_B24_02_07" kind="diagram" alt="A circular life-cycle diagram titled 'Basidiomycete Life Cycle,' with plus and minus mating-type mycelia fusing into a dikaryotic mycelium that grows into a mushroom-shaped structure labeled 'Basidiocarp,' whose gills carry a pointer labeled 'Basidia'; the basidia release basidiospores back into the cycle." longdesc="The cycle runs counterclockwise from the upper left, down the left side, along the bottom, and up the right. Germination produces plus and minus mating-type mycelia (1n), each cell shown with a red or blue dot. Plasmogamy fuses the two mating types into a dikaryotic mycelium whose cells each carry one red and one blue dot. Under the right conditions, mitosis of this mycelium produces a mushroom-shaped structure labeled 'Basidiocarp'; a pointer labeled 'Basidia' marks the lined gills under its cap (the basidia are not drawn as separate cells). Karyogamy inside each basidium fuses the two nuclei into a diploid (2n) zygote. Meiosis then produces a basidium with four haploid nuclei (1n), drawn as four purple dots. Cell division forms four basidiospores, drawn as four circles with purple dots; an arrow labeled 'Dispersal and germination' leads up to a cluster of five spores at the top labeled 'Basidiospores (n),' each with a black dot, and an arrow leads from them back to new mycelia, completing the cycle." >}}
 Basidiomycete life cycle. The lifecycle of a basidiomycete has sexual and asexual reproduction with haploid and dikaryotic mycelia. Haploid primary mycelia fuse to form a dikaryotic secondary mycelium, which is the dominant stage of the life cycle, and produces the basidiocarp.
 {{< /mediafigure >}}
 
@@ -200,18 +200,25 @@ Deuteromycota
 {{< textin
   question="The fungal phylum whose spores form inside a specialized structure called an ascus is ________."
   answer="Ascomycota"
-  accept="sac fungi"
+  accept="sac fungi|sac fungus|ascomycete"
   hint="Baker's and brewer's yeast, along with truffles and morels, belong to this phylum."
 >}}
 
 {{< textin
-  question="The fungal phylum that includes the familiar bread mold and produces a zygote inside a thick-walled sporangium-forming structure is called ________."
+  question="The fungal phylum that includes the familiar bread mold, and whose plus and minus haploid mating types conjugate during sexual reproduction, is called ________."
   answer="Zygomycota"
-  accept="conjugated fungi"
+  accept="conjugated fungi|conjugated fungus|zygomycete"
   hint="Rhizopus stolonifer, the fungus that grows on bread and fruit, is this phylum's best-known example."
 >}}
 
 ### Describe each phylum in terms of major representative species and patterns of reproduction
+
+{{< textin
+  question="In zygomycetes, the thick-coated structure that protects the developing zygote from desiccation until conditions favor germination is called a ________."
+  answer="zygospore"
+  accept="zygosporangium|zygosporangia"
+  hint="This structure's parent phylum's two mating strains are labeled type + and type – in this section."
+>}}
 
 {{< selfcheck question="What is the advantage for a basidiomycete to produce a showy and fleshy fruiting body?" hint="Think about how animals interact with a mushroom's spores." >}}
 By ingesting spores and disseminating them in the environment as waste, animals act as agents of dispersal. The benefit to the fungus outweighs the cost of producing fleshy fruiting bodies.
@@ -231,30 +238,23 @@ Basidiomycota have multicellular bodies; features include sexual spores in the b
 {{< /selfcheck >}}
 
 {{< textin
-  question="In zygomycetes, the thick-coated structure that protects the developing zygote from desiccation until conditions favor germination is called a ________."
-  answer="zygospore"
-  accept="zygosporangium|zygosporangia"
-  hint="This structure's parent phylum's two mating strains are labeled type + and type – in this section."
->}}
-
-{{< textin
   question="The club-shaped reproductive cell found on the gills beneath a mushroom's cap, where spores form, is called a ________."
   answer="basidium"
   accept="basidia"
-  hint="Its plural form gives the whole phylum, Basidiomycota, its name."
+  hint="Reread the club fungi subsection, on where a mushroom forms its spores."
 >}}
 
 {{< multiplechoice
-  question="In the Basidiomycota (club fungi), the sexual phase predominates, producing showy fruiting bodies that contain club-shaped structures called ________, within which spores form."
-  answer="basidia"
-  hint="This section's summary sentence about the Basidiomycota names these club-shaped, spore-forming structures directly."
+  question="Chytridiomycota (chytrids) reproduce both sexually and asexually; the asexual spores are called ________."
+  answer="zoospores"
+  hint="Reread this section's summary, at its sentences on the chytrids."
 >}}
-asci
-conidiophores
-basidia
-zygospores
+basidiospores
+zoospores
+ascospores
+conidiospores
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 24.2: Classifications of Fungi](https://openstax.org/books/biology-2e/pages/24-2-classifications-of-fungi) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the chytrid-host micrograph's alt describes the arthropod's body as dark and speckled with translucent appendages, because the source alt's "transparent organism" does not match the image (erratum 840); Figure_B24_02_01 and Figure_B24_02_02 re-kinded from the manifest's file-extension "photo" guess to "diagram" since both are drawn schematics, not photographs; a longdesc added to five figures whose diagram labels, life-cycle stages, or pointer-line labels are not carried by their one-line captions (Figure_B24_02_01, Figure_B24_02_02, Figure_B24_02_04, Figure_B24_02_07, and Figure_24_02_05); the over-600-character source alts for Figure_B24_02_01, Figure_B24_02_02, Figure_B24_02_04, and Figure_B24_02_07 condensed to short descriptions with their step-by-step walk-throughs moved into a longdesc, and the two Visual-Connection figures' (Figure_B24_02_04, Figure_B24_02_07) short alts written to describe structure without stating which multiple-choice option is correct; Figure_24_02_03abf's source alt description of "green mold" replaced with a plain description of the grayish-white fuzz actually visible in the image, matching the source caption's own "white fuzz"; the Fairy Ring caption's stray trailing "]" (a source typesetting artifact) dropped; bare in-text figure cross-references rendered as "(pictured below)" / "(shown below)" / "(illustrated below)" since Hugo does not number figures; the two feature boxes wrapping Visual Connection questions rendered as their figure followed by a multiple choice, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (Ascomycota, Zygomycota, zygospore, basidium) added from the glossary; one summary-derived select-the-term multiple choice (basidia) added under the second objective, since its two Critical Thinking self-checks alone leave that group under this book's per-group floor. The mycorrhiza review question's stem was reworded to this section's own sentence about the Glomeromycota ("all of which are involved in close associations with the roots of trees"), because the source stem was also true of the Ascomycota and Basidiomycota distractors by the Ecology of Fungi section; options and key unchanged (erratum 418).</small>
+<small>This section is adapted from [Biology 2e, Section 24.2: Classifications of Fungi](https://openstax.org/books/biology-2e/pages/24-2-classifications-of-fungi) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the chytrid-host micrograph's alt describes the arthropod's body as dark and speckled with translucent appendages, because the source alt's "transparent organism" does not match the image (erratum 840); Figure_B24_02_01 and Figure_B24_02_02 re-kinded from the manifest's file-extension "photo" guess to "diagram" since both are drawn schematics, not photographs; a longdesc added to five figures whose diagram labels, life-cycle stages, or pointer-line labels are not carried by their one-line captions (Figure_B24_02_01, Figure_B24_02_02, Figure_B24_02_04, Figure_B24_02_07, and Figure_24_02_05); the over-600-character source alts for Figure_B24_02_01, Figure_B24_02_02, Figure_B24_02_04, and Figure_B24_02_07 condensed to short descriptions with their step-by-step walk-throughs moved into a longdesc, and the two Visual-Connection figures' (Figure_B24_02_04, Figure_B24_02_07) short alts written to describe structure without stating which multiple-choice option is correct; Figure_24_02_03abf's source alt description of "green mold" replaced with a plain description of the grayish-white fuzz actually visible in the image, matching the source caption's own "white fuzz"; the Fairy Ring caption's stray trailing "]" (a source typesetting artifact) dropped; bare in-text figure cross-references rendered as "(pictured below)" / "(shown below)" / "(illustrated below)" since Hugo does not number figures; the two feature boxes wrapping Visual Connection questions rendered as their figure followed by a multiple choice, kept in the body; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (Ascomycota, Zygomycota, zygospore, basidium) added from the glossary; one summary-derived select-the-term multiple choice (zoospores, from the chytrid sentence) added under the second objective, since its two Critical Thinking self-checks alone leave that group under this book's per-group floor. The mycorrhiza review question's stem was reworded to this section's own sentence about the Glomeromycota ("all of which are involved in close associations with the roots of trees"), because the source stem was also true of the Ascomycota and Basidiomycota distractors by the Ecology of Fungi section; options and key unchanged (erratum 418).</small>

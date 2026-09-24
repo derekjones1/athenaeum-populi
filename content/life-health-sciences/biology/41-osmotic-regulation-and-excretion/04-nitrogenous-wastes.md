@@ -38,7 +38,7 @@ The theory of evolution proposes that life started in an aquatic environment. It
 
 Birds, reptiles, and most terrestrial arthropods convert toxic ammonia to **uric acid** or the closely related compound guanine (guano) instead of urea. Mammals also form some uric acid during breakdown of nucleic acids. Uric acid is a compound similar to purines found in nucleic acids. It is water insoluble and tends to form a white paste or powder; it is excreted by birds, insects, and reptiles. Conversion of ammonia to uric acid requires more energy and is much more complex than conversion of ammonia to urea, shown below.
 
-{{< mediafigure src="biology/Figure_41_04_02abc" kind="diagram" alt="Three side-by-side panels, each pairing a photograph of an animal with the chemical structure of the nitrogenous waste it excretes: (a) a fish beside the small ammonia molecule, (b) a wood rat beside the urea molecule, and (c) a pigeon beside the larger, two-ring uric acid molecule." longdesc="Three panels, left to right. Panel (a): a photograph of a fish beside the structure of ammonia (NH₃) and the caption 'Many invertebrates and aquatic species excrete ammonia.' Panel (b): a photograph of a wood rat beside the structure of urea — a central carbon double-bonded to an oxygen and single-bonded to two NH₂ groups — and the caption 'Mammals, many adult amphibians, and some marine species excrete urea.' Panel (c): a photograph of a pigeon beside the structure of uric acid — a six-membered carbon ring fused to a five-membered ring; each ring carries two NH groups; the six-membered ring has two oxygens double-bonded to it (one at the top, one at the lower right) and the five-membered ring one, at its left — and the caption 'Insects, land snails, birds, and many reptiles excrete uric acid.'" >}}
+{{< mediafigure src="biology/Figure_41_04_02abc" kind="diagram" alt="Three side-by-side panels, each pairing a photograph of an animal with the chemical structure of the nitrogenous waste it excretes: (a) a fish beside the small ammonia molecule, (b) a wood rat beside the urea molecule, and (c) a pigeon beside the larger, two-ring uric acid molecule." longdesc="Three panels, left to right. Panel (a): a photograph of a fish beside the printed formula NH₃ and the name Ammonia (no structure is drawn) and the caption 'Many invertebrates and aquatic species excrete ammonia.' Panel (b): a photograph of a wood rat beside the structure of urea — a central carbon double-bonded to an oxygen and single-bonded to two NH₂ groups — and the caption 'Mammals, many adult amphibians, and some marine species excrete urea.' Panel (c): a photograph of a pigeon beside the structure of uric acid — a six-membered ring fused to a five-membered ring, each ring made of carbon and nitrogen atoms; each ring carries two NH groups; the six-membered ring has two oxygens double-bonded to it (one at the top, one at the lower right) and the five-membered ring one, at its left — and the caption 'Insects, land snails, birds, and many reptiles excrete uric acid.'" >}}
 Nitrogenous waste is excreted in different forms by different species. These include (a) ammonia, (b) urea, and (c) uric acid. (credit a: modification of work by Eric Engbretson, USFWS; credit b: modification of work by B."Moose" Peterson, USFWS; credit c: modification of work by Dave Menke, USFWS)
 {{< /mediafigure >}}
 
@@ -79,13 +79,13 @@ Ammonia is the waste produced by metabolism of nitrogen-containing compounds lik
 {{< textin
   question="Animals that excrete ammonia as their primary waste material are said to be ________."
   answer="ammonotelic"
-  hint="The term uses the same root as the word for animals that instead secrete urea, attached to the name of the compound these animals release directly into water."
+  hint="Look in the paragraph after the learning objectives, where animals living in aquatic environments are discussed."
 >}}
 
 {{< textin
   question="Animals that secrete urea as their primary nitrogenous waste material are called ________ animals."
   answer="ureotelic"
-  hint="This term pairs the same ending as the word for ammonia-excreting animals with the name of the nitrogenous compound mammals make instead."
+  hint="Look at the last sentence of the paragraph after the learning objectives."
 >}}
 
 {{< selfcheck
@@ -103,7 +103,7 @@ arid conditions led to the evolution of the uric acid pathway as a means of cons
 {{< multiplechoice
   question="BUN is ________."
   answer="blood urea nitrogen"
-  hint="This term appears in the sentence about a lab measurement doctors use to judge how well the kidneys are filtering waste — work out what its four letters spell, not what it measures."
+  hint="Look at the last sentence of the second paragraph of the first section, just above the flow-chart figure."
 >}}
 blood urea nitrogen
 blood uric acid nitrogen
@@ -111,10 +111,17 @@ an indicator of blood volume
 an indicator of blood pressure
 {{< /multiplechoice >}}
 
+{{< textin
+  question="The pathway by which ammonia is converted to urea is called the ________."
+  answer="urea cycle"
+  accept="ornithine cycle"
+  hint="Look at the first sentence under the first section heading, and at the flow-chart figure's caption."
+>}}
+
 {{< multiplechoice
   question="Human beings accumulate ________ before excreting nitrogenous waste."
   answer="urea"
-  hint="Reread the section describing the cycle mammals use to detoxify ammonia in the liver — it names the one molecule made there and passed out in urine, distinct from the toxic gas of simple ammonia release and from the compound birds and reptiles use instead."
+  hint="Reread the paragraph after the learning objectives, where what mammals produce is compared with what reptiles produce."
 >}}
 nitrogen
 ammonia
@@ -135,10 +142,10 @@ conversion of ammonia to uric acid requires more energy and is much more complex
 {{< /selfcheck >}}
 
 {{< textin
-  question="The pathway by which ammonia is converted to urea is called the ________."
-  answer="urea cycle"
-  accept="ornithine cycle"
-  hint="This pathway is named after the intermediate amino acid that gets regenerated at its end — the module says it goes by two names, one for that molecule and one for what the whole pathway converts ammonia into."
+  question="An agent that protects cells from being destroyed by reactive oxygen species is called a(n) ________."
+  answer="antioxidant"
+  accept="anti-oxidant"
+  hint="Look in the Everyday Connection on gout."
 >}}
 
 {{< textin
@@ -147,13 +154,6 @@ conversion of ammonia to uric acid requires more energy and is much more complex
   hint="This nitrogen-containing waste is so insoluble in water that it forms a paste or powder rather than dissolving into urine the way the vertebrate byproduct does."
 >}}
 
-{{< textin
-  question="An estimate of urea in the blood used as an indicator of kidney function is called ________."
-  answer="blood urea nitrogen"
-  accept="BUN"
-  hint="This is the same measurement introduced by its four-letter abbreviation earlier in this practice group — spell out what each letter stands for."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 41.4: Nitrogenous Wastes](https://openstax.org/books/biology-2e/pages/41-4-nitrogenous-wastes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_41_04_01, a hand-drawn flow chart of the urea cycle, and Figure_41_04_02abc, a composite of animal photographs paired with molecular-structure drawings — neither is a captured photograph on its own), while Figure_41_04_03 (the gout photograph) keeps the manifest's "photo" guess; alts rewritten from the manifest's letter-spaced, narrated source text (or, for the gout photo, its generic "Photo shows" phrasing) into plain visual descriptions, with the step-by-step walk-through for the first two figures moved into a longdesc; a longdesc added to the urea-cycle flow chart, counting its five enzyme-catalyzed steps and tracing the cycle's clockwise direction (top → right → bottom → left → top), and to the three-panel ammonia/urea/uric-acid comparison figure, naming each panel's animal and molecular structure; the display reaction converting ammonia to urea set as Unicode text with P<sub>i</sub>, kept inline as printed rather than as KaTeX, per house chemical-equation notation; the Evolution Connection and Everyday Connection notes rendered as callouts with their bold names and italic titles, the Everyday Connection's figure and paragraph kept inside its box as printed; in-text figure pointers ("Figure 41.12" and "Figure 41.13") replaced with "shown below" and the Figure 41.14 pointer with "illustrated below," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using both keyed exercises of each set; rubric checkpoints added to each self-check, decomposing its model answer (the source solution, kept verbatim) into check-off clauses with no new claims; six key-term recall items added from the glossary (ammonia, ammonotelic, ureotelic, urea cycle, uric acid, blood urea nitrogen); the seventh glossary term (antioxidant) appears only in the Key terms list and the Everyday Connection prose.</small>
+<small>This section is adapted from [Biology 2e, Section 41.4: Nitrogenous Wastes](https://openstax.org/books/biology-2e/pages/41-4-nitrogenous-wastes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_41_04_01, a hand-drawn flow chart of the urea cycle, and Figure_41_04_02abc, a composite of animal photographs paired with molecular-structure drawings — neither is a captured photograph on its own), while Figure_41_04_03 (the gout photograph) keeps the manifest's "photo" guess; alts rewritten from the manifest's letter-spaced, narrated source text (or, for the gout photo, its generic "Photo shows" phrasing) into plain visual descriptions, with the step-by-step walk-through for the first two figures moved into a longdesc; a longdesc added to the urea-cycle flow chart, counting its five enzyme-catalyzed steps and tracing the cycle's clockwise direction (top → right → bottom → left → top), and to the three-panel ammonia/urea/uric-acid comparison figure, naming each panel's animal and molecular structure; the display reaction converting ammonia to urea set as Unicode text with P<sub>i</sub>, kept inline as printed rather than as KaTeX, per house chemical-equation notation; the Evolution Connection and Everyday Connection notes rendered as callouts with their bold names and italic titles, the Everyday Connection's figure and paragraph kept inside its box as printed; in-text figure pointers ("Figure 41.12" and "Figure 41.13") replaced with "shown below" and the Figure 41.14 pointer with "illustrated below," since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using both keyed exercises of each set; rubric checkpoints added to each self-check, decomposing its model answer (the source solution, kept verbatim) into check-off clauses with no new claims; six key-term recall items added from the glossary (ammonia, ammonotelic, ureotelic, urea cycle, uric acid, antioxidant); the seventh glossary term (blood urea nitrogen) is not a recall item because the Review Question "BUN is ________" already asks it.</small>

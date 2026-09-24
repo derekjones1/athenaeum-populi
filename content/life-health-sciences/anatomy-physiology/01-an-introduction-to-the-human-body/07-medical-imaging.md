@@ -16,7 +16,7 @@ weight: 7
 - Identify four modern medical imaging techniques and how they are used
 {{< /callout >}}
 
-For thousands of years, fear of the dead and legal sanctions limited the ability of anatomists and physicians to study the internal structures of the human body. An inability to control bleeding, infection, and pain made surgeries infrequent, and those that were performed—such as wound suturing, amputations, tooth and tumor removals, skull drilling, and cesarean births—did not greatly advance knowledge about internal anatomy. Theories about the function of the body and about disease were therefore largely based on external observations and imagination. During the fifteenth and sixteenth centuries, however, the detailed anatomical drawings *(Source note: the source's body text prints "fourteenth and fifteenth centuries"; its own Chapter Review says "fifteenth and sixteenth centuries", which matches the dates of da Vinci's drawings and Vesalius's 1543 publication, and the body is corrected to agree.)*  of Italian artist and anatomist Leonardo da Vinci and Flemish anatomist Andreas Vesalius were published, and interest in human anatomy began to increase. Medical schools began to teach anatomy using human dissection; although some resorted to grave robbing to obtain corpses. Laws were eventually passed that enabled students to dissect the corpses of criminals and those who donated their bodies for research. Still, it was not until the late nineteenth century that medical researchers discovered non-surgical methods to look inside the living body.
+For thousands of years, fear of the dead and legal sanctions limited the ability of anatomists and physicians to study the internal structures of the human body. An inability to control bleeding, infection, and pain made surgeries infrequent, and those that were performed—such as wound suturing, amputations, tooth and tumor removals, skull drilling, and cesarean births—did not greatly advance knowledge about internal anatomy. Theories about the function of the body and about disease were therefore largely based on external observations and imagination. During the fifteenth and sixteenth centuries, however, the detailed anatomical drawings of Italian artist and anatomist Leonardo da Vinci and Flemish anatomist Andreas Vesalius were published, and interest in human anatomy began to increase. *(Source note: the source's body text prints "fourteenth and fifteenth centuries"; its own Chapter Review says "fifteenth and sixteenth centuries", which matches the dates of da Vinci's drawings and Vesalius's 1543 publication, and the body is corrected to agree.)* Medical schools began to teach anatomy using human dissection; although some resorted to grave robbing to obtain corpses. Laws were eventually passed that enabled students to dissect the corpses of criminals and those who donated their bodies for research. Still, it was not until the late nineteenth century that medical researchers discovered non-surgical methods to look inside the living body.
 
 ## X-Rays
 
@@ -38,7 +38,7 @@ X-rays can depict a two-dimensional image of a body region, and only from a sing
 
 Tomography refers to imaging by sections. **Computed tomography (CT)** is a noninvasive imaging technique that uses computers to analyze several cross-sectional X-rays in order to reveal minute details about structures in the body (see below, panel a). The technique was invented in the 1970s and is based on the principle that, as X-rays pass through the body, they are absorbed or reflected at different levels. In the technique, a patient lies on a motorized platform while a computerized axial tomography (CAT) scanner rotates 360 degrees around the patient, taking X-ray images. A computer combines these images into a two-dimensional view of the scanned area, or "slice."
 
-{{< mediafigure src="anatomy-physiology/113abcd_Medical_Imaging_Techniques" kind="photo" alt="Four photos of medical imaging equipment and output, one per labeled panel: (a) a backlit panel of 17 transverse CT images of a skull, viewed on a wall-mounted light board; (b) a large ring-shaped MRI scanner with a patient table extending from its center; (c) a computer screen showing several PET-scan body images; (d) a black-and-white ultrasound readout." longdesc="Photo a, the results of a CT scan, shows 17 different transverse views of the skull, each taken at a different depth along the superior-inferior axis. The images are translucent, similar to an X-ray, and are viewed on a light board. Photo b shows an MRI machine, which is a large drum into which lying patients enter via a conveyor belt. Photo c shows computer images of the body taken with PET scans. This produces anterior, lateral, posterior, and transverse views of the body that reveal the structure of the internal organs. Photo d shows an ultrasound readout, which is black and white. The image depicts solid tissues as light areas and empty space as dark areas. Some of the features of a young fetus can be seen in the empty space at the center of the image. The space containing the fetus is surrounded by the solid tissue of the uterus." >}}
+{{< mediafigure src="anatomy-physiology/113abcd_Medical_Imaging_Techniques" kind="photo" alt="Four photos of medical imaging equipment and output, one per labeled panel: (a) a backlit panel of 17 transverse CT images of a skull, viewed on a wall-mounted light board; (b) a large ring-shaped MRI scanner with a patient table extending from its center; (c) a computer screen showing several PET-scan body images; (d) a black-and-white ultrasound readout." longdesc="Photo a, the results of a CT scan, shows 17 different transverse views of the skull, each taken at a different depth along the superior-inferior axis. The images are translucent, similar to an X-ray, and are viewed on a light board. Photo b shows an MRI machine, which is a large drum into which lying patients enter via a conveyor belt. Photo c shows computer images of the body taken with PET scans. The screen shows PET/CT fusion software: a column of transverse slices through the neck at the left, rows of coronal and sagittal slices of the trunk to the right, each shown as a gray CT image, an orange PET image, and the two combined, and a whole-body PET projection at the far right, with bright spots standing out in the PET images. Photo d shows an ultrasound readout, which is black and white. The image depicts solid tissues as light areas and empty space as dark areas. Some of the features of a young fetus can be seen in the empty space at the center of the image. The space containing the fetus is surrounded by the solid tissue of the uterus." >}}
 (a) The results of a CT scan of the head are shown as successive transverse sections. (b) An MRI machine generates a magnetic field around a patient. (c) PET scans use radiopharmaceuticals to create images of active blood flow and physiologic activity of the organ or organs being targeted. (d) Ultrasound technology is used to monitor pregnancies because it is the least invasive of imaging techniques and uses no electromagnetic radiation. (credit a: Akira Ohgaki/flickr; credit b: "Petmr"/Wikimedia Commons; credit c: "Raziel"/Wikimedia Commons; credit d: "Isis"/Wikimedia Commons)
 {{< /mediafigure >}}
 
@@ -107,7 +107,7 @@ PET relies on radioactive substances administered several minutes before the sca
 {{< multiplechoice
   question="In 1901, Wilhelm Röntgen was the first person to win the Nobel Prize for physics. For what discovery did he win?"
   answer="X-rays"
-  hint="His award came for the discovery this section opens with — the phenomenon he found in 1895 could pass through flesh but leave an outline of bone on a screen."
+  hint="Reread the paragraph about Wilhelm Röntgen's experiments."
 >}}
 nuclear physics
 radiopharmaceuticals
@@ -118,7 +118,7 @@ X-rays
 {{< multiplechoice
   question="According to this section, which of the following are X-rays best used to visualize?"
   answer="hard body structures such as teeth and bones"
-  hint="Think about which kind of tissue blocks the beam strongly enough to cast a clear, light-toned shadow on the plate, rather than showing up gray."
+  hint="Reread the paragraph after the one about Röntgen, which describes what shows up on the plate."
 >}}
 hard body structures such as teeth and bones
 soft tissue such as the brain and the abdominal viscera
@@ -127,9 +127,9 @@ fetal growth and development
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A form of high energy electromagnetic radiation with a short wavelength, capable of penetrating solids and ionizing gases, used in medicine as a diagnostic aid to visualize body structures such as bones, is called a(n) ________."
-  answer="X-ray"
-  hint="German physicist Wilhelm Röntgen discovered this form of radiation in 1895 while experimenting with electrical current."
+  question="The disadvantage of irradiation to the patient and the operator is now attenuated by proper ________ and by limiting exposure."
+  answer="shielding"
+  hint="Reread the paragraph after the photo of the hand."
 >}}
 
 ### Identify four modern medical imaging techniques and how they are used
@@ -137,7 +137,7 @@ fetal growth and development
 {{< multiplechoice
   question="Which of the following imaging techniques would be best to use to study the uptake of nutrients by rapidly multiplying cancer cells?"
   answer="PET"
-  hint="This technique traces radiopharmaceuticals to reveal metabolic activity, not just anatomy."
+  hint="Compare what each technique's subsection says it can show, and match the uptake of nutrients to one of them."
 >}}
 CT
 MRI
@@ -148,7 +148,7 @@ ultrasonography
 {{< multiplechoice
   question="Which of the following imaging studies can be used most safely during pregnancy?"
   answer="ultrasounds"
-  hint="Of the four techniques, this is the only one that uses no electromagnetic radiation, radiopharmaceuticals, or magnetic fields at all."
+  hint="Compare what each option's subsection, and the figure caption, say about the technique's risks."
 >}}
 CT scans
 PET scans
@@ -159,7 +159,7 @@ X-rays
 {{< multiplechoice
   question="What are two major disadvantages of MRI scans?"
   answer="high cost and the need for shielding from the magnetic signals"
-  hint="MRI does not expose the patient to any radiation, so rule out any option built on that premise."
+  hint="Reread the Magnetic Resonance Imaging subsection, especially the paragraph that opens with its drawbacks."
 >}}
 release of radiation and poor quality images
 high cost and the need for shielding from the magnetic signals
@@ -167,14 +167,14 @@ can only view metabolically active tissues and inadequate availability of equipm
 release of radiation and the need for a patient to be confined to metal tube for up to 30 minutes
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Which medical imaging technique is most dangerous to use repeatedly, and why?" hint="Compare the radiation dose of this technique with the dose from an ordinary X-ray, mentioned earlier in this section." >}}
+{{< selfcheck question="Which medical imaging technique is most dangerous to use repeatedly, and why?" hint="Reread the main disadvantage each Modern Medical Imaging subsection gives for its technique." >}}
 CT scanning subjects patients to much higher levels of radiation than X-rays, and should not be performed repeatedly.
 ===CHECKS===
 CT scanning subjects patients to much higher levels of radiation than X-rays
 should not be performed repeatedly
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain why ultrasound imaging is the technique of choice for studying fetal growth and development." hint="Think about what the other three techniques all involve — some form of radiation, tracer substance, or magnetic field — that ultrasonography avoids." >}}
+{{< selfcheck question="Explain why ultrasound imaging is the technique of choice for studying fetal growth and development." hint="Compare what the computed tomography, MRI, and PET subsections say each technique exposes the patient to." >}}
 Ultrasonography does not expose a mother or fetus to radiation, to radiopharmaceuticals, or to magnetic fields. At this time, there are no known medical risks of ultrasonography.
 ===CHECKS===
 ultrasonography does not expose a mother or fetus to radiation, to radiopharmaceuticals, or to magnetic fields
@@ -183,4 +183,4 @@ there are no known medical risks of ultrasonography
 
 ---
 
-<small>This section is adapted from [Anatomy and Physiology 2e, Section 1.7: Medical Imaging](https://openstax.org/books/anatomy-and-physiology-2e/pages/1-7-medical-imaging) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP; the X-ray-of-a-hand figure's source alt kept verbatim, with "X ray" normalized to "X-ray" to match the section's own spelling; the four-panel Medical Imaging Techniques figure's 898-character source alt (over the 600-character limit) shortened to a panel-by-panel overview with the full source description — "X ray" likewise normalized and the source's "Photo A/B/C/D" lower-cased to "Photo a/b/c/d" to match this page's own "panel a/b/c/d" prose references — moved to a `longdesc`; both figures' printed figure-number cross-references ("Figure 1.18", "Figure 1.19a–d") replaced with "see above"/"see below" prose references, since Hugo does not number figures; the three Interactive Link boxes' generic "this video" link text replaced with a short description of each video's subject, their URLs kept; the CT Interactive Link Question graded as a `selfcheck` (the module's own definition sentence fixes its key, "X-rays"), the MRI and PET Interactive Link Questions left as prompts in their callouts because no module sentence fixes either answer (the MRI key needs two different sentences from the same paragraph stitched together, and "chemotherapy" never appears in the module); the Career/Everyday-style feature boxes are absent from this module, so no other box conversions apply; the four Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer into check-off clauses with no new claims; one key-term recall item (X-ray) and one locally authored multiple choice (built from the X-Rays subsection's own sentence on hard-tissue visualization, with the module's own sibling techniques as distractors) added to round out the X-ray objective's group, which the source's four keyed exercises left thin; that group's items reordered so the X-ray key-term textin is not directly preceded by a multiple choice whose options print "X-rays" (the Nobel-Prize question, whose correct option is that exact string); the centuries of da Vinci's and Vesalius's anatomical drawings corrected from the source body's "fourteenth and fifteenth" to the "fifteenth and sixteenth" its own Chapter Review prints, with a visible Source note.</small>
+<small>This section is adapted from [Anatomy and Physiology 2e, Section 1.7: Medical Imaging](https://openstax.org/books/anatomy-and-physiology-2e/pages/1-7-medical-imaging) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP; the X-ray-of-a-hand figure's source alt kept verbatim, with "X ray" normalized to "X-ray" to match the section's own spelling; the four-panel Medical Imaging Techniques figure's 898-character source alt (over the 600-character limit) shortened to a panel-by-panel overview with the full source description — "X ray" likewise normalized and the source's "Photo A/B/C/D" lower-cased to "Photo a/b/c/d" to match this page's own "panel a/b/c/d" prose references — moved to a `longdesc`, except that its Photo c sentence ("anterior, lateral, posterior, and transverse views of the body that reveal the structure of the internal organs") is rewritten from the image, which shows transverse, coronal, and sagittal PET/CT fusion slices and a whole-body projection, and whose caption says PET images physiologic activity (erratum 880); both figures' printed figure-number cross-references ("Figure 1.18", "Figure 1.19a–d") replaced with "see above"/"see below" prose references, since Hugo does not number figures; the three Interactive Link boxes' generic "this video" link text replaced with a short description of each video's subject, their URLs kept; the CT Interactive Link Question graded as a `selfcheck` (the module's own definition sentence fixes its key, "X-rays"), the MRI and PET Interactive Link Questions left as prompts in their callouts because no module sentence fixes either answer (the MRI key needs two different sentences from the same paragraph stitched together, and "chemotherapy" never appears in the module); the Career/Everyday-style feature boxes are absent from this module, so no other box conversions apply; the four Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer into check-off clauses with no new claims; one body cloze (the X-Rays subsection's sentence on how irradiation is now attenuated, "shielding") and one locally authored multiple choice (built from the X-Rays subsection's own sentence on hard-tissue visualization, with the module's own sibling techniques as distractors) added to round out the X-ray objective's group, which the source's four keyed exercises left thin; X-ray is a headline term and not a recall item, because the objective's heading, the Nobel Prize question's key, and the hard-tissue question's stem necessarily print it, so a recall key would be leaked by its siblings, and the module's other glossary terms name the second objective's answer options; the centuries of da Vinci's and Vesalius's anatomical drawings corrected from the source body's "fourteenth and fifteenth" to the "fifteenth and sixteenth" its own Chapter Review prints, with a visible Source note.</small>

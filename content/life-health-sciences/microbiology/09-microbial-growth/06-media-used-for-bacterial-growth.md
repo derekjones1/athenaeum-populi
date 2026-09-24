@@ -32,7 +32,7 @@ On this MacConkey agar plate, the lactose-fermenter *E. coli* colonies are brigh
 
 **Check Your Understanding**
 
-{{< sortbins question="Distinguish complex and chemically defined media: sort each phrase below by the type of medium it describes." hint="One type's composition is fully known down to the exact amount of every component; the other is made from extracts and digests whose composition is undetermined and variable." >}}
+{{< sortbins question="Distinguish complex and chemically defined media: sort each phrase below by the type of medium it describes." hint="Reread the section's first paragraph." >}}
 {"bins": ["Chemically defined", "Complex"],
  "items": [
   {"label": "The complete chemical composition of the medium is known", "bin": 0},
@@ -43,7 +43,7 @@ On this MacConkey agar plate, the lactose-fermenter *E. coli* colonies are brigh
   {"label": "Nutrient broth, tryptic soy broth, and brain heart infusion are examples", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< sortbins question="Distinguish selective and enrichment media: sort each phrase below by the type of medium it describes." hint="One type inhibits unwanted organisms outright while supplying nutrients to the organism of interest; the other simply favors a desired organism that starts out as only a fraction of what is present in an inoculum." >}}
+{{< sortbins question="Distinguish selective and enrichment media: sort each phrase below by the type of medium it describes." hint="Reread the third paragraph under Nutritional Requirements." >}}
 {"bins": ["Selective media", "Enrichment culture"],
  "items": [
   {"label": "Inhibits the growth of unwanted microorganisms and supports the growth of the organism of interest by supplying nutrients and reducing competition", "bin": 0},
@@ -106,7 +106,7 @@ Gram-positive cocci in clusters. (credit: Centers for Disease Control and Preven
 {{< multiplechoice
   question="EMB agar is a medium used in the identification and isolation of pathogenic bacteria. It contains digested meat proteins as a source of organic nutrients. Two indicator dyes, eosin and methylene blue, inhibit the growth of gram-positive bacteria and distinguish between lactose fermenting and nonlactose fermenting organisms. Lactose fermenters form metallic green or deep purple colonies, whereas the nonlactose fermenters form completely colorless colonies. EMB agar is an example of which of the following?"
   answer="a selective medium, a differential medium, and a complex medium"
-  hint="Check whether EMB agar's ingredients and effects match more than one definition given earlier in this section: inhibiting some bacteria is one property, producing distinct colony colors is another, and an undefined organic-nutrient source is a third."
+  hint="Reread the first and third paragraphs under Nutritional Requirements."
 >}}
 a selective medium only
 a differential medium only
@@ -117,7 +117,7 @@ a selective medium, a differential medium, and a complex medium
 {{< multiplechoice
   question="*Haemophilus influenzae* must be grown on chocolate agar, which is blood agar treated with heat to release growth factors in the medium. *H. influenzae* is described as ________."
   answer="fastidious"
-  hint="Recall the term for an organism that cannot make certain nutrients itself and must have them supplied by the medium — the same requirement that makes this organism need chocolate agar's heat-released growth factors."
+  hint="Reread the section's first paragraph."
 >}}
 an acidophile
 a thermophile
@@ -128,34 +128,33 @@ fastidious
 {{< textin
   question="Blood agar contains many unspecified nutrients, supports the growth of a large number of bacteria, and allows differentiation of bacteria according to hemolysis (breakdown of blood). The medium is complex and ________."
   answer="differential"
-  hint="Name the term for a medium that lets you tell colonies apart by a change in color from hemolysis."
+  hint="Reread the third paragraph under Nutritional Requirements."
 >}}
 
 {{< textin
   question="Rogosa agar contains yeast extract. The pH is adjusted to 5.2 and discourages the growth of many microorganisms; however, all the colonies look similar. The medium is complex and ________."
   answer="selective"
-  hint="Name the term for a medium whose low pH holds back the growth of some organisms while favoring others."
+  hint="Reread the third paragraph under Nutritional Requirements."
 >}}
 
-{{< selfcheck question="*Haemophilus influenzae* grows best at 35–37 °C with ~5% CO₂ (or in a candle-jar) and requires hemin (X factor) and nicotinamide-adenine-dinucleotide (NAD, also known as V factor) for growth (Centers for Disease Control and Prevention and World Health Organization, *CDC Laboratory Methods for the Diagnosis of Meningitis Caused by* Neisseria meningitidis, Streptococcus pneumoniae, *and* Haemophilus influenzae, *WHO Manual*, 2nd edition, 2011). Using the vocabulary learned in this chapter, describe *H. influenzae*." hint="Name the growth-requirement term this section uses for an organism that cannot make certain nutrients itself, then state the specific growth factors and medium the problem itself names." >}}
-*H. influenzae* is a fastidious organism, meaning it cannot make certain nutrients and requires them to be added to the medium; specifically, it requires hemin (X factor) and NAD (V factor) for growth. Because of this requirement, *H. influenzae* must be grown on chocolate agar, which is blood agar treated with heat to release these growth factors in the medium.
-===CHECKS===
-*H. influenzae* is a fastidious organism
-cannot make certain nutrients and requires them to be added to the medium
-requires hemin (X factor) and NAD (V factor) for growth
-must be grown on chocolate agar, which is blood agar treated with heat to release these growth factors
-{{< /selfcheck >}}
+{{< textin
+  question="Enriched media contain added essential ________ a specific organism needs to grow."
+  answer="nutrients"
+  accept="growth factors"
+  hint="Reread the Summary's third bullet."
+>}}
 
 {{< textin
-  question="________ media help distinguish bacteria by the color of the colonies or the change in the medium."
-  answer="Differential"
-  hint="Name the type of medium the Key Concepts and Summary section says lets you tell bacteria apart by a colony or medium color change."
+  question="Differential media help distinguish bacteria by the ________ of the colonies or the change in the medium."
+  answer="color"
+  accept="colour"
+  hint="Reread the Summary's last bullet."
 >}}
 
 {{< multiplechoice
   question="Which of the following describes a medium that supports the growth of all microorganisms without any specific inhibition?"
   answer="a non-selective medium"
-  hint="Recall the one type of medium in this section that does not hold back any organisms, unlike a medium that favors some organisms over others or one that distinguishes colonies by color."
+  hint="Reread the second paragraph under Nutritional Requirements."
 >}}
 a selective medium
 a differential medium
@@ -163,12 +162,14 @@ an enrichment culture
 a non-selective medium
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A medium whose complete chemical composition — including the exact amount of every component — is known is called a(n) ________."
-  answer="chemically defined medium"
-  hint="Contrast this with a medium made from extracts and digests of yeast, meat, or plant material, whose precise composition is not known."
->}}
+{{< selfcheck question="*Haemophilus influenzae* grows best at 35–37 °C with ~5% CO₂ (or in a candle-jar) and requires hemin (X factor) and nicotinamide-adenine-dinucleotide (NAD, also known as V factor) for growth (Centers for Disease Control and Prevention and World Health Organization, *CDC Laboratory Methods for the Diagnosis of Meningitis Caused by* Neisseria meningitidis, Streptococcus pneumoniae, *and* Haemophilus influenzae, *WHO Manual*, 2nd edition, 2011). Using the vocabulary learned in this chapter, describe *H. influenzae*." hint="The answer draws on the section's first paragraph and the details the question gives." >}}
+*H. influenzae* is a fastidious organism, meaning it cannot make certain nutrients and requires them to be added to the medium; specifically, it requires hemin (X factor) and NAD (V factor) for growth.
+===CHECKS===
+*H. influenzae* is a fastidious organism
+cannot make certain nutrients and requires them to be added to the medium
+requires hemin (X factor) and NAD (V factor) for growth
+{{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 9.6: Media Used for Bacterial Growth](https://openstax.org/books/microbiology/pages/9-6-media-used-for-bacterial-growth) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: both source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection, `kind="photo"` on both (a plated photograph and a stained micrograph); the MacConkey agar plate figure carries `eager="true"` as the first figure on the page and is kept at its document position after the paragraph naming it, its cross-reference rewritten from a figure number to a describing phrase ("the MacConkey agar plate below"); the *Staphylococcus aureus* micrograph is kept at its CNXML document position, at the end of the Case in Point box after its closing questions (matching the printed page layout), and its cross-reference is likewise rewritten to a describing phrase; neither source alt needed correction against the image. The Link to Learning's one sentence keeps both source URLs as separate Markdown links. The Case in Point box is rendered as a callout in source order; its two closing questions stay inside the callout as unanswered plain bullets, per the source, which prints no answer. The cross-reference to the chapter 14 introduction (Antimicrobial Drugs, m58857, not authored) is left as plain text rather than a link. The body Check Your Understanding box's two bullets are both graded as `sortbins`, because each asks a two-way distinction the module's own sentences state completely: "Distinguish complex and chemically defined media" sorts six of the module's own distinguishing phrases about composition and examples, and "Distinguish selective and enrichment media" sorts five of the module's own phrases about inhibition/favoring and the module's own examples; neither re-asks a matching set, since this chapter has none. Of the six source exercises, both Multiple Choice items and both Fill in the Blank items are adapted into Practice unchanged in content: the two Fill in the Blank items each have two blanks whose keys are independent classification words ("complex, differential" and "complex, selective"), so each grades its distinguishing blank as the `textin` (keyed "differential" and "selective") and prints the source's other keyed word, "complex", as given text in the stem, and their hints are written so neither prints the other exercise's distinguishing word. The unkeyed Short Answer question ("What is the major difference between an enrichment culture and a selective culture?") is dropped from Practice because it restates the body Check Your Understanding bullet "Distinguish selective and enrichment media" reworded; that bullet is graded in the body instead, per the life-sciences rule against asking the same thing twice. The unkeyed Critical Thinking question (describe *H. influenzae* "using the vocabulary learned in this chapter") stays a `selfcheck`, because an honest answer restricted to this module's own sentences — as the authoring rule requires, since "vocabulary learned in this chapter" would otherwise reach into terms this module does not define, such as capnophile or mesophile from other sections of chapter 9 — needs the fastidious-organism definition plus the growth factors and medium the problem's own stem states, assembled into more than one sentence; its model answer and rubric quote only this module's definition sentence and the problem's own stated facts. Three filler items bring the section's single objective group to the book's eight-item floor: a cloze `textin` built from the Key Concepts and Summary section's differential-media sentence; a select-the-term `multiplechoice` built from the body's non-selective-media sentence, with the module's own selective/differential/enrichment terms as distractors; and a term-recall `textin` built from the Key terms scaffold's sentence-derived definition of chemically defined medium (which has no Glossary appendix entry). Of this section's two Link to Learning URLs, the sheep-blood-agar link (`https://openstax.org/l/22bloodagar`, redirecting to `https://asm.org/getattachment/7ec0de2b-bb16-4f6e-ba07-2aea25a43e76/protocol-2885.pdf`) is confirmed dead (404, checked September 15, 2026) and is no longer linked, replaced with a plain-text description naming the American Society for Microbiology's sheep blood agar protocol; the other, the EZ medium link, stays linked. Key terms compiled from the module's seven defined terms and the book's Glossary appendix; six definitions come from the Glossary and one, chemically defined medium, has no Glossary entry and is taken from this module's own defining sentence. No source exercise item is otherwise omitted.</small>
+<small>This section is adapted from [Microbiology, Section 9.6: Media Used for Bacterial Growth](https://openstax.org/books/microbiology/pages/9-6-media-used-for-bacterial-growth) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: both source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection, `kind="photo"` on both (a plated photograph and a stained micrograph); the MacConkey agar plate figure carries `eager="true"` as the first figure on the page and is kept at its document position after the paragraph naming it, its cross-reference rewritten from a figure number to a describing phrase ("the MacConkey agar plate below"); the *Staphylococcus aureus* micrograph is kept at its CNXML document position, at the end of the Case in Point box after its closing questions (matching the printed page layout), and its cross-reference is likewise rewritten to a describing phrase; neither source alt needed correction against the image. The Link to Learning's one sentence keeps both source URLs as separate Markdown links. The Case in Point box is rendered as a callout in source order; its two closing questions stay inside the callout as unanswered plain bullets, per the source, which prints no answer. The cross-reference to the chapter 14 introduction (Antimicrobial Drugs, m58857, not authored) is left as plain text rather than a link. The body Check Your Understanding box's two bullets are both graded as `sortbins`, because each asks a two-way distinction the module's own sentences state completely: "Distinguish complex and chemically defined media" sorts six of the module's own distinguishing phrases about composition and examples, and "Distinguish selective and enrichment media" sorts five of the module's own phrases about inhibition/favoring and the module's own examples; neither re-asks a matching set, since this chapter has none. Of the six source exercises, both Multiple Choice items and both Fill in the Blank items are adapted into Practice unchanged in content: the two Fill in the Blank items each have two blanks whose keys are independent classification words ("complex, differential" and "complex, selective"), so each grades its distinguishing blank as the `textin` (keyed "differential" and "selective") and prints the source's other keyed word, "complex", as given text in the stem, and their hints are written so neither prints the other exercise's distinguishing word. The unkeyed Short Answer question ("What is the major difference between an enrichment culture and a selective culture?") is dropped from Practice because it restates the body Check Your Understanding bullet "Distinguish selective and enrichment media" reworded; that bullet is graded in the body instead, per the life-sciences rule against asking the same thing twice. The unkeyed Critical Thinking question (describe *H. influenzae* "using the vocabulary learned in this chapter") stays a `selfcheck`, because an honest answer restricted to this module's own sentences — as the authoring rule requires, since "vocabulary learned in this chapter" would otherwise reach into terms this module does not define, such as capnophile or mesophile from other sections of chapter 9 — needs the fastidious-organism definition plus the growth factors and medium the problem's own stem states, assembled into more than one sentence; its model answer and rubric quote only this module's definition sentence and the problem's own stated facts. Three filler items bring the section's single objective group to the book's eight-item floor: two cloze `textin` items from the Key Concepts and Summary section's enriched-media sentence ("nutrients") and differential-media sentence ("color"), each blanking a word other than the medium's name because the objective's own heading names every medium type; and a select-the-term `multiplechoice` built from the body's non-selective-media sentence, with the module's own selective/differential/enrichment terms as distractors. The two clozes replace an earlier differential-media cloze keyed on the term itself (which the heading prints) and a term-recall `textin` for chemically defined medium (which re-asked the body sort of complex versus chemically defined media). Of this section's two Link to Learning URLs, the sheep-blood-agar link (`https://openstax.org/l/22bloodagar`, redirecting to `https://asm.org/getattachment/7ec0de2b-bb16-4f6e-ba07-2aea25a43e76/protocol-2885.pdf`) is confirmed dead (404, checked September 15, 2026) and is no longer linked, replaced with a plain-text description naming the American Society for Microbiology's sheep blood agar protocol; the other, the EZ medium link, stays linked. Key terms compiled from the module's seven defined terms and the book's Glossary appendix; six definitions come from the Glossary and one, chemically defined medium, has no Glossary entry and is taken from this module's own defining sentence. No source exercise item is otherwise omitted.</small>

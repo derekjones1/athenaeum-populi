@@ -80,7 +80,7 @@ Scientists are interested in the evolutionary history of animals and the evoluti
 {{< multiplechoice
   question="Consulting the modern phylogenetic tree of animals, which of the following would not constitute a clade?"
   answer="Parazoa"
-  hint="A clade must contain a common ancestor and every one of its descendants; the Eumetazoa clade splits into exactly the other three groups listed, so one of the four options falls outside Eumetazoa altogether."
+  hint="A clade contains a common ancestor and all of its descendants; check each option against the Constructing an Animal Phylogenetic Tree subsection and the previous section's phylogenetic tree."
 >}}
 deuterostomes
 lophotrochozoans
@@ -111,7 +111,7 @@ Bilateria
 {{< multiplechoice
   question="As with the emergence of the Acoelomorpha phylum, it is common for ____ data to misplace animals in close relation to other species, whereas ____ data often reveals a different and more accurate evolutionary relationship."
   answer="morphological : molecular"
-  hint="Recall which category of evidence grouped the acoel flatworms with the true flatworms by outward appearance alone, and which category of evidence later distinguished them as their own phylum."
+  hint="Look at the paragraph on the new worm phylum Acoelomorpha."
 >}}
 molecular : morphological
 molecular : fossil record
@@ -129,6 +129,7 @@ certain morphological traits can evolve along very different evolutionary branch
 {{< textin
   question="Morphological information, fossil record data, and, most recently, ________ are the three main sources of data scientists use to construct phylogenetic tree diagrams."
   answer="molecular data"
+  accept="genetic data"
   hint="This newest of the three sources draws on DNA, RNA, and protein comparisons rather than anatomy or preserved remains."
 >}}
 
@@ -137,21 +138,13 @@ certain morphological traits can evolve along very different evolutionary branch
 {{< multiplechoice
   question="Which of the following is thought to be the most closely related to the common animal ancestor?"
   answer="protist cells"
-  hint="Bacteria are prokaryotes, and fungi and plants have body plans very different from a single flagellated cell; think about which domain's single-celled organisms this feeding cell most resembles."
+  hint="Look at the paragraph on sponge feeding cells and the figure that follows it."
 >}}
 fungal cells
 protist cells
 plant cells
 bacterial cells
 {{< /multiplechoice >}}
-
-{{< selfcheck question="Describe at least two major changes to the animal phylogenetic tree that have come about due to molecular or genetic findings." hint="Think about the two new protostome clades named earlier in the section, and about the new worm phylum that molecular data separated from the true flatworms." >}}
-Two new clades that comprise the two major groups of protostomes are called the lophotrochozoans and the ecdysozoans. The formation of these two clades came about through molecular research from DNA and protein data. Also, the novel phylum of worm called Acoelomorpha was determined due to molecular data that distinguished them from other flatworms.
-===CHECKS===
-two new clades, the lophotrochozoans and the ecdysozoans, comprise the two major groups of protostomes
-these two clades formed through molecular research from DNA and protein data
-the novel phylum of worm called Acoelomorpha was determined due to molecular data that distinguished it from other flatworms
-{{< /selfcheck >}}
 
 {{< textin
   question="The clade of protostomes whose members periodically shed and replace their exoskeleton is called ________."
@@ -162,8 +155,16 @@ the novel phylum of worm called Acoelomorpha was determined due to molecular dat
 {{< textin
   question="The clade of protostomes whose members have a trochophore larval stage or a lophophore feeding structure is called ________."
   answer="Lophotrochozoa"
-  hint="This clade's name combines the terms for its two defining structures, one larval and one an adult feeding organ."
+  hint="Look at the paragraph in the Constructing an Animal Phylogenetic Tree subsection that divides the bilaterally symmetrical animals."
 >}}
+
+{{< selfcheck question="Describe at least two major changes to the animal phylogenetic tree that have come about due to molecular or genetic findings." hint="Think about the two new protostome clades named earlier in the section, and about the new worm phylum that molecular data separated from the true flatworms." >}}
+Two new clades that comprise the two major groups of protostomes are called the lophotrochozoans and the ecdysozoans. The formation of these two clades came about through molecular research from DNA and protein data. Also, the novel phylum of worm called Acoelomorpha was determined due to molecular data that distinguished them from other flatworms.
+===CHECKS===
+two new clades, the lophotrochozoans and the ecdysozoans, comprise the two major groups of protostomes
+these two clades formed through molecular research from DNA and protein data
+the novel phylum of worm called Acoelomorpha was determined due to molecular data that distinguished it from other flatworms
+{{< /selfcheck >}}
 
 ---
 

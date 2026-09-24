@@ -58,12 +58,12 @@ Macromolecules in thermophiles and hyperthermophiles show some notable structura
 
 **Check Your Understanding**
 
-{{< textin question="What temperature requirements do most bacterial human pathogens have?" answer="mesophile" hint="Recall which single temperature category the summary says most pathogens belong to." >}}
+{{< textin question="What temperature requirements do most bacterial human pathogens have?" answer="mesophile" accept="mesophilic|moderate temperature" hint="Reread the section's third paragraph." >}}
 
 {{< multiplechoice
-  question="Which DNA adaptation do thermophiles exhibit?"
+  question="What DNA adaptation do thermophiles exhibit?"
   answer="Their DNA sequences show a higher proportion of guanine–cytosine bases, which are held together by three hydrogen bonds."
-  hint="Of the several heat adaptations this module describes, pick the one specifically about the nitrogenous bases in DNA rather than membrane lipids or protein folding."
+  hint="Reread the last paragraph before this box."
 >}}
 An increase in the ratio of saturated to polyunsaturated membrane lipids.
 Antifreeze proteins and solutes that decrease the freezing temperature of the cytoplasm.
@@ -121,27 +121,36 @@ This [video](https://openstax.org/l/22algaebloomvid) discusses algal blooms and 
 {{< textin
   question="The lowest temperature at which the organism can survive and replicate is its ________."
   answer="minimum growth temperature"
-  hint="This boundary sits at the cold end of an organism's permissive range — not the point of fastest growth, and not the hot-end boundary."
+  hint="Reread the section's second paragraph."
 >}}
 
 {{< textin
   question="The highest temperature at which growth can occur is its ________."
   answer="maximum growth temperature"
-  hint="This boundary sits at the hot end of an organism's permissive range — not the point of fastest growth, and not the cold-end boundary."
+  hint="Reread the section's second paragraph."
 >}}
 
 {{< textin
   question="The growth rates are the highest at the ________ for the organism."
   answer="optimum growth temperature"
-  hint="This is the single temperature within an organism's range where growth is fastest, not either boundary of the range."
+  hint="Reread the section's second paragraph."
 >}}
+
+{{< selfcheck question="The bacterium that causes Hansen's disease (leprosy), *Mycobacterium leprae*, infects mostly the extremities of the body: hands, feet, and nose. Can you make an educated guess as to its optimum temperature of growth?" hint="The answer draws on the section's second and third paragraphs." >}}
+The module does not give the temperature of the hands, feet, and nose, so it does not by itself fix the optimum of *Mycobacterium leprae*. What it gives is that growth rates are the highest at the optimum growth temperature for the organism, and that normal human microbiota and pathogens are mesophiles, adapted to moderate temperatures, with optimal growth temperatures ranging from room temperature (about 20 °C) to about 45 °C, as would be expected from the core temperature of the human body, 37 °C.
+===CHECKS===
+growth rates are the highest at the optimum growth temperature for the organism
+normal human microbiota and pathogens are mesophiles
+optimal growth temperatures ranging from room temperature (about 20 °C) to about 45 °C
+the core temperature of the human body, 37 °C
+{{< /selfcheck >}}
 
 ### Identify and describe different categories of microbes with temperature requirements for growth: psychrophile, psychrotrophs, mesophile, thermophile, hyperthermophile
 
 {{< multiplechoice
   question="A soup container was forgotten in the refrigerator and shows contamination. The contaminants are probably which of the following?"
   answer="psychrotrophs"
-  hint="Refrigeration temperature is cool, not freezing and not room temperature — match the category defined by that specific range."
+  hint="Reread the temperature-category paragraphs before and after the Clinical Focus box."
 >}}
 thermophiles
 acidophiles
@@ -152,7 +161,7 @@ psychrotrophs
 {{< multiplechoice
   question="Bacteria isolated from a hot tub at 39 °C are probably which of the following?"
   answer="mesophiles"
-  hint="39 °C is close to human body temperature and squarely inside one category's moderate range."
+  hint="Reread the temperature-category paragraphs before and after the Clinical Focus box."
 >}}
 thermophiles
 psychrotrophs
@@ -163,7 +172,7 @@ hyperthermophiles
 {{< multiplechoice
   question="In which environment are you most likely to encounter a hyperthermophile?"
   answer="hydrothermal vent at the bottom of the ocean"
-  hint="Recall which environment reaches temperatures well above 100 °C, matching the highest growth range described."
+  hint="Reread the paragraph just before the black-smoker figure."
 >}}
 hot tub
 warm ocean water in Florida
@@ -174,7 +183,7 @@ human body
 {{< multiplechoice
   question="Which of the following environments would harbor psychrophiles?"
   answer="mountain lake with a water temperature of 12 °C"
-  hint="Compare each option's temperature to the cold range described for this category, keeping in mind which of the other options are actually warm."
+  hint="Reread the paragraph just after the Clinical Focus box."
 >}}
 mountain lake with a water temperature of 12 °C
 contaminated plates left in a 35 °C incubator
@@ -185,7 +194,7 @@ salt pond in the desert with a daytime temperature of 34 °C
 {{< multiplechoice
   question="Match the type of bacterium with its environment: which environment matches a psychrotroph?"
   answer="food spoiling in refrigerator"
-  hint="This category prefers cool, not freezing, temperatures and is linked to the spoilage of refrigerated food."
+  hint="Reread the paragraph just before the Clinical Focus box."
 >}}
 food spoiling in refrigerator
 hydrothermal vent
@@ -197,7 +206,7 @@ garden compost
 {{< multiplechoice
   question="Match the type of bacterium with its environment: which environment matches a mesophile?"
   answer="human pathogen"
-  hint="This category's optimal range includes human core body temperature."
+  hint="Reread the section's third paragraph."
 >}}
 food spoiling in refrigerator
 hydrothermal vent
@@ -209,7 +218,7 @@ garden compost
 {{< multiplechoice
   question="Match the type of bacterium with its environment: which environment matches a thermophile?"
   answer="garden compost"
-  hint="This category is widely distributed in hot springs, geothermal soils, and manmade environments that generate heat as microbes break down organic matter."
+  hint="Reread the paragraph just before the black-smoker figure."
 >}}
 food spoiling in refrigerator
 hydrothermal vent
@@ -221,7 +230,7 @@ garden compost
 {{< multiplechoice
   question="Match the type of bacterium with its environment: which environment matches a hyperthermophile?"
   answer="hydrothermal vent"
-  hint="This category has the highest growth range of all, matching the hottest listed environment."
+  hint="Reread the paragraph just before the black-smoker figure."
 >}}
 food spoiling in refrigerator
 hydrothermal vent
@@ -233,7 +242,7 @@ garden compost
 {{< multiplechoice
   question="Match the type of bacterium with its environment: which environment matches a psychrophile?"
   answer="deep ocean waters"
-  hint="This category is found in permanently cold environments."
+  hint="Reread the paragraph just after the Clinical Focus box."
 >}}
 food spoiling in refrigerator
 hydrothermal vent
@@ -245,26 +254,23 @@ garden compost
 {{< multiplechoice
   question="How are hyperthermophile's proteins adapted to the high temperatures of their environment?"
   answer="Additional secondary structures, ionic and covalent bonds, and the replacement of key amino acids stabilize protein folding against denaturation."
-  hint="Of the several heat adaptations this module describes for thermophiles and hyperthermophiles, pick the one specifically about protein structure rather than DNA or membrane lipids."
+  hint="Reread the last two paragraphs before the Check Your Understanding box."
 >}}
+Proteins are rich in hydrophobic residues, display an increase in flexibility, and have a lower number of secondary stabilizing bonds.
 Additional secondary structures, ionic and covalent bonds, and the replacement of key amino acids stabilize protein folding against denaturation.
-An increase in the ratio of saturated to polyunsaturated membrane lipids limits fluidity.
-A higher proportion of guanine–cytosine bases makes the DNA more resistant to denaturation.
 Antifreeze proteins and solutes lower the freezing temperature of the cytoplasm.
+DNA sequences show a higher proportion of guanine–cytosine bases.
 {{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Refer to the growth-rate-versus-temperature graph above. Some hyperthermophiles can survive autoclaving temperatures. Are they a concern in health care?"
-  answer="Yes, because some hyperthermophiles survive temperatures above 121 °C, the average autoclave temperature."
-  hint="Compare the average autoclave temperature this module gives to the survival temperatures it states for extreme hyperthermophile examples."
->}}
-No, because autoclaving always exceeds every hyperthermophile's maximum growth temperature.
-Yes, because some hyperthermophiles survive temperatures above 121 °C, the average autoclave temperature.
-No, because hyperthermophiles cannot survive above 100 °C.
-Yes, but only because hyperthermophiles cannot tolerate any heat above room temperature.
-{{< /multiplechoice >}}
+{{< selfcheck question="Refer to the growth-rate-versus-temperature graph above. Some hyperthermophiles can survive autoclaving temperatures. Are they a concern in health care?" hint="Reread the paragraph just before the black-smoker figure and the Summary's temperature bullets." >}}
+The section says hyperthermophiles are characterized by growth ranges from 80 °C to a maximum of 110 °C, with some extreme examples that survive temperatures above 121 °C, the average temperature of an autoclave; *Pyrobolus* and *Pyrodictium* are archaea that grow at 105 °C and survive autoclaving. It also says that pathogens are usually mesophiles. The section does not itself say whether hyperthermophiles that survive autoclaving are a concern in health care.
+===CHECKS===
+hyperthermophiles grow from 80 °C to a maximum of 110 °C
+some extreme examples survive temperatures above 121 °C, the average temperature of an autoclave
+pathogens are usually mesophiles
+{{< /selfcheck >}}
 
-{{< selfcheck question="Why would NASA be funding microbiology research in Antarctica?" hint="Recall the Antarctic lake example from the opening paragraph: what researchers expected to find there, and what they actually found." >}}
+{{< selfcheck question="Why would NASA be funding microbiology research in Antarctica?" hint="The answer draws on the section's opening paragraph and the paragraph just after the Clinical Focus box." >}}
 When the exploration of Lake Whillans started in Antarctica, researchers did not expect to find much life: constant subzero temperatures and lack of obvious sources of nutrients did not seem to be conditions that would support a thriving ecosystem. To their surprise, the samples retrieved from the lake showed abundant microbial life. Because they are active at low temperature, psychrophiles like these are important decomposers in cold climates.
 ===CHECKS===
 researchers did not expect to find much life
@@ -278,7 +284,7 @@ psychrophiles ... are important decomposers in cold climates
 {{< multiplechoice
   question="Which of the following is given as an example organism in the mesophile category?"
   answer="*E. coli*"
-  hint="This organism is named alongside Salmonella and Lactobacillus as normal human microbiota and pathogens sharing the same temperature category."
+  hint="Reread the section's third paragraph."
 >}}
 *Thermus aquaticus*
 *E. coli*
@@ -289,7 +295,7 @@ psychrophiles ... are important decomposers in cold climates
 {{< multiplechoice
   question="Which of the following is given as an example organism in the hyperthermophile category?"
   answer="*Pyrodictium*"
-  hint="This organism is named alongside Pyrobolus as an archaeon that grows at 105 °C and survives autoclaving."
+  hint="Reread the paragraph just before the black-smoker figure."
 >}}
 *Geobacillus*
 *E. coli*
@@ -300,7 +306,7 @@ psychrophiles ... are important decomposers in cold climates
 {{< multiplechoice
   question="Which organism does the Clinical Focus Resolution describe as halotolerant and able to multiply at refrigeration temperatures?"
   answer="*L. monocytogenes*"
-  hint="Recall the gram-positive short rod found in soil, water, and food that is a frequent source of food poisoning."
+  hint="Reread the third paragraph of the Clinical Focus box."
 >}}
 *L. monocytogenes*
 *Thermus aquaticus*
@@ -310,4 +316,4 @@ psychrophiles ... are important decomposers in cold climates
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 9.4: Temperature and Microbial Growth](https://openstax.org/books/microbiology/pages/9-4-temperature-and-microbial-growth) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures re-encoded as WebP and rendered as mediafigures after image inspection, `kind="photo"` for the black-smoker and algal-bloom photographs and `kind="diagram"` for the temperature-curve graph, `eager="true"` on the first figure only; the black-smoker alt is rewritten from the manifest's generic "a vent billowing out dark smoke" to describe the visible tubeworms, pale organisms, and sampling instrumentation the caption discusses; the temperature-curve alt is rewritten and given a `longdesc` reading each of the four skewed curves' rise, peak, and fall in order as plotted — the source alt's peak values (35 °C, 65 °C, 90 °C) read a few degrees low against the artwork's gridlines (closer to 37 °C, 67 °C, and 93 °C) and it misspells "mesophile" as "mesoophile" and drops the "d" from "and" four times (once per curve clause), all suspected source-alt defects; the `longdesc` also notes that the thermophile curve peaks highest, the mesophile and hyperthermophile curves peak lower and about level with each other, and the psychrophile curve peaks distinctly lowest, as drawn; the algal-bloom alt is rewritten from the manifest's one-sentence gloss to describe the farmland, bloom pattern, and scale bar visible in the satellite photo; the Summary's one-word source typo "hyperthemophiles" is printed corrected as "hyperthermophiles," a suspected source defect; cross-references to the module's own figures are rendered as describing prose ("shown below," "as shown below") rather than print numbers; the Clinical Focus and Eye on Ethics boxes are rendered as callouts in source order, the Eye on Ethics figure kept at the end of the box as in the source; the Clinical Focus box's "go back to the previous Clinical Focus box" link is replaced by a sentence naming where the case began, [How Microbes Grow](/life-health-sciences/microbiology/09-microbial-growth/01-how-microbes-grow/) — not [Oxygen Requirements for Microbial Growth](/life-health-sciences/microbiology/09-microbial-growth/02-oxygen-requirements-for-microbial-growth/), which the source's link target points at but which is only where the case's *previous* part ran, not where it began; this Resolution is the case's last part, so no "case continues" sentence is added; the body Check Your Understanding box's two bullets are both graded from the module's own sentences — a `textin` (the pathogens/mesophile sentence, matching the Summary's "Pathogens are usually mesophiles") and a `multiplechoice` (the DNA-adaptation sentence, with three distractors built from this module's own lipid-, protein-, and psychrophile-adaptation sentences in the same and adjacent paragraphs); the five-row Matching exercise (source-keyed A, D, E, B, C) is rendered as five multiple-choice items, one per bacterial type, each offering all five lettered environments in the table's own order — the source prints the first row's type as "psychotroph"; the module's body prints "psychrotrophs" six times and the Glossary headword is "psychrotroph", so the stem prints the corrected `psychrotroph`, a suspected source defect, not silently fixed; the unkeyed Short Answer "How are hyperthermophile's proteins adapted…" (source's own singular possessive, kept verbatim) is graded as a multiple-choice from the module's own protein-adaptation sentence, with three distractors drawn from this module's own lipid-, DNA-, and psychrophile-adaptation sentences; the unkeyed Critical Thinking "Refer to [the temperature-curve figure]. Some hyperthermophiles can survive autoclaving temperatures. Are they a concern in health care?" is graded as a multiple-choice from the module's own autoclave-temperature and survival-temperature sentences, its figure cross-reference rendered as the describing phrase "Refer to the growth-rate-versus-temperature graph above" rather than re-rendered media, since the exercise links to the body figure rather than carrying its own; the unkeyed Short Answer "Why would NASA be funding microbiology research in Antarctica?" stays a self-check, its model answer assembled only from the opening Lake Whillans anecdote and the psychrophile-decomposer sentence, because the module gives that background but never states NASA's motivation and supplying one would require outside knowledge; the unkeyed Critical Thinking "Can you make an educated guess as to [*M. leprae*'s] optimum temperature of growth?" is omitted from Practice because the module gives no information connecting body location to temperature preference, and an honest answer would require outside anatomical knowledge (that the extremities run cooler than the body's core) that this module never states; three `textin` cloze items (minimum/maximum/optimum growth temperature) and three author-built multiple-choice items (organism examples per category) fill the first and third objective groups, built strictly from this module's own definitional and example sentences, since the source provides no exercises for those two objectives; key terms compiled from the module's eight defined terms and the book's Glossary appendix, all eight definitions taken directly from the Glossary (the appendix headword is the singular "psychrotroph"/"thermophile"/"hyperthermophile"/"psychrophile" for the module's plural forms, bolded as printed in the body). One claim is corrected against the book itself: the source's Clinical Focus Resolution calls *L. monocytogenes* a psychrophile, which contradicts this module's own psychrophile and psychrotroph definitions and the book's statement that *Listeria* grows between 0 °C and 50 °C, so the sentence prints "psychrotroph" with a visible Source note (erratum 532), and the author-built item that had asked which organism the module classifies as a psychrophile now asks which organism the Resolution describes as halotolerant and able to multiply at refrigeration temperatures.</small>
+<small>This section is adapted from [Microbiology, Section 9.4: Temperature and Microbial Growth](https://openstax.org/books/microbiology/pages/9-4-temperature-and-microbial-growth) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures re-encoded as WebP and rendered as mediafigures after image inspection, `kind="photo"` for the black-smoker and algal-bloom photographs and `kind="diagram"` for the temperature-curve graph, `eager="true"` on the first figure only; the black-smoker alt is rewritten from the manifest's generic "a vent billowing out dark smoke" to describe the visible tubeworms, pale organisms, and sampling instrumentation the caption discusses; the temperature-curve alt is rewritten and given a `longdesc` reading each of the four skewed curves' rise, peak, and fall in order as plotted — the source alt's peak values (35 °C, 65 °C, 90 °C) read a few degrees low against the artwork's gridlines (closer to 37 °C, 67 °C, and 93 °C) and it misspells "mesophile" as "mesoophile" and drops the "d" from "and" four times (once per curve clause), all suspected source-alt defects; the `longdesc` also notes that the thermophile curve peaks highest, the mesophile and hyperthermophile curves peak lower and about level with each other, and the psychrophile curve peaks distinctly lowest, as drawn; the algal-bloom alt is rewritten from the manifest's one-sentence gloss to describe the farmland, bloom pattern, and scale bar visible in the satellite photo; the Summary's one-word source typo "hyperthemophiles" is printed corrected as "hyperthermophiles," a suspected source defect; cross-references to the module's own figures are rendered as describing prose ("shown below," "as shown below") rather than print numbers; the Clinical Focus and Eye on Ethics boxes are rendered as callouts in source order, the Eye on Ethics figure kept at the end of the box as in the source; the Clinical Focus box's "go back to the previous Clinical Focus box" link is replaced by a sentence naming where the case began, [How Microbes Grow](/life-health-sciences/microbiology/09-microbial-growth/01-how-microbes-grow/) — not [Oxygen Requirements for Microbial Growth](/life-health-sciences/microbiology/09-microbial-growth/02-oxygen-requirements-for-microbial-growth/), which the source's link target points at but which is only where the case's *previous* part ran, not where it began; this Resolution is the case's last part, so no "case continues" sentence is added; the body Check Your Understanding box's two bullets are both graded from the module's own sentences — a `textin` (the pathogens/mesophile sentence, matching the Summary's "Pathogens are usually mesophiles") and a `multiplechoice` (the DNA-adaptation sentence, with three distractors built from this module's own lipid-, protein-, and psychrophile-adaptation sentences in the same and adjacent paragraphs); the five-row Matching exercise (source-keyed A, D, E, B, C) is rendered as five multiple-choice items, one per bacterial type, each offering all five lettered environments in the table's own order — the source prints the first row's type as "psychotroph"; the module's body prints "psychrotrophs" six times and the Glossary headword is "psychrotroph", so the stem prints the corrected `psychrotroph`, a suspected source defect, not silently fixed; the unkeyed Short Answer "How are hyperthermophile's proteins adapted…" (source's own singular possessive, kept verbatim) is graded as a multiple-choice from the module's own protein-adaptation sentence, with three distractors drawn from this module's own psychrophile-protein, antifreeze-protein, and DNA-adaptation sentences, so that three of the four options speak of proteins; the unkeyed Critical Thinking "Refer to [the temperature-curve figure]. Some hyperthermophiles can survive autoclaving temperatures. Are they a concern in health care?" stays a self-check, because the module never says whether hyperthermophiles matter in health care (an earlier graded multiple-choice keyed an inference and carried an incoherent distractor): its model answer gives the module's autoclave-temperature, survival-temperature, and pathogens-are-mesophiles sentences and says the module stops there; its figure cross-reference rendered as the describing phrase "Refer to the growth-rate-versus-temperature graph above" rather than re-rendered media, since the exercise links to the body figure rather than carrying its own; the unkeyed Short Answer "Why would NASA be funding microbiology research in Antarctica?" stays a self-check, its model answer assembled only from the opening Lake Whillans anecdote and the psychrophile-decomposer sentence, because the module gives that background but never states NASA's motivation and supplying one would require outside knowledge; the unkeyed Critical Thinking "Can you make an educated guess as to [*M. leprae*'s] optimum temperature of growth?" stays a self-check in the first objective's group, because the module gives no information connecting body location to temperature preference: its model answer says so and stops at what the module does give (the optimum-growth-temperature definition and the mesophile range and body-temperature sentence); three `textin` cloze items (minimum/maximum/optimum growth temperature) and three author-built multiple-choice items (organism examples per category) fill the first and third objective groups, built strictly from this module's own definitional and example sentences, since the source provides no graded exercise for those two objectives; key terms compiled from the module's eight defined terms and the book's Glossary appendix, all eight definitions taken directly from the Glossary (the appendix headword is the singular "psychrotroph"/"thermophile"/"hyperthermophile"/"psychrophile" for the module's plural forms, bolded as printed in the body). One claim is corrected against the book itself: the source's Clinical Focus Resolution calls *L. monocytogenes* a psychrophile, which contradicts this module's own psychrophile and psychrotroph definitions and the book's statement that *Listeria* grows between 0 °C and 50 °C, so the sentence prints "psychrotroph" with a visible Source note (erratum 532), and the author-built item that had asked which organism the module classifies as a psychrophile now asks which organism the Resolution describes as halotolerant and able to multiply at refrigeration temperatures.</small>

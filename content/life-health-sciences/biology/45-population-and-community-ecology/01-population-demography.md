@@ -25,7 +25,7 @@ Populations are dynamic entities. A population consists of all of the individual
 
 The study of any population usually begins by determining how many individuals of a particular species exist, and how closely associated they are with each other. Within a particular habitat, a population can be characterized by its **population size (*N*)**, the total number of individuals, and its **population density**, the number of individuals within a specific area or volume. Population size and density are the two main characteristics used to describe and understand populations. For example, populations with more individuals may be more stable than smaller populations based on their genetic variability, and thus their potential to adapt to the environment. Alternatively, a member of a population with low population density (more spread out in the habitat), might have more difficulty finding a mate to reproduce compared to a population of higher density. As the graph below shows, smaller organisms tend to be more densely distributed than larger organisms.
 
-{{< mediafigure src="biology/Figure_45_01_01" kind="diagram" eager="true" alt="A scatter graph plots log population density against log body mass for eleven groups of Australian mammals, with a straight trend line sloping downward from upper left to lower right." longdesc="The graph is titled 'Relationship between Population and Body Mass in Australian Mammals.' The y-axis is labeled Log density (km²) and runs from 0.0 to 3.0; the x-axis is labeled Log mass (grams) and runs from 0.0 to 5.0. A straight black trend line runs from the upper left, near a log mass of about 0.3, down to the lower right, near a log mass of about 4.5. A legend lists eleven mammal groups, each with its own point shape and color, in this printed order: Quoll, Bandicoot, Wombat, Rat-kangaroo, Potoroo, Possum species, Tree kangaroo, Wallaby, Kangaroo, Bear cuscus, and Glider species. The points scatter on both sides of the line: the quoll, the leftmost point, sits at a log density near 2.9 just below the line's start; the bandicoot and most glider and possum points cluster between log mass 2 and 3.5, above and below the line; toward the right, the wombat, kangaroo, tree kangaroo, and one wallaby point sit at log densities near 1.2 to 1.9, above the line, while the second wallaby point and one glider point sit near the bottom right below it. The legend's sixth entry is printed 'Possom species' in the artwork." >}}
+{{< mediafigure src="biology/Figure_45_01_01" kind="diagram" eager="true" alt="A scatter graph plots log population density against log body mass for eleven groups of Australian mammals, with a straight trend line sloping downward from upper left to lower right." longdesc="The graph is titled 'Relationship between Population and Body Mass in Australian Mammals.' The y-axis is labeled Log density (km²) and runs from 0.0 to 3.0; the x-axis is labeled Log mass (grams) and runs from 0.0 to 5.0. A straight black trend line runs from the upper left, near a log mass of about 0.3, down to the lower right, near a log mass of about 4.5. A legend lists eleven mammal groups, each with its own point shape and color, in this printed order: Quoll, Bandicoot, Wombat, Rat-kangaroo, Potoroo, Possum species, Tree kangaroo, Wallaby, Kangaroo, Bear cuscus, and Glider species. The points scatter on both sides of the line: the quoll, the leftmost point, sits at a log density near 2.9 just below the line's start; the bandicoot and most glider and possum points cluster between log mass 2 and 3.5, above and below the line; toward the right, the wombat, kangaroo, tree kangaroo, and two of the three wallaby points sit at log densities near 1.2 to 1.9, above the line, while the third wallaby point and one glider point sit near the bottom right below it. The legend's sixth entry is printed 'Possom species' in the artwork." >}}
 Australian mammals show a typical inverse relationship between population density and body size.
 {{< /mediafigure >}}
 
@@ -116,7 +116,7 @@ This life table of *Ovis dalli* shows the number of deaths, number of survivors,
 
 Another tool used by population ecologists is a **survivorship curve**, which is a graph of the number of individuals surviving at each age interval plotted versus time (usually with data compiled from a life table). These curves allow us to compare the life histories of different populations. Humans and most primates exhibit a Type I survivorship curve because a high percentage of offspring survive their early and middle years—death occurs predominantly in older individuals. These types of species usually have small numbers of offspring at one time, and they give a high amount of parental care to them to ensure their survival. Birds are an example of an intermediate or Type II survivorship curve because birds die more or less equally at each age interval. These organisms also may have relatively few offspring and provide significant parental care. Trees, marine invertebrates, and most fishes exhibit a Type III survivorship curve because very few of these organisms survive their younger years; however, those that make it to an old age are more likely to survive for a relatively long period of time. Organisms in this category usually have a very large number of offspring, but once they are born, little parental care is provided. Thus these offspring are "on their own" and vulnerable to predation, but their sheer numbers assure the survival of enough individuals to perpetuate the species.
 
-{{< mediafigure src="biology/Figure_45_01_05" kind="diagram" alt="A line graph titled Survivorship Curve plots three differently shaped curves on log-scaled axes, each labeled with its type and a representative organism." longdesc="The graph is titled 'Survivorship Curve.' The y-axis is labeled Number of individuals surviving (log scale), unnumbered; the x-axis is labeled Percentage of maximum life expectancy and runs from 0 to 100, with a tick at 50. All three curves start at the same point, at the top of the y-axis where the x-axis reads 0. The Type I curve, drawn in blue and labeled Type I (humans) with a small human figure, stays near the top of the graph through the early and middle part of the x-axis, then drops steeply as it approaches 100. The Type II curve, drawn in red and labeled Type II (birds) with a small colored bird icon, is a straight diagonal line running from the top left corner to the bottom right corner, at x = 100. The Type III curve, drawn in green and labeled Type III (trees) with a small green tree icon, drops steeply near the start of the x-axis, then flattens out near the bottom of the graph for the rest of the range to x = 100." >}}
+{{< mediafigure src="biology/Figure_45_01_05" kind="diagram" alt="A line graph titled Survivorship Curve plots three differently shaped curves, with survivors on a log-scaled vertical axis, each labeled with its type and a representative organism." longdesc="The graph is titled 'Survivorship Curve.' The y-axis is labeled Number of individuals surviving (log scale), unnumbered; the x-axis is labeled Percentage of maximum life expectancy and runs from 0 to 100, with a tick at 50. All three curves start at the same point, at the top of the y-axis where the x-axis reads 0. The Type I curve, drawn in blue and labeled Type I (humans) with a small human figure, stays near the top of the graph through the early and middle part of the x-axis, then drops steeply as it approaches 100. The Type II curve, drawn in red and labeled Type II (birds) with a small colored bird icon, is a straight diagonal line running from the top left corner to the bottom right corner, at x = 100. The Type III curve, drawn in green and labeled Type III (trees) with a small green tree icon, drops steeply near the start of the x-axis, then flattens out near the bottom of the graph for the rest of the range to x = 100. All three curves end at the same point, at the bottom of the graph where x = 100." >}}
 Survivorship curves show the distribution of individuals in a population according to age. Humans and most mammals have a Type I survivorship curve because death primarily occurs in the older years. Birds have a Type II survivorship curve, as death at any age is equally probable. Trees have a Type III survivorship curve because very few survive the younger years, but after a certain age, individuals are much more likely to survive.
 {{< /mediafigure >}}
 
@@ -144,7 +144,7 @@ Populations are individuals of a species that live in a particular habitat. Ecol
 {{< multiplechoice
   question="Which of the following methods will tell an ecologist about both the size and density of a population?"
   answer="quadrat"
-  hint="Think about which sampling method reports a count within a measured area, which gives you a density figure directly."
+  hint="Reread Population Research Methods, noting which method the section says determines both size and density."
 >}}
 mark and recapture
 mark and release
@@ -169,7 +169,8 @@ this percentage allows an estimation of the size of the penguin population
 {{< textin
   question="The technique used to determine population size in mobile organisms, such as mammals, birds, or fish, is called ________."
   answer="mark and recapture"
-  hint="Animals are tagged, released back into the environment, then sampled again to see what fraction is already tagged."
+  accept="mark-recapture|mark and release"
+  hint="Reread the Population Research Methods paragraph on mobile organisms."
 >}}
 
 ### Describe three different patterns of population distribution
@@ -177,7 +178,7 @@ this percentage allows an estimation of the size of the penguin population
 {{< multiplechoice
   question="How is a clumped population distribution beneficial for prey animals?"
   answer="Being a member of a larger group provides protection for each individual from predators."
-  hint="Consider the safety advantage of many bodies together, making it harder for a predator to target any one individual."
+  hint="Reread the Species Distribution paragraph on clumped dispersion."
 >}}
 Being a member of a larger group provides protection for each individual from predators.
 Prey animals rely on each other to acquire food.
@@ -188,14 +189,14 @@ Clumped population distributions ensure that at least one member of the populati
 {{< textin
   question="The spatial location of individuals of a given species within a habitat at a particular point in time is called a ________."
   answer="species dispersion pattern"
-  accept="species distribution pattern|dispersion pattern"
+  accept="species distribution pattern|dispersion pattern|distribution pattern"
   hint="Uniform, random, and clumped are the three named arrangements of this kind."
 >}}
 
 {{< multiplechoice
   question="Ecologists measure characteristics of populations, including size, density, ________, age structure, and sex ratio."
   answer="dispersion pattern"
-  hint="This is the population characteristic that sorts individuals into uniform, random, or clumped arrangements."
+  hint="Reread the Summary's second sentence."
 >}}
 life table
 dispersion pattern
@@ -208,7 +209,7 @@ survivorship curve
 {{< multiplechoice
   question="Which of the following is best at showing the life expectancy of an individual within a population?"
   answer="life table"
-  hint="Life expectancy numbers appear in a dedicated column of this kind of data table, not on a graph."
+  hint="Reread the Summary's third sentence."
 >}}
 quadrat
 mark and recapture
@@ -217,15 +218,15 @@ life table
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The proportion of a population surviving to the beginning of an age interval that dies during that interval is called the ________."
-  answer="mortality rate"
-  hint="It's the value in a life table's mortality column, found by dividing deaths by survivors and multiplying by 1000."
+  question="Life tables, which detail the life expectancy of individuals within a population, were initially developed by life ________ companies to set rates."
+  answer="insurance"
+  hint="Reread the section's opening paragraph."
 >}}
 
 {{< textin
-  question="A table showing the life expectancy of a population member based on its age is called a ________."
-  answer="life table"
-  hint="Insurance companies originally developed this actuarial tool to estimate human life expectancy."
+  question="The proportion of a population surviving to the beginning of an age interval that dies during that interval is called the ________."
+  answer="mortality rate"
+  hint="Reread the Life Tables paragraph that lists the columns of the Dall mountain sheep table."
 >}}
 
 The CDC released the following data in its 2013 Vital Statistics report.
@@ -251,10 +252,16 @@ mortality nearly doubles from the 50s to the 60s
 
 ### Describe the three types of survivorship curves and relate them to specific populations
 
+{{< textin
+  question="A graph of the number of surviving population members plotted against the relative age of the member is called a ________."
+  answer="survivorship curve"
+  hint="This graph type comes in three named patterns, seen in humans, birds, and trees."
+>}}
+
 {{< multiplechoice
   question="Humans have which type of survivorship curve?"
   answer="Type I"
-  hint="These species have few offspring at a time and give them extensive parental care, with most deaths occurring later in life."
+  hint="Reread the section's last subsection and compare the three curves in its graph."
 >}}
 Type I
 Type II
@@ -265,7 +272,7 @@ Type IV
 {{< multiplechoice
   question="Birds die more or less equally at each age interval across their lifespan. Which survivorship curve does this describe?"
   answer="Type II"
-  hint="This is the curve the chapter calls intermediate, falling between the other two named types."
+  hint="Reread the section's last subsection, on birds."
 >}}
 Type I
 Type II
@@ -273,12 +280,6 @@ Type III
 Type IV
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A graph of the number of surviving population members plotted against the relative age of the member is called a ________."
-  answer="survivorship curve"
-  hint="This graph type comes in three named patterns, seen in humans, birds, and trees."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 45.1: Population Demography](https://openstax.org/books/biology-2e/pages/45-1-population-demography) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" — Figure_45_01_04 (three schematic dot-pattern diagrams paired with three photos, not photos alone) and Figure_45_01_05 (a drawn line graph with illustrated figures, not a captured photograph); the body-mass scatter graph's legend prints "Possom species" in the artwork, which stays as drawn while the longdesc names the group "Possum species" and notes the printed spelling — reported as a source defect; a longdesc added to the body-size/density scatter graph, the dispersion-pattern composite figure, and the survivorship-curve graph, each naming its axes, legend, or panel labels in reading order; the density/body-size Visual Connection kept in the body immediately after its figure as a self-check, since the source keys it with prose rather than a lettered option; the mark-and-recapture and mortality-rate equations set as display math, matching the source's own equation structure; the Dall Mountain Sheep life table kept as a Markdown table in the body, with its footnoted title line ("Data Adapted from Edward S. Deevey, Jr., …") kept as a lead-in sentence; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); the CDC life-table Critical Thinking item's own 7-row data table placed in the Practice block immediately before its self-check, keeping its "The CDC released the following data…" lead-in sentence and rewording only the question's "Calculate the mortality rate…" to "Using the CDC table above, calculate the mortality rate…" so the prompt stands on its own without the table's original paragraph of context; the CDC solution's "high among very young children Americans (under age 10)" corrected to "high among very young children (under age 10)" — reported as a source defect below; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items added from the glossary (quadrat, mark and recapture, species dispersion pattern, mortality rate, life table, survivorship curve); two locally written items added to round out objective groups thin on source exercises — a select-the-term multiple choice built from the section's own closing summary sentence naming "dispersion pattern," and a multiple choice built from the Survivorship Curves section's own sentence about birds dying equally at each age interval, keyed Type II — both disclosed here and in the ledger. Source defects: module `m66686`, exercise `eip-18`'s solution reads "the table shows that mortality is high among very young children Americans (under age 10)" — "children Americans" is not grammatical; the page reads "very young children (under age 10)," dropping the stray "Americans."</small>
+<small>This section is adapted from [Biology 2e, Section 45.1: Population Demography](https://openstax.org/books/biology-2e/pages/45-1-population-demography) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" — Figure_45_01_04 (three schematic dot-pattern diagrams paired with three photos, not photos alone) and Figure_45_01_05 (a drawn line graph with illustrated figures, not a captured photograph); the body-mass scatter graph's legend prints "Possom species" in the artwork, which stays as drawn while the longdesc names the group "Possum species" and notes the printed spelling — reported as a source defect; a longdesc added to the body-size/density scatter graph, the dispersion-pattern composite figure, and the survivorship-curve graph, each naming its axes, legend, or panel labels in reading order; the density/body-size Visual Connection kept in the body immediately after its figure as a self-check, since the source keys it with prose rather than a lettered option; the mark-and-recapture and mortality-rate equations set as display math, matching the source's own equation structure; the Dall Mountain Sheep life table kept as a Markdown table in the body, with its footnoted title line ("Data Adapted from Edward S. Deevey, Jr., …") kept as a lead-in sentence; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); the CDC life-table Critical Thinking item's own 7-row data table placed in the Practice block immediately before its self-check, keeping its "The CDC released the following data…" lead-in sentence and rewording only the question's "Calculate the mortality rate…" to "Using the CDC table above, calculate the mortality rate…" so the prompt stands on its own without the table's original paragraph of context; the CDC solution's "high among very young children Americans (under age 10)" corrected to "high among very young children (under age 10)" — reported as a source defect below; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (quadrat, mark and recapture, species dispersion pattern, mortality rate, survivorship curve) and one cloze recall item built from the opening paragraph's sentence on life tables (blanking "insurance"; it replaced a life-table glossary item that re-asked the source life-expectancy multiple choice, and it follows that multiple choice so that its stem does not sit above it); two locally written items added to round out objective groups thin on source exercises — a select-the-term multiple choice built from the section's own closing summary sentence naming "dispersion pattern," and a multiple choice built from the Survivorship Curves section's own sentence about birds dying equally at each age interval, keyed Type II — both disclosed here and in the ledger. Source defects: module `m66686`, exercise `eip-18`'s solution reads "the table shows that mortality is high among very young children Americans (under age 10)" — "children Americans" is not grammatical; the page reads "very young children (under age 10)," dropping the stray "Americans."</small>

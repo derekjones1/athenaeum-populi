@@ -30,7 +30,7 @@ The first step in sensation is **reception**, which is the activation of sensory
 
 The most fundamental function of a sensory system is the translation of a sensory signal to an electrical signal in the nervous system. This takes place at the sensory receptor, and the change in electrical potential that is produced is called the **receptor potential**. How is sensory input, such as pressure on the skin, changed to a receptor potential? In this example, a type of receptor called a **mechanoreceptor** (shown below) possesses specialized membranes that respond to pressure. Disturbance of these dendrites by compressing them or bending them opens gated ion channels in the plasma membrane of the sensory neuron, changing its electrical potential. Recall that in the nervous system, a positive change of a neuron's electrical potential (also called the membrane potential), depolarizes the neuron. Receptor potentials are graded potentials: the magnitude of these graded (receptor) potentials varies with the strength of the stimulus. If the magnitude of depolarization is sufficient (that is, if membrane potential reaches a threshold), the neuron will fire an action potential. In most cases, the correct stimulus impinging on a sensory receptor will drive membrane potential in a positive direction, although for some receptors, such as those in the visual system, this is not always the case.
 
-{{< mediafigure src="biology/Figure_36_01_01f" kind="diagram" eager="true" alt="A two-panel diagram. Panel (a) shows a closed, then a deflected and open, gated ion channel embedded in the plasma membrane, tethered up to the tectorial membrane and down to the cytoskeleton, with cations passing through the channel once it opens. Panel (b) shows three outer hair cells and one inner hair cell in the ear, their stereocilia touching the overlying tectorial membrane, resting on the basilar membrane, and connected by nerve fibers to the cochlear nerve." longdesc="Panel (a) stacks two versions of the same cross-section, joined by a downward arrow. In the top version, from top to bottom: a wavy band labeled 'Tectorial membrane'; below it six small ovals labeled 'Cations' (two rows of three) flanking a vertical line labeled 'Tether' that runs from the tectorial membrane down to a pair of joined blue cylinders labeled 'Gated ion channel', set in a band of red-headed phospholipids labeled 'Plasma membrane'; below the membrane, open space labeled 'Cytoplasm'; and at the bottom a wavy band labeled 'Cytoskeleton', connected to the channel by a stair-step line. In the bottom version, the tectorial membrane (labeled again) has shifted right, labeled 'Deflected' beside a rightward arrow; the two halves of the gated ion channel have pulled apart, and the cations now sit in the gap between them; the cytoskeleton is labeled again at the bottom. Panel (b), left to right: 'Outer hair cells' labels three orange cells whose 'Stereocilia' touch the overlying pink 'Tectorial membrane'; nerve fibers from the outer hair cells run down to the 'Cochlear nerve'; the 'Basilar membrane' is labeled beneath the cells; and at the right, a separate, larger orange cell labeled 'Inner hair cell' has its own stereocilia touching the tectorial membrane." >}}
+{{< mediafigure src="biology/Figure_36_01_01f" kind="diagram" eager="true" alt="A two-panel diagram. Panel (a) shows a closed, then a deflected and open, gated ion channel embedded in the plasma membrane, tethered up to the tectorial membrane and down to the cytoskeleton, with cations passing through the channel once it opens. Panel (b) shows three outer hair cells and one inner hair cell in the ear, their stereocilia touching the overlying tectorial membrane, resting on the basilar membrane, and connected by nerve fibers to the cochlear nerve." longdesc="Panel (a) stacks two versions of the same cross-section, joined by a downward arrow. In the top version, from top to bottom: a wavy band labeled 'Tectorial membrane'; below it seven small ovals labeled 'Cations' flanking a straight vertical line labeled 'Tether' that runs from the tectorial membrane down to the right half of a pair of joined blue cylinders labeled 'Gated ion channel', set in a band of red-headed phospholipids labeled 'Plasma membrane'; below the membrane, open space labeled 'Cytoplasm'; and at the bottom a wavy band labeled 'Cytoskeleton', connected to the channel by a stair-step line. In the bottom version, the tectorial membrane is labeled again at the top; the tether from it is now a stair-step line slanting down and to the left onto the right half of the channel, with 'Deflected' and a rightward arrow beside it; the right half has pulled away from the left half, opening a gap, and the cations now sit in a column through the gap, one already below the membrane; the cytoskeleton is labeled again at the bottom. Panel (b), left to right: 'Outer hair cells' labels three orange cells whose 'Stereocilia' touch the overlying pink 'Tectorial membrane'; nerve fibers from the outer hair cells run down to the 'Cochlear nerve'; the 'Basilar membrane' is labeled beneath the cells; and at the right, a separate, larger orange cell labeled 'Inner hair cell' has its own stereocilia touching the tectorial membrane." >}}
 (a) Mechanosensitive ion channels are gated ion channels that respond to mechanical deformation of the plasma membrane. A mechanosensitive channel is connected to the plasma membrane and the cytoskeleton by hair-like tethers. When pressure causes the extracellular matrix to move, the channel opens, allowing ions to enter or exit the cell. (b) Stereocilia in the human ear are connected to mechanosensitive ion channels. When a sound causes the stereocilia to move, mechanosensitive ion channels transduce the signal to the cochlear nerve.
 {{< /mediafigure >}}
 
@@ -117,7 +117,7 @@ All sensory signals, except those from the olfactory system, enter the central n
 {{< multiplechoice
   question="Many people experience motion sickness while traveling in a car. This sensation results from contradictory inputs arising from which senses?"
   answer="Vision and Vestibular System"
-  hint="Think about which two senses can send contradictory signals about motion — the eyes report one thing about the body's motion, and the inner ear's balance organs report another."
+  hint="Check each pair against the section's opening list of the special and general senses."
 >}}
 Proprioception and Kinesthesia
 Somatosensation and Equilibrium
@@ -149,8 +149,8 @@ special senses require specialized organs
 {{< textin
   question="An organism's sense of spatial orientation and balance is called the ________."
   answer="vestibular sense"
-  accept="vestibular sensation"
-  hint="This sense combines with sight to keep you oriented — when the two disagree in a moving vehicle, motion sickness can follow."
+  accept="vestibular sensation|vestibular system|equilibrium"
+  hint="See the section's opening paragraph, in the sentence listing the senses that are part of somatosensation."
 >}}
 
 ### Describe three important steps in sensory perception
@@ -169,7 +169,7 @@ thalamus
 {{< multiplechoice
   question="If a person's cold receptors no longer convert cold stimuli into sensory signals, that person has a problem with the process of ________."
   answer="transduction"
-  hint="This is the step where a stimulus itself is converted into an electrical signal — not simply detected (reception) or carried onward (transmission)."
+  hint="Match the stem to the section's three steps in sensory perception, reading the first sentence under each heading."
 >}}
 reception
 transmission
@@ -188,6 +188,12 @@ optical
 thermal
 {{< /multiplechoice >}}
 
+{{< textin
+  question="A specialized neuron, or another cell associated with a neuron, that is modified to receive a specific kind of sensory input is called a ________."
+  answer="sensory receptor"
+  hint="Stimulating this cell activates an associated afferent neuron, which carries information about the stimulus toward the central nervous system."
+>}}
+
 {{< selfcheck question="If a person sustains damage to axons leading from sensory receptors to the central nervous system, which step or steps of sensory perception will be affected?" hint="Reception happens at the receptor itself, before the axon; think about what a damaged axon would normally carry, and what that leaves downstream of it." >}}
 Transmission of sensory information from the receptor to the central nervous system will be impaired, and thus, perception of stimuli, which occurs in the brain, will be halted.
 ===CHECKS===
@@ -196,22 +202,16 @@ perception of stimuli, which occurs in the brain, will be halted
 {{< /selfcheck >}}
 
 {{< textin
+  question="Sensory receptors are either specialized cells associated with sensory neurons or the specialized ends of sensory neurons that are a part of the ________."
+  answer="peripheral nervous system"
+  accept="PNS"
+  hint="This is the Summary's fourth sentence."
+>}}
+
+{{< textin
   question="The receipt of a signal, such as light or sound, by sensory receptors is called ________."
   answer="reception"
   hint="This is the very first of the three steps in sensory perception, before any conversion to an electrical signal takes place."
->}}
-
-{{< textin
-  question="The conversion of a sensory stimulus into electrical energy in the nervous system, by a change in membrane potential, is called ________."
-  answer="sensory transduction"
-  accept="transduction"
-  hint="This step happens at the sensory receptor itself and produces what this section calls a receptor potential."
->}}
-
-{{< textin
-  question="The individual interpretation of a sensation, which is a brain function, is called ________."
-  answer="perception"
-  hint="This step happens at higher levels of the nervous system, in the brain, not at the sensory receptor itself."
 >}}
 
 {{< textin
@@ -221,9 +221,9 @@ perception of stimuli, which occurs in the brain, will be halted
 >}}
 
 {{< textin
-  question="A specialized neuron, or another cell associated with a neuron, that is modified to receive a specific kind of sensory input is called a ________."
-  answer="sensory receptor"
-  hint="Stimulating this cell activates an associated afferent neuron, which carries information about the stimulus toward the central nervous system."
+  question="The individual interpretation of a sensation, which is a brain function, is called ________."
+  answer="perception"
+  hint="This step happens at higher levels of the nervous system, in the brain, not at the sensory receptor itself."
 >}}
 
 {{< textin
@@ -240,6 +240,13 @@ perception of stimuli, which occurs in the brain, will be halted
 
 ### Explain the concept of just-noticeable difference in sensory perception
 
+{{< textin
+  question="The smallest difference in a stimulus that a person can detect is called the ________."
+  answer="just-noticeable difference"
+  accept="JND"
+  hint="This concept is illustrated by the rice-bag experiment above, and follows Weber's Law relating it to a stimulus's overall magnitude."
+>}}
+
 {{< selfcheck question="In what way does the overall magnitude of a stimulus affect the just-noticeable difference in the perception of that stimulus?" hint="Think about the rice-bag example: is the extra weight needed to notice a difference a fixed number of pounds, or a fixed percentage of the starting weight, whether that weight is small or large?" >}}
 The just-noticeable difference is a fraction of the overall magnitude of the stimulus and seems to be a relatively fixed proportion (such as 10 percent) whether the stimulus is large (such as a very heavy object) or small (such as a very light object).
 ===CHECKS===
@@ -248,24 +255,17 @@ a relatively fixed proportion, such as 10 percent
 whether the stimulus is large or small
 {{< /selfcheck >}}
 
-{{< textin
-  question="The smallest difference in a stimulus that a person can detect is called the ________."
-  answer="just-noticeable difference"
-  accept="JND"
-  hint="This concept is illustrated by the rice-bag experiment above, and follows Weber's Law relating it to a stimulus's overall magnitude."
->}}
-
 {{< multiplechoice
-  question="According to Weber's Law, a just-noticeable difference in a stimulus is ________ to the magnitude of the original stimulus."
-  answer="proportional"
-  hint="In the rice-bag example, a 20-pound bag needs a much bigger added weight to notice a difference than a 1-pound bag does — but is that added weight a similar share of the original in both cases?"
+  question="Under the hypothesis that the JND between the two small bags and between the two large bags is proportionally the same, 1.0 pound feels the same as 1.1 pounds but less than 1.2 pounds. Compared with a 20-pound bag, which is the lightest of these bags that should feel heavier?"
+  answer="24 pounds"
+  hint="Work through the Hypothesis step of the Scientific Method Connection note."
 >}}
-proportional
-inversely proportional
-unrelated
-equal
+20.2 pounds
+21 pounds
+22 pounds
+24 pounds
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 36.1: Sensory Processes](https://openstax.org/books/biology-2e/pages/36-1-sensory-processes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; both figures (Figure_36_01_01f, Figure_36_01_02) re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection — both are hand-drawn, labeled line illustrations, not captured photographs; a longdesc added to both, walking the mechanoreceptor/stereocilia diagram's tethered-channel and ear-hair-cell labels and the brain diagram's thalamus and cortical-region labels in reading order; the two in-text figure pointers ("as shown in Figure 36.2," "the specific area of the cortex (Figure 36.3)") replaced with "shown below," since Hugo does not number figures; the Scientific Method Connection note rendered as a callout with its bold name and italic title, its bold procedural labels ("Question," "Background," "Hypothesis," "Test the hypothesis," "Record the observations," "Analyze the data/report the results," "Draw a conclusion") kept as the source repeats them, and its embedded data-collection table (title "Results of JND Testing," a title row spanning the columns in the source) transcribed as a Markdown table with the title kept as a bold line above it, blank data cells left blank as printed; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; all ten key-term recall items added from the glossary, covering every glossary term; because the section has no Review Question or glossary term for just-noticeable difference (JND) itself, its objective group also carries two locally written items disclosed here: a text-recall item built strictly from the Scientific Method Connection note's own defining sentence ("This smallest detectible difference in stimuli is known as the just-noticeable difference (JND)"), and a multiple choice built strictly from the note's own closing sentence on Weber's Law. This module has no Visual Connection.</small>
+<small>This section is adapted from [Biology 2e, Section 36.1: Sensory Processes](https://openstax.org/books/biology-2e/pages/36-1-sensory-processes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; both figures (Figure_36_01_01f, Figure_36_01_02) re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection — both are hand-drawn, labeled line illustrations, not captured photographs; a longdesc added to both, walking the mechanoreceptor/stereocilia diagram's tethered-channel and ear-hair-cell labels and the brain diagram's thalamus and cortical-region labels in reading order; the two in-text figure pointers ("as shown in Figure 36.2," "the specific area of the cortex (Figure 36.3)") replaced with "shown below," since Hugo does not number figures; the Scientific Method Connection note rendered as a callout with its bold name and italic title, its bold procedural labels ("Question," "Background," "Hypothesis," "Test the hypothesis," "Record the observations," "Analyze the data/report the results," "Draw a conclusion") kept as the source repeats them, and its embedded data-collection table (title "Results of JND Testing," a title row spanning the columns in the source) transcribed as a Markdown table with the title kept as a bold line above it, blank data cells left blank as printed; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively), the fourth Review Question (motion sickness) and the third Critical Thinking Question (localization of general and special sense receptors) placed first, in the senses objective's group, ahead of the items that serve the later objectives; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items added from the glossary, covering every glossary term but sensory transduction, which the second Review Question already asks; one summary-derived textin cloze added to the second objective's group (blanking "peripheral nervous system" from the closing summary's sentence on what sensory receptors are); because the section has no Review Question or glossary term for just-noticeable difference (JND) itself, its objective group also carries two locally written items disclosed here: a text-recall item built strictly from the Scientific Method Connection note's own defining sentence ("This smallest detectible difference in stimuli is known as the just-noticeable difference (JND)"), and a multiple choice built strictly from the note's own Hypothesis step, asking which bag the proportional hypothesis predicts will first feel heavier than a 20-pound bag (the note's "20 pounds feels the same as 22 pounds or 23 pounds, but 20 pounds feels less than 24 pounds"). This module has no Visual Connection.</small>

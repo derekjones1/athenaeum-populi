@@ -29,7 +29,7 @@ Unlike the skin of birds, the integument (skin) of mammals, includes a number of
 
 The skeletal system of mammals possesses many unique features. The lower jaw of mammals consists of only one bone, the **dentary**, and the jaw hinge connects the dentary to the squamosal (flat) part of the temporal bone in the skull. The jaws of other vertebrates are composed of several bones, including the quadrate bone at the back of the skull and the articular bone at the back of the jaw, with the jaw connected between the quadrate and articular bones. In the ear of other vertebrates, vibrations are transmitted to the inner ear by a single bone, the *stapes*. In mammals, the quadrate and articular bones have moved into the middle ear (see the figure below). The malleus is derived from the articular bone, whereas the incus originated from the quadrate bone. This arrangement of jaw and ear bones aids in distinguishing fossil mammals from fossils of other synapsids.
 
-{{< mediafigure src="biology/Figure_29_06_01" kind="diagram" eager="true" alt="A skull and lower jaw drawn in solid pale yellow, in profile, with the zygomatic arch, braincase, and jaw hinge visible and no other labels on the skull itself. At the jaw hinge, cut away in cross-section, three small connected middle-ear bones are shown in color, each joined to a label by a straight line: a blue bone near the jaw joint labeled Malleus, a pink bone just behind it labeled Incus, and a green bone furthest back, wedged against the braincase, labeled Stapes." longdesc="Reading left to right, the three labels sit above the drawing: 'Malleus' leads down to a slender blue bone closest to the jaw joint; 'Incus' leads down to a chunkier pink bone just behind it; 'Stapes' leads down to a green, roughly triangular bone furthest back, wedged against the braincase. A caption beneath the whole drawing reads 'Cranial Bones.'" >}}
+{{< mediafigure src="biology/Figure_29_06_01" kind="diagram" eager="true" alt="A cutaway of the ear drawn in solid pale yellow: at the left, the tall flap of the outer ear, from which the ear canal runs right to the middle-ear cavity. There, three small connected bones are shown in color, each joined to a label by a straight line: a blue bone at the inner end of the ear canal labeled Malleus, a pink bone just beyond it labeled Incus, and a green, stirrup-shaped bone furthest right labeled Stapes." longdesc="Reading left to right, the three labels sit above the drawing: 'Malleus' leads down to a slender blue bone at the inner end of the ear canal; 'Incus' leads down to a chunkier pink bone just to its right; 'Stapes' leads down to a green, stirrup-shaped bone furthest right, set against the wall of the cavity. No skull or jaw is drawn. A label beneath the whole drawing reads 'Cranial Bones.'" >}}
 Mammalian ear bones. Bones of the mammalian middle ear are modified from bones of the jaw and skull in reptiles. The stapes is found in other vertebrates (e.g., the columella of birds) whereas in mammals, the malleus and incus are derived from the articular and quadrate bones, respectively. (credit: NCI)
 {{< /mediafigure >}}
 
@@ -57,7 +57,7 @@ In the appendicular skeleton, the shoulder girdle of therian mammals is modified
 
 Mammals evolved from therapsids in the late Triassic period, as the earliest known mammal fossils are from the early Jurassic period, some 205 million years ago. One group of transitional mammals was the **morganucodonts**, small nocturnal insectivores. The jaws of morganucodonts were "transitional," with features of both reptilian and mammalian jaws (pictured below). Like modern mammals, the morganucodonts had differentiated teeth and were diphyodonts. Mammals first began to diversify in the Mesozoic era, from the Jurassic to the Cretaceous periods. Even some small gliding mammals appear in the fossil record during this time period. However, most of the Jurassic mammals were extinct by the end of the Mesozoic. During the Cretaceous period, another radiation of mammals began and continued through the Cenozoic era, about 65 million years ago.
 
-{{< mediafigure src="biology/Figure_B29_06_03" kind="photo" alt="A side-view photograph of a small, long-tailed, fur-covered mammal with a pointed snout and whiskers, standing on a rock against a warm brown background. A boxed inset diagram in the lower right, titled 'Double jaw joint,' outlines a skull and jaw with a large pink shape at the rear of the lower jaw and, at its hinge, a small yellow oval and a thin pale-blue sliver marking the two joint bones, labeled 'squamosal,' 'jaw joints,' and 'dentary.'" longdesc="The main image is a photograph of a small, slender, long-tailed animal covered in coarse light-brown fur, shown in profile standing on a rock, with a pointed snout, dark eye, small ear, and long whiskers visible against a plain warm-brown background. A boxed inset in the lower right corner is titled 'Double jaw joint.' Below the title, a simple line drawing traces the skull and jaw in profile: a dashed line for the upper skull outline and a solid line for the lower jaw. Two labels sit at the left, 'squamosal' above 'jaw joints,' each with a leader line pointing to the rear joint of the jaw, where three colored shapes sit: a large pink shape filling the rear of the lower jaw, a small yellow oval at its hinge, and a thin pale-blue sliver just behind the yellow oval — the caption's color key names the yellow shape the articular bone and the blue shape the quadrate bone; the pink shape is not named in the key. A third label, 'dentary,' sits at the lower right with a leader line pointing along the solid lower-jaw outline toward the front of the snout." >}}
+{{< mediafigure src="biology/Figure_B29_06_03" kind="photo" alt="A side-view photograph of a small, long-tailed, fur-covered mammal with a pointed snout and whiskers, standing on a rock against a warm brown background. A boxed inset diagram in the lower right, titled 'Double jaw joint,' outlines a skull and jaw with a large pink shape at the rear of the lower jaw and, at its hinge, a small yellow oval and a thin pale-blue sliver marking the two joint bones, labeled 'squamosal,' 'jaw joints,' and 'dentary.'" longdesc="The main image is a photograph of a small, slender, long-tailed animal covered in coarse light-brown fur, shown in profile standing on a rock, with a pointed snout, dark eye, small ear, and long whiskers visible against a plain warm-brown background. A boxed inset in the lower right corner is titled 'Double jaw joint.' Below the title, a simple line drawing traces the skull and jaw in profile: a dashed line for the upper skull outline and a solid line for the lower jaw. Two labels sit at the left. 'squamosal' has a leader line to the skull just above the upper joint. 'jaw joints' has two leader lines to two black dots, one above the other: the upper dot where the solid lower-jaw line meets the skull, and the lower dot between a thin pale-blue sliver above it and a small yellow oval below it. A large pink shape fills the rear of the lower jaw just in front of these — the caption's color key names the yellow shape the articular bone and the blue shape the quadrate bone; the pink shape is not named in the key. A third label, 'dentary,' sits at the lower right with a leader line pointing along the solid lower-jaw outline toward the front of the snout." >}}
 A morganucodont. This morganucodont *Megazostrodon*, an extinct basal mammal, may have been nocturnal and insectivorous. Inset: Jaw of a morganucodont, showing a double hinge, one between the dentary and squamosal and one between the articular (yellow) and quadrate (blue) bones. In living mammals, the articular and quadrate bones have been incorporated into the middle ear. (Credit: By Nordelch [Megazostrodon Natural History Museum] Wikimedia Commons. Credit inset: Mod from Philcha. [commons.wikimedia.org/w/index.php?curid=3631949](https://openstax.org/l/jaw_joint))
 {{< /mediafigure >}}
 
@@ -107,22 +107,22 @@ There are three groups of mammals living today: monotremes, marsupials, and euth
 
 ### Name and describe the distinguishing features of the three main groups of mammals
 
+{{< textin
+  question="An egg-laying mammal is called a ________."
+  answer="monotreme"
+  hint="Members of this group retain their eggs through about two-thirds of the developmental period before laying them in a nest."
+>}}
+
 {{< multiplechoice
   question="Monotremes include:"
   answer="platypuses."
-  hint="This group is the only one of the four options that lays eggs rather than giving live birth."
+  hint="Look at the Living Mammals paragraphs that list the members of each of the three clades."
 >}}
 kangaroos.
 koalas.
 bandicoots.
 platypuses.
 {{< /multiplechoice >}}
-
-{{< textin
-  question="An egg-laying mammal is called a ________."
-  answer="monotreme"
-  hint="This group includes the platypus and the echidnas, which retain their eggs through about two-thirds of the developmental period before laying them in a nest."
->}}
 
 {{< textin
   question="The group of mammals whose very immature young typically complete their development inside a pouch, and which includes the kangaroo, koala, bandicoot, and Tasmanian devil, is called a ________."
@@ -134,7 +134,7 @@ platypuses.
   question="Mammals whose species all possess a complex placenta connecting a fetus to the mother are known as ________ mammals."
   answer="eutherian"
   accept="eutheria|placental|placental mammal"
-  hint="This clade, together with the marsupials, forms the therian mammals; unlike marsupials, its complex placenta lets the fetus complete far more of its development before birth."
+  hint="Reread Living Mammals, on the three clades of mammals alive today."
 >}}
 
 ### Describe the likely line of evolutionary descent that produced mammals
@@ -142,7 +142,7 @@ platypuses.
 {{< multiplechoice
   question="The evolution of which of the following features of mammals is hardest to trace through the fossil record?"
   answer="Mammary glands"
-  hint="Skeletal structures like jaws and ear bones fossilize readily, but this feature is soft glandular tissue that ordinary fossilization does not preserve."
+  hint="Compare each option with the features the Evolution of Mammals discussion traces through fossil skulls and jaws."
 >}}
 Jaw structure
 Mammary glands
@@ -153,7 +153,7 @@ Development of hair
 {{< multiplechoice
   question="The zygomatic arch (cheekbone) is present in mammals and in advanced therapsids such as the cynodonts, but is absent in which early synapsid group?"
   answer="pelycosaurs"
-  hint="The section names exactly one of the two early non-mammalian synapsid groups as never having evolved this cheekbone; the other three options are groups the section places it in."
+  hint="Look at the Evolution of Mammals paragraph on changes in the jawbone from early synapsids to later ones."
 >}}
 eutherians
 therapsids
@@ -175,7 +175,7 @@ chewing also allowed mammals to break down food into smaller pieces to speed dig
 {{< multiplechoice
   question="Eccrine glands produce ________."
   answer="sweat"
-  hint="This gland's secretion is mainly water, but also contains metabolic waste products and sometimes antibiotic compounds."
+  hint="Look at the Characteristics of Mammals paragraph that describes the integument's glands one by one."
 >}}
 sweat
 lipids
@@ -219,7 +219,7 @@ eutherian mammals also possess a specialized structure that links the two cerebr
 {{< multiplechoice
   question="According to the section, which order is classified within the Euarchontoglires?"
   answer="Primates"
-  hint="Three of these four orders are grouped under the Laurasiatheria branch in the section; only one sits under the other major eutherian branch, alongside tree shrews, rodents, and rabbits."
+  hint="Look at the Living Mammals paragraph that sorts the familiar eutherian orders into groups."
 >}}
 Carnivora
 Chiroptera
@@ -227,20 +227,21 @@ Primates
 Perissodactyla
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Name the two major clades into which eutherian mammals are classified, and give one example order from each." hint="The section names exactly two clades right after introducing the eutherians, then lists example orders under each one." >}}
-Eutherian mammals are classified into two major clades, the Atlantogenata and the Boreoeutheria. The Atlantogenata include orders such as the Afrotheria. The Boreoeutheria include orders such as the Primates.
+{{< selfcheck question="Name the two major clades into which eutherian mammals are classified, and give one example group from each." hint="The section names exactly two clades right after introducing the eutherians, then lists example groups under each one." >}}
+Eutherian mammals are classified into two major clades, the Atlantogenata and the Boreoeutheria. The Atlantogenata include groups such as the Afrotheria. The Boreoeutheria include groups such as the Primates.
 ===CHECKS===
 eutherian mammals are classified into two major clades, the Atlantogenata and the Boreoeutheria
-the Atlantogenata include orders such as the Afrotheria
-the Boreoeutheria include orders such as the Primates
+the Atlantogenata include groups such as the Afrotheria
+the Boreoeutheria include groups such as the Primates
 {{< /selfcheck >}}
 
 {{< textin
   question="The two largest orders of eutherian mammals, which together make up almost 60 percent of all eutherian species, are rodents and ________."
   answer="bats"
+  accept="Chiroptera"
   hint="The section names this order right after describing the orders that include horses, rhinos, cows, giraffes, pigs, hippos, whales, cats, dogs, and bears."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 29.6: Mammals](https://openstax.org/books/biology-2e/pages/29-6-mammals) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_29_06_01 (a labeled schematic of the middle-ear bones), Figure_29_06_02 (a painted paleoart reconstruction of a cynodont, not a captured photograph), and Figure_29_06_03 (a composite image whose panel (a) is a hand-colored illustration of platypuses, not a photograph, even though panel (b) is one); Figure_B29_06_03 and Figure_29_06_04 kept as "photo"; a longdesc added to the two labeled anatomical diagrams (Figure_29_06_01's middle-ear schematic and Figure_B29_06_03's "Double jaw joint" inset) whose labels are not fully carried by their captions; the morganucodont caption's "This morganucodont *Megazotrodon*," corrected to "*Megazostrodon*" to match the correct genus name used two sentences later in the same caption's own credit line ("Megazostrodon Natural History Museum") and confirmed against the PDF — reported as a source defect; the second instance of "Atlantogenata," printed as "Atlantogeneta" one sentence after its first, correct spelling in the same paragraph, corrected to "Atlantogenata" throughout — reported as a source defect; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with rubric checkpoints added to each self-check decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (monotreme, marsupial, eutherian, dentary, sebaceous gland) added from the glossary; four items written locally and strictly from the section's own sentences, disclosed because the source's Review and Critical Thinking questions do not test the objectives they cover — a multiple choice on which early synapsid group lacks the zygomatic arch (from the section's own sentence naming pelycosaurs as the exception), and, for the "major clades of eutherian mammals" objective, a multiple choice and a self-check built from the section's sentence on the Atlantogenata/Boreoeutheria clades and their example orders, plus a text-recall item built from the section's sentence naming rodents and bats as the two largest eutherian orders; the glossary's "a skin gland that produce" read as "produces". Two claims are corrected with visible Source notes: mammals number more than 6,000 species, consistent with the section's own 6,000 placentals, and the mammary gland key term admits the males the section says possess them (errata 428, 431).</small>
+<small>This section is adapted from [Biology 2e, Section 29.6: Mammals](https://openstax.org/books/biology-2e/pages/29-6-mammals) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_29_06_01 (a labeled schematic of the middle-ear bones), Figure_29_06_02 (a painted paleoart reconstruction of a cynodont, not a captured photograph), and Figure_29_06_03 (a composite image whose panel (a) is a hand-colored illustration of platypuses, not a photograph, even though panel (b) is one); Figure_B29_06_03 and Figure_29_06_04 kept as "photo"; a longdesc added to the two labeled anatomical diagrams (Figure_29_06_01's middle-ear schematic and Figure_B29_06_03's "Double jaw joint" inset) whose labels are not fully carried by their captions; the middle-ear figure's (Figure_29_06_01) source alt calls the malleus, incus, and stapes "the three bones of the inner ear… connected together inside the ear canal," while the module's own caption and text place them in the middle ear and the drawing shows them in the cavity beyond the inner end of the ear canal, so the page's alt describes them there — reported as a source defect; the morganucodont caption's "This morganucodont *Megazotrodon*," corrected to "*Megazostrodon*" to match the correct genus name used two sentences later in the same caption's own credit line ("Megazostrodon Natural History Museum") and confirmed against the PDF — reported as a source defect; the second instance of "Atlantogenata," printed as "Atlantogeneta" one sentence after its first, correct spelling in the same paragraph, corrected to "Atlantogenata" throughout — reported as a source defect; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with rubric checkpoints added to each self-check decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (monotreme, marsupial, eutherian, dentary, sebaceous gland) added from the glossary; four items written locally and strictly from the section's own sentences, disclosed because the source's Review and Critical Thinking questions do not test the objectives they cover — a multiple choice on which early synapsid group lacks the zygomatic arch (from the section's own sentence naming pelycosaurs as the exception), and, for the "major clades of eutherian mammals" objective, a multiple choice and a self-check built from the section's sentence on the Atlantogenata/Boreoeutheria clades and their example groups, plus a text-recall item built from the section's sentence naming rodents and bats as the two largest eutherian orders; the glossary's "a skin gland that produce" read as "produces"; Practice items placed under the objective each tests, so the eccrine-gland Review Question, first in the source, comes after the monotreme and fossil-record questions, and the jaw-musculature Critical Thinking Question, third in the source, comes before the skeletal-system and brain questions. Two claims are corrected with visible Source notes: mammals number more than 6,000 species, consistent with the section's own 6,000 placentals, and the mammary gland key term admits the males the section says possess them (errata 428, 431).</small>

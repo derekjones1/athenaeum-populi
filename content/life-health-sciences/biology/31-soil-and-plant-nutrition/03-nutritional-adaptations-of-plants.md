@@ -139,19 +139,6 @@ epiphyte
 insectivorous
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A plant that is dependent on its host for survival is called a ________."
-  answer="parasitic plant"
-  accept="parasite"
-  hint="This plant's suckers invade a host's stem and tap into its vascular bundles for water and nutrients — the dodder is a well-known example."
->}}
-
-{{< textin
-  question="A plant that does not have chlorophyll and gets its food from dead matter is called a ________."
-  answer="saprophyte"
-  hint="Unlike fungi (which are commonly, but incorrectly, given this same name), most of these rare plants don't digest dead matter directly — they parasitize a fungus that already has."
->}}
-
 {{< multiplechoice
   question="What is the term for the symbiotic association between fungi and cyanobacteria?"
   answer="lichen"
@@ -164,9 +151,22 @@ nitrogen-fixing nodule
 {{< /multiplechoice >}}
 
 {{< textin
+  question="Parasitic plants that are fully photosynthetic and only use the host for water and minerals are called ________."
+  answer="hemiparasites"
+  accept="hemiparasitic plant|hemi-parasite"
+  hint="Reread the Plant Parasites paragraph after the dodder example."
+>}}
+
+{{< textin
+  question="A plant that does not have chlorophyll and gets its food from dead matter is called a ________."
+  answer="saprophyte"
+  hint="Unlike fungi (which are commonly, but incorrectly, given this same name), most of these rare plants don't digest dead matter directly — they parasitize a fungus that already has."
+>}}
+
+{{< textin
   question="A plant in a symbiotic relationship with bacteria or fungi is called a ________."
   answer="symbiont"
-  hint="This kind of plant's special adaptations include forming root nodules or partnering with mycorrhizal fungi — the general term for one partner in any mutualistic pairing."
+  hint="Reread the one-sentence subsection that points back to two figures shown earlier in the section."
 >}}
 
 {{< textin
@@ -205,11 +205,11 @@ all of the above
 {{< multiplechoice
   question="Fungi form symbiotic associations called ________ with plants, becoming integrated into the physical structure of the root."
   answer="mycorrhizae"
-  hint="This fungal partnership becomes physically integrated into the root itself — unlike the option describing a bulge that legume roots grow, or the option naming the soil bacteria that colonize it."
+  hint="Reread the opening paragraph of the section's fungi-and-roots subsection."
 >}}
-nodules
+mantles
 mycorrhizae
-rhizobia
+hyphae
 lichen
 {{< /multiplechoice >}}
 
@@ -218,7 +218,7 @@ lichen
 {{< multiplechoice
   question="Which process produces an inorganic compound that plants can easily use?"
   answer="nitrogen fixation"
-  hint="This is the process that converts atmospheric N₂ into ammonia — the same conversion the section's opening equation describes."
+  hint="Reread the opening paragraph of the section's first subsection, just before its chemical equation."
 >}}
 photosynthesis
 nitrogen fixation
@@ -227,17 +227,17 @@ Calvin cycle
 {{< /multiplechoice >}}
 
 {{< textin
+  question="The most important source of biological nitrogen fixation is the symbiotic interaction between soil bacteria and ________."
+  answer="legumes"
+  accept="legume plants"
+  hint="Peanuts, beans, chickpeas, and soybeans are the section's examples of these plants."
+>}}
+
+{{< textin
   question="The soil bacteria that symbiotically interact with legume roots to form nodules and fix nitrogen are collectively called ________."
   answer="rhizobia"
   accept="rhizobium"
   hint="The soybean-nodule figure's transmission electron micrograph shows these nitrogen-fixing bacteria packed inside vesicles within a nodule cell."
->}}
-
-{{< textin
-  question="The specialized root structures that contain rhizobia bacteria, where nitrogen fixation takes place, are called ________."
-  answer="nodules"
-  accept="nodule|root nodule"
-  hint="These bulbous swellings form on legume roots — soybean roots studied under a microscope show masses of bacteria packed inside them."
 >}}
 
 {{< textin
@@ -269,4 +269,4 @@ nitrogen fixation allows the plant to obtain nitrogen from the air
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 31.3: Nutritional Adaptations of Plants](https://openstax.org/books/biology-2e/pages/31-3-nutritional-adaptations-of-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own bare "Photo shows…" alts; Figure_31_03_01abc re-kinded from the manifest's file-extension "diagram" guess to "photo" (three side-by-side photographs of legumes, not a diagram); the interactive note rendered as a Link to Learning callout keeping its video URL; the note wrapping the Visual Connection Question rendered as its figure followed by a self-check (the source keys prose, not a lettered choice), kept in the body; the genus name in Figure 31.11's caption, printed in the module as "Bradyrhyzobium japonicum," corrected to the standard spelling "Bradyrhizobium japonicum" — reported as a source defect; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eight key-term recall items added from the glossary, one per definition; the thin "Describe mycorrhizae" objective group — served by only one Review Question in the source — filled out with a cloze text-in and a select-the-term multiple choice, both built from the section's own summary sentence on ectomycorrhizae, endomycorrhizae, and mycorrhizae, with no new claim.</small>
+<small>This section is adapted from [Biology 2e, Section 31.3: Nutritional Adaptations of Plants](https://openstax.org/books/biology-2e/pages/31-3-nutritional-adaptations-of-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the source's own bare "Photo shows…" alts; Figure_31_03_01abc re-kinded from the manifest's file-extension "diagram" guess to "photo" (three side-by-side photographs of legumes, not a diagram); the interactive note rendered as a Link to Learning callout keeping its video URL; the note wrapping the Visual Connection Question rendered as its figure followed by a self-check (the source keys prose, not a lettered choice), kept in the body; the genus name in Figure 31.11's caption, printed in the module as "Bradyrhyzobium japonicum," corrected to the standard spelling "Bradyrhizobium japonicum" — reported as a source defect; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items added from the glossary, one per definition except "parasitic plant," whose recall item would re-ask the source's parasite Review Question, so that slot is a recall item on hemiparasites built from the Plant Parasites paragraph's own sentence; the nodules recall item replaced by a Summary cloze on legumes ("The most important source of BNF is the symbiotic interaction between soil bacteria and legumes"), placed first after the nitrogen-fixation Review Question, because a source Review Question option ("nitrogen-fixing nodule") and the rhizobia item's stem both printed its key above it; the thin "Describe mycorrhizae" objective group — served by only one Review Question in the source — filled out with a cloze text-in and a select-the-term multiple choice, both built from the section's own summary sentence on ectomycorrhizae, endomycorrhizae, and mycorrhizae, with no new claim (the multiple choice's distractors are the section's own terms mantles, hyphae, and lichen).</small>

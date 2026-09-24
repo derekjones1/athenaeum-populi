@@ -94,6 +94,12 @@ Fungi establish parasitic relationships with plants and animals. Fungal diseases
 
 ### Describe some fungal parasites and pathogens of plants
 
+{{< textin
+  question="A symbiotic relationship in which one member of the association benefits at the expense of the other is called ________."
+  answer="parasitism"
+  hint="Reread the key terms, at the entry that pairs a benefiting member with a harmed one."
+>}}
+
 {{< multiplechoice
   question="A fungus that climbs up a tree reaching higher elevation to release its spores in the wind and does not receive any nutrients from the tree or contribute to the tree's welfare is described as a ________."
   answer="commensal"
@@ -115,12 +121,6 @@ the grapes develop defenses to prevent infection by the fungi
 {{< /selfcheck >}}
 
 {{< textin
-  question="A symbiotic relationship in which one member of the association benefits at the expense of the other is called ________."
-  answer="parasitism"
-  hint="This relationship harms one member while benefiting the other — the opposite of commensalism, defined in the same sentence."
->}}
-
-{{< textin
   question="A symbiotic relationship in which one member benefits while the other member is not affected is called ________."
   answer="commensalism"
   hint="Unlike parasitism, which harms one member, this relationship leaves the unaffected member neither helped nor harmed."
@@ -131,7 +131,7 @@ the grapes develop defenses to prevent infection by the fungi
 {{< multiplechoice
   question="A fungal infection that affects nails and skin is classified as ________."
   answer="superficial mycosis"
-  hint="This kind of mycosis stays limited to outer body surfaces, unlike an infection that spreads to internal organs."
+  hint="Reread the paragraphs that sort fungal infections of animals by where in the body they occur."
 >}}
 systemic mycosis
 mycetismus
@@ -148,17 +148,17 @@ bacteria can enter the deeper layers of tissues and cause infections
 {{< /selfcheck >}}
 
 {{< textin
-  question="A fungal disease that results from infection and direct damage due to the growth and infiltration of a fungus is called a ________."
-  answer="mycosis"
-  accept="mycoses"
-  hint="This general term covers both the superficial and the systemic fungal diseases described in this section."
->}}
-
-{{< textin
   question="The poisoning of humans and other animals by foods contaminated with fungal toxins is called ________."
   answer="mycotoxicosis"
   accept="mycotoxicoses"
   hint="This differs from eating a poisonous mushroom directly — here, the danger comes from toxins already present in contaminated food."
+>}}
+
+{{< textin
+  question="A fungal disease that results from infection and direct damage due to the growth and infiltration of a fungus is called a ________."
+  answer="mycosis"
+  accept="mycoses"
+  hint="This general term covers both the superficial and the systemic fungal diseases described in this section."
 >}}
 
 {{< textin
@@ -172,7 +172,7 @@ bacteria can enter the deeper layers of tissues and cause infections
 {{< multiplechoice
   question="The targets for anti-fungal drugs are much more limited than antibiotics or anti-viral medications. Why?"
   answer="Human cells are much more similar to fungi cells than bacteria or viruses."
-  hint="Fungi and animals are both eukaryotes, unlike prokaryotic bacteria — think about what that similarity means for a drug that must avoid harming the host's own cells."
+  hint="Reread the last two sentences of the paragraph that opens the Animal and Human Parasites and Pathogens subsection."
 >}}
 There are more bacteria and viruses than fungi.
 Fungi can only be targeted during sexual reproduction, while bacteria and viruses can be targeted at any point in their lifespan.
@@ -181,23 +181,18 @@ Human cells are much more similar to fungi cells than bacteria or viruses.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Fungal infections are difficult to cure, since fungi, like their hosts, are ________, and cladistically related closely to Kingdom Animalia."
-  answer="eukaryotic"
-  accept="eukaryote"
-  hint="Antibiotics work by targeting a kind of cell that fungi are not — the same kind of cell that fungi share with their animal or plant hosts."
+  question="Fungal infections are generally very difficult to treat because, unlike bacteria, fungi are eukaryotes: antibiotics only target ________ cells, whereas compounds that kill fungi also harm the eukaryotic animal host."
+  answer="prokaryotic"
+  accept="prokaryote"
+  hint="Reread the end of the paragraph that opens the Animal and Human Parasites and Pathogens subsection; the blank names the kind of cell bacteria have."
 >}}
 
-{{< multiplechoice
-  question="Antifungal therapy is difficult to develop because compounds that kill fungal cells also often:"
-  answer="harm the eukaryotic animal host"
-  hint="Antibiotics only affect prokaryotic cells; think about what an antifungal compound cannot avoid affecting instead, given what kind of cells fungi and animals both have."
+{{< textin
+  question="Treatment of systemic mycoses and many other fungal diseases requires the use of antifungal medications that have serious ________."
+  answer="side effects"
+  hint="Reread the end of the paragraph on systemic mycoses."
 >}}
-target only prokaryotic cells
-harm the eukaryotic animal host
-leave the keratin layer intact
-destroy vascular tissue in plants
-{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 24.4: Fungal Parasites and Pathogens](https://openstax.org/books/biology-2e/pages/24-4-fungal-parasites-and-pathogens) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B24_04_01abcd re-kinded from the manifest's file-extension "diagram" guess to "photo" after inspection (all four panels are photographs of infected plants and produce, not drawings); both figures' bare source alts ("Part A is a photo of...") rewritten from the images, folding in the printed sporangia/hyphae labels and 25-micrometer scale bar visible in Figure_24_04_02abc's panel (b), which the source alt omitted; the Scientific Method Connection's blank data-collection table (Results of Antifungal Testing of Vascular Tissue from Different Species of Elm) transcribed as a Markdown table with its title as a bold line above it and its data cells left empty for the learner to fill in, with no practice item built from it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary; one summary-derived recall item (eukaryotic) added under the antifungal-therapy objective from the section summary's own sentence; and one locally written multiple choice (compounds that kill fungal cells also harming the eukaryotic host) added under the same objective, built strictly from the section's own sentence and disclosed in the ledger, since only one Review Question and one summary sentence test that objective.</small>
+<small>This section is adapted from [Biology 2e, Section 24.4: Fungal Parasites and Pathogens](https://openstax.org/books/biology-2e/pages/24-4-fungal-parasites-and-pathogens) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B24_04_01abcd re-kinded from the manifest's file-extension "diagram" guess to "photo" after inspection (all four panels are photographs of infected plants and produce, not drawings); both figures' bare source alts ("Part A is a photo of...") rewritten from the images, folding in the printed sporangia/hyphae labels and 25-micrometer scale bar visible in Figure_24_04_02abc's panel (b), which the source alt omitted; the Scientific Method Connection's blank data-collection table (Results of Antifungal Testing of Vascular Tissue from Different Species of Elm) transcribed as a Markdown table with its title as a bold line above it and its data cells left empty for the learner to fill in, with no practice item built from it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary; one body-sentence cloze (prokaryotic, from the paragraph that opens the Animal and Human Parasites and Pathogens subsection) added under the antifungal-therapy objective, placed after that objective's Review Question; it replaced a summary cloze on "eukaryotic" that sat directly above the Review Question and restated its answer; and one body-sentence cloze (side effects, from the systemic-mycoses paragraph) added under the same objective, since only one Review Question and one summary sentence test that objective.</small>

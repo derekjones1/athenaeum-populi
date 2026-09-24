@@ -50,11 +50,11 @@ Eukaryotic promoters are much larger and more intricate than prokaryotic promote
 
 Instead of the simple σ factor that helps bind the prokaryotic RNA polymerase to its promoter, eukaryotes assemble a complex of transcription factors required to recruit RNA polymerase II to a protein coding gene. Transcription factors that bind to the promoter are called *basal transcription factors*. These basal factors are all called TFII (for Transcription Factor/polymerase II) plus an additional letter (A-J). The core complex is TFIID, which includes a TATA-binding protein (TBP). The other transcription factors systematically fall into place on the DNA template, with each one further stabilizing the pre-initiation complex and contributing to the recruitment of RNA polymerase II.
 
-{{< mediafigure src="biology/Figure_15_03_01-cf10" kind="diagram" eager="true" alt="Four stacked panels connected by downward arrows, each showing a colored bar representing DNA with a bracket over a promoter region ending in a block marked TATAAA, and an arrow to the right marking the transcription start site. The panels show progressively more transcription-factor ovals bound at the promoter, ending with a large complex enclosing RNA polymerase II." longdesc="Four panels, top to bottom, connected by downward arrows. A bracket above the top panel labels a multicolored promoter segment 'Promoter,' ending in a block marked TATAAA and labeled −30; a green arrow to the right of the promoter marks the +1 transcription start site, and this DNA bar and arrow repeat unchanged in every panel. Panel 1: the bare promoter, no proteins bound. Panel 2: an oval labeled TFIID, with a smaller oval labeled TBP nested inside it, sits on the TATAAA block. Panel 3: an oval labeled TFIIA is added to the left of TFIID/TBP and an oval labeled TFIIB to its right. Panel 4: the full complex — TFIIA and TFIIB still flanking TFIID/TBP, with TFIIE, TFIIF, and TFIIH added above and beside them — all enclosed in one large shaded oval labeled 'RNA Polymerase II.'" >}}
+{{< mediafigure src="biology/Figure_15_03_01-cf10" kind="diagram" eager="true" alt="Four stacked panels connected by downward arrows, each showing a colored bar representing DNA with a bracket over a promoter region ending in a block marked TATAAA, and an arrow to the right marking the transcription start site. The panels show progressively more transcription-factor ovals bound at the promoter, ending with a large complex enclosing RNA polymerase II." longdesc="Four panels, top to bottom, connected by downward arrows. A bracket above the top panel labels a multicolored promoter segment 'Promoter,' ending in a block marked TATAAA and labeled −30; past one more unbracketed block, a black arrow pointing right along a green stretch of the bar is labeled +1 Transcription start site, and this DNA bar and arrow repeat unchanged in every panel. Panel 1: the bare promoter, no proteins bound. Panel 2: an oval labeled TFIID, with a smaller oval labeled TBP nested inside it, sits on the TATAAA block. Panel 3: an oval labeled TFIIA is added to the left of TFIID/TBP and an oval labeled TFIIB at its upper right. Panel 4: the full complex — TFIIA and TFIIB still flanking TFIID/TBP, with TFIIE, TFIIF, and TFIIH added above and beside them — all enclosed in one large shaded oval labeled 'RNA Polymerase II.'" >}}
 A generalized promoter of a gene transcribed by RNA polymerase II is shown. Transcription factors recognize the promoter. RNA polymerase II then binds and forms the transcription initiation complex.
 {{< /mediafigure >}}
 
-{{< selfcheck question="A scientist splices a eukaryotic promoter in front of a bacterial gene and inserts the gene in a bacterial chromosome. Would you expect the bacteria to transcribe the gene?" hint="Compare what a prokaryotic RNA polymerase recognizes on its own with what the diagram above shows binding a eukaryotic promoter before RNA polymerase II ever attaches." >}}
+{{< selfcheck question="A scientist splices a eukaryotic promoter in front of a bacterial gene and inserts the gene in a bacterial chromosome. Would you expect the bacteria to transcribe the gene?" hint="Compare the diagram above with the promoter figure in Section 15.2." >}}
 No. Prokaryotes use different promoters than eukaryotes.
 ===CHECKS===
 no
@@ -114,39 +114,29 @@ Transcription in eukaryotes involves one of three types of polymerases, dependin
   question="The protein complex that pulls histones away from the DNA template ahead of a transcribing RNA polymerase II and replaces them once the pre-mRNA is synthesized is known by the acronym ________."
   answer="FACT"
   accept="facilitates chromatin transcription|FACT complex"
-  hint="Its name is itself an acronym for what it does to chromatin during elongation."
+  hint="Reread the third paragraph of Eukaryotic Elongation and Termination."
 >}}
 
 {{< textin
   question="The cluster of transcription factors and other proteins that assembles on a promoter to recruit RNA polymerase II is called the ________."
   answer="preinitiation complex"
   accept="pre-initiation complex"
-  hint="Its formation is the step that immediately precedes elongation."
+  hint="Reread the paragraph on basal transcription factors that follows the promoter-element paragraph."
 >}}
 
 {{< textin
-  question="According to the section summary, once transcription factors have bound the promoter, the mRNA is synthesized in the ________."
+  question="According to the section summary, the mRNA is synthesized in the ________."
   answer="5′ to 3′ direction"
-  hint="This is the same direction a polymerase reads the template and extends the growing strand in prokaryotes."
+  accept="5′-3′ direction|5′ to 3′|5′-3′"
+  hint="Reread the section summary's fourth sentence."
 >}}
 
 ### Discuss the role of RNA polymerases in transcription
 
 {{< multiplechoice
-  question="Whereas RNA polymerase II transcribes all of the protein-coding genes, ________ transcribes the tandemly duplicated rRNA genes, according to the section summary."
-  answer="RNA polymerase I"
-  hint="This is the polymerase located in the nucleolus."
->}}
-RNA polymerase III
-RNA polymerase I
-RNA polymerase II
-the FACT complex
-{{< /multiplechoice >}}
-
-{{< multiplechoice
   question="Whereas RNA polymerases I and III terminate transcription by protein- or RNA hairpin-dependent methods, ________ transcribes for 1,000 or more nucleotides beyond the gene template and cleaves the excess during pre-mRNA processing, according to the section summary."
   answer="RNA polymerase II"
-  hint="This is the polymerase responsible for transcribing nearly all protein-coding genes."
+  hint="Reread the section summary's last sentence."
 >}}
 RNA polymerase I
 RNA polymerase III
@@ -158,15 +148,26 @@ the FACT complex
   question="The class of molecules synthesized by RNA polymerase III that has a variety of functions, including splicing pre-mRNAs and regulating transcription factors, is called ________."
   answer="small nuclear RNA"
   accept="snRNA"
-  hint="RNA polymerase III also produces the 5S rRNA and tRNAs, but this class handles pre-mRNA splicing."
+  hint="Reread the paragraph on the third polymerase, just before the α-amanitin paragraph."
 >}}
+
+{{< multiplechoice
+  question="Whereas RNA polymerase II transcribes all of the protein-coding genes, ________ transcribes the tandemly duplicated rRNA genes, according to the section summary."
+  answer="RNA polymerase I"
+  hint="Reread the section summary's second sentence."
+>}}
+RNA polymerase III
+RNA polymerase I
+RNA polymerase II
+the FACT complex
+{{< /multiplechoice >}}
 
 ### Compare and contrast the three RNA polymerases
 
 {{< multiplechoice
   question="What transcripts will be most affected by low levels of α-amanitin?"
   answer="pre-mRNAs"
-  hint="Find which polymerase the text calls 'extremely sensitive' to the toxin, then recall what that polymerase transcribes."
+  hint="Use the table of the three polymerases."
 >}}
 18S and 28S rRNAs
 pre-mRNAs
@@ -175,16 +176,16 @@ other small nuclear RNAs
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="According to the table above, which RNA polymerase is located in the nucleolus and synthesizes all of the rRNAs except 5S rRNA?"
-  answer="RNA polymerase I"
-  hint="This is also the only one of the three polymerases not located in the nucleus itself."
+  question="According to the table above, which RNA polymerase is moderately sensitive to α-amanitin?"
+  answer="RNA polymerase III"
+  hint="Use the table of the three polymerases."
 >}}
-RNA polymerase III
 RNA polymerase I
 RNA polymerase II
+RNA polymerase III
 {{< /multiplechoice >}}
 
-{{< selfcheck question="A scientist observes that a cell has an RNA polymerase deficiency that prevents it from making proteins. Describe three additional observations that would together support the conclusion that a defect in RNA polymerase I activity, and not problems with the other polymerases, causes the defect." hint="Think about what each polymerase's own product would still look like in the cell if that polymerase, and only that polymerase, were working normally." >}}
+{{< selfcheck question="A scientist observes that a cell has an RNA polymerase deficiency that prevents it from making proteins. Describe three additional observations that would together support the conclusion that a defect in RNA polymerase I activity, and not problems with the other polymerases, causes the defect." hint="Use the product column of the table of the three polymerases." >}}
 To conclude that a defect in RNA polymerase I, rather than RNA polymerase II or III, is causing the protein-production defect, the scientist needs observations that both rule out RNA polymerase II and RNA polymerase III and implicate RNA polymerase I.
 
 Observations that would eliminate RNA polymerase II as the cause include the transcription of mRNAs in the nucleus and the presence of processed mRNAs in the cytoplasm.
@@ -201,10 +202,31 @@ a lack of functional ribosomes (RNA polymerase I or III), a lack of RNA polymera
 
 ### Explain the significance of transcription factors
 
+{{< textin
+  question="A conserved eukaryotic promoter sequence found at approximately -80 that is essential for binding transcription factors is called a ________."
+  answer="CAAT box"
+  accept="CAAT"
+  hint="Reread the paragraph just after the Visual Connection question."
+>}}
+
+{{< textin
+  question="A nonessential eukaryotic promoter sequence with the motif GGCG, which binds cellular factors to increase transcription efficiency and may occur several times in a promoter, is called a ________."
+  answer="GC-rich box"
+  accept="GC box|GC-rich"
+  hint="Reread the paragraph just after the Visual Connection question."
+>}}
+
+{{< textin
+  question="A nonessential eukaryotic promoter sequence with the motif ATTTGCAT, which binds cellular factors to increase transcription efficiency and may occur several times in a promoter, is called an ________."
+  answer="Octamer box"
+  accept="octamer"
+  hint="Reread the paragraph just after the Visual Connection question."
+>}}
+
 {{< multiplechoice
   question="Which feature of promoters can be found in both prokaryotes and eukaryotes?"
   answer="TATA box"
-  hint="Compare this sequence to the parallel element prokaryotic promoters use, named just before this question in the text."
+  hint="Reread the first paragraph of RNA Polymerase II Promoters and Transcription Factors."
 >}}
 GC box
 TATA box
@@ -215,7 +237,7 @@ octamer box
 {{< multiplechoice
   question="How do enhancers and promoters differ?"
   answer="Enhancers increase the efficiency of gene expression, but are not essential for transcription. Promoter recognition is essential to transcription initiation."
-  hint="The passage right after the table describes what enhancers and silencers do to transcription efficiency, and contrasts that with what a promoter must do."
+  hint="Reread the paragraph on basal transcription factors, enhancers, and silencers."
 >}}
 Enhancers bind transcription factors to silence gene expression, while promoters activate transcription.
 Enhancers increase the efficiency of gene expression, but are not essential for transcription. Promoter recognition is essential to transcription initiation.
@@ -223,25 +245,6 @@ Promoters bind transcription factors to increase the efficiency of transcription
 There is no difference. Both are transcription factor-binding sequences in DNA.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A conserved eukaryotic promoter sequence found at approximately -80 that is essential for binding transcription factors is called a ________."
-  answer="CAAT box"
-  hint="Its consensus sequence is GGCCAATCT."
->}}
-
-{{< textin
-  question="A nonessential eukaryotic promoter sequence with the motif GGCG, which binds cellular factors to increase transcription efficiency and may occur several times in a promoter, is called a ________."
-  answer="GC-rich box"
-  hint="Its name describes the composition of its four-base motif."
->}}
-
-{{< textin
-  question="A nonessential eukaryotic promoter sequence with the motif ATTTGCAT, which binds cellular factors to increase transcription efficiency and may occur several times in a promoter, is called an ________."
-  answer="Octamer box"
-  accept="octamer"
-  hint="Its eight-base motif gives it its name."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 15.3: Eukaryotic Transcription](https://openstax.org/books/biology-2e/pages/15-3-eukaryotic-transcription) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a colored line-art schematic, not a photograph); its source alt, a letter-spaced screen-reader spelling ("R N A polymerase I I"), rewritten from the image, with the full panel-by-panel walkthrough moved into a longdesc; the source's the source's `<link>` cross-references to the comparison table and to the promoter figure replaced with descriptive prose ("see the table below," "illustrated below") since Hugo does not number figures or tables; the source footnote on promoter evolution kept as a parenthetical citation after the sentence it supports; the Visual Connection note kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Question adapted into the closing interactive Practice block; three key-term recall items (FACT, preinitiation complex, small nuclear RNA) and three promoter-element key-term recall items (CAAT box, GC-rich box, Octamer box) added from the glossary; two select-the-term multiple-choice items and one cloze text-in item added from the section's own `Section Summary` sentences to round out the "steps" and "role of RNA polymerases" objective groups; one multiple-choice item ("which RNA polymerase is located in the nucleolus…") locally written strictly from the section's own comparison table, with no new claim, to round out the "compare and contrast" objective group; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and the source's comparison table of the three RNA polymerases, while structurally similar to the book's sortbins tables, was judged not to fit that shape and kept as a Markdown table only — its data columns name three different attribute types (cellular compartment, product, and α-amanitin sensitivity) rather than 2–4 categories to sort into, and its "Nucleus" compartment value is shared by two of the three polymerases, so no clean, non-ambiguous bin assignment exists for every cell. One claim is corrected with a visible Source note: α-amanitin is a death cap toxin, not a fly agaric toxin (erratum 402).</small>
+<small>This section is adapted from [Biology 2e, Section 15.3: Eukaryotic Transcription](https://openstax.org/books/biology-2e/pages/15-3-eukaryotic-transcription) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a colored line-art schematic, not a photograph); its source alt, a letter-spaced screen-reader spelling ("R N A polymerase I I"), rewritten from the image, with the full panel-by-panel walkthrough moved into a longdesc; the source's `<link>` cross-references to the comparison table and to the promoter figure replaced with descriptive prose ("see the table below," "illustrated below") since Hugo does not number figures or tables; the source footnote on promoter evolution kept as a parenthetical citation after the sentence it supports; the Visual Connection note kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Question adapted into the closing interactive Practice block; three key-term recall items (FACT, preinitiation complex, small nuclear RNA) and three promoter-element key-term recall items (CAAT box, GC-rich box, Octamer box) added from the glossary; two select-the-term multiple-choice items and one cloze text-in item added from the section's own `Section Summary` sentences to round out the "steps" and "role of RNA polymerases" objective groups; one multiple-choice item ("which RNA polymerase is moderately sensitive to α-amanitin?") locally written strictly from the section's own comparison table, with no new claim, to round out the "compare and contrast" objective group; because Practice items are grouped by objective, the α-amanitin Review Question (source second) comes before the TATA-box question (source first), and the promoter-element recall items precede the two Review Questions in their group; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and the source's comparison table of the three RNA polymerases, while structurally similar to the book's sortbins tables, was judged not to fit that shape and kept as a Markdown table only — its data columns name three different attribute types (cellular compartment, product, and α-amanitin sensitivity) rather than 2–4 categories to sort into, and its "Nucleus" compartment value is shared by two of the three polymerases, so no clean, non-ambiguous bin assignment exists for every cell. One claim is corrected with a visible Source note: α-amanitin is a death cap toxin, not a fly agaric toxin (erratum 402).</small>

@@ -55,7 +55,7 @@ Your study of anatomy and physiology will make more sense if you continually rel
 {{< multiplechoice
   question="Which of the following specialties might focus on studying all of the structures of the ankle and foot?"
   answer="regional anatomy"
-  hint="Think about which approach studies everything in one specific area of the body together, rather than one tissue type or one body system."
+  hint="Reread the paragraph on the two general approaches anatomists take to the body's structures, and match a study of the ankle and foot to one of them."
 >}}
 microscopic anatomy
 muscle anatomy
@@ -111,7 +111,7 @@ make sense of health-related news
 help you in your roles as a parent, spouse, partner, friend, colleague, and caregiver
 {{< /selfcheck >}}
 
-{{< selfcheck question="For whom would an appreciation of the structural characteristics of the human heart come more easily: an alien who lands on Earth, abducts a human, and dissects his heart, or an anatomy and physiology student performing a dissection of the heart on her very first day of class? Why?" hint="Think about which of the two already has a lifetime of lived, felt experience with how the heart works, even before studying its structure." >}}
+{{< selfcheck question="For whom would an appreciation of the structural characteristics of the human heart come more easily: an alien who lands on Earth, abducts a human, and dissects his heart, or an anatomy and physiology student performing a dissection of the heart on her very first day of class? Why?" hint="Reread the section's closing paragraphs on relating the form of a structure to its function." >}}
 A student would more readily appreciate the structures revealed in the dissection. Even though the student has not yet studied the workings of the heart and blood vessels in her class, she has experienced her heart beating every moment of her life, has probably felt her pulse, and likely has at least a basic understanding of the role of the heart in pumping blood throughout her body. This understanding of the heart’s function (physiology) would support her study of the heart’s form (anatomy).
 ===CHECKS===
 the student would more readily appreciate the structures revealed in the dissection

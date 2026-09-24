@@ -1659,6 +1659,306 @@
       "status": "correct-local-source-defect",
       "errataEntry": 877,
       "rationale": "The Atomic Structure and Energy module (para fs-id1484653) says the number of electrons that \"'spin' around the nucleus at close to the speed of light equals the number of protons\", but for the light elements this section actually illustrates (H, He, C, Na, Fe), Bohr-model ground-state electron speeds are a small fraction of light speed (v1 = alpha*c, about 0.7% of c for hydrogen); near-light speeds arise only for inner-shell electrons of very heavy elements (Z >~ 60-79), not the light elements this paragraph uses as its own example (helium, two sentences later). The page drops \"at close to the speed of light\" from the sentence with a visible Source note and a footer sentence. Found by the chapter 2 prose claim pass, confirmed by the chapter 2.1 checker, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/02-the-chemical-level-of-organization/02-chemical-bonds.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46000",
+      "sourceElementIds": [
+        "fs-id2020519"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 882,
+      "rationale": "The Chemical Bonds module's glossary (term fs-id2005946, meaning fs-id2020519) defines a polar molecule by \"uneven numbers of electrons in the nuclei of the atoms participating in the covalent bond\", but electrons are not in the nucleus, and the module's own body says \"Polar molecules occur when atoms share electrons unequally, in polar covalent bonds\" (para fs-id1909147) and that water's electrons \"are more strongly attracted to the oxygen nucleus than to the hydrogen nuclei\" (para fs-id1490078). The page's Key terms bullet reads \"unequal sharing of electrons between the atoms participating in the covalent bond\" with a visible Source note and a footer sentence. The polar-molecule recall item's stem uses the body's definition (\"regions that have opposite electrical charges\") and does not depend on the corrected clause. Found by the chapter 2 second review, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/02-the-chemical-level-of-organization/02-chemical-bonds.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46000",
+      "sourceElementIds": [
+        "fs-id1882994"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 883,
+      "rationale": "The Chemical Bonds module's Chapter Review (para fs-id1882994) says molecules with nonpolar covalent bonds \"have a linear three-dimensional shape\" and molecules with polar covalent bonds \"have a triangular three-dimensional shape\", but the module's body ties the \"triangular tent\" shape to water alone (para fs-id1278025), and the book's Organic Compounds module (m46008) describes nonpolar-hydrocarbon lipids built on \"a set of four hydrocarbon rings\" (para fs-id1472124) and hydrophilic globular proteins that \"are globes or spheres\" (para fs-id1383766). The page drops both shape clauses from the Summary with a visible Source note and a footer sentence. No item, hint, or model answer on the page depends on either clause. Found by the chapter 2 second review, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/02-the-chemical-level-of-organization/04-inorganic-compounds-essential-to-human-functioning.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46006",
+      "sourceElementIds": [
+        "fs-id1218107"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 884,
+      "rationale": "The Inorganic Compounds module's Concentrations of Solutes paragraph (para fs-id1218107) says molarity is \"moles (M) of the molecules per liter\", \"The mole of an element is its atomic weight, while a mole of a compound is the sum of the atomic weights of its components\", and \"A mole of any solution has the same number of particles in it\"; the same paragraph's own worked example writes \"a molar (1mol/L) solution of glucose, or, a molarity of 1 (1M)\" (M for molarity, mol for moles), gives a mole of glucose's mass as its \"gram molecular weight\", and counts moles of the solute, not of the solution. The page attaches M to molarity, restates the atomic-weight sentence as a mole's mass in grams, and reads \"a mole of any substance\", with a visible Source note and a footer sentence. No item, hint, or model answer on the page depends on the paragraph. Found by the chapter 2 second review, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/02-the-chemical-level-of-organization/05-organic-compounds-essential-to-human-functioning.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46008",
+      "sourceElementIds": [
+        "fs-id1698290"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 886,
+      "rationale": "The Organic Compounds module (para fs-id1698290) says \"Sulfur does not readily participate in hydrogen bonds, whereas all other amino acids do\", comparing an element with amino acids; the same paragraph says an amino acid's side chain \"can be polar or nonpolar\", and the protein-structure figure's caption (figure fig-ch02_05_09) says the secondary structure \"is maintained by hydrogen bonds between amino acids\", which holds for polypeptides containing cysteine and methionine too. The page restates the contrast as one with \"the side chains of many other amino acids\" with a visible Source note and a footer sentence. No item, hint, or model answer on the page depends on the sentence. Found by the chapter 2 second review, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/32-plant-reproduction/03-asexual-reproduction.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66609",
+      "sourceElementIds": [
+        "fs-idm170983024"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 887,
+      "rationale": "The Asexual Reproduction module (para fs-idm170983024) says \"Applications of cytokinins and ethylene delay or prevent senescence; in contrast, abscisic acid causes premature onset of senescence.\" The book's own Plant Sensory Systems and Responses module (m66601, Section 30.6) says \"Cytokinins are known to delay senescence in leaf tissues\" but that ethylene \"is associated with fruit ripening, flower wilting, and leaf fall\" (para fs-idp98851840), that \"Aging tissues (especially senescing leaves) and nodes of stems produce ethylene,\" and that \"Ethylene also triggers leaf and fruit abscission, flower fading and dropping\" (para fs-idm27480256) — ethylene promotes senescence rather than delaying it. The page's sentence reads \"Applications of cytokinins delay or prevent senescence; in contrast, ethylene promotes senescence, and abscisic acid causes premature onset of senescence\" with a visible Source note quoting Section 30.6, and a footer sentence. The senescence recall textin's hint, which repeated the source's claim (\"cytokinins and ethylene delay it\"), now only says where to look. Found by the Biology defect-rate audit, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/37-the-endocrine-system/05-endocrine-glands.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66631",
+      "sourceElementIds": [
+        "fs-idp213761664"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 888,
+      "rationale": "The Endocrine Glands module's Summary (para fs-idp213761664) says \"The adrenal glands are located on top of the kidneys and consist of the renal cortex and renal medulla,\" while the same module's body (para fs-idp50181648) says \"The adrenal glands consist of an outer adrenal cortex and an inner adrenal medulla,\" and the Summary's own next two sentences also say \"adrenal cortex\" and \"adrenal medulla\"; the renal cortex and medulla are regions of the kidney. The page's Summary sentence reads \"consist of the adrenal cortex and adrenal medulla\" with a visible Source note quoting the module's own body sentence, and a footer sentence. No item, hint, or key term on the page was built on the \"renal\" wording. Found by the Biology defect-rate audit, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/32-plant-reproduction/03-asexual-reproduction.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66609",
+      "sourceElementIds": [
+        "fig-ch32_03_01"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 889,
+      "rationale": "The stems figure's caption (figure fig-ch32_03_01) reads \"(a) The corm of a garlic plant looks similar to (b) a tulip bulb, but the corm is solid tissue, while the bulb consists of layers of modified leaves that surround an underground stem.\" This is the garlic-is-a-bulb-not-a-corm defect that erratum 438 corrected in the same module's body sentence (garlic dropped from the corm list, since this book's Section 30.2 gives the Allium onion as a bulb and the page's figure alt shows layered garlic bulbs); the caption was left uncorrected directly below it. The page's caption reads \"(a) The bulb of a garlic plant looks similar to (b) a tulip bulb; a corm, by contrast, is solid tissue, while a bulb consists of layers of modified leaves that surround an underground stem,\" with a visible Source note giving the source's wording, and the footer's erratum 438 sentence is extended to the caption. Found by the Biology defect-rate audit, September 22, 2026. Related: erratum 438 (same module, body sentence)."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/15-microbial-mechanisms-of-pathogenicity/04-virulence-factors-of-eukaryotic-pathogens.md",
+      "bundle": "microbiology",
+      "moduleId": "m58869",
+      "sourceElementIds": [
+        "fs-id1167585000206"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 893,
+      "rationale": "The Virulence Factors of Eukaryotic Pathogens module (para fs-id1167585000206) says \"Like Candida, Aspergillus also produces several proteases. One is elastase... Another is catalase, an enzyme that protects the fungus from hydrogen peroxide produced by the immune system to destroy pathogens,\" classing catalase as a protease. The book's own Glossary appendix (m58950, no element id) defines catalase as an \"enzyme that breaks down hydrogen peroxide to water and oxygen\" and a protease as an \"enzyme involved in protein catabolism,\" and the Oxygen Requirements for Microbial Growth module (m58829, Section 9.2, paras fs-id1172100560107 and fs-id1172100883745) names catalase with superoxide dismutase and peroxidase as the enzymes that break down reactive oxygen species (\"The enzyme catalase converts hydrogen peroxide to water and oxygen\"). The page keeps \"several proteases\" and elastase as printed and reads \"Aspergillus also produces catalase, an enzyme that protects the fungus...\" with a visible Source note quoting the Glossary and Section 9.2, and a footer sentence. The page's Aspergillus self-check, whose hint said \"two mycotoxins and two proteases\" and whose model answer said \"two proteases: elastase... and catalase,\" now has a location hint and a model answer naming elastase as a protease and catalase as an enzyme; its rubric clauses are unchanged. Found by the Microbiology defect-rate audit, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/03-biological-macromolecules/02-carbohydrates.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66440",
+      "sourceElementIds": [
+        "fs-id1707972"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 899,
+      "rationale": "The Polysaccharides paragraph says \"unbranched glucose monomer chains (only α 1-4 linkages) form the starch; whereas, amylopectin is a branched polysaccharide.\" The same module's figure caption (fig-ch03_02_06) says unbranched α 1-4 chains comprise amylose, and its Critical Thinking solution (fs-id2491136) says starch has two forms, unbranched amylose and branched amylopectin. The page reads \"form amylose\" with a visible Source note, disclosed in the footer. Found by the bio01 practice sweep, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/04-cell-structure/03-eukaryotic-cells.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66449",
+      "sourceElementIds": [
+        "fs-id1286865"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 901,
+      "rationale": "The Critical Thinking question opens \"You already know that ribosomes are abundant in red blood cells.\" Mature mammalian red blood cells have no organelles, ribosomes included, by the book's own Section 40.2 (m66651: \"the lack of organelles in erythrocytes\"); the module's own ribosome-rich example is pancreatic enzyme-secreting cells. The question keeps the source wording; a visible Source note follows the unchanged model answer, disclosed in the footer. Found by the bio02 practice sweep, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/07-cellular-respiration/04-oxidative-phosphorylation.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66468",
+      "sourceElementIds": [
+        "fs-idm139224624",
+        "fs-idm179339824"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 910,
+      "rationale": "The cyanide Visual Connection solution says the chain \"can no longer pump electrons into the intermembrane space\"; the module's own caption (fig-ch07_04_01) says protons are pumped there. The model answer and its rubric checkpoint say \"pump protons (hydrogen ions)\" with a visible Source note, disclosed in the footer. Found by the bio03 practice sweep, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/07-cellular-respiration/04-oxidative-phosphorylation.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66468",
+      "sourceElementIds": [
+        "fs-id848549"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 911,
+      "rationale": "The ATP Yield paragraph writes the oxidized flavin carrier as \"FAD+\" four times; the book's Section 7.1 (m66465) introduces it as FAD with reduced form FADH2 and Section 7.3 (m66467) says \"one FAD molecule is reduced to FADH2\". The page prints FAD with a visible Source note, disclosed in the footer. Found by the bio03 practice sweep, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/06-dna-repair.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66392",
+      "sourceElementIds": [
+        "fs-id1712102"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 923,
+      "rationale": "The mismatch-repair Critical Thinking solution says \"Mutations are not repaired, as in the case of xeroderma pigmentosa\"; the same module (fs-id2078153) attributes xeroderma pigmentosa to a defect in the nucleotide excision repair enzymes. The model answer drops the example with a visible Source note, and the first rubric checkpoint drops the clause; disclosed in the footer. Found by the bio05 practice sweep, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/01-historical-basis-of-modern-understanding.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66386",
+      "sourceElementIds": [
+        "eip-758"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 922,
+      "rationale": "The transformation Review Question keys \"All of the above\" while option (c), \"Bacteriophages could spread DNA encoding toxins to new bacteria,\" describes transduction, which the book's Section 22.2 (m66545) separates from transformation. The page prints (c) as \"Bacteria could take up DNA encoding toxins that other bacteria shed into their environment\" (Section 22.2's transformation route), key D unchanged, disclosed in the footer and in DISCLOSED_DEVIATIONS. Found by the bio05 practice sweep, September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/08-photosynthesis/03-using-light-energy-to-make-organic-molecules.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66475",
+      "sourceElementIds": [
+        "fig-ch08_03_04",
+        "fs-idm171280112"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 913,
+      "rationale": "The giraffe-and-acacia artwork (Figure_08_03_05) and its source alt print \"Plants use oxygen and carbon dioxide for cellular respiration\"; the figure's own caption says aerobic respiration consumes oxygen and produces carbon dioxide. The raster art is unchanged; the page's longdesc quotes the box as printed, and the caption carries a visible Source note, disclosed in the footer. Found by the Biology figure pass (fbio03), September 22, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/01-animal-form-and-function.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66611",
+      "sourceElementIds": [
+        "fs-idp22243696"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 939,
+      "rationale": "The Animal Form and Function module's Critical Thinking solution (para fs-idp22243696) says \"Smaller bodied animals have a relatively large surface area compared to a much larger animal. The large animal's large surface area leads to increased heat loss that the animal must compensate for, resulting in a higher BMR. A small animal, having less relative surface area, does not lose as much heat and has a correspondingly lower BMR.\" The same module's body (para fs-idm69258720) says smaller animals \"lose heat at a faster rate than larger animals\" and that \"This results in a smaller endothermic animal having a higher BMR, per body weight, than a larger endothermic animal.\" The page's model answer gives the small animal the higher BMR per body weight and the large animal the lower, with a visible Source note and a footer sentence; the rubric's last two checkpoints follow. Found by the Sep 22 sweep, applied September 23, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/03-human-reproductive-anatomy-and-gametogenesis.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66673",
+      "sourceElementIds": [
+        "fs-idm14468144"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 946,
+      "rationale": "The Critical Thinking solution to fs-idp47132288 (para fs-idm14468144) says \"These oogonia finish the first meiotic division, producing a primary oocyte with most of the cytoplasm and its contents, and a second cell called a polar body\". The module's oogenesis paragraph (para fs-idm27433856) says the primary oocyte finishing the first meiotic division divides unequally, with most of the cellular material going to \"a secondary oocyte\", and that the secondary oocyte, if fertilized, \"continues through the meiosis II, producing a second polar body and a fertilized egg.\" The page's model answer reads \"producing a secondary oocyte\" and \"The second meiotic division, finished only if the egg is fertilized, yields a second polar body\", with a visible Source note and an extended footer sentence; rubric checkpoint 3 follows. Found by the Sep 22 sweep, applied September 23, 2026. Related: erratum 277 (same solution, next sentence)."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/36-sensory-systems/03-taste-and-smell.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66405",
+      "sourceElementIds": [
+        "fs-idp132349712"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 941,
+      "rationale": "The Taste and Smell module's Summary (para fs-idp132349712) says \"Like taste receptors, olfactory receptors are each responsive to only one odorant.\" The same module's body, on Buck and Axel's work, says \"Some receptors detect more than one odor, and many odors can be detected by more than more receptor.\" The page's Summary sentence reads \"Olfactory receptors are sensitive to different odorants: some receptors detect more than one odor, and many odors can be detected by more than one receptor\", with a visible Source note and a footer sentence. No item on the page is keyed on the sentence. Found by the Sep 22 sweep, applied September 23, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/45-population-and-community-ecology/04-population-dynamics-and-regulation.md",
+      "bundle": "biology-bundle",
+      "moduleId": "m66691",
+      "sourceElementIds": [
+        "eip-720"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 948,
+      "rationale": "Review Question eip-720 (\"Which of the following events would not negatively impact Yellowstone's grey wolf carrying capacity?\") is keyed A, \"snow in winter\". The module's own text says \"In many areas, the carrying capacity during the winter is much lower than it is during the summer\" (para fs-idm41957168), names cold winter weather, like a forest fire, a density-independent cause of mortality (para fs-idm212800768), and counts diseases among density-dependent factors (para fs-idm87430832). That leaves B, \"a beaver damming a river upstream\", as the only option the module does not tie to lower carrying capacity or higher mortality. The page keys B, with a visible Source note below the item, an elimination hint, and a footer sentence. The locally written season-of-lowest-carrying-capacity question was moved above it. Found by the Sep 22 sweep, applied September 23, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/02-parasitic-helminths.md",
+      "bundle": "microbiology",
+      "moduleId": "m58803",
+      "sourceElementIds": [
+        "fs-id1172102097375"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 963,
+      "rationale": "The colonoscopy Multiple Choice (exercise fs-id1172102097375) keys \"nematode\" for a nonsegmented worm found in the intestine, but the same module says \"The flukes (trematodes) are nonsegmented flatworms that ... attach to the inner walls of intestines\" and names the intestinal fluke Fasciolopsis buski, so the distractors \"fluke\" and \"trematode\" were also correct. The page replaces them with \"cestode\" and \"tapeworm\", the module's segmented flatworms (key unchanged), disclosed in the footer. Found by the mic03 practice sweep, September 22, 2026; applied September 23, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/10-biochemistry-of-the-genome/01-using-microbiology-to-discover-the-secrets-of-life.md",
+      "bundle": "microbiology",
+      "moduleId": "m58835",
+      "sourceElementIds": [
+        "fs-id1172098421677"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 967,
+      "rationale": "The Multiple Choice fs-id1172098421677 opens \"According to Beadle and Tatum's 'one gene–one enzyme' hypothesis\" but asks which enzyme eliminates transformation, the Avery, MacLeod, and McCarty result the same module describes (\"when DNA was degraded, the resulting mixture was no longer able to transform the R strain bacteria\"). The page's stem names the experiments of Avery, MacLeod, and McCarty, with a visible Source note in the stem quoting the source wording and a footer sentence; key D (deoxyribonucleases) unchanged. Found by the mic06 practice sweep, September 22, 2026; applied September 23, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/05-mutations.md",
+      "bundle": "microbiology",
+      "moduleId": "m58844",
+      "sourceElementIds": [
+        "fs-id1167662401623"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 970,
+      "rationale": "The A Summary of Mutagenic Agents table (fs-id1167662401623) names \"Nitrous oxide\" as the nucleotide-modifying agent that deaminates C to U, but the module's own Chemical Mutagens paragraph (fs-id1167660131933, \"nitrous acid deaminates cytosine, converting it to uracil\") and the nucleoside-analog figure caption name nitrous acid; nitrous oxide is a different compound. The page's table prints \"Nitrous acid\" with a visible Source note after the table and a footer clause. The row feeds no graded item. Found by the mic07 practice sweep, September 22, 2026; applied September 23, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/06-how-asexual-prokaryotes-achieve-genetic-diversity.md",
+      "bundle": "microbiology",
+      "moduleId": "m58845",
+      "sourceElementIds": [
+        "fs-id1167661647631"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 972,
+      "rationale": "Para fs-id1167661647631 says VTEC acquired the Shiga toxin genes from Shigella dysenteriae \"through the acquisition of a large plasmid encoding this toxin\". The book's own Section 24.3 (m58933, para fs-id1167660261001) says the Shiga toxin genes \"were most likely acquired through transduction\" and that a \"Prophage from a bacteriophage that previously infected Shigella integrated into the chromosome of E. coli\". The page reads \"most likely through transduction by a bacteriophage rather than on a plasmid\" with a visible Source note quoting Section 24.3 and a footer sentence linking that page; the same paragraph's \"may be lead to\" typo stays corrected per erratum 555. Found by the kc5 sweep, September 22, 2026; applied September 23, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/06-how-asexual-prokaryotes-achieve-genetic-diversity.md",
+      "bundle": "microbiology",
+      "moduleId": "m58845",
+      "sourceElementIds": [
+        "fs-id1167663637654"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 973,
+      "rationale": "The Multiple Choice fs-id1167663637654 keys conjugation as the HGT mechanism naturally responsible for spreading antibiotic resistance genes, but the module's Transformation paragraph (fs-id1167663533150) says \"In nature, bacterial transformation is an important mechanism for the acquisition of genetic elements encoding virulence factors and antibiotic resistance\", so the transformation distractor was also correct. The page replaces it with \"vertical gene transfer\", the module's own contrasting term (key unchanged), disclosed in the footer. Found by the mic07 practice sweep, September 22, 2026; applied September 23, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/12-modern-applications-of-microbial-genetics/01-microbes-and-the-tools-of-genetic-engineering.md",
+      "bundle": "microbiology",
+      "moduleId": "m58848",
+      "sourceElementIds": [
+        "fs-id1167740392824"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 975,
+      "rationale": "Para fs-id1167740392824 says an E. coli bacteriophage such as lambda \"can be used as a host\" for a genomic library, but the same paragraph ligates genomic DNA \"into a pre-digested bacteriophage lambda DNA vector\" and uses the packaged phages \"to infect E. coli host cells\": the phage is the vector and E. coli the host. The page reads \"can be used as a vector\" with a visible inline Source note and a footer sentence. Found by the mic07 practice sweep, September 22, 2026; applied September 23, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/24-digestive-system-infections/01-anatomy-and-normal-microbiota-of-the-digestive-system.md",
+      "bundle": "microbiology",
+      "moduleId": "m58924",
+      "sourceElementIds": [
+        "fs-id1167663737442"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 980,
+      "rationale": "The module's Multiple Choice exercise asks \"Which of the following is NOT a way the normal microbiota of the intestine helps to prevent infection?\" keyed D (\"It generates large quantities of oxygen that kill anaerobic pathogens.\"). The module credits the intestinal microbiota with only competitive exclusion and bacteriocins (para fs-id1167661731022), attributes stomach acid to the stomach, and attributes the flushing of transient pathogens to \"the constant movement of materials through the gastrointestinal tract\", so options A (\"It produces acids that lower the pH of the stomach.\") and B (\"It speeds up the process by which microbes are flushed from the digestive tract.\") are also NOT ways, and the item has three defensible keys. The page replaces A with the module's bacteriocin sentence, worded without the term that a Practice textin keys (\"It secretes protein toxins that bind to specific receptors on the surface of susceptible bacteria.\"), and drops B, because the module prints no other microbiota defense to use in its place. The item runs with three options and the source key D, and the footer discloses the change (erratum 980). Found by the mic14 narrow practice sweep, September 22, 2026; applied in the step-3 close-out, September 23, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/02-proteobacteria.md",
+      "bundle": "microbiology",
+      "moduleId": "m58796",
+      "sourceElementIds": [
+        "fs-id1172100537950",
+        "fs-id1172098317960"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 961,
+      "rationale": "The Short Answer exercise fs-id1172100537950 (para fs-id1172098317960) asks \"Why are Mycoplasma and Chlamydia classified as obligate intracellular pathogens?\" The book never classifies Mycoplasma as obligate intracellular: its Section 4.4 (m58798) describes Mycoplasma as the smallest, wall-less, pleomorphic low G+C bacteria, and only Chlamydia is called obligate intracellular (Section 4.3, m58797: \"Members of the genus Chlamydia are gram-negative, obligate intracellular pathogens\"). The page restores the dropped Short Answer as a self-check with the source stem verbatim; its model answer gives the module's definition of an obligate intracellular pathogen and a visible Source note correcting the question's premise for Mycoplasma, disclosed in the footer. Found by the mic02 practice sweep, September 22, 2026; restored September 23, 2026."
     }
   ]
 }

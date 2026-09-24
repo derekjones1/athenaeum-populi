@@ -98,7 +98,7 @@ Microbial bioremediation is the use of microbial metabolism to remove pollutants
 {{< multiplechoice
   question="Which of these occurs through symbiotic nitrogen fixation?"
   answer="All of the above occur."
-  hint="The section names three separate benefits — one to the plant, one to the soil, and one to the bacteria — so check whether all three actually occur."
+  hint="Check each option against the paragraph that introduces symbiotic nitrogen fixation as a natural plant fertilizer."
 >}}
 The plant benefits from using an endless source of nitrogen.
 The soil benefits from being naturally fertilized.
@@ -116,6 +116,7 @@ All of the above occur.
 {{< textin
   question="Soil bacteria called rhizobia interact symbiotically with legume roots to form specialized structures, called ________, where nitrogen fixation occurs."
   answer="nodule"
+  accept="root nodule"
   hint="These structures give the soybean's roots their bumpy appearance in the photograph above."
 >}}
 
@@ -140,8 +141,7 @@ when the non-pathogenic bacteria are eliminated, pathogenic bacteria can coloniz
 {{< textin
   question="According to the section summary, internally our microbes help us digest food, produce vital nutrients, protect us from pathogenic microbes, and help train our ________ to function properly."
   answer="immune systems"
-  accept="immune system"
-  hint="This is the body system that learns to tell harmless microbes apart from pathogens."
+  hint="The last paragraph of the Everyday Connection box ties the absence of key gut microbes to problems with this system."
 >}}
 
 ### Identify prokaryotes used during the processing of food
@@ -149,7 +149,7 @@ when the non-pathogenic bacteria are eliminated, pathogenic bacteria can coloniz
 {{< multiplechoice
   question="In addition to providing yogurt with its unique flavor and texture, lactic acid-producing bacteria also provide which additional benefit during food production?"
   answer="Lowering the pH to kill pathogenic bacteria"
-  hint="Fermentation changes the acidity of the milk, and that change itself does useful work beyond flavor."
+  hint="Think about what the acid these bacteria produce, named in the question, would do to other bacteria in the milk."
 >}}
 Providing xenobiotics
 Lowering the pH to kill pathogenic bacteria
@@ -165,38 +165,16 @@ Breaking down lactose for lactose-intolerant individuals
 
 {{< multiplechoice
   question="According to the section, which of these early biotechnology products is made using bacteria rather than yeast?"
-  answer="yogurt"
-  hint="The section says cheese and yogurt employ bacteria, while yeast, a fungus, is used for the other three."
+  answer="cheese"
+  hint="Reread Early Biotechnology."
 >}}
 bread
 wine
-yogurt
+cheese
 beer
 {{< /multiplechoice >}}
 
 ### Describe the use of prokaryotes in bioremediation
-
-{{< multiplechoice
-  question="Bioremediation includes _____."
-  answer="the use of prokaryotes to clean up pollutants"
-  hint="The other three options describe nitrogen fixation and fertilization — a different beneficial role covered earlier in this section."
->}}
-the use of prokaryotes that can fix nitrogen
-the use of prokaryotes to clean up pollutants
-the use of prokaryotes as natural fertilizers
-All of the above
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Synthetic compounds found in an organism but not normally produced or expected to be present in that organism are called _____."
-  answer="xenobiotics"
-  hint="This general term for a foreign compound is broader than any single method used to remove it."
->}}
-pesticides
-bioremediators
-recalcitrant compounds
-xenobiotics
-{{< /multiplechoice >}}
 
 {{< textin
   question="The use of microbial metabolism to remove pollutants from soil, water, or other environments is called ________."
@@ -204,6 +182,28 @@ xenobiotics
   hint="Oil-spill cleanup and the removal of toxic selenium and mercury compounds are both examples of this practice."
 >}}
 
+{{< multiplechoice
+  question="Synthetic compounds found in an organism but not normally produced or expected to be present in that organism are called _____."
+  answer="xenobiotics"
+  hint="The section does not use this term; rule out the options it uses for other things, such as a removal method or a kind of agricultural chemical."
+>}}
+pesticides
+bioremediators
+recalcitrant compounds
+xenobiotics
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Bioremediation includes _____."
+  answer="the use of prokaryotes to clean up pollutants"
+  hint="Compare each option with the definition that opens the section's last main subsection."
+>}}
+the use of prokaryotes that can fix nitrogen
+the use of prokaryotes to clean up pollutants
+the use of prokaryotes as natural fertilizers
+All of the above
+{{< /multiplechoice >}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 22.5: Beneficial Prokaryotes](https://openstax.org/books/biology-2e/pages/22-5-beneficial-prokaryotes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the root-nodule photo's alt rewritten from the source's generic "thin and yellow" description to name the visible roots and nodules against their dark background; the food-collage alt rewritten from the source's bare "cheese, yogurt, wine, and beer and bread" to say what each of the four lettered panels shows; the oil-spill photo's alt rewritten from the source's "Part a: … Part b: …" phrasing to describe both panels in reading order; the Clostridium difficile micrograph's alt expanded to note its printed 10 µm scale bar; the Everyday Connection note rendered as a callout with its bold name and title; the biotechnology footnote's United Nations citation kept as a parenthetical link after the sentence it supports; the nitrogen-fixation equation set as a Unicode-text paragraph rather than KaTeX, since it is a chemical equation, not mathematics; the selenium and mercury ion charges (SeO₄²⁻, SeO₃²⁻, Hg²⁺, Hg⁰) set in number-then-sign order rather than the source's sign-first superscripts; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; four key-term recall items (biological nitrogen fixation, nodule, biotechnology, bioremediation) added from the glossary; a summary-derived cloze recall item ("immune systems") added to give its objective group an auto-graded item; one locally written multiple-choice item (which early biotechnology products are bacteria- versus yeast-made, built strictly from the section's own sentence) added to the food-processing objective group, keyed at its third option; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 22.5: Beneficial Prokaryotes](https://openstax.org/books/biology-2e/pages/22-5-beneficial-prokaryotes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the root-nodule photo's alt rewritten from the source's generic "thin and yellow" description to name the visible roots and nodules against their dark background; the food-collage alt rewritten from the source's bare "cheese, yogurt, wine, and beer and bread" to say what each of the four lettered panels shows; the oil-spill photo's alt rewritten from the source's "Part a: … Part b: …" phrasing to describe both panels in reading order; the Clostridium difficile micrograph's alt expanded to note its printed 10 µm scale bar; the Everyday Connection note rendered as a callout with its bold name and title; the biotechnology footnote's United Nations citation kept as a parenthetical link after the sentence it supports; the nitrogen-fixation equation set as a Unicode-text paragraph rather than KaTeX, since it is a chemical equation, not mathematics; the selenium and mercury ion charges (SeO₄²⁻, SeO₃²⁻, Hg²⁺, Hg⁰) set in number-then-sign order rather than the source's sign-first superscripts; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block, each under the objective it tests, so the lactic-acid Review Question, last in the source, comes before the xenobiotics and bioremediation questions; four key-term recall items (biological nitrogen fixation, nodule, biotechnology, bioremediation) added from the glossary; a summary-derived cloze recall item ("immune systems") added to give its objective group an auto-graded item; one locally written multiple-choice item (which early biotechnology products are bacteria- versus yeast-made, built strictly from the section's own sentence) added to the food-processing objective group, keyed at its third option (cheese, since the source's own lactic-acid question above it names yogurt as a bacterial product); and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

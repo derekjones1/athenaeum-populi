@@ -28,7 +28,7 @@ Gonadal hormones, produced by the gonads, include both steroid and peptide hormo
 
 Other steroid hormones include aldosterone and cortisol, which are released by the adrenal glands along with some other types of androgens. Steroid hormones are insoluble in water, and they are transported by transport proteins in blood. As a result, they remain in circulation longer than peptide hormones. For example, cortisol has a half-life of 60 to 90 minutes, while epinephrine, an amino acid derived-hormone, has a half-life of approximately one minute.
 
-{{< mediafigure src="biology/Figure_37_01_01abc" kind="diagram" eager="true" alt="Three skeletal structural formulas share the same four-fused-ring steroid skeleton: (a) cholesterol, with two methyl branches, a hydroxyl group, and a branched hydrocarbon side chain; (b) testosterone, keeping both ring-fusion methyl branches, with a ketone in place of the hydroxyl on the first ring and a hydroxyl group in place of the side chain on the five-membered ring; (c) estradiol, with the first ring drawn with double bonds instead of fully saturated, a hydroxyl group in place of the side chain, and only one ring-fusion methyl branch." longdesc="(a) Cholesterol: a hydroxyl group (HO) sits on the first six-membered ring at lower left; two methyl (CH₃) groups each attach to a ring-fusion carbon partway up the skeleton; a branched hydrocarbon side chain, itself carrying a methyl branch, extends from the five-membered ring at upper right. (b) Testosterone: the same four-ring skeleton with both ring-fusion methyl (CH₃) groups still drawn; the branched side chain is replaced by a hydroxyl group (OH) on the five-membered ring, and a ketone (=O) replaces the hydroxyl on the first ring, next to a double bond in that ring. (c) Estradiol: the same four-ring skeleton as testosterone, with a hydroxyl group on the five-membered ring, but the first ring is drawn with alternating double bonds rather than fully saturated, and its hydroxyl group sits directly on that ring; only one ring-fusion methyl group is present." >}}
+{{< mediafigure src="biology/Figure_37_01_01abc" kind="diagram" eager="true" alt="Three skeletal structural formulas share the same four-fused-ring steroid skeleton: (a) cholesterol, with two methyl branches, a hydroxyl group, and a branched hydrocarbon side chain; (b) testosterone, keeping both ring-fusion methyl branches, with a ketone in place of the hydroxyl on the first ring and a hydroxyl group in place of the side chain on the five-membered ring; (c) estradiol, with the first ring drawn with three alternating double bonds, a hydroxyl group in place of the side chain, and only one ring-fusion methyl branch." longdesc="(a) Cholesterol: a hydroxyl group (HO) sits on the first six-membered ring at lower left, and the second six-membered ring, beside it, holds one double bond; two methyl (CH₃) groups each attach to a ring-fusion carbon partway up the skeleton; a branched hydrocarbon side chain, itself carrying a methyl branch, extends from the five-membered ring at upper right. (b) Testosterone: the same four-ring skeleton with both ring-fusion methyl (CH₃) groups still drawn; the branched side chain is replaced by a hydroxyl group (OH) on the five-membered ring, and a ketone (=O) replaces the hydroxyl on the first ring, next to a double bond in that ring. (c) Estradiol: the same four-ring skeleton as testosterone, with a hydroxyl group on the five-membered ring, but the first ring is drawn with three alternating double bonds rather than testosterone's single one, and its hydroxyl group sits directly on that ring; only one ring-fusion methyl group is present." >}}
 The structures shown here represent (a) cholesterol, plus the steroid hormones (b) testosterone and (c) estradiol.
 {{< /mediafigure >}}
 
@@ -79,7 +79,7 @@ There are three basic types of hormones: lipid-derived, amino acid-derived, and 
 {{< multiplechoice
   question="A newly discovered hormone contains four amino acids linked together. Under which chemical class would this hormone be classified?"
   answer="peptide hormone"
-  hint="This section defines one hormone class as chains of amino acids linked together — match the number of amino acids in the new hormone to that class's basic structure."
+  hint="Compare the structure the question describes with the structure the section gives for each of its three hormone classes, not with what each class is made from."
 >}}
 lipid-derived hormone
 amino acid-derived hormone
@@ -101,13 +101,33 @@ glycoprotein hormones
 {{< multiplechoice
   question="Why are steroids able to diffuse across the plasma membrane?"
   answer="They are non-polar molecules."
-  hint="Steroid hormones are structurally similar to cholesterol, a fat — think about what kind of molecules can move easily through the fatty interior of a membrane."
+  hint="Steroids are the section's primary class of lipid hormones; compare each option with the paragraph on which hormones are water-soluble and insoluble in lipids and why they cannot pass through plasma membranes."
 >}}
 Their transport protein moves them through the membrane.
 They are amphipathic, allowing them to interact with the entire phospholipid.
 Cells express channels that let hormones flow down their concentration gradient into the cells.
 They are non-polar molecules.
 {{< /multiplechoice >}}
+
+{{< textin
+  question="Epinephrine, norepinephrine, and thyroxine are relatively small molecules made from tyrosine and tryptophan; a hormone of this class is called a(n) ________."
+  answer="amino acid-derived hormone"
+  hint="Look at the second of the section's three hormone-class subsections."
+>}}
+
+{{< textin
+  question="A hormone derived mostly from cholesterol is called a(n) ________."
+  answer="lipid-derived hormone"
+  accept="lipid hormone|lipid-soluble hormone"
+  hint="Look at the first of the section's three hormone-class subsections, whose examples' chemical names end in '-ol' or '-one.'"
+>}}
+
+{{< textin
+  question="A hormone composed of a polypeptide chain is called a ________."
+  answer="peptide hormone"
+  accept="polypeptide hormone"
+  hint="This class ranges from short chains such as antidiuretic hormone and oxytocin to large glycoproteins such as follicle-stimulating hormone."
+>}}
 
 {{< selfcheck question="Although there are many different hormones in the human body, they can be divided into three classes based on their chemical structure. What are these classes and what is one factor that distinguishes them?" hint="This section opens by naming the three hormone classes and pointing out exactly one property that separates one of them from the other two." >}}
 Although there are many different hormones in the human body, they can be divided into three classes based on their chemical structure: lipid-derived, amino acid-derived, and peptide hormones. One of the key distinguishing features of the lipid-derived hormones is that they can diffuse across plasma membranes whereas the amino acid-derived and peptide hormones cannot.
@@ -116,25 +136,6 @@ the three classes are lipid-derived, amino acid-derived, and peptide hormones
 lipid-derived hormones can diffuse across plasma membranes
 amino acid-derived and peptide hormones cannot diffuse across plasma membranes
 {{< /selfcheck >}}
-
-{{< textin
-  question="A hormone derived from amino acids is called a(n) ________."
-  answer="amino acid-derived hormone"
-  hint="This chemical name typically ends in '-ine,' and includes epinephrine, norepinephrine, thyroxine, and melatonin."
->}}
-
-{{< textin
-  question="A hormone derived mostly from cholesterol is called a(n) ________."
-  answer="lipid-derived hormone"
-  accept="lipid hormone"
-  hint="This class can diffuse straight across the plasma membrane, unlike the other two classes, and its chemical names typically end in '-ol' or '-one.'"
->}}
-
-{{< textin
-  question="A hormone composed of a polypeptide chain is called a ________."
-  answer="peptide hormone"
-  hint="This class ranges from short chains such as antidiuretic hormone and oxytocin to large glycoproteins such as follicle-stimulating hormone."
->}}
 
 ### Explain their role in maintaining homeostasis
 
@@ -163,7 +164,7 @@ the liver catabolizes its glycogen stores to release glucose
 {{< multiplechoice
   question="According to this section, what makes a cell a hormone's target cell?"
   answer="It has a receptor for that hormone."
-  hint="The section defines this kind of cell by something it possesses, not by its distance from the gland that released the hormone or how quickly it moves through the blood."
+  hint="Reread the sentence in the section's opening paragraph that defines target cells."
 >}}
 It manufactures that hormone.
 It lies nearest to the gland that released the hormone.
@@ -173,4 +174,4 @@ It moves through the bloodstream faster than other cells.
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 37.1: Types of Hormones](https://openstax.org/books/biology-2e/pages/37-1-types-of-hormones) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the hormone-structures figure's alt describes oxytocin as a small compact peptide beside the two large proteins, because the source alt's "all large, with complex three-dimensional structures" does not fit panel (a) (erratum 849); all three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_37_01_01abc, Figure_37_01_02ab, and Figure_37_01_03abc are molecular structure drawings and space-filling models, not captured photographs); the cholesterol/testosterone/estradiol figure's alt shortened from the manifest's 755-character source alt (over the 600-character limit) to a description under the limit, with the full per-panel structural detail — including the aromatic ring visible in estradiol's structure, which the source alt omits — moved into a longdesc; in-text pointers to figures ("Figure 37.2" through "Figure 37.4") replaced with "shown below" or "illustrated below," since Hugo does not number figures; the Career Connection note rendered as a callout with its bold feature name and the note's own title in italics; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items added from the section's complete three-term glossary; the "Explain their role in maintaining homeostasis" objective's group, left thin by the source's two Critical Thinking items alone, filled with two locally written items built strictly from the page's own opening paragraph — a text-recall item on "endocrine system" and a multiple choice on what defines a hormone's target cell — disclosed here and in the source ledger.</small>
+<small>This section is adapted from [Biology 2e, Section 37.1: Types of Hormones](https://openstax.org/books/biology-2e/pages/37-1-types-of-hormones) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the hormone-structures figure's alt describes oxytocin as a small compact peptide beside the two large proteins, because the source alt's "all large, with complex three-dimensional structures" does not fit panel (a) (erratum 849); all three figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_37_01_01abc, Figure_37_01_02ab, and Figure_37_01_03abc are molecular structure drawings and space-filling models, not captured photographs); the cholesterol/testosterone/estradiol figure's alt shortened from the manifest's 755-character source alt (over the 600-character limit) to a description under the limit, with the full per-panel structural detail — including the aromatic ring visible in estradiol's structure, which the source alt omits — moved into a longdesc; in-text pointers to figures ("Figure 37.2" through "Figure 37.4") replaced with "shown below" or "illustrated below," since Hugo does not number figures; the Career Connection note rendered as a callout with its bold feature name and the note's own title in italics; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items added from the section's complete three-term glossary (the amino acid-derived hormone prompt draws on the body's description of that class, because the glossary's own definition, "hormone derived from amino acids," prints the answer); the "Explain their role in maintaining homeostasis" objective's group, left thin by the source's two Critical Thinking items alone, filled with two locally written items built strictly from the page's own opening paragraph — a text-recall item on "endocrine system" and a multiple choice on what defines a hormone's target cell — disclosed here and in the source ledger.</small>

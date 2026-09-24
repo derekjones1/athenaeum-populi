@@ -70,7 +70,7 @@
  */
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { basename, join, resolve } from 'node:path';
+import { basename, dirname, join, resolve } from 'node:path';
 import { extractExercises, readLedger } from './answer-ledger.mjs';
 import { maskKeys } from '../lib/content.mjs';
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
@@ -376,8 +376,16 @@ if (process.argv[1] && resolve(process.argv[1]) === new URL(import.meta.url).pat
     if (pagesOutIndex !== -1) {
       const pagesOut = rest[pagesOutIndex + 1];
       mkdirSync(pagesOut, { recursive: true });
+      // Two books can share a section file name (Biology 3.2 and
+      // Microbiology 7.2 are both 02-carbohydrates.md); a colliding name
+      // gets its chapter folder as a prefix, or one page silently
+      // overwrites the other and its items lose their source (September 23,
+      // 2026: 3 of 225 pages).
+      const seen = new Map();
+      for (const page of packets.keys()) seen.set(basename(page), (seen.get(basename(page)) || 0) + 1);
       for (const page of packets.keys()) {
-        writeFileSync(join(pagesOut, basename(page)), maskFooter(maskKeys(readFileSync(page, 'utf8'))));
+        const name = seen.get(basename(page)) > 1 ? `${basename(dirname(page))}--${basename(page)}` : basename(page);
+        writeFileSync(join(pagesOut, name), maskFooter(maskKeys(readFileSync(page, 'utf8'))));
       }
       console.log(`masked ${packets.size} page(s) into ${pagesOut}/`);
     }

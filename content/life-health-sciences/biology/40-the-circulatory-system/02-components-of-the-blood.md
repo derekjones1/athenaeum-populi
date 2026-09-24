@@ -23,7 +23,7 @@ Hemoglobin is responsible for distributing oxygen, and to a lesser extent, carbo
 
 Blood, like the human blood illustrated below, is important for regulation of the body's systems and homeostasis. Blood helps maintain homeostasis by stabilizing pH, temperature, osmotic pressure, and by eliminating excess heat. Blood supports growth by distributing nutrients and hormones, and by removing waste. Blood plays a protective role by transporting clotting factors and platelets to prevent blood loss and transporting the disease-fighting agents or **white blood cells** to sites of infection.
 
-{{< mediafigure src="biology/Figure_40_02_01" kind="diagram" eager="true" alt="Illustration of numerous red blood cells and platelets surrounding seven labeled cells and structures: an Erythrocyte, a Neutrophil, an Eosinophil, a Basophil, a Monocyte, a Lymphocyte, and two Platelets pointed to by a single forked leader line." longdesc="Reading left to right, top to bottom: one leader line labels Neutrophil, a purple cell with a granular, multi-lobed nucleus; one labels Monocyte, the largest purple cell, with a broad U-shaped nucleus; one labels Lymphocyte, a smaller purple cell with an oblong nucleus; one labels Erythrocyte (red blood cell), one of the many disc-shaped red cells; one labels Basophil, at the right, a paler purple cell with an irregular, multi-lobed nucleus; one labels Eosinophil, a purple cell with a granular, U-shaped nucleus; one label, Platelets, forks into two lines pointing to two of the small, spindle-shaped fragments scattered among the red cells. Unlabeled red blood cells and platelets fill the rest of the scene." >}}
+{{< mediafigure src="biology/Figure_40_02_01" kind="diagram" eager="true" alt="Illustration of numerous red blood cells and platelets surrounding seven labeled cells and structures: an Erythrocyte, a Neutrophil, an Eosinophil, a Basophil, a Monocyte, a Lymphocyte, and two Platelets pointed to by a single forked leader line." longdesc="Reading left to right, top to bottom: one leader line labels Neutrophil, a purple cell with a granular, multi-lobed nucleus; one labels Monocyte, the largest purple cell, with a broad U-shaped nucleus; one labels Lymphocyte, a smaller purple cell with an oblong nucleus; the label Erythrocyte (red blood cell) sends two leader lines to two of the many disc-shaped red cells; one labels Basophil, at the right, a paler purple cell with a two-lobed, H-shaped nucleus; one labels Eosinophil, a purple cell dotted with dark granules, its nucleus two large lobes joined by a thin band; one label, Platelets, forks into two lines pointing to two of the small, spindle-shaped fragments scattered among the red cells. Unlabeled red blood cells and platelets fill the rest of the scene." >}}
 The cells and cellular components of human blood are shown. Red blood cells deliver oxygen to the cells and remove carbon dioxide. White blood cells—including neutrophils, monocytes, lymphocytes, eosinophils, and basophils—are involved in the immune response. Platelets form clots that prevent blood loss after injury.
 {{< /mediafigure >}}
 
@@ -35,7 +35,7 @@ The red coloring of blood comes from the iron-containing protein hemoglobin, ill
 
 Not all organisms use hemoglobin as the method of oxygen transport. Invertebrates that utilize hemolymph rather than blood use different pigments to bind to the oxygen. These pigments use copper or iron to bind to the oxygen. Invertebrates have a variety of other respiratory pigments. Hemocyanin, a blue-green, copper-containing protein, illustrated below (b), is found in mollusks, crustaceans, and some of the arthropods. Chlorocruorin, a green-colored, iron-containing pigment is found in four families of polychaete tubeworms. Hemerythrin, a red, iron-containing protein is found in some polychaete worms and annelids and is illustrated below (c). Despite the name, hemerythrin does not contain a heme group and its oxygen-carrying capacity is poor compared to hemoglobin.
 
-{{< mediafigure src="biology/Figure_40_02_02abc" kind="diagram" alt="Three ribbon-and-stick molecular models side by side: (a) Hemoglobin, a pink, four-lobed structure with two leader lines labeled Oxygen and Heme; (b) Hemocyanin, a green, gold, and teal coiled and sheeted structure; (c) Hemerythrin, a purple, multi-helix coiled structure." longdesc="In panel (a), Hemoglobin appears as a four-lobed, pink ribbon structure; one leader line labeled Oxygen and one labeled Heme each point to one of the two visible ball-and-stick clusters embedded in the ribbons, one in the left half of the molecule and one in the right. In panel (b), Hemocyanin is drawn as intertwined green cylindrical helices, gold ribbon sheets, and teal coils, with two gray spheres marked Cu near the model's center. In panel (c), Hemerythrin is drawn as purple cylindrical helices threaded with a thin, multicolored coil, with six spheres marked Fe, drawn as three pairs, distributed through the structure." >}}
+{{< mediafigure src="biology/Figure_40_02_02abc" kind="diagram" alt="Three ribbon-and-stick molecular models side by side: (a) Hemoglobin, a pink, four-lobed structure with two leader lines labeled Oxygen and Heme; (b) Hemocyanin, a green, gold, and teal coiled and sheeted structure; (c) Hemerythrin, a purple, multi-helix coiled structure." longdesc="In panel (a), Hemoglobin appears as a four-lobed, pink ribbon structure; one leader line labeled Oxygen and one labeled Heme each point to one of the two dark space-filling clusters in front, studded with red oxygen atoms — Oxygen to the upper-left cluster's red atoms, Heme to the lower-right cluster; two paler clusters sit behind the ribbons (upper right, lower left), four in all. In panel (b), Hemocyanin is drawn as intertwined green cylindrical helices, gold ribbon sheets, and teal coils, with two gray spheres marked Cu near the model's center. In panel (c), Hemerythrin is drawn as purple cylindrical helices threaded with a thin, multicolored coil, with six spheres marked Fe, drawn as three pairs, distributed through the structure." >}}
 In most vertebrates, (a) hemoglobin delivers oxygen to the body and removes some carbon dioxide. Hemoglobin is composed of four protein subunits, two alpha chains and two beta chains, and a heme group that has iron associated with it. The iron reversibly associates with oxygen, and in so doing is oxidized from Fe²⁺ to Fe³⁺. In most mollusks and some arthropods, (b) hemocyanin delivers oxygen. Unlike hemoglobin, hemocyanin is not carried in blood cells, but floats free in the hemolymph. Copper instead of iron binds the oxygen, giving the hemolymph a blue-green color. In annelids, such as the earthworm, and some other invertebrates, (c) hemerythrin carries oxygen. Like hemoglobin, hemerythrin is carried in blood cells and has iron associated with it, but despite its name, hemerythrin does not contain heme.
 {{< /mediafigure >}}
 
@@ -61,7 +61,7 @@ One reason that HIV poses significant management challenges is because the virus
 
 Blood must clot to heal wounds and prevent excess blood loss. Small cell fragments called platelets (thrombocytes) are attracted to the wound site where they adhere by extending many projections and releasing their contents. These contents activate other platelets and also interact with other coagulation factors, which convert fibrinogen, a water-soluble protein present in blood serum into fibrin (a non-water soluble protein), causing the blood to clot. Many of the clotting factors require vitamin K to work, and vitamin K deficiency can lead to problems with blood clotting. Many platelets converge and stick together at the wound site forming a platelet plug (also called a fibrin clot), as illustrated below (b). The plug or clot lasts for a number of days and stops the loss of blood. Platelets are formed from the disintegration of larger cells called megakaryocytes, like that shown below (a). For each megakaryocyte, 2000–3000 platelets are formed with 150,000 to 400,000 platelets present in each cubic millimeter of blood. Each platelet is disc shaped and 2–4 µm in diameter. They contain many small vesicles but do not contain a nucleus.
 
-{{< mediafigure src="biology/Figure_40_02_04ab" kind="diagram" alt="Two panels: (a) a large, irregularly shaped Megakaryocyte shedding small, spindle-shaped Platelets, some pointed to by a forked leader line; (b) a wedge-shaped cross-section of a blood vessel packed with red blood cells, with a leader line labeling a tangled Fibrin clot at a breach in the vessel wall." longdesc="In panel (a), one leader line labels Megakaryocyte, the single large, irregularly lobed cell at center; a second leader line labeled Platelets forks into two branches, each pointing to one of the many small, spindle-shaped fragments scattered around it. In panel (b), one leader line labels Fibrin clot, a tangled, thread-like mass at a wedge-shaped breach in the vessel wall; the vessel's interior is otherwise filled with numerous unlabeled red blood cells." >}}
+{{< mediafigure src="biology/Figure_40_02_04ab" kind="diagram" alt="Two panels: (a) a large, irregularly shaped Megakaryocyte shedding small, spindle-shaped Platelets, some pointed to by a forked leader line; (b) a wedge-shaped cross-section of a blood vessel packed with red blood cells, with a leader line labeling a tangled Fibrin clot at a breach in the vessel wall." longdesc="In panel (a), one leader line labels Megakaryocyte, the single large, irregularly lobed cell at center; a second leader line labeled Platelets forks into two branches, each pointing to one of the many small, spindle-shaped fragments scattered around it. In panel (b), one leader line labels Fibrin clot, a tangled mesh of blue fibrin threads with small tan platelets caught in it, plugging a notch torn in the vessel wall; the vessel's interior is otherwise filled with numerous unlabeled red blood cells and a scattering of the same small platelets." >}}
 (a) Platelets are formed from large cells called megakaryocytes. The megakaryocyte breaks up into thousands of fragments that become platelets. (b) Platelets are required for clotting of the blood. The platelets collect at a wound site in conjunction with other clotting factors, such as fibrinogen, to form a fibrin clot that prevents blood loss and allows the wound to heal.
 {{< /mediafigure >}}
 
@@ -108,7 +108,7 @@ Specific components of the blood include red blood cells, white blood cells, pla
 {{< multiplechoice
   question="Platelet plug formation occurs at which point?"
   answer="when platelets are attracted to a site of blood vessel damage"
-  hint="Trace platelet activity in order: where do they start, where are they dispersed, and where do they finally converge and stick? The plug forms at the last of these steps."
+  hint="Reread Platelets and Coagulation Factors and its figure caption, then check each option against them."
 >}}
 when large megakaryocytes break up into thousands of smaller fragments
 when platelets are dispersed through the bloodstream
@@ -123,13 +123,6 @@ none of the above
   hint="This is the 90-percent-water portion left in the tube after centrifuging separates out the cells and platelets."
 >}}
 
-{{< textin
-  question="A small cellular fragment that collects at wounds and forms a plug to prevent blood loss is called a ________."
-  answer="platelet"
-  accept="thrombocyte"
-  hint="Megakaryocytes break apart into thousands of these tiny fragments, which converge at a wound to help it clot."
->}}
-
 {{< selfcheck question="List some of the functions of blood in the body." hint="Think beyond gas transport — list every regulatory, transport, and protective job the section's opening paragraphs assign to blood." >}}
 Blood is important for regulation of the body's pH, temperature, and osmotic pressure, the circulation of nutrients and removal of wastes, the distribution of hormones from endocrine glands, the elimination of excess heat; it also contains components for the clotting of blood to prevent blood loss. Blood also transports clotting factors and disease-fighting agents.
 ===CHECKS===
@@ -140,6 +133,13 @@ elimination of excess heat
 components for the clotting of blood to prevent blood loss
 transports clotting factors and disease-fighting agents
 {{< /selfcheck >}}
+
+{{< textin
+  question="A small cellular fragment that collects at wounds and forms a plug to prevent blood loss is called a ________."
+  answer="platelet"
+  accept="thrombocyte"
+  hint="Megakaryocytes break apart into thousands of these tiny fragments, which converge at a wound to help it clot."
+>}}
 
 ### Compare red and white blood cells
 
@@ -157,7 +157,7 @@ all of the above
 {{< multiplechoice
   question="The red blood cells of birds differ from mammalian red blood cells because:"
   answer="they have nuclei"
-  hint="The Red Blood Cells section describes what mammalian red blood cells lack at maturity, then notes what birds and non-avian reptiles keep instead."
+  hint="Reread the opening paragraph of Red Blood Cells, which compares mammals with birds and non-avian reptiles."
 >}}
 they are white and have nuclei
 they do not have nuclei
@@ -166,17 +166,17 @@ they fight disease
 {{< /multiplechoice >}}
 
 {{< textin
+  question="A large cell with a nucleus that protects the body from viruses and bacteria and cleans up dead cells and waste is called a(n) ________."
+  answer="white blood cell"
+  accept="leukocyte|leucocyte|WBC"
+  hint="Look in the section after the hemoglobin figure, at the paragraph that compares the morphology of the two cell types."
+>}}
+
+{{< textin
   question="A small biconcave cell packed with hemoglobin that transports oxygen through the body is called a(n) ________."
   answer="red blood cell"
   accept="erythrocyte|RBC"
   hint="In mammals, this cell type lacks a nucleus and mitochondria at maturity, leaving more room for the oxygen-carrying pigment."
->}}
-
-{{< textin
-  question="A large cell with a nucleus that protects the body from viruses and bacteria and cleans up dead cells and waste is called a(n) ________."
-  answer="white blood cell"
-  accept="leukocyte|leucocyte|WBC"
-  hint="Unlike the oxygen-carrying cells, this type has a nucleus and multiplies continually to fight invaders."
 >}}
 
 {{< selfcheck question="How does the lymphatic system work with blood flow?" hint="Follow the fluid's path in the order the answer gives it: where does it go first, what filters it, which cells do the filtering, and what happens to the fluid afterward." >}}
@@ -204,7 +204,7 @@ the white blood cells remove infectious agents, such as bacteria and viruses, to
   question="Plasma without the coagulation factors is called ________."
   answer="serum"
   accept="blood serum"
-  hint="Draw blood into a tube with no anticoagulant, let it clot, and what separates out on top still carries antibodies but none of the clotting proteins."
+  hint="Look in the section after Platelets and Coagulation Factors, at the start of its second paragraph."
 >}}
 
 {{< selfcheck question="Describe the cause of different blood type groups." hint="Work through the three variables in the order the answer addresses them: what coats the red cell surface, what reacts to it in the plasma, and what the Rh marker adds separately." >}}

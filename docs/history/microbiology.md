@@ -179,7 +179,8 @@ Everything in biology's Verification section, plus:
   single-letter `multiplechoice` items whose options are the module's own
   part names; §6.3's four-row cytopathic-effects table earns no sortbins for
   the same reason.
-- **The plural fold is one-directional** *(chapters 5–6)*: grading folds a
+- **The plural fold is one-directional** *(chapters 5–6; superseded Sep 22,
+  2026: the fold runs both ways)*: grading folds a
   learner's regular plural onto a singular key, never a learner's singular
   onto a plural key. A `textin` keyed to a plural (`muscles`, `mosquitoes`,
   `cytopathic effects`) lists the singular in `accept`; a Greek/Latin plural
@@ -218,7 +219,8 @@ Everything in biology's Verification section, plus:
   distractors are other orderings or term-triples built from the module's
   own sentences — never split it into clozes that reconstruct to the same
   sentence (`distinctItems` sees one).
-- **A regular-plural KEY needs its singular in `accept`** *(chapter 7)*: the
+- **A regular-plural KEY needs its singular in `accept`** *(chapter 7;
+  superseded Sep 22, 2026: the fold runs both ways)*: the
   fold is one-directional, so `alcohols`, `micelles`, `unit membranes`
   each list the singular; and a source spelling the grader would reject
   from a correct learner (`phosphorous` keyed for the element) lists the
@@ -277,7 +279,8 @@ Everything in biology's Verification section, plus:
   is what finds these; the "distractor directly above a textin" rule is a
   substring rule, not an adjacency rule.
 - **A multi-word plural key needs its singular spellings in `accept`, in
-  every order** *(chapter 8)*: `chlorophylls and carotenoids` rejected
+  every order** *(chapter 8; superseded Sep 22, 2026: the fold runs both
+  ways)*: `chlorophylls and carotenoids` rejected
   `chlorophyll and carotenoid` and three mixed forms until the checker ran
   them. And a member that differs from another only by hyphen/space
   (`beta-oxidation` / `beta oxidation`) or case (`RuBisCO` / `rubisco`) is a
@@ -429,7 +432,8 @@ Everything in biology's Verification section, plus:
   the table cell, one from the body paragraph) or the interleave lint
   fails; when the comparison IS the category noun ("chromosomes"), name the
   bins after the organism ("Eukaryotic cells") so the bin-word lint passes.
-- **Accept-list gaps the checkers' graders caught** *(chapters 10–11)*:
+- **Accept-list gaps the checkers' graders caught** *(chapters 10–11;
+  superseded Sep 22, 2026: the fold runs both ways)*:
   the singular of a keyed plural (`bacteriophage`, `phage`), a hyphen
   between two letters (`semi-conservative` does not fold to
   `semiconservative`), a module synonym (`jumping gene`), a spaced unit
@@ -1506,3 +1510,77 @@ looking for it in the image misses about one defect in ten, and an
 image-first pass finds them at a cost well under one chapter's authoring.
 `docs/subjects/life-sciences.md` §"Completion audit" now makes the
 image-first pass part of the completion standard.
+
+## Practice sweep and long-description pass (September 22–23, 2026)
+
+The second review of Anatomy and Physiology chapters 1–2
+(`docs/history/anatomy-physiology.md`) found hint and leak defects every
+earlier gate had passed. An Opus sample audit of this book confirmed 41
+defects in 100 items, two thirds of them hints, and one wrong key, since fixed: 2.4's
+item had a distractor that is also correct (erratum 897 is the audit's
+other source find, 9.1's plate count called a "direct count of total
+cells"). Derek approved bringing the book to the A&P re-review standard;
+Biology ran the same sweep in the same session
+(`docs/history/biology.md`, same heading).
+
+- **Practice sweep:** 15 section units (mic01–15, all 26 chapters) and 2
+  Knowledge Check units (all five block KCs), Opus fixers. mic01–08 ran
+  at full scope, mic09–15 at the narrow scope Derek chose mid-sweep (keys,
+  double keys, dishonest keys, accept gaps, false hints, giveaway hints,
+  directly-above leaks, duplicate asks, source fidelity). Yield: about
+  1,189 hints rewritten to say where to look, about 117 nearby or
+  directly-above leaks (about 30 of them a textin keyed to its own heading
+  or page title), about 172 accept gaps (the largest class in this book;
+  the plural fold now runs both ways, and the chapter rules above that
+  required singular accepts are marked superseded), about 83 footers. **No source key was wrong.**
+- **The needs-parent batch** (two Opus agents, 40 pages): five claim
+  corrections — 4.2's "Mycoplasma is obligate intracellular" premise
+  (Source note in the model answer), 10.1's stem naming Beadle and Tatum
+  for Avery's result, 11.5's "nitrous oxide" for nitrous acid, 11.6's VTEC
+  Shiga-toxin genes "on a large plasmid" (§24.4 says prophage), and
+  12.1's phage "used as a host"; three multi-keyed MC items replaced and
+  disclosed (5.2 colonoscopy, 11.6 resistance, 24.1 "NOT a way"); two
+  numeric textins to MC (2.3's `400⨯`, 11.4); 22.2's CYU MC to a
+  selfcheck. `verify-source-keys` now reads "Answer is open and will
+  vary." as unkeyed and folds plurals in its print check, including a
+  markup-split `<term>plasmid</term>s`.
+- **Dropped source exercises:** a coverage gate
+  (`tools/verify/verify-source-coverage.mjs`) was built from the chapter
+  13–14 design note and measured every life-sciences exercise unit:
+  Biology and A&P complete, this book 4 missing of 1,219 — 4.2's
+  *H. pylori* fill-in, 4.2's Mycoplasma/Chlamydia short answer, and two
+  7.2 critical-thinking items whose footers had given reasons for the
+  drop. All four were restored in source position (the unkeyed ones as
+  selfchecks, 7.2's drawing on 7.1 with a cross-link), as was 1.3's
+  bacteria/archaea short answer from the gate's allowlist. The gate runs
+  in `npm test` at 2,813/2,813.
+- **Long-description pass:** 283 figures (units fmic01–07), Sonnet fixers
+  first, then an Opus second read after the parent's spot-check of a
+  Sonnet "clean" Biology figure found three defects it had missed. The Opus read left 85
+  figures clean and fixed the rest (about 70%); Sonnet's fixes were the
+  worst of it: in chapters 5–8, 10 of 12 were regressions (an enzyme
+  diagram's products drawn above the reactants kept as "the full drop", a
+  real fourth ETC protein deleted); in chapters 22–26, 9 of 14 (an AIDS
+  graph's latency bracket moved past the axis break, a capillary network
+  said to feed the collecting duct). Four Sonnet errata drafts were
+  withdrawn on the image (Chlamydia's 12 h, the hemocytometer etching,
+  the E/P/A letters, the nephron). The parent corrected 2.3's Art
+  Connection selfcheck (#9 is the mechanical stage, not the x-y knobs)
+  and transcribed five cells of 13.2's Markdown table from its image.
+  About 20 footer clauses the fixers had written for corrections to our
+  own earlier alts were pruned.
+- **Errata:** 955–982, 28 entries (five claims, three multi-keyed items,
+  two source typos, a fill-in clause, the rest alts and artwork: the relative-sizes chart's
+  values, the zygomycete and ascomycete life cycles' swapped labels, the
+  genome-size chart's ranges and arrows, the six-armed IgM on the latex
+  figure), with dated amendments to 520, 572, and 649; three of the
+  sweep's 13 `DISCLOSED_DEVIATIONS` lines and eight
+  reconciliation-decisions entries. Derek ruled 14.2's "wait to see"
+  versus the artwork's "wait and see" not an erratum, and the Coombs
+  figure's four-versus-three steps a footer disclosure only.
+- **Ledger, floors, grader, lints:** shared with Biology and recorded
+  there — the carry rule, 570 blind Fable re-solves and 89 selfcheck
+  re-reads across both books, the floors lowered with Derek's approval,
+  the seven-word accept cap, the "X (Y)" fold, and three new lints. The
+  heading/title-leak lint (about 55 raw hits in this book) was decided
+  against; the rule became an authoring preference and the hits stay.

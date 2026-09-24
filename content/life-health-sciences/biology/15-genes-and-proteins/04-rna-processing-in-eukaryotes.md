@@ -25,7 +25,7 @@ The eukaryotic pre-mRNA undergoes extensive processing before it is ready to be 
 
 Pre-mRNAs are first coated in RNA-stabilizing proteins; these protect the pre-mRNA from degradation while it is processed and exported out of the nucleus. The three most important steps of pre-mRNA processing are the addition of stabilizing and signaling factors at the 5′ and 3′ ends of the molecule, and the removal of the introns (see the diagram below). In rare cases, the mRNA transcript can be "edited" after it is transcribed.
 
-{{< mediafigure src="biology/Figure_15_03_02-8243" alt="A diagram of pre-mRNA processing. The pre-mRNA runs 5′ to 3′ with a cap, a start codon, three exons separated by two introns, a stop codon, and a poly-A tail; an arrow shows the introns being cut and the exons spliced together to form the shorter mature mRNA below, which keeps the same cap and poly-A tail but a single continuous exon sequence." longdesc="A gray tube-shaped strand labeled 'Pre-mRNA' runs left to right. At its far left end sits a teal ball labeled '5′ Cap,' with '5′ UTR' bracketing the short stretch just after it. A vertical dashed line labeled 'START Codon' marks the start of a purple segment labeled 'Exon 1'; the strand narrows and lightens for a segment labeled 'Intron,' widens again into purple for 'Exon 2,' narrows for a second 'Intron,' and widens into purple for 'Exon 3.' A second dashed line labeled 'STOP Codon' marks the end of Exon 3, followed by a teal box of A's labeled 'Poly-A Tail' and a '3′' label; '3′ UTR' brackets the stretch from the STOP codon line to the end of the strand. A white arrow labeled 'Introns Cut and Exons Spliced Together' points down to a second, shorter strand labeled 'mRNA.' This strand keeps the same teal '5′ Cap' and '5′ UTR' at its left end, a single purple segment now labeled 'Exon 1, 2, 3' with no intervening introns, and the same '3′ UTR,' teal 'Poly-A Tail,' and '3′' at its right end." kind="diagram" eager="true" >}}
+{{< mediafigure src="biology/Figure_15_03_02-8243" alt="A diagram of pre-mRNA processing. The pre-mRNA runs 5′ to 3′ with a cap, a start codon, three exons separated by two introns, a stop codon, and a poly-A tail; an arrow shows the introns being cut and the exons spliced together to form the shorter mature mRNA below, which keeps the same cap and poly-A tail but a single continuous exon sequence." longdesc="A gray tube-shaped strand labeled 'Pre-mRNA' runs left to right. At its far left end sits a teal ball labeled '5′ Cap,' and the strand's first purple segment begins right after it. A vertical dashed line labeled 'START Codon' crosses that segment near its left end; a leader line labels the short stretch between the cap and that line '5′ UTR,' and a bracket labeled 'Exon 1' spans from the line to the segment's end; the strand narrows and lightens for a segment labeled 'Intron,' widens again into purple for 'Exon 2,' narrows for a second 'Intron,' and widens into purple for 'Exon 3.' A second dashed line labeled 'STOP Codon' crosses Exon 3 near its right end, and a bracket labeled 'Exon 3' ends at that line; a leader line labels the short purple stretch between the STOP codon line and the tail '3′ UTR.' The strand ends in a teal box of A's labeled 'Poly-A Tail' and a '3′' label. A white arrow labeled 'Introns Cut and Exons Spliced Together' points down to a second, shorter strand labeled 'mRNA.' This strand keeps the same teal '5′ Cap' and '5′ UTR' at its left end, a single purple segment, crossed by two unlabeled dashed lines, bracketed 'Exon 1, 2, 3' with no intervening introns, and the same '3′ UTR,' teal 'Poly-A Tail,' and '3′' at its right end." kind="diagram" eager="true" >}}
 Eukaryotic pre-mRNA processing. In addition to 5′ Cap and 3′ Poly-A Tail addition, introns must be precisely removed and exons joined to generate a functional mRNA. Nucleotides upstream (towards the 5′cap) of the translation START codon are part of the 5′ untranslated region (5′ UTR). Nucleotides downstream (towards 3′end) of the STOP codon form the 3′ UTR. Both 5′ and 3′ UTRs are important for regulating translation initiation and mRNA stability. Credit: Rao, A., Ryan, K. Fletcher, S. and Tag, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -59,11 +59,11 @@ The discovery of introns came as a surprise to researchers in the 1970s who expe
 
 All of a pre-mRNA's introns must be completely and precisely removed before protein synthesis. If the process errs by even a single nucleotide, the reading frame of the rejoined exons would shift, and the resulting protein would be dysfunctional. The process of removing introns and reconnecting exons is called **splicing** (see the diagram below). Introns are removed and degraded while the pre-mRNA is still in the nucleus. Splicing occurs by a sequence-specific mechanism that ensures introns will be removed and exons rejoined with the accuracy and precision of a single nucleotide. Although the intron itself is noncoding, the beginning and end of each intron is marked with specific nucleotides: GU at the 5′ end and AG at the 3′ end of the intron. The splicing of pre-mRNAs is conducted by complexes of proteins and RNA molecules called spliceosomes.
 
-{{< mediafigure src="biology/Figure_15_04_02-50c1" alt="A diagram of a spliceosome splicing pre-mRNA. A strand labeled 5′ enters a tan circular spliceosome from below as Exon 1, and a second strand enters from above as Exon 2; the intron joining them loops through three small circles labeled Small RNAs inside the spliceosome. A loop of intron exits the spliceosome at upper right, and Exon 1 and Exon 2 join into a single mRNA strand at the right, again labeled 5′ at its lower end." longdesc="A tan circle representing the spliceosome sits left of center. A purple strand labeled 'Pre-mRNA' enters from the bottom, labeled '5′' at its tip, and is labeled 'Exon 1' where it meets the circle; a second purple strand labeled 'Exon 2' enters the circle from the top. Between them, inside the circle, a thin gray strand labeled 'Intron' loops past three small tan circles labeled 'Small RNAs,' each containing a squiggled purple loop. The gray intron strand exits the top of the spliceosome and loops into a large open circle at upper right. A black arrow points right from the spliceosome to a separate purple strand at the far right labeled 'mRNA,' with 'Exon 2' above and 'Exon 1' below, joined at a white dashed line, and '5′' labeled at its lower end." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_15_04_02-50c1" alt="A diagram of a spliceosome splicing pre-mRNA. A strand labeled 5′ enters a tan circular spliceosome from below as Exon 1, and a second strand enters from above as Exon 2; the intron joining them loops around three small circles holding Small RNAs inside the spliceosome. One arrow leads from the spliceosome to a separate closed loop of intron at upper right, and another to a single mRNA strand at the right, Exon 1 joined to Exon 2, again labeled 5′ at its lower end." longdesc="A tan circle representing the spliceosome sits left of center. A purple strand labeled 'Pre-mRNA' enters from the bottom, labeled '5′' at its tip, and is labeled 'Exon 1' where it meets the circle; a second purple strand labeled 'Exon 2' enters the circle from the top. Between them a gray strand labeled 'Intron' curves in a wide C around the right side of the spliceosome, past three small pale circles, each containing a squiggled purple strand; two leader lines label squiggles in two of them 'Small RNAs.' A short black arrow points up and right from the spliceosome to a separate gray intron strand curled into a closed loop, with one free tail, at upper right. A second black arrow points right from the spliceosome to a separate purple strand at the far right labeled 'mRNA,' with 'Exon 2' above and 'Exon 1' below, joined at a white dashed line, and '5′' labeled at its lower end." kind="diagram" >}}
 Pre-mRNA splicing involves the precise removal of introns from the primary RNA transcript. The splicing process is catalyzed by protein complexes called spliceosomes that are composed of proteins and RNA molecules called small nuclear RNAs (snRNAs). Spliceosomes recognize sequences at the 5′ and 3′ end of the intron. Rao, A. and Ryan, K. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Errors in splicing are implicated in cancers and other human diseases. What kinds of mutations might lead to splicing errors? Think of different possible outcomes if splicing errors occur." hint="Think about mutations at the sequences the spliceosome itself recognizes, versus mutations in the spliceosome's own proteins and RNAs, and about what could go wrong with an intron once it is not correctly recognized." >}}
+{{< selfcheck question="Errors in splicing are implicated in cancers and other human diseases. What kinds of mutations might lead to splicing errors? Think of different possible outcomes if splicing errors occur." hint="Reread the splicing paragraphs and the spliceosome figure above." >}}
 Mutations in the spliceosome recognition sequence at each end of the intron, or in the proteins and RNAs that make up the spliceosome, may impair splicing. Mutations may also add new spliceosome recognition sites. Splicing errors could lead to introns being retained in spliced RNA, exons being excised, or changes in the location of the splice site.
 ===CHECKS===
 mutations in the spliceosome recognition sequence at each end of the intron may impair splicing
@@ -110,18 +110,25 @@ Eukaryotic pre-mRNAs are modified with a 5′ methylguanosine cap and a poly-A t
 
 ### Describe the different steps in RNA processing
 
-{{< multiplechoice
-  question="Which pre-mRNA processing step is important for initiating translation?"
-  answer="7-methylguanosine cap"
-  hint="Re-read which of the four modifications is recognized by factors involved in protein synthesis so that ribosomes can begin translation."
+{{< textin
+  question="According to the section summary, only finished mRNAs that have undergone 5′ capping, 3′ polyadenylation, and intron splicing are exported from the nucleus to the ________."
+  answer="cytoplasm"
+  hint="Reread the section summary's fourth sentence."
 >}}
-poly-A tail
-RNA editing
-splicing
-7-methylguanosine cap
-{{< /multiplechoice >}}
 
-{{< selfcheck question="Chronic lymphocytic leukemia patients often harbor nonsense mutations in their spliceosome machinery. Describe how this mutation of the spliceosome would change the final location and sequence of a pre-mRNA." hint="Think about which of the three main processing steps disappears entirely if the spliceosome cannot function, and which two steps still happen normally." >}}
+{{< textin
+  question="The direct alteration of one or more nucleotides in an mRNA that has already been synthesized is called ________."
+  answer="RNA editing"
+  hint="Reread the section summary's last sentence."
+>}}
+
+{{< textin
+  question="The approximately 200-adenine-residue modification added to the 3′ end of a pre-mRNA to protect it from degradation and assist its export from the nucleus is called the ________."
+  answer="poly-A tail"
+  hint="Reread the second of the three short subsections that follow the Evolution Connection box."
+>}}
+
+{{< selfcheck question="Chronic lymphocytic leukemia patients often harbor nonsense mutations in their spliceosome machinery. Describe how this mutation of the spliceosome would change the final location and sequence of a pre-mRNA." hint="Reread Pre-mRNA Splicing and the section summary's fourth sentence." >}}
 Nonsense spliceosome mutations would eliminate the splicing step of mRNA processing, so the mature mRNAs would retain their introns and be perfectly complementary to the entire DNA template sequence. However, the mRNAs would still undergo addition of the 5′ cap and poly-A tail, and therefore each has the potential to be exported to the cytoplasm for translation.
 ===CHECKS===
 nonsense spliceosome mutations would eliminate the splicing step of mRNA processing
@@ -131,43 +138,35 @@ the mRNAs would still undergo addition of the 5′ cap and poly-A tail
 each has the potential to be exported to the cytoplasm for translation
 {{< /selfcheck >}}
 
-{{< textin
-  question="The modification added to the 5′ end of pre-mRNAs to protect the transcript from degradation and assist translation is called the ________."
+{{< multiplechoice
+  question="Which pre-mRNA processing step is important for initiating translation?"
   answer="7-methylguanosine cap"
-  hint="It is added by a phosphate linkage while the transcript is still being synthesized."
+  hint="Reread the three short subsections that follow the Evolution Connection box."
 >}}
-
-{{< textin
-  question="The direct alteration of one or more nucleotides in an mRNA that has already been synthesized is called ________."
-  answer="RNA editing"
-  hint="Trypanosome mitochondria use this rare processing step to insert nucleotides a pre-mRNA is otherwise missing."
->}}
-
-{{< textin
-  question="The approximately 200-adenine-residue modification added to the 3′ end of a pre-mRNA to protect it from degradation and assist its export from the nucleus is called the ________."
-  answer="poly-A tail"
-  hint="An enzyme called poly-A polymerase adds this string of A residues after cleavage at the AAUAAA site."
->}}
+poly-A tail
+RNA editing
+splicing
+7-methylguanosine cap
+{{< /multiplechoice >}}
 
 ### Understand the significance of exons, introns, and splicing for mRNAs
 
 {{< textin
-  question="The sequence present in protein-coding mRNA after completion of pre-mRNA splicing is called a(n) ________."
-  answer="exon"
-  hint="Its name signals that it is the part of the sequence that gets expressed."
+  question="According to the section summary, pre-mRNAs undergo splicing, in which introns are removed and exons are reconnected with single-nucleotide ________."
+  answer="accuracy"
+  hint="Reread the section summary's third sentence."
 >}}
 
 {{< textin
-  question="A non–protein-coding intervening sequence that is spliced out of mRNA during processing is called a(n) ________."
-  answer="intron"
-  hint="Its name signals that it intervenes between the coding sequences."
+  question="The removal of introns from pre-mRNA is conducted by complexes of proteins and RNA molecules called ________."
+  answer="spliceosomes"
+  hint="Reread the end of the third paragraph of Pre-mRNA Splicing."
 >}}
 
 {{< textin
-  question="The process of removing introns and reconnecting exons in a pre-mRNA is called ________."
-  answer="splicing"
-  accept="pre-mRNA splicing|RNA splicing"
-  hint="Complexes of proteins and RNA molecules called spliceosomes carry out this process with single-nucleotide accuracy."
+  question="If intron removal errs by even a single nucleotide, the ________ of the rejoined exons shifts, and the resulting protein is dysfunctional."
+  answer="reading frame"
+  hint="Reread the third paragraph of Pre-mRNA Splicing."
 >}}
 
 {{< mediafigure src="biology/Figure_B15_Ass_01" alt="A diagram of a primary RNA transcript divided into five labeled segments in order: an exon of 100 bp, an intron of 50 bp, an exon of 75 bp, an intron of 90 bp, and an exon of 120 bp." kind="diagram" >}}
@@ -177,7 +176,7 @@ A hypothetical pre-mRNA structure used in the multiple-choice question below.
 {{< multiplechoice
   question="A scientist identifies a pre-mRNA with the structure shown in the diagram above. What is the predicted size of the corresponding mature mRNA in base pairs (bp), excluding the 5′ cap and 3′ poly-A tail?"
   answer="295bp"
-  hint="Add together the lengths of the three exons; the introns are removed during splicing and are not part of the mature mRNA."
+  hint="Reread the first paragraph of Pre-mRNA Splicing, then use the diagram."
 >}}
 220bp
 295bp
@@ -187,10 +186,23 @@ A hypothetical pre-mRNA structure used in the multiple-choice question below.
 
 ### Explain how tRNAs and rRNAs are processed
 
+{{< textin
+  question="Pre-rRNAs and pre-tRNAs may be processed by ________, splicing, methylation, and chemical conversion of nucleotides."
+  answer="intramolecular cleavage"
+  accept="cleavage"
+  hint="Reread the section summary's fifth sentence."
+>}}
+
+{{< textin
+  question="The three-nucleotide sequence in a tRNA molecule that corresponds to an mRNA codon is called the ________."
+  answer="anticodon"
+  hint="Reread the paragraph just before the tRNA model and the model's caption."
+>}}
+
 {{< multiplechoice
   question="What processing step enhances the stability of pre-tRNAs and pre-rRNAs?"
   answer="methylation"
-  hint="Which chemical modification does the section describe as being added to some bases of pre-rRNAs, and separately to pre-tRNAs, for stability?"
+  hint="Reread the second paragraph of Processing of tRNAs and rRNAs."
 >}}
 methylation
 nucleotide modification
@@ -198,18 +210,6 @@ cleavage
 splicing
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The three-nucleotide sequence in a tRNA molecule that corresponds to an mRNA codon is called the ________."
-  answer="anticodon"
-  hint="It sits at the opposite end of the folded tRNA from the amino-acid attachment site."
->}}
-
-{{< textin
-  question="Pre-rRNAs and pre-tRNAs may be processed by ________, splicing, methylation, and chemical conversion of nucleotides."
-  answer="intramolecular cleavage"
-  hint="Enzymes cut a single long precursor molecule into the separate rRNA or tRNA subunits it spans."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 15.4: RNA Processing in Eukaryotes](https://openstax.org/books/biology-2e/pages/15-4-rna-processing-in-eukaryotes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_15_04_03 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a computer-rendered space-filling molecular model, not a photograph); a longdesc added for Figure_15_03_02, Figure_15_04_02, and Figure_15_04_03 (labeled diagrams whose full arrow/label layout is not carried by the caption alone); each source alt's letter-by-letter TTS spelling ("m R N A," "R N A," "t R N A") rewritten as "mRNA," "RNA," and "tRNA"; figure cross-references to numbered figures changed to descriptive references ("see the diagram below," "see the model below") since figures are not numbered here; the Evolution Connection and Link to Learning feature boxes rendered as callouts, the latter with descriptive link text in place of the source's bare "at this website"; the Visual Connection note kept in the body immediately after its figure, rendered as a self-check since the source keys it to a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Question adapted into the closing interactive Practice block; the third Review Question's diagram, embedded directly in the source problem statement rather than shown in the body, added as its own mediafigure (with a locally written caption, since the source item carries none) immediately before the multiple choice that depends on it; all seven Key Terms recall items added from the glossary; and one summary-derived cloze text-recall item ("intramolecular cleavage") added under the third objective, since the module's three Review Questions and one Critical Thinking Question left that objective's group short of the book's three-item floor; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One number is corrected with a visible Source note: a typical *E. coli* mRNA lasts a few minutes, not five seconds (erratum 403).</small>
+<small>This section is adapted from [Biology 2e, Section 15.4: RNA Processing in Eukaryotes](https://openstax.org/books/biology-2e/pages/15-4-rna-processing-in-eukaryotes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_15_04_03 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a computer-rendered space-filling molecular model, not a photograph); a longdesc added for Figure_15_03_02, Figure_15_04_02, and Figure_15_04_03 (labeled diagrams whose full arrow/label layout is not carried by the caption alone); each source alt's letter-by-letter TTS spelling ("m R N A," "R N A," "t R N A") rewritten as "mRNA," "RNA," and "tRNA"; figure cross-references to numbered figures changed to descriptive references ("see the diagram below," "see the model below") since figures are not numbered here; the Evolution Connection and Link to Learning feature boxes rendered as callouts, the latter with descriptive link text in place of the source's bare "at this website"; the Visual Connection note kept in the body immediately after its figure, rendered as a self-check since the source keys it to a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Question adapted into the closing interactive Practice block; the third Review Question's diagram, embedded directly in the source problem statement rather than shown in the body, added as its own mediafigure (with a locally written caption, since the source item carries none) immediately before the multiple choice that depends on it; three Key Terms recall items (RNA editing, poly-A tail, anticodon) added from the glossary — the exon, intron, and splicing terms left to the Key terms list because the second objective's heading prints them, and the 7-methylguanosine cap because the first Review Question already asks it; three summary-derived cloze text-recall items ("cytoplasm", "accuracy", "intramolecular cleavage") and two cloze items built from single sentences of the module's Pre-mRNA Splicing text ("spliceosomes", "reading frame") added to hold each objective group at the book's three-item floor; because Practice items are grouped by objective and the recall items placed first, the pre-mRNA-size Review Question (source third) comes before the methylation question (source second), and the Critical Thinking Question precedes the first Review Question; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One number is corrected with a visible Source note: a typical *E. coli* mRNA lasts a few minutes, not five seconds (erratum 403).</small>

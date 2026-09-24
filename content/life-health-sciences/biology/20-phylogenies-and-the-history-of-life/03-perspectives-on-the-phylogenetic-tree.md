@@ -21,7 +21,7 @@ Phylogenetic modeling concepts are constantly changing. It is one of the most dy
 
 Many phylogenetic trees are models of the evolutionary relationship among species. Phylogenetic trees originated with Charles Darwin, who sketched the first phylogenetic tree in 1837 (illustrated below). This served as a prototype for subsequent studies for more than a century. The phylogenetic tree concept with a single trunk representing a shared ancestry, with the branches representing the divergence of species from this ancestry, fits well with the structure of many common trees, such as the oak (also pictured below). However, evidence from modern DNA sequence analysis and newly developed computer algorithms has caused skepticism about the standard tree model's validity in the scientific community.
 
-{{< mediafigure src="biology/Figure_20_03_01ab" kind="diagram" eager="true" alt="Two panels side by side: (a) a page from Charles Darwin's 1837 notebook, headed “I think,” showing a small hand-drawn branching-tree diagram with a circled “1” at its base and tips labeled A, B, C, and D, with handwritten notes alongside and beneath it; (b) a photograph of a large, broad-crowned oak tree with a thick trunk, growing alone on a grassy, rocky hillside under a pale sky." longdesc="Panel (a): near the top, Darwin wrote “I think,” with a bracketed block of handwritten notes beside it. Below, a small branching tree rises from a circled “1” at its base, splitting repeatedly into thin lines that end in four labeled tips — A, B, C, and D — with several more lines of handwritten commentary beneath the sketch discussing how the labeled points relate to one another. Panel (b) shows the oak tree filling most of the frame, a rounded, dense green canopy above one thick trunk, growing alone among low shrubs and grass on a hillside under a pale sky." >}}
+{{< mediafigure src="biology/Figure_20_03_01ab" kind="diagram" eager="true" alt="Two panels side by side: (a) a page from Charles Darwin's 1837 notebook, headed “I think,” showing a small hand-drawn branching-tree diagram with a circled “1” at its base and tips labeled A, B, C, and D, with handwritten notes alongside and beneath it; (b) a photograph of a large, broad-crowned oak tree with a thick trunk, growing alone on a grassy, rocky hillside under a pale sky." longdesc="Panel (a): near the top, Darwin wrote “I think,” with a bracketed block of handwritten notes beside it. Below, a small branching tree rises from a circled “1” at its base, splitting repeatedly into many thin branch tips, four of them labeled A, B, C, and D, with several more lines of handwritten commentary beneath the sketch discussing how the labeled points relate to one another. Panel (b) shows the oak tree filling most of the frame, a rounded, dense green canopy above one thick trunk, growing alone among low shrubs and grass on a hillside under a pale sky." >}}
 The (a) concept of the "tree of life" dates to an 1837 Charles Darwin sketch. Like an (b) oak tree, the "tree of life" has a single trunk and many branches. (credit b: modification of work by "Amada44"/Wikimedia Commons)
 {{< /mediafigure >}}
 
@@ -88,7 +88,7 @@ The scientific community now widely accepts the theory that mitochondria and chl
 
 The **nucleus-first** hypothesis proposes that the nucleus evolved in prokaryotes first, followed by a later fusion of the new eukaryote with bacteria that became mitochondria. The **mitochondria-first** hypothesis proposes that mitochondria were first established in a prokaryotic host, which subsequently acquired a nucleus, by fusion or other mechanisms, to become the first eukaryotic cell. Most interestingly, the **eukaryote-first** hypothesis proposes that prokaryotes actually evolved from eukaryotes by losing genes and complexity (illustrated below). All of these hypotheses are testable. Only time and more experimentation will determine which hypothesis data best supports.
 
-{{< mediafigure src="biology/Figure_20_03_04" kind="diagram" alt="A three-row diagram titled “Models for Evolution of the Three Domains”: (a) the nucleus-first hypothesis combines a purple circle and a cell into a nucleus-bearing cell, then adds an orange bean shape to reach a final cell with both; (b) the mitochondrion-first hypothesis reaches the same final cell by adding the orange bean shape first and the purple circle second; (c) the eukaryote-first hypothesis shows a complex cell giving rise, by an arrow, to a lone orange bean shape." longdesc="The figure is headed “Models for Evolution of the Three Domains” in a tan banner. Row (a), “Nucleus-first hypothesis”: a small purple circle plus a pale cell containing scattered small shapes combine, by an arrow, into a cell now containing a purple nucleus at its center; that cell plus a small orange bean shape combine, by another arrow, into a final cell with both the purple nucleus and several orange bean-shaped bodies scattered around it. Row (b), “Mitochondrion-first hypothesis”: the same three cells appear, arriving at the same final combined cell, but the order of addition is reversed — the orange bean shape is added first, then the purple circle. Row (c), “Eukaryote-first hypothesis”: a single complex cell that already contains a purple nucleus and orange bean-shaped bodies is followed by an arrow pointing to a lone, simple orange bean shape, showing a prokaryote arising from a eukaryote-like ancestor by loss of these structures." >}}
+{{< mediafigure src="biology/Figure_20_03_04" kind="diagram" alt="A three-row diagram titled “Models for Evolution of the Three Domains”: (a) the nucleus-first hypothesis combines a purple circle and a cell into a nucleus-bearing cell, then adds an orange bean shape to reach a final cell with both; (b) the mitochondrion-first hypothesis reaches the same final cell by adding the orange bean shape first and the purple circle second; (c) the eukaryote-first hypothesis shows a complex cell giving rise, by an arrow, to a lone orange bean shape." longdesc="The figure is headed “Models for Evolution of the Three Domains” in a tan banner. Row (a), “Nucleus-first hypothesis”: a small purple circle plus a pale cell containing scattered small shapes combine, by an arrow, into a cell now containing a purple nucleus at its center; that cell plus a small orange bean shape combine, by another arrow, into a final cell with both the purple nucleus and several orange bean-shaped bodies scattered around it. Row (b), “Mitochondrion-first hypothesis”: the order of addition is reversed — an orange bean shape plus the same pale cell combine, by an arrow, into a cell with two orange bean-shaped bodies but no nucleus; that cell plus a purple circle combine, by another arrow, into the same final cell with both. Row (c), “Eukaryote-first hypothesis”: a single complex cell that already contains a purple nucleus and orange bean-shaped bodies is followed by an arrow pointing to a lone, simple orange bean shape, showing a prokaryote arising from a eukaryote-like ancestor by loss of these structures." >}}
 Three alternate hypotheses of eukaryotic and prokaryotic evolution are (a) the nucleus-first hypothesis, (b) the mitochondrion-first hypothesis, and (c) the eukaryote-first hypothesis.
 {{< /mediafigure >}}
 
@@ -96,7 +96,7 @@ Three alternate hypotheses of eukaryotic and prokaryotic evolution are (a) the n
 
 Recognizing the importance of HGT, especially in prokaryote evolution, has caused some to propose abandoning the classic "tree of life" model. In 1999, W. Ford Doolittle proposed a phylogenetic model that resembles a web or a network more than a tree. The hypothesis is that eukaryotes evolved not from a single prokaryotic ancestor, but from a pool of many species that were sharing genes by HGT mechanisms. As shown below, some individual prokaryotes were responsible for transferring the bacteria that caused mitochondrial development to the new eukaryotes; whereas, other species transferred the bacteria that gave rise to chloroplasts. Scientists often call this model the "**web of life**." In an effort to save the tree analogy, some have proposed using the *Ficus* tree (also pictured below) with its multiple trunks as a phylogenetic way to represent a diminished evolutionary role for HGT.
 
-{{< mediafigure src="biology/Figure_B20_03_05" kind="diagram" alt="Two panels: (a) a diagram titled “Web of Life” showing a wide, grid-like network of branches rising from a base labeled “Ancestral community of primitive cells” and fanning up into tip labels grouped under Bacteria, Archaea, and Eukarya, with several horizontal lines cross-connecting branches, including two labeled Mitochondria and Chloroplasts that cross into the Eukarya branches; (b) a photograph of a Ficus tree's cluster of thick, gnarled, multiple trunks and aerial roots." longdesc="Panel (a) is headed “Web of Life” in a tan banner. Below it, three domain labels sit in a row with brackets spanning their tip labels: Bacteria (bracketing, left to right, the tips Other bacteria, Hyperthermophilic bacteria, Cyanobacteria, and Proteobacteria), Archaea (bracketing Crenarchaeota, Euryarchaeota, and Korarchaeota), and Eukarya (bracketing Animals, Fungi, Plants, and Algae, with Protists set apart below them). Below the tip labels, a dense, woven grid of green branch-like bands rises from a horizontal green bar at the very bottom labeled “Ancestral community of primitive cells.” The branches cross and interweave repeatedly rather than forking cleanly, and two of the horizontal bands are individually labeled as they run from the bacterial side of the web into the Eukarya branches: one reading “Chloroplasts” and another, below it, reading “Mitochondria.” Panel (b) is a photograph of a large Ficus tree's base, showing several thick, pale, gnarled trunks and buttressing roots twisting together and rising out of the ground, with green foliage visible above." >}}
+{{< mediafigure src="biology/Figure_B20_03_05" kind="diagram" alt="Two panels: (a) a diagram titled “Web of Life” showing a wide, grid-like network of branches rising from a base labeled “Ancestral community of primitive cells” and fanning up into tip labels grouped under Bacteria, Archaea, and Eukarya, with several horizontal lines cross-connecting branches, including two labeled Mitochondria and Chloroplasts that cross into the Eukarya branches; (b) a photograph of a Ficus tree's cluster of thick, gnarled, multiple trunks and aerial roots." longdesc="Panel (a) is headed “Web of Life” in a tan banner. Below it, three domain labels sit in a row with brackets spanning their tip labels: Bacteria (bracketing, left to right, the tips Other bacteria, Cyanobacteria, and Proteobacteria, with Hyperthermophilic bacteria a low branch at the far left, well below them), Archaea (bracketing Crenarchaeota and Euryarchaeota, with Korarchaeota a short stub low in the web, near the base), and Eukarya (bracketing Animals, Fungi, Plants, and Algae, with Protists set apart below them). Below the tip labels, a dense, woven grid of green branch-like bands rises from a horizontal green bar at the very bottom labeled “Ancestral community of primitive cells.” The branches cross and interweave repeatedly rather than forking cleanly, and two of the horizontal bands are individually labeled as they run from the bacterial side of the web into the Eukarya branches: one reading “Chloroplasts” and another, below it, reading “Mitochondria.” Panel (b) is a photograph of a large Ficus tree's base, showing several thick, pale, gnarled trunks and buttressing roots twisting together and rising out of the ground, with green foliage visible above." >}}
 In W. Ford Doolittle's (a) phylogenetic model, the "tree of life" arose from a community of ancestral cells, has multiple trunks, and has connections between branches where horizontal gene transfer has occurred. Visually, this concept is better represented by (b) the multi-trunked **Ficus** than by an oak's single trunk similar to Darwin's tree above. (credit b: modification of work by "psyberartist"/Flickr)
 {{< /mediafigure >}}
 
@@ -134,13 +134,20 @@ The phylogenetic tree, which Darwin first used, is the classic "tree of life" mo
 {{< multiplechoice
   question="The transfer of genes by a mechanism not involving reproduction is called:"
   answer="horizontal gene transfer"
-  hint="This is the general term the section defines at the start of its Horizontal Gene Transfer section — not one of the web or ring models discussed later."
+  hint="Reread the definition at the start of the section after Limitations to the Classic Model."
 >}}
 meiosis
 web of life
 horizontal gene transfer
 gene fusion
 {{< /multiplechoice >}}
+
+{{< textin
+  question="The fusion of two prokaryotic genomes, presumably by endosymbiosis, is called ________."
+  answer="genome fusion"
+  accept="genomic fusion"
+  hint="Scientists believe this is the ultimate form of horizontal gene transfer."
+>}}
 
 {{< multiplechoice
   question="Particles that transfer genetic material from one species to another, especially in marine prokaryotes:"
@@ -152,20 +159,6 @@ lateral gene transfer
 genome fusion device
 gene transfer agents
 {{< /multiplechoice >}}
-
-{{< textin
-  question="The transfer of genes between unrelated species, also called lateral gene transfer, is known as ________."
-  answer="horizontal gene transfer"
-  accept="HGT"
-  hint="Its abbreviation is used throughout this section."
->}}
-
-{{< textin
-  question="A bacteriophage-like particle that transfers random genomic segments from one species of prokaryote to another is called a ________."
-  answer="gene transfer agent"
-  accept="GTA"
-  hint="Scientists characterized the first one of these in 1974 using purple, non-sulfur bacteria."
->}}
 
 ### Illustrate how prokaryotes and eukaryotes transfer genes horizontally
 
@@ -182,7 +175,7 @@ gene transfer agents
   {"label": "Gene transfer from viral infections", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="Compare three different ways that eukaryotic cells may have evolved." hint="Think about the order in which the nucleus and the mitochondrion could each have been acquired — or whether prokaryotes might have come from eukaryotes instead." >}}
+{{< selfcheck question="Compare three different ways that eukaryotic cells may have evolved." hint="Reread the Genome Fusion and Eukaryote Evolution subsection and its three-row figure." >}}
 Some hypotheses propose that mitochondria were acquired first, followed by the development of the nucleus. Others propose that the nucleus evolved first and that this new eukaryotic cell later acquired the mitochondria. Still others hypothesize that prokaryotes descended from eukaryotes by the loss of genes and complexity.
 ===CHECKS===
 mitochondria were acquired first, followed by the development of the nucleus
@@ -199,23 +192,16 @@ the insect consumed fungi for food
 {{< /selfcheck >}}
 
 {{< textin
-  question="The fusion of two prokaryotic genomes, presumably by endosymbiosis, is called ________."
-  answer="genome fusion"
-  accept="genomic fusion"
-  hint="Scientists believe this is the ultimate form of horizontal gene transfer."
->}}
-
-{{< textin
   question="The idea that prokaryotes first acquired a mitochondrion, and only later acquired a nucleus, is called the ________."
   answer="mitochondria-first hypothesis"
   accept="mitochondrion-first hypothesis"
-  hint="Its name names which organelle came first."
+  hint="Reread the Genome Fusion and Eukaryote Evolution paragraph that sets out the competing hypotheses, and the figure beside it."
 >}}
 
 {{< textin
   question="The idea that prokaryotes first acquired a nucleus, and only later acquired a mitochondrion, is called the ________."
   answer="nucleus-first hypothesis"
-  hint="It is the mirror image of the mitochondria-first hypothesis."
+  hint="Reread the Genome Fusion and Eukaryote Evolution paragraph that sets out the competing hypotheses, and the figure beside it."
 >}}
 
 {{< textin
@@ -229,7 +215,7 @@ the insect consumed fungi for food
 {{< multiplechoice
   question="What does the trunk of the classic phylogenetic tree represent?"
   answer="single common ancestor"
-  hint="Darwin's original sketch showed one shared line of descent branching outward."
+  hint="Reread the paragraph on Darwin's 1837 sketch, which compares the classic tree to an oak."
 >}}
 single common ancestor
 pool of ancestral organisms
@@ -237,16 +223,11 @@ new species
 old species
 {{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Which phylogenetic model proposes that all three domains of life evolved from a pool of primitive prokaryotes?"
-  answer="ring of life"
-  hint="This model abandons the tree shape entirely in favor of a circular structure."
+{{< textin
+  question="The phylogenetic tree, which Darwin first used, is the classic “________” model describing phylogenetic relationships among species, and the most common model that scientists use today."
+  answer="tree of life"
+  hint="Reread the caption of the Darwin sketch at the top of the section."
 >}}
-tree of life
-web of life
-ring of life
-network model
-{{< /multiplechoice >}}
 
 {{< textin
   question="The phylogenetic model that attempts to incorporate the effects of horizontal gene transfer on evolution is called the ________."
@@ -254,12 +235,17 @@ network model
   hint="W. Ford Doolittle proposed this model in 1999, and some illustrate it using a multi-trunked Ficus tree."
 >}}
 
-{{< textin
-  question="The phylogenetic model in which all three domains of life are proposed to have evolved from a single pool of gene-swapping prokaryotes is called the ________."
+{{< multiplechoice
+  question="Which phylogenetic model proposes that all three domains of life evolved from a pool of primitive prokaryotes?"
   answer="ring of life"
-  hint="Unlike the tree or web models, this one has no branches at all."
+  hint="Reread the first paragraph under each of the last two subsections, and the caption of the final figure."
 >}}
+tree of life
+web of life
+ring of life
+network model
+{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 20.3: Perspectives on the Phylogenetic Tree](https://openstax.org/books/biology-2e/pages/20-3-perspectives-on-the-phylogenetic-tree) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_20_03_01ab, Figure_20_03_03-c1e5, Figure_20_03_04, and Figure_20_03_06-4cf4 re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (the first pairs Darwin's hand-drawn tree sketch, which carries the teaching point, with a photo of an oak tree; the other three are drawn, labeled schematics, not photographs); a longdesc added for Figure_20_03_01ab (the sketch's labeled tips and handwritten notes are not carried by the one-line caption), Figure_20_03_03-c1e5 (the labeled arrows and organelle colors are not in the caption), Figure_20_03_04 (the three-row sequence of cell combinations, and the order in which each hypothesis adds the nucleus and mitochondrion, is not in the caption), and Figure_B20_03_05 (the domain labels, tip labels, and cross-connecting Chloroplasts/Mitochondria branches of the web diagram are not in the caption); the bare or vague source alts for Figure_20_03_01ab, Figure_20_03_02-c262, Figure_20_03_03-c1e5, and Figure_20_03_04 rewritten from the images, and the over-600-character source alt for Figure_B20_03_05 rewritten to a concise description with its walk-through moved into longdesc; the HGT mechanisms table (tab-ch20-03-01) transcribed complete as a Markdown table, its spanning title row set as a bold line above it; the numeric exponent "10^13" set as $10^{13}$ per the book's numeric-exponent convention (the only math on this otherwise prose page); the source's forward figure references (a link before each panel letter) reworded as "illustrated below" / "pictured below" / "panel (b) of the figure below" since figures are not numbered here; the endosymbiosis figure caption's "Gramnegative" set as "Gram-negative", matching the module's own spelling elsewhere in the same caption; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eight key-term recall items added from the glossary; and one sortbins exercise built from the HGT mechanisms table, sorting each mechanism into Prokaryotes or Eukaryotes.</small>
+<small>This section is adapted from [Biology 2e, Section 20.3: Perspectives on the Phylogenetic Tree](https://openstax.org/books/biology-2e/pages/20-3-perspectives-on-the-phylogenetic-tree) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_20_03_01ab, Figure_20_03_03-c1e5, Figure_20_03_04, and Figure_20_03_06-4cf4 re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (the first pairs Darwin's hand-drawn tree sketch, which carries the teaching point, with a photo of an oak tree; the other three are drawn, labeled schematics, not photographs); a longdesc added for Figure_20_03_01ab (the sketch's labeled tips and handwritten notes are not carried by the one-line caption), Figure_20_03_03-c1e5 (the labeled arrows and organelle colors are not in the caption), Figure_20_03_04 (the three-row sequence of cell combinations, and the order in which each hypothesis adds the nucleus and mitochondrion, is not in the caption), and Figure_B20_03_05 (the domain labels, tip labels, and cross-connecting Chloroplasts/Mitochondria branches of the web diagram are not in the caption); the bare or vague source alts for Figure_20_03_01ab, Figure_20_03_02-c262, Figure_20_03_03-c1e5, and Figure_20_03_04 rewritten from the images, and the over-600-character source alt for Figure_B20_03_05 rewritten to a concise description with its walk-through moved into longdesc; the HGT mechanisms table (tab-ch20-03-01) transcribed complete as a Markdown table, its spanning title row set as a bold line above it; the numeric exponent "10^13" set as $10^{13}$ per the book's numeric-exponent convention (the only math on this otherwise prose page); the source's forward figure references (a link before each panel letter) reworded as "illustrated below" / "pictured below" / "panel (b) of the figure below" since figures are not numbered here; the endosymbiosis figure caption's "Gramnegative" set as "Gram-negative", matching the module's own spelling elsewhere in the same caption; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (genome fusion, placed under "Describe horizontal gene transfer" as the section's "ultimate in HGT"; mitochondria-first, nucleus-first, and eukaryote-first hypotheses; web of life), the recall items for gene transfer agent, horizontal gene transfer, and ring of life dropped because each re-asked a Review Question on the same page; one summary cloze ("tree of life") added under the web-and-ring objective; and one sortbins exercise built from the HGT mechanisms table, sorting each mechanism into Prokaryotes or Eukaryotes.</small>

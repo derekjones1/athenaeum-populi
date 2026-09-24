@@ -49,7 +49,7 @@ One of the most remarkable associations between fungi and plants is the establis
 
 There are several basic types of mycorrhizae. **Ectomycorrhizae** (“outside” mycorrhizae) depend on fungi enveloping the roots in a sheath (called a mantle). Hyphae grow from the mantle into the root and envelope the outer layers of the root cells in a network of hyphae called a *Hartig net* (see the diagram below). The fungal partner can belong to the Ascomycota, Basidiomycota or Zygomycota. **Endomycorrhizae** ("inside" mycorrhizae), also called *arbuscular mycorrhizae*, are produced when the fungi grow inside the root in a branched structure called an *arbuscule* (from the Latin for “little trees”). The fungal partners of endomycorrhizal associates all belong to the Glomeromycota. The fungal arbuscules penetrate root cells between the cell wall and the plasma membrane and are the site of the metabolic exchanges between the fungus and the host plant (see the diagram and photo below). Orchids rely on a third type of mycorrhiza. Orchids are epiphytes that typically produce very small airborne seeds without much storage to sustain germination and growth. Their seeds will not germinate without a mycorrhizal partner (usually a Basidiomycete). After nutrients in the seed are depleted, fungal symbionts support the growth of the orchid by providing necessary carbohydrates and minerals. Some orchids continue to be mycorrhizal throughout their life cycle.
 
-{{< mediafigure src="biology/Figure_24_03_03" alt="A side-by-side comparison of two root–fungus interactions: (a) a labeled illustration of an ectomycorrhiza, whose fungal mantle and Hartig net stay outside and between the outer root cells, and (b) a micrograph of an arbuscular mycorrhiza, whose fungal structures penetrate into root tissue." kind="diagram" longdesc="Panel (a) is a labeled diagram titled 'Ectomycorrhiza': a root tip is sheathed on the outside by a tan fungal mantle, with mycelium threads radiating outward from the mantle into the surrounding space, and rows of hyphae — labeled the Hartig net — extending inward from the mantle between the outer layers of root cells, running straight down and branching toward the root's outside. Panel (b) is a light micrograph of a root cross-section showing arbuscular mycorrhiza as dense, dark, branching fungal clusters within the root tissue, with a 25 µm scale bar in the lower right corner." >}}
+{{< mediafigure src="biology/Figure_24_03_03" alt="A side-by-side comparison of two root–fungus interactions: (a) a labeled illustration of an ectomycorrhiza, whose fungal mantle and Hartig net stay outside and between the outer root cells, and (b) a micrograph of an arbuscular mycorrhiza, whose fungal structures penetrate into root tissue." kind="diagram" longdesc="Panel (a) is a labeled diagram titled 'Ectomycorrhiza': a root tip is sheathed on the outside by a tan fungal mantle, with mycelium threads radiating outward from the mantle into the surrounding space, and rows of hyphae — labeled the Hartig net — extending inward from the mantle between the outer layers of root cells, running straight down and branching toward the root's outside. Panel (b) is a light micrograph of root tissue viewed lengthwise, its long cells running diagonally across the frame, showing arbuscular mycorrhiza as dense, dark, grape-like fungal clusters within and among the cells, with a 25 µm scale bar in the lower right corner." >}}
 Two types of mycorrhizae. (a) Ectomycorrhizae and (b) arbuscular or endomycorrhizae have different mechanisms for interacting with the roots of plants. (credit b: MS Turmel, University of Manitoba, Plant Science Department)
 {{< /mediafigure >}}
 
@@ -90,7 +90,7 @@ Lichens. Lichens have many forms. They may be (a) crust-like, (b) hair-like, or 
 
 It is important to note that lichens are *not* a single organism, but rather another wonderful example of a mutualism, in which a fungus (usually a member of the Ascomycota or Basidiomycota) lives in a physical and physiological relationship with a photosynthetic organism (a eukaryotic alga or a prokaryotic cyanobacterium) (see the diagram below). Generally, neither the fungus nor the photosynthetic organism can survive alone outside of the symbiotic relationship. The body of a lichen, referred to as a thallus, is formed of hyphae wrapped around the photosynthetic partner. The photosynthetic organism provides carbon and energy in the form of carbohydrates. Some cyanobacteria additionally fix nitrogen from the atmosphere, contributing nitrogenous compounds to the association. In return, the fungus supplies minerals and protection from dryness and excessive light by encasing the algae in its mycelium. The fungus also attaches the lichen to its substrate.
 
-{{< mediafigure src="biology/Figure_24_03_06" alt="A textured pen-and-ink cross-section drawing of a lichen thallus, showing several horizontal bands of tissue stacked from a dense outer layer at top to root-like anchoring threads at bottom, each band labeled with a lowercase letter along the right edge." kind="diagram" longdesc="From top to bottom the drawing shows: (a) a dense band of tightly packed, roughly hexagonal fungal-hyphae cells forming the upper cortex; (b) a band of larger, clustered dark circular cells — the photosynthetic algal cells — wrapped in a mesh of thinner fungal hyphae, the algal zone; (c) a looser, tangled mesh of thread-like fungal hyphae with no algal cells, the medulla; (d) a second dense band of packed hexagonal cells matching the upper cortex, the lower cortex; and (e) thin, finger-like hyphal threads projecting downward from the lower cortex, the rhizines anchoring the thallus to its substrate." >}}
+{{< mediafigure src="biology/Figure_24_03_06" alt="A textured pen-and-ink cross-section drawing of a lichen thallus, showing several horizontal bands of tissue stacked from a dense outer layer at top to root-like anchoring threads at bottom, each band labeled with a lowercase letter along the right edge." kind="diagram" longdesc="From top to bottom the drawing shows: (a) a dense band of tightly packed, roughly hexagonal fungal-hyphae cells forming the upper cortex; (b) a band of larger, clustered dark circular cells — the photosynthetic algal cells — wrapped in a mesh of thinner fungal hyphae, the algal zone; (c) a looser, tangled mesh of thread-like fungal hyphae with no algal cells, the medulla; (d) a second dense band, of larger rounded cells with thick dark walls, the lower cortex; and (e) two tapering, cone-shaped bundles of elongated cells projecting downward from the lower cortex, the rhizines anchoring the thallus to its substrate." >}}
 Structure of a lichen. This cross-section of a lichen thallus shows the (a) upper cortex of fungal hyphae, which provides protection; the (b) algal zone where photosynthesis occurs, the (c) medulla of fungal hyphae, and the (d) lower cortex, which also provides protection and may have (e) *rhizines* to anchor the thallus to the substrate.
 {{< /mediafigure >}}
 
@@ -146,7 +146,7 @@ They recycle carbon and inorganic minerals by the process of decomposition.
 {{< multiplechoice
   question="Consider an ecosystem where all the fungi not involved in mycorrhizae are eliminated. How would this affect nitrogen intake by plants?"
   answer="Nitrogen intake would decrease."
-  hint="Decomposer fungi release nitrogen from dead matter before mycorrhizal fungi can channel it into plant roots — what happens to that supply if the decomposers are gone?"
+  hint="Reread the Decomposers and Recyclers discussion of what decomposing fungi return to the environment."
 >}}
 Nitrogen intake would increase.
 Nitrogen intake would not change.
@@ -157,7 +157,7 @@ Nitrogen intake would stop.
 {{< textin
   question="Fungi are ________ that decompose organic matter."
   answer="saprobes"
-  accept="saprobe"
+  accept="saprophyte"
   hint="The Decomposers and Recyclers section uses this term for an organism that absorbs nutrients from dead and decaying matter."
 >}}
 
@@ -166,7 +166,7 @@ Nitrogen intake would stop.
 {{< multiplechoice
   question="What term describes the close association of a fungus with the root of a tree?"
   answer="a mycorrhiza"
-  hint="This is the term defined earlier in the section as the fungal partner of a mutualistic association between vascular plant roots and their symbiotic fungi."
+  hint="Reread the opening sentences of the Fungus/Plant Mutualism subsection."
 >}}
 a rhizoid
 a lichen
@@ -175,17 +175,16 @@ an endophyte
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A mutualistic association between fungi and vascular plant roots is called a ________."
-  answer="mycorrhiza"
-  accept="mycorrhizae|mycorrhizal association"
-  hint="This is the Greek-derived term (myco- fungus, rhizo- root) for the fungal partner in this relationship."
->}}
-
-{{< textin
   question="Mycorrhizal fungi that surround plant roots with a mantle and send hyphae into the root to form a Hartig net are called ________."
   answer="ectomycorrhiza"
   accept="ectomycorrhizae"
-  hint="Its name reflects that the fungal mantle stays outside the root cells, rather than entering them."
+  hint="Reread the paragraph that lists the basic types of fungus–root association, at its first type."
+>}}
+
+{{< textin
+  question="Fungi that live inside plant tissue without damaging the host plant are called ________."
+  answer="endophytes"
+  hint="Reread the paragraph on other examples of fungus–plant mutualism, just before the coevolution discussion."
 >}}
 
 {{< textin
@@ -195,18 +194,18 @@ an endophyte
   hint="This is the type of mycorrhiza whose fungal partners all belong to the Glomeromycota."
 >}}
 
+{{< textin
+  question="A close association between a fungus and a photosynthetic alga or bacterium that benefits both partners is called a ________."
+  answer="lichen"
+  hint="This symbiotic partnership can survive extreme drought by becoming completely desiccated."
+>}}
+
 {{< selfcheck question="Why does protection from light actually benefit the photosynthetic partner in lichens?" hint="Consider what excess sunlight can do to a photosynthetic pigment." >}}
 Protection from excess light that may bleach photosynthetic pigments allows the photosynthetic partner to survive in environments unfavorable to plants.
 ===CHECKS===
 protection from excess light that may bleach photosynthetic pigments
 allows the photosynthetic partner to survive in environments unfavorable to plants
 {{< /selfcheck >}}
-
-{{< textin
-  question="A close association between a fungus and a photosynthetic alga or bacterium that benefits both partners is called a ________."
-  answer="lichen"
-  hint="This symbiotic partnership can survive extreme drought by becoming completely desiccated."
->}}
 
 {{< textin
   question="The clusters of algal cells and mycelia that allow lichens to spread and form new lichens are called ________."
@@ -236,6 +235,7 @@ the fungus can spread to new trees
 {{< textin
   question="Some ________ farm fungi as a supply of food."
   answer="ants"
+  accept="leaf-cutter ant|leafcutter ant"
   hint="This insect is described in the Fungus/Animal Mutualism section as literally cultivating fungi in underground gardens."
 >}}
 
@@ -247,9 +247,8 @@ the fungus can spread to new trees
 leaf-cutter ants
 scale insects
 ambrosia bark beetles
-tsetse flies
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 24.3: Ecology of Fungi](https://openstax.org/books/biology-2e/pages/24-3-ecology-of-fungi) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the lichen figure's alt calls panel (a)'s flecks orange-yellow and panel (b) hair-like, because the source alt's "brown flecks" and "moss-like" do not match the image (erratum 841); figures re-encoded as WebP, with `kind` confirmed against each image — six of the seven matched the manifest's guess, and Figure_24_03_06 was re-kinded from the manifest's guessed "photo" to "diagram," since it is a labeled line drawing of a lichen cross-section rather than a photograph; Figure_24_03_03's source alt (647 characters, over the 600-character limit) was shortened to name what the figure teaches, with its panel-by-panel walk-through moved into a longdesc, and Figure_24_03_06 was given a fresh alt plus a longdesc walking its five labeled layers top to bottom, since its source alt closely duplicated the caption's own listing of the five parts; inline cross-references to numbered figures ("Figure 24.19," etc.) changed to descriptive phrases ("see the photo below," "see the diagram below") since figures are not numbered here; the two `interactive`-class notes rendered as Link to Learning callouts with descriptive link text and the source's own openstax.org short URLs; the Evolution Connection note rendered as a callout with its bold name and italic title; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the three Review Questions and three Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to every self-check, including the body Visual Connection self-check, decomposing each model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (mycorrhiza, ectomycorrhiza, arbuscular mycorrhiza, lichen, soredia) added from the glossary; two summary-derived text-in clozes added ("saprobes" under the first objective, "ants" under the third), since the module's own Review and Critical Thinking Questions leave those two objectives thin; and one multiple choice written locally under the third objective (scale insects, keyed second, not first), built strictly from the Fungus/Animal Mutualism section's own sentences on the Basidiomycota–scale-insect association, since only one source exercise (the Ambrosia-beetle Critical Thinking question) addresses fungus/insect mutualism — disclosed in the ledger.</small>
+<small>This section is adapted from [Biology 2e, Section 24.3: Ecology of Fungi](https://openstax.org/books/biology-2e/pages/24-3-ecology-of-fungi) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the lichen figure's alt calls panel (a)'s flecks orange-yellow and panel (b) hair-like, because the source alt's "brown flecks" and "moss-like" do not match the image (erratum 841); figures re-encoded as WebP, with `kind` confirmed against each image — six of the seven matched the manifest's guess, and Figure_24_03_06 was re-kinded from the manifest's guessed "photo" to "diagram," since it is a labeled line drawing of a lichen cross-section rather than a photograph; Figure_24_03_03's source alt (647 characters, over the 600-character limit) was shortened to name what the figure teaches, with its panel-by-panel walk-through moved into a longdesc, and Figure_24_03_06 was given a fresh alt plus a longdesc walking its five labeled layers top to bottom, since its source alt closely duplicated the caption's own listing of the five parts; inline cross-references to numbered figures ("Figure 24.19," etc.) changed to descriptive phrases ("see the photo below," "see the diagram below") since figures are not numbered here; the two `interactive`-class notes rendered as Link to Learning callouts with descriptive link text and the source's own openstax.org short URLs; the Evolution Connection note rendered as a callout with its bold name and italic title; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the three Review Questions and three Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each placed under the objective it tests, so the Review Questions run in the order 2, 3, 1 and the Critical Thinking Questions in the order 1, 3, 2 of the source's numbering; rubric checkpoints added to every self-check, including the body Visual Connection self-check, decomposing each model answer (the source solution) into check-off clauses with no new claims; four key-term recall items (ectomycorrhiza, arbuscular mycorrhiza, lichen, soredia) added from the glossary, plus one body cloze (endophytes, from the fungus–plant mutualism paragraph) in place of a mycorrhiza recall item that re-asked the source's mycorrhiza review question; two summary-derived text-in clozes added ("saprobes" under the first objective, "ants" under the third), since the module's own Review and Critical Thinking Questions leave those two objectives thin; and one multiple choice written locally under the third objective (scale insects, keyed second, not first; three options, the module's three fungus-partnered insects), built strictly from the Fungus/Animal Mutualism section's own sentences on the Basidiomycota–scale-insect association, since only one source exercise (the Ambrosia-beetle Critical Thinking question) addresses fungus/insect mutualism — disclosed in the ledger.</small>

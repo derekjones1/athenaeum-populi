@@ -44,7 +44,7 @@ The theory of natural selection stems from the observation that some individuals
 
 Another way a population's allele and genotype frequencies can change is **genetic drift**, which is simply the effect of chance. By chance, some individuals will have more offspring than others—not due to an advantage conferred by some genetically-encoded trait, but just because one male happened to be in the right place at the right time (when the receptive female walked by) or because the other one happened to be in the wrong place at the wrong time (when a fox was hunting).
 
-{{< mediafigure src="biology/Figure_19_02_02" alt="A three-panel flow chart titled 'Genetic Drift' showing three generations of a ten-rabbit population's coat-color alleles (B for brown, b for white) changing across generations, ending with the white-coat allele lost entirely by chance in the third generation." longdesc="Three stacked panels under the title 'Genetic Drift.' First generation: ten rabbits (p = .5, q = .5) — two homozygous dominant (BB) and six heterozygous (Bb) rabbits with brown coats, and two homozygous recessive (bb) rabbits with white coats; a red oval circles the five rabbits that reproduce (two BB, three Bb). A red arrow labeled '5 rabbits reproduce' leads to the second generation: ten rabbits (p = .7, q = .3) — five BB, four Bb, one bb; a red oval circles the two BB rabbits that reproduce next. A second red arrow labeled '2 rabbits reproduce' leads to the third generation: ten rabbits, all BB, with the white-coat b allele entirely lost." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_19_02_02" alt="A three-panel flow chart titled 'Genetic Drift' showing three generations of a ten-rabbit population's coat-color alleles (B for brown, b for white) changing across generations, ending with the white-coat allele lost entirely by chance in the third generation." longdesc="Three stacked panels under the title 'Genetic Drift.' First generation: ten rabbits (p = .5, q = .5) — two homozygous dominant (BB) and six heterozygous (Bb) rabbits with brown coats, and two homozygous recessive (bb) rabbits with white coats; a red oval circles the five rabbits that reproduce (two BB, three Bb). A red arrow labeled '5 rabbits reproduce' leads to the second generation: ten rabbits (p = .7, q = .3) — five BB, four Bb, one bb; a red oval circles the two BB rabbits that reproduce next. A second red arrow labeled '2 rabbits reproduce' leads to the third generation: ten rabbits, all BB (p = 1, q = 0), with the white-coat b allele entirely lost." kind="diagram" >}}
 Genetic drift in a population can lead to eliminating an allele from a population by chance. In this example, rabbits with the brown coat color allele (*B*) are dominant over rabbits with the white coat color allele (*b*). In the first generation, the two alleles occur with equal frequency in the population, resulting in p and q values of .5. Only half of the individuals reproduce, resulting in a second generation with p and q values of .7 and .3, respectively. Only two individuals in the second generation reproduce, and by chance these individuals are homozygous dominant for brown coat color. As a result, in the third generation the recessive *b* allele is lost.
 {{< /mediafigure >}}
 
@@ -157,7 +157,7 @@ mutation and genetic drift
 {{< multiplechoice
   question="What is a cline?"
   answer="gradual geographic variation across an ecological gradient"
-  hint="This term describes a species varying gradually along an environmental gradient, not a literal hillside."
+  hint="Reread the Environmental Variation paragraph on geographic separation between populations."
 >}}
 the slope of a mountain where a population lives
 the degree to which a mutation helps an individual survive
@@ -165,7 +165,7 @@ the number of individuals in the population
 gradual geographic variation across an ecological gradient
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain what a cline is and provide examples." hint="The section gives two example gradients — temperature toward the poles, and elevation up a mountain slope." >}}
+{{< selfcheck question="Explain what a cline is and provide examples." hint="Reread the Environmental Variation paragraph on geographic separation between populations; it names two kinds." >}}
 A cline is a type of geographic variation that is seen in populations of a given species that vary gradually across an ecological gradient. For example, warm-blooded animals tend to have larger bodies in the cooler climates closer to the earth's poles, allowing them to better conserve heat. This is considered a latitudinal cline. Flowering plants tend to bloom at different times depending on where they are along the slope of a mountain. This is known as an altitudinal cline.
 ===CHECKS===
 a cline is geographic variation that varies gradually across an ecological gradient
@@ -178,7 +178,7 @@ flowering plants bloom at different times along a mountain slope, an altitudinal
 {{< multiplechoice
   question="When closely related individuals mate with each other, or inbreed, the offspring are often not as fit as the offspring of two unrelated individuals. Why?"
   answer="Inbreeding can bring together rare, deleterious mutations that lead to harmful phenotypes."
-  hint="Think about what happens when both copies of a rare, harmful recessive allele end up in the same individual."
+  hint="Reread the Genetic Variability paragraph where the section defines this kind of mating and its risks."
 >}}
 Close relatives are genetically incompatible.
 The DNA of close relatives reacts negatively in the offspring.
@@ -213,7 +213,8 @@ the genes for bigger size will increase in frequency in the population
 {{< textin
   question="A dramatic natural event, such as an earthquake or hurricane, that kills a population at random and leaves only a small, unrepresentative fraction of the gene pool behind produces the ________."
   answer="bottleneck effect"
-  hint="Think of a bottle's narrow neck letting only a few marbles through at once."
+  accept="bottleneck"
+  hint="Reread the Genetic Drift paragraph just before the marble illustration."
 >}}
 
 {{< selfcheck question="Describe a situation in which a population would undergo the bottleneck effect and explain what impact that would have on the population's gene pool." hint="Pick a natural disaster and think about which individuals survive by chance rather than by fitness." >}}
@@ -229,7 +230,7 @@ if the survivors are not representative of the original population, the gene poo
 {{< multiplechoice
   question="When male lions reach sexual maturity, they leave their group in search of a new pride. This can alter the allele frequencies of the population through which of the following mechanisms?"
   answer="gene flow"
-  hint="The males are physically leaving one population and joining another."
+  hint="Match the lions' behavior against the section's descriptions of each evolutionary force, starting after the Genetic Drift subsection."
 >}}
 natural selection
 genetic drift
@@ -252,7 +253,7 @@ when individuals mate with those who are least fit in the population
   question="Changes in a population's gene pool caused by mate choice or other forces that make individuals more likely to reproduce with certain phenotypes than others are the result of ________."
   answer="nonrandom mating"
   accept="non-random mating"
-  hint="Assortative mating, where like tends to mate with like, is one form of this evolutionary force."
+  hint="Reread the first paragraph of the subsection that follows Mutation."
 >}}
 
 ---

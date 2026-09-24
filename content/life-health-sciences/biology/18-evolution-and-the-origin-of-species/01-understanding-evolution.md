@@ -83,7 +83,7 @@ The evidence for evolution is compelling and extensive. Looking at every level o
 
 Fossils provide solid evidence that organisms from the past are not the same as those today, and fossils show the gradual evolutionary changes over time. Scientists determine the age of fossils and categorize them from all over the world to determine when the organisms lived relative to each other. The resulting fossil record tells the story of the past and shows the evolution of form over millions of years. For example, scientists have recovered highly detailed records showing the evolution of humans and horses, shown in the photo and illustration below. The whale flipper shares a similar morphology to bird and mammal appendages, illustrated further below, indicating that these species share a common ancestor.
 
-{{< mediafigure src="biology/Figure_18_01_05-4164" kind="diagram" alt="Two panels side by side: (a) a museum display case of fossil hominid skull casts and one full skeleton arranged in rows; (b) an illustrated scene of five horse-lineage animals of graduated size and shape standing in a grassy landscape — small spotted and plain animals in front, a large modern-looking horse behind them, and a striped, zebra-like grazer at the right." longdesc="Panel (a): a glass display case labeled 'Fossil Hominids,' with rows of skull casts mounted on the back wall from bottom to top, oldest to newest, each with a small identifying label, and an articulated skeleton standing at the lower left. Panel (b): five illustrated horse-lineage animals in a grassy field under a hazy sky — a partly visible animal at the far left edge, a medium-sized plain animal behind it, a small striped foal in front, the largest and most horse-like animal at center with a dark mane, and a smaller striped, zebra-like animal at the right with its head down, grazing." >}}
+{{< mediafigure src="biology/Figure_18_01_05-4164" kind="diagram" alt="Two panels side by side: (a) a museum display case of fossil hominid skull casts and one full skeleton arranged in rows; (b) an illustrated scene of five horse-lineage animals of graduated size and shape standing in a grassy landscape — two spotted animals in front and a tall plain one behind them at the left, a large modern-looking horse at the center, and a striped, zebra-like grazer at the right." longdesc="Panel (a): a glass display case labeled 'Fossil Hominids,' with rows of skull casts mounted on the back wall from bottom to top, oldest to newest, each with a small identifying label, and an articulated skeleton standing at the lower left. Panel (b): five illustrated horse-lineage animals in a grassy field under a hazy sky — at the left, a tall, slender, plain horse-like animal standing behind a medium-sized animal with white spots; a small white-spotted foal in front of them; the largest and most horse-like animal at center with a dark mane, and a smaller striped, zebra-like animal at the right with its head down, grazing." >}}
 In this (a) display, fossil hominids are arranged from oldest (bottom) to newest (top). As hominids evolved, the skull's shape changed. An artist's rendition of (b) extinct species of the genus *Equus* reveals that these ancient species resembled the modern horse (*Equus ferus*) but varied in size.
 {{< /mediafigure >}}
 
@@ -91,7 +91,7 @@ In this (a) display, fossil hominids are arranged from oldest (bottom) to newest
 
 Another type of evidence for evolution is the presence of structures in organisms that share the same basic form. For example, the bones in human, dog, bird, and whale appendages all share the same overall construction, shown below, resulting from their origin in a common ancestor's appendages. Over time, evolution led to changes in the bones' shapes and sizes in different species, but they have maintained the same overall layout. Scientists call these synonymous parts **homologous structures**.
 
-{{< mediafigure src="biology/Figure_18_01_06-9f9f" kind="diagram" alt="Four color-coded skeletal forelimb diagrams side by side, labeled Human, Dog, Bird, and Whale, each built from the same set of bones — one long upper bone, a pair of lower bones, small wrist bones, and branching digit bones — but differing in the length, angle, and shape of those bones." longdesc="Each of the four limbs uses the same color key: a single tan bone at the top, a red-and-white pair of bones below it, yellow wrist bones, and brown digit bones. Human: long, straight bones ending in five slender, evenly spaced fingers. Dog: shorter, more angled bones ending in a compact paw with close-set digits. Bird: a long, thin lower pair of bones ending in slender, spread toes. Whale: short, broad upper and lower bones opening into a wide, fan-shaped flipper made of long, closely spaced digit bones." >}}
+{{< mediafigure src="biology/Figure_18_01_06-9f9f" kind="diagram" alt="Four color-coded skeletal forelimb diagrams side by side, labeled Human, Dog, Bird, and Whale, each built from the same set of bones — one long upper bone, a pair of lower bones, small wrist bones, and branching digit bones — but differing in the length, angle, and shape of those bones." longdesc="Each of the four limbs uses the same color key: a single tan bone at the top, a red-and-white pair of bones below it, yellow wrist bones, and brown digit bones. Human: long, straight bones ending in five slender, evenly spaced fingers. Dog: shorter, more angled bones ending in a compact paw with close-set digits. Bird: a long, thin lower pair of bones ending in long, narrow, partly fused digit bones held close together, with one short spur to the side. Whale: short, broad upper and lower bones opening into a wide, fan-shaped flipper made of five long digit bones spread apart." >}}
 The similar construction of these appendages indicates that these organisms share a common ancestor.
 {{< /mediafigure >}}
 
@@ -169,10 +169,17 @@ Evolution is the process of adaptation through mutation, natural selection, and 
 
 ### Describe how scientists developed the present-day theory of evolution
 
+{{< textin
+  question="The more prolific reproduction of individuals with favorable traits that survive environmental change because of those traits, leading to evolutionary change, is called ________."
+  answer="natural selection"
+  accept="survival of the fittest"
+  hint="Reread the section's first subsection."
+>}}
+
 {{< multiplechoice
   question="Which scientific concept did Charles Darwin and Alfred Wallace independently discover?"
   answer="natural selection"
-  hint="It is the mechanism, described as “survival of the fittest,” that Darwin outlined in *On the Origin of Species*."
+  hint="Reread the section's first subsection."
 >}}
 mutation
 natural selection
@@ -183,7 +190,7 @@ sexual reproduction
 {{< multiplechoice
   question="Which of the following situations will lead to natural selection?"
   answer="all of the above"
-  hint="Check whether every listed scenario involves individuals with a trait-based edge in survival or reproduction."
+  hint="Reread the section's first subsection."
 >}}
 The seeds of two plants land near each other and one grows larger than the other.
 Two types of fish eat the same kind of food, and one is better able to gather food than the other.
@@ -191,7 +198,7 @@ Male lions compete for the right to mate with females, with only one possible wi
 all of the above
 {{< /multiplechoice >}}
 
-{{< selfcheck question="If a person scatters a handful of garden pea plant seeds in one area, how would natural selection work in this situation?" hint="Think about which plants would out-compete their neighbors for the area's limited resources, and what happens to the traits that let them do so." >}}
+{{< selfcheck question="If a person scatters a handful of garden pea plant seeds in one area, how would natural selection work in this situation?" hint="Reread the section's first subsection." >}}
 The plants that can best use the resources of the area, including competing with other individuals for those resources, will produce more seeds themselves, and those traits that allowed them to better use the resources will increase in the population of the next generation.
 ===CHECKS===
 the plants that can best use the resources of the area will produce more seeds themselves
@@ -199,19 +206,26 @@ competing with other individuals for those resources
 those traits that allowed them to better use the resources will increase in the population of the next generation
 {{< /selfcheck >}}
 
+### Define adaptation
+
 {{< textin
-  question="The more prolific reproduction of individuals with favorable traits that survive environmental change because of those traits, leading to evolutionary change, is called ________."
-  answer="natural selection"
-  accept="survival of the fittest"
-  hint="Darwin and Wallace proposed it as the mechanism of adaptive evolution; Darwin's alternative phrase for it names 'the fittest.'"
+  question="Evolution is the process of adaptation through mutation, natural selection, and ________, which allows more desirable characteristics to pass to the next generation."
+  answer="genetic drift"
+  accept="drift"
+  hint="Reread the Summary's first sentence."
 >}}
 
-### Define adaptation
+{{< textin
+  question="Genetic differences among individuals in a population are called ________."
+  answer="variation"
+  accept="genetic variation"
+  hint="Reread the first paragraph of Processes and Patterns of Evolution."
+>}}
 
 {{< multiplechoice
   question="Which description is an example of a phenotype?"
   answer="both a and c"
-  hint="A phenotype is an observable characteristic, whether physical or behavioral — check which options describe something you could observe."
+  hint="Reread the second paragraph of Processes and Patterns of Evolution."
 >}}
 A certain duck has a blue beak.
 A mutation occurred to a flower.
@@ -219,25 +233,24 @@ Most cheetahs live solitary lives.
 both a and c
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A heritable trait or behavior that helps an organism's survival and reproduction in its present environment is called an ________."
-  answer="adaptation"
-  hint="A platypus's webbed feet and a cheetah's speed are both examples."
->}}
-
-{{< textin
-  question="Genetic differences among individuals in a population are called ________."
-  answer="variation"
-  accept="genetic variation"
-  hint="Natural selection can only act on this kind of difference when it has a genetic basis."
->}}
-
 ### Explain convergent and divergent evolution
+
+{{< textin
+  question="Evolution may be convergent, with similar traits evolving in multiple species, or divergent, with diverse traits evolving in multiple species that came from a ________."
+  answer="common ancestor"
+  hint="Reread the Summary's second-to-last sentence."
+>}}
+
+{{< textin
+  question="Flight has evolved in both bats and ________, and they both have structures we refer to as wings."
+  answer="insects"
+  hint="Reread the paragraph after the two flower photos."
+>}}
 
 {{< multiplechoice
   question="Which situation is most likely an example of convergent evolution?"
   answer="all of the above"
-  hint="Check whether every listed pair evolved its shared trait independently, without a recent common ancestor."
+  hint="Reread the last paragraphs of Processes and Patterns of Evolution, and the arctic fox paragraph of Anatomy and Embryology."
 >}}
 Squid and humans have eyes similar in structure.
 Worms and snakes both move without legs.
@@ -245,21 +258,21 @@ Some bats and birds have wings that allow them to fly.
 all of the above
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The process by which groups of organisms independently evolve to similar forms is called ________."
-  answer="convergent evolution"
-  hint="Bat and insect wings are an example — both fly, but their wing structures evolved from very different original structures."
->}}
-
-{{< textin
-  question="The process by which groups of organisms evolve in diverse directions from a common point is called ________."
-  answer="divergent evolution"
-  hint="The very different-looking reproductive organs of the dense blazing star and the purple coneflower are an example, since both flowers share a basic morphology inherited from a common ancestor."
->}}
-
 ### Describe homologous and vestigial structures
 
-{{< selfcheck question="Why do scientists consider vestigial structures evidence for evolution?" hint="Think about what it would mean for a structure with no current use to still be present in an organism." >}}
+{{< textin
+  question="Other examples of vestigial structures are wings on flightless birds, leaves on some cacti, and hind leg bones in ________."
+  answer="whales"
+  hint="Reread the second paragraph of Anatomy and Embryology."
+>}}
+
+{{< textin
+  question="We can observe evidence of evolution by means of DNA code and the ________, and also by the existence of homologous and vestigial structures."
+  answer="fossil record"
+  hint="Reread the Summary's last sentence."
+>}}
+
+{{< selfcheck question="Why do scientists consider vestigial structures evidence for evolution?" hint="Reread Anatomy and Embryology." >}}
 Vestigial structures are considered evidence for evolution because most structures do not exist in an organism without serving some function either presently or in the past. A vestigial structure indicates a past form or function that has since changed, but the structure remains present because it had a function in the ancestor.
 ===CHECKS===
 most structures do not exist in an organism without serving some function either presently or in the past
@@ -267,22 +280,9 @@ a vestigial structure indicates a past form or function that has since changed
 the structure remains present because it had a function in the ancestor
 {{< /selfcheck >}}
 
-{{< textin
-  question="Parallel structures in diverse organisms that share a common ancestor are called ________."
-  answer="homologous structures"
-  accept="homologous structure"
-  hint="The bones in a human arm, a dog leg, a bird wing, and a whale flipper are examples — the same layout, inherited from one ancestor."
->}}
-
-{{< textin
-  question="A physical structure with no apparent function, present because a distant ancestor's version of it did have one, is called a ________."
-  answer="vestigial structure"
-  hint="Wings on flightless birds and hind leg bones in whales are examples."
->}}
-
 ### Discuss misconceptions about the theory of evolution
 
-{{< selfcheck question="How does the scientific meaning of “theory” differ from the common vernacular meaning?" hint="Think about how much supporting evidence and testing separates the two meanings of the word." >}}
+{{< selfcheck question="How does the scientific meaning of “theory” differ from the common vernacular meaning?" hint="Reread the first misconception the section discusses." >}}
 In science, a theory is a thoroughly tested and verified set of explanations for a body of observations of nature. It is the strongest form of knowledge in science. In contrast, a theory in common vernacular can mean a guess or speculation about something, meaning that the knowledge implied by the theory is very weak.
 ===CHECKS===
 a theory is a thoroughly tested and verified set of explanations for a body of observations of nature
@@ -291,7 +291,7 @@ a theory in common vernacular can mean a guess or speculation
 the knowledge implied by the theory is very weak
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain why the statement that a monkey is more evolved than a mouse is incorrect." hint="Think about what “more evolved” would have to imply about evolution having a goal or a direction." >}}
+{{< selfcheck question="Explain why the statement that a monkey is more evolved than a mouse is incorrect." hint="Reread the last misconception the section discusses." >}}
 The statement implies that there is a goal to evolution and that the monkey represents greater progress to that goal than the mouse. Both species are likely to be well adapted to their particular environments, which is the outcome of natural selection.
 ===CHECKS===
 the statement implies that there is a goal to evolution
@@ -303,7 +303,7 @@ the outcome of natural selection
 {{< multiplechoice
   question="According to this section, a “theory” in everyday, non-scientific usage is closest to which other scientific concept?"
   answer="a hypothesis"
-  hint="The section names the scientific concept that this vernacular meaning is “more akin to” directly."
+  hint="Reread the first misconception the section discusses."
 >}}
 a law
 a fact
@@ -313,4 +313,4 @@ an experiment
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 18.1: Understanding Evolution](https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_18_01_01-beaks, Figure_18_01_05-4164, and Figure_18_01_06-9f9f re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (the first is an engraved illustration, not a photograph; the second is a photo-and-illustration panel whose drawn horse-lineage half carries the teaching point about size variation; the third is a drawn, color-coded forelimb-bone comparison); a longdesc added for Figure_18_01_01-beaks (its printed species numbers and names are not carried by the one-line caption), Figure_18_01_05-4164 (the arrangement of the museum display and the five horse-lineage animals is not carried by the caption), and Figure_18_01_06-9f9f (the bone color-coding across the four limbs is not carried by the caption); the bare or vague source alts for Figure_18_01_02ab, Figure_18_01_03-0b39, Figure_18_01_04ab-e353, and Figure_18_01_07ab rewritten from the images; the Field Biologist note rendered as a Career Connection callout with its embedded figure kept inside it; the two interactive notes rendered as Link to Learning callouts with descriptive link text ("a video exploring the bones in the human body," "a site addressing common misconceptions") in place of the source's bare "video" and "site"; the cross-reference to the not-yet-authored section Determining Evolutionary Relationships kept as plain prose with no link, and its accompanying figure reference (to a figure in that other chapter) dropped since the figure is not on this page; two forward figure references reworded as "shown below"/"illustrated further below" since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); seven key-term recall items added from the glossary (natural selection, adaptation, variation, convergent evolution, divergent evolution, homologous structures, vestigial structure); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one multiple choice written locally under "Discuss misconceptions about the theory of evolution," keyed to its third option, since no source exercise or glossary term in this section tests that objective as an auto-graded item — it is built strictly from the section's own sentence naming "hypothesis" as the scientific concept closest to the vernacular meaning of "theory." One date is corrected with a visible Source note: the Grants' finch study began in 1973, not 1976 (erratum 409).</small>
+<small>This section is adapted from [Biology 2e, Section 18.1: Understanding Evolution](https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_18_01_01-beaks, Figure_18_01_05-4164, and Figure_18_01_06-9f9f re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (the first is an engraved illustration, not a photograph; the second is a photo-and-illustration panel whose drawn horse-lineage half carries the teaching point about size variation; the third is a drawn, color-coded forelimb-bone comparison); a longdesc added for Figure_18_01_01-beaks (its printed species numbers and names are not carried by the one-line caption), Figure_18_01_05-4164 (the arrangement of the museum display and the five horse-lineage animals is not carried by the caption), and Figure_18_01_06-9f9f (the bone color-coding across the four limbs is not carried by the caption); the bare or vague source alts for Figure_18_01_02ab, Figure_18_01_03-0b39, Figure_18_01_04ab-e353, and Figure_18_01_07ab rewritten from the images; the Field Biologist note rendered as a Career Connection callout with its embedded figure kept inside it; the two interactive notes rendered as Link to Learning callouts with descriptive link text ("a video exploring the bones in the human body," "a site addressing common misconceptions") in place of the source's bare "video" and "site"; the cross-reference to the not-yet-authored section Determining Evolutionary Relationships kept as plain prose with no link, and its accompanying figure reference (to a figure in that other chapter) dropped since the figure is not on this page; two forward figure references reworded as "shown below"/"illustrated further below" since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); two key-term recall items added from the glossary (natural selection, variation), and five cloze recall items in place of glossary items for adaptation, convergent evolution, divergent evolution, homologous structures, and vestigial structure, which their own objective headings printed — three from the Section Summary (genetic drift, common ancestor, fossil record) and two written locally from the section's own sentences (the insects in which flight evolved alongside bats; the whales whose hind leg bones are vestigial) — each recall item placed first in its objective group; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one multiple choice written locally under "Discuss misconceptions about the theory of evolution," keyed to its third option, since no source exercise or glossary term in this section tests that objective as an auto-graded item — it is built strictly from the section's own sentence naming "hypothesis" as the scientific concept closest to the vernacular meaning of "theory." One date is corrected with a visible Source note: the Grants' finch study began in 1973, not 1976 (erratum 409).</small>

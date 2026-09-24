@@ -37,7 +37,7 @@ One form of the disease is usually caused by mutations in one of three known gen
 
 Unfortunately, there is no cure for Alzheimer's disease. Current treatments focus on managing the symptoms of the disease. Because decrease in the activity of cholinergic neurons (neurons that use the neurotransmitter acetylcholine) is common in Alzheimer's disease, several drugs used to treat the disease work by increasing acetylcholine neurotransmission, often by inhibiting the enzyme that breaks down acetylcholine in the synaptic cleft. Other clinical interventions focus on behavioral therapies like psychotherapy, sensory therapy, and cognitive exercises. Since Alzheimer's disease appears to hijack the normal aging process, research into prevention is prevalent. Smoking, obesity, and cardiovascular problems may be risk factors for the disease, so treatments for those may also help to prevent Alzheimer's disease. Some studies have shown that people who remain intellectually active by playing games, reading, playing musical instruments, and being socially active in later life have a reduced risk of developing the disease.
 
-{{< mediafigure src="biology/Figure_35_05_01" kind="diagram" eager="true" alt="Two side-by-side labeled coronal cross-sections of a brain: a normal brain at left, its cerebral cortex, hippocampus, and entorhinal cortex labeled, and a visibly smaller, more deeply grooved brain at right with labels marking extreme shrinkage of the cerebral cortex and hippocampus and severely enlarged central ventricles." longdesc="The left panel shows a normal brain in coronal cross-section: two convoluted hemispheres with a thin, deeply folded outer layer. A 'Cerebral cortex' label points with two lines to that folded outer layer near the top of the left hemisphere. A 'Hippocampus' label points to a small curled structure near the base of the left hemisphere. An 'Entorhinal cortex' label points to the tissue just to the right of the hippocampus. The right panel shows the brain of an Alzheimer's patient in the same cross-sectional view: visibly smaller, with wide, dark open cavities at the center where the normal brain has only a thin slit. An 'Extreme shrinkage of cerebral cortex' label points to the thinned outer layer of the left hemisphere. A 'Severely enlarged ventricles' label points with two lines to the two large central cavities. An 'Extreme shrinkage of hippocampus' label points to the shrunken curled structure at the lower left." >}}
+{{< mediafigure src="biology/Figure_35_05_01" kind="diagram" eager="true" alt="Two side-by-side labeled coronal cross-sections of a brain: a normal brain at left, its cerebral cortex, hippocampus, and entorhinal cortex labeled, and a visibly smaller, more deeply grooved brain at right with labels marking extreme shrinkage of the cerebral cortex and hippocampus and severely enlarged ventricles." longdesc="The left panel shows a normal brain in coronal cross-section: two convoluted hemispheres with a thin, deeply folded outer layer. A 'Cerebral cortex' label points with two lines to that folded outer layer near the top of the left hemisphere. A 'Hippocampus' label points to a small curled structure near the base of the left hemisphere. An 'Entorhinal cortex' label points to the tissue just to the right of the hippocampus. The right panel shows the brain of an Alzheimer's patient in the same cross-sectional view: visibly smaller, with wide, dark open cavities at the center where the normal brain has only a thin slit, and large open cavities at the lower left and lower right. An 'Extreme shrinkage of cerebral cortex' label points with two lines to the thinned outer layer of the left hemisphere. A 'Severely enlarged ventricles' label points with two lines, one to the wide central cavity and one to the large cavity at the lower right. An 'Extreme shrinkage of hippocampus' label points to the shrunken curled structure beside the cavity at the lower left." >}}
 Compared to a normal brain (left), the brain from a patient with Alzheimer's disease (right) shows a dramatic neurodegeneration, particularly within the ventricles and hippocampus. (credit: modification of work by "Garrando"/Wikimedia Commons based on original images by ADEAR: "Alzheimer's Disease Education and Referral Center, a service of the National Institute on Aging")
 {{< /mediafigure >}}
 
@@ -150,7 +150,7 @@ norepinephrine
 {{< multiplechoice
   question="________ medications are often used to treat patients with ADHD."
   answer="Stimulant"
-  hint="These medications paradoxically cause a calming effect in patients with this disorder, even though they increase arousal in most other people."
+  hint="See the last sentence of the ADHD discussion, on treatment."
 >}}
 Tranquilizer
 Antibiotic
@@ -183,7 +183,7 @@ all of the above
 {{< multiplechoice
   question="Why do many patients with neurodevelopmental disorders develop secondary disorders?"
   answer="Dysfunction in the brain can affect many aspects of the body."
-  hint="Rule out the options that blame one specific treatment or a single secondary disorder, and think about how broadly a developmental problem in the brain can reach."
+  hint="Reread the ADHD discussion of comorbidity and the bar chart of secondary disorders that follows it."
 >}}
 Their genes predispose them to schizophrenia.
 Stimulant medications cause new behavioral disorders.
@@ -232,14 +232,14 @@ SSRI medications inhibit the reuptake of serotonin into the presynaptic neuron
   question="The neurodevelopmental disorder characterized by impaired social interaction and communication abilities is called ________."
   answer="autism spectrum disorder"
   accept="ASD|autism"
-  hint="This spectrum disorder is four times more prevalent in males than females, and up to 30 percent of patients with it also develop a seizure disorder."
+  hint="This disorder is four times more prevalent in males than females, and up to 30 percent of patients with it also develop a seizure disorder."
 >}}
 
 {{< textin
   question="The neurodegenerative disorder characterized by problems with memory and thinking is called ________."
   answer="Alzheimer's disease"
-  accept="Alzheimer's"
-  hint="First described by a German psychiatrist in 1911, this disease is marked by amyloid plaques and neurofibrillary tangles and is the most common cause of dementia in the elderly."
+  accept="Alzheimer's|Alzheimer disease"
+  hint="This disease is marked by amyloid plaques and neurofibrillary tangles; see the first disorder the Neurodegenerative Disorders discussion describes."
 >}}
 
 ---

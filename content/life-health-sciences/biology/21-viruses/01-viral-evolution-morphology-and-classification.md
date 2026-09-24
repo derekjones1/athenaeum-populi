@@ -48,7 +48,7 @@ Viruses are **noncellular**, meaning they are biological entities that do not ha
 
 Viruses come in many shapes and sizes, but these features are consistent for each viral family. As we have seen, all virions have a nucleic acid genome covered by a protective capsid. The proteins of the capsid are encoded in the viral genome, and are called ***capsomeres***. Some viral capsids are simple helices or polyhedral "spheres," whereas others are quite complex in structure.
 
-{{< mediafigure src="biology/Figure_B21_01_02" alt="Six panels in two rows. Top row: a micrograph of tobacco mosaic virus rods, a colored ribbon-structure rendering of human rhinovirus HRV14, and a micrograph of oval variola virus particles. Bottom row: matching schematic drawings labeled Helical (a red coil wound around a rod of protein subunits), Icosahedral (a many-sided polygon shell around coiled genetic material), and Complex (an oval shell of glycoprotein-studded envelope, protein layer, and coiled genetic material)." longdesc="Two rows of three panels, columns labeled (a), (b), (c) beneath the bottom row. Top row shows a real image of each virus: (a) a yellow-toned micrograph of tobacco mosaic virus as several long, thin rods; (b) a blue-and-red ribbon-diagram rendering of human rhinovirus HRV14, showing its protein subunits arranged with five-fold symmetry around a dark center; (c) a grey micrograph of two oval variola virus particles. Bottom row shows the matching schematic drawing for each: (a) 'Helical' — a red spiral coil wound around a cylinder built from stacked yellow protein subunits; (b) 'Icosahedral' — a many-faced polygon shell of red and blue triangular facets, with a tangled blue line representing genetic material inside; (c) 'Complex' — an oval shell with an outer ring of glycoprotein spikes, a middle protein layer, and a coiled blue-green line of genetic material at the center." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_B21_01_02" alt="Six panels in two rows. Top row: a micrograph of tobacco mosaic virus rods, a colored ribbon-structure rendering of human rhinovirus HRV14, and a micrograph of oval variola virus particles. Bottom row: matching schematic drawings labeled Helical (a red coil inside a hollow tube of protein subunits), Icosahedral (a many-sided polygon shell around coiled genetic material), and Complex (an oval shell of glycoprotein-studded envelope, protein layer, and coiled genetic material)." longdesc="Two rows of three panels, columns labeled (a), (b), (c) beneath the bottom row. Top row shows a real image of each virus: (a) a yellow-toned micrograph of tobacco mosaic virus as several long, thin rods; (b) a blue-and-red ribbon-diagram rendering of human rhinovirus HRV14, showing its protein subunits arranged with five-fold symmetry around a dark center; (c) a grey micrograph of two oval variola virus particles. Bottom row shows the matching schematic drawing for each: (a) 'Helical' — a hollow cylinder built from stacked yellow protein subunits, with a red spiral coil running inside it and protruding from its upper end; (b) 'Icosahedral' — a many-faced pentagonal shell of red and blue facets, with a tangled blue line representing genetic material inside; (c) 'Complex' — an oval shell with an outer ring of glycoprotein spikes, a middle protein layer, and at the center an elongated, bead-walled core holding a coiled blue line of genetic material." kind="diagram" >}}
 Viral capsids can be (a) helical, (b) polyhedral, or (c) have a complex shape. (credit a "micrograph": modification of work by USDA ARS; credit b "micrograph": modification of work by U.S. Department of Energy)
 {{< /mediafigure >}}
 
@@ -56,7 +56,7 @@ In general, the capsids of viruses are classified into four groups: helical, ico
 
 Many viruses use some sort of *glycoprotein* to attach to their host cells via molecules on the cell called ***viral receptors***. For these viruses, attachment is required for later penetration of the cell membrane; only after penetration takes place can the virus complete its replication inside the cell. The receptors that viruses use are molecules that are normally found on cell surfaces and have their own physiological functions. It appears that viruses have simply evolved to make use of these molecules for their own replication. For example, HIV uses the CD4 molecule on T lymphocytes as one of its receptors. CD4 is a type of molecule called a *cell adhesion molecule*, which functions to keep different types of immune cells in close proximity to each other during the generation of a T lymphocyte immune response.
 
-{{< mediafigure src="biology/Figure_B21_03_03a" alt="A diagram of an HIV virus, a circle studded with green Y-shaped gp120 glycoprotein spikes and enclosing coiled RNA, connected by one gp120 spike to a chain of yellow CD4 receptor molecules embedded in the membrane of a host immune cell, which also shows a blue coiled co-receptor protein; a caption box reads 'HIV fuses to the host cell surface.'" longdesc="At the top, a circular HIV particle labeled 'HIV' is studded with green Y-shaped spikes labeled 'gp120' and encloses a red coiled structure representing its genome. A light-blue caption box beside it reads 'HIV fuses to the host cell surface.' One gp120 spike reaches down to a chain of four yellow bead-shaped molecules labeled 'CD4,' embedded in the curving blue membrane of the 'Host immune cell.' Just to the left of that CD4 chain, a dark-blue coiled transmembrane protein is labeled 'Co-receptor (CCR5 or CXCR4).' A two more CD4-and-co-receptor pairs sit along the membrane, one at the lower left and one partly cropped at the upper right, not connected to the virus." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_B21_03_03a" alt="A diagram of an HIV virus, a circle studded with green Y-shaped gp120 glycoprotein spikes and enclosing coiled RNA, connected by one gp120 spike to a chain of yellow CD4 receptor molecules embedded in the membrane of a host immune cell, which also shows a blue coiled co-receptor protein; a caption box reads 'HIV fuses to the host cell surface.'" longdesc="At the top, a circular HIV particle labeled 'HIV' is studded with green Y-shaped spikes labeled 'gp120' and encloses a cone-shaped capsid holding red coiled strands that represent its genome. A light-blue caption box beside it reads 'HIV fuses to the host cell surface.' One gp120 spike reaches down to a chain of four yellow bead-shaped molecules labeled 'CD4,' embedded in the curving blue membrane of the 'Host immune cell.' Just to the left of that CD4 chain, a dark-blue coiled transmembrane protein is labeled 'Co-receptor (CCR5 or CXCR4).' Two more CD4-and-co-receptor pairs sit along the membrane, one at the lower left and one partly cropped at the upper right, not connected to the virus." kind="diagram" >}}
 A virus and its host receptor protein. The HIV virus binds the CD4 receptor on the surface of human cells. CD4 receptors help white blood cells to communicate with other cells of the immune system when producing an immune response. (credit: modification of work by NIAID, NIH)
 {{< /mediafigure >}}
 
@@ -68,14 +68,14 @@ Enveloped virions, such as the influenza virus, consist of nucleic acid (RNA in 
 
 Overall, the shape of the virion and the presence or absence of an envelope tell us little about what disease the virus may cause or what species it might infect, but they are still useful means to begin viral classification.
 
-{{< mediafigure src="biology/Figure_B21_02_01" alt="Three labeled diagrams side by side. (a) Bacteriophage T4: a hexagonal head containing coiled DNA sits above a tube-shaped tail with bent, spider-leg-like tail fibers at its base. (b) Adenovirus: capsomere protein subunits form a round capsid around coiled DNA, with glycoprotein spikes projecting outward. (c) Influenza virus: a heart-shaped capsid holding coiled nucleoprotein is surrounded by a spherical envelope studded with two kinds of glycoprotein spike, hemagglutinin and neuraminidase." longdesc="Three side-by-side labeled diagrams under a shared header. Left panel, 'Bacteriophage T4': a hexagonal head (labeled Head), outlined in blue and purple facets, encloses a tangled blue line labeled DNA; below the head a cylindrical structure (labeled Tail) leads to a base ringed by six bent, spider-leg-like tail fibers (labeled Tail fibers). Middle panel, 'Adenovirus': a round capsid made of many small rounded subunits (labeled Capsomere, with a bracket also labeling the whole cluster Capsid) encloses a tangled blue line labeled DNA; several thin spikes (labeled Glycoproteins) project outward from the capsid surface. Right panel, 'Influenza Virus': a heart-shaped orange capsid (labeled Capsid) encloses a tangled dotted line (labeled Nucleoprotein); a purple spherical envelope (labeled Envelope) surrounds the capsid, and its outer surface is studded with two kinds of spike, labeled Hemagglutinin and Neuraminidase." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_B21_02_01" alt="Three labeled diagrams, a large one at the left and two stacked at the right. (a) Bacteriophage T4: a hexagonal head containing coiled DNA sits above a tube-shaped tail with bent, spider-leg-like tail fibers at its base. (b) Adenovirus: capsomere protein subunits form a round capsid around coiled DNA, with glycoprotein spikes projecting outward. (c) Influenza virus: a heart-shaped capsid holding coiled nucleoprotein is surrounded by a spherical envelope studded with two kinds of glycoprotein spike, hemagglutinin and neuraminidase." longdesc="Three labeled diagrams, each titled in its own panel: a large panel at the left and two panels stacked at the right. Left panel, 'Bacteriophage T4': an enlarged, cut-open view of the head (labeled Head), with blue and purple facets, shows a tangled blue line labeled DNA inside; beside it the whole phage is drawn smaller, its head sitting on a collar above a cylindrical structure (labeled Tail) leads to a base ringed by six bent, spider-leg-like tail fibers (labeled Tail fibers). Upper-right panel, 'Adenovirus': a round capsid made of many small rounded subunits (labeled Capsomere, with a bracket also labeling the whole cluster Capsid) encloses a tangled blue line labeled DNA; several thin spikes (labeled Glycoproteins) project outward from the capsid surface. Lower-right panel, 'Influenza Virus': a heart-shaped orange capsid (labeled Capsid) encloses a tangled dotted line (labeled Nucleoprotein); a purple spherical envelope (labeled Envelope) surrounds the capsid, and its outer surface is studded with two kinds of spike, labeled Hemagglutinin and Neuraminidase." kind="diagram" >}}
 Complex Viruses. Viruses can be either complex or relatively simple in shape. This figure shows three relatively complex virions: the bacteriophage T4, with its DNA-containing head group and tail fibers that attach to host cells; adenovirus, which uses spikes from its capsid to bind to host cells; and the influenza virus, which uses glycoproteins embedded in its envelope to bind to host cells. The influenza virus also has matrix proteins, internal to the envelope, which help stabilize the virion's shape. (credit "bacteriophage, adenovirus": modification of work by NCBI, NIH; credit "influenza virus": modification of work by Dan Higgins, Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements about virus structure is true?"
   answer="Glycoproteins help the virus attach to the host cell."
-  hint="Re-read what the section says the glycoproteins on an envelope or capsid do when a virus meets a host cell."
+  hint="Check each statement against the Morphology paragraphs above and the labels of the figure above this question."
 >}}
 All viruses are encased in a viral membrane.
 The capsomere is made up of small protein subunits called capsids.
@@ -112,7 +112,7 @@ Viruses contain only a few elements by which they can be classified: the viral g
 | Non-segmented: genome consists of a single segment of genetic material | Parainfluenza viruses |
 | Segmented: genome is divided into multiple segments | Influenza viruses |
 
-{{< mediafigure src="biology/Figure_21_01_04ab" alt="Four panels labeled (a) Rabies virus and (b) Variola virus. Top-left: a labeled diagram of a bullet-shaped rabies virion — coiled ssRNA inside a capsid, surrounded by a matrix-protein-lined envelope studded with glycoprotein spikes. Bottom-left: an electron micrograph of a cluster of bullet-shaped rabies virus particles. Top-right: an electron micrograph of three oval variola virus particles with capsid and matrix-protein/envelope layers labeled. Bottom-right: a photo of irregular, bumpy pox lesions covering a person's arms and legs." longdesc="Two columns, (a) Rabies virus on the left and (b) Variola virus on the right, each with a top panel and a bottom panel. Top-left is a colored schematic of a single bullet-shaped rabies virion: an outer teal-green fringe labeled Glycoprotein surrounds a grey shell labeled Matrix proteins, which encases a pale interior packed with yellow lipid-bilayer beads and a red coiled strand labeled ssRNA at the core, with a line pointing to a grey inner cylinder labeled Capsid, and the whole outer fringe-and-shell layer also labeled Viral envelope. Bottom-left is a black-and-white electron micrograph of roughly a dozen bullet-shaped rabies virus particles clustered together, with a 50 nm scale bar. Top-right is a black-and-white electron micrograph of three dark oval variola virus particles (and the edge of a fourth), each with an inner dark core and outer shell, with lines labeled 'Matrix proteins and viral envelope,' 'Capsid,' and 'dsDNA' pointing to the corresponding layers, with a 50 nm scale bar. Bottom-right is a color photo of a person's forearms and lower legs covered in raised, irregular, bumpy pox lesions." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_21_01_04ab" alt="Four panels labeled (a) Rabies virus and (b) Variola virus. Top-left: a labeled diagram of a bullet-shaped rabies virion — coiled ssRNA inside a capsid, surrounded by a matrix-protein-lined envelope studded with glycoprotein spikes. Bottom-left: an electron micrograph of a cluster of bullet-shaped rabies virus particles. Top-right: an electron micrograph of three oval variola virus particles with capsid and matrix-protein/envelope layers labeled. Bottom-right: a photo of irregular, bumpy pox lesions covering a person's arms and legs." longdesc="Two columns, (a) Rabies virus on the left and (b) Variola virus on the right, each with a top panel and a bottom panel. Top-left is a colored schematic of a single bullet-shaped rabies virion, flat at its left end and rounded at its right, fringed all around with teal-green spikes labeled Glycoprotein. Beneath the spikes a pale teal layer is labeled Viral envelope; just inside it at the flat end, a thin dark layer is labeled Matrix proteins; a grey band inside that is labeled Capsid; and the interior is packed with rows of pale yellow beads wound around a dark coiled strand labeled ssRNA, with scattered orange and grey dots. Bottom-left is a black-and-white electron micrograph of roughly a dozen bullet-shaped rabies virus particles clustered together, with a 50 nm scale bar. Top-right is a black-and-white electron micrograph of four dark oval variola virus particles, one of them small, each with an inner dark core and outer shell, with lines labeled 'Matrix proteins and viral envelope,' 'Capsid,' and 'dsDNA' pointing to the corresponding layers, with a 50 nm scale bar. Bottom-right is a color photo of a person's forearms and lower legs covered in raised, irregular, bumpy pox lesions." kind="diagram" >}}
 Viruses can be classified according to their core genetic material and capsid design. (a) Rabies virus has a single-stranded RNA (ssRNA) core and an enveloped helical capsid, whereas (b) variola virus, the causative agent of smallpox, has a double-stranded DNA (dsDNA) core and a complex capsid. Rabies transmission occurs when saliva from an infected mammal enters a wound. The virus travels through neurons in the peripheral nervous system to the central nervous system, where it impairs brain function, and then travels to other tissues. The virus can infect any mammal, and most die within weeks of infection. Smallpox is a human virus transmitted by inhalation of the variola virus, localized in the skin, mouth, and throat, which causes a characteristic rash. Before its eradication in 1979, infection resulted in a 30 to 35 percent mortality rate. (credit "rabies diagram": modification of work by CDC; "rabies micrograph": modification of work by Dr. Fred Murphy, CDC; credit "small pox micrograph": modification of work by Dr. Fred Murphy, Sylvia Whitfield, CDC; credit "smallpox photo": modification of work by CDC; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
@@ -220,7 +220,7 @@ these agents were later shown to be unrelated to bacteria and were classified as
 {{< multiplechoice
   question="The observation that the bacteria genus *Chlamydia* contains species that can only survive as intracellular parasites supports which viral origin hypothesis?"
   answer="Regressive"
-  hint="A parasite that can only survive inside a host cell fits the hypothesis that viruses evolved FROM free-living or intracellular organisms, not the hypothesis that they escaped from one."
+  hint="Reread the Evolution of Viruses paragraph that sets out the three hypotheses, and find the one whose evidence mentions intracellular parasites."
 >}}
 Progressive
 Regressive
@@ -238,7 +238,8 @@ escaped from a host cell with the ability to enter another
 {{< textin
   question="The hypothesis suggesting that viruses may have been the earliest self-replicating entities, predating cells, is called the ________ hypothesis."
   answer="virus first"
-  hint="This hypothesis puts the virus before the cell, rather than the cell before the virus."
+  accept="virus first hypothesis"
+  hint="Reread the third of the three evolutionary hypotheses described in the Evolution of Viruses subsection."
 >}}
 
 ### Describe the general structure of a virus
@@ -246,7 +247,7 @@ escaped from a host cell with the ability to enter another
 {{< multiplechoice
   question="Which statement is true?"
   answer="Viruses are acellular."
-  hint="A virion lacks organelles, ribosomes, and a plasma membrane — the components of a true cell."
+  hint="Check each statement against the Summary and the Viral Morphology subsection's opening paragraph."
 >}}
 A virion contains DNA and RNA.
 Viruses are acellular.
@@ -257,7 +258,7 @@ Most viruses are easily visualized with a light microscope.
 {{< multiplechoice
   question="The viral ________ play(s) a role in attaching a virion to the host cell."
   answer="both b and c"
-  hint="Re-read what the capsid and the envelope do for a virus that must attach before it can penetrate the cell membrane."
+  hint="Reread the Morphology subsection's paragraphs on the structures that surround a virus's genome."
 >}}
 core
 capsid
@@ -265,7 +266,7 @@ envelope
 both b and c
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Varicella-zoster virus is a double-stranded DNA virus that causes chickenpox. How does its genome structure provide an evolutionary advantage over a single-stranded DNA virus?" hint="Think about what complementary base pairing does for the stability of a double helix." >}}
+{{< selfcheck question="Varicella-zoster virus is a double-stranded DNA virus that causes chickenpox. How does its genome structure provide an evolutionary advantage over a single-stranded DNA virus?" hint="Compare the structure of a single DNA strand with that of a double-stranded genome, as described in the Types of Nucleic Acid subsection." >}}
 Both viruses are made of DNA, but single-stranded DNA viruses lack the ability to create the double helix. Thus, double-stranded DNA viruses have a more stable genome due to the complementary base pairing, increasing the lifespan of the virus's genome.
 ===CHECKS===
 single-stranded DNA viruses lack the ability to create the double helix
@@ -278,7 +279,7 @@ increasing the lifespan of the virus's genome
 {{< multiplechoice
   question="Viruses_______."
   answer="vary in shape"
-  hint="The section opens by comparing helical, icosahedral, enveloped, and head-and-tail capsids."
+  hint="Reread the Morphology subsection's paragraph on how capsids are classified."
 >}}
 all have a round shape
 cannot have a long shape
@@ -286,23 +287,23 @@ do not maintain any shape
 vary in shape
 {{< /multiplechoice >}}
 
+{{< textin
+  question="A capsid that is long and cylindrical, as in many plant viruses, is described as ________."
+  answer="helical"
+  accept="helical capsid"
+  hint="This shape describes a hollow tube, not a roughly spherical shell."
+>}}
+
 {{< multiplechoice
   question="According to the capsid-classification table, which capsid design describes tobacco mosaic virus?"
   answer="Naked helical"
-  hint="TMV's capsid is a hollow tube with no surrounding envelope."
+  hint="Find tobacco mosaic virus among the table's examples and read its row."
 >}}
 Enveloped helical
 Naked icosahedral
 Naked helical
 Enveloped icosahedral
 {{< /multiplechoice >}}
-
-{{< textin
-  question="A capsid that is long and cylindrical, such as that of tobacco mosaic virus, is described as ________."
-  answer="helical"
-  accept="helical capsid"
-  hint="This shape describes a hollow tube, not a roughly spherical shell."
->}}
 
 ### Understand past and emerging classification systems for viruses
 
@@ -350,7 +351,7 @@ genome structure classification does not distinguish between the two viruses
 {{< textin
   question="A virus whose genome is double-stranded DNA (dsDNA) belongs to Baltimore ________."
   answer="Group I"
-  accept="group 1"
+  accept="group 1|group one"
   hint="Its mRNA is produced by transcription the same way cellular DNA is transcribed, using the host cell's own enzymes."
 >}}
 

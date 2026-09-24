@@ -139,10 +139,16 @@ Two rules in probability can be used to find the expected proportions of offspri
 
 ### Describe the scientific reasons for the success of Mendel’s experimental work
 
+{{< textin
+  question="An inheritance pattern in which traits are distinct and are transmitted independently of one another is called ________."
+  answer="discontinuous variation"
+  hint="Reread the section’s fourth introductory paragraph."
+>}}
+
 {{< multiplechoice
   question="Mendel performed hybridizations by transferring pollen from the ________ of the male plant to the female ova."
   answer="anther"
-  hint="Pollen carries the male gametes; think about which flower part produces pollen, as opposed to the sticky organ that receives it."
+  hint="Reread the first paragraph of Mendelian Crosses."
 >}}
 anther
 pistil
@@ -153,7 +159,7 @@ seed
 {{< multiplechoice
   question="Which is one of the seven characteristics that Mendel observed in pea plants?"
   answer="seed texture"
-  hint="Mendel’s seven characteristics were all plant traits with two contrasting forms; flower size, leaf shape, and stem color were not among them."
+  hint="Reread the first paragraph of Garden Pea Characteristics Revealed the Basics of Heredity."
 >}}
 flower size
 seed texture
@@ -161,7 +167,7 @@ leaf shape
 stem color
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe one of the reasons why the garden pea was an excellent choice of model system for studying inheritance." hint="Think about what let Mendel control pollination precisely and avoid unexpected, accidental fertilizations in his offspring." >}}
+{{< selfcheck question="Describe one of the reasons why the garden pea was an excellent choice of model system for studying inheritance." hint="Reread Mendel’s Model System." >}}
 The garden pea is sessile and has flowers that close tightly during self-pollination. These features help to prevent accidental or unintentional fertilizations that could have diminished the accuracy of Mendel’s data.
 ===CHECKS===
 the garden pea is sessile
@@ -169,19 +175,12 @@ flowers that close tightly during self-pollination
 prevent accidental or unintentional fertilizations
 {{< /selfcheck >}}
 
-{{< textin
-  question="The process of mating two individuals that differ, with the goal of achieving a certain characteristic in their offspring, is called ________."
-  answer="hybridization"
-  accept="hybridisation"
-  hint="Mendel performed this by manually transferring pollen between two true-breeding pea plants that differed in a trait."
->}}
-
 ### Describe the expected outcomes of monohybrid crosses involving dominant and recessive alleles
 
 {{< multiplechoice
   question="Imagine you are performing a cross involving seed color in garden pea plants. What F₁ offspring would you expect if you cross true-breeding parents with green seeds and yellow seeds? Yellow seed color is dominant over green."
   answer="100 percent yellow seeds"
-  hint="Cross two true-breeding (homozygous) parents differing in one dominant/recessive trait: every F₁ offspring inherits one dominant and one recessive allele, so all offspring show the dominant phenotype, not a blend or split."
+  hint="Reread the flower-color crosses in Garden Pea Characteristics Revealed the Basics of Heredity."
 >}}
 100 percent yellow-green seeds
 100 percent yellow seeds
@@ -192,7 +191,7 @@ prevent accidental or unintentional fertilizations
 {{< multiplechoice
   question="Consider a cross to investigate the pea pod texture trait, involving constricted or inflated pods. Mendel found that the traits behave according to a dominant/recessive pattern in which inflated pods were dominant. If you performed this cross and obtained 650 inflated-pod plants in the F₂ generation, approximately how many constricted-pod plants would you expect to have?"
   answer="217"
-  hint="The F₂ generation of a monohybrid cross segregates in a 3:1 ratio of dominant to recessive traits; 650 inflated-pod plants represent about three of those four ratio parts."
+  hint="Reread the F₂ flower-color counts and the seven-characteristic results table."
 >}}
 600
 165
@@ -200,7 +199,14 @@ prevent accidental or unintentional fertilizations
 468
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How would you perform a reciprocal cross for the characteristic of stem height in the garden pea?" hint="A reciprocal cross swaps which parent — male or female — contributes each trait, between two separate crosses." >}}
+{{< textin
+  question="The hypothetical inheritance pattern in which parental traits are blended together in the offspring to produce an intermediate physical appearance is called the ________."
+  answer="blending theory of inheritance"
+  accept="blending theory|blending inheritance"
+  hint="Reread the section’s third introductory paragraph."
+>}}
+
+{{< selfcheck question="How would you perform a reciprocal cross for the characteristic of stem height in the garden pea?" hint="Reread the paragraph on Mendel’s F₂ flower-color counts." >}}
 Two sets of P₀ parents would be used. In the first cross, pollen would be transferred from a true-breeding tall plant to the stigma of a true-breeding dwarf plant. In the second cross, pollen would be transferred from a true-breeding dwarf plant to the stigma of a true-breeding tall plant. For each cross, F₁ and F₂ offspring would be analyzed to determine if offspring traits were affected according to which parent donated each trait.
 ===CHECKS===
 two sets of P₀ parents would be used
@@ -209,19 +215,19 @@ pollen would be transferred from a true-breeding dwarf plant to the stigma of a 
 F₁ and F₂ offspring would be analyzed to determine if offspring traits were affected according to which parent donated each trait
 {{< /selfcheck >}}
 
-{{< textin
-  question="A trait that produces the same physical appearance in an individual whether it is present as two copies or paired with a different, non-expressed version of the trait is described as ________."
-  answer="dominant"
-  accept="dominant trait"
-  hint="Mendel found this kind of trait was inherited unchanged, appearing in 100 percent of the F₁ generation whenever it was one of the two traits crossed."
->}}
 
 ### Apply the sum and product rules to calculate probabilities
+
+{{< textin
+  question="To find the probability of two or more independent events occurring together, apply the product rule and ________ the probabilities of the individual events."
+  answer="multiply"
+  hint="Reread the second paragraph of the section summary."
+>}}
 
 {{< multiplechoice
   question="A scientist pollinates a true-breeding pea plant with violet, terminal flowers with pollen from a true-breeding pea plant with white, axial flowers. Which of the following observations would most accurately describe the F₂ generation?"
   answer="75% violet flowers; 75% axial flowers"
-  hint="Flower color and flower position assort independently of one another; apply each trait’s own 3:1 ratio separately, rather than tying the F₂ percentages to which parent contributed which trait."
+  hint="Reread the opening paragraph of The Product Rule and Sum Rule."
 >}}
 75% violet flowers; 75% terminal flowers
 75% white flowers in a terminal position
@@ -229,7 +235,7 @@ F₁ and F₂ offspring would be analyzed to determine if offspring traits were 
 75% violet flowers in an axial position
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Mendel performs a cross using a true-breeding pea plant with round, yellow seeds and a true-breeding pea plant with green, wrinkled seeds. What is the probability that offspring will have green, round seeds? Calculate the probability for the F₁ and F₂ generations." hint="Yellow and round are the dominant traits here; work out each generation’s chance of the recessive green trait and the dominant round trait separately, then combine them with the right rule." >}}
+{{< selfcheck question="Mendel performs a cross using a true-breeding pea plant with round, yellow seeds and a true-breeding pea plant with green, wrinkled seeds. What is the probability that offspring will have green, round seeds? Calculate the probability for the F₁ and F₂ generations." hint="Reread the product-rule paragraph and its dihybrid example." >}}
 Since we are calculating the probability of two independent events occurring simultaneously, we use the product rule.
 
 F₁ generation: Since green seed color is recessive, there is a 0% probability that any plants in the F₁ generation will have green, round seeds.
@@ -244,7 +250,8 @@ the probability of growing an F₂ generation plant with green seeds is ¼
 the probability of growing an F₂ generation plant with round seeds is ¾
 {{< /selfcheck >}}
 
-{{< selfcheck question="Calculate the probability of selecting a heart or a face card when heart suit face cards are excluded from a standard deck of cards. Is this outcome more or less likely than selecting a heart suit face card from a standard deck of cards?" hint="The word “or” signals the sum rule: add the individual probabilities of drawing a heart and of drawing a face card." >}}
+
+{{< selfcheck question="Calculate the probability of selecting a heart or a face card when heart suit face cards are excluded from a standard deck of cards. Is this outcome more or less likely than selecting a heart suit face card from a standard deck of cards?" hint="Reread the sum-rule paragraph." >}}
 A standard deck of cards contains 52 cards, 13 of which are hearts; excluding the three heart-suit face cards leaves 9 face cards in the other suits, so the two groups are mutually exclusive.
 
 Heart suit **or** face card: This calculation requires the sum rule since there are multiple pathways to successfully pulling a desired card.
@@ -260,12 +267,6 @@ this calculation requires the sum rule
 the probability of selecting a heart suit or a face card is significantly more likely than the probability of selecting a heart suit face card
 {{< /selfcheck >}}
 
-{{< textin
-  question="The rule stating that the probability of one or the other of two mutually exclusive events occurring is found by adding their individual probabilities is called the ________."
-  answer="sum rule"
-  hint="The word “or” in a probability question is the signal to apply this rule instead of multiplying the probabilities."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 12.1: Mendel’s Experiments and the Laws of Probability](https://openstax.org/books/biology-2e/pages/12-1-mendels-experiments-and-the-laws-of-probability) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the Mendel portrait's alt calls it a photograph, because the source alt's "sketch" does not match the halftone photograph shown (erratum 837); the pea-plant cross diagram re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a drawn flow chart, not a photograph), with its letter-spaced source alt ("upper case F subscript 1 baseline generation") rewritten to a plain description and a longdesc added that walks its three generation bands, arrows, and plant counts in reading order; the historical footnote citing Mendel’s 1866 publication kept as a parenthetical after the sentence it supports, with the source’s English-translation link given descriptive link text; the three CNXML tables (Mendel's seven-characteristic results, the die-and-penny outcome table, and the product-rule/sum-rule summary) transcribed as Markdown tables, each with its CNXML title row set as a bold line above the table; the section's four display equations (the product-rule and sum-rule dihybrid calculations, and the two Critical Thinking solutions' probability calculations) set in KaTeX, transcribed from the raw MathML, with one inline equation set the same way; generation labels (P₀, F₁–F₄) and digit subscripts (D₁–D₆) set as Unicode subscript digits, and subscripted letters and symbols with no Unicode glyph (D<sub>#</sub>, P<sub>H</sub>, P<sub>T</sub>, Q<sub>H</sub>, Q<sub>T</sub>, P<sub>A</sub>, P<sub>B</sub>) set as HTML subscripts; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); three key-term recall items (hybridization, dominant, sum rule) added from the glossary; and the heart-or-face-card Critical Thinking solution corrected to apply the question’s own exclusion of the three heart-suit face cards (13/52 + 9/52 = 22/52, not the source’s 13/52 + 12/52 = 25/52, which double-counts the overlap the question removes) — reported as a source defect; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 12.1: Mendel’s Experiments and the Laws of Probability](https://openstax.org/books/biology-2e/pages/12-1-mendels-experiments-and-the-laws-of-probability) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the Mendel portrait's alt calls it a photograph, because the source alt's "sketch" does not match the halftone photograph shown (erratum 837); the pea-plant cross diagram re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a drawn flow chart, not a photograph), with its letter-spaced source alt ("upper case F subscript 1 baseline generation") rewritten to a plain description and a longdesc added that walks its three generation bands, arrows, and plant counts in reading order; the historical footnote citing Mendel’s 1866 publication kept as a parenthetical after the sentence it supports, with the source’s English-translation link given descriptive link text; the three CNXML tables (Mendel's seven-characteristic results, the die-and-penny outcome table, and the product-rule/sum-rule summary) transcribed as Markdown tables, each with its CNXML title row set as a bold line above the table; the section's four display equations (the product-rule and sum-rule dihybrid calculations, and the two Critical Thinking solutions' probability calculations) set in KaTeX, transcribed from the raw MathML, with one inline equation set the same way; generation labels (P₀, F₁–F₄) and digit subscripts (D₁–D₆) set as Unicode subscript digits, and subscripted letters and symbols with no Unicode glyph (D<sub>#</sub>, P<sub>H</sub>, P<sub>T</sub>, Q<sub>H</sub>, Q<sub>T</sub>, P<sub>A</sub>, P<sub>B</sub>) set as HTML subscripts; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); three recall items added: two from the glossary (discontinuous variation, placed first in the first objective's group, and blending theory of inheritance, placed after the monohybrid-cross Review Questions) and one summary cloze (multiply, from the summary's product-rule sentence), placed first in the probability objective's group; and the heart-or-face-card Critical Thinking solution corrected to apply the question’s own exclusion of the three heart-suit face cards (13/52 + 9/52 = 22/52, not the source’s 13/52 + 12/52 = 25/52, which double-counts the overlap the question removes) — reported as a source defect; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

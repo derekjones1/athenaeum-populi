@@ -51,13 +51,12 @@ this may have caused him to have abdominal pain and anemia
 ### 1.2 A Systematic Approach
 
 {{< multiplechoice
-  question="In binomial nomenclature, which part of an organism's two-word scientific name is always capitalized?"
-  answer="the genus"
+  question="In the name of the archaeon *Haloquadratum walsbyi*, what does the specific epithet *walsbyi* refer to?"
+  answer="the microbiologist who discovered the organism"
 >}}
-the genus
-the species
-both
-neither
+the organism's saltwater habitat
+the microbiologist who discovered the organism
+the shape of its square cells
 {{< /multiplechoice >}}
 
 {{< textin
@@ -89,7 +88,7 @@ centimeter
 {{< textin
   question="The helminth that causes dizziness, vomiting, diarrhea, and painful ulcers on the legs and feet as it works its way out of the skin is ________."
   answer="Dracunculus medinensis"
-  accept="guinea worm"
+  accept="guinea worm|D. medinensis"
 >}}
 
 {{< selfcheck question="Why is immunology often included in the study of microbiology?" >}}
@@ -254,9 +253,9 @@ Mitochondria and chloroplasts have bacterial origins.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="In 1831, Scottish botanist Robert Brown was the first to describe ________ that he observed in plant cells."
-  answer="nuclei"
-  accept="nucleus|cell nuclei"
+  question="In 1831, the Scottish botanist ________ was the first to describe nuclei, which he observed in plant cells."
+  answer="Robert Brown"
+  accept="Brown"
 >}}
 
 {{< selfcheck question="What early evidence did physicians before the 16th century give for the idea that diseases could be caused by something too small to see?" >}}
@@ -308,6 +307,7 @@ A small micronucleus used for reproduction and a large macronucleus that directs
 {{< textin
   question="In 1898, which Italian scientist developed a novel staining technique that revealed stacked membrane structures within nerve cells — work for which an organelle of the endomembrane system now bears his name?"
   answer="Camillo Golgi"
+  accept="Golgi"
 >}}
 
 {{< selfcheck question="How is the extracellular matrix related to microbial infection in host tissues?" >}}
@@ -329,7 +329,7 @@ nitrogen fixation
 symbiosis
 {{< /multiplechoice >}}
 
-{{< textin question="Certain strains of the bacterium ________ maintain a mutualistic relationship with humans in the gut, providing vitamin K needed for blood clotting." answer="Escherichia coli" accept="E. coli" >}}
+{{< textin question="Within the human microbiome, the microorganisms that constantly live in or on our bodies make up the ________ microbiota." answer="resident" accept="normal" >}}
 
 {{< selfcheck question="How did David Hendricks Bergey's manual contribute to bacterial taxonomy, and how has it since been expanded?" >}}
 In 1923, Bergey published *A Manual in Determinative Bacteriology*, summarizing the kinds of bacteria known at that time using Latin binomial classification and including their morphological, physiological, and biochemical properties. A more recent sister publication, the five-volume *Bergey's Manual of Systematic Bacteriology*, expands on Bergey's original manual, adding many additional species along with up-to-date taxonomic descriptions, and incorporates the approved names of bacteria determined by the List of Prokaryotic Names with Standing in Nomenclature (LPSN).
@@ -359,7 +359,7 @@ the outbreak occurred in Philadelphia in 1976
 
 ### 4.3 Nonproteobacteria Gram-Negative Bacteria and Phototrophic Bacteria
 
-{{< textin question="*Chlamydia* bacteria spread rapidly from host to host via metabolically and reproductively inactive, endospore-like forms called ________." answer="elementary bodies" >}}
+{{< textin question="*Chlamydia* bacteria spread rapidly from host to host via metabolically and reproductively inactive, endospore-like forms called ________." answer="elementary bodies" accept="elementary body" >}}
 
 {{< multiplechoice question="Which of the following bacteria can cause wound infections in patients with weakened immune systems?" answer="*Bacteroides melaninogenicus*" >}}
 *Treponema pallidum pallidum*
@@ -387,7 +387,7 @@ has been used as a model for studies of bacterial photosynthesis since the 1950s
 *Clostridioides difficile*
 {{< /multiplechoice >}}
 
-{{< textin question="*Streptococcus* species that inhabit the human mouth but do not belong to any Lancefield group, most of which are commensals, are called the ________ streptococci." answer="nonpyogenic" accept="viridans" >}}
+{{< textin question="*Streptococcus* species that inhabit the human mouth but do not belong to any Lancefield group, most of which are commensals, are called the ________ streptococci." answer="nonpyogenic" accept="non-pyogenic|viridans" >}}
 
 {{< selfcheck question="What toxin-related effects can strains of *Staphylococcus aureus* have on the body?" >}}
 Certain strains of *S. aureus* produce a substance called enterotoxin, which can cause severe enteritis, often called staph food poisoning. Some strains of *S. aureus* produce the toxin responsible for toxic shock syndrome, which can result in cardiovascular collapse and death.
@@ -423,13 +423,12 @@ T. subterranea lives in underground oil reservoirs
 
 ### 4.6 Archaea
 
-{{< textin question="The archaeal cell membrane is composed of ether linkages with branched ________ chains, unlike the bacterial membrane's unbranched fatty acids." answer="isoprene" >}}
+{{< textin question="Species of the archaeal genus *Sulfolobus* are used in biotechnology to produce thermostable and acid-resistant proteins called ________, which can bind and neutralize various antigens." answer="affitins" >}}
 
-{{< multiplechoice question="Which of the following is NOT one of the five major phyla that taxonomists currently recognize within Archaea?" answer="Actinobacteria" >}}
-Crenarchaeota
-Euryarchaeota
-Actinobacteria
-Nanoarchaeota
+{{< multiplechoice question="Which archaeon may be the oldest living organism on earth, since scientists have isolated its DNA from fossils that are 250 million years old?" answer="*Halobacterium salinarum*" >}}
+*Haloferax volcanii*
+*Halobacterium salinarum*
+*Methanobrevibacter oralis*
 {{< /multiplechoice >}}
 
 {{< selfcheck question="How does the size and complexity of the archaeal genome compare to that of bacteria, and what does this mean for classifying Archaea?" >}}
@@ -479,8 +478,8 @@ plasmodial slime molds exist as large, multinucleate amoeboid cells that form re
 >}}
 
 {{< textin
-  question="A body segment of a cestode (tapeworm) that contains reproductive structures is called a ________."
-  answer="proglottid"
+  question="Schistosomiasis, caused by *Schistosoma* parasites found in freshwater snails, is considered second in the scale of its impact on human populations only to ________."
+  answer="malaria"
 >}}
 
 {{< multiplechoice
@@ -498,7 +497,6 @@ the cysticercus
 {{< textin
   question="Whereas animals have cholesterol in their cell membranes, fungal cell membranes have different sterols called ________."
   answer="ergosterols"
-  accept="ergosterol"
 >}}
 
 {{< multiplechoice
@@ -574,7 +572,6 @@ The algae or cyanobacterium can grow in a drier environment than it could otherw
   answer="Viral genetics, chemistry, morphology, and mechanism of multiplication"
 >}}
 Genome type, single- versus double-stranded, and mode of replication
-Morphology, type of nucleic acid, host range, cell specificity, and enzymes carried within the virion
 Naked or enveloped structure and positive- or negative-strand RNA
 Viral genetics, chemistry, morphology, and mechanism of multiplication
 {{< /multiplechoice >}}
@@ -600,7 +597,7 @@ The genome is translated directly by host ribosomes, acting like cellular mRNA.
 Host enzymes synthesize a second, complementary strand to produce dsDNA.
 {{< /multiplechoice >}}
 
-{{< textin question="The number of virions per unit volume is called the ________." answer="viral titer" >}}
+{{< textin question="The number of virions per unit volume is called the ________." answer="viral titer" accept="titer" >}}
 
 {{< selfcheck question="By what mechanisms does HIV interfere with immune function to maintain a chronic infection?" >}}
 HIV maintains chronic persistence through several mechanisms that interfere with immune function, including preventing expression of viral antigens on the surface of infected cells, altering immune cells themselves, restricting expression of viral genes, and rapidly changing viral antigens through mutation.
@@ -642,12 +639,13 @@ Centrifugation
 {{< /sortbins >}}
 
 {{< multiplechoice
-  question="Unlike viruses, what do viroids lack?"
-  answer="A protein coat to protect their genetic information"
+  question="Stanley Prusiner discovered in 1982 that a fatal, degenerative disease was caused by proteinaceous infectious particles. Which disease was he studying?"
+  answer="scrapie"
 >}}
-A protein coat to protect their genetic information
-A short strand of circular RNA capable of self-replication
-Control of the host machinery needed to replicate their genome
+kuru
+chronic wasting disease
+scrapie
+mad cow disease
 {{< /multiplechoice >}}
 
 {{< multiplechoice

@@ -91,10 +91,9 @@ The case began in [Unicellular Eukaryotic Parasites](/life-health-sciences/micro
 ### Explain why lichens are included in the study of microbiology
 
 {{< textin
-  question="The ________ in some lichens can fix nitrogen and act as a nitrogen source in some environments."
-  answer="cyanobacteria"
-  accept="cyanobacterium"
-  hint="Look at the intro paragraph's sentence about nitrogen fixation, not the sentence about soil stabilizers."
+  question="Lichens provide opportunities for study of close relationships between ________ microorganisms."
+  answer="unrelated"
+  hint="Reread the second sentence of this section."
 >}}
 
 {{< textin
@@ -106,7 +105,7 @@ The case began in [Unicellular Eukaryotic Parasites](/life-health-sciences/micro
 {{< multiplechoice
   question="According to this section, lichens are important soil stabilizers in which type of environment?"
   answer="desert environments"
-  hint="Distinguish this from the environments named for aquatic algae growth, lava-flow colonization, and marine rocks."
+  hint="Reread the opening paragraph of this section."
 >}}
 desert environments
 aquatic environments
@@ -119,7 +118,7 @@ soilless environments
 {{< multiplechoice
   question="You encounter a lichen with leafy structures. Which term describes this lichen?"
   answer="foliose"
-  hint="Compare the leaf-like lobe description in the Lichen Diversity paragraph with each growth-form name."
+  hint="Reread the Lichen Diversity paragraph."
 >}}
 crustose
 foliose
@@ -130,7 +129,7 @@ agarose
 {{< multiplechoice
   question="Which of the following is the term for the outer layer of a lichen?"
   answer="the cortex"
-  hint="The Characteristics paragraph names the lichen's outer, tightly packed fungal layer."
+  hint="Reread the last paragraph of Characteristics and the figure after it."
 >}}
 the cortex
 the medulla
@@ -141,7 +140,7 @@ the theca
 {{< multiplechoice
   question="The fungus in a lichen is which of the following?"
   answer="an ascomycete"
-  hint="Decide which of the options is a fungus at all, using the Lichen Diversity paragraph's sentence on what lichens are classified as."
+  hint="Reread the first sentence of Lichen Diversity."
 >}}
 a cyanobacterium
 an ascomycete
@@ -162,16 +161,17 @@ act as indicators of air pollution
 {{< textin
   question="Lichens contribute to soil production by ________ rock."
   answer="breaking down"
+  accept="break down"
   hint="Look at the intro paragraph's sentence about soil production and lava flows."
 >}}
 
 {{< textin
   question="Lichens produce compounds that have ________ effects, and further research may discover compounds that are medically useful to humans."
   answer="antibacterial"
-  accept="anti-bacterial"
+  accept="anti-bacterial|antimicrobial"
   hint="Look at the last sentence of the intro paragraph."
 >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 5.5: Lichens](https://openstax.org/books/microbiology/pages/5-5-lichens) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: both source figures are re-encoded as WebP and rendered as mediafigures after image and PDF inspection; the lichen cross-section figure is set `kind="diagram"` (overriding the manifest's photo guess, since the source JPEG is a labeled line drawing) with a longdesc walking its five labeled regions, and its alt is rewritten because the source alt misdescribed the algal-zone cells as "green" when the printed and vendored artwork is black-and-white line art with no color, and misspelled "next" as "enxt"; the three-lichen photograph's alt is rewritten to describe each panel's actual colors and texture rather than the source's terser wording, matching the caption's (a)/(b)/(c) labeling; the same-module figure cross-references are rendered as describing prose ("shown below"); the Clinical Focus box is rendered as a callout titled *Resolution*, and its closing "Go back to the previous Clinical Focus box" link (which pointed at Section 5.3, *Fungi*) is replaced with a sentence naming where the case began, Section 5.1, *Unicellular Eukaryotic Parasites*, per this book's Clinical Focus chain convention; the two Check Your Understanding bullets are rendered as body self-checks; the three keyed Multiple Choice questions are adapted into Practice, and in "The fungus in a lichen is which of the following?" the source distractor "a basidiomycete" is replaced with "a cyanobacterium" (key unchanged), because this module's own sentence says the fungal partners belong to the Ascomycota and Basidiomycota, which made that distractor a second correct option; the unkeyed Short Answer question ("What are three ways that lichens are environmentally valuable?") remains a self-check, because its honest answer is a coordinate list rather than a single gradable fact, with a model answer and rubric built from the Summary's own environmental-benefit sentence; two Practice groups are filled out with cloze `textin` items built strictly from this module's own intro-paragraph sentences (nitrogen-fixing cyanobacteria, caribou as a winter food source, soil production by breaking down rock, antibacterial compounds) and one author-built multiple-choice item on desert soil stabilization, all keyed from this module's own text with no invented claims; key terms are compiled from the module's eight defined terms and the book's Glossary appendix, all eight definitions taken directly from the Glossary.</small>
+<small>This section is adapted from [Microbiology, Section 5.5: Lichens](https://openstax.org/books/microbiology/pages/5-5-lichens) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: both source figures are re-encoded as WebP and rendered as mediafigures after image and PDF inspection; the lichen cross-section figure is set `kind="diagram"` (overriding the manifest's photo guess, since the source JPEG is a labeled line drawing) with a longdesc walking its five labeled regions, and its alt is rewritten because the source alt misdescribed the algal-zone cells as "green" when the printed and vendored artwork is black-and-white line art with no color, and misspelled "next" as "enxt"; the three-lichen photograph's alt is rewritten to describe each panel's actual colors and texture rather than the source's terser wording, matching the caption's (a)/(b)/(c) labeling; the same-module figure cross-references are rendered as describing prose ("shown below"); the Clinical Focus box is rendered as a callout titled *Resolution*, and its closing "Go back to the previous Clinical Focus box" link (which pointed at Section 5.3, *Fungi*) is replaced with a sentence naming where the case began, Section 5.1, *Unicellular Eukaryotic Parasites*, per this book's Clinical Focus chain convention; the two Check Your Understanding bullets are rendered as body self-checks; the three keyed Multiple Choice questions are adapted into Practice, and in "The fungus in a lichen is which of the following?" the source distractor "a basidiomycete" is replaced with "a cyanobacterium" (key unchanged), because this module's own sentence says the fungal partners belong to the Ascomycota and Basidiomycota, which made that distractor a second correct option; the unkeyed Short Answer question ("What are three ways that lichens are environmentally valuable?") remains a self-check, because its honest answer is a coordinate list rather than a single gradable fact, with a model answer and rubric built from the Summary's own environmental-benefit sentence; two Practice groups are filled out with cloze `textin` items built strictly from this module's own intro-paragraph sentences (close relationships between unrelated microorganisms, caribou as a winter food source, soil production by breaking down rock, antibacterial compounds) and one author-built multiple-choice item on desert soil stabilization, all keyed from this module's own text with no invented claims; key terms are compiled from the module's eight defined terms and the book's Glossary appendix, all eight definitions taken directly from the Glossary.</small>

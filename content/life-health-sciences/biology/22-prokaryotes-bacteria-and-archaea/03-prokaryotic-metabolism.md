@@ -68,7 +68,7 @@ Participants in the carbon cycle are roughly divided among producers, consumers,
 
 In aqueous environments and their anoxic sediments, there is another carbon cycle taking place. In this case, the cycle is based on one-carbon compounds. In anoxic sediments, prokaryotes, mostly archaea, produce methane (CH₄). This methane moves into the zone above the sediment, which is richer in oxygen and supports bacteria called *methane oxidizers* that oxidize methane to carbon dioxide, which then returns to the atmosphere.
 
-{{< mediafigure src="biology/Figure_B22_03_01" kind="diagram" eager="true" alt="A labeled diagram titled 'The Carbon Cycle,' showing arrows connecting atmospheric carbon dioxide to a volcano, terrestrial and marine photosynthesis, animal and human respiration, rock weathering, soil and fossil carbon, ocean sediments, and microbial respiration and decomposition." longdesc="At upper left, an erupting volcano sends an arrow up into a banner reading 'Carbon dioxide in the atmosphere' at the top of the scene; the sun is drawn at upper right. Below the banner, three circular icons sit in a row: a tree icon labeled 'Terrestrial photosynthesis' with an arrow pointing down from the atmosphere into it; a pair of rabbits labeled 'Respiration' with an arrow pointing up from it into the atmosphere; and a factory icon labeled 'Human emissions' with an arrow pointing up into the atmosphere. Two more arrows connect the atmosphere to the ocean at the right: one points down toward 'Marine photosynthesis' and one points up from 'Marine respiration.' At lower left, 'Weathering of terrestrial rocks' has an arrow down to 'Soil carbon.' From 'Soil carbon,' arrows branch down to 'Fossil carbon' and to a red-outlined box labeled 'Microbial respiration and decomposition,' which also receives an arrow from 'Fossil carbon' and sends an arrow labeled 'Leaching/Runoff' to 'Ocean sediments.' 'Ocean sediments' has an arrow down to 'Uplifting,' which arrows back into 'Microbial respiration and decomposition.' A long curved arrow rises from 'Microbial respiration and decomposition' back up to the 'Carbon dioxide in the atmosphere' banner, closing the cycle." >}}
+{{< mediafigure src="biology/Figure_B22_03_01" kind="diagram" eager="true" alt="A labeled diagram titled 'The Carbon Cycle,' showing arrows connecting atmospheric carbon dioxide to a volcano, terrestrial and marine photosynthesis, animal respiration, human emissions, rock weathering, soil and fossil carbon, ocean sediments, and microbial respiration and decomposition." longdesc="At upper left, an erupting volcano sends an arrow up into a banner reading 'Carbon dioxide in the atmosphere' at the top of the scene; the sun is drawn at upper right. Below the banner, three circular icons sit in a row: a tree icon labeled 'Terrestrial photosynthesis' with an arrow pointing down from the atmosphere into it; three rabbits labeled 'Respiration' with an arrow pointing up from it into the atmosphere; and a factory icon labeled 'Human emissions' with an arrow pointing up into the atmosphere. Two more arrows connect the atmosphere to the ocean at the right: one points down toward 'Marine photosynthesis' and one points up from 'Marine respiration'; the water below is labeled 'Oceans.' At left, 'Weathering of terrestrial rocks' has an arrow down to 'Soil carbon.' From 'Soil carbon,' arrows branch down to 'Fossil carbon' and to a red-outlined box labeled 'Microbial respiration and decomposition,' which also receives an arrow from 'Fossil carbon' and sends an arrow up to 'Leaching/Runoff,' from which an arrow leads right to 'Ocean sediments.' 'Ocean sediments' has an arrow down to 'Uplifting,' which arrows back into 'Microbial respiration and decomposition.' A long curved arrow rises from 'Microbial respiration and decomposition' back up to the 'Carbon dioxide in the atmosphere' banner, closing the cycle." >}}
 The carbon cycle. Prokaryotes play a significant role in continuously moving carbon through the biosphere. (credit: modification of work by John M. Evans and Howard Perlman, USGS)
 {{< /mediafigure >}}
 
@@ -78,14 +78,14 @@ Nitrogen is a very important element for life because it is a major constituent 
 
 Ammonia released into the atmosphere, however, represents only 15 percent of the total nitrogen released; the rest is as N₂ and N₂O (nitrous oxide). Ammonia is catabolized anaerobically by some prokaryotes, yielding N₂ as the final product. Denitrifying bacteria reverse the process of nitrification, reducing the nitrate from soils to gaseous compounds such as N₂O, NO, and N₂.
 
-{{< mediafigure src="biology/Figure_B22_03_02" kind="diagram" alt="A labeled diagram of the nitrogen cycle: a banner reading 'Nitrogen (N₂) in the atmosphere' above a landscape of plants and soil, connected by arrows and bacteria icons to nitrogen fixation, ammonium, nitrification, nitrite, nitrate, plant assimilation, decomposers, and denitrification." longdesc="A banner across the top reads 'Nitrogen (N₂) in the atmosphere,' above a strip of sky with plants and a small rodent, over a brown soil cross-section below. At far left, a bacteria icon labeled 'Nitrogen-fixing bacteria in root nodules of legumes' sits beside a legume plant, fed by an arrow that runs down the left edge from the atmosphere banner. Below it, a second bacteria icon labeled 'Nitrogen-fixing soil bacteria,' fed by the same left-edge line from the atmosphere, arrows right into a box labeled 'Ammonium (NH₄⁺).' A central box labeled 'Decomposers (aerobic and anaerobic bacteria and fungi)' receives an arrow down from a 'Plants' box above it and sends an arrow down, labeled 'Ammonification,' into the 'Ammonium (NH₄⁺)' box. From 'Ammonium (NH₄⁺),' an arrow through a 'Nitrifying bacteria' icon, labeled 'Nitrification,' leads right to a 'Nitrites (NO₂⁻)' box, then through a second 'Nitrifying bacteria' icon up to a 'Nitrates (NO₃⁻)' box. From 'Nitrates (NO₃⁻),' one arrow labeled 'Assimilation' points up-left back into the 'Plants' box, and another points up-right through a 'Denitrifying bacteria' icon and along the top border back into the atmosphere banner, completing the cycle." >}}
+{{< mediafigure src="biology/Figure_B22_03_02" kind="diagram" alt="A labeled diagram of the nitrogen cycle: a banner reading 'Nitrogen (N₂) in the atmosphere' above a landscape of plants and soil, connected by arrows and bacteria icons to nitrogen fixation, ammonium, nitrification, nitrite, nitrate, plant assimilation, decomposers, and denitrification." longdesc="A banner across the top reads 'Nitrogen (N₂) in the atmosphere,' above a strip of sky with plants and a small rodent, over a brown soil cross-section below. At far left, a bacteria icon labeled 'Nitrogen-fixing bacteria in root nodules of legumes' sits beside a legume plant, fed by an arrow that runs down the left edge from the atmosphere banner. Below it, a second bacteria icon labeled 'Nitrogen-fixing soil bacteria,' fed by the same left-edge line from the atmosphere, arrows right into a box labeled 'Ammonium (NH₄⁺).' A central box labeled 'Decomposers (aerobic and anaerobic bacteria and fungi)' receives an arrow down from a 'Plants' box above it; another arrow leads left from 'Plants' to the rodent, and a third runs from beneath the rodent down and right into 'Decomposers.' 'Decomposers' sends an arrow down, labeled 'Ammonification,' into the 'Ammonium (NH₄⁺)' box. From 'Ammonium (NH₄⁺),' an arrow through a 'Nitrifying bacteria' icon, labeled 'Nitrification,' leads right to a 'Nitrites (NO₂⁻)' box, then through a second 'Nitrifying bacteria' icon up to a 'Nitrates (NO₃⁻)' box. From 'Nitrates (NO₃⁻),' one arrow labeled 'Assimilation' points up-left back into the 'Plants' box, and another points up-right through a 'Denitrifying bacteria' icon and along the top border back into the atmosphere banner, completing the cycle." >}}
 The nitrogen cycle. Prokaryotes play a key role in the nitrogen cycle. (credit: Environmental Protection Agency)
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements about the nitrogen cycle is false?"
   answer="Nitrification is the process by which nitrites (NO₂⁻) are converted to ammonium ion (NH₄⁺)."
-  hint="Three of these options describe nitrogen fixation, ammonification, and denitrification as the section presents them; the fourth reverses which two nitrogen forms nitrification actually connects."
+  hint="Check each option's process against how the Prokaryotes and the Nitrogen Cycle subsection describes it."
 >}}
 Nitrogen-fixing bacteria exist on the root nodules of legumes and in the soil.
 Denitrifying bacteria convert nitrates (NO₃⁻) into nitrogen gas (N₂).
@@ -118,13 +118,19 @@ Prokaryotes play roles in the carbon and nitrogen cycles. Producers capture carb
 {{< multiplechoice
   question="Which of the following elements is *not* a micronutrient?"
   answer="calcium"
-  hint="Boron, chromium, and manganese are needed only in small amounts as enzyme cofactors; this element is needed in much larger amounts."
+  hint="Compare each element with the two lists of required elements in Needs of Prokaryotes."
 >}}
 boron
 calcium
 chromium
 manganese
 {{< /multiplechoice >}}
+
+{{< textin
+  question="Nutrients required in large amounts are called ________, whereas those required in trace amounts are called micronutrients or trace elements."
+  answer="macronutrients"
+  hint="Carbon, hydrogen, oxygen, nitrogen, phosphorus, and sulfur — remembered by the acronym CHONPS — are examples."
+>}}
 
 {{< multiplechoice
   question="Why are macronutrients such as carbon, hydrogen, oxygen, nitrogen, phosphorus, and sulfur needed in large amounts?"
@@ -137,19 +143,12 @@ They are necessary for the function of the cytochromes involved in electron-tran
 They can be converted into an organic form only by nitrogen-fixing organisms.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Nutrients required in large amounts are called ________, whereas those required in trace amounts are called micronutrients or trace elements."
-  answer="macronutrients"
-  accept="macronutrient"
-  hint="Carbon, hydrogen, oxygen, nitrogen, phosphorus, and sulfur — remembered by the acronym CHONPS — are examples."
->}}
-
 ### Describe the ways in which prokaryotes get energy and carbon for life processes
 
 {{< multiplechoice
   question="Prokaryotes that obtain their energy from chemical compounds are called ________."
   answer="chemotrophs"
-  hint="The Greek root here refers to chemical compounds, not light or an unusual growth requirement."
+  hint="The Ways in Which Prokaryotes Obtain Energy defines each energy-source term in turn."
 >}}
 phototrophs
 auxotrophs
@@ -160,10 +159,10 @@ lithotrophs
 {{< multiplechoice
   question="Cyanobacteria harness energy from the sun through photosynthesis, and oxidize water to provide electrons for energy generation. Thus, we classify cyanobacteria as ________."
   answer="photolithotrophs"
-  hint="The question names two things: their energy source (light) and their electron source (water, an inorganic compound) — it says nothing here about their carbon source."
+  hint="Use the Carbon and Energy Sources in Prokaryotes table: find the column each piece of information in the stem belongs to."
 >}}
 photolithotrophs
-photoautotrophs
+photoheterotrophs
 chemolithoautotrophs
 chemo-organotrophs
 {{< /multiplechoice >}}
@@ -178,17 +177,17 @@ the temperatures are very high in the hydrothermal vent, so the prokaryotes woul
 {{< /selfcheck >}}
 
 {{< textin
-  question="An organism that produces organic molecules from small inorganic compounds is called a(n) ________."
-  answer="autotroph"
-  accept="autotrophic"
-  hint="This is the opposite nutritional strategy from an organism that must obtain carbon from organic compounds."
->}}
-
-{{< textin
   question="An organism that obtains energy from organic molecules is called a(n) ________."
   answer="heterotroph"
   accept="heterotrophic"
   hint="This is the opposite nutritional strategy from an organism that synthesizes its own organic molecules from carbon dioxide."
+>}}
+
+{{< textin
+  question="An organism that produces organic molecules from small inorganic compounds is called a(n) ________."
+  answer="autotroph"
+  accept="autotrophic"
+  hint="This is the opposite nutritional strategy from an organism that must obtain carbon from organic compounds."
 >}}
 
 {{< textin
@@ -203,7 +202,7 @@ the temperatures are very high in the hydrothermal vent, so the prokaryotes woul
 {{< multiplechoice
   question="Ammonification is the process by which ________."
   answer="ammonia is released during the decomposition of nitrogen-containing organic compounds"
-  hint="The other three options describe nitrification, denitrification, and nitrogen fixation, in that order."
+  hint="Compare each option with the processes the Prokaryotes and the Nitrogen Cycle subsection defines."
 >}}
 ammonia is released during the decomposition of nitrogen-containing organic compounds
 ammonium is converted to nitrite and nitrate in soils
@@ -238,15 +237,15 @@ less carbon dioxide would be released back into the atmosphere
 {{< /selfcheck >}}
 
 {{< textin
-  question="An organism that carries out the decomposition of dead organisms is called a ________."
-  answer="decomposer"
-  hint="Both bacteria and fungi that break down dead plants and animals share this name."
->}}
-
-{{< textin
   question="The process by which gaseous N₂ is transformed, or 'fixed,' into more readily available forms such as ammonia is called ________."
   answer="nitrogen fixation"
   hint="Bacteria such as *Azotobacter* and *Rhizobium* carry out this process."
+>}}
+
+{{< textin
+  question="Bacteria and fungi that carry out the breakdown of plants and animals and their organic compounds are collectively called ________."
+  answer="decomposers"
+  hint="The Carbon Cycle subsection sorts the cycle's participants into three roles; this is the third."
 >}}
 
 {{< textin
@@ -258,15 +257,15 @@ less carbon dioxide would be released back into the atmosphere
 {{< textin
   question="The conversion of ammonium into nitrite and nitrate in soils is called ________."
   answer="nitrification"
-  hint="This two-step process is carried out by different groups of nitrifying bacteria."
+  hint="The Nitrogen Cycle subsection describes this two-step oxidation right after ammonification."
 >}}
 
 {{< textin
   question="The transformation of nitrate from soil into gaseous nitrogen compounds such as N₂O, NO, and N₂ is called ________."
   answer="denitrification"
-  hint="This process reverses nitrification, returning nitrogen to the atmosphere."
+  hint="The second paragraph of the Nitrogen Cycle subsection names the bacteria that carry out this process."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 22.3: Prokaryotic Metabolism](https://openstax.org/books/biology-2e/pages/22-3-prokaryotic-metabolism) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, kind set to "diagram" for both after inspection; the over-600-character source alt for Figure_B22_03_01 rewritten to a concise description with its walk-through moved into longdesc, and the screen-reader-spelled source alt for Figure_B22_03_02 ("upper case N 2," "upper N upper H 4 plus sign") rewritten to a plain description, with a longdesc added for both (their labeled nodes and arrows are not carried by the one-line captions); the Carbon and Energy Sources in Prokaryotes table (whose CNXML id, tab-ch22-02-01, duplicates 22.2's own table id — a source oddity, unrelated in content) transcribed complete as a Markdown table, its spanning title row set as a bold line above it, with the print's blank cells kept blank; ion charges set in Unicode sub/superscript, number-then-sign order (NH₄⁺, NO₂⁻, NO₃⁻, N₂, H₂S, CH₄); a glossary-recall textin for nitrogen fixation phrased with "N₂" rather than the word "nitrogen" so the answer's own word does not appear in the prompt; one Critical Thinking selfcheck's "Responses will vary." preamble dropped as scaffolding, keeping the substantive model answer; a typo in the deep-sea-vent Critical Thinking solution ("chemolitotrophs") corrected to "chemolithotrophs," matching the term as used earlier in the section; a grammar typo in the soil-contamination Critical Thinking question ("How would this effect the carbon cycle") corrected to "affect"; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), and the Visual Connection Question kept as a multiplechoice immediately after its figure in the body; eight key-term recall items added from the glossary; and, to bring the first objective's group to this book's practice floor, one summary-derived cloze textin item (macronutrients) and one multiple choice built from the section's own macronutrients paragraph, asking why those elements are needed in large amounts, with distractors drawn from the roles the same section gives micronutrients and atmospheric nitrogen.</small>
+<small>This section is adapted from [Biology 2e, Section 22.3: Prokaryotic Metabolism](https://openstax.org/books/biology-2e/pages/22-3-prokaryotic-metabolism) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, kind set to "diagram" for both after inspection; the over-600-character source alt for Figure_B22_03_01 rewritten to a concise description with its walk-through moved into longdesc, and the screen-reader-spelled source alt for Figure_B22_03_02 ("upper case N 2," "upper N upper H 4 plus sign") rewritten to a plain description, with a longdesc added for both (their labeled nodes and arrows are not carried by the one-line captions); the Carbon and Energy Sources in Prokaryotes table (whose CNXML id, tab-ch22-02-01, duplicates 22.2's own table id — a source oddity, unrelated in content) transcribed complete as a Markdown table, its spanning title row set as a bold line above it, with the print's blank cells kept blank; ion charges set in Unicode sub/superscript, number-then-sign order (NH₄⁺, NO₂⁻, NO₃⁻, N₂, H₂S, CH₄); a glossary-recall textin for nitrogen fixation phrased with "N₂" rather than the word "nitrogen" so the answer's own word does not appear in the prompt; one Critical Thinking selfcheck's "Responses will vary." preamble dropped as scaffolding, keeping the substantive model answer; a typo in the deep-sea-vent Critical Thinking solution ("chemolitotrophs") corrected to "chemolithotrophs," matching the term as used earlier in the section; a grammar typo in the soil-contamination Critical Thinking question ("How would this effect the carbon cycle") corrected to "affect"; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the cyanobacteria Review Question, last in the source, comes before the ammonification and producers questions, and the Visual Connection Question kept as a multiplechoice immediately after its figure in the body; in the cyanobacteria Review Question (`eip-113`), the distractor "photoautotrophs" replaced with "photoheterotrophs," because the section's own text says photoautotrophs use energy from sunlight and carbon from carbon dioxide and that phototrophs which "do not fix carbon" are "not photosynthetic," so a cyanobacterium harnessing the sun's energy "through photosynthesis" is a photoautotroph as well — leaving the source item with two supportable answers — while the section defines photoheterotrophs as getting their carbon from organic compounds (reported as a source defect; key unchanged); eight recall items added, seven from the glossary and one (decomposers) from the section's own carbon-cycle sentence, since the glossary definition prints the root of the term; and, to bring the first objective's group to this book's practice floor, one summary-derived cloze textin item (macronutrients) and one multiple choice built from the section's own macronutrients paragraph, asking why those elements are needed in large amounts, with distractors drawn from the roles the same section gives micronutrients and atmospheric nitrogen.</small>

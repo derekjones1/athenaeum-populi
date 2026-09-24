@@ -52,7 +52,7 @@ Plants require only light, water, and about 20 elements to support all their bio
 
 The essential elements can be divided into two groups: macronutrients and micronutrients. Nutrients that plants require in larger amounts are called **macronutrients**. About half of the essential elements are considered macronutrients: carbon, hydrogen, oxygen, nitrogen, phosphorus, potassium, calcium, magnesium and sulfur. The first of these macronutrients, carbon (C), is required to form carbohydrates, proteins, nucleic acids, and many other compounds; it is therefore present in all macromolecules. On average, the dry weight (excluding water) of a cell is 45 percent carbon. As shown below, carbon is a key part of plant biomolecules, followed by oxygen (45 percent) and hydrogen (6 percent), which are the next two most abundant elements in plants.
 
-{{< mediafigure src="biology/Figure_31_01_02" kind="diagram" alt="Three wavy parallel cellulose fibers above a chemical structure diagram of cellulose: repeating six-membered glucose ring subunits, each drawn with its OH, H, and CH2OH substituents and joined edge to edge by oxygen linkages into an unbranched chain, with a bracket and subscript n marking the repeating unit." >}}
+{{< mediafigure src="biology/Figure_31_01_02" kind="diagram" alt="Three wavy parallel cellulose fibers above a chemical structure diagram of cellulose: repeating six-membered glucose ring subunits, each drawn with its OH, H, and CH₂OH substituents and joined edge to edge by oxygen linkages into an unbranched chain, with a bracket and subscript n marking the repeating unit." >}}
 Cellulose, the main structural component of the plant cell wall, makes up over thirty percent of plant matter. It is the most abundant organic compound on earth.
 {{< /mediafigure >}}
 
@@ -100,7 +100,7 @@ Plants can absorb inorganic nutrients and water through their root system, and c
 {{< multiplechoice
   question="What is the main water source for land plants?"
   answer="soil"
-  hint="Plant roots absorb this substance through root hairs, and it can be an abundant water source even when it appears dry."
+  hint="Reread the first paragraph of The Chemical Composition of Plants, on where land plants get their water."
 >}}
 rain
 soil
@@ -139,7 +139,7 @@ iron
 {{< multiplechoice
   question="Most ________ are necessary for enzyme function."
   answer="micronutrients"
-  hint="These are the trace elements a plant needs only in very small quantities, as opposed to the nine elements it needs in bulk."
+  hint="This book's Enzymes section (6.5) names iron and zinc ions as enzyme cofactors; find which column of the essential-elements table above holds those two elements."
 >}}
 micronutrients
 macronutrients
@@ -154,7 +154,7 @@ essential macronutrients include carbon, hydrogen, oxygen, nitrogen, phosphorus,
 essential micronutrients include iron, manganese, boron, molybdenum, copper, zinc, chlorine, nickel, cobalt, sodium, and silicon
 {{< /selfcheck >}}
 
-{{< selfcheck question="What type of plant problems result from nitrogen and calcium deficiencies?" hint="The section names three visible symptoms that a lack of macronutrients can cause." >}}
+{{< selfcheck question="What type of plant problems result from nitrogen and calcium deficiencies?" hint="The section names three visible symptoms that a deficiency of nutrients like these two can cause." >}}
 Deficiencies in these nutrients could result in stunted growth, slow growth, and chlorosis.
 ===CHECKS===
 stunted growth
@@ -165,7 +165,7 @@ chlorosis
 {{< textin
   question="A chemical compound that contains carbon is called an ________ compound."
   answer="organic"
-  hint="Carbohydrates, lipids, proteins, and nucleic acids are all examples, and this kind of compound is made by a living organism."
+  hint="Reread the opening paragraph of The Chemical Composition of Plants."
 >}}
 
 {{< textin

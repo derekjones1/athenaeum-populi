@@ -17,7 +17,7 @@ weight: 5
 
 On a phylogenetic tree (see [A Systematic Approach](/life-health-sciences/microbiology/01-an-invisible-world/02-a-systematic-approach/)), the trunk or root of the tree represents a common ancient evolutionary ancestor, often called the last universal common ancestor (LUCA), and the branches are its evolutionary descendants. Scientists consider the **deeply branching bacteria**, such as the genus *Acetothermus*, to be the first of these non-LUCA forms of life produced by evolution some 3.5 billion years ago. When placed on the phylogenetic tree, they stem from the common root of life, deep and close to the LUCA root—hence the name “deeply branching” (shown below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_04_05_DeepBranch" alt="A color-coded phylogenetic tree of life rooted at LUCA. Purple Bacteria, orange Archaea, and brown Eukarya branch from the root; a yellow star marks Acetothermus near the lowest bacterial branch." kind="diagram" longdesc="The title is Phylogenetic Tree of Life. A black root labeled LUCA branches upward into three color-coded groups: Bacteria at left in purple, Archaea in the middle in orange, and Eukarya at right in brown. The bacterial branch labels, from the lowest upward, are Aquifex, Thermotoga, Bacteroides, Cytophaga, Planctomyces, Cyanobacteria, Proteobacteria, Spirochetes, Gram positives, and Green filamentous bacteria. A yellow star sits beside the label Acetothermus at the deep bacterial branch near Aquifex and Thermotoga. Archaeal labels, from the lower branch upward, are Pyrodicticum, Thermoproteus, Thermococcus, Methanococcus, Methanobacterium, Methanosarcina, and Halophiles. Eukaryal labels, from lower to upper branches, are Diplomonads, Microsporidia, Trichomonads, Flagellates, Ciliates, Plants, Fungi, Animals, Slime molds, and Entamoebae." eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_04_05_DeepBranch" alt="A color-coded phylogenetic tree of life rooted at LUCA. Purple Bacteria, orange Archaea, and brown Eukarya branch from the root; a yellow star marks Acetothermus, the lowest bacterial branch." kind="diagram" longdesc="The title is Phylogenetic Tree of Life. A black root labeled LUCA branches upward into three color-coded groups: Bacteria at left in purple, Archaea in the middle in orange, and Eukarya at right in brown. Along the bacterial branch, from the root outward: first a short branch labeled Acetothermus, ending in a yellow star; then Aquifex; then Thermotoga and Green filamentous bacteria, leaving at the same point (the Green filamentous bacteria line runs up to the top of the fan); then Bacteroides Cytophaga (one branch with a two-line label); and at the tip a fan of Planctomyces, Cyanobacteria, Proteobacteria, Spirochetes, and Gram positives. Archaeal labels, from the lower branch upward, are Pyrodicticum, Thermoproteus, Thermococcus, Methanococcus, Methanobacterium, Methanosarcina, and Halophiles. Along the eukaryal branch, from the root outward: Diplomonads, Microsporidia, Trichomonads, Flagellates, then Entamoebae and Slime molds (both leaving the upper side), Ciliates, Plants, and a tip pair of Animals and Fungi." eager="true" >}}
 The star on this phylogenetic tree of life shows the position of the deeply branching bacteria *Acetothermus*. (credit: modification of work by Eric Gaba)
 {{< /mediafigure >}}
 
@@ -47,23 +47,23 @@ Finally, the deeply branching bacterium *Deinococcus radiodurans* belongs to a g
 
 ### Describe the unique features of deeply branching bacteria
 
-{{< multiplechoice question="The term “deeply branching” refers to which of the following?" answer="the position in the evolutionary tree of deeply branching bacteria" hint="Use the location of the star on the phylogenetic tree rather than an organism's habitat or shape." >}}
+{{< multiplechoice question="The term “deeply branching” refers to which of the following?" answer="the position in the evolutionary tree of deeply branching bacteria" hint="Reread the opening paragraph of this section." >}}
 the cellular shape of deeply branching bacteria
 the position in the evolutionary tree of deeply branching bacteria
 the ability of deeply branching bacteria to live in deep ocean waters
 the pattern of growth in culture of deeply branching bacteria
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="The length of the branches of the evolutionary tree characterizes which of the following between organisms?" answer="distance" hint="Think about the relationship that a phylogenetic tree expresses between two organisms, not their physical traits or growth conditions." >}}
+{{< multiplechoice question="The length of the branches of the evolutionary tree characterizes which of the following between organisms?" answer="distance" hint="Reread the opening paragraph of this section and the tree figure after it." >}}
 temperature
 structure
 distance
 radiation
 {{< /multiplechoice >}}
 
-{{< textin question="The deeply branching bacteria are thought to be the form of life closest to the last universal ________ ________." answer="common ancestor" hint="Use the full phrase abbreviated by LUCA at the root of the tree." >}}
+{{< textin question="The deeply branching bacteria are thought to be the form of life closest to the last universal ________ ________." answer="common ancestor" hint="Reread the opening paragraph of this section." >}}
 
-{{< selfcheck question="Briefly describe the significance of deeply branching bacteria for basic science and for industry." hint="Connect what these bacteria reveal about ancient life with the useful product made by Thermotogae." >}}
+{{< selfcheck question="Briefly describe the significance of deeply branching bacteria for basic science and for industry." hint="Reread the paragraphs after the phylogenetic tree." >}}
 Deeply branching bacteria may provide clues regarding the structure and function of ancient and now extinct forms of life. Their adaptations support hypotheses about early ancestors that evolved when the earth was hot and lacked an atmosphere. Some Thermotogae produce molecular hydrogen, which can be used in industry.
 ===CHECKS===
 provide clues regarding the structure and function of ancient and now extinct forms of life
@@ -73,7 +73,7 @@ produce molecular hydrogen, which can be used in industry
 
 ### Give examples of significant deeply branching bacteria
 
-{{< multiplechoice question="Which of these deeply branching bacteria is considered a polyextremophile?" answer="*Deinococcus radiodurans*" hint="Find the organism nicknamed “Conan the Bacterium” in the final paragraph." >}}
+{{< multiplechoice question="Which of these deeply branching bacteria is considered a polyextremophile?" answer="*Deinococcus radiodurans*" hint="Reread the last paragraph of this section." >}}
 *Aquifex pyrophilus*
 *Deinococcus radiodurans*
 *Staphylococcus aureus*
@@ -82,7 +82,7 @@ produce molecular hydrogen, which can be used in industry
 
 {{< textin question="Many of the deeply branching bacteria are aquatic and hyperthermophilic, found near underwater volcanoes and thermal ocean ________." answer="vents" hint="Use the environmental location given for Aquifex and Thermotoga species." >}}
 
-{{< textin question="The deeply branching bacterium *Deinococcus radiodurans* is able to survive exposure to high doses of ________." answer="ionizing radiation" hint="Distinguish the radiation dose it withstands from the other environmental extremes in the final paragraph." >}}
+{{< textin question="The deeply branching bacterium *Deinococcus radiodurans* is able to survive exposure to high doses of ________." answer="ionizing radiation" hint="Reread the last paragraph of this section." >}}
 
 {{< multiplechoice question="What is thought to account for the unique radiation resistance of *D. radiodurans*?" answer="unique mechanisms of DNA repair" hint="Read the final clause of the paragraph about this bacterium's resistance." >}}
 unique mechanisms of DNA repair

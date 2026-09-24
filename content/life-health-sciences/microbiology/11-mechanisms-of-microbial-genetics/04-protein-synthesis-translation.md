@@ -29,18 +29,22 @@ Whereas 61 of the 64 possible triplets code for amino acids, three of the 64 cod
 
 The genetic code is nearly universal. With a few exceptions, virtually all species use the same genetic code for protein synthesis, which is powerful evidence that all extant life on earth shares a common origin. However, unusual amino acids such as selenocysteine and pyrrolysine have been observed in archaea and bacteria. In the case of selenocysteine, the codon used is UGA (normally a stop codon). However, UGA can encode for selenocysteine using a stem-loop structure (known as the selenocysteine insertion sequence, or SECIS element), which is found at the 3′ untranslated region of the mRNA. Pyrrolysine uses a different stop codon, UAG. The incorporation of pyrrolysine requires the *pylS* gene and a unique transfer RNA (tRNA) with a CUA anticodon.
 
-{{< mediafigure src="microbiology/OSC_Microbio_11_04_GenCode" alt="A codon table with the first letter of the codon down the left side (U, C, A, G), the second letter across the top (U, C, A, G), and the third letter down the right side (U, C, A, G) of each row, so each row, column, and sub-row combination names one three-letter codon. Stop codons are printed in red and the start codon, AUG, is printed in green." longdesc="The table is a 4×4 grid of blocks, one block for each combination of the codon's first and second letters. Reading down the far-left column gives the first letter of the codon (U, C, A, or G); reading across the top row gives the second letter (U, C, A, or G); and reading down the third-letter column at the right edge of each row block gives the third letter (U, C, A, or G) for whichever line inside that block is being read. A codon is found by combining the row, column, and sub-row letters in that order, then reading the amino acid abbreviation — or, in the two red cells of that block, the word 'stop' — printed beside the group of codons that share it. The start codon, AUG, is picked out in green inside the third row block." kind="diagram" eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_11_04_GenCode" alt="A codon table with the first letter of the codon down the left side (U, C, A, G), the second letter across the top (U, C, A, G), and the third letter down the right side (U, C, A, G) of each row, so each row, column, and sub-row combination names one three-letter codon. Stop codons are printed in red and the start codon, AUG, is printed in green." longdesc="The table is a 4×4 grid of blocks, one block for each combination of the codon's first and second letters. Reading down the far-left column gives the first letter of the codon (U, C, A, or G); reading across the top row gives the second letter (U, C, A, or G); and reading down the third-letter column at the right edge of each row block gives the third letter (U, C, A, or G) for whichever line inside that block is being read. A codon is found by combining the row, column, and sub-row letters in that order, then reading the amino acid abbreviation printed beside the codon or group of codons that share it. The three stop codons and the word 'stop' beside each are printed in red text: UAA and UAG in the U-first, A-second block, and UGA in the U-first, G-second block, where it sits between UGU and UGC (Cys) and UGG (Trp). The start codon, AUG, and its amino acid, Met, are printed in green inside the third row block. The axis headings read first letter (left), second letter (top), and third letter (right)." kind="diagram" eager="true" >}}
 This figure shows the genetic code for translating each nucleotide triplet in mRNA into an amino acid or a termination signal in a nascent protein. The first letter of a codon is shown vertically on the left, the second letter of a codon is shown horizontally across the top, and the third letter of a codon is shown vertically on the right. (credit: modification of work by National Institutes of Health)
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
-{{< textin
+{{< multiplechoice
   question="How many bases are in each codon?"
   answer="three"
-  accept="3"
-  hint="Recall the length of the nucleotide sequence that specifies one amino acid."
+  hint="Reread the first two paragraphs of The Genetic Code."
 >}}
+two
+three
+four
+five
+{{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Using the genetic code table above, what amino acid is coded for by the codon AAU?"
@@ -53,7 +57,7 @@ Asparagine
 Serine
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What happens when a stop codon is reached?" hint="Think about what is missing for a stop codon, and what that absence triggers." >}}
+{{< selfcheck question="What happens when a stop codon is reached?" hint="Reread the third paragraph of The Genetic Code and the Termination subsection." >}}
 A stop codon (UAA, UAG, or UGA) has no complementary tRNA. On aligning with the A site, the nonsense codon is recognized by release factors in prokaryotes and eukaryotes, which cause the P-site amino acid to detach from its tRNA, releasing the newly made polypeptide. The small and large ribosomal subunits then dissociate from the mRNA and from each other.
 ===CHECKS===
 A stop codon has no complementary tRNA
@@ -72,7 +76,7 @@ A ribosome is a complex macromolecule composed of catalytic rRNAs (called ribozy
 
 Each mRNA molecule is simultaneously translated by many ribosomes, all synthesizing protein in the same direction: reading the mRNA from 5′ to 3′ and synthesizing the polypeptide from the N terminus to the C terminus. The complete structure containing an mRNA with multiple associated ribosomes is called a **polyribosome** (or **polysome**). In both bacteria and archaea, before transcriptional termination occurs, each protein-encoding transcript is already being used to begin synthesis of numerous copies of the encoded polypeptide(s) because the processes of transcription and translation can occur concurrently, forming polyribosomes (see the figure below). The reason why transcription and translation can occur simultaneously is because both of these processes occur in the same 5′ to 3′ direction, they both occur in the cytoplasm of the cell, and because the RNA transcript is not processed once it is transcribed. This allows a prokaryotic cell to respond to an environmental signal requiring new proteins very quickly. In contrast, in eukaryotic cells, simultaneous transcription and translation is not possible. Although polyribosomes also form in eukaryotes, they cannot do so until RNA synthesis is complete and the RNA molecule has been modified and transported out of the nucleus.
 
-{{< mediafigure src="microbiology/OSC_Microbio_11_04_Cotrantxn" alt="A double strand of DNA with an RNA polymerase enzyme partway along it, spinning out a single new RNA strand. Behind the enzyme, ribosomes have already attached to the growing RNA and are assembling polypeptide chains; farther still from the enzyme, where the RNA is longest, a row of many ribosomes is bound along it, one behind another." longdesc="At the left, a boxed close-up shows RNA polymerase, drawn as a large oval, sitting on double-stranded DNA (labeled 3′ and 5′ on the upper strand, 5′ and 3′ on the lower) and spinning out a single magenta RNA strand — labeled mRNA, with its free 5′ end already carrying one ribosome that is translating a short polypeptide. An arrow points from this boxed panel to a wider view at the right: RNA polymerase molecules run left to right along the DNA in the direction of transcription; behind each one, progressively longer magenta mRNA strands trail off in the direction of translation, each strand studded with a row of ribosomes — more ribosomes on the longer, older strands — forming a polyribosome." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_11_04_Cotrantxn" alt="A double strand of DNA with an RNA polymerase enzyme partway along it, spinning out a single new RNA strand. Behind the enzyme, ribosomes have already attached to the growing RNA and are assembling polypeptide chains; farther still from the enzyme, where the RNA is longest, a row of many ribosomes is bound along it, one behind another." longdesc="At the left, a boxed close-up shows RNA polymerase, drawn as a large oval, sitting on double-stranded DNA (labeled 3′ and 5′ on the upper strand, 5′ and 3′ on the lower) and spinning out a single magenta strand labeled mRNA, its 3′ end inside the polymerase; toward its free 5′ end three ribosomes are already bound, each trailing a chain labeled polypeptide. A curved arrow points from this box to a wider view at the right: four RNA polymerase molecules sit along one DNA line (3′ at its left end), with a red arrow labeled direction of transcription pointing right. From each polymerase a magenta mRNA hangs down to its free end (labeled mRNA (5′ end)), studded with ribosomes that each trail a polypeptide chain; from left to right the strands grow longer and carry more ribosomes (3, 5, 7, then 8), and the leftmost strand's row is bracketed polyribosome. An upward arrow labeled direction of translation runs beside the rightmost strand, from its 5′ end toward the polymerase." kind="diagram" >}}
 In prokaryotes, multiple RNA polymerases can transcribe a single bacterial gene while numerous ribosomes concurrently translate the mRNA transcripts into polypeptides. In this way, a specific protein can rapidly reach a high concentration in the bacterial cell.
 {{< /mediafigure >}}
 
@@ -84,13 +88,13 @@ Mature tRNAs take on a three-dimensional structure when complementary bases expo
 
 An amino acid is added to the end of a tRNA molecule through the process of tRNA "charging," during which each tRNA molecule is linked to its correct or **cognate amino acid** by a group of enzymes called **aminoacyl tRNA synthetases**. At least one type of aminoacyl tRNA synthetase exists for each of the 20 amino acids. During this process, the amino acid is first activated by the addition of adenosine monophosphate (AMP) and then transferred to the tRNA, making it a **charged tRNA**, and AMP is released.
 
-{{< mediafigure src="microbiology/OSC_Microbio_11_04_tRNA" alt="Three drawings of the same tRNA molecule. (a) A single strand folds into a cross-like shape; one end, the amino acid attachment site, carries the sequence ACC, and the opposite end carries a three-letter anticodon paired with a codon on a strand of mRNA below it. (b) A space-filling molecular model of the same tRNA, shaped like the letter L. (c) A simplified zigzag line drawing of the same tRNA." longdesc="(a) The folded strand's 3′ end sits at the top of the amino-acid-attachment arm and reads A-C-C; the 5′ end is also at the top, on the neighboring arm. Following the strand down from the fold, the base of the cross carries a three-letter anticodon, shown paired by short dashed lines to a complementary three-letter codon printed on the mRNA strand just below, which is itself labeled 5′ at the left and 3′ at the right. (b) The same molecule rendered as a space-filling model, narrow at the amino-acid-attachment end and widening toward the anticodon end. (c) The same molecule reduced to a single zigzag line, labeled at the same two ends." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_11_04_tRNA" alt="Three drawings of the same tRNA molecule. (a) A single strand folds into a cross-like shape; one end, the amino acid attachment site, carries the sequence ACC, and the opposite end carries a three-letter anticodon paired with a codon on a strand of mRNA below it. (b) A space-filling molecular model of the same tRNA, shaped like the letter L. (c) A simplified zigzag line drawing of the same tRNA." longdesc="(a) The folded strand's 3′ end sits at the top of the arm circled and labeled amino acid attachment site, reading A-C-C from the tip down; the 5′ end is also at the top, on the neighboring arm. Rungs join facing stretches of the strand in each arm; the stretch just above the bottom loop is circled and labeled intramolecular base pairing. The bottom loop carries the circled anticodon C-G-G, paired by short solid lines to the complementary codon G-C-C on the mRNA strand just below, which is labeled 5′ at the left and 3′ at the right. (b) The same molecule rendered as a space-filling model shaped like an upside-down L: the amino acid attachment site is at the tip of the upper arm, at the left, and the anticodon at the bottom of the long vertical arm. (c) The same molecule reduced to a single zigzag line, with the amino acid attachment site at its upper end and the anticodon at its lower end." kind="diagram" >}}
 (a) After folding caused by intramolecular base pairing, a tRNA molecule has one end that contains the anticodon, which interacts with the mRNA codon, and the CCA amino acid binding end. (b) A space-filling model is helpful for visualizing the three-dimensional shape of tRNA. (c) Simplified models are useful when drawing complex processes such as protein synthesis.
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
-{{< selfcheck question="Describe the structure and composition of the prokaryotic ribosome." hint="Give its overall size class, then the size and rRNA content of each of its two subunits." >}}
+{{< selfcheck question="Describe the structure and composition of the prokaryotic ribosome." hint="Reread the first paragraph of Ribosomes." >}}
 A prokaryotic ribosome is a 70S ribosome, a complex macromolecule composed of catalytic rRNAs (ribozymes) and structural rRNAs, as well as many distinct polypeptides; mature rRNAs make up approximately 50% of each ribosome. In *E. coli*, it dissociates into a small 30S subunit, which contains the 16S rRNA subunit, and a large 50S subunit, which contains the 5S and 23S rRNA subunits. The small subunit binds the mRNA template, and the large subunit binds tRNAs.
 ===CHECKS===
 a 70S ribosome
@@ -102,7 +106,7 @@ a large 50S subunit, which contains the 5S and 23S rRNA subunits
 {{< multiplechoice
   question="In what direction is the mRNA template read?"
   answer="5′ to 3′"
-  hint="All ribosomes translating a given mRNA move along it in the same direction, reading toward its 3′ end."
+  hint="Reread the second paragraph of Ribosomes."
 >}}
 3′ to 5′
 5′ to 3′
@@ -110,7 +114,7 @@ Either direction, depending on the ribosome
 5′ to 3′ in prokaryotes, 3′ to 5′ in eukaryotes
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the structure and function of a tRNA." hint="Name the two functional ends of the folded molecule and what each one does." >}}
+{{< selfcheck question="Describe the structure and function of a tRNA." hint="Reread the second and third paragraphs of Transfer RNAs." >}}
 A tRNA is a structural RNA molecule that takes on a three-dimensional shape when complementary bases exposed in the single strand hydrogen bond with each other. This shape positions the CCA amino acid binding end, a cytosine-cytosine-adenine sequence at the 3′ end of the tRNA, at one end, and the anticodon at the other. The anticodon is a three-nucleotide sequence that bonds with an mRNA codon through complementary base pairing, and the amino acid binding end carries the tRNA's cognate amino acid once the tRNA is charged.
 ===CHECKS===
 a three-dimensional shape when complementary bases hydrogen bond with each other
@@ -132,7 +136,7 @@ In eukaryotes, initiation complex formation is similar, with the following diffe
 - The initiator tRNA is a different specialized tRNA carrying methionine, called Met-tRNAi
 - Instead of binding to the mRNA at the Shine-Dalgarno sequence, the eukaryotic initiation complex recognizes the 5′ cap of the eukaryotic mRNA, then tracks along the mRNA in the 5′ to 3′ direction until the AUG start codon is recognized. At this point, the 60S subunit binds to the complex of Met-tRNAi, mRNA, and the 40S subunit.
 
-{{< mediafigure src="microbiology/OSC_Microbio_11_04_TlnInit" alt="A diagram of bacterial translation in three labeled stages. Initiation shows a tRNA carrying the first amino acid binding the start codon AUG alongside the small and large ribosomal subunits. Elongation shows tRNAs adding amino acids one by one to a growing polypeptide chain, moving through the ribosome's E, P, and A sites. Termination shows a release factor recognizing the stop codon UAG, the completed polypeptide separating, and the ribosomal subunits dissociating and recycling." longdesc="At the upper left, a tRNA carrying the first amino acid and bearing the anticodon UAC approaches the mRNA at its start codon, AUG, together with the small ribosomal subunit (drawn as a flat oval) and the large ribosomal subunit (drawn as a dome); the same mRNA strand shows a stop codon, UAG, further along toward its 3′ end. Below, three panels run left to right. In INITIATION, the initiation complex has formed: the tRNA sits in the middle (P) of the ribosome's three sites, which run E, P, A from left to right at the start codon. In ELONGATION, tRNAs add amino acids one by one: a tRNA carrying a long chain of linked circles occupies the P site, a tRNA carrying a single circle occupies the A site, and an empty tRNA is leaving the E site. In TERMINATION, a release factor (drawn in red) has bound the stop codon UAG, now aligned with the A site; the completed polypeptide chain and the release factor separate from the ribosome. A curved arrow labeled 'Components are recycled' returns the dissociated subunits to the upper-left starting point." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_11_04_TlnInit" alt="A diagram of bacterial translation in three labeled stages. Initiation shows a tRNA carrying the first amino acid binding the start codon AUG alongside the small and large ribosomal subunits. Elongation shows tRNAs adding amino acids one by one to a growing polypeptide chain, moving through the ribosome's three unlabeled binding sites (conventionally E, P, and A, left to right). Termination shows a release factor recognizing the stop codon UAG, the completed polypeptide separating, and the ribosomal subunits dissociating and recycling." longdesc="At the upper left, a tRNA carrying the first amino acid and bearing the anticodon UAC approaches the mRNA at its start codon, AUG, together with the small ribosomal subunit (drawn as a flat oval) and the large ribosomal subunit (drawn as a dome); the same mRNA strand shows a stop codon, UAG, further along toward its 3′ end. Below, three panels run left to right. In INITIATION, the initiation complex has formed: the tRNA sits in the large subunit's middle notch (conventionally the P site) of three unlabeled notches that run E, P, A from left to right at the start codon. In ELONGATION, tRNAs add amino acids one by one: a tRNA carrying a long chain of linked circles occupies the middle (P) notch, a tRNA carrying a single circle occupies the right-hand (A) notch, a curved arrow runs from the chain's end over to that single circle, and a curved arrow carries an empty tRNA out of the now-empty left-hand (E) notch. In TERMINATION, a tRNA still holding a chain sits in the middle notch and a release factor (drawn in red) sits in the right-hand notch over the stop codon UAG; beside the ribosome, a free chain labeled completed polypeptide moves away to the left. A curved arrow labeled 'Components are recycled' returns the dissociated subunits to the upper-left starting point." kind="diagram" >}}
 Translation in bacteria begins with the formation of the initiation complex, which includes the small ribosomal subunit, the mRNA, the initiator tRNA carrying N-formyl-methionine, and initiation factors. Then the 50S subunit binds, forming an intact ribosome.
 {{< /mediafigure >}}
 
@@ -175,7 +179,7 @@ During and after translation, polypeptides may need to be modified before they a
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are the components of the initiation complex for translation in prokaryotes?" hint="List every molecule and macromolecule the module names as forming the complex, not only the two ribosomal subunits." >}}
+{{< selfcheck question="What are the components of the initiation complex for translation in prokaryotes?" hint="Reread the first paragraph of Initiation." >}}
 The initiation complex in *E. coli* involves the small 30S ribosome, the mRNA template, three initiation factors that help the ribosome assemble correctly, guanosine triphosphate (GTP) that acts as an energy source, and a special initiator tRNA carrying N-formyl-methionine (fMet-tRNA<sup>fMet</sup>). The 50S ribosomal subunit then binds to this complex, forming an intact ribosome.
 ===CHECKS===
 the small 30S ribosome
@@ -186,7 +190,7 @@ a special initiator tRNA carrying N-formyl-methionine
 
 {{< sortbins
   question="What are two differences between initiation of prokaryotic and eukaryotic translation? Sort each phrase under the type of initiation it describes."
-  hint="One difference is which amino acid the initiator tRNA carries; the other is what sequence on the mRNA the ribosome recognizes."
+  hint="Reread the Initiation subsection, including its list of eukaryotic differences."
 >}}
 {"bins": ["Prokaryotic initiation", "Eukaryotic initiation"],
  "items": [
@@ -198,7 +202,7 @@ a special initiator tRNA carrying N-formyl-methionine
 
 **Check Your Understanding**
 
-{{< selfcheck question="What occurs at each of the three active sites of the ribosome?" hint="Give the A, P, and E sites in that order, in the order a tRNA passes through them." >}}
+{{< selfcheck question="What occurs at each of the three active sites of the ribosome?" hint="Reread the first paragraph of Elongation." >}}
 The A (aminoacyl) site binds incoming charged aminoacyl tRNAs. The P (peptidyl) site binds charged tRNAs carrying amino acids that have formed peptide bonds with the growing polypeptide chain but have not yet dissociated from their corresponding tRNA. The E (exit) site releases dissociated tRNAs so that they can be recharged with free amino acids.
 ===CHECKS===
 The A site binds incoming charged aminoacyl tRNAs
@@ -206,7 +210,7 @@ The P site binds charged tRNAs that have formed peptide bonds with the growing p
 The E site releases dissociated tRNAs so that they can be recharged
 {{< /selfcheck >}}
 
-{{< selfcheck question="What causes termination of translation?" hint="Name the kind of codon involved and what it lacks that lets release factors act." >}}
+{{< selfcheck question="What causes termination of translation?" hint="Reread the Termination subsection." >}}
 Termination occurs when a nonsense codon (UAA, UAG, or UGA) is encountered for which there is no complementary tRNA. On aligning with the A site, the nonsense codon is recognized by release factors in prokaryotes and eukaryotes, causing the P-site amino acid to detach from its tRNA and releasing the newly made polypeptide.
 ===CHECKS===
 a nonsense codon (UAA, UAG, or UGA) for which there is no complementary tRNA
@@ -263,7 +267,7 @@ the P-site amino acid detaches, releasing the newly made polypeptide
 {{< multiplechoice
   question="Which of the following is the name of the three-base sequence in the mRNA that binds to a tRNA molecule?"
   answer="codon"
-  hint="This sequence sits on the mRNA, not on the tRNA."
+  hint="Reread the first paragraph of The Genetic Code."
 >}}
 P site
 codon
@@ -274,7 +278,7 @@ CCA binding site
 {{< multiplechoice
   question="Each codon within the genetic code encodes a different amino acid."
   answer="False"
-  hint="Recall how many codons exist compared with how many amino acids are commonly incorporated into proteins."
+  hint="Reread the second paragraph of The Genetic Code."
 >}}
 True
 False
@@ -284,10 +288,10 @@ False
   question="The third position within a codon, in which changes often result in the incorporation of the same amino acid into the growing polypeptide, is called the ________."
   answer="wobble position"
   accept="wobble"
-  hint="This position is less critical than the first two for determining the amino acid."
+  hint="Reread the second paragraph of The Genetic Code."
 >}}
 
-{{< selfcheck question="What is meant by the genetic code being nearly universal?" hint="State the shared-code claim itself, then name the exceptions the module describes." >}}
+{{< selfcheck question="What is meant by the genetic code being nearly universal?" hint="Reread the fourth paragraph of The Genetic Code." >}}
 The genetic code is nearly universal because, with a few exceptions, virtually all species use the same genetic code for protein synthesis — powerful evidence that all extant life on earth shares a common origin. The exceptions are unusual amino acids such as selenocysteine and pyrrolysine, observed in archaea and bacteria: selenocysteine is encoded by UGA (normally a stop codon) using a stem-loop structure called the selenocysteine insertion sequence (SECIS element), and pyrrolysine uses the stop codon UAG, requiring the *pylS* gene and a unique tRNA with a CUA anticodon.
 ===CHECKS===
 virtually all species use the same genetic code for protein synthesis
@@ -296,7 +300,7 @@ selenocysteine is encoded by UGA using a stem-loop structure called the selenocy
 pyrrolysine uses the stop codon UAG, requiring the pylS gene and a unique tRNA with a CUA anticodon
 {{< /selfcheck >}}
 
-{{< selfcheck question="Prior to the elucidation of the genetic code, prominent scientists, including Francis Crick, had predicted that each mRNA codon, coding for one of the 20 amino acids, needed to be at least three nucleotides long. Why is it not possible for codons to be any shorter?" hint="Work out how many combinations a one- or two-nucleotide code would allow, using four possible nucleotides at each position." >}}
+{{< selfcheck question="Prior to the elucidation of the genetic code, prominent scientists, including Francis Crick, had predicted that each mRNA codon, coding for one of the 20 amino acids, needed to be at least three nucleotides long. Why is it not possible for codons to be any shorter?" hint="Reread the first two paragraphs of The Genetic Code." >}}
 A codon must specify one of 20 amino acids using only four possible nucleotides at each position. A one-nucleotide code would give only $4^1$, or four, possible combinations — far fewer than 20. A two-nucleotide code would give only $4^2$, or sixteen, possible combinations — still fewer than 20. Only a three-nucleotide code, with $4^3$, or sixty-four, possible combinations, is large enough to specify all 20 amino acids.
 ===CHECKS===
 A codon must specify one of 20 amino acids using only four possible nucleotides at each position
@@ -305,7 +309,7 @@ A two-nucleotide code would give only sixteen possible combinations
 Only a three-nucleotide code, with sixty-four possible combinations, is large enough to specify all 20 amino acids
 {{< /selfcheck >}}
 
-{{< selfcheck question="Below is an antisense DNA sequence. Translate the mRNA molecule synthesized using the genetic code, recording the resulting amino acid sequence, indicating the N and C termini. Antisense DNA strand: `3′-TACTGACTGACGATC-5′`" hint="Pair each template base with its RNA complement (T pairs with A, A with U, C with G, G with C) in order, then read the resulting mRNA in codons from its 5′ end." >}}
+{{< selfcheck question="Below is an antisense DNA sequence. Translate the mRNA molecule synthesized using the genetic code, recording the resulting amino acid sequence, indicating the N and C termini. Antisense DNA strand: `3′-TACTGACTGACGATC-5′`" hint="Reread the third paragraph of The Genetic Code and use the genetic code table." >}}
 Pairing each base of the antisense (template) strand with its RNA complement, in order, gives the mRNA `5′-AUGACUGACUGCUAG-3′`. Reading this from the 5′ end in codons: AUG, ACU, GAC, UGC, UAG. Using the genetic code, AUG codes for methionine (the start codon), ACU codes for threonine, GAC codes for aspartate, UGC codes for cysteine, and UAG is a stop codon. The resulting polypeptide, from the N terminus to the C terminus, is methionine–threonine–aspartate–cysteine; translation terminates at the UAG stop codon, so no amino acid is added for it.
 ===CHECKS===
 Pairing each base of the antisense strand with its RNA complement gives the mRNA 5′-AUGACUGACUGCUAG-3′
@@ -319,7 +323,7 @@ the polypeptide, N to C terminus, is methionine–threonine–aspartate–cystei
 {{< multiplechoice
   question="Which component is the last to join the initiation complex during the initiation of translation?"
   answer="the large ribosomal subunit"
-  hint="The small subunit, mRNA, and initiator tRNA assemble first; one component completes the intact ribosome."
+  hint="Reread the first paragraph of Initiation."
 >}}
 the mRNA molecule
 the small ribosomal subunit
@@ -330,7 +334,7 @@ the initiator tRNA
 {{< multiplechoice
   question="During elongation in translation, to which ribosomal site does an incoming charged tRNA molecule bind?"
   answer="A site"
-  hint="This is the first of the three functional sites a charged tRNA passes through."
+  hint="Reread the first paragraph of Elongation."
 >}}
 A site
 P site
@@ -341,7 +345,7 @@ B site
 {{< multiplechoice
   question="Which of the following is the amino acid that appears at the N-terminus of all newly translated prokaryotic and eukaryotic polypeptides?"
   answer="methionine"
-  hint="This is the amino acid carried by the initiator tRNA that recognizes the start codon."
+  hint="Reread the third paragraph of The Genetic Code and the first paragraph of Initiation."
 >}}
 tryptophan
 methionine
@@ -352,7 +356,7 @@ glycine
 {{< multiplechoice
   question="When the ribosome reaches a nonsense codon, which of the following occurs?"
   answer="the polypeptide is released"
-  hint="No tRNA carries an anticodon complementary to a nonsense codon."
+  hint="Reread the Termination subsection."
 >}}
 a methionine is incorporated
 the polypeptide is released
@@ -363,7 +367,7 @@ the A site binds to a charged tRNA
 {{< textin
   question="The enzyme that adds an amino acid to a tRNA molecule is called ________."
   answer="aminoacyl-tRNA synthetase"
-  hint="At least one type of this enzyme exists for each of the 20 amino acids."
+  hint="Reread the third paragraph of Transfer RNAs."
 >}}
 
 {{< mediafigure src="microbiology/OSC_Microbio_11_04_TransComp_img" alt="A ribosome drawn as a dome sitting above a horizontal strand of many lettered bases, with a smaller oval beneath the dome. Two zigzag shapes sit inside the dome, one connected to a rising chain of linked circles near the top of the figure; a third zigzag shape, carrying a single small circle, sits to the left of the dome and touches one three-letter group on the strand. An arrow beneath the strand points to the right. Nine leader lines, lettered A through I, point to these parts and to a three-letter group at the base of the left-hand zigzag shape." kind="diagram" >}}
@@ -385,7 +389,7 @@ I marks the large ribosomal subunit, and the drawing's letter E marks the small 
 
 {{< sortbins
   question="Sort each property below under whether it describes translation in bacteria or in eukaryotes, using the comparison table above."
-  hint="Ribosome and subunit sizes, the initiator amino acid, the Shine-Dalgarno sequence, and the timing of transcription and translation all differ between the two groups."
+  hint="Check each property against the comparison table above."
 >}}
 {"bins": ["Bacteria", "Eukaryotes"],
  "items": [
@@ -406,16 +410,16 @@ I marks the large ribosomal subunit, and the drawing's letter E marks the small 
 {{< textin
   question="Transcription and translation are not coupled in eukaryotes because transcription occurs in the ________, whereas translation occurs in the cytoplasm."
   answer="nucleus"
-  hint="This is the membrane-bound compartment that separates the two processes in eukaryotic cells."
+  hint="Reread the Summary bullet on whether transcription and translation are coupled."
 >}}
 
 {{< textin
-  question="Eukaryotic ribosomes located in the mitochondria and chloroplasts are ________, the same size class as prokaryotic ribosomes."
-  answer="70S"
-  accept="70 S"
-  hint="Organelle ribosomes in eukaryotic cells resemble prokaryotic ribosomes, not the 80S ribosomes of the surrounding cytoplasm."
+  question="The complete structure containing an mRNA with multiple associated ribosomes is called a ________."
+  answer="polyribosome"
+  accept="polysome"
+  hint="Reread the second paragraph of Ribosomes."
 >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 11.4: Protein Synthesis (Translation)](https://openstax.org/books/microbiology/pages/11-4-protein-synthesis-translation) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP; alts rewritten from the vendored images rather than copied from the source (the source alts for the genetic-code table, the co-transcriptional-translation diagram, the tRNA panels, the initiation/elongation/termination diagram, and the prokaryote/eukaryote diagram carry typos and are supplemented here with a `longdesc` walking each figure's steps or labels; the genetic-code table's `longdesc` explains how to read the table rather than listing all 64 codons); the *Comparison of Translation in Bacteria Versus Eukaryotes* figure, which prints no source caption, is transcribed as a Markdown table (its own `sortbins` under the third objective) and kept as a figure with no caption line; the ten body Check Your Understanding bullets (three boxes of three, three, and four) are rendered as body items at each note's position — 4 graded (`textin`, `multiplechoice`, `sortbins`) from this module's own sentences, table, and genetic-code figure, and 6 left as self-checks whose model answers are drawn from this section's text; of the source's four unkeyed Short Answer and two unkeyed Critical Thinking questions, 1 is graded from this module's own text and table (the prokaryote/eukaryote Short Answer, converted to the *Bacteria*/*Eukaryotes* `sortbins` fed by the comparison table), 4 stay self-checks with model answers assembled from this section's own text (the "nearly universal" question, including its selenocysteine/pyrrolysine exceptions; the antisense-strand translation, fully worked from the genetic-code table above; why codons cannot be shorter than three nucleotides, worked from the module's own $4^1$/$4^2$/$4^3$ arithmetic; and the figure-labelling Critical Thinking item, whose model answer is the letter-to-part mapping read from the image, including the ribosome's E, P, and A sites read off the leader line lettered C in the order they fall along the mRNA's 5′→3′ direction), and 1 (the "why does translation terminate at a stop codon" Short Answer) is dropped rather than converted or kept as a Practice self-check because it duplicates two body Check Your Understanding bullets already on the page (the first box's "what happens when a stop codon is reached?" and the third box's "what causes termination of translation?") — the source prints no answer key for any of the five that are used; key terms compiled from the module's 26 defined terms and the book's Glossary appendix, with 1 taken from the defining sentence (*initiation of protein synthesis* — no appendix entry matches its sense; *protein synthesis* and *aminoacyl tRNA synthetase* both have appendix entries, under the headwords "translation (protein synthesis)" and "aminoacyl-tRNA synthetase" respectively); the True/False item rendered as a two-option multiple choice; two filler `textin` items built from this section's own Summary and body sentences to fill the third objective's Practice group, one with an `accept` for its unhyphenated Svedberg spelling (`70 S`); primes normalized to U+2032 (′) throughout, matching the source's own mixed use of the right single quote and the prime character.</small>
+<small>This section is adapted from [Microbiology, Section 11.4: Protein Synthesis (Translation)](https://openstax.org/books/microbiology/pages/11-4-protein-synthesis-translation) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP; alts rewritten from the vendored images rather than copied from the source (the source alts for the genetic-code table, the co-transcriptional-translation diagram, the tRNA panels, the initiation/elongation/termination diagram, and the prokaryote/eukaryote diagram carry typos and are supplemented here with a `longdesc` walking each figure's steps or labels; the genetic-code table's `longdesc` explains how to read the table rather than listing all 64 codons); the *Comparison of Translation in Bacteria Versus Eukaryotes* figure, which prints no source caption, is transcribed as a Markdown table (its own `sortbins` under the third objective) and kept as a figure with no caption line; the ten body Check Your Understanding bullets (three boxes of three, three, and four) are rendered as body items at each note's position — 4 graded (`multiplechoice`, `sortbins`) from this module's own sentences, table, and genetic-code figure — the "How many bases are in each codon?" bullet is a `multiplechoice` with the adjacent counts two, four, and five as distractors rather than a `textin`, because this book never keys a text-entry blank with a number — and 6 left as self-checks whose model answers are drawn from this section's text; of the source's four unkeyed Short Answer and two unkeyed Critical Thinking questions, 1 is graded from this module's own text and table (the prokaryote/eukaryote Short Answer, converted to the *Bacteria*/*Eukaryotes* `sortbins` fed by the comparison table), 4 stay self-checks with model answers assembled from this section's own text (the "nearly universal" question, including its selenocysteine/pyrrolysine exceptions; the antisense-strand translation, fully worked from the genetic-code table above; why codons cannot be shorter than three nucleotides, worked from the module's own $4^1$/$4^2$/$4^3$ arithmetic; and the figure-labelling Critical Thinking item, whose model answer is the letter-to-part mapping read from the image, including the ribosome's E, P, and A sites read off the leader line lettered C in the order they fall along the mRNA's 5′→3′ direction), and 1 (the "why does translation terminate at a stop codon" Short Answer) is dropped rather than converted or kept as a Practice self-check because it duplicates two body Check Your Understanding bullets already on the page (the first box's "what happens when a stop codon is reached?" and the third box's "what causes termination of translation?") — the source prints no answer key for any of the five that are used; key terms compiled from the module's 26 defined terms and the book's Glossary appendix, with 1 taken from the defining sentence (*initiation of protein synthesis* — no appendix entry matches its sense; *protein synthesis* and *aminoacyl tRNA synthetase* both have appendix entries, under the headwords "translation (protein synthesis)" and "aminoacyl-tRNA synthetase" respectively); the True/False item rendered as a two-option multiple choice; two filler `textin` items to fill the third objective's Practice group, one built from the Summary's coupling sentence ("nucleus") and one from the Ribosomes paragraph's polyribosome sentence, with the module's synonym "polysome" accepted (it replaced an earlier "70S" cloze whose key the comparison-table `sortbins` in the same group prints); primes normalized to U+2032 (′) throughout, matching the source's own mixed use of the right single quote and the prime character.</small>

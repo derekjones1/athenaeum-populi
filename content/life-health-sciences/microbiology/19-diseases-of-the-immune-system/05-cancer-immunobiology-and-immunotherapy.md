@@ -67,7 +67,7 @@ therapeutic vaccines are used to treat patients who already have cancer and are 
 therapeutic vaccines exploit tumor-specific antigens to stimulate the immune system to selectively attack cancer cells already present
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe at least two different approaches to developing therapeutic anti-cancer vaccines." hint="The module names three: a cell-based vaccine, an oncolytic-virus vaccine, and a genetically engineered vaccine built like a DNA vaccine." >}}
+{{< selfcheck question="Describe at least two different approaches to developing therapeutic anti-cancer vaccines." hint="Reread the second and third paragraphs of Cancer Vaccines." >}}
 Several approaches to therapeutic cancer vaccines have been developed. Sipuleucel-T (Provenge), the first FDA-approved therapeutic cancer vaccine, is custom designed using the patient's own cells: antigen-presenting cells are removed from the patient, cultured with a tumor-specific molecule, and then returned to the patient to enhance the immune response against the cancer cells. Talimogene laherparepvec (T-VEC, also called Imlygic) instead contains a virus that is injected into tumors, where it infects and lyses the tumor cells and also induces a more general antitumor immune response in lesions or tumors besides the ones injected. A third approach uses genetic engineering, in an approach similar to that used for DNA vaccines, to build a recombinant plasmid carrying genes for tumor antigens that tricks the immune system into targeting the tumor gene product as a foreign invader.
 ===CHECKS===
 sipuleucel-T (Provenge) is custom designed using the patient's own cells, cultured with a tumor-specific molecule and returned to the patient
@@ -98,7 +98,7 @@ Viruses typically destroy the cells they infect—a fact responsible for any num
 {{< multiplechoice
   question="Cancer results when a mutation leads to which of the following?"
   answer="loss of cell-cycle control"
-  hint="The opening paragraph of this section describes cancer as a loss of the ability to regulate this process, not a stoppage of it."
+  hint="Reread the opening sentence of this section."
 >}}
 cell death
 apoptosis
@@ -109,7 +109,7 @@ shutdown of the cell cycle
 {{< multiplechoice
   question="Tumor antigens are ________ that are inappropriately expressed and found on abnormal cells."
   answer="self antigens"
-  hint="These are the body's own molecules — they were never screened out during lymphocyte development, which is exactly why they can stimulate an adaptive response."
+  hint="Reread the opening paragraph of Cell-Mediated Response to Tumors."
 >}}
 self antigens
 foreign antigens
@@ -120,7 +120,7 @@ T-cell receptors
 {{< multiplechoice
   question="Beyond releasing perforins and granzymes, activated cytotoxic T cells can induce apoptosis in abnormal cells by a second killing mechanism. What is it called?"
   answer="the CD95 (Fas) cytotoxic pathway"
-  hint="This pathway is named for a cell-surface protein the cytotoxic T cell binds directly, rather than for a secreted molecule."
+  hint="Reread the last sentence of the second paragraph of Cell-Mediated Response to Tumors."
 >}}
 activation by interleukin-12 (IL-12)
 the CD95 (Fas) cytotoxic pathway
@@ -162,7 +162,7 @@ therapeutic cancer vaccines exploit tumor-specific antigens to selectively attac
 {{< textin
   question="Talimogene laherparepvec (T-VEC, also called Imlygic) was approved by the FDA in 2015 to treat ________, a form of skin cancer."
   answer="melanoma"
-  hint="This is the general term for the skin cancer that this oncolytic-virus vaccine treats."
+  hint="Reread the paragraph on the first FDA-approved therapeutic cancer vaccines in Cancer Vaccines."
 >}}
 
 ---

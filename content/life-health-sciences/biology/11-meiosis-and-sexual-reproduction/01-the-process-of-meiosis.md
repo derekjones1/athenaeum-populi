@@ -25,7 +25,7 @@ Most animals and plants and many unicellular organisms are diploid and therefore
 
 **Meiosis** is the *nuclear division* that forms haploid cells from diploid cells, and it employs many of the same cellular mechanisms as mitosis. However, as you have learned, **mitosis** produces daughter cells whose nuclei are genetically identical to the original parent nucleus. In mitosis, both the parent and the daughter nuclei are at the same "ploidy level"—diploid in the case of most multicellular animals. Plants use mitosis to grow as sporophytes, and to grow and produce eggs and sperm as gametophytes; so they use mitosis for both haploid and diploid cells (as well as for all other ploidies). In meiosis, the starting nucleus is always diploid and the daughter nuclei that result are haploid. To achieve this reduction in chromosome number, meiosis consists of one round of chromosome replication followed by two rounds of nuclear division. Because many events that occur during each of the division stages are analogous to the events of mitosis, the same stage names are assigned. However, because there are two rounds of division, the major process and the stages are designated with a "I" or a "II." Thus, **meiosis I** is the first round of meiotic division and consists of prophase I, prometaphase I, and so on. Likewise, **Meiosis II** (during which the second round of meiotic division takes place) includes prophase II, prometaphase II, and so on.
 
-{{< mediafigure src="biology/Figure_11_01_07_meiosis" kind="diagram" alt="A three-stage diagram: in Interphase, a diploid cell holds one pair of homologous chromosomes (one blue, one purple) that replicate into paired sister chromatids; in Meiosis I, the homologous chromosomes separate into two haploid cells, each still holding a pair of sister chromatids; in Meiosis II, those sister chromatids separate, yielding four haploid cells that each hold a single unreplicated chromosome." longdesc="Four rows of shaded circles connected by white arrows, top to bottom. Row 1, labeled Interphase: one cell holds a single blue chromosome and a single purple chromosome side by side, labeled 'Pair of Homologous Chromosomes in Diploid Parent Cell.' Row 2, reached by an arrow labeled 'Chromosomes Replicate': the same cell now holds an X-shaped blue chromosome and an X-shaped purple chromosome, labeled 'Diploid Cell with Replicated Chromosomes,' with 'Pair of Replicated Homologous Chromosomes' pointing to the pair and 'Sister Chromatids' pointing to the two arms of one X. Row 3, labeled Meiosis I, reached by an arrow numbered 1 and captioned 'Homologous Chromosomes Separate': the cell has divided into two cells, one holding the X-shaped blue chromosome and the other the X-shaped purple chromosome, both labeled 'Haploid Cells with Replicated Chromosomes.' Row 4, labeled Meiosis II, reached by an arrow numbered 2 and captioned 'Sister Chromatids Separate': each of the two cells has divided again, for four cells total, each now holding a single unreplicated chromosome — two with a single blue chromosome, two with a single purple chromosome — labeled 'Haploid Cells with Unreplicated Chromosomes.'" eager="true" >}}
+{{< mediafigure src="biology/Figure_11_01_07_meiosis" kind="diagram" alt="A three-stage diagram: in Interphase, a diploid cell holds one pair of homologous chromosomes (one blue, one purple) that replicate into paired sister chromatids; in Meiosis I, the homologous chromosomes separate into two haploid cells, each still holding a pair of sister chromatids; in Meiosis II, those sister chromatids separate, yielding four haploid cells that each hold a single unreplicated chromosome." longdesc="Five rows of shaded circles connected by white arrows, top to bottom, under three band labels. Interphase band: the first cell holds a single blue chromosome and a single purple chromosome side by side, labeled 'Pair of Homologous Chromosomes in Diploid Parent Cell'; an arrow leads to a second cell holding an X-shaped blue chromosome and an X-shaped purple chromosome side by side, and the words 'Chromosomes Replicate' sit beside the arrow below it. Meiosis I band: the third cell holds the two X-shaped homologs pressed together and overlapping, labeled 'Diploid Cell with Replicated Chromosomes,' with 'Pair of Replicated Homologous Chromosomes' pointing to the pair and 'Sister Chromatids' pointing to two chromatids of one X; the lower tips of the blue and purple chromatids are swapped where they cross. From it, a forked arrow marked 1, 'Homologous Chromosomes Separate,' leads to two cells labeled 'Haploid Cells with Replicated Chromosomes': one holds the blue X, one of whose chromatids now has a purple tip, and the other the purple X, one of whose chromatids has a blue tip. Meiosis II band: a forked arrow from each of those cells, marked 2, 'Sister Chromatids Separate,' leads to four cells labeled 'Haploid Cells with Unreplicated Chromosomes,' each holding a single unreplicated chromosome — one all blue, one blue with a purple tip, one purple with a blue tip, and one all purple." eager="true" >}}
 Overview of Meiosis. The production of gametes is a crucial process for sexually reproducing organisms. Meiosis is the mechanism used to reduce diploid cells to haploid gametes while introducing genetic diversity. Prior to meiosis, chromosomes are replicated in S-phase to ensure proper number of chromosomes in the resulting gametes. During meiosis, two successive rounds of division reduces the number of chromosomes (ploidy) of the cell by half, going from diploid cells to haploid gametes. Credit: Rao, A., Tag, A, Fletcher, S., and Ryan, K. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -41,7 +41,7 @@ Early in prophase I, before the chromosomes can be seen clearly with a microscop
 
 In humans, even though the X and Y sex chromosomes are not completely homologous (that is, most of their genes differ), there is a small region of homology that allows the X and Y chromosomes to pair up during prophase I. A partial synaptonemal complex develops only between the regions of homology.
 
-{{< mediafigure src="biology/Figure_11_01_01-1258" kind="diagram" alt="A labeled illustration of two homologous chromosomes — one blue, one red — each already duplicated into a pair of sister chromatids, crossed near their centromeres where yellow kinetochore proteins join them, with the synaptonemal complex fusing the two homologs together along the rest of their length." longdesc="One crossed chromosome pair on a white background, with five labels leading to it from the left. 'Homologous chromosomes' points to the upper arms of the pair, one arm blue and the other red, each already forked into two parallel strands. 'Centromere' points to the constricted region where the blue and red chromosomes cross, and a separate 'Kinetochore' label points to the pair of small yellow ovals sitting there. 'Synaptonemal complex' points to the striped, ladder-like band running down the middle of the pair below the crossing point, where the blue and red strands lie joined side by side. 'Sister chromatids' points to the lower arms, where the blue pair and the red pair fan apart again into their own separate, forked ends." >}}
+{{< mediafigure src="biology/Figure_11_01_01-1258" kind="diagram" alt="A labeled illustration of two homologous chromosomes — one blue, one red — each already duplicated into an X of two sister chromatids joined at its centromere, where yellow kinetochore proteins sit, with the synaptonemal complex fusing the two homologs together along the rest of their length." longdesc="Two X-shaped chromosomes on a white background, a red one in front and a blue one lying just behind and beside it, matched arm for arm; each X is two sister chromatids crossing at a centromere. Five labels lead in from the left. 'Homologous chromosomes' is a bracket pointing to two upper arms, one blue and one red — one arm of each homolog. 'Centromere' points to the pinched crossing point of the blue chromosome, and 'Kinetochore' points to the pair of small yellow ovals sitting on the red chromosome's crossing point. 'Synaptonemal complex' points to the fine white ladder-like striping along the blue chromatid where it lies against the red one; this striping runs the full length of every arm, above and below the centromeres. 'Sister chromatids' is a bracket pointing to the two lower arms of the red chromosome, the two chromatids of one homolog." >}}
 Early in prophase I, homologous chromosomes come together to form a synapse. The chromosomes are bound tightly together and in perfect alignment by a protein lattice called a synaptonemal complex and by cohesin proteins at the centromere.
 {{< /mediafigure >}}
 
@@ -49,7 +49,7 @@ Located at intervals along the synaptonemal complex are large protein assemblies
 
 The crossover events are the first source of genetic variation in the nuclei produced by meiosis. A single crossover event between homologous nonsister chromatids leads to a reciprocal exchange of equivalent DNA between an egg-derived chromosome and a sperm-derived chromosome. When a recombinant sister chromatid is moved into a gamete cell it will carry a combination of maternal and paternal genes that did not exist before the crossover. Crossover events can occur almost anywhere along the length of the synapsed chromosomes. Different cells undergoing meiosis will therefore produce different recombinant chromatids, with varying combinations of maternal and parental genes. Multiple crossovers in an arm of the chromosome have the same effect, exchanging segments of DNA to produce genetically recombined chromosomes.
 
-{{< mediafigure src="biology/Figure_11_01_02" kind="diagram" alt="A three-panel diagram of crossover: a blue homologous chromosome and a red homologous chromosome, each split into two sister chromatids and each carrying three allele labels down its length, are first shown aligned side by side; an arrow leads to the two pairs brought together with one inner blue chromatid and one inner red chromatid crossing near their lower ends; a second arrow leads to the result, where the two crossed chromatids have swapped their lowest segment, labeled the recombinant chromatids, while the two outer, uncrossed chromatids are labeled the non-recombinant chromosomes." longdesc="Three panels read left to right, then down. Top left, 'Homologous chromosomes aligned': a blue X-shaped chromosome carries the labels A, B, C down both of its arms, beside a red X-shaped chromosome carrying a, b, c down both of its arms. An arrow leads right to 'Chromatid crossover': the same two chromosomes now sit closer together, with the inner blue arm and the inner red arm crossing near their lower tips. A second arrow leads down to the result: the outer blue arm still reads A, B, C top to bottom and the outer red arm still reads a, b, c — these two are bracketed and labeled 'Non-recombinant chromosomes' — while the inner blue arm now reads A, B, c (its lowest letter recolored to match the red chromosome) and the inner red arm reads a, b, C (its lowest letter recolored to match the blue chromosome); these two are bracketed and labeled 'Recombinant chromatids.'" >}}
+{{< mediafigure src="biology/Figure_11_01_02" kind="diagram" alt="A three-panel diagram of crossover: a blue homologous chromosome and a red homologous chromosome, each split into two sister chromatids and each carrying three allele labels down its length, are first shown aligned side by side; an arrow leads to the two pairs brought together with one inner blue chromatid and one inner red chromatid crossing near their lower ends; a second arrow leads to the result, where the two crossed chromatids have swapped their lowest segment, labeled the recombinant chromatids, while the two outer, uncrossed chromatids are labeled the non-recombinant chromosomes." longdesc="Three panels read left to right, then down. Top left, 'Homologous chromosomes aligned': a blue X-shaped chromosome carries the labels A, B, C down both of its arms, beside a red X-shaped chromosome carrying a, b, c down both of its arms. An arrow leads right to 'Chromatid crossover': the same two chromosomes now sit closer together, with the inner blue arm and the inner red arm crossing near their lower tips. A second arrow leads down to the result: the outer blue arm still reads A, B, C top to bottom and the outer red arm still reads a, b, c — these two are bracketed from below and labeled 'Non-recombinant chromosomes' — while the inner blue chromatid now reads A, B, c, its lowest segment colored red, and the inner red chromatid reads a, b, C, its lowest segment colored blue; these two are bracketed from above and labeled 'Recombinant chromatids.'" >}}
 Crossover occurs between *nonsister chromatids of homologous chromosomes.* The result is an exchange of genetic material between homologous chromosomes (for clarity, only one recombination event between two of the four chromatids is represented).
 {{< /mediafigure >}}
 
@@ -67,7 +67,7 @@ This event—the *random* (or *independent*) assortment of homologous chromosome
 
 To summarize, meiosis I creates genetically diverse gametes in two ways. First, during prophase I, crossover events between the nonsister chromatids of each homologous pair of chromosomes generate recombinant chromatids with new combinations of maternal and paternal genes. Second, the random assortment of tetrads on the metaphase plate produces unique combinations of maternal and paternal chromosomes that will make their way into the gametes.
 
-{{< mediafigure src="biology/Figure_11_01_03" kind="diagram" alt="Two anaphase I cells, each showing two pairs of homologous chromosomes (labeled A/a and B/b) being pulled toward opposite poles in one of the two possible orientations; below each cell, arrows lead to four resulting gamete cells showing which alleles end up together — A with B and a with b in the first orientation, A with b and a with B in the second — for four unique combinations across the two arrangements." longdesc="Two large cells side by side, each labeled Anaphase I, both showing two pairs of homologous chromosomes — four duplicated chromosomes — with spindle fibers pulling each pair's members toward opposite poles. In the left cell, the chromosomes labeled A (red) and a (orange) are pulled apart at one spindle axis while B (blue) and b (green) are pulled apart at a second; an arrow below leads to four oval gamete cells, two containing one A (red) chromosome paired with one B (blue) chromosome, and two containing one a (orange) chromosome paired with one b (green) chromosome. In the right cell, the same four chromosomes are arranged in the other possible orientation — A (red) paired with b (green), a (orange) paired with B (blue) — and its own arrow leads to four gamete cells showing that pairing instead: two with A and b together, two with a and B together." >}}
+{{< mediafigure src="biology/Figure_11_01_03" kind="diagram" alt="Two anaphase I cells, each showing two pairs of homologous chromosomes (labeled A/a and B/b) being pulled toward opposite poles in one of the two possible orientations; below each cell, arrows lead to four resulting gamete cells showing which alleles end up together — A with B and a with b in the first orientation, A with b and a with B in the second — for four unique combinations across the two arrangements." longdesc="Two large cells side by side, each labeled Anaphase I, both showing two pairs of homologous chromosomes — four duplicated chromosomes — with spindle fibers pulling each pair's members toward opposite poles. In the left cell, the chromosomes labeled A (red) and a (orange) are pulled apart at one spindle axis while B (blue) and b (green) are pulled apart at a second; an arrow below leads to four oval gamete cells, two containing one A (red) chromosome paired with one B (blue) chromosome, and two containing one a (orange) chromosome paired with one b (green) chromosome. In the right cell, the same four chromosomes are arranged in the other possible orientation — A (red) paired with b (green), a (orange) paired with B (blue) — and its own arrow leads to four gamete cells showing that pairing instead: two with A and b together, two with a and B together. Each group of four gametes is headed 'Resulting Gametes'; in them each chromosome is drawn as a white bar with a coloured band at its allele." >}}
 Random, independent assortment during metaphase I is demonstrated by considering a cell with a set of two chromosomes (n = 2). There are two possible homologous chromosome arrangements at the equatorial plane in metaphase I, that are then separated during anaphase I. The total possible number of different gametes is $2^n$, where n equals the number of chromosomes in a set. In this example, there are four possible genetic combinations for the gametes. With n = 23 in human cells, there are over eight million possible combinations of paternal and maternal chromosomes. Credit: Rao, A. and Fletcher, S. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -105,7 +105,7 @@ The sister chromatids are maximally condensed and aligned at the equator of the 
 
 The sister chromatids are pulled apart by the kinetochore microtubules and move toward opposite poles. Nonkinetochore microtubules elongate the cell.
 
-{{< mediafigure src="biology/Figure_11_01_04" kind="diagram" alt="An eight-panel diagram comparing meiosis I (top row: Prophase I, Metaphase I, Anaphase I, Telophase I and Cytokinesis) with meiosis II (bottom row: Prophase II, Metaphase II, Anaphase II, Telophase II and Cytokinesis), tracking three pairs of homologous chromosomes (each pair one purple and one blue homolog) from synapsis and chiasma formation through independent separation of homologs in meiosis I to the later separation of sister chromatids in meiosis II." longdesc="Two rows of four circular cell panels each, connected left to right by white arrows. Top row, Meiosis I: 'Prophase I' shows a cell with spindle microtubules radiating from two centrosomes toward three synapsed pairs of homologous chromosomes, each pair one purple and one blue homolog already duplicated into sister chromatids, with circled chiasmata where purple and blue chromatids cross and further labels for a centromere, the sister chromatids, and one pair of homologous chromosomes; 'Metaphase I' shows the three pairs lined up together at a dashed metaphase plate, kinetochore microtubules from each pole attached to one homolog of each pair; 'Anaphase I' shows the homologs pulled apart, three chromosomes moving to each pole, while each chromosome's two sister chromatids remain attached at the centromere; 'Telophase I and Cytokinesis' shows the cell pinched by a cleavage furrow into two cells, each receiving three intact, still-doubled chromosomes in a mix of purple and blue. Bottom row, Meiosis II, following both Telophase I daughter cells (each phase drawn as two cells, one above the other): 'Prophase II' shows each cell's three doubled chromosomes with a new spindle forming; 'Metaphase II' shows them lined up in single file at the metaphase plate; 'Anaphase II' shows the sister chromatids finally pulled apart, three moving to each pole; 'Telophase II and Cytokinesis' shows each cell dividing again, yielding haploid daughter cells that each hold three single, unreplicated chromosomes." >}}
+{{< mediafigure src="biology/Figure_11_01_04" kind="diagram" alt="An eight-panel diagram comparing meiosis I (top row: Prophase I, Metaphase I, Anaphase I, Telophase I and Cytokinesis) with meiosis II (bottom row: Prophase II, Metaphase II, Anaphase II, Telophase II and Cytokinesis), tracking three pairs of homologous chromosomes (each pair one purple and one blue homolog) from synapsis and chiasma formation through independent separation of homologs in meiosis I to the later separation of sister chromatids in meiosis II." longdesc="Two rows of four panels each, read left to right; white arrows lead from Prophase to Metaphase and from Anaphase to Telophase in each row (the two halves of each row are separate boxes with no arrow between Metaphase and Anaphase). Top row, Meiosis I: 'Prophase I' shows a cell with labeled spindle microtubules radiating from two labeled centrosomes (with centriole pair) toward three synapsed pairs of homologous chromosomes, each pair one purple and one blue homolog already duplicated into sister chromatids, with circled chiasmata where purple and blue chromatids cross and further labels for a centromere, the sister chromatids, and one pair of homologous chromosomes; 'Metaphase I' shows the three pairs lined up together at a dashed metaphase plate, labeled kinetochore microtubules from each pole attached to one homolog of each pair at a labeled kinetochore (at centromere); 'Anaphase I' shows the homologs pulled apart, three chromosomes moving to each pole, labeled 'Homologous Chromosomes Separate,' while each chromosome's two sister chromatids stay joined, labeled 'Sister Chromatids Remain Attached'; 'Telophase I and Cytokinesis' shows the cell pinched by a labeled cleavage furrow into two cells, one above the other, each receiving three intact, still-doubled chromosomes in a mix of purple and blue. Bottom row, Meiosis II, following both Telophase I daughter cells (each phase drawn as two cells, one above the other): 'Prophase II' shows each cell's three doubled chromosomes with a new spindle forming; 'Metaphase II' shows them lined up in single file along a vertical dashed metaphase plate, the spindle now running left to right; 'Anaphase II' shows the sister chromatids finally pulled apart, three moving to each pole, labeled 'Sister Chromatids Separate'; 'Telophase II and Cytokinesis' shows each cell dividing again, labeled 'Haploid Daughter Cells Forming,' yielding four haploid daughter cells that each hold three single, unreplicated chromosomes." >}}
 The process of chromosome alignment differs between meiosis I and meiosis II. In prophase I, pairs of homologous chromosomes form chiasmata which allow for crossing over events (genetic diversity). These pairs of homologous chromosomes arrange at the metaphase plate in metaphase I. In anaphase I, homologous chromosomes separate. Telophase I and cytokinesis result in haploid cells with 2 sister chromatids of each chromosome. In prophase II, spindle microtubules form and elongate and any nuclear envelope disappears. Sister chromatids arrange at the midpoint of the cells in metaphase II. In anaphase II, the sister chromatids separate. Telophase II and cytokinesis result in haploid cells with a single copy of each chromosome. Credit: Rao, A., Ryan, K., Fletcher, S. and Tag, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -113,7 +113,7 @@ The process of chromosome alignment differs between meiosis I and meiosis II. In
 
 The chromosomes arrive at opposite poles and begin to decondense. Nuclear envelopes form around the chromosomes. If the parent cell was diploid, as is most commonly the case, then cytokinesis now separates the two cells into four unique haploid cells. The cells produced are genetically unique because of the random assortment of paternal and maternal homologs and because of the recombination of maternal and paternal segments of chromosomes (with their sets of genes) that occurs during crossover. The entire process of meiosis is outlined below.
 
-{{< mediafigure src="biology/Figure_11_01_05" kind="diagram" alt="A three-column table titled by stage (Interphase and Meiosis I: S phase, Prophase I, Prometaphase I, Metaphase I, Anaphase I, Telophase I and Cytokinesis; Meiosis II: Prophase II, Prometaphase II, Metaphase II, Anaphase II, Telophase II and Cytokinesis) that pairs each stage with a small labeled cell diagram and a sentence describing what happens and what results, tracking one diploid cell with two pairs of chromosomes through both meiotic divisions to four haploid daughter cells." longdesc="A table with three columns — Stage, Event, and Outcome — and eleven rows grouped by shaded band into Interphase, Meiosis I, and Meiosis II. S phase (green band): a cell diagram labels the nuclear envelope, chromatin, and duplicated centrosomes; outcome text says chromosomes and centrosomes are duplicated. Prophase I: the diagram shows condensing chromosomes with a labeled spindle, chiasmata, sister chromatids, and a tetrad; outcome text describes homologs binding together and crossing over at the chiasmata. Prometaphase I: chromosomes attached to spindle microtubules at a labeled, fused centromere/kinetochore; the nuclear envelope is gone. Metaphase I: chromosomes lined up at a labeled metaphase plate, a microtubule attached to one kinetochore. Anaphase I: homologous chromosomes labeled separating while sister chromatids remain attached. Telophase I and Cytokinesis: a labeled cleavage furrow divides the cell into two. Prophase II through Telophase II and Cytokinesis (orange band) repeat the same diagram style for each of the two Meiosis I daughter cells in parallel, ending with four small cells labeled haploid daughter cells, each holding a single copy of each chromosome." >}}
+{{< mediafigure src="biology/Figure_11_01_05" kind="diagram" alt="A three-column table titled by stage (Interphase and Meiosis I: S phase, Prophase I, Prometaphase I, Metaphase I, Anaphase I, Telophase I and Cytokinesis; Meiosis II: Prophase II, Prometaphase II, Metaphase II, Anaphase II, Telophase II and Cytokinesis) that pairs each stage with a small labeled cell diagram and a sentence describing what happens and what results, tracking one diploid cell with two pairs of chromosomes through both meiotic divisions to four haploid daughter cells." longdesc="A table with three columns — Stage, Event, and Outcome — and eleven rows grouped by shaded band into Interphase, Meiosis I, and Meiosis II. S phase (green band): a cell diagram labels the nuclear envelope, chromatin, and duplicated centrosomes; outcome text says chromosomes and centrosomes are duplicated. Prophase I: the diagram shows condensing chromosomes with a labeled spindle, chiasmata, sister chromatids, and a tetrad; outcome text describes homologs binding together and crossing over at the chiasmata. Prometaphase I: chromosomes attached to spindle microtubules at a labeled, fused centromere/kinetochore; the nuclear envelope is gone. Metaphase I: chromosomes lined up at a labeled metaphase plate, a microtubule attached to one kinetochore. Anaphase I: homologous chromosomes labeled separating while sister chromatids remain attached. Telophase I and Cytokinesis: a labeled cleavage furrow divides the cell into two. Prophase II through Telophase II and Cytokinesis (orange band) repeat the same diagram style for each of the two Meiosis I daughter cells in parallel, with grey arrows leading down from row to row, and ending with the two cells each pinched in two by a cleavage furrow — four haploid cells still joined in pairs — labeled haploid daughter cells, each holding a single copy of each chromosome." >}}
 An animal cell with a diploid number of four (2*n* = 4) proceeds through the stages of meiosis to form four haploid daughter cells.
 {{< /mediafigure >}}
 
@@ -127,7 +127,7 @@ When the chiasmata resolve and the tetrad is broken up with the homologous chrom
 
 Meiosis II is analogous to a mitotic division. In this case, the duplicated chromosomes (only one set of them) line up on the metaphase plate with divided kinetochores attached to kinetochore fibers from opposite poles. During anaphase II, as in mitotic anaphase, the kinetochores divide and one sister chromatid—now referred to as a chromosome—is pulled to one pole while the other sister chromatid is pulled to the other pole. If it were not for the fact that there had been crossover, the two products of each individual meiosis II division would be identical (as in mitosis). Instead, they are different because there has always been at least one crossover per chromosome. Meiosis II is not a reduction division because although there are fewer copies of the genome in the resulting cells, there is still one set of chromosomes, as there was at the end of meiosis I.
 
-{{< mediafigure src="biology/Figure_11_01_06" kind="diagram" alt="A diagram comparing the stages of meiosis (top, producing four genetically distinct haploid cells from one diploid interphase cell through two rounds of division) with the stages of mitosis (bottom, producing two identical diploid cells through a single round of division), followed by a summary table contrasting when DNA synthesis, synapsis, crossover, and metaphase alignment occur in each." longdesc="Two horizontal cell-cycle diagrams stacked, followed by a table. Top, labeled Meiosis, on a tan band, ending 'Haploid Cells': one interphase cell with a nuclear envelope and a few short chromosome threads leads through Prophase I, Metaphase I, Anaphase I, and Telophase I/Cytokinesis to two cells, each of which then proceeds through its own Prophase II, Metaphase II, Anaphase II, and Telophase II/Cytokinesis to two more cells, for four small haploid daughter cells at the far right, each with a differently colored (red or blue) single chromosome pattern. Bottom, labeled Mitosis, on a blue-gray band, ending 'Diploid Cells': the same starting interphase cell leads through a single Prophase, Metaphase, Anaphase, and Telophase/Cytokinesis to two daughter cells with identical, matched red-and-blue chromosome sets. Below both diagrams, a table with rows Process, Meiosis, and Mitosis, and columns DNA synthesis, Synapsis of homologous chromosomes, Crossover, Homologous chromosomes line up at metaphase plate, Sister chromatids line up at metaphase plate, and Outcome: DNA synthesis occurs in S phase of interphase for both; synapsis and crossover occur during prophase I in meiosis and do not occur in mitosis; homologous chromosomes line up at the metaphase plate during metaphase I in meiosis and never in mitosis; sister chromatids line up at the metaphase plate during metaphase II in meiosis and during metaphase in mitosis; the outcome row states meiosis ends in four haploid cells and mitosis ends in two diploid cells." >}}
+{{< mediafigure src="biology/Figure_11_01_06" kind="diagram" alt="A diagram comparing the stages of meiosis (top, producing four genetically distinct haploid cells from one diploid interphase cell through two rounds of division) with the stages of mitosis (bottom, producing two identical diploid cells through a single round of division), followed by a summary table contrasting when DNA synthesis, synapsis, crossover, and metaphase alignment occur in each." longdesc="Two horizontal cell-cycle diagrams stacked, followed by a table. Top, labeled Meiosis, on a tan band, ending 'Haploid Cells': one interphase cell with a nuclear envelope and a few short chromosome threads leads by grey arrows through Prophase I, Prometaphase I, Metaphase I, Anaphase I, and Telophase I (under a bracket labeled Meiosis I); a forked arrow labeled Cytokinesis splits it into two cells, each of which proceeds along its own row through Prophase II, Prometaphase II, Metaphase II, Anaphase II, and Telophase II (under a bracket labeled Meiosis II), and a second forked arrow labeled Cytokinesis splits each into two, for four small haploid daughter cells at the far right, each holding one short red and one short blue chromosome, some with patches of the other colour. Bottom, labeled Mitosis, on a blue-gray band, ending 'Diploid Cells': the same starting interphase cell leads by one long arrow to a single Prophase, Prometaphase, Metaphase, Anaphase, and Telophase, lined up under the Meiosis II stages, and a forked Cytokinesis arrow gives two daughter cells with identical, matched red-and-blue chromosome sets. Below both diagrams, a table with rows Process, Meiosis, and Mitosis, and columns DNA synthesis, Synapsis of homologous chromosomes, Crossover, Homologous chromosomes line up at metaphase plate, Sister chromatids line up at metaphase plate, and Outcome: DNA synthesis occurs in S phase of interphase for both; synapsis and crossover occur during prophase I in meiosis and do not occur in mitosis; homologous chromosomes line up at the metaphase plate during metaphase I in meiosis and never in mitosis; sister chromatids line up at the metaphase plate during metaphase II in meiosis and during metaphase in mitosis; the outcome row states meiosis ends in four haploid cells and mitosis ends in two diploid cells." >}}
 Meiosis and mitosis are both preceded by one cycle of DNA replication; however, meiosis includes two nuclear divisions. The four daughter cells resulting from meiosis are haploid and genetically distinct. The daughter cells resulting from mitosis are diploid and identical to the parent cell.
 {{< /mediafigure >}}
 
@@ -176,7 +176,7 @@ Meiosis and mitosis share similar processes, but have distinct outcomes. Mitotic
 {{< multiplechoice
   question="At which stage of meiosis are sister chromatids separated from each other?"
   answer="anaphase II"
-  hint="Homologous chromosomes separate one division earlier than this; sister chromatids stay joined at the centromere until the second division's own anaphase."
+  hint="Reread the stage subsections under Meiosis II."
 >}}
 prophase I
 prophase II
@@ -187,7 +187,7 @@ anaphase II
 {{< multiplechoice
   question="If a muscle cell of a typical organism has 32 chromosomes, how many chromosomes will be in a gamete of that same organism?"
   answer="16"
-  hint="A gamete carries exactly half the chromosome number of the somatic cell that produced it."
+  hint="Reread the section summary."
 >}}
 8
 16
@@ -198,7 +198,7 @@ anaphase II
 {{< multiplechoice
   question="Which statement best describes the genetic content of the two daughter cells in prophase II of meiosis?"
   answer="haploid with two copies of each gene"
-  hint="By prophase II each cell holds one full haploid set, but every chromosome in that set still consists of two sister chromatids."
+  hint="Reread the second paragraph of Telophase I and Cytokinesis."
 >}}
 haploid with one copy of each gene
 haploid with two copies of each gene
@@ -209,7 +209,7 @@ diploid with four copies of each gene
 {{< multiplechoice
   question="How do telophase I and telophase II differ during meiosis in animal cells?"
   answer="Chromosomes can remain condensed at the end of telophase I, but decondense after telophase II."
-  hint="Compare what the chromosomes themselves are doing at the end of each division, not what the cell's ploidy or division mechanics are."
+  hint="Reread Telophase I and Cytokinesis, then Telophase II and Cytokinesis."
 >}}
 Cells remain diploid at the end of telophase I, but are haploid at the end of telophase II.
 Daughter cells form a cell plate to divide during telophase I, but divide by cytokinesis during telophase II.
@@ -218,18 +218,25 @@ Chromosomes can remain condensed at the end of telophase I, but decondense after
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Meiosis I is known by this name because it is the phase that actually cuts the chromosome-set number from diploid to haploid: a ________."
+  question="A nuclear division that produces daughter nuclei each having one-half as many chromosome sets as the parental nucleus, as meiosis I does, is called a ________."
   answer="reduction division"
   accept="reductional division"
-  hint="This is the meiotic division that actually halves the number of chromosome sets; meiosis II does not do this again."
+  hint="Reread the third paragraph of Comparing Meiosis and Mitosis."
 >}}
 
 ### Describe the cellular events that take place during meiosis
 
+{{< textin
+  question="The proteins that form a complex sealing sister chromatids together at their centromeres are called ________."
+  answer="cohesin"
+  accept="cohesin proteins"
+  hint="Reread the second paragraph of Meiosis I."
+>}}
+
 {{< multiplechoice
   question="Meiosis usually produces ________ daughter cells."
   answer="four haploid"
-  hint="Count the daughter cells and their ploidy after both meiotic divisions are complete, not after just the first one."
+  hint="Reread the section summary."
 >}}
 two haploid
 two diploid
@@ -240,7 +247,7 @@ four diploid
 {{< multiplechoice
   question="What structure is most important in forming the tetrads?"
   answer="synaptonemal complex"
-  hint="This protein lattice is what first draws the homologous chromosomes together into the tight pairing that becomes a tetrad."
+  hint="Reread Prophase I."
 >}}
 centromere
 synaptonemal complex
@@ -251,7 +258,7 @@ kinetochore
 {{< multiplechoice
   question="At metaphase I, homologous chromosomes are connected only at what structures?"
   answer="chiasmata"
-  hint="The synaptonemal complex and the cohesin connection between homologs have already broken down by this point in prophase I."
+  hint="Reread the third paragraph of Prophase I."
 >}}
 chiasmata
 recombination nodules
@@ -259,14 +266,7 @@ microtubules
 kinetochores
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The proteins that seal sister chromatids together at their centromeres until anaphase II of meiosis are called ________."
-  answer="cohesin"
-  accept="cohesin proteins"
-  hint="They hold the two identical DNA copies formed during S phase together until they are finally pulled apart in the second meiotic division."
->}}
-
-{{< selfcheck question="Describe the process that results in the formation of a tetrad." hint="Walk through prophase I in order: chromosome duplication, attachment to the nuclear envelope, synapsis, and what the synaptonemal complex leaves behind." >}}
+{{< selfcheck question="Describe the process that results in the formation of a tetrad." hint="Reread the opening of Meiosis I and Prophase I." >}}
 During the meiotic interphase, each chromosome is duplicated. The sister chromatids that are formed during synthesis are held together at the centromere region by cohesin proteins. All chromosomes are attached to the nuclear envelope by their tips. As the cell enters prophase I, the nuclear envelope begins to fragment and the proteins holding homologous chromosomes locate each other. The four sister chromatids align lengthwise, and a protein lattice called the synaptonemal complex is formed between them to bind them together. The synaptonemal complex facilitates crossover between nonsister chromatids, which is observed as chiasmata along the length of the chromosome. As prophase I progresses, the synaptonemal complex breaks down and the sister chromatids become free, except where they are attached by chiasmata. At this stage, the four chromatids are visible in each homologous pairing and are called a tetrad.
 ===CHECKS===
 each chromosome is duplicated
@@ -275,7 +275,7 @@ the synaptonemal complex facilitates crossover between nonsister chromatids
 the four chromatids are visible and are called a tetrad
 {{< /selfcheck >}}
 
-{{< selfcheck question="What is the function of the fused kinetochore found on sister chromatids in prometaphase I?" hint="Think about what the fused kinetochore must ensure both sister chromatids do together when the tetrad's homologs are eventually pulled apart." >}}
+{{< selfcheck question="What is the function of the fused kinetochore found on sister chromatids in prometaphase I?" hint="Reread Prometaphase I through Anaphase I." >}}
 In metaphase I, the homologous chromosomes line up at the metaphase plate. In anaphase I, the homologous chromosomes are pulled apart and move to opposite poles. Sister chromatids are not separated until meiosis II. The fused kinetochore formed during meiosis I ensures that each spindle microtubule that binds to the tetrad will attach to both sister chromatids.
 ===CHECKS===
 the homologous chromosomes are pulled apart and move to opposite poles
@@ -288,7 +288,7 @@ the fused kinetochore ensures that each spindle microtubule will attach to both 
 {{< multiplechoice
   question="What phase of mitotic interphase is missing from meiotic interkinesis?"
   answer="S phase"
-  hint="Interkinesis is the brief rest before meiosis II — no new DNA is made, since the chromosomes are already replicated from before meiosis I."
+  hint="Reread the paragraph that introduces interkinesis."
 >}}
 G₀ phase
 G₁ phase
@@ -299,7 +299,7 @@ G₂ phase
 {{< multiplechoice
   question="The part of meiosis that is similar to mitosis is ________."
   answer="meiosis II"
-  hint="This division separates sister chromatids into individual chromosomes using one set of chromosomes per cell, exactly as mitosis does."
+  hint="Reread Comparing Meiosis and Mitosis."
 >}}
 meiosis I
 anaphase I
@@ -310,11 +310,10 @@ interkinesis
 {{< textin
   question="Except for an organism's gametes or reproductive cells, every other part of a multicellular body consists of ________."
   answer="somatic cells"
-  accept="somatic cell"
-  hint="Meiosis does not occur in these — it is restricted to the germ line that produces gametes."
+  hint="Reread the section's second introductory paragraph."
 >}}
 
-{{< selfcheck question="In a comparison of the stages of meiosis to the stages of mitosis, which stages are unique to meiosis and which stages have the same events in both meiosis and mitosis?" hint="Ask, stage by stage, whether homologous chromosomes or sister chromatids are what's being separated or paired — mitosis never separates homologs." >}}
+{{< selfcheck question="In a comparison of the stages of meiosis to the stages of mitosis, which stages are unique to meiosis and which stages have the same events in both meiosis and mitosis?" hint="Reread Comparing Meiosis and Mitosis and the Telophase I and Prophase II subsections." >}}
 All of the stages of meiosis I, except possibly telophase I, are unique because homologous chromosomes are separated, not sister chromatids. In some species, the chromosomes do not decondense and the nuclear envelopes do not form in telophase I. All of the stages of meiosis II have the same events as the stages of mitosis, with the possible exception of prophase II. In some species, the chromosomes are still condensed and there is no nuclear envelope. Other than this, all processes are the same.
 ===CHECKS===
 all of the stages of meiosis I are unique because homologous chromosomes are separated, not sister chromatids
@@ -325,10 +324,16 @@ in prophase II, the chromosomes are still condensed and there is no nuclear enve
 
 ### Explain the mechanisms within the meiotic process that produce genetic variation among the haploid gametes
 
+{{< textin
+  question="The protein assemblies that mark the points of crossover and carry out genetic exchange between nonsister chromatids are called ________."
+  answer="recombination nodules"
+  hint="Reread the crossover paragraphs of Prophase I."
+>}}
+
 {{< multiplechoice
   question="Which of the following is *not* true in regard to crossover?"
   answer="Spindle microtubules guide the transfer of DNA across the synaptonemal complex."
-  hint="Ask which structure actually carries out the exchange of DNA between nonsister chromatids — the spindle apparatus's job is exclusively to move chromosomes, not to move DNA between them."
+  hint="Reread the crossover paragraphs of Prophase I."
 >}}
 Spindle microtubules guide the transfer of DNA across the synaptonemal complex.
 Nonsister chromatids exchange genetic material.
@@ -339,7 +344,7 @@ Recombination nodules mark the crossover point.
 {{< multiplechoice
   question="The pea plants used in Mendel's genetic inheritance studies were diploid, with 14 chromosomes in somatic cells. Assuming no crossing over events occur, how many unique gametes could one pea plant produce?"
   answer="128"
-  hint="With 14 chromosomes in a diploid cell, there are 7 homologous pairs; the number of independent-assortment combinations is 2 raised to that power."
+  hint="Reread the random-assortment paragraphs of Metaphase I."
 >}}
 28
 128
@@ -347,14 +352,7 @@ Recombination nodules mark the crossover point.
 16,384
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The protein assemblies that mark the points of crossover and carry out genetic exchange between nonsister chromatids are called ________."
-  answer="recombination nodules"
-  accept="recombination nodule"
-  hint="They sit at intervals along the synaptonemal complex, and a mutation that blocks their formation also blocks crossover."
->}}
-
-{{< selfcheck question="Explain how the random alignment of homologous chromosomes during metaphase I contributes to the variation in gametes produced by meiosis." hint="Think about which pole each maternal or paternal homolog faces at the metaphase plate, and how that choice is independent from tetrad to tetrad." >}}
+{{< selfcheck question="Explain how the random alignment of homologous chromosomes during metaphase I contributes to the variation in gametes produced by meiosis." hint="Reread Metaphase I." >}}
 Random alignment leads to new combinations of traits. The chromosomes that were originally inherited by the gamete-producing individual came equally from the egg and the sperm. In metaphase I, the duplicated copies of these maternal and paternal homologous chromosomes line up across the center of the cell. The orientation of each tetrad is random. There is an equal chance that the maternally derived chromosomes will be facing either pole. The same is true of the paternally derived chromosomes. The alignment should occur differently in almost every meiosis. As the homologous chromosomes are pulled apart in anaphase I, any combination of maternal and paternal chromosomes will move toward each pole. The gametes formed from these two groups of chromosomes will have a mixture of traits from the individual's parents. Each gamete is unique.
 ===CHECKS===
 random alignment leads to new combinations of traits
@@ -363,7 +361,7 @@ there is an equal chance that the maternally derived chromosomes will be facing 
 each gamete is unique
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why would an individual with a mutation that prevented the formation of recombination nodules be considered less fit than other members of its species?" hint="Without recombination nodules, one of the two sources of genetic variation in gametes is lost — think about what that costs the individual's offspring." >}}
+{{< selfcheck question="Why would an individual with a mutation that prevented the formation of recombination nodules be considered less fit than other members of its species?" hint="Reread the crossover paragraphs of Prophase I and the summary paragraph in Metaphase I." >}}
 The chromosomes of the individual cannot cross over during meiosis if the individual cannot make recombination nodules. This limits the genetic diversity of the individual's gametes to what occurs during independent assortment, with all daughter cells receiving complete maternal or paternal chromatids. An individual who cannot produce diverse offspring is considered less fit than individuals who do produce diverse offspring.
 ===CHECKS===
 the chromosomes of the individual cannot cross over during meiosis if the individual cannot make recombination nodules
@@ -371,7 +369,7 @@ this limits the genetic diversity of the individual's gametes to what occurs dur
 an individual who cannot produce diverse offspring is considered less fit
 {{< /selfcheck >}}
 
-{{< selfcheck question="Does crossing over occur during prophase II? From an evolutionary perspective, why is this advantageous?" hint="Ask what two chromatids would actually be exchanging if crossover happened between sister chromatids that are already identical." >}}
+{{< selfcheck question="Does crossing over occur during prophase II? From an evolutionary perspective, why is this advantageous?" hint="Reread the crossover paragraphs of Prophase I and the Meiosis II opening." >}}
 Crossing over does not occur during prophase II; it only occurs during prophase I. In prophase II, there are still two copies of each gene, but they are on sister chromatids within a single chromosome (rather than homologous chromosomes as in prophase I). Therefore, any crossover event would still produce two identical chromatids. Because it is advantageous to avoid wasting energy on events that will not increase genetic diversity, crossing over does not occur.
 ===CHECKS===
 crossing over does not occur during prophase II
@@ -382,4 +380,4 @@ it is advantageous to avoid wasting energy on events that will not increase gene
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 11.1: The Process of Meiosis](https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with all seven re-kinded from the manifest's file-extension guess of "photo" (six of the seven) or "diagram" (one) to "diagram" after inspection — every figure on this page is a drawn illustration or table, not a photograph; a longdesc extended description added for all seven figures, which are labeled diagrams, multi-panel process illustrations, or a stage-by-stage table whose full reading is not carried by their captions alone; a stray mid-sentence period in the overview figure's caption ("...by half. going from diploid cells...") corrected to a comma ("...by half, going from diploid cells...") and reported as a source defect; the two feature boxes rendered as callouts (an Evolution Connection with its title and both footnoted citations kept as parentheticals after the sentences they support, and two Link to Learning boxes with descriptive link text in place of the source's bare "video about meiosis" and "How Cells Divide" phrasing, both URLs kept); the two genuine exponent expressions in the random-assortment discussion ($2^n$ and $2^{23}$, giving the number of possible gamete combinations) set in KaTeX, distinct from the page's other "2n" ploidy notation, which stays plain italic text; subscript digits in the G₁/G₂ interphase-phase names set as Unicode subscripts; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); four key-term recall items (reduction division, cohesin, somatic cell, recombination nodules) added from the glossary so every objective group carries at least one auto-graded item; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. The Evolution Connection's cited paper title reads "Phylogenomic," the published title (PubMed 15668177), where the source prints "Phylogenetic" (erratum 397).</small>
+<small>This section is adapted from [Biology 2e, Section 11.1: The Process of Meiosis](https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with all seven re-kinded from the manifest's file-extension guess of "photo" (six of the seven) or "diagram" (one) to "diagram" after inspection — every figure on this page is a drawn illustration or table, not a photograph; a longdesc extended description added for all seven figures, which are labeled diagrams, multi-panel process illustrations, or a stage-by-stage table whose full reading is not carried by their captions alone; the random-assortment figure's alt written from the drawing, since the source alt's "four possible arrangements of chromosomes can give rise to eight different kinds of gamete" contradicts the two arrangements and four gamete types it draws (reported as a source defect); a stray mid-sentence period in the overview figure's caption ("...by half. going from diploid cells...") corrected to a comma ("...by half, going from diploid cells...") and reported as a source defect; the two feature boxes rendered as callouts (an Evolution Connection with its title and both footnoted citations kept as parentheticals after the sentences they support, and two Link to Learning boxes with descriptive link text in place of the source's bare "video about meiosis" and "How Cells Divide" phrasing, both URLs kept); the two genuine exponent expressions in the random-assortment discussion ($2^n$ and $2^{23}$, giving the number of possible gamete combinations) set in KaTeX, distinct from the page's other "2n" ploidy notation, which stays plain italic text; subscript digits in the G₁/G₂ interphase-phase names set as Unicode subscripts; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); four key-term recall items (reduction division, cohesin, somatic cell, recombination nodules) added from the glossary so every objective group carries at least one auto-graded item, the cohesin and recombination-nodule items placed first in their groups; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. The Evolution Connection's cited paper title reads "Phylogenomic," the published title (PubMed 15668177), where the source prints "Phylogenetic" (erratum 397).</small>

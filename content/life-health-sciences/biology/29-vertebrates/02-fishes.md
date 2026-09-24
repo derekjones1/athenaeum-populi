@@ -147,7 +147,7 @@ the ability to use new nutrient sources may be one reason gnathostomes replaced 
 {{< textin
   question="An eel-like jawless fish that lives on the ocean floor and is a scavenger is called a ________."
   answer="hagfish"
-  hint="This eel-like scavenger of the ocean floor, in the class Myxini, releases slime from its glands to slip from a predator's grip."
+  hint="Look at the first of the two subsections on living jawless fishes."
 >}}
 
 {{< textin
@@ -159,13 +159,13 @@ the ability to use new nutrient sources may be one reason gnathostomes replaced 
 {{< textin
   question="A vertebrate that possesses true jaws is called a ________."
   answer="gnathostome"
-  hint="Its name translates from the Greek as 'jaw-mouth.'"
+  hint="Look at the lamprey paragraph's sentence on which vertebrates share lampreys' eye muscles, semicircular canals, and cerebellum."
 >}}
 
 {{< textin
   question="One of the earliest jawless fish, covered in bone, is called an ________."
   answer="ostracoderm"
-  hint="Its name translates as 'shell-skin,' for the bony armor covering its body — unlike present-day jawless fishes, which have none."
+  hint="Look at the opening paragraph of the jawless-fish discussion, on the earliest armored forms."
 >}}
 
 ### Discuss the distinguishing features of sharks and rays compared to other modern fishes
@@ -173,7 +173,7 @@ the ability to use new nutrient sources may be one reason gnathostomes replaced 
 {{< multiplechoice
   question="Members of Chondrichthyes differ from members of Osteichthyes by having a ________."
   answer="cartilaginous skeleton"
-  hint="Both clades are jawed and have paired fins — the difference between the two clades is in what their skeletons are made of."
+  hint="Compare the sentence that defines each class in the two subsections on jawed fishes."
 >}}
 jaw
 bony skeleton
@@ -195,7 +195,7 @@ slime glands
 {{< multiplechoice
   question="A marine biologist catches a species of fish she has never seen before. Upon examination, she determines that the species has a predominantly cartilaginous skeleton and a swim bladder. If its pectoral fins are not fused to its head, to which category of fish does the specimen belong?"
   answer="Osteichthyes"
-  hint="A swim bladder is a trait of only one of these groups — and a few of that group's own members have reverted to a mostly cartilaginous skeleton."
+  hint="Find which group the section's swim-bladder sentence describes, then check whether the section says any members of that group have mostly cartilaginous skeletons."
 >}}
 Rays
 Osteichthyes
@@ -207,19 +207,20 @@ Hagfish
   question="The sensory organ that allows sharks to detect electromagnetic fields produced by living things is called the ________."
   answer="ampulla of Lorenzini"
   accept="ampullae of Lorenzini"
-  hint="Sharks use this receptor, distinct from the lateral line, to sense the electric fields living prey generate."
+  hint="Look at the paragraph on sharks' sense organs used in locating prey."
+>}}
+
+{{< textin
+  question="A jawed fish with paired fins and a skeleton made of cartilage belongs to the class ________."
+  answer="Chondrichthyes"
+  accept="cartilaginous fishes"
+  hint="Look at the first paragraph of the subsection on sharks, rays, skates, and chimaeras."
 >}}
 
 {{< textin
   question="The sense organ that runs the length of a fish's body and is used to detect vibration in the water is called the ________."
   answer="lateral line"
   hint="It is often considered functionally similar to the sense of 'hearing' in animals on land."
->}}
-
-{{< textin
-  question="A jawed fish with paired fins and a skeleton made of cartilage belongs to the class ________."
-  answer="Chondrichthyes"
-  hint="This class's name comes from the Greek word for cartilage."
 >}}
 
 ---

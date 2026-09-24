@@ -48,12 +48,17 @@ life-sciences playbook: graded when one module artifact fixes the answer,
   `<solution>`. True/False: exactly `True` then `False`, verdict-free hint,
   no "True or false:" prefix.
 - **textin:** name the answer, list every spelling a correct learner might
-  type (singular/irregular plural, British, a module abbreviation, an
+  type (irregular plural or singular — the regular plural and singular fold
+  both ways and must not be listed — British, a module abbreviation, an
   abbreviated binomial, a formula, a hyphen variant), and run each through
   the grader:
   `node -e 'import("./assets/js/lib/text/check-text.mjs").then(m=>console.log(m.checkText("<variant>","<answer>",{accept:"<accept>"})))'`
   (pass `{}` as the third argument when the item has no accept list).
-  Report every wrongly rejected variant and every wrong answer accepted.
+  Always try the full name with and without its head noun and every
+  synonym the module prints — the September 22 sweep added about 170
+  accepts to this book's checked pages. Report every wrongly rejected
+  variant and every wrong answer accepted. A numeric key (a digit, a
+  number word, a measurement) is a defect in itself.
   **Grep the module BODY (not the solutions) for every `textin` key** —
   a source Fill in the Blank whose key only the solution prints, never the
   body prose, needs `multiplechoice` (the chapter 20 rule); the author
@@ -88,6 +93,23 @@ life-sciences playbook: graded when one module artifact fixes the answer,
 ## 3. Leaks
 
 - A `textin` answer or accept member in its own question or hint.
+- **A hint says WHERE to look** — a subsection, figure, table, or paragraph
+  topic — never the key, a root or derivative of it, the fact the correct
+  option asserts, or a fact the module never states; and nothing in the
+  item directly above a `textin` — its stem, its options, or its hint —
+  prints its key. `tools/lint/lints-leaks.mjs` catches the literal key, a
+  printed root, and an MC hint naming the keyed option; read every hint
+  against its own key and options for the rest. The September 22, 2026
+  Opus sweep rewrote about 1,190 hints on this book's checked pages, in
+  these forms: the key's Greek or Latin root translated, the key's
+  definition restated, every distractor eliminated by name, a heading named
+  whose title is the key, a `selfcheck` hint listing its rubric clauses, a
+  hint steering away from an answer the accept list takes (19.3's MHC hint
+  "not the human-specific" abbreviation against a correct `HLA`). Test
+  each: cover the options and key — if stem plus hint answers it, defect.
+- **Do not flag** a recall `textin` keyed to a term its own `###`
+  objective heading or the page title prints — an authoring preference
+  since September 23, 2026, not a defect.
 - **Every hint, stem, and option list against every key on the page,
   forwards AND backwards, across groups** — grep for the literal word when
   a group's central vocabulary word is a `textin` key; a distractor directly
@@ -100,7 +122,9 @@ life-sciences playbook: graded when one module artifact fixes the answer,
 - The figure beside an item answering it in alt, caption, or `longdesc`.
 - **Reworded duplicates:** a Practice item re-asking a body item or another
   Practice item in other words (`distinctItems` is exact-match). Read the
-  page's questions side by side.
+  page's questions side by side. The commonest form is reverse recall: a
+  recall `textin` or converted CYU asking for a term a source item on the
+  page already keys or asks about.
 
 ## 4. Source fidelity, against the raw CNXML
 
@@ -155,6 +179,17 @@ alt read first anchors you to its claims: the book's completion pass found
 1 defect in 10 figures that authors and checkers reading alt-first had
 passed.
 
+**For every `longdesc`, the description is an inventory:** every panel and
+row, every printed label and number, every count, and every arrow as
+`source → target` with BOTH ends zoomed (crop and upscale with PIL:
+`python3 -c "from PIL import Image; im=Image.open('<webp>'); im.crop((x0,y0,x1,y1)).resize(((x1-x0)*3,(y1-y0)*3)).save('<png>')"`).
+Tick each `longdesc` sentence against it; every arrow carrying the
+figure's meaning is described; every printed label is in the alt,
+`longdesc`, caption, or an adjacent table. A September 22, 2026 sample
+found a third of `longdesc`s wrong after two image-first passes — wrong
+arrow ends, a dropped panel row, a bracket endpoint, unlisted vessel
+labels.
+
 - Alt describes what is drawn — counts, colours, orientation, direction
   words, units, 5′/3′ labels read off the artwork; nothing invented, nothing
   inherited from a source alt the image contradicts (each source-alt error
@@ -178,7 +213,9 @@ one-word corrections, reorderings; a correction is named as a correction —
 where it is logged, neither "logged as an erratum" nor "reported to the
 parent"); **re-derive
 every count the footer states rather than reading it** (this run's checkers
-found four footers whose own claims were false); a footer describes the
+found four footers whose own claims were false, and the September 22 sweep
+about 85 more; a Practice order that swaps two source items with no
+footer line is a defect); a footer describes the
 shipped page only — a clause about run machinery ("reported to the parent",
 an accept variant "dropped here") is a defect; license
 CC BY-NC-SA 4.0; the five named authors; the deep link; `title`,

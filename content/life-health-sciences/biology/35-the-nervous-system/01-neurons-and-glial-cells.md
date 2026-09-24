@@ -19,7 +19,7 @@ weight: 1
 
 Nervous systems throughout the animal kingdom vary in structure and complexity, as illustrated by the variety of animals shown below. Some organisms, like sea sponges, lack a true nervous system. Others, like jellyfish, lack a true brain and instead have a system of separate but connected nerve cells (neurons) called a “nerve net.” Echinoderms such as sea stars have nerve cells that are bundled into fibers called nerves. Flatworms of the phylum Platyhelminthes have both a central nervous system (CNS), made up of a small “brain” and two nerve cords, and a peripheral nervous system (PNS) containing a system of nerves that extend throughout the body. The insect nervous system is more complex but also fairly decentralized. It contains a brain, ventral nerve cord, and ganglia (clusters of connected neurons). These ganglia can control movements and behaviors without input from the brain. Octopi may have the most complicated of invertebrate nervous systems—they have neurons that are organized in specialized lobes and eyes that are structurally similar to vertebrate species.
 
-{{< mediafigure src="biology/Figure_35_01_01" kind="diagram" eager="true" alt="Six labeled drawings comparing nervous systems across the animal kingdom: (a) a cnidarian hydra's net of nerve fibers over its trunk and tentacles, (b) a sea star's central nerve ring with radial nerves into its arms, (c) a planarian flatworm's paired brain ganglia and two nerve cords joined by transverse nerves, (d) a bee's head ganglia and ventral nerve cord studded with segmental ganglia, (e) an octopus's central brain and eyes with nerves branching into its arms, and (f) a human skeleton with a brain-and-spinal-cord central nervous system and nerves reaching through the body." longdesc="Six drawings arranged in two rows of three, each captioned with its animal group and example organism. (a) Cnidarian (hydra): an unlabeled pink, tree-like net of nerve fibers spreading up a trunk rooted in the ground. (b) Echinoderm (sea star): two labels, 'Nerve ring' pointing to the ring at the body's center and 'Radial nerves' pointing to the nerves running out into the arms. (c) Planarian (flatworm): four labels reading top to bottom — 'Eyespot' at the head, 'Central ganglia (brain)' just below it, 'Nerve cords' pointing to the two parallel cords running the body's length, and 'Transverse nerve' pointing to one of the rungs connecting the two cords. (d) Arthropod (bee): two labels, 'Central ganglia (brain)' pointing to the head and 'Segmental ganglia' pointing to two swellings spaced along the ventral nerve cord beneath the body. (e) Mollusk (octopus): five labels — 'Nerve' at upper left pointing into the mantle, 'Brain' and 'Eye' pointing to the central body between the eyes, 'Ganglia' pointing to a cluster on the opposite side of the brain, and a second 'Nerve' label at the bottom pointing down into the arms. (f) Vertebrate (human, drawn skiing): four labels — 'Central nervous system' pointing to both the brain and spinal cord, 'Brain' pointing to the head, 'Spinal cord' pointing down the back, and 'Peripheral nervous system' pointing to nerves branching into the arms and legs." >}}
+{{< mediafigure src="biology/Figure_35_01_01" kind="diagram" eager="true" alt="Six labeled drawings comparing nervous systems across the animal kingdom: (a) a cnidarian hydra's net of nerve fibers over its trunk and tentacles, (b) a sea star's central nerve ring with radial nerves into its arms, (c) a planarian flatworm's paired brain ganglia and two nerve cords joined by transverse nerves, (d) a bee's head ganglia and ventral nerve cord studded with segmental ganglia, (e) an octopus's central brain and eyes with nerves branching into its arms, and (f) a human skeleton with a brain-and-spinal-cord central nervous system and nerves reaching through the body." longdesc="Six drawings arranged in two rows of three, each captioned with its animal group and example organism. (a) Cnidarian (hydra): an unlabeled pink, tree-like net of nerve fibers spreading up a trunk rooted in the ground. (b) Echinoderm (sea star): two labels, 'Nerve ring' pointing to the ring at the body's center and 'Radial nerves' pointing to the nerves running out into the arms. (c) Planarian (flatworm): four labels reading top to bottom — 'Eyespot' at the head, 'Central ganglia (brain)' just below it, 'Nerve cords' pointing to the two parallel cords running the body's length, and 'Transverse nerve' pointing to one of the rungs connecting the two cords. (d) Arthropod (bee): two labels, 'Central ganglia (brain)' pointing to the head and 'Segmental ganglia' pointing to two swellings spaced along the ventral nerve cord beneath the body. (e) Mollusk (octopus): five labels — 'Nerve' at upper left pointing into the mantle, 'Brain' pointing to the purple mass between the two eyes, 'Eye' pointing to one eye, 'Ganglia' pointing to one of two small star-shaped clusters on the nerves in the mantle behind the brain, and a second 'Nerve' label at the bottom pointing to a nerve running along an arm. (f) Vertebrate (human, drawn skiing): four labels — 'Central nervous system' pointing to both the brain and spinal cord, 'Brain' pointing to the head, 'Spinal cord' pointing down the back, and 'Peripheral nervous system' pointing to nerves branching into the arms and legs." >}}
 Nervous systems vary in structure and complexity. In (a) cnidarians, nerve cells form a decentralized nerve net. In (b) echinoderms, nerve cells are bundled into fibers called nerves. In animals exhibiting bilateral symmetry such as (c) planarians, neurons cluster into an anterior brain that processes information. In addition to a brain, (d) arthropods have clusters of nerve cell bodies, called peripheral ganglia, located along the ventral nerve cord. Mollusks such as squid and (e) octopi, which must hunt to survive, have complex brains containing millions of neurons. In (f) vertebrates, the brain and spinal cord comprise the central nervous system, while neurons extending into the rest of the body comprise the peripheral nervous system. (credit e: modification of work by Michael Vecchione, Clyde F.E. Roper, and Michael J. Sweeney, NOAA; credit f: modification of work by NIH)
 {{< /mediafigure >}}
 
@@ -47,14 +47,14 @@ Once a signal is received by the dendrite, it then travels passively to the cell
 
 It is important to note that a single neuron does not act alone—neuronal communication depends on the connections that neurons make with one another (as well as with other cells, like muscle cells). Dendrites from a single neuron may receive synaptic contact from many other neurons. For example, dendrites from a Purkinje cell in the cerebellum are thought to receive contact from as many as 200,000 other neurons.
 
-{{< mediafigure src="biology/Figure_35_01_02" kind="diagram" alt="A gold, tree-branched neuron with a rounded cell body at left holding a purple nucleus; an axon runs right from the body, wrapped in a chain of teal, bead-like myelin segments separated by narrow gaps, and ends at lower right in a cluster of fine branching terminals. Eight leader lines label the cell body, membrane, dendrites, axon, an oligodendrocyte segment, a gap, the myelin sheath, and the terminal branches." longdesc="A single neuron drawn in gold with eight leader-line labels. At upper left, a separate translucent, myelin-wrapped segment of another axon fades in from off-frame, feeding into this neuron's soma. The cell body sits left of center: 'Cell body (soma)' points to its rounded center holding a purple nucleus, 'Cell membrane' points to the body's outer edge, and 'Dendrite' points to one of the branching, tree-like processes radiating from its top and left sides. From the body's right side, 'Axon' points to the tube leading away from the soma. The axon is wrapped in a chain of teal, bead-like myelin segments; 'Oligodendrocyte' points to one segment, 'Node of Ranvier' points to a gap between two segments, and 'Myelin sheath' points to a segment further along the chain. At lower right, the axon ends in branching gold terminals, and 'Synapse' points to these terminal branches." >}}
+{{< mediafigure src="biology/Figure_35_01_02" kind="diagram" alt="A gold, tree-branched neuron with a rounded cell body at left holding a purple nucleus; an axon runs right from the body, wrapped in a chain of teal, bead-like myelin segments separated by narrow gaps, and ends at lower right in a cluster of fine branching terminals beside the faint dendrites of another cell. Eight leader lines label the cell body, membrane, dendrites, axon, an oligodendrocyte, a gap, the myelin sheath, and the synapse." longdesc="A single neuron drawn in gold with eight leader-line labels. At upper left, a separate translucent, myelin-wrapped segment of another axon fades in from off-frame and ends in faint branches beside this neuron's upper-left dendrites. The cell body sits left of center: 'Cell body (soma)' points to its rounded center holding a purple nucleus, 'Cell membrane' points to the body's outer edge, and 'Dendrite' points to one of the branching, tree-like processes radiating from its top, left, and bottom sides. From the body's right side, 'Axon' points to the tube leading away from the soma. The axon is wrapped in a chain of five teal, bead-like myelin segments; two oval teal cells beside the chain each send flat processes that wrap several segments, and 'Oligodendrocyte' points to the upper of these two cells. 'Node of Ranvier' points to a gap between two segments, and 'Myelin sheath' points to the last segment of the chain. At lower right, the axon ends in branching gold terminals that reach the faint dendrites of another neuron below, and 'Synapse' points to the tip of one terminal where it meets them." >}}
 Neurons contain organelles common to many other cells, such as a nucleus and mitochondria. They also have more specialized structures, including dendrites and axons.
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements is false?"
   answer="Myelin sheath provides an insulating layer to the dendrites."
-  hint="Trace what the teal, bead-like covering actually wraps in the figure above — the axon, or the dendrites?"
+  hint="Check each statement against the leader-line labels in the figure above."
 >}}
 The soma is the cell body of a nerve cell.
 Myelin sheath provides an insulating layer to the dendrites.
@@ -100,7 +100,7 @@ While glia are often thought of as the supporting cast of the nervous system, th
 
 There are several different types of glia with different functions, shown below. **Astrocytes**, shown in the micrograph below (panel a), make contact with both capillaries and neurons in the CNS. They provide nutrients and other substances to neurons, regulate the concentrations of ions and chemicals in the extracellular fluid, and provide structural support for synapses. Astrocytes also form the blood-brain barrier—a structure that blocks entrance of toxic substances into the brain. Astrocytes, in particular, have been shown through calcium imaging experiments to become active in response to nerve activity, transmit calcium waves between astrocytes, and modulate the activity of surrounding synapses. **Satellite glia** provide nutrients and structural support for neurons in the PNS. **Microglia** scavenge and degrade dead cells and protect the brain from invading microorganisms. **Oligodendrocytes**, shown in the diagram below (panel b), form myelin sheaths around axons in the CNS. One axon can be myelinated by several oligodendrocytes, and one oligodendrocyte can provide myelin for multiple neurons. This is distinctive from the PNS where a single **Schwann cell** provides myelin for only one axon as the entire Schwann cell surrounds the axon. **Radial glia** serve as scaffolds for developing neurons as they migrate to their end destinations. **Ependymal** cells line fluid-filled ventricles of the brain and the central canal of the spinal cord. They are involved in the production of cerebrospinal fluid, which serves as a cushion for the brain, moves the fluid between the spinal cord and the brain, and is a component for the choroid plexus.
 
-{{< mediafigure src="biology/Figure_35_01_06" kind="diagram" alt="Two labeled drawings of glial cells. (a) A gold multipolar neuron in the CNS surrounded by star-shaped astrocytes, spiky microglial cells, teal oligodendrocytes wrapping myelin around its axon, and a row of ependymal cells trailing long extensions to an astrocyte. (b) A red pseudounipolar neuron of the PNS, its axon wrapped in Schwann-cell myelin and its cell body ringed by satellite cells." longdesc="Two panels, each a colored line drawing with leader-line labels. Panel (a), 'Central nervous system': a gold multipolar neuron, labeled 'Multipolar neuron', sits at the top center with dendrites branching upward and an axon running right and down through a chain of teal myelin segments labeled 'Oligodendrocyte'. Bluish-gray star-shaped cells labeled 'Astrocyte' contact the neuron and the myelinated axon. Small spiky cells labeled 'Microglial cell' are scattered near the astrocytes. At lower left, a row of small round cells labeled 'Ependymal cell' sends long extensions toward an astrocyte. Panel (b), 'Peripheral nervous system': a red, pseudounipolar neuron labeled 'Pseudounipolar neuron' sits at the top, its cell body ringed by flattened cells labeled 'Satellite cells'. Below it, its axon, labeled 'Axon', runs down and is wrapped by a chain of segments labeled 'Schwann cells'." >}}
+{{< mediafigure src="biology/Figure_35_01_06" kind="diagram" alt="Two labeled drawings of glial cells. (a) A gold multipolar neuron in the CNS surrounded by star-shaped astrocytes, spiky microglial cells, teal oligodendrocytes wrapping myelin around its axon, and a row of ependymal cells trailing long extensions to an astrocyte. (b) A gold pseudounipolar neuron of the PNS, its cell body largely covered by red satellite cells and its axon wrapped in red Schwann cells." longdesc="Two panels, each a colored line drawing with leader-line labels. Panel (a), 'Central nervous system': a gold multipolar neuron, labeled 'Multipolar neuron', sits at the top center with dendrites branching upward, and a second, smaller gold neuron sits at the top right. The labeled neuron's axon runs down to the right and branches into two axons, each running through a chain of teal myelin segments; 'Oligodendrocyte' points to two small, round teal cell bodies among the axons whose flat processes wrap the segments. Three bluish-gray star-shaped cells, one labeled 'Astrocyte', contact the neurons and the myelinated axons. Two small spiky cells lie near the astrocytes, and 'Microglial cell' points to the upper-left one. At lower left, a diagonal row of small round orange cells labeled 'Ependymal cell' sends long extensions toward an astrocyte. Panel (b), 'Peripheral nervous system': a gold, pseudounipolar neuron labeled 'Pseudounipolar neuron' sits at the top, its cell body largely covered by flattened red cells labeled 'Satellite cells'. A single process runs down from the cell body and joins a horizontal axon, forming a T; 'Axon' points to the axon's cut end at the left, and the axon is wrapped by a chain of red segments labeled 'Schwann cells'." >}}
 Glial cells support neurons and maintain their environment. Glial cells of the (a) central nervous system include oligodendrocytes, astrocytes, ependymal cells, and microglial cells. Oligodendrocytes form the myelin sheath around axons. Astrocytes provide nutrients to neurons, maintain their extracellular environment, and provide structural support. Microglia scavenge pathogens and dead cells. Ependymal cells produce cerebrospinal fluid that cushions the neurons. Glial cells of the (b) peripheral nervous system include Schwann cells, which form the myelin sheath, and satellite cells, which provide nutrients and structural support to neurons.
 {{< /mediafigure >}}
 
@@ -138,7 +138,7 @@ The nervous system is made up of neurons and glia. Neurons are specialized cells
 {{< multiplechoice
   question="Neurons contain ________, which can receive signals from other neurons."
   answer="dendrites"
-  hint="These tree-like structures branch from the cell body specifically to catch messages arriving from other neurons at synapses."
+  hint="Reread the Parts of a Neuron paragraph that follows the list of organelles every cell body holds."
 >}}
 axons
 mitochondria
@@ -185,6 +185,12 @@ this ensures the signal is rapidly propagated to the rest of the body
 
 ### List and describe the four main types of neurons
 
+{{< textin
+  question="There are four main types of neurons: unipolar, bipolar, multipolar, and ________ neurons."
+  answer="pseudounipolar"
+  hint="This type's single process branches into two extensions a short distance from the soma, one carrying sensory information in and the other passing it on toward the spinal cord."
+>}}
+
 {{< multiplechoice
   question="A(n) ________ neuron has one axon and one dendrite extending directly from the cell body."
   answer="bipolar"
@@ -195,12 +201,6 @@ bipolar
 multipolar
 pseudounipolar
 {{< /multiplechoice >}}
-
-{{< textin
-  question="There are four main types of neurons: unipolar, bipolar, multipolar, and ________ neurons."
-  answer="pseudounipolar"
-  hint="This type's single process branches into two extensions a short distance from the soma, one carrying sensory information in and the other passing it on toward the spinal cord."
->}}
 
 {{< multiplechoice
   question="Which type of neuron has one axon and multiple dendrites, and is the most common neuron type found in the central nervous system?"
@@ -238,23 +238,24 @@ satellite glia
 {{< /multiplechoice >}}
 
 {{< textin
+  question="The glia that serve as scaffolds for developing neurons as they migrate to their final destinations are called ________."
+  answer="radial glia"
+  accept="radial glial cell"
+  hint="These cells provide a physical pathway that young neurons climb along on their way to where they will function permanently."
+>}}
+
+{{< textin
   question="The glial cell that provides nutrients and structural support for neurons in the peripheral nervous system is called ________."
   answer="satellite glia"
   accept="satellite cell|satellite glial cell"
-  hint="In the PNS, this cell type surrounds the neuron's cell body rather than its axon."
+  hint="See the Types of Glia paragraph, just after the astrocytes sentences."
 >}}
 
 {{< textin
   question="The glia that scavenge and degrade dead cells and protect the brain from invading microorganisms are called ________."
   answer="microglia"
   accept="microglial cell|microglial"
-  hint="This is the brain's resident immune cell, small and spiky with many fine projections."
->}}
-
-{{< textin
-  question="The glia that serve as scaffolds for developing neurons as they migrate to their final destinations are called ________."
-  answer="radial glia"
-  hint="These cells provide a physical pathway that young neurons climb along on their way to where they will function permanently."
+  hint="See the Types of Glia paragraph, between the PNS support cells and the myelin-forming cells of the CNS."
 >}}
 
 ---

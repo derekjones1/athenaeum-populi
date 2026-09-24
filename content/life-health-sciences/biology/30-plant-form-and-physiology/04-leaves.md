@@ -26,7 +26,7 @@ The thickness, shape, and size of leaves are adapted to the environment. Each va
 
 Each leaf typically has a leaf blade called the **lamina**, which is also the widest part of the leaf. Some leaves are attached to the plant stem by a **petiole**. Leaves that do not have a petiole and are directly attached to the plant stem are called **sessile** leaves. Small green appendages usually found at the base of the petiole are known as **stipules**. Most leaves have a midrib, which travels the length of the leaf and branches to each side to produce veins of vascular tissue. The edge of the leaf is called the margin. The figure below shows the structure of a typical eudicot leaf.
 
-{{< mediafigure src="biology/Figure_30_04_01" kind="diagram" eager="true" alt="A single green leaf drawn pointing from upper left to lower right, with six leader lines labeling its parts." longdesc="The leaf is drawn pointing from upper left (its tip) to lower right (its petiole), with six leader lines in this order: 'Tip,' at the upper-left point of the blade; 'Midrib,' pointing to the central vein running down the blade's length; 'Margin,' pointing to the blade's outer edge on the right; 'Vein,' pointing to one of the side veins branching from the midrib; 'Lamina,' pointing to the broad green blade itself on the left; and 'Petiole,' pointing to the narrow tan stalk at the lower right where the blade meets the stem." >}}
+{{< mediafigure src="biology/Figure_30_04_01" kind="diagram" eager="true" alt="A single green leaf drawn pointing from upper left to lower right, with six leader lines labeling its parts." longdesc="The leaf is drawn pointing from upper left (its tip) to lower right (its petiole), with six leader lines in this order: 'Tip,' at the upper-left point of the blade; 'Midrib,' pointing to the central vein running down the blade's length; 'Margin,' pointing to the blade's outer edge on the right; 'Vein,' pointing to one of the side veins branching from the midrib; 'Lamina,' pointing to the broad green blade itself on the left; and 'Petiole,' pointing to the narrow tan stalk extending from the base of the blade at the lower right; no stem is drawn." >}}
 Deceptively simple in appearance, a leaf is a highly efficient structure.
 {{< /mediafigure >}}
 
@@ -64,7 +64,7 @@ Trichomes give leaves a fuzzy appearance as in this (a) sundew (*Drosera* sp.). 
 
 Below the epidermis of dicot leaves are layers of cells known as the mesophyll, or "middle leaf." The mesophyll of most leaves typically contains two arrangements of parenchyma cells: the palisade parenchyma and spongy parenchyma (see the figure below). The palisade parenchyma (also called the palisade mesophyll) has column-shaped, tightly packed cells, and may be present in one, two, or three layers. Below the palisade parenchyma are loosely arranged cells of an irregular shape. These are the cells of the spongy parenchyma (or spongy mesophyll). The air space found between the spongy parenchyma cells allows gaseous exchange between the leaf and the outside atmosphere through the stomata. In aquatic plants, the intercellular spaces in the spongy parenchyma help the leaf float. Both layers of the mesophyll contain many chloroplasts. Guard cells are the only epidermal cells to contain chloroplasts.
 
-{{< mediafigure src="biology/Figure_B30_04_03" kind="diagram" alt="A two-part figure: (a) a labeled cross-section diagram of a leaf, with rows of cells for the upper and lower epidermis and a cuticle layer above and below them, columnar palisade parenchyma and loosely packed spongy parenchyma sandwiched between as the mesophyll, and a stoma flanked by two guard cells with arrows showing gas moving in and out; (b) a black-and-white scanning electron micrograph of the same leaf cross-section, showing tall columnar cells above a looser, more porous layer, with a 200 µm scale bar." longdesc="Panel (a) is a rectangular cross-section diagram, read top to bottom. A row of large green rectangular cells is labeled 'Upper epidermis' on the left; a thin line above them is labeled 'Cuticle' on the right. Below that, tall column-shaped green cells packed side by side are bracketed 'Palisade parenchyma' on the right; a bracket on the left spanning this layer and the one below it is labeled 'Mesophyll.' Below the palisade layer, loosely spaced oval teal cells are bracketed 'Spongy parenchyma' on the right. A second row of large green rectangular cells at the bottom is labeled 'Lower epidermis' on the left; a thin red line below them is labeled 'Cuticle' on the right. A gap between two of the lower-epidermis cells is labeled 'Stoma,' flanked by two cells labeled 'Guard cells'; a red arrow curves down into the gap labeled 'CO2' and a second red arrow curves up out of it labeled 'O2.' Panel (b), below panel (a), is an unlabeled black-and-white scanning electron micrograph of the same cross-section, showing tall columnar cells at the top over a looser, more porous layer beneath, with a white scale bar reading '200 µm' in the lower right corner." >}}
+{{< mediafigure src="biology/Figure_B30_04_03" kind="diagram" alt="A two-part figure: (a) a labeled cross-section diagram of a leaf, with rows of cells for the upper and lower epidermis and a cuticle layer above and below them, columnar palisade parenchyma and loosely packed spongy parenchyma sandwiched between as the mesophyll, and a stoma flanked by two guard cells with arrows showing gas moving in and out; (b) a black-and-white scanning electron micrograph of the same leaf cross-section, showing tall columnar cells above a looser, more porous layer, with a 200 µm scale bar." longdesc="Panel (a) is a rectangular cross-section diagram, read top to bottom. A row of large green rectangular cells is labeled 'Upper epidermis' on the left; a thin line above them is labeled 'Cuticle' on the right. Below that, tall column-shaped green cells packed side by side are bracketed 'Palisade parenchyma' on the right; a bracket on the left spanning this layer and the one below it is labeled 'Mesophyll.' Below the palisade layer, loosely spaced oval teal cells are bracketed 'Spongy parenchyma' on the right. A second row of large green rectangular cells at the bottom is labeled 'Lower epidermis' on the left; a thin red line below them is labeled 'Cuticle' on the right. A gap between two of the lower-epidermis cells is labeled 'Stoma,' flanked by two cells labeled 'Guard cells'; a red arrow labeled 'CO₂' curves up through the gap into the leaf, and a second red arrow labeled 'O₂' curves down through the gap and out of the leaf. Panel (b), below panel (a), is an unlabeled black-and-white scanning electron micrograph of the same cross-section, showing tall columnar cells at the top over a looser, more porous layer beneath, with a white scale bar reading '200 µm' in the lower right corner." >}}
 In the (a) leaf drawing, the central mesophyll is sandwiched between an upper and lower epidermis. The mesophyll has two layers: an upper palisade layer comprised of tightly packed, columnar cells, and a lower spongy layer, comprised of loosely packed, irregularly shaped cells. Stomata on the leaf underside allow gas exchange. A waxy cuticle covers all aerial surfaces of land plants to minimize water loss. These leaf layers are clearly visible in the (b) scanning electron micrograph. The numerous small bumps in the palisade parenchyma cells are chloroplasts. Chloroplasts are also present in the spongy parenchyma, but are not as obvious. The bumps protruding from the lower surface of the leave are glandular trichomes, which differ in structure from the stalked trichomes in the trichome figure above. (credit b: modification of work by Robert R. Wise)
 {{< /mediafigure >}}
 
@@ -160,7 +160,6 @@ dicots have leaves with reticulate, net-like venation
 {{< textin
   question="Small green appendages usually found at the base of the petiole are known as ________."
   answer="stipules"
-  accept="stipule"
   hint="These paired structures sit where the petiole meets the stem, separate from the blade itself."
 >}}
 
@@ -179,6 +178,12 @@ dicots have leaves with reticulate, net-like venation
 
 ### Describe the internal structure and function of a leaf
 
+{{< textin
+  question="Leaf tissue consists of the ________, which forms the outermost cell layer, and mesophyll and vascular tissue, which make up the inner portion of the leaf."
+  answer="epidermis"
+  hint="This layer includes the guard cells that regulate the pores through which gases move."
+>}}
+
 {{< multiplechoice
   question="Cells of the ________ contain chloroplasts."
   answer="mesophyll"
@@ -193,13 +198,7 @@ mesophyll
 {{< textin
   question="A waxy protective layer that covers the leaves of all plant species and reduces water loss from the leaf surface is called the ________."
   answer="cuticle"
-  hint="This layer sits outside the epidermis, protecting against excessive transpiration."
->}}
-
-{{< textin
-  question="Leaf tissue consists of the ________, which forms the outermost cell layer, and mesophyll and vascular tissue, which make up the inner portion of the leaf."
-  answer="epidermis"
-  hint="This layer includes the guard cells that regulate the pores through which gases move."
+  hint="Reread the Leaf Structure and Function paragraph on the epidermis and the leaf surface."
 >}}
 
 ### Compare and contrast simple leaves and compound leaves
@@ -238,6 +237,12 @@ opposite
 
 ### List and describe examples of modified leaves
 
+{{< textin
+  question="In some plant species, leaf form is modified to form structures such as tendrils, spines, bud scales, and ________."
+  answer="needles"
+  hint="Reread the Leaf Adaptations paragraph on plants of cold climates."
+>}}
+
 {{< multiplechoice
   question="Which of the following is most likely to be found in a desert environment?"
   answer="spines instead of leaves"
@@ -255,12 +260,6 @@ Conifers such as spruce, fir, and pine have needle-shaped leaves with sunken sto
 conifers such as spruce, fir, and pine have needle-shaped leaves with sunken stomata
 helping to reduce water loss
 {{< /selfcheck >}}
-
-{{< textin
-  question="In some plant species, leaf form is modified to form structures such as tendrils, spines, bud scales, and ________."
-  answer="needles"
-  hint="Coniferous plants such as spruce, fir, and pine reduce their leaves to this shape to limit water loss."
->}}
 
 ---
 

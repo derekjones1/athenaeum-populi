@@ -26,7 +26,7 @@ In addition to moving small ions and molecules through the membrane, cells also 
 
 Phagocytosis (the condition of "cell eating") is the process by which a cell takes in large particles, such as other cells or relatively large particles. For example, when microorganisms invade the human body, a type of white blood cell, a neutrophil, will remove the invaders through this process, surrounding and engulfing the microorganism, which the neutrophil then destroys (below).
 
-{{< mediafigure src="biology/Figure_05_04_01" alt="This illustration shows a plasma membrane forming a pocket around a particle in the extracellular fluid. The membrane subsequently engulfs the particle, which becomes trapped in a vacuole inside the cell." longdesc="The diagram is captioned \"Phagocytosis.\" At the top, in the extracellular fluid, a large rounded particle labeled \"Large particle\" sits among several smaller orange stars and blue diamonds and squares. Below, the plasma membrane, labeled, curves upward on both sides around the large particle, forming a pocket that nearly encloses it. At the bottom, a separate circular vacuole, labeled, sits fully enclosed in the cytoplasm with the same particle inside it." kind="diagram" eager="true" >}}
+{{< mediafigure src="biology/Figure_05_04_01" alt="This illustration shows a plasma membrane forming a pocket around a particle in the extracellular fluid. The membrane subsequently engulfs the particle, which becomes trapped in a vacuole inside the cell." longdesc="The diagram is captioned \"Phagocytosis.\" At the top, in the extracellular fluid, a large rounded particle labeled \"Large particle\" sits among several smaller orange stars and blue diamonds and squares. Below it, the plasma membrane, labeled, folds down into the cytoplasm to form a deep pocket, its rims rising on either side, with a second, similar particle already inside the pocket. At the bottom, a separate circular vacuole, labeled, sits fully enclosed in the cytoplasm with a third such particle inside it." kind="diagram" eager="true" >}}
 In phagocytosis, the cell membrane surrounds the particle and engulfs it. (credit: modification of work by Mariana Ruiz Villareal)
 {{< /mediafigure >}}
 
@@ -36,7 +36,7 @@ In preparation for phagocytosis, a portion of the plasma membrane's inward-facin
 
 A variation of endocytosis is **pinocytosis**. This literally means "cell drinking". Discovered by Warren Lewis in 1929, this American embryologist and cell biologist described a process whereby he assumed that the cell was purposefully taking in extracellular fluid. In reality, this is a process that takes in molecules, including water, which the cell needs from the extracellular fluid. Pinocytosis results in a much smaller vesicle than does phagocytosis, and the vesicle does not need to merge with a lysosome (below).
 
-{{< mediafigure src="biology/Figure_05_04_02" alt="This illustration shows a plasma membrane forming a pocket around fluid in the extracellular fluid. The membrane subsequently engulfs the fluid, which becomes trapped in a vacuole." longdesc="The diagram is captioned \"Pinocytosis.\" At the top, in the extracellular fluid, small orange stars and blue diamonds and squares are scattered above the plasma membrane. The membrane folds inward at two neighboring places, forming two invaginations; one still holds a diamond shape inside its fold. Below, a small circular vesicle, labeled, has pinched free in the cytoplasm, drawn empty, with diamond shapes floating loose in the cytoplasm around it." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_05_04_02" alt="This illustration shows a plasma membrane forming a pocket around fluid in the extracellular fluid. The membrane subsequently engulfs the fluid, which becomes trapped in a vesicle." longdesc="The diagram is captioned \"Pinocytosis.\" At the top, in the extracellular fluid, small orange stars and blue diamonds and squares are scattered above the plasma membrane. The membrane folds inward at two neighboring places, forming two invaginations; one still holds a diamond shape inside its fold. Below, a small circular vesicle, labeled, has pinched free in the cytoplasm between the two folds; it holds pale blue fluid but no particles, and a square and two diamonds float loose in the cytoplasm around it." kind="diagram" >}}
 In pinocytosis, the cell membrane invaginates, surrounds a small volume of fluid, and pinches off. (credit: modification of work by Mariana Ruiz Villareal)
 {{< /mediafigure >}}
 
@@ -46,7 +46,7 @@ A variation of pinocytosis is **potocytosis**. This process uses a coating prote
 
 A targeted variation of endocytosis employs receptor proteins in the plasma membrane that have a specific binding affinity for certain substances (below).
 
-{{< mediafigure src="biology/Figure_05_04_03" alt="This illustration shows a part of the plasma membrane that is clathrin-coated on the cytoplasmic side and has receptors on the extracellular side. The receptors bind a substance, then pinch off to form a vesicle." longdesc="The diagram is captioned \"Receptor-mediated endocytosis.\" Y-shaped receptors, labeled with a leader line, are embedded in the plasma membrane, some with an orange star bound to their tips; unbound orange stars and blue squares and diamonds float in the extracellular fluid above. On the cytoplasmic side, short red rod shapes labeled \"Clathrin\" coat the membrane where it curves inward around the bound receptors. Below, a completed circular \"Coated vesicle,\" labeled, shows the same red coat on its outside and two or three orange stars still bound to receptors inside it." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_05_04_03" alt="This illustration shows a part of the plasma membrane that is clathrin-coated on the cytoplasmic side and has receptors on the extracellular side. The receptors bind a substance, then pinch off to form a vesicle." longdesc="The diagram is captioned \"Receptor-mediated endocytosis.\" Five Y-shaped receptors, one labeled Receptor with a leader line, are embedded in the plasma membrane; only the one at the bottom of a shallow inward dip has an orange star bound to its tip, and unbound orange stars and blue squares and diamonds float in the extracellular fluid above. On the cytoplasmic side, five small red teardrop shapes labeled \"Clathrin\" stud the membrane under the dip. Below, a completed circular \"Coated vesicle,\" labeled, carries eight of the same red teardrops on its outside and three orange stars, each bound to a receptor, inside it." kind="diagram" >}}
 In receptor-mediated endocytosis, the cell's uptake of substances targets a single type of substance that binds to the receptor on the cell membrane's external surface. (credit: modification of work by Mariana Ruiz Villareal)
 {{< /mediafigure >}}
 
@@ -64,7 +64,7 @@ See receptor-mediated endocytosis in action, and click on [different parts of an
 
 The reverse process of moving material into a cell is the process of exocytosis. **Exocytosis** is the opposite of the processes we discussed above in that its purpose is to expel material from the cell into the extracellular fluid. Waste material is enveloped in a membrane and fuses with the plasma membrane's interior. This fusion opens the membranous envelope on the cell's exterior, and the waste material expels into the extracellular space (below). Other examples of cells releasing molecules via exocytosis include extracellular matrix protein secretion and neurotransmitter secretion into the synaptic cleft by synaptic vesicles.
 
-{{< mediafigure src="biology/Figure_05_04_04" alt="This illustration shows vesicles fusing with the plasma membrane and releasing their contents to the extracellular fluid." longdesc="The diagram is captioned \"Exocytosis.\" Small dark blue dots are scattered through the extracellular fluid at the top. The plasma membrane dips inward above a vesicle in the cytoplasm, labeled \"Vesicle,\" that is filled with blue dots; yellow glowing arcs between the vesicle and the membrane mark the point where it is about to fuse and release its contents into the extracellular fluid above. A second, unlabeled, still-intact vesicle sits to the lower right in the cytoplasm, also filled with blue dots." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_05_04_04" alt="This illustration shows vesicles fusing with the plasma membrane and releasing their contents to the extracellular fluid." longdesc="The diagram is captioned \"Exocytosis.\" Small dark blue dots are scattered through the extracellular fluid, labeled, at the top; the cytoplasm below is labeled too. In the cytoplasm at the left, a vesicle labeled \"Vesicle\" is filled with blue dots, and yellow glowing arcs rise from it to the membrane directly above, marking where it is about to fuse and release its contents; just to the right of that spot, the plasma membrane dips inward in a shallow hollow holding one blue dot. A second, unlabeled, still-intact vesicle sits to the lower right in the cytoplasm, also filled with blue dots." kind="diagram" >}}
 In exocytosis, vesicles containing substances fuse with the plasma membrane. The contents then release to the cell's exterior. (credit: modification of work by Mariana Ruiz Villareal)
 {{< /mediafigure >}}
 
@@ -102,7 +102,7 @@ Active transport methods require directly using ATP to fuel the transport. In a 
 {{< multiplechoice
   question="Which transport mechanism can bring whole cells into a cell?"
   answer="phagocytosis"
-  hint="Which process was compared to a neutrophil engulfing an entire invading microorganism?"
+  hint="Reread the subsections under Endocytosis."
 >}}
 pinocytosis
 phagocytosis
@@ -113,7 +113,7 @@ primary active transport
 {{< multiplechoice
   question="In what important way does receptor-mediated endocytosis differ from phagocytosis?"
   answer="It brings in only a specifically targeted substance."
-  hint="Phagocytosis engulfs whatever large particle is nearby; think about what makes the receptor pathway selective."
+  hint="Compare the Phagocytosis and Receptor-mediated Endocytosis subsections."
 >}}
 It transports only small amounts of fluid.
 It does not involve the pinching off of membrane.
@@ -124,7 +124,7 @@ It brings substances into the cell, while phagocytosis removes substances.
 {{< multiplechoice
   question="Many viruses enter host cells through receptor-mediated endocytosis. What is an advantage of this entry strategy?"
   answer="The virus only enters its target host cell type."
-  hint="A compound's uptake by this pathway depends on binding a receptor that only certain cells display."
+  hint="Reread the Receptor-mediated Endocytosis subsection."
 >}}
 The virus directly enters the cytoplasm of the cell.
 The virus is protected from recognition by white blood cells.
@@ -132,14 +132,14 @@ The virus only enters its target host cell type.
 The virus can directly inject its genome into the cell's nucleus.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is it important that there are different types of proteins in plasma membranes for the transport of materials into and out of a cell?" hint="Think about how a receptor's binding specificity, as in receptor-mediated endocytosis, lets a cell control exactly which substances cross the membrane." >}}
+{{< selfcheck question="Why is it important that there are different types of proteins in plasma membranes for the transport of materials into and out of a cell?" hint="Reread how this section and the previous two describe transport and receptor proteins." >}}
 The proteins allow a cell to select what compound will be transported, meeting the needs of the cell and not bringing in anything else.
 ===CHECKS===
 the proteins allow a cell to select what compound will be transported
 meeting the needs of the cell and not bringing in anything else
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why do ions have a difficult time getting through plasma membranes despite their small size?" hint="Think about how a charged particle interacts with the membrane's nonpolar lipid core, and what kind of protein has to intervene instead." >}}
+{{< selfcheck question="Why do ions have a difficult time getting through plasma membranes despite their small size?" hint="Reread Selective Permeability in the Passive Transport section." >}}
 Ions are charged, and consequently, they are hydrophilic and cannot associate with the lipid portion of the membrane. Ions must be transported by carrier proteins or ion channels.
 ===CHECKS===
 ions are charged, and consequently hydrophilic, so they cannot associate with the lipid portion of the membrane
@@ -149,15 +149,21 @@ ions must be transported by carrier proteins or ion channels
 {{< textin
   question="The protein that coats the plasma membrane's inward-facing surface and assists in forming specialized structures, like coated pits, for phagocytosis is called ________."
   answer="clathrin"
-  hint="This protein stabilizes the pocket that forms around a particle being engulfed during phagocytosis, and it also coats the pits used in receptor-mediated endocytosis."
+  hint="Reread the paragraph that follows the phagocytosis figure."
 >}}
 
 ### Understand the process of exocytosis
 
+{{< textin
+  question="The process of passing bulk material out of a cell is called ________."
+  answer="exocytosis"
+  hint="Reread the opening paragraph of the section's second main heading."
+>}}
+
 {{< multiplechoice
   question="What happens to the membrane of a vesicle after exocytosis?"
   answer="It fuses with and becomes part of the plasma membrane."
-  hint="The vesicle's envelope opens on the cell's exterior; think about where that membrane ends up."
+  hint="Reread the summary's closing sentences."
 >}}
 It leaves the cell.
 It is disassembled by the cell.
@@ -168,7 +174,7 @@ It is used again in another exocytosis event.
 {{< multiplechoice
   question="Which of the following organelles relies on exocytosis to complete its function?"
   answer="Golgi apparatus"
-  hint="Which organelle packages materials into vesicles for release from the cell?"
+  hint="Reread the chapter's section on the endomembrane system."
 >}}
 Golgi apparatus
 vacuole
@@ -179,7 +185,7 @@ endoplasmic reticulum
 {{< multiplechoice
   question="Imagine a cell can perform exocytosis, but only minimal endocytosis. What would happen to the cell?"
   answer="The plasma membrane would increase in size over time."
-  hint="Exocytosis adds membrane to the cell surface each time a vesicle fuses with it; endocytosis is what normally removes an equivalent amount."
+  hint="Reread the Exocytosis subsection and the Endocytosis opening paragraph."
 >}}
 The cell would secrete all its intracellular proteins.
 The plasma membrane would increase in size over time.
@@ -187,12 +193,6 @@ The cell would stop expressing integral receptor proteins in its plasma membrane
 The cell would lyse.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The process of passing bulk material out of a cell is called ________."
-  answer="exocytosis"
-  hint="This is the reverse of endocytosis: material inside the cell is released to the extracellular fluid."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 5.4: Bulk Transport](https://openstax.org/books/biology-2e/pages/5-4-bulk-transport) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all four figures kept as "diagram" (matching the manifest's guess) after inspection, since each is a labeled line illustration rather than a photograph, and an extended description was added to each since its labels (large particle/vacuole, vesicle, receptor/clathrin/coated vesicle, vesicle/cytoplasm) are not repeated in its caption; the table's merged three-column title row, which Markdown cannot represent, was rendered as a bold line above the table with the column headers as the table's own header row; inline references to the figures and table changed from the source's print numbers to descriptive phrases ("below") since figures and tables are not numbered here; the Link to Learning note's link text was expanded from the source's bare "parts" to "different parts of an interactive endocytosis animation" so the link describes its destination; the end-of-section Review Questions and Critical Thinking Questions were adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (clathrin, exocytosis) were added from the glossary so each objective group carries an auto-graded item; and rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One key-term definition is corrected with a visible Source note: pinocytosis imports small molecules and water, as this section's own text and table say, not macromolecules (erratum 389).</small>
+<small>This section is adapted from [Biology 2e, Section 5.4: Bulk Transport](https://openstax.org/books/biology-2e/pages/5-4-bulk-transport) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all four figures kept as "diagram" (matching the manifest's guess) after inspection, since each is a labeled line illustration rather than a photograph, and an extended description was added to each since its labels (large particle/vacuole, vesicle, receptor/clathrin/coated vesicle, vesicle/cytoplasm) are not repeated in its caption, and the pinocytosis figure's source alt, which says the fluid is trapped in a "vacuole," reads "vesicle" to match the figure's printed label; the table's merged three-column title row, which Markdown cannot represent, was rendered as a bold line above the table with the column headers as the table's own header row; inline references to the figures and table changed from the source's print numbers to descriptive phrases ("below") since figures and tables are not numbered here; the Link to Learning note's link text was expanded from the source's bare "parts" to "different parts of an interactive endocytosis animation" so the link describes its destination; the end-of-section Review Questions and Critical Thinking Questions were adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (clathrin, exocytosis) were added from the glossary so each objective group carries an auto-graded item; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One key-term definition is corrected with a visible Source note: pinocytosis imports small molecules and water, as this section's own text and table say, not macromolecules (erratum 389).</small>

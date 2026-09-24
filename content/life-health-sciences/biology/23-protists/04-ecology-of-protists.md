@@ -95,7 +95,7 @@ Protists function at several levels of the ecological food web: as primary produ
 {{< multiplechoice
   question="An example of carbon fixation is _____________."
   answer="photosynthesis"
-  hint="Which listed process converts carbon dioxide into organic molecules using light energy?"
+  hint="Ask which listed process builds organic molecules from carbon dioxide."
 >}}
 photosynthesis
 decomposition
@@ -106,7 +106,7 @@ parasitism
 {{< multiplechoice
   question="Which of the following is **not** a way that protists contribute to the food web?"
   answer="They occupy the apex producer niche."
-  hint="Re-read the section on primary producers: protists sit at the base of the food web, not its top."
+  hint="Check each option against the Primary Producers/Food Sources subsection and the section's last subsection before the Summary."
 >}}
 They fix carbon into organic molecules.
 They occupy the apex producer niche.
@@ -126,8 +126,8 @@ with fewer prey animals available, the shark population will also decline
 {{< textin
   question="Protists function at several levels of the ecological food web: as primary producers, as direct food sources, and as ________."
   answer="decomposers"
-  accept="decomposer"
-  hint="This role recycles nutrients from dead organic matter — the section's closing subsection is named for it."
+  accept="saprobes"
+  hint="The section's last subsection before the Summary describes this role."
 >}}
 
 ### Describe important pathogenic species of protists
@@ -135,7 +135,7 @@ with fewer prey animals available, the shark population will also decline
 {{< multiplechoice
   question="Which parasitic protist evades the host immune system by altering its surface proteins with each generation?"
   answer="Trypanosoma brucei"
-  hint="This trypanosome changes its glycoprotein coat with each generation to stay ahead of the immune system."
+  hint="The Human Pathogens subsections describe which of these parasites keeps changing its surface coat."
 >}}
 Paramecium caudatum
 Trypanosoma brucei
@@ -164,7 +164,7 @@ massive trypanosome infection leads to host organ failure and death
 {{< multiplechoice
   question="In addition, many protists are ______ of plants and animals and can cause deadly human diseases or destroy valuable crops."
   answer="parasites"
-  hint="Re-read the second sentence of the Summary — the relationship in which one organism lives on or in a host at the host's expense."
+  hint="Re-read the second sentence of the Summary."
 >}}
 mixotrophs
 decomposers
@@ -174,4 +174,4 @@ producers
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 23.4: Ecology of Protists](https://openstax.org/books/biology-2e/pages/23-4-ecology-of-protists) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (all six confirmed `kind="photo"` after inspection, matching the manifest's guess); inline print cross-references to numbered figures ("Figure 23.32", etc.) changed to descriptive phrases ("see the photo below") since figures are not numbered here; the two `interactive`-class notes rendered as Link to Learning callouts with descriptive link text naming each linked movie's subject; this module has no glossary, so its "Key terms" heading is omitted; the three Review Questions and three Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); one cloze text-recall item and one select-the-term multiple choice added from the section summary, in place of the usual glossary-derived recall items; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and the third Critical Thinking solution's "zoocanthellae" corrected to "zooxanthellae" — a misspelling inconsistent with the same sentence's own opening word and every other occurrence of the term in this section.</small>
+<small>This section is adapted from [Biology 2e, Section 23.4: Ecology of Protists](https://openstax.org/books/biology-2e/pages/23-4-ecology-of-protists) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (all six confirmed `kind="photo"` after inspection, matching the manifest's guess); inline print cross-references to numbered figures ("Figure 23.32", etc.) changed to descriptive phrases ("see the photo below") since figures are not numbered here; the two `interactive`-class notes rendered as Link to Learning callouts with descriptive link text naming each linked movie's subject; this module has no glossary, so its "Key terms" heading is omitted; the three Review Questions and three Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the Review Questions run in the order 1, 3, 2 and the Critical Thinking Questions in the order 3, 1, 2 of the source's numbering; one cloze text-recall item and one select-the-term multiple choice added from the section summary, in place of the usual glossary-derived recall items; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and the third Critical Thinking solution's "zoocanthellae" corrected to "zooxanthellae" — a misspelling inconsistent with the same sentence's own opening word and every other occurrence of the term in this section.</small>

@@ -45,7 +45,7 @@ This fetus is just entering the second trimester, when the placenta takes over m
 
 During the third trimester, the fetus grows to 3 to 4 kg (6 ½–8 ½ lbs.) and about 50 cm (19–20 inches) long, as illustrated below. This is the period of the most rapid growth during the pregnancy. Organ development continues to birth (and some systems, such as the nervous system and liver, continue to develop after birth). The pregnant person will be most uncomfortable during this trimester. They may urinate frequently due to pressure on the bladder from the fetus. There may also be intestinal blockage and circulatory problems, especially in the legs, where clots may form due to pressure from the fetus on returning veins as they enter the abdominal cavity.
 
-{{< mediafigure src="biology/Figure_43_07_04" kind="diagram" alt="An illustration of a third-trimester fetus, upside down inside the uterus with its head at the bottom near the cervix, its knees drawn up and one foot at the top of the uterus beside the uterine wall; a twisted red-and-blue-and-white umbilical cord loops from its belly up to the uterine wall." longdesc="Three leader lines label the drawing. One near the upper left points to a purple-streaked patch of tissue on the uterus's inner wall, labeled Uterine wall. One at the lower left points to the twisted red-and-blue-and-white cord running from the fetus's belly up to that wall, labeled Umbilical cord. One at the lower right points to the narrow opening at the bottom of the uterus, labeled Cervix." >}}
+{{< mediafigure src="biology/Figure_43_07_04" kind="diagram" alt="An illustration of a third-trimester fetus, upside down inside the uterus with its head at the bottom near the cervix, its knees drawn up and one foot at the top of the uterus beside the uterine wall; a twisted red-and-blue-and-white umbilical cord loops from its belly up to the uterine wall." longdesc="Three leader lines label the drawing. One near the upper left points to the thick pink outer wall of the uterus, labeled Uterine wall; just inside that wall at the upper left lies an unlabeled purple-streaked patch of tissue. One at the lower left points to the twisted red-and-blue-and-white cord running from the fetus's belly up to that purple patch, labeled Umbilical cord. One at the lower right points to the narrow opening at the bottom of the uterus, labeled Cervix." >}}
 There is rapid fetal growth during the third trimester. (credit: modification of work by Gray's Anatomy)
 {{< /mediafigure >}}
 
@@ -120,10 +120,23 @@ Human pregnancy begins with fertilization of an egg and proceeds through the thr
 
 ### Explain fetal development during the three trimesters of gestation
 
+{{< textin
+  question="The length of time for fetal development to birth is called ________."
+  answer="gestation"
+  accept="gestation period"
+  hint="This word also names the length of pregnancy in every mammal the section compares — human, chimpanzee, elephant, and whale each have their own value for it."
+>}}
+
+{{< textin
+  question="The organ that supports the diffusion of nutrients and waste between the pregnant person's and fetus' blood is called the ________."
+  answer="placenta"
+  hint="This organ forms partway through the first trimester and keeps performing this exchange function all the way through delivery."
+>}}
+
 {{< multiplechoice
   question="Nutrient and waste requirements for the developing fetus are handled during the first few weeks by:"
   answer="diffusion through the endometrium"
-  hint="The placenta hasn't formed yet this early in the first trimester — think about how a molecule can cross a membrane when there is no vascular organ yet in place to carry it."
+  hint="Reread the Human Gestation paragraph that divides the gestation period into trimesters."
 >}}
 the placenta
 diffusion through the endometrium
@@ -134,7 +147,7 @@ the blastocyst
 {{< multiplechoice
   question="Progesterone is made during the third trimester by the:"
   answer="placenta"
-  hint="By the third trimester, one organ has taken over hormone production from the corpus luteum, which has already degenerated — check which structure the section says has assumed that role."
+  hint="Reread the Human Gestation paragraph on the second trimester and what continues into the third."
 >}}
 placenta
 endometrial lining
@@ -162,25 +175,12 @@ the placenta takes over the production of estrogen and high levels of progestero
 the third trimester exhibits the greatest growth of the fetus, culminating in labor and delivery
 {{< /selfcheck >}}
 
-{{< textin
-  question="The length of time for fetal development to birth is called ________."
-  answer="gestation"
-  accept="gestation period"
-  hint="This word also names the length of pregnancy in every mammal the section compares — human, chimpanzee, elephant, and whale each have their own value for it."
->}}
-
-{{< textin
-  question="The organ that supports the diffusion of nutrients and waste between the pregnant person's and fetus' blood is called the ________."
-  answer="placenta"
-  hint="This organ forms partway through the first trimester and keeps performing this exchange function all the way through delivery."
->}}
-
 ### Describe labor and delivery
 
 {{< multiplechoice
   question="Which hormone is primarily responsible for the contractions during labor?"
   answer="oxytocin"
-  hint="Trace which hormone the posterior pituitary releases once nerve impulses reach the hypothalamus from the stretching cervix, and which one the smooth muscle of the uterine wall responds to."
+  hint="Reread the first paragraph of the Labor and Birth subsection."
 >}}
 oxytocin
 estrogen
@@ -199,11 +199,17 @@ stage three delivers the placenta
 {{< textin
   question="The labor process has three stages (contractions, delivery of the fetus, expulsion of the placenta), each propelled by ________."
   answer="hormones"
-  accept="hormone"
-  hint="Oxytocin and prostaglandins are two examples of the broader chemical-messenger category this word names."
+  hint="This is the second sentence of the section summary; the Labor and Birth subsection describes what drives each stage."
 >}}
 
 ### Compare the efficacy and duration of various types of contraception
+
+{{< textin
+  question="Various means used to prevent pregnancy are collectively called ________."
+  answer="contraception"
+  accept="birth control"
+  hint="The section notes that, strictly speaking, this term refers only to preventing the sperm and egg from joining, though it is often used interchangeably with a broader synonym."
+>}}
 
 {{< multiplechoice
   question="Which of these methods is regarded as permanent contraception?"
@@ -227,13 +233,6 @@ natural family planning
 withdrawal
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Various means used to prevent pregnancy are collectively called ________."
-  answer="contraception"
-  accept="birth control"
-  hint="The section notes that, strictly speaking, this term refers only to preventing the sperm and egg from joining, though it is often used interchangeably with a broader synonym."
->}}
-
 ### Discuss causes of infertility and the therapeutic options available
 
 {{< textin
@@ -245,7 +244,7 @@ withdrawal
 {{< multiplechoice
   question="Assisted reproductive technologies may help individuals who have which of the following?"
   answer="infertility problems"
-  hint="This option names the inability to conceive a child or carry one to birth — check which of the four matches that meaning rather than a different reproductive process."
+  hint="This is the last sentence of the section summary; the last subsection describes when these technologies are used."
 >}}
 infertility problems
 contraception problems
@@ -257,7 +256,7 @@ labor problems
   question="A common type of assisted reproductive technology in which an egg and sperm are combined outside the body and then placed in the uterus is called ________."
   answer="in vitro fertilization"
   accept="IVF|in vitro fertilisation"
-  hint="Its Latin name literally means \"in glass,\" referring to where fertilization takes place."
+  hint="Reread the paragraph on assisted reproductive technologies in the last subsection."
 >}}
 
 ---

@@ -21,15 +21,10 @@ weight: 31
 
 ### 21.1 Anatomy and Normal Microbiota of the Skin and Eyes
 
-{{< multiplechoice
-  question="Which structure of the eye is protected from contact with the environment and is almost always sterile, with no normal microbiota?"
-  answer="the vitreous humor"
+{{< textin
+  question="The role and populations of viruses in the skin's normal microbiota, known as ________, are still not well understood, and there are limitations to the techniques used to identify them."
+  answer="viromes"
 >}}
-the conjunctiva
-the vitreous humor
-the cornea
-the lacrimal sac
-{{< /multiplechoice >}}
 
 {{< textin
   question="A deep, pus-filled abscess generally formed from multiple furuncles is called a ________."
@@ -98,7 +93,7 @@ dermatophytes
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The microscopic morphology of a fungal slide culture is confirmed by staining it with ________."
+  question="The microscopic morphology of *Sporothrix* can be observed by staining a slide culture of the mold with ________."
   answer="lactophenol cotton blue"
 >}}
 
@@ -355,7 +350,6 @@ Types 6, 11, 16, and 18
 {{< textin
   question="*Candida* spp. can protect themselves from the host immune system by changing their ________."
   answer="phenotypes"
-  accept="phenotype"
 >}}
 
 {{< selfcheck question="Besides vaginal candidiasis, what other conditions can *Candida* infections cause, and where on the body do they occur?" >}}
@@ -473,7 +467,7 @@ A hemolysin
 {{< sortbins
   question="Sort each description of viral gastroenteritis below under the virus its signs, symptoms, or diagnostic tests describe."
 >}}
-{"bins":["Astrovirus","Norovirus","Rotavirus"],"items":[{"label":"Headache","bin":0},{"label":"Generally self-limiting within two days","bin":1},{"label":"Recurring infections can lead to malnutrition and death","bin":2},{"label":"Abdominal pain","bin":0},{"label":"Confirmed with RT-qPCR after a rapid enzyme immunoassay","bin":1},{"label":"Diagnosed in part using latex agglutination assays","bin":2}]}
+{"bins":["Astrovirus","Norovirus","Rotavirus"],"items":[{"label":"Headache","bin":0},{"label":"Generally self-limiting within two days","bin":1},{"label":"Recurring infections can lead to malnutrition and death","bin":2},{"label":"Confirmed with RT-qPCR after a rapid enzyme immunoassay","bin":1},{"label":"Diagnosed in part using latex agglutination assays","bin":2}]}
 {{< /sortbins >}}
 
 {{< multiplechoice
@@ -499,7 +493,7 @@ It embeds part of its body in the intestinal mucosa.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which protozoan gastrointestinal infection can be caused by ingestion of as few as 10 cysts?"
+  question="Which protozoan gastrointestinal infection is one of the leading causes of mortality from parasitic disease worldwide?"
   answer="Amoebiasis"
 >}}
 Giardiasis
@@ -514,7 +508,7 @@ Amoebiasis
 >}}
 1 to 6 hours
 12 to 48 hours
-1 to 3 weeks
+3 to 4 weeks
 7 to 10 days
 {{< /multiplechoice >}}
 
@@ -553,8 +547,8 @@ Skin penetration by soil-dwelling larvae
 ### 25.1 Anatomy of the Circulatory and Lymphatic Systems
 
 {{< textin
-  question="A condition marked by reduced blood flow to tissues as a result of severe damage to blood vessels or the surrounding tissue is called ________."
-  answer="ischemia"
+  question="The presence of viruses in the blood is called ________."
+  answer="viremia"
 >}}
 
 {{< textin
@@ -638,13 +632,12 @@ the infection can be fatal
 >}}
 
 {{< multiplechoice
-  question="Domestic cats are the only known definitive hosts for the sexual stage of which protozoan parasite, making them the main reservoir of human infection?"
-  answer="*Toxoplasma gondii*"
+  question="Which clinical form of leishmaniasis may take months and sometimes years to develop, leading to enlargement of the lymph nodes, liver, spleen, and bone marrow?"
+  answer="Visceral leishmaniasis"
 >}}
-*Toxoplasma gondii*
-*Plasmodium falciparum*
-*Trypanosoma cruzi*
-*Leishmania* spp.
+Cutaneous leishmaniasis
+Mucosal leishmaniasis
+Visceral leishmaniasis
 {{< /multiplechoice >}}
 
 ## Chapter 26: Nervous System Infections
@@ -724,7 +717,6 @@ Histological examination of brain biopsies for amyloid plaques and prion protein
 {{< textin
   question="Patients with impaired respiratory function due to polio were historically confined to Emerson respirators, also known as ________."
   answer="iron lungs"
-  accept="iron lung"
 >}}
 
 ### 26.4 Fungal and Parasitic Diseases of the Nervous System
@@ -740,8 +732,9 @@ Tsetse fly bites
 {{< /multiplechoice >}}
 
 {{< textin
-  question="*Naegleria fowleri* can exist in one of three forms: the infective trophozoite form, a motile flagellate form, and a resting ________ form."
-  answer="cyst"
+  question="*Naegleria fowleri* amoebae seen in a patient's CSF can be stained for identification with several stains, including a modified trichrome stain or ________."
+  answer="Giemsa-Wright"
+  accept="Giemsa-Wright stain|Wright-Giemsa|Wright-Giemsa stain"
 >}}
 
 {{< selfcheck question="How is a successfully treated African trypanosomiasis patient monitored for relapse, and what is described as the most effective way to prevent this disease?" >}}

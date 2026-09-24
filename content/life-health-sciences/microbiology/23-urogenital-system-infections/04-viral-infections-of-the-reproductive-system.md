@@ -54,7 +54,7 @@ In some cases, infections can occur before birth when the virus crosses the plac
 {{< multiplechoice
   question="Why are latent herpes virus infections still of clinical concern?"
   answer="Because the virus can still be transmitted between outbreaks, even when no vesicles are visible"
-  hint="Consider what happens to transmission risk in the gap between visible outbreaks, not what happens inside the ganglia."
+  hint="Read the last sentence of the paragraph on latency and reactivation."
 >}}
 Because antiviral medication cures HSV-2 infection but symptoms can still reappear afterward
 Because the virus can still be transmitted between outbreaks, even when no vesicles are visible
@@ -65,9 +65,9 @@ Because latency allows the virus to spread through the bloodstream to internal o
 {{< multiplechoice
   question="How is neonatal herpes contracted?"
   answer="During childbirth, from pathogens in the birth canal"
-  hint="The section names this as the general route, distinct from the less common way an infection can occur before birth."
+  hint="Read the first sentence of the subsection on infections in newborns."
 >}}
-Transplacentally, when the virus crosses the placenta before birth
+Through sexual contact
 Through breastfeeding after the child is born
 During childbirth, from pathogens in the birth canal
 Via respiratory droplets inhaled after birth
@@ -103,7 +103,7 @@ Watch a [video](https://openstax.org/l/22HPVpercep) of how perceptions of HPV af
 
 **Check Your Understanding**
 
-{{< textin question="What is diagnostic of an HPV infection in a Pap smear?" answer="koilocytes" hint="This is the name for the distinctively abnormal cell type the section describes as having a perinuclear halo." >}}
+{{< textin question="What is diagnostic of an HPV infection in a Pap smear?" answer="koilocytes" accept="koilocytosis|koilocytotic atypia" hint="Look in the paragraph on liquid-based cytology." >}}
 
 {{< multiplechoice
   question="What is the motivation for HPV vaccination?"
@@ -174,16 +174,16 @@ cytomegalovirus
 
 {{< textin question="A group of common sexually transmitted viruses that may cause genital growths or a cervical malignancy is called the ________." answer="human papillomavirus" accept="HPV" hint="This virus's abbreviation appears throughout the section." >}}
 
-{{< textin question="The type of herpesvirus most commonly associated with genital herpes is abbreviated ________." answer="HSV-2" accept="herpes simplex virus 2|HSV2" hint="This is the type most linked to genital, rather than oral, lesions." >}}
+{{< textin question="Herpes simplex virus type 1 (HSV-1) is generally associated with oral lesions like ________ or fever blisters." answer="cold sores" hint="Look in the paragraph that contrasts the two herpes simplex virus types." >}}
 
-{{< textin question="Herpes infection of the newborn, generally caused by exposure to the virus during childbirth, is called ________." answer="neonatal herpes" hint="This condition's own name simply combines what kind of infection it is with who it affects." >}}
+{{< textin question="Herpes infection of the newborn, generally caused by exposure to the virus during childbirth, is called ________." answer="neonatal herpes" hint="See the bold term in the paragraph that follows the recommended antiviral medications." >}}
 
 ### Compare the major characteristics of specific viral diseases affecting the reproductive system
 
 {{< multiplechoice
   question="Koilocytes are characteristic of"
   answer="cells infected with human papillomavirus"
-  hint="This distinctive cell type is described in the same paragraph explaining what a Pap smear can reveal about HPV, not about any other virus in this section."
+  hint="Find the paragraph on liquid-based cytology."
 >}}
 cells infected with human papillomavirus
 cells infected with herpes simplex virus 2
@@ -194,7 +194,7 @@ cervical cancer cells
 {{< multiplechoice
   question="Is it true that human papillomaviruses can always be detected by the presence of genital warts?"
   answer="No — HPV infection is often asymptomatic, and only some types cause warts"
-  hint="The section states plainly, right after introducing HPV's genome, how often an infection produces no symptoms at all."
+  hint="Read the second paragraph of the Human Papillomas subsection."
 >}}
 No — HPV cannot be detected by any test, including a Pap smear
 No — HPV infection is often asymptomatic, and only some types cause warts
@@ -217,9 +217,9 @@ age 30
 age 40
 {{< /multiplechoice >}}
 
-{{< textin question="Irregular, soft, pink growths on the external genitalia or anus resulting from HPV infection are called ________." answer="genital warts" accept="condylomata acuminata|venereal warts" hint="The section opens its Human Papillomas discussion by naming these growths right after their clinical Latin name." >}}
+{{< textin question="Koilocytes have a distinct clear appearance around the nucleus called a ________." answer="perinuclear halo" hint="Look at the last sentence of the paragraph on liquid-based cytology." >}}
 
-{{< selfcheck question="Recently, studies have shown a reduction in the prevalence of some strains of HPV in younger females. What might be the reason for this?" hint="The section closes its HPV discussion by naming the single most effective strategy for preventing oncogenic HPV, recommended before sexual activity begins." >}}
+{{< selfcheck question="Recently, studies have shown a reduction in the prevalence of some strains of HPV in younger females. What might be the reason for this?" hint="Reread the last paragraph of the Human Papillomas subsection." >}}
 The module states that vaccination is the most effective way to prevent infection with oncogenic HPV, and that it is recommended for all young people prior to sexual activity, usually between the ages of nine and fifteen. The observed reduction in HPV prevalence among younger females is consistent with growing uptake of this vaccination, though the module does not directly state the cause of the decline.
 ===CHECKS===
 vaccination is the most effective way to prevent infection with oncogenic HPV
@@ -229,4 +229,4 @@ the module does not directly state the cause of the decline
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 23.4: Viral Infections of the Reproductive System](https://openstax.org/books/microbiology/pages/23-4-viral-infections-of-the-reproductive-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four photographic and micrograph figures re-encoded as WebP and rendered as mediafigures with `kind="photo"` after image inspection, with the Herpes micrograph carrying `eager="true"` as the page's first figure; the HerpLesion figure's source alt ("Photo of penis with white sored. B) Photo of skin with red raised bumps.") is ungrammatical and does not describe the artwork, so it is rewritten from the image, as are the Herpes, GenWarts, and CervixCell alts, each to describe what is drawn rather than the source's brief phrasing; the Disease Profile table image (`OSC_Microbio_23_04_VirInfTbl`) is transcribed as a Markdown table from its alt (checked cell by cell against the PDF page, no divergence found) rather than vendored, per this book's Disease Profile rule, with the alt's run-together "Disease Pathogen" header split into its own two columns as printed in the image; feature boxes rendered as callouts, the Link to Learning keeping its external URL; the six footnote citations are rendered as inline parenthetical citations, bare access URLs dropped; the cross-references to Section 21.3 (*Viral Infections of the Skin and Eyes*, linked twice), Section 15.2 (*How Pathogens Cause Disease*), and Section 23.6 (*Protozoan Infections of the Urogenital System*, inside the Micro Connection box) are links to those pages; the two source Multiple Choice items and the one Fill in the Blank item are adapted into Practice unchanged with their source keys; of the section's two unkeyed Short Answer questions, "Is it true that human papillomaviruses can always be detected by the presence of genital warts?" is graded as a `multiplechoice` from the module's own sentence that HPV infection is often asymptomatic and only some types cause warts, and "How is neonatal herpes transmitted?" is the same question, reworded, as the body Check Your Understanding bullet "How is neonatal herpes contracted?" — both stems ask how neonatal herpes is transmitted — so it is graded once, at the body position, rather than duplicated in Practice; the one unkeyed Critical Thinking question (on reduced HPV prevalence in younger females) remains a self-check, since the module does not state the cause of the decline and the model answer says only what the module gives; of this section's four body Check Your Understanding bullets, all four are graded (three `multiplechoice`, one `textin`) from a single fixing sentence of their own subsection; seven of the twelve Practice items are author-written from this section's own Key terms and body/summary sentences (five term-recall `textin`s, one summary-sentence cloze `textin`, and one age-recall `multiplechoice`), alongside the four source-derived items (three source-keyed plus the converted Short Answer); the source Multiple Choice item on koilocytes and the body Check Your Understanding `textin` on the same cells test the fact from opposite directions (recognizing the cell type versus naming it) and are both kept as the source's own distinct items. A claim correction in the Genital Herpes subsection replaces the source's "ganglia in the spine (either the trigeminal ganglion or the lumbar-sacral ganglia)" with "sensory ganglia (either the trigeminal ganglion, in the head, or the lumbar-sacral ganglia, in the spine)," with a visible Source note beside the passage, because the trigeminal ganglion is a cranial nerve ganglion inside the skull, not a spinal one. No other one-word or claim-level departures from the CNXML were found on a word-by-word check against the module.</small>
+<small>This section is adapted from [Microbiology, Section 23.4: Viral Infections of the Reproductive System](https://openstax.org/books/microbiology/pages/23-4-viral-infections-of-the-reproductive-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four photographic and micrograph figures re-encoded as WebP and rendered as mediafigures with `kind="photo"` after image inspection, with the Herpes micrograph carrying `eager="true"` as the page's first figure; the HerpLesion figure's source alt ("Photo of penis with white sored. B) Photo of skin with red raised bumps.") is ungrammatical and does not describe the artwork, so it is rewritten from the image, as are the Herpes, GenWarts, and CervixCell alts, each to describe what is drawn rather than the source's brief phrasing; the Disease Profile table image (`OSC_Microbio_23_04_VirInfTbl`) is transcribed as a Markdown table from its alt (checked cell by cell against the PDF page, no divergence found) rather than vendored, per this book's Disease Profile rule, with the alt's run-together "Disease Pathogen" header split into its own two columns as printed in the image; feature boxes rendered as callouts, the Link to Learning keeping its external URL; the six footnote citations are rendered as inline parenthetical citations, bare access URLs dropped; the cross-references to Section 21.3 (*Viral Infections of the Skin and Eyes*, linked twice), Section 15.2 (*How Pathogens Cause Disease*), and Section 23.6 (*Protozoan Infections of the Urogenital System*, inside the Micro Connection box) are links to those pages; the two source Multiple Choice items and the one Fill in the Blank item are adapted into Practice unchanged with their source keys; of the section's two unkeyed Short Answer questions, "Is it true that human papillomaviruses can always be detected by the presence of genital warts?" is graded as a `multiplechoice` from the module's own sentence that HPV infection is often asymptomatic and only some types cause warts, and "How is neonatal herpes transmitted?" is the same question, reworded, as the body Check Your Understanding bullet "How is neonatal herpes contracted?" — both stems ask how neonatal herpes is transmitted — so it is graded once, at the body position, rather than duplicated in Practice; the one unkeyed Critical Thinking question (on reduced HPV prevalence in younger females) remains a self-check, since the module does not state the cause of the decline and the model answer says only what the module gives; of this section's four body Check Your Understanding bullets, all four are graded (three `multiplechoice`, one `textin`) from a single fixing sentence of their own subsection; seven of the twelve Practice items are author-written from this section's own Key terms and body/summary sentences (two term-recall `textin`s, three body-sentence cloze `textin`s — on valacyclovir, cold sores, and the perinuclear halo — one summary-sentence cloze `textin`, and one age-recall `multiplechoice`); an HSV-2 abbreviation recall that re-asked the source Multiple Choice on the cause of genital herpes, and a genital-warts definition recall that re-asked the source Fill in the Blank on condylomata, were replaced by the cold-sores and perinuclear-halo clozes, alongside the four source-derived items (three source-keyed plus the converted Short Answer); the source Multiple Choice item on koilocytes and the body Check Your Understanding `textin` on the same cells test the fact from opposite directions (recognizing the cell type versus naming it) and are both kept as the source's own distinct items. A claim correction in the Genital Herpes subsection replaces the source's "ganglia in the spine (either the trigeminal ganglion or the lumbar-sacral ganglia)" with "sensory ganglia (either the trigeminal ganglion, in the head, or the lumbar-sacral ganglia, in the spine)," with a visible Source note beside the passage, because the trigeminal ganglion is a cranial nerve ganglion inside the skull, not a spinal one. No other one-word or claim-level departures from the CNXML were found on a word-by-word check against the module.</small>

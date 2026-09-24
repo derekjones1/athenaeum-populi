@@ -22,7 +22,7 @@ Cancer comprises many different diseases caused by a common mechanism: uncontrol
 
 The change in the cell that results from the malformed protein may be minor: perhaps a slight delay in the binding of Cdk to cyclin or an Rb protein that detaches from its target DNA while still phosphorylated. Even minor mistakes, however, may allow subsequent mistakes to occur more readily. Over and over, small uncorrected errors are passed from the parent cell to the daughter cells and amplified as each generation produces more non-functional proteins from uncorrected DNA damage. Eventually, the pace of the cell cycle speeds up as the effectiveness of the control and repair mechanisms decreases. Uncontrolled growth of the mutated cells outpaces the growth of normal cells in the area, and a tumor ("-oma") can result.
 
-{{< mediafigure src="biology/celldivision" alt="Three stacked panels compare normal and abnormal outcomes of cell division and apoptosis. Top: normal cell division with normal apoptosis keeps a small, stable cluster of cells in homeostasis. Middle: increased cell division with normal apoptosis grows the cluster into a tumor. Bottom: normal cell division with decreased apoptosis also grows the cluster into a tumor." longdesc="Three horizontal panels, each showing an arrow from a small starting cluster of orange, cell-shaped icons to a larger middle cluster (with a few grey, star-shaped icons mixed in), then a second arrow to a final cluster beside a rounded label. Top panel: labels 'Normal Cell Division' and 'Normal Apoptosis' lead to a small, even final cluster and a blue oval reading 'HOMEOSTASIS.' Middle panel: 'INCREASED Cell Division' (in red) and 'Normal Apoptosis' lead to a much larger, denser final cluster and a red oval reading 'TUMOR.' Bottom panel: 'Normal Cell Division' and 'DECREASED Apoptosis' (in red) lead to a large final cluster and a red oval reading 'TUMOR.'" kind="diagram" eager="true" >}}
+{{< mediafigure src="biology/celldivision" alt="Three stacked panels compare normal and abnormal outcomes of cell division and apoptosis. Top: normal cell division with normal apoptosis keeps a small, stable cluster of cells in homeostasis. Middle: increased cell division with normal apoptosis grows the cluster into a tumor. Bottom: normal cell division with decreased apoptosis also grows the cluster into a tumor." longdesc="Three horizontal panels, each showing an arrow from a small starting cluster of orange, cell-shaped icons to a middle cluster with grey, dark-centred icons (dying cells) mixed in — four in the top and middle panels, only one in the bottom panel — then a second arrow to a final cluster beside a rounded label. Top panel: labels 'Normal Cell Division' and 'Normal Apoptosis' lead to a small, even final cluster and a blue oval reading 'HOMEOSTASIS.' Middle panel: 'INCREASED Cell Division' (in red) and 'Normal Apoptosis' lead to a much larger, denser final cluster and a red oval reading 'TUMOR.' Bottom panel: 'Normal Cell Division' and 'DECREASED Apoptosis' (in red) lead to a large final cluster and a red oval reading 'TUMOR.'" kind="diagram" eager="true" >}}
 Cell Division and Apoptosis. In an adult organism, normal cell division is balanced by apoptosis (programmed cell death) to maintain a constant cell number in homeostasis. Either an increase in cell division or a decrease in apoptosis leads an increase in the number of cells and tumor formation. Credit: Rao, A. and Ryan, K. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -38,17 +38,17 @@ Like proto-oncogenes, many of the negative cell-cycle regulatory proteins were d
 
 Mutated p53 genes have been identified in more than 50 percent of all human tumor cells. This discovery is not surprising in light of the multiple roles that the p53 protein plays at the G₁ checkpoint. A cell with a faulty p53 may fail to detect errors present in the genomic DNA (see the diagram below). Even if a partially functional p53 does identify the mutations, it may no longer be able to signal the necessary DNA repair enzymes. Either way, damaged DNA will remain uncorrected. At this point, a functional p53 will deem the cell unsalvageable and trigger programmed cell death (apoptosis). The damaged version of p53 found in cancer cells, however, cannot trigger apoptosis.
 
-{{< mediafigure src="biology/Figure_10_04_01-9310" alt="Two-panel flow chart comparing normal and mutated p53. Left panel (Normal p53): DNA damage, cell cycle abnormalities, or hypoxia activate p53, which triggers cell cycle arrest and DNA repair, restarting the cell cycle if repair succeeds, or triggering apoptosis if it does not. Right panel (Mutated p53): the same triggers reach a damaged p53 that does not arrest the cell cycle; the cell cycle continues and the cell can become cancerous." longdesc="Two side-by-side panels under a green header row reading 'Normal p53' and 'Mutated p53.' In both panels, an orange box reading 'DNA damage, Cell cycle abnormalities, Hypoxia' points down to a grey box labeled 'p53.' In the left panel, red arrows branch from 'p53' to two orange boxes, 'Cell cycle arrest' and 'Apoptosis (programmed cell death),' which are joined by a red arrow; 'Cell cycle arrest' also points down through 'DNA repair' to 'Cell cycle restart.' Text below the left panel reads: 'When cellular damage occurs. P53 arrests the cell cycle until the damage is repaired. If damage cannot be repaired, apoptosis occurs.' In the right panel, a jagged red stress mark sits on the 'p53' box, and a single red arrow leads from it to an orange box, 'Cell cycle continues,' which arrows down to a red-outlined box, 'Cells can become cancerous.' Text below the right panel reads: 'Mutated p53 does not arrest the cell cycle. The damaged cell continues to divide, which may result in cancer.'" kind="diagram" >}}
+{{< mediafigure src="biology/Figure_10_04_01-9310" alt="Two-panel flow chart comparing normal and mutated p53. Left panel (Normal p53): DNA damage, cell cycle abnormalities, or hypoxia activate p53, which triggers cell cycle arrest and DNA repair, restarting the cell cycle if repair succeeds, or triggering apoptosis if it does not. Right panel (Mutated p53): the same triggers reach a damaged p53 that does not arrest the cell cycle; the cell cycle continues and the cell can become cancerous." longdesc="Two side-by-side panels under a green header row reading 'Normal p53' and 'Mutated p53.' In both panels, an orange box reading 'DNA damage, Cell cycle abnormalities, Hypoxia' sits directly above a grey box labeled 'p53' (no arrow is drawn between them). In the left panel, two red arrows branch from 'p53' to two orange boxes. The left box holds three lines joined by short red down-arrows, 'Cell cycle arrest' to 'DNA repair' to 'Cell cycle restart'; a red arrow also runs from its 'Cell cycle arrest' line right into the other box, 'Apoptosis (programmed cell death).' Text below the left panel reads: 'When cellular damage occurs. P53 arrests the cell cycle until the damage is repaired. If damage cannot be repaired, apoptosis occurs.' In the right panel, the 'p53' box has a torn, jagged corner outlined in red, and a single red arrow leads from it to an orange box, 'Cell cycle continues,' which arrows down to a red-outlined box, 'Cells can become cancerous.' Text below the right panel reads: 'Mutated p53 does not arrest the cell cycle. The damaged cell continues to divide, which may result in cancer.'" kind="diagram" >}}
 The role of normal p53 is to monitor DNA and the supply of oxygen (hypoxia is a condition of reduced oxygen supply). If damage is detected, p53 triggers repair mechanisms. If repairs are unsuccessful, p53 signals apoptosis. A cell with an abnormal p53 protein cannot repair damaged DNA and thus cannot signal apoptosis. Cells with abnormal p53 can become cancerous. (credit: modification of work by Thierry Soussi)
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Human papillomavirus can cause cervical cancer. The virus encodes E6, a protein that binds p53. Based on this fact and what you know about p53, what effect do you think E6 binding has on p53 activity?"
   answer="E6 binding marks p53 for degradation"
-  hint="A virus that wants to escape p53's apoptosis signal needs p53 gone entirely, not merely blocked in place."
+  hint="Reread the Tumor Suppressor Genes paragraph on p53 and the figure just above."
 >}}
 E6 activates p53
-E6 inactivates p53
+E6 binding causes p53 to trigger apoptosis
 E6 mutates p53
 E6 binding marks p53 for degradation
 {{< /multiplechoice >}}
@@ -76,7 +76,7 @@ Cancer is the result of unchecked cell division caused by a breakdown of the mec
 {{< multiplechoice
   question="___________ are changes to the order of nucleotides in a segment of DNA that codes for a protein."
   answer="Gene mutations"
-  hint="Re-read the section's opening paragraph on what a change to the DNA nucleotide sequence is called."
+  hint="Reread the section's opening paragraph."
 >}}
 Proto-oncogenes
 Tumor suppressor genes
@@ -84,7 +84,7 @@ Gene mutations
 Negative regulators
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Outline the steps that lead to a cell becoming cancerous." hint="Start from a single mutated regulator protein and follow what happens across successive generations of daughter cells." >}}
+{{< selfcheck question="Outline the steps that lead to a cell becoming cancerous." hint="Reread the section's first two paragraphs and the summary." >}}
 If one of the genes that produces regulator proteins becomes mutated, it produces a malformed, possibly non-functional, cell-cycle regulator, increasing the chance that more mutations will be left unrepaired in the cell. Each subsequent generation of cells sustains more damage. The cell cycle can speed up as a result of the loss of functional checkpoint proteins. The cells can lose the ability to self-destruct and eventually become "immortalized."
 ===CHECKS===
 a mutated gene produces a malformed cell-cycle regulator
@@ -94,18 +94,25 @@ cells lose the ability to self-destruct
 {{< /selfcheck >}}
 
 {{< textin
-  question="Rapidly reproducing cancer cells that crowd out normal blood cells cause the blood cancer called ________."
+  question="Rapidly reproducing cells that crowd out normal cells can result in a tumor or in the blood cancer called ________."
   answer="leukemia"
   accept="leukaemia"
-  hint="A cancer of the blood rather than a solid tumor — the summary names it in parentheses."
+  hint="Reread the last sentence of the section summary."
 >}}
 
 ### Understand how proto-oncogenes are normal cell genes that, when mutated, become oncogenes
 
+{{< textin
+  question="In cancer, the loss of control begins with a change in the DNA sequence of a gene that codes for one of the ________."
+  answer="regulatory molecules"
+  accept="regulatory proteins|regulator proteins|regulators"
+  hint="Reread the second sentence of the section summary."
+>}}
+
 {{< multiplechoice
   question="A gene that codes for a positive cell-cycle regulator is called a(n) _____."
   answer="proto-oncogene."
-  hint="This is the normal, unmutated version of the gene."
+  hint="Reread the first subsection after the cell-division-and-apoptosis figure."
 >}}
 kinase inhibitor.
 tumor suppressor gene.
@@ -116,7 +123,7 @@ oncogene.
 {{< multiplechoice
   question="A mutated gene that codes for an altered version of Cdk that is active in the absence of cyclin is a(n) _____."
   answer="oncogene."
-  hint="This is the mutated form that increases the rate of cell-cycle progression."
+  hint="Reread the first subsection after the cell-division-and-apoptosis figure."
 >}}
 kinase inhibitor.
 tumor suppressor gene.
@@ -124,31 +131,18 @@ proto-oncogene.
 oncogene.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A mutated version of a normal gene involved in the positive regulation of the cell cycle is called a(n) ________."
-  answer="oncogene"
-  hint="It is the mutated, cancer-causing form of a normal gene that promotes cell division; its prefix means 'tumor.'"
->}}
-
-{{< textin
-  question="A normal gene that becomes an oncogene when it is mutated is called a(n) ________."
-  answer="proto-oncogene"
-  hint="It codes for a positive cell-cycle regulator before any mutation occurs."
->}}
-
 ### Describe how tumor suppressors function
 
 {{< textin
-  question="A segment of DNA that codes for regulator proteins that prevent a cell from undergoing uncontrolled division is called a(n) ________."
-  answer="tumor suppressor gene"
-  accept="tumour suppressor gene"
-  hint="Rb, p53, and p21 are the best-understood proteins in this category."
+  question="Any disruption of the monitoring system can allow other mistakes to be passed on to the ________."
+  answer="daughter cells"
+  hint="Reread the section summary's middle sentences."
 >}}
 
 {{< multiplechoice
   question="Which molecule is a Cdk inhibitor that is controlled by p53?"
   answer="p21"
-  hint="Mutated p53 loses the ability to trigger production of this molecule."
+  hint="Reread the paragraph after the E6 question."
 >}}
 cyclin
 anti-kinase
@@ -156,7 +150,7 @@ Rb
 p21
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain the difference between a proto-oncogene and a tumor-suppressor gene." hint="Think about which kind of regulator each codes for, and how many copies of each need to be damaged before the cell cycle runs unchecked." >}}
+{{< selfcheck question="Explain the difference between a proto-oncogene and a tumor-suppressor gene." hint="Reread the two subsections after the cell-division-and-apoptosis figure." >}}
 A proto-oncogene is a segment of DNA that codes for one of the positive cell cycle regulators. If that gene becomes mutated so that it produces a hyperactivated protein product, it is considered an oncogene. A tumor suppressor gene is a segment of DNA that codes for one of the negative cell cycle regulators. If that gene becomes mutated so that the protein product becomes less active, the cell cycle will run unchecked. A single oncogene can initiate abnormal cell divisions; however, tumor suppressors lose their effectiveness only when both copies of the gene are damaged.
 ===CHECKS===
 a proto-oncogene codes for a positive cell cycle regulator
@@ -170,7 +164,7 @@ tumor suppressors lose effectiveness only when both copies are damaged
 {{< multiplechoice
   question="According to this section, when a cell's p53 is no longer fully functional and the G₁ checkpoint is severely compromised, which transition does the cell proceed directly through, regardless of internal and external conditions?"
   answer="G₁ to S"
-  hint="Re-read the paragraph describing what happens once p53 can no longer trigger enough p21 to block Cdk."
+  hint="Reread the paragraph after the E6 question."
 >}}
 G₁ to S
 S to G₂
@@ -178,7 +172,7 @@ G₂ to M
 M to G₁
 {{< /multiplechoice >}}
 
-{{< selfcheck question="List the regulatory mechanisms that might be lost in a cell producing faulty p53." hint="Think about everything a fully functional p53 does in response to DNA damage, from detection through to the cell's last resort." >}}
+{{< selfcheck question="List the regulatory mechanisms that might be lost in a cell producing faulty p53." hint="Reread the p53 paragraph before the E6 question, and the p53 figure." >}}
 Regulatory mechanisms that might be lost include monitoring of the quality of the genomic DNA, recruiting of repair enzymes, and the triggering of apoptosis.
 ===CHECKS===
 monitoring the quality of the genomic DNA
@@ -186,7 +180,7 @@ recruiting repair enzymes
 triggering apoptosis
 {{< /selfcheck >}}
 
-{{< selfcheck question="p53 can trigger apoptosis if certain cell-cycle events fail. How does this regulatory outcome benefit a multicellular organism?" hint="Consider what would happen to the daughter cells, and to the organism as a whole, if a damaged cell divided instead of self-destructing." >}}
+{{< selfcheck question="p53 can trigger apoptosis if certain cell-cycle events fail. How does this regulatory outcome benefit a multicellular organism?" hint="Reread the p53 figure and its caption." >}}
 If a cell has damaged DNA, the likelihood of producing faulty proteins is higher. The daughter cells of such a damaged parent cell would also produce faulty proteins that might eventually become cancerous. If p53 recognizes this damage and triggers the cell to self-destruct, the damaged DNA is degraded and recycled. No further harm comes to the organism. Another healthy cell is triggered to divide instead.
 ===CHECKS===
 damaged cells would produce faulty proteins
@@ -197,4 +191,4 @@ another healthy cell divides instead
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 10.4: Cancer and the Cell Cycle](https://openstax.org/books/biology-2e/pages/10-4-cancer-and-the-cell-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (both kinds matched the manifest's "diagram" guess after inspection); an extended description added to both figures, since neither flow chart's arrows, colors, and box labels are fully carried by its caption; the source alt's letter-by-letter spelling ("lower case p 5 3") rewritten as "p53"; the G₁-checkpoint cross-reference to a numbered figure changed to a descriptive "see the diagram below" since figures are not numbered here; the two feature boxes (the note wrapping the Visual Connection question, and the interactive animation link) rendered as, respectively, the figure plus a multiple choice kept in the body, and a Link to Learning callout with descriptive link text; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items (oncogene, proto-oncogene, tumor suppressor gene) added from the glossary; and one additional multiple choice written locally, strictly from the section's own paragraph on the G₁-to-S transition, since the module's four keyed Review Questions all map to the first three objectives and left the fourth objective ("Explain how mutant tumor suppressors cause cancer") without a second auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived recall item (leukemia) added under the first objective from the section summary's own sentence.</small>
+<small>This section is adapted from [Biology 2e, Section 10.4: Cancer and the Cell Cycle](https://openstax.org/books/biology-2e/pages/10-4-cancer-and-the-cell-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (both kinds matched the manifest's "diagram" guess after inspection); an extended description added to both figures, since neither flow chart's arrows, colors, and box labels are fully carried by its caption; the source alt's letter-by-letter spelling ("lower case p 5 3") rewritten as "p53"; the G₁-checkpoint cross-reference to a numbered figure changed to a descriptive "see the diagram below" since figures are not numbered here; the two feature boxes (the note wrapping the Visual Connection question, and the interactive animation link) rendered as, respectively, the figure plus a multiple choice kept in the body, and a Link to Learning callout with descriptive link text; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); two summary-derived recall items added, one under the proto-oncogene objective (the summary's second sentence, blanking "regulatory molecules") and one under the tumor-suppressor objective (the summary's fourth sentence, blanking "daughter cells"), in place of glossary recall items for oncogene, proto-oncogene, and tumor suppressor gene, whose keys the objective headings print; and one additional multiple choice written locally, strictly from the section's own paragraph on the G₁-to-S transition, since the module's four keyed Review Questions all map to the first three objectives and left the fourth objective ("Explain how mutant tumor suppressors cause cancer") without a second auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived recall item (leukemia) added under the first objective from the section summary's last sentence, its prompt paraphrasing that sentence. The E6 Visual Connection question is double-keyed as printed: it keys "E6 binding marks p53 for degradation," but its option "E6 inactivates p53" is equally true, since a p53 marked for degradation is inactivated and the section never mentions E6 elsewhere; the page replaces that option with "E6 binding causes p53 to trigger apoptosis," built from the section's own "p53 can trigger apoptosis" and false of E6, key unchanged (reported as a source defect).</small>

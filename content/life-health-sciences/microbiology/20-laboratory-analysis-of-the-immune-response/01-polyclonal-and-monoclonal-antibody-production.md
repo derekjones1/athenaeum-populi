@@ -46,7 +46,8 @@ An antibody binds to a specific region on an antigen called an epitope. A single
 {{< textin
   question="What property makes antibodies useful for research and clinical diagnosis?"
   answer="specificity"
-  hint="It is what lets an antibody bind one particular target and not every chemically similar one."
+  accept="high specificity"
+  hint="Read the opening paragraph of this section, which names the property in its second sentence."
 >}}
 
 {{< selfcheck question="What is cross-reactivity and why does it occur?" hint="One sentence defines it; a different sentence, in a later paragraph, explains when it becomes more likely." >}}
@@ -65,7 +66,7 @@ Lab animals are usually injected at least twice with antigen when being used to 
 
 Antiserum obtained from animals will not only contain antibodies against the antigen artificially introduced in the laboratory, but it will also contain antibodies to any other antigens to which the animal has been exposed during its lifetime. For this reason, antisera must first be "purified" to remove other antibodies before using the antibodies for research or diagnostic assays.
 
-{{< mediafigure src="microbiology/OSC_Microbio_20_01_poly" alt="A four-step flow diagram: antigen is injected into a rabbit; the antigen binds and activates B cells; the activated B cells give rise to memory B cells and plasma B cells, and the plasma B cells secrete a mixture of polyclonal antibodies; antiserum containing this polyclonal antibody mixture is then drawn from the rabbit's blood into a collection tube." longdesc="Step 1: a syringe is pointed at a rabbit, injecting antigen. Step 2: an antigen molecule binds surface antibodies on a B cell, next to the label 'antigen.' Step 3: the activated B cell gives rise to two populations — memory B cells, drawn above with antibodies on their surface, and plasma B cells, drawn below as rounder cells — and the plasma B cells release free Y-shaped antibody molecules, gathered into a cluster labeled 'polyclonal antibody mixture.' Step 4: a red-filled syringe draws blood from a second rabbit, and a test tube of yellow serum with red blood settled at the bottom sits beside it, labeled 'antiserum from rabbit containing polyclonal antibodies.'" kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_20_01_poly" alt="A four-step flow diagram: antigen is injected into a rabbit; the antigen binds and activates B cells; the activated B cells give rise to memory B cells and plasma B cells, and the plasma B cells secrete a mixture of polyclonal antibodies; antiserum containing this polyclonal antibody mixture is then drawn from the rabbit's blood into a collection tube." longdesc="Each step has a numbered box. Step 1, 'Inject antigen into rabbit': a syringe of yellow fluid is inserted into a rabbit; an arrow leads right. Step 2, 'Antigen activates B cells': a red antigen, labeled 'antigen,' binds surface receptors on two B cells, labeled 'B cells.' Step 3, 'Plasma B cells produce polyclonal antibodies': arrows from the B cells lead to two populations — four memory B cells, drawn above as round cells studded with surface antibodies, and four plasma B cells, drawn below as oblong cells without surface antibodies — and arrows from both populations lead to a cluster of free Y-shaped antibody molecules labeled 'polyclonal antibody mixture.' Step 4, 'Obtain antiserum from rabbit containing polyclonal antibodies': an arrow leads to the rabbit, drawn again with a red-filled syringe drawing blood, beside a test tube of yellow serum with red blood cells settled at the bottom." kind="diagram" >}}
 This diagram illustrates the process for harvesting polyclonal antibodies produced in response to an antigen.
 {{< /mediafigure >}}
 
@@ -105,7 +106,7 @@ in immunocompromised patients the immune system may not produce a detectable lev
 {{< textin
   question="If a patient tests negative on a highly sensitive test, what is the likelihood that the person is infected with the pathogen?"
   answer="low"
-  accept="unlikely"
+  accept="unlikely|very low|very unlikely|low probability|low likelihood|not likely"
   hint="A highly sensitive test rarely misses an infection that is actually present."
 >}}
 
@@ -115,7 +116,7 @@ Some types of assays require better antibody specificity and affinity than can b
 
 Unlike polyclonal antibodies, which are produced in live animals, monoclonal antibodies are produced *in vitro* using tissue-culture techniques. mAbs are produced by immunizing an animal, often a mouse, multiple times with a specific antigen. B cells from the spleen of the immunized animal are then removed. Since normal B cells are unable to proliferate forever, they are fused with immortal, cancerous B cells called myeloma cells, to yield **hybridoma** cells. All of the cells are then placed in a selective medium that allows only the hybridomas to grow; unfused myeloma cells cannot grow, and any unfused B cells die off. The hybridomas, which are capable of growing continuously in culture while producing antibodies, are then screened for the desired mAb. Those producing the desired mAb are grown in tissue culture; the culture medium is harvested periodically and mAbs are purified from the medium. This is a very expensive and time-consuming process. It may take weeks of culturing and many liters of media to provide enough mAbs for an experiment or to treat a single patient. mAbs are expensive (shown below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_20_01_mabprod" alt="A flow diagram of monoclonal antibody production: antigen is injected into a mouse, spleen cells are removed and combined with myeloma cells from a cell culture, hybrid cells are selected and grown, then separated into hybridoma clones; each clone is screened for its antibody, and the clone making the desired antibody is grown to produce large batches of monoclonal antibody." longdesc="A mouse is injected with antigen; spleen cells are collected from it. A cell-culture line of myeloma cells is grown separately. The spleen cells and myeloma cells are combined in a culture vessel, which is treated to select and grow only the fused hybrid cells, each drawn as a single bicolored cell — half pink (spleen-derived) and half purple (myeloma-derived). The hybrid cells are then separated into three individual dishes, each holding only these bicolored hybrid cells and growing into a clone (hybridoma) that secretes a single antibody, drawn as differently colored antibody clusters — green, red, and gold — beneath each dish. The clone producing the desired antibody is expanded to produce large batches of the monoclonal antibody." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_20_01_mabprod" alt="A flow diagram of monoclonal antibody production: antigen is injected into a mouse, spleen cells are removed and combined with myeloma cells from a cell culture, hybrid cells are selected and grown, then separated into hybridoma clones; each clone is screened for its antibody, and the clone making the desired antibody is grown to produce large batches of monoclonal antibody." longdesc="A mouse is injected with antigen; spleen cells are collected from it. A cell-culture line of myeloma cells is grown separately. The spleen cells and myeloma cells are combined in a first tube, which holds unfused pink and purple cells alongside fused hybrid cells, each hybrid drawn as a single bicolored cell — half pink (spleen-derived) and half purple (myeloma-derived). An arrow labeled 'Select and grow hybrid cells only' leads to a second tube holding only bicolored hybrids. Three arrows, labeled 'Separate hybrid cells and allow them to proliferate into clones (hybridomas),' lead to three dishes of bicolored cells, and an arrow down from each dish, labeled 'Screen for desired antibody,' leads to that clone's antibodies, drawn as differently colored clusters — green, red, and gold — with the red one labeled 'antibodies.' A single arrow leads down from the middle, red cluster only, to 'Chosen hybridoma is then grown to produce large batches of desired mAB.'" kind="diagram" >}}
 Monoclonal antibodies (mAbs) are produced by introducing an antigen to a mouse and then fusing polyclonal B cells from the mouse's spleen to myeloma cells. The resulting hybridoma cells are cultured and continue to produce antibodies to the antigen. Hybridomas producing the desired mAb are then grown in large numbers on a selective medium that is periodically harvested to obtain the desired mAbs.
 {{< /mediafigure >}}
 
@@ -196,7 +197,7 @@ While the current technology is not adequate for producing large quantities of Z
 {{< multiplechoice
   question="How are monoclonal antibodies produced?"
   answer="Antibody-producing B cells from a mouse are fused with myeloma cells and then the cells are grown in tissue culture."
-  hint="Two of these options describe how POLYCLONAL antibodies arise instead — look for the one naming lab fusion and culture."
+  hint="Read the second paragraph of Producing Monoclonal Antibodies, which walks through the production steps."
 >}}
 Antibody-producing B cells from a mouse are fused with myeloma cells and then the cells are grown in tissue culture.
 A mouse is injected with an antigen and then antibodies are harvested from its serum.
@@ -207,23 +208,24 @@ They are produced by a mouse's immune system as a natural response to an infecti
 {{< textin
   question="When we inject an animal with the same antigen a second time a few weeks after the first, ________ takes place, which means the antibodies produced after the second injection will on average bind the antigen more tightly."
   answer="affinity maturation"
-  hint="This is the process, driven by mutations in the antibody variable-region genes, that raises average antibody affinity after re-exposure."
+  hint="Read the second paragraph of Producing Polyclonal Antibodies, on what the second injection does to memory cells."
 >}}
 
 {{< textin
   question="When using mAbs to treat disease in humans, the mAbs must first be ________ by replacing the mouse constant region DNA with human constant region DNA."
   answer="humanized"
-  hint="The word describes making a mouse antibody less foreign to the human immune system."
+  accept="humanised"
+  hint="Read the opening sentence of Clinical Uses of Monoclonal Antibodies."
 >}}
 
 {{< textin
   question="If we used normal mouse mAbs to treat human disease, multiple doses would cause the patient to respond with ________ against the mouse antibodies."
   answer="neutralizing antibodies"
-  accept="neutralizing antibody"
+  accept="neutralizing antibody|neutralising antibodies"
   hint="The human immune system recognizes repeatedly injected mouse antibody as foreign and mounts its own antibody response against it."
 >}}
 
-{{< sortbins question="Sort each characteristic under the type of antibody preparation it describes." hint="One column is fast, cheap, and mixed; the other is slow, costly, and uniform." >}}
+{{< sortbins question="Sort each characteristic under the type of antibody preparation it describes." hint="Check each phrase against the Characteristics of Polyclonal and Monoclonal Antibodies table in Producing Monoclonal Antibodies." >}}
 {"bins": ["Monoclonal Antibodies", "Polyclonal Antibodies"],
  "items": [
   {"label": "Expensive production", "bin": 0},
@@ -252,7 +254,7 @@ a polyclonal antiserum's positive result would need a confirmatory test, since p
 {{< multiplechoice
   question="For many uses in the laboratory, polyclonal antibodies work well, but for some types of assays, they lack sufficient ________ because they cross-react with inappropriate antigens."
   answer="specificity"
-  hint="The property that lets an antibody bind one antigen and not chemically similar others is what is missing here."
+  hint="Read the paragraph in the opening discussion that introduces cross-reactivity as a limitation."
 >}}
 specificity
 sensitivity
@@ -263,8 +265,7 @@ reactivity
 {{< textin
   question="A polyclonal response to an infection occurs because most antigens have multiple ________."
   answer="epitopes"
-  accept="epitope"
-  hint="Each of these distinct binding regions on the antigen can activate a different B-cell clone."
+  hint="Read the first paragraph of Producing Polyclonal Antibodies, on why an antigen yields multiple antibodies."
 >}}
 
 {{< selfcheck question="Describe two reasons why polyclonal antibodies are more likely to exhibit cross-reactivity than monoclonal antibodies." hint="One reason is about how MANY different antibodies a polyclonal response makes; the other is about their average affinity." >}}

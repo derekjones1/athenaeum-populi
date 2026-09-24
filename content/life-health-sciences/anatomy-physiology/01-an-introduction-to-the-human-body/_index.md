@@ -5,7 +5,7 @@ source_chapter: "1"
 weight: 1
 ---
 
-{{< mediafigure src="anatomy-physiology/100_Blood_Pressure" kind="photo" alt="A close-up photo of two people's arms. On the left, a patient's forearm wears a dark blue blood pressure cuff around the upper arm, and the round head of a stethoscope is pressed against the inner elbow. On the right, a person in blue medical scrubs holds the stethoscope in place with one hand. Coiled cables hang against a tan wall in the background." eager="true" >}}
+{{< mediafigure src="anatomy-physiology/100_Blood_Pressure" kind="photo" alt="A close-up photo of two people's arms. On the left, a patient's arm wears a dark blue blood pressure cuff around the upper arm, and the round head of a stethoscope is pressed against the inner elbow. On the right, a person in blue medical scrubs holds the stethoscope in place with one hand. Coiled cables hang against a tan wall in the background." eager="true" >}}
 A proficiency in anatomy and physiology is fundamental to any career in the health professions. (credit: Bryan Mason/flickr)
 {{< /mediafigure >}}
 

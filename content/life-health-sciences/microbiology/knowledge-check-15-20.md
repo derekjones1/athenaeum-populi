@@ -25,7 +25,7 @@ weight: 24
   question="Down syndrome is an example of which type of noninfectious disease?"
   answer="Congenital"
 >}}
-Inherited
+Endocrine
 Congenital
 Degenerative
 Neoplastic
@@ -102,13 +102,13 @@ this variation is believed to contribute to the bacterium's ability to cause chr
 ### 15.4 Virulence Factors of Eukaryotic Pathogens
 
 {{< multiplechoice
-  question="Through which mechanism does the ergot toxin produced by *Claviceps purpurea* cause gangrenous ergotism?"
-  answer="Vasoconstriction, resulting in improper blood flow to the extremities"
+  question="Inhaling the opportunistic fungal pathogen that produces the mycotoxins aflatoxin and gliotoxin can lead to which chronic pulmonary disease, characterized by fever, bloody sputum, and/or asthma?"
+  answer="aspergillosis"
 >}}
-Vasoconstriction, resulting in improper blood flow to the extremities
-Targeting of the central nervous system, causing mania and hallucinations
-Formation of a dense glycoprotein coat that resembles a bacterial capsule
-Degradation of keratin in the skin to enable tissue invasion
+ergotism
+aspergillosis
+giardiasis
+schistosomiasis
 {{< /multiplechoice >}}
 
 {{< textin
@@ -165,13 +165,13 @@ Gonorrhea
 >}}
 
 {{< multiplechoice
-  question="Which analytical epidemiology approach compares a group of individuals with a disease to a similar group without the disease by deliberately selecting subjects who are already affected, rather than waiting for subjects from a random sample to develop it?"
-  answer="Case-control study"
+  question="London's water taken from the River Thames downstream of the city, contaminated with sewage from upstream for an extended period longer than the pathogen's incubation period, is an example of which type of spread of infectious disease?"
+  answer="Continuous common source spread"
 >}}
-Cross-sectional study
-Case-control study
-Prospective study
-Cohort study
+Point source spread
+Intermittent common source spread
+Continuous common source spread
+Propagated spread
 {{< /multiplechoice >}}
 
 {{< textin
@@ -332,6 +332,7 @@ surface lipophosphoglycan and acid phosphatase inhibit the macrophage respirator
 {{< textin
   question="The point at which a fever breaks, when the hypothalamus stimulates vasodilation and sweating to release heat from the body, is called the ________."
   answer="crisis phase"
+  accept="crisis"
 >}}
 
 {{< multiplechoice
@@ -356,13 +357,13 @@ the extensive scarring observed with hepatitis C infections and liver cirrhosis
 ### 18.1 Overview of Specific Adaptive Immunity
 
 {{< multiplechoice
-  question="In the classical complement activation pathway, which two antibody classes must first bind to the surface of a pathogen cell to allow recruitment and activation of the C1 complex?"
-  answer="IgG and IgM"
+  question="In the classical complement activation pathway, the initial binding of antibodies of which classes to the surface of a pathogen cell allows recruitment and activation of the C1 complex?"
+  answer="IgG or IgM"
 >}}
-IgA and IgD
-IgD and IgE
-IgG and IgM
-IgA and IgE
+IgA or IgD
+IgD or IgE
+IgG or IgM
+IgA or IgE
 {{< /multiplechoice >}}
 
 {{< textin
@@ -417,9 +418,8 @@ HIV patients are given as an example of such patients
 {{< /selfcheck >}}
 
 {{< textin
-  question="A T cell that has exited the thymus after completing thymic selection but has not yet been activated by an antigen-presenting cell is called a ________."
-  answer="mature naive T cell"
-  accept="naive T cell"
+  question="Unlike the white blood cells of innate immunity, eventual T cells differentiate first into lymphoid stem cells that then become small, immature lymphocytes, sometimes called ________."
+  answer="lymphoblasts"
 >}}
 
 ### 18.4 B Lymphocytes and Humoral Immunity
@@ -634,8 +634,9 @@ a *Chlamydia* infection
 ### 20.3 Agglutination Assays
 
 {{< textin
-  question="An indirect agglutination assay for detecting antibodies in a patient's serum most often looks for ________ antibodies, because their structure provides maximum cross-linking of the antigen-coated latex beads."
-  answer="IgM"
+  question="The ________ test, used for the diagnosis of typhoid fever, looks for agglutination of *Salmonella enterica* subspecies *typhi* in patient sera."
+  answer="Widal"
+  accept="Widal test"
 >}}
 
 {{< selfcheck question="What is a minor cross-match, and why is it rarely performed in practice?" >}}
@@ -678,22 +679,23 @@ it requires use of a fluorogen instead of a chromogen.
 ### 20.5 Fluorescent Antibody Techniques
 
 {{< multiplechoice
-  question="A direct fluorescent antibody (DFA) test using a green fluorescent monoclonal antibody can be used to visualize and identify which bacterium in a smear from a pneumonia patient's respiratory tract?"
-  answer="*Legionella pneumophila*"
+  question="Flow cytometry is used to monitor the level of CD4 T cells in the blood of a patient with HIV. Below about what level can the patient no longer mount a useful adaptive immune response at all?"
+  answer="200 cells per µL"
 >}}
-*Streptococcus pyogenes*
-*Treponema pallidum*
-*Legionella pneumophila*
+50 cells per µL
+200 cells per µL
+500 cells per µL
 {{< /multiplechoice >}}
-
-{{< textin
-  question="In a fluorescence-activated cell sorter, a charge specific to a cell's fluorescence wavelength is put on a droplet of transporting fluid, and the charged droplet is then moved into one collecting vessel or another by a(n) ________."
-  answer="electrostatic deflector"
->}}
 
 {{< textin
   question="In the indirect fluorescent antibody test used to help diagnose systemic lupus erythematosus, fixed cells are incubated with patient serum and a fluorescent secondary antibody, then examined for fluorescence evident around the ________."
   answer="nucleus"
+>}}
+
+{{< textin
+  question="In the indirect fluorescent antibody test for antinuclear antibodies, the highest dilution of the patient's serum that still shows fluorescence determines the ANA ________."
+  answer="titer"
+  accept="titre"
 >}}
 
 ---

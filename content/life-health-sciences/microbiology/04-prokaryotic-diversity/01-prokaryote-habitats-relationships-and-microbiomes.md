@@ -25,7 +25,7 @@ Marsha expected her symptoms would subside in a few days, but instead, they grad
 
 - Could Marsha’s symptoms be related to her overseas travel, even several weeks after returning home?
 
-The case continues in *Proteobacteria*.
+The case continues in [Proteobacteria](/life-health-sciences/microbiology/04-prokaryotic-diversity/02-proteobacteria/).
 {{< /callout >}}
 
 All living organisms are classified into three domains of life: Archaea, Bacteria, and Eukarya. In this chapter, we will focus on the domains Archaea and Bacteria. Archaea and bacteria are unicellular prokaryotic organisms. Unlike eukaryotes, they have no nuclei or any other membrane-bound organelles.
@@ -62,7 +62,7 @@ Besides pathogens, which have a direct impact on human health, prokaryotes also 
 
 **Check Your Understanding**
 
-{{< selfcheck question="In what types of environments can prokaryotes be found?" hint="Think from extreme environments through the air, soil, water, and the human body." >}}
+{{< selfcheck question="In what types of environments can prokaryotes be found?" hint="Reread the opening paragraphs of Prokaryote Habitats and Functions." >}}
 Prokaryotes can be found everywhere on earth, including hot springs, the Antarctic ice shield, and environments under extreme pressure two miles under water. They are also abundant in the ground, water, air, and on and within the human body.
 ===CHECKS===
 can be found everywhere on earth
@@ -70,7 +70,7 @@ hot springs, the Antarctic ice shield, or environments under extreme pressure
 ground, water, air, or on and within the human body
 {{< /selfcheck >}}
 
-{{< selfcheck question="Name some ways that plants and animals rely on prokaryotes." hint="Consider the conversion of carbon and nitrogen, the plant-root example, and what animals require to grow." >}}
+{{< selfcheck question="Name some ways that plants and animals rely on prokaryotes." hint="Reread the two paragraphs just before the legume-root figure." >}}
 Animals rely on prokaryotes to convert carbon dioxide into organic carbon products that they can use. Plants and animals also rely on prokaryotes for nitrogen fixation, which converts atmospheric nitrogen into ammonia; *Rhizobium* in legume roots provides ammonia that helps plants make building blocks of nucleic acids, and those plants may then sustain animals or enrich the soil.
 ===CHECKS===
 convert carbon dioxide into organic carbon products that animals can use
@@ -117,18 +117,18 @@ Throughout the body, resident microbiotas are important for human health because
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain the difference between cooperative and competitive interactions in microbial communities." hint="Contrast whether both populations benefit with whether one population competes with another for resources." >}}
+{{< selfcheck question="Explain the difference between cooperative and competitive interactions in microbial communities." hint="Reread the second paragraph of Symbiotic Relationships." >}}
 Cooperative interactions are interactions between populations that benefit the populations. Competitive interactions are interactions in which one population competes with another for resources.
 ===CHECKS===
 interactions between populations that benefit the populations
 one population competes with another for resources
 {{< /selfcheck >}}
 
-{{< sortbins question="List the types of symbiosis and explain how each population is affected. Part 1: sort each population-outcome statement under the matching type of symbiosis." hint="Use the table immediately above: compare whether Population A and Population B are benefitted, harmed, or unaffected." >}}
+{{< sortbins question="List the types of symbiosis and explain how each population is affected. Part 1: sort each population-outcome statement under the matching type of symbiosis." hint="Use the Types of Symbiotic Relationships table." >}}
 {"bins":["Mutualism","Amensalism","Commensalism"],"items":[{"label":"Population A: benefitted; Population B: benefitted","bin":0},{"label":"Population A: harmed; Population B: unaffected","bin":1},{"label":"Population A: benefitted; Population B: unaffected","bin":2},{"label":"Population B: benefitted; Population A: benefitted","bin":0},{"label":"Population B: unaffected; Population A: harmed","bin":1},{"label":"Population B: unaffected; Population A: benefitted","bin":2}]}
 {{< /sortbins >}}
 
-{{< sortbins question="List the types of symbiosis and explain how each population is affected. Part 2: sort each population-outcome statement under the matching type of symbiosis." hint="Use the table immediately above: distinguish the relationship in which neither population is affected from the one in which one benefits and the other is harmed." >}}
+{{< sortbins question="List the types of symbiosis and explain how each population is affected. Part 2: sort each population-outcome statement under the matching type of symbiosis." hint="Use the Types of Symbiotic Relationships table." >}}
 {"bins":["Neutralism","Parasitism"],"items":[{"label":"Population A: unaffected; Population B: unaffected","bin":0},{"label":"Population A: benefitted; Population B: harmed","bin":1},{"label":"Population B: unaffected; Population A: unaffected","bin":0},{"label":"Population B: harmed; Population A: benefitted","bin":1}]}
 {{< /sortbins >}}
 
@@ -150,7 +150,7 @@ According to their staining patterns, which depend on the properties of their ce
 
 More recently, scientists have begun to further classify gram-negative and gram-positive bacteria. They have added a special group of deeply branching bacteria based on a combination of physiological, biochemical, and genetic features. They also now further classify gram-negative bacteria into Proteobacteria, *Cytophaga-Flavobacterium-Bacteroides* (CFB), and spirochetes.
 
-The deeply branching bacteria are thought to be a very early evolutionary form of bacteria (see *Deeply Branching Bacteria*). They live in hot, acidic, ultraviolet-light-exposed, and anaerobic (deprived of oxygen) conditions. Proteobacteria is a phylum of very diverse groups of gram-negative bacteria; it includes some important human pathogens (e.g., *E. coli* and *Bordetella pertussis*). The CFB group of bacteria includes components of the normal human gut microbiota, like *Bacteroides*. The spirochetes are spiral-shaped bacteria and include the pathogen *Treponema pallidum*, which causes syphilis. We will characterize these groups of bacteria in more detail later in the chapter.
+The deeply branching bacteria are thought to be a very early evolutionary form of bacteria (see [Deeply Branching Bacteria](/life-health-sciences/microbiology/04-prokaryotic-diversity/05-deeply-branching-bacteria/)). They live in hot, acidic, ultraviolet-light-exposed, and anaerobic (deprived of oxygen) conditions. Proteobacteria is a phylum of very diverse groups of gram-negative bacteria; it includes some important human pathogens (e.g., *E. coli* and *Bordetella pertussis*). The CFB group of bacteria includes components of the normal human gut microbiota, like *Bacteroides*. The spirochetes are spiral-shaped bacteria and include the pathogen *Treponema pallidum*, which causes syphilis. We will characterize these groups of bacteria in more detail later in the chapter.
 
 Based on their prevalence of guanine and cytosine nucleotides, gram-positive bacteria are also classified into low G+C and high G+C gram-positive bacteria. The low G+C gram-positive bacteria have less than 50% of guanine and cytosine nucleotides in their DNA. They include human pathogens, such as those that cause anthrax (*Bacillus anthracis*), tetanus (*Clostridium tetani*), and listeriosis (*Listeria monocytogenes*). High G+C gram-positive bacteria, which have more than 50% guanine and cytosine nucleotides in their DNA, include the bacteria that cause diphtheria (*Corynebacterium diphtheriae*), tuberculosis (*Mycobacterium tuberculosis*), and other diseases.
 
@@ -158,7 +158,7 @@ The classifications of prokaryotes are constantly changing as new species are be
 
 **Check Your Understanding**
 
-{{< selfcheck question="How do scientists classify prokaryotes?" hint="Consider the traditional traits and the more recent importance of gene sequences." >}}
+{{< selfcheck question="How do scientists classify prokaryotes?" hint="Reread the opening paragraph of Taxonomy and Systematics." >}}
 Traditionally, scientists classified prokaryotes by shape, staining patterns, and biochemical or physiological differences. More recently, nucleotide sequences in genes have become an important criterion of microbial classification; physiological, biochemical, and genetic features also distinguish deeply branching bacteria.
 ===CHECKS===
 traditionally by shape, staining patterns, or biochemical or physiological differences
@@ -209,21 +209,23 @@ Another goal for the near future is to characterize the human microbiota in pati
 
 ### Identify and describe unique examples of prokaryotes in various habitats on earth
 
-{{< multiplechoice question="The term prokaryotes refers to which of the following?" answer="unicellular organisms that have no nucleus" hint="Compare the defining cellular feature of prokaryotes with the presence of a nucleus." >}}
+{{< multiplechoice question="The term prokaryotes refers to which of the following?" answer="unicellular organisms that have no nucleus" hint="Reread the paragraph that opens this section after the Clinical Focus box." >}}
 very small organisms
 unicellular organisms that have no nucleus
 multicellular organisms
 cells that resemble animal cells more than plant cells
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="Among prokaryotes, there are some that can live in every environment on earth." answer="True" hint="Recall the examples of prokaryotes in hot springs, Antarctic ice, high pressure, air, soil, water, and bodies." >}}
+{{< multiplechoice question="Among prokaryotes, there are some that can live in every environment on earth." answer="True" hint="Reread the opening paragraph of Prokaryote Habitats and Functions." >}}
 True
 False
 {{< /multiplechoice >}}
 
-{{< textin question="Nitrogen-fixing bacteria provide other organisms with usable nitrogen in the form of ________." answer="ammonia" hint="The nitrogen-fixation paragraph names the compound that some plants use to form biomolecules." >}}
+{{< textin question="Nitrogen-fixing bacteria provide other organisms with usable nitrogen in the form of ________." answer="ammonia" accept="NH3" hint="Reread the nitrogen-fixation paragraph in Prokaryote Habitats and Functions." >}}
 
 ### Identify and describe symbiotic relationships
+
+{{< textin question="When prokaryotes live as interacting communities in which one population benefits to the harm of the other, the type of symbiosis is called ________." answer="parasitism" hint="In the table, find the relationship whose two outcomes are benefitted and harmed." >}}
 
 {{< multiplechoice question="Which of the following refers to the type of interaction between two prokaryotic populations in which one population benefits and the other is not affected?" answer="commensalism" hint="Use the symbiotic-relationships table to find the row with one benefitted population and one unaffected population." >}}
 mutualism
@@ -231,8 +233,6 @@ commensalism
 parasitism
 neutralism
 {{< /multiplechoice >}}
-
-{{< textin question="When prokaryotes live as interacting communities in which one population benefits to the harm of the other, the type of symbiosis is called ________." answer="parasitism" hint="In the table, find the relationship whose two outcomes are benefitted and harmed." >}}
 
 {{< selfcheck question="Compare commensalism and amensalism." hint="Use the table to contrast which population is unaffected and whether the other population benefits or is harmed." >}}
 In commensalism, one organism benefits while the other is unaffected. In amensalism, one population harms another but remains unaffected itself.
@@ -243,18 +243,18 @@ one population harms another but remains unaffected itself
 
 ### Compare normal/commensal/resident microbiota to transient microbiota
 
-{{< multiplechoice question="The term microbiota refers to which of the following?" answer="all microorganisms in a certain region of the human body" hint="The summary gives examples of body regions that each have their own microbiota." >}}
+{{< multiplechoice question="The term microbiota refers to which of the following?" answer="all microorganisms in a certain region of the human body" hint="Reread the Summary." >}}
 all microorganisms of the same species
 all of the microorganisms involved in a symbiotic relationship
 all microorganisms in a certain region of the human body
 all microorganisms in a certain geographic region
 {{< /multiplechoice >}}
 
-{{< textin question="Pathogenic bacteria that are part of the transient microbiota can sometimes be eliminated by ________ therapy." answer="antibiotic" hint="The discussion of disrupted resident microbiota gives an example of a treatment that can alter microbiota." >}}
+{{< textin question="Scientists have coined the term ________ to refer to all prokaryotic and eukaryotic microorganisms and their genetic material that are associated with a certain organism or environment." answer="microbiome" hint="Reread the sixth paragraph after the Types of Symbiotic Relationships table." >}}
 
-{{< textin question="Microorganisms that constantly live in or on our bodies are called ________." answer="resident microbiota" hint="This term contrasts with microorganisms that are only temporarily found in the human body." >}}
+{{< textin question="Pathogenic bacteria that are part of the transient microbiota can sometimes be eliminated by ________ therapy." answer="antibiotic" hint="Reread the last paragraph before the Check Your Understanding box in Symbiotic Relationships." >}}
 
-{{< selfcheck question="Give an example of the changes of human microbiota that result from medical intervention." hint="Consider what the section says happens when antibiotics decrease resident microbiota." >}}
+{{< selfcheck question="Give an example of the changes of human microbiota that result from medical intervention." hint="Reread the last paragraph before the Check Your Understanding box in Symbiotic Relationships." >}}
 Taking antibiotics can decrease resident microbiota. In the vagina, this raises pH and makes the environment more favorable for yeasts such as *Candida albicans*; antibiotic therapy can also disrupt intestinal and respiratory-tract microbiota, increasing the risk for secondary infections or promoting long-term carriage and shedding of pathogens.
 ===CHECKS===
 Taking antibiotics can decrease resident microbiota
@@ -266,20 +266,15 @@ disrupt intestinal and respiratory-tract microbiota
 
 {{< textin question="The domain ________ does not include prokaryotes." answer="Eukarya" hint="The opening paragraph names the three domains and identifies the two domains of prokaryotic organisms." >}}
 
-{{< multiplechoice question="Which criterion has become important in microbial classification as technology has improved?" answer="Nucleotide sequences in genes" hint="Look for the criterion the taxonomy discussion contrasts with shape, staining patterns, and biochemical or physiological differences." >}}
-The presence or absence of sexual interbreeding
-Nucleotide sequences in genes
-The number of membrane-bound organelles
-The color of the secondary counterstain alone
-{{< /multiplechoice >}}
+{{< textin question="Bacteria that cannot be stained by the standard Gram stain procedure are called ________." answer="atypical bacteria" accept="atypical" hint="Reread the first paragraph of Classification by Staining Patterns." >}}
 
-{{< multiplechoice question="Which set gives traditional bases for classifying prokaryotes?" answer="Shape, staining patterns, and biochemical or physiological differences" hint="The taxonomy section lists these traditional criteria before introducing gene sequences." >}}
-Shape, staining patterns, and biochemical or physiological differences
-Only the presence or absence of interbreeding
-Only the host species where a prokaryote is found
-Only the amount of organic carbon an organism requires
+{{< multiplechoice question="Which group is a phylum of very diverse gram-negative bacteria that includes important human pathogens such as *E. coli* and *Bordetella pertussis*?" answer="Proteobacteria" hint="Reread the third paragraph of Classification by Staining Patterns." >}}
+spirochetes
+*Cytophaga-Flavobacterium-Bacteroides* (CFB)
+deeply branching bacteria
+Proteobacteria
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 4.1: Prokaryote Habitats, Relationships, and Microbiomes](https://openstax.org/books/microbiology/pages/4-1-prokaryote-habitats-relationships-and-microbiomes) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the Clinical Focus, Micro Connection, and Link to Learning boxes are rendered as callouts; the Clinical Focus continuation is plain text because Section 4.2 is not yet available in this run; the two source figures are re-encoded as WebP, with image-checked `kind="photo"` and rewritten descriptive alt text; the source's table of symbiotic relationships is transcribed as Markdown and its five-row Check Your Understanding question is represented as two sort-bins activities because one component accepts at most four bins; the five Check Your Understanding bullets are rendered at their source positions as body self-checks or, where the table fixes the complete answer, as graded sort-bins activities, with self-check model answers and rubrics assembled from this section’s text; footnotes are rendered as inline citations after the sentences they support, with bare access URLs omitted and the DOI retained; the three Multiple Choice questions, one True/False question, and four Fill in the Blank questions are adapted into the closing interactive Practice block under the objectives they test, with True/False rendered as a two-option multiple choice; the two unkeyed Short Answer questions are retained as self-checks with model answers and rubrics written from this section’s text because the source prints no answer key; two body-sentence multiple-choice items and one key-term recall item fill the classification and microbiota objective groups while preserving distinct prompts; key terms are compiled from the module’s 13 defined terms and the book’s Glossary appendix, with the merged lost-headword tails removed from the microbial ecology and parasitism definitions; the source’s “an defense” is corrected to “a defense,” and its lower-case “lactobacillus produce” is capitalized to *Lactobacillus*; no source end-matter exercise is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 4.1: Prokaryote Habitats, Relationships, and Microbiomes](https://openstax.org/books/microbiology/pages/4-1-prokaryote-habitats-relationships-and-microbiomes) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the Clinical Focus, Micro Connection, and Link to Learning boxes are rendered as callouts; the Clinical Focus box's "Jump to the next Clinical Focus box" link is replaced by a sentence linking [Proteobacteria](/life-health-sciences/microbiology/04-prokaryotic-diversity/02-proteobacteria/) as where the case continues (this section opens the case), and the cross-reference to Deeply Branching Bacteria is an absolute link to that section; the two source figures are re-encoded as WebP, with image-checked `kind="photo"` and rewritten descriptive alt text; the source's table of symbiotic relationships is transcribed as Markdown and its five-row Check Your Understanding question is represented as two sort-bins activities because one component accepts at most four bins; the five Check Your Understanding bullets are rendered at their source positions as body self-checks or, where the table fixes the complete answer, as graded sort-bins activities, with self-check model answers and rubrics assembled from this section’s text; footnotes are rendered as inline citations after the sentences they support, with bare access URLs omitted and the DOI retained; the three Multiple Choice questions, one True/False question, and four Fill in the Blank questions are adapted into the closing interactive Practice block under the objectives they test, with True/False rendered as a two-option multiple choice; the two unkeyed Short Answer questions are retained as self-checks with model answers and rubrics written from this section’s text because the source prints no answer key; a body-sentence cloze (atypical bacteria) and a body-sentence multiple choice (Proteobacteria, among the groups the section names) fill the classification group, and a body-sentence cloze (microbiome) fills the microbiota group, each asking something no other item on the page asks; key terms are compiled from the module’s 13 defined terms and the book’s Glossary appendix, with the merged lost-headword tails removed from the microbial ecology and parasitism definitions; the source’s “an defense” is corrected to “a defense,” and its lower-case “lactobacillus produce” is capitalized to *Lactobacillus*; in the symbiosis group the parasitism Fill in the Blank item is placed before the commensalism Multiple Choice item, reversing their source order, so that the Multiple Choice options (which include “parasitism”) do not sit above it; no source end-matter exercise is omitted.</small>

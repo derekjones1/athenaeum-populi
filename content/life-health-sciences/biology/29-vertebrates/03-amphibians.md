@@ -91,7 +91,7 @@ An estimated 185 species comprise the **caecilians**, a group of amphibians that
 {{< callout type="info" >}}
 **Evolution Connection.** *The Paleozoic Era and the Evolution of Vertebrates.* When the vertebrates arose during the Paleozoic Era (542 to 251 MYA), the climate and geography of Earth was vastly different. The distribution of landmasses on Earth were also very different from that of today. Near the equator were two large supercontinents, **Laurentia** and **Gondwana**, which included most of today's continents, but in a radically different configuration (pictured below). At this time, sea levels were very high, probably at a level that hasn't been reached since. As the Paleozoic progressed, glaciations created a cool global climate, but conditions warmed near the end of the first half of the Paleozoic. During the latter half of the Paleozoic, the landmasses began moving together, with the initial formation of a large northern block called **Laurasia**, which contained parts of what is now North America, along with Greenland, parts of Europe, and Siberia. Eventually, a single supercontinent, called **Pangaea**, was formed, starting in the latter third of the Paleozoic. Glaciations then began to affect Pangaea's climate and the distribution of vertebrate life.
 
-{{< mediafigure src="biology/Figure_B29_03_04" kind="diagram" alt="A labeled globe schematic of the equatorial region during the Paleozoic, showing the landmass Gondwana — a cluster of named sub-regions including Australia, East Antarctica, India, Arabian-Nubian Shield, Congo, Kalahari, West Africa, Amazonia, Sao Francisco, and Rio Plata — near a much smaller Laurentia, Siberia, and Baltica, separated by the Iapetus Ocean, the Aegir Sea, and the Paleo-Pacific Ocean, with the equator and 30 S and 50 S latitude lines drawn across the globe." longdesc="A shaded globe centered on the ancient equator, which runs diagonally across the upper half of the sphere. At upper left, a leader line labeled 'Gondwana' points to a large gold landmass that fills most of the globe's left and lower half; within it, smaller named regions are labeled from top to bottom and left to right: Australia (separate, purple, at upper center, adjoining a purple 'East Antarctica?' region), India, Mad(agascar), Arabian-Nubian Shield, Kalahari, Congo, Sao Francisco, Rio Plata, West Africa, and Amazonia, with 'Mawson Sea?' as a small notch between Australia and India and 'Avalon is' and the 'Cadomian Arc' labeled along Gondwana's lower coastline. To the right of Gondwana, across open ocean, three smaller landmasses sit near the bottom of the globe: a magenta 'Siberia,' a green 'Baltica,' and, further right, a red 'Laurentia' (labeled by its own leader line at lower right). The open ocean is labeled in three regions: the 'Paleo-Pacific Ocean' at upper right, the 'Iapetus Ocean' running down the globe's center between Gondwana and Laurentia, and the small 'Aegir Sea' between Siberia and Baltica. Curved lines across the globe are labeled 'Equator' near the top, '30 S' below it, and '50 S' further down, marking latitude on the ancient globe." >}}
+{{< mediafigure src="biology/Figure_B29_03_04" kind="diagram" alt="A labeled globe schematic of the equatorial region during the Paleozoic, showing the landmass Gondwana — a cluster of named sub-regions including Australia, East Antarctica, India, Arabian-Nubian Shield, Congo, Kalahari, West Africa, Amazonia, Sao Francisco, and Rio Plata — near a much smaller Laurentia, Siberia, and Baltica, separated by the Iapetus Ocean, the Aegir Sea, and the Paleo-Pacific Ocean, with the equator and 30 S and 50 S latitude lines drawn across the globe." longdesc="A shaded globe centered well south of the ancient equator, which curves across its upper right. At upper left, the label 'Gondwana' has two leader lines: one to a large gold landmass that fills most of the globe's left half, and one to a purple block at the top of the globe; within them, smaller named regions are labeled from top to bottom and left to right: Australia (separate, purple, at upper center, adjoining a purple 'East Antarctica?' region), India, Mad(agascar), Arabian-Nubian Shield, Kalahari, Congo, Sao Francisco, Rio Plata, West Africa, and Amazonia, with 'Mawson Sea?' as a small notch between Australia and India and 'Avalon is' and the 'Cadomian Arc' labeled along Gondwana's lower coastline. Three smaller landmasses lie apart from Gondwana: a magenta 'Siberia' at the lower left edge, just below Gondwana; a green 'Baltica' at the bottom center; and a larger red 'Laurentia' along the right edge, across the open ocean (labeled by its own leader line at lower right). The open ocean is labeled in three regions: the 'Paleo-Pacific Ocean' at upper right, the 'Iapetus Ocean' in the globe's center between Gondwana and Laurentia, and the small 'Aegir Sea' at lower left, between Gondwana's coast and Siberia and Baltica. Curved lines across the globe are labeled 'Equator' near the top, '30 S' below it, and '50 S' further down, marking latitude on the ancient globe." >}}
 Paleozoic continents. During the Paleozoic Era, around 550 million years ago, the continent Gondwana formed. Both Gondwana and the continent Laurentia were located near the equator.
 {{< /mediafigure >}}
 
@@ -159,7 +159,7 @@ this limits competition between adults and tadpoles by opening new living space 
   question="Gas exchange through the skin, one of an amphibian's three respiratory surfaces, is called ________ respiration."
   answer="cutaneous"
   accept="cutaneous respiration"
-  hint="This word also names the outer, moist, mucus-covered organ amphibians take up most of their water across."
+  hint="Look at the Characteristics of Amphibians paragraph that lists the three respiratory surfaces."
 >}}
 
 ### Distinguish between the characteristics of Urodela, Anura, and Apoda
@@ -167,7 +167,7 @@ this limits competition between adults and tadpoles by opening new living space 
 {{< multiplechoice
   question="Frogs belong to which order?"
   answer="Anura"
-  hint="This order's name means “tail-less,” unlike the tailed salamanders."
+  hint="Look at the Modern Amphibians paragraph that divides living amphibians into three clades and glosses each name."
 >}}
 Anura
 Urodela
@@ -178,14 +178,12 @@ Apoda
 {{< textin
   question="The legless amphibians that belong to the clade Apoda are called ________."
   answer="caecilians"
-  accept="caecilian"
   hint="Folds of skin make this burrowing, nearly blind group resemble earthworms."
 >}}
 
 {{< textin
   question="The tailed amphibians that belong to the clade Urodela are called ________."
   answer="salamanders"
-  accept="salamander"
   hint="Most of this group moves by bending its body from side to side, called lateral undulation."
 >}}
 
@@ -211,7 +209,8 @@ It laid shelled eggs.
 {{< textin
   question="The group made up of frogs, salamanders, and caecilians is called ________."
   answer="Amphibia"
-  hint="This taxon's name loosely translates from the Greek as “dual life,” for the aquatic and terrestrial phases many of its members pass through."
+  accept="amphibians"
+  hint="Look at the section's opening paragraph."
 >}}
 
 {{< textin
@@ -222,4 +221,4 @@ It laid shelled eggs.
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 29.3: Amphibians](https://openstax.org/books/biology-2e/pages/29-3-amphibians) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_29_03_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (a digital reconstruction/illustration of *Tiktaalik*, not a photograph); a longdesc added to the labeled Paleozoic-continents globe schematic (Figure_B29_03_04), whose named landmasses and latitude lines are not carried by its one-line caption; the interactive-long Link to Learning's four embedded videos rendered as a linked list rather than iframes, and its two sibling Link to Learning notes rendered the same way; the footnote citing Daeschler et al. 2006 kept as a parenthetical after the sentence it supports; the Evolution Connection feature box rendered as a callout with its bold name and italicized title, its figure kept inside it as in the source; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (cutaneous respiration, caecilians, salamanders, tadpole, Amphibia) and one further recall item (Acanthostega) added from the glossary to give each objective group an auto-graded item; the source's "caecelians" corrected to "caecilians" — reported as a source defect. One claim is corrected with a visible Source note: several salamanders, not the fire salamander alone, bear live young (erratum 432).</small>
+<small>This section is adapted from [Biology 2e, Section 29.3: Amphibians](https://openstax.org/books/biology-2e/pages/29-3-amphibians) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_29_03_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (a digital reconstruction/illustration of *Tiktaalik*, not a photograph); a longdesc added to the labeled Paleozoic-continents globe schematic (Figure_B29_03_04), whose named landmasses and latitude lines are not carried by its one-line caption; the interactive-long Link to Learning's four embedded videos rendered as a linked list rather than iframes, and its two sibling Link to Learning notes rendered the same way; the footnote citing Daeschler et al. 2006 kept as a parenthetical after the sentence it supports; the Evolution Connection feature box rendered as a callout with its bold name and italicized title, its figure kept inside it as in the source; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (cutaneous respiration, caecilians, salamanders, tadpole, Amphibia) and one further recall item (Acanthostega) added from the glossary to give each objective group an auto-graded item; Practice items placed under the objective each tests, so the Review Question on the order frogs belong to, second in the source, comes before the *Acanthostega* question; the source's "caecelians" corrected to "caecilians" — reported as a source defect. One claim is corrected with a visible Source note: several salamanders, not the fire salamander alone, bear live young (erratum 432).</small>

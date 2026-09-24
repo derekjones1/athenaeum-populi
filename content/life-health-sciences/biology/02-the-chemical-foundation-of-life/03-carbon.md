@@ -130,14 +130,14 @@ configuration, the carbons form a more or less linear structure; whereas,
 the carbons in the *cis* configuration make a bend (change in direction) of
 the carbon backbone.
 
-{{< mediafigure src="biology/Figure_02_03_04" alt="Three labeled panels. (a) Structural isomers: butane, a straight four-carbon chain, and isobutane, a branched chain with a fourth carbon attached to the middle carbon of a three-carbon row — both C₄H₁₀. (b) Geometric isomers: cis-2-butene and trans-2-butene, each a four-carbon chain with a central C=C double bond, differing in whether the two CH₃ groups sit on the same or opposite sides of the bond. (c) Enantiomers: two ball-and-stick models, labeled L-isomer and D-isomer, each a central carbon bonded to fluorine, hydrogen, bromine, and chlorine, arranged as mirror images of each other." longdesc="(a) Structural isomers: butane is drawn as a straight chain of four carbons with their attached hydrogens (H₃C–CH₂–CH₂–CH₃); isobutane is drawn with three carbons in a row and a fourth carbon branching off the middle carbon. Both have the formula C₄H₁₀ but different carbon-skeleton shapes. (b) Geometric isomers: cis-2-butene shows a central C=C double bond with the two CH₃ groups on the same side and a hydrogen on each carbon on the opposite side; trans-2-butene shows the same double bond with the two CH₃ groups on opposite sides and the two hydrogens on opposite sides. (c) Enantiomers: two ball-and-stick models side by side. The L-isomer has a gray central carbon with a green fluorine sphere above, a white hydrogen sphere to the left, an orange bromine sphere to the right, and a green chlorine sphere below. The D-isomer is its mirror image: fluorine above, hydrogen to the right, bromine to the left, chlorine below. The two cannot be superimposed." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_02_03_04" alt="Three labeled panels. (a) Structural isomers: butane, a straight four-carbon chain, and isobutane, a branched chain with a fourth carbon attached to the middle carbon of a three-carbon row — both C₄H₁₀. (b) Geometric isomers: cis-2-butene and trans-2-butene, each a four-carbon chain with a central C=C double bond, differing in whether the two CH₃ groups sit on the same or opposite sides of the bond. (c) Enantiomers: two ball-and-stick models, labeled L-isomer and D-isomer, each a central carbon bonded to fluorine, hydrogen, bromine, and chlorine, arranged as mirror images of each other." longdesc="(a) Structural isomers: butane is drawn as a straight chain of four carbons with their attached hydrogens (H₃C–CH₂–CH₂–CH₃); isobutane is drawn with three carbons in a row and a fourth carbon branching off the middle carbon. Both have the formula C₄H₁₀ but different carbon-skeleton shapes. (b) Geometric isomers: cis-2-butene shows a central C=C double bond with the two CH₃ groups on the same side and a hydrogen on each carbon on the opposite side; trans-2-butene shows the same double bond with the two CH₃ groups on opposite sides and the two hydrogens on opposite sides. (c) Enantiomers: two ball-and-stick models side by side. The L-isomer has a gray central carbon with a green fluorine sphere above, a white hydrogen sphere to the left, an orange bromine sphere to the lower right, and a green chlorine sphere to the lower left. The D-isomer is its mirror image: fluorine above, hydrogen to the right, bromine to the lower left, chlorine to the lower right. The two cannot be superimposed." kind="diagram" >}}
 We call molecules that have the same number and type of atoms arranged differently isomers. (a) Structural isomers have a different covalent arrangement of atoms. (b) Geometric isomers have a different arrangement of atoms around a double bond. (c) Enantiomers are mirror images of each other.
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements is false?"
   answer="To be enantiomers, a molecule must have at least three different atoms or groups connected to a central carbon."
-  hint="Count how many different groups are attached to the central carbon in the enantiomer panel above, and compare that count with each statement."
+  hint="Check each statement against the three panels of the isomers figure above."
 >}}
 Molecules with the formulas CH₃CH₂COOH and C₃H₆O₂ could be structural isomers.
 Molecules must have a double bond to be cis-trans isomers.
@@ -162,7 +162,7 @@ atoms saturated fats, meaning that they contain all the hydrogen atoms
 available. Saturated fats are a solid at room temperature and usually of
 animal origin.
 
-{{< mediafigure src="biology/Figure_02_03_05-1847" alt="Two space-filling fatty-acid models stacked vertically, eliadic acid above and oleic acid below, both ending in a red-and-white carboxyl group. Eliadic acid's carbon chain is drawn straight; oleic acid's chain has a sharp bend partway along its length." longdesc="Top, eliadic acid: an extended, straight zigzag chain of carbons ending at the right in a red oxygen-bearing carboxyl group. Bottom, oleic acid: a carbon chain of the same length, bent sharply upward partway along its span before continuing to its own carboxyl group at the right — showing how a cis double bond kinks the chain that a trans double bond leaves straight." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_02_03_05-1847" alt="Two space-filling fatty-acid models stacked vertically, eliadic acid above and oleic acid below, both ending in a red-and-white carboxyl group. Eliadic acid's carbon chain is drawn straight; oleic acid's chain has a sharp bend partway along its length." longdesc="Top, eliadic acid: an extended, straight zigzag chain of carbons ending at the right in a red oxygen-bearing carboxyl group. Bottom, oleic acid: a carbon chain of the same length, bent near its middle into a shallow inverted V — rising from the left end to a peak at the dark double-bonded carbons, then falling to its own carboxyl group at the right — showing how a cis double bond kinks the chain that a trans double bond leaves straight." kind="diagram" >}}
 These space-filling models show a *cis* (oleic acid) and a *trans* (eliadic acid) fatty acid. Notice the bend in the molecule caused by the *cis* configuration.
 {{< /mediafigure >}}
 
@@ -215,7 +215,7 @@ the carbonyl group, have a partially negatively charged oxygen atom that
 may form hydrogen bonds with water molecules, again making the molecule
 more hydrophilic.
 
-{{< mediafigure src="biology/Figure_02_03_07-41a2" alt="A table listing seven functional groups with their chemical structure and polarity: hydroxyl, methyl, carbonyl, carboxyl, amino, phosphate, and sulfhydryl, each drawn attached to an R group representing the rest of the molecule." longdesc="A three-column table (Functional Group, Structure, Properties), one row per group. Hydroxyl: R—O—H; polar. Methyl: R—CH₃; nonpolar. Carbonyl: R—C(=O)—R′; polar. Carboxyl: R—C(=O)—OH; ionizes to release H⁺, considered acidic. Amino: R—NH₂; accepts H⁺ to form NH₃⁺, considered basic. Phosphate: R—O—P(=O)(OH)₂ bonded through an oxygen to the carbon chain; ionizes to release H⁺, considered acidic. Sulfhydryl: R—S—H; polar." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_02_03_07-41a2" alt="A table listing seven functional groups with their chemical structure and polarity: hydroxyl, methyl, carbonyl, carboxyl, amino, phosphate, and sulfhydryl, each drawn attached to an R group representing the rest of the molecule." longdesc="A three-column table (Functional Group, Structure, Properties), one row per group. Hydroxyl: R—O—H; polar. Methyl: R—CH₃; nonpolar. Carbonyl: R—C(=O)—R′; polar. Carboxyl: R—C(=O)—OH; charged, ionizes to release H⁺, considered acidic. Amino: R—NH₂; charged, accepts H⁺ to form NH₃⁺, considered basic. Phosphate: R—O—P(=O)(OH)₂ bonded through an oxygen to the carbon chain; charged, ionizes to release H⁺, considered acidic. Sulfhydryl: R—S—H; polar." kind="diagram" >}}
 These functional groups are in many different biological molecules. R, also known as R-group, is an abbreviation for any group in which a carbon or hydrogen atom is attached to the rest of the molecule.
 {{< /mediafigure >}}
 
@@ -261,7 +261,7 @@ characteristics and function.
 {{< multiplechoice
   question="Each carbon atom can bond with as many as ________ other atom(s) or molecule(s)."
   answer="four"
-  hint="Carbon has four electrons in its outermost shell available for bonding."
+  hint="Reread the section's first paragraphs, on why carbon is central to life."
 >}}
 one
 two
@@ -272,10 +272,10 @@ four
 {{< textin
   question="A molecule made up of only carbon and hydrogen atoms is called a ________."
   answer="hydrocarbon"
-  hint="Methane, ethane, and benzene are all examples of this kind of molecule."
+  hint="Reread the first paragraph after the section's introduction."
 >}}
 
-{{< selfcheck question="What property of carbon makes it essential for organic life?" hint="Think about how many covalent bonds a single carbon atom can form and what that lets it build." >}}
+{{< selfcheck question="What property of carbon makes it essential for organic life?" hint="Reread the section's opening paragraph." >}}
 Carbon is unique and found in all living things because it can form up to four covalent bonds between atoms or molecules. These can be nonpolar or polar covalent bonds, and they allow for the formation of long chains of carbon molecules that combine to form proteins and DNA.
 ===CHECKS===
 carbon can form up to four covalent bonds between atoms or molecules
@@ -283,7 +283,7 @@ these can be nonpolar or polar covalent bonds
 they allow for the formation of long chains of carbon molecules that combine to form proteins and DNA
 {{< /selfcheck >}}
 
-{{< selfcheck question="Compare and contrast saturated and unsaturated triglycerides." hint="Think about whether a double bond is present between carbon atoms, and how that affects whether the fat is liquid or solid at room temperature." >}}
+{{< selfcheck question="Compare and contrast saturated and unsaturated triglycerides." hint="Reread the paragraph on triglycerides that follows the isomers figure." >}}
 Saturated triglycerides contain no double bonds between carbon atoms; they are usually solid at room temperature. Unsaturated triglycerides contain at least one double bond between carbon atoms and are usually liquid at room temperature.
 ===CHECKS===
 saturated triglycerides contain no double bonds between carbon atoms
@@ -297,7 +297,7 @@ unsaturated triglycerides are usually liquid at room temperature
 {{< multiplechoice
   question="Which of the following is not a functional group that can bond with carbon?"
   answer="sodium"
-  hint="The other three options are named in the functional-groups table above; this one is a metal, not a functional group."
+  hint="Check each option against the functional-groups table."
 >}}
 sodium
 hydroxyl
@@ -306,23 +306,29 @@ carbonyl
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A group of atoms that occurs within a molecule and confers a specific chemical property on it is called a ________."
-  answer="functional group"
-  hint="Hydroxyl, methyl, and carboxyl are all examples of this kind of group."
->}}
-
-{{< textin
   question="A carbon chain or ring in which an atom of another element, such as nitrogen or oxygen, takes the place of one of the backbone carbons is called a ________."
   answer="substituted hydrocarbon"
-  hint="Pyridine, with a nitrogen in its ring, is an example."
+  hint="Reread the first paragraph of Functional Groups."
 >}}
+
+{{< multiplechoice
+  question="Which of these functional groups does the section give as an example of a hydrophobic group?"
+  answer="methyl"
+  hint="Reread the paragraph just before the functional-groups table."
+>}}
+hydroxyl
+carbonyl
+sulfhydryl
+methyl
+{{< /multiplechoice >}}
 
 {{< textin
   question="Functional groups are groups of atoms that confer specific properties to hydrocarbon (or substituted hydrocarbon) chains or rings that define their overall ________."
   answer="chemical characteristics and function"
-  hint="This is the last clause of the section summary's closing sentence — what a functional group ultimately shapes about the molecule it's attached to."
+  accept="function and chemical characteristics"
+  hint="Reread the section summary's closing sentence."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 2.3: Carbon](https://openstax.org/books/biology-2e/pages/2-3-carbon) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, all eight set to `kind="diagram"` (the manifest's file-extension guess called six of them photos, but every figure here is a drawn or rendered molecular structure, not a photograph); a longer extended description added to each figure, since a structural formula's meaning is not in its caption; the alt text for the ethane/ethene, isomers, and functional-groups-table figures shortened from source alts of over 600 characters, with the full detail moved into the extended description, and the methane figure's alt rewritten to describe both of its panels; chemical formulas and ions rendered as Unicode sub/superscripts in prose (CH₄, C₄H₁₀, H⁺, COO⁻); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items added from the glossary (hydrocarbon under the first objective; functional group and substituted hydrocarbon under the second) to round out the groups; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived textin cloze added under the second objective from the section summary's closing sentence on what functional groups define about a molecule's chains or rings. Two claims are corrected with visible Source notes: the beta-carotene example of a hydrocarbon with an aromatic portion is omitted, since its rings are cyclohexene rings, and the aliphatic-hydrocarbon key term admits the single-bonded rings the section itself calls aliphatic (errata 383–384).</small>
+<small>This section is adapted from [Biology 2e, Section 2.3: Carbon](https://openstax.org/books/biology-2e/pages/2-3-carbon) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, all eight set to `kind="diagram"` (the manifest's file-extension guess called six of them photos, but every figure here is a drawn or rendered molecular structure, not a photograph); a longer extended description added to each figure, since a structural formula's meaning is not in its caption; the alt text for the ethane/ethene, isomers, and functional-groups-table figures shortened from source alts of over 600 characters, with the full detail moved into the extended description, and the methane figure's alt rewritten to describe both of its panels; chemical formulas and ions rendered as Unicode sub/superscripts in prose (CH₄, C₄H₁₀, H⁺, COO⁻); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); two key-term recall items added from the glossary (hydrocarbon under the first objective; substituted hydrocarbon under the second) and one multiple-choice item written from the module's own sentence naming methyl as a hydrophobic functional group (second objective) to round out the groups; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived textin cloze added under the second objective from the section summary's closing sentence on what functional groups define about a molecule's chains or rings. Two claims are corrected with visible Source notes: the beta-carotene example of a hydrocarbon with an aromatic portion is omitted, since its rings are cyclohexene rings, and the aliphatic-hydrocarbon key term admits the single-bonded rings the section itself calls aliphatic (errata 383–384).</small>

@@ -38,7 +38,7 @@ Coral polyps reproduce asexually by fission. (credit: G. P. Schmahl, NOAA FGBNMS
 
 **Budding** is a form of asexual reproduction that results from the outgrowth of a part of a cell or body region leading to a separation from the original organism into two individuals. Budding occurs commonly in some invertebrate animals such as corals and hydras. In hydras, a bud forms that develops into an adult and breaks away from the main body, as illustrated below, whereas in coral budding, the bud does not detach and multiplies as part of a new colony.
 
-{{< mediafigure src="biology/Figure_43_01_02" kind="diagram" alt="Two nearly identical illustrations of a stalked hydra with several long tentacles fanning from its top and a smaller, similarly tentacled bud growing partway down its side; a gray arrow points from the left illustration to the right one, where the bud has pulled away from the stalk with a narrow gap now visible between them." longdesc="The left illustration shows a main hydra with a fanning crown of tentacles at the top of its stalk and a smaller, similarly tentacled bud attached partway down the stalk's left side. A single gray arrow points from the left illustration to the right one. The right illustration repeats the same main hydra, but the bud's own stalk has narrowed to a thin pinch point and a gap has opened between the bud and the main stalk, showing it separating to become an independent hydra." >}}
+{{< mediafigure src="biology/Figure_43_01_02" kind="diagram" alt="Two nearly identical illustrations of a stalked hydra with several long tentacles fanning from its top and two smaller, tentacled buds growing partway down its stalk, one on each side; a gray arrow points from the left illustration to the right one, where the bud on the right has pulled away from the stalk with a narrow gap now visible between them." longdesc="The left illustration shows a main hydra with a fanning crown of tentacles at the top of its stalk and two smaller, tentacled buds attached partway down the stalk, one on the left side and one on the right. A single gray arrow points from the left illustration to the right one. The right illustration repeats the same main hydra and its left-side bud unchanged, but the right-side bud has fully detached: its tapered base floats free, separated from the main stalk by a clear gap, showing it leaving to become an independent hydra." >}}
 Hydra reproduce asexually through budding.
 {{< /mediafigure >}}
 
@@ -120,7 +120,7 @@ parthenogenesis
 {{< multiplechoice
   question="Genetically unique individuals are produced through ________."
   answer="sexual reproduction"
-  hint="Which of these processes combines genetic material from two individuals rather than copying one parent's genes exactly?"
+  hint="Reread the second paragraph of the section's introduction."
 >}}
 sexual reproduction
 parthenogenesis
@@ -143,9 +143,9 @@ and assist in the survival of the species
 >}}
 
 {{< textin
-  question="The mixing of genetic material from two individuals to produce genetically unique offspring is called ________."
-  answer="sexual reproduction"
-  hint="Think about what combining two individuals' genetic material, rather than copying one, does to the offspring's genes."
+  question="Species that reproduce sexually must maintain two different types of individuals, males and females, which can limit the ability to colonize new ________."
+  answer="habitats"
+  hint="Reread the second paragraph of the section's introduction, on a cost of reproducing sexually."
 >}}
 
 ### Discuss asexual reproduction methods
@@ -153,7 +153,7 @@ and assist in the survival of the species
 {{< multiplechoice
   question="Which form of reproduction can result from damage to the original animal?"
   answer="fragmentation"
-  hint="Which of these processes specifically begins when part of the animal's body is broken off, rather than growing a new part or developing from an unfertilized egg?"
+  hint="Reread the definitions in the Asexual Reproduction subsections, looking for the one that involves regeneration."
 >}}
 asexual
 fragmentation
@@ -185,7 +185,7 @@ parthenogenesis
 {{< multiplechoice
   question="Which form of reproduction is useful to an animal with little mobility that reproduces sexually?"
   answer="hermaphroditism"
-  hint="The animal still needs another individual's genetic material, but its low mobility makes travelling to find a mate hard — what trait would let one individual supply both roles, or self-fertilize?"
+  hint="Reread the subsections under Sexual Reproduction."
 >}}
 fission
 budding
@@ -205,7 +205,7 @@ the absence of those chromosomes and the homogeneity of the offspring (ZZ or XX)
   question="The state of having both male and female reproductive parts within the same individual organism is called ________."
   answer="hermaphroditism"
   accept="hermaphrodism"
-  hint="Think about an organism carrying reproductive organs of both sexes at once, a trait useful when a mate is hard to reach."
+  hint="Reread the first subsection under Sexual Reproduction."
 >}}
 
 {{< textin
@@ -216,4 +216,4 @@ the absence of those chromosomes and the homogeneity of the offspring (ZZ or XX)
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 43.1: Reproduction Methods](https://openstax.org/books/biology-2e/pages/43-1-reproduction-methods) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text edited to describe rather than caption-repeat; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_43_01_02 and Figure_43_01_03 are hand-drawn or computer-rendered illustrations, not captured photographs — the module's own alt text calls both "Illustration shows..." while the two kept as photo are called "Image shows..." and "Photo shows..."); a longdesc added to the budding hydra illustration, the only figure on the page whose two panels and connecting arrow are not otherwise carried by its one-line caption, transcribing the illustration's own before/after layout without stating which of the two clusters is the bud; in-text pointers to figures ("Figure 43.2" through "Figure 43.5") replaced with "shown below," "illustrated below," or "the illustration below shows," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/budding_hydra redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively) — all four Review Questions and both Critical Thinking Questions are used, and neither the source options nor its keys were altered; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items added from the glossary (asexual reproduction, sexual reproduction, fission, budding, parthenogenesis, hermaphroditism), covering six of the section's seven glossary terms (fragmentation is tested instead as the keyed answer of a multiple choice); one cloze recall item added from the section's own summary sentence ("...it may mean the release of sperm and eggs into the ________," answered "environment"), reaching for a summary item ahead of writing a local one, disclosed as summary-sourced rather than a source exercise; the source's "its termed protandry" corrected to "it's termed protandry" — reported as a source defect. One name is corrected with a visible Source note: the parthenogenetic shark is a blacktip shark, where the source prints "blacktop" (erratum 454).</small>
+<small>This section is adapted from [Biology 2e, Section 43.1: Reproduction Methods](https://openstax.org/books/biology-2e/pages/43-1-reproduction-methods) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the source alt text edited to describe rather than caption-repeat; two figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_43_01_02 and Figure_43_01_03 are hand-drawn or computer-rendered illustrations, not captured photographs — the module's own alt text calls both "Illustration shows..." while the two kept as photo are called "Image shows..." and "Photo shows..."); a longdesc added to the budding hydra illustration, the only figure on the page whose two panels and connecting arrow are not otherwise carried by its one-line caption, transcribing the illustration's own before/after layout without stating which of the two clusters is the bud; in-text pointers to figures ("Figure 43.2" through "Figure 43.5") replaced with "shown below," "illustrated below," or "the illustration below shows," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/budding_hydra redirect URL; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively) — all four Review Questions and both Critical Thinking Questions are used, and neither the source options nor its keys were altered; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items added from the glossary (asexual reproduction, fission, budding, parthenogenesis, hermaphroditism), covering five of the section's seven glossary terms (fragmentation is tested instead as the keyed answer of a multiple choice, and sexual reproduction as the key of the Review Question on genetically unique individuals); one cloze recall item built from the introduction's sentence on a cost of sexual reproduction ("...limit the ability to colonize new ________," answered "habitats"); one cloze recall item added from the section's own summary sentence ("...it may mean the release of sperm and eggs into the ________," answered "environment"), reaching for a summary item ahead of writing a local one, disclosed as summary-sourced rather than a source exercise; the source's "its termed protandry" corrected to "it's termed protandry" — reported as a source defect. One name is corrected with a visible Source note: the parthenogenetic shark is a blacktip shark, where the source prints "blacktop" (erratum 454).</small>

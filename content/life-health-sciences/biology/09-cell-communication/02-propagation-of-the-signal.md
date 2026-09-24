@@ -25,11 +25,11 @@ When a ligand binds to its receptor, conformational changes occur that affect th
 
 After the ligand binds to the cell-surface receptor, the activation of the receptor's intracellular components sets off a chain of events that is called a **signaling pathway**, sometimes called a signaling cascade. In a signaling pathway, second messengers–enzymes–and activated proteins interact with specific proteins, which are in turn activated in a chain reaction that eventually leads to a change in the cell's environment (below), such as an increase in metabolism or specific gene expression. The events in the cascade occur in a series, much like a current flows in a river. Interactions that occur before a certain point are defined as upstream events, and events after that point are called downstream events.
 
-{{< mediafigure src="biology/Figure_09_02_01" kind="diagram" eager="true" alt="A two-panel diagram of the EGF receptor signaling cascade. Top panel: EGF binds EGFR at the plasma membrane, the receptor dimerizes, and GRB2 and SOS convert RAS from its GDP-bound to its GTP-bound form. Bottom panel: RAS-GTP activates RAF, which phosphorylates MEK, which phosphorylates ERK; phosphorylated ERK stimulates protein translation in the cytoplasm and, in the nucleus, gene transcription that drives cell proliferation, migration, adhesion, and angiogenesis, while inhibiting apoptosis." longdesc="Two stacked panels share the same membrane cross-section, drawn as cross-hatched red and tan bands, with two EGFR receptors (blue, Y-shaped) embedded side by side. Top panel: EGF (a red circle) sits on the extracellular tip of each of the two receptors, the EGF label pointing to the left one and the EGFR label to the right one; on the cytoplasmic side, GRB2 and SOS are bound to the receptor tails, and a curved arrow shows SOS converting RAS from its GDP-bound to its GTP-bound state. Bottom panel: the same bound receptor pair with GRB2, SOS, and RAS-GTP is joined by RAF (an orange box). An arrow runs from RAF down to MEK, which becomes MEK-P (marked with a red P); a second arrow runs from MEK-P to ERK, which becomes ERK-P. From ERK-P, one arrow points right to \"Stimulates Translation\" in the cytoplasm, and a second, purple arrow curves down through two unlabeled oval outlines marking the nucleus to a bulleted list: \"Stimulates: cell proliferation, cell migration and adhesion, angiogenesis (growth of new blood vessels)\" and, below it, \"Inhibits: apoptosis.\"" >}}
+{{< mediafigure src="biology/Figure_09_02_01" kind="diagram" eager="true" alt="A two-panel diagram of the EGF receptor signaling cascade. Top panel: EGF binds EGFR at the plasma membrane, the receptor dimerizes, and GRB2 and SOS convert RAS from its GDP-bound to its GTP-bound form. Bottom panel: RAS-GTP activates RAF, which phosphorylates MEK, which phosphorylates ERK; phosphorylated ERK stimulates protein translation in the cytoplasm and, in the nucleus, gene transcription that drives cell proliferation, migration, adhesion, and angiogenesis, while inhibiting apoptosis." longdesc="Two stacked panels share the same membrane cross-section, drawn as cross-hatched red and tan bands, with two EGFR receptors (blue, Y-shaped) embedded side by side. Top panel: EGF (a red circle) sits on the extracellular tip of each of the two receptors, the EGF label pointing to the left one and the EGFR label to the right one; on the cytoplasmic side, GRB2 and SOS are bound to the receptor tails beside RAS, and two orange curved arrows show GTP arriving at RAS and GDP leaving it. A black arrow leads down to the bottom panel: the same bound receptor pair with GRB2, SOS, and RAS-GTP is joined by RAF (an orange box). A curved arrow runs from MEK, passing under RAF, to MEK-P (marked with a red P); a second curved arrow runs from ERK to ERK-P. From ERK-P, a short purple arrow points down to \"Stimulates Translation\" in the cytoplasm, and a thin black arrow runs down through a gap between two long outlines (the nuclear envelope, labeled Nucleus) to a wide purple arrow pointing to a list: \"Stimulates: cell proliferation, cell migration and adhesion, angiogenesis (growth of new blood vessels)\" and, below it, \"Inhibits: apoptosis.\"" >}}
 The epidermal growth factor (EGF) receptor (EGFR) is a receptor tyrosine kinase involved in the regulation of cell growth, wound healing, and tissue repair. When EGF binds to the EGFR, a cascade of downstream events causes the cell to grow and divide. If EGFR is activated at inappropriate times, uncontrolled cell growth (cancer) may occur.
 {{< /mediafigure >}}
 
-{{< selfcheck question="In certain cancers, the GTPase activity of the RAS G-protein is inhibited. This means that the RAS protein can no longer hydrolyze GTP into GDP. What effect would this have on downstream cellular events?" hint="GTP hydrolysis is what normally switches RAS back off; think about what happens to the kinases downstream of RAS if that off switch is broken." >}}
+{{< selfcheck question="In certain cancers, the GTPase activity of the RAS G-protein is inhibited. This means that the RAS protein can no longer hydrolyze GTP into GDP. What effect would this have on downstream cellular events?" hint="Reread the EGFR paragraph and the cascade figure just above this question." >}}
 ERK would become permanently activated, resulting in cell proliferation, migration, adhesion, and the growth of new blood vessels. Apoptosis would be inhibited.
 ===CHECKS===
 ERK would become permanently activated
@@ -55,7 +55,7 @@ The induction of a signaling pathway depends on the modification of a cellular c
 
 One of the most common chemical modifications that occurs in signaling pathways is the addition of a phosphate group (PO₄³⁻) to a molecule such as a protein in a process called phosphorylation. The phosphate can be added to a nucleotide such as GMP to form GDP or GTP. Phosphates are also often added to serine, threonine, and tyrosine residues of proteins, where they replace the hydroxyl group of the amino acid (below). The transfer of the phosphate is catalyzed by an enzyme called a **kinase**. Various kinases are named for the substrate they phosphorylate. Phosphorylation of serine and threonine residues often activates enzymes. Phosphorylation of tyrosine residues can either affect the activity of an enzyme or create a binding site that interacts with downstream components in the signaling cascade. Phosphorylation may activate or inactivate enzymes, and the reversal of phosphorylation, dephosphorylation by a phosphatase, will reverse the effect.
 
-{{< mediafigure src="biology/Figure_09_02_02-01c8" kind="diagram" alt="Molecular structures of phosphoserine, phosphothreonine and phosphotyrosine are shown. In each molecule, a phosphate is attached to an oxygen on the amino acid." longdesc="Three skeletal structures: phosphoserine and phosphothreonine in a top row, phosphotyrosine below. Each begins with a phosphate group — a central P atom double-bonded to one O and single-bonded to two OH groups — connected through a single O to the amino acid side chain, labeled R at its open end. In phosphoserine, that O connects directly down to R. In phosphothreonine, the O connects to a carbon that also carries a CH₃ group on a dashed wedge bond, then down to R. In phosphotyrosine, the O connects to a six-membered aromatic ring, drawn with alternating double bonds, which connects down to R." >}}
+{{< mediafigure src="biology/Figure_09_02_02-01c8" kind="diagram" alt="Molecular structures of phosphoserine, phosphothreonine and phosphotyrosine are shown. In each molecule, a phosphate is attached to an oxygen on the amino acid." longdesc="Three skeletal structures: phosphoserine and phosphothreonine in a top row, phosphotyrosine below. Each begins with a phosphate group — a central P atom double-bonded to one O and single-bonded to two OH groups — connected through a single O to the amino acid side chain, labeled R at its open end. In phosphoserine, the O connects through a single carbon (a bend in the bond line) down to R. In phosphothreonine, the O connects to a carbon that also carries a CH₃ group on a dashed wedge bond, then down to R. In phosphotyrosine, the O connects to a six-membered aromatic ring, drawn with alternating double bonds, which connects through one more carbon down to R." >}}
 In protein phosphorylation, a phosphate group (PO₄³⁻) is added to residues of the amino acids serine, threonine, and tyrosine.
 {{< /mediafigure >}}
 
@@ -105,7 +105,7 @@ Ligand binding to the receptor allows for signal transduction through the cell. 
 {{< multiplechoice
   question="Histamine binds to the H1 G-protein-linked receptor to initiate the itchiness and airway constriction associated with an allergic response. If a mutation in the associated G-protein's alpha subunit prevented the hydrolysis of GTP how would the allergic response change?"
   answer="More severe allergic response compared to normal G-protein signaling."
-  hint="GTP hydrolysis is how the G-protein normally switches itself off; think about what happens to a signal if it can never be turned off."
+  hint="Reread the G-protein cycle in Section 9.1 and the RAS Visual Connection question in this section's body."
 >}}
 More severe allergic response compared to normal G-protein signaling.
 Less severe allergic response compared to normal G-protein signaling.
@@ -116,7 +116,7 @@ No change compared to normal G-protein signaling.
 {{< multiplechoice
   question="A scientist observes a mutation in the transmembrane region of EGFR that eliminates its ability to be stabilized by binding interactions during dimerization after ligand binding. Which hypothesis regarding the effect of this mutation on EGF signaling is most likely to be correct?"
   answer="EGF signaling cascades would be active for a shorter period of time in the cell."
-  hint="A less stable dimer breaks apart sooner, and the receptor's intracellular domains only activate each other while the dimer holds together."
+  hint="Reread the section's second paragraph, on dimerization."
 >}}
 EGF signaling cascades would be active for longer in the cell.
 EGF signaling cascades would be active for a shorter period of time in the cell.
@@ -124,7 +124,7 @@ EGF signaling cascades would not occur.
 EGF signaling would be unaffected.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What would happen if the intracellular domain of a cell-surface receptor was switched with the domain from another receptor?" hint="The extracellular domain still recognizes the original ligand; ask which domain actually determines which pathway gets activated inside the cell." >}}
+{{< selfcheck question="What would happen if the intracellular domain of a cell-surface receptor was switched with the domain from another receptor?" hint="Reread the section's second paragraph, on how ligand binding reaches the intracellular domain." >}}
 The binding of the ligand to the extracellular domain would activate the pathway normally activated by the receptor donating the intracellular domain.
 ===CHECKS===
 the binding of the ligand to the extracellular domain would activate the pathway
@@ -133,10 +133,16 @@ normally activated by the receptor donating the intracellular domain
 
 ### Recognize the role of phosphorylation in the transmission of intracellular signals
 
+{{< textin
+  question="An enzyme that catalyzes the transfer of a phosphate group from ATP to another molecule is called a ________."
+  answer="kinase"
+  hint="Reread the first paragraph under Phosphorylation."
+>}}
+
 {{< multiplechoice
   question="What property enables the residues of the amino acids serine, threonine, and tyrosine to be phosphorylated?"
   answer="They contain a hydroxyl group."
-  hint="The phosphate group attaches in place of a specific functional group these three side chains all share."
+  hint="Reread the first paragraph under Phosphorylation."
 >}}
 They are polar.
 They are non-polar.
@@ -144,7 +150,7 @@ They contain a hydroxyl group.
 They occur more frequently in the amino acid sequence of signaling proteins.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="If a cell developed a mutation in its *MAP2K1* gene (encodes the MEK protein) that prevented MEK from being recognized by phosphatases, how would the EGFR signaling cascade and the cell's behavior change?" hint="Phosphatases are what normally reverse phosphorylation; ask what happens downstream of MEK if that reversal can never happen." >}}
+{{< selfcheck question="If a cell developed a mutation in its *MAP2K1* gene (encodes the MEK protein) that prevented MEK from being recognized by phosphatases, how would the EGFR signaling cascade and the cell's behavior change?" hint="Reread the Phosphorylation subsection and the EGFR cascade figure." >}}
 EGF binding to EGFR initiates a signaling cascade that activates protein kinases through phosphorylation. Active Raf phosphorylates MEK, activating MEK's kinase activity. If MEK cannot be dephosphorylated, the signaling cascade downstream of MEK will continue to be active after the EGF signal is gone. Therefore, the cell will continue to proliferate and be resistant to cell death (apoptosis).
 ===CHECKS===
 EGF binding to EGFR initiates a signaling cascade that activates protein kinases through phosphorylation
@@ -153,18 +159,19 @@ if MEK cannot be dephosphorylated, the signaling cascade downstream of MEK will 
 the cell will continue to proliferate and be resistant to cell death (apoptosis)
 {{< /selfcheck >}}
 
-{{< textin
-  question="An enzyme that catalyzes the transfer of a phosphate group from ATP to another molecule is called a ________."
-  answer="kinase"
-  hint="Various ones are named for the substrate they phosphorylate."
->}}
-
 ### Evaluate the role of second messengers in signal transmission
+
+{{< textin
+  question="A second messenger that is derived from ATP is called ________."
+  answer="cyclic AMP"
+  accept="cAMP"
+  hint="Reread the third paragraph under Second Messengers."
+>}}
 
 {{< multiplechoice
   question="Where do DAG and IP₃ originate?"
   answer="They are the cleavage products of the inositol phospholipid, PIP₂."
-  hint="Both come from breaking apart a single larger membrane lipid, not from a nucleotide or a diffusing hormone."
+  hint="Reread the last paragraph under Second Messengers."
 >}}
 They are formed by phosphorylation of cAMP.
 They are ligands expressed by signaling cells.
@@ -172,7 +179,7 @@ They are hormones that diffuse through the plasma membrane to stimulate protein 
 They are the cleavage products of the inositol phospholipid, PIP₂.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="The same second messengers are used in many different cells, but the response to second messengers is different in each cell. How is this possible?" hint="Think about what varies between cell types even when the incoming signal and its second messenger are identical." >}}
+{{< selfcheck question="The same second messengers are used in many different cells, but the response to second messengers is different in each cell. How is this possible?" hint="Reread the paragraph on how signaling pathways get complicated, under Binding Initiates a Signaling Pathway, and the third paragraph under Second Messengers." >}}
 Different cells produce different proteins, including cell-surface receptors and signaling pathway components. Therefore, they respond to different ligands, and the second messengers activate different pathways. Signal integration can also change the end result of signaling.
 ===CHECKS===
 different cells produce different proteins, including cell-surface receptors and signaling pathway components
@@ -181,12 +188,6 @@ the second messengers activate different pathways
 signal integration can also change the end result of signaling
 {{< /selfcheck >}}
 
-{{< textin
-  question="A small, non-protein molecule that propagates a signal within the cell after activation of a receptor causes its release is called a ________."
-  answer="second messenger"
-  hint="Calcium ions, cAMP, DAG, and IP₃ are all examples."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 9.2: Propagation of the Signal](https://openstax.org/books/biology-2e/pages/9-2-propagation-of-the-signal) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with three of the four re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (all four are line-drawn molecular illustrations, not photographs); an extended description added to all four since none is fully carried by its caption; the EGFR-cascade figure's alt shortened from over 600 characters to what the diagram shows, with its full walk-through moved into the longdesc, and its source alt's letter-spaced "M E K," "R A F," and "E R K" set as ordinary acronyms; the cAMP-formation and PIP₂-cleavage figures' alts similarly normalized from the source's letter-spaced "A M P," "A T P," and subscript-spelled "P I P subscript 2 baseline" / "I P subscript 3 baseline" to ordinary text and Unicode subscripts; inline print references to the four figures changed to "below," since figures are not numbered here; the phosphate-group ion charge (PO₄³⁻) and ion/second-messenger charges (Ca²⁺) set with Unicode superscripts; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (kinase, second messenger) added from the glossary so the phosphorylation and second-messenger objective groups each carry at least one auto-graded item beyond their single Review Question; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 9.2: Propagation of the Signal](https://openstax.org/books/biology-2e/pages/9-2-propagation-of-the-signal) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with three of the four re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (all four are line-drawn molecular illustrations, not photographs); an extended description added to all four since none is fully carried by its caption; the EGFR-cascade figure's alt shortened from over 600 characters to what the diagram shows, with its full walk-through moved into the longdesc, and its source alt's letter-spaced "M E K," "R A F," and "E R K" set as ordinary acronyms; the cAMP-formation and PIP₂-cleavage figures' alts similarly normalized from the source's letter-spaced "A M P," "A T P," and subscript-spelled "P I P subscript 2 baseline" / "I P subscript 3 baseline" to ordinary text and Unicode subscripts; inline print references to the four figures changed to "below," since figures are not numbered here; the phosphate-group ion charge (PO₄³⁻) and ion/second-messenger charges (Ca²⁺) set with Unicode superscripts; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (kinase, cyclic AMP) added from the glossary so the phosphorylation and second-messenger objective groups each carry at least one auto-graded item beyond their single Review Question; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

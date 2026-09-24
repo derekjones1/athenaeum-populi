@@ -26,7 +26,7 @@ In conservative replication, the parental DNA remains together, and the newly fo
 
 Meselson and Stahl were interested in understanding how DNA replicates. They grew *E. coli* for several generations in a medium containing a "heavy" isotope of nitrogen (¹⁵N), which gets incorporated into nitrogenous bases, and eventually into the DNA.
 
-{{< mediafigure src="biology/Figure_14_03_02" kind="diagram" alt="Diagram of the Meselson–Stahl experiment: E. coli grown in heavy ¹⁵N nitrogen and then switched to ¹⁴N nitrogen, with an ultracentrifuge density gradient showing how the proportion of DNA at the heavy (¹⁵N) and light (¹⁴N) bands changes over four generations of growth in ¹⁴N medium." longdesc="At the top, a bracket labeled '14 generations of growth' spans two circles, each containing E. coli bacteria and a strand of DNA: the left circle's strand is red, running down to a red flask labeled ¹⁵N; the right circle's strand is orange, running down to an orange flask labeled ¹⁴N. Below the two circles, a smaller orange flask labeled ¹⁴N feeds into a density-gradient diagram: a vertical tube with 'CsCl' at the top and density increasing downward, columns for Generation 0 through 4 (corresponding to 0, 20, 40, 60, and 80 minutes), a lower band position labeled ¹⁵N, and an upper band position labeled ¹⁴N. The lower (¹⁵N) band holds 100% of the DNA at Generation 0, still 100% at Generation 1 (now at the intermediate density between the ¹⁵N and ¹⁴N levels), then 50%, 25%, and 12% at Generations 2, 3, and 4. The upper (¹⁴N) band appears at Generation 2 with 50% of the DNA, rising to 75% at Generation 3 and 88% at Generation 4. To the right of the gradient, a bracket labeled 'Semi-conservative replication' points to a small drawing of a double helix with one red strand and one orange strand twisted together." >}}
+{{< mediafigure src="biology/Figure_14_03_02" kind="diagram" alt="Diagram of the Meselson–Stahl experiment: E. coli grown in heavy ¹⁵N nitrogen and then switched to ¹⁴N nitrogen, with an ultracentrifuge density gradient showing the DNA band move from the heavy (¹⁵N) level to an intermediate level and then shift increasingly to the light (¹⁴N) level over four generations of growth in ¹⁴N medium." longdesc="At the top, under the heading '14 generations of growth,' two circles each hold E. coli cells (labeled E. coli) beside a DNA double helix: the left circle's helix is red, and a pale red beam links it to a large red flask labeled ¹⁵N at upper left; the right circle's helix is orange, linked by a pale orange beam to a large orange flask labeled ¹⁴N at upper right. Pale beams from both large flasks lead down to a smaller orange flask labeled ¹⁴N below the circles, and this flask labeled ¹⁴N feeds into a density-gradient diagram: a vertical tube labeled Ultracentrifuge and Density, with 'CsCl' at the top, a minus sign at the top and a plus sign at the bottom (density increasing downward), columns for Generation 0 through 4 (corresponding to 0, 20, 40, 60, and 80 minutes), a lower band position labeled ¹⁵N, and an upper band position labeled ¹⁴N. At Generation 0, 100% of the DNA is a dark red band at the lower (¹⁵N) level. At Generation 1, 100% is a red band at an intermediate density, between the ¹⁵N and ¹⁴N levels. From Generation 2 the DNA splits between that intermediate band (50%, then 25% at Generation 3 and 12% at Generation 4, thinning each time) and an orange band at the upper (¹⁴N) level (50%, then 75% and 88%); no DNA returns to the ¹⁵N level. A line from the intermediate band leads right to a box labeled 'Semi-conservative replication' holding a small drawing of a double helix with one red strand and one orange strand twisted together." >}}
 Meselson and Stahl experimented with *E. coli* grown first in heavy nitrogen (¹⁵N) then in ¹⁴N. DNA grown in ¹⁵N (red band) is heavier than DNA grown in ¹⁴N (orange band), and sediments to a lower level in cesium chloride solution in an ultracentrifuge. When DNA grown in ¹⁵N is switched to media containing ¹⁴N, after one round of cell division the DNA sediments halfway between the ¹⁵N and ¹⁴N levels, indicating that it now contains fifty percent ¹⁴N. In subsequent cell divisions, an increasing amount of DNA contains ¹⁴N only. These data support the semi-conservative replication model. (credit: modification of work by Mariana Ruiz Villareal)
 {{< /mediafigure >}}
 
@@ -46,10 +46,22 @@ During cell division, each daughter cell receives a copy of each molecule of DNA
 
 ### Explain how the structure of DNA reveals the replication process
 
+{{< textin
+  question="According to the section summary, the single chromosome of a prokaryote or each chromosome of a eukaryote consists of a single continuous ________."
+  answer="double helix"
+  hint="Reread the section summary's second sentence."
+>}}
+
+{{< textin
+  question="In their 1953 paper, Watson and Crick wrote that the specific pairing they had postulated “immediately suggests a possible ________ mechanism for the genetic material.”"
+  answer="copying"
+  hint="Reread the section's opening paragraph."
+>}}
+
 {{< multiplechoice
-  question="If the sequence of the 5′-3′ strand is AATGCTAC, then the complementary sequence has which of the following sequences?"
+  question="If the sequence of the 5′-3′ strand is AATGCTAC, then the complementary sequence has the following sequence:"
   answer="3′-TTACGATG-5′"
-  hint="Pair each base with its complement (A↔T, G↔C) at each position, then read the new strand's 3′ end from the position across from the original strand's 5′ end."
+  hint="Reread the section's opening paragraph; Section 14.2 covers which bases pair and how the two strands run."
 >}}
 3′-AATGCTAC-5′
 3′-CATCGTAA-5′
@@ -57,23 +69,10 @@ During cell division, each daughter cell receives a copy of each molecule of DNA
 3′-GTAGCATT-5′
 {{< /multiplechoice >}}
 
-{{< textin
-  question="During DNA replication, the two strands of the double helix separate, and each strand serves as a ________ from which the new complementary strand is copied."
-  answer="template"
-  hint="Think of it as the mold that the new, complementary strand is built against."
->}}
-
-{{< textin
-  question="During cell division, each daughter cell receives a copy of each molecule of DNA by a process known as ________."
-  answer="DNA replication"
-  accept="replication"
-  hint="This is the name of the whole process this section describes."
->}}
-
 {{< multiplechoice
-  question="In which model of DNA replication does the parental DNA remain intact and paired together, while the daughter DNA is built as an entirely new, separately paired double helix?"
+  question="In which model of DNA replication does the parental DNA remain together, while the newly formed daughter strands are together?"
   answer="conservative"
-  hint="Nothing from the old DNA mixes into the new copy — the original stays whole, and a brand-new copy is built alongside it."
+  hint="Reread the paragraph after the three-model figure."
 >}}
 semi-conservative
 conservative
@@ -85,7 +84,7 @@ dispersive
 {{< multiplechoice
   question="Meselson and Stahl's experiments proved that DNA replicates by which mode?"
   answer="semi-conservative"
-  hint="Their ultracentrifuge results showed one intermediate-density band after one generation, not two separate bands."
+  hint="Reread the paragraph after the Meselson–Stahl figure."
 >}}
 conservative
 semi-conservative
@@ -96,7 +95,7 @@ none of the above
 {{< multiplechoice
   question="How did Meselson and Stahl support Watson and Crick's double-helix model?"
   answer="They demonstrated that each strand serves as a template for synthesizing a new strand of DNA."
-  hint="Watson and Crick's model proposed this specific structural role for each strand during copying; the experiment's semi-conservative result confirmed it."
+  hint="Reread the section's opening paragraph and the paragraph just before the Link to Learning."
 >}}
 They demonstrated that each strand serves as a template for synthesizing a new strand of DNA.
 They showed that the DNA strands break and recombine without losing genetic material.
@@ -104,14 +103,14 @@ They proved that DNA maintains a double-helix structure while undergoing semi-co
 They demonstrated that conservative replication maintains the complementary base pairing of each DNA helix.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How did the scientific community learn that DNA replication takes place in a semi-conservative fashion?" hint="Think about whose experiment, with which organism and which isotope, produced the deciding evidence." >}}
+{{< selfcheck question="How did the scientific community learn that DNA replication takes place in a semi-conservative fashion?" hint="Reread the paragraphs before and after the Meselson–Stahl figure." >}}
 Meselson's experiments with *E. coli* grown in ¹⁵N deduced this finding.
 ===CHECKS===
 Meselson's experiments with E. coli grown in ¹⁵N
 deduced this finding
 {{< /selfcheck >}}
 
-{{< selfcheck question="Imagine the Meselson and Stahl experiments had supported conservative replication instead of semi-conservative replication. What results would you predict to observe after two rounds of replication? Be specific regarding percent distributions of DNA incorporating ¹⁵N and ¹⁴N in the gradient." hint="Under conservative replication, an entire parental double helix stays intact, so each round of replication only adds a new, entirely 14N molecule alongside the molecules already present." >}}
+{{< selfcheck question="Imagine the Meselson and Stahl experiments had supported conservative replication instead of semi-conservative replication. What results would you predict to observe after two rounds of replication? Be specific regarding percent distributions of DNA incorporating ¹⁵N and ¹⁴N in the gradient." hint="Combine the conservative column of the three-model figure with the density-gradient figure." >}}
 Following two rounds of conservative replication, two bands would be detected after ultracentrifugation. A lower (heavier) band would be at the ¹⁵N density, and would comprise 25% of the total DNA. A second, higher (lighter) band would be at the ¹⁴N density, and would contain 75% of the total DNA.
 ===CHECKS===
 two bands would be detected after ultracentrifugation
@@ -123,4 +122,4 @@ contain 75% of the total DNA
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 14.3: Basics of DNA Replication](https://openstax.org/books/biology-2e/pages/14-3-basics-of-dna-replication) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: this module has no `<glossary>`, so it carries no Key terms heading; both figures re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (both are colored line illustrations, not photographs); both source alts, which were letter-spaced text-to-speech spellings ("D N A", "superscript 15 baseline upper case N"), rewritten from the images, with a full walkthrough of each diagram's panels, bands, and percentages moved into a longdesc; isotope labels set with Unicode superscript digits (¹⁵N, ¹⁴N) in place of the source's `<sup>` markup; primes in the complementary-sequence Review Question set as the Unicode prime (′) in place of the source's ASCII apostrophes; the interactive note rendered as a Link to Learning callout with descriptive anchor text in place of the source's bare "this video"; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and, because this module has no glossary to draw recall items from, three summary-derived items (a cloze textin on the summary's "template" clause, a cloze textin on the summary's opening "DNA replication" clause, and a select-the-term multiple choice built from the summary's conservative-replication clause, offered with three options because the module names exactly three replication models) added to raise "Explain how the structure of DNA reveals the replication process" to the book's three-item floor.</small>
+<small>This section is adapted from [Biology 2e, Section 14.3: Basics of DNA Replication](https://openstax.org/books/biology-2e/pages/14-3-basics-of-dna-replication) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: this module has no `<glossary>`, so it carries no Key terms heading; both figures re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (both are colored line illustrations, not photographs); both source alts, which were letter-spaced text-to-speech spellings ("D N A", "superscript 15 baseline upper case N"), rewritten from the images, with a full walkthrough of each diagram's panels, bands, and percentages moved into a longdesc; isotope labels set with Unicode superscript digits (¹⁵N, ¹⁴N) in place of the source's `<sup>` markup; primes in the complementary-sequence Review Question set as the Unicode prime (′) in place of the source's ASCII apostrophes; the interactive note rendered as a Link to Learning callout with descriptive anchor text in place of the source's bare "this video"; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and, because this module has no glossary to draw recall items from, three summary-derived items (a cloze textin on Watson and Crick's quoted "possible copying mechanism" sentence from the section's opening paragraph — in place of a cloze on the summary's "template" clause, which printed the key of the Review Question "How did Meselson and Stahl support Watson and Crick's double-helix model?" — a cloze textin on the summary's "single continuous double helix" clause, and a select-the-term multiple choice on the conservative model, its stem the body's own sentence and its three options the three replication models the module names) added to raise "Explain how the structure of DNA reveals the replication process" to the book's three-item floor; because Practice items are grouped by objective, the complementary-sequence Review Question (source second) comes before the replication-mode question (source first).</small>

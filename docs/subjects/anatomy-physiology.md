@@ -10,7 +10,9 @@ here unchanged unless a rule below says otherwise (`docs/subjects/biology.md`
 and `docs/subjects/microbiology.md` are those books' own delta files and
 are not required reading here, though this book is much closer in shape to
 Biology 2e than to Microbiology, and the Biology mappings are repeated
-below where they apply). Read all three before authoring a section.
+below where they apply). Read all three before authoring a section
+(chapter-run authors: the sections `docs/briefs/anatomy-physiology/author.md`
+names).
 
 This document was written from the **September 22, 2026 scan** of the
 pinned source; chapter 1 was authored September 22, 2026 as the pilot, and
@@ -37,32 +39,47 @@ below. A correction that is not folded back into a rule will be made again.
 - **The pin is newer than the PDF, and the difference is substantive.**
   `sources/anatomy-and-physiology-2e_-_WEB.pdf` (1,347 pages) was generated
   September 2, 2026; upstream then landed fifteen errata commits on
-  September 8, 2026 touching 19 modules (16 changed lines). The lock's
+  September 8, 2026 touching 12 modules and 7 media files (16 changed
+  lines); 16 modules affected in all. The lock's
   `authoredBaselineCommit` is therefore the last commit before the PDF,
   `716383a4` (June 12, 2026), with confidence
-  `inferred-from-local-pdf-date`. `npm run source:history` audits only
-  mapped sections, so while the book is scaffolded the exact changes are
-  read with `git -C sources/openstax/osbooks-anatomy-physiology diff
-  716383a4 HEAD --stat` (the fetch materializes both commits). They are
-  real corrections
-  that the PDF still prints wrong: a secondary oocyte is *haploid*, not
-  diploid (28.1); an allele occupies a locus on a specific *chromosome*,
-  not gene (28.7 glossary); in fermentation *pyruvate*, not lactic acid,
-  replaces oxygen as the final electron acceptor (24.2); "Wilder", not
-  "Walter", Penfield (14.2); "mucus-secreting" not "mucous-secreting" (4.2,
-  23.5); the epiphyseal-plate sequence stem now says "moving toward the
-  epiphysis" (6.4); lingual lipase's sentence was cut from 23.3; and two
-  figure images were swapped for corrected files (7.2 skull base, 27.3
-  aldosterone loop, 23.1 trachea now a two-panel figure with a new alt).
-  **Author from the CNXML.** When the PDF and the CNXML disagree in one of
-  those 19 modules, run `git -C sources/openstax/osbooks-anatomy-physiology
-  diff 716383a4 HEAD -- modules/<id>` before calling it an erratum: a
-  disagreement the diff explains is upstream's fix, not a defect, and is
-  not logged; a disagreement it does not explain is an erratum candidate
-  as in every other book.
+  `inferred-from-local-pdf-date`. They are real corrections that the PDF
+  still prints wrong, and the table below is the whole set — no agent
+  diffs the checkout. **Author from the CNXML.**
+
+**The September 8, 2026 set: 16 modules (12 text or file-name changes, 4
+images replaced in place).** Section numbers are the collection's; a CNXML
+figure id (`fig-ch23_01_08`, `fig-ch27_03_01`) carries the chapter number
+of an older edition and is not the section.
+
+| Section | Module | Change (the PDF prints the old form) |
+|---|---|---|
+| 4.2 | m46048 | "mucous-secreting" → "mucus-secreting" (body and caption) |
+| 6.4 | m46301 | periosteum sentence rewritten ("mesenchymal cells form the periosteum and differentiate into osteoblasts…"); the epiphyseal-plate Review stem gains "moving toward the epiphysis" |
+| 7.2 | m46355 | skull-base image replaced (new file `707_Superior-Inferior_View_of_Skull_Base.jpg`) |
+| 11.5 | m46495 | table typo "rotests" → "rotates" |
+| 14.3 | m46574 | "Walter" → "Wilder" Penfield |
+| 22.1 | m46548 | trachea figure now two-panel (`2308_The_Trachea-ab.jpg`) with a new alt |
+| 23.3 | m46511 | the sentence on the tongue's glands secreting lingual lipase cut |
+| 23.5 | m46512 | glossary "mucous-" → "mucus-secreting" |
+| 24.2 | m46451 | fermentation: *pyruvate*, not lactic acid, is the final electron acceptor |
+| 26.3 | m46414 | aldosterone feedback-loop image replaced |
+| 27.2 | m46392 | "diploid" → "haploid" secondary oocyte |
+| 28.7 | m46311 | allele glossary: a locus on a specific *chromosome*, not gene |
+| 11.2 | m46498 | image replaced in place (`1105_Anterior_and_Posterior_Views_of_Muscles.jpg`); CNXML unchanged |
+| 21.3 | m46560 | image replaced in place (`2217_Differentiation_of_T_Cells_Within_the_Thymus.jpg`); CNXML unchanged |
+| 25.3 | m46429 | image replaced in place (`2611_Blood_Flow_in_the_Nephron.jpg`); CNXML unchanged |
+| 28.1 | m46308 | image replaced in place (`2902_IVF-02.jpg`); CNXML unchanged |
+
+When the PDF and the CNXML disagree in a module in this table, the table
+row is the explanation — upstream's fix, not a defect, not logged. For an
+image row the PDF shows the old picture and the vendored WebP is the
+reference. A disagreement the table does not explain is an erratum
+candidate as in every other book.
+
 - **Visual authority:** the PDF, for what a figure shows and how a table
   lays out (`pdftoppm -f N -l N -r 110 -png` as in the baseline). For the
-  three swapped figures above the PDF shows the *old* image; read the
+  seven image rows above the PDF shows the *old* image; read the
   pinned media file (vendor it, then look at the WebP) instead.
 - **Reading aid:** `python3 tools/source/cnxml-preview.py
   sources/openstax/osbooks-anatomy-physiology/modules/<id>/index.cnxml`,
@@ -236,9 +253,10 @@ the baseline's page skeleton has no slot for it. **The rule:** the page
 carries a `## References` list immediately after `## Summary`, one bullet
 per source paragraph in source order, the citation text transcribed as
 printed and any URL kept as a link (the dead-link rule applies). They are
-source content and are never dropped or moved to the footer. The pilot
-confirms the heading passes the structure validator and the reading-pass
-tooling; if it does not, the tool is extended, not the list removed.
+source content and are never dropped or moved to the footer. Chapters 1–2
+have none; 3.2 (`m46023`) is the first, and it confirms the heading passes
+the structure validator and the reading-pass tooling; if it does not, the
+tool is extended, not the list removed.
 
 ### 4. Figures are label diagrams, and the manifest's `kind` guess will be wrong
 
@@ -280,49 +298,75 @@ The corpus-wide answer-position gate measures the book on its own; if it
 fails, reorder with a deterministic seeded shuffle and say so in
 `Changes:`.
 
-Pilot lessons *(chapter 1, September 22, 2026)*, all instances of baseline
-rules that this book's vocabulary makes easy to break:
+Lessons *(chapters 1–2 and their independent Opus re-review, September 22,
+2026 — about 80 defects the per-section Sonnet checkers had passed)*, all
+instances of baseline rules that this book's vocabulary makes easy to break:
 
-- **The top checker yield was the "directly above" leak** (3 of 7 pages):
-  a source-verbatim option list or a hint printing the key of the very next
-  `textin` (X-rays/X-ray, set point, prone/supine, thoracic cavity). Source
-  options are never edited; the fix is to order the group so no item that
-  prints a recall key immediately precedes that recall item, and to word
-  hints by role, not by term. Grep the Practice block for every `textin`
-  key before filing.
-- **A hint states where to look, never the fact an option asserts** (chapter
-  2's top class, 4 of 9 defects): "each step is one factor of ten" for a
-  one-step pH item, "uracil is a pyrimidine and appears in only one nucleic
-  acid" above options B and C, a hint quoting the key's own "polar and
-  nonpolar" phrase. Read every hint against its options before filing; the
-  checker reads them again. No lint reads this (measured: a hint-prints-key
-  regex finds 20 corpus hits, mostly legitimate concept names).
-- **Headline glossary terms are not recall items.** A section whose every
-  option and hint necessarily prints its own topic words (1.1's *anatomy*
-  and *physiology*; the Metabolism group's *anabolism*/*catabolism*) keeps
-  those terms as Key-terms bullets only; the footer names the exclusion and
-  the mechanism, not just the count.
-- **A source alt reused as a `longdesc` is read against the image first**
-  (1.2's "eight silhouettes" for six).
+- **The "directly above" leak is the top class, and stems are the gap.**
+  Nothing in the item directly above a `textin` — its stem, its options,
+  OR its hint — prints the `textin`'s key, or its root, singular, or plural
+  (X-rays/X-ray, set point, prone/supine, thoracic cavity; ch1's nutrient,
+  pressure, frontal plane, pleura). Source stems and options are never
+  edited; the fix is to order the group so every recall item comes before
+  the items that print its key, and to word hints by role, not by term.
+  Grep the Practice block for every `textin` key before filing.
+- **A hint says WHERE to look — the subsection, figure, or table — never
+  the key, a root or derivative of it (*pronation* for prone, *nutrient*
+  for micronutrients), the fact the correct option asserts, or a fact the
+  module never states** (chapter 2's top class, and present on every
+  chapter-1 page): "each step is one factor of ten" for a one-step pH item,
+  "uracil is a pyrimidine and appears in only one nucleic acid" above
+  options B and C, a hint quoting the key's own "polar and nonpolar"
+  phrase, a synthesis hint quoting the key's definition. Read every hint
+  against its own key and options, and against the stem, options, and hint
+  of the item above; the checker reads them again.
+- **Headline glossary terms are not recall items.** A term that sibling
+  items necessarily print (1.1's *anatomy* and *physiology*; the Metabolism
+  group's *anabolism*/*catabolism*; 1.5's *negative*/*positive feedback*)
+  stays a Key-terms bullet only; the footer names the exclusion and the
+  mechanism, not just the count. The same holds for a term a source Review
+  Question on the page already keys (life-sciences "Each thing once"); a
+  term the group's own objective heading or the page title prints is
+  avoided when the objective offers another, as a preference, not a
+  defect (life-sciences "Text recall").
+- **Footer numbers come from a tally, never from memory.** Six chapter-1–2
+  footers miscounted (cross-references 3 for 6, selfchecks 1 for 2, a
+  cloze counted twice, "the fifteen-per-section floor"). The floor is 3 per
+  objective and 8 per section — never quote 12 or 15. Every figure-reference
+  edit ("see the figure below, panel a" for a `<link>`) is a disclosed
+  departure; a dropped one is a defect.
+- **Figures are described from the drawing, never from the source alt or
+  from memory.** A source alt reused as a `longdesc` is read against the
+  image first (1.2's "eight silhouettes" for six); left/right is the
+  subject's (1.6's arm arrow is on the woman's LEFT arm); bands, views, and
+  panels are counted in the image (1.2's pyramid, 2.1's PET views).
+- **A one-word typo is footer + ledger only, never a Source note** (core §0
+  rule 4; 2.5's "pyramidine"); a claim-level correction gets one. A figure's
+  file name is not reader-visible content and gets no note.
+- **Lint-enforced since September 22, 2026:** HTML entities in shortcode
+  params; ASCII chemistry (`H2O`, `Na+`) anywhere on a page, alts included —
+  Unicode sub/superscripts only; an MC option above a `textin` that prints
+  its key; an acronym spelled out before its blank; a hint that prints the
+  key; a `textin` key in its own hint or in the preceding item. The lints
+  also catch a `textin` hint word built on a five-letter-plus key's root
+  (*pronation* for `prone`) and an MC hint naming a subsection whose title
+  is the key; the fact the correct option asserts, a fact the module never
+  states, and other paraphrases remain the author's and checker's.
 - **Source section titles vary** ("Review Chapter", "Critical Thinking
   Question" in 1.6) — they are the same `multiple-choice` /
   `free-response` classes.
 - **A source file name with parentheses** (`102_Organ_Systems_of_Body(Page1).jpg`)
   is folded to `…-Page1` by `vendor-media`, because Hugo percent-encodes the
   parentheses in the built URL and the build audit then cannot match the
-  variant file *(pilot)*. Every keyed solution goes through the baseline's three
-readings; the third, blind solve runs in a fresh subagent with masked pages
-as `docs/briefs/microbiology/run.md` describes (the briefs for this book
-are to be derived from those and versioned under
-`docs/briefs/anatomy-physiology/` before the pilot — the Microbiology
-briefs' glossary-appendix and unkeyed-question steps do not apply here and
-the Biology mappings above do).
+  variant file *(pilot)*.
+
+The three readings and the blind solve run as
+`docs/briefs/anatomy-physiology/run.md` describes.
 
 ## Verification
 
 The baseline's gates and readings apply unchanged. Book-specific: the
-19-module upstream diff check in "Source and authority" before any
-erratum is logged; the `kind` check on every figure; the footer
+September-8 table in "Source and authority" before any erratum is logged; the `kind` check on every figure; the footer
 disclosure for Interactive Link Questions and for 17.11's missing glossary;
 the `## References` list where the source has one.
 
@@ -340,7 +384,7 @@ Biology's units 5 and 7 already were.
 - [ ] key-term recall items built from the module `<glossary>` (none for 17.11, disclosed)
 - [ ] every figure's `kind` set from the image, not the manifest default
 - [ ] Interactive Link Questions converted only where the module fixes the answer, the rest disclosed as prompts; `## References` after `## Summary` where the source has one
-- [ ] any PDF/CNXML disagreement in one of the 19 September-8 modules checked against the upstream diff before it is logged
+- [ ] any PDF/CNXML disagreement checked against the September-8 table before it is logged
 
 ## Build budgets
 

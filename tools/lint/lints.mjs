@@ -119,7 +119,7 @@ import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
 // The real textin grading normalizer, so the word-count/retype-hazard/
 // duplicate-accept-member rules below reason about a textin answer exactly
 // the way check-text.mjs will grade it.
-import { normalizeText, pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
+import { normalizeText, foldedForms, pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
 // Coverage measure for selfcheck rubric checkpoints — the same token-set
 // coverage verify-source-keys holds model answers to.
 import { phraseCoverage } from '../lib/openstax-source.mjs';
@@ -2379,10 +2379,15 @@ export function lintHugo(src, filename = '', options = {}) {
       }
     }
     const members = [];
-    if (answer.trim()) members.push({ raw: answer, norm: normalizeText(answer), label: `answer ${JSON.stringify(answer)}` });
+    // The answer is what a learner is asked to produce, so it stays short (4
+    // words). An accept member may run to 7: it exists to credit the full
+    // form of a correct answer ("central dogma of molecular biology",
+    // "major histocompatibility complex class I"), which a 4-word cap on
+    // accepts marked wrong (September 23, 2026).
+    if (answer.trim()) members.push({ raw: answer, norm: normalizeText(answer), label: `answer ${JSON.stringify(answer)}`, cap: 4 });
     for (const raw of (params.accept || '').split('|')) {
       if (!raw) continue;
-      members.push({ raw, norm: normalizeText(raw), label: `accept member ${JSON.stringify(raw)}` });
+      members.push({ raw, norm: normalizeText(raw), label: `accept member ${JSON.stringify(raw)}`, cap: 7 });
     }
     for (const member of members) {
       if (!member.norm) {
@@ -2390,8 +2395,8 @@ export function lintHugo(src, filename = '', options = {}) {
         continue;
       }
       const words = member.norm.split(' ').filter(Boolean);
-      if (words.length > 4) {
-        err(index, `${where}: ${member.label} is ${words.length} words — keep a text answer to 4 words or fewer`);
+      if (words.length > member.cap) {
+        err(index, `${where}: ${member.label} is ${words.length} words — keep ${member.cap === 4 ? 'a text answer' : 'an accept member'} to ${member.cap} words or fewer`);
       }
       // check-text splits accept on `|` only, so accept="a, b" is ONE member
       // that matches nothing a learner would plausibly type — and with short
@@ -2409,22 +2414,37 @@ export function lintHugo(src, filename = '', options = {}) {
         }
       }
     }
-    // The grader folds a regular plural (form + s / + es) onto every accepted
-    // form, so an accept member that IS that plural of the answer or of
-    // another member grades nothing the item did not already grade. Landed
-    // September 6, 2026 with the corpus re-audit that stripped 582 such
-    // members; an irregular plural (`hypotheses`, `septa`, `bacteria`) is
-    // not a fold and stays listed.
+    // The grader folds the regular plural BOTH ways (check-text.mjs
+    // `foldedForms`: form + s / + es, and a regular-plural-shaped form minus
+    // its s / sibilant es), so an accept member that IS the plural or the
+    // singular of the answer or of another kept member grades nothing the
+    // item did not already grade. Plural direction landed September 6, 2026
+    // (582 members stripped); singular direction September 22, 2026. An
+    // irregular form (`hypotheses`, `septa`, `bacteria`/`bacterium`,
+    // `mosquito` for `mosquitoes`) is not a fold and stays listed. Members
+    // are checked in order against the answer and the members kept so far,
+    // so a mutually-folding pair (`receptor|receptors` beside another key)
+    // flags only the second, never both.
+    const keptMembers = members.filter((member) => member.label.startsWith('answer '));
     for (const member of members) {
       if (member.label.startsWith('answer ')) continue; // the key itself is never redundant
-      const covering = members.find((other) => other !== member && pluralFolds(other.norm).includes(member.norm));
-      if (covering) {
-        err(index, `${where}: ${member.label} is the regular plural of ${covering.label} — grading already folds a trailing s/es, so remove it (an irregular plural still needs listing)`);
+      const covering = keptMembers.find((other) => foldedForms(other.norm).includes(member.norm));
+      if (!covering) {
+        keptMembers.push(member);
+        continue;
       }
+      const relation = pluralFolds(covering.norm).includes(member.norm) ? 'plural' : 'singular';
+      err(index, `${where}: ${member.label} is the regular ${relation} of ${covering.label} — grading already folds a trailing s/es both ways, so remove it (an irregular plural or singular still needs listing)`);
     }
     // Every spelling the grader will take — the members and their folded
-    // plurals — is a retype hazard if the prompt prints it.
-    const graded = members.flatMap((member) => [member, ...pluralFolds(member.norm).map((norm) => ({ norm, label: `${member.label}'s plural ${JSON.stringify(norm)}` }))]);
+    // plurals and singulars — is a retype hazard if the prompt prints it.
+    const graded = members.flatMap((member) => [
+      member,
+      ...foldedForms(member.norm).map((norm) => ({
+        norm,
+        label: `${member.label}'s ${pluralFolds(member.norm).includes(norm) ? 'plural' : 'singular'} ${JSON.stringify(norm)}`,
+      })),
+    ]);
     const qNorm = normalizeText(q);
     for (const member of graded) {
       if (member.norm && containsWholeWordRun(qNorm, member.norm)) {

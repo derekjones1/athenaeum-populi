@@ -68,7 +68,7 @@ Microbes can also be differentiated according to the substrates they can ferment
 
 **Check Your Understanding**
 
-{{< selfcheck question="When would a metabolically versatile microbe perform fermentation rather than cellular respiration?" hint="Combine the sentence naming when a facultative organism switches to respiration with the next paragraph's sentence naming what happens instead when respiration does not occur." >}}
+{{< selfcheck question="When would a metabolically versatile microbe perform fermentation rather than cellular respiration?" hint="The answer spans the two paragraphs after the numbered list that opens the section." >}}
 A metabolically versatile (facultative) microbe switches to cellular respiration only when the environment provides an appropriate inorganic final electron acceptor, because respiration allows for much greater ATP production per glucose molecule. When respiration does not occur — that is, when no appropriate inorganic final electron acceptor is available — NADH must instead be reoxidized to NAD⁺ by using an organic molecule (commonly pyruvate) as the final electron acceptor, a process called fermentation.
 ===CHECKS===
 switches to cellular respiration only when the environment provides an appropriate inorganic final electron acceptor
@@ -84,7 +84,7 @@ Identification of a microbial isolate is essential for the proper diagnosis and 
 
 Many commercial, miniaturized biochemical test panels cover a number of clinically important groups of bacteria and yeasts. One of the earliest and most popular test panels is the Analytical Profile Index (API) panel invented in the 1970s. Once some basic laboratory characterization of a given strain has been performed, such as determining the strain's Gram morphology, an appropriate test strip that contains 10 to 20 different biochemical tests for differentiating strains within that microbial group can be used. Currently, the various API strips can be used to quickly and easily identify more than 600 species of bacteria, both aerobic and anaerobic, and approximately 100 different types of yeasts. Based on the colors of the reactions when metabolic end products are present, due to the presence of pH indicators, a metabolic profile is created from the results (shown below). Microbiologists can then compare the sample's profile to the database to identify the specific microbe.
 
-{{< mediafigure src="microbiology/OSC_Microbio_08_04_FB3" alt="A photograph of an API 20NE test strip: a row of small wells labeled ONPG, ADH, LDC, ODC, CIT, H2S, URE, TDA, IND, and VP, followed by a second row labeled GEL, GLU, MAN, INO, SOR, RHA, SAC, MEL, AMY, and ARA. Most wells hold a pale yellow or teal-green liquid; ADH is pink-red, VP is bright pink, and ONPG, H2S, IND, and GEL are clear or white, with GEL also showing a dark streak across it." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_08_04_FB3" alt="A photograph of an API 20NE test strip: a row of small wells labeled ONPG, ADH, LDC, ODC, CIT, H₂S, URE, TDA, IND, and VP, followed by a second row labeled GEL, GLU, MAN, INO, SOR, RHA, SAC, MEL, AMY, and ARA. Most wells hold a pale yellow or teal-green liquid; ADH is pink-red, VP is bright pink, and ONPG, H₂S, IND, and GEL are clear or white, with GEL also showing a dark streak across it." kind="photo" >}}
 The API 20NE test strip is used to identify specific strains of gram-negative bacteria outside the Enterobacteriaceae. Here is an API 20NE test strip result for *Photobacterium damselae* ssp. *piscicida*.
 {{< /mediafigure >}}
 {{< /callout >}}
@@ -126,7 +126,7 @@ The case continues in [Catabolism of Lipids and Proteins](/life-health-sciences/
 {{< multiplechoice
   question="Which of the following is the purpose of fermentation?"
   answer="to make NAD⁺"
-  hint="Recall what fermentation regenerates so that the cell's only remaining ATP-producing pathway can continue."
+  hint="Reread the paragraph that introduces fermentation, just before the respiration-versus-fermentation table."
 >}}
 to make ATP
 to make carbon molecule intermediates for anabolism
@@ -137,7 +137,7 @@ to make NAD⁺
 {{< multiplechoice
   question="Which molecule typically serves as the final electron acceptor during fermentation?"
   answer="pyruvate"
-  hint="Recall the organic molecule named as the usual final electron acceptor when fermentation is defined."
+  hint="Reread the paragraph just before the respiration-versus-fermentation table."
 >}}
 oxygen
 NAD⁺
@@ -148,13 +148,14 @@ CO₂
 {{< textin
   question="Fermenting organisms make ATP through the process of ________."
   answer="glycolysis"
-  hint="Name the one pathway fermentation depends on for its two ATP molecules per glucose, since fermentation itself makes none directly."
+  accept="EMP glycolysis"
+  hint="Reread the Summary's second bullet."
 >}}
 
 {{< multiplechoice
   question="Why are some microbes, including *Streptococcus* spp., unable to perform aerobic respiration, even in the presence of oxygen?"
   answer="They lack the genes needed to build the electron transport system components and/or the Krebs cycle enzymes required for respiration."
-  hint="Of the three reasons a cell might be unable to respire, decide which are genetic rather than a matter of an absent electron acceptor — oxygen is already present here — and recall that the module calls Streptococcus permanently incapable, not facultative."
+  hint="Reread the numbered list that opens the section and the paragraph after it."
 >}}
 They lack an appropriate inorganic final electron acceptor in the environment.
 They lack the genes needed to build the electron transport system components and/or the Krebs cycle enzymes required for respiration.
@@ -166,7 +167,7 @@ They are facultative organisms that will switch to cellular respiration once the
 {{< multiplechoice
   question="Which fermentation product is important for making bread rise?"
   answer="CO₂"
-  hint="Recall the gas released during the first reaction of ethanol fermentation, before acetaldehyde is reduced to ethanol."
+  hint="Reread the paragraph on alcohol fermentation."
 >}}
 ethanol
 CO₂
@@ -177,7 +178,7 @@ hydrogen gas
 {{< multiplechoice
   question="Which of the following is not a commercially important fermentation product?"
   answer="pyruvate"
-  hint="Three of these four are named as fermentation end products or products used commercially in this section; one is only an intermediate the others are made from."
+  hint="Reread the paragraph on fermentation products important outside the food industry, and the Common Fermentation Pathways table."
 >}}
 ethanol
 pyruvate
@@ -188,21 +189,21 @@ penicillin
 {{< textin
   question="The microbe responsible for ethanol fermentation for the purpose of producing alcoholic beverages is ________."
   answer="yeast"
-  accept="Saccharomyces cerevisiae|S. cerevisiae"
-  hint="Name the type of eukaryotic microbe identified by genus and species in the Alcohol Fermentation discussion."
+  accept="Saccharomyces cerevisiae|S. cerevisiae|yeast Saccharomyces cerevisiae|Saccharomyces"
+  hint="Reread the paragraph on alcohol fermentation."
 >}}
 
 {{< textin
   question="________ results in the production of a mixture of fermentation products, including lactic acid, ethanol and/or acetic acid, and CO₂."
   answer="Heterolactic fermentation"
   accept="heterolactic"
-  hint="Contrast this term with homolactic fermentation, which yields only lactic acid because it uses the EMP pathway instead of the branched pentose phosphate pathway."
+  hint="Reread the paragraph on the lactic acid bacteria in food production."
 >}}
 
 {{< multiplechoice
   question="Which commercial product is acetone-butanol-ethanol fermentation used to produce?"
   answer="industrial solvents"
-  hint="Recall which fermentation pathway's end products include acetone and butanol, chemical solvents described earlier in this section."
+  hint="Reread the paragraph on fermentation products important outside the food industry."
 >}}
 bread
 pharmaceuticals
@@ -214,7 +215,7 @@ industrial solvents
 {{< multiplechoice
   question="Which commercial product is alcohol fermentation used to produce?"
   answer="bread"
-  hint="Recall which product's rising depends on the CO₂ released during ethanol fermentation."
+  hint="Reread the paragraph on alcohol fermentation."
 >}}
 bread
 pharmaceuticals
@@ -226,7 +227,7 @@ industrial solvents
 {{< multiplechoice
   question="Which commercial product is lactic acid fermentation used to produce?"
   answer="yogurt"
-  hint="Recall the dairy product whose highly acidic environment, generated by lactic acid fermentation, denatures milk proteins and solidifies it."
+  hint="Reread the paragraph on the lactic acid bacteria in food production."
 >}}
 bread
 pharmaceuticals
@@ -238,7 +239,7 @@ industrial solvents
 {{< multiplechoice
   question="Which commercial product is mixed acid fermentation used to produce?"
   answer="pharmaceuticals"
-  hint="Recall which fermentation pathway produces complex organic compounds used in antibiotics, vaccines, and vitamins."
+  hint="Reread the paragraph on fermentation products important outside the food industry."
 >}}
 bread
 pharmaceuticals
@@ -250,7 +251,7 @@ industrial solvents
 {{< multiplechoice
   question="Which commercial product is propionic acid fermentation used to produce?"
   answer="Swiss cheese"
-  hint="Recall the cheese whose distinctive flavor comes from the propionic acid produced by this pathway."
+  hint="Reread the paragraph just after the alcohol fermentation figure."
 >}}
 bread
 pharmaceuticals
@@ -271,7 +272,7 @@ industrial solvents
   {"label": "Butanediol fermentation", "bin": 0}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="How can fermentation be used to differentiate various types of microbes?" hint="Combine the diagnostic uses of fermentation products (pH change, gas) with the examples of microbes distinguished by which substrates they can ferment." >}}
+{{< selfcheck question="How can fermentation be used to differentiate various types of microbes?" hint="The answer spans the last two paragraphs before the Common Fermentation Pathways table." >}}
 Fermentation products are used in the laboratory to differentiate various bacteria for diagnostic purposes. Enteric bacteria are known for their ability to perform mixed acid fermentation, reducing the pH, which can be detected using a pH indicator. Similarly, the bacterial production of acetoin during butanediol fermentation can also be detected, and gas production from fermentation can be seen in an inverted Durham tube that traps produced gas in a broth culture. Microbes can also be differentiated according to the substrates they can ferment: for example, *E. coli* can ferment lactose, forming gas, whereas some of its close gram-negative relatives cannot; the ability to ferment sorbitol identifies the pathogenic enterohemorrhagic O157:H7 strain of *E. coli*, which unlike other *E. coli* strains cannot ferment sorbitol; and mannitol fermentation differentiates the mannitol-fermenting *Staphylococcus aureus* from other non–mannitol-fermenting staphylococci.
 ===CHECKS===
 Enteric bacteria are known for their ability to perform mixed acid fermentation, reducing the pH, which can be detected using a pH indicator
@@ -306,7 +307,7 @@ Fermentation yields more ATP per glucose molecule than anaerobic respiration.
 Neither fermentation nor anaerobic respiration produces any ATP.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="The bacterium *E. coli* is capable of performing aerobic respiration, anaerobic respiration, and fermentation. When would it perform each process and why? How is ATP made in each case?" hint="Use the facultative-switch sentence for when respiration is favored over fermentation, and the table's final electron acceptors and ATP yields for each process." >}}
+{{< selfcheck question="The bacterium *E. coli* is capable of performing aerobic respiration, anaerobic respiration, and fermentation. When would it perform each process and why? How is ATP made in each case?" hint="The answer spans the paragraph after the numbered list that opens the section and the respiration-versus-fermentation table." >}}
 *E. coli* is a facultative organism: when the environment provides an appropriate inorganic final electron acceptor, it will switch to cellular respiration because respiration allows for much greater ATP production per glucose molecule than fermentation. In aerobic respiration, the final electron acceptor is O₂, and ATP is made by EMP glycolysis and the Krebs cycle (both substrate-level phosphorylation) plus electron transport and chemiosmosis (oxidative phosphorylation), for a maximum yield of 38 ATP. In anaerobic respiration, the final electron acceptor is an inorganic ion such as NO₃⁻, SO₄²⁻, Fe³⁺, or CO₂, and ATP is made the same way, for a maximum yield of 5–36 ATP. When no appropriate inorganic final electron acceptor is available, *E. coli* performs fermentation instead, using an organic molecule such as pyruvate as the final electron acceptor; fermentation does not use an electron transport system and makes no ATP beyond the two ATP made by EMP glycolysis itself.
 ===CHECKS===
 when the environment provides an appropriate inorganic final electron acceptor, it will switch to cellular respiration

@@ -27,7 +27,7 @@ While *Acanthamoeba* keratitis is initially mild, it can lead to severe corneal 
 
 *Acanthamoeba* keratitis is difficult to treat, and prompt treatment is necessary to prevent the condition from progressing. The condition generally requires three to four weeks of intensive treatment to resolve. Common treatments include topical antiseptics (e.g., polyhexamethylene biguanide, chlorhexidine, or both), sometimes with painkillers or corticosteroids (although the latter are controversial because they suppress the immune system, which can worsen the infection). Azoles are sometimes prescribed as well. Advanced cases of keratitis may require a corneal transplant to prevent blindness.
 
-{{< mediafigure src="microbiology/OSC_Microbio_21_05_acanthaLC" alt="A numbered seven-step diagram of the Acanthamoeba life cycle in water (cyst, trophozoite, and mitosis stages, all marked the infective stage) branching into three routes of human entry — the eye, the nose and lower respiratory tract, and broken skin — each leading to its own disease outcome, with the resulting tissue forms marked the diagnostic stage." longdesc="1. Cysts in water become trophozoites. 2. Trophozoites undergo mitosis to form more trophozoites. 3. Trophozoites can also become cysts. Cysts, trophozoites, and mitosis are all marked the infective stage. 4. Amoebae (cysts and trophozoites) can enter humans in various ways. 5. Amoebae entering through the eye can result in severe keratitis of the eye. 6. Amoebae entering through the nasal passages and infecting the lower respiratory tract can result in granulomatous amoebic encephalitis (GAE) and/or disseminated disease in individuals with compromised immune systems. 7. Amoebae entering through ulcerated or broken skin can cause granulomatous amoebic encephalitis, disseminated disease, or skin lesions in individuals with compromised immune systems. The resulting cysts and trophozoites in tissue (steps 6 and 7) are marked the diagnostic stage." kind="diagram" eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_21_05_acanthaLC" alt="A numbered seven-step diagram of the Acanthamoeba life cycle in soil or water (cyst, trophozoite, and mitosis stages, with a single infective-stage marker beside the trophozoite) branching into three routes of human entry — the eye, the nose and lower respiratory tract, and broken skin — each leading to its own disease outcome, with the resulting tissue forms marked the diagnostic stage." longdesc="A key at the top shows a blue triangle marked 'i' for the infective stage and one marked 'd' for the diagnostic stage. At left, a loop surrounds an icon of soil and water separated by a slash: (1) Cysts, drawn as two cells, and (2) Trophozoite are joined by arrows both ways, cysts to trophozoite and trophozoite back to cysts; an arrow leads from the trophozoite to (3) Mitosis, and another leads from mitosis back to the trophozoite. Arrows lead from the cysts and from the trophozoite to step 4. A single 'i' triangle sits beside the trophozoite's arrow to step 4; no such marker appears next to cysts or mitosis, though step 4's own text names both cysts and trophozoites as forms that can enter humans. 4. Amoebae (cysts and trophozoites) can enter humans in various ways. 5. Amoebae entering through the eye can result in severe keratitis of the eye. 6. Amoebae entering through the nasal passages and infecting the lower respiratory tract can result in granulomatous amoebic encephalitis (GAE) and/or disseminated disease in individuals with compromised immune systems. 7. Amoebae entering through ulcerated or broken skin can cause granulomatous amoebic encephalitis, disseminated disease, or skin lesions in individuals with compromised immune systems. Three arrows leave step 4: two end at the head of a man drawn with brain, nasal passage, and lungs (steps 5 and 6), and one ends at his torso (step 7). Beneath this figure, the label 'Cysts and trophozoites in tissue' carries the 'd' (diagnostic stage) triangle." kind="diagram" eager="true" >}}
 *Acanthamoeba* spp. are waterborne parasites very common in unchlorinated aqueous environments. As shown in this life cycle, *Acanthamoeba* cysts and trophozoites are both capable of entering the body through various routes, causing infections of the eye, skin, and central nervous system. (credit: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
@@ -56,7 +56,7 @@ The name "eye worm" alludes to the visible migration of worms across the conjunc
 
 Worms can be surgically removed from the eye or the skin, but this treatment only relieves discomfort; it does not cure the infection, which involves many worms. The preferred treatment is diethylcarbamazine, but this medication produces severe side effects in some individuals, such as brain inflammation and possible death in patients with heavy infections. Albendazole is also sometimes used if diethylcarbamazine is not appropriate or not successful. If left untreated for many years, loiasis can damage the kidneys, heart, and lungs, though these symptoms are rare.
 
-{{< mediafigure src="microbiology/OSC_Microbio_21_05_IoiasisLC" alt="A flowchart titled Loa loa, split into Fly Stages on the left and Human Stages on the right. A fly bites a person and deposits infective larvae (1); the larvae grow into adult worms in the subcutaneous tissue (2), which produce sheathed microfilariae found in body fluids (3, the diagnostic stage). A fly's later blood meal ingests the microfilariae (4), which shed their sheaths and migrate to the fly's thoracic muscles (5), develop into L1 (6) and then infective L3 larvae (7), and migrate to the fly's head and proboscis (8), ready to infect another person." longdesc="Fly stages (left) and human stages (right) of the Loa loa life cycle. 1. A fly of the genus Chrysops takes a blood meal from a person, and infective (L3) larvae enter the bite wound. 2. The larvae develop into adult worms living in the subcutaneous tissue. 3. The adult worms produce sheathed microfilariae found in spinal fluid, urine, sputum, peripheral blood, and the lungs; this stage is marked diagnostic. 4. A fly takes a blood meal from an infected person and ingests the microfilariae. 5. The microfilariae shed their sheaths, penetrate the fly's midgut, and migrate to its thoracic muscles. 6. The microfilariae develop into L1 larvae. 7. The L1 larvae develop into infective L3 larvae. 8. The L3 larvae migrate to the fly's head and proboscis, ready to infect another person on the fly's next blood meal." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_21_05_IoiasisLC" alt="A flowchart titled Loa loa, split into Fly Stages on the left and Human Stages on the right. A fly bites a person and deposits infective larvae (1); the larvae grow into adult worms in the subcutaneous tissue (2), which produce sheathed microfilariae found in body fluids (3, the diagnostic stage). A fly's later blood meal ingests the microfilariae (4), which shed their sheaths and migrate to the fly's thoracic muscles (5), develop into L1 (6) and then infective L3 larvae (7), and migrate to the fly's head and proboscis (8), ready to infect another person." longdesc="Fly stages (left) and human stages (right) of the Loa loa life cycle. 1. A fly of the genus Chrysops takes a blood meal from a person, and infective (L3) larvae enter the bite wound; an inset below the fly shows one C-shaped larva marked with the 'i' (infective stage) triangle. 2. The larvae develop into adult worms living in the subcutaneous tissue, drawn as a smaller male (♂) and a larger female (♀). 3. The adult worms produce sheathed microfilariae found in spinal fluid, urine, sputum, peripheral blood, and the lungs; this stage is marked diagnostic. 4. A fly takes a blood meal from an infected person and ingests the microfilariae. 5. The microfilariae shed their sheaths, penetrate the fly's midgut, and migrate to its thoracic muscles. 6. The microfilariae develop into L1 larvae. 7. The L1 larvae develop into infective L3 larvae. 8. The L3 larvae migrate to the fly's head and proboscis, ready to infect another person on the fly's next blood meal." kind="diagram" >}}
 This *Loa loa* worm, measuring about 55 mm long, was extracted from the conjunctiva of a patient with loiasis. The *Loa loa* has a complex life cycle. Biting deerflies native to the rain forests of Central and West Africa transmit the larvae between humans. (credit a: modification of work by Eballe AO, Epée E, Koki G, Owono D, Mvogo CE, Bella AL; credit b: modification of work by NIAID; credit c: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
@@ -65,7 +65,7 @@ This *Loa loa* worm, measuring about 55 mm long, was extracted from the conjunct
 {{< multiplechoice
   question="Describe the most common way to diagnose loiasis."
   answer="Observing worms migrating through the eye or under the skin"
-  hint="The parasite's own nickname, 'eye worm,' describes exactly what a clinician looks for."
+  hint="See the diagnosis sentence in the third paragraph of the section's second subsection."
 >}}
 Observing worms migrating through the eye or under the skin
 Testing a blood sample for antibodies to *Loa loa*
@@ -108,7 +108,7 @@ The protozoan *Acanthamoeba* and the helminth *Loa loa* are two parasites capabl
 {{< multiplechoice
   question="Which of the following is most likely to cause an Acanthamoeba infection?"
   answer="swimming in a lake while wearing contact lenses"
-  hint="Think about which activity puts contact lenses in contact with untreated fresh water."
+  hint="See the prevention sentences that close the second paragraph of the first subsection."
 >}}
 swimming in a lake while wearing contact lenses
 being bitten by deerflies in Central Africa
@@ -119,13 +119,13 @@ participating in a contact sport such as wrestling
 {{< textin
   question="Eye worm is another name for ________."
   answer="loiasis"
-  hint="This is the disease caused by the parasitic Loa loa worm, not the worm itself."
+  hint="See the last bullet of the Summary."
 >}}
 
 {{< textin
   question="________ is a genus of free-living protozoan amoebae that are common in soils and unchlorinated bodies of fresh water."
   answer="Acanthamoeba"
-  hint="This is the parasite responsible for a serious eye infection in contact lens wearers."
+  hint="See the first sentence of the section's first subsection."
 >}}
 
 ### Identify the major characteristics of specific parasitic diseases affecting the skin and eyes
@@ -133,7 +133,7 @@ participating in a contact sport such as wrestling
 {{< multiplechoice
   question="The parasitic Loa loa worm can cause great pain when it:"
   answer="travels through the conjunctiva"
-  hint="This is the migration route that gives the worm its common name."
+  hint="See the third paragraph of the section's second subsection, on symptoms of the migrating worms."
 >}}
 moves through the bloodstream
 exits through the skin of the foot
@@ -144,7 +144,7 @@ enters the digestive tract
 {{< multiplechoice
   question="A patient tests positive for Loa loa antibodies. What does this test indicate?"
   answer="The individual was exposed to Loa loa at some point."
-  hint="Antibody tests generally detect a history of contact with a pathogen, not necessarily an infection happening right now."
+  hint="See the sentence on antibody testing in the third paragraph of the section's second subsection."
 >}}
 The individual was exposed to Loa loa at some point.
 The individual is currently suffering from loiasis.
@@ -155,7 +155,7 @@ The individual is immunosuppressed.
 {{< multiplechoice
   question="________ is commonly treated with a combination of chlorhexidine and polyhexamethylene biguanide."
   answer="Acanthamoeba keratitis"
-  hint="These are topical antiseptics used against an eye infection caused by a free-living amoeba."
+  hint="See the treatment paragraph at the end of the first subsection, or the drug column of the Disease Profile table."
 >}}
 Acanthamoeba keratitis
 Sporotrichosis
@@ -166,7 +166,7 @@ Loiasis
 {{< textin
   question="The ________ is the part of the eye that is damaged due to Acanthamoeba keratitis."
   answer="cornea"
-  hint="Keratitis is inflammation of this transparent structure at the front of the eye."
+  hint="See the sentence in the first subsection's opening paragraph that names the condition."
 >}}
 
 {{< selfcheck question="Why might a traveler to a region with Loa loa worm have a greater risk of serious infection compared with people who live in the region?" hint="The module offers this only as a suggested, hedged possibility — not a proven mechanism." >}}

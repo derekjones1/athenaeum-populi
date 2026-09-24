@@ -69,7 +69,7 @@ In freshwater systems, such as lakes, the recycling of nutrients occurs in respo
 
 In wintertime, the surface of lakes found in many northern regions is frozen. However, the water under the ice is slightly warmer, and the water at the bottom of the lake is warmer yet at 4 °C to 5 °C (39.2 °F to 41 °F). Water is densest at about 4 °C; therefore, the deepest water is also the densest. The deepest water is oxygen-poor because the decomposition of organic material at the bottom of the lake uses up available oxygen that cannot be replaced by means of oxygen diffusion into the surface of the water, due to the surface ice layer.
 
-{{< mediafigure src="biology/Figure_44_02_05" kind="diagram" alt="Four cross-sections of a lake, one per season, each labeled with temperatures along its right edge. Winter shows an ice-capped surface with no arrows. Spring turnover and fall turnover each show one arrow rising through the center and two arrows curving down and outward from the top. Summer stratification shows a smooth color gradient from warm at the surface to cool at depth, with no arrows." longdesc="Winter, upper left: a bowl-shaped cross-section capped by a jagged white ice layer; the water below is a uniform pale blue. Labels down the right edge read 0 °C, 2 °C, 4 °C, and 4 °C. Spring turnover, upper right: the water shades from purple at the surface to pale blue at depth. One red arrow points straight up through the center; two blue arrows curve from the upper sides down and outward, arrowheads pointing toward the lower corners. Labels down the right edge read 4 °C, 2 °C, 4 °C, and 4 °C. Summer stratification, lower left: the water shades smoothly from red at the surface to blue at the bottom, with no arrows. Labels down the right edge read 21 °C, 10 °C, 6 °C, and 4 °C. Fall turnover, lower right: the water shades from red at the surface to blue at depth, like summer. One blue arrow points straight up through the center; two red arrows curve from the upper sides down and outward, arrowheads pointing toward the lower corners. Labels down the right edge read 10 °C, 8 °C, 7 °C, and 4 °C." >}}
+{{< mediafigure src="biology/Figure_44_02_05" kind="diagram" alt="Four cross-sections of a lake, one per season, each labeled with temperatures along its right edge. Winter shows an ice-capped surface with no arrows. Spring turnover and fall turnover each show one arrow rising through the center and two arrows curving down from the upper sides toward the bottom center. Summer stratification shows a smooth color gradient from warm at the surface to cool at depth, with no arrows." longdesc="Winter, upper left: a bowl-shaped cross-section capped by a jagged white ice layer; the water below is a uniform pale blue. Labels down the right edge read 0 °C, 2 °C, 4 °C, and 4 °C. Spring turnover, upper right: the water shades from purple at the surface to pale blue at depth. One red arrow points straight up through the center; two blue arrows curve from the upper sides down and inward, arrowheads meeting near the bottom center on either side of the rising arrow's base. Labels down the right edge read 4 °C, 2 °C, 4 °C, and 4 °C. Summer stratification, lower left: the water shades smoothly from red at the surface to blue at the bottom, with no arrows. Labels down the right edge read 21 °C, 10 °C, 6 °C, and 4 °C. Fall turnover, lower right: the water shades from red at the surface to blue at depth, like summer. One blue arrow points straight up through the center; two red arrows curve from the upper sides down and inward, arrowheads meeting near the bottom center on either side of the rising arrow's base. Labels down the right edge read 10 °C, 8 °C, 7 °C, and 4 °C." >}}
 The spring and fall turnovers are important processes in freshwater lakes that act to move the nutrients and oxygen at the bottom of deep lakes to the top. Turnover occurs because water has a maximum density at 4 °C. Surface water temperature changes as the seasons progress, and denser water sinks.
 {{< /mediafigure >}}
 
@@ -156,12 +156,6 @@ Biogeography is the study of the geographic distribution of living things as wel
   hint="The Venus flytrap and the forest gardenia are both examples of this kind of narrowly-restricted species."
 >}}
 
-{{< textin
-  question="Endemic species are species that are naturally found only in a ________."
-  answer="specific geographic area"
-  hint="This section's own summary uses this exact phrase to describe where an endemic species is restricted to."
->}}
-
 {{< selfcheck question="Many endemic species are found in areas that are geographically isolated. Suggest a plausible scientific explanation for why this is so." hint="Think about what long-term separation from other populations lets a lineage do on its own." >}}
 Areas that have been geographically isolated for very long periods of time allow unique species to evolve; these species are distinctly different from those of surrounding areas and remain so, since geographic isolation keeps them separated from other species.
 ===CHECKS===
@@ -170,18 +164,13 @@ these species remain distinctly different from those of surrounding areas
 geographic isolation keeps them separated from other species
 {{< /selfcheck >}}
 
-### List and describe abiotic factors that affect the global distribution of plant and animal species
-
-{{< multiplechoice
-  question="An ecologist hiking up a mountain may notice different biomes along the way due to changes in all of the following except:"
-  answer="latitude"
-  hint="Elevation, rainfall, and temperature all change noticeably as you climb; ask whether the coordinate that measures distance from the equator changes along the same climb."
+{{< textin
+  question="Species which live in a wide variety of geographic areas, as the raccoon does across most of North and Central America, are called ________."
+  answer="generalists"
+  hint="Reread the paragraph on patterns of species distribution, just after the Venus flytrap example."
 >}}
-elevation
-rainfall
-latitude
-temperature
-{{< /multiplechoice >}}
+
+### List and describe abiotic factors that affect the global distribution of plant and animal species
 
 {{< textin
   question="An ecological community of plants, animals, and other organisms that is adapted to a characteristic set of environmental conditions is called a ________."
@@ -196,12 +185,23 @@ temperature
   hint="This section's own summary names the two geographic coordinates that, in part, control which environmental factors a species experiences."
 >}}
 
+{{< multiplechoice
+  question="An ecologist hiking up a mountain may notice different biomes along the way due to changes in all of the following except:"
+  answer="latitude"
+  hint="Reread the last sentence of the walk-north paragraphs, which compares hiking up a mountain with traveling north."
+>}}
+elevation
+rainfall
+latitude
+temperature
+{{< /multiplechoice >}}
+
 ### Compare the impact of abiotic forces on aquatic and terrestrial environments
 
 {{< multiplechoice
   question="Understory plants in a temperate forest have adaptations to capture limited ________."
   answer="sunlight"
-  hint="Think about what the leafed-out canopy above the understory blocks, not what the roots draw from the soil."
+  hint="Reread the first paragraph of Energy Sources, on the temperate-forest understory."
 >}}
 water
 nutrients
@@ -242,7 +242,7 @@ both processes let nutrients from the bottom of the body of water be recycled an
 {{< multiplechoice
   question="The amount of biomass produced by a biome is measured by its ________."
   answer="net primary productivity"
-  hint="This is the running total of carbon fixed per year, minus what cellular respiration oxidizes back off — not the standing plant mass itself."
+  hint="Reread the Summary's closing sentence."
 >}}
 above-ground biomass
 net primary productivity
@@ -252,4 +252,4 @@ biosphere
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 44.2: Biogeography](https://openstax.org/books/biology-2e/pages/44-2-biogeography) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all six figures matched the media manifest's kind guess (photo/diagram) on inspection, so none needed re-kinding; a longdesc added to the two diagrams whose printed arrows and labels are not carried by their one-line captions — the ocean-upwelling illustration and the four-panel lake-turnover illustration — transcribing each drawing's arrow colors, directions, and printed temperature labels in reading order; the lake-turnover figure's source alt (a screen-reader spelling reading "degrees upper case C" throughout) rewritten as a plain visual description, with the seasonal walk-through moved into the longdesc, which names only what is drawn and never states which season's process differs in tropical lakes; in-text pointers to the printed figure numbers (including one stray "ab" left over from a print cross-reference) replaced with "shown below," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/platypus redirect URL with its anchor text expanded from "video" to name the destination; the body Visual Connection (the tropical-lake-turnover question beside the lake-turnover figure) rendered as the figure followed by a self-check, kept in the body — the note copy and the `<exercise>` copy print identical question and solution wording, so no adjudication was needed; both end-of-section Review Questions and both Critical Thinking Questions adapted into the closing interactive Practice block, placed under the objective each one tests; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items added from the glossary (biogeography, endemic, biome, thermocline, net primary productivity, above-ground biomass), plus two summary-sourced cloze text-recall items and one summary-sourced select-the-term multiple choice, filling out all four objective groups. No source key departures, distractor replacements, or wording corrections were needed on this page.</small>
+<small>This section is adapted from [Biology 2e, Section 44.2: Biogeography](https://openstax.org/books/biology-2e/pages/44-2-biogeography) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all six figures matched the media manifest's kind guess (photo/diagram) on inspection, so none needed re-kinding; a longdesc added to the two diagrams whose printed arrows and labels are not carried by their one-line captions — the ocean-upwelling illustration and the four-panel lake-turnover illustration — transcribing each drawing's arrow colors, directions, and printed temperature labels in reading order; the lake-turnover figure's source alt (a screen-reader spelling reading "degrees upper case C" throughout) rewritten as a plain visual description, with the seasonal walk-through moved into the longdesc, which names only what is drawn and never states which season's process differs in tropical lakes; in-text pointers to the printed figure numbers (including one stray "ab" left over from a print cross-reference) replaced with "shown below," since Hugo does not number figures; the `interactive` note rendered as a Link to Learning callout, keeping the module's own openstax.org/l/platypus redirect URL with its anchor text expanded from "video" to name the destination; the body Visual Connection (the tropical-lake-turnover question beside the lake-turnover figure) rendered as the figure followed by a self-check, kept in the body — the note copy and the `<exercise>` copy print identical question and solution wording, so no adjudication was needed; both end-of-section Review Questions and both Critical Thinking Questions adapted into the closing interactive Practice block, placed under the objective each one tests; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; six key-term recall items added from the glossary (biogeography, endemic, biome, thermocline, net primary productivity, above-ground biomass), plus one summary-sourced cloze text-recall item, one summary-sourced select-the-term multiple choice, and one recall item on "generalists" built from the Biogeography paragraph's own sentence (it replaced a summary cloze on "specific geographic area" that re-asked the endemic key-term item; the hiking multiple choice now closes its group, after the biome and latitude-or-elevation recall items, because its stem prints "biomes" and its options print "elevation" and "latitude"), filling out all four objective groups. No source key departures, distractor replacements, or wording corrections were needed on this page.</small>

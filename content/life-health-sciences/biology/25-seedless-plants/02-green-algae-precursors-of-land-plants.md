@@ -69,15 +69,14 @@ plasmodesmata
 {{< textin
   question="The monophyletic group that includes green algae and land plants is called the ________."
   answer="streptophytes"
-  accept="Streptophyta|streptophyte"
+  accept="Streptophyta"
   hint="This lineage unites the charophyte algae with every land plant descended from them."
 >}}
 
 {{< textin
   question="Charophytes form sporopollenin and precursors of lignin, ________, and have flagellated sperm."
   answer="phragmoplasts"
-  accept="phragmoplast"
-  hint="This structure is the cell-plate framework described earlier as distinguishing charophyte cell division from chlorophyte cell division."
+  hint="Reread this section's summary, at its list of what charophytes form."
 >}}
 
 ### Explain why charophytes are considered the closest algal relative to land plants
@@ -85,7 +84,7 @@ plasmodesmata
 {{< multiplechoice
   question="What characteristic of Charales would enable them to survive a dry spell?"
   answer="sporopollenin"
-  hint="Which compound forms a tough protective layer around spores, letting them wait out a drought?"
+  hint="Reread the Charophytes subsection's list of Charales traits that are significant for adaptation to land life."
 >}}
 sperm with flagella
 phragmoplasts
@@ -96,7 +95,7 @@ chlorophyll *a*
 {{< multiplechoice
   question="Which of the following features does not support the inclusion of Charophytes in the *Plantae* kingdom?"
   answer="Charophytes are multicellular organisms that lack vascular tissue."
-  hint="Three of these traits are shared with, or explained for, land plants; one describes what charophytes lack rather than what links them to plants."
+  hint="Reread the paragraph on how the chlorophytes and the charophytes differ, and the Charophytes subsection's description of Chara."
 >}}
 Charophyte chloroplasts contain chlorophyll a and b.
 Charophyte plant cell walls contain plasmodesmata to allow transfer between cells within multicellular organisms.
@@ -127,9 +126,9 @@ The tomato plant genome is distinct from the red algae genome.
 {{< multiplechoice
   question="Charophytes share more traits with land plants than do other ______, according to structural features and DNA analysis."
   answer="algae"
-  hint="The comparison is between charophytes and the broader group of non-land photosynthetic organisms discussed at the start of this section."
+  hint="Reread the first sentence of this section's summary."
 >}}
-protists
+red algae
 algae
 plants
 chlorophytes
@@ -138,10 +137,10 @@ chlorophytes
 {{< textin
   question="Within the charophytes, the Charales, the Coleochaetales, and the Zygnematales have been each considered as sharing the ________ with the land plants."
   answer="closest common ancestry"
-  accept="closest common ancestor"
-  hint="Structural and DNA evidence has repeatedly reopened the question of which order is nearest kin to plants."
+  accept="closest common ancestor|closest ancestry|closest ancestor"
+  hint="Reread the second sentence of this section's summary."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 25.2: Green Algae: Precursors of Land Plants](https://openstax.org/books/biology-2e/pages/25-2-green-algae-precursors-of-land-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the green-algae figure's alt describes the Chlamydomonas cells' two flagella, because the source alt's "attached to thin stalks" misreads the micrograph (erratum 842); figures re-encoded as WebP (both confirmed `kind="photo"` after inspection, matching the manifest's guess); the four-panel Figure 25.7 alt's "a oval" corrected to "an oval"; the inline print cross-references to numbered figures ("Figure 25.7", "Figure 25.8") changed to descriptive phrases ("see the photo below") since figures are not numbered here; the four Review Questions adapted into multiple choice and the one Critical Thinking Question into a self-check in the closing interactive Practice block; one key-term recall item added from the glossary, with `accept` extended to the module's own "Streptophyta" phylum name for the same group; rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three items built from the section summary (two cloze text-recall items and one select-the-term multiple choice) added to round out the Practice groups, since this section's glossary carries only one term.</small>
+<small>This section is adapted from [Biology 2e, Section 25.2: Green Algae: Precursors of Land Plants](https://openstax.org/books/biology-2e/pages/25-2-green-algae-precursors-of-land-plants) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the green-algae figure's alt describes the Chlamydomonas cells' two flagella, because the source alt's "attached to thin stalks" misreads the micrograph (erratum 842); figures re-encoded as WebP (both confirmed `kind="photo"` after inspection, matching the manifest's guess); the four-panel Figure 25.7 alt's "a oval" corrected to "an oval"; the inline print cross-references to numbered figures ("Figure 25.7", "Figure 25.8") changed to descriptive phrases ("see the photo below") since figures are not numbered here; the four Review Questions adapted into multiple choice and the one Critical Thinking Question into a self-check in the closing interactive Practice block; one key-term recall item added from the glossary, with `accept` extended to the module's own "Streptophyta" phylum name for the same group; rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three items built from the section summary (two cloze text-recall items and one select-the-term multiple choice) added to round out the Practice groups, since this section's glossary carries only one term; the select-the-term item offers "red algae" rather than "protists" as a distractor, since this section places the plants and green algae in a protist supergroup.</small>

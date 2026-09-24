@@ -118,6 +118,16 @@ themselves keep only what is still operative.
   CI, a fresh clone — is skipped by name on stderr with no floor applied,
   never failed, so the gate has teeth only on a machine that has fetched
   every bundle; run it locally before pushing
+- `npm run verify:source-coverage` — refuse a life-sciences page that drops
+  a source end-of-section exercise: every exercise, lettered part, and
+  Matching entry in the pinned CNXML must have a rendered counterpart on its
+  page (scored stem/option match, one-to-one), a Check Your Understanding
+  fold the matcher can see, or a reviewed entry in the tool's
+  `LISTED_EXERCISES` (disclosed folds and reworded conversions; an entry
+  whose exercise becomes rendered, or whose named item disappears, fails as
+  stale). `--min-covered` is the source's own unit total, so covered = total
+  means nothing is missing; it moves only when the source pin moves. Skips
+  absent bundles like `verify:source-keys` (part of `npm test`)
 - `npm run verify:fillin-residual` — refuse a math `fillin` that has NO third
   reading: `verify:answers` cannot parse its ask, no source solution confirms
   it (unmatched, figure-only, symbolic, unkeyed, or a knowledge-check page
@@ -139,9 +149,11 @@ themselves keep only what is still operative.
   accept list, and hint stripped (`--residual-fillins` keeps only the
   fill-ins `verify:fillin-residual` would refuse; `--pages-out <dir>` also
   writes each page whole with every key masked, which is what a fresh
-  solver subagent reads instead of the live page); the orchestrator — or,
+  solver subagent reads instead of the live page, prefixing a page name
+  that collides across books with its chapter folder — Biology 3.x and
+  Microbiology 7.x share basenames); the orchestrator — or,
   for a chapter run, a fresh Fable subagent briefed by
-  `docs/briefs/microbiology/solve.md` — answers them in writing; `compare` grades the
+  `docs/briefs/<book>/solve.md` — answers them in writing; `compare` grades the
   answers against the live keys (the real text grader for textin), prints
   every disagreement and "also defensible" flag, refuses to record one until
   it carries an `adjudicated` note settled against the CNXML, and writes the
@@ -183,7 +195,7 @@ wrong — do not exempt the page. When authoring moves any published floor
 (`--min-verified`, `--min-replayed`, `--min-exercises`), end the session with
 `npm run baseline:update` and commit the rewrite together with the content.
 
-## The answer ledgerFor 1
+## The answer ledger
 
 `verify:answers` re-derives an answer only where it can mechanically recognize
 what the prompt asks; most of what it skips is skipped as "prompt class not
@@ -213,6 +225,18 @@ exactly what a parser cannot do, so that population is covered by a reading
 pass instead, and `data/verification/answer-ledger.json` makes the result
 durable.
 
+The three readings prove keys; nothing mechanical reads what surrounds
+them. On September 22, 2026 an Opus sweep of every Biology 2e and
+Microbiology page found 0 wrong source keys but about 2,470 hints that
+stated the answer's fact, about 350 leaks from neighbouring items and
+objective headings, about 300 accept gaps, and about 200 false footers —
+all on pages that had passed every gate and a Sonnet checker — and a
+`longdesc` pass by inventory then fixed most of the figures it read. So a
+life-sciences per-section checker runs on Opus, and the hint, leak,
+footer, and figure-inventory rules live in `docs/subjects/life-sciences.md`
+("Text recall", "Each thing once", "Independent checker", "Completion
+audit") and in each book's `docs/briefs/<book>/` kit.
+
 An exercise's identity is the sha256 of its own source with whitespace runs
 collapsed, plus — when the stem, hint, or options name a figure, graph, or
 table on the page ("the graph above", "the table below", "according to the
@@ -227,6 +251,22 @@ exactly as editing the answer does.** A reference that resolves to no block
 on the page is a lint error, not a silent fall-back to a raw-only hash. The
 key is the hash alone, so an exercise duplicated across books is verified
 once and moving one between files costs nothing.
+
+**Re-solving after a sweep** *(September 23, 2026)*: an edit re-hashes the
+item, but not every re-hash needs a new solve. A record carries to the new
+hash when the stem, options, and key are unchanged and every previously
+graded form still grades correct (so `accept` ADDITIONS carry, while a
+removal or a new key does not); an item whose `dependency` block — the
+figure or table it names — changed is re-solved, since the solver read
+that block. The September 23 close-out carried 2,620 records this way and
+re-solved 570 graded items; its 89 self-checks were re-read. The rule is
+`tools/verify/ledger-carry.mjs`: take `npm run ledger:carry -- snapshot
+content > $SP/ledger-before.json` BEFORE the sweep edits anything, then
+`npm run ledger:carry -- plan $SP/ledger-before.json content --out
+$SP/carry` writes a merge-ready `results/` directory and a
+`resolve-list.json` of what must be re-solved or re-read. (Its snapshot
+holds each dependency block's hash; `ledger:list` output does not, so it
+cannot stand in for one.)
 
 Three verdicts: `ok`, `defect` (fails the gate — a known-wrong answer must not
 ship), and `unverifiable` (read, but undeterminable from the exercise text
@@ -277,7 +317,10 @@ Commands that drive a re-run:
   carrying every verdict forward. It cannot launder a later figure edit —
   once a record is rekeyed the old raw-only key no longer exists, so editing
   the figure afterwards strands the record under its new key exactly as any
-  other edit would.
+  other edit would;
+- `npm run ledger:carry -- snapshot|plan` carries records across a
+  sweep's hint and accept-addition edits ("Re-solving after a sweep"
+  above) and lists what it would not carry.
 
 A pass writes result files, each shaped
 `{"results": [{"hash": "…", "verdict": "…", "note": "…"?}]}`, and

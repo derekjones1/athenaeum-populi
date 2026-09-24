@@ -53,7 +53,7 @@ When fertilization occurs between two true-breeding parents that differ in only 
 
 To demonstrate a monohybrid cross, consider the case of true-breeding pea plants with yellow versus green pea seeds. The dominant seed color is yellow; therefore, the parental genotypes were *YY* for the plants with yellow seeds and *yy* for the plants with green seeds, respectively. A **Punnett square**, devised by the British geneticist Reginald Punnett, can be drawn that applies the rules of probability to predict the possible outcomes of a genetic cross or mating and their expected frequencies. To prepare a Punnett square, all possible combinations of the parental alleles are listed along the top (for one parent) and side (for the other parent) of a grid, representing their meiotic segregation into haploid gametes. Then the combinations of egg and sperm are made in the boxes in the table to show which alleles are combining. Each box then represents the diploid genotype of a zygote, or fertilized egg, that could result from this mating. Because each possibility is equally likely, genotypic ratios can be determined from a Punnett square. If the pattern of inheritance (dominant or recessive) is known, the phenotypic ratios can be inferred as well. For a monohybrid cross of two true-breeding parents, each parent contributes one type of allele. In this case, only one genotype is possible. All offspring are *Yy* and have yellow seeds (see the figure below).
 
-{{< mediafigure src="biology/Figure_12_02_02" kind="diagram" eager="true" alt="A three-generation flow chart of a monohybrid pea-seed-color cross. P generation: a yellow-seeded YY parent and a green-seeded yy parent, each producing one type of gamete. F₁ generation: all offspring are Yy with yellow seeds, producing two types of gametes. F₂ generation: self-pollination of F₁ is shown as a 2 × 2 Punnett square, with a table below giving genotype and phenotype ratios." longdesc="The chart has three horizontal bands, top to bottom, labeled P, F₁, and F₂. In the P band, a yellow pea labeled YY sits above a red arrow to 'Gametes: Y', and a green pea labeled yy sits above a red arrow to 'Gametes: y'; text at right notes each homozygous P parent produces only one kind of gamete. In the F₁ band, a single yellow pea labeled Yy sits above red arrows to 'Gametes: Y' and 'Gametes: y'; text at right notes the heterozygous F₁ offspring produces two kinds of gamete. In the F₂ band, a 2 × 2 Punnett square crosses the F₁ gametes Y and y along the top with Y and y down the side: the top-left cell reads YY, the top-right and bottom-left cells both read Yy, and the bottom-right cell reads yy; the YY and Yy cells are shaded yellow and the yy cell is shaded green. Text at right notes self-pollination of F₁ produces F₂ offspring in a 3:1 ratio of yellow to green. Below the grid, a table lists Phenotypes, Genotypes, Genotype ratio, and Phenotype ratio: the yellow row lists genotypes YY and Yy with a genotype ratio of 1 and 2 and a phenotype ratio of 3; the green row lists genotype yy with a genotype ratio of 1 and a phenotype ratio of 1." >}}
+{{< mediafigure src="biology/Figure_12_02_02" kind="diagram" eager="true" alt="A three-generation flow chart of a monohybrid pea-seed-color cross. P generation: a yellow-seeded YY parent and a green-seeded yy parent, each producing one type of gamete. F₁ generation: all offspring are Yy with yellow seeds, producing two types of gametes. F₂ generation: self-pollination of F₁ is shown as a 2 × 2 Punnett square, with a table below giving genotype and phenotype ratios." longdesc="The chart, titled Monohybrid Cross, has three horizontal bands, top to bottom, labeled P, F₁, and F₂. In the P band, a yellow pea labeled YY sits above a red arrow to 'Gametes: Y', and a green pea labeled yy sits above a red arrow to 'Gametes: y'; text at right notes each homozygous P parent produces only one kind of gamete. Red arrows from the two P gametes converge on the F₁ band, where a single yellow pea labeled Yy sits above red arrows to 'Gametes: Y' and 'Gametes: y'; text at right notes the heterozygous F₁ offspring produces two kinds of gamete. In the F₂ band, a 2 × 2 Punnett square crosses the F₁ gametes Y and y along the top with Y and y down the side: the top-left cell reads Yellow YY, the top-right and bottom-left cells both read Yellow Yy, and the bottom-right cell reads Green yy; the YY and Yy cells are shaded yellow and the yy cell is shaded green. Text at right notes self-pollination of F₁ produces F₂ offspring in a 3:1 ratio of yellow to green. A curved red arrow from the grid leads to the word Ratios and a table below that lists Phenotypes, Genotypes, Genotype ratio, and Phenotype ratio: the yellow row lists genotypes YY and Yy with a genotype ratio of 1 and 2 and a phenotype ratio of 3; the green row lists genotype yy with a genotype ratio of 1 and a phenotype ratio of 1." >}}
 In the P generation, pea plants that are true-breeding for the dominant yellow phenotype are crossed with plants with the recessive green phenotype. This cross produces F₁ heterozygotes with a yellow phenotype. Punnett square analysis can be used to predict the genotypes of the F₂ generation.
 {{< /mediafigure >}}
 
@@ -65,11 +65,11 @@ Mendel validated these results by performing an F₃ cross in which he self-cros
 
 Beyond predicting the offspring of a cross between known homozygous or heterozygous parents, Mendel also developed a way to determine whether an organism that expressed a dominant trait was a heterozygote or a homozygote. Called the **test cross**, this technique is still used by plant and animal breeders. In a test cross, the dominant-expressing organism is crossed with an organism that is homozygous recessive for the same characteristic. If the dominant-expressing organism is a homozygote, then all F₁ offspring will be heterozygotes expressing the dominant trait (see the figure below). Alternatively, if the dominant expressing organism is a heterozygote, the F₁ offspring will exhibit a 1:1 ratio of heterozygotes and recessive homozygotes (see the figure below). The test cross further validates Mendel’s postulate that pairs of unit factors segregate equally.
 
-{{< mediafigure src="biology/Figure_12_02_03" kind="diagram" alt="A two-part diagram illustrating a test cross for pea seed color. Top: a parent of unknown genotype (Y?) is crossed with a homozygous recessive yy parent; the 2 × 2 grid of offspring is entirely Yy, illustrating that an all-dominant result indicates a homozygous dominant unknown parent. Bottom: the same cross yields a grid of two Yy and two yy offspring, illustrating that a 1:1 ratio of dominant to recessive offspring indicates a heterozygous unknown parent." longdesc="The figure has two stacked Punnett-square panels, both labeled 'Gametes from parent of unknown genotype: Y, ?' along the top and 'Gametes from recessive parent: y, y' down the side. In the top panel the four grid cells all read Yy, with a note that a test cross resulting in all dominant offspring indicates the unknown parent is homozygous dominant. In the bottom panel the grid reads Yy, yy, Yy, yy (two of each), with a note that a test cross resulting in a 1:1 ratio of yellow to green offspring indicates the unknown parent is heterozygous." >}}
+{{< mediafigure src="biology/Figure_12_02_03" kind="diagram" alt="A two-part diagram illustrating a test cross for pea seed color. Top: a parent of unknown genotype (Y?) is crossed with a homozygous recessive yy parent; the 2 × 2 grid of offspring is entirely Yy, illustrating that an all-dominant result indicates a homozygous dominant unknown parent. Bottom: the same cross yields a grid of two Yy and two yy offspring, illustrating that a 1:1 ratio of dominant to recessive offspring indicates a heterozygous unknown parent." longdesc="A header band titled The Test Cross shows a yellow pea labeled Y? beside a green pea labeled yy. Below it are two stacked Punnett-square panels, both labeled 'Gametes from parent of unknown genotype: Y, ?' along the top and 'Gametes from recessive parent: y, y' down the side. In the top panel the four grid cells all hold yellow peas reading Yy, with a note that a test cross resulting in all dominant offspring indicates the unknown parent is homozygous dominant. In the bottom panel the grid reads Yy, yy, Yy, yy (two yellow peas in the left column and two green peas in the right), with a note that a test cross resulting in a 1:1 ratio of yellow to green offspring indicates the unknown parent is heterozygous." >}}
 A test cross can be performed to determine whether an organism expressing a dominant trait is a homozygote or a heterozygote.
 {{< /mediafigure >}}
 
-{{< selfcheck question="In pea plants, round peas (*R*) are dominant to wrinkled peas (*r*). You do a test cross between a pea plant with wrinkled peas (genotype *rr*) and a plant of unknown genotype that has round peas. You end up with three plants, all which have round peas. From this data, can you tell if the round pea parent plant is homozygous dominant or heterozygous? If the round pea parent plant is heterozygous, what is the probability that a random sample of 3 progeny peas will all be round?" hint="If the parent is heterozygous, each individual offspring pea has an independent 1/2 chance of being round; multiply that chance across all three offspring." >}}
+{{< selfcheck question="In pea plants, round peas (*R*) are dominant to wrinkled peas (*r*). You do a test cross between a pea plant with wrinkled peas (genotype *rr*) and a plant of unknown genotype that has round peas. You end up with three plants, all which have round peas. From this data, can you tell if the round pea parent plant is homozygous dominant or heterozygous? If the round pea parent plant is heterozygous, what is the probability that a random sample of 3 progeny peas will all be round?" hint="Reread the test-cross paragraph and figure above, and the previous section's product rule." >}}
 You cannot be sure if the plant is homozygous or heterozygous, as the data set is too small: by random chance, all three plants might have acquired only the dominant gene even if the recessive one is present. If the round pea parent is heterozygous, there is a one-eighth probability that a random sample of three progeny peas will all be round.
 ===CHECKS===
 you cannot be sure if the plant is homozygous or heterozygous, as the data set is too small
@@ -83,7 +83,7 @@ Many human diseases are genetically inherited. A healthy person in a family in w
 Alkaptonuria is a recessive genetic disorder in which two amino acids, phenylalanine and tyrosine, are not properly metabolized. Affected individuals may have darkened skin and brown urine, and may suffer joint damage and other complications. In this pedigree, individuals with the disorder are indicated in blue and have the genotype *aa*. Unaffected individuals are indicated in yellow and have the genotype *AA* or *Aa*. Note that it is often possible to determine a person’s genotype from the genotype of their offspring. For example, if neither parent has the disorder but their child does, they must be heterozygous. Two individuals on the pedigree have an unaffected phenotype but unknown genotype. Because they do not have the disorder, they must have at least one normal allele, so their genotype gets the “*A?*” designation.
 {{< /mediafigure >}}
 
-{{< selfcheck question="What are the genotypes of the individuals labeled 1, 2, and 3?" hint="Work generation by generation: an affected individual's genotype follows directly from the legend, while an unaffected individual's genotype depends on whether any of their children are affected." >}}
+{{< selfcheck question="What are the genotypes of the individuals labeled 1, 2, and 3?" hint="Use the pedigree's legend and reread its caption." >}}
 Individual 1 has the genotype *aa*. Individual 2 has the genotype *Aa*. Individual 3 has the genotype *Aa*.
 ===CHECKS===
 individual 1 has the genotype aa
@@ -155,7 +155,7 @@ In an X-linked cross, the genotypes of F₁ and F₂ offspring depend on whether
 Punnett square analysis is used to determine the ratio of offspring from a cross between a red-eyed male fruit fly and a white-eyed female fruit fly.
 {{< /mediafigure >}}
 
-{{< selfcheck question="What ratio of offspring would result from a cross between a white-eyed male and a female that is heterozygous for red eye color?" hint="List the male's two possible gametes (X<sup>w</sup> and Y) against the female's two possible gametes (X<sup>W</sup> and X<sup>w</sup>) in a 2 × 2 grid, then read off each resulting genotype and its eye color separately for daughters and sons." >}}
+{{< selfcheck question="What ratio of offspring would result from a cross between a white-eyed male and a female that is heterozygous for red eye color?" hint="Use the sex-linked Punnett square figure above as a model." >}}
 Half of the female offspring would be heterozygous (X<sup>W</sup>X<sup>w</sup>) with red eyes, and half would be homozygous recessive (X<sup>w</sup>X<sup>w</sup>) with white eyes. Half of the male offspring would be hemizygous dominant (X<sup>W</sup>Y) with red eyes, and half would be hemizygous recessive (X<sup>w</sup>Y) with white eyes.
 ===CHECKS===
 half of the female offspring would be heterozygous with red eyes
@@ -172,7 +172,7 @@ In some groups of organisms with sex chromosomes, the sex with the non-homologou
 
 Sex-linkage studies in Morgan’s laboratory provided the fundamentals for understanding X-linked recessive disorders in humans, which include red-green color blindness, and Types A and B hemophilia. Because human males need to inherit only one recessive mutant X allele to be affected, X-linked disorders are disproportionately observed in males. Females must inherit recessive X-linked alleles from both of their parents in order to express the trait. When they inherit one recessive X-linked mutant allele and one dominant X-linked wild-type allele, they are carriers of the trait and are typically unaffected. Carrier females can manifest mild forms of the trait due to the inactivation of the dominant allele located on one of the X chromosomes. However, female carriers can contribute the trait to their male children, resulting in the male exhibiting the trait, or they can contribute the recessive allele to their female children, resulting in the children being carriers of the trait (see the figure below). Although some Y-linked recessive disorders exist, typically they are associated with infertility in males and are therefore not transmitted to subsequent generations.
 
-{{< mediafigure src="biology/Figure_13_01_05-1b57" kind="diagram" alt="A diagram titled X-Linked Disorders showing an unaffected male and an unaffected carrier female as parents, each with a small chromosome icon, and their four possible offspring below: an unaffected male, an unaffected female, an affected male, and an unaffected carrier female, each with matching chromosome icons and colored by affected status." longdesc="At top, an unaffected male (labeled XY) carries a dominant allele on one chromosome icon; an unaffected carrier female (labeled XX) carries an X-linked recessive allele on one of her two X chromosome icons. A legend defines orange as affected, light blue as unaffected, and half-orange/half-blue as carrier. Arrows fan down from the parents to four offspring, left to right: an unaffected male (blue), an unaffected female (blue), an affected male (orange), and an unaffected carrier female (half orange, half blue), each shown with a small chromosome-pair icon matching its genotype." >}}
+{{< mediafigure src="biology/Figure_13_01_05-1b57" kind="diagram" alt="A diagram titled X-Linked Disorders showing an unaffected male and an unaffected carrier female as parents, each with a small chromosome icon, and their four possible offspring below: an unaffected male, an unaffected female, an affected male, and an unaffected carrier female, each with matching chromosome icons and colored by affected status." longdesc="At top, an unaffected male (labeled XY) carries a dominant allele on one chromosome icon; an unaffected carrier female (labeled XX), drawn half orange and half blue, carries a blue dominant allele on one X chromosome icon and a red X-linked recessive allele on the other. A legend defines orange as affected, light blue as unaffected, and half-orange/half-blue as carrier. Arrows fan down from the parents to four offspring, left to right: an unaffected male (blue, XY), an unaffected female (blue, XX), an affected male (orange, XY, his X carrying the red recessive allele), and an unaffected carrier female (half orange, half blue, XX with one blue and one red allele), each shown with a small chromosome-pair icon. From the father, gray arrows (his Y) go to both sons and blue arrows (his X with the dominant allele) go to both daughters; from the mother, blue arrows (her unaffected X) go to the unaffected son and unaffected daughter, and red arrows (her X with the recessive allele) go to the affected son and the carrier daughter." >}}
 The male offspring of a person who is a carrier of a recessive X-linked disorder will have a 50 percent chance of being affected. A female will not be affected, but she will have a 50 percent chance of being a carrier like the female parent.
 {{< /mediafigure >}}
 
@@ -221,10 +221,17 @@ Alleles do not always behave in dominant and recessive patterns. Incomplete domi
 
 ### Explain the relationship between genotypes and phenotypes in dominant and recessive gene systems
 
+{{< textin
+  question="Having two different alleles for a given gene on the homologous chromosome describes an organism that is ________ for that gene."
+  answer="heterozygous"
+  accept="heterozygote"
+  hint="Reread the first sentence of the section summary."
+>}}
+
 {{< multiplechoice
   question="The observable traits expressed by an organism are described as its ________."
   answer="phenotype"
-  hint="This is what you can observe and measure about an organism, as opposed to its underlying combination of alleles."
+  hint="Reread the section's opening paragraphs."
 >}}
 phenotype
 genotype
@@ -235,7 +242,7 @@ zygote
 {{< multiplechoice
   question="A recessive trait will be observed in individuals that are ________ for that trait."
   answer="homozygous"
-  hint="A recessive allele's effect is masked whenever a dominant allele is present on the other homologous chromosome."
+  hint="Reread the paragraph just before the human-inheritance table."
 >}}
 heterozygous
 homozygous or heterozygous
@@ -243,7 +250,25 @@ homozygous
 diploid
 {{< /multiplechoice >}}
 
-{{< selfcheck question="The gene for flower position in pea plants exists as axial or terminal alleles. Given that axial is dominant to terminal, list all of the possible F₁ and F₂ genotypes and phenotypes from a cross involving parents that are homozygous for each trait. Express genotypes with conventional genetic abbreviations." hint="List every possible allele combination for a monohybrid cross of two heterozygotes, then match each genotype to its phenotype using the dominant/recessive rule." >}}
+{{< sortbins question="Sort each human condition or trait by the inheritance pattern the section's table lists it under." hint="Use the table of human traits inherited in dominant and recessive patterns." >}}
+{
+  "bins": ["Dominant Traits", "Recessive Traits"],
+  "items": [
+    { "label": "Achondroplasia", "bin": 0 },
+    { "label": "Cystic fibrosis", "bin": 1 },
+    { "label": "Albinism", "bin": 1 },
+    { "label": "Huntington’s disease", "bin": 0 },
+    { "label": "Marfan syndrome", "bin": 0 },
+    { "label": "Sickle-cell anemia", "bin": 1 },
+    { "label": "Neurofibromatosis", "bin": 0 },
+    { "label": "Tay-Sachs disease", "bin": 1 }
+  ]
+}
+{{< /sortbins >}}
+
+### Develop a Punnett square to calculate the expected proportions of genotypes and phenotypes in a monohybrid cross
+
+{{< selfcheck question="The gene for flower position in pea plants exists as axial or terminal alleles. Given that axial is dominant to terminal, list all of the possible F₁ and F₂ genotypes and phenotypes from a cross involving parents that are homozygous for each trait. Express genotypes with conventional genetic abbreviations." hint="Reread the Punnett-square discussion of the Yy self-cross." >}}
 Because axial is dominant, the gene would be designated as *A*. F₁ would be all heterozygous *Aa* with axial phenotype. F₂ would have possible genotypes of *AA*, *Aa*, and *aa*; these would correspond to axial, axial, and terminal phenotypes, respectively.
 ===CHECKS===
 because axial is dominant, the gene would be designated as A
@@ -252,16 +277,7 @@ F₂ would have possible genotypes of AA, Aa, and aa
 these would correspond to axial, axial, and terminal phenotypes, respectively
 {{< /selfcheck >}}
 
-{{< textin
-  question="Having two different alleles for a given gene on the homologous chromosome describes an organism that is ________ for that gene."
-  answer="heterozygous"
-  accept="heterozygote"
-  hint="This is the genotype that Mendel's F₁ hybrid offspring all shared for the trait being crossed."
->}}
-
-### Develop a Punnett square to calculate the expected proportions of genotypes and phenotypes in a monohybrid cross
-
-{{< selfcheck question="Use a Punnett square to predict the offspring in a cross between a dwarf pea plant (homozygous recessive) and a tall pea plant (heterozygous). What is the phenotypic ratio of the offspring?" hint="The dwarf parent is homozygous recessive, so every gamete it contributes carries the same allele." >}}
+{{< selfcheck question="Use a Punnett square to predict the offspring in a cross between a dwarf pea plant (homozygous recessive) and a tall pea plant (heterozygous). What is the phenotypic ratio of the offspring?" hint="Reread The Punnett Square Approach for a Monohybrid Cross and its figure." >}}
 The Punnett square would be 2 × 2 and will have *t* and *t* along the top, and *T* and *t* along the left side. Clockwise from the top left, the genotypes listed within the boxes will be *Tt*, *Tt*, *tt*, and *tt*. The phenotypic ratio will be 1 tall:1 dwarf.
 ===CHECKS===
 the Punnett square would be 2 × 2
@@ -271,20 +287,36 @@ the phenotypic ratio will be 1 tall:1 dwarf
 {{< /selfcheck >}}
 
 {{< textin
-  question="A visual representation of a genetic cross, in which the gametes of each parent are listed along the top and side of a grid and the possible offspring genotypes are recombined at each box, is called a ________."
-  answer="Punnett square"
-  hint="It was devised by the British geneticist Reginald Punnett."
->}}
-
-{{< textin
-  question="The result of a cross between two true-breeding parents that differ in only one characteristic is called a ________ cross."
-  answer="monohybrid"
-  hint="Mendel performed seven of these crosses, one for each pea-plant characteristic he studied."
+  question="A gene variant that arises by mutation and exists at the same relative location on homologous chromosomes is called a(n) ________."
+  answer="allele"
+  hint="Reread the section's second opening paragraph."
 >}}
 
 ### Explain the purpose and methods of a test cross
 
-{{< selfcheck question="Why is it more efficient to perform a test cross with a homozygous recessive donor than a homozygous dominant donor? How could the same information still be found with a homozygous dominant donor?" hint="Compare how many additional generations each donor's cross would require before the unknown parent's genotype could be read directly from the offspring's phenotype." >}}
+{{< multiplechoice
+  question="In a test cross, the organism expressing a dominant phenotype is crossed with an organism that is ________ for the same characteristic."
+  answer="homozygous recessive"
+  hint="Reread the test-cross paragraph."
+>}}
+heterozygous
+homozygous dominant
+homozygous recessive
+hemizygous
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="In a test cross, if the dominant-expressing organism is a homozygote, what will all of the F₁ offspring be?"
+  answer="heterozygotes expressing the dominant trait"
+  hint="Reread the test-cross paragraph."
+>}}
+homozygotes expressing the recessive trait
+heterozygotes expressing the dominant trait
+homozygotes expressing the dominant trait
+heterozygotes expressing the recessive trait
+{{< /multiplechoice >}}
+
+{{< selfcheck question="Why is it more efficient to perform a test cross with a homozygous recessive donor than a homozygous dominant donor? How could the same information still be found with a homozygous dominant donor?" hint="Reread the test-cross paragraph and its figure." >}}
 Using a homozygous recessive donor is more efficient because the genotype of the unknown parent can be determined in a single generation. If a homozygous dominant donor was used, the unknown genotype could still be determined. Instead of knowing the unknown genotype through the F₁ phenotype, the F₁ offspring would have to be self-crossed (as Mendel allowed his pea plants to self-pollinate) and the F₂ generation phenotypes would be used to determine the unknown F₀ genotype.
 ===CHECKS===
 using a homozygous recessive donor is more efficient because the genotype of the unknown parent can be determined in a single generation
@@ -293,30 +325,12 @@ the F₁ offspring would have to be self-crossed
 the F₂ generation phenotypes would be used to determine the unknown F₀ genotype
 {{< /selfcheck >}}
 
-{{< textin
-  question="A cross between a dominant-expressing individual of unknown genotype and a homozygous recessive individual, used to reveal whether the unknown parent is heterozygous or homozygous, is called a ________."
-  answer="test cross"
-  accept="testcross"
-  hint="Mendel used this technique to distinguish a homozygous dominant individual from a heterozygous one."
->}}
-
-{{< multiplechoice
-  question="In a test cross, the organism expressing a dominant phenotype is crossed with an organism that is ________ for the same characteristic."
-  answer="homozygous recessive"
-  hint="The cross partner's genotype needs to already be certain, so both of its alleles must be the recessive, non-expressed form."
->}}
-heterozygous
-homozygous dominant
-homozygous recessive
-hemizygous
-{{< /multiplechoice >}}
-
 ### Identify non-Mendelian inheritance patterns such as incomplete dominance, codominance, recessive lethals, multiple alleles, and sex linkage
 
 {{< multiplechoice
   question="If black and white true-breeding mice are mated and the result is all gray offspring, what inheritance pattern would this be indicative of?"
   answer="incomplete dominance"
-  hint="The offspring phenotype falls between the two parental phenotypes rather than matching one of them exactly."
+  hint="Reread the first subsection of Alternatives to Dominance and Recessiveness."
 >}}
 dominance
 codominance
@@ -327,7 +341,7 @@ incomplete dominance
 {{< multiplechoice
   question="The ABO blood groups in humans are expressed as the I<sup>A</sup>, I<sup>B</sup>, and *i* alleles. The I<sup>A</sup> allele encodes the A blood group antigen, I<sup>B</sup> encodes B, and *i* encodes O. Both A and B are dominant to O. If a heterozygous blood type A parent (I<sup>A</sup>*i*) and a heterozygous blood type B parent (I<sup>B</sup>*i*) mate, one quarter of their offspring will have AB blood type (I<sup>A</sup>I<sup>B</sup>) in which both antigens are expressed equally. Therefore, ABO blood groups are an example of:"
   answer="multiple alleles and codominance"
-  hint="Notice that more than two alleles exist in the population for this gene, and that the heterozygote expresses both alleles rather than one masking the other."
+  hint="Reread the second and third subsections of Alternatives to Dominance and Recessiveness."
 >}}
 multiple alleles and incomplete dominance
 codominance and incomplete dominance
@@ -338,7 +352,7 @@ multiple alleles and codominance
 {{< multiplechoice
   question="In a mating between two individuals that are heterozygous for a recessive lethal allele that is expressed *in utero*, what genotypic ratio (homozygous dominant:heterozygous:homozygous recessive) would you expect to observe in the offspring?"
   answer="1:2:0"
-  hint="The homozygous recessive class dies before it can be counted among the born offspring, so it drops out of the ratio rather than appearing as a fraction."
+  hint="Reread Lethality."
 >}}
 1:2:1
 3:1:1
@@ -349,7 +363,7 @@ multiple alleles and codominance
 {{< multiplechoice
   question="If the allele encoding polydactyly (six fingers) is dominant why do most people have five fingers?"
   answer="The polydactyl allele is very rare in the human population."
-  hint="Consider how common the allele itself would have to be in the population for most people to show it, regardless of dominance."
+  hint="Reread the paragraph just before the human-inheritance table, and the table."
 >}}
 Genetic elements suppress the polydactyl gene.
 Polydactyly is embryonic lethal.
@@ -360,7 +374,7 @@ The polydactyl allele is very rare in the human population.
 {{< multiplechoice
   question="A farmer raises black and white chickens. To his surprise, when the first generation of eggs hatch all the chickens are black with white speckles throughout their feathers. What should the farmer expect when the eggs laid after interbreeding the speckled chickens hatch?"
   answer="50% of the offspring will be speckled, 25% will be black, and 25% will be white."
-  hint="The all-speckled F₁ generation is a clue to the inheritance pattern; work out what a self-cross of two speckled (heterozygous) individuals would produce."
+  hint="Reread the first two subsections of Alternatives to Dominance and Recessiveness."
 >}}
 All the offspring will be speckled.
 75% of the offspring will be speckled, and 25% will be black.
@@ -368,7 +382,7 @@ All the offspring will be speckled.
 50% of the offspring will be black and 50% of the offspring will be white.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Can a human male be a carrier of red-green color blindness?" hint="A human male has only one X chromosome, so consider what 'carrier' would require for an X-linked recessive trait." >}}
+{{< selfcheck question="Can a human male be a carrier of red-green color blindness?" hint="Reread X-Linked Traits and Human Sex-linked Disorders." >}}
 No, males can only express color blindness. They cannot carry it because an individual needs two X chromosomes to be a carrier.
 ===CHECKS===
 males can only express color blindness
@@ -379,9 +393,9 @@ they cannot carry it because an individual needs two X chromosomes to be a carri
   question="Having only one allele for a characteristic, as in the X-linked genes of an XY male, is described as being ________ for that characteristic."
   answer="hemizygous"
   accept="hemizygote"
-  hint="This describes a male's relationship to any gene located on the X chromosome, since he has only one copy."
+  hint="Reread X-Linked Traits."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 12.2: Characteristics and Traits](https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; five figures re-kinded from the manifest's file-extension guess after inspection (photo → diagram for the pedigree, the rabbit allele chart, the sex-linked Punnett square, and the X-linked-disorders diagram, all drawn illustrations rather than photographs; diagram → photo for the malaria mosquito-and-parasite pair, which is two photographs); letter-spaced, screen-reader-style source alts on the monohybrid-cross flow chart, the pedigree, the rabbit allele chart, and the sex-linked Punnett square rewritten to plain descriptions, and the test-cross diagram's and the X-linked-disorders diagram's plain source alts likewise rewritten to say what each figure shows — each of these six given a longdesc that walks its bands, arrows, grid cells, and labels in reading order; the malaria evolution-connection footnote citing Vinayak et al. (2010) kept as a parenthetical after the sentence it supports; the two feature boxes rendered as callouts (Evolution Connection, Link to Learning) with their titles kept; the three Visual Connection questions rendered as a mediafigure immediately followed by a self-check, in place in the body, rather than moved to the closing Practice block; wild-type "+" alleles set as the Unicode ⁺ superscript and every other allele superscript (X<sup>W</sup>, I<sup>A</sup>, c<sup>ch</sup>, and so on) set as an HTML superscript without the source's italics; the CNXML table transcribed as a Markdown table with its title set as a bold line above it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); five key-term recall items (heterozygous, Punnett square, monohybrid, test cross, hemizygous) added from the glossary; and two source defects corrected: the dwarf-by-tall Critical Thinking solution's Punnett square axis label ("T and T along the top") corrected to "t and t," matching both the dwarf parent's homozygous-recessive genotype and the solution's own listed offspring genotypes, and a typo in the sex-linked-ratio Visual Connection solution ("withe red yes") corrected to "with red eyes" — both reported as source defects; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one additional multiple choice written locally, strictly from the section's own sentence defining a test cross's homozygous recessive partner, since the module's Review and Critical Thinking Questions were already fully used and its section summary does not mention test crosses, leaving the third objective ("Explain the purpose and methods of a test cross") with only two Practice items — disclosed in the ledger.</small>
+<small>This section is adapted from [Biology 2e, Section 12.2: Characteristics and Traits](https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; five figures re-kinded from the manifest's file-extension guess after inspection (photo → diagram for the pedigree, the rabbit allele chart, the sex-linked Punnett square, and the X-linked-disorders diagram, all drawn illustrations rather than photographs; diagram → photo for the malaria mosquito-and-parasite pair, which is two photographs); letter-spaced, screen-reader-style source alts on the monohybrid-cross flow chart, the pedigree, the rabbit allele chart, and the sex-linked Punnett square rewritten to plain descriptions, and the test-cross diagram's and the X-linked-disorders diagram's plain source alts likewise rewritten to say what each figure shows — each of these six given a longdesc that walks its bands, arrows, grid cells, and labels in reading order; the malaria evolution-connection footnote citing Vinayak et al. (2010) kept as a parenthetical after the sentence it supports; the two feature boxes rendered as callouts (Evolution Connection, Link to Learning) with their titles kept; the three Visual Connection questions rendered as a mediafigure immediately followed by a self-check, in place in the body, rather than moved to the closing Practice block; wild-type "+" alleles set as the Unicode ⁺ superscript and every other allele superscript (X<sup>W</sup>, I<sup>A</sup>, c<sup>ch</sup>, and so on) set as an HTML superscript without the source's italics; the CNXML table transcribed as a Markdown table with its title set as a bold line above it; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); one sort-into-bins exercise added under the genotype-and-phenotype objective, its eight items and their bins taken from the human-inheritance table's own cells (tab-ch12-02-01); three key-term recall items (heterozygous, allele, hemizygous) added from the glossary — none for Punnett square, monohybrid, or test cross, because the objective headings print those terms; and two source defects corrected: the dwarf-by-tall Critical Thinking solution's Punnett square axis label ("T and T along the top") corrected to "t and t," matching both the dwarf parent's homozygous-recessive genotype and the solution's own listed offspring genotypes, and a typo in the sex-linked-ratio Visual Connection solution ("withe red yes") corrected to "with red eyes" — both reported as source defects; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and two additional multiple choices written locally under the third objective ("Explain the purpose and methods of a test cross"), strictly from the section's own test-cross paragraph (the homozygous recessive partner, and the all-heterozygote offspring of a homozygous dominant-expressing parent), since the module's Review and Critical Thinking Questions were already fully used and its section summary does not mention test crosses — disclosed in the ledger; the flower-position Critical Thinking question is placed under the Punnett-square objective, keeping the source order of the Critical Thinking Questions.</small>

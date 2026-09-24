@@ -206,6 +206,12 @@ What is specific to a unit-level check:
   is built from a different sentence of the module, checked by a second
   Sonnet against the CNXML and the section page (body self-checks
   included), and blind-solved before it is ledgered like any other item.
+  The September 22, 2026 Opus sweep of all thirteen life-sciences checks
+  still replaced about 50 duplicate asks (the largest class there), some
+  of them created by later edits to the section pages the checks had been
+  read against: a section-page edit re-opens the reverse-recall read for
+  that section's check items, and a replacement keeps its item's type (a
+  `textin` is replaced by a `textin` from another sentence).
 - **Format tells.** The key must sit in the distractors' case, length band,
   and grammatical form: not the only capitalised option (`Kuru` beside
   lowercase diseases), not the only one without a parenthetical, not the
@@ -256,10 +262,12 @@ What is specific to a unit-level check:
   rule bars a cloze from blanking the abbreviation of a name the stem
   itself already prints ("...Act of 2008, abbreviated ________" when the
   stem has already spelled out the initials it wants back); ask for the
-  full name instead, or blank a different fact. Grep the whole assembled
-  page for every key and accept after every replacement round, not just
-  once before settling a replacement: block 4's late replacements leaked
-  into other items' stems twice.
+  full name instead, or blank a different fact. The spelled-out-before-the-
+  blank shape is a lint error since September 22, 2026, and so is a `textin`
+  whose key the item directly above it in its `### N.M` section prints. Grep
+  the whole assembled page for every key and accept after every replacement
+  round, not just once before settling a replacement: block 4's late
+  replacements leaked into other items' stems twice.
 - The attribution footer follows the section-page form (licence, deep link
   to the source book, and a `Changes:` clause stating that every item is
   locally written from the named chapters' modules).
@@ -295,13 +303,22 @@ item on it). A term whose only source is a known defect is not an anchor.
 Read every distractor against the book's OTHER chapters too: chapter 16
 frames p53 as a transcription factor, chapter 10 as a G1-checkpoint
 regulator, and "a cell-cycle checkpoint protein" was a second key by the
-book's own framing until it was replaced.
+book's own framing until it was replaced. The same holds for a `textin`
+descriptor: grep the whole unit for a second thing it describes, and pin
+the stem to the one referent *(September 23, 2026: "the carrier derived
+from riboflavin" keyed FAD, but Biology 7.4 derives FMN from vitamin B₂
+too)*.
 
 ## Verify
 
 The biology triple check applies unchanged: author, then an independent
-Sonnet checker, then the orchestrator answers every graded item with the
-keys hidden.
+checker (on Opus since September 22, 2026 — the life-sciences
+"Independent checker" rule), then the orchestrator answers every graded
+item with the keys hidden. The checker answers each item with its key
+covered before comparing, and runs every natural variant of each `textin`
+key through the grader: the September 22 sweep found 11 double-keyed
+items and about 20 accept gaps in checks that had passed a Sonnet
+checker and the blind solve.
 
 1. Reconcile the chapter/section headings against the authored book and the
    source ledger. Every section in the unit must be represented, at the

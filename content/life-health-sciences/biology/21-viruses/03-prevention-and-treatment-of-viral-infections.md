@@ -18,7 +18,7 @@ weight: 3
 
 Viruses cause a variety of diseases in animals, including humans, ranging from the common cold to potentially fatal illnesses like meningitis. These diseases can be treated by antiviral drugs or by vaccines; however, some viruses, such as HIV, are capable both of avoiding the immune response and of mutating within the host organism to become resistant to antiviral drugs.
 
-{{< mediafigure src="biology/Figure_21_03_01-70a3" kind="diagram" eager="true" alt="A diagram of a human body silhouette with labeled call-out lines to body regions — the brain, eyes, nose, throat, lungs, heart, liver, skin, digestive tract, spinal cord, and reproductive organs — each listing the viruses that cause disease there, under the heading 'Overview of Viral Infections.'" longdesc="A human body outline under the banner 'Overview of Viral Infections,' with labeled lines running from named conditions to the body region each affects. At the head: 'Encephalitis/meningitis' (JC virus, measles, LCM virus, arbovirus, rabies) and 'Common cold' (rhinoviruses, parainfluenza virus, respiratory syncytial virus) point to the brain and nose; 'Eye infections' (herpes simplex virus, adenovirus, cytomegalovirus) point to the eyes; 'Pharyngitis' (adenovirus, Epstein-Barr virus, cytomegalovirus) and 'Gingivostomatitis' (herpes simplex type 1) point to the throat and mouth; 'Parotitis' (mumps virus) points to the neck. At the torso: 'Pneumonia' (influenza virus types A and B, parainfluenza virus, respiratory syncytial virus, adenovirus, SARS coronavirus) points to the lungs; 'Cardiovascular' (coxsackie B virus) points to the heart; 'Hepatitis' (hepatitis virus types A, B, C, D, and E) points to the liver; 'Skin infections' (varicella-zoster virus, human herpesvirus 6, smallpox, molluscum contagiosum, human papillomavirus, parvovirus B19, rubella, measles, coxsackie A virus) points to a rash on the arm; 'Myelitis' (poliovirus, HTLV-I) points to the spinal cord; 'Gastroenteritis' (adenovirus, rotavirus, norovirus, astrovirus, coronavirus) and 'Pancreatitis' (coxsackie B virus) point to the digestive tract; 'Sexually transmitted diseases' (herpes simplex type 2, human papillomavirus, HIV) points to the reproductive organs." >}}
+{{< mediafigure src="biology/Figure_21_03_01-70a3" kind="diagram" eager="true" alt="A diagram of a human body silhouette with labeled call-out lines to body regions — the brain, eyes, upper airway, throat, lungs, heart, liver, skin, digestive tract, and spinal cord — each listing the viruses that cause disease there, plus a list of sexually transmitted diseases with no call-out line, under the heading 'Overview of Viral Infections.'" longdesc="A human body outline under the banner 'Overview of Viral Infections,' with labeled lines running from named conditions to the body region each affects. At the head: 'Encephalitis/meningitis' (JC virus, measles, LCM virus, arbovirus, rabies) and 'Common cold' (rhinoviruses, parainfluenza virus, respiratory syncytial virus) point to the brain and the top of the airway; 'Eye infections' (herpes simplex virus, adenovirus, cytomegalovirus) point to the eyes; 'Pharyngitis' (adenovirus, Epstein-Barr virus, cytomegalovirus) and 'Gingivostomatitis' (herpes simplex type 1) point to the throat and mouth; 'Parotitis' (mumps virus) points to the neck. At the torso: 'Pneumonia' (influenza virus types A and B, parainfluenza virus, respiratory syncytial virus, adenovirus, SARS coronavirus) points to the lungs; 'Cardiovascular' (coxsackie B virus) points to the heart; 'Hepatitis' (hepatitis virus types A, B, C, D, and E) points to the liver; 'Skin infections' (varicella-zoster virus, human herpesvirus 6, smallpox, molluscum contagiosum, human papillomavirus, parvovirus B19, rubella, measles, coxsackie A virus) points to a rash on the arm; 'Myelitis' (poliovirus, HTLV-I) points to the spinal cord; 'Gastroenteritis' (adenovirus, rotavirus, norovirus, astrovirus, coronavirus) and 'Pancreatitis' (coxsackie B virus) point to the digestive tract; 'Sexually transmitted diseases' (herpes simplex type 2, human papillomavirus, HIV) sits below the abdomen with no call-out line; the drawing ends at the hips." >}}
 A sampling of human viruses. Viruses can cause dozens of ailments in humans, ranging from mild illnesses to serious diseases. (credit: modification of work by Mikael Häggström)
 {{< /mediafigure >}}
 
@@ -48,7 +48,7 @@ Another way of treating viral infections is the use of antiviral drugs. Because 
 
 Antivirals have been developed to treat genital herpes (herpes simplex II) and influenza. For genital herpes, drugs such as acyclovir, developed by Elion, can reduce the number and duration of episodes of active viral disease, during which patients develop viral lesions in their skin cells. As the virus remains latent in nervous tissue of the body for life, this drug is not curative but can make the symptoms of the disease more manageable. For influenza, drugs like Tamiflu (oseltamivir) can reduce the duration of "flu" symptoms by one or two days, but the drug does not prevent symptoms entirely. Tamiflu works by inhibiting an enzyme (viral neuraminidase) that allows new virions to leave their infected cells. Thus, Tamiflu inhibits the spread of virus from infected to uninfected cells. Other antiviral drugs, such as Ribavirin, have been used to treat a variety of viral infections, although its mechanism of action against certain viruses remains unclear.
 
-{{< mediafigure src="biology/Figure_21_03_03ab" kind="diagram" alt="Two-panel diagram. Panel (a) is a cutaway model of an influenza virus studded with blue-capped HA and green NA surface proteins, with a key labeling each. Panel (b) shows a new virion budding from an infected host cell, with a red X marking the release step that Tamiflu blocks." longdesc="Panel (a): a spherical influenza virus drawn in cutaway, its brown envelope cut open to show yellow coiled genome segments and grey spheres inside; the outside is covered in HA (hemagglutinin) spikes, each a blue mushroom-shaped cap on a red stalk, and fewer green T-shaped NA (neuraminidase) spikes. A small key to the right labels one blue-capped red spike 'HA' and one green spike 'NA.' Panel (b): a peach-colored oval host cell with a purple nucleus containing purple squiggles of viral genome. Three virions, each a purple circle ringed with small orange and blue spikes, appear at three positions: one inside the cytoplasm at lower right beside a scatter of small orange dots (new viral components), one budding outward through the cell membrane at upper right, and one fully outside the cell above it. A black arrow runs from the budding virion up toward the free virion, and a large red X crosses that arrow to show neuraminidase inhibition blocking the virus from being released." >}}
+{{< mediafigure src="biology/Figure_21_03_03ab" kind="diagram" alt="Two-panel diagram. Panel (a) is a cutaway model of an influenza virus studded with blue-capped HA and green NA surface proteins, with a key labeling each. Panel (b) shows a new virion budding from an infected host cell, with a red X marking the release step that Tamiflu blocks." longdesc="Panel (a): a spherical influenza virus drawn in cutaway, its brown envelope cut open to show yellow coiled genome segments and grey spheres inside; the outside is covered in HA (hemagglutinin) spikes, each a blue mushroom-shaped cap on a red stalk, and fewer green T-shaped NA (neuraminidase) spikes. Two small, unlabeled dark-green hexagons float just outside the virus at its lower right. A small key to the right labels one blue-capped red spike 'HA' and one green spike 'NA.' Panel (b): a peach-colored oval host cell with a purple nucleus containing purple squiggles of viral genome. Three virions, each a purple circle ringed with small orange and blue spikes, appear at three positions: one inside the cytoplasm at lower right beside a scatter of small orange dots (new viral components), one budding outward through the cell membrane at upper right, and one fully outside the cell above it. A black arrow runs from the budding virion up toward the free virion, and a large red X crosses that arrow to show neuraminidase inhibition blocking the virus from being released." >}}
 Action of an antiviral drug. (a) Tamiflu inhibits a viral enzyme called neuraminidase (NA) found in the influenza viral envelope. (b) Neuraminidase cleaves the connection between viral hemagglutinin (HA), also found in the viral envelope, and glycoproteins on the host cell surface. Inhibition of neuraminidase prevents the virus from detaching from the host cell, thereby blocking further infection. (credit a: modification of work by M. Eickmann)
 {{< /mediafigure >}}
 
@@ -92,13 +92,20 @@ Viruses cause a variety of diseases in humans. Many of these diseases can be pre
 {{< multiplechoice
   question="A patient presents at the clinic with an acute viral infection. Assays that analyze the viral life cycle classify the virus into Group V with a segmented genome. Which virus is the most likely diagnosis for the patient?"
   answer="Influenza A virus"
-  hint="Baltimore Group V viruses carry negative-sense single-stranded RNA; among these four, only one packages its genome in multiple separate segments."
+  hint="Section 21.1 describes the Baltimore groups and has a genome-structure table with a row for segmented genomes; use both clues from the stem."
 >}}
 Rabies virus
 Picornavirus
 HIV-1
 Influenza A virus
 {{< /multiplechoice >}}
+
+{{< textin
+  question="Viruses cause a variety of ________ in humans, according to the section summary."
+  answer="diseases"
+  accept="illnesses|ailments"
+  hint="The opening sentence of the section summary names what viruses cause."
+>}}
 
 {{< multiplechoice
   question="According to this section, which viral disease is transmitted by bats and great apes and can cause death in 70 to 90 percent of infected humans within two weeks?"
@@ -111,19 +118,12 @@ Ebola
 Influenza
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Viruses cause a variety of ________ in humans, according to the section summary."
-  answer="diseases"
-  accept="disease"
-  hint="The opening sentence of the section summary names what viruses cause."
->}}
-
 ### Compare vaccinations and anti-viral drugs as medical approaches to viruses
 
 {{< multiplechoice
   question="Which of the following is NOT used to treat active viral disease?"
   answer="Antibiotics"
-  hint="This section names vaccines and antiviral drugs — acyclovir among them — as treatments for active viral infection; one option does not act on viruses at all."
+  hint="Check each option against the treatments described under Vaccines and Antiviral Drugs for Treatment."
 >}}
 Vaccines
 Antiviral drugs
@@ -160,12 +160,6 @@ the vaccine also controls the spread of disease
 {{< /selfcheck >}}
 
 {{< textin
-  question="A weakened preparation of virus components, viruses, or other agents that produces an immune response is called a ________."
-  answer="vaccine"
-  hint="It may be made from live, killed, or subunit forms of a pathogen."
->}}
-
-{{< textin
   question="The deliberate weakening of a virus during vaccine development is called ________."
   answer="attenuation"
   accept="attenuating"
@@ -192,12 +186,18 @@ the vaccine also controls the spread of disease
 >}}
 
 {{< textin
+  question="A weakened preparation of virus components, viruses, or other agents that produces an immune response is called a ________."
+  answer="vaccine"
+  hint="It may be made from live, killed, or subunit forms of a pathogen."
+>}}
+
+{{< textin
   question="Treating a bacterial infection with viruses that target one specific type of bacterium is called ________."
   answer="phage therapy"
-  accept="phage therapies"
+  accept="phage therapies|bacteriophage therapy|bacteriophage therapies"
   hint="This is in use in the Republic of Georgia, and it was confirmed safe when the FDA approved spraying it on meats to destroy Listeria."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 21.3: Prevention and Treatment of Viral Infections](https://openstax.org/books/biology-2e/pages/21-3-prevention-and-treatment-of-viral-infections) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_21_03_01-70a3 and Figure_21_03_04-16dd re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are labeled illustrations, not photographs), and Figure_21_03_03ab likewise re-kinded to "diagram"; the source alt text for Figure_21_03_01-70a3 and Figure_21_03_04-16dd, each well over 600 characters, shortened to a concise alt with the full labeled walk-through moved into a `longdesc`; the source alt for Figure_21_03_03ab rewritten from the image (the source alt does not name the surface proteins the key labels) and a `longdesc` added, since panel (b)'s blocked-release step is not carried by its caption; the two feature boxes (the interactive note and the everyday note) rendered as, respectively, a Link to Learning callout with descriptive link text and an Everyday Connection callout keeping its title; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); one locally written multiple choice (Ebola transmission and fatality rate) added under the first objective, built strictly from the section's own sentence, since only one source Review Question maps to that objective; one summary-derived text-recall item (diseases) added under the first objective from the section summary's opening sentence; six key-term recall items (vaccine, attenuation, back mutation, gene therapy, oncolytic virus, phage therapy) added from the glossary under the second objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the rabies self-check's model answer corrected from "a week" to "two weeks or longer" for the time a rabies infection takes to reach the central nervous system, matching what the section's own body text states, rather than the shorter figure printed in the source solution (reported as a source defect); in the same Review Question set, the "NOT used to treat active viral disease" item's distractor "Phage therapy" replaced with "Acyclovir," because the section itself presents phage therapy as a treatment for bacterial, not viral, infection — leaving the source item with two supportable answers — while acyclovir is named in the section as a drug against active viral disease (reported as a source defect); and the "back mutation" key term's "it disease-causing phenotype" corrected to "its" (reported as a source defect). One name is corrected with a visible Source note: George Hitchings, Elion's Nobel co-laureate, where the source prints "Hitchens" (erratum 413).</small>
+<small>This section is adapted from [Biology 2e, Section 21.3: Prevention and Treatment of Viral Infections](https://openstax.org/books/biology-2e/pages/21-3-prevention-and-treatment-of-viral-infections) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_21_03_01-70a3 and Figure_21_03_04-16dd re-kinded from the manifest's file-extension "photo" guess to "diagram" (both are labeled illustrations, not photographs), and Figure_21_03_03ab likewise re-kinded to "diagram"; the source alt text for Figure_21_03_01-70a3 and Figure_21_03_04-16dd, each well over 600 characters, shortened to a concise alt with the full labeled walk-through moved into a `longdesc`; the source alt for Figure_21_03_03ab rewritten from the image (the source alt does not name the surface proteins the key labels) and a `longdesc` added, since panel (b)'s blocked-release step is not carried by its caption; the two feature boxes (the interactive note and the everyday note) rendered as, respectively, a Link to Learning callout with descriptive link text and an Everyday Connection callout keeping its title; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each under the objective it tests, so the Group V diagnosis question, third in the source, comes first; one locally written multiple choice (Ebola transmission and fatality rate) added under the first objective, built strictly from the section's own sentence, since only one source Review Question maps to that objective; one summary-derived text-recall item (diseases) added under the first objective from the section summary's opening sentence; six key-term recall items (vaccine, attenuation, back mutation, gene therapy, oncolytic virus, phage therapy) added from the glossary under the second objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; the rabies self-check's model answer corrected from "a week" to "two weeks or longer" for the time a rabies infection takes to reach the central nervous system, matching what the section's own body text states, rather than the shorter figure printed in the source solution (reported as a source defect); in the same Review Question set, the "NOT used to treat active viral disease" item's distractor "Phage therapy" replaced with "Acyclovir," because the section itself presents phage therapy as a treatment for bacterial, not viral, infection — leaving the source item with two supportable answers — while acyclovir is named in the section as a drug against active viral disease (reported as a source defect); and the "back mutation" key term's "it disease-causing phenotype" corrected to "its" (reported as a source defect). One name is corrected with a visible Source note: George Hitchings, Elion's Nobel co-laureate, where the source prints "Hitchens" (erratum 413).</small>

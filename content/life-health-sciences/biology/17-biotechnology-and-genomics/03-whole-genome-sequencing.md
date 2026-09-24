@@ -24,11 +24,11 @@ For example, whole-exome sequencing is a lower-cost alternative to whole genome 
 
 The basic sequencing technique used in all modern day sequencing projects is the chain termination method (also known as the dideoxy method), which Fred Sanger developed in the 1970s. The chain termination method involves DNA replication of a single-stranded template by using a primer and a regular **deoxynucleotide** (dNTP), which is a monomer, or a single DNA unit. The primer and dNTP mix with a small proportion of fluorescently labeled **dideoxynucleotides** (ddNTPs). The ddNTPs are monomers that are missing a hydroxyl group (–OH) at the site at which another nucleotide usually attaches to form a chain (below). Scientists label each ddNTP with a different color of fluorophore. Every time a ddNTP incorporates in the growing complementary strand, it terminates the DNA replication process, which results in multiple short strands of replicated DNA that each terminate at a different point during replication. When gel electrophoresis processes the reaction mixture after separating into single strands, the multiple newly replicated DNA strands form a ladder because of the differing sizes. Because the ddNTPs are fluorescently labeled, each band on the gel reflects the DNA strand's size and the ddNTP that terminated the reaction. The different colors of the fluorophore-labeled ddNTPs help identify the ddNTP incorporated at that position. Reading the gel on the basis of each band's color on the ladder produces the template strand's sequence (below).
 
-{{< mediafigure src="biology/Figure_17_03_01-a947" kind="diagram" eager="true" alt="Two labeled diagrams comparing a dideoxynucleotide's and a deoxynucleotide's sugar-phosphate structure. Both show three phosphate groups linked through the sugar to a Base, differing only in the boxed group at the ring's 3′ carbon: H in the dideoxynucleotide, OH in the deoxynucleotide." longdesc="Two identical five-membered sugar-ring diagrams, stacked vertically, each with a chain of three phosphate groups (P–P–P) at the left, linked through OCH₂ to the ring's upper-left carbon. A bond from the ring's upper-right carbon leads out to a Base label, and plain H atoms mark two other ring carbons. A highlighted box at the ring's lower carbon marks the 3′ position. Top diagram, labeled 'Dideoxynucleotide (ddNTP)': the boxed 3′ group is H. Bottom diagram, labeled 'Deoxynucleotide (dNTP)': the boxed 3′ group is OH — the one difference between the two structures." >}}
+{{< mediafigure src="biology/Figure_17_03_01-a947" kind="diagram" eager="true" alt="Two labeled diagrams comparing a dideoxynucleotide's and a deoxynucleotide's sugar-phosphate structure. Both show three phosphate groups linked through the sugar to a Base, differing only in the boxed group at the ring's 3′ carbon: H in the dideoxynucleotide, OH in the deoxynucleotide." longdesc="Two identical five-membered sugar-ring diagrams, stacked vertically, each with a chain of three phosphate groups (P–P–P) at the left, linked through OCH₂ to the ring's upper-left carbon. A bond from the ring's upper-right carbon leads out to a Base label, and plain H atoms sit on all four ring carbons: one each on the upper-left, upper-right, and lower-left carbons and two on the lower-right carbon. A highlighted box below the ring's lower-left carbon marks the 3′ position. Top diagram, labeled 'Dideoxynucleotide (ddNTP)': the boxed 3′ group is H. Bottom diagram, labeled 'Deoxynucleotide (dNTP)': the boxed 3′ group is OH — the one difference between the two structures." >}}
 A dideoxynucleotide is similar in structure to a deoxynucleotide, but is missing the 3′ hydroxyl group (indicated by the box). When a dideoxynucleotide is incorporated into a DNA strand, DNA synthesis stops.
 {{< /mediafigure >}}
 
-{{< mediafigure src="biology/Figure_B17_03_02" kind="diagram" alt="Two-panel figure illustrating Sanger's dideoxy chain-termination method. Left: four color-coded DNA fragments of increasing length, each ending in an arrowhead matching the dideoxynucleotide (ddCTP, ddATP, ddGTP, or ddTTP) that terminated it, above a row of colored boxes spelling out the template's complementary bases. Right: an electropherogram — overlapping colored peaks with the base sequence read off beneath them." longdesc="Left panel: four horizontal bars of decreasing length, each ending in a triangular arrowhead colored to match its terminating dideoxynucleotide, from longest (top) to shortest (bottom): a blue arrow labeled ddCTP, a green arrow labeled ddATP, a black arrow labeled ddGTP, and a red arrow labeled ddTTP. Below the bars, eight colored boxes read left to right: G (black), A (green), T (red), T (red), C (blue), A (green), G (black), C (blue), captioned 'Dye-labeled dideoxynucleotides are used to generate DNA fragments of different lengths.' Right panel: a chromatogram trace of overlapping black, green, red, and blue peaks running left to right above an axis marked with positions 120 and 130, with a row of base-call letters printed beneath the trace in the matching peak colors, spelling out the read sequence." >}}
+{{< mediafigure src="biology/Figure_B17_03_02" kind="diagram" alt="Two-panel figure illustrating Sanger's dideoxy chain-termination method. Left: four color-coded DNA fragments of different lengths, each ending in an arrowhead matching the dideoxynucleotide (ddCTP, ddATP, ddGTP, or ddTTP) that terminated it, above a row of colored boxes spelling out the template's complementary bases. Right: an electropherogram — overlapping colored peaks with the base sequence read off beneath them." longdesc="Left panel: four horizontal bars of different lengths, each ending in a triangular arrowhead colored to match its terminating dideoxynucleotide, top to bottom: a blue arrow labeled ddCTP (the longest, its tip over the eighth box), a green arrow labeled ddATP (tip over the sixth box), a black arrow labeled ddGTP (longer than the ddATP arrow, tip over the seventh box), and a red arrow labeled ddTTP (the shortest, tip over the fourth box). Below the bars, eight colored boxes read left to right: G (black), A (green), T (red), T (red), C (blue), A (green), G (black), C (blue), captioned 'Dye-labeled dideoxynucleotides are used to generate DNA fragments of different lengths.' Right panel: a chromatogram trace of overlapping black, green, red, and blue peaks running left to right above an axis marked with positions 120 and 130, with a row of base-call letters printed beneath the trace in the matching peak colors, spelling out the read sequence G A T A A A T C T G G T C T T A T T T C C, one letter under each of the 21 peaks." >}}
 This figure illustrates Frederick Sanger's dideoxy chain termination method. Using dideoxynucleotides, the DNA fragment can terminate at different points. The DNA separates on the basis of size, and we can read these bands based on the fragments' size.
 {{< /mediafigure >}}
 
@@ -89,10 +89,36 @@ Although the human genome sequences provide key insights to medical professional
 
 ### Describe three types of sequencing
 
+{{< textin
+  question="The method that cuts several copies of a DNA fragment into many random smaller pieces, sequences each piece, and reassembles the whole sequence by matching where the pieces' sequences overlap is called ________."
+  answer="shotgun sequencing"
+  hint="Reread the first paragraph of the subsection on early strategies."
+>}}
+
+{{< textin
+  question="The DNA sequencing method in which fluorescently labeled monomers that lack a hydroxyl group stop replication at different points along the template is called the ________."
+  answer="chain termination method"
+  accept="dideoxy method|Sanger method"
+  hint="Reread the first paragraph of Strategies Used in Sequencing Projects."
+>}}
+
+{{< textin
+  question="The group of automated, low-cost DNA sequencing techniques used since 2005, able to generate hundreds of thousands to millions of short fragments in a single day, is called ________."
+  answer="next-generation sequencing"
+  accept="deep sequencing|massively parallel sequencing"
+  hint="Reread the short subsection that follows the one on early strategies."
+>}}
+
+{{< textin
+  question="A larger DNA sequence assembled from overlapping shorter sequences is called a ________."
+  answer="contig"
+  hint="Reread the first paragraph of the subsection on early strategies."
+>}}
+
 {{< multiplechoice
   question="The chain termination method of sequencing:"
   answer="uses labeled ddNTPs"
-  hint="The section says only the ddNTPs, not the dNTPs, carry the fluorescent label that identifies where replication stopped."
+  hint="Reread the first paragraph of Strategies Used in Sequencing Projects."
 >}}
 uses labeled ddNTPs
 uses only dideoxynucleotides
@@ -100,38 +126,31 @@ uses only deoxynucleotides
 uses labeled dNTPs
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The DNA sequencing method that uses fluorescently labeled dideoxynucleotides to stop replication at different points along the template is called the ________."
-  answer="chain termination method"
-  accept="dideoxy method|Sanger method"
-  hint="Fred Sanger developed this method in the 1970s; its own name describes what happens to the growing strand when a ddNTP is added."
->}}
-
-{{< textin
-  question="The method that cuts several copies of a DNA fragment into many random smaller pieces, sequences each piece, and reassembles the whole sequence by matching where the pieces' sequences overlap is called ________."
-  answer="shotgun sequencing"
-  hint="The section compares this to firing a shotgun cartridge — many random-sized pieces that get reassembled from their overlaps."
->}}
-
-{{< textin
-  question="The group of automated, low-cost DNA sequencing techniques used since 2005, able to generate hundreds of thousands to millions of short fragments in a single day, is called ________."
-  answer="next-generation sequencing"
-  accept="deep sequencing|massively parallel sequencing"
-  hint="The section gives this group of techniques two other names — one about how deeply it reads, one about how many reads run at once."
->}}
-
-{{< textin
-  question="A larger DNA sequence assembled from overlapping shorter sequences is called a ________."
-  answer="contig"
-  hint="In the section's torn-photograph analogy, this is the reconstructed picture built from the overlapping pieces."
->}}
-
 ### Define whole-genome sequencing
+
+{{< textin
+  question="Methods that detect gene expression by analyzing many DNA fragments fixed to a glass slide or a silicon chip are called ________."
+  answer="DNA microarray"
+  accept="microarray"
+  hint="Reread the first paragraph of Genome Sequence Uses."
+>}}
+
+{{< textin
+  question="A species that researchers study and use as a stand-in to understand biological processes shared with other species is called a ________."
+  answer="model organism"
+  hint="Reread the paragraph after the Evolution Connection."
+>}}
+
+{{< textin
+  question="The process of attaching biological information to gene sequences is called ________."
+  answer="genome annotation"
+  hint="Reread the last sentences of the paragraph after the Evolution Connection."
+>}}
 
 {{< multiplechoice
   question="Whole-genome sequencing can be used for advances in:"
   answer="all of the above"
-  hint="The section lists medical, agricultural, and biofuel applications together — none of them rules out the others."
+  hint="Reread Genome Sequence Uses."
 >}}
 the medical field
 agriculture
@@ -142,7 +161,7 @@ all of the above
 {{< multiplechoice
   question="Sequencing an individual person's genome"
   answer="all of the above"
-  hint="The section says individual sequencing is available now, raises legal and privacy concerns, and can guide medical treatment — all three are true at once."
+  hint="Reread the section's opening paragraphs and Genome Sequence Uses."
 >}}
 is currently possible
 could lead to legal issues regarding discrimination and privacy
@@ -153,7 +172,7 @@ all of the above
 {{< multiplechoice
   question="What is the most challenging issue facing genome sequencing?"
   answer="the ethics of using information from genomes at the individual level"
-  hint="The section's closing paragraph warns about discrimination, genetic engineering, and other ethical concerns from individual-level genome knowledge — not about sequencing speed or DNA's stability."
+  hint="Reread the last paragraph of Genome Sequence Uses."
 >}}
 the inability to develop fast and accurate sequencing techniques
 the ethics of using information from genomes at the individual level
@@ -161,24 +180,6 @@ the availability and stability of DNA
 all of the above
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The process that determines the complete DNA sequence of an organism's entire genome is called ________."
-  answer="whole-genome sequencing"
-  hint="This is the process the section opens by naming, and the one whole-exome sequencing is a lower-cost alternative to."
->}}
-
-{{< textin
-  question="A species that researchers study and use as a stand-in to understand biological processes shared with other species is called a ________."
-  answer="model organism"
-  hint="The section names several examples — the mouse, the fruit fly, the nematode, and humans among them."
->}}
-
-{{< textin
-  question="The process of attaching biological information to gene sequences is called ________."
-  answer="genome annotation"
-  hint="This process follows sequencing a model organism's genome, and helps with tasks such as designing PCR primers and RNA targets."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 17.3: Whole-Genome Sequencing](https://openstax.org/books/biology-2e/pages/17-3-whole-genome-sequencing) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_17_03_01-a947 re-kinded from the manifest's file-extension guess of "photo" to "diagram" (a drawn molecular schematic, not a photograph; Figure_B17_03_02's manifest guess of "diagram" was already correct and is set explicitly); both figures' alts rewritten to summarize the structure shown, with the full labeled walk-through (ring positions, phosphate chain, arrow order and colors, chromatogram) moved to a `longdesc`; the caption's ASCII apostrophe in "3' hydroxyl" set as a Unicode prime (3′); the evolution note rendered as an Evolution Connection callout with its title kept and the BLAST link kept with descriptive text; the interactive note rendered as a Link to Learning callout with descriptive link text in place of the source's bare "site" link text; the end-of-section Review Questions adapted into the closing interactive Practice block; seven key-term recall items (chain termination method, shotgun sequencing, next-generation sequencing, contig, whole-genome sequencing, model organism, genome annotation) added from the glossary, each prompt built from the glossary meaning without naming the term itself. No source exercise or key was found wrong or contradicted by the section text; no source defect required correction. One suspected defect in the module's own prose (not an exercise or key): in "Use of Whole-Genome Sequences of Model Organisms," the nematode's binomial prints as *Caenorhabditis. elegans* — a stray period after the unabbreviated genus name, inconsistent with the other full binomials in the same sentence (*Mus musculus*, *Drosophila melanogaster*, *Homo sapiens*) — transcribed here exactly as printed in the CNXML and PDF pending the parent's adjudication. Two numbers are corrected with visible Source notes: the φX174 genome is 5,386 base pairs, not 5368, and Venter's *Haemophilus influenzae* genome dates to 1995, not the 1980s (errata 407–408).</small>
+<small>This section is adapted from [Biology 2e, Section 17.3: Whole-Genome Sequencing](https://openstax.org/books/biology-2e/pages/17-3-whole-genome-sequencing) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_17_03_01-a947 re-kinded from the manifest's file-extension guess of "photo" to "diagram" (a drawn molecular schematic, not a photograph; Figure_B17_03_02's manifest guess of "diagram" was already correct and is set explicitly); both figures' alts rewritten to summarize the structure shown, with the full labeled walk-through (ring positions, phosphate chain, arrow order and colors, chromatogram) moved to a `longdesc`; the caption's ASCII apostrophe in "3' hydroxyl" set as a Unicode prime (3′); the evolution note rendered as an Evolution Connection callout with its title kept and the BLAST link kept with descriptive text; the interactive note rendered as a Link to Learning callout with descriptive link text in place of the source's bare "site" link text; the end-of-section Review Questions adapted into the closing interactive Practice block; seven key-term recall items (chain termination method, shotgun sequencing, next-generation sequencing, contig, DNA microarray, model organism, genome annotation) added from the glossary, each prompt built from the glossary meaning without naming the term itself (the chain-termination prompt describes dideoxynucleotides by their glossary meaning, so that it does not print the root of its accepted "dideoxy method"), and each placed first in its objective group. No source exercise or key was found wrong or contradicted by the section text; no source defect required correction. One suspected defect in the module's own prose (not an exercise or key): in "Use of Whole-Genome Sequences of Model Organisms," the nematode's binomial prints as *Caenorhabditis. elegans* — a stray period after the unabbreviated genus name, inconsistent with the other full binomials in the same sentence (*Mus musculus*, *Drosophila melanogaster*, *Homo sapiens*) — transcribed here exactly as printed in the CNXML and PDF pending the parent's adjudication. Two numbers are corrected with visible Source notes: the φX174 genome is 5,386 base pairs, not 5368, and Venter's *Haemophilus influenzae* genome dates to 1995, not the 1980s (errata 407–408).</small>

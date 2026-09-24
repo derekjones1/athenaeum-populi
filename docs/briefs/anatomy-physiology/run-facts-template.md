@@ -11,13 +11,12 @@ the playbook, not here. Delete a heading that does not apply.
   in the wave.
 - Chapters done before this run: 1–(N−1); every rule in
   `docs/subjects/anatomy-physiology.md` applies.
-- Modules of this chapter in the September 8, 2026 upstream errata set
-  (the PDF shows the OLD text/image for these): list, with what changed,
-  or "none".
+- Modules of this chapter in the playbook's September-8 table (the PDF
+  shows the OLD text/image for these): the rows, or "none".
 
 ## PDF
 - `$SP/pdf/chNN/p-0NNN.png`, NNN the true PDF index, four digits; printed
-  folio = index − 16. N.1 `p-…`–`p-…`; … Key Terms `p-…`; Chapter Review
+  folio = index − 16 (held for chapters 1–2). N.1 `p-…`–`p-…`; … Key Terms `p-…`; Chapter Review
   `p-…`; pooled exercises `p-…`–`p-…` (Interactive Link Questions, Review
   Questions, Critical Thinking Questions, which on which pages). The last
   page of a section is the next heading's first page too.
@@ -36,6 +35,12 @@ the playbook, not here. Delete a heading that does not apply.
   out of the module: target module → route or "plain text (not authored)".
 
 ## Parent decisions (the forms the playbook cannot decide for a module)
+Part B (the drafter's raw list) lives in `$SP/run-facts-B.md`, which
+authors and checkers never read; this section is Part C.
+- Corrections: a one-word typo is footer + ledger only, never a Source
+  note (core §0 rule 4); a claim-level correction gets a Source note.
+  Routes are page-level: `mediafigure` emits no `id`, so a cross-page
+  figure reference links the page.
 - **Interactive Link Questions, per item** (rule 1): item id → "graded
   `selfcheck`: fixing sentence: '…'" or "prompt only (answer is in the
   linked media)". Part B quotes the ONE candidate sentence or "no single
@@ -58,5 +63,5 @@ the playbook, not here. Delete a heading that does not apply.
 ## Exemplars for this run
 - One finished page that shows the shapes these modules need (a glossary
   Key-terms block, a `sortbins` from a comparison table, a feature-box
-  callout, a labelled figure with a `longdesc`). Until this book has one,
-  a Biology 2e page; then this book's. One or two paths, no more.
+  callout, a labelled figure with a `longdesc`) — this book's own, e.g.
+  1.6 or 2.5. One or two paths, no more.

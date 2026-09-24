@@ -143,6 +143,18 @@ unkeyed-question rule of the baseline has nothing to convert here, because
 every exercise carries a `<solution>`, but the comparison-table `sortbins`
 rule applies in full and the book was retrofitted to it.
 
+**The September 22, 2026 sweep.** An Opus sample measured about 7
+confirmed defects per page on a book whose keys all held, and an Opus
+fixer then re-read every section page's Practice block (19 units; the
+first six, chapters 1–18, at full scope, the rest at Derek's narrower
+scope of giveaways, wrong or double keys, accept gaps, and directly-above
+leaks): about 1,285 hints rewritten, about 230 nearby leaks fixed (about
+85 of them a recall `textin` keyed to its own objective heading), about
+130 accept gaps, about 75 duplicate asks, about 130 footers corrected, 10
+double-keyed items, 0 wrong source keys. The rules that would have
+prevented them are in life-sciences "Text recall", "Each thing once", and
+"Independent checker".
+
 ## Knowledge checks
 
 **All eight unit Knowledge Checks are authored: Units 1–3 (Chapters
@@ -186,9 +198,13 @@ The completion audit record (September 5, 2026) moved to
 "Figure-alt pass"): every one of the 1,153 figures re-read image-first by a
 fresh Sonnet checker, 135 alt or `longdesc` defects fixed (about 1 in 8.5),
 20 inherited from the source alt and recorded as errata 833–856 with footer
-disclosures, one earlier erratum (100) withdrawn. The audit's measured
-rate no longer applies; a figure whose alt is edited after this date needs
-only the ordinary author-and-checker reading.
+disclosures, one earlier erratum (100) withdrawn. That pass settled
+alt-level claims but not `longdesc` walk-throughs: a September 22, 2026
+sample still found about a third of `longdesc` figures wrong (arrow ends,
+counts, dropped rows), and a `longdesc` pass by inventory followed
+(life-sciences "Completion audit"; the history records its result). A
+figure edited after these passes gets the inventory reading from its
+author and checker.
 
 ## Done checklist (in addition to the core and life-sciences checklists)
 

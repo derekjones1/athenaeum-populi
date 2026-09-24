@@ -58,6 +58,7 @@ a body cell
 {{< textin
   question="Polyploidy formed by the reproduction of individuals from two different species, producing a viable offspring, is called a(n) ________."
   answer="allopolyploid"
+  accept="allopolyploidy"
 >}}
 
 {{< selfcheck question="How does habitat isolation, illustrated by a cricket population divided by a flood, differ from behavioral isolation, illustrated by fireflies, as forms of reproductive isolation?" >}}
@@ -86,10 +87,10 @@ transition period
 >}}
 
 {{< selfcheck question="A sudden drop in water level separates a species of snails into one large population and one tiny population. Why does new genetic variation spread quickly through the tiny population afterward?" >}}
-The tiny population faces new environmental conditions, and because its gene pool quickly became so small, any variation that surfaces and that aids in surviving the new conditions becomes the predominant form.
+The tiny population faces new environmental conditions, and because the population quickly became so small, any variation that surfaces and that aids in surviving the new conditions becomes the predominant form.
 ===CHECKS===
 the tiny population faces new environmental conditions
-because its gene pool quickly became so small
+because the population quickly became so small
 any variation that surfaces and that aids in surviving the new conditions becomes the predominant form
 {{< /selfcheck >}}
 
@@ -112,13 +113,12 @@ genetic structure
   answer="gene pool"
 >}}
 
-{{< selfcheck question="What conditions does the Hardy-Weinberg principle assume are true of a population it describes?" >}}
-The Hardy-Weinberg principle assumes an infinitely large population and conditions with no mutations, migration, emigration, or selective pressure for or against genotype.
+{{< selfcheck question="If populations in nature are always changing, what use is the Hardy-Weinberg principle to scientists?" >}}
+Populations in nature are constantly changing in genetic makeup due to drift, mutation, possibly migration, and selection. However, the Hardy-Weinberg principle gives scientists a mathematical baseline of a non-evolving population to which they can compare evolving populations and thereby infer what evolutionary forces might be at play.
 ===CHECKS===
-an infinitely large population
-no mutations
-no migration or emigration
-no selective pressure for or against genotype
+populations in nature are constantly changing in genetic makeup due to drift, mutation, possibly migration, and selection
+the Hardy-Weinberg principle gives scientists a mathematical baseline of a non-evolving population
+to which they can compare evolving populations and thereby infer what evolutionary forces might be at play
 {{< /selfcheck >}}
 
 ### 19.2 Population Genetics
@@ -160,7 +160,7 @@ increased genetic variability from selecting for rare phenotypes
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Scientists call an organism's ability to survive and to contribute offspring to the next generation's gene pool its evolutionary, or ________, fitness."
+  question="Natural selection selects for individuals with greater contributions to the next generation; scientists call this an organism's evolutionary, or ________, fitness."
   answer="Darwinian"
   accept="Darwinian fitness"
 >}}
@@ -204,12 +204,12 @@ than other groups that are not as closely related
 ### 20.2 Determining Evolutionary Relationships
 
 {{< multiplechoice
-  question="Which of the following pairs of structures is analogous rather than homologous?"
-  answer="a butterfly's wings and a bird's wings"
+  question="Researchers screening medicinal plants in the legume family Fabaceae used a DNA marker to identify species. What is a DNA marker?"
+  answer="a known location on a chromosome that enables scientists to identify a species"
 >}}
-the bones in bat and bird wings
-the bones in a whale's front flipper and a human arm
-a butterfly's wings and a bird's wings
+a characteristic on a phylogenetic tree that all organisms on the tree share
+a similarity in characteristics resulting from a shared ancestry
+a known location on a chromosome that enables scientists to identify a species
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Why can DNA sequence comparisons sometimes make two very closely related organisms appear unrelated?" >}}

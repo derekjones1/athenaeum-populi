@@ -110,7 +110,11 @@ print or what authors most often get wrong.
    plain-text characters from the IMAGE (this book's source alts carry
    errors — list each in your ledger); a `longdesc` walk-through for any
    drawn or multi-panel figure whose labels, steps, or counts the caption
-   does not name — draft it first, then the alt; `kind` explicit on every
+   does not name — draft it first, then the alt, and draft it from an
+   inventory written in your ledger before any words (panels, every
+   printed label, every count, every arrow as `source → target` with both
+   ends zoomed in a PIL crop; a third of the sampled shipped `longdesc`s
+   failed that check); `kind` explicit on every
    figure, judged from the picture; `eager="true"` on the first only.
 7. Exercise images (`_img` stems, a bare `<media>` inside an exercise):
    `mediafigure` then its item, inside the Practice group of the objective
@@ -126,7 +130,9 @@ print or what authors most often get wrong.
    and author-written model answers, sentence-derived definitions, every
    filler item and its sentence, every unused source item and why, every
    one-word correction, every reordered item, the Clinical Focus link
-   replacements, author-written captions. The parent logs errata at
+   replacements, author-written captions — every number copied from your
+   ledger's tally after the last `verify-section` (the September 22 sweep
+   corrected about 85 of this book's footers). The parent logs errata at
    close-out; the footer names a correction as a correction and says nothing
    about where it is logged — neither "logged as an erratum" nor "reported
    to the parent".
@@ -148,12 +154,21 @@ in the playbooks. Apply them literally; these are the recurring failures:
   `longdesc` on the page for every key you add, forwards and backwards. A
   distractor directly above a `textin` may not be its key. A body figure
   whose caption names the answer sends that body item back to `selfcheck`.
+  A recall `textin` is never keyed to a term a source item on the page
+  already keys or asks about (reverse recall) — pick another term; prefer
+  one its own `###` objective heading and the page title do not print. Fix a
+  Practice leak by order or wording; never convert a `textin` to a
+  multiple choice to escape one.
 - **`textin`:** unpaired tag; answer 1–4 words; no `$`; the answer in
   neither question nor hint; `accept` is `|`-separated and lists only what
-  the grader would otherwise miss (irregular plural or singular of a keyed
-  plural, a module abbreviation, an abbreviated binomial, a formula in
+  the grader would otherwise miss (an irregular plural or singular — a
+  regular singular of a keyed plural is folded by the grader and a lint
+  error — a module abbreviation, an abbreviated binomial, a formula in
   ASCII, a hyphen between letters) — a member that normalizes to the answer
-  is rejected. Run every member through the real grader:
+  is rejected. Run every member, and every natural variant a correct
+  learner types (the full name with and without its head noun, the
+  module's synonyms and abbreviations), through the real grader — the
+  September 22 sweep added about 170 missing accepts to this book:
   `node -e 'import("./assets/js/lib/text/check-text.mjs").then(m=>console.log(m.checkText("<variant>","<answer>",{accept:"<accept>"})))'`
 - **Keys built from the answer's own vocabulary:** a why-question keyed to
   one abstract noun is the weakest form — prefer the module's phrase, and
@@ -169,9 +184,24 @@ in the playbooks. Apply them literally; these are the recurring failures:
 - **Sequence-derivation questions** are fully worked selfchecks (every
   sequence with its 5′/3′ ends, every amino acid, the mutation type); the
   checker re-derives them base by base.
-- Every regular-section item needs a concise, strategy-oriented `hint`; a
-  True/False hint names the sentence tested, never the verdict, and the
-  stem carries no "True or false:" prefix.
+- Every regular-section item needs a concise `hint` that says where to
+  look (below); a True/False hint names the sentence tested, never the
+  verdict, and the stem carries no "True or false:" prefix.
+- **A hint says WHERE to look** — a subsection, figure, table, or paragraph
+  topic — never the key, a root or derivative of it, the fact the correct
+  option asserts, or a fact the module never states; and nothing in the
+  item directly above a `textin` — its stem, its options, or its hint —
+  prints its key. `tools/lint/lints-leaks.mjs` catches the mechanical part
+  (the literal key, a printed root, an MC hint naming the keyed option); a
+  hint that states the fact instead of pointing at it is a checker read
+  against its own key. The September 22, 2026 sweep rewrote about 1,190
+  hints on this book's 127 shipped pages — about 9 per page — in these forms:
+  the key's Greek or Latin root translated ("This process's name means
+  'cell drinking'"), the key's definition restated, every distractor
+  eliminated by name, a heading named whose title is the key, a
+  `selfcheck` hint listing its rubric clauses, a hint steering away from
+  an answer the accept list takes. Cover the options: if the stem and hint
+  alone answer the item, cut the hint to the location.
 
 ## 5. Verify, then report
 
@@ -186,7 +216,10 @@ in the playbooks. Apply them literally; these are the recurring failures:
   a `longdesc` exists; per Key-terms bullet its provenance; every unused
   source item with its reason; every suspected source defect (module id,
   element id, text, why, correction) and, separately, every suspected claim
-  error.
+  error. End it with a **tally** — source items by kind, graded
+  conversions, author-written items by kind, recall items, summary
+  clozes, reordered source items, one-word corrections — and copy the
+  footer's numbers from it.
 - **Answer-ledger results** `$SP/ledger-results/N.M.json`, shaped
   `{"results":[{"hash":"…","verdict":"ok","note":"…"}]}`; hashes from
   `node tools/verify/answer-ledger.mjs list content --unverified` (a JSON

@@ -28,7 +28,7 @@ All of the formed elements of blood are derived from multipotent hematopoietic s
 
 In terms of sheer numbers, the vast majority of HSCs become erythrocytes. Much smaller numbers become leukocytes and platelets. Leukocytes can be further subdivided into **granulocytes**, which are characterized by numerous granules visible in the cytoplasm, and agranulocytes, which lack granules. The table below provides an overview of the various types of formed elements, including their relative numbers, primary function, and lifespans.
 
-{{< mediafigure src="microbiology/OSC_Microbio_17_05_Hematopo" kind="diagram" eager="true" alt="A branching flowchart of hematopoiesis. A multipotent hematopoietic stem cell divides into a myeloid stem cell and a lymphoid stem cell. The myeloid line branches into a megakaryocyte (which sheds platelets), an erythrocyte, a mast cell, and a myeloblast, which further branches into a basophil, neutrophil, eosinophil, and monocyte (which becomes a macrophage or dendritic cell). The lymphoid line branches into a natural killer cell and a small lymphocyte, which becomes a T lymphocyte or a B lymphocyte (which becomes a plasma cell)." longdesc="At the top of the chart, a single multipotent hematopoietic stem cell (hemocytoblast) sits below a curved arrow labeled 'After division, some cells remain stem cells,' showing that dividing stem cells can renew themselves. Below it, a label reads 'Stem cells go down one of two paths, depending on the chemical signals received,' branching left to a myeloid stem cell and right to a lymphoid stem cell. From the myeloid stem cell, four arrows lead to a megakaryocyte (which arrows down to platelets), an erythrocyte, a mast cell, and a myeloblast. The myeloblast branches further into four cell types, shown left to right: basophil, neutrophil, eosinophil, and monocyte. The monocyte branches into a macrophage and a dendritic cell. From the lymphoid stem cell, two arrows lead to a natural killer cell (labeled 'large granular lymphocyte') and a small lymphocyte. The small lymphocyte branches into a T lymphocyte and a B lymphocyte; the B lymphocyte arrows down to a plasma cell." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_17_05_Hematopo" kind="diagram" eager="true" alt="A branching flowchart of hematopoiesis. A multipotent hematopoietic stem cell divides into a myeloid stem cell and a lymphoid stem cell. The myeloid line branches into a megakaryocyte (which sheds platelets), an erythrocyte, a mast cell, and a myeloblast, which further branches into a basophil, neutrophil, eosinophil, and monocyte (which becomes a macrophage or dendritic cell). The lymphoid line branches into a natural killer cell and a small lymphocyte, which becomes a T lymphocyte or a B lymphocyte (which becomes a plasma cell)." longdesc="At the top of the chart, a single multipotent hematopoietic stem cell (hemocytoblast) has a curved arrow looping from the branch line below it back up to it, labeled 'After division, some cells remain stem cells,' showing that dividing stem cells can renew themselves. Below it, a label reads 'Stem cells go down one of two paths, depending on the chemical signals received,' branching left to a myeloid stem cell and right to a lymphoid stem cell. From the myeloid stem cell, four arrows lead to a megakaryocyte (which arrows down to platelets), an erythrocyte, a mast cell, and a myeloblast. The myeloblast branches further into four cell types, shown left to right: basophil, neutrophil, eosinophil, and monocyte. The monocyte branches into a macrophage and a dendritic cell. From the lymphoid stem cell, two arrows lead to a natural killer cell (labeled 'large granular lymphocyte') and a small lymphocyte. The small lymphocyte branches into a T lymphocyte and a B lymphocyte; the B lymphocyte arrows down to a plasma cell." >}}
 All the formed elements of the blood arise by differentiation of hematopoietic stem cells in the bone marrow.
 {{< /mediafigure >}}
 
@@ -92,7 +92,7 @@ basophils have a two-lobed nucleus and large granules that stain dark blue or pu
 mast cells contain many of the same granule components (such as histamine), but reside in tissues rather than circulating in the blood
 {{< /selfcheck >}}
 
-{{< selfcheck question="Name three antimicrobial mechanisms of neutrophils." hint="One mechanism is phagocytosis aided by granule contents, one releases toxic molecules into the tissue, and one builds an extracellular trap of chromatin." >}}
+{{< selfcheck question="Name three antimicrobial mechanisms of neutrophils." hint="Reread the Neutrophils (PMNs) subsection, paragraph by paragraph." >}}
 PMN granules contain defensins and hydrolytic enzymes that help neutrophils destroy bacteria through phagocytosis. Neutrophils can also be stimulated to release toxic molecules into the surrounding tissue, a process called degranulation. Finally, neutrophils can create and release neutrophil extracellular traps (NETs), mesh or lattice-like structures of chromatin coupled with antimicrobial proteins that mount a concentrated attack against nearby pathogens.
 ===CHECKS===
 granules contain defensins and hydrolytic enzymes that help neutrophils destroy bacteria through phagocytosis
@@ -121,7 +121,7 @@ As their name suggests, **agranulocytes** lack visible granules in the cytoplasm
 
 Most lymphocytes are primarily involved in the specific adaptive immune response, and thus will be discussed in the following chapter. An exception is the **natural killer cells (NK cells)**; these mononuclear lymphocytes use nonspecific mechanisms to recognize and destroy cells that are abnormal in some way. Cancer cells and cells infected with viruses are two examples of cellular abnormalities that are targeted by NK cells. Recognition of such cells involves a complex process of identifying inhibitory and activating molecular markers on the surface of the target cell. Molecular markers that make up the major histocompatibility complex (MHC) are expressed by healthy cells as an indication of "self." This will be covered in more detail in the next chapter. NK cells are able to recognize normal MHC markers on the surface of healthy cells, and these MHC markers serve as an inhibitory signal preventing NK cell activation. However, cancer cells and virus-infected cells actively diminish or eliminate expression of MHC markers on their surface. When these MHC markers are diminished or absent, the NK cell interprets this as an abnormality and a cell in distress. This is one part of the NK cell activation process (see the figure below). NK cells are also activated by binding to activating molecular molecules on the target cell. These activating molecular molecules include "altered self" or "nonself" molecules. When a NK cell recognizes a decrease in inhibitory normal MHC molecules and an increase in activating molecules on the surface of a cell, the NK cell will be activated to eliminate the cell in distress.
 
-{{< mediafigure src="microbiology/OSC_Microbio_17_05_NaturalBor" kind="diagram" alt="Two-row diagram contrasting a healthy cell and a virus-infected cell interacting with an NK cell. Top: an NK cell's inhibitory and activating receptors meet a healthy cell displaying MHC I; the healthy cell is left unharmed. Bottom: an infected cell lacking MHC I but displaying an activating ligand is destroyed by the NK cell." longdesc="Top row: an NK cell on the left has two receptors reaching toward a healthy cell on the right — an inhibitory receptor that binds MHC I molecules studding the healthy cell's surface, and an activating receptor that finds no matching ligand. Text above reads, 'A natural killer (NK) cell recognizes MHC I on a healthy cell and does not kill it.' An arrow points from the healthy cell to an identical, unchanged healthy cell, showing no effect. Bottom row: the same NK cell reaches toward an infected cell that displays no MHC I but instead displays an activating molecule, which its activating receptor binds; a virus particle sits nearby. Text above reads, 'An infected cell does not present the MHC I, but does present ligands for the activating receptor. The NK cell will trigger a response that kills this cell.' An arrow points from the infected cell to a burst, fragmented cell, showing that it has been destroyed." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_17_05_NaturalBor" kind="diagram" alt="Two-row diagram contrasting a healthy cell and a virus-infected cell interacting with an NK cell. Top: an NK cell's inhibitory and activating receptors meet a healthy cell displaying MHC I; the healthy cell is left unharmed. Bottom: an infected cell lacking MHC I but displaying an activating ligand is destroyed by the NK cell." longdesc="Top row: an NK cell on the left has two receptors reaching toward a healthy cell on the right — an inhibitory receptor that binds MHC I molecules studding the healthy cell's surface, and an activating receptor that finds no matching ligand. Text above reads, 'A natural killer (NK) cell recognizes MHC I on a healthy cell and does not kill it.' An arrow points from the healthy cell to an identical, unchanged healthy cell, showing no effect. Bottom row: the same NK cell reaches toward an infected cell that displays no MHC I but instead displays an activating molecule, which its activating receptor binds; two virus particles, drawn the same way, sit inside the infected cell's cytoplasm, and a third, labeled 'virus,' floats just outside it. Text above reads, 'An infected cell does not present the MHC I, but does present ligands for the activating receptor. The NK cell will trigger a response that kills this cell.' An arrow points from the infected cell to a burst, fragmented cell, showing that it has been destroyed." >}}
 Natural killer (NK) cells are inhibited by the presence of the major histocompatibility cell (MHC) receptor on healthy cells. Cancer cells and virus-infected cells have reduced expression of MHC and increased expression of activating molecules. When a NK cell recognizes decreased MHC and increased activating molecules, it will kill the abnormal cell.
 {{< /mediafigure >}}
 
@@ -219,7 +219,7 @@ megakaryocytes
 {{< multiplechoice
   question="Granulocytes are which type of cell?"
   answer="leukocyte"
-  hint="This category is one of the two main subdivisions of white blood cells, distinguished by having numerous granules visible in the cytoplasm."
+  hint="See the paragraph just before the branching flowchart of blood-cell development."
 >}}
 lymphocyte
 erythrocyte
@@ -230,13 +230,14 @@ leukocyte
 {{< textin
   question="Platelets are also called ________."
   answer="thrombocytes"
-  hint="This term is built from 'thrombo-' (clot) and '-cyte' (cell)."
+  hint="See this section's opening paragraph."
 >}}
 
 {{< textin
   question="PMNs are another name for ________."
   answer="neutrophils"
-  hint="This granulocyte's full name describes the varied shape of its multilobed nucleus."
+  accept="polymorphonuclear neutrophils"
+  hint="See the first paragraph of the Granulocytes section."
 >}}
 
 {{< selfcheck question="Explain the difference between plasma and the formed elements of the blood." hint="One is the fluid portion of blood; the other is everything else in it." >}}
@@ -261,10 +262,17 @@ basophils
 
 ### Explain the process by which the formed elements of blood are formed (hematopoiesis)
 
+{{< textin
+  question="The process by which stem cells in the bone marrow differentiate into the various types of blood cells is called ________."
+  answer="hematopoiesis"
+  accept="haematopoiesis"
+  hint="See the first paragraph of this section's first subsection."
+>}}
+
 {{< multiplechoice
   question="Hematopoiesis occurs in which of the following?"
   answer="bone marrow"
-  hint="This is where hematopoietic stem cells reside and make copies of themselves."
+  hint="See the first two sentences of this section's first subsection."
 >}}
 liver
 bone marrow
@@ -273,7 +281,7 @@ central nervous system
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which cell type in the bone marrow gives rise to all other blood cell types?"
+  question="The cell in the bone marrow that gives rise to all other blood cell types is the ________."
   answer="pluripotent hematopoietic stem cell (HSC)"
   hint="This is the single cell type at the very top of the hematopoiesis diagram, before the myeloid/lymphoid split."
 >}}
@@ -282,12 +290,6 @@ pluripotent hematopoietic stem cell (HSC)
 lymphoid stem cell
 megakaryocyte
 {{< /multiplechoice >}}
-
-{{< textin
-  question="The process by which stem cells in the bone marrow differentiate into the various types of blood cells is called ________."
-  answer="hematopoiesis"
-  hint="This term combines 'hemato-' (blood) with '-poiesis' (formation)."
->}}
 
 ### Describe the characteristics of formed elements found in peripheral blood, as well as their respective functions within the innate immune system
 
@@ -305,7 +307,7 @@ eosinophil
 {{< multiplechoice
   question="Which cell type stains with the basic dye methylene blue, has large amounts of histamine in its granules, and facilitates allergic responses and inflammation?"
   answer="basophil"
-  hint="This is a granulocyte named for its granules' affinity for a basic dye."
+  hint="Compare the dye and granule contents that each granulocyte subsection names."
 >}}
 natural killer cell
 basophil
@@ -316,7 +318,7 @@ eosinophil
 {{< multiplechoice
   question="Which cell type is a large agranular phagocyte that resides in tissues such as the brain and lungs?"
   answer="macrophage"
-  hint="This is the only monocyte-derived cell among the four options."
+  hint="See the last subsection of this section and the table after it."
 >}}
 natural killer cell
 basophil
@@ -327,7 +329,7 @@ eosinophil
 {{< multiplechoice
   question="Which cell type stains with the acidic dye eosin, has histamine and major basic protein in its granules, and facilitates responses to protozoa and helminths?"
   answer="eosinophil"
-  hint="This granulocyte's name comes from its granules' affinity for the acidic dye eosin."
+  hint="Compare the dye and granule contents that each granulocyte subsection names."
 >}}
 natural killer cell
 basophil
@@ -338,7 +340,7 @@ eosinophil
 {{< multiplechoice
   question="Which cellular defense would most likely target a virus-infected cell?"
   answer="natural killer cell"
-  hint="This cell recognizes and kills the body's own cells once a virus has infected them, rather than attacking the pathogen directly."
+  hint="Compare the kind of infection or target that each cell type's subsection says it fights."
 >}}
 natural killer cell
 neutrophil
@@ -348,7 +350,7 @@ eosinophil
 {{< multiplechoice
   question="Which cellular defense would most likely target bacteria in a skin lesion?"
   answer="neutrophil"
-  hint="This granulocyte migrates through blood vessel walls to reach a site of bacterial infection and tissue damage."
+  hint="Compare the kind of infection or target that each cell type's subsection says it fights."
 >}}
 natural killer cell
 neutrophil
@@ -358,7 +360,7 @@ eosinophil
 {{< multiplechoice
   question="Which cellular defense would most likely target a tapeworm in the intestines?"
   answer="eosinophil"
-  hint="This granulocyte specializes in fighting parasites too large to phagocytose, such as worms."
+  hint="Compare the kind of infection or target that each cell type's subsection says it fights."
 >}}
 natural killer cell
 neutrophil
@@ -368,7 +370,7 @@ eosinophil
 {{< textin
   question="Kupffer cells residing in the liver are a type of ________."
   answer="macrophage"
-  hint="Kupffer cells are one of several tissue-specific names for this monocyte-derived phagocyte — another example is the microglial cell of the brain."
+  hint="See the table at the end of the Agranulocytes section."
 >}}
 
 {{< textin
@@ -386,11 +388,12 @@ this collateral damage can be repaired after the danger of the infection has bee
 {{< /selfcheck >}}
 
 {{< textin
-  question="Eosinophils target ________ infections."
-  answer="parasitic"
-  hint="This is the type of infection caused by organisms such as helminths (worms) and protozoa."
+  question="As neutrophils fight an infection, the visible buildup that accumulates at the site of infection is called ________."
+  answer="pus"
+  accept="purulent discharge|suppurative discharge|purulent drainage|suppurative drainage"
+  hint="See the paragraph that mentions the ancient physician Galen."
 >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 17.3: Cellular Defenses](https://openstax.org/books/microbiology/pages/17-3-cellular-defenses) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all seven source figures are re-encoded as WebP and rendered as mediafigures, each given an explicit `kind` after inspection (Hematopo, FormElem, GranTypes, and NaturalBor set `kind="diagram"` as drawn illustrations or a table-of-values image; mastcells, Nkgranul, and monomacro set `kind="photo"` as annotated micrographs) — the manifest guessed "photo" for all seven because every source file is a JPEG; all seven alts are rewritten from the image after inspection rather than kept from the source, and Hematopo and NaturalBor (multi-panel/multi-branch figures) also carry an author-written `longdesc`; the FormElem figure is a table of values printed as an image rather than a CNXML `<table>`, so its data is transcribed as a Markdown table from the image (checked against the PDF page) and the figure is kept immediately after it with an alt describing the image's layout and per-row icons rather than repeating the transcribed values; the Macrophages Found in Various Body Tissues table (a 1:1 tissue-to-name mapping, not a category comparison) is transcribed as a Markdown table with no `sortbins`, since it is a disguised matching pair rather than sort material; the source's two Matching exercises are rendered as seven per-row multiple-choice items (four from the cell-description set, three from the target-infection set), each offering all of its set's terms, in table order, as options; the Fill in the Blank item keyed "pluripotent hematopoietic stem cell (HSC)" (four content words plus a parenthetical abbreviation) is rendered as a multiple choice with distractors drawn from the module's own cell-lineage vocabulary (myeloid stem cell, lymphoid stem cell, megakaryocyte, all named in the Hematopo figure's longdesc); the other four Fill in the Blank items are rendered as plain `textin`s; of the section's two Short Answer questions, the plasma-versus-formed-elements question is graded as a self-check whose model answer paraphrases the module's own two adjacent sentences (kept as a self-check rather than converted to a multiple choice, since a clean single-sentence key was not evident); the "three ways a neutrophil can destroy a bacterium" question duplicates the body Check Your Understanding bullet "Name three antimicrobial mechanisms of neutrophils" (same subsection, same three mechanisms) and is not separately rendered — the body self-check carries it, and its Practice slot is refilled with a term-recall `textin` built from the Summary's own eosinophil sentence; of the section's two Critical Thinking questions, the "why is it advantageous to kill human cells" question stays a self-check because its honest answer assembles sentences from two different passages of the module, and the "which leukocyte is most numerous" question is rendered as a figure-keyed multiple choice from the transcribed table of formed elements, with the other four leukocyte types as distractors; the Practice block adds one text-recall item (hematopoiesis) from the module's own Key terms to fill the hematopoiesis objective's group to the book's floor, since this module's own exercise set leaves that group at two items; the four body Check Your Understanding bullets are rendered at their note positions — the granules-and-nuclei description and the three-neutrophil-mechanisms bullets stay self-checks (each needs several sentences assembled), the natural-killer-cell-activation-signals bullet stays a self-check for the same reason, and the monocyte-versus-macrophage bullet also stays a self-check, whose model answer quotes two adjacent sentences of the Monocytes subsection rather than one; one word is added to the module's own prose without disclosure elsewhere in the corpus's word-diff convention, so it is named here instead of silently kept: the Natural Killer Cells subsection's "This will be covered in more detail in the next chapter" adds "the," which the source's own sentence ("...in more detail in next chapter") does not print; the Clinical Focus box's "Jump to the next Clinical Focus box" and "Go back to the previous Clinical Focus box" links are replaced with a single sentence naming where the case continues (Section 17.5) and a second naming where the case began (Section 17.1, not Section 17.2, which is where the source's own "previous" link points, since the case has now run past two sections); the cross-references to Pathogen Recognition and Phagocytosis (Section 17.4) and, in the Basophils subsection, Overview of Specific Adaptive Immunity (Section 18.1), are rendered as absolute site-root links using this run's fixed section slugs, even though neither page may yet exist at the moment this page is authored; the Basophils subsection's antibody-assisted-triggering cross-reference is retargeted from the source's own link, which names B Lymphocytes and Humoral Immunity (Section 18.4), to Overview of Specific Adaptive Immunity (Section 18.1), with a visible source note beside it, because Section 18.4 does not discuss antibody-assisted basophil triggering while Section 18.1 does; same-module figure and table cross-references are rendered as descriptive phrases ("the figure below," "the table above") rather than as numbered references. No source exercise item is omitted. Two suspected source defects, neither corrected on this page: the Fill in the Blank exercise's key names the marrow stem cell "pluripotent hematopoietic stem cell (HSC)," while this same module's own body paragraph and its Hematopo figure both call it a "multipotent hematopoietic stem cell (hemocytoblast)" instead; and the Natural Killer Cells subsection's sentence "NK cells are also activated by binding to activating molecular molecules on the target cell" appears to carry a duplicated word ("molecular molecules"), transcribed here exactly as printed. One suspected source alt defect is also reported: the Nkgranul figure's source alt describes "many red blood cells with a single larger cell" that is "pink with a purple region," but the vendored image instead shows numerous similarly sized, densely packed, purple-stained white blood cells with lobed nuclei and no distinct red blood cells or single larger cell — the alt above is written from the image rather than the source alt.</small>
+<small>This section is adapted from [Microbiology, Section 17.3: Cellular Defenses](https://openstax.org/books/microbiology/pages/17-3-cellular-defenses) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all seven source figures are re-encoded as WebP and rendered as mediafigures, each given an explicit `kind` after inspection (Hematopo, FormElem, GranTypes, and NaturalBor set `kind="diagram"` as drawn illustrations or a table-of-values image; mastcells, Nkgranul, and monomacro set `kind="photo"` as annotated micrographs) — the manifest guessed "photo" for all seven because every source file is a JPEG; all seven alts are rewritten from the image after inspection rather than kept from the source, and Hematopo and NaturalBor (multi-panel/multi-branch figures) also carry an author-written `longdesc`; the FormElem figure is a table of values printed as an image rather than a CNXML `<table>`, so its data is transcribed as a Markdown table from the image (checked against the PDF page) and the figure is kept immediately after it with an alt describing the image's layout and per-row icons rather than repeating the transcribed values; the Macrophages Found in Various Body Tissues table (a 1:1 tissue-to-name mapping, not a category comparison) is transcribed as a Markdown table with no `sortbins`, since it is a disguised matching pair rather than sort material; the source's two Matching exercises are rendered as seven per-row multiple-choice items (four from the cell-description set, three from the target-infection set), each offering all of its set's terms, in table order, as options; the Fill in the Blank item keyed "pluripotent hematopoietic stem cell (HSC)" (four content words plus a parenthetical abbreviation) is rendered as a multiple choice with distractors drawn from the module's own cell-lineage vocabulary (myeloid stem cell, lymphoid stem cell, megakaryocyte, all named in the Hematopo figure's longdesc); the other four Fill in the Blank items are rendered as plain `textin`s; of the section's two Short Answer questions, the plasma-versus-formed-elements question is graded as a self-check whose model answer paraphrases the module's own two adjacent sentences (kept as a self-check rather than converted to a multiple choice, since a clean single-sentence key was not evident); the Short Answer "List three ways that a neutrophil can destroy an infectious bacterium." is the same question as the body Check Your Understanding bullet "Name three antimicrobial mechanisms of neutrophils" (same subsection, same three mechanisms) and is not separately rendered — the body self-check carries it, and its Practice slot is refilled with a key-term recall `textin` (pus) built from the Neutrophils subsection's own "This buildup is what we call pus" sentence; of the section's two Critical Thinking questions, the "why is it advantageous to kill human cells" question stays a self-check because its honest answer assembles sentences from two different passages of the module, and the "which leukocyte is most numerous" question is rendered as a figure-keyed multiple choice from the transcribed table of formed elements, with the other four leukocyte types as distractors; the Practice block adds one text-recall item (hematopoiesis) from the module's own Key terms to fill the hematopoiesis objective's group to the book's floor, since this module's own exercise set leaves that group at two items; the four body Check Your Understanding bullets are rendered at their note positions — the granules-and-nuclei description and the three-neutrophil-mechanisms bullets stay self-checks (each needs several sentences assembled), the natural-killer-cell-activation-signals bullet stays a self-check for the same reason, and the monocyte-versus-macrophage bullet also stays a self-check, whose model answer quotes two adjacent sentences of the Monocytes subsection rather than one; one word is added to the module's own prose without disclosure elsewhere in the corpus's word-diff convention, so it is named here instead of silently kept: the Natural Killer Cells subsection's "This will be covered in more detail in the next chapter" adds "the," which the source's own sentence ("...in more detail in next chapter") does not print; the Clinical Focus box's "Jump to the next Clinical Focus box" and "Go back to the previous Clinical Focus box" links are replaced with a single sentence naming where the case continues (Section 17.5) and a second naming where the case began (Section 17.1, not Section 17.2, which is where the source's own "previous" link points, since the case has now run past two sections); the cross-references to Pathogen Recognition and Phagocytosis (Section 17.4) and, in the Basophils subsection, Overview of Specific Adaptive Immunity (Section 18.1), are rendered as absolute site-root links using this run's fixed section slugs, even though neither page may yet exist at the moment this page is authored; the Basophils subsection's antibody-assisted-triggering cross-reference is retargeted from the source's own link, which names B Lymphocytes and Humoral Immunity (Section 18.4), to Overview of Specific Adaptive Immunity (Section 18.1), with a visible source note beside it, because Section 18.4 does not discuss antibody-assisted basophil triggering while Section 18.1 does; same-module figure and table cross-references are rendered as descriptive phrases ("the figure below," "the table above") rather than as numbered references. No other source exercise item is omitted. Two suspected source defects, neither corrected on this page: the Fill in the Blank exercise's key names the marrow stem cell "pluripotent hematopoietic stem cell (HSC)," while this same module's own body paragraph and its Hematopo figure both call it a "multipotent hematopoietic stem cell (hemocytoblast)" instead; and the Natural Killer Cells subsection's sentence "NK cells are also activated by binding to activating molecular molecules on the target cell" appears to carry a duplicated word ("molecular molecules"), transcribed here exactly as printed. One suspected source alt defect is also reported: the Nkgranul figure's source alt describes "many red blood cells with a single larger cell" that is "pink with a purple region," but the vendored image instead shows numerous similarly sized, densely packed, purple-stained white blood cells with lobed nuclei and no distinct red blood cells or single larger cell — the alt above is written from the image rather than the source alt.</small>

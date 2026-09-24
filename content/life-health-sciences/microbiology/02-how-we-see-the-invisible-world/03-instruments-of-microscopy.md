@@ -33,7 +33,7 @@ For example, if a 40× objective lens is selected and the ocular lens is 10×, t
 
 $(40\times)(10\times) = 400\times$
 
-{{< mediafigure src="microbiology/OSC_Microbio_02_03_Brightfiel" alt="A photograph of a binocular compound microscope with orange leader lines and numbers pointing to nine labeled parts: two eyepieces (1, ocular lenses); a rotating turret (2, revolving nosepiece) holding four lenses (3, objective lenses); a flat platform (6, stage) with adjustment knobs at its left edge (9, x-y mechanical stage knobs); two stacked components below the stage (8, diaphragm and condenser); two focusing knobs on the arm (4, coarse; 5, fine); and a component at the base (7, illuminator)." kind="photo" eager="true" longdesc="Reading top to bottom: the two eyepieces (1) sit atop the body tube; the tube angles down to the revolving nosepiece (2), which holds four objective lenses (3) pointing down at the flat stage (6); a pair of knobs at the stage's left edge (9) move the slide; below the stage, two stacked lenses (8) are the diaphragm and condenser; on the arm below the stage, a larger coarse-focus knob (4) sits above a smaller fine-focus knob (5); at the base, the illuminator bulb housing (7) sits beside the rheostat dial that dims it." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_02_03_Brightfiel" alt="A photograph of a binocular compound microscope with orange leader lines and numbers pointing to nine labeled parts, plus two unnumbered lines: two eyepieces (1, ocular lenses); a revolving nosepiece (2) holding the objective lenses (3), two visible; a flat platform (6, stage); a slide-holder assembly on top of the stage (9, mechanical stage); a ring under the stage (8, diaphragm and condenser); two coaxial focusing knobs (4, coarse; 5, fine); the light housing on the base (7, illuminator); and, unnumbered, the x-y mechanical stage knobs and the rheostat." kind="photo" eager="true" longdesc="Reading top to bottom: the two eyepieces (1) sit atop the head; below it, the revolving nosepiece (2) holds the objective lenses (3), two of which are visible from this side, pointing down at the flat stage (6), which has a round opening beneath them; the number 9 sits on the slide-holder assembly along the top of the stage's left side, labeled mechanical stage; below the stage, a ring with a blue band (8) carries two leader lines, labeled diaphragm and condenser; on the arm beside the stage, the smaller fine-focus knob (5) projects outward from the center of the larger coarse-focus knob (4) behind it; an unnumbered leader line labeled x-y mechanical stage knobs (to move slide) ends at a stack of two knobs hanging below the stage; at the base, the illuminator (7) is the black light housing beneath the condenser, and an unnumbered leader line labeled rheostat (to adjust light intensity) ends at a dial on the front of the base." >}}
 Components of a typical brightfield microscope.
 {{< /mediafigure >}}
 
@@ -89,7 +89,7 @@ Use of a darkfield microscope allows us to view living, unstained samples of the
 
 **Check Your Understanding**
 
-{{< sortbins question="Identify the key differences between brightfield and darkfield microscopy by sorting each phrase under the microscope it describes." hint="Think about what each does to the condenser and light path." >}}
+{{< sortbins question="Identify the key differences between brightfield and darkfield microscopy by sorting each phrase under the microscope it describes." hint="Reread Brightfield Microscopes and Darkfield Microscopy." >}}
 {"bins": ["Brightfield", "Darkfield"],
  "items": [
   {"label": "produces a dark image on a bright background", "bin": 0},
@@ -118,7 +118,7 @@ The case continues in [Staining Microscopic Specimens](/life-health-sciences/mic
 
 **Phase-contrast microscopes** use refraction and interference caused by structures in a specimen to create high-contrast, high-resolution images without staining. It is the oldest and simplest type of microscope that creates an image by altering the wavelengths of light rays passing through the specimen. To create altered wavelength paths, an annular stop is used in the condenser. The annular stop produces a hollow cone of light that is focused on the specimen before reaching the objective lens. The objective contains a phase plate containing a phase ring. As a result, light traveling directly from the illuminator passes through the phase ring while light refracted or reflected by the specimen passes through the plate. This causes waves traveling through the ring to be about one-half of a wavelength out of phase with those passing through the plate. Because waves have peaks and troughs, they can add together (if in phase together) or cancel each other out (if out of phase). When the wavelengths are out of phase, wave troughs will cancel out wave peaks, which is called destructive interference. Structures that refract light then appear dark against a bright background of only unrefracted light. More generally, structures that differ in features such as refractive index will differ in levels of darkness.
 
-{{< mediafigure src="microbiology/OSC_Microbio_02_03_Phasecontr" alt="A labeled diagram of the light path through a phase-contrast microscope, with four numbered stages. (1) An annular ring in the condenser produces a cone of light focused on the specimen. (2) The specimen refracts or reflects some of the light. (3) Undiffracted light traveling directly from the condenser and diffracted light traveling through the specimen pass through the objective lens and phase plate out of phase with each other. (4) The two kinds of light recombine at the primary image, where in-phase and out-of-phase wavelengths add together or cancel out." kind="diagram" longdesc="The diagram runs bottom to top: a light source sits below an annular ring, which shapes the light into a cone (stage 1, illuminating light) aimed through a condenser lens at the specimen. The specimen (stage 2) refracts or reflects part of the light, splitting it into undiffracted light and diffracted light. Both pass up through the objective lens and a phase plate (stage 3), which puts the two out of phase with each other. They recombine at the primary image (stage 4), where a color key marks illuminating light, diffracted light, undiffracted light, and the combined diffracted-and-undiffracted light that forms the final image." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_02_03_Phasecontr" alt="A labeled diagram of the light path through a phase-contrast microscope, with four numbered stages. (1) An annular ring in the condenser produces a cone of light focused on the specimen. (2) The specimen refracts or reflects some of the light. (3) Undiffracted light traveling directly from the condenser and diffracted light traveling through the specimen pass through the objective lens and phase plate out of phase with each other. (4) The two kinds of light recombine at the primary image, where in-phase and out-of-phase wavelengths add together or cancel out." kind="diagram" longdesc="The diagram runs bottom to top, with the numbers 1 to 4 marking four zones of the light path and a numbered note for each at the upper left; a color key at the lower left gives pink for illuminating light, yellow for diffracted light, blue for undiffracted light, and green for combined diffracted and undiffracted light. Light from the light source passes the edges of a gray annular ring (note 1 calls it the annular stop in the condenser) and enters the condenser lens. Zone 1, between the condenser lens and the specimen, is a pink cone of illuminating light converging on the specimen. Zone 2, between the specimen and the objective lens, is a yellow cone of light widening from the specimen (note 2: the specimen refracts or reflects light). Zone 3, between the objective lens and the phase plate, holds yellow diffracted light around a green central cone, labeled undiffracted light, that narrows to the black center of the gray phase plate (note 3: the two are out of phase as they pass through the objective and phase plate). Zone 4, between the phase plate and the primary image, holds a blue cone of undiffracted light widening from the phase plate to the full width of the primary image and a yellow cone of diffracted light narrowing to a point at its center, green where they overlap (note 4: wavelengths in phase or out of phase add together or cancel out)." >}}
 This diagram of a phase-contrast microscope illustrates phase differences between light passing through the object and background. These differences are produced by passing the rays through different parts of a phase plate. The light rays are superimposed in the image plane, producing contrast due to their interference.
 {{< /mediafigure >}}
 
@@ -138,7 +138,7 @@ A DIC image of *Fonsecaea pedrosoi* grown on modified Leonian's agar. This fungu
 
 **Check Your Understanding**
 
-{{< sortbins question="What are some advantages of phase-contrast and DIC microscopy? Sort each phrase under the microscope it describes." hint="Think about what kinds of specimens or structures each is especially good at revealing." >}}
+{{< sortbins question="What are some advantages of phase-contrast and DIC microscopy? Sort each phrase under the microscope it describes." hint="Reread the Phase-Contrast and Differential Interference Contrast subsections." >}}
 {"bins": ["Phase contrast", "DIC"],
  "items": [
   {"label": "the oldest and simplest type of microscope that alters the wavelengths of light rays passing through the specimen", "bin": 0},
@@ -168,7 +168,7 @@ In IFA, secondary antibodies are stained with a fluorochrome rather than primary
 {{< multiplechoice
   question="Why must fluorochromes be used to examine a specimen under a fluorescence microscope?"
   answer="they absorb the excitation light and emit visible light with longer wavelengths"
-  hint="Think about what a fluorescence microscope transmits toward the specimen, and what has to absorb and re-emit that light for an image to form."
+  hint="Reread the first two paragraphs of Fluorescence Microscopes."
 >}}
 they absorb and reflect particular wavelengths of light
 they filter out the excitation light so that only visible light passes through the ocular lens
@@ -198,7 +198,7 @@ Currently, use of two-photon microscopes is limited to advanced clinical and res
 
 **Check Your Understanding**
 
-{{< sortbins question="What types of specimens are best examined using confocal or two-photon microscopy? Sort each phrase under the microscope it describes." hint="Think about which specimens each technique's depth-scanning or deep-penetrating light is designed for." >}}
+{{< sortbins question="What types of specimens are best examined using confocal or two-photon microscopy? Sort each phrase under the microscope it describes." hint="Reread Confocal Microscopes and Two-Photon Microscopes." >}}
 {"bins": ["Confocal microscope", "Two-photon microscope"],
  "items": [
   {"label": "thick specimens such as biofilms", "bin": 0},
@@ -229,7 +229,7 @@ SEMs form images of surfaces of specimens, usually from electrons that are knock
 
 To expand both the resolution and the types of materials that could be examined, Pratibha L. Gai and Edward D. Boyes invented the environmental transmission electron microscope (ETEM). The device advanced the standard electron microscope by incorporating a gas-filled chamber in which a wider array of substances could be contained. Thus researchers could observe actual reactions taking place at incredible magnifications. Gai later improved on her work by creating the environmental scanning transmission electron microscope (ESTEM), which has even greater resolving power. Gai herself was the first person to ever see individual atoms interacting.
 
-{{< mediafigure src="microbiology/OSC_Microbio_02_03_ElMicSchem" alt="Two side-by-side labeled schematic diagrams. Left, a TEM: a high-voltage wire feeds an electron gun, which fires a beam through two condenser lenses and apertures, then the specimen (held in a specimen holder and air lock), then an objective lens and aperture, ending at a fluorescent screen and camera. Right, an SEM: an electron gun fires a beam through an anode, a condenser lens, and scanning coils, then onto a sample on a stage, with a backscatter detector above the sample and a secondary-electron detector to the side." kind="diagram" longdesc="The TEM column, top to bottom: high voltage line, electron gun, first condenser lens with its aperture, second condenser lens with its aperture, specimen holder and air lock, objective lens and aperture, fluorescent screen and camera. The SEM column, top to bottom: electron gun, electron beam narrowing through an anode, condenser lens, scanning coils, then the beam striking a sample on a stage; a backscatter electron detector sits directly above the sample and a secondary electron detector sits off to one side." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_02_03_ElMicSchem" alt="Two side-by-side labeled schematic diagrams. Left, a TEM: a high-voltage wire feeds an electron gun, which fires a beam through two condenser lenses and apertures, then the specimen (held in a specimen holder and air lock), then an objective lens and aperture, ending at a fluorescent screen and camera. Right, an SEM: an electron gun fires a beam through an anode, a condenser lens, and scanning coils, then onto a sample on a stage, with a backscatter detector above the sample and a secondary-electron detector to the side." kind="diagram" longdesc="The TEM column, top to bottom: high voltage line, electron gun, first condenser lens with its condenser aperture, second condenser lens with its condenser aperture, specimen holder and air-lock, objective lenses and aperture, and then the electron beam, which narrows through the lenses, widening below them onto the fluorescent screen and camera at the base. The SEM column, top to bottom: electron gun; the electron beam spreading from the gun to a wide anode and passing straight through it; condenser lens; the beam narrowing through the scanning coils; a backscatter electron detector directly above the sample, which the beam passes through; the beam converging on a sample on a stage; and a secondary electron detector off to the right, with lines running to it from the point where the beam strikes the sample." >}}
 These schematic illustrations compare the components of transmission electron microscopes and scanning electron microscopes.
 {{< /mediafigure >}}
 
@@ -239,7 +239,7 @@ These schematic illustrations compare the components of transmission electron mi
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are some advantages and disadvantages of electron microscopy, as opposed to light microscopy, for examining microbiological specimens?" hint="Think about the resolution an EM can reach compared with a light microscope, and what kind of specimen an EM cannot accept." >}}
+{{< selfcheck question="What are some advantages and disadvantages of electron microscopy, as opposed to light microscopy, for examining microbiological specimens?" hint="Reread the first two paragraphs of Electron Microscopy." >}}
 Electron microscopes use short-wavelength electron beams rather than light to increase magnification and resolution — an EM can produce a sharp image that is magnified up to 100,000×, allowing it to resolve subcellular structures as well as some molecular structures. However, electron microscopy cannot be used on living material because of the methods needed to prepare the specimens, a limitation light microscopy does not share.
 ===CHECKS===
 uses short-wavelength electron beams rather than light to increase magnification and resolution
@@ -248,7 +248,7 @@ resolve subcellular structures as well as some molecular structures
 electron microscopy cannot be used on living material because of the methods needed to prepare the specimens
 {{< /selfcheck >}}
 
-{{< sortbins question="What kinds of specimens are best examined using TEM? SEM? Sort each phrase under the microscope it describes." hint="Think about which technique requires very thin sections and which images surfaces of specimens of any size." >}}
+{{< sortbins question="What kinds of specimens are best examined using TEM? SEM? Sort each phrase under the microscope it describes." hint="Reread the two paragraphs between the TEM-versus-light-microscope diagram and the paragraph on Gai and Boyes." >}}
 {"bins": ["Transmission electron microscope", "Scanning electron microscope"],
  "items": [
   {"label": "requires very thin sections", "bin": 0},
@@ -266,7 +266,7 @@ Because biofilms are thick, they cannot be observed very well using light micros
 
 Electron microscopy can be used to observe biofilms, but only after dehydrating the specimen, which produces undesirable artifacts and distorts the specimen. In addition to these approaches, it is possible to follow water currents through the shapes (such as cones and mushrooms) of biofilms, using video of the movement of fluorescently coated beads.
 
-{{< mediafigure src="microbiology/OSC_Microbio_02_03_Biofilms" alt="A drawn diagram of five stages of biofilm development of Pseudomonas aeruginosa on a gray surface, each stage above a matching grayscale micrograph. Stage 1, Initial attachment: a few free-floating rod-shaped cells contact the surface. Stage 2, Irreversible attachment: small clumps of cells sit flat on the surface. Stage 3, Maturation I: the clumps have thickened into low mounds. Stage 4, Maturation II: the mounds have grown into tall, mushroom-shaped towers packed with cells. Stage 5, Dispersion: a tower releases free-floating cells with trailing flagella back into the surroundings." kind="diagram" longdesc="Left to right along the surface: Stage 1 shows a handful of scattered rod cells with wavy flagella. Stage 2 shows several small flat clumps of cells. Stage 3 shows the clumps thickened into irregular low mounds studded with cells. Stage 4 shows tall, hollow, mushroom-shaped towers densely packed with pink and maroon cells. Stage 5 shows a similar tower with cells and flagella streaming away from its top. Below each stage, a matching grayscale photomicrograph shows the same progression from scattered dots to a dense, textured mass." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_02_03_Biofilms" alt="A drawn diagram of five stages of biofilm development of Pseudomonas aeruginosa on a gray surface, each stage above a matching grayscale micrograph. Stage 1, Initial attachment: a few free-floating rod-shaped cells contact the surface. Stage 2, Irreversible attachment: small clumps of cells sit flat on the surface. Stage 3, Maturation I: the clumps have thickened into low mounds. Stage 4, Maturation II: the mounds have grown into tall, mushroom-shaped towers packed with cells. Stage 5, Dispersion: a tower releases free-floating cells with trailing flagella back into the surroundings." kind="diagram" longdesc="Left to right along the surface: Stage 1 shows a handful of scattered rod cells with wavy flagella. Stage 2 shows several small flat clumps of cells. Stage 3 shows the clumps thickened into irregular low mounds studded with cells. Stage 4 shows a tall, mushroom-shaped tower with open pockets, flanked by shorter lobes, densely packed with pink and maroon cells. Stage 5 shows a still larger tower with cells trailing flagella streaming up and away from its upper right. Blue arrows run from each stage's label up to the surface and down to a grayscale photomicrograph; a printed note says all photomicrographs are shown to the same scale. The stage 1 micrograph is a dense, dark, grainy field; stage 2 shows scattered single rods and a few small clusters; stage 3 a pale field with scattered clumps; stage 4 a dense, mottled mass; and stage 5 a large mass of cells around a clearer central area." >}}
 A biofilm forms when planktonic (free-floating) bacteria of one or more species adhere to a surface, produce slime, and form a colony. (credit: Public Library of Science)
 {{< /mediafigure >}}
 
@@ -300,7 +300,7 @@ a light microscope
 a scanning probe microscope
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Name one advantage and one limitation of scanning probe microscopy." hint="Think about what its very large magnifications let you observe, and what kind of use these techniques have mostly been limited to." >}}
+{{< selfcheck question="Name one advantage and one limitation of scanning probe microscopy." hint="Reread the first paragraph of Scanning Probe Microscopy." >}}
 One advantage of scanning probe microscopy is that its very large magnifications can be used to observe individual atoms on surfaces. One limitation is that, to date, these techniques have been used primarily for research rather than for diagnostics.
 ===CHECKS===
 large magnifications can be used to observe individual atoms on surfaces
@@ -393,13 +393,13 @@ Sample micrographs for each scanning probe microscope type.
 The same brightfield microscope shown earlier in this section, now marked with ten numbered call-outs for the reader to identify.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Label each component of the brightfield microscope shown above." hint="Match each number to a part named in the Brightfield Microscopes discussion above: the eyepieces, the lenses on the rotating nosepiece, the stage and its slide-moving knobs, the two focusing knobs, and the light path below the stage." >}}
-On the microscope in the photo above, #1 is the ocular lens, the eyepiece the user looks through. #2 is the revolving nosepiece, which holds the #3 objective lenses. #4 is the coarse focusing knob and #5 is the fine focusing knob, used for large- and small-scale focus adjustments. #6 is the stage, which holds the specimen, and #9 marks the x-y mechanical stage knobs that move the slide on the stage surface. #7 is the illuminator, the light source, and #10 is the rheostat, the dimmer switch that controls its intensity. #8 marks the diaphragm and the condenser lens, located below the stage, which together control and focus the light reaching the specimen.
+{{< selfcheck question="Label each component of the brightfield microscope shown above." hint="Reread Brightfield Microscopes." >}}
+On the microscope in the photo above, #1 is the ocular lens, the eyepiece the user looks through. #2 is the revolving nosepiece, which holds the #3 objective lenses. #4 is the coarse focusing knob and #5 is the fine focusing knob, used for large- and small-scale focus adjustments. #6 is the stage, which holds the specimen, and #9 marks the mechanical stage, the slide-holder assembly on top of the stage that the x-y mechanical stage knobs move across its surface. #7 is the illuminator, the light source, and #10 is the rheostat, the dimmer switch that controls its intensity. #8 marks the diaphragm and the condenser lens, located below the stage, which together control and focus the light reaching the specimen.
 ===CHECKS===
 #1 is the ocular lens, the eyepiece the user looks through
 #2 is the revolving nosepiece, which holds the #3 objective lenses
 #4 is the coarse focusing knob and #5 is the fine focusing knob
-#6 is the stage ... and #9 marks the x-y mechanical stage knobs that move the slide
+#6 is the stage ... and #9 marks the mechanical stage, the slide-holder assembly on top of the stage
 #7 is the illuminator ... and #10 is the rheostat
 #8 marks the diaphragm and the condenser lens, located below the stage
 {{< /selfcheck >}}
@@ -407,15 +407,15 @@ On the microscope in the photo above, #1 is the ocular lens, the eyepiece the us
 {{< multiplechoice
   question="What is the function of the condenser in a brightfield microscope?"
   answer="It focuses all of the light rays on the specimen to maximize illumination."
-  hint="Think about what happens to the light rays from the illuminator after they pass through the condenser lens, on their way to the specimen."
+  hint="Reread the second paragraph below the labeled brightfield photo."
 >}}
-It magnifies images 10 times before they reach the eyepiece.
+It acts as a dimmer switch that controls the intensity of the illuminator.
 It holds the specimen slide in place on the microscope.
 It focuses all of the light rays on the specimen to maximize illumination.
 It adjusts how much light reaches the specimen by opening and closing.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="When focusing a light microscope, why is it best to adjust the focus using the coarse focusing knob before using the fine focusing knob?" hint="Think about the size of the movements each knob makes, and what proper microscope care says about using the coarse knob at high magnification." >}}
+{{< selfcheck question="When focusing a light microscope, why is it best to adjust the focus using the coarse focusing knob before using the fine focusing knob?" hint="Reread the paragraph just below the labeled brightfield photo and the Microscope Maintenance box." >}}
 The coarse focusing knob produces large-scale movements, which quickly bring the specimen into rough focus, while the fine focusing knob produces small-scale movements for precise adjustment. Adjusting focus with the coarse knob first, before switching to the fine knob, avoids the large movements that could push an objective into the slide, which is why proper microscope care means not using the coarse focusing knob with the 40× or greater objective lenses.
 ===CHECKS===
 the coarse focusing knob produces large-scale movements
@@ -424,7 +424,7 @@ avoids the large movements that could push an objective into the slide
 not using the coarse focusing knob with the 40× or greater objective lenses
 {{< /selfcheck >}}
 
-{{< selfcheck question="You need to identify structures within a cell using a microscope. However, the image appears very blurry even though you have a high magnification. What are some things that you could try to improve the resolution of the image? Describe the most basic factors that affect resolution when you first put the slide onto the stage; then consider more specific factors that could affect resolution for 40× and 100× lenses." hint="Start with basic microscope care, then think about what closes the air gap between a high-power lens and the slide." >}}
+{{< selfcheck question="You need to identify structures within a cell using a microscope. However, the image appears very blurry even though you have a high magnification. What are some things that you could try to improve the resolution of the image? Describe the most basic factors that affect resolution when you first put the slide onto the stage; then consider more specific factors that could affect resolution for 40× and 100× lenses." hint="Reread the Microscope Maintenance box and the last paragraph of Brightfield Microscopes." >}}
 Even a very powerful microscope cannot deliver high-resolution images if it is not properly cleaned and maintained, since a slightly dirty or scratched lens will refract light in unintended ways and degrade the image, so cleaning the lenses is a basic factor to check first. At very high magnifications, resolution may be compromised when light passes through the small amount of air between the specimen and the lens, because of the difference between the refractive indices of air and glass; for a 100× objective, filling that space with a drop of oil, using an oil immersion lens, increases the light collected and improves resolution, and immersion oil should only be used with a specialized oil objective, usually the 100× objective, then cleaned from the lens afterward.
 ===CHECKS===
 a slightly dirty or scratched lens will refract light in unintended ways
@@ -436,41 +436,59 @@ immersion oil should only be used with a specialized oil objective, usually the 
 {{< textin
   question="A component of a microscope that typically consists of a disk with holes of various sizes and can be adjusted to control how much light from the light source reaches the specimen is called a ________."
   answer="diaphragm"
-  hint="It sits between the condenser and the specimen and is a separate control from the rheostat, which dims the illuminator itself."
+  hint="Reread the second paragraph below the labeled brightfield photo."
 >}}
 
 ### Calculate total magnification for a compound microscope
 
 {{< textin
-  question="What is the total magnification of a specimen that is being viewed with a standard ocular lens and a 40× objective lens?"
-  answer="400⨯"
-  accept="400x|400 x"
-  hint="Standard ocular lenses magnify 10 times; multiply that by the stated power of the 40× lens named in the question."
->}}
-
-{{< textin
   question="In a light microscope, the value calculated by multiplying the magnification of the ocular lens by the magnification of the objective lens is called ________."
   answer="total magnification"
-  hint="This is the combined magnifying power of both lenses working together, not either lens's power alone."
+  hint="Reread the first paragraph of Brightfield Microscopes."
 >}}
 
 {{< multiplechoice
-  question="Total magnification in a compound microscope is calculated by multiplying the magnification of the ocular lens by the magnification of the ________."
-  answer="objective lens"
-  hint="This is the lens closest to the specimen, mounted on the rotating nosepiece — not the lens the viewer looks through."
+  question="What is the total magnification of a specimen that is being viewed with a standard ocular lens and a 40× objective lens?"
+  answer="400⨯"
+  hint="Reread the first paragraph of Brightfield Microscopes and the worked example after it."
 >}}
-objective lens
-condenser lens
-illuminator
-diaphragm
+50⨯
+400⨯
+1000⨯
+4000⨯
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="The ocular lenses of a brightfield microscope typically magnify images ________."
+  answer="10 times"
+  hint="Reread the first paragraph of Brightfield Microscopes."
+>}}
+4 times
+40 times
+10 times
+100 times
 {{< /multiplechoice >}}
 
 ### Describe the distinguishing features and typical uses for various types of light microscopes, electron microscopes, and scanning probe microscopes
 
+{{< textin
+  question="Chromophores that absorb and then emit light are called ________."
+  answer="fluorochromes"
+  accept="fluorescent chromophores"
+  hint="Reread the paragraph that names Texas red, FITC, DAPI, and acridine orange."
+>}}
+
+{{< textin
+  question="In a(n) ________ microscope, a probe located just above the specimen moves up and down in response to forces between the atoms and the tip of the probe."
+  answer="atomic force microscope"
+  accept="AFM|atomic force"
+  hint="Reread the third paragraph of Scanning Probe Microscopy."
+>}}
+
 {{< multiplechoice
   question="Which would be the best choice for viewing internal structures of a living protist such as a *Paramecium*?"
   answer="a darkfield microscope"
-  hint="Think about which of these creates high-contrast images of live, unstained specimens without an electron beam that would kill the cell."
+  hint="Reread the paragraph just above the *Treponema pallidum* micrograph."
 >}}
 a brightfield microscope with a stain
 a brightfield microscope without a stain
@@ -481,7 +499,7 @@ a transmission electron microscope
 {{< multiplechoice
   question="Which type of microscope is especially useful for viewing thick structures such as biofilms?"
   answer="a confocal scanning laser microscope"
-  hint="Think about which microscope scans successive z-planes and reconstructs them into a three-dimensional image."
+  hint="Reread the Micro Connection box on biofilms."
 >}}
 a transmission electron microscope
 a scanning electron microscopes
@@ -493,7 +511,7 @@ an atomic force microscope
 {{< multiplechoice
   question="Which type of microscope would be the best choice for viewing very small surface structures of a cell?"
   answer="a scanning electron microscope"
-  hint="Think about which microscope images the surface of a specimen, rather than its interior, using an electron beam."
+  hint="Reread the paragraph just before the one on Gai and Boyes."
 >}}
 a transmission electron microscope
 a scanning electron microscope
@@ -505,7 +523,7 @@ a phase-contrast microscope
 {{< multiplechoice
   question="What type of microscope uses an annular stop?"
   answer="a phase-contrast microscope"
-  hint="This device sits in the condenser; think about which microscope type relies on interference between light that passed through the specimen and light that did not."
+  hint="Reread the first paragraph of the subsection just after the Clinical Focus Part 2 box."
 >}}
 a transmission electron microscope
 a scanning electron microscope
@@ -517,7 +535,7 @@ a phase-contrast microscope
 {{< multiplechoice
   question="What type of microscope uses a cone of light so that light only hits the specimen indirectly, producing a light image on a dark background?"
   answer="a darkfield microscope"
-  hint="Think about which microscope type increases contrast without staining by changing what the condenser lets through."
+  hint="Reread the paragraph just above the light-stop diagram."
 >}}
 a transmission electron microscope
 a scanning electron microscope
@@ -526,21 +544,7 @@ a darkfield microscope
 a phase-contrast microscope
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Chromophores that absorb and then emit light are called ________."
-  answer="fluorochromes"
-  accept="fluorochrome"
-  hint="Fluorescence microscopy takes its name from this class of pigment."
->}}
-
-{{< textin
-  question="In a(n) ________ microscope, a probe located just above the specimen moves up and down in response to forces between the atoms and the tip of the probe."
-  answer="atomic force microscope"
-  accept="AFM"
-  hint="This scanning probe microscope holds the current constant and measures the probe's vertical movement, unlike the type that holds height constant and measures current."
->}}
-
-{{< sortbins question="Sort each feature of the scanning probe microscopes table under the microscope it describes." hint="Think about what each instrument measures as its probe passes over the surface — an electrical signal or a mechanical one." >}}
+{{< sortbins question="Sort each feature of the scanning probe microscopes table under the microscope it describes." hint="Reread the Scanning Probe Microscopes table." >}}
 {"bins": ["STM", "AFM"],
  "items": [
   {"label": "the current occurs via quantum tunneling of electrons between the probe and the specimen", "bin": 0},
@@ -551,4 +555,4 @@ a phase-contrast microscope
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 2.3: Instruments of Microscopy](https://openstax.org/books/microbiology/pages/2-3-instruments-of-microscopy) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP with `kind` set explicitly on every one after inspecting the artwork (`photo` for every micrograph and annotated photograph, `diagram` for the Oil Lens, Darkfield, Phase-Contrast, Direct/Indirect Immunofluorescence, TEM-vs-light, electron-microscope schematic, and Biofilms figures, each of which has at least one genuinely drawn panel); several source alts rewritten to describe what the image actually shows, and two corrected against the artwork — the transmission-electron-microscope photo shows only one instrument, not the two the source alt describes, and the Stainless-Steel Biofilm micrograph has a dark blue background with rod-shaped cells, not the "black background" and "rectangles" the source alt describes; the source alt for the light-microscope summary table also silently drops its Two-photon row and misattributes that row's mouse-intestine example image to Confocal instead — both reported as source-alt defects, and the table below transcribes all seven rows from the table image itself, with the Confocal row's own example (*Escherichia coli* stained with acridine orange) and a separate Two-photon row restored; a `longdesc` added for every figure that is a multi-step or multi-part process diagram (Oil Lens, Phase-Contrast, Direct/Indirect Immunofluorescence diagram, electron-microscope schematic, Biofilms, and the labeled brightfield photo); the three summary-table images (Light, Electron, and Scanning-Probe Microscopes) each transcribed as a Markdown table from the table image, checked against the PDF page, with the source image kept immediately after as a mediafigure for its sample micrographs only (the Electron Microscopes table image and its source alt both print "Campylobactor jejuni"; the transcribed table prints *Campylobacter jejuni*, reported as a source defect); feature boxes rendered as callouts; of the eight Check Your Understanding bullets across six boxes, six (brightfield vs. darkfield; phase-contrast vs. DIC; why fluorochromes are needed; confocal vs. two-photon specimens; light- vs. scanning-probe magnification; and TEM vs. SEM specimens, a sort-into-bins item built from the Electron Microscopes table) are now graded — five `sortbins` and one `multiplechoice` — from this section's own sentences and tables (6 Check Your Understanding questions graded from the module's own sentences or tables rather than answered in prose; the source prints no key for them), and two (electron microscopy's advantages and disadvantages, and scanning probe microscopy's advantage and limitation) remain body self-checks with model answers and rubrics assembled from this section's own preceding text, because the module states only one advantage-and-disadvantage pair for each and no further distinguishing phrases exist to fill out a sort-into-bins item (the Electron Microscopy and Scanning Probe Microscopy boxes each print two distinct bullets, not a repeated stem, so neither needed rewording); a sort-into-bins item built from the Scanning Probe Microscopes table is added to the Practice group for the third objective, since no page item asked the STM/AFM distinction the table's Key uses column draws (conducting vs. nonconducting samples, and the cantilever-laser vs. quantum-tunneling detection each uses); the Clinical Focus box's "Jump to the next / Go back to the previous Clinical Focus box" links replaced with two plain sentences linking to Sections 2.4 and 2.1; the term "Differential interference contrast (DIC) microscopes" has no Glossary appendix entry, so its Key terms meaning is written from this section's own defining sentence (1 of 30 definitions taken from the defining sentence; the other 29 are from the Glossary appendix); the end-of-section Multiple Choice, Fill in the Blank, Short Answer, and Critical Thinking questions adapted into the closing interactive Practice block, sorted under the objective each supports, using all twelve source items; the Short Answer "Art Connection" labeling task adapted into a mediafigure (an author-written caption, since the source prints none, describing only the numbered call-outs present rather than naming the parts) followed by a self-check whose model answer and rubric map each number to the part named in the Brightfield Microscopes discussion above; of the section's four remaining unkeyed Short Answer and Critical Thinking Practice items, one (the function of the condenser) is now a `multiplechoice` graded from this section's own sentence (1 of the source's unkeyed Short Answer questions is graded from the module's own sentence rather than answered in prose; the source prints no key for it), and model answers for the other Short Answer question, the two Critical Thinking questions, and the two remaining Check Your Understanding self-checks are written from this section's own text, because the source prints no answer key for any of them; each objective group also received one filler item built strictly from this section's own text with no new claim, because none of the twelve source items is both auto-graded and about the parts of a brightfield microscope or about the total-magnification calculation specifically: a term-recall `textin` ("diaphragm") for the first objective, and a term-recall `textin` ("total magnification") plus a select-the-term `multiplechoice` ("objective lens") built from the total-magnification sentence for the second; key terms compiled from the module's 30 defined terms and the book's Glossary appendix; the direct-immunofluorescence figure's alt gives panel (b) a dark purple background, because the source alt's "black background" is contradicted by the vendored image (erratum 817); the light-microscopes table's alt describes the Confocal sample image as white-gray cells on black, the "cells of various colors" clause that erratum 334 traced to the Two-photon row having been left on the Confocal clause by the earlier rewrite.</small>
+<small>This section is adapted from [Microbiology, Section 2.3: Instruments of Microscopy](https://openstax.org/books/microbiology/pages/2-3-instruments-of-microscopy) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP with `kind` set explicitly on every one after inspecting the artwork (`photo` for every micrograph and annotated photograph, `diagram` for the Oil Lens, Darkfield, Phase-Contrast, Direct/Indirect Immunofluorescence, TEM-vs-light, electron-microscope schematic, and Biofilms figures, each of which has at least one genuinely drawn panel); several source alts rewritten to describe what the image actually shows, and two corrected against the artwork — the transmission-electron-microscope photo shows only one instrument, not the two the source alt describes, and the Stainless-Steel Biofilm micrograph has a dark blue background with rod-shaped cells, not the "black background" and "rectangles" the source alt describes; the source alt for the light-microscope summary table also silently drops its Two-photon row and misattributes that row's mouse-intestine example image to Confocal instead — both reported as source-alt defects, and the table below transcribes all seven rows from the table image itself, with the Confocal row's own example (*Escherichia coli* stained with acridine orange) and a separate Two-photon row restored; a `longdesc` added for every figure that is a multi-step or multi-part process diagram (Oil Lens, Phase-Contrast, Direct/Indirect Immunofluorescence diagram, electron-microscope schematic, Biofilms, and the labeled brightfield photo); the three summary-table images (Light, Electron, and Scanning-Probe Microscopes) each transcribed as a Markdown table from the table image, checked against the PDF page, with the source image kept immediately after as a mediafigure for its sample micrographs only (the Electron Microscopes table image and its source alt both print "Campylobactor jejuni"; the transcribed table prints *Campylobacter jejuni*, reported as a source defect); feature boxes rendered as callouts; of the eight Check Your Understanding bullets across six boxes, six (brightfield vs. darkfield; phase-contrast vs. DIC; why fluorochromes are needed; confocal vs. two-photon specimens; light- vs. scanning-probe magnification; and TEM vs. SEM specimens, a sort-into-bins item built from the module's own TEM-versus-SEM sentences) are now graded — four `sortbins` and two `multiplechoice` — from this section's own sentences and tables (6 Check Your Understanding questions graded from the module's own sentences or tables rather than answered in prose; the source prints no key for them), and two (electron microscopy's advantages and disadvantages, and scanning probe microscopy's advantage and limitation) remain body self-checks with model answers and rubrics assembled from this section's own preceding text, because the module states only one advantage-and-disadvantage pair for each and no further distinguishing phrases exist to fill out a sort-into-bins item (the Electron Microscopy and Scanning Probe Microscopy boxes each print two distinct bullets, not a repeated stem, so neither needed rewording); a sort-into-bins item built from the Scanning Probe Microscopes table is added to the Practice group for the third objective, since no page item asked the STM/AFM distinction the table's Key uses column draws (conducting vs. nonconducting samples, and the cantilever-laser vs. quantum-tunneling detection each uses); the Clinical Focus box's "Jump to the next / Go back to the previous Clinical Focus box" links replaced with two plain sentences linking to Sections 2.4 and 2.1; the term "Differential interference contrast (DIC) microscopes" has no Glossary appendix entry, so its Key terms meaning is written from this section's own defining sentence (1 of 30 definitions taken from the defining sentence; the other 29 are from the Glossary appendix); the end-of-section Multiple Choice, Fill in the Blank, Short Answer, and Critical Thinking questions adapted into the closing interactive Practice block, sorted under the objective each supports, using all twelve source items; the Short Answer "Art Connection" labeling task adapted into a mediafigure (an author-written caption, since the source prints none, describing only the numbered call-outs present rather than naming the parts) followed by a self-check whose model answer and rubric map each number to the part named in the Brightfield Microscopes discussion above; of the section's four remaining unkeyed Short Answer and Critical Thinking Practice items, one (the function of the condenser) is now a `multiplechoice` graded from this section's own sentence (1 of the source's unkeyed Short Answer questions is graded from the module's own sentence rather than answered in prose; the source prints no key for it), and model answers for the other Short Answer question, the two Critical Thinking questions, and the two remaining Check Your Understanding self-checks are written from this section's own text, because the source prints no answer key for any of them; the first two objective groups also received filler items built strictly from this section's own text with no new claim, because the first group's only auto-graded source item is the converted condenser question and the second group holds a single source item (the 400× total-magnification Fill in the Blank, rendered as a `multiplechoice` because its key is a number, with distractors from the same arithmetic: the sum 50⨯, the 100× objective's 1000⨯, and a tenfold slip, 4000⨯): a term-recall `textin` ("diaphragm") for the first objective, and a term-recall `textin` ("total magnification") plus a select-the-term `multiplechoice` ("10 times") built from the module's ocular-lens sentence, its distractors the module's other printed magnifications (the 4× to 100× objective range and the 40× example), for the second; the two Fill in the Blank items of the third objective ("fluorochromes" and "atomic force microscope") are placed at the head of their group, ahead of the five source Multiple Choice items, so that the Scanning Probe Microscopes sort-into-bins item, whose bins print "AFM", follows them; key terms compiled from the module's 30 defined terms and the book's Glossary appendix; the direct-immunofluorescence figure's alt gives panel (b) a dark purple background, because the source alt's "black background" is contradicted by the vendored image (erratum 817); the labeled brightfield photo's alt ties number 9 to the slide-holder assembly on top of the stage that its "mechanical stage" leader marks and counts two visible objective lenses, because the source alt's "stage (#9)" and "four lenses" are contradicted by the vendored image; the light-microscopes table's alt describes the Confocal sample image as white-gray cells on black, the "cells of various colors" clause that erratum 334 traced to the Two-photon row having been left on the Confocal clause by the earlier rewrite.</small>

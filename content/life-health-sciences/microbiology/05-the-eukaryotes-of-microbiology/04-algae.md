@@ -44,13 +44,13 @@ Brown algae (Phaeophyta) are multicellular marine seaweeds. Some can be extremel
 
 The Archaeplastids include the green algae (Chlorophyta), the red algae (Rhodophyta), another group of green algae (Charophyta), and the land plants. The Charophyta are the most similar to land plants because they share a mechanism of cell division and an important biochemical pathway, among other traits that the other groups do not have. Like land plants, the Charophyta and Chlorophyta have chlorophyll *a* and chlorophyll *b* as photosynthetic pigments, cellulose cell walls, and starch as a carbohydrate storage molecule. *Chlamydomonas* is a green alga that has a single large chloroplast, two flagella, and a stigma (eyespot); it is important in molecular biology research, illustrated in the figure below.
 
-{{< mediafigure src="microbiology/OSC_Microbio_05_04_algae" alt="Six photographs of algae: (a) green kelp fronds in sunlit water; (b) a red, leafy marine alga; (c) a small green leafy alga growing from sand; (d) a blue bioluminescent wave breaking at night; (e) a colorized micrograph of glass-like diatoms; (f) three micrographs of round, colonial green algae, their surfaces dotted with individual green cells." longdesc="Panel (a) looks up through a kelp forest: long green fronds rise toward sunlit water with a few small fish beneath them. Panel (b) is a close-up of a red, finely branched marine alga growing over rock. Panel (c) shows a single small green alga with flattened, segmented branches standing in pale sand among thin seagrass blades. Panel (d) is a night-time shoreline where a breaking wave glows blue against a dark sky and rocks. Panel (e) is a dark-field micrograph of many glass-like diatoms of different shapes, including needle-like, boat-shaped, ribbed, and a large round disc. Panel (f) is three light micrographs of Volvox colonies with scale bars: at left, a single hollow sphere whose wall is a mesh of tiny green cells, with several small green daughter colonies inside; in the middle, a sphere holding four large daughter colonies; at right, a ruptured sphere releasing daughter colonies, with free daughter colonies beside it." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_05_04_algae" alt="Six photographs of algae: (a) green kelp fronds in sunlit water; (b) a red, leafy marine alga; (c) a small green leafy alga growing from sand; (d) a blue bioluminescent wave breaking at night; (e) a colorized micrograph of glass-like diatoms; (f) three micrographs of round, colonial green algae, their surfaces dotted with individual green cells." longdesc="Panel (a) looks up through a kelp forest: long green fronds rise toward sunlit water with a few small fish beneath them. Panel (b) is a close-up of a red, finely branched marine alga growing over rock. Panel (c) shows a single small green alga with flattened, segmented branches standing in pale sand among thin seagrass blades. Panel (d) is a night-time shoreline where a breaking wave glows blue below a dark sky whose low clouds glow orange from town lights along the horizon, with dark rocks in the foreground. Panel (e) is a dark-field micrograph of many glass-like diatoms of different shapes, including needle-like, boat-shaped, ribbed, and a large round disc. Panel (f) is three light micrographs of Volvox colonies with scale bars: at left, a single hollow sphere whose wall of tiny cells shows at its edge as a beaded dark-green rim, with about nine small green daughter colonies spaced just inside the wall; in the middle, a sphere with a clearly dotted mesh wall holding four large green daughter colonies; at right, a large mesh-walled mass with a wedge missing (the ruptured sphere) holding about six green daughter colonies, with three more free green daughter colonies floating outside it, one of them trailing a thin wavy filament that runs off to the left." kind="photo" >}}
 (a) These large multicellular kelps are members of the brown algae. Note the "leaves" and "stems" that make them appear similar to green plants. (b) This is a species of red algae that is also multicellular. (c) The green alga *Halimeda incrassata*, shown here growing on the sea floor in shallow water, appears to have plant-like structures, but is not a true plant. (d) Bioluminescence, visible in the cresting wave in this picture, is a phenomenon of certain dinoflagellates. (e) Diatoms (pictured in this micrograph) produce silicaceous tests (skeletons) that form diatomaceous earths. (f) Colonial green algae, like volvox in these three micrographs, exhibit simple cooperative associations of cells. (credit a, e: modification of work by NOAA; credit b: modification of work by Ed Bierman; credit c: modification of work by James St. John; credit d: modification of work by "catalano82"/Flickr; credit f: modification of work by Dr. Ralf Wagner)
 {{< /mediafigure >}}
 
 *Chlorella* is a nonmotile, large, unicellular alga, and *Acetabularia* is an even larger unicellular green alga. The size of these organisms challenges the idea that all cells are small, and they have been used in genetics research since Joachim Hämmerling (1901–1980) began to work with them in 1943. *Volvox* is a colonial, unicellular alga, shown among the colonial green algae in the composite figure above. A larger, multicellular green alga is *Ulva*, also known as the sea lettuce because of its large, edible, green blades. The range of life forms within the Chlorophyta—from unicellular to various levels of coloniality to multicellular forms—has been a useful research model for understanding the evolution of multicellularity. The red algae are mainly multicellular but include some unicellular forms. They have rigid cell walls containing agar or carrageenan, which are useful as food solidifying agents and as a solidifier added to growth media for microbes.
 
-{{< mediafigure src="microbiology/OSC_Microbio_05_04_green" alt="A labeled diagram of a Chlamydomonas cell beside a scanning electron micrograph of Chlamydomonas cells. The diagram shows an oval cell with two long flagella at one end, a central nucleus, a reddish stigma (eyespot) near the flagella, a large green chloroplast, and small pale blue starch granules. The micrograph shows several oval cells, each trailing two thin flagella from one end, beside a 2 µm scale bar." longdesc="In the diagram, a large oval outline represents the cell, with two long flagella curving outward from a narrow neck at the top. Lines point from labels to structures inside the cell: 'nucleus' to a rounded body near the center; 'stigma (eyespot)' to a cluster of small dots near the flagella base; 'chloroplast' to a large structure filling much of the cell; and 'starch granule' to small pale ovals within the chloroplast. A fifth label, 'flagellum', sits between the two panels, with one line running left to a flagellum of the diagram and another running right to a flagellum of a cell in the micrograph. In the micrograph beside it, several oval-bodied cells each trail two thin flagella from one end." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_05_04_green" alt="A labeled diagram of a Chlamydomonas cell beside a scanning electron micrograph of Chlamydomonas cells. The diagram shows an oval cell with two long flagella at one end, a central nucleus, a reddish stigma (eyespot) near the flagella, a large green chloroplast, and small pale blue starch granules. The micrograph shows several oval cells, the central one trailing two thin flagella from one end, beside a 2 µm scale bar." longdesc="In the diagram, a large oval outline represents the cell, with two long flagella curving outward from a narrow neck at the top. Lines point from labels to structures inside the cell: 'nucleus' to a rounded body near the center; 'stigma (eyespot)' to a cluster of small dots near the flagella base; 'chloroplast' to a green, cup-shaped structure lining the inside of the cell wall; and 'starch granule' to a small pale blue oval in the central cytoplasm, just inside the chloroplast. A fifth label, 'flagellum', sits between the two panels, with one line running left to a flagellum of the diagram and another running right to a flagellum of a cell in the micrograph. In the micrograph beside it, several oval-bodied cells crowd the frame; the central cell trails two thin flagella from one end." kind="diagram" >}}
 *Chlamydomonas* is a unicellular green alga.
 {{< /mediafigure >}}
 
@@ -90,7 +90,7 @@ dinoflagellates produce neurotoxins that can cause paralysis in humans or fish
 
 ### Explain why algae are included within the discipline of microbiology
 
-{{< selfcheck question="Why are algae not considered parasitic?" hint="Identify the nutritional mode stated for algae at the start of the section, and how that relates to depending on a host organism." >}}
+{{< selfcheck question="Why are algae not considered parasitic?" hint="Reread the opening paragraph of this section." >}}
 Algae are autotrophic protists, and although algae are typically not pathogenic, some produce toxins.
 ===CHECKS===
 Algae are autotrophic protists
@@ -101,13 +101,14 @@ some produce toxins
 {{< textin
   question="Algae are a diverse group of photosynthetic ________ protists."
   answer="eukaryotic"
-  hint="Contrast this cell type with the prokaryotic cyanobacteria the section distinguishes algae from."
+  hint="Reread the Summary's first bullet."
 >}}
 
 {{< textin
   question="Some types of algae, even those that are microscopic, are regularly ________ by humans and other animals."
   answer="eaten"
-  hint="Algae serve as food, not only as a subject of study."
+  accept="consumed"
+  hint="Reread the opening paragraph of this section."
 >}}
 
 ### Describe the unique characteristics of algae
@@ -115,7 +116,7 @@ some produce toxins
 {{< multiplechoice
   question="Which polysaccharide found in red algal cell walls is a useful solidifying agent?"
   answer="agar"
-  hint="This wall component is also named as a laboratory and food-production solidifying agent earlier in the section."
+  hint="Reread the last two sentences of the paragraph after the six-panel algae figure."
 >}}
 chitin
 cellulose
@@ -132,7 +133,8 @@ agar
 {{< textin
   question="Algae with chloroplasts with three or four membranes are a result of ________ ________."
   answer="secondary endosymbiosis"
-  hint="Distinguish this two-membrane-adding event from the primary chloroplast's original two membranes."
+  accept="secondary endosymbiotic event"
+  hint="Reread the second paragraph of this section."
 >}}
 
 ### Identify examples of toxin-producing algae
@@ -140,7 +142,7 @@ agar
 {{< multiplechoice
   question="Which protists are associated with red tides?"
   answer="dinoflagellates"
-  hint="This group is specifically tied to red tides when its population becomes dense."
+  hint="Reread the paragraph just before the first figure in Algal Diversity."
 >}}
 red algae
 brown algae
@@ -151,13 +153,13 @@ green algae
 {{< textin
   question="Major toxin producers responsible for paralytic shellfish poisoning include *Gonyaulax* and ________."
   answer="Alexandrium"
-  hint="Name the second genus paired with Gonyaulax as a cause of this specific poisoning."
+  hint="Reread the paragraph just before the first figure in Algal Diversity."
 >}}
 
 {{< multiplechoice
   question="Which toxin-producing organism named in this section is known as a fish killer, producing toxins during certain parts of its life cycle that have caused memory loss and confusion in exposed humans?"
   answer="*Pfiesteria piscicida*"
-  hint="Look for the species named specifically for its effect on fish and for human memory loss and confusion, distinct from the paralytic-poisoning producers."
+  hint="Reread the last sentence of the paragraph just before the first figure in Algal Diversity."
 >}}
 *Gonyaulax*
 diatoms
@@ -170,7 +172,7 @@ diatoms
 {{< multiplechoice
   question="Which is the term for the hard outer covering of some dinoflagellates?"
   answer="theca"
-  hint="This is the armor-like structure some dinoflagellates form from cellulose plates."
+  hint="Reread the second paragraph of Algal Diversity."
 >}}
 theca
 thallus
@@ -181,7 +183,8 @@ shell
 {{< textin
   question="What is a distinctive feature of diatoms?"
   answer="frustules"
-  hint="Name the outer cell wall structure diatoms have that is made of crystallized silica."
+  accept="silica cell walls|cell walls of silica|silica walls"
+  hint="Reread the stramenopiles paragraph in Algal Diversity."
 >}}
 
 {{< textin
@@ -192,7 +195,7 @@ shell
 
 ### Classify algal organisms according to major groups
 
-{{< selfcheck question="Which groups contain the multicellular algae?" hint="Check the diversity statements made for the brown, red, and green algae in turn." >}}
+{{< selfcheck question="Which groups contain the multicellular algae?" hint="Reread the Algal Diversity subsection, group by group." >}}
 Brown algae are multicellular marine seaweeds. The red algae are mainly multicellular, though they include some unicellular forms. The green algae range from unicellular to various levels of coloniality to multicellular forms.
 ===CHECKS===
 Brown algae are multicellular marine seaweeds
@@ -203,7 +206,7 @@ green algae range from unicellular to various levels of coloniality to multicell
 {{< multiplechoice
   question="Which supergroup includes the dinoflagellates, diatoms, golden algae, and brown algae discussed in this section?"
   answer="Chromalveolata"
-  hint="This supergroup is named in the section's opening paragraph, paired with a second supergroup that includes the red and green algae."
+  hint="Reread the second sentence of this section."
 >}}
 Excavata
 Chromalveolata
@@ -214,9 +217,10 @@ Euglenozoa
 {{< textin
   question="Within the Archaeplastida, the group most similar to land plants — sharing a mechanism of cell division and an important biochemical pathway — is the ________."
   answer="Charophyta"
-  hint="This is the second green-algae group named in the Archaeplastida paragraph, distinct from the Chlorophyta."
+  accept="charophyte"
+  hint="Reread the second sentence of the Archaeplastida paragraph."
 >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 5.4: Algae](https://openstax.org/books/microbiology/pages/5-4-algae) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection, with explicit `kind`; the dinoflagellate micrograph's alt is rewritten to describe the two visible projections without naming them "theca" or "armor"; the six-panel algae composite gets a new alt summarizing all six photographs (the source alt covered them too, at length, so the wording is condensed and moved partly to `longdesc`) and its printed "Bioluminesence" is corrected to "Bioluminescence" (a one-word source typo); the Chlamydomonas figure's alt is rewritten because the source alt described only the labeled diagram panel and said nothing about the micrograph panel that is also part of the vendored image, and a `longdesc` walks the diagram's labels (an incomplete source alt); the first figure carries `eager="true"`. The module's own cross-reference for the sentence "*Volvox* is a colonial, unicellular alga" points (in both the CNXML and the print book, Figure 5.37) at the Chlamydomonas figure, which shows no Volvox; *Volvox* is actually shown in panel (f) of the composite figure (Figure 5.36), so the page's descriptive phrase points there instead and the mistargeted cross-reference is a suspected source defect. The Summary's fourth bullet is missing a verb ("blooms that can and aquatic wildlife"); "harm" is inserted as the minimal correction. The module's second spelling of the green-algal group, "Charaphyta," is printed as "Charophyta," matching its own defined term two sentences earlier (a one-word source typo). The Check Your Understanding box's one bullet remains a body self-check: the honest answer (dinoflagellates, via the red-tide sentence) is the same fact the section's own "which protists are associated with red tides?" Multiple Choice already tests as a graded item, so converting the CYU too would ask it twice. Two of the source's three unkeyed Short Answer questions ("Why are algae not considered parasitic?" and "Which groups contain the multicellular algae?") remain self-checks with model answers and rubrics assembled only from this module's text, because their honest answers are not fixed by one sentence; the third ("What is a distinctive feature of diatoms?") is graded as a `textin` keyed `frustules` from the module's own defining sentence. No source exercise was omitted; the two source Multiple Choice and two Fill in the Blank items are used verbatim in Practice. The module's own text supports the source's Fill in the Blank key ("secondary endosymbiosis" for chloroplasts with three or four membranes) exactly, so it stands unchanged. Nine author-written items (five `textin`, two `multiplechoice`, two `selfcheck`-format prose already counted above) fill the remaining Practice slots to reach this book's three-per-objective floor, since the module's own exercise set (eight items plus one Check Your Understanding bullet) falls short of the fifteen a five-objective section needs: two cloze items from this section's own summary and body sentences ("eukaryotic," "eaten"); a `textin` naming the second red-tide genus (*Alexandrium*) and a `multiplechoice` on *Pfiesteria piscicida*, both from the toxin-producer paragraph; a `textin` naming the giant-kelp genus (*Laminaria*) from the brown-algae paragraph; and a `multiplechoice` on the Chromalveolata supergroup and a `textin` naming the Charophyta, both from the module's own classification sentences — every filler's source sentence is named above or in the source ledger. Key terms compiled from the module's eleven defined terms; the module supplies a Glossary-appendix definition for only one of them (`algae`), so the other ten are sentence-derived, as the module's own scan predicted. The cross-reference to Section 4.3 is rendered as an absolute site-root Markdown link to its published page; the *Chlamydomonas* figure's alt gives the starch granules as pale blue, because the source alt's "white circles" is contradicted by the vendored drawing (erratum 818).</small>
+<small>This section is adapted from [Microbiology, Section 5.4: Algae](https://openstax.org/books/microbiology/pages/5-4-algae) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection, with explicit `kind`; the dinoflagellate micrograph's alt is rewritten to describe the two visible projections without naming them "theca" or "armor"; the six-panel algae composite gets a new alt summarizing all six photographs (the source alt covered them too, at length, so the wording is condensed and moved partly to `longdesc`) and its printed "Bioluminesence" is corrected to "Bioluminescence" (a one-word source typo); the Chlamydomonas figure's alt is rewritten because the source alt described only the labeled diagram panel and said nothing about the micrograph panel that is also part of the vendored image, and a `longdesc` walks the diagram's labels (an incomplete source alt); the first figure carries `eager="true"`. The module's own cross-reference for the sentence "*Volvox* is a colonial, unicellular alga" points (in both the CNXML and the print book, Figure 5.37) at the Chlamydomonas figure, which shows no Volvox; *Volvox* is actually shown in panel (f) of the composite figure (Figure 5.36), so the page's descriptive phrase points there instead and the mistargeted cross-reference is a suspected source defect. The Summary's fourth bullet is missing a verb ("blooms that can and aquatic wildlife"); "harm" is inserted as the minimal correction. The module's second spelling of the green-algal group, "Charaphyta," is printed as "Charophyta," matching its own defined term two sentences earlier (a one-word source typo). The Check Your Understanding box's one bullet remains a body self-check: the honest answer (dinoflagellates, via the red-tide sentence) is the same fact the section's own "which protists are associated with red tides?" Multiple Choice already tests as a graded item, so converting the CYU too would ask it twice. Two of the source's three unkeyed Short Answer questions ("Why are algae not considered parasitic?" and "Which groups contain the multicellular algae?") remain self-checks with model answers and rubrics assembled only from this module's text, because their honest answers are not fixed by one sentence; the third ("What is a distinctive feature of diatoms?") is graded as a `textin` keyed `frustules` from the module's own defining sentence. No source exercise was omitted; the three source Multiple Choice and two Fill in the Blank items are used verbatim in Practice. The module's own text supports the source's Fill in the Blank key ("secondary endosymbiosis" for chloroplasts with three or four membranes) exactly, so it stands unchanged. Seven author-written items (five `textin`, two `multiplechoice`) fill the remaining Practice slots to reach this book's three-per-objective floor, since the module's own exercise set (eight items plus one Check Your Understanding bullet) falls short of the fifteen a five-objective section needs: two cloze items from this section's own summary and body sentences ("eukaryotic," "eaten"); a `textin` naming the second red-tide genus (*Alexandrium*) and a `multiplechoice` on *Pfiesteria piscicida*, both from the toxin-producer paragraph; a `textin` naming the giant-kelp genus (*Laminaria*) from the brown-algae paragraph; and a `multiplechoice` on the Chromalveolata supergroup and a `textin` naming the Charophyta, both from the module's own classification sentences — every filler's source sentence is named above or in the source ledger. Key terms compiled from the module's eleven defined terms; the module supplies a Glossary-appendix definition for only one of them (`algae`), so the other ten are sentence-derived, as the module's own scan predicted. The cross-reference to Section 4.3 is rendered as an absolute site-root Markdown link to its published page; the *Chlamydomonas* figure's alt gives the starch granules as pale blue, because the source alt's "white circles" is contradicted by the vendored drawing (erratum 818).</small>

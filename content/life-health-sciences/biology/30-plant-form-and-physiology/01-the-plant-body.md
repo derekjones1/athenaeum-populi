@@ -45,7 +45,7 @@ Meristems produce cells that quickly differentiate, or specialize, and become pe
 
 Secondary tissues are either simple (composed of similar cell types) or complex (composed of different cell types). Dermal tissue, for example, is a simple tissue that covers the outer surface of the plant and controls gas exchange. Vascular tissue is an example of a complex tissue, and is made of two specialized conducting tissues: xylem and phloem. Xylem tissue transports water and nutrients from the roots to different parts of the plant, and includes three different cell types: vessel elements and tracheids (both of which conduct water), and xylem parenchyma. Phloem tissue, which transports organic compounds from the site of photosynthesis to other parts of the plant, consists of four different cell types: sieve cells (which conduct photosynthates), companion cells, phloem parenchyma, and phloem fibers. Unlike xylem conducting cells, phloem conducting cells are alive at maturity. The xylem and phloem always lie adjacent to each other (see the figure below). In stems, the xylem and the phloem form a structure called a **vascular bundle**; in roots, this is termed the **vascular stele** or **vascular cylinder**.
 
-{{< mediafigure src="biology/Figure_30_01_02f" kind="photo" alt="Micrograph shows a round plant stem cross section. There are four teardrop-shaped vascular bundles, with the narrow point of the teardrop meeting at a round xylem vessel. Within each teardrop near the center are two to four more xylem vessels. To the outside of the xylem vessels are much smaller phloem cells. The four vascular bundles are encased in ground tissue. Cells of the ground tissue are somewhat larger than phloem. The stem is protected by an outer layer of dermal tissue, made up of several layers of cells smaller than phloem cells." longdesc="Four call-out labels point into the round micrograph. At upper left, 'Epidermis (Dermal tissue)' points up and to the right, to the thin outer rim of the section. At upper right, 'Phloem' points down and to the left, to the small, densely packed cells just outside two of the four teardrop-shaped vascular bundles. At lower left, 'Xylem' points up and to the right, to the large, open, circular vessels clustered at the narrow point of one bundle. At lower right, 'Vascular bundle' points up and to the left, to one whole teardrop-shaped cluster of xylem and phloem cells. A white scale bar in the lower left corner of the image is labeled '200 µm.'" >}}
+{{< mediafigure src="biology/Figure_30_01_02f" kind="photo" alt="Micrograph shows a round plant root cross section. There are four teardrop-shaped vascular bundles, with the narrow point of the teardrop meeting at a round xylem vessel. Within each teardrop near the center are two to four more xylem vessels. To the outside of the xylem vessels are much smaller phloem cells. The four vascular bundles are encased in ground tissue. Cells of the ground tissue are somewhat larger than phloem. The stem is protected by an outer layer of dermal tissue, made up of several layers of cells smaller than phloem cells." longdesc="Four call-out labels point into the round micrograph. At upper left, 'Epidermis (Dermal tissue)' points up and to the right, to the thin outer rim of the section. At upper right, 'Phloem' labels a long diagonal bracket spanning the band of small, blue-stained cells along the upper-right edge, outside the large xylem vessel of the upper-right bundle. At middle left, 'Xylem' has two leader lines, up and to the right, to two large, open, circular vessels of the upper-left bundle. At lower right, 'Vascular bundle' labels a horizontal bracket spanning the upper-right bundle from the center of the section out toward the right edge. A white scale bar in the lower left corner of the image is labeled '200 µm.'" >}}
 This light micrograph shows a cross section of a squash (*Curcurbita maxima*) root. Each teardrop-shaped vascular bundle consists of large xylem vessels toward the inside and smaller phloem cells toward the outside. Xylem cells, which transport water and nutrients from the roots to the rest of the plant, are dead at functional maturity. Phloem cells, which transport sugars and other organic compounds from photosynthetic tissue to the rest of the plant, are living. The vascular bundles are encased in ground tissue and surrounded by dermal tissue. (credit: modification of work by "(biophotos)"/Flickr; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
@@ -80,15 +80,15 @@ A vascular plant consists of two organ systems: the shoot system and the root sy
 >}}
 
 {{< textin
-  question="The belowground portion of a plant that supports it and absorbs water and minerals is called the ________."
-  answer="root system"
-  hint="This organ system is usually underground, unlike the vegetative and reproductive parts above ground."
->}}
-
-{{< textin
   question="The shoot system includes the aboveground ________ portions (stems and leaves) and reproductive parts (flowers and fruits)."
   answer="vegetative"
   hint="These are the plant's non-reproductive parts — the opposite of the reproductive flowers and fruits named in the same sentence."
+>}}
+
+{{< textin
+  question="The belowground portion of a plant that supports it and absorbs water and minerals is called the ________."
+  answer="root system"
+  hint="Look at the Plant Organ Systems paragraph's sentence on the organ system that supports the plant."
 >}}
 
 ### Distinguish between meristematic tissue and permanent tissue
@@ -96,7 +96,7 @@ A vascular plant consists of two organ systems: the shoot system and the root sy
 {{< multiplechoice
   question="Plant regions of continuous growth are made up of ________."
   answer="meristematic tissue"
-  hint="These cells stay undifferentiated or incompletely differentiated so they can keep dividing and contributing to the plant's growth — unlike the tissue type in the other three options."
+  hint="Look at the first Plant Tissues paragraph, on where each general type of tissue is found."
 >}}
 dermal tissue
 vascular tissue
@@ -105,20 +105,25 @@ permanent tissue
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Plant tissue containing cells that constantly divide and contribute to plant growth is called ________."
-  answer="meristematic tissue"
-  accept="meristematic"
-  hint="This tissue's cells are undifferentiated or incompletely differentiated, letting them keep dividing rather than settle into a permanent role."
+  question="Meristematic tissue consists of actively dividing cells found in root and shoot ________."
+  answer="tips"
+  hint="Look at the Summary's sentence on meristematic tissue."
 >}}
 
 {{< textin
   question="Plant tissue composed of cells that are no longer actively dividing is called ________."
   answer="permanent tissue"
   accept="permanent"
-  hint="Once meristematic cells differentiate, they take on this specialized, non-dividing role — the endpoint of tissue development, not the region where it starts growing."
+  hint="Look at the first Plant Tissues paragraph, which names the two general types of plant tissue."
 >}}
 
 ### Identify and describe the three regions where plant growth occurs
+
+{{< textin
+  question="The plant region of continuous growth is called a ________."
+  answer="meristem"
+  hint="Reread the Plant Tissues subsection; the answer names a place in the plant, not a tissue type."
+>}}
 
 {{< selfcheck question="What type of meristem is found only in monocots, such as lawn grasses? Explain how this type of meristematic tissue is beneficial in lawn grasses that are mowed each week." hint="Think about where on the leaf blade this meristem sits, and what keeps growing there even after the leaf tip is cut off." >}}
 Lawn grasses and other monocots have an intercalary meristem, which is a region of meristematic tissue at the base of the leaf blade. This is beneficial to the plant because it can continue to grow even when the tip of the plant is removed by grazing or mowing.
@@ -129,12 +134,6 @@ it can continue to grow even when the tip of the plant is removed by grazing or 
 {{< /selfcheck >}}
 
 {{< textin
-  question="The plant region of continuous growth is called a ________."
-  answer="meristem"
-  hint="Meristematic tissue cells are found here — it names the place, not the tissue type itself."
->}}
-
-{{< textin
   question="Meristematic tissue located at the tips of stems and roots, which enables a plant to extend in length, is called the ________."
   answer="apical meristem"
   hint="This region sits at the very tip — of the shoot or the root — where the plant lengthens rather than thickens."
@@ -143,13 +142,13 @@ it can continue to grow even when the tip of the plant is removed by grazing or 
 {{< textin
   question="Meristematic tissue that enables a plant to increase in thickness or girth is called the ________."
   answer="lateral meristem"
-  hint="This meristem runs along the side of stems and roots in a maturing plant, rather than sitting at a growing tip."
+  hint="Look at the Plant Tissues paragraph on the three types of meristematic tissue."
 >}}
 
 {{< textin
-  question="Meristematic tissue located at nodes and the bases of leaf blades, found only in monocots, is called the ________."
-  answer="intercalary meristem"
-  hint="This meristem lets a mowed grass blade keep lengthening from its base, even after the tip is cut off."
+  question="Intercalary meristems occur only in monocots, at the bases of leaf blades and at ________ (the areas where leaves attach to a stem)."
+  answer="nodes"
+  hint="Look at the Plant Tissues paragraph on the three types of meristematic tissue."
 >}}
 
 ### Summarize the roles of dermal tissue, vascular tissue, and ground tissue
@@ -157,7 +156,7 @@ it can continue to grow even when the tip of the plant is removed by grazing or 
 {{< multiplechoice
   question="Which of the following is the major site of photosynthesis?"
   answer="ground tissue"
-  hint="This simple tissue also supports the vascular tissue running through it and can store water and sugars."
+  hint="Look at the Plant Tissues paragraph that names the three main types of permanent tissue and gives each one's role."
 >}}
 apical meristem
 ground tissue
@@ -182,24 +181,34 @@ phloem tissue carries sugars from the sites of photosynthesis to the rest of the
 >}}
 
 {{< textin
-  question="Tissue made up of xylem and phloem that transports food and water throughout the plant is called ________."
-  answer="vascular tissue"
-  accept="vascular"
-  hint="This complex tissue is made of two specialized conducting tissues that always lie adjacent to each other."
+  question="Strands of root tissue made up of xylem and phloem are called the ________."
+  answer="vascular stele"
+  accept="stele|vascular cylinder"
+  hint="Look at the last sentence of the Plant Tissues paragraph on simple and complex tissues."
 >}}
 
 {{< textin
   question="Strands of stem tissue made up of xylem and phloem form a structure called a ________."
   answer="vascular bundle"
-  hint="In roots, this same xylem-and-phloem strand structure is instead called the vascular stele or vascular cylinder."
+  hint="Look at the last sentence of the Plant Tissues paragraph on simple and complex tissues."
 >}}
 
 ### Compare simple plant tissue with complex plant tissue
 
+{{< multiplechoice
+  question="Which of the following is an example of a complex tissue?"
+  answer="vascular tissue"
+  hint="Look at the Plant Tissues paragraph on simple and complex tissues."
+>}}
+dermal tissue
+vascular tissue
+ground tissue
+{{< /multiplechoice >}}
+
 {{< textin
   question="Simple tissues are made up of ________ cell types; examples include dermal tissue and ground tissue."
   answer="similar"
-  hint="Think about what dermal and ground tissue's cells have in common with each other, compared to the two different cell types that make up vascular tissue."
+  hint="Look at the Summary's sentence on simple tissues."
 >}}
 
 {{< textin
@@ -208,17 +217,6 @@ phloem tissue carries sugars from the sites of photosynthesis to the rest of the
   hint="Vascular tissue is the section's example of this kind of tissue, made of two distinct types working together: xylem and phloem."
 >}}
 
-{{< multiplechoice
-  question="Vascular tissue is an example of a complex tissue, made of two specialized conducting tissues: ________."
-  answer="xylem and phloem"
-  hint="These are the two tissues that transport water and sugars through the plant, named earlier in the section."
->}}
-xylem and phloem
-dermal tissue and ground tissue
-apical meristem and lateral meristem
-root system and shoot system
-{{< /multiplechoice >}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 30.1: The Plant Body](https://openstax.org/books/biology-2e/pages/30-1-the-plant-body) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_30_01_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a drawn, labeled illustration, not a captured photograph); a longdesc added to both figures, walking through the labels and arrows the captions do not carry (the shoot/root panel labels and the four micrograph call-outs); the Link to Learning note rendered as a callout with its source URL kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eleven key-term recall items (shoot system, root system, meristematic tissue, permanent tissue, meristem, apical meristem, lateral meristem, intercalary meristem, dermal tissue, vascular tissue, vascular bundle) added from the glossary; three cloze recall items (vegetative; the simple/complex tissue pair "similar"/"different") and one select-the-term multiple choice ("xylem and phloem," distractors drawn from the module's own organ-system and meristem terms) added from the section summary to cover the "shoot vs. root" and "simple vs. complex tissue" objectives, which the glossary and exercise sets do not test directly.</small>
+<small>This section is adapted from [Biology 2e, Section 30.1: The Plant Body](https://openstax.org/books/biology-2e/pages/30-1-the-plant-body) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_30_01_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a drawn, labeled illustration, not a captured photograph); a longdesc added to both figures, walking through the labels and arrows the captions do not carry (the shoot/root panel labels and the four micrograph call-outs); the squash micrograph's (Figure_30_01_02f) source alt calls the section "a round plant stem cross section" while the module's own caption calls it a squash root, and the image shows a root's arrangement — the four xylem wedges meet at a central vessel, with no pith — so the page's alt says "root" — reported as a source defect; the Link to Learning note rendered as a callout with its source URL kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; nine key-term recall items (shoot system, root system, permanent tissue, meristem, apical meristem, lateral meristem, dermal tissue, vascular stele, vascular bundle) added from the glossary; four cloze recall items added from the section's own sentences — three from the Summary (vegetative; the simple/complex tissue pair "similar"/"different"; meristematic tissue in root and shoot "tips") and one from the Plant Tissues paragraph on meristem types (intercalary meristems at "nodes") — and one locally written multiple choice ("Which of the following is an example of a complex tissue?") built from the Plant Tissues sentence naming vascular tissue as a complex tissue, its distractors the section's two simple tissues, to cover objectives the glossary and exercise sets do not test directly; Practice items placed under the objective each tests, so the Critical Thinking question on intercalary meristems follows the meristem recall item.</small>

@@ -39,7 +39,7 @@ In this vaginal smear, the cell at the lower left is a clue cell with a unique a
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain the difference between vaginosis and vaginitis." hint="Think about what happens to the tissue (inflammation) versus what happens to the microbial population (an imbalance)." >}}
+{{< selfcheck question="Explain the difference between vaginosis and vaginitis." hint="Read the first two sentences of the Bacterial Vaginitis and Vaginosis subsection." >}}
 Vaginitis is inflammation of the vagina, often caused by a bacterial infection, while bacterial vaginosis (BV) is an imbalance in the normal vaginal microbiota that occurs without inflammation.
 ===CHECKS===
 vaginitis is inflammation of the vagina, often caused by a bacterial infection
@@ -97,7 +97,7 @@ disseminated infection can affect the heart, joints, and meninges
 {{< textin
   question="What organism commonly coinfects with *N. gonorrhoeae*?"
   answer="Chlamydia trachomatis"
-  accept="C. trachomatis"
+  accept="C. trachomatis|Chlamydia"
   hint="The CDC's combination antibiotic regimen for gonorrhea also treats this common co-infecting pathogen."
 >}}
 
@@ -177,7 +177,7 @@ The symptom-free latent phase between the secondary and tertiary stages
 {{< multiplechoice
   question="How do treponemal serologic tests detect an infection?"
   answer="By measuring antibodies directed against *T. pallidum* antigens"
-  hint="One diagnostic method observes the organism directly, and another measures antibodies against lipid antigens rather than the spirochete itself — this question asks about the method that targets the spirochete's own antigens."
+  hint="Find the sentence in the syphilis diagnosis paragraph that begins with the name of these tests."
 >}}
 By directly observing the spirochete in lesion fluid using darkfield microscopy
 By measuring antibodies directed against *T. pallidum* antigens
@@ -201,7 +201,7 @@ Several virulence factors have been associated with *H. ducreyi*, including lipo
 {{< multiplechoice
   question="What is the key difference between chancroid lesions and those associated with syphilis?"
   answer="Chancroid produces soft, painful sores, while syphilis produces a hard chancre"
-  hint="Compare how each lesion feels to the touch and whether it hurts, not how either disease is transmitted."
+  hint="Reread the sentence in the Chancroid subsection that contrasts its chancres with those of syphilis."
 >}}
 Chancroid is caused by a spirochete, like syphilis, rather than a rod-shaped bacterium
 Chancroid lesions progress through three stages over years, as syphilis does
@@ -212,7 +212,7 @@ Chancroid produces soft, painful sores, while syphilis produces a hard chancre
 {{< multiplechoice
   question="Why is it difficult to definitively diagnose chancroid?"
   answer="*H. ducreyi* is difficult to culture, so diagnosis relies on ruling out other diseases with similar genital ulcers"
-  hint="The module names one practical obstacle to growing the organism at all — think about what a lab test needs before it can identify a microbe."
+  hint="Look at the first sentence of the Chancroid subsection's diagnosis paragraph."
 >}}
 *H. ducreyi* is difficult to culture, so diagnosis relies on ruling out other diseases with similar genital ulcers
 Chancroid produces no visible lesions, so there is nothing for a clinician to examine
@@ -268,7 +268,7 @@ Many bacterial infections affecting the reproductive system are transmitted thro
 {{< multiplechoice
   question="Lymphogranuloma venereum is caused by serovars of"
   answer="*Chlamydia trachomatis*."
-  hint="LGV is described in the same subsection as the pathogen causing chlamydia."
+  hint="Find the paragraph that describes buboes in the groin."
 >}}
 *Neisseria gonorrhoeae*.
 *Chlamydia trachomatis*.
@@ -277,7 +277,7 @@ Many bacterial infections affecting the reproductive system are transmitted thro
 {{< /multiplechoice >}}
 
 {{< mediafigure src="microbiology/OSC_Microbio_23_03_ArtConnect_img" kind="photo" alt="A darkfield micrograph on a gray background showing several thin, tightly coiled spiral cells." >}}
-A darkfield micrograph of several thin, coiled cells from a genital lesion. (credit: modification of work by Centers for Disease Control and Prevention)
+A darkfield micrograph of several thin, coiled cells. (credit: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
 {{< multiplechoice
@@ -296,7 +296,7 @@ A darkfield micrograph of several thin, coiled cells from a genital lesion. (cre
 {{< multiplechoice
   question="Treponemal and non-treponemal serological testing can be used to test for"
   answer="syphilis."
-  hint="This diagnostic pair is introduced in the same subsection as the serologic tests for one specific spirochete infection."
+  hint="Find the paragraph that names VDRL, RPR, and TP-PA."
 >}}
 vaginosis.
 chlamydia.
@@ -307,7 +307,7 @@ gonorrhea.
 {{< multiplechoice
   question="The latent stage of syphilis, which may last for years, can occur between"
   answer="the secondary and tertiary stages."
-  hint="The latent phase is described as following the healed secondary rash and preceding the most severe, final stage."
+  hint="Find the short paragraph that introduces the latent phase."
 >}}
 the secondary and tertiary stages.
 the primary and secondary stages.
@@ -316,12 +316,12 @@ any of the three stages.
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Compare gonococcal and nongonoccocal urethritis with respect to their symptoms and the pathogens that cause each disease." hint="Match each pathogen to its own paragraph, then compare what each one does in males versus females." >}}
-Gonococcal urethritis is caused by *Neisseria gonorrhoeae*; in males it can cause pain and burning during urination and a penile discharge that may be yellow, green, or white, and in females it can cause pelvic pain, vaginal discharge, intermenstrual bleeding, and pain or irritation with urination. Nongonococcal urethritis (NGU) is most often caused by *Chlamydia trachomatis*, and many chlamydia infections that cause NGU are asymptomatic; when chlamydia does cause disease, it can also lead to epididymitis and orchitis in males and to urethritis, salpingitis, and pelvic inflammatory disease in females.
+Gonococcal urethritis is caused by *Neisseria gonorrhoeae*; in males it can cause pain and burning during urination and a penile discharge that may be yellow, green, or white, and in females it can cause pelvic pain, vaginal discharge, intermenstrual bleeding, and pain or irritation with urination. *Chlamydia trachomatis* is a major cause of nongonococcal urethritis (NGU), and many chlamydia infections are asymptomatic; when chlamydia does cause disease, it can also lead to epididymitis and orchitis in males and to urethritis, salpingitis, and pelvic inflammatory disease in females.
 ===CHECKS===
 gonococcal urethritis is caused by Neisseria gonorrhoeae
 in males, gonorrhea can cause pain and burning during urination and a penile discharge that may be yellow, green, or white
-nongonococcal urethritis is most often caused by Chlamydia trachomatis
-chlamydia infections that cause NGU are often asymptomatic
+Chlamydia trachomatis is a major cause of nongonococcal urethritis
+many chlamydia infections are asymptomatic
 untreated chlamydia can also cause epididymitis and orchitis in males
 {{< /selfcheck >}}
 

@@ -28,7 +28,7 @@ In order for pyruvate, the product of glycolysis, to enter the next pathway, it 
 
 **Step 3.** The enzyme-bound acetyl group is transferred to CoA, producing a molecule of acetyl CoA.
 
-{{< mediafigure src="biology/7.8_Pyruvate_Oxidation-XYZ" kind="diagram" eager="true" alt="A labeled diagram of a cell membrane cross-section showing pyruvate crossing from the cytosol into the mitochondrion through a carrier protein, then being converted through three numbered steps into acetyl CoA, with CO₂ released and NAD⁺ reduced to NADH along the way." longdesc="The diagram is divided into two shaded regions: a light blue cytosol at left and a green mitochondrion at right, separated by the mitochondrion's outer and inner membranes. Pyruvate, drawn as a three-carbon structure with a carboxyl group, a central C=O, and a CH₃ group, sits in the cytosol. An orange oval labeled Pyruvate Carrier Protein spans both membranes, and a white arrow carries the molecule through it into the mitochondrion, branching into three numbered steps. Step 1 shows a carboxyl group leaving the molecule as CO₂. Step 2 shows NAD⁺ combining with the intermediate to form NADH plus H⁺. Step 3 shows coenzyme A joining the remaining two-carbon fragment. The resulting acetyl CoA, drawn as S-CoA, C=O, CH₃, sits in a box at right." >}}
+{{< mediafigure src="biology/7.8_Pyruvate_Oxidation-XYZ" kind="diagram" eager="true" alt="A labeled diagram of the mitochondrial membranes in cross-section showing pyruvate crossing from the cytosol into the mitochondrion through a carrier protein, then being converted through three numbered steps into acetyl CoA, with CO₂ released and NAD⁺ reduced to NADH along the way." longdesc="The diagram is divided into two shaded regions: a light blue cytosol at left and a green mitochondrion at right, separated by the mitochondrion's outer membrane (the left edge of a pale yellow band) and inner membrane (the edge of the green region). Pyruvate, drawn as a three-carbon structure with a carboxyl group, a central C=O, and a CH₃ group, sits in the cytosol. An orange oval labeled Pyruvate Carrier Protein sits in the inner membrane, and a white arrow carries the molecule through it into the mitochondrion, branching into three numbered steps. Step 1 shows a carboxyl group leaving the molecule as CO₂. Step 2 shows NAD⁺ combining with the intermediate to form NADH plus H⁺. Step 3 shows coenzyme A joining the remaining two-carbon fragment. The resulting acetyl CoA, drawn as S-CoA, C=O, CH₃, sits in a box at right." >}}
 Upon entering the mitochondrial matrix, a multienzyme complex converts pyruvate into acetyl CoA. In the process, carbon dioxide is released, and one molecule of NADH is formed. Credit: Rao, A., Ryan, K. and Tag, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -42,7 +42,7 @@ In the presence of oxygen, acetyl CoA delivers its acetyl (2C) group to a four-c
 
 Like the conversion of pyruvate to acetyl CoA, the citric acid cycle takes place in the matrix of mitochondria. Almost all of the enzymes of the citric acid cycle are soluble, with the single exception of the enzyme succinate dehydrogenase, which is embedded in the inner membrane of the mitochondrion. Unlike glycolysis, the citric acid cycle is a closed loop: the last part of the pathway regenerates the compound used in the first step. The eight steps of the cycle are a series of redox, dehydration, hydration, and decarboxylation reactions that produce two carbon dioxide molecules, one GTP/ATP, and the reduced carriers NADH and FADH₂, shown below. *This is considered an aerobic pathway because the NADH and FADH₂ produced must transfer their electrons to the next pathway in the system, which will use oxygen.* If this transfer does not occur, the oxidation steps of the citric acid cycle also do not occur. Note that the citric acid cycle produces very little ATP directly and does not directly consume oxygen.
 
-{{< mediafigure src="biology/Figure_07_03_02" kind="diagram" alt="A circular labeled diagram of the eight-step citric acid cycle, showing the structural formula of each intermediate — citrate, isocitrate, α-ketoglutarate, succinyl CoA, succinate, fumarate, malate, and oxaloacetate — connected by numbered arrows, with CO₂, NADH, FADH₂, and GTP/ATP released at the steps that produce them." longdesc="The eight boxed intermediates are arranged in a ring, read clockwise starting at the top. Acetyl CoA (S-CoA, C=O, CH₃) enters at the top and combines with oxaloacetate; arrow 1 forms citrate, releasing CoA-SH. Arrow 2 converts citrate to isocitrate, losing and regaining a water molecule. Arrow 3 converts isocitrate to α-ketoglutarate, releasing CO₂ and reducing NAD⁺ to NADH plus H⁺. Arrow 4 converts α-ketoglutarate to succinyl CoA, adding CoA-SH and again releasing CO₂ while reducing NAD⁺ to NADH plus H⁺. Arrow 5 converts succinyl CoA to succinate, releasing CoA-SH and converting GDP plus Pi to GTP, shown as interconvertible with ADP and ATP. Arrow 6 converts succinate to fumarate, reducing FAD to FADH₂. Arrow 7 adds water to fumarate to form malate. Arrow 8 oxidizes malate back to oxaloacetate, reducing another NAD⁺ to NADH plus H⁺ and closing the loop at the top of the ring." >}}
+{{< mediafigure src="biology/Figure_07_03_02" kind="diagram" alt="A circular labeled diagram of the eight-step citric acid cycle, showing the structural formula of each intermediate — citrate, isocitrate, α-ketoglutarate, succinyl CoA, succinate, fumarate, malate, and oxaloacetate — connected by numbered arrows, with CO₂, NADH, FADH₂, and GTP/ATP released at the steps that produce them." longdesc="The eight boxed intermediates are arranged in a ring, read clockwise starting at the top. Acetyl CoA (S-CoA, C=O, CH₃) enters at the top and combines with oxaloacetate; arrow 1 forms citrate, releasing CoA-SH. Arrow 2 converts citrate to isocitrate, losing and regaining a water molecule. Arrow 3 converts isocitrate to α-ketoglutarate, releasing CO₂ and reducing NAD⁺ to NADH plus H⁺. Arrow 4 converts α-ketoglutarate to succinyl CoA, adding CoA-SH and again releasing CO₂ while reducing NAD⁺ to NADH plus H⁺. Arrow 5 converts succinyl CoA to succinate, releasing CoA-SH and converting GDP plus Pi to GTP; a loop of arrows below then shows GTP passing its phosphate to ADP, forming ATP and regenerating GDP. Arrow 6 converts succinate to fumarate, reducing FAD to FADH₂. Arrow 7 adds water to fumarate to form malate. Arrow 8 oxidizes malate back to oxaloacetate, reducing another NAD⁺ to NADH plus H⁺ and closing the loop at the top of the ring." >}}
 In the citric acid cycle, the acetyl group from acetyl CoA is attached to a four-carbon oxaloacetate molecule to form a six-carbon citrate molecule. Through a series of steps, citrate is oxidized, releasing two carbon dioxide molecules for each acetyl group fed into the cycle. In the process, three NAD⁺ molecules are reduced to NADH, one FAD molecule is reduced to FADH₂, and one ATP or GTP (depending on the cell type) is produced (by substrate-level phosphorylation). Because the final product of the citric acid cycle is also the first reactant, the cycle runs continuously in the presence of sufficient reactants. Credit: Rao, A., Ryan, K., Tag, A., and Fletcher, S. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -92,7 +92,7 @@ The citric acid cycle is a series of redox and decarboxylation reactions that re
 {{< multiplechoice
   question="GTP or ATP is produced during the conversion of ________."
   answer="succinyl CoA into succinate"
-  hint="Look for the step where the enzyme releases coenzyme A directly into a high-energy phosphate bond — that is substrate-level phosphorylation."
+  hint="Reread the numbered steps under Steps in the Citric Acid Cycle."
 >}}
 isocitrate into α-ketoglutarate
 succinyl CoA into succinate
@@ -103,7 +103,7 @@ malate into oxaloacetate
 {{< multiplechoice
   question="How many NADH molecules are produced on each turn of the citric acid cycle?"
   answer="three"
-  hint="Count only the redox steps of the cycle that reduce NAD⁺ rather than FAD."
+  hint="Reread the paragraph under Products of the Citric Acid Cycle."
 >}}
 one
 two
@@ -111,7 +111,7 @@ three
 four
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is the primary difference between a circular pathway and a linear pathway?" hint="Think about what happens to the pathway's final product, and whether the same trip through it can run again without fresh input." >}}
+{{< selfcheck question="What is the primary difference between a circular pathway and a linear pathway?" hint="Reread the first paragraph under Citric Acid Cycle and the caption of the cycle diagram that follows it." >}}
 In a circular pathway, the final product of the reaction is also the initial reactant. The pathway is self-perpetuating, as long as any of the intermediates of the pathway are supplied. Circular pathways are able to accommodate multiple entry and exit points, thus being particularly well suited for amphibolic pathways. In a linear pathway, one trip through the pathway completes the pathway, and a second trip would be an independent event.
 ===CHECKS===
 the final product of the reaction is also the initial reactant
@@ -124,7 +124,7 @@ a second trip would be an independent event
 {{< multiplechoice
   question="The citric acid cycle is a series of ________ and decarboxylation reactions that removes high-energy electrons and carbon dioxide."
   answer="redox"
-  hint="The cycle's steps are described as this category of reaction, together with dehydration, hydration, and decarboxylation reactions."
+  hint="Reread the Summary's sentence that says what the citric acid cycle is."
 >}}
 condensation
 dehydration
@@ -135,7 +135,8 @@ phosphorylation
 {{< textin
   question="The alternate name for the citric acid cycle, named after the scientist who first identified its steps in the 1930s in pigeon flight muscles, is the ________ cycle."
   answer="Krebs"
-  hint="The section's glossary names this cycle after the scientist who traced its steps in pigeon flight muscles."
+  accept="Krebs cycle"
+  hint="Reread the paragraph just before the Citric Acid Cycle heading."
 >}}
 
 ### Describe how pyruvate, the product of glycolysis, is prepared for entry into the citric acid cycle
@@ -143,7 +144,7 @@ phosphorylation
 {{< multiplechoice
   question="What is removed from pyruvate during its conversion into an acetyl group?"
   answer="carbon dioxide"
-  hint="This is the same kind of carbon-releasing reaction, a decarboxylation, that recurs throughout the citric acid cycle itself."
+  hint="Reread Step 1 under Breakdown of Pyruvate."
 >}}
 oxygen
 ATP
@@ -154,7 +155,7 @@ carbon dioxide
 {{< multiplechoice
   question="What do the electrons added to NAD⁺ do?"
   answer="They go to another pathway for ATP production."
-  hint="NADH is a carrier, not a final destination — its high-energy electrons still have somewhere to go."
+  hint="Reread Step 2 under Breakdown of Pyruvate."
 >}}
 They become part of a fermentation pathway.
 They go to another pathway for ATP production.
@@ -163,9 +164,10 @@ They are converted to NADP.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The combination of an acetyl group derived from pyruvic acid and coenzyme A is called ________."
+  question="The combination of a two-carbon group derived from pyruvic acid and a carrier made from pantothenic acid (a B-group vitamin) is called ________."
   answer="acetyl CoA"
-  hint="This is the carrier compound that delivers the acetyl group derived from pyruvate into the citric acid cycle."
+  accept="acetyl coenzyme A"
+  hint="Reread the section's opening paragraph."
 >}}
 
 ---

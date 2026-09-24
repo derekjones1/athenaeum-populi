@@ -26,7 +26,7 @@ There are two ways to classify joints: on the basis of their structure or on the
 
 The bones of **fibrous joints** are held together by fibrous connective tissue. There is no cavity, or space, present between the bones and so most fibrous joints do not move at all, or are only capable of minor movements. There are three types of fibrous joints: sutures, syndesmoses, and gomphoses. **Sutures** are found only in the skull and possess short fibers of connective tissue that hold the skull bones tightly in place, shown below.
 
-{{< mediafigure src="biology/Figure_38_03_01" kind="diagram" eager="true" alt="Illustration shows sutures that knit the back part of the skull together with the front and lower parts. These appear as lines, or cracks, between the bones of the skull." longdesc="A single label, 'Sutures,' has two leader lines pointing to two different jagged suture lines drawn on a side view of the skull: one crossing the crown of the skull from front to back, and a second, shorter one lower on the skull, near the ear opening." >}}
+{{< mediafigure src="biology/Figure_38_03_01" kind="diagram" eager="true" alt="Illustration shows sutures that knit the back part of the skull together with the front and lower parts. These appear as lines, or cracks, between the bones of the skull." longdesc="A single label, 'Sutures,' has two leader lines pointing to two different jagged suture lines drawn on a side view of the skull, face to the right: one running down from the top of the skull, behind the forehead, toward the temple, and a second, curved one arching over the temple just above the ear opening." >}}
 Sutures are fibrous joints found only in the skull.
 {{< /mediafigure >}}
 
@@ -78,7 +78,7 @@ Some movements that cannot be classified as gliding, angular, or rotational are 
 
 Synovial joints are further classified into six different categories on the basis of the shape and structure of the joint. The shape of the joint affects the type of movement permitted by the joint, shown below. These joints can be described as planar, hinge, pivot, condyloid, saddle, or ball-and-socket joints.
 
-{{< mediafigure src="biology/Figure_38_03_04" kind="diagram" alt="Illustration shows joints of the body. The neck is a pivot joint that allows rotation. The hip is a ball-and-socket joint that allows a swiveling movement. The elbow is a hinge joint that allows movement in one direction. The wrist has a saddle joint to allow back-and forth-movement, and a condyloid joint to allow up-and-down movement. The tarsals of the foot have a plane joint that allows back-and-forth movement." longdesc="Six lettered inset diagrams surround a central front-facing skeleton, each linked to a boxed region on the skeleton by a dark arrow. (a) Pivot joint, upper left, linked from a box over the neck's C1–C2 vertebrae: a cylindrical peg fits into a collar, with a curved arrow wrapping the shaft to show rotation. (b) Hinge joint, left, linked from a box over the elbow: a rod rests in a curved trough, with a single curved arrow sweeping over the rod in one plane. (c) Saddle joint, lower left, linked from a box over the thumb base: two saddle-shaped pieces cross at right angles, with four curved arrows, one at each of the four ends, pointing outward to show movement along two perpendicular axes. (d) Plane joint, lower right, linked from a box over the ankle region: a peg sits on a flat layered plate, with two straight arrows pointing toward opposite corners of the plate to show back-and-forth gliding. (e) Condyloid joint, right, linked from a box over the other wrist: an oval ball sits in an oval socket, with two curved arrows crossing around it — one running top to bottom, one side to side — to show movement along two axes without rotation. (f) Ball-and-socket joint, upper right, linked from a box over the hip: a sphere sits in a deep cup on a shaft, with curved arrows around the sphere in multiple directions plus a curved arrow wrapping the shaft's base, to show movement in every direction, including rotation." >}}
+{{< mediafigure src="biology/Figure_38_03_04" kind="diagram" alt="Illustration shows joints of the body. The neck is a pivot joint that allows rotation. The hip is a ball-and-socket joint that allows a swiveling movement. The elbow is a hinge joint that allows movement in one direction. The wrist has a saddle joint to allow back-and forth-movement, and a condyloid joint to allow up-and-down movement. The tarsals of the foot have a plane joint that allows back-and-forth movement." longdesc="Six lettered inset diagrams surround a central front-facing skeleton, each linked to a boxed region on the skeleton by a dark arrow. (a) 'Pivot joint (between C1 and C2 vertebrae),' upper left, linked from a box over the neck: a cylindrical peg fits into a collar, with a curved arrow wrapping the shaft to show rotation. (b) 'Hinge joint (elbow),' left, linked from a box over the elbow of the arm on the viewer's left: a rod rests in a curved trough, with a single curved arrow sweeping over the rod in one plane. (c) 'Saddle joint (between trapezium carpal bone and 1st metacarpal bone),' lower left, linked from a box over the wrist and base of the hand on that same arm: two saddle-shaped pieces cross at right angles, with four curved arrows, one at each of the four ends, pointing outward to show movement along two perpendicular axes. (d) 'Plane joint (between tarsal bones),' lower right, linked from a box over the ankle and upper foot of the leg on the viewer's right: a peg sits on two stacked flat plates, with four straight arrows radiating from its base in four directions across the plates to show gliding. (e) 'Condyloid joint (between radius and carpal bones of wrist),' right, linked from a box over the wrist of the arm on the viewer's right: an oval ball sits in an oval socket, with two curved arrows crossing around it — one running top to bottom, one side to side — to show movement along two axes without rotation. (f) 'Ball-and-socket joint (hip joint),' upper right, linked from a box over the hip on the viewer's right: a sphere sits in a deep cup on a shaft, with curved arrows around the sphere in multiple directions plus a curved arrow wrapping the shaft's base, to show movement in every direction, including rotation." >}}
 Different types of joints allow different types of movement. Planar, hinge, pivot, condyloid, saddle, and ball-and-socket are all types of synovial joints.
 {{< /mediafigure >}}
 
@@ -86,7 +86,7 @@ Different types of joints allow different types of movement. Planar, hinge, pivo
 
 **Planar joints** have bones with articulating surfaces that are flat or slightly curved faces. These joints allow for gliding movements, and so the joints are sometimes referred to as gliding joints. The range of motion is limited in these joints and does not involve rotation. Planar joints are found in the carpal bones in the hand and the tarsal bones of the foot, as well as between vertebrae, shown below.
 
-{{< mediafigure src="biology/Figure_38_03_05" kind="photo" alt="Photo shows a human hand skeleton. The radius and ulna of the forearm connect to several small, knobby bones in the wrist called carpals. Carpals, in turn, connect to bones in the hand." longdesc="A bracket labeled 'Carpals' encloses a cluster of small, knobby wrist bones at the center of the photograph, between the two long forearm bones entering from the right and the metacarpal and finger bones extending to the left." >}}
+{{< mediafigure src="biology/Figure_38_03_05" kind="photo" alt="Photo shows a human hand skeleton. The radius and ulna of the forearm connect to several small, knobby bones in the wrist called carpals. Carpals, in turn, connect to bones in the hand." longdesc="A two-pronged white bracket labeled 'Carpals' points down from above onto two bones of a cluster of small, knobby wrist bones at the center of the photograph, between the two long forearm bones entering from the right and the metacarpal and finger bones extending to the left." >}}
 The joints of the carpal bones in the wrist are examples of planar joints. (credit: modification of work by Brian C. Goss)
 {{< /mediafigure >}}
 
@@ -110,7 +110,7 @@ The joint in the neck that allows the head to move back and forth is an example 
 
 **Condyloid joints** consist of an oval-shaped end of one bone fitting into a similarly oval-shaped hollow of another bone, shown below. This is also sometimes called an ellipsoidal joint. This type of joint allows angular movement along two axes, as seen in the joints of the wrist and fingers, which can move both side to side and up and down.
 
-{{< mediafigure src="biology/Figure_38_03_08" kind="diagram" alt="Illustration shows the metacarpophalangeal joint that joins the metacarpal of the hand to a finger." longdesc="Five labels run top to bottom down a single finger, illustrated in cross-section from the hand: 'Metacarpal' labels the wide bone at the top; 'Metacarpophalangeal joint' labels the rounded joint just below it; 'Proximal phalange' labels the long bone below that joint; 'Intermediate phalange' labels the next long bone down, separated from the proximal phalange by an unlabeled joint; 'Distal phalanges' has two leader lines pointing to the small bone at the fingertip." >}}
+{{< mediafigure src="biology/Figure_38_03_08" kind="diagram" alt="Illustration shows the metacarpophalangeal joint that joins the metacarpal of the hand to a finger." longdesc="Five labels run top to bottom down a single finger, drawn from the front with its pale ligaments wrapping each joint: 'Metacarpal' labels the wide bone at the top; 'Metacarpophalangeal joint' labels the rounded joint just below it; 'Proximal phalange' labels the long bone below that joint; 'Intermediate phalange' labels the next long bone down, separated from the proximal phalange by an unlabeled joint; 'Distal phalanges' has two leader lines pointing to the small bone at the fingertip." >}}
 The metacarpophalangeal joint in the finger is an example of a condyloid joint. (credit: modification of work by Gray's Anatomy)
 {{< /mediafigure >}}
 
@@ -202,7 +202,7 @@ The structural classification of joints divides them into bony, fibrous, cartila
 {{< multiplechoice
   question="Synchondroses and symphyses are:"
   answer="cartilaginous joints"
-  hint="Both terms name joints connected by cartilage — check which structural category that material puts them in."
+  hint="Look at the section's structural classification of joints and find where these two joint types are defined."
 >}}
 synovial joints
 cartilaginous joints
@@ -213,7 +213,7 @@ condyloid joints
 {{< multiplechoice
   question="Which of the following is not a characteristic of the synovial fluid?"
   answer="regulation of water balance in the joint"
-  hint="Three of these are the fluid's actual jobs described in this section — think about what it does mechanically at the joint, then find the one function never mentioned."
+  hint="Reread the Synovial Joints paragraph on what fills the joint cavity and what that fluid does, then ask which option describes a job unrelated to the bones' moving surfaces."
 >}}
 lubrication
 shock absorption
@@ -224,7 +224,7 @@ protection of articular cartilage
 {{< multiplechoice
   question="The elbow is an example of which type of joint?"
   answer="hinge"
-  hint="Picture how the elbow moves like a door — motion in essentially one plane, with one bone staying fixed."
+  hint="Look through the Types of Synovial Joints subsections for the one that names the elbow as its example."
 >}}
 hinge
 pivot
@@ -235,13 +235,20 @@ gliding
 {{< multiplechoice
   question="A high ankle sprain is an injury caused by over-stretching the ligaments connecting the tibia and fibula. What type of joint is involved in this sprain?"
   answer="syndesmosis"
-  hint="This section names the type of fibrous joint that connects two bones with a band of connective tissue, allowing more movement than a suture but far less than a synovial joint."
+  hint="The tibia and fibula are joined by a fibrous joint; reread the Fibrous Joints subsection for the type that joins such bones."
 >}}
 ball and socket
 gomphosis
 syndesmosis
 symphysis
 {{< /multiplechoice >}}
+
+{{< textin
+  question="A joint that is immovable is called a ________."
+  answer="synarthrosis"
+  accept="synarthroses"
+  hint="Sutures, gomphoses, and synchondroses all belong to this functional category."
+>}}
 
 {{< textin
   question="A joint held together by fibrous connective tissue is called a ________."
@@ -260,13 +267,6 @@ symphysis
   answer="gomphosis"
   accept="gomphoses"
   hint="A periodontal ligament connects the tooth to its bony socket at this joint."
->}}
-
-{{< textin
-  question="A joint that is immovable is called a ________."
-  answer="synarthrosis"
-  accept="synarthroses"
-  hint="Sutures, gomphoses, and synchondroses all belong to this functional category."
 >}}
 
 {{< textin
@@ -340,6 +340,7 @@ as the foot lands, the knee extends the leg and the hip retracts the femur
 {{< textin
   question="Movement that occurs when relatively flat bone surfaces move past each other is called ________."
   answer="gliding movement"
+  accept="gliding"
   hint="The carpal and tarsal bones are the section's examples of joints that produce this kind of movement, with very little rotation or angular change."
 >}}
 

@@ -24,7 +24,7 @@ In prokaryotic cells, there are three types of regulatory molecules that can aff
 
 Bacteria such as *Escherichia coli* need amino acids to survive, and are able to synthesize many of them. **Tryptophan** is one such amino acid that *E. coli* can either ingest from the environment or synthesize using enzymes that are encoded by five genes. These five genes are next to each other in what is called the **tryptophan (*trp*) operon** (see the figure below). The genes are transcribed into a single mRNA, which is then translated to produce all five enzymes. If tryptophan is present in the environment, then *E. coli* does not need to synthesize it and the *trp* operon is switched off. However, when tryptophan availability is low, the switch controlling the operon is turned on, the mRNA is transcribed, the enzyme proteins are translated, and tryptophan is synthesized.
 
-{{< mediafigure src="biology/Figure_16_02_01-04e9" kind="diagram" eager="true" alt="Two-panel diagram of the trp operon's promoter, operator, and five genes (trpE, trpD, trpC, trpB, trpA) shown as a bar in sequential order. Top panel: with tryptophan present, a repressor bound to tryptophan sits on the operator and blocks RNA polymerase from moving past it. Bottom panel: with no tryptophan present, the repressor is off the operator and RNA polymerase moves through the genes unblocked." longdesc="Top panel, labeled 'When tryptophan is present, the trp repressor binds the operator, and RNA synthesis is blocked': the gene bar reads Promoter, Operator, trpE, trpD, trpC, trpB, trpA left to right; a peach oval labeled RNA Polymerase overlaps the Promoter and Operator; a red X sits between RNA Polymerase and an orange Repressor box on the Operator; a blue pentagon labeled Tryptophan points into the Repressor box with an arrow. Bottom panel, labeled 'In the absence of tryptophan, the repressor dissociates from the operator, and RNA synthesis proceeds': the same gene bar; the RNA Polymerase oval now has a black arrow running through the Operator into trpE; a separate, unbound orange Repressor box sits below and to the right of the bar." >}}
+{{< mediafigure src="biology/Figure_16_02_01-04e9" kind="diagram" eager="true" alt="Two-panel diagram of the trp operon's promoter, operator, and five genes (trpE, trpD, trpC, trpB, trpA) shown as a bar in sequential order. Top panel: with tryptophan present, a repressor bound to tryptophan sits on the operator and blocks RNA polymerase from moving past it. Bottom panel: with no tryptophan present, the repressor is off the operator and RNA polymerase moves through the genes unblocked." longdesc="Top panel, labeled 'When tryptophan is present, the trp repressor binds the operator, and RNA synthesis is blocked': the gene bar reads Promoter, Operator, trpE, trpD, trpC, trpB, trpA left to right; a peach oval labeled RNA Polymerase covers the Promoter; a short black arrow from it toward an orange Repressor box just under the Operator is crossed out with a red X; a blue pentagon, labeled Tryptophan by a leader line, is bound to the underside of the Repressor. Bottom panel, labeled 'In the absence of tryptophan, the repressor dissociates from the operator, and RNA synthesis proceeds': the same gene bar; the RNA Polymerase oval has moved right to cover the Operator and trpE, with a black arrow pointing right beneath trpE and trpD; a separate orange Repressor box with no tryptophan sits below the bar." >}}
 The tryptophan operon. The five genes that are needed to synthesize tryptophan in *E. coli* are located next to each other in the *trp* operon. When tryptophan is plentiful, two tryptophan molecules bind the repressor protein at the operator sequence. This physically blocks the RNA polymerase from transcribing the tryptophan genes. When tryptophan is absent, the repressor protein does not bind to the operator and the genes are transcribed.
 {{< /mediafigure >}}
 
@@ -56,8 +56,8 @@ However, for the *lac* operon to be activated, two conditions must be met. First
 Regulation of the *lac* operon. Transcription of the *lac* operon is carefully regulated so that its expression only occurs when glucose is limited and lactose is present to serve as an alternative fuel source.
 {{< /mediafigure >}}
 
-{{< selfcheck question="In E. coli, the trp operon is on by default, while the lac operon is off. Why do you think that this is the case?" hint="Ask which of the two products, tryptophan or lactose, the cell always needs on hand, and which one is not always available in the environment." >}}
-Tryptophan is an amino acid essential for making proteins, so the cell always needs to have some on hand. However, if plenty of tryptophan is present, it is wasteful to make more, and the expression of the *trp* operon is repressed. Lactose, a sugar found in milk, is not always available. It makes no sense to make the enzymes necessary to digest an energy source that is not available, so the *lac* operon is only turned on when lactose is present.
+{{< selfcheck question="In E. coli, the trp operon is on by default, while the lac operon is off. Why do you think that this is the case?" hint="Reread the opening paragraphs of the section's first and third subsections." >}}
+Tryptophan is an amino acid essential for making proteins, so the cell always needs to have some on hand. However, if plenty of tryptophan is present, it is wasteful to make more, and the expression of the *trp* operon is repressed. Lactose, a sugar found in milk, is not always available. It makes no sense to make the enzymes necessary to digest an energy source that is not available, so the *lac* operon is only turned on when lactose is present. *(Source note: the source solution says "the expression of the trp receptor is repressed"; this module never names a trp receptor, and every other passage says the trp operon is repressed, so the page follows the module.)*
 ===CHECKS===
 tryptophan is essential for making proteins, so the cell always needs some on hand
 if plenty of tryptophan is present, it is wasteful to make more, and the trp operon is repressed
@@ -103,10 +103,29 @@ The regulation of gene expression in prokaryotic cells occurs at the transcripti
 
 ### Describe the steps involved in prokaryotic gene regulation
 
+{{< textin
+  question="A collection of genes involved in the same pathway that are transcribed together as a single mRNA in prokaryotic cells is called a(n) ________."
+  answer="operon"
+  hint="Reread the section's opening paragraph."
+>}}
+
+{{< textin
+  question="The site at which transcription begins, just before an operon's coding region, is called the ________."
+  answer="transcriptional start site"
+  accept="transcription start site"
+  hint="Reread the second paragraph of the section's first subsection."
+>}}
+
+{{< textin
+  question="The trp ________ contains the DNA code to which the trp repressor protein can bind."
+  answer="operator"
+  hint="Reread the third paragraph of the section's first subsection."
+>}}
+
 {{< multiplechoice
   question="Prokaryotic cells lack a nucleus. Therefore, the genes in prokaryotic cells are:"
   answer="b and c are both true"
-  hint="Check whether translation really can begin before transcription ends, and whether that also means transcription is controlled — both, one, or neither?"
+  hint="Reread the Summary's first sentence, and recall how Section 16.1 compared prokaryotic and eukaryotic gene expression."
 >}}
 all expressed, all of the time
 transcribed and translated almost simultaneously
@@ -114,39 +133,34 @@ transcriptionally controlled because translation begins before transcription end
 b and c are both true
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is the difference between a repressible and an inducible operon?" hint="Think about which kind starts on and needs a block actively removed, and which kind starts off or on depending on conditions." >}}
-A repressible operon uses a protein bound to the operator region of a gene to keep the gene repressed or silent. This repressor must be actively removed in order to transcribe the gene. An inducible operon is either activated or repressed depending on the needs of the cell and what is available in the local environment.
+{{< selfcheck question="What is the difference between a repressible and an inducible operon?" hint="Reread the section's first subsection and the opening paragraph of its third." >}}
+A repressible operon uses a protein bound to the operator region of a gene to keep the gene repressed or silent. This repressor must be actively removed in order to transcribe the gene. An inducible operon is either activated or repressed depending on the needs of the cell and what is available in the local environment. *(Source note: the source solution says the repressor is bound to the "promoter region"; this section says "activators bind to the promoter site, while repressors bind to operator regions," so the answer above reads "operator region.")*
 ===CHECKS===
-a repressible operon uses a protein bound to the promoter region to keep the gene repressed
+a repressible operon uses a protein bound to the operator region to keep the gene repressed
 this repressor must be actively removed in order to transcribe the gene
 an inducible operon is activated or repressed depending on the needs of the cell and the local environment
 {{< /selfcheck >}}
 
-{{< textin
-  question="A collection of genes involved in the same pathway that are transcribed together as a single mRNA in prokaryotic cells is called a(n) ________."
-  answer="operon"
-  hint="The lac and trp examples in this section are both named this way."
->}}
-
-{{< textin
-  question="In the trp operon, the DNA region between the promoter and the transcriptional start site, to which the repressor protein can bind, is called the ________."
-  answer="operator"
-  hint="It sits downstream of the promoter and is where the trp repressor binds when tryptophan is present."
->}}
-
-{{< textin
-  question="The site at which transcription begins, located just after a gene's promoter and operator, is called the ________."
-  answer="transcriptional start site"
-  accept="transcription start site"
-  hint="RNA polymerase reaches this point right after it has bound the promoter."
->}}
-
 ### Explain the roles of activators, inducers, and repressors in gene regulation
+
+{{< textin
+  question="The lac operon is activated by the ________, which binds to the promoter to stabilize RNA polymerase binding."
+  answer="catabolite activator protein"
+  accept="CAP|catabolite activator protein (CAP)"
+  hint="Reread the Summary's eighth sentence."
+>}}
+
+{{< textin
+  question="When glucose levels drop, ________ begins to accumulate in the E. coli cell."
+  answer="cAMP"
+  accept="cyclic AMP|cyclic AMP (cAMP)"
+  hint="Reread the first paragraph after the first video link."
+>}}
 
 {{< multiplechoice
   question="If glucose is absent, but so is lactose, the lac operon will be ________."
   answer="repressed"
-  hint="Both conditions the section names for turning the operon fully on are not met here — check what happens when lactose alone is missing."
+  hint="Use the table of transcription signals near the end of the section."
 >}}
 activated
 repressed
@@ -157,7 +171,7 @@ mutated
 {{< multiplechoice
   question="The ara operon is an inducible operon that controls the breakdown of the sugar arabinose. When arabinose is present in a bacterium it binds to the protein AraC, and the complex binds to the initiator site to promote transcription. In this scenario, AraC is a(n) ________."
   answer="activator"
-  hint="AraC's binding to the initiator site promotes transcription rather than blocking it."
+  hint="Reread the section's second paragraph, on the three types of regulatory molecules."
 >}}
 activator
 inducer
@@ -165,7 +179,7 @@ repressor
 operator
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe how transcription in prokaryotic cells can be altered by external stimulation such as excess lactose in the environment." hint="Name the operon lactose induces, and the one other environmental condition that must also be met." >}}
+{{< selfcheck question="Describe how transcription in prokaryotic cells can be altered by external stimulation such as excess lactose in the environment." hint="Reread the second paragraph of the section's third subsection." >}}
 Environmental stimuli can increase or induce transcription in prokaryotic cells. In this example, lactose in the environment will induce the transcription of the lac operon, but only if glucose is not available in the environment.
 ===CHECKS===
 environmental stimuli can increase or induce transcription in prokaryotic cells
@@ -173,24 +187,6 @@ lactose in the environment will induce the transcription of the lac operon
 only if glucose is not available in the environment
 {{< /selfcheck >}}
 
-{{< textin
-  question="A protein that binds to a prokaryotic promoter sequence to increase transcription of a gene is called a(n) ________."
-  answer="activator"
-  hint="It is a positive regulator — the opposite of a repressor."
->}}
-
-{{< textin
-  question="A protein that binds to the operator of a prokaryotic gene to prevent its transcription is called a(n) ________."
-  answer="repressor"
-  hint="Two molecules of tryptophan must bind this protein before it can bind the trp operator."
->}}
-
-{{< textin
-  question="A small molecule, produced by the cell or present in its environment, that can activate or repress transcription depending on the cell's needs is called a(n) ________."
-  answer="inducer"
-  hint="Allolactose and cAMP both act as one of these in this section's examples."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 16.2: Prokaryotic Gene Regulation](https://openstax.org/books/biology-2e/pages/16-2-prokaryotic-gene-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and set `kind="diagram"` (the manifest's file-extension guess called the first two figures "photo," but all three are labeled operon schematics); the source's letter-spelled screen-reader alts ("The t r p operon has a promoter...") rewritten as plain descriptions, with an extended description added to each figure since none of the three schematics' arrows, boxes, and labels are carried by their captions; internal print cross-references ("Figure 16.4") changed to "see the figure below" since figures are not numbered here; the note wrapping the Visual Connection question rendered as the figure plus the question kept in the body as a self-check, since the source keys it with a prose answer rather than a lettered option; the two Link to Learning notes rendered as callouts with descriptive link text; the source's glossary definition of "activator," which both the CNXML and the printed Key Terms page give as a protein that binds to prokaryotic "operators," corrected here to "promoters" to match this section's own explicit statement that "activators bind to the promoter site, while repressors bind to operator regions" (a source defect); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and six key-term recall items (operon, operator, transcriptional start site, activator, repressor, inducer) added from the glossary; the repressible-operon self-check's source solution corrected from a protein bound to the "promoter region" to the "operator region", per the module's own sentence that repressors bind operator regions (reported as a source defect); and the tryptophan self-check's source phrase "the expression of the trp receptor is repressed" corrected to "the trp operon", matching every other passage in the module (reported as a source defect).</small>
+<small>This section is adapted from [Biology 2e, Section 16.2: Prokaryotic Gene Regulation](https://openstax.org/books/biology-2e/pages/16-2-prokaryotic-gene-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and set `kind="diagram"` (the manifest's file-extension guess called the first two figures "photo," but all three are labeled operon schematics); the source's letter-spelled screen-reader alts ("The t r p operon has a promoter...") rewritten as plain descriptions, with an extended description added to each figure since none of the three schematics' arrows, boxes, and labels are carried by their captions; internal print cross-references ("Figure 16.4") changed to "see the figure below" since figures are not numbered here; the note wrapping the Visual Connection question rendered as the figure plus the question kept in the body as a self-check, since the source keys it with a prose answer rather than a lettered option; the two Link to Learning notes rendered as callouts with descriptive link text; the source's glossary definition of "activator," which both the CNXML and the printed Key Terms page give as a protein that binds to prokaryotic "operators," corrected here to "promoters" to match this section's own explicit statement that "activators bind to the promoter site, while repressors bind to operator regions" (a source defect); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (operon, operator, transcriptional start site) added from the glossary; one summary-derived recall item (the CAP sentence) and one body-derived recall item (the cAMP-accumulation sentence) added under the second objective; the repressible-operon self-check's source solution corrected from a protein bound to the "promoter region" to the "operator region", per the module's own sentence that repressors bind operator regions (reported as a source defect, with a visible Source note beside the correction); and the tryptophan self-check's source phrase "the expression of the trp receptor is repressed" corrected to "the trp operon", matching every other passage in the module (reported as a source defect).</small>

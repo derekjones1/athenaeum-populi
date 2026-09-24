@@ -83,7 +83,7 @@ better preserves the item's original qualities
 {{< textin
   question="The class of cationic detergents that is stable, nontoxic, inexpensive, colorless, odorless, and tasteless, and that is bactericidal by inserting into the bacterial phospholipid bilayer to disrupt membrane integrity, is called ________."
   answer="quaternary ammonium salts"
-  accept="quats"
+  accept="quats|quaternary ammonium compounds"
 >}}
 
 {{< multiplechoice
@@ -125,7 +125,7 @@ using advanced microscopy, the quantities of infected cells can be determined wi
 
 ### 14.1 History of Chemotherapy and Antimicrobial Discovery
 
-{{< textin question="In 1928, Alexander Fleming returned from holiday and examined old plates of staphylococci in his research laboratory at ________ in London, where he observed that contaminating mold growth inhibited staphylococcal growth on one plate." answer="St. Mary's Hospital" >}}
+{{< textin question="In 1928, Alexander Fleming returned from holiday and examined old plates of staphylococci in his research laboratory at ________ in London, where he observed that contaminating mold growth inhibited staphylococcal growth on one plate." answer="St. Mary's Hospital" accept="Saint Mary's Hospital|St. Mary's|Saint Mary's" >}}
 
 {{< multiplechoice
   question="Alexander Fleming shared the 1945 Nobel Prize in Physiology and Medicine with the two Oxford University researchers who isolated and mass-produced the penicillin he had discovered. Which pair of scientists shared the prize with him?"
@@ -148,7 +148,7 @@ Gerhard Domagk and Josef Klarer
 niclosamide
 bacitracin
 colistin
-polymyxin
+trimethoprim
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Besides patients' nonadherence to a lengthy antibiotic regimen, what other practice contributes to antibiotic resistance, and what are two reasons this happens?" >}}

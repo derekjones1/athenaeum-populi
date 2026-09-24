@@ -104,7 +104,7 @@ Biofilms are present almost everywhere: they can cause the clogging of pipes and
 
 Interactions among the organisms that populate a biofilm, together with their protective *exopolysaccharidic (EPS)* environment, make these communities more robust than free-living, or planktonic, prokaryotes. The sticky substance that holds bacteria together also excludes most antibiotics and disinfectants, making biofilm bacteria hardier than their planktonic counterparts. Overall, biofilms are very difficult to destroy because they are resistant to many common forms of sterilization.
 
-{{< mediafigure src="biology/Figure_22_01_07" kind="diagram" alt="A diagram showing five illustrated stages of biofilm formation in a row above a flat gray surface, each numbered 1 through 5 and marked by a red arrow pointing down to the surface, growing from a few scattered cells at stage 1 to a large, complex clustered mass at stage 5 with cells drifting away from its top; below each numbered stage is a grayscale micrograph of a real biofilm at that stage." longdesc="The five stages run left to right above a flat gray surface, each marked by a numbered, red-outlined tag (1 through 5) with a small red arrow pointing down to the surface. Stage 1: a few isolated pink, curved rod-shaped cells lie flat and scattered on the bare surface. Stage 2: small tan-gold clumps of rod-shaped cells sit slightly raised above the surface. Stage 3: the cells have grown into small, lumpy, gold-tan mounds with bright highlights and pink rod-shaped cells visible within. Stage 4: a larger, golden mushroom-shaped mass, studded throughout with maroon and pink round cells, rises from a narrower base anchored to the surface. Stage 5: an even larger version of this golden mass, with additional loose pink cells and thin, thread-like strands visibly drifting away from its top. Below each numbered stage sits a square grayscale micrograph of a real Pseudomonas aeruginosa biofilm at that stage of development." >}}
+{{< mediafigure src="biology/Figure_22_01_07" kind="diagram" alt="A diagram showing five illustrated stages of biofilm formation in a row above a flat gray surface, each numbered 1 through 5 on a tag below the surface with red arrowheads pointing up to the stage and down to a micrograph, growing from a few scattered cells at stage 1 to a large, complex clustered mass at stage 5 with cells drifting away from its top; below each numbered stage is a grayscale micrograph of a real biofilm at that stage." longdesc="The five stages run left to right above a flat gray surface, each marked by a numbered, red-outlined tag (1 through 5) hanging below the surface, with a small red arrowhead at its top pointing up to the stage and one at its bottom pointing down to the micrograph beneath. Stage 1: a few isolated pink rod-shaped cells, some trailing thin threadlike flagella, lie scattered on the bare surface. Stage 2: small tan-gold clumps of rod-shaped cells sit slightly raised above the surface. Stage 3: the cells have grown into small, lumpy, gold-tan mounds with bright highlights and pink rod-shaped cells visible within. Stage 4: a larger, golden mushroom-shaped mass, studded throughout with maroon and pink round cells, rises from a narrower base anchored to the surface. Stage 5: an even larger version of this golden mass, with additional loose pink cells and thin, thread-like strands visibly drifting away from its top. Below each numbered stage sits a square grayscale micrograph of a real Pseudomonas aeruginosa biofilm at that stage of development." >}}
 Development of a biofilm. Five stages of biofilm development are shown. During stage 1, initial attachment, bacteria adhere to a solid surface via weak *van der Waals interactions* (forces produced by induced electrical interactions between atoms). During stage 2, irreversible attachment, hairlike appendages called *pili* permanently anchor the bacteria to the surface. During stage 3, maturation I, the biofilm grows through cell division and recruitment of other bacteria. An extracellular matrix composed primarily of polysaccharides holds the biofilm together. During stage 4, maturation II, the biofilm continues to grow and takes on a more complex shape. During stage 5, dispersal, the biofilm matrix is partly broken down, allowing some bacteria to escape and colonize another surface. Micrographs of a *Pseudomonas aeruginosa* biofilm in each of the stages of development are shown. (credit: D. Davis, Don Monroe, PLoS)
 {{< /mediafigure >}}
 
@@ -155,7 +155,7 @@ Bacteria and archaea grow in virtually every environment. Those that survive und
 {{< multiplechoice
   question="The first forms of life on Earth were thought to be ________."
   answer="prokaryotes"
-  hint="Re-read the section's title — what does the text say came before plants and animals?"
+  hint="Re-read the opening paragraph of the first subsection — what does the text say existed for billions of years before plants and animals?"
 >}}
 single-celled plants
 prokaryotes
@@ -221,20 +221,21 @@ a hypolith (survival in a low humidity/water environment)
 {{< /selfcheck >}}
 
 {{< textin
-  question="An organism adapted to grow under extreme or harsh conditions is called a(n) ________."
-  answer="extremophile"
-  hint="Its name literally means 'lover of extremes.'"
+  question="An organism that grows optimally at temperatures between 60 and 80 °C is called a ________."
+  answer="thermophile"
+  hint="Read the temperature rows of the table in Microbes Are Adaptable."
 >}}
 
 {{< textin
-  question="An organism that grows optimally at temperatures between 60 and 80 °C is called a ________."
-  answer="thermophile"
-  hint="Its optimal range sits just below the even hotter range that defines a hyperthermophile."
+  question="An organism adapted to grow under extreme or harsh conditions is called a(n) ________."
+  answer="extremophile"
+  hint="The second paragraph of Microbes Are Adaptable introduces this umbrella term for bacteria and archaea adapted to harsh conditions."
 >}}
 
 {{< textin
   question="An organism with an optimal growth pH of nine or above is called a(n) ________."
   answer="alkaliphile"
+  accept="alkalophile"
   hint="Its name pairs with 'acidophile' — but at the opposite end of the pH scale."
 >}}
 
@@ -260,9 +261,15 @@ such as PCR
 {{< /selfcheck >}}
 
 {{< textin
+  question="A microbial community held together by a gummy-textured matrix, made mostly of secreted polysaccharides, is called a ________."
+  answer="biofilm"
+  hint="It commonly clogs pipes and colonizes surfaces such as kitchen counters, sinks, and teeth."
+>}}
+
+{{< textin
   question="Under environmental stress, some bacteria stop growing without dying, entering the dormant ________ state."
   answer="VBNC"
-  accept="viable but nonculturable|viable but non culturable|VBNC state"
+  accept="viable but nonculturable|viable but non culturable|VBNC state|viable but nonculturable state"
   hint="A prokaryote in this state can be revived once conditions improve, in a process the section also names."
 >}}
 
@@ -272,12 +279,6 @@ such as PCR
   hint="This is the process the section names right after describing the dormant state itself."
 >}}
 
-{{< textin
-  question="A microbial community held together by a gummy-textured matrix, made mostly of secreted polysaccharides, is called a ________."
-  answer="biofilm"
-  hint="It commonly clogs pipes and colonizes surfaces such as kitchen counters, sinks, and teeth."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 22.1: Prokaryotic Diversity](https://openstax.org/books/biology-2e/pages/22-1-prokaryotic-diversity) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the source's forward figure references (a bare link before each figure) reworded as "pictured below" / "below" since figures are not numbered here; the bare or terse source alts for all seven figures rewritten from the images, and a longdesc added for Figure_22_01_07 (the five illustrated stages' colors, shapes, and numbered arrows, and the row of micrographs beneath them, are not carried by the caption); the Dead Sea paragraph's footnote citation kept as a parenthetical bibliographic reference after the sentence it supports; ion charges (Fe²⁺, Ca²⁺, Mg²⁺) set as Unicode superscripts in place of the source's HTML superscripts; the extremophiles table (tab-ch22-01-01) transcribed complete as a Markdown table, its spanning title row set as a bold line above it, including the psychrophile row's "-15-10 °C (5-50 °F) or lower" exactly as printed in the source; the end-of-section Review Questions, Critical Thinking Questions, and Visual Connection Question adapted into interactive practice (the Visual Connection as a self-check immediately after its figure in the body, the rest in the closing Practice block); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items added from the glossary, one of them (the viable-but-non-culturable state) keyed to the section's own abbreviation VBNC, with the spelled-out forms accepted, since the full glossary term runs to five words, over this book's four-word textin cap; and one source typo corrected in the Summary ("the oxygenation o the atmosphere" → "of the atmosphere") — reported as a source defect. One claim is corrected with a visible Source note: prokaryotic cells are about as numerous as human cells by the 2016 recount, not ten times as numerous (erratum 414).</small>
+<small>This section is adapted from [Biology 2e, Section 22.1: Prokaryotic Diversity](https://openstax.org/books/biology-2e/pages/22-1-prokaryotic-diversity) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the source's forward figure references (a bare link before each figure) reworded as "pictured below" / "below" since figures are not numbered here; the bare or terse source alts for all seven figures rewritten from the images, and a longdesc added for Figure_22_01_07 (the five illustrated stages' colors, shapes, and numbered arrows, and the row of micrographs beneath them, are not carried by the caption); the Dead Sea paragraph's footnote citation kept as a parenthetical bibliographic reference after the sentence it supports; ion charges (Fe²⁺, Ca²⁺, Mg²⁺) set as Unicode superscripts in place of the source's HTML superscripts; the extremophiles table (tab-ch22-01-01) transcribed complete as a Markdown table, its spanning title row set as a bold line above it, including the psychrophile row's "-15-10 °C (5-50 °F) or lower" exactly as printed in the source; the end-of-section Review Questions, Critical Thinking Questions, and Visual Connection Question adapted into interactive practice (the Visual Connection as a self-check immediately after its figure in the body, the rest in the closing Practice block), each placed under the objective it serves, so the Critical Thinking Question on detecting a non-culturable prokaryote, first in the source, now follows the other two; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seven key-term recall items added from the glossary, one of them (the viable-but-non-culturable state) keyed to the section's own abbreviation VBNC, with the spelled-out forms accepted, since the full glossary term runs to five words, over this book's four-word textin cap; and one source typo corrected in the Summary ("the oxygenation o the atmosphere" → "of the atmosphere") — reported as a source defect. One claim is corrected with a visible Source note: prokaryotic cells are about as numerous as human cells by the 2016 recount, not ten times as numerous (erratum 414).</small>

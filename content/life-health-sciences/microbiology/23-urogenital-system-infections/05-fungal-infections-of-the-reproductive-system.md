@@ -82,7 +82,7 @@ The Gram stain of Nadia's vaginal smear showed that the concentration of lactoba
 {{< multiplechoice
   question="Which medication is recommended as an initial topical treatment for genital yeast infections?"
   answer="miconazole"
-  hint="Penicillin and acyclovir are not antifungal drugs at all; between the two antifungals that remain, the module lists one separately as an oral treatment, apart from its topical list."
+  hint="Read the paragraph on antifungal medications for vaginal candidiasis."
 >}}
 penicillin
 acyclovir
@@ -106,8 +106,8 @@ miconazole
 {{< textin
   question="Although sexual contact is a common mode of transmission for *Candida* spp., candidiasis is not considered a(n) ________."
   answer="STI"
-  accept="sexually transmitted infection"
-  hint="Think of the general category for an infection passed between sexual partners — the module says this one does not count as that, despite the transmission route."
+  accept="sexually transmitted infection|STD|sexually transmitted disease"
+  hint="Look at the last sentence of the paragraph that names other forms of candidiasis."
 >}}
 
 {{< textin
@@ -119,13 +119,14 @@ miconazole
 {{< textin
   question="Vaginal candidiasis can be treated with topical or oral ________."
   answer="fungicides"
-  hint="This is the Key Concepts and Summary's general term for antifungal drugs, whether applied to the skin or taken by mouth."
+  accept="antifungals|antifungal medications|antifungal drugs"
+  hint="Look at the last bullet of the Summary."
 >}}
 
 {{< textin
   question="*Candida* is a ________ fungus, so it does not only exist in a yeast form."
   answer="dimorphic"
-  hint="This is the general term for a fungus capable of existing in more than one morphological form."
+  hint="Look in the paragraph on diagnosis, near the mention of chlamydospores and pseudohyphae."
 >}}
 
 {{< multiplechoice

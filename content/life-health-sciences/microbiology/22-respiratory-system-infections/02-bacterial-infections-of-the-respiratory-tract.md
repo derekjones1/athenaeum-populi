@@ -110,7 +110,7 @@ more time spent lying down facilitates drainage into the middle ear
 bottle feeding while lying down causes negative pressure that moves fluid and bacteria into the middle ear
 {{< /selfcheck >}}
 
-{{< textin question="What factor often triggers bacterial rhinosinusitis?" answer="a viral infection" hint="These conditions often occur as secondary infections after this kind of infection first compromises the immune defenses." >}}
+{{< textin question="What factor often triggers bacterial rhinosinusitis?" answer="a viral infection" accept="virus|virus infection|prior viral infection|previous viral infection" hint="See the second sentence of the Bacterial Rhinosinusitis subsection." >}}
 
 ## Diphtheria
 
@@ -223,21 +223,17 @@ Pneumonia caused by *K. pneumoniae* is characterized by lung necrosis and "curra
 *Streptococcus pyogenes*, *Chlamydia pneumoniae*, and *Moraxella catarrhalis*
 {{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Which cause of pneumonia is most likely to affect young people?"
-  answer="*Mycoplasma pneumoniae*"
-  hint="One of these infections is specifically described as common in crowded environments like college campuses and military bases — settings full of young people."
->}}
-*Haemophilus* pneumonia
-*Klebsiella pneumoniae* pneumonia
-*Mycoplasma pneumoniae*
-*Legionella pneumophila* pneumonia
-{{< /multiplechoice >}}
+{{< selfcheck question="Which cause of pneumonia is most likely to affect young people?" hint="Compare the populations each pneumonia subsection says it affects." >}}
+*Mycoplasma pneumoniae*, the cause of primary atypical pneumonia. The module does not name an age group for it; it says that mycoplasma pneumonia infections, also known as walking pneumonia, "are common in crowded environments like college campuses and military bases"; reading those settings as places full of young people is the step the question leaves to you. By contrast, it says *Haemophilus* pneumonia "is primarily seen in the elderly."
+===CHECKS===
+Mycoplasma pneumoniae (primary atypical or walking pneumonia)
+it is common in crowded environments like college campuses and military bases
+{{< /selfcheck >}}
 
 {{< multiplechoice
   question="In what contexts does Pseudomonas aeruginosa cause pneumonia?"
   answer="In patients with cystic fibrosis and in hospitalized patients on artificial ventilators"
-  hint="This organism is named as a cause of serious pneumonia in two specific patient groups: one with a genetic lung condition, one on breathing-support equipment."
+  hint="See the first sentence of the Pseudomonas Pneumonia subsection."
 >}}
 In patients with cystic fibrosis and in hospitalized patients on artificial ventilators
 In children under age 5 and in patients recovering from untreated strep throat
@@ -263,7 +259,7 @@ Tuberculosis (TB) is one of the deadliest infectious diseases in human history. 
 
 After inhalation, the bacteria enter the alveoli (see the figure below). The cells are phagocytized by macrophages but can survive and multiply within these phagocytes because of the protection by the waxy mycolic acid in their cell walls. If not eliminated by macrophages, the infection can progress, causing an inflammatory response and an accumulation of neutrophils and macrophages in the area. Several weeks or months may pass before an immunological response is mounted by T cells and B cells. Eventually, the lesions in the alveoli become walled off, forming small round lesions called **tubercles**. Bacteria continue to be released into the center of the tubercles and the chronic immune response results in tissue damage and induction of apoptosis (programmed host-cell death) in a process called liquefaction. This creates a caseous center, or air pocket, where the aerobic *M. tuberculosis* can grow and multiply. Tubercles may eventually rupture and bacterial cells can invade pulmonary capillaries; from there, bacteria can spread through the bloodstream to other organs, a condition known as **miliary tuberculosis**. The rupture of tubercles also facilitates transmission of the bacteria to other individuals via droplet aerosols that exit the body in coughs. Because these droplets can be very small and stay aloft for a long time, special precautions are necessary when caring for patients with TB, such as the use of face masks and negative-pressure ventilation and filtering systems.
 
-{{< mediafigure src="microbiology/OSC_Microbio_22_02_TB" kind="diagram" alt="A four-step numbered diagram of the tuberculosis infectious cycle, from inhaled bacteria entering the alveoli, to bacteria multiplying, to immune cells forming a walled-off granuloma, and finally the granuloma breaking down and the bacteria escaping to form new tubercles." longdesc="The diagram numbers four steps. (1) A drawing of a person's head, neck, and lungs shows an inset micrograph of pink rod-shaped tubercle bacilli, with an arrow into the nose and a second arrow into the lungs; a labeled close-up shows a bronchiole branching into several round alveoli, one of which holds a small ringed cluster of rod-shaped bacilli, with leader lines labeling the bronchiole, the tubercle bacilli, and the alveoli. (2) A caption below an arrow reads 'tubercle bacilli multiply in the alveoli,' with no additional panel. (3) The alveolus is now ringed by a tight circle of tan immune cells enclosing several rod-shaped bacilli, captioned 'immune cells form a barrier shell around the tubercle bacilli, called a granuloma.' (4) The same ringed structure is shown with bacilli escaping outward past the immune-cell ring and multiplying, captioned 'granuloma shell breaks down and the tubercle bacilli escape and rapidly multiply, forming more tubercles.'" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_22_02_TB" kind="diagram" alt="A four-step numbered diagram of the tuberculosis infectious cycle, from inhaled bacteria entering the alveoli, to bacteria multiplying, to immune cells forming a walled-off granuloma, and finally the granuloma breaking down and the bacteria escaping to form new tubercles." longdesc="The diagram numbers four steps. (1) Captioned 'droplet nuclei containing tubercle bacilli are inhaled, enter the lungs, and travel to the alveoli.' A drawing of a person's head, neck, and lungs shows an inset micrograph of pink rod-shaped tubercle bacilli, with an arrow pointing from the micrograph into the nose and a second arrow pointing away from the chest to a labeled close-up box (zooming into the lungs, not depicting travel into them); the close-up shows a bronchiole branching into several round alveoli, one of which holds a small ringed cluster of rod-shaped bacilli, with leader lines labeling the bronchiole, the tubercle bacilli, and that same alveolus (representing 'the alveoli' generally). (2) A caption below the close-up reads 'tubercle bacilli multiply in the alveoli,' with no panel of its own; an arrow leads down from it to step 3. (3) The alveolus is now ringed by a tight circle of tan immune cells enclosing several rod-shaped bacilli, captioned 'immune cells form a barrier shell around the tubercle bacilli, called a granuloma.' (4) An arrow leads left from step 3 to step 4: the same ring, now broken where the alveolus meets the bronchiole, with several bacilli and three of the tan immune cells passing out through the gap and up the bronchiole passage while other bacilli stay inside, captioned 'granuloma shell breaks down and the tubercle bacilli escape and rapidly multiply, forming more tubercles.'" >}}
 In the infectious cycle of tuberculosis, the immune response of most infected individuals (approximately 90%) results in the formation of tubercles in which the infection is walled off (G. Kaplan et al. "*Mycobacterium tuberculosis* Growth at the Cavity Surface: A Microenvironment with Failed Immunity." *Infection and Immunity* 71 no.12 (2003):7099–7108.). The remainder will suffer progressive primary tuberculosis. The sequestered bacteria may be reactivated to form secondary tuberculosis in immunocompromised patients at a later time. (credit: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
@@ -287,12 +283,12 @@ This short animation (the CDC's "How TB Spreads" page at cdc.gov) describes the 
 
 **Check Your Understanding**
 
-{{< textin question="What characteristic of Mycobacterium tuberculosis allows it to evade the immune response?" answer="mycolic acid" hint="Look at what protects the phagocytized bacterium's cell wall so that macrophages cannot destroy it." >}}
+{{< textin question="What characteristic of Mycobacterium tuberculosis allows it to evade the immune response?" answer="mycolic acid" accept="waxy mycolic acid|waxy cell wall" hint="Look at what protects the phagocytized bacterium's cell wall so that macrophages cannot destroy it." >}}
 
 {{< multiplechoice
   question="What happens to cause miliary tuberculosis?"
   answer="Tubercles rupture, bacterial cells invade the pulmonary capillaries, and the bacteria spread through the bloodstream to other organs"
-  hint="Trace what happens after the immune response walls off the infection in tubercles, once those structures eventually rupture."
+  hint="See the closing sentences of the Tuberculosis subsection's third paragraph."
 >}}
 Tubercles rupture, bacterial cells invade the pulmonary capillaries, and the bacteria spread through the bloodstream to other organs
 Pertussis toxin increases cyclic AMP levels in host cells and disrupts cellular signaling
@@ -335,7 +331,7 @@ This interactive [map](https://openstax.org/l/22intmapprevacc) shows outbreaks o
 
 **Check Your Understanding**
 
-{{< textin question="What accounts for the mucus production in a pertussis infection?" answer="tracheal cytotoxin" hint="This is a second toxin B. pertussis produces, distinct from the A-B exotoxin PT, that damages ciliated cells directly." >}}
+{{< textin question="What accounts for the mucus production in a pertussis infection?" answer="tracheal cytotoxin" hint="See the second paragraph of the Pertussis subsection." >}}
 
 {{< selfcheck question="What are the signs and symptoms associated with the three stages of pertussis?" hint="Walk through the catarrhal, paroxysmal, and convalescence stages in order." >}}
 In the catarrhal stage, symptoms are relatively mild — nasal congestion, a runny nose, sneezing, and a low-grade fever — and this is the stage in which B. pertussis is most infectious. In the paroxysmal stage, mucus accumulation leads to uncontrollable coughing spasms that can last several minutes and frequently induce vomiting, lasting for several weeks. The convalescence stage is a long stage during which patients experience a chronic cough that can last for up to several months.
@@ -348,7 +344,7 @@ convalescence stage: a long chronic cough lasting up to several months
 {{< multiplechoice
   question="Why is pertussis becoming more common in the United States?"
   answer="Declining vaccination rates and an increasing population of susceptible children"
-  hint="The module names two trends working together — one about protection levels, one about who is left unprotected."
+  hint="See the last paragraph of the Pertussis subsection before its Link to Learning."
 >}}
 Declining vaccination rates and an increasing population of susceptible children
 Increasing macrolide and fluoroquinolone resistance in the causative bacterium
@@ -371,7 +367,7 @@ Once diagnosed, Legionnaire disease can be effectively treated with fluoroquinol
 {{< multiplechoice
   question="Why is Legionnaires disease associated with air-conditioning systems?"
   answer="The bacterium infects free-living amoebae in moist environments and spreads from human-made reservoirs such as cooling towers, humidifiers, and fountains"
-  hint="Think about where this bacterium actually lives before it ever reaches a person — not a person-to-person route."
+  hint="See the first paragraph of the Legionnaires Disease subsection."
 >}}
 The bacterium infects free-living amoebae in moist environments and spreads from human-made reservoirs such as cooling towers, humidifiers, and fountains
 It is transmitted by ticks and through exposure to the urine or feces of infected livestock
@@ -382,7 +378,7 @@ It primarily affects domesticated birds such as parakeets, turkeys, and ducks
 {{< multiplechoice
   question="How does Legionella pneumophila circumvent the immune system?"
   answer="It inserts proteins into the macrophage's endosomal membrane that prevent lysosomal fusion, letting it proliferate within the phagosome"
-  hint="Once phagocytized, this bacterium does not just resist being destroyed — it manipulates the compartment it is trapped in."
+  hint="See the second paragraph of the Legionnaires Disease subsection."
 >}}
 It inserts proteins into the macrophage's endosomal membrane that prevent lysosomal fusion, letting it proliferate within the phagosome
 Its polysaccharide capsule interferes with phagocytic clearance
@@ -482,7 +478,7 @@ Numerous pathogens can cause infections of the respiratory tract. Many of these 
 {{< multiplechoice
   question="What disease is caused by Coxiella burnetii?"
   answer="Q fever"
-  hint="This bacterium's disease is described in this section as a zoonotic infection typically contracted from livestock."
+  hint="See the first sentence of the section's last subsection."
 >}}
 Q fever
 tuberculosis
@@ -493,7 +489,7 @@ walking pneumonia
 {{< multiplechoice
   question="What is the causative agent of Q fever?"
   answer="*Coxiella burnetii*"
-  hint="This organism is described as an obligate intracellular bacterium whose primary reservoirs are cattle, sheep, and goats."
+  hint="See the first sentence of the section's last subsection."
 >}}
 *Coxiella burnetii*
 *Chlamydia psittaci*
@@ -504,7 +500,7 @@ walking pneumonia
 {{< multiplechoice
   question="Which of these microbes causes “walking pneumonia”?"
   answer="*Mycoplasma pneumoniae*"
-  hint="This bacterium lacks a cell wall and spreads easily in crowded settings like college campuses and military bases."
+  hint="See the pneumonia subsection that follows the Case in Point box about Tracy."
 >}}
 *Klebsiella pneumoniae*
 *Streptococcus pneumoniae*
@@ -524,7 +520,7 @@ the most common cause of community-acquired bacterial pneumonia is S. pneumoniae
 {{< multiplechoice
   question="Which of the following does not involve a bacterial exotoxin?"
   answer="Q fever"
-  hint="Three of these four diseases are caused by toxin-producing bacteria; one is caused by an obligate intracellular bacterium whose damage is not toxin-mediated."
+  hint="Check each disease's own subsection for a toxin it names."
 >}}
 diphtheria
 whooping cough
@@ -535,7 +531,7 @@ Q fever
 {{< multiplechoice
   question="In which stage of pertussis is the characteristic whooping sound made?"
   answer="paroxysmal"
-  hint="This is the stage when mucus accumulation causes uncontrollable coughing spasms that can last several minutes."
+  hint="Match the Pertussis subsection's description of when the whoop is heard to its paragraph on the three stages."
 >}}
 convalescence
 catarrhal
@@ -543,15 +539,15 @@ paroxysmal
 prodromal
 {{< /multiplechoice >}}
 
-{{< textin question="Calcified lesions called ________ form in the lungs of patients with TB." answer="Ghon complexes" accept="Ghon complex" hint="These structures are visible on chest radiographs after tuberculosis lesions heal." >}}
+{{< textin question="Calcified lesions called ________ form in the lungs of patients with TB." answer="Ghon complexes" hint="These structures are visible on chest radiographs after tuberculosis lesions heal." >}}
 
-{{< textin question="An inflammation of the middle ear is called ________." answer="otitis media" accept="acute otitis media|AOM" hint="This is the medical term for what is commonly called an earache — this section's own condition." >}}
+{{< textin question="An inflammation of the middle ear is called ________." answer="otitis media" accept="acute otitis media|AOM" hint="See the first sentence of the subsection after Streptococcal Infections." >}}
 
-{{< textin question="The ________ is used to serologically identify Streptococcus pneumoniae isolates." answer="quellung reaction" hint="All clinical pneumococcal isolates are serotyped using this reaction, with typing antisera produced by the CDC." >}}
+{{< textin question="The ________ is used to serologically identify Streptococcus pneumoniae isolates." answer="quellung reaction" accept="quellung" hint="See the identification paragraph of the Pneumococcal Pneumonia subsection." >}}
 
-{{< textin question="________ is a zoonotic infection that can be contracted by people who handle birds." answer="Psittacosis" hint="This disease is caused by Chlamydia psittaci and primarily affects domesticated birds like parakeets, turkeys, and ducks." >}}
+{{< textin question="________ is a zoonotic infection that can be contracted by people who handle birds." answer="Psittacosis" hint="See the subsection that follows the Mycoplasma subsection." >}}
 
-{{< textin question="The main virulence factor involved in scarlet fever is the ________." answer="erythrogenic toxin" hint="This toxin is encoded by a temperate bacteriophage and attacks the plasma membranes of capillary endothelial cells." >}}
+{{< textin question="The main virulence factor involved in scarlet fever is the ________." answer="erythrogenic toxin" hint="See the scarlet fever paragraph in the Streptococcal Infections subsection." >}}
 
 {{< selfcheck question="How does smoking make an individual more susceptible to infections?" hint="This section names secondhand smoke as one environmental factor among several that affect a person's susceptibility to infection." >}}
 This section notes that environmental factors such as exposure to secondhand smoke can make some individuals more susceptible to infection, by producing conditions favorable to microbial growth or by compromising the immune system.
@@ -572,7 +568,7 @@ an accumulation of dead host cells, pus, red blood cells, fibrin, and infectious
 {{< multiplechoice
   question="Why might β-lactam antibiotics be ineffective against Mycoplasma pneumoniae infections?"
   answer="*M. pneumoniae* has no cell wall, and β-lactams target cell-wall synthesis"
-  hint="Recall what β-lactam antibiotics actually target in a bacterial cell, and what this organism's own cell structure lacks."
+  hint="See the culture-and-treatment paragraph of the Mycoplasma subsection."
 >}}
 *M. pneumoniae* has no cell wall, and β-lactams target cell-wall synthesis
 *M. pneumoniae* is an obligate intracellular pathogen that antibiotics cannot reach
@@ -583,7 +579,7 @@ an accumulation of dead host cells, pus, red blood cells, fibrin, and infectious
 {{< multiplechoice
   question="Why is proper antibiotic therapy especially important for patients with tuberculosis?"
   answer="Improper or incomplete therapy can select for multidrug-resistant (MDR-TB) and extensively drug-resistant (XDR-TB) strains"
-  hint="Multidrug protocols exist because of a specific kind of resistant strain that can develop from misuse or mismanagement of therapy."
+  hint="See the treatment paragraph of the Tuberculosis subsection."
 >}}
 Improper or incomplete therapy can select for multidrug-resistant (MDR-TB) and extensively drug-resistant (XDR-TB) strains
 Incomplete therapy allows the bacterium to develop a polysaccharide capsule that resists antibiotics
@@ -593,4 +589,4 @@ Incomplete therapy allows the bacterium to lose its cell wall and become resista
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 22.2: Bacterial Infections of the Respiratory Tract](https://openstax.org/books/microbiology/pages/22-2-bacterial-infections-of-the-respiratory-tract) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all ten photographic and micrograph figures re-encoded as WebP and rendered as mediafigures with `kind="photo"` after image inspection, except the tuberculosis infectious-cycle figure, which is rendered `kind="diagram"` (overriding the media manifest's JPEG-based photo guess) with a `longdesc` walking through its four numbered steps; the Pyogenes figure carries `eager="true"` as the page's first figure; the two Disease Profile table images (`OSC_Microbio_22_02_BacPathTab`, `OSC_Microbio_22_02_BacPathTab2`) are transcribed as Markdown tables from the images (checked against the PDF) rather than vendored, per this book's Disease Profile rule — the pneumonia table's pneumococcal Antimicrobial Drugs cell follows the pinned source text ("β-lactams, macrolides or cephalosporin, fluoroquinolones"), where the printed table image omits "or cephalosporin"; the chest-radiograph alt is rewritten from the image as cyan-tinted rather than the source alt's "black background," and the chocolate-agar-plate alt is rewritten to describe a culture plate rather than the source alt's "micrograph," neither of which the artwork supports; feature boxes rendered as callouts; the Clinical Focus Part 2 box's "Jump to the next/previous Clinical Focus box" links are replaced with plain sentences naming that the case began in Section 22.1 and continues in Section 22.3 (both authored this run); the four footnote citations and the nine other footnoted citations are rendered as inline parenthetical citations, bare access URLs dropped; the cross-references to Section 6.2 (*The Viral Life Cycle*), Section 15.3 (*Virulence Factors of Bacterial and Viral Pathogens*), and Section 19.1 (*Hypersensitivities*, cited twice) are links to those pages; the five source Multiple Choice and five Fill in the Blank items are adapted into Practice unchanged with their source keys; of the three unkeyed Short Answer questions, all three remain self-checks with author-written model answers assembled from this module's own sentences — the smoking-susceptibility answer draws only on this module's own "Why Me?" Case in Point sentence about secondhand smoke, not on Section 22.1's separate Case in Point about tobacco smoke, since the fixing content must come from this module; of the two unkeyed Critical Thinking questions, both are graded as `multiplechoice` from this module's own sentences (the β-lactam/cell-wall sentence and the MDR-TB/XDR-TB sentence); of this section's nineteen body Check Your Understanding bullets, ten are graded (seven `multiplechoice` and three `textin`) from a single fixing sentence of their own subsection and nine remain self-checks whose model answers are assembled from this module's own text, because each needs more than one sentence, a paragraph boundary, or a list longer than a form holds to answer honestly; the Short Answer question naming three pneumonia bacteria and the body Check Your Understanding bullet asking the same three pathogens are both kept, since the Short Answer additionally asks which is most common, a fact the body bullet does not ask; four one-word or short-phrase source departures are corrected: "M. cattarhalis" to "M. catarrhalis" in the Acute Otitis Media subsection, "it caused more 50,000 deaths" to "it caused more than 50,000 deaths" in the Bacterial Pneumonia subsection, the Disease Profile table's "DtaP" to "DTaP" (matching this module's own capitalization convention for full-strength vaccine doses), and the Chlamydial Pneumonias subsection's bare genus "Chlamydia" completed to "Chlamydia pneumoniae" as its first-listed species (matching the same paragraph's own later references to "Chlamydia pneumoniae" as the most common and most-transmitted of the three); a claim correction in the Q Fever subsection replaces the source's "is caused by a rickettsia, Coxiella burnetii" with "is caused by Coxiella burnetii, an obligate intracellular bacterium once classified among the rickettsias" and "Diagnosing rickettsial infection" with "Diagnosing this infection," with a visible Source note beside the passage, because this book's own Chapter 4 places Coxiella in Gammaproteobacteria and Rickettsia in Alphaproteobacteria and the genus left order Rickettsiales in 1989. The tuberculosis Link to Learning's redirect (openstax.org/l/22mycotublegpnean, to www.cdc.gov/tb/topic/basics/howtbspreads.htm) returned 404 on September 14, 2026, so the callout names the resource and its site in plain text instead of linking it. The Pneumococ figure's panel (b) alt is rewritten from the image (about four clustered spherical cells) in place of the source alt's "two dumbbell shaped blue cells," which the artwork does not show.</small>
+<small>This section is adapted from [Microbiology, Section 22.2: Bacterial Infections of the Respiratory Tract](https://openstax.org/books/microbiology/pages/22-2-bacterial-infections-of-the-respiratory-tract) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all ten photographic and micrograph figures re-encoded as WebP and rendered as mediafigures with `kind="photo"` after image inspection, except the tuberculosis infectious-cycle figure, which is rendered `kind="diagram"` (overriding the media manifest's JPEG-based photo guess) with a `longdesc` walking through its four numbered steps; the Pyogenes figure carries `eager="true"` as the page's first figure; the two Disease Profile table images (`OSC_Microbio_22_02_BacPathTab`, `OSC_Microbio_22_02_BacPathTab2`) are transcribed as Markdown tables from the images (checked against the PDF) rather than vendored, per this book's Disease Profile rule — the pneumonia table's pneumococcal Antimicrobial Drugs cell follows the pinned source text ("β-lactams, macrolides or cephalosporin, fluoroquinolones"), where the printed table image omits "or cephalosporin"; the chest-radiograph alt is rewritten from the image as cyan-tinted rather than the source alt's "black background," and the chocolate-agar-plate alt is rewritten to describe a culture plate rather than the source alt's "micrograph," neither of which the artwork supports; feature boxes rendered as callouts; the Clinical Focus Part 2 box's "Jump to the next/previous Clinical Focus box" links are replaced with plain sentences naming that the case began in Section 22.1 and continues in Section 22.3 (both authored this run); the four footnote citations and the nine other footnoted citations are rendered as inline parenthetical citations, bare access URLs dropped; the cross-references to Section 6.2 (*The Viral Life Cycle*), Section 15.3 (*Virulence Factors of Bacterial and Viral Pathogens*), and Section 19.1 (*Hypersensitivities*, cited twice) are links to those pages; the five source Multiple Choice and five Fill in the Blank items are adapted into Practice unchanged with their source keys; of the three unkeyed Short Answer questions, all three remain self-checks with author-written model answers assembled from this module's own sentences — the smoking-susceptibility answer draws only on this module's own "Why Me?" Case in Point sentence about secondhand smoke, not on Section 22.1's separate Case in Point about tobacco smoke, since the fixing content must come from this module; of the two unkeyed Critical Thinking questions, both are graded as `multiplechoice` from this module's own sentences (the β-lactam/cell-wall sentence and the MDR-TB/XDR-TB sentence); of this section's nineteen body Check Your Understanding bullets, nine are graded (six `multiplechoice` and three `textin`) from a single fixing sentence of their own subsection and ten remain self-checks whose model answers are assembled from this module's own text, because each needs more than one sentence, a paragraph boundary, or a list longer than a form holds to answer honestly (the "most likely to affect young people" bullet among them: the module never names an age group for mycoplasma pneumonia, only "crowded environments like college campuses and military bases," so no single sentence fixes its key); the Short Answer question naming three pneumonia bacteria and the body Check Your Understanding bullet asking the same three pathogens are both kept, since the Short Answer additionally asks which is most common, a fact the body bullet does not ask; four one-word or short-phrase source departures are corrected: "M. cattarhalis" to "M. catarrhalis" in the Acute Otitis Media subsection, "it caused more 50,000 deaths" to "it caused more than 50,000 deaths" in the Bacterial Pneumonia subsection, the Disease Profile table's "DtaP" to "DTaP" (matching this module's own capitalization convention for full-strength vaccine doses), and the Chlamydial Pneumonias subsection's bare genus "Chlamydia" completed to "Chlamydia pneumoniae" as its first-listed species (matching the same paragraph's own later references to "Chlamydia pneumoniae" as the most common and most-transmitted of the three); a claim correction in the Q Fever subsection replaces the source's "is caused by a rickettsia, Coxiella burnetii" with "is caused by Coxiella burnetii, an obligate intracellular bacterium once classified among the rickettsias" and "Diagnosing rickettsial infection" with "Diagnosing this infection," with a visible Source note beside the passage, because this book's own Chapter 4 places Coxiella in Gammaproteobacteria and Rickettsia in Alphaproteobacteria and the genus left order Rickettsiales in 1989. The tuberculosis Link to Learning's redirect (openstax.org/l/22mycotublegpnean, to www.cdc.gov/tb/topic/basics/howtbspreads.htm) returned 404 on September 14, 2026, so the callout names the resource and its site in plain text instead of linking it. The Pneumococ figure's panel (b) alt is rewritten from the image (about four clustered spherical cells) in place of the source alt's "two dumbbell shaped blue cells," which the artwork does not show.</small>

@@ -49,7 +49,7 @@ The second level of compaction occurs as the nucleosomes and the linker DNA betw
 
 In the third level of compaction, a variety of *fibrous proteins* is used to "pack the chromatin." These fibrous proteins also ensure that each chromosome in a non-dividing cell occupies a particular area of the nucleus that does not overlap with that of any other chromosome (see the top image above).
 
-{{< mediafigure src="biology/Figure_10_01_03-3c7b" kind="diagram" alt="A labeled illustration of a nucleosome—eight histone proteins wrapped by DNA—above a six-panel diagram comparing DNA packing at increasing size scales from a 2-nanometer double helix to a 1400-nanometer metaphase chromosome." longdesc="Top panel: a nucleosome core of eight histone proteins, two each of H2A, H2B, H3, and H4, with a separate linker histone labeled H1 in the linker region, wrapped by a strand of DNA carrying 146 or 147 nucleotide base pairs; a green linker region connects the amino-terminal tail of one histone protein toward the next nucleosome, and the DNA strand leaving the top right is labeled DNA, with the nucleosome's 10-nm diameter marked by an arrow. Bottom panel: six labeled stages of DNA packing in a row, each drawn beneath its width in nanometers—the DNA double helix at 2 nm, nucleosomes strung like beads at 10 nm, a 30-nm fiber coiled with the help of histone H1, radial loop domains at 300 nm, heterochromatin at 700 nm, and the fully condensed metaphase chromosome at 1400 nm." >}}
+{{< mediafigure src="biology/Figure_10_01_03-3c7b" kind="diagram" alt="A labeled illustration of a nucleosome—eight histone proteins wrapped by DNA—above a six-panel diagram comparing DNA packing at increasing size scales from a 2-nanometer double helix to a 1400-nanometer metaphase chromosome." longdesc="Top panel: two nucleosomes on one DNA strand. The left one is bracketed as a nucleosome: a core of eight histone proteins, two each of H2A, H2B, H3, and H4, wrapped by a strand of DNA carrying 146 or 147 nucleotide base pairs. The stretch of DNA running between the two nucleosomes is bracketed as the linker region, and a green linker histone labeled H1 lies along it. Histone tails stick out of each core; one on the right nucleosome is labeled amino terminal tail of histone protein. The DNA strand leaving the top right is labeled DNA, and the right nucleosome's 10-nm diameter is marked by a double-headed arrow. Bottom panel: six labeled stages of DNA packing in a row, each drawn beneath its width in nanometers—the DNA double helix at 2 nm, nucleosomes strung like beads at 10 nm, a 30-nm fiber coiled with the help of histone H1, radial loop domains at 300 nm, heterochromatin at 700 nm, and the fully condensed metaphase chromosome at 1400 nm." >}}
 Each linear chromosome in a eukaryotic cell is packaged into chromatin, a combination of DNA and proteins. The double-stranded DNA
 helix associates with the core histones to form nucleosomes. These nucleosomes are further organized into a 30 nm fiber by the linker histone, H1. The
 fiber then associates with additional proteins to form loops and higher-order heterochromatin packing. DNA packing reaches its most condensed state
@@ -85,10 +85,16 @@ Prokaryotes have a single circular chromosome composed of double-stranded DNA, w
 
 ### Describe the structure of prokaryotic and eukaryotic genomes
 
+{{< textin
+  question="Prokaryotes have a single ________ chromosome composed of double-stranded DNA, whereas eukaryotes have multiple, linear chromosomes."
+  answer="circular"
+  hint="Reread the first sentence of the section summary."
+>}}
+
 {{< multiplechoice
   question="A diploid cell has ________ the number of chromosomes as a haploid cell."
   answer="twice"
-  hint="A diploid cell carries two matched sets of chromosomes, while a haploid cell carries only one — compare the section's own numbers for human somatic cells (46) and gametes (23)."
+  hint="Reread the second paragraph of Genomic DNA, with its chromosome counts for human cells."
 >}}
 one-fourth
 half
@@ -96,13 +102,7 @@ twice
 four times
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The total genetic information of a cell or organism is called its ________."
-  answer="genome"
-  hint="In prokaryotes it is a single circular DNA molecule; in eukaryotes it is several linear ones."
->}}
-
-{{< selfcheck question="Compare and contrast a human somatic cell to a human gamete." hint="Compare the chromosome count and pairing—2n or n—that each cell type carries." >}}
+{{< selfcheck question="Compare and contrast a human somatic cell to a human gamete." hint="Reread the second paragraph of Genomic DNA and the section summary." >}}
 Human somatic cells have 46 chromosomes: 22 pairs and 2 sex chromosomes that may or may not form a pair. This is the 2*n* or diploid condition. Human gametes have 23 chromosomes, one each of 23 unique chromosomes, one of which is a sex chromosome. This is the *n* or haploid condition.
 ===CHECKS===
 somatic cells have 46 chromosomes: 22 pairs and 2 sex chromosomes
@@ -115,7 +115,7 @@ the diploid and haploid conditions
 {{< multiplechoice
   question="An organism's traits are determined by the specific combination of inherited ________."
   answer="genes."
-  hint="Traits like hair color trace back to specific variants of these hereditary units, not directly to the cells or proteins they help build."
+  hint="Reread the Genomic DNA paragraph on blood type, and the summary."
 >}}
 cells.
 genes.
@@ -124,12 +124,13 @@ chromatids.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A physical and functional unit of heredity — a sequence of DNA that codes for a protein — is called a ________."
-  answer="gene"
-  hint="Homologous chromosomes carry these in exactly the same location, or locus."
+  question="The position of a gene on a chromosome is called its ________."
+  answer="locus"
+  accept="loci"
+  hint="Reread the Genomic DNA paragraph on homologous chromosomes."
 >}}
 
-{{< selfcheck question="What is the relationship between a genome, chromosomes, and genes?" hint="Think of the whole, the packaged pieces it is divided into, and the functional segments found within those pieces." >}}
+{{< selfcheck question="What is the relationship between a genome, chromosomes, and genes?" hint="Reread the opening paragraph of Genomic DNA and the summary's sentence on genes." >}}
 The genome consists of the sum total of an organism's chromosomes. Each chromosome contains hundreds and sometimes thousands of genes, segments of DNA that code for a polypeptide or RNA, and a large amount of DNA with no known function.
 ===CHECKS===
 the genome is the sum total of an organism's chromosomes
@@ -139,10 +140,22 @@ genes are segments of DNA that code for a polypeptide or RNA
 
 ### Describe the mechanisms of chromosome compaction
 
+{{< textin
+  question="The beadlike subunit of chromatin, a short length of DNA wrapped around a protein core, is called a ________."
+  answer="nucleosome"
+  hint="Reread the first level of compaction under Eukaryotic Chromosomal Structure and Compaction."
+>}}
+
+{{< textin
+  question="Chromosome compaction happens during certain stages of the ________."
+  answer="cell cycle"
+  hint="Reread the first paragraph of Eukaryotic Chromosomal Structure and Compaction."
+>}}
+
 {{< multiplechoice
   question="The first level of DNA organization in a eukaryotic cell is maintained by which molecule?"
   answer="histone"
-  hint="Short stretches of DNA wrap around a core of eight of these proteins to form the beadlike nucleosome."
+  hint="Reread the first level of compaction under Eukaryotic Chromosomal Structure and Compaction."
 >}}
 cohesin
 condensin
@@ -153,7 +166,7 @@ histone
 {{< multiplechoice
   question="Identical copies of chromatin held together by cohesin at the centromere are called ________."
   answer="sister chromatids."
-  hint="These identical copies form after DNA replication in the S phase and stay joined until they separate during mitosis."
+  hint="Reread the paragraph after the compaction figure."
 >}}
 histones.
 nucleosomes.
@@ -161,19 +174,7 @@ chromatin.
 sister chromatids.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The beadlike subunit of chromatin, formed by DNA wrapped around a core of histone proteins, is called a ________."
-  answer="nucleosome"
-  hint="Eight histone proteins form the core that a short stretch of DNA wraps around to form this structure."
->}}
-
-{{< textin
-  question="Chromosome compaction happens during certain stages of the ________."
-  answer="cell cycle"
-  hint="The orderly sequence of a cell's life from one division to the next; compaction peaks just before mitosis."
->}}
-
-{{< selfcheck question="Eukaryotic chromosomes are thousands of times longer than a typical cell. Explain how chromosomes can fit inside a eukaryotic nucleus." hint="Think through the levels of compaction in order, from the double helix wrapping around proteins to further coiling and packing." >}}
+{{< selfcheck question="Eukaryotic chromosomes are thousands of times longer than a typical cell. Explain how chromosomes can fit inside a eukaryotic nucleus." hint="Reread Eukaryotic Chromosomal Structure and Compaction, level by level." >}}
 The DNA double helix is wrapped around histone proteins to form structures called nucleosomes. Nucleosomes and the linker DNA in between them are coiled into a 30-nm fiber. During cell division, chromatin is further condensed by packing proteins.
 ===CHECKS===
 DNA wraps around histone proteins to form nucleosomes
@@ -183,4 +184,4 @@ chromatin is further condensed by packing proteins
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 10.1: Cell Division](https://openstax.org/books/biology-2e/pages/10-1-cell-division) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with two of the three re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the prokaryotic-cell illustration and the nucleosome/compaction diagram are both drawings; only the karyotype composite is a true photograph); a longdesc added for all three figures, which are labeled diagrams or a composite whose full reading is not carried by their captions alone; the karyotype figure's alt shortened from the source's process-focused walkthrough to what is visible, with that detail moved into the longdesc; the nucleosome/compaction figure's alt rewritten to remove the source's letter-spaced "D N A" artifact and shortened, with its full labeled walkthrough moved into the longdesc; the interactive note rendered as a Link to Learning callout with descriptive link text, keeping the source's URL; Review Question 1's keyed answer corrected from "half" to "twice" and reported as a source defect (module m66477, exercise fs-id1414909): a diploid cell has twice, not half, the chromosome number of a haploid cell, per the section's own worked numbers (46 vs. 23 chromosomes); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and three key-term recall items (genome, gene, nucleosome) added from the glossary to round out every objective group with a second auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived recall item added under the compaction objective from the section summary's own sentence.</small>
+<small>This section is adapted from [Biology 2e, Section 10.1: Cell Division](https://openstax.org/books/biology-2e/pages/10-1-cell-division) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with two of the three re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the prokaryotic-cell illustration and the nucleosome/compaction diagram are both drawings; only the karyotype composite is a true photograph); a longdesc added for all three figures, which are labeled diagrams or a composite whose full reading is not carried by their captions alone; the karyotype figure's alt shortened from the source's process-focused walkthrough to what is visible, with that detail moved into the longdesc; the nucleosome/compaction figure's alt rewritten to remove the source's letter-spaced "D N A" artifact and shortened, with its full labeled walkthrough moved into the longdesc, and the source alt's claim that the nucleosome is "connected by a linker region to the Amino tail of the histone protein" corrected to what is drawn (the linker region is the DNA between two nucleosomes, where histone H1 sits; the amino-terminal tails are separate labels on the histone cores); the interactive note rendered as a Link to Learning callout with descriptive link text, keeping the source's URL; Review Question 1's keyed answer corrected from "half" to "twice" and reported as a source defect (module m66477, exercise fs-id1414909): a diploid cell has twice, not half, the chromosome number of a haploid cell, per the section's own worked numbers (46 vs. 23 chromosomes); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (locus, placed after the traits Review Question, and nucleosome) added from the glossary to round out the chromosomes-genes-traits and compaction objective groups with a second auto-graded item, the nucleosome prompt shortened to omit the glossary's "histone" so that it does not print the next item's key; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and two summary-derived recall items added, one under the genome-structure objective (the summary's first sentence, blanking "circular" and ending at "linear chromosomes") and one under the compaction objective from the section summary's own sentence; within the genome-structure and compaction groups the recall items are placed before the source Review Questions.</small>

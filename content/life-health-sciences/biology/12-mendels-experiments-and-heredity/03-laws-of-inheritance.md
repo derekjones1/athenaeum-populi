@@ -47,7 +47,7 @@ Mendel’s **law of independent assortment** states that genes do not influence 
 This dihybrid cross of pea plants involves the genes for seed color and texture.
 {{< /mediafigure >}}
 
-{{< selfcheck question="In pea plants, round seed shape (R) is dominant to wrinkled seed shape (r) and yellow peas (Y) are dominant to green peas (y). What are the possible genotypes and phenotypes for a cross between RrYY and rrYy pea plants? How many squares do you need to do a Punnett square analysis of this cross?" hint="Each parent is homozygous for one of the two genes; work out how many distinct gamete types that leaves each parent before sizing the grid." >}}
+{{< selfcheck question="In pea plants, round seed shape (R) is dominant to wrinkled seed shape (r) and yellow peas (Y) are dominant to green peas (y). What are the possible genotypes and phenotypes for a cross between RrYY and rrYy pea plants? How many squares do you need to do a Punnett square analysis of this cross?" hint="Reread Independent Assortment and its dihybrid-cross figure." >}}
 The possible genotypes are RrYY, RrYy, rrYY, and rrYy. The first two genotypes produce round, yellow peas, while the last two produce wrinkled, yellow peas, for a 1:1 ratio of each phenotype. You only need a 2 × 2 Punnett square (four squares total) to do this analysis, because each parent is homozygous for one of the two genes — YY in the RrYY parent and rr in the rrYy parent — so each parent contributes only two distinct gamete types.
 ===CHECKS===
 the possible genotypes are RrYY, RrYy, rrYY, and rrYy
@@ -71,7 +71,7 @@ When more than two genes are being considered, the Punnett-square method becomes
 
 To prepare a forked-line diagram for a cross between F₁ heterozygotes resulting from a cross between *AABBCC* and *aabbcc* parents, we first create rows equal to the number of genes being considered, and then segregate the alleles in each row on forked lines according to the probabilities for individual monohybrid crosses (below). We then multiply the values along each forked path to obtain the F₂ offspring probabilities. Note that this process is a diagrammatic version of the product rule. The values along each forked pathway can be multiplied because each gene assorts independently. For a trihybrid cross, the F₂ phenotypic ratio is 27:9:9:9:3:3:3:1.
 
-{{< mediafigure src="biology/Figure_12_03_03" kind="diagram" alt="A forked-line diagram branching from 3 yellow : 1 green through 3 round : 1 wrinkled and 3 tall : 1 dwarf to the eight trihybrid F₂ probabilities, from 27 yellow/round/tall down to 1 green/wrinkled/dwarf." longdesc="The tree branches top to bottom under the heading 'Analyzing a Trihybrid Cross.' The first fork splits color into 3 yellow and 1 green. Each color branch then splits by shape into 3 round and 1 wrinkled. Each of those four branches splits again by height into 3 tall and 1 dwarf, ending in eight terminal branches, each showing its multiplied probability: 3 × 3 × 3 = 27 yellow round tall, 3 × 3 × 1 = 9 yellow round dwarf, 3 × 1 × 3 = 9 yellow wrinkled tall, 3 × 1 × 1 = 3 yellow wrinkled dwarf, 1 × 3 × 3 = 9 green round tall, 1 × 3 × 1 = 3 green round dwarf, 1 × 1 × 3 = 3 green wrinkled tall, and 1 × 1 × 1 = 1 green wrinkled dwarf." >}}
+{{< mediafigure src="biology/Figure_12_03_03" kind="diagram" alt="A forked-line diagram branching from 3 yellow : 1 green through 3 round : 1 wrinkled and 3 tall : 1 dwarf to the eight trihybrid F₂ probabilities, from 27 yellow/round/tall down to 1 green/wrinkled/dwarf." longdesc="Two trees branch top to bottom side by side under the heading 'Analyzing a Trihybrid Cross,' one rooted at 3 yellow on the left and one at 1 green on the right (no line joins the two roots). Each color root splits by shape into 3 round and 1 wrinkled. Each of those four branches splits again by height into 3 tall and 1 dwarf, and a gray down-arrow under each of the eight ends leads to its multiplied probability, left to right: 3 × 3 × 3 = 27 yellow round tall, 3 × 3 × 1 = 9 yellow round dwarf, 3 × 1 × 3 = 9 yellow wrinkled tall, 3 × 1 × 1 = 3 yellow wrinkled dwarf, 1 × 3 × 3 = 9 green round tall, 1 × 3 × 1 = 3 green round dwarf, 1 × 1 × 3 = 3 green wrinkled tall, and 1 × 1 × 1 = 1 green wrinkled dwarf." >}}
 The forked-line method can be used to analyze a trihybrid cross. Here, the probability for color in the F₂ generation occupies the top row (3 yellow:1 green). The probability for shape occupies the second row (3 round: 1 wrinkled), and the probability for height occupies the third row (3 tall:1 dwarf). The probability for each possible combination of traits is calculated by multiplying the probability for each individual trait. Thus, the probability of F₂ offspring having yellow, round, and tall traits is 3 × 3 × 3, or 27.
 {{< /mediafigure >}}
 
@@ -122,7 +122,7 @@ To better appreciate the amount of labor and ingenuity that went into Mendel’s
 
 **Test the hypothesis**: Because each trait pair sorts independently, the ratios of tall:dwarf and inflated:constricted are each expected to be 3:1. The tall/dwarf trait pair is called *T*/*t*, and the inflated/constricted trait pair is designated *I*/*i*. Each member of the F₁ generation therefore has a genotype of *TtIi*. Construct a grid analogous to the dihybrid-cross diagram above, in which you cross two *TtIi* individuals. Each individual can donate four combinations of two traits: *TI*, *Ti*, *tI*, or *ti*, meaning that there are 16 possibilities of offspring genotypes. Because the *T* and *I* alleles are dominant, any individual having one or two of those alleles will express the tall or inflated phenotypes, respectively, regardless if they also have a *t* or *i* allele. Only individuals that are *tt* or *ii* will express the dwarf and constricted alleles, respectively. As shown below, you predict that you will observe the following offspring proportions: tall/inflated:tall/constricted:dwarf/inflated:dwarf/constricted in a 9:3:3:1 ratio. Notice from the grid that when considering the tall/dwarf and inflated/constricted trait pairs in isolation, they are each inherited in 3:1 ratios.
 
-{{< mediafigure src="biology/Figure_12_03_06_new" kind="diagram" alt="A 4-by-4 Punnett square crossing two TtIi pea plants, with the gametes TI, Ti, tI, and ti labeled across the top and down the left side and each of the 16 grid cells filled with the resulting four-letter genotype." longdesc="The grid is bordered on top by an orange band listing the four gametes from one TtIi parent — TI, Ti, tI, ti — repeated in the same order down an orange band on the left for the other parent's gametes. The 16 cells inside record every genotype combination: row TI reads TTII, TTIi, TtII, TtIi; row Ti reads TTIi, TTii, TtIi, Ttii; row tI reads TtII, TtIi, ttII, ttIi; and row ti reads TtIi, Ttii, ttIi, ttii." >}}
+{{< mediafigure src="biology/Figure_12_03_06_new" kind="diagram" alt="A 4-by-4 Punnett square crossing two TtIi pea plants, with the gametes TI, Ti, tI, and ti labeled across the top and down the left side and each of the 16 grid cells filled with the resulting four-letter genotype." longdesc="An orange band across the top and another down the left side each read TtIi, one per parent. Inside them, a row of header cells lists that parent's four gametes — TI, Ti, tI, ti — across the top, and a column of header cells lists the same four in the same order down the left. The 16 cells inside record every genotype combination: row TI reads TTII, TTIi, TtII, TtIi; row Ti reads TTIi, TTii, TtIi, Ttii; row tI reads TtII, TtIi, ttII, ttIi; and row ti reads TtIi, Ttii, ttIi, ttii." >}}
 This figure shows all possible combinations of offspring resulting from a dihybrid cross of pea plants that are heterozygous for the tall/dwarf and inflated/constricted alleles.
 {{< /mediafigure >}}
 
@@ -147,7 +147,7 @@ In **epistasis**, the interaction between genes is antagonistic, such that one g
 
 An example of epistasis is pigmentation in mice. The wild-type coat color, agouti (*AA*), is dominant to solid-colored fur (*aa*). However, a separate gene (*C*) is necessary for pigment production. A mouse with a recessive *c* allele at this locus is unable to produce pigment and is albino regardless of the allele present at locus *A* (below). Therefore, the genotypes *AAcc*, *Aacc*, and *aacc* all produce the same albino phenotype. A cross between heterozygotes for both genes (*AaCc* x *AaCc*) would generate offspring with a phenotypic ratio of 9 agouti:3 solid color:4 albino (below). In this case, the *C* gene is epistatic to the *A* gene.
 
-{{< mediafigure src="biology/Figure_12_03_05" kind="diagram" alt="A 4×4 Punnett square crossing two AaCc agouti mice, with tan, black, and white mouse icons filling the 16 cells to show the resulting genotypes and coat colors, and a phenotypic-ratio key below reading 9/16 agouti, 3/16 black, and 4/16 white." longdesc="Under the heading 'Epistasis,' two tan agouti mice both labeled AaCc are crossed. An arrow leads to a 4×4 grid whose four gametes — AC, aC, Ac, ac — label the columns and, in the same order, the rows. Each of the 16 cells carries a genotype and a mouse icon: row AC reads AACC, AaCC, AACc, AaCc — all tan; row aC reads AaCC, aaCC, AaCc, aaCc — tan, black, tan, black; row Ac reads AACc, AaCc, AAcc, Aacc — tan, tan, white, white; and row ac reads AaCc, aaCc, Aacc, aacc — tan, black, white, white. A key below the grid shows three mouse icons labeled Agouti 9/16 (tan), Black 3/16 (dark gray), and Albino 4/16 (white with pink eyes)." >}}
+{{< mediafigure src="biology/Figure_12_03_05" kind="diagram" alt="A 4×4 Punnett square crossing two AaCc agouti mice, with tan, black, and white mouse icons filling the 16 cells to show the resulting genotypes and coat colors, and a key labeled Phenotypic ratio below reading 9/16 agouti, 3/16 black, and 4/16 albino (white)." longdesc="Under the heading 'Epistasis,' two tan agouti mice both labeled AaCc are crossed. An arrow leads to a 4×4 grid whose four gametes — AC, aC, Ac, ac — label the columns and, in the same order, the rows. Each of the 16 cells carries a genotype and a mouse icon: row AC reads AACC, AaCC, AACc, AaCc — all tan; row aC reads AaCC, aaCC, AaCc, aaCc — tan, black, tan, black; row Ac reads AACc, AaCc, AAcc, Aacc — tan, tan, white, white; and row ac reads AaCc, aaCc, Aacc, aacc — tan, black, white, white. The grid is labeled Genotypes, and a key below it, labeled Phenotypic ratio, shows three mouse icons labeled Agouti 9/16 (tan), Black 3/16 (dark gray), and Albino 4/16 (white with pink eyes)." >}}
 In mice, the mottled agouti coat color (*A*) is dominant to a solid coloration, such as black or gray. A gene at a separate locus (*C*) is responsible for pigment production. The recessive *c* allele does not produce pigment, and a mouse with the homozygous recessive *cc* genotype is albino regardless of the allele present at the *A* locus. Thus, the *C* gene is epistatic to the *A* gene.
 {{< /mediafigure >}}
 
@@ -178,10 +178,23 @@ Whether or not they are sorting independently, genes may interact at the level o
 
 ### Explain Mendel’s law of segregation and independent assortment in terms of genetics and the events of meiosis
 
+{{< textin
+  question="Alleles segregate into gametes such that each gamete is equally likely to receive either one of the two alleles present in a ________ individual."
+  answer="diploid"
+  hint="Reread the second sentence of the section summary."
+>}}
+
+{{< textin
+  question="A dihybrid cross demonstrates independent assortment when the genes in question are on different chromosomes or ________ from each other on the same chromosome."
+  answer="distant"
+  accept="far|far apart"
+  hint="Reread the first paragraph of the section summary."
+>}}
+
 {{< multiplechoice
   question="Assuming no gene linkage, in a dihybrid cross of *AABB* x *aabb* with *AaBb* F₁ heterozygotes, what is the ratio of the F₁ gametes (*AB*, *aB*, *Ab*, *ab*) that will give rise to the F₂ offspring?"
   answer="1:1:1:1"
-  hint="Both parents are homozygous for opposite alleles at each gene, so the F₁ is doubly heterozygous; independent assortment makes all four of its gamete types equally likely."
+  hint="Reread the section's fourth subsection and its dihybrid-cross figure."
 >}}
 1:1:1:1
 1:3:3:1
@@ -189,19 +202,9 @@ Whether or not they are sorting independently, genes may interact at the level o
 4:3:2:1
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Mendel’s principle that paired hereditary factors separate equally into gametes, so each offspring has an equal chance of inheriting either one, is called the ________."
-  answer="law of segregation"
-  hint="Mendel proposed it after the recessive trait he thought was lost kept resurfacing, unblended, in the F₂ generation."
->}}
 
-{{< textin
-  question="Mendel’s principle stating that alleles for different genes sort into gametes without influencing each other, with every allele combination equally likely, is called the ________."
-  answer="law of independent assortment"
-  hint="It is the rule that lets a dihybrid cross be predicted as two separate 3:1 ratios multiplied together."
->}}
 
-{{< selfcheck question="People with trisomy 21 develop Down’s syndrome. What law of Mendelian inheritance is violated in this disease? What is the most likely way this occurs?" hint="Trisomy means an extra copy of one chromosome; think about which step of meiosis normally guarantees that each gamete gets exactly one copy of each homolog." >}}
+{{< selfcheck question="People with trisomy 21 develop Down’s syndrome. What law of Mendelian inheritance is violated in this disease? What is the most likely way this occurs?" hint="Reread the section's third subsection." >}}
 In any trisomy disorder, a patient inherits 3 copies of a chromosome instead of the normal pair. This violates the Law of Segregation, and usually occurs when the chromosomes fail to separate during the first round of meiosis.
 ===CHECKS===
 a patient inherits 3 copies of a chromosome instead of the normal pair
@@ -214,7 +217,7 @@ usually occurs when the chromosomes fail to separate during the first round of m
 {{< multiplechoice
   question="The forked line and probability methods make use of what probability rule?"
   answer="product rule"
-  hint="Both methods track each gene's own probability separately and then combine those individual probabilities into one number for a specific combination of traits."
+  hint="Reread Forked-Line Method and Probability Method."
 >}}
 test cross
 product rule
@@ -225,7 +228,7 @@ sum rule
 {{< multiplechoice
   question="How many different offspring genotypes are expected in a trihybrid cross between parents heterozygous for all three traits when the traits behave in a dominant and recessive pattern? How many phenotypes?"
   answer="27 genotypes; 8 phenotypes"
-  hint="Apply the general rules for multihybrid crosses to a trihybrid cross (n = 3): the number of F₂ genotypes and the number of F₂ phenotypes each follow their own rule from the table above."
+  hint="Reread Rules for Multihybrid Fertilization and its table."
 >}}
 64 genotypes; 16 phenotypes
 16 genotypes; 64 phenotypes
@@ -233,7 +236,7 @@ sum rule
 27 genotypes; 8 phenotypes
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Use the probability method to calculate the genotypes and genotypic proportions of a cross between *AABBCc* and *Aabbcc* parents." hint="Work out each gene's own proportions separately (AA vs. Aa; Bb only; Cc vs. cc), then multiply the three fractions together for each combined genotype." >}}
+{{< selfcheck question="Use the probability method to calculate the genotypes and genotypic proportions of a cross between *AABBCc* and *Aabbcc* parents." hint="Reread Probability Method." >}}
 Considering each gene separately, the cross at *A* will produce offspring of which half are *AA* and half are *Aa*; *B* will produce all *Bb*; *C* will produce half *Cc* and half *cc*. Proportions then are (1/2) × (1) × (1/2), or 1/4 *AABbCc*; continuing for the other possibilities yields 1/4 *AABbcc*, 1/4 *AaBbCc*, and 1/4 *AaBbcc*. The proportions therefore are 1:1:1:1.
 ===CHECKS===
 the cross at A will produce offspring of which half are AA and half are Aa
@@ -244,10 +247,16 @@ the proportions therefore are 1:1:1:1
 
 ### Explain the effect of linkage and recombination on gamete genotypes
 
+{{< textin
+  question="Although chromosomes sort independently into gametes during meiosis, Mendel’s law of independent assortment refers to ________, not chromosomes."
+  answer="genes"
+  hint="Reread the start of the section summary's second paragraph."
+>}}
+
 {{< multiplechoice
   question="Which of the following situations does **not** follow the Law of Independent Assortment?"
   answer="Men are more likely to experience hemophilia than women."
-  hint="Three of these outcomes involve only a single gene or plain chance; only one ties the inheritance of a trait to which sex chromosome carries it."
+  hint="Reread the part of the section that follows Rules for Multihybrid Fertilization."
 >}}
 A blond person and a brown-haired person produce three offspring over time, all of who have blond hair.
 A white cow crossed with a brown bull produces roan cattle.
@@ -255,14 +264,8 @@ Mating a hog with a sow produces six female piglets.
 Men are more likely to experience hemophilia than women.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The tendency of genes positioned close together on the same chromosome to be inherited as a pair, rather than sorting independently, is called ________."
-  answer="linkage"
-  accept="genetic linkage|gene linkage"
-  hint="It happens because the genes involved sit near each other physically on one chromosome, rather than on separate ones."
->}}
 
-{{< selfcheck question="A heterozygous pea plant produces violet flowers and yellow, round seeds. Describe the expected genotypes of the gametes produced by Mendelian inheritance. If all three genes are found on the same arm of one chromosome should a scientist predict that inheritance patterns will follow Mendelian genetics?" hint="Count the number of heterozygous gene pairs, then work out how many distinct gamete genotypes independent assortment predicts for that many genes." >}}
+{{< selfcheck question="A heterozygous pea plant produces violet flowers and yellow, round seeds. Describe the expected genotypes of the gametes produced by Mendelian inheritance. If all three genes are found on the same arm of one chromosome should a scientist predict that inheritance patterns will follow Mendelian genetics?" hint="Reread Rules for Multihybrid Fertilization and the part of the section that follows it." >}}
 Mendelian inheritance would predict that all three genes are inherited independently. There are therefore 8 different gamete genotype possibilities: VYR, VYr, VyR, Vyr, vYR, vYr, vyR, vyr. If all three genes are found on the same chromosome arm, independent assortment is unlikely to occur because the genes are close together (linked).
 ===CHECKS===
 all three genes are inherited independently
@@ -273,10 +276,16 @@ the genes are close together (linked)
 
 ### Explain the phenotypic outcomes of epistatic effects between genes
 
+{{< textin
+  question="Whether or not they are sorting independently, genes may interact at the level of gene ________ such that the expression of an allele for one gene masks or modifies the expression of an allele for a different gene."
+  answer="products"
+  hint="Reread the last paragraph of the section summary."
+>}}
+
 {{< multiplechoice
   question="Labrador retrievers’ fur color is controlled by two alleles, E and B. Any dog with the ee__ genotype develops into a yellow lab, while B_E_ dogs become black labs and bbE_ dogs become chocolate labs. This is an example of _____."
   answer="epistasis"
-  hint="The ee genotype alone determines yellow regardless of what allele is present at the B locus — one gene masking another gene's expression."
+  hint="Reread the section's last subsection."
 >}}
 epistasis
 codominance
@@ -284,13 +293,7 @@ incomplete dominance
 linkage
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The antagonistic interaction in which one gene masks or interferes with the expression of a different gene is called ________."
-  answer="epistasis"
-  hint="Its Greek roots literally mean “standing upon” — the masking gene stands upon the one it silences."
->}}
-
-{{< selfcheck question="Explain epistasis in terms of its Greek-language roots “standing upon.”" hint="Break the word into its two Greek-root ideas — one thing masking, or standing upon, another." >}}
+{{< selfcheck question="Explain epistasis in terms of its Greek-language roots “standing upon.”" hint="Reread the section's last subsection." >}}
 Epistasis describes an antagonistic interaction between genes wherein one gene masks or interferes with the expression of another. The gene that is interfering is referred to as epistatic, as if it is “standing upon” the other (hypostatic) gene to block its expression.
 ===CHECKS===
 epistasis describes an antagonistic interaction between genes wherein one gene masks or interferes with the expression of another
@@ -298,7 +301,7 @@ the gene that is interfering is referred to as epistatic
 “standing upon” the other (hypostatic) gene to block its expression
 {{< /selfcheck >}}
 
-{{< selfcheck question="In Section 12.3, “Laws of Inheritance,” an example of epistasis was given for the summer squash. Cross white *WwYy* heterozygotes to prove the phenotypic ratio of 12 white:3 yellow:1 green that was given in the text." hint="Twelve of the sixteen Punnett-square boxes carry a dominant W allele; sort the remaining four boxes by their Y-gene genotype." >}}
+{{< selfcheck question="In Section 12.3, “Laws of Inheritance,” an example of epistasis was given for the summer squash. Cross white *WwYy* heterozygotes to prove the phenotypic ratio of 12 white:3 yellow:1 green that was given in the text." hint="Reread the summer-squash example in the section's last subsection." >}}
 The cross can be represented as a 4 × 4 Punnett square, with the following gametes for each parent: *WY*, *Wy*, *wY*, and *wy*. For all 12 of the offspring that express a dominant *W* gene, the offspring will be white. The three offspring that are homozygous recessive for *w* but express a dominant *Y* gene will be yellow. The remaining *wwyy* offspring will be green.
 ===CHECKS===
 the cross can be represented as a 4 × 4 Punnett square
@@ -309,4 +312,4 @@ the remaining wwyy offspring will be green
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 12.3: Laws of Inheritance](https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with four of the six re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the forked-line diagram, the crossover illustration, and the two Punnett-square figures are JPEG drawings; the PNG dihybrid-cross diagram was already recorded as a diagram, and only the albino-alligator photo is a true photograph); the source's print-figure-number-heavy and letter-spaced alts ("F subscript 1 baseline," "upper case A upper case B upper case C") rewritten to plain descriptions, with a longdesc added for each of the five diagrams that walks its bands, branches, or grid cells in reading order; feature boxes (one Link to Learning, one Scientific Method Connection) rendered as callouts with their bold names, the Scientific Method box keeping its italicized title and its bold procedural labels ("Question," "Background," "Hypothesis," "Test the hypothesis," "Analyze your data," "Form a conclusion") as the source repeats them, with its own embedded Punnett-square figure placed inline between the two "Test the hypothesis" paragraphs as printed; the general-multihybrid-crosses table transcribed as a Markdown table with its CNXML title kept as a bold line above it, and its 2ⁿ/3ⁿ cells set in KaTeX as numeric combinatorics exponents (not the italic ploidy 2n/n notation used elsewhere in the book); the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it to prose; the Visual Connection's own model answer corrected (module m66488, element fs-id1441032): the source solution names the offspring of the printed RrYY × rrYy cross using an unrelated PpYY/PpYy/ppYY/ppYy purple-and-white-flower genotype instead of the question's own round-and-wrinkled-seed genotype, corrected here to RrYY, RrYy, rrYY, and rrYy (round, yellow vs. wrinkled, yellow, a 1:1 ratio), keeping the source's own — and independently verified — 2×2, four-square grid size; reported as a source defect; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); four key-term recall items (law of segregation, law of independent assortment, linkage, epistasis) added from the glossary to give every objective group a second auto-graded item; and rubric checkpoints added to each self-check, decomposing its model answer into check-off clauses with no new claims — for the RrYY × rrYy cross self-check, the checkpoints decompose the page's own corrected model answer described above (RrYY, RrYy, rrYY, rrYy), not the source's uncorrected PpYY/PpYy/ppYY/ppYy solution.</small>
+<small>This section is adapted from [Biology 2e, Section 12.3: Laws of Inheritance](https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with four of the six re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the forked-line diagram, the crossover illustration, and the two Punnett-square figures are JPEG drawings; the PNG dihybrid-cross diagram was already recorded as a diagram, and only the albino-alligator photo is a true photograph); the forked-line figure's source alt, whose third row says the height split gives "a round or wrinkled phenotype" (the diagram's third row is 3 tall : 1 dwarf) and which misspells "wrinked," rewritten from the drawing and reported as a source defect; the source's print-figure-number-heavy and letter-spaced alts ("F subscript 1 baseline," "upper case A upper case B upper case C") rewritten to plain descriptions, with a longdesc added for each of the five diagrams that walks its bands, branches, or grid cells in reading order; feature boxes (one Link to Learning, one Scientific Method Connection) rendered as callouts with their bold names, the Scientific Method box keeping its italicized title and its bold procedural labels ("Question," "Background," "Hypothesis," "Test the hypothesis," "Analyze your data," "Form a conclusion") as the source repeats them, with its own embedded Punnett-square figure placed inline between the two "Test the hypothesis" paragraphs as printed; the general-multihybrid-crosses table transcribed as a Markdown table with its CNXML title kept as a bold line above it, and its 2ⁿ/3ⁿ cells set in KaTeX as numeric combinatorics exponents (not the italic ploidy 2n/n notation used elsewhere in the book); the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it to prose; the Visual Connection's own model answer corrected (module m66488, element fs-id1441032): the source solution names the offspring of the printed RrYY × rrYy cross using an unrelated PpYY/PpYy/ppYY/ppYy purple-and-white-flower genotype instead of the question's own round-and-wrinkled-seed genotype, corrected here to RrYY, RrYy, rrYY, and rrYy (round, yellow vs. wrinkled, yellow, a 1:1 ratio), keeping the source's own — and independently verified — 2×2, four-square grid size; reported as a source defect; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); four summary-derived recall items added, each a cloze of one summary sentence (diploid and distant under the segregation-and-assortment objective, genes under the linkage objective, products under the epistasis objective), in place of glossary recall items for law of segregation, law of independent assortment, linkage, and epistasis, whose keys the objective headings print; and rubric checkpoints added to each self-check, decomposing its model answer into check-off clauses with no new claims — for the RrYY × rrYy cross self-check, the checkpoints decompose the page's own corrected model answer described above (RrYY, RrYy, rrYY, rrYy), not the source's uncorrected PpYY/PpYy/ppYY/ppYy solution.</small>

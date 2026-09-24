@@ -55,7 +55,7 @@ Triclosan is a common ingredient in antibacterial soaps despite evidence that it
 {{< multiplechoice
   question="Why is triclosan more like an antibiotic than a traditional disinfectant?"
   answer="It has a specific mode of action, inhibiting bacterial fatty-acid synthesis, rather than acting broadly"
-  hint="Recall the specific enzyme pathway the section says triclosan blocks, as opposed to a broader mode of action."
+  hint="Reread the Summary's triclosan bullet."
 >}}
 It kills a broader spectrum of microbes than typical disinfectants
 It has a specific mode of action, inhibiting bacterial fatty-acid synthesis, rather than acting broadly
@@ -91,7 +91,7 @@ Nickel and zinc coatings are now being used in a similar way. Other forms of zin
 
 **Check Your Understanding**
 
-{{< selfcheck question="Why are many heavy metals both antimicrobial and toxic to humans?" hint="The Heavy Metals section explains both how these metals bind proteins and why that same binding affects human cells too." >}}
+{{< selfcheck question="Why are many heavy metals both antimicrobial and toxic to humans?" hint="Reread the first two paragraphs of Heavy Metals." >}}
 Ions of heavy metals bind strongly to sulfur-containing amino acids and bioaccumulate within cells, reaching high localized concentrations that cause proteins to denature — this is what gives heavy metals their antimicrobial effect. However, heavy metals are not selectively toxic to microbial cells: they may also bioaccumulate in human or animal cells, and excessive concentrations can have toxic effects on humans.
 ===CHECKS===
 bind strongly to sulfur-containing amino acids and bioaccumulate within cells
@@ -104,7 +104,7 @@ excessive concentrations can have toxic effects on humans
 
 Other chemicals commonly used for disinfection are the halogens iodine, chlorine, and fluorine. Iodine works by oxidizing cellular components, including sulfur-containing amino acids, nucleotides, and fatty acids, and destabilizing the macromolecules that contain these molecules. It is often used as a topical tincture, but it may cause staining or skin irritation. An **iodophor** is a compound of iodine complexed with an organic molecule, thereby increasing iodine's stability and, in turn, its efficacy. One common iodophor is povidone-iodine, which includes a wetting agent that releases iodine relatively slowly. Betadine is a brand of povidone-iodine commonly used as a hand scrub by medical personnel before surgery and for topical antisepsis of a patient's skin before incision (see the figure below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_13_03_Betadine" alt="Two panels. (a) The chemical structure of povidone (polyvinylpyrrolidone) shown as a repeating polymer unit, with a separate label \"x I2\" for the iodine bound alongside it. (b) A photo of a clinician applying an orange antiseptic solution to a patient's abdomen before surgery." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_13_03_Betadine" alt="Two panels. (a) The chemical structure of povidone (polyvinylpyrrolidone) shown as a repeating polymer unit, with a separate label \"x I₂\" for the iodine bound alongside it. (b) A photo of a clinician applying an orange antiseptic solution to a patient's abdomen before surgery." kind="diagram" >}}
 (a) Betadine is a solution of the iodophor povidone-iodine. (b) It is commonly used as a topical antiseptic on a patient's skin before incision during surgery. (credit b: modification of work by Andrew Ratto)
 {{< /mediafigure >}}
 
@@ -127,7 +127,7 @@ The halogen fluorine is also known to have antimicrobial properties that contrib
 {{< multiplechoice
   question="What is a benefit of a chloramine over hypochlorite for disinfecting?"
   answer="It is more stable and releases chlorine gradually over long periods of time"
-  hint="Recall what the Halogens section says about how long chloramines keep releasing chlorine, compared with hypochlorite."
+  hint="Reread the paragraph that introduces chloramines, above the ammonia and chloramine figure."
 >}}
 It penetrates cells more easily as an uncharged molecule
 It does not irritate the skin, nose, or eyes
@@ -149,7 +149,7 @@ Last, alcohols are used to make tinctures with other antiseptics, such as the io
 
 **Check Your Understanding**
 
-{{< selfcheck question="Name at least three advantages of alcohols as disinfectants." hint="The Alcohols section lists several properties — its action on proteins and membranes, its spectrum, its cost, and its drying speed." >}}
+{{< selfcheck question="Name at least three advantages of alcohols as disinfectants." hint="Reread the three paragraphs of the Alcohols subsection." >}}
 Alcohols work rapidly, denaturing proteins and disrupting membranes to inhibit cell metabolism and cause lysis. They are bactericidal and fungicidal, and may also be viricidal against enveloped viruses. They are inexpensive and quite effective for the disinfection of a broad range of vegetative microbes.
 ===CHECKS===
 denaturing proteins and disrupting membranes
@@ -158,7 +158,7 @@ viricidal against enveloped viruses
 inexpensive and quite effective for the disinfection of a broad range of vegetative microbes
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe several specific applications of alcohols used in disinfectant products." hint="The Alcohols section names specific uses such as skin swabbing and hand sanitizers." >}}
+{{< selfcheck question="Describe several specific applications of alcohols used in disinfectant products." hint="Reread the second and third paragraphs of the Alcohols subsection." >}}
 Alcohols are used for swabbing the skin for degerming before needle injection. They are the active ingredients in instant hand sanitizers. They are also used to make tinctures with other antiseptics, such as iodine tinctures.
 ===CHECKS===
 swabbing the skin for degerming before needle injection
@@ -176,7 +176,7 @@ Soaps are the salts (sodium salt in the illustration) of fatty acids and have th
 
 Soaps, however, often form films that are difficult to rinse away, especially in hard water, which contains high concentrations of calcium and magnesium mineral salts. Detergents contain synthetic surfactant molecules with both polar and nonpolar regions that have strong cleansing activity but are more soluble, even in hard water, and, therefore, leave behind no soapy deposits. Anionic detergents, such as those used for laundry, have a negatively charged anion at one end attached to a long hydrophobic chain, whereas cationic detergents have a positively charged cation instead. Cationic detergents include an important class of disinfectants and antiseptics called the **quaternary ammonium salts (quats)**, named for the characteristic quaternary nitrogen atom that confers the positive charge (see the figure below). Overall, quats have properties similar to phospholipids, having hydrophilic and hydrophobic ends. As such, quats have the ability to insert into the bacterial phospholipid bilayer and disrupt membrane integrity. The cationic charge of quats appears to confer their antimicrobial properties, which are diminished when neutralized. Quats have several useful properties. They are stable, nontoxic, inexpensive, colorless, odorless, and tasteless. They tend to be bactericidal by disrupting membranes. They are also active against fungi, protozoans, and enveloped viruses, but endospores are unaffected. In clinical settings, they may be used as antiseptics or to disinfect surfaces. Mixtures of quats are also commonly found in household cleaners and disinfectants, including many current formulations of Lysol brand products, which contain benzalkonium chlorides as the active ingredients. Benzalkonium chlorides, along with the quat cetylpyrimidine chloride, are also found in products such as skin antiseptics, oral rinses, and mouthwashes.
 
-{{< mediafigure src="microbiology/OSC_Microbio_13_03_Quats" alt="Two panels. (a) The chemical structures of two quaternary ammonium compounds: cetylpyridinium, whose long hydrophobic carbon chain attaches to a positively charged nitrogen that is part of a pyridinium ring, and benzalkonium, whose long carbon chain attaches to a positively charged nitrogen bearing two methyl groups and a benzyl group instead of a ring. (b) A diagram of a phospholipid bilayer with cetylpyridinium and other quat molecules, drawn as beads with tails, wedged into both faces of the membrane." longdesc="Panel (b) shows a bilayer of tan phospholipid head-and-tail units. Scattered light-blue quaternary ammonium molecules, labeled cetylpyridinium and QUAT molecules, are wedged between the phospholipids on both faces of the bilayer, with the word cytoplasm labeling the space beneath the lower leaflet, illustrating how the quats insert into and disrupt the packing of the membrane." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_13_03_Quats" alt="Two panels. (a) The chemical structures of two quaternary ammonium compounds: cetylpyridinium, whose long hydrophobic carbon chain attaches to a positively charged nitrogen that is part of a pyridinium ring, and benzalkonium, whose long carbon chain, bracketed and labeled 'hydrophobic tail', attaches to a positively charged nitrogen bearing two methyl groups and a benzyl group instead of a ring. (b) A diagram of a phospholipid bilayer with cetylpyridinium and other quat molecules, drawn as beads with tails, wedged into both faces of the membrane." longdesc="Panel (b) shows a bilayer of tan phospholipid head-and-tail units. Its left part is intact and tightly packed; from the middle rightward, scattered light-blue quaternary ammonium molecules, labeled cetylpyridinium and QUAT molecules, are wedged between the phospholipids on both faces of the bilayer and the phospholipids are spread apart, with gaps, with the word cytoplasm labeling the space beneath the lower leaflet, illustrating how the quats insert into and disrupt the packing of the membrane." kind="diagram" >}}
 (a) Two common quats are benzylalkonium chloride and cetylpyrimidine chloride. Note the hydrophobic nonpolar carbon chain at one end and the nitrogen-containing cationic component at the other end. (b) Quats are able to infiltrate the phospholipid plasma membranes of bacterial cells and disrupt their integrity, leading to death of the cell.
 {{< /mediafigure >}}
 
@@ -225,7 +225,7 @@ The bisbiguanides chlorhexidine and alexidine are cationic antiseptic compounds 
 {{< multiplechoice
   question="What two effects does chlorhexidine have on bacterial cells?"
   answer="It disrupts cell membranes and causes the cell's cytoplasmic contents to congeal"
-  hint="Recall what the Bisbiguanides section says chlorhexidine does to a bacterial cell's membrane and to its cytoplasmic contents at higher concentrations."
+  hint="Reread the paragraph under the Bisbiguanides heading."
 >}}
 It denatures proteins and inhibits enzymatic activity
 It oxidizes cellular components and destabilizes macromolecules
@@ -245,7 +245,7 @@ Ethylene oxide is a type of alkylating agent that is used for gaseous sterilizat
 
 β-Propionolactone is an alkylating agent with a different chemical structure than the others already discussed. Like other alkylating agents, β-propionolactone binds to DNA, thereby inactivating it (see the figure below). It is a clear liquid with a strong odor and has the ability to kill endospores. As such, it has been used in either liquid form or as a vapor for the sterilization of medical instruments and tissue grafts, and it is a common component of vaccines, used to maintain their sterility. It has also been used for the sterilization of nutrient broth, as well as blood plasma, milk, and water. It is quickly metabolized by animals and humans to lactic acid. It is also an irritant, however, and may lead to permanent damage of the eyes, kidneys, or liver. Additionally, it has been shown to be carcinogenic in animals; thus, precautions are necessary to minimize human exposure to β-propionolactone (Institute of Medicine, "Long-Term Health Effects of Participation in Project SHAD (Shipboard Hazard and Defense)" (Washington, DC: The National Academies Press, 2007)).
 
-{{< mediafigure src="microbiology/OSC_Microbio_13_03_Alkylators" alt="Two panels. (a) A diagram showing an alkylating agent converting a guanine–cytosine base pair into an ethylated guanine that pairs with thymine instead, illustrating a GC-to-AT mutation. (b) The chemical structures of five alkylating agents: formaldehyde, glutaraldehyde, o-phthalaldehyde, ethylene oxide, and β-propionolactone." longdesc="Panel (a): guanine, hydrogen-bonded to cytosine in a normal base pair, is treated with the alkylating agent EMS (ethyl methanesulfonate); the reaction adds an ethyl group to guanine's oxygen, producing O-6-ethylguanine, which hydrogen-bonds to thymine instead of cytosine, so the base pair changes from GC to AT. Panel (b), left to right: formaldehyde, a single carbon double-bonded to oxygen with two hydrogens; glutaraldehyde, a five-carbon chain with an aldehyde group at each end; o-phthalaldehyde, a benzene ring with two aldehyde groups attached to adjacent carbons; ethylene oxide, a three-membered ring of two carbons and one oxygen with no carbonyl; and β-propionolactone, a four-membered ring of three carbons and one oxygen, with one ring carbon also double-bonded to an oxygen outside the ring." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_13_03_Alkylators" alt="Two panels. (a) A diagram showing an alkylating agent converting a guanine–cytosine base pair into an ethylated guanine that pairs with thymine instead, illustrating a GC-to-AT mutation. (b) The chemical structures of five alkylating agents: formaldehyde, glutaraldehyde, o-phthalaldehyde, ethylene oxide, and β-propionolactone." longdesc="Panel (a): guanine, joined to cytosine by three dashed hydrogen bonds in a normal base pair, is treated with the alkylating agent EMS (ethyl methanesulfonate); the reaction adds an ethyl group to guanine's oxygen, producing O-6-ethylguanine, which pairs with thymine instead of cytosine through two dashed hydrogen bonds, so the base pair changes from GC to AT. Panel (b), left to right: formaldehyde, a single carbon double-bonded to oxygen with two hydrogens; glutaraldehyde, a five-carbon chain with an aldehyde group at each end; o-phthalaldehyde, a benzene ring with two aldehyde groups attached to adjacent carbons; ethylene oxide, a three-membered ring of two carbons and one oxygen with no carbonyl; and β-propionolactone, a four-membered ring of three carbons and one oxygen, with one ring carbon also double-bonded to an oxygen outside the ring." kind="diagram" >}}
 (a) Alkylating agents replace hydrogen atoms with alkyl groups. Here, guanine is alkylated, resulting in its hydrogen bonding with thymine, instead of cytosine. (b) The chemical structures of several alkylating agents.
 {{< /mediafigure >}}
 
@@ -254,7 +254,7 @@ Ethylene oxide is a type of alkylating agent that is used for gaseous sterilizat
 {{< multiplechoice
   question="What chemical reaction do alkylating agents participate in?"
   answer="Replacement of a hydrogen atom with an alkyl group"
-  hint="Recall what part of a molecule the Alkylating Agents section says gets replaced, and with what."
+  hint="Reread the first sentence of the Alkylating Agents subsection."
 >}}
 Oxidation of cellular components
 Formation of free radicals that damage macromolecules
@@ -262,7 +262,7 @@ Denaturation of proteins by binding to sulfur-containing amino acids
 Replacement of a hydrogen atom with an alkyl group
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why are alkylating agents not used as antiseptics?" hint="The Alkylating Agents section explains what formaldehyde and glutaraldehyde do to living tissue that keeps them out of antiseptic use." >}}
+{{< selfcheck question="Why are alkylating agents not used as antiseptics?" hint="Reread the first two paragraphs of the Alkylating Agents subsection." >}}
 Formaldehyde is very irritating to living tissues and is also carcinogenic, so it is not used as an antiseptic. Glutaraldehyde, similar to formaldehyde, also irritates the skin and is likewise not used as an antiseptic.
 ===CHECKS===
 formaldehyde is very irritating to living tissues and is also carcinogenic
@@ -305,7 +305,7 @@ Other examples of peroxygens include benzoyl peroxide and carbamide peroxide. Be
 {{< multiplechoice
   question="How do peroxides kill cells?"
   answer="By producing free radicals that damage cellular macromolecules"
-  hint="Recall what the Peroxygens section says hydrogen peroxide produces that damages cellular macromolecules."
+  hint="Reread the second paragraph of the Peroxygens subsection."
 >}}
 By producing free radicals that damage cellular macromolecules
 By replacing hydrogen atoms with alkyl groups to inactivate nucleic acids
@@ -323,7 +323,7 @@ Benefits of scCO₂ include the nonreactive, nontoxic, and nonflammable properti
 
 **Check Your Understanding**
 
-{{< selfcheck question="Why is the use of supercritical carbon dioxide gaining popularity for commercial and medical uses?" hint="The Supercritical Fluids section lists several properties of carbon dioxide and describes what scCO2 does to the objects it sterilizes." >}}
+{{< selfcheck question="Why is the use of supercritical carbon dioxide gaining popularity for commercial and medical uses?" hint="Reread the last paragraph of the Supercritical Fluids subsection." >}}
 Supercritical carbon dioxide is nonreactive, nontoxic, and nonflammable, and it is effective at low temperatures. Unlike methods such as heat and irradiation that can degrade the object being sterilized, scCO₂ preserves the object's integrity, so it is commonly used for treating foods and medical devices such as endoscopes, and for disinfecting tissues such as skin, bones, tendons, and ligaments prior to transplantation.
 ===CHECKS===
 nonreactive, nontoxic, and nonflammable
@@ -352,7 +352,7 @@ Natamycin is an antifungal macrolide antibiotic produced by the bacterium *Strep
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are the advantages and drawbacks of using sulfites and nitrites as food preservatives?" hint="The Chemical Food Preservatives section names what each additive does for food and what health concern each raises." >}}
+{{< selfcheck question="What are the advantages and drawbacks of using sulfites and nitrites as food preservatives?" hint="Reread the fourth and fifth paragraphs of Chemical Food Preservatives." >}}
 Sulfur dioxide prevents browning of foods and dissolves in water to form sulfites, but some people have sulfite allergies, including asthmatic reactions, and sulfites also degrade thiamine. Nitrites are added to processed meats to maintain color and stop the germination of *Clostridium botulinum* endospores, but cooking nitrite-preserved meats may produce carcinogenic nitrosamines.
 ===CHECKS===
 sulfur dioxide prevents browning of foods
@@ -423,10 +423,12 @@ cooking nitrite-preserved meats may produce carcinogenic nitrosamines
 
 ### Understand and compare various chemicals used to control microbial growth, including their uses, advantages and disadvantages, chemical structure, and mode of action
 
+{{< textin question="Chemical disinfectants and antiseptics characterized by a phenol group, which denatures proteins and disrupts membranes, are called ________." answer="phenolics" accept="phenolic" hint="Name the class of compounds this section's first subsection covers." >}}
+
 {{< multiplechoice
   question="Which of the following refers to a disinfecting chemical dissolved in alcohol?"
   answer="tincture"
-  hint="Think about which term names a disinfecting compound dissolved specifically in alcohol, as opposed to one complexed with an organic molecule or defined by its ring structure."
+  hint="Reread the second paragraph of the Mercury subsection."
 >}}
 iodophor
 tincture
@@ -437,7 +439,7 @@ peroxygen
 {{< multiplechoice
   question="Which of the following peroxygens is widely used as a household disinfectant, is inexpensive, and breaks down into water and oxygen gas?"
   answer="hydrogen peroxide"
-  hint="Recall which peroxygen the section names as inexpensive and breaking down into water and oxygen gas."
+  hint="Reread the first paragraph of the Peroxygens subsection."
 >}}
 hydrogen peroxide
 peracetic acid
@@ -448,7 +450,7 @@ ozone
 {{< multiplechoice
   question="Which of the following chemical food preservatives is used in the wine industry but may cause asthmatic reactions in some individuals?"
   answer="sulfites"
-  hint="Recall which food preservative the section links to asthmatic reactions in some people."
+  hint="Reread the fourth paragraph of Chemical Food Preservatives."
 >}}
 nitrites
 sulfites
@@ -459,7 +461,7 @@ benzoic acid
 {{< multiplechoice
   question="Bleach is an example of which group of chemicals used for disinfection?"
   answer="halogens"
-  hint="Recall which group of chemicals sodium hypochlorite, the active ingredient in bleach, belongs to."
+  hint="Reread the paragraph that names the chemical component of common household bleach."
 >}}
 heavy metals
 halogens
@@ -470,7 +472,7 @@ bisbiguanides
 {{< multiplechoice
   question="Which chemical disinfectant works by methylating enzymes and nucleic acids and is known for being toxic and carcinogenic?"
   answer="formaldehyde"
-  hint="Recall which alkylating agent the section names as toxic, carcinogenic, and used at a 37% concentration called formalin."
+  hint="Reread the first paragraph of the Alkylating Agents subsection."
 >}}
 sorbic acid
 triclosan
@@ -481,7 +483,7 @@ hexaclorophene
 {{< multiplechoice
   question="Doorknobs and other surfaces in clinical settings are often coated with ________, ________, or ________ to prevent the transmission of microbes."
   answer="copper, nickel, and zinc"
-  hint="Recall which three metals the Copper, Nickel, and Zinc discussion names for coatings on doorknobs, cabinet hardware, and other frequently touched clinical fixtures."
+  hint="Reread the last of the Heavy Metals subsections."
 >}}
 mercury, silver, and copper
 copper, nickel, and zinc
@@ -491,7 +493,7 @@ silver, copper, and zinc
 {{< multiplechoice
   question="Soaps are classified as disinfectants."
   answer="False"
-  hint="Recall what the Surfactants section says soaps do, and do not do, to microbes."
+  hint="Reread the first paragraph of the Surfactants subsection."
 >}}
 True
 False
@@ -500,22 +502,22 @@ False
 {{< multiplechoice
   question="Mercury-based compounds have fallen out of favor for use as preservatives and antiseptics."
   answer="True"
-  hint="Recall what the Mercury and Silver discussions say about how commonly mercury-based antiseptics are still sold in the United States today."
+  hint="Reread the second paragraph of the Mercury subsection."
 >}}
 True
 False
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which solution of ethyl alcohol is more effective at inhibiting microbial growth: a 70% solution or a 100% solution?"
+  question="Which solution of ethyl alcohol is more effective at inhibiting microbial growth: a 70% solution or a 100% solution? Why?"
   answer="a 70% solution"
-  hint="Recall what higher alcohol concentrations do to surface proteins that limits their penetration into cells."
+  hint="Reread the first paragraph of the Alcohols subsection."
 >}}
 a 70% solution
 a 100% solution
 {{< /multiplechoice >}}
 
-{{< selfcheck question="When might a gas treatment be used to control microbial growth instead of autoclaving? What are some examples?" hint="The Alkylating Agents section explains what kind of items ethylene oxide sterilizes and why autoclaving would not work for them." >}}
+{{< selfcheck question="When might a gas treatment be used to control microbial growth instead of autoclaving? What are some examples?" hint="Reread the fourth paragraph of the Alkylating Agents subsection." >}}
 Ethylene oxide exposure is a form of cold sterilization, making it useful for sterilizing heat-sensitive items instead of autoclaving. It is highly penetrating and can sterilize items within plastic bags, such as catheters, disposable items in laboratories and clinical settings like packaged Petri dishes, and other pieces of equipment.
 ===CHECKS===
 a form of cold sterilization, making it useful for sterilizing heat-sensitive items
@@ -523,7 +525,7 @@ highly penetrating and can sterilize items within plastic bags
 catheters, disposable items in laboratories and clinical settings like packaged Petri dishes
 {{< /selfcheck >}}
 
-{{< selfcheck question="What is the advantage of using an iodophor rather than iodine or an iodine tincture?" hint="The Halogens section explains what complexing iodine with an organic molecule does for its stability and effectiveness." >}}
+{{< selfcheck question="What is the advantage of using an iodophor rather than iodine or an iodine tincture?" hint="Reread the paragraph that introduces iodine and iodophors." >}}
 An iodophor is a compound of iodine complexed with an organic molecule, which increases iodine's stability and, in turn, its efficacy, compared with iodine or an iodine tincture alone.
 ===CHECKS===
 a compound of iodine complexed with an organic molecule
@@ -538,15 +540,16 @@ ethylene oxide has no carbonyl group at all
 β-propionolactone's ring carbonyl is a lactone (ester) linkage rather than an aldehyde
 {{< /selfcheck >}}
 
-{{< selfcheck question="Do you think naturally produced antimicrobial products like nisin and natamycin should replace sorbic acid for food preservation? Why or why not?" hint="Compare what the section says about each preservative's spectrum of activity, natural origin, and mode of action." >}}
-The section gives evidence for weighing both sides rather than a stated recommendation. Nisin is a naturally produced antimicrobial peptide from *Lactococcus lactis*, effective against gram-positive organisms, and natamycin is a naturally produced antifungal macrolide from *Streptomyces natalensis*, effective against fungi — but each has a narrower target than sorbic acid, which is thought to work by inhibiting cellular enzymes including catalases and peroxidases across a broader range of molds in acidic foods.
+{{< selfcheck question="Do you think naturally produced antimicrobial products like nisin and natamycin should replace sorbic acid for food preservation? Why or why not?" hint="Reread the first paragraph of Chemical Food Preservatives and the Natural Chemical Food Preservatives subsection." >}}
+The section gives evidence for weighing both sides rather than a stated recommendation. Nisin is an antimicrobial peptide produced by the bacterium *Lactococcus lactis* and is particularly effective against gram-positive organisms; it is used to preserve cheeses, meats, and beverages. Natamycin is an antifungal macrolide antibiotic produced by the bacterium *Streptomyces natalensis* and is used to prevent fungal growth in various types of dairy products. Sorbic acid, for its part, is used to control the growth of molds in acidic foods and is added to a wide variety of foods; it is nontoxic, readily metabolized by humans, and flavorless, so it does not compromise the flavor of the foods it preserves.
 ===CHECKS===
-nisin ... from *Lactococcus lactis*, effective against gram-positive organisms
-natamycin ... from *Streptomyces natalensis*, effective against fungi
-sorbic acid ... inhibiting cellular enzymes including catalases and peroxidases
+nisin ... is particularly effective against gram-positive organisms
+natamycin is an antifungal macrolide antibiotic ... used to prevent fungal growth in various types of dairy products
+sorbic acid ... is used to control the growth of molds in acidic foods
+nontoxic, readily metabolized by humans, and flavorless
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why is the use of skin disinfecting compounds required for surgical scrubbing and not for everyday handwashing?" hint="Compare the stated goal of surgical scrubbing with the everyday purpose of the CDC's five handwashing steps." >}}
+{{< selfcheck question="Why is the use of skin disinfecting compounds required for surgical scrubbing and not for everyday handwashing?" hint="Reread the Handwashing the Right Way Micro Connection." >}}
 The CDC's handwashing recommendations for the general public are meant for everyday situations, such as before and after food handling, eating, and using the toilet. Surgical scrubbing, by contrast, has the goal of reducing the normal microbiota on the skin's surface to prevent the introduction of these microbes into a patient's surgical wounds, which is why it requires the more involved use of skin disinfecting compounds rather than routine handwashing.
 ===CHECKS===
 the CDC's handwashing recommendations for the general public are meant for everyday situations
@@ -558,8 +561,6 @@ prevent the introduction of these microbes into a patient's surgical wounds
 {"bins":["Phenolics","Metals","Halogens","Alkylating Agents"],"items":[{"label":"Cresols","bin":0},{"label":"Mercury","bin":1},{"label":"Iodine","bin":2},{"label":"Formaldehyde","bin":3},{"label":"o-Phenylphenol","bin":0},{"label":"Silver","bin":1},{"label":"Chlorine","bin":2},{"label":"Glutaraldehyde","bin":3},{"label":"Hexachlorophene","bin":0},{"label":"Copper","bin":1},{"label":"Fluorine","bin":2},{"label":"o-Phthalaldehyde","bin":3}]}
 {{< /sortbins >}}
 
-{{< textin question="Chemical disinfectants and antiseptics characterized by a phenol group, which denatures proteins and disrupts membranes, are called ________." answer="phenolics" accept="phenolic" hint="Name the class of compounds this section opens with, defined by the phenol group's –OH attached to a benzene ring." >}}
-
 ---
 
-<small>This section is adapted from [Microbiology, Section 13.3: Using Chemicals to Control Microorganisms](https://openstax.org/books/microbiology/pages/13-3-using-chemicals-to-control-microorganisms) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all twelve source figures are re-encoded as WebP and rendered as mediafigures; the media manifest guesses `kind="photo"` for eleven of them, which is correct only for the heavy-metals photo montage — the other ten (Phenolcomp, Triclosan, Betadine, chloram, Alcohols, soap, Quats, HandwashAB, bisbi, Alkylators, Catalase) are explicit `kind="diagram"` because each carries at least one genuinely drawn chemical structure or schematic. The Triclosan figure's alt is rewritten to add its middle panel (a blurred drug-facts label circling "Triclosan"), which the source alt omits entirely. The Betadine figure's alt is rewritten because the drawn structure is povidone (the polymer) with iodine noted separately, not a single "chemical structure of betadine" as the source alt states. The Quats and Alkylators figures each gain a `longdesc` walking their mechanism/reaction panel, because the alt alone cannot describe both panels within 600 characters. Of this section's two Link to Learning URLs, the WHO prion-handling guidance link (`https://openstax.org/l/22WHOhandanipri`, redirecting to `https://www.who.int/csr/resources/publications/biosafety/Labbiosafety.pdf`) is confirmed dead (404, checked September 15, 2026) and is no longer linked, replaced with a plain-text description naming the World Health Organization's guidelines; the other, `https://openstax.org/l/22CDChandwash`, returns a 403 to scripted checks — a bot wall, not a dead page — and stays linked with the source's own descriptive anchor text. Nine of the section's defined terms are compiled into Key terms from the module's own defining sentences (the appendix has an entry for each, so none is sentence-derived). Twelve Check Your Understanding bullets across ten body boxes are rendered as body items at their note positions: six convert to graded `multiplechoice` items because one body or summary sentence fixes the whole answer (the triclosan/antibiotic question is graded from the module's own summary sentence, not the body paragraph, since the body paragraph alone requires an added inference about antibiotics generally), and six remain self-checks with model answers and rubrics assembled only from this module's own sentences because their honest answers need more than one sentence assembled (heavy-metal toxicity, alcohol advantages, alcohol applications, why alkylating agents avoid antiseptic use, supercritical CO₂'s popularity, and sulfite/nitrite trade-offs). Of the module's fourteen source exercises (keyed: five Multiple Choice, one Fill in the Blank, two True/False), all eight keyed items are adapted into Practice, the True/False items as two-option multiple choice; the three-blank Fill in the Blank ("copper, ________, ________," keyed *copper, nickel, zinc*) is rendered as a `multiplechoice` rather than a `textin`, because the three metals are an unordered coequal set that a single text field cannot grade honestly — its distractors are other metal triples named in the same Copper, Nickel, and Zinc discussion. Of the six unkeyed Short Answer and Critical Thinking questions, one (ethyl alcohol at 70% vs. 100%) converts to a `multiplechoice` because the question offers its own two alternatives and one module sentence settles which is more effective; the other five (gas treatment vs. autoclaving, the iodophor advantage, which alkylating agent lacks an aldehyde group, the nisin/natamycin opinion question, and surgical scrubbing vs. handwashing) are self-checks with model answers written strictly from this module's own sentences, because each needs either an inference from the figure, an opinion the module does not settle, or more than one sentence assembled. The 11-row "Chemical Disinfectants" table is transcribed as Markdown from the CNXML cells, with each group-name row rendered as a bolded label row (the source uses column-spanning header cells, which Markdown tables cannot represent); it feeds one Practice `sortbins` under the section's one objective, with four of its six eligible classes (Phenolics, Metals, Halogens, Alkylating Agents) chosen as bins and three named chemicals per bin drawn from both the table and the surrounding body paragraphs. One filler Practice item — a term-recall `textin` for "phenolics," built from the Key terms bullet — fills the objective past the book's eight-exercise floor; the section's sixteen Practice items and twelve body items comfortably clear that floor without it, but the source's own exercise set supports it and no other Practice or body item tests the term. Fifteen footnotes become inline parenthetical citations (bare access URLs dropped, the one DOI, in Carbamide peroxide's citation, kept). The two feature-box Micro Connections ("Triclosan: Antibacterial Overkill?" and "Diehard Prions") and two Link to Learning boxes are rendered as callouts; the Handwashing the Right Way Micro Connection is likewise a callout. Cross-references to [Foundations of Modern Cell Theory](/life-health-sciences/microbiology/03-the-cell/02-foundations-of-modern-cell-theory/), [Viroids, Virusoids, and Prions](/life-health-sciences/microbiology/06-acellular-pathogens/04-viroids-virusoids-and-prions/), and [Proteins](/life-health-sciences/microbiology/07-microbial-biochemistry/04-proteins/) are rendered as links; the Critical Thinking item's cross-reference to the functional-groups table in *Organic Molecules* (§7.1) is rendered as a link naming that page. This section carries no Clinical Focus box (the chapter's case runs in 13.1 and resolves in 13.4). The Key Concepts and Summary's triclosan bullet is printed in the CNXML with a doubled closing period ("...fatty-acid synthesis.."); it is corrected to a single period here without an inline note, as a punctuation-level departure of the same class as a one-word typo. The HandwashAB caption's CNXML credit line duplicates "b:" ("credit b: b: Staff Sgt. Kevin Iinuma..."); the stray repetition is dropped here without an inline note, the same class of fix. The bisbi figure's CNXML caption misspells "chlorhexadine" where the body spells the same compound "chlorhexidine" throughout; the caption is corrected to the body's spelling here without an inline note, as a one-word typo. The soap-molecule figure's alt labels the carboxylate end the hydrophilic head and the carbon chain the hydrophobic tail, as the image prints them; the source alt has the two terms swapped (erratum 823).</small>
+<small>This section is adapted from [Microbiology, Section 13.3: Using Chemicals to Control Microorganisms](https://openstax.org/books/microbiology/pages/13-3-using-chemicals-to-control-microorganisms) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all twelve source figures are re-encoded as WebP and rendered as mediafigures; the media manifest guesses `kind="photo"` for eleven of them, which is correct only for the heavy-metals photo montage — the other ten (Phenolcomp, Triclosan, Betadine, chloram, Alcohols, soap, Quats, HandwashAB, bisbi, Alkylators, Catalase) are explicit `kind="diagram"` because each carries at least one genuinely drawn chemical structure or schematic. The Triclosan figure's alt is rewritten to add its middle panel (a blurred drug-facts label circling "Triclosan"), which the source alt omits entirely. The Betadine figure's alt is rewritten because the drawn structure is povidone (the polymer) with iodine noted separately, not a single "chemical structure of betadine" as the source alt states. The Quats and Alkylators figures each gain a `longdesc` walking their mechanism/reaction panel, because the alt alone cannot describe both panels within 600 characters. The Alkylators figure's artwork labels one structure "o-phthaladehyde"; the alt and longdesc spell it "o-phthalaldehyde" (a suspected artwork typo). Of this section's two Link to Learning URLs, the WHO prion-handling guidance link (`https://openstax.org/l/22WHOhandanipri`, redirecting to `https://www.who.int/csr/resources/publications/biosafety/Labbiosafety.pdf`) is confirmed dead (404, checked September 15, 2026) and is no longer linked, replaced with a plain-text description naming the World Health Organization's guidelines; the other, `https://openstax.org/l/22CDChandwash`, returns a 403 to scripted checks — a bot wall, not a dead page — and stays linked with the source's own descriptive anchor text. Nine of the section's defined terms are compiled into Key terms from the module's own defining sentences (the appendix has an entry for each, so none is sentence-derived). Twelve Check Your Understanding bullets across ten body boxes are rendered as body items at their note positions: six convert to graded `multiplechoice` items because one body or summary sentence fixes the whole answer (the triclosan/antibiotic question is graded from the module's own summary sentence, not the body paragraph, since the body paragraph alone requires an added inference about antibiotics generally), and six remain self-checks with model answers and rubrics assembled only from this module's own sentences because their honest answers need more than one sentence assembled (heavy-metal toxicity, alcohol advantages, alcohol applications, why alkylating agents avoid antiseptic use, supercritical CO₂'s popularity, and sulfite/nitrite trade-offs). Of the module's fourteen source exercises (keyed: five Multiple Choice, one Fill in the Blank, two True/False), all eight keyed items are adapted into Practice, the True/False items as two-option multiple choice (the source's "Soaps are classified as disinfectants" tests the same fact as the body Check Your Understanding question "Why are soaps not considered disinfectants?", whose wording answers it; both are source items, so both are kept); the three-blank Fill in the Blank ("copper, ________, ________," keyed *copper, nickel, zinc*) is rendered as a `multiplechoice` rather than a `textin`, because the three metals are an unordered coequal set that a single text field cannot grade honestly — its distractors are other triples of metals named in the Heavy Metals subsections. Of the six unkeyed Short Answer and Critical Thinking questions, one (ethyl alcohol at 70% vs. 100%) converts to a `multiplechoice` because the question offers its own two alternatives and one module sentence settles which is more effective; the other five (gas treatment vs. autoclaving, the iodophor advantage, which alkylating agent lacks an aldehyde group, the nisin/natamycin opinion question, and surgical scrubbing vs. handwashing) are self-checks with model answers written strictly from this module's own sentences, because each needs either an inference from the figure, an opinion the module does not settle, or more than one sentence assembled. The 11-row "Chemical Disinfectants" table is transcribed as Markdown from the CNXML cells, with each group-name row rendered as a bolded label row (the source uses column-spanning header cells, which Markdown tables cannot represent); it feeds one Practice `sortbins` under the section's one objective, with four of its six eligible classes (Phenolics, Metals, Halogens, Alkylating Agents) chosen as bins and three named chemicals per bin drawn from both the table and the surrounding body paragraphs. One filler Practice item — a term-recall `textin` for "phenolics," built from the Key terms bullet — fills the objective past the book's eight-exercise floor; the section's sixteen Practice items and twelve body items comfortably clear that floor without it, but the source's own exercise set supports it and no other Practice or body item tests the term. Fifteen footnotes become inline parenthetical citations (bare access URLs dropped, the one DOI, in Carbamide peroxide's citation, kept). The two feature-box Micro Connections ("Triclosan: Antibacterial Overkill?" and "Diehard Prions") and two Link to Learning boxes are rendered as callouts; the Handwashing the Right Way Micro Connection is likewise a callout. Cross-references to [Foundations of Modern Cell Theory](/life-health-sciences/microbiology/03-the-cell/02-foundations-of-modern-cell-theory/), [Viroids, Virusoids, and Prions](/life-health-sciences/microbiology/06-acellular-pathogens/04-viroids-virusoids-and-prions/), and [Proteins](/life-health-sciences/microbiology/07-microbial-biochemistry/04-proteins/) are rendered as links; the Critical Thinking item's cross-reference to the functional-groups table in *Organic Molecules* (§7.1) is rendered as a link naming that page. This section carries no Clinical Focus box (the chapter's case runs in 13.1 and resolves in 13.4). The Key Concepts and Summary's triclosan bullet is printed in the CNXML with a doubled closing period ("...fatty-acid synthesis.."); it is corrected to a single period here without an inline note, as a punctuation-level departure of the same class as a one-word typo. The HandwashAB caption's CNXML credit line duplicates "b:" ("credit b: b: Staff Sgt. Kevin Iinuma..."); the stray repetition is dropped here without an inline note, the same class of fix. The bisbi figure's CNXML caption misspells "chlorhexadine" where the body spells the same compound "chlorhexidine" throughout; the caption is corrected to the body's spelling here without an inline note, as a one-word typo. The soap-molecule figure's alt labels the carboxylate end the hydrophilic head and the carbon chain the hydrophobic tail, as the image prints them; the source alt has the two terms swapped (erratum 823).</small>

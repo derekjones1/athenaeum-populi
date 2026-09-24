@@ -23,7 +23,7 @@ The process in which an organism develops from a single-celled zygote to a multi
 
 Fertilization, pictured below, is the process in which gametes (an egg and sperm) fuse to form a zygote. The egg and sperm each contain one set of chromosomes. To ensure that the offspring has only one complete diploid set of chromosomes, only one sperm must fuse with one egg. In mammals, the egg is protected by a layer of extracellular matrix consisting mainly of glycoproteins called the **zona pellucida**. When a sperm binds to the zona pellucida, a series of biochemical events, called the **acrosomal reactions**, take place. In placental mammals, the acrosome contains digestive enzymes that initiate the degradation of the glycoprotein matrix protecting the egg and allowing the sperm plasma membrane to fuse with the egg plasma membrane, as illustrated below. The fusion of these two membranes creates an opening through which the sperm nucleus is transferred into the ovum. The nuclear membranes of the egg and sperm break down and the two haploid genomes condense to form a diploid genome.
 
-{{< mediafigure src="biology/Figure_43_05_01ab" kind="diagram" eager="true" alt="Two-panel image. Panel (a) is a black-and-white micrograph of a sperm's head touching the granular surface of a much larger egg, its long tail curving up and away, with a 10 µm scale bar at lower left. Panel (b) is a colour diagram of the egg's curved edge with several green sperm cells lined up along it, labeled with leader lines." longdesc="Panel (a): a micrograph on a black background shows a sperm's oval head touching the textured tan surface of the much larger egg; its thin tail curves up and to the left, and a \"10 µm\" scale bar sits at the lower left corner. Panel (b) shows the curved edge of the egg in cross-section, labeled from outside in: zona pellucida (an orange band) and egg plasma membrane (a dotted line), with egg cytoplasm labeled inside the pale interior. Five green sperm cells are drawn along the egg's outer curve: the topmost has already released a separate, arrow-shaped nucleus that touches the membrane, labeled sperm nucleus; the second sperm down still has an intact head and tail, with a small triangular acrosomal granule at its tip labeled acrosomal granule; three more sperm with intact heads and tails lie further along the curve. Two leader lines from the caption text \"Changes in egg proteins prevent entry of other sperm\" point to the membrane beside the fourth and fifth sperm." >}}
+{{< mediafigure src="biology/Figure_43_05_01ab" kind="diagram" eager="true" alt="Two-panel image. Panel (a) is a black-and-white micrograph of a sperm's head touching the granular surface of a much larger egg, its long tail curving up and away, with a 10 µm scale bar at lower left. Panel (b) is a colour diagram of the egg's curved edge with several green sperm cells lined up along it, labeled with leader lines." longdesc="Panel (a): a micrograph on a black background shows a sperm's oval head touching the textured tan surface of the much larger egg; its thin tail curves up and to the left, and a \"10 µm\" scale bar sits at the lower left corner. Panel (b) shows the curved edge of the egg in cross-section, labeled from outside in: zona pellucida (an orange band) and egg plasma membrane (a dotted line), with egg cytoplasm labeled inside the pale interior. Six green sperm cells are drawn along the egg's outer curve, and a broad curved arrow, pale at the top and deepening to orange, sweeps outside them from top to bottom right, so the sperm read as successive steps. Leader lines from Sperm nucleus and Acrosomal granule both point to the topmost sperm, which lies outside the zona pellucida: the first to the dark green nucleus in its head, the second to the small blue cap at its tip. Moving down the curve, the next sperm points its blue tip at the zona, the third and fourth have pushed their tips into and through the orange zona band, and the fifth has reached the membrane. The sixth, at the lower right, has fused with the membrane, its green contents spreading into the egg cytoplasm. A row of small round granules lines the inside of the membrane; near the last two sperm they have burst open into white patches along the membrane. One leader line from the text 'Changes in egg proteins prevent entry of other sperm' points to the membrane where the sixth sperm has fused." >}}
 (a) Fertilization is the process in which sperm and egg fuse to form a zygote. (b) Acrosomal reactions help the sperm degrade the glycoprotein matrix protecting the egg and allow the sperm to transfer its nucleus. (credit: (b) modification of work by Mariana Ruiz Villareal; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
@@ -116,14 +116,14 @@ it dies within a few days
 {{< textin
   question="The protective layer of glycoproteins that surrounds the mammalian egg is called the ________."
   answer="zona pellucida"
-  hint="This layer is what a sperm's acrosomal enzymes must break through before the two cell membranes can fuse."
+  hint="Reread the Fertilization subsection's first paragraph, on how the egg is protected in mammals."
 >}}
 
 {{< textin
   question="The series of biochemical reactions that let a sperm break through that protective egg layer is called the ________."
   answer="acrosomal reaction"
   accept="acrosome reaction"
-  hint="These reactions release digestive enzymes from a structure at the front of the sperm head, named after that same structure."
+  hint="Reread the Fertilization subsection's first paragraph, on what happens when a sperm binds to the egg's protective layer."
 >}}
 
 ### Explain how the embryo forms from the zygote
@@ -131,7 +131,7 @@ it dies within a few days
 {{< multiplechoice
   question="During cleavage, the mass of cells:"
   answer="does not change significantly"
-  hint="Cleavage divides an existing amount of cytoplasm into more, smaller compartments rather than manufacturing new material — compare it to cutting one pie into more slices."
+  hint="Reread the caption of the cleavage figure in the Cleavage and Blastula Stage subsection."
 >}}
 increases
 decreases
@@ -148,13 +148,14 @@ does not change significantly
 {{< textin
   question="The layer of cells inside the blastocyst that will differentiate into the embryo's stem cells is called the ________."
   answer="inner cell mass"
+  accept="embryoblast"
   hint="This layer is distinct from the surrounding outer layer and consists of embryonic stem cells that will differentiate into the organism's cell types."
 >}}
 
 {{< textin
   question="The outer layer of cells in the blastocyst, which will contribute to the placenta, is called the ________."
   answer="trophoblast"
-  hint="This layer surrounds the embryo-forming inner layer and nourishes it — its name comes from a root meaning 'nourishment.'"
+  hint="Reread the Cleavage and Blastula Stage paragraph on the two layers of the blastocyst."
 >}}
 
 ### Discuss the role of cleavage and gastrulation in animal development
@@ -162,7 +163,7 @@ does not change significantly
 {{< multiplechoice
   question="Which of the following is false?"
   answer="The trophoblast is a germ layer."
-  hint="This outer layer forms earlier, during the blastocyst stage — before the process that produces the three tissue layers this option names."
+  hint="Check each statement against the section's second and third subsections."
 >}}
 The endoderm, mesoderm, ectoderm are germ layers.
 The trophoblast is a germ layer.

@@ -109,7 +109,7 @@ The stronger the acid, the more readily it donates H⁺. For example, hydrochlor
 
 The **pH scale** is, as we previously mentioned, an inverse logarithm and ranges from 0 to 14, as the figure below shows. Anything below 7.0 (ranging from 0.0 to 6.9) is acidic, and anything above 7.0 (from 7.1 to 14.0) is alkaline. Extremes in pH in either direction from 7.0 are usually inhospitable to life. The pH inside cells (6.8) and the pH in the blood (7.4) are both very close to neutral. However, the environment in the stomach is highly acidic, with a pH of 1 to 2. As a result, how do stomach cells survive in such an acidic environment? How do they homeostatically maintain the near neutral pH inside them? The answer is that they cannot do it and are constantly dying. The stomach constantly produces new cells to replace dead ones, which stomach acids digest. Scientists estimate that the human body completely replaces the stomach lining every seven to ten days.
 
-{{< mediafigure src="biology/Figure_02_02_07" alt="A vertical pH scale from 0 to 14, colored like a rainbow gradient that runs from red at the acidic end through orange, yellow, green, blue, and purple to magenta and back to red at the basic end, with common substances labeled next to their approximate pH." longdesc="The scale runs bottom to top from 0 to 14. Reading up from the bottom: 0 (unlabeled, deep red); gastric acid at about 1; lemon juice at about 2; orange juice at about 3; tomato juice at about 4; black coffee at about 5; urine at about 6; distilled water at about 7, where the color crosses from green into blue-green; sea water at about 8; baking soda at about 9; milk of magnesia at about 10; ammonia solution at about 11; soapy water at about 12; bleach at about 13; and 14 at the top (unlabeled, a crimson red close to the bottom's hue after the purple and magenta of 10 to 13)." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_02_02_07" alt="A vertical pH scale from 0 to 14, colored like a rainbow gradient that runs from red at the acidic end through orange, yellow, green, blue, and purple to magenta and back to red at the basic end, with common substances labeled next to their approximate pH." longdesc="The scale runs bottom to top from 0 to 14. Reading up from the bottom: 0 (unlabeled, deep red); gastric acid at about 1; lemon juice at about 2; orange juice at about 3; tomato juice at about 4; black coffee at about 5; urine at about 6; distilled water at about 7, where the green of 5 and 6 has shaded through blue-green into blue; sea water at about 8; baking soda at about 9; milk of magnesia at about 10; ammonia solution at about 11; soapy water at about 12; bleach at about 13; and 14 at the top (unlabeled, a crimson red close to the bottom's hue after the purple and magenta of 10 to 13)." kind="diagram" >}}
 The pH scale measures hydrogen ions' (H⁺) concentration in a solution. (credit: modification of work by Edward Stevens)
 {{< /mediafigure >}}
 
@@ -162,7 +162,7 @@ Water has many properties that are critical to maintaining life. It is a polar m
 {{< multiplechoice
   question="Which of the following statements is not true?"
   answer="Water is the most abundant molecule in the Earth's atmosphere."
-  hint="Water is abundant in the human body and in the oceans, but check what actually makes up most of the atmosphere's gas."
+  hint="Check each statement against the section's two opening paragraphs."
 >}}
 Water is polar.
 Water stabilizes temperature.
@@ -174,14 +174,20 @@ Water is the most abundant molecule in the Earth's atmosphere.
   question="The amount of heat one gram of a substance must absorb or lose to change its temperature by one degree Celsius is called its ________."
   answer="specific heat capacity"
   accept="specific heat"
-  hint="Water's value for this, one calorie, is unusually high among common liquids."
+  hint="Reread the paragraph after the ice figure and its Link to Learning."
 >}}
 
 {{< textin
   question="Water also exhibits a ________, which is key to how organisms cool themselves by evaporating sweat."
   answer="high heat of vaporization"
   accept="high heat of vaporisation"
-  hint="This is the amount of energy required to change one gram of a liquid to a gas — the property that lets organisms cool by evaporating sweat."
+  hint="Reread the section that follows the heat-capacity discussion."
+>}}
+
+{{< textin
+  question="The intermolecular attraction between water molecules, caused by water's polar nature, is called ________."
+  answer="cohesion"
+  hint="Reread the paragraph about the overfilled glass of water."
 >}}
 
 ### Explain why water is an excellent solvent
@@ -190,25 +196,25 @@ Water is the most abundant molecule in the Earth's atmosphere.
   question="________ allow ions and other polar molecules to dissolve in water. Therefore, water is an excellent solvent."
   answer="Hydrogen bonds"
   accept="hydrogen bonding"
-  hint="The summary opens its solvent discussion by naming the weak bond between water's slightly positive and slightly negative charges."
->}}
-
-{{< textin
-  question="A substance capable of dissolving other polar molecules and ionic compounds is called a ________."
-  answer="solvent"
-  hint="Water earns this name because its polar charges pull ions and other polar molecules apart and surround them."
+  hint="Reread the first paragraph of Water's Solvent Properties."
 >}}
 
 {{< textin
   question="The shell of water molecules that surrounds and separates a dissolved ion or polar molecule is called a ________."
   answer="sphere of hydration"
-  accept="hydration shell"
-  hint="Picture the water molecules' oxygen or hydrogen atoms all pointing inward toward the dissolved particle."
+  accept="hydration shell|spheres of hydration"
+  hint="Reread the first paragraph of Water's Solvent Properties and the table-salt figure."
+>}}
+
+{{< textin
+  question="A polar substance that interacts readily with or dissolves in water is described as ________."
+  answer="hydrophilic"
+  hint="Reread the second paragraph of Water's Polarity."
 >}}
 
 ### Provide examples of water's cohesive and adhesive properties
 
-{{< selfcheck question="Why can some insects walk on water?" hint="Think about the property that lets water resist rupturing at its surface, and where that property comes from." >}}
+{{< selfcheck question="Why can some insects walk on water?" hint="Reread the paragraphs beside the needle and water-strider photos." >}}
 Some insects can walk on water, although they are heavier (denser) than water, because of the surface tension of water. Surface tension results from cohesion, or the attraction between water molecules at the surface of the body of water (the liquid-air/gas interface).
 ===CHECKS===
 some insects can walk on water, although they are heavier (denser) than water, because of the surface tension of water
@@ -216,24 +222,29 @@ surface tension results from cohesion, or the attraction between water molecules
 {{< /selfcheck >}}
 
 {{< textin
-  question="The intermolecular attraction between water molecules, caused by water's polar nature, is called ________."
-  answer="cohesion"
-  hint="This same property is responsible for surface tension."
->}}
-
-{{< textin
   question="The rising of water inside a narrow glass tube, caused by water's attraction to the tube's charged walls, is called ________."
   answer="capillary action"
   accept="capillarity"
-  hint="Look at how water climbs higher along the sides of the tube than in the middle."
+  hint="Reread the paragraph on adhesion and the glass-tube figure below it."
 >}}
+
+{{< multiplechoice
+  question="According to the section, what creates the \"pull\" on the water column that moves water from a plant's roots to its leaves?"
+  answer="evaporating surface molecules staying connected to the molecules below"
+  hint="Reread the paragraph after the glass-tube figure."
+>}}
+the partial charges that let ions and polar molecules dissolve in water
+the dissociation of water molecules into hydrogen and hydroxide ions
+evaporating surface molecules staying connected to the molecules below
+the lattice structure of ice holding water molecules farther apart
+{{< /multiplechoice >}}
 
 ### Discuss the role of acids, bases, and buffers in homeostasis
 
 {{< multiplechoice
   question="When acids are added to a solution, the pH should ________."
   answer="decrease"
-  hint="Acids raise the concentration of hydrogen ions, and pH runs opposite to that concentration."
+  hint="Reread the paragraph that begins with non-neutral pH readings."
 >}}
 decrease
 increase
@@ -244,7 +255,7 @@ cannot tell without testing
 {{< multiplechoice
   question="We call a molecule that binds up excess hydrogen ions in a solution a(n) ________."
   answer="base"
-  hint="This is the substance that raises pH by taking hydrogen ions out of solution."
+  hint="Reread the paragraph in pH, Buffers, Acids, and Bases that defines an acid and a base."
 >}}
 acid
 isotope
@@ -255,7 +266,7 @@ donator
 {{< multiplechoice
   question="Which of the following statements is true?"
   answer="Acids and bases will neutralize each other."
-  hint="Check each option against which ion type acids donate and which bases donate."
+  hint="Reread the two paragraphs that define acids and bases and compare strong and weak ones."
 >}}
 Acids and bases cannot mix together.
 Acids and bases will neutralize each other.
@@ -263,7 +274,7 @@ Acids, but not bases, can change the pH of a solution.
 Acids donate hydroxide ions (OH⁻); bases donate hydrogen ions (H⁺).
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Discuss how buffers help prevent drastic swings in pH." hint="Think about what a buffer does with free hydrogen ions and hydroxide ions as they appear in solution." >}}
+{{< selfcheck question="Discuss how buffers help prevent drastic swings in pH." hint="Reread the buffers paragraph and the blood-buffering diagram." >}}
 Buffers absorb the free hydrogen ions and hydroxide ions that result from chemical reactions. Because they can bond these ions, they prevent increases or decreases in pH. An example of a buffer system is the bicarbonate system in the human body. This system is able to absorb hydrogen and hydroxide ions to prevent changes in pH and keep cells functioning properly.
 ===CHECKS===
 buffers absorb the free hydrogen ions and hydroxide ions that result from chemical reactions
@@ -273,4 +284,4 @@ the bicarbonate system in the human body is able to absorb hydrogen and hydroxid
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 2.2: Water](https://openstax.org/books/biology-2e/pages/2-2-water) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the sodium/chloride hydration-shell figure's alt text rewritten to remove a duplicated, garbled clause in the source attribute; the pH-scale figure's alt shortened to an overview with a new extended description walking the scale from 0 to 14 with its example substances, and an extended description added to the blood-buffering diagram naming the chemical species in each box and the direction of each colored arrow; the display equation for water's dissociation set as a Unicode text line rather than typeset math; three Link to Learning notes rendered as callouts with descriptive link text in place of "click here" or a bare embedded video; in-text references to figures changed from the source's numbered pointers to descriptive phrases ("the figure below"), since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and five key-term recall items (specific heat capacity, solvent, sphere of hydration, cohesion, capillary action) added from the glossary to round out the objective groups; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and two summary-derived textin cloze items added — one under the first objective from the section summary's own sentence on water's high heat of vaporization, and one under the second objective from the section summary's own sentence naming hydrogen bonds as what lets ions and other polar molecules dissolve in water — since the module's four keyed Review Questions and two keyed Critical Thinking Questions had already been used in full; the Link to Learning's openstax.org redirect (`/l/ice_lattice2`) is no longer linked — its destination, janewhitney.com/ice_movie_resources, returned 404 on September 5, 2026, so the callout names the resource and its site for the reader to search instead (erratum 314). One claim is corrected with a visible Source note: ice being less dense than liquid water is not unique among substances (erratum 382).</small>
+<small>This section is adapted from [Biology 2e, Section 2.2: Water](https://openstax.org/books/biology-2e/pages/2-2-water) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the sodium/chloride hydration-shell figure's alt text rewritten to remove a duplicated, garbled clause in the source attribute; the pH-scale figure's alt shortened to an overview with a new extended description walking the scale from 0 to 14 with its example substances, and an extended description added to the blood-buffering diagram naming the chemical species in each box and the direction of each colored arrow; the display equation for water's dissociation set as a Unicode text line rather than typeset math; three Link to Learning notes rendered as callouts with descriptive link text in place of "click here" or a bare embedded video; in-text references to figures changed from the source's numbered pointers to descriptive phrases ("the figure below"), since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and five key-term recall items (specific heat capacity, cohesion, hydrophilic, sphere of hydration, capillary action) added from the glossary to round out the objective groups; one multiple-choice item on what creates the pull on a plant's water column, written from the module's own sentence, under the third objective; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and two summary-derived textin cloze items added — one under the first objective from the section summary's own sentence on water's high heat of vaporization, and one under the second objective from the section summary's own sentence naming hydrogen bonds as what lets ions and other polar molecules dissolve in water — since the module's four keyed Review Questions and two keyed Critical Thinking Questions had already been used in full; the Link to Learning's openstax.org redirect (`/l/ice_lattice2`) is no longer linked — its destination, janewhitney.com/ice_movie_resources, returned 404 on September 5, 2026, so the callout names the resource and its site for the reader to search instead (erratum 314). One claim is corrected with a visible Source note: ice being less dense than liquid water is not unique among substances (erratum 382).</small>

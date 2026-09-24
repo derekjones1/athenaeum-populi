@@ -230,14 +230,14 @@ the collection of all ecosystems, and it represents the zones of life on
 Earth. It includes land, water, and even the atmosphere to a certain
 extent.
 
-{{< mediafigure src="biology/Figure_01_02_15" alt="A flow chart of the biological hierarchy from smallest to largest: organelles (inside cells) lead to cells, which form tissues, which form organs and organ systems; organisms combine into populations, which form communities, which form ecosystems, which together make up the biosphere." longdesc="Two vertical columns of boxes joined by arrows. Left column, top to bottom: Organelles — the nucleus, dyed blue in onion cells, is an example of an organelle (photo of onion cells); an arrow leads down to Cells — human blood cells (micrograph of blood cells); an arrow leads down to Tissues — human skin tissue (micrograph of skin); an arrow leads down to Organs and Organ Systems — organs such as the stomach and intestine make up the human digestive system (diagram of a human torso with the digestive system highlighted). An arrow then runs up and across to the top of the right column. Right column, top to bottom: Organisms, Populations, and Communities — in a forest, each pine tree is an organism, together all the pine trees make up a population, and all the plant and animal species in the forest comprise a community (photo of a pine forest); an arrow leads down to Ecosystems — this coastal ecosystem in the southeastern United States includes living organisms and the environment in which they live (photo of a coastal marsh); an arrow leads down to The Biosphere — encompasses all the ecosystems on Earth (photo of Earth from space)." >}}
+{{< mediafigure src="biology/Figure_01_02_15" alt="A flow chart of the biological hierarchy from smallest to largest: organelles (inside cells) lead to cells, which form tissues, which form organs and organ systems; organisms combine into populations, which form communities, which form ecosystems, which together make up the biosphere." longdesc="Two vertical columns of boxes joined by arrows. Left column, top to bottom: Organelles — the nucleus, dyed blue in onion cells, is an example of an organelle (photo of onion cells); an arrow leads down to Cells — human blood cells (micrograph of blood cells); an arrow leads down to Tissues — human skin tissue (micrograph of skin); an arrow leads down to Organs and Organ Systems — organs such as the stomach and intestine make up the human digestive system (diagram of a human torso with the digestive system highlighted). A broad arrow then runs down from that box, across the bottom, and up to the top of the right column. Right column, top to bottom: Organisms, Populations, and Communities — in a forest, each pine tree is an organism, together all the pine trees make up a population, and all the plant and animal species in the forest comprise a community (photo of a pine forest); an arrow leads down to Ecosystems — this coastal ecosystem in the southeastern United States includes living organisms and the environment in which they live (photo of a coastal marsh); an arrow leads down to The Biosphere — encompasses all the ecosystems on Earth (an oval, flattened map of the whole Earth in satellite colors)." >}}
 Shows the biological levels of organization of living things. From a single organelle to the entire biosphere, living organisms are parts of a highly structured hierarchy. (credit "organelles": modification of work by Umberto Salvagnin; credit "cells": modification of work by Bruce Wetzel, Harry Schaefer/National Cancer Institute; credit "tissues": modification of work by Kilbad; Fama Clamosa; Mikael Häggström; credit "organs": modification of work by Mariana Ruiz Villareal; credit "organisms": modification of work by "Crystal"/Flickr; credit "ecosystems": modification of work by US Fish and Wildlife Service Headquarters; credit "biosphere": modification of work by NASA)
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements is false?"
   answer="Communities exist within populations which exist within ecosystems."
-  hint="A population is made up of individuals of one species; a community is the sum of many populations. Check which one the statement says contains the other."
+  hint="Check each statement's order against the flow chart above."
 >}}
 Tissues exist within organs which exist within organ systems.
 Communities exist within populations which exist within ecosystems.
@@ -262,7 +262,7 @@ when, based on scientific evidence, researchers believe an ancestor has
 diverged to form two new species. In some phylogenetic trees, the length of
 each branch might be proportional to the time elapsed since the split.
 
-{{< mediafigure src="biology/Figure_01_02_16-c1d2" alt="A phylogenetic tree diagram rooted at a common ancestor and splitting into the three domains of life — Bacteria, Archaea, and Eukarya — each branching further into named groups of organisms, with humans marked among the animals in Eukarya as “you are here.”" longdesc="A single trunk splits into a blue branch labeled Bacteria and a branch that immediately forks again into a red Archaea branch and a brown Eukarya branch. The Bacteria branch fans out into, from top to bottom, Green Filamentous bacteria, Spirochetes, Gram positives, Proteobacteria, Cyanobacteria, Planctomyces, Bacteroides and Cytophaga, Thermotoga, and Aquifex. The Archaea branch fans out into Methanosarcina, Methanobacterium, Methanococcus, T. celer, Thermoproteus, and Pyrodictium near its base, and Halophiles higher up, with Entamoebae branching off near where Archaea and Eukarya meet. The Eukarya branch fans out into Slime molds, Animals (marked with a star as \"you are here\"), Fungi, Plants, Ciliates, Flagellates, Trichomonads, Microsporidia, and Diplomonads." >}}
+{{< mediafigure src="biology/Figure_01_02_16-c1d2" alt="A phylogenetic tree diagram rooted at a common ancestor and splitting into the three domains of life — Bacteria, Archaea, and Eukarya — each branching further into named groups of organisms, with humans marked among the animals in Eukarya as “you are here.”" longdesc="A single trunk splits into a blue branch labeled Bacteria and a branch that immediately forks again into a red Archaea branch and a brown Eukarya branch. The Bacteria branch fans out into, from top to bottom, Green Filamentous bacteria, Spirochetes, Gram positives, Proteobacteria, Cyanobacteria, Planctomyces, Bacteroides and Cytophaga, Thermotoga, and Aquifex. The Archaea branch fans out into Methanosarcina, Methanobacterium, Methanococcus, T. celer, Thermoproteus, and Pyrodictium near its base, and Halophiles higher up. The Eukarya branch fans out into Entamoebae, Slime molds, Animals (marked with a star as \"you are here\"), Fungi, Plants, Ciliates, Flagellates, Trichomonads, Microsporidia, and Diplomonads." >}}
 Microbiologist Carl Woese constructed this phylogenetic tree using data that he obtained from sequencing ribosomal RNA genes. The tree shows the separation of living organisms into three domains: Bacteria, Archaea, and Eukarya. Bacteria and Archaea are prokaryotes, single-celled organisms lacking intracellular organelles. (credit: Eric Gaba; NASA Astrobiology Institute)
 {{< /mediafigure >}}
 
@@ -371,23 +371,23 @@ and botany, among others.
 
 ### Identify and describe the properties of life
 
+{{< textin
+  question="The relatively stable internal environment that an organism maintains despite a changing outside environment is called ________."
+  answer="homeostasis"
+  accept="homoeostasis"
+  hint="Reread the subsection that the polar bear photo illustrates."
+>}}
+
 {{< multiplechoice
   question="Viruses are not considered living because they ________."
   answer="are not made of cells"
-  hint="Think about what the section says every living thing, no matter how simple, is made of."
+  hint="Reread the organelles-and-cells paragraph of Levels of Organization of Living Things."
 >}}
 are not made of cells
 lack cell nuclei
 do not contain DNA or RNA
 cannot reproduce
 {{< /multiplechoice >}}
-
-{{< textin
-  question="The relatively stable internal environment that an organism maintains despite a changing outside environment is called ________."
-  answer="homeostasis"
-  accept="homoeostasis"
-  hint="It comes from Greek words meaning \"similar\" and \"standing still\" — a steady internal state."
->}}
 
 {{< selfcheck question="Select two items that biologists agree are necessary in order to consider an organism \"alive.\" For each, give an example of a nonliving object that otherwise fits the definition of \"alive.\"" hint="Look back at the list of eight shared properties, and think of a nonliving thing that has just one of them." >}}
 Answers will vary. Layers of sedimentary rock have order but are not alive. Technology is capable of regulation but is not, of itself, alive.
@@ -396,7 +396,7 @@ layers of sedimentary rock have order but are not alive
 technology is capable of regulation but is not, of itself, alive
 {{< /selfcheck >}}
 
-{{< selfcheck question="You go for a long walk on a hot day. Give an example of a way in which homeostasis keeps your body healthy." hint="Think about what your body does to keep its internal temperature and water balance from changing too much." >}}
+{{< selfcheck question="You go for a long walk on a hot day. Give an example of a way in which homeostasis keeps your body healthy." hint="Reread the Regulation/Homeostasis subsection and its polar bear example." >}}
 During your walk, you may begin to perspire, which cools your body and helps your body to maintain a constant internal temperature. You might also become thirsty and pause long enough for a cool drink, which will help to restore the water lost during perspiration.
 ===CHECKS===
 you may begin to perspire
@@ -410,7 +410,7 @@ restore the water lost during perspiration
 {{< multiplechoice
   question="The smallest unit of biological structure that meets the functional requirements of “living” is the ________."
   answer="cell"
-  hint="Which of these can carry out every basic life function on its own?"
+  hint="Reread the organelles-and-cells paragraph of Levels of Organization of Living Things."
 >}}
 organ
 organelle
@@ -421,7 +421,7 @@ macromolecule
 {{< multiplechoice
   question="The presence of a membrane-enclosed nucleus is a characteristic of ________."
   answer="eukaryotic cells"
-  hint="Prokaryotes are named for lacking this structure — pro- means \"before\" the nucleus."
+  hint="Reread the end of the organelles-and-cells paragraph, where cells are classified into two types."
 >}}
 prokaryotic cells
 eukaryotic cells
@@ -432,7 +432,7 @@ bacteria
 {{< multiplechoice
   question="A group of individuals of the same species living in the same area is called a(n) ________."
   answer="population"
-  hint="A community is made up of several of these, one per species."
+  hint="Reread the paragraph on populations, communities, and ecosystems in Levels of Organization of Living Things."
 >}}
 family
 community
@@ -443,7 +443,7 @@ ecosystem
 {{< multiplechoice
   question="Which of the following sequences represents the hierarchy of biological organization from the most inclusive to the least complex level?"
   answer="biosphere, ecosystem, community, population, organism"
-  hint="Start from the biosphere, which contains everything else, and narrow down."
+  hint="Check each sequence against the levels-of-organization flow chart."
 >}}
 organelle, tissue, biosphere, ecosystem, population
 organ, organism, tissue, organelle, molecule
@@ -451,7 +451,7 @@ organism, community, biosphere, molecule, tissue, organ
 biosphere, ecosystem, community, population, organism
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Consider the levels of organization of the biological world, and place each of these items in order from smallest level of organization to most encompassing: skin cell, elephant, water molecule, planet Earth, tropical rainforest, hydrogen atom, wolf pack, liver." hint="Start from the atom and work up through cell, tissue, organ, organism, population, and ecosystem." >}}
+{{< selfcheck question="Consider the levels of organization of the biological world, and place each of these items in order from smallest level of organization to most encompassing: skin cell, elephant, water molecule, planet Earth, tropical rainforest, hydrogen atom, wolf pack, liver." hint="Use the hierarchy described in Levels of Organization of Living Things." >}}
 From smallest level of organization to largest: hydrogen atom, water molecule, skin cell, liver, elephant, wolf pack, tropical rainforest, and planet Earth.
 ===CHECKS===
 hydrogen atom, water molecule, skin cell
@@ -459,7 +459,7 @@ liver, elephant, wolf pack
 tropical rainforest, and planet Earth
 {{< /selfcheck >}}
 
-{{< selfcheck question="Using examples, explain how biology can be studied from a microscopic approach to a global approach." hint="Walk up the hierarchy of organization, from cell and organelle to organism, population, community, and ecosystem." >}}
+{{< selfcheck question="Using examples, explain how biology can be studied from a microscopic approach to a global approach." hint="Reread Levels of Organization of Living Things and the flow chart that closes it." >}}
 Researchers can approach biology from the smallest to the largest, and everything in between. For instance, an ecologist may study a population of individuals, the population's community, the community's ecosystem, and the ecosystem's part in the biosphere. When studying an individual organism, a biologist could examine the cell and its organelles, the tissues that the cells make up, the organs and their respective organ systems, and the sum total—the organism itself.
 ===CHECKS===
 researchers can approach biology from the smallest to the largest, and everything in between
@@ -472,7 +472,7 @@ a biologist could examine the cell and its organelles, the tissues that the cell
 {{< multiplechoice
   question="Where in a phylogenetic tree would you expect to find the organism that had evolved most recently?"
   answer="at the branch tips"
-  hint="The tree grows outward over time from its root; the newest growth is farthest from that root."
+  hint="Reread the second paragraph of The Diversity of Life on what a tree's nodes and branches represent."
 >}}
 at the base
 within the branches
@@ -480,17 +480,21 @@ at the nodes
 at the branch tips
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A diagram that shows the evolutionary relationships among species, based on their shared or differing genetic or physical traits, is called a ________."
-  answer="phylogenetic tree"
-  hint="Woese built one of these for Bacteria, Archaea, and Eukarya."
+{{< multiplechoice
+  question="In a phylogenetic tree, the internal nodes represent ________."
+  answer="ancestors"
+  hint="Reread the second paragraph of The Diversity of Life."
 >}}
+domains
+kingdoms
+ancestors
+ribosomal RNA genes
+{{< /multiplechoice >}}
 
 {{< textin
   question="Summary: We can use a phylogenetic tree to show ________ among organisms."
   answer="evolutionary relationships"
-  accept="evolutionary relationship"
-  hint="A phylogenetic tree's nodes and branches are points where, based on genetic or physical traits, one ancestor is believed to have diverged into two species."
+  hint="Reread the sentence in The Diversity of Life that defines a phylogenetic tree."
 >}}
 
 ### List examples of different subdisciplines in biology
@@ -498,22 +502,22 @@ at the branch tips
 {{< textin
   question="The branch of biology that studies the chemistry of biological organisms is called ________."
   answer="biochemistry"
-  hint="The name combines the study of chemical processes with the study of living things."
+  hint="Reread the first paragraph of Branches of Biological Study."
 >}}
 
 {{< textin
   question="The branch of biology that studies life's history by means of fossils is called ________."
   answer="paleontology"
   accept="palaeontology"
-  hint="Paleo- means \"ancient\" — this field digs into the ancient past."
+  hint="Reread the paragraph after the fossil-excavation photo."
 >}}
 
 {{< textin
   question="Summary: Examples of biology's branches and subdisciplines include molecular biology, microbiology, neurobiology, zoology, and ________, among others."
   answer="botany"
-  hint="This subdiscipline studies plants; its practitioner is named alongside the zoologist in the Branches of Biological Study section."
+  hint="Reread the paragraph after the fossil-excavation photo."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 1.2: Themes and Concepts of Biology](https://openstax.org/books/biology-2e/pages/1-2-themes-and-concepts-of-biology) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the source alt text edited for several photos to name what the image shows rather than only that it is a photo, and the toad photo's alt describing a mostly green toad marked with a network of pale skin, because the source alt's "light-colored toad covered in bright green spots" reverses what the image shows (erratum 834), and a longer extended description added for the levels-of-organization flow chart and the phylogenetic tree (both diagrams whose reading is not fully captured by their captions); feature boxes (two Link to Learning notes, one Evolution Connection, one Career Connection) rendered as callouts with their bold names; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); four key-term recall items (homeostasis, phylogenetic tree, biochemistry, paleontology) added from the glossary to round out thin objective groups; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice; rubric checkpoints added to each of the section's four self-checks, decomposing its model answer (the source solution) into check-off clauses with no new claims; and two summary-derived cloze recall items added to round out the third and fourth objective groups to three items each — "evolutionary relationships" (third objective) and "botany" (fourth objective) — each blanked from the section summary's own sentence.</small>
+<small>This section is adapted from [Biology 2e, Section 1.2: Themes and Concepts of Biology](https://openstax.org/books/biology-2e/pages/1-2-themes-and-concepts-of-biology) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the source alt text edited for several photos to name what the image shows rather than only that it is a photo, and the toad photo's alt describing a mostly green toad marked with a network of pale skin, because the source alt's "light-colored toad covered in bright green spots" reverses what the image shows (erratum 834), and a longer extended description added for the levels-of-organization flow chart and the phylogenetic tree (both diagrams whose reading is not fully captured by their captions); feature boxes (two Link to Learning notes, one Evolution Connection, one Career Connection) rendered as callouts with their bold names; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items (homeostasis, biochemistry, paleontology) added from the glossary to round out thin objective groups; one multiple-choice item on what a phylogenetic tree's internal nodes represent, written from the module's own sentence, in the third objective group; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice; rubric checkpoints added to each of the section's four self-checks, decomposing its model answer (the source solution) into check-off clauses with no new claims; and two summary-derived cloze recall items added to round out the third and fourth objective groups to three items each — "evolutionary relationships" (third objective) and "botany" (fourth objective) — each blanked from the section summary's own sentence.</small>

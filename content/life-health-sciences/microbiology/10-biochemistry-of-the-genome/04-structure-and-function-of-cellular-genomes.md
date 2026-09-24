@@ -57,7 +57,7 @@ Chromosomes in bacteria and archaea are usually circular, and a prokaryotic cell
 
 **Check Your Understanding**
 
-{{< selfcheck question="What is the difference between a cell's genotype and its phenotype?" hint="Combine the sentence defining a cell's full collection of genes with the sentence defining which genes are being expressed at a given time." >}}
+{{< selfcheck question="What is the difference between a cell's genotype and its phenotype?" hint="Reread the second and third paragraphs of Genotype versus Phenotype." >}}
 A cell's genotype is the full collection of genes that a cell contains within its genome, and it remains constant. A cell's phenotype is the set of genes being expressed at any given point in time, which determines the cell's activities and its observable characteristics; the phenotype may change in response to environmental signals that affect which nonconstitutive genes are expressed.
 ===CHECKS===
 genotype is the full collection of genes that a cell contains within its genome
@@ -66,7 +66,7 @@ phenotype is the set of genes being expressed at any given point in time
 phenotype may change in response to environmental signals
 {{< /selfcheck >}}
 
-{{< selfcheck question="How does DNA fit inside cells?" hint="Combine the sentence naming why a chromosome must be compacted with the supercoiling and DNA-packaging processes the section describes." >}}
+{{< selfcheck question="How does DNA fit inside cells?" hint="Reread Organization of Eukaryotic Chromosome and Organization of Prokaryotic Chromosomes." >}}
 The length of a chromosome greatly exceeds the length of the cell, so a chromosome needs to be packaged into a very small space to fit within the cell. Both prokaryotes and eukaryotes use DNA supercoiling, the process by which DNA is twisted to fit inside the cell, with topoisomerases involved in supercoiling and preventing overwinding. In eukaryotes, DNA-binding proteins called histones perform various levels of DNA wrapping and attachment to scaffolding proteins, forming chromatin; in prokaryotes, histone-like proteins bind DNA and aid in DNA packaging instead.
 ===CHECKS===
 a chromosome needs to be packaged into a very small space to fit within the cell
@@ -80,7 +80,7 @@ histone-like proteins bind DNA and aid in DNA packaging instead
 
 In addition to genes, a genome also contains many regions of **noncoding DNA** that do not encode proteins or stable RNA products. Noncoding DNA is commonly found in areas prior to the start of coding sequences of genes as well as in intergenic regions (i.e., DNA sequences located between genes), shown below.
 
-{{< mediafigure src="microbiology/OSC_Microbio_10_04_noncodDNA" alt="A drawing of an X-shaped chromosome unraveling into a long DNA double helix. Two segments of the helix are each bracketed and labeled gene; a noncoding DNA label points by two lines to the blue segments of the helix before the first gene and between the two genes. A further blue segment after the second gene matches the noncoding DNA color but has no pointer line to it." longdesc="Reading left to right: an X-shaped chromosome icon unravels into a coiled strand that becomes a long DNA double helix. Two segments of the helix are bracketed and labeled gene; a noncoding DNA label points by two lines to the blue segments of the helix that lie before the first gene and between the two genes. A further blue segment after the second gene is colored the same as the labeled noncoding DNA segments but is not pointed to by a line." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_10_04_noncodDNA" alt="A drawing of an X-shaped chromosome unraveling into a long DNA double helix. Two segments of the helix are each bracketed and labeled gene; a noncoding DNA label points by two lines to the blue segments of the helix before the first gene and between the two genes. A further blue segment after the second gene matches the noncoding DNA color but has no pointer line to it." longdesc="Reading left to right: an X-shaped chromosome icon unravels into a coiled strand that becomes a long DNA double helix. Two segments of the helix are bracketed and labeled gene; a noncoding DNA label points by two lines to the blue segments of the helix that lie before the first gene and between the two genes. A further blue segment after the second gene is colored the same as the labeled noncoding DNA segments but is not pointed to by a line, and the helix begins, right after the coil, with a short red segment colored like the genes but not labeled." kind="diagram" >}}
 Chromosomes typically have a significant amount of noncoding DNA, often found in intergenic regions.
 {{< /mediafigure >}}
 
@@ -91,7 +91,7 @@ Prokaryotes appear to use their genomes very efficiently, with only an average o
 {{< multiplechoice
   question="What is the role of noncoding DNA?"
   answer="Contributing to the regulation of transcription or translation, DNA packaging, and chromosomal stability"
-  hint="Recall the one sentence naming what scientists have found some noncoding DNA regions to contribute to, as distinct from what genes, plasmids, or the origin of replication do elsewhere in this section."
+  hint="Reread the paragraph after the noncoding-DNA figure."
 >}}
 Contributing to the regulation of transcription or translation, DNA packaging, and chromosomal stability
 Coding for proteins, enzymes, or stable RNA molecules
@@ -103,7 +103,7 @@ Providing a few nonessential genes that may be helpful under specific conditions
 
 Although most DNA is contained within a cell's chromosomes, many cells have additional molecules of DNA outside the chromosomes, called **extrachromosomal DNA**, that are also part of its genome. The genomes of eukaryotic cells would also include the chromosomes from any organelles such as mitochondria and/or chloroplasts that these cells maintain, shown below. The maintenance of circular chromosomes in these organelles is a vestige of their prokaryotic origins and supports the endosymbiotic theory (see [Foundations of Modern Cell Theory](/life-health-sciences/microbiology/03-the-cell/02-foundations-of-modern-cell-theory/)). In some cases, genomes of certain DNA viruses can also be maintained independently in host cells during latent viral infection. In these cases, these viruses are another form of extrachromosomal DNA. For example, the human papillomavirus (HPV) may be maintained in infected cells in this way.
 
-{{< mediafigure src="microbiology/OSC_Microbio_10_04_Extrachrom" alt="A composite figure. Panel (a) is a drawing of a eukaryotic cell with a large sphere labeled nucleus, a small oval labeled mitochondrion circled in red, and a small green oval labeled chloroplast circled in red. Panel (b) shows two micrographs of stained cells from a Pap smear: the cluster on the left has cells with several small, evenly stained nuclei, and the cluster on the right has cells with fewer, enlarged and darkly stained nuclei." longdesc="Panel (a), read top to bottom: a label reading nucleus points to the large central sphere; a label reading mitochondrion points, by a red circle, to a small rod-shaped organelle at lower left; a label reading chloroplast points, by a red circle, to a small oval green organelle beside it." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_10_04_Extrachrom" alt="A composite figure. Panel (a) is a drawing of a eukaryotic cell with a large sphere labeled nucleus circled in blue, a small oval labeled mitochondrion circled in red, and a small green oval labeled chloroplast circled in red. Panel (b) shows two micrographs of stained cells from a Pap smear: the cluster on the left has cells with several small, evenly stained nuclei, and the cluster on the right has cells with fewer, enlarged and darkly stained nuclei." longdesc="Panel (a), read top to bottom: a label reading nucleus points, by a blue circle, to the large central sphere; a label reading mitochondrion, at lower left, points to a red circle around a small striped oval organelle at the cell's left side; a label reading chloroplast, at lower right, points to a red circle around a larger green oval organelle with stacked internal disks at the cell's right-center." kind="diagram" >}}
 The genome of a eukaryotic cell consists of the chromosome housed in the nucleus, and extrachromosomal DNA found in the mitochondria (all cells) and chloroplasts (plants and algae). The cells shown in (b) represent cells obtained from a pap smear. The cells on the left are normal squamous cells whereas the cells on the right are infected with human papillomavirus and show enlarged nuclei with increased staining (hyperchromasia).
 {{< /mediafigure >}}
 
@@ -114,11 +114,11 @@ Besides chromosomes, some prokaryotes also have smaller loops of DNA called plas
 {{< multiplechoice
   question="How are plasmids involved in antibiotic resistance?"
   answer="By providing genes that can make a microbe resistant to certain antibiotics"
-  hint="Recall the specific clinical implication named alongside virulence factors when genes are obtained from a plasmid, as distinct from how plasmids move between bacteria or fit inside a cell."
+  hint="Reread the second paragraph of Extrachromosomal DNA."
 >}}
 By providing genes that can make a microbe resistant to certain antibiotics
 By encoding virulence factors that give a microbe the ability to cause disease
-By being exchanged among bacteria through horizontal gene transfer
+By serving as the location where DNA replication initiates
 By undergoing supercoiling to fit within the prokaryotic cell
 {{< /multiplechoice >}}
 
@@ -158,7 +158,7 @@ Viral genomes exhibit significant diversity in structure. Some viruses have geno
 
 **Check Your Understanding**
 
-{{< selfcheck question="Why do viral genomes vary widely among viruses?" hint="Recall the several ways the section says viral genomes differ from one another — genetic material, strandedness, and size — and why viruses can rely on smaller genomes than bacteria." >}}
+{{< selfcheck question="Why do viral genomes vary widely among viruses?" hint="Reread the Viral Genomes paragraph." >}}
 Viral genomes exhibit significant diversity in structure. Some viruses have genomes that consist of DNA, which may be single stranded or double stranded, while other viral genomes are made of either single-stranded or double-stranded RNA molecules. Viral genomes are typically smaller than most bacterial genomes, encoding only a few genes, because they rely on their hosts to carry out many of the functions required for their replication.
 ===CHECKS===
 genomes that consist of DNA, which may be single stranded or double stranded
@@ -180,7 +180,7 @@ Whereas obligate intracellular pathogens have unusually small genomes, other bac
 
 Interestingly, there has been significant variability in genome size in viruses as well, ranging from about 1,700 base pairs to 2.5 million base pairs *(Source note: the source says "3,500 base pairs." The module's own genome-size chart, below, plots the smallest viral genome, deltavirus, at 1,700 base pairs, so this page follows the chart.)*, significantly exceeding the size of many bacterial genomes. The great variation observed in viral genome sizes further contributes to the great diversity of viral genome characteristics already discussed.
 
-{{< mediafigure src="microbiology/OSC_Microbio_10_04_GenomeSize" alt="A horizontal bar chart on a log scale from 10² to 10¹¹ base pairs, showing the overlapping genome-size ranges of viruses, bacteria, fungi, plants, animals, and mammals, with several example organisms and their genome sizes labeled." longdesc="Reading the chart from bottom to top: the viruses bar spans from about 10³ to a little under 10⁶ base pairs, with deltavirus labeled at 1.7 × 10³ bp near its left end and pandoravirus labeled at 2.5 × 10⁶ bp near its right end. The bacteria bar spans from about 10⁵ to 10⁷ bp, with E. coli labeled at 4.6–5.6 × 10⁶ bp. The fungi bar spans from about 10⁶ to 10⁸ bp, with Saccharomyces cerevisiae (yeast) labeled at 1.2 × 10⁷ bp. The animals bar spans from about 10⁶ to 10¹¹ bp. The plants bar, drawn above the animals bar, spans a similar range from about 10⁶ to 10¹¹ bp. A shorter mammals bar sits above the plants bar, spanning roughly 10⁹ to 10¹⁰ bp, with humans labeled at 3 × 10⁹ bp." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_10_04_GenomeSize" alt="A horizontal bar chart on a log scale from 10² to 10¹¹ base pairs, showing the overlapping genome-size ranges of viruses, bacteria, fungi, plants, animals, and mammals, with several example organisms and their genome sizes labeled." longdesc="Reading the chart from bottom to top: the viruses bar spans from about 10³ to a little under 10⁶ base pairs, with deltavirus labeled at 1.7 × 10³ bp near its left end and pandoravirus labeled at 2.5 × 10⁶ bp near its right end. The bacteria bar spans from about halfway between 10⁵ and 10⁶ to 10⁷ bp, with E. coli labeled at 4.6–5.6 × 10⁶ bp. The fungi bar starts at 10⁷ and fades out between 10⁸ and 10⁹ bp, with Saccharomyces cerevisiae (yeast) labeled at 1.2 × 10⁷ bp. The animals bar starts at 10⁷ and fades out near 10¹¹ bp. The plants bar, drawn above the animals bar, spans the same range, from 10⁷ to near 10¹¹ bp. A shorter mammals bar sits above the plants bar, starting a little below 10⁹ and fading out before 10¹⁰ bp, with humans labeled at 3 × 10⁹ bp. Each bar fades toward its right end, so right-hand limits are approximate." kind="diagram" >}}
 There is great variability as well as overlap among the genome sizes of various groups of organisms and viruses.
 {{< /mediafigure >}}
 {{< /callout >}}
@@ -229,7 +229,7 @@ Visit the [genome database](https://www.openstax.org/l/22NCBIgendata) of the Nat
 {{< multiplechoice
   question="*Serratia marcescens* cells produce a red pigment at room temperature. The red color of the colonies is an example of which of the following?"
   answer="phenotype"
-  hint="Recall which term names an observable characteristic resulting from which genes are currently being expressed, as opposed to the fixed set of genes a cell carries."
+  hint="Reread Genotype versus Phenotype, including its Serratia marcescens example."
 >}}
 genotype
 phenotype
@@ -237,33 +237,34 @@ change in DNA base composition
 adaptation to the environment
 {{< /multiplechoice >}}
 
+{{< textin
+  question="A phenotype is the ________ of a cell (or organism) at a given point in time and results from the complement of genes currently being used."
+  answer="observable characteristics"
+  accept="observable characteristic"
+  hint="Reread the second paragraph of Genotype versus Phenotype."
+>}}
+
 {{< multiplechoice
   question="Within an organism, phenotypes may change while genotypes remain constant."
   answer="True"
-  hint="Recall which of the two — the full set of genes present, or which genes are being expressed at a given time — the section says stays fixed."
+  hint="Reread the third paragraph of Genotype versus Phenotype."
 >}}
 True
 False
 {{< /multiplechoice >}}
-
-{{< textin
-  question="________ code for proteins, or stable RNA molecules, each of which carries out a specific function in the cell."
-  answer="genes"
-  hint="Name the DNA segments defined at the start of this section, whose full set forms a cell's genotype."
->}}
 
 ### Describe chromosome structure and packaging
 
 {{< multiplechoice
   question="Noncoding DNA has no biological purpose."
   answer="False"
-  hint="Recall what the section says scientists have found regarding roles for at least some noncoding DNA regions, despite the outdated 'junk DNA' label."
+  hint="Reread the paragraph after the noncoding-DNA figure."
 >}}
 True
 False
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How do prokaryotes and eukaryotes manage to fit their lengthy DNA inside of cells? Why is this necessary?" hint="Combine the sentence naming why a chromosome must be compacted with the supercoiling and DNA-packaging processes the section describes for fitting DNA into a cell." >}}
+{{< selfcheck question="How do prokaryotes and eukaryotes manage to fit their lengthy DNA inside of cells? Why is this necessary?" hint="Reread Organization of Eukaryotic Chromosome and Organization of Prokaryotic Chromosomes." >}}
 The length of a chromosome greatly exceeds the length of the cell, so a chromosome needs to be packaged into a very small space to fit within the cell. Both prokaryotes and eukaryotes use DNA supercoiling, the process by which DNA is twisted to fit inside the cell, arranging the DNA in several supercoiled domains, with topoisomerases involved in supercoiling and preventing overwinding. In eukaryotes, DNA-binding proteins called histones perform various levels of DNA wrapping and attachment to scaffolding proteins, forming chromatin; in prokaryotes, histone-like proteins bind DNA and aid in DNA packaging instead.
 ===CHECKS===
 a chromosome needs to be packaged into a very small space to fit within the cell
@@ -272,7 +273,7 @@ topoisomerases involved in supercoiling and preventing overwinding
 histone-like proteins bind DNA and aid in DNA packaging instead
 {{< /selfcheck >}}
 
-{{< selfcheck question="In the chromatin of eukaryotic cells, which regions of the chromosome would you expect to be more compact: the regions that contain genes being actively copied into RNA or those that contain inactive genes?" hint="Recall the section's general principle about how differently packaged DNA regions differ in accessibility to enzymes and use as templates for gene expression." >}}
+{{< selfcheck question="In the chromatin of eukaryotic cells, which regions of the chromosome would you expect to be more compact: the regions that contain genes being actively copied into RNA or those that contain inactive genes?" hint="Reread the DNA-packaging paragraph under Organization of Eukaryotic Chromosome and the later sentences of Organization of Prokaryotic Chromosomes." >}}
 The section explains that different regions of DNA are packaged differently, and that some regions are more accessible to enzymes and thus more readily used as templates for gene expression. Applying that principle, the chromatin regions containing genes being actively copied into RNA would be expected to be less compact (more accessible), and the regions containing inactive genes would be expected to be more compact.
 ===CHECKS===
 different regions of DNA are packaged differently
@@ -286,7 +287,7 @@ regions containing inactive genes would be expected to be more compact
 {{< multiplechoice
   question="Which of the following correctly describes the structure of the typical eukaryotic genome?"
   answer="diploid"
-  hint="Only one of these four options is true of eukaryotic chromosome number; the others describe features of prokaryotic genomes instead."
+  hint="Reread the first paragraph of Organization of Eukaryotic Chromosome."
 >}}
 diploid
 circular
@@ -297,7 +298,7 @@ single stranded
 {{< multiplechoice
   question="Histones are DNA binding proteins that are important for DNA packaging in which of the following?"
   answer="eukaryotes and archaea"
-  hint="Recall which two domains the section names as using histone proteins for DNA packaging, as opposed to the different but functionally similar proteins bacteria use."
+  hint="Reread the Summary bullet on supercoiling and DNA packaging."
 >}}
 double-stranded and single-stranded DNA viruses
 archaea and bacteria
@@ -305,7 +306,7 @@ bacteria and eukaryotes
 eukaryotes and archaea
 {{< /multiplechoice >}}
 
-{{< sortbins question="What are some differences in chromosomal structures between prokaryotes and eukaryotes? Sort each statement below under the type of cell it describes." hint="Recall which type of cell keeps its chromosome in a nucleoid versus a nucleus, and how many chromosome copies and shapes each typically has." >}}
+{{< sortbins question="What are some differences in chromosomal structures between prokaryotes and eukaryotes? Sort each statement below under the type of cell it describes." hint="Reread Organization of Genetic Material and its two subsections." >}}
 {"bins": ["Eukaryotic cells", "Prokaryotic cells"],
  "items": [
   {"label": "Chromosomes are typically linear", "bin": 0},
@@ -323,7 +324,7 @@ eukaryotes and archaea
 {{< multiplechoice
   question="Which of the following is typically found as part of the prokaryotic genome?"
   answer="plasmids"
-  hint="Recall which of these four are eukaryotic-associated (organelle DNA, linear chromosomes) and which is the small circular DNA some prokaryotes also carry."
+  hint="Reread the second paragraph of Extrachromosomal DNA."
 >}}
 chloroplast DNA
 linear chromosomes
@@ -334,7 +335,7 @@ mitochondrial DNA
 {{< multiplechoice
   question="Which of the following genes would not likely be encoded on a plasmid?"
   answer="gene encoding enzymes for glycolysis"
-  hint="Recall that plasmids typically carry a few nonessential genes helpful under special conditions, not the core genes for a basic, universally needed metabolic pathway."
+  hint="Reread the second paragraph of Extrachromosomal DNA."
 >}}
 genes encoding toxins that damage host tissue
 genes encoding antibacterial resistance
@@ -345,9 +346,18 @@ genes encoding enzymes for the degradation of an unusual substrate
 {{< textin
   question="Plasmids are typically transferred among members of a bacterial community by ________ gene transfer."
   answer="horizontal"
-  hint="Name the type of gene transfer — movement between organisms of the same generation rather than from parent to offspring — that spreads plasmids through a bacterial community."
+  hint="Reread the second paragraph of Extrachromosomal DNA."
 >}}
+
+{{< selfcheck question="A new type of bacteriophage has been isolated and you are in charge of characterizing its genome. The base composition of the bacteriophage is A (15%), C (20%), T (35%), and G (30%). What can you conclude about the genome of the virus?" hint="Reread the Viral Genomes paragraph." >}}
+This section states that viral genomes exhibit significant diversity in structure: some viruses have genomes that consist of DNA, which may be single stranded or double stranded, and some viral genomes are made of either single-stranded or double-stranded RNA molecules. This section does not give the base-composition rules needed to decide from these percentages which of those kinds of genome the new bacteriophage has, so from this section alone the conclusion stops at those possibilities.
+===CHECKS===
+viral genomes exhibit significant diversity in structure
+genomes that consist of DNA, which may be single stranded or double stranded
+either single-stranded or double-stranded RNA molecules
+This section does not give the base-composition rules needed to decide from these percentages
+{{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 10.4: Structure and Function of Cellular Genomes](https://openstax.org/books/microbiology/pages/10-4-structure-and-function-of-cellular-genomes) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all five source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; the manifest's guessed `kind` was wrong for four of the five drawn/diagrammatic figures (noncodDNA, Extrachrom, Bacilli, GenomeSize all JPEG "photo" guesses, all actually drawings or a bar chart) and is set `kind="diagram"` explicitly on all four after opening each image; GenoPheno is `kind="photo"` with `eager="true"` as the first figure on the page. The noncodDNA alt is rewritten to walk the labeled chromosome-to-helix drawing and given a `longdesc`; the Extrachrom alt is rewritten because the source alt describes only panel (a) and omits panel (b)'s two micrographs entirely (a suspected source-alt defect), with a `longdesc` for panel (a)'s labels; the Bacilli alt is rewritten because the source alt lowercases the plasmid labels ("px01", "px02") where the artwork and the caption both print "pX01"/"pX02" (a suspected source-alt defect), and because it omits the species labels printed under each cell; the GenomeSize alt is shortened from the source's roughly 700-character cell-by-cell transcription (over the 600-character cap) into a short summary alt plus a `longdesc` walking every labeled bar and value bottom to top. The two Link to Learning boxes and the Case in Point, Clinical Focus, and Micro Connection callouts are rendered as callouts in source document order; the Link to Learning sentence following the DNA-packaging discussion drops an extraneous "on" in the source's "to learn more about on DNA packaging" (a source defect, corrected in place with no inline note); the Micro Connection's sentence "...difficult if not impossible Due to their small sizes..." is missing a period between "impossible" and "Due" in the source, a punctuation defect corrected in place with no inline note. Same-module cross-references to a figure are rendered as describing prose ("shown below"); the cross-chapter cross-references to [Unique Characteristics of Prokaryotic Cells](/life-health-sciences/microbiology/03-the-cell/03-unique-characteristics-of-prokaryotic-cells/) (twice) and [Foundations of Modern Cell Theory](/life-health-sciences/microbiology/03-the-cell/02-foundations-of-modern-cell-theory/) are absolute site-root links, as is the cross-reference to [Mechanisms of Microbial Genetics](/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/); the cross-reference to the chapter 12 introduction (*Modern Applications of Microbial Genetics*, not yet authored) is left as plain text naming the section; the cross-reference to [The Viral Life Cycle](/life-health-sciences/microbiology/06-acellular-pathogens/02-the-viral-life-cycle/) is an absolute link. Four source footnotes become inline parenthetical citations with bare access URLs dropped: the NHGRI web citation, Bierne et al. 2012, Taft et al. 2007, and Ivanova et al. 2003. The Clinical Focus box's source-printed "Go back to the previous Clinical Focus box" link (which points at Section 10.2, the previous part) is replaced, per this chapter's chain, with a sentence naming where the case began, [Using Microbiology to Discover the Secrets of Life](/life-health-sciences/microbiology/10-biochemistry-of-the-genome/01-using-microbiology-to-discover-the-secrets-of-life/); this Resolution's closing paragraphs carry no further unanswered questions, and the Case in Point's own closing question stays inside its callout as an unanswered plain bullet, as printed. Three of the five body Check Your Understanding bullets are self-checks: none is fixed by a single sentence or figure of the module alone — each needs either an explanatory "why"/"how" answer assembled from more than one sentence, or (for the chromatin-compaction question) an inference applying the module's general packaging-accessibility principle to a case it does not state outright — with model answers and rubrics quoting only this module's own sentences. The other two body Check Your Understanding bullets are graded `multiplechoice`, each fixed by ONE module sentence: "What is the role of noncoding DNA?" is keyed by the sentence ending "...DNA packaging, and chromosomal stability," with distractors drawn from the module's own sibling phrases describing what genes, plasmids, and the origin of replication do instead; "How are plasmids involved in antibiotic resistance?" is keyed by the sentence "...genes obtained from plasmids may have clinical implications...or make a microbe resistant to certain antibiotics," with distractors drawn from the module's own sibling phrases describing what plasmid genes otherwise do, how plasmids move, and how prokaryotic DNA is packaged. Of the module's four unkeyed Short Answer questions: "What are some differences in chromosomal structures between prokaryotes and eukaryotes?" is graded as a `sortbins` (bins: Eukaryotic cells / Prokaryotic cells; items are the module's own distinguishing phrases for chromosome shape, number, ploidy, and location, interleaved) because the module's own compare-and-contrast statements fix the category assignment; "How do prokaryotes and eukaryotes manage to fit their lengthy DNA inside of cells? Why is this necessary?" and the chromatin-compaction question stay self-checks (assembled/inferential answers, as above) and are additionally placed in the Practice block to fill the "chromosome structure and packaging" objective group; "What are some functions of noncoding DNA?" is dropped from Practice because it reworks the body Check Your Understanding bullet asking the noncoding-DNA question already answered above (the body item is kept and this Short Answer is not repeated). The unkeyed Critical Thinking question (concluding what a bacteriophage's genome composition implies from its base percentages) is omitted from the page: answering it correctly requires Chargaff's base-pairing rule and the thymine/uracil distinction between DNA and RNA, neither of which this module states — both are taught in Section 10.2, a different module, and the model-answer rule does not permit importing another chapter's content. The five source Multiple Choice, two True/False (rendered as two-option multiple choice, True then False), and one Fill in the Blank ("horizontal" gene transfer) items are adapted into Practice using the source's own options, order, and keys; two of the four author-written or converted items with a chosen position use the source's own key order and the remainder is a mix of author-built distractor sets with no fixed pattern, so no single option letter dominates. One filler item — a summary cloze `textin` keyed "genes," built from the "Genes code for proteins, or stable RNA molecules..." summary sentence — fills the "define gene and genotype" objective group to the book's three-item floor; no other filler was needed since the module's own source and Check Your Understanding items already meet or exceed the floor for the other three objective groups. Key terms are compiled from the module's fourteen defined terms and the book's Glossary appendix; all fourteen definitions are taken directly from the appendix, none from a defining sentence. Two claim corrections, each with a visible Source note: the Case in Point's pX02 "capsular polysaccharide" is printed as "capsule" because the anthrax capsule is poly-γ-D-glutamic acid, a polypeptide; and the viral genome-size range's lower bound "3,500 base pairs" is printed as "about 1,700 base pairs" because the module's own chart plots deltavirus at 1,700 base pairs. One source Multiple Choice item is double-keyed as printed ("Which of the following correctly describes the structure of the typical eukaryotic genome?" keys "diploid", but the module's own sentences also make "linear" and "double stranded" true of eukaryotic genomes); the page replaces those two distractors with "circular" and "single stranded", key unchanged.</small>
+<small>This section is adapted from [Microbiology, Section 10.4: Structure and Function of Cellular Genomes](https://openstax.org/books/microbiology/pages/10-4-structure-and-function-of-cellular-genomes) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all five source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; the manifest's guessed `kind` was wrong for four of the five drawn/diagrammatic figures (noncodDNA, Extrachrom, Bacilli, GenomeSize all JPEG "photo" guesses, all actually drawings or a bar chart) and is set `kind="diagram"` explicitly on all four after opening each image; GenoPheno is `kind="photo"` with `eager="true"` as the first figure on the page. The noncodDNA alt is rewritten to walk the labeled chromosome-to-helix drawing and given a `longdesc`; the Extrachrom alt is rewritten because the source alt describes only panel (a) and omits panel (b)'s two micrographs entirely (a suspected source-alt defect), with a `longdesc` for panel (a)'s labels; the Bacilli alt is rewritten because the source alt lowercases the plasmid labels ("px01", "px02") where the artwork and the caption both print "pX01"/"pX02" (a suspected source-alt defect), and because it omits the species labels printed under each cell; the GenomeSize alt is shortened from the source's roughly 700-character cell-by-cell transcription (over the 600-character cap) into a short summary alt plus a `longdesc` walking every labeled bar and value bottom to top; the source alt's lower limits for fungi, plants, and animals (one million base pairs) are corrected to the chart's drawn bars, which all start at ten million base pairs. The two Link to Learning boxes and the Case in Point, Clinical Focus, and Micro Connection callouts are rendered as callouts in source document order; the Link to Learning sentence following the DNA-packaging discussion drops an extraneous "on" in the source's "to learn more about on DNA packaging" (a source defect, corrected in place with no inline note); the Micro Connection's sentence "...difficult if not impossible Due to their small sizes..." is missing a period between "impossible" and "Due" in the source, a punctuation defect corrected in place with no inline note. Same-module cross-references to a figure are rendered as describing prose ("shown below"); the cross-chapter cross-references to [Unique Characteristics of Prokaryotic Cells](/life-health-sciences/microbiology/03-the-cell/03-unique-characteristics-of-prokaryotic-cells/) (twice) and [Foundations of Modern Cell Theory](/life-health-sciences/microbiology/03-the-cell/02-foundations-of-modern-cell-theory/) are absolute site-root links, as is the cross-reference to [Mechanisms of Microbial Genetics](/life-health-sciences/microbiology/11-mechanisms-of-microbial-genetics/); the cross-reference to the chapter 12 introduction (*Modern Applications of Microbial Genetics*, not yet authored) is left as plain text naming the section; the cross-reference to [The Viral Life Cycle](/life-health-sciences/microbiology/06-acellular-pathogens/02-the-viral-life-cycle/) is an absolute link. Four source footnotes become inline parenthetical citations with bare access URLs dropped: the NHGRI web citation, Bierne et al. 2012, Taft et al. 2007, and Ivanova et al. 2003. The Clinical Focus box's source-printed "Go back to the previous Clinical Focus box" link (which points at Section 10.2, the previous part) is replaced, per this chapter's chain, with a sentence naming where the case began, [Using Microbiology to Discover the Secrets of Life](/life-health-sciences/microbiology/10-biochemistry-of-the-genome/01-using-microbiology-to-discover-the-secrets-of-life/); this Resolution's closing paragraphs carry no further unanswered questions, and the Case in Point's own closing question stays inside its callout as an unanswered plain bullet, as printed. Three of the five body Check Your Understanding bullets are self-checks: none is fixed by a single sentence or figure of the module alone — each needs an explanatory "why"/"how" answer assembled from more than one sentence — with model answers and rubrics quoting only this module's own sentences. The other two body Check Your Understanding bullets are graded `multiplechoice`, each fixed by ONE module sentence: "What is the role of noncoding DNA?" is keyed by the sentence ending "...DNA packaging, and chromosomal stability," with distractors drawn from the module's own sibling phrases describing what genes, plasmids, and the origin of replication do instead; "How are plasmids involved in antibiotic resistance?" is keyed by the sentence "...genes obtained from plasmids may have clinical implications...or make a microbe resistant to certain antibiotics," with distractors drawn from the module's own sibling phrases describing what plasmid genes otherwise do, where DNA replication initiates, and how prokaryotic DNA is packaged. Of the module's four unkeyed Short Answer questions: "What are some differences in chromosomal structures between prokaryotes and eukaryotes?" is graded as a `sortbins` (bins: Eukaryotic cells / Prokaryotic cells; items are the module's own distinguishing phrases for chromosome shape, number, ploidy, and location, interleaved) because the module's own compare-and-contrast statements fix the category assignment; "How do prokaryotes and eukaryotes manage to fit their lengthy DNA inside of cells? Why is this necessary?" and the chromatin-compaction question stay self-checks (the first assembles several sentences; the second applies the module's packaging-accessibility principle, stated for prokaryotic chromosomes, to a eukaryotic case the module does not state outright) and are additionally placed in the Practice block to fill the "chromosome structure and packaging" objective group; "What are some functions of noncoding DNA?" is not repeated in Practice because it is the body Check Your Understanding bullet "What is the role of noncoding DNA?" in reworded form, graded in the body above. The unkeyed Critical Thinking question (what a bacteriophage's base percentages imply about its genome) is the last Practice item, a self-check whose model answer states only what this module gives — that viral genomes may be single- or double-stranded DNA or RNA — and says that the module does not give the base-composition rules needed to go further; those rules are taught in Section 10.2, a different module, which the model-answer rule does not let this page import. The five source Multiple Choice, two True/False (rendered as two-option multiple choice, True then False), and one Fill in the Blank ("horizontal" gene transfer) items are adapted into Practice using the source's own options, order, and keys; two of the four author-written or converted items with a chosen position use the source's own key order and the remainder is a mix of author-built distractor sets with no fixed pattern, so no single option letter dominates. One filler item — a summary cloze `textin` keyed "observable characteristics," built from the "A phenotype is the observable characteristics of a cell (or organism) at a given point in time…" summary sentence (it replaced an earlier "genes" cloze whose key the group's own objective heading prints, and it follows the source *Serratia* item because its prompt prints that item's key) — fills the "define gene and genotype" objective group to the book's three-item floor; no other filler was needed since the module's own source and Check Your Understanding items already meet or exceed the floor for the other three objective groups. Key terms are compiled from the module's fourteen defined terms and the book's Glossary appendix; all fourteen definitions are taken directly from the appendix, none from a defining sentence. Two claim corrections, each with a visible Source note: the Case in Point's pX02 "capsular polysaccharide" is printed as "capsule" because the anthrax capsule is poly-γ-D-glutamic acid, a polypeptide; and the viral genome-size range's lower bound "3,500 base pairs" is printed as "about 1,700 base pairs" because the module's own chart plots deltavirus at 1,700 base pairs. One source Multiple Choice item is double-keyed as printed ("Which of the following correctly describes the structure of the typical eukaryotic genome?" keys "diploid", but the module's own sentences also make "linear" and "double stranded" true of eukaryotic genomes); the page replaces those two distractors with "circular" and "single stranded", key unchanged.</small>

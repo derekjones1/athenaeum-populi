@@ -32,7 +32,7 @@ Pre-mRNA can be alternatively spliced to create differently mature mRNAs which w
 
 In the 1970s, genes were first observed that exhibited alternative RNA splicing. Alternative RNA splicing is a mechanism that allows different protein products to be produced from one gene when different combinations of exons are combined to form the mRNA (see the diagram below). This alternative splicing can be haphazard, but more often it is controlled and acts as a mechanism of *gene regulation*, with the frequency of different splicing alternatives controlled by the cell as a way to control the production of different protein products in different cells or at different stages of development. Alternative splicing is now understood to be a common mechanism of gene regulation in eukaryotes; according to one estimate, 70 percent of genes in humans are expressed as multiple proteins through alternative splicing. Although there are multiple ways to alternatively splice RNA transcripts, the original 5′-3′ order of the exons is *always conserved*. That is, a transcript with exons 1 2 3 4 5 6 7 might be spliced 1 2 4 5 6 7 or 1 2 3 6 7, but never 1 2 5 4 3 6 7.
 
-{{< mediafigure src="biology/Figure_15_04_02-0563" kind="diagram" alt="A diagram of five modes of alternative splicing, each shown as a starting pre-mRNA with colored exon boxes and gray splice-choice shapes, and arrows to two resulting spliced mRNAs: exon skipping, mutually exclusive exons, alternative 5′ donor site, alternative 3′ acceptor site, and intron retention." longdesc="Five rows, top to bottom, each showing a pre-mRNA on the left with two output arrows to spliced products on the right, labeled beneath: (1) Exon skipping — a blue exon, a red optional exon bounded by gray splice-choice shapes, and a purple exon; the top output skips the red exon (blue, purple only), the bottom output keeps it (blue, red, purple). (2) Mutually exclusive exons — a blue exon, an orange exon and a red exon shown as gray-bounded alternatives, and a purple exon; the top output keeps blue, orange, and purple, the bottom keeps blue, red, and purple. (3) Alternative 5′ donor sites — a blue exon, a gray splice-choice region of variable size, a red exon, and a purple exon; the top output keeps blue and purple only, the bottom keeps blue, red, and purple. (4) Alternative 3′ acceptor sites — the same three-exon layout with the gray region trailing the red exon instead of leading it; the top output again keeps blue and purple only, the bottom keeps all three. (5) Intron retention — a blue exon, a pink intron, and a purple exon; the top output keeps only blue and purple with the intron removed, the bottom keeps blue, the pink intron, and purple." >}}
+{{< mediafigure src="biology/Figure_15_04_02-0563" kind="diagram" alt="A diagram of five modes of alternative splicing, each shown as a starting pre-mRNA with colored exon boxes and gray splice-choice shapes, and arrows to two resulting spliced mRNAs: exon skipping, mutually exclusive exons, alternative 5′ donor site, alternative 3′ acceptor site, and intron retention." longdesc="Five rows, top to bottom, each showing a pre-mRNA on the left with two output arrows to spliced products on the right, labeled beneath: (1) Exon skipping — a blue exon, a red optional exon bounded by gray splice-choice shapes, and a purple exon; the top output skips the red exon (blue, purple only), the bottom output keeps it (blue, red, purple). (2) Mutually exclusive exons — a blue exon, an orange exon and a red exon shown as gray-bounded alternatives, and a purple exon; the top output keeps blue, orange, and purple, the bottom keeps blue, red, and purple. (3) Alternative 5′ donor sites — a blue exon, a red segment, a gray splice-choice region, and a purple exon, with the gray region trailing the red segment; the top output keeps blue and purple only, the bottom keeps blue, red, and purple. (4) Alternative 3′ acceptor sites — the same layout with the gray region leading the red segment instead of trailing it (blue, gray, red, purple); the top output again keeps blue and purple only, the bottom keeps all three. (5) Intron retention — a blue exon, a pink intron, and a purple exon; the top output keeps only blue and purple with the intron removed, the bottom keeps blue, the pink intron, and purple." >}}
 There are five basic modes of alternative splicing.
 {{< /mediafigure >}}
 
@@ -53,7 +53,7 @@ Once the RNA is transported to the cytoplasm, the length of time that the RNA re
 
 Binding of proteins to the RNA can also influence its stability. Proteins called **RNA-binding proteins**, or RBPs, can bind to the regions of the mRNA just upstream or downstream of the protein-coding region. These regions in the RNA that are not translated into protein are called the **untranslated regions**, or UTRs. They are not introns (those have been removed in the nucleus). Rather, these are regions that regulate mRNA localization, stability, and protein translation. The region just before the protein-coding region is called the **5′ UTR**, whereas the region after the coding region is called the **3′ UTR** (see the diagram below). The binding of RBPs to these regions can increase or decrease the stability of an RNA molecule, depending on the specific RBP that binds.
 
-{{< mediafigure src="biology/Figure_16_05_02" kind="diagram" alt="A diagram of a mature mRNA drawn left to right: a cluster of circles labeled 5′ cap, a 5′ UTR segment, three exon segments, a 3′ UTR segment, and a row of A's labeled poly-A tail. Colored ovals labeled RNA-binding proteins sit above the 5′ UTR and above and below the 3′ UTR." longdesc="Left to right: three small pink circles labeled '5′ cap'; an orange box labeled '5′ UTR'; three boxes labeled 'Exon 1,' 'Exon 2,' and 'Exon 3'; an orange box labeled '3′ UTR'; and a row of A's labeled 'poly-A tail.' A green oval sits above the 5′ UTR box. Above the 3′ UTR box, a red oval and a blue oval are pointed to by an arrow from the label 'RNA-binding proteins'; a second green oval sits just below, between the 3′ UTR and the poly-A tail." >}}
+{{< mediafigure src="biology/Figure_16_05_02" kind="diagram" alt="A diagram of a mature mRNA drawn left to right: a cluster of circles labeled 5′ cap, a 5′ UTR segment, three exon segments, a 3′ UTR segment, and a row of A's labeled poly-A tail. Colored ovals labeled RNA-binding proteins sit above the 5′ UTR and above and below the 3′ UTR." longdesc="Left to right: three small pink circles labeled '5′ cap'; an orange box labeled '5′ UTR'; three boxes labeled 'Exon 1,' 'Exon 2,' and 'Exon 3'; an orange box labeled '3′ UTR'; and a row of A's labeled 'poly-A tail.' A green oval sits above the 5′ UTR box. A red oval sits above the 3′ UTR box, a blue oval above the junction of the 3′ UTR and the poly-A tail, and a second green oval just below that junction; the label 'RNA-binding proteins' at the upper right points with three lines to the red, blue, and lower green ovals." >}}
 RNA-binding proteins. The protein-coding region of this processed mRNA is flanked by 5′ and 3′ untranslated regions (UTRs). The presence of RNA-binding proteins at the 5′ or 3′ UTR influences the stability of the RNA molecule.
 {{< /mediafigure >}}
 
@@ -87,7 +87,7 @@ RNA is created and spliced in the nucleus, but needs to be transported to the cy
 {{< multiplechoice
   question="Which of the following are involved in post-transcriptional control?"
   answer="all of the above"
-  hint="Check whether the section treats each option as its own control point once the RNA has been made — each has its own subsection."
+  hint="Reread the section's opening paragraph and the first sentences of each Summary paragraph."
 >}}
 control of RNA splicing
 control of RNA shuttling
@@ -102,7 +102,7 @@ A hypothetical pre-mRNA structure used in the multiple-choice question below.
 {{< multiplechoice
   question="An unprocessed pre-mRNA has the structure shown in the diagram above. Which of the following is not a possible size, in base pairs, of the mature mRNA?"
   answer="205bp"
-  hint="Add up different combinations of exon lengths that keep their original left-to-right order; one of the four options cannot be reached by any such combination."
+  hint="Reread the first paragraph of RNA Splicing, the First Stage of Post-transcriptional Control, then use the lengths in the diagram."
 >}}
 205bp
 180bp
@@ -113,7 +113,7 @@ A hypothetical pre-mRNA structure used in the multiple-choice question below.
 {{< multiplechoice
   question="Alternative splicing has been estimated to occur in more than 95% of multi-exon genes. Which of the following is not an evolutionary advantage of alternative splicing?"
   answer="Alternative splicing creates shorter mRNA transcripts."
-  hint="Three of the four options describe how one gene can do more without changing anything about the genome or how the gene itself is expressed; one option describes a byproduct, not an advantage."
+  hint="Reread the first paragraph of Alternative RNA Splicing."
 >}}
 Alternative splicing increases diversity without increasing genome size.
 Different gene isoforms can be expressed in different tissues.
@@ -123,10 +123,38 @@ Different gene isoforms can be expressed during different stages of development.
 
 ### Describe the importance of RNA stability in gene regulation
 
+{{< textin
+  question="A protein that binds just upstream or downstream of an mRNA's protein-coding region to increase or decrease its stability is called a(n) ________."
+  answer="RNA-binding protein"
+  accept="RBP"
+  hint="Reread the third paragraph of Control of RNA Stability."
+>}}
+
+{{< textin
+  question="A region of an mRNA just before or just after the protein-coding region, which helps regulate mRNA localization, stability, and protein translation, is called a(n) ________."
+  answer="untranslated region"
+  accept="UTR"
+  hint="Reread the third paragraph of Control of RNA Stability."
+>}}
+
+{{< textin
+  question="A series of adenine nucleotides attached to the 3′ end of an mRNA to protect it from degradation is called the ________."
+  answer="poly-A tail"
+  accept="polyA tail"
+  hint="Reread the first paragraph of Control of RNA Stability."
+>}}
+
+{{< textin
+  question="Short RNA molecules only 21 to 24 nucleotides long that bind to RNA molecules and can lead to their degradation are called ________."
+  answer="microRNAs"
+  accept="miRNA"
+  hint="Reread the last subsection before the Summary."
+>}}
+
 {{< multiplechoice
   question="Binding of an RNA binding protein will ________ the stability of the RNA molecule."
   answer="either increase or decrease"
-  hint="The text says the specific RBP that binds determines the direction of the effect — re-read the last sentence of the RNA-binding-protein paragraph."
+  hint="Reread the last sentence of the third paragraph of Control of RNA Stability."
 >}}
 increase
 decrease
@@ -134,7 +162,7 @@ neither increase nor decrease
 either increase or decrease
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe how RBPs can prevent miRNAs from degrading an RNA molecule." hint="Think about what happens if an RBP occupies the same binding site a miRNA (or its RISC complex) would otherwise use." >}}
+{{< selfcheck question="Describe how RBPs can prevent miRNAs from degrading an RNA molecule." hint="Reread the third paragraph of Control of RNA Stability and the last subsection before the Summary." >}}
 RNA binding proteins (RBP) bind to the RNA and can either increase or decrease the stability of the RNA. If they increase the stability of the RNA molecule, the RNA will remain intact in the cell for a longer period of time than normal. Since both RBPs and miRNAs bind to the RNA molecule, RBP can potentially bind first to the RNA and prevent the binding of the miRNA that will degrade it.
 ===CHECKS===
 RNA binding proteins (RBP) bind to the RNA and can either increase or decrease the stability of the RNA
@@ -143,7 +171,7 @@ both RBPs and miRNAs bind to the RNA molecule
 RBP can potentially bind first to the RNA and prevent the binding of the miRNA that will degrade it
 {{< /selfcheck >}}
 
-{{< selfcheck question="How can external stimuli alter post-transcriptional control of gene expression?" hint="Think of a specific chemical modification that can be added to a protein already made by the cell, in response to a signal." >}}
+{{< selfcheck question="How can external stimuli alter post-transcriptional control of gene expression?" hint="Reread the third paragraph of Control of RNA Stability." >}}
 External stimuli can modify RNA-binding proteins (i.e., through phosphorylation of proteins) to alter their activity.
 ===CHECKS===
 external stimuli can modify RNA-binding proteins
@@ -151,34 +179,6 @@ through phosphorylation of proteins
 to alter their activity
 {{< /selfcheck >}}
 
-{{< textin
-  question="A protein that binds just upstream or downstream of an mRNA's protein-coding region to increase or decrease its stability is called a(n) ________."
-  answer="RNA-binding protein"
-  accept="RBP"
-  hint="This section abbreviates the term with three letters, always ending in P for protein."
->}}
-
-{{< textin
-  question="A segment of an RNA molecule that lies before or after the protein-coding region and is not itself translated into protein is called a(n) ________."
-  answer="untranslated region"
-  accept="UTR"
-  hint="The section names two of these regions, one on each side of the protein-coding sequence."
->}}
-
-{{< textin
-  question="A series of adenine nucleotides attached to the 3′ end of an mRNA to protect it from degradation is called the ________."
-  answer="poly-A tail"
-  accept="polyA tail"
-  hint="It is a long chain of a single repeated nucleotide, attached opposite the end that gets the 5′ cap."
->}}
-
-{{< textin
-  question="Short RNA molecules only 21 to 24 nucleotides long that bind to RNA molecules and can lead to their degradation are called ________."
-  answer="microRNAs"
-  accept="microRNA|miRNA"
-  hint="Dicer chops the longer pre-form of this molecule into its mature, functional form."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 16.5: Eukaryotic Post-transcriptional Gene Regulation](https://openstax.org/books/biology-2e/pages/16-5-eukaryotic-post-transcriptional-gene-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_16_05_03-becb and Figure_16_05_02 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (both are colored schematic illustrations, not photographs), and their source alts, which were letter-spaced text-to-speech spellings ("m R N A," "5 prime"), rewritten from the images, with a full element-by-element walkthrough moved into a longdesc for each; Figure_15_04_02-0563 likewise re-kinded from "photo" to "diagram," but its source alt was already an accurate, unspaced description — it was shortened to a one-line summary of the five splicing modes, and a panel-by-panel walkthrough written from the image — carrying colors and counts the source alt lacked — added as a longdesc; Figure_B16_Ass_01's similarly letter-spaced source alt also rewritten from the image, without a longdesc, since its one-line structure is fully carried by the alt; the Evolution Connection and Link to Learning feature boxes rendered as callouts, the latter with descriptive anchor text in place of the source's bare video link; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; the mature-mRNA-length Review Question's embedded diagram, shown in the source problem statement rather than in the body, added as its own mediafigure (with a locally written caption, since the source item carries none) immediately before the multiple choice that depends on it; four key-term recall items added from the glossary (RNA-binding protein, untranslated region, poly-A tail, microRNA); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and the Section Summary's twice-printed "RPBs" corrected to "RBPs" to match this same section's own definition and every other use of the abbreviation — reported as a source defect.</small>
+<small>This section is adapted from [Biology 2e, Section 16.5: Eukaryotic Post-transcriptional Gene Regulation](https://openstax.org/books/biology-2e/pages/16-5-eukaryotic-post-transcriptional-gene-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_16_05_03-becb and Figure_16_05_02 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (both are colored schematic illustrations, not photographs), and their source alts, which were letter-spaced text-to-speech spellings ("m R N A," "5 prime"), rewritten from the images, with a full element-by-element walkthrough moved into a longdesc for each; Figure_15_04_02-0563 likewise re-kinded from "photo" to "diagram," but its source alt was already an accurate, unspaced description — it was shortened to a one-line summary of the five splicing modes, and a panel-by-panel walkthrough written from the image — carrying colors and counts the source alt lacked — added as a longdesc; Figure_B16_Ass_01's similarly letter-spaced source alt also rewritten from the image, without a longdesc, since its one-line structure is fully carried by the alt; the Evolution Connection and Link to Learning feature boxes rendered as callouts, the latter with descriptive anchor text in place of the source's bare video link; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; the mature-mRNA-length Review Question's embedded diagram, shown in the source problem statement rather than in the body, added as its own mediafigure (with a locally written caption, since the source item carries none) immediately before the multiple choice that depends on it; four key-term recall items added from the glossary (RNA-binding protein, untranslated region, poly-A tail, microRNA), the untranslated-region prompt worded from the body's own sentence on what those regions regulate, and all four placed first in their objective group; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and the Section Summary's twice-printed "RPBs" corrected to "RBPs" to match this same section's own definition and every other use of the abbreviation — reported as a source defect.</small>

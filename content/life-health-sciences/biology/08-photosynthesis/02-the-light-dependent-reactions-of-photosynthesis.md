@@ -65,7 +65,7 @@ With dozens of different forms, carotenoids are a much larger group of pigments.
 
 Each type of pigment can be identified by the specific pattern of wavelengths it absorbs from visible light: This is termed the **absorption spectrum**. The graph below shows the absorption spectra for chlorophyll *a*, chlorophyll *b*, and a type of carotenoid pigment called β-carotene (which absorbs blue and green light). Notice how each pigment has a distinct set of peaks and troughs, revealing a highly specific pattern of absorption. Chlorophyll *a* absorbs wavelengths from either end of the visible spectrum (blue and red), but not green. Because green is reflected or transmitted, chlorophyll appears green. Carotenoids absorb in the short-wavelength blue region, and reflect the longer yellow, red, and orange wavelengths.
 
-{{< mediafigure src="biology/Figure_08_02_05abcd-d386" kind="diagram" alt="Chemical structures of chlorophyll a, chlorophyll b, and β-carotene, alongside a chart of their absorbance spectra across the visible spectrum." longdesc="Panel (a) shows the molecular structure of chlorophyll a: a long hydrocarbon tail attached to a large ring of carbon and nitrogen atoms with a magnesium ion at its center. Panel (b) shows chlorophyll b's identical ring and tail, with the one part that differs from chlorophyll a — a CHO group in place of chlorophyll a's CH3 group — outlined in red. Panel (c) shows β-carotene as a long, unringed hydrocarbon chain capped by a six-membered carbon ring at each end. Panel (d) is a line graph of light absorbance (vertical axis) against wavelength from 400 to 700 nanometers (horizontal axis), with the visible spectrum's colors shaded behind the curves: chlorophyll b's curve peaks sharply in the blue region near 450 nm; chlorophyll a's curve peaks in the blue and again, more sharply, in the red near 670 nm; and the carotenoid curve peaks broadly in the blue-green region, absorbing almost nothing past about 500 nm." >}}
+{{< mediafigure src="biology/Figure_08_02_05abcd-d386" kind="diagram" alt="Chemical structures of chlorophyll a, chlorophyll b, and β-carotene, alongside a chart of their absorbance spectra across the visible spectrum." longdesc="Panel (a) shows the molecular structure of chlorophyll a: a long hydrocarbon tail attached to a large ring of carbon and nitrogen atoms with a magnesium ion at its center, and a CH₃ group on the ring's left edge outlined in a red box. Panel (b) shows chlorophyll b's identical ring and tail, with the one part that differs from chlorophyll a — a CHO group in place of chlorophyll a's CH₃ group — outlined in a red box at the same place. Panel (c) shows β-carotene as a long, unringed hydrocarbon chain capped by a six-membered carbon ring at each end. Panel (d) is a line graph of light absorbance (vertical axis) against wavelength from 400 to 700 nanometers (horizontal axis), with the visible spectrum's colors shaded behind the curves: chlorophyll b's dashed curve peaks sharply in the blue region near 450 nm and again, lower, in the orange-red near 645 nm; chlorophyll a's solid curve peaks in the blue-violet near 430 nm and again in the red near 665 nm; and the dotted carotenoid curve peaks broadly in the blue-green region, absorbing almost nothing past about 500 nm." >}}
 (a) Chlorophyll *a*, (b) chlorophyll *b*, and (c) β-carotene are hydrophobic organic pigments found in the thylakoid membrane. Chlorophyll *a* and *b*, which are identical except for the part indicated in the red box, are responsible for the green color of leaves. β-carotene is responsible for the orange color in carrots. Each pigment has (d) a unique absorbance spectrum. Credit: Rao, A., Ryan, K., Tag, A., Fletcher, S. and Hawkins, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -81,7 +81,7 @@ When studying a photosynthetic organism, scientists can determine the types of p
 
 The overall function of light-dependent reactions is to convert solar energy into chemical energy in the form of NADPH and ATP. This chemical energy supports the light-independent reactions and fuels the assembly of sugar molecules. The light-dependent reactions are depicted below. Protein complexes and pigment molecules work together to produce NADPH and ATP. The numbering of the photosystems is derived from the order in which they were discovered, not in the order of the transfer of electrons.
 
-{{< mediafigure src="biology/Figure_08_02_07ab-3d69" kind="diagram" alt="A photosystem is shown embedded in the thylakoid membrane. The reaction center is surrounded by the light-harvesting complexes, which contain pigment molecules. When a photon interacts with the pigment molecules, they transfer light energy toward a pair of chlorophyll a molecules in the reaction center. As a result, an electron is excited and transferred to the primary electron acceptor. Two released electrons are used to replace excited electrons." longdesc="The membrane is drawn as a double row of phospholipids with a pigment-filled photosystem spanning it, arranged as two symmetric wings around a teal reaction-center core. A photon strikes the light-harvesting complex at upper left; a chain of white arrows carries the energy from one green pigment molecule to the next, down through the left wing to a pink special pair of chlorophyll a molecules at the base of the reaction center. Two red arrows there point upward to two electrons leaving the pair for the primary electron acceptor above. \"Stroma\" labels the space above the membrane, and \"Thylakoid Space (Interior of Thylakoid)\" labels the space below it." >}}
+{{< mediafigure src="biology/Figure_08_02_07ab-3d69" kind="diagram" alt="A photosystem is shown embedded in the thylakoid membrane. The reaction center is surrounded by the light-harvesting complexes, which contain pigment molecules. When a photon interacts with the pigment molecules, they transfer light energy toward a pair of chlorophyll a molecules in the reaction center. As a result, excited electrons, shown as two e⁻, pass from the pair to the primary electron acceptor." longdesc="The membrane is drawn as a double row of phospholipids with a pigment-filled photosystem spanning it, arranged as two symmetric wings around a teal reaction-center core. A bracket labeled Photosystem spans the labels Light-Harvesting Complexes (with leader lines to both wings) and Reaction-Center Complex (the core). A photon strikes the light-harvesting complex at upper left; a chain of white arrows, labeled Transfer of Energy, carries the energy from one green pigment molecule (labeled Pigment Molecules) to the next, down through the left wing to a pink special pair of chlorophyll a molecules at the base of the reaction center. Two electrons (e⁻) sit just above the pair, and two red arrows point up from them toward the primary electron acceptor, a dark teal square near the top of the core. \"Stroma\" labels the space above the membrane, and \"Thylakoid Space (Interior of Thylakoid)\" labels the space below it." >}}
 A photosystem consists of 1) a light-harvesting complex and 2) a reaction center. Pigments in the light-harvesting complex pass light energy to two special chlorophyll *a* molecules in the reaction center. The light excites an electron from the chlorophyll *a* pair, which passes to the primary electron acceptor. The excited electron must then be replaced. Credit: Rao, A., Ryan, K., Fletcher, S. and Hawkins, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -89,14 +89,14 @@ The actual step that converts light energy into chemical energy takes place in a
 
 Both photosystems have the same basic structure; a number of **antenna pigments** to which the chlorophyll molecules are bound surround the **reaction center** where the photochemistry takes place. Each photosystem is serviced by the **light-harvesting complex**, which passes energy from sunlight to the reaction center; it consists of multiple antenna pigments that contain a mixture of 300 to 400 chlorophyll *a* and *b* molecules as well as other pigments like carotenoids. The absorption of a single **photon**, or distinct quantity or "packet" of light, by any of the chlorophylls pushes that molecule into an excited state. In short, the light energy has now been captured by biological molecules but is not stored in any useful form yet. The energy is transferred from chlorophyll to chlorophyll until eventually (after about a millionth of a second), it is delivered to the reaction center. Up to this point, only energy has been transferred between molecules, not electrons.
 
-{{< mediafigure src="biology/Figure_08_02_08-07c9" kind="diagram" alt="A diagram of the thylakoid membrane showing, left to right, photosystem II, the cytochrome complex, photosystem I, and NADP⁺ reductase, with ATP synthase in a separate stretch of membrane. Arrows trace an electron's path from photosystem II through plastoquinone (Pq), the cytochrome complex, and plastocyanin (Pc) to photosystem I, and from there through ferredoxin (Fd) to NADP⁺ reductase, which combines the electron with NADP⁺ and a proton to form NADPH." longdesc="Dashed red arrows show protons entering the thylakoid lumen — some released directly where water splits at photosystem II into oxygen and protons, others pumped across by the cytochrome complex — and then flowing out through ATP synthase into the stroma, where the released energy joins ADP and inorganic phosphate into ATP that feeds the Calvin cycle. Labels mark the thylakoid space as having a high proton concentration and the stroma a low one." >}}
+{{< mediafigure src="biology/Figure_08_02_08-07c9" kind="diagram" alt="A diagram of the thylakoid membrane showing, left to right, photosystem II, the cytochrome complex, photosystem I, and NADP⁺ reductase, with ATP synthase in a separate stretch of membrane. Arrows trace an electron's path from photosystem II through plastoquinone (Pq), the cytochrome complex, and plastocyanin (Pc) to photosystem I, and from there through ferredoxin (Fd) to NADP⁺ reductase, which combines the electron with NADP⁺ and a proton to form NADPH." longdesc="Yellow light arrows strike photosystem II at left and photosystem I. Below photosystem II, in the thylakoid space, a black arrow turns H₂O into ½O₂ + 2H⁺, and two electrons (e⁻) pass from the water up into photosystem II. Orange arrows carry the electrons from photosystem II to Pq, from Pq past the cytochrome complex to Pc, from Pc into photosystem I, from photosystem I to Fd, and from Fd to NADP⁺ reductase, where a black arrow brings in NADP⁺ + H⁺ from the stroma and an arrow leads out to NADPH. Solid red arrows carry 4H⁺ from the stroma into Pq and from Pq down into the thylakoid space, arriving as 4H⁺ below the cytochrome complex. Dashed red arrows run from the 2H⁺ released by water and from that 4H⁺, together, across the thylakoid space and down through ATP synthase into the stroma, where free H⁺ collect; beside the synthase a black arrow joins ADP and inorganic phosphate into ATP. White arrows carry the NADPH and the ATP to a blue circular arrow labeled Calvin Cycle at lower right. Labels mark the thylakoid space as having a high H⁺ concentration and the stroma a low one, and a leader line marks the Thylakoid Membrane." >}}
 In the photosystem II (PSII) reaction center, energy from sunlight is used to extract electrons from water. The electrons travel through the chloroplast electron transport chain to photosystem I (PSI), which reduces NADP⁺ to NADPH. The electron transport chain moves protons across the thylakoid membrane into the lumen. At the same time, splitting of water adds protons to the lumen, and reduction of NADPH removes protons from the stroma. The net result is a low pH in the thylakoid lumen, and a high pH in the stroma. ATP synthase uses this electrochemical gradient to make ATP. Credit: Rao, A., Ryan, K., Fletcher, S. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="What is the initial source of electrons for the chloroplast electron transport chain?"
   answer="Water"
-  hint="Photosystem II must replace the electron it hands off to the primary electron acceptor — trace what the diagram shows entering at photosystem II."
+  hint="Reread the caption of the light-reactions diagram just above this question."
 >}}
 Water
 Oxygen
@@ -154,16 +154,16 @@ The pigments of the first part of photosynthesis, the light-dependent reactions,
 {{< textin
   question="A photosynthetic pigment (yellow-orange-red) that functions to dispose of excess energy is called a(n) ________."
   answer="carotenoid"
-  hint="It also gives carrots and tomatoes their color, and is unrelated to chlorophyll's green."
+  hint="Reread the third paragraph under Understanding Pigments."
 >}}
 
 {{< textin
   question="A distinct quantity, or packet, of light energy is called a ________."
   answer="photon"
-  hint="Chlorophyll absorbs one of these at a time, exciting an electron to a higher energy state."
+  hint="Reread the paragraph on the light-harvesting complex under How Light-Dependent Reactions Work."
 >}}
 
-{{< selfcheck question="Why might a photosynthetic organism benefit from having more than one type of pigment?" hint="Think about how many wavelengths of light a single pigment can absorb on its own." >}}
+{{< selfcheck question="Why might a photosynthetic organism benefit from having more than one type of pigment?" hint="Reread the paragraph just after the pigment structures-and-spectra figure." >}}
 A single pigment can only absorb a narrow range of wavelengths, so using a mixture of different pigments — such as chlorophyll a, chlorophyll b, and various carotenoids — lets the organism absorb energy from a wider range of wavelengths of light.
 ===CHECKS===
 a single pigment can only absorb a narrow range of wavelengths
@@ -173,21 +173,22 @@ using a mixture of different pigments lets the organism absorb energy from a wid
 ### Describe short and long wavelengths of light
 
 {{< textin
-  question="The distance between two consecutive crests (or two consecutive troughs) of a wave is its ________."
-  answer="wavelength"
-  hint="Scientists use this measurement to determine how much energy a wave of light carries."
+  question="The range of all possible frequencies of radiation, from gamma rays to radio waves, is called the ________."
+  answer="electromagnetic spectrum"
+  hint="Reread the second paragraph under What Is Light Energy?"
 >}}
 
 {{< textin
-  question="The range of all possible frequencies of radiation, from gamma rays to radio waves, is called the ________."
-  answer="electromagnetic spectrum"
-  hint="Visible light — the light plants and our eyes can detect — is only a narrow slice of this much larger range."
+  question="The range of wavelengths of electromagnetic radiation absorbed by a given substance is called its ________."
+  answer="absorption spectrum"
+  accept="absorption spectra|absorbance spectrum"
+  hint="Reread the fourth paragraph under Understanding Pigments."
 >}}
 
 {{< multiplechoice
   question="Three of the same species of plant are each grown under a different colored light for the same amount of time. Plant A is grown under blue light, Plant B is grown under green light, and Plant C is grown under orange light. Assuming the plants use only chlorophyll a and chlorophyll b for photosynthesis, what would be the predicted order of the plants from most growth to least growth?"
   answer="A, C, B"
-  hint="Chlorophyll a and b absorb strongly in the blue and red regions of the spectrum, but reflect green light."
+  hint="Reread the fourth paragraph under Understanding Pigments and the spectra panel of the figure after it."
 >}}
 A, C, B
 A, B, C
@@ -198,7 +199,7 @@ B, A, C
 {{< multiplechoice
   question="Plants containing only chlorophyll b are exposed to radiation with the following wavelengths: 10 nm (x-rays), 450 nm (blue light), 670 nm (red light), and 800 nm (infrared light). Which plants harness the most energy for photosynthesis?"
   answer="Blue light irradiated plants"
-  hint="Chlorophyll b's strongest absorption peak sits in the blue region of the visible spectrum."
+  hint="Reread the fourth paragraph under Understanding Pigments and the spectra panel of the figure after it."
 >}}
 X-ray irradiated plants
 Blue light irradiated plants
@@ -211,7 +212,7 @@ Infrared irradiated plants
 {{< multiplechoice
   question="Which of the following structures is not a component of a photosystem?"
   answer="ATP synthase"
-  hint="A photosystem is built from pigments and electron-transfer proteins; this component belongs to a separate stage of ATP production."
+  hint="Reread the caption of the photosystem-structure diagram and the paragraphs on the photosystems' shared structure."
 >}}
 ATP synthase
 antenna molecule
@@ -222,7 +223,7 @@ primary electron acceptor
 {{< multiplechoice
   question="How many photons does it take to fully reduce one molecule of NADP⁺ to NADPH?"
   answer="4"
-  hint="Count the electrons NADP⁺ must take up, then count the photosystems each of those electrons passes through, one photon per photosystem."
+  hint="Reread the P680 and P700 paragraphs under How Light-Dependent Reactions Work."
 >}}
 1
 2
@@ -233,7 +234,7 @@ primary electron acceptor
 {{< multiplechoice
   question="Which complex is not involved in the establishment of conditions for ATP synthesis?"
   answer="photosystem I"
-  hint="The section's own summary credits one specific photosystem with creating the proton gradient that powers ATP synthesis — the other captures energy for a different purpose."
+  hint="Reread the last paragraph before Generating an Energy Carrier: ATP."
 >}}
 photosystem I
 ATP synthase
@@ -244,7 +245,7 @@ cytochrome complex
 {{< multiplechoice
   question="From which component of the light-dependent reactions does NADPH form most directly?"
   answer="photosystem I"
-  hint="Its reaction center, P700, sends its high-energy electron directly to NADP⁺."
+  hint="Reread the last paragraph before Generating an Energy Carrier: ATP."
 >}}
 photosystem II
 photosystem I
@@ -252,7 +253,7 @@ cytochrome complex
 ATP synthase
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the pathway of electron transfer from photosystem II to photosystem I in light-dependent reactions." hint="Trace the electron from the reaction center's chlorophyll a pair through the transport proteins between the two photosystems." >}}
+{{< selfcheck question="Describe the pathway of electron transfer from photosystem II to photosystem I in light-dependent reactions." hint="Reread the caption of the photosystem-structure diagram and the P680 paragraph." >}}
 A photon of light hits an antenna molecule in photosystem II, and the energy it releases travels through other antenna molecules to the reaction center. The energy causes an electron to leave a molecule of chlorophyll a and move to a primary electron acceptor protein. The electron then travels through the electron transport chain and is accepted by a pigment molecule in photosystem I.
 ===CHECKS===
 a photon of light hits an antenna molecule in photosystem II
@@ -261,7 +262,7 @@ the electron travels through the electron transport chain
 the electron is accepted by a pigment molecule in photosystem I
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are the roles of ATP and NADPH in photosynthesis?" hint="Both molecules carry energy forward into the next stage of photosynthesis — think about what makes NADPH's role distinct from ATP's." >}}
+{{< selfcheck question="What are the roles of ATP and NADPH in photosynthesis?" hint="Reread the first paragraph under How Light-Dependent Reactions Work and the Summary's last sentence." >}}
 Both of these molecules carry energy. NADPH additionally has reducing power, which is used to fuel the process of building carbohydrate molecules in the light-independent reactions.
 ===CHECKS===
 both of these molecules carry energy
@@ -269,7 +270,7 @@ NADPH additionally has reducing power
 used to fuel the process of building carbohydrate molecules in the light-independent reactions
 {{< /selfcheck >}}
 
-{{< selfcheck question="How and why would the end products of photosynthesis be changed if a plant had a mutation that eliminated its photosystem II complex?" hint="Consider what photosystem II normally contributes: where the electrons come from, and how the proton gradient gets built." >}}
+{{< selfcheck question="How and why would the end products of photosynthesis be changed if a plant had a mutation that eliminated its photosystem II complex?" hint="Reread the P680 paragraph and the Generating an Energy Carrier: ATP subsection." >}}
 Knocking out photosystem II would eliminate the production of oxygen and ATP during photosynthesis. Photosystem II splits water into oxygen atoms, protons that remain in the thylakoid lumen, and electrons that move from the reaction center into the electron transport chain. The transfer of an electron through the electron transport chain provides the energy to pump more protons into the thylakoid lumen, maintaining a higher concentration of protons there. Moving those protons back across the thylakoid membrane to the stroma provides the energy for ATP synthase to produce ATP. Without this proton gradient, ATP will not be synthesized.
 ===CHECKS===
 knocking out photosystem II would eliminate the production of oxygen and ATP
@@ -280,4 +281,4 @@ without this proton gradient, ATP will not be synthesized
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 8.2: The Light-Dependent Reactions of Photosynthesis](https://openstax.org/books/biology-2e/pages/8-2-the-light-dependent-reactions-of-photosynthesis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with four of the nine re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the electromagnetic-spectrum illustration, the colors-of-visible-light illustration, the chlorophyll/carotenoid structures-and-spectra figure, and the light-reactions diagram are all illustrations, not photographs; only the sunset and forest figures are true photos); a longer extended description added for the chlorophyll/carotenoid figure, the photosystem-structure diagram, and the light-reactions diagram, whose full reading is not carried by their captions; the chlorophyll/carotenoid figure's alt shortened from over 600 characters to what the image shows, with its structural walk-through moved into the longdesc; the light-reactions figure's alt rewritten from the source's garbled text (spelled-out superscripts and letters, e.g. "N A D P superscript plus sign baseline") into plain prose naming the same drawn components; inline references to figures changed from the source's citation markers to descriptive phrases ("below," "above," "as illustrated above") since figures are not numbered here; the one Link to Learning note rendered as a callout with its bold name; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice, since the source keys it with a lettered option; ion and molecule notation set in Unicode (H₂O, O₂, NADP⁺) rather than the source's superscript-tag form; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; one Review Question ("Which complex is not involved in the establishment of conditions for ATP synthesis?") corrected from the source key's "photosystem II" to "photosystem I," since the section's own text states that splitting water at photosystem II and the cytochrome complex both add protons to the thylakoid lumen, and explicitly credits photosystem II — not photosystem I — with "captur[ing] the energy to create proton gradients to make ATP"; and four key-term recall items (carotenoid, photon, wavelength, electromagnetic spectrum) added from the glossary, plus one self-check written from the section's own paragraph on mixtures of pigments (no source Critical Thinking Question maps to the first objective), to round out every objective group with an auto-graded item; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. Two items are corrected with visible Source notes: water splitting releases protons rather than hydrogen atoms (erratum 392), and the photons-per-NADPH review question is keyed 4 rather than the source's 2, since the reduction takes two electrons and each needs a photon at each photosystem (erratum 393, disclosed in the source-key ledger).</small>
+<small>This section is adapted from [Biology 2e, Section 8.2: The Light-Dependent Reactions of Photosynthesis](https://openstax.org/books/biology-2e/pages/8-2-the-light-dependent-reactions-of-photosynthesis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with four of the nine re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the electromagnetic-spectrum illustration, the colors-of-visible-light illustration, the chlorophyll/carotenoid structures-and-spectra figure, and the light-reactions diagram are all illustrations, not photographs; only the sunset and forest figures are true photos); a longer extended description added for the chlorophyll/carotenoid figure, the photosystem-structure diagram, and the light-reactions diagram, whose full reading is not carried by their captions; the chlorophyll/carotenoid figure's alt shortened from over 600 characters to what the image shows, with its structural walk-through moved into the longdesc; the light-reactions figure's alt rewritten from the source's garbled text (spelled-out superscripts and letters, e.g. "N A D P superscript plus sign baseline") into plain prose naming the same drawn components; the photosystem-structure figure's source-alt sentence "Two released electrons are used to replace excited electrons" dropped, since the drawing shows no replacement electrons (its two electrons are the excited ones passing to the primary electron acceptor); inline references to figures changed from the source's citation markers to descriptive phrases ("below," "above," "as illustrated above") since figures are not numbered here; the one Link to Learning note rendered as a callout with its bold name; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice, since the source keys it with a lettered option; ion and molecule notation set in Unicode (H₂O, O₂, NADP⁺) rather than the source's superscript-tag form; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; one Review Question ("Which complex is not involved in the establishment of conditions for ATP synthesis?") corrected from the source key's "photosystem II" to "photosystem I," since the section's own text states that splitting water at photosystem II and the cytochrome complex both add protons to the thylakoid lumen, and explicitly credits photosystem II — not photosystem I — with "captur[ing] the energy to create proton gradients to make ATP"; and four key-term recall items (carotenoid, photon, electromagnetic spectrum, absorption spectrum) added from the glossary, plus one self-check written from the section's own paragraph on mixtures of pigments (no source Critical Thinking Question maps to the first objective), to round out every objective group with an auto-graded item; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. Two items are corrected with visible Source notes: water splitting releases protons rather than hydrogen atoms (erratum 392), and the photons-per-NADPH review question is keyed 4 rather than the source's 2, since the reduction takes two electrons and each needs a photon at each photosystem (erratum 393, disclosed in the source-key ledger).</small>

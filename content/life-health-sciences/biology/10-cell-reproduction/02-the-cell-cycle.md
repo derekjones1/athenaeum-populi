@@ -19,7 +19,7 @@ weight: 2
 
 The **cell cycle** is an ordered series of events involving cell growth and cell division that produces two new daughter cells. Cells on the path to cell division proceed through a series of precisely timed and carefully regulated stages of growth, DNA replication, and nuclear and cytoplasmic division that ultimately produces two identical (clone) cells. The cell cycle has two major phases: interphase and the mitotic phase (below). During **interphase**, the cell grows and DNA is replicated. During the **mitotic phase**, the replicated DNA and cytoplasmic contents are separated, and the cell cytoplasm is typically partitioned by a third process of the cell cycle called **cytokinesis**. We should note, however, that interphase and mitosis (karyokinesis) may take place without cytokinesis, in which case cells with multiple nuclei (multinucleate cells) are produced.
 
-{{< mediafigure src="biology/Figure_10_02_01-418e" kind="diagram" alt="A circular cell-cycle diagram: a wide gray outer ring, labeled 'Interphase' at three points, encloses three inner wedges — a light-purple 'Cell growth' wedge labeled G₁, a teal 'DNA synthesis' wedge labeled S, and a second light-purple 'Cell growth' wedge labeled G₂ — beside a narrow orange wedge labeled 'Mitosis' and 'Cytokinesis' under the bracket 'Mitotic phase,' with an arrow pointing out to 'Formation of 2 daughter cells.'" longdesc="Red arrows drawn along the boundary between the outer ring and the inner wedges trace the cycle clockwise: from the G₁ wedge into the S wedge, into the G₂ wedge, into the small orange mitotic-phase wedge, and back into G₁, showing the cycle as continuous and repeating." eager="true" >}}
+{{< mediafigure src="biology/Figure_10_02_01-418e" kind="diagram" alt="A circular cell-cycle diagram: a wide gray outer ring, labeled 'Interphase' at three points, encloses three inner wedges — a light-purple 'Cell growth' wedge labeled G₁, a teal 'DNA synthesis' wedge labeled S, and a second light-purple 'Cell growth' wedge labeled G₂ — beside two narrow orange wedges labeled 'Mitosis' and 'Cytokinesis' under the bracket 'Mitotic phase,' with an arrow pointing out to 'Formation of 2 daughter cells.'" longdesc="Red arrows drawn inside the gray outer ring, beside the G₁, S, and G₂ labels, trace the cycle clockwise: from the G₁ wedge into the S wedge, into the G₂ wedge, into the small orange mitotic-phase wedge, and back into G₁, showing the cycle as continuous and repeating." eager="true" >}}
 The cell cycle in multicellular organisms consists of interphase and the mitotic phase. During interphase, the cell grows and the nuclear DNA is duplicated. Interphase is followed by the mitotic phase. During the mitotic phase, the duplicated chromosomes are segregated and distributed into daughter nuclei. Following mitosis, the cytoplasm is usually divided as well by cytokinesis, resulting in two genetically identical daughter cells.
 {{< /mediafigure >}}
 
@@ -51,7 +51,7 @@ The mitotic phase is a multistep process during which the duplicated chromosomes
 
 Karyokinesis, also known as **mitosis**, is divided into a series of phases—prophase, prometaphase, metaphase, anaphase, and telophase—that result in the division of the cell nucleus (below).
 
-{{< mediafigure src="biology/Figure_10_02_02-ae45" kind="diagram" alt="A six-panel diagram of the mitotic phase — G₂ of Interphase, Prophase, Prometaphase, Metaphase, Anaphase, and Telophase and Cytokinesis — each panel an orange cell with two yellow centrosomes; the spindle fibers radiate from Prophase through Anaphase, and the last panel is two pinched lobes, tracing the chromosomes from an intact nucleus through condensation, alignment, separation, and the re-forming of two nuclei in a cell beginning to pinch in two." longdesc="G₂ of Interphase labels the Plasma Membrane, Nuclear Envelope, Nucleolus, Chromosomes (Replicated, Decondensed), and Centrosomes (with Centriole Pairs), all inside one intact cell. Prophase labels the Early Mitotic Spindle, Centromere, Two Sister Chromatids of One Chromosome, and Fragments of Nuclear Envelope as the envelope breaks apart. Prometaphase labels Overlapping Microtubules, Kinetochore, and Kinetochore Microtubules attaching to the condensed chromosomes. Metaphase labels the Spindle, the Metaphase Plate where the chromosomes now line up, and the Centrosome at One Spindle Pole. Anaphase labels the Daughter Chromosomes moving apart toward opposite poles as the cell elongates. Telophase and Cytokinesis labels the Cleavage Furrow pinching the cell in two, with a Nucleolus Forming and Nuclear Envelope Forming inside each new nucleus." >}}
+{{< mediafigure src="biology/Figure_10_02_02-ae45" kind="diagram" alt="A six-panel diagram of the mitotic phase — G₂ of Interphase, Prophase, Prometaphase, Metaphase, Anaphase, and Telophase and Cytokinesis — each panel an orange cell with two yellow centrosomes; the spindle fibers radiate from Prophase through Anaphase, and the last panel is two pinched lobes, tracing the chromosomes from an intact nucleus through condensation, alignment, separation, and the re-forming of two nuclei in a cell beginning to pinch in two." longdesc="Six panels in two rows of three, read left to right, with a white arrow leading from each panel to the next within a row. G₂ of Interphase labels the Plasma Membrane, Nuclear Envelope, Nucleolus, Chromosomes (Replicated, Decondensed), and Centrosomes (with Centriole Pairs), all inside one intact cell. Prophase labels the Early Mitotic Spindle, Centromere, Two Sister Chromatids of One Chromosome, and Fragments of Nuclear Envelope as the envelope breaks apart. Prometaphase labels Overlapping Microtubules, Kinetochore, and Kinetochore Microtubules attaching to the condensed chromosomes. Metaphase labels the Spindle, the Metaphase Plate where the chromosomes now line up, and the Centrosome at One Spindle Pole. Anaphase labels the Daughter Chromosomes moving apart toward opposite poles. Telophase and Cytokinesis labels the Cleavage Furrow pinching the cell in two, with a Nucleolus Forming and Nuclear Envelope Forming inside each new nucleus." >}}
 **G2 of Interphase** – The last stage of interphase is the second gap period, G₂. During this stage, cells grow, replenish energy and synthesize needed macromolecules, such as proteins and lipids.
 
 **Mitosis** - When G₂ is complete, the cell will enter mitosis. Although there are 5 phases in mitosis, with the exception of the metaphase to anaphase transition, these phases are not discrete and happen as a continuous process. Prophase is the first stage in mitosis. The nuclear envelope begins to break down and chromosomes condense and are now visible. Spindle fibers start to appear and centrosomes begin to move towards opposite poles.
@@ -70,7 +70,7 @@ Credit: Rao, A., Hawkins, A.and Fletcher, S. Department of Biology, Texas A&M Un
 {{< multiplechoice
   question="Which of the following is the correct order of events in mitosis?"
   answer="The kinetochore becomes attached to the mitotic spindle. Sister chromatids line up at the metaphase plate. Cohesin proteins break down and the sister chromatids separate. The nucleus reforms and the cell divides."
-  hint="Work out what has to happen physically first: a chromatid cannot line up at the plate until the spindle is already attached to it, and it cannot separate from its sister chromatid until the protein holding the pair together breaks down."
+  hint="Use the stage-by-stage walkthrough under the mitosis figure above."
 >}}
 Sister chromatids line up at the metaphase plate. The kinetochore becomes attached to the mitotic spindle. The nucleus reforms and the cell divides. Cohesin proteins break down and the sister chromatids separate.
 The kinetochore becomes attached to the mitotic spindle. Cohesin proteins break down and the sister chromatids separate. Sister chromatids line up at the metaphase plate. The nucleus reforms and the cell divides.
@@ -94,7 +94,7 @@ During prometaphase, mitotic spindle microtubules from opposite poles attach to 
 
 ### Cytokinesis
 
-{{< mediafigure src="biology/cytokinesis" kind="diagram" alt="A 3-D rendered orange sphere (a mitotic cell) with two yellow centrosomes at its top and bottom poles, radiating orange spindle fibers between them. A translucent horizontal plane midway between the poles marks the imaginary metaphase plate, where two pairs of small blue kinetochore-bearing sister chromatids sit with their attached kinetochore microtubules; thinner overlapping microtubules run alongside them." longdesc="Labels point to: the Centrosome at the top pole; the Sister Chromatids sitting on the translucent metaphase-plate plane; the Kinetochores on each chromatid; the Kinetochore Microtubules connecting them to the poles; the Overlapping Microtubules that cross between the two chromatid pairs; and the Metaphase Plate (Imaginary) plane itself." >}}
+{{< mediafigure src="biology/cytokinesis" kind="diagram" alt="A 3-D rendered orange sphere (a mitotic cell) with two yellow centrosomes at its top and bottom poles, radiating orange spindle fibers between them. A translucent horizontal plane midway between the poles marks the imaginary metaphase plate, where four blue chromosomes, each a pair of sister chromatids joined at kinetochores, sit two left and two right of the centre (two fainter ones behind them) with their attached kinetochore microtubules; thinner overlapping microtubules run alongside them." longdesc="Labels point to: the Centrosome at the top pole; the Sister Chromatids of the two left-hand chromosomes sitting on the translucent metaphase-plate plane; the Kinetochores, boxed on one right-hand chromosome; the Kinetochore Microtubules connecting them to the poles; the Overlapping Microtubules, fibers at the left edge of the spindle that run from pole to pole without attaching to a chromosome; and the Metaphase Plate (Imaginary) plane itself." >}}
 Mitotic Cell at Metaphase. The microtubule spindle has completed the alignment of chromosomes at the metaphase plate in preparation for the separation of sister chromatids during anaphase. Credit: Fletcher, S., Ryan, K. and Rao, A., Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -104,7 +104,7 @@ In animal cells, cytokinesis typically starts during late anaphase. A contractil
 
 In plant cells, a new cell wall must form between the daughter cells. During interphase, the Golgi apparatus accumulates enzymes, structural proteins, and glucose molecules prior to breaking into vesicles and dispersing throughout the dividing cell. During telophase, these Golgi vesicles are transported on microtubules to form a *phragmoplast* (a vesicular structure) at the metaphase plate. There, the vesicles fuse and coalesce from the center toward the cell walls; this structure is called a **cell plate**. As more vesicles fuse, the cell plate enlarges until it merges with the cell walls at the periphery of the cell. Enzymes use the glucose that has accumulated between the membrane layers to build a new cell wall. The Golgi membranes become parts of the plasma membrane on either side of the new cell wall (below).
 
-{{< mediafigure src="biology/Figure_10_02_04-2134" kind="diagram" alt="Two side-by-side illustrated panels. (a) Cleavage of an animal cell: a contractile ring pinches a round cell's equator inward until it divides into two round daughter cells, each with a central nucleus. (b) Cell plate formation in a plant cell: a walled plant cell with two nuclei is shown at three stages as vesicles accumulate at the center and fuse into a growing cell plate that reaches the existing side walls, producing two separately walled daughter cells." longdesc="Panel (a), 'Cleavage of an Animal Cell,' labels the Cleavage Furrow (red arrows pointing inward at the equator), the Contractile Ring, an inset of the Actin Filament and Myosin proteins that make it up, and the two resulting Daughter Cells. Panel (b), 'Cell Plate Formation in a Plant Cell,' labels the Vesicles Forming Cell Plate at the first stage, the Cell Plate itself growing at the second stage, and at the third stage the New Cell Wall meeting the Wall of Parent Cell to produce the two Daughter Cells." >}}
+{{< mediafigure src="biology/Figure_10_02_04-2134" kind="diagram" alt="Two side-by-side illustrated panels. (a) Cleavage of an animal cell: a contractile ring pinches a round cell's equator inward until it divides into two round daughter cells, each with a central nucleus. (b) Cell plate formation in a plant cell: a walled plant cell with two nuclei is shown at three stages as vesicles accumulate at the center and fuse into a growing cell plate that reaches the existing side walls, producing two separately walled daughter cells." longdesc="Panel (a), 'Cleavage of an Animal Cell,' labels a cell already holding two nuclei with the Cleavage Furrow (red arrows pointing inward at the equator), the Contractile Ring, an inset of the Actin Filament and Myosin proteins that make it up, and, after a white arrow, the two resulting Daughter Cells. Panel (b), 'Cell Plate Formation in a Plant Cell,' labels the Vesicles Forming Cell Plate, a dotted line down the middle, at the first stage; the Cell Plate, now a continuous line, and the Wall of Parent Cell at the second stage; and at the third stage the New Cell Wall, which reaches the parent wall at both ends and separates the two Daughter Cells." >}}
 Animal cell cleavage - Contraction of actin filaments by myosin pull the "equator" of the cell causing an invagination of the cell (a fissure called a cleavage furrow). The cleavage furrow gets continuously deeper until it eventually divides the cell into two new, independent daughter cells.
 
 Plant cell wall formation - A mixture of enzymes, proteins, and glucose molecules are transported via vesicles to the center of the cell. These vesicles continuously build upon each other until a completely new cell wall has emerged and two new cells are formed, independent of one another.
@@ -132,7 +132,7 @@ Not all cells adhere to the classic cell-cycle pattern in which a newly formed d
 3. Switch to the medium-power objective and refocus. With this objective, individual cells are clearly visible, but the chromosomes will still be very small.
 4. Switch to the high-power objective and slowly move the slide left to right, and up and down to view all the cells in the section (below). As you scan, you will notice that most of the cells are not undergoing mitosis but are in the interphase period of the cell cycle.
 
-{{< mediafigure src="biology/Figure_10_02_06" kind="diagram" alt="Two panels. (a) An illustration of an oval cross-section packed with rounded cells, overlaid with four black horizontal scan brackets whose arrows alternate direction — left to right across the top row, then right to left — and, below them, five blue vertical scan tracks whose arrows alternate up and down, captioned 'Scan the cells to identify the mitotic stage of the cells.' (b) A bright-field micrograph of an oval whitefish blastula cross-section showing the same densely packed cells, most with round pale nuclei and a few with darker, condensed chromatin visible at various stages of mitosis." longdesc="Panel (a) is a diagram of the scanning technique: an oval field of pink, closely packed cells overlaid with two sets of scan tracks. Four black horizontal brackets step down the upper part of the field, their arrows tracing a back-and-forth reading path — left to right across the top row, right to left across the second, and so on. Below them, five narrow blue vertical tracks stand side by side and continue the scan down through the lower part of the field, their arrows alternating upward and downward from one track to the next. The panel is captioned 'Scan the cells to identify the mitotic stage of the cells.' Panel (b) is the corresponding bright-field micrograph: an oval cross-section of the same tissue with dozens of tightly packed oval cells, most showing a single round, pale-staining nucleus (interphase) and a smaller number showing darker, more condensed, irregularly shaped chromatin consistent with a mitotic stage." >}}
+{{< mediafigure src="biology/Figure_10_02_06" kind="diagram" alt="Two panels. (a) An illustration of a round field packed with rounded cells, overlaid with a black zigzag scan line that sweeps left to right, then right to left, six times down the upper part of the field, and a blue line that snakes down and up in nine vertical passes to the bottom edge, captioned 'Scan the cells to identify the mitotic stage of the cells.' (b) A bright-field micrograph of an oval whitefish blastula cross-section showing the same densely packed cells, most with round pale nuclei and a few with darker, condensed chromatin visible at various stages of mitosis." longdesc="Panel (a) is a diagram of the scanning technique: a round field of pink, closely packed cells overlaid with two continuous scan lines. A black line starts at the upper left and zigzags down the upper part of the field in six horizontal passes, its arrows tracing a back-and-forth reading path — left to right across the top, right to left across the second pass, and so on, ending near the middle of the field. A blue line snakes through nine narrow vertical passes side by side across the middle of the field, starting inside the black passes and running down to the bottom edge, its arrows alternating downward and upward from one pass to the next. The panel is captioned 'Scan the cells to identify the mitotic stage of the cells.' Panel (b) is the corresponding bright-field micrograph: an oval cross-section of the same tissue with dozens of tightly packed oval cells, most showing a single round, pale-staining nucleus (interphase) and a smaller number showing darker, more condensed, irregularly shaped chromatin consistent with a mitotic stage." >}}
 Slowly scan whitefish blastula cells with the high-power objective as illustrated in image (a) to identify their mitotic stage. (b) A microscopic image of the scanned cells is shown. (credit "micrograph": modification of work by Linda Flora; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
@@ -208,7 +208,7 @@ The cell cycle is an orderly sequence of events. Cells on the path to cell divis
 {{< multiplechoice
   question="Chromosomes are duplicated during what stage of the cell cycle?"
   answer="S phase"
-  hint="Look at which stage the section says DNA actually replicates in."
+  hint="Reread the three subsections under Interphase."
 >}}
 G₁ phase
 S phase
@@ -219,7 +219,7 @@ prometaphase
 {{< multiplechoice
   question="Which of the following events does not occur during some stages of interphase?"
   answer="separation of sister chromatids"
-  hint="Three of the choices happen at some point during interphase; the fourth is something that only happens after interphase ends."
+  hint="Reread the three subsections under Interphase, then the mitosis figure's walkthrough."
 >}}
 DNA duplication
 organelle duplication
@@ -227,7 +227,7 @@ increase in cell size
 separation of sister chromatids
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Briefly describe the events that occur in each phase of interphase." hint="Work through the three stages of interphase in order and note what changes biochemically in each one, even though the cell looks the same under a microscope." >}}
+{{< selfcheck question="Briefly describe the events that occur in each phase of interphase." hint="Reread the G₁, S, and G₂ subsections under Interphase." >}}
 During G₁, the cell increases in size, the genomic DNA is assessed for damage, and the cell stockpiles energy reserves and the components to synthesize DNA. During the S phase, the chromosomes, the centrosomes, and the centrioles (animal cells) duplicate. During the G₂ phase, the cell recovers from the S phase, continues to grow, duplicates some organelles, and dismantles other organelles.
 ===CHECKS===
 in G1 the cell grows and stockpiles energy reserves and components to synthesize DNA
@@ -240,7 +240,7 @@ in G2 the cell continues to grow and duplicates some organelles
 {{< multiplechoice
   question="The mitotic spindles arise from which cell structure?"
   answer="centrosome"
-  hint="This organelle duplicates during the S phase, and its two copies later organize the spindle."
+  hint="Reread the S Phase subsection."
 >}}
 centromere
 centrosome
@@ -251,7 +251,7 @@ cleavage furrow
 {{< multiplechoice
   question="Attachment of the mitotic spindle fibers to the kinetochores is a characteristic of which stage of mitosis?"
   answer="prometaphase"
-  hint="Kinetochores form on the chromatids and bind spindle microtubules during this early mitotic stage, before the chromosomes have lined up."
+  hint="Use the stage-by-stage walkthrough under the mitosis figure."
 >}}
 prophase
 prometaphase
@@ -262,7 +262,7 @@ anaphase
 {{< multiplechoice
   question="Unpacking of chromosomes and the formation of a new nuclear envelope is a characteristic of which stage of mitosis?"
   answer="telophase"
-  hint="This is the last stage of mitosis, when the chromosomes have already reached the poles and begin to relax."
+  hint="Use the stage-by-stage walkthrough under the mitosis figure."
 >}}
 prometaphase
 metaphase
@@ -273,7 +273,7 @@ telophase
 {{< multiplechoice
   question="Separation of the sister chromatids is a characteristic of which stage of mitosis?"
   answer="anaphase"
-  hint="Cohesin proteins break down at this point, freeing each chromatid to move to a pole."
+  hint="Use the stage-by-stage walkthrough under the mitosis figure."
 >}}
 prometaphase
 metaphase
@@ -284,7 +284,7 @@ telophase
 {{< multiplechoice
   question="The chromosomes become visible under a light microscope during which stage of mitosis?"
   answer="prophase"
-  hint="This is the very first mitotic stage, when condensin proteins first coil the chromatids tightly enough to see."
+  hint="Use the stage-by-stage walkthrough under the mitosis figure."
 >}}
 prophase
 prometaphase
@@ -292,7 +292,7 @@ metaphase
 anaphase
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Chemotherapy drugs such as *vincristine* (derived from Madagascar periwinkle plants) and *colchicine* (derived from autumn crocus plants) disrupt mitosis by binding to tubulin (the subunit of microtubules) and interfering with microtubule assembly and disassembly. Exactly what mitotic structure is targeted by these drugs and what effect would that have on cell division?" hint="Ask what structure both drugs bind, then think about what that structure does during mitosis." >}}
+{{< selfcheck question="Chemotherapy drugs such as *vincristine* (derived from Madagascar periwinkle plants) and *colchicine* (derived from autumn crocus plants) disrupt mitosis by binding to tubulin (the subunit of microtubules) and interfering with microtubule assembly and disassembly. Exactly what mitotic structure is targeted by these drugs and what effect would that have on cell division?" hint="Reread the S Phase paragraph on the mitotic spindle." >}}
 The mitotic spindle is formed of microtubules. Microtubules are polymers of the protein tubulin; therefore, it is the mitotic spindle that is disrupted by these drugs. Without a functional mitotic spindle, the chromosomes will not be sorted or separated during mitosis. The cell will arrest in mitosis and die.
 ===CHECKS===
 the mitotic spindle is the structure disrupted
@@ -300,7 +300,7 @@ chromosomes will not be sorted or separated
 the cell will arrest in mitosis and die
 {{< /selfcheck >}}
 
-{{< selfcheck question="What cell-cycle events will be affected in a cell that produces mutated (non-functional) cohesin protein?" hint="Cohesin's job is to hold sister chromatids together after replication — trace forward what would go wrong at each dependent step of mitosis." >}}
+{{< selfcheck question="What cell-cycle events will be affected in a cell that produces mutated (non-functional) cohesin protein?" hint="Reread the mitosis figure's walkthrough for the steps that involve cohesin and the kinetochores." >}}
 If cohesin is not functional, chromosomes are not packaged after DNA replication in the S phase of interphase. It is likely that the proteins of the centromeric region, such as the kinetochore, would not form. Even if the mitotic spindle fibers could attach to the chromatids without packing, the chromosomes would not be sorted or separated during mitosis.
 ===CHECKS===
 chromosomes are not packaged after DNA replication
@@ -310,10 +310,17 @@ chromosomes would not be sorted or separated during mitosis
 
 ### Explain how the cytoplasmic content is divided during cytokinesis
 
+{{< textin
+  question="In animal cell cytokinesis, the cytoplasmic contents are separated by a contracting ring of ________."
+  answer="actin"
+  accept="actin filaments|actin fibers"
+  hint="Reread the section summary's last sentence."
+>}}
+
 {{< multiplechoice
   question="The fusing of Golgi vesicles at the metaphase plate of dividing plant cells forms what structure?"
   answer="cell plate"
-  hint="This structure grows outward from the center of a dividing plant cell until it reaches the existing cell wall."
+  hint="Reread the plant-cell paragraph of Cytokinesis."
 >}}
 cell plate
 actin ring
@@ -321,14 +328,7 @@ cleavage furrow
 mitotic spindle
 {{< /multiplechoice >}}
 
-{{< textin
-  question="In animal cell cytokinesis, the cytoplasmic contents are separated by a contracting ring of ________."
-  answer="actin"
-  accept="actin filaments|actin fibers"
-  hint="The same protein that pairs with myosin in muscle; its filament ring pulls the cell's equator inward."
->}}
-
-{{< selfcheck question="Describe the similarities and differences between the cytokinesis mechanisms found in animal cells versus those in plant cells." hint="Consider the rigid cell wall unique to plant cells and what that means for how they can partition their cytoplasm." >}}
+{{< selfcheck question="Describe the similarities and differences between the cytokinesis mechanisms found in animal cells versus those in plant cells." hint="Reread the animal-cell and plant-cell paragraphs of Cytokinesis and their two-panel figure." >}}
 There are very few similarities between animal cell and plant cell cytokinesis. In animal cells, a ring of actin fibers is formed around the periphery of the cell at the former metaphase plate (cleavage furrow). The actin ring contracts inward, pulling the plasma membrane toward the center of the cell until the cell is pinched in two. In plant cells, a new cell wall must be formed between the daughter cells. Due to the rigid cell walls of the parent cell, contraction of the middle of the cell is not possible. Instead, a phragmoplast first forms. Subsequently, a cell plate is formed in the center of the cell at the former metaphase plate. The cell plate is formed from Golgi vesicles that contain enzymes, proteins, and glucose. The vesicles fuse and the enzymes build a new cell wall from the proteins and glucose. The cell plate grows toward and eventually fuses with the cell wall of the parent cell.
 ===CHECKS===
 in animal cells a ring of actin fibers contracts inward
@@ -339,7 +339,14 @@ a cell plate is formed from Golgi vesicles
 
 ### Define the quiescent G₀ phase
 
-{{< selfcheck question="List some reasons why a cell that has just completed cytokinesis might enter the G₀ phase instead of the G₁ phase." hint="Think about what a cell 'checks' before it commits to another round of division, and what happens if those conditions are not met." >}}
+{{< textin
+  question="A cell that is performing its normal functions but has not initiated preparations for cell division is described as ________."
+  answer="quiescent"
+  accept="quiescence|inactive"
+  hint="Reread the G₀ Phase paragraph."
+>}}
+
+{{< selfcheck question="List some reasons why a cell that has just completed cytokinesis might enter the G₀ phase instead of the G₁ phase." hint="Reread the G₀ Phase paragraph." >}}
 Many cells temporarily enter G₀ until they reach maturity. Some cells are only triggered to enter G₁ when the organism needs to increase that particular cell type. Some cells only reproduce following an injury to the tissue. Some cells never divide once they reach maturity.
 ===CHECKS===
 many cells temporarily enter G₀ until they reach maturity
@@ -348,23 +355,16 @@ some cells never divide once they reach maturity
 {{< /selfcheck >}}
 
 {{< multiplechoice
-  question="Mature cardiac muscle and nerve cells that rarely or never divide remain permanently in which phase?"
-  answer="G₀ phase"
-  hint="The quiescent phase sits outside the cycle — these cells have exited the cycle for good."
+  question="The section names environmental conditions that can send a cell into G₀ temporarily. Which of the following is one of them?"
+  answer="availability of nutrients"
+  hint="Reread the G₀ Phase paragraph."
 >}}
-G₁ phase
-G₀ phase
-S phase
-G₂ phase
+completion of DNA replication
+breakdown of the cohesin proteins
+availability of nutrients
+formation of a cell plate
 {{< /multiplechoice >}}
-
-{{< textin
-  question="A cell that is performing its normal functions but has not initiated preparations for cell division is described as ________."
-  answer="quiescent"
-  accept="quiescence"
-hint="This is the state a cell is in during G₀ — think of the word's everyday meaning, \"at rest.\""
->}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 10.2: The Cell Cycle](https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with three of the six re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a molecular/cellular illustration, not a photograph); a longer extended description added for the five figures whose full labeled content is not carried by their captions (the cell-cycle wheel, the six-panel mitosis walkthrough, the kinetochore-and-spindle metaphase illustration, the two-panel cytokinesis comparison, and the scanning-technique/micrograph pair); inline references to figures and tables changed from the source's print numbers ("Figure 10.5," "Figure 10.6," "Table 10.1," etc.) to descriptive phrases ("below," "the table below," "the drawings of the stages shown above") since figures and tables are not numbered here; the Link to Learning's anchor text expanded from the source's generic "this site" to a description of the destination; feature boxes (one Link to Learning, one Scientific Method Connection) rendered as callouts with their bold names, the Scientific Method box's numbered procedure split around its own embedded figure and continued from step 5 rather than nesting the figure inside a list item, and its two data tables rendered as Markdown tables with their print captions kept as bold titles; the Visual Connection question kept in the body immediately after its figure and rendered as a multiple choice, since the source keys it to a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and one key-term recall item (quiescent) added from the glossary to give the G₀ objective group an auto-graded item, since no Review Question tests that objective directly; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; one summary-derived recall item (actin) added under the cytokinesis objective from the section summary's own sentence; and one locally written multiple choice (permanent G₀ residence of mature cardiac muscle and nerve cells) added under the G₀ objective, built strictly from the section's own sentence and disclosed in the ledger. One key-term definition is corrected with a visible Source note: G₁ growth happens in interphase, not "during mitosis" (erratum 396).</small>
+<small>This section is adapted from [Biology 2e, Section 10.2: The Cell Cycle](https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with three of the six re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a molecular/cellular illustration, not a photograph); a longer extended description added for the five figures whose full labeled content is not carried by their captions (the cell-cycle wheel, the six-panel mitosis walkthrough, the kinetochore-and-spindle metaphase illustration, the two-panel cytokinesis comparison, and the scanning-technique/micrograph pair); inline references to figures and tables changed from the source's print numbers ("Figure 10.5," "Figure 10.6," "Table 10.1," etc.) to descriptive phrases ("below," "the table below," "the drawings of the stages shown above") since figures and tables are not numbered here; the Link to Learning's anchor text expanded from the source's generic "this site" to a description of the destination; feature boxes (one Link to Learning, one Scientific Method Connection) rendered as callouts with their bold names, the Scientific Method box's numbered procedure split around its own embedded figure and continued from step 5 rather than nesting the figure inside a list item, and its two data tables rendered as Markdown tables with their print captions kept as bold titles; the Visual Connection question kept in the body immediately after its figure and rendered as a multiple choice, since the source keys it to a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and one key-term recall item (quiescent) added from the glossary to give the G₀ objective group an auto-graded item, since no Review Question tests that objective directly; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; one summary-derived recall item (actin) added under the cytokinesis objective from the section summary's own sentence; the recall items placed first in the cytokinesis and G₀ groups; and one locally written multiple choice (an environmental condition, the availability of nutrients, that can send a cell into G₀ temporarily) added under the G₀ objective, built strictly from the G₀ Phase paragraph's own sentence and disclosed in the ledger, its distractors other events the section describes. One key-term definition is corrected with a visible Source note: G₁ growth happens in interphase, not "during mitosis" (erratum 396).</small>

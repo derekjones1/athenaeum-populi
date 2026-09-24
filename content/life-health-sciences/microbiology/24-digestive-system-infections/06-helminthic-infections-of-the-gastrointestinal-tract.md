@@ -73,10 +73,10 @@ As with other helminths, direct examination of the stool is important in diagnos
 
 {{< multiplechoice
   question="How does an acute infection of S. stercoralis become chronic?"
-  answer="The larvae can reinfect the host directly through the tissue of the intestines and the skin around the anus, without ever leaving the body."
-  hint="One clause names the exact tissue route that lets the parasite reinfect its own host — look for where it says the larvae never have to leave."
+  answer="The larvae can reinfect the host by entering the tissue of the intestines and the skin around the anus."
+  hint="Read the last sentence of the first paragraph of the Strongyloidiasis subsection."
 >}}
-The larvae can reinfect the host directly through the tissue of the intestines and the skin around the anus, without ever leaving the body.
+The larvae can reinfect the host by entering the tissue of the intestines and the skin around the anus.
 The larvae migrate to the alveolar spaces of the lungs, where they are coughed up and swallowed again.
 The free-living adult forms in the soil continue to reproduce and reinfect the same host repeatedly.
 Females in the intestinal epithelium produce eggs asexually, which are then excreted before hatching.
@@ -118,7 +118,7 @@ Infection is diagnosed using clinical history, muscle biopsy to look for larvae,
 
 **Check Your Understanding**
 
-{{< sortbins question="Compare and contrast the transmissions of pinworms and whipworms." hint="Pinworm eggs travel a very short route involving fingers and the mouth; whipworm eggs travel a longer route through contaminated soil." >}}
+{{< sortbins question="Compare and contrast the transmissions of pinworms and whipworms." hint="Compare the transmission sentences in the pinworm subsection and the Trichuriasis subsection." >}}
 {"bins": ["Pinworms", "Whipworm"],
  "items": [
   {"label": "eggs get under the fingernails from scratching the anal area", "bin": 0},
@@ -204,7 +204,7 @@ Diagnosis is the same as with liver flukes: examination of feces or other sample
 {{< multiplechoice
   question="How are flukes transmitted?"
   answer="Through aquatic plants or fish that carry the infective larvae"
-  hint="This is the route the module's own closing summary names for this whole group of worms — think about what liver flukes and intestinal flukes have in common as their infectious source, unlike the skin- or meat-borne worms earlier in the section."
+  hint="Read the last bullet of the Summary."
 >}}
 Through contaminated soil that penetrates bare skin
 By eating undercooked pork or beef containing cysts
@@ -279,7 +279,7 @@ After two days of rehydration therapy, Carli's signs and symptoms began to fade.
 {{< multiplechoice
   question="What is another name for Trichuris trichiura?"
   answer="whipworm"
-  hint="This nematode is named for its long, thin, thread-like anterior end — the source's own common name for the whole worm describes its shape."
+  hint="Look at the first sentence of the Trichuriasis subsection."
 >}}
 pinworm
 whipworm
@@ -288,21 +288,22 @@ ascariasis
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The soil-transmitted intestinal infection caused by the helminth Strongyloides stercoralis is called ________."
+  question="The soil-transmitted intestinal infection caused by the helminth *S. stercoralis* is called ________."
   answer="strongyloidiasis"
   hint="This is the disease name for infection by this soil-transmitted helminth, whose larvae exist in both free-living and parasitic forms."
 >}}
 
 {{< textin
-  question="The intestinal infection caused by the nematode Trichinella spiralis, transmitted through consumption of undercooked meat, is called ________."
+  question="The intestinal infection caused by the nematode *T. spiralis*, transmitted through consumption of undercooked meat, is called ________."
   answer="trichinosis"
+  accept="trichinellosis|trichenellosis"
   hint="This is the disease name for infection by this nematode, spread by eating undercooked meat rather than through soil contact."
 >}}
 
 {{< multiplechoice
   question="Why does the coughing up of worms play an important part in the life cycle of some helminths, such as the roundworm Ascaris lumbricoides?"
   answer="It lets the host swallow the larvae again so they return to the small intestine, where they mature into adult roundworms."
-  hint="Follow what happens right after the larvae are coughed up and re-swallowed — where do they end up, and what do they become there?"
+  hint="Read the second paragraph of the Ascariasis subsection."
 >}}
 It lets *Ascaris* produce proteases that degrade host tissue for penetration.
 It lets the host swallow the larvae again so they return to the small intestine, where they mature into adult roundworms.
@@ -315,7 +316,7 @@ It lets the larvae enter the circulatory system and migrate to the lungs.
 {{< multiplechoice
   question="Which type of helminth infection can be diagnosed using tape?"
   answer="pinworm"
-  hint="This is the same helminth whose adult female leaves the body at night to lay eggs near the anus — that nighttime habit is what the tape test collects."
+  hint="Find the diagnosis paragraph that mentions transparent tape."
 >}}
 pinworm
 whipworm
@@ -338,7 +339,7 @@ tapeworm
 {{< multiplechoice
   question="Cases of strongyloidiasis are often more severe in patients who are using corticosteroids to treat another disorder. Explain why this might occur."
   answer="Corticosteroids suppress the immune system, which increases the rate of autoinfection so that huge numbers of larvae migrate to organs throughout the body."
-  hint="One sentence right after the corticosteroid/immunosuppression mention names the effect on autoinfection; the other options are true facts about S. stercoralis from elsewhere in the section, but none explains why steroids specifically worsen the infection."
+  hint="Read the second paragraph of the Strongyloidiasis subsection."
 >}}
 Corticosteroids increase the number of larvae excreted in the stool that develop into free-living, non-parasitic adults.
 Corticosteroids make it easier for infective larvae to penetrate bare skin and enter the body.
@@ -346,4 +347,4 @@ Corticosteroids are the standard treatment for the asthma or chronic obstructive
 Corticosteroids suppress the immune system, which increases the rate of autoinfection so that huge numbers of larvae migrate to organs throughout the body.
 {{< /multiplechoice >}}
 
-<small>This section is adapted from [Microbiology, Section 24.6: Helminthic Infections of the Gastrointestinal Tract](https://openstax.org/books/microbiology/pages/24-6-helminthic-infections-of-the-gastrointestinal-tract) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all seven vendored source figures re-encoded as WebP and rendered as mediafigures after image inspection, with `kind="photo"` set on every one (each panel is a photograph or micrograph, including the Tapeworm figure's single printed leader-line label, which is annotation on a photograph rather than drawn art); the Ascariasis figure carries `eager="true"` as the page's first figure; all seven alts are rewritten from the images rather than reused from the source's own alts, which the raw CNXML prints with inconsistent capitalization, a "phot" typo, and vague descriptions (e.g., "a circle in a thicker circle" for the Ascariasis egg micrograph); the two Disease Profile table images (`OSC_Microbio_24_06_HelminthTBL`, `_HelminthTBL2`) are not vendored, per this book's Disease Profile rule; only `HelminthTBL`'s alt (a complete 10-row table) is transcribed as a Markdown table, checked against the PDF page — `HelminthTBL2`'s alt is a word-for-word repeat of `HelminthTBL`'s own last four rows and adds no row, so it is not transcribed a second time; the PRINTED table image (PDF pp. 998–999) is a different version of this same table, titled "Common Helminthic Infections of the GI Tract" with a different column set (Disease/Causative Agent(s)/Mode of Transmission/Laboratory Tests/Symptoms/Treatments) and different cell wording in multiple rows (for example the printed Ascariasis row's Treatments column reads "Self-limiting within 1 to 2 years; albendazole and mebendazole if needed" against the alt's "Albendazole, mebendazole," and the printed Hookworm row omits the alt's "thiabendazole"), and its own printed continuation panel likewise repeats the same four rows a second time — this divergence between the pinned CNXML alt and the printed image is a source defect; the module misspells the hookworm species as "Ancylostoma doudenale" in four places that feed this page — the Hookworm section's body paragraph, the `## Summary`'s third bullet, the appendix Glossary entry behind the "hookworm infection" Key-terms bullet, and (as the further-garbled "Ancyclostoma doudenale") the HelminthTBL alt — all four malformed binomials corrected here to *Ancylostoma duodenale* with no inline note, reported below; the HelminthTBL alt's "mebenazole" is likewise corrected to "mebendazole"; the appendix Glossary's "trichinosis" entry is corrected on this page from "soil-transmitted intestinal infection" to "intestinal infection...transmitted through consumption of undercooked meat," with a visible source note, because this section's own text states plainly that trichinosis is contracted by eating undercooked meat, never through soil contact; the Micro Connection box's two footnotes and the Ascariasis and Pinworms sections' two footnotes are rendered as inline parenthetical citations, bare access URLs dropped; the two cross-references to Section 5.2 (m58803, *Parasitic Helminths*) are rendered as links to that page, worded to distinguish the tapeworm life-cycle figure from the liver-fluke life-cycle figure since both are cited from this module; the Clinical Focus Resolution box's closing "Go back to the previous Clinical Focus box" link is rendered as a link to Section 24.3's Part 2, plus a sentence naming that the case began in Section 24.1, since this is the terminal part of the chapter's three-part case; the two source Multiple Choice items and one Fill in the Blank item keep their source options, order, and keys unchanged; the section's one unkeyed Short Answer question and one unkeyed Critical Thinking question are each graded as a `multiplechoice`, keyed by a single fixing sentence of this module, since the source prints no key for either; of this section's five body Check Your Understanding bullets, three are graded (two `multiplechoice`, one keyed by a single sentence naming the autoinfection route and one keyed by the closing summary's fluke-transmission sentence, and one `sortbins` built from the pinworm and whipworm transmission sentences of their own subsections) and two remain self-checks whose model answers are assembled from more than one sentence of this module; no source exercise, table, or Check Your Understanding bullet is omitted; key terms compiled from the module's eleven `<term>` elements (no repeats) and the book's Glossary appendix, giving eleven distinct bullets — nine taken directly from the appendix (the "liver flukes"/"intestinal flukes" bullets draw on the appendix's singular "liver fluke"/"intestinal fluke" headwords) and two corrected from the appendix: "trichinosis" as described above, and "hookworm infection," whose appendix entry carries the same "doudenale" misspelling corrected throughout this page; three of them — "Strongyloidiasis," "Trichinosis," and "Taeniasis" — are lower-cased in this derived list because none is a proper noun, even though the source capitalizes each at its sentence-initial defining occurrence in the body text (which is transcribed as printed).</small>
+<small>This section is adapted from [Microbiology, Section 24.6: Helminthic Infections of the Gastrointestinal Tract](https://openstax.org/books/microbiology/pages/24-6-helminthic-infections-of-the-gastrointestinal-tract) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all seven vendored source figures re-encoded as WebP and rendered as mediafigures after image inspection, with `kind="photo"` set on every one (each panel is a photograph or micrograph, including the Tapeworm figure's single printed leader-line label, which is annotation on a photograph rather than drawn art); the Ascariasis figure carries `eager="true"` as the page's first figure; all seven alts are rewritten from the images rather than reused from the source's own alts, which the raw CNXML prints with inconsistent capitalization, a "phot" typo, and vague descriptions (e.g., "a circle in a thicker circle" for the Ascariasis egg micrograph); the two Disease Profile table images (`OSC_Microbio_24_06_HelminthTBL`, `_HelminthTBL2`) are not vendored, per this book's Disease Profile rule; only `HelminthTBL`'s alt (a complete 10-row table) is transcribed as a Markdown table, checked against the PDF page — `HelminthTBL2`'s alt is a word-for-word repeat of `HelminthTBL`'s own last four rows and adds no row, so it is not transcribed a second time; the PRINTED table image (PDF pp. 998–999) is a different version of this same table, titled "Common Helminthic Infections of the GI Tract" with a different column set (Disease/Causative Agent(s)/Mode of Transmission/Laboratory Tests/Symptoms/Treatments) and different cell wording in multiple rows (for example the printed Ascariasis row's Treatments column reads "Self-limiting within 1 to 2 years; albendazole and mebendazole if needed" against the alt's "Albendazole, mebendazole," and the printed Hookworm row omits the alt's "thiabendazole"), and its own printed continuation panel likewise repeats the same four rows a second time — this divergence between the pinned CNXML alt and the printed image is a source defect; the module misspells the hookworm species as "Ancylostoma doudenale" in four places that feed this page — the Hookworm section's body paragraph, the `## Summary`'s third bullet, the appendix Glossary entry behind the "hookworm infection" Key-terms bullet, and (as the further-garbled "Ancyclostoma doudenale") the HelminthTBL alt — all four malformed binomials corrected here to *Ancylostoma duodenale* with no inline note, reported below; the HelminthTBL alt's "mebenazole" is likewise corrected to "mebendazole"; the appendix Glossary's "trichinosis" entry is corrected on this page from "soil-transmitted intestinal infection" to "intestinal infection...transmitted through consumption of undercooked meat," with a visible source note, because this section's own text states plainly that trichinosis is contracted by eating undercooked meat, never through soil contact; the Micro Connection box's two footnotes and the Ascariasis and Pinworms sections' two footnotes are rendered as inline parenthetical citations, bare access URLs dropped; the two cross-references to Section 5.2 (m58803, *Parasitic Helminths*) are rendered as links to that page, worded to distinguish the tapeworm life-cycle figure from the liver-fluke life-cycle figure since both are cited from this module; the Clinical Focus Resolution box's closing "Go back to the previous Clinical Focus box" link is rendered as a link to Section 24.3's Part 2, plus a sentence naming that the case began in Section 24.1, since this is the terminal part of the chapter's three-part case; the two source Multiple Choice items and one Fill in the Blank item keep their source options, order, and keys unchanged; the section's one unkeyed Short Answer question and one unkeyed Critical Thinking question are each graded as a `multiplechoice`, keyed by a single fixing sentence of this module, since the source prints no key for either; of this section's five body Check Your Understanding bullets, three are graded (two `multiplechoice`, one keyed by a single sentence naming the autoinfection route and one keyed by the closing summary's fluke-transmission sentence, and one `sortbins` built from the pinworm and whipworm transmission sentences of their own subsections) and two remain self-checks whose model answers are assembled from more than one sentence of this module; three Practice items — the strongyloidiasis, trichinosis, and hydatid-disease recalls — are author-written from this section's Key terms, the first two naming the pathogen by its abbreviated binomial (*S. stercoralis*, *T. spiralis*) so that the stem does not print the root of its own answer; no source exercise, table, or Check Your Understanding bullet is omitted; key terms compiled from the module's eleven `<term>` elements (no repeats) and the book's Glossary appendix, giving eleven distinct bullets — nine taken directly from the appendix (the "liver flukes"/"intestinal flukes" bullets draw on the appendix's singular "liver fluke"/"intestinal fluke" headwords) and two corrected from the appendix: "trichinosis" as described above, and "hookworm infection," whose appendix entry carries the same "doudenale" misspelling corrected throughout this page; three of them — "Strongyloidiasis," "Trichinosis," and "Taeniasis" — are lower-cased in this derived list because none is a proper noun, even though the source capitalizes each at its sentence-initial defining occurrence in the body text (which is transcribed as printed).</small>

@@ -18,7 +18,7 @@ weight: 2
 
 Before you begin to study the different structures and functions of the human body, it is helpful to consider its basic architecture; that is, how its smallest parts are assembled into larger structures. It is convenient to consider the structures of the body in terms of fundamental levels of organization that increase in complexity: subatomic particles, atoms, molecules, organelles, cells, tissues, organs, organ systems, organisms and biosphere (illustrated below).
 
-{{< mediafigure src="anatomy-physiology/101_Levels_of_Org_in_Body" kind="diagram" eager="true" alt="A pyramid split into six horizontal bands, narrowest at the top: the chemical level (two hydrogen atoms and an oxygen atom bonding into a water molecule), the cellular level (a smooth muscle cell with its fluid and organelles labeled), the tissue level (a swatch of bundled smooth muscle cells), the organ level (a bladder and urethra with their muscle layers labeled), the organ system level (the urinary system's kidneys, ureters, bladder, and urethra), and the organismal level (a woman drinking water)." longdesc="This illustration shows biological organization as a pyramid. The chemical level is at the apex of the pyramid where atoms bond to form molecules with three dimensional structures. An example is shown with two white hydrogen atoms bonding to a red oxygen atom to create water. The next level down on the pyramid is the cellular level, as illustrated with a long, tapered, smooth muscle cell. At this level, a variety of molecules combine to form the interior fluid and organelles of a body cell. The next level down is the tissue level. A community of similar cells forms body tissue. The example given here is a section of smooth muscle tissue, which contains many smooth muscle cells closely bound side by side. The next level down is the organ level, as illustrated with the bladder and urethra. The bladder contains smooth muscle while the urethra contains skeletal muscle. These are both examples of muscle tissues. The next level down is the organ system level, as illustrated by the entire urinary system containing the kidney, ureters, bladder and urethra. At this level, two or more organs work closely together to perform the functions of a body system. At the base of the pyramid is the organismal level illustrated with a woman drinking water. At this level, many organ systems work harmoniously together to perform the functions of an independent organism." >}}
+{{< mediafigure src="anatomy-physiology/101_Levels_of_Org_in_Body" kind="diagram" eager="true" alt="A pyramid split into seven horizontal bands, narrowest at the top, showing six levels: the chemical level in the top two bands (two hydrogen atoms and an oxygen atom, then the water molecule they bond into), the cellular level (a smooth muscle cell with its fluid and organelles labeled), the tissue level (a swatch of bundled smooth muscle cells), the organ level (a bladder and urethra with their muscle layers labeled), the organ system level (the urinary system's kidneys, ureters, bladder, and urethra), and the organismal level (a woman drinking water)." longdesc="This illustration shows biological organization as a pyramid. The chemical level is at the apex of the pyramid where atoms bond to form molecules with three dimensional structures. An example is shown with two white hydrogen atoms bonding to a red oxygen atom to create water. The next level down on the pyramid is the cellular level, as illustrated with a long, tapered, smooth muscle cell. At this level, a variety of molecules combine to form the interior fluid and organelles of a body cell. The next level down is the tissue level. A community of similar cells forms body tissue. The example given here is a section of smooth muscle tissue, which contains many smooth muscle cells closely bound side by side. The next level down is the organ level, as illustrated with the bladder and urethra. The bladder contains smooth muscle while the urethra contains skeletal muscle. These are both examples of muscle tissues. The next level down is the organ system level, as illustrated by the entire urinary system containing the kidney, ureters, bladder and urethra. At this level, two or more organs work closely together to perform the functions of a body system. At the base of the pyramid is the organismal level illustrated with a woman drinking water. At this level, many organ systems work harmoniously together to perform the functions of an independent organism." >}}
 The organization of the body often is discussed in terms of six distinct levels of increasing complexity, from the smallest chemical building blocks to a unique human organism.
 {{< /mediafigure >}}
 
@@ -63,7 +63,7 @@ The organism level is the highest level of organization. An **organism** is a li
 {{< multiplechoice
   question="The smallest independently functioning biological unit of an organism is a(n) ________."
   answer="cell"
-  hint="This is the level of the pyramid just above the chemical level — the smallest structure able to function independently, even in a single-celled organism such as a bacterium."
+  hint="Look at the level directly beneath the chemical level in the pyramid figure."
 >}}
 cell
 molecule
@@ -74,7 +74,7 @@ tissue
 {{< multiplechoice
   question="A collection of similar tissues that performs a specific function is an ________."
   answer="organ"
-  hint="Think of the bladder and urethra in the pyramid figure: each combines two or more tissue types into one working structure."
+  hint="Compare the stem with the definitions in the paragraph on tissues, organs, and organ systems in The Levels of Organization."
 >}}
 organ
 organelle
@@ -82,7 +82,7 @@ organism
 organ system
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Name the six levels of organization of the human body." hint="Work from the smallest scale up to the whole body, the same order the pyramid figure uses." >}}
+{{< selfcheck question="Name the six levels of organization of the human body." hint="Read the pyramid figure from its apex down to its base." >}}
 Chemical, cellular, tissue, organ, organ system, organism.
 ===CHECKS===
 chemical, cellular
@@ -91,15 +91,15 @@ organ system, organism
 {{< /selfcheck >}}
 
 {{< textin
-  question="A group of similar or closely related cells that act together to perform a specific function is called a ________."
-  answer="tissue"
-  hint="This level sits between the cellular level and the organ level in the pyramid of structural organization."
+  question="A human cell typically consists of flexible membranes that enclose cytoplasm, a water-based cellular fluid together with a variety of tiny functioning units called ________."
+  answer="organelles"
+  hint="Reread the sentence in The Levels of Organization that describes what a human cell typically consists of."
 >}}
 
 {{< textin
-  question="Higher levels of organization are built from ________."
-  answer="lower levels"
-  hint="Think about the direction the pyramid figure builds in, from the simplest chemical building blocks up toward something complex."
+  question="A group of similar or closely related cells that act together to perform a specific function is called a ________."
+  answer="tissue"
+  hint="This level sits between the cellular level and the organ level in the pyramid of structural organization."
 >}}
 
 ### List the eleven organ systems of the human body and identify at least one organ and one major function of each
@@ -107,7 +107,7 @@ organ system, organism
 {{< multiplechoice
   question="The body system responsible for structural support and movement is the ________."
   answer="skeletal system"
-  hint="This system supplies the cartilage, bones, and joints that the muscular system pulls against to move the body."
+  hint="Compare the stem with the two function bullets beside each silhouette in the first organ-systems figure."
 >}}
 cardiovascular system
 endocrine system
@@ -126,7 +126,7 @@ therefore ovaries and testes function within both the endocrine and reproductive
 {{< multiplechoice
   question="The organ system that processes food for use by the body and removes wastes from undigested food is the ________."
   answer="digestive system"
-  hint="Think about which system includes the stomach, liver, and intestines, shown in the second organ-systems figure."
+  hint="Find the silhouette in the second organ-systems figure whose function bullets match the stem."
 >}}
 urinary system
 digestive system
@@ -136,4 +136,4 @@ respiratory system
 
 ---
 
-<small>This section is adapted from [Anatomy and Physiology 2e, Section 1.2: Structural Organization of the Human Body](https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP; all three figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" — 101_Levels_of_Org_in_Body (the levels-of-organization pyramid), 102_Organ_Systems_of_Body-Page1, and 102_Organ_Systems_of_Body-Page2 (the organ-systems silhouettes) are all drawings, not photographs; all three figures' source alts, each well over the 600-character limit, shortened to a plain description of what is drawn, with a longdesc added for the full detail; 102_Organ_Systems_of_Body-Page1 and 102_Organ_Systems_of_Body-Page2's longdescs rewritten panel by panel from the image rather than reusing the source alt's running paragraph; 102_Organ_Systems_of_Body-Page1's source alt opened "This illustration shows eight silhouettes of a human female" — the panel is six silhouettes, only the first female-presenting (the fifth panel is a male figure with a small separate inset of a female pelvis for the ovaries label) — the longdesc describes the six panels as drawn; two numbered figure cross-references in the body prose ("(Figure 1.3)", "(Figure 1.4 and 1.5)") replaced with descriptive references ("illustrated below", "shown in the two figures below") since the page does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using all 3 Review Questions and both Critical Thinking Questions the source keys; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; one key-term recall item (tissue) added from the glossary; a summary cloze ("Higher levels of organization are built from ________" → "lower levels") and a figure-keyed multiple choice (the organ system that "processes food for use by the body and removes wastes from undigested food," keyed from the second organ-systems figure) added in place of glossary-recall items for "organism" and "organ system" — both terms already appear as distractor options in the source-keyed Review Question multiple choices on this page, so keying a separate item to either word would let a learner find the answer by searching the page rather than the section; these two replacements bring the section to the eight-exercise floor.</small>
+<small>This section is adapted from [Anatomy and Physiology 2e, Section 1.2: Structural Organization of the Human Body](https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP; all three figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" — 101_Levels_of_Org_in_Body (the levels-of-organization pyramid), 102_Organ_Systems_of_Body-Page1, and 102_Organ_Systems_of_Body-Page2 (the organ-systems silhouettes) are all drawings, not photographs; all three figures' source alts, each well over the 600-character limit, shortened to a plain description of what is drawn, with a longdesc added for the full detail; 102_Organ_Systems_of_Body-Page1 and 102_Organ_Systems_of_Body-Page2's longdescs rewritten panel by panel from the image rather than reusing the source alt's running paragraph; 102_Organ_Systems_of_Body-Page1's source alt opened "This illustration shows eight silhouettes of a human female" — the panel is six silhouettes, only the first female-presenting (the fifth panel is a male figure with a small separate inset of a female pelvis for the ovaries label) — the longdesc describes the six panels as drawn; two numbered figure cross-references in the body prose ("(Figure 1.3)", "(Figure 1.4 and 1.5)") replaced with descriptive references ("illustrated below", "shown in the two figures below") since the page does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using all 3 Review Questions and both Critical Thinking Questions the source keys; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; one key-term recall item (tissue) added from the glossary; a body cloze (the sentence on what a human cell typically consists of → "organelles," a term the body bolds but the glossary does not define) and a figure-keyed multiple choice (the organ system that "processes food for use by the body and removes wastes from undigested food," keyed from the second organ-systems figure) added to bring the section to the eight-exercise floor; "organism" and "organ system" are not also recall items, because the Review Questions (which key cell and organ and list tissue, organism, and organ system among their options), the tissue item, and the six-level self-check already test every level name.</small>

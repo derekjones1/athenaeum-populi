@@ -36,7 +36,7 @@ In some eukaryotic genes, there are additional regions that help increase or enh
 
 Enhancer regions are binding sequences, or sites, for specific transcription factors. When a protein transcription factor binds to its enhancer sequence, the shape of the protein changes, allowing it to interact with proteins at the promoter site. However, since the enhancer region may be distant from the promoter, the DNA must bend to allow the proteins at the two sites to come into contact. DNA bending proteins help to bend the DNA and bring the enhancer and promoter regions together (see the diagram below). This shape change allows for the interaction of the specific activator proteins bound to the enhancers with the general transcription factors bound to the promoter region and the RNA polymerase.
 
-{{< mediafigure src="biology/Figure_16_04_01" kind="diagram" alt="A DNA strand bends into a loop so a distal enhancer sits next to a promoter and gene. Small square activator proteins bound at the enhancer's distal control elements, with oval mediator and transcription-factor proteins, bridge the enhancer to the promoter and RNA polymerase. Two such loops are shown, one for Gene A and one for Gene B, each with different colored proteins bound at its distal control elements." longdesc="Two nearly identical diagrams, stacked; only the top one carries labels, and the bottom one repeats the drawing with the single label 'Gene B'. In each, a single long DNA strand loops back on itself; in the top diagram a purple crescent labeled 'DNA bending protein' sits at the near end of the loop. Following the strand from there, it passes through a short segment holding three small colored boxes labeled 'Distal control elements' under the heading 'Enhancer,' then into a segment labeled 'Promoter' and, at the strand's end, a segment labeled 'Gene A' in the top diagram or 'Gene B' in the bottom diagram. Where the loop brings the enhancer beside the promoter, five colored ovals labeled 'Transcription factors and mediator proteins' cluster in the gap between them: a large orange oval, a large blue oval, a purple oval, a green oval, and a small red circle. Beneath each distal control element sits a small colored square — the activators, each bound to its own element; a label reading 'Activators' at the right points to these squares with thin lines. A pale oval behind the promoter is labeled 'RNA polymerase.' The top and bottom diagrams differ only in the colors of the three distal-control-element/activator pairs, in which gene is labeled at the end, and in the bottom one carrying no other labels, showing that two different genes can share a promoter but carry different distal control elements." eager="true" >}}
+{{< mediafigure src="biology/Figure_16_04_01" kind="diagram" alt="A DNA strand bends into a loop so a distal enhancer sits next to a promoter and gene. Small square activator proteins bound at the enhancer's distal control elements, with oval mediator and transcription-factor proteins, bridge the enhancer to the promoter and RNA polymerase. Two such loops are shown, one for Gene A and one for Gene B, each with different colored proteins bound at its distal control elements." longdesc="Two nearly identical diagrams, stacked; only the top one carries labels, and the bottom one repeats the drawing with the single label 'Gene B'. In each, a single long DNA strand loops back on itself; in the top diagram a purple crescent labeled 'DNA bending protein' sits inside the bend at the loop's left end. From the bend, the upper arm of the strand runs right through a segment holding three small colored boxes labeled 'Distal control elements' under the bracketed heading 'Enhancer,' and continues off the right edge; the lower arm runs right into a segment labeled 'Promoter' and, at its end, a segment labeled 'Gene A' in the top diagram or 'Gene B' in the bottom diagram. Where the loop brings the enhancer above the promoter, eight colored ovals cluster in the gap between them: a small lavender oval, a small red circle, a pale green oval, a green oval at the left, a mauve oval below it, a large blue oval, a light-blue oval beneath it, and a large orange oval at the right; the label 'Transcription factors and mediator proteins' points to two of them, the red circle and the green oval. Beneath each distal control element sits a small colored square — the activators, each bound to its own element; a label reading 'Activators' at the right points to two of these squares with thin lines. A pale oval below the promoter is labeled 'RNA polymerase.' The top and bottom diagrams differ only in the colors of two of the three distal-control-element/activator pairs (blue and green in the top diagram, purple and red in the bottom; the middle pair is light blue in both), in which gene is labeled at the end, and in the bottom one carrying no other labels, showing that two different genes can share a promoter but carry different distal control elements." eager="true" >}}
 Interaction between proteins at the promoter and enhancer sites. An enhancer is a DNA sequence that promotes transcription. Each enhancer is made up of short DNA sequences called distal control elements. Activators bound to the distal control elements interact with mediator proteins and transcription factors. Two different genes may have the same promoter but different distal control elements, enabling differential gene expression.
 {{< /mediafigure >}}
 
@@ -62,7 +62,7 @@ To start transcription, general transcription factors, such as TFIID, TFIIB, and
 {{< multiplechoice
   question="A scientist compares the promoter regions of two genes. Gene A's core promoter plus proximal promoter elements encompasses 70bp. Gene B's core promoter plus proximal promoter elements encompasses 250bp. Which of the scientist's hypotheses is most likely to be correct?"
   answer="Transcription of Gene A involves fewer transcription factors."
-  hint="A longer promoter has more room for binding sites — think about what each additional site is for."
+  hint="Reread the opening paragraph of The Promoter and the Transcription Machinery."
 >}}
 More transcripts will be made from Gene B.
 Transcription of Gene A involves fewer transcription factors.
@@ -73,27 +73,21 @@ Transcription of Gene A is more controlled than transcription of Gene B.
 {{< multiplechoice
   question="The binding of ________ is required for transcription to start."
   answer="RNA polymerase"
-  hint="Every other listed factor helps this molecule find and bind the promoter, but transcription itself begins only once it does."
+  hint="Reread the section's opening paragraph and the Summary's first sentence."
 >}}
-a protein
+mRNA
 DNA polymerase
 RNA polymerase
-a transcription factor
+a repressor
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Transcription factor binding sites within the promoter that regulate transcription of the adjacent gene are known as a ________."
+  question="When transcription factors bind to the promoter just upstream of the encoded gene, it is referred to as a(n) ________, because it is on the same chromosome just next to the gene."
   answer="cis-acting element"
-  hint="The Latin prefix means 'on the same side' — the site sits on the same chromosome as the gene it controls."
+  hint="Reread the paragraph on promoter-proximal elements."
 >}}
 
-{{< textin
-  question="A sequence of DNA to which a transcription factor binds is called a ________."
-  answer="transcription factor binding site"
-  hint="Name the DNA sequence itself, not the protein that recognizes it."
->}}
-
-{{< selfcheck question="A mutation within the promoter region can alter transcription of a gene. Describe how this can happen." hint="Think about what a promoter mutation could do to a transcription factor's binding site." >}}
+{{< selfcheck question="A mutation within the promoter region can alter transcription of a gene. Describe how this can happen." hint="Reread the paragraphs of The Promoter and the Transcription Machinery on what binds the promoter." >}}
 A mutation in the promoter region can change the binding site for a transcription factor that normally binds to increase transcription. The mutation could either decrease the ability of the transcription factor to bind, thereby decreasing transcription, or it can increase the ability of the transcription factor to bind, thus increasing transcription.
 ===CHECKS===
 change the binding site for a transcription factor that normally binds to increase transcription
@@ -101,7 +95,13 @@ decrease the ability of the transcription factor to bind, thereby decreasing tra
 increase the ability of the transcription factor to bind, thus increasing transcription
 {{< /selfcheck >}}
 
-{{< selfcheck question="What could happen if a cell had too much of an activating transcription factor present?" hint="Consider what more binding of an activator would do to the amount of transcription, and what that could do to the cell." >}}
+{{< textin
+  question="A sequence of DNA to which a transcription factor binds is called a ________."
+  answer="transcription factor binding site"
+  hint="Reread the paragraph on promoter-proximal elements."
+>}}
+
+{{< selfcheck question="What could happen if a cell had too much of an activating transcription factor present?" hint="Reread the last paragraph of Enhancers and Transcription." >}}
 If too much of an activating transcription factor were present, then transcription would be increased in the cell. This could lead to dramatic alterations in cell function.
 ===CHECKS===
 transcription would be increased in the cell
@@ -110,10 +110,22 @@ dramatic alterations in cell function
 
 ### Explain how enhancers and repressors regulate gene expression
 
+{{< textin
+  question="Each enhancer is made up of short DNA sequences called ________."
+  answer="distal control elements"
+  hint="Reread the caption of the figure in Enhancers and Transcription."
+>}}
+
+{{< textin
+  question="A site outside the promoter, or on another chromosome, where a transcription factor binds to influence transcription of a particular gene is called a(n) ________."
+  answer="trans-acting element"
+  hint="The section's body does not use this term; reread the Key terms list."
+>}}
+
 {{< multiplechoice
   question="What will result from the binding of a transcription factor to an enhancer region?"
   answer="increased transcription of a distant gene"
-  hint="An enhancer is not necessarily near the gene it acts on."
+  hint="Reread the first two paragraphs of Enhancers and Transcription."
 >}}
 decreased transcription of an adjacent gene
 increased transcription of a distant gene
@@ -121,19 +133,7 @@ alteration of the translation of an adjacent gene
 initiation of the recruitment of RNA polymerase
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A segment of DNA that can sit upstream, downstream, thousands of nucleotides away, or on another chromosome, and that increases transcription of a specific gene, is called a(n) ________."
-  answer="enhancer"
-  hint="Its name describes what it does to transcription."
->}}
-
-{{< textin
-  question="A transcription factor binding site located outside the promoter, or on another chromosome, that influences transcription of a particular gene is called a ________."
-  answer="trans-acting element"
-  hint="The Latin prefix means 'across' or 'on the other side' — it sits apart from the gene it controls, unlike its promoter-adjacent counterpart."
->}}
-
-{{< selfcheck question="A scientist identifies a potential transcription regulation site 300bp downstream of a gene and hypothesizes that it is a repressor. What experiment (with results) could he perform to support this hypothesis?" hint="Think about what removing the site should do to transcript levels if the hypothesis is correct." >}}
+{{< selfcheck question="A scientist identifies a potential transcription regulation site 300bp downstream of a gene and hypothesizes that it is a repressor. What experiment (with results) could he perform to support this hypothesis?" hint="Reread Turning Genes Off: Transcriptional Repressors." >}}
 The easiest way to test his hypothesis would be to mutate the site in a cell, and monitor levels of the mRNA transcript made from the gene. If the levels of transcript increase in the mutated cell, then the site was repressing transcription.
 ===CHECKS===
 mutate the site in a cell
@@ -143,4 +143,4 @@ if the levels of transcript increase in the mutated cell, then the site was repr
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 16.4: Eukaryotic Transcription Gene Regulation](https://openstax.org/books/biology-2e/pages/16-4-eukaryotic-transcription-gene-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a colored schematic, not a photograph); its source alt, a letter-spaced text-to-speech spelling ("D N A," "R N A"), rewritten from the image, with a full element-by-element walkthrough moved into a longdesc; the Link to Learning feature box rendered as a callout with descriptive anchor text in place of the source's bare video link; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); all four key-term recall items added from the glossary (*cis*-acting element, enhancer, *trans*-acting element, transcription factor binding site); and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 16.4: Eukaryotic Transcription Gene Regulation](https://openstax.org/books/biology-2e/pages/16-4-eukaryotic-transcription-gene-regulation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a colored schematic, not a photograph); its source alt, a letter-spaced text-to-speech spelling ("D N A," "R N A"), rewritten from the image, with a full element-by-element walkthrough moved into a longdesc; the Link to Learning feature box rendered as a callout with descriptive anchor text in place of the source's bare video link; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items added from the glossary (*cis*-acting element, *trans*-acting element, transcription factor binding site), the *cis*-acting prompt worded from the body's own sentence and the *trans*-acting prompt reworded from the glossary, so that neither prints the transcription-factor-binding-site key; one locally written recall item added from the figure caption's own sentence naming distal control elements, in place of an enhancer recall item that the objective heading printed; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One source Review Question is double-keyed as printed: "The binding of ________ is required for transcription to start" keys RNA polymerase, but the section's own opening paragraph ("RNA polymerase by itself cannot initiate transcription in eukaryotic cells") and Summary ("general transcription factors… must first bind to the TATA box and recruit RNA polymerase") make the option "a transcription factor" equally required, and "a protein" is true of RNA polymerase itself; the page replaces those two options with "mRNA" and "a repressor," both named in this section (transcriptional repressors "bind to promoter or enhancer regions and block transcription"), key unchanged (reported as a source defect).</small>

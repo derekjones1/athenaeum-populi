@@ -278,6 +278,19 @@ test('unprintableFillInTheBlank flags only a matched Fill in the Blank whose key
   assert.equal(unprintableFillInTheBlank(unmatchedItem, FIB_MODULE), null);
 });
 
+test('a source solution that only says the answer is open keys nothing', () => {
+  const open = readModule(`<document xmlns="http://cnx.rice.edu/cnxml"><content>
+    <exercise id="ct-open"><problem><para>Briefly discuss the most interesting or surprising thing you learned about viruses.</para></problem>
+      <solution><para>Answer is open and will vary.</para></solution></exercise>
+    <exercise id="ct-sample"><problem><para>Describe how a prokaryote in a deep-sea vent obtains its energy and carbon.</para></problem>
+      <solution><para>Responses will vary. A possible answer is that it is a chemolithoautotroph using dissolved carbon dioxide.</para></solution></exercise>
+  </content></document>`);
+  const judge = (question, model) => judgeSelfcheck({ type: 'selfcheck', question, model }, open).status;
+  assert.equal(judge('Briefly discuss the most interesting or surprising thing you learned about viruses.', 'A good answer names a specific virus and explains why it surprised the learner.'), 'unkeyed');
+  // a solution that goes on to give a sample answer is still compared
+  assert.equal(judge('Describe how a prokaryote in a deep-sea vent obtains its energy and carbon.', 'Lytic phages burst their host cells after assembling new virions.'), 'diverges');
+});
+
 test('isLifeSciencesPage scopes the body-print gate to biology and microbiology, not math', () => {
   assert.equal(isLifeSciencesPage('content/life-health-sciences/microbiology/04-prokaryotic-diversity/05-deeply-branching-bacteria.md'), true);
   assert.equal(isLifeSciencesPage('content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md'), true);

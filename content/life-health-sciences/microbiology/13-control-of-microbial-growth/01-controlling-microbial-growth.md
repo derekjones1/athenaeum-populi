@@ -83,7 +83,7 @@ One food sterilization protocol, **commercial sterilization**, uses heat at a te
 
 **Check Your Understanding**
 
-{{< sortbins question="Sort each phrase under the process it describes: sterilization or aseptic technique." hint="Recall which process removes or kills every vegetative cell, endospore, and virus from an item, and which one is a set of protocols for keeping a surface or field free of contamination." >}}
+{{< sortbins question="Sort each phrase under the process it describes: sterilization or aseptic technique." hint="Reread the first two paragraphs of the Sterilization subsection." >}}
 {"bins":["Sterilization","Aseptic technique"],"items":[{"label":"The complete removal or killing of all vegetative cells, endospores, and viruses from an item or environment","bin":0},{"label":"A combination of protocols that collectively maintain sterility, or asepsis","bin":1},{"label":"Generally reserved for laboratory, medical, manufacturing, and food industry settings","bin":0},{"label":"Necessary to prevent contamination of sterile surfaces during clinical procedures","bin":1},{"label":"Accomplished through physical means, such as high heat, pressure, or filtration, or through a chemical sterilant","bin":0},{"label":"Failure to practice it may put the patient at risk for sepsis","bin":1}]}
 {{< /sortbins >}}
 
@@ -115,19 +115,19 @@ The term **sanitization** refers to the cleansing of fomites to remove enough mi
 | For use on living tissue | Antisepsis | Reduces microbial load on skin or tissue through application of an antimicrobial chemical | Cleaning skin broken due to injury; cleaning skin before surgery | Boric acid, isopropyl alcohol, hydrogen peroxide, iodine (betadine) |
 | For use on living tissue | Degerming | Reduces microbial load on skin or tissue through gentle to firm scrubbing and the use of mild chemicals | Handwashing | Soap, alcohol swab |
 
-{{< mediafigure src="microbiology/OSC_Microbio_13_01_ControlTBL" alt="A four-column table titled 'Common Protocols for Control of Microbial Growth,' divided into a group of rows for protocols used on fomites (disinfection, sanitization, sterilization) and a group of rows for protocols used on living tissue (antisepsis, degerming), each row giving its definition, common application, and common agents." longdesc="A table titled: Common protocols for control of microbial growth. Four columns: protocol, definition, common application and common agents. The table is divided by protocols used for fomites and those used on living tissue. Protocols for fomites include disinfection, sanitation, and sterilization. Disinfection reduces or destroys microbial load of an inanimate item through application of heat or antimicrobial chemicals. Disinfection involves cleaning surfaces like laboratory benches, clinical surfaces, and bathrooms and uses Chlorine bleach, phenols (e.g., Lysol), glutaraldehyde. Sanitization reduces microbial load of an inanimate item to safe public health levels through application of heat or antimicrobial chemicals. Sanitation involves Commercial dishwashing of eating utensils, cleaning public restrooms and uses Detergents containing phosphates (e.g., Finish), industrial-strength cleaners containing quaternary ammonium compounds. Sterilization Completely eliminates all vegetative cells, endospores, and viruses from an inanimate item. Sterilization involves Preparation of surgical equipment and of needles used for injection and uses Pressurized steam (autoclave), chemicals, radiation. Protocols for living tissue include antisepsis and degerming. Antisepsis Reduces microbial load on skin or tissue through application of an antimicrobial chemical. Antisepsis involves Cleaning skin broken due to injury; cleaning skin before surgery and uses Boric acid, isopropyl alcohol, hydrogen peroxide, iodine (betadine). Degerming Reduces microbial load on skin or tissue through gentle to firm scrubbing and the use of mild chemicals. Degerming involves Handwashing and uses Soap, alcohol swab." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_13_01_ControlTBL" alt="A four-column table titled 'Common Protocols for Control of Microbial Growth,' divided into a group of rows for protocols used on fomites (disinfection, sanitization, sterilization) and a group of rows for protocols used on living tissue (antisepsis, degerming), each row giving its definition, common application, and common agents." longdesc="A table titled: Common protocols for control of microbial growth. Four columns: protocol, definition, common application and common agents. The table is divided by protocols used for fomites and those used on living tissue. Protocols for fomites include disinfection, sanitization, and sterilization. Disinfection reduces or destroys microbial load of an inanimate item through application of heat or antimicrobial chemicals. Disinfection involves cleaning surfaces like laboratory benches, clinical surfaces, and bathrooms and uses Chlorine bleach, phenols (e.g., Lysol), glutaraldehyde. Sanitization reduces microbial load of an inanimate item to safe public health levels through application of heat or antimicrobial chemicals. Sanitization involves Commercial dishwashing of eating utensils, cleaning public restrooms and uses Detergents containing phosphates (e.g., Finish), industrial-strength cleaners containing quaternary ammonium compounds. Sterilization Completely eliminates all vegetative cells, endospores, and viruses from an inanimate item. Sterilization involves Preparation of surgical equipment and of needles used for injection and uses Pressurized steam (autoclave), chemicals, radiation. Protocols for living tissue include antisepsis and degerming. Antisepsis Reduces microbial load on skin or tissue through application of an antimicrobial chemical. Antisepsis involves Cleaning skin broken due to injury; cleaning skin before surgery and uses Boric acid, isopropyl alcohol, hydrogen peroxide, iodine (betadine). Degerming Reduces microbial load on skin or tissue through gentle to firm scrubbing and the use of mild chemicals. Degerming involves Handwashing and uses Soap, alcohol swab." kind="diagram" >}}
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
-{{< sortbins question="Sort each phrase under the chemical it describes: disinfectant or antiseptic." hint="Recall which chemical is used on nonliving surfaces such as lab benches, and which is safe for use on living skin or tissue." >}}
+{{< sortbins question="Sort each phrase under the chemical it describes: disinfectant or antiseptic." hint="Reread the second and third paragraphs of Other Methods of Control." >}}
 {"bins":["Disinfectant","Antiseptic"],"items":[{"label":"Inactivates most microbes on the surface of a fomite using antimicrobial chemicals or heat","bin":0},{"label":"Safe for use on living skin or tissues","bin":1},{"label":"An example is chlorine bleach, used on laboratory benches, clinical surfaces, and bathroom sinks","bin":0},{"label":"Examples include hydrogen peroxide and isopropyl alcohol","bin":1},{"label":"Ideally fast acting, stable, easy to prepare, inexpensive, and easy to use","bin":0},{"label":"Must be able to penetrate tissue deeply without causing tissue damage","bin":1}]}
 {{< /sortbins >}}
 
 {{< multiplechoice
-  question="Which is most effective at removing microbes from a product: sanitization, degerming, or sterilization?"
+  question="Which is most effective at removing microbes from a product: sanitization, degerming, or sterilization? Explain."
   answer="sterilization"
-  hint="Recall which of the three completely removes or kills every vegetative cell, endospore, and virus, rather than only reducing microbial numbers."
+  hint="Compare the three protocols' definitions in the Common Protocols table."
 >}}
 sanitization
 degerming
@@ -152,7 +152,7 @@ Although *-static* treatments do not actually kill infectious agents, they are o
 
 The degree of microbial control can be evaluated using a **microbial death curve** to describe the progress and effectiveness of a particular protocol. When exposed to a particular microbial control protocol, a fixed percentage of the microbes within the population will die. Because the rate of killing remains constant even when the population size varies, the percentage killed is more useful information than the absolute number of microbes killed. Death curves are often plotted as semilog plots just like microbial growth curves because the reduction in microorganisms is typically logarithmic (shown below). The amount of time it takes for a specific protocol to produce a one order-of-magnitude decrease in the number of organisms, or the death of 90% of the population, is called the **decimal reduction time (DRT)** or **D-value**.
 
-{{< mediafigure src="microbiology/OSC_Microbio_13_01_MDC" alt="A semilog plot titled 'Microbial Death Curve' graphing log₁₀ number of live bacterial cells against time in minutes from 0 to 50. An arithmetic-scale line drops sharply and is indistinguishable from zero by about minute 10. A logarithmic-scale line declines in a straight diagonal from 10¹⁰ at time 0 to 10⁰ at time 50, with a purple bracket marking the D-value over the interval from 10⁶ to 10⁵." longdesc="Beside the graph, a table lists the number of live bacterial cells at 5-minute intervals: 10¹⁰ cells at 0 minutes, 10⁹ at 5, 10⁸ at 10, 10⁷ at 15, 10⁶ at 20, 10⁵ at 25, 10⁴ at 30, 10³ at 35, 10² at 40, 10¹ at 45, and 10⁰ at 50 — each interval a one-log, 90% reduction from the one before. The graph itself plots two lines from this same data: the arithmetic-scale line falls steeply from 10¹⁰ and is indistinguishable from 0 on the arithmetic axis by about minute 10; the logarithmic-scale line falls in a single straight diagonal across the full 50 minutes, since a logarithmic axis turns the constant-percentage decline into a constant slope. A purple bracket spans the interval from 10⁶ (minute 20) to 10⁵ (minute 25) on the logarithmic line, labeled 'D-value,' marking the five minutes it takes for this one order-of-magnitude, 90% reduction." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_13_01_MDC" alt="A semilog plot titled 'Microbial Death Curve' graphing log₁₀ number of live bacterial cells against time in minutes from 0 to 50. An arithmetic-scale line drops sharply and is indistinguishable from zero by about minute 10. A logarithmic-scale line declines in a straight diagonal from 10¹⁰ at time 0 to 10⁰ at time 50, with a purple bracket marking the D-value over the interval from 10⁶ to 10⁵." longdesc="Beside the graph, a table lists the number of live bacterial cells at 5-minute intervals: 10¹⁰ cells at 0 minutes, 10⁹ at 5, 10⁸ at 10, 10⁷ at 15, 10⁶ at 20, 10⁵ at 25, 10⁴ at 30, 10³ at 35, 10² at 40, 10¹ at 45, and 10⁰ at 50 — each interval a one-log, 90% reduction from the one before. The graph has two vertical scales: at left, in red, log₁₀ of number of live bacterial cells from 0 to 10; at right, in blue, the arithmetic number of live bacterial cells from 1 to 10,000,000,000, each value level with its logarithm. A legend below names the blue line arithmetic scale and the red line logarithmic scale. The graph plots two lines from this same data: the arithmetic-scale line falls steeply from 10¹⁰ and is indistinguishable from 0 on the arithmetic axis by about minute 10; the logarithmic-scale line falls in a single straight diagonal across the full 50 minutes, since a logarithmic axis turns the constant-percentage decline into a constant slope. A purple bracket spans the interval from 10⁶ (minute 20) to 10⁵ (minute 25) on the logarithmic line, labeled 'D-value,' marking the five minutes it takes for this one order-of-magnitude, 90% reduction." kind="diagram" >}}
 Microbial death is logarithmic and easily observed using a semilog plot instead of an arithmetic one. The decimal reduction time (D-value) is the time it takes to kill 90% of the population (a 1-log decrease in the total population) when exposed to a specific microbial control protocol, as indicated by the purple bracket.
 {{< /mediafigure >}}
 
@@ -160,7 +160,7 @@ Several factors contribute to the effectiveness of a disinfecting agent or micro
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are two possible reasons for choosing a bacteriostatic treatment over a bactericidal one?" hint="Recall what this section says -static treatments offer beyond simply being weaker than -cidal ones." >}}
+{{< selfcheck question="What are two possible reasons for choosing a bacteriostatic treatment over a bactericidal one?" hint="Reread the second paragraph of Measuring Microbial Control." >}}
 A bacteriostatic treatment may be chosen over a bactericidal one because -static treatments are often less toxic to humans and other animals, and because they may better preserve the integrity of the item treated.
 ===CHECKS===
 often less toxic to humans and other animals
@@ -219,10 +219,12 @@ conditions that limit contact between the agent and the targeted cells, such as 
 
 ### Compare disinfectants, antiseptics, and sterilants
 
+{{< textin question="A protocol that removes potential pathogens from living tissue is called ________." answer="antisepsis" hint="Reread the third paragraph of Other Methods of Control." >}}
+
 {{< multiplechoice
   question="Which of the following is suitable for use on tissues for microbial control to prevent infection?"
   answer="antiseptic"
-  hint="Recall which of the four options is safe for use on living skin or tissue."
+  hint="Reread the third paragraph of Other Methods of Control."
 >}}
 disinfectant
 antiseptic
@@ -230,12 +232,10 @@ sterilant
 water
 {{< /multiplechoice >}}
 
-{{< textin question="A protocol that removes potential pathogens from living tissue is called ________." answer="antisepsis" hint="Name the process of applying an antiseptic." >}}
-
 {{< multiplechoice
   question="Which of the following chemicals can also kill endospores, given sufficient exposure time?"
   answer="sterilant"
-  hint="Recall which of the three chemical categories this section describes as capable of killing endospores, not just vegetative cells and viruses."
+  hint="Reread the first paragraph of the Sterilization subsection."
 >}}
 disinfectant
 sterilant
@@ -247,7 +247,7 @@ antiseptic
 {{< multiplechoice
   question="Which of the following types of medical items requires sterilization?"
   answer="needles"
-  hint="Recall which of these items penetrates sterile tissues or the bloodstream, rather than only contacting skin or mucous membranes."
+  hint="Reread the paragraph on the three categories of clinical items in Other Methods of Control."
 >}}
 needles
 bed linens
@@ -258,7 +258,7 @@ blood pressure cuffs
 {{< multiplechoice
   question="Which of the following best describes a microbial control protocol that inhibits the growth of molds and yeast?"
   answer="fungistatic"
-  hint="Recall which suffix names a treatment that inhibits, rather than kills, the growth of fungi."
+  hint="Reread the first paragraph of Measuring Microbial Control."
 >}}
 bacteriostatic
 fungicidal
@@ -269,7 +269,7 @@ fungistatic
 {{< multiplechoice
   question="The decimal reduction time refers to the amount of time it takes to which of the following?"
   answer="reduce a microbial population by 90%"
-  hint="Recall what percentage reduction defines one order-of-magnitude, logarithmic decrease in a microbial population."
+  hint="Reread the last sentence of the microbial death curve paragraph."
 >}}
 reduce a microbial population by 10%
 reduce a microbial population by 0.1%
@@ -280,17 +280,17 @@ completely eliminate a microbial population
 {{< multiplechoice
   question="Sanitization leaves an object free of microbes."
   answer="False"
-  hint="Recall what level of microbial reduction sanitization actually achieves, as described in the Other Methods of Control discussion."
+  hint="Reread the sanitization paragraph near the end of Other Methods of Control."
 >}}
 True
 False
 {{< /multiplechoice >}}
 
-{{< textin question="A medical item that comes into contact with intact skin and does not penetrate sterile tissues or come into contact with mucous membranes is called a(n) ________ item." answer="noncritical" accept="non-critical" hint="Name the category of clinical item that needs to be clean, but not highly disinfected." >}}
+{{< textin question="A medical item that comes into contact with intact skin and does not penetrate sterile tissues or come into contact with mucous membranes is called a(n) ________ item." answer="noncritical" accept="non-critical|noncritical item|non-critical item" hint="Reread the paragraph on the three categories of clinical items in Other Methods of Control." >}}
 
-{{< textin question="The goal of ________ ________ protocols is to rid canned produce of *Clostridium botulinum* endospores." answer="commercial sterilization" hint="Name the food-industry sterilization protocol that uses heat low enough to preserve food quality but high enough to destroy foodborne pathogens." >}}
+{{< textin question="The goal of ________ ________ protocols is to rid canned produce of *Clostridium botulinum* endospores." answer="commercial sterilization" accept="commercial sterilisation|quasi-sterilization" hint="Reread the paragraph just before the second Check Your Understanding box." >}}
 
-{{< selfcheck question="What is the purpose of degerming? Does it completely eliminate microbes?" hint="Recall what degerming accomplishes through scrubbing, and whether this section says any degerming method removes every microbe from the skin's surface." >}}
+{{< selfcheck question="What is the purpose of degerming? Does it completely eliminate microbes?" hint="Reread the degerming paragraph in Other Methods of Control." >}}
 Degerming significantly reduces microbial numbers by gently scrubbing living tissue, most commonly skin, with a mild chemical (e.g., soap) to avoid the transmission of pathogenic microbes; wiping the skin with an alcohol swab at an injection site is another example. These degerming methods remove most (but not all) microbes from the skin's surface, so degerming does not completely eliminate microbes.
 ===CHECKS===
 significantly reduces microbial numbers by gently scrubbing living tissue with a mild chemical
@@ -298,7 +298,7 @@ another example is wiping the skin with an alcohol swab at an injection site
 these methods remove most (but not all) microbes from the skin's surface
 {{< /selfcheck >}}
 
-{{< selfcheck question="When plotting microbial death curves, how might they look different for bactericidal versus bacteriostatic treatments?" hint="Recall that a -cidal treatment kills the targeted microbes, while a -static treatment only keeps their population in check without killing it." >}}
+{{< selfcheck question="When plotting microbial death curves, how might they look different for bactericidal versus bacteriostatic treatments?" hint="Combine the first two paragraphs of Measuring Microbial Control with the microbial death curve figure." >}}
 A microbial death curve plots the decline of a microbial population over time in response to a control measure. Because a bactericidal treatment actually kills the targeted bacteria, its death curve would show the bacterial population declining logarithmically over time, the way the microbial death curve figure shows. Because a bacteriostatic treatment does not kill bacteria but only inhibits their growth, keeping the population in check rather than reducing it, its curve would not show this same decline; instead, the population size would stay fairly level rather than dropping toward zero.
 ===CHECKS===
 a bactericidal treatment actually kills the targeted bacteria, so its curve would show the population declining logarithmically over time
@@ -306,21 +306,23 @@ a bacteriostatic treatment does not kill bacteria but only inhibits their growth
 its curve would not show this decline, staying fairly level rather than dropping toward zero
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are the benefits of cleaning something to a level of cleanliness beyond what is required? What are some possible disadvantages of doing so?" hint="Weigh the extra margin of safety against endospores and other resistant microbes against what this section says a milder, ideal disinfectant or a -static treatment offers instead." >}}
-Cleaning beyond the required level gives an extra margin of safety, similar to the large margin of error built into commercial sterilization protocols, so that even unusually resistant microbes, including endospores, are more likely to be eliminated. However, going beyond what is required also has costs: an ideal disinfectant is meant to be fast acting, stable, inexpensive, and easy to use, so a more intensive protocol is likely to be more expensive and less practical; a chemical strong enough for disinfection is meant for nonliving surfaces such as laboratory benches, clinical surfaces, and bathroom sinks, not tissue, the way an antiseptic is safe for use on living skin or tissues; and harsher conditions, such as the extreme temperatures and pressures needed to eliminate endospores, can damage the integrity of the item or tissue being treated, whereas a milder, -static treatment is less toxic and better preserves that integrity.
+{{< selfcheck question="What are the benefits of cleaning something to a level of cleanliness beyond what is required? What are some possible disadvantages of doing so?" hint="Reread the Sterilization subsection, the opening paragraphs of Other Methods of Control, and the second paragraph of Measuring Microbial Control." >}}
+The section's sentences bear on both sides. On the benefit side, sterilization is the complete removal or killing of all vegetative cells, endospores, and viruses from the targeted item or environment, whereas typical disinfection does not lead to sterilization because endospores tend to survive even when all vegetative cells have been killed. On the disadvantage side, sterilization protocols require procedures that are not practical, or necessary, in many settings; and although -static treatments do not actually kill infectious agents, they are often less toxic to humans and other animals, and may also better preserve the integrity of the item treated. Such treatments are typically sufficient to keep the microbial population of an item in check.
 ===CHECKS===
-an extra margin of safety, similar to the margin of error built into commercial sterilization, against resistant microbes such as endospores
-a more intensive protocol is likely to be more expensive and less practical than the ideal, inexpensive, easy-to-use disinfectant
-a chemical strong enough for disinfection is meant for nonliving surfaces, not tissue, the way an antiseptic is safe for use on living skin or tissues
-harsher conditions can damage the integrity of the item or tissue, which a milder, -static treatment better preserves
+sterilization is the complete removal or killing of all vegetative cells, endospores, and viruses
+typical disinfection does not lead to sterilization because endospores tend to survive
+sterilization protocols require procedures that are not practical, or necessary, in many settings
+-static treatments are often less toxic to humans and other animals, and may also better preserve the integrity of the item treated
 {{< /selfcheck >}}
 
 ### Differentiate between microorganisms of various biological safety levels and explain methods used for handling microbes at each level
 
+{{< textin question="________ agents are the most dangerous and often fatal, are typically exotic, are easily transmitted by inhalation, and cause infections for which there are no treatments or vaccinations." answer="BSL-4" accept="BSL4|biosafety level 4|biological safety level 4" hint="Reread the last BSL paragraph of Laboratory Biological Safety Levels." >}}
+
 {{< multiplechoice
   question="Which biosafety level is appropriate for research with microbes or infectious agents that pose moderate risk to laboratory workers and the community, and are typically indigenous?"
   answer="BSL-2"
-  hint="Recall which biosafety level's agents are described as typically indigenous and posing moderate risk."
+  hint="Reread the BSL paragraphs of Laboratory Biological Safety Levels, or the table that summarizes them."
 >}}
 BSL-1
 BSL-2
@@ -328,15 +330,13 @@ BSL-3
 BSL-4
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What are some characteristics of microbes and infectious agents that would require handling in a BSL-3 laboratory?" hint="The BSL-3 paragraph names what these agents can cause and where they may come from." >}}
+{{< selfcheck question="What are some characteristics of microbes and infectious agents that would require handling in a BSL-3 laboratory?" hint="Reread the BSL-3 paragraph of Laboratory Biological Safety Levels." >}}
 BSL-3 agents have the potential to cause lethal infections by inhalation. These may be either indigenous or "exotic," meaning that they are derived from a foreign location, and include pathogens such as *Mycobacterium tuberculosis*, *Bacillus anthracis*, West Nile virus, and human immunodeficiency virus (HIV).
 ===CHECKS===
 have the potential to cause lethal infections by inhalation
 may be either indigenous or exotic, meaning derived from a foreign location
 {{< /selfcheck >}}
 
-{{< textin question="________ agents are the most dangerous and often fatal, are typically exotic, are easily transmitted by inhalation, and cause infections for which there are no treatments or vaccinations." answer="BSL-4" hint="Name the highest, most stringent biosafety level, reserved for agents like Ebola and Marburg viruses." >}}
-
 ---
 
-<small>This section is adapted from [Microbiology, Section 13.1: Controlling Microbial Growth](https://openstax.org/books/microbiology/pages/13-1-controlling-microbial-growth) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four source figures are re-encoded as WebP and rendered as mediafigures; the BSL4Suit alt is rewritten from what the photo shows (the source alt's "suits that completely covers them" has a subject–verb defect); the BSLs and Common Protocols figures are table images, so each is transcribed as a Markdown table (the BSLs table omitting its fourth, purely graphical "CDC Classification" pyramid column, which the kept figure's own alt now describes) with the figure kept immediately after the table, the source's long alt as `longdesc` (fixing "not knows" to "not known" in the BSLs longdesc, a source-alt defect), and, for the Common Protocols table, no caption line, since the source prints none; the microbial death curve figure's longdesc corrects the source alt's "15there" to "15 at" and adds the data table beside the graph, which the alt alone could not carry within its 600-character cap. The footnote citing the CDC's "Recognizing the Biosafety Levels" page is rendered as an inline parenthetical citation with its bare access URL dropped. The "noncritical" textin lists `accept="non-critical"`, a hyphenated spelling the real grader would otherwise reject. The source's "the targeted cells cells—for example" (a duplicated word) is printed once, as intended; a suspected source defect. Of the module's six body Check Your Understanding questions, one is a self-check verbatim from a single sentence with a list too long for another form (BSL determination), two "difference between X and Y" questions are rendered as body `sortbins` (sterilization vs. aseptic technique; disinfectant vs. antiseptic) with items drawn only from this module's own sentences, one "which offers its own alternatives" question is a body `multiplechoice` keyed by the module's own contrast of "complete" versus "most but not all" versus "enough... deemed safe," and two are self-checks with model answers and rubrics assembled only from this module's own sentences (a two-clause "two reasons" answer and a "name at least two factors" answer whose module-given list is longer than another form holds). Of the module's thirteen end-of-section exercises, all five Multiple Choice, the one True/False, and both Fill in the Blank items are adapted into Practice unchanged; of the three unkeyed Short Answer questions, one ("What are some factors that alter the effectiveness of a disinfectant?") is a reword of the body Check Your Understanding question directly above ("Name at least two factors that can compromise the effectiveness of a disinfecting agent") and so is not separately used in Practice, and the other two are unkeyed selfchecks with model answers and rubrics assembled only from this module's own sentences (BSL-3's characteristics need its two adjacent defining sentences; degerming's purpose and completeness need its definition sentence plus its later remove-most-but-not-all sentence), since neither is fixed by a single module sentence; of the two unkeyed Critical Thinking questions, both are Practice self-checks: the bactericidal-versus-bacteriostatic death-curve question is reasoned from this module's own -cidal/-static and death-curve sentences, and the benefits/disadvantages of over-cleaning question draws its model answer from the ideal-disinfectant characteristics (fast acting, inexpensive, easy to use), the disinfectant/antiseptic toxicity contrast, and the endospore-elimination and -static-treatment sentences, without adding any claim the module does not make. The "Compare disinfectants, antiseptics, and sterilants" objective, left thin by the source's own exercise set, is filled out with one key-term recall `textin` (antisepsis) and one author-built `multiplechoice` keyed by this module's own single sentence that only a sterilant can also kill endospores; the "Differentiate between... biological safety levels" objective is likewise filled out with a `textin` cloze built from this module's own BSL-4 sentence. Key terms are compiled from the module's 26 defined-term elements and the book's Glossary appendix, rendered as 25 bullets: "decimal reduction time (DRT)" and "D-value" name one concept and are combined into a single bullet, "decimal reduction time (DRT, D-value)," with no sentence-derived definitions needed. Clinical Focus Part 1 and Part 2 both appear on this page; Part 2 says so directly rather than using the source's own "go back to the previous box" link, and names where the case continues (Testing the Effectiveness of Antiseptics and Disinfectants) in place of the source's "jump to the next box" link.</small>
+<small>This section is adapted from [Microbiology, Section 13.1: Controlling Microbial Growth](https://openstax.org/books/microbiology/pages/13-1-controlling-microbial-growth) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four source figures are re-encoded as WebP and rendered as mediafigures; the BSL4Suit alt is rewritten from what the photo shows (the source alt's "suits that completely covers them" has a subject–verb defect); the BSLs and Common Protocols figures are table images, so each is transcribed as a Markdown table (the BSLs table omitting its fourth, purely graphical "CDC Classification" pyramid column, which the kept figure's own alt now describes) with the figure kept immediately after the table, the source's long alt as `longdesc` (fixing "not knows" to "not known" in the BSLs longdesc, a source-alt defect, and "sanitation" to "sanitization", the protocol the table prints, in the Common Protocols longdesc), and, for the Common Protocols table, no caption line, since the source prints none; the microbial death curve figure's longdesc corrects the source alt's "15there" to "15 at" and adds the data table beside the graph, which the alt alone could not carry within its 600-character cap. The footnote citing the CDC's "Recognizing the Biosafety Levels" page is rendered as an inline parenthetical citation with its bare access URL dropped. The "noncritical" textin lists `accept="non-critical"`, a hyphenated spelling the real grader would otherwise reject. The source's "the targeted cells cells—for example" (a duplicated word) is printed once, as intended; a suspected source defect. Of the module's six body Check Your Understanding questions, one is a self-check verbatim from a single sentence with a list too long for another form (BSL determination), two "difference between X and Y" questions are rendered as body `sortbins` (sterilization vs. aseptic technique; disinfectant vs. antiseptic) with items drawn only from this module's own sentences, one "which offers its own alternatives" question is a body `multiplechoice` keyed by the module's own contrast of "complete" versus "most but not all" versus "enough... deemed safe," and two are self-checks with model answers and rubrics assembled only from this module's own sentences (a two-clause "two reasons" answer and a "name at least two factors" answer whose module-given list is longer than another form holds). Of the module's thirteen end-of-section exercises, all five Multiple Choice, the one True/False, and both Fill in the Blank items are adapted into Practice unchanged; of the three unkeyed Short Answer questions, one ("What are some factors that alter the effectiveness of a disinfectant?") is a reword of the body Check Your Understanding question directly above ("Name at least two factors that can compromise the effectiveness of a disinfecting agent") and so is not separately used in Practice, and the other two are unkeyed selfchecks with model answers and rubrics assembled only from this module's own sentences (BSL-3's characteristics need its two adjacent defining sentences; degerming's purpose and completeness need its definition sentence plus its later remove-most-but-not-all sentence), since neither is fixed by a single module sentence; of the two unkeyed Critical Thinking questions, both are Practice self-checks: the bactericidal-versus-bacteriostatic death-curve question is reasoned from this module's own -cidal/-static and death-curve sentences, and the benefits/disadvantages of over-cleaning question draws its model answer from the ideal-disinfectant characteristics (fast acting, inexpensive, easy to use), the sentence that sterilization protocols are not practical, or necessary, in many settings, the disinfectant/antiseptic toxicity contrast, and the endospore-elimination and -static-treatment sentences, without adding any claim the module does not make. The "Compare disinfectants, antiseptics, and sterilants" objective, left thin by the source's own exercise set, is filled out with one key-term recall `textin` (antisepsis) and one author-built `multiplechoice` keyed by this module's own single sentence that only a sterilant can also kill endospores; the "Differentiate between... biological safety levels" objective is likewise filled out with a `textin` cloze built from this module's own BSL-4 sentence. Key terms are compiled from the module's 26 defined-term elements and the book's Glossary appendix, rendered as 25 bullets: "decimal reduction time (DRT)" and "D-value" name one concept and are combined into a single bullet, "decimal reduction time (DRT, D-value)," with no sentence-derived definitions needed. Clinical Focus Part 1 and Part 2 both appear on this page; Part 2 says so directly rather than using the source's own "go back to the previous box" link, and names where the case continues (Testing the Effectiveness of Antiseptics and Disinfectants) in place of the source's "jump to the next box" link.</small>

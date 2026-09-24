@@ -21,7 +21,7 @@ The central nervous system (CNS) is made up of the brain (a part of which is sho
 
 The entire brain contains only about 8.5 tablespoons of CSF, but CSF is constantly produced in the ventricles. This creates a problem when a ventricle is blocked—the CSF builds up and creates swelling and the brain is pushed against the skull. This swelling condition is called hydrocephalus ("water head") and can cause seizures, cognitive problems, and even death if a shunt is not inserted to remove the fluid and pressure.
 
-{{< mediafigure src="biology/Figure_35_03_01" kind="diagram" eager="true" alt="A labeled cross-section diagram of the scalp and skull, showing three membrane layers between the bone and the folded cerebral cortex tissue: a thick yellow layer with blue vein-like vessels running through it directly beneath the skin and bone, a thin wavy layer beneath that, and a red line hugging the folded cortex below." longdesc="The cross-section runs skin to cortex, top to bottom. A wavy strip labeled 'Skin' caps the top left, and a stippled strip labeled 'Bone' caps the top right, together forming the scalp and skull along the top edge. 'Veins' labels a branching blue network that threads through a thick yellow layer just beneath the skin and bone; that yellow layer is labeled 'Dura mater' at the lower left. Below it, a thin wavy band, labeled 'Arachnoid mater' at the lower right, crosses the middle. A red line just beneath the arachnoid mater, labeled 'Pia mater' at the bottom left, follows the folds of the stippled tissue below it, which is labeled 'Cerebral cortex' at the bottom right and dips down into a deep central fold." >}}
+{{< mediafigure src="biology/Figure_35_03_01" kind="diagram" eager="true" alt="A labeled cross-section diagram of the scalp and skull, showing three membrane layers between the bone and the folded cerebral cortex tissue: a thick yellow layer with blue vein-like vessels running through it directly beneath the skin and bone, a web-like layer beneath that, and a thin line hugging the folded cortex below." longdesc="The cross-section runs skin to cortex, top to bottom, in curved layers that each span the full width. The top layer, a peach strip, is labeled 'Skin'; beneath it a stippled layer is labeled 'Bone' at the right. Beneath the bone, a thick yellow layer is labeled 'Dura mater' at the lower left; it dips down as a narrow yellow sheet into a deep central cleft that separates two halves of the brain tissue. 'Veins' has two leader lines to a branching blue network that runs through the bone and the yellow dura, widens into a large blue channel where the dura dips into the cleft, and continues along the layer below. Beneath the dura, a white, web-like layer is labeled 'Arachnoid mater' at the lower right. A thin line at the surface of the stippled tissue, labeled 'Pia mater' at the bottom left, follows the tissue down into the cleft; fine red vessels run along and into this tissue, which is labeled 'Cerebral cortex' at the bottom right." >}}
 The cerebral cortex is covered by three layers of meninges: the dura, arachnoid, and pia maters. (credit: modification of work by Gray's Anatomy)
 {{< /mediafigure >}}
 
@@ -66,7 +66,7 @@ The **temporal lobe** is located at the base of the brain by your ears and is pr
 
 Compared to other vertebrates, mammals have exceptionally large brains for their body size. An entire alligator's brain, for example, would fill about one and a half teaspoons. This increase in brain to body size ratio is especially pronounced in apes, whales, and dolphins. While this increase in overall brain size doubtlessly played a role in the evolution of complex behaviors unique to mammals, it does not tell the whole story. Scientists have found a relationship between the relatively high surface area of the cortex and the intelligence and complex social behaviors exhibited by some mammals. This increased surface area is due, in part, to increased folding of the cortical sheet (more sulci and gyri). For example, a rat cortex is very smooth with very few sulci and gyri. Cat and sheep cortices have more sulci and gyri. Chimps, humans, and dolphins have even more.
 
-{{< mediafigure src="biology/Figure_B35_03_08" kind="diagram" alt="At left, a silhouette of a human adult holding a cat, which holds a mouse, each animal's brain shown as a small inset on its head; at right, five brain illustrations of increasing size and cortical folding, labeled Rat, Cat, Chimpanzee, Human, and Dolphin." longdesc="At left, a brown silhouette shows a human adult in profile holding a cat, which in turn has a mouse near its paws — the three animals drawn at their relative body sizes, largest to smallest, each with a small inset shape on its head showing its brain at the same relative scale. At right, five separate brain illustrations are arranged in two columns, labeled beneath each. The left column, top to bottom, holds 'Rat' (a tiny, nearly smooth brain), 'Cat' (a somewhat larger brain with a few shallow folds), and 'Chimpanzee' (a substantially larger, more deeply folded brain). The right column holds 'Human' at the top (a large, densely folded brain) and 'Dolphin' at the bottom (a brain similar in size to the human's, folded even more densely, shown at an angle)." >}}
+{{< mediafigure src="biology/Figure_B35_03_08" kind="diagram" alt="At left, silhouettes of a human adult, a cat sitting in front of the human, and a rat at the cat's feet, each animal's brain shown on its head; at right, five brain illustrations of increasing size and cortical folding, labeled Rat, Cat, Chimpanzee, Human, and Dolphin." longdesc="At left, overlapping brown silhouettes show the head and shoulders of a human adult in profile, a cat sitting in front of the human, and a rat crouched at the cat's front feet — the three animals drawn at their relative body sizes, largest to smallest, each with its brain drawn on its head at the same relative scale. At right, five separate brain illustrations are arranged in two columns, labeled beneath each. The left column, top to bottom, holds 'Rat' (a tiny, nearly smooth brain), 'Cat' (a somewhat larger brain with a few shallow folds), and 'Chimpanzee' (a substantially larger, more deeply folded brain). The right column holds 'Human' at the top (a large, densely folded brain) and 'Dolphin' at the bottom (a brain slightly larger than the human's, folded even more densely, shown at an angle)." >}}
 Mammals have larger brain-to-body ratios than other vertebrates. Within mammals, increased cortical folding and surface area is correlated with complex behavior.
 {{< /mediafigure >}}
 {{< /callout >}}
@@ -79,7 +79,7 @@ Interconnected brain areas called the **basal ganglia** (or **basal nuclei**), v
 
 The **thalamus** (Greek for "inner chamber"), illustrated below, acts as a gateway to and from the cortex. It receives sensory and motor inputs from the body and also receives feedback from the cortex. This feedback mechanism can modulate conscious awareness of sensory and motor inputs depending on the attention and arousal state of the animal. The thalamus helps regulate consciousness, arousal, and sleep states. A rare genetic disorder called fatal familial insomnia causes the degeneration of thalamic neurons and glia. This disorder prevents affected patients from being able to sleep, among other symptoms, and is eventually fatal.
 
-{{< mediafigure src="biology/Figure_35_03_06" kind="diagram" alt="A sagittal illustration of the brain with the cortex partly cut away to reveal internal structures: a band of tissue outlined in red arcing beneath the cortex, a central rounded structure, a small round gland hanging below it, and the wrinkled cerebellum at the back." longdesc="'Cingulate gyrus' labels the band of cortical tissue outlined in red that arcs over the top of the internal structures, just beneath the outer cortex. 'Thalamus' labels the oval structure at the center of that arc. 'Hypothalamus' labels the tissue just below and in front of the thalamus. 'Pituitary' labels a small round gland hanging beneath the hypothalamus. 'Amygdala' labels a small yellow ball just behind the tip of the pituitary stalk, toward the brainstem. 'Hippocampus' labels an elongated structure running from beneath the thalamus back toward the wrinkled cerebellum." >}}
+{{< mediafigure src="biology/Figure_35_03_06" kind="diagram" alt="A sagittal illustration of the brain with the cortex partly cut away to reveal internal structures: a band of tissue outlined in red arcing beneath the cortex, a central rounded structure, a small yellow ball below it, and the wrinkled cerebellum at the back." longdesc="The brain faces left. 'Cingulate gyrus' labels the band of cortical tissue outlined in red that arcs over the top of the internal structures, just beneath the outer cortex. Inside that arc, a purple C-shaped band curves around the central structures. 'Thalamus' labels the oval structure at the center of the arc. 'Hypothalamus' labels the tissue just below and in front of the thalamus. 'Pituitary' labels a small knob at the bottom of a short stalk hanging beneath the hypothalamus. 'Amygdala' labels a small yellow ball just behind that knob, toward the brainstem. 'Hippocampus' labels the lower end of the purple C-shaped band, just behind the amygdala and in front of the brainstem." >}}
 The limbic system regulates emotion and other behaviors. It includes parts of the cerebral cortex located near the center of the brain, including the cingulate gyrus and the hippocampus as well as the thalamus, hypothalamus, and amygdala.
 {{< /mediafigure >}}
 
@@ -164,7 +164,7 @@ occipital
 {{< multiplechoice
   question="The ________ connects the two cerebral hemispheres."
   answer="corpus callosum"
-  hint="Its Latin name translates to \"tough body\" — cutting it, rather than removing an entire hemisphere, is what produces a split-brain patient."
+  hint="Reread the Brain paragraph on the cortex's two hemispheres, and the epilepsy surgery described just after it."
 >}}
 limbic system
 corpus callosum
@@ -175,6 +175,7 @@ pituitary
 {{< textin
   question="A membrane that covers and protects the central nervous system is called a ________."
   answer="meninge"
+  accept="meninx"
   hint="There are three of these layers around the brain and spinal cord, named for how hard, web-like, or soft each one is."
 >}}
 
@@ -182,21 +183,21 @@ pituitary
   question="The tough outermost layer of the meninges is called the ________."
   answer="dura mater"
   accept="dura"
-  hint="Its Latin name translates to \"hard mother,\" and it also carries vein-like structures that return blood from the brain to the heart."
+  hint="This layer also carries vein-like structures that return blood from the brain to the heart; see the meninges paragraph that opens the section."
 >}}
 
 {{< textin
   question="The web-like middle layer of the meninges is called the ________."
   answer="arachnoid mater"
   accept="arachnoid"
-  hint="Its name comes from the Greek word for spider, describing its web-like texture."
+  hint="See the meninges paragraph that opens the section, between the outermost and innermost layers."
 >}}
 
 {{< textin
   question="The thin meningeal layer that directly contacts and covers the brain and spinal cord, like plastic wrap, is called the ________."
   answer="pia mater"
   accept="pia"
-  hint="Its Latin name translates to \"soft mother.\""
+  hint="See the meninges paragraph that opens the section; this layer is named just before cerebrospinal fluid is introduced."
 >}}
 
 ### Describe the basic functions of the spinal cord, cerebral lobes, and other brain areas
@@ -213,7 +214,7 @@ hippocampus
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Phineas Gage was a 19th-century railroad worker who survived an accident that drove a large iron rod through his head. If the injury resulted in him becoming temperamental and capricious what part of his brain was damaged?"
+  question="Phineas Gage was a 19th century railroad worker who survived an accident that drove a large iron rod through his head. If the injury resulted in him becoming temperamental and capricious what part of his brain was damaged?"
   answer="frontal lobe"
   hint="Studies of patients with damage here tie this brain region to personality, socialization, and risk-assessment changes."
 >}}
@@ -257,7 +258,7 @@ describes that lobe's symptoms
 {{< textin
   question="The brain area that acts as a gateway, relaying sensory and motor information to and from the cortex, is called the ________."
   answer="thalamus"
-  hint="Its Greek name means \"inner chamber\"; a rare genetic disorder that degenerates its neurons causes fatal familial insomnia."
+  hint="A rare genetic disorder that degenerates its neurons causes fatal familial insomnia."
 >}}
 
 {{< textin

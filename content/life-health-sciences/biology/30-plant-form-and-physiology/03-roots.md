@@ -39,13 +39,13 @@ The root has an outer layer of cells called the epidermis, which surrounds areas
 
 Inside the root, the ground tissue forms two regions: the cortex and the pith (pictured below). Compared to stems, roots have lots of cortex and little pith. Both regions include cells that store photosynthetic products. The cortex is between the epidermis and the vascular tissue, whereas the pith lies between the vascular tissue and the center of the root.
 
-{{< mediafigure src="biology/Figure_30_03_03f" kind="photo" alt="A circular light micrograph of a stained wheat root cross section with eight labeled leader lines pointing to the epidermis, exodermis, cortex, endodermis, pericycle, xylem, phloem, and root hairs, alongside a 50-micrometer scale bar." longdesc="Eight leader lines run from labels positioned around the edge of the circular micrograph into the stained tissue. Across the top, left to right: 'Exodermis (sclerenchyma)' points to a banded outer ring; 'Epidermis' points to the single-cell-thick outermost rim; 'Phloem' points to patches just outside a thin green circle drawn near the center. A separate line from 'Xylem,' at the right, points to the cluster of cells inside that green circle. Across the bottom, left to right: 'Cortex (parenchyma cells)' points to the wide band of tissue between the exodermis and the green circle; 'Pericycle' points to the ring just inside the green circle; 'Endodermis' points to the green circle itself; 'Root hairs' points to thin filaments projecting from the lower right edge of the root. A scale bar reading '50 µm' sits at the lower left of the micrograph." >}}
+{{< mediafigure src="biology/Figure_30_03_03f" kind="photo" alt="A circular light micrograph of a stained wheat root cross section with eight labeled leader lines pointing to the epidermis, exodermis, cortex, endodermis, pericycle, xylem, phloem, and root hairs, alongside a 50-micrometer scale bar." longdesc="Eight leader lines run from labels positioned around the edge of the circular micrograph into the stained tissue. Across the top, left to right: 'Exodermis (sclerenchyma)' points to a banded outer ring; 'Epidermis' points to the single-cell-thick outermost rim; 'Phloem' points to small, blue-stained cells just inside a thin green circle drawn near the center, near its edge. A separate line from 'Xylem,' at the right, points to the cluster of cells at the middle of that green circle. Across the bottom, left to right: 'Cortex (parenchyma cells)' points to a small bracket across the wide band of tissue between the exodermis and the green circle; 'Pericycle' points to the ring just inside the green circle; 'Endodermis' points to the green circle itself; 'Root hairs' points to thin filaments projecting from the lower right edge of the root. A scale bar reading '50 µm' sits at the lower left of the micrograph." >}}
 Staining reveals different cell types in this light micrograph of a wheat (*Triticum*) root cross section. Sclerenchyma cells of the exodermis and xylem cells stain red, and phloem cells stain blue. Other cell types stain black. The stele, or vascular tissue, is the area inside endodermis (indicated by a green ring). Root hairs are visible outside the epidermis. (credit: scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
 The vascular tissue in the root is arranged in the inner portion of the root, which is called the **stele** (pictured below). A layer of cells known as the **endodermis** separates the stele from the ground tissue in the outer portion of the root. The endodermis is exclusive to roots, and serves as a checkpoint for materials entering the root’s vascular system. A waxy substance called suberin is present on the walls of the endodermal cells. This waxy region, known as the **Casparian strip**, forces water and solutes to cross the plasma membranes of endodermal cells instead of slipping between the cells. This ensures that only materials required by the root pass through the endodermis, while toxic substances and pathogens are generally excluded. The outermost cell layer of the root’s vascular tissue is the **pericycle**, an area that can give rise to lateral roots. In dicot roots, the xylem and phloem of the stele are arranged alternately in an X shape, whereas in monocot roots, the vascular tissue is arranged in a ring around the pith.
 
-{{< mediafigure src="biology/Figure_30_03_04" kind="diagram" alt="Two labeled root cross-section diagrams side by side, 'Dicot root' and 'Monocot root,' each a pale circle ringed by a fine-celled outer layer; the dicot's vascular tissue forms an X shape at the center, while the monocot's forms a ring around a solid central pith." longdesc="Two identically styled root cross sections sit side by side, labeled 'Dicot root' (left) and 'Monocot root' (right), each a large pale circle ringed by a fine-celled outer band. A line from 'Epidermis,' positioned between the two circles, points to that outer band on the dicot circle; the monocot circle is drawn with the same outer band. On the right, a line from 'Pith' points to a solid small circle at the very center of the monocot circle, a feature the dicot circle lacks. Five more labels run down the right margin, each with two branching leader lines, one into each circle: 'Xylem' points to the star-shaped cluster of cells at the dicot's center and to the ring of larger rounded cells surrounding the monocot's pith; 'Phloem' points to the smaller cells filling the gaps of the dicot's X and to the ring of small cells between the xylem and the pith in the monocot; 'Cortex' points to the wide band of tissue between the outer layer and the inner cluster in each circle; 'Pericycle' points to the thin ring just outside each central cluster; 'Endodermis' points to the ring just outside the pericycle in each circle." >}}
+{{< mediafigure src="biology/Figure_30_03_04" kind="diagram" alt="Two labeled root cross-section diagrams side by side, 'Dicot root' and 'Monocot root,' each a pale circle ringed by a fine-celled outer layer; the dicot's vascular tissue forms an X shape at the center, while the monocot's forms a ring around a solid central pith." longdesc="Two identically styled root cross sections sit side by side, labeled 'Dicot root' (left) and 'Monocot root' (right), each a large pale circle ringed by a fine-celled outer band. 'Epidermis,' positioned between the two circles at the top, has two leader lines, one to that outer band on each circle. At upper right, a line from 'Pith' points to a solid small circle at the very center of the monocot circle, a feature the dicot circle lacks. Five more labels run down the middle, between the two circles, each with two leader lines, one into each circle: 'Xylem' points to the X-shaped cluster of cells at the dicot's center and to one of the ring of about ten larger rounded cells surrounding the monocot's pith; 'Phloem' points to the pale spaces between the arms of the dicot's X and to the pale tissue between the rounded xylem cells in the monocot; 'Cortex' points to the wide band of tissue between the outer layer and the inner cluster in each circle; 'Pericycle' points to the thin ring just outside each central cluster; 'Endodermis' points to the ring just outside the pericycle in each circle." >}}
 In (left) typical dicots, the vascular tissue forms an X shape in the center of the root. In (right) typical monocots, the phloem cells and the larger xylem cells form a characteristic ring around the central pith.
 {{< /mediafigure >}}
 
@@ -83,6 +83,20 @@ Roots help to anchor a plant, absorb water and minerals, and serve as storage si
 
 ### Identify the two types of root systems
 
+{{< textin
+  question="A root system with a main root that grows vertically and only a few lateral roots, found in dicots, is called a ________."
+  answer="tap root system"
+  accept="taproot system|tap root|taproot"
+  hint="This root type penetrates deep into the soil; dandelions are a familiar example, since pulling one often snaps this main root and leaves it to regrow a new shoot."
+>}}
+
+{{< textin
+  question="A root system in which roots arise from the base of the stem in a cluster, forming a dense network closer to the soil surface, is called a ________."
+  answer="fibrous root system"
+  accept="fibrous root"
+  hint="Lawn grasses and cereal crops like wheat, rice, and corn — all monocots — grow this shallow, erosion-resisting tangle of many small roots instead of one dominant root."
+>}}
+
 {{< selfcheck question="Compare a tap root system with a fibrous root system. For each type, name a plant that provides a food in the human diet. Which type of root system is found in monocots? Which type of root system is found in dicots?" hint="Think about which system penetrates straight down and which spreads in a shallow network, and which group of plants — grasses or dicots — grows each one." >}}
 A tap root system has a single main root that grows down. A fibrous root system forms a dense network of roots that is closer to the soil surface. An example of a tap root system is a carrot. Grasses such as wheat, rice, and corn are examples of fibrous root systems. Fibrous root systems are found in monocots; tap root systems are found in dicots.
 ===CHECKS===
@@ -93,31 +107,13 @@ grasses such as wheat, rice, and corn are examples of fibrous root systems
 fibrous root systems are found in monocots; tap root systems are found in dicots
 {{< /selfcheck >}}
 
-{{< textin
-  question="A root system with a main root that grows vertically and only a few lateral roots, found in dicots, is called a ________."
-  answer="tap root system"
-  accept="taproot system"
-  hint="This root type penetrates deep into the soil; dandelions are a familiar example, since pulling one often snaps this main root and leaves it to regrow a new shoot."
->}}
-
-{{< textin
-  question="A root system in which roots arise from the base of the stem in a cluster, forming a dense network closer to the soil surface, is called a ________."
-  answer="fibrous root system"
-  hint="Lawn grasses and cereal crops like wheat, rice, and corn — all monocots — grow this shallow, erosion-resisting tangle of many small roots instead of one dominant root."
->}}
-
 ### Describe the three zones of the root tip and summarize the role of each zone in root growth
 
-{{< multiplechoice
-  question="Newly-formed root cells begin to form different cell types in the ________."
-  answer="zone of maturation"
-  hint="This is the zone farthest from the root tip, beginning where the first root hair appears."
+{{< textin
+  question="In the root tip's zone of ________, newly formed cells increase in length, lengthening the root."
+  answer="elongation"
+  hint="This zone sits just behind the zone of cell division nearest the tip."
 >}}
-zone of elongation
-zone of maturation
-root meristem
-zone of cell division
-{{< /multiplechoice >}}
 
 {{< textin
   question="The protective cells that cover the tip of a growing root are collectively called the ________."
@@ -125,18 +121,23 @@ zone of cell division
   hint="It is continuously replaced because it gets damaged easily as the root pushes through soil, and it covers the tip where the zone of cell division sits."
 >}}
 
-{{< textin
-  question="In the root tip's zone of ________, newly formed cells increase in length, lengthening the root."
-  answer="elongation"
-  hint="This zone sits between the zone of cell division nearest the tip and the zone of maturation farther back, where root hairs eventually appear."
+{{< multiplechoice
+  question="Newly-formed root cells begin to form different cell types in the ________."
+  answer="zone of maturation"
+  hint="This is the zone farthest from the root tip, behind the zone where newly formed cells lengthen."
 >}}
+zone of elongation
+zone of maturation
+root meristem
+zone of cell division
+{{< /multiplechoice >}}
 
 ### Describe the structure of the root
 
 {{< multiplechoice
   question="The ________ forces selective uptake of minerals in the root."
   answer="endodermis"
-  hint="This cell layer's waxy Casparian strip forces materials to cross plasma membranes instead of slipping between cells, sitting between the cortex and the stele."
+  hint="Reread the Root Growth and Anatomy paragraph on the root's vascular tissue, and ask which layer the section calls a checkpoint for materials entering it."
 >}}
 pericycle
 epidermis
@@ -152,7 +153,7 @@ lateral roots
 {{< /selfcheck >}}
 
 {{< textin
-  question="A hair-like extension of a root epidermal cell that increases the root's surface area and aids in absorbing water and minerals is called a ________."
+  question="An extension of a root epidermal cell that increases the root's surface area and aids in absorbing water and minerals is called a ________."
   answer="root hair"
   hint="These first appear where the zone of elongation ends and the zone of maturation begins."
 >}}
@@ -172,17 +173,6 @@ lateral roots
 
 ### List and describe examples of modified roots
 
-{{< multiplechoice
-  question="Roots that enable a plant to grow on another plant are called ________."
-  answer="epiphytic roots"
-  hint="Orchids and the banyan tree begin life attached to, or growing on, a host plant instead of rooting in soil."
->}}
-epiphytic roots
-prop roots
-adventitious roots
-aerial roots
-{{< /multiplechoice >}}
-
 {{< textin
   question="An aboveground root that arises from a plant part other than the radicle of the plant embryo is called a(n) ________."
   answer="adventitious root"
@@ -192,9 +182,19 @@ aerial roots
 {{< textin
   question="In some habitats, the roots of certain plants may be modified to form ________ or epiphytic roots."
   answer="aerial roots"
-  accept="aerial root"
   hint="These roots grow above ground, like the ones that let the banyan tree's branches reach down and eventually reach the soil."
 >}}
+
+{{< multiplechoice
+  question="Roots that enable a plant to grow on another plant are called ________."
+  answer="epiphytic roots"
+  hint="Reread the Root Modifications paragraph about orchids and the banyan tree."
+>}}
+epiphytic roots
+prop roots
+adventitious roots
+aerial roots
+{{< /multiplechoice >}}
 
 ---
 

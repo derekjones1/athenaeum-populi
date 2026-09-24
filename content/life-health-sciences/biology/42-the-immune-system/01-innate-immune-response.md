@@ -31,7 +31,7 @@ Despite these barriers, pathogens may enter the body through skin abrasions or p
 
 An infection may be intracellular or extracellular, depending on the pathogen. All viruses infect cells and replicate within those cells (intracellularly), whereas bacteria and other parasites may replicate intracellularly or extracellularly, depending on the species. The innate immune system must respond accordingly: by identifying the extracellular pathogen and/or by identifying host cells that have already been infected. When a pathogen enters the body, cells in the blood and lymph detect the specific **pathogen-associated molecular patterns (PAMPs)** on the pathogen's surface. PAMPs are carbohydrate, polypeptide, and nucleic acid "signatures" that are expressed by viruses, bacteria, and parasites but which differ from molecules on host cells. The immune system has specific cells, described in the table below and shown in the micrograph below, with receptors that recognize these PAMPs. A **macrophage** is a large phagocytic cell that engulfs foreign particles and pathogens. Macrophages recognize PAMPs via complementary **pattern recognition receptors (PRRs)**. PRRs are molecules on macrophages and dendritic cells which are in contact with the external environment. A **monocyte** is a type of white blood cell that circulates in the blood and lymph and differentiates into macrophages after it moves into infected tissue. Dendritic cells bind molecular signatures of pathogens and promote pathogen engulfment and destruction. Toll-like receptors (TLRs) are a type of PRR that recognizes molecules that are shared by pathogens but distinguishable from host molecules. TLRs are present in invertebrates as well as vertebrates, and appear to be one of the most ancient components of the immune system. TLRs have also been identified in the mammalian nervous system.
 
-{{< mediafigure src="biology/Figure_42_01_01" kind="diagram" eager="true" alt="A table listing eight innate-immune cell types — mast cell, macrophage, natural killer cell, dendritic cell, monocyte, neutrophil, basophil, and eosinophil — with columns for each cell's characteristics, its typical location in the body, and a small color drawing of the cell." longdesc="Reading top to bottom, the table's rows read: Mast cell — dilates blood vessels and induces inflammation through release of histamines and heparin, recruits macrophages and neutrophils, and is involved in wound healing and defense against pathogens but can also be responsible for allergic reactions; found in connective tissue and mucous membranes. Macrophage — a phagocytic cell that consumes foreign pathogens and cancer cells and stimulates the response of other immune cells; migrates from blood vessels into tissues. Natural killer cell — kills tumor cells and virus-infected cells; circulates in blood and migrates into tissues. Dendritic cell — presents antigens on its surface, thereby triggering adaptive immunity; present in epithelial tissue including skin, lung, and tissues of the digestive tract, and migrates to lymph nodes upon activation. Monocyte — differentiates into macrophages and dendritic cells in response to inflammation; stored in the spleen and moves through blood vessels to infected tissues. Neutrophil — the first responder at the site of infection or trauma, representing 50 to 60 percent of all leukocytes; releases toxins that kill or inhibit bacteria and fungi and recruits other immune cells to the site of infection; migrates from blood vessels into tissues. Basophil — responsible for defense against parasites; releases histamines that cause inflammation and may be responsible for allergic reactions; circulates in blood and migrates to tissues. Eosinophil — releases toxins that kill bacteria and parasites but also causes tissue damage; circulates in blood and migrates to tissues. In the Image column, the granule-filled cells — mast cell, natural killer cell, neutrophil, basophil, and eosinophil — are each drawn with a horseshoe-shaped nucleus and small round granules filling the cytoplasm; the monocyte is drawn in the same horseshoe shape without granules; the macrophage is drawn as an irregular, ameboid shape with a round nucleus; the dendritic cell is drawn with star-like branching projections and a small horseshoe-shaped nucleus." >}}
+{{< mediafigure src="biology/Figure_42_01_01" kind="diagram" eager="true" alt="A table listing eight innate-immune cell types — mast cell, macrophage, natural killer cell, dendritic cell, monocyte, neutrophil, basophil, and eosinophil — with columns for each cell's characteristics, its typical location in the body, and a small color drawing of the cell." longdesc="Reading top to bottom, the table's rows read: Mast cell — dilates blood vessels and induces inflammation through release of histamines and heparin, recruits macrophages and neutrophils, and is involved in wound healing and defense against pathogens but can also be responsible for allergic reactions; found in connective tissue and mucous membranes. Macrophage — a phagocytic cell that consumes foreign pathogens and cancer cells and stimulates the response of other immune cells; migrates from blood vessels into tissues. Natural killer cell — kills tumor cells and virus-infected cells; circulates in blood and migrates into tissues. Dendritic cell — presents antigens on its surface, thereby triggering adaptive immunity; present in epithelial tissue including skin, lung, and tissues of the digestive tract, and migrates to lymph nodes upon activation. Monocyte — differentiates into macrophages and dendritic cells in response to inflammation; stored in the spleen and moves through blood vessels to infected tissues. Neutrophil — the first responder at the site of infection or trauma, an abundant phagocytic cell representing 50 to 60 percent of all leukocytes; releases toxins that kill or inhibit bacteria and fungi and recruits other immune cells to the site of infection; migrates from blood vessels into tissues. Basophil — responsible for defense against parasites; releases histamines that cause inflammation and may be responsible for allergic reactions; circulates in blood and migrates to tissues. Eosinophil — releases toxins that kill bacteria and parasites but also causes tissue damage; circulates in blood and migrates to tissues. In the Image column, the granule-filled cells — mast cell, natural killer cell, neutrophil, basophil, and eosinophil — are each drawn with a horseshoe-shaped nucleus and small round granules filling the cytoplasm; the monocyte is drawn in the same horseshoe shape without granules; the macrophage is drawn as an irregular, ameboid shape with a round nucleus and a small orange star-shaped particle held in a pocket of its membrane; the dendritic cell is drawn with star-like branching projections, a small horseshoe-shaped nucleus, and a small orange star-shaped particle at the tip of one projection." >}}
 The characteristics and location of cells involved in the innate immune system are described. (credit: modification of work by NIH)
 {{< /mediafigure >}}
 
@@ -49,7 +49,7 @@ A second class of early-acting cytokines is interferons, which are released by i
 
 In response to interferons, uninfected cells alter their gene expression, which increases the cells' resistance to infection. One effect of interferon-induced gene expression is a sharply reduced cellular protein synthesis. Virally infected cells produce more viruses by synthesizing large quantities of viral proteins. Thus, by reducing protein synthesis, a cell becomes resistant to viral infection.
 
-{{< mediafigure src="biology/Figure_B42_01_02" kind="diagram" alt="Illustration of a virus-infected cell secreting interferon that signals three types of neighboring cells: an uninfected cell, another infected cell, and an immune cell." longdesc="At left, a cell infected with virus (small blue starburst shapes on and inside it) secretes interferon, drawn as small red dots released near its nucleus. Three gray arrows lead from this infected cell to three neighboring cells at right, top to bottom. The first arrow points to a plain, uninfected cell labeled 'Signals neighboring uninfected cells to destroy RNA and reduce protein synthesis.' The second arrow points to a cell that also carries a small blue virus starburst, labeled 'Signals neighboring infected cells to undergo apoptosis.' The third arrow points to an irregular, ameboid immune cell with wavy lobed edges, labeled 'Activates immune cells.'" >}}
+{{< mediafigure src="biology/Figure_B42_01_02" kind="diagram" alt="Illustration of a virus-infected cell secreting interferon that signals three types of neighboring cells: an uninfected cell, another infected cell, and an immune cell." longdesc="At left, a cell infected with virus (small blue starburst shapes on and inside it) secretes interferon, drawn as small red dots packed in a vesicle beside its nucleus and released through an opening in its membrane. Three gray arrows lead from this infected cell to three neighboring cells at right, top to bottom; each arrow ends at a green cup-shaped receptor on the neighboring cell's surface holding a red interferon dot. The first arrow points to a plain, uninfected cell labeled 'Signals neighboring uninfected cells to destroy RNA and reduce protein synthesis.' The second arrow points to a cell that is also infected, with two blue virus starbursts, one inside it and one on its surface, labeled 'Signals neighboring infected cells to undergo apoptosis.' The third arrow points to an irregular, ameboid immune cell with wavy lobed edges, labeled 'Activates immune cells.'" >}}
 Interferons are cytokines that are released by a cell infected with a virus. Response of neighboring cells to interferon helps stem the infection.
 {{< /mediafigure >}}
 
@@ -59,7 +59,7 @@ The first cytokines to be produced are pro-inflammatory; that is, they encourage
 
 Neutrophils and eosinophils are particularly important leukocytes that engulf large pathogens, such as bacteria and fungi. A **mast cell** is a leukocyte that produces inflammatory molecules, such as histamine, in response to large pathogens. A **basophil** is a leukocyte that, like a neutrophil, releases chemicals to stimulate the inflammatory response as illustrated below. Basophils are also involved in allergy and hypersensitivity responses and induce specific types of inflammatory responses. Eosinophils and basophils produce additional inflammatory mediators to recruit more leukocytes. A hypersensitive immune response to harmless antigens, such as in pollen, often involves the release of histamine by basophils and mast cells.
 
-{{< mediafigure src="biology/Figure_42_01_04" kind="diagram" alt="Illustration of a capillary near a skin wound, showing leukocytes leaving the bloodstream and invading bacteria clustered at the wound." longdesc="At left, two segments of a blood vessel each contain red, disk-shaped red blood cells. A gray curved arrow leads from each vessel segment to a round leukocyte, drawn with a lobed purple nucleus and small red dots nearby; two leader lines from the label 'Leukocytes' point to both of these cells. At right, a jagged pink gap in the tissue — the cut — is lined with green, rod-shaped bacteria; two leader lines from the label 'Bacteria' point to two individual rods among the cluster." >}}
+{{< mediafigure src="biology/Figure_42_01_04" kind="diagram" alt="Illustration of a capillary near a skin wound, showing leukocytes leaving the bloodstream and invading bacteria clustered at the wound." longdesc="At left, a single vertical blood vessel holds red, disk-shaped red blood cells and two round leukocytes, each drawn with a lobed purple nucleus. Two gray curved arrows, one from each of these leukocytes, lead out of the vessel into the tissue to two leukocytes of the same kind, now outside the vessel; two leader lines from the label 'Leukocytes' point to these two cells. Small red dots are scattered in the tissue between them and the wound. At right, a jagged red cut in the reddened, swollen skin is surrounded by green, rod-shaped bacteria; two leader lines from the label 'Bacteria' point to two individual rods among the cluster." >}}
 In response to a cut, mast cells secrete histamines that cause nearby capillaries to dilate. Neutrophils and monocytes leave the capillaries. Monocytes mature into macrophages. Neutrophils, dendritic cells, and macrophages release chemicals to stimulate the inflammatory response. Neutrophils and macrophages also consume invading bacteria by phagocytosis.
 {{< /mediafigure >}}
 
@@ -89,7 +89,7 @@ An array of approximately 20 types of soluble proteins, called a **complement sy
 
 Complement proteins perform several functions. The proteins serve as a marker to indicate the presence of a pathogen to phagocytic cells, such as macrophages and B cells, and enhance engulfment; this process is called **opsonization**. Certain complement proteins can combine to form attack complexes that open pores in microbial cell membranes. These structures destroy pathogens by causing their contents to leak, as illustrated below.
 
-{{< mediafigure src="biology/Figure_B42_01_06" kind="diagram" alt="Flow chart of the complement cascade, tracing the classic pathway from an antibody-bound pathogen through a sequence of complement proteins to a pore-forming complex that bursts the pathogen's membrane, with the alternate pathway joining partway through and a host cell shown protected from the same cascade." longdesc="At the top, an invading pathogen (a blue cell) displays an antigen (a small yellow star) bound by an antibody (a teal Y-shaped molecule); C1 (a green oval pair) attaches to the antibody, boxed with the text 'Classic Pathway: C1 binds to an antigen-antibody complex on an invading pathogen, causing complement components C2 and C4 to split in two.' Two arrows lead down from C1 to C2, a red capsule, and C4, a lavender capsule; the accompanying text explains that fragments from C2 and C4 combine to form an enzyme called C3 convertase. A separate arrow labeled 'Alternate Pathway' also feeds into C3 convertase, drawn as a fused red-and-lavender capsule. An arrow leads down from C3 convertase to C3, a blue rod, which splits into two fragments — a small capped blue fragment that rejoins C3 convertase to form C5 convertase, and a smaller blue wedge. An arrow leads from that first fragment down to C5, a pink rod capped in blue, which C5 convertase splits into two fragments, one purple fragment with a notch and one plain purple wedge. From this split the diagram branches two ways: to the left, one fragment leads, through the text 'Endogenous proteins protect host cells from lysis,' to an intact host cell, a tan cell with a small purple nucleus; downward, the other fragment joins C6, C7, C8, and C9, drawn as a ring of mostly green segments with a few orange, pink, and pale ones, to form a membrane-attack complex seated on a second invading pathogen, a large blue cell at the bottom shown surrounded by scattered black dots and swelling, next to the text 'A fragment from C5 joins C6, C7, C8, and C9 to form a complex that makes a hole in the plasma membrane of the invading cell. The cell swells and bursts.'" >}}
+{{< mediafigure src="biology/Figure_B42_01_06" kind="diagram" alt="Flow chart of the complement cascade, tracing the classic pathway from an antibody-bound pathogen through a sequence of complement proteins to a pore-forming complex that bursts the pathogen's membrane, with the alternate pathway joining partway through and a host cell shown protected from the same cascade." longdesc="At the top, an invading pathogen (a blue cell) displays an antigen (a small yellow star) bound by two antibodies (teal Y-shaped molecules, one above the antigen and one below it); both antibodies' stems connect through orange ball joints and struts to C1 — drawn as a large orange hub with radiating arms, two pink wedge shapes, and two attached green ovals — boxed with the text 'Classic Pathway: C1 binds to an antigen-antibody complex on an invading pathogen, causing complement components C2 and C4 to split in two.' Two arrows lead down from C1 to C2, a red capsule, and C4, a lavender capsule, each drawn broken into two pieces; a bracket joins them and an arrow leads down from it to C3 convertase; the accompanying text explains that fragments from C2 and C4 combine to form an enzyme called C3 convertase. A separate arrow labeled 'Alternate Pathway' also feeds into C3 convertase, drawn as a fused red-and-lavender capsule. An arrow leads down from C3 convertase to C3, a blue rod, which splits into two fragments — a small capped blue fragment that rejoins C3 convertase to form C5 convertase, and a smaller blue wedge. An arrow leads from that first fragment down to C5, a pink rod capped in blue, which C5 convertase splits into two fragments, one purple fragment with a notch and one plain purple wedge. Only the notched fragment, on the left, leads on, branching two ways; the plain wedge has no further arrow. To the left, an arrow runs from the notched fragment, over the text 'Endogenous proteins protect host cells from lysis,' to an intact host cell, a tan cell with a small purple nucleus; downward, a second arrow from the same notched fragment leads to C6, C7, C8, and C9, drawn as a ring of mostly green segments with a few orange, pink, and pale ones, to form a membrane-attack complex seated on a second invading pathogen, a large blue cell at the bottom shown surrounded by scattered black dots and swelling, next to the text 'A fragment from C5 joins C6, C7, C8, and C9 to form a complex that makes a hole in the plasma membrane of the invading cell. The cell swells and bursts.'" >}}
 The classic pathway for the complement cascade involves the attachment of several initial complement proteins to an antibody-bound pathogen followed by rapid activation and binding of many more complement proteins and the creation of destructive pores in the microbial cell envelope and cell wall. The alternate pathway does not involve antibody activation. Rather, C3 convertase spontaneously breaks down C3. Endogenous regulatory proteins prevent the complement complex from binding to host cells. Pathogens lacking these regulatory proteins are lysed. (credit: modification of work by NIH)
 {{< /mediafigure >}}
 
@@ -128,7 +128,7 @@ The innate immune system serves as a first responder to pathogenic threats that 
 {{< multiplechoice
   question="Which of the following is a barrier against pathogens provided by the skin?"
   answer="desiccation"
-  hint="Tears and mucus are the alternate defenses used where skin is absent — think instead about what happens to moisture on the skin's own surface, and about the skin's low pH rather than a high one."
+  hint="Reread the first paragraph after the section introduction, which says how pathogens are killed or inactivated on the skin itself."
 >}}
 high pH
 mucus
@@ -137,16 +137,16 @@ desiccation
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The innate immune system serves as a first responder to pathogenic threats that bypass natural ________ of the body."
-  answer="physical and chemical barriers"
-  accept="barriers|physical barriers|chemical barriers"
-  hint="Skin, mucus, tears, and stomach acid are examples — think of the two-part name this section's own heading gives to that whole category of defenses."
+  question="Immunity that occurs naturally because of genetic factors or physiology, and is not induced by infection or vaccination, is called ________."
+  answer="innate immunity"
+  hint="The section's opening paragraph names this kind of immunity and says what it is not induced by."
 >}}
 
 {{< textin
-  question="Immunity that occurs naturally because of genetic factors or physiology, and is not induced by infection or vaccination, is called ________."
-  answer="innate immunity"
-  hint="This is the broad category of defense this whole section describes, as opposed to immunity built by a past infection or a vaccine."
+  question="The innate immune system serves as a first responder to pathogenic threats that bypass natural ________ of the body."
+  answer="physical and chemical barriers"
+  accept="barriers|physical barriers|chemical barriers|chemical and physical barriers"
+  hint="Skin, mucus, tears, and stomach acid are examples. This sentence is the first line of the section summary."
 >}}
 
 ### Explain immediate and induced innate immune responses
@@ -154,7 +154,7 @@ desiccation
 {{< multiplechoice
   question="Although interferons have several effects, they are particularly useful against infections with which type of pathogen?"
   answer="viruses"
-  hint="One of interferon's defining actions is stopping a pathogen from hijacking a host cell's protein-making machinery to copy itself — which pathogen type replicates that way inside a cell?"
+  hint="In the first subsection under Pathogen Recognition, reread the paragraph on interferons and the figure caption beside it."
 >}}
 bacteria
 viruses
@@ -193,6 +193,19 @@ mitochondria
 
 ### Discuss natural killer cells
 
+{{< textin
+  question="A lymphocyte that can kill cells infected with viruses or tumor cells is called a ________."
+  answer="natural killer cell"
+  accept="NK cell|natural killer (NK) cell"
+  hint="Reread the first paragraph of the subsection after Pathogen Recognition, on the lymphocytes that identify and destroy infected cells."
+>}}
+
+{{< textin
+  question="The destructive protein that an NK cell secretes to create a pore in a target cell's membrane is called ________."
+  answer="perforin"
+  hint="Reread the paragraph on what an NK cell's cytoplasm secretes after it detects an infected or tumor cell."
+>}}
+
 {{< multiplechoice
   question="Which innate immune system component uses MHC I molecules directly in its defense strategy?"
   answer="NK cells"
@@ -205,25 +218,19 @@ interferon
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A lymphocyte that can kill cells infected with viruses or tumor cells is called a ________."
-  answer="natural killer cell"
-  accept="NK cell|natural killer (NK) cell"
-  hint="Unlike T cells and B cells, this lymphocyte is always active and does not need to mature in the thymus or bone marrow before it can patrol for infected or cancerous cells."
->}}
-
-{{< textin
-  question="The destructive protein that an NK cell secretes to create a pore in a target cell's membrane is called ________."
-  answer="perforin"
-  hint="Granzymes travel through the pore this protein forms in order to reach the inside of the target cell."
->}}
-
-{{< textin
   question="A protease that enters a target cell through perforin's pore and induces that cell to undergo apoptosis is called a ________."
   answer="granzyme"
-  hint="NK cells and killer T cells both release this protease alongside perforin in the immunological synapse."
+  hint="Reread the paragraph on what an NK cell secretes after it detects an infected or tumor cell."
 >}}
 
 ### Describe major histocompatibility complex I molecules
+
+{{< textin
+  question="Proteins found on the surface of every nucleated cell, and scarce on non-nucleated cells such as red blood cells and platelets, are called ________ molecules."
+  answer="MHC I"
+  accept="MHC class I|major histocompatibility complex I|major histocompatibility complex class I"
+  hint="NK cells check for a healthy, intact display of exactly this molecule before deciding whether to leave a cell alone."
+>}}
 
 {{< selfcheck question="Different MHC I molecules between donor and recipient cells can lead to rejection of a transplanted organ or tissue. Suggest a reason for this." hint="Think about which innate immune cell type patrols for cells whose surface proteins look 'foreign' rather than normal." >}}
 If the MHC I molecules expressed on donor cells differ from the MHC I molecules expressed on recipient cells, NK cells may identify the donor cells as "non-self" and produce perforin and granzymes to induce the donor cells to undergo apoptosis, which would destroy the transplanted organ.
@@ -235,20 +242,20 @@ this would destroy the transplanted organ
 {{< /selfcheck >}}
 
 {{< textin
-  question="Proteins found on the surface of every nucleated cell, and scarce on non-nucleated cells such as red blood cells and platelets, are called ________ molecules."
-  answer="MHC I"
-  accept="MHC class I|major histocompatibility complex I"
-  hint="NK cells check for a healthy, intact display of exactly this molecule before deciding whether to leave a cell alone."
->}}
-
-{{< textin
   question="MHC I molecules function to display fragments of proteins from infectious agents within a cell to ________."
   answer="T cells"
-  accept="T cell|T lymphocyte"
+  accept="T lymphocyte"
   hint="These are the lymphocytes that mature in the thymus gland, one of the two adaptive-immune-system cell types introduced alongside NK cells."
 >}}
 
 ### Summarize how the proteins in a complement system function to destroy extracellular pathogens
+
+{{< textin
+  question="An array of approximately 20 soluble proteins of the innate immune system that enhance phagocytosis, bore holes in pathogens, and recruit lymphocytes is called the ________."
+  answer="complement system"
+  accept="complement"
+  hint="It's named for the way it works alongside the antibody response of the adaptive immune system."
+>}}
 
 {{< selfcheck question="If a series of genetic mutations prevented some, but not all, of the complement proteins from binding antibodies or pathogens, would the entire complement system be compromised?" hint="Think about what a break anywhere in a strictly ordered chain of binding events does to every step that comes after it." >}}
 The entire complement system would probably be affected even when only a few members were mutated such that they could no longer bind. Because the complement involves the binding of activated proteins in a specific sequence, when one or more proteins in the sequence are absent, the subsequent proteins would be incapable of binding to elicit the complement's pathogen-destructive effects.
@@ -257,12 +264,6 @@ the entire complement system would probably be affected even when only a few mem
 the complement involves the binding of activated proteins in a specific sequence
 when one or more proteins in the sequence are absent, the subsequent proteins would be incapable of binding to elicit the complement's pathogen-destructive effects
 {{< /selfcheck >}}
-
-{{< textin
-  question="An array of approximately 20 soluble proteins of the innate immune system that enhance phagocytosis, bore holes in pathogens, and recruit lymphocytes is called the ________."
-  answer="complement system"
-  hint="It's named for the way it works alongside the antibody response of the adaptive immune system."
->}}
 
 {{< textin
   question="The process that enhances phagocytosis by using proteins to mark the presence of a pathogen for phagocytic cells is called ________."

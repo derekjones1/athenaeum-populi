@@ -18,7 +18,7 @@ weight: 4
 
 Hormone production and release are primarily controlled by negative feedback. In negative feedback systems, a stimulus elicits the release of a substance; once the substance reaches a certain level, it sends a signal that stops further release of the substance. In this way, the concentration of hormones in blood is maintained within a narrow range. For example, the anterior pituitary signals the thyroid to release thyroid hormones. Increasing levels of these hormones in the blood then give feedback to the hypothalamus and anterior pituitary to inhibit further signaling to the thyroid gland, as illustrated below. There are three mechanisms by which endocrine glands are stimulated to synthesize and release hormones: humoral stimuli, hormonal stimuli, and neural stimuli.
 
-{{< mediafigure src="biology/Figure_B37_04_01" kind="diagram" eager="true" alt="A diagram titled 'Thyroid System,' drawn over a human head, neck, and torso silhouette, tracing a signal from the hypothalamus down through the anterior pituitary gland and thyroid gland to a widening arrow of thyroid-hormone effects spreading into the chest, alongside a separate arrow looping back up the neck to label a negative-feedback pathway." longdesc="A human head, neck, and torso silhouette carries the diagram's stages top to bottom. 'Hypothalamus' labels the brain at the top of the head. A short green arrow points down from the hypothalamus to 'Anterior pituitary gland' (labeled in red, at the base of the skull), labeled with the green text 'Thyrotropin-releasing hormone (TRH).' A thick red arrow continues down through the neck to 'Thyroid gland' at its base, labeled 'Thyroid-stimulating hormone (TSH).' A separate blue arrow rises along the left side of the neck from lower down back up to the anterior pituitary gland, labeled 'Negative feedback.' From the thyroid gland, a wide blue arrow widens as it descends into the chest and ends in three arrowheads pointing down-left, straight down, and down-right; it carries the labels 'Thyroid hormones (T₃ and T₄)' and 'Increased metabolism' inside the arrow, with 'Growth and development' below them. The upward blue arrow completes the loop: rising T₃ and T₄ signal the pituitary and hypothalamus to stop releasing TRH and TSH." >}}
+{{< mediafigure src="biology/Figure_B37_04_01" kind="diagram" eager="true" alt="A diagram titled 'Thyroid System,' drawn over a human head, neck, and torso silhouette, tracing a signal from the hypothalamus down through the anterior pituitary gland and thyroid gland to a widening arrow of thyroid-hormone effects spreading into the chest, alongside a separate arrow looping back up the neck to label a negative-feedback pathway." longdesc="A human head, neck, and torso silhouette carries the diagram's stages top to bottom. 'Hypothalamus' labels the brain at the top of the head. A short green arrow points down from the hypothalamus to 'Anterior pituitary gland' (labeled in red, at the base of the skull), labeled with the green text 'Thyrotropin-releasing hormone (TRH).' A thick red arrow continues down through the neck to 'Thyroid gland' at its base, labeled 'Thyroid-stimulating hormone (TSH).' A separate blue arrow, labeled 'Negative feedback,' leaves the thyroid gland, rises along the left side of the neck, and forks near the base of the skull into two arrowheads: one reaching up toward the hypothalamus and one pointing right at the anterior pituitary gland. From the thyroid gland, a wide blue arrow widens as it descends into the chest and ends in three arrowheads pointing down-left, straight down, and down-right; it carries the labels 'Thyroid hormones (T₃ and T₄)' and 'Increased metabolism' inside the arrow, with 'Growth and development' below them. The upward blue arrow completes the loop: rising T₃ and T₄ signal the pituitary and hypothalamus to stop releasing TRH and TSH." >}}
 The anterior pituitary stimulates the thyroid gland to release thyroid hormones T₃ and T₄. Increasing levels of these hormones in the blood results in feedback to the hypothalamus and anterior pituitary to inhibit further signaling to the thyroid gland. (credit: modification of work by Mikael Häggström)
 {{< /mediafigure >}}
 
@@ -58,7 +58,7 @@ Hormone levels are primarily controlled through negative feedback, in which risi
 {{< multiplechoice
   question="Which mechanism of hormonal stimulation would be affected if signaling and hormone release from the hypothalamus was blocked?"
   answer="hormonal and neural stimuli"
-  hint="The hypothalamus sits at the start of the hormone cascade this section traces to the thyroid, and it also has a direct line to the nervous system — think about which two of the three mechanisms run through the hypothalamus, as opposed to the one triggered purely by a change in blood chemistry."
+  hint="Read each of the section's three stimulus subsections and ask, for each, whether its example depends on a signal from the hypothalamus."
 >}}
 humoral and hormonal stimuli
 hormonal and neural stimuli
@@ -89,7 +89,7 @@ delivering progesterone every day continuously inhibits this cycle
 {{< multiplechoice
   question="A rise in blood glucose levels triggers release of insulin from the pancreas. This mechanism of hormone production is stimulated by:"
   answer="humoral stimuli"
-  hint="This mechanism responds directly to a change in blood chemistry itself, rather than to an incoming hormone or a nerve signal."
+  hint="Match the question's example with the examples the section gives in its three stimulus subsections."
 >}}
 humoral stimuli
 hormonal stimuli
@@ -100,13 +100,34 @@ negative stimuli
 {{< multiplechoice
   question="A scientist hypothesizes that the pancreas's hormone production is controlled by neural stimuli. Which observation would support this hypothesis?"
   answer="Insulin is produced in response to sudden stress without a rise in blood glucose."
-  hint="Neural stimuli work through direct nervous-system signaling, not through a change in blood chemistry — look for the option where insulin release happens with no chemical trigger in the blood at all."
+  hint="Reread the third of the section's stimulus subsections, then ask which observation could only be explained by the kind of control it describes."
 >}}
 Insulin is produced in response to sudden stress without a rise in blood glucose.
 Insulin is produced in response to a rise in glucagon levels.
 Beta cells express epinephrine receptors.
 Insulin is produced in response to a rise in blood glucose in the brain.
 {{< /multiplechoice >}}
+
+{{< textin
+  question="The release of a hormone in response to another hormone is called ________."
+  answer="hormonal stimuli"
+  accept="hormonal stimulus"
+  hint="This is the mechanism behind the hypothalamus-to-pituitary-to-thyroid cascade described in this section, where each gland's hormone triggers the next gland's release."
+>}}
+
+{{< textin
+  question="The control of hormone release in response to changes in extracellular fluids such as blood or the ion concentration in the blood is called ________."
+  answer="humoral stimuli"
+  accept="humoral stimulus"
+  hint="Look at the first of the section's three stimulus subsections."
+>}}
+
+{{< textin
+  question="Stimulation of endocrine glands by the nervous system is called ________."
+  answer="neural stimuli"
+  accept="neural stimulus"
+  hint="This is the mechanism the sympathetic nervous system uses to trigger the adrenal medulla's release of epinephrine and norepinephrine during a short-term stress response."
+>}}
 
 {{< selfcheck question="Compare and contrast hormonal and humoral stimuli." hint="One of these mechanisms responds directly to a change in blood chemistry; the other responds to an incoming hormone from a different gland — trace the pancreas example for one and the hypothalamus-to-pituitary-to-thyroid chain for the other." >}}
 The term humoral is derived from the term humor, which refers to bodily fluids such as blood. Humoral stimuli refer to the control of hormone release in response to changes in extracellular fluids such as blood or the ion concentration in the blood. For example, a rise in blood glucose levels triggers the pancreatic release of insulin. Insulin causes blood glucose levels to drop, which signals the pancreas to stop producing insulin in a negative feedback loop.
@@ -118,27 +139,6 @@ a rise in blood glucose triggers the pancreatic release of insulin as an example
 hormonal stimuli are the release of a hormone in response to another hormone
 the hypothalamus stimulates the anterior pituitary, which releases hormones that regulate other endocrine glands, as an example of a hormonal stimulus
 {{< /selfcheck >}}
-
-{{< textin
-  question="The control of hormone release in response to changes in extracellular fluids such as blood or the ion concentration in the blood is called ________."
-  answer="humoral stimuli"
-  accept="humoral stimulus"
-  hint="This mechanism takes its name from a term meaning bodily fluids, and it is the one directly triggered by a rise in blood glucose that stimulates insulin release."
->}}
-
-{{< textin
-  question="The release of a hormone in response to another hormone is called ________."
-  answer="hormonal stimuli"
-  accept="hormonal stimulus"
-  hint="This is the mechanism behind the hypothalamus-to-pituitary-to-thyroid cascade described in this section, where each gland's hormone triggers the next gland's release."
->}}
-
-{{< textin
-  question="Stimulation of endocrine glands by the nervous system is called ________."
-  answer="neural stimuli"
-  accept="neural stimulus"
-  hint="This is the mechanism the sympathetic nervous system uses to trigger the adrenal medulla's release of epinephrine and norepinephrine during a short-term stress response."
->}}
 
 ---
 

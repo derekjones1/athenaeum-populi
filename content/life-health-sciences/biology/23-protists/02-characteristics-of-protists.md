@@ -28,7 +28,7 @@ Single protist cells range in size from less than a micrometer to three meters i
 
 Protists exhibit many forms of nutrition and may be aerobic or anaerobic. Those that store energy by photosynthesis belong to a group of *photoautotrophs* and are characterized by the presence of chloroplasts. Other protists are *heterotrophic* and consume organic materials (such as other organisms) to obtain nutrition. Amoebas and some other heterotrophic protist species ingest particles by a process called *phagocytosis*, in which the cell membrane engulfs a food particle and brings it inward, pinching off an intracellular membranous sac, or vesicle, called a food vacuole (see the figure below). In some protists, food vacuoles can be formed anywhere on the body surface, whereas in others, they may be restricted to the base of a specialized feeding structure. The vesicle containing the ingested particle, the phagosome, then fuses with a lysosome containing hydrolytic enzymes to produce a **phagolysosome**, and the food particle is broken down into small molecules that can diffuse into the cytoplasm and be used in cellular metabolism. Undigested remains ultimately are expelled from the cell via *exocytosis*.
 
-{{< mediafigure src="biology/Figure_B23_02_01" alt="In this illustration, a eukaryotic cell is shown consuming a food particle. As the food particle is consumed, it is encapsulated in a vacuole. The vacuole fuses with a lysosome, and proteins inside the lysosome digest the food particle. Indigestible waste material is ejected from the cell when an exocytic vesicle fuses with the plasma membrane." longdesc="A single-celled, oval blue organism drawn with finger-like projections trailing along its lower edge, labeled 'Pseudopods.' Five red arrows run left to right across the cell. An orange particle at the upper left, labeled 'Food particle,' sits inside a small bubble; the first arrow leads right to a second bubble labeled 'Food vacuole.' A second arrow angles down to a small bubble of white dots labeled 'Lysosome containing digestive enzymes'; the food vacuole and lysosome are shown merging, and the particle inside breaks into speckled fragments. A further arrow leads right to a bubble of scattered dots, and a final arrow leads up to the cell's upper-right edge, where the dots leave the cell inside a bubble labeled 'Exocytic vesicle containing undigested material.'" kind="diagram" eager="true" >}}
+{{< mediafigure src="biology/Figure_B23_02_01" alt="In this illustration, a eukaryotic cell is shown consuming a food particle. As the food particle is consumed, it is encapsulated in a vacuole. The vacuole fuses with a lysosome, and proteins inside the lysosome digest the food particle. Indigestible waste material is ejected from the cell when an exocytic vesicle fuses with the plasma membrane." longdesc="A single-celled, oval blue organism drawn with finger-like projections trailing along its lower edge, labeled 'Pseudopods.' Five red arrows run left to right across the cell. An orange particle at the upper left, labeled 'Food particle,' sits inside a small bubble; the first arrow, labeled 'Phagocytosis,' leads right to a second bubble labeled 'Food vacuole.' A second arrow angles down from the food vacuole to a larger vacuole that a small vesicle is merging with; a third arrow leads into that same vacuole from a small bubble of dots at the lower left labeled 'Lysosome containing digestive enzymes.' A fourth arrow leads right to a bubble in which the particle has broken into many small fragments, and a final arrow leads up to the cell's upper-right edge, where the dots leave the cell inside a bubble labeled 'Exocytic vesicle containing undigested material.'" kind="diagram" eager="true" >}}
 Phagocytosis. The stages of phagocytosis include the engulfment of a food particle, the digestion of the particle using hydrolytic enzymes contained within a lysosome, and the expulsion of undigested materials from the cell.
 {{< /mediafigure >}}
 
@@ -82,7 +82,7 @@ proteins
 {{< multiplechoice
   question="Which of these locomotor organs would likely be the shortest?"
   answer="a cilium"
-  hint="Picture the relative lengths of tiny beating cilia, a single whip-like flagellum, and an extended pseudopod."
+  hint="Compare how the Motility subsection and the locomotor-organelles figure describe each structure."
 >}}
 a flagellum
 a cilium
@@ -104,10 +104,16 @@ locomotion: flagella, cilia, pseudopodia
 
 ### Describe the metabolic diversity of protists
 
+{{< textin
+  question="The cellular body formed by the union of a phagosome containing an ingested particle with a lysosome that contains hydrolytic enzymes is called a ________."
+  answer="phagolysosome"
+  hint="The Metabolism subsection names it in its account of how amoebas digest what they engulf."
+>}}
+
 {{< multiplechoice
   question="Protists with the capabilities to perform photosynthesis and to absorb nutrients from dead organisms are called ______________."
   answer="mixotrophs"
-  hint="This is the term for protists that switch between photosynthesis and absorbing nutrition depending on conditions."
+  hint="The last paragraph of the Metabolism subsection names the protists that use more than one route to nutrition."
 >}}
 photoautotrophs
 mixotrophs
@@ -118,19 +124,13 @@ heterotrophs
 {{< multiplechoice
   question="The amoeba *E. histolytica* is a pathogen that forms liver abscesses in infected individuals. Its metabolic classification is most likely ______."
   answer="Anaerobic heterotroph"
-  hint="It is a pathogen consuming organic materials, not a photosynthesizer, and it does not switch between routes."
+  hint="Decide how a parasite living deep inside a host's tissues would obtain its nutrition and energy, then match the Metabolism subsection's terms."
 >}}
 Anaerobic heterotroph
 Mixotroph
 Aerobic phototroph
 Phagocytic autotroph
 {{< /multiplechoice >}}
-
-{{< textin
-  question="A protist that facultatively obtains nutrition by either photoautotrophic or heterotrophic routes, depending on whether sunlight or organic nutrients are available, is called a(n) ________."
-  answer="mixotroph"
-  hint="It combines two nutritional strategies in one name."
->}}
 
 ### Describe the life cycle diversity of protists
 
@@ -162,4 +162,4 @@ the cysts would have to be resistant to acidic conditions
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 23.2: Characteristics of Protists](https://openstax.org/books/biology-2e/pages/23-2-characteristics-of-protists) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the Paramecium/Amoeba/Euglena figure's alt places the flagellum at the rounded end opposite the narrow point, because the source alt's "narrow front end" with the flagellum "from the back end" contradicts the drawing (erratum 843); figures re-encoded as WebP and both re-kinded from the manifest's "photo" guess to "diagram" after inspection (both are line illustrations, not micrographs); an extended description added to the phagocytosis figure, since its four-arrow sequence and five labels are not fully carried by its caption; the two in-text cross-references to figures by number changed to descriptive "see the figure below" wording since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one key-term recall item (mixotroph) added from the glossary to bring the metabolic-diversity group to the book's floor.</small>
+<small>This section is adapted from [Biology 2e, Section 23.2: Characteristics of Protists](https://openstax.org/books/biology-2e/pages/23-2-characteristics-of-protists) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the Paramecium/Amoeba/Euglena figure's alt places the flagellum at the rounded end opposite the narrow point, because the source alt's "narrow front end" with the flagellum "from the back end" contradicts the drawing (erratum 843); figures re-encoded as WebP and both re-kinded from the manifest's "photo" guess to "diagram" after inspection (both are line illustrations, not micrographs); an extended description added to the phagocytosis figure, since its four-arrow sequence and five labels are not fully carried by its caption; the two in-text cross-references to figures by number changed to descriptive "see the figure below" wording since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one key-term recall item (phagolysosome) added from the glossary to bring the metabolic-diversity group to the book's floor; each source question is placed under the objective it tests, so the Review Questions run in the order 1, 3, 2, 5, 4 of the source's numbering and the Critical Thinking Question on the definition of protists, last in the source, comes first.</small>

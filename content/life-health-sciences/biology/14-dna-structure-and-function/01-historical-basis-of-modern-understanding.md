@@ -35,7 +35,7 @@ The R strain is non-pathogenic (does not cause disease). The S strain is pathoge
 
 When Griffith injected the living S strain into mice, they died from pneumonia. In contrast, when Griffith injected the live R strain into mice, they survived. In another experiment, when he injected mice with the heat-killed S strain, they also survived. This experiment showed that the capsule alone was not the cause of death. In a third set of experiments, a mixture of live R strain and heat-killed S strain were injected into mice, and—to his surprise—the mice died. Upon isolating the live bacteria from the dead mouse, only the S strain of bacteria was recovered. When this isolated S strain was injected into fresh mice, the mice died. Griffith concluded that something had passed from the heat-killed S strain into the live R strain and transformed it into the pathogenic S strain. He called this the *transforming principle*. These experiments are now known as Griffith's transformation experiments.
 
-{{< mediafigure src="biology/Figure_14_01_02-46c8" kind="diagram" alt="Four scenarios in an experiment are shown. In the first, living S cells are injected, and the mouse dies. In the second, living R cells are injected, and the mouse is healthy. In the third, heat-killed S cells are injected, and the mouse is healthy. In the fourth, a mixture of heat-killed S cells and living R cells are injected, and the mouse dies and living S cells are recovered." longdesc="A four-column diagram titled “Experiment.” Column 1, “Living S Cells (Pathogenic Control)”: three yellow dots drawn into a syringe and injected into a mouse; the mouse dies. Column 2, “Living R Cells (Nonpathogenic Control)”: three brown dots injected into a mouse; the mouse stays healthy. Column 3, “Heat-killed S Cells (Nonpathogenic Control)”: three pale yellow dots injected into a mouse; the mouse stays healthy. Column 4, “Mixture of Heat-killed S Cells and Living R Cells”: yellow and brown dots injected together into a mouse; the mouse dies, and an arrow points down to three yellow dots labeled “Living S Cells,” recovered from it." >}}
+{{< mediafigure src="biology/Figure_14_01_02-46c8" kind="diagram" alt="Four scenarios in an experiment are shown. In the first, living S cells are injected, and the mouse dies. In the second, living R cells are injected, and the mouse is healthy. In the third, heat-killed S cells are injected, and the mouse is healthy. In the fourth, a mixture of heat-killed S cells and living R cells are injected, and the mouse dies and living S cells are recovered." longdesc="A four-column diagram titled “Experiment.” Column 1, “Living S Cells (Pathogenic Control)”: three yellow dots drawn into a syringe and injected into a mouse; the mouse dies. Column 2, “Living R Cells (Nonpathogenic Control)”: three brown dots injected into a mouse; the mouse stays healthy. Column 3, “Heat-killed S Cells (Nonpathogenic Control)”: three pale yellow dots injected into a mouse; the mouse stays healthy. Column 4, “Mixture of Heat-killed S Cells and Living R Cells”: three pale yellow and three brown dots injected together into a mouse; the mouse dies, and an arrow points down to three yellow dots labeled “Living S Cells,” recovered from it." >}}
 Two strains of *S. pneumoniae* were used in Griffith's transformation experiments. The R strain is non-pathogenic, whereas the S strain is pathogenic and causes death. When Griffith injected a mouse with the heat-killed S strain and a live R strain, the mouse died. The S strain was recovered from the dead mouse. Griffith concluded that something had passed from the heat-killed S strain to the R strain, transforming the R strain into the S strain in the process. Credit: Rao, A., Ryan, K. and Tag, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -53,7 +53,7 @@ Although the experiments of Avery, McCarty and McLeod had demonstrated that DNA 
 
 Each batch of phage was allowed to infect the cells separately. After infection, the phage bacterial suspension was put in a blender, which caused the phage coat to detach from the host cell. Cells exposed long enough for infection to occur were then examined to see which of the two radioactive molecules had entered the cell. The phage and bacterial suspension was spun down in a centrifuge. The heavier bacterial cells settled down and formed a pellet, whereas the lighter phage particles stayed in the supernatant. In the tube that contained phage labeled with ³⁵S, the supernatant contained the radioactively labeled phage, whereas no radioactivity was detected in the pellet. In the tube that contained the phage labeled with ³²P, the radioactivity was detected in the pellet that contained the heavier bacterial cells, and no radioactivity was detected in the supernatant. Hershey and Chase concluded that it was the phage DNA that was injected into the cell and carried information to produce more phage particles, thus providing evidence that DNA was the genetic material and not proteins.
 
-{{< mediafigure src="biology/Figure_14_01_03" kind="diagram" alt="A boxed diagram tracing two parallel experiments through four numbered steps: labeling phage, infecting bacteria, centrifuging to separate phage from bacteria, and culturing the bacterial pellet. The top row's phage carries ³²P-labeled DNA; the bottom row's phage carries ³⁵S-labeled protein coat. Only the ³²P-labeled DNA ends up inside the cultured bacterial offspring." longdesc="Two rows of icons run left to right through four numbered steps. Step 1: an outlined phage icon with a green coiled line inside is labeled “³²P-labeled DNA” above a second phage icon outlined in red with a black coiled line inside, labeled “³⁵S-labeled protein coat.” Step 2, “Bacteria were infected with the phage”: each phage's tail contacts an oval bacterial cell, and only the coiled line — green in the top row, black in the bottom row — passes inside it. Step 3, “The cultures were blended and centrifuged to separate the phage from the bacteria”: a test tube for each row shows an empty phage shell floating above a pellet at the bottom holding the infected bacterial cell. Step 4, “The bacterial pellet was cultured”: the top row's bacterial cell yields three new phage particles each again drawn with the green coil, labeled as ³²P-labeled progeny; the bottom row's bacterial cell yields three new phage particles drawn without color, labeled as unlabeled phage." >}}
+{{< mediafigure src="biology/Figure_14_01_03" kind="diagram" alt="A boxed diagram tracing two parallel experiments through four numbered steps: labeling phage, infecting bacteria, centrifuging to separate phage from bacteria, and culturing the bacterial pellet. The top row's phage carries ³²P-labeled DNA; the bottom row's phage carries ³⁵S-labeled protein coat. Only the ³²P label ends up in the new phage the cultured bacteria produce." longdesc="Two rows of icons run left to right through four numbered steps. Step 1: an outlined phage icon with a green coiled line inside is labeled “³²P-labeled DNA” above a second phage icon outlined in red with a black coiled line inside, labeled “³⁵S-labeled protein coat.” Step 2, “Bacteria were infected with the phage”: each phage's tail contacts an oval bacterial cell, and only the coiled line — green in the top row, black in the bottom row — passes inside it. Step 3, “The cultures were blended and centrifuged to separate the phage from the bacteria”: a test tube for each row shows an empty phage shell floating above a pellet at the bottom holding the infected bacterial cell. Step 4, “The bacterial pellet was cultured”: the top row's bacterial cell yields three new phage particles each again drawn with the green coil, which the step text calls ³²P-labeled phage; the bottom row's bacterial cell yields three new phage particles drawn all in black, with no red coat, which the step text calls unlabeled phage." >}}
 In Hershey and Chase's experiments, bacteria were infected with phage radiolabeled with either ³⁵S, which labels protein, or ³²P, which labels DNA. Only ³²P entered the bacterial cells, indicating that DNA is the genetic material.
 {{< /mediafigure >}}
 
@@ -71,37 +71,44 @@ DNA was first isolated from white blood cells by Friedrich Miescher, who called 
 
 ### Explain transformation of DNA
 
+{{< textin
+  question="According to the section summary, Frederick Griffith's experiments with strains of ________ provided the first hint that DNA may be the transforming principle."
+  answer="Streptococcus pneumoniae"
+  accept="S. pneumoniae"
+  hint="Reread the section summary's second sentence."
+>}}
+
 {{< multiplechoice
   question="Bacterial transformation is a major concern in many medical settings. Why might health care providers be concerned?"
   answer="All of the above."
-  hint="Think about the different pathways above — pathogenicity, drug resistance, and toxin genes — that DNA transfer between bacteria opens up."
+  hint="Weigh each option against the definition of transformation in the paragraph that introduces Griffith's work."
 >}}
 Pathogenic bacteria could introduce disease-causing genes in non-pathogenic bacteria.
 Antibiotic resistance genes could be introduced to new bacteria to create “superbugs.”
-Bacteriophages could spread DNA encoding toxins to new bacteria.
+Bacteria could take up DNA encoding toxins that other bacteria shed into their environment.
 All of the above.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain Griffith's transformation experiments. What did he conclude from them?" hint="Consider what changed about the live R strain after Griffith combined it with heat-killed S strain." >}}
+{{< selfcheck question="Explain Griffith's transformation experiments. What did he conclude from them?" hint="Reread the paragraph on Griffith's sets of experiments and the four-column figure after it." >}}
 Live R cells acquired genetic information from the heat-killed S cells that “transformed” the R cells into S cells.
 ===CHECKS===
 live R cells acquired genetic information from the heat-killed S cells
 transformed the R cells into S cells
 {{< /selfcheck >}}
 
-{{< textin
-  question="A process in which external DNA is taken up by a cell is called ________."
-  answer="transformation"
-  accept="bacterial transformation"
-  hint="Griffith named this process after observing it turn non-pathogenic R strain bacteria into the pathogenic S strain."
->}}
-
 ### Describe the key experiments that helped identify that DNA is the genetic material
+
+{{< textin
+  question="Later experiments by Hershey and Chase using ________ proved that DNA is the genetic material."
+  answer="bacteriophage T2"
+  accept="phage T2|T2 bacteriophage|T2 phage|T2"
+  hint="Reread the section summary's fourth sentence."
+>}}
 
 {{< multiplechoice
   question="The experiments by Hershey and Chase helped confirm that DNA was the hereditary material on the basis of the finding that:"
   answer="radioactive phosphorus was found in the cell"
-  hint="Phosphorus, not sulfur, is a component of DNA — check which labeled molecule the centrifuge separated into the bacterial pellet."
+  hint="Reread the two paragraphs on Hershey and Chase's experiment and the figure after them."
 >}}
 radioactive phage were found in the pellet
 radioactive cells were found in the supernatant
@@ -109,26 +116,19 @@ radioactive sulfur was found inside the cell
 radioactive phosphorus was found in the cell
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why were radioactive sulfur and phosphorous used to label bacteriophage in Hershey and Chase's experiments?" hint="One of the two elements is present in the protein coat, the other only in the nucleic acid core." >}}
+{{< selfcheck question="Why were radioactive sulfur and phosphorous used to label bacteriophage in Hershey and Chase's experiments?" hint="Reread how Hershey and Chase labeled their two batches of phage." >}}
 Sulfur is an element found in proteins and phosphorus is a component of nucleic acids.
 ===CHECKS===
 sulfur is an element found in proteins
 phosphorus is a component of nucleic acids
 {{< /selfcheck >}}
 
-{{< textin
-  question="Later experiments by Hershey and Chase using ________ proved that DNA is the genetic material."
-  answer="bacteriophage T2"
-  accept="phage T2|T2 bacteriophage|T2 phage"
-  hint="This is the specific virus strain the section summary names, not just any bacteriophage."
->}}
-
 ### State and explain Chargaff’s rules
 
 {{< multiplechoice
   question="If DNA of a particular species was analyzed and it was found that it contains 27 percent A, what would be the percentage of C?"
   answer="23 percent"
-  hint="Since A = T, T is also 27%; the remaining 46% is split evenly between G and C because G = C."
+  hint="Reread the paragraph on Chargaff's findings, just before the Summary."
 >}}
 27 percent
 30 percent
@@ -136,7 +136,7 @@ phosphorus is a component of nucleic acids
 54 percent
 {{< /multiplechoice >}}
 
-{{< selfcheck question="When Chargaff was performing his experiments, the tetranucleotide hypothesis, which stated that DNA was composed of GACT nucleotide repeats, was the most widely accepted view of DNA’s composition. How did Chargaff disprove this hypothesis?" hint="Compare what the tetranucleotide hypothesis predicts about the four bases' relative amounts with what Chargaff actually measured." >}}
+{{< selfcheck question="When Chargaff was performing his experiments, the tetranucleotide hypothesis, which stated that DNA was composed of GACT nucleotide repeats, was the most widely accepted view of DNA’s composition. How did Chargaff disprove this hypothesis?" hint="Reread the paragraph on Chargaff's findings, just before the Summary." >}}
 If the tetranucleotide hypothesis were true, then DNA would have to contain equal amounts of all four nucleotides (A=T=G=C). However, Chargaff demonstrated that A=T and G=C, but that the four nucleotides are not present in equal amounts.
 ===CHECKS===
 DNA would have to contain equal amounts of all four nucleotides
@@ -147,9 +147,9 @@ the four nucleotides are not present in equal amounts
 {{< textin
   question="Chargaff found that the ratio of A = T and C = G, and that the percentage content of A, T, G, and C is ________."
   answer="different for different species"
-  hint="This is the second half of the summary's sentence about Chargaff's findings — species vary in overall base composition even though A always equals T and G always equals C."
+  hint="Reread the section summary's last sentence."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 14.1: Historical Basis of Modern Understanding](https://openstax.org/books/biology-2e/pages/14-1-historical-basis-of-modern-understanding) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_14_01_01's bare manifest alt ("Photo of Friedrich Miescher.") rewritten to describe the portrait as drawn; Figure_14_01_02 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a colored illustration, not a photograph), and given a longdesc walking its four columns since the panel layout, colors, and counts are not carried by the caption's prose narrative; Figure_14_01_03's source alt (a letter-spaced, screen-reader-style description narrating "superscript 35 baseline upper case S" and "D N A") rewritten as a plain description from the image, with the full four-step walkthrough moved into a longdesc, and the isotope labels set as Unicode superscripts (³⁵S, ³²P) in the alt, longdesc, and caption in place of the source's `<sup>` markup; the interactive note rendered as a Link to Learning callout with descriptive link text in place of the source's bare "this review"; the Career Connection box's title set in italics per house style; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; one key-term recall item (transformation) added from the glossary; and, because the "describe the key experiments" and "state and explain Chargaff's rules" objective groups had only two source items each, two summary-derived cloze textins were added — one naming bacteriophage T2 from the summary's Hershey-Chase sentence, one naming "different for different species" from the summary's Chargaff sentence — built strictly from the section's own `Section Summary` sentences with no new claim; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 14.1: Historical Basis of Modern Understanding](https://openstax.org/books/biology-2e/pages/14-1-historical-basis-of-modern-understanding) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_14_01_01's bare manifest alt ("Photo of Friedrich Miescher.") rewritten to describe the portrait as drawn; Figure_14_01_02 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a colored illustration, not a photograph), and given a longdesc walking its four columns since the panel layout, colors, and counts are not carried by the caption's prose narrative; Figure_14_01_03's source alt (a letter-spaced, screen-reader-style description narrating "superscript 35 baseline upper case S" and "D N A") rewritten as a plain description from the image, with the full four-step walkthrough moved into a longdesc, and the isotope labels set as Unicode superscripts (³⁵S, ³²P) in the alt, longdesc, and caption in place of the source's `<sup>` markup; the interactive note rendered as a Link to Learning callout with descriptive link text in place of the source's bare "this review"; the Career Connection box's title set in italics per house style; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; the glossary's one term (transformation) left to the Key terms list, because the first objective's heading prints it; three summary-derived cloze textins added, one per objective group — one naming *Streptococcus pneumoniae* from the summary's Griffith sentence, one naming bacteriophage T2 from the summary's Hershey-Chase sentence, one naming "different for different species" from the summary's Chargaff sentence — built strictly from the section's own `Section Summary` sentences with no new claim; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and, because Practice items are grouped by objective, the three Review Questions appear in reverse of the source's order (transformation, Hershey–Chase, Chargaff). One source option is corrected: the transformation Review Question keys "All of the above," but its third option, "Bacteriophages could spread DNA encoding toxins to new bacteria," describes transduction, which this book's own Structure of Prokaryotes section (Section 22.2) separates from transformation ("In transformation, the prokaryote takes in DNA shed by other prokaryotes into its environment… In transduction, bacteriophages… may move short pieces of chromosomal DNA from one bacterium to another"); the page prints that option as "Bacteria could take up DNA encoding toxins that other bacteria shed into their environment," the transformation route Section 22.2 gives for a toxin gene, so the source key stands (reported as a source defect).</small>

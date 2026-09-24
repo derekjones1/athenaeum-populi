@@ -29,16 +29,16 @@ There were three models suggested for DNA replication. In the conservative model
 
 Matthew Meselson (1930–) and Franklin Stahl (1929–) devised an experiment in 1958 to test which of these models correctly represents DNA replication (shown below). They grew *E. coli* for several generations in a medium containing a "heavy" isotope of nitrogen (¹⁵N) that was incorporated into nitrogenous bases and, eventually, into the DNA. This labeled the parental DNA. The *E. coli* culture was then shifted into a medium containing ¹⁴N and allowed to grow for one generation. The cells were harvested and the DNA was isolated. The DNA was separated by ultracentrifugation, during which the DNA formed bands according to its density. DNA grown in ¹⁵N would be expected to form a band at a higher density position than that grown in ¹⁴N. Meselson and Stahl noted that after one generation of growth in ¹⁴N, the single band observed was intermediate in position in between DNA of cells grown exclusively in ¹⁵N or ¹⁴N. This suggested either a semiconservative or dispersive mode of replication. Some cells were allowed to grow for one more generation in ¹⁴N and spun again. The DNA harvested from cells grown for two generations in ¹⁴N formed two bands: one DNA band was at the intermediate position between ¹⁵N and ¹⁴N, and the other corresponded to the band of ¹⁴N DNA. These results could only be explained if DNA replicates in a semiconservative manner. If DNA replication was dispersive, a single purple band positioned closer to the red ¹⁴N band would have been observed, as more ¹⁴N was added in a dispersive manner to replace ¹⁵N. Therefore, the other two models were ruled out. As a result of this experiment, we now know that during DNA replication, each of the two strands that make up the double helix serves as a template from which new strands are copied. The new strand will be complementary to the parental or "old" strand. The resulting DNA molecules have the same sequence and are divided equally into the two daughter cells.
 
-{{< mediafigure src="microbiology/OSC_Microbio_11_02_MesStahl" alt="Diagram of the Meselson–Stahl experiment. Three beakers (heavy ¹⁵N medium, then light ¹⁴N medium twice) are each spun and their DNA banded by density, compared against a predictions table for the conservative, semiconservative, and dispersive models after the first and second replication; check marks and X marks show which model's predicted bands match the bands actually observed." longdesc="Left panel, top to bottom: a beaker of heavy ¹⁵N medium is spun, giving a single low (heavy) band labeled ¹⁵N¹⁵N, which resolves into all-blue double helices; a beaker of light ¹⁴N medium is spun, giving a single intermediate band labeled ¹⁴N¹⁵N, which resolves into helices with one blue and one red strand; a second round in ¹⁴N medium gives two bands, a light band labeled ¹⁴N¹⁴N (all-red helices) and an intermediate band labeled ¹⁴N¹⁵N (mixed helices). Right panel: a predictions table with three columns, conservative, semiconservative, and dispersive. All three start with one heavy (blue) band. After the first replication, conservative predicts one heavy and one light band, while semiconservative and dispersive both predict a single intermediate (purple) band. After the second replication, the conservative column stops while the semiconservative and dispersive columns continue: semiconservative predicts one light and one intermediate band, dispersive a single intermediate band. Below the tubes, the results row marks conservative with a red X, semiconservative with a green check mark, and dispersive with a red X." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_11_02_MesStahl" alt="Diagram of the Meselson–Stahl experiment. Three beakers (heavy ¹⁵N medium, then light ¹⁴N medium twice) are each spun and their DNA banded by density, compared against a predictions table for the conservative, semiconservative, and dispersive models after the first and second replication; check marks and X marks show which model's predicted bands match the bands actually observed." longdesc="Left panel, top to bottom: a beaker of heavy ¹⁵N medium is spun, giving a single low (heavy) band labeled ¹⁵N¹⁵N, and an arrow leads to one all-blue double helix; a beaker of light ¹⁴N medium is spun, giving a single intermediate band labeled ¹⁴N¹⁵N, and an arrow leads to two helices, each with one blue and one red strand; a second round in ¹⁴N medium gives two bands, a light band labeled ¹⁴N¹⁴N and an intermediate band labeled ¹⁴N¹⁵N, and an arrow leads to four helices, two all red and two with one blue and one red strand. A key reads blue = parent DNA, red = new DNA. Right panel: a predictions table with three columns, conservative, semiconservative, and dispersive. All three start with one heavy (blue) band. After the first replication, conservative predicts one heavy and one light band, while semiconservative and dispersive both predict a single intermediate (purple) band. After the second replication, the conservative column stops while the semiconservative and dispersive columns continue: semiconservative predicts one light and one intermediate band, dispersive a single intermediate band. Below the tubes, the results row marks conservative with a red X, semiconservative with a green check mark, and dispersive with a red X." kind="diagram" >}}
 Meselson and Stahl experimented with *E. coli* grown first in heavy nitrogen (¹⁵N) then in ¹⁴N. DNA grown in ¹⁵N (blue band) was heavier than DNA grown in ¹⁴N (red band), and sedimented to a lower level on ultracentrifugation. After one round of replication, the DNA sedimented halfway between the ¹⁵N and ¹⁴N levels (purple band), ruling out the conservative model of replication. After a second round of replication, the dispersive model of replication was ruled out. These data supported the semiconservative replication model.
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
 {{< multiplechoice
-  question="What would have been the conclusion of Meselson and Stahl's experiment if, after the first generation, they had found two bands of DNA — one heavy and one light — instead of a single intermediate band?"
+  question="What would have been the conclusion of Meselson and Stahl's experiment if, after the first generation, they had found two bands of DNA?"
   answer="That DNA replication is conservative, since one resulting molecule would be entirely parental DNA and the other entirely new DNA."
-  hint="Compare the three columns of the predictions figure after the first round of replication — which one draws two separate bands rather than a single merged band?"
+  hint="Reread the Meselson–Stahl paragraph and study the figure that follows it."
 >}}
 That DNA replication is conservative, since one resulting molecule would be entirely parental DNA and the other entirely new DNA.
 That DNA replication is semiconservative, since every molecule would be a hybrid of old and new DNA.
@@ -70,7 +70,7 @@ During **elongation in DNA replication**, the addition of nucleotides occurs at 
 
 The leading strand can be extended from one primer alone, whereas the lagging strand needs a new primer for each of the short Okazaki fragments. The overall direction of the lagging strand will be 3′ to 5′, and that of the leading strand 5′ to 3′. A protein called the sliding clamp holds the DNA polymerase in place as it continues to add nucleotides. The sliding clamp is a ring-shaped protein that binds to the DNA and holds the polymerase in place. Beyond its role in initiation, topoisomerase also prevents the overwinding of the DNA double helix ahead of the replication fork as the DNA is opening up; it does so by causing temporary nicks in the DNA helix and then resealing it. As synthesis proceeds, the RNA primers are replaced by DNA. The primers are removed by the **exonuclease** activity of DNA polymerase I, and the gaps are filled in. The nicks that remain between the newly synthesized DNA (that replaced the RNA primer) and the previously synthesized DNA are sealed by the enzyme **DNA ligase** that catalyzes the formation of covalent phosphodiester linkage between the 3′-OH end of one DNA fragment and the 5′ phosphate end of the other fragment, stabilizing the sugar-phosphate backbone of the DNA molecule.
 
-{{< mediafigure src="microbiology/OSC_Microbio_11_02_RepFork" alt="Diagram of a bacterial replication fork. An inset shows the whole replication bubble with leading and lagging strands on both sides of the origin, replicating in both directions. The main diagram zooms in on one fork: topoisomerase, helicase, single-stranded binding proteins, RNA primase, DNA polymerase III on both strands, and a sliding clamp sit along the parental DNA; the leading strand is synthesized continuously while the lagging strand forms three labeled Okazaki fragments, one shown being sealed by DNA ligase after DNA polymerase I replaces its RNA primer." longdesc="Inset (top right): a replication bubble with the origin of replication at its center; on the top strand a solid arrow points left from the origin (leading strand) and short arrows point left on the other side (lagging strand); on the bottom strand a solid arrow points right from the origin (leading strand) and short arrows point right on the other side (lagging strand); flanking arrows read 'overall direction of replication', pointing outward both ways. Main diagram (left half of the bubble, left to right): parental DNA enters from the left, still double-stranded and labeled 5′ (top) and 3′ (bottom); topoisomerase/gyrase sits at the far left; helicase, drawn as a wedge, splits the strands; single-stranded binding proteins coat both single strands just past helicase. On the upper (leading-strand template) branch, DNA polymerase III and a sliding clamp sit where the template reads 3′ (right) to 5′ (left), synthesizing the leading strand continuously toward the right, ending 5′ at the right and 3′ at the fork; a label reads 'continuous synthesis'. On the lower (lagging-strand template) branch, RNA primase attaches a green RNA primer near the fork; further right, DNA polymerase III and a sliding clamp elongate a primed segment 5′ to 3′ (left to right); further right still, three labeled segments — Okazaki fragment #3, #2, and #1, read right to left in order of synthesis — each begin with a green RNA primer joined to red new DNA; DNA polymerase I sits on Okazaki fragment #2's primer, replacing it with DNA; DNA ligase sits between Okazaki fragments #1 and #2, sealing the nick. A boxed close-up below shows ligase joining a fragment's free 3′-OH to the next fragment's 5′ phosphate, releasing a phosphate group." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_11_02_RepFork" alt="Diagram of a bacterial replication fork. An inset shows the whole replication bubble with leading and lagging strands on both sides of the origin, replicating in both directions. The main diagram zooms in on one fork: topoisomerase, helicase, single-stranded binding proteins, RNA primase, DNA polymerase III on both strands, and a sliding clamp sit along the parental DNA; the leading strand is synthesized continuously while the lagging strand forms three labeled Okazaki fragments, one shown being sealed by DNA ligase after DNA polymerase I replaces its RNA primer." longdesc="Inset (top right): a replication bubble with the origin of replication at its center; on the top strand a solid arrow points left from the origin (leading strand) and short arrows point left on the other side (lagging strand); on the bottom strand a solid arrow points right from the origin (leading strand) and short arrows point right on the other side (lagging strand); flanking arrows read 'overall direction of replication', pointing outward both ways. Main diagram (left half of the bubble, left to right): parental DNA enters from the left, still double-stranded and labeled 5′ (top) and 3′ (bottom); topoisomerase/gyrase sits at the far left; helicase, drawn as a wedge, splits the strands; single-stranded binding proteins coat both single strands just past helicase. On the upper (leading-strand template) branch, DNA polymerase III and a sliding clamp sit where the template reads 3′ (right) to 5′ (left), synthesizing the leading strand continuously toward the fork: its red arrow runs from 5′ at the far right to an arrowhead, its 3′ end, at the fork; a label reads 'continuous synthesis'. On the lower (lagging-strand template) branch, RNA primase attaches a green RNA primer near the fork; further right, DNA polymerase III and a sliding clamp elongate a primed segment 5′ to 3′ (left to right); further right still, one continuous new strand runs, left to right: a green RNA primer, red DNA bracketed Okazaki fragment #3, a short green primer remnant under DNA polymerase I, which is replacing it with DNA, red DNA bracketed Okazaki fragment #2, a nick where DNA ligase sits, and red DNA bracketed Okazaki fragment #1 ending in a 3′ arrowhead (the numbers run right to left in order of synthesis). A boxed close-up below, reached by an arrow from the ligase, shows a strand's free 3′-OH and a phosphate group drawn between the two strand ends becoming, after ligase acts, one continuous O–P–O link with no gap." kind="diagram" >}}
 At the origin of replication, topoisomerase II relaxes the supercoiled chromosome. Two replication forks are formed by the opening of the double-stranded DNA at the origin, and helicase separates the DNA strands, which are coated by single-stranded binding proteins to keep the strands separated. DNA replication occurs in both directions. An RNA primer complementary to the parental strand is synthesized by RNA primase and is elongated by DNA polymerase III through the addition of nucleotides to the 3′-OH end. On the leading strand, DNA is synthesized continuously, whereas on the lagging strand, DNA is synthesized in short stretches called Okazaki fragments. RNA primers within the lagging strand are removed by the exonuclease activity of DNA polymerase I, and the Okazaki fragments are joined by DNA ligase.
 {{< /mediafigure >}}
 
@@ -97,26 +97,26 @@ Once the complete chromosome has been replicated, **termination of DNA replicati
 **Check Your Understanding**
 
 {{< textin
-  question="The enzyme that breaks the hydrogen bonds holding the two strands of DNA together so that replication can occur is ________."
+  question="Which enzyme breaks the hydrogen bonds holding the two strands of DNA together so that replication can occur?"
   answer="helicase"
-  hint="Name the enzyme that separates the DNA strands right after the supercoiled chromosome is relaxed."
+  hint="Reread the second paragraph of Initiation."
 >}}
 
 {{< multiplechoice
   question="Is it the lagging strand or the leading strand that is synthesized in the direction toward the opening of the replication fork?"
   answer="leading strand"
-  hint="Recall which strand's polymerase moves continuously forward, following the fork as it opens, rather than looping back for each new fragment."
+  hint="Reread the first paragraph of Elongation."
 >}}
 leading strand
 lagging strand
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The enzyme responsible for removing the RNA primers in newly replicated bacterial DNA is ________."
-  answer="DNA polymerase I"
-  accept="DNA pol I"
-  hint="Name the polymerase whose exonuclease activity removes primers and fills the resulting gaps, distinct from the polymerase that does most of the elongating."
->}}
+{{< selfcheck question="Which enzyme is responsible for removing the RNA primers in newly replicated bacterial DNA?" hint="Reread the second paragraph of Elongation." >}}
+As synthesis proceeds, the RNA primers are replaced by DNA. The primers are removed by the exonuclease activity of DNA polymerase I, and the gaps are filled in.
+===CHECKS===
+The primers are removed by the exonuclease activity of DNA polymerase I
+the gaps are filled in
+{{< /selfcheck >}}
 
 ## DNA Replication in Eukaryotes
 
@@ -132,7 +132,7 @@ Because eukaryotic chromosomes are linear, one might expect that their replicati
 
 The ends of the linear chromosomes are known as **telomere**s and consist of noncoding repetitive sequences. The telomeres protect coding sequences from being lost as cells continue to divide. In humans, a six base-pair sequence, TTAGGG, is repeated 100 to 1000 times to form the telomere. The discovery of the enzyme **telomerase**, shown below, clarified our understanding of how chromosome ends are maintained. Telomerase contains a catalytic part and a built-in RNA template. It attaches to the end of the chromosome, and complementary bases to the RNA template are added on the 3′ end of the DNA strand. Once the 3′ end of the lagging strand template is sufficiently elongated, DNA polymerase can add the nucleotides complementary to the ends of the chromosomes. In this way, the ends of the chromosomes are replicated. In humans, telomerase is typically active in germ cells and adult stem cells; it is not active in adult somatic cells and may be associated with the aging of these cells. Eukaryotic microbes including fungi and protozoans also produce telomerase to maintain chromosomal integrity. For her discovery of telomerase and its action, Elizabeth Blackburn (1948–) received the Nobel Prize for Medicine or Physiology in 2009.
 
-{{< mediafigure src="microbiology/OSC_Microbio_11_02_Telomerase" alt="Diagram of telomerase extending the end of a chromosome in four steps: a long DNA strand ending 3′ pairs with telomerase's built-in RNA template, which extends past the strand's 3′ end; the RNA template is used to add new bases (shown in a different color) to the 3′ end; telomerase then shifts to the new 3′ end and repeats; finally, primase and DNA polymerase synthesize a complementary strand on the extended overhang using a new RNA primer." longdesc="Four stacked panels, each showing a long top DNA strand (5′ left, 3′ right) reading 5′-CCATGCATTGGTTAG-3′ and a much shorter complementary bottom strand reading 3′-GGTAC-5′ beneath its left end, leaving a single-stranded 3′ overhang on the top strand. Panel 1: an oval labeled telomerase, containing the RNA sequence CAAUCCCAAUC, base-pairs with the overhang, its RNA extending past the strand's 3′ end. Panel 2: using that RNA as template, the top strand is extended (shown in a second color) to 5′-CCATGCATTGGTTAGGGTTAG-3′, telomerase still attached at the new 3′ end. Panel 3: telomerase has shifted rightward to the new 3′ end, ready to repeat the extension. Panel 4: the top strand carries two such extensions; a green RNA primer has bound near its new 3′ end, and a red arrow shows a new complementary strand being synthesized from that primer back toward the original short strand." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_11_02_Telomerase" alt="Diagram of telomerase extending the end of a chromosome in four steps: a long DNA strand ending 3′ pairs with telomerase's built-in RNA template, which extends past the strand's 3′ end; the RNA template is used to add new bases (marked by a red arrow above them) to the 3′ end; telomerase then shifts to the new 3′ end and repeats; finally, primase and DNA polymerase synthesize a complementary strand on the extended overhang using a new RNA primer." longdesc="Four stacked panels, each showing a long top DNA strand (5′ left, 3′ right) reading 5′-CCATGCATTGGTTAG-3′ and a much shorter complementary bottom strand reading 3′-GGTAC-5′ beneath its left end, leaving a single-stranded 3′ overhang on the top strand. Panel 1: an oval labeled telomerase, containing the RNA sequence CAAUCCCAAUC, base-pairs with the overhang, its RNA extending past the strand's 3′ end. Panel 2: using that RNA as template, the top strand is extended (the same per-base colors, the new stretch marked by a red arrow bar above it) to 5′-CCATGCATTGGTTAGGGTTAG-3′, telomerase still attached at the new 3′ end. Panel 3: telomerase has shifted rightward to the new 3′ end, ready to repeat the extension. Panel 4: the top strand carries two such extensions (two red arrow bars); a green RNA primer sits on the overhang under the first extension, and a red arrow shows a new complementary strand being synthesized from that primer back toward the original short strand." kind="diagram" >}}
 In eukaryotes, the ends of the linear chromosomes are maintained by the action of the telomerase enzyme.
 {{< /mediafigure >}}
 
@@ -169,7 +169,7 @@ Neither prokaryotes nor eukaryotes require an origin of replication to begin DNA
 {{< multiplechoice
   question="What polymerase enzymes are responsible for DNA synthesis during eukaryotic replication?"
   answer="pol δ and pol ε"
-  hint="Name the two eukaryotic polymerases that elongate the leading and lagging strands — different names from the bacterial enzyme that does both."
+  hint="Reread the second paragraph of DNA Replication in Eukaryotes, or the comparison table's Strand elongation row."
 >}}
 pol δ and pol ε
 DNA pol I and DNA pol III
@@ -177,12 +177,12 @@ helicase and primase
 RNase H and DNA ligase
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is found at the ends of the chromosomes in eukaryotes and why?" hint="Name the noncoding structure and the reason the module gives for why cells need it." >}}
-The ends of linear eukaryotic chromosomes are called telomeres, noncoding repetitive sequences (in humans, the six base-pair sequence TTAGGG repeated 100 to 1000 times). Telomeres are needed because eukaryotic DNA polymerase cannot make a primer for the very end of a linear chromosome, so without them the chromosome ends would remain unpaired and get progressively shorter each time the cell divides; telomeres protect the coding sequences near the ends of the chromosome from being lost as cells continue to divide.
+{{< selfcheck question="What is found at the ends of the chromosomes in eukaryotes and why?" hint="Reread the third and fourth paragraphs of DNA Replication in Eukaryotes." >}}
+The ends of linear eukaryotic chromosomes are called telomeres, noncoding repetitive sequences (in humans, the six base-pair sequence TTAGGG repeated 100 to 1000 times). Telomeres are needed because when the replication fork reaches the end of the linear chromosome, there is no place to make a primer for the DNA fragment to be copied at the end of the chromosome, so the chromosome ends would remain unpaired and get progressively shorter each time the cell divides; telomeres protect the coding sequences near the ends of the chromosome from being lost as cells continue to divide.
 ===CHECKS===
 The ends of linear eukaryotic chromosomes are called telomeres, noncoding repetitive sequences
 the six base-pair sequence TTAGGG repeated 100 to 1000 times
-eukaryotic DNA polymerase cannot make a primer for the very end of a linear chromosome
+there is no place to make a primer for the DNA fragment to be copied at the end of the chromosome
 chromosome ends would remain unpaired and get progressively shorter each time the cell divides
 telomeres protect the coding sequences near the ends of the chromosome from being lost
 {{< /selfcheck >}}
@@ -195,19 +195,18 @@ To copy their nucleic acids, plasmids and viruses frequently use variations on t
 
 Whereas many bacterial plasmids (see [Unique Characteristics of Prokaryotic Cells](/life-health-sciences/microbiology/03-the-cell/03-unique-characteristics-of-prokaryotic-cells/)) replicate by a process similar to that used to copy the bacterial chromosome, other plasmids, several bacteriophages, and some viruses of eukaryotes use **rolling circle replication**, shown below. The circular nature of plasmids and the circularization of some viral genomes on infection make this possible. Rolling circle replication begins with the enzymatic nicking of one strand of the double-stranded circular molecule at the double-stranded origin (dso) site. In bacteria, DNA polymerase III binds to the 3′-OH group of the nicked strand and begins to unidirectionally replicate the DNA using the un-nicked strand as a template, displacing the nicked strand as it does so. Completion of DNA replication at the site of the original nick results in full displacement of the nicked strand, which may then recircularize into a single-stranded DNA molecule. RNA primase then synthesizes a primer to initiate DNA replication at the single-stranded origin (sso) site of the single-stranded DNA (ssDNA) molecule, resulting in a double-stranded DNA (dsDNA) molecule identical to the other circular DNA molecule.
 
-{{< mediafigure src="microbiology/OSC_Microbio_11_02_RollCircle" alt="Diagram of rolling circle replication. A double-stranded circular DNA molecule carries an sso site next to a dso site. A nick forms in the dso, and DNA polymerase III copies the un-nicked strand while displacing the nicked strand as a growing loop. DNA ligase then separates the result into a double-stranded circle (first strand synthesized) and a single-stranded loop, which is copied into a second double-stranded circle." longdesc="Five stages, left to right. (1) A double-stranded circle with a short sso segment next to a short dso segment. (2) A nick appears at the 3′ end of the dso, with an arrow showing the direction of unwinding. (3) DNA polymerase III, labeled beneath the circle, copies the un-nicked strand clockwise around the circle while displacing the nicked strand, which now trails off the circle as a growing single-stranded loop. (4) The displaced loop has grown until it is nearly as large as the original circle, still attached at the nick site, labeled 'displacement of nicked strand'; an arrow labeled 'rejoining of nicked strand' shows its two ends coming together. (5) Two outcomes are shown side by side after DNA ligase acts: a complete double-stranded circle labeled 'dsDNA (synthesis of first strand)', and a single-stranded circle labeled 'ssDNA (synthesis of second strand)', with an arrow around it showing where the second strand is subsequently synthesized." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_11_02_RollCircle" alt="Diagram of rolling circle replication. A double-stranded circular DNA molecule carries an sso site next to a dso site. A nick forms in the dso, and DNA polymerase III copies the un-nicked strand while displacing the nicked strand as a growing loop. DNA ligase then separates the result into a double-stranded circle (first strand synthesized) and a single-stranded circle, with an arrow showing where its second strand will subsequently be synthesized." longdesc="Five stages, left to right. (1) A double-stranded circle with a short sso segment next to a short dso segment. (2) A nick, labeled, appears at the dso, with 3′ marked beside it and a short red curved arrow pointing clockwise. (3) After an arrow labeled DNA polymerase III, a red new strand has grown clockwise from the nick along part of the circle, labeled 'displacement of nicked strand', while the nicked strand peels away as a single-stranded tail. (4) The displaced strand now forms a loop above the circle, nearly as large as it and still attached near the nick site, while the red new strand runs almost all the way around the circle; a label reading 'rejoining of nicked strand' points to a small red arrow at the loop's free end, where its two ends meet. (5) Two outcomes are shown side by side after DNA ligase acts: a complete double-stranded circle labeled 'dsDNA (synthesis of first strand)', and a single-stranded circle labeled 'ssDNA (synthesis of second strand)', with an arrow around it showing where the second strand is subsequently synthesized." kind="diagram" >}}
 The process of rolling circle replication results in the synthesis of a single new copy of the circular DNA molecule, as shown here.
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
-{{< selfcheck question="Is there a lagging strand in rolling circle replication? Why or why not?" hint="Compare how many primers and forks this process uses to the two-fork, two-strand-type pattern of bidirectional chromosome replication." >}}
-No, rolling circle replication does not produce a lagging strand made of Okazaki fragments the way bidirectional replication of the bacterial chromosome does. DNA polymerase III begins to unidirectionally replicate the DNA using the un-nicked strand as a template, displacing the nicked strand as it does so, in one continuous stretch rather than in short, separately primed fragments. RNA primase then synthesizes a single primer to initiate DNA replication at the single-stranded origin (sso) site of the displaced single-stranded DNA molecule, so the second strand is also made from one primer rather than many. Because there is only one fork moving in one direction, not two forks moving in opposite directions, there is no strand growing away from a fork that would need to be synthesized discontinuously.
+{{< selfcheck question="Is there a lagging strand in rolling circle replication? Why or why not?" hint="Reread the Rolling Circle Replication paragraph and the Elongation subsection." >}}
+The section does not state a yes-or-no answer; what it prints is this. In rolling circle replication, DNA polymerase III binds to the 3′-OH group of the nicked strand and begins to unidirectionally replicate the DNA using the un-nicked strand as a template, displacing the nicked strand as it does so. The fully displaced nicked strand may then recircularize into a single-stranded DNA molecule, and RNA primase then synthesizes a primer to initiate DNA replication at the single-stranded origin (sso) site of the single-stranded DNA (ssDNA) molecule. By contrast, the leading strand can be extended from one primer alone, whereas the lagging strand needs a new primer for each of the short Okazaki fragments.
 ===CHECKS===
 DNA polymerase III begins to unidirectionally replicate the DNA using the un-nicked strand as a template, displacing the nicked strand as it does so
-RNA primase then synthesizes a single primer to initiate DNA replication at the single-stranded origin (sso) site
-there is only one fork moving in one direction, not two forks moving in opposite directions
-there is no strand growing away from a fork that would need to be synthesized discontinuously
+RNA primase then synthesizes a primer to initiate DNA replication at the single-stranded origin (sso) site
+the lagging strand needs a new primer for each of the short Okazaki fragments
 {{< /selfcheck >}}
 
 ## Summary
@@ -252,23 +251,23 @@ there is no strand growing away from a fork that would need to be synthesized di
 ### Explain the meaning of semiconservative DNA replication
 
 {{< textin
-  question="The DNA replication process is ________, which results in two DNA molecules, each having one parental strand of DNA and one newly synthesized strand."
-  answer="semiconservative"
-  accept="semi-conservative"
-  hint="Name the model this section's summary opens with — one parental strand paired with one new strand in each resulting molecule."
+  question="The DNA was separated by ________, during which the DNA formed bands according to its density."
+  answer="ultracentrifugation"
+  accept="centrifugation"
+  hint="Reread the Meselson–Stahl paragraph."
 >}}
 
 {{< multiplechoice
   question="In the semiconservative model of DNA replication, what does each resulting double-stranded DNA molecule contain?"
   answer="one parental strand and one newly synthesized strand"
-  hint="Recall the phrase used to describe each hybrid molecule after replication."
+  hint="Reread the first paragraph of this section."
 >}}
 one parental strand and one newly synthesized strand
 two entirely parental strands, with two entirely new strands forming a separate molecule
 strands with mixed regions of parental and newly synthesized DNA
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Below is a DNA sequence. Envision that this is a section of a DNA molecule that has separated in preparation for replication, so you are only seeing one DNA strand. Construct the complementary DNA sequence (indicating 5′ and 3′ ends). DNA sequence: 3′-TACTGACTGACGATC-5′" hint="Pair each base with its complement (A with T, G with C) and remember the new strand runs antiparallel to the template, so its 5′ end lines up under the template's 3′ end." >}}
+{{< selfcheck question="Below is a DNA sequence. Envision that this is a section of a DNA molecule that has separated in preparation for replication, so you are only seeing one DNA strand. Construct the complementary DNA sequence (indicating 5′ and 3′ ends). DNA sequence: 3′-TACTGACTGACGATC-5′" hint="Reread the first paragraph of Elongation." >}}
 Pairing each base of the template with its complement (A↔T, G↔C) and keeping the new strand antiparallel to the template — so the new strand's 5′ end aligns under the template's 3′ end — gives:
 
 `3′-T A C T G A C T G A C G A T C-5′` (template)
@@ -281,7 +280,7 @@ the new strand antiparallel to the template — so the new strand's 5′ end ali
 The complementary DNA sequence is 5′-ATGACTGACTGCTAG-3′
 {{< /selfcheck >}}
 
-{{< selfcheck question="Review the diagram comparing the three proposed models of DNA replication and the diagram of the Meselson–Stahl experiment above. Why was it important that Meselson and Stahl continue their experiment to at least two rounds of replication after isotopic labeling of the starting DNA with ¹⁵N, instead of stopping the experiment after only one round of replication?" hint="Compare what the semiconservative and dispersive models each predict after only one round, and what distinguishes them after a second round." >}}
+{{< selfcheck question="Review the diagram comparing the three proposed models of DNA replication and the diagram of the Meselson–Stahl experiment above. Why was it important that Meselson and Stahl continue their experiment to at least two rounds of replication after isotopic labeling of the starting DNA with ¹⁵N, instead of stopping the experiment after only one round of replication?" hint="Reread the Meselson–Stahl paragraph and the caption of the figure that follows it." >}}
 After one generation of growth in ¹⁴N, the single band observed was intermediate in position between DNA of cells grown exclusively in ¹⁵N or ¹⁴N; this result was consistent with either a semiconservative or a dispersive mode of replication and could not distinguish between them. The DNA harvested from cells grown for two generations in ¹⁴N formed two bands — one at the intermediate position and one corresponding to the band of ¹⁴N DNA — and these results could only be explained if DNA replicates in a semiconservative manner. If DNA replication was dispersive, a single purple band positioned closer to the red ¹⁴N band would have been observed, as more ¹⁴N was added in a dispersive manner to replace ¹⁵N. Stopping after only one round would therefore have left the semiconservative and dispersive models indistinguishable.
 ===CHECKS===
 this result was consistent with either a semiconservative or a dispersive mode of replication and could not distinguish between them
@@ -293,21 +292,22 @@ Stopping after only one round would therefore have left the semiconservative and
 ### Explain why DNA replication is bidirectional and includes both a leading and lagging strand
 
 {{< textin
-  question="*E. coli*'s entire circular chromosome is replicated in approximately 42 minutes, starting from a single origin of replication and proceeding around the circle ________."
-  answer="bidirectionally"
-  hint="Name the term for replication proceeding in both directions away from the origin at once."
+  question="Two replication forks are formed at the origin of replication, allowing for bidirectional replication and formation of a structure that looks like a ________ when viewed with a transmission electron microscope."
+  answer="bubble"
+  hint="Reread the second paragraph of Initiation."
 >}}
 
 {{< textin
-  question="The strand of DNA made continuously in the 5′ to 3′ direction by DNA polymerase is called the ________."
-  answer="leading strand"
-  hint="Name the strand that grows continuously toward the replication fork, needing only one primer."
+  question="During elongation, the leading strand of DNA is synthesized ________ from a single primer."
+  answer="continuously"
+  accept="continuous"
+  hint="Reread the Summary's elongation bullet, or the first paragraph of Elongation."
 >}}
 
 {{< multiplechoice
   question="Which of the following would be synthesized using 5′-CAGTTCGGA-3′ as a template?"
   answer="3′-GTCAAGCCT-5′"
-  hint="Pair each base with its complement and remember the new strand is antiparallel, so its 3′ end lines up under the template's 5′ end."
+  hint="Reread the first paragraph of Elongation."
 >}}
 3′-AGGCTTGAC-5′
 3′-TCCGAACTG-5′
@@ -317,10 +317,16 @@ Stopping after only one round would therefore have left the semiconservative and
 
 ### Explain why Okazaki fragments are formed
 
+{{< textin
+  question="A protein called the ________ holds the DNA polymerase in place as it continues to add nucleotides."
+  answer="sliding clamp"
+  hint="Reread the second paragraph of Elongation."
+>}}
+
 {{< multiplechoice
   question="More primers are used in lagging strand synthesis than in leading strand synthesis."
   answer="True"
-  hint="Recall the section's description of how the leading strand and the lagging strand are each primed."
+  hint="Reread the second paragraph of Elongation."
 >}}
 True
 False
@@ -328,27 +334,28 @@ False
 
 {{< multiplechoice
   question="Why are Okazaki fragments formed during lagging strand synthesis?"
-  answer="DNA polymerase can only extend a strand in the 5′ to 3′ direction, so the strand growing away from the replication fork must be synthesized discontinuously in short pieces, each needing its own primer."
-  hint="Recall which direction DNA polymerase can add nucleotides in, and what that means for the strand growing away from the fork."
+  answer="DNA polymerase III can only extend in the 5′ to 3′ direction, which poses a problem at the replication fork."
+  hint="Reread the first paragraph of Elongation."
 >}}
-DNA polymerase can only extend a strand in the 5′ to 3′ direction, so the strand growing away from the replication fork must be synthesized discontinuously in short pieces, each needing its own primer.
+DNA polymerase III can only extend in the 5′ to 3′ direction, which poses a problem at the replication fork.
 The lagging strand can be extended from one primer alone, the same as the leading strand.
 DNA polymerase III synthesizes in both the 5′ to 3′ and 3′ to 5′ directions.
 Two replication forks never form at a single origin of replication.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Short DNA sequence fragments produced during discontinuous lagging strand synthesis, each separated by an RNA primer, are called ________ fragments."
-  answer="Okazaki"
-  hint="Name the Japanese research team and married couple this fragment type is named after."
->}}
-
 ### Describe the process of DNA replication and the functions of the enzymes involved
+
+{{< textin
+  question="The enzyme responsible for relaxing supercoiled DNA to allow for the initiation of replication is called ________."
+  answer="DNA gyrase"
+  accept="topoisomerase II|gyrase|topoisomerase 2"
+  hint="Reread the second paragraph of Initiation."
+>}}
 
 {{< multiplechoice
   question="Which of the following is the enzyme that replaces the RNA nucleotides in a primer with DNA nucleotides?"
   answer="DNA polymerase I"
-  hint="Recall which polymerase's exonuclease activity removes RNA primers and fills the resulting gap with DNA."
+  hint="Reread the second paragraph of Elongation."
 >}}
 DNA polymerase III
 DNA polymerase I
@@ -356,17 +363,10 @@ primase
 helicase
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The enzyme responsible for relaxing supercoiled DNA to allow for the initiation of replication is called ________."
-  answer="DNA gyrase"
-  accept="topoisomerase II|gyrase"
-  hint="Name the topoisomerase mentioned by both of its names in the Initiation subsection."
->}}
-
 {{< multiplechoice
   question="Which of the following is not involved in the initiation of replication?"
   answer="ligase"
-  hint="Three of these four are named among the initiation-stage players; the fourth seals gaps later, during elongation."
+  hint="Reread the Initiation subsection, then the second paragraph of Elongation."
 >}}
 ligase
 DNA gyrase
@@ -377,7 +377,7 @@ primase
 {{< multiplechoice
   question="Why is primase required for DNA replication?"
   answer="It synthesizes an RNA primer that provides the free 3′-OH group DNA polymerase needs to begin adding nucleotides."
-  hint="Recall what DNA polymerase requires before it can add its first nucleotide to a template strand."
+  hint="Reread the last paragraph of Initiation."
 >}}
 It synthesizes an RNA primer that provides the free 3′-OH group DNA polymerase needs to begin adding nucleotides.
 It unwinds the DNA double helix by breaking the hydrogen bonds between base pairs.
@@ -388,7 +388,7 @@ It removes the RNA primers from the lagging strand and replaces them with DNA.
 {{< multiplechoice
   question="What is the role of single-stranded binding protein in DNA replication?"
   answer="It coats the single-stranded DNA near each replication fork to prevent it from rewinding into a double helix."
-  hint="Recall what would happen to the separated strands near the fork if nothing kept them apart."
+  hint="Reread the second paragraph of Initiation."
 >}}
 It coats the single-stranded DNA near each replication fork to prevent it from rewinding into a double helix.
 It seals the nicks between newly synthesized DNA fragments to stabilize the sugar-phosphate backbone.
@@ -396,7 +396,7 @@ It synthesizes a short RNA primer complementary to the template strand.
 It breaks the hydrogen bonds between the nitrogenous base pairs to separate the DNA strands.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="If deoxyribonucleotides that lack the 3′-OH groups are added during the replication process, what do you expect will occur?" hint="Recall what DNA polymerase needs at the end of the growing strand before it can add the next nucleotide." >}}
+{{< selfcheck question="If deoxyribonucleotides that lack the 3′-OH groups are added during the replication process, what do you expect will occur?" hint="Reread the last paragraph of Initiation." >}}
 DNA polymerase requires a free 3′-OH group to which it can add nucleotides by forming a covalent phosphodiester bond between the 3′-OH end and the 5′ phosphate of the next nucleotide, and it cannot add nucleotides if a free 3′-OH group is not available. If a deoxyribonucleotide lacking a 3′-OH group were added to the growing strand, no free 3′-OH group would remain at its end, so DNA polymerase would be unable to attach the next nucleotide, and elongation of that strand would stop at that point.
 ===CHECKS===
 DNA polymerase requires a free 3′-OH group to which it can add nucleotides by forming a covalent phosphodiester bond between the 3′-OH end and the 5′ phosphate of the next nucleotide
@@ -419,22 +419,22 @@ DNA polymerase would be unable to attach the next nucleotide, and elongation of 
 
 ### Identify the differences between DNA replication in bacteria and eukaryotes
 
+{{< textin
+  question="At the origin of replication, a ________ composed of several proteins, including helicase, forms and recruits other enzymes involved in the initiation of replication."
+  answer="prereplication complex"
+  hint="Reread the second paragraph of DNA Replication in Eukaryotes."
+>}}
+
 {{< multiplechoice
   question="Which of the following enzymes involved in DNA replication is unique to eukaryotes?"
   answer="telomerase"
-  hint="Recall which enzyme's role — extending the ends of linear chromosomes — has no counterpart in circular bacterial chromosomes."
+  hint="Reread the comparison table above."
 >}}
 helicase
 DNA polymerase
 ligase
 telomerase
 {{< /multiplechoice >}}
-
-{{< textin
-  question="Eukaryotes typically have multiple ________ chromosomes, each with multiple origins of replication."
-  answer="linear"
-  hint="Recall the genome-structure row of the comparison table above."
->}}
 
 {{< sortbins question="Sort each replication property below under bacteria or eukaryotes." hint="Check the comparison table above for each property's value in that column." >}}
 {"bins": ["Bacteria", "Eukaryotes"],
@@ -458,13 +458,13 @@ telomerase
 {{< textin
   question="Unidirectional replication of a circular DNA molecule like a plasmid that involves nicking one DNA strand and displacing it while synthesizing a new strand is called ________."
   answer="rolling circle replication"
-  hint="Name the process this section's final subsection is titled after."
+  hint="Reread the last body paragraph of this section."
 >}}
 
 {{< multiplechoice
-  question="In rolling circle replication, what happens to the nicked strand as DNA polymerase III replicates the un-nicked strand?"
+  question="When one strand of a double-stranded circular DNA molecule is nicked and DNA polymerase III copies the un-nicked strand, what happens to the nicked strand?"
   answer="It is progressively displaced from the circular molecule and may recircularize into a single-stranded DNA molecule."
-  hint="Recall what becomes of the strand that was nicked once the polymerase begins copying the other strand."
+  hint="Reread the last body paragraph of this section."
 >}}
 It is progressively displaced from the circular molecule and may recircularize into a single-stranded DNA molecule.
 It remains double-stranded with the newly synthesized strand throughout replication.
@@ -473,11 +473,12 @@ It serves as the template for a second replication fork moving in the opposite d
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Rolling circle replication is a type of rapid ________ DNA synthesis of a circular DNA molecule used for the replication of some plasmids."
-  answer="unidirectional"
-  hint="Recall the one direction the polymerase moves around the circle, unlike bidirectional chromosome replication."
+  question="RNA primase then synthesizes a primer to initiate DNA replication at the ________ site of the single-stranded DNA (ssDNA) molecule, resulting in a double-stranded DNA (dsDNA) molecule identical to the other circular DNA molecule."
+  answer="single-stranded origin"
+  accept="sso"
+  hint="Reread the last body paragraph of this section."
 >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 11.2: DNA Replication](https://openstax.org/books/microbiology/pages/11-2-dna-replication) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all seven source figures re-encoded as WebP and rendered as mediafigures, `kind="diagram"` throughout after image inspection; the three-models figure's and the Meselson–Stahl figure's source alts (716 and 740 characters) were condensed to fit the 600-character cap since their captions already carry the explanation, and the replication-fork figure's source alt (703 characters) was likewise condensed with the full walk-through moved to `longdesc`; `longdesc`s were added for the replication-fork, Meselson–Stahl, telomerase, and rolling-circle diagrams, reading the artwork's own labels, arrows, and 5′/3′ ends (the telomerase longdesc quotes the actual base sequences drawn); same-module figure and table cross-references are rendered as describing prose ("shown below," "shown above") rather than print numbers; the Critical Thinking item "Review [the three-models figure] and [the Meselson–Stahl figure]…" replaces both figure links with describing phrases naming what each diagram shows; both same-module cross-references to other authored sections are absolute site-root links, and the reference to *The Viral Life Cycle* likewise; both CALS tables (The Molecular Machinery Involved in Bacterial DNA Replication; Comparison of Bacterial and Eukaryotic Replication) are transcribed as Markdown from the CNXML cells, checked against the PDF page, never from the `summary` attribute, with the table's own spanning title kept as an italic line beneath each table rather than as a table row; the Molecular Machinery table gets a `sortbins` in Practice built from four of its nine enzymes (DNA polymerase I, DNA polymerase III, helicase, DNA ligase) as bins, two distinguishing phrases each (one from the table, one from the body paragraph describing the same enzyme) — the remaining five enzymes (primase, single-stranded binding proteins, sliding clamp, topoisomerase II/DNA gyrase, topoisomerase IV) are left out of the bin set to keep the item within the sortbins bin cap; the Comparison table gets its own two-bin `sortbins` sorting all six of its rows; the Link to Learning keeps its URL, described in the source's own sentence; the eight body Check Your Understanding bullets are rendered at their note positions — the first (Meselson–Stahl two-band hypothetical) is graded as a multiple choice keyed from the Meselson–Stahl figure's own artwork, whose predictions panel draws the conservative column's first-replication tube with two separate bands (a heavy and a light band) rather than the single intermediate band drawn for the semiconservative and dispersive columns (a `figure-keyed` conversion, since the caption paragraph does not state this prediction outright); the source CNXML sentence `fs-id1167662443949` is garbled ("the red <sup>14</sup><sup>14</sup> would have been observed, as more <sup>14</sup> was added … to replace <sup>15</sup>", missing every "N"), so both its body-paragraph and self-check-model-answer transcriptions on this page read "¹⁴N" and "¹⁵N" as the only sensible repair — a suspected source defect; two of the Termination-section bullets (helicase; DNA polymerase I) are `textin` term recalls and the third ("lagging or leading strand") is a two-option multiple choice built from the question's own alternatives; two of the Eukaryotes-section bullets (origin-of-replication difference; polymerase enzymes) are multiple choice, keyed from the comparison table and the body paragraph respectively, and the third ("what is at the ends of chromosomes and why") stays a self-check because its honest answer joins a definition with a reason from two different sentences; the Rolling-Circle-section bullet stays a self-check because "is there a lagging strand — why or why not" needs an inference the module does not state outright, assembled from the module's own description of unidirectional, single-primer synthesis; of the section's twelve source exercises, all four Multiple Choice, the one True/False, and both Fill in the Blank items are unchanged (the fill-in blank naming "DNA gyrase or topoisomerase II" keeps `DNA gyrase` as the graded answer with `accept="topoisomerase II|gyrase"` per the parent's naming); one source Multiple Choice option ("3′-AGGCTTGAC-4′") is corrected to "3′-AGGCTTGAC-5′," a one-character source typo (a nonexistent "4′" end), disclosed here, with no change to the keyed answer; two of the three unkeyed Short Answer questions (primase; single-stranded binding protein) are graded as multiple choice from the module's own single defining sentence for each, with distractors drawn from the sibling enzymes' own stated roles, and the third (constructing the complementary strand of a given sequence) is a fully worked self-check with every base paired and both strands' 5′/3′ ends shown; both unkeyed Critical Thinking questions stay self-checks, one assembled from the Meselson–Stahl paragraph's own account of why a second round was needed, the other from the module's own statement of what a free 3′-OH group is needed for; key terms compiled from the module's 24 defined terms and the book's Glossary appendix, with two definitions ("semiconservative replication," "initiation of replication") taken from the module's own defining sentence because neither has its own appendix entry; three Practice items (the "semiconservative" cloze, with `accept="semi-conservative"` since a hyphen between two letters does not fold; the "bidirectionally" cloze; and the "linear" cloze) are built from single `## Summary` sentences, and two ("leading strand," "Okazaki") are term-recall clozes built from a single body sentence naming the term verbatim, added as fillers to bring every objective group to the book's practice floor. No source exercise item is omitted. Two claim corrections, each with a visible Source note: the eukaryotic leading and lagging strands are assigned to pol ε and pol δ respectively (the source has them the other way round), and the Molecular Machinery table's topoisomerase IV row says "double-stranded breaks" as the module's own Termination paragraph does (the source table says "single-stranded break"). The dGTP figure's alt gives carbon 4 of the deoxyribose a hydrogen and carbon 5, because the source alt's "an N" on carbon 4 is contradicted by the drawn structure, whose nitrogens are all in the guanine base (erratum 820).</small>
+<small>This section is adapted from [Microbiology, Section 11.2: DNA Replication](https://openstax.org/books/microbiology/pages/11-2-dna-replication) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all seven source figures re-encoded as WebP and rendered as mediafigures, `kind="diagram"` throughout after image inspection; the three-models figure's and the Meselson–Stahl figure's source alts (716 and 740 characters) were condensed to fit the 600-character cap since their captions already carry the explanation, and the replication-fork figure's source alt (703 characters) was likewise condensed with the full walk-through moved to `longdesc`; `longdesc`s were added for the replication-fork, Meselson–Stahl, telomerase, and rolling-circle diagrams, reading the artwork's own labels, arrows, and 5′/3′ ends (the telomerase longdesc quotes the actual base sequences drawn); same-module figure and table cross-references are rendered as describing prose ("shown below," "shown above") rather than print numbers; the Critical Thinking item "Review [the three-models figure] and [the Meselson–Stahl figure]…" replaces both figure links with describing phrases naming what each diagram shows; both same-module cross-references to other authored sections are absolute site-root links, and the reference to *The Viral Life Cycle* likewise; both CALS tables (The Molecular Machinery Involved in Bacterial DNA Replication; Comparison of Bacterial and Eukaryotic Replication) are transcribed as Markdown from the CNXML cells, checked against the PDF page, never from the `summary` attribute, with the table's own spanning title kept as an italic line beneath each table rather than as a table row; the Molecular Machinery table gets a `sortbins` in Practice built from four of its nine enzymes (DNA polymerase I, DNA polymerase III, helicase, DNA ligase) as bins, two distinguishing phrases each (one from the table, one from the body paragraph describing the same enzyme) — the remaining five enzymes (primase, single-stranded binding proteins, sliding clamp, topoisomerase II/DNA gyrase, topoisomerase IV) are left out of the bin set to keep the item within the sortbins bin cap; the Comparison table gets its own two-bin `sortbins` sorting all six of its rows; the Link to Learning keeps its URL, described in the source's own sentence; the eight body Check Your Understanding bullets are rendered at their note positions — the first (Meselson–Stahl two-band hypothetical) is graded as a multiple choice keyed from the Meselson–Stahl figure's own artwork, whose predictions panel draws the conservative column's first-replication tube with two separate bands (a heavy and a light band) rather than the single intermediate band drawn for the semiconservative and dispersive columns (a `figure-keyed` conversion, since the caption paragraph does not state this prediction outright); the source CNXML sentence `fs-id1167662443949` is garbled ("the red <sup>14</sup><sup>14</sup> would have been observed, as more <sup>14</sup> was added … to replace <sup>15</sup>", missing every "N"), so both its body-paragraph and self-check-model-answer transcriptions on this page read "¹⁴N" and "¹⁵N" as the only sensible repair — a suspected source defect; of the three Termination-section bullets, the helicase bullet is a `textin` term recall asked in the source's own words, the "lagging or leading strand" bullet is a two-option multiple choice built from the question's own alternatives, and the primer-removal bullet ("Which enzyme is responsible for removing the RNA primers in newly replicated bacterial DNA?") is a self-check whose model answer is the Elongation paragraph's primer-removal sentence, because the keyed source Multiple Choice in Practice ("Which of the following is the enzyme that replaces the RNA nucleotides in a primer with DNA nucleotides?") asks for the same enzyme and stays the graded item; two of the Eukaryotes-section bullets (origin-of-replication difference; polymerase enzymes) are multiple choice, keyed from the comparison table and the body paragraph respectively, and the third ("what is at the ends of chromosomes and why") stays a self-check because its honest answer joins a definition with a reason from two different sentences; the Rolling-Circle-section bullet stays a self-check because "is there a lagging strand — why or why not" needs an inference the module does not state outright, assembled from the module's own description of unidirectional, single-primer synthesis; of the section's twelve source exercises, all four Multiple Choice, the one True/False, and both Fill in the Blank items are unchanged (the fill-in blank naming "DNA gyrase or topoisomerase II" keeps `DNA gyrase` as the graded answer with `accept="topoisomerase II|gyrase"` per the parent's naming); one source Multiple Choice option ("3′-AGGCTTGAC-4′") is corrected to "3′-AGGCTTGAC-5′," a one-character source typo (a nonexistent "4′" end), disclosed here, with no change to the keyed answer; two of the three unkeyed Short Answer questions (primase; single-stranded binding protein) are graded as multiple choice from the module's own single defining sentence for each, with distractors drawn from the sibling enzymes' own stated roles, and the third (constructing the complementary strand of a given sequence) is a fully worked self-check with every base paired and both strands' 5′/3′ ends shown; both unkeyed Critical Thinking questions stay self-checks, one assembled from the Meselson–Stahl paragraph's own account of why a second round was needed, the other from the module's own statement of what a free 3′-OH group is needed for; key terms compiled from the module's 24 defined terms and the book's Glossary appendix, with two definitions ("semiconservative replication," "initiation of replication") taken from the module's own defining sentence because neither has its own appendix entry; nine author-written Practice items bring every objective group to the book's practice floor, each built from one sentence of the module: six clozes — "ultracentrifugation" (the Meselson–Stahl paragraph's "The DNA was separated by ultracentrifugation…"), "bubble" (Initiation's replication-fork sentence), "continuously" (the Summary's elongation bullet), "sliding clamp" (Elongation's "A protein called the sliding clamp holds the DNA polymerase in place…"), "prereplication complex" (the eukaryotic-initiation sentence), and "single-stranded origin" (the rolling-circle paragraph's primase sentence, with its "(sso)" gloss left out of the prompt and accepted as an answer) — which replaced six earlier clozes ("semiconservative", "bidirectionally", "leading strand", "Okazaki", "linear", "unidirectional") whose keys the group's own objective heading, a sibling item, or the comparison table's `sortbins` beside them printed; and three multiple choice items — what each molecule contains after semiconservative replication (the section's opening definition, against the conservative and dispersive models' descriptions), why Okazaki fragments form (Elongation's "DNA polymerase III can only extend in the 5′ to 3′ direction, which poses a problem at the replication fork"), and what happens to the nicked strand in rolling circle replication (the rolling-circle paragraph's displacement sentence). The source Fill in the Blank on the enzyme that relaxes supercoiled DNA is placed ahead of the source Multiple Choice on primer replacement in its group, reversing their source order, so that it opens the group; the source Multiple Choice "Which of the following is not involved in the initiation of replication?" still prints its "DNA gyrase" option in the same group, an overlap between two source-verbatim items that no order within the group removes. No source exercise item is omitted. Two claim corrections, each with a visible Source note: the eukaryotic leading and lagging strands are assigned to pol ε and pol δ respectively (the source has them the other way round), and the Molecular Machinery table's topoisomerase IV row says "double-stranded breaks" as the module's own Termination paragraph does (the source table says "single-stranded break"). The dGTP figure's alt gives carbon 4 of the deoxyribose a hydrogen and carbon 5, because the source alt's "an N" on carbon 4 is contradicted by the drawn structure, whose nitrogens are all in the guanine base (erratum 820).</small>

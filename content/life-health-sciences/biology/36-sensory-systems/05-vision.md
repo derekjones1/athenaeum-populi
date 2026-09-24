@@ -25,7 +25,7 @@ As with auditory stimuli, light travels in waves. The compression waves that com
 
 Certain variables are important when discussing perception of light. Wavelength (which varies inversely with frequency) manifests itself as hue. Light at the red end of the visible spectrum has longer wavelengths (and is lower frequency), while light at the violet end has shorter wavelengths (and is higher frequency). The wavelength of light is expressed in nanometers (nm); one nanometer is one billionth of a meter. Humans perceive light that ranges between approximately 380 nm and 740 nm. Some other animals, though, can detect wavelengths outside of the human range. For example, bees see near-ultraviolet light in order to locate nectar guides on flowers, and some non-avian reptiles sense infrared light (heat that prey gives off).
 
-{{< mediafigure src="biology/Figure_36_05_01" kind="diagram" eager="true" alt="A horizontal diagram of the electromagnetic spectrum with seven wavelength bands labeled Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, and Gamma ray above a red sine wave whose coils tighten from left to right, small icons below each band showing an object near that wavelength's size, and a frequency scale along the bottom." longdesc="A horizontal band across the top is divided into seven labeled segments, left to right: Radio (wavelength about 10 to the 3rd power meters), Microwave (10 to the -2 power m), Infrared (10 to the -5 power m), Visible (.5 times 10 to the -6 power m), Ultraviolet (10 to the -8 power m), X-ray (10 to the -10 power m), and Gamma ray (10 to the -12 power m). Below the band, a red sine wave runs left to right under the heading 'About the size of…,' its coils spaced far apart under Radio and packed increasingly tight through Gamma ray. Eight icons sit beneath the wave, one per rough size class, left to right: a cluster of buildings, a standing adult beside a child, a honeybee, a straight pin's point, a cluster of round protozoans, a ball-and-stick molecule, an atom with orbiting electrons, and a cluster of atomic nuclei, labeled respectively Buildings, Humans, Honeybee, Pinpoint, Protozoans, Molecules, Atoms, and Atomic nuclei. A frequency scale runs along the bottom from 10 to the 4th power Hz on the left to 10 to the 20th power Hz on the right, shaded as a gradient from red through the visible spectrum to violet in the middle band with solid red at the low-frequency end and pale lavender at the high-frequency end." >}}
+{{< mediafigure src="biology/Figure_36_05_01" kind="diagram" eager="true" alt="A horizontal diagram of the electromagnetic spectrum with seven wavelength bands labeled Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, and Gamma ray above a red sine wave whose coils tighten from left to right, small icons below each band showing an object near that wavelength's size, and a frequency scale along the bottom." longdesc="A horizontal band across the top is divided into seven labeled segments, left to right: Radio (wavelength about 10 to the 3rd power meters), Microwave (10 to the -2 power m), Infrared (10 to the -5 power m), Visible (.5 times 10 to the -6 power m), Ultraviolet (10 to the -8 power m), X-ray (10 to the -10 power m), and Gamma ray (10 to the -12 power m). Below the band, a red sine wave runs left to right under the heading 'About the size of…,' its coils spaced far apart under Radio and packed increasingly tight through Gamma ray. Eight icons sit beneath the wave, one per rough size class, left to right: a cluster of buildings, a standing adult beside a child, a honeybee, a pin pushed through a button, two single-celled protozoans, a ball-and-stick molecule, an atom with orbiting electrons, and a nucleus drawn as a cluster of small balls, labeled respectively Buildings, Humans, Honeybee, Pinpoint, Protozoans, Molecules, Atoms, and Atomic nuclei. A frequency scale titled 'Frequency (Hz)' runs along the bottom with ticks, left to right, at 10 to the 4th, 10 to the 8th, 10 to the 12th, 10 to the 15th, 10 to the 16th, 10 to the 18th, and 10 to the 20th power Hz, shaded as a gradient from red through the visible spectrum to violet in the middle band with solid red at the low-frequency end and pale lavender at the high-frequency end." >}}
 In the electromagnetic spectrum, visible light lies between 380 nm and 740 nm. (credit: modification of work by NASA)
 {{< /mediafigure >}}
 
@@ -37,14 +37,14 @@ Light waves travel 299,792 km per second in a vacuum, (and somewhat slower in va
 
 The photoreceptive cells of the eye, where transduction of light to nervous impulses occurs, are located in the **retina** (shown below) on the inner surface of the back of the eye. But light does not impinge on the retina unaltered. It passes through other layers that process it so that it can be interpreted by the retina (illustrated in panel b below). The **cornea**, the front transparent layer of the eye, and the crystalline **lens**, a transparent convex structure behind the cornea, both refract (bend) light to focus the image on the retina. The **iris**, which is conspicuous as the colored part of the eye, is a circular muscular ring lying between the lens and cornea that regulates the amount of light entering the eye. In conditions of high ambient light, the iris contracts, reducing the size of the pupil at its center. In conditions of low light, the iris relaxes and the pupil enlarges.
 
-{{< mediafigure src="biology/Figure_B36_05_02" kind="diagram" alt="Two side-by-side illustrations: (a) a round cross-section of the human eye with the lens, iris, and cornea at the front and the retina lining the back wall, and (b) a magnified cross-section of the retina showing stacked layers of cells between an arrow labeled Light at top and rod and cone cells at the bottom." longdesc="Panel (a): a round eye in cross section, drawn front (left) to back (right). At the front, labeled left to right: Iris, Pupil, Cornea (a convex bump), with Aqueous humour labeling the space between the cornea and the iris, and Lens labeling the blue oval just behind the iris. The eye's large interior is labeled Vitreous humour. The inner back wall is labeled Retina, with a small boxed region on it connected by a gray arrow to panel (b). At the bottom, Optic nerve labels the stalk exiting the eye, Fovea labels a small notch in the retina near the stalk, and Retinal blood vessels labels red and blue vessels running along the optic nerve stalk into the eye. Panel (b): a magnified rectangular cross-section of the retina, with five downward arrows labeled Light entering at the top. Reading top to bottom: Optic nerve labels the topmost cell layer; Ganglion cells labels the next layer of large round cell bodies; Amacrine cells and, below them, Bipolar cells and Horizontal cells label a layer of smaller branching cells; at the bottom, Cone labels the green columnar cells with tapered tips and Rod labels the more numerous blue columnar cells." >}}
+{{< mediafigure src="biology/Figure_B36_05_02" kind="diagram" alt="Two side-by-side illustrations: (a) a round cross-section of the human eye with the lens, iris, and cornea at the front and the retina lining the back wall, and (b) a magnified cross-section of the retina showing stacked layers of cells between an arrow labeled Light at top and rod and cone cells at the bottom." longdesc="Panel (a): a round eye in cross section, drawn with its front at the top and the optic nerve leaving at the lower left. At the front, labeled left to right: Iris, Pupil, Cornea (a convex bump), with Aqueous humour labeling the space between the cornea and the iris, and Lens labeling the blue oval just behind the iris. The eye's large interior is labeled Vitreous humour. Retina labels the yellow layer lining the inner wall, at the eye's right side, where a small boxed region is connected by a gray arrow to panel (b). At the bottom left, Optic nerve labels the stalk exiting the eye, Fovea labels a small notch in the retina near the stalk, and Retinal blood vessels labels red and blue vessels running along the optic nerve stalk into the eye. Panel (b): a magnified rectangular cross-section of the retina, with five downward arrows labeled Light entering at the top. Reading top to bottom: Optic nerve labels the topmost cell layer; Ganglion cells labels the next layer of large round cell bodies; Amacrine cells and, below them, Bipolar cells and Horizontal cells label a layer of smaller branching cells; at the bottom, Cone labels the green columnar cells with tapered tips and Rod labels the more numerous blue columnar cells." >}}
 (a) The human eye is shown in cross section. (b) A blowup shows the layers of the retina.
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements about the human eye is false?"
   answer="Rods detect color, while cones detect only shades of gray."
-  hint="Three of these claims are accurate; the odd one out swaps the roles of the eye's color-detecting and shades-only photoreceptors."
+  hint="Check each statement against the figure above and the Anatomy of the Eye and Transduction of Light discussions."
 >}}
 Rods detect color, while cones detect only shades of gray.
 When light enters the retina, it passes the ganglion cells and bipolar cells before reaching photoreceptors at the rear of the eye.
@@ -56,7 +56,7 @@ The main function of the lens is to focus light on the retina and fovea centrali
 
 There are two types of photoreceptors in the retina: **rods** and **cones**, named for their general appearance as illustrated below. Rods are strongly photosensitive and are located in the outer edges of the retina. They detect dim light and are used primarily for peripheral and nighttime vision. Cones are weakly photosensitive and are located near the center of the retina. They respond to bright light, and their primary role is in daytime, color vision.
 
-{{< mediafigure src="biology/Figure_B36_05_03" kind="diagram" alt="Two long column-shaped photoreceptor cells side by side: a blue-tinted rod on the left with a straight stack of discs at its tip, and a green-tinted cone on the right with a tapering stack of discs, each cell narrowing to a nucleus and then branching feet at its base." longdesc="Left, labeled 'Rod' beneath it: 'Outer segment contains rhodopsin' labels the straight stack of discs at the top; 'Rod outer segment' labels the narrow neck just below the disc stack; 'Nucleus' labels the oval body further down the cell, above its branching foot. Right, labeled 'Cone' beneath it: 'Outer segment contains photopigments' labels its tapering, comb-like stack of discs at the top; 'Oil droplet' labels a small circle just below the discs; 'Nucleus' labels the oval body further down the cell, above its own branching foot." >}}
+{{< mediafigure src="biology/Figure_B36_05_03" kind="diagram" alt="Two long column-shaped photoreceptor cells side by side: a blue-tinted rod on the left with a straight stack of discs at its tip, and a green-tinted cone on the right with a tapering stack of discs, each cell narrowing to a nucleus and then branching feet at its base." longdesc="Left, labeled 'Rod' beneath it: 'Outer segment contains rhodopsin' labels the straight stack of discs at the top; 'Rod outer segment' labels the narrow neck just below the disc stack; an oval nucleus sits further down the cell, above its branching foot. Right, labeled 'Cone' beneath it: 'Outer segment contains photopigments' labels its tapering, comb-like stack of discs at the top; 'Oil droplet' labels a small circle just below the discs; the oval body further down the cell, above its own branching foot, is its nucleus — a single 'Nucleus' label between the two cells points to both nuclei. Below the discs, both cells hold small red crescent shapes." >}}
 Rods and cones are photoreceptors in the retina. Rods respond in low light and can detect only shades of gray. Cones respond in intense light and are responsible for color vision. (credit: modification of work by Piotr Sliwa)
 {{< /mediafigure >}}
 
@@ -76,7 +76,7 @@ The rods and cones are the site of transduction of light to a neural signal. Bot
 (a) Rhodopsin, the photoreceptor in vertebrates, has two parts: the trans-membrane protein opsin, and retinal. When light strikes retinal, it changes shape from (b) a *cis* to a *trans* form. The signal is passed to a G-protein called transducin, triggering a series of downstream events.
 {{< /mediafigure >}}
 
-{{< mediafigure src="biology/Figure_B36_05_07ab" kind="diagram" alt="Two panels: at left, a boxed inset shows the same patch of rod-cell disc membrane in two stacked states, unlit above and lit below, with rhodopsin, transducin, phosphodiesterase, cGMP, and a sodium channel labeled in each; at right, two rod cells stand above two bipolar cells, one pair captioned Dark: depolarized and the other Light: hyperpolarized, with colored dots at the synapses showing neurotransmitter release." longdesc="Left inset, two boxed panels connected by a downward gray arrow. Upper panel (unlit): a pink oval labeled 'Rhodopsin' sits in the disc membrane; 'Transducin (G protein α subunit)' labels a teal circle bound to a purple 'GDP' oval, with its green 'β' and purple 'γ' subunits beside it; an orange oval is labeled 'Phosphodiesterase'; a purple oval is labeled 'cGMP'; a pair of blue channel segments is labeled 'Na⁺ channel open,' with a black arrow showing Na⁺ flowing into the cytoplasm through it; the label 'Na⁺' also appears six more times scattered through the cytoplasm and extracellular space. Lower panel (lit): a yellow lightning bolt labeled 'Light' strikes the disc; lead lines label the same pink 'Rhodopsin' and orange 'Phosphodiesterase'; 'Transducin' now labels a separated teal subunit bound to a teal 'GTP' oval, with its green 'β' subunit shown apart from it; a curved black arrow shows the purple 'cGMP' oval converting to a purple 'GMP' oval; the channel pair is now labeled 'Na⁺ channel closed,' and 'Na⁺' labels appear seven times in a column outside the membrane, none crossing in. Right side, under the heading 'Rod cell': two identical rod cells stand side by side, captioned 'Dark: depolarized' (left) and 'Light: hyperpolarized' (right). Below the left, dark rod cell's terminal, green dots labeled 'Glutamate' are released onto a yellow bipolar cell beneath it, which releases nothing further below itself; below the right, light rod cell's terminal, no dots are released, but its own bipolar cell releases orange dots labeled 'Neurotransmitter' from its base." >}}
+{{< mediafigure src="biology/Figure_B36_05_07ab" kind="diagram" alt="Two panels: at left, a boxed inset shows the same patch of rod-cell disc membrane in two stacked states, unlit above and lit below, with rhodopsin, transducin, phosphodiesterase, cGMP, and a sodium channel labeled in each; at right, two rod cells stand above two bipolar cells, one pair captioned Dark: depolarized and the other Light: hyperpolarized, with colored dots at the synapses showing neurotransmitter release." longdesc="At the top left, a small box on the tip of a rod's disc stack is connected by a curved gray arrow to the left inset: two boxed panels connected by a downward gray arrow. Upper panel (unlit): a pink oval labeled 'Rhodopsin' sits in the disc membrane; 'Transducin (G protein α subunit)' labels a teal, two-lobed subunit marked 'GDP,' with a green 'β' circle and a purple 'γ' bar beside it; an orange oval is labeled 'Phosphodiesterase'; a purple oval is labeled 'cGMP'; a pair of blue channel segments is labeled 'Na⁺ channel open,' with a black arrow showing Na⁺ flowing into the cytoplasm through it; the label 'Na⁺' also appears six more times scattered through the cytoplasm and extracellular space. Lower panel (lit): a yellow lightning bolt labeled 'Light' strikes the disc; lead lines label the same pink 'Rhodopsin' and orange 'Phosphodiesterase'; 'Transducin' now labels the teal subunit, marked 'GTP' instead of GDP, which has separated from the green 'β' and purple γ, still beside rhodopsin; a curved black arrow shows the purple 'cGMP' oval converting to a purple 'GMP' oval; the channel pair is now labeled 'Na⁺ channel closed,' and 'Na⁺' labels appear seven times in a column outside the membrane, none crossing in. Right side: two identical rod cells stand side by side, captioned 'Dark: depolarized' (left) and 'Light: hyperpolarized' (right); a 'Rod cell' label points to the right one's disc stack. Below the left, dark rod cell's terminal, green dots labeled 'Glutamate' are released onto a yellow bipolar cell beneath it, which releases nothing further below itself; below the right, light rod cell's terminal, no dots are released, but its own bipolar cell releases orange dots labeled 'Neurotransmitter' from its base." >}}
 When light strikes rhodopsin, the G-protein transducin is activated, which in turn activates phosphodiesterase. Phosphodiesterase converts cGMP to GMP, thereby closing sodium channels. As a result, the membrane becomes hyperpolarized. The hyperpolarized membrane does not release glutamate to the bipolar cell.
 {{< /mediafigure >}}
 
@@ -86,7 +86,7 @@ There are three types of cones (with different photopsins), and they differ in t
 
 The color we perceive is a result of the ratio of activity of our three types of cones. The colors of the visual spectrum, running from long-wavelength light to short, are red (700 nm), orange (600 nm), yellow (565 nm), green (497 nm), blue (470 nm), indigo (450 nm), and violet (425 nm). Humans have very sensitive perception of color and can distinguish about 500 levels of brightness, 200 different hues, and 20 steps of saturation, or about 2 million distinct colors.
 
-{{< mediafigure src="biology/Figure_36_05_06" kind="diagram" alt="A line graph of normalized absorbance (0 to 100) against wavelength (400 to 700 nm) for four photoreceptor types, each an overlapping bell-shaped curve labeled S cone, Rod, M cone, and L cone from left to right, above a horizontal rainbow gradient bar spanning violet to red." longdesc="Four curves rise from a shared low baseline near 400 nm, each peaking then falling, left to right: the blue 'S cone' curve peaks near 420 nm; the black 'Rod' curve peaks near 498 nm; the olive-green 'M cone' curve peaks near 534 nm; the red 'L cone' curve peaks near 564 nm and extends furthest right, toward 680 nm. All four curves converge again near a low level past 650 nm. Below the plot, a horizontal bar shaded violet through blue, green, yellow, and red spans the 400–700 nm axis, labeled 'Wavelength (nm).'" >}}
+{{< mediafigure src="biology/Figure_36_05_06" kind="diagram" alt="A line graph of normalized absorbance (0 to 100) against wavelength (400 to 700 nm) for four photoreceptor types, each an overlapping bell-shaped curve labeled S cone, Rod, M cone, and L cone from left to right, above a horizontal rainbow gradient bar spanning violet to red." longdesc="The y-axis, 'Normalized absorbance,' is marked 0, 50, and 100; the x-axis is marked 400, 500, 600, and 700 nm. Four curves each peak at 100 and then fall, left to right: the blue 'S cone' curve starts left of 400 nm at about 60, peaks near 420 nm, and falls to near 0 by about 540 nm; the black 'Rod,' olive-green 'M cone,' and red 'L cone' curves all start together near 400 nm at about 35, and the red curve dips to about 30 before rising. The rod curve peaks near 498 nm and falls to near 0 by about 600 nm; the M cone curve peaks near 534 nm and falls to near 0 by about 650 nm; the L cone curve peaks near 564 nm and extends furthest right, reaching near 0 at about 690 nm. Below the plot, a horizontal bar shaded violet through blue, green, yellow, and red spans the 400–700 nm axis, labeled 'Wavelength (nm).'" >}}
 Human rod cells and the different types of cone cells each have an optimal wavelength. However, there is considerable overlap in the wavelengths of light detected.
 {{< /mediafigure >}}
 
@@ -185,7 +185,7 @@ The astronaut will feel the concussive force of the explosion, but will not see 
 {{< multiplechoice
   question="Why do people over 55 often need reading glasses?"
   answer="Their lens no longer focuses correctly."
-  hint="This is the same age-related process as presbyopia — think about which internal structure loses its flexibility over time, rather than the eye's outer window or its overall shape."
+  hint="See the Anatomy of the Eye paragraph on focusing and age."
 >}}
 Their cornea no longer focuses correctly.
 Their lens no longer focuses correctly.
@@ -196,7 +196,7 @@ Their retina has thinned with age, making vision more difficult.
 {{< multiplechoice
   question="Why is it easier to see images at night using peripheral, rather than the central, vision?"
   answer="Rods are denser in the periphery of the retina."
-  hint="Peripheral vision depends on whichever photoreceptor type is strongly light-sensitive and works best in dim conditions — and that type is scarce at the fovea."
+  hint="Check each option against the Summary's sentences on where each photoreceptor type is found."
 >}}
 Cones are denser in the periphery of the retina.
 Bipolar cells are denser in the periphery of the retina.
@@ -207,7 +207,7 @@ The optic nerve exits at the periphery of the retina.
 {{< multiplechoice
   question="A person catching a ball must coordinate her hand and eyes. What part of the brain is helping to do this?"
   answer="superior colliculus"
-  hint="This midbrain structure coordinates eye movements with auditory information — it is not the general sensory routing station, and not the gland tied to sleep and annual cycles."
+  hint="See the Higher Processing discussion of where visual information is sent after the eye."
 >}}
 hypothalamus
 pineal gland
@@ -223,6 +223,12 @@ when the lens becomes cloudy instead of clear, it scatters light over the back o
 the vision system cannot interpret the image
 {{< /selfcheck >}}
 
+{{< textin
+  question="The transparent front layer of the eye that, along with the lens, refracts light to help focus the image on the retina is called the ________."
+  answer="cornea"
+  hint="See the first paragraph of Anatomy of the Eye."
+>}}
+
 {{< selfcheck question="How could the pineal gland, the brain structure that plays a role in annual cycles, use visual information from the suprachiasmatic nucleus of the hypothalamus?" hint="Think about what varies about daylight over the course of a year, and how that information could be useful for timing reproduction or other annual behaviors." >}}
 The pineal gland could use length-of-day information to determine the time of year, for example. Day length is shorter in the winter than it is in the summer. For many animals and plants, photoperiod cues them to reproduce at a certain time of year.
 ===CHECKS===
@@ -232,21 +238,9 @@ photoperiod cues many animals and plants to reproduce at a certain time of year
 {{< /selfcheck >}}
 
 {{< textin
-  question="The transparent front layer of the eye that, along with the lens, refracts light to help focus the image on the retina is called the ________."
-  answer="cornea"
-  hint="This structure sits in front of the iris and pupil, forming the convex bump at the very front of the eye."
->}}
-
-{{< textin
   question="The pigmented, circular muscle lying between the lens and cornea that regulates the amount of light entering the eye is called the ________."
   answer="iris"
   hint="This structure contracts in bright light to shrink the opening at its center and relaxes in dim light to enlarge it."
->}}
-
-{{< textin
-  question="The transparent, convex structure behind the cornea that focuses light on the retina, changing shape as its muscles stretch or thicken it, is called the ________."
-  answer="lens"
-  hint="Losing this structure's flexibility with age is what causes presbyopia."
 >}}
 
 {{< textin
@@ -256,13 +250,25 @@ photoperiod cues many animals and plants to reproduce at a certain time of year
 >}}
 
 {{< textin
+  question="The transparent, convex structure behind the cornea that focuses light on the retina, changing shape as its muscles stretch or thicken it, is called the ________."
+  answer="lens"
+  hint="Losing this structure's flexibility with age is what causes presbyopia."
+>}}
+
+{{< textin
   question="The visual defect in which an elongated eyeball causes the image focus to fall in front of the retina — making distant objects blurry but close-up objects clear — is called ________."
   answer="myopia"
-  accept="nearsightedness"
+  accept="nearsightedness|near-sightedness|short-sightedness"
   hint="This is the opposite eyeball-length problem from the section's two 'farsightedness' conditions."
 >}}
 
 ### Explain tonic activity as it is manifested in photoreceptors in the retina
+
+{{< textin
+  question="The slight, continuous activity a neuron shows even at rest, before any stimulus arrives, is called ________."
+  answer="tonic activity"
+  hint="Photoreceptors show this baseline firing constantly; a stimulus then raises or lowers the rate from that baseline instead of switching it on from zero."
+>}}
 
 {{< selfcheck question="How is the relationship between photoreceptors and bipolar cells different from other sensory receptors and adjacent cells?" hint="Think about what photoreceptors are doing to bipolar cells even in the dark, before any light stimulus arrives, and what happens to that baseline activity once light does arrive." >}}
 The photoreceptors tonically inhibit the bipolar cells, and stimulation of the receptors turns this inhibition off, activating the bipolar cells.
@@ -273,23 +279,17 @@ this activates the bipolar cells
 {{< /selfcheck >}}
 
 {{< textin
-  question="The slight, continuous activity a neuron shows even at rest, before any stimulus arrives, is called ________."
-  answer="tonic activity"
-  hint="Photoreceptors show this baseline firing constantly; a stimulus then raises or lowers the rate from that baseline instead of switching it on from zero."
->}}
-
-{{< textin
-  question="The strongly photosensitive, achromatic photoreceptor located in the outer edges of the retina that detects dim light and supports peripheral and nighttime vision is called a ________."
+  question="The strongly photosensitive, achromatic photoreceptor that detects dim light is called a ________."
   answer="rod"
-  hint="This photoreceptor type outnumbers its color-detecting counterpart at the retina's edges but is scarce at the fovea."
+  hint="Like its color-detecting partner type, this photoreceptor is named for its general appearance: a long column with a straight stack of discs at its tip."
 >}}
 
 {{< textin
-  question="The weakly photosensitive, chromatic photoreceptor located near the center of the retina that responds to bright light and supports daytime color vision is called a ________."
+  question="The weakly photosensitive, chromatic photoreceptor that responds to bright light and supports color vision is called a ________."
   answer="cone"
-  hint="This photoreceptor type is concentrated at the fovea and comes in three varieties tuned to different wavelengths."
+  hint="This photoreceptor type comes in three varieties, each most responsive to a different wavelength."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 36.5: Vision](https://openstax.org/books/biology-2e/pages/36-5-vision) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; six figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_36_05_01, Figure_36_05_04, Figure_36_05_06, Figure_36_05_07, Figure_B36_05_03, and Figure_B36_05_07ab are all illustrations, a molecular-ribbon rendering, a data graph, or a flat-color graphic, none a captured photograph); alts rewritten from the manifest's source text to plain visual descriptions where it named the print figure letters without saying what each panel shows, with counted, label-by-label longdescs added to the electromagnetic-spectrum diagram, the Visual Connection eye/retina diagram, the rod-and-cone diagram, the rhodopsin/retinal-isomerization diagram, the phototransduction-cascade and dark/light rod-bipolar diagram, and the cone/rod absorbance graph — transcribing each drawing's own printed labels and peak values and counting its panels, subunits, or repeated ion labels; the Visual Connection note copy (`fs-idp52568064`) and the Visual Connection Questions exercise copy (`fs-idp141411600`) print identical option wording, so the exercise copy is used as printed with no correction needed; the two Link to Learning notes rendered as callouts with descriptive link text in place of the source's "anatomical structure" and "presentation" anchors, external URLs kept as printed; in-text pointers to figures ("Figure 36.17" through "Figure 36.23") replaced with "shown below," "illustrated below," or "look fixedly at the flag below," since Hugo does not number figures; the Visual Connection item kept in the body as a mediafigure followed by a multiple choice, since the source keys it as a lettered choice; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), and every one of the four Review Questions, the Visual Connection, and all three Critical Thinking Questions used at least once; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; ten key-term recall items added from the glossary (candela, vision, cornea, iris, lens, retina, myopia, tonic activity, rod, cone); the remaining eight terms (circadian, fovea, hyperopia, presbyopia, pupil, rhodopsin, superior colliculus, suprachiasmatic nucleus) appear only in the Key terms list; one summary-derived textin cloze added to the first objective's group (blanking "electromagnetic radiation spectrum" from the closing summary's sentence "Visible light travels in waves and is a very small slice of the electromagnetic radiation spectrum"); ion notation set as a Unicode superscript (Na⁺) in place of the source's `<sup>+</sup>` markup, per house notation; the myopia textin's `accept` list adds the section's own "nearsightedness" synonym.</small>
+<small>This section is adapted from [Biology 2e, Section 36.5: Vision](https://openstax.org/books/biology-2e/pages/36-5-vision) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; six figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (Figure_36_05_01, Figure_36_05_04, Figure_36_05_06, Figure_36_05_07, Figure_B36_05_03, and Figure_B36_05_07ab are all illustrations, a molecular-ribbon rendering, a data graph, or a flat-color graphic, none a captured photograph); alts rewritten from the manifest's source text to plain visual descriptions where it named the print figure letters without saying what each panel shows, with counted, label-by-label longdescs added to the electromagnetic-spectrum diagram, the Visual Connection eye/retina diagram, the rod-and-cone diagram, the rhodopsin/retinal-isomerization diagram, the phototransduction-cascade and dark/light rod-bipolar diagram, and the cone/rod absorbance graph — transcribing each drawing's own printed labels and peak values and counting its panels, subunits, or repeated ion labels; the Visual Connection note copy (`fs-idp52568064`) and the Visual Connection Questions exercise copy (`fs-idp141411600`) print identical option wording, so the exercise copy is used as printed with no correction needed; the two Link to Learning notes rendered as callouts with descriptive link text in place of the source's "anatomical structure" and "presentation" anchors, external URLs kept as printed; in-text pointers to figures ("Figure 36.17" through "Figure 36.23") replaced with "shown below," "illustrated below," or "look fixedly at the flag below," since Hugo does not number figures; the Visual Connection item kept in the body as a mediafigure followed by a multiple choice, since the source keys it as a lettered choice; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), placed by objective: the fourth Review Question (the satellite explosion) first, in the electromagnetic-waves group, ahead of the other three, and the third Critical Thinking Question (cataracts) ahead of the first (the pineal gland) in the light-path group, with the second (photoreceptors and bipolar cells) last, in the tonic-activity group; and every one of the four Review Questions, the Visual Connection, and all three Critical Thinking Questions used at least once; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; ten key-term recall items added from the glossary (candela, vision, cornea, iris, lens, retina, myopia, tonic activity, rod, cone); the remaining eight terms (circadian, fovea, hyperopia, presbyopia, pupil, rhodopsin, superior colliculus, suprachiasmatic nucleus) appear only in the Key terms list; one summary-derived textin cloze added to the first objective's group (blanking "electromagnetic radiation spectrum" from the closing summary's sentence "Visible light travels in waves and is a very small slice of the electromagnetic radiation spectrum"); ion notation set as a Unicode superscript (Na⁺) in place of the source's `<sup>+</sup>` markup, per house notation; the myopia textin's `accept` list adds the section's own "nearsightedness" synonym.</small>

@@ -42,7 +42,7 @@ Unlike prokaryotic chromosomes, eukaryotic chromosomes are linear. As you've lea
 
 Telomeres comprise repetitive sequences that code for no particular gene. In humans, a six-base-pair sequence, TTAGGG, is repeated 100 to 1000 times in the telomere regions. In a way, these telomeres protect the genes from getting deleted as cells continue to divide. The telomeres are added to the ends of chromosomes by a separate enzyme, telomerase (below), whose discovery helped in the understanding of how these repetitive chromosome ends are maintained. The **telomerase** enzyme contains a catalytic part and a built-in RNA template. It attaches to the end of the chromosome, and DNA nucleotides complementary to the RNA template are added on the 3′ end of the DNA strand. Once the 3′ end of the lagging strand template is sufficiently elongated, DNA polymerase can add the nucleotides complementary to the ends of the chromosomes. Thus, the ends of the chromosomes are replicated.
 
-{{< mediafigure src="biology/Telomeres-X" kind="diagram" alt="A four-panel diagram of telomere replication: telomerase, carrying its own RNA template, extends the parent strand's unreplicated 3′ overhang in two successive steps, and DNA polymerase with a sliding clamp then builds the lagging strand out along the extension to complete it." longdesc="Four labeled panels read top to bottom, each showing DNA as two rows of lettered boxes: a short orange top row (the incomplete lagging strand, 3′ at its left and 5′ at its right) paired over a longer white bottom row (its parent template, 5′ at the left and 3′ at the right). 'End is Unreplicated': the top row stops partway, and a bracket over the exposed stretch of the bottom row is labeled 'Missing DNA on Lagging Strand.' 'Telomerase Extends Unreplicated End': a blue blob labeled 'Telomerase with its Own RNA Template' docks at the bottom row's 3′ end; a yellow row of letters on the blob is its RNA template, and short green boxes show new telomere DNA being added to the bottom row's 3′ end. 'Again, Telomerase Extends Unreplicated End': the bottom row's green extension is longer, the telomerase blob has shifted further right to add another repeat, and a blue arrow points right to show continued extension. 'Lagging Strand is Completed': a purple blob labeled 'DNA Polymerase' with a ring labeled 'Sliding Clamp' moves left along the extended bottom row, adding new boxes to the top row behind a yellow segment labeled 'RNA Primer', so the top row now reaches across the once-missing stretch; the bottom row keeps its original white boxes, with the green telomerase-added repeats at its right end." eager="true" >}}
+{{< mediafigure src="biology/Telomeres-X" kind="diagram" alt="A four-panel diagram of telomere replication: telomerase, carrying its own RNA template, extends the parent strand's unreplicated 3′ overhang in two successive steps, and DNA polymerase with a sliding clamp then builds the lagging strand out along the extension to complete it." longdesc="Four labeled panels read top to bottom, each showing DNA as two rows of lettered boxes: a short orange top row (the incomplete lagging strand, 3′ at its left and 5′ at its right) paired over a longer white bottom row (its parent template, 5′ at the left and 3′ at the right). 'End is Unreplicated': the top row stops partway, and a bracket over the exposed stretch of the bottom row is labeled 'Missing DNA on Lagging Strand.' 'Telomerase Extends Unreplicated End': a blue blob labeled 'Telomerase with its Own RNA Template' docks at the bottom row's 3′ end; a yellow row of letters on the blob is its RNA template, its left end pairs with the bottom row's last bases, and four loose green nucleotides (T, T, A, G) float below it, ready to be added to the bottom row's 3′ end. 'Again, Telomerase Extends Unreplicated End': the bottom row's green extension is longer, the telomerase blob has shifted further right to add another repeat, and a blue arrow points right to show continued extension. 'Lagging Strand is Completed': a yellow segment labeled 'RNA Primer' now sits on the green extension near the bottom row's 3′ end, with 5′ at its right. New orange boxes run leftward from the primer to a purple blob labeled 'DNA Polymerase' and a second magenta blob labeled 'Sliding Clamp', which sit over the once-missing stretch; a white arrow beneath them points left, and loose orange nucleotides float above the polymerase. A short gap still separates the new orange boxes from the original top row, which ends at its 5′ label; the bottom row keeps its original white boxes, with the green telomerase-added repeats at its right end." eager="true" >}}
 The ends of linear chromosomes are maintained by the action of the telomerase enzyme. Credit: Rao, A. and Fletcher, S. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -74,7 +74,7 @@ Replication in eukaryotes starts at multiple origins of replication. The mechani
 
 ### Discuss the similarities and differences between DNA replication in eukaryotes and prokaryotes
 
-{{< sortbins question="Assign each replication property to the cell type it describes." hint="Reread the comparison table above — check origin count, polymerase count, RNA-primer removal, and strand elongation for each cell type." >}}
+{{< sortbins question="Assign each replication property to the cell type it describes." hint="Use the comparison table after the paragraph on histones." >}}
 {"bins": ["Prokaryotes", "Eukaryotes"],
  "items": [
   {"label": "Single origin of replication", "bin": 0},
@@ -92,7 +92,7 @@ Replication in eukaryotes starts at multiple origins of replication. The mechani
 {{< multiplechoice
   question="Which of the following is not a true statement comparing prokaryotic and eukaryotic DNA replication?"
   answer="DNA replication always occurs in the nucleus."
-  hint="Prokaryotic cells have no nucleus, so their DNA replication cannot take place inside one."
+  hint="Check each statement against the comparison table and the section's opening paragraphs."
 >}}
 Both eukaryotic and prokaryotic DNA polymerases build off RNA primers made by primase.
 Eukaryotic DNA replication requires multiple replication forks, while prokaryotic replication uses a single origin to rapidly replicate the entire genome.
@@ -103,15 +103,28 @@ Eukaryotic DNA replication involves more polymerases than prokaryotic replicatio
 {{< textin
   question="Enzymes that cleave the phosphodiester bond within a polynucleotide chain are called a(n) ________."
   answer="endonuclease"
-  hint="Reread the sentence about removing the displaced primer RNA on the lagging strand — the enzyme named there alongside RNase H."
+  hint="Reread the paragraph after the comparison table, on removing the displaced primer RNA."
 >}}
 
 ### State the role of telomerase in DNA replication
 
+{{< textin
+  question="According to the section summary, the ends of the chromosomes pose a problem as the primer RNA at the 5′ ends of the DNA cannot be replaced with DNA, and the chromosome is progressively ________."
+  answer="shortened"
+  accept="shorter"
+  hint="Reread the section summary's sixth sentence."
+>}}
+
+{{< textin
+  question="The DNA at the end of a linear chromosome, made of a repetitive sequence that codes for no particular gene, is called a ________."
+  answer="telomere"
+  hint="Reread the paragraph that explains why the lagging strand's 5′ end cannot be finished."
+>}}
+
 {{< multiplechoice
   question="The ends of the linear chromosomes are maintained by"
   answer="telomerase"
-  hint="This is the enzyme this section names for extending chromosome ends with its own built-in RNA template, not one of the three enzymes that unwind, prime, or synthesize a strand generally."
+  hint="Reread the paragraph just before the four-panel end-replication figure."
 >}}
 helicase
 primase
@@ -119,7 +132,7 @@ DNA pol
 telomerase
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How do the linear chromosomes in eukaryotes ensure that its ends are replicated completely?" hint="Focus on what telomerase's own inbuilt RNA template lets it add to the 3′ end of the lagging strand template, and what DNA polymerase can then fill in." >}}
+{{< selfcheck question="How do the linear chromosomes in eukaryotes ensure that its ends are replicated completely?" hint="Reread the paragraph before the four-panel figure and follow the figure's panels." >}}
 Telomerase has an inbuilt RNA template that extends the 3′ end, so primer is synthesized and extended. Thus, the ends are protected.
 ===CHECKS===
 telomerase has an inbuilt RNA template
@@ -128,29 +141,17 @@ primer is synthesized and extended
 the ends are protected
 {{< /selfcheck >}}
 
-{{< textin
-  question="An enzyme with a catalytic part and a built-in RNA template, which functions to maintain the ends of chromosomes, is called ________."
-  answer="telomerase"
-  hint="It is the enzyme this section discusses attaching to the end of the chromosome and elongating the 3′ end of the lagging strand template."
->}}
-
-{{< textin
-  question="The DNA at the end of a linear chromosome, made of a repetitive sequence that codes for no particular gene, is called a ________."
-  answer="telomere"
-  hint="Its human repeat unit is the six-base-pair sequence TTAGGG."
->}}
-
 {{< multiplechoice
-  question="According to the section summary, which enzyme extends the ends of the chromosomes by copying its own inbuilt RNA template?"
-  answer="telomerase"
-  hint="The section summary names only one enzyme here as carrying its own inbuilt RNA template."
+  question="According to the section summary, once telomerase has extended one strand of the chromosome, which enzyme fills in the complementary DNA strand?"
+  answer="DNA polymerase"
+  hint="Reread the section summary's last three sentences."
 >}}
 helicase
-telomerase
 primase
+DNA polymerase
 DNA ligase
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 14.5: DNA Replication in Eukaryotes](https://openstax.org/books/biology-2e/pages/14-5-dna-replication-in-eukaryotes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the telomere-replication diagram re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a four-panel colored illustration, not a photograph), and given a longdesc walking its four labeled panels since the process it depicts is not carried by its one-line caption; the Blackburn photo's source alt ("Photo of Elizabeth Blackburn.") rewritten from the image, since it named the subject without describing what is actually shown; every prime mark set as the Unicode ′ in place of a straight apostrophe or the source's right single quotation mark, throughout the prose, summary, and exercise text; the footnote citing the 2010 telomerase-reactivation mouse study rendered as a parenthetical after the sentence it supports, with its title and journal citation kept in full; inline references to the table and the two figures changed from the source's numbered pointers ("Table 14.2," "Figure 14.15," "Figure 14.16") to descriptive phrases ("the table below," "below") since tables and figures are not numbered here; the comparison table of prokaryotic and eukaryotic replication kept as a Markdown table in the body and also rendered as a sort-into-bins exercise under the first objective, with five of its seven rows (origin count, polymerase count, telomerase presence, RNA-primer removal, and strand elongation) each split into one distinguishing item per cell type; the end-of-section Review Questions and Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items (endonuclease, telomerase, telomere) added from the glossary; one summary-derived multiple choice added under the second objective (reading the summary's own sentence naming telomerase as the enzyme with an inbuilt RNA template, with three same-category distractors — helicase, primase, DNA ligase — all drawn from this section's own text) to raise that objective's group to the practice floor; and rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One claim is corrected with a visible Source note: RNase H and flap endonuclease are distinct primer-removal enzymes, not two names for one, and the endonuclease recall item's hint was reworded to match (erratum 401).</small>
+<small>This section is adapted from [Biology 2e, Section 14.5: DNA Replication in Eukaryotes](https://openstax.org/books/biology-2e/pages/14-5-dna-replication-in-eukaryotes) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the telomere-replication diagram re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a four-panel colored illustration, not a photograph), and given a longdesc walking its four labeled panels since the process it depicts is not carried by its one-line caption; the Blackburn photo's source alt ("Photo of Elizabeth Blackburn.") rewritten from the image, since it named the subject without describing what is actually shown; every prime mark set as the Unicode ′ in place of a straight apostrophe or the source's right single quotation mark, throughout the prose, summary, and exercise text; the footnote citing the 2010 telomerase-reactivation mouse study rendered as a parenthetical after the sentence it supports, with its title and journal citation kept in full; inline references to the table and the two figures changed from the source's numbered pointers ("Table 14.2," "Figure 14.15," "Figure 14.16") to descriptive phrases ("the table below," "below") since tables and figures are not numbered here; the comparison table of prokaryotic and eukaryotic replication kept as a Markdown table in the body and also rendered as a sort-into-bins exercise under the first objective, with five of its seven rows (origin count, polymerase count, telomerase presence, RNA-primer removal, and strand elongation) each split into one distinguishing item per cell type; the end-of-section Review Questions and Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively); two key-term recall items (endonuclease, telomere) added from the glossary, the glossary's telomerase left to the Key terms list because the second objective's heading prints it; two summary-derived items added under the second objective — a cloze textin on the summary's "progressively shortened" clause and a multiple choice reading the summary's own sentence that DNA polymerase fills in the complementary strand after telomerase extends one strand, with three same-category distractors (helicase, primase, DNA ligase) all drawn from this section's own text; because Practice items are grouped by objective, the two Review Questions appear in reverse of the source's order; and rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One claim is corrected with a visible Source note: RNase H and flap endonuclease are distinct primer-removal enzymes, not two names for one, and the endonuclease recall item's hint was reworded to match (erratum 401).</small>

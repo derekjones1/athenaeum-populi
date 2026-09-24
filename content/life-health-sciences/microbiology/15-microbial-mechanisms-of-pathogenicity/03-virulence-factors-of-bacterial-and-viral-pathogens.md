@@ -141,13 +141,13 @@ The exotoxins can be grouped into three categories based on their target: intrac
 
 The **intracellular targeting toxins** comprise two components: A for activity and B for binding. Thus, these types of toxins are known as **A-B exotoxins** (see the figure below). The B component is responsible for the cellular specificity of the toxin and mediates the initial attachment of the toxin to specific cell surface receptors. Once the A-B toxin binds to the host cell, it is brought into the cell by endocytosis and entrapped in a vacuole. The A and B subunits separate as the vacuole acidifies. The A subunit then enters the cell cytoplasm and interferes with the specific internal cellular function that it targets.
 
-{{< mediafigure src="microbiology/OSC_Microbio_15_03_ABToxin" alt="Three-panel diagram: (a) a toxin's B subunit binds a receptor on a cell membrane, with the A subunit attached above it; (b) the membrane forms a vacuole around the bound toxin; (c) inside the vacuole, the B subunit remains with two H+ ions beside it, while the separated A subunit now floats free in the cytoplasm outside the vacuole." longdesc="Panel (a): an oval cell bounded by a phospholipid-bilayer membrane; above it, a toxin's B subunit sits docked on a labeled cellular receptor, with the A subunit bound on top of the B subunit. Panel (b): the membrane has folded inward to form a rounded vacuole enclosing the still-joined A and B subunits, labeled 'vacuole.' Panel (c): the vacuole now sits separate inside the cell, with the outer boundary labeled 'cell membrane' and the inner one labeled 'vacuole'; the A subunit floats free in the cytoplasm between the two membranes, no longer touching the B subunit; the B subunit remains inside the vacuole, and two small circles labeled H+ float in the vacuole beside it, showing the vacuole's acidified interior." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_15_03_ABToxin" alt="Three-panel diagram: (a) a toxin's B subunit binds a receptor on a cell membrane, with the A subunit attached above it; (b) the membrane forms a vacuole around the bound toxin; (c) inside the vacuole, the B subunit remains with two H⁺ ions beside it, while the separated A subunit now floats free in the cytoplasm outside the vacuole." longdesc="Panel (a): an oval cell bounded by a phospholipid-bilayer membrane; above it, a toxin's B subunit sits docked on a labeled cellular receptor, with the A subunit bound on top of the B subunit. Panel (b): the membrane has folded inward into a deep rounded pocket, still open at the top, enclosing the still-joined A and B subunits; the label 'vacuole' sits below it. Panel (c): the vacuole now sits separate inside the cell, with the outer boundary labeled 'cell membrane' and the inner one labeled 'vacuole'; the A subunit floats free in the cytoplasm between the two membranes, no longer touching the B subunit; the B subunit remains inside the vacuole, and two small circles labeled H⁺ float in the vacuole beside it, showing the vacuole's acidified interior." kind="diagram" >}}
 (a) In A-B toxins, the B component binds to the host cell through its interaction with specific cell surface receptors. (b) The toxin is brought in through endocytosis. (c) Once inside the vacuole, the A component (active component) separates from the B component and the A component gains access to the cytoplasm. (credit: modification of work by "Biology Discussion Forum"/YouTube)
 {{< /mediafigure >}}
 
 Four unique examples of A-B toxins are the diphtheria, cholera, botulinum, and tetanus toxins. The diphtheria toxin is produced by the gram-positive bacterium *Corynebacterium diphtheriae*, the causative agent of nasopharyngeal and cutaneous diphtheria. After the A subunit of the diphtheria toxin separates and gains access to the cytoplasm, it facilitates the transfer of adenosine diphosphate (ADP)-ribose onto an elongation-factor protein (EF-2) that is needed for protein synthesis. Hence, diphtheria toxin inhibits protein synthesis in the host cell, ultimately killing the cell (see the figure below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_15_03_Diphtheria" alt="A diagram of diphtheria toxin's mechanism at a cell membrane. Outside, the B subunit is anchored in the membrane; inside, the A subunit binds NAD and transfers ADP-ribose onto the elongation factor EF-2, blocking it. Nearby, an mRNA strand threads through a ribosome that is building a protein chain, and an arrow shows that chain's elongation stopping." longdesc="At the top, a wavy phospholipid membrane holds the diphtheria toxin's B subunit anchored on the outer face. Below the membrane, on the inner (cytoplasmic) side, the A subunit is drawn as a tan circle labeled 'A'; an arrow from NAD points to a green oval labeled 'EF-2,' with the label 'ADP-ribose' on the arrow, showing the A subunit transferring ADP-ribose onto EF-2 and inactivating it. To the right, a wavy line labeled 'mRNA' threads through a red-and-blue kidney-shaped ribosome; a chain of purple beads labeled 'protein' extends from the ribosome, with an arrow labeled 'elongation stops' pointing away from the growing chain, showing that protein synthesis halts once EF-2 is inactivated." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_15_03_Diphtheria" alt="A diagram of diphtheria toxin's mechanism at a cell membrane. Outside, the B subunit is anchored in the membrane; inside, the A subunit binds NAD and transfers ADP-ribose onto the elongation factor EF-2, blocking it. Nearby, an mRNA strand threads through a ribosome that is building a protein chain, and an arrow shows that chain's elongation stopping." longdesc="At the top, a wavy phospholipid membrane holds the diphtheria toxin's B subunit anchored on the outer face. Below the membrane, on the inner (cytoplasmic) side, the A subunit is drawn as a tan circle labeled 'A.' A curved arrow runs from A, joined partway by a second curved arrow from the label 'NAD'; their shared arrowhead points at a short upward arrow that carries EF-2 (a green oval labeled 'EF-2' sitting on the ribosome) up to a free green oval whose two leader lines label it 'EF-2' and 'ADP-ribose' — EF-2 with ADP-ribose attached, inactivated. To the right, a wavy line labeled 'mRNA' threads through a red-and-blue kidney-shaped ribosome; a chain of purple beads labeled 'protein' extends from the ribosome, with an arrow labeled 'elongation stops' leading off the ribosome's right side, and the ribosome is labeled 'ribosome,' showing that protein synthesis halts once EF-2 is inactivated." kind="diagram" >}}
 The mechanism of the diphtheria toxin inhibiting protein synthesis. The A subunit inactivates elongation factor 2 by transferring an ADP-ribose. This stops protein elongation, inhibiting protein synthesis and killing the cell.
 {{< /mediafigure >}}
 
@@ -225,14 +225,14 @@ A final mechanism that pathogens can use to protect themselves against the immun
 
 **Check Your Understanding**
 
-{{< selfcheck question="Name at least two ways that a capsule provides protection from the immune system." hint="This subsection's capsule paragraph gives two separate reasons capsules make phagocytosis harder — one about composition, one about size." >}}
+{{< selfcheck question="Name at least two ways that a capsule provides protection from the immune system." hint="Reread the first paragraph of the Virulence Factors for Survival in the Host and Immune Evasion discussion." >}}
 Capsules protect bacteria from the immune system in at least two ways: first, the composition of the capsule prevents immune cells from being able to adhere to the bacterial cell and then phagocytose it; second, the capsule makes the bacterial cell much larger, which makes it harder for immune cells to engulf the pathogen.
 ===CHECKS===
 the composition of the capsule prevents immune cells from being able to adhere and then phagocytose the cell
 the capsule makes the bacterial cell much larger, making it harder for immune cells to engulf the pathogen
 {{< /selfcheck >}}
 
-{{< selfcheck question="Besides capsules, name two other virulence factors used by bacteria to evade the immune system." hint="This subsection names several ways besides capsules: look at what proteases, coagulase, and antigenic variation each do to blunt the immune response." >}}
+{{< selfcheck question="Besides capsules, name two other virulence factors used by bacteria to evade the immune system." hint="Reread the paragraphs of the Virulence Factors for Survival in the Host and Immune Evasion discussion that follow the capsule paragraph." >}}
 Besides producing capsules, bacteria can evade the immune system by producing proteases that attack and digest host antibody molecules, combating antibody-mediated killing and clearance. Bacteria can also produce coagulase, which triggers the fibrinogen-to-fibrin clotting cascade even without blood vessel damage, coating the bacteria in a protective clot that shields them from phagocytic immune cells circulating in the bloodstream. Some bacteria instead rely on antigenic variation, altering their surface proteins so that antibodies raised against an earlier version of the protein are no longer effective.
 ===CHECKS===
 proteases attack and digest host antibody molecules, combating antibody-mediated killing and clearance
@@ -272,7 +272,7 @@ Antigenic variation also occurs in certain types of enveloped viruses, including
 
 The rate of antigenic variation in influenza viruses is very high, making it difficult for the immune system to recognize the many different strains of Influenzavirus. Although the body may develop immunity to one strain through natural exposure or vaccination, antigenic variation results in the continual emergence of new strains that the immune system will not recognize. This is the main reason that vaccines against Influenzavirus must be given annually. Each year's influenza vaccine provides protection against the most prevalent strains for that year, but new or different strains may be more prevalent the following year.
 
-{{< mediafigure src="microbiology/OSC_Microbio_15_03_Flu" alt="Two-panel diagram. (a) Antigenic drift: an influenza virus (virus A) with green hemagglutinin and yellow neuraminidase spikes changes, through mutation, into virus B, whose hemagglutinin spikes have a different, mutated shape. (b) Antigenic shift: virus A (green hemagglutinin, yellow neuraminidase) and a differently colored virus B (blue hemagglutinin, purple neuraminidase) both infect the same host cell, producing virus C, which carries a mix of spikes from both parent viruses." longdesc="Panel (a), labeled 'Antigenic drift': virus A is a round particle with a core of coiled RNA segments, surrounded by an envelope studded with yellow neuraminidase spikes and green pentagon-shaped hemagglutinin spikes, both labeled. An arrow points to virus B, identical except several hemagglutinin spikes are now a different, jagged green shape, labeled 'mutated hemagglutinin.' Panel (b), labeled 'Antigenic shift': virus A (yellow neuraminidase, green hemagglutinin) and virus B (purple neuraminidase, blue hemagglutinin) each send an arrow into a shared 'host cell' label; a further arrow leads to virus C, whose envelope now carries a mix of spikes — some yellow neuraminidase from virus A and some blue hemagglutinin from virus B — around a core containing RNA segments from both parent viruses." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_15_03_Flu" alt="Two-panel diagram. (a) Antigenic drift: an influenza virus (virus A) with green hemagglutinin and yellow neuraminidase spikes changes, through mutation, into virus B, whose hemagglutinin spikes have a different, mutated shape. (b) Antigenic shift: virus A (green hemagglutinin, yellow neuraminidase) and a differently colored virus B (blue hemagglutinin, purple neuraminidase) both infect the same host cell, producing virus C, which carries a mix of spikes from both parent viruses." longdesc="Panel (a), labeled 'Antigenic drift': virus A is a round particle with a core of coiled RNA segments, surrounded by an envelope studded with yellow neuraminidase spikes and green pentagon-shaped hemagglutinin spikes, both labeled. An arrow points to virus B, identical except that every hemagglutinin spike is now a different, jagged green star shape, one labeled 'mutated hemagglutinin,' and a short stretch in the middle of the top one of its nine stacked RNA strands is now red, the rest still purple like virus A's, marking the mutation. Panel (b), labeled 'Antigenic shift': virus A (yellow neuraminidase, green hemagglutinin) and virus B (purple neuraminidase, blue hemagglutinin) each send an arrow into a shared 'host cell' label; a further arrow leads to virus C, whose envelope carries yellow neuraminidase spikes, labeled 'neuraminidase from virus A,' and blue hemagglutinin spikes, labeled 'hemagglutinin from virus B,' around a core of nine RNA strands: four red, like virus B's, above five purple, like virus A's." kind="diagram" >}}
 Antigenic drift and antigenic shift in influenza viruses. (a) In antigenic drift, mutations in the genes for the surface proteins neuraminidase and/or hemagglutinin result in small antigenic changes over time. (b) In antigenic shift, simultaneous infection of a cell with two different influenza viruses results in mixing of the genes. The resultant virus possesses a mixture of the proteins of the original viruses. Influenza pandemics can often be traced to antigenic shifts.
 {{< /mediafigure >}}
 
@@ -287,7 +287,7 @@ For another explanation of how [antigenic shift and drift](https://openstax.org/
 {{< multiplechoice
   question="Describe the role of adhesins in viral tropism."
   answer="The interaction of viral adhesins with specific cell receptors defines a virus's tropism for specific cells, tissues, and organs"
-  hint="Recall what this subsection says defines which cells, tissues, and organs a virus can preferentially infect, right after it introduces the term tropism."
+  hint="Reread the Viral Adhesins paragraph where the term tropism is introduced."
 >}}
 The rate at which a virus undergoes antigenic drift and antigenic shift
 Whether a toxin is composed of an A subunit or a B subunit
@@ -295,7 +295,7 @@ Whether a pathogen produces a capsule to resist phagocytosis
 The interaction of viral adhesins with specific cell receptors defines a virus's tropism for specific cells, tissues, and organs
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain the difference between antigenic drift and antigenic shift." hint="One sentence contrasts point mutations with gene reassortment — but this box also asks what triggers each, so add how each one arises (a mutation versus two viruses sharing one host)." >}}
+{{< selfcheck question="Explain the difference between antigenic drift and antigenic shift." hint="Reread the first paragraph of the Antigenic Variation in Viruses subsection and the figure that follows it." >}}
 Antigenic drift and antigenic shift are the two forms of antigenic variation that influenza viruses use to avoid the immune system, but they arise differently. Antigenic drift is the result of point mutations that cause slight changes in the spike proteins hemagglutinin and neuraminidase. Antigenic shift, on the other hand, is a major change in these same spike proteins that results from gene reassortment, which typically occurs when two different influenza viruses infect the same host.
 ===CHECKS===
 antigenic drift is the result of point mutations causing slight changes in hemagglutinin and neuraminidase
@@ -348,7 +348,7 @@ gene reassortment for antigenic shift typically occurs when two different influe
 {{< multiplechoice
   question="Which of the following would be a virulence factor of a pathogen?"
   answer="a surface protein allowing the pathogen to bind to host cells"
-  hint="Recall the definition of a virulence factor — something that helps a pathogen bind to, invade, or damage the host — versus something the host immune system does or recognizes."
+  hint="Reread the section's opening paragraph on virulence factors, then the Virulence Factors for Adhesion discussion."
 >}}
 a surface protein allowing the pathogen to bind to host cells
 a secondary host the pathogen can infect
@@ -370,7 +370,7 @@ It is produced by immune cells to target pathogens.
 {{< multiplechoice
   question="Phospholipases are enzymes that do which of the following?"
   answer="degrade cell membranes to allow pathogens to escape phagosomes"
-  hint="Recall which host-cell compartment's membrane phospholipases were said to breach, functionally, earlier in this subsection."
+  hint="Reread the Exoenzymes paragraph that discusses phospholipase C of *Bacillus anthracis*."
 >}}
 degrade antibodies
 promote pathogen spread through connective tissue.
@@ -399,6 +399,10 @@ capsule; proteins; lipids
 
 ### Differentiate between endotoxins and exotoxins
 
+{{< textin question="The lipid A component of lipopolysaccharide found in the outer membrane of gram-negative bacteria is called ________." answer="endotoxin" hint="This molecule is released either when a gram-negative cell dies and its membrane disintegrates, or when the bacterium undergoes binary fission." >}}
+
+{{< textin question="Protein molecules produced by a wide variety of pathogenic bacteria, mostly gram-positive, that cause specific damage to particular host cells are called ________." answer="exotoxin" hint="Recall the general protein-based toxin category that contrasts with the lipid-based toxin discussed just above." >}}
+
 {{< multiplechoice
   question="You have recently identified a new toxin. It is produced by a gram-negative bacterium. It is composed mostly of protein, has high toxicity, and is not heat stable. You also discover that it targets liver cells. Based on these characteristics, how would you classify this toxin?"
   answer="exotoxin"
@@ -409,10 +413,6 @@ endotoxin
 exotoxin
 leukocidin
 {{< /multiplechoice >}}
-
-{{< textin question="The lipid A component of lipopolysaccharide found in the outer membrane of gram-negative bacteria is called ________." answer="endotoxin" hint="This molecule is released either when a gram-negative cell dies and its membrane disintegrates, or when the bacterium undergoes binary fission." >}}
-
-{{< textin question="Protein molecules produced by a wide variety of pathogenic bacteria, mostly gram-positive, that cause specific damage to particular host cells are called ________." answer="exotoxin" hint="Recall the general protein-based toxin category that contrasts with the lipid-based toxin discussed just above." >}}
 
 ### Describe and differentiate between various types of exotoxins
 
@@ -442,7 +442,7 @@ the increased cAMP causes the secretion of fluid and electrolytes responsible fo
 
 ### Describe the mechanisms viruses use for adhesion and antigenic variation
 
-{{< textin question="The glycoprotein adhesin gp120 on HIV must interact with ________ on some immune cells as the first step in the process of infecting the cell." answer="CD4" accept="CD-4" hint="Recall the immune-cell surface marker that gp120 must bind first, before it can bind a coreceptor, as this subsection's viral-adhesin discussion states." >}}
+{{< textin question="The glycoprotein adhesin gp120 on HIV must interact with ________ on some immune cells as the first step in the process of infecting the cell." answer="CD4" accept="CD-4|CD4 receptor|CD4 cellular marker" hint="Recall the immune-cell surface marker that gp120 must bind first, before it can bind a coreceptor, as this subsection's viral-adhesin discussion states." >}}
 
 {{< textin question="Antigenic ________ is the result of reassortment of genes responsible for the production of influenza virus spike proteins between different virus particles while in the same host, whereas antigenic drift is the result of point mutations in the spike proteins." answer="shift" hint="Name the type of antigenic variation that occurs when two different influenza viruses infect the same host cell and their genes reassort — not the type caused by point mutations." >}}
 

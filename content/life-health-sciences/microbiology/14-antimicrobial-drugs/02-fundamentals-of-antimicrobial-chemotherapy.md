@@ -37,7 +37,7 @@ Broad-spectrum antimicrobial use may lead to the development of a superinfection
 
 **Check Your Understanding**
 
-{{< selfcheck question="What is a superinfection and how does one arise?" hint="Give the definition from the opening of this discussion, then the one sentence that explains the chain of events by which the normal microbiota's loss lets a resistant pathogen take over." >}}
+{{< selfcheck question="What is a superinfection and how does one arise?" hint="Reread the second paragraph of Spectrum of Activity." >}}
 A superinfection is a secondary infection in a patient having a preexisting infection. A superinfection develops when the antibacterial intended for the preexisting infection kills the protective microbiota, allowing another pathogen resistant to the antibacterial to proliferate and cause a secondary infection.
 ===CHECKS===
 a secondary infection in a patient having a preexisting infection
@@ -69,7 +69,7 @@ whether the drug is dose dependent or time dependent
 the route of administration
 {{< /selfcheck >}}
 
-{{< selfcheck question="Name some typical side effects associated with drugs and identify some factors that might contribute to these side effects." hint="Recall which patient condition the Dosage and Route of Administration discussion names as increasing drug levels and the risk of harm, and which drug property can make a serious side effect last longer." >}}
+{{< selfcheck question="Name some typical side effects associated with drugs and identify some factors that might contribute to these side effects." hint="Reread the first two paragraphs of Dosage and Route of Administration." >}}
 Side effects can include toxicity and allergic reactions. A patient's history of liver or kidney dysfunction can contribute to side effects, because it may reduce drug metabolism or clearance, resulting in increased drug levels that may lead to toxicity. A drug's half-life can also contribute: a longer half-life means that drug levels, including toxic levels for a drug with serious side effects, remain in the body for a longer time.
 ===CHECKS===
 toxicity and allergic reactions
@@ -86,7 +86,7 @@ Whereas synergistic drug interactions provide a benefit to the patient, antagoni
 
 **Check Your Understanding**
 
-{{< sortbins question="Sort each phrase under the type of drug interaction it describes." hint="Recall which type of interaction benefits the patient and which one is harmful, and match each detail to the paragraph that describes it." >}}
+{{< sortbins question="Sort each phrase under the type of drug interaction it describes." hint="Reread the two paragraphs of Drug Interactions." >}}
 {"bins":["Synergistic","Antagonistic"],"items":[{"label":"Individually bacteriostatic drugs may become bactericidal when combined","bin":0},{"label":"Produces harmful effects","bin":1},{"label":"The combined effect is better than the efficacy of either drug alone","bin":0},{"label":"May raise the pH of the stomach and reduce the absorption of certain antibacterial drugs","bin":1},{"label":"Provides a benefit to the patient","bin":0},{"label":"Associated with an increased failure rate of oral contraceptives","bin":1},{"label":"May cause loss of drug activity or decreased therapeutic levels","bin":1}]}
 {{< /sortbins >}}
 
@@ -103,7 +103,7 @@ In recent years, various initiatives have aimed to educate parents and clinician
 
 One possible solution is a regimen called directly observed therapy (DOT), which involves the supervised administration of medications to patients. Patients are either required to visit a health-care facility to receive their medications, or health-care providers must administer medication in patients' homes or another designated location. DOT has been implemented in many cases for the treatment of TB and has been shown to be effective; indeed, DOT is an integral part of WHO's global strategy for eradicating TB (Centers for Disease Control and Prevention, "Tuberculosis (TB)"; World Health Organization, "Tuberculosis (TB): The Five Elements of DOTS"). But is this a practical strategy for all antibiotics? Would patients taking penicillin, for example, be more or less likely to adhere to the full course of treatment if they had to travel to a health-care facility for each dose? And who would pay for the increased cost associated with DOT? When it comes to overprescription, should someone be policing physicians or drug companies to enforce best practices? What group should assume this responsibility, and what penalties would be effective in discouraging overprescription?
 
-{{< mediafigure src="microbiology/OSC_Microbio_14_04_Pressure" alt="Three line-graph panels comparing parental expectations about antibiotic prescriptions in 2000 and 2013, each with a rising blue line for Medicaid-insured parents and a flatter red line for commercially insured parents." longdesc="Panel 1, 'If my doctor does not prescribe an antibiotic when I think one is needed, I will take my child to another doctor': Medicaid-insured parents rose from 10% in 2000 to 25% in 2013; commercially insured parents rose from 8% to 10%. Panel 2, 'If I expect an antibiotic, I am less satisfied if I don't receive it': Medicaid-insured parents rose from 10% to 24%; commercially insured parents rose from 14% to 15%. Panel 3, 'I would rather give my child an antibiotic that may not be needed than wait to see if she gets better without it': Medicaid-insured parents rose from 9% to 19%; commercially insured parents fell from 8% to 6%. In all three panels the Medicaid-insured line rises more steeply than the commercially insured line." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_14_04_Pressure" alt="Three line-graph panels comparing parental expectations about antibiotic prescriptions in 2000 and 2013, each with a rising blue line for Medicaid-insured parents and a flatter red line for commercially insured parents." longdesc="All three panels share a y-axis, 'Percent of Parents Surveyed,' from 0% to 30%, and plot 2000 and 2013 values. Panel 1, 'If my doctor does not prescribe an antibiotic when I think one is needed, I will take my child to another doctor': Medicaid-insured parents rose from 10% in 2000 to 25% in 2013; commercially insured parents rose from 8% to 10%. Panel 2, 'If I expect an antibiotic, I am less satisfied if I don't receive it': Medicaid-insured parents rose from 10% to 24%; commercially insured parents rose from 14% to 15%. Panel 3, 'I would rather give my child an antibiotic that may not be needed than wait and see if she gets better without it': Medicaid-insured parents rose from 9% to 19%; commercially insured parents fell from 8% to 6%. In all three panels the Medicaid-insured line rises more steeply than the commercially insured line." kind="diagram" >}}
 This graph indicates trends in parental expectations related to prescription of antibiotics based on a recent study (Vaz, L.E., et al., "Prevalence of Parental Misconceptions About Antibiotic Use," *Pediatrics* 136, no. 2 (August 2015), DOI: 10.1542/peds.2015-0883). Among parents of Medicaid-insured children, there was a clear upward trend in parental expectations for prescription antibiotics. Expectations were relatively stable (and lesser) among parents whose children were commercially insured, suggesting that these parents were somewhat better informed than those with Medicaid-insured children.
 {{< /mediafigure >}}
 {{< /callout >}}
@@ -129,44 +129,44 @@ This graph indicates trends in parental expectations related to prescription of 
 
 ### Contrast bacteriostatic versus bactericidal antibacterial activities
 
-{{< textin question="________ drugs cause a reversible inhibition of bacterial growth, with growth restarting after elimination of the drug." answer="bacteriostatic" hint="Name the term this discussion contrasts with bactericidal." >}}
-
-{{< textin question="By contrast, ________ drugs kill their target bacteria." answer="bactericidal" hint="Name the term this discussion contrasts with bacteriostatic." >}}
-
 {{< multiplechoice
-  question="Which type of drug is essential for the successful treatment of infections in an immunocompromised patient?"
-  answer="Bactericidal"
-  hint="Recall which of the two drug types this discussion calls essential when a patient's own immune defenses cannot be relied upon."
+  question="In a patient with strong immune defenses, which drugs can be effective in achieving clinical cure?"
+  answer="Both bacteriostatic and bactericidal drugs"
+  hint="Reread the paragraph under Bacteriostatic Versus Bactericidal."
 >}}
-Bacteriostatic
-Bactericidal
-Narrow-spectrum
-Broad-spectrum
+Only bacteriostatic drugs
+Only bactericidal drugs
+Both bacteriostatic and bactericidal drugs
+Only broad-spectrum drugs
 {{< /multiplechoice >}}
+
+{{< textin question="Bacteriostatic drugs cause a reversible inhibition of growth, with bacterial growth restarting after ________ of the drug." answer="elimination" hint="Reread the second sentence under Bacteriostatic Versus Bactericidal." >}}
+
+{{< textin question="Regardless of the immune status of the patient, life-threatening infections such as ________ require the use of a bactericidal drug." answer="acute endocarditis" accept="endocarditis" hint="Reread the last sentence under Bacteriostatic Versus Bactericidal." >}}
 
 ### Contrast broad-spectrum drugs versus narrow-spectrum drugs
 
+{{< textin question="The use of narrow-spectrum antimicrobial drugs is preferred in many cases to avoid superinfection and the development of ________." answer="antimicrobial resistance" accept="resistance|drug resistance|antibiotic resistance|antimicrobial drug resistance" hint="Reread the second bullet of the Summary." >}}
+
 {{< multiplechoice
   question="Which clinical situation would be appropriate for treatment with a narrow-spectrum antimicrobial drug?"
-  answer="treatment of strep throat caused by culture identified Streptococcus pyogenes"
-  hint="Recall that a narrow-spectrum drug is best used once the causative pathogen is already identified."
+  answer="treatment of strep throat caused by culture identified *Streptococcus pyogenes*"
+  hint="Reread the first paragraph of Spectrum of Activity."
 >}}
 treatment of a polymicrobic mixed infection in the intestine
 prophylaxis against infection after a surgical procedure
-treatment of strep throat caused by culture identified Streptococcus pyogenes
+treatment of strep throat caused by culture identified *Streptococcus pyogenes*
 empiric therapy of pneumonia while waiting for culture results
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Narrow-spectrum antimicrobials are commonly used for prophylaxis following surgery."
   answer="False"
-  hint="Recall which of the two spectrum types this discussion names for prophylactic use before surgery or an invasive procedure."
+  hint="Reread the first paragraph of Spectrum of Activity."
 >}}
 True
 False
 {{< /multiplechoice >}}
-
-{{< textin question="A ________ antimicrobial targets only specific subsets of bacterial pathogens." answer="narrow-spectrum" hint="Name the spectrum type that is best used once the pathogen causing an infection has already been identified." >}}
 
 {{< selfcheck question="When is using a broad-spectrum antimicrobial drug warranted?" hint="The Spectrum of Activity discussion names three separate situations that call for a broad-spectrum drug." >}}
 A broad-spectrum antimicrobial is warranted when it is used as empiric therapy to cover a wide range of potential pathogens while waiting on laboratory identification of the infecting pathogen, for polymicrobic infections (mixed infections with multiple bacterial species) or as prophylactic prevention of infections with surgery or invasive procedures, and to treat an infection when a narrow-spectrum drug has failed because the target pathogen developed drug resistance.
@@ -181,7 +181,7 @@ when a narrow-spectrum drug has failed because the target pathogen developed dru
 {{< multiplechoice
   question="Which of the following combinations would most likely contribute to the development of a superinfection?"
   answer="long-term use of broad-spectrum antimicrobials"
-  hint="Recall which spectrum type puts the normal microbiota most at risk, and which duration of use compounds that risk."
+  hint="Reread the second paragraph of Spectrum of Activity."
 >}}
 long-term use of narrow-spectrum antimicrobials
 long-term use of broad-spectrum antimicrobials
@@ -189,14 +189,14 @@ short-term use of narrow-spectrum antimicrobials
 short-term use of broad-spectrum antimicrobials
 {{< /multiplechoice >}}
 
-{{< textin question="The bacterium known for causing pseudomembranous colitis, a potentially deadly superinfection, is ________." answer="Clostridioides difficile" accept="C. difficile|Clostridium difficile" hint="Name the bacterium this discussion pairs with candidiasis as a common example of a superinfection." >}}
+{{< textin question="The bacterium known for causing pseudomembranous colitis, a potentially deadly superinfection, is ________." answer="Clostridioides difficile" accept="C. difficile|Clostridium difficile" hint="Reread the last sentence of the second paragraph of Spectrum of Activity." >}}
 
-{{< selfcheck question="Why are yeast infections a common type of superinfection that results from long-term use of broad-spectrum antimicrobials?" hint="Recall which population a broad-spectrum antibacterial kills, and which of the module's two named superinfection examples is not itself a bacterium." >}}
-Long-term use of a broad-spectrum antimicrobial kills a broad spectrum of the normal, protective microbiota. Because the drug is an antibacterial, it does not target yeast (a fungus), so once the bacterial microbiota that would normally keep it in check is depleted, the yeast is free to proliferate and cause a superinfection such as candidiasis.
+{{< selfcheck question="Why are yeast infections a common type of superinfection that results from long-term use of broad-spectrum antimicrobials?" hint="Reread the second paragraph of Spectrum of Activity; this section does not answer the question in full." >}}
+This section says that broad-spectrum antimicrobials also target a broad spectrum of the normal microbiota, and that a superinfection develops when the antibacterial intended for the preexisting infection kills the protective microbiota, allowing another pathogen resistant to the antibacterial to proliferate and cause a secondary infection. It names yeast infections (candidiasis) as a common example. It does not itself explain why yeasts in particular survive the antibacterial.
 ===CHECKS===
-kills a broad spectrum of the normal, protective microbiota
-does not target yeast (a fungus)
-free to proliferate and cause a superinfection such as candidiasis
+also target a broad spectrum of the normal microbiota
+kills the protective microbiota, allowing another pathogen resistant to the antibacterial to proliferate
+yeast infections (candidiasis) as a common example
 {{< /selfcheck >}}
 
 ### Discuss the significance of dosage and the route of administration of a drug
@@ -204,7 +204,7 @@ free to proliferate and cause a superinfection such as candidiasis
 {{< multiplechoice
   question="Which of the following routes of administration would be appropriate and convenient for home administration of an antimicrobial to treat a systemic infection?"
   answer="oral"
-  hint="Recall which route this discussion says patients can more conveniently take at home."
+  hint="Reread the third paragraph of Dosage and Route of Administration."
 >}}
 oral
 intravenous
@@ -212,12 +212,12 @@ topical
 parenteral
 {{< /multiplechoice >}}
 
-{{< textin question="The rate at which 50% of a drug is eliminated from the plasma is called its ________." answer="half-life" hint="Name the drug property this discussion says can be as short as 1 hour or exceed 12 hours." >}}
+{{< textin question="The rate at which 50% of a drug is eliminated from the plasma is called its ________." answer="half-life" hint="Reread the second paragraph of Dosage and Route of Administration." >}}
 
 {{< multiplechoice
   question="For most drugs, which route of administration achieves substantially higher plasma levels than oral or intramuscular administration?"
   answer="intravenous administration"
-  hint="Recall which route this discussion says produces the highest plasma levels for most drugs."
+  hint="Reread the end of the third paragraph of Dosage and Route of Administration, or the plasma-concentration graph."
 >}}
 oral administration
 intramuscular administration
@@ -225,7 +225,7 @@ intravenous administration
 topical administration
 {{< /multiplechoice >}}
 
-{{< selfcheck question="When prescribing antibiotics, what aspects of the patient's health history should the clinician ask about and why?" hint="The Dosage and Route of Administration discussion names two organ systems whose dysfunction changes how a drug is handled, plus a patient characteristic used to calculate dose in children." >}}
+{{< selfcheck question="When prescribing antibiotics, what aspects of the patient's health history should the clinician ask about and why?" hint="Reread the first paragraph of Dosage and Route of Administration." >}}
 The clinician should ask about the patient's mass, since in children dose is based on the patient's mass. The clinician should also ask about a history of liver or kidney dysfunction, because patients with such a history may experience reduced drug metabolism or clearance from the body, resulting in increased drug levels that may lead to toxicity and make them more prone to side effects.
 ===CHECKS===
 the patient's mass, since in children dose is based on the patient's mass
@@ -235,27 +235,27 @@ reduced drug metabolism or clearance from the body, resulting in increased drug 
 
 ### Identify factors and variables that can influence the side effects of a drug
 
-{{< textin question="The amount of medication given during a certain time interval is the dosage, and it must be determined carefully to ensure that optimum therapeutic drug levels are achieved at the site of infection without causing significant ________ (side effects) to the patient." answer="toxicity" hint="Name the harmful consequence of a drug reaching too high a level in the body, the reason dosage must be determined carefully." >}}
+{{< textin question="The amount of medication given during a certain time interval is the dosage, and it must be determined carefully to ensure that optimum therapeutic drug levels are achieved at the site of infection without causing significant ________ (side effects) to the patient." answer="toxicity" hint="Reread the first sentence of Dosage and Route of Administration." >}}
 
 {{< multiplechoice
-  question="A patient's history of which of the following makes them more prone to experiencing drug side effects?"
-  answer="liver or kidney dysfunction"
-  hint="Recall which two organs' dysfunction this discussion says reduces drug metabolism or clearance from the body."
+  question="According to this section, what is the goal when selecting a drug's dosage?"
+  answer="To select the dosage that will minimize the risk of side effects while still achieving clinical cure"
+  hint="Reread the first paragraph of Dosage and Route of Administration."
 >}}
-liver or kidney dysfunction
-a narrow-spectrum infection
-a short drug half-life
-oral administration of the drug
+To give the largest dose the patient can tolerate, whatever the side effects
+To select the dosage that will minimize the risk of side effects while still achieving clinical cure
+To give the lowest possible dose, even if clinical cure is not achieved
+To give every patient the same dose and interval, whatever the drug's half-life
 {{< /multiplechoice >}}
 
-{{< textin question="Despite best efforts to optimize dosing, ________ and other potentially serious side effects do occur." answer="allergic reactions" accept="allergic reaction" hint="Name the immune-system reaction this discussion pairs with 'other potentially serious side effects.'" >}}
+{{< textin question="Despite best efforts to optimize dosing, ________ and other potentially serious side effects do occur." answer="allergic reactions" hint="Reread the first paragraph of Dosage and Route of Administration." >}}
 
 ### Describe the significance of positive and negative interactions between drugs
 
 {{< multiplechoice
   question="Which of the following is an example of a synergistic drug combination described in this discussion?"
   answer="trimethoprim and sulfamethoxazole (Bactrim)"
-  hint="Name the combination this discussion calls a classic example of synergy, individually bacteriostatic but bactericidal together."
+  hint="Reread the first paragraph of Drug Interactions."
 >}}
 trimethoprim and sulfamethoxazole (Bactrim)
 niclosamide and colistin
@@ -263,9 +263,9 @@ bacitracin and polymyxin
 narrow-spectrum and broad-spectrum antimicrobials
 {{< /multiplechoice >}}
 
-{{< textin question="Antagonism can occur between two antimicrobials or between antimicrobials and ________ being used to treat other conditions." answer="nonantimicrobials" accept="non-antimicrobials" hint="Name the term this discussion uses for a drug, other than an antimicrobial, that a patient may also be taking." >}}
+{{< textin question="Antagonism can occur between two antimicrobials or between antimicrobials and ________ being used to treat other conditions." answer="nonantimicrobials" accept="non-antimicrobials" hint="Reread the second paragraph of Drug Interactions." >}}
 
-{{< selfcheck question="Too often patients will stop taking antimicrobial drugs before the prescription is finished. What are factors that cause a patient to stop too soon, and what negative impacts could this have?" hint="The Eye on Ethics discussion names the symptom-related reason patients stop early, and two consequences of a shortened course of treatment." >}}
+{{< selfcheck question="Too often patients will stop taking antimicrobial drugs before the prescription is finished. What are factors that cause a patient to stop too soon, and what negative impacts could this have?" hint="Reread the first paragraph of the Eye on Ethics box." >}}
 Patients often stop taking antimicrobials once their symptoms dissipate and they feel better, before finishing the full prescribed course. A shorter course of treatment not only fails to kill the target organisms to expected levels, it also selects for drug-resistant variants within the target population and within the patient's microbiota.
 ===CHECKS===
 once their symptoms dissipate and they feel better
@@ -275,4 +275,4 @@ selects for drug-resistant variants within the target population and within the 
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 14.2: Fundamentals of Antimicrobial Chemotherapy](https://openstax.org/books/microbiology/pages/14-2-fundamentals-of-antimicrobial-chemotherapy) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures are re-encoded as WebP and rendered as mediafigures, all explicit `kind="diagram"` (the superinfection cartoon, the plasma-concentration line graph, and the three-panel survey graph are all drawn charts, not photographs), `eager="true"` on the superinfection figure as the first on the page; the superinfection figure's alt is rewritten from the image to describe the three labeled panels and their cell shapes/colors rather than the source alt's narration of what each panel "shows"; the plasma-concentration figure's alt is rewritten from the image, correcting two suspected source-alt defects ("tapes off" for "tapers off," "Intramuscular rout" for "route"); the parental-expectations figure's alt is shortened to the trend and a `longdesc` added with the exact percentages read from the image for all three panels, correcting three suspected source-alt defects ("Medicaid insured insured," the missing "I" in "If would rather," and a duplicated closing period). The five footnotes are rendered as inline parenthetical citations at the sentences they support: the Falagas/Karageorgopoulos and Dickinson et al. citations keep their full bibliographic form; the two Tuberculosis (TB) footnotes (Centers for Disease Control and Prevention; World Health Organization), both bare access URLs with an access date and no DOI, are combined into one parenthetical naming the two organizations and titles with the URLs and access dates dropped; the Vaz et al. citation, which carries a DOI, keeps it. Of the module's nine source exercises, all three Multiple Choice, the one True/False (as a two-option multiple choice, no "True or false:" prefix), and the one Fill in the Blank (as a `textin`, *Clostridioides difficile*, `accept="C. difficile|Clostridium difficile"` for the abbreviated and pre-2016 genus forms) are adapted into Practice with their source keys and option order; of the two unkeyed Short Answer and two unkeyed Critical Thinking questions, none is fixed by a single module sentence (each needs either several sentences assembled or, for the yeast-superinfection question, an inference — that an antibacterial does not target a fungus — the module never states), so all four are self-checks with model answers and rubrics assembled only from this module's own text. Of the module's four body Check Your Understanding questions, three stay self-checks for the same reason (their honest answers need more than one sentence); the fourth ("Explain the difference between synergistic and antagonistic drug interactions") is rendered as a two-bin `sortbins` (Synergistic / Antagonistic, 7 items) built from this module's own distinguishing phrases about each interaction type, drawn from both Drug Interactions paragraphs so each bin holds at least three. Eleven filler Practice items (`textin` and `multiplechoice` only) are added strictly from this module's own sentences to bring all six objective groups to the book's 3-per-group, 18-per-section floor: two cloze `textin`s contrasting bacteriostatic and bactericidal, each a single verbatim sentence with its term blanked; a `multiplechoice` on the immunocompromised-patient sentence; a `textin` cloze naming narrow-spectrum antimicrobials from the definition sentence alone (not folded with the following gram-positive/gram-negative example sentence); a `textin` cloze on half-life; a `multiplechoice` contrasting intravenous with oral/intramuscular plasma levels; a `textin` cloze on toxicity, built from the dosage-definition sentence rather than the later liver/kidney-dysfunction sentence so its stem does not also contain the adjacent `multiplechoice`'s keyed phrase, and that `multiplechoice` on the liver/kidney-dysfunction sentence; a `textin` cloze naming allergic reactions as a side effect (`accept="allergic reaction"`, the singular the grader would otherwise reject); a `multiplechoice` naming the trimethoprim/sulfamethoxazole (Bactrim) synergy example, with distractors built from other drugs this module names in the Route of Administration discussion; and a `textin` cloze naming nonantimicrobial drugs from the antagonism-scope sentence (`accept="non-antimicrobials"`, the hyphenated spelling the grader would otherwise reject). No source exercise item is omitted. Figure cross-references are rendered as describing phrases ("illustrated below," "shown below") rather than print numbers.</small>
+<small>This section is adapted from [Microbiology, Section 14.2: Fundamentals of Antimicrobial Chemotherapy](https://openstax.org/books/microbiology/pages/14-2-fundamentals-of-antimicrobial-chemotherapy) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures are re-encoded as WebP and rendered as mediafigures, all explicit `kind="diagram"` (the superinfection cartoon, the plasma-concentration line graph, and the three-panel survey graph are all drawn charts, not photographs), `eager="true"` on the superinfection figure as the first on the page; the superinfection figure's alt is rewritten from the image to describe the three labeled panels and their cell shapes/colors rather than the source alt's narration of what each panel "shows"; the plasma-concentration figure's alt is rewritten from the image, correcting two suspected source-alt defects ("tapes off" for "tapers off," "Intramuscular rout" for "route"); the parental-expectations figure's alt is shortened to the trend and a `longdesc` added with the exact percentages read from the image for all three panels, correcting three suspected source-alt defects ("Medicaid insured insured," the missing "I" in "If would rather," and a duplicated closing period); the third panel's printed statement is quoted from the artwork as "than wait and see," where the source alt reads "than wait to see." The five footnotes are rendered as inline parenthetical citations at the sentences they support: the Falagas/Karageorgopoulos and Dickinson et al. citations keep their full bibliographic form; the two Tuberculosis (TB) footnotes (Centers for Disease Control and Prevention; World Health Organization), both bare access URLs with an access date and no DOI, are combined into one parenthetical naming the two organizations and titles with the URLs and access dates dropped; the Vaz et al. citation, which carries a DOI, keeps it. Of the module's nine source exercises, all three Multiple Choice, the one True/False (as a two-option multiple choice, no "True or false:" prefix), and the one Fill in the Blank (as a `textin`, *Clostridioides difficile*, `accept="C. difficile|Clostridium difficile"` for the abbreviated and pre-2016 genus forms) are adapted into Practice with their source keys and option order; of the two unkeyed Short Answer and two unkeyed Critical Thinking questions, none is fixed by a single module sentence (each needs either several sentences assembled or, for the yeast-superinfection question, an inference — that an antibacterial does not target a fungus — the module never states, so that model answer gives what the module says and says it stops there), so all four are self-checks with model answers and rubrics assembled only from this module's own text. Of the module's four body Check Your Understanding questions, three stay self-checks for the same reason (their honest answers need more than one sentence); the fourth ("Explain the difference between synergistic and antagonistic drug interactions") is rendered as a two-bin `sortbins` (Synergistic / Antagonistic, 7 items) built from this module's own distinguishing phrases about each interaction type, drawn from both Drug Interactions paragraphs so each bin holds at least three. Eleven filler Practice items (`textin` and `multiplechoice` only) are added strictly from this module's own sentences to bring all six objective groups to the book's 3-per-group, 18-per-section floor: two cloze `textin`s from the Bacteriostatic Versus Bactericidal paragraph (the "elimination" after which growth restarts, and acute endocarditis as the life-threatening infection that requires a bactericidal drug), since the objective's own heading prints both of its key terms; a `multiplechoice` on the strong-immune-defenses sentence (it replaces an earlier filler on the immunocompromised-patient sentence, whose key "Bactericidal" this objective's heading prints); a `textin` cloze from the Summary's narrow-spectrum sentence, keyed "antimicrobial resistance" (a narrow-spectrum term recall would repeat a term the objective's heading prints); a `textin` cloze on half-life; a `multiplechoice` contrasting intravenous with oral/intramuscular plasma levels; a `textin` cloze on toxicity, built from the dosage-definition sentence rather than the later liver/kidney-dysfunction sentence so its stem does not also contain the adjacent `multiplechoice`'s keyed phrase, and a `multiplechoice` on the dosage-goal sentence ("the goal is to select the optimum dosage that will minimize the risk of side effects while still achieving clinical cure"), which replaces an earlier filler on the liver/kidney-dysfunction sentence because that fact is the keyed clause of the Short Answer self-check just above this group and of a body self-check; a `textin` cloze naming allergic reactions as a side effect; a `multiplechoice` naming the trimethoprim/sulfamethoxazole (Bactrim) synergy example, with distractors built from other drugs this module names in the Route of Administration discussion; and a `textin` cloze naming nonantimicrobial drugs from the antagonism-scope sentence (`accept="non-antimicrobials"`, the hyphenated spelling the grader would otherwise reject). No source exercise item is omitted. Figure cross-references are rendered as describing phrases ("illustrated below," "shown below") rather than print numbers.</small>

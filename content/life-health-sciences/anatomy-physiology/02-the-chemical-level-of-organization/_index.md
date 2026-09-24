@@ -5,7 +5,7 @@ source_chapter: "2"
 weight: 2
 ---
 
-{{< mediafigure src="anatomy-physiology/200_DNA_Double_Helix-02" kind="photo" alt="A computer-generated three-dimensional model of a DNA molecule against a solid black background: a dense cluster of red, white, and blue spheres representing atoms, joined together and twisted into a tightly coiled spiral double helix, with two looser strands of spheres trailing away from the top and bottom of the coil." eager="true" >}}
+{{< mediafigure src="anatomy-physiology/200_DNA_Double_Helix-02" kind="photo" alt="A computer-generated space-filling model of a short stretch of DNA against a solid black background: red, white, blue, black, and orange spheres representing atoms, packed together and twisted into a compact double helix that runs diagonally across the frame." eager="true" >}}
 Human DNA is described as a double helix that resembles a molecular spiral staircase. In humans the DNA is organized into 46 chromosomes.
 {{< /mediafigure >}}
 

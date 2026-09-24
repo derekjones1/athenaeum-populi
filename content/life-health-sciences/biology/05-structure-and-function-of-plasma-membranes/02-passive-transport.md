@@ -26,7 +26,7 @@ The most direct forms of membrane transport are passive. **Passive transport** i
 
 Plasma membranes are asymmetric: the membrane's interior is not identical to its exterior. There is a considerable difference between the array of phospholipids and proteins between the two leaflets that form a membrane. On the membrane's interior, some proteins serve to anchor the membrane to cytoskeleton's fibers. There are peripheral proteins on the membrane's exterior that bind extracellular matrix elements. Carbohydrates, attached to lipids or proteins, are also on the plasma membrane's exterior surface. These carbohydrate complexes help the cell bind required substances in the extracellular fluid. This adds considerably to plasma membrane's selective nature (below).
 
-{{< mediafigure src="biology/Figure_05_02_01-8fd6" kind="diagram" eager="true" alt="A cross-section of the plasma membrane's phospholipid bilayer, showing that its two faces carry different components: glycoproteins, a carbohydrate chain, and glycolipids project from the outer, extracellular leaflet, while cholesterol sits within the bilayer, integral proteins span its full thickness, and a peripheral protein rests against the inner, cytoplasmic face, which is threaded by cytoskeletal fibers." longdesc="A cutaway drawing of the phospholipid bilayer as two rows of ball-and-tail lipid molecules. On the outer, extracellular surface: a glycoprotein (a branched green carbohydrate chain on a blue oval base) sits at upper left, a carbohydrate chain (the same green branched shape, without a protein base) sits at upper right, and two glycolipids — branched green chains attached directly to lipid tails — project from the bilayer near the middle. Rounded blue integral proteins span the full thickness of the bilayer at several points; a smaller blue peripheral protein sits only against the inner leaflet. Small orange discs labeled cholesterol are wedged among the phospholipid tails toward the left. Below the bilayer's inner, cytoplasmic face, a mesh of thin gold fibers — the cytoskeleton — radiates downward and out of frame, anchoring the membrane from inside the cell." >}}
+{{< mediafigure src="biology/Figure_05_02_01-8fd6" kind="diagram" eager="true" alt="A cross-section of the plasma membrane's phospholipid bilayer, showing that its two faces carry different components: glycoproteins, a carbohydrate chain, and glycolipids project from the outer, extracellular leaflet, while cholesterol sits within the bilayer, integral proteins span its full thickness, and a peripheral protein rests against the inner, cytoplasmic face, which is threaded by cytoskeletal fibers." longdesc="A cutaway drawing of the phospholipid bilayer as two rows of ball-and-tail lipid molecules. On the outer, extracellular surface: a glycoprotein (a branched green carbohydrate chain on a blue dome-shaped protein) sits at upper left, a carbohydrate chain (the same green branched shape) sits on a cluster of blue proteins at upper right, and two glycolipids — short, unbranched chains of green hexagons set diagonally into the outer layer of lipids — sit one at the left and one right of center. Rounded blue integral proteins span the full thickness of the bilayer at several points; a smaller blue peripheral protein sits only against the inner leaflet. Small orange discs labeled cholesterol are wedged among the phospholipid tails toward the left. Below the bilayer's inner, cytoplasmic face, a mesh of thin gold fibers — the cytoskeleton — radiates downward and out of frame, anchoring the membrane from inside the cell." >}}
 The plasma membrane's exterior surface is not identical to its interior surface. Credit: Rao, A., Ryan, K., Fletcher, S., Hawkins, A. and Tag, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -78,7 +78,7 @@ Channel proteins are either open at all times or they are "gated," which control
 
 Another type of protein embedded in the plasma membrane is a **carrier protein**. This aptly named protein binds a substance and, thus triggers a change of its own shape, moving the bound molecule from the cell's outside to its interior (below); depending on the gradient, the material may move in the opposite direction. Carrier proteins are typically specific for a single substance. This selectivity adds to the plasma membrane's overall selectivity. Scientists poorly understand the exact mechanism for the change of shape. Proteins can change shape when their hydrogen bonds are affected, but this may not fully explain this mechanism. Each carrier protein is specific to one substance, and there are a finite number of these proteins in any membrane. This can cause problems in transporting enough material for the cell to function properly. When all of the proteins are bound to their ligands, they are saturated and the rate of transport is at its maximum. Increasing the concentration gradient at this point will not result in an increased transport rate.
 
-{{< mediafigure src="biology/Figure_05_02_05-71ff" kind="diagram" alt="A diagram titled Carrier Protein showing the same purple carrier protein in three sequential positions across the membrane: first with its hydrophilic pocket open to the extracellular fluid and three orange particles entering it, then mid conformational change, and finally with the pocket open to the cytoplasm, releasing the three particles inside the cell." longdesc="Three drawings of one purple carrier protein embedded in the phospholipid bilayer, read left to right as a single sequence linked by curved white arrows and labeled Conformational Change. Left: the protein's hydrophilic pocket opens toward the extracellular fluid at upper left, where three orange particles are entering it. Middle: the protein has begun to change shape, its pocket half-turned, still holding the three particles. Right: the pocket now opens toward the cytoplasm at lower right, releasing the three particles into the cell's interior." >}}
+{{< mediafigure src="biology/Figure_05_02_05-71ff" kind="diagram" alt="A diagram titled Carrier Protein showing the same purple carrier protein in three sequential positions across the membrane: first with its hydrophilic pocket open to the extracellular fluid and holding three orange particles from the cluster outside, then mid conformational change, and finally with the pocket open to the cytoplasm, releasing the three particles inside the cell." longdesc="Three drawings of one purple carrier protein embedded in the phospholipid bilayer, read left to right as a single sequence, with Conformational Change printed above the middle drawing. Left: the protein's hydrophilic pocket, labeled Hydrophilic Pocket, opens toward the extracellular fluid at upper left, where about ten orange particles cluster; a curved white arrow runs from the cluster down into the pocket, which holds three particles. A long, straight white arrow then runs from the left protein through the middle protein to the right one. Middle: the protein has begun to change shape, its pocket half-turned, still holding the three particles. Right: the pocket now opens toward the cytoplasm at lower right, and a curved white arrow leads from it down to three particles released into the cell's interior." >}}
 Some substances are able to move down their concentration gradient across the plasma membrane with the aid of carrier proteins. Carrier proteins change shape as they move molecules across the membrane. Credit: Rao, A., Tag, A. and Fletcher, S. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -122,7 +122,7 @@ In an **isotonic** solution, the extracellular fluid has the same osmolarity as 
 Three different scenarios involving red blood cells (RBC) are shown. Left: A RBC placed in a hypotonic solution, where the concentration of solutes in the surrounding fluid is lower than those in the cell, will cause water to rush into the RBC and lead to lysis of the cell. Middle: there is no net water movement into or out of the cell as the concentration of the solutes inside the cell equal or is isotonic to that of the surrounding fluid. Right: a RBC placed in a hypertonic solution, where the concentration of solutes in the surrounding fluid is greater than that in the cell will cause water to rush out of the cell and into the surrounding fluid. This will cause the RBC to shrivel. Credit: Tag, A., Rao, A., Hawkins, A and Fletcher, S. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
-{{< selfcheck question="A doctor injects a patient with what the doctor thinks is an isotonic saline solution. The patient dies, and an autopsy reveals that many red blood cells have been destroyed. Do you think the solution the doctor injected was really isotonic?" hint="Compare the solution's osmolarity to that of the red blood cells' cytoplasm — which direction would water move if the solution were not truly isotonic?" >}}
+{{< selfcheck question="A doctor injects a patient with what the doctor thinks is an isotonic saline solution. The patient dies, and an autopsy reveals that many red blood cells have been destroyed. Do you think the solution the doctor injected was really isotonic?" hint="Reread the three subsections under Tonicity and study the red-blood-cell figure above." >}}
 No, it must have been hypotonic, as a hypotonic solution would cause water to enter the cells, thereby making them burst.
 ===CHECKS===
 no, it must have been hypotonic
@@ -144,7 +144,7 @@ In contrast, when excessive water amounts leave a red blood cell, the cell shrin
 
 Various living things have ways of controlling the effects of osmosis—a mechanism we call osmoregulation. Some organisms, such as plants, fungi, bacteria, and some protists, have cell walls that surround the plasma membrane and prevent cell lysis in a hypotonic solution. The plasma membrane can only expand to the cell wall's limit, so the cell will not lyse. The cytoplasm in plants is always slightly hypertonic to the cellular environment, and water will always enter a cell if water is available. This water inflow produces turgor pressure, which stiffens the plant's cell walls (below). In nonwoody plants, turgor pressure supports the plant. Conversely, if you do not water the plant, the extracellular fluid will become hypertonic, causing water to leave the cell. In this condition, the cell does not shrink because the cell wall is not flexible. However, the cell membrane detaches from the wall and constricts the cytoplasm. We call this **plasmolysis**. Plants lose turgor pressure in this condition and wilt (below).
 
-{{< mediafigure src="biology/Figure_05_02_08-2288" kind="diagram" alt="Three small schematic plant cells, each with a thick black cell wall, a yellow-green cytoplasm layer, and a blue central vacuole, showing the vacuole's size and the direction of water (H₂O) movement under three conditions: in a hypertonic condition the vacuole has shrunk away from the wall with water leaving; in an isotonic condition the vacuole and cytoplasm are unchanged in size with water moving both in and out; in a hypotonic condition the vacuole has swollen to fill the cell, pressing the cytoplasm against the wall, with water moving in." longdesc="Three labeled cell diagrams in a row, each a black-outlined rectangle (the rigid cell wall) containing a pale yellow-green cytoplasm layer and a blue oval vacuole. Left, Hypertonic condition: the vacuole is small and pulled away from the wall on all sides; two green arrows point outward through the wall, labeled H₂O, showing water leaving the cell. Middle, Isotonic condition: the vacuole fills most of the cell interior with a thin cytoplasm layer still visible at the corners; one yellow arrow points in and one points out, both labeled H₂O, showing water moving both ways. Right, Hypotonic condition: the vacuole, labeled Vacuole, has swollen to press the thin cytoplasm layer directly against the cell wall; a single wide yellow arrow labeled H₂O points inward, showing net water entry." >}}
+{{< mediafigure src="biology/Figure_05_02_08-2288" kind="diagram" alt="Three small schematic plant cells, each with a thick black cell wall, a yellow-green cytoplasm layer, and a blue central vacuole, showing the vacuole's size and the direction of water (H₂O) movement under three conditions: in a hypertonic condition the vacuole and cytoplasm have shrunk away from the wall with water leaving; in an isotonic condition the cytoplasm has pulled slightly away from the wall on one side, with water moving both in and out; in a hypotonic condition the vacuole has swollen to fill the cell, pressing the cytoplasm against the wall, with water moving in." longdesc="Three labeled cell diagrams in a row, each a black-outlined rectangle (the rigid cell wall) containing a pale yellow-green cytoplasm layer and a blue oval vacuole. Left, Hypertonic condition: the vacuole is a small crescent, and the cytoplasm has shrunk into a thin, irregular, star-shaped mass pulled away from the wall on all sides, still tied to it by thin strands; two green arrows curve outward through the wall on the left, beside the label H₂O, showing water leaving the cell. Middle, Isotonic condition: a medium-sized vacuole, labeled H₂O inside, sits in a cytoplasm that fills the cell except along the left side, where it has pulled slightly away from the wall; one yellow arrow points in at the upper left and one green arrow points out at the lower left, beside the label H₂O, showing water moving both ways. Right, Hypotonic condition: the vacuole, labeled Vacuole and H₂O, has swollen to fill most of the cell, and the cytoplasm is pressed against the cell wall all around; two yellow arrows beside the label H₂O point inward, showing water entering." >}}
 The turgor pressure within a plant cell depends on the solution's tonicity in which it is bathed. (credit: modification of work by Mariana Ruiz Villareal)
 {{< /mediafigure >}}
 
@@ -195,7 +195,7 @@ In living systems, the plasma membrane mediates substances diffusing in and out 
 {{< multiplechoice
   question="The principal force driving movement in diffusion is the __________."
   answer="concentration gradient"
-  hint="Substances move from where they are more crowded to where they are less crowded."
+  hint="Reread the opening paragraph of Diffusion."
 >}}
 temperature
 particle size
@@ -203,10 +203,16 @@ concentration gradient
 membrane surface area
 {{< /multiplechoice >}}
 
+{{< textin
+  question="The general, energy-free method by which materials move across a membrane from an area of higher concentration to an area of lower concentration is called ________."
+  answer="passive transport"
+  hint="Reread the section's second introductory paragraph."
+>}}
+
 {{< multiplechoice
   question="In which situation would passive transport NOT use a transport protein for entry into a cell?"
   answer="oxygen moving into a cell after oxygen deprivation"
-  hint="Ask which of these substances is small, uncharged, and lipid-soluble enough to slip through the bilayer's hydrophobic core unassisted."
+  hint="Reread the paragraph that follows the membrane cross-section figure."
 >}}
 water flowing into a hypertonic environment
 glucose being absorbed from the blood
@@ -215,16 +221,10 @@ oxygen moving into a cell after oxygen deprivation
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The general, energy-free method by which materials move across a membrane from an area of higher concentration to an area of lower concentration is called ________."
-  answer="passive transport"
-  hint="Diffusion, facilitated transport, and osmosis are all examples of this mode of crossing the membrane."
->}}
-
-{{< textin
   question="When material crosses the plasma membrane down its concentration gradient with the assistance of a membrane protein, rather than through the lipid bilayer directly, the process is called ________."
   answer="facilitated transport"
   accept="facilitated diffusion"
-  hint="Channel and carrier proteins both carry out this form of passive transport."
+  hint="Reread the paragraph that follows the filtration paragraph."
 >}}
 
 ### Understand the osmosis and diffusion processes
@@ -232,7 +232,7 @@ oxygen moving into a cell after oxygen deprivation
 {{< multiplechoice
   question="Water moves via osmosis _________."
   answer="from an area with a high concentration of water to one of lower concentration"
-  hint="Osmosis is a special case of diffusion — think about which substance's own concentration gradient is doing the moving."
+  hint="Reread the Mechanism subsection."
 >}}
 throughout the cytoplasm
 from an area with a high concentration of other solutes to a lower one
@@ -240,7 +240,7 @@ from an area with a high concentration of water to one of lower concentration
 from an area with a low concentration of water to higher concentration
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Which explanation identifies how the following affect the rate of diffusion: molecular size, temperature, solution density, and the distance that must be traveled?" hint="Work through each factor in turn and ask whether it speeds molecules up, slows them down, or lengthens their path." >}}
+{{< selfcheck question="Which explanation identifies how the following affect the rate of diffusion: molecular size, temperature, solution density, and the distance that must be traveled?" hint="Reread the list in Factors That Affect Diffusion." >}}
 Heavy molecules move more slowly than lighter ones, since it takes more energy in the medium to move them along. Increasing or decreasing temperature increases or decreases the energy in the medium, affecting molecular movement. The denser a solution is, the harder it is for molecules to move through it, causing diffusion to slow down due to friction. Living cells require a steady supply of nutrients and a steady rate of waste removal; if the distance these substances need to travel is too great, diffusion cannot move nutrients and waste materials efficiently to sustain life.
 ===CHECKS===
 heavy molecules move more slowly than lighter ones
@@ -249,7 +249,7 @@ the denser a solution is, the harder it is for molecules to move through it
 if the distance these substances need to travel is too great, diffusion cannot move nutrients and waste materials efficiently
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why does water move through a membrane?" hint="Think about what osmosis is a special case of, and what the solute in the system is unable to do." >}}
+{{< selfcheck question="Why does water move through a membrane?" hint="Reread the beaker example in the Mechanism subsection." >}}
 Water moves through a membrane in osmosis because there is a concentration gradient across the membrane of solute and solvent. The solute cannot effectively move to balance the concentration on both sides of the membrane, so water moves to achieve this balance.
 ===CHECKS===
 there is a concentration gradient across the membrane of solute and solvent
@@ -257,7 +257,7 @@ the solute cannot effectively move to balance the concentration on both sides of
 water moves to achieve this balance
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe two ways that decreasing temperature would affect the rate of diffusion of molecules across a cell's plasma membrane." hint="Consider the kinetic energy of the diffusing molecules themselves, and separately, the state of the membrane they are diffusing through." >}}
+{{< selfcheck question="Describe two ways that decreasing temperature would affect the rate of diffusion of molecules across a cell's plasma membrane." hint="Reread the temperature and solvent-density entries in Factors That Affect Diffusion." >}}
 Decreasing temperature will decrease the kinetic energy in the system. A lower temperature means less energy in the molecules, so they will move at a slower speed. Lowering temperature also decreases the kinetic energy of the molecules in the plasma membrane, compressing them together. This increases the density of the plasma membrane, which slows diffusion into the cell.
 ===CHECKS===
 decreasing temperature will decrease the kinetic energy in the system
@@ -269,7 +269,7 @@ this increases the density of the plasma membrane, which slows diffusion into th
 {{< textin
   question="The movement of water molecules through a semipermeable membrane along the water's own concentration gradient — driven by a solute that cannot itself cross the membrane — is called ________."
   answer="osmosis"
-  hint="This process is a special case of diffusion that moves only water, never the solute."
+  hint="Reread the opening paragraph of the section's fourth main heading."
 >}}
 
 ### Define tonicity and its relevance to passive transport
@@ -277,7 +277,7 @@ this increases the density of the plasma membrane, which slows diffusion into th
 {{< multiplechoice
   question="What problem is faced by organisms that live in fresh water?"
   answer="Their bodies tend to take in too much water."
-  hint="Compare the osmolarity of fresh water to the osmolarity of the organism's own cells."
+  hint="Reread the paragraph on fish in Tonicity in Living Systems."
 >}}
 Their bodies tend to take in too much water.
 They have no way of controlling their tonicity.
@@ -285,14 +285,20 @@ Only salt water poses problems for animals that live in it.
 Their bodies tend to lose too much water to their environment.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Both of the regular intravenous solutions administered in medicine, normal saline and lactated Ringer's solution, are isotonic. Why is this important?" hint="Think about what would happen to the osmotic balance of a patient's blood and tissues if the injected fluid were not isotonic." >}}
+{{< selfcheck question="Both of the regular intravenous solutions administered in medicine, normal saline and lactated Ringer's solution, are isotonic. Why is this important?" hint="Reread the opening paragraph of the section's last main heading." >}}
 Injection of isotonic solutions ensures that there will be no perturbation of the osmotic balance, and no water taken from tissues or added to them from the blood.
 ===CHECKS===
 injection of isotonic solutions ensures that there will be no perturbation of the osmotic balance
 no water taken from tissues or added to them from the blood
 {{< /selfcheck >}}
 
-{{< selfcheck question="A cell develops a mutation in its potassium channels that prevents the ions from leaving the cell. If the cell's aquaporins are still active, what will happen to the cell? Be sure to describe the tonicity and osmolarity of the cell." hint="Work out what happens to the cell's own osmolarity first, then ask which way water will move relative to the extracellular fluid." >}}
+{{< textin
+  question="The property of an extracellular solution that describes how it can change a cell's volume by affecting osmosis is called its ________."
+  answer="tonicity"
+  hint="Reread the opening paragraph of the section's fifth main heading."
+>}}
+
+{{< selfcheck question="A cell develops a mutation in its potassium channels that prevents the ions from leaving the cell. If the cell's aquaporins are still active, what will happen to the cell? Be sure to describe the tonicity and osmolarity of the cell." hint="Reread the Tonicity paragraph on osmolarity and the Channels subsection on aquaporins." >}}
 Without functional potassium channels, the potassium ions that are pumped into the cell will accumulate. This increases the osmolarity inside the cell, creating a hypotonic solution. Since the plasma membrane is still selectively permeable to water by the aquaporins, water will flow into the cell. If the potassium concentration is high enough, enough water will eventually flow into the cell to lyse it.
 ===CHECKS===
 the potassium ions that are pumped into the cell will accumulate
@@ -302,21 +308,15 @@ enough water will eventually flow into the cell to lyse it
 {{< /selfcheck >}}
 
 {{< textin
-  question="The property of an extracellular solution that describes how it can change a cell's volume by affecting osmosis is called its ________."
-  answer="tonicity"
-  hint="Hypotonic, isotonic, and hypertonic are the three terms used to describe it."
->}}
-
-{{< textin
   question="A solution whose osmolarity is lower than the cell's cytoplasm, causing water to enter the cell, is called ________ relative to the cell."
   answer="hypotonic"
-  hint="The prefix means \"under\" — picture a cell swelling as water flows in down its concentration gradient."
+  hint="Reread the first subsection under Tonicity."
 >}}
 
 {{< textin
   question="A solution whose osmolarity matches the cell's exactly, so there is no net movement of water into or out of the cell, is called ________ relative to the cell."
   answer="isotonic"
-  hint="A red blood cell keeps its normal disc shape in this kind of solution."
+  hint="Reread the third subsection under the section's fifth main heading."
 >}}
 
 ---

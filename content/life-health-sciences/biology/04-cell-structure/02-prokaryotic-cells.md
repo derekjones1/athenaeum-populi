@@ -45,7 +45,7 @@ Environmental microbiologists may look for new ways to use specially selected or
 
 At 0.1 to 5.0 µm in diameter, prokaryotic cells are significantly smaller than eukaryotic cells, which have diameters ranging from 10 to 100 µm. The prokaryotes' small size allows ions and organic molecules that enter them to quickly diffuse to other parts of the cell. Similarly, any wastes produced within a prokaryotic cell can quickly diffuse. This is not the case in eukaryotic cells, which have developed different structural adaptations to enhance intracellular transport.
 
-{{< mediafigure src="biology/Figure_04_02_02" kind="diagram" alt="A logarithmic size-scale diagram comparing objects from atoms to a human, spanning 0.1 nanometers to 1 meter, with brackets showing the size ranges visible by electron microscope, light microscope, and naked eye." longdesc="A horizontal logarithmic scale runs from 0.1 nm to 1 m, marked at each power-of-ten tick: 0.1 nm, 1 nm, 10 nm, 100 nm, 1 µm, 10 µm, 100 µm, 1 mm, 10 mm, 100 mm, and 1 m. Above the scale, objects are placed at their approximate size, smallest to largest: an atom, about 0.1 nm; lipids and proteins, 1–10 nm; a flu virus, just under 100 nm; bacteria and a mitochondrion, about 1 µm; a plant cell and an animal cell, 10–100 µm; a human egg, 100 µm–1 mm; a frog egg, about 1 mm; a chicken egg and a larger ostrich egg, 10–100 mm; and an adult human, about 1 m. Below the scale, three overlapping brackets mark which instrument can resolve each size range: an electron microscope, from below 0.1 nm to almost 100 µm; a light microscope, from 100 nm to just over 1 mm; and the naked eye, from 100 µm upward." >}}
+{{< mediafigure src="biology/Figure_04_02_02" kind="diagram" alt="A logarithmic size-scale diagram comparing objects from atoms to a human, spanning 0.1 nanometers to 1 meter, with brackets showing the size ranges visible by electron microscope, light microscope, and naked eye." longdesc="A horizontal logarithmic scale runs from 0.1 nm to 1 m, marked at each power-of-ten tick: 0.1 nm, 1 nm, 10 nm, 100 nm, 1 µm, 10 µm, 100 µm, 1 mm, 10 mm, 100 mm, and 1 m. Above the scale, objects are placed at their approximate size, smallest to largest: an atom, about 0.1 nm; lipids and proteins, 1–10 nm; a flu virus, just under 100 nm; bacteria and a mitochondrion, about 1 µm; a plant cell and an animal cell, 10–100 µm; a human egg, 100 µm–1 mm; a frog egg, about 1 mm; a chicken egg and a larger ostrich egg, 10–100 mm; and an adult male, about 1 m. Below the scale, three overlapping brackets mark which instrument can resolve each size range: an electron microscope, from below 0.1 nm to about halfway between 10 µm and 100 µm; a light microscope, from 100 nm to just over 1 mm; and the naked eye, from 100 µm upward." >}}
 This figure shows relative sizes of microbes on a logarithmic scale (recall that each unit of increase in a logarithmic scale represents a 10-fold increase in the quantity measured).
 {{< /mediafigure >}}
 
@@ -55,7 +55,7 @@ Small size, in general, is necessary for all cells, whether prokaryotic or eukar
 Notice that as a cell increases in size, its surface area-to-volume ratio decreases. When there is insufficient surface area to support a cell's increasing volume, a cell will either divide or die. The cube-like cell on the left has a volume of 1 mm³ and a surface area of 6 mm², with a surface area-to-volume ratio of 6 to 1; whereas, the cube-like cell on the right has a volume of 8 mm³ and a surface area of 24 mm², with a surface area-to-volume ratio of 3 to 1.
 {{< /mediafigure >}}
 
-{{< selfcheck question="What advantages might small cell size confer on a cell?" hint="Think about how far a molecule has to travel to reach every part of the cytoplasm, and how that distance changes as a cell grows." >}}
+{{< selfcheck question="What advantages might small cell size confer on a cell?" hint="Reread the first paragraph of Cell Size." >}}
 Substances can diffuse more quickly through small cells. Small cells have no need for organelles and therefore do not need to expend energy getting substances across organelle membranes.
 ===CHECKS===
 substances can diffuse more quickly through small cells
@@ -81,7 +81,7 @@ As a cell increases in size, its surface area-to-volume ratio decreases. If the 
 {{< multiplechoice
   question="Which of the following organisms is a prokaryote?"
   answer="E. coli"
-  hint="Prokaryotes are simple, unicellular organisms with no nucleus — the other three options are a eukaryotic protist, a virus (not a cell at all), and a eukaryotic alga."
+  hint="Reread the section's opening paragraph."
 >}}
 amoeba
 influenza A virus
@@ -96,7 +96,7 @@ E. coli
   hint="The section's summary names the two domains that make up all prokaryotes."
 >}}
 
-{{< selfcheck question="Explain why not all microbes are harmful." hint="Think about the microbiologist connection above — many microbes work with us instead of causing disease." >}}
+{{< selfcheck question="Explain why not all microbes are harmful." hint="Reread the second paragraph of the Career Connection." >}}
 Some microbes are beneficial. For instance, *E. coli* bacteria populate the human gut and help break down fiber in the diet. Some foods, such as yogurt, are formed by bacteria.
 ===CHECKS===
 some microbes are beneficial
@@ -109,7 +109,7 @@ some foods, such as yogurt, are formed by bacteria
 {{< multiplechoice
   question="Bacteria that lack fimbriae are less likely to ________."
   answer="adhere to cell surfaces"
-  hint="Fimbriae are the short, hair-like structures a bacterium uses to attach to a surface or a host cell."
+  hint="Reread the paragraph after the prokaryotic cell figure."
 >}}
 adhere to cell surfaces
 swim through bodily fluids
@@ -120,10 +120,10 @@ retain the ability to divide
 {{< textin
   question="All prokaryotes have plasma membranes, cytoplasm, ribosomes, and DNA that is ________."
   answer="not membrane-bound"
-  hint="This is the key structural feature that separates prokaryotic DNA from a eukaryotic cell's DNA."
+  hint="Reread the section summary's second sentence."
 >}}
 
-{{< selfcheck question="Antibiotics are medicines that are used to fight bacterial infections. These medicines kill prokaryotic cells without harming human cells. What part or parts of the bacterial cell do you think antibiotics target? Why?" hint="Think about which structure bacterial cells have that human cells lack entirely." >}}
+{{< selfcheck question="Antibiotics are medicines that are used to fight bacterial infections. These medicines kill prokaryotic cells without harming human cells. What part or parts of the bacterial cell do you think antibiotics target? Why?" hint="Reread the paragraph after the prokaryotic cell figure." >}}
 The cell wall would be targeted by antibiotics, as well as the bacteria's ability to replicate. This would inhibit the bacteria's ability to reproduce, and it would compromise its defense mechanisms.
 ===CHECKS===
 the cell wall would be targeted by antibiotics
@@ -134,31 +134,41 @@ compromise its defense mechanisms
 
 ### Describe the relative sizes of different cells
 
-{{< textin
-  question="A unicellular organism that lacks a nucleus or any other membrane-bound organelle is called a(n) ________."
-  answer="prokaryote"
-  hint="Bacteria and Archaea are the two domains classified this way, and both are far smaller than a typical eukaryotic cell."
+{{< multiplechoice
+  question="In the logarithmic size-scale figure above, which of these is drawn at about the same size as bacteria?"
+  answer="mitochondria"
+  hint="Find bacteria on the size-scale figure in Cell Size and look along the same tick."
 >}}
+flu virus
+mitochondria
+animal cell
+frog egg
+{{< /multiplechoice >}}
 
 {{< textin
   question="The central region of a prokaryotic cell where its chromosome is located is called the ________."
   answer="nucleoid"
   accept="nucleoid region"
-  hint="Unlike a eukaryotic nucleus, this region has no surrounding membrane."
+  hint="Reread the paragraph just before the prokaryotic cell figure."
 >}}
 
-{{< textin
+{{< multiplechoice
   question="Prokaryotic cells range in diameter from 0.1 to ________."
   answer="5.0 µm"
-  hint="The section's summary gives this as the upper end of the prokaryotic size range."
+  hint="Reread the first paragraph of Cell Size."
 >}}
+1.0 µm
+5.0 µm
+10 µm
+100 µm
+{{< /multiplechoice >}}
 
 ### Explain why cells must be small
 
 {{< multiplechoice
   question="Prokaryotes depend on ________ to obtain some materials and to get rid of wastes."
   answer="diffusion"
-  hint="Their small size means a molecule needs only a short distance to travel between the plasma membrane and any point in the cytoplasm."
+  hint="Reread the first paragraph of Cell Size."
 >}}
 ribosomes
 flagella
@@ -169,7 +179,7 @@ diffusion
 {{< multiplechoice
   question="As a cell increases in size, its surface area-to-volume ratio ________."
   answer="decreases"
-  hint="Surface area grows with the square of the radius while volume grows with the cube, so one falls behind the other as a cell gets bigger."
+  hint="Reread the paragraph after the size-scale figure."
 >}}
 remains constant
 decreases
@@ -177,7 +187,7 @@ doubles
 increases
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What advantages might large cell size have?" hint="Large cells can afford something small cells cannot — think about what that makes possible." >}}
+{{< selfcheck question="What advantages might large cell size have?" hint="Reread the end of the paragraph after the size-scale figure." >}}
 Large cells have organelles that can separate cellular processes, enabling them to build molecules that are more complex.
 ===CHECKS===
 large cells have organelles that can separate cellular processes
@@ -186,4 +196,4 @@ build molecules that are more complex
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 4.2: Prokaryotic Cells](https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the generalized prokaryotic-cell diagram re-kinded from the manifest's file-extension guess of "photo" to "diagram" (it is a labeled line drawing, not a photograph), and given a longer extended description walking its eight labels, since a labeled diagram's full reading is not carried by its caption; the size-comparison scale figure's over-long source alt was shortened to what the image shows, with its full object-by-object and instrument-bracket walk-through moved into an extended description; the cube-and-sphere comparison figure's alt expanded from the source's wording (the same sphere shown in a 1 mm box and a 2 mm box) to name the drawn colours and the printed dimensions; the surface-area and volume formulas set in KaTeX rather than as printed running text; the Visual Connection question and its two-part answer split across its two questions — "what advantages might small cell size confer" kept in the body immediately after its figure as a self-check, and "what advantages might large cell size have" placed in the closing Practice block under the objective it argues, since the source pairs one compound solution with two distinct questions; feature boxes (one Career Connection) rendered as a callout with its bold name; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); the "nucleoid" glossary definition's duplicated "central part … central part" phrasing cleaned to "the central region … where the chromosome is located," reported as a source defect; and two key-term recall items (prokaryote, nucleoid) added from the glossary, since the module's own exercise sets do not otherwise cover the relative-sizes objective; rubric checkpoints added to each self-check (the body self-check on small cell size included), decomposing its model answer (the source solution) into check-off clauses with no new claims; and four summary-derived recall items added, one per objective, to raise every group to the raised floor ("Bacteria and Archaea," "not membrane-bound," "5.0 µm," and "decreases," each a cloze or multiple choice on a summary sentence the module's own exercises did not otherwise cover).</small>
+<small>This section is adapted from [Biology 2e, Section 4.2: Prokaryotic Cells](https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the generalized prokaryotic-cell diagram re-kinded from the manifest's file-extension guess of "photo" to "diagram" (it is a labeled line drawing, not a photograph), and given a longer extended description walking its eight labels, since a labeled diagram's full reading is not carried by its caption; the size-comparison scale figure's over-long source alt was shortened to what the image shows, with its full object-by-object and instrument-bracket walk-through moved into an extended description, where the source alt's claim that the electron microscope serves things up to "almost 100 µm" is corrected to where its drawn bracket ends, about halfway between 10 µm and 100 µm; the cube-and-sphere comparison figure's alt expanded from the source's wording (the same sphere shown in a 1 mm box and a 2 mm box) to name the drawn colours and the printed dimensions; the surface-area and volume formulas set in KaTeX rather than as printed running text; the Visual Connection question and its two-part answer split across its two questions — "what advantages might small cell size confer" kept in the body immediately after its figure as a self-check, and "what advantages might large cell size have" placed in the closing Practice block under the objective it argues, since the source pairs one compound solution with two distinct questions; feature boxes (one Career Connection) rendered as a callout with its bold name; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); the "nucleoid" glossary definition's duplicated "central part … central part" phrasing cleaned to "the central region … where the chromosome is located," reported as a source defect; and one key-term recall item (nucleoid) added from the glossary and one multiple choice read from the size-scale figure (what is drawn at about the size of bacteria), since the module's own exercise sets do not otherwise cover the relative-sizes objective; rubric checkpoints added to each self-check (the body self-check on small cell size included), decomposing its model answer (the source solution) into check-off clauses with no new claims; and four summary-derived recall items added, one per objective, to raise every group to the raised floor ("Bacteria and Archaea," "not membrane-bound," "5.0 µm," and "decreases," each a cloze or multiple choice on a summary sentence the module's own exercises did not otherwise cover); the "5.0 µm" item is a multiple choice rather than a text-entry cloze, because a numeric answer is never graded as typed text here, with distractors from the module's own eukaryotic range (10 and 100 µm) and the adjacent 1.0 µm.</small>

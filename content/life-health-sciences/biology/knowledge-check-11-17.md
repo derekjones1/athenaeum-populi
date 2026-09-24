@@ -33,8 +33,9 @@ kinetochore
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The formation of a close association between homologous chromosomes during prophase I is called ________."
-  answer="synapsis"
+  question="The brief period of rest between meiosis I and meiosis II is called ________."
+  answer="interkinesis"
+  accept="interphase II"
 >}}
 
 {{< selfcheck question="Why have biologists had difficulty testing hypotheses about how meiosis evolved from mitosis, and what four events did Wilkins and Holliday identify as necessary for that evolution?" >}}
@@ -51,12 +52,12 @@ these steps are homologous chromosome pairing and synapsis, crossover exchanges,
 {{< textin
   question="Early in embryonic development, specialized diploid cells that undergo mitosis to perpetuate their own line and meiosis to produce eggs or sperm are called ________."
   answer="germ cells"
-  accept="germ cell"
 >}}
 
 {{< textin
-  question="In asexually reproducing organisms, the only source of genetic variation is ________."
-  answer="mutation"
+  question="The Red Queen hypothesis, named for the Red Queen's race in Lewis Carroll's *Through the Looking-Glass*, was first proposed in 1973 by ________."
+  answer="Leigh Van Valen"
+  accept="Van Valen"
 >}}
 
 {{< selfcheck question="How do meiosis and fertilization together let a sexually reproducing organism alternate between haploid and diploid stages?" >}}
@@ -163,13 +164,13 @@ maternal and paternal alleles are combined onto the same chromosome
 Walter Sutton
 Theodor Boveri
 Alfred Sturtevant
-Eleanor Carothers
+Thomas Hunt Morgan
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Offspring whose allele combination differs from their parents', produced by crossing over during meiosis, are called a ________."
-  answer="nonparental type"
-  accept="recombinant type|nonparental (recombinant) type"
+  question="About ten years after the Chromosomal Theory of Inheritance was proposed, which scientist was the first to discover physical evidence supporting it, by observing independent chromosome assortment in grasshoppers?"
+  answer="Eleanor Carothers"
+  accept="Carothers"
 >}}
 
 {{< selfcheck question="Why did Mendel consistently observe independent assortment among the seven traits he studied in pea plants, even though homologous recombination is a common genetic process?" >}}
@@ -193,8 +194,9 @@ bright-field microscopy
 {{< /multiplechoice >}}
 
 {{< textin
-  question="An individual who has exactly the expected number of chromosomes for their species, such as 22 pairs of autosomes and one pair of sex chromosomes in humans, is called ________."
-  answer="euploid"
+  question="The detachment, 180° rotation, and reinsertion of part of a chromosome is called a(n) ________."
+  answer="chromosome inversion"
+  accept="inversion|chromosomal inversion"
 >}}
 
 {{< selfcheck question="What chromosomal change produces cri-du-chat syndrome, and what symptom gives the syndrome its name?" >}}
@@ -270,8 +272,8 @@ dispersive
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The single chromosome of a prokaryote or each chromosome of a eukaryote consists of a single continuous ________."
-  answer="double helix"
+  question="When DNA is spun in a salt gradient in an ultracentrifuge, it forms a band according to its ________, the density within the gradient at which it floats."
+  answer="buoyant density"
 >}}
 
 {{< selfcheck question="What did Watson and Crick's 1953 paper say the specific base pairing they had postulated immediately suggested?" >}}
@@ -309,7 +311,7 @@ each of which requires its own new primer to start synthesis
 ### 14.5 DNA Replication in Eukaryotes
 
 {{< multiplechoice
-  question="Which protein serves as the eukaryotic sliding clamp that holds DNA polymerase in place during replication?"
+  question="Which protein holds DNA polymerase in place on the DNA during eukaryotic replication?"
   answer="PCNA"
 >}}
 PCNA
@@ -339,8 +341,9 @@ helps to account for the lower replication rate in eukaryotes
 ### 14.6 DNA Repair
 
 {{< textin
-  question="A variation in the nucleotide sequence of a genome is called a ________."
-  answer="mutation"
+  question="When DNA is exposed to UV light, two adjacent bases can join to form a ________, damage that people with xeroderma pigmentosa are not able to repair."
+  answer="thymine dimer"
+  accept="pyrimidine dimer|dimer"
 >}}
 
 {{< multiplechoice
@@ -375,9 +378,9 @@ often represents the same amino acid as the original codon
 {{< /multiplechoice >}}
 
 {{< textin
-  question="In terms of RNA and protein, three \"units\" of RNA (nucleotides) specifying one \"unit\" of protein (amino acid) in a consecutive fashion is described as ________."
-  answer="colinear"
-  accept="collinear"
+  question="The flow of genetic information in cells from DNA to mRNA to protein is described by the ________."
+  answer="central dogma"
+  accept="central dogma of molecular biology"
 >}}
 
 {{< selfcheck question="Why is it considered powerful evidence for a single common origin of life that a horse-globin mRNA transferred into a tulip cell would be translated into horse globin?" >}}
@@ -454,7 +457,6 @@ GU
 {{< textin
   question="The RNA molecules that base-pair with a trypanosome pre-mRNA transcript and serve as the catalysts for RNA editing, rather than proteins, are called ________."
   answer="guide RNAs"
-  accept="guide RNA"
 >}}
 
 {{< selfcheck question="Describe how a mature tRNA's three-dimensional structure positions its two functional ends." >}}
@@ -496,9 +498,9 @@ the activated amino acid is then transferred to the tRNA, and AMP is released
 ### 16.1 Regulation of Gene Expression
 
 {{< textin
-  question="The final level of active protein in a cell depends not only on the rate of synthesis but also on the rate of ________ of mRNA and protein."
-  answer="degradation"
-  accept="breakdown|decay"
+  question="In eukaryotic cells, the processes of transcription and translation are physically separated by the ________."
+  answer="nuclear membrane"
+  accept="nuclear envelope"
 >}}
 
 {{< multiplechoice
@@ -579,7 +581,7 @@ which in turn modifies gene expression
 ### 16.4 Eukaryotic Transcription Gene Regulation
 
 {{< multiplechoice
-  question="The TATA box, located 25 to 35 bases upstream of the transcriptional start site, is the binding site for which protein complex?"
+  question="In eukaryotic transcription, the TATA box is the binding site for which protein complex, which contains a TATA-binding protein?"
   answer="TFIID"
 >}}
 TFIIB
@@ -605,7 +607,6 @@ they use that response to prevent the binding of activating transcription factor
 {{< textin
   question="Ribonucleoprotein complexes that recognize the two ends of an intron, cut the pre-mRNA transcript at those points, and bring the exons together for ligation are called ________."
   answer="spliceosomes"
-  accept="spliceosome"
 >}}
 
 {{< multiplechoice
@@ -639,7 +640,7 @@ the cap-binding protein eIF4F
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="What happens immediately after the anticodon of the initiator tRNA aligns with the start codon AUG during translation initiation?"
+  question="During eukaryotic translation initiation, the ribosome scans along the mRNA until it finds a start codon AUG. What happens once the tRNA's anticodon and the start codon are aligned?"
   answer="The GTP is hydrolyzed, the initiation factors are released, and the large 60S ribosomal subunit binds."
 >}}
 The GTP is hydrolyzed, the initiation factors are released, and the large 60S ribosomal subunit binds.
@@ -726,7 +727,7 @@ radiation hybrid mapping
 linkage analysis
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How do variable number of tandem repeats (VNTRs) and microsatellite polymorphisms differ as genetic markers?" >}}
+{{< selfcheck question="How do variable number of tandem repeats (VNTRs) and microsatellite polymorphisms differ from each other?" >}}
 VNTRs are repeated sets of nucleotides present in DNA's non-coding regions, and the number of repeats may vary in a population's individual organisms. Microsatellite polymorphisms are similar to VNTRs, but the repeat unit is very small.
 ===CHECKS===
 VNTRs are repeated sets of nucleotides present in DNA's non-coding regions
@@ -773,8 +774,8 @@ it is easier to reconstruct the sequence because there is more available informa
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Genomics is applied to developments such as generating new biofuels, ________ using mitochondria, advances in forensic science, and improvements in agriculture."
-  answer="genealogical assessment"
+  question="A phenotypic characteristic that involves two or more genes, as most common diseases such as heart disease do, is described as ________."
+  answer="polygenic"
 >}}
 
 {{< selfcheck question="How can a patient's genome sequence information help a doctor prescribe medication under pharmacogenomics?" >}}
@@ -806,8 +807,8 @@ transcription occurs only if the prey "catches" the bait
 {{< /selfcheck >}}
 
 {{< textin
-  question="Unlike a genome, a proteome is ________ and in constant flux, which makes it both more complicated and more useful than the knowledge of genomes alone."
-  answer="dynamic"
+  question="The entire set of proteins that a cell type produces is called its ________."
+  answer="proteome"
 >}}
 
 ---

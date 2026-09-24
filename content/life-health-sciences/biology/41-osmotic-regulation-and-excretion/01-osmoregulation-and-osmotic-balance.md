@@ -23,7 +23,7 @@ weight: 1
 
 Osmosis is the diffusion of water across a membrane in response to **osmotic pressure** caused by an imbalance of molecules on either side of the membrane. **Osmoregulation** is the process of maintenance of salt and water balance (**osmotic balance**) across membranes within the body's fluids, which are composed of water, plus electrolytes and non-electrolytes. An **electrolyte** is a solute that dissociates into ions when dissolved in water. A **non-electrolyte**, in contrast, doesn't dissociate into ions during water dissolution. Both electrolytes and non-electrolytes contribute to the osmotic balance. The body's fluids include blood plasma, the cytosol within cells, and interstitial fluid, the fluid that exists in the spaces between cells and tissues of the body. The membranes of the body (such as the pleural, serous, and cell membranes) are **semi-permeable membranes**. Semi-permeable membranes are permeable (or permissive) to certain types of solutes and water. Solutions on two sides of a semi-permeable membrane tend to equalize in solute concentration by movement of solutes and/or water across the membrane. As shown below, a cell placed in water tends to swell due to gain of water from the hypotonic or "low salt" environment. A cell placed in a solution with higher salt concentration, on the other hand, tends to make the membrane shrivel up due to loss of water into the hypertonic or "high salt" environment. Isotonic cells have an equal concentration of solutes inside and outside the cell; this equalizes the osmotic pressure on either side of the cell membrane which is a semi-permeable membrane.
 
-{{< mediafigure src="biology/Figure_B41_01_01" kind="diagram" eager="true" alt="Three circles are labeled Hypertonic solution, Isotonic solution, and Hypotonic solution, each holding a cluster of red blood cells: shriveled and irregular in the hypertonic circle, normally disc-shaped in the isotonic circle, and swollen and rounded (one cell bursting) in the hypotonic circle. Below each circle, a single cell has arrows showing the direction water moves across its membrane." longdesc="Three panels, left to right. Hypertonic solution: the circle holds a cluster of shriveled, spiky-edged red blood cells; below it, a single shriveled cell has two green arrows, both labeled H₂O, pointing away from the cell on either side — water leaving the cell. Isotonic solution: the circle holds a cluster of normally disc-shaped red blood cells; below it, a single round cell has a yellow arrow labeled H₂O entering from the top and a green arrow labeled H₂O leaving from the bottom — water entering and leaving in equal amounts. Hypotonic solution: the circle holds a cluster of swollen, rounded red blood cells, one of them bursting with dark fragments spraying from its edge; below it, a single swollen cell has two yellow arrows, both labeled H₂O, pointing into the cell on either side — water entering the cell." >}}
+{{< mediafigure src="biology/Figure_B41_01_01" kind="diagram" eager="true" alt="Three circles are labeled Hypertonic solution, Isotonic solution, and Hypotonic solution, each holding a cluster of red blood cells: shriveled and irregular in the hypertonic circle, normally disc-shaped in the isotonic circle, and swollen and rounded (one cell bursting) in the hypotonic circle. Below each circle, a single cell has arrows showing the direction water moves across its membrane." longdesc="Three panels, left to right. Hypertonic solution: the circle holds a cluster of shriveled, spiky-edged red blood cells; below it, a single shriveled cell has two green arrows, one above the other on its left side, both curving out of the cell and pointing left, with one H₂O label between them — water leaving the cell. Isotonic solution: the circle holds a cluster of normally disc-shaped red blood cells; below it, a single round cell has, on its left side, a yellow arrow entering at the upper left from an H₂O label outside the cell and a green arrow leaving at the lower left from an H₂O label inside the cell — water entering and leaving in equal amounts. Hypotonic solution: the circle holds a cluster of swollen, rounded red blood cells, one of them bursting with dark fragments spraying from its edge; below it, a single swollen cell has two yellow arrows, one above the other on its left side, both pointing into the cell, with H₂O printed inside the cell — water entering the cell." >}}
 Cells placed in a hypertonic environment tend to shrink due to loss of water. In a hypotonic environment, cells tend to swell due to intake of water. The blood maintains an isotonic environment so that cells neither shrink nor swell. (credit: Mariana Ruiz Villareal)
 {{< /mediafigure >}}
 
@@ -53,7 +53,7 @@ Thus, for ions that have a charge of one, one milliequivalent is equal to one mi
 
 Persons lost at sea without any freshwater to drink are at risk of severe dehydration because the human body cannot adapt to drinking seawater, which is hypertonic in comparison to body fluids. Organisms such as goldfish that can tolerate only a relatively narrow range of salinity are referred to as stenohaline. About 90 percent of all bony fish are restricted to either freshwater or seawater. They are incapable of osmotic regulation in the opposite environment. It is possible, however, for a few fishes like salmon to spend part of their life in freshwater and part in seawater. Organisms like the salmon and molly that can tolerate a relatively wide range of salinity are referred to as euryhaline organisms. This is possible because some fish have evolved **osmoregulatory** mechanisms to survive in all kinds of aquatic environments. When they live in freshwater, their bodies tend to take up water because the environment is relatively hypotonic, as shown below (a). In such hypotonic environments, these fish do not drink much water. Instead, they pass a lot of very dilute urine, and they achieve electrolyte balance by active transport of salts through the gills. When they move to a hypertonic marine environment, these fish start drinking seawater; they excrete the excess salts through their gills and their urine, as shown below (b). Most marine invertebrates, on the other hand, may be isotonic with seawater (**osmoconformers**). Their body fluid concentrations conform to changes in seawater concentration. Cartilaginous fishes' salt composition of the blood is similar to bony fishes; however, the blood of sharks contains the organic compounds urea and trimethylamine oxide (TMAO). This does not mean that their electrolyte composition is similar to that of seawater. They achieve isotonicity with the sea by storing large concentrations of urea. These animals that secrete urea are called ureotelic animals. TMAO stabilizes proteins in the presence of high urea levels, preventing the disruption of peptide bonds that would occur in other animals exposed to similar levels of urea. Sharks are cartilaginous fish with a rectal gland to secrete salt and assist in osmoregulation.
 
-{{< mediafigure src="biology/Figure_41_01_02ab" kind="diagram" alt="Illustration (a) shows a fish in a freshwater environment absorbing water through its skin; to compensate, it drinks little water, excretes dilute urine, and actively takes up sodium, potassium, and chloride ions through its gills to replace those lost through its skin. Illustration (b) shows a fish in a saltwater environment losing water through its skin; to compensate, it drinks ample water, excretes concentrated urine, and absorbs sodium, potassium, and chloride ions through its skin before excreting them through its gills." longdesc="Two illustrations of a trout-like fish stacked one above the other, each carrying printed labels; panel (a) draws a boxed legend at its lower right (blue arrow = movement of water, red arrow = movement of ions), and panel (b) instead labels its arrow colours in place near the tail (Direction of ion movement (Na⁺, K⁺, Cl⁻); Direction of water movement). Panel (a), captioned 'Osmoregulation in a freshwater environment': near the head, labeled 'Drinks little water' and 'Actively takes up ions through gills,' a blue arrow and a red arrow both point into the gill region. Along the back, under the label 'Absorbs water through skin,' four blue arrows point into the body, alternating with three red arrows pointing away from it. Near the tail, under the label 'Excretes dilute urine,' a large blue arrow and a smaller red arrow both point away from the body. Panel (b), captioned 'Osmoregulation in a saltwater environment': near the head, labeled 'Drinks ample water' and 'Excretes ions through gills,' a blue arrow and a red arrow point down from the gill region. Along the back, under the label 'Loses water through skin,' four blue arrows point away from the body, alternating with three red arrows pointing into it. Near the tail, labeled 'Direction of water movement' and 'Direction of ion movement (Na⁺,K⁺,Cl⁻),' a blue arrow and a larger red arrow (captioned 'Excretes concentrated urine') both point away from the body." >}}
+{{< mediafigure src="biology/Figure_41_01_02ab" kind="diagram" alt="Illustration (a) shows a fish in a freshwater environment absorbing water through its skin; to compensate, it drinks little water, excretes dilute urine, and actively takes up sodium, potassium, and chloride ions through its gills to replace those lost through its skin. Illustration (b) shows a fish in a saltwater environment losing water through its skin; to compensate, it drinks ample water, excretes concentrated urine, and absorbs sodium, potassium, and chloride ions through its skin before excreting them through its gills." longdesc="Two illustrations of a trout-like fish stacked one above the other, each carrying printed labels; panel (a) draws an unboxed legend at its lower right (blue arrow = movement of water, red arrow = movement of ions), and panel (b) instead labels its arrow colours in place beneath the rear of the body (Direction of ion movement (Na⁺, K⁺, Cl⁻); Direction of water movement). Panel (a), captioned 'Osmoregulation in a freshwater environment': near the head, labeled 'Drinks little water' and 'Actively takes up ions through gills,' a blue arrow and a red arrow both point into the gill region. Along the back, under the label 'Absorbs water through skin,' four blue arrows point into the body, alternating with three red arrows pointing away from it. Beneath the rear of the body, just ahead of the anal fin, above the label 'Excretes dilute urine,' a large blue arrow and a smaller red arrow both point away from the body. Panel (b), captioned 'Osmoregulation in a saltwater environment': near the head, labeled 'Drinks ample water' and 'Excretes ions through gills,' a blue arrow and a red arrow point down from the gill region. Along the back, under the label 'Loses water through skin,' four blue arrows point away from the body, alternating with three red arrows pointing into it. Beneath the rear of the body, labeled 'Direction of water movement' and 'Direction of ion movement (Na⁺,K⁺,Cl⁻),' a blue arrow and a larger red arrow (captioned 'Excretes concentrated urine') both point away from the body." >}}
 Fish are osmoregulators, but must use different mechanisms to survive in (a) freshwater or (b) saltwater environments. (credit: modification of work by Duane Raver, NOAA)
 {{< /mediafigure >}}
 
@@ -101,7 +101,7 @@ none of the above
 {{< textin
   question="The pressure exerted on a membrane to equalize solute concentration on either side is called ________."
   answer="osmotic pressure"
-  hint="It's the pressure osmosis itself creates — named for the process, not the membrane."
+  hint="Look at the first sentence after the learning objectives, where osmosis is defined."
 >}}
 
 {{< textin
@@ -116,13 +116,19 @@ none of the above
 {{< multiplechoice
   question="When dehydrated human patients need to be given fluids intravenously, they are given:"
   answer="saline at a concentration that is isotonic with respect to body fluids"
-  hint="The safest IV fluid keeps the tonicity outside the blood cells equal to the tonicity inside them — check which option describes exactly that relationship."
+  hint="Reread the caption of the three-panel tonicity figure at the start of the section."
 >}}
 water, which is hypotonic with respect to body fluids
 saline at a concentration that is isotonic with respect to body fluids
 glucose because it is a non-electrolyte
 blood
 {{< /multiplechoice >}}
+
+{{< textin
+  question="The balance of water and salt input and output that keeps a biological system's osmotic pressure and solute concentration steady is called ________."
+  answer="osmotic balance"
+  hint="Look in the second sentence after the learning objectives, in the parentheses."
+>}}
 
 {{< selfcheck question="Why is excretion important in order to achieve osmotic balance?" hint="Think about what would build up in the body, and what would happen to its water and solute levels, if nothing were ever excreted." >}}
 Excretion allows an organism to rid itself of waste molecules that could be toxic if allowed to accumulate. It also allows the organism to keep the amount of water and dissolved solutes in balance.
@@ -134,13 +140,7 @@ it allows the organism to keep the amount of water and dissolved solutes in bala
 {{< textin
   question="The mechanism by which water and solute concentrations are maintained at desired levels is called ________."
   answer="osmoregulation"
-  hint="This is the process the whole section is named for — maintaining balance, not the balance itself."
->}}
-
-{{< textin
-  question="The balance of water and salt input and output that keeps a biological system's osmotic pressure and solute concentration steady is called ________."
-  answer="osmotic balance"
-  hint="Osmoregulation is the process; this is the state that process achieves and maintains."
+  hint="Look in the first paragraph after the learning objectives."
 >}}
 
 ### Describe active transport mechanisms
@@ -148,7 +148,7 @@ it allows the organism to keep the amount of water and dissolved solutes in bala
 {{< multiplechoice
   question="The sodium ion is at the highest concentration in:"
   answer="extracellular fluid"
-  hint="The module names three fluid compartments in that same paragraph — pick the one that is not inside a cell and not confined to the vessels carrying blood."
+  hint="Reread the paragraph in Need for Osmoregulation that names the three major fluid compartments."
 >}}
 intracellular fluid
 extracellular fluid
@@ -164,16 +164,16 @@ active transport is the movement against a concentration gradient
 {{< /selfcheck >}}
 
 {{< textin
-  question="A solute that breaks down into ions when dissolved in water is called a(n) ________."
-  answer="electrolyte"
-  hint="Athletes are told to replace these, along with fluids, after heavy sweating."
->}}
-
-{{< textin
   question="A solute that does not break down into ions when dissolved in water is called a(n) ________."
   answer="non-electrolyte"
   accept="nonelectrolyte"
-  hint="Glucose is the module's own example of this kind of solute."
+  hint="Look in the first paragraph after the learning objectives, where the two kinds of solute in the body's fluids are defined."
+>}}
+
+{{< textin
+  question="A solute that breaks down into ions when dissolved in water is called a(n) ________."
+  answer="electrolyte"
+  hint="Athletes are told to replace these, along with fluids, after heavy sweating."
 >}}
 
 ### Explain osmolarity and the way in which it is measured
@@ -211,15 +211,15 @@ ureotelic animals
 {{< /multiplechoice >}}
 
 {{< textin
-  question="An organism that changes its tonicity based on its environment is called a(n) ________."
-  answer="osmoconformer"
-  hint="Most marine invertebrates fit this pattern, matching their body fluids to the surrounding seawater."
+  question="An organism that maintains its tonicity irrespective of its environment is called a(n) ________."
+  answer="osmoregulator"
+  hint="Look at the caption of the freshwater and saltwater fish illustration."
 >}}
 
 {{< textin
-  question="An organism that maintains its tonicity irrespective of its environment is called a(n) ________."
-  answer="osmoregulator"
-  hint="Euryhaline fish like the salmon use this strategy to survive in both freshwater and seawater."
+  question="An organism that changes its tonicity based on its environment is called a(n) ________."
+  answer="osmoconformer"
+  hint="Most marine invertebrates fit this pattern, matching their body fluids to the surrounding seawater."
 >}}
 
 ---

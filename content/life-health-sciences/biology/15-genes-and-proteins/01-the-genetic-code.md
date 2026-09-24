@@ -18,7 +18,7 @@ weight: 1
 
 The cellular process of transcription generates messenger RNA (mRNA), a mobile molecular copy of one or more genes with an alphabet of A, C, G, and uracil (U). Translation of the mRNA template on ribosomes converts nucleotide-based genetic information into a protein product. That is the central dogma of DNA-protein synthesis. Protein sequences consist of 20 commonly occurring amino acids; therefore, it can be said that the protein alphabet consists of 20 “letters” (shown in the figure below). Different amino acids have different chemistries (such as acidic versus basic, or polar and nonpolar) and different structural constraints. Variation in amino acid sequence is responsible for the enormous variation in protein structure and function.
 
-{{< mediafigure src="biology/Figure_15_01_01" alt="A chart titled 'Amino Acid' grouping the twenty standard amino acids by R-group chemistry: six nonpolar, aliphatic R groups (glycine, alanine, valine, leucine, methionine, isoleucine); six polar, uncharged R groups (serine, threonine, cysteine, proline, asparagine, glutamine); three positively charged R groups (lysine, arginine, histidine); two negatively charged R groups (aspartate, glutamate); and three nonpolar, aromatic R groups (phenylalanine, tyrosine, tryptophan). Every structure shares the same amino group and carboxyl group backbone, differing only in the blue-shaded R group." longdesc="Each of the twenty structures is drawn with the same vertical backbone — a carboxyl group (COO⁻) at top, a central carbon bonded to an amino group (H₃N⁺) at left, a hydrogen at right, and the shaded blue R group below. In the nonpolar, aliphatic panel (upper left), the R groups are plain carbon-hydrogen chains: glycine is a single H; alanine a CH₃; valine a branched CH bonded to two CH₃ groups; leucine a CH₂-CH branching into two CH₃ groups; methionine a CH₂-CH₂-S-CH₃ chain; isoleucine a branched CH-CH₃ chain continuing to CH₂-CH₃. In the polar, uncharged panel (lower left), each R group adds an oxygen, nitrogen, or sulfur: serine's is CH₂OH; threonine's a CH bonded to OH and CH₃; cysteine's CH₂-SH; proline's loops back to bond the backbone's own amino nitrogen, closing a five-membered ring; asparagine's and glutamine's end in an amide (C=O and NH₂) after one and two CH₂ groups. In the positively charged panel (upper right), each R group ends in a charged nitrogen: lysine's is four CH₂ groups ending in ⁺NH₃; arginine's three CH₂ groups end in a guanidinium group (NH–C(=NH₂⁺)–NH₂); histidine's one CH₂ ends in a five-membered ring bearing a positively charged nitrogen. In the negatively charged panel (middle right), aspartate's R group is one CH₂ ending in COO⁻, and glutamate's is two CH₂ groups ending in COO⁻. In the aromatic panel (lower right), each R group carries a ring: phenylalanine's CH₂ bonds to a benzene ring; tyrosine's CH₂ bonds to a benzene ring bearing a hydroxyl; tryptophan's CH₂ bonds to a bicyclic indole ring." kind="diagram" eager="true" >}}
+{{< mediafigure src="biology/Figure_15_01_01" alt="A chart titled 'Amino Acid' grouping the twenty standard amino acids by R-group chemistry: six nonpolar, aliphatic R groups (glycine, alanine, valine, leucine, methionine, isoleucine); six polar, uncharged R groups (serine, threonine, cysteine, proline, asparagine, glutamine); three positively charged R groups (lysine, arginine, histidine); two negatively charged R groups (aspartate, glutamate); and three nonpolar, aromatic R groups (phenylalanine, tyrosine, tryptophan). Every structure shares the same amino group and carboxyl group backbone, differing only in the blue-shaded R group." longdesc="Each of the twenty structures except proline is drawn with the same vertical backbone — a carboxyl group (COO⁻) at top, a central carbon bonded to an amino group (H₃N⁺) at left, a hydrogen at right, and the shaded blue R group below. In the nonpolar, aliphatic panel (upper left), the R groups are carbon-hydrogen chains, with methionine's also holding a sulfur: glycine is a single H; alanine a CH₃; valine a branched CH bonded to two CH₃ groups; leucine a CH₂-CH branching into two CH₃ groups; methionine a CH₂-CH₂-S-CH₃ chain; isoleucine a branched CH-CH₃ chain continuing to CH₂-CH₃. In the polar, uncharged panel (lower left), every R group but proline's adds an oxygen, nitrogen, or sulfur: serine's is CH₂OH; threonine's a CH bonded to OH and CH₃; cysteine's CH₂-SH; proline's three CH₂ groups loop back to bond the backbone's own amino nitrogen (drawn H₂N⁺), closing a five-membered ring; asparagine's and glutamine's end in an amide (C=O and NH₂) after one and two CH₂ groups. In the positively charged panel (upper right), each R group ends in a charged nitrogen: lysine's is four CH₂ groups ending in ⁺NH₃; arginine's three CH₂ groups end in a guanidinium group (NH–C(=NH₂⁺)–NH₂); histidine's one CH₂ ends in a five-membered ring bearing a positively charged nitrogen. In the negatively charged panel (middle right), aspartate's R group is one CH₂ ending in COO⁻, and glutamate's is two CH₂ groups ending in COO⁻. In the aromatic panel (lower right), each R group carries a ring: phenylalanine's CH₂ bonds to a benzene ring; tyrosine's CH₂ bonds to a benzene ring bearing a hydroxyl; tryptophan's CH₂ bonds to a bicyclic indole ring." kind="diagram" eager="true" >}}
 Structures of the 20 amino acids found in proteins are shown. Each amino acid is composed of an amino group (NH₃⁺), a carboxyl group (COO⁻), and a side chain (blue). The side chain may be nonpolar, polar, or charged, as well as large or small. It is the variety of amino acid side chains that gives rise to the incredible variation of protein structure and function.
 {{< /mediafigure >}}
 
@@ -26,7 +26,7 @@ Structures of the 20 amino acids found in proteins are shown. Each amino acid is
 
 The flow of genetic information in cells from DNA to mRNA to protein is described by the **central dogma**, which states that genes specify the sequence of mRNAs, which in turn specify the sequence of amino acids making up all proteins. The decoding of one molecule to another is performed by specific proteins and RNAs. Because the information stored in DNA is so central to cellular function, it makes intuitive sense that the cell would make mRNA copies of this information for protein synthesis, while keeping the DNA itself intact and protected. The copying of DNA to RNA is relatively straightforward, with one nucleotide being added to the mRNA strand for every nucleotide read in the DNA strand. The translation to protein is a bit more complex because three mRNA nucleotides correspond to one amino acid in the polypeptide sequence. However, the translation to protein is still systematic and **colinear**, such that nucleotides 1 to 3 correspond to amino acid 1, nucleotides 4 to 6 correspond to amino acid 2, and so on.
 
-{{< mediafigure src="biology/Figure_15_01_02" alt="A three-step flow chart: Transcription shows a DNA double helix opened inside an oval labeled RNA polymerase, generating a single RNA strand; RNA processing shows a primary RNA transcript of alternating exons and introns spliced into a shorter mature RNA with a capped 5′ end and a poly-A tail; Translation shows a ribosome reading the spliced mRNA codon by codon to string amino acids into a growing polypeptide chain." longdesc="Top, labeled Transcription: a double-stranded DNA helix, each strand labeled 5′ at one end and 3′ at the other, passes through an oval labeled RNA polymerase; a single RNA strand (labeled 5′ to 3′) peels away from the DNA inside the oval. Middle, labeled RNA processing: a bar labeled Primary RNA transcript shows seven segments in order — an unlabeled leading segment, Exon 1, Intron, Exon 2, Intron, Exon 3, and an unlabeled trailing segment; below it, a bar labeled Spliced RNA shows three small circles (the 5′ cap), a short unlabeled segment, then Exon 1, Exon 2, and Exon 3 joined directly together, another unlabeled segment, and finally a run of A's (the poly-A tail). Bottom, labeled Translation: a ribosome, drawn as three adjoining colored subunits labeled E, P, and A, sits on a red mRNA strand reading AUGUUUCGA; the P and A subunits each hold a tRNA (anticodons AAA and GCU) carrying an amino acid, Phe and Arg, which are linking onto a growing polypeptide chain that already carries Met." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_15_01_02" alt="A three-step flow chart: Transcription shows a DNA double helix opened inside an oval labeled RNA polymerase, generating a single RNA strand; RNA processing shows a primary RNA transcript of alternating exons and introns spliced into a shorter mature RNA with a capped 5′ end and a poly-A tail; Translation shows a ribosome reading the spliced mRNA codon by codon to string amino acids into a growing polypeptide chain." longdesc="Top, labeled Transcription: a double-stranded DNA helix, each strand labeled 5′ at one end and 3′ at the other, passes through an oval labeled RNA polymerase; a single RNA strand (labeled 5′ to 3′) peels away from the DNA inside the oval. Middle, labeled RNA processing: a bar labeled Primary RNA transcript shows seven segments in order — an unlabeled leading segment, Exon 1, Intron, Exon 2, Intron, Exon 3, and an unlabeled trailing segment; below it, a bar labeled Spliced RNA shows three small circles (the 5′ cap), a short unlabeled segment, then Exon 1, Exon 2, and Exon 3 joined directly together, another unlabeled segment, and finally a run of A's (the poly-A tail). Bottom, labeled Translation: a pale oval labeled Ribosome sits on a red mRNA strand reading AUGUUUCGA, and three tRNAs stand side by side in its sites labeled E, P, and A, their anticodons UAC, AAA, and GCU paired with the codons AUG, UUU, and CGA. The E-site tRNA carries nothing; the P-site tRNA carries Phe, already bonded to Met above it, together labeled polypeptide chain; the A-site tRNA carries a single Arg not yet joined to the chain." kind="diagram" >}}
 Instructions on DNA are transcribed onto messenger RNA. Ribosomes are able to read the genetic information inscribed on a strand of messenger RNA and use this information to string amino acids together into a protein.
 {{< /mediafigure >}}
 
@@ -52,7 +52,7 @@ The specification of a single amino acid by multiple similar codons is called "d
 **Link to Learning.** Transcribe a gene and translate it to protein using complementary pairing and the genetic code at [this site](https://openstax.org/l/create_protein).
 {{< /callout >}}
 
-{{< mediafigure src="biology/Figure_15_02_03" alt="Illustration of a frameshift mutation: an arrow shows a twelve-nucleotide mRNA sequence, translated into four amino acids, changing into a second sequence with two nucleotides deleted, whose reading frame — and every amino acid after the deletion — is shifted." longdesc="The first mRNA sequence, boxed into four codons and labeled below with the amino acids they specify, reads AGC (Ser), GUA (Val), CCC (Pro), UAC (Tyr); the U and A of the second codon are shaded orange. After those two nucleotides are deleted, the second sequence — shown one nucleotide window later — reads AGC (Ser), GCC (Ala), CUA (Leu), CUU (Leu): the first codon is unchanged, but every codon after the deletion is shifted by two nucleotides and specifies a different amino acid." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_15_02_03" alt="Illustration of a frameshift mutation: an arrow shows a twelve-nucleotide mRNA sequence, translated into four amino acids, changing into a second sequence with two nucleotides deleted, whose reading frame — and every amino acid after the deletion — is shifted." longdesc="Under the heading Frameshift Mutations, the first mRNA sequence, read as four codons with the amino acid each specifies labeled below, reads AGC (Ser), GUA (Val), CCC (Pro), UAC (Tyr); the U and A of the second codon are shaded orange. After those two nucleotides are deleted, the second sequence (to the right of an arrow, and ending in two further bases, U and U, that the first sequence does not show) reads AGC (Ser), GCC (Ala), CUA (Leu), CUU (Leu): the first codon is unchanged, but every codon after the deletion is shifted by two nucleotides and specifies a different amino acid." kind="diagram" >}}
 The deletion of two nucleotides shifts the reading frame of an mRNA and changes the entire protein message, creating a nonfunctional protein or terminating protein synthesis altogether.
 {{< /mediafigure >}}
 
@@ -105,7 +105,7 @@ The genetic code refers to the DNA alphabet (A, T, C, G), the RNA alphabet (A, U
 {{< multiplechoice
   question="Which event contradicts the central dogma of molecular biology?"
   answer="Scientists use reverse transcriptase enzymes to make DNA from RNA."
-  hint="Central dogma flows DNA → RNA → protein; look for the option that reverses that direction."
+  hint="Reread the first paragraph under the central dogma heading and the flow chart after it."
 >}}
 Poly-A polymerase enzymes process mRNA in the nucleus.
 Endonuclease enzymes splice out and repair damaged DNA.
@@ -114,23 +114,30 @@ Codons specifying amino acids are degenerate and universal.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The principle stating that genes specify the sequence of mRNAs, which in turn specify the sequence of proteins, is called the ________."
-  answer="central dogma"
-  hint="It is the section's own name for the DNA-to-mRNA-to-protein flow of genetic information."
+  question="In terms of RNA and protein, a relationship in which three “units” of RNA (nucleotides) specify one “unit” of protein (amino acid) in a consecutive fashion is described as ________."
+  answer="colinear"
+  accept="collinear|co-linear"
+  hint="Reread the end of the first paragraph under the central dogma heading."
 >}}
 
 {{< textin
   question="Genes are used to make mRNA by the process of ________; mRNA is used to synthesize proteins by the process of translation."
   answer="transcription"
-  hint="This is the first of the two processes the central dogma describes."
+  hint="Reread the section summary's third sentence."
 >}}
 
 ### Describe the genetic code and how the nucleotide sequence prescribes the amino acid and the protein sequence
 
+{{< textin
+  question="Three consecutive nucleotides in mRNA that specify the insertion of an amino acid, or the release of a polypeptide chain during translation, are called a ________."
+  answer="codon"
+  hint="Reread the first paragraph under the subsection heading that follows the flow chart."
+>}}
+
 {{< multiplechoice
   question="The AUC and AUA codons in mRNA both specify isoleucine. What feature of the genetic code explains this?"
   answer="degeneracy"
-  hint="Think about how many different codons can specify one amino acid."
+  hint="Reread the third paragraph after the codon table."
 >}}
 complementarity
 nonsense codons
@@ -141,7 +148,7 @@ degeneracy
 {{< multiplechoice
   question="How many nucleotides are in 12 mRNA codons?"
   answer="36"
-  hint="Each codon is three nucleotides; multiply."
+  hint="Reread the first paragraph under the subsection heading that follows the flow chart."
 >}}
 12
 24
@@ -149,7 +156,7 @@ degeneracy
 48
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Imagine if there were 200 commonly occurring amino acids instead of 20. Given what you know about the genetic code, what would be the shortest possible codon length? Explain." hint="Find the smallest number of nucleotides n such that 4 raised to the n-th power is at least 200." >}}
+{{< selfcheck question="Imagine if there were 200 commonly occurring amino acids instead of 20. Given what you know about the genetic code, what would be the shortest possible codon length? Explain." hint="Reread the doublet-versus-triplet reasoning in the first paragraph under the subsection heading that follows the flow chart." >}}
 For 200 commonly occurring amino acids, codons consisting of four types of nucleotides would have to be at least four nucleotides long, because four to the fourth power ($4^4$) is 256. There would be much less degeneracy in this case.
 ===CHECKS===
 codons would have to be at least four nucleotides long
@@ -157,7 +164,7 @@ four to the fourth power is 256
 there would be much less degeneracy in this case
 {{< /selfcheck >}}
 
-{{< selfcheck question="Discuss how degeneracy of the genetic code makes cells more robust to mutations." hint="Think about what happens when only the third nucleotide of a codon changes." >}}
+{{< selfcheck question="Discuss how degeneracy of the genetic code makes cells more robust to mutations." hint="Reread the third paragraph after the codon table." >}}
 Codons that specify the same amino acid typically only differ by one nucleotide. In addition, amino acids with chemically similar side chains are encoded by similar codons. This nuance of the genetic code ensures that a single-nucleotide substitution mutation might either specify the same amino acid and have no effect, or may specify a similar amino acid, preventing the protein from being rendered completely nonfunctional.
 ===CHECKS===
 codons that specify the same amino acid typically only differ by one nucleotide
@@ -166,7 +173,7 @@ a single-nucleotide substitution mutation might either specify the same amino ac
 preventing the protein from being rendered completely nonfunctional
 {{< /selfcheck >}}
 
-{{< selfcheck question="A scientist sequencing mRNA identifies the following strand: CUAUGUGUCGUAACAGCCGAUGACCCG. What is the sequence of the amino acid chain this mRNA makes when it is translated?" hint="First locate the start codon AUG, then read the rest in groups of three until you reach a stop codon." >}}
+{{< selfcheck question="A scientist sequencing mRNA identifies the following strand: CUAUGUGUCGUAACAGCCGAUGACCCG. What is the sequence of the amino acid chain this mRNA makes when it is translated?" hint="Use the codon table and the paragraph right after it." >}}
 Met Cys Arg Asn Ser Arg. The first step to writing the amino acid sequence is to find the start codon AUG. Then, the nucleotide sequence is separated into triplets: CU AUG UGU CGU AAC AGC CGA UGA. We stop the translation at UGA because that triplet encodes a stop codon. When we convert these codons to amino acids, the sequence becomes Met Cys Arg Asn Ser Arg.
 ===CHECKS===
 the amino acid sequence is Met Cys Arg Asn Ser Arg
@@ -176,17 +183,11 @@ stop the translation at UGA because that triplet encodes a stop codon
 {{< /selfcheck >}}
 
 {{< textin
-  question="Three consecutive nucleotides in mRNA that specify the insertion of an amino acid, or the release of a polypeptide chain during translation, are called a ________."
-  answer="codon"
-  hint="AUG, UAA, and UGA are all examples of this three-nucleotide unit."
->}}
-
-{{< textin
   question="A shift of one or two nucleotides in the sequence of triplets that specifies a particular protein completely abolishes synthesis of that protein by changing its ________."
   answer="reading frame"
-  hint="The AUG start codon sets where this begins near the 5′ end of the mRNA."
+  hint="Reread the paragraph right after the codon table."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 15.1: The Genetic Code](https://openstax.org/books/biology-2e/pages/15-1-the-genetic-code) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_15_01_01 and Figure_15_01_02 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (both are drawn charts, not photographs); Figure_15_01_01's source alt corrected from "glutamate" to "glutamine" for the polar-uncharged panel (the source alt names the same amino acid twice — once uncharged, once negatively charged — while the image and glossary agree on glutamine for the uncharged group), and a longdesc added walking every panel of the chart since its structural detail is not in the caption; Figure_15_01_02's source alt, a letter-spaced screen-reader spelling ("D N A", "m R N A", "5 prime cap"), rewritten as a plain description, with the walk-through of the flow chart's three stages moved into a longdesc; Figure_15_02_05's source alt rewritten to name the actual table structure, with a longdesc transcribing all 64 codons by first and second letter, since the codon table's content is not otherwise carried in this section's prose; Figure_15_02_03's source alt corrected from "the deletion of two amino acids" to name what is actually deleted — two nucleotides, not amino acids, as the figure's own caption and the deleted letters (U and A) both show — with a longdesc naming the specific codons and amino acids on both sides of the frameshift; the interactive note rendered as a Link to Learning callout; the scientific-method note kept as a callout with its figure, question, background, hypothesis, procedure, and analysis prompts in full; the "AC*"/"GA*" wildcard block notation, the doublet/triplet counts ($4^2$, $4^3$), the $10^{84}$ combination count, and the $4^4 = 256$ in the Critical Thinking solution set as KaTeX per the biology notation rule, with the matching rubric checkpoint spelled out in words because checkpoints render as plain text; the three Review Questions and three Critical Thinking Questions adapted into the closing interactive Practice block, the Critical Thinking solutions decomposed into rubric checkpoints; one key-term recall item (central dogma) and one summary cloze item (transcription) added for the first objective, and two key-term recall items (codon, reading frame) added for the second, since this section's own exercises test the second objective more heavily than the first.</small>
+<small>This section is adapted from [Biology 2e, Section 15.1: The Genetic Code](https://openstax.org/books/biology-2e/pages/15-1-the-genetic-code) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_15_01_01 and Figure_15_01_02 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (both are drawn charts, not photographs); Figure_15_01_01's source alt corrected from "glutamate" to "glutamine" for the polar-uncharged panel (the source alt names the same amino acid twice — once uncharged, once negatively charged — while the image and glossary agree on glutamine for the uncharged group), and a longdesc added walking every panel of the chart since its structural detail is not in the caption; Figure_15_01_02's source alt, a letter-spaced screen-reader spelling ("D N A", "m R N A", "5 prime cap"), rewritten as a plain description, with the walk-through of the flow chart's three stages moved into a longdesc; Figure_15_02_05's source alt rewritten to name the actual table structure, with a longdesc transcribing all 64 codons by first and second letter, since the codon table's content is not otherwise carried in this section's prose; Figure_15_02_03's source alt corrected from "the deletion of two amino acids" to name what is actually deleted — two nucleotides, not amino acids, as the figure's own caption and the deleted letters (U and A) both show — with a longdesc naming the specific codons and amino acids on both sides of the frameshift; the interactive note rendered as a Link to Learning callout; the scientific-method note kept as a callout with its figure, question, background, hypothesis, procedure, and analysis prompts in full; the "AC*"/"GA*" wildcard block notation, the doublet/triplet counts ($4^2$, $4^3$), the $10^{84}$ combination count, and the $4^4 = 256$ in the Critical Thinking solution set as KaTeX per the biology notation rule, with the matching rubric checkpoint spelled out in words because checkpoints render as plain text; the three Review Questions and three Critical Thinking Questions adapted into the closing interactive Practice block, the Critical Thinking solutions decomposed into rubric checkpoints; one key-term recall item (colinear) and one summary cloze item (transcription) added for the first objective — the glossary's central dogma left to the Key terms list because the objective's heading prints it — and two key-term recall items (codon, reading frame) added for the second, since this section's own exercises test the second objective more heavily than the first; because Practice items are grouped by objective, the central-dogma Review Question (source third) comes first.</small>

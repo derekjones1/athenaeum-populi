@@ -26,7 +26,7 @@ An antibody molecule is comprised of four polypeptides: two identical heavy chai
 
 In germ-line B cells, the variable region of the light chain gene has 40 variable (V) and five joining (J) segments. An enzyme called DNA recombinase randomly excises most of these segments out of the gene, and splices one V segment to one J segment. During RNA processing, all but one V and J segment are spliced out. Recombination and splicing of the light-chain gene alone yield a few hundred VJ combinations; paired with the independently rearranged heavy chain, they give over $10^6$ possible antibodies. *(Source note: the source says recombination "may result in over $10^6$ possible VJ combinations"; 40 V and 5 J segments give 200, and the million-fold diversity comes from combining light and heavy chains (Janeway's *Immunobiology*, 5th ed., chapter 4).)* As a result, each differentiated B cell in the human body typically has a unique variable chain. The constant domain, which does not bind antibody, is the same for all antibodies.
 
-{{< mediafigure src="biology/Figure_42_03_01" kind="diagram" eager="true" alt="A five-row flow chart traces a light-chain gene from germ-line DNA through DNA rearrangement, transcription, RNA processing, and translation to a two-part protein, above a diagram of a Y-shaped antibody with two forked antigen-binding arms of light- and heavy-chain segments anchored in a B cell plasma membrane." longdesc="Panel (a) is a five-row flow chart, top to bottom, connected by four labeled arrows. Row 1, \"Germ-line,\" is a strip of 12 labeled segments: green V1 and V2, a jagged break marking the omitted V3 through V37, green V38, V39, and V40, then yellow J1 through J5, a gray Intron box, and a purple C (constant) box. The arrow \"DNA rearrangement by recombinase\" leads to row 2, \"DNA of differentiated B cell,\": 7 boxes — V1, V2, J2, J3, J4, Intron, and C — showing V2 now joined to J2 and the V3-through-J1 segments excised. The arrow \"Transcription\" leads to row 3, \"pre-mRNA\": 6 boxes — V2, J2, J3, J4, Intron, and C. The arrow \"RNA processing\" leads to row 4, \"mRNA\": 3 boxes — V2, J2, and C, the intron spliced out. The arrow \"Translation\" leads to row 5, \"protein\": 2 boxes, green \"Variable region\" and purple \"Constant region.\" Panel (b) draws one antibody as two Y-shaped forks sharing a linked base anchored in a pink bar labeled \"B cell plasma membrane.\" Each fork's two arms angle up to a point braced overhead \"Antigen binding site\" (two braces total, left and right); each arm is green (light chain) near its tip and purple (heavy chain) below, the colors meeting at an orange diagonal mark where the fork's arms converge. Below each fork, a single purple stem continues down; the two stems run side by side and are joined by a third orange mark partway down before both enter the membrane bar. A leader line from the right fork labels its green segment \"Light chain,\" its orange mark \"Disulfide bridge,\" and its purple stem \"Heavy chain.\" A bracket at the left spans the forked, upper portion of both stems and reads \"Variable region\"; a longer bracket below it spans down to the membrane and reads \"Constant region.\"" >}}
+{{< mediafigure src="biology/Figure_42_03_01" kind="diagram" eager="true" alt="A five-row flow chart traces a light-chain gene from germ-line DNA through DNA rearrangement, transcription, RNA processing, and translation to a two-part protein, above a diagram of a Y-shaped antibody with two forked antigen-binding arms of light- and heavy-chain segments anchored in a B cell plasma membrane." longdesc="Panel (a) is a five-row flow chart, top to bottom, connected by four labeled arrows. Row 1, \"Germ-line,\" is a strip of 12 labeled segments: green V1 and V2, a jagged break marking the omitted V3 through V37, green V38, V39, and V40, then yellow J1 through J5, a gray Intron box, and a purple C (constant) box. The arrow \"DNA rearrangement by recombinase\" leads to row 2, \"DNA of differentiated B cell,\": 7 boxes — V1, V2, J2, J3, J4, Intron, and C — showing V2 now joined to J2 and the V3-through-J1 segments excised. The arrow \"Transcription\" leads to row 3, \"pre-mRNA\": 6 boxes — V2, J2, J3, J4, Intron, and C. The arrow \"RNA processing\" leads to row 4, \"mRNA\": 3 boxes — V2, J2, and C, the intron spliced out. The arrow \"Translation\" leads to row 5, \"protein\": 2 boxes, green \"Variable region\" and purple \"Constant region.\" Panel (b) draws one Y-shaped antibody anchored in a pink bar labeled 'B cell plasma membrane.' Two long purple heavy chains rise side by side from the membrane, joined to each other by an orange bar above it, then bend outward to form the inner arm of each fork. Beside each, a shorter, separate light chain runs parallel to the heavy chain's upper arm on the outside, joined to it by an orange bar. Every arm, heavy and light, is green at its tip and purple below. A brace labeled 'Antigen binding site' tops each fork, over the green tips of its two arms (two braces, left and right). On the right, leader lines label the outer arm 'Light chain,' the orange bar joining it to the heavy chain 'Disulfide bridge,' and a heavy-chain stem 'Heavy chain.' On the left, a bracket labeled 'Variable region' spans the green tips, and a longer bracket labeled 'Constant region' spans from the bottom of the green segments down through the membrane." >}}
 (a) As a germ-line B cell matures, an enzyme called DNA recombinase randomly excises V and J segments from the light chain gene. Splicing at the mRNA level results in further gene rearrangement. As a result, (b) each antibody has a unique variable region capable of binding a different antigen.
 {{< /mediafigure >}}
 
@@ -108,17 +108,17 @@ a cost: an antibody response to parts of the body (self) in addition to the appr
 {{< /selfcheck >}}
 
 {{< textin
-  question="Binding of an antibody to an epitope corresponding to an antigen that is different from the one the antibody was raised against is called ________."
-  answer="cross reactivity"
-  accept="cross reactivities"
-  hint="This is what lets one antibody sometimes respond to a pathogen it was never specifically produced against."
->}}
-
-{{< textin
   question="The attraction arising from molecular complementarity between antigen and antibody molecules is called ________."
   answer="affinity"
   accept="affinities"
   hint="A higher value of this property lets an antibody bind its matching antigen more strongly and stably."
+>}}
+
+{{< textin
+  question="Binding of an antibody to an epitope corresponding to an antigen that is different from the one the antibody was raised against is called ________."
+  answer="cross reactivity"
+  accept="cross reactivities"
+  hint="This is what lets one antibody sometimes respond to a pathogen it was never specifically produced against."
 >}}
 
 {{< textin
@@ -129,28 +129,6 @@ a cost: an antibody response to parts of the body (self) in addition to the appr
 
 ### Describe the structure and function of antibodies
 
-{{< multiplechoice
-  question="The structure of an antibody is similar to the extracellular component of which receptor?"
-  answer="BCR"
-  hint="Plasma cells differentiate from B cells, and an antibody is essentially the secreted, soluble form of the receptor those cells already display on their own surface."
->}}
-MHC I
-MHC II
-BCR
-none of the above
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Breastfed infants typically are resistant to disease because of ________."
-  answer="passive immunity"
-  hint="The infant's own immune system did not manufacture these antibodies — they arrived ready-made, transferred from someone else's blood serum."
->}}
-active immunity
-passive immunity
-immune tolerance
-immune memory
-{{< /multiplechoice >}}
-
 {{< textin
   question="A protein produced by plasma cells after stimulation by an antigen is called a(n) ________."
   answer="antibody"
@@ -158,18 +136,40 @@ immune memory
   hint="Each of this molecule's five classes is denoted by an abbreviation ending in a different letter, such as one ending in M or one ending in G."
 >}}
 
-{{< textin
-  question="The transfer of antibodies from one individual to another to provide temporary protection against pathogens is called ________."
-  answer="passive immunity"
-  hint="Breastfeeding confers this kind of protection on an infant without the infant's own immune system doing any of the work."
+{{< multiplechoice
+  question="The structure of an antibody is similar to the extracellular component of which receptor?"
+  answer="BCR"
+  hint="Reread the B Lymphocytes subsection of the previous section, Adaptive Immune Response, on the receptors a B cell carries."
 >}}
+MHC I
+MHC II
+BCR
+none of the above
+{{< /multiplechoice >}}
+
+{{< textin
+  question="Antibodies coat extracellular pathogens and ________ them by blocking key sites on the pathogen that enhance their infectivity, such as receptors that dock pathogens on host cells."
+  answer="neutralize"
+  hint="Reread the second paragraph of the Antibody Functions subsection; this action can prevent pathogens from entering and infecting host cells at all."
+>}}
+
+{{< multiplechoice
+  question="Breastfed infants typically are resistant to disease because of ________."
+  answer="passive immunity"
+  hint="Reread the first paragraph of the Antibody Functions subsection."
+>}}
+active immunity
+passive immunity
+immune tolerance
+immune memory
+{{< /multiplechoice >}}
 
 ### Discuss antibody production
 
 {{< multiplechoice
   question="The first antibody class to appear in the serum in response to a newly encountered pathogen is ________."
   answer="IgM"
-  hint="This is the same class that occasionally appears, alongside IgD, as the receptor on a B cell that has not yet encountered its antigen."
+  hint="Reread the second paragraph of the Antibody Classes subsection."
 >}}
 IgM
 IgA
@@ -180,7 +180,7 @@ IgE
 {{< multiplechoice
   question="What is the most abundant antibody class detected in the serum upon reexposure to a pathogen or in reaction to a vaccine?"
   answer="IgG"
-  hint="This class makes up roughly 80 percent of all antibodies in the serum overall, not only after a second exposure."
+  hint="Reread the first paragraph of the Antibody Classes subsection and the class table below it."
 >}}
 IgM
 IgA
@@ -191,10 +191,9 @@ IgE
 {{< textin
   question="Antibodies (immunoglobulins) are the molecules secreted from ________ that mediate the humoral immune response."
   answer="plasma cells"
-  accept="plasma cell"
-  hint="These are the fully differentiated, antibody-secreting descendants of activated B cells."
+  hint="Reread the first sentence of the section's opening paragraph."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 42.3: Antibodies](https://openstax.org/books/biology-2e/pages/42-3-antibodies) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all four figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (each is a drawn schematic, not a captured photograph); a counted longdesc added to the antibody-structure figure (Figure_42_03_01), transcribing its gene-rearrangement flow chart and Y-shaped-antibody diagram label by label; the other three figures' letter-spaced source alts rewritten as plain descriptions since their content is already carried by the caption and surrounding prose; in-text pointers to figures ("Figure 42.22" through "Figure 42.25") replaced with "shown below," "as illustrated below," or "the table below," since Hugo does not number figures; the numeric exponent (10 to the sixth power) set in KaTeX per the house notation rule; the end-of-section Review Questions and the Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively); a rubric added to the self-check, decomposing its model answer (the source solution) into two check-off clauses with no new claims; five key-term recall items added from the glossary, covering all five of the section's glossary terms; one cloze recall item added from the section summary, blanking "plasma cells." One number is corrected with a visible Source note: light-chain VJ recombination alone gives a few hundred combinations, and the million-fold figure is the light-chain by heavy-chain product (erratum 451).</small>
+<small>This section is adapted from [Biology 2e, Section 42.3: Antibodies](https://openstax.org/books/biology-2e/pages/42-3-antibodies) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; all four figures re-kinded from the manifest's file-extension "photo" guess to "diagram" (each is a drawn schematic, not a captured photograph); a counted longdesc added to the antibody-structure figure (Figure_42_03_01), transcribing its gene-rearrangement flow chart and Y-shaped-antibody diagram label by label; the other three figures' letter-spaced source alts rewritten as plain descriptions since their content is already carried by the caption and surrounding prose; in-text pointers to figures ("Figure 42.22" through "Figure 42.25") replaced with "shown below," "as illustrated below," or "the table below," since Hugo does not number figures; the numeric exponent (10 to the sixth power) set in KaTeX per the house notation rule; the end-of-section Review Questions and the Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively); a rubric added to the self-check, decomposing its model answer (the source solution) into two check-off clauses with no new claims; four key-term recall items added from the glossary (antibody, affinity, avidity, cross reactivity), plus a cloze built from the Antibody Functions subsection's own sentence (neutralize) in place of a passive-immunity recall item that sat directly above the breastfed-infant Review Question, whose options print its key; one cloze recall item added from the section summary, blanking "plasma cells." One number is corrected with a visible Source note: light-chain VJ recombination alone gives a few hundred combinations, and the million-fold figure is the light-chain by heavy-chain product (erratum 451).</small>

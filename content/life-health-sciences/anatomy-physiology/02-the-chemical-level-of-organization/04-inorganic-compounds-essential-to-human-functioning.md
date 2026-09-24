@@ -49,7 +49,7 @@ Water is considered the "universal solvent" and it is believed that life cannot 
 
 ### Concentrations of Solutes
 
-Various mixtures of solutes and water are described in chemistry. The concentration of a given solute is the number of particles of that solute in a given space (oxygen makes up about 21 percent of atmospheric air). In the bloodstream of humans, glucose concentration is usually measured in milligram (mg) per deciliter (dL), and in a healthy adult averages about 100 mg/dL. Another method of measuring the concentration of a solute is by its molarity—which is moles (M) of the molecules per liter (L). The mole of an element is its atomic weight, while a mole of a compound is the sum of the atomic weights of its components, called the molecular weight. An often-used example is calculating a mole of glucose, with the chemical formula C₆H₁₂O₆. Using the periodic table, the atomic weight of carbon (C) is 12.011 grams (g), and there are six carbons in glucose, for a total atomic weight of 72.066 g. Doing the same calculations for hydrogen (H) and oxygen (O), the molecular weight equals 180.156g (the "gram molecular weight" of glucose). When water is added to make one liter of solution, you have a molar (1mol/L) solution of glucose, or, a molarity of 1 (1M). This is particularly useful in chemistry because of the relationship of moles to "Avogadro's number." A mole of any solution has the same number of particles in it: $6.02 \times 10^{23}$. Many substances in the bloodstream and other tissue of the body are measured in thousandths of a mole, or millimoles (mM).
+Various mixtures of solutes and water are described in chemistry. The concentration of a given solute is the number of particles of that solute in a given space (oxygen makes up about 21 percent of atmospheric air). In the bloodstream of humans, glucose concentration is usually measured in milligram (mg) per deciliter (dL), and in a healthy adult averages about 100 mg/dL. Another method of measuring the concentration of a solute is by its molarity (M)—which is moles (mol) of the molecules per liter (L). The mass in grams of a mole of an element is its atomic weight, while that of a mole of a compound is the sum of the atomic weights of its components, called the molecular weight. An often-used example is calculating a mole of glucose, with the chemical formula C₆H₁₂O₆. Using the periodic table, the atomic weight of carbon (C) is 12.011 grams (g), and there are six carbons in glucose, for a total atomic weight of 72.066 g. Doing the same calculations for hydrogen (H) and oxygen (O), the molecular weight equals 180.156g (the "gram molecular weight" of glucose). When water is added to make one liter of solution, you have a molar (1mol/L) solution of glucose, or, a molarity of 1 (1M). This is particularly useful in chemistry because of the relationship of moles to "Avogadro's number." A mole of any substance has the same number of particles in it: $6.02 \times 10^{23}$. *(Source note: the source prints "molarity—which is moles (M) of the molecules per liter," "The mole of an element is its atomic weight, while a mole of a compound is the sum of the atomic weights," and "A mole of any solution"; this paragraph's own worked example uses M for molarity and mol for moles ("a molar (1mol/L) solution of glucose, or, a molarity of 1 (1M)"), gives a mole's mass in grams as the "gram molecular weight," and counts moles of the solute, glucose, not of the solution, so M is attached to molarity, the atomic-weight sentence is restated as a mole's mass in grams, and "solution" reads "substance.")* Many substances in the bloodstream and other tissue of the body are measured in thousandths of a mole, or millimoles (mM).
 
 A **colloid** is a mixture that is somewhat like a heavy solution. The solute particles consist of tiny clumps of molecules large enough to make the liquid mixture opaque (because the particles are large enough to scatter light). Familiar examples of colloids are milk and cream. In the thyroid glands, the thyroid hormone is stored as a thick protein mixture also called a colloid.
 
@@ -144,7 +144,7 @@ Metabolic alkalosis often results from prolonged, severe vomiting, which causes 
 {{< multiplechoice
   question="CH₄ is methane. This compound is ________."
   answer="organic"
-  hint="Methane's molecule contains both carbon and hydrogen — check the definition against both elements, not just one."
+  hint="Reread the two definitions at the start of this section."
 >}}
 inorganic
 organic
@@ -155,7 +155,7 @@ a crystal
 {{< multiplechoice
   question="Which of these is one of the few inorganic compounds that also contains carbon atoms?"
   answer="carbon dioxide (CO₂)"
-  hint="The section names only one everyday inorganic compound built around carbon."
+  hint="Reread the definition of an inorganic compound and the examples that follow it."
 >}}
 water (H₂O)
 carbon dioxide (CO₂)
@@ -176,7 +176,7 @@ remain classified as inorganic
 {{< multiplechoice
   question="Which of the following is most likely to be found evenly distributed in water in a homogeneous solution?"
   answer="sodium ions and chloride ions"
-  hint="A solution's solute particles are spread evenly all the way down to the ion or molecule level, not as clumps or whole cells."
+  hint="Reread the definition of a solution under Water as a Component of Liquid Mixtures, and the Salts subsection."
 >}}
 sodium ions and chloride ions
 NaCl molecules
@@ -187,7 +187,7 @@ red blood cells
 {{< multiplechoice
   question="Jenny mixes up a batch of pancake batter, then stirs in some chocolate chips. As she is waiting for the first few pancakes to cook, she notices the chocolate chips sinking to the bottom of the clear glass mixing bowl. The chocolate-chip batter is an example of a ________."
   answer="suspension"
-  hint="The chocolate chips are heavier than the batter and are settling out over time."
+  hint="Reread the three types of liquid mixtures."
 >}}
 solvent
 solute
@@ -206,7 +206,7 @@ suspension
 {{< multiplechoice
   question="A substance dissociates into K⁺ and Cl⁻ in solution. The substance is a(n) ________."
   answer="salt"
-  hint="Its ions are not H⁺ or OH⁻ — the detail that separates this category from the other two in this objective."
+  hint="Compare the ions each option releases in solution, as this section defines each kind of substance."
 >}}
 acid
 base
@@ -215,14 +215,14 @@ buffer
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="According to the section, a crystal of NaCl dissolved in water dissociates into which pair of ions?"
-  answer="Na⁺ and Cl⁻"
-  hint="Sodium and chlorine each keep only the single charge they carried in the ionic bond, not a doubled one."
+  question="According to the section, which salts form the mineral portion of teeth and bones?"
+  answer="calcium phosphate salts"
+  hint="Reread the paragraph that closes the Salts subsection."
 >}}
-Na²⁺ and Cl⁻
-H⁺ and OH⁻
-Na⁺ and Cl⁻
-NaCl molecules surrounded by water
+bile salts
+sodium chloride (NaCl)
+calcium phosphate salts
+hydrochloric acid (HCl)
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Why are the ions that a dissolved salt produces described as electrolytes, and why does this matter for the body?" hint="Think about what these charged particles can do in solution that lets nerves and muscles work." >}}
@@ -299,4 +299,4 @@ The buffer stays a weak base regardless of the pH change.
 
 ---
 
-<small>This section is adapted from [Anatomy and Physiology 2e, Section 2.4: Inorganic Compounds Essential to Human Functioning](https://openstax.org/books/anatomy-and-physiology-2e/pages/2-4-inorganic-compounds-essential-to-human-functioning) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: ion charges, chemical formulas, and isotope-style notation set as Unicode sub/superscripts (H⁺, OH⁻, Na⁺, Cl⁻, K⁺, HCO₃⁻, H₂O, CO₂, HCl, C₆H₁₂O₆); the two numeric exponents (Avogadro's number and the two pH-proton-concentration values) set in `$…$` math, matching the book's rule that a page setting one exponent in math sets all of them so; figures re-encoded as WebP and all four re-kinded from the media manifest's file-extension "photo" guess to "diagram" (each is a line-art or schematic illustration, not a photograph); the dissociation, acids-and-bases, and pH-scale figures' alts rewritten from the images (the source alts for the acids-and-bases and pH-scale figures said only "four beakers containing different liquids" and named the scale without its examples) to name what each actually shows; a longdesc added to the pH-scale figure listing its twelve household/body-fluid examples top to bottom, since neither the source caption (empty in this module) nor the body prose states them; the pH-scale figure's caption is the source's figure title, "The pH Scale," since the source gives this figure no separate caption paragraph; the Homeostatic Imbalances feature box, which ends in no question, transcribed as a callout with no accompanying item, per the book's rule; the five end-of-section Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise, all at their source order, option count, and key; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; one key-term recall (textin) item added from the glossary ("colloid"); the section's four other glossary terms — "acid," "base," "pH," and "buffer" — are the objectives' own headline terms (every other item's stem, option, or hint in their groups necessarily names them) and so are kept as Key-terms bullets only, not recall items; five author-written multiple choice items and two author-written self-checks added from the section's own sentences (the carbon-dioxide exception, the inorganic-despite-hydrogen reasoning, the NaCl dissociation caption, the electrolyte-function sentence, the pH-4-versus-pH-5 tenfold relationship, the acidosis-cause and buffer-direction sentences of the Buffers subsection and its feature box) to bring every objective's group up to the book's three-per-objective, fifteen-per-section floor, with the correct option's position varied across these author-written items rather than left first; the section has no comparison table and no References section, so neither appears on this page.</small>
+<small>This section is adapted from [Anatomy and Physiology 2e, Section 2.4: Inorganic Compounds Essential to Human Functioning](https://openstax.org/books/anatomy-and-physiology-2e/pages/2-4-inorganic-compounds-essential-to-human-functioning) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: ion charges, chemical formulas, and isotope-style notation set as Unicode sub/superscripts (H⁺, OH⁻, Na⁺, Cl⁻, K⁺, HCO₃⁻, H₂O, CO₂, HCl, C₆H₁₂O₆); the three numeric exponents (Avogadro's number and the two pH-proton-concentration values) set in `$…$` math, matching the book's rule that a page setting one exponent in math sets all of them so; figures re-encoded as WebP and all four re-kinded from the media manifest's file-extension "photo" guess to "diagram" (each is a line-art or schematic illustration, not a photograph); the dissociation, acids-and-bases, and pH-scale figures' alts rewritten from the images (the source alts for the acids-and-bases and pH-scale figures said only "four beakers containing different liquids" and named the scale without its examples) to name what each actually shows; a longdesc added to the pH-scale figure listing its eleven household/body-fluid examples top to bottom, since neither the source caption (empty in this module) nor the body prose states them; the pH-scale figure's caption is the source's figure title, "The pH Scale," since the source gives this figure no separate caption paragraph; the Homeostatic Imbalances feature box, which ends in no question, transcribed as a callout with no accompanying item, per the book's rule; the five end-of-section Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise, all at their source order, option count, and key; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; one key-term recall (textin) item added from the glossary ("colloid"); the section's four other glossary terms — "acid," "base," "pH," and "buffer" — are the objectives' own headline terms (every other item's stem, option, or hint in their groups necessarily names them) and so are kept as Key-terms bullets only, not recall items; five author-written multiple choice items and two author-written self-checks added from the section's own sentences (the carbon-dioxide exception, the inorganic-despite-hydrogen reasoning, the Salts subsection's bile-salt and calcium-phosphate sentence, the electrolyte-function sentence, the pH-4-versus-pH-5 tenfold relationship, the acidosis-cause and buffer-direction sentences of the Buffers subsection and its feature box) to bring every objective's group up to the book's three-per-objective floor (8 per section), with the correct option's position varied across these author-written items rather than left first; the section has no comparison table and no References section, so neither appears on this page; a corrected claim, with a visible inline Source note, restates three mole and molarity statements in the Concentrations of Solutes paragraph — the symbol M attached to molarity rather than to moles, a mole's mass in grams (not the mole itself) equated with the atomic or molecular weight, and Avogadro's number given for "a mole of any substance" in place of "a mole of any solution" — on the authority of the same paragraph's own worked glucose example (erratum 884).</small>

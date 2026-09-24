@@ -32,7 +32,7 @@ Flowers are modified leaves, or sporophylls, organized around a central receptac
 
 The innermost part of a perfect flower is the **gynoecium**, the location in the flower where the eggs will form. The female reproductive unit consists of one or more carpels, each of which has a stigma, style, and ovary. The **stigma** is the location where the pollen is deposited either by wind or a pollinating arthropod. The sticky surface of the stigma traps pollen grains, and the **style** is a connecting structure through which the pollen tube will grow to reach the ovary. The **ovary** houses one or more ovules, each of which will ultimately develop into a **seed**. Flower structure is very diverse, and carpels may be singular, multiple, or fused. (Multiple fused carpels comprise a **pistil**.) The **androecium**, or male reproductive region is composed of multiple stamens surrounding the central carpel. **Stamens** are composed of a thin stalk called a **filament** and a sac-like structure called the **anther**. The filament supports the anther, where the microspores are produced by meiosis and develop into haploid pollen grains, or male gametophytes.
 
-{{< mediafigure src="biology/Figure_26_03_02" kind="diagram" alt="A labeled diagram of a yellow, trumpet-shaped flower with two boxed regions — the central carpel and a lobe of the anther — each enlarged below into a shaded panel: the gynoecium showing stigma, style, ovary, and ovules, and the androecium showing the anther's pollen grains, microsporangia, and filament." longdesc="At the top, a yellow trumpet-shaped flower is labeled Petal, Sepal, and Androecium, with a bracket marking the Perianth as the Corolla (petals) and Calyx (sepals) together. Two black boxes highlight regions inside the flower: a central box around the green carpel, and a smaller box around one lobe of the yellow anther at upper right. A gray arrow curves down and left from the carpel box to a shaded green panel below-left labeled 'Gynoecium (carpels),' which shows the carpel enlarged and labeled, top to bottom, Stigma, Style, and Ovary (a bracket spans the swollen base), with two lines pointing to oval Ovule (megasporangium) structures inside the ovary. A second gray arrow curves down and right from the anther box to a shaded green panel below-right labeled 'Androecium (stamens),' which shows the anther enlarged and labeled Pollen grain and Microsporangia (two leader lines into the clustered orange pollen), a bracket marking the whole structure as the Anther, and the green Filament below it." >}}
+{{< mediafigure src="biology/Figure_26_03_02" kind="diagram" alt="A labeled diagram of a yellow, trumpet-shaped flower with two boxed regions — the central carpel and a lobe of the anther — each enlarged below into a shaded panel: the gynoecium showing stigma, style, ovary, and ovules, and the androecium showing the anther's pollen grains, microsporangia, and filament." longdesc="At the top, a yellow trumpet-shaped flower is labeled Petal, Sepal, and Androecium, with a bracket marking the Perianth as the Corolla (petals) and Calyx (sepals) together. Two black boxes highlight regions inside the flower: a central box around the green carpel, and a smaller box around the yellow anther of the right-hand stamen at upper right (the Androecium label has two leader lines, one to each of the two stamens' anthers). A gray arrow curves down and left from the carpel box to a shaded green panel below-left labeled 'Gynoecium (carpels),' which shows the carpel enlarged and labeled, top to bottom, Stigma, Style, and Ovary (a bracket spans the swollen base), with two lines pointing to oval Ovule (megasporangium) structures inside the ovary. A second gray arrow curves down and right from the anther box to a shaded green panel below-right labeled 'Androecium (stamens),' which shows the anther enlarged, one lobe cut open to show clustered orange pollen: a Pollen grain label points to one orange grain, Microsporangia has two leader lines to the yellow anther lobes, a bracket marking the whole structure as the Anther, and the green Filament below it." >}}
 Flower structure. This image depicts the structure of a perfect flower. Perfect flowers produce both male and female floral organs. The flower shown has only one carpel, but some flowers have a cluster of carpels. Together, all the carpels make up the gynoecium. (credit: modification of work by Mariana Ruiz Villareal)
 {{< /mediafigure >}}
 
@@ -40,7 +40,7 @@ Flower structure. This image depicts the structure of a perfect flower. Perfect 
 
 The adult or sporophyte phase is the main phase of an angiosperm's life cycle. Like gymnosperms, angiosperms are heterosporous. Therefore, they produce microspores, which will generate pollen grains as the male gametophytes, and *megaspores*, which will form an ovule that contains female gametophytes. Inside the anther's microsporangia, male sporocytes divide by meiosis to generate haploid microspores, which, in turn, undergo mitosis and give rise to pollen grains. Each pollen grain contains two cells: one generative cell that will divide into two sperm and a second cell that will become the pollen tube cell.
 
-{{< mediafigure src="biology/Figure_B26_03_03" kind="diagram" alt="A branching diagram: a flower cross-section at top labels its floral parts, with two downward paths below it — one tracing an ovule through meiosis and mitosis to a mature embryo sac, the other tracing a pollen mother cell through meiosis and mitosis to a mature pollen grain — that meet in a band at the bottom showing a pollen tube delivering two sperm cells into the embryo sac, with a germinating seedling and a seed cross-section drawn between the two paths." longdesc="At the top, a gray ring encircles a yellow flower cross-section labeled Stigma and Style at its top edge, and inside it Perianth (Petal: Corolla, Sepal: Calyx), Nectary, Floral axis, Articulation, Pedicel, and Filament. Two black circles mark the ovary and the anther inside the ring; a black arrow curves up and left from the ovary circle to a green Ovary structure outside the ring at upper left, and a second black arrow curves up and right from the anther circle to a yellow Microsporangium/Anther structure at upper right. Below the Ovary, the left-hand column runs top to bottom through three stacked panels: a light-blue panel labeled 'Megaspore / Ovule,' a light-blue panel labeled 'MEIOSIS,' and a pink panel labeled 'MITOSIS,' each showing the ovule progressively subdividing; the bottom panel is labeled Polar nuclei, Antipodal, Egg, and Synergid, with Micropyle at its tip, and is captioned 'Megagametophyte (embryo sac).' Below the Anther, the right-hand column runs top to bottom through the same three stacked panels — 'Microspore \"mother cell,\"' 'MEIOSIS,' and 'MITOSIS' — showing a round cell dividing into a four-lobed tetrad and then into a spiky pollen grain labeled Generative cell and Tube cell, captioned 'Microgametophyte (pollen).' Between the two columns, a small illustration of the whole flowering plant sits above a gray vertical band that runs down to the bottom of the figure, passing a 'Germinating seed' seedling and, beside it, a seed cross-section labeled Seed coat, Endosperm, and Embryo. A wide gray band spans the bottom of the figure: at its left is the embryo sac (from the left column) with a boxed inset labeled Sperm, Pollen tube, and Micropyle; at its right is the pollen grain (from the right column) labeled Pollen tube, Tube nucleus, and Sperm, with a black arrow pointing left from the pollen grain toward the embryo sac. The band is captioned, in blue text, 'Pollination and Fertilization.'" >}}
+{{< mediafigure src="biology/Figure_B26_03_03" kind="diagram" alt="A branching diagram: a flower cross-section at top labels its floral parts, with two downward paths below it — one tracing an ovule through meiosis and mitosis to a mature embryo sac, the other tracing a pollen mother cell through meiosis and mitosis to a mature pollen grain — that meet in a band at the bottom showing a pollen tube delivering two sperm cells into the embryo sac, with a germinating seedling and a seed cross-section drawn between the two paths." longdesc="At the top, a gray ring encircles a yellow flower cross-section labeled Stigma and Style at its top edge, and inside it Perianth (Petal: Corolla, Sepal: Calyx), Nectary, Floral axis, Articulation, Pedicel, and Filament. Two black circles mark the ovary and the anther inside the ring; a black arrow runs left from the ovary circle to a green Ovary structure outside the ring at upper left, and a second black arrow runs right from the anther circle to a yellow structure at upper right labeled Microsporangium and Anther, with Filament below. From a small circle on each enlarged structure, arrows lead down into two stacked panels on each side: a light-blue panel labeled 'MEIOSIS' at its bottom, above a pink panel labeled 'MITOSIS.' On the left, the blue panel shows three ovule drawings joined by arrows, the first labeled 'Megaspore / Ovule,' the ovule's contents subdividing; a thick arrow leads into the pink panel's embryo sac, labeled Polar nuclei, Antipodal, Egg, and Synergid, with Micropyle at its tip, and captioned 'Megagametophyte (embryo sac).' On the right, the blue panel shows a round cell labeled 'Microspore \"mother cell\"' dividing, by arrows, into a two-nucleus cell and then a four-lobed tetrad; in the pink panel an arrow leads to one small spiky cell and then to a larger spiky pollen grain labeled Generative cell and Tube cell, captioned 'Microgametophyte (pollen).' Between the two columns, a small illustration of the whole flowering plant sits above a gray vertical band that runs down to the bottom of the figure, passing a 'Germinating seed' seedling and, beside it, a seed cross-section labeled Seed coat, Endosperm, and Embryo. A wide gray band spans the bottom of the figure. At its right, an arrow leads from the Microgametophyte down to a germinating pollen grain labeled Pollen grain, Sperm (two blue nuclei), Pollen tube, and Tube nucleus; a black arrow points left from it to the stigma of a whole green carpel at the center, where a 'Pollen tube' label marks pollen on the stigma and a thin tube runs down the style. A small box on the carpel's ovary is enlarged in a boxed inset at the left, showing the embryo sac with the pollen tube curving to its tip, labeled Pollen tube, Sperm, and Micropyle. The band is captioned, in blue text, 'Pollination and Fertilization.'" >}}
 Angiosperm life cycle. The life cycle of an angiosperm is shown. Anthers and carpels are structures that shelter the actual gametophytes: the pollen grain and embryo sac. Double fertilization is a process unique to angiosperms. (credit: modification of work by Mariana Ruiz Villareal)
 {{< /mediafigure >}}
 
@@ -166,7 +166,7 @@ these structures protect reproduction from variability in the environment
 {{< multiplechoice
   question="Which of the following structures in a flower is not directly involved in reproduction?"
   answer="the sepal"
-  hint="One of these structures' role is protecting the unopened floral bud, not producing or delivering gametes."
+  hint="Compare the Flowers subsection's description of the outer whorls with its description of the sexual organs at the center of the flower."
 >}}
 the style
 the stamen
@@ -177,7 +177,7 @@ the anther
 {{< multiplechoice
   question="Pollen grains develop in which structure?"
   answer="the anther"
-  hint="This structure is the sac-like part of the stamen, not the thin stalk that supports it and not any part of the carpel."
+  hint="Look at the end of the paragraph describing the androecium, where it says where the microspores are produced."
 >}}
 the anther
 the stigma
@@ -202,7 +202,7 @@ the carpel
 {{< multiplechoice
   question="In the course of double fertilization, one sperm cell fuses with the egg and the second one fuses with ________."
   answer="the polar nuclei of the center cell"
-  hint="This is the structure that develops into the endosperm, the seed's food-reserve tissue."
+  hint="Look at the paragraph that describes the double fertilization event."
 >}}
 the synergids
 the polar nuclei of the center cell
@@ -211,23 +211,36 @@ the antipodal cells
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The triploid tissue that serves as a food reserve for a developing angiosperm embryo is called the ________."
-  answer="endosperm"
-  hint="It forms when the second sperm cell fuses with the two polar nuclei of the central cell."
->}}
-
-{{< textin
   question="The primitive, leaf-like organ that develops in the zygote — one in monocots, two in eudicots — is called a ________."
   answer="cotyledon"
   hint="It serves as a conduit transmitting broken-down food reserves from storage inside the seed to the developing embryo."
 >}}
 
+{{< textin
+  question="The triploid tissue that serves as a food reserve for a developing angiosperm embryo is called the ________."
+  answer="endosperm"
+  hint="It forms when the second sperm cell fuses with the two polar nuclei of the central cell."
+>}}
+
 ### Discuss the similarities and differences between the two main groups of flowering plants
+
+{{< textin
+  question="The related group of angiosperms whose embryos possess two cotyledons is called the ________."
+  answer="dicot"
+  accept="eudicot|dicotyledon"
+  hint="Members of this group make up two-thirds of all flowering plants and typically produce pollen with three furrows."
+>}}
+
+{{< textin
+  question="The group of plants that probably branched off before the separation of the monocots and eudicots is called the ________."
+  answer="basal angiosperms"
+  hint="Look at the Diversity of Angiosperms subsection's list of the three major groups within the angiosperms."
+>}}
 
 {{< multiplechoice
   question="Corn develops from a seedling with a single cotyledon, displays parallel veins on its leaves, and produces monosulcate pollen. It is most likely:"
   answer="a monocot"
-  hint="A single cotyledon and single-furrow pollen are two of the traits that place a plant among the grasses and lilies."
+  hint="Compare the three traits in the question with the rows of the monocot and eudicot comparison table."
 >}}
 a gymnosperm
 a monocot
@@ -252,19 +265,6 @@ a basal angiosperm
   {"label": "Flower parts in four or five, or a multiple of these, and whorls", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< textin
-  question="The group of angiosperms whose embryos have one cotyledon and pollen with a single furrow is called the ________."
-  answer="monocot"
-  hint="This group includes lilies, orchids, grasses, and palms, and rarely produces true woody tissue."
->}}
-
-{{< textin
-  question="The related group of angiosperms whose embryos possess two cotyledons is called the ________."
-  answer="dicot"
-  accept="eudicot"
-  hint="Members of this group make up two-thirds of all flowering plants and typically produce pollen with three furrows."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 26.3: Angiosperms](https://openstax.org/books/biology-2e/pages/26-3-angiosperms) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; four figures re-kinded after inspection — Figure_26_03_02 and Figure_B26_03_03 from the manifest's file-extension "photo" guess to "diagram" (a labeled flower-anatomy schematic and a labeled life-cycle diagram, neither a captured photograph), and Figure_26_04 and Figure_B26_03_04 from "diagram" to "photo" (an actual photograph of a birch branch, and a four-panel grid that is three photographs and one botanical illustration); a longdesc added to the flower-structure diagram and the angiosperm life-cycle diagram, whose labels, arrows, and panel structure are not carried by their one-line captions; the Visual Connection question kept in the body as its figure followed by a self-check, with the source's Visual Connection solution as the model answer; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each self-check given rubric checkpoints decomposing its model answer with no new claims; the monocot/eudicot comparison table kept as a Markdown table in the body and also rebuilt as a sort-into-bins exercise in Practice; six key-term recall items (Anthophyta, calyx, corolla, cotyledon, monocot, dicot) added from the glossary, and one recall item (endosperm) built from the body sentence that defines the term in bold, since the glossary has no entry for it. One term is corrected with a visible Source note: the lily and tulip perianth, not "corolla," consists of three sepals and three petals, since the paragraph defines the corolla as the petals alone (erratum 421).</small>
+<small>This section is adapted from [Biology 2e, Section 26.3: Angiosperms](https://openstax.org/books/biology-2e/pages/26-3-angiosperms) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; four figures re-kinded after inspection — Figure_26_03_02 and Figure_B26_03_03 from the manifest's file-extension "photo" guess to "diagram" (a labeled flower-anatomy schematic and a labeled life-cycle diagram, neither a captured photograph), and Figure_26_04 and Figure_B26_03_04 from "diagram" to "photo" (an actual photograph of a birch branch, and a four-panel grid that is three photographs and one botanical illustration); a longdesc added to the flower-structure diagram and the angiosperm life-cycle diagram, whose labels, arrows, and panel structure are not carried by their one-line captions; the Visual Connection question kept in the body as its figure followed by a self-check, with the source's Visual Connection solution as the model answer; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), each self-check given rubric checkpoints decomposing its model answer with no new claims; the monocot/eudicot comparison table kept as a Markdown table in the body and also rebuilt as a sort-into-bins exercise in Practice; six key-term recall items (Anthophyta, calyx, corolla, cotyledon, dicot, basal angiosperms) added from the glossary, and one recall item (endosperm) built from the body sentence that defines the term in bold, since the glossary has no entry for it. One term is corrected with a visible Source note: the lily and tulip perianth, not "corolla," consists of three sepals and three petals, since the paragraph defines the corolla as the petals alone (erratum 421).</small>

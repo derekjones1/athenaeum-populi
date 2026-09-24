@@ -179,17 +179,21 @@ Botulism is treated with an antitoxin specific for BoNT. If administered in time
 
 **Check Your Understanding**
 
-{{< textin
+{{< multiplechoice
   question="How frequently should the tetanus vaccination be updated in adults?"
   answer="every 10 years"
-  accept="10 years|every ten years"
   hint="This is stated as a Td booster interval in the sentence right after the childhood DTaP dosing schedule."
 >}}
+every year
+every 5 years
+every 10 years
+every 20 years
+{{< /multiplechoice >}}
 
 {{< multiplechoice
   question="What are the most common causes of botulism?"
   answer="foodborne botulism"
-  hint="The module names this as 'the most common of these forms' right after listing wound, infant, and iatrogenic botulism."
+  hint="See the Botulism subsection's paragraph on intoxications, where BoNT is produced outside the body."
 >}}
 wound botulism
 infant botulism
@@ -232,7 +236,7 @@ Treatment for listeriosis involves antibiotic therapy, most commonly with ampici
 {{< multiplechoice
   question="How does Listeria enter the nervous system?"
   answer="Internalins enable it to breach barriers including the blood-brain barrier."
-  hint="One sentence names the two barriers this same virulence factor breaches, right after the sentence about invading nonphagocytic cells."
+  hint="See the Listeriosis subsection's paragraph on the virulence factors that let the bacterium spread beyond the gastrointestinal tract."
 >}}
 Listeriolysin O and ActA help it move directly from cell to cell.
 Ingestion of contaminated food lets it invade nonphagocytic cells of the intestinal wall.
@@ -272,7 +276,7 @@ Currently, there is no universally accepted vaccine for Hansen's disease. India 
 {{< multiplechoice
   question="Why does Hansen's disease typically affect the nerves of the extremities?"
   answer="Mycobacterium leprae grows best at the cooler temperatures found in peripheral tissues like the nose, toes, fingers, and ears."
-  hint="Look for the sentence naming the body temperatures this bacterium prefers, right at the start of the paragraph about virulence factors and Schwann cells."
+  hint="See the opening of the leprosy section's paragraph about virulence factors and Schwann cells."
 >}}
 The bacterium's virulence factors let it bind to and invade Schwann cells, causing progressive demyelination of the affected neurons.
 Mycobacterium leprae grows best at the cooler temperatures found in peripheral tissues like the nose, toes, fingers, and ears.
@@ -354,17 +358,17 @@ Streptococcus pneumoniae
 {{< /multiplechoice >}}
 
 {{< textin
+  question="________ is another name for leprosy."
+  answer="Hansen's disease"
+  accept="Hansen disease"
+  hint="See the opening sentence of the section that follows Listeriosis."
+>}}
+
+{{< textin
   question="The form of meningitis that can cause epidemics is caused by the pathogen ________."
   answer="Neisseria meningitidis"
   accept="N. meningitidis"
   hint="Name the gram-negative coccus this section's Meningococcal Meningitis subsection ties to epidemics and the meningitis belt."
->}}
-
-{{< textin
-  question="________ is another name for leprosy."
-  answer="Hansen's disease"
-  accept="Hansen disease"
-  hint="This is the section's own heading name for leprosy, given in its opening sentence."
 >}}
 
 {{< mediafigure src="microbiology/OSC_Microbio_26_02_ArtConnect_img" kind="photo" alt="A close-up photo of a person's forehead and brow, showing a smooth, lightened, rounded patch of skin above the eyebrow next to darker surrounding skin." >}}
@@ -405,7 +409,7 @@ listeriosis
 {{< multiplechoice
   question="How is leprosy primarily transmitted from person to person?"
   answer="blowing nose"
-  hint="The module names inhalation into nasal mucosa as one of the two ways Hansen's disease passes person to person."
+  hint="See the leprosy section's paragraph on how communicable the disease is."
 >}}
 contaminated toilet seats
 shaking hands
@@ -416,7 +420,7 @@ sexual intercourse
 {{< multiplechoice
   question="The symptoms of tetanus are caused by the neurotoxin ________."
   answer="tetanospasmin"
-  hint="The other three options are toxins this module names for other pathogens; this one is C. tetani's own, which the module elsewhere just calls TeNT (tetanus neurotoxin)."
+  hint="The subsection on *C. tetani* names its neurotoxin only by an abbreviation; check which of these options the section attributes to other pathogens."
 >}}
 botulinum neurotoxin (BoNT)
 pneumolysin
@@ -433,12 +437,13 @@ CAMP factor
 {{< textin
   question="________ is a neurological disease that can be prevented with the DTaP vaccine."
   answer="Tetanus"
-  hint="The DTaP vaccine's 'T' component is named directly in this section's vaccine paragraph."
+  hint="See the vaccination paragraph of the first subsection under Clostridium-Associated Diseases."
 >}}
 
 {{< textin
   question="Tetanus patients exhibit ________ when muscle spasms causes them to arch their backs."
   answer="opisthotonos"
+  accept="opisthotonus"
   hint="This is the term the Tetanus subsection gives for the posture caused by spasms in the neck, back, and leg muscles."
 >}}
 
@@ -465,4 +470,4 @@ infant botulism results from ingesting C. botulinum endospores that germinate an
 foodborne botulism occurs when BoNT is produced in contaminated food and then ingested along with the food
 {{< /selfcheck >}}
 
-<small>This section is adapted from [Microbiology, Section 26.2: Bacterial Diseases of the Nervous System](https://openstax.org/books/microbiology/pages/26-2-bacterial-diseases-of-the-nervous-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: seven source figures (Brains, Meningococ, teen, Pneumococc, tetanus, Listeria, Leprosy) are re-encoded as WebP and rendered as mediafigures after image and PDF inspection; all are `kind="photo"` except Listeria, whose panel (b) is a genuinely drawn seven-step schematic and so is `kind="diagram"` (its longdesc walks the seven numbered steps, since the caption does not name them); the Brains figure carries `eager="true"` as the page's first figure. Ten one-word source typos are corrected in place with no inline note, each reported as a source defect: the Micro Connections figure caption's "meningogoccal" is corrected to "meningococcal"; the Meningococcal Meningitis subsection's "meningococcoal meningitis progresses" is corrected to "meningococcal meningitis progresses"; the Neonatal Meningitis subsection's "late-onset menigitis" is corrected to "late-onset meningitis"; the Hib-vaccine paragraph's "H. influenza infection" is corrected to "H. influenzae infection"; the Disease Profile table's Pathogen cell "Haemophilus influenza" is corrected to "Haemophilus influenzae"; "clofazimin" is corrected to "clofazimine" in the Hansen's Disease paragraph and in the Disease Profile table's Antimicrobial Drugs cell for that row; the Disease Profile table's Transmission cell for Hansen's disease, "possible transmissible," is corrected to "possibly transmissible"; the Summary's Hansen's disease bullet "demylenation" is corrected to "demyelination"; the book's Glossary appendix's own "flaccid paraylsis" (the source of the Botulism Key-terms bullet) is corrected to "flaccid paralysis"; and two stray characters in the Disease Profile table's own alt text (a trailing "l" in the Botulism row's Antimicrobial Drugs cell, and a stray ". " in the Hib meningitis row's Antimicrobial Drugs cell) are dropped, since neither appears in the printed table image; a third stray character in that same alt, a stray period in the Listeriosis row's Vaccine cell ("None ."), is likewise dropped. The Disease Profile table is transcribed as a Markdown table from the source's alt text, checked against the printed table image, per this book's Disease Profile rule; the image is not vendored. One further divergence between the alt and the printed image is kept as the alt reads and disclosed here: the alt's Listeriosis row reads "miscarriage in pregnant people," while the printed table image itself reads "miscarriage in pregnant women" — the pinned CNXML alt is the transcription authority. The module's sixteen footnote citations (fourteen in the body, one in the Micro Connections box, one in the Eye on Ethics box) are rendered as inline parenthetical citations, bare access URLs dropped; the Thigpen et al. citation, which the source repeats as three separate footnotes, is printed in full at all three of its occurrences rather than shortened to "(ibid.)". The five cross-references to other modules (Bacterial Infections of the Respiratory Tract; Virulence Factors of Bacterial and Viral Pathogens, cited twice, once for its BoNT/TeNT mechanism figure; the Case in Point box in Using Physical Methods to Control Microorganisms; the Clinical Focus case study in How Microbes Grow; the Clinical Focus case study in Characteristics of Infectious Disease) are rendered as links to their authored pages; this module carries no Clinical Focus box and no Link to Learning box. Of this section's nine body Check Your Understanding bullets across four boxes: four are graded from a single fixing sentence or this section's own alternatives — "Which organism can cause epidemic meningitis?" and "How does Listeria enter the nervous system?" as `multiplechoice`, and "How frequently should the tetanus vaccination be updated in adults?" and "What prevents the progression from tuberculoid to lepromatous leprosy?" as `textin`, one — "What are the most common causes of botulism?" — as a `multiplechoice` keyed by the module's own "the most common of these forms" sentence; and four remain self-checks whose model answers and rubrics are assembled from more than one sentence of this module ("Which groups are most vulnerable to each of the bacterial meningitis diseases?", "For which of the bacterial meningitis diseases are there vaccines presently available?", "Why is botulism not treated with an antibiotic?", "Why does Hansen's disease typically affect the nerves of the extremities?" — the last of these is graded as a `multiplechoice` instead, keyed by the module's single sentence on *M. leprae*'s temperature preference). No body Check Your Understanding bullet is omitted. Of the section's fifteen source exercises: the five Multiple Choice items and five of the six Fill in the Blank items keep their source options (or blank), order, and keys, the Fill in the Blank items rendered as `textin`; the sixth, "the neurotoxin ________" (KEY tetanospasmin), is rendered as `multiplechoice` instead, because the module's own body prose never prints "tetanospasmin" — only the Critical Thinking stem and the Fill in the Blank's own `<solution>` do, and the module's body itself calls this toxin "TeNT (tetanus neurotoxin)" throughout — so a blind solver cannot recover the word from a text field; the source key stands, and the three distractors (botulinum neurotoxin (BoNT), pneumolysin, CAMP factor) are toxins this same module names for other pathogens; the one Short Answer question (the leprosy Art Connection image, which prints no key) is rendered as a `mediafigure` followed by a `textin` keyed by the single module sentence naming *Mycobacterium leprae* as the cause of Hansen's disease, `accept="M. leprae"` added for the abbreviated binomial; the section's three unkeyed Critical Thinking questions all stay self-checks in the Practice block, each needing more than one module sentence to answer honestly — the "three very different bacteria" self-check's model answer names only the three organisms this module itself names as the most common causes of non-neonatal bacterial meningitis (*N. meningitidis*, *S. pneumoniae*, *H. influenzae*), not the fourth (*S. agalactiae*) that the Summary names separately for neonatal meningitis. No source exercise is omitted. Key terms are compiled from the module's eleven defined terms (no repeats) and the book's Glossary appendix; all eleven are Glossary-sourced, with no sentence-derived definitions needed. The Key terms bullet for "neonatal meningitis" keeps the Glossary appendix's wording but carries a visible Source note, since this section's own body defines neonatal meningitis as occurring in babies up to 3 months of age rather than the appendix's "less than 2 months old" — a claim correction, disclosed in place. The Listeriosis subsection's sentence that *Listeria* can grow at temperatures between 0 °C and 50 °C keeps the source's printed range but carries a visible Source note, since reference values (the FDA Bacteriological Analytical Manual) place *L. monocytogenes*'s upper growth limit near 45 °C, not 50 °C — a claim correction, disclosed in place.</small>
+<small>This section is adapted from [Microbiology, Section 26.2: Bacterial Diseases of the Nervous System](https://openstax.org/books/microbiology/pages/26-2-bacterial-diseases-of-the-nervous-system) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: seven source figures (Brains, Meningococ, teen, Pneumococc, tetanus, Listeria, Leprosy) are re-encoded as WebP and rendered as mediafigures after image and PDF inspection; all are `kind="photo"` except Listeria, whose panel (b) is a genuinely drawn seven-step schematic and so is `kind="diagram"` (its longdesc walks the seven numbered steps, since the caption does not name them); the Brains figure carries `eager="true"` as the page's first figure. Ten one-word source typos are corrected in place with no inline note, each reported as a source defect: the Micro Connections figure caption's "meningogoccal" is corrected to "meningococcal"; the Meningococcal Meningitis subsection's "meningococcoal meningitis progresses" is corrected to "meningococcal meningitis progresses"; the Neonatal Meningitis subsection's "late-onset menigitis" is corrected to "late-onset meningitis"; the Hib-vaccine paragraph's "H. influenza infection" is corrected to "H. influenzae infection"; the Disease Profile table's Pathogen cell "Haemophilus influenza" is corrected to "Haemophilus influenzae"; "clofazimin" is corrected to "clofazimine" in the Hansen's Disease paragraph and in the Disease Profile table's Antimicrobial Drugs cell for that row; the Disease Profile table's Transmission cell for Hansen's disease, "possible transmissible," is corrected to "possibly transmissible"; the Summary's Hansen's disease bullet "demylenation" is corrected to "demyelination"; the book's Glossary appendix's own "flaccid paraylsis" (the source of the Botulism Key-terms bullet) is corrected to "flaccid paralysis"; and two stray characters in the Disease Profile table's own alt text (a trailing "l" in the Botulism row's Antimicrobial Drugs cell, and a stray ". " in the Hib meningitis row's Antimicrobial Drugs cell) are dropped, since neither appears in the printed table image; a third stray character in that same alt, a stray period in the Listeriosis row's Vaccine cell ("None ."), is likewise dropped. The Disease Profile table is transcribed as a Markdown table from the source's alt text, checked against the printed table image, per this book's Disease Profile rule; the image is not vendored. One further divergence between the alt and the printed image is kept as the alt reads and disclosed here: the alt's Listeriosis row reads "miscarriage in pregnant people," while the printed table image itself reads "miscarriage in pregnant women" — the pinned CNXML alt is the transcription authority. The module's sixteen footnote citations (fourteen in the body, one in the Micro Connections box, one in the Eye on Ethics box) are rendered as inline parenthetical citations, bare access URLs dropped; the Thigpen et al. citation, which the source repeats as three separate footnotes, is printed in full at all three of its occurrences rather than shortened to "(ibid.)". The five cross-references to other modules (Bacterial Infections of the Respiratory Tract; Virulence Factors of Bacterial and Viral Pathogens, cited twice, once for its BoNT/TeNT mechanism figure; the Case in Point box in Using Physical Methods to Control Microorganisms; the Clinical Focus case study in How Microbes Grow; the Clinical Focus case study in Characteristics of Infectious Disease) are rendered as links to their authored pages; this module carries no Clinical Focus box and no Link to Learning box. Of this section's nine body Check Your Understanding bullets across four boxes, six are graded from a single fixing sentence of this module — "Which organism can cause epidemic meningitis?", "How does Listeria enter the nervous system?", and "Why does Hansen's disease typically affect the nerves of the extremities?" (keyed by the module's single sentence on *M. leprae*'s temperature preference) as `multiplechoice`; "What are the most common causes of botulism?" as a `multiplechoice` keyed by the module's own "the most common of these forms" sentence; "How frequently should the tetanus vaccination be updated in adults?" as a `multiplechoice` keyed by the module's "a TT booster every 10 years" sentence, not a text-entry item, because a numeric answer is never graded as typed text here, with the adjacent intervals every year, every 5 years, and every 20 years as distractors; and "What prevents the progression from tuberculoid to lepromatous leprosy?" as `textin` — and three remain self-checks whose model answers and rubrics are assembled from more than one sentence of this module ("Which groups are most vulnerable to each of the bacterial meningitis diseases?", "For which of the bacterial meningitis diseases are there vaccines presently available?", "Why is botulism not treated with an antibiotic?"). No body Check Your Understanding bullet is omitted. Of the section's fifteen source exercises: the five Multiple Choice items and five of the six Fill in the Blank items keep their source options (or blank), order, and keys, the Fill in the Blank items rendered as `textin`, except that the "another name for leprosy" (`Hansen's disease`) and "form of meningitis that can cause epidemics" (`Neisseria meningitidis`) `textin` items are reversed from their printed order so that no item directly above a text-entry blank prints its key; the sixth, "the neurotoxin ________" (KEY tetanospasmin), is rendered as `multiplechoice` instead, because the module's own body prose never prints "tetanospasmin" — only the Critical Thinking stem and the Fill in the Blank's own `<solution>` do, and the module's body itself calls this toxin "TeNT (tetanus neurotoxin)" throughout — so a blind solver cannot recover the word from a text field; the source key stands, and the three distractors (botulinum neurotoxin (BoNT), pneumolysin, CAMP factor) are toxins this same module names for other pathogens; the one Short Answer question (the leprosy Art Connection image, which prints no key) is rendered as a `mediafigure` followed by a `textin` keyed by the single module sentence naming *Mycobacterium leprae* as the cause of Hansen's disease, `accept="M. leprae"` added for the abbreviated binomial; the section's three unkeyed Critical Thinking questions all stay self-checks in the Practice block, each needing more than one module sentence to answer honestly — the "three very different bacteria" self-check's model answer names only the three organisms this module itself names as the most common causes of non-neonatal bacterial meningitis (*N. meningitidis*, *S. pneumoniae*, *H. influenzae*), not the fourth (*S. agalactiae*) that the Summary names separately for neonatal meningitis. No source exercise is omitted. Key terms are compiled from the module's eleven defined terms (no repeats) and the book's Glossary appendix; all eleven are Glossary-sourced, with no sentence-derived definitions needed. The Key terms bullet for "neonatal meningitis" keeps the Glossary appendix's wording but carries a visible Source note, since this section's own body defines neonatal meningitis as occurring in babies up to 3 months of age rather than the appendix's "less than 2 months old" — a claim correction, disclosed in place. The Listeriosis subsection's sentence that *Listeria* can grow at temperatures between 0 °C and 50 °C keeps the source's printed range but carries a visible Source note, since reference values (the FDA Bacteriological Analytical Manual) place *L. monocytogenes*'s upper growth limit near 45 °C, not 50 °C — a claim correction, disclosed in place.</small>

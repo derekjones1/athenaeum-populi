@@ -132,14 +132,14 @@ cannot be passed from an infected person to another person
   {"label": "Can follow a wound treatment, catheterization, or surgery whose site becomes contaminated", "bin": 0},
   {"label": "Can spread via improperly sterilized equipment, bed sheets, or call buttons", "bin": 1},
   {"label": "The infection follows directly from the treatment itself, not from the setting", "bin": 0},
-  {"label": "More likely when a patient's immune system is already weakened by being hospitalized", "bin": 1}]}
+  {"label": "More likely because many hospital patients have weakened immune systems", "bin": 1}]}
 {{< /sortbins >}}
 
 ## Periods of Disease
 
 The five periods of disease (sometimes referred to as stages or phases) include the incubation, prodromal, illness, decline, and convalescence periods (see the graph below). The **incubation period** occurs in an acute disease after the initial entry of the pathogen into the host (patient). It is during this time the pathogen begins multiplying in the host. However, there are insufficient numbers of pathogen particles (cells or viruses) present to cause signs and symptoms of disease. Incubation periods can vary from a day or two in acute disease to months or years in chronic disease, depending upon the pathogen. Factors involved in determining the length of the incubation period are diverse, and can include strength of the pathogen, strength of the host immune defenses, site of infection, type of infection, and the size infectious dose received. During this incubation period, the patient is unaware that a disease is beginning to develop.
 
-{{< mediafigure src="microbiology/OSC_Microbio_15_01_Stages" alt="A line graph titled Periods of Disease plotting pathogen particle count (red line) and symptom severity (blue line) against time, both curves rising and falling together in a bell shape across five labeled periods: incubation, prodromal, illness, decline, and convalescence." kind="diagram" longdesc="The x-axis is time, and there are two y-axes, one titled Number of pathogen particles (red line) and the other titled Severity of symptoms (blue line), both unscaled. Reading left to right: during the incubation period both lines are low and flat. During the prodromal period both begin rising, with the pathogen line climbing a little ahead of the symptom line. During the period of illness both lines climb to their highest point together, at the boundary with the period of decline. During the period of decline both lines fall together, with the blue symptom-severity line reaching zero before the period ends. During the period of convalescence the red pathogen-count line continues to fall to zero after the blue line has already reached zero, showing that pathogens can still be present even after symptoms are gone." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_15_01_Stages" alt="A line graph titled Periods of Disease plotting pathogen particle count (red line) and symptom severity (blue line) against time, both curves rising and falling together in a bell shape across five labeled periods: incubation, prodromal, illness, decline, and convalescence." kind="diagram" longdesc="The x-axis is time, and there are two y-axes, one titled Number of pathogen particles (red line) and the other titled Severity of symptoms (blue line), both unscaled. Reading left to right: during the incubation period the blue line is flat at the baseline while the red line, still low, is already rising slowly. At the start of the prodromal period the blue line begins rising, and the red pathogen line keeps climbing a little ahead of it. During the period of illness both lines climb to their highest point together, at the boundary with the period of decline. During the period of decline both lines fall together. Early in the period of convalescence the blue symptom-severity line reaches zero; the red pathogen-count line keeps falling after that, but it is still visibly above the axis, not yet at zero, when the graph ends — showing that pathogens can still be present even after symptoms are gone." >}}
 The progression of an infectious disease can be divided into five periods, which are related to the number of pathogen particles (red) and the severity of signs and symptoms (blue).
 {{< /mediafigure >}}
 
@@ -222,6 +222,12 @@ In **latent diseases**, as opposed to chronic infections, the causal pathogen go
 
 ### Distinguish between signs and symptoms of disease
 
+{{< textin
+  question="The objective and measurable indication of a disease that can be directly observed by a clinician is called a ________."
+  answer="sign"
+  hint="Reread the second paragraph of the section's first subsection."
+>}}
+
 {{< multiplechoice
   question="Which of the following would be a sign of an infection?"
   answer="fever"
@@ -242,12 +248,6 @@ subjective
 felt or experienced by Brian himself
 cannot be clinically confirmed or objectively measured
 {{< /selfcheck >}}
-
-{{< textin
-  question="The objective and measurable indication of a disease that can be directly observed by a clinician is called a ________."
-  answer="sign"
-  hint="This is the kind of indication a thermometer or a blood-pressure cuff can measure."
->}}
 
 ### Explain the difference between a communicable disease and a noncommunicable disease
 
@@ -277,7 +277,7 @@ nosocomial
   question="A person steps on a rusty nail and develops tetanus. In this case, the person has acquired a(n) ________ disease."
   answer="noncommunicable"
   accept="non-communicable"
-  hint="Tetanus is only acquired through a contaminated wound, never passed from one infected person to another."
+  hint="Reread the Classifications of Disease paragraph that gives tetanus as its example."
 >}}
 
 ### Compare different types of infectious diseases, including iatrogenic, nosocomial, and zoonotic diseases
@@ -285,7 +285,7 @@ nosocomial
 {{< multiplechoice
   question="During an oral surgery, the surgeon nicked the patient's gum with a sharp instrument. This allowed *Streptococcus*, a bacterium normally present in the mouth, to gain access to the blood. As a result, the patient developed bacterial endocarditis (an infection of the heart). Which type of disease is this?"
   answer="iatrogenic"
-  hint="The infection followed directly from a medical procedure, not from the hospital environment itself."
+  hint="Compare the two Classifications of Disease paragraphs that follow the discussion of contagious diseases."
 >}}
 iatrogenic
 nosocomial
@@ -310,17 +310,6 @@ especially one with a weakened immune system
 
 ### Identify and describe the stages of an acute infectious disease in terms of number of pathogens present and severity of signs and symptoms
 
-{{< multiplechoice
-  question="Which period is the stage of disease during which the patient begins to present general signs and symptoms?"
-  answer="prodromal"
-  hint="This is the period right after incubation, when general, nonspecific symptoms like fever first appear."
->}}
-convalescence
-incubation
-illness
-prodromal
-{{< /multiplechoice >}}
-
 {{< textin
   question="A difference between an acute disease and chronic disease is that chronic diseases have an extended period of ________."
   answer="illness"
@@ -328,15 +317,26 @@ prodromal
   hint="Compare it with the shorter, self-limited course typical of an acute disease."
 >}}
 
-{{< selfcheck question="Two periods of acute disease are the periods of illness and period of decline. (a) In what way are both of these periods similar? (b) In terms of quantity of pathogen, in what way are these periods different? (c) What initiates the period of decline?" hint="For (c), reason from what the module says happens to the immune system during decline, since the module does not state a direct cause." >}}
-(a) Both the period of illness and the period of decline are stages of an acute disease during which the patient continues to show signs and symptoms of infection. (b) They differ in the number of pathogen particles present: during the period of illness the number of pathogens is greatest and signs and symptoms are most severe, while during the period of decline the number of pathogen particles begins to decrease, along with the signs and symptoms of illness. (c) The module does not directly state what initiates the period of decline. Based on its own description of the decline period — that patients' immune systems have been weakened by the primary infection — it can be inferred that the host's immune response bringing the infection under control is what starts the decline, though the section does not say this explicitly.
+{{< multiplechoice
+  question="Which period is the stage of disease during which the patient begins to present general signs and symptoms?"
+  answer="prodromal"
+  hint="Reread the paragraph just after the periods-of-disease graph."
+>}}
+convalescence
+incubation
+illness
+prodromal
+{{< /multiplechoice >}}
+
+{{< selfcheck question="Two periods of acute disease are the periods of illness and period of decline. (a) In what way are both of these periods similar? (b) In terms of quantity of pathogen, in what way are these periods different? (c) What initiates the period of decline?" hint="Reread the Periods of Disease paragraphs on the period of illness and the period of decline, and compare the two curves in the graph." >}}
+(a) Both the period of illness and the period of decline are stages of an acute disease during which the patient continues to show signs and symptoms of infection. (b) They differ in the number of pathogen particles present: during the period of illness the number of pathogens is greatest and signs and symptoms are most severe, while during the period of decline the number of pathogen particles begins to decrease, along with the signs and symptoms of illness. (c) The module does not state what initiates the period of decline; it says only that the period of illness is followed by the period of decline, during which the number of pathogen particles begins to decrease.
 ===CHECKS===
 number of pathogens present in the host is greatest and the signs and symptoms of disease are most severe
 number of pathogen particles begins to decrease, along with signs and symptoms of disease
 stages of an acute disease
-immune systems have been weakened by the primary infection
+the module does not state what initiates the period of decline
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 15.1: Characteristics of Infectious Disease](https://openstax.org/books/microbiology/pages/15-1-characteristics-of-infectious-disease) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP; `kind="photo"` set on the blood-smear micrographs and `kind="diagram"` set on the periods-of-disease line graph, overriding the media manifest's JPEG-based guess of "photo" for both; a `longdesc` added for the periods-of-disease graph, walking its five periods and both curves in reading order, since the caption does not name the stages; the two footnotes (Savino et al. 2013; Kusters et al. 2006; Salama et al. 2013 — three citations from two footnote elements) rendered as inline parenthetical citations, with the bare access URL of the first dropped; the *P. aeruginosa* Critical Thinking question's own printed citation (C. Owens, "*P. aeruginosa* survives in sinks 10 years after hospital outbreak," 2015) likewise drops its bare access URL, for the same reason; the Clinical Focus box's "Jump to the next Clinical Focus box" link replaced with a plain sentence linking to Section 15.2, where the case continues; both `<table summary>` tables transcribed as Markdown tables from their cells; the end-of-section Multiple Choice, Fill in the Blank, Short Answer, and Critical Thinking questions adapted into the closing interactive Practice block, sorted under the objective each supports, with two term-recall `textin` items (sign; zoonosis) added from the Key terms to round out two thin objective groups; of this section's three Link to Learning URLs, the World Health Organization disease-list link (`https://openstax.org/l/22WHOdis`, redirecting to `https://www.who.int/ith/diseases/en`) is confirmed dead (404, checked September 15, 2026) and is no longer linked, replaced with a plain-text description naming the World Health Organization's website; the CDC link, `https://openstax.org/l/22CDCdis`, returns a 403 to scripted checks — a bot wall, not a dead page — and stays linked with the source's own descriptive anchor text; the International Classification of Diseases link is unaffected; key terms compiled from the module's 24 defined terms and the book's Glossary appendix (22 taken from the glossary; 2 — subclinical, noncommunicable — from their defining sentences, since neither has its own appendix entry); 3 of the body's 5 Check Your Understanding bullets (signs vs. symptoms; iatrogenic vs. nosocomial disease; latent vs. chronic disease) are graded as `sortbins`, each a compare-and-contrast pair the module's own sentences fix, rather than answered in prose; the remaining 2 body bullets, the section's one Short Answer question, and both Critical Thinking questions stay `selfcheck`, with model answers and rubrics assembled from this section's own text — the source prints no key for any of them, and none is a single sentence or a clean two-way category split; part (c) of the periods-of-illness-and-decline Critical Thinking question is answered by inference from the module's immune-response sentence, flagged as such in the model answer. The "Types of Noninfectious Diseases" table is transcribed as a Markdown table only, without a `sortbins`: its seven types each carry exactly one example, so it is a one-item-per-bin table (more bins than the shortcode's four-bin cap, and no second item to interleave into any bin), the same shape the subject playbook already rules cannot be a `sortbins`. The source's Multiple Choice item on noncommunicable infectious disease is kept as printed with its key (food poisoning from a preformed toxin), although its dog-bite option also fits the module's own definitions of noncommunicable and zoonotic disease; the ambiguity is kept as printed (erratum 611).</small>
+<small>This section is adapted from [Microbiology, Section 15.1: Characteristics of Infectious Disease](https://openstax.org/books/microbiology/pages/15-1-characteristics-of-infectious-disease) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP; `kind="photo"` set on the blood-smear micrographs and `kind="diagram"` set on the periods-of-disease line graph, overriding the media manifest's JPEG-based guess of "photo" for both; a `longdesc` added for the periods-of-disease graph, walking its five periods and both curves in reading order, since the caption does not name the stages; the two footnotes (Savino et al. 2013; Kusters et al. 2006; Salama et al. 2013 — three citations from two footnote elements) rendered as inline parenthetical citations, with the bare access URL of the first dropped; the *P. aeruginosa* Critical Thinking question's own printed citation (C. Owens, "*P. aeruginosa* survives in sinks 10 years after hospital outbreak," 2015) likewise drops its bare access URL, for the same reason; the Clinical Focus box's "Jump to the next Clinical Focus box" link replaced with a plain sentence linking to Section 15.2, where the case continues; both `<table summary>` tables transcribed as Markdown tables from their cells; the end-of-section Multiple Choice, Fill in the Blank, Short Answer, and Critical Thinking questions adapted into the closing interactive Practice block, sorted under the objective each supports, with two term-recall `textin` items (sign; zoonosis) added from the Key terms to round out two thin objective groups; in the "Identify and describe the stages of an acute infectious disease" group, the `illness` `textin` was moved above the `prodromal` multiple choice so that no item directly above a text-entry blank prints its key, reversing their printed order; of this section's three Link to Learning URLs, the World Health Organization disease-list link (`https://openstax.org/l/22WHOdis`, redirecting to `https://www.who.int/ith/diseases/en`) is confirmed dead (404, checked September 15, 2026) and is no longer linked, replaced with a plain-text description naming the World Health Organization's website; the CDC link, `https://openstax.org/l/22CDCdis`, returns a 403 to scripted checks — a bot wall, not a dead page — and stays linked with the source's own descriptive anchor text; the International Classification of Diseases link is unaffected; key terms compiled from the module's 24 defined terms and the book's Glossary appendix (22 taken from the glossary; 2 — subclinical, noncommunicable — from their defining sentences, since neither has its own appendix entry); 3 of the body's 5 Check Your Understanding bullets (signs vs. symptoms; iatrogenic vs. nosocomial disease; latent vs. chronic disease) are graded as `sortbins`, each a compare-and-contrast pair the module's own sentences fix, rather than answered in prose; the remaining 2 body bullets, the section's one Short Answer question, and both Critical Thinking questions stay `selfcheck`, with model answers and rubrics assembled from this section's own text — the source prints no key for any of them, and none is a single sentence or a clean two-way category split; part (c) of the periods-of-illness-and-decline Critical Thinking question is not answered by inference: its model answer says the module does not state what initiates the period of decline and gives only what the module says happens during that period. The "Types of Noninfectious Diseases" table is transcribed as a Markdown table only, without a `sortbins`: its seven types each carry exactly one example, so it is a one-item-per-bin table (more bins than the shortcode's four-bin cap, and no second item to interleave into any bin), the same shape the subject playbook already rules cannot be a `sortbins`. The source's Multiple Choice item on noncommunicable infectious disease is kept as printed with its key (food poisoning from a preformed toxin), although its dog-bite option also fits the module's own definitions of noncommunicable and zoonotic disease; the ambiguity is kept as printed (erratum 611).</small>

@@ -51,11 +51,11 @@ To better understand the type of experimental results that researchers were obta
 
 One of the experiments in Morgan's lab involving the crosses of flies for two traits, body color (gray or black) and wing shape (normal and vestigial), demonstrated the recombination events that lead to the development of nonparental phenotypes.
 
-{{< mediafigure src="biology/Figure_13_01_02" kind="diagram" alt="A four-panel diagram illustrating a test cross for fruit fly body color and wing length. Panels A–C show three hypothetical inheritance patterns based on gene placement — genes on different chromosomes, genes on the same chromosome with no crossover, and genes on the same chromosome with crossover every time — each ending in four boxes of test-cross offspring labeled parental or recombinant. Panel D shows Thomas Hunt Morgan's actual 1912 results for the same cross." longdesc="Panel A, 'Genes on different chromosomes, independently assorted': a heterozygous fly of genotype b⁺bvg⁺vg undergoes meiosis, producing four gamete types (b⁺vg⁺, bvg, b⁺vg, bvg⁺); each is crossed to a bvg test-cross fly to give four offspring boxes in a 1:1:1:1 ratio, two boxes labeled parental type and two labeled recombinant type, with a note reading '50% of the offspring will be recombinant.' Panel B, 'Genes on the same chromosome, no crossover occurs': the same heterozygote's meiosis yields only two gamete types, b⁺vg⁺ and bvg, giving four test-cross offspring boxes in a 1:1:0:0 ratio, with a note reading 'None of the offspring will be recombinant.' Panel C, 'Genes on the same chromosome, crossover occurs 100% of the time': meiosis with crossing over yields all four gamete types, giving offspring boxes in a 1:1:1:1 ratio, with a note reading '50% of the offspring will be recombinant.' Panel D, 'Results from Morgan's 1912 experiment': the same four test-cross offspring classes are shown with observed counts 965, 944, 206, and 185, and a note reading '17% of the offspring are recombinant, indicating that the genes are on the same chromosome and crossover occurs some of the time.'" >}}
+{{< mediafigure src="biology/Figure_13_01_02" kind="diagram" alt="A four-panel diagram illustrating a test cross for fruit fly body color and wing length. Panels A–C show three hypothetical inheritance patterns based on gene placement — genes on different chromosomes, genes on the same chromosome with no crossover, and genes on the same chromosome with crossover every time — each ending in four boxes of test-cross offspring labeled parental or recombinant. Panel D shows Thomas Hunt Morgan's actual 1912 results for the same cross." longdesc="Under the title 'Inheritance Pattern of Linked and Unlinked Genes,' a note says panels A through C show three hypothetical inheritance patterns for a test cross between a heterozygote and a homozygous recessive individual, and panel D shows Morgan's actual 1912 results. In every panel the test-cross offspring appear as four boxes in the same order, headed by the heterozygote's gamete and holding the offspring genotype: b⁺vg⁺ gives b⁺bvg⁺vg, bvg gives bbvgvg, b⁺vg gives b⁺bvgvg, and bvg⁺ gives bbvg⁺vg; each box shows a gray or black fly. Panel A, 'Genes on different chromosomes, independently assorted': a heterozygous fly of genotype b⁺bvg⁺vg undergoes meiosis, producing four gamete types (b⁺vg⁺, bvg, b⁺vg, bvg⁺); the two possible chromosome arrangements are drawn as two branching trees, the left one producing the b⁺vg⁺ and bvg gametes and the right one the b⁺vg and bvg⁺ gametes; each is crossed to a bvg test-cross fly (which produces one kind of gamete, bvg) to give the four offspring boxes in a 1:1:1:1 ratio, the first two labeled parental and the last two recombinant, with a note reading '50% of the offspring will be recombinant.' Panel B, 'Genes on the same chromosome, no crossover occurs': the same heterozygote's meiosis yields only two gamete types, b⁺vg⁺ and bvg, giving four test-cross offspring boxes in a 1:1:0:0 ratio, with a note reading 'None of the offspring will be recombinant.' Panel C, 'Genes on the same chromosome, crossover occurs 100% of the time': meiosis with crossing over yields all four gamete types, giving offspring boxes in a 1:1:1:1 ratio, with a note reading '50% of the offspring will be recombinant.' Panel D, 'Results from Morgan's 1912 experiment': the same four test-cross offspring classes are shown with observed counts 965, 944, 206, and 185, a ratio row of 1 : 1 : .2 : .2, types parental, parental, recombinant, recombinant, and a note reading '17% of the offspring are recombinant, indicating that the genes are on the same chromosome and crossover occurs some of the time.'" >}}
 This figure shows unlinked and linked gene inheritance patterns. The example used includes fruit fly body color and wing length. Fruit flies may have a dominant gray color b⁺, or a recessive black color b. They may have dominant long wings vg⁺, or recessive short wings, vg. In (a), two genes are located on different chromosomes so independent assortment occurs during meiosis. The offspring have an equal chance of being the parental type (inheriting the same combination of traits as the parents) or a nonparental type (inheriting a different combination of traits than the parents). In (b), two genes are very close together on the same chromosome so that no crossing over occurs between them. Therefore, the genes are always inherited together and all the offspring are the parental type. In (c), two genes are far apart on the chromosome such that crossing over occurs during every meiotic event. The recombination frequency will be the same as if the genes were on separate chromosomes. (d) The actual recombination frequency of fruit fly wing length and body color that Thomas Morgan observed in 1912 was 17 percent. A crossover frequency between 0 percent and 50 percent indicates that the genes are on the same chromosome and crossover sometimes occurs.
 {{< /mediafigure >}}
 
-{{< selfcheck question="In a test cross for two characteristics such as the one here, can the recombinant offspring's predicted frequency be 60 percent? Why or why not?" hint="Look at the range of recombinant percentages the four panels show, from completely linked to completely unlinked." >}}
+{{< selfcheck question="In a test cross for two characteristics such as the one shown here, can the predicted frequency of recombinant offspring be 60 percent? Why or why not?" hint="Compare the notes under the four panels of the figure above." >}}
 No. The predicted frequency of recombinant offspring ranges from 0% (for linked traits) to 50% (for unlinked traits).
 ===CHECKS===
 the predicted frequency of recombinant offspring ranges from 0% to 50%
@@ -76,7 +76,7 @@ This genetic map orders *Drosophila* genes on the basis of recombination frequen
 {{< multiplechoice
   question="Which of the following statements is true?"
   answer="Recombination of the red/brown eye and long/short aristae alleles will occur more frequently than recombination of the alleles for wing length and body color."
-  hint="Genes farther apart on the map recombine more often; compare each pair's distance along the chromosome bar."
+  hint="Read the gene positions on the genetic map, then the paragraph on Sturtevant's assumptions below it."
 >}}
 Recombination of the body color and red/cinnabar eye alleles will occur more frequently than recombination of the alleles for wing length and aristae length.
 Recombination of the body color and aristae length alleles will occur more frequently than recombination of red/brown eye alleles and the aristae length alleles.
@@ -117,7 +117,13 @@ Sutton and Boveri's Chromosomal Theory of Inheritance states that chromosomes ar
 
 ### Discuss Sutton’s Chromosomal Theory of Inheritance
 
-{{< selfcheck question="Explain how the Chromosomal Theory of Inheritance helped to advance our understanding of genetics." hint="Think about what a chromosome's structure as a linear array of genes explained, beyond what Mendel's model alone could." >}}
+{{< textin
+  question="The Key terms define the Chromosomal Theory of Inheritance as proposing that chromosomes are the genes' vehicles and that their behavior during ________ is the physical basis of the inheritance patterns Mendel observed."
+  answer="meiosis"
+  hint="Reread the Key terms entry for this theory."
+>}}
+
+{{< selfcheck question="Explain how the Chromosomal Theory of Inheritance helped to advance our understanding of genetics." hint="Reread Genetic Linkage and Distances and the section summary." >}}
 The Chromosomal Theory of Inheritance proposed that genes reside on chromosomes. The understanding that chromosomes are linear arrays of genes explained linkage, and crossing over explained recombination.
 ===CHECKS===
 the Chromosomal Theory of Inheritance proposed that genes reside on chromosomes
@@ -125,12 +131,6 @@ chromosomes are linear arrays of genes
 linear arrays of genes explained linkage
 crossing over explained recombination
 {{< /selfcheck >}}
-
-{{< textin
-  question="The theory proposing that chromosomes are the vehicles of genes, and that their behavior during meiosis is the physical basis of the inheritance patterns Mendel observed, is called the ________."
-  answer="Chromosomal Theory of Inheritance"
-  hint="Sutton and Boveri each proposed it independently in 1902."
->}}
 
 {{< textin
   question="Sutton and Boveri's Chromosomal Theory of Inheritance states that chromosomes are the vehicles of ________."
@@ -141,10 +141,17 @@ crossing over explained recombination
 
 ### Describe genetic linkage
 
+{{< textin
+  question="Progeny that exhibit the same allelic combination as their parents are called ________."
+  answer="parental types"
+  accept="parental"
+  hint="Look at the paragraph that works through the AaBb test-cross example."
+>}}
+
 {{< multiplechoice
   question="X-linked recessive traits in humans (or in *Drosophila*) are observed ________."
   answer="in more males than females"
-  hint="Males are hemizygous for the X chromosome, so a single copy of a recessive X-linked allele is enough for the trait to appear."
+  hint="This section does not treat it; reread X-Linked Traits in Section 12.2."
 >}}
 in more males than females
 in more females than males
@@ -155,7 +162,7 @@ in different distributions depending on the trait
 {{< multiplechoice
   question="Which recombination frequency corresponds to perfect linkage and violates the law of independent assortment?"
   answer="0"
-  hint="Perfect linkage means the alleles on a chromosome are always inherited together, so no recombinant offspring appear."
+  hint="Reread the paragraph in Genetic Maps that begins “By representing alleles in a linear map.”"
 >}}
 0
 0.25
@@ -163,19 +170,19 @@ in different distributions depending on the trait
 0.75
 {{< /multiplechoice >}}
 
-{{< textin
-  question="According to the section summary, chromosome behavior involves segregation, independent assortment, and occasionally, ________."
-  answer="linkage"
-  accept="genetic linkage"
-  hint="This is the phenomenon that departs from Mendel's predicted ratios when genes share a chromosome."
->}}
-
 ### Explain the process of homologous recombination, or crossing over
+
+{{< textin
+  question="Progeny that result from homologous recombination and exhibit a different allele combination compared with their parents are called ________."
+  answer="nonparental type"
+  accept="recombinant type|nonparental|recombinant|nonparental (recombinant) type|non-parental type"
+  hint="Look at the paragraph that works through the AaBb test-cross example."
+>}}
 
 {{< multiplechoice
   question="The first suggestion that chromosomes may physically exchange segments came from the microscopic identification of ________."
   answer="chiasmata"
-  hint="Frans Janssens observed these points of contact between chromatids before the first meiotic division, in 1909."
+  hint="Reread the opening paragraph of the subsection on crossing over."
 >}}
 synapsis
 sister chromatids
@@ -183,37 +190,30 @@ chiasmata
 alleles
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Reciprocal physical exchange of chromosome segments between paired chromosomes during meiosis is a process scientists call ________."
-  answer="homologous recombination"
-  accept="crossing over"
-  hint="Frans Janssens's 1909 observations of chiasmata were the first evidence of it; Sturtevant used its frequency between genes to build the first chromosome map."
->}}
-
 {{< multiplechoice
-  question="Whereas linkage causes alleles on the same chromosome to be inherited together, ________ biases alleles toward an independent inheritance pattern, according to the section summary."
-  answer="homologous recombination"
-  hint="It is the process this section also calls “crossing over.”"
+  question="In 1931, Barbara McClintock and Harriet Creighton demonstrated the crossover of homologous chromosomes in which organism?"
+  answer="corn plants"
+  hint="Reread the last paragraph of Genetic Maps, before the Link to Learning."
 >}}
-recombination frequency
-homologous recombination
-the Chromosomal Theory of Inheritance
-parental types
+grasshoppers
+sea urchins
+corn plants
+pea plants
 {{< /multiplechoice >}}
 
 ### Describe chromosome creation
 
 {{< textin
-  question="The map-distance unit Sturtevant used for his first chromosome map, in which a 0.01 recombination frequency corresponds to a distance of 1, is abbreviated with two letters."
+  question="The relative distance on a genetic map that corresponds to a 0.01 recombination frequency is one ________."
   answer="centimorgan"
   accept="cM|map unit"
-  hint="It is spelled out in the Key terms list above."
+  hint="Look at the note below the genetic map and the end of the paragraph on Sturtevant's assumptions."
 >}}
 
 {{< multiplechoice
   question="Who created the first chromosome map by mathematically analyzing his laboratory's recombination data over the course of one night?"
   answer="Alfred Sturtevant"
-  hint="He was an undergraduate student in Morgan's laboratory in 1913."
+  hint="Reread the first two paragraphs of Genetic Maps."
 >}}
 Alfred Sturtevant
 Thomas Hunt Morgan
@@ -225,7 +225,7 @@ Theodor Boveri
   question="According to the section summary, Sturtevant devised a method to assess recombination frequency and infer linked genes' relative ________ on a chromosome."
   answer="positions and distances"
   accept="positions|distances|distances and positions"
-  hint="This is exactly what building the first chromosome map required inferring from the recombination data."
+  hint="Reread the section summary's third sentence."
 >}}
 
 ### Calculate the distances between three genes on a chromosome using a three-point test cross
@@ -233,7 +233,7 @@ Theodor Boveri
 {{< multiplechoice
   question="Which recombination frequency corresponds to independent assortment and the absence of linkage?"
   answer="0.50"
-  hint="At this frequency, every allele combination — parental and nonparental alike — appears equally often, exactly as it would for unlinked genes."
+  hint="Reread the paragraph in Genetic Maps that begins “By representing alleles in a linear map.”"
 >}}
 0
 0.25
@@ -244,7 +244,7 @@ Theodor Boveri
 {{< multiplechoice
   question="According to the genetic map described in the text, the gene for body color sits at 48.5 cM and the gene for wing length sits at 65.5 cM. What is the map distance between these two genes?"
   answer="17 cM"
-  hint="Subtract the smaller map position from the larger one, exactly as the text does for these two genes."
+  hint="Reread the paragraph right after the genetic map figure, which works out this distance."
 >}}
 17 cM
 48.5 cM
@@ -260,4 +260,4 @@ Theodor Boveri
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 13.1: Chromosomal Theory and Genetic Linkage](https://openstax.org/books/biology-2e/pages/13-1-chromosomal-theory-and-genetic-linkage) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_13_01_02 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a colored illustrated diagram, not a photograph), its source alt (a letter-spaced, allele-by-allele description) rewritten from the image with the full panel-by-panel walkthrough moved into a longdesc; a longdesc also added for the Figure_13_01_03 chromosome map, since its full table of gene positions is not carried by the one-line caption; allele wild-type superscripts set as the Unicode plus (b⁺, vg⁺) rather than the source's italicized `<sup>+</sup>` markup, for a single consistent glyph; the Key terms entry for "centimorgan (cM)" corrected from a printed "a 0,01 recombination frequency" to "a 0.01 recombination frequency" — the source's own comma-for-decimal-point typo, present in both the pinned CNXML and the printed PDF Key Terms list, and contradicted by this same section's own later sentence using a period ("a 0.01 recombination frequency corresponds to 1 cM") — reported as a source defect; both Visual Connection notes kept in the body immediately after their figures: the recombinant-frequency question (keyed with a prose solution) rendered as a self-check, and the "which statement is true" genetic-map question rendered as multiple choice, since the source keys it to a lettered option; the interactive note rendered as a Link to Learning callout with descriptive anchor text in place of the source's bare "here"; the end-of-section Review Questions and Critical Thinking Question adapted into the closing interactive Practice block; two key-term recall items (Chromosomal Theory of Inheritance, homologous recombination/crossing over) added from the glossary; and, because no source exercise or glossary term in this section tests "Describe chromosome creation" or "Calculate the distances between three genes on a chromosome using a three-point test cross" as printed, three Practice items for those two objectives are author-written strictly from the section's own paragraphs about Sturtevant's overnight construction of the first chromosome map and its worked 65.5 − 48.5 = 17 cM distance calculation between two mapped genes — the section computes pairwise map distance from recombination frequency but does not present a three-point test cross; the surname of the cytologist who observed chiasmata corrected from the source’s "Frans Janssen" to "Frans Janssens" in prose and hints (reported as a source defect); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and five summary-derived items added, one per objective group to raise each to three (the theory's genes-as-heredity-vehicles clause, the summary's "occasionally, linkage" clause, the summary's linkage-versus-recombination contrast clause, the summary's "relative positions and distances" clause, and the summary's "serial order" assumption clause), each a cloze textin or select-the-term multiple choice built strictly from the section's own `Section Summary` sentences. One date is corrected with a visible Source note: Mendel's heredity research begins in 1856, as this book's own Mendel chapter says, not 1843 (erratum 398).</small>
+<small>This section is adapted from [Biology 2e, Section 13.1: Chromosomal Theory and Genetic Linkage](https://openstax.org/books/biology-2e/pages/13-1-chromosomal-theory-and-genetic-linkage) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_13_01_02 re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a colored illustrated diagram, not a photograph), its source alt (a letter-spaced, allele-by-allele description) rewritten from the image with the full panel-by-panel walkthrough moved into a longdesc; a longdesc also added for the Figure_13_01_03 chromosome map, since its full table of gene positions is not carried by the one-line caption; allele wild-type superscripts set as the Unicode plus (b⁺, vg⁺) rather than the source's italicized `<sup>+</sup>` markup, for a single consistent glyph; the Key terms entry for "centimorgan (cM)" corrected from a printed "a 0,01 recombination frequency" to "a 0.01 recombination frequency" — the source's own comma-for-decimal-point typo, present in both the pinned CNXML and the printed PDF Key Terms list, and contradicted by this same section's own later sentence using a period ("a 0.01 recombination frequency corresponds to 1 cM") — reported as a source defect; both Visual Connection notes kept in the body immediately after their figures: the recombinant-frequency question (keyed with a prose solution) rendered as a self-check, and the "which statement is true" genetic-map question rendered as multiple choice, since the source keys it to a lettered option; the interactive note rendered as a Link to Learning callout with descriptive anchor text in place of the source's bare "here"; the end-of-section Review Questions and Critical Thinking Question adapted into the closing interactive Practice block; four key-term recall items added from the glossary (parental types; nonparental type; centimorgan; and a cloze of the Chromosomal Theory of Inheritance's own Key terms definition, keyed "meiosis"); three multiple-choice Practice items author-written strictly from the section's own paragraphs — one on McClintock and Creighton's 1931 corn-plant demonstration of crossing over and, because no source exercise or glossary term in this section tests "Describe chromosome creation" or "Calculate the distances between three genes on a chromosome using a three-point test cross" as printed, two on Sturtevant's overnight construction of the first chromosome map and its worked 65.5 − 48.5 = 17 cM distance calculation between two mapped genes — the section computes pairwise map distance from recombination frequency but does not present a three-point test cross; the surname of the cytologist who observed chiasmata corrected from the source’s "Frans Janssen" to "Frans Janssens" in prose and hints (reported as a source defect); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and three summary-derived cloze textins added (the theory's genes-as-heredity-vehicles clause, the summary's "relative positions and distances" clause, and the summary's "serial order" assumption clause), each built strictly from the section's own `Section Summary` sentences. Practice items are grouped by objective, so the Review Questions do not keep the source's relative order: the perfect-linkage question comes before the chiasmata question and the independent-assortment question last. One date is corrected with a visible Source note: Mendel's heredity research begins in 1856, as this book's own Mendel chapter says, not 1843 (erratum 398).</small>

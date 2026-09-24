@@ -30,13 +30,13 @@ While van Leeuwenhoek is credited with the discovery of microorganisms, others b
 
 Van Leeuwenhoek's contemporary, the Englishman Robert Hooke (1635–1703), also made important contributions to microscopy, publishing in his book *Micrographia* (1665) many observations using compound microscopes. Viewing a thin sample of cork through his microscope, he was the first to observe the structures that we now know as cells (see the images below). Hooke described these structures as resembling "Honey-comb," and as "small Boxes or Bladders of Air," noting that each "Cavern, Bubble, or Cell" is distinct from the others (in Latin, "cell" literally means "small room"). They likely appeared to Hooke to be filled with air because the cork cells were dead, with only the rigid cell walls providing the structure.
 
-{{< mediafigure src="microbiology/OSC_Microbio_02_02_Hooke" alt="(a) An engraving of a compound microscope: a tall body tube with an eyepiece at the top stands beside a candle, with a large lens positioned to focus the candle's light onto a specimen stage below the tube. (b) An engraving of two adjoining irregular patches of cork tissue as seen through the microscope, the left patch filled with rows of small, roughly rectangular cells and the right with a denser mass of small round pores; a sprig with leaves is drawn beneath the circular field of view." kind="diagram" longdesc="Panel (a) shows the apparatus labeled with letters in Hooke's original plate: an oil lamp and a water-filled glass sphere focus light onto a small lens near the base, which illuminates the specimen mounted below the tall cylindrical microscope body; a separate eyepiece tube stands beside it. Panel (b) shows the circular microscope field divided into two large, irregular honeycomb-like regions, the left packed with small rectangular cells in rows and the right with a denser mass of small round pores, with a small drawing of a leafy plant stem beneath the circle." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_02_02_Hooke" alt="(a) An engraving of a compound microscope: a tall body tube with an eyepiece at the top stands beside an oil lamp, with a large water-filled glass sphere and a smaller tilted lens positioned to focus the lamp's light onto a specimen below the tube. (b) An engraving of two adjoining irregular patches of cork tissue as seen through the microscope, the left patch filled with rows of small, roughly rectangular cells and the right with a denser mass of small round pores; a sprig with leaves is drawn beneath the circular field of view." kind="diagram" longdesc="Panel (a) shows two stands from Hooke's original plate, labeled Fig. 5 and Fig. 6. Fig. 5, at left, is an oil lamp (a flask with a burning wick) and a large water-filled glass sphere, both carried on one upright rod; light from the flame passes through the sphere, and a tilted lens on an arm reaching over to Fig. 6's base plate focuses it onto the specimen mounted on a pin on that plate. Fig. 6 is the microscope itself: a tall, ornately engraved body tube held at an angle on its own upright rod, with a single eyepiece at the top and its narrow nose pointing down at the specimen. No second tube and no second light source are drawn. Panel (b), headed Fig. 1 beneath a small handwritten title about cork in two different sections, shows a circular field divided into two large irregular regions: the left one, lettered B, packed with small rectangular cells in rows, and the right one, lettered A, a denser honeycomb of small round pores. Beneath the circle, labeled Fig. 2, is a small drawing of a leafy plant sprig." >}}
 Robert Hooke used his (a) compound microscope to view (b) cork cells. Both of these engravings are from his seminal work *Micrographia*, published in 1665.
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
-{{< sortbins question="Explain the difference between simple and compound microscopes by sorting each phrase under the type of microscope it describes." hint="Count how many lenses light passes through in each type, and recall who used which kind." >}}
+{{< sortbins question="Explain the difference between simple and compound microscopes by sorting each phrase under the type of microscope it describes." hint="Reread Early Microscopes and the caption of the engravings from *Micrographia*." >}}
 {"bins": ["Simple microscope", "Compound microscope"],
  "items": [
   {"label": "light is passed through just one lens", "bin": 0},
@@ -45,7 +45,7 @@ Robert Hooke used his (a) compound microscope to view (b) cork cells. Both of th
   {"label": "used by Robert Hooke to view cork cells", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="Compare and contrast the contributions of van Leeuwenhoek, Hooke, and Galileo to early microscopy." hint="Think about what each man observed or built, and with which kind of microscope." >}}
+{{< selfcheck question="Compare and contrast the contributions of van Leeuwenhoek, Hooke, and Galileo to early microscopy." hint="Reread Early Microscopes." >}}
 Antonie van Leeuwenhoek is credited as the first person to create microscopes powerful enough to view microbes; using a simple microscope, he observed single-celled organisms and reported his findings to the Royal Society of London in 1674. Robert Hooke, using a compound microscope, was the first to observe and describe the structures we now call cells, in a thin sample of cork. Galileo Galilei, more famous for developing the telescope, was also one of the pioneers of microscopy and used a compound microscope to examine insect parts.
 ===CHECKS===
 van Leeuwenhoek is credited as the first person to create microscopes powerful enough to view microbes
@@ -85,7 +85,7 @@ Zaccharias Janssen, along with his father Hans, may have invented the telescope,
 {{< multiplechoice
   question="Who was the first to describe “cells” in dead cork tissue?"
   answer="Robert Hooke"
-  hint="This scientist published his observations of cork in his 1665 book *Micrographia*."
+  hint="Reread the third paragraph of Early Microscopes."
 >}}
 Hans Janssen
 Zaccharias Janssen
@@ -96,7 +96,7 @@ Robert Hooke
 {{< multiplechoice
   question="Who is the probable inventor of the compound microscope?"
   answer="Zaccharias Janssen"
-  hint="This spectacle-maker, working with his father, may also have invented the telescope, though the historical evidence is inconclusive."
+  hint="Reread the first paragraph of the Micro Connection box."
 >}}
 Girolamo Fracastoro
 Zaccharias Janssen
@@ -107,7 +107,7 @@ Robert Hooke
 {{< multiplechoice
   question="Who is credited with the first observation of microbes, made using microscopes he built himself?"
   answer="Antonie van Leeuwenhoek"
-  hint="This scientist began his career selling fabrics before turning to lens making, and reported his observations to the Royal Society of London in 1674."
+  hint="Reread the first paragraph of Early Microscopes."
 >}}
 Antonie van Leeuwenhoek
 Robert Hooke
@@ -115,7 +115,7 @@ Galileo Galilei
 Zaccharias Janssen
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is Antonie van Leeuwenhoek's work much better known than that of Zaccharias Janssen?" hint="Think about who documented and publicized his work, and who did not." >}}
+{{< selfcheck question="Why is Antonie van Leeuwenhoek's work much better known than that of Zaccharias Janssen?" hint="Reread the Micro Connection box." >}}
 The Janssens were secretive about their work and never published, so little is known for sure about them. By contrast, van Leeuwenhoek's friend, the prominent physician Reinier de Graaf, wrote a letter to the editor of the *Philosophical Transactions of the Royal Society of London* calling attention to van Leeuwenhoek's powerful microscopes, and from 1673 onward van Leeuwenhoek began regularly submitting letters to the Royal Society detailing his observations. When his 1674 report on single-celled organisms was confirmed by a Royal Society delegation, he enjoyed considerable celebrity.
 ===CHECKS===
 The Janssens were secretive about their work and never published
@@ -124,7 +124,7 @@ van Leeuwenhoek began regularly submitting letters to the Royal Society detailin
 his 1674 report ... was confirmed by a Royal Society delegation
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why did the cork cells observed by Robert Hooke appear to be empty, as opposed to being full of other structures?" hint="Think about whether the cork sample was living tissue, and what would have been left behind if it was not." >}}
+{{< selfcheck question="Why did the cork cells observed by Robert Hooke appear to be empty, as opposed to being full of other structures?" hint="Reread the last sentence of the third paragraph of Early Microscopes." >}}
 The cork cells likely appeared to Hooke to be filled with air because the cork cells were dead, with only the rigid cell walls providing the structure.
 ===CHECKS===
 the cork cells were dead
@@ -137,26 +137,21 @@ only the rigid cell walls providing the structure
   question="A microscope that uses multiple lenses is called a ________ microscope."
   answer="compound"
   accept="compound microscope"
-  hint="This is the type of microscope Galileo used to examine insect parts, passing light through two sets of lenses."
+  hint="Reread the second paragraph of Early Microscopes."
 >}}
-
-{{< multiplechoice
-  question="Which of the following distinguishes a compound microscope from a simple microscope, according to this section's summary?"
-  answer="A compound microscope has multiple lenses, while a simple microscope has a single lens"
-  hint="Recall how many lenses each type uses to focus light from the specimen."
->}}
-A compound microscope has multiple lenses, while a simple microscope has a single lens
-A compound microscope uses ultraviolet light, while a simple microscope uses visible light
-A compound microscope requires a specimen stain, while a simple microscope does not
-A compound microscope uses digital sensors, while a simple microscope uses mirrors
-{{< /multiplechoice >}}
 
 {{< textin
   question="________ — a type of microscope with only one lens to focus light from the specimen."
   answer="simple microscope"
-  hint="This is the type of microscope Antonie van Leeuwenhoek used to observe microorganisms."
+  hint="Reread the second paragraph of Early Microscopes."
+>}}
+
+{{< textin
+  question="Even though van Leeuwenhoek's microscopes were simple microscopes, they were more powerful and provided better ________ than the compound microscopes of his day."
+  answer="resolution"
+  hint="Reread the caption of the three-panel portrait figure in Early Microscopes."
 >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 2.2: Peering Into the Invisible World](https://openstax.org/books/microbiology/pages/2-2-peering-into-the-invisible-world) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP; `kind="photo"` set on the van Leeuwenhoek/Galileo composite (an oil portrait, a photographed replica instrument, and a second oil portrait — all photographic reproductions, none drawn) and `kind="diagram"` set on the Hooke composite and the Janssen portrait (both are 17th-century engravings, genuinely drawn), overriding the media manifest's JPEG-based photo guess for all three; the source alt text rewritten for all three figures to describe what is visibly shown rather than restate "Photo a/b/c is of…"; a longdesc added for the Hooke figure, walking each panel; the four figure cross-references inside running prose ("see [Figure 2.9]" twice, "[Figure 2.10]", and "[Figure 2.11]") replaced with plain descriptive phrases pointing at the adjacent figure; the Micro Connection box rendered as a callout, its figure kept at the end of the box in the source's own document order even though it is referenced inline in the box's first paragraph; of the two Check Your Understanding bullets, the first (the difference between simple and compound microscopes) is rendered as a `sortbins` graded from this section's own sentences (1 Check Your Understanding question graded from the module's own sentences rather than answered in prose; the source prints no key for it) and the second (comparing van Leeuwenhoek, Hooke, and Galileo) remains a body self-check with a model answer and rubric assembled from this section's own preceding text; model answers for the section's two Short Answer questions are written from this section's text, because the source prints no answer key for either; key terms compiled from the module's two defined terms and the book's Glossary appendix (both taken from the glossary; none from a defining sentence); the end-of-section Multiple Choice, Fill in the Blank, and Short Answer questions adapted into the closing interactive Practice block; because this section's five source exercises could not fill both objective groups to the book's floor, three filler items were added and ledgered: one Multiple Choice built from this section's own text (who is credited with the first observation of microbes), one Multiple Choice built from a single sentence of the section's Summary (the lens-count distinction between simple and compound microscopes), and one term-recall text item built from the Key terms block (simple microscope); this section has no Clinical Focus box; the Hooke plate's alt and longdesc describe the right-hand cork patch as a mass of round pores rather than rows of rectangles, because the source alt's "each of these regions is filled with tiny white rectangles arranged in rows" is contradicted by the vendored image (erratum 816).</small>
+<small>This section is adapted from [Microbiology, Section 2.2: Peering Into the Invisible World](https://openstax.org/books/microbiology/pages/2-2-peering-into-the-invisible-world) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP; `kind="photo"` set on the van Leeuwenhoek/Galileo composite (an oil portrait, a photographed replica instrument, and a second oil portrait — all photographic reproductions, none drawn) and `kind="diagram"` set on the Hooke composite and the Janssen portrait (both are 17th-century engravings, genuinely drawn), overriding the media manifest's JPEG-based photo guess for all three; the source alt text rewritten for all three figures to describe what is visibly shown rather than restate "Photo a/b/c is of…"; a longdesc added for the Hooke figure, walking each panel; the four figure cross-references inside running prose ("see [Figure 2.9]" twice, "[Figure 2.10]", and "[Figure 2.11]") replaced with plain descriptive phrases pointing at the adjacent figure; the Micro Connection box rendered as a callout, its figure kept at the end of the box in the source's own document order even though it is referenced inline in the box's first paragraph; of the two Check Your Understanding bullets, the first (the difference between simple and compound microscopes) is rendered as a `sortbins` graded from this section's own sentences (1 Check Your Understanding question graded from the module's own sentences rather than answered in prose; the source prints no key for it) and the second (comparing van Leeuwenhoek, Hooke, and Galileo) remains a body self-check with a model answer and rubric assembled from this section's own preceding text; model answers for the section's two Short Answer questions are written from this section's text, because the source prints no answer key for either; key terms compiled from the module's two defined terms and the book's Glossary appendix (both taken from the glossary; none from a defining sentence); the end-of-section Multiple Choice, Fill in the Blank, and Short Answer questions adapted into the closing interactive Practice block; because this section's five source exercises could not fill both objective groups to the book's floor, three filler items were added and ledgered: one Multiple Choice built from this section's own text (who is credited with the first observation of microbes), one cloze text-recall item built from a single sentence of the van Leeuwenhoek figure's caption (his simple microscopes gave better resolution than the compound microscopes of his day; the "(as seen in this replica)" aside dropped from the prompt), and one term-recall text item built from the Key terms block (simple microscope); this section has no Clinical Focus box; the Hooke plate's alt and longdesc describe the right-hand cork patch as a mass of round pores rather than rows of rectangles, because the source alt's "each of these regions is filled with tiny white rectangles arranged in rows" is contradicted by the vendored image (erratum 816); the source Multiple Choice "Who is the probable inventor of the compound microscope?" prints "compound," the key of the source Fill in the Blank "A microscope that uses multiple lenses is called a ________ microscope," four items below it — the two sit under different objectives, so no reorder within a group can place the blank first, and both are kept verbatim.</small>

@@ -57,7 +57,7 @@ Gel electrophoresis is a technique commonly used to separate biological molecule
 
 Due to its negatively charged backbone, DNA is strongly attracted to a positive electrode. In agarose gel electrophoresis, the gel is oriented horizontally in a buffer solution. Samples are loaded into sample wells on the side of the gel closest to the negative electrode, then drawn through the molecular sieve of the agarose matrix toward the positive electrode. The agarose matrix impedes the movement of larger molecules through the gel, whereas smaller molecules pass through more readily. Thus, the distance of migration is inversely correlated to the size of the DNA fragment, with smaller fragments traveling a longer distance through the gel. Sizes of DNA fragments within a sample can be estimated by comparison to fragments of known size in a DNA ladder also run on the same gel. To separate very large DNA fragments, such as chromosomes or viral genomes, agarose gel electrophoresis can be modified by periodically alternating the orientation of the electric field during pulsed-field gel electrophoresis (PFGE). In PFGE, smaller fragments can reorient themselves and migrate slightly faster than larger fragments and this technique can thus serve to separate very large fragments that would otherwise travel together during standard agarose gel electrophoresis. In any of these electrophoresis techniques, the locations of the DNA or RNA fragments in the gel can be detected by various methods. One common method is adding ethidium bromide, a stain that inserts into the nucleic acids at non-specific locations and can be visualized when exposed to ultraviolet light. Other stains that are safer than ethidium bromide, a potential carcinogen, are now available.
 
-{{< mediafigure src="microbiology/OSC_Microbio_12_02_AgaroseGE" alt="(a) A six-step diagram of agarose gel electrophoresis, ending with DNA migrating toward the positive electrode and a DNA ladder of known sizes (2000, 1500, 1000, 750, 500, 250 bp) used to size sample bands. (b) A researcher pipetting samples into a gel. (c) A completed gel under ultraviolet light, with a DNA ladder in the outer lanes and seven sample lanes of glowing bands between them." longdesc="Panel (a), six numbered steps: 1) an agarose-and-buffer solution is poured from a beaker into a plastic tray fitted with a comb at one end; 2) once cooled, the comb is removed, leaving a row of sample wells in the set gel; 3) micropipette tips add dye-colored DNA samples into the wells; 4) the loaded tray sits in a chamber wired to a power source, with the negative electrode on the side nearest the wells and the positive electrode on the far side; 5) DNA, being negatively charged, migrates toward the positive electrode, with smaller fragments (shown as bands lower in the gel) traveling faster and farther than larger fragments (bands higher up, closer to the wells); 6) one lane holds a DNA ladder of fragments with known sizes, labeled top to bottom 2000 bp, 1500 bp, 1000 bp, 750 bp, 500 bp, and 250 bp, used to estimate the sizes of the sample bands in the neighboring lanes. Panel (b): a photograph of a gloved researcher using a multichannel pipette to load samples into a gel tray. Panel (c): a photograph of a completed gel photographed under ultraviolet light, with a DNA ladder's evenly spaced glowing bands in the outer lanes and seven sample lanes of unevenly spaced glowing bands in between." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_12_02_AgaroseGE" alt="(a) A six-step diagram of agarose gel electrophoresis, ending with DNA migrating toward the positive electrode and a DNA ladder of known sizes (2000, 1500, 1000, 750, 500, 250 bp) used to size sample bands. (b) A researcher pipetting samples into a gel. (c) A completed gel under ultraviolet light, with a DNA ladder in the outer lanes and seven sample lanes of glowing bands between them." longdesc="Panel (a), six numbered steps: 1) an agarose-and-buffer solution is poured from a flask into a plastic tray fitted with a comb at one end; 2) once cooled, the comb is removed, leaving a row of sample wells in the set gel; 3) micropipette tips add dye-colored DNA samples into the wells; 4) the loaded tray sits in a chamber wired to a power source, with the negative electrode on the side nearest the wells and the positive electrode on the far side; 5) DNA, being negatively charged, migrates toward the positive electrode, with smaller fragments (shown as bands lower in the gel) traveling faster and farther than larger fragments (bands higher up, closer to the wells); 6) one lane holds a DNA ladder of fragments with known sizes, labeled top to bottom 2000 bp, 1500 bp, 1000 bp, 750 bp, 500 bp, and 250 bp, used to estimate the sizes of the sample bands in the neighboring lanes. Panel (b): a photograph of a gloved researcher using a multichannel pipette to load samples into a gel tray. Panel (c): a photograph of a completed gel photographed under ultraviolet light, with a DNA ladder's evenly spaced glowing bands in the outer lanes and seven sample lanes of unevenly spaced glowing bands in between." kind="diagram" >}}
 (a) The process of agarose gel electrophoresis. (b) A researcher loading samples into a gel. (c) This photograph shows a completed electrophoresis run on an agarose gel. The DNA ladder is located in lanes 1 and 9. Seven samples are located in lanes 2 through 8. The gel was stained with ethidium bromide and photographed under ultraviolet light. (credit a: modification of work by Magnus Manske; credit b: modification of work by U.S. Department of Agriculture; credit c: modification of work by James Jacob)
 {{< /mediafigure >}}
 
@@ -114,7 +114,7 @@ Explore [microchip technology](https://openstax.org/l/22intwebmictec) at this in
 {{< multiplechoice
   question="What does a DNA probe consist of?"
   answer="A single-stranded DNA fragment that is complementary to part of the gene of interest"
-  hint="Recall what kind of molecule the section says a researcher designs to find a gene of interest, and how many strands it has."
+  hint="Reread the second paragraph of Nucleic Acid Probing."
 >}}
 A double-stranded DNA fragment identical to the gene of interest
 A single-stranded RNA fragment complementary to the gene of interest
@@ -122,7 +122,7 @@ A single-stranded DNA fragment that is complementary to part of the gene of inte
 A labeled protein that binds specifically to the gene of interest
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is a Southern blot used after gel electrophoresis of a DNA digest?" hint="Recall what happens to a DNA probe and to the sample's nucleic acids when probing is attempted directly inside a gel." >}}
+{{< selfcheck question="Why is a Southern blot used after gel electrophoresis of a DNA digest?" hint="Reread the first paragraph of Southern Blots and Modifications." >}}
 Probing nucleic-acid samples directly within a gel is unsuccessful because as the DNA probe soaks into the gel, the sample's nucleic acids within the gel diffuse out. A Southern blot solves this by transferring the separated DNA fragments out of the gel onto a thin, positively charged membrane, where they stay put and can be exposed to a labeled DNA probe for detection.
 ===CHECKS===
 probing nucleic-acid samples directly within a gel is unsuccessful because ... the sample's nucleic acids within the gel diffuse out
@@ -147,7 +147,7 @@ A variation of gel electrophoresis, called **polyacrylamide gel electrophoresis 
 {{< multiplechoice
   question="On what basis are proteins separated in SDS-PAGE?"
   answer="Size only"
-  hint="Recall what SDS does to a protein's native charge before the sample is loaded onto the gel."
+  hint="Reread the paragraph just above the SDS-PAGE figure."
 >}}
 Charge only
 Size only
@@ -260,7 +260,7 @@ Strains of infectious bacteria, such as *C. difficile,* can be identified by mol
 
 **Check Your Understanding**
 
-{{< selfcheck question="How is PCR similar to the natural DNA replication process in cells? How is it different?" hint="Compare what PCR and natural replication both need to synthesize new strands, then recall what PCR does that natural replication does not: initiate at specific chosen sequences using laboratory-designed components." >}}
+{{< selfcheck question="How is PCR similar to the natural DNA replication process in cells? How is it different?" hint="Reread the Polymerase Chain Reaction (PCR) subsection, especially its last paragraph." >}}
 PCR is similar to natural DNA replication in that both use a DNA polymerase, primers, and the four deoxynucleotides to synthesize new complementary strands from a single-stranded template. PCR differs from natural replication in several ways: natural replication copies an entire genome and initiates at one or more origin sites using primers built during replication, whereas PCR targets a specific, chosen region of a DNA sample using sequence-specific primers that are chemically synthesized beforehand and uses a heat-stable DNA polymerase in a laboratory reaction outside of any cell.
 ===CHECKS===
 both use a DNA polymerase, primers, and the four deoxynucleotides
@@ -269,15 +269,15 @@ PCR targets a specific, chosen region of a DNA sample using sequence-specific pr
 uses a heat-stable DNA polymerase in a laboratory reaction outside of any cell
 {{< /selfcheck >}}
 
-{{< selfcheck question="Compare RT-PCR and qPCR in terms of their respective purposes." hint="Name what RT-PCR is used to detect and what real-time PCR (qPCR) is used to quantify." >}}
+{{< selfcheck question="Compare RT-PCR and qPCR in terms of their respective purposes." hint="Reread the PCR Variations subsection." >}}
 RT-PCR (reverse transcriptase PCR) is used for obtaining DNA copies of a specific mRNA molecule and can detect whether a specific gene has been expressed in a sample. Real-time PCR, also known as quantitative PCR (qPCR), instead uses fluorescence to monitor the increase in double-stranded template during a PCR reaction as it occurs, allowing researchers to quantify the amount of the original target sequence.
 ===CHECKS===
 RT-PCR ... is used for obtaining DNA copies of a specific mRNA molecule
 RT-PCR can detect whether a specific gene has been expressed in a sample
-qPCR ... allowing ... quantitation of the original target sequence
+qPCR ... allowing researchers to quantify the amount of the original target sequence
 {{< /selfcheck >}}
 
-{{< selfcheck question="In chain-termination sequencing, how is the identity of each nucleotide in a sequence determined?" hint="Recall what happens to elongation when a ddNTP is incorporated, and how the resulting fragments are later read one by one." >}}
+{{< selfcheck question="In chain-termination sequencing, how is the identity of each nucleotide in a sequence determined?" hint="Reread the first two paragraphs of DNA Sequencing." >}}
 Each ddNTP used in the reaction is labeled with a different colored fluorochrome, and whenever a ddNTP is randomly incorporated into a growing strand, it terminates replication of that strand at that point. This produces a set of fragments of every possible length, each ending in a fluorescently labeled ddNTP. As these fragments are separated by size and pass a detector one at a time, the fluorescence color of each band is read in order, and that sequence of colors gives the nucleotide sequence of the template strand.
 ===CHECKS===
 each ddNTP ... is labeled with a different colored fluorochrome
@@ -319,10 +319,12 @@ the fluorescence color of each band ... produces the nucleotide sequence of the 
 
 ### Explain the use of nucleic acid probes to visualize specific DNA sequences
 
+{{< textin question="DNA often must first be isolated from bodily samples through chemical ________ methods before a DNA probe can be used to identify pathogens." answer="extraction" hint="Reread the last sentence of the second paragraph of Nucleic Acid Probing." >}}
+
 {{< multiplechoice
   question="Why is it important that a DNA probe be labeled with a molecular beacon?"
   answer="So that the probe and the DNA it binds to can be seen"
-  hint="The sentence introducing the molecular tag names what it lets researchers do once binding occurs."
+  hint="Reread the middle of the second paragraph of Nucleic Acid Probing."
 >}}
 So that the probe and the DNA it binds to can be seen
 So that the probe can replicate itself during PCR
@@ -330,31 +332,31 @@ So that the probe becomes single-stranded before hybridizing
 So that the probe binds more tightly to its target sequence
 {{< /multiplechoice >}}
 
-{{< textin question="The method of producing a photographic image from radioactive decay, used in molecular genetics to visualize radioactively labeled DNA probes that have hybridized to a sample, is called ________." answer="autoradiography" hint="Named where the text describes how a radioactive phosphorus tag on a DNA probe is detected." >}}
-
-{{< textin question="A single-stranded DNA fragment that is complementary to part of a gene of interest and different from other DNA sequences in the sample is called a ________." answer="DNA probe" hint="Name the artificially constructed piece of DNA introduced at the start of Nucleic Acid Probing." >}}
+{{< textin question="The method of producing a photographic image from radioactive decay, used in molecular genetics to visualize radioactively labeled DNA probes that have hybridized to a sample, is called ________." answer="autoradiography" hint="Reread the middle of the second paragraph of Nucleic Acid Probing." >}}
 
 ### Explain the use of gel electrophoresis to separate DNA fragments
+
+{{< textin question="In agarose gel electrophoresis, the distance of migration is inversely correlated to the size of the DNA fragment, with ________ fragments traveling a longer distance through the gel." answer="smaller" accept="shorter" hint="Reread the third paragraph of the gel electrophoresis subsection." >}}
 
 {{< multiplechoice
   question="In agarose gel electrophoresis, DNA will be attracted to the negative electrode."
   answer="False"
-  hint="Recall the charge of DNA's backbone and which electrode carries the opposite charge."
+  hint="Reread the first sentences of the third paragraph of the gel electrophoresis subsection."
 >}}
 True
 False
 {{< /multiplechoice >}}
 
-{{< textin question="To separate very large DNA fragments, such as chromosomes or viral genomes, agarose gel electrophoresis can be modified by periodically alternating the orientation of the electric field during ________." answer="pulsed-field gel electrophoresis" accept="PFGE" hint="Name the modified electrophoresis technique described for separating very large DNA fragments." >}}
-
-{{< textin question="A method for separating populations of DNA molecules of varying sizes by differential migration rates caused by a voltage gradient through a horizontal gel matrix is called ________." answer="agarose gel electrophoresis" hint="Name the electrophoresis technique that uses a horizontal gel matrix, introduced at the start of this subsection." >}}
+{{< textin question="To separate very large DNA fragments, such as chromosomes or viral genomes, agarose gel electrophoresis can be modified by periodically alternating the orientation of the electric field during ________." answer="pulsed-field gel electrophoresis" accept="PFGE" hint="Reread the middle of the third paragraph of the gel electrophoresis subsection." >}}
 
 ### Explain the principle of restriction fragment length polymorphism analysis and its uses
+
+{{< textin question="Forensic scientists use RFLP analysis as a form of DNA ________, which is useful for analyzing DNA obtained from crime scenes, suspects, and victims." answer="fingerprinting" hint="Reread the third paragraph of the subsection that follows the gel electrophoresis subsection." >}}
 
 {{< multiplechoice
   question="Which technique uses restriction enzyme digestion followed by agarose gel electrophoresis to generate a banding pattern for comparison to another sample processed in the same way?"
   answer="RFLP"
-  hint="Name the technique in the Restriction Fragment Length Polymorphism subsection that compares banding patterns from digested DNA samples."
+  hint="Reread the first paragraph of the subsection that follows the gel electrophoresis subsection."
 >}}
 qPCR
 RT-PCR
@@ -365,7 +367,7 @@ RFLP
 {{< multiplechoice
   question="All of the following techniques involve hybridization between single-stranded nucleic acid molecules *except*:"
   answer="RFLP analysis"
-  hint="Recall which of these four techniques compares restriction-digest banding patterns rather than using a labeled probe to detect a complementary sequence."
+  hint="Reread the first sentences of Southern Blots and Modifications and of Microarray Analysis."
 >}}
 Southern blot analysis
 RFLP analysis
@@ -373,41 +375,38 @@ northern blot analysis
 microarray analysis
 {{< /multiplechoice >}}
 
-{{< textin question="A genetic variant identified by differing numbers or sizes of DNA fragments generated after digesting a DNA sample with a restriction endonuclease is called ________." answer="restriction fragment length polymorphism" accept="RFLP" hint="Name the technique this whole subsection defines in its opening paragraph." >}}
-
 ### Compare and contrast Southern and northern blots
 
-{{< textin question="The ________ blot technique is used to find an RNA fragment within a sample that is complementary to a DNA probe." answer="northern" hint="Name the blot variation used for RNA, distinguished from the Southern blot used for DNA." >}}
-
 {{< multiplechoice
-  question="Which blot technique, developed by Sir Edwin Southern in 1975, is used to find a particular DNA sequence within a sample?"
-  answer="Southern blot"
-  hint="Name the technique after the scientist who developed it, described at the start of this subsection."
+  question="Which variation of the Southern blot transfers colonies representing different clones in a genomic library to a membrane by pressing the membrane onto the culture plate?"
+  answer="colony blot"
+  hint="Reread the paragraphs on the variations of the Southern blot."
 >}}
-Southern blot
-northern blot
-colony blot
 dot blot
+slot blot
+colony blot
+spot blot
 {{< /multiplechoice >}}
 
-{{< textin question="In the dot blot, slot blot, and spot blot variations of the Southern blot, the amount of target DNA present in a sample is estimated by measuring the ________ detected after hybridization with a DNA probe." answer="signal intensity" hint="Name the property of the probe's signal that these Southern blot variations measure instead of running an electrophoresis gel." >}}
+{{< textin question="The ________ blot technique is used to find an RNA fragment within a sample that is complementary to a DNA probe." answer="northern" hint="Reread the last paragraph of Southern Blots and Modifications." >}}
+
+{{< textin question="In the dot blot, slot blot, and spot blot variations of the Southern blot, the amount of target DNA present in a sample is estimated by measuring the ________ detected after hybridization with a DNA probe." answer="signal intensity" accept="intensity" hint="Reread the paragraph on the dot, slot, and spot blots." >}}
 
 ### Explain the principles and uses of microarray analysis
 
+{{< textin question="If both samples' nucleic acids hybridize to a spot on a microarray, then the spot will appear ________ due to the combination of the red and green dyes." answer="yellow" hint="Reread the fourth paragraph of Microarray Analysis." >}}
+
 {{< multiplechoice
-  question="In microarray analysis, what color would a spot on the microarray appear if only the sample labeled with the green fluorescent probe hybridizes there?"
-  answer="Green"
-  hint="Recall what happens to a spot's color when only ONE of the two labeled samples binds there, as opposed to both or neither."
+  question="Because of the expense of its detection equipment and analysis software, microarray technology is typically limited to which setting?"
+  answer="research settings"
+  hint="Reread the last paragraph of Microarray Analysis."
 >}}
-Red
-Green
-Yellow
-Black
+clinical laboratories
+forensic laboratories
+research settings
 {{< /multiplechoice >}}
 
-{{< textin question="A technique used to compare two samples of genomic DNA or cDNA by immobilizing DNA or cDNA fragments on a chip and labeling the samples with different fluorescent dyes is called ________." answer="microarray analysis" hint="Name the hybridization technique described at the start of this subsection." >}}
-
-{{< selfcheck question="What is the advantage of microarray analysis over northern blot analysis in monitoring changes in gene expression?" hint="Recall how many genes a microarray chip can examine at once, compared with the single mRNA sequence a northern blot probes for." >}}
+{{< selfcheck question="What is the advantage of microarray analysis over northern blot analysis in monitoring changes in gene expression?" hint="Reread Microarray Analysis and the northern-blot paragraph of Southern Blots and Modifications." >}}
 A northern blot can only detect the amount of one particular mRNA sequence at a time within a sample. Microarray analysis, by contrast, allows for the examination of many thousands of genes at once, since each slide can hold more than 30,000 different DNA fragment types, so it gives a much more holistic comparison of gene-expression patterns between two samples in a short amount of time.
 ===CHECKS===
 a northern blot ... detect the amount of ... mRNA ... within a sample
@@ -417,10 +416,12 @@ each slide can hold more than 30,000 different DNA fragment types
 
 ### Describe the methods used to separate and visualize protein variants
 
+{{< textin question="Following protein gel electrophoresis, proteins are visualized through staining, commonly with either Coomassie blue or a ________ stain." answer="silver" hint="Reread the last sentence of the paragraph just above the SDS-PAGE figure." >}}
+
 {{< multiplechoice
   question="Which technique is used to separate protein fragments based on size?"
   answer="polyacrylamide gel electrophoresis"
-  hint="Name the gel electrophoresis variation used for proteins rather than nucleic acids."
+  hint="Reread the paragraph just above the SDS-PAGE figure."
 >}}
 polyacrylamide gel electrophoresis
 Southern blot
@@ -431,7 +432,7 @@ polymerase chain reaction
 {{< multiplechoice
   question="When separating proteins strictly by size, why is exposure to SDS first required?"
   answer="SDS denatures proteins and coats them with a uniform negative charge so they separate only by size"
-  hint="Recall what SDS does to a protein's native charge before PAGE separates the sample."
+  hint="Reread the middle of the paragraph just above the SDS-PAGE figure."
 >}}
 SDS denatures proteins and coats them with a uniform negative charge so they separate only by size
 SDS increases the pore size of the polyacrylamide gel matrix
@@ -439,18 +440,16 @@ SDS attaches a fluorescent molecular beacon to each protein for visualization
 SDS amplifies the number of protein copies before electrophoresis
 {{< /multiplechoice >}}
 
-{{< textin question="A variation of gel electrophoresis using a vertical gel apparatus, commonly used for separating proteins, is called ________." answer="polyacrylamide gel electrophoresis" accept="PAGE" hint="Name the gel electrophoresis technique introduced at the start of this subsection." >}}
-
 ### Explain the method and uses of polymerase chain reaction and DNA sequencing
 
-{{< textin question="The PCR step during which the double-stranded template molecule becomes single-stranded is called ________." answer="denaturation" hint="Name the first of the three steps in each PCR cycle, carried out at about 95 °C." >}}
+{{< textin question="The PCR step during which the double-stranded template molecule becomes single-stranded is called ________." answer="denaturation" accept="denaturing" hint="Reread the second paragraph of the Polymerase Chain Reaction (PCR) subsection." >}}
 
-{{< textin question="The sequencing method involving the incorporation of ddNTPs is called ________." answer="Sanger sequencing" accept="dideoxy method|chain termination method|Sanger method|Sanger DNA sequencing" hint="Name the sequencing method introduced at the start of the DNA Sequencing subsection, also credited to the scientist who developed it." >}}
+{{< textin question="The sequencing method involving the incorporation of ddNTPs is called ________." answer="Sanger sequencing" accept="dideoxy method|chain termination method|Sanger method|Sanger DNA sequencing|Sanger|dideoxy sequencing|chain termination sequencing" hint="Reread the first paragraph of DNA Sequencing." >}}
 
 {{< multiplechoice
   question="Why must the DNA polymerase used during PCR be heat-stable?"
   answer="Because it must remain active at the ~95 °C used to separate the DNA strands"
-  hint="Recall which of the three PCR temperatures would destroy an ordinary, non-heat-stable polymerase."
+  hint="Reread the second paragraph of the Polymerase Chain Reaction (PCR) subsection."
 >}}
 Because it must remain active at the ~95 °C used to separate the DNA strands
 Because it must remain active at the ~50 °C used to anneal primers
@@ -458,7 +457,7 @@ Because it must survive the cold temperatures used to store DNA samples
 Because it must resist degradation by restriction enzymes during digestion
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Suppose you are working in a molecular biology laboratory and are having difficulty performing the PCR successfully. You decide to double-check the PCR protocol programmed into the thermal cycler and discover that the annealing temperature was programmed to be 65 °C instead of 50 °C, as you had intended. What effects would this mistake have on the PCR reaction? Refer to the PCR figure above." hint="Recall what happens during the annealing step, and consider whether a higher-than-intended temperature would help or hinder primers sticking to the template." >}}
+{{< selfcheck question="Suppose you are working in a molecular biology laboratory and are having difficulty performing the PCR successfully. You decide to double-check the PCR protocol programmed into the thermal cycler and discover that the annealing temperature was programmed to be 65 °C instead of 50 °C, as you had intended. What effects would this mistake have on the PCR reaction? Refer to the PCR figure above." hint="Reread the annealing step in the second paragraph of the Polymerase Chain Reaction (PCR) subsection." >}}
 During annealing, the DNA primers must stick to the template strands at a temperature low enough for their complementary sequences to base-pair; programming the thermal cycler to anneal at 65 °C instead of the intended 50 °C raises the temperature well above what the primers need to stick to their target sequences. At too high a temperature, the primers would not anneal properly to the template strands, so DNA polymerase would have little or no primed template to extend, and the reaction would fail to amplify the target sequence, producing little or no product after the programmed cycles.
 ===CHECKS===
 primers ... stick to the template strands ... low enough for their complementary sequences to base-pair
@@ -466,10 +465,10 @@ at too high a temperature, the primers would not anneal properly to the template
 the reaction would fail to amplify the target sequence
 {{< /selfcheck >}}
 
-{{< textin question="A variation of PCR used to obtain DNA copies of a specific mRNA molecule, beginning with the enzyme reverse transcriptase converting mRNA into cDNA, is called ________." answer="reverse transcriptase PCR" accept="RT-PCR" hint="Name the PCR variation described at the start of the PCR Variations subsection." >}}
+{{< textin question="A variation of PCR used to obtain DNA copies of a specific mRNA molecule, beginning with the enzyme reverse transcriptase converting mRNA into cDNA, is called ________." answer="reverse transcriptase PCR" accept="RT-PCR|reverse transcription PCR" hint="Name the PCR variation described at the start of the PCR Variations subsection." >}}
 
 {{< textin question="The group of automated techniques used for rapid DNA sequencing that laboratories have used since 2005 is called ________." answer="next generation sequencing" hint="Name the umbrella term for automated sequencing techniques introduced partway through the DNA Sequencing subsection." >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 12.2: Visualizing and Characterizing DNA, RNA, and Protein](https://openstax.org/books/microbiology/pages/12-2-visualizing-and-characterizing-dna-rna-and-protein) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the sixth objective's source text ("Describe the methods uses to separate and visualize protein variants") corrects the one-word grammatical error "uses" to "used." All thirteen source figures are re-encoded as WebP and rendered as mediafigures; the media manifest guesses `kind="photo"` for all thirteen (every source file is a JPEG), which is correct only for the Lyme-disease rash photo and the PCR-ribotyping gel photo — the other eleven are explicit `kind="diagram"` because each is a genuinely drawn, labeled diagram (including the AgaroseGE, PAGE, and Ribo_Rep figures, which are composites of drawn panels and photographs). The AgaroseGE alt's DNA-ladder sizes are corrected from the source's "2000 bp, 15000 bp, 1000 bp, 750 bp, 500 bp, 250 bp" to "2000, 1500, 1000, 750, 500, 250 bp," matching the ladder as printed in the artwork; the Microarray, ddNTP, and Ribotyping alts are rewritten from the image rather than the source alt, which respectively misspelled "reverse transcriptase" as "transciptase," misspelled "dideoxynucleotide" as "Dideeoxynucleotide" and "also" as "aso," and read "Javier's an matches" instead of naming that Javier's lane matches the reference lane above it — all four are known source-alt defects. The Case in Point figure's caption states "ribotype 27" while the gel image itself labels the matching reference lane "027"; this is a formatting difference rather than a factual error and is transcribed as printed. All seven body Check Your Understanding questions are rendered as body items at their note positions: three are graded (two multiple choice converted from the unkeyed "What does a DNA probe consist of?" and "On what basis are proteins separated in SDS-PAGE?" questions, each fixed by one module sentence and distractored from the module's own vocabulary) and four are self-checks with model answers and rubrics assembled only from this module's own sentences, because their honest answers require assembling more than one sentence or a paragraph-length comparison. The Critical Thinking question about a mis-programmed annealing temperature drops its dangling source cross-reference ("Refer to .") and instead names "the PCR figure above" as a referent; its answer requires an inference the module does not state outright, so it stays a self-check. Of the module's nine keyed source exercises, all three Multiple Choice, the one True/False (rendered as a two-option multiple choice), and two of the three Fill in the Blank items are adapted into Practice unchanged; the third Fill in the Blank ("Sanger sequencing, dideoxy method, or chain termination method") is rendered as a `textin` keyed to "Sanger sequencing" with the other three source-printed phrasings and "Sanger method" as `accept` alternates, each verified against the real text grader. Of the module's six unkeyed Short Answer and Critical Thinking questions, two Short Answer questions are graded as multiple choice from a single module sentence each (why a DNA probe needs a molecular beacon; why PCR's DNA polymerase must be heat-stable) with distractors built from this module's own vocabulary; the "advantage of microarray over northern blot" Critical Thinking question needs two sentences (the northern blot definition and the microarray-capacity sentence) and stays a self-check; the "difference between RT-PCR and qPCR" Critical Thinking question is not converted because it would re-ask, in the same words, the body Check Your Understanding bullet "Compare RT-PCR and qPCR in terms of their respective purposes" that already covers the identical fact — both remain self-checks rather than duplicating one fact as two items. Ten term-recall `textin` items and three body-sentence cloze fillers (a PFGE cloze, a dot/slot/spot-blot signal-intensity cloze, and the negative-to-positive electrode direction tested only via the True/False conversion) round out the Practice floor; the signal-intensity cloze replaces an earlier northern-blot cloze that duplicated the Fill in the Blank item's key within the same Practice group. Key terms are compiled from the module's 19 defined `<term>` elements and the book's Glossary appendix, rendered as 16 bullets: `chain termination method`, `dideoxy method`, and `Sanger DNA sequencing method` have no distinct appendix entries of their own and share one merged bullet, `Sanger DNA sequencing (dideoxy method, chain termination method)`, with its meaning taken from this module's own defining sentence; `real-time PCR` and `quantitative PCR (qPCR)` are likewise combined into one bullet under the appendix's own merged headword. Feature boxes are rendered as callouts: both Link to Learning boxes in the DNA-analysis portion and the one in the sequencing portion keep their external links; the Case in Point box (with its footnote rendered as an inline parenthetical citation) keeps its two closing questions as unanswered plain bullets at their document position, before its two figures, exactly as printed. Clinical Focus Part 2 names Part 3 as continuing later on the same page and names Microbes and the Tools of Genetic Engineering as where the case began; Clinical Focus Part 3 links the case forward to Whole Genome Methods and Pharmaceutical Applications of Genetic Engineering, names Part 2 as appearing earlier on this page, and names Microbes and the Tools of Genetic Engineering as where the case began, regardless of which earlier Clinical Focus part the source's own "previous" link points to. The cross-reference to the thermal cycler photograph in the chapter introduction (`m58847`) is rendered as a link to the chapter landing page. All instances of the prime mark in 3′-hydroxyl are normalized to the Unicode prime (′). The year of Sanger's dideoxy chain-termination method is corrected from the source's 1972 to 1977 with a visible Source note (Sanger, Nicklen, and Coulson, 1977).</small>
+<small>This section is adapted from [Microbiology, Section 12.2: Visualizing and Characterizing DNA, RNA, and Protein](https://openstax.org/books/microbiology/pages/12-2-visualizing-and-characterizing-dna-rna-and-protein) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the sixth objective's source text ("Describe the methods uses to separate and visualize protein variants") corrects the one-word grammatical error "uses" to "used." All thirteen source figures are re-encoded as WebP and rendered as mediafigures; the media manifest guesses `kind="photo"` for all thirteen (every source file is a JPEG), which is correct only for the Lyme-disease rash photo and the PCR-ribotyping gel photo — the other eleven are explicit `kind="diagram"` because each is a genuinely drawn, labeled diagram (including the AgaroseGE, PAGE, and Ribo_Rep figures, which are composites of drawn panels and photographs). The AgaroseGE alt's DNA-ladder sizes are corrected from the source's "2000 bp, 15000 bp, 1000 bp, 750 bp, 500 bp, 250 bp" to "2000, 1500, 1000, 750, 500, 250 bp," matching the ladder as printed in the artwork; the Microarray, ddNTP, and Ribotyping alts are rewritten from the image rather than the source alt, which respectively misspelled "reverse transcriptase" as "transciptase," misspelled "dideoxynucleotide" as "Dideeoxynucleotide" and "also" as "aso," and read "Javier's an matches" instead of naming that Javier's lane matches the reference lane above it — all four are known source-alt defects. The Case in Point figure's caption states "ribotype 27" while the gel image itself labels the matching reference lane "027"; this is a formatting difference rather than a factual error and is transcribed as printed. All six body Check Your Understanding questions are rendered as body items at their note positions: two are graded (both multiple choice converted from the unkeyed "What does a DNA probe consist of?" and "On what basis are proteins separated in SDS-PAGE?" questions, each fixed by one module sentence and distractored from the module's own vocabulary) and four are self-checks with model answers and rubrics assembled only from this module's own sentences, because their honest answers require assembling more than one sentence or a paragraph-length comparison. The Critical Thinking question about a mis-programmed annealing temperature drops its dangling source cross-reference ("Refer to .") and instead names "the PCR figure above" as a referent; its answer requires an inference the module does not state outright, so it stays a self-check. Of the module's nine keyed source exercises, all three Multiple Choice, the one True/False (rendered as a two-option multiple choice), and two of the three Fill in the Blank items are adapted into Practice unchanged; the third Fill in the Blank ("Sanger sequencing, dideoxy method, or chain termination method") is rendered as a `textin` keyed to "Sanger sequencing" with the other three source-printed phrasings and "Sanger method" as `accept` alternates, each verified against the real text grader. Of the module's six unkeyed Short Answer and Critical Thinking questions, all three Short Answer questions are graded as multiple choice from a single module sentence each (why a DNA probe needs a molecular beacon; why SDS is first required to separate proteins strictly by size; why PCR's DNA polymerase must be heat-stable) with distractors built from this module's own vocabulary; the "advantage of microarray over northern blot" Critical Thinking question needs two sentences (the northern blot definition and the microarray-capacity sentence) and stays a self-check; the "difference between RT-PCR and qPCR" Critical Thinking question is not converted because it would re-ask, in the same words, the body Check Your Understanding bullet "Compare RT-PCR and qPCR in terms of their respective purposes" that already covers the identical fact — both remain self-checks rather than duplicating one fact as two items. Author-written fillers, each from one sentence of this module, round out the Practice floor: three Key-terms recall `textin` items (autoradiography, reverse transcriptase PCR, next generation sequencing), seven body-sentence cloze `textin` items (chemical extraction before probing, smaller fragments migrating farther, PFGE, DNA fingerprinting, dot/slot/spot-blot signal intensity, yellow microarray spots, silver stain), and two body-sentence multiple choice items (the colony blot; microarray technology's research setting); none is keyed on a term its own objective heading prints. Key terms are compiled from the module's 19 defined `<term>` elements and the book's Glossary appendix, rendered as 16 bullets: `chain termination method`, `dideoxy method`, and `Sanger DNA sequencing method` have no distinct appendix entries of their own and share one merged bullet, `Sanger DNA sequencing (dideoxy method, chain termination method)`, with its meaning taken from this module's own defining sentence; `real-time PCR` and `quantitative PCR (qPCR)` are likewise combined into one bullet under the appendix's own merged headword. Feature boxes are rendered as callouts: both Link to Learning boxes in the DNA-analysis portion and the one in the sequencing portion keep their external links; the Case in Point box (with its footnote rendered as an inline parenthetical citation) keeps its two closing questions as unanswered plain bullets at their document position, before its two figures, exactly as printed. Clinical Focus Part 2 names Part 3 as continuing later on the same page and names Microbes and the Tools of Genetic Engineering as where the case began; Clinical Focus Part 3 links the case forward to Whole Genome Methods and Pharmaceutical Applications of Genetic Engineering, names Part 2 as appearing earlier on this page, and names Microbes and the Tools of Genetic Engineering as where the case began, regardless of which earlier Clinical Focus part the source's own "previous" link points to. The cross-reference to the thermal cycler photograph in the chapter introduction (`m58847`) is rendered as a link to the chapter landing page. All instances of the prime mark in 3′-hydroxyl are normalized to the Unicode prime (′). The year of Sanger's dideoxy chain-termination method is corrected from the source's 1972 to 1977 with a visible Source note (Sanger, Nicklen, and Coulson, 1977). The SDS-PAGE Fill in the Blank item is moved above the protein-separation multiple choices so that no item directly above a text-entry blank prints its key, reversing their printed order.</small>

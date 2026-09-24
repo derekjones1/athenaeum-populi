@@ -51,7 +51,7 @@ The doctor laughs and says, “Sarah, you’re in luck because ringworm is just 
 
 **Check Your Understanding**
 
-{{< textin question="What is the most common nematode infection in the United States?" answer="pinworm" hint="Name the infection whose female worms lay eggs around the anus at night, described just after this section introduces roundworm infections." >}}
+{{< textin question="What is the most common nematode infection in the United States?" answer="pinworm" accept="pinworm infection|Enterobius vermicularis" hint="Reread the first paragraph after the nematode micrograph." >}}
 
 ## Platyhelminths (Flatworms)
 
@@ -69,11 +69,11 @@ Phylum Platyhelminthes is divided into four classes. (a) Class Turbellaria inclu
 
 The other medically important group of platyhelminths are commonly known as **tapeworms** (cestodes) and are segmented flatworms that may have suckers or hooks at the **scolex** (head region) (see the micrograph above). Tapeworms use these suckers or hooks to attach to the wall of the small intestine. The body of the worm is made up of segments called **proglottids** that contain reproductive structures; these detach when the gametes are fertilized, releasing gravid proglottids with eggs. Tapeworms often have an intermediate host that consumes the eggs, which then hatch into a larval form called an oncosphere. The oncosphere migrates to a particular tissue or organ in the intermediate host, where it forms cysticerci. After being eaten by the definitive host, the cysticerci develop into adult tapeworms in the host's digestive system (the figure below). *Taenia saginata* (the beef tapeworm) and *T. solium* (the pork tapeworm) enter humans through ingestion of undercooked, contaminated meat. The adult worms develop and reside in the intestine, but the larval stage may migrate and be found in other body locations such as skeletal and smooth muscle. The beef tapeworm is relatively benign, although it can cause digestive problems and, occasionally, allergic reactions. The pork tapeworm can cause more serious problems when the larvae leave the intestine and colonize other tissues, including those of the central nervous system. *Diphyllobothrium latum* is the largest human tapeworm and can be ingested in undercooked fish. It can grow to a length of 15 meters. *Echinococcus granulosus*, the dog tapeworm, can parasitize humans and uses dogs as an important host.
 
-{{< mediafigure src="microbiology/OSC_Microbio_05_02_schistolLC" alt="A numbered life-cycle diagram of Schistosoma species. Eggs shed in feces or urine hatch into miracidia, which penetrate a snail and develop into sporocysts and then free-swimming cercariae; cercariae penetrate human skin, lose their tails to become schistosomulae, circulate through the body, and mature into adults in the liver's portal blood. Paired adults of S. mansoni and S. japonicum migrate to the mesenteric venules of the bowel and rectum; adults of S. haematobium migrate to the venous plexus of the bladder." kind="diagram" longdesc="The numbered stages are: (1) eggs are passed in feces (S. mansoni, S. japonicum) or urine (S. haematobium) — the diagnostic stage; (2) eggs hatch, releasing miracidia; (3) miracidia penetrate snail tissue; (4) sporocysts develop in the snail across successive generations; (5) cercariae are released by the snail into the water and are free-swimming — the infective stage; (6) cercariae penetrate the skin; (7) cercariae lose their tails during penetration and become schistosomulae; (8) schistosomulae enter circulation; (9) the parasites migrate to portal blood in the liver and mature into adults; (10) paired adult worms migrate — S. japonicum and S. mansoni to the mesenteric venules of the bowel and rectum, laying eggs that circulate to the liver and are shed in stools, and S. haematobium to the venous plexus of the bladder." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_05_02_schistolLC" alt="A numbered life-cycle diagram of Schistosoma species. Eggs shed in feces or urine hatch into miracidia, which penetrate a snail and develop into sporocysts and then free-swimming cercariae; cercariae penetrate human skin, lose their tails to become schistosomulae, circulate through the body, and mature into adults in the liver's portal blood. Paired adults of S. mansoni and S. japonicum migrate to the mesenteric venules of the bowel and rectum; adults of S. haematobium migrate to the venous plexus of the bladder." kind="diagram" longdesc="The numbered stages are: (1) eggs of all three species are passed in feces, and S. japonicum and S. haematobium eggs are also passed in urine — the diagnostic stage; (2) eggs hatch, releasing miracidia; (3) miracidia penetrate snail tissue; (4) sporocysts develop in the snail across successive generations; (5) cercariae are released by the snail into the water and are free-swimming — the infective stage; (6) cercariae penetrate the skin; (7) cercariae lose their tails during penetration and become schistosomulae; (8) schistosomulae enter circulation; (9) the parasites migrate to portal blood in the liver and mature into adults; (10) paired adult worms migrate — S. japonicum and S. mansoni to the mesenteric venules of the bowel and rectum, laying eggs that circulate to the liver and are shed in stools, and S. haematobium to the venous plexus of the bladder. A key at the top left marks the infective stage with a triangle labeled i (placed beside the stage 5 photograph) and the diagnostic stage with a triangle labeled d (placed at the stage 1 eggs). The species are color-coded A for S. japonicum, B for S. mansoni, and C for S. haematobium; on the drawing of the human body beside stage 6, arrow A points to the small intestine, arrow B to the large intestine along the body's left side, and arrow C to the rectum. In stage 1, a bracket labeled in feces spans all three egg photographs, and a shorter bracket above it labeled in urine spans the S. japonicum and S. haematobium eggs. Stage 10 is illustrated by a micrograph of a paired male and female worm, marked with the male and female symbols." >}}
 The life cycle of *Schistosoma* spp. includes several species of water snails, which serve as secondary hosts. The parasite is transmitted to humans through contact with contaminated water and takes up residence in the veins of the digestive system. Eggs escape the host in the urine or feces and infect a snail to complete the life cycle. (credit “illustration”: modification of work by Centers for Disease Control and Prevention; credit “step 3 photo”: modification of work by Fred A. Lewis, Yung-san Liang, Nithya Raghavan &amp; Matty Knight)
 {{< /mediafigure >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_05_02_tapewormLC-58e4" alt="A numbered life-cycle diagram of a tapeworm. Eggs or gravid proglottids passed in feces contaminate vegetation; cattle (Taenia saginata) or pigs (T. solium) ingest the contaminated vegetation; oncospheres hatch, penetrate the intestinal wall, and circulate to the muscles, developing into cysticerci; humans are infected by eating raw or undercooked meat containing the cysticerci; the scolex attaches to the intestinal wall and adult tapeworms develop in the small intestine." kind="diagram" longdesc="The numbered stages are: (1) eggs or gravid proglottids in feces are passed into the environment — the diagnostic stage; (2) cattle (T. saginata) and pigs (T. solium) become infected by ingesting vegetation contaminated by eggs or gravid proglottids; (3) oncospheres hatch, penetrate the intestinal wall, and circulate to the musculature; the oncospheres develop into cysticerci in the muscles and become infective; (4) humans are infected by ingesting raw or undercooked infected meat; (5) the scolex attaches to the intestine; (6) adults are found in the small intestine." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_05_02_tapewormLC-58e4" alt="A numbered life-cycle diagram of a tapeworm. Eggs or gravid proglottids passed in feces contaminate vegetation; cattle (Taenia saginata) or pigs (T. solium) ingest the contaminated vegetation; oncospheres hatch, penetrate the intestinal wall, and circulate to the muscles, developing into cysticerci; humans are infected by eating raw or undercooked meat containing the cysticerci; the scolex attaches to the intestinal wall and adult tapeworms develop in the small intestine." kind="diagram" longdesc="The numbered stages are: (1) eggs or gravid proglottids in feces are passed into the environment — the diagnostic stage; (2) cattle (T. saginata) and pigs (T. solium) become infected by ingesting vegetation contaminated by eggs or gravid proglottids; (3) oncospheres hatch, penetrate the intestinal wall, and circulate to the musculature; the oncospheres develop into cysticerci in the muscles and become infective; (4) humans are infected by ingesting raw or undercooked infected meat; (5) the scolex attaches to the intestine; (6) adults are found in the small intestine. A key at the lower right marks the infective stage with a triangle labeled i, placed beside the printed note that oncospheres develop into cysticerci in muscle (above a stained section of a cysticercus in muscle), and the diagnostic stage with a triangle labeled d, placed at stage 1. Stage 1 shows a micrograph of a round egg and photographs of a gravid proglottid of each species, labeled T. saginata and T. solium; stage 2 shows a grazing cow and a rooting pig; stage 3 shows three scanning electron micrographs of round oncospheres. At the center, a drawing of a man with his digestive organs visible has arrows leading from his intestine up to stage 5's two scolex photographs, labeled T. saginata (a rounded head with suckers) and T. solium (a head with suckers and a crown of hooks), and out to stage 6's photograph of long, folded adult worms with a scale bar; a further arrow leads from the lower intestine back to the stage 1 images." >}}
 Life cycle of a tapeworm. (credit “illustration”: modification of work by Centers for Disease Control and Prevention; credit “step 3 micrographs”: modification of work by American Society for Microbiology)
 {{< /mediafigure >}}
 
@@ -126,7 +126,7 @@ An eradication campaign led by WHO, the CDC, the United Nations Children’s Fun
 {{< multiplechoice
   question="Helminth parasites are included within the study of microbiology because they are often identified by looking for their microscopic ________."
   answer="eggs and larvae"
-  hint="Use the life stages named in the summary's first bullet, not the specific life-cycle stage names used later for tapeworms or Schistosoma."
+  hint="Reread the first sentence of this section."
 >}}
 eggs and larvae
 oncospheres and cysticerci
@@ -136,13 +136,13 @@ miracidia and cercariae
 {{< textin
   question="Parasitic forms may have complex reproductive cycles with several different life stages and more than one type of ________."
   answer="host"
-  hint="Name what a parasite's larval and adult stages each require to develop, as stated in this section's opening paragraph."
+  hint="Reread the opening paragraph of this section."
 >}}
 
 {{< textin
   question="As animals, parasitic helminths are ________ and have organ systems."
   answer="multicellular"
-  hint="Name the trait shared by all animals, stated at the start of this section, before the sentence about limited digestive tracts and nervous systems."
+  hint="Reread the middle of this section's opening paragraph."
 >}}
 
 ### Compare the basic morphology of the major groups of parasitic helminthes
@@ -150,49 +150,42 @@ miracidia and cercariae
 {{< textin
   question="A species of worm in which there are distinct male and female individuals is described as ________."
   answer="dioecious"
-  hint="Use the term contrasted with an organism having both sexes' reproductive organs in one individual."
+  hint="Reread the last sentence of this section's opening paragraph."
 >}}
 
 {{< textin
   question="Some parasitic helminths are ________, having both male and female reproductive organs in a single individual."
   answer="monoecious"
-  hint="Use the term for a worm that carries both sexes' reproductive organs, defined at the opening of this section."
+  hint="Reread the last sentence of this section's opening paragraph."
 >}}
 
-{{< multiplechoice
-  question="The two major groups of helminth parasites are the roundworms and the flatworms (________)."
-  answer="Platyhelminthes"
-  hint="Name the phylum introduced alongside 'flatworms' at the start of this section's second heading."
+{{< textin
+  question="The parasitic species often have limited digestive tracts, nervous systems, and ________ abilities."
+  answer="locomotor"
+  accept="locomotion"
+  hint="Reread the middle of this section's opening paragraph."
 >}}
-Annelida
-Rotifera
-Platyhelminthes
-{{< /multiplechoice >}}
 
 ### Describe the characteristics of parasitic nematodes, and give an example of infective eggs and infective larvae
 
 {{< textin
-  question="Some nematodes are common intestinal parasites, and their eggs can sometimes be identified in ________ or around the anus of infected individuals."
+  question="The eggs of some nematodes can sometimes be identified in ________ or around the anus of infected individuals."
   answer="feces"
-  accept="faeces"
-  hint="Name where a stool sample would reveal these infective eggs."
+  accept="faeces|stool"
+  hint="Reread the first paragraph under this section's first heading."
 >}}
 
-{{< multiplechoice
+{{< textin
   question="Infection with the nematodes Toxocara canis and T. cati can cause larval migrans, with symptoms depending on whether the organism infects the eye or the ________."
   answer="viscera"
-  hint="Contrast the two possible infection sites named in the toxocariasis sentence, not the sites named for trichinosis or hookworm."
+  hint="Reread the toxocariasis sentences in the paragraph after the nematode micrograph."
 >}}
-intestine
-viscera
-digestive system
-{{< /multiplechoice >}}
 
 {{< textin
   question="Trichinellosis is contracted by consuming undercooked meat, which releases Trichinella spiralis larvae and allows them to encyst in ________."
   answer="muscles"
-  accept="muscle"
-  hint="Name the tissue where these infective larvae become dormant after release from undercooked meat."
+  accept="muscle tissue"
+  hint="Reread the first sentence of the Trichinellosis paragraph."
 >}}
 
 ### Describe the characteristics of parasitic trematodes and cestodes, and give examples of each
@@ -200,7 +193,7 @@ digestive system
 {{< multiplechoice
   question="A segmented worm has male and female reproductive organs in each segment. Some use hooks to attach to the intestinal wall. Which type of worm is this?"
   answer="cestode"
-  hint="Match the body segmentation and hooked attachment to the group named for tapeworms."
+  hint="Reread the paragraph just after the fluke and scolex micrographs."
 >}}
 fluke
 nematode
@@ -211,7 +204,8 @@ annelid
 {{< textin
   question="Flukes are in class ________."
   answer="Trematoda"
-  hint="Use the class name given as a synonym for flukes earlier in this section."
+  accept="trematode"
+  hint="Reread panel (c) of the four-class platyhelminth figure's caption."
 >}}
 
 {{< selfcheck question="Given the life cycle of the *Schistosoma* parasite, suggest a method of prevention of the disease." hint="Trace how the infective stage reaches a person in this section's account of the life cycle, then name a way to break that step." >}}
@@ -227,11 +221,11 @@ Avoiding skin contact with water that may contain the parasite
 {{< multiplechoice
   question="A nonsegmented worm is found during a routine colonoscopy of an individual who reported having abdominal cramps, nausea, and vomiting. This worm is likely which of the following?"
   answer="nematode"
-  hint="Match the intestinal site and the symptoms of abdominal cramps, nausea, and vomiting to the group this section calls common intestinal parasites."
+  hint="Reread the first paragraph under each of this section's two headings."
 >}}
 nematode
-fluke
-trematode
+cestode
+tapeworm
 annelid
 {{< /multiplechoice >}}
 
@@ -246,25 +240,10 @@ cook meat and fish thoroughly before eating them
   question="Heartworm in dogs and other animals is caused by the nematode Dirofilaria immitis, which is transmitted by ________."
   answer="mosquitoes"
   accept="mosquito"
-  hint="Name the insect vector responsible for transmitting this nematode between hosts."
+  hint="Reread the last sentence of the Trichinellosis paragraph."
 >}}
 
 ### Classify parasitic worms according to major groups
-
-{{< multiplechoice
-  question="A fluke is classified within which of the following?"
-  answer="Platyhelminthes"
-  hint="Name the phylum that includes flukes and tapeworms, introduced at the start of this section's second heading."
->}}
-Nematoda
-Rotifera
-Platyhelminthes
-Annelida
-{{< /multiplechoice >}}
-
-{{< sortbins question="Sort each parasite into the phylum that includes it." hint="Use each organism's common name (roundworm or hookworm versus fluke or tapeworm) named earlier in this section." >}}
-{"bins":["Nematoda","Platyhelminthes"],"items":[{"label":"*Ascaris lumbricoides*","bin":0},{"label":"*Schistosoma mansoni*","bin":1},{"label":"*Enterobius vermicularis*","bin":0},{"label":"*Taenia saginata*, the beef tapeworm","bin":1},{"label":"*Necator americanus*, a hookworm","bin":0},{"label":"*Diphyllobothrium latum*","bin":1},{"label":"*Trichinella spiralis*","bin":0},{"label":"*Echinococcus granulosus*, the dog tapeworm","bin":1}]}
-{{< /sortbins >}}
 
 {{< textin
   question="Phylum ________ comprises the roundworms, a diverse group containing more than 15,000 species."
@@ -272,6 +251,21 @@ Annelida
   hint="Name the phylum introduced at the start of this section's first heading."
 >}}
 
+{{< multiplechoice
+  question="A fluke is classified within which of the following?"
+  answer="Platyhelminthes"
+  hint="Reread the first paragraph under this section's second heading."
+>}}
+Nematoda
+Rotifera
+Platyhelminthes
+Annelida
+{{< /multiplechoice >}}
+
+{{< sortbins question="Sort each parasite into the phylum that includes it." hint="Reread the paragraphs of both subsections where each organism is introduced." >}}
+{"bins":["Nematoda","Platyhelminthes"],"items":[{"label":"*Ascaris lumbricoides*","bin":0},{"label":"*Schistosoma mansoni*","bin":1},{"label":"*Enterobius vermicularis*","bin":0},{"label":"*Taenia saginata*, the beef tapeworm","bin":1},{"label":"*Necator americanus*, a hookworm","bin":0},{"label":"*Diphyllobothrium latum*","bin":1},{"label":"*Trichinella spiralis*","bin":0},{"label":"*Echinococcus granulosus*, the dog tapeworm","bin":1}]}
+{{< /sortbins >}}
+
 ---
 
-<small>This section is adapted from [*Microbiology*, Section 5.2: Parasitic Helminths](https://openstax.org/books/microbiology/pages/5-2-parasitic-helminths) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all six figures re-encoded as WebP and rendered as mediafigures with an explicit, image-checked `kind` (four photos, two life-cycle diagrams); the *Schistosoma* and tapeworm life-cycle alts and longdescs are author-written from the rendered artwork rather than the source alts, which misspell "schistosomulae," double the word "the," and attribute distinct intestinal segments to each *Schistosoma* species that the diagram does not show — the diagram instead groups *S. mansoni* and *S. japonicum* together at the bowel/rectum and *S. haematobium* alone at the bladder; the tapeworm life-cycle alt's "proplottidis" is corrected to "proglottids" with no inline note (one-word typo); the pinworm micrograph's alt is rewritten because the source's claimed length ("approximately 30 mm") is an order of magnitude larger than what the pictured 0.5 mm scale bar supports. The Clinical Focus box is rendered as a callout with its "Jump to/Go back to" links replaced by plain sentences naming Fungi (Section 5.3) as where the case continues and Unicellular Eukaryotic Parasites (Section 5.1) as where it began; both target pages land in this run. The two Check Your Understanding bullets are rendered as body items at their note's position: the pinworm question as a `textin` graded from this section's "most common nematode infection" sentence, and the segmented/unsegmented flatworm question as a `sortbins` graded from the cestode and trematode descriptions earlier in this section. The two Micro Connection boxes are rendered as callouts with their citations kept as parenthetical text after the sentences they support (bare access URLs dropped, one duplicated "that that" silently corrected as a one-word-class typo); the WHO footnote's bare URL is dropped and its "Accessed May 2, 2016" date is kept. All three source footnotes in the body and Micro Connection boxes are rendered as inline parenthetical citations. The three source Multiple Choice items and two Fill in the Blank items are adapted into Practice unchanged and keyed as printed. The two unkeyed end-of-section questions — a Short Answer ("What is the best defense against tapeworm infection?") and a Critical Thinking item (the *Schistosoma* prevention question) — remain self-checks whose model answers and rubrics are assembled from this section's own transmission sentences, because the source prints no key for them and no single sentence states a prevention method outright. Eleven filler items (seven `textin`, three `multiplechoice`, one `sortbins`) fill the six objective groups to this book's three-per-group floor, each built from one body or summary sentence of this module with no new claim; no source item was omitted. Key terms are compiled from the module's eight defined terms and the book's Glossary appendix (all eight from the appendix; none sentence-derived); the `proglottid` bullet is printed as the plural `proglottids` to match its bolded form in the body. Author-built multiple-choice items vary their key position rather than defaulting to the first option; the three source-keyed items keep their printed option order. The source's "Diphylobothrium latum" is printed as *Diphyllobothrium latum*, the spelling the book's own taxonomy and glossary appendices use (a one-word source typo). The *Ascaris lumbricoides* female length is corrected from the source's "greater than 1 meter" to 20–35 cm with a visible Source note citing the CDC DPDx reference, per this book's prose claim pass. The four-class platyhelminth figure's alt is rewritten from the artwork because the source alt misspells "Monogenea" as "Monegena," describes panel (b) as a rectangular cell with a bulb where the artwork shows an elongated worm with anchor hooks, and calls panel (d) a single tapeworm where several specimens are pictured.</small>
+<small>This section is adapted from [*Microbiology*, Section 5.2: Parasitic Helminths](https://openstax.org/books/microbiology/pages/5-2-parasitic-helminths) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all six figures re-encoded as WebP and rendered as mediafigures with an explicit, image-checked `kind` (four photos, two life-cycle diagrams); the *Schistosoma* and tapeworm life-cycle alts and longdescs are author-written from the rendered artwork rather than the source alts, which misspell "schistosomulae," double the word "the," and attribute distinct intestinal segments to each *Schistosoma* species that the diagram does not show — the diagram instead groups *S. mansoni* and *S. japonicum* together at the bowel/rectum and *S. haematobium* alone at the bladder; the tapeworm life-cycle alt's "proplottidis" is corrected to "proglottids" with no inline note (one-word typo); the pinworm micrograph's alt is rewritten because the source's claimed length ("approximately 30 mm") is an order of magnitude larger than what the pictured 0.5 mm scale bar supports. The Clinical Focus box is rendered as a callout with its "Jump to/Go back to" links replaced by plain sentences naming Fungi (Section 5.3) as where the case continues and Unicellular Eukaryotic Parasites (Section 5.1) as where it began; both target pages land in this run. The two Check Your Understanding bullets are rendered as body items at their note's position: the pinworm question as a `textin` graded from this section's "most common nematode infection" sentence, and the segmented/unsegmented flatworm question as a `sortbins` graded from the cestode and trematode descriptions earlier in this section. The two Micro Connection boxes are rendered as callouts with their citations kept as parenthetical text after the sentences they support (bare access URLs dropped, one duplicated "that that" silently corrected as a one-word-class typo); the WHO footnote's bare URL is dropped and its "Accessed May 2, 2016" date is kept. All three source footnotes in the body and Micro Connection boxes are rendered as inline parenthetical citations. The three source Multiple Choice items and two Fill in the Blank items are adapted into Practice and keyed as printed (one distractor pair replaced, below); in the "Classify parasitic worms according to major groups" group, the author-built Nematoda `textin` is placed above the source "A fluke is classified within which of the following?" Multiple Choice item, whose options print "Nematoda", so that no item directly above a text-entry blank prints its key. The two unkeyed end-of-section questions — a Short Answer ("What is the best defense against tapeworm infection?") and a Critical Thinking item (the *Schistosoma* prevention question) — remain self-checks whose model answers and rubrics are assembled from this section's own transmission sentences, because the source prints no key for them and no single sentence states a prevention method outright. Eleven filler items (nine `textin`, one `multiplechoice`, one `sortbins`) fill the six objective groups to this book's three-per-group floor, each built from one body or summary sentence of this module with no new claim; no source item was omitted. Key terms are compiled from the module's eight defined terms and the book's Glossary appendix (all eight from the appendix; none sentence-derived); the `proglottid` bullet is printed as the plural `proglottids` to match its bolded form in the body. The three source-keyed Multiple Choice items keep their printed option order. In the colonoscopy Multiple Choice ("A nonsegmented worm is found during a routine colonoscopy…"), the source distractors "fluke" and "trematode" are replaced with "cestode" and "tapeworm" (key "nematode" unchanged), because this module's own sentence that "the flukes (trematodes) are nonsegmented flatworms that … attach to the inner walls of intestines" made both of them second correct options; the replacements are the module's segmented flatworms. The source's "Diphylobothrium latum" is printed as *Diphyllobothrium latum*, the spelling the book's own taxonomy and glossary appendices use (a one-word source typo). The *Ascaris lumbricoides* female length is corrected from the source's "greater than 1 meter" to 20–35 cm with a visible Source note citing the CDC DPDx reference, per this book's prose claim pass. The four-class platyhelminth figure's alt is rewritten from the artwork because the source alt misspells "Monogenea" as "Monegena," describes panel (b) as a rectangular cell with a bulb where the artwork shows an elongated worm with anchor hooks, and calls panel (d) a single tapeworm where several specimens are pictured.</small>

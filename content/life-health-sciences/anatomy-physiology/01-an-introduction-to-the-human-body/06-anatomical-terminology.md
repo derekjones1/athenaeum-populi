@@ -26,7 +26,7 @@ Anatomical terms are made up of roots, prefixes, and suffixes. The root of a ter
 
 To further increase precision, anatomists standardize the way in which they view the body. Just as maps are normally oriented with north at the top, the standard body “map,” or **anatomical position**, is that of the body standing upright, with the feet at shoulder width and parallel, toes forward. The upper limbs are held out to each side, and the palms of the hands face forward as illustrated below. Using this standard position reduces confusion. It does not matter how the body being described is oriented, the terms are used as if it is in anatomical position. For example, a scar in the “anterior (front) carpal (wrist) region” would be present on the palm side of the wrist. The term “anterior” would be used even if the hand were palm down on a table.
 
-{{< mediafigure src="anatomy-physiology/107_Regions_of_Human_Body" kind="diagram" eager="true" alt="Two views of a nude human body standing in anatomical position, palms facing forward: (a) an anterior (front) view on the left and (b) a posterior (back) view on the right. Leader lines label dozens of body regions by their Latin name, common name, and adjective form, from the head down to the feet on the front view and from the neck down to the soles on the back view." longdesc="(a) Anterior view, labeled from the head down: Frons or forehead (frontal); Cranium or skull (cranial); Facies or face (facial); Oculus or eye (orbital or ocular); Bucca or cheek (buccal); Auris or ear (otic); Nasus or nose (nasal); Oris or mouth (oral); Mentis or chin (mental); Cervicis or neck (cervical); Axilla or armpit (axillary); Thorcis or thorax, chest (thoracic); Brachium or arm (brachial); Mamma or breast (mammary); Antecubitis or front of elbow (antecubital); Abdomen (abdominal); Antebrachium or forearm (antebrachial); Umbilicus or navel (umbilical); Carpus or wrist (carpal); Hip (coxal); Pollex or thumb; Palma or palm (palmar); Pelvis (pelvic); Digits (phalanges) or fingers (digital or phalangeal); Inguen or groin (inguinal); Patella or kneecap (patellar); Pubis (pubic); Crus or leg (crural); Femur or thigh (femoral); Tarsus or ankle (tarsal); Digits (phalanges) or toes (digital or phalangeal); Pes or foot (pedal); Hallux or great toe. A brace groups the thorax, mammary, abdomen, and hip regions as the Trunk. (b) Posterior view, labeled from the neck down: Cephalon or head (cephalic); Cervicis or neck (cervical); Shoulder (acromial); Dorsum or back (dorsal); Brachium or arm (brachial); Olecranon or back of elbow (olecranal); Lumbus or loin (lumbar); Antebrachium or forearm (antebrachial); Sacrum (sacral); Manus or hand (manual); Gluteus or buttock (gluteal); Femur or thigh (femoral); Popliteus or back of knee (popliteal); Sura or calf (sural); Calcaneus or heel of foot (calcaneal); Planta or sole of foot (plantar). Braces group the shoulder-through-hand regions as the Upper limb and the buttock-through-foot regions as the Lower limb." >}}
+{{< mediafigure src="anatomy-physiology/107_Regions_of_Human_Body" kind="diagram" eager="true" alt="Two views of a nude human body standing in anatomical position, palms facing forward: (a) an anterior (front) view on the left and (b) a posterior (back) view on the right. Leader lines label dozens of body regions by their Latin name, common name, and adjective form, from the head down to the feet on the front view and from the head down to the soles on the back view." longdesc="(a) Anterior view, labeled from the head down: Frons or forehead (frontal); Cranium or skull (cranial); Facies or face (facial); Oculus or eye (orbital or ocular); Bucca or cheek (buccal); Auris or ear (otic); Nasus or nose (nasal); Oris or mouth (oral); Mentis or chin (mental); Cervicis or neck (cervical); Axilla or armpit (axillary); Thorcis or thorax, chest (thoracic); Brachium or arm (brachial); Mamma or breast (mammary); Antecubitis or front of elbow (antecubital); Abdomen (abdominal); Antebrachium or forearm (antebrachial); Umbilicus or navel (umbilical); Carpus or wrist (carpal); Hip (coxal); Pollex or thumb; Palma or palm (palmar); Pelvis (pelvic); Digits (phalanges) or fingers (digital or phalangeal); Inguen or groin (inguinal); Patella or kneecap (patellar); Pubis (pubic); Crus or leg (crural); Femur or thigh (femoral); Tarsus or ankle (tarsal); Digits (phalanges) or toes (digital or phalangeal); Pes or foot (pedal); Hallux or great toe. A brace groups the thorax, mammary, abdomen, umbilicus, and hip regions as the Trunk. (b) Posterior view, labeled from the head down: Cephalon or head (cephalic); Cervicis or neck (cervical); Shoulder (acromial); Dorsum or back (dorsal); Brachium or arm (brachial); Olecranon or back of elbow (olecranal); Lumbus or loin (lumbar); Antebrachium or forearm (antebrachial); Sacrum (sacral); Manus or hand (manual); Gluteus or buttock (gluteal); Femur or thigh (femoral); Popliteus or back of knee (popliteal); Sura or calf (sural); Calcaneus or heel of foot (calcaneal); Planta or sole of foot (plantar). Braces group the shoulder-through-hand regions as the Upper limb and the buttock-through-foot regions as the Lower limb." >}}
 The human body is shown in anatomical position in an (a) anterior view and a (b) posterior view. The regions of the body are labeled in boldface.
 {{< /mediafigure >}}
 
@@ -51,7 +51,7 @@ Certain directional anatomical terms appear throughout this and many other anato
 - **Superficial** describes a position closer to the surface of the body. The skin is superficial to the bones.
 - **Deep** describes a position farther from the surface of the body. The brain is deep to the skull.
 
-{{< mediafigure src="anatomy-physiology/108_Directional_Terms" kind="diagram" alt="Two diagrams of a female figure, a side view on the left and a front-facing view on the right, each marked with double-headed arrows naming paired directional terms along the body." longdesc="Left, side view: a vertical two-headed arrow runs behind the torso and lower abdomen, labeled Cranial at the top end (toward the head) and Caudal at the bottom end (toward the tailbone), with Superior printed above the figure and Inferior below it; a horizontal dashed arrow crosses the torso, labeled Posterior or dorsal at the back end and Anterior or ventral at the front end. Right, front-facing view: Right and Left are printed above the head, naming the sides from the woman's own perspective; a horizontal dashed arrow crosses the abdomen, labeled Lateral at its outer end, with Medial printed at the body's midline; a solid arrow runs the length of the right arm, labeled Proximal at the shoulder end and Distal at the hand end; a second solid arrow runs the length of the right leg, labeled Proximal at the hip end and Distal at the foot end." >}}
+{{< mediafigure src="anatomy-physiology/108_Directional_Terms" kind="diagram" alt="Two diagrams of a female figure, a side view on the left and a front-facing view on the right, each marked with double-headed arrows naming paired directional terms along the body." longdesc="Left, side view: a vertical two-headed arrow runs behind the torso and lower abdomen, labeled Cranial at the top end (toward the head) and Caudal at the bottom end (toward the tailbone), with Superior printed above the figure and Inferior below it; a horizontal dashed arrow crosses the torso, labeled Posterior or dorsal at the back end and Anterior or ventral at the front end. Right, front-facing view: Right and Left are printed above the head, naming the sides from the woman's own perspective; a horizontal dashed arrow crosses the abdomen, labeled Lateral at its outer end, with Medial printed at the body's midline; a solid arrow runs the length of the left arm, labeled Proximal at the shoulder end and Distal at the hand end; a second solid arrow runs the length of the right leg, labeled Proximal at the hip end and Distal at the foot end." >}}
 Paired directional terms are shown as applied to the human body.
 {{< /mediafigure >}}
 
@@ -72,7 +72,7 @@ The three planes most commonly used in anatomical and medical imaging are the sa
 
 The body maintains its internal organization by means of membranes, sheaths, and other structures that separate compartments. The **dorsal (posterior) cavity** and the **ventral (anterior) cavity** are the largest body compartments (see the figure below). These cavities contain and protect delicate internal organs, and the ventral cavity allows for significant changes in the size and shape of the organs as they perform their functions. The lungs, heart, stomach, and intestines, for example, can expand and contract without distorting other tissues or disrupting the activity of nearby organs.
 
-{{< mediafigure src="anatomy-physiology/110_Dorsal_Ventral_Body_Cavities" kind="diagram" alt="A lateral view (left) and an anterior view (right) of a human torso and head, internal body cavities shaded in color and labeled: the cranial and vertebral cavities near the top, and the thoracic, abdominal, and pelvic cavities below, with brace labels grouping the cavities into larger compartments." longdesc="In both views, from top to bottom: the Cranial cavity (at the head) and the Vertebral cavity (a narrow strip down the spine) are braced together at the edge of the figure as the Dorsal body cavity. Below the neck, the Thoracic cavity is labeled with four parts read from its own leader lines: the Superior mediastinum, the Pleural cavity, the Pericardial cavity within the mediastinum, and the Diaphragm, which forms its floor. Below the diaphragm sit the Abdominal cavity and, beneath that, the Pelvic cavity. A second brace groups the thoracic, abdominal, and pelvic cavities together as the Ventral body cavity, labeled as containing both the thoracic and abdominopelvic cavities; a third, shorter brace groups the abdominal and pelvic cavities alone as the Abdominopelvic cavity." >}}
+{{< mediafigure src="anatomy-physiology/110_Dorsal_Ventral_Body_Cavities" kind="diagram" alt="A lateral view (left) and an anterior view (right) of a human torso and head, internal body cavities shaded in color and labeled: the cranial and vertebral cavities near the top, and the thoracic, abdominal, and pelvic cavities below, with brace labels grouping the cavities into larger compartments." longdesc="Both views label, from top to bottom, the Cranial cavity (at the head) and the Vertebral cavity (a narrow strip down the spine); in the lateral view only, a brace at the left edge groups these two as the Dorsal body cavity. The labels between the two views point into one or both of them: Thoracic cavity, with three parts listed beneath it (Superior mediastinum, Pleural cavity, and Pericardial cavity within the mediastinum); then, as a separate label, the Diaphragm, the dividing line beneath the thoracic cavity; below it the Abdominal cavity and, beneath that, the Pelvic cavity. In the anterior view only, a shorter brace groups the abdominal and pelvic cavities as the Abdominopelvic cavity, and a longer brace at the right edge groups the thoracic, abdominal, and pelvic cavities as the Ventral body cavity, labeled as containing both the thoracic and abdominopelvic cavities." >}}
 The ventral cavity includes the thoracic and abdominopelvic cavities and their subdivisions. The dorsal cavity includes the cranial and spinal cavities.
 {{< /mediafigure >}}
 
@@ -84,7 +84,7 @@ The anterior (ventral) cavity has two main subdivisions: the thoracic cavity and
 
 ### Abdominal Regions and Quadrants
 
-To promote clear communication, for instance about the location of a patient’s abdominal pain or a suspicious mass, health care providers typically divide up the cavity into either nine regions or four quadrants.
+To promote clear communication, for instance about the location of a patient’s abdominal pain or a suspicious mass, health care providers typically divide up the cavity into either nine regions or four quadrants (see the figure below).
 
 {{< mediafigure src="anatomy-physiology/111_Abdominal_Quadrant_Regions" kind="diagram" alt="Two front views of the abdomen and pelvis, ribs and pelvic bones faintly visible beneath the skin and the diaphragm outlined by a dashed curve: (a) on the left, grid lines divide the abdomen into nine labeled regions; (b) on the right, one horizontal and one vertical line divide the same area into four labeled quadrants." longdesc="(a) Nine abdominopelvic regions in a three-by-three grid: top row, left to right — Right hypochondriac region, Epigastric region, Left hypochondriac region; middle row — Right lumbar region, Umbilical region, Left lumbar region; bottom row — Right iliac region, Hypogastric region, Left iliac region. (b) Four abdominopelvic quadrants: Right upper quadrant (RUQ) and Left upper quadrant (LUQ) above the horizontal line; Right lower quadrant (RLQ) and Left lower quadrant (LLQ) below it." >}}
 There are (a) nine abdominal regions and (b) four abdominal quadrants in the peritoneal cavity.
@@ -96,7 +96,7 @@ The more detailed regional approach subdivides the cavity with one horizontal li
 
 A **serous membrane** (also referred to a serosa) is one of the thin membranes that cover the walls and organs in the thoracic and abdominopelvic cavities. The parietal layer of the membrane lines the walls of the body cavity (pariet- refers to a cavity wall). The visceral layer of the membrane covers the organs (the viscera). Between the parietal and visceral layers is a very thin, fluid-filled serous space, or cavity (see the figure below).
 
-{{< mediafigure src="anatomy-physiology/112_Serous_Membrane_new" kind="diagram" alt="A cross-section of the heart (left) beside an analogy of a fist punching into a balloon (right), each labeled with matching terms for the same two-layered sac and the space between its layers." longdesc="Left: a cross-section of the heart, its major vessels emerging from the top, wrapped in a sac labeled with three leader lines — Visceral pericardium for the inner layer against the heart, Pericardial cavity for the thin space between the layers, and Parietal pericardium for the outer layer. Right: a fist pushed into the closed end of a balloon, labeled with two leader lines — Air space for the gap between the balloon's two layers around the fist, and Balloon labeling the tied-off end — illustrating that the fist (the heart) is wrapped by a two-layered sac (the pericardium) with a thin space (the pericardial cavity) between the layers, the way the balloon wraps the fist with a thin air space between its own two layers." >}}
+{{< mediafigure src="anatomy-physiology/112_Serous_Membrane_new" kind="diagram" alt="A cross-section of the heart (left) beside an analogy of a fist punching into a balloon (right), each labeled with matching terms for the same two-layered sac and the space between its layers." longdesc="Left: a cross-section of the heart, its major vessels emerging from the top, wrapped in a sac labeled with three leader lines — Visceral pericardium for the inner layer against the heart, Pericardial cavity for the thin space between the layers, and Parietal pericardium for the outer layer. Right: a fist pushed into the closed end of a balloon, labeled with two leader lines — Air space for the gap between the balloon's two layers around the fist, and Balloon pointing to the balloon's lower wall beneath the fist (the tied-off end below it is unlabeled) — illustrating that the fist (the heart) is wrapped by a two-layered sac (the pericardium) with a thin space (the pericardial cavity) between the layers, the way the balloon wraps the fist with a thin air space between its own two layers." >}}
 Serous membrane lines the pericardial cavity and reflects back to cover the heart—much the same way that an underinflated balloon would form two layers surrounding a fist.
 {{< /mediafigure >}}
 
@@ -152,19 +152,19 @@ There are three serous cavities and their associated membranes. The **pleura** i
 {{< textin
   question="A face-down body orientation is called the ________ position."
   answer="prone"
-  hint="This word also names 'pronation,' the palm-down rotation of the forearm."
+  hint="Reread the short paragraph after the regions figure on how a body that is lying down is described."
 >}}
 
 {{< textin
   question="A face-up body orientation is called the ________ position."
   answer="supine"
-  hint="This word also names 'supination,' the palm-up rotation of the forearm — think of holding a bowl of soup."
+  hint="The same short paragraph after the regions figure names both lying orientations; this is the other one."
 >}}
 
 {{< multiplechoice
   question="What is the position of the body when it is in the “normal anatomical position?”"
   answer="None of the above"
-  hint="Check each option against the standard: feet at shoulder width, toes forward, arms out to the sides, palms facing forward — not touching the sides and not extended at a ninety-degree angle."
+  hint="Check each option against the Anatomical Position subsection's description of the standard body map."
 >}}
 The person is prone with upper limbs, including palms, touching sides and lower limbs touching at sides.
 The person is standing facing the observer, with upper limbs extended out at a ninety-degree angle from the torso and lower limbs in a wide stance with feet pointing laterally
@@ -177,7 +177,7 @@ None of the above
 {{< multiplechoice
   question="The lumbar region is ________."
   answer="superior to the popliteal region"
-  hint="The lumbar region is part of the lower back; the popliteal region is the back of the knee. Compare their heights on a standing body."
+  hint="Locate each region named in the options on the regions figure, then apply the Directional Terms definitions."
 >}}
 inferior to the gluteal region
 inferior to the umbilical region
@@ -199,15 +199,22 @@ left iliac region
 {{< textin
   question="The term for a position in a limb that is nearer to the point of attachment or the trunk of the body is ________."
   answer="proximal"
-  hint="Its opposite describes a position farther from the trunk — picture the shoulder compared with the fingertips."
+  hint="Find this term in the Directional Terms list, or on the arm and leg arrows of the directional-terms figure."
 >}}
 
 ### Identify three planes most commonly used in the study of anatomy
 
+{{< textin
+  question="The plane that divides the body or an organ into an anterior (front) portion and a posterior (rear) portion is called the ________."
+  answer="frontal plane"
+  accept="coronal plane"
+  hint="Reread the Body Planes bullet list and match the two portions named in the stem."
+>}}
+
 {{< multiplechoice
   question="To make a banana split, you halve a banana into two long, thin, right and left sides along the ________."
   answer="midsagittal plane"
-  hint="This plane creates two precisely equal right and left halves, not just any right-left division."
+  hint="Reread the Body Planes bullet on the plane that divides the body into right and left sides, including the names of its variants."
 >}}
 coronal plane
 longitudinal plane
@@ -224,19 +231,12 @@ to produce sagittal sections, the scanner would move from left to right or from 
 sagittal sections divide the body lengthwise into left and right portions
 {{< /selfcheck >}}
 
-{{< textin
-  question="The plane that divides the body or an organ into an anterior (front) portion and a posterior (rear) portion is called the ________."
-  answer="frontal plane"
-  accept="coronal plane"
-  hint="A term meaning 'crown' names this plane's more common alternate name in clinical use."
->}}
-
 ### Distinguish between the posterior (dorsal) and the anterior (ventral) body cavities, identifying their subdivisions and representative organs found in each
 
 {{< multiplechoice
   question="The heart is within the ________."
   answer="mediastinum"
-  hint="This subdivision sits between the two lungs, inside the space enclosed by the rib cage."
+  hint="Find where the Subdivisions of the Posterior (Dorsal) and Anterior (Ventral) Cavities subsection locates the heart."
 >}}
 cranial cavity
 mediastinum
@@ -247,19 +247,19 @@ All of the above
 {{< textin
   question="The division of the anterior (ventral) cavity that houses the heart, lungs, esophagus, and trachea is the ________."
   answer="thoracic cavity"
-  hint="It sits above the diaphragm, enclosed by the rib cage."
+  hint="Reread the paragraph on the two main subdivisions of the anterior (ventral) cavity."
 >}}
 
 {{< textin
-  question="The division of the dorsal cavity that encloses the spinal cord is the ________."
+  question="Besides the cranial cavity, the posterior (dorsal) cavity has one other subdivision, continuous with the cranial cavity. It is the ________."
   answer="spinal cavity"
   accept="vertebral cavity"
-  hint="It runs continuously from the cranial cavity, protected by the bones of the skull and spine."
+  hint="Reread the first paragraph of the Subdivisions of the Posterior (Dorsal) and Anterior (Ventral) Cavities subsection."
 >}}
 
 ### Describe serous membrane and explain its function
 
-{{< selfcheck question="If a bullet were to penetrate a lung, which three anterior thoracic body cavities would it enter, and which layer of the serous membrane would it encounter first?" hint="Trace the path inward: which large cavity, then which subdivision, then which specific cavity surrounds the lung? Then decide which serous layer lines the outer wall rather than covering the organ itself." >}}
+{{< selfcheck question="If a bullet were to penetrate a lung, which three anterior thoracic body cavities would it enter, and which layer of the serous membrane would it encounter first?" hint="Use the cavities figure for the path inward, then reread the Membranes of the Anterior (Ventral) Body Cavity paragraph on the membrane's two layers." >}}
 The bullet would enter the ventral, thoracic, and pleural cavities, and it would encounter the parietal layer of serous membrane first.
 ===CHECKS===
 the bullet would enter the ventral, thoracic, and pleural cavities
@@ -267,17 +267,18 @@ it would encounter the parietal layer of serous membrane first
 {{< /selfcheck >}}
 
 {{< textin
-  question="The serous membrane that encloses the pleural cavity and covers the lungs is called the ________."
-  answer="pleura"
-  hint="Its cavity reduces friction between the lungs and the body wall during breathing."
+  question="The serous membrane that lines the abdominopelvic cavity and covers the organs found there is called the ________."
+  answer="peritoneum"
+  hint="Reread the paragraph after the serous-membrane figure, which names the three serous membranes and the cavity each encloses."
 >}}
 
 {{< textin
-  question="The serous membrane that lines the abdominopelvic cavity and covers the organs found there is called the ________."
-  answer="peritoneum"
-  hint="Its cavity reduces friction between the abdominal and pelvic organs and the body wall."
+  question="The serous membrane that covers the lungs is called the ________."
+  answer="pleura"
+  accept="pleurae"
+  hint="Reread the paragraph after the serous-membrane figure, which names the three serous membranes."
 >}}
 
 ---
 
-<small>This section is adapted from [Anatomy and Physiology 2e, Section 1.6: Anatomical Terminology](https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP; all six figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" (every one is a line-art illustration, not a photograph); a longdesc added to the regions, directional-terms, cavities, abdominal-regions, and serous-membrane figures (107_Regions_of_Human_Body, 108_Directional_Terms, 110_Dorsal_Ventral_Body_Cavities, 111_Abdominal_Quadrant_Regions, 112_Serous_Membrane_new), each walking its labels in the artwork's own reading order, with a shorter top-level alt naming what each figure shows; the regions figure's longdesc corrects a one-word source typo, "pollux," to "pollex" — the module's own Directional Terms list and the printed figure both spell it "pollex," and the figure's alt text alone printed "pollux"; the planes-of-the-body figure's alt is rewritten from the image to name all four planes it draws and labels (sagittal, frontal, transverse, and oblique), since the source alt named only three and omitted the oblique plane the image, caption, and body text all discuss; the abdominal-regions figure's longdesc names the lower-center region "Hypogastric region," the label printed in the image, which the source alt described by contents only and never named; the Key terms glossary bullet for "oblique plane" corrects a one-word source typo, "of" to "or" ("not parallel of perpendicular" → "not parallel or perpendicular"), matching the module's own body wording of the same definition; the four end-of-section Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eight key-term recall (textin) items added from the glossary and one figure-keyed multiple choice added from the abdominal-regions figure to round out each objective's group at the book's three-per-objective, fifteen-per-section floor; the first Practice group orders both key-term recall items before the source multiple choice so that neither recall item is immediately preceded by an option printing "prone" or "supine" (the multiple choice's own source-verbatim options are unedited); the module has no comparison table, feature box, or References section, so none appears on this page.</small>
+<small>This section is adapted from [Anatomy and Physiology 2e, Section 1.6: Anatomical Terminology](https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: the source's eight numbered figure cross-references (to Figures 1.12 through 1.17) replaced with descriptions of each figure's position on the page ("as illustrated below", "see the figure above", "see the figure below"), since the page does not number figures; figures re-encoded as WebP; all six figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" (every one is a line-art illustration, not a photograph); a longdesc added to the regions, directional-terms, cavities, abdominal-regions, and serous-membrane figures (107_Regions_of_Human_Body, 108_Directional_Terms, 110_Dorsal_Ventral_Body_Cavities, 111_Abdominal_Quadrant_Regions, 112_Serous_Membrane_new), each walking its labels in the artwork's own reading order, with a shorter top-level alt naming what each figure shows; the directional-terms figure's longdesc describes the arrows as drawn, correcting the source alt, which puts the proximal/distal arrow on the woman's right arm (the artwork draws it on her left arm, under the "Left" label), omits the artwork's second proximal/distal arrow along her right leg, and prints "cranial-distal" for the arrow the artwork labels Cranial and Caudal (erratum 879); the regions figure's longdesc corrects a one-word source typo, "pollux," to "pollex" — the module's own Directional Terms list and the printed figure both spell it "pollex," and the figure's alt text alone printed "pollux"; the planes-of-the-body figure's alt is rewritten from the image to name all four planes it draws and labels (sagittal, frontal, transverse, and oblique), since the source alt named only three and omitted the oblique plane the image, caption, and body text all discuss; the abdominal-regions figure's longdesc names the lower-center region "Hypogastric region," the label printed in the image, which the source alt described by contents only and never named; the Key terms glossary bullet for "oblique plane" corrects a one-word source typo, "of" to "or" ("not parallel of perpendicular" → "not parallel or perpendicular"), matching the module's own body wording of the same definition; the four end-of-section Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eight key-term recall (textin) items added from the glossary and one figure-keyed multiple choice added from the abdominal-regions figure to round out each objective's group to the book's floor of three items per objective (and eight per section); the first Practice group orders both key-term recall items before the source multiple choice so that neither recall item is immediately preceded by an option printing "prone" or "supine" (the multiple choice's own source-verbatim options are unedited), and the planes group puts the frontal-plane recall item first, so the multiple choice listing "coronal plane" and the self-check naming the frontal plane both come after it; the module has no comparison table, feature box, or References section, so none appears on this page.</small>

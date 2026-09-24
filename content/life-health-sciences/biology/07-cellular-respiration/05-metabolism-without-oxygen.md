@@ -37,11 +37,11 @@ Pyruvic acid + NADH ↔ lactic acid + NAD⁺
 
 The enzyme used in this reaction is lactate dehydrogenase (LDH). The reaction can proceed in either direction, but the reaction from left to right is inhibited by acidic conditions. Such lactic acid accumulation was once believed to cause muscle stiffness, fatigue, and soreness, although more recent research disputes this hypothesis. Once the lactic acid has been removed from the muscle and circulated to the liver, it can be reconverted into pyruvic acid and further catabolized for energy.
 
-{{< mediafigure src="biology/Figure_07_05_02-7db7" kind="diagram" alt="A diagram titled Lactic Acid Fermentation: glycolysis converts glucose to two pyruvate molecules while regenerating two ATP from ADP and phosphate; a cycle of two NAD⁺ and two NADH shows fermentation reoxidizing the NADH back to NAD⁺ while converting the two pyruvate molecules to two lactate molecules." longdesc="A flow diagram titled 'Lactic Acid Fermentation.' At the top, a curved arrow shows 2 ADP + 2 Pi converting to 2 ATP in a yellow circle. Below, a green arrow labeled 'Glycolysis' runs left to right from 'Glucose' to a pyruvate structural formula (O⁻, two C=O groups, then CH₃) labeled '2 Pyruvate.' A pair of curved white arrows forms a cycle beneath the glycolysis arrow, carrying '2 NAD⁺' up and '2 NADH + 2 H⁺' down between the glucose/pyruvate level and the lactate level. An orange arrow labeled 'NAD⁺ Regeneration' points left from the pyruvate structure to a lactate structural formula (O⁻, C=O, H–C–OH, CH₃) labeled '2 Lactate,' showing the reduction of pyruvate to lactate paired with the reoxidation of NADH to NAD⁺." >}}
+{{< mediafigure src="biology/Figure_07_05_02-7db7" kind="diagram" alt="A diagram titled Lactic Acid Fermentation: glycolysis converts glucose to two pyruvate molecules while regenerating two ATP from ADP and phosphate; a cycle of two NAD⁺ and two NADH shows fermentation reoxidizing the NADH back to NAD⁺ while converting the two pyruvate molecules to two lactate molecules." longdesc="A flow diagram titled 'Lactic Acid Fermentation.' At the top, a curved arrow shows 2 ADP + 2 Pi converting to 2 ATP in a yellow circle. Below, a green arrow labeled 'Glycolysis' runs left to right from 'Glucose' to a pyruvate structural formula (O⁻, two C=O groups, then CH₃) labeled '2 Pyruvate.' A pair of curved white arrows forms a clockwise cycle between the glycolysis arrow and the arrow below it: the upper arc, under the glycolysis arrow, runs from '2 NAD⁺' at left over to '2 NADH + 2 H⁺' at right, and the lower arc, over the arrow below, runs from the NADH back around to the NAD⁺. An orange arrow labeled 'NAD⁺ Regeneration' points left from the pyruvate structure to a lactate structural formula (O⁻, C=O, H–C–OH, CH₃) labeled '2 Lactate,' showing the reduction of pyruvate to lactate paired with the reoxidation of NADH to NAD⁺." >}}
 During glycolysis, glucose is oxidized to pyruvate while NAD⁺ is reduced to NADH. Two molecules of ATP are also produced by substrate level phosphorylation. In the absence of oxygen in some cell types, fermentation allows the reduction of pyruvate to lactate and the reoxidation of NADH to NAD⁺. The regeneration of NAD⁺ allows glycolysis to continue to make ATP by substrate level phosphorylation. Credit: Rao, A., Ryan, K., Tag, A., and Fletcher, S. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Tremetol, a metabolic poison found in the white snakeroot plant, prevents the metabolism of lactate. When cows eat this plant, tremetol is concentrated in the milk they produce. Humans who consume the milk can become seriously ill. Symptoms of this disease, which include vomiting, abdominal pain, and tremors, become worse after exercise. Why do you think this is the case?" hint="Think about what exercising muscle produces in large amounts, and what normally clears it from the body." >}}
+{{< selfcheck question="Tremetol, a metabolic poison found in the white snakeroot plant, prevents the metabolism of lactate. When cows eat this plant, tremetol is concentrated in the milk they produce. Humans who consume the milk can become seriously ill. Symptoms of this disease, which include vomiting, abdominal pain, and tremors, become worse after exercise. Why do you think this is the case?" hint="Reread the first two paragraphs under Lactic Acid Fermentation." >}}
 The illness is caused by lactate accumulation. Lactate levels rise after exercise, making the symptoms worse. Milk sickness is rare today but was common in the midwestern United States in the early 1800s.
 ===CHECKS===
 the illness is caused by lactate accumulation
@@ -78,7 +78,26 @@ If NADH cannot be oxidized through aerobic respiration, another electron accepto
 
 ### Discuss the fundamental difference between anaerobic cellular respiration and fermentation
 
-{{< selfcheck question="What is the primary difference between fermentation and anaerobic respiration?" hint="Think about how many stages of cellular respiration each process uses, and what each one uses as its final electron acceptor." >}}
+{{< textin
+  question="If NADH cannot be oxidized through aerobic respiration, another ________ is used."
+  answer="electron acceptor"
+  accept="final electron acceptor"
+  hint="Reread the Summary's first sentence."
+>}}
+
+{{< textin
+  question="Most organisms will use some form of fermentation to accomplish the regeneration of NAD⁺, ensuring the continuation of ________."
+  answer="glycolysis"
+  hint="Reread the Summary's second sentence."
+>}}
+
+{{< textin
+  question="The regeneration of NAD⁺ in fermentation is not accompanied by ________ production."
+  answer="ATP"
+  hint="Reread the Summary's last sentence."
+>}}
+
+{{< selfcheck question="What is the primary difference between fermentation and anaerobic respiration?" hint="Reread the section's opening paragraph and the Anaerobic Cellular Respiration subsection." >}}
 Fermentation uses glycolysis only. Anaerobic respiration uses all three parts of cellular respiration, including the parts in the mitochondria like the citric acid cycle and electron transport; it also uses a different final electron acceptor instead of oxygen gas.
 ===CHECKS===
 fermentation uses glycolysis only
@@ -86,31 +105,12 @@ anaerobic respiration uses all three parts of cellular respiration, including th
 uses a different final electron acceptor instead of oxygen gas
 {{< /selfcheck >}}
 
-{{< textin
-  question="Using an inorganic molecule as the final electron acceptor of the electron transport chain, in the absence of oxygen, is called ________."
-  answer="anaerobic cellular respiration"
-  accept="anaerobic respiration"
-  hint="Contrast this with fermentation, which uses an organic molecule as the final electron acceptor instead."
->}}
-
-{{< textin
-  question="The process that uses an organic molecule to regenerate NAD⁺ from NADH, allowing energy conversion in the absence of oxygen, is called ________."
-  answer="fermentation"
-  hint="It's the term the section defines using an organic, rather than inorganic, final electron acceptor."
->}}
-
-{{< textin
-  question="The regeneration of NAD⁺ in fermentation is not accompanied by ________ production."
-  answer="ATP"
-  hint="This is the fundamental thing anaerobic respiration's electron transport chain still makes that fermentation does not."
->}}
-
 ### Describe the type of fermentation that readily occurs in animal cells and the conditions that initiate that fermentation
 
 {{< multiplechoice
   question="Which of the following fermentation methods can occur in animal skeletal muscles?"
   answer="lactic acid fermentation"
-  hint="Skeletal muscle cells, unlike yeast, do not carry out the alternative pathway that produces ethanol and carbon dioxide."
+  hint="Reread the first paragraph after the green coastal-waters photo."
 >}}
 lactic acid fermentation
 alcohol fermentation
@@ -118,33 +118,29 @@ mixed acid fermentation
 propionic fermentation
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Under what conditions does lactic acid fermentation occur in skeletal muscle, and why is it needed there?" hint="Think about what happens to NADH regeneration when a working muscle's oxygen supply runs low." >}}
-Lactic acid fermentation occurs in skeletal muscle when the oxygen supply is insufficient for aerobic respiration to continue — that is, in muscle used to the point of fatigue. It also takes place routinely in mammalian red blood cells, which lack mitochondria altogether. In both cases, reducing pyruvate to lactate reoxidizes NADH back to NAD⁺, which allows glycolysis to keep producing ATP even though oxygen is unavailable.
-===CHECKS===
-lactic acid fermentation occurs in skeletal muscle when the oxygen supply is insufficient for aerobic respiration to continue
-in muscle used to the point of fatigue
-it also takes place routinely in mammalian red blood cells, which lack mitochondria altogether
-reducing pyruvate to lactate reoxidizes NADH back to NAD⁺
-allows glycolysis to keep producing ATP even though oxygen is unavailable
-{{< /selfcheck >}}
+{{< textin
+  question="Lactic acid fermentation is used in skeletal muscle that has an insufficient oxygen supply to allow aerobic respiration to continue — that is, in muscles used to the point of ________."
+  answer="fatigue"
+  hint="Reread the first paragraph after the green coastal-waters photo."
+>}}
+
+{{< textin
+  question="In muscles, lactic acid accumulation must be removed by the blood circulation, and when the lactic acid loses a hydrogen, the resulting lactate is brought to the ________ for further metabolism."
+  answer="liver"
+  hint="Reread the last sentence of the first paragraph after the green coastal-waters photo."
+>}}
 
 {{< multiplechoice
   question="Lactic acid fermentation is used routinely in mammalian red blood cells because they lack ________."
   answer="mitochondria"
-  hint="Red blood cells lose this organelle during development, so they cannot carry out aerobic respiration."
+  hint="Reread the second sentence of the first paragraph after the green coastal-waters photo."
 >}}
-ribosomes
+NAD⁺
 mitochondria
-a nucleus
-lysosomes
+pyruvate
+lactate dehydrogenase
 {{< /multiplechoice >}}
-
-{{< textin
-  question="Lactic acid fermentation is used in skeletal muscle that has an insufficient oxygen supply to allow aerobic respiration to continue — that is, in muscles used to the point of ________."
-  answer="fatigue"
-  hint="This is the condition of a working muscle whose oxygen supply can no longer keep up with its demand for aerobic respiration."
->}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 7.5: Metabolism without Oxygen](https://openstax.org/books/biology-2e/pages/7-5-metabolism-without-oxygen) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (all three kinds — two photos, one diagram — matched the manifest's guess after inspection); the two chemical-reaction equations set as Unicode text with arrows rather than KaTeX; the two photo alts rewritten from the source's bare "This photo shows…" wording to describe what each image depicts; a longdesc added to the lactic acid fermentation diagram, the only figure whose full reading is not carried by its caption; the Link to Learning's link text made descriptive ("this interactive fermentation site") rather than the source's bare "site"; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Question and Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively); two key-term recall items (anaerobic cellular respiration, fermentation) added from the glossary; one additional self-check written locally, paraphrasing the section's own paragraph on when skeletal muscle uses lactic acid fermentation, since the module's three keyed exercises did not otherwise cover the second objective's "conditions that initiate" clause; rubric checkpoints added to all four self-checks, the body Visual Connection included, decomposing each model answer (the source solution) into check-off clauses with no new claims; a summary-derived cloze `textin` item added under the first objective, on the ATP production the summary says fermentation's NAD⁺ regeneration is not accompanied by; and, since the module's exercises, glossary, and summary are otherwise exhausted for the second objective, two items written locally and strictly from the section's own sentences on lactic acid fermentation — a multiple choice on why red blood cells use it (disclosed in the ledger) and a cloze textin on the muscle condition ("fatigue") that initiates it (disclosed in the ledger) — to raise the second objective's group and the section as a whole to the practice floor.</small>
+<small>This section is adapted from [Biology 2e, Section 7.5: Metabolism without Oxygen](https://openstax.org/books/biology-2e/pages/7-5-metabolism-without-oxygen) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (all three kinds — two photos, one diagram — matched the manifest's guess after inspection); the two chemical-reaction equations set as Unicode text with arrows rather than KaTeX; the two photo alts rewritten from the source's bare "This photo shows…" wording to describe what each image depicts; a longdesc added to the lactic acid fermentation diagram, the only figure whose full reading is not carried by its caption; the Link to Learning's link text made descriptive ("this interactive fermentation site") rather than the source's bare "site"; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Question and Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to both self-checks, the body Visual Connection included, decomposing each model answer (the source solution) into check-off clauses with no new claims; three summary-derived cloze `textin` items added under the first objective — the electron acceptor, glycolysis, and ATP clauses of the summary's three sentences — in place of glossary recall items, because the first objective's own wording names both glossary terms (fermentation, anaerobic cellular respiration); and, since the module's exercises, glossary, and summary are otherwise exhausted for the second objective, three items written locally and strictly from the section's own sentences on lactic acid fermentation — a multiple choice on why red blood cells use it (disclosed in the ledger), a cloze textin on the muscle condition ("fatigue") that initiates it, and a cloze textin on the organ ("liver") that receives the lactate (both disclosed in the ledger) — to raise the second objective's group and the section as a whole to the practice floor.</small>

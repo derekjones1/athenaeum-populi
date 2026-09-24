@@ -21,7 +21,7 @@ Animals vary in form and function. From a sponge to a worm to a goat, an organis
 
 ## Body Plans
 
-{{< mediafigure src="biology/Figure_33_01_01" kind="diagram" eager="true" alt="Three side-by-side illustrations comparing body symmetry: an irregular, tube-bodied orange sponge with no plane of symmetry; a tube-bodied sea anemone with trailing tentacles, enclosed by three intersecting blue planes meeting along its central axis; and a goat standing in profile inside a single blue plane running from front to back through its body." longdesc="Three panels left to right, each with its own caption beneath. The first, captioned 'Asymmetry,' shows an irregular, blob-like orange sponge with no plane or label. The second, captioned 'Radial symmetry,' shows a tube-bodied sea anemone with trailing tentacles, enclosed by three intersecting blue rectangular planes that meet along its central vertical axis. The third, captioned 'Bilateral symmetry,' shows a goat standing in profile inside a single blue plane running front to back through its body: 'Dorsal' labels the top edge of the plane, 'Ventral' the bottom edge near the legs, 'Anterior' the front (left) edge, and 'Posterior' the back (right) edge." >}}
+{{< mediafigure src="biology/Figure_33_01_01" kind="diagram" eager="true" alt="Three side-by-side illustrations comparing body symmetry: an irregular, tube-bodied orange sponge with no plane of symmetry; a tube-bodied sea anemone with trailing tentacles, enclosed by three intersecting blue planes meeting along its central axis; and a goat, seen in three-quarter view facing the viewer, inside a single blue plane running from front to back through its body." longdesc="Three panels left to right, each with its own caption beneath. The first, captioned 'Asymmetry,' shows an irregular orange sponge, a tube with a lumpy growth off one side, with no plane or label. The second, captioned 'Radial symmetry,' shows a tube-bodied sea anemone with trailing tentacles, enclosed by three intersecting blue rectangular planes that meet along its central vertical axis. The third, captioned 'Bilateral symmetry,' shows a goat, seen in three-quarter view with its head toward the viewer, inside a single blue plane running front to back through its body: 'Dorsal' labels the top edge of the plane, 'Ventral' the bottom edge near the legs, 'Anterior' the front (left) edge, and 'Posterior' the back (right) edge." >}}
 Animals exhibit different types of body symmetry. The sponge is asymmetrical, the sea anemone has radial symmetry, and the goat has bilateral symmetry.
 {{< /mediafigure >}}
 
@@ -49,7 +49,7 @@ Most animals have an exoskeleton, including insects, spiders, scorpions, horsesh
 
 As the tough and resistant outer cover of an arthropod, the exoskeleton may be constructed of a tough polymer such as chitin and is often biomineralized with materials such as calcium carbonate. This is fused to the animal's epidermis. Ingrowths of the exoskeleton, called **apodemes**, function as attachment sites for muscles, similar to tendons in more advanced animals (illustrated below). In order to grow, the animal must first synthesize a new exoskeleton underneath the old one and then shed or molt the original covering. This limits the animal's ability to grow continually, and may limit the individual's ability to mature if molting does not occur at the proper time. The thickness of the exoskeleton must be increased significantly to accommodate any increase in weight. It is estimated that a doubling of body size increases body weight by a factor of eight. The increasing thickness of the chitin necessary to support this weight limits most animals with an exoskeleton to a relatively small size. The same principles apply to endoskeletons, but they are more efficient because muscles are attached on the outside, making it easier to compensate for increased mass.
 
-{{< mediafigure src="biology/Figure_B33_01_06-crab" kind="diagram" alt="A crab claw shown open, its shell cut away to reveal pale, ridged muscle-attachment sites inside the pincer's base, above and below the pivot point where the claw hinges." longdesc="A crab claw shown open, its shell cut away to reveal the muscle attachment sites inside the pincer's base. Two labels point to pale ridged structures within the claw: 'Extensor apodeme' above the pivot point and 'Flexor apodeme' below it; a brace at the right groups both labels under the single heading 'Apodemes.'" >}}
+{{< mediafigure src="biology/Figure_B33_01_06-crab" kind="diagram" alt="A crab claw shown open, its shell cut away to reveal two pale, blade-shaped muscle-attachment sites set in red muscle inside the pincer's base, one above the other." longdesc="A crab claw shown open, its shell cut away to reveal red muscle inside the pincer's base, holding two pale blade-shaped structures: a narrow one near the top and a larger, fan-shaped, ridged one below it. The labels 'Extensor apodeme' and 'Flexor apodeme' are printed on the shell just right of the cutaway, beside the upper and the lower blade respectively, with no pointer lines of their own; two lines from the heading 'Apodemes' at the far right run to those two labels." >}}
 Apodemes are ingrowths on arthropod exoskeletons to which muscles attach. The apodemes on this crab leg are located above and below the fulcrum of the claw. Contraction of muscles attached to the apodemes pulls the claw closed.
 {{< /mediafigure >}}
 
@@ -97,13 +97,13 @@ If torpor occurs during the summer months with high temperatures and little wate
 
 A standing vertebrate animal can be divided by several planes. A **sagittal plane** divides the body into right and left portions. A **midsagittal plane** divides the body exactly in the middle, making two equal right and left halves. A **frontal plane** (also called a coronal plane) separates the front from the back. A **transverse plane** (or, horizontal plane) divides the animal into upper and lower portions. This is sometimes called a cross section, and, if the transverse cut is at an angle, it is called an oblique plane. The figure below illustrates these planes on a goat (a four-legged animal) and a human being.
 
-{{< mediafigure src="biology/Figure_33_01_04" kind="diagram" alt="Two figures sliced by colored planes: a goat in profile on the left and a human facing forward with arms outstretched on the right, each with a vertical plane running front to back, a second vertical plane, and a horizontal plane, all labeled." longdesc="Two panels side by side. On the left, a goat stands in profile, sliced by three intersecting planes: a blue vertical plane running the length of its body, labeled 'Midsagittal plane'; a red vertical plane crossing its torso partway along that length, labeled 'Transverse plane'; and a yellow horizontal plane passing through its belly, dividing the upper half of the body from the lower half and legs, labeled 'Frontal plane.' On the right, a human stands facing forward with arms outstretched, sliced by the same three planes, plus a 'Midline' label at the top marking the body's central vertical line: a teal vertical plane running front to back through the body's center, labeled 'Midsagittal plane'; a yellow vertical plane running side to side through the shoulders, labeled 'Frontal plane'; and a red horizontal plane at waist height, labeled 'Transverse plane.'" >}}
+{{< mediafigure src="biology/Figure_33_01_04" kind="diagram" alt="Two figures sliced by colored planes: a goat in three-quarter view on the left and a human facing forward with arms outstretched on the right, each with a vertical plane running front to back, a second vertical plane, and a horizontal plane, all labeled." longdesc="Two panels side by side. On the left, a goat stands in three-quarter view, head toward the viewer, sliced by three intersecting planes: a blue vertical plane running the length of its body, labeled 'Midsagittal plane'; a red vertical plane crossing its torso partway along that length, labeled 'Transverse plane'; and a yellow horizontal plane passing through its belly, dividing the upper half of the body from the lower half and legs, labeled 'Frontal plane.' On the right, a human stands facing forward with arms outstretched, sliced by the same three planes, plus a 'Midline' label at the top marking the body's central vertical line: a teal vertical plane running front to back through the body's center, labeled 'Midsagittal plane'; a yellow vertical plane running side to side through the shoulders, labeled 'Frontal plane'; and a red horizontal plane across the lower chest, just below the outstretched arms, labeled 'Transverse plane.'" >}}
 Shown are the planes of a quadrupedal goat and a bipedal human. The midsagittal plane divides the body exactly in half, into right and left portions. The frontal plane divides the front and back, and the transverse plane divides the body into upper and lower portions.
 {{< /mediafigure >}}
 
 Vertebrate animals have a number of defined body cavities, as illustrated below. Two of these are major cavities that contain smaller cavities within them. The **dorsal cavity** contains the cranial and the vertebral (or spinal) cavities. The **ventral cavity** contains the thoracic cavity, which in turn contains the pleural cavity around the lungs and the pericardial cavity, which surrounds the heart. The ventral cavity also contains the abdominopelvic cavity, which can be separated into the abdominal and the pelvic cavities.
 
-{{< mediafigure src="biology/Figure_B33_01_05" kind="diagram" alt="A side profile of a human upper body, from head to hips, with shaded cavities bracketed and labeled: a cranial and spinal cavity along the head and back, and a large front cavity spanning the chest through the pelvis." longdesc="A side profile of a human upper body, from head to hips, with cavities shaded and bracketed. At the top, 'Cranial cavity' labels the head. A long thin shaded strip down the back of the neck and spine is labeled 'Spinal cavity,' and together with the cranial cavity is bracketed at the left as the 'Dorsal cavity.' A large shaded region filling the front of the torso is labeled from top to bottom: 'Thoracic cavity,' then a boundary line labeled 'Diaphragm,' then 'Abdominal cavity,' with a white dashed line further down separating it from the 'Pelvic cavity' beneath. This entire front region is bracketed at the right as the 'Ventral cavity,' with the abdominal-and-pelvic portion beneath the diaphragm additionally bracketed and labeled 'Abdominopelvic cavity.'" >}}
+{{< mediafigure src="biology/Figure_B33_01_05" kind="diagram" alt="A side profile of a human upper body, from head to hips, with shaded cavities bracketed and labeled: a cranial and spinal cavity along the head and back, and a large front cavity spanning the chest through the pelvis." longdesc="A side profile of a human upper body, from head to hips, with cavities shaded and bracketed. At the top, 'Cranial cavity' labels the head. A long thin shaded strip down the back of the neck and spine is labeled 'Spinal cavity,' and together with the cranial cavity is bracketed at the left as the 'Dorsal cavity.' A large shaded region filling the front of the torso is labeled from top to bottom: 'Thoracic cavity,' then a boundary line labeled 'Diaphragm,' then 'Abdominal cavity,' with a white dashed line, slanting down from the spine toward the front, further down separating it from the 'Pelvic cavity' beneath. This entire front region is bracketed at the right as the 'Ventral cavity,' and a shorter inner bracket labeled 'Abdominopelvic cavity' marks the region beneath the diaphragm (drawn from about mid-abdomen to the bottom of the cavity)." >}}
 Vertebrate animals have two major body cavities. The dorsal cavity contains the cranial and the spinal cavity. The ventral cavity contains the thoracic cavity and the abdominopelvic cavity. The thoracic cavity is separated from the abdominopelvic cavity by the diaphragm. The abdominopelvic cavity is separated into the abdominal cavity and the pelvic cavity by an imaginary line parallel to the pelvis bones. (credit: modification of work by NCI)
 {{< /mediafigure >}}
 
@@ -143,7 +143,7 @@ Animal bodies come in a variety of sizes and shapes. Limits on animal size and s
 {{< multiplechoice
   question="The symmetry found in animals that move swiftly is ________."
   answer="bilateral"
-  hint="This is the symmetry of a goat or a fish, with a plane cut front to back that yields definite right and left sides."
+  hint="Look at the Body Plans paragraphs on symmetry and at the body-symmetry figure, then at which kind of animal each symmetry suits."
 >}}
 radial
 bilateral
@@ -154,7 +154,7 @@ interrupted
 {{< multiplechoice
   question="Although most animals are bilaterally symmetrical, a few exhibit radial symmetry. What is an advantage of radial symmetry?"
   answer="It allows the animal to gather food from all sides."
-  hint="Think about the sea anemones and similar animals that attach to a rock or boat and extract food from the water flowing around them."
+  hint="Reread the Body Plans paragraph that follows the definition of radial symmetry and the kinds of animals that have it."
 >}}
 It confuses predators.
 It allows the animal to gather food from all sides.
@@ -165,7 +165,7 @@ It lets an animal use its dorsal surface to sense its environment.
 {{< multiplechoice
   question="A plane that divides an animal into equal right and left portions is ________."
   answer="midsagittal"
-  hint="A plain sagittal plane also divides right from left, but only this plane guarantees the two halves are equal."
+  hint="Look at the paragraph describing the body planes and at the body-planes figure."
 >}}
 diagonal
 midsagittal
@@ -176,7 +176,7 @@ transverse
 {{< multiplechoice
   question="A plane that divides an animal into dorsal and ventral portions is ________."
   answer="transverse"
-  hint="This is the plane that produces a cross section, dividing the body into upper and lower portions."
+  hint="Look at the paragraph describing the body planes and at the body-planes figure; note which plane separates upper from lower."
 >}}
 sagittal
 midsagittal
@@ -187,7 +187,7 @@ transverse
 {{< multiplechoice
   question="The pleural cavity is a part of which cavity?"
   answer="thoracic cavity"
-  hint="This cavity, which also holds the pericardial cavity around the heart, sits inside the larger ventral cavity."
+  hint="Look at the body-cavities figure and the paragraph describing how the dorsal and ventral cavities are subdivided."
 >}}
 dorsal cavity
 thoracic cavity
@@ -199,14 +199,14 @@ pericardial cavity
   question="The plane cutting through an animal that separates it into front and back portions is called the ________."
   answer="frontal plane"
   accept="coronal plane|frontal (coronal) plane|frontal|coronal"
-  hint="The section also calls this plane by a second name, the one used for the similarly angled plane in dental and skull anatomy."
+  hint="Look at the paragraph describing the body planes and at the body-planes figure."
 >}}
 
 {{< textin
   question="The plane cutting through an animal that separates it into right and left sides, without requiring the two sides to be equal, is called the ________."
   answer="sagittal plane"
   accept="sagittal"
-  hint="A more exact version of this plane, one that splits the body into precisely equal right and left halves, adds the prefix 'mid-' to the same term."
+  hint="Look at the first plane described in the body-planes paragraph."
 >}}
 
 ### Describe limits on animal size and shape
@@ -246,7 +246,7 @@ this limits animals with an open circulatory system to fairly small volumes, so 
 {{< multiplechoice
   question="Which type of animal maintains a constant internal body temperature?"
   answer="endotherm"
-  hint="This animal conserves the heat its metabolism produces using insulation such as fur, fat, or feathers."
+  hint="Look at the Animal Bioenergetics paragraphs that contrast the two ways animals obtain body heat."
 >}}
 endotherm
 ectotherm
@@ -257,7 +257,7 @@ mesoderm
 {{< multiplechoice
   question="What term describes the condition of a desert mouse that lowers its metabolic rate and “sleeps” during the hot day?"
   answer="estivation"
-  hint="This is torpor brought on by high temperatures and scarce water, rather than by a long cold season."
+  hint="Look at the Energy Requirements Related to Environment paragraph, at the terms for torpor in different seasons."
 >}}
 turgid
 hibernation
@@ -276,13 +276,13 @@ Ectotherms will have to expend more energy to cool their body temperatures.
 Ectotherms will be able to expand into new habitats.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is the relationship between BMR and body size? Why?" hint="Compare the surface area of a small animal to its mass, and the same ratio for a large animal, then think about which one loses heat faster." >}}
-Basal Metabolic Rate is an expression of the metabolic processes that occur to maintain an individual's functioning and body temperature. Smaller bodied animals have a relatively large surface area compared to a much larger animal. The large animal's large surface area leads to increased heat loss that the animal must compensate for, resulting in a higher BMR. A small animal, having less relative surface area, does not lose as much heat and has a correspondingly lower BMR.
+{{< selfcheck question="What is the relationship between BMR and body size? Why?" hint="Reread the Energy Requirements Related to Body Size subsection and the mouse-and-elephant photos." >}}
+Basal Metabolic Rate is an expression of the metabolic processes that occur to maintain an individual's functioning and body temperature. Smaller bodied animals have a relatively large surface area compared to a much larger animal. The small animal's relatively large surface area leads to increased heat loss that the animal must compensate for, resulting in a higher BMR per body weight. A large animal, having less relative surface area, does not lose as much heat and has a correspondingly lower BMR per body weight. *(Source note: the source solution gives the large animal the higher BMR and the small animal the lower one; this section's own text says smaller animals "lose heat at a faster rate than larger animals," which "results in a smaller endothermic animal having a higher BMR, per body weight, than a larger endothermic animal.")*
 ===CHECKS===
 BMR is an expression of the metabolic processes that maintain an individual's functioning and body temperature
 smaller bodied animals have a relatively large surface area compared to a much larger animal
-the large animal's large surface area leads to increased heat loss it must compensate for, resulting in a higher BMR
-a small animal, having less relative surface area, does not lose as much heat and has a correspondingly lower BMR
+the small animal's relatively large surface area leads to increased heat loss it must compensate for, resulting in a higher BMR per body weight
+a large animal, having less relative surface area, does not lose as much heat and has a correspondingly lower BMR per body weight
 {{< /selfcheck >}}
 
 {{< selfcheck question="Describe one key environmental constraint for ectotherms and one for endotherms. Why are they limited by different factors?" hint="Endotherms generate their own heat and so depend on something they must consume; ectotherms depend on something in the surrounding environment." >}}
@@ -294,10 +294,9 @@ the difference in how the two groups maintain their body temperature determines 
 {{< /selfcheck >}}
 
 {{< textin
-  question="Torpor in response to extremely high temperatures and low water availability is called ________."
-  answer="estivation"
-  accept="aestivation"
-  hint="Some desert animals use this to survive the driest, hottest months of the year."
+  question="A decrease in activity and metabolism that allows an animal to survive adverse conditions is called ________."
+  answer="torpor"
+  hint="Look at the opening sentences of Energy Requirements Related to Environment."
 >}}
 
 {{< textin
@@ -308,4 +307,4 @@ the difference in how the two groups maintain their body temperature determines 
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 33.1: Animal Form and Function](https://openstax.org/books/biology-2e/pages/33-1-animal-form-and-function) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" — Figure_33_01_01 (body-symmetry illustration), Figure_B33_01_06-crab (apodeme illustration), and Figure_33_01_04 (body-planes illustration) are all drawings, not photographs; a longdesc added to the body-symmetry, apodeme, body-planes, and body-cavities figures (Figure_33_01_01, Figure_B33_01_06-crab, Figure_33_01_04, Figure_B33_01_05), each walking its labels in reading order; the body-metabolic-rate figure's (Figure_33_01_03) source alt, a data walk-through with a spacing artifact ("4,500 k g"), rewritten to describe the two photographs and their data-table layout using the figure's own printed value ("4,500,000 g"); the Link to Learning's "this site" replaced with descriptive link text naming the destination, its URL kept; the Career Connection feature box rendered as a callout with its bold name and italicized title; the maximum-speed table kept as a Markdown table (a table of example animals and their speeds, not a category comparison, so it is not also rendered as a sortbins exercise); the two genuine numeric exponents in the surface-to-volume-ratio sentence ($4\pi r^2$, $(4/3)\pi r^3$) set in KaTeX; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and six key-term recall items (frontal plane, sagittal plane, fusiform, apodeme, estivation, hibernation) added from the glossary to round out each objective's group.</small>
+<small>This section is adapted from [Biology 2e, Section 33.1: Animal Form and Function](https://openstax.org/books/biology-2e/pages/33-1-animal-form-and-function) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; three figures re-kinded from the media manifest's file-extension "photo" guess to "diagram" — Figure_33_01_01 (body-symmetry illustration), Figure_B33_01_06-crab (apodeme illustration), and Figure_33_01_04 (body-planes illustration) are all drawings, not photographs; a longdesc added to the body-symmetry, apodeme, body-planes, and body-cavities figures (Figure_33_01_01, Figure_B33_01_06-crab, Figure_33_01_04, Figure_B33_01_05), each walking its labels in reading order; the body-metabolic-rate figure's (Figure_33_01_03) source alt, a data walk-through with a spacing artifact ("4,500 k g"), rewritten to describe the two photographs and their data-table layout using the figure's own printed value ("4,500,000 g"); the Link to Learning's "this site" replaced with descriptive link text naming the destination, its URL kept; the Career Connection feature box rendered as a callout with its bold name and italicized title; the maximum-speed table kept as a Markdown table (a table of example animals and their speeds, not a category comparison, so it is not also rendered as a sortbins exercise); the two genuine numeric exponents in the surface-to-volume-ratio sentence ($4\pi r^2$, $(4/3)\pi r^3$) set in KaTeX; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), using every keyed exercise; the BMR Critical Thinking model answer (`fs-idp22243696`) corrected, with a visible Source note, from the source solution's "the large animal's large surface area… resulting in a higher BMR" to the small animal having the higher BMR per body weight, since this section's own Metabolic Rate text says a smaller endothermic animal has "a higher BMR, per body weight, than a larger endothermic animal" — reported as a source defect, and its rubric's last two checkpoints follow the corrected answer; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and six key-term recall items (frontal plane, sagittal plane, fusiform, apodeme, torpor, hibernation) added from the glossary — torpor in place of an estivation recall item that re-asked the desert-mouse Review Question to round out each objective's group.</small>

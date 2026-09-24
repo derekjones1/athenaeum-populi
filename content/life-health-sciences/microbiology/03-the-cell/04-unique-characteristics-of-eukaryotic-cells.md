@@ -50,7 +50,7 @@ Eukaryotic cells come in a variety of cell shapes. (a) Spheroid *Chromulina* alg
 
 **Check Your Understanding**
 
-{{< selfcheck question="Identify two differences between eukaryotic and prokaryotic cells." hint="Think about what surrounds a eukaryotic cell's DNA, and what kind of internal structures hold its organelles in place." >}}
+{{< selfcheck question="Identify two differences between eukaryotic and prokaryotic cells." hint="Reread this section's opening paragraph." >}}
 Eukaryotic cells are defined by the presence of a nucleus surrounded by a complex nuclear membrane, while prokaryotic cells lack a nucleus. Eukaryotic cells are also characterized by the presence of membrane-bound organelles in the cytoplasm, which are held in place by the cytoskeleton, an internal network that supports transport of intracellular components and helps maintain cell shape; prokaryotic cells lack membrane-bound organelles.
 ===CHECKS===
 eukaryotic cells are defined by the presence of a nucleus surrounded by a complex nuclear membrane
@@ -96,7 +96,7 @@ Karyokinesis (or mitosis) is divided into five stages—prophase, prometaphase, 
 
 In addition to the mitotic asexual reproduction described above, most eukaryotic microorganisms also have the option of sexual reproduction involving **meiosis**. Although mitosis and meiosis both require DNA replication, nuclear division, and share procedural similarities, there are important differences between the process and outcomes (shown below).
 
-{{< mediafigure src="microbiology/Figure_11_01_06" alt="A diagram comparing meiosis, at top, to mitosis, at bottom, stage by stage. Meiosis shows two rounds of division — meiosis I, including synapsis and crossover of homologous chromosomes, and meiosis II — ending in four haploid daughter cells. Mitosis shows one round of division, with sister chromatids lining up at the metaphase plate, ending in two diploid daughter cells identical to the parent." kind="diagram" longdesc="The upper, tan band is labeled Meiosis and ends in haploid cells; the lower, blue band is labeled Mitosis and ends in diploid cells. Meiosis, left to right: interphase; then meiosis I — prophase I, prometaphase I, metaphase I, anaphase I, telophase I — and cytokinesis, giving two cells; each then passes through meiosis II — prophase II, prometaphase II, metaphase II, anaphase II, telophase II — and cytokinesis, giving four haploid cells. Mitosis, left to right: interphase, then prophase, prometaphase, metaphase, anaphase, telophase, and cytokinesis, giving two diploid cells. Below the diagrams a comparison table has one row per process and a column each for meiosis and mitosis. DNA synthesis: occurs in the S phase of interphase in both. Synapsis of homologous chromosomes: during prophase I in meiosis; does not occur in mitosis. Crossover: during prophase I in meiosis; does not occur in mitosis. Homologous chromosomes line up at the metaphase plate: during metaphase I in meiosis; does not occur in mitosis. Sister chromatids line up at the metaphase plate: during metaphase II in meiosis; during metaphase in mitosis. Outcome, the number and genetic composition of daughter cells: four haploid cells at the end of meiosis II; two diploid cells at the end of mitosis." >}}
+{{< mediafigure src="microbiology/Figure_11_01_06" alt="A diagram comparing meiosis, at top, to mitosis, at bottom, stage by stage. Meiosis shows two rounds of division — meiosis I, including synapsis and crossover of homologous chromosomes, and meiosis II — ending in four haploid daughter cells. Mitosis shows one round of division, with sister chromatids lining up at the metaphase plate, ending in two diploid daughter cells identical to the parent." kind="diagram" longdesc="The upper, tan band is labeled Meiosis and ends in haploid cells; the lower, blue band is labeled Mitosis and ends in diploid cells. Meiosis, left to right: interphase; then meiosis I — prophase I, prometaphase I, metaphase I, anaphase I, telophase I — and cytokinesis, giving two cells; each then passes through meiosis II — prophase II, prometaphase II, metaphase II, anaphase II, telophase II — and cytokinesis, giving four haploid cells. As drawn, the bracket labeled Meiosis I spans prometaphase I through telophase I, its left end just after the prophase I cell, and the bracket labeled Meiosis II spans prophase II through telophase II; in the two meiosis II rows the stage names alternate between rows, the upper row labeled prophase II, metaphase II, and telophase II and the lower row prometaphase II and anaphase II. Mitosis, left to right: interphase, then prophase, prometaphase, metaphase, anaphase, telophase, and cytokinesis, giving two diploid cells. Below the diagrams a comparison table has one row per process and a column each for meiosis and mitosis. DNA synthesis: occurs in the S phase of interphase in both. Synapsis of homologous chromosomes: during prophase I in meiosis; does not occur in mitosis. Crossover: during prophase I in meiosis; does not occur in mitosis. Homologous chromosomes line up at the metaphase plate: during metaphase I in meiosis; does not occur in mitosis. Sister chromatids line up at the metaphase plate: during metaphase II in meiosis; during metaphase in mitosis. Outcome, the number and genetic composition of daughter cells: four haploid cells at the end of meiosis II; two diploid cells at the end of mitosis." >}}
 Meiosis and mitosis are both preceded by one cycle of DNA replication; however, meiosis includes two nuclear divisions. The four daughter cells resulting from meiosis are haploid and genetically distinct. The daughter cells resulting from mitosis are diploid and identical to the parent cell. (credit: *Biology 2e*, Rice University, OpenStax, under CC BY 4.0 license)
 {{< /mediafigure >}}
 
@@ -154,7 +154,7 @@ In 1955, Belgian scientist Christian de Duve (1917–2013) discovered **lysosome
 
 **Check Your Understanding**
 
-{{< sortbins question="Name the components of the endomembrane system and describe the function of each component." hint="Think about which of these organelles is studded with ribosomes, which one adds carbohydrate components to lipids and proteins passed to it, and which one contains digestive enzymes." >}}
+{{< sortbins question="Name the components of the endomembrane system and describe the function of each component." hint="Reread the subsections of Endomembrane System." >}}
 {"bins": ["Endoplasmic reticulum", "Golgi apparatus", "Lysosomes"],
  "items": [
   {"label": "studded with ribosomes that make proteins destined for the plasma membrane", "bin": 0},
@@ -213,10 +213,10 @@ In addition, microtubules are involved in cell division, forming the mitotic spi
 
 **Check Your Understanding**
 
-{{< sortbins question="Compare and contrast the three types of cytoskeletal structures described in this section." hint="Think about what each structure is built from, how permanent each one is in the cell, and what job each one does." >}}
+{{< sortbins question="Compare and contrast the three types of cytoskeletal structures described in this section." hint="Reread the paragraphs on each type of cytoskeletal fiber." >}}
 {"bins": ["Microfilaments", "Intermediate filaments", "Microtubules"],
  "items": [
-  {"label": "composed of two intertwined strands of actin monomers", "bin": 0},
+  {"label": "two intertwined strands forming filamentous cables 6 nm in diameter", "bin": 0},
   {"label": "composed of several strands of polymerized subunits made of a wide variety of monomers", "bin": 1},
   {"label": "composed of tubulin dimers forming hollow tubes", "bin": 2},
   {"label": "involved in amoeboid movement, cytoplasmic streaming, and muscle contraction", "bin": 0},
@@ -292,13 +292,13 @@ Some eukaryotic cells use **flagella** for locomotion; however, eukaryotic flage
 
 **Cilia** (singular: **cilium**) are a similar external structure found in some eukaryotic cells. Unique to eukaryotes, cilia are shorter than flagella and often cover the entire surface of a cell; however, they are structurally similar to flagella (a 9+2 array of microtubules) and use the same mechanism for movement. A structure called a **basal body** is found at the base of each cilium and flagellum. The basal body, which attaches the cilium or flagellum to the cell, is composed of an array of triplet microtubules similar to that of a centriole but embedded in the plasma membrane. Because of their shorter length, cilia use a rapid, flexible, waving motion. In addition to motility, cilia may have other functions such as sweeping particles past or into cells. For example, ciliated protozoans use the sweeping of cilia to move food particles into their mouthparts, and ciliated cells in the mammalian respiratory tract beat in synchrony to sweep mucus and debris up and out of the lungs (shown below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_03_04_Flagellum" alt="Four panels: (a) an electron micrograph cross-section of a flagellum, a ring of nine paired structures surrounding two central structures; (b) a labeled diagram of a flagellum's 9+2 microtubule array and its triplet-microtubule basal body, beside a matching electron micrograph; (c) a drawn flagellated protozoan with several long flagella at one end; (d) a micrograph of a ciliated organism with numerous short cilia and a mouth opening." kind="diagram" longdesc="Panel (b), reading from the top: a cross-section circle of the flagellum shows nine outer doublets of microtubules, each doublet labeled subfiber A and subfiber B, joined to its neighbors by nexin and carrying outer dynein and inner dynein arms; radial spokes with spoke heads run inward to two central singlet microtubules joined by a central bridge; the whole is enclosed by the plasma membrane. Below, the flagellum enters the cell at a basal body, whose own cross-section circle is labeled triplet centriole. A matching electron micrograph beneath the drawing shows the basal body in longitudinal section, with a circled cross-section of the triplet array." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_03_04_Flagellum" alt="Four panels: (a) an electron micrograph of flagella cut in cross-section, at least two of them showing a ring of nine paired structures around two central ones, with a 30 nm scale bar; (b) a labeled diagram of a flagellum's 9+2 microtubule array and its triplet-microtubule basal body, beside a matching electron micrograph; (c) a drawn flagellated protozoan with several long flagella at its anterior end and one trailing flagellum at its posterior end; (d) a micrograph of a ciliated organism with numerous short cilia and a mouth opening." kind="diagram" longdesc="Panel (b), reading from the top: a cross-section circle of the flagellum shows nine outer doublets of microtubules, each doublet labeled subfiber A and subfiber B, joined to its neighbors by nexin and carrying outer dynein and inner dynein arms; radial spokes with spoke heads run inward to two central singlet microtubules joined by a central bridge; the whole is enclosed by the plasma membrane. Below, the flagellum enters the cell at a basal body, whose own cross-section circle is labeled triplet centriole. A matching electron micrograph beneath the drawing shows the basal body in longitudinal section, with a circled cross-section of the triplet array." >}}
 (a) Eukaryotic flagella and cilia are composed of a 9+2 array of microtubules, as seen in this transmission electron micrograph cross-section. (b) The sliding of these microtubules relative to each other causes a flagellum to bend. (c) An illustration of *Trichomonas vaginalis*, a flagellated protozoan parasite that causes vaginitis. (d) Many protozoans, like this *Paramecium*, have numerous cilia that aid in locomotion as well as in feeding. Note the mouth opening shown here. (credit d: modification of work by University of Vermont/National Institutes of Health)
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain how the cellular envelope of eukaryotic cells compares to that of prokaryotic cells." hint="Think about what the eukaryotic plasma membrane is made of and contains that the prokaryotic membrane lacks, and which eukaryotic cells have a cell wall or an extracellular matrix instead." >}}
+{{< selfcheck question="Explain how the cellular envelope of eukaryotic cells compares to that of prokaryotic cells." hint="Reread the Plasma Membrane, Cell Wall, and Extracellular Matrix subsections." >}}
 The plasma membrane of eukaryotic cells is similar in structure to the prokaryotic plasma membrane in that it is composed mainly of phospholipids forming a bilayer with embedded peripheral and integral proteins, and these components move within the plane of the membrane according to the fluid mosaic model. However, unlike the prokaryotic membrane, eukaryotic membranes contain sterols, including cholesterol, that alter membrane fluidity. In addition, some eukaryotic cells (fungi, algae, plants, and some protists) have a cell wall, while cells of animals and some protozoans lack a cell wall and instead produce a sticky extracellular matrix for structural support.
 ===CHECKS===
 composed mainly of phospholipids forming a bilayer with embedded peripheral and integral proteins
@@ -306,13 +306,13 @@ unlike the prokaryotic membrane, eukaryotic membranes contain sterols, including
 some eukaryotic cells ... have a cell wall, while cells of animals and some protozoans ... produce a sticky extracellular matrix
 {{< /selfcheck >}}
 
-{{< sortbins question="Explain the difference between eukaryotic and prokaryotic flagella." hint="Think about how rigid or flexible each structure is, how it moves, and what it's built from." >}}
+{{< sortbins question="Explain the difference between eukaryotic and prokaryotic flagella." hint="Reread the opening paragraph of Flagella and Cilia and the motility row of the table near the start of this section." >}}
 {"bins": ["Eukaryotic", "Prokaryotic"],
  "items": [
   {"label": "a flexible whip composed of nine parallel pairs of microtubules surrounding a central pair (a 9+2 array)", "bin": 0},
-  {"label": "a stiff, rotating structure composed of flagellin protein subunits", "bin": 1},
+  {"label": "a stiff, rotating structure", "bin": 1},
   {"label": "uses dynein motor proteins to move relative to each other, causing the structure to bend", "bin": 0},
-  {"label": "acts like a propeller that spins in solution", "bin": 1}]}
+  {"label": "rigid spiral composed of flagellin", "bin": 1}]}
 {{< /sortbins >}}
 
 {{< callout type="info" >}}
@@ -397,9 +397,9 @@ This resolves the case that began in [Spontaneous Generation](/life-health-scien
 ### Explain the distinguishing characteristics of eukaryotic cells
 
 {{< multiplechoice
-  question="Above all, eukaryotic cells are defined by the presence of which structure, surrounded by a complex nuclear membrane?"
+  question="Above all, eukaryotic cells are defined by the presence of which structure?"
   answer="nucleus"
-  hint="This structure houses the DNA genome and, unlike a prokaryotic cell's loosely contained nucleoid region, is bound by a membrane."
+  hint="Reread this section's opening paragraph."
 >}}
 nucleus
 nucleoid
@@ -410,13 +410,13 @@ cell wall
 {{< textin
   question="The internal network of filaments and tubules that holds organelles such as mitochondria and the endoplasmic reticulum in place and helps maintain cell shape is called the ________."
   answer="cytoskeleton"
-  hint="This structure also provides a network over which materials can be transported within the cell."
+  hint="Reread this section's opening paragraph."
 >}}
 
 {{< multiplechoice
   question="Why do eukaryotic cells require an endomembrane system?"
   answer="Because of their larger cell size, they need this system to transport materials that diffusion alone cannot move."
-  hint="Think about what limits the distances that diffusion alone can move materials, and how eukaryotic cell size compares to a prokaryotic cell's."
+  hint="Reread the opening paragraph of Endomembrane System."
 >}}
 Because they lack a nucleus, they need this system to organize their DNA.
 Because they have 80S rather than 70S ribosomes in the cytoplasm, they need this system to synthesize proteins.
@@ -429,7 +429,7 @@ Because they divide by binary fission rather than mitosis, they need this system
 {{< multiplechoice
   question="Sugar groups may be added to proteins in which of the following?"
   answer="Golgi apparatus"
-  hint="This organelle receives proteins transported from the ER and modifies them, often adding carbohydrate components to produce glycoproteins."
+  hint="Reread the subsections of Endomembrane System."
 >}}
 smooth endoplasmic reticulum
 rough endoplasmic reticulum
@@ -440,7 +440,7 @@ lysosome
 {{< multiplechoice
   question="Which type of nutrient uptake involves the engulfment of small dissolved molecules into vesicles?"
   answer="pinocytosis"
-  hint="This process's name means 'cell drinking,' as opposed to the type of endocytosis that engulfs large particles."
+  hint="Reread the Membrane Transport Mechanisms subsection under Plasma Membrane."
 >}}
 active transport
 pinocytosis
@@ -448,7 +448,7 @@ receptor-mediated endocytosis
 facilitated diffusion
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why must the functions of both lysosomes and peroxisomes be compartmentalized?" hint="Think about what kind of molecules each organelle contains, and what would happen to the rest of the cell if those molecules were released freely into the cytoplasm." >}}
+{{< selfcheck question="Why must the functions of both lysosomes and peroxisomes be compartmentalized?" hint="Reread the Lysosomes subsection and the second paragraph of Peroxisomes." >}}
 Lysosomes contain digestive enzymes, and compartmentalization of these digestive enzymes within the lysosome allows the cell to efficiently digest matter without harming the cytoplasmic components of the cell. Peroxisomes produce hydrogen peroxide, a highly reactive molecule, and like lysosomes, the compartmentalization of these degradative molecules within an organelle helps protect the cytoplasmic contents from unwanted damage.
 ===CHECKS===
 compartmentalization of the digestive enzymes within the lysosome allows the cell to efficiently digest matter without harming the cytoplasmic components
@@ -461,7 +461,7 @@ compartmentalization of these degradative molecules within an organelle helps pr
 {{< multiplechoice
   question="Which of the following organelles is not part of the endomembrane system?"
   answer="peroxisome"
-  hint="The other three organelles listed are all connected, directly or by transport vesicles, in the pathway that begins at the endoplasmic reticulum."
+  hint="Reread the opening paragraph of Endomembrane System."
 >}}
 endoplasmic reticulum
 Golgi apparatus
@@ -472,7 +472,7 @@ peroxisome
 {{< multiplechoice
   question="Which type of cytoskeletal fiber is important in the formation of the nuclear lamina?"
   answer="intermediate filaments"
-  hint="This type of filament tends to be more permanent in the cell than the other cytoskeletal fibers, and also anchors the nucleus in position."
+  hint="Reread the paragraphs on each type of cytoskeletal fiber."
 >}}
 microfilaments
 intermediate filaments
@@ -483,7 +483,7 @@ fibronectin
 {{< multiplechoice
   question="Which of the following is not composed of microtubules?"
   answer="desmosomes"
-  hint="This structure, which joins muscle cells together, is built from a different type of cytoskeletal fiber than the one shared by the other three options."
+  hint="Reread the paragraphs on each type of cytoskeletal fiber."
 >}}
 desmosomes
 centrioles
@@ -494,20 +494,21 @@ eukaryotic cilia
 {{< textin
   question="Peroxisomes typically produce ________, a harsh chemical that helps break down molecules."
   answer="hydrogen peroxide"
-  hint="Peroxisomes were first named for their ability to produce this reactive molecule, which the enzyme catalase can also degrade."
+  accept="H2O2"
+  hint="Reread the second paragraph of the subsection on peroxisomes."
 >}}
 
 {{< textin
   question="Microfilaments are composed of ________ monomers."
   answer="actin"
-  hint="This protein forms two intertwined strands that make up each microfilament, and also produces the temporary pseudopodia used in amoeboid movement."
+  hint="Reread the paragraph on microfilaments."
 >}}
 
 {{< mediafigure src="microbiology/OSC_Microbio_03_04_AniCell_img" alt="A diagram of a eukaryotic cell redrawn with its structures identified only by letters instead of names. The outer boundary of the cell is labeled A; a long tail-like projection outside the cell is labeled H. A large sphere inside the cell has its outer boundary labeled B and a smaller sphere within it labeled C. Outside that sphere, folded membranes studded with dots are labeled F, and a separate stack of folded membranes with small spheres budding from it is labeled G. An oval structure containing internal lines is labeled D, and two short paired tubes near it are labeled E." kind="diagram" >}}
 The generalized eukaryotic cell shown earlier in this section, redrawn with its structure names replaced by the letters A through H.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Label the lettered parts of this eukaryotic cell: A, the cell's outer boundary; B, the outer boundary of the large central sphere; C, the smaller sphere inside it; D, the oval structure with internal lines; E, the two short paired tubes; F, the folded, dot-studded membranes outside the large sphere; G, the separate stack of folded membranes with small spheres budding from it; H, the long projection outside the cell." hint="Compare each lettered position to the fully labeled version of this same cell shown earlier in this section." >}}
+{{< selfcheck question="Label the lettered parts of this eukaryotic cell." hint="Compare each lettered position to the fully labeled version of this same cell shown earlier in this section." >}}
 This is the same generalized eukaryotic cell shown earlier in the section, so its structures are in the same positions: A is the plasma membrane, the outer boundary of the whole cell. B is the nuclear envelope, the boundary of the large central sphere (the nucleus). C is the nucleolus, the smaller sphere inside the nucleus. F is the rough endoplasmic reticulum, the dot-studded folded membrane outside the nucleus. G is the Golgi apparatus (Golgi complex), the separate stack of membranes with vesicles budding from it. D is the mitochondrion, the oval organelle whose internal lines are its folded inner membrane. E is the centrosome, the two short paired tubes. H is the flagellum, the long projection used for locomotion.
 ===CHECKS===
 A is the plasma membrane, the outer boundary of the whole cell
@@ -522,7 +523,7 @@ H is the flagellum, the long projection used for locomotion
 {{< multiplechoice
   question="Which of the following structures of a eukaryotic cell is not likely derived from endosymbiotic bacterium?"
   answer="outer membrane"
-  hint="This mitochondrial membrane is a remnant of the original host cell's own membrane, unlike the other three options, which trace back to the engulfed bacterium."
+  hint="Reread the second paragraph of Mitochondria."
 >}}
 mitochondrial DNA
 mitochondrial ribosomes
@@ -534,13 +535,13 @@ outer membrane
   mode="text"
   question="Mitochondria in eukaryotic cells contain ribosomes that are structurally similar to those found in prokaryotic cells."
   answer="True"
-  hint="Recall the size class of ribosome (70S or 80S) found in mitochondria, and compare it with the size class of a prokaryotic ribosome."
+  hint="Reread the opening paragraph of the Ribosomes subsection."
 >}}
 True
 False
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What existing evidence supports the theory that mitochondria are of prokaryotic origin?" hint="Think about what scientists found when they examined the mitochondrial genome and ribosomes in the 1960s and 1970s." >}}
+{{< selfcheck question="What existing evidence supports the theory that mitochondria are of prokaryotic origin?" hint="Reread the first paragraph of Mitochondria." >}}
 Scientists during the 1960s discovered that mitochondria have their own genome and 70S ribosomes, the same size as prokaryotic ribosomes. The mitochondrial genome was found to be bacterial when it was sequenced in 1976. These findings ultimately supported the endosymbiotic theory, which states that mitochondria originally arose through an endosymbiotic event in which a bacterium capable of aerobic cellular respiration was taken up by phagocytosis into a host cell and remained as a viable intracellular component.
 ===CHECKS===
 mitochondria have their own genome and 70S ribosomes, the same size as prokaryotic ribosomes
@@ -548,12 +549,13 @@ the mitochondrial genome was found to be bacterial when it was sequenced in 1976
 a bacterium capable of aerobic cellular respiration was taken up by phagocytosis into a host cell and remained as a viable intracellular component
 {{< /selfcheck >}}
 
-{{< selfcheck question="How are peroxisomes more like mitochondria than like the membrane-bound organelles of the endomembrane system? How do they differ from mitochondria?" hint="Think about which organelles are and are not part of the endomembrane system, and about how each kind of organelle forms and divides." >}}
-Peroxisomes, like mitochondria, are membrane-bound organelles that are not part of the endomembrane system, unlike organelles such as the endoplasmic reticulum, Golgi apparatus, and lysosomes. Peroxisomes form independently in the cytoplasm from the synthesis of peroxin proteins by free ribosomes and the incorporation of these peroxin proteins into existing peroxisomes, and growing peroxisomes then divide by a process similar to binary fission — unlike mitochondria, peroxisomes do not have their own genome or ribosomes.
+{{< selfcheck question="How are peroxisomes more like mitochondria than like the membrane-bound organelles of the endomembrane system? How do they differ from mitochondria?" hint="Reread the first paragraph of Peroxisomes and the first paragraph of Mitochondria." >}}
+Peroxisomes, like mitochondria, are membrane-bound organelles that are not part of the endomembrane system, unlike organelles such as the endoplasmic reticulum, Golgi apparatus, and lysosomes. Peroxisomes form independently in the cytoplasm from the synthesis of peroxin proteins by free ribosomes and the incorporation of these peroxin proteins into existing peroxisomes, and growing peroxisomes then divide by a process similar to binary fission. Mitochondria, by contrast, have their own genome and 70S ribosomes.
 ===CHECKS===
 peroxisomes ... are membrane-bound organelles that are not part of the endomembrane system
 peroxisomes form independently in the cytoplasm from the synthesis of peroxin proteins by free ribosomes
 growing peroxisomes then divide by a process similar to binary fission
+mitochondria, by contrast, have their own genome and 70S ribosomes
 {{< /selfcheck >}}
 
 {{< sortbins question="Sort each characteristic of the Summary of Cell Structures table to whether it describes prokaryotes (bacteria and archaea) or eukaryotes." hint="Think about which column of the table each characteristic comes from." >}}
@@ -576,15 +578,15 @@ growing peroxisomes then divide by a process similar to binary fission
 ### Describe the processes of eukaryotic mitosis and meiosis, and compare to prokaryotic binary fission
 
 {{< textin
-  question="Eukaryotes are able to multiply through asexual reproduction, during which a single parent cell becomes two identical daughter cells; this process of clonal reproduction is called ________."
-  answer="mitosis"
-  hint="This process is much more complex than prokaryotic binary fission, because eukaryotic cells possess multiple chromosomes that must be replicated and divided between daughter cells."
+  question="During ________, the cell is not dividing, but rather is undergoing normal growth processes and DNA is replicated preparing for cell division."
+  answer="interphase"
+  hint="Reread the paragraph on the eukaryotic cell cycle in the Nucleus subsection."
 >}}
 
 {{< multiplechoice
   question="Which nuclear division process produces four genetically distinct gametes, each with half the number of chromosomes found in the original cell?"
   answer="meiosis"
-  hint="This process involves two separate nuclear divisions, rather than the single division that completes the other option."
+  hint="Reread the last paragraph before the Nucleolus subsection."
 >}}
 mitosis
 meiosis
@@ -595,13 +597,13 @@ binary fission
 {{< textin
   question="The portion of the mitotic phase in which the cytoplasmic components are physically separated into the two daughter cells is called ________."
   answer="cytokinesis"
-  hint="This step follows karyokinesis, the nuclear-division portion of the mitotic phase."
+  hint="Reread the paragraph that introduces the mitotic phase."
 >}}
 
 {{< multiplechoice
   question="How does eukaryotic mitosis differ from prokaryotic binary fission?"
   answer="Eukaryotic cells have multiple chromosomes that must be divided during mitosis, while prokaryotic cells have a single chromosome divided during binary fission."
-  hint="Think about how many chromosomes a typical prokaryotic cell has to divide, compared to a eukaryotic cell."
+  hint="Reread the paragraph that introduces mitosis in the Nucleus subsection."
 >}}
 Eukaryotic cells have multiple chromosomes that must be divided during mitosis, while prokaryotic cells have a single chromosome divided during binary fission.
 Eukaryotic cells have a single chromosome divided during mitosis, while prokaryotic cells have multiple chromosomes divided during binary fission.
@@ -611,4 +613,4 @@ Eukaryotic and prokaryotic cells both have multiple chromosomes, but only eukary
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 3.4: Unique Characteristics of Eukaryotic Cells](https://openstax.org/books/microbiology/pages/3-4-unique-characteristics-of-eukaryotic-cells) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with `kind="diagram"` set on twenty-one of the twenty-four figures (including the cell-cycle clock and the meiosis/mitosis comparison figure, both borrowed from *Biology 2e* and mis-guessed "photo" by the manifest's file-extension heuristic) and `kind="photo"` on the three true micrograph figures (the cell-shapes panel, the nucleus TEM, and the nuclear-lamina fluorescence image); alts rewritten for all twenty-four figures to describe only what is visibly drawn or photographed, since several of this module's source alts are incomplete or wrong rather than reused verbatim — the endomembrane-system diagram's alt describes only the nucleus and ER and omits the vesicle, Golgi apparatus, and lysosome the image itself labels; the plasma-membrane diagram's alt never mentions the cholesterol the image labels; the cytoskeleton figure's alt states the microtubule column is "25 µm" in diameter where the image itself is labeled "25 nm" (all three reported as source defects); the nuclear-lamina micrograph's alt describes "a large oval nucleus" (singular) where the image shows and labels two nuclei ("nuclei," plural) — also reported; longdescs added for the opening labeled cell diagram, the endomembrane-system diagram, and the flagellum figure (reading order); the Summary of Cell Structures table (four columns, eleven rows) is transcribed as a Markdown table from the CNXML's own table cells, not from the `summary` attribute, which independently misspells "chromosome's" for "chromosomes," "fagellins" for "flagellins," labels the eukaryote membrane-lipid-composition cell "bacteria" a second time instead of "eukaryotes," and gives the eukaryote cell-wall row as "chitin (molluscs, insects, crustaceans, and fungi)" where the table cell prints "Chitin (fungi)" (all four reported as source defects, uncorrected on the page because the real table cells the page transcribes are unaffected); that table also seeds one Practice `sortbins` item (twelve prokaryote/eukaryote characteristics, from the six binary-contrast rows the two prokaryote columns agree on) under the fourth objective; feature boxes rendered as callouts; the Link to Learning kept its source sentence and URL; the Micro Connection box's title follows the bold feature name; the four Check Your Understanding boxes (five bullets total, none repeated or split); two of the five bullets (the two-differences bullet and the eukaryotic-versus-prokaryotic-envelope bullet) are rendered as body self-checks with model answers and rubrics assembled from this section's own preceding text, and the other three (the endomembrane-components, cytoskeletal-structures, and eukaryotic-versus-prokaryotic-flagella bullets) are rendered as sort-into-bins items graded from this section's own distinguishing phrases; the Art Connection exercise (`OSC_Microbio_03_04_AniCell_img`, a relettered version of the section's own opening figure) is rendered as a `mediafigure` immediately followed by its `selfcheck` inside the third objective's Practice group, with an author-written caption describing only what is drawn (never naming the labeled structures) and a model answer that maps each letter to the structure at the same position in the fully labeled figure shown earlier in this section; the Clinical Focus box, printed here as the *Resolution*, keeps the source's own text and replaces its "go back to the previous Clinical Focus box" link — which pointed at Section 3.3, not where the case began — with a plain sentence naming Section 3.1, Spontaneous Generation, where the case actually began; six footnoted citations rendered as inline parenthetical citations after the sentences they support (bare access URLs dropped, DOIs kept — the Cell Wall section's citation has no DOI, so its access URL is dropped and its author, title, publisher, and date are kept); model answers for one of the three Short Answer questions (the mitochondria-evidence question) and the three Critical Thinking questions (one of the three is the Art Connection labelling item) are written from this section's own text, since the source prints no answer key for any of them (four, plus the two Check Your Understanding self-checks above — six author-written model answers on this page in total); the second Short Answer question, "Why do eukaryotic cells require an endomembrane system?" (`fs-id1172100625770`), is instead graded as a `multiplechoice` item keyed by this section's own cell-size-and-diffusion sentence, with three wrong-reason distractors built from this section's own claims about the nucleus, ribosome size, and cell division; the third Short Answer question, "Name at least two ways that prokaryotic flagella are different from eukaryotic flagella," is not used because the Flagella and Cilia subsection's Check Your Understanding self-check already asks it (and that self-check is itself now one of the sort-into-bins conversions above); the six Multiple Choice, one True/False, and two Fill in the Blank items keep the source's own keys, options, and order and were sorted into the Practice block by objective; seven filler items round out the first, fourth, and fifth objective groups, which the section's own exercise set does not reach on its own by itself: a select-the-term multiple choice and a text-recall for the first objective (nucleus, cytoskeleton), a `sortbins` built from the body's own Summary of Cell Structures table for the fourth objective, and a select-the-term multiple choice, two cloze text-recalls, and one `multiplechoice` for the fifth objective (mitosis, meiosis, cytokinesis, and mitosis-versus-binary-fission, this last one graded by the module's own chromosome-count contrast rather than answered in prose) — all built from this section's own body sentences; key terms compiled from the module's forty-eight defined terms and the book's Glossary appendix, with two adaptations: the `nuclear membrane`/`nuclear envelope` pair share one appendix entry, so the `nuclear membrane` bullet drops that entry's "(also called the nuclear membrane)" parenthetical to avoid printing a term inside its own definition, and the `flagella` bullet is written from this section's own defining sentences rather than the appendix, because the appendix's only `flagella` entry defines the prokaryotic structure (composed of flagellin, a hook, and a basal-body motor) while this section's term names the structurally distinct eukaryotic flagellum (one definition taken from the defining sentence; the other forty-seven from the glossary); cross-reference to Section 3.3 (m58792) omitted from prose since the module's own reference to it is the table link, already rendered as "the table below"; the module's own inconsistency in how it cites the same Fuchs/Cleveland 1998 *Science* article across three footnotes (author order and initials differ each time) is reproduced as printed rather than normalized. One of the source's unkeyed Short Answer questions and three Check Your Understanding questions are graded from the module's own sentences rather than answered in prose; the source prints no key for them: the endomembrane-system Short Answer question above, and the endomembrane-components, cytoskeletal-structures, and eukaryotic-versus-prokaryotic-flagella Check Your Understanding bullets, all rendered as sort-into-bins items; the fifth objective's filler `multiplechoice` on mitosis versus binary fission is likewise graded from this section's own chromosome-count sentence rather than answered in prose. Two history-of-discovery claims are corrected with visible Source notes: the Golgi apparatus was first described in nerve cells, not *Plasmodium*, and lysosomes were discovered in 1955, not the 1960s (errata 380–381). The nucleus figure's alt names only the four labels panel (b) prints (nuclear envelope, nuclear pore, nucleus, nucleolus), because the source alt's "rough endoplasmic reticulum" and "mitochondrion" labels are not on this micrograph (erratum 819); the mitosis-stages and meiosis-versus-mitosis figures borrowed from *Biology 2e* carry a longdesc walking their printed stage bullets and comparison table.</small>
+<small>This section is adapted from [Microbiology, Section 3.4: Unique Characteristics of Eukaryotic Cells](https://openstax.org/books/microbiology/pages/3-4-unique-characteristics-of-eukaryotic-cells) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with `kind="diagram"` set on twenty-one of the twenty-four figures (including the cell-cycle clock and the meiosis/mitosis comparison figure, both borrowed from *Biology 2e* and mis-guessed "photo" by the manifest's file-extension heuristic) and `kind="photo"` on the three true micrograph figures (the cell-shapes panel, the nucleus TEM, and the nuclear-lamina fluorescence image); alts rewritten for all twenty-four figures to describe only what is visibly drawn or photographed, since several of this module's source alts are incomplete or wrong rather than reused verbatim — the endomembrane-system diagram's alt describes only the nucleus and ER and omits the vesicle, Golgi apparatus, and lysosome the image itself labels; the plasma-membrane diagram's alt never mentions the cholesterol the image labels; the cytoskeleton figure's alt states the microtubule column is "25 µm" in diameter where the image itself is labeled "25 nm" (all three reported as source defects); the nuclear-lamina micrograph's alt describes "a large oval nucleus" (singular) where the image shows and labels two nuclei ("nuclei," plural) — also reported; longdescs added for the opening labeled cell diagram, the endomembrane-system diagram, and the flagellum figure (reading order); the Summary of Cell Structures table (four columns, eleven rows) is transcribed as a Markdown table from the CNXML's own table cells, not from the `summary` attribute, which independently misspells "chromosome's" for "chromosomes," "fagellins" for "flagellins," labels the eukaryote membrane-lipid-composition cell "bacteria" a second time instead of "eukaryotes," and gives the eukaryote cell-wall row as "chitin (molluscs, insects, crustaceans, and fungi)" where the table cell prints "Chitin (fungi)" (all four reported as source defects, uncorrected on the page because the real table cells the page transcribes are unaffected); that table also seeds one Practice `sortbins` item (twelve prokaryote/eukaryote characteristics, from the six binary-contrast rows the two prokaryote columns agree on) under the fourth objective; feature boxes rendered as callouts; the Link to Learning kept its source sentence and URL; the Micro Connection box's title follows the bold feature name; the four Check Your Understanding boxes (five bullets total, none repeated or split); two of the five bullets (the two-differences bullet and the eukaryotic-versus-prokaryotic-envelope bullet) are rendered as body self-checks with model answers and rubrics assembled from this section's own preceding text, and the other three (the endomembrane-components, cytoskeletal-structures, and eukaryotic-versus-prokaryotic-flagella bullets) are rendered as sort-into-bins items graded from this section's own distinguishing phrases; the Art Connection exercise (`OSC_Microbio_03_04_AniCell_img`, a relettered version of the section's own opening figure) is rendered as a `mediafigure` immediately followed by its `selfcheck` inside the third objective's Practice group, with an author-written caption describing only what is drawn (never naming the labeled structures) and a model answer that maps each letter to the structure at the same position in the fully labeled figure shown earlier in this section; the Clinical Focus box, printed here as the *Resolution*, keeps the source's own text and replaces its "go back to the previous Clinical Focus box" link — which pointed at Section 3.3, not where the case began — with a plain sentence naming Section 3.1, Spontaneous Generation, where the case actually began; six footnoted citations rendered as inline parenthetical citations after the sentences they support (bare access URLs dropped, DOIs kept — the Cell Wall section's citation has no DOI, so its access URL is dropped and its author, title, publisher, and date are kept); model answers for one of the three Short Answer questions (the mitochondria-evidence question) and the three Critical Thinking questions (one of the three is the Art Connection labelling item) are written from this section's own text, since the source prints no answer key for any of them (four, plus the two Check Your Understanding self-checks above — six author-written model answers on this page in total); the second Short Answer question, "Why do eukaryotic cells require an endomembrane system?" (`fs-id1172100625770`), is instead graded as a `multiplechoice` item keyed by this section's own cell-size-and-diffusion sentence, with three wrong-reason distractors built from this section's own claims about the nucleus, ribosome size, and cell division; the third Short Answer question, "Name at least two ways that prokaryotic flagella are different from eukaryotic flagella," is not used because the Flagella and Cilia subsection's Check Your Understanding self-check already asks it (and that self-check is itself now one of the sort-into-bins conversions above); the six Multiple Choice, one True/False, and two Fill in the Blank items keep the source's own keys, options, and order and were sorted into the Practice block by objective; seven filler items round out the first, fourth, and fifth objective groups, which the section's own exercise set does not reach on its own by itself: a select-the-term multiple choice and a text-recall for the first objective (nucleus, cytoskeleton), a `sortbins` built from the body's own Summary of Cell Structures table for the fourth objective, and a select-the-term multiple choice, two cloze text-recalls, and one `multiplechoice` for the fifth objective (interphase, meiosis, cytokinesis, and mitosis-versus-binary-fission, this last one graded by the module's own chromosome-count contrast rather than answered in prose) — all built from this section's own body sentences; key terms compiled from the module's forty-eight defined terms and the book's Glossary appendix, with two adaptations: the `nuclear membrane`/`nuclear envelope` pair share one appendix entry, so the `nuclear membrane` bullet drops that entry's "(also called the nuclear membrane)" parenthetical to avoid printing a term inside its own definition, and the `flagella` bullet is written from this section's own defining sentences rather than the appendix, because the appendix's only `flagella` entry defines the prokaryotic structure (composed of flagellin, a hook, and a basal-body motor) while this section's term names the structurally distinct eukaryotic flagellum (one definition taken from the defining sentence; the other forty-seven from the glossary); cross-reference to Section 3.3 (m58792) omitted from prose since the module's own reference to it is the table link, already rendered as "the table below"; the module's own inconsistency in how it cites the same Fuchs/Cleveland 1998 *Science* article across three footnotes (author order and initials differ each time) is reproduced as printed rather than normalized. One of the source's unkeyed Short Answer questions and three Check Your Understanding questions are graded from the module's own sentences rather than answered in prose; the source prints no key for them: the endomembrane-system Short Answer question above, and the endomembrane-components, cytoskeletal-structures, and eukaryotic-versus-prokaryotic-flagella Check Your Understanding bullets, all rendered as sort-into-bins items; the fifth objective's filler `multiplechoice` on mitosis versus binary fission is likewise graded from this section's own chromosome-count sentence rather than answered in prose. Two history-of-discovery claims are corrected with visible Source notes: the Golgi apparatus was first described in nerve cells, not *Plasmodium*, and lysosomes were discovered in 1955, not the 1960s (errata 380–381). The nucleus figure's alt names only the four labels panel (b) prints (nuclear envelope, nuclear pore, nucleus, nucleolus), because the source alt's "rough endoplasmic reticulum" and "mitochondrion" labels are not on this micrograph (erratum 819); the mitosis-stages and meiosis-versus-mitosis figures borrowed from *Biology 2e* carry a longdesc walking their printed stage bullets and comparison table. Two overlaps between source items under different objectives are kept, since no reorder within a group can separate them and every item stays verbatim: the Critical Thinking stem "How are peroxisomes more like mitochondria than like the membrane-bound organelles of the endomembrane system?" states the fact keyed by the earlier Multiple Choice "Which of the following organelles is not part of the endomembrane system?" (peroxisome), and the model answer of the Critical Thinking self-check on why lysosomes and peroxisomes must be compartmentalized names hydrogen peroxide, the key of the later Fill in the Blank on what peroxisomes produce.</small>

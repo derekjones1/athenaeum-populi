@@ -22,7 +22,7 @@ You have just read about two pathways in glucose catabolism—glycolysis and the
 
 The electron transport chain (below) is the last component of aerobic respiration and is the only part of glucose metabolism that uses atmospheric oxygen. Oxygen continuously diffuses into plant tissues (typically through stomata), as well as into fungi and bacteria; however, in animals, oxygen enters the body through a variety of respiratory systems. Electron transport is a series of redox reactions that resembles a relay race or bucket brigade in that electrons are passed rapidly from one component to the next, to the endpoint of the chain where the electrons reduce molecular oxygen and, along with associated protons, produces water. There are four complexes composed of proteins, labeled I through IV in the diagram below, and the aggregation of these four complexes, together with associated mobile, accessory electron carriers, is called the **electron transport chain**. The electron transport chain is present with multiple copies in the inner mitochondrial membrane of eukaryotes and within the plasma membrane of prokaryotes.
 
-{{< mediafigure src="biology/Figure_07_04_01-1396" kind="diagram" eager="true" alt="A diagram of the electron transport chain in the inner mitochondrial membrane, showing four labeled protein complexes, I through IV, plus the mobile carriers Q and cytochrome c (Cyt c). NADH is oxidized at complex I and FADH₂ at complex II; both hand their electrons to Q, which passes them to complex III, then to Cyt c, then to complex IV, where they combine with H⁺ and O₂ to form H₂O. Complexes I, III, and IV each pump H⁺ from the mitochondrial matrix into the intermembrane space." longdesc="A diagram titled Electron Transport Chain. Intermembrane space is labeled at the top of the figure, above a horizontal phospholipid bilayer (round orange head groups on tan tails); Mitochondrial matrix is labeled at the bottom. Four blue protein shapes are embedded in the membrane, left to right: complex I; a small round complex II sitting beside a purple oval labeled Q; complex III; and complex IV, with a smaller blue dome labeled Cyt c resting on top of the membrane between complexes III and IV. A diagonal leader line labeled Inner mitochondrial membrane points up to the bilayer between complexes III and IV. Below the membrane, a black arrow labeled NADH points up into complex I, with a second arrow curving down and away to NAD⁺; a black arrow labeled FADH₂ points up into complex II, with a second arrow curving down and away to FAD. Curved black arrows trace electrons moving from complex I to Q, from complex II to Q, from Q to complex III, from complex III to Cyt c, and from Cyt c to complex IV. Three vertical arrows labeled H⁺, rising from complexes I, III, and IV, point up into the intermembrane space. At the right, an arrow labeled 2e⁻ leads into complex IV, where it joins an arrow labeled 2H⁺ + ½O₂ to produce an arrow labeled H₂O." >}}
+{{< mediafigure src="biology/Figure_07_04_01-1396" kind="diagram" eager="true" alt="A diagram of the electron transport chain in the inner mitochondrial membrane, showing four labeled protein complexes, I through IV, plus the mobile carriers Q and cytochrome c (Cyt c). NADH is oxidized at complex I and FADH₂ at complex II; both hand their electrons to Q, which passes them to complex III, then to Cyt c, then to complex IV, where they combine with H⁺ and O₂ to form H₂O. Complexes I, III, and IV each pump H⁺ from the mitochondrial matrix into the intermembrane space." longdesc="A diagram titled Electron Transport Chain. Intermembrane space is labeled at the top of the figure, above a horizontal phospholipid bilayer (round orange head groups on tan tails); Mitochondrial matrix is labeled at the bottom. Four blue protein shapes are embedded in the membrane, left to right: complex I; a small round complex II with a smaller blue circle labeled Q sitting on top of it; complex III; and complex IV, with a smaller blue dome labeled Cyt c resting on top of the membrane between complexes III and IV. A diagonal leader line labeled Inner mitochondrial membrane points up to the bilayer between complexes III and IV. Below the membrane, a curved arrow runs from NADH up to the base of complex I and back down to NAD⁺; a second curved arrow runs from FADH₂ up to the base of complex II and back down to FAD. Curved black arrows trace electrons moving from complex I to Q, from complex II to Q, and from Q into complex III; one continuous arc then carries them from complex III along the top of Cyt c into complex IV and on through it. Three vertical arrows labeled H⁺, rising from the matrix through complexes I, III, and IV, point up into the intermembrane space. At the right, below the membrane, the electron arrow leaves complex IV labeled 2e⁻ and is joined by an arrow from 2H⁺ + ½O₂, the two ending at H₂O." >}}
 The electron transport chain is a series of electron transporters embedded in the inner mitochondrial membrane that shuttles electrons from NADH and FADH₂ to molecular oxygen. In the process, protons are pumped from the mitochondrial matrix to the intermembrane space, and oxygen is reduced to form water.
 {{< /mediafigure >}}
 
@@ -48,11 +48,11 @@ In chemiosmosis, the free energy from the series of redox reactions just describ
 
 If the membrane were continuously open to simple diffusion by the hydrogen ions, the ions would tend to diffuse back across into the matrix, driven by the concentrations producing their electrochemical gradient. Recall that many ions cannot diffuse through the nonpolar regions of phospholipid membranes without the aid of ion channels. Similarly, hydrogen ions in the matrix space can only pass through the inner mitochondrial membrane by an integral membrane protein called ATP synthase (below). This complex protein acts as a tiny generator, turned by the force of the hydrogen ions diffusing through it, down their electrochemical gradient. The turning of parts of this molecular machine facilitates the addition of a phosphate to ADP, forming ATP, *using the potential energy of the hydrogen ion gradient*.
 
-{{< mediafigure src="biology/Figure_07_04_02" kind="diagram" alt="A diagram of ATP synthase, a bulb-shaped protein complex embedded in the inner mitochondrial membrane, with the intermembrane space above the membrane and the mitochondrial matrix below. An arrow labeled H⁺ passes down through the center of the complex from the intermembrane space to the matrix, and a curved arrow at the bottom shows ADP and inorganic phosphate combining to form ATP." longdesc="A single light-blue, hourglass-shaped ATP synthase complex sits within a horizontal phospholipid bilayer (round orange head groups on tan tails). Above the membrane the region is labeled Intermembrane space; below it, Mitochondrial matrix. A leader line labeled Inner mitochondrial membrane points to the bilayer. A vertical arrow labeled H⁺, shaded from yellow at the top to red at the bottom, runs down through the middle of the complex from the intermembrane space into the matrix. At the bottom of the complex, a red curved arrow points from a box labeled ADP plus P subscript i to an orange box labeled ATP, showing the complex converting ADP and inorganic phosphate into ATP as the proton passes through." >}}
+{{< mediafigure src="biology/Figure_07_04_02" kind="diagram" alt="A diagram of ATP synthase, a bulb-shaped protein complex embedded in the inner mitochondrial membrane, with the intermembrane space above the membrane and the mitochondrial matrix below. An arrow labeled H⁺ passes down through the center of the complex from the intermembrane space to the matrix, and a curved arrow at the bottom shows ADP and inorganic phosphate combining to form ATP." longdesc="A single light-blue ATP synthase complex, a narrow stalk widening below into a large rounded bulb, sits within a horizontal phospholipid bilayer (round orange head groups on tan tails). Above the membrane the region is labeled Intermembrane space; below it, Mitochondrial matrix. A leader line labeled Inner mitochondrial membrane points to the bilayer. A vertical arrow labeled H⁺, shaded from yellow at the top to red at the bottom, runs down through the middle of the complex from the intermembrane space into the matrix. At the bottom of the complex, a red curved arrow points from a box labeled ADP plus P subscript i to an orange box labeled ATP, showing the complex converting ADP and inorganic phosphate into ATP as the proton passes through." >}}
 ATP synthase is a complex, molecular machine that uses a proton (H⁺) gradient to form ATP from ADP and inorganic phosphate (P<sub>i</sub>). (Credit: modification of work by Klaus Hoffmeier)
 {{< /mediafigure >}}
 
-{{< selfcheck question="Dinitrophenol (DNP) is an “uncoupler” that makes the inner mitochondrial membrane “leaky” to protons. It was used until 1938 as a weight-loss drug. What effect would you expect DNP to have on the change in pH across the inner mitochondrial membrane? Why do you think this might be an effective weight-loss drug?" hint="Think about what happens to the proton gradient, and to ATP synthase's supply of protons, if protons can leak straight across the membrane instead of only through the synthase." >}}
+{{< selfcheck question="Dinitrophenol (DNP) is an “uncoupler” that makes the inner mitochondrial membrane “leaky” to protons. It was used until 1938 as a weight-loss drug. What effect would you expect DNP to have on the change in pH across the inner mitochondrial membrane? Why do you think this might be an effective weight-loss drug?" hint="Reread the second paragraph under Chemiosmosis and the caption of the ATP synthase figure." >}}
 After DNP poisoning, the electron transport chain can no longer form a proton gradient, and ATP synthase can no longer make ATP. DNP is an effective diet drug because it uncouples ATP synthesis; in other words, after taking it, a person obtains less energy out of the food they eat. Interestingly, one of the worst side effects of this drug is hyperthermia, or overheating of the body. Since ATP cannot be formed, the energy from electron transport is lost as heat.
 ===CHECKS===
 the electron transport chain can no longer form a proton gradient
@@ -65,14 +65,14 @@ the energy from electron transport is lost as heat
 
 Chemiosmosis (below) is used to generate 90 percent of the ATP made during aerobic glucose catabolism; it is also the method used in the light reactions of photosynthesis to harness the energy of sunlight in the process of photophosphorylation. Recall that the production of ATP using the process of chemiosmosis in mitochondria is called oxidative phosphorylation. The overall result of these reactions is the production of ATP from the energy of the electrons removed from hydrogen atoms. These atoms were originally part of a glucose molecule. At the end of the pathway, the electrons are used to reduce an oxygen molecule to oxygen ions. The extra electrons on the oxygen attract hydrogen ions (protons) from the surrounding medium, and water is formed. Thus, oxygen is the final electron acceptor in the electron transport chain.
 
-{{< mediafigure src="biology/Figure_07_04_03-5144" kind="diagram" alt="A diagram of the electron transport chain, ATP synthase, and chemiosmosis together, showing the four complexes pumping H⁺ into the intermembrane space and ATP synthase using the returning H⁺ current to convert ADP and inorganic phosphate into ATP." longdesc="A wide diagram spanning the same phospholipid bilayer as the electron transport chain figure, with complexes I through IV, Q, and Cyt C arranged the same way at the left under a label reading Protein Complex of Electron Carriers with a leader line to complex I, and a bulb-shaped ATP synthase added at the right under a label reading ATP Synthase with a leader line to it. Intermembrane Space is labeled at the top; Mitochondrial Matrix at the bottom. Several white circles labeled H⁺ float in the intermembrane space above the complexes; a dashed red arrow traces a path connecting them, arcing rightward and down into the top of ATP synthase. A vertical arrow shaded yellow to red, also labeled H⁺, runs down through ATP synthase into the matrix, where a black curved arrow shows ADP plus P subscript i combining, next to a highlighted circle labeled ATP, with a few more white circles labeled H⁺ nearby in the matrix. Below the whole membrane, a bracket labeled Electron Transport Chain spans complexes I through IV, a second bracket labeled Chemiosmosis spans ATP synthase, and a third, longer bracket beneath both is labeled Oxidative Phosphorylation." >}}
+{{< mediafigure src="biology/Figure_07_04_03-5144" kind="diagram" alt="A diagram of the electron transport chain, ATP synthase, and chemiosmosis together, showing complexes I, III, and IV pumping H⁺ into the intermembrane space and ATP synthase using the returning H⁺ current to convert ADP and inorganic phosphate into ATP." longdesc="A wide diagram spanning the same phospholipid bilayer as the electron transport chain figure, with complexes I through IV, Q, and Cyt C arranged the same way at the left under a label reading Protein Complex of Electron Carriers with a leader line to complex I, and an ATP synthase added at the right under a label reading ATP Synthase with a leader line to it. Intermembrane Space is labeled at the top; Mitochondrial Matrix at the bottom. In the matrix, black curved arrows turn NADH into NAD⁺ at complex I, FADH₂ into FAD at complex II, and 2H⁺ + ½O₂ into H₂O at complex IV. White arrows carrying pairs of yellow e⁻ circles run from complex I to Q and from complex II to Q, from Q to complex III, from complex III to Cyt C, and from Cyt C down through complex IV to the H₂O. Vertical arrows shaded yellow to red rise through complexes I, III, and IV (none through complex II) to white H⁺ circles in the intermembrane space, where more H⁺ circles float; a dashed red line starts at the H⁺ above complex I, is joined by dashed branches from the H⁺ above complexes III and IV, and runs right and down to the H⁺ at the top of ATP synthase. A vertical arrow shaded yellow to red runs down through ATP synthase into the matrix, where a black curved arrow runs from ADP plus Pᵢ to a highlighted circle labeled ATP, with three more white circles labeled H⁺ below the synthase. Below the whole membrane, a bracket labeled Electron Transport Chain spans complexes I through IV, a second bracket labeled Chemiosmosis spans ATP synthase, and a third, longer bracket beneath both is labeled Oxidative Phosphorylation." >}}
 In oxidative phosphorylation, the pH gradient formed by the electron transport chain is used by ATP synthase to form ATP. Credit: Rao, A., Ryan, K., Fletcher, S. and Tag, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Cyanide inhibits cytochrome c oxidase, a component of the electron transport chain. If cyanide poisoning occurs, would you expect the pH of the intermembrane space to increase or decrease? What effect would cyanide have on ATP synthesis?" hint="If complex IV can no longer pass electrons to oxygen, ask what happens to the protons that the earlier complexes are still pumping into the intermembrane space." >}}
-After cyanide poisoning, the electron transport chain can no longer pump electrons into the intermembrane space. The pH of the intermembrane space would increase, the pH gradient would decrease, and ATP synthesis would stop.
+{{< selfcheck question="Cyanide inhibits cytochrome c oxidase, a component of the electron transport chain. If cyanide poisoning occurs, would you expect the pH of the intermembrane space to increase or decrease? What effect would cyanide have on ATP synthesis?" hint="Reread the Complex IV subsection and the caption of the chemiosmosis diagram just before this question." >}}
+After cyanide poisoning, the electron transport chain can no longer pump protons (hydrogen ions) into the intermembrane space. The pH of the intermembrane space would increase, the pH gradient would decrease, and ATP synthesis would stop. *(Source note: the source answer says the chain "can no longer pump electrons into the intermembrane space"; this section's own chemiosmosis caption says "protons are pumped from the mitochondrial matrix to the intermembrane space," while the electrons pass along the chain to oxygen — corrected here.)*
 ===CHECKS===
-the electron transport chain can no longer pump electrons into the intermembrane space
+the electron transport chain can no longer pump protons (hydrogen ions) into the intermembrane space
 the pH of the intermembrane space would increase
 the pH gradient would decrease
 ATP synthesis would stop
@@ -80,7 +80,7 @@ ATP synthesis would stop
 
 ## ATP Yield
 
-The number of ATP molecules generated from the catabolism of glucose varies. For example, the number of hydrogen ions that the electron transport chain complexes can pump through the membrane varies between species. Another source of variance stems from the shuttle of electrons across the membranes of the mitochondria. (The NADH generated from glycolysis cannot easily enter mitochondria.) Thus, electrons are picked up on the inside of mitochondria by either NAD⁺ or FAD⁺. As you have learned earlier, these FAD⁺ molecules can transport fewer ions; consequently, fewer ATP molecules are generated when FAD⁺ acts as a carrier. NAD⁺ is used as the electron transporter in the liver and FAD⁺ acts in the brain.
+The number of ATP molecules generated from the catabolism of glucose varies. For example, the number of hydrogen ions that the electron transport chain complexes can pump through the membrane varies between species. Another source of variance stems from the shuttle of electrons across the membranes of the mitochondria. (The NADH generated from glycolysis cannot easily enter mitochondria.) Thus, electrons are picked up on the inside of mitochondria by either NAD⁺ or FAD. As you have learned earlier, these FAD molecules can transport fewer ions; consequently, fewer ATP molecules are generated when FAD acts as a carrier. NAD⁺ is used as the electron transporter in the liver and FAD acts in the brain. *(Source note: the source writes the flavin carrier as "FAD⁺" four times in this paragraph; this book's Energy in Living Systems section introduces it as "flavin adenine dinucleotide (FAD)… Its reduced form is FADH₂," and the citric acid cycle section says "one FAD molecule is reduced to FADH₂" — only NAD⁺ carries a charge in its oxidized form, so FAD is printed here.)*
 
 Another factor that affects the yield of ATP molecules generated from glucose is the fact that intermediate compounds in these pathways are also used for other purposes. Glucose catabolism connects with the pathways that build or break down all other biochemical compounds in cells, and the result is somewhat messier than the ideal situations described thus far. For example, sugars other than glucose are fed into the glycolytic pathway for energy extraction. In addition, the five-carbon sugars that form nucleic acids are made from intermediates in glycolysis. Certain nonessential amino acids can be made from intermediates of both glycolysis and the citric acid cycle. Lipids, such as cholesterol and triglycerides, are also made from intermediates in these pathways, and both amino acids and triglycerides are broken down for energy through these pathways. Overall, in living systems, these pathways of glucose catabolism extract about 34 percent of the energy contained in glucose, with the remainder being released as heat.
 
@@ -98,10 +98,35 @@ The electron transport chain is the portion of aerobic respiration that uses fre
 
 ### Describe how electrons move through the electron transport chain and explain what happens to their energy levels during this process
 
+{{< textin
+  question="The soluble electron transporter in the electron transport chain that connects the first or second complex to the third is called ________."
+  answer="ubiquinone"
+  accept="Q"
+  hint="Reread the second of the four subsections on the chain's complexes."
+>}}
+
+{{< multiplechoice
+  question="The level of free energy of the electrons drops from about 60 kcal/mol in NADH or ________ kcal/mol in FADH₂ to about 0 kcal/mol in water."
+  answer="45"
+  hint="Reread the Summary's sentence on the electrons' level of free energy."
+>}}
+30
+45
+50
+60
+{{< /multiplechoice >}}
+
+{{< textin
+  question="A nonprotein molecule bound to a protein that facilitates the protein's function is called a ________."
+  answer="prosthetic group"
+  accept="prosthetic cofactor|cofactor"
+  hint="Reread the Complex I subsection."
+>}}
+
 {{< multiplechoice
   question="What compound receives electrons from NADH?"
   answer="FMN"
-  hint="It is the first prosthetic group electrons reach, at complex I."
+  hint="Reread the Complex I subsection."
 >}}
 FMN
 ubiquinone
@@ -109,7 +134,7 @@ cytochrome c₁
 oxygen
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How do the roles of ubiquinone and cytochrome c differ from the roles of the other components of the electron transport chain?" hint="Think about mobility: which chain members are anchored complexes, and which shuttle electrons between them?" >}}
+{{< selfcheck question="How do the roles of ubiquinone and cytochrome c differ from the roles of the other components of the electron transport chain?" hint="Reread the subsections on the four complexes and the Summary's second sentence." >}}
 Q and cytochrome c are transport molecules. Their function does not result directly in ATP synthesis in that they are not pumps. Moreover, Q is the only component of the electron transport chain that is not a protein. Ubiquinone and cytochrome c are small, mobile electron carriers, whereas the other components of the electron transport chain are large complexes anchored in the inner mitochondrial membrane.
 ===CHECKS===
 Q and cytochrome c are transport molecules
@@ -119,7 +144,7 @@ ubiquinone and cytochrome c are small, mobile electron carriers
 the other components of the electron transport chain are large complexes anchored in the inner mitochondrial membrane
 {{< /selfcheck >}}
 
-{{< selfcheck question="What accounts for the different number of ATP molecules that are formed through cellular respiration?" hint="Consider how the intermediates get used for other purposes, how NADH gets shuttled into the mitochondria, and how the chain's composition varies between species." >}}
+{{< selfcheck question="What accounts for the different number of ATP molecules that are formed through cellular respiration?" hint="Reread the two paragraphs under ATP Yield." >}}
 Few tissues except muscle produce the maximum possible amount of ATP from nutrients. The intermediates are used to produce needed amino acids, fatty acids, cholesterol, and sugars for nucleic acids. When NADH is transported from the cytoplasm to the mitochondria, an active transport mechanism is used, which decreases the amount of ATP that can be made. The electron transport chain differs in composition between species, so different organisms will make different amounts of ATP using their electron transport chains.
 ===CHECKS===
 few tissues except muscle produce the maximum possible amount of ATP from nutrients
@@ -129,32 +154,12 @@ the electron transport chain differs in composition between species
 different organisms will make different amounts of ATP using their electron transport chains
 {{< /selfcheck >}}
 
-{{< textin
-  question="The soluble electron transporter in the electron transport chain that connects the first or second complex to the third is called ________."
-  answer="ubiquinone"
-  accept="Q"
-  hint="The section abbreviates this molecule's name with a single capital letter."
->}}
-
-{{< textin
-  question="The level of free energy of the electrons drops from about 60 kcal/mol in NADH or ________ kcal/mol in FADH₂ to about 0 kcal/mol in water."
-  answer="45"
-  hint="The section's summary gives the free-energy level of the electrons FADH₂ donates, between NADH's 60 kcal/mol and water's 0 kcal/mol."
->}}
-
-{{< textin
-  question="A nonprotein molecule bound to a protein that facilitates the protein's function is called a ________."
-  answer="prosthetic group"
-  accept="prosthetic cofactor"
-  hint="FMN, in complex I, is one example of this kind of nonpeptide helper molecule."
->}}
-
 ### Explain how a proton (H⁺) gradient is established and maintained by the electron transport chain
 
 {{< multiplechoice
   question="Chemiosmosis involves ________."
   answer="the movement of hydrogen ions across a mitochondrial membrane"
-  hint="It is the ions, driven through ATP synthase by their own gradient, that do the work — not the electrons or the atoms."
+  hint="Reread the first paragraph under Chemiosmosis."
 >}}
 the movement of electrons across the cell membrane
 the movement of hydrogen atoms across a mitochondrial membrane
@@ -162,19 +167,24 @@ the movement of hydrogen ions across a mitochondrial membrane
 the movement of glucose through the cell membrane
 {{< /multiplechoice >}}
 
+{{< multiplechoice
+  question="The electrons are passed through a series of redox reactions, with a small amount of free energy used at ________ points to transport hydrogen ions across the membrane."
+  answer="three"
+  hint="Reread the Summary's third sentence."
+>}}
+two
+three
+four
+five
+{{< /multiplechoice >}}
+
 {{< textin
   question="The membrane-embedded protein complex that adds a phosphate to ADP using energy from protons diffusing through it is called ________."
   answer="ATP synthase"
   accept="F1F0 ATP synthase"
-  hint="Hydrogen ions turn this molecular machine as they flow down their electrochemical gradient into the matrix."
->}}
-
-{{< textin
-  question="The electrons are passed through a series of redox reactions, with a small amount of free energy used at ________ points to transport hydrogen ions across the membrane."
-  answer="three"
-  hint="Complexes I, III, and IV are the points along the chain that pump protons."
+  hint="Reread the second paragraph under Chemiosmosis."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 7.4: Oxidative Phosphorylation](https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with one of three re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (all three are line-drawn schematics of the transport chain and ATP synthase, not photographs); all three source alts, which were transcribed with disruptive letter-by-letter text-to-speech spacing ("A T P," "N A D H"), rewritten from the images, and an extended description added to each since none is a photograph whose full content is carried by its caption; both Visual Connection questions (Dinitrophenol/pH, cyanide/pH) kept in the body immediately after their figures and rendered as self-checks, since the source keys both with a prose solution rather than a lettered option; ion charges (Fe⁺⁺, Fe⁺⁺⁺) and the H⁺, NAD⁺/FAD⁺ superscripts set as Unicode; the copper-ion subscripts Cu<sub>A</sub>/Cu<sub>B</sub> and inorganic phosphate P<sub>i</sub> set as inline HTML since no Unicode subscript letter exists for them; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (ubiquinone, prosthetic group) added from the glossary, plus a third (ATP synthase) to round out the second objective group with an auto-graded item, since this section's own end-of-section sets leave that objective with only the one Review Question above; a stray "B." printed after "ubiquinone" in the source's "Q and Complex II" paragraph (also present in the PDF) is omitted as a source typesetting defect; rubric checkpoints added to all four self-checks, the two body Visual Connections included, decomposing each model answer (the source solution) into check-off clauses with no new claims; and two summary-derived cloze `textin` items added — the 45 kcal/mol free-energy level of FADH₂'s electrons under the first objective, and the three points along the chain that pump hydrogen ions under the second objective — to raise the second objective's group and the section as a whole to the practice floor.</small>
+<small>This section is adapted from [Biology 2e, Section 7.4: Oxidative Phosphorylation](https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with one of three re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (all three are line-drawn schematics of the transport chain and ATP synthase, not photographs); all three source alts, which were transcribed with disruptive letter-by-letter text-to-speech spacing ("A T P," "N A D H"), rewritten from the images, and an extended description added to each since none is a photograph whose full content is carried by its caption; both Visual Connection questions (Dinitrophenol/pH, cyanide/pH) kept in the body immediately after their figures and rendered as self-checks, since the source keys both with a prose solution rather than a lettered option; ion charges (Fe⁺⁺, Fe⁺⁺⁺) and the H⁺ and NAD⁺ superscripts set as Unicode; the copper-ion subscripts Cu<sub>A</sub>/Cu<sub>B</sub> and inorganic phosphate P<sub>i</sub> set as inline HTML since no Unicode subscript letter exists for them; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (ubiquinone, prosthetic group) added from the glossary, plus a third (ATP synthase) to round out the second objective group with an auto-graded item, since this section's own end-of-section sets leave that objective with only the one Review Question above; a stray "B." printed after "ubiquinone" in the source's "Q and Complex II" paragraph (also present in the PDF) is omitted as a source typesetting defect; rubric checkpoints added to all four self-checks, the two body Visual Connections included, decomposing each model answer (the source solution) into check-off clauses with no new claims; and two summary-derived cloze items added as multiple choices, since a numeric answer is never graded as typed text here — the 45 kcal/mol free-energy level of FADH₂'s electrons under the first objective (options 30, 45, 50, and the Summary's own 60), and the three points along the chain that pump hydrogen ions under the second objective (options two through five, the Summary also printing two and four) — to raise the second objective's group and the section as a whole to the practice floor. Two claims are corrected with visible Source notes, each reported as a source defect: the cyanide Visual Connection's source answer says the chain "can no longer pump electrons into the intermembrane space," but this section's own chemiosmosis caption says the chain pumps protons there, so the model answer and its matching rubric checkpoint now say "protons (hydrogen ions)"; and the ATP Yield paragraph's four "FAD⁺" are printed as FAD, since this book's own Section 7.1 introduces the oxidized carrier as FAD with the reduced form FADH₂ and Section 7.3 says "one FAD molecule is reduced to FADH₂."</small>

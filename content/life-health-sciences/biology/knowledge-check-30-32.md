@@ -22,15 +22,14 @@ weight: 38
 ### 30.1 The Plant Body
 
 {{< textin
-  question="Unlike the xylem's conducting cells, which are dead at functional maturity, the conducting cells of the ________ are alive at maturity."
-  answer="phloem"
-  accept="phloem tissue"
+  question="In plants, as in animals, when different types of tissues work together to perform a unique function, they form a(n) ________."
+  answer="organ"
 >}}
 
 {{< textin
-  question="Xylem tissue includes three different cell types: xylem parenchyma and two types that conduct water, vessel elements and ________."
-  answer="tracheids"
-  accept="tracheid"
+  question="Xylem tissue includes three different cell types: two that conduct water, and a third called ________."
+  answer="xylem parenchyma"
+  accept="parenchyma|xylem parenchyma cells|parenchyma cells"
 >}}
 
 {{< selfcheck question="How does permanent tissue form from meristematic tissue, and what are its three main types?" >}}
@@ -69,8 +68,8 @@ strawberries are an example
 ### 30.3 Roots
 
 {{< textin
-  question="The region of root ground tissue that lies between the epidermis and the vascular tissue is called the ________."
-  answer="cortex"
+  question="In screwpine (*Pandanus*), a palm-like tree of sandy tropical soils, the aboveground roots that develop from the nodes to provide additional support are called ________."
+  answer="prop roots"
 >}}
 
 {{< multiplechoice
@@ -144,7 +143,7 @@ coupled to the uptake of sucrose with a carrier protein called the sucrose-H⁺ 
 ### 30.6 Plant Sensory Systems and Responses
 
 {{< textin
-  question="The physiological process that leads to the fall of a plant organ, such as a leaf or petal, is called ________."
+  question="The physiological process that leads to the fall of a leaf or petal from a plant is called ________."
   answer="abscission"
 >}}
 
@@ -190,7 +189,7 @@ phosphorus enables food energy to be converted into chemical energy through oxid
 {{< textin
   question="The combination of ________, along with water, carbon dioxide, and sunlight, produce the energy that allows plants to grow."
   answer="organic compounds"
-  accept="organic compound|organic molecule"
+  accept="organic molecule"
 >}}
 
 ### 31.2 The Soil
@@ -220,13 +219,13 @@ a slow-moving river could have fine-textured material, such as clay
 ### 31.3 Nutritional Adaptations of Plants
 
 {{< multiplechoice
-  question="Which term describes a parasitic plant that is fully photosynthetic and uses its host only for water and minerals?"
-  answer="hemiparasite"
+  question="The extensive dense sheath that ectomycorrhizae form around a plant's roots is called a ________."
+  answer="mantle"
 >}}
-hemiparasite
-holoparasite
-saprophyte
-epiphyte
+nodule
+mantle
+sucker
+hypha
 {{< /multiplechoice >}}
 
 {{< multiplechoice

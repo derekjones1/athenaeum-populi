@@ -23,7 +23,7 @@ After the energy from the sun is converted into chemical energy and temporarily 
 
 In plants, carbon dioxide (CO₂) enters the leaves through stomata, where it diffuses over short distances through intercellular spaces until it reaches the mesophyll cells. Once in the mesophyll cells, CO₂ diffuses into the stroma of the chloroplast—the site of light-independent reactions of photosynthesis. These reactions actually have several names associated with them. Another term, the **Calvin cycle**, is named for the man who discovered it, and because these reactions function as a cycle. Others call it the Calvin-Benson cycle to include the name of another scientist involved in its discovery. The most outdated name is "dark reaction," because light is not directly required (below). However, the term dark reaction can be misleading because it implies incorrectly that the reaction only occurs at night or is independent of light, which is why most scientists and instructors no longer use it.
 
-{{< mediafigure src="biology/Figure_08_03_01-d12d" kind="diagram" eager="true" alt="A diagram of the thylakoid membrane in which light striking Photosystem II and Photosystem I drives an electron transport chain that pumps hydrogen ions into the thylakoid space and produces ATP and NADPH, which then feed into the Calvin cycle." longdesc="Light strikes Photosystem II (left) and Photosystem I (right of center), embedded in the thylakoid membrane. At Photosystem II, water splits into oxygen, hydrogen ions, and electrons; the electrons pass through the carrier Pq to the Cytochrome Complex, which pumps four hydrogen ions into the thylakoid space, then on through the carrier Pc to Photosystem I. There, light re-energizes the electrons, which pass through Fd to NADP+ Reductase, combining with NADP+ and a hydrogen ion to form NADPH. Hydrogen ions accumulate in the thylakoid space, labeled High H+ Concentration, while the stroma below is labeled Low H+ Concentration; the ions flow back through ATP Synthase into the stroma, converting ADP and inorganic phosphate into ATP. At right, the ATP and NADPH feed into the Calvin Cycle, shown as a circle with RuBP, 3-PGA, ADP, NADPH, NADP+, G3P, and ATP labeled around it, with CO₂ entering and Sugar leaving." >}}
+{{< mediafigure src="biology/Figure_08_03_01-d12d" kind="diagram" eager="true" alt="A diagram of the thylakoid membrane in which light striking Photosystem II and Photosystem I drives an electron transport chain that pumps hydrogen ions into the thylakoid space and produces ATP and NADPH, which then feed into the Calvin cycle." longdesc="Light strikes Photosystem II (left) and Photosystem I (right of center), embedded in the thylakoid membrane. At Photosystem II, water splits into oxygen, hydrogen ions, and electrons; the electrons pass through the carrier Pq and the Cytochrome Complex, then on through the carrier Pc to Photosystem I, while red arrows carry four hydrogen ions from the stroma into Pq and from Pq into the thylakoid space. There, light re-energizes the electrons, which pass through Fd to NADP⁺ Reductase, combining with NADP⁺ and a hydrogen ion to form NADPH. Hydrogen ions accumulate in the thylakoid space, labeled High H⁺ Concentration, while the stroma below is labeled Low H⁺ Concentration; the ions flow back through ATP Synthase into the stroma, converting ADP and inorganic phosphate into ATP. At right, white arrows carry the ATP and NADPH into the Calvin Cycle, a clockwise circle of arrows: CO₂ enters at the top between RuBP and 3-PGA; on the way from 3-PGA down to G3P, one side arrow turns ATP into ADP and another turns NADPH into NADP⁺ + H⁺; Sugar leaves downward from G3P; and on the way from G3P back up to RuBP, a side arrow turns a second ATP into ADP." >}}
 Light reactions harness energy from the sun to produce chemical bonds, ATP, and NADPH. These energy-carrying molecules are made in the stroma where carbon fixation takes place. Credit: Rao, A., Ryan, K., Tag, A., Fletcher, S. and Hawkins, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
@@ -33,14 +33,14 @@ The light-independent reactions of the Calvin cycle can be organized into three 
 
 In the stroma, in addition to CO₂, two other components are present to initiate the light-independent reactions: an enzyme called ribulose-1,5-bisphosphate carboxylase/oxygenase (RuBisCO), and three molecules of ribulose bisphosphate (RuBP), as shown below. RuBP has five atoms of carbon, flanked by two phosphates.
 
-{{< mediafigure src="biology/Figure_08_03_02" kind="diagram" alt="A three-stage diagram of the Calvin cycle: carbon fixation, reduction, and regeneration of RuBP, with three CO₂ molecules entering at the top and one G3P exiting at the bottom to form glucose and other organic compounds." longdesc="Three CO₂ molecules enter at the top, one per turn of the cycle. Phase 1, Carbon Fixation: the enzyme RuBisCO combines each CO₂ with a RuBP molecule, producing six molecules of 3-phosphoglycerate. Phase 2, Reduction: six ATP convert the six 3-phosphoglycerate molecules into six 1,3-bisphosphoglycerate molecules, releasing six ADP; six NADPH then reduce these into six G3P molecules, releasing six NADP+ and six inorganic phosphate groups. Phase 3, Regeneration of RuBP: one of the six G3P molecules exits the cycle as output, going on to form glucose and other organic compounds, while the remaining five G3P molecules are rearranged, using three ATP, to regenerate three RuBP molecules and restart the cycle." >}}
+{{< mediafigure src="biology/Figure_08_03_02" kind="diagram" alt="A three-stage diagram of the Calvin cycle: carbon fixation, reduction, and regeneration of RuBP, with three CO₂ molecules entering at the top and one G3P exiting at the bottom to form glucose and other organic compounds." longdesc="Three CO₂ molecules enter at the top, one per turn of the cycle. Phase 1, Carbon Fixation: the enzyme RuBisCO combines each CO₂ with a RuBP molecule (five carbons, a phosphate at each end), giving three branched six-carbon intermediates, each of which splits into two, producing six molecules of 3-phosphoglycerate. Phase 2, Reduction: six ATP convert the six 3-phosphoglycerate molecules into six 1,3-bisphosphoglycerate molecules, releasing six ADP; six NADPH then reduce these into six G3P molecules, releasing six NADP⁺ and six inorganic phosphate groups. Phase 3, Regeneration of RuBP: one of the six G3P molecules exits the cycle as output, going on to form glucose and other organic compounds, while the remaining five G3P molecules are rearranged, using three ATP, to regenerate three RuBP molecules and restart the cycle." >}}
 The Calvin cycle has three stages. In stage 1, the enzyme RuBisCO incorporates carbon dioxide into an organic molecule, 3-PGA. In stage 2, the organic molecule is reduced using electrons supplied by NADPH. In stage 3, RuBP, the molecule that starts the cycle, is regenerated so that the cycle can continue. Only one carbon dioxide molecule is incorporated at a time, so the cycle must be completed three times to produce a single three-carbon G3P molecule, and six times to produce a six-carbon glucose molecule. Credit: Rao, A., Ryan, K., Tag, A., Fletcher, S. and Hawkins, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
 {{< multiplechoice
   question="Which of the following statements is true?"
   answer="In photosynthesis, water and carbon dioxide are reactants. G3P and oxygen are products."
-  hint="Overall photosynthesis combines both the light-dependent reactions and the Calvin cycle — track what enters and leaves the whole process, not just one stage of it."
+  hint="Reread the section's opening paragraph and the caption of the stage diagram just above this question."
 >}}
 In photosynthesis, oxygen, carbon dioxide, ATP, and NADPH are reactants. G3P and water are products.
 In photosynthesis, chlorophyll, water, and carbon dioxide are reactants. G3P and oxygen are products.
@@ -80,12 +80,12 @@ However, in nature, there is no such thing as "waste." Every single atom of matt
 
 In reality, CO₂ is no more a form of waste than oxygen is wasteful to photosynthesis. Both are byproducts of reactions that move on to other reactions. Photosynthesis absorbs light energy to build carbohydrates in chloroplasts, and aerobic cellular respiration releases energy by using oxygen to metabolize carbohydrates in the cytoplasm and mitochondria. Both processes use electron transport chains to capture the energy necessary to drive other reactions. These two powerhouse processes, photosynthesis and cellular respiration, function in biological, cyclical harmony to allow organisms to access life-sustaining energy that originates millions of miles away in a burning star humans call the sun.
 
-{{< mediafigure src="biology/Figure_08_03_04_1" kind="diagram" alt="A diagram connecting photosynthesis in a chloroplast with cellular respiration in a mitochondrion, joined by an arrow labeled Metabolism." longdesc="A chloroplast on the left and a mitochondrion on the right, joined by a downward arrow labeled Metabolism leading to a box labeled Metabolites. Into the chloroplast: an arrow labeled Light and an arrow labeled CO₂. Inside the chloroplast, ATP drives a cycle that produces Sugars and Starch. Out of the chloroplast: an arrow labeled O₂ and an arrow carrying Sugars across to the mitochondrion. Inside the mitochondrion, the Sugars enter a Citric Acid Cycle that feeds Oxidative Phosphorylation. Into the mitochondrion: an arrow labeled O₂. Out of the mitochondrion: an arrow labeled CO₂ and an arrow labeled ATP." >}}
-Connection between Photosynthesis and Respiration Photosynthesis in chloroplasts is the process by which light energy is converted to chemical energy and stored in sugars. Initially, the light energy is converted into chemical energy during ATP synthesis in a process that gives off oxygen. The energy in ATP is then used to reduce CO2 to simple sugars. In contrast, cellular respiration is the process in which the chemical energy stored in sugars is converted into ATP, a source of chemical energy that can be used by the rest of the cell. In the process of converting the energy stored in the sugars to ATP, CO2 is released and oxygen is consumed. Credit: Rao, A., Ryan, and Tag, A. Department of Biology, Texas A&M University.
+{{< mediafigure src="biology/Figure_08_03_04_1" kind="diagram" alt="A diagram connecting photosynthesis in a chloroplast with cellular respiration in a mitochondrion, joined by an arrow carrying sugars from one to the other; a downward arrow labeled Metabolism also leads from the sugars to metabolites." longdesc="A chloroplast on the left and a mitochondrion on the right, joined by arrows carrying Sugars from the chloroplast to the mitochondrion; from those Sugars, midway between them, a wide downward arrow labeled Metabolism leads to a box labeled Metabolites. Into the chloroplast: an arrow from Light to an ATP circle, and an arrow from CO₂. Inside the chloroplast, a curved arrow from the ATP, joined by the CO₂ arrow, leads to Sugars, and a double-headed arrow links Sugars and Starch. Out of the chloroplast: an arrow from the ATP down to O₂ and an arrow carrying Sugars across to the mitochondrion. Inside the mitochondrion, the Sugars enter a Citric Acid Cycle that feeds Oxidative Phosphorylation. Into the mitochondrion: an arrow labeled O₂. Out of the mitochondrion: an arrow labeled CO₂ and an arrow labeled ATP." >}}
+Connection between Photosynthesis and Respiration Photosynthesis in chloroplasts is the process by which light energy is converted to chemical energy and stored in sugars. Initially, the light energy is converted into chemical energy during ATP synthesis in a process that gives off oxygen. The energy in ATP is then used to reduce CO₂ to simple sugars. In contrast, cellular respiration is the process in which the chemical energy stored in sugars is converted into ATP, a source of chemical energy that can be used by the rest of the cell. In the process of converting the energy stored in the sugars to ATP, CO₂ is released and oxygen is consumed. Credit: Rao, A., Ryan, and Tag, A. Department of Biology, Texas A&M University.
 {{< /mediafigure >}}
 
-{{< mediafigure src="biology/Figure_08_03_05" kind="photo" alt="A photo of a giraffe eating from an acacia tree, overlaid with a red arrow forming a loop between the giraffe and the tree and three text boxes describing the gas exchange between them." longdesc="Three text boxes are arranged around the looping red arrow: near the giraffe, 'Living organisms consume oxygen and release carbon dioxide'; near the tree's canopy, 'Plants consume carbon dioxide and release oxygen during photosynthesis'; and near the tree's base, 'Plants use oxygen and carbon dioxide for cellular respiration.' The arrow loops from the giraffe up and over to the tree and back again, illustrating the cycle between them." >}}
-Photosynthesis consumes carbon dioxide and produces oxygen. Aerobic respiration consumes oxygen and produces carbon dioxide. These two processes play an important role in the carbon cycle. (credit: modification of work by Stuart Bassil)
+{{< mediafigure src="biology/Figure_08_03_05" kind="photo" alt="A photo of a giraffe eating from an acacia tree, overlaid with red arrows forming a loop between the giraffe and the tree and three text boxes describing the gas exchange between them." longdesc="Three text boxes are arranged inside the loop of red arrows: near the giraffe, 'Living organisms consume oxygen and release carbon dioxide'; in the tree's canopy, 'Plants consume carbon dioxide and release oxygen during photosynthesis'; and lower on the tree, 'Plants use oxygen and carbon dioxide for cellular respiration' (as printed; see the Source note in the caption). One large red arrow arcs from the tree's trunk up over the canopy and leftward to the giraffe's head; a second arcs from the giraffe down around its body and rightward to the tree's trunk, closing the cycle between them. A smaller red arrow curves from the photosynthesis box down to the cellular-respiration box." >}}
+Photosynthesis consumes carbon dioxide and produces oxygen. Aerobic respiration consumes oxygen and produces carbon dioxide. These two processes play an important role in the carbon cycle. *(Source note: the artwork's lower box reads "Plants use oxygen and carbon dioxide for cellular respiration"; as this caption and the diagram above say, cellular respiration consumes oxygen and releases carbon dioxide — a plant's respiration, like the giraffe's, gives off carbon dioxide rather than using it.)* (credit: modification of work by Stuart Bassil)
 {{< /mediafigure >}}
 
 ## Summary
@@ -102,10 +102,17 @@ Using the energy carriers formed in the first steps of photosynthesis, the light
 
 ### Describe the Calvin cycle
 
+{{< textin
+  question="After three cycles, a three-carbon molecule of ________ leaves the cycle to become part of a carbohydrate molecule."
+  answer="G3P"
+  accept="glyceraldehyde 3-phosphate"
+  hint="Reread the Summary's third sentence."
+>}}
+
 {{< multiplechoice
   question="Which molecule must enter the Calvin cycle continually for the light-independent reactions to take place?"
   answer="CO₂"
-  hint="RuBisCO and RuBP are recycled within the cycle; only this molecule must keep arriving from outside it."
+  hint="Reread the Summary's first two sentences."
 >}}
 RuBisCO
 RuBP
@@ -116,7 +123,7 @@ CO₂
 {{< multiplechoice
   question="Which order of molecular conversions is correct for the Calvin cycle?"
   answer="RuBP + CO₂ → [RuBisCO] 3-PGA → G3P"
-  hint="Start with the two molecules that combine in the fixation stage, and track which name is the catalyzing enzyme rather than a molecule being converted."
+  hint="Reread the three stage subsections in order."
 >}}
 RuBP + G3P → 3-PGA → sugar
 RuBisCO → CO₂ → RuBP → G3P
@@ -127,7 +134,7 @@ CO₂ → 3-PGA → RuBP → G3P
 {{< multiplechoice
   question="Where in eukaryotic cells does the Calvin cycle take place?"
   answer="chloroplast stroma"
-  hint="This is the fluid space surrounding the thylakoids, not a compartment inside them."
+  hint="Reread the first paragraph after the section's opening paragraph."
 >}}
 thylakoid membrane
 thylakoid lumen
@@ -135,7 +142,7 @@ chloroplast stroma
 granum
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Why is the third stage of the Calvin cycle called the regeneration stage?" hint="Ask which molecule, needed at the very start of the cycle, is rebuilt during this stage." >}}
+{{< selfcheck question="Why is the third stage of the Calvin cycle called the regeneration stage?" hint="Reread the third of the three stage subsections." >}}
 Because RuBP, the molecule needed at the start of the cycle, is regenerated from G3P.
 ===CHECKS===
 RuBP, the molecule needed at the start of the cycle
@@ -143,24 +150,24 @@ is regenerated from G3P
 {{< /selfcheck >}}
 
 {{< textin
-  question="The light-independent reactions of photosynthesis that convert carbon dioxide from the atmosphere into carbohydrates using the energy and reducing power of ATP and NADPH are known as the ________."
-  answer="Calvin cycle"
-  accept="Calvin-Benson cycle"
-  hint="Its outdated name is the \"dark reaction,\" and it is named for the scientist who traced the path of carbon through it."
->}}
-
-{{< textin
   question="The gain of one or more electrons by an atom or molecule is called ________."
   answer="reduction"
-  hint="The opposite process — the loss of an electron — is oxidation."
+  hint="Reread the second of the three stage subsections."
 >}}
 
 ### Define carbon fixation
 
+{{< textin
+  question="An enzyme, RuBisCO, catalyzes a reaction with CO₂ and another organic compound, ________."
+  answer="RuBP"
+  accept="ribulose bisphosphate|ribulose-1,5-bisphosphate"
+  hint="Reread the Summary's second sentence."
+>}}
+
 {{< multiplechoice
   question="Which statement correctly describes carbon fixation?"
   answer="the conversion of CO₂ into an organic compound"
-  hint="Match this to the general definition of the term itself, not to a specific enzyme's role or a later stage of the cycle."
+  hint="Reread the last paragraph of the first of the three stage subsections."
 >}}
 the conversion of CO₂ into an organic compound
 the use of RuBisCO to form G3P
@@ -172,7 +179,7 @@ the use of ATP and NADPH to reduce CO₂
 {{< multiplechoice
   question="If four molecules of carbon dioxide enter the Calvin cycle (four \"turns\" of the cycle), how many G3P molecules are produced and how many are exported?"
   answer="8 G3P made, 1 G3P exported"
-  hint="Each turn of the cycle fixes one CO₂ and makes two G3P; only a complete three-turn set exports one net G3P."
+  hint="Reread the third of the three stage subsections."
 >}}
 4 G3P made, 1 G3P exported
 4 G3P made, 2 G3P exported
@@ -180,7 +187,7 @@ the use of ATP and NADPH to reduce CO₂
 8 G3P made, 4 G3P exported
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Which part of the light-independent reactions would be affected if a cell could not produce the enzyme RuBisCO?" hint="RuBisCO acts at only one step of the cycle — but every later step depends on the product of that step." >}}
+{{< selfcheck question="Which part of the light-independent reactions would be affected if a cell could not produce the enzyme RuBisCO?" hint="Reread the first of the three stage subsections." >}}
 None of the cycle could take place, because RuBisCO is essential in fixing carbon dioxide. Specifically, RuBisCO catalyzes the reaction between carbon dioxide and RuBP at the start of the cycle.
 ===CHECKS===
 none of the cycle could take place
@@ -188,22 +195,16 @@ RuBisCO is essential in fixing carbon dioxide
 RuBisCO catalyzes the reaction between carbon dioxide and RuBP at the start of the cycle
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why does it take three turns of the Calvin cycle to produce G3P, the initial product of photosynthesis?" hint="Compare how many carbon atoms G3P has with how many carbon atoms enter the cycle on each turn." >}}
+{{< selfcheck question="Why does it take three turns of the Calvin cycle to produce G3P, the initial product of photosynthesis?" hint="Reread the third of the three stage subsections." >}}
 Because G3P has three carbon atoms, and each turn of the cycle takes in one carbon atom in the form of carbon dioxide.
 ===CHECKS===
 G3P has three carbon atoms
 each turn of the cycle takes in one carbon atom in the form of carbon dioxide
 {{< /selfcheck >}}
 
-{{< textin
-  question="The process of converting inorganic CO₂ gas into organic compounds is called ________."
-  answer="carbon fixation"
-  hint="RuBisCO catalyzes the first step of this process, combining the gas with RuBP."
->}}
-
 ### Explain how photosynthesis works in the energy cycle of all living organisms
 
-{{< selfcheck question="Imagine a sealed terrarium containing a plant and a beetle. How does each organism provide resources for the other? Could each organism survive if it was the only living thing in the terrarium? Why or why not?" hint="Work out what each organism releases as waste and what the other needs as a resource, then ask whether either supply would still be available with only one organism present." >}}
+{{< selfcheck question="Imagine a sealed terrarium containing a plant and a beetle. How does each organism provide resources for the other? Could each organism survive if it was the only living thing in the terrarium? Why or why not?" hint="Reread the paragraphs under The Energy Flow." >}}
 An energy cycle between the plant and the beetle would work as follows: the plant consumes carbon dioxide and releases oxygen as a byproduct of photosynthesis; the beetle consumes oxygen and releases carbon dioxide to create chemical energy during aerobic respiration; the plant takes up that carbon dioxide from the air; and the cycle repeats. The plant would also provide a carbon-based food source for the beetle.
 
 The beetle is a heterotroph and would not survive without the plant, because it would deplete all the oxygen within the terrarium. The plant is an autotroph and could survive without the beetle, but it would be unlikely to grow: through photosynthesis the plant can make and store its own energy in carbon-based molecules and produce oxygen, and that oxygen can then be used to power aerobic respiration in the plant, which releases carbon dioxide. However, since the plant would essentially be reusing its own resources by cycling between carbon- and oxygen-consuming pathways, its growth would be limited.
@@ -216,7 +217,7 @@ the plant is an autotroph and could survive without the beetle
 its growth would be limited
 {{< /selfcheck >}}
 
-{{< selfcheck question="Compare the flow of energy with the flow of nutrients in a closed, sunny ecosystem consisting of a giraffe and a tree." hint="Energy moves through the system in one direction; matter such as carbon and oxygen cycles back and forth between the organisms." >}}
+{{< selfcheck question="Compare the flow of energy with the flow of nutrients in a closed, sunny ecosystem consisting of a giraffe and a tree." hint="Reread the paragraphs under The Energy Flow." >}}
 In the defined ecosystem, energy would radiate from the Sun and be absorbed by the chlorophyll in the leaves of the tree. Photosynthesis would occur in the leaves, transforming the light energy into stored chemical energy in the covalent bonds of carbon molecules. The giraffe would eat the leaves of the tree and digest the carbon molecules to release energy.
 
 In the same ecosystem, nutrients would cycle between the tree and the giraffe. The giraffe would consume oxygen and release carbon dioxide as its cells perform aerobic respiration to create chemical energy. The tree would consume the released carbon dioxide during photosynthesis to create its own stored chemical energy, and release oxygen as a by-product.
@@ -232,7 +233,7 @@ release oxygen as a by-product
 {{< multiplechoice
   question="Which gas does aerobic respiration consume that photosynthesis produces as a byproduct?"
   answer="oxygen"
-  hint="Photosynthesis releases this gas when it splits water in the light reactions; respiration then uses it to extract energy from sugars."
+  hint="Reread the caption of the photo at the end of The Energy Flow."
 >}}
 carbon dioxide
 oxygen
@@ -242,4 +243,4 @@ hydrogen
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 8.3: Using Light Energy to Make Organic Molecules](https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the first figure (the light-reactions membrane diagram) re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection, since it is a drawn illustration, not a photograph; a clean alt and a longdesc written for that figure and for the Calvin-cycle stage diagram, replacing the source alt's garbled letter-by-letter spelling of the labels ("upper case R lower case u...") with a description of what the image shows and a longdesc walking its three phases and quantities; a longdesc also added for the photosynthesis/respiration organelle diagram and for the giraffe/tree photo's three overlaid text boxes, none of which is fully carried by its caption; feature boxes (one Link to Learning, one Evolution Connection) rendered as callouts with their bold names; the note.visual-connection kept in the body immediately after its figure and rendered as a multiplechoice, since the source keys it with a lettered option, and not duplicated in the identical Visual Connection Questions exercise; the five Review Questions and five Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the Critical Thinking terrarium answer's telegraphic list reformatted into complete sentences; the chemical-equation multiple-choice options rendered as Unicode text with arrows rather than KaTeX, since they are reaction sequences, not mathematics; the "Explain how photosynthesis works in the energy cycle" objective group's auto-graded item is a locally authored multiple choice drawn strictly from the page's own Energy Flow prose, since the two source Critical Thinking items for that objective are both free-response; and three key-term recall items (Calvin cycle, carbon fixation, reduction) added from the glossary to round out every objective group with an auto-graded item; in the review question on carbon fixation, the source's option "the use of RuBisCO to form 3-PGA" — which the section's own prose also calls carbon fixation, so the printed item had two correct answers — is changed to "the use of RuBisCO to form G3P", which the section rules out (RuBisCO forms 3-PGA; G3P is made in the reduction stage); and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One claim is corrected with a visible Source note: the Evolution Connection's light-reaction product reads NADPH, as everywhere else in the chapter, not NADH (erratum 394).</small>
+<small>This section is adapted from [Biology 2e, Section 8.3: Using Light Energy to Make Organic Molecules](https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the first figure (the light-reactions membrane diagram) re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection, since it is a drawn illustration, not a photograph; a clean alt and a longdesc written for that figure and for the Calvin-cycle stage diagram, replacing the source alt's garbled letter-by-letter spelling of the labels ("upper case R lower case u...") with a description of what the image shows and a longdesc walking its three phases and quantities; a longdesc also added for the photosynthesis/respiration organelle diagram and for the giraffe/tree photo's three overlaid text boxes, none of which is fully carried by its caption; feature boxes (one Link to Learning, one Evolution Connection) rendered as callouts with their bold names; the note.visual-connection kept in the body immediately after its figure and rendered as a multiplechoice, since the source keys it with a lettered option, and not duplicated in the identical Visual Connection Questions exercise; the five Review Questions and five Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the Critical Thinking terrarium answer's telegraphic list reformatted into complete sentences; the chemical-equation multiple-choice options rendered as Unicode text with arrows rather than KaTeX, since they are reaction sequences, not mathematics; the "Explain how photosynthesis works in the energy cycle" objective group's auto-graded item is a locally authored multiple choice drawn strictly from the page's own Energy Flow prose, since the two source Critical Thinking items for that objective are both free-response; and one key-term recall item (reduction) added from the glossary, and two summary-derived cloze `textin` items (the G3P that leaves the cycle, the RuBP that RuBisCO joins to CO₂), to round out every objective group with an auto-graded item — the glossary's Calvin cycle and carbon fixation are not recall items here because the objective headings print them; in the review question on carbon fixation, the source's option "the use of RuBisCO to form 3-PGA" — which the section's own prose also calls carbon fixation, so the printed item had two correct answers — is changed to "the use of RuBisCO to form G3P", which the section rules out (RuBisCO forms 3-PGA; G3P is made in the reduction stage); and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims. One claim is corrected with a visible Source note: the Evolution Connection's light-reaction product reads NADPH, as everywhere else in the chapter, not NADH (erratum 394). The giraffe-and-acacia photo's artwork prints "Plants use oxygen and carbon dioxide for cellular respiration" (and the source alt repeats it); the extended description quotes the box as printed, and a visible Source note in the caption says that cellular respiration consumes oxygen and releases carbon dioxide, as the figure's own caption and the connection diagram above it state (reported as a source defect).</small>

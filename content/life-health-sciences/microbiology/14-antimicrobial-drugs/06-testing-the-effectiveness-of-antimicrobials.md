@@ -72,9 +72,9 @@ The Etest can be used to determine the MIC of an antibiotic. In this Etest, vanc
 **Check Your Understanding**
 
 {{< multiplechoice
-  question="Which correctly distinguishes the minimal inhibitory concentration (MIC) from the minimal bactericidal concentration (MBC)?"
+  question="Compare and contrast MIC and MBC."
   answer="MIC is the lowest drug concentration that inhibits visible bacterial growth; MBC is the lowest drug concentration that kills $\geq 99.9\%$ of the starting inoculum."
-  hint="Reread the sentence that introduces both terms together: one is about inhibiting growth, the other about killing nearly all of the starting inoculum."
+  hint="Reread the first sentence of the Dilution Tests discussion, where both terms are introduced."
 >}}
 MIC is the lowest drug concentration that inhibits visible bacterial growth; MBC is the lowest drug concentration that kills $\geq 99.9\%$ of the starting inoculum.
 MIC is the lowest drug concentration that kills $\geq 99.9\%$ of the starting inoculum; MBC is the lowest drug concentration that inhibits visible bacterial growth.
@@ -129,11 +129,13 @@ depth
 {{< multiplechoice
   question="If drug A produces a larger zone of inhibition than drug B on the Kirby-Bauer disk diffusion test, drug A should always be prescribed."
   answer="False"
-  hint="Recall what the section says a Kirby-Bauer zone size cannot be used to compare between two drugs."
+  hint="Reread the paragraph on the limitations of interpreting the Kirby-Bauer disk diffusion assay."
 >}}
 True
 False
 {{< /multiplechoice >}}
+
+{{< textin question="A compilation of antibiotic susceptibility data broken down by bacterial pathogen is called a(n) ________." answer="antibiogram" hint="Name the tool physicians use to select empiric therapy from local resistance trends, discussed in the Micro Connection box." >}}
 
 {{< multiplechoice
   question="The utility of an antibiogram is that it shows antimicrobial susceptibility trends"
@@ -146,14 +148,25 @@ in research laboratory strains.
 in a localized population.
 {{< /multiplechoice >}}
 
-{{< textin question="A compilation of local antibiotic susceptibility data broken down by bacterial pathogen is called a(n) ________." answer="antibiogram" hint="Name the tool physicians use to select empiric therapy from local resistance trends, discussed in the Micro Connection box." >}}
-
 ### Explain the significance of the minimal inhibitory concentration and the minimal bactericidal concentration relative to the effectiveness of an antimicrobial drug
+
+{{< textin question="The method that can determine the MICs of multiple antimicrobial drugs against a microbial strain using a single agar plate is called the ________." answer="Etest" accept="E-test" hint="Name the method that places gradient strips of different drugs on one plate, described just before the Clinical Focus box." >}}
+
+{{< multiplechoice
+  question="Can an Etest be used to find the MBC of a drug?"
+  answer="No"
+  hint="Reread the last sentence of the Etest paragraph."
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+{{< textin question="The lowest concentration of an antibacterial drug that inhibits visible growth of a bacterial strain is called the ________." answer="minimal inhibitory concentration" accept="MIC|minimum inhibitory concentration" hint="Name the concentration threshold defined alongside the MBC at the start of the Dilution Tests discussion." >}}
 
 {{< multiplechoice
   question="Which of the following techniques cannot be used to determine the minimum inhibitory concentration of an antimicrobial drug against a particular microbe?"
   answer="Kirby-Bauer disk diffusion test"
-  hint="Recall which of these four methods only produces a zone of inhibition rather than an interpretable concentration value."
+  hint="Compare the Dilution Tests discussion and the Etest paragraph with the paragraph on the limitations of the Kirby-Bauer test."
 >}}
 Etest
 microbroth dilution test
@@ -161,19 +174,6 @@ Kirby-Bauer disk diffusion test
 macrobroth dilution test
 {{< /multiplechoice >}}
 
-{{< textin question="The method that can determine the MICs of multiple antimicrobial drugs against a microbial strain using a single agar plate is called the ________." answer="Etest" accept="E-test" hint="Name the method that places gradient strips of different drugs on one plate, described just before the Clinical Focus box." >}}
-
-{{< multiplechoice
-  question="Can an Etest be used to find the minimal bactericidal concentration (MBC) of a drug?"
-  answer="No"
-  hint="Recall which one of the three MIC-determining methods this section says cannot also determine the MBC."
->}}
-Yes
-No
-{{< /multiplechoice >}}
-
-{{< textin question="The lowest concentration of an antibacterial drug that inhibits visible growth of a bacterial strain is called the ________." answer="minimal inhibitory concentration" accept="MIC" hint="Name the concentration threshold defined alongside the MBC at the start of the Dilution Tests discussion." >}}
-
 ---
 
-<small>This section is adapted from [Microbiology, Section 14.6: Testing the Effectiveness of Antimicrobials](https://openstax.org/books/microbiology/pages/14-6-testing-the-effectiveness-of-antimicrobials) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures are re-encoded as WebP and rendered as mediafigures after image and PDF inspection; all three are `kind="photo"` — the macrobroth tube series and the Etest strip are unmodified photographs, and the microdilution-tray figure, despite its overlaid title, arrow, brackets, and red circles, is a single photograph of a real 96-well plate with only annotation added, never a drawn panel, so it does not qualify as a diagram under this book's composite-figure rule; all three alts are rewritten from the images themselves rather than from the source alts, which contain typos ("left to fight" for "left to right," "Peniciliin" for "Penicillin" — suspected source-alt defects, not corrected in an inline note since neither alt is reused verbatim); a `longdesc` was added to the microdilution-tray figure walking its rows, brackets, and circled wells in reading order, since its alt cannot hold every labeled value within the 600-character cap. Two of the module's two unkeyed Short Answer questions are not used separately in Practice because each duplicates a body Check Your Understanding bullet word-for-word in substance ("How is the information from a Kirby-Bauer disk diffusion test used for the recommendation of the clinical use of an antimicrobial drug?" duplicates the first Check Your Understanding bullet, and "What is the difference between MIC and MBC?" duplicates the second); the first body bullet stays a self-check whose model answer is built from the zone-diameter-and-standardized-chart sentence together with the assay's stated limitations, and the second is graded because the sentence that defines MIC and MBC side by side fixes it — rendered as a `multiplechoice` whose two incorrect-swap and two conflated-definition distractors are recombinations of the module's own MIC/MBC wording rather than invented claims. The unkeyed Critical Thinking question "Can an Etest be used to find the MBC of a drug? Explain." is graded as a Yes/No `multiplechoice` keyed from the single sentence stating the MBC cannot be determined with the Etest, dropping only the "Explain" instruction. Of the module's five keyed source exercises, all three Multiple Choice, the one True/False (rendered as a two-option multiple choice, no "True or false:" prefix), and the one Fill in the Blank are adapted into Practice. Two filler `textin` items (term recall for `antibiogram` and for `minimal inhibitory concentration`, accepting the module's own abbreviation `MIC`) bring both objective groups to the book's three-item floor. The `Etest` fill-in-the-blank's `accept` list carries only `E-test`, not also `E test`, because the grader folds hyphen-versus-space and rejects the two as duplicate members of one list. The Link to Learning keeps its external URL and describes the destination. The Micro Connection box's one footnote (Furuno et al., *Infection Control and Hospital Epidemiology*, 2014) is rendered as an inline parenthetical citation at the sentence it supports; it carries neither a DOI nor a bare access URL to drop or keep. Clinical Focus Resolution names The History of Chemotherapy and Antimicrobial Discovery as where Marisa's case began, in place of the source's "Go back to the previous Clinical Focus box" link, and carries no "continues in" sentence because this is the case's final part. Key terms are compiled from the module's six defined terms and the book's Glossary appendix; all six definitions are taken directly from the Glossary, none sentence-derived. No source exercise item is omitted from the page: the two duplicate Short Answer questions are used as body self-checks instead of Practice items, as explained above.</small>
+<small>This section is adapted from [Microbiology, Section 14.6: Testing the Effectiveness of Antimicrobials](https://openstax.org/books/microbiology/pages/14-6-testing-the-effectiveness-of-antimicrobials) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all three source figures are re-encoded as WebP and rendered as mediafigures after image and PDF inspection; all three are `kind="photo"` — the macrobroth tube series and the Etest strip are unmodified photographs, and the microdilution-tray figure, despite its overlaid title, arrow, brackets, and red circles, is a single photograph of a real 96-well plate with only annotation added, never a drawn panel, so it does not qualify as a diagram under this book's composite-figure rule; all three alts are rewritten from the images themselves rather than from the source alts, which contain typos ("left to fight" for "left to right," "Peniciliin" for "Penicillin" — suspected source-alt defects, not corrected in an inline note since neither alt is reused verbatim); a `longdesc` was added to the microdilution-tray figure walking its rows, brackets, and circled wells in reading order, since its alt cannot hold every labeled value within the 600-character cap; the row bracket baked into that same photograph reads "clindomycin," which the alt and longdesc print correctly as "clindamycin" (erratum 605). Two of the module's two unkeyed Short Answer questions are not used separately in Practice because each duplicates a body Check Your Understanding bullet word-for-word in substance ("How is the information from a Kirby-Bauer disk diffusion test used for the recommendation of the clinical use of an antimicrobial drug?" duplicates the first Check Your Understanding bullet, and "What is the difference between MIC and MBC?" duplicates the second); the first body bullet stays a self-check whose model answer is built from the zone-diameter-and-standardized-chart sentence together with the assay's stated limitations, and the second is graded because the sentence that defines MIC and MBC side by side fixes it — rendered as a `multiplechoice` whose two incorrect-swap and two conflated-definition distractors are recombinations of the module's own MIC/MBC wording rather than invented claims. The unkeyed Critical Thinking question "Can an Etest be used to find the MBC of a drug? Explain." is graded as a Yes/No `multiplechoice` keyed from the single sentence stating the MBC cannot be determined with the Etest, dropping only the "Explain" instruction. In the second Practice group the Fill in the Blank and the Critical Thinking item come before the Multiple Choice on MIC techniques, reversing the source order, so that no item directly above a recall item prints its key. Of the module's five keyed source exercises, all three Multiple Choice, the one True/False (rendered as a two-option multiple choice, no "True or false:" prefix), and the one Fill in the Blank are adapted into Practice. Two filler `textin` items (term recall for `antibiogram`, its prompt the Micro Connection's defining sentence without the word "local" so that it does not print the antibiogram Multiple Choice key, and for `minimal inhibitory concentration`, accepting the module's own abbreviation `MIC` and its "minimum inhibitory concentration" spelling) bring both objective groups to the book's three-item floor. The `Etest` fill-in-the-blank's `accept` list carries only `E-test`, not also `E test`, because the grader folds hyphen-versus-space and rejects the two as duplicate members of one list. The Link to Learning keeps its external URL and describes the destination. The Micro Connection box's one footnote (Furuno et al., *Infection Control and Hospital Epidemiology*, 2014) is rendered as an inline parenthetical citation at the sentence it supports; it carries neither a DOI nor a bare access URL to drop or keep. Clinical Focus Resolution names The History of Chemotherapy and Antimicrobial Discovery as where Marisa's case began, in place of the source's "Go back to the previous Clinical Focus box" link, and carries no "continues in" sentence because this is the case's final part. Key terms are compiled from the module's six defined terms and the book's Glossary appendix; all six definitions are taken directly from the Glossary, none sentence-derived. No source exercise item is omitted from the page: the two duplicate Short Answer questions are used as body self-checks instead of Practice items, as explained above.</small>

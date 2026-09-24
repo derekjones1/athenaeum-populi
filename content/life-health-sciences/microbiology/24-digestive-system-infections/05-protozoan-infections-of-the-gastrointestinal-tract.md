@@ -67,7 +67,7 @@ Microscopic examination is used for diagnosis. A stool O&P examination may be he
 
 **Check Your Understanding**
 
-{{< selfcheck question="Which protozoan GI infections are common in the United States?" hint="Look at how each of the four diseases' own paragraph describes its prevalence — one is called common in the US outright, one causes US outbreaks through specific US settings, and two are described as more common elsewhere." >}}
+{{< selfcheck question="Which protozoan GI infections are common in the United States?" hint="Look at the opening paragraphs of each of the four disease subsections." >}}
 Giardiasis is explicitly described as a common disease in the United States. Cryptosporidiosis also causes outbreaks in the United States, through contamination of the public water supply or contaminated water at water parks, swimming pools, and day-care centers, although the disease is described as more common overall in developing countries. Amoebiasis is most widespread in the developing world, and cyclosporiasis is endemic to tropical and subtropical regions and therefore uncommon in the United States, although outbreaks have been associated with contaminated imported produce.
 ===CHECKS===
 giardiasis is a common disease in the United States
@@ -108,10 +108,17 @@ Protozoan GI infections are generally transmitted through contaminated food or w
 
 ### Identify the most common protozoans that can cause infections of the GI tract
 
+{{< textin
+  question="Chronic ________ infections cause the unique sign of disease of greasy stool and are often resistant to treatment."
+  answer="giardia"
+  accept="Giardia lamblia|G. lamblia"
+  hint="This protozoan blocks fat absorption where it attaches to the intestinal wall, which is why chronic infection produces greasy stool."
+>}}
+
 {{< multiplechoice
   question="Which protozoan is associated with the ability to cause severe dysentery?"
   answer="*Entamoeba histolytica*"
-  hint="This protozoan causes a severe form of the disease that shares its own name with the symptom itself."
+  hint="Compare the signs and symptoms paragraphs of the four disease subsections."
 >}}
 *Giardia lamblia*
 *Cryptosporidium hominis*
@@ -137,19 +144,13 @@ Protozoans attached to the intestinal wall of a gerbil, viewed by scanning elect
 {{< multiplechoice
   question="The micrograph shows protozoans attached to the intestinal wall of a gerbil. Based on what you know about protozoan intestinal parasites, what is it?"
   answer="*Giardia lamblia*"
-  hint="One of these four protozoans uses a large adhesive disk to attach to the intestinal mucosa — exactly what the stem describes as 'attached to the intestinal wall.'"
+  hint="Compare the first paragraph of each of the four disease subsections."
 >}}
 *Giardia lamblia*
 *Cryptosporidium hominis*
 *Cyclospora cayetanensis*
 *Entamoeba histolytica*
 {{< /multiplechoice >}}
-
-{{< textin
-  question="Chronic ________ infections cause the unique sign of disease of greasy stool and are often resistant to treatment."
-  answer="giardia"
-  hint="This protozoan blocks fat absorption where it attaches to the intestinal wall, which is why chronic infection produces greasy stool."
->}}
 
 ### Compare the major characteristics of specific protozoan diseases affecting the GI tract
 
@@ -168,13 +169,13 @@ A commercial direct fluorescence antibody kit
   question="A severe form of intestinal infection caused by *Entamoeba histolytica*, characterized by severe diarrhea with blood and mucus, is called ________."
   answer="amoebic dysentery"
   accept="amebic dysentery"
-  hint="This is the severe form of the disease caused by Entamoeba histolytica, when it produces bloody, mucus-laden diarrhea rather than mild symptoms."
+  hint="Look at the first sentence of the third disease subsection."
 >}}
 
 {{< textin
-  question="Intestinal infection caused by *Cryptosporidium parvum* or *C. hominis* is called ________."
+  question="Another protozoan intestinal illness, usually caused by *C. parvum* or *C. hominis*, is ________."
   answer="cryptosporidiosis"
-  hint="This disease's name combines the genus name of its causative protozoan with the general suffix for a protozoan-caused intestinal illness."
+  hint="Look at the first sentence of the second disease subsection."
 >}}
 
 {{< multiplechoice
@@ -191,7 +192,7 @@ Cyclosporiasis
 {{< multiplechoice
   question="Which of these protozoan gastrointestinal infections has trimethoprim-sulfamethoxazole as its recommended treatment?"
   answer="Cyclosporiasis"
-  hint="This is the same protozoan discussed earlier in this section for its distinctive fluorescent appearance under ultraviolet light."
+  hint="Check the treatment sentence in each of the four disease subsections."
 >}}
 Cyclosporiasis
 Giardiasis
@@ -199,4 +200,4 @@ Amoebiasis
 Cryptosporidiosis
 {{< /multiplechoice >}}
 
-<small>This section is adapted from [Microbiology, Section 24.5: Protozoan Infections of the Gastrointestinal Tract](https://openstax.org/books/microbiology/pages/24-5-protozoan-infections-of-the-gastrointestinal-tract) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the module's two figures (Cryptospor, Cyclospor) are re-encoded as WebP and rendered as mediafigures with `kind="photo"` after image inspection; their alts are rewritten from the rendered images (naming the clustered circles and scale bar, and the pointer line and label) rather than reused verbatim from the source's terser alt text; Cryptospor carries `eager="true"` as the page's first figure; the module's internal cross-reference to a *Giardia lamblia* micrograph in another chapter's module is rendered as an absolute site-root link to that figure's section page (already authored); the module's one footnote citation is rendered as an inline parenthetical citation after the sentence it supports, with its bare access URL and its "Updated June 13" access/revision date dropped, keeping only the publication year; the Giardiasis subsection's one-word source typo "tropozoite" is corrected to "trophozoite"; the source's own Multiple Choice option spelling "Cyclospora cayetanesis" (missing the "n"), printed identically in all three of this section's Multiple Choice option lists even though the module's own body text and Disease Profile table spell it correctly as "cayetanensis," is corrected to "cayetanensis" in all four places it appears (three option lists plus one `answer` parameter) — a one-word source typo, corrected without an inline note, as chapter 21.2 did for its own distractor typo; the Disease Profile summary table (`OSC_Microbio_24_05_GIProtoTBL`) is transcribed as a Markdown table from the source alt, checked against the printed PDF page (no divergence found), rather than vendored, per this book's Disease Profile rule; the table's own alt text prints the cyclosporiasis antimicrobial drug as "Trimethoprim-sulfmethoxazole," missing the "a" that the section's own body text two paragraphs earlier includes ("Trimethoprim-sulfamethoxazole"), and the table is transcribed with the body's correct spelling — a one-word source typo; the two source-keyed Multiple Choice items and the source-keyed Fill in the Blank item are adapted into Practice unchanged with their source keys; the section's third Multiple Choice item, an Art Connection exercise, prints no `<solution>` upstream — its figure is rendered as a `mediafigure` with an author-written caption (the source prints none but a credit line) followed by the item, keyed *Giardia lamblia* by this author from the module's adhesive-disk/attachment sentence; the section's one unkeyed Short Answer question, "What is an O&P exam?," is graded as a `multiplechoice` keyed to the module's own O&P definition sentence, with distractors drawn from the module's other diagnostic-test sentences, since the source prints no key for it; the section's one body Check Your Understanding bullet remains a self-check, since no single sentence of the module fixes which infections are common in the United States — the model answer draws on all four subsections' own prevalence sentences; two Practice items under the second objective (the acid-fast-staining and trimethoprim-sulfamethoxazole comparison questions) are author-written multiple-choice items built strictly from the module's own diagnosis and treatment sentences to fill that objective's group; two term-recall `textin` items are built from the Key terms block; no source exercise, table, or Check Your Understanding bullet is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 24.5: Protozoan Infections of the Gastrointestinal Tract](https://openstax.org/books/microbiology/pages/24-5-protozoan-infections-of-the-gastrointestinal-tract) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the module's two figures (Cryptospor, Cyclospor) are re-encoded as WebP and rendered as mediafigures with `kind="photo"` after image inspection; their alts are rewritten from the rendered images (naming the clustered circles and scale bar, and the pointer line and label) rather than reused verbatim from the source's terser alt text; Cryptospor carries `eager="true"` as the page's first figure; the module's internal cross-reference to a *Giardia lamblia* micrograph in another chapter's module is rendered as an absolute site-root link to that figure's section page (already authored); the module's one footnote citation is rendered as an inline parenthetical citation after the sentence it supports, with its bare access URL and its "Updated June 13" access/revision date dropped, keeping only the publication year; the Giardiasis subsection's one-word source typo "tropozoite" is corrected to "trophozoite"; the source's own Multiple Choice option spelling "Cyclospora cayetanesis" (missing the "n"), printed identically in all three of this section's Multiple Choice option lists even though the module's own body text and Disease Profile table spell it correctly as "cayetanensis," is corrected to "cayetanensis" in all four places it appears (three option lists plus one `answer` parameter) — a one-word source typo, corrected without an inline note, as chapter 21.2 did for its own distractor typo; the Disease Profile summary table (`OSC_Microbio_24_05_GIProtoTBL`) is transcribed as a Markdown table from the source alt, checked against the printed PDF page (no divergence found), rather than vendored, per this book's Disease Profile rule; the table's own alt text prints the cyclosporiasis antimicrobial drug as "Trimethoprim-sulfmethoxazole," missing the "a" that the section's own body text two paragraphs earlier includes ("Trimethoprim-sulfamethoxazole"), and the table is transcribed with the body's correct spelling — a one-word source typo; the two source-keyed Multiple Choice items and the source-keyed Fill in the Blank item are adapted into Practice unchanged with their source keys, the `giardia` `textin` moved to the front of the group, above both multiple choice items, so that no item directly above a text-entry blank prints its key, reversing their printed order; the section's third Multiple Choice item, an Art Connection exercise, prints no `<solution>` upstream — its figure is rendered as a `mediafigure` with an author-written caption (the source prints none but a credit line) followed by the item, keyed *Giardia lamblia* by this author from the module's adhesive-disk/attachment sentence; the section's one unkeyed Short Answer question, "What is an O&P exam?," is graded as a `multiplechoice` keyed to the module's own O&P definition sentence, with distractors drawn from the module's other diagnostic-test sentences, since the source prints no key for it; the section's one body Check Your Understanding bullet remains a self-check, since no single sentence of the module fixes which infections are common in the United States — the model answer draws on all four subsections' own prevalence sentences; two Practice items under the second objective (the acid-fast-staining and trimethoprim-sulfamethoxazole comparison questions) are author-written multiple-choice items built strictly from the module's own diagnosis and treatment sentences to fill that objective's group; two recall `textin` items are built, one from the Key terms block (amoebic dysentery) and one from the first sentence of the Cryptosporidiosis subsection (its stem names the pathogens by their abbreviated binomials, since the Key terms definition's "*Cryptosporidium parvum*" prints the root of the answer); no source exercise, table, or Check Your Understanding bullet is omitted.</small>

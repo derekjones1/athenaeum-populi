@@ -450,12 +450,12 @@ rat bite fever
 {{< multiplechoice
   question="Which bacterial pathogen causes plague?"
   answer="*Yersinia pestis*"
-  hint="This gram-negative bacillus has three forms of disease named for how it spreads: bubonic, septicemic, and pneumonic."
+  hint="See the opening sentence of the Plague subsection."
 >}}
-*Bartonella quintana*
-*Rickettsia rickettsii*
 *Yersinia pestis*
 *Streptobacillus moniliformis*
+*Bartonella quintana*
+*Rickettsia rickettsii*
 {{< /multiplechoice >}}
 
 {{< textin
@@ -478,7 +478,7 @@ pneumonic plague is the module's one described exception, spreading between huma
 {{< multiplechoice
   question="Which of the following diseases is caused by a spirochete?"
   answer="relapsing fever"
-  hint="Its pathogens, *Borrelia recurrentis* and *B. hermsii*, are named alongside Lyme disease's *Borrelia burgdorferi* as spiral-shaped bacteria."
+  hint="The opening paragraph of Zoonotic Febrile Diseases names the one genus of spirochetes; then check which disease's subsection names that genus as its cause."
 >}}
 tularemia
 relapsing fever
@@ -501,7 +501,7 @@ epidemic typhus
   question="Lyme disease is characterized by a(n) ________ that forms at the site of infection."
   answer="bull's eye-rash"
   accept="bullseye rash|erythema migrans"
-  hint="This rash forms at the site of the tick bite in most early-localized cases and gets its name from its target-like, ringed appearance."
+  hint="See the Lyme Disease subsection's paragraph on the early-localized stage of symptoms."
 >}}
 
 {{< selfcheck question="What are the three forms of plague and how are they contracted?" hint="Each form is named for where in the body Yersinia pestis is introduced or localizes — the skin and lymph nodes, the bloodstream, or the lungs." >}}
@@ -522,13 +522,13 @@ epidemic typhus causes a high fever and body aches for about 2 weeks, with a ras
 murine typhus causes a rash, chills, headache, and fever for about 12 days, with some patients developing a cough or pneumonia-like symptoms
 {{< /selfcheck >}}
 
-{{< selfcheck question="How have human behaviors contributed to the spread or control of arthropod-borne vascular diseases?" hint="Look at the tick-removal guidance in the Tick Tips box and the improvements in sanitation, hygiene, and insecticide use described for epidemic typhus and plague." >}}
-The module describes both sides. On the spread side, poor sanitation and hygiene that allow lice infestations have driven outbreaks of louseborne diseases — trench fever and epidemic typhus were both associated with crowded, unsanitary conditions during World War I, and epidemic typhus still causes large outbreaks today in areas of poor sanitation such as refugee camps. Improperly removing an attached tick — using chemicals, hot objects, or squeezing its body — can also increase the risk of infection by causing the tick to release fluid or pathogens. On the control side, effective insecticides and improved personal hygiene have made epidemic typhus rare in the US; pasteurizing milk sharply reduced brucellosis; vaccinating animals has made brucellosis rare in the US; and the module's own tick-removal guidelines (blunt tweezers, avoiding crushing the tick, disinfecting the site) describe the correct human behavior for reducing exposure to tickborne pathogens.
+{{< selfcheck question="How have human behaviors contributed to the spread or control of arthropod-borne vascular diseases?" hint="Reread the Tick Tips box and the Epidemic Typhus, Plague, and Trench Fever subsections." >}}
+The module describes both sides. On the spread side, trench fever is today primarily limited to areas of the developing world where poor sanitation and hygiene lead to infestations of lice (e.g., overpopulated urban areas and refugee camps), and epidemic typhus has caused large outbreaks with high mortality rates during times of war or adversity — more than 3 million deaths on the Eastern front during World War I, and, in recent years, outbreaks such as the one in Burundi refugee camps in 1997. Improperly removing an attached tick can also add to the risk: using chemicals to dislodge an attached tick can cause the tick to release fluid, which can increase the chance of infection, and crushing the tick's body could release bacterial pathogens and increase exposure. On the control side, with the advent of effective insecticides and improved personal hygiene, epidemic typhus is now quite rare in the US; the overall number of deaths in the 1890s plague pandemic was lower than in prior outbreaks, perhaps because of improved sanitation and medical support; and the module's own tick-removal guidelines (blunt tweezers, avoiding crushing the tick, disinfecting the site) reduce the chances of exposure to pathogens.
 ===CHECKS===
-poor sanitation and hygiene that allow lice infestations have driven outbreaks of trench fever and epidemic typhus, including during World War I
-improperly removing an attached tick (chemicals, hot objects, or squeezing) can increase the risk of infection
-effective insecticides and improved personal hygiene have made epidemic typhus rare in the US
-pasteurizing milk and vaccinating animals have sharply reduced brucellosis, and correct tick-removal technique reduces exposure to tickborne pathogens
+poor sanitation and hygiene that lead to lice infestations keep trench fever present in parts of the developing world, and epidemic typhus has caused large outbreaks during times of war or adversity
+using chemicals to dislodge an attached tick can cause the tick to release fluid, which can increase the chance of infection, and crushing the tick's body could release bacterial pathogens
+effective insecticides and improved personal hygiene have made epidemic typhus rare in the US, and improved sanitation may have lowered deaths in the 1890s plague pandemic
+the module's own tick-removal guidelines reduce the chances of exposure to pathogens
 {{< /selfcheck >}}
 
 <small>

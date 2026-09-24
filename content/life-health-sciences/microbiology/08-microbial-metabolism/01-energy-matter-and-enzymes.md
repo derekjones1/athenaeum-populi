@@ -55,18 +55,16 @@ The strategies used to obtain both carbon and energy can be combined for the cla
 
 **Check Your Understanding**
 
-{{< sortbins question="Explain the difference between catabolism and anabolism. Sort each phrase under the pathway it describes." hint="Sort each phrase by whether it describes molecules being broken down or being built up." >}}
+{{< sortbins question="Explain the difference between catabolism and anabolism. Sort each phrase under the pathway it describes." hint="Reread the section's opening paragraph, before the first subheading." >}}
 {"bins": ["Catabolism", "Anabolism"],
  "items": [
   {"label": "Breaks down complex molecules into simpler ones", "bin": 0},
   {"label": "Builds simple molecular building blocks into more complex molecules", "bin": 1},
-  {"label": "An exergonic pathway", "bin": 0},
-  {"label": "An endergonic pathway", "bin": 1},
   {"label": "Releases energy that is harvested to produce high-energy molecules", "bin": 0},
   {"label": "Fueled by the use of cellular energy", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< sortbins question="Explain the difference between autotrophs and heterotrophs. Sort each phrase under the type of organism it describes." hint="Sort each phrase by whether its carbon source is inorganic or organic." >}}
+{{< sortbins question="Explain the difference between autotrophs and heterotrophs. Sort each phrase under the type of organism it describes." hint="Reread the first paragraph of the Classification by Carbon and Energy Source subsection and the table that ends it." >}}
 {"bins": ["Autotrophs", "Heterotrophs"],
  "items": [
   {"label": "Hydrogen-, sulfur-, iron-, nitrogen-, and carbon monoxide-oxidizing bacteria, which use an inorganic carbon source", "bin": 0},
@@ -95,7 +93,7 @@ Exergonic reactions are coupled to endergonic ones, making the combination favor
 
 **Check Your Understanding**
 
-{{< multiplechoice question="What is the function of an electron carrier?" answer="It binds to and shuttles high-energy electrons between compounds in metabolic pathways." hint="Distinguish the role of these molecules from what enzymes, ATP, and inhibitors each do." >}}
+{{< multiplechoice question="What is the function of an electron carrier?" answer="It binds to and shuttles high-energy electrons between compounds in metabolic pathways." hint="Reread the first paragraph of the Energy Carriers subsection." >}}
 It binds to and shuttles high-energy electrons between compounds in metabolic pathways.
 It lowers the activation energy needed for a reaction to proceed.
 It stores chemical energy safely in high-energy phosphate bonds for later use.
@@ -108,7 +106,7 @@ A substance that helps speed up a chemical reaction is a **catalyst**. Catalysts
 
 An enzyme functions by lowering the **activation energy** of a chemical reaction inside the cell. Activation energy is the energy needed to form or break chemical bonds and convert reactants to products (shown below). Enzymes lower the activation energy by binding to the reactant molecules and holding them in such a way as to speed up the reaction.
 
-{{< mediafigure src="microbiology/OSC_Microbio_08_01_Enzymes" kind="diagram" alt="A line graph of energy (y-axis) versus reaction path (x-axis) comparing a reaction with and without a catalyst. Both curves start at the same flat 'reactants' level, rise to a peak, then drop to the same flat 'products' level, with products lower than reactants (the gap marked delta H). The catalyzed (red, dashed) curve's peak is much lower than the uncatalyzed (green, solid) curve's peak, showing a smaller activation energy." longdesc="A green solid line traces the reaction without a catalyst: a flat segment labeled 'reactants,' a rise to a tall peak — the vertical distance from the reactants level to this peak is labeled 'activation energy (X→Y)' — then a drop to a lower flat segment labeled 'products.' The vertical distance from the products level back up to the same peak is labeled 'activation energy (Y→X),' and the vertical distance between the reactants and products levels is labeled delta H. A red dashed line traces the same reaction with a catalyst: it starts and ends at the same reactants and products levels, but its peak is much lower than the green line's peak, showing a smaller activation energy for the catalyzed reaction." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_08_01_Enzymes" kind="diagram" alt="A line graph of energy (y-axis) versus reaction path (x-axis) comparing a reaction with and without a catalyst. Both curves start at the same flat 'reactants' level, rise to a peak, then fall to the same flat 'products' level, which sits higher than the reactants level (the gap marked delta H). The catalyzed (red, dashed) curve's peak is much lower than the uncatalyzed (green, solid) curve's peak, showing a smaller activation energy." longdesc="A green solid line traces the reaction without a catalyst: a flat segment labeled 'reactants,' a rise to a tall peak, then a fall to a flat segment labeled 'products' that stays above the reactants level. A red dashed line traces the same reaction with a catalyst, starting and ending at the same reactants and products levels but rising only to a lower peak. At the 'activation energy (X→Y)' label, two double-headed arrows rise from the shared reactants level: a taller green one reaching the green curve's peak and a shorter red one reaching the red curve's lower peak, directly comparing the two activation energies. The same pairing repeats at 'activation energy (Y→X),' with both arrows rising instead from the shared products level. A third pair of arrows, one green and one red of the same length, spans the rise from the lower reactants level up to the higher products level and is labeled delta H. A key below the graph identifies the solid green line as Reaction without catalyst and the dashed red line as Reaction with catalyst." >}}
 Enzymes lower the activation energy of a chemical reaction.
 {{< /mediafigure >}}
 
@@ -128,13 +126,13 @@ Coenzymes are organic helper molecules that are required for enzyme action. Like
 
 Some cofactors and coenzymes, like coenzyme A (CoA), often bind to the enzyme's active site, aiding in the chemistry of the transition of a substrate to a product (shown below). In such cases, an enzyme lacking a necessary cofactor or coenzyme is called an **apoenzyme** and is inactive. Conversely, an enzyme with the necessary associated cofactor or coenzyme is called a **holoenzyme** and is active. NADH and ATP are also both examples of commonly used coenzymes that provide high-energy electrons or phosphate groups, respectively, which bind to enzymes, thereby activating them.
 
-{{< mediafigure src="microbiology/OSC_Microbio_08_01_ApoHolo" kind="diagram" alt="Two numbered panels show a cofactor or coenzyme, drawn as a small purple shape, binding to a notch in a gray enzyme. Panel 1: the purple shape approaches the enzyme's notch, which does not yet match a substrate. Panel 2: with the purple cofactor or coenzyme now bound in the notch, a large green substrate fits against the enzyme's new combined surface." longdesc="1. The apoenzyme becomes active by the binding of a coenzyme or cofactor to the enzyme: a small purple shape moves toward a notch in the gray enzyme that does not yet match any substrate. 2. The holoenzyme is formed once the cofactor or coenzyme is bound in the enzyme's active site: with the purple piece now seated in the notch, a large green substrate shape fits against the enzyme's new combined surface." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_08_01_ApoHolo" kind="diagram" alt="Two numbered panels show a cofactor or coenzyme, drawn as a small purple shape, binding to a notch in a gray enzyme. Panel 1: the purple shape approaches the enzyme's notch, which does not yet match a substrate. An arrow labeled activation leads to panel 2: with the purple cofactor or coenzyme now bound in the notch, a large green hexagonal substrate is drawn just above the enzyme's opening." longdesc="1. The apoenzyme becomes active by the binding of a coenzyme or cofactor to the enzyme: a small purple shape moves toward a notch in the gray enzyme that does not yet match any substrate. 2. The holoenzyme is formed once the cofactor or coenzyme is bound in the enzyme's active site: with the purple piece now seated in the notch, a large green hexagonal substrate labeled substrate is drawn just above the enzyme's opening, not yet bound. An arrow labeled activation joins the two panels." >}}
 The binding of a coenzyme or cofactor to an apoenzyme is often required to form an active holoenzyme.
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
-{{< selfcheck question="What role do enzymes play in a chemical reaction?" hint="Think about what an enzyme lowers, what it binds, and where it binds it." >}}
+{{< selfcheck question="What role do enzymes play in a chemical reaction?" hint="Reread the first three paragraphs of the Enzyme Structure and Function subsection." >}}
 An enzyme is a catalyst — it speeds up a chemical reaction inside the cell without being used up or changed itself, so it is reusable. It plays this role by lowering the reaction's activation energy, the energy needed to form or break chemical bonds and convert reactants to products. An enzyme lowers this activation energy by binding to the reactant molecules, called substrates, at its active site and holding them in a way that speeds up the reaction; this induced-fit binding brings the reaction to its transition state more readily than it could reach on its own.
 ===CHECKS===
 speeds up a chemical reaction without being used up or changed itself
@@ -157,13 +155,13 @@ Allosteric control is an important mechanism of regulation of metabolic pathways
 Enzyme activity can be regulated by either competitive inhibitors, which bind to the active site, or noncompetitive inhibitors, which bind to an allosteric site.
 {{< /mediafigure >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_08_01_InhAct" kind="diagram" alt="Two-part diagram of enzyme regulation. Part (a): two side-by-side pairs of enzyme drawings compare allosteric inhibition and allosteric activation, each shown before and after a pink square (inhibitor or activator) binds the enzyme's allosteric site, changing the shape of its active site. Part (b): a chain of three gray enzymes converts a substrate through two intermediate substrates to an end product, with the end product looping back along a red arrow to block the first enzyme from binding new substrate." longdesc="(a) Left pair, allosteric inhibition: before binding, the enzyme's active site matches its substrate; after a pink square inhibitor binds the allosteric site, the active site's shape changes so the substrate can no longer fit. Right pair, allosteric activation: before binding, the enzyme's altered active site does not match the substrate; after a pink square activator binds the allosteric site, the active site's shape changes so the substrate now fits. (b) A row of three enzymes reads left to right: enzyme 1 converts a substrate into intermediate substrate A; enzyme 2 converts intermediate substrate A into intermediate substrate B; enzyme 3 converts intermediate substrate B into the end product. A red arrow carries the end product back from enzyme 3 all the way to enzyme 1, where it binds and blocks the original substrate from binding — the feedback inhibition of the pathway." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_08_01_InhAct" kind="diagram" alt="Two-part diagram of enzyme regulation. Part (a): two side-by-side pairs of enzyme drawings compare allosteric inhibition and allosteric activation, each shown before and after a pink square (inhibitor or activator) binds the enzyme's allosteric site, changing the shape of its active site. Part (b): a chain of three gray enzymes converts a substrate through two intermediate substrates to an end product, with the end product looping back along a red arrow to block the first enzyme from binding new substrate." longdesc="(a) Left pair, allosteric inhibition: before binding, the enzyme's active site matches its substrate; after a pink square inhibitor binds the allosteric site, the active site's shape changes so the substrate can no longer fit. Right pair, allosteric activation: before binding, the enzyme's altered active site does not match the substrate; after a pink square activator binds the allosteric site, the active site's shape changes so the substrate now fits. (b) A row of three enzymes reads left to right, enzyme 1 drawn twice, empty and then with the substrate bound: enzyme 1 converts a substrate into intermediate substrate A; enzyme 2 converts intermediate substrate A into intermediate substrate B; enzyme 3 converts intermediate substrate B into the end product. Above the row's own enzyme 1, a separate drawing of the same enzyme 1 shows the substrate approaching and being turned away (a hollow red arrow, labeled 'inhibition of the pathway'), with a small square docked at its allosteric site. A long red arrow carries the end product back from enzyme 3, above the whole row, to that small square, delivering the end product to this second enzyme-1 drawing and blocking the substrate from binding — the feedback inhibition of the pathway." >}}
 (a) Binding of an allosteric inhibitor reduces enzyme activity, but binding of an allosteric activator increases enzyme activity. (b) Feedback inhibition, where the end product of the pathway serves as a noncompetitive inhibitor to an enzyme early in the pathway, is an important mechanism of allosteric regulation in cells.
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain the difference between a competitive inhibitor and a noncompetitive inhibitor." hint="Compare where each type of inhibitor binds on the enzyme and how much of it is needed relative to the substrate." >}}
+{{< selfcheck question="Explain the difference between a competitive inhibitor and a noncompetitive inhibitor." hint="Reread the first two paragraphs of the Enzyme Inhibitors subsection." >}}
 A competitive inhibitor is a molecule similar enough to a substrate that it can compete with the substrate for binding to the enzyme's active site, simply blocking the substrate from binding there; for a competitive inhibitor to be effective, its concentration needs to be approximately equal to the substrate concentration. A noncompetitive (allosteric) inhibitor instead binds to the enzyme at an allosteric site, a location other than the active site, and still blocks substrate binding by inducing a conformational change that reduces the active site's affinity for the substrate; because only one inhibitor molecule is needed per enzyme for effective inhibition, the concentration of inhibitor needed for noncompetitive inhibition is typically much lower than the substrate concentration.
 ===CHECKS===
 a competitive inhibitor binds to the enzyme's active site, blocking the substrate from binding there
@@ -230,83 +228,83 @@ a noncompetitive inhibitor induces a conformational change that reduces the acti
 
 ### Define and describe metabolism
 
-{{< textin question="Processes in which cellular energy is used to make complex molecules from simpler ones are described as ________." answer="anabolic" hint="This is the adjective form of the endergonic pathway that builds molecules up rather than breaking them down." >}}
+{{< textin question="Processes in which cellular energy is used to make complex molecules from simpler ones are described as ________." answer="anabolic" accept="anabolism" hint="Reread the section's opening paragraph, before the first subheading." >}}
 
-{{< textin question="Exergonic pathways that break down complex molecules into simpler ones are called ________." answer="catabolism" hint="Contrast this with the pathway that uses cellular energy to build complex molecules from simpler ones." >}}
+{{< textin question="Exergonic pathways that break down complex molecules into simpler ones are called ________." answer="catabolism" accept="catabolic pathways|catabolic" hint="Reread the section's opening paragraph, before the first subheading." >}}
 
-{{< textin question="All of the chemical reactions inside a cell are collectively known as a cell's ________." answer="metabolism" hint="This single word names the whole balance of building-up and breaking-down reactions this section describes." >}}
+{{< textin question="A chemical reaction that requires energy beyond activation energy to occur is called a(n) ________." answer="endergonic reaction" accept="endergonic" hint="Reread the seventh Summary bullet." >}}
 
 ### Compare and contrast autotrophs and heterotrophs
 
-{{< multiplechoice question="Which of the following is an organism that obtains its energy from the transfer of electrons originating from chemical compounds and its carbon from an inorganic source?" answer="chemoautotroph" hint="Match the chemo- prefix to its energy source and the auto- prefix to its carbon source." >}}
+{{< textin question="________ obtain their energy from light." answer="phototrophs" hint="Reread the third Summary bullet." >}}
+
+{{< textin question="Organotrophs use organic molecules, and ________ use inorganic chemicals." answer="lithotrophs" hint="Reread the second paragraph of the Classification by Carbon and Energy Source subsection." >}}
+
+{{< multiplechoice question="Which of the following is an organism that obtains its energy from the transfer of electrons originating from chemical compounds and its carbon from an inorganic source?" answer="chemoautotroph" hint="Reread the table at the end of the Classification by Carbon and Energy Source subsection." >}}
 chemoautotroph
 chemoheterotroph
 photoheterotroph
 photoautotroph
 {{< /multiplechoice >}}
 
-{{< textin question="An organism that converts inorganic carbon dioxide into organic carbon compounds is called a(n) ________." answer="autotroph" hint="Plants and cyanobacteria are well-known examples." >}}
-
-{{< textin question="An organism that relies on complex organic carbon compounds provided by other organisms, rather than making its own, is called a(n) ________." answer="heterotroph" hint="Humans and many prokaryotes, including E. coli, are examples." >}}
-
 ### Describe the importance of oxidation-reduction reactions in metabolism
 
-{{< textin question="The loss of an electron from a molecule is called ________." answer="oxidation" hint="Contrast this with the paired process that adds an electron to a molecule." >}}
+{{< textin question="The loss of an electron from a molecule is called ________." answer="oxidation" accept="oxidation reaction" hint="Reread the paragraph under the section's second subheading." >}}
 
-{{< multiplechoice question="In cells, can an oxidation reaction happen in the absence of a reduction reaction? Explain." answer="No, oxidation and reduction always occur together because the electrons removed from one molecule must be accepted by another." hint="Think about where the electrons removed from an oxidized molecule must go." >}}
+{{< textin question="Because electrons move from one molecule to another, electron loss and electron gain occur in tandem; these pairs of reactions are called ________." answer="redox reactions" accept="redox|oxidation-reduction reactions|oxidation-reduction" hint="Reread the last sentence of the paragraph under the section's second subheading." >}}
+
+{{< multiplechoice question="In cells, can an oxidation reaction happen in the absence of a reduction reaction? Explain." answer="No, oxidation and reduction always occur together because the electrons removed from one molecule must be accepted by another." hint="Reread the paragraph under the section's second subheading." >}}
 No, oxidation and reduction always occur together because the electrons removed from one molecule must be accepted by another.
 Yes, a molecule can lose electrons without any other molecule accepting them.
 {{< /multiplechoice >}}
 
-{{< textin question="A chemical reaction that adds electrons to acceptor molecules, leaving them reduced, is called a ________." answer="reduction reaction" hint="This is the paired opposite of the reaction that removes electrons from a donor molecule." >}}
-
 ### Describe why ATP, FAD, NAD⁺, and NADP⁺ are important in a cell
 
-{{< multiplechoice question="Which of the following molecules is reduced?" answer="NADPH" hint="A reduced molecule is the one already carrying the extra electrons — look for the form with the added H." >}}
+{{< multiplechoice question="Which of the following molecules is reduced?" answer="NADPH" hint="Reread the first paragraph of the Energy Carriers subsection." >}}
 NAD⁺
 FAD
 O₂
 NADPH
 {{< /multiplechoice >}}
 
-{{< textin question="FAD/FADH₂, NAD⁺/NADH, and NADP⁺/NADPH are important ________." answer="electron carriers" hint="Look at this subsection's title for the general name these molecules share." >}}
+{{< textin question="FAD/FADH₂, NAD⁺/NADH, and NADP⁺/NADPH are important ________." answer="electron carriers" accept="mobile electron carriers" hint="Reread the first paragraph of the Energy Carriers subsection." >}}
 
-{{< textin question="The compound often called the cell's “energy currency,” which safely stores chemical energy in its two high-energy phosphate bonds, is ________." answer="ATP" accept="adenosine triphosphate" hint="Its structure is built from three linked phosphate groups on a nucleotide base." >}}
+{{< textin question="The nucleotide derivative and relative of ATP that contains only one high-energy phosphate bond is ________." answer="ADP" accept="adenosine diphosphate" hint="Reread the second paragraph of the Energy Carriers subsection." >}}
 
 ### Identify the structure and structural components of an enzyme
 
-{{< multiplechoice question="Enzymes work by which of the following?" answer="reducing the activation energy" hint="Compare the height of the energy barrier a reaction must cross with and without a catalyst." >}}
+{{< multiplechoice question="Enzymes work by which of the following?" answer="reducing the activation energy" hint="Reread the second paragraph of the Enzyme Structure and Function subsection and the graph after it." >}}
 increasing the activation energy
 reducing the activation energy
 making exergonic reactions endergonic
 making endergonic reactions exergonic
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="Which of the following are organic molecules that help enzymes work correctly?" answer="coenzymes" hint="Distinguish the organic helper molecules from the inorganic ions and from the enzyme states that result from binding either one." >}}
+{{< multiplechoice question="Which of the following are organic molecules that help enzymes work correctly?" answer="coenzymes" hint="Reread the paragraphs on helper molecules in the Enzyme Structure and Function subsection." >}}
 cofactors
 coenzymes
 holoenzymes
 apoenzymes
 {{< /multiplechoice >}}
 
-{{< textin question="The part of an enzyme to which a substrate binds is called the ________." answer="active site" hint="This is where the substrate fits, much like a puzzle piece." >}}
+{{< textin question="The part of an enzyme to which a substrate binds is called the ________." answer="active site" hint="Reread the third paragraph of the Enzyme Structure and Function subsection." >}}
 
 ### Describe the differences between competitive and noncompetitive enzyme inhibitors
 
-{{< multiplechoice question="To which of the following does a competitive inhibitor most structurally resemble?" answer="the substrate" hint="A competitive inhibitor works by directly blocking the same binding location a substrate would use." >}}
+{{< multiplechoice question="To which of the following does a competitive inhibitor most structurally resemble?" answer="the substrate" hint="Reread Enzyme Inhibitors." >}}
 the active site
 the allosteric site
 the substrate
 a coenzyme
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="Competitive inhibitors bind to allosteric sites." answer="False" hint="Compare where a competitive inhibitor binds with where a noncompetitive inhibitor binds." >}}
+{{< multiplechoice question="Competitive inhibitors bind to allosteric sites." answer="False" hint="Reread the first two paragraphs of the Enzyme Inhibitors subsection." >}}
 True
 False
 {{< /multiplechoice >}}
 
-{{< textin question="The use of a pathway's own product to regulate its own further production is called ________." answer="feedback inhibition" hint="This mechanism lets the end of a pathway signal back to its own beginning." >}}
+{{< textin question="The use of a pathway's own product to regulate its own further production is called ________." answer="feedback inhibition" hint="Reread the paragraph on allosteric control in the Enzyme Inhibitors subsection." >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 8.1: Energy, Matter, and Enzymes](https://openstax.org/books/microbiology/pages/8-1-energy-matter-and-enzymes) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all eight figures are re-encoded as WebP and rendered as mediafigures with explicit `kind="diagram"`, overriding the media manifest's file-extension guess of "photo" on every one (they are drawn schematic diagrams, not photographs); alts are rewritten from the served images, and the reaction-energy graph, the four-step induced-fit diagram, the two-step apoenzyme/holoenzyme diagram, and the two-part inhibition/activation/feedback diagram each carry a `longdesc` walking their numbered steps or panels in order, since their captions do not name the steps; the module prints "nicotine adenine dinucleotide phosphate" twice in the body (the compound is nicotinamide adenine dinucleotide phosphate, and the book's own Glossary appendix headword carries the same misspelling), corrected here to "nicotinamide" at both occurrences; the module's four-row classification table (Chemotrophs and Phototrophs each spanning two rows) is transcribed as a Markdown table from the table's own cells, not from its `summary` attribute, and is represented by two sort-into-bins activities in the body Check Your Understanding — the second, sorting the four nutritional types' own energy/carbon-source examples into Autotrophs and Heterotrophs, is built from the table, and the first, sorting catabolism and anabolism by their own distinguishing sentences, is built from the same subsection's prose; the Clinical Focus box is rendered as a callout, its "Jump to the next Clinical Focus box" link replaced by a plain sentence naming that the case continues in Fermentation; of the section's five body Check Your Understanding bullets, two (autotrophs/heterotrophs and the electron carrier's function) are graded from the module's own table and defining sentence, and three (catabolism/anabolism, the enzyme's role in a reaction, and competitive versus noncompetitive inhibitors) are graded or kept as self-checks under the same rule — the enzyme's-role and inhibitor-contrast bullets remain self-checks because their honest answers assemble several of the module's sentences; the section's five Multiple Choice, three Fill in the Blank, and one True/False item (rendered as a two-option multiple choice, `True` then `False`) keep the source's own keys and option order; of the section's two unkeyed Short Answer questions, the oxidation/reduction question is graded as a multiple choice from the module's own "oxidation and reduction occur in tandem" sentence, and the electron-carrier-function question is omitted because it duplicates the body Check Your Understanding bullet asking the same thing, reworded; eight filler `textin` items (two cloze/term-recall items per objective for metabolism, autotrophs/heterotrophs, and the electron carriers, one for oxidation-reduction, and one for enzyme inhibitors) round out the Practice groups from the module's own defining sentences and this section's Key terms; key terms are compiled from the module's 43 defined-term elements and the book's Glossary appendix, merged to 38 bullets — the module tags "nicotinamide adenine dinucleotide," "NAD⁺/NADH," "nicotinamide adenine dinucleotide phosphate," "NADP⁺," "NADPH," "flavin adenine dinucleotide," "FAD," and "FADH₂" as eight separate terms in one passage, written here as three merged bullets naming the full compound and its abbreviation; five bullets (the three merged electron-carrier bullets plus inorganic phosphate [Pᵢ] and pyrophosphate [PPᵢ]) are sentence-derived because the module's own defining sentences supply the meaning rather than a directly matching Glossary entry; no source exercise was omitted beyond the one Short Answer question named above.</small>
+<small>This section is adapted from [Microbiology, Section 8.1: Energy, Matter, and Enzymes](https://openstax.org/books/microbiology/pages/8-1-energy-matter-and-enzymes) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all eight figures are re-encoded as WebP and rendered as mediafigures with explicit `kind="diagram"`, overriding the media manifest's file-extension guess of "photo" on every one (they are drawn schematic diagrams, not photographs); alts are rewritten from the served images, and the reaction-energy graph, the four-step induced-fit diagram, the two-step apoenzyme/holoenzyme diagram, and the two-part inhibition/activation/feedback diagram each carry a `longdesc` walking their numbered steps or panels in order, since their captions do not name the steps; the module prints "nicotine adenine dinucleotide phosphate" twice in the body (the compound is nicotinamide adenine dinucleotide phosphate, and the book's own Glossary appendix headword carries the same misspelling), corrected here to "nicotinamide" at both occurrences; the module's four-row classification table (Chemotrophs and Phototrophs each spanning two rows) is transcribed as a Markdown table from the table's own cells, not from its `summary` attribute, and is represented by two sort-into-bins activities in the body Check Your Understanding — the second, sorting the four nutritional types' own energy/carbon-source examples into Autotrophs and Heterotrophs, is built from the table, and the first, sorting catabolism and anabolism by their own distinguishing sentences, is built from the same subsection's prose (it carries no "exergonic pathway"/"endergonic pathway" rows, which would print the key of the Practice endergonic-reaction blank); the Clinical Focus box is rendered as a callout, its "Jump to the next Clinical Focus box" link replaced by a plain sentence naming that the case continues in Fermentation; of the section's five body Check Your Understanding bullets, two (autotrophs/heterotrophs and the electron carrier's function) are graded from the module's own table and defining sentence, and three (catabolism/anabolism, the enzyme's role in a reaction, and competitive versus noncompetitive inhibitors) are graded or kept as self-checks under the same rule — the enzyme's-role and inhibitor-contrast bullets remain self-checks because their honest answers assemble several of the module's sentences; the section's five Multiple Choice, three Fill in the Blank, and one True/False item (rendered as a two-option multiple choice, `True` then `False`) keep the source's own keys and option order; of the section's two unkeyed Short Answer questions, the oxidation/reduction question is graded as a multiple choice from the module's own "oxidation and reduction occur in tandem" sentence, and the electron-carrier-function question is omitted because it duplicates the body Check Your Understanding bullet asking the same thing, reworded; eight filler `textin` items (two per objective for metabolism, the carbon- and energy-source classifications, and the energy carriers, one for oxidation-reduction, and one for enzyme inhibitors) round out the Practice groups from the module's own defining sentences, its Summary, and this section's Key terms; in the carbon-and-energy-source group the two recall items are placed ahead of the source Multiple Choice item; key terms are compiled from the module's 43 defined-term elements and the book's Glossary appendix, merged to 38 bullets — the module tags "nicotinamide adenine dinucleotide," "NAD⁺/NADH," "nicotinamide adenine dinucleotide phosphate," "NADP⁺," "NADPH," "flavin adenine dinucleotide," "FAD," and "FADH₂" as eight separate terms in one passage, written here as three merged bullets naming the full compound and its abbreviation; five bullets (the three merged electron-carrier bullets plus inorganic phosphate [Pᵢ] and pyrophosphate [PPᵢ]) are sentence-derived because the module's own defining sentences supply the meaning rather than a directly matching Glossary entry; no source exercise was omitted beyond the one Short Answer question named above. Two overlaps are kept with every source item verbatim: the source competitive-inhibitor Multiple Choice prints "the active site" among its options, the key of the source enzyme-structure Fill in the Blank in the group above it (the blank comes first), and the body Check Your Understanding question "What is the function of an electron carrier?" prints the key of the Practice electron-carriers blank, a term the body text teaches in the same paragraph.</small>

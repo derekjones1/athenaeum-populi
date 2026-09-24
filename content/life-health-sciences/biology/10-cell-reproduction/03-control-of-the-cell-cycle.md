@@ -32,7 +32,7 @@ Whatever the source of the message, the cell receives the signal, and a series o
 
 It is essential that the daughter cells produced be exact duplicates of the parent cell. Mistakes in the duplication or distribution of the chromosomes lead to mutations that may be passed forward to every new cell produced from an abnormal cell. To prevent a compromised cell from continuing to divide, there are internal control mechanisms that operate at three main **cell-cycle checkpoints**: A checkpoint is one of several points in the eukaryotic cell cycle at which the progression of a cell to the next stage in the cycle can be halted until conditions are favorable. These checkpoints occur near the end of G₁, at the G₂/M transition, and during metaphase (below).
 
-{{< mediafigure src="biology/Figure_10_03_01-7556" kind="diagram" eager="true" alt="A circular diagram of the cell cycle divided into four labeled phases — G₁ (cell growth), S (DNA synthesis), G₂ (cell growth), and a wedge-shaped mitotic phase — with red arrows tracing the clockwise direction of progression and three black checkpoint boxes marking the G₁ checkpoint, the G₂ checkpoint, and the M checkpoint at the start of the mitotic phase, leading to an arrow labeled 'Formation of 2 daughter cells.'" longdesc="Reading clockwise from the bottom: a checkpoint box labeled 'G₁ checkpoint (restriction)' sits between the G₁ and S segments; the cell then moves through S (DNA synthesis) to a checkpoint box labeled 'G₂ checkpoint' between G₂ and the mitotic phase; a checkpoint box labeled 'M checkpoint' sits at the start of the wedge-shaped mitotic phase, which is bracketed at the top with the label 'Mitotic phase'; an arrow leaving the wedge is labeled 'Formation of 2 daughter cells.'" >}}
+{{< mediafigure src="biology/Figure_10_03_01-7556" kind="diagram" eager="true" alt="A circular diagram of the cell cycle divided into four labeled phases — G₁ (cell growth), S (DNA synthesis), G₂ (cell growth), and a wedge-shaped mitotic phase — with red arrows tracing the clockwise direction of progression and three black checkpoint boxes marking the G₁ checkpoint, the G₂ checkpoint, and the M checkpoint partway through the mitotic phase, leading to an arrow labeled 'Formation of 2 daughter cells.'" longdesc="Reading clockwise from the bottom: a checkpoint box labeled 'G₁ checkpoint (restriction)' sits between the G₁ and S segments; the cell then moves through S (DNA synthesis) to a checkpoint box labeled 'G₂ checkpoint' between G₂ and the mitotic phase; a checkpoint box labeled 'M checkpoint' sits partway through the narrow orange mitotic-phase wedge, straddling the line that divides it into two slivers, which is bracketed at the top with the label 'Mitotic phase'; an arrow leaving the wedge is labeled 'Formation of 2 daughter cells.'" >}}
 The cell cycle is controlled at three checkpoints. The integrity of the DNA is assessed at the G₁ checkpoint. Proper chromosome duplication is assessed at the G₂ checkpoint. Attachment of each kinetochore to a spindle fiber is assessed at the M checkpoint.
 {{< /mediafigure >}}
 
@@ -62,7 +62,7 @@ In addition to the internally controlled checkpoints, there are two groups of in
 
 Two groups of proteins, called **cyclins** and **cyclin-dependent kinases** (Cdks), are termed positive regulators. They are responsible for the progress of the cell through the various checkpoints. The levels of the four cyclin proteins fluctuate throughout the cell cycle in a predictable pattern (below). Increases in the concentration of cyclin proteins are triggered by both external and internal signals. After the cell moves to the next stage of the cell cycle, the cyclins that were active in the previous stage are degraded by cytoplasmic enzymes, as shown below.
 
-{{< mediafigure src="biology/Figure_10_03_02-820d" kind="diagram" alt="A line graph titled 'Cyclin Expression Cycle' plotting the relative concentration of four cyclin proteins against the phases of the cell cycle (G₁, S, G₂, and mitosis) on the x-axis, with each cyclin's curve rising to a different, overlapping peak across the cycle." longdesc="Four overlapping curves, left to right across the phase axis. Cyclin D rises from the start of G₁ to a broad peak spanning G₁ and S phase, then declines gradually through G₂ and mitosis. Cyclin E rises during G₁ and peaks near the G₁/S boundary, falling away during S phase. Cyclin A rises during S phase and peaks in G₂, falling during mitosis. Cyclin B rises during G₂, peaks at the start of mitosis, and falls sharply before mitosis ends." >}}
+{{< mediafigure src="biology/Figure_10_03_02-820d" kind="diagram" alt="A line graph titled 'Cyclin Expression Cycle' plotting the relative concentration of four cyclin proteins against the phases of the cell cycle (G₁, S, G₂, and mitosis) on the x-axis, with each cyclin's curve rising to a different, overlapping peak across the cycle." longdesc="The y-axis is labeled Concentration; dotted vertical lines divide the x-axis into G₁ Phase, S Phase, G₂ Phase, and Mitosis. Four overlapping curves, left to right across the phase axis. Cyclin D rises from the start of G₁ to a broad peak spanning G₁ and S phase, then declines gradually through G₂ and mitosis. Cyclin E rises during G₁ and peaks near the G₁/S boundary, falling away during S phase. Cyclin A starts rising late in G₁, climbs through S phase, and peaks early in G₂, falling to zero early in mitosis. Cyclin B starts rising at the G₁/S boundary, climbs through S and G₂, peaks just after mitosis begins, and falls sharply before mitosis ends." >}}
 The concentrations of cyclin proteins change throughout the cell cycle. There is a direct correlation between cyclin accumulation and the three major cell-cycle checkpoints. Also note the sharp decline of cyclin levels following each checkpoint (the transition between phases of the cell cycle), as cyclin is degraded by cytoplasmic enzymes. (credit: modification of work by "WikiMiMa"/Wikimedia Commons)
 {{< /mediafigure >}}
 
@@ -90,7 +90,7 @@ Rb, which largely monitors cell size, exerts its regulatory influence on other p
 Rb halts the cell cycle and releases its hold in response to cell growth.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Rb and other proteins that negatively regulate the cell cycle are sometimes called tumor suppressors. Why do you think the name tumor suppressor might be appropriate for these proteins?" hint="Think about what happens to cell division when a protein that normally halts the cycle stops working." >}}
+{{< selfcheck question="Rb and other proteins that negatively regulate the cell cycle are sometimes called tumor suppressors. Why do you think the name tumor suppressor might be appropriate for these proteins?" hint="Reread Negative Regulation of the Cell Cycle." >}}
 Rb and other negative regulatory proteins control cell division and therefore prevent the formation of tumors. Mutations that prevent these proteins from carrying out their function can result in cancer.
 ===CHECKS===
 negative regulatory proteins control cell division
@@ -115,10 +115,16 @@ Each step of the cell cycle is monitored by internal controls called checkpoints
 
 ### Understand how the cell cycle is controlled by mechanisms that are both internal and external to the cell
 
+{{< textin
+  question="Among the external events the section names, ________ of cells can inhibit cell division, whereas a cell's growing size can initiate it."
+  answer="crowding"
+  hint="Reread Regulation of the Cell Cycle by External Events."
+>}}
+
 {{< multiplechoice
   question="At which of the cell-cycle checkpoints do external forces have the greatest influence?"
   answer="G1 checkpoint"
-  hint="Think about which checkpoint is most associated with signals like growth factors arriving from outside the cell."
+  hint="Reread the three subsections under Regulation at Internal Checkpoints."
 >}}
 G1 checkpoint
 G2 checkpoint
@@ -126,16 +132,10 @@ M checkpoint
 G0 checkpoint
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A mechanism that monitors a eukaryotic cell's preparedness to advance through the various cell-cycle stages is called a cell-cycle ________."
-  answer="checkpoint"
-  hint="Three of these occur in the cell cycle: near the end of G1, at the G2/M transition, and during metaphase."
->}}
-
 {{< multiplechoice
   question="According to the section, a lack of human growth hormone (HGH) can inhibit cell division, resulting in ________."
   answer="dwarfism."
-  hint="Too little of the growth-promoting hormone stunts growth; too much produces the opposite condition."
+  hint="Reread Regulation of the Cell Cycle by External Events."
 >}}
 gigantism.
 a multinucleate zygote.
@@ -148,7 +148,7 @@ a shortened cell cycle.
 {{< multiplechoice
   question="What is the main prerequisite for clearance at the G2 checkpoint?"
   answer="accurate and complete DNA replication"
-  hint="The G2 checkpoint's most important role is confirming that every chromosome was correctly copied."
+  hint="Reread the G₂ Checkpoint subsection."
 >}}
 cell has reached a sufficient size
 an adequate stockpile of nucleotides
@@ -159,7 +159,7 @@ proper attachment of mitotic spindle fibers to kinetochores
 {{< multiplechoice
   question="If the M checkpoint is not cleared, what stage of mitosis will be blocked?"
   answer="anaphase"
-  hint="The M checkpoint confirms that every kinetochore is anchored to spindle fibers before the sister chromatids separate."
+  hint="Reread the M Checkpoint subsection."
 >}}
 prophase
 prometaphase
@@ -167,7 +167,7 @@ metaphase
 anaphase
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the general conditions that must be met at each of the three main cell-cycle checkpoints." hint="Work through the checkpoints in order — G1, G2, and M — and name what each one confirms before letting the cell proceed." >}}
+{{< selfcheck question="Describe the general conditions that must be met at each of the three main cell-cycle checkpoints." hint="Reread the three subsections under Regulation at Internal Checkpoints." >}}
 The G1 checkpoint monitors adequate cell growth, the state of the genomic DNA, adequate stores of energy, and materials for S phase. At the G2 checkpoint, DNA is checked to ensure that all chromosomes were duplicated and that there are no mistakes in newly synthesized DNA. Additionally, cell size and energy reserves are evaluated. The M checkpoint confirms the correct attachment of the mitotic spindle fibers to the kinetochores.
 ===CHECKS===
 the G1 checkpoint monitors adequate cell growth
@@ -180,7 +180,7 @@ the M checkpoint confirms the correct attachment of the mitotic spindle fibers t
 {{< multiplechoice
   question="Which protein is a positive regulator that phosphorylates other proteins when activated?"
   answer="cyclin-dependent kinase (Cdk)"
-  hint="Positive regulators advance the cell cycle; only one of these options is itself an enzyme that adds phosphate groups to other proteins."
+  hint="Reread Positive Regulation of the Cell Cycle."
 >}}
 p53
 retinoblastoma protein (Rb)
@@ -191,7 +191,7 @@ cyclin-dependent kinase (Cdk)
 {{< multiplechoice
   question="Many of the negative regulator proteins of the cell cycle were discovered in what type of cells?"
   answer="cancer cells"
-  hint="These regulators were found to be damaged or non-functional in cells that had begun to replicate uncontrollably."
+  hint="Reread the opening paragraph of Negative Regulation of the Cell Cycle."
 >}}
 gametes
 cells in G0
@@ -202,7 +202,7 @@ stem cells
 {{< multiplechoice
   question="Which negative regulatory molecule can trigger cell suicide (apoptosis) if vital cell cycle events do not occur?"
   answer="p53"
-  hint="This protein halts the cycle when it detects damaged DNA and can trigger apoptosis if the damage cannot be repaired."
+  hint="Reread the second paragraph of Negative Regulation of the Cell Cycle."
 >}}
 p53
 p21
@@ -210,21 +210,21 @@ retinoblastoma protein (Rb)
 cyclin-dependent kinase (Cdk)
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Compare and contrast the roles of the positive cell-cycle regulators and negative regulators." hint="Name what a positive regulator does to the cycle, then what a negative regulator does, and give an example of each." >}}
+{{< selfcheck question="Compare and contrast the roles of the positive cell-cycle regulators and negative regulators." hint="Reread the opening paragraph of Regulator Molecules of the Cell Cycle and its two subsections." >}}
 Positive cell regulators such as cyclin and Cdk perform tasks that advance the cell cycle to the next stage. Negative regulators such as Rb, p53, and p21 block the progression of the cell cycle until certain events have occurred.
 ===CHECKS===
 positive regulators such as cyclin and Cdk advance the cell cycle
 negative regulators such as Rb, p53, and p21 block the progression of the cell cycle
 {{< /selfcheck >}}
 
-{{< selfcheck question="What steps are necessary for Cdk to become fully active?" hint="Two things have to happen to a Cdk molecule before it can phosphorylate its target proteins." >}}
+{{< selfcheck question="What steps are necessary for Cdk to become fully active?" hint="Reread Positive Regulation of the Cell Cycle." >}}
 Cdk must bind to a cyclin, and it must be phosphorylated in the correct position to become fully active.
 ===CHECKS===
 Cdk must bind to a cyclin
 it must be phosphorylated in the correct position
 {{< /selfcheck >}}
 
-{{< selfcheck question="Rb is a negative regulator that blocks the cell cycle at the G1 checkpoint until the cell achieves a requisite size. What molecular mechanism does Rb employ to halt the cell cycle?" hint="Think about what Rb binds to while it is dephosphorylated, and what happens to that partner when Rb is released." >}}
+{{< selfcheck question="Rb is a negative regulator that blocks the cell cycle at the G1 checkpoint until the cell achieves a requisite size. What molecular mechanism does Rb employ to halt the cell cycle?" hint="Reread the Rb paragraph of Negative Regulation of the Cell Cycle and its figure." >}}
 Rb is active when it is dephosphorylated. In this state, Rb binds to E2F, which is a transcription factor required for the transcription and eventual translation of molecules required for the G1/S transition. E2F cannot transcribe certain genes when it is bound to Rb. As the cell increases in size, Rb becomes phosphorylated, inactivated, and releases E2F. E2F can then promote the transcription of the genes it controls, and the transition proteins will be produced.
 ===CHECKS===
 Rb is active when it is dephosphorylated
@@ -235,4 +235,4 @@ as the cell grows Rb becomes phosphorylated and releases E2F
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 10.3: Control of the Cell Cycle](https://openstax.org/books/biology-2e/pages/10-3-control-of-the-cell-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and three of the four re-kinded from the manifest's file-extension guess of "photo" to "diagram" (each is a labeled illustration or graph, not a photograph; the fourth was already guessed "diagram"), with a longdesc added to each since none of the four captions carries the full reading of its labels, arrows, or curves; the interactive note rendered as a Link to Learning callout with descriptive link text in place of "this website"; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check (with a hint added), since the source keys it with a prose solution rather than a lettered option, and not repeated in the closing Practice block; inline references to the source's print figure numbers ("()", "below") changed to "(below)" or "below" since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and one key-term recall item (cell-cycle checkpoint) added from the glossary to complete the first objective's group with an auto-graded item; rubric checkpoints added to each self-check (the body Visual Connection included), decomposing its model answer (the source solution) into check-off clauses with no new claims; and one locally written multiple choice (HGH and dwarfism) added under the first objective, built strictly from the section's own sentence and disclosed in the ledger.</small>
+<small>This section is adapted from [Biology 2e, Section 10.3: Control of the Cell Cycle](https://openstax.org/books/biology-2e/pages/10-3-control-of-the-cell-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and three of the four re-kinded from the manifest's file-extension guess of "photo" to "diagram" (each is a labeled illustration or graph, not a photograph; the fourth was already guessed "diagram"), with a longdesc added to each since none of the four captions carries the full reading of its labels, arrows, or curves (the Rb figure's longdesc quotes its printed panel text with the artwork's misspelling "phosphoryation" corrected to "phosphorylation"); the interactive note rendered as a Link to Learning callout with descriptive link text in place of "this website"; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check (with a hint added), since the source keys it with a prose solution rather than a lettered option, and not repeated in the closing Practice block; inline references to the source's print figure numbers ("()", "below") changed to "(below)" or "below" since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and one recall item added first in the first objective's group from the section's own sentence "Crowding of cells can also inhibit cell division," in place of a cell-cycle checkpoint recall item whose key every question stem in the section prints; rubric checkpoints added to each self-check (the body Visual Connection included), decomposing its model answer (the source solution) into check-off clauses with no new claims; and one locally written multiple choice (HGH and dwarfism) added under the first objective, built strictly from the section's own sentence and disclosed in the ledger.</small>

@@ -20,7 +20,7 @@ weight: 3
 
 Most microbes are unicellular and small enough that they require artificial magnification to be seen. However, there are some unicellular microbes that are visible to the naked eye, and some multicellular organisms that are microscopic. An object must measure about 100 micrometers (µm) to be visible without a microscope, but most microorganisms are many times smaller than that. For some perspective, consider that a typical animal cell measures roughly 10 µm across but is still microscopic. Bacterial cells are typically about 1 µm, and viruses can be 10 times smaller than bacteria (see the figure below). See the table below for units of length used in microbiology.
 
-{{< mediafigure src="microbiology/OSC_Microbio_01_03_sizes" kind="diagram" eager="true" alt="A horizontal scale labelled \"Relative sizes on a logarithmic scale,\" running from 0.1 nanometers to 1 millimeter, with icons along it: an atom near 0.1 nm; a fullerene molecule (C60) near 1 nm; lipids from 2–5 nm and a protein from 5–10 nm; a polio virus near 50 nm, a flu virus near 100 nm, and a smallpox virus near 500 nm; a mitochondrion and a bacterial cell near 1 µm; a red blood cell just under 10 µm; a plant or animal cell from 10–100 µm; a pollen grain and a human egg near 0.1 mm; and a frog egg near 1 mm. Two brackets below mark the electron- and light-microscope ranges." longdesc="The scale is logarithmic, each labelled tick ten times the one before it, and runs from 0.1 nm to 1 mm. Reading it from left to right: an atom (about 0.1 nm); a C60 fullerene molecule (about 1 nm); lipids (2–5 nm) and a protein (5–10 nm); a polio virus (about 50 nm), a flu virus (about 100 nm), and a smallpox virus (about 500 nm), grouped together; a mitochondrion and a bacterial cell (about 1 µm); a red blood cell (just under 10 µm); a plant or animal cell (10–100 µm); a pollen grain and a human egg (about 0.1 mm); and, at the far right, a frog egg (about 1 mm). A bracket beneath the scale marks the electron-microscope range, from below 1 nm to about 1 µm; a second bracket marks the light-microscope range, from about 100 nm upward." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_01_03_sizes" kind="diagram" eager="true" alt="A horizontal scale labelled 'Relative sizes on a logarithmic scale,' running from 0.1 nanometers to 1 millimeter, with icons along it: an atom at 0.1 nm; a fullerene molecule (C60) at 1 nm; lipids at about 1.5–3 nm and a protein at about 3–10 nm; a polio virus at about 20 nm, a flu virus at 100 nm, and a smallpox virus at about 300 nm; a mitochondrion and a bacterial cell at about 1 µm; a red blood cell at about 5 µm; plant and animal cells at 10–100 µm; a pollen grain and a human egg at about 0.2 mm; and a frog egg at 1 mm. Two brackets below mark the electron- and light-microscope ranges." longdesc="The scale is logarithmic, each labelled tick ten times the one before it, and runs from 0.1 nm to 1 mm; each object sits on a dashed vertical guide line (or, for the lipids, the protein, and the cells, above a dashed bracket) that marks its size. Reading it from left to right: an atom (0.1 nm); a C60 fullerene molecule (1 nm); lipids (about 1.5–3 nm) and a protein (about 3–10 nm); a polio virus (about 20 nm), a flu virus (100 nm), and a smallpox virus (about 300 nm); a mitochondrion and a bacterial cell (about 1 µm); a red blood cell (about 5 µm, halfway between the 1 µm and 10 µm ticks); a plant cell and an animal cell (10–100 µm); a pollen grain and a human egg (about 0.2 mm, just right of the 100 µm tick); and, at the far right, a frog egg (1 mm). A bracket beneath the scale marks the electron-microscope range, from below 1 nm to about 1 µm; a second bracket marks the light-microscope range, from about 100 nm upward." >}}
 The relative sizes of various microscopic and nonmicroscopic objects. Note that a typical virus measures about 100 nm, 10 times smaller than a typical bacterium (~1 µm), which is at least 10 times smaller than a typical plant or animal cell (~10–100 µm). An object must measure about 100 µm to be visible without a microscope.
 {{< /mediafigure >}}
 
@@ -68,7 +68,7 @@ Some archaea live in extreme environments, such as the Morning Glory pool, a hot
 {{< multiplechoice
   question="What are the two main types of prokaryotic organisms?"
   answer="Bacteria and archaea"
-  hint="Prokaryotes fall into exactly two domains discussed in this section."
+  hint="Reread the paragraph just above the Link to Learning box."
 >}}
 Protists and fungi
 Bacteria and archaea
@@ -132,7 +132,7 @@ Large colonies of microscopic fungi can often be observed with the naked eye, as
   {"label": "Yeasts", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="Name some of the defining characteristics of protists and fungi." hint="Think about how each type gets its energy or nutrients, its cell structure, and where it is typically found." >}}
+{{< selfcheck question="Name some of the defining characteristics of protists and fungi." hint="Reread the Protists and Fungi subsections." >}}
 Algae are photosynthetic protists with cellulose cell walls that can be unicellular or multicellular. Protozoa are diverse protists: some protozoa are photosynthetic and others feed on organic material, and some are free-living while others are parasitic. Molds are multicellular fungi made up of long filaments that form visible colonies, found in environments from soil to rotting food. Yeasts are unicellular fungi found in many environments, and some have beneficial uses, while others can spoil food or cause disease.
 ===CHECKS===
 algae are photosynthetic protists with cellulose cell walls
@@ -166,7 +166,7 @@ Viruses can infect all types of cells, from human cells to the cells of other mi
 {{< multiplechoice
   question="Are helminths microorganisms? Explain why or why not."
   answer="Large enough to see without a microscope, though their eggs and larvae are microscopic"
-  hint="Think about what makes something 'micro' and whether that applies to the adult worm versus its eggs and larvae."
+  hint="Reread the first two sentences of the subsection just after the moldy-oranges figure."
 >}}
 Unicellular, like most protists, and too small to see without a microscope
 Large enough to see without a microscope, though their eggs and larvae are microscopic
@@ -174,7 +174,7 @@ Acellular, like a virus, and made only of protein and genetic material
 Smaller than a typical bacterium, which is about 1 µm across
 {{< /multiplechoice >}}
 
-{{< selfcheck question="How are viruses different from other microorganisms?" hint="Think about what a virus is (and is not) made of, and whether it fits within the three domains of life." >}}
+{{< selfcheck question="How are viruses different from other microorganisms?" hint="Reread the paragraph just above the Link to Learning box and the first paragraph of the subsection just before Microbiology as a Field of Study." >}}
 Unlike other microorganisms, viruses are acellular, meaning they are not composed of cells, and they do not fall within any of the three domains of life. A virus consists only of proteins and genetic material, either DNA or RNA but never both.
 ===CHECKS===
 viruses are acellular, meaning they are not composed of cells
@@ -254,10 +254,16 @@ Unfortunately for Cora, CJD is a fatal disease for which there is no approved tr
 
 ### List the various types of microorganisms and describe their defining characteristics
 
+{{< textin
+  question="Multicellular parasitic worms studied by microbiologists are called ___________."
+  answer="helminths"
+  hint="Reread the first sentence of the subsection just after the moldy-oranges figure."
+>}}
+
 {{< multiplechoice
   question="Which of the following types of microorganisms is photosynthetic?"
   answer="alga"
-  hint="Photosynthetic organisms use sunlight for energy; ask which option is a plant-like protist rather than a fungus, an acellular agent, or a worm."
+  hint="Reread the Eukaryotic Microorganisms subsections."
 >}}
 yeast
 virus
@@ -268,7 +274,7 @@ alga
 {{< multiplechoice
   question="Which of the following is a type of fungal microorganism?"
   answer="yeast"
-  hint="Fungi typically lack photosynthetic pigments and have chitin cell walls; ask which option is a unicellular fungus rather than a bacterium, protist, or alga."
+  hint="Reread the Fungi subsection."
 >}}
 bacterium
 protozoan
@@ -279,10 +285,10 @@ yeast
 {{< textin
   question="A ________ is a disease-causing microorganism."
   answer="pathogen"
-  hint="This is the general term for any microorganism that causes disease, not a specific type of microbe."
+  hint="Reread the first paragraph of Prokaryotic Microorganisms."
 >}}
 
-{{< selfcheck question="Name three structures that various protozoa use for locomotion." hint="This section names three kinds of structures protozoa use to move themselves." >}}
+{{< selfcheck question="Name three structures that various protozoa use for locomotion." hint="Reread the Protozoa paragraph in Protists." >}}
 Some protozoa move with help from hair-like structures called cilia or whip-like structures called flagella. Others extend part of their cell membrane and cytoplasm to propel themselves forward; these cytoplasmic extensions are called pseudopods.
 ===CHECKS===
 hair-like structures called cilia
@@ -295,7 +301,7 @@ cytoplasmic extensions are called pseudopods
 {{< multiplechoice
   question="Which of the following is a prokaryotic microorganism?"
   answer="cyanobacterium"
-  hint="Two of the three domains of life hold only prokaryotes; ask which option belongs to one of them rather than being a multicellular worm, a protist, or a fungus."
+  hint="Reread the paragraph just below the bacterial-shapes figure."
 >}}
 helminth
 protozoan
@@ -306,20 +312,13 @@ mold
 {{< multiplechoice
   question="Which of the following is acellular?"
   answer="virus"
-  hint="Acellular means not made of cells; three of the options are types of cellular organisms."
+  hint="Reread the paragraph just below the Units of Length table."
 >}}
 virus
 bacterium
 fungus
 protozoan
 {{< /multiplechoice >}}
-
-{{< textin
-  question="Multicellular parasitic worms studied by microbiologists are called ___________."
-  answer="helminths"
-  accept="helminth"
-  hint="This group includes parasitic worms whose eggs and larvae are often too small to see without a microscope."
->}}
 
 {{< mediafigure src="microbiology/OSC_Microbio_01_03_ArtConnect_img" kind="diagram" alt="A horizontal size scale from 0.1 nanometers to 1 millimeter, with icons placed along it for an atom near 0.1 nm, a fullerene molecule (C60) near 1 nm, lipids and a protein between 2 and 10 nm, a mitochondrion near 1 µm, a red blood cell just under 10 µm, a pollen grain and a human egg near 0.1 mm, and a frog egg near 1 mm." >}}
 A partial version of the size-scale chart above, redrawn with four of its objects removed.
@@ -344,42 +343,62 @@ viruses can be about 10 times smaller than bacteria
 a typical virus measuring around 100 nm
 {{< /selfcheck >}}
 
-{{< sortbins question="Sort each behavior to whether it describes a virus outside a host cell or inside one." hint="Contrast what a virus is capable of when it has no host against what it can do once inside one." >}}
-{"bins": ["Outside a host cell", "Inside a host cell"],
- "items": [
-  {"label": "Is inert", "bin": 0},
-  {"label": "Takes over existing molecular machinery to multiply", "bin": 1},
-  {"label": "Consists only of proteins and genetic material", "bin": 0},
-  {"label": "Spreads to infect other organisms", "bin": 1}]}
-{{< /sortbins >}}
+{{< selfcheck question="Contrast the behavior of a virus outside versus inside a cell." hint="Reread the first paragraph of the subsection just before Microbiology as a Field of Study." >}}
+A virus consists of proteins and genetic material that are inert outside of a host organism. However, by incorporating themselves into a host cell, viruses are able to co-opt the host's cellular mechanisms to multiply and infect other hosts.
+===CHECKS===
+proteins and genetic material that are inert outside of a host organism
+by incorporating themselves into a host cell
+co-opt the host's cellular mechanisms to multiply
+infect other hosts
+{{< /selfcheck >}}
 
 ### Describe the similarities and differences between archaea and bacteria
 
 {{< textin
   question="The cells of prokaryotic organisms lack a _______."
   answer="nucleus"
-  hint="This is the membrane-bound structure that houses a eukaryotic cell's genetic material but is absent from a prokaryotic cell."
+  hint="Reread the paragraph just above the Link to Learning box."
 >}}
 
 {{< textin
   question="Archaea differ from bacteria in ________, genetics, metabolic pathways, and cell wall and membrane composition."
   answer="evolutionary history"
   accept="evolutionary histories"
-  hint="Think about each group's distinct line of descent over time, separate from a difference in cell structure or chemistry."
+  hint="Reread the second sentence of the Archaea paragraph."
 >}}
 
 {{< textin
   question="Archaea are found in nearly every habitat on Earth, including environments that are very cold, very hot, very basic, or very ________."
   answer="acidic"
-  hint="Think of the opposite of basic on the pH scale."
+  hint="Reread the Archaea paragraph's sentence on where archaea are found."
 >}}
 
+{{< selfcheck question="Describe the differences between bacteria and archaea." hint="Set the Archaea paragraph against the opening Bacteria paragraph, point by point." >}}
+Archaea and bacteria have different evolutionary histories, as well as significant differences in genetics, metabolic pathways, and the composition of their cell walls and membranes. Most bacteria have cell walls that contain peptidoglycan, whereas archaeal cell walls do not contain peptidoglycan and are often composed of a similar substance called pseudopeptidoglycan. Some bacteria are pathogens, causing disease in humans and other animals; some archaea live in the human body, but none have been shown to be human pathogens.
+===CHECKS===
+different evolutionary histories, as well as significant differences in genetics, metabolic pathways, and the composition of their cell walls and membranes
+archaeal cell walls do not contain peptidoglycan and are often composed of a similar substance called pseudopeptidoglycan
+none have been shown to be human pathogens
+{{< /selfcheck >}}
+
 ### Provide an overview of the field of microbiology
+
+{{< textin
+  question="The study of viruses is ___________."
+  answer="virology"
+  hint="Reread the first paragraph of Microbiology as a Field of Study."
+>}}
+
+{{< textin
+  question="Microbiologists typically specialize in one of many subfields, but all health professionals need a solid foundation in ________ microbiology."
+  answer="clinical"
+  hint="Reread the last bullet of the Summary."
+>}}
 
 {{< multiplechoice
   question="Which of the following is not a subfield of microbiology?"
   answer="botany"
-  hint="Three of these subfields study microorganisms specifically; one instead studies plants."
+  hint="Reread the first paragraph of Microbiology as a Field of Study."
 >}}
 bacteriology
 botany
@@ -387,18 +406,6 @@ clinical microbiology
 virology
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The study of viruses is ___________."
-  answer="virology"
-  hint="This is the subfield of microbiology devoted specifically to viruses."
->}}
-
-{{< textin
-  question="Microbiologists typically specialize in one of many subfields, but all health professionals need a solid foundation in ________ microbiology."
-  answer="clinical"
-  hint="This is the subfield most directly concerned with diagnosing and treating patients."
->}}
-
 ---
 
-<small>This section is adapted from [Microbiology, Section 1.3: Types of Microorganisms](https://openstax.org/books/microbiology/pages/1-3-types-of-microorganisms) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all 11 figures re-encoded as WebP; `kind` set explicitly on every figure after inspection, overriding the media manifest's file-type guess on four of them (the sizes chart and the Art Connection chart are drawn diagrams despite being JPEGs; the shared bacterial-shapes reference figure is treated as a diagram; the field-work photos are photos despite being the chapter's one PNG); the sizes-chart alt rewritten into a left-to-right walkthrough (correcting an apparent source typo, "a from egg," to the pictured frog egg) with an added extended description, the field-work alt rewritten to describe what each photo shows (also correcting an apparent source typo, "centerfuge," to centrifuge), the two-panel worm and virus alts tightened from "Figure a/Figure b" phrasing to parenthetical (a)/(b) form, and a caption written for the Art Connection chart since the source prints none; the Link to Learning, Eye on Ethics, and Clinical Focus notes rendered as callouts, with the Eye on Ethics and Clinical Focus footnote citations kept as parentheticals after the sentences they support; the source's "Go back to the previous Clinical Focus box" link replaced with a plain sentence to this chapter's preceding section; the Units of Length table transcribed as a Markdown table with its metric-equivalent exponents set as math; two of the six Check Your Understanding questions remain body self-checks with author-written rubrics from the same subsection's text ("Name some of the defining characteristics of protists and fungi," kept in prose because it would re-ask its sibling's sort-into-bins bins, and "How are viruses different from other microorganisms," kept in prose because the Practice block's source Multiple Choice already grades the acellular fact); the other four are graded from the module's own sentences, a table, or the module's own paired terms rather than answered in prose, since the source prints no key for them; all five Multiple Choice and all four Fill in the Blank questions adapted into the closing Practice block; two of three Short Answer questions ("Name three structures that various protozoa use for locomotion" and "Describe the actual and relative sizes of a virus, a bacterium, and a plant or animal cell") remain self-checks whose model answers and rubrics are author-written from this section's own text, since the source prints no answer key for them and the module names no further locomotion structures or size-scale entries to build honest multiple-choice distractors from; one Short Answer question ("Describe the differences between bacteria and archaea") omitted from Practice because it duplicates the body's Check Your Understanding question already answered in place; both Critical Thinking questions (one paired with the Art Connection figure) are now graded from the module's own size comparisons and its own contrast between a virus outside and inside a host cell, rather than answered in prose; three further Practice items author-written to round out a thin objective group — two clozes built from single sentences of the module's own Summary and one cloze from a body sentence of the Archaea paragraph, none introducing a new claim; key terms compiled from the module's 18 distinct defined terms and the book's Glossary appendix, including the three (*microbiology*, *parasitology*, *protozoology*) recovered from a glossary formatting defect already on record (erratum 320) — none needed a sentence-derived substitute — and one further apparent glossary typo corrected on this page ("cell wells" to "cell walls" in the *bacteria* definition); a footnote citation's misspelled "Encylopaedia Britannica" corrected to "Encyclopaedia Britannica"; the *archaea* Key terms bullet uses the appendix's organism-sense entry rather than its domain-sense "Archaea" entry, matching how this module uses the word; 4 of the source's body Check Your Understanding questions and both of its unkeyed Critical Thinking questions are graded from the module's own sentences, tables, or figures rather than answered in prose; the source prints no key for them: "what are the two main types of prokaryotic organisms" is now a `multiplechoice` keyed by the module's own two-domain framing, with distractors the module's other paired eukaryotic groups; "name some of the defining characteristics of bacteria and archaea" is now a sort-into-bins item built from the module's own cell-wall-composition and human-pathogen sentences; "name two types of protists and two types of fungi" is now a sort-into-bins item built from the module's own named examples; "are helminths microorganisms" is now a `multiplechoice` keyed by the module's own size sentence, with distractors the module's descriptions of protists, viruses, and bacteria; "where would a virus, bacterium, animal cell, and a prion belong on this chart" is now a sort-into-bins item built from the module's own size figures, keeping the `mediafigure` beside it; "contrast the behavior of a virus outside versus inside a cell" is now a sort-into-bins item built from the module's own two-state description; the *Giardia* micrograph's alt counts four flagella (one from the pointed end, three from a fold on the side) and gives the cell as roughly 8 by 12 µm against the printed 2 µm scale bar, because the source alt's "three" projections and "3 x 8 µm" are contradicted by the vendored image (erratum 815).</small>
+<small>This section is adapted from [Microbiology, Section 1.3: Types of Microorganisms](https://openstax.org/books/microbiology/pages/1-3-types-of-microorganisms) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all 11 figures re-encoded as WebP; `kind` set explicitly on every figure after inspection, overriding the media manifest's file-type guess on four of them (the sizes chart and the Art Connection chart are drawn diagrams despite being JPEGs; the shared bacterial-shapes reference figure is treated as a diagram; the field-work photos are photos despite being the chapter's one PNG); the sizes-chart alt rewritten into a left-to-right walkthrough (correcting an apparent source typo, "a from egg," to the pictured frog egg) with an added extended description, its sizes read from the chart's own dashed guide lines and brackets, so the source alt's claims of a polio virus at 50 nm, a smallpox virus at 500 nm, a red blood cell just under 10 µm, a pollen grain and human egg at 0.1 mm, and lipids at 2–5 nm are corrected to the drawn positions of about 20 nm, 300 nm, 5 µm, 0.2 mm, and 1.5–3 nm, the field-work alt rewritten to describe what each photo shows (also correcting an apparent source typo, "centerfuge," to centrifuge), the two-panel worm and virus alts tightened from "Figure a/Figure b" phrasing to parenthetical (a)/(b) form, and a caption written for the Art Connection chart since the source prints none; the Link to Learning, Eye on Ethics, and Clinical Focus notes rendered as callouts, with the Eye on Ethics and Clinical Focus footnote citations kept as parentheticals after the sentences they support; the source's "Go back to the previous Clinical Focus box" link replaced with a plain sentence to this chapter's preceding section; the Units of Length table transcribed as a Markdown table with its metric-equivalent exponents set as math; two of the six Check Your Understanding questions remain body self-checks with author-written rubrics from the same subsection's text ("Name some of the defining characteristics of protists and fungi," kept in prose because it would re-ask its sibling's sort-into-bins bins, and "How are viruses different from other microorganisms," kept in prose because the Practice block's source Multiple Choice already grades the acellular fact); the other four are graded from the module's own sentences, a table, or the module's own paired terms rather than answered in prose, since the source prints no key for them; all five Multiple Choice and all four Fill in the Blank questions adapted into the closing Practice block; two of three Short Answer questions ("Name three structures that various protozoa use for locomotion" and "Describe the actual and relative sizes of a virus, a bacterium, and a plant or animal cell") remain self-checks whose model answers and rubrics are author-written from this section's own text, since the source prints no answer key for them and the module names no further locomotion structures or size-scale entries to build honest multiple-choice distractors from; the Short Answer question ("Describe the differences between bacteria and archaea"), which the source prints without a solution, rendered as a self-check at the end of the archaea-and-bacteria Practice group, its model answer and rubric taken from this module's Bacteria and Archaea paragraphs (it asks for differences, a different ask from the body Check Your Understanding question on each group's defining characteristics); the Critical Thinking question paired with the Art Connection figure is now graded from the module's own size comparisons rather than answered in prose, and the other ("Contrast the behavior of a virus outside versus inside a cell") remains a self-check whose model answer and rubric are author-written from the module's own two-state sentence pair, because the module gives only one outside-the-host behavior (inert), too few for an honest two-bin sort; the Fill in the Blank item keyed "helminths" is moved to the head of the first objective group, ahead of the photosynthetic Multiple Choice item whose options print "helminth"; three further Practice items author-written to round out a thin objective group — two clozes built from single sentences of the module's own Summary and one cloze from a body sentence of the Archaea paragraph, none introducing a new claim; key terms compiled from the module's 18 distinct defined terms and the book's Glossary appendix, including the three (*microbiology*, *parasitology*, *protozoology*) recovered from a glossary formatting defect already on record (erratum 320) — none needed a sentence-derived substitute — and one further apparent glossary typo corrected on this page ("cell wells" to "cell walls" in the *bacteria* definition); a footnote citation's misspelled "Encylopaedia Britannica" corrected to "Encyclopaedia Britannica"; the *archaea* Key terms bullet uses the appendix's organism-sense entry rather than its domain-sense "Archaea" entry, matching how this module uses the word; 4 of the source's body Check Your Understanding questions and one of its two unkeyed Critical Thinking questions are graded from the module's own sentences, tables, or figures rather than answered in prose; the source prints no key for them: "what are the two main types of prokaryotic organisms" is now a `multiplechoice` keyed by the module's own two-domain framing, with distractors the module's other paired eukaryotic groups; "name some of the defining characteristics of bacteria and archaea" is now a sort-into-bins item built from the module's own cell-wall-composition and human-pathogen sentences; "name two types of protists and two types of fungi" is now a sort-into-bins item built from the module's own named examples; "are helminths microorganisms" is now a `multiplechoice` keyed by the module's own size sentence, with distractors the module's descriptions of protists, viruses, and bacteria; "where would a virus, bacterium, animal cell, and a prion belong on this chart" is now a sort-into-bins item built from the module's own size figures, keeping the `mediafigure` beside it; the *Giardia* micrograph's alt counts four flagella (one from the pointed end, three from a fold on the side) and gives the cell as roughly 8 by 12 µm against the printed 2 µm scale bar, because the source alt's "three" projections and "3 x 8 µm" are contradicted by the vendored image (erratum 815).</small>

@@ -41,7 +41,7 @@ The value "*r*" can be positive, meaning the population is increasing in size; o
 
 $$\frac{dN}{dT} = r_{\max}N$$
 
-{{< mediafigure src="biology/Figure_45_03_01" kind="diagram" eager="true" alt="Both graphs (a) and (b) plot population size versus time. In graph (a), exponential growth results in a curve that gets increasingly steep, resulting in a J-shape. In graph (b), logistic growth results in a curve that gets increasingly steep, then levels off when the carrying capacity is reached, resulting in an S-shape." longdesc="Two side-by-side line graphs share the same unlabeled Population size vertical axis and Time horizontal axis. The left panel, headed Exponential Growth, shows one blue curve that starts low near the origin and curves upward with increasing steepness all the way to the right edge of the plot, producing a J shape that never levels off. The right panel, headed Logistic Growth, adds a horizontal red dashed line labeled Carrying capacity near the top of the plot; its blue curve also starts low near the origin, rises slowly at first, steepens through the middle of the plot, then curves over and flattens out just beneath the dashed line at the right edge, producing an S shape." >}}
+{{< mediafigure src="biology/Figure_45_03_01" kind="diagram" eager="true" alt="Both graphs (a) and (b) plot population size versus time. In graph (a), exponential growth results in a curve that gets increasingly steep, resulting in a J-shape. In graph (b), logistic growth results in a curve that gets increasingly steep, then levels off when the carrying capacity is reached, resulting in an S-shape." longdesc="Two side-by-side line graphs each have an unnumbered vertical axis labeled Population size and an unnumbered horizontal axis labeled Time. The left panel, headed Exponential Growth, shows one blue curve that starts low near the origin and curves upward with increasing steepness until it reaches the top of the plot a little past halfway across, producing a J shape that never levels off. The right panel, headed Logistic Growth, adds a horizontal red dashed line labeled Carrying capacity near the top of the plot; its blue curve also starts low near the origin, rises slowly at first, steepens through the middle of the plot, then curves over and flattens out just beneath the dashed line at the right edge, producing an S shape." >}}
 When resources are unlimited, populations exhibit exponential growth, resulting in a J-shaped curve. When resources are limited, populations exhibit logistic growth. In logistic growth, population expansion decreases as resources become scarce, and it levels off when the carrying capacity of the environment is reached, resulting in an S-shaped curve.
 {{< /mediafigure >}}
 
@@ -71,7 +71,7 @@ In the real world, phenotypic variation among individuals within a population me
 
 Yeast, a microscopic fungus used to make bread and alcoholic beverages, exhibits the classical S-shaped curve when grown in a test tube, shown below (a). Its growth levels off as the population depletes the nutrients. In the real world, however, there are variations to this idealized curve. Examples in wild populations include sheep and harbor seals, shown below (b). In both examples, the population size exceeds the carrying capacity for short periods of time and then falls below the carrying capacity afterwards. This fluctuation in population size continues to occur as the population oscillates around its carrying capacity. Still, even with this oscillation, the logistic model is confirmed.
 
-{{< mediafigure src="biology/Figure_45_03_02" kind="diagram" alt="Graph (a) plots amount of yeast versus time of growth in hours. The curve rises steeply, and then plateaus at the carrying capacity. Data points tightly follow the curve. Graph (b) plots the number of harbor seals versus time in years. Again, the curve rises steeply then plateaus at the carrying capacity, but this time there is much more scatter in the data. A micrograph of yeast cells, which are oval in shape, and a photo of a harbor seal are shown." longdesc="Panel (a), at top: a black-and-white micrograph at left shows three oval yeast cells, two of them (upper left and lower left) with a smaller round bud attached at the side and the third (right) without one; at right, a graph plots Amount of yeast (vertical axis, 0 to 16) against Hours (horizontal axis, 0 to 50). A red dashed horizontal line runs just above 12 on the vertical axis. Orange data points climb steeply from near 0 around hour 5 through about hour 30, then cluster tightly along the dashed line from about hour 30 to hour 50, and a blue curve fit through the points rises steeply and flattens to meet the dashed line. Panel (b), below: at left, a color photograph shows a spotted harbor seal resting on a rock outcrop with water in the background; at right, a graph plots Number of seals (vertical axis, 1,500 to 8,500) against Year (horizontal axis, 1975 to 2000). A red dashed horizontal line runs at about 7,500. Orange data points rise from about 1,600 in 1975 to a peak near 8,600 around 1991, then scatter both above and below the dashed line through 1999, and a blue curve fit through the points rises steeply through the 1980s, levels off just below the dashed line around 1990–1993, and dips slightly toward 1999 without ever crossing the line." >}}
+{{< mediafigure src="biology/Figure_45_03_02" kind="diagram" alt="Graph (a) plots amount of yeast versus time of growth in hours. The curve rises steeply, and then plateaus at the carrying capacity. Data points tightly follow the curve. Graph (b) plots the number of harbor seals versus time in years. Again, the curve rises steeply then plateaus at the carrying capacity, but this time there is much more scatter in the data. A micrograph of yeast cells, which are oval in shape, and a photo of a harbor seal are shown." longdesc="Panel (a), at top: a black-and-white micrograph at left shows three oval yeast cells, two of them (upper left and lower left) with a smaller round bud attached at the side and the third (right) without one; at right, a graph plots Amount of yeast (vertical axis, 0 to 16) against Hours (horizontal axis, 0 to 50). A red dashed horizontal line runs just above 12 on the vertical axis. Orange data points climb steeply from near 0 around hour 5 through about hour 30, then cluster tightly along the dashed line from about hour 30 to hour 50, and a blue curve fit through the points rises steeply and flattens just beneath the dashed line. Panel (b), below: at left, a color photograph shows a spotted harbor seal resting on a rock outcrop with water in the background; at right, a graph plots Number of seals (vertical axis, 1,500 to 8,500) against Year (horizontal axis, 1975 to 2000). A red dashed horizontal line runs at about 7,500. Orange data points rise from about 1,600 in 1975 to a peak near 8,600 around 1991, then scatter both above and below the dashed line through 1999, and a blue curve fit through the points rises steeply through the 1980s, levels off just below the dashed line around 1990–1993, and dips slightly toward 1999 without ever crossing the line." >}}
 (a) Yeast grown in ideal conditions in a test tube show a classical S-shaped logistic growth curve, whereas (b) a natural population of seals shows real-world fluctuation.
 {{< /mediafigure >}}
 
@@ -111,7 +111,7 @@ Populations with unlimited resources grow exponentially, with an accelerating gr
 {{< multiplechoice
   question="Species with limited resources usually exhibit a(n) ________ growth curve."
   answer="logistic"
-  hint="One of the four options names the growth pattern that levels off once resources run short — match the shape to the condition described here, not to a word that merely sounds scientific."
+  hint="Reread the Summary's second sentence."
 >}}
 logistic
 logical
@@ -122,7 +122,7 @@ exponential
 {{< multiplechoice
   question="The maximum rate of increase characteristic of a species is called its ________."
   answer="biotic potential"
-  hint="This term names the theoretical ceiling on a species' own per capita growth rate under ideal conditions, not the population size an environment can support."
+  hint="Reread the Exponential Growth paragraph that follows the growth-rate equations."
 >}}
 limit
 carrying capacity
@@ -133,7 +133,7 @@ exponential growth pattern
 {{< multiplechoice
   question="The population size of a species capable of being supported by the environment is called its ________."
   answer="carrying capacity"
-  hint="This term names a property of the environment's resources, not a property of the species' own reproductive rate."
+  hint="Reread the first paragraph of the subsection that opens the Logistic Growth discussion."
 >}}
 limit
 carrying capacity
@@ -153,7 +153,7 @@ finally, the population levels off at the carrying capacity of the environment a
   question="A steady population size where birth rates and death rates are equal is called ________."
   answer="zero population growth"
   accept="ZPG"
-  hint="This is the condition where the intrinsic rate of increase works out to neither positive nor negative."
+  hint="Reread the Exponential Growth paragraph that explains the possible values of r."
 >}}
 
 ### Give examples of exponential and logistic growth in natural populations
@@ -183,6 +183,13 @@ the population eventually meets the carrying capacity of the environment and sto
 
 ### Describe how natural selection and environmental adaptation led to the evolution of particular life history patterns
 
+{{< textin
+  question="Competition between members of the same species for resources is called ________."
+  answer="intraspecific competition"
+  accept="intra-specific competition"
+  hint="Reread the first paragraph of the subsection on competition in the logistic model."
+>}}
+
 {{< selfcheck question="How does natural selection connect to intraspecific competition, according to this section?" hint="Start from why individuals within one population are not identical, then follow what that difference does to their chances of reproducing." >}}
 In the real world, phenotypic variation among individuals within a population means that some individuals will be better adapted to their environment than others. Individuals will compete, with members of their own or other species, for limited resources, and the successful ones will survive to pass on their own characteristics and traits to the next generation at a greater rate — this is natural selection. The resulting competition between population members of the same species for resources is termed intraspecific competition.
 ===CHECKS===
@@ -191,17 +198,10 @@ individuals compete for limited resources, and the successful ones pass on their
 competition between members of the same species for resources is called intraspecific competition
 {{< /selfcheck >}}
 
-{{< textin
-  question="Competition between members of the same species for resources is called ________."
-  answer="intraspecific competition"
-  accept="intra-specific competition"
-  hint="The prefix here means 'within' — this competition happens within one species, not between two different ones."
->}}
-
 {{< multiplechoice
   question="Intraspecific competition for resources is least likely to affect individuals in a population that is ________."
   answer="well below its carrying capacity"
-  hint="The section says this competition intensifies as population size increases — find the option describing the population farthest from that condition."
+  hint="Reread the paragraph on competition in the logistic model, after the term is defined."
 >}}
 well below its carrying capacity
 well above its carrying capacity

@@ -112,7 +112,13 @@ reactions typically release energy by breaking bonds.
 
 ### Understand macromolecule synthesis
 
-{{< selfcheck question="Why are biological macromolecules considered organic?" hint="Look at the definition given for biological macromolecules early in this section — what two things does it say they contain?" >}}
+{{< textin
+  question="A chain of monomer residues linked together by covalent bonds is called a ________."
+  answer="polymer"
+  hint="Reread the first paragraph of Dehydration Synthesis."
+>}}
+
+{{< selfcheck question="Why are biological macromolecules considered organic?" hint="Reread the section's opening paragraph." >}}
 Biological macromolecules are organic, meaning they contain carbon and are
 bound to hydrogen.
 ===CHECKS===
@@ -125,7 +131,7 @@ The generic structure of amino acids, where R represents different
 carbon-based side chains.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Amino acids have the generic structure shown above, where R represents different carbon-based side chains. Describe how the structure of amino acids allows them to be linked into long peptide chains to form proteins." hint="Think about which two groups on the amino acid — one at each end of the molecule — could take part in a dehydration synthesis reaction with a neighboring amino acid." >}}
+{{< selfcheck question="Amino acids have the generic structure shown above, where R represents different carbon-based side chains. Describe how the structure of amino acids allows them to be linked into long peptide chains to form proteins." hint="Compare the amino-acid structure with the dehydration synthesis figure and the paragraph after it." >}}
 Amino acids can be linked into long chains through condensation reactions.
 One of the hydrogen atoms bonded to the nitrogen atom of an amino acid reacts
 with the –OH group attached to the terminal carbon on another amino acid.
@@ -138,18 +144,12 @@ one of the hydrogen atoms bonded to the nitrogen atom of an amino acid reacts wi
 peptide bonds can be made in both directions to create a long amino acid chain
 {{< /selfcheck >}}
 
-{{< textin
-  question="A chain of monomer residues linked together by covalent bonds is called a ________."
-  answer="polymer"
-  hint="Repeating this kind of unit over and over is what builds a macromolecule out of smaller building blocks."
->}}
-
 ### Explain dehydration (or condensation) and hydrolysis reactions
 
 {{< multiplechoice
   question="Dehydration synthesis leads to formation of ________."
   answer="water and polymers"
-  hint="The reaction both builds a new bond between monomers and releases a byproduct — name both."
+  hint="Reread the first paragraph of Dehydration Synthesis and the figure below it."
 >}}
 monomers
 polymers
@@ -160,7 +160,7 @@ none of the above
 {{< multiplechoice
   question="During the breakdown of polymers, which of the following reactions takes place?"
   answer="hydrolysis"
-  hint="Breaking a polymer apart uses a water molecule to split each bond — what is that class of reaction called?"
+  hint="Reread the paragraph just above the maltose-breakdown figure."
 >}}
 hydrolysis
 dehydration
@@ -171,7 +171,7 @@ covalent bond
 {{< multiplechoice
   question="The following chemical reactants produce the ester ethyl ethanoate (C₄H₈O₂): C₂H₆O + CH₃COOH. What type of reaction occurs to make ethyl ethanoate?"
   answer="condensation"
-  hint="Two smaller molecules are joining into one larger one — what is that kind of bond-forming reaction called, whether or not the product is a biological polymer?"
+  hint="Reread the section summary's sentence on how one monomer joins another."
 >}}
 condensation
 hydrolysis
@@ -179,7 +179,7 @@ combustion
 acid-base reaction
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What role do electrons play in dehydration synthesis and hydrolysis?" hint="A covalent bond is a shared pair of electrons — think about where that pair comes from when a bond forms, and what has to happen to the bond for hydrolysis to break it." >}}
+{{< selfcheck question="What role do electrons play in dehydration synthesis and hydrolysis?" hint="Reread the paragraph after the dehydration synthesis figure." >}}
 In a dehydration synthesis reaction, the hydrogen of one monomer combines
 with the hydroxyl group of another monomer, releasing a molecule of water.
 This creates an opening in the outer shells of atoms in the monomers, which
@@ -191,9 +191,10 @@ can share electrons and form covalent bonds
 {{< /selfcheck >}}
 
 {{< textin
-  question="A reaction that breaks down larger molecules into smaller ones by using water is called ________."
-  answer="hydrolysis"
-  hint="It is the reverse of dehydration synthesis, and it is how digestive enzymes take food apart."
+  question="Summary: Dehydration reactions typically require an investment of energy for new bond formation, while hydrolysis reactions typically ________ by breaking bonds."
+  answer="release energy"
+  accept="releases energy"
+  hint="Reread the section summary's closing sentence."
 >}}
 
 ---
@@ -215,8 +216,9 @@ place of the source's "this site"; the third assessment figure (the generic
 amino-acid structure) added as its own mediafigure immediately before the
 Critical Thinking question that depends on it; the Review Questions and
 Critical Thinking Questions adapted into the closing interactive Practice
-block (multiple choice and self-check, respectively); and two key-term
-recall items (polymer, hydrolysis) added from the glossary to round out both
-objective groups; rubric checkpoints added to each self-check, decomposing
+block (multiple choice and self-check, respectively); one key-term
+recall item (polymer) added from the glossary to round out the first
+objective group, and one summary-derived textin cloze ("release energy")
+added under the second from the summary's closing sentence; rubric checkpoints added to each self-check, decomposing
 its model answer (the source solution) into check-off clauses with no new
 claims.</small>

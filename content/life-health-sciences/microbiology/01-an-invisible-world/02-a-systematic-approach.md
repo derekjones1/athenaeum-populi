@@ -42,13 +42,13 @@ Nearly 100 years later, in 1969, American ecologist Robert Whittaker (1920–198
 
 The timeline below shows how the tree of life has changed over time. Note that viruses are not found in any of these trees. That is because they are not made up of cells and thus it is difficult to determine where they would fit into a tree of life.
 
-{{< mediafigure src="microbiology/OSC_Microbio_01_02_TreesTIME" alt="A timeline of three phylogenetic-tree sketches above dated entries: 1758, Carolus Linnaeus, with a two-branch tree for animals and plants; 1866, Ernst Haeckel, with a four-branch tree adding Monera and protists; 1969, Robert Whittaker, with a five-branch tree adding fungi, each entry shown with a small portrait." kind="diagram" longdesc="Reading left to right: 1758, Linnaeus's tree has two branches, animals and plants. 1866, Haeckel's tree has a central line with Monera branching off the bottom, then protists, then plants and animals. 1969, Whittaker's tree repeats Haeckel's shape — Monera, then protists, then plants, then animals — and adds a fifth branch, fungi, on the left of the crown, opposite plants and outside animals." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_01_02_TreesTIME" alt="A timeline of three phylogenetic-tree sketches above dated entries: 1758, Carolus Linnaeus, with a two-branch tree for animals and plants; 1866, Ernst Haeckel, with a four-branch tree adding Monera and protists; 1969, Robert Whittaker, with a five-branch tree adding fungi, each entry shown with a small portrait." kind="diagram" longdesc="Reading left to right: 1758, Linnaeus's tree has two branches, animals and plants. 1866, Haeckel's tree has a central line with Monera branching off the bottom, then protists, then plants and animals. 1969, Whittaker's tree repeats Haeckel's shape — Monera, then protists, then plants, then animals — and adds a fifth branch, fungi, which leaves the left side of the stem just above the plants branch, so the stem ends in animals after fungi. Beneath each date is a short printed note: Linnaeus developed a new way to categorize plants and animals; Haeckel wrote General Morphology of Organisms, proposing four kingdoms; Whittaker proposed adding a fifth kingdom, fungi, to the tree of life." >}}
 This timeline shows how the shape of the tree of life has changed over the centuries. Even today, the taxonomy of living organisms is continually being reevaluated and refined with advances in technology.
 {{< /mediafigure >}}
 
 **Check Your Understanding**
 
-{{< selfcheck question="Briefly summarize how our evolving understanding of microorganisms has contributed to changes in the way that organisms are classified." hint="Trace the kingdoms added to the tree of life, from Linnaeus through Haeckel to Whittaker, and the level Whittaker added above kingdom." >}}
+{{< selfcheck question="Briefly summarize how our evolving understanding of microorganisms has contributed to changes in the way that organisms are classified." hint="Reread Evolving Trees of Life (Phylogenies)." >}}
 As understanding of microorganisms grew, phylogenetic trees gained more branches. Linnaeus's original tree held only two kingdoms, animal and plant. In 1866, Haeckel added a third kingdom, Protista, for unicellular organisms, and later a fourth, Monera, for unicellular organisms whose cells lack nuclei. In 1969, Whittaker added a fifth kingdom, Fungi, and also added an empire level above kingdom to distinguish eukaryotes, organisms with membrane-bound nuclei, from prokaryotes, organisms without them.
 ===CHECKS===
 Linnaeus's original tree held only two kingdoms, animal and plant
@@ -75,7 +75,7 @@ Haeckel's and Whittaker's trees presented hypotheses about the phylogeny of diff
 
 In the 1970s, American microbiologist Carl Woese discovered what appeared to be a "living record" of the evolution of organisms. He and his collaborator George Fox created a genetics-based tree of life based on similarities and differences they observed in the gene sequences coding for small subunit ribosomal RNA (rRNA) of different organisms. In the process, they discovered that a certain type of bacteria, called archaebacteria (now known simply as archaea), were significantly different from other bacteria and eukaryotes in terms of their small subunit rRNA gene sequences. To accommodate this difference, they created a tree with three Domains above the level of Kingdom: Archaea, Bacteria, and Eukarya (see the diagram below). Analysis of small subunit rRNA gene sequences suggests archaea, bacteria, and eukaryotes all evolved from a common ancestral cell type. The tree is skewed to show a closer evolutionary relationship between Archaea and Eukarya than they have to Bacteria.
 
-{{< mediafigure src="microbiology/OSC_Microbio_01_02_Woese" alt="A colored phylogenetic tree with three domains: a purple Bacteria branch on the left, and a stem on the right that splits into a red Archaea branch and a brown Eukarya branch, which further divides into slime molds, ciliates, plants, fungi, and animals — the animal branch marked with a star reading 'you are here.'" kind="diagram" longdesc="Reading left to right: the Bacteria branch (purple) holds, from the trunk outward, Aquifex, Thermotoga, Bacteroides/Cytophaga, Planctomyces, Cyanobacteria, Proteobacteria, Spirochetes, Gram positives, and Green filamentous bacteria. The Archaea branch (red) holds Pyrodicticum, Thermoproteus, T. celer, Methanococcus, Methanobacterium, Methanosarcina, and Halophiles. The Eukarya branch (brown) holds, from the trunk outward, Diplomonads, Microsporidia, Trichomonads, Flagellates, Ciliates, Plants, and then a crown of Entamoebae, Slime molds, Animals, and Fungi, with Animals marked by a star labeled 'you are here.'" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_01_02_Woese" alt="A colored phylogenetic tree with three domains: a purple Bacteria branch on the left, and a stem on the right that splits into a red Archaea branch and a brown Eukarya branch, which further divides into slime molds, ciliates, plants, fungi, and animals — the animal branch marked with a star reading 'you are here.'" kind="diagram" longdesc="Reading left to right: the Bacteria branch (purple) holds, from the trunk outward, Aquifex; then Thermotoga and Green filamentous bacteria, which leave the branch at the same point (the Green filamentous bacteria line runs up to the top of the fan); then Bacteroides/Cytophaga; and at the branch tip a fan of Planctomyces, Cyanobacteria, Proteobacteria, Spirochetes, and Gram positives. The Archaea branch (red) holds Pyrodicticum, Thermoproteus, T. celer, Methanococcus, Methanobacterium, Methanosarcina, and Halophiles. The Eukarya branch (brown) holds, from the trunk outward, Diplomonads, Microsporidia, Trichomonads, Flagellates, Entamoebae, Slime molds, Ciliates, and Plants, ending in a tip pair of Animals and Fungi (Entamoebae and Slime molds leave the upper side of the branch, the others its lower side), with Animals marked by a star labeled 'you are here.'" >}}
 Woese and Fox's phylogenetic tree contains three domains: Bacteria, Archaea, and Eukarya. Domains Archaea and Bacteria contain all prokaryotic organisms, and Eukarya contains all eukaryotic organisms. (credit: modification of work by Eric Gaba)
 {{< /mediafigure >}}
 
@@ -86,7 +86,7 @@ Scientists continue to use analysis of RNA, DNA, and proteins to determine how o
 {{< multiplechoice
   question="In modern taxonomy, how do scientists determine how closely two organisms are related?"
   answer="Comparing the nucleic acids or proteins of different organisms"
-  hint="Think about which molecules modern taxonomy compares between organisms, and what a closer match between them implies."
+  hint="Reread the first paragraph of The Role of Genetics in Modern Taxonomy."
 >}}
 Observing macroscopic features such as feathers, feet, or fur
 Comparing the nucleic acids or proteins of different organisms
@@ -94,7 +94,7 @@ Assigning each organism a common descriptive name
 Counting the number of limbs or noting the presence of hair
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Explain why the branches on the 'tree of life' all originate from a single 'trunk.'" hint="Think about what the analysis of small subunit rRNA gene sequences suggests about where archaea, bacteria, and eukaryotes came from." >}}
+{{< selfcheck question="Explain why the branches on the 'tree of life' all originate from a single 'trunk.'" hint="Reread the paragraph on Woese and Fox's tree, just above its figure." >}}
 Analysis of small subunit rRNA gene sequences suggests archaea, bacteria, and eukaryotes all evolved from a common ancestral cell type, so every branch of the tree traces back to that single ancestor.
 ===CHECKS===
 archaea, bacteria, and eukaryotes all evolved from a common ancestral cell type
@@ -115,7 +115,7 @@ Whether in a tree or a web, microbes can be difficult to identify and classify. 
 
 **Check Your Understanding**
 
-{{< selfcheck question="What is binomial nomenclature and why is it a useful tool for naming organisms?" hint="Think about how many words make up the name, and what problem it solves compared with a common descriptive name." >}}
+{{< selfcheck question="What is binomial nomenclature and why is it a useful tool for naming organisms?" hint="Reread Naming Microbes." >}}
 Binomial nomenclature is a two-word naming system that identifies each organism by its genus and specific epithet, giving it a single, unique name that is recognized by scientists all over the world. This avoids the problem of common names, which can become ambiguous when another organism with the same common trait is discovered.
 ===CHECKS===
 a two-word naming system that identifies each organism by its genus and specific epithet
@@ -123,7 +123,7 @@ a single, unique name that is recognized by scientists all over the world
 avoids the problem of common names, which can become ambiguous
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain why a resource like one of Bergey's manuals would be helpful in identifying a microorganism in a sample." hint="Think about what macroscopic features bacteria lack, and what kinds of tests scientists must rely on instead." >}}
+{{< selfcheck question="Explain why a resource like one of Bergey's manuals would be helpful in identifying a microorganism in a sample." hint="Reread Bergey's Manuals." >}}
 Microbes lack easily observable macroscopic features, so scientists rely on methods such as biochemical tests, serological tests, and DNA/rRNA sequencing to identify and classify them. *Bergey's Manual of Determinative Bacteriology* and *Bergey's Manual of Systematic Bacteriology* are the standard references for identifying and classifying different prokaryotes.
 ===CHECKS===
 lack easily observable macroscopic features
@@ -173,7 +173,7 @@ Learn more about phylogenetic trees by exploring the Wellcome Trust's interactiv
 {{< multiplechoice
   question="Which of the following is the standard resource for identifying bacteria?"
   answer="Bergey's *Manual of Determinative Bacteriology*"
-  hint="This is a set of manuals first published in 1923 and updated many times since, not a phylogenetic tree or an 18th-century taxonomy book."
+  hint="Reread the subsection just before the Same Name, Different Strain box."
 >}}
 *Systema Naturae*
 Bergey's *Manual of Determinative Bacteriology*
@@ -184,7 +184,7 @@ Haeckel's *General Morphology of Organisms*
 {{< multiplechoice
   question="In binomial nomenclature, an organism's scientific name includes its ________."
   answer="genus and species"
-  hint="These are the two most specific levels of Linnaeus's taxonomic hierarchy — the ones combined to form a scientific name."
+  hint="Reread the first paragraph of Naming Microbes."
 >}}
 genus and species
 kingdom and species
@@ -192,7 +192,7 @@ family and genus
 class and order
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Name some techniques that can be used to identify and differentiate species of bacteria." hint="Think about tests that examine biochemical, molecular, and immune-system-reactive properties, rather than physical appearance." >}}
+{{< selfcheck question="Name some techniques that can be used to identify and differentiate species of bacteria." hint="Reread the last four sentences of the subsection just before the Same Name, Different Strain box." >}}
 Biochemical tests can be used to identify chemicals unique to certain species. Serological tests can be used to identify specific antibodies that will react against the proteins found in certain species. Ultimately, DNA and rRNA sequencing can be used both for identifying a particular bacterial species and for classifying newly discovered species.
 ===CHECKS===
 biochemical tests can be used to identify chemicals unique to certain species
@@ -200,7 +200,7 @@ serological tests can be used to identify specific antibodies
 DNA and rRNA sequencing can be used ... for identifying a particular bacterial species
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why is using binomial nomenclature more useful than using common names?" hint="Think about what happens when two different organisms end up sharing the same descriptive common name." >}}
+{{< selfcheck question="Why is using binomial nomenclature more useful than using common names?" hint="Reread the end of the *Haloquadratum walsbyi* paragraph in Naming Microbes." >}}
 The systematic nomenclature scientists use assigns each organism a single, unique two-word name that is recognized by scientists all over the world, unlike a common descriptive name — such as a red-headed woodpecker — which becomes ambiguous once another species with the same common trait is discovered. This system eliminates that potential problem.
 ===CHECKS===
 assigns each organism a single, unique two-word name that is recognized by scientists all over the world
@@ -213,7 +213,7 @@ this system eliminates that potential problem
 {{< multiplechoice
   question="Which of the following was NOT a kingdom in Linnaeus's taxonomy?"
   answer="protist"
-  hint="Linnaeus divided the natural world into three kingdoms; one option here was added to the tree of life a century later, by a different scientist."
+  hint="Reread the paragraph just below the Linnaeus portrait."
 >}}
 animal
 mineral
@@ -224,7 +224,7 @@ plant
 {{< multiplechoice
   question="Which scientist proposed adding a kingdom for protists?"
   answer="Ernst Haeckel"
-  hint="This scientist wrote *General Morphology of Organisms* in 1866 and later added a fourth kingdom for organisms lacking nuclei."
+  hint="Reread the second paragraph of Evolving Trees of Life (Phylogenies)."
 >}}
 Carolus Linnaeus
 Carl Woese
@@ -235,7 +235,7 @@ Ernst Haeckel
 {{< multiplechoice
   question="Which of the following is NOT a domain in Woese and Fox's phylogenetic tree?"
   answer="Plantae"
-  hint="Woese and Fox's tree groups all life into just three domains above the kingdom level — one of these options is a kingdom, not a domain."
+  hint="Reread the paragraph on Woese and Fox's tree and the figure below it."
 >}}
 Plantae
 Bacteria
@@ -246,28 +246,26 @@ Eukarya
 {{< textin
   question="Haeckel proposed adding the kingdoms ________ and ________ to his phylogenetic tree."
   answer="Protista and Monera"
-  accept="Monera and Protista|Protista Monera|Monera Protista"
-  hint="One kingdom held unicellular organisms in general; the other held unicellular organisms whose cells lack nuclei."
+  accept="Monera and Protista|Protista Monera|Monera Protista|Protists and Monera|Monera and Protists|Protists Monera|Monera Protists"
+  hint="Reread the second paragraph of Evolving Trees of Life (Phylogenies)."
 >}}
 
 {{< textin
   question="________ are organisms without membrane-bound nuclei."
   answer="Prokaryotes"
-  accept="prokaryote"
-  hint="This term names cells whose DNA is not enclosed within a nucleus — the opposite of the term for cells that do have one."
+  hint="Reread the Whittaker paragraph in Evolving Trees of Life (Phylogenies)."
 >}}
 
 {{< textin
   question="________ are microorganisms that are not included in phylogenetic trees because they are acellular."
   answer="Viruses"
-  accept="virus"
-  hint="These infectious agents are not made up of cells at all, so they cannot be placed on a tree built from cellular relationships."
+  hint="Reread the paragraph just above the timeline figure."
 >}}
 
 {{< multiplechoice
   question="What is a phylogenetic tree?"
   answer="A diagram that depicts the evolutionary relationships among different species of organisms"
-  hint="Think about what the diagram is meant to represent and how the groups within it are arranged."
+  hint="Reread the first paragraph of Evolving Trees of Life (Phylogenies)."
 >}}
 The classification, description, identification, and naming of living organisms
 A two-word naming system for identifying organisms by genus and specific epithet
@@ -278,7 +276,7 @@ An organism made up of one or more cells that contain a membrane-bound nucleus a
 {{< multiplechoice
   question="Which of the five kingdoms in Whittaker's phylogenetic tree are prokaryotic, and which are eukaryotic?"
   answer="Monera is prokaryotic; Fungi, Protista, Plantae, and Animalia are eukaryotic"
-  hint="Recall which empire held only one kingdom, and which empire held the other four."
+  hint="Reread the Whittaker paragraph in Evolving Trees of Life (Phylogenies)."
 >}}
 Protista is prokaryotic; Monera, Fungi, Plantae, and Animalia are eukaryotic
 Monera is prokaryotic; Fungi, Protista, Plantae, and Animalia are eukaryotic
@@ -289,7 +287,7 @@ Animalia is prokaryotic; Monera, Fungi, Protista, and Plantae are eukaryotic
 {{< multiplechoice
   question="What molecule did Woese and Fox use to construct their phylogenetic tree?"
   answer="Small subunit ribosomal RNA"
-  hint="This is the same kind of molecule involved in protein synthesis, compared across many different organisms' genes."
+  hint="Reread the paragraph on Woese and Fox's tree."
 >}}
 DNA
 Small subunit ribosomal RNA
@@ -309,4 +307,4 @@ a closer evolutionary relationship between Archaea and Eukarya than either has t
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 1.2: A Systematic Approach](https://openstax.org/books/microbiology/pages/1-2-a-systematic-approach) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with the source alt text rewritten for all five figures to describe what is visibly drawn (the Linnaeus portrait, the Haeckel engraving, the timeline, the labeled Woese and Fox tree, and its unlabeled Art Connection counterpart) rather than restate the caption, and `kind="diagram"` set explicitly on the four drawn figures and `kind="photo"` on the portrait, overriding the media manifest's JPEG-based guess; a longdesc added for the Haeckel engraving, the timeline, and the labeled Woese and Fox tree, walking each in reading order; two of the source alts corrected against the artwork in doing so — the Haeckel engraving's trunk is labelled *Radix communis Organismorum* (with *Moneres autogonum* beside it), not "Radix Monera", and Whittaker's fungi branch sits on the opposite side of the crown from plants rather than "between plants and animals" — both reported as source defects; the "Spirocheres" and "Pyrodicticu" of the two tree alts spelled as the artwork spells them, Spirochetes and Pyrodicticum (also reported); feature boxes rendered as callouts; four of the five Check Your Understanding bullets rendered as body self-checks, with model answers and rubrics assembled from this section's own preceding text; the Clinical Focus box's "Jump to the next / Go back to the previous Clinical Focus box" links replaced with two plain sentences linking to Sections 1.1 and 1.3; the cross-reference to the book's Appendix D left as plain text, since the appendices are not authored pages; the end-of-section Multiple Choice, Fill in the Blank, Short Answer, and Critical Thinking questions adapted into the closing interactive Practice block, sorted under the objective each supports; the Multiple Choice question "Which of the following is a correct usage of binomial nomenclature?" (options *Homo Sapiens*, *homo sapiens*, *Homo sapiens*, *Homo Sapiens*) omitted, because all three of its distractors differ from the keyed option only in capitalization, italicization, or both, so every option shares one spoken name and the item cannot be answered with a screen reader; the Fill in the Blank item "an organism's scientific name includes its ________ and __________" (keyed "genus, species") rebuilt as a multiple choice among genus-and-species and three other paired-rank distractors drawn from Linnaeus's own hierarchy (kingdom/class/order/family/genus/species), because the ORDER of that pair is part of what the convention teaches and a single text field cannot mark a reversed pair wrong without also rejecting the punctuation a learner chooses; the section's other two-blank item ("Haeckel proposed adding the kingdoms ________ and ________"), whose two answers are unordered, stays a text-recall item and accepts either order with or without a comma; the Critical Thinking item "Label the three Domains found on modern phylogenetic trees" adapted from a labeling task into a mediafigure followed by a self-check, since the site has no drag-to-label component; model answers for one Short Answer and two Critical Thinking questions are written from this section's own text, because the source prints no answer key for either set; and key terms compiled from the module's five defined terms and the book's Glossary appendix (all five taken from the glossary; none from a defining sentence); 1 of the source's body Check Your Understanding questions and 3 of its unkeyed Short Answer questions are graded from the module's own sentences rather than answered in prose — the source prints no key for them: "how do scientists determine how closely two organisms are related" is now a `multiplechoice` keyed by the module's comparative-genetics sentence, with distractors drawn from the module's other, pre-genetic bases of classification (observable macroscopic features, visible similarities such as hair or limb count, common descriptive names); "what is a phylogenetic tree" is now a `multiplechoice` keyed by the module's own definition, with distractors drawn from the module's definitions of taxonomy, binomial nomenclature, and eukaryote; "which of the five kingdoms ... are prokaryotic, and which are eukaryotic" is now a `multiplechoice` among the correct empire assignment and three other assignments of the same five kingdom names; "what molecule did Woese and Fox use" is now a `multiplechoice` among small subunit ribosomal RNA, DNA, and proteins, all named in the module's own comparative-genetics sentence. The body Check Your Understanding question "Explain why the branches on the 'tree of life' all originate from a single 'trunk'" stays a `selfcheck`: the module gives only one causal sentence (a common ancestral cell type) and no other printed explanation of the same kind to build honest wrong options from without either fabricating a claim the module does not make or offering a distractor (horizontal gene transfer, the rRNA sequencing method itself) that is itself defensible as an answer. The *Haloquadratum* sentence's claim that its cells form square clusters of four is corrected to sheets of square cells with a visible Source note (erratum 378).</small>
+<small>This section is adapted from [Microbiology, Section 1.2: A Systematic Approach](https://openstax.org/books/microbiology/pages/1-2-a-systematic-approach) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with the source alt text rewritten for all five figures to describe what is visibly drawn (the Linnaeus portrait, the Haeckel engraving, the timeline, the labeled Woese and Fox tree, and its unlabeled Art Connection counterpart) rather than restate the caption, and `kind="diagram"` set explicitly on the four drawn figures and `kind="photo"` on the portrait, overriding the media manifest's JPEG-based guess; a longdesc added for the Haeckel engraving, the timeline, and the labeled Woese and Fox tree, walking each in reading order; two of the source alts corrected against the artwork in doing so — the Haeckel engraving's trunk is labelled *Radix communis Organismorum* (with *Moneres autogonum* beside it), not "Radix Monera", and Whittaker's fungi branch sits on the opposite side of the crown from plants rather than "between plants and animals" — both reported as source defects; the "Spirocheres" and "Pyrodicticu" of the two tree alts spelled as the artwork spells them, Spirochetes and Pyrodicticum (also reported); feature boxes rendered as callouts; four of the five Check Your Understanding bullets rendered as body self-checks, with model answers and rubrics assembled from this section's own preceding text; the Clinical Focus box's "Jump to the next / Go back to the previous Clinical Focus box" links replaced with two plain sentences linking to Sections 1.1 and 1.3; the cross-reference to the book's Appendix D left as plain text, since the appendices are not authored pages; the end-of-section Multiple Choice, Fill in the Blank, Short Answer, and Critical Thinking questions adapted into the closing interactive Practice block, sorted under the objective each supports; the Multiple Choice question "Which of the following is a correct usage of binomial nomenclature?" (options *Homo Sapiens*, *homo sapiens*, *Homo sapiens*, *Homo Sapiens*) omitted, because all three of its distractors differ from the keyed option only in capitalization, italicization, or both, so every option shares one spoken name and the item cannot be answered with a screen reader; the Fill in the Blank item "an organism's scientific name includes its ________ and __________" (keyed "genus, species") rebuilt as a multiple choice among genus-and-species and three other paired-rank distractors drawn from Linnaeus's own hierarchy (kingdom/class/order/family/genus/species), because the ORDER of that pair is part of what the convention teaches and a single text field cannot mark a reversed pair wrong without also rejecting the punctuation a learner chooses; the section's other two-blank item ("Haeckel proposed adding the kingdoms ________ and ________"), whose two answers are unordered, stays a text-recall item and accepts either order with or without a comma (its "Protista" is printed in part, as "protist" and "protists", by the option list and the stem of the two source Multiple Choice items above it, all kept verbatim; placed first instead, its own stem would print the key of the "Which scientist proposed adding a kingdom for protists?" item); the Critical Thinking item "Label the three Domains found on modern phylogenetic trees" adapted from a labeling task into a mediafigure followed by a self-check, since the site has no drag-to-label component; model answers for one Short Answer and two Critical Thinking questions are written from this section's own text, because the source prints no answer key for either set; and key terms compiled from the module's five defined terms and the book's Glossary appendix (all five taken from the glossary; none from a defining sentence); 1 of the source's body Check Your Understanding questions and 3 of its unkeyed Short Answer questions are graded from the module's own sentences rather than answered in prose — the source prints no key for them: "how do scientists determine how closely two organisms are related" is now a `multiplechoice` keyed by the module's comparative-genetics sentence, with distractors drawn from the module's other, pre-genetic bases of classification (observable macroscopic features, visible similarities such as hair or limb count, common descriptive names); "what is a phylogenetic tree" is now a `multiplechoice` keyed by the module's own definition, with distractors drawn from the module's definitions of taxonomy, binomial nomenclature, and eukaryote; "which of the five kingdoms ... are prokaryotic, and which are eukaryotic" is now a `multiplechoice` among the correct empire assignment and three other assignments of the same five kingdom names; "what molecule did Woese and Fox use" is now a `multiplechoice` among small subunit ribosomal RNA, DNA, and proteins, all named in the module's own comparative-genetics sentence. The body Check Your Understanding question "Explain why the branches on the 'tree of life' all originate from a single 'trunk'" stays a `selfcheck`: the module gives only one causal sentence (a common ancestral cell type) and no other printed explanation of the same kind to build honest wrong options from without either fabricating a claim the module does not make or offering a distractor (horizontal gene transfer, the rRNA sequencing method itself) that is itself defensible as an answer. The *Haloquadratum* sentence's claim that its cells form square clusters of four is corrected to sheets of square cells with a visible Source note (erratum 378).</small>

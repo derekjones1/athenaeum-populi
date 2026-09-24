@@ -32,7 +32,7 @@ When a discipline such as biology is studied, it is often helpful to subdivide i
 
 To produce a sound set of management options, a *conservation biologist* needs to collect accurate data, including current population size, factors affecting reproduction (like physiology and behavior), habitat requirements (such as plants and soils), and potential human influences on the endangered population and its habitat (which might be derived through studies in sociology and urban ecology). Within the discipline of ecology, researchers work at four general levels, which sometimes overlap. These levels are organism, population, community, and ecosystem, shown below.
 
-{{< mediafigure src="biology/Figure_B44_01_04" kind="diagram" eager="true" alt="A wide diagram tracing five levels of biological organization as photographs in boxes connected by arrows: a single pine tree labeled Organisms, a dense pine forest labeled Populations, and a small tan-furred animal peering out from among tree roots labeled Communities, all grouped in one box; an arrow leads to a coastal marsh and tree line labeled Ecosystems; a second arrow leads to a satellite image of Earth labeled The Biosphere." longdesc="A large box at left holds three photographs. Top left, a single pine tree on a hillside, captioned 'Organisms: In a forest, each pine tree is an organism.' Top right, a dense pine forest, captioned 'Populations: Together, all the pine trees make up a population.' Below both, spanning the box's width, a small tan-and-brown animal peering out from among tree roots and leaves, captioned 'Communities: All the plant and animal species comprise a community.' A blue arrow leads right from this box to a second box: a photograph of marsh grasses and low trees along a shoreline, captioned 'Ecosystems: This coastal ecosystem in the southeastern United States includes living organisms and the environment in which they live.' A second blue arrow leads right from the Ecosystems box to a third box: a colorized satellite image of Earth's landmasses and oceans, captioned 'The Biosphere: Encompasses all the ecosystems on Earth.'" >}}
+{{< mediafigure src="biology/Figure_B44_01_04" kind="diagram" eager="true" alt="A wide diagram tracing five levels of biological organization as photographs in boxes connected by arrows: a single pine tree labeled Organisms, a dense pine forest labeled Populations, and a small tan-furred animal peering out from among tree roots labeled Communities, all grouped in one box; an arrow leads to a coastal marsh and tree line labeled Ecosystems; a second arrow leads to a satellite image of Earth labeled The Biosphere." longdesc="A large box at left holds three photographs. Top left, a single pine tree on a hillside, captioned 'Organisms: In a forest, each pine tree is an organism.' Top right, a dense pine forest, captioned 'Populations: Together, all the pine trees make up a population.' Below both, centered, a small tan-and-brown animal peering out from among tree roots and leaves, captioned 'Communities: All the plant and animal species comprise a community.' A blue arrow leads right from this box to a second box: a photograph of marsh grasses and low trees along a shoreline, captioned 'Ecosystems: This coastal ecosystem in the southeastern United States includes living organisms and the environment in which they live.' A second blue arrow leads right from the Ecosystems box to a third box: a colorized satellite image of Earth's landmasses and oceans, captioned 'The Biosphere: Encompasses all the ecosystems on Earth.'" >}}
 Ecologists study within several biological levels of organization. (credit “organisms”: modification of work by yeowatzup”/Flickr; credit “populations”: modification of work by "Crystl"/Flickr; credit “communities”: modification of work by US Fish and Wildlife Service; credit “ecosystems”: modification of work by Tom Carlisle, US Fish and Wildlife Service Headquarters; credit “biosphere”: NASA)
 {{< /mediafigure >}}
 
@@ -109,7 +109,7 @@ Ecology is the study of the interactions of living things with their environment
 {{< textin
   question="The section's summary states that ecologists ask questions comprising four levels of general biological organization: organismal, population, community, and ________."
   answer="ecosystem"
-  hint="This is the level ecologists study when they examine both the living and the nonliving components of an area together, discussed later in this same section."
+  hint="Reread the Summary's second sentence, which lists the four levels in order."
 >}}
 
 {{< textin
@@ -123,7 +123,7 @@ Ecology is the study of the interactions of living things with their environment
   question="Individuals that are members of different species are called ________."
   answer="heterospecifics"
   accept="heterospecific"
-  hint="This term pairs with the one for same-species individuals; its prefix marks 'different' rather than 'same.'"
+  hint="Reread the Community Ecology paragraph on interactions between various species."
 >}}
 
 {{< selfcheck question="Ecologists often collaborate with other researchers interested in ecological questions. Describe the levels of ecology that would be easier for collaboration because of the similarities of questions asked. What levels of ecology might be more difficult for collaboration?" hint="Compare how broad each level's typical questions are — a level whose questions closely resemble another's invites easier collaboration than one whose scope covers many different environmental components." >}}
@@ -147,13 +147,13 @@ some species with members that have a wide geographic range might not be conside
 {{< textin
   question="To produce a sound set of management options for an endangered species, a conservation biologist needs data on population size, reproduction, and habitat requirements, plus potential human influences that might be derived through studies in ________ and urban ecology."
   answer="sociology"
-  hint="This field studies human society and behavior — the section pairs it with 'urban ecology' as a source of data about people's effects on a species' habitat."
+  hint="Reread the paragraph on the conservation biologist's data needs, at the start of Levels of Ecological Study."
 >}}
 
 {{< multiplechoice
   question="Which of the following disciplines does this section name as one that ecology integrates with, alongside mathematics, statistics, biochemistry, molecular biology, physiology, evolution, and biodiversity?"
   answer="climatology"
-  hint="This section's first paragraph lists nine fields ecology integrates with, ending with the science of weather and long-term atmospheric patterns — find the option that matches a field named there."
+  hint="This section's first paragraph lists nine fields ecology integrates with — find the option that matches a field named there."
 >}}
 astronomy
 climatology
@@ -184,15 +184,15 @@ soil particle size
 {{< /multiplechoice >}}
 
 {{< textin
-  question="In an ecosystem, the living things are known as the ________ components."
-  answer="biotic"
-  hint="This word shares its root with 'biology' — the study of living things."
+  question="In an ecosystem, the nonliving things — such as air, water, and soil — are known as the ________ components."
+  answer="abiotic"
+  hint="Reread the paragraph that gives air, water, and soil as examples of one kind of component."
 >}}
 
 {{< textin
-  question="In an ecosystem, the nonliving things — such as air, water, and soil — are known as the ________ components."
-  answer="abiotic"
-  hint="The prefix here means 'without' or 'not,' attached to the same root as the term for the living components."
+  question="In an ecosystem, the living things are known as the ________ components."
+  answer="biotic"
+  hint="Reread the first paragraph of the subsection that extends organismal, population, and community ecology."
 >}}
 
 ### Recognize the relationship between abiotic and biotic components of the environment
@@ -200,13 +200,19 @@ soil particle size
 {{< multiplechoice
   question="The study of nutrient cycling through the environment is an example of which of the following?"
   answer="ecosystem ecology"
-  hint="This branch of ecology studies how nutrients and energy move among organisms and through the surrounding atmosphere, soil, and water — a scope broader than any single population or community."
+  hint="Compare the questions each of the four level subsections says its researchers ask; find the level whose questions follow materials beyond the organisms themselves."
 >}}
 organismal ecology
 population ecology
 community ecology
 ecosystem ecology
 {{< /multiplechoice >}}
+
+{{< textin
+  question="The oak-pine barren habitat of the Karner blue butterfly and the wild lupine is characterized by natural disturbance and nutrient-poor soils that are low in ________."
+  answer="nitrogen"
+  hint="Reread the paragraph on the Karner blue's habitat that closes the level subsections."
+>}}
 
 {{< selfcheck question="Explain how ecosystem ecology studies the relationship between the biotic and abiotic components of an area." hint="Ecosystem ecology extends the other three levels; think about which nonliving materials it tracks as they move among organisms and through the surroundings." >}}
 Ecosystem ecology is an extension of organismal, population, and community ecology. The ecosystem is composed of all the biotic components (living things) in an area along with the abiotic components (nonliving things) of that area, such as air, water, and soil. Ecosystem biologists ask questions about how nutrients and energy are stored and how they move among organisms and through the surrounding atmosphere, soil, and water.
@@ -216,13 +222,6 @@ the ecosystem includes the biotic (living) and abiotic (nonliving) components of
 ecosystem biologists ask how nutrients and energy are stored and move among organisms and through the surrounding atmosphere, soil, and water
 {{< /selfcheck >}}
 
-{{< textin
-  question="The summary explains that ecologists studying an ecosystem examine the living species, called the ________, as well as the nonliving portions (the abiotic components), such as air, water, and soil, of the environment."
-  answer="biotic components"
-  accept="biotic"
-  hint="The summary names this pair right beside 'nonliving portions (the abiotic components)' — it is the sibling term for the living species just named."
->}}
-
 ---
 
-<small>This section is adapted from [Biology 2e, Section 44.1: The Scope of Ecology](https://openstax.org/books/biology-2e/pages/44-1-the-scope-of-ecology) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the levels-of-organization figure (Figure_B44_01_04, module-keyed to the first, unlettered figure in "Levels of Ecological Study" despite its own file name) kept its manifest "diagram" kind and got a new alt and a longdesc, since its source alt named the small animal in the "Communities" panel a "marmot" — inspection of the image shows a pointed-muzzle, large-eared animal that does not read as a marmot, so the rewritten alt and longdesc describe it only by its visible features (tan-furred, peering from tree roots) rather than repeat an uncertain species guess; the two "Photo depicts …"/"This photo shows …" source alts on Figure_44_01_02 and Figure_44_01_04 replaced with plain descriptive alts, and Figure_44_01_03's alt reworded the same way, dropping the "clam-shaped petals" description in favor of the flower spike's actual bud-to-bloom color progression; in-text pointers to figures ("Figure 44.2," "Figure 44.3," "Figure 44.4," "Figure 44.5") replaced with "shown below" or "shown above," since Hugo does not number figures; the module's own "though"/"through" typo, which appears twice — "nutrient cycling **though** the environment" (exercise fs-idp212979968) and "the movement of resources, such as nutrients, **though** the biotic and abiotic portions of the ecosystem" (Ecosystem Ecology paragraph 2) — corrected to "through" in both places on the page; reported as a source defect below; the two `interactive`-class notes rendered as Link to Learning callouts, each keeping the module's own openstax.org/l/ redirect URL (climate_health, ecologist_role) with descriptive link text (the ecologist_role note's bare "site" replaced; the climate_health note already carried its title); the `career`-class note rendered as a callout with its bold name and italicized title, its own figure (Figure_44_01_04) kept immediately after the callout rather than nested inside it, matching this book's existing pattern for a note-wrapped figure; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively) — both Critical Thinking Questions used, together under the first objective group; rubric checkpoints added to each self-check, decomposing its model answer (the source solution, or for two locally built self-checks, a paraphrase of one paragraph with no new claim) into check-off clauses; five key-term recall items added from the glossary (ecology, conspecifics, heterospecifics, biotic, abiotic), covering the section's entire five-term glossary; two additional cloze recall items built from the section's own Summary sentence (blanking "ecosystem" and "biotic components") since the section has no Visual Connection or comparison table to draw Practice items from; because the second objective (integration of scientific disciplines) has no Review Question, Critical Thinking Question, or glossary term of its own, its three-item group is built entirely from the section's own sentences — a cloze recall item blanking "sociology," a multiple choice naming a discipline from the section's own nine-field list with three disciplines never named in the section as distractors, and a self-check paraphrasing the conservation-biologist paragraph — all disclosed here and in the source ledger. Source defects: module `m66410` prints "though" for "through" twice — exercise `fs-idp212979968`, "The study of nutrient cycling **though** the environment is an example of which of the following?", and body paragraph `fs-idp199797600`, "…the movement of resources, such as nutrients, **though** the biotic and abiotic portions of the ecosystem"; both confirmed against the raw CNXML and corrected on the page as noted above.</small>
+<small>This section is adapted from [Biology 2e, Section 44.1: The Scope of Ecology](https://openstax.org/books/biology-2e/pages/44-1-the-scope-of-ecology) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the levels-of-organization figure (Figure_B44_01_04, module-keyed to the first, unlettered figure in "Levels of Ecological Study" despite its own file name) kept its manifest "diagram" kind and got a new alt and a longdesc, since its source alt named the small animal in the "Communities" panel a "marmot" — inspection of the image shows a pointed-muzzle, large-eared animal that does not read as a marmot, so the rewritten alt and longdesc describe it only by its visible features (tan-furred, peering from tree roots) rather than repeat an uncertain species guess; the two "Photo depicts …"/"This photo shows …" source alts on Figure_44_01_02 and Figure_44_01_04 replaced with plain descriptive alts, and Figure_44_01_03's alt reworded the same way, dropping the "clam-shaped petals" description in favor of the flower spike's actual bud-to-bloom color progression; in-text pointers to figures ("Figure 44.2," "Figure 44.3," "Figure 44.4," "Figure 44.5") replaced with "shown below" or "shown above," since Hugo does not number figures; the module's own "though"/"through" typo, which appears twice — "nutrient cycling **though** the environment" (exercise fs-idp212979968) and "the movement of resources, such as nutrients, **though** the biotic and abiotic portions of the ecosystem" (Ecosystem Ecology paragraph 2) — corrected to "through" in both places on the page; reported as a source defect below; the two `interactive`-class notes rendered as Link to Learning callouts, each keeping the module's own openstax.org/l/ redirect URL (climate_health, ecologist_role) with descriptive link text (the ecologist_role note's bare "site" replaced; the climate_health note already carried its title); the `career`-class note rendered as a callout with its bold name and italicized title, its own figure (Figure_44_01_04) kept immediately after the callout rather than nested inside it, matching this book's existing pattern for a note-wrapped figure; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively) — both Critical Thinking Questions used, together under the first objective group; rubric checkpoints added to each self-check, decomposing its model answer (the source solution, or for two locally built self-checks, a paraphrase of one paragraph with no new claim) into check-off clauses; five key-term recall items added from the glossary (ecology, conspecifics, heterospecifics, biotic, abiotic), covering the section's entire five-term glossary; one cloze recall item built from the section's own Summary sentence (blanking "ecosystem") and one from the Ecosystem Ecology habitat sentence (blanking "nitrogen"; it replaced a Summary cloze on "biotic components" that re-asked the biotic key-term item) since the section has no Visual Connection or comparison table to draw Practice items from; because the second objective (integration of scientific disciplines) has no Review Question, Critical Thinking Question, or glossary term of its own, its three-item group is built entirely from the section's own sentences — a cloze recall item blanking "sociology," a multiple choice naming a discipline from the section's own nine-field list with three disciplines never named in the section as distractors, and a self-check paraphrasing the conservation-biologist paragraph — all disclosed here and in the source ledger. Source defects: module `m66410` prints "though" for "through" twice — exercise `fs-idp212979968`, "The study of nutrient cycling **though** the environment is an example of which of the following?", and body paragraph `fs-idp199797600`, "…the movement of resources, such as nutrients, **though** the biotic and abiotic portions of the ecosystem"; both confirmed against the raw CNXML and corrected on the page as noted above.</small>

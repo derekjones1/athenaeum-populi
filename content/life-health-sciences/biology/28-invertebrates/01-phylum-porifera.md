@@ -44,12 +44,12 @@ Watch [a video of water moving through the sponge body](https://www.openstax.org
 
 The **amoebocytes** (derived from stem-cell-like archaeocytes), are so named because they move throughout the mesohyl in an amoeba-like fashion. They have a variety of functions: In addition to delivering nutrients from choanocytes to other cells within the sponge, they also give rise to eggs for sexual reproduction. (The eggs remain in the mesohyl, whereas the sperm cells are released into the water.) The amoebocytes can differentiate into other cell types of the sponge, such as collenocytes and lophocytes, which produce the collagen-like protein that support the mesohyl. Amoebocytes can also give rise to sclerocytes, which produce *spicules* (skeletal spikes of silica or calcium carbonate) in some sponges, and spongocytes, which produce the protein spongin in the majority of sponges. These different cell types in sponges are shown below.
 
-{{< mediafigure src="biology/Figure_28_01_02" kind="diagram" alt="Two side-by-side panels: (a) a vase-shaped cross-section of a sponge's basic body plan with labeled openings and cavity, and (b) an enlarged cutaway of the body wall labeling seven specialized cell types." longdesc="Panel (a), the basic sponge body plan, draws a vase-shaped cross-section with blue arrows entering low on both sides through the gaps between the wall's segments, curving upward through the wide central cavity, labeled Spongocoel, to a single opening at the top, labeled Osculum; one of those gaps, near the top of the right wall just below the osculum, carries the label Ostia; the wall's dotted inner tissue at the base is labeled Mesohyl. A black-outlined box highlights one segment of the right wall below the Ostia label, and a gray arrow points from that box across to panel (b). Panel (b), some sponge cell types, is an enlarged view of that wall segment, showing two stacked repeating units, each a row of red flagellated cells lining an inner channel — every cell drawn with a wavy line for its flagellum — labeled Choanocyte ('generates water current and filters food particles from water'). Reading top to bottom: at the top, a purple bristled cell sitting in the pale outer layer is labeled Lophocyte or collenocyte ('secretes collagen'); beside it, that same pale outer layer is labeled Pinacocyte ('forms the outer covering of the sponge; may phagocytize large food particles'); a green circle nested against the first choanocyte row is labeled Oocyte ('egg cell'); between the two choanocyte rows, a blue arrow points left through a narrow gap labeled Porocyte ('controls water flow through ostia'); below the gap, a green amoeba-shaped cell is labeled Amoebocyte ('delivers nutrients to cells, and differentiates into other cell types'), and beside it, in the second choanocyte row, a gray spiked cell is labeled Sclerocyte ('secretes silica spicules')." >}}
+{{< mediafigure src="biology/Figure_28_01_02" kind="diagram" alt="Two side-by-side panels: (a) a vase-shaped cross-section of a sponge's basic body plan with labeled openings and cavity, and (b) an enlarged cutaway of the body wall labeling seven specialized cell types." longdesc="Panel (a), the basic sponge body plan, draws a vase-shaped cross-section with blue arrows entering low on both sides through the gaps between the wall's segments, curving upward through the wide central cavity, labeled Spongocoel, to a single opening at the top, labeled Osculum; one of those gaps, near the top of the right wall just below the osculum, carries the label Ostia; the wall's dotted inner tissue at the base is labeled Mesohyl. A black-outlined box highlights one segment of the right wall below the Ostia label, and a gray arrow points from that box across to panel (b). Panel (b), some sponge cell types, is an enlarged view of that wall segment, with the inner (spongocoel) side at left and the outer surface at right. Down the left side run two stacks of three red cubical cells, each cell with a wavy flagellum and a fringe of collar strands pointing into the channel, labeled Choanocyte ('generates water current and filters food particles from water'). A thin yellow strip along the right edge, the outer covering, is labeled Pinacocyte ('forms the outer covering of the sponge; may phagocytize large food particles'). Between them lies a pale cream middle layer holding the other cells, top to bottom: a purple bristled cell labeled Lophocyte or collenocyte ('secretes collagen'); a green round cell labeled Oocyte ('egg cell'); then, between the two choanocyte stacks, a tube-shaped cell spanning the whole wall, with a blue arrow running through it from the outer surface into the channel, labeled Porocyte ('controls water flow through ostia'); below it a green amoeba-shaped cell labeled Amoebocyte ('delivers nutrients to cells, and differentiates into other cell types'); and a blue round cell holding a gray needle-shaped spicule that pokes out through the outer surface, labeled Sclerocyte ('secretes silica spicules')." >}}
 Simple sponge body plan and cell types. The sponge's (a) basic body plan and (b) some of the specialized cell types found in sponges are shown.
 {{< /mediafigure >}}
 
 {{< multiplechoice
-  question="Which of the following statements about the sponge's cell types is false?"
+  question="Which of the following statements is false?"
   answer="Pinacocytes can transform into any cell type."
   hint="Check which cell type the diagram itself credits with differentiating into other cell types, and compare that to what the outer-covering cell type is said to do."
 >}}
@@ -133,7 +133,7 @@ Animals included in phylum Porifera are parazoans because they do not show the f
 {{< multiplechoice
   question="Mesohyl contains:"
   answer="a collagen-like gel and suspended cells for various functions."
-  hint="This is the jelly-like substance that sits between the sponge's outer layer and its feeding chambers, and houses amoebocytes and sclerocytes."
+  hint="Look at the Morphology of Sponges paragraph that describes the layer between the pinacoderm and the choanocytes."
 >}}
 a polysaccharide gel and dead cells.
 a collagen-like gel and suspended cells for various functions.
@@ -144,13 +144,25 @@ multiple pores.
 {{< multiplechoice
   question="The large central opening in the parazoan body is called the:"
   answer="osculum."
-  hint="Water that has already passed through the spongocoel exits the sponge through this single common opening — it is not where water enters."
+  hint="Trace the path of water through the sponge body-plan figure and its caption."
 >}}
 gemmule.
 spicule.
 ostia.
 osculum.
 {{< /multiplechoice >}}
+
+{{< textin
+  question="The central cavity within the body of some sponges is called the ________."
+  answer="spongocoel"
+  hint="Water enters this cavity through numerous ostia and is expelled from it through the osculum."
+>}}
+
+{{< textin
+  question="The cell that secretes silica spicules into the mesohyl is called a ________."
+  answer="sclerocyte"
+  hint="Look at the Morphology of Sponges paragraphs on the cell types that reside within the mesohyl."
+>}}
 
 {{< selfcheck question="Describe the different cell types and their functions in sponges." hint="Think about which cell type forms the outer covering, which one regulates water entering the pores, and which one lines the feeding chambers." >}}
 Pinacocytes are epithelial-like cells, form the outermost layer of sponges, and enclose a jelly-like substance called mesohyl. In some sponges, porocytes form ostia, single tube-shaped cells that act as valves to regulate the flow of water into the spongocoel. Choanocytes ("collar cells") are present at various locations, depending on the type of sponge, but they always line some space through which water flows and are used in feeding.
@@ -161,24 +173,12 @@ choanocytes always line some space through which water flows
 choanocytes are used in feeding
 {{< /selfcheck >}}
 
-{{< textin
-  question="The central cavity within the body of some sponges is called the ________."
-  answer="spongocoel"
-  hint="Water enters this cavity through numerous ostia and is expelled from it through the osculum."
->}}
-
-{{< textin
-  question="The collagen-like gel containing suspended cells that perform various functions in a sponge is called the ________."
-  answer="mesohyl"
-  hint="This jelly-like layer sits between the sponge's outer covering and its feeding chambers, and gives the body its tubular shape."
->}}
-
 ### Explain the various body forms and bodily functions of sponges
 
 {{< multiplechoice
   question="Most sponge body plans are slight variations on a simple tube-within-a-tube design. Which of the following is a key limitation of sponge body plans?"
   answer="The reliance on osmosis/diffusion requires a design that maximizes the surface area to volume ratio of the sponge."
-  hint="Sponges have no circulatory system — every one of their cells must exchange gases and wastes directly with the water passing through the body."
+  hint="Look at the Physiological Processes in Sponges subsection."
 >}}
 Sponges lack the specialized cell types needed to produce more complex body plans.
 The reliance on osmosis/diffusion requires a design that maximizes the surface area to volume ratio of the sponge.
@@ -196,6 +196,12 @@ the organism can feed only on particles smaller than the cells themselves
 {{< /selfcheck >}}
 
 {{< textin
+  question="The structure produced by asexual reproduction in freshwater sponges, in which the morphology is inverted, is called a ________."
+  answer="gemmule"
+  hint="Reinforced with spicules and able to withstand harsh conditions, this structure lets a freshwater sponge recolonize a habitat once conditions improve."
+>}}
+
+{{< textin
   question="The sponge cell that functions to generate a water current and to trap and ingest food particles by phagocytosis is called a ________."
   answer="choanocyte"
   accept="collar cell"
@@ -203,17 +209,11 @@ the organism can feed only on particles smaller than the cells themselves
 >}}
 
 {{< textin
-  question="The structure produced by asexual reproduction in freshwater sponges, in which the morphology is inverted, is called a ________."
-  answer="gemmule"
-  hint="Reinforced with spicules and able to withstand harsh conditions, this structure lets a freshwater sponge recolonize a habitat once conditions improve."
->}}
-
-{{< textin
   question="The sponge cell with multiple functions, including nutrient delivery, egg formation, sperm delivery, and cell differentiation, is called an ________."
   answer="amoebocyte"
-  hint="This cell type moves throughout the mesohyl in an amoeba-like fashion."
+  hint="Look at the Morphology of Sponges paragraph on the cells derived from stem-cell-like archaeocytes."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 28.1: Phylum Porifera](https://openstax.org/books/biology-2e/pages/28-1-phylum-porifera) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the manifest's kind guess kept after inspection (Figure_28_01_01 and Figure_28_01_03abc as photos, Figure_28_01_02 as a diagram, all confirmed correct); a longdesc added to the sponge body-plan diagram (Figure_28_01_02) walking both panels' labels and water-flow arrows in reading order, since its caption carries none of that; the note wrapping the body-plan Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the four Link to Learning notes rendered as callouts, keeping each source URL (the embedded video's own player link for the first, since the printed page falls back to a self-referential page link for that one); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (spongocoel, mesohyl, choanocyte, gemmule, amoebocyte) added from the glossary.</small>
+<small>This section is adapted from [Biology 2e, Section 28.1: Phylum Porifera](https://openstax.org/books/biology-2e/pages/28-1-phylum-porifera) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with the manifest's kind guess kept after inspection (Figure_28_01_01 and Figure_28_01_03abc as photos, Figure_28_01_02 as a diagram, all confirmed correct); a longdesc added to the sponge body-plan diagram (Figure_28_01_02) walking both panels' labels and water-flow arrows in reading order, since its caption carries none of that; the note wrapping the body-plan Visual Connection rendered as its figure followed by a multiple choice, kept in the body; the four Link to Learning notes rendered as callouts, keeping each source URL (the embedded video's own player link for the first, since the printed page falls back to a self-referential page link for that one); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; five key-term recall items (spongocoel, sclerocyte, choanocyte, gemmule, amoebocyte) added from the glossary.</small>

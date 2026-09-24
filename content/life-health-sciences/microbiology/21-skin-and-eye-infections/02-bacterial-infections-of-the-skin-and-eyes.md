@@ -186,7 +186,7 @@ One of the most ubiquitous skin conditions is **acne**. Acne afflicts nearly 80%
 
 Acne occurs when hair follicles become clogged by shed skin cells and sebum, causing non-inflammatory lesions called comedones. Comedones (singular "comedo") can take the form of whitehead and blackhead pimples. Whiteheads are covered by skin, whereas blackhead pimples are not; the black color occurs when lipids in the clogged follicle become exposed to the air and oxidize (shown below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_21_02_acne" alt="(a) Three side-by-side cross-section drawings of a skin pore and its follicle. The first, labeled normal skin pore, shows an open channel down to the follicle. The second, labeled whitehead, shows the same channel plugged near the surface with a pale yellow mass. The third, labeled blackhead, shows the channel plugged with a dark, almost black mass that reaches the skin surface. (b) A close-up photo of a nose with a dark, mottled patch of blackheads across the bridge and side." longdesc="The three linked cross-sections in panel (a) share the same follicle anatomy — a hair shaft running down through a skin pore into a follicle fed by blood vessels — and differ only in what fills the upper channel: the normal pore is open and clear; the whitehead panel shows a pale, rounded plug of trapped sebum and skin cells sitting just under the surface, still covered by skin; the blackhead panel shows a similar plug that has pushed open to the surface and darkened to near black where it is exposed to air." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_21_02_acne" alt="(a) Three side-by-side cross-section drawings of a skin pore and its follicle. The first, labeled normal skin pore, shows an open channel down to the follicle. The second, labeled whitehead, shows the same channel plugged near the surface with a pale yellow mass. The third, labeled blackhead, shows the channel plugged with a dark, almost black mass that reaches the skin surface. (b) A close-up photo of the side of a nose, its skin dotted with many tiny, dark pinpoint blackheads." longdesc="The three linked cross-sections in panel (a) share the same follicle anatomy — a hair shaft running down through a skin pore into a follicle fed by blood vessels — and differ only in what fills the upper channel: the normal pore is open and clear; the whitehead panel shows a pale, rounded plug of trapped sebum and skin cells sitting just under the surface, still covered by skin; the blackhead panel shows a similar plug that has pushed open to the surface and darkened to near black where it is exposed to air." kind="diagram" >}}
 (a) Acne is characterized by whitehead and blackhead comedones that result from clogged hair follicles. (b) Blackheads, visible as black spots on the skin, have a dark appearance due to the oxidation of lipids in sebum via exposure to the air. (credit a: modification of work by Bruce Blaus)
 {{< /mediafigure >}}
 
@@ -235,7 +235,7 @@ A vaccine is available to protect individuals from anthrax. However, unlike most
 {{< multiplechoice
   question="What is the characteristic feature of a cutaneous anthrax infection?"
   answer="a black eschar, a mass of dead skin tissue"
-  hint="The nodule's cells die and form a dark mass at the site of infection — this term also names the crusted tissue a deep burn or pressure wound leaves behind."
+  hint="Read the second paragraph of Anthrax."
 >}}
 a large, fluid-filled bulla
 a black eschar, a mass of dead skin tissue
@@ -299,7 +299,7 @@ it is treated aggressively because untreated it can spread to the cornea and cau
 
 Infection by *C. trachomatis* causes chronic conjunctivitis, which leads to the formation of necrotic follicles and scarring in the upper eyelid. The scars turn the eyelashes inward (a condition known as trichiasis) and mechanical abrasion of the cornea leads to blindness (shown below). Antibiotics such as azithromycin are effective in treating trachoma, and outcomes are good when the disease is treated promptly. In areas where this disease is common, large public health efforts are focused on reducing transmission by teaching people how to avoid the risks of the infection.
 
-{{< mediafigure src="microbiology/OSC_Microbio_21_02_trichiasis" alt="(a) A drawn illustration of an eye and eyebrow, the lower lid rimmed pink and two eyelashes drawn curving inward to touch the eyeball instead of pointing outward. (b) A black-and-white photo of a person's closed eyelid held shut with a row of surgical sutures, a gloved hand and forceps positioned at the incision." longdesc="Panel (a) is a colored illustration, not a photograph: a red-rimmed eye is drawn with most lashes curving normally outward and two lashes redrawn bending back across the lid margin to press against the eyeball, the structure trichiasis names. Panel (b) is a black-and-white clinical photograph of a patient's eye after corrective surgery, the lid closed by a line of visible sutures while a gloved hand steadies the brow and forceps hold the incision." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_21_02_trichiasis" alt="(a) A drawn illustration of a bloodshot eye and eyebrow, with many lashes on both lids turned inward across the lid margins onto the eyeball instead of pointing outward. (b) A black-and-white photo of a person's closed eyelid held shut with a row of surgical sutures, a gloved hand and forceps positioned at the incision." longdesc="Panel (a) is a colored illustration, not a photograph: a bloodshot, red-rimmed eye is drawn with lashes at the outer ends of the lids curving normally outward, while along the middle of both lids many lashes turn inward: the upper lid's lashes point down onto the iris and the white of the eye, and a row of short lower-lid lashes points up across the lid margin against the eyeball — the inward-turned lashes that trichiasis names. Panel (b) is a black-and-white clinical photograph of a patient's eye after corrective surgery, the lid closed by a line of visible sutures while a gloved hand steadies the brow and forceps hold the incision." kind="diagram" >}}
 (a) If trachoma is not treated early with antibiotics, scarring on the eyelid can lead to trichiasis, a condition in which the eyelashes turn inward. (b) Trichiasis leads to blindness if not corrected by surgery, as shown here. (credit b: modification of work by Otis Historical Archives National Museum of Health & Medicine)
 {{< /mediafigure >}}
 
@@ -328,7 +328,7 @@ Keratitis can have many causes, but bacterial keratitis is most frequently cause
 {{< multiplechoice
   question="Why are contact lens wearers at greater risk for developing keratitis?"
   answer="Staphylococcus epidermidis and Pseudomonas aeruginosa both adhere well to the surface of contact lenses"
-  hint="The module names two specific species and what they do well on a lens surface, not a property of the lens material itself."
+  hint="Read the first paragraph of Bacterial Keratitis."
 >}}
 Staphylococcus epidermidis and Pseudomonas aeruginosa both adhere well to the surface of contact lenses
 Pseudomonas aeruginosa produces siderophores that help it survive in low-iron environments
@@ -415,7 +415,7 @@ Streptococcus pyogenes
 {{< multiplechoice
   question="Which species is frequently associated with nosocomial infections transmitted via medical devices inserted into the body?"
   answer="Staphylococcus epidermidis"
-  hint="Think about which staph species is usually a harmless skin resident but becomes dangerous once it reaches implanted devices."
+  hint="Read the last subsection of Staphylococcal Infections of the Skin."
 >}}
 Staphylococcus epidermidis
 Streptococcus pyogenes
@@ -426,8 +426,8 @@ Bacillus anthracis
 {{< textin
   question="What is a good first test to distinguish streptococcal infections from staphylococcal infections?"
   answer="catalase test"
-  accept="catalase"
-  hint="Add hydrogen peroxide to the sample — bubbling reveals an enzyme Staphylococcus has and Streptococcus lacks."
+  accept="catalase|catalase assay"
+  hint="Read the paragraph on confirming a suspected staphylococcal skin infection, near the start of Staphylococcal Infections of the Skin."
 >}}
 
 {{< textin
@@ -441,7 +441,7 @@ Bacillus anthracis
 {{< multiplechoice
   question="Staphylococcus aureus is most often associated with being"
   answer="coagulase-positive"
-  hint="This trait is tied to a plasma-clotting enzyme these strains produce."
+  hint="Read the paragraph on staphylococcal virulence factors near the start of Staphylococcal Infections of the Skin."
 >}}
 coagulase-positive
 coagulase-negative
@@ -452,7 +452,7 @@ gram-negative
 {{< multiplechoice
   question="___________ is a major cause of preventable blindness that can be reduced through improved sanitation."
   answer="Trachoma"
-  hint="This condition is caused by Chlamydia trachomatis and is targeted by the SAFE public health initiative."
+  hint="Read the first paragraph of the subsection that follows Bacterial Conjunctivitis."
 >}}
 Ophthalmia neonatorum
 Keratitis
@@ -463,13 +463,13 @@ Cutaneous anthrax
 {{< textin
   question="A purulent wound produces ________."
   answer="pus"
-  hint="This thick fluid consists of dead white blood cells, bacteria, and tissue debris."
+  hint="Read the first paragraph of Superficial Staphylococcal Infections."
 >}}
 
 {{< multiplechoice
   question="How are leukocidins associated with pus production?"
   answer="They kill white blood cells"
-  hint="This exotoxin's name describes what kind of cell it kills."
+  hint="Read the first paragraph of Superficial Staphylococcal Infections, on pus formation."
 >}}
 They cause blood plasma to clot
 They kill white blood cells

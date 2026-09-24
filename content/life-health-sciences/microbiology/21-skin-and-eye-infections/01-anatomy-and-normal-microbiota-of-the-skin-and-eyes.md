@@ -48,7 +48,7 @@ Perspiration (sweat) provides some moisture to the epidermis, which can increase
 {{< multiplechoice
   question="How does desquamation help with preventing infections?"
   answer="It sheds microbes along with dead skin cells"
-  hint="This is the process of shedding and peeling skin — think about what gets carried away with the dead cells, not what keeps the skin dry or moist."
+  hint="Read the end of the second paragraph of Layers of the Skin."
 >}}
 It sheds microbes along with dead skin cells
 It keeps the skin dry, which discourages microbial growth
@@ -64,7 +64,7 @@ The skin's properties differ from one region of the body to another, as does the
 
 Different types of bacteria dominate the dry, moist, and sebum-rich regions of the skin. The most abundant microbes typically found in the dry and sebaceous regions are Betaproteobacteria and Propionibacteria, respectively. In the moist regions, *Corynebacterium* and *Staphylococcus* are most commonly found (shown below). Viruses and fungi are also found on the skin, with *Malassezia* being the most common type of fungus found as part of the normal microbiota. The role and populations of viruses in the microbiota, known as viromes, are still not well understood, and there are limitations to the techniques used to identify them. However, Circoviridae, Papillomaviridae, and Polyomaviridae appear to be the most common residents in the healthy skin virome (Y. Belkaid and J.A. Segre, "Dialogue Between Skin Microbiota and Immunity," *Science* 346 (2014) 6212:954–959; Vincent Foulongne et al., "Human Skin Microbiota: High Diversity of DNA Viruses Identified on the Human Skin by High Throughput Sequencing," *PLoS ONE* (2012) 7(6): e38499, doi: 10.1371/journal.pone.0038499; C.M. Robinson and J.K. Pfeiffer, "Viruses and the Microbiota," *Annual Review of Virology* (2014) 1:55–59, doi: 10.1146/annurev-virology-031413-085550).
 
-{{< mediafigure src="microbiology/OSC_Microbio_21_01_microbiota" alt="A front-and-back outline of a human body with twenty skin regions marked, each labeled with a small pie chart of its dominant bacterial groups, keyed to a legend of Actinobacteria, Bacteroidetes, Cyanobacteria, Firmicutes, and Proteobacteria subtypes plus an unclassified category." longdesc="Front of body, top to bottom: glabella, alar crease, external auditory canal, nare, manubrium, axillary vault, antecubital fossa, volar forearm, interdigital web space, hypothenar palm, inguinal crease, umbilicus, and toe web space. Back of body, top to bottom: retroauricular crease, occiput, back, buttock, gluteal crease, popliteal fossa, and plantar heel. Each region's pie chart is colored by the same legend: shades of blue for Actinobacteria (Corynebacterineae, Propionibacterineae, Micrococcineae, other Actinobacteria), yellow for Bacteroidetes, magenta for Cyanobacteria, red for other Firmicutes, orange for Staphylococcaceae, olive green for Proteobacteria, gray for divisions contributing less than 1%, and white for unclassified. Consistent with the section's text, drier and sebum-rich regions read mostly blue (Actinobacteria) while moister regions such as the antecubital fossa and popliteal fossa read mostly orange and olive (Staphylococcaceae and Proteobacteria)." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_21_01_microbiota" alt="A front-and-back outline of a human body with twenty skin regions marked, each labeled with a small pie chart of its dominant bacterial groups, keyed to a legend of Actinobacteria, Bacteroidetes, Cyanobacteria, Firmicutes, and Proteobacteria subtypes plus an unclassified category." longdesc="Front of body, top to bottom: glabella, alar crease, external auditory canal, nare, manubrium, axillary vault, antecubital fossa, volar forearm, interdigital web space, hypothenar palm, inguinal crease, umbilicus, and toe web space. Back of body, top to bottom: retroauricular crease, occiput, back, buttock, gluteal crease, popliteal fossa, and plantar heel. Each region's pie chart is colored by the same legend: shades of blue for Actinobacteria (Corynebacterineae, Propionibacterineae, Micrococcineae, other Actinobacteria), yellow for Bacteroidetes, magenta for Cyanobacteria, red for other Firmicutes, orange for Staphylococcaceae, olive green for Proteobacteria, gray for divisions contributing less than 1%, and white for unclassified. The site names are printed in three unexplained colors: blue for the glabella, alar crease, external auditory canal, manubrium, retroauricular crease, occiput, and back; maroon for the volar forearm, hypothenar palm, and buttock; and green for the other ten. The blue-named sites' pies are mostly blue (Actinobacteria), except the occiput's, which is mostly orange; the maroon-named sites' pies are mostly olive (Proteobacteria); the green-named sites vary, from mostly blue (inguinal crease, umbilicus, gluteal crease) to mostly olive (axillary vault) or orange (popliteal fossa, plantar heel), with the antecubital fossa about half olive and half orange." kind="diagram" >}}
 The normal microbiota varies on different regions of the skin, especially in dry versus moist areas. The figure shows the major organisms commonly found in different locations of a healthy individual's skin and external mucosa. Note that there is significant variation among individuals. (credit: modification of work by National Human Genome Research Institute)
 {{< /mediafigure >}}
 
@@ -220,7 +220,7 @@ mucins facilitate removal of microbes from the surface of the eye
 {{< multiplechoice
   question="_____________ glands produce a lipid-rich substance that contains proteins and minerals and protects the skin."
   answer="Sebaceous"
-  hint="This gland's secretion also lubricates the hair shaft in the follicle it sits beside."
+  hint="Read the third paragraph of Layers of the Skin, where both gland types in the dermis are named."
 >}}
 Sweat
 Mammary
@@ -239,18 +239,6 @@ the epidermis
 the conjunctiva
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The ________ is the outermost layer of the epidermis."
-  answer="stratum corneum"
-  hint="This layer is rich in keratin and mostly made of dead cells."
->}}
-
-{{< textin
-  question="The mucous membrane that covers the surface of the eyeball and inner eyelid is called the ________."
-  answer="conjunctiva"
-  hint="Its inflammation is commonly known as pinkeye."
->}}
-
 {{< mediafigure src="microbiology/OSC_Microbio_21_01_ArtConnect_img" alt="The same skin block redrawn with four structures marked i through iv: i labels a tall, vase-shaped structure in the center with a hair shaft, iv, projecting from its top; iii labels a small vase-shaped structure attached to the side of i; ii labels a coiled structure to the right with a tube leading up to the surface." kind="diagram" >}}
 The skin block redrawn with four structures marked i–iv. (credit: modification of work by National Cancer Institute)
 {{< /mediafigure >}}
@@ -258,7 +246,7 @@ The skin block redrawn with four structures marked i–iv. (credit: modification
 {{< multiplechoice
   question="Which label indicates a sweat gland?"
   answer="ii"
-  hint="Look for the coiled structure with a duct leading up to the surface, matching the labeled skin diagram earlier in this section."
+  hint="Compare the marked structures with the labeled skin diagram at the start of Layers of the Skin."
 >}}
 i
 ii
@@ -266,12 +254,25 @@ iii
 iv
 {{< /multiplechoice >}}
 
+{{< textin
+  question="The ________ is the outermost layer of the epidermis."
+  answer="stratum corneum"
+  hint="Read the second paragraph of Layers of the Skin."
+>}}
+
+{{< textin
+  question="The mucous membrane that covers the surface of the eyeball and inner eyelid is called the ________."
+  answer="conjunctiva"
+  accept="conjunctivae"
+  hint="Its inflammation is commonly known as pinkeye."
+>}}
+
 ### Compare and contrast the microbiomes of various body sites, such as the hands, back, feet, and eyes
 
 {{< multiplechoice
   question="Which type of skin region has a less diverse microbiota than other parts of the body?"
   answer="Sebum-rich regions"
-  hint="This is the same kind of skin condition that harbors distinct, higher-gland-density communities, as on the back and the folds beside the nose."
+  hint="Read the second paragraph of Normal Microbiota of the Skin."
 >}}
 Dry regions
 Moist regions
@@ -280,20 +281,20 @@ All regions are equally diverse
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="In which type of skin region are *Corynebacterium* and *Staphylococcus* most commonly found?"
-  answer="Moist regions"
-  hint="This is the same kind of skin condition that favors microbial growth, as at the nares and underarms."
+  question="Which of these body sites is almost always sterile, with no normal microbiota?"
+  answer="the vitreous humor"
+  hint="Read the last paragraph of Anatomy and Microbiota of the Eye."
 >}}
-Dry regions
-Sebum-rich regions
-Moist regions
-The eye's vitreous humor
+the conjunctiva
+the vitreous humor
+the nares
+the underarms
 {{< /multiplechoice >}}
 
 {{< textin
   question="The most common type of fungus found as part of the normal skin microbiota is ________."
   answer="Malassezia"
-  hint="The module names this fungus in the same sentence where it names the moist-region bacteria."
+  hint="Read the third paragraph of Normal Microbiota of the Skin, just after the sentence on the moist-region bacteria."
 >}}
 
 ### Explain how microorganisms overcome defenses of skin and eyes in order to cause infection
@@ -305,7 +306,7 @@ keratin helps make the outer surface of the skin relatively tough and waterproof
 it also helps keep the surface of the skin dry, which reduces microbial growth
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are two ways in which tears help to prevent microbial colonization?" hint="The module names a set of antimicrobial chemicals in tears, plus a separate protein that physically clears microbes." >}}
+{{< selfcheck question="What are two ways in which tears help to prevent microbial colonization?" hint="The module names a set of antimicrobial chemicals in tears, plus a separate component that clears microbes from the eye's surface." >}}
 Chemicals in tears, such as defensins, lactoferrin, and lysozyme, help to prevent colonization by pathogens. In addition, mucins facilitate removal of microbes from the surface of the eye.
 ===CHECKS===
 chemicals in tears, such as defensins, lactoferrin, and lysozyme, help prevent colonization by pathogens
@@ -356,4 +357,4 @@ it is caused by environmental irritants or allergens rather than infection
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 21.1: Anatomy and Normal Microbiota of the Skin and Eyes](https://openstax.org/books/microbiology/pages/21-1-anatomy-and-normal-microbiota-of-the-skin-and-eyes) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all eight source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="photo"` set on the conjunctivitis/blepharitis figure (three photographic panels) and `kind="diagram"` on the skin-layers, microbiota, lesion, lesion-types, lacrimal-apparatus, eyeball, and Art Connection figures (each has at least one drawn panel, and the drawn half is what the caption or the page teaches), overriding the media manifest's JPEG-based photo guess for the diagrams; the skin-layers figure carries `eager="true"` as the page's first figure; a `longdesc` walk-through was added to the skin-microbiota figure (twenty labeled body regions and the pie-chart legend) and the lacrimal-apparatus figure (the drainage direction the arrows show), because their content is not fully carried by the caption or alt; the skin-microbiota figure's source alt claims "a second part of the image shows that different subjects have different bacterial percentages and that these percentages change over time," but the vendored figure and the printed PDF page show only the single body-outline-with-pie-charts panel described above, with no second panel — this page's alt and longdesc describe only what the image shows, and the discrepancy is reported as a suspected source alt defect; the same source alt also spells one labeled region "manubrioum" for "manubrium" and one back-body region "reticular crease" for "retroauricular crease" (confirmed against the vendored image's own legend, "(Ra) Retroauricular crease"), and misspells "Pusture" for "pustule" in the lesion-types figure's alt — all three corrected in this page's rewritten alt/longdesc text; the Glossary appendix's (m58950) "lacrimal sac" entry reads "a to a reservoir for tears," a garbled duplication, repaired here to "a reservoir for tears" with no inline note, on the same footing as a one-word source typo — reported as a suspected source defect; the module's five footnotes are rendered as inline parenthetical citations placed after the sentence they support, with the two bare access URLs (the Review of Ophthalmology and The Scientist pages) dropped and the two journal DOIs kept; the two Multiple Choice and two Fill in the Blank items are rendered as `multiplechoice`/`textin` exactly as keyed, in source wording and option order; the unkeyed Short Answer "Which label indicates a sweat gland?" is rendered as a `mediafigure` (author-written caption; the source prints none) followed by a figure-keyed `multiplechoice` over the diagram's own i/ii/iii/iv labels, keyed `ii`, because the module's own labeled figure fixes the whole answer; the unkeyed Short Answer questions "What is the role of keratin in the skin?" and "What are two ways in which tears help to prevent microbial colonization?" and the unkeyed Critical Thinking questions "Explain why it is important to understand the normal microbiota of the skin" and "Besides the presence or absence of ulceration, how do acute ulcerative and nonulcerative blepharitis differ?" are rendered as `selfcheck`s, since each needs more than one module sentence assembled into an answer; of the module's four body Check Your Understanding bullets, one ("How does desquamation help with preventing infections?") is graded as a `multiplechoice` from the single sentence naming desquamation's shedding of microbes with dead skin cells, with distractors drawn from this section's other named skin defenses (keratin's dryness effect, sweat's antimicrobial chemicals, sebum's protective role); the remaining three ("What are the four most common bacteria...," "How can asymptomatic health care workers transmit...," and "How does the lacrimal apparatus help...") stay body self-checks, each needing more than one module sentence; two author-written items extend thin objective groups, both disclosed here and in the ledger: a `multiplechoice`/`multiplechoice`/`textin` set for the second objective built from the Normal Microbiota subsection's own sentences on regional diversity, moist-region genera, and the skin virome's dominant fungus, and a `textin` ("opportunistic ________ pathogen") built from the Infections of the Skin subsection's own MRSA sentence for the third objective; the "medical terms" table (17 rows) is transcribed as Markdown only, per the one-textin allowance for a table this size, one `textin` recall is built from its furuncle/boil row (keyed to the parenthetical synonym already printed); the "types of conjunctivitis and blepharitis" table (9 rows) is transcribed as Markdown in full and also becomes a five-item `sortbins` keyed to its causative-agent column, using only the five rows whose agent is a single category (Bacterial, Viral, or Environmental) — the four rows whose agent spans two categories (acute ulcerative blepharitis, follicular conjunctivitis, keratitis, keratoconjunctivitis) are left out of the graded item and kept only in the table; no source exercise, table, or Check Your Understanding bullet is omitted; key terms are compiled from the module's 21 `<term>` elements (no repeats) and the book's Glossary appendix, giving 21 distinct bullets, all with a Glossary entry (four resolved by the standard plural fold: "hair follicles"/"hair follicle," "sweat glands"/"sweat gland," "sebaceous glands"/"sebaceous gland," "lacrimal ducts"/"lacrimal duct"; none sentence-derived); the Clinical Focus case (patient Sam) opens this chapter with Part 1 on this page — the source's closing "jump to the next Clinical Focus box" link is replaced with "The case continues in [Bacterial Infections of the Skin and Eyes](/life-health-sciences/microbiology/21-skin-and-eye-infections/02-bacterial-infections-of-the-skin-and-eyes/)," an absolute site-root link to where Part 2 continues; the case's closing question stays inside the callout as unanswered bulleted prose, as printed.</small>
+<small>This section is adapted from [Microbiology, Section 21.1: Anatomy and Normal Microbiota of the Skin and Eyes](https://openstax.org/books/microbiology/pages/21-1-anatomy-and-normal-microbiota-of-the-skin-and-eyes) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all eight source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="photo"` set on the conjunctivitis/blepharitis figure (three photographic panels) and `kind="diagram"` on the skin-layers, microbiota, lesion, lesion-types, lacrimal-apparatus, eyeball, and Art Connection figures (each has at least one drawn panel, and the drawn half is what the caption or the page teaches), overriding the media manifest's JPEG-based photo guess for the diagrams; the skin-layers figure carries `eager="true"` as the page's first figure; a `longdesc` walk-through was added to the skin-microbiota figure (twenty labeled body regions and the pie-chart legend) and the lacrimal-apparatus figure (the drainage direction the arrows show), because their content is not fully carried by the caption or alt; the skin-microbiota figure's source alt claims "a second part of the image shows that different subjects have different bacterial percentages and that these percentages change over time," but the vendored figure and the printed PDF page show only the single body-outline-with-pie-charts panel described above, with no second panel — this page's alt and longdesc describe only what the image shows, and the discrepancy is reported as a suspected source alt defect; the same source alt also spells one labeled region "manubrioum" for "manubrium" and one back-body region "reticular crease" for "retroauricular crease" (confirmed against the vendored image's own legend, "(Ra) Retroauricular crease"), and misspells "Pusture" for "pustule" in the lesion-types figure's alt — all three corrected in this page's rewritten alt/longdesc text; the Glossary appendix's (m58950) "lacrimal sac" entry reads "a to a reservoir for tears," a garbled duplication, repaired here to "a reservoir for tears" with no inline note, on the same footing as a one-word source typo — reported as a suspected source defect; the module's five footnotes are rendered as inline parenthetical citations placed after the sentence they support, with the two bare access URLs (the Review of Ophthalmology and The Scientist pages) dropped and the two journal DOIs kept; the two Multiple Choice and two Fill in the Blank items are rendered as `multiplechoice`/`textin` exactly as keyed, in source wording and option order; the unkeyed Short Answer "Which label indicates a sweat gland?" is rendered as a `mediafigure` (author-written caption; the source prints none) followed by a figure-keyed `multiplechoice` over the diagram's own i/ii/iii/iv labels, keyed `ii`, because the module's own labeled figure fixes the whole answer; the unkeyed Short Answer questions "What is the role of keratin in the skin?" and "What are two ways in which tears help to prevent microbial colonization?" and the unkeyed Critical Thinking questions "Explain why it is important to understand the normal microbiota of the skin" and "Besides the presence or absence of ulceration, how do acute ulcerative and nonulcerative blepharitis differ?" are rendered as `selfcheck`s, since each needs more than one module sentence assembled into an answer; of the module's four body Check Your Understanding bullets, one ("How does desquamation help with preventing infections?") is graded as a `multiplechoice` from the single sentence naming desquamation's shedding of microbes with dead skin cells, with distractors drawn from this section's other named skin defenses (keratin's dryness effect, sweat's antimicrobial chemicals, sebum's protective role); the remaining three ("What are the four most common bacteria...," "How can asymptomatic health care workers transmit...," and "How does the lacrimal apparatus help...") stay body self-checks, each needing more than one module sentence; two author-written items extend thin objective groups, both disclosed here and in the ledger: a `multiplechoice`/`multiplechoice`/`textin` set for the second objective built from the Normal Microbiota subsection's own sentences on regional diversity and the skin's most common fungus and from the Anatomy and Microbiota of the Eye subsection's sentence on the sterile vitreous humor (which replaced a moist-region-genera item that re-asked the body Check Your Understanding bullet on the four most common bacteria), and a `textin` ("opportunistic ________ pathogen") built from the Infections of the Skin subsection's own MRSA sentence for the third objective; the "medical terms" table (17 rows) is transcribed as Markdown only, per the one-textin allowance for a table this size, one `textin` recall is built from its furuncle/boil row (keyed to the parenthetical synonym already printed); the "types of conjunctivitis and blepharitis" table (9 rows) is transcribed as Markdown in full and also becomes a five-item `sortbins` keyed to its causative-agent column, using only the five rows whose agent is a single category (Bacterial, Viral, or Environmental) — the four rows whose agent spans two categories (acute ulcerative blepharitis, follicular conjunctivitis, keratitis, keratoconjunctivitis) are left out of the graded item and kept only in the table; no source exercise, table, or Check Your Understanding bullet is omitted; key terms are compiled from the module's 21 `<term>` elements (no repeats) and the book's Glossary appendix, giving 21 distinct bullets, all with a Glossary entry (four resolved by the standard plural fold: "hair follicles"/"hair follicle," "sweat glands"/"sweat gland," "sebaceous glands"/"sebaceous gland," "lacrimal ducts"/"lacrimal duct"; none sentence-derived); the Clinical Focus case (patient Sam) opens this chapter with Part 1 on this page — the source's closing "jump to the next Clinical Focus box" link is replaced with "The case continues in [Bacterial Infections of the Skin and Eyes](/life-health-sciences/microbiology/21-skin-and-eye-infections/02-bacterial-infections-of-the-skin-and-eyes/)," an absolute site-root link to where Part 2 continues; the case's closing question stays inside the callout as unanswered bulleted prose, as printed.</small>

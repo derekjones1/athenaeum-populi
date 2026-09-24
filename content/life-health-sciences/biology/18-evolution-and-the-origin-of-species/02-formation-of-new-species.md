@@ -48,7 +48,7 @@ The biological definition of species, which works for sexually reproducing organ
 
 Given the extraordinary diversity of life on the planet there must be mechanisms for **speciation**: the formation of two species from one original species. Darwin envisioned this process as a branching event and diagrammed the process in the only illustration in *On the Origin of Species* (see panel (a) below). Compare this illustration to the diagram of elephant evolution (panel (b)), which shows that as one species changes over time, it branches to form more than one new species, repeatedly, as long as the population survives or until the organism becomes extinct.
 
-{{< mediafigure src="biology/Figure_18_02_03ab" alt="Panel (a) is a photographic reproduction of the only diagram in Darwin's On the Origin of Species: dashed lines branching upward from lettered points at the bottom of a page through numbered rows, some branches ending partway and others reaching the top. Panel (b) is a colored diagram of elephant evolution: a lineage tree rising from Palaeomastodon through Gomphotherium to Primelephas, with side branches to Anancus and to the sibling pair Mammut (mastodon) and Stegodon, then splitting into the mammoth (Mammuthus), the Asian elephant (Elephas), and the African elephant (Loxodonta)." longdesc="Panel (a): a scanned two-page spread from Darwin's manuscript. Vertical dashed lines rise from eleven lettered starting points, labeled A through L, at the bottom of the page; horizontal rows up the page are labeled with Roman numerals I through XIV. Some lines run straight from the bottom row to the top without branching; others fork repeatedly at successive rows; some stop partway when a branch fails to continue. Near the top, several branch points give rise to more than a dozen individually labeled endpoints in the final row. Panel (b): a colored diagram tracing modern elephant evolution. At the base is Palaeomastodon, drawn as a small tusked animal; a line rises to Gomphotherium. From the Gomphotherium node a branch runs rightward and splits into two sibling lines ending side by side at Mammut (the mastodon) and Stegodon. The main line continues upward toward Primelephas, giving off a branch to Anancus on the left along the way. Above Primelephas the line splits a final time: one branch ends at Mammuthus (the mammoth), and the other forks into Elephas, the Asian elephant, and Loxodonta, the African elephant, each shown as a full-body illustration at the top of the tree." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_18_02_03ab" alt="Panel (a) is a photographic reproduction of the only diagram in Darwin's On the Origin of Species: dashed lines branching upward from lettered points at the bottom of a page through numbered rows, some branches ending partway and others reaching the top. Panel (b) is a colored diagram of elephant evolution: a lineage tree rising from Palaeomastodon through Gomphotherium to Primelephas, with side branches to Anancus and to the sibling pair Mammut (mastodon) and Stegodon, then splitting into the mammoth (Mammuthus), the Asian elephant (Elephas), and the African elephant (Loxodonta)." longdesc="Panel (a): a scanned two-page printed fold-out from Darwin's book. Vertical dashed lines rise from eleven lettered starting points, labeled A through L, at the bottom of the page; horizontal rows up the page are labeled with Roman numerals I through XIV. Some lines run straight from the bottom row to the top without branching; others fork repeatedly at successive rows; some stop partway when a branch fails to continue. Near the top, several branch points give rise to more than a dozen individually labeled endpoints in the final row. Panel (b): a colored diagram tracing modern elephant evolution. At the base is Palaeomastodon, drawn as a small tusked animal; a line rises from it. Just above Palaeomastodon, below Gomphotherium, a branch runs rightward and splits into two sibling lines ending side by side at Mammut (the mastodon) and Stegodon. The main line continues upward past Gomphotherium toward Primelephas, giving off a branch to Anancus on the left just below Primelephas. Above Primelephas the line branches twice in quick succession: first a branch runs up to the right to Loxodonta, the African elephant; then a branch runs up to the left to Mammuthus (the mammoth); and the main line ends at Elephas, the Asian elephant — so the mammoth and the Asian elephant are drawn as each other's closest relatives. Every genus is shown as a full-body illustration." kind="diagram" >}}
 The only illustration in Darwin's *On the Origin of Species* is (a) a diagram showing speciation events leading to biological diversity. The diagram shows similarities to phylogenetic charts that today illustrate the relationships of species. (b) Modern elephants evolved from the *Palaeomastodon*, a species that lived in Egypt 35–50 million years ago.
 {{< /mediafigure >}}
 
@@ -66,7 +66,7 @@ Biologists group allopatric processes into two categories: dispersal and vicaria
 
 Scientists have documented numerous cases of allopatric speciation taking place. For example, along the west coast of the United States, two separate spotted owl subspecies exist. The northern spotted owl has genetic and phenotypic differences from its close relative: the Mexican spotted owl, which lives in the south (see the map below).
 
-{{< mediafigure src="biology/Figure_18_02_04" alt="A map of the western United States and northern Mexico shading two disjoint ranges in tan against a blue background: the northern spotted owl's narrow coastal range from Washington through northern California, and the Mexican spotted owl's broader range across the desert Southwest and into Mexico. Circular inset photos show each mottled brown-and-white owl perched on a branch." longdesc="Two irregular tan-colored regions are shaded on a blue map of the western United States and northern Mexico. The northern spotted owl's region runs in a narrow band down the Pacific coast from Washington through Oregon into northern California, labeled 'Northern Spotted Owl' with a line to a circular inset photo of the owl at upper left. The Mexican spotted owl's region is a broader, disconnected patch across Arizona, New Mexico, and into Mexico, labeled 'Mexican Spotted Owl' with three lines pointing from different parts of the region to a circular inset photo of the owl at lower right." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_18_02_04" alt="A map of the western United States and northern Mexico shading two disjoint ranges in tan against a blue background: the northern spotted owl's narrow coastal range from Washington through northern California, and the Mexican spotted owl's broader range across the desert Southwest and into Mexico. Circular inset photos show each mottled brown-and-white owl perched on a branch." longdesc="Two irregular tan-colored regions are shaded on a blue map of the western United States and northern Mexico. The northern spotted owl's region runs in a narrow band down the Pacific coast from southwestern British Columbia (in the gray, unshaded Canada) through Washington and Oregon into northern California, labeled 'Northern Spotted Owl' at the upper left, with a line from the band to an oval inset photo of the owl at the top center. The Mexican spotted owl's region is three separate patches — a large one from southern Utah and Colorado down through Arizona and New Mexico into northern Mexico, and two small ones farther south in Mexico — labeled 'Mexican Spotted Owl' with three lines, one from each patch, to an oval inset photo of the owl at lower right." kind="diagram" >}}
 The northern spotted owl and the Mexican spotted owl inhabit geographically separate locations with different climates and ecosystems. The owl is an example of allopatric speciation. (credit "northern spotted owl": modification of work by John and Karen Hollingsworth; credit "Mexican spotted owl": modification of work by Bill Radke)
 {{< /mediafigure >}}
 
@@ -76,7 +76,7 @@ Additionally, scientists have found that the further the distance between two gr
 
 In some cases, a population of one species disperses throughout an area, and each finds a distinct niche or isolated habitat. Over time, the varied demands of their new lifestyles lead to multiple speciation events originating from a single species. We call this **adaptive radiation** because many adaptations evolve from a single point of origin; thus, causing the species to radiate into several new ones. Island archipelagos like the Hawaiian Islands provide an ideal context for adaptive radiation events because water surrounds each island which leads to geographical isolation for many organisms. The Hawaiian honeycreeper illustrates one example of adaptive radiation. From a single species, the founder species, numerous species have evolved, including the six shown below.
 
-{{< mediafigure src="biology/Figure_18_02_05-feb4" alt="A circular diagram with a plain grey songbird labeled 'Founder Species' at the center and six wedge-shaped sections around it, each showing a different honeycreeper species' head and beak shape with its food source labeled below: I'iwi (long down-curved beak, nectar), Amakihi (nectar, insects), Akiapola'au (long curved upper mandible, insects), Maui Parrotbill (thick hooked beak, insects), Nihoa Finch (short thick beak, insects, seeds, and bird eggs), and Apapane (curved beak, nectar)." longdesc="Six wedge-shaped sections form a ring around a central square panel labeled 'Founder Species,' which shows a plain grey songbird. Clockwise from the top: I'iwi has a long, thin, downward-curved beak and eats nectar. Amakihi has a shorter, slightly curved beak and eats nectar and insects. Akiapola'au has a long curved upper mandible paired with a short straight lower mandible and eats insects. Maui Parrotbill has a thick, hooked, parrot-like beak and eats insects. Nihoa Finch has a short, deep, conical beak and eats insects, seeds, and bird eggs. Apapane has a medium curved beak and eats nectar." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_18_02_05-feb4" alt="A circular diagram with a plain grey songbird labeled 'Founder Species' at the center and six wedge-shaped sections around it, each showing a different honeycreeper species' head and beak shape with its food source labeled below: I'iwi (long down-curved beak, nectar), Amakihi (nectar, insects), Akiapola'au (long curved upper mandible, insects), Maui Parrotbill (thick hooked beak, insects), Nihoa Finch (short thick beak, insects, seeds, and bird eggs), and Apapane (curved beak, nectar)." longdesc="Six wedge-shaped sections form a ring around a central square panel labeled 'Founder Species,' which shows a plain grey songbird. Clockwise from the top: I'iwi has a long, thin, downward-curved beak and eats nectar. Amakihi has a long, strongly down-curved beak and eats nectar and insects. Akiapola'au has a long curved upper mandible paired with a short straight lower mandible and eats insects. Maui Parrotbill has a thick, hooked, parrot-like beak and eats insects. Nihoa Finch has a short, deep, conical beak and eats insects, seeds, and bird eggs. Apapane has a medium curved beak and eats nectar." kind="diagram" >}}
 The honeycreeper birds illustrate adaptive radiation. From one original species of bird, multiple others evolved, each with its own distinctive characteristics.
 {{< /mediafigure >}}
 
@@ -92,7 +92,7 @@ Can divergence occur if no physical barriers are in place to separate individual
 
 One form of sympatric speciation can begin with a serious chromosomal error during cell division. In a normal cell division event chromosomes replicate, pair up, and then separate so that each new cell has the same number of chromosomes. However, sometimes the pairs separate and the end cell product has extra sets of chromosomes in a condition that we call **polyploidy** (see the figure below).
 
-{{< mediafigure src="biology/Figure_18_02_06" alt="A flow chart titled 'Aneuploidy Resulting in Offspring with 2n+1 or 2n-1 Chromosomes.' A diploid parent cell (2n) undergoes nondisjunction during meiosis, producing three possible gametes: one with n chromosomes, one with n+1 chromosomes (an extra chromosome), and one with n-1 chromosomes (missing a chromosome). Each gamete then fuses with a normal gamete to form a resulting cell: 2n, 2n+1, or 2n-1 chromosomes." longdesc="The diploid parent cell at left is drawn with two chromosome pairs, labeled 'Diploid (2n).' Three arrows labeled 'Nondisjunction during meiosis' lead to three gametes: the top gamete holds one chromosome pair and is labeled n; the middle gamete holds an extra chromosome and is labeled n+1; the bottom gamete is missing a chromosome and is labeled n-1. A second set of arrows, labeled 'Mating with normal gamete,' leads from each of these to a resulting cell: the top cell, labeled 2n, mirrors the original diploid parent; the middle cell, labeled 2n+1, carries one extra chromosome beyond the normal set; the bottom cell, labeled 2n-1, is missing one chromosome from the normal set." kind="diagram" >}}
+{{< mediafigure src="biology/Figure_18_02_06" alt="A flow chart titled 'Aneuploidy Resulting in Offspring with 2n+1 or 2n-1 Chromosomes.' A diploid parent cell (2n) undergoes nondisjunction during meiosis, producing three possible gametes: one with n chromosomes, one with n+1 chromosomes (an extra chromosome), and one with n-1 chromosomes (missing a chromosome). Each gamete then fuses with a normal gamete to form a resulting cell: 2n, 2n+1, or 2n-1 chromosomes." longdesc="The diploid parent cell at left is drawn with two chromosome pairs, one small and one large, labeled 'Diploid (2n).' Three arrows labeled 'Nondisjunction during meiosis' lead to three gametes: the top gamete holds one chromosome from each pair (one small, one large) and is labeled n; the middle gamete holds one small and two large chromosomes, an extra chromosome, and is labeled n+1; the bottom gamete holds only one small chromosome, missing the large one, and is labeled n-1. A second set of arrows, labeled 'Mating with normal gamete,' leads from each of these to a resulting cell: the top cell, labeled 2n, mirrors the original diploid parent; the middle cell, labeled 2n+1, carries a third large chromosome beyond the two pairs; the bottom cell, labeled 2n-1, has the small pair but only one large chromosome." kind="diagram" >}}
 Aneuploidy results when the gametes have too many or too few chromosomes due to nondisjunction during meiosis. In this example, the resulting offspring will have 2*n*+1 or 2*n*-1 chromosomes.
 {{< /mediafigure >}}
 
@@ -192,17 +192,6 @@ Speciation occurs along two main pathways: geographic separation (allopatric spe
 
 ### Define species and describe how scientists identify species as different
 
-{{< multiplechoice
-  question="Which reproductive combination produces hybrids?"
-  answer="when members of closely related species reproduce"
-  hint="A hybrid is defined as offspring of two closely related individuals that are not of the same species."
->}}
-when individuals of the same species in different geographical areas reproduce
-when any two individuals sharing the same habitat reproduce
-when members of closely related species reproduce
-when offspring of the same parents reproduce
-{{< /multiplechoice >}}
-
 {{< textin
   question="A group of populations that interbreed and produce fertile offspring is called a(n) ________."
   answer="species"
@@ -210,17 +199,28 @@ when offspring of the same parents reproduce
 >}}
 
 {{< textin
-  question="The offspring of two closely related individuals that are not of the same species is called a(n) ________."
+  question="If humans fertilized a bald eagle's egg with an African fish eagle's sperm and a chick did hatch, that offspring would be called a(n) ________."
   answer="hybrid"
-  hint="A bald eagle × African fish eagle cross would produce one; a poodle × cocker spaniel cross would not, since both are the same species."
+  hint="Reread the eagle example in the first subsection."
 >}}
+
+{{< multiplechoice
+  question="Which reproductive combination produces hybrids?"
+  answer="when members of closely related species reproduce"
+  hint="Reread the first subsection's paragraph on species that look alike, and the paragraph after it."
+>}}
+when individuals of the same species in different geographical areas reproduce
+when any two individuals sharing the same habitat reproduce
+when members of closely related species reproduce
+when offspring of the same parents reproduce
+{{< /multiplechoice >}}
 
 ### Describe genetic variables that lead to speciation
 
 {{< multiplechoice
   question="What is the main difference between autopolyploid and allopolyploid?"
   answer="the source of the extra chromosomes"
-  hint="One type combines extra chromosomes from a single species; the other combines chromosomes from two different species."
+  hint="Compare the Sympatric Speciation paragraphs that introduce each of the two forms of polyploidy."
 >}}
 the number of chromosomes
 the functionality of the chromosomes
@@ -239,7 +239,7 @@ after a couple of generations, enough of these new hybrids can form to reproduce
   question="Polyploidy formed within a single species, rather than between two species, is called a(n) ________."
   answer="autopolyploid"
   accept="autopolyploidy"
-  hint="The prefix “auto-” means “self.”"
+  hint="Reread the Sympatric Speciation paragraph that follows the aneuploidy figure's question."
 >}}
 
 ### Identify prezygotic and postzygotic reproductive barriers
@@ -258,7 +258,7 @@ It does not undergo evolutionary changes for a significant period of time.
 {{< multiplechoice
   question="Which situation is *not* an example of a prezygotic barrier?"
   answer="Two species of insects produce infertile offspring."
-  hint="A prezygotic barrier blocks reproduction before a zygote forms; producing infertile offspring means fertilization already happened."
+  hint="Reread the Reproductive Isolation paragraph that sorts barriers into two groups, then check each option against it."
 >}}
 Two species of turtles breed at different times of the year.
 Two species of flowers attract different pollinators.
@@ -267,15 +267,15 @@ Two species of insects produce infertile offspring.
 {{< /multiplechoice >}}
 
 {{< textin
-  question="A reproductive isolation mechanism that occurs before zygote formation is called a(n) ________."
-  answer="prezygotic barrier"
-  hint="Its name comes from the prefix meaning “before.”"
->}}
-
-{{< textin
   question="A reproductive isolation mechanism that occurs after zygote formation is called a(n) ________."
   answer="postzygotic barrier"
   hint="Hybrid inviability and hybrid sterility are both examples of this kind of barrier."
+>}}
+
+{{< textin
+  question="Differences in breeding schedules that can act as a form of prezygotic barrier leading to reproductive isolation are called ________."
+  answer="temporal isolation"
+  hint="Reread the Reproductive Isolation paragraph on species that reproduce only at certain times of the year."
 >}}
 
 ### Explain allopatric and sympatric speciation
@@ -294,7 +294,7 @@ An injury causes an organism to seek out a new food source.
 {{< multiplechoice
   question="What is the main difference between dispersal and vicariance?"
   answer="One involves the movement of the organism, and the other involves a change in the environment."
-  hint="Dispersal is members of a species moving to a new place; vicariance is a natural event that divides them where they already are."
+  hint="Reread the last paragraph of the Allopatric Speciation subsection before the spotted owl figure."
 >}}
 One leads to allopatric speciation, whereas the other leads to sympatric speciation.
 One involves the movement of the organism, and the other involves a change in the environment.
@@ -305,7 +305,7 @@ One involves closely related organisms, and the other involves only individuals 
 {{< multiplechoice
   question="Which variable increases the likelihood of allopatric speciation taking place more quickly?"
   answer="longer distance between divided groups"
-  hint="The section's spotted owl example explains why greater distance means the environmental conditions two populations face have less in common."
+  hint="Reread the paragraph after the spotted owl figure, which compares the northern and southern owls."
 >}}
 lower rate of mutation
 longer distance between divided groups
@@ -322,6 +322,12 @@ depending on the viability of their offspring, they may fuse back into one speci
 
 ### Describe adaptive radiation
 
+{{< textin
+  question="Multiple new species evolving from a single ancestral species that has spread into different isolated habitats is called ________."
+  answer="adaptive radiation"
+  hint="The Hawaiian honeycreepers, each with a different beak shape and food source, are the section's example."
+>}}
+
 {{< selfcheck question="Why do island chains provide ideal conditions for adaptive radiation to occur?" hint="Think about what the water surrounding each island in a chain does to organisms that disperse there." >}}
 Organisms of one species can arrive to an island together and then disperse throughout the chain, each settling into different niches and exploiting different food resources to reduce competition.
 ===CHECKS===
@@ -329,23 +335,16 @@ organisms of one species can arrive to an island together and then disperse thro
 each settling into different niches and exploiting different food resources to reduce competition
 {{< /selfcheck >}}
 
-{{< textin
-  question="Multiple new species evolving from a single ancestral species that has spread into different isolated habitats is called ________."
-  answer="adaptive radiation"
-  hint="The Hawaiian honeycreepers, each with a different beak shape and food source, are the section's example."
->}}
-
 {{< multiplechoice
-  question="According to this section, many adaptations evolving from a single point of origin, causing a species to radiate into several new species, describes which process?"
-  answer="adaptive radiation"
-  hint="This is exactly the sentence the section uses to define the term, just before it names it."
+  question="In the section's honeycreeper example, which beak does the seed-eating bird have?"
+  answer="a thicker, stronger beak suited to break hard nuts"
+  hint="Reread the paragraph just after the honeycreeper diagram, which matches each beak to a food source."
 >}}
-sympatric speciation
-adaptive radiation
-allopatric speciation
-polyploidy
+long beaks to dip into flowers to reach the nectar
+beaks like swords, for stabbing and impaling insects
+a thicker, stronger beak suited to break hard nuts
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 18.2: Formation of New Species](https://openstax.org/books/biology-2e/pages/18-2-formation-of-new-species) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the dog-breeds figure's alt drops the source alt's "shorter legs than the poodle" for the cockapoo, since the sitting dog's legs are not visible to compare; nine of the section's thirteen figures re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection — every JPEG figure that turned out to be a scanned historical sketch, an illustrated map, or hand-drawn artwork rather than a photograph of a living organism (only the dog, eagle, and frog photographs, plus the PNG aneuploidy diagram, matched the manifest's own guess); a plain descriptive alt written from each image, since several source alts under-described what the image actually draws; a longdesc added to the Darwin sketch/elephant-evolution figure, the spotted-owl range map, the honeycreeper wheel, and both the aneuploidy and allopolyploidy flow diagrams, since none of their panel-by-panel content is carried by its caption alone; every cross-reference to a numbered print figure reworded as a descriptive reference ("see the photos below," "the diagram above") since figures are not numbered here; the interactive note rendered as a Link to Learning callout with descriptive anchor text in place of the source's bare "video"; the note wrapping the aneuploidy Visual Connection question kept in the body immediately after its figure, rendered as a self-check since the source keys it to a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); six key-term recall items (species, hybrid, autopolyploid, prezygotic barrier, postzygotic barrier, adaptive radiation) added from the glossary; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one multiple choice written locally under "Describe adaptive radiation," strictly from the section's own sentence defining the term, since none of the module's seven keyed Review Questions test that objective.</small>
+<small>This section is adapted from [Biology 2e, Section 18.2: Formation of New Species](https://openstax.org/books/biology-2e/pages/18-2-formation-of-new-species) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the dog-breeds figure's alt drops the source alt's "shorter legs than the poodle" for the cockapoo, since the sitting dog's legs are not visible to compare; nine of the section's thirteen figures re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection — every JPEG figure that turned out to be a scanned historical sketch, an illustrated map, or hand-drawn artwork rather than a photograph of a living organism (only the dog, eagle, and frog photographs, plus the PNG aneuploidy diagram, matched the manifest's own guess); a plain descriptive alt written from each image, since several source alts under-described what the image actually draws; a longdesc added to the Darwin sketch/elephant-evolution figure, the spotted-owl range map, the honeycreeper wheel, and both the aneuploidy and allopolyploidy flow diagrams, since none of their panel-by-panel content is carried by its caption alone; every cross-reference to a numbered print figure reworded as a descriptive reference ("see the photos below," "the diagram above") since figures are not numbered here; the interactive note rendered as a Link to Learning callout with descriptive anchor text in place of the source's bare "video"; the note wrapping the aneuploidy Visual Connection question kept in the body immediately after its figure, rendered as a self-check since the source keys it to a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); six key-term recall items (species, hybrid, autopolyploid, temporal isolation, postzygotic barrier, adaptive radiation) added from the glossary — temporal isolation in place of a prezygotic barrier recall item that re-asked, in reverse, the Review Question "Which situation is not an example of a prezygotic barrier?" — the hybrid item prompted by the section's own eagle example rather than the glossary definition, whose wording printed the key of the Review Question directly below it; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one multiple choice written locally under "Describe adaptive radiation," strictly from the section's own sentences on the honeycreepers' beaks (it replaces an earlier locally written item that re-asked the adaptive radiation recall item), since none of the module's seven keyed Review Questions test that objective.</small>

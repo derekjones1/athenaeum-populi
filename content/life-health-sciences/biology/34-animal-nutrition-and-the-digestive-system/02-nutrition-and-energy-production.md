@@ -178,7 +178,8 @@ may develop many serious health problems
 {{< textin
   question="The diet must be balanced to provide the minerals and vitamins that are required for ________."
   answer="cellular function"
-  hint="This is what minerals and vitamins are ultimately needed for — the ongoing work every one of the body's cells must carry out."
+  accept="cell function"
+  hint="Look at the opening sentence of Food Requirements."
 >}}
 
 ### Define the primary components of food
@@ -195,13 +196,13 @@ without fats, many people may have consumed more calories, resulting in weight g
 {{< textin
   question="During digestion, digestible carbohydrates are ultimately broken down into ________ and used to provide energy through metabolic pathways."
   answer="glucose"
-  hint="The simple sugar the section later calls the body's fuel."
+  hint="Look at the second paragraph of Food Energy and ATP."
 >}}
 
 {{< multiplechoice
   question="Carbohydrates, proteins, and fats are the ________ of food."
   answer="primary components"
-  hint="These three organic molecule classes are what the diet is mostly built from — unlike the essential nutrients, which the body needs only in small quantities."
+  hint="Reread the Section Summary's opening sentences."
 >}}
 primary components
 essential nutrients
@@ -249,21 +250,9 @@ not having minerals in the diet can be potentially harmful
 {{< /selfcheck >}}
 
 {{< textin
-  question="A nutrient that cannot be synthesized by the body and must be obtained from food is called an ________."
-  answer="essential nutrient"
-  hint="Vitamins and minerals are both examples of this kind of nutrient."
->}}
-
-{{< textin
-  question="An inorganic, elemental molecule that carries out important roles in the body is called a ________."
-  answer="mineral"
-  hint="Calcium, sodium, and potassium are examples, each obtained from food rather than made by the body."
->}}
-
-{{< textin
-  question="An organic substance necessary in small amounts to sustain life is called a ________."
-  answer="vitamin"
-  hint="This class of essential organic molecule acts as a coenzyme and comes in both fat-soluble and water-soluble forms."
+  question="Vitamins are another class of essential organic molecules that are required in small quantities for many enzymes to function and, for this reason, are considered to be ________."
+  answer="coenzymes"
+  hint="Look at the Essential Nutrients subsection, at the sentence that introduces vitamins."
 >}}
 
 {{< sortbins question="Sort each vitamin into the category the section lists it under." hint="The section notes that dietary fat aids the absorption of one of these two categories — figure out which one from its name." >}}
@@ -281,12 +270,24 @@ not having minerals in the diet can be potentially harmful
   {"label": "Vitamin B₁₂ (Cobalamin)", "bin": 0}]}
 {{< /sortbins >}}
 
+{{< textin
+  question="An inorganic, elemental molecule that carries out important roles in the body is called a ________."
+  answer="mineral"
+  hint="Calcium, sodium, and potassium are examples, each obtained from food rather than made by the body."
+>}}
+
+{{< textin
+  question="An organic substance necessary in small amounts to sustain life is called a ________."
+  answer="vitamin"
+  hint="Look at the Essential Nutrients subsection and the two tables that follow it."
+>}}
+
 ### Explain how energy is produced through diet and digestion
 
 {{< multiplechoice
   question="What is the primary fuel for the body?"
   answer="carbohydrates"
-  hint="This class of molecule is the primary source of energy for animals; the section calls it the body's fuel."
+  hint="Look at the second paragraph of Food Energy and ATP."
 >}}
 carbohydrates
 lipids
@@ -307,7 +308,7 @@ the muscles use the ATP to perform the mechanical work needed to climb a flight 
 {{< textin
   question="ATP is the ________ of the cell and is obtained from the metabolic pathways."
   answer="energy currency"
-  hint="This term describes ATP's role using a financial metaphor — it is what a cell spends to power its activities."
+  hint="Look at the third paragraph of Food Energy and ATP, or the Section Summary."
 >}}
 
 ### Describe how excess carbohydrates and energy are stored in the body
@@ -315,7 +316,7 @@ the muscles use the ATP to perform the mechanical work needed to climb a flight 
 {{< multiplechoice
   question="Excess glucose is stored as ________."
   answer="glycogen"
-  hint="This polymeric form of glucose is stored in the liver and skeletal muscle cells for later use."
+  hint="Look at the fourth paragraph of Food Energy and ATP, on what happens when ATP and glucose exceed the body's requirements."
 >}}
 fat
 glucagon
@@ -326,7 +327,7 @@ it is not stored in the body
 {{< multiplechoice
   question="Many distance runners “carb load” the day before a big race. How does this eating strategy provide an advantage to the runner?"
   answer="The excess carbohydrates can be stored in the muscles as glycogen."
-  hint="Think about where the extra carbohydrates end up overnight, ready to be converted back to glucose during the race."
+  hint="Look at the fourth paragraph of Food Energy and ATP."
 >}}
 The carbohydrates cause the release of insulin.
 The excess carbohydrates are converted to fats, which have a higher calorie density.
@@ -344,4 +345,4 @@ even young children who are obese can face health concerns
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 34.2: Nutrition and Energy Production](https://openstax.org/books/biology-2e/pages/34-2-nutrition-and-energy-production) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B34_02_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a flat plate infographic/logo, not a captured photograph); both figure references in the prose ("illustrated graphically in [link]," "listed in [link]") rewritten as descriptive references to the figure or table below rather than a print number; the Link to Learning note and both Everyday Connection notes (Let's Move! Campaign, Obesity) rendered as callouts, each Everyday Connection keeping its bold name followed by its source title in italics; the Let's Move! note's link kept pointing at the module's own `openstax.org/l/Letsmove` redirect, with the visible link text set to the destination URL the module itself prints as the link's wording; the four vitamin/mineral/amino-acid tables (34.1–34.4) transcribed in full as Markdown tables, each preceded by its source spanning title row rendered as a bold line (Markdown tables cannot span a header cell across columns); the asterisk footnote below Table 34.3 ("*Greater than 200mg/day required") and below Table 34.4 (the histidine/arginine note) kept as plain text below their tables rather than as a table row, for the same reason; vitamin B-numbers set as Unicode subscripts and NAD/NADP charges as a trailing Unicode superscript, matching the book's chemical-notation convention; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (essential nutrient, mineral, vitamin) added from the glossary; two cloze recall items (balanced; energy currency) and one select-the-term multiple choice ("primary components") added from the section summary to strengthen the "balanced diet" and "primary components" objectives, which the glossary and exercise sets do not test directly; two local cloze items built strictly from the section's own sentences — "cellular function" from its opening sentence, to cover the "balanced diet" objective a third time since the module keys only one Critical Thinking question to it, and "glucose" from its digestion sentence, to cover the "primary components" objective a third time; a sortbins exercise added, built from the fat-soluble/water-soluble split across Tables 34.1 and 34.2 (ten of the thirteen listed vitamins, interleaved), per the module's own category distinction between the two tables. One table cell is corrected with a visible Source note: blood clotting is dropped from the vitamin D row, where the table's own vitamin K row places it (erratum 441).</small>
+<small>This section is adapted from [Biology 2e, Section 34.2: Nutrition and Energy Production](https://openstax.org/books/biology-2e/pages/34-2-nutrition-and-energy-production) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure_B34_02_01 re-kinded from the manifest's file-extension "photo" guess to "diagram" (a flat plate infographic/logo, not a captured photograph); both figure references in the prose ("illustrated graphically in [link]," "listed in [link]") rewritten as descriptive references to the figure or table below rather than a print number; the Link to Learning note and both Everyday Connection notes (Let's Move! Campaign, Obesity) rendered as callouts, each Everyday Connection keeping its bold name followed by its source title in italics; the Let's Move! note's link kept pointing at the module's own `openstax.org/l/Letsmove` redirect, with the visible link text set to the destination URL the module itself prints as the link's wording; the four vitamin/mineral/amino-acid tables (34.1–34.4) transcribed in full as Markdown tables, each preceded by its source spanning title row rendered as a bold line (Markdown tables cannot span a header cell across columns); the asterisk footnote below Table 34.3 ("*Greater than 200mg/day required") and below Table 34.4 (the histidine/arginine note) kept as plain text below their tables rather than as a table row, for the same reason; vitamin B-numbers set as Unicode subscripts and NAD/NADP charges as a trailing Unicode superscript, matching the book's chemical-notation convention; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; two key-term recall items (mineral, vitamin) added from the glossary, plus a cloze item ("coenzymes") from the section's own sentence introducing vitamins, in place of an essential-nutrient recall item that re-asked the Critical Thinking question "What are essential nutrients?" in reverse; two cloze recall items (balanced; energy currency) and one select-the-term multiple choice ("primary components") added from the section summary to strengthen the "balanced diet" and "primary components" objectives, which the glossary and exercise sets do not test directly; two local cloze items built strictly from the section's own sentences — "cellular function" from its opening sentence, to cover the "balanced diet" objective a third time since the module keys only one Critical Thinking question to it, and "glucose" from its digestion sentence, to cover the "primary components" objective a third time; a sortbins exercise added, built from the fat-soluble/water-soluble split across Tables 34.1 and 34.2 (ten of the thirteen listed vitamins, interleaved), per the module's own category distinction between the two tables. One table cell is corrected with a visible Source note: blood clotting is dropped from the vitamin D row, where the table's own vitamin K row places it (erratum 441).</small>

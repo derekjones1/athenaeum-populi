@@ -24,15 +24,15 @@ Our natural world also utilizes the principle of form following function, especi
 
 At this point, it should be clear to you that eukaryotic cells have a more complex structure than prokaryotic cells. Organelles allow different functions to be compartmentalized in different areas of the cell. Before turning to organelles, let's first examine two important components of the cell: the plasma membrane and the cytoplasm.
 
-{{< mediafigure src="biology/Figure_03_03_01a_corrected" kind="diagram" alt="A labeled diagram of a typical eukaryotic animal cell, egg-shaped, with a nucleus (chromatin and a nucleolus inside a nuclear envelope), rough and smooth endoplasmic reticulum, a Golgi apparatus, mitochondria, peroxisomes, lysosomes, a vacuole, free ribosomes, and a cytoskeleton of microfilaments, intermediate filaments, microtubules, and a centrosome, all in the cytoplasm" longdesc="Panel (a), a typical animal cell: an egg-shaped outline encloses the cytoplasm. A large central nucleus holds tangled chromatin threads and a smaller, darker nucleolus, all inside a double-membraned, pore-studded nuclear envelope. Around the nucleus, ribosome-studded rough endoplasmic reticulum gives way to smooth endoplasmic reticulum; nearby sits a stacked Golgi apparatus. Oval mitochondria, round peroxisomes and lysosomes, and a vacuole float in the cytoplasm alongside free ribosomes drawn as small dots. At the cell's edge, microfilaments line the inner face of the plasma membrane, thread-like intermediate filaments anchor nearby organelles, microtubules radiate through the cytoplasm, and a centrosome of two perpendicular rod-shaped centrioles sits near the nucleus." eager="true" >}}
+{{< mediafigure src="biology/Figure_03_03_01a_corrected" kind="diagram" alt="A labeled diagram of a typical eukaryotic animal cell, egg-shaped, with a nucleus (chromatin and a nucleolus inside a nuclear envelope), rough and smooth endoplasmic reticulum, a Golgi apparatus, mitochondria, peroxisomes, lysosomes, a vacuole, free ribosomes, and a cytoskeleton of microfilaments, intermediate filaments, microtubules, and a centrosome, all in the cytoplasm" longdesc="Panel (a), a typical animal cell: an egg-shaped outline encloses the cytoplasm. A large central nucleus holds tangled chromatin threads and a smaller, darker nucleolus, all inside a double-membraned, pore-studded nuclear envelope. Around the nucleus, ribosome-studded rough endoplasmic reticulum gives way to smooth endoplasmic reticulum; nearby sits a stacked Golgi apparatus. Oval mitochondria, round peroxisomes and lysosomes, and a vacuole float in the cytoplasm alongside free ribosomes drawn as small dots. At the cell's edge, microfilaments line the inner face of the plasma membrane, thread-like intermediate filaments anchor nearby organelles, microtubules radiate through the cytoplasm, and a centrosome of two perpendicular rod-shaped centrioles sits near the nucleus. Printed notes give each labeled part's role: nuclear envelope, a membrane enclosing the nucleus whose protein-lined pores allow material to move in and out; chromatin, DNA plus associated proteins; nucleolus, a condensed region where ribosomes are formed; microtubules form the mitotic spindle and maintain cell shape; centrosome, the microtubule-organizing center; intermediate filaments, fibrous proteins that hold organelles in place; microfilaments, fibrous proteins that form the cellular cortex; peroxisome, houses oxidative metabolism; lysosome, digests food and waste materials; Golgi apparatus, modifies proteins; mitochondria, produce energy; rough endoplasmic reticulum, associated with ribosomes, makes secretory and membrane proteins; smooth endoplasmic reticulum, makes lipids. The plasma membrane, cytoplasm, and vacuole are labeled by name only." eager="true" >}}
 These figures show the major organelles and other cell components of (a) a typical animal cell and (b) a typical eukaryotic plant cell. The plant cell has a cell wall, chloroplasts, plastids, and a central vacuole—structures not in animal cells. Most cells do not have lysosomes or centrosomes.
 {{< /mediafigure >}}
 
-{{< mediafigure src="biology/Figure_04_03_01b" kind="diagram" alt="A labeled diagram of a typical plant cell: rectangular, with the same organelles as the animal cell except no centrosome, plus a cell wall, chloroplasts, plastids, and a large central vacuole." longdesc="Panel (b), a typical plant cell: the same nucleus, endoplasmic reticulum, Golgi apparatus, mitochondria, peroxisomes, ribosomes, and cytoskeleton (microtubules, intermediate filaments, and microfilaments, but no centrosome) appear, now enclosed by an added rigid cell wall outside the plasma membrane. Oval chloroplasts and smaller plastids are scattered through the cytoplasm, and one enormous central vacuole fills most of the cell's interior, pressing the cytoplasm into a thin layer against the cell wall." >}}
+{{< mediafigure src="biology/Figure_04_03_01b" kind="diagram" alt="A labeled diagram of a typical plant cell: rectangular, with the same organelles as the animal cell except no centrosome, plus a cell wall, chloroplasts, plastids, and a large central vacuole." longdesc="Panel (b), a typical plant cell: the same nucleus, endoplasmic reticulum, Golgi apparatus, mitochondria, peroxisomes, ribosomes, and cytoskeleton (microtubules, intermediate filaments, and microfilaments, but no centrosome) appear, now enclosed by an added rigid cell wall outside the plasma membrane. Oval chloroplasts and smaller plastids are scattered through the cytoplasm. One large central vacuole takes up much of the left and center of the cell, leaving only a thin layer of cytoplasm between it and the cell wall on the left, while the nucleus, endoplasmic reticulum, and Golgi apparatus occupy the right side. Printed notes give roles: plasmodesmata, channels that connect two plant cells (named at the upper left, without a pointer); cell wall, maintains cell shape; central vacuole, filled with cell sap that maintains pressure against the cell wall; chloroplast, site of photosynthesis; plastid, stores pigments; and nucleus, contains chromatin, a nuclear envelope, and a nucleolus, as in an animal cell." >}}
 Panel (b) of the figure above: a typical eukaryotic plant cell, with the cell wall, chloroplasts, plastids, and central vacuole that animal cells lack.
 {{< /mediafigure >}}
 
-{{< selfcheck question="If the nucleolus were not able to carry out its function, what other cellular organelles would be affected?" hint="Think about what the nucleolus assembles and where that product is needed next." >}}
+{{< selfcheck question="If the nucleolus were not able to carry out its function, what other cellular organelles would be affected?" hint="Reread The Nucleolus subsection, then the organelle subsections that follow it." >}}
 Free ribosomes and the rough endoplasmic reticulum (which contains ribosomes) would not be able to form.
 ===CHECKS===
 free ribosomes would not be able to form
@@ -43,13 +43,13 @@ the rough endoplasmic reticulum (which contains ribosomes) would not be able to 
 
 Like prokaryotes, eukaryotic cells have a **plasma membrane** (below), a phospholipid bilayer with embedded proteins that separates the internal contents of the cell from its surrounding environment. A phospholipid is a lipid molecule with two fatty acid chains and a phosphate-containing group. The plasma membrane controls the passage of organic molecules, ions, water, and oxygen into and out of the cell. Wastes (such as carbon dioxide and ammonia) also leave the cell by passing through the plasma membrane.
 
-{{< mediafigure src="biology/Figure_04_03_02-ee9a" kind="diagram" alt="A phospholipid bilayer forming the plasma membrane, with the fatty tails of phospholipids facing the bilayer's center and their hydrophilic heads facing outward. Integral membrane proteins and protein channels span the bilayer, a peripheral protein sits on its surface, carbohydrate chains project from certain proteins and lipids on the outer face, and cytoskeleton filaments line the inner face." longdesc="A cutaway block of the phospholipid bilayer, drawn as two rows of red round phosphate heads with wavy tan tails pointing inward toward each other. Embedded blue shapes span the bilayer: several are labeled integral membrane protein, and one forms a protein channel with a visible central pore. A smaller blue shape resting against the inner (cytoplasmic) row, beside the cytoskeletal filaments, is labeled peripheral membrane protein. Short branched chains of blue beads labeled glycoprotein and green beads labeled glycolipid extend outward from the outer face. Small yellow ovals labeled cholesterol sit within the bilayer near two of the channels. Along the inner face, pale wavy lines labeled filaments of the cytoskeleton run beneath the membrane." >}}
+{{< mediafigure src="biology/Figure_04_03_02-ee9a" kind="diagram" alt="A phospholipid bilayer forming the plasma membrane, with the fatty tails of phospholipids facing the bilayer's center and their hydrophilic heads facing outward. Integral membrane proteins and protein channels span the bilayer, a peripheral protein sits on its surface, carbohydrate chains project from certain proteins and lipids on the outer face, and cytoskeleton filaments line the inner face." longdesc="A cutaway block of the phospholipid bilayer, drawn as two rows of red round phosphate heads with wavy tan tails pointing inward toward each other. Embedded blue shapes span the bilayer: one is labeled integral membrane protein, and another, labeled protein channel, has a visible central pore. A smaller blue shape resting against the inner (cytoplasmic) row, beside the cytoskeletal filaments, is labeled peripheral membrane protein. Short branched chains of blue beads labeled glycoprotein and green beads labeled glycolipid extend outward from the outer face. Small yellow ring-shaped clusters, one of them labeled cholesterol, sit among the tails in three places. A bracket at the right labels the whole thickness as the phospholipid bilayer. Along the inner face, pale wavy lines labeled filaments of the cytoskeleton run beneath the membrane." >}}
 The eukaryotic plasma membrane is a phospholipid bilayer with proteins and cholesterol embedded in it.
 {{< /mediafigure >}}
 
 The plasma membranes of cells that specialize in absorption fold into fingerlike projections that we call microvilli (singular = microvillus) (below). Such cells typically line the small intestine, the organ that absorbs nutrients from digested food. This is an excellent example of form following function. People with celiac disease have an immune response to gluten, which is a protein in wheat, barley, and rye. The immune response damages microvilli, and thus, afflicted individuals cannot absorb nutrients. This leads to malnutrition, cramping, and diarrhea. Patients suffering from celiac disease must follow a gluten-free diet.
 
-{{< mediafigure src="biology/Figure_04_03_03a" kind="diagram" alt="Two side-by-side images of microvilli: a transmission electron micrograph showing microvilli as long, slender, finger-like stalks extending from a cell's plasma membrane, next to a diagram of small-intestine lining cells labeling each cell's microvilli, its plasma membrane, its nucleus, and the side of the cell facing the intestine's interior." longdesc="On the left, a black-and-white electron micrograph shows a row of tall, narrow, finger-like microvilli projecting upward from the plasma membrane, with a 100 nm scale bar. An arrow connects a small boxed region of the micrograph to a colored diagram on the right, which shows three adjacent intestinal lining cells, each topped with a fringe of microvilli labeled at the top of the panel; the plasma membrane surrounding each cell and the round purple nucleus inside each cell are labeled, and a bracket labels the microvilli-covered surface as the side of the cell facing the interior of the small intestine." >}}
+{{< mediafigure src="biology/Figure_04_03_03a" kind="diagram" alt="Two side-by-side images of microvilli: a transmission electron micrograph showing microvilli as long, slender, finger-like stalks extending from a cell's plasma membrane, next to a diagram of small-intestine lining cells labeling each cell's microvilli, its plasma membrane, its nucleus, and the side of the cell facing the intestine's interior." longdesc="On the left, a black-and-white electron micrograph shows a row of tall, narrow, finger-like microvilli projecting upward from the plasma membrane, with a 100 nm scale bar. On the right, a colored diagram shows three adjacent intestinal lining cells, each topped with a fringe of microvilli that a bracket at the top labels microvilli. A small box drawn around the tips of a few microvilli at the diagram's upper left edge has a curved arrow running from it to the micrograph, marking the micrograph as that region enlarged. A pointer labels the plasma membrane between two cells and another labels the round purple nucleus of one cell, and a label at the upper right marks the microvilli-covered top surface as the side of the cell facing inside of the small intestine." >}}
 Microvilli, as they appear on cells lining the small intestine, increase the surface area available for absorption. These microvilli are only on the area of the plasma membrane that faces the cavity from which substances will be absorbed. (credit "micrograph": modification of work by Louisa Howard)
 {{< /mediafigure >}}
 
@@ -61,7 +61,7 @@ The **cytoplasm** is the cell's entire region between the plasma membrane and th
 
 Typically, the nucleus is the most prominent organelle in a cell (above). The **nucleus** (plural = nuclei) houses the cell's DNA and directs the synthesis of ribosomes and proteins. Let's look at it in more detail (below).
 
-{{< mediafigure src="biology/Figure_04_03_04" kind="diagram" alt="A labeled diagram of the nucleus: a nuclear envelope encloses the nucleoplasm, which holds tangled chromatin threads and a smaller, darker nucleolus; nuclear pores dot the envelope, and ribosome-studded endoplasmic reticulum surrounds the outside of the envelope." longdesc="A large circle representing the nucleus sits at the center, its outer edge scalloped with small pores to represent the double-membraned, pored nuclear envelope. Inside, tangled pink and purple loops labeled chromatin fill most of the circle around a smaller, solid dark-purple circle labeled nucleolus, positioned left of center. Curved ribbons studded with small red dots, labeled endoplasmic reticulum, wrap around the outside of the nuclear envelope on the right side of the figure, fanning outward from it." >}}
+{{< mediafigure src="biology/Figure_04_03_04" kind="diagram" alt="A labeled diagram of the nucleus: a nuclear envelope encloses the nucleoplasm, which holds tangled chromatin threads and a smaller, darker nucleolus; nuclear pores dot the envelope, and ribosome-studded endoplasmic reticulum surrounds the outside of the envelope." longdesc="A large circle representing the nucleus sits at the center, its outer edge scalloped with small pores to represent the double-membraned, pored nuclear envelope. Inside, tangled pink and purple loops labeled chromatin fill most of the circle around a smaller, solid dark-purple circle labeled nucleolus, positioned left of center. Curved ribbons studded with small red dots, labeled endoplasmic reticulum, wrap around the outside of the nuclear envelope on its left, top, and right sides, fanning outward most widely at the upper right and right; the lower left of the envelope is left bare. Pointers from the left label, top to bottom, endoplasmic reticulum, nucleolus, chromatin, nucleoplasm (the purple fluid around the chromatin), nuclear pore (a gap in the envelope), and nuclear envelope." >}}
 The nucleus stores chromatin (DNA plus proteins) in a gel-like substance called the nucleoplasm. The nucleolus is a condensed chromatin region where ribosome synthesis occurs. We call the nucleus' boundary the nuclear envelope. It consists of two phospholipid bilayers: an outer and an inner membrane. The nuclear membrane is continuous with the endoplasmic reticulum. Nuclear pores allow substances to enter and exit the nucleus.
 {{< /mediafigure >}}
 
@@ -87,7 +87,7 @@ We already know that the nucleus directs the synthesis of ribosomes, but how doe
 
 **Ribosomes** are the cellular structures responsible for protein synthesis. When we view them through an electron microscope, ribosomes appear either as clusters (polyribosomes) or single, tiny dots that float freely in the cytoplasm. They may be attached to the plasma membrane's cytoplasmic side or the endoplasmic reticulum's cytoplasmic side and the nuclear envelope's outer membrane (above). Electron microscopy shows us that ribosomes, which are large protein and RNA complexes, consist of two subunits, large and small (below). Ribosomes receive their "orders" for protein synthesis from the nucleus where the DNA transcribes into messenger RNA (mRNA). The mRNA travels to the ribosomes, which translate the code provided by the sequence of the nitrogenous bases in the mRNA into a specific order of amino acids in a protein. Amino acids are the building blocks of proteins.
 
-{{< mediafigure src="biology/Figure_04_03_06-c2a1" kind="diagram" alt="A labeled diagram of a ribosome during protein synthesis: a large subunit sits atop a smaller subunit, a strand of mRNA threads between them, a tRNA sits in the groove between the subunits, and a growing chain of amino acids extends from the large subunit." longdesc="A large, rounded orange-red shape (labeled ribosome large subunit) rests on top of a smaller, paler blue-white shape (labeled ribosome small subunit). A beaded purple strand labeled mRNA runs along the groove between the two subunits. A green Y-shaped molecule labeled tRNA sits in a notch where the subunits meet, and a chain of blue beads labeled amino acid climbs upward from the tRNA's position, out of the top of the large subunit, forming the labeled growing peptide chain." >}}
+{{< mediafigure src="biology/Figure_04_03_06-c2a1" kind="diagram" alt="A labeled diagram of a ribosome during protein synthesis: a large subunit sits atop a smaller subunit, a strand of mRNA threads between them, a tRNA sits inside the large subunit just above the mRNA, and a growing chain of amino acids extends from the large subunit." longdesc="A large, rounded orange-red shape (labeled ribosome large subunit) rests on top of a smaller, paler blue-white shape (labeled ribosome small subunit). A beaded purple strand labeled mRNA runs along the groove between the two subunits. A green, roughly T-shaped molecule labeled tRNA sits inside the large subunit, its lower arm reaching down to the mRNA, and a chain of blue beads, one of them labeled amino acid, climbs upward from the top of the tRNA, out of the top of the large subunit; a bracket labels the whole chain as the growing peptide chain." >}}
 A large subunit (top) and a small subunit (bottom) comprise ribosomes. During protein synthesis, ribosomes assemble amino acids into proteins.
 {{< /mediafigure >}}
 
@@ -202,10 +202,17 @@ Plant cells and plant-like cells each have a cell wall, chloroplasts, and a cent
 
 ### Describe the structure of eukaryotic cells
 
+{{< textin
+  question="Unlike a prokaryotic cell, a eukaryotic cell has a ________ (meaning a membrane surrounds its DNA)."
+  answer="true nucleus"
+  accept="membrane-bound nucleus|nucleus"
+  hint="Reread the section's second introductory paragraph, or the summary's opening sentence."
+>}}
+
 {{< multiplechoice
   question="Which of the following is surrounded by two phospholipid bilayers?"
   answer="the nucleoplasm"
-  hint="The nuclear envelope, which encloses this fluid, is itself made of two separate phospholipid bilayers — an inner and an outer nuclear membrane."
+  hint="Reread The Nuclear Envelope subsection."
 >}}
 the ribosomes
 the vesicles
@@ -214,9 +221,9 @@ the nucleoplasm
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which of the following is found in both eukaryotic and prokaryotic cells?"
+  question="Which of the following is both in eukaryotic and prokaryotic cells?"
   answer="ribosomes"
-  hint="Ask which of these is not membrane-bound — prokaryotic cells have no membrane-bound organelles at all."
+  hint="Reread the section's second introductory paragraph and the summary's opening sentence."
 >}}
 nucleus
 mitochondrion
@@ -224,18 +231,18 @@ vacuole
 ribosomes
 {{< /multiplechoice >}}
 
-{{< textin
-  question="Unlike a prokaryotic cell, a eukaryotic cell has a ________ (meaning a membrane surrounds its DNA)."
-  answer="true nucleus"
-  hint="The section's summary uses this exact phrase for the membrane-bound nucleus that gives eukaryotic cells their name."
->}}
-
 ### Compare animal cells with plant cells
+
+{{< textin
+  question="A rigid covering outside the plasma membrane that protects a plant cell, provides structural support, and gives it shape is called the ________."
+  answer="cell wall"
+  hint="Reread the third subsection under Animal Cells versus Plant Cells."
+>}}
 
 {{< multiplechoice
   question="In plant cells, the function of the lysosomes is carried out by ________."
   answer="vacuoles"
-  hint="Plant cells lack lysosomes altogether; the digestive processes instead take place in a different, larger organelle."
+  hint="Reread the subsections under Animal Cells versus Plant Cells."
 >}}
 vacuoles
 peroxisomes
@@ -243,16 +250,10 @@ ribosomes
 nuclei
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A rigid covering outside the plasma membrane that protects a plant cell, provides structural support, and gives it shape is called the ________."
-  answer="cell wall"
-  hint="Fungal and some protistan cells have this structure too, but animal cells do not."
->}}
-
 {{< multiplechoice
   question="Plant cells and plant-like cells each have a cell wall, chloroplasts, and a ________."
   answer="central vacuole"
-  hint="The section's summary names this large, water-storing organelle as the third structure plant cells have that animal cells lack."
+  hint="Reread the opening paragraph of Animal Cells versus Plant Cells."
 >}}
 lysosome
 central vacuole
@@ -262,7 +263,19 @@ peroxisome
 
 ### State the role of the plasma membrane
 
-{{< selfcheck question="Why are plasma membranes arranged as a bilayer rather than a monolayer?" hint="Think about what would happen to the hydrophobic tails of the phospholipids if they were exposed on both faces of the membrane." >}}
+{{< textin
+  question="The cell's entire region between the plasma membrane and the nuclear envelope, consisting of organelles suspended in the gel-like cytosol, the cytoskeleton, and various chemicals, is called the ________."
+  answer="cytoplasm"
+  hint="Reread the subsection that follows The Plasma Membrane."
+>}}
+
+{{< textin
+  question="The plasma membrane is a ________ embedded with proteins."
+  answer="phospholipid bilayer"
+  hint="Reread the summary's first paragraph."
+>}}
+
+{{< selfcheck question="Why are plasma membranes arranged as a bilayer rather than a monolayer?" hint="Study the plasma-membrane figure and note which part of each phospholipid faces the water on either side." >}}
 The plasma membrane is a bilayer because the phospholipids that create it are amphiphilic (hydrophilic head, hydrophobic tail). If the plasma membrane were a monolayer, the hydrophobic tails of the phospholipids would be in direct contact with the inside of the cell. Since the cytoplasm is largely made of water, this interaction would not be stable, and would disrupt the plasma membrane as the tails were repulsed by the cytoplasm — in water, phospholipids spontaneously form spherical droplets with the hydrophilic heads facing outward to isolate the hydrophobic tails from the water. By having a bilayer, the hydrophilic heads are exposed to the aqueous cytoplasm and extracellular space, while the hydrophobic tails interact with each other in the middle of the membrane.
 ===CHECKS===
 the phospholipids that create it are amphiphilic (hydrophilic head, hydrophobic tail)
@@ -272,25 +285,12 @@ phospholipids spontaneously form spherical droplets with the hydrophilic heads f
 the hydrophilic heads are exposed to the aqueous cytoplasm and extracellular space, while the hydrophobic tails interact with each other in the middle of the membrane
 {{< /selfcheck >}}
 
-{{< textin
-  question="A phospholipid bilayer with embedded or attached proteins that separates a cell's internal contents from its surrounding environment is called the ________."
-  answer="plasma membrane"
-  accept="cell membrane"
-  hint="Integral and peripheral proteins sit in and on this structure, along with embedded cholesterol."
->}}
-
-{{< textin
-  question="The plasma membrane is a ________ embedded with proteins."
-  answer="phospholipid bilayer"
-  hint="The section's summary opens its plasma-membrane sentence with this two-word structural term."
->}}
-
 ### Summarize the functions of the major cell organelles
 
 {{< multiplechoice
   question="Peroxisomes got their name because hydrogen peroxide is:"
   answer="produced during their oxidation reactions"
-  hint="Look at what the oxidation reactions peroxisomes carry out actually release as a byproduct."
+  hint="Reread the Peroxisomes subsection."
 >}}
 used in their detoxification reactions
 produced during their oxidation reactions
@@ -301,7 +301,7 @@ a cofactor for the organelles' enzymes
 {{< multiplechoice
   question="Tay-Sachs disease is a genetic disorder that results in the destruction of neurons due to a buildup of sphingolipids in the cells. Which organelle is malfunctioning in Tay-Sachs?"
   answer="lysosome"
-  hint="Sphingolipids are complex lipids that would normally be broken down by this organelle's digestive enzymes."
+  hint="Reread the subsections under Animal Cells versus Plant Cells."
 >}}
 lysosome
 endoplasmic reticulum
@@ -309,14 +309,15 @@ peroxisome
 mitochondria
 {{< /multiplechoice >}}
 
-{{< selfcheck question="You already know that ribosomes are abundant in red blood cells. In what other cells of the body would you find them in great abundance? Why?" hint="Think about which cells in the body must synthesize very large amounts of protein." >}}
-Ribosomes are abundant in muscle cells as well, because muscle cells are constructed of the proteins that ribosomes make.
+{{< selfcheck question="You already know that ribosomes are abundant in red blood cells. In what other cells of the body would you find them in great abundance? Why?" hint="Reread the Ribosomes paragraph that follows the ribosome figure." >}}
+Ribosomes are particularly abundant in cells that synthesize large amounts of protein, such as the pancreatic cells that make digestive enzymes, because ribosomes are the cellular structures responsible for protein synthesis. The source's own answer gives muscle cells as its example, "because muscle cells are constructed of the proteins made by the ribosomes." *(Source note: the question's premise does not hold: mature mammalian red blood cells have no organelles, ribosomes included — this book's section on the components of the blood says "the lack of organelles in erythrocytes leaves more room for the hemoglobin molecules." The source solution's muscle-cell example is not stated in this section, so the answer above follows this section's own example of ribosome-rich cells, the pancreatic cells that make digestive enzymes, and keeps the muscle-cell example as the source's.)*
 ===CHECKS===
-ribosomes are abundant in muscle cells
-muscle cells are constructed of the proteins that ribosomes make
+ribosomes are particularly abundant in cells that synthesize large amounts of protein
+such as the pancreatic cells that make digestive enzymes
+ribosomes are the cellular structures responsible for protein synthesis
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are the structural and functional similarities and differences between mitochondria and chloroplasts?" hint="Consider what both organelles are enclosed by and what they both produce, then consider what only one of them contains." >}}
+{{< selfcheck question="What are the structural and functional similarities and differences between mitochondria and chloroplasts?" hint="Compare the Mitochondria and Chloroplasts subsections and their figures." >}}
 Both are similar in that they are enveloped in a double membrane, both have an intermembrane space, and both make ATP. Both mitochondria and chloroplasts have their own DNA. Mitochondria have inner folds called cristae and a matrix, while chloroplasts have chlorophyll and accessory pigments in the thylakoids that form stacks (grana) surrounded by the stroma.
 ===CHECKS===
 enveloped in a double membrane
@@ -329,4 +330,4 @@ chloroplasts have chlorophyll and accessory pigments in the thylakoids that form
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 4.3: Eukaryotic Cells](https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with ten of the eleven re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a drawn illustration, or a diagram paired with a micrograph whose labels carry the teaching — only the mitochondrion electron micrograph is a photograph, and its four baked-in labels are all named in its caption); an extended description added for the six figures that are labeled diagrams whose full reading is not carried by their captions (the animal-cell and plant-cell diagrams, which the source prints as panels (a) and (b) of one figure and this page renders as two consecutive figures — the second carrying a short caption written here — because each panel is its own image; the plasma membrane, the microvilli micrograph-and-diagram pair, the nucleus, the chromatin-and-chromosomes pair, and the ribosome); inline references to figures changed from the source's print-figure links ("(see below)", plain parenthetical links) to descriptive phrases ("above," "below") since figures are not numbered here, and the source's lettered cross-reference "if you look at b" resolved to "the plant-cell panel of the diagram above"; the evolution feature box rendered as a callout with its bold name and the source's own subheading ("Endosymbiosis") kept as an italic clause; the visual-connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; a typo in the source prose ("pathogene defense") corrected to "pathogen defense", and a missing "that" supplied in the Evolution Connection's sentence on symbiosis; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (cell wall, plasma membrane) added from the glossary to round out every objective group with an auto-graded item; rubric checkpoints added to each self-check (the body self-check on the nucleolus included), decomposing its model answer (the source solution) into check-off clauses with no new claims; and three summary-derived recall items added, one per objective still short of the raised floor ("true nucleus" under the first objective, "central vacuole" as a multiple choice under the second, and "phospholipid bilayer" under the third).</small>
+<small>This section is adapted from [Biology 2e, Section 4.3: Eukaryotic Cells](https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with ten of the eleven re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a drawn illustration, or a diagram paired with a micrograph whose labels carry the teaching — only the mitochondrion electron micrograph is a photograph, and its four baked-in labels are all named in its caption); an extended description added for the six figures that are labeled diagrams whose full reading is not carried by their captions (the animal-cell and plant-cell diagrams, which the source prints as panels (a) and (b) of one figure and this page renders as two consecutive figures — the second carrying a short caption written here — because each panel is its own image; the plasma membrane, the microvilli micrograph-and-diagram pair, the nucleus, the chromatin-and-chromosomes pair, and the ribosome); inline references to figures changed from the source's print-figure links ("(see below)", plain parenthetical links) to descriptive phrases ("above," "below") since figures are not numbered here, and the source's lettered cross-reference "if you look at b" resolved to "the plant-cell panel of the diagram above"; the evolution feature box rendered as a callout with its bold name and the source's own subheading ("Endosymbiosis") kept as an italic clause; the visual-connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; a typo in the source prose ("pathogene defense") corrected to "pathogen defense", and a missing "that" supplied in the Evolution Connection's sentence on symbiosis; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (cell wall, placed first in its group; cytoplasm) added from the glossary to round out every objective group with an auto-graded item; rubric checkpoints added to each self-check (the body self-check on the nucleolus included), decomposing its model answer (the source solution) into check-off clauses with no new claims; and three summary-derived items added to meet the raised floor ("true nucleus" under the first objective, "central vacuole" as a multiple choice under the second, and "phospholipid bilayer" under the third). One question premise is corrected with a visible Source note in the model answer: the Critical Thinking question "You already know that ribosomes are abundant in red blood cells…" keeps the source's wording, but mature mammalian red blood cells have no organelles, ribosomes included, by this book's own Components of the Blood section (Section 40.2), and this section's own example of ribosome-rich cells is the pancreatic cells that make digestive enzymes (reported as a source defect); the same item's model answer and rubric are rebuilt on that pancreatic example and the section's sentence that ribosomes are responsible for protein synthesis, since the source solution's muscle-cell example is not stated in this section, and the source's muscle-cell sentence is kept as a quoted, ungraded example.</small>

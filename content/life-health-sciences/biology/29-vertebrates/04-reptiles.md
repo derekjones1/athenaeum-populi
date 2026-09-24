@@ -33,7 +33,7 @@ The **amniotic egg** is the key characteristic of amniotes. In amniotes that lay
 
 In mammals, the yolk sac is very reduced, but the embryo is still cushioned and enclosed within the amnion. The *placenta*, which transports nutrients and functions in gas exchange and waste management, is derived from the chorion and allantois.
 
-{{< mediafigure src="biology/Figure_29_04_01" kind="diagram" eager="true" alt="A cross section of an egg. The outer covering is the shell. Inside, surrounding a circular mass, is the albumen. The outer layer of the circular mass is the chorion. Within it, an embryo sits inside an amniotic cavity filled with amniotic fluid. Attached to the embryo is a yolk sac filled with yolk. Vein-like allantois structures extend from the chorion to the embryo." longdesc="Labels point to the parts of the cutaway egg: Shell is labeled at the top center. On the left, top to bottom, are Albumen, Yolk, and Yolk sac. On the right, top to bottom, are Amniotic cavity (filled with amniotic fluid), Amnion, Embryo, Allantois, and Chorion. The albumen layer sits between the shell and the chorion; inside the chorion, the amniotic cavity holds the embryo, the yolk-filled yolk sac sits at the bottom of the mass threaded with branching red vessels, and the allantois vessels extend from the chorion toward the embryo." >}}
+{{< mediafigure src="biology/Figure_29_04_01" kind="diagram" eager="true" alt="A cross section of an egg. The outer covering is the shell. Inside, surrounding a circular mass, is the albumen. The outer layer of the circular mass is the chorion. Within it, an embryo sits inside an amniotic cavity filled with amniotic fluid. Attached to the embryo is a yolk sac filled with yolk. Vein-like allantois structures extend from the chorion to the embryo." longdesc="Labels point to the parts of the cutaway egg: Shell is labeled at the top center. On the left, top to bottom, are Albumen, Yolk, and Yolk sac. On the right, top to bottom, are Amniotic cavity (filled with amniotic fluid), Amnion, Embryo, Allantois, and Chorion. The albumen layer sits between the shell and the chorion; inside the chorion, the amniotic cavity holds the embryo at the right; the yolk-filled yolk sac, threaded with branching red vessels, fills the left half of the mass and joins the embryo's belly; and the allantois, a vessel-threaded sac beneath the embryo, runs along the lower chorion toward the embryo." >}}
 An amniotic egg. The key features of an amniotic egg are shown.
 {{< /mediafigure >}}
 
@@ -62,7 +62,7 @@ The diapsids in turn diverged into two groups, the *Archosauromorpha* ("ancient 
 
 The evolutionarily derived characteristics of amniotes include the amniotic egg and its four extraembryonic membranes, a thicker and more waterproof skin, and rib ventilation of the lungs (ventilation is performed by drawing air into and out of the lungs by muscles such as the costal rib muscles and the diaphragm).
 
-{{< mediafigure src="biology/Figure_B29_04_03" kind="diagram" alt="The amniote phylogeny tree branches from an ancestral amniote into Synapsida (Mammalia), Anapsida (extinct), and Diapsida. Diapsida splits into Lepidosauria and Archosauria, with a dashed, uncertain branch to Testudines (turtles). Lepidosauria leads to Pleiosaurs and Ichthyosaurs, and to Sphenodontia, Tuataras, and Squamata (lizards, snakes). Archosauria leads to Crocodilia and, separately, to Pterosaurs and Dinosauria, split into Ornithischia and Saurischia, the latter leading to Aves (birds)." longdesc="Reading left to right: the tree's trunk is labeled Ancestral amniote. It splits into three branches: Synapsida/Therapsida, leading to Mammalia (mammals); Anapsida, leading to Extinct anapsids; and Diapsida. Diapsida splits into Lepidosauria, a dashed branch marked with a question mark leading to Testudine (turtles), and Archosauria. Lepidosauria splits into two branches: the upper one splits again into Pleiosaurs and Ichthyosaurs; the lower one splits into Sphenodontia and Tuataras (a closely paired branch) and Squamata (lizards and snakes). Archosauria splits into Crocodilia (crocodiles, alligators) and a second branch that splits into Pterosaurs and Dinosauria; Dinosauria splits into Ornithischia, leading to Ornithischian dinosaurs, and Saurischia, leading to Saurischian dinosaurs and Aves (birds)." >}}
+{{< mediafigure src="biology/Figure_B29_04_03" kind="diagram" alt="The amniote phylogeny tree splits from an ancestral amniote into Synapsida (Mammalia) and a lineage that splits again into Anapsida (extinct) and Diapsida. Diapsida splits into Lepidosauria and Archosauria, with a dashed, uncertain branch to Testudines (turtles). Lepidosauria leads to Pleiosaurs and Ichthyosaurs, and to Sphenodontia, Tuataras, and Squamata (lizards, snakes). Archosauria leads to Crocodilia and, separately, to Pterosaurs and Dinosauria, split into Ornithischia and Saurischia, the latter leading to Aves (birds)." longdesc="Reading left to right: the tree's trunk is labeled Ancestral amniote. It splits into two branches: Synapsida/Therapsida at top, leading to Mammalia (mammals), and an unlabeled lineage that splits again into Anapsida, leading to Extinct anapsids, and Diapsida. Diapsida splits into Lepidosauria, a dashed branch marked with a question mark leading to Testudine (turtles), and Archosauria. Lepidosauria splits into two branches: the upper one splits again into Pleiosaurs and Ichthyosaurs; the lower one splits three ways into Sphenodontia, Tuataras, and Squamata (lizards and snakes). Archosauria splits into Crocodilia (crocodiles, alligators) and a second branch that splits into Pterosaurs and Dinosauria; Dinosauria splits into Ornithischia, leading to Ornithischian dinosaurs, and Saurischia, leading to Saurischian dinosaurs and Aves (birds)." >}}
 Amniote phylogeny. This chart shows the evolution of amniotes. The placement of Testudines (turtles) is currently still debated.
 {{< /mediafigure >}}
 
@@ -208,18 +208,10 @@ Reptiles are tetrapods that ancestrally had four limbs; however, a number of ext
 
 ### Describe the main characteristics of amniotes
 
-{{< selfcheck question="Describe the functions of the three extra-embryonic membranes present in amniotic eggs." hint="Recall which membrane handles gas exchange, which cushions the embryo, and which stores wastes." >}}
-The chorion facilitates the exchange of oxygen and carbon dioxide gases between the embryo and the surrounding air. The amnion protects the embryo from mechanical shock and prevents dehydration. The allantois stores nitrogenous wastes produced by the embryo and facilitates respiration.
-===CHECKS===
-the chorion facilitates the exchange of oxygen and carbon dioxide gases between the embryo and the surrounding air
-the amnion protects the embryo from mechanical shock and prevents dehydration
-the allantois stores nitrogenous wastes produced by the embryo and facilitates respiration
-{{< /selfcheck >}}
-
 {{< textin
-  question="An animal that produces a terrestrially adapted egg protected by amniotic membranes is called a(n) ________."
+  question="An animal that produces a terrestrially adapted egg protected by four extra-embryonic membranes is called a(n) ________."
   answer="amniote"
-  hint="This animal's egg carries four extraembryonic membranes that let it develop away from water."
+  hint="Look at the Summary's first sentence."
 >}}
 
 {{< textin
@@ -241,18 +233,22 @@ the allantois stores nitrogenous wastes produced by the embryo and facilitates r
   hint="It is an extension of the embryo's hindgut."
 >}}
 
+{{< selfcheck question="Describe the functions of the three extra-embryonic membranes present in amniotic eggs." hint="Recall which membrane handles gas exchange, which cushions the embryo, and which stores wastes." >}}
+The chorion facilitates the exchange of oxygen and carbon dioxide gases between the embryo and the surrounding air. The amnion protects the embryo from mechanical shock and prevents dehydration. The allantois stores nitrogenous wastes produced by the embryo and facilitates respiration.
+===CHECKS===
+the chorion facilitates the exchange of oxygen and carbon dioxide gases between the embryo and the surrounding air
+the amnion protects the embryo from mechanical shock and prevents dehydration
+the allantois stores nitrogenous wastes produced by the embryo and facilitates respiration
+{{< /selfcheck >}}
+
 ### Explain the difference between anapsids, synapsids, and diapsids, and give an example of each
 
-{{< multiplechoice
-  question="During the Mesozoic period, diapsids diverged into________."
-  answer="lepidosaurs and archosaurs"
-  hint="One Mesozoic diapsid branch led to crocodiles, dinosaurs, and birds; the other led to lizards, snakes, and tuataras."
+{{< textin
+  question="A non-orbital opening in the skull that may allow muscles to expand and lengthen is called a(n) ________."
+  answer="temporal fenestra"
+  accept="temporal fenestrae"
+  hint="Look at the Evolution of Amniotes paragraph on the key skull differences among the early amniote lines."
 >}}
-pterosaurs and dinosaurs
-mammals and reptiles
-lepidosaurs and archosaurs
-Testudines and Sphenodontia
-{{< /multiplechoice >}}
 
 {{< textin
   question="An animal having no temporal fenestrae in the cranium is called a(n) ________."
@@ -273,24 +269,28 @@ Testudines and Sphenodontia
 >}}
 
 {{< textin
-  question="A non-orbital opening in the skull that may allow muscles to expand and lengthen is called a(n) ________."
-  answer="temporal fenestra"
-  accept="temporal fenestrae"
-  hint="Anapsids have none of these, synapsids have one, and diapsids have two."
->}}
-
-{{< textin
   question="A reptile or a bird, as distinguished from the mammal-line synapsids, is called a(n) ________."
   answer="sauropsid"
   hint="This early amniote line split further into the anapsids and the diapsids."
 >}}
+
+{{< multiplechoice
+  question="During the Mesozoic period, diapsids diverged into________."
+  answer="lepidosaurs and archosaurs"
+  hint="One Mesozoic diapsid branch led to crocodiles, dinosaurs, and birds; the other led to lizards, snakes, and tuataras."
+>}}
+pterosaurs and dinosaurs
+mammals and reptiles
+lepidosaurs and archosaurs
+Testudines and Sphenodontia
+{{< /multiplechoice >}}
 
 ### Identify the characteristics of reptiles
 
 {{< multiplechoice
   question="Squamata includes________."
   answer="lizards and snakes"
-  hint="Rule out the crocodilian, chelonian, and tuatara clades — this is the largest extant clade of reptiles."
+  hint="Look at the first paragraph of the third of the four subsections under Modern Reptiles."
 >}}
 crocodiles and alligators
 turtles
@@ -328,9 +328,9 @@ rather than areas that experience temperature extremes
 >}}
 
 {{< textin
-  question="The clade of lizards and snakes is called ________."
-  answer="Squamata"
-  hint="Its members are most closely related to the tuataras and evolved from a shared lepidosaurian ancestor."
+  question="One of the key adaptations that permitted reptiles to live on land was the development of scaly skin containing the protein ________, which prevented water loss from the skin."
+  answer="keratin"
+  hint="Look at the Summary's sentence on the adaptation that let reptiles live on land."
 >}}
 
 {{< textin
@@ -350,7 +350,7 @@ rather than areas that experience temperature extremes
 {{< multiplechoice
   question="Which of the following reptile groups gave rise to modern birds?"
   answer="Archosaurs"
-  hint="This group also includes the crocodilians, and modern birds evolved from its saurischian dinosaur branch."
+  hint="Look at the Evolution of Reptiles paragraph on the second major divergence of the diapsid reptiles."
 >}}
 Lepidosaurs
 Pterosaurs
@@ -365,23 +365,23 @@ Archosaurs
 >}}
 
 {{< textin
-  question="One of the oldest known amniotes, which had both amphibian and reptilian characteristics, is ________."
-  answer="Casineria"
-  hint="Unlike Hylonomus, this animal's traits blur the line between two vertebrate classes."
->}}
-
-{{< textin
   question="A modern crocodilian or bird, or an extinct pterosaur or dinosaur, belongs to the group called ________."
   answer="archosaur"
   hint="This is the diapsid lineage that, per the section, includes the dinosaurs, the pterosaurs, and today's crocodilians and birds."
 >}}
 
 {{< textin
+  question="One of the oldest known amniotes, which had both amphibian and reptilian characteristics, is ________."
+  answer="Casineria"
+  hint="Unlike Hylonomus, this animal's traits blur the line between two vertebrate classes."
+>}}
+
+{{< textin
   question="Modern lizards, snakes, and tuataras belong to the group called ________."
   answer="lepidosaur"
-  hint="This diapsid lineage's name translates to 'scaly lizard.'"
+  hint="Look at the Evolution of Reptiles paragraph on the second major divergence of the diapsid reptiles."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 29.4: Reptiles](https://openstax.org/books/biology-2e/pages/29-4-reptiles) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_29_04_02 (three hand-drawn skull illustrations, not photographs) and Figure_29_04_04 (a painted paleoart reconstruction of pterosaurs, not a captured photograph); a longdesc added to the amniotic egg diagram (Figure_29_04_01) and the amniote phylogeny chart (Figure_B29_04_03), transcribing their printed labels and branch structure in reading order; the phylogeny chart's alt text rewritten to include its dashed, uncertain branch to Testudines (turtles), which the source alt omitted entirely even though the caption and drawing both call it out; Figure_B29_04_05ab's alt text rewritten because the source alt named only "a skeleton of a Eoraptor," when the photo's own caption identifies two mounted skeletons, Herrerasaurus and Eoraptor — reported as a source defect; the two Visual Connection notes rendered as their figures immediately followed by a multiple choice (the amniotic egg) or a self-check (the amniote phylogeny), kept in the body; the Link to Learning note rendered as a callout with its video link kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; eighteen key-term recall items (amniote, amnion, chorion, allantois, anapsid, synapsid, diapsid, temporal fenestra, sauropsid, brumation, Crocodilia, Squamata, Sphenodontia, Testudines, Hylonomus, Casineria, archosaur, lepidosaur) added from the glossary. One list is corrected with a visible Source note: ichthyosaurs are dropped from the archosaurs, where the source places them against its own figure (erratum 429).</small>
+<small>This section is adapted from [Biology 2e, Section 29.4: Reptiles](https://openstax.org/books/biology-2e/pages/29-4-reptiles) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; two figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_29_04_02 (three hand-drawn skull illustrations, not photographs) and Figure_29_04_04 (a painted paleoart reconstruction of pterosaurs, not a captured photograph); a longdesc added to the amniotic egg diagram (Figure_29_04_01) and the amniote phylogeny chart (Figure_B29_04_03), transcribing their printed labels and branch structure in reading order; the phylogeny chart's alt text rewritten to include its dashed, uncertain branch to Testudines (turtles), which the source alt omitted entirely even though the caption and drawing both call it out; Figure_B29_04_05ab's alt text rewritten because the source alt named only "a skeleton of a Eoraptor," when the photo's own caption identifies two mounted skeletons, Herrerasaurus and Eoraptor — reported as a source defect; the two Visual Connection notes rendered as their figures immediately followed by a multiple choice (the amniotic egg) or a self-check (the amniote phylogeny), kept in the body; the Link to Learning note rendered as a callout with its video link kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; seventeen key-term recall items (amniote, amnion, chorion, allantois, anapsid, synapsid, diapsid, temporal fenestra, sauropsid, brumation, Crocodilia, Sphenodontia, Testudines, Hylonomus, Casineria, archosaur, lepidosaur) added from the glossary, and one cloze recall item built from the Summary's sentence on keratin in reptile skin; the amniote item's prompt takes the Summary's "four extra-embryonic membranes" in place of the glossary's "amniotic membranes", which prints the answer's root; the source alt's claim that the amniote tree initially branches three ways, into diapsids, anapsids, and synapsids, is corrected to the drawn two-step split (Synapsida first, then Anapsida and Diapsida). One list is corrected with a visible Source note: ichthyosaurs are dropped from the archosaurs, where the source places them against its own figure (erratum 429).</small>

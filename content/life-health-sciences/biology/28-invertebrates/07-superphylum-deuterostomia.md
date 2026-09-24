@@ -36,7 +36,7 @@ Despite the adaptive value of bilaterality for most free-living cephalized anima
 
 The endoskeleton is produced by dermal cells, which also produce several kinds of pigments, imparting vivid colors to these animals. In sea stars, fingerlike projections (papillae) of dermal tissue extend through the endoskeleton and function as gills. Some cells are glandular, and may produce toxins. Each arm or section of the animal contains several different structures: for example, digestive glands, gonads, and the tube feet that are unique to the echinoderms. In echinoderms like sea stars, every arm bears two rows of *tube feet* on the oral side, running along an external ambulacral groove. These tube feet assist in locomotion, feeding, and chemical sensations, as well as serve to attach some species to the substratum.
 
-{{< mediafigure src="biology/Figure_28_05_01" kind="diagram" alt="A cutaway diagram of a five-armed sea star seen from above, its central disk opened to show internal structures: a central stomach and digestive glands radiating into each arm, a central ring canal with radial canals running into the arms, rows of small tube feet along each arm's underside, and an inset close-up of a single tube foot showing its bulbous ampulla and podium." longdesc="Labels, as drawn: Madreporite marks a small structure at the top center of the disk, and Anus sits just below it at the center of the cutaway. To the right, Radial canal marks a canal running out into the upper right arm, and Gonads marks a row of small oval structures along that arm's inner edge. To the left, Stomach marks the disk-shaped central stomach. Below the stomach, Central ring canal marks the ring at the center of the disk, and Digestive glands marks the branched glands running down into the lower arm. At lower right, a boxed inset labeled Tube foot shows a single tube foot, with Ampulla marking its bulb-shaped top and Podium marking its narrow stalk below." >}}
+{{< mediafigure src="biology/Figure_28_05_01" kind="diagram" alt="A cutaway diagram of a five-armed sea star seen from above, its central disk and two arms opened to show internal structures: a central stomach branching toward each arm, digestive glands running down the cut-open lower arm, a central ring canal with a radial canal running into the cut-open right arm, rows of small tube feet along that arm, and an inset close-up of a single tube foot showing its bulbous ampulla and podium." longdesc="Labels, as drawn: Madreporite marks a small structure at the top center of the disk, and Anus sits just below it at the center of the cutaway. To the right, Radial canal marks the pale canal running out along the long, cut-open arm that extends to the right, lined on both sides by rows of small bulb-topped tube feet, and Gonads marks, with two lines, green strips along that arm on either side of the canal. To the left, Stomach marks the yellow central stomach. Below the stomach, Central ring canal marks the ring at the center of the disk, and Digestive glands marks, with two lines, the branched glands running down into the cut-open lower arm. At lower right, a boxed inset labeled Tube foot shows a single tube foot. Ampulla has two lines, one to a bulb in the arm's row and one to the inset's bulb-shaped top; Podium also has two lines, one to the podia projecting from the underside of the right arm's tip and one to the inset's narrow stalk below." >}}
 Anatomy of a sea star. This diagram of a sea star shows the pentaradial pattern typical of adult echinoderms, and the water vascular system that is their defining characteristic.
 {{< /mediafigure >}}
 
@@ -106,7 +106,7 @@ The characteristic features of the Chordata are a notochord, a dorsal hollow ner
 {{< multiplechoice
   question="Echinoderms have ________."
   answer="pentaradial symmetry"
-  hint="Adult echinoderms' arms are typically arrayed in multiples of five around a central axis."
+  hint="Look at the first sentence of the Morphology and Anatomy subsection, on the symmetry of the adults."
 >}}
 triangular symmetry
 radial symmetry
@@ -125,7 +125,7 @@ water
 saline
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the different classes of echinoderms using examples." hint="Match each class name to the common animals it contains — sea stars, sea urchins and sand dollars, brittle stars, sea lilies and feather stars, and sea cucumbers." >}}
+{{< selfcheck question="Describe the different classes of echinoderms using examples." hint="Work through the classes paragraph by paragraph, from the sentence that divides the phylum into its extant classes, and give an example animal for each." >}}
 The Asteroidea are the sea stars, the Echinoidea are the sea urchins and sand dollars, the Ophiuroidea are the brittle stars, the Crinoidea are the sea lilies and feather stars, and the Holothuroidea are the sea cucumbers.
 ===CHECKS===
 the Asteroidea are the sea stars
@@ -150,10 +150,17 @@ the Holothuroidea are the sea cucumbers
 
 ### Describe the distinguishing characteristics of chordates
 
+{{< textin
+  question="The phylum whose members possess a notochord, a dorsal hollow nerve cord, an endostyle, pharyngeal slits, and a post-anal tail at some point in development is called ________."
+  answer="Chordata"
+  accept="chordate"
+  hint="Reread the section's opening paragraphs, on the two major deuterostome clades."
+>}}
+
 {{< multiplechoice
   question="Which of the following features does not distinguish humans as a member of phylum Chordata?"
   answer="Human embryos undergo indeterminate cleavage."
-  hint="This developmental trait is shared broadly across the deuterostomes, echinoderms included — it is not exclusive to chordates."
+  hint="Check each option against the five features the Phylum Chordata discussion says all chordates share."
 >}}
 Human embryos undergo indeterminate cleavage.
 A spinal cord runs along an adult human's dorsal side.
@@ -164,7 +171,7 @@ The human coccyx forms from an embryonic tail.
 {{< multiplechoice
   question="The sister taxon of the Chordata is the ________."
   answer="Ambulacraria"
-  hint="This clade shares pharyngeal slits and a deuterostome pattern of development with the chordates, but is not itself a chordate group."
+  hint="Look at the paragraph after the protostome–deuterostome comparison, which names the two major deuterostome clades."
 >}}
 Mollusca
 Arthropoda
@@ -173,18 +180,11 @@ Rotifera
 {{< /multiplechoice >}}
 
 {{< textin
-  question="The phylum whose members possess a notochord, a dorsal hollow nerve cord, an endostyle, pharyngeal slits, and a post-anal tail at some point in development is called ________."
-  answer="Chordata"
-  accept="chordate"
-  hint="This phylum includes the vertebrates along with the invertebrate urochordates and cephalochordates."
->}}
-
-{{< textin
-  question="The characteristic features of the Chordata are a ________, a dorsal hollow nerve cord, pharyngeal slits, a post-anal tail, and an endostyle/thyroid that secretes iodinated hormones."
-  answer="notochord"
-  hint="This stiff, rod-like structure supports the body axis and, in most vertebrates, is later replaced by the vertebral column."
+  question="Most tunicates live on the ocean floor and are ________ feeders."
+  answer="suspension"
+  hint="Look at the Phylum Chordata discussion's sentences on the two invertebrate chordate clades."
 >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 28.7: Superphylum Deuterostomia](https://openstax.org/books/biology-2e/pages/28-7-superphylum-deuterostomia) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the manifest's own (all three alts rewritten, including Figure_28_05_02abcde's panel-by-panel description); two figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_28.48ab.png (a phylogeny plus two line-drawn body outlines) and Figure_28_05_01 (a labeled sea star anatomy schematic) — while Figure_28_05_02abcde's "photo" guess was confirmed correct; a longdesc added to the deuterostome phylogeny (Figure_28.48ab.png), walking its branches in drawn order, and to the sea star anatomy diagram (Figure_28_05_01), walking its labels in reading order, since neither figure's one-line caption carries that detail; the interactive note rendered as a Link to Learning callout, keeping the source URL; the end-of-section Review Questions and the Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (water vascular system, madreporite, Chordata) added from the glossary, and one cloze recall item built from the section's own Chordata summary sentence, to meet this book's practice floor from a section with only five source exercises and six glossary terms; the source's "Protosomes" in the opening paragraph corrected to "protostomes" — reported as a source defect.</small>
+<small>This section is adapted from [Biology 2e, Section 28.7: Superphylum Deuterostomia](https://openstax.org/books/biology-2e/pages/28-7-superphylum-deuterostomia) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP with a custom alt written from each image rather than reusing the manifest's own (all three alts rewritten, including Figure_28_05_02abcde's panel-by-panel description); two figures re-kinded after inspection from the manifest's file-extension "photo" guess to "diagram" — Figure_28.48ab.png (a phylogeny plus two line-drawn body outlines) and Figure_28_05_01 (a labeled sea star anatomy schematic) — while Figure_28_05_02abcde's "photo" guess was confirmed correct; a longdesc added to the deuterostome phylogeny (Figure_28.48ab.png), walking its branches in drawn order, and to the sea star anatomy diagram (Figure_28_05_01), walking its labels in reading order, since neither figure's one-line caption carries that detail; the interactive note rendered as a Link to Learning callout, keeping the source URL; the end-of-section Review Questions and the Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively); rubric checkpoints added to the self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; three key-term recall items (water vascular system, madreporite, Chordata) added from the glossary, and one cloze recall item built from the section's own summary sentence on tunicate feeding, to meet this book's practice floor from a section with only five source exercises and six glossary terms; the source's "Protosomes" in the opening paragraph corrected to "protostomes" — reported as a source defect.</small>

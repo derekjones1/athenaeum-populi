@@ -32,7 +32,7 @@ Both of these phylogenetic trees show the relationship of the three domains of l
 
 In a rooted tree, the branching indicates evolutionary relationships (see the figure below). The point where a split occurs, a **branch point**, represents where a single lineage evolved into a distinct new one. We call a lineage that evolved early from the root that remains unbranched a **basal taxon**. We call two lineages stemming from the same branch point **sister taxa**. A branch with more than two lineages is a **polytomy** and serves to illustrate where scientists have not definitively determined all of the relationships. Note that although sister taxa and polytomy do share an ancestor, it does not mean that the groups of organisms split or evolved from each other. Organisms in two taxa may have split at a specific branch point, but neither taxon gave rise to the other.
 
-{{< mediafigure src="biology/Figure_20_01_02" kind="diagram" alt="Illustration shows a phylogenetic tree that starts at a root, indicating that all organisms on the tree share a common ancestor. Shortly after the root, the tree branches out. One branch gives rise to a single, basal lineage, and the other gives rise to all other organisms on the tree. The next branch forks at one point into four different lineages, an example of polytomy. The final branch gives rise to two lineages, an example of sister taxa." longdesc="Reading from bottom left: the tree begins at Root, where an arrow labels the first fork as the Branch point. One line from that point runs right, mostly straight, as an unbranched Basal taxon. The other line rises and forks again partway up: its lower branch immediately splays into four lines bracketed Polytomy, while its upper branch continues to the top of the tree and forks once more into two closely spaced lines bracketed Sister taxa." >}}
+{{< mediafigure src="biology/Figure_20_01_02" kind="diagram" alt="Illustration shows a phylogenetic tree that starts at a root, indicating that all organisms on the tree share a common ancestor. Shortly after the root, the tree branches out. One branch gives rise to a single, basal lineage, and the other gives rise to all other organisms on the tree. The next branch forks at one point into four different lineages, an example of polytomy. The final branch gives rise to two lineages, an example of sister taxa." longdesc="Reading from bottom left: the tree begins at Root, where an arrow labels the first fork as the Branch point. One line from that point runs right, mostly straight, as an unbranched Basal taxon. The other line rises and forks again partway up: its lower branch runs right and splays at its far end into four lines bracketed Polytomy, while its upper branch rises and forks once more near the top: one line continues up to the right as a single unlabeled tip, and the other angles up to the left and splits into two closely spaced lines bracketed Sister taxa." >}}
 A phylogenetic tree's root indicates that an ancestral lineage gave rise to all organisms on the tree. A branch point indicates where two lineages diverged. A lineage that evolved early and remains unbranched is a basal taxon. When two lineages stem from the same branch point, they are sister taxa. A branch with more than two lineages is a polytomy.
 {{< /mediafigure >}}
 
@@ -62,7 +62,7 @@ Another aspect of phylogenetic trees is that, unless otherwise indicated, the br
 
 The taxonomic classification system (also called the Linnaean system after its inventor, Carl Linnaeus, a Swedish botanist, zoologist, and physician) uses a hierarchical model. Moving from the point of origin, the groups become more specific, until one branch ends as a single species. For example, after the common beginning of all life, scientists divide organisms into three large categories called domains: Bacteria, Archaea, and Eukarya. Within each domain is a second category called a **kingdom**. After kingdoms, the subsequent categories of increasing specificity are: **phylum**, **class**, **order**, **family**, **genus**, and **species** (see the figure below).
 
-{{< mediafigure src="biology/Figure_B20_01_02ab" kind="diagram" alt="The illustration shows the classification of a dog, which belongs in the domain Eukarya, kingdom Animalia, phylum Chordata, class Mammalia, order Carnivora, family Canidae, genus Canis, species Canis lupus, and the subspecies is Canis lupus familiaris." longdesc="The chain runs left to right along the bottom row: Domain: Eukarya, Kingdom: Animalia, Phylum: Chordata, each pointing to the next with a rightward arrow; a vertical arrow then rises from Phylum: Chordata into Class: Mammalia, which starts the top row. The top row continues right to left: Class: Mammalia, Order: Carnivora, Family: Canidae, Genus: Canis, Species: Canis lupus, ending at Subspecies: Canis lupus familiaris, each box pointing back to the previous one with a leftward arrow; a photo of a light-colored dog standing in grass sits beside the Subspecies box." >}}
+{{< mediafigure src="biology/Figure_B20_01_02ab" kind="diagram" alt="The illustration shows the classification of a dog, which belongs in the domain Eukarya, kingdom Animalia, phylum Chordata, class Mammalia, order Carnivora, family Canidae, genus Canis, species Canis lupus, and the subspecies is Canis lupus familiaris." longdesc="The chain runs left to right along the bottom row: Domain: Eukarya, Kingdom: Animalia, Phylum: Chordata, each pointing to the next with a rightward arrow; a vertical arrow then rises from Phylum: Chordata into Class: Mammalia, which starts the top row. The top row continues right to left: Class: Mammalia, Order: Carnivora, Family: Canidae, Genus: Canis, Species: Canis lupus, ending at Subspecies: Canis lupus familiaris, each box pointing on to the next with a leftward arrow; a photo of a light-colored dog standing in frosty grass sits at the far left, beside the Subspecies box." >}}
 The taxonomic classification system uses a hierarchical model to organize living organisms into increasingly specific categories. The common dog, *Canis lupus familiaris*, is a subspecies of *Canis lupus*, which also includes the wolf and dingo. (credit "dog": modification of work by Janneke Vreugdenhil)
 {{< /mediafigure >}}
 
@@ -121,7 +121,7 @@ Scientists continually gain new information that helps understand the evolutiona
 {{< textin
   question="The science of classifying organisms is called ________."
   answer="taxonomy"
-  hint="It literally means “arrangement law.”"
+  hint="Reread the first paragraph of the Classification Levels subsection."
 >}}
 
 {{< textin
@@ -142,6 +142,19 @@ a binomial nomenclature system
 {{< /multiplechoice >}}
 
 ### List the different levels of the taxonomic classification system
+
+{{< textin
+  question="The domain division in the taxonomic classification system is called a ________."
+  answer="kingdom"
+  hint="Bacteria, Archaea, and Eukarya are the three domains; this next level divides each of them further."
+>}}
+
+{{< textin
+  question="The kingdom division in the taxonomic classification system is called a ________."
+  answer="phylum"
+  accept="phyla"
+  hint="Chordata, which includes the dog, is an example at this level."
+>}}
 
 {{< multiplechoice
   question="Which statement about the taxonomic classification system is correct?"
@@ -164,19 +177,6 @@ species
 {{< /selfcheck >}}
 
 {{< textin
-  question="The domain division in the taxonomic classification system is called a ________."
-  answer="kingdom"
-  hint="Bacteria, Archaea, and Eukarya are the three domains; this next level divides each of them further."
->}}
-
-{{< textin
-  question="The kingdom division in the taxonomic classification system is called a ________."
-  answer="phylum"
-  accept="phyla"
-  hint="Chordata, which includes the dog, is an example at this level."
->}}
-
-{{< textin
   question="A single level in the taxonomic classification system is called a ________."
   answer="taxon"
   accept="taxa"
@@ -196,6 +196,13 @@ evolutionary history
 organisms on earth
 {{< /multiplechoice >}}
 
+{{< textin
+  question="Each organism shares relatedness with others, and based on ________ and genetic evidence, scientists attempt to map the evolutionary pathways of all life on Earth."
+  answer="morphologic"
+  accept="morphological"
+  hint="Reread the third sentence of the Summary."
+>}}
+
 {{< multiplechoice
   question="What do scientists in the field of systematics accomplish?"
   answer="organize and classify organisms"
@@ -207,18 +214,18 @@ name new species
 communicate among field biologists
 {{< /multiplechoice >}}
 
-{{< textin
-  question="The field of organizing and classifying organisms based on evolutionary relationships is called ________."
-  answer="systematics"
-  hint="Researchers in this field may draw on fossils, structures, molecules, and DNA analysis."
->}}
-
 ### Discuss a phylogenetic tree's components and purpose
+
+{{< textin
+  question="A diagram that reflects the evolutionary relationships among organisms or groups of organisms is called a ________."
+  answer="phylogenetic tree"
+  hint="Scientists consider this diagram to be a hypothesis of the evolutionary past."
+>}}
 
 {{< multiplechoice
   question="On a phylogenetic tree, which term refers to lineages that diverged from the same place?"
   answer="sister taxa"
-  hint="This is the term for two lineages that share one branch point, not the term for a lineage that never branched at all."
+  hint="Reread the paragraph on how to read the branching of a rooted tree, and the figure that labels its parts."
 >}}
 sister taxa
 basal taxa
@@ -243,12 +250,6 @@ appear closely related but are not
 {{< /selfcheck >}}
 
 {{< textin
-  question="A diagram that reflects the evolutionary relationships among organisms or groups of organisms is called a ________."
-  answer="phylogenetic tree"
-  hint="Scientists consider this diagram to be a hypothesis of the evolutionary past."
->}}
-
-{{< textin
   question="A phylogenetic tree with a single ancestral lineage to which all represented organisms relate is called ________."
   answer="rooted"
   accept="rooted tree|rooted phylogenetic tree"
@@ -257,4 +258,4 @@ appear closely related but are not
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 20.1: Organizing Life on Earth](https://openstax.org/books/biology-2e/pages/20-1-organizing-life-on-earth) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the dog-classification figure's alt spells the subspecies "Canis lupus familiaris" although the artwork itself prints "Canus" (erratum 838); Figure_20_01_01, Figure_20_01_02, and Figure_B20_01_05 re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (all three are line-drawn phylogenetic-tree diagrams, not photographs); a longdesc added to all five figures, walking each phylogenetic tree's root, branching order, and tip labels as drawn, the classification flow chart's box order and arrow direction, and the taxonomic-pyramid figure's nine rows and the organisms present in each, since none of these are fully carried by their captions; the source alts for Figure_20_01_01 and Figure_B20_01_05 shortened from their over-600-character source form (a full step-by-step walkthrough) to a description of what each figure teaches, with the full walkthrough moved into the longdesc; the source alt for Figure_20_01_05 (also over 600 characters, and phrased as a level-by-level list of which organisms share which category) rewritten to describe the pyramid's structure without pre-computing the answer to the Visual Connection question beside it, with the level-by-level detail moved into the longdesc instead; the two interactive notes rendered as Link to Learning callouts with descriptive link text ("an interactive exercise exploring evolutionary relationships among species," "a reference site cataloging the classifications of thousands of organisms") in place of the source's bare "website"; the Visual Connection note rendered as its figure followed by a self-check, since the source keys it with a prose solution rather than a lettered option, with rubric checkpoints decomposing its model answer (the source solution) into check-off clauses with no new claims; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with rubric checkpoints added to each Practice self-check the same way; eight key-term recall items (taxonomy, binomial nomenclature, kingdom, phylum, taxon, systematics, phylogenetic tree, rooted) added from the glossary; and one multiple choice written locally under "Discuss the need for a comprehensive classification system," keyed to "a taxonomic classification system," since none of the module's four keyed Review Questions or three Critical Thinking Questions test that objective as an auto-graded item — it is built strictly from the section summary's own sentence naming the taxonomic classification system as the historical approach to organizing organisms.</small>
+<small>This section is adapted from [Biology 2e, Section 20.1: Organizing Life on Earth](https://openstax.org/books/biology-2e/pages/20-1-organizing-life-on-earth) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the dog-classification figure's alt spells the subspecies "Canis lupus familiaris" although the artwork itself prints "Canus" (erratum 838); Figure_20_01_01, Figure_20_01_02, and Figure_B20_01_05 re-kinded from the manifest's file-extension "photo" guess to "diagram" after inspection (all three are line-drawn phylogenetic-tree diagrams, not photographs); a longdesc added to all five figures, walking each phylogenetic tree's root, branching order, and tip labels as drawn, the classification flow chart's box order and arrow direction, and the taxonomic-pyramid figure's nine rows and the organisms present in each, since none of these are fully carried by their captions; the source alts for Figure_20_01_01 and Figure_B20_01_05 shortened from their over-600-character source form (a full step-by-step walkthrough) to a description of what each figure teaches, with the full walkthrough moved into the longdesc; the source alt for Figure_20_01_05 (also over 600 characters, and phrased as a level-by-level list of which organisms share which category) rewritten to describe the pyramid's structure without pre-computing the answer to the Visual Connection question beside it, with the level-by-level detail moved into the longdesc instead; the two interactive notes rendered as Link to Learning callouts with descriptive link text ("an interactive exercise exploring evolutionary relationships among species," "a reference site cataloging the classifications of thousands of organisms") in place of the source's bare "website"; the Visual Connection note rendered as its figure followed by a self-check, since the source keys it with a prose solution rather than a lettered option, with rubric checkpoints decomposing its model answer (the source solution) into check-off clauses with no new claims; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with rubric checkpoints added to each Practice self-check the same way; seven key-term recall items (taxonomy, binomial nomenclature, kingdom, phylum, taxon, phylogenetic tree, rooted) added from the glossary, with the kingdom and phylum items placed before the Review Question and Critical Thinking list that print their keys, and one summary cloze (morphologic evidence) that replaces a systematics recall item whose definition printed the key of the Review Question below it; and one multiple choice written locally under "Discuss the need for a comprehensive classification system," keyed to "a taxonomic classification system," since none of the module's four keyed Review Questions or three Critical Thinking Questions test that objective as an auto-graded item — it is built strictly from the section summary's own sentence naming the taxonomic classification system as the historical approach to organizing organisms.</small>

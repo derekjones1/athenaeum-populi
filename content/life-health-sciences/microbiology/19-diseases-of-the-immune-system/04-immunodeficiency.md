@@ -94,7 +94,7 @@ The most common cause of secondary immunodeficiency worldwide is severe malnutri
   question="What is the most common cause of secondary immunodeficiencies?"
   answer="severe malnutrition"
   accept="malnutrition"
-  hint="It affects both innate and adaptive immunity and is a matter of diet, not infection."
+  hint="Reread the last paragraph of Secondary Immunodeficiency."
 >}}
 
 {{< selfcheck question="Explain why secondary immunodeficiencies can sometimes be reversed." hint="Think about what a secondary immunodeficiency has, that a primary one does not." >}}
@@ -183,13 +183,14 @@ immunosuppression due to measles infection
 {{< textin
   question="Diseases due to ________ abnormalities are termed primary immunodeficiencies."
   answer="genetic"
-  hint="Primary immunodeficiencies are present from birth, encoded in the DNA."
+  accept="inherited"
+  hint="Reread the paragraph that follows the list of causes in Secondary Immunodeficiency."
 >}}
 
 {{< textin
   question="A secondary immunodeficiency is ________, rather than genetic."
   answer="acquired"
-  hint="Secondary immunodeficiencies develop after birth, from an outside cause such as infection or poor diet."
+  hint="Reread the opening sentence of Secondary Immunodeficiency."
 >}}
 
 {{< sortbins question="Sort each disease under whether it is a primary or a secondary immunodeficiency." hint="A primary immunodeficiency is inherited; a secondary one develops from an outside cause." >}}
@@ -214,19 +215,24 @@ this approach is not without risk
 secondary immunodeficiencies are often reversible if the underlying cause is resolved
 {{< /selfcheck >}}
 
-{{< textin
-  question="In some cases, a ________ may successfully correct the defects in lymphocyte development that lead to the SCID phenotype, by replacing the defective component."
-  answer="bone marrow transplant"
-  hint="David Vetter received one of these from his sister."
+{{< multiplechoice
+  question="Why do vaccines provide patients with SCID no protection?"
+  answer="They cannot develop immunological memory"
+  hint="Reread the opening paragraph of Severe Combined Immunodeficiency."
 >}}
+Their phagocytes cannot produce superoxide radicals
+Their B cells cannot produce sufficient Bruton tyrosine kinase
+They cannot develop immunological memory
+They cannot produce secretory IgA
+{{< /multiplechoice >}}
 
 {{< textin
   question="AIDS is characterized by profound CD4 T-cell ________ (decrease in lymphocytes)."
   answer="lymphopenia"
   accept="CD4 T-cell lymphopenia"
-  hint="HIV depletes this specific class of T cell."
+  hint="Reread the paragraph on HIV infection and AIDS in Secondary Immunodeficiency."
 >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 19.4: Immunodeficiency](https://openstax.org/books/microbiology/pages/19-4-immunodeficiency) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the section's one source figure is re-encoded as WebP and rendered as a mediafigure after image and PDF inspection, `kind="photo"` set after looking at the photograph, and `eager="true"` as the page's only figure; the feature box is rendered as a callout with its bold name and title, transcribed in the source's own document order; the one summary-attribute table ("Primary and Secondary Immunodeficiencies") is transcribed as a Markdown table from the CNXML cells, its merged first column rendered as a bold group-label row above each group's diseases, and it additionally gets a two-bin `sortbins` (Primary/Secondary) in Practice under the first objective, matching the table's own grouping; the source's three Multiple Choice items and two Fill in the Blank items (rendered as `textin`) keep their source wording, options, order, and keys; the one Short Answer question, for which the source prints no key, stays a `selfcheck` with a model answer and rubric assembled from this section's own text — the module names no general treatment for primary immunodeficiencies, so the model answer says so and gives only the SCID bone-marrow-transplant passage and the secondary-immunodeficiency reversibility sentence; of the module's five body Check Your Understanding bullets, two are graded from a single module sentence — "What is the fundamental cause of a primary immunodeficiency?" (`multiplechoice`, keyed to the module's own causes sentence, distractors drawn from the module's own list of secondary-immunodeficiency causes) and "What is the most common cause of secondary immunodeficiencies?" (`textin`, answer "severe malnutrition," the sentence's own words) — and the remaining three stay body self-checks, since each needs more than one module sentence assembled; two filler `textin` items are added under the second objective, since the module's treatment content is thin: one clozes the SCID bone-marrow-transplant sentence, the other clozes the AIDS/CD4 T-cell lymphopenia sentence (the reversibility sentence is not clozed a second time, since the body self-check on the same objective already uses it as its model answer and a second item on it would re-ask that self-check and leak its answer), disclosed here and in the source ledger; a missing word in the source's secondary-immunodeficiency definition ("occurs as a result an acquired impairment," missing "of") is corrected in place with no inline note; key terms compiled from the module's six `<term>` elements and the book's Glossary appendix, giving six distinct bullets, with one — severe combined immunodeficiency (SCID) — sentence-derived from the module's own defining sentence rather than the appendix, since no matching appendix entry was found under that headword. No source exercise item is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 19.4: Immunodeficiency](https://openstax.org/books/microbiology/pages/19-4-immunodeficiency) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: the section's one source figure is re-encoded as WebP and rendered as a mediafigure after image and PDF inspection, `kind="photo"` set after looking at the photograph, and `eager="true"` as the page's only figure; the feature box is rendered as a callout with its bold name and title, transcribed in the source's own document order; the one summary-attribute table ("Primary and Secondary Immunodeficiencies") is transcribed as a Markdown table from the CNXML cells, its merged first column rendered as a bold group-label row above each group's diseases, and it additionally gets a two-bin `sortbins` (Primary/Secondary) in Practice under the first objective, matching the table's own grouping; the source's three Multiple Choice items and two Fill in the Blank items (rendered as `textin`) keep their source wording, options, order, and keys; the one Short Answer question, for which the source prints no key, stays a `selfcheck` with a model answer and rubric assembled from this section's own text — the module names no general treatment for primary immunodeficiencies, so the model answer says so and gives only the SCID bone-marrow-transplant passage and the secondary-immunodeficiency reversibility sentence; of the module's five body Check Your Understanding bullets, two are graded from a single module sentence — "What is the fundamental cause of a primary immunodeficiency?" (`multiplechoice`, keyed to the module's own causes sentence, distractors drawn from the module's own list of secondary-immunodeficiency causes) and "What is the most common cause of secondary immunodeficiencies?" (`textin`, answer "severe malnutrition," the sentence's own words) — and the remaining three stay body self-checks, since each needs more than one module sentence assembled (the primary-immunodeficiency `multiplechoice`'s keyed option, "Inherited defects…", also answers the source Fill in the Blank "Diseases due to ________ abnormalities are termed primary immunodeficiencies" (key genetic); both are source questions and the body item stays at its note position, so both are kept); two filler items are added under the second objective, since the module's treatment content is thin: a `multiplechoice` built from the SCID sentence that vaccines provide no protection because these patients cannot develop immunological memory (its distractors are the module's own defects of chronic granulomatous disease, X-linked agammaglobulinemia, and selective IgA deficiency; it replaces an earlier cloze of the SCID bone-marrow-transplant sentence, which the Short Answer self-check directly above uses as its model answer), and a `textin` that clozes the AIDS/CD4 T-cell lymphopenia sentence (the reversibility sentence is not clozed a second time, since the body self-check on the same objective already uses it as its model answer and a second item on it would re-ask that self-check and leak its answer), disclosed here and in the source ledger; a missing word in the source's secondary-immunodeficiency definition ("occurs as a result an acquired impairment," missing "of") is corrected in place with no inline note; key terms compiled from the module's six `<term>` elements and the book's Glossary appendix, giving six distinct bullets, with one — severe combined immunodeficiency (SCID) — sentence-derived from the module's own defining sentence rather than the appendix, since no matching appendix entry was found under that headword. No source exercise item is omitted.</small>

@@ -181,7 +181,7 @@ The following table summarizes the characteristics of several important genera o
 
 **Check Your Understanding**
 
-{{< textin question="What type of Deltaproteobacteria forms fruiting bodies?" answer="myxobacteria" hint="Find the soil-dwelling, highly social Deltaproteobacteria described immediately before the figure." >}}
+{{< textin question="What type of Deltaproteobacteria forms fruiting bodies?" answer="myxobacteria" accept="myxobacterium" hint="Reread the third paragraph of Deltaproteobacteria." >}}
 
 ## Epsilonproteobacteria
 
@@ -254,20 +254,22 @@ genus
 *Campylobacter*.
 {{< /multiplechoice >}}
 
-{{< textin question="Rickettsias are ________ intracellular bacteria." answer="obligate" hint="Use the classification that describes their required relationship with a host cell." >}}
+{{< textin question="Rickettsias are ________ intracellular bacteria." answer="obligate" hint="Reread the second paragraph of Alphaproteobacteria." >}}
 
-{{< textin question="The genus *Salmonella* belongs to the class ________ and includes pathogens that cause salmonellosis and typhoid fever." answer="Gammaproteobacteria" hint="Locate Salmonella in the section's five class headings." >}}
+{{< textin question="The species ________, which belongs to Epsilonproteobacteria, causes peptic ulcers of the stomach and duodenum." answer="Helicobacter pylori" accept="H. pylori" hint="Reread the Epsilonproteobacteria subsection." >}}
 
-{{< sortbins question="Sort each characteristic under the Alphaproteobacteria genus described by the first comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
-{"bins":["Agrobacterium","Bartonella","Caulobacter","Rhizobium"],"items":[{"label":"Plant pathogen; one species causes tumors in plants","bin":0},{"label":"Transmitted by lice and fleas; causes trench fever and cat scratch disease","bin":1},{"label":"Forms swarm cells and stalked cells during cell division","bin":2},{"label":"Forms a symbiotic relationship with roots of legumes","bin":3},{"label":"Gram-negative bacillus","bin":0},{"label":"Pleomorphic, flagellated coccobacillus","bin":1},{"label":"Used in studies of cellular adaptation and differentiation","bin":2},{"label":"Rectangular bacilli with rounded ends forming clusters","bin":3}]}
+{{< textin question="The genus *Salmonella* belongs to the class ________ and includes pathogens that cause salmonellosis and typhoid fever." answer="Gammaproteobacteria" accept="gamma-proteobacteria" hint="Locate Salmonella in the section's five class headings." >}}
+
+{{< sortbins question="Sort each characteristic under the genus it describes in this section's first comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
+{"bins":["Agrobacterium","Bartonella","Caulobacter","Rhizobium"],"items":[{"label":"Plant pathogen","bin":0},{"label":"Transmitted by lice and fleas; causes trench fever and cat scratch disease","bin":1},{"label":"Forms swarm cells and stalked cells during cell division","bin":2},{"label":"Forms a symbiotic relationship with roots of legumes","bin":3},{"label":"One species causes tumors in plants","bin":0},{"label":"Pleomorphic, flagellated coccobacillus","bin":1},{"label":"Used in studies of cellular adaptation and differentiation","bin":2},{"label":"Rectangular bacilli with rounded ends forming clusters","bin":3}]}
 {{< /sortbins >}}
 
-{{< sortbins question="Sort each characteristic under the Betaproteobacteria genus described by the second comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
+{{< sortbins question="Sort each characteristic under the genus it describes in this section's second comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
 {"bins":["Bordetella","Leptothrix","Neisseria","Thiobacillus"],"items":[{"label":"A small gram-negative coccobacillus","bin":0},{"label":"Oxidizes iron and manganese and can clog pipes","bin":1},{"label":"Coffee bean-shaped cocci forming pairs","bin":2},{"label":"Thermophilic, acidophilic, and strictly aerobic","bin":3},{"label":"One species causes pertussis","bin":0},{"label":"A sheathed, filamentous bacillus","bin":1},{"label":"Grows on chocolate agar and includes species causing gonorrhea and meningitis","bin":2},{"label":"Oxidizes iron and sulfur","bin":3}]}
 {{< /sortbins >}}
 
-{{< sortbins question="Sort each characteristic under the Gammaproteobacteria genus described by the third comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
-{"bins":["Beggiatoa","Haemophilus","Pseudomonas","Serratia"],"items":[{"label":"Disc-shaped or cylindrical cells","bin":0},{"label":"Pleomorphic and may appear as a coccobacillus","bin":1},{"label":"Produces yellow and blue pigments that appear green in culture","bin":2},{"label":"May produce a red pigment","bin":3},{"label":"Lives in water with a high content of hydrogen disulfide","bin":0},{"label":"Pathogenic species can cause respiratory infections and chancroid","bin":1},{"label":"Opportunistic, antibiotic-resistant pathogens may cause wound and hospital-acquired infections","bin":2},{"label":"Motile opportunistic pathogens responsible for many hospital-acquired infections","bin":3}]}
+{{< sortbins question="Sort each characteristic under the genus it describes in this section's third comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
+{"bins":["Beggiatoa","Haemophilus","Klebsiella","Pseudomonas"],"items":[{"label":"Disc-shaped or cylindrical cells","bin":0},{"label":"Pleomorphic and may appear as a coccobacillus","bin":1},{"label":"Appears rounder and thicker than other members of Enterobacteriaceae","bin":2},{"label":"Produces yellow and blue pigments that appear green in culture","bin":3},{"label":"Lives in water with a high content of hydrogen disulfide","bin":0},{"label":"Pathogenic species can cause respiratory infections and chancroid","bin":1},{"label":"Encapsulated and nonmotile; may cause pneumonia, especially in people with alcoholism","bin":2},{"label":"Opportunistic, antibiotic-resistant pathogens may cause wound and hospital-acquired infections","bin":3}]}
 {{< /sortbins >}}
 
 ### Give an example of a bacterium in each class of Proteobacteria
@@ -280,34 +282,42 @@ genus
 *Brucella*
 {{< /multiplechoice >}}
 
-{{< sortbins question="Sort each characteristic under the Deltaproteobacteria genus described by the fourth comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
-{"bins":["Bdellovibrio","Desulfovibrio","Myxobacterium"],"items":[{"label":"Obligate aerobes that parasitize other bacteria","bin":0},{"label":"Reduces sulfur","bin":1},{"label":"Forms colonies called swarms","bin":2},{"label":"A comma-shaped, motile rod","bin":0},{"label":"Can be used to remove toxic and radioactive waste","bin":1},{"label":"Glides and is studied for intercellular signaling","bin":2}]}
+{{< mediafigure src="microbiology/OSC_Microbio_04_02_ArtConn1_img" alt="A grayscale electron micrograph of a single curved rod-shaped bacterium with several long, thin flagella extending from one end." kind="photo" >}}
+A micrograph used for the Art Connection question. (credit: American Society for Microbiology)
+{{< /mediafigure >}}
+
+{{< textin question="The cell shown is found in the human stomach and is now known to cause peptic ulcers. What is the name of this bacterium?" answer="Helicobacter pylori" accept="H. pylori" hint="Reread the Epsilonproteobacteria subsection." >}}
+
+{{< sortbins question="Sort each characteristic under the genus it describes in this section's fourth comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
+{"bins":["Bdellovibrio","Desulfovibrio","Myxobacterium"],"items":[{"label":"Obligate aerobes","bin":0},{"label":"Reduces sulfur","bin":1},{"label":"Forms colonies called swarms","bin":2},{"label":"Parasitic, infecting other bacteria","bin":0},{"label":"Can be used to remove toxic and radioactive waste","bin":1},{"label":"Glides and is studied for intercellular signaling","bin":2}]}
 {{< /sortbins >}}
 
-{{< sortbins question="Sort each characteristic under the Epsilonproteobacteria genus described by the fifth comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
+{{< sortbins question="Sort each characteristic under the genus it describes in this section's fifth comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
 {"bins":["Campylobacter","Helicobacter"],"items":[{"label":"Often infects chickens","bin":0},{"label":"Can damage the inner lining of the stomach","bin":1},{"label":"May reach humans in undercooked meat and cause severe enteritis","bin":0},{"label":"May cause chronic gastritis, peptic ulcers, and stomach cancer","bin":1}]}
 {{< /sortbins >}}
 
-{{< multiplechoice question="*Haemophilus influenzae* is a common cause of which of the following?" answer="upper respiratory tract infections" hint="The Gammaproteobacteria section distinguishes this bacterium's illnesses from the viral disease suggested by its name." >}}
+{{< multiplechoice question="*Haemophilus influenzae* is a common cause of which of the following?" answer="upper respiratory tract infections" hint="Reread the *Pasteurellaceae* paragraph." >}}
 influenza
 dysentery
 upper respiratory tract infections
 hemophilia
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is the metabolic difference between coliforms and noncoliforms? Which category contains several species of intestinal pathogens?" hint="Compare the two categories of enteric bacteria by the products of lactose fermentation." >}}
-Coliforms ferment lactose completely, producing acid and gas. Noncoliforms either cannot ferment lactose or ferment it incompletely, producing either acid or gas but not both. The noncoliforms include several notable intestinal pathogens.
+{{< selfcheck question="What is the metabolic difference between coliforms and noncoliforms? Which category contains several species of intestinal pathogens?" hint="Reread the *Enterobacteriaceae* paragraph." >}}
+Coliforms ferment lactose completely, producing acid and gas. Noncoliforms either cannot ferment lactose or ferment it incompletely, producing either acid or gas but not both. The noncoliforms include some notable human pathogens, such as *Salmonella* spp., *Shigella* spp., and *Yersinia pestis*.
 ===CHECKS===
 ferment lactose completely, producing acid and gas
 either cannot ferment lactose or ferment it incompletely
 producing either acid or gas but not both
-noncoliforms include several notable intestinal pathogens
+noncoliforms include some notable human pathogens
 {{< /selfcheck >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_04_02_ArtConn1_img" alt="A grayscale electron micrograph of a single curved rod-shaped bacterium with several long, thin flagella extending from one end." kind="photo" >}}
-A micrograph used for the Art Connection question. (credit: American Society for Microbiology)
-{{< /mediafigure >}}
+{{< selfcheck question="Why are *Mycoplasma* and *Chlamydia* classified as obligate intracellular pathogens?" hint="Start from the key-term definition of obligate intracellular pathogens." >}}
+An obligate intracellular pathogen is a microorganism that cannot synthesize its own ATP and therefore must rely on a host cell for energy, so it must carry out part of its life cycle inside host cells, as the rickettsias of this section do. This section does not describe *Mycoplasma* or *Chlamydia*; the next section describes *Chlamydia* as an obligate intracellular pathogen. *(Source note: the question's premise does not hold for Mycoplasma: this book's section on gram-positive bacteria describes Mycoplasma spp. as wall-less, pleomorphic low G+C bacteria and never classifies them as obligate intracellular.)*
+===CHECKS===
+cannot synthesize its own ATP
+must rely on a host cell for energy
+part of its life cycle inside host cells
+{{< /selfcheck >}}
 
-{{< textin question="The cell shown is found in the human stomach and is now known to cause peptic ulcers. What is the name of this bacterium?" answer="Helicobacter pylori" accept="H. pylori" hint="Use the figure with the discussion of the helical, flagellated stomach bacterium in this section." >}}
-
-<small>This section is adapted from [*Microbiology*, Section 4.2: Proteobacteria](https://openstax.org/books/microbiology/pages/4-2-proteobacteria) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures are re-encoded as WebP and their source alt text is rewritten from the served images; five rendered source tables are transcribed as Markdown tables and each is represented by a sort-bins activity in Practice; the Clinical Focus box is rendered as a callout; Check Your Understanding questions are rendered as interactions, with two graded from the module's own sentences; key terms are compiled from the module's defined terms and the book's Glossary appendix, with the Alphaproteobacteria definition corrected to match this module's 'some species' qualifier rather than the glossary's claim that all are oligotrophs; selected end-of-section exercises are adapted into the interactive Practice block, including the Art Connection question graded from the figure and the module sentence; the fill-in-the-blank item identifying *Helicobacter pylori* is omitted because the Art Connection asks the same identification; the Short Answer item about *Mycoplasma* and *Chlamydia* is omitted because this module neither discusses those organisms nor supplies an answer; the table's “Hemophilus” and the text's “N. meningitides” are corrected to *Haemophilus* and *N. meningitidis*; *S. enterobacterica* (serovar *typhi*) is corrected to *S. enterica* (serovar Typhi); the Deltaproteobacteria table's unsupported “formerly Desufuromonas” parenthetical is omitted; and the summary's nitrogen-fixation product is corrected from nitrites to ammonia.</small>
+<small>This section is adapted from [*Microbiology*, Section 4.2: Proteobacteria](https://openstax.org/books/microbiology/pages/4-2-proteobacteria) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures are re-encoded as WebP and their source alt text is rewritten from the served images; five rendered source tables are transcribed as Markdown tables and each is represented by a sort-bins activity in Practice; the Clinical Focus box is rendered as a callout; Check Your Understanding questions are rendered as interactions, with two graded from the module's own sentences; key terms are compiled from the module's defined terms and the book's Glossary appendix, with the Alphaproteobacteria definition corrected to match this module's 'some species' qualifier rather than the glossary's claim that all are oligotrophs; selected end-of-section exercises are adapted into the interactive Practice block, including the Art Connection question graded from the figure and the module sentence; the fill-in-the-blank item identifying *Helicobacter pylori* is graded as a text-entry item with the source's own key, in its source position between the *Rickettsia* and *Salmonella* items; the Short Answer item about *Mycoplasma* and *Chlamydia* is rendered as a self-check whose model answer gives what this module supports (the definition of an obligate intracellular pathogen), because the source prints no solution, and a Source note in it corrects the question's premise for *Mycoplasma*, which this book never classifies as obligate intracellular; the table's “Hemophilus” and the text's “N. meningitides” are corrected to *Haemophilus* and *N. meningitidis*; *S. enterobacterica* (serovar *typhi*) is corrected to *S. enterica* (serovar Typhi); the Deltaproteobacteria table's unsupported “formerly Desufuromonas” parenthetical is omitted; and the summary's nitrogen-fixation product is corrected from nitrites to ammonia. In the second objective's Practice group, the Art Connection figure and its item are placed directly after the *Rickettsia* Multiple Choice item, ahead of the *Haemophilus influenzae* Multiple Choice item that precedes it in the source, so that the Epsilonproteobacteria sort-bins item does not print the answer above it; the sort-bins stems name their tables by position rather than by class, because the class names are keys of other items on the page.</small>
