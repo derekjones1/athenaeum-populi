@@ -164,11 +164,11 @@ checks ran a narrow brief (they carry no hints; the gap is nearby leaks).
 | [x] | 38. The Musculoskeletal System | 4 | 57 | 1010, 1011 | 7796f05 | Sep 23: two Opus fixers (~272k); 37 of 57 hint leaks; parent fixed 38.4 "A zone" (313) and the cross-bridge caption's Ca²⁺ on the actin active site (1010), and 38.3's hip protraction/retraction model answer (1011, kind solution) |
 | [x] | 39. The Respiratory System | 4 | 49 | — | 7796f05 | Sep 23: one and a half Opus fixers (~244k); 27 of 49 hint leaks; 39.1 trachea/alveolus reverse re-asks replaced; no new source defects |
 | [x] | 40. The Circulatory System | 4 | 59 | 1012–1015 | 7796f05 | Sep 23: two and a half Opus fixers (~287k); 28 of 59 hint leaks; parent fixed 40.2 "nitrous oxide (NO)" (1012), fibrinogen "in blood serum" (1013), two misspellings (1014–1015), and added squid/warm-blooded synonyms |
-| [ ] | 41. Osmotic Regulation and Excretion | 5 | | | | |
-| [ ] | 42. The Immune System | 4 | | | | |
-| [ ] | 43. Animal Reproduction and Development | 7 | | | | |
-| [ ] | 44. Ecology and the Biosphere | 5 | | | | |
-| [ ] | 45. Population and Community Ecology | 7 | | | | |
+| [x] | 41. Osmotic Regulation and Excretion | 5 | 61 | — | 58652a1 | Sep 24: two Opus fixers (~246k tokens), batched with ch42–45 (shared Fable solve 49/49 + 1/1, ~147k); 38 of 61 hint leaks; a 429 killed nine of fourteen fixers mid-run, all resumed by SendMessage; no new source defects |
+| [x] | 42. The Immune System | 4 | 75 | 1019 | 58652a1 | Sep 24: two Opus fixers (~249k); 40 of 75 hint leaks; natural-killer and allergy reverse re-asks replaced (lymphocyte, IgE); 42.3 affinity/avidity alt rewritten against the image, immunoglobulin-table longdesc added (1019 "mucous") |
+| [x] | 43. Animal Reproduction and Development | 7 | 93 | 1018 | 58652a1 | Sep 24: three Opus fixers (~371k); 51 of 93 hint leaks; eight duplicate asks replaced; parent replaced the 43.1 "asexual" option that double-keyed fragmentation (1018, kind options; min-confirmed 4860→4859) |
+| [x] | 44. Ecology and the Biosphere | 5 | 71 | — | 58652a1 | Sep 24: two and a half Opus fixers (~279k); 44 of 71 hint leaks; 44.2 NPP summary MC was double-keyed (above-ground biomass) → "warm and wet" MC; parent removed a "wild lupine" leak from the 44.1 nitrogen cloze |
+| [x] | 45. Population and Community Ecology | 7 | 123 | 1017 | 58652a1 | Sep 24: four and a half Opus fixers (~542k); 70 of 123 hint leaks; sortbins rebuilt from module examples in 45.6 and 45.7; blind solver caught the 45.7 non-associative stem also fitting habituation → category stem; 1017 CDC life-table arithmetic (untouched, transcribed as printed) |
 | [ ] | 46. Ecosystems | 3 | | | | |
 | [ ] | 47. Conservation Biology and Biodiversity | 4 | | | | |
 | [ ] | KC `knowledge-check-01-03` | — | | | | |
