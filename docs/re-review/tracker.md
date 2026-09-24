@@ -141,7 +141,7 @@ checks ran a narrow brief (they carry no hints; the gap is nearby leaks).
 | [x] | 15. Genes and Proteins | 5 | — | — | a145b91 | Sep 22 full-scope sweep |
 | [x] | 16. Gene Expression | 7 | — | — | a145b91 | Sep 22 full-scope sweep |
 | [x] | 17. Biotechnology and Genomics | 5 | — | — | a145b91 | Sep 22 full-scope sweep |
-| [~] | 18. Evolution and the Origin of Species | 3 | | | | 18.1 done (bio06, full scope); resume at 18.2 |
+| [x] | 18. Evolution and the Origin of Species | 3 | 29 | 983–984 | 71071e7 | 18.1 in the Sep 22 sweep; 18.2–18.3 Sep 23: one Opus fixer (~150k tokens) + Fable solve 7/7 (~60k); 15 of 29 were hint leaks |
 | [ ] | 19. The Evolution of Populations | 3 | | | | |
 | [ ] | 20. Phylogenies and the History of Life | 3 | | | | |
 | [ ] | 21. Viruses | 4 | | | | |
