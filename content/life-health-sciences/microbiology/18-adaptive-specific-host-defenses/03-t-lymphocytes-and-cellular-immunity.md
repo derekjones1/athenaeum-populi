@@ -48,7 +48,7 @@ The thymus is a bi-lobed, H-shaped glandular organ that is located just above th
 
 **Check Your Understanding**
 
-{{< selfcheck question="What anatomical sites are involved in T cell production and maturation?" hint="Name the two organs of T-cell development in order, then where mature naive T cells go afterward." >}}
+{{< selfcheck question="What anatomical sites are involved in T cell production and maturation?" hint="Reread the first and last paragraphs of T Cell Production and Maturation." >}}
 T cells begin as multipotent hematopoietic stem cells (HSCs) in the bone marrow, where the first steps of differentiation occur in the red marrow of bones; immature T lymphocytes then travel through the bloodstream to the thymus for the final steps of maturation, and mature naïve T cells continue on to secondary lymphoid organs and tissues such as the lymph nodes, spleen, and tonsils, where they await activation.
 ===CHECKS===
 the first steps of differentiation occur in the red marrow of bones
@@ -56,7 +56,7 @@ immature T lymphocytes then travel through the bloodstream to the thymus for the
 mature naïve T cells continue on to secondary lymphoid organs and tissues such as the lymph nodes, spleen, and tonsils
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are the three steps involved in thymic selection?" hint="Give what happens at each step, in order: TCR development, MHC interaction, then removal of self-reactive cells." >}}
+{{< selfcheck question="What are the three steps involved in thymic selection?" hint="Reread the second paragraph of T Cell Production and Maturation." >}}
 The first step occurs in the cortex of the thymus and develops a functional T-cell receptor (TCR) required for activation by APCs; thymocytes with defective TCRs are removed by negative selection through apoptosis. The second step, also in the cortex, is the positive selection of thymocytes that interact appropriately with MHC molecules; those that do not interact appropriately are not stimulated and are eliminated by apoptosis. The third and final step, in both the cortex and medulla, is negative selection to remove self-reacting thymocytes by apoptosis.
 ===CHECKS===
 the first step occurs in the cortex of the thymus and develops a functional T-cell receptor (TCR) required for activation by APCs
@@ -64,7 +64,7 @@ the second step, also in the cortex, is the positive selection of thymocytes tha
 the third and final step, in both the cortex and medulla, is negative selection to remove self-reacting thymocytes
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why are central tolerance and peripheral tolerance important? What do they prevent?" hint="Say which cells each mechanism targets — before or after the thymus — and name what both ultimately prevent." >}}
+{{< selfcheck question="Why are central tolerance and peripheral tolerance important? What do they prevent?" hint="Reread the second and third paragraphs of T Cell Production and Maturation." >}}
 Central tolerance, the negative selection of self-reactive T cells in the thymus, prevents self-reacting T cells from reaching the bloodstream and potentially causing autoimmune disease. Peripheral tolerance, which involves anergy and inhibition of self-reactive T cells by regulatory T cells, is a second line of defense needed to protect against autoimmune disease in self-reactive T cells that escape the thymus.
 ===CHECKS===
 central tolerance...prevents self-reacting T cells from reaching the bloodstream and potentially causing autoimmune disease
@@ -131,7 +131,7 @@ A T-cell receptor spans the cytoplasmic membrane and projects variable binding r
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are the similarities and differences between TCRs and immunoglobulins?" hint="Give one similarity (their shared structural regions) and one difference (chain count and shape)." >}}
+{{< selfcheck question="What are the similarities and differences between TCRs and immunoglobulins?" hint="Reread the second paragraph of T-Cell Receptors." >}}
 The TCR comes from the same receptor family as the antibodies IgD and IgM and shares common structural elements with them, including a variable region and a constant region, with the variable region providing the antigen-binding site. However, the structure of TCR is smaller and less complex than the immunoglobulin molecules: whereas immunoglobulins have four peptide chains and Y-shaped structures, the TCR consists of just two peptide chains (α and β chains), both of which span the cytoplasmic membrane of the T cell.
 ===CHECKS===
 shares common structural elements with them, including a variable region and a constant region
@@ -191,15 +191,15 @@ Watch HHMI BioInteractive's video of a cytotoxic T cell inducing apoptosis in a 
 
 **Check Your Understanding**
 
-{{< selfcheck question="Compare and contrast the activation of helper T cells and cytotoxic T cells." hint="Match each step (epitope recognition, co-receptor, cytokines) to which MHC class and CD molecule it uses in each cell type." >}}
-Both helper T cells and cytotoxic T cells are activated by APCs in a similar three-step process: TCR recognition of a foreign epitope, a co-receptor interaction that anchors the complex, and secretion of cytokines that activates the cell. The key difference is that helper T cells recognize antigen presented with MHC II using CD4, while cytotoxic T cells recognize antigen presented with MHC I, either by APCs or by infected nucleated cells, using CD8.
+{{< selfcheck question="Compare and contrast the activation of helper T cells and cytotoxic T cells." hint="Reread the first paragraph of Activation and Differentiation of Helper T Cells and the first paragraph of Activation and Differentiation of Cytotoxic T Cells." >}}
+Both helper T cells and cytotoxic T cells are activated by APCs in a similar three-step process: TCR recognition of a foreign epitope, a second interaction that anchors the MHC-TCR complex, and secretion of cytokines that activate the cell. The key difference is that helper T cells recognize antigen presented with MHC II using CD4, while cytotoxic T cells recognize antigen presented with MHC I, either by APCs or by infected nucleated cells, using CD8.
 ===CHECKS===
-activated by APCs in a similar three-step process: TCR recognition of a foreign epitope, a co-receptor interaction that anchors the complex, and secretion of cytokines
+activated by APCs in a similar three-step process: TCR recognition of a foreign epitope, a second interaction that anchors the MHC-TCR complex, and secretion of cytokines
 helper T cells recognize antigen presented with MHC II using CD4
 cytotoxic T cells recognize antigen presented with MHC I...using CD8
 {{< /selfcheck >}}
 
-{{< selfcheck question="What are the different functions of helper T cell subtypes?" hint="Go through the table's four subtypes in order and give each one its own function." >}}
+{{< selfcheck question="What are the different functions of helper T cell subtypes?" hint="Reread the Subtypes of Helper T Cells table." >}}
 TH1 cells stimulate cytotoxic T cells and produce memory cytotoxic T cells, and stimulate macrophages and neutrophils (PMNs) for more effective intracellular killing of pathogens, and stimulate NK cells to kill more effectively. TH2 cells stimulate B cell activation and differentiation into plasma cells and memory B cells, and direct antibody class switching in B cells. TH17 cells stimulate immunity to specific infections such as chronic mucocutaneous infections. Memory helper T cells "remember" a specific pathogen and mount a strong, rapid secondary response upon re-exposure.
 ===CHECKS===
 TH1 cells stimulate cytotoxic T cells and produce memory cytotoxic T cells
@@ -208,7 +208,7 @@ TH17 cells stimulate immunity to specific infections such as chronic mucocutaneo
 memory helper T cells "remember" a specific pathogen and mount a strong, rapid secondary response upon re-exposure
 {{< /selfcheck >}}
 
-{{< selfcheck question="What is the mechanism of CTL-mediated destruction of infected cells?" hint="Name the two molecules the CTL releases and what each one does to the infected cell." >}}
+{{< selfcheck question="What is the mechanism of CTL-mediated destruction of infected cells?" hint="Reread the third paragraph of Activation and Differentiation of Cytotoxic T Cells." >}}
 Once an infected cell is recognized, the TCR of the cytotoxic T cell binds to the epitope and releases perforin and granzymes that destroy the infected cell. Perforin is a protein that creates pores in the target cell, and granzymes are proteases that enter the pores and induce apoptosis, a controlled and efficient means of destroying and removing infected cells without releasing the pathogens inside to infect neighboring cells.
 ===CHECKS===
 releases perforin and granzymes that destroy the infected cell
@@ -228,14 +228,14 @@ The mechanism of T cell activation by superantigens involves their simultaneous 
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are examples of superantigens?" hint="Name several bacterial toxins first, then the viruses known to produce them." >}}
+{{< selfcheck question="What are examples of superantigens?" hint="Reread the first paragraph of Superantigens and Unregulated Activation of T Cells." >}}
 Known bacterial superantigens include toxic shock syndrome toxin (TSST), staphylococcal enterotoxins, streptococcal pyrogenic toxins, streptococcal superantigen, and the streptococcal mitogenic exotoxin. Viruses known to produce superantigens include Epstein-Barr virus (human herpesvirus 4) and cytomegalovirus (human herpesvirus 5).
 ===CHECKS===
 toxic shock syndrome toxin (TSST), staphylococcal enterotoxins, streptococcal pyrogenic toxins, streptococcal superantigen, and the streptococcal mitogenic exotoxin
 Epstein-Barr virus (human herpesvirus 4) and cytomegalovirus (human herpesvirus 5)
 {{< /selfcheck >}}
 
-{{< selfcheck question="How does a superantigen activate a helper T cell?" hint="Name the two molecules it binds simultaneously and where that binding occurs relative to the antigen-binding cleft." >}}
+{{< selfcheck question="How does a superantigen activate a helper T cell?" hint="Reread the second paragraph of Superantigens and Unregulated Activation of T Cells." >}}
 A superantigen binds simultaneously to MHC II molecules of APCs and the variable region of the TCR β chain. This binding occurs outside of the antigen-binding cleft of MHC II, so the superantigen bridges together and activates MHC II and TCR without specific foreign epitope recognition.
 ===CHECKS===
 binds simultaneously to MHC II molecules of APCs and the variable region of the TCR β chain
@@ -246,7 +246,7 @@ bridges together and activates MHC II and TCR without specific foreign epitope r
 {{< multiplechoice
   question="What effect does a superantigen have on a T cell?"
   answer="Widespread, nonspecific activation with excessive cytokine release"
-  hint="The module describes what happens when a superantigen bridges MHC II and the TCR without a specific epitope."
+  hint="Reread the second paragraph of Superantigens and Unregulated Activation of T Cells."
 >}}
 Widespread, nonspecific activation with excessive cytokine release
 Anergy from a missing co-stimulatory signal
@@ -320,24 +320,24 @@ Olivia's swollen lymph nodes, abdomen, and spleen suggest a strong immune respon
 >}}
 
 {{< textin
-  question="Negative selection of self-reactive T cells in the thymus, which prevents self-reacting T cells from reaching the bloodstream, is called ________."
-  answer="central tolerance"
-  hint="This mechanism acts inside the thymus, before T cells ever leave it."
+  question="Programmed and organized cell death without lysis of the cell is called ________."
+  answer="apoptosis"
+  hint="Reread the second paragraph of T Cell Production and Maturation."
 >}}
 
 {{< textin
   question="A state of nonresponsiveness to antigen stimulation, caused by a self-reactive T cell lacking an essential co-stimulatory signal, is called ________."
   answer="anergy"
-  hint="This is one of two mechanisms of peripheral tolerance, alongside inhibition by regulatory T cells."
+  hint="Reread the third paragraph of T Cell Production and Maturation."
 >}}
 
 ### Explain the genetic events that lead to diversity of T-cell receptors
 
 {{< textin
-  question="Molecules on T cells involved in the recognition of processed foreign epitopes presented with MHC I or MHC II are called the ________."
-  answer="T-cell receptor"
-  accept="TCR"
-  hint="This molecule's variable region provides the antigen-binding site."
+  question="Millions of unique epitope-binding TCRs are encoded through a process of genetic rearrangement of V, D, and J ________."
+  answer="gene segments"
+  accept="segments"
+  hint="Reread the fourth paragraph of T-Cell Receptors."
 >}}
 
 {{< multiplechoice
@@ -354,15 +354,34 @@ Olivia's swollen lymph nodes, abdomen, and spleen suggest a strong immune respon
 {{< textin
   question="A TCR is a protein dimer embedded in the plasma membrane of a T cell. The ________ region of each of the two protein chains is what gives it the capability to bind to a presented antigen."
   answer="variable"
-  hint="This is the region at the tip of each chain, farthest from the membrane."
+  hint="Reread the second paragraph of T-Cell Receptors and its figure."
 >}}
 
 ### Compare and contrast the various classes and subtypes of T cells in terms of activation and function
 
+{{< textin
+  question="A ________ T cell will become activated by presentation of foreign antigen associated with an MHC I molecule."
+  answer="cytotoxic"
+  hint="Reread the third paragraph of Classes of T Cells."
+>}}
+
+{{< textin
+  question="A ________ T cell will become activated by presentation of foreign antigen in association with an MHC II molecule."
+  answer="helper"
+  accept="regulatory"
+  hint="Reread the third paragraph of Classes of T Cells."
+>}}
+
+{{< textin
+  question="Both ________ and effector T cells are produced during differentiation of activated T cells."
+  answer="memory"
+  hint="Reread the last sentence of the first paragraph of the fifth subsection."
+>}}
+
 {{< multiplechoice
   question="To what does the TCR of a helper T cell bind?"
   answer="antigens presented with MHC II molecules"
-  hint="Helper T cells are activated by antigens shown on the same class of MHC molecule as regulatory T cells."
+  hint="Reread the third paragraph of Classes of T Cells."
 >}}
 antigens presented with MHC I molecules
 antigens presented with MHC II molecules
@@ -373,7 +392,7 @@ haptens only
 {{< multiplechoice
   question="Cytotoxic T cells will bind with their TCR to which of the following?"
   answer="antigens presented with MHC I molecules"
-  hint="Cytotoxic T cells recognize the same MHC class that displays antigen on virtually any nucleated, infected cell."
+  hint="Reread the third paragraph of Classes of T Cells."
 >}}
 antigens presented with MHC I molecules
 antigens presented with MHC II molecules
@@ -395,7 +414,7 @@ cluster of differentiation
 {{< multiplechoice
   question="Name the T helper cell subset involved in antibody production."
   answer="T<sub>H</sub>2"
-  hint="This subtype activates B cells and directs antibody class switching among IgM, IgG, IgA, and IgE."
+  hint="Reread the Subtypes of Helper T Cells table."
 >}}
 T<sub>H</sub>1
 T<sub>H</sub>2
@@ -403,26 +422,7 @@ T<sub>H</sub>17
 CTL
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A ________ T cell will become activated by presentation of foreign antigen associated with an MHC I molecule."
-  answer="cytotoxic"
-  hint="This class of T cell also expresses CD8, not CD4."
->}}
-
-{{< textin
-  question="A ________ T cell will become activated by presentation of foreign antigen in association with an MHC II molecule."
-  answer="helper"
-  accept="regulatory"
-  hint="This class of T cell also expresses CD4, not CD8."
->}}
-
-{{< textin
-  question="Both ________ and effector T cells are produced during differentiation of activated T cells."
-  answer="memory"
-  hint="Reread the last sentence of the first paragraph of Activation and Differentiation of Cytotoxic T Cells."
->}}
-
-{{< selfcheck question="What is the basic difference in effector function between helper and cytotoxic T cells?" hint="Name what each class does once activated — one orchestrates other cells, the other destroys infected cells directly." >}}
+{{< selfcheck question="What is the basic difference in effector function between helper and cytotoxic T cells?" hint="Reread the fourth paragraph of Classes of T Cells." >}}
 Helper T cells serve as the central orchestrators that help activate and direct the functions of humoral and cellular immunity, and enhance the pathogen-killing functions of macrophages and NK cells of innate immunity. Cytotoxic T cells, in contrast, are the primary effector cells for cellular immunity themselves: they recognize and target cells that have been infected by intracellular pathogens, destroying infected cells along with the pathogens inside.
 ===CHECKS===
 helper T cells serve as the central orchestrators that help activate and direct the functions of humoral and cellular immunity
@@ -430,7 +430,7 @@ enhance the pathogen-killing functions of macrophages and NK cells of innate imm
 cytotoxic T cells...recognize and target cells that have been infected by intracellular pathogens, destroying infected cells along with the pathogens inside
 {{< /selfcheck >}}
 
-{{< selfcheck question="What necessary interactions are required for activation of helper T cells and activation/effector function of cytotoxic T cells?" hint="Walk through the three-step activation process, naming which MHC class and which CD molecule each cell type uses." >}}
+{{< selfcheck question="What necessary interactions are required for activation of helper T cells and activation/effector function of cytotoxic T cells?" hint="Reread the first paragraph of Activation and Differentiation of Helper T Cells and the first and third paragraphs of Activation and Differentiation of Cytotoxic T Cells." >}}
 Helper T cells are activated in three steps: TCR recognition of a foreign epitope presented with MHC II, interaction of CD4 with the MHC II molecule to anchor the complex, and secretion of cytokines by the APC and T cell. Cytotoxic T cells are activated by a similar three-step process but recognize antigen presented with MHC I and use CD8 instead of CD4; once activated, they carry out their effector function by having their TCR bind the epitope on an infected cell and releasing perforin and granzymes that induce apoptosis in that cell.
 ===CHECKS===
 TCR recognition of a foreign epitope presented with MHC II
@@ -444,7 +444,7 @@ releasing perforin and granzymes that induce apoptosis
 {{< multiplechoice
   question="What is a superantigen?"
   answer="a protein that activates T cells in a nonspecific and uncontrolled manner"
-  hint="Compare this to how a normal antigen activates only the specific T cells whose TCR matches its epitope."
+  hint="Reread the second paragraph of Superantigens and Unregulated Activation of T Cells."
 >}}
 a protein that is highly efficient at stimulating a single type of productive and specific T cell response
 a protein produced by antigen-presenting cells to enhance their presentation capabilities
@@ -466,4 +466,4 @@ a protein that activates T cells in a nonspecific and uncontrolled manner
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 18.3: T Lymphocytes and Cellular Immunity](https://openstax.org/books/microbiology/pages/18-3-t-lymphocytes-and-cellular-immunity) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all seven source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind` set explicitly on each, correcting the media manifest's guessed "photo" (every source file is a JPEG) to "diagram" for six of the seven (the marrow, thymus, TCR, and superantigen figures are drawn schematics, and the two activation figures are drawn process diagrams with a labelled box), leaving only the T-lymphocyte micrograph as a genuine "photo"; all seven alts rewritten from the images after inspection (the source Tprolif alt contained the typos "AA naïve Cytotoxid T cell" and "contolled destruction," and none of the source alts named all of their figures' labels); a `longdesc` added for the thymus, TCR, both activation-process figures, and the superantigen figure, walking each in reading order, because their labels or panel sequence are not fully carried by the caption; the T<sub>H</sub> subtype and TCR gene-segment (V<sub>α</sub>, J<sub>α</sub>, V<sub>β</sub>, D<sub>β</sub>, J<sub>β</sub>) subscripts are set as inline HTML `<sub>` in prose, headings, table cells, options, and hints (no Unicode subscript H or Greek letter exists), and as plain "TH1"/"TH2"/"TH17" in every figure alt/longdesc and in one selfcheck's rubric, since a selfcheck's checkpoint list renders as plain, unescaped text rather than through the Markdown pipeline; "mm<sup>3</sup>" in Clinical Focus Part 2 is set as the Unicode superscript "mm³," since a glyph exists; the opening paragraph's cross-reference to "Overview of Specific Adaptive Immunity" (m58884, 18.1), the TCR-versus-immunoglobulin comparison's same target, the bone-marrow cross-reference to "Cellular Defenses" (m58879, 17.3), and the cross-reference to "Virulence Factors of Bacterial and Viral Pathogens" (m58868, 15.3) are all absolute site-root Markdown links, since all three sections are on disk; the Clinical Focus Part 2 box's "Jump to the next Clinical Focus box" and "Go back to the previous Clinical Focus box" are rendered as two sentences naming where the case continues (Vaccines, 18.5) and where it began (Overview of Specific Adaptive Immunity, 18.1), both absolute site-root links to sibling pages of this same run; the module's one footnote (Blaschitz and Raffatellu, 2010) is rendered as an inline parenthetical citation after the sentence it supports, with the author names and journal abbreviation kept verbatim and the DOI kept; two one-word source corrections are made in place with no inline note: "thetJ<sub>β</sub>" corrected to "the J<sub>β</sub>" (§ T-Cell Receptors, a run-together typo) and "recognizing and kill" corrected to "recognizing and killing" (§ Activation and Differentiation of Cytotoxic T Cells, a verb-agreement slip); the source `<media>` alt for the superantigen figure (`fs-id1167662697383`) claims the first drawing shows the TCR "recognizes the epitope...and binds," which contradicts both the drawn arrow leading into the second drawing's own label ("epitope not recognized by TCR") and the module's own caption ("does not match the TCR...is not activated") — a suspected source defect — and the alt here is written from the image and the caption instead; the "Classes of T Cells" table (`fs-id1167662906208`) is kept as a Markdown table in the body, and its own body Check Your Understanding bullet ("What are the unique functions of the three classes of T cells?") is converted into that table's `sortbins`, two bins (Helper T cells / Cytotoxic T cells, the table's own class names); two of the table's own item phrasings ("infected nucleated cells," "Destroys cells infected with...") are lightly reworded to "target"/"targets" so the word "cells" inside them does not collide with the bin labels' own "cells," and "NK cells" is reworded to "NK lymphocytes" for the same reason, because a body self-check that already asks a table's own contrast is converted into the table's practice form rather than answered a second way; the Regulatory T cells row is transcribed in the table but not sorted, since it shares CD4 and MHC II with the Helper row and a shared trait is not sortbins material; the "Subtypes of Helper T Cells" table (`fs-id1167658047912`) is kept as a Markdown table only, with no `sortbins`, because T<sub>H</sub>17 and Memory helper T cells each carry only one function, too thin for an interleaved four-bin sort, and its own body Check Your Understanding bullet stays a self-check; two other body Check Your Understanding bullets are graded because one module sentence each fixes the whole answer ("Which T cells can be activated by antigens presented by cells other than APCs?" as a multiple choice; "What process is used to provide millions of unique TCR binding sites?" as a text-recall of "genetic rearrangement") and one more the same way ("What effect does a superantigen have on a T cell?" as a multiple choice whose options are outcomes the module itself names, because the sentence's answer is a phrase learners word many ways); the remaining nine of the section's thirteen body Check Your Understanding bullets stay self-checks, each needing more than one module sentence, a full paragraph, or a list longer than a graded form holds to answer honestly; of the section's two Short Answer questions, the source prints no key for either, and both stay self-checks, placed under the classes-and-subtypes objective they best fit, with model answers assembled from this module's own sentences; the section's five Multiple Choice items and five Fill in the Blank items keep their source stems, options, order, and keys, rendered as `multiplechoice` and `textin`, with one accept extension: the MHC II blank keyed "helper" also accepts "regulatory", because the module states that helper T cells and regulatory T cells can only be activated by APCs presenting antigens with MHC II; the Practice block adds six author-written items from this module's own sentences and definitions, none repeating a body self-check's own fact: two text-recalls under the maturation objective (central tolerance, anergy); a multiple choice on the estimated TCR-diversity number (with its own paragraph's other named quantities as distractors) and a text-recall of the TCR's own definition under the genetic-diversity objective; a text-recall of "cytokine storm" from the superantigen-mechanism paragraph (replacing an earlier multiple choice on the two molecules a superantigen binds, which re-asked the body self-check "How does a superantigen activate a helper T cell?") and a cloze of the cytokine storm's first named consequence ("blood pressure") under the superantigen objective (replacing an earlier text-recall of the Epstein-Barr virus example, a fact of the body self-check "What are examples of superantigens?"); this section's one Link to Learning URL, the cytotoxic-T-cell-apoptosis video link (`https://www.openstax.org/l/22cytoTcellapop`, redirecting to `https://www.biointeractive.org/ctl-killing-target-cell`), is confirmed dead (404, checked September 15, 2026) and is no longer linked, replaced with a plain-text description naming HHMI BioInteractive's video; key terms compiled from the module's eighteen defined terms and the book's Glossary appendix; one ("cluster of differentiation (CD) molecules") is taken from this module's own defining sentence because the appendix has no entry for it; "helper T cells" is lower-cased in the Key terms bullet from the body's sentence-initial capitalization, to match the appendix headword and the module's own earlier lower-case usage; the Case in Point box's closing question and the Clinical Focus box's two closing questions stay inside their callouts as plain bulleted prose, unanswered, as the source prints them and as later parts of each case resolve them. No source exercise item is omitted; the Tcellact figure's source alt misspells MHC as "MCH", and the alt written from the image does not inherit it.</small>
+<small>This section is adapted from [Microbiology, Section 18.3: T Lymphocytes and Cellular Immunity](https://openstax.org/books/microbiology/pages/18-3-t-lymphocytes-and-cellular-immunity) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all seven source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind` set explicitly on each, correcting the media manifest's guessed "photo" (every source file is a JPEG) to "diagram" for six of the seven (the marrow, thymus, TCR, and superantigen figures are drawn schematics, and the two activation figures are drawn process diagrams with a labelled box), leaving only the T-lymphocyte micrograph as a genuine "photo"; all seven alts rewritten from the images after inspection (the source Tprolif alt contained the typos "AA naïve Cytotoxid T cell" and "contolled destruction," and none of the source alts named all of their figures' labels); a `longdesc` added for the thymus, TCR, both activation-process figures, and the superantigen figure, walking each in reading order, because their labels or panel sequence are not fully carried by the caption; the T<sub>H</sub> subtype and TCR gene-segment (V<sub>α</sub>, J<sub>α</sub>, V<sub>β</sub>, D<sub>β</sub>, J<sub>β</sub>) subscripts are set as inline HTML `<sub>` in prose, headings, table cells, options, and hints (no Unicode subscript H or Greek letter exists), and as plain "TH1"/"TH2"/"TH17" in every figure alt/longdesc and in one selfcheck's rubric, since a selfcheck's checkpoint list renders as plain, unescaped text rather than through the Markdown pipeline; "mm<sup>3</sup>" in Clinical Focus Part 2 is set as the Unicode superscript "mm³," since a glyph exists; the opening paragraph's cross-reference to "Overview of Specific Adaptive Immunity" (m58884, 18.1), the TCR-versus-immunoglobulin comparison's same target, the bone-marrow cross-reference to "Cellular Defenses" (m58879, 17.3), and the cross-reference to "Virulence Factors of Bacterial and Viral Pathogens" (m58868, 15.3) are all absolute site-root Markdown links, since all three sections are on disk; the Clinical Focus Part 2 box's "Jump to the next Clinical Focus box" and "Go back to the previous Clinical Focus box" are rendered as two sentences naming where the case continues (Vaccines, 18.5) and where it began (Overview of Specific Adaptive Immunity, 18.1), both absolute site-root links to sibling pages of this same run; the module's one footnote (Blaschitz and Raffatellu, 2010) is rendered as an inline parenthetical citation after the sentence it supports, with the author names and journal abbreviation kept verbatim and the DOI kept; four small source corrections are made in place with no inline note: "The genes segments associated with the α chain of the TCR consist 70 or more" corrected to "The gene segments associated with the α chain of the TCR consist of 70 or more" (§ T-Cell Receptors, a plural slip and a dropped "of"), "thetJ<sub>β</sub>" corrected to "the J<sub>β</sub>" (§ T-Cell Receptors, a run-together typo), and "recognizing and kill" corrected to "recognizing and killing" (§ Activation and Differentiation of Cytotoxic T Cells, a verb-agreement slip); the source `<media>` alt for the superantigen figure (`fs-id1167662697383`) claims the first drawing shows the TCR "recognizes the epitope...and binds," which contradicts both the drawn arrow leading into the second drawing's own label ("epitope not recognized by TCR") and the module's own caption ("does not match the TCR...is not activated") — a suspected source defect — and the alt here is written from the image and the caption instead; the "Classes of T Cells" table (`fs-id1167662906208`) is kept as a Markdown table in the body, and its own body Check Your Understanding bullet ("What are the unique functions of the three classes of T cells?") is converted into that table's `sortbins`, two bins (Helper T cells / Cytotoxic T cells, the table's own class names); two of the table's own item phrasings ("infected nucleated cells," "Destroys cells infected with...") are lightly reworded to "target"/"targets" so the word "cells" inside them does not collide with the bin labels' own "cells," and "NK cells" is reworded to "NK lymphocytes" for the same reason, because a body self-check that already asks a table's own contrast is converted into the table's practice form rather than answered a second way; the Regulatory T cells row is transcribed in the table but not sorted, since it shares CD4 and MHC II with the Helper row and a shared trait is not sortbins material; the "Subtypes of Helper T Cells" table (`fs-id1167658047912`) is kept as a Markdown table only, with no `sortbins`, because T<sub>H</sub>17 and Memory helper T cells each carry only one function, too thin for an interleaved four-bin sort, and its own body Check Your Understanding bullet stays a self-check; two other body Check Your Understanding bullets are graded because one module sentence each fixes the whole answer ("Which T cells can be activated by antigens presented by cells other than APCs?" as a multiple choice; "What process is used to provide millions of unique TCR binding sites?" as a text-recall of "genetic rearrangement") and one more the same way ("What effect does a superantigen have on a T cell?" as a multiple choice whose options are outcomes the module itself names, because the sentence's answer is a phrase learners word many ways); the remaining nine of the section's thirteen body Check Your Understanding bullets stay self-checks, each needing more than one module sentence, a full paragraph, or a list longer than a graded form holds to answer honestly; of the section's two Short Answer questions, the source prints no key for either, and both stay self-checks, placed under the classes-and-subtypes objective they best fit, with model answers assembled from this module's own sentences; the section's five Multiple Choice items and five Fill in the Blank items keep their source stems, options, and keys, rendered as `multiplechoice` and `textin` and placed under the objective each tests, which changes their source order: the Fill in the Blank items on the thymus and on the variable region come first, under the maturation and genetic-diversity objectives; under the classes-and-subtypes objective the three Fill in the Blank items (cytotoxic, helper, memory) come before the four Multiple Choice items, so that the Multiple Choice stems naming cytotoxic and helper T cells do not sit above the blanks they answer; and the Multiple Choice item "What is a superantigen?", first in the source, sits under the superantigen objective; with one accept extension: the MHC II blank keyed "helper" also accepts "regulatory", because the module states that helper T cells and regulatory T cells can only be activated by APCs presenting antigens with MHC II; the Practice block adds six author-written items from this module's own sentences and definitions, none repeating a body self-check's own fact: two text-recalls under the maturation objective (apoptosis, from its Glossary definition, and anergy, from its defining sentence); a cloze of the Summary's TCR bullet ("gene segments") and a multiple choice on the estimated TCR-diversity number (with its own paragraph's other named quantities as distractors) under the genetic-diversity objective; a text-recall of "cytokine storm" from the superantigen-mechanism paragraph (replacing an earlier multiple choice on the two molecules a superantigen binds, which re-asked the body self-check "How does a superantigen activate a helper T cell?") and a cloze of the cytokine storm's first named consequence ("blood pressure") under the superantigen objective (replacing an earlier text-recall of the Epstein-Barr virus example, a fact of the body self-check "What are examples of superantigens?"); this section's one Link to Learning URL, the cytotoxic-T-cell-apoptosis video link (`https://www.openstax.org/l/22cytoTcellapop`, redirecting to `https://www.biointeractive.org/ctl-killing-target-cell`), is confirmed dead (404, checked September 15, 2026) and is no longer linked, replaced with a plain-text description naming HHMI BioInteractive's video; key terms compiled from the module's eighteen defined terms and the book's Glossary appendix; one ("cluster of differentiation (CD) molecules") is taken from this module's own defining sentence because the appendix has no entry for it; "helper T cells" is lower-cased in the Key terms bullet from the body's sentence-initial capitalization, to match the appendix headword and the module's own earlier lower-case usage; the Case in Point box's closing question and the Clinical Focus box's two closing questions stay inside their callouts as plain bulleted prose, unanswered, as the source prints them and as later parts of each case resolve them. No source exercise item is omitted; the Tcellact figure's source alt misspells MHC as "MCH", and the alt written from the image does not inherit it.</small>

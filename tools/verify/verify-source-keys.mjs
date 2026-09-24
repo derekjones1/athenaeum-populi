@@ -709,6 +709,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 1021,
     reason: 'the source options "Increase use of fuel sources that do not produce carbon dioxide as a by-product" and "Decrease livestock agriculture" also reduce carbon dioxide (the module says animal husbandry increases atmospheric carbon) and the module ranks no approach; the page prints "Increase the burning of fossil fuels" and "Increase livestock agriculture" in their place (key unchanged)',
   },
+  {
+    page: 'content/life-health-sciences/microbiology/15-microbial-mechanisms-of-pathogenicity/01-characteristics-of-infectious-disease.md',
+    exercise: 'fs-id1167584863097',
+    kind: 'options',
+    erratum: 611,
+    reason: 'the source option "skin infection acquired from a dog bite" is also noncommunicable by the module\'s definition (not spread from one person to another), so it double-keys the question; the page prints "gonorrhea acquired through intimate contact with an infected person" in its place (key unchanged)',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

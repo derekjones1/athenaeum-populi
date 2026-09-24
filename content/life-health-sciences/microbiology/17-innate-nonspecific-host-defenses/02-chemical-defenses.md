@@ -48,7 +48,7 @@ The respiratory tract uses various chemical mediators in the nasal passages, tra
 {{< multiplechoice
   question="Explain the difference between endogenous and exogenous mediators"
   answer="Endogenous mediators are produced by human body cells; exogenous mediators are produced by microbes that are part of the microbiome."
-  hint="One term names mediators made by our own cells; the other names mediators made by resident microbes."
+  hint="See the section's second paragraph."
 >}}
 Exogenous mediators are produced by human body cells; endogenous mediators are produced by microbes that are part of the microbiome.
 Endogenous mediators are produced by human body cells; exogenous mediators are produced by microbes that are part of the microbiome.
@@ -56,10 +56,11 @@ Both endogenous and exogenous mediators are produced by human body cells, but at
 Endogenous mediators are produced continually, while exogenous mediators are only produced in response to a stimulus.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe how pH affects antimicrobial defenses" hint="Trace each pH example through this subsection: the skin, the urinary tract, the ears, and the vagina." >}}
-Several body-fluid mediators work by making the local environment too acidic for many pathogens to survive. Resident skin microbes degrade sebum into oleic acid, which lowers the pH of the skin surface and makes it inhospitable to many pathogenic microbes. In the urinary tract, the slight acidity of urine, with an average pH of about 6, inhibits the growth of many microbes and potential pathogens. In the ears, cerumen's fatty acids lower its pH to between 3 and 5, giving it antimicrobial properties. In the female reproductive tract, lactobacilli ferment glycogen into lactate, lowering the vaginal pH and inhibiting transient microbiota and other pathogens.
+{{< selfcheck question="Describe how pH affects antimicrobial defenses" hint="See the Chemical and Enzymatic Mediators Found in Body Fluids subsection, paragraph by paragraph." >}}
+Several body-fluid mediators work by making the local environment too acidic for many pathogens to survive. Resident skin microbes degrade sebum into oleic acid, which lowers the pH of the skin surface and makes it inhospitable to many pathogenic microbes. In the stomach, highly acidic gastric fluid kills most microbes. In the urinary tract, the slight acidity of urine, with an average pH of about 6, inhibits the growth of many microbes and potential pathogens. In the ears, cerumen's fatty acids lower its pH to between 3 and 5, giving it antimicrobial properties. In the female reproductive tract, lactobacilli ferment glycogen into lactate, lowering the vaginal pH and inhibiting transient microbiota and other pathogens.
 ===CHECKS===
 resident skin microbes degrade sebum into oleic acid, which lowers the pH of the skin surface
+in the stomach, highly acidic gastric fluid kills most microbes
 the slight acidity of urine, with an average pH of about 6, inhibits the growth of many microbes
 cerumen's fatty acids lower its pH to between 3 and 5
 lactobacilli ferment glycogen into lactate, lowering the vaginal pH
@@ -71,7 +72,7 @@ The **antimicrobial peptides (AMPs)** are a special class of nonspecific cell-de
 
 AMPs may induce cell damage in microorganisms in a variety of ways, including by inflicting damage to membranes, destroying DNA and RNA, or interfering with cell-wall synthesis. Depending on the specific antimicrobial mechanism, a particular AMP may inhibit only certain groups of microbes (e.g., gram-positive or gram-negative bacteria) or it may be more broadly effective against bacteria, fungi, protozoa, and viruses. Many AMPs are found on the skin, but they can also be found in other regions of the body.
 
-A family of AMPs called defensins can be produced by epithelial cells throughout the body as well as by cellular defenses such as macrophages and neutrophils (see *Cellular Defenses*). Defensins may be secreted or act inside host cells; they combat microorganisms by damaging their plasma membranes. AMPs called bacteriocins are produced exogenously by certain members of the resident microbiota within the gastrointestinal tract. The genes coding for these types of AMPs are often carried on plasmids and can be passed between different species within the resident microbiota through lateral or horizontal gene transfer.
+A family of AMPs called defensins can be produced by epithelial cells throughout the body as well as by cellular defenses such as macrophages and neutrophils (see [Cellular Defenses](/life-health-sciences/microbiology/17-innate-nonspecific-host-defenses/03-cellular-defenses/)). Defensins may be secreted or act inside host cells; they combat microorganisms by damaging their plasma membranes. AMPs called bacteriocins are produced exogenously by certain members of the resident microbiota within the gastrointestinal tract. The genes coding for these types of AMPs are often carried on plasmids and can be passed between different species within the resident microbiota through lateral or horizontal gene transfer.
 
 There are numerous other AMPs throughout the body. The characteristics of a few of the more significant AMPs are summarized in the table below.
 
@@ -165,28 +166,27 @@ Interferons are cytokines released by a cell infected with a virus. Interferon-�
 
 ## Inflammation-Eliciting Mediators
 
-Many of the chemical mediators discussed in this section contribute in some way to inflammation and fever, which are nonspecific immune responses discussed in more detail in *Inflammation and Fever*. Cytokines stimulate the production of acute-phase proteins such as C-reactive protein and mannose-binding lectin in the liver. These acute-phase proteins act as opsonins, activating complement cascades through the lectin pathway.
+Many of the chemical mediators discussed in this section contribute in some way to inflammation and fever, which are nonspecific immune responses discussed in more detail in [Inflammation and Fever](/life-health-sciences/microbiology/17-innate-nonspecific-host-defenses/05-inflammation-and-fever/). Cytokines stimulate the production of acute-phase proteins such as C-reactive protein and mannose-binding lectin in the liver. These acute-phase proteins act as opsonins, activating complement cascades through the lectin pathway.
 
 Some cytokines also bind mast cells and basophils, inducing them to release **histamine**, a proinflammatory compound. Histamine receptors are found on a variety of cells and mediate proinflammatory events, such as bronchoconstriction (tightening of the airways) and smooth muscle contraction.
 
 In addition to histamine, mast cells may release other chemical mediators, such as **leukotrienes**. Leukotrienes are lipid-based proinflammatory mediators that are produced from the metabolism of arachidonic acid in the cell membrane of leukocytes and tissue cells. Compared with the proinflammatory effects of histamine, those of leukotrienes are more potent and longer lasting. Together, these chemical mediators can induce coughing, vomiting, and diarrhea, which serve to expel pathogens from the body.
 
-Certain cytokines also stimulate the production of prostaglandins, chemical mediators that promote the inflammatory effects of kinins and histamines. Prostaglandins can also help to set the body temperature higher, leading to fever, which promotes the activities of white blood cells and slightly inhibits the growth of pathogenic microbes (see *Inflammation and Fever*).
+Certain cytokines also stimulate the production of prostaglandins, chemical mediators that promote the inflammatory effects of kinins and histamines. Prostaglandins can also help to set the body temperature higher, leading to fever, which promotes the activities of white blood cells and slightly inhibits the growth of pathogenic microbes (see [Inflammation and Fever](/life-health-sciences/microbiology/17-innate-nonspecific-host-defenses/05-inflammation-and-fever/)).
 
 Another inflammatory mediator, **bradykinin**, contributes to edema, which occurs when fluids and leukocytes leak out of the bloodstream and into tissues. It binds to receptors on cells in the capillary walls, causing the capillaries to dilate and become more permeable to fluids.
 
 **Check Your Understanding**
 
-{{< selfcheck question="What do the three complement activation pathways have in common?" hint="Note how each pathway starts, then look at what they all eventually converge on." >}}
-Although the classical pathway is triggered by an antibody bound to its antigen, the alternative pathway by the spontaneous activation of C3, and the lectin pathway by mannose-binding lectin binding to microbial carbohydrates, all three converge on activating the complement protein C3 and lead to the same protective outcomes of complement activation.
+{{< selfcheck question="What do the three complement activation pathways have in common?" hint="See the caption of the complement-pathways figure and the paragraph after it." >}}
+Each pathway triggers the same cascade of complement activation. All three result in the activation of the complement protein C3, which produces C3a and C3b; C3b binds to the surface of the target cell and works with other complement proteins to cleave C5 into C5a and C5b. Although each pathway is initiated in a different way, they all provide the same protective outcomes.
 ===CHECKS===
-the classical pathway is triggered by an antibody bound to its antigen
-the alternative pathway is triggered by the spontaneous activation of C3
-the lectin pathway is triggered by mannose-binding lectin binding to microbial carbohydrates
-all three pathways converge on activating C3 and lead to the same protective outcomes of complement activation
+all three result in the activation of the complement protein C3, which produces C3a and C3b
+C3b works with other complement proteins to cleave C5 into C5a and C5b
+although each pathway is initiated in a different way, they all provide the same protective outcomes
 {{< /selfcheck >}}
 
-{{< sortbins question="Explain autocrine, paracrine, and endocrine signals by sorting each description under the type of cytokine signaling it names." hint="Ask how far the cytokine has to travel: back to its own cell, to a neighbor, or through the blood to somewhere distant." >}}
+{{< sortbins question="Explain autocrine, paracrine, and endocrine signals by sorting each description under the type of cytokine signaling it names." hint="See the second paragraph of the Cytokines subsection and the figure after it." >}}
 {"bins": ["Autocrine", "Paracrine", "Endocrine"],
  "items": [
   {"label": "The same cell that releases the cytokine receives the signal", "bin": 0},
@@ -197,8 +197,8 @@ all three pathways converge on activating C3 and lead to the same protective out
   {"label": "Cytokines are carried far from the releasing cell to a distant target", "bin": 2}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="Name two important inflammation-eliciting mediators." hint="This section's final subsection names four such mediators; pick any two and say what each does." >}}
-This section names four chemical mediators that elicit inflammation: histamine, released by mast cells and basophils, which causes bronchoconstriction and smooth muscle contraction; leukotrienes, which are more potent and longer lasting than histamine; prostaglandins, which promote inflammatory effects and can raise body temperature to cause fever; and bradykinin, which increases vascular permeability and contributes to edema. Any two of these four count as an answer.
+{{< selfcheck question="Name two important inflammation-eliciting mediators." hint="See this section's final subsection." >}}
+The section's final subsection describes four chemical mediators that elicit inflammation: histamine, released by mast cells and basophils, which causes bronchoconstriction and smooth muscle contraction; leukotrienes, which are more potent and longer lasting than histamine; prostaglandins, which promote inflammatory effects and can raise body temperature to cause fever; and bradykinin, which increases vascular permeability and contributes to edema. Any two of these four count as an answer.
 ===CHECKS===
 histamine causes bronchoconstriction and smooth muscle contraction
 leukotrienes are more potent and longer lasting than histamine
@@ -286,6 +286,12 @@ The table below provides a summary of the chemical defenses discussed in this se
 
 ### Describe how enzymes in body fluids provide protection against infection or disease
 
+{{< textin
+  question="Chemicals or enzymes produced by a variety of cells that provide nonspecific antimicrobial defense mechanisms are collectively known as ________."
+  answer="chemical mediators"
+  hint="See the section's opening paragraph."
+>}}
+
 {{< multiplechoice
   question="Which of the following chemical mediators is secreted onto the surface of the skin?"
   answer="sebum"
@@ -308,18 +314,25 @@ about 8
 about 10
 {{< /multiplechoice >}}
 
+### List and describe the function of antimicrobial peptides, complement components, cytokines, and acute-phase proteins
+
 {{< textin
-  question="Chemicals or enzymes produced by a variety of cells that provide nonspecific antimicrobial defense mechanisms are collectively known as ________."
-  answer="chemical mediators"
-  hint="This is the general term this whole section defines in its opening paragraph."
+  question="________ are antimicrobial peptides produced by members of the normal microbiota."
+  answer="bacteriocins"
+  hint="See the third paragraph of this section's second subsection, or the table after it."
 >}}
 
-### List and describe the function of antimicrobial peptides, complement components, cytokines, and acute-phase proteins
+{{< textin
+  question="________ is the fluid portion of a blood sample that has been drawn in the presence of an anticoagulant compound."
+  answer="plasma"
+  accept="blood plasma"
+  hint="See the Micro Connection box in this section's third subsection."
+>}}
 
 {{< multiplechoice
   question="Which of the following serve as chemical signals between cells and stimulate a wide range of nonspecific defenses?"
   answer="cytokines"
-  hint="See the first paragraph of the subsection just before Inflammation-Eliciting Mediators."
+  hint="See the first paragraph of the subsection after The Complement System."
 >}}
 cytokines
 antimicrobial peptides
@@ -338,19 +351,6 @@ inflammation-eliciting mediators
 antimicrobial peptides
 {{< /multiplechoice >}}
 
-{{< textin
-  question="________ is the fluid portion of a blood sample that has been drawn in the presence of an anticoagulant compound."
-  answer="plasma"
-  accept="blood plasma"
-  hint="The Micro Connection box above distinguishes this term from serum, the fluid left after clotting."
->}}
-
-{{< textin
-  question="________ are antimicrobial peptides produced by members of the normal microbiota."
-  answer="bacteriocins"
-  hint="This class of AMP is produced exogenously by resident gut microbes, not by the host's own cells."
->}}
-
 {{< multiplechoice
   question="Histamine, leukotrienes, prostaglandins, and bradykinin are examples of which of the following?"
   answer="chemical mediators that promote inflammation"
@@ -362,7 +362,7 @@ antimicrobial peptides found on the skin
 complement proteins that form MACs
 {{< /multiplechoice >}}
 
-{{< sortbins question="Sort each acute-phase protein by the protective function this section assigns it." hint="Two of the six proteins share the coating function and two share the iron-binding function; the other two each have a function of their own." >}}
+{{< sortbins question="Sort each acute-phase protein by the protective function this section assigns it." hint="See the table in the Acute-Phase Proteins subsection." >}}
 {"bins": ["Opsonization", "Iron sequestration", "Clot formation", "Complement activation"],
  "items": [
   {"label": "C-reactive protein", "bin": 0},
@@ -390,10 +390,10 @@ cathelicidin
   question="The process by which cells are drawn or attracted to an area by a microbe invader is known as ________."
   answer="chemotaxis"
   accept="chemoattraction"
-  hint="This process draws phagocytes and other immune cells toward an invading microbe."
+  hint="See the paragraph after the complement-pathways figure."
 >}}
 
-{{< selfcheck question="Differentiate the main activation methods of the classic, alternative, and lectin complement cascades." hint="Match each pathway to what starts it: an antibody, a spontaneous event, or a carbohydrate-binding protein." >}}
+{{< selfcheck question="Differentiate the main activation methods of the classic, alternative, and lectin complement cascades." hint="See the three paragraphs after the one that names the three activation pathways." >}}
 The classical pathway is triggered when a specific antibody first binds to the pathogen to form an antibody-antigen complex, which activates the C1 complex. The alternative pathway is initiated by the spontaneous activation of the complement protein C3, whose hydrolysis produces C3a and C3b; C3b then attaches directly to the surface of invading microbes. The lectin pathway is triggered by the binding of mannose-binding lectin, an acute-phase protein, to carbohydrates on the microbial surface.
 ===CHECKS===
 the classical pathway is triggered when a specific antibody binds to the pathogen to form an antibody-antigen complex, activating the C1 complex
@@ -404,7 +404,7 @@ the lectin pathway is triggered by the binding of mannose-binding lectin to carb
 {{< multiplechoice
   question="What are the four protective outcomes of complement activation?"
   answer="Opsonization, inflammation, chemotaxis, and cytolysis"
-  hint="All three pathways converge on activating C3, and the outcomes that follow are the same no matter which pathway started the cascade."
+  hint="See the paragraph after the complement-pathways figure."
 >}}
 Opsonization, inflammation, chemotaxis, and cytolysis
 Opsonization, inflammation, phagocytosis, and cytolysis
@@ -414,4 +414,4 @@ Vasodilation, inflammation, chemotaxis, and cytolysis
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 17.2: Chemical Defenses](https://openstax.org/books/microbiology/pages/17-2-chemical-defenses) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on all four (the manifest guessed "photo" for every one because every source file is a JPEG, but the Sebum figure is a schematic-plus-micrograph pair, and ClassAltPa, Cytokine, and Interferon are all drawn flowcharts), overriding the guess; the Sebum figure carries `eager="true"` as the page's first figure; a `longdesc` was added to the ClassAltPa and Cytokine figures, walking each in reading order, because their captions do not name every labeled step or panel; the Sebum and Interferon captions already name their labels, so no `longdesc` was added for either; feature boxes rendered as callouts, with the Clinical Focus box's "Jump to the next / Go back to the previous" links replaced by two Markdown links to Sections 17.3 and 17.1 (this run's own routes, per the parent's run-facts, even though neither page was on disk at authoring time); the cross-references to "Cellular Defenses" (m58879) and "Inflammation and Fever" (m58881, twice) are left as plain italic text, since neither module is authored in this run; the three Multiple Choice items whose questions test acute-phase proteins, plasma protein mediators, and complement pathways keep their source options, order, and key, as do the two remaining Multiple Choice items on cytokines and inflammation-eliciting mediators; the three Fill in the Blank items are rendered as `textin` with their source keys; of the section's two Short Answer questions, neither has a source key: the complement-cascades question stays a `selfcheck`, since honestly differentiating three pathways needs three separate sentences: the four-outcomes question is graded as a `multiplechoice` whose key is the source's own four-item list and whose three distractors each swap one outcome for a different non-outcome the module names elsewhere (phagocytosis, antibody production, vasodilation), per the run's decision; of the section's six body Check Your Understanding bullets, three are graded — the endogenous/exogenous distinction (`multiplechoice`, fixed by one sentence in the section's second paragraph), the "why nonspecific" AMP question (`multiplechoice`, fixed by the Antimicrobial Peptides subsection's own opening sentence), and the autocrine/paracrine/endocrine question (`sortbins`, fixed by the one paragraph that defines all three) — and three stay self-checks — the pH question (needs four separate body-fluid examples assembled), the "what do the three pathways have in common" question (its honest one-sentence answer duplicates the Practice four-outcomes item's own key, so its model answer and rubric name only the pathways' distinct triggers and that they converge, without repeating the four-item list, to avoid asking the same fact as a graded item twice), and the "name two mediators" question (the module's own final subsection names only four, the same four the Practice multiple choice on inflammation-eliciting mediators also uses as its stem — this overlap could not be avoided without dropping content from one of the two, since both draw on the same short list, so it is disclosed here rather than edited); the acute-phase-proteins table is also rendered as a `sortbins` (four bins, six items) in the Practice block under the AMP/complement/cytokine objective, per the run's table decision; the AMP-characteristics table (five rows) and the chapter-length "Chemical Defenses of Nonspecific Innate Immunity" recap table (a section-summary table, not a single-objective comparison) are both transcribed as Markdown only, with no `sortbins` built for either, per the run's decision that a five-row table exceeding the four-bin cap and a whole-section recap table are transcribed rather than sorted; two filler items (one `textin` and one `multiplechoice`) are added to reach the book's three-item floor for the first objective group, each built from a single sentence of this module and disclosed here: the "chemical mediators" term recall from the section's own key terms, and the urine-pH multiple choice from the Urinary Tract paragraph's own sentence; two disclosed same-page overlaps remain even after reordering, since neither item's text is editable: the "Bacteriocins and defensins are types of which of the following?" multiple choice prints the word "bacteriocins" in its own source-verbatim stem, and the `textin` keyed to that same word from the section's own Fill in the Blank set is placed two items later in the same objective group (with the plasma `textin` between them) rather than immediately after it, to remove the back-to-back adjacency; and three of the four options on the four-outcomes multiple choice contain the word "chemotaxis" at least once (including the keyed option — the fourth distractor swaps chemotaxis itself out for phagocytosis), next to the `textin` keyed to that same word from the same Fill in the Blank set — this second overlap is structurally forced by keeping the source's own four-item outcome list as the key while rotating which single outcome each distractor swaps out, and a self-check already separates the two items on the page. No source exercise item is omitted. The complement-pathways figure's alt and longdesc describe only the flow chart that is drawn (C1 through C5b and the membrane attack complex, with the three pathways' entry points), because the source alt narrates a different, more granular diagram — a pathogen with bound antibodies, C3 convertase, C5 convertase, a membrane pore, and host-membrane protection — none of which appears in the vendored image.</small>
+<small>This section is adapted from [Microbiology, Section 17.2: Chemical Defenses](https://openstax.org/books/microbiology/pages/17-2-chemical-defenses) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on all four (the manifest guessed "photo" for every one because every source file is a JPEG, but the Sebum figure is a schematic-plus-micrograph pair, and ClassAltPa, Cytokine, and Interferon are all drawn flowcharts), overriding the guess; the Sebum figure carries `eager="true"` as the page's first figure; a `longdesc` was added to the ClassAltPa and Cytokine figures, walking each in reading order, because their captions do not name every labeled step or panel; the Sebum and Interferon captions already name their labels, so no `longdesc` was added for either; feature boxes rendered as callouts, with the Clinical Focus box's "Jump to the next / Go back to the previous" links replaced by two Markdown links to Sections 17.3 and 17.1; the cross-references to "Cellular Defenses" and "Inflammation and Fever" (twice) are rendered as links to Sections 17.3 and 17.5; all five Multiple Choice items keep their source options, order, and key; the three Fill in the Blank items are rendered as `textin` with their source keys; of the section's two Short Answer questions, neither has a source key: the complement-cascades question stays a `selfcheck`, since honestly differentiating three pathways needs three separate sentences: the four-outcomes question is graded as a `multiplechoice` whose key is the source's own four-item list and whose three distractors each swap one outcome for a different non-outcome the module names elsewhere (phagocytosis, antibody production, vasodilation); of the section's six body Check Your Understanding bullets, three are graded — the endogenous/exogenous distinction (`multiplechoice`, fixed by one sentence in the section's second paragraph), the "why nonspecific" AMP question (`multiplechoice`, fixed by the Antimicrobial Peptides subsection's own opening sentence), and the autocrine/paracrine/endocrine question (`sortbins`, fixed by the one paragraph that defines all three) — and three stay self-checks — the pH question (needs several separate body-fluid examples assembled), the "what do the three pathways have in common" question (its model answer and rubric name what the figure caption says all three pathways share, the activation of C3 and the cleavage of C5, and say that they share their protective outcomes without listing them, so that it re-asks neither the Practice four-outcomes item nor the Practice question on the pathways' triggers), and the "name two mediators" question (the module's own final subsection names only four, the same four the Practice multiple choice on inflammation-eliciting mediators also uses as its stem — this overlap could not be avoided without dropping content from one of the two, since both draw on the same short list, so it is disclosed here rather than edited); the acute-phase-proteins table is also rendered as a `sortbins` (four bins, six items) in the Practice block under the AMP/complement/cytokine objective; the AMP-characteristics table (five rows) and the chapter-length "Chemical Defenses of Nonspecific Innate Immunity" recap table (a section-summary table, not a single-objective comparison) are both transcribed as Markdown only, with no `sortbins` built for either, since the AMP table has five rows, over the four-bin cap, and a whole-section recap table is transcribed rather than sorted; two filler items (one `textin` and one `multiplechoice`) are added to reach the book's three-item floor for the first objective group, each built from this module and disclosed here: the "chemical mediators" term recall from the section's own Key terms, and the urine-pH multiple choice from the urinary-tract paragraph's own sentence; in the second objective group the two Fill in the Blank items (bacteriocins, then plasma, in source order) are placed ahead of the three Multiple Choice items, reversing the source's order of those two sets, so that the "Bacteriocins and defensins are types of which of the following?" stem no longer sits above the text answer it prints; the bacteriocins Fill in the Blank's own stem prints that multiple choice's key, "antimicrobial peptides," an overlap between two source-verbatim items that no order removes; in the first objective group the chemical-mediators term recall is placed ahead of the sebum multiple choice, whose stem prints "chemical mediators"; and the four-outcomes multiple choice, whose options print "chemotaxis," sits two items below the chemotaxis Fill in the Blank. No source exercise item is omitted. The complement-pathways figure's alt and longdesc describe only the flow chart that is drawn (C1 through C5b and the membrane attack complex, with the three pathways' entry points), because the source alt narrates a different, more granular diagram — a pathogen with bound antibodies, C3 convertase, C5 convertase, a membrane pore, and host-membrane protection — none of which appears in the vendored image.</small>

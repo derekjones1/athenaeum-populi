@@ -50,7 +50,7 @@ specificity is the ability to target a specific pathogen
 memory is the ability to respond quickly to a pathogen encountered before
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain the difference between a primary and secondary immune response." hint="Think about which exposure comes first, and what the body's memory does to the response the second time." >}}
+{{< selfcheck question="Explain the difference between a primary and secondary immune response." hint="See the second paragraph of this section and the graph after it." >}}
 A primary response is triggered by the first exposure to a pathogen or vaccine. A secondary response is triggered by a later, subsequent exposure to the same pathogen, and it is faster and stronger than the primary response because of the body's memory of the first exposure.
 ===CHECKS===
 a primary response is triggered by the first exposure to a pathogen or vaccine
@@ -58,7 +58,7 @@ a secondary response is triggered by a subsequent exposure to the same pathogen
 the secondary response is faster and stronger than the primary response because of the body's memory of the first exposure
 {{< /selfcheck >}}
 
-{{< selfcheck question="How do humoral and cellular immunity differ?" hint="One type of immunity works through antibodies outside cells; the other works through T cells against infected cells." >}}
+{{< selfcheck question="How do humoral and cellular immunity differ?" hint="See the paragraph on where B cells and T cells mature and what each does." >}}
 Humoral immunity involves B cells and the production of antibodies against pathogens and toxins in the extracellular environment. Cellular immunity involves T cells, which orchestrate innate and adaptive responses and destroy cells already infected with intracellular pathogens.
 ===CHECKS===
 humoral immunity involves B cells and antibody production
@@ -93,7 +93,7 @@ A typical protein antigen has multiple epitopes, shown by the ability of three d
 {{< multiplechoice
   question="What is the difference between an antigen and an epitope?"
   answer="An epitope is a smaller exposed region on the surface of an antigen."
-  hint="Antibodies and T cells do not bind the whole antigen — they bind something smaller on its surface."
+  hint="See the paragraph on why an antigen's three-dimensional complexity matters."
 >}}
 An epitope is a smaller exposed region on the surface of an antigen.
 An antigen is a smaller exposed region on the surface of an epitope.
@@ -101,7 +101,7 @@ An epitope and an antigen are two names for the same molecular structure.
 An epitope is the carrier molecule that a small molecule must attach to before it can trigger an immune response.
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What factors affect an antigen's antigenic potential?" hint="The module names three properties of a molecule, in the order it discusses them: what kind of molecule it is, how complex it is, and how big it is." >}}
+{{< selfcheck question="What factors affect an antigen's antigenic potential?" hint="See the last three paragraphs of the Antigens section." >}}
 An antigen's antigenic potential depends on its molecular class — proteins are the most antigenic, carbohydrates less so, and lipids and nucleic acids the least antigenic unless combined with a protein or carbohydrate — as well as its structural complexity, since more complex molecules are more effective antigens, and its size, since a molecule too small to be antigenic by itself is a hapten.
 ===CHECKS===
 molecular class affects antigenic potential, with proteins the most antigenic and lipids and nucleic acids the least
@@ -109,7 +109,7 @@ structural complexity affects antigenic potential, with more complex molecules m
 size affects antigenic potential, since a molecule too small to be antigenic alone is a hapten
 {{< /selfcheck >}}
 
-{{< selfcheck question="Why are haptens typically not antigenic, and how do they become antigenic?" hint="Think about the antigen's size requirement, and what a hapten needs to attach to." >}}
+{{< selfcheck question="Why are haptens typically not antigenic, and how do they become antigenic?" hint="See the last paragraph of the Antigens section." >}}
 A hapten is typically not antigenic because it is too small by itself to be antigenic — it is essentially a free epitope that is not part of the complex three-dimensional structure of a larger antigen. For a hapten to become antigenic, it must first attach to a larger carrier molecule, usually a protein, to produce a conjugate antigen.
 ===CHECKS===
 a hapten is too small by itself to be antigenic
@@ -131,7 +131,7 @@ The constant region of the antibody molecule includes the trunk of the Y and low
 
 **Check Your Understanding**
 
-{{< sortbins question="Describe the different functions of the Fab region and the Fc region by sorting each function under the region it belongs to." hint="The Fab region is named for antigen binding; the Fc region is named for crystallization and effector-cell binding." >}}
+{{< sortbins question="Describe the different functions of the Fab region and the Fc region by sorting each function under the region it belongs to." hint="See the second and third paragraphs of the Antibodies section." >}}
 {"bins": ["Fab region", "Fc region"],
  "items": [
   {"label": "site of antigen binding", "bin": 0},
@@ -175,21 +175,21 @@ The five immunoglobulin (Ig) classes.
 
 **Check Your Understanding**
 
-{{< selfcheck question="What part of an antibody molecule determines its class?" hint="This is also the part of the antibody that includes the Fc region." >}}
+{{< selfcheck question="What part of an antibody molecule determines its class?" hint="See the first sentence of the Antibody Classes subsection." >}}
 The constant region of an antibody molecule determines its class, or isotype. The five classes — IgG, IgM, IgA, IgD, and IgE — each have their own heavy chain, designated by its own Greek letter: γ, μ, α, δ, and ε, respectively.
 ===CHECKS===
 the constant region determines the antibody's class or isotype
 each of the five classes has its own heavy chain, designated by its own Greek letter
 {{< /selfcheck >}}
 
-{{< selfcheck question="What class of antibody is involved in protection against parasites?" hint="This is also the least abundant antibody class in serum." >}}
+{{< selfcheck question="What class of antibody is involved in protection against parasites?" hint="See the five paragraphs that describe each antibody class in the Antibody Classes subsection." >}}
 IgE is the antibody class involved in defense against parasites. Its role in adaptive immunity is restricted to anti-parasitic defenses, and its Fc region binds basophils and mast cells, whose Fab-triggered release of pro-inflammatory mediators aids in the response to parasites.
 ===CHECKS===
 IgE's role in adaptive immunity is restricted to anti-parasitic defenses
 IgE's Fc region binds basophils and mast cells, which release mediators that aid the response to parasites
 {{< /selfcheck >}}
 
-{{< sortbins question="Describe the difference in structure between IgM and IgG by sorting each structural feature under the antibody class it describes." hint="Think about how many monomer units each class assembles from, and count each unit's antigen-binding arms." >}}
+{{< sortbins question="Describe the difference in structure between IgM and IgG by sorting each structural feature under the antibody class it describes." hint="See the IgG and IgM paragraphs of the Antibody Classes subsection." >}}
 {"bins": ["IgG", "IgM"],
  "items": [
   {"label": "assembles into a pentamer of five monomers", "bin": 1},
@@ -231,21 +231,21 @@ In this example of ADCC, antibodies bind to a large pathogenic cell that is too 
 
 **Check Your Understanding**
 
-{{< selfcheck question="Where is IgA normally found?" hint="Think about the body's secretions, not the bloodstream." >}}
+{{< selfcheck question="Where is IgA normally found?" hint="See the five paragraphs that describe each antibody class in the Antibody Classes subsection." >}}
 Secretory IgA is the most common and abundant antibody class found in the mucus secretions that protect the mucous membranes. IgA can also be found in other secretions such as breast milk, tears, and saliva.
 ===CHECKS===
 secretory IgA is the most abundant class in the mucus secretions that protect the mucous membranes
 IgA is also found in breast milk, tears, and saliva
 {{< /selfcheck >}}
 
-{{< selfcheck question="Which class of antibody crosses the placenta, providing protection to the fetus?" hint="This is also the most abundant antibody class in human blood." >}}
+{{< selfcheck question="Which class of antibody crosses the placenta, providing protection to the fetus?" hint="See the five paragraphs that describe each antibody class in the Antibody Classes subsection." >}}
 IgG is the only antibody class with the ability to cross the placental barrier, providing passive immunity to the developing fetus during pregnancy.
 ===CHECKS===
 IgG is the only antibody class able to cross the placental barrier
 crossing the placental barrier provides passive immunity to the developing fetus
 {{< /selfcheck >}}
 
-{{< selfcheck question="Compare the mechanisms of opsonization and antibody-dependent cell-mediated cytotoxicity." hint="One mechanism ends in engulfment; the other ends in secreted cytotoxins killing a pathogen too big to engulf." >}}
+{{< selfcheck question="Compare the mechanisms of opsonization and antibody-dependent cell-mediated cytotoxicity." hint="See the opsonization and ADCC paragraphs of the Antigen-Antibody Interactions section." >}}
 In opsonization, IgG antibodies bind their Fab sites to epitopes on the surface of a pathogen, and phagocytic cells such as macrophages, dendritic cells, and neutrophils then bind the antibodies' Fc portion through their own Fc receptors, helping them attach to and engulf the pathogen. In antibody-dependent cell-mediated cytotoxicity, the Fab region of an IgG antibody instead binds a pathogen too large to be phagocytosed, Fc receptors on an effector cell such as a natural killer cell bind the antibody's Fc region, and the effector cell secretes cytotoxins such as perforin and granzymes that kill the pathogen rather than engulfing it.
 ===CHECKS===
 in opsonization, IgG's Fab sites bind pathogen epitopes and phagocytes bind the Fc portion through their own Fc receptors to engulf the pathogen
@@ -313,14 +313,14 @@ in ADCC, an effector cell's Fc receptors bind the antibody's Fc region and the e
   question="The adaptive immune response produced upon first exposure to a specific antigen is called the ________."
   answer="primary response"
   accept="primary immune response"
-  hint="This is the response to the FIRST exposure; a different, faster response follows repeat exposures."
+  hint="See the second paragraph of this section."
 >}}
 
 {{< textin
   question="The adaptive immune response produced in response to a specific antigen to which the body has previously been exposed is called the ________."
   answer="secondary response"
   accept="secondary immune response"
-  hint="This is the response that follows a REPEAT exposure, not the first one."
+  hint="See the second paragraph of this section."
 >}}
 
 ### Distinguish between humoral and cellular immunity
@@ -328,7 +328,7 @@ in ADCC, an effector cell's Fc receptors bind the antibody's Fc region and the e
 {{< multiplechoice
   question="Antibodies are produced by ________."
   answer="plasma cells"
-  hint="This section says B cells are responsible for the production of antibodies; none of the other three options is given that role here."
+  hint="See the paragraph on where B cells mature, and B Lymphocytes and Humoral Immunity (Section 18.4)."
 >}}
 plasma cells
 T cells
@@ -350,10 +350,11 @@ neutrophils
 {{< textin
   question="________ immunity involves the production of antibody molecules that bind to specific antigens."
   answer="Humoral"
-  hint="This is the immunity carried out by B cells and antibodies, not by T cells."
+  accept="humoral immunity"
+  hint="See the paragraph on where B cells and T cells mature and what each does."
 >}}
 
-{{< selfcheck question="What is the difference between humoral and cellular adaptive immunity?" hint="One kind of immunity is carried out by antibodies; the other, by a different lymphocyte acting on infected cells directly." >}}
+{{< selfcheck question="What is the difference between humoral and cellular adaptive immunity?" hint="See the paragraph on where B cells and T cells mature and what each does." >}}
 Humoral immunity is mediated by antibodies produced by B cells, and defends against pathogens and toxins in the extracellular environment. Cellular immunity involves T cells, which serve as the central orchestrator of the immune response and are responsible for the destruction of cells already infected with intracellular pathogens.
 ===CHECKS===
 humoral immunity is mediated by antibodies produced by B cells
@@ -384,7 +385,7 @@ proteins
 carbohydrates
 {{< /multiplechoice >}}
 
-{{< selfcheck question="What is the difference between an antigen and a hapten?" hint="Think about which of the two can stimulate an immune response entirely on its own." >}}
+{{< selfcheck question="What is the difference between an antigen and a hapten?" hint="See the first and last paragraphs of the Antigens section." >}}
 An antigen is a pathogen-specific molecular structure that triggers the adaptive immune response; large, complex antigens such as flagella can carry many separate epitopes. A hapten, by contrast, is a molecule too small to be antigenic on its own — it must first attach to a larger carrier molecule, usually a protein, to form a conjugate antigen before it can stimulate an immune response.
 ===CHECKS===
 an antigen is a pathogen-specific molecular structure that triggers the adaptive immune response
@@ -397,12 +398,14 @@ a hapten must attach to a larger carrier molecule to become antigenic
 {{< textin
   question="The heavy chains of an antibody molecule contain ________ region segments, which help to determine its class or isotype."
   answer="constant"
+  accept="constant region"
   hint="See the first sentence of the Antibody Classes subsection."
 >}}
 
 {{< textin
   question="The variable regions of the heavy and light chains form the ________ sites of an antibody."
   answer="antigen-binding"
+  accept="antigen-binding site"
   hint="See the second paragraph of the Antibodies section."
 >}}
 
@@ -466,7 +469,7 @@ IgG
 IgM
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Describe the mechanism of antibody-dependent cell-mediated cytotoxicity." hint="Walk through the chain: what the Fab region binds first, what binds the Fc region next, and what happens last." >}}
+{{< selfcheck question="Describe the mechanism of antibody-dependent cell-mediated cytotoxicity." hint="See the ADCC paragraph and the natural killer cell figure in the Antigen-Antibody Interactions section." >}}
 Antibody-dependent cell-mediated cytotoxicity enhances the killing of pathogens too large to be phagocytosed. The Fab region of an IgG antibody binds to the large pathogen, and Fc receptors on an effector cell — most often a natural killer cell, but also macrophages or eosinophils — then bind the Fc region of the antibody, bringing the effector cell into close proximity with the pathogen. The effector cell then secretes powerful cytotoxins, such as perforin and granzymes, that kill the pathogen.
 ===CHECKS===
 ADCC enhances killing of pathogens too large to be phagocytosed

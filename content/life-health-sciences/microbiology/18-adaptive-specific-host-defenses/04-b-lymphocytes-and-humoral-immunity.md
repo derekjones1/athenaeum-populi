@@ -28,7 +28,7 @@ The first step of B cell maturation is an assessment of the functionality of the
 
 **Check Your Understanding**
 
-{{< selfcheck question="Compare the maturation of B cells with the maturation of T cells." hint="Think about which organ each cell type travels to for its final stage of maturation." >}}
+{{< selfcheck question="Compare the maturation of B cells with the maturation of T cells." hint="Reread B Cell Production and Maturation." >}}
 B cells and T cells both originate from multipotent hematopoietic stem cells in the bone marrow. T cells leave the bone marrow and travel to the thymus to complete their maturation, but B cells do not: they remain in the bone marrow, where they undergo positive selection for functional receptors and negative selection to eliminate self-reacting cells, and then travel to the spleen, rather than the thymus, for their final stages of maturation into naïve mature B cells.
 ===CHECKS===
 B cells and T cells both originate from hematopoietic stem cells in the bone marrow
@@ -52,18 +52,14 @@ B-cell receptors are embedded in the membranes of B cells. The variable regions 
 
 **Check Your Understanding**
 
-{{< multiplechoice
-  question="What types of molecules serve as the BCR?"
-  answer="IgD and IgM"
-  hint="Both classes are found here in a membrane-bound, monomeric form, unlike the antibody forms secreted later by plasma cells."
->}}
-IgG and IgA
-IgA and IgM
-IgD and IgM
-IgD and IgE
-{{< /multiplechoice >}}
+{{< selfcheck question="What types of molecules serve as the BCR?" hint="Reread the first paragraph of B-Cell Receptors." >}}
+B-cell receptors (BCRs) for naïve mature B cells are membrane-bound monomeric forms of IgD and IgM. They have two identical heavy chains and two identical light chains connected by disulfide bonds into a basic "Y" shape.
+===CHECKS===
+BCRs for naïve mature B cells are membrane-bound monomeric forms of IgD and IgM
+two identical heavy chains and two identical light chains connected by disulfide bonds
+{{< /selfcheck >}}
 
-{{< sortbins question="What are the differences between TCRs and BCRs with respect to antigen recognition? Sort each statement under the receptor type it describes." hint="Think about whether MHC presentation is required, and which molecule classes each receptor can recognize." >}}
+{{< sortbins question="What are the differences between TCRs and BCRs with respect to antigen recognition? Sort each statement under the receptor type it describes." hint="Reread the paragraph of B-Cell Receptors that names two important differences between the receptors." >}}
 {"bins": ["T-cell receptors (TCRs)", "B-cell receptors (BCRs)"],
  "items": [
   {"label": "Recognizes antigen only when it is presented within the binding cleft of MHC I or MHC II", "bin": 0},
@@ -72,7 +68,7 @@ IgD and IgE
   {"label": "Can recognize epitopes from proteins, polysaccharides, and lipopolysaccharides", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="Which molecule classes are T-dependent antigens and which are T-independent antigens?" hint="Think about which antigen classes need a helper T cell's cooperation and which do not." >}}
+{{< selfcheck question="Which molecule classes are T-dependent antigens and which are T-independent antigens?" hint="Reread the paragraph just before the B-cell receptor figure." >}}
 Protein antigens are classified as T-dependent antigens because activating a B cell with them requires the B cell to process and present the protein with MHC II to a helper T cell. Polysaccharides, lipopolysaccharides, and other nonprotein antigens are classified as T-independent antigens because they can activate a B cell without antigen processing and presentation to a T cell.
 ===CHECKS===
 protein antigens are T-dependent antigens because activating a B cell with them requires presenting the protein with MHC II to a helper T cell
@@ -96,7 +92,7 @@ T-independent antigens have repeating epitopes that can induce B cell recognitio
 {{< multiplechoice
   question="What are the two signals required for T cell-independent activation of B cells?"
   answer="Cross-linkage of BCRs by repetitive antigen epitopes, and interaction of toll-like receptors with PAMPs or complement system factors"
-  hint="Think about what provides the first signal, and where the second signal comes from when no T cell is involved."
+  hint="Reread the first paragraph of T Cell-Independent Activation of B cells."
 >}}
 Presentation of antigen with MHC II, and cytokines secreted by helper T cells
 Cross-linkage of BCRs by repetitive antigen epitopes, and interaction of toll-like receptors with PAMPs or complement system factors
@@ -107,10 +103,10 @@ Antigen processing by the B cell, and CD4 binding to MHC II
 {{< multiplechoice
   question="What is the function of a plasma cell?"
   answer="Secrete large quantities of antibodies"
-  hint="Recall what B cells differentiate into once activated, and what that cell type is specialized to produce."
+  hint="Reread the second paragraph of T Cell-Independent Activation of B cells."
 >}}
 Present processed antigen to helper T cells
-Directly phagocytose and destroy the pathogen
+Secrete cytokines that activate the B cell
 Differentiate into a memory B cell
 Secrete large quantities of antibodies
 {{< /multiplechoice >}}
@@ -129,7 +125,7 @@ In T cell-dependent activation of B cells, the B cell recognizes and internalize
 
 **Check Your Understanding**
 
-{{< selfcheck question="What steps are required for T cell-dependent activation of B cells?" hint="Walk through the process from the first binding event to the two cell types it eventually produces." >}}
+{{< selfcheck question="What steps are required for T cell-dependent activation of B cells?" hint="Reread T Cell-Dependent Activation of B cells." >}}
 T cell-dependent activation begins when the BCRs on a naïve mature B cell bind either a free protein antigen or a protein antigen associated with an intact pathogen, and the B cell internalizes the antigen. The B cell then processes the antigen and presents it with MHC II. A helper T cell specific to the same antigen recognizes the presented antigen with its TCR, its CD4 molecule interacts with the B cell's MHC II, and this coordination is called linked recognition. Once activated by linked recognition, the T<sub>H</sub>2 cell secretes cytokines that activate the B cell and drive its proliferation into clonal daughter cells. Additional cytokines from the T<sub>H</sub>2 cell then stimulate the differentiation of these clones into memory B cells and into plasma cells that initially secrete pentameric IgM, after which further T<sub>H</sub>2 cytokines drive class switching to IgG, IgA, or IgE.
 ===CHECKS===
 BCRs on a naïve mature B cell bind a free protein antigen or a protein antigen from an intact pathogen, and the B cell internalizes it
@@ -138,7 +134,7 @@ once activated by linked recognition, the TH2 cell secretes cytokines that activ
 additional TH2 cytokines stimulate differentiation into memory B cells and IgM-secreting plasma cells, followed by class switching to IgG, IgA, or IgE
 {{< /selfcheck >}}
 
-{{< selfcheck question="What is antibody class switching and why is it important?" hint="Think about which part of the antibody changes and which part stays the same, and why that matters for the epitope it binds." >}}
+{{< selfcheck question="What is antibody class switching and why is it important?" hint="Reread the last paragraph of T Cell-Dependent Activation of B cells." >}}
 Class switching, also called isotype switching, is the process by which plasma cells cloned from the same activated B cell switch from producing IgM to producing IgG, IgA, or IgE, driven by cytokines from the T<sub>H</sub>2 cell. It is accomplished by genetic rearrangement of the gene segments encoding the antibody's constant region, which determines its class; the variable region is not changed, so the new class of antibody keeps the original epitope specificity. This lets plasma cells cloned from one activated B cell produce a variety of antibody classes while still targeting the same epitope.
 ===CHECKS===
 class switching (isotype switching) is plasma cells cloned from the same activated B cell switching from producing IgM to producing IgG, IgA, or IgE, driven by TH2 cytokines
@@ -158,7 +154,7 @@ Compared to the primary response, the secondary antibody response occurs more qu
 
 **Check Your Understanding**
 
-{{< selfcheck question="What events occur during the lag period of the primary antibody response?" hint="Think about everything that has to happen before the first antibody appears in serum." >}}
+{{< selfcheck question="What events occur during the lag period of the primary antibody response?" hint="Reread the first paragraph of Primary and Secondary Responses." >}}
 The lag period is the time required for all of the steps of the primary response: naïve mature B cell binding of antigen with BCRs, antigen processing and presentation, helper T cell activation, B cell activation, and clonal proliferation. Throughout this roughly 10-day period, no antibody can yet be detected in serum.
 ===CHECKS===
 the lag period is the time needed for naïve mature B cell binding of antigen with BCRs, antigen processing and presentation, helper T cell activation, B cell activation, and clonal proliferation
@@ -168,7 +164,7 @@ during the roughly 10-day lag period, no antibody can yet be detected in serum
 {{< multiplechoice
   question="Why do antibody levels remain elevated longer during the secondary antibody response?"
   answer="Plasma cells produced during the secondary response live longer than those produced during the primary response"
-  hint="Think about the lifespan of the antibody-secreting cells produced this time, not just how much antibody they make."
+  hint="Reread the second paragraph of Primary and Secondary Responses."
 >}}
 Plasma cells produced during the secondary response live longer than those produced during the primary response
 The lag period is longer during the secondary response, giving more time for antibody production
@@ -202,16 +198,16 @@ Memory B cells themselves secrete large quantities of antibody directly into the
 ### Describe the production and maturation of B cells
 
 {{< textin
-  question="A mature B cell that has completed maturation but has not yet been activated is called a(n) ________."
+  question="A B cell that has completed its maturation but has not yet been activated is called a(n) ________."
   answer="naïve mature B cell"
-  accept="mature naïve B cell"
-  hint="This is the term used throughout this section for a B cell that is ready to respond but hasn't yet met its antigen."
+  accept="mature naïve B cell|naïve B cell"
+  hint="Reread the end of B Cell Production and Maturation."
 >}}
 
 {{< multiplechoice
   question="During B cell maturation, which selection mechanism eliminates self-reacting B cells to minimize the risk of autoimmunity?"
   answer="Negative selection"
-  hint="This mechanism specifically removes cells that react against the body's own molecules, rather than confirming a receptor works at all."
+  hint="Reread the second paragraph of B Cell Production and Maturation."
 >}}
 Positive selection
 Clonal proliferation
@@ -220,9 +216,9 @@ Negative selection
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Immature B cells that pass selection in the bone marrow travel to the ________ for their final stages of maturation into naïve mature B cells."
+  question="Immature B cells that pass the selection in the bone marrow then travel to the ________ for their final stages of maturation."
   answer="spleen"
-  hint="This organ is not the thymus, which is where T cells, not B cells, complete their maturation."
+  hint="Reread the second paragraph of B Cell Production and Maturation."
 >}}
 
 ### Compare the structure of B-cell receptors and T-cell receptors
@@ -230,7 +226,7 @@ Negative selection
 {{< multiplechoice
   question="Which of the following would be a BCR?"
   answer="IgD"
-  hint="Think about which of these is an antibody, not a T-cell coreceptor or an antigen-presenting molecule."
+  hint="Reread the first paragraph of B-Cell Receptors."
 >}}
 CD4
 MHC II
@@ -239,9 +235,9 @@ IgD
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="About how many BCRs, all with the same epitope-binding specificity, does a single naïve mature B cell carry on its membrane?"
+  question="About how many BCRs, all with the same epitope-binding specificity, is a single B cell estimated to carry on its membrane before it is activated?"
   answer="Upwards of 100,000"
-  hint="This section gives the estimate directly; the number is large enough that the B cell can bind many copies of the same epitope at once."
+  hint="Reread the end of the first paragraph of B-Cell Receptors."
 >}}
 Upwards of 100,000
 About 100
@@ -252,7 +248,7 @@ Roughly 1 billion
 {{< multiplechoice
   question="The variable region of the BCR heavy chain is made up of which gene segments?"
   answer="V, D, and J segments"
-  hint="The heavy chain's variable region uses one more segment type than the light chain's does."
+  hint="Reread the second paragraph of B-Cell Receptors."
 >}}
 V and J segments only
 V, D, and J segments
@@ -262,16 +258,12 @@ MHC I and MHC II gene segments
 
 ### Compare T-dependent and T-independent activation of B cells
 
-{{< multiplechoice
-  question="Which of the following would be a T-dependent antigen?"
-  answer="protein"
-  hint="Only one molecular class listed requires processing and presentation to a helper T cell for B cell activation."
+{{< textin
+  question="________ antigens can stimulate B cells to become activated but require cytokine assistance delivered by helper T cells."
+  answer="T-dependent"
+  accept="T cell-dependent|protein|T-dependent antigens"
+  hint="Reread the paragraph just before the B-cell receptor figure."
 >}}
-lipopolysaccharide
-glycolipid
-protein
-carbohydrate
-{{< /multiplechoice >}}
 
 {{< textin
   question="T-independent antigens can stimulate B cells to become activated and secrete antibodies without assistance from helper T cells. These antigens possess ________ antigenic epitopes that cross-link BCRs."
@@ -280,14 +272,18 @@ carbohydrate
   hint="Reread the first paragraph of T Cell-Independent Activation of B cells."
 >}}
 
-{{< textin
-  question="________ antigens can stimulate B cells to become activated but require cytokine assistance delivered by helper T cells."
-  answer="T-dependent"
-  accept="T cell-dependent|protein"
-  hint="This is the same class of antigen that must be processed and presented with MHC II before a helper T cell can respond to it."
+{{< multiplechoice
+  question="Which of the following would be a T-dependent antigen?"
+  answer="protein"
+  hint="Reread the paragraph just before the B-cell receptor figure."
 >}}
+lipopolysaccharide
+glycolipid
+protein
+carbohydrate
+{{< /multiplechoice >}}
 
-{{< selfcheck question="A patient lacks the ability to make functioning T cells because of a genetic disorder. Would this patient's B cells be able to produce antibodies in response to an infection? Explain your answer." hint="Think about which of the two activation pathways this section describes does not require T cell involvement at all." >}}
+{{< selfcheck question="A patient lacks the ability to make functioning T cells because of a genetic disorder. Would this patient's B cells be able to produce antibodies in response to an infection? Explain your answer." hint="Reread the two activation subsections under B-Cell Receptors." >}}
 Yes. Although this patient's B cells could not undergo T cell-dependent activation, since that process requires a functioning helper T cell for antigen presentation and linked recognition, the patient's B cells could still respond to T-independent antigens. T cell-independent activation occurs when repetitive epitopes on antigens such as polysaccharides or lipopolysaccharide cross-link BCRs, providing the first activation signal, with a second signal coming from sources such as toll-like receptors interacting with PAMPs or from the complement system — none of which requires T cell involvement. This T cell-independent response would let the B cells differentiate into plasma cells secreting IgM, though it would be short-lived and would not produce memory B cells or a secondary response.
 ===CHECKS===
 T cell-dependent activation requires a functioning helper T cell for antigen presentation and linked recognition, so it would not be available to this patient
@@ -298,22 +294,22 @@ the T cell-independent response would still let B cells secrete IgM as plasma ce
 ### Compare the primary and secondary antibody responses
 
 {{< textin
-  question="The initial stage of the primary antibody response, lasting about 10 days with no antibody yet detectable in serum, is called the ________."
-  answer="lag period"
-  accept="latent period"
-  hint="During this stage, all the initial steps of B cell activation are underway, but nothing yet shows up in the bloodstream."
+  question="During the primary response, some of the cloned B cells are differentiated into ________ programmed to respond to subsequent exposures."
+  answer="memory B cells"
+  accept="memory cells"
+  hint="Reread the second paragraph of Primary and Secondary Responses."
 >}}
 
 {{< textin
   question="During the secondary response, the lag period is decreased to only a few days and the production of ________ is significantly higher than observed for the primary response."
   answer="IgG"
-  hint="This is the same antibody class that predominates once the primary response's plasma cells finish switching."
+  hint="Reread the second paragraph of Primary and Secondary Responses."
 >}}
 
 {{< multiplechoice
   question="Which of the following does not occur during the lag period of the primary antibody response?"
   answer="class switching to IgG"
-  hint="Compare the lag period's list of steps in Primary and Secondary Responses with the sentences that follow it."
+  hint="Reread the first paragraph of Primary and Secondary Responses."
 >}}
 activation of helper T cells
 class switching to IgG
@@ -323,4 +319,4 @@ binding of antigen to BCRs
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 18.4: B Lymphocytes and Humoral Immunity](https://openstax.org/books/microbiology/pages/18-4-b-lymphocytes-and-humoral-immunity) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four source figures re-encoded as WebP and rendered as mediafigures after image inspection; `kind="diagram"` set explicitly on all four, overriding the media manifest's JPEG-based "photo" guess, since each is a drawn schematic or line graph; the B-cell-receptor figure carries `eager="true"` as the page's first figure; a `longdesc` was added to all four figures, walking each in reading order, because their labels, numbered steps, or curves are not fully carried by the caption alone; the primary/secondary-response figure's source alt is corrupted in the CNXML — it literally begins "Update alt text to:", an OpenStax editorial note left in place of real alt text — so its alt was written fresh from the rendered image; the T-cell-dependent-activation figure's source alt also mislabels its second step "s:" instead of "2:", a minor source typo, and the source alt's claim that the figure shows four numbered steps is corrected to the three unnumbered stages the artwork draws (binding, presentation to the helper T cell, then clonal expansion), so this page's alt and longdesc are written from the image; the same figure's caption is corrected from "differentiation into B cells and plasma cells" to "differentiation into memory B cells and plasma cells," matching this section's own body text and the same figure's alt and longdesc, with a visible source note beside the correction; feature-box notation: T<sub>H</sub>2 cell nomenclature is kept as inline HTML subscript in prose, options, and hints, per the corpus's existing house form, and written as plain "TH2" inside the two self-check rubric checkpoints that mention it, since the rubric renders as literal text with no Markdown or HTML processing; the cross-reference to Cellular Defenses (Section 17.3, m58879) is an absolute site-root link — the module's only cross-module reference. Of the module's 10 body Check Your Understanding bullets (5 boxes of 1, 3, 2, 2, and 2 bullets), 5 are graded — 4 multiplechoice and 1 sortbins — because a single module sentence, sentence pair, or compare-and-contrast passage of this module fixes the whole answer; the other 5 stay self-checks with model answers and rubrics assembled only from this section's own text, because their honest answers need several sentences assembled (B-cell-versus-T-cell maturation; the T-cell-dependent activation steps; class switching and its importance), or because converting them to a graded item would re-ask a fact a sibling graded item on the page already tests (which molecule classes are T-dependent versus T-independent, already the module's own Multiple Choice and Fill in the Blank items in Practice; which events occur during the lag period, already the module's own Multiple Choice item in Practice). The module's 3 keyed Multiple Choice items, 2 keyed Fill in the Blank items (rendered as `textin`), and its 1 unkeyed Critical Thinking question all appear in the Practice block under the objective each tests, except that the T-independent (`repetitive`) and T-dependent Fill in the Blank items are reversed from their printed order so that no item directly above a text-entry blank prints its key; the Critical Thinking question stays a self-check with an author-written model answer, since answering it honestly requires combining the module's T-dependent and T-independent activation passages rather than one fixing sentence. Every source exercise item and every Check Your Understanding bullet is rendered on the page; none is omitted or folded together. 7 filler items (3 multiplechoice, 4 textin) are added across the four objective groups to meet the book's three-item floor with at least one auto-graded item apiece, each built from a single sentence of this module's own text (B cell maturation, BCR structure, and the primary/secondary-response subsection) and disclosed in the source ledger; author-built items vary the position of the correct option rather than defaulting to the first. Key terms compiled from the module's 9 defined terms and the book's Glossary appendix; all 9 are taken from the glossary, none sentence-derived.</small>
+<small>This section is adapted from [Microbiology, Section 18.4: B Lymphocytes and Humoral Immunity](https://openstax.org/books/microbiology/pages/18-4-b-lymphocytes-and-humoral-immunity) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four source figures re-encoded as WebP and rendered as mediafigures after image inspection; `kind="diagram"` set explicitly on all four, overriding the media manifest's JPEG-based "photo" guess, since each is a drawn schematic or line graph; the B-cell-receptor figure carries `eager="true"` as the page's first figure; a `longdesc` was added to all four figures, walking each in reading order, because their labels, numbered steps, or curves are not fully carried by the caption alone; the primary/secondary-response figure's source alt is corrupted in the CNXML — it literally begins "Update alt text to:", an OpenStax editorial note left in place of real alt text — so its alt was written fresh from the rendered image; the T-cell-dependent-activation figure's source alt also mislabels its second step "s:" instead of "2:", a minor source typo, and the source alt's claim that the figure shows four numbered steps is corrected to the three unnumbered stages the artwork draws (binding, presentation to the helper T cell, then clonal expansion), so this page's alt and longdesc are written from the image; the same figure's caption is corrected from "differentiation into B cells and plasma cells" to "differentiation into memory B cells and plasma cells," matching this section's own body text and the same figure's alt and longdesc, with a visible source note beside the correction; feature-box notation: T<sub>H</sub>2 cell nomenclature is kept as inline HTML subscript in prose, options, and hints, per the corpus's existing house form, and written as plain "TH2" inside the two self-check rubric checkpoints that mention it, since the rubric renders as literal text with no Markdown or HTML processing; the cross-reference to Cellular Defenses (Section 17.3, m58879) is an absolute site-root link — the module's only cross-module reference. Of the module's 10 body Check Your Understanding bullets (5 boxes of 1, 3, 2, 2, and 2 bullets), 4 are graded — 3 multiplechoice and 1 sortbins — because a single module sentence, sentence pair, or compare-and-contrast passage of this module fixes the whole answer; the other 6 stay self-checks with model answers and rubrics assembled only from this section's own text, because their honest answers need several sentences assembled (B-cell-versus-T-cell maturation; the T-cell-dependent activation steps; class switching and its importance), or because converting them to a graded item would re-ask a fact a keyed source item in Practice already tests (which types of molecules serve as the BCR, already the module's own "Which of the following would be a BCR?" Multiple Choice item; which molecule classes are T-dependent versus T-independent, already the module's own Multiple Choice and Fill in the Blank items; which events occur during the lag period, already the module's own Multiple Choice item). The module's 3 keyed Multiple Choice items, 2 keyed Fill in the Blank items (rendered as `textin`), and its 1 unkeyed Critical Thinking question all appear in the Practice block under the objective each tests, except that in the T-dependent/T-independent group the two Fill in the Blank items (in their printed order) are placed before the Multiple Choice item "Which of the following would be a T-dependent antigen?", reversing the source's Multiple Choice-then-Fill in the Blank order, so that no item above a text-entry blank prints its key; the Critical Thinking question stays a self-check with an author-written model answer, since answering it honestly requires combining the module's T-dependent and T-independent activation passages rather than one fixing sentence. Every source exercise item and every Check Your Understanding bullet is rendered on the page; none is omitted or folded together. 7 filler items (3 multiplechoice, 4 textin) are added across the four objective groups to meet the book's three-item floor with at least one auto-graded item apiece, each built from a single sentence of this module's own text (B cell maturation, BCR structure, and the primary/secondary-response subsection) and disclosed in the source ledger; the lag-period term is not asked as a recall item, since the module's own lag-period Multiple Choice item prints the term; author-built items vary the position of the correct option rather than defaulting to the first. Key terms compiled from the module's 9 defined terms and the book's Glossary appendix; all 9 are taken from the glossary, none sentence-derived.</small>

@@ -35,7 +35,7 @@ The mycotoxin aflatoxin is a virulence factor produced by the fungus *Aspergillu
 
 **Check Your Understanding**
 
-{{< selfcheck question="List virulence factors common to bacteria and fungi." hint="Look for the paragraphs that draw an explicit parallel between a fungal mechanism and a bacterial one — attachment, toxins, and protection from phagocytosis." >}}
+{{< selfcheck question="List virulence factors common to bacteria and fungi." hint="Reread the Fungal Virulence paragraphs on *Candida*, *Cryptococcus*, and *Claviceps*." >}}
 Like bacteria, fungi produce adhesins that attach to host cells — *Candida*'s surface glycoproteins bind to the phospholipids of epithelial and endothelial cells. Like some bacteria, many fungi also produce exotoxins, called mycotoxins in fungi, such as the ergot toxin produced by *Claviceps purpurea*. Fungi also produce exoenzymes such as the proteases and phospholipases *Candida* uses to invade tissue. Finally, some fungi produce capsules, such as the polysaccharide capsule of *Cryptococcus*, which, similar to a bacterial capsule, provides resistance to phagocytosis.
 ===CHECKS===
 adhesins that attach to host cells
@@ -44,7 +44,7 @@ exoenzymes such as proteases and phospholipases
 capsules ... provides resistance to phagocytosis
 {{< /selfcheck >}}
 
-{{< selfcheck question="What functions do mycotoxins perform to help fungi survive in the host?" hint="This section names three fungal mycotoxins; look at what each one does to the host once it is produced." >}}
+{{< selfcheck question="What functions do mycotoxins perform to help fungi survive in the host?" hint="Reread the Fungal Virulence paragraphs on *Claviceps* and *Aspergillus*." >}}
 Mycotoxins help fungi cause disease in several ways. The ergot toxin produced by *Claviceps purpurea* causes vasoconstriction leading to gangrene in gangrenous ergotism, or targets the central nervous system to cause mania and hallucinations in convulsive ergotism. Aflatoxin acts as a mutagen and carcinogen and can cross the blood-placental barrier. Gliotoxin promotes virulence by inducing host cells to self-destruct and by evading the host's immune response, inhibiting the function of phagocytic cells and the pro-inflammatory response.
 ===CHECKS===
 ergot toxin ... causes vasoconstriction ... or targets the central nervous system
@@ -65,7 +65,7 @@ The virulence factors of *Trypanosoma brucei*, the causative agent of African sl
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain how antigenic variation by protozoan pathogens helps them survive in the host." hint="This section names two protozoans that use antigenic variation; look at what each one alters, and what that alteration prevents the host's immune system from doing." >}}
+{{< selfcheck question="Explain how antigenic variation by protozoan pathogens helps them survive in the host." hint="Reread the Protozoan Virulence paragraphs that follow the *Giardia* paragraph." >}}
 Some protozoans, such as *Plasmodium falciparum* and *Trypanosoma brucei*, undergo antigenic variation, altering the structure of a recognizable surface protein over time. In *P. falciparum*, although its adhesin PfEMP1 can be recognized by the host's immune system, antigenic variations in the protein's structure over time prevent it from being easily recognized and eliminated, allowing malaria to persist as a chronic infection in many individuals. In *T. brucei*, host antibodies are produced that recognize its glycoprotein coat, but the parasite is able to alter the structure of the glycoprotein to evade recognition.
 ===CHECKS===
 altering the structure of a recognizable surface protein over time
@@ -93,8 +93,8 @@ In addition to evading host defenses, helminths can actively suppress the immune
 >}}
 By expressing polysaccharides called glycans that resemble host molecules
 By producing a capsule that resists phagocytosis
-By altering the structure of a surface glycoprotein through antigenic variation
-By inhibiting phagocytic cells and the pro-inflammatory response
+By producing catalase that protects against hydrogen peroxide
+By inducing host cells to self-destruct
 {{< /multiplechoice >}}
 
 ## Summary
@@ -145,14 +145,16 @@ elastase, which breaks down the elastin
 catalase, which protects the fungus from the hydrogen peroxide
 {{< /selfcheck >}}
 
-{{< textin question="*Candida* can invade tissue by producing the exoenzymes ________ and ________." answer="protease and phospholipase" accept="phospholipase and protease|protease phospholipase|phospholipase protease|proteases and phospholipases|phospholipases and proteases|proteases phospholipases|phospholipases proteases" hint="Name the two enzyme types this section says *Candida* secretes to spread and invade host tissue, described right after its adhesins." >}}
+{{< textin question="*Candida* can invade tissue by producing the exoenzymes ________ and ________." answer="protease and phospholipase" accept="phospholipase and protease|protease phospholipase|phospholipase protease|proteases and phospholipases|phospholipases and proteases|proteases phospholipases|phospholipases proteases" hint="Reread the *Candida* paragraph under Fungal Virulence." >}}
 
 {{< textin question="The larval form of *Schistosoma mansoni* uses a ________ to help it gain entry through intact skin." answer="protease" hint="Reread the first paragraph of Helminth Virulence." >}}
 
 ### Compare virulence factors of fungi and bacteria
 
+{{< textin question="Despite a relative lack of detailed mechanisms, the stages of pathogenesis and general mechanisms of virulence involved in disease production by fungi and parasites are ________ to those of bacteria." answer="similar" accept="analogous" hint="Reread the section's opening paragraph." >}}
+
 {{< multiplechoice
-  question="Fungal toxins, called mycotoxins, are functionally analogous to which class of bacterial virulence factor?"
+  question="Fungal toxins, called mycotoxins, are the fungal counterpart of which class of bacterial virulence factor?"
   answer="exotoxins"
   hint="Reread the Fungal Virulence paragraph that introduces mycotoxins."
 >}}
@@ -162,12 +164,10 @@ exotoxins
 exoenzymes
 {{< /multiplechoice >}}
 
-{{< textin question="Despite a relative lack of detailed mechanisms, the stages of pathogenesis and general mechanisms of virulence involved in disease production by fungi and parasites are ________ to those of bacteria." answer="similar" hint="Recall how this section's opening paragraph frames fungal and parasitic pathogenesis relative to bacterial pathogenesis." >}}
-
 {{< multiplechoice
-  question="Similar to bacterial capsules, the *Cryptococcus* capsule provides resistance to which host defense mechanism?"
+  question="Like bacterial capsules, the *Cryptococcus* capsule provides resistance to which host defense mechanism?"
   answer="phagocytosis"
-  hint="Recall what happens to nonencapsulated *Cryptococcus* cells, described in the same sentence — they are more easily removed by which process?"
+  hint="Reread the *Cryptococcus* paragraph under Fungal Virulence."
 >}}
 phagocytosis
 antigenic variation
@@ -177,10 +177,12 @@ degradation of host antibodies
 
 ### Explain the difference between protozoan parasites and helminths
 
+{{< textin question="Protozoa adhere to target cells through complex mechanisms and can cause cellular damage through release of ________ substances." answer="cytopathic" hint="Reread the Summary's bullet on protozoa." >}}
+
 {{< multiplechoice
   question="Protozoan parasites are unicellular eukaryotes, while helminths are multicellular eukaryotes."
   answer="True"
-  hint="Compare how this section's Protozoan Virulence and Helminth Virulence paragraphs each open by classifying the organisms' cellularity."
+  hint="Reread the opening sentences of Protozoan Virulence and Helminth Virulence."
 >}}
 True
 False
@@ -189,30 +191,19 @@ False
 {{< multiplechoice
   question="According to this section, which type of eukaryotic parasite is described as able to survive inside phagocytic vesicles?"
   answer="Protozoa"
-  hint="Reread the opening paragraph of Protozoan Virulence."
+  hint="Reread the one-sentence paragraph that follows the first Check Your Understanding box."
 >}}
 Fungi
 Protozoa
 Helminths
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Compare how protozoan parasites and helminths each avoid detection or destruction by the host immune system." hint="Reread Protozoan Virulence and Helminth Virulence; the answer draws on both." >}}
-Protozoan parasites such as *Plasmodium falciparum* and *Trypanosoma brucei* evade the immune system through antigenic variation, altering the structure of a recognizable surface protein over time so that host antibodies raised against the earlier form no longer recognize it; *T. brucei* also evades phagocytosis by producing a dense glycoprotein coat that resembles a bacterial capsule. Helminths use different strategies: some are simply so large that the immune system is ineffective against them, others such as adult roundworms are protected by a tough outer cuticle, some coat their exterior in glycans that resemble host molecules so the immune system fails to recognize them as foreign, and some, such as *S. mansoni*, actively suppress the immune system by degrading host antibodies with proteases.
-===CHECKS===
-evade the immune system through antigenic variation, altering the structure of a recognizable surface protein over time
-evades phagocytosis by producing a dense glycoprotein coat that resembles a bacterial capsule
-so large that the immune system is ineffective against them
-protected by a tough outer cuticle
-coat their exterior in glycans that resemble host molecules
-actively suppress the immune system by degrading host antibodies with proteases
-{{< /selfcheck >}}
-
 ### Describe how helminths evade the host immune system
 
 {{< multiplechoice
   question="How does *S. mansoni* actively suppress, rather than simply evade, the host immune system?"
   answer="By degrading host antibodies with proteases"
-  hint="Recall what this section says helminths can do to the immune system beyond simply evading detection — look at the sentence that introduces active immune suppression."
+  hint="Reread the last paragraph of Helminth Virulence."
 >}}
 By degrading host antibodies with proteases
 By altering the structure of its surface glycoprotein coat
@@ -244,4 +235,4 @@ actively suppress the immune system ... degrades host antibodies with proteases
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 15.4: Virulence Factors of Eukaryotic Pathogens](https://openstax.org/books/microbiology/pages/15-4-virulence-factors-of-eukaryotic-pathogens) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: this module has no figures and no feature boxes; nothing was vendored or rendered as a callout. All six of the module's Multiple Choice, Fill in the Blank, and Short Answer exercises reach a Practice item: both Multiple Choice items keep their source order, options, and keys; both Fill in the Blank items are rendered as `textin` with their printed keys ("protease and phospholipase," an unordered pair whose `accept` list carries the reversed order (grading already folds the comma, so only the reversed-order spellings are listed); "protease"); both unkeyed Short Answer questions are `selfcheck`s in Practice — the *Aspergillus* virulence-factors question (no single sentence answers it — the module names four separate factors across several sentences) and the helminth immune-evasion question "Explain how helminths evade the immune system" (its model answer and rubric cover all four of the module's mechanisms: size, tough cuticle, glycan surface mimicry, and active suppression such as *S. mansoni*'s antibody-degrading proteases). This Short Answer's stem is close to the body Check Your Understanding bullet "Describe how helminths avoid being destroyed by the host immune system," but the two are rendered as separate items, per the rule that no source exercise is ever dropped or folded: the body bullet is a `multiplechoice` keyed narrowly to the module's own glycan-mimicry sentence, with three distractors built from this module's own fungal and protozoan mechanisms (Cryptococcus's capsule, *T. brucei*'s antigenic variation, *Aspergillus*'s gliotoxin), none of which the module ever attributes to helminths, while the Short Answer's `selfcheck` covers the full breadth of the question. Of the module's four body Check Your Understanding bullets, three (both fungal-section bullets and the one protozoan-section bullet) are `selfcheck`s with model answers and rubrics assembled only from this module's own sentences — none is answerable from a single sentence — and the fourth (helminth section) is the graded `multiplechoice` described above. The `## Practice` block holds 15 items across the section's four objectives (floor: 12), because the source exercise set alone (six items) falls well short of the floor: nine items are author-written from this module's own sentences to fill the "compare fungi and bacteria" and "protozoan versus helminth" objectives, which the source's exercise sets do not test directly — the mycotoxin/exotoxin analogy, the *Cryptococcus*-capsule/phagocytosis analogy, and the opening paragraph's "similar to bacteria" cloze (Compare virulence factors of fungi and bacteria); a true/false item on unicellular versus multicellular cellularity, an item on which parasite group survives inside phagocytic vesicles, and a selfcheck comparing protozoan antigenic variation with the helminth section's several evasion strategies (Explain the difference between protozoan parasites and helminths); and an item on *S. mansoni*'s antibody-degrading proteases, an item on helminths overwhelming the immune system with released material, and a cloze `textin` on how the parasites' surface characteristics vary over their life cycles (Describe how helminths evade the host immune system) — none of these nine duplicates the module's own Check Your Understanding or Short Answer questions, and each is traced in the source ledger to the single sentence it is built from. `## Key terms` is compiled from the module's two defined terms (`mycotoxin`, `carcinogen`); both definitions are taken verbatim from the book's Glossary appendix, and neither is sentence-derived. Footnotes: all three of the module's footnotes are rendered as inline parenthetical citations after the sentences they support, author names, titles, journals, volumes, issues, years, and pages kept verbatim; none carries a bare access URL or a DOI. No cross-references to other sections or modules appear in this module — confirmed by a direct grep of the CNXML for `<link` (zero matches), so the parent's run-wide cross-reference-routing rule has nothing to apply to here. No one-word source typos. One claim-pass correction: the source dates the famous gangrenous-ergotism outbreak to "Eastern Europe during the 5th century AD," but the earliest documented outbreak is the 857 AD outbreak in the Rhine Valley (Bové, "The History of Ergot of Rye I," PubMed 19847980; *Annales Xantenses*); the page reads "the Rhine Valley in 857 AD" with the source's wording noted beside it. No item, hint, or model answer on the page depends on the outbreak's date or location. A second claim correction: the source introduces catalase as "Another" of *Aspergillus*'s "several proteases," but the book's own Glossary defines catalase as an enzyme that breaks down hydrogen peroxide to water and oxygen and a protease as an enzyme involved in protein catabolism, and Section 9.2 names catalase among the enzymes that break down reactive oxygen species; the page reads "*Aspergillus* also produces catalase" with a visible Source note, and the *Aspergillus* self-check's hint and model answer, which had called elastase and catalase "two proteases," now name elastase as a protease and catalase as an enzyme.</small>
+<small>This section is adapted from [Microbiology, Section 15.4: Virulence Factors of Eukaryotic Pathogens](https://openstax.org/books/microbiology/pages/15-4-virulence-factors-of-eukaryotic-pathogens) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: this module has no figures and no feature boxes; nothing was vendored or rendered as a callout. All six of the module's Multiple Choice, Fill in the Blank, and Short Answer exercises reach a Practice item: both Multiple Choice items keep their source order, options, and keys; both Fill in the Blank items are rendered as `textin` with their printed keys ("protease and phospholipase," an unordered pair whose `accept` list carries the reversed order (grading already folds the comma, so only the reversed-order spellings are listed); "protease"); both unkeyed Short Answer questions are `selfcheck`s in Practice — the *Aspergillus* virulence-factors question (no single sentence answers it — the module names four separate factors across several sentences) and the helminth immune-evasion question "Explain how helminths evade the immune system" (its model answer and rubric cover all four of the module's mechanisms: size, tough cuticle, glycan surface mimicry, and active suppression such as *S. mansoni*'s antibody-degrading proteases). This Short Answer's stem is close to the body Check Your Understanding bullet "Describe how helminths avoid being destroyed by the host immune system," but the two are rendered as separate items, per the rule that no source exercise is ever dropped or folded: the body bullet is a `multiplechoice` keyed narrowly to the module's own glycan-mimicry sentence, with three distractors built from this module's own fungal and protozoan mechanisms (*Cryptococcus*'s capsule, *Aspergillus*'s catalase, and gliotoxin's inducing host cells to self-destruct), none of which the module ever attributes to helminths, while the Short Answer's `selfcheck` covers the full breadth of the question. Of the module's four body Check Your Understanding bullets, three (both fungal-section bullets and the one protozoan-section bullet) are `selfcheck`s with model answers and rubrics assembled only from this module's own sentences — none is answerable from a single sentence — and the fourth (helminth section) is the graded `multiplechoice` described above. The `## Practice` block holds 15 items across the section's four objectives (floor: 12), because the source exercise set alone (six items) falls well short of the floor: nine items are author-written from this module's own sentences to fill the "compare fungi and bacteria" and "protozoan versus helminth" objectives, which the source's exercise sets do not test directly — the opening paragraph's "similar to bacteria" cloze, the mycotoxin/exotoxin analogy, and the *Cryptococcus*-capsule/phagocytosis analogy (Compare virulence factors of fungi and bacteria); a summary cloze `textin` on the cytopathic substances protozoa release, a true/false item on unicellular versus multicellular cellularity, and an item on which parasite group survives inside phagocytic vesicles (Explain the difference between protozoan parasites and helminths); and an item on *S. mansoni*'s antibody-degrading proteases, an item on helminths overwhelming the immune system with released material, and a cloze `textin` on how the parasites' surface characteristics vary over their life cycles (Describe how helminths evade the host immune system) — none of these nine duplicates the module's own Check Your Understanding or Short Answer questions, and each is traced in the source ledger to the single sentence it is built from. `## Key terms` is compiled from the module's two defined terms (`mycotoxin`, `carcinogen`); both definitions are taken verbatim from the book's Glossary appendix, and neither is sentence-derived. Footnotes: all three of the module's footnotes are rendered as inline parenthetical citations after the sentences they support, author names, titles, journals, volumes, issues, years, and pages kept verbatim; none carries a bare access URL or a DOI. No cross-references to other sections or modules appear in this module — confirmed by a direct grep of the CNXML for `<link` (zero matches), so the parent's run-wide cross-reference-routing rule has nothing to apply to here. No one-word source typos. One claim-pass correction: the source dates the famous gangrenous-ergotism outbreak to "Eastern Europe during the 5th century AD," but the earliest documented outbreak is the 857 AD outbreak in the Rhine Valley (Bové, "The History of Ergot of Rye I," PubMed 19847980; *Annales Xantenses*); the page reads "the Rhine Valley in 857 AD" with the source's wording noted beside it. No item, hint, or model answer on the page depends on the outbreak's date or location. A second claim correction: the source introduces catalase as "Another" of *Aspergillus*'s "several proteases," but the book's own Glossary defines catalase as an enzyme that breaks down hydrogen peroxide to water and oxygen and a protease as an enzyme involved in protein catabolism, and Section 9.2 names catalase among the enzymes that break down reactive oxygen species; the page reads "*Aspergillus* also produces catalase" with a visible Source note, and the *Aspergillus* self-check's hint and model answer, which had called elastase and catalase "two proteases," now name elastase as a protease and catalase as an enzyme.</small>

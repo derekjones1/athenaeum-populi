@@ -26,7 +26,7 @@ WHO maintains a global alert and response system that coordinates information fr
 
 **Check Your Understanding**
 
-{{< selfcheck question="Name the organizations that participate in international public health monitoring." hint="This subsection names one United Nations agency and two others that work with it — one a US agency, one a European one." >}}
+{{< selfcheck question="Name the organizations that participate in international public health monitoring." hint="Reread both paragraphs of this section's first subsection." >}}
 The World Health Organization (WHO) coordinates international public health monitoring worldwide. In the United States, the CDC carries out international monitoring and public health efforts, mainly to protect US public health. The European Union also maintains a Health Security Committee that monitors disease outbreaks within its member countries and internationally, coordinating with WHO.
 ===CHECKS===
 the World Health Organization (WHO) coordinates international public health monitoring
@@ -63,19 +63,19 @@ Even before the Ebola epidemic of 2014–15, Ebola was considered an emerging di
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain why it is important to monitor emerging infectious diseases." hint="This subsection's own definition of an emerging infectious disease is followed immediately by the sentence that says what its status implies." >}}
+{{< selfcheck question="Explain why it is important to monitor emerging infectious diseases." hint="Reread the first paragraph of this subsection." >}}
 An emerging infectious disease is either new to the human population or has increased in prevalence over the previous twenty years, and whether it is new or has simply become more frequent, its status as emerging implies the need to apply resources to understand and control its growing impact.
 ===CHECKS===
 an emerging infectious disease is new or has increased in prevalence over the previous twenty years
 its status as emerging implies the need to apply resources to understand and control its growing impact
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain how a bacterial disease could reemerge, even if it had previously been successfully treated and controlled." hint="This subsection names two general causes of reemergence right after it defines a reemerging infectious disease, then gives bacterial examples." >}}
-A reemerging infectious disease is one that is increasing in frequency after a previous period of decline, and its reemergence may be a result of changing conditions or old prevention regimes that are no longer working — for example, drug-resistant forms of tuberculosis, bacterial pneumonia, and malaria, and drug-resistant strains of the bacteria causing gonorrhea and syphilis, are becoming more widespread.
+{{< selfcheck question="Explain how a bacterial disease could reemerge, even if it had previously been successfully treated and controlled." hint="Reread the paragraph of this subsection just before the Ebola graph." >}}
+A reemerging infectious disease is one that is increasing in frequency after a previous period of decline, and its reemergence may be a result of changing conditions or old prevention regimes that are no longer working. Examples of such diseases are drug-resistant forms of tuberculosis, bacterial pneumonia, and malaria, and drug-resistant strains of the bacteria causing gonorrhea and syphilis are also becoming more widespread.
 ===CHECKS===
 a reemerging infectious disease is increasing in frequency after a previous period of decline
 reemergence may be a result of changing conditions or old prevention regimes that are no longer working
-drug-resistant tuberculosis, bacterial pneumonia, malaria, gonorrhea, and syphilis are becoming more widespread
+drug-resistant strains of the bacteria causing gonorrhea and syphilis are also becoming more widespread
 {{< /selfcheck >}}
 
 {{< callout type="info" >}}
@@ -122,7 +122,7 @@ The CDC publishes *[Emerging Infectious Diseases](https://openstax.org/l/22CDCEm
 {{< multiplechoice
   question="According to this section, what role does the CDC play in WHO's global alert and response system?"
   answer="Carries out international monitoring and public health efforts, mainly to protect US public health"
-  hint="Read the sentence right after WHO's own global alert and response system is described — it names what the United States contributes and why."
+  hint="Reread the second paragraph of this section's first subsection."
 >}}
 Carries out international monitoring and public health efforts, mainly to protect US public health
 Develops and implements the global smallpox-eradication campaign
@@ -130,7 +130,7 @@ Monitors disease outbreaks among the European Union's member countries
 Funds three billion dollars of WHO's biennial budget through voluntary contributions
 {{< /multiplechoice >}}
 
-{{< selfcheck question="An Atlantic crossing by boat from England to New England took 60–80 days in the 18th century. In the late 19th century the voyage took less than a week. How do you think these time differences for travel might have impacted the spread of infectious diseases from Europe to the Americas, or vice versa?" hint="Reread the Emerging and Reemerging Infectious Diseases paragraph on why agencies watch outbreaks in other countries." >}}
+{{< selfcheck question="An Atlantic crossing by boat from England to New England took 60–80 days in the 18th century. In the late 19th century the voyage took less than a week. How do you think these time differences for travel might have impacted the spread of infectious diseases from Europe to the Americas, or vice versa?" hint="Reread the third paragraph of this section's second subsection." >}}
 This section does not discuss ocean-crossing times. What it does state is that "the global nature of transportation means that an outbreak anywhere can spread quickly to every corner of the planet" and that "managing an epidemic in one location—its source—is far easier than fighting it on many fronts"; its SARS account gives an example, the disease having been introduced to Canada in February 2003 by an infected traveler from Hong Kong. Read against those sentences, cutting the crossing from 60–80 days to less than a week is faster transportation of exactly the kind the section says lets an outbreak spread quickly, so it would be expected to make the spread of infectious diseases between Europe and the Americas easier, not harder.
 ===CHECKS===
 the section states that the global nature of transportation lets an outbreak spread quickly to every corner of the planet
@@ -140,10 +140,12 @@ a much faster crossing would be expected to make spread between Europe and the A
 
 ### Identify and differentiate between emerging and reemerging infectious diseases
 
+{{< textin question="A disease that is increasing in frequency after a previous period of decline is called a ________." answer="reemerging infectious disease" accept="reemerging disease|re-emerging infectious disease|re-emerging disease" hint="Reread the paragraph of this section's second subsection just before the Ebola graph." >}}
+
 {{< multiplechoice
   question="Which of the following would NOT be considered an emerging disease?"
   answer="Tuberculosis"
-  hint="Compare each option with the table of emerging and reemerging diseases and with the disease examples in the paragraph just before the Ebola graph."
+  hint="Compare each option with the table that follows the Ebola graph and with the disease examples in the paragraph just before that graph."
 >}}
 Ebola hemorrhagic fever
 West Nile virus fever/encephalitis
@@ -154,7 +156,7 @@ Tuberculosis
 {{< multiplechoice
   question="Which of the following would NOT be considered a reemerging disease?"
   answer="West Nile virus fever/encephalitis"
-  hint="Three of these four are named in this section as reemerging because of drug resistance; one is not framed that way here."
+  hint="Reread the paragraph of this section's second subsection just before the Ebola graph."
 >}}
 Drug-resistant tuberculosis
 Drug-resistant gonorrhea
@@ -165,7 +167,7 @@ West Nile virus fever/encephalitis
 {{< multiplechoice
   question="Which of the following factors can lead to reemergence of a disease?"
   answer="A period of decline in vaccination rates"
-  hint="Think about which option is an old prevention regime that has stopped working, as this section's definition of reemergence describes."
+  hint="Reread the second sentence of the paragraph just before the Ebola graph."
 >}}
 A mutation that allows it to infect humans
 A period of decline in vaccination rates
@@ -176,7 +178,7 @@ Better education on the signs and symptoms of the disease
 {{< multiplechoice
   question="Why are emerging diseases with very few cases the focus of intense scrutiny?"
   answer="They are increasing and therefore not controlled"
-  hint="Recall this section's own definition of what makes a disease 'emerging' in the first place."
+  hint="Reread the first paragraph of this section's second subsection."
 >}}
 They tend to be more deadly
 They are increasing and therefore not controlled
@@ -184,6 +186,4 @@ They naturally have higher transmission rates
 They occur more in developed countries
 {{< /multiplechoice >}}
 
-{{< textin question="A disease that is increasing in frequency after a previous period of decline is called a ________." answer="reemerging infectious disease" accept="reemerging disease|re-emerging infectious disease|re-emerging disease" hint="See the paragraph just before the Ebola graph." >}}
-
-<small>This section is adapted from [Microbiology, Section 16.4: Global Public Health](https://openstax.org/books/microbiology/pages/16-4-global-public-health) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: both figures are re-encoded as WebP and rendered as mediafigures; the media manifest guesses `kind="photo"` for both (both source files are JPEGs), which is wrong for both — the Ebola-cases figure is a bar graph and the SARS-spread figure is a labelled map with flow arrows, so both are explicit `kind="diagram"`; the SARS map gets a `longdesc` walking through its flow arrows and case counts, none of which the caption names. The Ebola-cases figure's alt is rewritten from the rendered image rather than the source alt, which prints "44" for the 1978–79 bar (the image reads 34) and an extra, erroneous "There were 38 in 2006-2007" clause (2006–07 is 413; the 38-case bar is 2008–09) — both are suspected source-alt defects. The SARS map's alt is also rewritten from the image, rather than reusing the source alt verbatim, to avoid duplicating the figure's own caption and to add the Guangdong Province/Metropole Hotel starting point the caption does not name. Both cross-reference links to these figures are replaced by a descriptive phrase ("shown in the graph/map below") at their body position, and both figures are placed at their own document-order position rather than at the point of reference, per this book's rule. Of the module's two source `<link url>` references (the outbreak database and the *Emerging Infectious Diseases* journal), both are kept as Link to Learning URLs. The one footnote (the WHO budget citation) is rendered as an inline parenthetical citation after the sentence it supports, with its bare access URL dropped and the rest of the citation kept verbatim. The three body Check Your Understanding questions (one after the WHO subsection, two after the Emerging and Reemerging Infectious Diseases subsection) are rendered as self-checks at their note positions, each with a model answer and rubric assembled only from this module's own sentences; none is graded as a `multiplechoice`, `textin`, or `sortbins` because none is answered by a single defined term or a short deterministic phrase — the organizations question spans two paragraphs, the "why monitor" and "how could a disease reemerge" questions each need the module's own sibling reasons/examples restated rather than a single term, and this module names no sibling wrong answers with which to build honest multiple-choice distractors for them. Of the module's five source exercises: all four Multiple Choice keep their source order, options, and keys; the one Fill in the Blank keeps its "WHO (World Health Organization)" key as a `textin` per the parent's decision, answer `WHO` with `World Health Organization` (and its British spelling) accepted; the one unkeyed Critical Thinking question (the Atlantic-crossing question) is rendered as a `selfcheck`, per the parent's decision, because it is openly speculative and this module does not discuss historical ocean-crossing times — its model answer quotes this module's own sentences about how quickly transportation lets an outbreak spread (with the SARS traveler example) and applies them to the two crossing times, without adding claims about how long a passenger stays contagious. No source exercise is dropped. The "Some Emerging and Reemerging Infectious Diseases" table is transcribed as Markdown from its cells and checked against the PDF; per the parent's decision it gets no `sortbins` (its categories are diseases, not a comparison the section's objectives ask the learner to sort). One author-written `multiplechoice` (the CDC's-role item) and one term-recall `textin` (keyed "reemerging infectious disease") fill the two Practice groups to this section's floor of 8 (2 objectives × 3, raised to the section floor); the CDC item's three distractors are this module's own phrases for WHO's smallpox campaign, the EU Health Security Committee's monitoring role, and WHO's member-state funding share, each reassigned to a wrong agency rather than invented. Key terms are compiled from the module's 3 defined terms and the book's Glossary appendix; all 3 are taken from the glossary (none sentence-derived).</small>
+<small>This section is adapted from [Microbiology, Section 16.4: Global Public Health](https://openstax.org/books/microbiology/pages/16-4-global-public-health) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: both figures are re-encoded as WebP and rendered as mediafigures; the media manifest guesses `kind="photo"` for both (both source files are JPEGs), which is wrong for both — the Ebola-cases figure is a bar graph and the SARS-spread figure is a labelled map with flow arrows, so both are explicit `kind="diagram"`; the SARS map gets a `longdesc` walking through its flow arrows and case counts, none of which the caption names. The Ebola-cases figure's alt is rewritten from the rendered image rather than the source alt, which prints "44" for the 1978–79 bar (the image reads 34) and an extra, erroneous "There were 38 in 2006-2007" clause (2006–07 is 413; the 38-case bar is 2008–09) — both are suspected source-alt defects. The SARS map's alt is also rewritten from the image, rather than reusing the source alt verbatim, to avoid duplicating the figure's own caption and to add the Guangdong Province/Metropole Hotel starting point the caption does not name. Both cross-reference links to these figures are replaced by a descriptive phrase ("shown in the graph/map below") at their body position, and both figures are placed at their own document-order position rather than at the point of reference, per this book's rule. Of the module's two source `<link url>` references (the outbreak database and the *Emerging Infectious Diseases* journal), both are kept as Link to Learning URLs. The one footnote (the WHO budget citation) is rendered as an inline parenthetical citation after the sentence it supports, with its bare access URL dropped and the rest of the citation kept verbatim. The three body Check Your Understanding questions (one after the WHO subsection, two after the Emerging and Reemerging Infectious Diseases subsection) are rendered as self-checks at their note positions, each with a model answer and rubric assembled only from this module's own sentences; none is graded as a `multiplechoice`, `textin`, or `sortbins` because none is answered by a single defined term or a short deterministic phrase — the organizations question spans two paragraphs, the "why monitor" and "how could a disease reemerge" questions each need the module's own sibling reasons/examples restated rather than a single term, and this module names no sibling wrong answers with which to build honest multiple-choice distractors for them. Of the module's five source exercises, each is placed under the objective it tests, so the Fill in the Blank and the Critical Thinking question, printed after the four Multiple Choice, come before them under the first objective; all four Multiple Choice keep their source order, options, and keys; the one Fill in the Blank keeps its "WHO (World Health Organization)" key as a `textin`, answer `WHO` with `World Health Organization` (and its British spelling) accepted; the one unkeyed Critical Thinking question (the Atlantic-crossing question) is rendered as a `selfcheck` because it is openly speculative and this module does not discuss historical ocean-crossing times — its model answer quotes this module's own sentences about how quickly transportation lets an outbreak spread (with the SARS traveler example) and applies them to the two crossing times, without adding claims about how long a passenger stays contagious. No source exercise is dropped. The "Some Emerging and Reemerging Infectious Diseases" table is transcribed as Markdown from its cells and checked against the PDF; it gets no `sortbins` (its categories are diseases, not a comparison the section's objectives ask the learner to sort). One author-written `multiplechoice` (the CDC's-role item) and one term-recall `textin` (keyed "reemerging infectious disease", placed first in its group so that no source stem above it prints its key) fill the two Practice groups to this section's floor of 8 (2 objectives × 3, raised to the section floor); the CDC item's three distractors are this module's own phrases for WHO's smallpox campaign, the EU Health Security Committee's monitoring role, and WHO's member-state funding share, each reassigned to a wrong agency rather than invented. Key terms are compiled from the module's 3 defined terms and the book's Glossary appendix; all 3 are taken from the glossary (none sentence-derived).</small>

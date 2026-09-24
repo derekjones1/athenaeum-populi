@@ -38,7 +38,7 @@ Watch videos on [leukocyte extravasation](https://openstax.org/l/22leukextrvid) 
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain the role of adhesion molecules in the process of extravasation." hint="Trace what happens to the vessel wall first, then to the leukocyte's speed, then to what happens at the junction." >}}
+{{< selfcheck question="Explain the role of adhesion molecules in the process of extravasation." hint="See the first paragraph of this section's first subsection." >}}
 Cytokines and C5a released near an infection cause the endothelial cells lining nearby capillaries to upregulate and express adhesion molecules and receptors on their surface. As leukocytes pass through the vessel, they stick slightly to these adhesion molecules, which slows them down and makes them roll along the vessel wall near the infected area. When a leukocyte reaches a cellular junction, it binds to even more adhesion molecules, flattening out and squeezing through the junction in the process called transendothelial migration.
 ===CHECKS===
 endothelial cells upregulate and express adhesion molecules and receptors in response to C5a and cytokines released near the infection
@@ -68,7 +68,7 @@ Phagocytic cells contain pattern recognition receptors (PRRs) capable of recogni
 
 **Check Your Understanding**
 
-{{< selfcheck question="Name four pathogen-associated molecular patterns (PAMPs)." hint="The module names exactly five; any four of them answer this." >}}
+{{< selfcheck question="Name four pathogen-associated molecular patterns (PAMPs)." hint="See the bulleted list in the Pathogen Recognition subsection." >}}
 The module names five PAMPs: peptidoglycan, found in bacterial cell walls; flagellin, a protein found in bacterial flagella; lipopolysaccharide (LPS), from the outer membrane of gram-negative bacteria; lipopeptides, molecules expressed by most bacteria; and nucleic acids, such as viral DNA or RNA. Any four of these five count as a correct answer.
 ===CHECKS===
 peptidoglycan, found in bacterial cell walls
@@ -78,7 +78,7 @@ lipopeptides, molecules expressed by most bacteria
 nucleic acids, such as viral DNA or RNA
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe the process of phagocyte activation." hint="Start from what binds to what on the macrophage's surface, then describe the change in the cell's behavior." >}}
+{{< selfcheck question="Describe the process of phagocyte activation." hint="See the paragraph just before the figure of pattern recognition receptors." >}}
 When PAMPs on a pathogen bind to PRRs on a macrophage, the interaction sends an intracellular signal that activates the phagocyte. This activation causes the phagocyte to transition from a dormant state of readiness and slow proliferation to a state of hyperactivity: it proliferates more quickly, produces and secretes cytokines, and kills pathogens intracellularly more effectively.
 ===CHECKS===
 the interaction between PAMPs and PRRs on a macrophage sends an intracellular signal that activates the phagocyte
@@ -106,7 +106,7 @@ Visit [this video of a phagocyte chasing and engulfing a pathogen](https://opens
 
 **Check Your Understanding**
 
-{{< selfcheck question="What is the difference between a phagosome and a lysosome?" hint="One is newly formed around the pathogen; the other already contains the enzymes that will digest it." >}}
+{{< selfcheck question="What is the difference between a phagosome and a lysosome?" hint="See the first paragraph of the Pathogen Degradation subsection." >}}
 A phagosome is the membrane vesicle formed when a phagocyte's pseudopod wraps around and pinches off around an engulfed pathogen. A lysosome is a separate vesicle that contains digestive enzymes, such as lysozyme, phospholipase, and proteases. The phagosome fuses with one or more lysosomes to form a phagolysosome, whose acidification and digestive enzymes destroy the pathogen.
 ===CHECKS===
 a phagosome is the membrane vesicle formed when a phagocyte's pseudopod wraps around and pinches off an engulfed pathogen
@@ -162,10 +162,10 @@ There are several different forms of leishmaniasis. The most common is a localiz
   question="The specific step in which a leukocyte flattens out and squeezes through a capillary's cellular junction is called ________."
   answer="transendothelial migration"
   accept="trans-endothelial migration"
-  hint="This is the final, most specific stage in the exit process — the actual squeezing through the vessel wall at a junction."
+  hint="See the end of the first paragraph of this section's first subsection."
 >}}
 
-{{< selfcheck question="Briefly summarize the events leading up to and including the process of transendothelial migration." hint="Trace the signal, the vessel wall's response, and the two stages of leukocyte sticking, in order." >}}
+{{< selfcheck question="Briefly summarize the events leading up to and including the process of transendothelial migration." hint="See the first paragraph of this section's first subsection." >}}
 Complement factor C5a and cytokines released by resident macrophages and tissue cells near an infection act on the endothelial cells lining nearby capillaries, causing them to upregulate and express various cellular adhesion molecules and receptors. As leukocytes pass through the vessel, they stick slightly to these adhesion molecules, which slows them down and makes them roll along the vessel wall near the infected area. When a rolling leukocyte reaches a cellular junction, it binds to even more adhesion molecules, flattens out, and squeezes through the junction — this final step is transendothelial migration, which lets the leukocyte exit the bloodstream and enter the infected tissue to begin phagocytosing the invading pathogens.
 ===CHECKS===
 C5a and cytokines released near the infection act on capillary endothelial cells, causing them to upregulate and express adhesion molecules and receptors
@@ -180,7 +180,7 @@ this lets the leukocyte exit the bloodstream and enter the infected tissue to be
   question="Toll-like receptors are examples of ________."
   answer="pattern-recognition receptors (PRRs)"
   accept="PRRs|pattern recognition receptors"
-  hint="This is the general class of receptor that Toll-like receptors belong to."
+  hint="See the second paragraph after the bulleted list of common PAMPs."
 >}}
 
 {{< multiplechoice
@@ -195,20 +195,9 @@ blood vessel wall
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="________ on phagocytes bind to PAMPs on bacteria, which triggers the uptake and destruction of the bacterial pathogens?"
-  answer="PRRs"
-  hint="See the paragraph just after the bulleted list of common PAMPs."
->}}
-PRRs
-AMPs
-PAMPs
-PMNs
-{{< /multiplechoice >}}
-
-{{< multiplechoice
   question="Which of the following best characterizes the mode of pathogen recognition for opsonin-dependent phagocytosis?"
   answer="A pathogen is first coated with a molecule such as a complement protein, which allows it to be recognized by phagocytes."
-  hint="Reread the sentence on opsonization at the start of the Pathogen Recognition subsection, then rule out any option describing chemotaxis or immediate cell lysis rather than recognition itself."
+  hint="See the first paragraph of the Pathogen Recognition subsection."
 >}}
 Opsonins produced by a pathogen attract phagocytes through chemotaxis.
 A PAMP on the pathogen's surface is recognized by a phagocyte's toll-like receptors.
@@ -216,26 +205,37 @@ A pathogen is first coated with a molecule such as a complement protein, which a
 A pathogen is coated with a molecule such as a complement protein that immediately lyses the cell.
 {{< /multiplechoice >}}
 
+{{< multiplechoice
+  question="________ on phagocytes bind to PAMPs on bacteria, which triggers the uptake and destruction of the bacterial pathogens?"
+  answer="PRRs"
+  hint="See the second paragraph after the bulleted list of common PAMPs."
+>}}
+PRRs
+AMPs
+PAMPs
+PMNs
+{{< /multiplechoice >}}
+
 ### Explain the process of phagocytosis and the mechanisms by which phagocytes destroy and degrade pathogens
 
 {{< textin
-  question="A phagocyte engulfs a large particle, such as a pathogen, by wrapping its membrane around the particle and pinching off a vesicle that contains it — this type of endocytosis is called ________."
+  question="A type of endocytosis in which large particles are engulfed by membrane invagination, after which the particles are enclosed in a pocket that is pinched off from the membrane to form a vacuole, is called ________."
   answer="phagocytosis"
-  hint="This is the overall name for the whole engulf-and-destroy process this section describes, not any one step of it."
+  hint="See the first sentence of the Pathogen Degradation subsection."
 >}}
 
 {{< textin
   question="The membrane-bound vesicle that first encloses a pathogen once a phagocyte's pseudopod has pinched off around it is called a ________."
   answer="phagosome"
-  hint="This vesicle exists only briefly, before it fuses with an enzyme-containing vesicle already in the cell."
+  hint="See the sentence about the pseudopod in the Pathogen Degradation subsection."
 >}}
 
 {{< textin
-  question="When a phagosome fuses with one or more lysosomes, the resulting compartment — whose acidification and digestive enzymes destroy the enclosed pathogen — is called a ________."
+  question="Phagocytes degrade pathogens through phagocytosis, which involves engulfing the pathogen, killing and digesting it within a ________, and then excreting undigested matter."
   answer="phagolysosome"
   hint="See the first paragraph of the Pathogen Degradation subsection."
 >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 17.4: Pathogen Recognition and Phagocytosis](https://openstax.org/books/microbiology/pages/17-4-pathogen-recognition-and-phagocytosis) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on the injury-site, PRR, and phagocytosis figures and `kind="photo"` on the Leishmania figure, overriding the media manifest's JPEG-based guess for the three drawn figures; the injury-site figure carries `eager="true"` as the page's first figure; a `longdesc` was added for the three diagram figures, walking each in reading order, because their labels and multi-step processes are not fully carried by the caption; the source alt for the PRR figure names only three of the figure's four labeled receptor types (lipopeptide, flagellin, and peptidoglycan) and omits the drawn and body-discussed interior nucleic acid receptor on the phagosome, and the page's own alt and longdesc include all four; the two Link to Learning boxes keep their source URLs and sentences, except the second box's anchor text is changed from the source's placeholder word "link" to a description of the video, per the site's link-text policy; the Micro Connection box ("When Phagocytosis Fails") is rendered as a callout with its figure and footnote kept in document order, the WHO leishmaniasis-factsheet footnote rendered as an inline parenthetical citation with its bare URL dropped, and the misspelled species "L. viannia brasilienfsis" corrected in place to "L. viannia brasiliensis" (an extra inserted letter), with no inline note; the extravasation subsection's "By contract, monocytes may take several days..." is corrected in place to "By contrast" (a one-word typo), with no inline note; there is no Clinical Focus box in this module, so the case begun in 17.1–17.3 is not referenced here; the five PAMPs printed as `no-emphasis` terms in the body list are transcribed unbolded, as index entries rather than key terms; key terms compiled from the module's nine defined terms and the book's Glossary appendix (all nine taken from the glossary; none sentence-derived); all four of the section's body Check Your Understanding bullets, across three boxes, are rendered as body self-checks at their notes' positions, because none is fixed by a single module sentence, table, or figure — the PAMPs bullet asks for four of a five-item list (longer than a single-answer form holds), the phagocyte-activation and phagosome-versus-lysosome bullets each need more than one module sentence assembled, and the adhesion-molecules bullet needs the whole paragraph; the module's three keyed Multiple Choice items and two keyed Fill in the Blank items keep their source options, order, and key; the module's one unkeyed Short Answer question (summarize the events leading to transendothelial migration) stays a self-check with a model answer and rubric assembled from this section's own text, because the answer spans a full paragraph rather than one sentence; the module's six source exercises are the whole of what the source keys or asks here, but they fall short of the book's nine-item practice floor, so four author-written `textin` term-recall items — one for transendothelial migration and three for phagocytosis, phagosome, and phagolysosome — are added from this section's own Key terms definitions to meet the floor, disclosed here and in the ledger; every added item is auto-graded. The Toll-like-receptor Fill in the Blank is placed first in its Practice group, ahead of the three Multiple Choice items, because the second Multiple Choice prints its key ("PRRs") as an option. No source exercise item is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 17.4: Pathogen Recognition and Phagocytosis](https://openstax.org/books/microbiology/pages/17-4-pathogen-recognition-and-phagocytosis) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all four source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on the injury-site, PRR, and phagocytosis figures and `kind="photo"` on the Leishmania figure, overriding the media manifest's JPEG-based guess for the three drawn figures; the injury-site figure carries `eager="true"` as the page's first figure; a `longdesc` was added for the three diagram figures, walking each in reading order, because their labels and multi-step processes are not fully carried by the caption; the source alt for the PRR figure names only three of the figure's four labeled receptor types (lipopeptide, flagellin, and peptidoglycan) and omits the drawn and body-discussed interior nucleic acid receptor on the phagosome, and the page's own alt and longdesc include all four; the two Link to Learning boxes keep their source URLs and sentences, except the second box's anchor text is changed from the source's placeholder word "link" to a description of the video, per the site's link-text policy; the Micro Connection box ("When Phagocytosis Fails") is rendered as a callout with its figure and footnote kept in document order, the WHO leishmaniasis-factsheet footnote rendered as an inline parenthetical citation with its bare URL dropped, and the misspelled species "L. viannia brasilienfsis" corrected in place to "L. viannia brasiliensis" (an extra inserted letter), with no inline note; the extravasation subsection's "By contract, monocytes may take several days..." is corrected in place to "By contrast" (a one-word typo), with no inline note; there is no Clinical Focus box in this module, so the case begun in 17.1–17.3 is not referenced here; the five PAMPs printed as `no-emphasis` terms in the body list are transcribed unbolded, as index entries rather than key terms; key terms compiled from the module's nine defined terms and the book's Glossary appendix (all nine taken from the glossary; none sentence-derived); all four of the section's body Check Your Understanding bullets, across three boxes, are rendered as body self-checks at their notes' positions, because none is fixed by a single module sentence, table, or figure — the PAMPs bullet asks for four of a five-item list (longer than a single-answer form holds), the phagocyte-activation and phagosome-versus-lysosome bullets each need more than one module sentence assembled, and the adhesion-molecules bullet needs the whole paragraph; the module's three keyed Multiple Choice items and two keyed Fill in the Blank items keep their source options, order, and key; the module's one unkeyed Short Answer question (summarize the events leading to transendothelial migration) stays a self-check with a model answer and rubric assembled from this section's own text, because the answer spans a full paragraph rather than one sentence; the module's six source exercises are the whole of what the source keys or asks here, but they leave the migration group at two items and the phagocytosis group at none, below the book's floor of three per objective group, so four author-written `textin` items are added: transendothelial migration and phagosome with stems built from the Extravasation and Pathogen Degradation subsections' own sentences, phagocytosis from its Key-terms definition, and phagolysosome as a cloze of the module's last Summary sentence; every added item is auto-graded. The Toll-like-receptor Fill in the Blank is placed first in its Practice group, ahead of the three Multiple Choice items, because the second Multiple Choice prints its key ("PRRs") as an option; the second and third Multiple Choice items are swapped, so the source's third ("opsonin-dependent phagocytosis") comes before its second, keeping a stem that prints "phagocytosis" away from the phagocytosis recall item that opens the next group. No source exercise item is omitted.</small>

@@ -94,7 +94,7 @@ The mucociliary escalator is such an effective barrier to microbes that the lung
 
 Like the respiratory tract, the digestive tract is a portal of entry through which microbes enter the body, and the mucous membranes lining the digestive tract provide a nonspecific physical barrier against ingested microbes. The intestinal tract is lined with epithelial cells, interspersed with mucus-secreting goblet cells (figure below). This mucus mixes with material received from the stomach, trapping foodborne microbes and debris. The mechanical action of **peristalsis**, a series of muscular contractions in the digestive tract, moves the sloughed mucus and other material through the intestines, rectum, and anus, excreting the material in feces.
 
-{{< mediafigure src="microbiology/OSC_Microbio_17_02_GobletCell" alt="Figure a is a diagram of a single goblet cell. Cell is tall and slightly hour-glass shaped. The bottom of the cell is filled with a nucleus. The top shows the Golgi apparatus (folds of membranes), rough endoplasmic reticulum (folds of membranes with dots), secretory vesicles containing mucin (large bubbles), and microvilli (finger-like projections at the top). Figure b is a micrograph of two goblet cells within a row of epithelial cells. The epithelial cells are rectangular with a large nucleus visible. The goblet cells are thinner and have a clear (uncolored) top." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_17_02_GobletCell" alt="Left, a labeled diagram of a single goblet cell: a tall, narrow cell whose lower part is filled by the nucleus; above it sit the Golgi apparatus (folds of membranes), rough endoplasmic reticulum (folds of membranes with dots), secretory vesicles containing mucin (large bubbles filling the upper cell), and microvilli (finger-like projections at the top). Right, a micrograph of a row of epithelial cells, rectangular with a large nucleus; a small arrow points to one cell with a clear (uncolored) top, and a box around another cell is linked by a curved arrow to the diagram." kind="diagram" >}}
 Goblet cells produce and secrete mucus. The arrows in this micrograph point to the mucus-secreting goblet cells (magnification 1600⨯) in the intestinal epithelium. (credit micrograph: Micrograph provided by the Regents of University of Michigan Medical School © 2012)
 {{< /mediafigure >}}
 
@@ -104,14 +104,14 @@ The epithelial cells lining the urogenital tract, blood vessels, lymphatic vesse
 
 **Check Your Understanding**
 
-{{< selfcheck question="Describe how the mucociliary escalator functions." hint="Trace the path mucus takes, from the beating motion that moves it to how the debris finally leaves the body." >}}
-The cilia of the ciliated epithelial cells lining the upper respiratory tract beat, propelling debris-laden mucus out and away from the lungs. This debris-laden mucus is then either swallowed, in which case it is destroyed in the stomach, or coughed up or sneezed out of the body.
+{{< selfcheck question="Describe how the mucociliary escalator functions." hint="See the second paragraph of the Mucous Membranes subsection and the micrograph after it." >}}
+Movement of the cilia of the ciliated epithelial cells lining the upper respiratory tract propels debris-laden mucus out and away from the lungs. The expelled mucus is then swallowed and destroyed in the stomach, or coughed up, or sneezed out.
 ===CHECKS===
-the cilia of the ciliated epithelial cells beat, propelling debris-laden mucus out and away from the lungs
+movement of the cilia of the ciliated epithelial cells propels debris-laden mucus out and away from the lungs
 the expelled mucus is swallowed and destroyed in the stomach, or coughed up, or sneezed out
 {{< /selfcheck >}}
 
-{{< selfcheck question="Name two places you would find endothelia." hint="The section names several tissues lined by these tightly packed cells, including one especially well-protected system." >}}
+{{< selfcheck question="Name two places you would find endothelia." hint="See the first two sentences of the Endothelia subsection." >}}
 Endothelia line blood vessels and lymphatic vessels; they also line the urogenital tract and other tissues, including the blood vessels of the blood-brain barrier that protect the central nervous system.
 ===CHECKS===
 endothelia line blood vessels and lymphatic vessels
@@ -128,8 +128,8 @@ Tears flush microbes away from the surface of the eye. Urine washes microbes out
 
 **Check Your Understanding**
 
-{{< selfcheck question="Name two mechanical defenses that protect the eyes." hint="One defense keeps debris from ever reaching the eye's surface; the other flushes away what gets past it." >}}
-The eyelashes and eyelids prevent dust and airborne microorganisms from reaching the surface of the eye. Any microbes or debris that get past this barrier can be flushed out by the mechanical action of blinking, which bathes the eye in tears and washes debris away.
+{{< selfcheck question="Name two mechanical defenses that protect the eyes." hint="See the last sentences of the Mechanical Defenses paragraph." >}}
+The eyelashes and eyelids prevent dust and airborne microorganisms from reaching the surface of the eye; the section counts these among the eyes' physical barriers. Any microbes or debris that get past this barrier can be flushed out by the mechanical action of blinking, which bathes the eye in tears and washes debris away.
 ===CHECKS===
 the eyelashes and eyelids prevent dust and airborne microorganisms from reaching the surface of the eye
 blinking bathes the eye in tears, washing away microbes or debris that get past the eyelashes and eyelids
@@ -153,10 +153,10 @@ The table below provides a summary of the physical defenses discussed in this se
 
 **Check Your Understanding**
 
-{{< selfcheck question="List two ways resident microbiota defend against pathogens." hint="The section names two specific things the resident microbiota compete with pathogens for." >}}
-The resident microbiota occupy cellular binding sites that a pathogen would otherwise use to attach to host tissue, and they compete with pathogens for the nutrients a pathogen needs to grow — together preventing the early steps of pathogen attachment and proliferation required to establish an infection.
+{{< selfcheck question="List two ways resident microbiota defend against pathogens." hint="See the first paragraph of the Microbiome subsection, or the table after the second paragraph." >}}
+The resident microbiota occupy cellular binding sites and compete with pathogens for available nutrients; together these prevent the critical early steps of pathogen attachment and proliferation required for the establishment of an infection.
 ===CHECKS===
-the resident microbiota occupy cellular binding sites a pathogen would otherwise use to attach
+the resident microbiota occupy cellular binding sites
 the resident microbiota compete with pathogens for available nutrients
 {{< /selfcheck >}}
 
@@ -185,7 +185,7 @@ the resident microbiota compete with pathogens for available nutrients
 {{< multiplechoice
   question="Which of the following best describes the innate nonspecific immune system?"
   answer="a generalized and nonspecific set of defenses against a class or group of pathogens"
-  hint="Nonspecific defenses act broadly rather than adapting to one target — eliminate the options that describe a targeted, adaptive, or antibody-based response."
+  hint="See the paragraph that opens the section, just after the Clinical Focus box."
 >}}
 a targeted and highly specific response to a single pathogen or molecule
 a generalized and nonspecific set of defenses against a class or group of pathogens
@@ -235,7 +235,7 @@ the urethra
   hint="See the paragraph on the digestive tract near the end of the Mucous Membranes subsection, and the figure after it."
 >}}
 
-{{< sortbins question="Sort each item below under the type of physical defense it represents." hint="Cellular barriers are structures that block pathogens from entering the body; mechanical defenses are actions that physically remove pathogens once they are present." >}}
+{{< sortbins question="Sort each item below under the type of physical defense it represents." hint="See the table at the end of the Microbiome subsection." >}}
 {"bins": ["Cellular barriers", "Mechanical defenses"],
  "items": [
   {"label": "Skin", "bin": 0},
@@ -247,14 +247,16 @@ the urethra
   {"label": "Flushing action of urine and tears", "bin": 1}]}
 {{< /sortbins >}}
 
-{{< selfcheck question="Differentiate a physical barrier from a mechanical removal mechanism and give an example of each." hint="One kind of defense blocks entry outright; the other clears out microbes that have already gotten past the first barrier." >}}
-A physical barrier is a structure that blocks microbes from reaching susceptible tissue in the first place — the skin and mucous membranes are examples, since both consist of tightly joined cells that keep microbes from crossing into deeper tissue. A mechanical defense, by contrast, physically removes microbes and debris that have already reached a body surface — the shedding of dead skin cells and the mucociliary escalator, which sweeps trapped debris out of the respiratory tract, are examples.
+{{< selfcheck question="Differentiate a physical barrier from a mechanical removal mechanism and give an example of each." hint="See the paragraph just before the Physical Barriers heading, and the first sentence of the Mechanical Defenses subsection." >}}
+Physical barriers prevent microbes from reaching tissues that are susceptible to infection; at the cellular level they consist of cells that are tightly joined to prevent invaders from crossing through to deeper tissue. The skin and mucous membranes are examples. Mechanical defenses physically remove microbes and debris from areas of the body where they might cause harm or infection. The shedding of skin cells and the expulsion of mucus via the mucociliary escalator are examples.
 ===CHECKS===
-a physical barrier blocks microbes from reaching susceptible tissue in the first place, and the skin and mucous membranes are examples
-a mechanical defense physically removes microbes and debris that have already reached a body surface, and shedding of dead skin cells and the mucociliary escalator are examples
+physical barriers prevent microbes from reaching tissues that are susceptible to infection
+the skin and mucous membranes are examples
+mechanical defenses physically remove microbes and debris from areas of the body where they might cause harm or infection
+the shedding of skin cells and the expulsion of mucus via the mucociliary escalator are examples
 {{< /selfcheck >}}
 
-{{< selfcheck question="Identify some ways that pathogens can breach the physical barriers of the innate immune system." hint="Think about what can go wrong with the skin, the cell junctions, or the mucociliary escalator." >}}
+{{< selfcheck question="Identify some ways that pathogens can breach the physical barriers of the innate immune system." hint="See the Physical Barriers section, from its opening paragraph through the Mucous Membranes subsection." >}}
 Pathogens can breach physical barriers in several ways described in this section. A break in the skin — such as the small cuts from thorns that let the fungus *Sporothrix schenkii* enter, as in the Case in Point — gives pathogens an opening past the skin barrier. Invading microorganisms may also attempt to chemically break down the proteins of cell junctions using enzymes such as proteases, creating a point of entry into tissue that is normally sealed. Disruption of the mucociliary escalator, such as from the damaging effects of smoking or diseases like cystic fibrosis, can also lead to increased bacterial colonization of the lower respiratory tract.
 ===CHECKS===
 a break in the skin, such as a small cut, lets pathogens such as *Sporothrix schenkii* enter past the skin barrier
@@ -268,7 +270,7 @@ disruption of the mucociliary escalator, such as from smoking or cystic fibrosis
   question="In the vagina, members of the resident microbiota compete with the opportunistic yeast ________ to keep its population in check."
   answer="Candida"
   accept="Candida albicans"
-  hint="This fungal genus is named in the Microbiome section as an example of a pathogen kept in check by nutrient competition."
+  hint="See the first paragraph of the Microbiome subsection."
 >}}
 
 {{< textin
@@ -278,7 +280,7 @@ disruption of the mucociliary escalator, such as from smoking or cystic fibrosis
   hint="See the last sentence of the Microbiome subsection's second paragraph."
 >}}
 
-{{< selfcheck question="Explain why treatment with antibiotics can increase a person's risk of a severe diarrheal infection such as one caused by *Clostridioides difficile*." hint="Think about what antibiotics do to the microbiota that ordinarily competes with pathogens for resources." >}}
+{{< selfcheck question="Explain why treatment with antibiotics can increase a person's risk of a severe diarrheal infection such as one caused by *Clostridioides difficile*." hint="See the second paragraph of the Microbiome subsection." >}}
 Antibiotic treatment can significantly deplete a person's normal gastrointestinal microbiota, providing an advantage for pathogenic bacteria to colonize and cause diarrheal infection. In the case of diarrhea caused by *Clostridioides difficile*, the resulting infection can be severe and potentially lethal.
 ===CHECKS===
 antibiotic treatment can significantly deplete the normal microbiota of the gastrointestinal tract
@@ -288,4 +290,4 @@ diarrhea caused by *Clostridioides difficile* can be severe and potentially leth
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 17.1: Physical Defenses](https://openstax.org/books/microbiology/pages/17-1-physical-defenses) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all six source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on the cell-junction, skin-layer, goblet-cell, and eye/urinary-tract figures and `kind="photo"` on the rose-gardener's-disease and cilia micrographs, overriding the media manifest's JPEG-based photo guess for the four drawn figures; the cell-junction figure carries `eager="true"` as the page's first figure; the eye/urinary-tract figure's source alt is corrected from "shows a larger kidney are ureter" to "shows a larger kidney and ureter," a one-word typo; feature boxes rendered as callouts, with the Clinical Focus box's closing questions kept as unanswered plain bullets and its "Jump to the next Clinical Focus box" link replaced by a Markdown link to Section 17.2 (this run's own route, not yet on disk at authoring time); the Case in Point box is transcribed in the source's own document order, with its figure placed after all three paragraphs; the two summary-attribute tables are transcribed as Markdown from the CNXML cells, checked against the PDF: the chapter-opening "Overview of Nonspecific Innate Immune Defenses" table is a whole-chapter recap and is transcribed only, with no sortbins built for it, per this run's rule that a chapter- or section-level recap table is transcribed, never sorted; the "Physical Defenses of Nonspecific Innate Immunity" table's Cellular-barriers and Mechanical-defenses rows also became a two-bin `sortbins` in Practice, with its one-item Microbiome row transcribed in the table but left out of the bins, since a one-item bin is not a sort; all four of the section's body Check Your Understanding bullets are rendered as body self-checks at their note's position, because each asks for two named items or an open process description that this module states across more than one sentence, rather than a single fact one module sentence fixes; the source's three Multiple Choice items keep their source options, order, and key; its three Fill in the Blank items are rendered as `textin` with their source keys; both Short Answer questions (the source prints no key for either) stay self-checks with author-written model answers and rubrics assembled from this section's own text, since one asks for two things at once and the other has no single sentence that names every way a pathogen can breach a physical barrier; three filler items (two `textin` and one `selfcheck`) are added to the section's second objective group, since no source exercise, Check Your Understanding bullet, or key term addresses the role of the microbiome — each is built from a single sentence or two adjacent sentences of this module's Microbiome section and disclosed in the source ledger. No source exercise item is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 17.1: Physical Defenses](https://openstax.org/books/microbiology/pages/17-1-physical-defenses) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all six source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on the cell-junction, skin-layer, goblet-cell, and eye/urinary-tract figures and `kind="photo"` on the rose-gardener's-disease and cilia micrographs, overriding the media manifest's JPEG-based photo guess for the four drawn figures; the cell-junction figure carries `eager="true"` as the page's first figure; the eye/urinary-tract figure's source alt is corrected from "shows a larger kidney are ureter" to "shows a larger kidney and ureter," a one-word typo; the goblet-cell figure's alt is rewritten from the image, since the source alt calls its two panels "Figure a" and "Figure b" but the artwork letters neither; feature boxes rendered as callouts, with the Clinical Focus box's closing questions kept as unanswered plain bullets and its "Jump to the next Clinical Focus box" link replaced by a Markdown link to Section 17.2; the Case in Point box is transcribed in the source's own document order, with its figure placed after all three paragraphs; the two summary-attribute tables are transcribed as Markdown from the CNXML cells, checked against the PDF: the chapter-opening "Overview of Nonspecific Innate Immune Defenses" table is a whole-chapter recap and is transcribed only, with no sortbins built for it, since a chapter-level recap table is transcribed rather than sorted; the "Physical Defenses of Nonspecific Innate Immunity" table's Cellular-barriers and Mechanical-defenses rows also became a two-bin `sortbins` in Practice, with its one-item Microbiome row transcribed in the table but left out of the bins, since a one-item bin is not a sort; all four of the section's body Check Your Understanding bullets are rendered as body self-checks at their note's position, since each asks for an open list of two items or a process description rather than a single fact; the source's three Multiple Choice items keep their source options, order, and key; its three Fill in the Blank items are rendered as `textin` with their source keys; both Short Answer questions (the source prints no key for either) stay self-checks with author-written model answers and rubrics assembled from this section's own text, since one asks for two things at once and the other has no single sentence that names every way a pathogen can breach a physical barrier; three filler items (two `textin` and one `selfcheck`) are added to the section's second objective group, since no source exercise or key term addresses the role of the microbiome — each is built from a single sentence or two adjacent sentences of this module's Microbiome subsection. No source exercise item is omitted.</small>

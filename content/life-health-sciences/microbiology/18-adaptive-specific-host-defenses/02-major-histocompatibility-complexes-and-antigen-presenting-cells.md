@@ -35,7 +35,7 @@ MHC I are found on all nucleated body cells, and MHC II are found on macrophages
 
 **Check Your Understanding**
 
-{{< sortbins question="Compare the structures of the MHC I and MHC II molecules. Sort each phrase below under the class it describes." hint="Look at which chain(s) span the plasma membrane, how many separate domains each class folds into, and which cells display each class." >}}
+{{< sortbins question="Compare the structures of the MHC I and MHC II molecules. Sort each phrase below under the class it describes." hint="See the two paragraphs that introduce the two classes of MHC molecules and their structures, and the figure after them." >}}
 {"bins": ["MHC I", "MHC II"],
  "items": [
   {"label": "A single α chain spans the plasma membrane", "bin": 0},
@@ -70,21 +70,21 @@ APCs do not present all possible epitopes to T cells; only a selection of the mo
 
 **Check Your Understanding**
 
-{{< multiplechoice question="What are the three kinds of antigen-presenting cells named in this section?" answer="macrophages, dendritic cells, and B cells" hint="See the first paragraph of the section that follows the MHC structure comparison." >}}
-macrophages, dendritic cells, and T cells
-macrophages, dendritic cells, and B cells
-macrophages, NK cells, and B cells
-red blood cells, dendritic cells, and B cells
-{{< /multiplechoice >}}
-
-{{< multiplechoice question="What role do MHC II molecules play in antigen presentation?" answer="presenting pathogen antigens to activate T cells" hint="Look at the sentence contrasting what MHC I versus MHC II molecules present, and to which immune step each presentation leads." >}}
+{{< multiplechoice question="What role do MHC II molecules play in antigen presentation?" answer="presenting pathogen antigens to activate T cells" hint="See the paragraph that introduces the two classes of MHC molecules." >}}
 producing and secreting antibodies
 degrading pathogens within the phagolysosome
 presenting pathogen antigens to activate T cells
 signaling NK cells that a cell is normal and “self”
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="What is the role of antigen presentation in adaptive immunity?" answer="it is a critical step in the activation of T cells" hint="This is stated in the section's opening paragraph, describing what MHC-mediated antigen presentation makes possible for the adaptive immune system." >}}
+{{< multiplechoice question="What are the three kinds of APCs?" answer="macrophages, dendritic cells, and B cells" hint="See the first paragraph of the section that follows the MHC structure comparison." >}}
+macrophages, dendritic cells, and T cells
+macrophages, dendritic cells, and B cells
+macrophages, NK cells, and B cells
+red blood cells, dendritic cells, and B cells
+{{< /multiplechoice >}}
+
+{{< multiplechoice question="What is the role of antigen presentation in adaptive immunity?" answer="it is a critical step in the activation of T cells" hint="See the opening paragraph of this section." >}}
 it is a critical step in the activation of T cells
 it directly destroys the pathogen without involving T cells
 it triggers B cells to secrete antibodies directly
@@ -99,7 +99,7 @@ Before elimination of infected cells can begin, APCs must first activate the T c
 
 **Check Your Understanding**
 
-{{< selfcheck question="Compare and contrast antigen processing and presentation associated with MHC I and MHC II molecules." hint="Walk through each pathway separately: what triggers it, which enzyme complex or organelle processes the antigen, and which T cells respond." >}}
+{{< selfcheck question="Compare and contrast antigen processing and presentation associated with MHC I and MHC II molecules." hint="See the subsections on antigen presentation with MHC II and with MHC I molecules." >}}
 MHC I presentation processes antigens found in the cytoplasm: proteasomes degrade proteins into self-antigen epitopes, which bind within the MHC I antigen-binding cleft and are presented on the surface of any nucleated cell, signaling to immune cells such as NK cells that the cell is normal; if the cell is infected by an intracellular pathogen such as a virus, pathogen-specific antigens are processed the same way and presented on MHC I instead, marking the infected cell for destruction. MHC II presentation instead follows phagocytosis: an antigen-presenting cell such as a dendritic cell engulfs a pathogen into a phagosome, lysosomes fuse with it to form a phagolysosome, proteases degrade the pathogen, and the most antigenic, immunodominant epitopes are selected, associated with MHC II in the antigen-binding cleft, and presented on the APC's surface for recognition by T cells. Except in cross-presentation, MHC I presentation processes a cell's own cytoplasmic antigens on any nucleated cell, while MHC II presentation processes phagocytosed antigens and is limited to antigen-presenting cells.
 ===CHECKS===
 MHC I: proteasomes degrade cytoplasmic proteins into self-antigen epitopes, presented on the surface of any nucleated cell
@@ -109,7 +109,7 @@ MHC II: the most antigenic, immunodominant epitopes are selected and presented w
 MHC I presents a cell's own cytoplasmic antigens on any nucleated cell, while MHC II presents phagocytosed antigens only on antigen-presenting cells
 {{< /selfcheck >}}
 
-{{< selfcheck question="What is cross-presentation, and when is it likely to occur?" hint="Name the alternative MHC pathway dendritic cells use, and the one condition under which they must use it instead of the ordinary MHC I route." >}}
+{{< selfcheck question="What is cross-presentation, and when is it likely to occur?" hint="See the second paragraph of the subsection on MHC I molecules." >}}
 Cross-presentation is an alternative strategy for presenting antigens on MHC I: antigens are brought into the antigen-presenting cell by mechanisms that normally lead to MHC II presentation (that is, through phagocytosis), but the antigen is presented on an MHC I molecule for CD8 T cells instead. It is likely to occur when an intracellular pathogen does not directly infect the antigen-presenting cell itself, so the APC cannot process the pathogen's antigens in its own cytoplasm and present them on MHC I as described for an infected cell; cross-presentation is primarily a function of dendritic cells, not macrophages or B cells.
 ===CHECKS===
 antigens are brought into the APC by phagocytosis, the route that normally leads to MHC II presentation
@@ -138,7 +138,7 @@ cross-presentation is primarily a function of dendritic cells, not macrophages o
 
 ### Identify cells that express MHC I and/or MHC II molecules and describe the structures and cellular location of MHC I and MHC II molecules
 
-{{< multiplechoice question="Which type of antigen-presenting molecule is found on all nucleated cells?" answer="MHC I" hint="This class is present on every cell type except mature red blood cells, which lack a nucleus." >}}
+{{< multiplechoice question="Which type of antigen-presenting molecule is found on all nucleated cells?" answer="MHC I" hint="See the paragraph that introduces the two classes of MHC molecules." >}}
 MHC II
 MHC I
 antibodies
@@ -161,12 +161,6 @@ B-cell receptors
 
 ### Identify the cells that are antigen-presenting cells
 
-{{< textin
-  question="Macrophages and ________ are phagocytes that ingest and kill pathogens that penetrate the skin and mucous membranes, according to this section."
-  answer="dendritic cells"
-  hint="See the second paragraph of the section that follows the MHC structure comparison, or the phagocytosis figure after it."
->}}
-
 {{< multiplechoice question="According to this section, what do B cells use as receptors to interact with foreign pathogens or their free antigens?" answer="antigen-specific immunoglobulin (monomeric IgD and IgM)" hint="See the paragraph that contrasts how the three kinds of cells recognize pathogens." >}}
 toll-like receptors that bind PAMPs
 antigen-specific immunoglobulin (monomeric IgD and IgM)
@@ -174,13 +168,26 @@ receptors for opsonizing complement or antibody
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Macrophages, dendritic cells, and B cells are collectively called ________ because they can present antigens to activate T cells."
+  question="Macrophages and ________ are phagocytes that ingest and kill pathogens that penetrate the skin and mucous membranes, according to this section."
+  answer="dendritic cells"
+  hint="See the second paragraph of the section that follows the MHC structure comparison."
+>}}
+
+{{< textin
+  question="The cells that have the ability to display antigens specifically for the purpose of activating T cells are sometimes referred to as ________."
   answer="antigen-presenting cells"
   accept="APCs|antigen-presenting cells (APCs)"
   hint="See the first paragraph of the section that follows the MHC structure comparison."
 >}}
 
 ### Describe the process of antigen processing and presentation with MHC I and MHC II
+
+{{< textin
+  question="MHC molecules are used for antigen ________ to T cells."
+  answer="presentation"
+  accept="antigen presentation"
+  hint="See the opening paragraph of this section."
+>}}
 
 {{< multiplechoice
   question="MHC I molecules present"
@@ -204,12 +211,6 @@ antibodies.
 T cell receptors.
 {{< /multiplechoice >}}
 
-{{< textin
-  question="MHC molecules are used for antigen ________ to T cells."
-  answer="presentation"
-  hint="See the opening paragraph of this section."
->}}
-
 {{< multiplechoice question="Which mechanism of antigen presentation would be used to present antigens from a cell infected with a virus?" answer="MHC I" hint="Compare the subsections on MHC I and MHC II molecules and ask where each one's antigens come from." >}}
 MHC I
 MHC II
@@ -226,4 +227,4 @@ neither
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 18.2: Major Histocompatibility Complexes and Antigen-Presenting Cells](https://openstax.org/books/microbiology/pages/18-2-major-histocompatibility-complexes-and-antigen-presenting-cells) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: both source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set explicitly on both, overriding the media manifest's JPEG-based "photo" guess, since each is a labeled drawing rather than a photograph; the MHC-binding figure carries `eager="true"` as the page's first figure; a `longdesc` was added to both figures, walking each in reading order, because their domain labels (MHC-binding figure) and three numbered steps (phagocytosis figure) are not fully carried by the caption; the cross-references to "Cellular Defenses" (m58879, this run's own Section 17.3) and "B Lymphocytes and Humoral Immunity" (m58887, this run's own Section 18.4) are rendered as absolute site-root Markdown links to this run's fixed slugs, even though neither page was on disk at authoring time; three one-word source typos are corrected in place with no inline note, per this book's typo rule — the Check Your Understanding bullet "What role to MHC II molecules play in antigen presentation?" is corrected to "do"; "before processing and presentting the antigen to T cells" is corrected to "presenting";. One factual claim is also corrected, with a visible Source note beside it: the module's sentence on MHC I presentation reads "abnormal or nonself pathogens," while its own parallel clause for MHC II and the very next paragraph's description of the antigen-binding cleft both say "antigens" — the page corrects MHC I's clause to "antigens" as well, consistent with the module's own usage elsewhere. All 6 of the section's body Check Your Understanding bullets are rendered as body items at their note's position: the "compare the structures" bullet is graded as a `sortbins` (the module's own structural description of each class, drawn from this section's text and figure, sorts cleanly into two bins with five items apiece); the three bullets asking the three kinds of APCs, MHC II's role, and antigen presentation's role in adaptive immunity are each graded as a `multiplechoice` keyed to a single sentence of this section, with distractors built from other cell types, functions, or processes this section itself names; the two bullets asking for a full MHC I/MHC II comparison and for a definition-plus-condition of cross-presentation each need several sentences assembled and stay `selfcheck`s with model answers and rubrics built only from this section's own text. Of the module's two unkeyed Critical Thinking questions, both are graded as `multiplechoice` (MHC I / MHC II / both MHC I and MHC II / neither), each keyed to the one sentence naming which MHC class handles that infection route — no Short Answer questions exist in this module, and no source exercise is omitted. The module's 4 keyed Multiple Choice items keep their source options, order, and key (subject to the one-word correction above); its 2 keyed Fill in the Blank items are rendered as `textin`, the β₂ microglobulin item's answer set as the source's own Unicode-subscript spelling (which the grader already reads as correct without listing) with `accept` covering only the two spelled-out forms ("beta-2 microglobulin", "beta2 microglobulin") that the grader would otherwise miss — a third form ("β2 microglobulin", plain digit) is not listed because it normalizes identically to the keyed answer and the exercise lint rejects a redundant accept member. Three author-written filler items (two `textin` term recalls and one `multiplechoice`) are added under the "antigen-presenting cells" objective, which the source's own exercise sets leave empty, each built from a single sentence of this section; the `multiplechoice` asks what B cells use as receptors, from the sentence contrasting how macrophages and dendritic cells and how B cells recognize pathogens, with the two nonspecific receptor kinds that sentence names as distractors. Key terms are compiled from the module's 6 class-less defined-term elements and the book's Glossary appendix, rendered as 5 bullets: "major histocompatibility complex" and its abbreviation "MHC" are two elements naming one concept and merge into a single name+abbreviation bullet, per this book's rule for a name and its abbreviation marked as separate `<term>` elements. All 5 bullets are glossary-sourced, including "MHC I" and "MHC II," which are matched to the appendix's "MHC I molecule" and "MHC II molecule" headwords (a same-entry judgment call, since the two differ only by the added generic word "molecule" and the appendix does not define a different sense of either term). This module has no `<table>` element and no feature box (no Clinical Focus, no Micro Connection, no Link to Learning), so none is rendered; the MHCbind figure's source alt says MHC II molecules are found in lymphocytes and macrophages, contradicting this section's own sentence that they are found only on macrophages, dendritic cells, and B cells, so the alt follows the body prose and the artwork's own label.</small>
+<small>This section is adapted from [Microbiology, Section 18.2: Major Histocompatibility Complexes and Antigen-Presenting Cells](https://openstax.org/books/microbiology/pages/18-2-major-histocompatibility-complexes-and-antigen-presenting-cells) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: both source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set explicitly on both, overriding the media manifest's JPEG-based "photo" guess, since each is a labeled drawing rather than a photograph; the MHC-binding figure carries `eager="true"` as the page's first figure; a `longdesc` was added to both figures, walking each in reading order, because their domain labels (MHC-binding figure) and three numbered steps (phagocytosis figure) are not fully carried by the caption; the cross-references to "Cellular Defenses" (m58879, this run's own Section 17.3) and "B Lymphocytes and Humoral Immunity" (m58887, this run's own Section 18.4) are rendered as absolute site-root Markdown links to this run's fixed slugs, even though neither page was on disk at authoring time; two one-word source typos are corrected in place with no inline note, per this book's typo rule — the Check Your Understanding bullet "What role to MHC II molecules play in antigen presentation?" is corrected to "do"; "before processing and presentting the antigen to T cells" is corrected to "presenting". One factual claim is also corrected, with a visible Source note beside it: the module's sentence on MHC I presentation reads "abnormal or nonself pathogens," while its own parallel clause for MHC II and the very next paragraph's description of the antigen-binding cleft both say "antigens" — the page corrects MHC I's clause to "antigens" as well, consistent with the module's own usage elsewhere. All 6 of the section's body Check Your Understanding bullets are rendered as body items at their note's position: the "compare the structures" bullet is graded as a `sortbins` (the module's own structural description of each class, drawn from this section's text and figure, sorts cleanly into two bins with five items apiece); the three bullets asking the three kinds of APCs, MHC II's role, and antigen presentation's role in adaptive immunity are each graded as a `multiplechoice` keyed to a single sentence of this section, with distractors built from other cell types, functions, or processes this section itself names, and the MHC II bullet is placed first of the three, ahead of the APC bullet, so that its key ("presenting pathogen antigens to activate T cells") does not sit directly above the antigen-presentation bullet it answers; the two bullets asking for a full MHC I/MHC II comparison and for a definition-plus-condition of cross-presentation each need several sentences assembled and stay `selfcheck`s with model answers and rubrics built only from this section's own text. Of the module's two unkeyed Critical Thinking questions, both are graded as `multiplechoice` (MHC I / MHC II / both MHC I and MHC II / neither), each keyed to the one sentence naming which MHC class handles that infection route — no Short Answer questions exist in this module, and no source exercise is omitted. The module's 4 keyed Multiple Choice items keep their source options, order, and key (subject to the one-word correction above); its 2 keyed Fill in the Blank items are rendered as `textin`, the β₂ microglobulin item's answer set as the source's own Unicode-subscript spelling (which the grader already reads as correct without listing) with `accept` covering the four forms the grader would otherwise miss ("beta-2 microglobulin", "beta2 microglobulin", the CNXML's spaced "β 2 microglobulin", and "b2 microglobulin") — "β2 microglobulin" (plain digit) is not listed because it normalizes identically to the keyed answer and the exercise lint rejects a redundant accept member; the antigen-presentation Fill in the Blank is placed first in its group, ahead of the two source Multiple Choice items whose stems print "present". Three author-written filler items (two `textin` term recalls and one `multiplechoice`) are added under the "antigen-presenting cells" objective, which the source's own exercise sets leave empty, each built from a single sentence of this section; the `multiplechoice` asks what B cells use as receptors, from the sentence contrasting how macrophages and dendritic cells and how B cells recognize pathogens, with the two nonspecific receptor kinds that sentence names as distractors; it precedes the two `textin` items so that neither sits under a stem printing the other's key, and the "antigen-presenting cells" recall is worded from the sentence that names APCs, with "display" for its "present" and without listing the three cell types. Key terms are compiled from the module's 6 class-less defined-term elements and the book's Glossary appendix, rendered as 5 bullets: "major histocompatibility complex" and its abbreviation "MHC" are two elements naming one concept and merge into a single name+abbreviation bullet, per this book's rule for a name and its abbreviation marked as separate `<term>` elements. All 5 bullets are glossary-sourced, including "MHC I" and "MHC II," which are matched to the appendix's "MHC I molecule" and "MHC II molecule" headwords (a same-entry judgment call, since the two differ only by the added generic word "molecule" and the appendix does not define a different sense of either term). This module has no `<table>` element and no feature box (no Clinical Focus, no Micro Connection, no Link to Learning), so none is rendered; the MHCbind figure's source alt says MHC II molecules are found in lymphocytes and macrophages, contradicting this section's own sentence that they are found only on macrophages, dendritic cells, and B cells, so the alt follows the body prose and the artwork's own label.</small>

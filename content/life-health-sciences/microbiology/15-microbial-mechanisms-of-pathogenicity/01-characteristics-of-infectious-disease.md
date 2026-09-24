@@ -64,14 +64,14 @@ Finally, some diseases may be **asymptomatic** or **subclinical**, meaning they 
 
 **Check Your Understanding**
 
-{{< sortbins question="Explain the difference between signs and symptoms by sorting each phrase under the one it describes." hint="Ask whether a clinician could measure it directly, or whether only the patient can report it." >}}
+{{< sortbins question="Explain the difference between signs and symptoms by sorting each phrase under the one it describes." hint="Reread the Signs and Symptoms of Disease paragraphs that define each term." >}}
 {"bins": ["Sign", "Symptom"],
  "items": [
   {"label": "Objective and measurable", "bin": 0},
   {"label": "Subjective, and cannot be clinically confirmed or objectively measured", "bin": 1},
   {"label": "Directly observed by a clinician, such as a measured fever", "bin": 0},
   {"label": "Felt or experienced by the patient, such as nausea or pain", "bin": 1},
-  {"label": "Recorded among the body's vital signs, such as heart rate or blood pressure", "bin": 0},
+  {"label": "A change in body temperature, heart rate, or blood pressure", "bin": 0},
   {"label": "Reported by the patient rather than measured by a clinician", "bin": 1}]}
 {{< /sortbins >}}
 
@@ -115,7 +115,7 @@ Lists of common infectious diseases can be found at the [Centers for Disease Con
 
 **Check Your Understanding**
 
-{{< selfcheck question="Describe how a disease can be infectious but not contagious." hint="Think about the difference between a communicable disease that spreads only with difficulty and a noncommunicable disease that never spreads between people at all." >}}
+{{< selfcheck question="Describe how a disease can be infectious but not contagious." hint="Reread the Classifications of Disease paragraphs on contagious diseases and on noncommunicable infectious diseases." >}}
 An infectious disease is any disease caused by the direct effect of a pathogen; it is contagious only if it is easily spread from person to person. Gonorrhea, for example, is a communicable disease — capable of being spread from person to person — but it is not very contagious, because transmission of *Neisseria gonorrhoeae* requires close intimate contact between an infected person and an uninfected person. A noncommunicable infectious disease, such as tetanus, is infectious but not contagious at all: it is caused by a pathogen, but it is typically only transmitted through contact with a skin wound and cannot be passed from an infected person to another person.
 ===CHECKS===
 capable of being spread from person to person
@@ -124,14 +124,14 @@ typically only transmitted through contact with a skin wound
 cannot be passed from an infected person to another person
 {{< /selfcheck >}}
 
-{{< sortbins question="Explain the difference between iatrogenic disease and nosocomial disease by sorting each phrase under the one it describes." hint="Ask whether the cause is the medical procedure itself, or the hospital setting where the patient happens to be." >}}
+{{< sortbins question="Explain the difference between iatrogenic disease and nosocomial disease by sorting each phrase under the one it describes." hint="Reread the two Classifications of Disease paragraphs that follow the discussion of contagious diseases." >}}
 {"bins": ["Iatrogenic disease", "Nosocomial disease"],
  "items": [
   {"label": "Contracted as the direct result of a medical procedure", "bin": 0},
   {"label": "Acquired in a hospital setting", "bin": 1},
   {"label": "Can follow a wound treatment, catheterization, or surgery whose site becomes contaminated", "bin": 0},
   {"label": "Can spread via improperly sterilized equipment, bed sheets, or call buttons", "bin": 1},
-  {"label": "The infection follows directly from the treatment itself, not from the setting", "bin": 0},
+  {"label": "Example: necrotizing fasciitis after a treated skin wound's dressings become contaminated", "bin": 0},
   {"label": "More likely because many hospital patients have weakened immune systems", "bin": 1}]}
 {{< /sortbins >}}
 
@@ -139,7 +139,7 @@ cannot be passed from an infected person to another person
 
 The five periods of disease (sometimes referred to as stages or phases) include the incubation, prodromal, illness, decline, and convalescence periods (see the graph below). The **incubation period** occurs in an acute disease after the initial entry of the pathogen into the host (patient). It is during this time the pathogen begins multiplying in the host. However, there are insufficient numbers of pathogen particles (cells or viruses) present to cause signs and symptoms of disease. Incubation periods can vary from a day or two in acute disease to months or years in chronic disease, depending upon the pathogen. Factors involved in determining the length of the incubation period are diverse, and can include strength of the pathogen, strength of the host immune defenses, site of infection, type of infection, and the size infectious dose received. During this incubation period, the patient is unaware that a disease is beginning to develop.
 
-{{< mediafigure src="microbiology/OSC_Microbio_15_01_Stages" alt="A line graph titled Periods of Disease plotting pathogen particle count (red line) and symptom severity (blue line) against time, both curves rising and falling together in a bell shape across five labeled periods: incubation, prodromal, illness, decline, and convalescence." kind="diagram" longdesc="The x-axis is time, and there are two y-axes, one titled Number of pathogen particles (red line) and the other titled Severity of symptoms (blue line), both unscaled. Reading left to right: during the incubation period the blue line is flat at the baseline while the red line, still low, is already rising slowly. At the start of the prodromal period the blue line begins rising, and the red pathogen line keeps climbing a little ahead of it. During the period of illness both lines climb to their highest point together, at the boundary with the period of decline. During the period of decline both lines fall together. Early in the period of convalescence the blue symptom-severity line reaches zero; the red pathogen-count line keeps falling after that, but it is still visibly above the axis, not yet at zero, when the graph ends — showing that pathogens can still be present even after symptoms are gone." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_15_01_Stages" alt="A line graph titled Periods of Disease plotting pathogen particle count (red line) and symptom severity (blue line) against time, both curves rising and falling together in a bell shape across five labeled periods: incubation, prodromal, illness, decline, and convalescence." kind="diagram" longdesc="The x-axis is time, and there are two y-axes, one titled Number of pathogen particles (red line) and the other titled Severity of symptoms (blue line), both unscaled. Reading left to right: during the incubation period the blue line is flat at the baseline while the red line, still low, is already rising slowly. At the start of the prodromal period the blue line begins rising, and the red pathogen line keeps climbing a little ahead of it. During the period of illness both lines climb steeply. The blue symptom-severity line reaches its highest point at the boundary with the period of decline and stays level there briefly, while the red pathogen line peaks just after that boundary. Both lines then fall together through the period of decline. Early in the period of convalescence the blue symptom-severity line reaches zero; the red pathogen-count line keeps falling after that, but it is still visibly above the axis, not yet at zero, when the graph ends — showing that pathogens can still be present even after symptoms are gone." >}}
 The progression of an infectious disease can be divided into five periods, which are related to the number of pathogen particles (red) and the severity of signs and symptoms (blue).
 {{< /mediafigure >}}
 
@@ -151,7 +151,7 @@ Infectious diseases can be contagious during all five of the periods of disease.
 
 **Check Your Understanding**
 
-{{< selfcheck question="Name some of the factors that can affect the length of the incubation period of a particular disease." hint="The module names several factors together in one sentence; recall as many as you can." >}}
+{{< selfcheck question="Name some of the factors that can affect the length of the incubation period of a particular disease." hint="Reread the first paragraph of the Periods of Disease subsection." >}}
 Factors involved in determining the length of the incubation period are diverse, and can include the strength of the pathogen, the strength of the host's immune defenses, the site of infection, the type of infection, and the size of the infectious dose received.
 ===CHECKS===
 strength of the pathogen
@@ -171,15 +171,15 @@ In **latent diseases**, as opposed to chronic infections, the causal pathogen go
 
 **Check Your Understanding**
 
-{{< sortbins question="Explain the difference between latent disease and chronic disease by sorting each phrase under the one it describes." hint="Ask whether the pathogen keeps actively multiplying the whole time, or goes dormant in between." >}}
+{{< sortbins question="Explain the difference between latent disease and chronic disease by sorting each phrase under the one it describes." hint="Reread the Acute and Chronic Diseases paragraphs on chronic disease and on latent disease." >}}
 {"bins": ["Latent disease", "Chronic disease"],
  "items": [
   {"label": "Pathologic changes occur over months, years, or a lifetime", "bin": 1},
   {"label": "The causal pathogen goes dormant, with no active replication", "bin": 0},
   {"label": "The pathogen continues active production of infectious virus, as with hepatitis B", "bin": 1},
-  {"label": "Can reactivate years later during stress or immunosuppression, as with shingles", "bin": 0},
-  {"label": "Example: gastritis caused by a bacterium that persists indefinitely in the stomach's acid", "bin": 1},
-  {"label": "Example: a childhood infection followed by shingles decades later", "bin": 0}]}
+  {"label": "Can reactivate during times of stress and immunosuppression", "bin": 0},
+  {"label": "Example: gastritis caused by *Helicobacter pylori*", "bin": 1},
+  {"label": "Example: childhood chickenpox followed by shingles decades later", "bin": 0}]}
 {{< /sortbins >}}
 
 ## Summary
@@ -223,15 +223,15 @@ In **latent diseases**, as opposed to chronic infections, the causal pathogen go
 ### Distinguish between signs and symptoms of disease
 
 {{< textin
-  question="The objective and measurable indication of a disease that can be directly observed by a clinician is called a ________."
-  answer="sign"
-  hint="Reread the second paragraph of the section's first subsection."
+  question="A specific group of signs and symptoms characteristic of a particular disease is called a ________."
+  answer="syndrome"
+  hint="Reread the paragraph just above the Nomenclature of Symptoms table."
 >}}
 
 {{< multiplechoice
   question="Which of the following would be a sign of an infection?"
   answer="fever"
-  hint="Which option can a clinician measure directly, rather than the patient merely feeling it?"
+  hint="Reread the Signs and Symptoms of Disease paragraphs on signs and on symptoms."
 >}}
 muscle aches
 headache
@@ -239,7 +239,7 @@ fever
 nausea
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Brian goes to the hospital after not feeling well for a week. He has a fever of 38 °C (100.4 °F) and complains of nausea and a constant migraine. Distinguish between the signs and symptoms of disease in Brian's case." hint="Ask which of Brian's complaints a clinician could measure directly, and which only Brian himself can report." >}}
+{{< selfcheck question="Brian goes to the hospital after not feeling well for a week. He has a fever of 38 °C (100.4 °F) and complains of nausea and a constant migraine. Distinguish between the signs and symptoms of disease in Brian's case." hint="Reread the Signs and Symptoms of Disease subsection's second and fourth paragraphs." >}}
 Brian's fever is a sign of disease: it is objective and measurable, and can be directly observed by a clinician with a thermometer. His nausea and migraine are symptoms: they are subjective, felt or experienced by Brian himself, and cannot be clinically confirmed or objectively measured.
 ===CHECKS===
 objective and measurable
@@ -251,28 +251,6 @@ cannot be clinically confirmed or objectively measured
 
 ### Explain the difference between a communicable disease and a noncommunicable disease
 
-{{< multiplechoice
-  question="Which of the following is an example of a noncommunicable infectious disease?"
-  answer="food poisoning due to a preformed bacterial toxin in food"
-  hint="Which of these is not spread from an infected person to another person?"
->}}
-infection with a respiratory virus
-food poisoning due to a preformed bacterial toxin in food
-skin infection acquired from a dog bite
-infection acquired from the stick of a contaminated needle
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="A communicable disease that can be easily transmitted from person to person is which type of disease?"
-  answer="contagious"
-  hint="This is the disease type that spreads especially easily from person to person."
->}}
-contagious
-iatrogenic
-acute
-nosocomial
-{{< /multiplechoice >}}
-
 {{< textin
   question="A person steps on a rusty nail and develops tetanus. In this case, the person has acquired a(n) ________ disease."
   answer="noncommunicable"
@@ -280,7 +258,36 @@ nosocomial
   hint="Reread the Classifications of Disease paragraph that gives tetanus as its example."
 >}}
 
+{{< multiplechoice
+  question="Which of the following is an example of a noncommunicable infectious disease?"
+  answer="food poisoning due to a preformed bacterial toxin in food"
+  hint="Reread the Classifications of Disease paragraph that gives tetanus and Legionnaires disease as its examples."
+>}}
+infection with a respiratory virus
+food poisoning due to a preformed bacterial toxin in food
+gonorrhea acquired through intimate contact with an infected person
+infection acquired from the stick of a contaminated needle
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="A communicable disease that can be easily transmitted from person to person is which type of disease?"
+  answer="contagious"
+  hint="Reread the second paragraph of the Classifications of Disease subsection."
+>}}
+contagious
+iatrogenic
+acute
+nosocomial
+{{< /multiplechoice >}}
+
 ### Compare different types of infectious diseases, including iatrogenic, nosocomial, and zoonotic diseases
+
+{{< textin
+  question="According to WHO, a disease that occurs when a pathogen is transferred from a vertebrate animal to a human is a ________."
+  answer="zoonosis"
+  accept="zoonoses|zoonotic disease"
+  hint="Reread the Classifications of Disease paragraph that gives rabies as its example."
+>}}
 
 {{< multiplechoice
   question="During an oral surgery, the surgeon nicked the patient's gum with a sharp instrument. This allowed *Streptococcus*, a bacterium normally present in the mouth, to gain access to the blood. As a result, the patient developed bacterial endocarditis (an infection of the heart). Which type of disease is this?"
@@ -293,7 +300,7 @@ vectors
 zoonotic
 {{< /multiplechoice >}}
 
-{{< selfcheck question="In July 2015, a report (C. Owens, 'P. aeruginosa survives in sinks 10 years after hospital outbreak,' 2015) was released indicating the gram-negative bacterium *Pseudomonas aeruginosa* was found on hospital sinks 10 years after the initial outbreak in a neonatal intensive care unit. *P. aeruginosa* usually causes localized ear and eye infections but can cause pneumonia or septicemia in vulnerable individuals like newborn babies. Explain how the current discovery of the presence of this reported *P. aeruginosa* could lead to a recurrence of nosocomial disease." hint="Think about how the module describes pathogens spreading inside a hospital, and who is most at risk there." >}}
+{{< selfcheck question="In July 2015, a report (C. Owens, 'P. aeruginosa survives in sinks 10 years after hospital outbreak,' 2015) was released indicating the gram-negative bacterium *Pseudomonas aeruginosa* was found on hospital sinks 10 years after the initial outbreak in a neonatal intensive care unit. *P. aeruginosa* usually causes localized ear and eye infections but can cause pneumonia or septicemia in vulnerable individuals like newborn babies. Explain how the current discovery of the presence of this reported *P. aeruginosa* could lead to a recurrence of nosocomial disease." hint="Reread the Classifications of Disease paragraph on diseases acquired in hospital settings." >}}
 Nosocomial diseases are diseases acquired in a hospital setting, and some pathogens in hospitals can be transmitted easily via improperly sterilized medical equipment, bed sheets, call buttons, door handles, or by clinicians, nurses, or therapists who do not wash their hands before touching a patient. If *P. aeruginosa* persists on hospital sinks for years after an outbreak, as the report describes, it remains available to contaminate hands, equipment, or surfaces in the same way, so a hospital patient — especially one with a weakened immune system — could again become infected from that reservoir, causing another nosocomial outbreak.
 ===CHECKS===
 diseases acquired in a hospital setting
@@ -302,19 +309,13 @@ by clinicians, nurses, or therapists who do not wash their hands
 especially one with a weakened immune system
 {{< /selfcheck >}}
 
-{{< textin
-  question="A disease transmitted to humans by animals is called a zoonotic disease, or simply a ________."
-  answer="zoonosis"
-  hint="This is the noun the module uses interchangeably with 'zoonotic disease.'"
->}}
-
 ### Identify and describe the stages of an acute infectious disease in terms of number of pathogens present and severity of signs and symptoms
 
 {{< textin
   question="A difference between an acute disease and chronic disease is that chronic diseases have an extended period of ________."
   answer="illness"
   accept="incubation"
-  hint="Compare it with the shorter, self-limited course typical of an acute disease."
+  hint="Reread the first paragraph of the Periods of Disease subsection and the first two paragraphs of the Acute and Chronic Diseases subsection."
 >}}
 
 {{< multiplechoice
@@ -329,7 +330,7 @@ prodromal
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Two periods of acute disease are the periods of illness and period of decline. (a) In what way are both of these periods similar? (b) In terms of quantity of pathogen, in what way are these periods different? (c) What initiates the period of decline?" hint="Reread the Periods of Disease paragraphs on the period of illness and the period of decline, and compare the two curves in the graph." >}}
-(a) Both the period of illness and the period of decline are stages of an acute disease during which the patient continues to show signs and symptoms of infection. (b) They differ in the number of pathogen particles present: during the period of illness the number of pathogens is greatest and signs and symptoms are most severe, while during the period of decline the number of pathogen particles begins to decrease, along with the signs and symptoms of illness. (c) The module does not state what initiates the period of decline; it says only that the period of illness is followed by the period of decline, during which the number of pathogen particles begins to decrease.
+(a) Both the period of illness and the period of decline are stages of an acute disease during which the patient continues to show signs and symptoms of infection. (b) They differ in the number of pathogen particles present: during the period of illness the number of pathogens present in the host is greatest and the signs and symptoms of disease are most severe, while during the period of decline the number of pathogen particles begins to decrease, along with signs and symptoms of disease. (c) The module does not state what initiates the period of decline; it says only that the period of illness is followed by the period of decline, during which the number of pathogen particles begins to decrease.
 ===CHECKS===
 number of pathogens present in the host is greatest and the signs and symptoms of disease are most severe
 number of pathogen particles begins to decrease, along with signs and symptoms of disease
@@ -339,4 +340,4 @@ the module does not state what initiates the period of decline
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 15.1: Characteristics of Infectious Disease](https://openstax.org/books/microbiology/pages/15-1-characteristics-of-infectious-disease) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP; `kind="photo"` set on the blood-smear micrographs and `kind="diagram"` set on the periods-of-disease line graph, overriding the media manifest's JPEG-based guess of "photo" for both; a `longdesc` added for the periods-of-disease graph, walking its five periods and both curves in reading order, since the caption does not name the stages; the two footnotes (Savino et al. 2013; Kusters et al. 2006; Salama et al. 2013 — three citations from two footnote elements) rendered as inline parenthetical citations, with the bare access URL of the first dropped; the *P. aeruginosa* Critical Thinking question's own printed citation (C. Owens, "*P. aeruginosa* survives in sinks 10 years after hospital outbreak," 2015) likewise drops its bare access URL, for the same reason; the Clinical Focus box's "Jump to the next Clinical Focus box" link replaced with a plain sentence linking to Section 15.2, where the case continues; both `<table summary>` tables transcribed as Markdown tables from their cells; the end-of-section Multiple Choice, Fill in the Blank, Short Answer, and Critical Thinking questions adapted into the closing interactive Practice block, sorted under the objective each supports, with two term-recall `textin` items (sign; zoonosis) added from the Key terms to round out two thin objective groups; in the "Identify and describe the stages of an acute infectious disease" group, the `illness` `textin` was moved above the `prodromal` multiple choice so that no item directly above a text-entry blank prints its key, reversing their printed order; of this section's three Link to Learning URLs, the World Health Organization disease-list link (`https://openstax.org/l/22WHOdis`, redirecting to `https://www.who.int/ith/diseases/en`) is confirmed dead (404, checked September 15, 2026) and is no longer linked, replaced with a plain-text description naming the World Health Organization's website; the CDC link, `https://openstax.org/l/22CDCdis`, returns a 403 to scripted checks — a bot wall, not a dead page — and stays linked with the source's own descriptive anchor text; the International Classification of Diseases link is unaffected; key terms compiled from the module's 24 defined terms and the book's Glossary appendix (22 taken from the glossary; 2 — subclinical, noncommunicable — from their defining sentences, since neither has its own appendix entry); 3 of the body's 5 Check Your Understanding bullets (signs vs. symptoms; iatrogenic vs. nosocomial disease; latent vs. chronic disease) are graded as `sortbins`, each a compare-and-contrast pair the module's own sentences fix, rather than answered in prose; the remaining 2 body bullets, the section's one Short Answer question, and both Critical Thinking questions stay `selfcheck`, with model answers and rubrics assembled from this section's own text — the source prints no key for any of them, and none is a single sentence or a clean two-way category split; part (c) of the periods-of-illness-and-decline Critical Thinking question is not answered by inference: its model answer says the module does not state what initiates the period of decline and gives only what the module says happens during that period. The "Types of Noninfectious Diseases" table is transcribed as a Markdown table only, without a `sortbins`: its seven types each carry exactly one example, so it is a one-item-per-bin table (more bins than the shortcode's four-bin cap, and no second item to interleave into any bin), the same shape the subject playbook already rules cannot be a `sortbins`. The source's Multiple Choice item on noncommunicable infectious disease is kept as printed with its key (food poisoning from a preformed toxin), although its dog-bite option also fits the module's own definitions of noncommunicable and zoonotic disease; the ambiguity is kept as printed.</small>
+<small>This section is adapted from [Microbiology, Section 15.1: Characteristics of Infectious Disease](https://openstax.org/books/microbiology/pages/15-1-characteristics-of-infectious-disease) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP; `kind="photo"` set on the blood-smear micrographs and `kind="diagram"` set on the periods-of-disease line graph, overriding the media manifest's JPEG-based guess of "photo" for both; a `longdesc` added for the periods-of-disease graph, walking its five periods and both curves in reading order, since the caption does not name the stages; the two footnotes (Savino et al. 2013; Kusters et al. 2006; Salama et al. 2013 — three citations from two footnote elements) rendered as inline parenthetical citations, with the bare access URL of the first dropped; the *P. aeruginosa* Critical Thinking question's own printed citation (C. Owens, "*P. aeruginosa* survives in sinks 10 years after hospital outbreak," 2015) likewise drops its bare access URL, for the same reason; the Clinical Focus box's "Jump to the next Clinical Focus box" link replaced with a plain sentence linking to Section 15.2, where the case continues; both `<table summary>` tables transcribed as Markdown tables from their cells; the end-of-section Multiple Choice, Fill in the Blank, Short Answer, and Critical Thinking questions adapted into the closing interactive Practice block, sorted under the objective each supports, with one term-recall `textin` (syndrome) added from the Key terms and one cloze `textin` (zoonosis, blanked from the module's sentence giving the WHO definition) added to round out two thin objective groups; so that no item above a text-entry blank prints its key, two source Fill in the Blank `textin` items sit above source Multiple Choice items, reversing their printed order — the tetanus (`noncommunicable`) item above the noncommunicable-disease and contagious-disease multiple choices, and the `illness` item above the `prodromal` multiple choice; the `illness` Fill in the Blank also accepts "incubation", because the module says incubation periods run from a day or two in acute disease to months or years in chronic disease, so that answer is also true by the module's own words; of this section's three Link to Learning URLs, the World Health Organization disease-list link (`https://openstax.org/l/22WHOdis`, redirecting to `https://www.who.int/ith/diseases/en`) is confirmed dead (404, checked September 15, 2026) and is no longer linked, replaced with a plain-text description naming the World Health Organization's website; the CDC link, `https://openstax.org/l/22CDCdis`, returns a 403 to scripted checks — a bot wall, not a dead page — and stays linked with the source's own descriptive anchor text; the International Classification of Diseases link is unaffected; key terms compiled from the module's 24 defined terms and the book's Glossary appendix (22 taken from the glossary; 2 — subclinical, noncommunicable — from their defining sentences, since neither has its own appendix entry); 3 of the body's 5 Check Your Understanding bullets (signs vs. symptoms; iatrogenic vs. nosocomial disease; latent vs. chronic disease) are graded as `sortbins`, each a compare-and-contrast pair the module's own sentences fix, rather than answered in prose; the remaining 2 body bullets, the section's one Short Answer question, and both Critical Thinking questions stay `selfcheck`, with model answers and rubrics assembled from this section's own text — the source prints no key for any of them, and none is a single sentence or a clean two-way category split; part (c) of the periods-of-illness-and-decline Critical Thinking question is not answered by inference: its model answer says the module does not state what initiates the period of decline and gives only what the module says happens during that period. The "Types of Noninfectious Diseases" table is transcribed as a Markdown table only, without a `sortbins`: its seven types each carry exactly one example, so it is a one-item-per-bin table (more bins than the shortcode's four-bin cap, and no second item to interleave into any bin), the same shape the subject playbook already rules cannot be a `sortbins`. The source's Multiple Choice item on noncommunicable infectious disease (keyed "food poisoning due to a preformed bacterial toxin in food") replaces its option "skin infection acquired from a dog bite": a dog bite is not spread from one person to another, so it fits the module's own definition of a noncommunicable disease as well as the key does, and the page offers "gonorrhea acquired through intimate contact with an infected person" (the module's own example of person-to-person transmission) in its place (key unchanged).</small>

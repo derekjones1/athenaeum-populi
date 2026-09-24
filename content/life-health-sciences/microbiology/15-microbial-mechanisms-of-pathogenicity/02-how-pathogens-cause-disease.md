@@ -44,13 +44,13 @@ Koch also assumed that all pathogens are microorganisms that can be grown in pur
 
 **Check Your Understanding**
 
-{{< selfcheck question="Briefly summarize the limitations of Koch's postulates." hint="Think about Koch's three faulty assumptions: who can harbor a pathogen, who is equally susceptible, and which pathogens and diseases can be studied at all." >}}
+{{< selfcheck question="Briefly summarize the limitations of Koch's postulates." hint="Reread the three Koch's Postulates paragraphs that follow the figure." >}}
 Koch assumed pathogens are found only in diseased individuals, but many healthy people carry *H. pylori* without ever developing disease, and infected cattle can carry and pass on *Brucella* whether or not they show symptoms — so postulate 1 does not always hold. He also assumed all healthy test subjects are equally susceptible to disease, but an individual's resident microbiota and immune status make susceptibility vary from person to person. Finally, he assumed every pathogen can be grown in pure culture and tested in an animal model, but obligate intracellular pathogens such as *Rickettsia* and *Chlamydia* cannot be cultured outside a host cell, and some human diseases, such as AIDS, have no reliable animal model, so postulates 2 and 3 cannot always be evaluated.
 ===CHECKS===
 many healthy people carry *H. pylori* without ever developing disease
 infected cattle can carry and pass on *Brucella* whether or not they show symptoms
-susceptibility to disease varies with an individual's microbiota and immune status, not equally across all healthy subjects
-obligate intracellular pathogens such as *Rickettsia* and *Chlamydia* cannot be grown in pure culture
+an individual's resident microbiota and immune status make susceptibility vary from person to person
+obligate intracellular pathogens such as *Rickettsia* and *Chlamydia* cannot be cultured outside a host cell
 some human diseases, such as AIDS, have no reliable animal model
 {{< /selfcheck >}}
 
@@ -70,11 +70,11 @@ As with Koch's original postulates, the molecular Koch's postulates have limitat
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain the differences between Koch's original postulates and the molecular Koch's postulates." hint="Think about what each set of postulates asks the researcher to isolate or identify: an organism, or something smaller." >}}
+{{< selfcheck question="Explain the differences between Koch's original postulates and the molecular Koch's postulates." hint="Reread the first paragraph of the Molecular Koch's Postulates subsection and the table below it." >}}
 The premise for molecular Koch's postulates is not in the ability to isolate a particular pathogen but rather to identify a gene that may cause the organism to be pathogenic. Koch's original postulates instead ask whether a whole microorganism can be found in every diseased individual, isolated and cultured, and shown to reproduce the disease. Molecular Koch's postulates extend this logic to a single gene: inactivating a suspected gene should measurably reduce pathogenicity, and restoring the gene should restore it.
 ===CHECKS===
-the premise for molecular Koch's postulates is to identify a gene that may cause the organism to be pathogenic, rather than to isolate the pathogen itself
-Koch's original postulates ask whether a whole microorganism can be found, isolated and cultured, and shown to reproduce the disease
+the premise for molecular Koch's postulates is not in the ability to isolate a particular pathogen but rather to identify a gene
+Koch's original postulates instead ask whether a whole microorganism can be found in every diseased individual, isolated and cultured, and shown to reproduce the disease
 inactivating a suspected gene should measurably reduce pathogenicity, and restoring the gene should restore it
 {{< /selfcheck >}}
 
@@ -116,19 +116,19 @@ The table below lists selected foodborne pathogens and their ID₅₀ values in 
 
 **Check Your Understanding**
 
-{{< selfcheck question="What is the difference between a pathogen's infective dose and lethal dose?" hint="Reread the Pathogenicity and Virulence paragraph that introduces the two indicators of virulence." >}}
+{{< selfcheck question="What is the difference between a pathogen's infective dose and lethal dose?" hint="Reread the paragraph just above the S-shaped mortality graph." >}}
 The infective dose, or ID₅₀, is the number of pathogen cells or virions required to cause active infection in 50% of inoculated animals. The lethal dose, or LD₅₀, is the number of pathogenic cells, virions, or amount of toxin required to kill 50% of infected animals.
 ===CHECKS===
-the ID₅₀ is the amount required to cause active infection in 50% of inoculated animals
-the LD₅₀ is the amount required to kill 50% of infected animals
+the number of pathogen cells or virions required to cause active infection in 50% of inoculated animals
+the number of pathogenic cells, virions, or amount of toxin required to kill 50% of infected animals
 {{< /selfcheck >}}
 
-{{< selfcheck question="Which is more closely related to the severity of a disease?" hint="Reread the Pathogenicity and Virulence paragraph that introduces the table of foodborne pathogens' ID₅₀ values." >}}
+{{< selfcheck question="Which is more closely related to the severity of a disease?" hint="Reread the paragraph just below the S-shaped mortality graph." >}}
 The section settles the infective-dose side: a pathogen's infective dose does not necessarily correlate with disease severity. *Salmonella enterica* serotype Typhimurium has an ID₅₀ of just one cell but causes a mild disease with less than 1% mortality, while *S. enterica* serotype Typhi has a much higher ID₅₀ of about 1,000 cells yet causes typhoid fever, a far more severe disease with up to 10% mortality in untreated cases. The other indicator of virulence the section names is the lethal dose (LD₅₀), the amount required to kill 50% of infected animals; the section does not go on to state how closely the LD₅₀ tracks severity.
 ===CHECKS===
 infective dose does not necessarily correlate with disease severity
-*Salmonella* Typhimurium has a very low ID₅₀ but causes a mild disease
-*Salmonella* Typhi has a higher ID₅₀ but causes a more severe disease with higher mortality
+*Salmonella enterica* serotype Typhimurium has an ID₅₀ of just one cell but causes a mild disease
+*S. enterica* serotype Typhi has a much higher ID₅₀ of about 1,000 cells yet causes typhoid fever, a far more severe disease
 {{< /selfcheck >}}
 
 ## Primary Pathogens versus Opportunistic Pathogens
@@ -143,19 +143,19 @@ Members of the normal microbiota may also cause disease when a shift in the envi
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain the difference between a primary pathogen and an opportunistic pathogen." hint="Think about whether the host's defenses need to be compromised first." >}}
+{{< selfcheck question="Explain the difference between a primary pathogen and an opportunistic pathogen." hint="Reread the first two paragraphs of the subsection that follows the ID₅₀ table." >}}
 A primary pathogen can cause disease in a host regardless of the host's resident microbiota or immune system — enterohemorrhagic *E. coli*, which produces Shiga toxin, causes severe and bloody diarrhea, inflammation, and renal failure even in patients with healthy immune systems. An opportunistic pathogen, by contrast, can only cause disease in situations that compromise the host's defenses, such as the body's protective barriers, immune system, or normal microbiota — *Staphylococcus epidermidis*, for example, is generally avirulent on the skin but can cause serious infections such as endocarditis once it enters the body through a catheter or implant.
 ===CHECKS===
 a primary pathogen can cause disease regardless of the host's resident microbiota or immune system
 an opportunistic pathogen can only cause disease in situations that compromise the host's defenses
 {{< /selfcheck >}}
 
-{{< selfcheck question="Describe some conditions under which an opportunistic infection can occur." hint="Think about which groups of people have compromised defenses, and what else can shift the balance of the normal microbiota." >}}
+{{< selfcheck question="Describe some conditions under which an opportunistic infection can occur." hint="Reread the whole subsection that follows the ID₅₀ table, from its first paragraph to its last." >}}
 Opportunistic infections occur when a host's defenses are compromised. Individuals susceptible to them include the very young, the elderly, people who are pregnant, patients undergoing chemotherapy, people with immunodeficiencies such as AIDS, patients recovering from surgery, and those who have had a breach of protective barriers such as a severe wound or burn. Opportunistic infections can also occur when a normal microbiota member ends up in a different body system than the one it normally inhabits, such as intestinal *E. coli* entering the bladder, or when antibacterial medication or a hormonal shift disrupts the balance of the normal microbiota, allowing an organism such as *Candida* to overgrow.
 ===CHECKS===
-susceptible groups include the very young, the elderly, pregnant people, chemotherapy patients, people with immunodeficiencies, surgical patients, and those with a breach of protective barriers
+individuals susceptible to them include the very young, the elderly, people who are pregnant, patients undergoing chemotherapy, people with immunodeficiencies
 a normal microbiota member ends up in a different body system than the one it normally inhabits, such as intestinal *E. coli* entering the bladder
-antibacterial medication or a hormonal shift can disrupt the balance of the normal microbiota, allowing an organism such as *Candida* to overgrow
+antibacterial medication or a hormonal shift disrupts the balance of the normal microbiota, allowing an organism such as *Candida* to overgrow
 {{< /selfcheck >}}
 
 ## Stages of Pathogenesis
@@ -253,12 +253,12 @@ To confirm this diagnosis, a microscope slide of a direct vaginal smear is prepa
 
 **Check Your Understanding**
 
-{{< selfcheck question="List three conditions that could lead to a secondary infection." hint="Think about what a primary infection or its treatment can do to the body's defenses or its normal microbiota." >}}
+{{< selfcheck question="List three conditions that could lead to a secondary infection." hint="Reread the fourth paragraph of the Infection subsection." >}}
 A secondary infection can follow a primary infection that compromises the immune system, as when a primary HIV infection leaves a patient susceptible to oral thrush and other opportunistic diseases. It can also follow a primary infection that damages a body system's defenses, as when a primary influenza infection damages the lungs and leaves a patient susceptible to secondary bacterial pneumonia. It can also follow antibiotic treatment for a primary infection, which can kill off normal microbiota and open the way for an opportunistic pathogen such as *Candida* to overgrow.
 ===CHECKS===
-a primary HIV infection compromises the immune system and leaves a patient susceptible to oral thrush and other opportunistic diseases
+a primary HIV infection leaves a patient susceptible to oral thrush and other opportunistic diseases
 a primary influenza infection damages the lungs and leaves a patient susceptible to secondary bacterial pneumonia
-antibiotic treatment for a primary infection can kill off normal microbiota and open the way for an opportunistic pathogen to overgrow
+antibiotic treatment for a primary infection, which can kill off normal microbiota and open the way for an opportunistic pathogen
 {{< /selfcheck >}}
 
 ## Transmission of Disease
@@ -308,7 +308,7 @@ Pathogens leave the body of an infected host through various portals of exit to 
 {{< multiplechoice
   question="Which of the following is a pathogen that could not be identified by the original Koch's postulates?"
   answer="Human immunodeficiency virus"
-  hint="Reread the Koch's Postulates paragraph on Koch's assumption about pure culture and animal models."
+  hint="Reread the last paragraph of the Koch's Postulates subsection."
 >}}
 *Staphylococcus aureus*
 *Pseudomonas aeruginosa*
@@ -316,7 +316,7 @@ Human immunodeficiency virus
 *Salmonella enterica* serovar Typhimurium
 {{< /multiplechoice >}}
 
-{{< selfcheck question="A microbiologist has identified a new gram-negative pathogen that causes liver disease in rats. She suspects that the bacterium's fimbriae are a virulence factor. Describe how molecular Koch's postulates could be used to test this hypothesis." hint="Walk through the three steps in the Molecular Koch's Postulates table: associate, inactivate, and restore." >}}
+{{< selfcheck question="A microbiologist has identified a new gram-negative pathogen that causes liver disease in rats. She suspects that the bacterium's fimbriae are a virulence factor. Describe how molecular Koch's postulates could be used to test this hypothesis." hint="Reread the Molecular Koch's Postulates table." >}}
 First, the microbiologist would confirm that the fimbriae-associated phenotype (liver disease) is found only in strains carrying the fimbriae gene, not in nonpathogenic strains. Second, she would inactivate the gene that encodes the fimbriae and check for a measurable loss of the bacterium's ability to cause liver disease. Third, she would add the fimbriae gene back into the inactivated strain's genome and confirm that its ability to cause liver disease is restored. If all three steps hold, the fimbriae gene is a virulence factor for this pathogen.
 ===CHECKS===
 the fimbriae-associated phenotype (liver disease) is found only in strains carrying the fimbriae gene, not in nonpathogenic strains
@@ -325,9 +325,9 @@ adding the fimbriae gene back into the inactivated strain's genome should restor
 {{< /selfcheck >}}
 
 {{< multiplechoice
-  question="A once-harmless bacterium of the human intestine acquired new genes and, in the form of its pathogenic strains, is now capable of producing toxins and causing illness. Which organism is this?"
+  question="A once-harmless bacterium acquired new genes and, in the form of its pathogenic strains, is now capable of producing toxins and causing illness. Which organism is this?"
   answer="*Escherichia coli*"
-  hint="Its predominant, harmless form is a normal member of the human intestinal microbiota."
+  hint="Reread the second paragraph of the Molecular Koch's Postulates subsection."
 >}}
 *Escherichia coli*
 *Salmonella enterica*
@@ -340,7 +340,7 @@ adding the fimbriae gene back into the inactivated strain's genome should restor
 {{< multiplechoice
   question="Pathogen A has an ID₅₀ of 50 particles, pathogen B has an ID₅₀ of 1,000 particles, and pathogen C has an ID₅₀ of $1 \times 10^{6}$ particles. Which pathogen is most virulent?"
   answer="pathogen A"
-  hint="A lower infectious dose means fewer pathogen cells are needed to cause infection."
+  hint="Reread the paragraph that defines the median infectious dose."
 >}}
 pathogen A
 pathogen B
@@ -351,7 +351,7 @@ pathogen C
   question="The concentration of pathogen needed to kill 50% of an infected group of test animals is the ________."
   answer="LD50"
   accept="median lethal dose|LD 50"
-  hint="This value measures death in a population, not infection."
+  hint="Reread the paragraph just above the S-shaped mortality graph."
 >}}
 
 {{< textin
@@ -365,19 +365,19 @@ pathogen C
 {{< textin
   question="A(n) ________ pathogen causes disease only when conditions are favorable for the microorganism because of transfer to an inappropriate body site or weakened immunity in an individual."
   answer="opportunistic"
-  hint="This kind of pathogen needs the host's defenses to be compromised first."
+  hint="Reread the first paragraph of the subsection that follows the ID₅₀ table."
 >}}
 
 {{< textin
   question="A(n) ________ pathogen can cause disease in a host regardless of the host's resident microbiota or immune system."
   answer="primary"
-  hint="This kind of pathogen does not need the host's defenses to be compromised first."
+  hint="Reread the second sentence of the subsection that follows the ID₅₀ table."
 >}}
 
 {{< multiplechoice
   question="Which organism, ordinarily a harmless member of the skin's normal microbiota, is described in this section as among the most frequent causes of nosocomial disease?"
   answer="*Staphylococcus epidermidis*"
-  hint="This organism is normally a harmless member of the skin's microbiota, but can infect catheters and implants."
+  hint="Reread the second paragraph of the subsection that follows the ID₅₀ table."
 >}}
 *Helicobacter pylori*
 *Staphylococcus epidermidis*
@@ -386,6 +386,18 @@ pathogen C
 {{< /multiplechoice >}}
 
 ### Summarize the stages of pathogenesis
+
+{{< textin
+  question="A(n) ________ infection is a small region of infection from which a pathogen may move to another part of the body to establish a second infection."
+  answer="focal"
+  hint="Reread the second paragraph of the Infection subsection."
+>}}
+
+{{< textin
+  question="Cilia, fimbriae, and pili are all examples of structures used by microbes for ________."
+  answer="adhesion"
+  hint="Reread the second paragraph of the subsection that follows the Clinical Focus box."
+>}}
 
 {{< multiplechoice
   question="Which of the following choices lists the steps of pathogenesis in the correct order?"
@@ -398,24 +410,12 @@ exposure, adhesion, invasion, infection
 disease, infection, exposure, invasion
 {{< /multiplechoice >}}
 
-{{< textin
-  question="A(n) ________ infection is a small region of infection from which a pathogen may move to another part of the body to establish a second infection."
-  answer="focal"
-  hint="This word names a starting point, not the eventual spread."
->}}
-
-{{< textin
-  question="Cilia, fimbriae, and pili are all examples of structures used by microbes for ________."
-  answer="adhesion"
-  hint="Reread the second paragraph of the subsection that follows the Clinical Focus box."
->}}
-
-{{< selfcheck question="Diseases that involve biofilm-producing bacteria are of serious concern. They are not as easily treated compared with those involving free-floating (or planktonic) bacteria. Explain three reasons why biofilm formers are more pathogenic." hint="Think about what the EPS physically blocks, and about which cells in a biofilm are actively dividing." >}}
+{{< selfcheck question="Diseases that involve biofilm-producing bacteria are of serious concern. They are not as easily treated compared with those involving free-floating (or planktonic) bacteria. Explain three reasons why biofilm formers are more pathogenic." hint="Reread the Adhesion paragraph on biofilm growth." >}}
 Biofilm-forming bacteria are more pathogenic for three reasons. First, the extrapolymeric substance (EPS) they produce allows the bacteria to adhere firmly to host cells or medical devices, making the biofilm harder for the host to physically remove. Second, the EPS provides protection against the immune system and against antibiotic treatments, preventing antibiotics from reaching the bacterial cells within the biofilm. Third, not all bacteria within a biofilm are rapidly growing — some are in stationary phase — and since antibiotics are most effective against rapidly growing bacteria, these stationary-phase cells are protected against antibiotics even when they do reach the biofilm.
 ===CHECKS===
-the EPS allows firm adhesion, making the biofilm harder to physically remove
-the EPS protects the bacteria from the immune system and prevents antibiotics from reaching the cells
-not all bacteria in a biofilm are rapidly growing, and antibiotics are least effective against the stationary-phase cells
+allows the bacteria to adhere firmly to host cells or medical devices, making the biofilm harder for the host to physically remove
+the EPS provides protection against the immune system and against antibiotic treatments
+since antibiotics are most effective against rapidly growing bacteria, these stationary-phase cells are protected against antibiotics
 {{< /selfcheck >}}
 
 ### Explain the roles of portals of entry and exit in the transmission of disease and identify specific examples of these portals
@@ -423,13 +423,15 @@ not all bacteria in a biofilm are rapidly growing, and antibiotics are least eff
 {{< textin
   question="An anatomic site through which pathogens can pass into host tissue is called a ________."
   answer="portal of entry"
-  hint="This is where the host's cells are in direct contact with the external environment."
+  accept="portals of entry"
+  hint="Reread the first paragraph of the Exposure subsection."
 >}}
 
 {{< textin
   question="For a pathogen to persist, it must leave the infected host through a ________."
   answer="portal of exit"
-  hint="This is the anatomical counterpart of where the pathogen first entered."
+  accept="portals of exit"
+  hint="Reread the first sentence of the Transmission of Disease subsection."
 >}}
 
 {{< multiplechoice
@@ -447,14 +449,14 @@ the genitourinary tract
 An acupuncture needle being inserted into a patient's arm.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Acupuncture is a form of alternative medicine that is used for pain relief. Explain how acupuncture could facilitate exposure to pathogens." hint="Think about which route into the body a needle creates, and what normally keeps that route closed." >}}
-Acupuncture needles create a parenteral portal of entry: the skin is normally a good natural barrier to pathogens, but breaks in the skin — including needle pricks — can provide microorganisms an opportunity to enter the body. If an acupuncture needle is not sterile, or if it carries pathogens from the surface of the skin into the deeper tissue as it is inserted, it could expose the patient to pathogens that the intact skin would otherwise have kept out.
+{{< selfcheck question="Acupuncture is a form of alternative medicine that is used for pain relief. Explain how acupuncture could facilitate exposure to pathogens." hint="Reread the fourth paragraph of the Exposure subsection." >}}
+An acupuncture needle pricks the skin. The skin is a good natural barrier to pathogens, but breaks in the skin — including needle pricks — can provide a parenteral portal of entry for microorganisms. Pathogens that enter the body through such a breach in the protective barriers of the skin are said to enter by the parenteral route.
 ===CHECKS===
-acupuncture needles create a parenteral portal of entry
-the skin is normally a good natural barrier to pathogens, but breaks in the skin, including needle pricks, can provide microorganisms an opportunity to enter the body
-if an acupuncture needle is not sterile, or if it carries pathogens from the surface of the skin into the deeper tissue, it could expose the patient to pathogens
+the skin is a good natural barrier to pathogens
+breaks in the skin — including needle pricks — can provide a parenteral portal of entry for microorganisms
+enter by the parenteral route
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 15.2: How Pathogens Cause Disease](https://openstax.org/books/microbiology/pages/15-2-how-pathogens-cause-disease) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all seven source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on the Koch's-postulates, population-curve, portal-of-entry, invasion, and portal-of-exit figures and `kind="photo"` on the adhesion micrograph and the acupuncture photo, overriding the media manifest's JPEG-based guess for the four drawn figures; the Koch's-postulates figure carries `eager="true"` as the page's first figure; a `longdesc` was added for all five diagram figures, walking each in reading order, because their labels and multi-panel narratives are not fully carried by the caption; the population-curve figure's source alt claim that mortality is "nearly 100%" at $10^5$ agents is corrected against the drawn curve, which is still rising toward roughly 90% at that point and does not visibly level off until nearer $10^8$ — a suspected source-alt defect — and the alt's spelled-out "10 to the 5" / "10 to the 4" notation is set as Unicode superscripts throughout, per this run's new house rule for a subscript or exponent inside an alt or longdesc; feature boxes rendered as callouts, with the Clinical Focus box's "Jump to the next / Go back to the previous" links replaced by two Markdown links to Sections 15.3 and 15.1 (this run's own routes, per the parent's run-facts, even though neither page was yet on disk at authoring time); the case-in-point box's closing question kept as an unanswered plain bullet, as the Clinical Focus box's questions are; the cross-reference to "Pathogen Recognition and Phagocytosis" (m58880) left as plain italic text, since that module is not authored in this run; the four footnoted citations (the FDA Bad Bug Book, the Otto 2009 *S. epidermidis* review, the Davies 2003 biofilm review, and the TORCH "O" gloss) rendered as inline parentheticals at the sentence or table cell they support; the two step-sequence tables (Koch's Postulates, Molecular Koch's Postulates Applied to EHEC) and the two data tables (ID₅₀ for Selected Foodborne Diseases, TORCH Infections) transcribed as Markdown from the CNXML cells, checked against the PDF; the TORCH table is transcribed only, with no `sortbins` built for it, on the parent's own offered alternative (run-facts C5 correction): the table's only workable 4-bin, ≥1-item axis is the four single-disease letters (T, R, C, H) with the fifth, heterogeneous "O" ("other") row of five diseases dropped, but that leaves every bin holding exactly one pathogen, which sorts nothing — it is a disguised 1:1 matching pair, not a categorization task — so the table is left as a transcribed comparison rather than shipped as a degenerate sortbins; the misspelled "Brucellis" is corrected in place to "Brucella" with no inline note, per this book's one-word-typo rule; the ID₅₀-comparison numeral is set as `$1 \times 10^{6}$` and the LD₅₀ example values are set as `$10^4$` in body prose and the figure caption, per the house numeric-exponent rule, while ID₅₀/LD₅₀ itself stays a Unicode subscript throughout; key terms compiled from the module's 19 defined terms and the book's Glossary appendix (all 19 taken from the glossary; none sentence-derived); all seven of the section's body Check Your Understanding bullets are rendered as body self-checks at their note's position, because each needs either several assembled module facts, an open list, or an inference the module does not state outright to answer honestly; of the source's three unkeyed Critical Thinking questions, none is graded and all three stay self-checks with model answers and rubrics assembled from this section's own text — the biofilm and molecular-Koch's-postulates questions each need more than one module sentence, and the acupuncture question (rendered as a mediafigure, with an author-written neutral caption, followed by its self-check) is openly analogical; the source's three Multiple Choice items keep their source options, order, and key, and its four Fill in the Blank items are rendered as `textin`, the LD₅₀ item keyed to the plain-ASCII answer `LD50` (the grader already folds the Unicode subscript to the same value, so no `accept` entry is needed); seven filler items (four `textin` and three `multiplechoice`) are added across the five objective groups to meet the book's three-item floor with at least one auto-graded item apiece, each built from a single sentence of this module and disclosed in the ledger; a checker's page-wide leak read caught three: a summary-sentence cloze keyed "molecular Koch's postulates" was replaced with a multiple choice on the EHEC/ETEC origin story, because the body self-check immediately above it prints that exact source-verbatim phrase in its own stem; the *S. epidermidis* filler's stem was reworded to drop the word "opportunistic," which is a co-group `textin`'s key; and the acupuncture self-check's hint was reworded to drop the phrase "portal of entry," which is a co-group `textin`'s key. The Koch's-postulates limitations self-check's rubric originally merged the *H. pylori* (human carriers) and *Brucella* (cattle carriers) examples into one checkpoint; they are now two, since each traces to its own sentence and the two examples are about different hosts. A later sweep made three more changes. The *E. coli* filler's stem no longer prints "ETEC and EHEC", whose names abbreviate its key; it now paraphrases the module's acquisition-of-new-genes sentence. The *S. epidermidis* filler's "enterohemorrhagic *Escherichia coli*" distractor, which printed that filler's key, is now *Helicobacter pylori*, another organism this section names. The acupuncture Critical Thinking item and its figure now close their Practice group, after the two portal recall items and the parenteral-route multiple choice, so that its rubric ("parenteral portal of entry") does not sit directly above the portal-of-entry `textin`. No source exercise item is omitted.</small>
+<small>This section is adapted from [Microbiology, Section 15.2: How Pathogens Cause Disease](https://openstax.org/books/microbiology/pages/15-2-how-pathogens-cause-disease) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all seven source figures re-encoded as WebP and rendered as mediafigures after image and PDF inspection; `kind="diagram"` set on the Koch's-postulates, population-curve, portal-of-entry, invasion, and portal-of-exit figures and `kind="photo"` on the adhesion micrograph and the acupuncture photo, overriding the media manifest's JPEG-based guess for the four drawn figures; the Koch's-postulates figure carries `eager="true"` as the page's first figure; a `longdesc` was added for all five diagram figures, walking each in reading order, because their labels and multi-panel narratives are not fully carried by the caption; the population-curve figure's source alt claim that mortality is "nearly 100%" at $10^5$ agents is corrected against the drawn curve, which is still rising toward roughly 90% at that point and does not visibly level off until nearer $10^8$ — a suspected source-alt defect — and the alt's spelled-out "10 to the 5" / "10 to the 4" notation is set as Unicode superscripts throughout, per this run's new house rule for a subscript or exponent inside an alt or longdesc; feature boxes rendered as callouts, with the Clinical Focus box's "Jump to the next / Go back to the previous" links replaced by two Markdown links to Sections 15.3 and 15.1 (this run's own routes, per the parent's run-facts, even though neither page was yet on disk at authoring time); the case-in-point box's closing question kept as an unanswered plain bullet, as the Clinical Focus box's questions are; the cross-reference to "Pathogen Recognition and Phagocytosis" (m58880) left as plain italic text, since that module is not authored in this run; the four footnoted citations (the FDA Bad Bug Book, the Otto 2009 *S. epidermidis* review, the Davies 2003 biofilm review, and the TORCH "O" gloss) rendered as inline parentheticals at the sentence or table cell they support; the two step-sequence tables (Koch's Postulates, Molecular Koch's Postulates Applied to EHEC) and the two data tables (ID₅₀ for Selected Foodborne Diseases, TORCH Infections) transcribed as Markdown from the CNXML cells, checked against the PDF; the TORCH table is transcribed only, with no `sortbins` built for it, on the parent's own offered alternative (run-facts C5 correction): the table's only workable 4-bin, ≥1-item axis is the four single-disease letters (T, R, C, H) with the fifth, heterogeneous "O" ("other") row of five diseases dropped, but that leaves every bin holding exactly one pathogen, which sorts nothing — it is a disguised 1:1 matching pair, not a categorization task — so the table is left as a transcribed comparison rather than shipped as a degenerate sortbins; the misspelled "Brucellis" is corrected in place to "Brucella" with no inline note, per this book's one-word-typo rule; the ID₅₀-comparison numeral is set as `$1 \times 10^{6}$` and the LD₅₀ example values are set as `$10^4$` in body prose and the figure caption, per the house numeric-exponent rule, while ID₅₀/LD₅₀ itself stays a Unicode subscript throughout; key terms compiled from the module's 19 defined terms and the book's Glossary appendix (all 19 taken from the glossary; none sentence-derived); all seven of the section's body Check Your Understanding bullets are rendered as body self-checks at their note's position, because each needs either several assembled module facts, an open list, or an inference the module does not state outright to answer honestly; of the source's three unkeyed Critical Thinking questions, none is graded and all three stay self-checks with model answers and rubrics assembled from this section's own text — the biofilm and molecular-Koch's-postulates questions each need more than one module sentence, and the acupuncture question (rendered as a mediafigure, with an author-written neutral caption, followed by its self-check) is openly analogical; the source's three Multiple Choice items keep their source options, order, and key, and its four Fill in the Blank items are rendered as `textin`, the LD₅₀ item keyed to the plain-ASCII answer `LD50` (the grader already folds the Unicode subscript to the same value, so no `accept` entry is needed); seven filler items (four `textin` and three `multiplechoice`) are added across the five objective groups to meet the book's three-item floor with at least one auto-graded item apiece, each built from a single sentence of this module and disclosed in the ledger; a checker's page-wide leak read caught three: a summary-sentence cloze keyed "molecular Koch's postulates" was replaced with a multiple choice on the EHEC/ETEC origin story, because the body self-check immediately above it prints that exact source-verbatim phrase in its own stem; the *S. epidermidis* filler's stem was reworded to drop the word "opportunistic," which is a co-group `textin`'s key; and the acupuncture self-check's hint was reworded to drop the phrase "portal of entry," which is a co-group `textin`'s key. The Koch's-postulates limitations self-check's rubric originally merged the *H. pylori* (human carriers) and *Brucella* (cattle carriers) examples into one checkpoint; they are now two, since each traces to its own sentence and the two examples are about different hosts. A later sweep made three more changes. The *E. coli* filler's stem no longer prints "ETEC and EHEC", whose names abbreviate its key; it now paraphrases the module's acquisition-of-new-genes sentence. The *S. epidermidis* filler's "enterohemorrhagic *Escherichia coli*" distractor, which printed that filler's key, is now *Helicobacter pylori*, another organism this section names. The acupuncture Critical Thinking item and its figure now close their Practice group, after the two portal recall items and the parenteral-route multiple choice, so that its rubric ("parenteral portal of entry") does not sit directly above the portal-of-entry `textin`. In the "Summarize the stages of pathogenesis" group, the source's focal-infection and adhesion Fill in the Blank `textin` items sit above its pathogenesis-order Multiple Choice, reversing their printed order, so that the multiple choice's options, every one of which lists "adhesion", do not sit above the adhesion text-entry blank. The acupuncture self-check's model answer gives only what this section says about needle pricks and the parenteral route. No source exercise item is omitted.</small>
