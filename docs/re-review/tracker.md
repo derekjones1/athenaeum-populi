@@ -159,11 +159,11 @@ checks ran a narrow brief (they carry no hints; the gap is nearby leaks).
 | [x] | 33. The Animal Body: Basic Form and Function | 3 | 58 | 1008 | c909153 | Sep 23: two Opus fixers (~263k); 34 of 58 hint leaks; parent re-keyed the 33.1 dorsal/ventral plane question to coronal (kind key; the module's own goat figure), rewrote a garbled fixer-written 33.3 stem, fixed erratum 239's quotation |
 | [x] | 34. Animal Nutrition and the Digestive System | 4 | 63 | 1005–1006 | c909153 | Sep 23: two and a half Opus fixers (~300k); ~42 of 63 hint leaks; parent replaced a double-keying option in 34.1 (cow teeth) and 34.2 (fat) (kind options); trypsin textin accepts any of the three proteases |
 | [x] | 35. The Nervous System | 5 | 92 | 1007 | c909153 | Sep 23: three and a half Opus fixers (~400k); ~54 of 92 hint leaks; parent replaced the microglia option that double-keyed the 35.1 meningitis question (kind options); four reverse re-asks replaced |
-| [ ] | 36. Sensory Systems | 5 | | | | |
-| [ ] | 37. The Endocrine System | 5 | | | | |
-| [ ] | 38. The Musculoskeletal System | 4 | | | | |
-| [ ] | 39. The Respiratory System | 4 | | | | |
-| [ ] | 40. The Circulatory System | 4 | | | | |
+| [x] | 36. Sensory Systems | 5 | 70 | 1009, 1016 | 7796f05 | Sep 23: two and a half Opus fixers (~316k tokens), batched with ch37–40 (shared Fable solve 38/38 + 9 synonym flags adjudicated, ~78k); 47 of 70 hint leaks; parent fixed the glomerulus glossary "two clusters" (1009) and the solver-found summary "encapsulated" Merkel's disks (1016) |
+| [x] | 37. The Endocrine System | 5 | 74 | — | 7796f05 | Sep 23: two and a half Opus fixers (~378k); 42 of 74 hint leaks; nine reverse re-asks replaced; 37.4 figure-label TRH item failed source-keys (label is not module text) → "narrow range" cloze; 37.4 drops one item (3 duplicates → 2), exercise floor −1 |
+| [x] | 38. The Musculoskeletal System | 4 | 57 | 1010, 1011 | 7796f05 | Sep 23: two Opus fixers (~272k); 37 of 57 hint leaks; parent fixed 38.4 "A zone" (313) and the cross-bridge caption's Ca²⁺ on the actin active site (1010), and 38.3's hip protraction/retraction model answer (1011, kind solution) |
+| [x] | 39. The Respiratory System | 4 | 49 | — | 7796f05 | Sep 23: one and a half Opus fixers (~244k); 27 of 49 hint leaks; 39.1 trachea/alveolus reverse re-asks replaced; no new source defects |
+| [x] | 40. The Circulatory System | 4 | 59 | 1012–1015 | 7796f05 | Sep 23: two and a half Opus fixers (~287k); 28 of 59 hint leaks; parent fixed 40.2 "nitrous oxide (NO)" (1012), fibrinogen "in blood serum" (1013), two misspellings (1014–1015), and added squid/warm-blooded synonyms |
 | [ ] | 41. Osmotic Regulation and Excretion | 5 | | | | |
 | [ ] | 42. The Immune System | 4 | | | | |
 | [ ] | 43. Animal Reproduction and Development | 7 | | | | |
