@@ -28605,10 +28605,6 @@
   "5a1c66291c9a1167": {
    "verdict": "ok"
   },
-  "5a1dc53b0e07bd80": {
-   "verdict": "ok",
-   "note": "Microbiology 2.3 source SA selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the labeled brightfield photo and its longdesc; #10 at the base dial is the rheostat)"
-  },
   "5a1e5a43ce078faa": {
    "verdict": "ok"
   },
@@ -58047,6 +58043,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "baf5525dfc600ebf": {
+   "verdict": "ok",
+   "note": "Microbiology 2.3 source SA selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the labeled brightfield photo and its longdesc; #10 at the base dial is the rheostat) | Sep 26 2026 alt-only figure pass packet 02: re-hashed by the figure alt's call-out placement rewrite; parent re-read the model answer against the image (1 eyepieces, 2 nosepiece, 3 objective, 4/5 focus knobs, 6 stage, 7 illuminator, 8 condenser below the stage, 9 slide holder on the stage, 10 base dial) and confirmed the new alt names no part"
   },
   "baf6989c06888566": {
    "verdict": "ok"

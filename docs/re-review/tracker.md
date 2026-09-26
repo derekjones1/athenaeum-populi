@@ -267,5 +267,6 @@ Applying these: edit the alt/`longdesc` (never a straight `"` inside the attribu
 | | Book | Chapters | Alt-only figures | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|---|
 | [x] | Microbiology | 1–2.3 (packet 01) | 35 | 13 | 1048–1052 | 89cb68b | 13 of 35 flagged, all confirmed on the image (6 diagram, 7 photo detail); run Sep 26, 2026 as a local worktree agent, 166k tokens |
-| [ ] | Microbiology | 2.3–26 | 473 | | | | 508 alt-only in all; resume at `03-instruments-of-microscopy.md:273` |
+| [x] | Microbiology | 2.3–3.3 (packet 02) | 35 | 13 | 1053–1054 | (this commit) | 13 of 35 flagged, all confirmed on the image (plasmolysis alt backwards, pneumonia side vs caption, grayscale SEM called false-color, Lister's beard, microtome dial/blue block, sodium–potassium pump longdesc added); erratum 1054 is the scanning-probe table artwork's "very short probes"; one selfcheck re-hashed by its figure, parent re-read; run Sep 26, 2026, 166k checker tokens |
+| [ ] | Microbiology | 3.3–26 | 438 | | | | packets 03–05 (105 figures, `03-unique-characteristics-of-prokaryotic-cells.md:236` to `07-microbial-biochemistry/02-carbohydrates.md:164`) running Sep 26, 2026; after them, resume at `07-microbial-biochemistry/03-lipids.md:29` |
 | [ ] | Biology 2e | 1–47 | ~519 | | | | split into packets at run time |

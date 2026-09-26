@@ -29,7 +29,7 @@ Today, these tenets are fundamental to our understanding of life on earth. Howev
 
 The English scientist Robert Hooke first used the term "cells" in 1665 to describe the small chambers within cork that he observed under a microscope of his own design. To Hooke, thin sections of cork resembled "Honey-comb," or "small Boxes or Bladders of Air." He noted that each "Cavern, Bubble, or Cell" was distinct from the others (shown below). At the time, Hooke was not aware that the cork cells were long dead and, therefore, lacked the internal structures found within living cells.
 
-{{< mediafigure src="microbiology/OSC_Microbio_03_02_Hooke" alt="A circular microscope-field illustration from Micrographia, hand-drawn, showing two adjoining patches of cork tissue: on the right, a dense mass of small irregular polygonal cells; on the left, a coarser mesh of thicker-walled rectangular cells." kind="diagram" eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_03_02_Hooke" alt="A circular microscope-field illustration from Micrographia, hand-drawn, showing two separate pieces of cork, marked A and B: on the right (A), a dense mass of small irregular polygonal cells; on the left (B), a coarser mesh of thicker-walled rectangular cells." kind="diagram" eager="true" >}}
 Robert Hooke (1635–1703) was the first to describe cells based upon his microscopic observations of cork. This illustration was published in his work *Micrographia*.
 {{< /mediafigure >}}
 
@@ -137,7 +137,7 @@ Meanwhile, British surgeon Joseph Lister (shown below) was trying to determine t
 
 A few years later, Robert Koch (shown below) proposed a series of postulates (Koch's postulates) based on the idea that the cause of a specific disease could be attributed to a specific microbe. Using these postulates, Koch and his colleagues were able to definitively identify the causative pathogens of specific diseases, including anthrax, tuberculosis, and cholera. Koch's "one microbe, one disease" concept was the culmination of the 19th century's paradigm shift away from miasma theory and toward the germ theory of disease. Koch's postulates are discussed more thoroughly in *How Pathogens Cause Disease*.
 
-{{< mediafigure src="microbiology/OSC_Microbio_03_02_ListerKoch" alt="Two black-and-white studio portrait photographs side by side: (a) an older man with white hair and a full white beard, wearing a dark coat and bow tie. (b) A balding man with round spectacles, a gray beard and mustache, wearing a dark coat and bow tie." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_03_02_ListerKoch" alt="Two black-and-white studio portrait photographs side by side: (a) an older man with white hair and long white side-whiskers but a clean-shaven chin and upper lip, wearing a dark coat, waistcoat, and bow tie. (b) A balding man with round spectacles, a gray beard and mustache, wearing a dark coat and bow tie." kind="photo" >}}
 (a) Joseph Lister developed procedures for the proper care of surgical wounds and the sterilization of surgical equipment. (b) Robert Koch established a protocol to determine the cause of infectious disease. Both scientists contributed significantly to the acceptance of the germ theory of disease.
 {{< /mediafigure >}}
 
@@ -169,7 +169,7 @@ After suffering a fever, congestion, cough, and increasing aches and pains for s
 
 During her physical examination, the PA notes that Barbara's heart rate is slightly elevated. Using a pulse oximeter, a small device that clips on her finger, he finds that Barbara has hypoxemia—a lower-than-normal level of oxygen in the blood. Using a stethoscope, the PA listens for abnormal sounds made by Barbara's heart, lungs, and digestive system. As Barbara breathes, the PA hears a crackling sound and notes a slight shortness of breath. He collects a sputum sample, noting the greenish color of the mucus, and orders a chest radiograph, which shows a "shadow" in the left lung. All of these signs are suggestive of pneumonia, a condition in which the lungs fill with mucus (shown below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_03_02_pneumonia" alt="Two chest X-ray images side by side: the left radiograph, labeled lung infiltrated, suggestive of pneumonia, shows a hazy white patch in the lower right chest circled for emphasis; the right radiograph, labeled normal lungs, shows clear, evenly dark lung fields." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_03_02_pneumonia" alt="Two chest X-ray images side by side: the left radiograph, labeled lung infiltrated, suggestive of pneumonia, shows a hazy white patch in the lower part of the patient's left lung (on the viewer's right) circled for emphasis; the right radiograph, labeled normal lungs, shows clear, evenly dark lung fields." kind="photo" >}}
 This is a chest radiograph typical of pneumonia. Because X-ray images are negative images, a "shadow" is seen as a white area within the lung that should otherwise be black. In this case, the left lung shows a shadow as a result of pockets in the lung that have become filled with fluid. (credit left: modification of work by "Christaras A"/Wikimedia Commons)
 {{< /mediafigure >}}
 
