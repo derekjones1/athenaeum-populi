@@ -22,7 +22,7 @@ Once microbes became visible to humans with the help of microscopes, scientists 
 
 **Taxonomy** is the classification, description, identification, and naming of living organisms. Classification is the practice of organizing organisms into different groups based on their shared characteristics. The most famous early taxonomist was a Swedish botanist, zoologist, and physician named Carolus Linnaeus (1701–1778). In 1735, Linnaeus published *Systema Naturae*, an 11-page booklet in which he proposed the Linnaean taxonomy, a system of categorizing and naming organisms using a standard format so scientists could discuss organisms using consistent terminology. He continued to revise and add to the book, which grew into multiple volumes (see the portrait below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_01_02_Linnaeus" alt="An oil portrait of a young man in fur-trimmed brown clothing and a wide-brimmed hat, holding a small flowering plant in one hand, with a patterned case and a round red seal or pouch resting near his other hand." kind="photo" eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_01_02_Linnaeus" alt="An oil portrait of a young man in fur-trimmed brown clothing and a wide-brimmed hat, holding a small flowering plant in one hand, with a patterned case and a round red pouch hanging from his belt just below it." kind="photo" eager="true" >}}
 Swedish botanist, zoologist, and physician Carolus Linnaeus developed a new system for categorizing plants and animals. In this 1853 portrait by Hendrik Hollander, Linnaeus is holding a twinflower, named *Linnaea borealis* in his honor.
 {{< /mediafigure >}}
 

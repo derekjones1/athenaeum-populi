@@ -62,7 +62,7 @@ By contrast, van Leeuwenhoek and Hooke can thank ample documentation of their wo
 
 Similarly, Robert Hooke had his observations using microscopes published by the Royal Society in a book called *Micrographia* in 1665. The book became a bestseller and greatly increased interest in microscopy throughout much of Europe.
 
-{{< mediafigure src="microbiology/OSC_Microbio_02_02_Janssen" alt="An engraved portrait of a mustached and bearded man with shoulder-length hair, wearing a plain white collar over a dark, buttoned doublet, set within an ornate octagonal frame." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_02_02_Janssen" alt="An engraved portrait of a mustached and bearded man with shoulder-length hair, wearing a plain white collar over a pale, buttoned doublet, set within an ornate octagonal frame." kind="diagram" >}}
 Zaccharias Janssen, along with his father Hans, may have invented the telescope, the simple microscope, and the compound microscope during the late 1500s or early 1600s. The historical evidence is inconclusive.
 {{< /mediafigure >}}
 {{< /callout >}}

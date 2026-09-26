@@ -266,5 +266,6 @@ Applying these: edit the alt/`longdesc` (never a straight `"` inside the attribu
 
 | | Book | Chapters | Alt-only figures | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|---|
-| [ ] | Microbiology | 1–26 | ~509 | | | | split into packets at run time |
+| [x] | Microbiology | 1–2.3 (packet 01) | 35 | 13 | 1048–1052 | | 13 of 35 flagged, all confirmed on the image (6 diagram, 7 photo detail); run Sep 26, 2026 as a local worktree agent, 166k tokens |
+| [ ] | Microbiology | 2.3–26 | 473 | | | | 508 alt-only in all; resume at `03-instruments-of-microscopy.md:273` |
 | [ ] | Biology 2e | 1–47 | ~519 | | | | split into packets at run time |
