@@ -2721,6 +2721,14 @@
     "result": "agrees"
    }
   },
+  "082510a5712679f7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0828539da008a0c3": {
    "verdict": "ok",
    "solved": {
@@ -8936,14 +8944,6 @@
   "1a865a554afc3feb": {
    "verdict": "ok",
    "note": "multiplechoice fs-id1791408. Re-derived: options A–C are each directly supported by the section text (ΔG sign, energy consumed/released, both need some activation energy). Option D asserts reaction speed correlates with endergonic/exergonic status, but the section explicitly separates rate (set by activation energy) from spontaneity (set by ΔG sign) and gives rusting iron as a slow *exergonic* reaction — so D is the false statement, matching the CNXML's keyed solution 'D'. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "1a895713e03f4c47": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -24039,6 +24039,14 @@
     "result": "agrees"
    }
   },
+  "4ac6a9013e24c899": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4accfb6f29ac6624": {
    "verdict": "ok",
    "note": "CYU body selfcheck, § Elements in Living Cells: 'The most abundant element in cells is hydrogen (H), followed by carbon (C), oxygen (O), nitrogen (N), phosphorous (P), and sulfur (S).' Model answer lists all six in source order; stays selfcheck because the answer is a six-item ordered list, longer than a textin/multiplechoice form holds cleanly. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -25950,14 +25958,6 @@
   "514a853974f99568": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id1172100648030 (Why must the functions of both lysosomes and peroxisomes be compartmentalized?) — unkeyed; model answer from § Lysosomes and § Peroxisomes. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "514be872643dce92": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "5153ad3ba09e1880": {
    "verdict": "ok",
@@ -39217,6 +39217,14 @@
    "verdict": "ok",
    "note": "critical-thinking fs-idm106299904; model answer and checkpoints reuse the source solution's own sentences, reformatted by phase, no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "7d02fa4d187779a6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7d0422dea9fff3da": {
    "verdict": "ok",
    "note": "x=(4+-sqrt(16-20))/2=2+-i, verified by substitution; key p1297 #5"
@@ -41543,10 +41551,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "84a7315afa3c1bd6": {
-   "verdict": "ok",
-   "note": "checker fix D1: source Critical Thinking fs-id1167661366134 (OSC_Microbio_11_04_TransComp_img labelling), unkeyed upstream; selfcheck model answer rewritten so all nine drawn letters are assigned and the ribosome's E, P, and A sites (letter C's three converging leader lines) are explicitly named, in the order they fall along the mRNA's 5′→3′ direction as drawn: G=mRNA, D=codons, C=the three site positions (E, P, A left to right), H=anticodons of the tRNAs at those sites, A=growing polypeptide (held at the P site), B=incoming amino acid (carried at the A site), F=direction of translocation, I=large ribosomal subunit, drawing-letter E=small ribosomal subunit."
   },
   "84ab7f746a0986c7": {
    "verdict": "ok",
@@ -49669,6 +49673,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "a04458fc521b0c73": {
+   "verdict": "ok",
+   "note": "checker fix D1: source Critical Thinking fs-id1167661366134 (OSC_Microbio_11_04_TransComp_img labelling), unkeyed upstream; selfcheck model answer rewritten so all nine drawn letters are assigned and the ribosome's E, P, and A sites (letter C's three converging leader lines) are explicitly named, in the order they fall along the mRNA's 5′→3′ direction as drawn: G=mRNA, D=codons, C=the three site positions (E, P, A left to right), H=anticodons of the tRNAs at those sites, A=growing polypeptide (held at the P site), B=incoming amino acid (carried at the A site), F=direction of translocation, I=large ribosomal subunit, drawing-letter E=small ribosomal subunit. | Sep 26 2026 alt-only figure pass packet 07: re-hashed by the figure alt rewrite (5′/3′ ends, the three strand groups, 15 leader lines, the detached CCC tRNA); parent re-read the model answer against the image: every letter assignment holds, and the alt names no keyed term"
   },
   "a0455a3105a202b3": {
    "verdict": "ok",
@@ -67777,14 +67785,6 @@
   "db79470ea401f8a2": {
    "verdict": "ok"
   },
-  "db7961790e7b5b7c": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "db7f250effad0c49": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -69205,6 +69205,14 @@
   "e07097193bfbd95f": {
    "verdict": "ok"
   },
+  "e073ec09210b896d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e0750678a6aff4c9": {
    "verdict": "ok",
    "note": "KC 5 23.2 § body Metabolism (fs-idp56155600), m66554 — parent re-read against the module",
@@ -70451,14 +70459,6 @@
   },
   "e4695f32c903d80c": {
    "verdict": "ok"
-  },
-  "e46b546b29bfd868": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "e46ff68586f7d1c2": {
    "verdict": "ok",

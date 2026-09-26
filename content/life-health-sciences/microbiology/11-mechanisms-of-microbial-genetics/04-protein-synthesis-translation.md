@@ -370,7 +370,7 @@ the A site binds to a charged tRNA
   hint="Reread the third paragraph of Transfer RNAs."
 >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_11_04_TransComp_img" alt="A ribosome drawn as a dome sitting above a horizontal strand of many lettered bases, with a smaller oval beneath the dome. Two zigzag shapes sit inside the dome, one connected to a rising chain of linked circles near the top of the figure; a third zigzag shape, carrying a single small circle, sits to the left of the dome and touches one three-letter group on the strand. An arrow beneath the strand points to the right. Nine leader lines, lettered A through I, point to these parts and to a three-letter group at the base of the left-hand zigzag shape." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_11_04_TransComp_img" alt="A ribosome drawn as a dome above a horizontal strand, 5′ at its left end and 3′ at its right, with a smaller oval beneath the dome; groups GGG, UUU, and ACG sit on the strand under the dome. Inside the dome two zigzag shapes stand on UUU and ACG by their bases AAA and UCG; the left one holds a chain of circles rising out of the dome, ends marked C and N, the right one a single circle. A third zigzag shape with a single circle sits outside the dome at upper left, its base CCC free of the strand. An arrow below points right. Letters A to I label parts by 15 leader lines; C, D, H have three each." kind="diagram" >}}
 Label the following in the figure: ribosomal E, P, and A sites; mRNA; codons; anticodons; growing polypeptide; incoming amino acid; direction of translocation; small ribosomal unit; large ribosomal unit.
 {{< /mediafigure >}}
 

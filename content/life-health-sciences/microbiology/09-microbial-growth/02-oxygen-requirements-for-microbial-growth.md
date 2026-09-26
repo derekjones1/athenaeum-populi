@@ -89,7 +89,7 @@ A surgeon examines the ulcer and radiographs of Charles's foot and determines th
 
 - Which growth conditions would you recommend for the detection of *C. perfringens*?
 
-{{< mediafigure src="microbiology/OSC_Microbio_09_02_foot" alt="A close-up photograph of the sole of a foot: the heel is covered by a large area of blackened, dead skin, and the pad beneath the toes shows an open wound with raw, moist tissue and patches of loose, yellowish-white peeling skin." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_09_02_foot" alt="A close-up photograph of the sole of a foot: the big toe is blackened with dead tissue, and the ball of the foot below it shows an open wound with raw, moist tissue and patches of loose, yellowish-white peeling skin." kind="photo" >}}
 This clinical photo depicts ulcers on the foot of a diabetic patient. Dead tissue accumulating in ulcers can provide an ideal growth environment for the anaerobe *C. perfringens*, a causative agent of gas gangrene. (Credit: Phalinn Ooi / Wikimedia Commons (CC-BY))
 {{< /mediafigure >}}
 {{< /callout >}}
@@ -145,7 +145,7 @@ Jeni's blood samples are streaked directly on sheep blood agar, a medium contain
 
 - How serious is Jeni's condition and what is the appropriate treatment?
 
-{{< mediafigure src="microbiology/OSC_Microbio_09_02_listumbrel" alt="(a) A photograph of two red blood agar plates, each streaked with bacterial colonies. The colonies on the left plate sit in agar that is uniformly dark red, with no lightened zone around them. On the right plate, labeled “beta hemolysis,” the colonies sit within a pale, cleared halo where the surrounding blood has been broken down. (b) A photograph of two clear broth tubes side by side. The tube labeled “positive” is cloudy, with growth spreading outward from the central stab line through the medium. The tube labeled “negative” stays clear, with growth confined to the stab line itself." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_09_02_listumbrel" alt="(a) A photograph of two red blood agar plates, each streaked with bacterial colonies. The colonies on the left plate sit in a lighter, orange-red agar with no distinct cleared zone around them. On the right plate, labeled “beta hemolysis,” the colonies sit within a pale, cleared halo where the surrounding blood has been broken down. (b) A photograph of two clear broth tubes side by side. The tube labeled “positive” is cloudy, with growth spreading outward from the central stab line through the medium. The tube labeled “negative” stays clear, with growth confined to the stab line itself." kind="photo" >}}
 (a) A sample blood agar test showing beta-hemolysis. (b) A sample motility test showing both positive and negative results. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by “VeeDunn”/Flickr)
 {{< /mediafigure >}}
 
@@ -219,7 +219,7 @@ The organisms are obligate aerobes.
 
 ### Identify and describe different categories of microbes with requirements for growth with or without oxygen: obligate aerobe, obligate anaerobe, facultative anaerobe, aerotolerant anaerobe, microaerophile, and capnophile
 
-{{< mediafigure src="microbiology/OSC_Microbio_09_02_tubO_img" alt="Four unlabeled test tubes of yellow broth, lettered (a)–(d) beneath them. Tube (a): a small cluster of red cells sits at the very bottom of the tube. Tube (b): a small cluster of red cells sits right at the top of the tube, just below the opening. Tube (c): a larger, denser cluster of red cells sits in a band just under the top of the tube. Tube (d): red cells are scattered throughout the tube, with a denser cluster near the top and a few isolated cells lower down." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_09_02_tubO_img" alt="Four unlabeled test tubes, each half filled with yellow broth, lettered (a)–(d) beneath them. Tube (a): a small cluster of red cells at the very bottom of the broth. Tube (b): a small cluster of red cells floating at the broth's surface. Tube (c): a similar cluster suspended a short way below the broth's surface, with clear broth above it. Tube (d): a cluster at the broth's surface and several isolated cells scattered lower down." kind="diagram" >}}
 Four thioglycolate tube cultures, each showing a different pattern of bacterial growth within the tube.
 {{< /mediafigure >}}
 
