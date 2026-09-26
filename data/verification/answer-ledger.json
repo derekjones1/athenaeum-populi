@@ -3844,6 +3844,14 @@
     "result": "agrees"
    }
   },
+  "0b7df3eb6a11da24": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0b8f1c95d4b6b6d9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -5563,6 +5571,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "109f9d8ae7c14c1c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -11511,10 +11527,6 @@
   "2261dd74b4ee1edd": {
    "verdict": "ok"
   },
-  "2268ed196c1a35ee": {
-   "verdict": "ok",
-   "note": "Microbiology 7.2 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (structural isomers and the three hexoses in the previous section, linked on the page)"
-  },
   "2273f769b6a99637": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -13443,6 +13455,14 @@
    "note": "orchestrator solve (solve-check.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "28df0188db56b20d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -16723,14 +16743,6 @@
   },
   "330dea4e1d1db6ce": {
    "verdict": "ok"
-  },
-  "331b56d870d431bb": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "33221eb1c519967c": {
    "verdict": "ok",
@@ -26292,6 +26304,10 @@
     "result": "agrees"
    }
   },
+  "5295458fd1629c70": {
+   "verdict": "ok",
+   "note": "Microbiology 7.2 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (structural isomers and the three hexoses in the previous section, linked on the page) | Sep 26 2026 alt-only figure pass packet 05: re-hashed by the fructose alt's hydroxyl wording fix (one OH on each of its other five carbons); parent re-read: the model answer and rubric do not depend on the changed clause and still hold"
+  },
   "5298a69b044b1521": {
    "verdict": "ok",
    "note": "Visual Connection selfcheck (fs-id1481511/fs-id2019239, module m66514) — model answer is the module's own keyed solution near-verbatim; checkpoints decompose it with no new claims. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -28243,14 +28259,6 @@
   "58d3dd0598e8b295": {
    "verdict": "ok",
    "note": "pi/3 = 60 deg special angle, cos(pi/3) = 1/2, x-coordinate of point (1/2, sqrt3/2)"
-  },
-  "58d47c253266e3ca": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "58d6bc7bce90256f": {
    "verdict": "ok"
@@ -30991,14 +30999,6 @@
     "result": "agrees"
    }
   },
-  "61c266ef69fd583a": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "61c428b761db8fc9": {
    "verdict": "ok",
    "note": "Review Q fs-idm107405520. D (CO2) is correct — RuBisCO and RuBP are recycled within the cycle; only CO2 must keep entering from outside it, per the section text. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -33189,14 +33189,6 @@
   },
   "69a774671d337703": {
    "verdict": "ok"
-  },
-  "69a82520d2e8c35b": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "69aa4beed75517a1": {
    "verdict": "ok",
@@ -69008,6 +69000,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "dfdfd629732e1086": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },

@@ -36,7 +36,7 @@ The most abundant element in cells is hydrogen (H), followed by carbon (C), oxyg
 
 The four most abundant elements in living matter (C, N, O, and H) have low atomic numbers and are thus light elements capable of forming strong bonds with other atoms to produce molecules (shown below). Carbon forms four chemical bonds, whereas nitrogen forms three, oxygen forms two, and hydrogen forms one. When bonded together within molecules, oxygen, sulfur, and nitrogen often have one or more "lone pairs" of electrons that play important roles in determining many of the molecules' physical and chemical properties (see Appendix A). These traits in combination permit the formation of a vast number of diverse molecular species necessary to form the structures and enable the functions of living organisms.
 
-{{< mediafigure src="microbiology/OSC_Microbio_07_01_commonMol" alt="Three small molecular models built from colored spheres. Carbon dioxide has a gray carbon sphere double-bonded to a red oxygen sphere on each side. Ammonia has a blue nitrogen sphere bonded to three white hydrogen spheres. Oxygen has two red spheres double-bonded to each other." kind="diagram" eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_07_01_commonMol" alt="Three small molecular models built from colored spheres. Carbon dioxide has a gray carbon sphere double-bonded to a red oxygen sphere on each side. Ammonia has a blue nitrogen sphere bonded to three white hydrogen spheres. Oxygen has two red spheres double-bonded to each other. Below each model are its name, formula, and a Lewis structure: carbon dioxide, CO₂, drawn O=C=O with two lone pairs on each oxygen; ammonia, NH₃, a nitrogen single-bonded to three hydrogens with one lone pair; oxygen, O₂, drawn O=O with two lone pairs on each oxygen." kind="diagram" eager="true" >}}
 Some common molecules include carbon dioxide, ammonia, and oxygen, which consist of combinations of oxygen atoms (red spheres), carbon atoms (gray spheres), hydrogen atoms (white spheres), or nitrogen atoms (blue spheres).
 {{< /mediafigure >}}
 
@@ -73,7 +73,7 @@ A carbon atom can bond with up to four other atoms. The simplest organic molecul
 
 Molecules with the same atomic makeup but different structural arrangement of atoms are called **isomers**. The concept of isomerism is very important in chemistry because the structure of a molecule is always directly related to its function. Slight changes in the structural arrangements of atoms in a molecule may lead to very different properties. Chemists represent molecules by their **structural formula**, which is a graphic representation of the molecular structure, showing how the atoms are arranged. Compounds that have identical molecular formulas but differ in the bonding sequence of the atoms are called **structural isomers**. The monosaccharides glucose, galactose, and fructose all have the same molecular formula, C₆H₁₂O₆, but we can see from the structural formulas below that the atoms are bonded together differently.
 
-{{< mediafigure src="microbiology/OSC_Microbio_07_01_isomers" alt="Three six-carbon chains drawn vertically. Glucose and galactose each have a carbon double-bonded to an oxygen at the top, then four carbons each carrying a hydroxyl group on the left or right side, alternating differently between the two chains, ending in a carbon with two hydrogens. Fructose has a hydroxyl-bearing top carbon, a carbon double-bonded to oxygen second from the top, then four more hydroxyl-bearing carbons, the last ending in a carbon with two hydrogens." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_07_01_isomers" alt="Three six-carbon chains. Glucose and galactose each have a carbon double-bonded to an oxygen at the top, then five carbons each carrying a hydroxyl group on the left or right side, the last also carrying two hydrogens; the two chains are identical except at the fourth carbon, highlighted in galactose, where the hydroxyl is on the right in glucose and on the left in galactose. Fructose has a top carbon bearing a hydroxyl and two hydrogens and a carbon double-bonded to oxygen second from the top, both highlighted, then four more hydroxyl-bearing carbons, the last also carrying two hydrogens." kind="diagram" >}}
 Glucose, galactose, and fructose have the same chemical formula (C₆H₁₂O₆), but these structural isomers differ in their physical and chemical properties.
 {{< /mediafigure >}}
 
@@ -216,7 +216,7 @@ False
 
 ### Identify examples of functional groups
 
-{{< mediafigure src="microbiology/OSC_Microbio_07_01_matching_img" alt="Three labelled structural formulas. Formula A shows a carbon bonded above and below to unlabeled bonds and to an oxygen bearing a hydrogen. Formula B shows a carbon double-bonded to an oxygen and singly bonded to an oxygen bearing a hydrogen, and to an R. Formula C shows a nitrogen bonded to an R group and to two hydrogen atoms." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_07_01_matching_img" alt="Three labelled structural formulas. Formula A shows a carbon with three unlabeled bonds (up, down, and left) and a fourth bond, on the right, to an oxygen bearing a hydrogen. Formula B shows a carbon double-bonded to an oxygen and singly bonded to an oxygen bearing a hydrogen, and to an R. Formula C shows a nitrogen bonded to an R group and to two hydrogen atoms." kind="diagram" >}}
 Three structural formulas for the exercise below, drawn using the same R-group notation as the functional-group table above.
 {{< /mediafigure >}}
 
@@ -246,7 +246,7 @@ True
 False
 {{< /multiplechoice >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_07_01_fungroup_img" alt="A structural formula of penicillin G: a benzene ring connects through a CH₂ and a carbon double-bonded to oxygen to a nitrogen, which joins a four-membered ring fused to a five-membered ring. The four-membered ring carries its own carbon double-bonded to oxygen. The five-membered ring carries a sulfur, a carbon bearing two methyl groups, and a carbon bearing a double-bonded oxygen and a hydroxyl." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_07_01_fungroup_img" alt="A structural formula of penicillin G: a benzene ring connects through a CH₂ and a carbon double-bonded to oxygen to an NH, which joins a four-membered ring fused to a five-membered ring. The four-membered ring carries its own carbon double-bonded to oxygen. The five-membered ring contains a sulfur and a carbon bearing two methyl groups, and one of its CH carbons carries a side carbon double-bonded to one oxygen and singly bonded to an oxygen bearing a hydrogen." kind="diagram" >}}
 The structural formula of penicillin G, a narrow-spectrum antibiotic given intravenously or intramuscularly to treat several bacterial diseases and produced by fungi of the genus *Penicillium*.
 {{< /mediafigure >}}
 

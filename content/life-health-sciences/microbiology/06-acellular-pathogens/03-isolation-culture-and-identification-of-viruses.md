@@ -39,7 +39,7 @@ lets only the smallest particles, the virions, pass through
 
 Viruses can be grown **in vivo** (within a whole living organism, plant, or animal) or **in vitro** (outside a living organism in cells in an artificial environment). Flat horizontal cell culture flasks (see the flask photo below) are a common vessel used for in vitro work. Bacteriophages can be grown in the presence of a dense layer of bacteria (also called a **bacterial lawn**) grown in a 0.7 % soft agar in a Petri dish or flat (horizontal) flask (see the plate photo below). As the phage kills the bacteria, many plaques are observed among the cloudy bacterial lawn.
 
-{{< mediafigure src="microbiology/OSC_Microbio_06_03_plaques" alt="(a) A stack of four red-capped, flat rectangular cell-culture flasks filled with red liquid medium. (b) Three round agar plates side by side, each covered with a smooth, pale tan bacterial lawn dotted with small, darker circular plaques; the leftmost plate carries far more plaques than the other two." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_06_03_plaques" alt="(a) A stack of four flat, clear cell-culture flasks with black screw caps, filled with red liquid medium. (b) Three round agar plates side by side, each covered with a smooth, pale tan bacterial lawn dotted with small, darker circular plaques; the leftmost plate carries far more plaques than the other two." kind="photo" >}}
 (a) Flasks like this may be used to culture human or animal cells for viral culturing. (b) These plates contain bacteriophage T4 grown on an *Escherichia coli* lawn. Clear plaques are visible where host bacterial cells have been lysed. Viral titers increase on the plates to the left. (credit a: modification of work by National Institutes of Health; credit b: modification of work by American Society for Microbiology)
 {{< /mediafigure >}}
 
@@ -94,7 +94,7 @@ Further pathological changes include viral disruption of the host genome and alt
 | *Herpesvirus* | Cytoplasmic stranding (arrow) and nuclear inclusion bodies (dashed arrow) | (micrograph, below) |
 | *Adenovirus* | Cell enlargement, rounding, and distinctive "grape-like" clusters | (micrograph, below) |
 
-{{< mediafigure src="microbiology/OSC_Microbio_06_03_CPETable" alt="Four sample micrographs, one per row of the table above: purple-stained round cells with faint clustered specks for paramyxovirus; scattered purple-stained round cells with darker pink round inclusions marked by arrows for poxvirus; elongated, thread-like purple-stained cells with dark round inclusions marked by arrows for herpesvirus; and a field of blue-stained, branching, grape-cluster-shaped cells for adenovirus." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_06_03_CPETable" alt="Four sample micrographs, one per row of the table above: reddish-brown oval nuclei crowded together in one mass on a cream background, marked by a solid arrow and two dashed arrows, for paramyxovirus; scattered swollen cells with small pink inclusions beside their nuclei, marked by four arrows, for poxvirus; long, thin, tapering cells, a dashed arrow marking a dark round inclusion in a nucleus and a solid arrow marking a thin strand of cytoplasm, for herpesvirus; and a field of blue-stained, branching, grape-cluster-shaped cells for adenovirus." kind="photo" >}}
 Sample micrographs illustrating the cytopathic effects listed in the table above. (credit "micrographs": modification of work by American Society for Microbiology)
 {{< /mediafigure >}}
 

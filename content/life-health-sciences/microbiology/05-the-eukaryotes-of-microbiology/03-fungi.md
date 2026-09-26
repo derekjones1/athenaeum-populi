@@ -29,7 +29,7 @@ Fungi are important to humans in a variety of ways. Both microscopic and macrosc
 
 Fungi have well-defined characteristics that set them apart from other organisms. Most multicellular fungal bodies, commonly called molds, are made up of filaments called **hyphae**. Hyphae can form a tangled network called a **mycelium** and form the **thallus** (body) of fleshy fungi. Hyphae that have walls between the cells are called **septate hyphae**; hyphae that lack walls and cell membranes between the cells are called nonseptate or **coenocytic hyphae** (shown below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_05_03_hyphae" alt="Three drawings of tan, tubular fungal filaments on a lavender background, labeled molds beneath the first two. The septate hyphae panel shows branching filaments divided into segments by cross-walls, each segment holding one dot. The coenocytic (nonseptate) hyphae panel shows similar branching filaments with dots but no cross-walls between them. The pseudohyphae panel shows short chains of oval yeast cells clustered together, with two clusters labeled yeast cells." kind="diagram" eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_05_03_hyphae" alt="Three drawings of tan, tubular fungal filaments on a lavender background, labeled molds beneath the first two. The septate hyphae panel shows branching filaments divided into segments by cross-walls, each segment holding one dot. The coenocytic (nonseptate) hyphae panel shows similar branching filaments with dots but no cross-walls between them. The pseudohyphae panel shows branching chains of elongated cells joined end to end, with small clusters of round budding cells at the joints and tips; two of the elongated cells in the chains are labeled yeast cells." kind="diagram" eager="true" >}}
 Multicellular fungi (molds) form hyphae, which may be septate or nonseptate. Unicellular fungi (yeasts) cells form pseudohyphae from individual yeast cells.
 {{< /mediafigure >}}
 
@@ -84,7 +84,7 @@ Many species of ascomycetes are medically important. A large number of species i
 (a) This brightfield micrograph shows ascospores being released from asci in the fungus *Talaromyces flavus* var. *flavus*. (b) This electron micrograph shows the conidia (spores) borne on the conidiophore of *Aspergillus*, a type of toxic fungus found mostly in soil and plants. (c) This brightfield micrograph shows the yeast *Candida albicans*, the causative agent of candidiasis and thrush. (credit a, b, c: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_05_03_sexspores" alt="A brightfield micrograph of a translucent, elongated ascus containing eight oval ascospores arranged in a single row, surrounded by other filamentous fungal structures." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_05_03_sexspores" alt="A micrograph of a translucent, elongated ascus containing eight oval ascospores arranged in a single row, surrounded by other filamentous fungal structures." kind="photo" >}}
 These ascospores, lined up within an ascus, are produced sexually. (credit: Peter G. Werner)
 {{< /mediafigure >}}
 
@@ -143,7 +143,7 @@ The doctor prescribes an antifungal cream for Sarah's mother to apply to the rin
 
 - Can all forms of ringworm be treated with the same antifungal medication?
 
-{{< mediafigure src="microbiology/OSC_Microbio_05_03_Trubrum" alt="A brightfield micrograph of translucent branching fungal filaments. An arrow labeled microconidium points to a small oval spore near the top, and an arrow labeled macroconidium points to a longer, multi-celled, spindle-shaped structure divided into segments." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_05_03_Trubrum" alt="A brightfield micrograph of translucent branching fungal filaments. A label line marks a small oval spore near the top as a microconidium, and another marks a long, cylindrical, round-ended structure divided by cross-walls into about seven segments as a macroconidium." kind="photo" >}}
 This micrograph shows hyphae (macroconidium) and microconidia of *Trichophyton rubrum*, a dermatophyte responsible for fungal infections of the skin. (credit: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
