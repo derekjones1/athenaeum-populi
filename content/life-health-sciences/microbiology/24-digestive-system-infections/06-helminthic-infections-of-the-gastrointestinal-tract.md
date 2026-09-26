@@ -133,7 +133,7 @@ Infection is diagnosed using clinical history, muscle biopsy to look for larvae,
 
 **Taeniasis** is a tapeworm infection, generally caused by pork (*Taenia solium*), beef (*Taenia saginata*), and Asian (*Taenia asiatica*) tapeworms found in undercooked meat. Consumption of raw or undercooked fish, including contaminated sushi, can also result in infection from the fish tapeworm (*Diphyllobothrium latum*). Tapeworms are flatworms (cestodes) with multiple body segments and a head called a scolex that attaches to the intestinal wall. Tapeworms can become quite large, reaching 4 to 8 meters long (shown below). (See the tapeworm life-cycle figure in [Parasitic Helminths](/life-health-sciences/microbiology/05-the-eukaryotes-of-microbiology/02-parasitic-helminths/).)
 
-{{< mediafigure src="microbiology/OSC_Microbio_24_06_Tapeworm" kind="photo" alt="(a) A photo of a pale pink tapeworm segment with a rounded head, labeled scolex, ringed by small hook-like structures. (b) A micrograph of a round, thick-shelled egg." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_24_06_Tapeworm" kind="photo" alt="(a) A micrograph of the pink-stained head of a tapeworm, labeled scolex, bearing four round suckers with a small crown of hooks at the center between them, joined by a narrow neck to the body. (b) A micrograph of a round, thick-shelled egg." >}}
 (a) An adult tapeworm uses the scolex to attach to the intestinal wall. (b) The egg of a pork tapeworm (*Taenia solium*) is visible in this micrograph. (credit a, b: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 

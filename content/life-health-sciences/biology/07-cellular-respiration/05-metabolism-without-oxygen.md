@@ -57,7 +57,7 @@ pyruvic acid + H⁺ → CO₂ + acetaldehyde + NADH + H⁺ → ethanol + NAD⁺
 
 The first reaction is catalyzed by pyruvate decarboxylase, a cytoplasmic enzyme, with a coenzyme of thiamine pyrophosphate (TPP, derived from vitamin B₁ and also called thiamine). A carboxyl group is removed from pyruvic acid, releasing carbon dioxide as a gas. The loss of carbon dioxide reduces the size of the molecule by one carbon, producing acetaldehyde. The second reaction is catalyzed by alcohol dehydrogenase to oxidize NADH to NAD⁺ and reduce acetaldehyde to ethanol. The fermentation of pyruvic acid by yeast produces the ethanol found in alcoholic beverages. Ethanol tolerance of yeast is variable, ranging from about 5 percent to 21 percent, depending on the yeast strain and environmental conditions.
 
-{{< mediafigure src="biology/Figure_07_05_03" kind="photo" alt="A row of large stainless-steel fermentation tanks in a winery, each fitted with valves, gauges, and hoses, with a second row of tanks visible below them." >}}
+{{< mediafigure src="biology/Figure_07_05_03" kind="photo" alt="Two rows of large horizontal stainless-steel fermentation tanks stacked one above the other, each fitted with valves, gauges, and hoses." >}}
 Fermentation of grape juice into wine produces CO₂ as a byproduct. Fermentation tanks have valves so that the pressure inside the tanks created by the carbon dioxide produced can be released.
 {{< /mediafigure >}}
 

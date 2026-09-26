@@ -24,7 +24,7 @@ Diagnosis of vaginal candidiasis can be made using microscopic evaluation of vag
 
 Topical antifungal medications for vaginal candidiasis include butoconazole, miconazole, clotrimazole, tioconazole, and nystatin. Oral treatment with fluconazole can be used. There are often no clear precipitating factors for infection, so prevention is difficult.
 
-{{< mediafigure src="microbiology/OSC_Microbio_23_05_Candida" alt="A micrograph of branching strands bearing three labeled kinds of Candida structures: clusters of small, dark blue-stained spheres near the tips of strands are labeled chlamydospores; a thin, pale connecting strand partway down is labeled pseudohyphae; and looser clusters of smaller, lighter blue-stained spheres along the strands are labeled blastospores." kind="photo" eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_23_05_Candida" alt="A micrograph of branching strands bearing three labeled kinds of Candida structures: clusters of small, dark blue-stained spheres near the tips of strands are labeled chlamydospores; a thin, pale connecting strand partway down is labeled pseudohyphae; and dense, grape-like clusters of tiny, clear, unstained spheres along the strands are labeled blastospores." kind="photo" eager="true" >}}
 *Candida* blastospores (asexual spores that result from budding) and chlamydospores (resting spores produced through asexual reproduction) are visible in this micrograph. (credit: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 

@@ -69,7 +69,7 @@ Department of Biology, Texas A&M University.
 {{< callout type="info" >}}
 **Everyday Connection.** *Drug Discovery by Looking for Inhibitors of Key Enzymes in Specific Pathways*
 
-{{< mediafigure src="biology/Figure_06_05_08" kind="photo" alt="A close-up photograph of several red, capsule-shaped pills scattered on a white surface, each embossed with the text '8 HOUR'." >}}
+{{< mediafigure src="biology/Figure_06_05_08" kind="photo" alt="A close-up photograph of red, capsule-shaped pills scattered on a white surface, several embossed with the text '8 HOUR'." >}}
 Have you ever wondered how pharmaceutical drugs are developed? (credit: Deborah Austin)
 {{< /mediafigure >}}
 
@@ -82,7 +82,7 @@ How are drugs developed? One of the first challenges in drug development is iden
 
 Many enzymes don't work optimally, or even at all, unless bound to other specific non-protein helper molecules, either temporarily through ionic or hydrogen bonds or permanently through stronger covalent bonds. Two types of helper molecules are **cofactors** and **coenzymes**. Binding to these molecules promotes optimal conformation and function for their respective enzymes. Cofactors are inorganic ions such as iron (Fe²⁺) and magnesium (Mg²⁺). One example of an enzyme that requires a metal ion as a cofactor is the enzyme that builds DNA molecules, DNA polymerase, which requires a bound zinc ion (Zn²⁺) to function. Coenzymes are organic helper molecules, with a basic atomic structure comprised of carbon and hydrogen, which are required for enzyme action. The most common sources of coenzymes are dietary vitamins (below). Some vitamins are precursors to coenzymes and others act directly as coenzymes. Vitamin C is a coenzyme for multiple enzymes that take part in building the important connective tissue component, collagen. An important step in breaking down glucose to yield energy is catalysis by a multi-enzyme complex scientists call pyruvate dehydrogenase. Pyruvate dehydrogenase is a complex of several enzymes that actually requires one cofactor (a magnesium ion) and five different organic coenzymes to catalyze its specific chemical reaction. Therefore, enzyme function is, in part, regulated by an abundance of various cofactors and coenzymes, which the diets of most organisms supply.
 
-{{< mediafigure src="biology/Figure_06_05_06-0593" kind="diagram" alt="A labeled grid of the molecular structures of eight dietary vitamins and their coenzyme forms: Vitamin A (retinol), folic acid (folate), Vitamin B1 (thiamin), Vitamin C (ascorbic acid), Vitamin B2 (riboflavin), Vitamin D2 (calciferol), Vitamin B6 (pyridoxine), and Vitamin E (α-tocopherol)." >}}
+{{< mediafigure src="biology/Figure_06_05_06-0593" kind="diagram" alt="A labeled grid of the molecular structures of eight dietary vitamins: Vitamin A (retinol), folic acid (folate), Vitamin B1 (thiamin), Vitamin C (ascorbic acid), Vitamin B2 (riboflavin), Vitamin D2 (calciferol), Vitamin B6 (pyridoxine), and Vitamin E (α-tocopherol)." >}}
 Vitamins are important coenzymes or precursors of coenzymes, and are required for enzymes to function properly. Multivitamin capsules usually contain mixtures of all the vitamins at different percentages.
 {{< /mediafigure >}}
 

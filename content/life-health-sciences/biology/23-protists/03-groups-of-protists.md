@@ -73,7 +73,7 @@ Like the Archaeplastida, the Amoebozoa include species with single cells, specie
 
 The Gymnamoeba or lobose amoebae include both naked amoebae like the familiar *Amoeba proteus* and shelled amoebae, whose bodies protrude like snails from their protective tests. *Amoeba proteus* is a large amoeba about 500 µm in diameter but is dwarfed by the multinucleate amoebae *Pelomyxa*, which can be 10 times its size. Although *Pelomyxa* may have hundreds of nuclei, it has lost its mitochondria, but replaced them with bacterial endosymbionts. The secondary loss or modification of mitochondria is a feature also seen in other protist groups.
 
-{{< mediafigure src="biology/Figure_23_03_17" kind="photo" alt="A light micrograph, framed by a round field of view, of two amoebas with irregular, lobed bodies and long, thin, radiating pseudopodial projections, one stained reddish-pink and one olive-green, with the dark tip of a pointer entering from below." >}}
+{{< mediafigure src="biology/Figure_23_03_17" kind="photo" alt="A light micrograph, framed by a round field of view, of three amoebas: two stained reddish-pink with long, thin, radiating pseudopods and one olive-green with short, lobe-shaped pseudopods, with the dark tip of a pointer entering from below." >}}
 Amoeba. Amoebae with tubular and lobe-shaped pseudopodia are seen under a microscope. These isolates would be morphologically classified as amoebozoans.
 {{< /mediafigure >}}
 
@@ -131,7 +131,7 @@ Foraminiferan Tests. These shells from foraminifera sank to the sea floor. (cred
 
 A second subtype of Rhizaria, the radiolarians, exhibit intricate exteriors of glassy silica with radial or bilateral symmetry (pictured below). Needle-like pseudopods supported by microtubules radiate outward from the cell bodies of these protists and function to catch food particles. The shells of dead radiolarians sink to the ocean floor, where they may accumulate in 100 meter-thick depths. Preserved, sedimented radiolarians are very common in the fossil record.
 
-{{< mediafigure src="biology/Figure_23_03_14" kind="photo" alt="A scanning electron micrograph of a teardrop-shaped, hollow radiolarian shell riddled with round holes, its glassy silica surface perforated throughout, a 10 µm scale bar at lower right." >}}
+{{< mediafigure src="biology/Figure_23_03_14" kind="photo" alt="A scanning electron micrograph of a teardrop-shaped, hollow radiolarian shell riddled with round holes of varied size, a 10 µm scale bar at lower right." >}}
 Radiolarian shell. This fossilized radiolarian shell was imaged using a scanning electron microscope. (credit: modification of work by Hannes Grobe, Alfred Wegener Institute; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
@@ -210,7 +210,7 @@ Stramenopile flagella. This stramenopile cell has a single hairy flagellum and a
 
 The diatoms are unicellular photosynthetic protists that encase themselves in intricately patterned, glassy cell walls composed of silicon dioxide in a matrix of organic particles (pictured below). These protists are a component of freshwater and marine plankton. Most species of diatoms reproduce asexually, although some instances of sexual reproduction and sporulation also exist. Some diatoms exhibit a slit in their silica shell, called a **raphe**. By expelling a stream of mucopolysaccharides from the raphe, the diatom can attach to surfaces or propel itself in one direction.
 
-{{< mediafigure src="biology/Figure_23_03_09" kind="photo" alt="A light micrograph of assorted blue-tinted diatoms of varied shapes and sizes: several tube- and diamond-shaped forms, one disk-shaped diatom with a visible central hub, and another disk viewed end-on showing radial grooves." >}}
+{{< mediafigure src="biology/Figure_23_03_09" kind="photo" alt="A light micrograph of assorted blue-tinted diatoms of varied shapes and sizes: several needle- and diamond-shaped forms, one disk-shaped diatom with a visible central hub, and a rectangular form crossed by evenly spaced parallel bands." >}}
 Diatoms. Assorted diatoms, visualized here using light microscopy, live among annual sea ice in McMurdo Sound, Antarctica. Diatoms range in size from 2 to 200 µm. (credit: Prof. Gordon T. Taylor, Stony Brook University, NSF, NOAA)
 {{< /mediafigure >}}
 

@@ -28,7 +28,7 @@ Tooth decay results from the metabolic activity of microbes that live on the tee
 Tooth decay occurs in stages. When bacterial biofilms (plaque) develop on teeth, the acids produced gradually dissolve the enamel, followed by the dentin. Eventually, if left untreated, the lesion may reach the pulp and cause an abscess. (credit: modification of work by "BruceBlaus"/Wikimedia Commons)
 {{< /mediafigure >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_24_02_Xray" kind="photo" alt="Five photos of teeth, labeled (a) through (e): (a) the lower front teeth with yellow-brown tartar deposits at the gumline; (b) a close-up of a molar with a small dark decayed spot labeled decay; (c) a black-and-white dental X-ray of two molars with two arrows pointing to a dark area of decay inside one tooth; (d) a close-up of a molar with a dark drilled hole; (e) a close-up of a molar with a larger hole and surrounding red, bleeding gum tissue." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_24_02_Xray" kind="photo" alt="Five photos of teeth, labeled (a) through (e): (a) the lower front teeth with yellow-brown tartar deposits at the gumline; (b) a close-up of a molar with a small dark decayed spot labeled decay; (c) a black-and-white dental X-ray of upper and lower teeth with two arrows pointing to a dark area of decay inside one tooth; (d) a close-up of a molar with a dark drilled hole; (e) a close-up of a molar with a larger hole and surrounding red, bleeding gum tissue." >}}
 (a) Tartar (dental calculus) is visible at the bases of these teeth. The darker deposits higher on the crowns are staining. (b) This tooth shows only a small amount of visible decay. (c) An X-ray of the same tooth shows that there is a dark area representing more decay inside the tooth. (d) Removal of a portion of the crown reveals the area of damage. (e) All of the cavity must be removed before filling. (credit: modification of work by "DRosenbach"/Wikimedia Commons)
 {{< /mediafigure >}}
 
@@ -111,7 +111,7 @@ As noted earlier, normal oral microbiota can cause dental and periodontal infect
 
 As described in [Viral Infections of the Skin and Eyes](/life-health-sciences/microbiology/21-skin-and-eye-infections/03-viral-infections-of-the-skin-and-eyes/), infections by herpes simplex virus type 1 (HSV-1) frequently manifest as oral herpes, also called acute herpes labialis and characterized by cold sores on the lips, mouth, or gums. HSV-1 can also cause acute **herpetic gingivostomatitis**, a condition that results in ulcers of the mucous membranes inside the mouth (shown below). Herpetic gingivostomatitis is normally self-limiting except in immunocompromised patients. Like oral herpes, the infection is generally diagnosed through clinical examination, but cultures or biopsies may be obtained if other signs or symptoms suggest the possibility of a different causative agent. If treatment is needed, mouthwashes or antiviral medications such as acyclovir, famciclovir, or valacyclovir may be used.
 
-{{< mediafigure src="microbiology/OSC_Microbio_24_02_HerpGing" kind="photo" alt="(a) A photo of a crusted, reddish cold sore on the skin near the corner of the mouth. (b) A photo looking into an open mouth showing red, inflamed tissue with white speckled patches on the soft palate above the tongue." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_24_02_HerpGing" kind="photo" alt="(a) A photo of the lips with two crusted, reddish cold sores, one on the edge of the upper lip and one on the skin above it toward the cheek. (b) A photo looking into an open mouth showing red, inflamed tissue with white speckled patches on the soft palate above the tongue." >}}
 (a) This cold sore is caused by infection with herpes simplex virus type 1 (HSV-1). (b) HSV-1 can also cause acute herpetic gingivostomatitis. (credit b: modification of work by Klaus D. Peter)
 {{< /mediafigure >}}
 
@@ -121,7 +121,7 @@ The yeast *Candida* is part of the normal human microbiota, but overgrowths, esp
 
 Oral thrush is characterized by the appearance of white patches and pseudomembranes in the mouth (shown below) and can be associated with bleeding. The infection may be treated topically with nystatin or clotrimazole oral suspensions, although systemic treatment is sometimes needed. In serious cases, systemic azoles such as fluconazole or itraconazole (for strains resistant to fluconazole), may be used. Amphotericin B can also be used if the infection is severe or if the *Candida* species is azole-resistant.
 
-{{< mediafigure src="microbiology/OSC_Microbio_24_02_Thrush" kind="photo" alt="A photo looking into an open mouth showing thick white-yellow patches covering red, inflamed tissue along the inner cheek and gum." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_24_02_Thrush" kind="photo" alt="A photo looking into an open mouth showing thick white-yellow patches covering red, inflamed tissue on the roof and back of the mouth, behind the raised tip of the tongue." >}}
 Overgrowth of *Candida* in the mouth is called thrush. It often appears as white patches. (credit: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 

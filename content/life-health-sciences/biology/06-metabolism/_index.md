@@ -5,7 +5,7 @@ source_chapter: "6"
 weight: 7
 ---
 
-{{< mediafigure src="biology/Figure_06_00_01-db8f" alt="A hummingbird with its wings blurred in motion hovers beside a red flower-shaped feeder, its long thin beak inserted into one of the feeder's yellow-rimmed ports." kind="photo" eager="true" >}}
+{{< mediafigure src="biology/Figure_06_00_01-db8f" alt="A hummingbird with its wings blurred in motion hovers beside a red feeder, its long thin beak reaching toward one of the feeder's yellow flower-shaped ports." kind="photo" eager="true" >}}
 A hummingbird needs energy to maintain prolonged periods of flight. The bird
 obtains its energy from taking in food and transforming the nutrients into
 energy through a series of biochemical reactions. The flight muscles in

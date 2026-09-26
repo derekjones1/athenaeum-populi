@@ -31,7 +31,7 @@ Many infected individuals do not develop symptoms, and thus do not realize that 
 
 In males, the herpes lesions typically develop on the penis and may be accompanied by a watery discharge. In females, the vesicles develop most commonly on the vulva, but may also develop on the vagina or cervix (see the figure below). The symptoms are typically mild, although the lesions may be irritating or accompanied by urinary discomfort. Use of condoms may not always be an effective means of preventing transmission of genital herpes since the lesions can occur on areas other than the genitals.
 
-{{< mediafigure src="microbiology/OSC_Microbio_23_04_HerpLesion" kind="photo" alt="Two photos side by side. (a) A close view of the shaft of a penis showing a cluster of pale, crusted, ulcerated lesions on inflamed pink skin. (b) A close view of skin dotted with numerous small pink-red raised bumps among body hair, with one circled and a 5 mm scale bar in the lower right." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_23_04_HerpLesion" kind="photo" alt="Two photos side by side. Left: a close view of the shaft of a penis showing a cluster of pale, crusted, ulcerated lesions on inflamed pink skin. Right: a close view of skin dotted with numerous small pink-red raised bumps among body hair, with one circled and a 5 mm scale bar in the lower right." >}}
 Genital herpes is typically characterized by lesions on the genitals (left), but lesions can also appear elsewhere on the skin or mucous membranes (right). The lesions can be large and painful or small and easily overlooked. (credit b: modification of work by Schiffer JT, Swan D, Al Sallaq R, Magaret A, Johnston C, Mark KE, Selke S, Ocbamichael N, Kuntz S, Zhu J, Robinson B, Huang ML, Jerome KR, Wald A, and Corey)
 {{< /mediafigure >}}
 
@@ -83,7 +83,7 @@ HPV cannot be cultured, so molecular tests are the primary method used to detect
 
 Because HPV testing is often conducted concurrently with Pap testing, the most common approach uses a single sample collection within one vial for both. This approach uses liquid-based cytology (LBC). The samples are then used for Pap smear cytology as well as HPV testing and genotyping. HPV can be recognized in Pap smears by the presence of cells called koilocytes (called koilocytosis or koilocytotic atypia). Koilocytes have a hyperchromatic atypical nucleus that stains darkly and a high ratio of nuclear material to cytoplasm. There is a distinct clear appearance around the nucleus called a perinuclear halo (see the figure below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_23_04_GenWarts" kind="photo" alt="Two photos side by side. (a) A close view of the perianal region showing a dense cluster of lumpy, cauliflower-like pink-white wart growths. (b) A close view of the vulvar area, gloved fingers parting the labia to reveal irregular white wart growths near the vaginal opening." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_23_04_GenWarts" kind="photo" alt="Two photos side by side. Left: a close view of the perianal region showing a dense cluster of lumpy, cauliflower-like pink-white wart growths. Right: a close view of the vulvar area, gloved fingers parting the labia to reveal irregular white wart growths near the vaginal opening." >}}
 Genital warts may occur around the anus (left) or genitalia (right). (credit left, right: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 

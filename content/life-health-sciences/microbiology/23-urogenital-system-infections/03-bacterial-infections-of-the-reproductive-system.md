@@ -33,7 +33,7 @@ Since *G. vaginalis* can also be isolated from healthy females, the "gold standa
 
 Treatment is often unnecessary because the infection often clears on its own. However, in some cases, antibiotics such as topical or oral clindamycin or metronidazole may be prescribed. Alternative treatments include oral tinidazole or clindamycin ovules (vaginal suppositories).
 
-{{< mediafigure src="microbiology/OSC_Microbio_23_03_VagSmear" kind="photo" eager="true" alt="A micrograph of a vaginal smear with two clusters of larger, pale epithelial cells labeled normal cells and a stippled, granular-looking cell cluster at the lower left labeled clue cell." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_23_03_VagSmear" kind="photo" eager="true" alt="A micrograph of a vaginal smear with two large, pale, flat epithelial cells labeled normal cells and, at the lower left, one epithelial cell whose surface is densely stippled with bacteria, labeled clue cell." >}}
 In this vaginal smear, the cell at the lower left is a clue cell with a unique appearance caused by the presence of bacteria on the cell. The cell on the right is a normal cell.
 {{< /mediafigure >}}
 
@@ -74,7 +74,7 @@ Also known as the clap, **gonorrhea** is a common sexually transmitted disease o
 
 Many infected individuals are asymptomatic carriers of gonorrhea. When symptoms do occur, they manifest differently in males and females. Males may develop pain and burning during urination and discharge from the penis that may be yellow, green, or white (shown below). Less commonly, the testicles may become swollen or tender. Over time, these symptoms can increase and spread. In some cases, chronic infection develops. The disease can also develop in the rectum, causing symptoms such as discharge, soreness, bleeding, itching, and pain (especially in association with bowel movements).
 
-{{< mediafigure src="microbiology/OSC_Microbio_23_03_Gonorrheae" kind="photo" alt="(a) A close-up photo of the head of a penis with small reddened lesions and a drop of white-yellow discharge at the tip. (b) A photo of a metal speculum spreading the vaginal opening during a pelvic exam. (c) A pink-stained micrograph of a smear crowded with large cells whose dark red nuclei are lobed, with small clusters of dark paired cocci inside and among them; an inset enlarges one cluster, and a 10 µm scale bar is shown." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_23_03_Gonorrheae" kind="photo" alt="(a) A close-up photo of the head of a red, inflamed penis with a few small yellow-crusted skin lesions and globules of white-yellow discharge at the tip. (b) A photo of a metal speculum spreading the vaginal opening during a pelvic exam. (c) A pink-stained micrograph of a smear crowded with large cells whose dark red nuclei are lobed, with small clusters of dark paired cocci inside and among them; an inset enlarges one cluster, and a 10 µm scale bar is shown." >}}
 (a) Clinical photograph of gonococcal discharge from penis. The lesions on the skin could indicate co-infection with another STI. (b) Purulent discharge originating from the cervix and accumulating in the vagina of a patient with gonorrhea. (c) A micrograph of urethral discharge shows gram-negative diplococci (paired cells) both inside and outside the leukocytes (large cells with lobed nuclei). These results could be used to diagnose gonorrhea in a male patient, but female vaginal samples may contain other *Neisseria* spp. even if the patient is not infected with *N. gonorrhoeae*. (credit a, b: modification of work by Centers for Disease Control and Prevention; credit c: modification of work by American Society for Microbiology)
 {{< /mediafigure >}}
 
@@ -276,7 +276,7 @@ Many bacterial infections affecting the reproductive system are transmitted thro
 *Haemophilus ducreyi*.
 {{< /multiplechoice >}}
 
-{{< mediafigure src="microbiology/OSC_Microbio_23_03_ArtConnect_img" kind="photo" alt="A grayscale micrograph with a three-dimensional look showing several thin, tightly coiled spiral cells lying on a textured surface." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_23_03_ArtConnect_img" kind="photo" alt="A grayscale micrograph with a three-dimensional look showing several thin, loosely coiled spiral cells arching up from a ridged, fibrous surface." >}}
 (credit: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 

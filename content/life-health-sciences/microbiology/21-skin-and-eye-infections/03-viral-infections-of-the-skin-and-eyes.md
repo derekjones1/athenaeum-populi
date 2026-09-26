@@ -67,7 +67,7 @@ Fifth disease (also known as erythema infectiosum) is another common, highly con
 
 In children, the disease usually resolves on its own without medical treatment beyond symptom relief as needed. Adults may experience different and possibly more serious symptoms. Many adults with fifth disease do not develop any rash, but may experience joint pain and swelling that lasts several weeks or months. Immunocompromised individuals can develop severe anemia and may need blood transfusions or immune globulin injections. While the rash is the most important component of diagnosis (especially in children), the symptoms of fifth disease are not always consistent. Serological testing can be conducted for confirmation.
 
-{{< mediafigure src="microbiology/OSC_Microbio_21_03_roseola5th" alt="(a) Faint pink spots dot a toddler's legs and lower back above a diaper. (b) An infant lies on their back with flushed, deep-pink cheeks and a blotchy pink rash spread over the chest, abdomen, and arms." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_21_03_roseola5th" alt="(a) Faint pink spots dot a diapered toddler's legs, from just below the diaper down to the calves. (b) An infant lies on their back with flushed, deep-pink cheeks and a blotchy pink rash spread over the chest, abdomen, and arms." kind="photo" >}}
 (a) Roseola, a mild viral infection common in young children, generally begins with symptoms similar to a cold, followed by a pink, patchy rash that starts on the trunk and spreads outward. (b) Fifth disease exhibits similar symptoms in children, except for the distinctive "slapped cheek" rash that originates on the face.
 {{< /mediafigure >}}
 

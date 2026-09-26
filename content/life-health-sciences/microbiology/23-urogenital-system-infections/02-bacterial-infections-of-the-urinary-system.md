@@ -29,7 +29,7 @@ Low specificity, sensitivity, or both, associated with these rapid screening tes
 
 Bacterial cystitis is commonly treated with fluoroquinolones, nitrofurantoin, cephalosporins, or a combination of trimethoprim and sulfamethoxazole. Pain medications may provide relief for patients with dysuria. Treatment is more difficult in elderly patients, who experience a higher rate of complications such as sepsis and kidney infections.
 
-{{< mediafigure src="microbiology/OSC_Microbio_23_02_Dipstick" kind="photo" eager="true" alt="Two thin white dipsticks, each with several small colored square pads: one is held against a printed color-key chart on a specimen cup, and a second lies beside it; each pad's color, matched against the key, indicates a different urine measurement." >}}
+{{< mediafigure src="microbiology/OSC_Microbio_23_02_Dipstick" kind="photo" eager="true" alt="Two thin white dipsticks, each with four small colored square pads: one is held against the printed four-row color key on the test-strip bottle, and a second lies beside it; each pad's color, matched against its row of the key, indicates a different urine measurement." >}}
 A urine dipstick is compared against a color key to determine levels of various chemicals, proteins, or cells in the urine. Abnormal levels may indicate an infection. (credit: modification of work by Suzanne Wakim)
 {{< /mediafigure >}}
 

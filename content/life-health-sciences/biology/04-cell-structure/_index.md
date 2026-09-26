@@ -5,7 +5,7 @@ source_chapter: "4"
 weight: 5
 ---
 
-{{< mediafigure src="biology/Figure_04_00_00-2013" alt="Three microscopy panels side by side: (a) a pink- and purple-stained tissue section packed with round, dark purple cell nuclei, (b) a light micrograph of transparent, blue-stained rectangular plant cells with thick cell walls, and (c) a false-color gold scanning electron micrograph of oval and round bacterial cells on a black background, with one thin pilus connecting two of them." kind="photo" eager="true" >}}
+{{< mediafigure src="biology/Figure_04_00_00-2013" alt="Three microscopy panels side by side: (a) a pink- and purple-stained tissue section packed with round, dark purple cell nuclei, (b) a light micrograph of transparent, blue-stained rectangular plant cells with thick cell walls, and (c) a false-color gold scanning electron micrograph of oval and round bacterial cells on a dark blue background, with one thin pilus connecting two of them." kind="photo" eager="true" >}}
 (a) Nasal sinus cells (viewed with a light microscope), (b) onion cells
 (viewed with a light microscope), and (c) *Vibrio tasmaniensis* bacterial
 cells (seen through a scanning electron microscope) are from very different

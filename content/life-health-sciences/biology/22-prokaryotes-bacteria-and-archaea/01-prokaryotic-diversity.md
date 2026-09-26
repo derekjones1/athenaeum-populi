@@ -68,7 +68,7 @@ Prokaryotes thrive in a vast array of environments: Some grow in conditions that
 | Halophiles | Salt concentration of at least 0.2 M |
 | Osmophiles | High sugar concentration |
 
-{{< mediafigure src="biology/Figure_22_01_04" kind="photo" alt="A false-color transmission electron micrograph of a round, teal-green Deinococcus radiodurans cluster about 3 microns across, divided by cross walls into four compartments, with parts of neighboring cells at the frame edges against a lighter teal background; a 500 nm scale bar is shown at lower right." >}}
+{{< mediafigure src="biology/Figure_22_01_04" kind="photo" alt="A false-color transmission electron micrograph of a round, teal-green Deinococcus radiodurans cell about 3 microns across, divided by a single diagonal cross wall into two daughter cells, with parts of neighboring cells at the frame edges against a lighter teal background; a 500 nm scale bar is shown at lower right." >}}
 Radiation-tolerant prokaryotes. *Deinococcus radiodurans*, visualized in this false color transmission electron micrograph, is a prokaryote that can tolerate very high doses of ionizing radiation. It has developed DNA repair mechanisms that allow it to reconstruct its chromosome even if it has been broken into hundreds of pieces by radiation or heat. (credit: modification of work by Michael Daly; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 

@@ -352,7 +352,7 @@ crop yield, find a cure for a particular disease, or save animals threatened
 by a natural disaster (see the photo below). In applied science, the
 problem is usually defined for the researcher.
 
-{{< mediafigure src="biology/Figure_01_01_08" kind="photo" alt="A close-up of a person's hand cradling a small, sleeping baby squirrel wrapped in a soft yellow towel." >}}
+{{< mediafigure src="biology/Figure_01_01_08" kind="photo" alt="A close-up of a person's hand cradling a small, sleeping baby squirrel curled up in the palm, with a soft peach-colored fleece blanket behind and beneath the hand." >}}
 After Hurricane Irma struck the Caribbean and Florida in 2017, thousands of
 baby squirrels like this one were thrown from their nests. Thanks to
 applied science, scientists knew how to rehabilitate the squirrel. (credit:

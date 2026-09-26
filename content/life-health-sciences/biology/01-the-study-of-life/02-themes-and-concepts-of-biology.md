@@ -304,7 +304,7 @@ interdisciplinary nature, this subdiscipline studies different nervous
 system functions using molecular, cellular, developmental, medical, and
 computational approaches.
 
-{{< mediafigure src="biology/Figure_01_02_18" alt="Four researchers work an outdoor excavation site on a reddish hillside: two kneel under a white canvas shade and two more dig in the open ground beside it, carefully uncovering fossils embedded in the dirt." >}}
+{{< mediafigure src="biology/Figure_01_02_18" alt="Four researchers work an outdoor excavation site on a dry, ochre hillside: two bend and crouch under a white tarp shade, and two more kneel at the bank beside it, digging into the dirt." >}}
 Researchers work on excavating dinosaur fossils at a site in Castellón, Spain. (credit: Mario Modesto)
 {{< /mediafigure >}}
 

@@ -96,7 +96,7 @@ Puffball and spores. The (a) giant puffball mushroom releases (b) a cloud of spo
 
 Fungi reproduce asexually by *fragmentation, budding*, or *producing spores*. Fragments of hyphae can grow new colonies. Somatic cells in yeast form buds. During budding (an expanded type of cytokinesis), a bulge forms on the side of the cell, the nucleus divides mitotically, and the bud ultimately detaches itself from the mother cell (pictured below).
 
-{{< mediafigure src="biology/Figure_24_01_06" alt="Micrograph of budding yeast cells: several round, dark blue-stained parent cells each with a smaller, teardrop-shaped bud attached to one side, scattered against a light blue-green background, with a 5 µm scale bar at lower right." kind="photo" >}}
+{{< mediafigure src="biology/Figure_24_01_06" alt="Micrograph of budding yeast cells: scattered dark blue-stained oval cells, a few of them with a smaller, paler, rounded bud attached to one side, against a light blue-green background, with a 5 µm scale bar at lower right." kind="photo" >}}
 Budding in *Histoplasma*. The dark cells in this bright field light micrograph are the pathogenic yeast *Histoplasma capsulatum*, seen against a backdrop of light blue tissue. Histoplasma primarily infects lungs but can spread to other tissues, causing histoplasmosis, a potentially fatal disease. (credit: modification of work by Dr. Libero Ajello, CDC; scale-bar data from Matt Russell)
 {{< /mediafigure >}}
 
