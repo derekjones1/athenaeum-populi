@@ -20,7 +20,10 @@
     eager      "true" to load without `loading="lazy"` (first figure on a page)
     kind       "photo" or "diagram" — overrides the manifest's guess (JPEG =
                photo, otherwise diagram); diagrams get a light plate on the
-               dark theme, photos do not
+               dark theme, photos do not — unless the vendored file has
+               transparent pixels (manifest `transparent`, recorded by
+               vendor-media): those always get the plate, since black labels
+               printed on transparency vanish against the dark page
 
   The <img> carries width/height from the manifest (no layout shift), a
   srcset of every vendored variant, and never upscales: a 430 px diagram
@@ -59,7 +62,7 @@
   {{- errorf "mediafigure %q: kind must be photo or diagram, got %q (%s)" $src $kind .Position -}}
 {{- end -}}
 {{- $caption := trim .Inner "\n\t " -}}
-<figure class="ap-mediafigure" data-stem="{{ $stem }}" data-kind="{{ $kind }}">
+<figure class="ap-mediafigure" data-stem="{{ $stem }}" data-kind="{{ $kind }}"{{ if $entry.transparent }} data-transparent{{ end }}>
   <img src="/media/{{ $book }}/{{ $largest.file }}"
     {{- if gt (len $variants) 1 }} srcset="{{ delimit $srcset ", " }}" sizes="(min-width: 48rem) min({{ int $largest.width }}px, 44rem), 100vw"{{ end }}
     width="{{ int $largest.width }}" height="{{ int $largest.height }}"

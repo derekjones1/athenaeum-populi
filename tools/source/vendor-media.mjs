@@ -27,6 +27,18 @@
  * upscaled — a 430 px diagram ships once at 430 px, a 3000 px photo ships at
  * 800 and 1600. Idempotent: an entry whose source SHA-256 and files are all
  * present is skipped.
+ *
+ * Each entry also records `transparent`: whether the largest variant has any
+ * pixel with alpha below 255 (decoded with `dwebp`, from the same Homebrew
+ * package as `cwebp`). The shortcode backs a transparent figure with a light
+ * plate on the dark theme whatever its `kind`, because black labels printed
+ * on a transparent background vanish against the dark page — 39 photo-kind
+ * figures lost their panel letters and labels that way (September 26, 2026).
+ *
+ *   node tools/source/vendor-media.mjs --book biology --refresh-transparency
+ *
+ * recomputes the field for every entry already in the manifest from the
+ * vendored files alone (no source checkout, no re-encode).
  */
 import { execFileSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
@@ -45,17 +57,22 @@ export const TARGET_WIDTHS = Object.freeze([800, 1600]);
 export const WEBP_QUALITY = 82;
 
 export function parseArgs(argv) {
-  const options = { book: null, chapters: [], modules: [], dryRun: false };
+  const options = { book: null, chapters: [], modules: [], dryRun: false, refreshTransparency: false };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === '--dry-run') options.dryRun = true;
     else if (arg === '--book') options.book = argv[++i];
     else if (arg === '--chapter') options.chapters.push(Number(argv[++i]));
     else if (arg === '--module') options.modules.push(argv[++i]);
+    else if (arg === '--refresh-transparency') options.refreshTransparency = true;
     else throw new Error(`unknown option ${JSON.stringify(arg)}`);
   }
   if (!options.book) throw new Error('--book <key> is required');
   if (options.chapters.some((n) => !Number.isInteger(n) || n < 1)) throw new Error('--chapter takes a positive integer');
+  if (options.refreshTransparency) {
+    if (options.chapters.length || options.modules.length) throw new Error('--refresh-transparency works on the whole manifest; drop --chapter/--module');
+    return options;
+  }
   if (!options.chapters.length && !options.modules.length) throw new Error('name at least one --chapter or --module');
   return options;
 }
@@ -157,6 +174,47 @@ export function variantWidths(sourceWidth) {
   return [...new Set(TARGET_WIDTHS.map((w) => Math.min(w, sourceWidth)))].sort((a, b) => a - b);
 }
 
+/** Whether a decoded PAM image (`dwebp -pam`) has any pixel with alpha below
+ * 255. A PAM without an alpha channel (DEPTH 3) is opaque by construction. */
+export function pamHasTransparency(buffer) {
+  const end = buffer.indexOf('ENDHDR\n');
+  if (buffer.subarray(0, 3).toString('latin1') !== 'P7\n' || end < 0) throw new Error('not a PAM image');
+  const header = buffer.subarray(0, end).toString('latin1');
+  const field = (name) => Number((header.match(new RegExp(`^${name} (\\d+)$`, 'm')) || [])[1]);
+  const [width, height, depth, maxval] = ['WIDTH', 'HEIGHT', 'DEPTH', 'MAXVAL'].map(field);
+  if (!width || !height || !depth || maxval !== 255) throw new Error(`unsupported PAM header: ${JSON.stringify(header)}`);
+  const pixels = buffer.subarray(end + 'ENDHDR\n'.length);
+  if (pixels.length !== width * height * depth) throw new Error(`PAM data is ${pixels.length} bytes, expected ${width * height * depth}`);
+  if (depth !== 4) return false;
+  for (let i = 3; i < pixels.length; i += 4) if (pixels[i] < 255) return true;
+  return false;
+}
+
+/** Decode a vendored WebP and report whether it has transparent pixels. */
+export function webpHasTransparency(file) {
+  return pamHasTransparency(execFileSync('dwebp', ['-quiet', '-pam', file, '-o', '-'], { maxBuffer: 512 * 1024 * 1024 }));
+}
+
+/** The variant the shortcode serves as `src` — the widest. */
+function largestVariant(entry) {
+  return [...entry.variants].sort((a, b) => a.width - b.width).at(-1);
+}
+
+function refreshTransparency(bookKey) {
+  requireBinary('dwebp');
+  const manifestPath = path.join(repositoryRoot, 'data/media', `${bookKey}.json`);
+  if (!existsSync(manifestPath)) throw new Error(`no manifest ${path.relative(repositoryRoot, manifestPath)}`);
+  const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+  const outDir = path.join(repositoryRoot, 'static/media', bookKey);
+  let transparent = 0;
+  for (const entry of Object.values(manifest.figures)) {
+    entry.transparent = webpHasTransparency(path.join(outDir, largestVariant(entry).file));
+    if (entry.transparent) transparent += 1;
+  }
+  writeManifest(manifestPath, manifest);
+  console.log(`✓ ${Object.keys(manifest.figures).length} figure(s), ${transparent} transparent → ${path.relative(repositoryRoot, manifestPath)}`);
+}
+
 function requireBinary(name) {
   const found = spawnSync('which', [name], { encoding: 'utf8' });
   if (found.status !== 0) {
@@ -188,6 +246,10 @@ export function writeManifest(manifestPath, manifest) {
 
 function main(argv) {
   const options = parseArgs(argv);
+  if (options.refreshTransparency) {
+    refreshTransparency(options.book);
+    return;
+  }
   const lock = loadSourceLock(repositoryRoot);
   const book = lock.books.get(options.book);
   if (!book) throw new Error(`book ${JSON.stringify(options.book)} is not in the source lock`);
@@ -223,6 +285,7 @@ function main(argv) {
 
   requireBinary('sips');
   requireBinary('cwebp');
+  requireBinary('dwebp');
   mkdirSync(outDir, { recursive: true });
   const work = mkdtempSync(path.join(tmpdir(), 'vendor-media-'));
   let vendored = 0;
@@ -234,6 +297,7 @@ function main(argv) {
       const existing = manifest.figures[stem];
       if (existing && existing.sourceSha256 === sourceSha256
         && existing.variants.every((v) => existsSync(path.join(outDir, v.file)))) {
+        if (typeof existing.transparent !== 'boolean') existing.transparent = webpHasTransparency(path.join(outDir, largestVariant(existing).file));
         skipped += 1;
         continue;
       }
@@ -260,6 +324,7 @@ function main(argv) {
         width,
         height,
         variants,
+        transparent: webpHasTransparency(path.join(outDir, variants.at(-1).file)),
         alt: image.alt,
         caption: image.caption,
       };

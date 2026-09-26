@@ -158,6 +158,18 @@ test('every mediafigure image on every page renders without a broken img or cons
       ), { timeout: 20_000, message: `${route} has images that did not load` })
       .toEqual([]);
 
+    // A figure whose file has transparent pixels prints black labels on
+    // transparency; on the dark page they vanish unless the image sits on the
+    // white plate (39 photo-kind figures lost their panel letters and labels
+    // that way until September 26, 2026). The shortcode marks such figures
+    // from the manifest's `transparent`; this checks the CSS still plates them.
+    const unplated = await page.evaluate(() => (document.documentElement.classList.contains('dark')
+      ? [...document.querySelectorAll('.ap-mediafigure[data-transparent] img')]
+        .filter((img) => getComputedStyle(img).backgroundColor !== 'rgb(255, 255, 255)')
+        .map((img) => img.closest('figure').dataset.stem)
+      : []));
+    expect(unplated, `${route}: transparent figures without the dark-theme plate`).toEqual([]);
+
     collected.stop();
     expect(collected.errors, `console errors on ${route}`).toEqual([]);
   }

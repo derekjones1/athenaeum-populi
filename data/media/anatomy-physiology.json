@@ -24,7 +24,8 @@
         }
       ],
       "alt": "Photo A shows an entire human brain which has a lumpy and deeply striated appearance. Photo B is a micrograph of neural tissue. It contains two roughly diamond-shaped cells with dark nuclei. The cells are embedded in a light colored tissue containing smaller cells and fiber strands.",
-      "caption": "(a) Gross anatomy considers large structures such as the brain. (b) Microscopic anatomy can deal with the same structures, though at a different scale. This is a micrograph of nerve cells from the brain. LM × 1600. (credit a: University of Wisconsin and Michigan State Comparative Mammalian Brain Collections/BrainMuseum.org; credit b: Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+      "caption": "(a) Gross anatomy considers large structures such as the brain. (b) Microscopic anatomy can deal with the same structures, though at a different scale. This is a micrograph of nerve cells from the brain. LM × 1600. (credit a: University of Wisconsin and Michigan State Comparative Mammalian Brain Collections/BrainMuseum.org; credit b: Micrograph provided by the Regents of University of Michigan Medical School © 2012)",
+      "transparent": false
     },
     "01_05_Marathon_Runners": {
       "source": "media/01_05_Marathon_Runners.jpg",
@@ -46,7 +47,8 @@
         }
       ],
       "alt": "This photo shows three young men running in a competitive marathon.",
-      "caption": "Runners demonstrate two characteristics of living humans—responsiveness and movement. Anatomic structures and physiological processes allow runners to coordinate the action of muscle groups and sweat in response to rising internal body temperature. (credit: Phil Roeder/flickr)"
+      "caption": "Runners demonstrate two characteristics of living humans—responsiveness and movement. Anatomic structures and physiological processes allow runners to coordinate the action of muscle groups and sweat in response to rising internal body temperature. (credit: Phil Roeder/flickr)",
+      "transparent": false
     },
     "01_06_Extreme_Heat": {
       "source": "media/01_06_Extreme_Heat.jpg",
@@ -68,7 +70,8 @@
         }
       ],
       "alt": "This photo shows two white-clad men riding camels through a sparse desert. Two canvas tents are visible in the background.",
-      "caption": "Humans acclimate to some degree to repeated exposure to high temperatures. (credit: McKay Savage/flickr)"
+      "caption": "Humans acclimate to some degree to repeated exposure to high temperatures. (credit: McKay Savage/flickr)",
+      "transparent": false
     },
     "01_07_Harsh_Conditions": {
       "source": "media/01_07_Harsh_Conditions.jpg",
@@ -90,7 +93,8 @@
         }
       ],
       "alt": "This photo shows Mount Everest as seen from a distance. It is a large, pyramid-shaped, craggy peak with many smaller snow-covered peaks in the foreground. The peak of Mount Everest is partially occluded by clouds.",
-      "caption": "Climbers on Mount Everest must accommodate extreme cold, low oxygen levels, and low barometric pressure in an environment hostile to human life. (credit: Melanie Ko/flickr)"
+      "caption": "Climbers on Mount Everest must accommodate extreme cold, low oxygen levels, and low barometric pressure in an environment hostile to human life. (credit: Melanie Ko/flickr)",
+      "transparent": false
     },
     "01_16_X-ray_of_Hand": {
       "source": "media/01_16_X-ray_of_Hand.jpg",
@@ -107,7 +111,8 @@
         }
       ],
       "alt": "This photo shows an X ray image of the palmar surface of the left hand. The bones appear bright white against a gray outline of the skin of the hand. The four segments of the finger bones are clearly visible, as well as the collection of round bones that compose the wrist and connect the hand to the two bones of the forearm.",
-      "caption": "High energy electromagnetic radiation allows the internal structures of the body, such as bones, to be seen in X-rays like these. (credit: Trace Meek/flickr)"
+      "caption": "High energy electromagnetic radiation allows the internal structures of the body, such as bones, to be seen in X-rays like these. (credit: Trace Meek/flickr)",
+      "transparent": false
     },
     "100_Blood_Pressure": {
       "source": "media/100_Blood_Pressure.jpg",
@@ -129,7 +134,8 @@
         }
       ],
       "alt": "This photo shows a nurse taking a woman’s blood pressure with a blood pressure cuff. The nurse is pumping the cuff with her right hand and holding a stethoscope on the patient’s arm with her left hand.",
-      "caption": "A proficiency in anatomy and physiology is fundamental to any career in the health professions. (credit: Bryan Mason/flickr)"
+      "caption": "A proficiency in anatomy and physiology is fundamental to any career in the health professions. (credit: Bryan Mason/flickr)",
+      "transparent": false
     },
     "101_Levels_of_Org_in_Body": {
       "source": "media/101_Levels_of_Org_in_Body.jpg",
@@ -151,7 +157,8 @@
         }
       ],
       "alt": "This illustration shows biological organization as a pyramid. The chemical level is at the apex of the pyramid where atoms bond to form molecules with three dimensional structures. An example is shown with two white hydrogen atoms bonding to a red oxygen atom to create water. The next level down on the pyramid is the cellular level, as illustrated with a long, tapered, smooth muscle cell. At this level, a variety of molecules combine to form the interior fluid and organelles of a body cell. The next level down is the tissue level. A community of similar cells forms body tissue. The example given here is a section of smooth muscle tissue, which contains many smooth muscle cells closely bound side by side. The next level down is the organ level, as illustrated with the bladder and urethra. The bladder contains smooth muscle while the urethra contains skeletal muscle. These are both examples of muscle tissues. The next level down is the organ system level, as illustrated by the entire urinary system containing the kidney, ureters, bladder and urethra. At this level, two or more organs work closely together to perform the functions of a body system. At the base of the pyramid is the organismal level illustrated with a woman drinking water. At this level, many organ systems work harmoniously together to perform the functions of an independent organism.",
-      "caption": "The organization of the body often is discussed in terms of six distinct levels of increasing complexity, from the smallest chemical building blocks to a unique human organism."
+      "caption": "The organization of the body often is discussed in terms of six distinct levels of increasing complexity, from the smallest chemical building blocks to a unique human organism.",
+      "transparent": false
     },
     "102_Organ_Systems_of_Body-Page1": {
       "source": "media/102_Organ_Systems_of_Body(Page1).jpg",
@@ -173,7 +180,8 @@
         }
       ],
       "alt": "This illustration shows eight silhouettes of a human female, each showing the components of a different organ system. The integumentary system encloses internal body structures and is the site of many sensory receptors. The integumentary system includes the hair, skin, and nails. The skeletal system supports the body and, along with the muscular system, enables movement. The skeletal system includes cartilage, such as that at the tip of the nose, as well as the bones and joints. The muscular system enables movement, along with the skeletal system, but also helps to maintain body temperature. The muscular system includes skeletal muscles, as well as tendons that connect skeletal muscles to bones. The nervous system detects and processes sensory information and activates bodily responses. The nervous system includes the brain, spinal cord, and peripheral nerves, such as those located in the limbs. The endocrine system secretes hormones and regulates bodily processes. The endocrine system includes the pituitary gland in the brain, the thyroid gland in the throat, the pancreas in the abdomen, the adrenal glands on top of the kidneys, and the testes in the scrotum of males as well as the ovaries in the pelvic region of females. The cardiovascular system delivers oxygen and nutrients to the tissues as well as equalizes temperature in the body. The cardiovascular system includes the heart and blood vessels.",
-      "caption": "Organs that work together are grouped into organ systems."
+      "caption": "Organs that work together are grouped into organ systems.",
+      "transparent": false
     },
     "102_Organ_Systems_of_Body-Page2": {
       "source": "media/102_Organ_Systems_of_Body(Page2).jpg",
@@ -195,7 +203,8 @@
         }
       ],
       "alt": "The lymphatic system returns fluid to the blood and defends against pathogens. The lymphatic system includes the thymus in the chest, the spleen in the abdomen, the lymphatic vessels that spread throughout the body, and the lymph nodes distributed along the lymphatic vessels. The respiratory system removes carbon dioxide from the body and delivers oxygen to the blood. The respiratory system includes the nasal passages, the trachea, and the lungs. The digestive system processes food for use by the body and removes wastes from undigested food. The digestive system includes the stomach, the liver, the gall bladder (connected to the liver), the large intestine, and the small intestine. The urinary system controls water balance in the body and removes and excretes waste from the blood. The urinary system includes the kidneys and the urinary bladder. The reproductive system of males and females produce sex hormones and gametes. The male reproductive system is specialized to deliver gametes to the female while the female reproductive system is specialized to support the embryo and fetus until birth and produce milk for the infant after birth. The male reproductive system includes the two testes within the scrotum as well as the epididymis which wraps around each testis. The female reproductive system includes the mammary glands within the breasts and the ovaries and uterus within the pelvic cavity.",
-      "caption": "Organs that work together are grouped into organ systems."
+      "caption": "Organs that work together are grouped into organ systems.",
+      "transparent": false
     },
     "103_Metabolism": {
       "source": "media/103_Metabolism.jpg",
@@ -212,7 +221,8 @@
         }
       ],
       "alt": "This illustration shows food entering a cell and being broken down into smaller particles of different colors. This is catabolism, which releases energy. In anabolism, the different colored particles are combined with each other to form larger, multi-colored structures. Anabolism requires an energy input.",
-      "caption": "Anabolic reactions are building reactions, and they consume energy. Catabolic reactions break materials down and release energy. Metabolism includes both anabolic and catabolic reactions."
+      "caption": "Anabolic reactions are building reactions, and they consume energy. Catabolic reactions break materials down and release energy. Metabolism includes both anabolic and catabolic reactions.",
+      "transparent": false
     },
     "105_Negative_Feedback_Loops": {
       "source": "media/105_Negative_Feedback_Loops.jpg",
@@ -234,7 +244,8 @@
         }
       ],
       "alt": "This figure shows two flow charts labeled A and B. Chart A shows a general negative feedback loop. The loop starts with a stimulus. Information about the stimulus is perceived by a sensor which sends that information to a control center. The control center sends a signal to an effector, which creates a response. That then feeds back to the top of the flow chart by inhibiting the stimulus. Part B shows body temperature regulation as an example of negative feedback system. Here, the stimulus is body temperature exceeding 37 degrees Celsius. The sensor is a set of nerve cells in the skin and brain and the control center is the temperature regulatory center of the brain. The effectors are sweat glands throughout the body which lead to increased heat loss and inhibit the rising body temperature.",
-      "caption": "In a negative feedback system, a stimulus—a deviation from a set point—is resisted through a physiological process that returns the body to homeostasis. (a) A negative feedback system has five basic steps. (b) Body temperature is regulated by negative feedback."
+      "caption": "In a negative feedback system, a stimulus—a deviation from a set point—is resisted through a physiological process that returns the body to homeostasis. (a) A negative feedback system has five basic steps. (b) Body temperature is regulated by negative feedback.",
+      "transparent": false
     },
     "106_Pregnancy-Positive_Feedback": {
       "source": "media/106_Pregnancy-Positive_Feedback.jpg",
@@ -256,7 +267,8 @@
         }
       ],
       "alt": "This diagram shows the steps of a positive feedback loop as a series of stepwise arrows looping around a diagram of an infant within the uterus of a pregnant woman. Initially the head of the baby pushes against the cervix, transmitting nerve impulses from the cervix to the brain. Next the brain stimulates the pituitary gland to secrete oxytocin which is carried in the bloodstream to the uterus. Finally, the oxytocin simulates uterine contractions and pushes the baby harder into the cervix. As the head of the baby pushes against the cervix with greater and greater force, the uterine contractions grow stronger and more frequent. This mechanism is a positive feedback loop.",
-      "caption": "Normal childbirth is driven by a positive feedback loop. A positive feedback loop results in a change in the body’s status, rather than a return to homeostasis."
+      "caption": "Normal childbirth is driven by a positive feedback loop. A positive feedback loop results in a change in the body’s status, rather than a return to homeostasis.",
+      "transparent": false
     },
     "107_Regions_of_Human_Body": {
       "source": "media/107_Regions_of_Human_Body.jpg",
@@ -278,7 +290,8 @@
         }
       ],
       "alt": "This illustration shows an anterior and posterior view of the human body. The cranial region encompasses the upper part of the head while the facial region encompasses the lower half of the head beginning below the ears. The eyes are referred to as the ocular region. The cheeks are referred to as the buccal region. The ears are referred to as the auricle or otic region. The nose is referred to as the nasal region. The chin is referred to as the mental region. The neck is referred to as the cervical region. The trunk of the body contains, from superior to inferior, the thoracic region encompassing the chest, the mammary region encompassing each breast, the abdominal region encompassing the stomach area, the coxal region encompassing the belt line, and the pubic region encompassing the area above the genitals. The umbilicus, or naval, is located at the center of the abdomen. The pelvis and legs contain, from superior to inferior, the inguinal or groin region between the legs and the genitals, the pubic region surrounding the genitals, the femoral region encompassing the thighs, the patellar region encompassing the knee, the crural region encompassing the lower leg, the tarsal region encompassing the ankle, the pedal region encompassing the foot and the digital/phalangeal region encompassing the toes. The great toe is referred to as the hallux. The regions of the upper limbs, from superior to inferior, are the axillary region encompassing the armpit, the brachial region encompassing the upper arm, the antecubital region encompassing the front of the elbow, the antebrachial region encompassing the forearm, the carpal region encompassing the wrist, the palmar region encompassing the palm, and the digital/phalangeal region encompassing the fingers. The thumb is referred to as the pollux. The posterior view contains, from superior to inferior, the cervical region encompassing the neck, the dorsal region encompassing the upper back and the lumbar region encompassing the lower back. The regions of the back of the arms, from superior to inferior, include the cervical region encompassing the neck, acromial region encompassing the shoulder, the brachial region encompassing the upper arm, the olecranal region encompassing the back of the elbow, the antebrachial region encompasses the back of the arm, and the manual region encompassing the palm of the hand. The posterior regions of the legs, from superior to inferior, include the gluteal region encompassing the buttocks, the femoral region encompassing the thigh, the popliteus region encompassing the back of the knee, the sural region encompassing the back of the lower leg, and the plantar region encompassing the sole of the foot. Some regions are combined into larger regions. These include the trunk, which is a combination of the thoracic, mammary, abdominal, naval, and coxal regions. The cephalic region is a combination of all of the head regions. The upper limb region is a combination of all of the arm regions. The lower limb region is a combination of all of the leg regions.",
-      "caption": "The human body is shown in anatomical position in an (a) anterior view and a (b) posterior view. The regions of the body are labeled in boldface."
+      "caption": "The human body is shown in anatomical position in an (a) anterior view and a (b) posterior view. The regions of the body are labeled in boldface.",
+      "transparent": false
     },
     "108_Directional_Terms": {
       "source": "media/108_Directional_Terms.jpg",
@@ -300,7 +313,8 @@
         }
       ],
       "alt": "This illustration shows two diagrams: one of a side view of a female and the other of an anterior view of a female. Each diagram shows directional terms using double-sided arrows. The cranial-distal arrow runs vertically behind the torso and lower abdomen. The cranial arrow is pointing toward the head while the caudal arrow is pointing toward the tail bone. The posterior/anterior arrow is running horizontally through the back and chest. The posterior or dorsal arrow is pointing toward the back while the anterior, or ventral arrow, is pointing toward the abdomen. On the anterior view, the proximal/distal arrow is on the right arm. The proximal arrow is pointing up toward the shoulder while the distal arrow is pointing down toward the hand. The lateral-medial arrow is a horizontal arrow on the abdomen. The medial arrow is pointing toward the navel while the lateral arrow is pointing away from the body to the right. Right refers to the right side of the woman’s body from her perspective while left refers to the left side of the woman’s body from her perspective.",
-      "caption": "Paired directional terms are shown as applied to the human body."
+      "caption": "Paired directional terms are shown as applied to the human body.",
+      "transparent": false
     },
     "109_Planes_of_Body": {
       "source": "media/109_Planes_of_Body.jpg",
@@ -322,7 +336,8 @@
         }
       ],
       "alt": "This illustration shows a female viewed from her right, front side. The anatomical planes are depicted as blue rectangles passing through the woman’s body. The frontal or coronal plane enters through the right side of the body, passes through the body, and exits from the left side. It divides the body into front (anterior) and back (posterior) halves. The sagittal plane enters through the back and emerges through the front of the body. It divides the body into right and left halves. The transverse plane passes through the body perpendicular to the frontal and sagittal planes. This plane is a cross section which divides the body into upper and lower halves.",
-      "caption": "The three planes most commonly used in anatomical and medical imaging are the sagittal, frontal (or coronal), and transverse plane. Oblique planes provide unique perspectives for viewing anatomical structures and movements."
+      "caption": "The three planes most commonly used in anatomical and medical imaging are the sagittal, frontal (or coronal), and transverse plane. Oblique planes provide unique perspectives for viewing anatomical structures and movements.",
+      "transparent": false
     },
     "110_Dorsal_Ventral_Body_Cavities": {
       "source": "media/110_Dorsal_Ventral_Body_Cavities.jpg",
@@ -344,7 +359,8 @@
         }
       ],
       "alt": "This illustration shows a lateral and anterior view of the body and highlights the body cavities with different colors. The cranial cavity is a large, bean-shaped cavity filling most of the upper skull where the brain is located. The vertebral cavity is a very narrow, thread-like cavity running from the cranial cavity down the entire length of the spinal cord. Together the cranial cavity and vertebral cavity can be referred to as the dorsal body cavity. The thoracic cavity consists of three cavities that fill the interior area of the chest. The two pleural cavities are situated on both sides of the body, anterior to the spine and lateral to the breastbone. The superior mediastinum is a wedge-shaped cavity located between the superior regions of the two thoracic cavities. The pericardial cavity within the mediastinum is located at the center of the chest below the superior mediastinum. The pericardial cavity roughly outlines the shape of the heart. The diaphragm divides the thoracic and the abdominal cavities. The abdominal cavity occupies the entire lower half of the trunk, anterior to the spine. Just under the abdominal cavity, anterior to the buttocks, is the pelvic cavity. The pelvic cavity is funnel shaped and is located inferior and anterior to the abdominal cavity. Together the abdominal and pelvic cavity can be referred to as the abdominopelvic cavity while the thoracic, abdominal, and pelvic cavities together can be referred to as the ventral body cavity.",
-      "caption": "The ventral cavity includes the thoracic and abdominopelvic cavities and their subdivisions. The dorsal cavity includes the cranial and spinal cavities."
+      "caption": "The ventral cavity includes the thoracic and abdominopelvic cavities and their subdivisions. The dorsal cavity includes the cranial and spinal cavities.",
+      "transparent": false
     },
     "111_Abdominal_Quadrant_Regions": {
       "source": "media/111_Abdominal_Quadrant_Regions.jpg",
@@ -366,7 +382,8 @@
         }
       ],
       "alt": "This illustration has two parts. Part A shows the abdominopelvic regions. These regions divide the abdomen into nine squares. The upper right square is the right hypochondriac region and contains the base of the right ribs. The upper left square is the left hypochondriac region and contains the base of the left ribs. The epigastric region is the upper central square and contains the bottom edge of the liver as well as the upper areas of the stomach. The diaphragm curves like an upside down U over these three regions. The central right region is called the right lumbar region and contains the ascending colon and the right edge of the small intestines. The central square contains the transverse colon and the upper regions of the small intestines. The left lumbar region contains the left edge of the transverse colon and the left edge of the small intestine. The lower right square is the right iliac region and contains the right pelvic bones and the ascending colon. The lower left square is the left iliac region and contains the left pelvic bone and the lower left regions of the small intestine. The lower central square contains the bottom of the pubic bones, upper regions of the bladder and the lower region of the small intestine. Part B shows four abdominopelvic quadrants. The right upper quadrant (RUQ) includes the lower right ribs, right side of the liver, and right side of the transverse colon. The left upper quadrant (LUQ) includes the lower left ribs, stomach, and upper left area of the transverse colon. The right lower quadrant (RLQ) includes the right half of the small intestines, ascending colon, right pelvic bone and upper right area of the bladder. The left lower quadrant (LLQ) contains the left half of the small intestine and left pelvic bone.",
-      "caption": "There are (a) nine abdominal regions and (b) four abdominal quadrants in the peritoneal cavity."
+      "caption": "There are (a) nine abdominal regions and (b) four abdominal quadrants in the peritoneal cavity.",
+      "transparent": false
     },
     "112_Serous_Membrane_new": {
       "source": "media/112_Serous_Membrane_new.jpg",
@@ -388,7 +405,8 @@
         }
       ],
       "alt": "This diagram shows the pericardium on the left next to an analogy of a hand punching a balloon on the right. The pericardium is a two-layered sac that surrounds the entire heart except where the blood vessels emerge on the heart’s superior side. The pericardium has two layers because it folds over itself in the shape of the letter U. The inner layer that borders the heart is the visceral pericardium while the outer layer is the parietal pericardium. The space between the two layers is called the pericardial cavity. The heart sits in the cavity much like a fist punching into a balloon. The balloon surrounds the lower part of the fist with a two-layered sac, with the top of the balloon, where it contacts the fist, being analogous to the visceral pericardium. The bottom of the balloon, where it is tied off, is analogous to the parietal pericardium. The air within the balloon is analogous to the pericardial cavity.",
-      "caption": "Serous membrane lines the pericardial cavity and reflects back to cover the heart—much the same way that an underinflated balloon would form two layers surrounding a fist."
+      "caption": "Serous membrane lines the pericardial cavity and reflects back to cover the heart—much the same way that an underinflated balloon would form two layers surrounding a fist.",
+      "transparent": false
     },
     "113abcd_Medical_Imaging_Techniques": {
       "source": "media/113abcd_Medical_Imaging_Techniques.jpg",
@@ -410,7 +428,8 @@
         }
       ],
       "alt": "These photos shows four types of imaging equipment. Photo A, the results of a CT scan, shows 17 different transverse views of the skull, each taken at a different depth along the superior-inferior axis. The images are translucent, similar to an X ray, and are viewed on a light board. Photo B shows an MRI machine, which is a large drum into which lying patients enter via a conveyor belt. Photo C shows computer images of the body taken with PET scans. This produces anterior, lateral, posterior, and transverse views of the body that reveal the structure of the internal organs. Photo D shows an ultrasound readout, which is black and white. The image depicts solid tissues as light areas and empty space as dark areas. Some of the features of a young fetus can be seen in the empty space at the center of the image. The space containing the fetus is surrounded by the solid tissue of the uterus.",
-      "caption": "(a) The results of a CT scan of the head are shown as successive transverse sections. (b) An MRI machine generates a magnetic field around a patient. (c) PET scans use radiopharmaceuticals to create images of active blood flow and physiologic activity of the organ or organs being targeted. (d) Ultrasound technology is used to monitor pregnancies because it is the least invasive of imaging techniques and uses no electromagnetic radiation. (credit a: Akira Ohgaki/flickr; credit b: “Petmr”/Wikimedia Commons; credit c: “Raziel”/Wikimedia Commons; credit d: “Isis”/Wikimedia Commons)"
+      "caption": "(a) The results of a CT scan of the head are shown as successive transverse sections. (b) An MRI machine generates a magnetic field around a patient. (c) PET scans use radiopharmaceuticals to create images of active blood flow and physiologic activity of the organ or organs being targeted. (d) Ultrasound technology is used to monitor pregnancies because it is the least invasive of imaging techniques and uses no electromagnetic radiation. (credit a: Akira Ohgaki/flickr; credit b: “Petmr”/Wikimedia Commons; credit c: “Raziel”/Wikimedia Commons; credit d: “Isis”/Wikimedia Commons)",
+      "transparent": false
     },
     "200_DNA_Double_Helix-02": {
       "source": "media/200_DNA_Double_Helix-02.jpg",
@@ -432,7 +451,8 @@
         }
       ],
       "alt": "This figure shows a double helix.",
-      "caption": "Human DNA is described as a double helix that resembles a molecular spiral staircase. In humans the DNA is organized into 46 chromosomes."
+      "caption": "Human DNA is described as a double helix that resembles a molecular spiral staircase. In humans the DNA is organized into 46 chromosomes.",
+      "transparent": false
     },
     "201_Elements_of_the_Human_Body-01": {
       "source": "media/201_Elements_of_the_Human_Body-01.jpg",
@@ -454,7 +474,8 @@
         }
       ],
       "alt": "This figure shows a human body with the percentage of the main elements in the body, in the left panel. In the right panel, a table lists the elements and the percentages in the body.",
-      "caption": "The main elements that compose the human body are shown from most abundant to least abundant."
+      "caption": "The main elements that compose the human body are shown from most abundant to least abundant.",
+      "transparent": false
     },
     "202_Two_Models_of_Atomic_Structure": {
       "source": "media/202_Two_Models_of_Atomic_Structure.jpg",
@@ -476,7 +497,8 @@
         }
       ],
       "alt": "The top panel of this figure shows two electrons orbiting around the nucleus of a Helium atom. The bottom panel of this figure shows a cloud of electrons surrounding the nucleus of a Helium atom.",
-      "caption": "(a) In the planetary model, the electrons of helium are shown in fixed orbits, depicted as rings, at a precise distance from the nucleus, somewhat like planets orbiting the sun. (b) In the electron cloud model, the electrons of helium are shown in the variety of locations they would have at different distances from the nucleus over time."
+      "caption": "(a) In the planetary model, the electrons of helium are shown in fixed orbits, depicted as rings, at a precise distance from the nucleus, somewhat like planets orbiting the sun. (b) In the electron cloud model, the electrons of helium are shown in the variety of locations they would have at different distances from the nucleus over time.",
+      "transparent": false
     },
     "203_Periodic_Table-02": {
       "source": "media/203_Periodic_Table-02.jpg",
@@ -498,7 +520,8 @@
         }
       ],
       "alt": "This figure shows the periodic table.",
-      "caption": "(credit: R.A. Dragoset, A. Musgrove, C.W. Clark, W.C. Martin)"
+      "caption": "(credit: R.A. Dragoset, A. Musgrove, C.W. Clark, W.C. Martin)",
+      "transparent": false
     },
     "204_Isotopes_of_Hydrogen-01": {
       "source": "media/204_Isotopes_of_Hydrogen-01.jpg",
@@ -520,7 +543,8 @@
         }
       ],
       "alt": "This figure shows the three isotopes of hydrogen: hydrogen, deuterium, and tritium.",
-      "caption": "Protium, designated 1 H, has one proton and no neutrons. It is by far the most abundant isotope of hydrogen in nature. Deuterium, designated 2 H, has one proton and one neutron. Tritium, designated 3 H, has two neutrons."
+      "caption": "Protium, designated 1 H, has one proton and no neutrons. It is by far the most abundant isotope of hydrogen in nature. Deuterium, designated 2 H, has one proton and one neutron. Tritium, designated 3 H, has two neutrons.",
+      "transparent": false
     },
     "205_Multi-image_Panel_of_PET_Scan-01": {
       "source": "media/205_Multi-image_Panel_of_PET_Scan-01.jpg",
@@ -542,7 +566,8 @@
         }
       ],
       "alt": "This figure shows multiple images from a PET scan.",
-      "caption": "PET highlights areas in the body where there is relatively high glucose use, which is characteristic of cancerous tissue. This PET scan shows sites of the spread of a large primary tumor to other sites."
+      "caption": "PET highlights areas in the body where there is relatively high glucose use, which is characteristic of cancerous tissue. This PET scan shows sites of the spread of a large primary tumor to other sites.",
+      "transparent": false
     },
     "206_Electron_Shells-01": {
       "source": "media/206_Electron_Shells-01.jpg",
@@ -564,7 +589,8 @@
         }
       ],
       "alt": "This four panel figure shows four different atoms with the electrons in orbit around the nucleus.",
-      "caption": "Electrons orbit the atomic nucleus at distinct levels of energy called electron shells. (a) With one electron, hydrogen only half-fills its electron shell. Helium also has a single shell, but its two electrons completely fill it. (b) The electrons of carbon completely fill its first electron shell, but only half-fills its second. (c) Neon, an element that does not occur in the body, has 10 electrons, filling both of its electron shells."
+      "caption": "Electrons orbit the atomic nucleus at distinct levels of energy called electron shells. (a) With one electron, hydrogen only half-fills its electron shell. Helium also has a single shell, but its two electrons completely fill it. (b) The electrons of carbon completely fill its first electron shell, but only half-fills its second. (c) Neon, an element that does not occur in the body, has 10 electrons, filling both of its electron shells.",
+      "transparent": false
     },
     "207_Ionic_Bonding-01": {
       "source": "media/207_Ionic_Bonding-01.jpg",
@@ -586,7 +612,8 @@
         }
       ],
       "alt": "The top panel of this figure shows the orbit model of a sodium atom and a chlorine atom and arrows pointing towards the transfer of electrons from sodium to chlorine to form sodium and chlorine ions. The bottom panel shows sodium and chloride ions in a crystal structure.",
-      "caption": "(a) Sodium readily donates the solitary electron in its valence shell to chlorine, which needs only one electron to have a full valence shell. (b) The opposite electrical charges of the resulting sodium cation and chloride anion result in the formation of a bond of attraction called an ionic bond. (c) The attraction of many sodium and chloride ions results in the formation of large groupings called crystals."
+      "caption": "(a) Sodium readily donates the solitary electron in its valence shell to chlorine, which needs only one electron to have a full valence shell. (b) The opposite electrical charges of the resulting sodium cation and chloride anion result in the formation of a bond of attraction called an ionic bond. (c) The attraction of many sodium and chloride ions results in the formation of large groupings called crystals.",
+      "transparent": false
     },
     "208_Covalent_Bonding-01": {
       "source": "media/208_Covalent_Bonding-01.jpg",
@@ -608,7 +635,8 @@
         }
       ],
       "alt": "The top panel in this figure shows two hydrogen atoms sharing two electrons. The middle panel shows two oxygen atoms sharing four electrons, and the bottom panel shows two oxygen atoms and one carbon atom sharing 2 pairs of electrons each.",
-      "caption": ""
+      "caption": "",
+      "transparent": false
     },
     "209_Polar_Covalent_Bonds_in_a_Water_Molecule": {
       "source": "media/209_Polar_Covalent_Bonds_in_a_Water_Molecule.jpg",
@@ -630,7 +658,8 @@
         }
       ],
       "alt": "This figure shows the structure of a water molecule. The top panel shows two oxygen atoms and one hydrogen atom with electrons in orbit and the shared electrons. The middle panel shows a three-dimensional model of a water molecule and the bottom panel shows the structural formula for water.",
-      "caption": ""
+      "caption": "",
+      "transparent": false
     },
     "210_Hydrogen_Bonds_Between_Water_Molecules-01": {
       "source": "media/210_Hydrogen_Bonds_Between_Water_Molecules-01.jpg",
@@ -652,7 +681,8 @@
         }
       ],
       "alt": "This figure shows three water molecules and the hydrogen bonds between them.",
-      "caption": "Notice that the bonds occur between the weakly positive charge on the hydrogen atoms and the weakly negative charge on the oxygen atoms. Hydrogen bonds are relatively weak, and therefore are indicated with a dotted (rather than a solid) line."
+      "caption": "Notice that the bonds occur between the weakly positive charge on the hydrogen atoms and the weakly negative charge on the oxygen atoms. Hydrogen bonds are relatively weak, and therefore are indicated with a dotted (rather than a solid) line.",
+      "transparent": false
     },
     "211_Three_Fundamental_Chemical_Reactions-01": {
       "source": "media/211_Three_Fundamental_Chemical_Reactions-01.jpg",
@@ -674,7 +704,8 @@
         }
       ],
       "alt": "This figure shows three chemical reactions.",
-      "caption": "The atoms and molecules involved in the three fundamental chemical reactions can be imagined as words."
+      "caption": "The atoms and molecules involved in the three fundamental chemical reactions can be imagined as words.",
+      "transparent": false
     },
     "212_Enzymes-01": {
       "source": "media/212_Enzymes-01.jpg",
@@ -696,7 +727,8 @@
         }
       ],
       "alt": "The left panel shows a graph of energy versus progress of reaction in the absence of enzymes. The right panel shows the graph in the presence of enzymes.",
-      "caption": "Enzymes decrease the activation energy required for a given chemical reaction to occur. (a) Without an enzyme, the energy input needed for a reaction to begin is high. (b) With the help of an enzyme, less energy is needed for a reaction to begin."
+      "caption": "Enzymes decrease the activation energy required for a given chemical reaction to occur. (a) Without an enzyme, the energy input needed for a reaction to begin is high. (b) With the help of an enzyme, less energy is needed for a reaction to begin.",
+      "transparent": false
     },
     "213_Dehydration_Synthesis_and_Hydrolysis-01": {
       "source": "media/213_Dehydration_Synthesis_and_Hydrolysis-01.jpg",
@@ -718,7 +750,8 @@
         }
       ],
       "alt": "The top panel in this figure shows a dehydration-synthesis reaction, and the bottom panel shows a hydrolysis reaction.",
-      "caption": "Monomers, the basic units for building larger molecules, form polymers (two or more chemically-bonded monomers). (a) In dehydration synthesis, two monomers are covalently bonded in a reaction in which one gives up a hydroxyl group and the other a hydrogen atom. A molecule of water is released as a byproduct during dehydration reactions. (b) In hydrolysis, the covalent bond between two monomers is split by the addition of a hydrogen atom to one and a hydroxyl group to the other, which requires the contribution of one molecule of water."
+      "caption": "Monomers, the basic units for building larger molecules, form polymers (two or more chemically-bonded monomers). (a) In dehydration synthesis, two monomers are covalently bonded in a reaction in which one gives up a hydroxyl group and the other a hydrogen atom. A molecule of water is released as a byproduct during dehydration reactions. (b) In hydrolysis, the covalent bond between two monomers is split by the addition of a hydrogen atom to one and a hydroxyl group to the other, which requires the contribution of one molecule of water.",
+      "transparent": false
     },
     "214_Dissociation_of_Sodium_Chloride_in_Water-01": {
       "source": "media/214_Dissociation_of_Sodium_Chloride_in_Water-01.jpg",
@@ -740,7 +773,8 @@
         }
       ],
       "alt": "This figure shows a crystal lattice of sodium chloride interacting with water to form a hydrated sodium ion and a hydrated chloride ion.",
-      "caption": "Notice that the crystals of sodium chloride dissociate not into molecules of NaCl, but into Na + cations and Cl – anions, each completely surrounded by water molecules."
+      "caption": "Notice that the crystals of sodium chloride dissociate not into molecules of NaCl, but into Na + cations and Cl – anions, each completely surrounded by water molecules.",
+      "transparent": false
     },
     "215_Acids_and_Bases-01": {
       "source": "media/215_Acids_and_Bases-01.jpg",
@@ -762,7 +796,8 @@
         }
       ],
       "alt": "This figure shows four beakers containing different liquids.",
-      "caption": "(a) In aqueous solution, an acid dissociates into hydrogen ions (H + ) and anions. Nearly every molecule of a strong acid dissociates, producing a high concentration of H + . (b) In aqueous solution, a base dissociates into hydroxyl ions (OH – ) and cations. Nearly every molecule of a strong base dissociates, producing a high concentration of OH – ."
+      "caption": "(a) In aqueous solution, an acid dissociates into hydrogen ions (H + ) and anions. Nearly every molecule of a strong acid dissociates, producing a high concentration of H + . (b) In aqueous solution, a base dissociates into hydroxyl ions (OH – ) and cations. Nearly every molecule of a strong base dissociates, producing a high concentration of OH – .",
+      "transparent": false
     },
     "216_pH_Scale-01": {
       "source": "media/216_pH_Scale-01.jpg",
@@ -784,7 +819,8 @@
         }
       ],
       "alt": "This figure shows a vertical arrow with the top half showing the basic scale and the bottom half showing the acidic scale. Different chemicals and their pH are also shown.",
-      "caption": ""
+      "caption": "",
+      "transparent": false
     },
     "217_Five_Important_Monosaccharides-01": {
       "source": "media/217_Five_Important_Monosaccharides-01.jpg",
@@ -806,7 +842,8 @@
         }
       ],
       "alt": "This figure shows the structure of glucose, fructose, galactose, deoxyribose, and ribose.",
-      "caption": ""
+      "caption": "",
+      "transparent": false
     },
     "218_Three_Important_Disaccharides": {
       "source": "media/218_Three_Important_Disaccharides.jpg",
@@ -828,7 +865,8 @@
         }
       ],
       "alt": "This figure shows the structure of sucrose, lactose, and maltose.",
-      "caption": "All three important disaccharides form by dehydration synthesis."
+      "caption": "All three important disaccharides form by dehydration synthesis.",
+      "transparent": false
     },
     "219_Three_Important_Polysaccharides-01": {
       "source": "media/219_Three_Important_Polysaccharides-01.jpg",
@@ -850,7 +888,8 @@
         }
       ],
       "alt": "This figure shows the structure of starch, glycogen, and cellulose.",
-      "caption": "Three important polysaccharides are starches, glycogen, and fiber."
+      "caption": "Three important polysaccharides are starches, glycogen, and fiber.",
+      "transparent": false
     },
     "220_Triglycerides-01": {
       "source": "media/220_Triglycerides-01.jpg",
@@ -872,7 +911,8 @@
         }
       ],
       "alt": "This image shows the reaction for the formation of triglycerides.",
-      "caption": "Triglycerides are composed of glycerol attached to three fatty acids via dehydration synthesis. Notice that glycerol gives up a hydrogen atom, and the carboxyl groups on the fatty acids each give up a hydroxyl group."
+      "caption": "Triglycerides are composed of glycerol attached to three fatty acids via dehydration synthesis. Notice that glycerol gives up a hydrogen atom, and the carboxyl groups on the fatty acids each give up a hydroxyl group.",
+      "transparent": false
     },
     "221_Fatty_Acids_Shapes-01": {
       "source": "media/221_Fatty_Acids_Shapes-01.jpg",
@@ -894,7 +934,8 @@
         }
       ],
       "alt": "This diagram shows the chain structures of a saturated and an unsaturated fatty acid.",
-      "caption": "The level of saturation of a fatty acid affects its shape. (a) Saturated fatty acid chains are straight. (b) Unsaturated fatty acid chains are kinked."
+      "caption": "The level of saturation of a fatty acid affects its shape. (a) Saturated fatty acid chains are straight. (b) Unsaturated fatty acid chains are kinked.",
+      "transparent": false
     },
     "222_Other_Important_Lipids-01": {
       "source": "media/222_Other_Important_Lipids-01.jpg",
@@ -916,7 +957,8 @@
         }
       ],
       "alt": "This figure shows the chemical structure of different lipids.",
-      "caption": "(a) Phospholipids are composed of two fatty acids, glycerol, and a phosphate group. (b) Sterols are ring-shaped lipids. Shown here is cholesterol. (c) Prostaglandins are derived from unsaturated fatty acids. Prostaglandin E2 (PGE2) includes hydroxyl and carboxyl groups."
+      "caption": "(a) Phospholipids are composed of two fatty acids, glycerol, and a phosphate group. (b) Sterols are ring-shaped lipids. Shown here is cholesterol. (c) Prostaglandins are derived from unsaturated fatty acids. Prostaglandin E2 (PGE2) includes hydroxyl and carboxyl groups.",
+      "transparent": false
     },
     "223_Structure_of_an_Amino_Acid-01": {
       "source": "media/223_Structure_of_an_Amino_Acid-01.jpg",
@@ -938,7 +980,8 @@
         }
       ],
       "alt": "This figure shows the structure of an amino acid.",
-      "caption": ""
+      "caption": "",
+      "transparent": false
     },
     "224_Peptide_Bond-01": {
       "source": "media/224_Peptide_Bond-01.jpg",
@@ -960,7 +1003,8 @@
         }
       ],
       "alt": "This figure shows the formation of a peptide bond, highlighted in blue.",
-      "caption": "Different amino acids join together to form peptides, polypeptides, or proteins via dehydration synthesis. The bonds between the amino acids are peptide bonds R1 and R2 may be the same or different side chains."
+      "caption": "Different amino acids join together to form peptides, polypeptides, or proteins via dehydration synthesis. The bonds between the amino acids are peptide bonds R1 and R2 may be the same or different side chains.",
+      "transparent": false
     },
     "225_Peptide_Bond-01": {
       "source": "media/225_Peptide_Bond-01.jpg",
@@ -982,7 +1026,8 @@
         }
       ],
       "alt": "This figure shows the secondary structure of peptides. The top panel shows a straight chain, the middle panel shows an alpha-helix and a beta sheet. The bottom panel shows the tertiary structure and fully folded protein.",
-      "caption": "(a) The primary structure is the sequence of amino acids that make up the polypeptide chain. (b) The secondary structure, which can take the form of an alpha-helix or a beta-pleated sheet, is maintained by hydrogen bonds between amino acids in different regions of the original polypeptide strand. (c) The tertiary structure occurs as a result of further folding and bonding of the secondary structure. (d) The quaternary structure occurs as a result of interactions between two or more tertiary subunits. The example shown here is hemoglobin, a protein in red blood cells which transports oxygen to body tissues."
+      "caption": "(a) The primary structure is the sequence of amino acids that make up the polypeptide chain. (b) The secondary structure, which can take the form of an alpha-helix or a beta-pleated sheet, is maintained by hydrogen bonds between amino acids in different regions of the original polypeptide strand. (c) The tertiary structure occurs as a result of further folding and bonding of the secondary structure. (d) The quaternary structure occurs as a result of interactions between two or more tertiary subunits. The example shown here is hemoglobin, a protein in red blood cells which transports oxygen to body tissues.",
+      "transparent": false
     },
     "227_Steps_in_an_Enzymatic_Reaction-01": {
       "source": "media/227_Steps_in_an_Enzymatic_Reaction-01.jpg",
@@ -1004,7 +1049,8 @@
         }
       ],
       "alt": "This image shows the steps in which an enzyme can act. The substrate is shown binding to the enzyme, forming a product, and the detachment of the product.",
-      "caption": "According to the induced-fit model, the active site of the enzyme undergoes conformational changes upon binding with the substrate.(a) Substrates approach active sites on enzyme. (b) Substrates bind to active sites, producing an enzyme–substrate complex. (c) Changes internal to the enzyme–substrate complex facilitate interaction of the substrates. (d) Products are released and the enzyme returns to its original form, ready to facilitate another enzymatic reaction."
+      "caption": "According to the induced-fit model, the active site of the enzyme undergoes conformational changes upon binding with the substrate.(a) Substrates approach active sites on enzyme. (b) Substrates bind to active sites, producing an enzyme–substrate complex. (c) Changes internal to the enzyme–substrate complex facilitate interaction of the substrates. (d) Products are released and the enzyme returns to its original form, ready to facilitate another enzymatic reaction.",
+      "transparent": false
     },
     "228_Nucleotides-01": {
       "source": "media/228_Nucleotides-01.jpg",
@@ -1026,7 +1072,8 @@
         }
       ],
       "alt": "This figure shows the structure of nucleotides.",
-      "caption": "(a) The building blocks of all nucleotides are one or more phosphate groups, a pentose sugar, and a nitrogen-containing base. (b) The nitrogen-containing bases of nucleotides. (c) The two pentose sugars of DNA and RNA."
+      "caption": "(a) The building blocks of all nucleotides are one or more phosphate groups, a pentose sugar, and a nitrogen-containing base. (b) The nitrogen-containing bases of nucleotides. (c) The two pentose sugars of DNA and RNA.",
+      "transparent": false
     },
     "229_Nucleotides-01": {
       "source": "media/229_Nucleotides-01.jpg",
@@ -1048,7 +1095,8 @@
         }
       ],
       "alt": "This figure shows a double helix.",
-      "caption": "In the DNA double helix, two strands attach via hydrogen bonds between the bases of the component nucleotides."
+      "caption": "In the DNA double helix, two strands attach via hydrogen bonds between the bases of the component nucleotides.",
+      "transparent": false
     },
     "230_Structure_of_Adenosine_Triphosphate__ATP_": {
       "source": "media/230_Structure_of_Adenosine_Triphosphate__ATP_.jpg",
@@ -1065,7 +1113,8 @@
         }
       ],
       "alt": "This figure shows the structure of ATP.",
-      "caption": ""
+      "caption": "",
+      "transparent": false
     },
     "231_Structure_Carboxyl": {
       "source": "media/231_Structure_Carboxyl.jpg",
@@ -1082,7 +1131,8 @@
         }
       ],
       "alt": "R is single bonded to C, C is double bonded to one O and single bonded to another O. The second O is single bonded to H.",
-      "caption": ""
+      "caption": "",
+      "transparent": false
     }
   }
 }

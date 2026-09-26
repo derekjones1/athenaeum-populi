@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { assignStems, extractModuleImages, kindOf, parseArgs, plainXmlText, stemOf, variantWidths } from './vendor-media.mjs';
+import { readFileSync, readdirSync } from 'node:fs';
+import { assignStems, extractModuleImages, kindOf, pamHasTransparency, parseArgs, plainXmlText, stemOf, variantWidths } from './vendor-media.mjs';
 
 test('variantWidths never upscales and dedupes', () => {
   assert.deepEqual(variantWidths(430), [430]);
@@ -61,7 +62,7 @@ test('parseArgs requires a book and at least one chapter or module', () => {
   assert.throws(() => parseArgs(['--book', 'biology']), /at least one/);
   assert.throws(() => parseArgs(['--book', 'biology', '--chapter', 'x']), /positive integer/);
   assert.deepEqual(parseArgs(['--book', 'biology', '--chapter', '1', '--module', 'm1', '--dry-run']),
-    { book: 'biology', chapters: [1], modules: ['m1'], dryRun: true });
+    { book: 'biology', chapters: [1], modules: ['m1'], dryRun: true, refreshTransparency: false });
 });
 
 test('kindOf reads photo from a JPEG source and diagram from anything else', () => {
@@ -82,4 +83,34 @@ test('assignStems keeps a bare stem unless two different files share it', () => 
   assert.deepEqual([...seen.keys()], ['Figure_01_01_01', 'Figure_B23_03_07-jpg', 'Figure_B23_03_07-png']);
   assert.equal(seen.get('Figure_01_01_01').module, 'm1');
   assert.equal(seen.get('Figure_B23_03_07-png').source, 'media/Figure_B23_03_07.png');
+});
+
+function pam(depth, bytes) {
+  const header = `P7\nWIDTH 2\nHEIGHT 1\nDEPTH ${depth}\nMAXVAL 255\nTUPLTYPE ${depth === 4 ? 'RGB_ALPHA' : 'RGB'}\nENDHDR\n`;
+  return Buffer.concat([Buffer.from(header, 'latin1'), Buffer.from(bytes)]);
+}
+
+test('pamHasTransparency reads the alpha channel, and an RGB image is opaque', () => {
+  assert.equal(pamHasTransparency(pam(4, [0, 0, 0, 255, 9, 9, 9, 255])), false);
+  // Black ink at partial alpha — the shape of a panel letter on a transparent background.
+  assert.equal(pamHasTransparency(pam(4, [0, 0, 0, 255, 0, 0, 0, 136])), true);
+  assert.equal(pamHasTransparency(pam(3, [0, 0, 0, 9, 9, 9])), false);
+  assert.throws(() => pamHasTransparency(pam(4, [0, 0, 0])), /expected 8/);
+  assert.throws(() => pamHasTransparency(Buffer.from('P6\n2 1\n255\n')), /not a PAM/);
+});
+
+test('parseArgs takes --refresh-transparency on its own', () => {
+  assert.equal(parseArgs(['--book', 'biology', '--refresh-transparency']).refreshTransparency, true);
+  assert.throws(() => parseArgs(['--book', 'biology', '--refresh-transparency', '--chapter', '1']), /whole manifest/);
+});
+
+test('every vendored figure records whether its file is transparent', () => {
+  // The dark theme plates a transparent figure whatever its kind (mediafigure
+  // shortcode); an entry without the field would silently lose the plate and
+  // its black labels with it.
+  for (const name of readdirSync('data/media').filter((n) => n.endsWith('.json'))) {
+    const manifest = JSON.parse(readFileSync(`data/media/${name}`, 'utf8'));
+    const missing = Object.entries(manifest.figures).filter(([, e]) => typeof e.transparent !== 'boolean').map(([stem]) => stem);
+    assert.deepEqual(missing, [], `data/media/${name}: run vendor-media --book ${name.replace(/\.json$/, '')} --refresh-transparency`);
+  }
 });

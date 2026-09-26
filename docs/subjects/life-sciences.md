@@ -347,7 +347,12 @@ that use them.
   `kind="photo"` / `kind="diagram"` on the shortcode overrides it. **Set it
   explicitly on every figure after looking at the image** — the guess fails
   on a PNG photograph or a JPEG flow chart. Nothing is ever inverted: a
-  micrograph inverted would be a different micrograph.
+  micrograph inverted would be a different micrograph. A figure whose
+  vendored file has transparent pixels (the manifest's `transparent`, which
+  `vendor-media` records) gets the plate whatever its `kind`: its panel
+  letters and labels are black ink on transparency and vanished on the dark
+  page (39 photo-kind figures, found September 26, 2026), so `kind` stays a
+  statement about what the image is, not a dark-mode workaround.
 
 **Image-accessibility policy** (every figure, no exceptions):
 

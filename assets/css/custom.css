@@ -704,7 +704,10 @@ self-check:not(:defined) .ap-selfcheck-checkpoint input { pointer-events: none; 
    upscaled: the width attribute is the largest vendored variant, and
    max-width keeps a 430 px diagram at 430 px. Diagrams were drawn for white
    paper, so the dark theme backs every image with a light plate rather than
-   inverting it — a micrograph inverted is a different micrograph. */
+   inverting it — a micrograph inverted is a different micrograph. A photo
+   whose file has transparent pixels (data-transparent, from the media
+   manifest) gets the plate too: its panel letters and labels are black ink
+   on transparency, invisible on the dark page otherwise. */
 .ap-mediafigure { margin: 1.5rem 0; }
 .ap-mediafigure img {
   display: block;
@@ -713,7 +716,8 @@ self-check:not(:defined) .ap-selfcheck-checkpoint input { pointer-events: none; 
   height: auto;
   border-radius: 4px;
 }
-.dark .ap-mediafigure[data-kind="diagram"] img { background: #fff; padding: 4px; box-sizing: border-box; }
+.dark .ap-mediafigure[data-kind="diagram"] img,
+.dark .ap-mediafigure[data-transparent] img { background: #fff; padding: 4px; box-sizing: border-box; }
 .ap-mediafigure-caption {
   font-size: 14px;
   color: var(--ap-muted, #6f6e69);
