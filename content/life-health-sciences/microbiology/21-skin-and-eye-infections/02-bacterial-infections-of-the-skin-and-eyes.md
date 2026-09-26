@@ -36,7 +36,7 @@ Other tests are performed on samples from the wound in order to distinguish coag
 
 Another way to distinguish CoPS from CoNS is by culturing the sample on mannitol salt agar (MSA). *Staphylococcus* species readily grow on this medium because they are tolerant of the high concentration of sodium chloride (7.5% NaCl). However, CoPS such as *S. aureus* ferment mannitol (which will be evident on a MSA plate), whereas CoNS such as *S. epidermidis* do not ferment mannitol but can be distinguished by the fermentation of other sugars such as lactose, malonate, and raffinose (shown below).
 
-{{< mediafigure src="microbiology/OSC_Microbio_21_02_mannitol" alt="(a) A round agar plate split into two streaked regions: the left region's agar has turned yellow around the bacterial growth, and the right region's agar stays pink around the growth. (b) A scanning electron micrograph of round cells just under 1 µm across, clustered together in grapelike bunches." kind="photo" eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_21_02_mannitol" alt="(a) A round agar plate split into two streaked regions: the left region's agar has turned yellow around the bacterial growth, and the right region's agar stays pink around the growth. (b) A scanning electron micrograph of round cells less than 1 µm across, clustered together in grapelike bunches." kind="photo" eager="true" >}}
 (a) A mannitol salt agar plate is used to distinguish different species of staphylococci. In this plate, *S. aureus* is on the left and *S. epidermidis* is in the right. Because *S. aureus* is capable of fermenting mannitol, it produces acids that cause the color to change to yellow. (b) This scanning electron micrograph shows the characteristic grapelike clusters of *S. aureus*. (credit a: modification of work by "ScienceProfOnline"/YouTube; credit b: modification of work by Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 
@@ -62,7 +62,7 @@ When multiple boils develop into a deeper lesion, it is called a carbuncle (show
 
 Proper hygiene is important to prevent these types of skin infections or to prevent the progression of existing infections.
 
-{{< mediafigure src="microbiology/OSC_Microbio_21_02_boil" alt="(a) A photo of a small, inflamed skin lesion with a white, pus-filled center on an arm, beside a bandage. (b) A photo of a larger, deeper lesion on a knee, red at the edges with a raised, pus-filled, crusted center." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_21_02_boil" alt="(a) A photo of a small, opened skin lesion with a red center in a swollen, darkened area of a limb; a peeled-back gauze dressing beside it is stained with yellow pus. (b) A photo of a larger, deeper lesion on a broad, rounded area of skin, red at the edges with a raised center of yellow-white pus." kind="photo" >}}
 Furuncles (boils) and carbuncles are infections of the skin often caused by *Staphylococcus* bacteria. (a) A furuncle contains pus and exhibits swelling. (b) A carbuncle is a pus-filled lesion that is typically deeper than the furuncle. It often forms from multiple furuncles. (Credit a: Public Health Image Library / CDC; Public Domain; credit b: modification of work by "Drvgaikwad"/Wikimedia Commons)
 {{< /mediafigure >}}
 
@@ -80,7 +80,7 @@ Especially common in children, impetigo is particularly concerning because it is
 
 Topical or oral antibiotic treatment is typically effective in treating most cases of impetigo. However, cases caused by *S. pyogenes* can lead to serious sequelae (pathological conditions resulting from infection, disease, injury, therapy, or other trauma) such as acute glomerulonephritis (AGN), which is severe inflammation in the kidneys.
 
-{{< mediafigure src="microbiology/OSC_Microbio_21_02_impetigo" alt="A close-up photo of the skin above a child's upper lip, mottled with red, crusted bumps." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_21_02_impetigo" alt="A close-up photo of a child's lower face with a cluster of orange-brown, crusted bumps on the skin above one side of the upper lip, reaching the corner of the mouth." kind="photo" >}}
 Impetigo is characterized by vesicles, pustules, or bullae that rupture, producing encrusted sores. (credit: modification of work by FDA)
 {{< /mediafigure >}}
 
@@ -116,7 +116,7 @@ Common streptococcal conditions of the skin include cellulitis, erysipelas, and 
 
 In general, streptococcal infections are best treated through identification of the specific pathogen followed by treatment based upon that particular pathogen's susceptibility to different antibiotics. Many immunological tests, including agglutination reactions and ELISAs, can be used to detect streptococci. Penicillin is commonly prescribed for treatment of cellulitis and erysipelas because resistance is not widespread in streptococci at this time. In most patients, erythema nodosum is self-limiting and is not treated with antimicrobial drugs. Recommended treatments may include nonsteroidal anti-inflammatory drugs (NSAIDs), cool wet compresses, elevation, and bed rest.
 
-{{< mediafigure src="microbiology/OSC_Microbio_21_02_erysipelas" alt="(a) A photo of a flat, painful, red rash on skin. (b) A photo of swollen, red patches with a sharp border across a person's cheeks and the bridge of the nose. (c) A photo of a raised red band of swelling across a lower leg." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_21_02_erysipelas" alt="(a) A photo of a flat, painful, red rash on skin. (b) A photo of a man's face with a swollen, shiny red patch with a sharp border on one cheek, and a red, crusted, swollen nose. (c) A photo of a raised red band of swelling across a lower leg." kind="photo" >}}
 *S. pyogenes* can cause a variety of skin conditions once it breaches the skin barrier through a cut or wound. (a) Cellulitis presents as a painful, red rash. (b) Erysipelas presents as a raised rash, usually with clear borders. (c) Erythema nodosum is characterized by red lumps or nodules, typically on the lower legs. (credit a: modification of work by "Bassukas ID, Gaitanis G, Zioga A, Boboyianni C, Stergiopoulou C; credit b: modification of work by Centers for Disease Control and Prevention; credit c: modification of work by Dean C, Crow WT)
 {{< /mediafigure >}}
 
@@ -128,7 +128,7 @@ Necrotizing fasciitis occurs when the fascia, a thin layer of connective tissue 
 
 Necrotizing fasciitis does not always originate from a skin infection; in some cases there is no known portal of entry. Some studies have suggested that experiencing a blunt force trauma can increase the risk of developing streptococcal necrotizing fasciitis (Nuwayhid, Z.B., Aronoff, D.M., and Mulla, Z.D., "Blunt Trauma as a Risk Factor for Group A Streptococcal Necrotizing Fasciitis," *Annals of Epidemiology* (2007) 17: 878–881).
 
-{{< mediafigure src="microbiology/OSC_Microbio_21_02_necrosis" alt="(a) A photo of a lower leg with large, irregular patches of black, gray, dead-looking skin surrounded by inflamed pink and red tissue. (b) A photo of surgeons using clamps and a scalpel to cut away dead tissue from an open surgical wound." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_21_02_necrosis" alt="(a) A photo of a leg with large, irregular patches of black, gray, dead-looking skin surrounded by inflamed pink and red tissue. (b) A photo of surgeons using clamps and a scalpel to cut away dead tissue from an open surgical wound." kind="photo" >}}
 (a) The left leg of this patient shows the clinical features of necrotizing fasciitis. (b) The same patient's leg is surgically debrided to remove the infection. (credit a, b: modification of work by Piotr Smuszkiewicz, Iwona Trojanowska, and Hanna Tomczak)
 {{< /mediafigure >}}
 

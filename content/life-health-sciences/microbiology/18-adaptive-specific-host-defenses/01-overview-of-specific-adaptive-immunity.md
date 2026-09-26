@@ -209,7 +209,7 @@ As described in *Chemical Defenses*, opsonization is the coating of a pathogen w
 
 **Agglutination** or aggregation involves the cross-linking of pathogens by antibodies to create large aggregates (see the drawing below). IgG has two Fab antigen-binding sites, which can bind to two separate pathogen cells, clumping them together. When multiple IgG antibodies are involved, large aggregates can develop; these aggregates are easier for the kidneys and spleen to filter from the blood and easier for phagocytes to ingest for destruction. The pentameric structure of IgM provides ten Fab binding sites per molecule, making it the most efficient antibody for agglutination.
 
-{{< mediafigure src="microbiology/OSC_Microbio_18_04_neutral" alt="Three drawings of neutralization. At left, antibodies bind all around the knobbed surface of a virus. In the middle, two antibodies bind the B subunit of a two-part diphtheria toxin, whose A subunit sits on top. At right, antibodies coat the surface of an elongated bacterial cell." kind="diagram" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_18_04_neutral" alt="Three drawings of neutralization. At left, antibodies bind all around the knobbed surface of a virus. In the middle, two antibodies bind the B subunit of a two-part diphtheria toxin, whose A subunit sits on top. At right, five antibodies bind along the long, wavy flagellum of an elongated bacterial cell; none touches the cell body." kind="diagram" >}}
 Neutralization involves the binding of specific antibodies to antigens found on bacteria, viruses, and toxins, preventing them from attaching to target cells.
 {{< /mediafigure >}}
 

@@ -95,7 +95,7 @@ Although variolation had been practiced for centuries, the English physician Edw
 
 The success of Jenner's smallpox vaccination led other scientists to develop vaccines for other diseases. Perhaps the most notable was Louis Pasteur, who developed vaccines for rabies, cholera, and anthrax. During the 20th and 21st centuries, effective vaccines were developed to prevent a wide range of diseases caused by viruses (e.g., chickenpox and shingles, hepatitis, measles, mumps, polio, and yellow fever) and bacteria (e.g., diphtheria, pneumococcal pneumonia, tetanus, and whooping cough).
 
-{{< mediafigure src="microbiology/OSC_Microbio_18_05_jenner" alt="(a) An oil portrait of an older man in a dark coat standing beside a tree, with a cow and a farm worker faintly visible in the pastoral background. (b) A close-up photo of a forearm covered with numerous round, fluid-filled and crusted red pustules typical of a cowpox infection." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_18_05_jenner" alt="(a) An oil portrait of an older man in a dark coat standing beside a tree, with two cows and a milkmaid small in the pastoral background at lower left. (b) A close-up photo of an arm covered with numerous round, fluid-filled and crusted red pustules typical of a cowpox infection." kind="photo" >}}
 (a) A painting of Edward Jenner depicts a cow and a farm worker in the background. (b) Lesions on a patient infected with cowpox, a zoonotic disease caused by a virus closely related to the one that causes smallpox. (credit b: modification of work by the Centers for Disease Control and Prevention)
 {{< /mediafigure >}}
 

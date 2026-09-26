@@ -37,7 +37,7 @@ An antibody's **specificity** results from the antigen-binding site formed withi
 
 Cross-reactivity is more likely to occur between antibodies and antigens that have low **affinity** or **avidity**. Affinity, which can be determined experimentally, is a measure of the binding strength between an antibody's binding site and an epitope, whereas avidity is the total strength of all the interactions in an antibody-antigen complex (which may have more than one bonding site). Avidity is influenced by affinity as well as the structural arrangements of the epitope and the variable regions of the antibody. If an antibody has a high affinity/avidity for a specific antigen, it is less likely to cross-react with an antigen for which it has a lower affinity/avidity.
 
-{{< mediafigure src="microbiology/OSC_Microbio_20_01_Epitope" alt="A large, irregularly shaped antigen carries three differently shaped raised regions, each labeled an epitope. Each epitope is bound by a separate Y-shaped antibody whose two upper branches, the variable regions, form a pocket matching that epitope's shape." kind="diagram" eager="true" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_20_01_Epitope" alt="A large, irregularly shaped antigen carries three differently shaped raised regions, each labeled an epitope. Each epitope is bound by a separate Y-shaped antibody; the tips of its two arms, labeled variable regions, are shaped to fit that epitope (a point, a cup, a square bracket), and one tip holds it." kind="diagram" eager="true" >}}
 An antibody binds to a specific region on an antigen called an epitope. A single antigen can have multiple epitopes for different, specific antibodies.
 {{< /mediafigure >}}
 

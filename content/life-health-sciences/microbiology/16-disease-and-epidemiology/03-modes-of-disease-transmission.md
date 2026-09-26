@@ -180,7 +180,7 @@ In the United States, public health authorities may only quarantine patients for
 
 During the COVID-19 pandemic, quarantine became a common practice, particularly related to international travel. Various countries implemented quarantine and isolation requirements based on the availability of testing and vaccinations. Initially, some nations required that all international travelers remain quarantined for a period after arrival; later on, they instituted quarantine only for those who tested positive.
 
-{{< mediafigure src="microbiology/OSC_Microbio_16_03_Isolate" alt="Two photos: (a) an inflatable, tent-like transport module with a rigid frame, parked in a hangar beside a small jet's open door; (b) a long room lined with empty hospital beds and a blue privacy curtain track running down the middle." kind="photo" >}}
+{{< mediafigure src="microbiology/OSC_Microbio_16_03_Isolate" alt="Two photos: (a) a long transport module of clear plastic sheeting tied over a metal frame, with green fabric lower panels, parked in a hangar beside a small jet's open door; (b) a long room lined with empty hospital beds and a blue privacy curtain track running down the middle." kind="photo" >}}
 (a) The Aeromedical Biological Containment System (ABCS) is a module designed by the CDC and Department of Defense specifically for transporting highly contagious patients by air. (b) An isolation ward for Ebola patients in Lagos, Nigeria. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by CDC Global)
 {{< /mediafigure >}}
 
