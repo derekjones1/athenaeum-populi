@@ -50,7 +50,7 @@ The most widely known androgen in males is testosterone. Testosterone promotes t
 {{< callout type="info" >}}
 **Everyday Connection.** *The Dangers of Synthetic Hormones.*
 
-{{< mediafigure src="biology/Figure_37_03_02" kind="photo" alt="Baseball player Jason Giambi, wearing a green batting helmet and an Oakland Athletics jersey, holds a bat in the batter's box with a crowd filling the stands behind him." >}}
+{{< mediafigure src="biology/Figure_37_03_02" kind="photo" alt="Baseball player Jason Giambi, wearing a green batting helmet and an Oakland Athletics jersey, holds a bat across his waist in front of partly filled stands." >}}
 Professional baseball player Jason Giambi publically admitted to, and apologized for, his use of anabolic steroids supplied by a trainer. (credit: Bryce Edwards)
 {{< /mediafigure >}}
 

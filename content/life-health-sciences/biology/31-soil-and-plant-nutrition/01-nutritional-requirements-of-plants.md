@@ -75,7 +75,7 @@ Nutrient deficiency is evident in the symptoms these plants show. This (a) grape
 {{< callout type="info" >}}
 **Everyday Connection.** *Hydroponics*
 
-{{< mediafigure src="biology/Figure_31_04_01" kind="photo" alt="A balding researcher in a plaid shirt leans over a row of long, shallow hydroponic trays inside a curved greenhouse enclosure, adjusting slender green onion shoots; a tray of lettuces sits in front of him, and the curved glass behind repeats his reflection twice more." >}}
+{{< mediafigure src="biology/Figure_31_04_01" kind="photo" alt="A balding researcher in a plaid shirt leans over a row of long, shallow hydroponic trays inside an enclosed growth chamber, adjusting slender green onion shoots; a tray of lettuces sits in front of him, and the chamber's curved reflective walls repeat his reflection twice more." >}}
 Plant physiologist Ray Wheeler checks onions being grown using hydroponic techniques. The other plants are Bibb lettuce (left) and radishes (right). Credit: NASA
 {{< /mediafigure >}}
 

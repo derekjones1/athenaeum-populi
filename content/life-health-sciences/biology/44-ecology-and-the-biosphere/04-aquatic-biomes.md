@@ -71,7 +71,7 @@ Watch this [National Centers for Coastal Ocean Science (NCCOS) video](https://op
 
 It is estimated that more than 4,000 fish species inhabit coral reefs. These fishes can feed on coral, the **cryptofauna** (invertebrates found within the calcium carbonate substrate of the coral reefs), or the seaweed and algae that are associated with the coral. In addition, some fish species inhabit the boundaries of a coral reef; these species include predators, herbivores, and **planktivores**, which consume planktonic organisms such as bacteria, archaea, algae, and protists floating in the pelagic zone.
 
-{{< mediafigure src="biology/Figure_44_04_03" kind="photo" alt="Two small fish — one black and white, one yellow and black — swim above a reef of tan, plate-shaped and branching coral, with a cluster of blue-purple branching coral in the foreground." >}}
+{{< mediafigure src="biology/Figure_44_04_03" kind="photo" alt="Several fish swim above a reef of tan, plate-shaped and branching coral — among them a dark gray fish near the surface and a blue-green and yellow butterflyfish at the right — with a cluster of blue-purple branching coral in the foreground." >}}
 Coral reefs are formed by the calcium carbonate skeletons of coral organisms, which are marine invertebrates in the phylum Cnidaria. (credit: Terry Hughes)
 {{< /mediafigure >}}
 

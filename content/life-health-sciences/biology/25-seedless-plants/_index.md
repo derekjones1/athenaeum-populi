@@ -10,7 +10,7 @@ source_chapter: "25"
 weight: 29
 ---
 
-{{< mediafigure src="biology/Figure_25_00_01" alt="Photo shows a seedless plant growing under a large tree. The seedless plant has a long, slender stalk with thin, filamentous branches radiating out from it. The branches have no leaves." kind="photo" eager="true" >}}
+{{< mediafigure src="biology/Figure_25_00_01" alt="Photo shows a dense stand of horsetails growing beneath trees. Each slender upright stem bears whorls of thin, needle-like branches radiating from it; the branches have no broad leaves." kind="photo" eager="true" >}}
 Seedless plants, like these horsetails (*Equisetum* sp.), thrive in damp,
 shaded environments under a tree canopy where dryness is rare. (credit:
 modification of work by Jerry Kirkhart)
@@ -54,4 +54,4 @@ reproduction.
 
 ---
 
-<small>This chapter is adapted from [Biology 2e, Chapter 25: Seedless Plants](https://openstax.org/books/biology-2e/pages/25-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source's, re-encoded for the web, with its source alt kept since it already says what the single photo shows; the caption's italicized genus name is set in italics per the source's own markup, though the vendored manifest's plain-text caption field does not carry it; the source's introduction paragraphs do not reference the opening figure inline, so no parenthetical figure-reference rendering was needed.</small>
+<small>This chapter is adapted from [Biology 2e, Chapter 25: Seedless Plants](https://openstax.org/books/biology-2e/pages/25-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source's, re-encoded for the web, with its source alt kept since it already says what the single photo shows; the caption's italicized genus name is set in italics per the source's own markup, though the vendored manifest's plain-text caption field does not carry it; the source's introduction paragraphs do not reference the opening figure inline, so no parenthetical figure-reference rendering was needed; the chapter-opening alt describes a dense stand of horsetails, where the source alt describes a single seedless plant with one stalk.</small>

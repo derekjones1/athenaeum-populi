@@ -74,7 +74,7 @@ Sexual reproduction is the combination of (usually haploid) reproductive cells f
 
 **Hermaphroditism** occurs in animals where one individual has both male and female reproductive parts. Invertebrates such as earthworms, slugs, tapeworms and snails, shown below, are often hermaphroditic. Hermaphrodites may self-fertilize or may mate with another of their species, fertilizing each other and both producing offspring. Self fertilization is common in animals that have limited mobility or are not motile, such as barnacles and clams.
 
-{{< mediafigure src="biology/Figure_43_01_04" kind="photo" alt="A close-up photo of a land snail's coiled shell and its long, slug-like body extending forward across a paved surface, with two tentacles visible on its head." >}}
+{{< mediafigure src="biology/Figure_43_01_04" kind="photo" alt="A close-up photo of a land snail's coiled shell and its long, slug-like body extending forward across a paved surface, with one long upper tentacle and two short lower tentacles visible on its head." >}}
 Many snails are hermaphrodites. When two individuals mate, they can produce up to one hundred eggs each. (credit: Assaf Shtilman)
 {{< /mediafigure >}}
 

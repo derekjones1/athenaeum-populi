@@ -79,7 +79,7 @@ The amount of energy expended by an animal over a specific time is called its me
 
 Smaller endothermic animals have a greater surface area for their mass than larger ones (illustrated below). Therefore, smaller animals lose heat at a faster rate than larger animals and require more energy to maintain a constant internal temperature. This results in a smaller endothermic animal having a higher BMR, per body weight, than a larger endothermic animal.
 
-{{< mediafigure src="biology/Figure_33_01_03" kind="photo" alt="A two-column table pairing a photo of a small brown mouse foraging in dry grass and leaf litter with a photo of an elephant grazing in green grassland; rows beneath list mass — 35 g for the mouse and 4,500,000 g for the elephant — and metabolic rate — 890 mm³ O₂ per gram body mass per hour for the mouse and 75 mm³ O₂ per gram body mass per hour for the elephant." >}}
+{{< mediafigure src="biology/Figure_33_01_03" kind="photo" alt="A two-column table pairing a photo of a small gray mouse among grass and leaf litter with a photo of an elephant grazing in green grassland; rows beneath list mass — 35 g for the mouse and 4,500,000 g for the elephant — and metabolic rate — 890 mm³ O₂ per gram body mass per hour for the mouse and 75 mm³ O₂ per gram body mass per hour for the elephant." >}}
 The mouse has a much higher metabolic rate than the elephant. (credit "mouse": modification of work by Magnus Kjaergaard; credit "elephant": modification of work by "TheLizardQueen"/Flickr)
 {{< /mediafigure >}}
 

@@ -77,7 +77,7 @@ Cycad. This cycad, *Encephalartos ferox,* has large cones and broad, fern-like l
 
 The single surviving species of the **ginkgophytes** group is *Ginkgo biloba* (pictured below). Its fan-shaped leaves—unique among seed plants because they feature a dichotomous venation pattern—turn yellow in autumn and fall from the tree. For centuries, *G. biloba* was cultivated by Chinese Buddhist monks in monasteries, which ensured its preservation. It is planted in public spaces because it is unusually resistant to pollution. Male and female organs are produced on separate plants. Typically, gardeners plant only male trees because the seeds produced by the female plant have an off-putting smell of rancid butter.
 
-{{< mediafigure src="biology/Figure_26_02_04" kind="diagram" alt="A colored 19th-century botanical plate of a Ginkgo biloba branch with several fan-shaped leaves and small round fruits, plus smaller inset drawings below of individual leaves, a flower cluster, and cross-sections of the fruit." >}}
+{{< mediafigure src="biology/Figure_26_02_04" kind="diagram" alt="A colored 19th-century botanical plate of a Ginkgo biloba branch with several fan-shaped leaves and small round fruits, plus smaller drawings of a cluster of hanging pollen cones, paired ovules on stalks, whole and cut seeds, and an outline of a leafy shoot." >}}
 *Ginkgo*. This plate from the 1870 book *Flora Japonica, Sectio Prima (Tafelband)* depicts the leaves and fruit of *Ginkgo biloba*, as drawn by Philipp Franz von Siebold and Joseph Gerhard Zuccarini.
 {{< /mediafigure >}}
 

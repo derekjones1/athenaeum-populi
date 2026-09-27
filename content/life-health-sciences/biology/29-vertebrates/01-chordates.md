@@ -83,7 +83,7 @@ Urochordate anatomy. (a) This photograph shows a colony of the tunicate *Botryll
 
 Adult tunicates may be either solitary or colonial forms, and some species may reproduce by budding. Most tunicates live a sessile existence on the ocean floor and are *suspension feeders*. However, chains of thaliacean tunicates called *salps* (below) can swim actively while feeding, propelling themselves as they move water through the pharyngeal slits. The primary foods of tunicates are plankton and detritus. Seawater enters the tunicate's body through its incurrent siphon. Suspended material is filtered out of this water by a mucous net produced by the endostyle and is passed into the intestine via the action of cilia. The anus empties into the excurrent siphon, which expels wastes and water. Tunicates are found in shallow ocean waters around the world.
 
-{{< mediafigure src="biology/Figure_B29_01_05" kind="photo" alt="An underwater photograph of a long, curved, glowing pale-green chain of salps, made up of dozens of barrel-shaped segments joined end to end, drifting over a rocky reef with two small fish nearby." >}}
+{{< mediafigure src="biology/Figure_B29_01_05" kind="photo" alt="An underwater photograph of a long, curved, glowing pale-green chain of salps, made up of dozens of barrel-shaped segments joined end to end, drifting over a rocky reef with three small fish nearby." >}}
 Salps. These colonial tunicates feed on phytoplankton. Salps are sequential hermaphrodites, with younger female colonies fertilized by older male colonies. (credit: Oregon Department of Fish & Wildlife via Wikimedia Commons)
 {{< /mediafigure >}}
 

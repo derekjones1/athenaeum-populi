@@ -85,7 +85,7 @@ Scientists look at patterns in data and try to explain differences or deviations
 
 Human activity releases carbon dioxide and methane, two of the most important greenhouse gases, into the atmosphere in several ways. The primary mechanism that releases carbon dioxide is the burning of fossil fuels, such as gasoline, coal, and natural gas, shown below.
 
-{{< mediafigure src="biology/Figure_44_05_03" kind="photo" alt="Two industrial smokestacks rise above a row of buildings, one releasing a large plume of dark gray smoke that spreads across the sky and the other releasing a smaller plume of white smoke." >}}
+{{< mediafigure src="biology/Figure_44_05_03" kind="photo" alt="Two industrial smokestacks rise above a row of snowy rooftops; the shorter one sends a dark gray plume streaming sideways across the sky, and the taller one sends up a column of gray smoke that billows high overhead." >}}
 The burning of fossil fuels in industry and by vehicles releases carbon dioxide and other greenhouse gases into the atmosphere. (credit: "Pöllö"/Wikimedia Commons)
 {{< /mediafigure >}}
 

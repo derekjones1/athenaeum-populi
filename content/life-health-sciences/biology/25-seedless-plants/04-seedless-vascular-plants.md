@@ -31,7 +31,7 @@ The first plant fossils that show the presence of vascular tissue date to the Si
 
 **Phloem** is the second type of vascular tissue; it transports sugars, proteins, and other solutes throughout the plant. Phloem cells are divided into sieve elements (conducting cells) and cells that support the *sieve elements*. Together, xylem and phloem tissues form the vascular system of plants.
 
-{{< mediafigure src="biology/Figure_B25_04_01" kind="photo" eager="true" alt="A close-up photo of a curved cross-section cut from a celery stalk, showing a ring of small raised bumps — vascular bundles — around its inner edge." >}}
+{{< mediafigure src="biology/Figure_B25_04_01" kind="photo" eager="true" alt="A close-up photo of the curved, U-shaped cut end of a celery stalk, showing a row of small green dots — vascular bundles — just inside its outer, rounded edge." >}}
 Vascular bundles in celery. This cross section of a celery stalk shows a number of vascular bundles. The xylem is on the inner part of each bundle. (credit: fir0002 | flagstaffotos.com.au [GFDL 1.2 (http://www.gnu.org/licenses/old-licenses/fdl-1.2.html)], via Wikimedia Commons. Image modified from source.)
 {{< /mediafigure >}}
 
@@ -61,7 +61,7 @@ Lycophytes follow the pattern of alternation of generations seen in the bryophyt
 
 Lycophytes can be *homosporous* (spores of the same size) or *heterosporous* (spores of different sizes). The spike moss *Selaginella* is a heterosporous lycophyte. The same strobilus will contain microsporangia, which produce spores that will develop into the male gametophyte, and megasporangia, which produce spores that will develop into the female gametophyte. Both gametophytes develop within the protective strobilus.
 
-{{< mediafigure src="biology/Figure_25_04_01" kind="photo" alt="A cluster of slender, upright club-moss stalks, each tipped with a pale yellow-green, elongated, seed-like strobilus, growing among low ferny foliage." >}}
+{{< mediafigure src="biology/Figure_25_04_01" kind="photo" alt="A club moss: low, bristly, needle-leaved shoots send up slender stalks, each tipped with one or more pale yellow-green, club-shaped strobili." >}}
 *Lycopodium*. In the club mosses such as *Lycopodium clavatum*, sporangia are arranged in clusters called strobili. The generic name means "wolf-foot" from the resemblance of the branched sporophyte to a paw. The specific epithet *clavatum* refers to the club-shaped strobilus, and reflects the common name of the phylum. (credit: Cory Zanker)
 {{< /mediafigure >}}
 

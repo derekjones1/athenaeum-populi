@@ -50,7 +50,7 @@ Many flies are attracted to flowers that have a decaying smell or an odor of rot
 
 Butterflies, such as the monarch, pollinate many garden flowers and wildflowers, which usually occur in clusters. These flowers are brightly colored, have a strong fragrance, are open during the day, and have nectar guides to make access to nectar easier. The pollen is picked up and carried on the butterfly's limbs. Moths, on the other hand, pollinate flowers during the late afternoon and night. The flowers pollinated by moths are pale or white and are flat, enabling the moths to land. One well-studied example of a moth-pollinated plant is the yucca plant, which is pollinated by the yucca moth. The shape of the flower and moth have adapted in such a way as to allow successful pollination. The moth deposits pollen on the sticky stigma for fertilization to occur later. The female moth also deposits eggs into the ovary. As the eggs develop into larvae, they obtain food from the flower and developing seeds. Thus, both the insect and flower benefit from each other in this symbiotic relationship. The corn earworm moth and Gaura plant have a similar relationship.
 
-{{< mediafigure src="biology/Figure_32_02_02" kind="photo" alt="A close-up photo of a pale gray moth with its long proboscis extended into a small white tubular flower." >}}
+{{< mediafigure src="biology/Figure_32_02_02" kind="photo" alt="A close-up photo of a tan moth feeding at an open white flower with spreading petals and long stamens, its head pressed into the flower's center." >}}
 A corn earworm sips nectar from a night-blooming Gaura plant. (credit: Juan Lopez, USDA ARS)
 {{< /mediafigure >}}
 
@@ -74,7 +74,7 @@ Most species of conifers, and many angiosperms, such as grasses, maples and oaks
 A person knocks pollen from a pine tree.
 {{< /mediafigure >}}
 
-{{< mediafigure src="biology/Figure_32_02_05" kind="photo" alt="Two side-by-side photos labeled Male and Female: the male catkin at left is a fuzzy yellow, spike-shaped cluster covered in fine hair-like filaments and pollen; the female catkin at right is similarly shaped but greener, with small reddish tips and no hair-like filaments." >}}
+{{< mediafigure src="biology/Figure_32_02_05" kind="photo" alt="Two side-by-side photos labeled Male and Female: the male catkin at left is a fuzzy yellow, spike-shaped cluster covered in fine hair-like filaments and pollen; the female catkins at right are similarly shaped but pale green and short-bristled, without the long filaments, with dark-red bud scales at their bases." >}}
 These male (a) and female (b) catkins are from the goat willow tree (*Salix caprea*). Note how both structures are light and feathery to better disperse and catch the wind-blown pollen.
 {{< /mediafigure >}}
 

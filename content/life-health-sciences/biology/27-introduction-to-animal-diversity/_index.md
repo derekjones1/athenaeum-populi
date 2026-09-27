@@ -11,7 +11,7 @@ source_chapter: "27"
 weight: 31
 ---
 
-{{< mediafigure src="biology/Figure_27_00_01" alt="Photo shows a mottled brown chameleon that blends into the leaf it sits on." kind="photo" eager="true" >}}
+{{< mediafigure src="biology/Figure_27_00_01" alt="Photo shows a tiny, rough-skinned brown chameleon standing on a gray-brown, bark-like surface whose color it closely matches." kind="photo" eager="true" >}}
 The leaf chameleon (*Brookesia micra*) was discovered in northern
 Madagascar in 2012. At just over one inch long, it is the smallest known
 chameleon. (credit: modification of work by Frank Glaw, et al., PLOS)
@@ -57,4 +57,4 @@ how to conserve the diversity of life on earth.
 
 ---
 
-<small>This chapter is adapted from [Biology 2e, Chapter 27: Introduction to Animal Diversity](https://openstax.org/books/biology-2e/pages/27-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source's, re-encoded for the web, with its source alt kept since it already says what the single photo shows; the caption's italicized species name is set in italics per the source's own markup, though the vendored manifest's plain-text caption field does not carry it; the source's introduction paragraphs do not reference the opening figure inline, so no parenthetical figure-reference rendering was needed.</small>
+<small>This chapter is adapted from [Biology 2e, Chapter 27: Introduction to Animal Diversity](https://openstax.org/books/biology-2e/pages/27-introduction) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source's, re-encoded for the web, with its source alt kept since it already says what the single photo shows; the caption's italicized species name is set in italics per the source's own markup, though the vendored manifest's plain-text caption field does not carry it; the source's introduction paragraphs do not reference the opening figure inline, so no parenthetical figure-reference rendering was needed; the chapter-opening alt describes the chameleon on a bark-like surface, where the source alt says it sits on a leaf the photo does not show.</small>

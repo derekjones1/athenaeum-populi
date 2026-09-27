@@ -32,7 +32,7 @@ Photoautotrophs, such as plants, algae, and photosynthetic bacteria, serve as th
 
 **Chemoautotrophs** are primarily bacteria that are found in rare ecosystems where sunlight is not available, such as in those associated with dark caves or hydrothermal vents at the bottom of the ocean, shown below. Many chemoautotrophs in hydrothermal vents use hydrogen sulfide (H₂S), which is released from the vents as a source of chemical energy. This allows chemoautotrophs to synthesize complex organic molecules, such as glucose, for their own energy and in turn supplies energy to the rest of the ecosystem.
 
-{{< mediafigure src="biology/Figure_46_02_01" kind="photo" eager="true" alt="A cluster of hundreds of vent mussels covers a rocky ocean floor, with several small pale shrimp swimming above them and a few white squat lobsters crawling among the shells." >}}
+{{< mediafigure src="biology/Figure_46_02_01" kind="photo" eager="true" alt="A cluster of hundreds of vent mussels covers a rocky ocean floor, with dozens of small pale shrimp swimming above them and more than a dozen small white, long-legged crustaceans crawling among the shells." >}}
 Swimming shrimp, a few squat lobsters, and hundreds of vent mussels are seen at a hydrothermal vent at the bottom of the ocean. As no sunlight penetrates to this depth, the ecosystem is supported by chemoautotrophic bacteria and organic material that sinks from the ocean's surface. This picture was taken in 2006 at the submerged NW Eifuku volcano off the coast of Japan by the National Oceanic and Atmospheric Administration (NOAA). The summit of this highly active volcano lies 1535 m below the surface.
 {{< /mediafigure >}}
 

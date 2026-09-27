@@ -20,7 +20,7 @@ weight: 3
 
 From their humble and still obscure beginning during the early Jurassic period, the angiosperms—or flowering plants—have evolved to dominate most terrestrial ecosystems. With more than 300,000 species, the angiosperm phylum (Anthophyta) is second only to insects in terms of diversification.
 
-{{< mediafigure src="biology/Figure_26_03_01" kind="photo" eager="true" alt="A gravel garden path curves between dense plantings of purple, pink, red, and yellow-green flowering shrubs and perennials, with tall conifers in the background." >}}
+{{< mediafigure src="biology/Figure_26_03_01" kind="photo" eager="true" alt="A gravel garden path curves between dense plantings of red, pink-purple, and violet flowering perennials, with a golden-green conical conifer and dark trees behind." >}}
 Flowers. These flowers grow in a botanical garden border in Bellevue, WA. Flowering plants dominate terrestrial landscapes. The vivid colors of flowers and enticing fragrance of flowers are adaptations to pollination by animals like insects, birds, and bats. (credit: Myriam Feldman)
 {{< /mediafigure >}}
 
@@ -57,7 +57,7 @@ A double fertilization event then occurs. One sperm and the egg combine, forming
 
 Most angiosperms have **perfect flowers**, which means that each flower carries both stamens and carpels. In monoecious plants, male (staminate) and female (pistillate) flowers are separate, but carried on the same plant. Sweetgums (*Liquidambar* spp.) and birches (*Betula* spp.) are monoecious. In dioecious plants, male and female flowers are found on separate plants. Willows (*Salix* spp.) and poplars (*Populus* spp.) are dioecious. In spite of the predominance of perfect flowers, only a few species of angiosperms self-pollinate. Both anatomical and environmental barriers promote cross-pollination mediated by a physical agent (wind or water), or an animal, such as an insect or bird. Cross-pollination increases genetic diversity in a species.
 
-{{< mediafigure src="biology/Figure_26_04" kind="photo" alt="A leafy birch branch in sunlight, with a single long, dangling, yellow-brown male inflorescence hanging from its underside and a small, upright, still-closed female inflorescence near the branch tip." >}}
+{{< mediafigure src="biology/Figure_26_04" kind="photo" alt="A leafy birch twig in sunlight, with a single long, dangling, yellow-brown male inflorescence hanging from the end of the twig and a small, upright, still-closed female inflorescence on a short side shoot farther back along it." >}}
 Birch inflorescences. The female inflorescence is at the upper left. The male inflorescence is at the lower right. (credit: Stephen J. Baskauf, 2002. [http://bioimages.vanderbilt.edu/baskauf/10593](https://openstax.org/l/betula). Morphbank :: Biological Imaging ([http://www.morphbank.net/](https://openstax.org/l/morphbank), 29 June 2017). Florida State University, Department of Scientific Computing, Tallahassee, FL 32306-4026 USA)
 {{< /mediafigure >}}
 
@@ -75,7 +75,7 @@ Angiosperms are classified in a single phylum: the **Anthophyta**. Modern angios
 
 The Magnoliidae are represented by the magnolias, laurels, and peppers. Magnolias are tall trees bearing dark, shiny leaves, and large, fragrant flowers with many parts, and are considered archaic. In the outer whorl of the magnolia flower the sepals and petals are undifferentiated and are collectively called tepals. The reproductive parts are arranged in a spiral around a cone-shaped receptacle, with the carpels located above the stamens. The aggregate fruit, with one seed formed from each carpel, is seen below. Laurel trees produce fragrant leaves and small, inconspicuous flowers. The *Laurales* grow mostly in warmer climates and are small trees and shrubs. Familiar plants in this group include the bay laurel, cinnamon, spice bush, and avocado tree.
 
-{{< mediafigure src="biology/Figure_26_05" kind="photo" alt="A close-up of a large, fully open white magnolia flower with six broad petal-like tepals surrounding a cone-shaped center: a cluster of yellow-green carpels at the tip, a maroon column beneath it, and a skirt of thread-like yellow stamens at the base, some already shed onto the tepals." >}}
+{{< mediafigure src="biology/Figure_26_05" kind="photo" alt="A close-up of a large, fully open white magnolia flower with about nine broad petal-like tepals surrounding a cone-shaped center: a cluster of yellow-green carpels at the tip, a maroon column beneath it, and a skirt of thread-like yellow stamens at the base, some already shed onto the tepals." >}}
 *Magnolia grandiflora*. A cluster of carpels can be seen above the stamens, which have shed their pollen and begun to drop from the inflorescence. In the flower, the sepals and petals are undifferentiated and are collectively called tepals. (credit: Ianaré Sévi. [http://bioimages.vanderbilt.edu/baskauf/10949](https://openstax.org/l/grandiflora))
 {{< /mediafigure >}}
 

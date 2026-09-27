@@ -152,7 +152,7 @@ As discussed earlier, a **dead zone** is an area within a freshwater or marine e
 {{< callout type="info" >}}
 **Everyday Connection.** *Chesapeake Bay*
 
-{{< mediafigure src="biology/Figure_46_03_09ab" kind="photo" alt="Two side-by-side images: (a) a satellite photo of the Chesapeake Bay's branching shoreline and watershed, and (b) a photo of a man in a cap holding a large clump of clustered oysters up to the camera." >}}
+{{< mediafigure src="biology/Figure_46_03_09ab" kind="photo" alt="A satellite photo (a) of the Chesapeake Bay's branching shoreline and watershed, with an inset photo (b) at its lower right of a man in a cap holding a large clump of clustered oysters up to the camera." >}}
 This (a) satellite image shows the Chesapeake Bay, an ecosystem affected by phosphate and nitrate runoff. A (b) member of the Army Corps of Engineers holds a clump of oysters being used as a part of the oyster restoration effort in the bay. (credit a: modification of work by NASA/MODIS; credit b: modification of work by U.S. Army)
 {{< /mediafigure >}}
 
@@ -177,7 +177,7 @@ Sulfur dioxide from the atmosphere becomes available to terrestrial and marine e
 
 On land, sulfur is deposited in four major ways: precipitation, direct fallout from the atmosphere, rock weathering, and geothermal vents, shown above. Atmospheric sulfur is found in the form of sulfur dioxide (SO₂), and as rain falls through the atmosphere, sulfur is dissolved in the form of weak sulfurous acid (H₂SO₃). Sulfur can also fall directly from the atmosphere in a process called **fallout**. Also, the weathering of sulfur-containing rocks releases sulfur into the soil. These rocks originate from ocean sediments that are moved to land by the geologic uplifting of ocean sediments. Terrestrial ecosystems can then make use of these soil sulfates (SO₄²⁻), and upon the death and decomposition of these organisms, release the sulfur back into the atmosphere as hydrogen sulfide (H₂S) gas.
 
-{{< mediafigure src="biology/Figure_46_03_11" kind="photo" alt="A white, pyramid-shaped mineral mound sits on a forested hillside, with gray steam escaping from a dark opening near its crest." >}}
+{{< mediafigure src="biology/Figure_46_03_11" kind="photo" alt="A pale gray-white mineral mound sits on a forested hillside; steam rises from its left slope beside a yellow-green stained patch, and a large dark hollow is cut into its face at right." >}}
 At this sulfur vent in Lassen Volcanic National Park in northeastern California, the yellowish sulfur deposits are visible near the mouth of the vent.
 {{< /mediafigure >}}
 

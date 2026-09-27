@@ -13,7 +13,7 @@ source_chapter: "45"
 weight: 52
 ---
 
-{{< mediafigure src="biology/Figure_45_00_01-16d7" alt="Main photo shows fish jumping out of the water, and inset photo shows a pile of dead fish in a container." kind="photo" eager="true" >}}
+{{< mediafigure src="biology/Figure_45_00_01-16d7" alt="The large photo at left shows fish jumping out of the water; the narrow photo at right shows a pile of dead fish in a container." kind="photo" eager="true" >}}
 Asian carp jump out of the water in response to electrofishing. The
 Asian carp in the photograph on the right were harvested from the
 Little Calumet River in Illinois in May, 2010, using rotenone, a toxin

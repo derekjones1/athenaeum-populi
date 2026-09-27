@@ -47,7 +47,7 @@ Mammalian brains also have certain characteristics that differ from the brains o
 
 Mammals are synapsids, meaning they have a single, ancestrally fused, postorbital opening in the skull. They are the only living synapsids, as earlier forms became extinct by the Jurassic period. The early non-mammalian synapsids can be divided into two groups, the pelycosaurs and the therapsids. Within the therapsids, a group called the cynodonts are thought to have been the ancestors of mammals (pictured below).
 
-{{< mediafigure src="biology/Figure_29_06_02" kind="diagram" alt="A tan, dog-sized quadruped shown as a paleoart illustration in profile: a short snout with visible teeth, small ears, a coat sparsely dotted with pale spots over the back and flanks, darker banded markings across the haunches, short legs, and a long tapering tail, casting a soft shadow on a plain white background." >}}
+{{< mediafigure src="biology/Figure_29_06_02" kind="diagram" alt="A tan quadruped shown as a paleoart illustration in profile: a short snout with a small visible tooth, small ears, a coat sparsely dotted with pale spots over the back, dark vertical streaks along the lower flanks and belly, short legs, and a tapering tail, casting a soft shadow on a plain white background." >}}
 Cynodont. Cynodonts ("dog teeth"), which first appeared in the Late Permian period 260 million years ago, are thought to be the ancestors of modern mammals. Holes in the upper jaws of cynodonts suggest that they had whiskers, which might also indicate the presence of hair. (credit: Nobu Tamura)
 {{< /mediafigure >}}
 
@@ -73,7 +73,7 @@ Egg-laying mammals. (a) The platypus, a monotreme, possesses a leathery beak and
 
 Over 2/3 of the approximately 330 living species of marsupials are found in Australia, New Guinea, and surrounding islands, with the rest, nearly all various types of opossum, found in the Americas, especially South America. Australian marsupials include the kangaroo, koala, bandicoot, Tasmanian devil (pictured below), and several other species. Like monotremes, the embryos of marsupials are nourished during a short gestational period (about a month in kangaroos) by a yolk-sac placenta, but with no intervening egg shell. Some marsupial embryos can enter an embryonic diapause, and delay implantation, suspending development until implantation is completed. Marsupial young are also effectively fetal at birth. Most, but not all, species of marsupials possess a pouch in which the very premature young reside, receiving milk and continuing their development. In kangaroos, the young joeys continue to nurse for about a year and a half.
 
-{{< mediafigure src="biology/Figure_29_06_04" kind="photo" alt="A close-up photograph of a black Tasmanian devil with a white stripe across its shoulders and pink-tinged ears, lying low in dry grass and leaf litter, facing the camera with its mouth closed and its whiskers visible." >}}
+{{< mediafigure src="biology/Figure_29_06_04" kind="photo" alt="A close-up photograph of a black Tasmanian devil with a white band across its rump and pink-tinged ears, lying low in dry grass and leaf litter, facing the camera with its mouth closed and its whiskers visible." >}}
 A marsupial mammal. The Tasmanian devil is one of several marsupials native to Australia. (credit: Wayne McLean)
 {{< /mediafigure >}}
 

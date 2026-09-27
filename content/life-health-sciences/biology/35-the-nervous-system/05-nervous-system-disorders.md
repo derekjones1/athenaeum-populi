@@ -49,7 +49,7 @@ Although some patients have a form of the disease known to be caused by a single
 
 There is no cure for Parkinson's disease, and treatment is focused on easing symptoms. One of the most commonly prescribed drugs for Parkinson's is L-DOPA, which is a chemical that is converted into dopamine by neurons in the brain. This conversion increases the overall level of dopamine neurotransmission and can help compensate for the loss of dopaminergic neurons in the substantia nigra. Other drugs work by inhibiting the enzyme that breaks down dopamine.
 
-{{< mediafigure src="biology/Figure_B35_05_02" kind="diagram" alt="A line-drawn illustration of the same man shown twice: at left in profile, bent forward at the waist with his head down, arms held stiffly with one hand curled; at right standing upright and facing forward in the same shirt and trousers." >}}
+{{< mediafigure src="biology/Figure_B35_05_02" kind="diagram" alt="A color illustration of the same man from two angles: at left in profile, bent forward with his head thrust forward and knees bent, arms hanging with the hands partly curled; at right from the front, shoulders slumped forward and head tilted down, one hand curled." >}}
 Parkinson's patients often have a characteristic hunched walk.
 {{< /mediafigure >}}
 

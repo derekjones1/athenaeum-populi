@@ -66,7 +66,7 @@ Pseudostratified columnar epithelia line the respiratory tract. They exist in on
 
 **Transitional** or uroepithelial cells appear only in the urinary system, primarily in the bladder and ureter. These cells are arranged in a stratified layer, but they have the capability of appearing to pile up on top of each other in a relaxed, empty bladder, as illustrated below. As the urinary bladder fills, the epithelial layer unfolds and expands to hold the volume of urine introduced into it. As the bladder fills, it expands and the lining becomes thinner. In other words, the tissue transitions from thick to thin.
 
-{{< mediafigure src="biology/Figure_33_02_05" kind="diagram" alt="An illustration of transitional epithelium: tall, diamond-shaped cells piled several layers deep, each with a round, centrally placed purple nucleus, the cells near the free surface bulging outward while those below fit more closely together; a scattered row of small rounded cells lies at the base." >}}
+{{< mediafigure src="biology/Figure_33_02_05" kind="diagram" alt="An illustration of transitional epithelium: tall, diamond-shaped cells piled several layers deep, each with an oval purple nucleus, the cells at the free surface domed and bulging outward while those below fit more closely together; beneath the epithelium lies a band of connective tissue with scattered flattened nuclei." >}}
 Transitional epithelia of the urinary bladder undergo changes in thickness depending on how full the bladder is.
 {{< /mediafigure >}}
 

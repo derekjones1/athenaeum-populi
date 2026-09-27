@@ -45,7 +45,7 @@ Check out this [video of a platypus swimming in its natural habitat](https://ope
 
 Like animals, plants can be endemic or generalists: endemic plants are found only on specific regions of the Earth, while generalists are found on many regions. Isolated land masses—such as Australia, Hawaii, and Madagascar—often have large numbers of endemic plant species. Some of these plants are endangered due to human activity. The forest gardenia (*Gardenia brighamii*), for instance, is endemic to Hawaii; only an estimated 15–20 trees are thought to exist, shown below.
 
-{{< mediafigure src="biology/Figure_44_02_02" kind="photo" alt="The photo shows a white flower with seven smooth, diamond-shaped petals radiating out from a yellow center. The flower is surrounded by waxy green leaves." >}}
+{{< mediafigure src="biology/Figure_44_02_02" kind="photo" alt="The photo shows a white flower with seven smooth, broad, round-tipped petals radiating out from a yellow center. The flower is surrounded by waxy green leaves." >}}
 Listed as federally endangered, the forest gardenia is a small tree with distinctive flowers. It is found only in five of the Hawaiian Islands in small populations consisting of a few individual specimens. (credit: Forest & Kim Starr)
 {{< /mediafigure >}}
 
@@ -53,7 +53,7 @@ Listed as federally endangered, the forest gardenia is a small tree with distinc
 
 Energy from the sun is captured by green plants, algae, cyanobacteria, and photosynthetic protists. These organisms convert solar energy into the chemical energy needed by all living things. Light availability can be an important force directly affecting the evolution of adaptations in photosynthesizers. For instance, plants in the understory of a temperate forest are shaded when the trees above them in the canopy completely leaf out in the late spring. Not surprisingly, understory plants have adaptations to successfully capture available light that passes through the canopy. One such adaptation is the rapid growth of spring ephemeral plants such as the spring beauty (*Claytonia virginica*), shown below. These spring flowers achieve much of their growth and finish their life cycle (reproduce) early in the season before the trees in the canopy develop leaves.
 
-{{< mediafigure src="biology/Figure_44_02_03" kind="photo" alt="This photo shows a white flower with five diamond-shaped petals radiating out from a green center. Faint purple lines radiate out from the center of each petal toward the tip. Five stalk-like stamens with pink-tipped anthers extend from the flower's green center." >}}
+{{< mediafigure src="biology/Figure_44_02_03" kind="photo" alt="This photo shows a white flower with five oval, round-tipped petals radiating out from a green center. Faint purple lines radiate out from the center of each petal toward the tip. Five stalk-like stamens with pink-tipped anthers extend from the flower's green center." >}}
 The spring beauty is an ephemeral spring plant that flowers early in the spring to avoid competing with larger forest trees for sunlight. (credit: John Beetham)
 {{< /mediafigure >}}
 

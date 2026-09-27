@@ -11,7 +11,7 @@ source_chapter: "37"
 weight: 43
 ---
 
-{{< mediafigure src="biology/Figure_37_00_01abc-c452" alt="Photo A shows a tadpole. Photo b shows a frog that has developed legs but still has the tail of a tadpole. Photo C shows a fully grown frog." kind="photo" eager="true" >}}
+{{< mediafigure src="biology/Figure_37_00_01abc-c452" alt="Three photos, left to right: a tadpole; a froglet that has developed four legs but still has a long tadpole tail; and a fully grown frog." kind="photo" eager="true" >}}
 The process of amphibian metamorphosis, as seen in the tadpole-to-frog
 stages shown here, is driven by hormones. (credit "tadpole": modification
 of work by Brian Gratwicke)
