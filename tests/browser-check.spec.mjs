@@ -18,11 +18,11 @@ import {
 test('a fraction typed with "/" grades correct (lone-d numerator)', async ({ page }) => {
   await gotoBuiltPage(page, '/math/prealgebra/09-math-models-and-geometry/07-solve-a-formula-for-a-specific-variable/');
 
-  const card = page.locator('fill-in[data-answer="r=d/t"]');
+  const card = page.locator('fill-in[data-answer-form="solved:r"]');
   await expect(card).toHaveCount(1);
   const field = card.locator('math-field');
   await focusMathField(page, field);
-  await page.keyboard.type('d/t', { delay: 20 });
+  await page.keyboard.type('r=d/t', { delay: 20 });
 
   // MathLive turns the typed "/" into \frac{d}{t} — the exact shape the
   // Compute Engine used to read as Leibniz derivative notation and reject as
@@ -668,11 +668,11 @@ test('a correct Enter-key submission keeps focus inside the exercise', async ({ 
   // Submitting from the math-field itself (Enter → insertLineBreak) is the
   // path the Check-button focus rescue never covered: readonly + the sink
   // teardown dropped focus to <body> right after the learner succeeded.
-  const card = page.locator('fill-in[data-answer="r=d/t"]');
+  const card = page.locator('fill-in[data-answer-form="solved:r"]');
   await expect(card).toHaveCount(1);
   const field = card.locator('math-field');
   await focusMathField(page, field);
-  await page.keyboard.type('d/t', { delay: 20 });
+  await page.keyboard.type('r=d/t', { delay: 20 });
   await page.keyboard.press('Enter');
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
@@ -733,7 +733,7 @@ test('the shared hint toggle discloses a fill-in hint and a self-check hint the 
   // aria-expanded, and reveals the hint paragraph — asserted on a math
   // component and a prose one, since the six components share nothing else.
   await gotoBuiltPage(page, '/math/prealgebra/09-math-models-and-geometry/07-solve-a-formula-for-a-specific-variable/');
-  const fillin = page.locator('fill-in[data-answer="r=d/t"]');
+  const fillin = page.locator('fill-in[data-answer-form="solved:r"]');
   await expect(fillin).toHaveCount(1);
   const disclose = async (card) => {
     const toggle = card.locator('.ap-fillin-hint-toggle');

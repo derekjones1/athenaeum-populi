@@ -859,7 +859,7 @@ test('a graded fill-in has no serious or critical axe violations', async ({
   await assertProductionBuild(page, path);
   await waitForPageReady(page);
 
-  const card = page.locator('fill-in[data-answer="r=d/t"]');
+  const card = page.locator('fill-in[data-answer-form="solved:r"]');
   await expect(card).toHaveCount(1);
   const field = card.locator('math-field');
   await field.scrollIntoViewIfNeeded();
@@ -867,7 +867,7 @@ test('a graded fill-in has no serious or critical axe violations', async ({
   await expect
     .poll(async () => field.evaluate((el) => document.activeElement === el), { timeout: 10_000 })
     .toBe(true);
-  await page.keyboard.type('d/t', { delay: 20 });
+  await page.keyboard.type('r=d/t', { delay: 20 });
   await card.getByRole('button', { name: /check/i }).click();
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 10_000 })
