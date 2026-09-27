@@ -138,10 +138,13 @@ class FillInElement extends HTMLElement {
     // URL is a build-time constant, so esbuild leaves this as a real import().
     try {
       const engine = await import(engineUrl);
-      const { mathlive, checkAnswer, ce, describeAnswerForm } = engine;
+      const { mathlive, checkAnswer, ce, describeAnswerForm, describeFormFeedback } = engine;
       // The form requirement is phrased next to the predicates that enforce
       // it, so the feedback and the rule can never drift apart.
       if (this.answerForm) this._formMessage = describeAnswerForm(this.answerForm);
+      // A 'form' verdict is phrased for the response in hand: an unworked
+      // calculation is told to finish it, any other shape gets the sentence above.
+      this._describeForm = describeFormFeedback;
       // No sound assets are shipped — silence the virtual keyboard.
       mathlive.MathfieldElement.soundsDirectory = null;
       // Field and grader share ONE Compute Engine so they can never disagree
@@ -194,9 +197,12 @@ class FillInElement extends HTMLElement {
     // the value was ever compared, so a learner with a WRONG answer containing
     // parentheses was told "That value is right". Keep the ordering in one
     // place.
+    const status = this._check(latex, this.answer, { mode: this.answerMode, form: this.answerForm });
     this._setStatus(
-      this._check(latex, this.answer, { mode: this.answerMode, form: this.answerForm }),
-      this._formMessage,
+      status,
+      status === 'form' && this.answerForm && this._describeForm
+        ? this._describeForm(latex, this.answerForm) || this._formMessage
+        : this._formMessage,
     );
   }
 

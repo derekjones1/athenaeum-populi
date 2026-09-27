@@ -3424,6 +3424,36 @@ export function describeAnswerForm(spec) {
   return `That value is right — now write it ${phrases.join(' ')}.`;
 }
 
+// The tokens whose shape is a number: a response refused under only these,
+// written with no letter in it, is arithmetic the learner left undone.
+const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'fraction', 'percent', 'lowest-terms', 'mixed-number',
+  'improper-fraction', 'fraction-or-mixed-number']);
+
+/**
+ * The feedback for a 'form' verdict on THIS response. A right value typed as
+ * the unworked calculation — `(9+(-16))+4` for −3, `2.58\cdot1000` for 2,580 —
+ * is told to finish the calculation ("enter just the result"), not to "write
+ * it as a decimal", which reads as if the number were already there in the
+ * wrong notation. Every other shape miss gets describeAnswerForm's sentence.
+ */
+export function describeFormFeedback(studentRaw, spec) {
+  const { tokens, valid } = parseAnswerForm(spec);
+  const general = describeAnswerForm(spec);
+  if (!valid || !tokens.length) return general;
+  if (!tokens.every((token) => NUMBER_SHAPE_TOKENS.has(token) || DENOMINATOR_TOKEN.test(token))) return general;
+  const written = bareLatex(bracketsAsParentheses(studentRaw)).replace(/^[a-zA-Z]\s*=\s*/, '');
+  const ink = written.replace(/\\(?:[tdc]?frac|cdot|times|div|sqrt|%)/g, ' ');
+  if (/[a-zA-Z]/.test(ink)) return general;
+  const oneNumber = asDecimal(written) !== null || asFraction(written) !== null || asMixedNumber(written) !== null
+    || /^[+-]?(?:\d+(?:\.\d+)?|\.\d+)\s*\\%$/.test(written);
+  if (oneNumber) return general;
+  const rest = tokens.filter((token) => token !== 'decimal').map((token) => {
+    const denominator = token.match(DENOMINATOR_TOKEN);
+    return denominator ? `with a denominator of ${denominator[1]}` : FORM_PHRASES[token];
+  });
+  return `That value is right — now finish the calculation and enter just the result${rest.length ? ` ${rest.join(' ')}` : ''}.`;
+}
+
 /**
  * Is `studentRaw` written in every form its exercise requires? Value equality
  * is checked separately — this only reads the shape.
@@ -3647,6 +3677,38 @@ const UNIT_TAIL = /^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*((?:\\(?:text|textrm|mathrm|op
  * (Prealgebra re-review, September 26, 2026.) Percent is untouched: `62\%`
  * and `0.62` are different values, and the `percent` form owns that ask.
  */
+/**
+ * Square brackets a learner types as grouping — `[9+(-16)]+4`,
+ * `9-2[3-8(-2)]`, `\left[…\right]` — read as parentheses. The engine reads
+ * a bracket pair as a list, so the retyped expression graded 'incorrect' or
+ * 'invalid' where its parenthesized twin graded 'form' (Elementary Algebra
+ * 1.4, September 2026). Only a matched `[…]` with no top-level comma is
+ * rewritten: an interval (`[2,5)`, `[-1,3]`) or a list keeps its brackets,
+ * and so does a root index (`\sqrt[3]{x}`).
+ */
+export function bracketsAsParentheses(latex) {
+  const text = String(latex ?? '');
+  if (!text.includes('[')) return text;
+  const chars = [...text];
+  const stack = [];
+  for (let i = 0; i < chars.length; i += 1) {
+    const char = chars[i];
+    if (char === '(' || char === '{' || char === '[') {
+      const rootIndex = char === '[' && /\\sqrt\s*$/.test(text.slice(0, i));
+      stack.push({ char, at: i, comma: false, rootIndex });
+    } else if (char === ',' && stack.length) {
+      stack[stack.length - 1].comma = true;
+    } else if (char === ')' || char === '}' || char === ']') {
+      const open = stack.pop();
+      if (open && open.char === '[' && char === ']' && !open.comma && !open.rootIndex) {
+        chars[open.at] = '(';
+        chars[i] = ')';
+      }
+    }
+  }
+  return chars.join('');
+}
+
 // A percent key, `4.5\%`: the one place a bare `4.5` is the right number with
 // the sign left off rather than a value a hundred times too large.
 const PERCENT_KEY = /^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*\\%$/;
@@ -3670,7 +3732,8 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
   return verdict;
 }
 
-function gradeResponse(studentRaw, answerRaw, options = {}) {
+function gradeResponse(rawStudent, answerRaw, options = {}) {
+  const studentRaw = bracketsAsParentheses(rawStudent);
   let student = preprocess(studentRaw);
   if (!student) return 'empty';
 

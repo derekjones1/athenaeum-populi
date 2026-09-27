@@ -80,7 +80,7 @@ and $2$ aren't like terms, they can't be combined.
 {{< fillin
   question="Find the sum: $\tfrac{x}{4} + \tfrac{3}{4}$"
   answer="\frac{x+3}{4}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x+3}{4}$"
   hint="Add the numerators over the common denominator; $x$ and $3$ are not like terms, so leave them separate."
 >}}
@@ -198,7 +198,7 @@ $y$ and $1$ are not like terms and cannot be combined.
 {{< fillin
   question="Find the difference: $\tfrac{x}{7} - \tfrac{2}{7}$"
   answer="\frac{x-2}{7}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x-2}{7}$"
   hint="Subtract the numerators over the common denominator; $x$ and $2$ cannot be combined."
 >}}
@@ -302,7 +302,7 @@ numerators and keep the denominator.
 {{< fillin
   question="Find the sum: $\tfrac{y}{3} + \tfrac{2}{3}$"
   answer="\frac{y+2}{3}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{y+2}{3}$"
   hint="Add the numerators and place the sum over the common denominator; $y$ and $2$ are not like terms, so they cannot be combined."
 >}}
@@ -373,7 +373,7 @@ numerators and keep the denominator.
 {{< fillin
   question="Find the difference: $\tfrac{x}{19} - \tfrac{8}{19}$"
   answer="\frac{x-8}{19}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x-8}{19}$"
   hint="Subtract the numerators and place the difference over the common denominator; a variable and a number are unlike terms, so they cannot be combined."
 >}}

@@ -96,7 +96,12 @@ does NOT refuse an unreduced fraction with a sum in either half
 `\frac{x^2+3x+2}{x^2-x-6}` for `\frac{x+1}{x-3}`): a Simplify ask whose key
 is such a fraction takes `single-fraction reduced-fraction` (72 keys across
 the math books lacked it on September 27, 2026, most in the rational-expression
-chapters). A one-letter unit
+chapters; Prealgebra's 4 were fixed that day). Derek's decision (September 27,
+2026): each row adds it to its own chapter's items in the step-3 sweep, and
+the tracker's book headers list where they are. Square brackets a learner
+types as grouping (`[9+(-16)]+4`) grade like parentheses, and a right value
+typed as the unworked calculation is told "finish the calculation and enter
+just the result" rather than the token's shape sentence. A one-letter unit
 (`62 m`) still reads as a variable and grades `incorrect`, not `unit`.
 
 Figures and display math: `node tools/figures/render-page-figures.mjs
@@ -144,6 +149,9 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
      2,151 items across the four books are fixed chapter by chapter by
      this re-review, not by a corpus pass, so no lint guards them until
      the last math row closes; a chapter left unswept stays exposed.
+     In the same sweep, add `reduced-fraction` to every Simplify fill-in
+     keyed `single-fraction` whose key has a sum or difference in either
+     half, and check the grader returns `form` on the unreduced fraction.
    - **grader reach:** run the grader on the forms a learner would
      naturally type (with and without digit-grouping commas, `x=5` vs
      `5`, an equivalent fraction or decimal, a unit word) and on a common

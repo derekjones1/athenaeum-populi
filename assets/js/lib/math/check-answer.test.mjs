@@ -14,7 +14,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   foldPrimes,
-  ANSWER_FORM_TOKENS, checkAnswer, checkFormAsGraded, describeAnswerForm, parseAnswerForm,
+  ANSWER_FORM_TOKENS, bracketsAsParentheses, checkAnswer, checkFormAsGraded, describeAnswerForm,
+  describeFormFeedback, parseAnswerForm,
   preprocess,
 } from './check-answer.mjs';
 
@@ -888,6 +889,11 @@ const formCases = [
   ['(-14)^2x^2', '196x^2', 'single-term', 'form'],
   ['6\\cdot x+6\\cdot8', '6x+48', 'expanded', 'form'],
   ['6\\cdot x+48', '6x+48', 'expanded', 'correct'],
+  // Square brackets typed as grouping grade like parentheses (they read as a
+  // list before, so a retyped expression was 'incorrect' or 'invalid').
+  ['[9+(-16)]+4', '-3', 'decimal', 'form'],
+  ['9-2[3-8(-2)]', '-29', 'decimal', 'form'],
+  ['[9+(-16)]+5', '-3', 'decimal', 'incorrect'],
   // A numeral fraction is a numeral on either side of the written product.
   ['\\frac{1}{4}\\cdot3q+\\frac{1}{4}\\cdot12', '\\frac{3}{4}q+3', 'expanded distributed', 'form'],
   ['\\frac{2}{5}\\cdot\\frac{5}{2}(20y+50)', '20y+50', 'expanded', 'form'],
@@ -1543,6 +1549,31 @@ test('answerForm parsing and feedback wording', async (t) => {
       assert.ok(!phrased.includes('undefined'), phrased);
     });
   }
+
+  // A right value typed as the unworked calculation is told to finish it —
+  // "write it as a decimal" read as if the number were already there in the
+  // wrong notation (Elementary Algebra 1.4, September 2026). A single number
+  // in the wrong notation, or a symbolic shape, keeps the token's sentence.
+  await t.test('an unworked calculation is told to finish it', () => {
+    const finish = 'finish the calculation and enter just the result';
+    for (const [typed, spec] of [['[9+(-16)]+4', 'decimal'], ['(9+(-16))+4', 'decimal'], ['2.58\\cdot1000', 'decimal'], ['x=7+6', 'decimal']]) {
+      assert.ok(describeFormFeedback(typed, spec).includes(finish), typed);
+    }
+    assert.ok(describeFormFeedback('\\frac{1}{2}+\\frac{1}{4}', 'fraction lowest-terms').endsWith(`${finish} as a fraction in lowest terms.`));
+    assert.ok(describeFormFeedback('0.0825\\cdot100\\%', 'percent').includes('with the % sign'));
+    assert.equal(describeFormFeedback('\\frac{3}{4}', 'decimal'), describeAnswerForm('decimal'));
+    assert.equal(describeFormFeedback('\\frac{6}{8}', 'fraction lowest-terms'), describeAnswerForm('fraction lowest-terms'));
+    assert.equal(describeFormFeedback('4.5', 'percent'), describeAnswerForm('percent'));
+    assert.equal(describeFormFeedback('6\\cdot x+6\\cdot8', 'expanded'), describeAnswerForm('expanded'));
+  });
+
+  await t.test('grouping brackets read as parentheses; intervals, lists and root indices keep theirs', () => {
+    assert.equal(bracketsAsParentheses('9-2[3-8(-2)]'), '9-2(3-8(-2))');
+    assert.equal(bracketsAsParentheses('\\left[9+(-16)\\right]+4'), '\\left(9+(-16)\\right)+4');
+    assert.equal(bracketsAsParentheses('[2,5)'), '[2,5)');
+    assert.equal(bracketsAsParentheses('[-1,3]'), '[-1,3]');
+    assert.equal(bracketsAsParentheses('\\sqrt[3]{8}'), '\\sqrt[3]{8}');
+  });
 
   await t.test('factored feedback names factored form', () => {
     const phrase = describeAnswerForm('factored');

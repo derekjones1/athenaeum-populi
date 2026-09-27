@@ -612,6 +612,7 @@ $$
 {{< fillin
   question="Simplify: $7^2 - 2[4(5 + 1)]$."
   answer="1"
+  answerForm="decimal"
   hint="Simplify inside the brackets first, then the exponent, then subtract."
 >}}
 

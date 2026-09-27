@@ -48,7 +48,12 @@ Never read against the September 22 bar: needs the full checker read AND
 the image-first figure pass. Every math row also adds `answerForm` to its
 numeric fill-ins that lack one (`brief-math.md` step 3, Derek's decision
 September 26, 2026: 2,151 items, chapter by chapter; when the last math row
-closes, promote the check to a lint error).
+closes, promote the check to a lint error). The same sweep adds
+`reduced-fraction` to every Simplify fill-in keyed `single-fraction` whose
+key has a sum or difference in its numerator or denominator: without it
+the grader accepts the unreduced fraction, including the printed prompt
+(`brief-math.md`, grader paragraph; Derek, September 27, 2026). Exposed
+here on September 27: chapter 8 (20 items) and both knowledge checks (1 and 4).
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|
@@ -73,7 +78,12 @@ Never read against the September 22 bar: needs the full checker read AND
 the image-first figure pass. Every math row also adds `answerForm` to its
 numeric fill-ins that lack one (`brief-math.md` step 3, Derek's decision
 September 26, 2026: 2,151 items, chapter by chapter; when the last math row
-closes, promote the check to a lint error).
+closes, promote the check to a lint error). The same sweep adds
+`reduced-fraction` to every Simplify fill-in keyed `single-fraction` whose
+key has a sum or difference in its numerator or denominator: without it
+the grader accepts the unreduced fraction, including the printed prompt
+(`brief-math.md`, grader paragraph; Derek, September 27, 2026). Exposed
+here on September 27: chapter 1 (2 items) and chapter 7 (38).
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|
@@ -100,7 +110,12 @@ Never read against the September 22 bar: needs the full checker read AND
 the image-first figure pass. Every math row also adds `answerForm` to its
 numeric fill-ins that lack one (`brief-math.md` step 3, Derek's decision
 September 26, 2026: 2,151 items, chapter by chapter; when the last math row
-closes, promote the check to a lint error).
+closes, promote the check to a lint error). The same sweep adds
+`reduced-fraction` to every Simplify fill-in keyed `single-fraction` whose
+key has a sum or difference in its numerator or denominator: without it
+the grader accepts the unreduced fraction, including the printed prompt
+(`brief-math.md`, grader paragraph; Derek, September 27, 2026). Exposed
+here on September 27: chapter 1 (2 items) and chapter 3 (1).
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|

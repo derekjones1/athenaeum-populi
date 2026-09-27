@@ -6675,6 +6675,14 @@
    "verdict": "ok",
    "note": "m66540 exercise fs-idp91453024, solution transcribed near-verbatim as the model answer."
   },
+  "12626454c768766a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-F",
+    "result": "agrees"
+   }
+  },
   "1269a094511cee54": {
    "verdict": "ok",
    "note": "selfcheck kept deliberately: reverse-recall of neurocysticercosis/epilepsy MC (avoid distinctItems collision) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -7934,10 +7942,6 @@
   "162c2a5afe1af25b": {
    "verdict": "ok",
    "note": "node: Math.asin(6/10)=0.6435011087932844, rounds to 0.6435; triangle hyp=10, opposite=6 (Figure 9), matches source's 0.6435 radians."
-  },
-  "163097d81d074889": {
-   "verdict": "ok",
-   "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "1630de8c36dc0e6c": {
    "verdict": "ok",
@@ -10551,9 +10555,6 @@
    "note": "Computed with node: Math.sqrt(50/(4*Math.PI)) = 1.9947...; rounds to 1.99, matching the question's 'rounded to the nearest hundredth' instruction and the CNXML solution's stated '1.99 inches'."
   },
   "1d230f92e3e7f4ad": {
-   "verdict": "ok"
-  },
-  "1d296ef2bc741ad2": {
    "verdict": "ok"
   },
   "1d2de8eac06a26c5": {
@@ -31913,6 +31914,14 @@
     "result": "agrees"
    }
   },
+  "5d76c73dffb8dece": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-F",
+    "result": "agrees"
+   }
+  },
   "5d78c7fcfe81712b": {
    "verdict": "ok",
    "note": "KC 2 9.1 § Biofilms and Human Health, m58828 (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -47070,13 +47079,6 @@
    "verdict": "ok",
    "note": "Parent re-authored this graph-mode MC's option set. Re-derived independently: y=x+2 and y=-2x+2 meet where x+2=-2x+2, so 3x=0, x=0 and y=2 — the intersection is (0,2), and answerIndex 1 is the option drawing those two lines with a point marked at (0,2). Distractors each differ in the DRAWN lines, not in a moved dot: index 0 flips both intercept signs (y=x-2, y=-2x-2, crossing (0,-2)), index 2 is a parallel pair (y=x+2, y=x-2, no solution), index 3 flips the second slope's sign (y=x+2, y=2x+2, both rising). The original option set had index 0 carrying the identical correct lines with a decoy dot, which no truthful ariaLabel can describe without naming the answer, and — because both source lines share the y-intercept 2 — every intercept-preserving distractor crossed at (0,2) too."
   },
-  "8ccaa312417285c4": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "8cce659d15750ce7": {
    "verdict": "ok",
    "note": "source exercise fs-id1167660666747 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -59387,6 +59389,14 @@
     "result": "agrees"
    }
   },
+  "b29a797dd647b04e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-F",
+    "result": "agrees"
+   }
+  },
   "b29aa64c3a83e6af": {
    "verdict": "ok",
    "note": "KC 4 17.3 § Neutrophils (PMNs), m58879"
@@ -60358,10 +60368,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "b553474e4399e436": {
-   "verdict": "ok",
-   "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "b5543c09b4b29c29": {
    "verdict": "ok",
@@ -73648,6 +73654,14 @@
   "df4060db72586141": {
    "verdict": "ok"
   },
+  "df45458d393e111a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-F",
+    "result": "agrees"
+   }
+  },
   "df47561713a1ce5f": {
    "verdict": "ok",
    "note": "KC 4 20.3 § body HGT in Eukaryotes (fs-idm39146080), m66532 — parent re-read against the module"
@@ -73810,9 +73824,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "df9ac2f6cfbbdfd1": {
-   "verdict": "ok"
   },
   "df9cf3d19dc95e2e": {
    "verdict": "ok"
@@ -80547,6 +80558,14 @@
    "note": "glossary recall: chloride shift (fs-idm126959440) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f458b2352b4f9d00": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-G",
     "result": "agrees"
    }
   },
