@@ -87,11 +87,24 @@ const DEGREE_MARK_ANYWHERE = new RegExp(DEGREE_MARK_SOURCE);
 const DEGREE_MARK_AT_END = new RegExp(String.raw`^([\s\S]*?)(?:${DEGREE_MARK_SOURCE})$`);
 export const spellDegreesAsQuantity = (latex) => latex.replace(DEGREE_MARK, '\\cdot\\frac{\\pi}{180}');
 
+// Compute Engine reads `\%` after a plain numeral only: `12.5\%` is 0.125,
+// but `\frac{1}{3}\%` and `33\frac{1}{3}\%` — the fraction and mixed-number
+// percents the `percent` form admits and Prealgebra's Answer Key prints —
+// parse invalid, so a right answer was refused as unreadable. Spell such a
+// head as the value it names times 1/100. Value path only: the `percent`
+// form reads the raw sign through bareLatex.
+const FRACTION_PERCENT = /(^|[^\d.\w^])(?:(\d+)\s*)?\\[tdc]?frac\s*\{(\d+)\}\s*\{(\d+)\}\s*\\%/g;
+export const spellFractionPercents = (latex) => latex.replace(
+  FRACTION_PERCENT,
+  (match, lead, whole, numerator, denominator) =>
+    `${lead}\\left(${whole ? `${whole}+` : ''}\\frac{${numerator}}{${denominator}}\\right)\\cdot\\frac{1}{100}`,
+);
+
 const PARSE_CACHE_LIMIT = 256;
 const parseCache = new Map();
 function parseLatex(source) {
   if (parseCache.has(source)) return parseCache.get(source);
-  const expr = ce.parse(spellDegreesAsQuantity(source));
+  const expr = ce.parse(spellFractionPercents(spellDegreesAsQuantity(source)));
   if (parseCache.size >= PARSE_CACHE_LIMIT) parseCache.clear();
   parseCache.set(source, expr);
   return expr;
@@ -2455,7 +2468,10 @@ const FORM_PREDICATES = {
     if (isOnePower(latex)) return true;
     const reciprocal = bareLatex(latex)
       .match(/^\\[tdc]?frac\s*\{\s*1\s*\}\s*\{([\s\S]+)\}$/);
-    return reciprocal !== null && isOnePower(reciprocal[1]);
+    // The reciprocal of a NEGATIVE power is a quotient still to simplify:
+    // `\frac{1}{x^{-9}}` is the value of `x^9`, the step undone.
+    return reciprocal !== null && isOnePower(reciprocal[1])
+      && !/\^\s*\{?\s*-/.test(reciprocal[1]);
   },
   // "Simplify: $\sqrt{32}-\sqrt{18}$" answers with `\sqrt{2}`. This one is read
   // entirely off the LaTeX and never parsed: the engine evaluates radical
@@ -2791,6 +2807,10 @@ const FORM_PREDICATES = {
     const bare = bareLatex(latex).replace(/^[-−]\s*/, '');
     if (/\\div/.test(bare) || !/^\\[tdc]?frac/.test(bare)) return false;
     if (writesNumeralProduct(bare) || writesExponentArithmetic(bare)) return false;
+    // A numeral power (`\frac{1}{2^3y^3}`) is arithmetic left undone, and a
+    // negative exponent (`\frac{1}{8}y^{-3}`) is the reciprocal the fraction
+    // exists to write — neither is the one simplified fraction the ask names.
+    if (writesNumeralPower(bare) || /\^\s*\{?\s*-/.test(bare)) return false;
     // Each half has its like terms combined: `\frac{3p+6p}{8}` is the
     // half-worked `\frac{9p}{8}` (the engine folds the numerator first).
     if (fracHalves(bare).some((half) => !FORM_PREDICATES['no-like-terms'](half))) return false;

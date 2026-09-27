@@ -81,7 +81,14 @@ of numbers (each coordinate a decimal), so a computed-pair key takes it;
 `expanded`, `single-term`, and `single-fraction` refuse written-out numeral
 arithmetic (`6\cdot x+6\cdot8`, `(-14)^2x^2`, `\frac{1}{y^{7-2}}`), and
 `single-fraction` refuses uncombined like terms in either half
-(`\frac{3p+6p}{8}`).
+(`\frac{3p+6p}{8}`). Since the Prealgebra knowledge-check re-review (September 27,
+2026): a fraction or mixed-number percent (`33\frac{1}{3}\%`,
+`\frac{100}{3}\%`) is a readable value and passes `percent`; it used to
+parse invalid, so a percent key never needs rounding to dodge it. Same run:
+`single-fraction` refuses a numeral power or a negative exponent
+(`\frac{1}{2^3y^3}`, `\frac{1}{8}y^{-3}`), and `single-power` refuses the
+reciprocal of a negative power (`\frac{1}{x^{-9}}`). A one-letter unit
+(`62 m`) still reads as a variable and grades `incorrect`, not `unit`.
 
 Figures and display math: `node tools/figures/render-page-figures.mjs
 <page> SP/render/<page-stem>` renders every inline `<svg>` to

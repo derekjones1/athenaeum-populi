@@ -540,6 +540,14 @@ const formCases = [
   // token nothing to read.
   ['0\\%', '0\\%', 'percent', 'correct'],
   ['0', '0\\%', 'percent', 'form'],
+  // A fraction or mixed-number percent — the Answer Key's 33⅓% — is a value,
+  // not unreadable: Compute Engine reads `\%` after a plain numeral only.
+  ['33\\frac{1}{3}\\%', '33\\frac{1}{3}\\%', 'percent', 'correct'],
+  ['\\frac{100}{3}\\%', '33\\frac{1}{3}\\%', 'percent', 'correct'],
+  ['12\\frac{1}{2}\\%', '12.5\\%', 'percent', 'correct'],
+  ['-12\\frac{1}{2}\\%', '-12.5\\%', '', 'correct'],
+  ['33.333\\%', '33\\frac{1}{3}\\%', 'percent', 'incorrect'],
+  ['\\frac{1}{3}', '33\\frac{1}{3}\\%', 'percent', 'form'],
   // ---- the closed-world notation grammars ---------------------------------
   // Each of these tokens names ONE way of writing an answer whose value the
   // prompt already prints, so each reads the WHOLE response as a grammar
@@ -728,6 +736,14 @@ const formCases = [
   // check can see the quotient, so reduced-ness is read off the WRITTEN
   // halves — an unreduced numeral fraction is a form miss, not a pass.
   ['\\frac{40x}{88}', '\\frac{5x}{11}', 'single-fraction', 'form'],
+  // A numeral power or a negative exponent is not the simplified fraction
+  // (Prealgebra knowledge check, $(2y)^{-3}$).
+  ['\\frac{1}{8y^3}', '\\frac{1}{8y^3}', 'single-fraction distributed', 'correct'],
+  ['\\frac{1}{2^3y^3}', '\\frac{1}{8y^3}', 'single-fraction distributed', 'form'],
+  ['\\frac{1}{8}y^{-3}', '\\frac{1}{8y^3}', 'single-fraction distributed', 'form'],
+  // …and the reciprocal of a negative power is a single power still unsimplified.
+  ['\\frac{1}{x^{-9}}', 'x^9', 'single-power', 'form'],
+  ['\\frac{1}{x^7}', '\\frac{1}{x^7}', 'single-power', 'correct'],
   // gcd is an integer notion: a reduced fraction with a decimal coefficient
   // has nothing to cancel and must not fail the form.
   ['\\frac{1.5}{x}', '\\frac{1.5}{x}', 'single-fraction', 'correct'],
