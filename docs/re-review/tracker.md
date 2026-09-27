@@ -52,7 +52,7 @@ closes, promote the check to a lint error).
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|
-| [ ] | 1. Foundations | 10 | | | | |
+| [x] | 1. Foundations | 10 | 399 | 1252–1267 | 183e726 | One Opus fixer per section (134–242k tokens each, ~1.72M total); Fable solve ~300k for 195 items, 195/195 after two adjudications on source keys (1.4 Bears 105, ATM fee 16). Retype ~138 and hint leaks ~115 (the parent rewrote 12 hints in 1.4 and 1.7 that stated the sign of the product or quotient). Keys: 0 wrong. 1.6 keys two Try Its right where the source prints −1 and −17/8 (errata 1261–1262, disclosed in the footer). Invented numbers came back in 1.2, 1.3, 1.6 and 1.8; the 1.3 counter and number-line figures were redrawn to the source. 1.10 mixed-unit asks now take one-unit totals (the Prealgebra 7.5 shape), and `unitTotals` learned "8 lbs . 15 oz" and gal/qt. Grader: a numeral fraction now counts as a numeral in a written product under `expanded`. Open: `single-fraction` without `reduced-fraction` accepts unreduced fractions with a sum in the numerator or denominator (72 keys, mostly chapter 8), now in brief-math. Floors: replayed −83, confirmed −1. |
 | [ ] | 2. Solving Linear Equations and Inequalities | 7 | | | | |
 | [ ] | 3. Math Models | 6 | | | | |
 | [ ] | 4. Graphs | 7 | | | | |
