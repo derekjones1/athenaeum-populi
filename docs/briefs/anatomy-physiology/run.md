@@ -4,12 +4,15 @@ This is the orchestrator's checklist for "author chapter N of Anatomy and
 Physiology". It is the one document the parent reads; the agents read the
 briefs beside it. Rules live in the playbooks (`docs/authoring-playbook.md`,
 `docs/subjects/life-sciences.md`, `docs/subjects/anatomy-physiology.md`);
-this file and the briefs only say who reads what, in what order, with what
-in their context — every agent re-reads a rule stated here, so nothing
-below restates a playbook.
+this file says who reads what, in what order, with what in their context,
+and restates no rule. The author and checker briefs do repeat the hint and
+leak rules on purpose (Derek kept them, September 23, 2026), so a change
+to one of those rules is made in the playbook AND in both briefs. A unit
+Knowledge Check runs from `kc-run.md` beside this file.
 
-This kit is the Microbiology kit (`docs/briefs/microbiology/`) with that
-book's content rules swapped for this book's: each module's own
+This kit descends from the Microbiology kit (retired September 26, 2026,
+with that book complete; its runs are in `docs/history/microbiology.md`),
+with that book's content rules swapped for this book's: each module's own
 `<glossary>` is the Key-terms list, every exercise is keyed, no Check Your
 Understanding or Clinical Focus boxes; instead the Interactive Link
 Questions rule, the References list, the figure `kind` check, and the
@@ -43,6 +46,23 @@ alt-errata verifier (§4 step 0). Hence:
 - **The blind solve runs in a fresh Fable subagent** with only the packets
   in its context (`solve.md`) — Fable, because it is the orchestrator's
   own reading, not a Sonnet's. The parent adjudicates disagreements only.
+- **Launch in a rolling window, about ten to twelve agents live**, the
+  next started as one finishes; fourteen launched at once hit the session
+  limit, and the limit is shared with any concurrent session. A limit
+  (429) kills agents mid-task: first check what each left on disk (the
+  page, a `verify-section` run, a complete `answers.json`), do the
+  parent's own work until the reset, then resume each killed agent by
+  `SendMessage` to its raw id ("resume; re-read your regions before
+  editing") — it continues from its transcript. Respawn only if the resume
+  errors ("No transcript found"), and never skip a killed pass. Every
+  brief has its agent append its report as it goes, so a killed reader
+  loses little.
+- **Scripts that edit a page or data file** assert that the computed
+  target is non-empty and matches exactly once (a `str.replace('')` once
+  wrote a 5 MB page), rewrite JSON with `ensure_ascii=False` and the
+  file's own indent, strip a matched attribute rather than drop its line,
+  and name files explicitly rather than rely on a glob. A file several
+  agents edit is changed with the Edit tool, never rewritten whole.
 
 ## 1. Before the wave
 
@@ -75,7 +95,8 @@ them.
    together with the step-6 drafter.
 6. **Run facts** — copy `run-facts-template.md` to `$SP/run-facts.md`.
    **Delegated, in two parts**: one Sonnet agent fills PART A (every
-   factual field, from the `keys` files and the raw CNXML) in
+   factual field, from the `keys` files and the raw CNXML; every count an
+   element count in the CNXML, never a grep over the keys files) in
    `$SP/run-facts.md`, and writes PART B, "DECISIONS NEEDED", to a
    SEPARATE file, `$SP/run-facts-B.md` — authors and checkers never read
    it. Part B is a numbered list of every Interactive Link Question (with
@@ -89,13 +110,19 @@ them.
    lists labels rather than describes, every `section.references` with its
    paragraph count, and every route, with the raw data beside each. The
    parent reads PART B only and writes PART C into `$SP/run-facts.md`, the
-   decisions — made once, by the parent, not per author. A decision names the playbook rule it applies, and a shape
-   the playbook already fixes is NOT re-decided: before the wave, grep
-   `docs/subjects/anatomy-physiology.md` for every form Part C names and
-   quote the rule beside the decision. Part B quotes the extractor's key
-   line verbatim and never infers a key. **Part C names WHICH rule and
-   WHICH sentence, never a concrete `accept` list** — say "grader-check
-   the members" and let the author verify.
+   decisions — made once, by the parent, not per author. A decision
+   names the playbook rule it applies, and a shape the playbook already
+   fixes is NOT re-decided: before the wave, grep
+   `docs/subjects/anatomy-physiology.md` and `docs/subjects/life-sciences.md`
+   for every form Part C names and quote the rule beside the decision.
+   Part B quotes the extractor's key line verbatim and never infers a key.
+   **Part C names WHICH rule and WHICH sentence, never a concrete `accept`
+   list** — say "grader-check the members" and let the author verify. A
+   decision about a figure reads its letters, labels, and counts off the
+   vendored image, never the source alt, which can describe a different
+   version of the drawing — for the four September-8 images replaced in
+   place, the old one *(an alt's lettering restated in Part C was built
+   on by an author, Microbiology ch. 26)*.
 7. Copy the three agent briefs unchanged to `$SP/` (`author.md`,
    `checker.md`, `claim-pass.md`) so the agents' paths are one directory.
 
@@ -136,10 +163,16 @@ authors convert them to real links before the checkers repeat the finding
 page by page.
 
 Checker defects go back to the page's author by `SendMessage` (authors are
-resumable by name); the parent applies only one-line fixes itself. **Read
-every author's report for the words "dropped", "omitted", "duplicate", or
-"folded" and challenge each one** — no gate catches a dropped source
-exercise, and most such rationales fail checking. The only exercise that may lawfully stand ungraded
+resumable by raw agent id); the parent applies only one-line fixes itself.
+Read every changed `question=` line and every replaced option in the diff
+— the gates do not read prose, and fixes have shipped garbled stems and
+stems that print a neighbour's key above or below — and give the parent's
+own rewrites the same read: grep the page for each new key, and each new
+stem's words against every other key. **Read every author's report for the
+words "dropped", "omitted", "duplicate", or "folded" and challenge each
+one** — `verify:source-coverage` refuses a drop but cannot judge whether a
+fold is honest, and most such rationales fail checking. The only exercise
+that may lawfully stand ungraded
 is an Interactive Link Question whose answer the module does not fix, and
 it still stands as a prompt in its callout and is counted in the footer.
 Verify every checker finding against the image or the raw CNXML before
@@ -148,8 +181,9 @@ relaying it — some are wrong.
 Claim-pass findings: the parent verifies each against the cited evidence,
 then applies the accepted ones (Source note, `reconciliation-decisions.json`
 entry, footer sentence, erratum), lists the rest under "Reviewed and *not*
-errata". After correcting a value on a page, grep the page for the OLD
-value: a hint or filler item built on it is now wrong.
+errata". After correcting a value on a page, grep the page, the book's
+Knowledge Checks, and sibling pages for the OLD value: a hint, filler, or
+check item built on it is now wrong.
 
 ## 3. The blind solve
 
@@ -172,10 +206,21 @@ npm run solve:compare -- $SP/solve/chNN/answers.json content --out $SP/solve-res
 ```
 
 Every disagreement or flag gets an `adjudicated` note settled against the
-module's sentence (a why-question keyed to one abstract noun usually wants
-its accept list extended within the 7-word accept cap). A compare that hits ONE
+module's sentence. A why-question keyed to one abstract noun usually wants
+its accept list extended within the 7-word accept cap; when the solver's
+answer is right but a paraphrase no accept list can enumerate (an effect,
+a reason — "unregulated activation" for "cytokine storm"), the item becomes
+a `multiplechoice` over the module's own named outcomes and is re-solved
+(never for a leak, which is fixed by order or wording). A flag on an item
+that carries a `DISCLOSED_DEVIATIONS` entry or a "Reviewed and *not*
+errata" ruling re-raises a recorded decision: read the footer, the
+deviation, and the errata file, and adjudicate by the decision. Read every
+answer's `note`, not only the disagreements: the solver reads the whole
+masked page and has reported real source defects outside its own item
+(2.5's four-row table under prose promising five); a note describing a
+contradiction goes to the claim-pass handling. A compare that hits ONE
 unresolved disagreement writes NOTHING for the whole file — re-run it after
-adjudicating. A page edited after its solve re-hashes: re-emit that page
+adjudicating. Its results are merged in §4 step 5. A page edited after its solve re-hashes: re-emit that page
 and solve it again. After a sweep, re-solve only what the carry rule in
 AGENTS.md ("The answer ledger") does not carry *(September 23, 2026)* —
 `npm run ledger:carry` applies it; snapshot BEFORE the sweep's first edit.
@@ -186,7 +231,8 @@ AGENTS.md ("The answer ledger") does not carry *(September 23, 2026)* —
    once the pages are stable**. Agents are addressed by their raw agent id
    for `SendMessage`, never by their description string — record each
    author's id when it is launched. (a) an alt-errata verifier, **on
-   Opus** (it reads images; see §1) — every
+   Opus** (it reads images; see §1; kept although the checkers read every
+   figure, as a low-cost safety check — Derek, September 23, 2026) — every
    author/checker "suspected source defect" and every alt-vs-image claim,
    checked against the vendored image, the CNXML, AND the September-8
    table in the playbook for a module in that set, verdicts to
@@ -209,30 +255,49 @@ AGENTS.md ("The answer ledger") does not carry *(September 23, 2026)* —
 3. Pins: chapter and section counts are NOT restated in prose — `npm run
    source:verify` prints them from the map, the A&P test in
    `tools/source/openstax-source.test.mjs` reads them from disk, and
-   `documentation.test.mjs` fails a doc that restates one. Update: the book cover (the chapter moves
-   from "Planned contents" to its `### Unit N` heading under `## Chapters`;
-   after chapter 1 the cover's `authoring_status` and the lock's
-   `authoringStatus` both flip to `in-progress`), `docs/source/claim-pass-ledger.md`
-   rows, the playbook header sentence for the chapter.
+   `documentation.test.mjs` fails a doc that restates one. Update: the
+   book cover (the chapter moves from "Planned contents" to its `### Unit
+   N` heading under `## Chapters`), `docs/source/claim-pass-ledger.md`
+   rows, the playbook header sentence for the chapter. When the book's
+   last section lands, the status flips to `complete` in every place
+   life-sciences "Where the files go" lists — its own close-out step.
 4. `node tools/source/openstax-source.mjs history --output
    docs/source/openstax-upstream-history-audit.md`.
 5. `python3 tools/verify/rebuild-ledger-results.py --results
    $SP/ledger-results --out $SP/ledger-results-fixed --book
    life-health-sciences/anatomy-physiology` (rebuilds the author hashes
-   your post-filing edits changed), then merge: author results → solve
-   records → prune (`npm run ledger:merge -- $SP/ledger-results-fixed >
-   $SP/merge1.log 2>&1`; `npm run ledger:merge -- $SP/solve-results/chNN >
-   $SP/merge2.log 2>&1`; `node tools/verify/answer-ledger.mjs prune content
-   > $SP/prune.log 2>&1`; `baseline:update` in step 6 moves
-   `--min-exercises` to the new total). A page with more than one stale entry stops the
-   rebuild and nothing is written for it or the pages after it: map stale
-   → uncovered by question text against the solve packet's hashes, write
-   the patched file, and merge that too.
+   your post-filing edits changed), then merge the author results and the
+   solve records, and prune (`npm run ledger:merge --
+   $SP/ledger-results-fixed > $SP/merge1.log 2>&1`; `npm run ledger:merge
+   -- $SP/solve-results/chNN > $SP/merge2.log 2>&1`; `node
+   tools/verify/answer-ledger.mjs prune content > $SP/prune.log 2>&1`).
+   A merge keeps an author's note under a solve and a solve under an
+   author's note, whichever lands first. Then `npm run ledger:provenance --
+   content/life-health-sciences/anatomy-physiology --out $SP/prov` and
+   merge `$SP/prov`: it gives any record still carrying only the solve
+   placeholder (an item edited after its author filed) a provenance note,
+   and lists weak matches in `$SP/prov/low-confidence.json` — read those.
+   (Chapters 1–2 lost every graded item's author note to a compare merged
+   last, before merges were order-independent; their notes were
+   regenerated this way on September 26, 2026.) `baseline:update` in step
+   6 moves `--min-exercises` to the new total. A page with more than one stale
+   entry stops the rebuild and nothing is written for it or the pages
+   after it: map stale → uncovered by question text against the solve
+   packet's hashes, write the patched file, and merge that too.
 6. `npm run check:external-links` BEFORE the errata drafter (step 0b), so
    dead-link errata land in the run's block (a 403 is a bot wall and stays
    linked; a 404 through the `openstax.org/l/` redirect is un-linked and
    filed). Then `npm run baseline:update`; `npm test > $SP/test-final.log
-   2>&1`; read the tail. `npm run source:verify`.
+   2>&1`; read the tail. `npm run source:verify`. Then `npm run build >
+   $SP/build.log 2>&1 && npm run check:build >> $SP/build.log 2>&1`; read
+   the tail — a green `npm test` is not a buildable site (a bare `$4
+   billion` once broke the build with every fast gate green), and the
+   build-size cap this book is expected to trip (playbook "Build budgets")
+   is measured only here. The axe suite reads only the routes in
+   `REPRESENTATIVE_PAGES` (`tests/accessibility.spec.mjs`), which holds
+   Biology and Microbiology section and check pages but no Anatomy and
+   Physiology route yet: add a section page with this book's feature boxes
+   and figures, and each unit Knowledge Check as it lands.
 7. New lessons: a one-line rule into the playbook section it belongs to;
    the narrative into `docs/history/anatomy-physiology.md`; a lint or test
    where one can hold it. Then the session memory file.

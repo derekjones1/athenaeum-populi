@@ -58,8 +58,9 @@ What is specific to a unit-level check:
   | 8 | 44–47 | 51–54 | `knowledge-check-44-47.md` | 55 |
 
   Chapter weight = chapter number + the number of units that end before it.
-  Land a unit's check and the shift of every chapter at or after its last
-  chapter in the same commit: `npm run validate` requires strictly
+  Land a unit's check and the shift of every chapter after its last
+  chapter in the same commit (the unit's own last chapter keeps its
+  weight): `npm run validate` requires strictly
   sequential weights at the book root, so a check without the shift, or a
   shift without the check, is red.
 
@@ -69,6 +70,12 @@ What is specific to a unit-level check:
   block's last chapter and rendered flat in the sidebar like a math book's.
   The block table lives in `docs/subjects/microbiology.md` §Knowledge
   checks; every other rule in this edition applies to it unchanged.
+  Anatomy and Physiology 2e's six-unit table is in its playbook, and its
+  checks run from `docs/briefs/anatomy-physiology/kc-run.md`.
+
+  A check's section count comes from the content tree (or the source map)
+  on the day it is authored, never from a table in a playbook — two
+  Microbiology block tables were wrong.
 
 ## Content rules
 
@@ -146,7 +153,8 @@ What is specific to a unit-level check:
   nothing the learner can see. Write the fact into the stem instead
   ("Which pair of disciplines builds on both the life and the physical
   sciences?"). The lint rejects `this/the/that section|chapter|module|page`
-  inside a Knowledge Check question.
+  inside a Knowledge Check question; "the table" and "the figure" point at
+  nothing on a cumulative page either ("According to the table of…").
 - **A cloze blanks a term, not a phrase.** The blank in a summary or body
   cloze is a word or name the module bolds, defines, or uses as a name
   (`branch point`, `lateral line`), never a verb phrase, a list tail, or a
@@ -162,9 +170,14 @@ What is specific to a unit-level check:
 - **The stem may not repeat the key's own word.** "Two leaves connecting
   *opposite* each other" keyed `opposite`, "which named *bacteriophage*"
   over three options that are not phages: a learner matches the word
-  without the biology. Cover the key and ask whether the stem names it.
-  The mechanical version hits mostly ordinary shared vocabulary, so it is a
-  checker duty, not a lint.
+  without the biology. Cover the key and ask whether the stem names it —
+  or an accept member, or a clause that paraphrases one ("lower supplies
+  of sperm" beside an accepted `sperm-depleted`). Nor may a stem name,
+  list, or rule out its own options ("…uniporters, symporters, and
+  antiporters" above an MC keyed antiporter), or carry an etymology or a
+  "despite its name" clause that spells out the key. The mechanical
+  version hits mostly ordinary shared vocabulary, so it is a checker and
+  parent duty, not a lint.
 - **Reverse recall is the same item, and a hint counts.** A section page
   that asks "Frogs belong to which order?" → `Anura` has already tested the
   fact; a check textin "A tail-less amphibian of the clade Anura is called a
@@ -173,12 +186,18 @@ What is specific to a unit-level check:
   or body self-check already prints ("in exactly the same location, or
   locus"). So is a synonym key for the same fact asked in the same
   direction — an "Actinobacteria" textin is the page's own "actinomycetes"
-  item under a different name (Microbiology block 3).
+  item under a different name (Microbiology block 3). A `selfcheck`'s
+  hidden model answer that prints a key is not a reverse recall unless its
+  rubric or hint prints it too; in a thin module that has run out of
+  unasked sentences, accept the overlap and record it in the ledger note.
   The duplicate-stem lint cannot see any of this, and per-chapter checkers
   miss it, so run a **reverse-recall sweep** as its own wave, after the
-  module-fidelity checkers and before the blind solve: one checker per unit
-  reads every check item beside its section page's Practice block and body
-  self-checks, and the parent adjudicates the flags. Its bar is the four
+  module-fidelity checkers and before the blind solve: one checker per two
+  or three chapters reads every check item beside its section page's
+  Practice block and body self-checks — and greps the unit's other section
+  pages for each key, since a check item can re-ask a sibling section's
+  item — and the parent adjudicates the flags. It can run on the finished
+  chapter blocks before assembly. Its bar is the four
   cases above, not a term merely appearing on the page, and not a fact
   re-asked from a different sentence or with a different keyed emphasis.
   Each replacement is built from a different sentence of the module, keeps
@@ -186,20 +205,28 @@ What is specific to a unit-level check:
   second checker against the CNXML and the section page (body self-checks
   included), and is blind-solved before it is ledgered like any other item.
   A section-page edit re-opens the reverse-recall read for that section's
-  check items *(September 22, 2026)*.
+  check items *(September 22, 2026)*, and a section-page claim correction
+  re-opens them for the corrected value too: a check item built on the old
+  sentence is now wrong.
 - **Format tells.** The key must sit in the distractors' case, length band,
   and grammatical form: not the only capitalised option (`Kuru` beside
   lowercase diseases), not the only one without a parenthetical, not the
   only plain-text name among italic genus names, not the only option
   missing an article. Options must all belong to the stem's category (a
-  "which type of spore" stem does not offer "sporangium"). Three options
-  are allowed, so drop an odd option rather than keep it.
+  "which type of spore" stem does not offer "sporangium"), and one kind (a
+  drug class does not sit among drugs, a region among countries). Also a
+  tell: options whose printed numbers answer the stem by inspection ("the
+  lowest expenditure" over four values), and a key that is the only one of
+  its chemical kind (the one anion among cations). Three options are
+  allowed, so drop an odd option rather than keep it.
 - **A distractor is the module's answer to a different question.** "Every
   option printed in the module" is easy to satisfy with a fact that is ALSO
   a correct completion of the stem — atomic mass for "protons and neutrons
   determine its…". Take each distractor from a sentence that answers a
   neighbouring question (the micronutrients' roles beside a macronutrient
-  stem) and check it against the stem as if it were the key.
+  stem) and check it against the stem as if it were the key. An option
+  naming the category the key belongs to, or a subset of another option,
+  is a second key (life-sciences "Multiple choice").
 - Multiple-choice options are three or four, parallel in grammar and length
   band. The corpus-wide answer-position gate measures the book across all
   its pages, so ~200 new items on one page can move it: spread keyed
@@ -232,7 +259,19 @@ What is specific to a unit-level check:
   shape is a lint error since September 22, 2026, and so is a `textin`
   whose key the item directly above it in its `### N.M` section prints.
   Grep the whole assembled page for every key and accept after every
-  replacement round, not just the one section's page and not just once.
+  replacement round, not just the one section's page and not just once —
+  by root and by the grader's plural fold, not whole words only
+  (`dermatophytes` leaks `dermatophyte`); `npm run kc -- leaks <page>`
+  lists the candidates by key and plural fold, and where each sits. A
+  candidate is a leak when the other item's text states the fact the item
+  tests or singles out its key — a stem asserting it, an abbreviation
+  option beside the spelled-out ask (Microbiology block 2's "OTC"). A term
+  the other item uses in another context, a distractor, or a hidden rubric
+  clause that does not state the fact is shared vocabulary, not a leak:
+  all 61 candidates on the shelf's thirteen finished checks read that way
+  (September 26, 2026). In a unit organised by body
+  system, avoid keying a name every chapter's stems print (Microbiology's
+  major pathogens; an organ or hormone in Anatomy and Physiology).
 - The attribution footer follows the section-page form (licence, deep link
   to the source book, and a `Changes:` clause stating that every item is
   locally written from the named chapters' modules).
@@ -255,6 +294,11 @@ That subsection tie is the provenance: the learner page groups by
 `### N.M` only, and the ledgers carry the rest. When the item's answer-ledger
 record is written (Verify, step 3), its `note` starts with
 `KC <unit> <N.M> § <subsection>` so the tie survives in the committed data.
+`npm run kc -- notes` writes those notes from the authors' provenance
+files, and `npm run ledger:provenance` derives the tie for any check
+record still without one (about 390 of the shelf's check records had lost
+it to a solve placeholder before September 26, 2026, and were restored
+that way).
 
 Inspect the pinned CNXML module as the semantic source; the PDF is the
 edition and visual evidence for figures and tables. If the module's summary,
@@ -296,13 +340,16 @@ is not optional either.
    text (source outranks general knowledge). Emit the packets from each
    chapter's scratch block and answer them BEFORE reading the block with
    its keys (the parent read for tells and giveaways comes after), so the
-   solve is blind in fact and not only in tooling; a parent fix re-hashes
+   solve is blind in fact and not only in tooling — or, as in a chapter
+   run, give the packets and masked section pages to a fresh Fable
+   subagent, which leaves the parent free to read first; a parent fix re-hashes
    the item, and so does editing the figure or table the item names, so
    re-emit and re-answer that one — its solve packet carries the named
    block as `dependency` regardless of `--context`. Record each verdict and its
    `solved` block in the **answer ledger** (AGENTS.md §The answer ledger,
    `npm run ledger:merge` last, after every other edit — hashes depend on
-   the final text): every item needs a record, and `npm test` fails at
+   the final text; a merge keeps a provenance note and a solve whichever
+   lands first): every item needs a record, and `npm test` fails at
    `verify:ledger` until it exists, since `--require-solved` covers this
    book's Knowledge Checks like its sections.
 4. Run `npm run verify-section -- content/.../knowledge-check-XX-YY.md`; it
@@ -310,7 +357,7 @@ is not optional either.
    stem), self-grades every `textin`, and checks every `mediafigure`
    resolves. Run it from the repository root, and give a scratch copy of
    the page a path that ends in
-   `content/life-health-sciences/biology/knowledge-check-XX-YY.md`: the
+   `content/life-health-sciences/<book>/knowledge-check-XX-YY.md`: the
    book's rule profile is keyed by that path, and the duplicate-stem index
    is read from `content/` under the working directory. A Knowledge Check
    at a path with no `content/<shelf>/<book>/` segment is a lint error
@@ -318,11 +365,14 @@ is not optional either.
 5. Run `npm test`; it validates the complete `content/` tree, every
    Knowledge Check range, heading, and weight, real-grader parseability, the
    answer-position gate, and all authoring lints. Move the baselines with
-   `npm run baseline:update` (`--min-exercises`, `--min-verified`,
-   `--min-replayed`; not `--min-confirmed` — Knowledge Check items are
-   unmatched by `verify:source-keys` by design, which never visits a page
-   outside `map.sections`). Then `npm run build && npm run check:build`.
-6. In the browser, confirm the check sits last inside its unit in the
+   `npm run baseline:update` (it moves `--min-exercises`, `--min-verified`,
+   and `--min-replayed`; `--min-confirmed` stays put — Knowledge Check items
+   are unmatched by `verify:source-keys` by design, which never visits a
+   page outside `map.sections`). Then `npm run build && npm run
+   check:build`.
+6. Add the check's route to `REPRESENTATIVE_PAGES` in
+   `tests/accessibility.spec.mjs` (the axe suite reads only those routes).
+   In the browser, confirm the check sits last inside its unit in the
    sidebar, chapter/section grouping, no hint controls, correctly rendered
    figures, and working right and wrong submissions from every chapter.
 7. Include the full source ledger, discrepancies and errata numbers, the

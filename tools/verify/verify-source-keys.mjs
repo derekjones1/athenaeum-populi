@@ -1138,7 +1138,8 @@ export function keyPrintedInBody(answer, accept, source) {
  * A life-sciences `textin` matched (by the same stem-similarity `bestExercise`
  * every other judgment here uses) to one of its module's Fill in the Blank
  * exercises, whose key `keyPrintedInBody` cannot recover from the module's
- * body prose — see docs/subjects/microbiology.md, "Keys and accept lists".
+ * body prose — see docs/subjects/life-sciences.md, "Text recall" ("A
+ * `textin` key is printed in the module's BODY").
  * Returns the exercise it matched (to name in a failure), or null when the
  * item matches no Fill in the Blank exercise at all (an ordinary
  * `judgeTextin` case) or its key IS recoverable from the body.
@@ -1660,9 +1661,8 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
         // to a source Fill in the Blank whose word the module BODY never
         // prints — only the exercise's own <solution> does — leaves a
         // body-reading learner with no way to recover it. See
-        // docs/subjects/microbiology.md, "Keys and accept lists" ("A source
-        // Fill in the Blank whose key the module's own prose never states
-        // becomes a multiplechoice…") and tools/verify/measure-body-keys.mjs,
+        // docs/subjects/life-sciences.md, "Text recall" ("A `textin` key is
+        // printed in the module's BODY") and tools/verify/measure-body-keys.mjs,
         // whose corpus measurement this promotes.
         if (isLifeSciencesPage(section.localPath)) {
           const badExercise = unprintableFillInTheBlank(item, source);
@@ -1671,7 +1671,7 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
               page: section.localPath,
               line: item.line,
               detail: `textin keys ${JSON.stringify(item.answer)} to Fill in the Blank ${badExercise.id}, whose word the module body never prints (only its own <solution> does)`
-                + '\n    render as multiplechoice, see the playbook (docs/subjects/microbiology.md, "Keys and accept lists")',
+                + '\n    render as multiplechoice, see the playbook (docs/subjects/life-sciences.md, "Text recall")',
             });
           }
         }

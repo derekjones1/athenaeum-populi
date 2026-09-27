@@ -94,32 +94,62 @@ section map" rather than restating the number.
 2. **Body.** One `##` per CNXML `<section>` title, `###` for nested
    sections, prose transcribed faithfully. Bold every `<term>` at its
    defining occurrence (`**hypothesis**`), as the source does. Species names
-   and genes in italics as printed.
+   and genes in italics as printed. A `<link target-id>` inside the module
+   becomes a describing phrase ("the micrograph above"); a `<link
+   document="mNNNNN">` becomes an absolute site-root Markdown link to that
+   section page, never a Hugo `relref` (`check:build` validates routes), or
+   plain text naming the section while that page does not exist — the
+   preview prints both as `()`. Whitespace the source loses around a
+   cross-reference is not a disclosed typo. A garbled source sentence
+   repaired on the page, and an author list pasted with its affiliation
+   superscripts ("J.A. Garnetta"), are disclosed corrections like any
+   one-word fix.
 3. **Feature boxes** become callouts whose first line is the bold feature
    name, then the source text. The `<note class>` → callout table is the
    book's: Biology 2e's is in `docs/subjects/biology.md`, Microbiology's in
-   `docs/subjects/microbiology.md` §4. Two rules hold everywhere: a Link to
+   `docs/subjects/microbiology.md` §4, Anatomy and Physiology's in
+   `docs/subjects/anatomy-physiology.md` rule 2. Everywhere, a Link to
    Learning keeps its external URL (it is source content) and describes the
    destination in the link text ("an interactive animation of DNA
    replication"), never "click here"; and a box that wraps a figure and a
    question (Biology's Visual Connection, Microbiology's Art Connection) is
-   not a callout — the figure, then its item, see Exercises.
+   not a callout — the figure, then its item, see Exercises. The box keeps
+   its `<title>` in italics after the bold name (`**Career Connection.**
+   *Cancer Biologist.*`) and a reference list it ends with, as a
+   parenthetical after the sentence it supports. A Link to Learning keeps
+   the source's sentence boundaries — the anchor is not moved onto another
+   phrase and sentences are not merged. Discussion questions that close a
+   box stay inside the callout as plain prose, unanswered, unless the box
+   itself fixes the answer (then a `selfcheck` under "Unkeyed source
+   questions"). A figure the box references mid-box stays at its
+   document-order position inside the callout.
 4. **Figures** — `mediafigure`, see the media section below. Refer to a
    figure by describing it ("the flow chart above"), never by its print
    number; Hugo does not number figures.
 5. **Tables** as Markdown tables. A CNXML `<table>` with a `summary`
-   attribute is a real table; transcribe the cells. Matching exercises that
-   the source prints as a two-column table (Biology 1.1 has one) become a
-   Markdown table in the body and a `multiplechoice` per row in Practice
-   only if the source keys the pairing.
+   attribute is a real table; transcribe the cells, never the `summary`. A
+   table the source prints as an image (a figure whose picture is a grid of
+   cells) is transcribed as a Markdown table from the IMAGE, checked
+   against the PDF — never from its alt, which drops rows and garbles
+   group headers — placed at the sentence that first refers to it, with
+   the vendored figure kept after it (its alt describes what the cells
+   cannot carry, such as a column of micrographs) and the footer saying
+   the table was transcribed from the image. A long source alt of cells is
+   `longdesc` material; an empty CNXML caption means no caption line.
+   (Microbiology's Disease Profile tables, pure text grids, are the one
+   class that is de-vendored — `docs/subjects/microbiology.md` §4.)
+   Matching exercises that the source prints as a two-column table
+   (Biology 1.1 has one) become a Markdown table in the body and a
+   `multiplechoice` per row in Practice only if the source keys the
+   pairing.
 6. **`## Summary`** — the module's `<section class="summary">`, verbatim.
 7. **`## Key terms`** — one bulleted item per defined term, in source
    order: `- **term** — meaning.` This is the one end-matter block the lint
    requires as a heading, and the source of the section's `textin` items.
-   Where the definitions come from is the book's: Biology 2e has a
-   `<glossary>` per module; Microbiology has none and builds the block from
-   the body's `<term>` elements and the book-wide Glossary appendix
-   (`docs/subjects/microbiology.md` §1).
+   Where the definitions come from is the book's: Biology 2e and Anatomy
+   and Physiology have a `<glossary>` per module; Microbiology has none and
+   builds the block from the body's `<term>` elements and the book-wide
+   Glossary appendix (`docs/subjects/microbiology.md` §1).
 8. **`## Practice`** — see Exercises.
 9. **Attribution footer**, one `<small>` paragraph:
    *This section is adapted from [<Book>, Section C.S: Title]
@@ -133,10 +163,16 @@ section map" rather than restating the number.
    the source alt text edited where noted, feature boxes rendered as
    callouts, the end-of-section exercises adapted into the interactive
    Practice block, key-term recall items added from the key terms, any
-   reordered multiple-choice options, and anything omitted. Every count
-   and claim in it is copied from a tally of the finished page taken after
-   the last `verify-section` (its `facts:` panel gives most counts) —
-   never from memory or from the plan. **The clause names departures from
+   reordered multiple-choice options, and anything omitted — every
+   reordering of source items, every one-word correction, every table
+   transcribed from an image, every author-written caption, and every
+   filler item with the sentence it was built from. Every count and claim
+   in it is copied from a tally of the finished page taken after the last
+   `verify-section` (its `facts:` panel gives most counts) — never from
+   memory or from the plan. Write it last, then re-read it against the
+   page with the tally in front of you: every sentence is a claim a reader
+   can check, and no reason ("the module gives nothing to answer it with")
+   stands in for a rendered exercise. **The clause names departures from
    the source, and only those** *(September 23, 2026)*: correcting the
    page's own earlier alt, `longdesc`, hint, or item text is not narrated
    there. **It states the correction and why, never its bookkeeping**
@@ -197,14 +233,19 @@ Three cases Biology 2e's chemistry chapters settled (unit 1):
   two bare `$` in a paragraph into inline math, so "costs between $300,000
   and $500,000" typesets as KaTeX garbage; every dollar sign in prose is
   currency and must be escaped (`\$300,000`). The lint flags a bare
-  `$N,NNN` whose digit grouping and trailing context read as money rather
+  `$N,NNN` or a bare `$` before a magnitude word (`$4 billion`, which once
+  broke the production build with every fast gate green) whose digit
+  grouping and trailing context read as money rather
   than a math digit-group list (`10{,}000`) or a comma-list of numbers
   (`$1,2,3$`).
 - **Display chemical equations are text, not KaTeX.** The source's
   `<equation>` blocks in 2.1 and 2.2 are reactions, not mathematics; each
   becomes its own short paragraph in Unicode with arrows — `2H₂O₂ → 2H₂O +
   O₂`, `HCO₃⁻ + H⁺ ⇌ H₂CO₃` — and the footer says "chemical equations set as
-  Unicode text". KaTeX loads only for the numeric-exponent spans above.
+  Unicode text". KaTeX loads only for the numeric-exponent spans above. An
+  underbrace label in a reaction scheme becomes a disclosed parenthetical,
+  and a label is never carried from one module's equation into another's
+  *(Microbiology ch. 7)*.
 - **Greek nomenclature prefixes are prose.** `α-helix`, `β-pleated sheet`,
   `ω-3 fatty acid`, `α-carbon` keep the printed glyph everywhere, exercise
   strings included: the exercise lint's unicode-math rule exempts a Greek
@@ -212,66 +253,10 @@ Three cases Biology 2e's chemistry chapters settled (unit 1):
   the glossary `textin` for such a term an `accept` list with the spelled-out
   forms (`alpha helix`, `alpha-helix`).
 
-Cases Biology 2e's cell chapters settled (unit 2), and the ones later books added:
+Cases later chapters settled:
 
-- **A sub-figure that is its own image is its own `mediafigure`.** When a
-  source `<figure>` holds `<subfigure>` children with separate image files
-  (4.3's animal and plant cell, stems `…01a_corrected` and `…01b`), render
-  them as two consecutive figures — the first with the source caption, the
-  second with a one-line caption naming it panel (b) — never as one figure
-  whose alt claims to show both. A single image with lettered panels stays
-  one figure, its alt naming what each panel shows.
-- **Source alts can be screen-reader spellings, not descriptions.** Many
-  cell-chapter alts are letter-spaced TTS text ("A T P", "N A D P
-  superscript plus sign baseline"). Write a plain alt from the image, move
-  any walk-through into `longdesc`, and say so in the footer; this is a
-  local rewrite of an accessibility field, not an erratum.
-- **A source key that the module's own text contradicts is corrected on the
-  page and logged.** The page keys the answer the section supports, the
-  footer names the change, the errata entry quotes the passage, and the
-  ledger verdict is `ok` with the erratum number — never a shipped
-  `defect`, which fails `verify:ledger`.
-- **Every keyed answer gets three readings, as in math.** The author keys
-  it from the pinned CNXML; the checker re-derives it against the raw CNXML
-  and the section text; and the orchestrator ANSWERS it. After the checker
-  reports, run `npm run solve:emit -- <chapter dir> --out <dir>`, answer
-  every packet item in writing (question and options only — the key,
-  accept list, and hint are stripped), naming any other option that is also
-  defensible, then `npm run solve:compare -- answers.json content --out
-  <dir>`. Agreement is recorded; each disagreement or flag is settled
-  against the module's own sentence and recorded with an `adjudicated`
-  note — the source is the authority, and this pass exists to catch a key
-  that is obviously wrong (a misprint, a double-keyed item, a wrong ratio),
-  not to overrule the module with general knowledge. A key the module's
-  text contradicts is corrected (erratum + `DISCLOSED_DEVIATIONS` line in
-  `verify-source-keys.mjs`); a key the module supports stands even when the
-  chemistry is looser than a specialist would write (erratum 123, the
-  two-photon NADPH item — logged, keyed as the module teaches, its hint
-  rewritten to follow the module rather than invent a rationale).
-  `ledger:merge` the compare output; `verify:ledger --require-solved`
-  fails until every multiplechoice and textin on the shelf carries the
-  solve. `npm run verify:source-keys` (in `npm test`) separately proves the
-  page keys what the source keys and lists every deliberate departure by
-  erratum number.
-- **An edited option is a deviation too** — it changes what is gradable
-  (erratum 116's reworded distractor, erratum 122's typo-fixed one).
-- **A Critical Thinking question keeps its preamble.** An analogy or
-  scenario that opens the source question ("you would use a spoon rather
-  than a fork…") is part of the question; do not trim it to the final
-  sentence.
-- **A feature box keeps its title and its citations.** `**Career
-  Connection.** *Cancer Biologist.*` — the `<note>`'s `<title>` follows the
-  bold name in italics; a reference list the box ends with is kept as a
-  parenthetical after the sentence it supports rather than dropped.
-- **`accept` lists the irregular plural of an answer** (`septa`, `bacteria`,
-  `hypotheses`) and the compound form the section itself uses (`integral
-  membrane protein` for a textin keyed `integral`). A regular plural
-  (`glucose transporters`) or, for a plural key, a regular singular
-  (`receptor` beside `receptors`) is folded by the grader (plural since
-  September 6, singular since September 22, 2026) and is a lint error in
-  `accept`.
-- **`P<sub>i</sub>`** is the one sanctioned inline HTML subscript (no
-  Unicode subscript letter exists); everything with a glyph — `H⁺`, `CO₂`,
+- **`P<sub>i</sub>`** keeps an inline HTML subscript (no Unicode
+  subscript `i` exists); everything with a glyph — `H⁺`, `CO₂`,
   `FADH₂`, `Ca²⁺`, `PO₄³⁻`, `G₁`, `IP₃` — uses it. ΔG/ΔH/ΔS in prose are the
   Unicode Δ; the one genuine equation, `ΔG = ΔH − TΔS`, is `$…$`. The source
   auditor folds a Unicode sub/superscript digit into its own token so that
@@ -286,14 +271,28 @@ Cases Biology 2e's cell chapters settled (unit 2), and the ones later books adde
   partial pressure (PO₂)". `verify-source-keys` strips inline HTML before
   comparing an option with the source list, so `P<sub>O₂</sub>` matches
   the source's "P O 2".
-- **An objective group left thin by the source may get an author-written item**
-— an objective no source item tests, or a group short of the book's floor
-after its source items and summary items are placed:
-  a multiple choice built strictly from the page's own table or sentence,
-  or a self-check whose model answer paraphrases one paragraph, with no new
-  claim — disclosed in the ledger and the footer. Prefer a glossary
-  `textin` when a term fits the objective.
-
+- **The micrometre prefix is the micro sign `µ` (U+00B5)**, never Greek mu
+  (U+03BC): Pagefind indexes them apart and the sources mix both. A lint
+  rejects a mu before a Latin letter. Magnification is `40×` in prose, no
+  space.
+- **Organism names** are italic as printed (`*Escherichia coli*`, then
+  `*E. coli*`), genus and species only, never a higher rank. A `textin`
+  keyed to a species name lists the abbreviated binomial in `accept`.
+- **The prime is U+2032 `′`** everywhere (`5′`, `F′`); the sources mix `′`,
+  `’`, and `ʹ` (U+02B9), which the normalizers fold.
+- **Names with no glyph keep inline HTML** — `T<sub>H</sub>1`,
+  `V<sub>α</sub>`, `fMet-tRNA<sup>fMet</sup>` — in prose, options, hints,
+  headings, and table cells; inside `alt`, `longdesc`, and `===CHECKS===`
+  clauses, which render raw, write `TH1`, `V-alpha`. A subscript digit that
+  has a glyph takes it (`PGE₂`, `β₂`, `ID₅₀`, `LD₅₀` — never `ID 50` or
+  `<sub>`). A bare Greek letter inside an `answer` or option string fails
+  the unicode-math lint; spell `alpha`/`beta` there *(Microbiology ch.
+  15–18)*.
+- **Genetics notation:** isotopes and plasmid states in Unicode (`³²P`,
+  `F⁺`, `F⁻`); an en-dash promoter position (`–10`) is the Unicode minus;
+  sequences go in code spans with the source's spacing; a numeric exponent
+  in prose is `$4^3$`, even inside a Source note *(Microbiology ch.
+  10–11)*.
 
 ## Media: vendored figures
 
@@ -335,8 +334,9 @@ that use them.
   a source file name folds to `_` (m66400's `Figure 28.48ab.png.jpg` is the
   stem `Figure_28.48ab.png` — only the last extension is dropped) because a
   space would split the figure's `srcset` entry in two.
-- The caption is the source caption, credit line included and verbatim
-  (the credit is a license obligation, not decoration).
+- The caption is the source caption, credit line included and verbatim,
+  its links (a license, a citation) kept as links (the credit is a license
+  obligation, not decoration).
 - The first figure on a page may take `eager="true"`; every other figure is
   lazy-loaded.
 - Small diagrams stay small: the `<img>` carries the largest vendored width,
@@ -352,7 +352,18 @@ that use them.
   `vendor-media` records) gets the plate whatever its `kind`: its panel
   letters and labels are black ink on transparency and vanished on the dark
   page (39 photo-kind figures, found September 26, 2026), so `kind` stays a
-  statement about what the image is, not a dark-mode workaround.
+  statement about what the image is, not a dark-mode workaround. A
+  composite is a `diagram` when any panel is genuinely drawn (a schematic,
+  a map, a morphology icon, a labelled chart) and a `photo` when every
+  panel is a photograph and the only added ink is annotation (arrows, a
+  baked-in caption line).
+- **A sub-figure that is its own image is its own `mediafigure`.** When a
+  source `<figure>` holds `<subfigure>` children with separate image files
+  (4.3's animal and plant cell, stems `…01a_corrected` and `…01b`), render
+  them as two consecutive figures — the first with the source caption, the
+  second with a one-line caption naming it panel (b) — never as one figure
+  whose alt claims to show both. A single image with lettered panels stays
+  one figure, its alt naming what each panel shows.
 
 **Image-accessibility policy** (every figure, no exceptions):
 
@@ -383,18 +394,50 @@ that use them.
   count, every arrow as `source → target` with both ends zoomed — and say
   whose left and right you mean (the viewer's, or the subject's in
   anatomy); see "Completion audit" below.
+- **Source alts can be screen-reader spellings, not descriptions.** Many
+  cell-chapter alts are letter-spaced TTS text ("A T P", "N A D P
+  superscript plus sign baseline"). Write a plain alt from the image, move
+  any walk-through into `longdesc`, and say so in the footer; this is a
+  local rewrite of an accessibility field, not an erratum.
+- **Every claim comes off the artwork**, never the source alt or the
+  caption: direction words, counts, colours, orientation, relative heights,
+  units, 5′/3′ labels, scale values. Source alts carry labels the art does
+  not print, unit errors ("25 µm" for a 25-nm microtubule), and
+  misspellings, and some describe a different version of the drawing than
+  the vendored image — a lettering the image lacks is an erratum
+  candidate, never authority. A label the artwork misprints is transcribed
+  as printed with the correct name beside it, and logged. When a source
+  alt gets a figure's data wrong, the data are read off the image and
+  carried — totals in the alt, the full values in a `longdesc` — never
+  dropped, which would leave them unreachable (Derek, September 24, 2026:
+  the Ebola map).
+- **Draft a multi-panel mechanism's `longdesc` first**, then the alt: the
+  walk-through overshoots the 600-character cap. A static panel gets no
+  before/after narrative, and a shared panel is not dropped.
 - A mediafigure directly above an item — only whitespace between its closing
   tag and the next `textin`/`multiplechoice`/`selfcheck` — may not print that
   item's answer in `alt` or `longdesc` (lint). Describe what the figure
-  shows, never what the item beside it asks for.
+  shows, never what the item beside it asks for. The same holds for a
+  figure-keyed item farther away and for a caption the author writes:
+  "a tangled loop of DNA is marked C" hands over C = nucleoid, "a long
+  tangled loop is marked C" does not, and a caption describes what the
+  picture shows, never what it is missing when that is the graded answer.
+  A source alt on an exercise image usually restates its answer set;
+  rewrite it to what is visible and grep alt, caption, and `longdesc` for
+  every key and rubric clause of the paired item.
 
 
 ## Exercises
 
 How a book's source exercise sets map onto components is the book's table
 (`docs/subjects/biology.md` "Exercises", `docs/subjects/microbiology.md`
-§2), because the sets differ — Biology 2e keys every exercise, Microbiology
-keys some sets and not others. The component rules below are shared.
+§2, `docs/subjects/anatomy-physiology.md` "Exercises"), because the sets
+differ — Biology 2e and Anatomy and Physiology key every exercise,
+Microbiology keys some sets and not others. The component rules below are
+shared. A figure question is always a `mediafigure` followed by its item:
+a figure-bound choice component was built and reverted (August 31, 2026,
+the sticky figure hid the options), and another needs a design decision
+from Derek first.
 
 **Multiple choice.** Options are the source's, in the source's order, each
 on its own line of the shortcode body; `answer` is the keyed option verbatim.
@@ -404,6 +447,39 @@ rules are the core's (`docs/authoring-playbook.md` §3). The corpus-wide
 answer-position gate measures each book on its own; if it fails, reorder with
 a deterministic seeded shuffle and say so in `Changes:` — never hand-pick
 positions.
+
+- **An edited source option is a deviation** — it changes what is gradable
+  (erratum 116's reworded distractor, erratum 122's typo-fixed one) — and
+  gets an erratum and a `DISCLOSED_DEVIATIONS` line in
+  `tools/verify/verify-source-keys.mjs`: kind `key` when the corrected
+  option IS the keyed one, `options` when it is a distractor (`solution`
+  for a corrected model answer, `assignment` for a `sortbins` item keyed
+  against its table); `baseline:update` refuses an entry filed under the
+  wrong kind.
+- **A distractor that is also true is replaced by one the module prints**,
+  never by an invented one that merely fills the slot; disclose and log
+  it. The commonest hidden second keys: an option naming the category the
+  key belongs to (`asexual` beside `fragmentation`), an option that is a
+  subset of another (`queens` beside `diploid females`), and a definition
+  stem for a category, which also fits each of its members — ask for "the
+  category" instead.
+- **A "select all that apply" item** (a two-letter key) does not fit a
+  single-answer `multiplechoice`: it becomes a `sortbins` whose bins are
+  "applies" / "does not apply" in the stem's own words, every source
+  option a label, disclosed in the footer.
+- **Two keyed items that share one image** render as ONE `mediafigure`
+  followed by both items, adjacent in the same group; the alt names what
+  the axes and marks show but computes nothing the items ask.
+- **Options that differ only in typography** (`Homo Sapiens`, *homo
+  sapiens*, *Homo sapiens*) have one spoken name, so a screen-reader user
+  cannot answer: the item is not rendered as graded, the footer and the
+  source ledger say why, the fact is asked from the module's own sentences
+  instead, and the dismissal goes under "Reviewed and *not* errata" (the
+  coverage gate's `LISTED_EXERCISES` records it).
+- **A Critical Thinking question keeps its preamble.** An analogy or
+  scenario that opens the source question ("you would use a spoon rather
+  than a fork…") is part of the question; do not trim it to the final
+  sentence.
 
 **Self-check** (`selfcheck`). The question is the source's; the inner
 content is the source solution, lightly reformatted into complete sentences
@@ -419,8 +495,13 @@ each checkpoint against the model answer by word overlap
 (`phraseCoverage`, 0.8, no stemming, no stopword list), so a checkpoint is
 the model answer's own words in the model answer's own inflections:
 "complexes" for the model's "complex", or a connector the model does not
-use, drops a short clause under the bar. Copy the clause; do not restate
-it.
+use, drops a short clause under the bar. Copy the clause rather than
+restating it; a checkpoint that compresses one answer sentence (a dropped
+connector, a joined clause) and adds no claim is acceptable, not a defect
+— there is no rubric sweep, and the 0.8 bar stays (Derek, September 21,
+2026). A checkpoint states something the learner's answer should contain;
+a remark about the source ("the module does not say…") belongs in the
+model answer, never in `===CHECKS===`.
 
 **Text recall** (`textin`). Built from the section's own `## Key terms`:
 the meaning becomes the prompt, the term the answer. The shortcode is shown
@@ -516,6 +597,60 @@ in the core (§3); the rules specific to a term-built item:
   counts. Lint error since September 23, 2026: a `textin` answer that is
   digits, a number word, or a number with a unit (or holds a
   number-and-unit run, `every 10 years`).
+- **A `textin` key is printed in the module's BODY.** Grep the body — not
+  the glossary, not the `<solution>`s, not a Critical Thinking stem — for
+  the key before keeping a `textin`; a key only an exercise solution
+  prints (the body says "veins just above the heart", the solution "the
+  subclavian veins") is a `multiplechoice` keyed to the source answer with
+  the module's own terms as distractors, disclosed. So is a key that
+  carries a `<sup>`/`<sub>` (`PrP^Sc`): the flattened key never prints,
+  so no learner can type what the page shows. A key longer than four
+  words, or an ordered list, is one `multiplechoice` whose key is the
+  source wording and whose distractors are other orderings or tuples of
+  the module's own terms — never clozes that rebuild the same sentence.
+- **What `accept` still has to list**, beyond the grader's folds: a
+  Greek or Latin plural's `-um`/`-on`/`-us`/`-is` singular and an `-oes`
+  key's `-o` singular; a hyphen between letters, which does not fold, so a
+  prefixed key lists its hyphenated spelling (`semi-conservative`); the
+  ASCII formula of a compound the page prints
+  in Unicode (`H2O2`); the abbreviated binomial; the correct spelling
+  where the source misspells (`phosphorous`); a module synonym (`jumping
+  gene`), a spaced unit (`70 S`), a one-word spelling (`wildtype`); the
+  compound form the section itself uses (`integral membrane protein` for
+  a key `integral`). A
+  mixed or reordered compound (`chlorophyll and carotenoids`) is not a
+  fold either. Run each through `check-text`. A member the item's own stem
+  prints is a retype hazard the lint rejects.
+- **Cloze shapes.** Where a blank sits directly before a parenthetical
+  gloss ("profound ________ (decrease in lymphocytes)"), the key is the
+  glossed TERM; put the modifier in the stem ("CD4 T-cell ________") and
+  the full phrase in `accept`. A key printed as "A or B" where B is the
+  module's own parenthetical synonym is a `textin` keyed A with B in
+  `accept`. A why-question keyed to one abstract noun is the weakest form:
+  extend its accept list within the seven-word cap or ask it as a
+  `multiplechoice`. A filler cloze is never cut from the sentence an
+  adjacent `selfcheck` uses as its model answer.
+
+**Leaks across the page.** The neighbour rules above hold page-wide,
+and they are the largest defect class the shelf has shipped:
+
+- Grep every hint, stem, option list, rubric, alt, caption, and `longdesc`
+  on the page for every `textin` and `multiplechoice` key, across groups,
+  forwards and backwards: a Practice hint leaks a body item's key, a filler
+  stem a key two groups away, and author-built fillers leak into each other
+  as readily as source items. A hint that quotes the correct option's own
+  distinguishing phrase is the stem leak moved into the hint field.
+- Two source-verbatim items that print each other's key are reordered and
+  disclosed — never dropped and never edited; an unmovable pair keeps a
+  footer disclosure.
+- A body item under a figure whose caption names its answer is authored as
+  a `selfcheck`; a shipped graded item is fixed by reordering or
+  rewording, not converted. A `## Key terms` bullet leaks its recall
+  `textin` by design, and that is accepted.
+- After a claim correction changes a value on the page, grep the page —
+  and the book's Knowledge Checks and sibling pages — for the OLD value: a
+  hint, filler, or check item built on it is now wrong, and a stem built
+  on it is reworded to what the module still supports.
 
 **Summary items.** The module's `<section class="summary">` is the largest
 keyed corpus after the exercise sets, and it tests concepts where the
@@ -569,6 +704,32 @@ way: enumerate its Markdown tables, skip the quantity/unit/step tables,
 and give each remaining one a sortbins under the objective it serves or in
 the self-check it already answers.
 
+Building the items *(Microbiology ch. 5–24)*:
+
+- **Every item is true of exactly one bin against EVERY cell of the
+  table**, not only its own column (ETEC's "watery diarrhea" is a
+  substring of EIEC's cell). Cut each item's wording from its own row's
+  cell — a word from another row or from outside the table makes it bin
+  under the wrong label — and leave out rows whose compared columns share
+  one value. A bin the table cannot give two unique items keeps one, and
+  the footer says so; an enzyme→function table takes at least two items
+  per bin, one from the cell and one from the body.
+- **Bin labels are the module's own group names**, the classification word
+  alone (`Complex`, not `Complex medium`); when the comparison IS the
+  category noun, name the bins after the organisms. An invented label that
+  merges two table groups is a new claim — drop a group to fit the
+  four-bin cap instead. When the bin-word lint flags a generic word inside
+  a module-printed label (`cells` in `Helper T cells`), reword the ITEMS,
+  never trim the label; a bin word colliding with a printed row label
+  (`ethanol` inside `acetone-butanol-ethanol`) is avoided by identifying
+  that row by its other cells.
+- **Not every table is a sortbins.** A one-item-per-bin labelling figure
+  becomes per-letter `multiplechoice` items over the module's own part
+  names; a chapter- or section-level recap table that classifies by the
+  chapter's top-level categories (Microbiology 17.1's "Overview of
+  Nonspecific Innate Immune Defenses") is transcribed and never binned —
+  the comparison table under the objective it serves is the practice form.
+
 **Unkeyed source questions: graded when the module fixes the answer**
 *(Sep 6 2026)*. Some books (Microbiology) print no key for whole question
 sets. Keep the question count where the source puts it and change the
@@ -609,13 +770,22 @@ its whole answer, and stays a `selfcheck` otherwise. The four honest forms:
 *(chapters 13–14)*. The choice is between graded and `selfcheck`, never
 between rendered and absent: a question no module artifact can answer is
 exactly the case the `selfcheck` exists for, and its model answer says what
-the module supports and stops there. A reasonable-sounding footer sentence
-("the module gives nothing to answer it with", "no single sentence fixes
-it") is not a reason, and no automated gate catches the drop. An
-end-matter exercise may be graded inside a body Check Your Understanding
-item ONLY when the two stems are the same question in reworded form ("Name
-at least two factors that can compromise…" against "What are some factors
-that alter…"); a shared topic is not a duplicate ("Why is the soil a
+the module supports and stops there. (The one listed exception is an item
+whose options differ only in typography — Multiple choice, above.) A
+reasonable-sounding footer sentence ("the module gives nothing to answer it
+with", "no single sentence fixes it") is not a reason. `npm run
+verify:source-coverage` (in `npm test`) refuses a page that drops a source
+exercise unless its matcher sees the fold or the tool's reviewed
+`LISTED_EXERCISES` names it — so every "folded" or "duplicate" claim is
+challenged before it is listed, since the gate cannot judge whether a fold
+is honest. An
+end-matter exercise may be folded into a body question — a Check Your
+Understanding item, graded or `selfcheck` — ONLY when the two stems are the
+same question in reworded form ("Name at least two factors that can
+compromise…" against "What are some factors that alter…"): the page then
+asks it once, in the body, and a second copy in Practice would be a
+duplicate ask (Derek, September 26, 2026; seven of the thirteen folds on
+the shelf are into self-checks). A shared topic is not a duplicate ("Why is the soil a
 reservoir for antimicrobial resistance genes?" and "Why do
 antimicrobial-producing microbes commonly also have resistance genes?" are
 different asks). Quote both stems in the ledger note when claiming the
@@ -644,6 +814,42 @@ dispersion occurs when white light passes through a prism" is one
 sentence of the module and converts; "Explain how historical
 understandings of disease contributed to attempts to treat and contain
 disease" is five and does not.
+
+The rules the chapter runs sharpened *(Microbiology ch. 3–26)*:
+
+- **The one-sentence rule is literal.** Two sentences, a paragraph
+  boundary, an inference, or a word the module never prints (grep for the
+  footer's own "fixing sentence") → it stays a `selfcheck`. A composite
+  key is the classic dishonest form: quote the ONE sentence and diff the
+  key against it word by word.
+- **A converted stem may gain a referent, never a clause or a second
+  subject.** A stem the source prints twice is reworded only to name its
+  own referent ("Name some of the defining characteristics of bacteria and
+  archaea"), disclosed.
+- **A body question is converted, never replaced**: a stem at its position
+  that asks a different fact is a defect even when honest on its own
+  terms, so count the body questions against the CNXML. Where a body
+  question repeats a KEYED source Practice item, the keyed item stays
+  graded and the body question is the `selfcheck` (the mirror rule).
+- **A source question may use a word the module never uses** (Pasteur's
+  "control group"): transcribe it verbatim; identifying which condition it
+  names is answering, not adding a claim. Importing a fact the module
+  lacks is still forbidden.
+- **Lettered figures.** A lettered identification ("which of (i)–(iii) is
+  the tRNA") is one figure-keyed `multiplechoice` per thing; a
+  name-every-letter question is a `selfcheck` whose model answer is the
+  full letter→part mapping read against the source's own label list,
+  letters grouped within the 2–6 checkpoint cap, optionally with one
+  figure-keyed `multiplechoice` on a single letter before it. A
+  figure-keyed item is honest only when the ARTWORK draws the fact, never
+  when only the alt says it. A table image with a graded ask may be a
+  `multiplechoice` when the arithmetic is the question's own
+  instruction.
+- **A source stem that contradicts its own key** ("Which oral medication
+  is recommended as an initial topical treatment", keyed to the topical
+  drug) is corrected by the smallest edit that removes the contradiction,
+  disclosed, and handled as a claim correction (erratum and decisions
+  entry).
 
 Provenance is what makes the conversion honest, so every converted item:
 keeps the source stem verbatim (a referent added for "this section" or
@@ -719,6 +925,16 @@ source multiple choice under the objective it tests, a Critical Thinking
 item under the objective it argues, and fill thin groups with key-term
 recall.
 Record every item in the source ledger with its exercise or definition id.
+The floors are floors, not targets: a module with a deep exercise set uses
+all of it, since every source exercise is rendered.
+
+**An objective group left thin by the source may get an author-written
+item** — an objective no source item tests, or a group short of the
+book's floor after its source items and summary items are placed: a
+multiple choice built strictly from the page's own table or sentence, or a
+self-check whose model answer paraphrases one paragraph, with no new
+claim — disclosed in the ledger and the footer. Prefer a glossary `textin`
+when a term fits the objective.
 
 **Each thing once.** Every item on a life-sciences page — body self-checks
 and the Practice block alike — is distinct under the practice-index signature
@@ -758,6 +974,32 @@ duplicate-stem lint catches an exact collision, not a reworded one).
   `textin` it means the prompt names exactly one glossary term and the
   accept list covers its ordinary variants. Nothing is computed; the checker
   reads the exercise against the CNXML solution and the section prose.
+- **Every keyed answer gets three readings, none redundant.** The author
+  keys it from the pinned CNXML; the independent checker (below)
+  re-derives it with the key covered; and the orchestrator ANSWERS it
+  blind — in a chapter run, a fresh Fable subagent reading masked pages
+  (`npm run solve:emit -- <chapter dir> --out <dir> --pages-out
+  <dir>/pages`), graded by `npm run solve:compare -- answers.json content
+  --out <dir>`, naming any other option that is also defensible.
+  Agreement is recorded; each disagreement or flag is settled against the
+  module's own sentence and recorded with an `adjudicated` note. The
+  source is the authority: the solve exists to catch a key that is
+  obviously wrong (a misprint, a double-keyed item, a wrong ratio), not to
+  overrule the module with general knowledge — a key the module supports
+  stands even when the chemistry is looser than a specialist would write
+  (erratum 123, the two-photon NADPH item: keyed as the module teaches,
+  its hint rewritten to follow the module rather than invent a
+  rationale). `ledger:merge` the compare output; `verify:ledger
+  --require-solved` fails until every `multiplechoice`, `textin`, and
+  `sortbins` on the shelf carries the solve, and `npm run
+  verify:source-keys` (in `npm test`) separately proves the page keys what
+  the source keys, listing every deliberate departure by erratum number.
+- **A source key that the module's own text contradicts is corrected on the
+  page and logged.** The page keys the answer the section supports, the
+  footer names the change, the errata entry quotes the passage, a
+  `DISCLOSED_DEVIATIONS` line names it, and the ledger verdict is `ok`
+  with the erratum number — never a shipped `defect`, which fails
+  `verify:ledger`.
 - **Independent checker.** One per section, briefed by the book's kit
   (`docs/briefs/<book>/checker.md`): re-read every Practice item against
   the raw CNXML exercise and solution (not the page), every figure against
@@ -772,7 +1014,12 @@ duplicate-stem lint catches an exact collision, not a reworded one).
   every natural variant of every `textin` (the full name with and without
   its head noun "system/cell/group", the module's synonyms and
   abbreviations, irregular plurals, hyphen versus space); (3) read every
-  model answer and rubric clause for a claim the module never makes.
+  model answer and rubric clause for a claim the module never makes. It
+  also diffs the page's prose against the CNXML word by word (both
+  stripped to plain text by a script) — every departure the footer does
+  not name is a defect — and counts every source exercise off by hand:
+  `verify:source-coverage` refuses a drop but cannot tell an honest fold
+  from a dishonest one.
 - **Prose claim pass** *(chapter 4 of Microbiology, September 6, 2026)*.
   The key, transcription, and figure readings above prove the page says
   what the module says; none of them asks whether the module is right.
@@ -804,13 +1051,17 @@ duplicate-stem lint catches an exact collision, not a reworded one).
     `accept` member; an erratum only when the source's own solution is
     wrong.
   - **Where the retroactive sweep stands.** `docs/source/claim-pass-ledger.md`
-    lists every chapter of every life-sciences book with its pass status,
+    lists every Microbiology and Anatomy and Physiology chapter with its
+    pass status (Biology's record is its errata headings),
     date, and errata; update it when a chapter lands.
-  - **Who.** The chapter's independent checker, on every section, before
-    the orchestrator's solve pass; the parent verifies every flagged
-    claim against the cited evidence before editing. A checker that
-    reports "no claim findings" must say which claims it checked and
-    against what, not just that it found nothing.
+  - **Who.** One checker per chapter, briefed by the book's kit
+    (`docs/briefs/<book>/claim-pass.md`), after the section checkers and
+    before the orchestrator's solve; it also reads the chapter landing
+    page, which no other reader sees. Claim-pass checkers over-report by
+    about half (textbook simplifications, priority disputes), so the
+    parent verifies every flagged claim against the cited evidence before
+    editing. A checker that reports "no claim findings" must say which
+    claims it checked and against what, not just that it found nothing.
 - **External links.** `npm run check:external-links` (report-only, needs
   the network; `--only-openstax` restricts it to the `openstax.org/l/`
   redirects, `--json out.json` keeps the table) follows every external URL
@@ -863,14 +1114,19 @@ sample (seeded, stratified by unit or by chapter block) read by fresh
 Opus checkers briefed to answer each item before opening the page, then
 to check page against CNXML, and to read every sampled image before
 judging its alt and longdesc; the parent verifies every flag on the image
-or the module. No audit has found a wrong source key; the rest depends on
+or the module. The audit also runs `npm run source:check -- --bundle
+<bundle>`, which must report every chapter, section, and heading located,
+and a book-wide `npm run check:external-links`, every dead destination
+already un-linked and disclosed. No audit has found a wrong source key;
+the rest depends on
 the reader's model. Opus samples found 7–10 confirmed defects per page,
 two-thirds of them hints, where a Sonnet sample had found about 1 in 90
 items. Plan the sample on Opus and by the Opus rate.
 
 **Image-first alt pass (required).** The sample is not the end of the
 figure work: after it, every `mediafigure` in the book gets one more
-reading by a fresh checker (one per chapter) who opens the image and
+reading by a fresh Opus checker (packets of 30–45 figures, ordered by
+figure kind — the kit's run shape) who opens the image and
 writes down what is drawn — panels, labels, colours, arrows, counts, scale
 bars — BEFORE reading the alt, caption, `longdesc`, or source alt, then
 compares claim by claim, because an alt read first anchors the reader to
@@ -881,7 +1137,11 @@ source alt. Counts, colours, directions, and "labeled" claims are where
 defects cluster. The kit is `docs/briefs/alt-pass/` (checker brief, run
 shape) with `tools/source/alt-pass-packets.py <book> <out-dir>` building
 the packets; the records are in `docs/history/biology.md` and
-`docs/history/microbiology.md`, "Figure-alt pass".
+`docs/history/microbiology.md` ("Figure-alt pass", "Practice sweep and
+long-description pass", "Alt-only figure pass"). Plan by their rate:
+after a Sonnet image-first pass, Opus still found about one alt-only
+figure in four wrong. A book whose section checkers already read every
+figure on Opus by inventory (Anatomy and Physiology) still runs the pass.
 
 **Image-first is not enough for a `longdesc`: read it by inventory**
 *(September 22, 2026)*. After both passes, most `longdesc` figures were

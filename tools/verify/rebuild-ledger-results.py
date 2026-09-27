@@ -10,10 +10,10 @@ mapping — and writes the fixed files to `<out dir>`.
 
   python3 tools/verify/rebuild-ledger-results.py \
       --results $SP/ledger-results --out $SP/ledger-results-fixed \
-      --book life-health-sciences/microbiology
+      --book life-health-sciences/anatomy-physiology
 
 Then `npm run ledger:merge -- <out dir>` (author results BEFORE the solve
-records, prune last — docs/briefs/microbiology/run.md).
+records, prune last — docs/briefs/anatomy-physiology/run.md §4).
 """
 import argparse
 import glob

@@ -136,9 +136,10 @@ section, no stem duplicating a section Practice item (lint-enforced; the
 playbook states the rule), no hints, subsection provenance in the ledgers.
 Read that playbook, not the math edition, before building one.
 
-The completion audit record (September 5, 2026) and the figure-alt and
-`longdesc` pass records (September 21–23, 2026) are in
-`docs/history/biology.md`. A figure edited after these passes gets the
+The completion audit record (September 5, 2026), the figure-alt and
+`longdesc` pass records (September 21–23, 2026), the re-review rows
+(September 23–24, 2026), and the alt-only figure pass (September 24–26,
+2026) are in `docs/history/biology.md`. A figure edited after these passes gets the
 inventory reading (life-sciences "Completion audit") from its author and
 checker.
 

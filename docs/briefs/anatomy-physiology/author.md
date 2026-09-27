@@ -49,8 +49,9 @@ once).
    `selfcheck`/`sortbins` rules, **"Unkeyed source questions: graded when
    the module fixes the answer"** (the honest graded forms — you apply them
    to feature-box questions and to Interactive Link Questions), the table →
-   `sortbins` rule, **"No source exercise is ever dropped, and 'duplicate'
-   is a claim to prove"**, and "What the first retrofit's checkers caught".
+   `sortbins` rule and its item-building rules, **"No source exercise is
+   ever dropped, and 'duplicate' is a claim to prove"**, "Leaks across the
+   page", and "What the first retrofit's checkers caught".
 4. `docs/authoring-playbook.md` — **§0 rules 4–5 only; in §3 only the
    Multiple choice (text mode), Callouts, Text recall, Self-check, Sort
    into bins, and Media figure paragraphs and "The section-final
@@ -179,8 +180,9 @@ playbooks. Apply them literally; these are the recurring failures:
   the module never prints is not graded. The source stem stays verbatim (a
   referent may be added, never a clause). Distractors are the module's own
   sibling terms — never invented.
-- **Never edit a source option, stem, or key to dodge a leak** — reorder
-  and disclose, or drop and name it in the footer.
+- **Never edit a source option, stem, or key to dodge a leak, and never
+  drop a source item** — reorder and disclose; an unmovable pair keeps a
+  footer disclosure (life-sciences "Leaks across the page").
 - **Leaks — the top defect class.** (1) Nothing in the item directly
   above a `textin` — its stem, its options, OR its hint — prints the
   `textin`'s key or the key's root, singular, or plural. Order the group

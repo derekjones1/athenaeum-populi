@@ -15,15 +15,14 @@ Biology 2e is `complete` (47 chapters, 208 sections); its rules are
 OpenStax Microbiology is `complete` (26 chapters, 127 sections); its rules
 are in `docs/subjects/microbiology.md`, which records how it differs from
 Biology 2e (unkeyed prose exercises, no per-module glossary, new box and
-item types). A Microbiology chapter is run from
-`docs/briefs/microbiology/run.md` (the parent's recipe) with the agent
-briefs beside it — versioned there, not re-derived per session. Anatomy and
-Physiology 2e is `in-progress` (28 chapters in six units, 169 sections;
-`npm run source:verify` prints how many are authored); its rules are in
+item types). Anatomy and Physiology 2e is `in-progress` (28 chapters in
+six units, 169 sections; `npm run source:verify` prints how many are
+authored); its rules are in
 `docs/subjects/anatomy-physiology.md`, which records the scan, its two
 book-specific rules (Interactive Link Questions, References), and that its
 pin postdates its PDF; a chapter is run from
-`docs/briefs/anatomy-physiology/run.md` with the briefs beside it. Dated
+`docs/briefs/anatomy-physiology/run.md` (the parent's recipe) with the
+agent briefs beside it — versioned there, not re-derived per session. Dated
 narrative — retrospectives, per-chapter logs, closed programmes — lives in
 `docs/history/`, one file per playbook; the playbooks keep only what is
 operative.
@@ -121,7 +120,10 @@ operative.
   `--min-exercises` FLOOR and a `--max-unverifiable` CEILING, and
   `--require-solved <prefix>` refuses a `multiplechoice`, `textin`,
   `sortbins`, or `fillin` under a prose shelf whose record carries no
-  orchestrator solve
+  orchestrator solve; `--require-provenance <prefix>` refuses a record
+  there whose note is only the solve placeholder, or a Knowledge Check
+  record whose note does not open with its `KC <n> <N.M> §` tie (the fix
+  is `ledger:provenance`)
 - `npm run solve:emit -- <root> --out <dir>` / `npm run solve:compare -- <answers.json> content --out <dir>`
   — the orchestrator's pass over a prose book's graded questions, and the
   blind solve of the math fill-ins no mechanical reading reaches: `emit`
@@ -137,6 +139,19 @@ operative.
   prints every disagreement and "also defensible" flag, refuses to record
   one until it carries an `adjudicated` note settled against the CNXML, and
   writes the ledger records (`solved: { by, result }`) for `ledger:merge`
+- `npm run ledger:provenance -- [root] --out <dir>` — give every
+  life-sciences ledger record whose note is only the solve placeholder a
+  provenance note derived again from the source (the exercise, glossary
+  term, or sentence an item came from; a Knowledge Check's `KC <n> <N.M> §`
+  tie), never touching a verdict or a solve; weak matches are marked "low
+  confidence" and listed. Run at the close-out of any run or sweep, then
+  `ledger:merge` its output
+- `npm run kc -- weights|assemble|notes|leaks …` — the parent's Knowledge
+  Check kit (`docs/briefs/anatomy-physiology/kc-run.md`): derive every
+  chapter and check weight from what exists (`--write` applies), assemble
+  the chapter scratch blocks into the page, turn the authors' provenance
+  files into ledger notes, and report every key another item on the page
+  prints
 - `npm run ledger:stats` — verified/total per shortcode kind
 - `npm run ledger:list` — emit exercises as JSON for a verification pass
   (`--shard i/n`, `--kind`, `--unverified`, `--verdict`, `--context N`)
@@ -150,9 +165,10 @@ operative.
   and list the dead, blocked, and unreachable ones; needs the network, so it
   is not in `test` or `ci`
 - `npm run ci` — complete local equivalent of CI
-- `npm run baseline:update` — recount the three published floors and rewrite
-  package.json's `--min-verified`, `--min-replayed`, and `--min-exercises` in
-  place
+- `npm run baseline:update` — recount the four published baselines and
+  rewrite package.json's `--min-verified`, `--min-confirmed`,
+  `--min-replayed`, and `--min-exercises` in place (`-- --allow-decrease`
+  for a deliberate drop, named in the commit)
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
 - `npm run source:verify` — verify the committed section map offline
 - `npm run source:check` — report-only comparison against pinned CNXML
@@ -165,9 +181,10 @@ Every `source:*` command takes `--bundle KEY` to work on one bundle at a time.
 Every authoring rule in the content lint is an error — the lint has no
 warning level (working rules: `docs/authoring-playbook.md` §5). If a rule
 fires on sound content, narrow the rule and add a test for the case it got
-wrong — do not exempt the page. When authoring moves any published floor
-(`--min-verified`, `--min-replayed`, `--min-exercises`), end the session with
-`npm run baseline:update` and commit the rewrite together with the content.
+wrong — do not exempt the page. When authoring moves any published
+baseline (`--min-verified`, `--min-confirmed`, `--min-replayed`,
+`--min-exercises`), end the session with `npm run baseline:update` and
+commit the rewrite together with the content.
 
 ## The answer ledger
 
@@ -275,8 +292,14 @@ A pass writes result files, each shaped
 ledger. Result files that disagree about a hash fail the merge with nothing
 written — re-read the exercise rather than let file order pick a winner. A
 merge that changes an already-recorded verdict prints the change; that is
-the legitimate re-read flow. `node tools/verify/answer-ledger.mjs prune
-content` drops records stranded by an edit.
+the legitimate re-read flow. A record with the SAME verdict as the one it
+meets keeps that record's note when its own is only the solve placeholder,
+and keeps a `solved` it lacks (`combineRecords`), so an author's
+provenance and the orchestrator's solve survive in either merge order; a
+changed verdict replaces the record whole. An item re-hashed by a sweep
+still gets its record from the re-solve alone — `npm run
+ledger:provenance` restores its note. `node tools/verify/answer-ledger.mjs
+prune content` drops records stranded by an edit.
 
 Re-run the pass's calibration — provably-wrong answers seeded into a blind
 sample, every one caught with no false alarm on the rest — whenever the
@@ -313,6 +336,19 @@ Three rules for a finding:
    made from grep.
 3. **When you add a gate, sabotage it once to prove it fires**, then revert the
    sabotage. A gate that has never been seen to fail has not been tested.
+
+## Two sessions on one tree
+
+Derek sometimes runs two sessions on this working tree. Before touching
+shared files, look for a peer (a sibling scratchpad modified in the last
+minutes; `ListAgents`) and message it. Agree errata number blocks up front;
+read chapter weights from the tree at landing; `ledger:carry plan` diffs
+all of `content/`, so filter its results and resolve list to your own
+paths and emit with `--only`; hold `/tmp/athenaeum-build.lock` (holder's
+name inside) for build, `check:build`, `serve:public`, and screenshots.
+The first committer commits the ledger and the package.json baselines
+whole and names the other session's deltas. Re-run `git status` before
+listing uncommitted files — the session-start snapshot is stale.
 
 ## Browsers (never run `npx playwright install`)
 

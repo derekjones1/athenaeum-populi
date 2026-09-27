@@ -204,7 +204,9 @@ test('the biology subject playbook states its lint-backed rules', () => {
   const lifeSciences = read('docs/knowledge-check-playbook-life-sciences.md');
   assert.match(lifeSciences, /\*\*duplicate-stem\s+rule\*\*/, 'the edition names the lint rule');
   assert.match(lifeSciences, /Near-paraphrase\s+is\s+deliberately\s+not\s+measured/, 'the edition states the similarity decision');
-  assert.match(lifeSciences, /ends\s+in\s+`content\/life-health-sciences\/biology\/knowledge-check-XX-YY\.md`/, 'the scratch-path trap is written down');
+  // Every life-sciences book's checks use the rule; the path is written
+  // with `<book>` since the Microbiology blocks and Anatomy and Physiology.
+  assert.match(lifeSciences, /ends\s+in\s+`content\/life-health-sciences\/<book>\/knowledge-check-XX-YY\.md`/, 'the scratch-path trap is written down');
 });
 
 test('the math playbook states the graph-recognition companion rule the lint enforces', () => {

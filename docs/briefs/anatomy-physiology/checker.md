@@ -19,9 +19,10 @@ Read first: `$SP/run-facts.md` (this run's decisions — a page that follows
 a parent decision is not defective for it), then
 `docs/subjects/anatomy-physiology.md` and `docs/subjects/life-sciences.md` —
 the rules you check against; anatomy-physiology wins where they differ; the
-life-sciences sections "Unkeyed source questions" and "What the first
-retrofit's checkers caught" and the anatomy-physiology "Verification" list
-are the defect classes you hunt.
+life-sciences sections "Unkeyed source questions" (with the conversion
+rules the chapter runs sharpened), "Leaks across the page", "What the
+first retrofit's checkers caught", and the anatomy-physiology
+"Verification" list are the defect classes you hunt.
 
 ## 1. Enumerate
 
@@ -32,7 +33,9 @@ Counts by kind; body items (graded vs selfcheck) separately from Practice.
 Then enumerate the module's end-matter exercises from the raw CNXML —
 Review Questions, Critical Thinking Questions, Interactive Link Questions —
 and tick each one off against the page, by hand. **A missing exercise is
-the defect this pass exists to catch**: no lint fires on it. A Review or
+the defect this pass exists to catch**: `verify:source-coverage` refuses a
+drop the matcher can see, but not a fold or conversion that hides one
+behind a plausible footer sentence. A Review or
 Critical Thinking Question missing is a defect, whatever the footer says.
 An Interactive Link Question stands either as a graded `selfcheck` after
 its callout (only when the module text fixes the answer — quote the
@@ -214,7 +217,8 @@ Every `Changes:` claim true of the page (counts of graded items and
 items, one-word corrections, reorderings, reworded figure references; a
 correction is named as a correction with no clause about where it is
 logged); **re-derive every count the footer states rather than reading
-it**; a Practice order that swaps two source items with no footer line
+it** (`npm run verify:source-coverage -- --verbose` prints the page's
+Interactive Link tally, source vs graded); a Practice order that swaps two source items with no footer line
 is a defect; a cited floor is 3 per
 objective and 8 per section, never 12 or 15; a footer describes the
 shipped page only — a clause about run machinery ("reported to the
@@ -224,7 +228,10 @@ authors; the deep link; `title`, `description`, `source_section`, `weight`;
 
 ## 7. Report
 
-Write `$SP/check-N.M.md`: counts; **DEFECTS** numbered, each with evidence
+Write `$SP/check-N.M.md` with Bash (`cat >> $SP/check-N.M.md <<'EOF' …
+EOF`), appending as you go — the Write tool refuses report files for
+subagents, and a reader killed mid-task by a session limit keeps what it
+appended. Contents: counts; **DEFECTS** numbered, each with evidence
 (a CNXML quote, a grader output, what you saw in the image) and the exact
 fix; **CONCERNS** numbered; source disagreements (page vs CNXML vs PDF vs
 image) with a verdict and whether each is an erratum candidate; one line on

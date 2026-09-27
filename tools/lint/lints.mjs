@@ -2769,7 +2769,7 @@ export function lintHugo(src, filename = '', options = {}) {
   // describe this run's own process, not the page; five of eleven authors
   // in the chapters 13-14 wave hid a dropped exercise behind exactly this
   // kind of sentence, and no other gate caught it. See
-  // docs/briefs/microbiology/checker.md §6 and docs/subjects/life-sciences.md's
+  // docs/briefs/anatomy-physiology/checker.md §6 and docs/subjects/life-sciences.md's
   // footer guidance. The playbook's own sanctioned phrase for a locally
   // written item, "disclosed in the ledger" (never "logged"), is
   // unaffected — this only trips on a bare `logged`, a `reported`/`flagged`

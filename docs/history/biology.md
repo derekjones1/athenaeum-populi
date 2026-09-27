@@ -192,6 +192,72 @@ the parent spot-checks one "clean" verdict after any delegated model's
 first unit; a footer's `Changes:` clause names departures from the source,
 never corrections to our own earlier text.
 
+## Re-review to the A&P standard (September 23–24, 2026)
+
+The practice sweep above ran chapters 1–17 and 18.1 at full scope (commit
+a145b91); the narrow-scope remainder — chapters 18.2–47 and all eight unit Knowledge Checks — was re-read at
+full scope one row per request from `docs/re-review/tracker.md`,
+following `docs/re-review/README.md` with `brief-life-sciences.md` (and
+`brief-knowledge-check.md` for the checks). Opus fixers, one per two or
+three sections, fixed in place; a fresh Fable subagent blind-solved each
+batch's re-hashed items on masked pages; the parent read every key,
+claim, and figure change against the CNXML or the image. Hint leaks were
+half to two-thirds of every row's fixes. The rows as ticked (Fixed =
+defects fixed; token counts are Opus fixer tokens unless named):
+
+| | Chapter | Sections | Fixed | Errata | Commit | Notes |
+|---|---|---|---|---|---|---|
+| [x] | 18. Evolution and the Origin of Species | 3 | 29 | 983–984 | 71071e7 | 18.1 in the Sep 22 sweep; 18.2–18.3 Sep 23: one Opus fixer (~150k tokens) + Fable solve 7/7 (~60k); 15 of 29 were hint leaks |
+| [x] | 19. The Evolution of Populations | 3 | 34 | 985–986 | 3250fc9 | Sep 23: one Opus fixer (~160k tokens) + Fable solve 3/3 (~45k); 22 of 34 were hint leaks; parent caught one fixer-made leak (a cloze stem stating the next MC's key) |
+| [x] | 20. Phylogenies and the History of Life | 3 | 46 | 987 | d4098ea | Sep 23: one Opus fixer (~177k tokens) + Fable solve 8/8 (~53k); 27 of 46 were hint leaks; five reverse re-asks replaced with single-sentence clozes; parent turned the fixer's draft erratum (source "DNA" double-keys the phylogeny RQ) into an options deviation per errata 924/928/934 |
+| [x] | 21. Viruses | 4 | 54 | — | 14fd14f | Sep 23: two Opus fixers (~245k tokens), batched with ch22–25 (shared Fable solve 48/48, ~83k); 36 of 54 were hint leaks; three reverse re-asks replaced (RT inhibitors, Prusiner, viroid summary cloze) |
+| [x] | 22. Prokaryotes: Bacteria and Archaea | 5 | 84 | 988, 990 | 14fd14f | Sep 23: two Opus fixers (~299k); 56 of 84 hint leaks; parent added the food-collage caption source note (988) and replaced the endolith solution's "hypolith" (990, deviation kind solution) |
+| [x] | 23. Protists | 4 | 44 | — | 14fd14f | Sep 23: two Opus fixers (~240k); 26 of 44 hint leaks; histones cloze sat above the source item printing it → endomembrane-system cloze |
+| [x] | 24. Fungi | 5 | 73 | — | 14fd14f | Sep 23: two Opus fixers (~254k); 48 of 73 hint leaks; one double-keyed author MC (24.5 antibiotics) re-optioned; aerobes accepts added after the blind solve |
+| [x] | 25. Seedless Plants | 4 | 46 | 989 | 14fd14f | Sep 23: two Opus fixers (~227k); 24 of 46 hint leaks; parent fixed the adventitious glossary typo (989) |
+| [x] | 26. Seed Plants | 4 | 59 | 998 | 6f4cddf | Sep 23: two Opus fixers (~241k tokens), batched with ch27–30 (shared Fable solve 67/68 + 1 flag adjudicated, ~108k); 32 of 59 hint leaks; five reverse re-asks replaced; parent fixed "pericarp, or hypanthium" (998) |
+| [x] | 27. Introduction to Animal Diversity | 4 | 62 | 999 | 6f4cddf | Sep 23: two Opus fixers (~283k); 33 of 62 hint leaks; extinction-graph longdesc corrected; parent fixed the Bilateria/Radiata "respectively" swap (999) |
+| [x] | 28. Invertebrates | 7 | 118 | 991–994, 1001–1004 | 6f4cddf | Sep 23: three and a half Opus fixers (~473k); 65 of 118 hint leaks; parent: 28.1 mesohyl, 28.2 Hydrozoa class + two model-answer source notes (kind solution), 28.6 desiccation option + superclasses source note |
+| [x] | 29. Vertebrates | 7 | 114 | 995–997, 1000 | 6f4cddf | Sep 23: three and a half Opus fixers (~493k); 55 of 114 hint leaks; parent re-keyed 29.1 closest relatives to urochordates (kind key; solver flag adjudicated), 29.7 Australopithecus model answer, 29.2 misspellings |
+| [x] | 30. Plant Form and Physiology | 6 | 117 | — | 6f4cddf | Sep 23: two and a half Opus fixers (~426k); 84 of 117 hint leaks; no new source defects |
+| [x] | 31. Soil and Plant Nutrition | 3 | 54 | — | c909153 | Sep 23: one and a half Opus fixers (~185k tokens), batched with ch32–35 (shared Fable solve 43/43, ~92k); ~34 of 54 hint leaks; five reverse re-asks replaced (sulfur, potassium, glacial drift, B and C horizons) |
+| [x] | 32. Plant Reproduction | 3 | 54 | — | c909153 | Sep 23: two and a half Opus fixers (~270k); ~32 of 54 hint leaks; synergid and dormancy reverse re-asks replaced (micropyle, testa) |
+| [x] | 33. The Animal Body: Basic Form and Function | 3 | 58 | 1008 | c909153 | Sep 23: two Opus fixers (~263k); 34 of 58 hint leaks; parent re-keyed the 33.1 dorsal/ventral plane question to coronal (kind key; the module's own goat figure), rewrote a garbled fixer-written 33.3 stem, fixed erratum 239's quotation |
+| [x] | 34. Animal Nutrition and the Digestive System | 4 | 63 | 1005–1006 | c909153 | Sep 23: two and a half Opus fixers (~300k); ~42 of 63 hint leaks; parent replaced a double-keying option in 34.1 (cow teeth) and 34.2 (fat) (kind options); trypsin textin accepts any of the three proteases |
+| [x] | 35. The Nervous System | 5 | 92 | 1007 | c909153 | Sep 23: three and a half Opus fixers (~400k); ~54 of 92 hint leaks; parent replaced the microglia option that double-keyed the 35.1 meningitis question (kind options); four reverse re-asks replaced |
+| [x] | 36. Sensory Systems | 5 | 70 | 1009, 1016 | 7796f05 | Sep 23: two and a half Opus fixers (~316k tokens), batched with ch37–40 (shared Fable solve 38/38 + 9 synonym flags adjudicated, ~78k); 47 of 70 hint leaks; parent fixed the glomerulus glossary "two clusters" (1009) and the solver-found summary "encapsulated" Merkel's disks (1016) |
+| [x] | 37. The Endocrine System | 5 | 74 | — | 7796f05 | Sep 23: two and a half Opus fixers (~378k); 42 of 74 hint leaks; nine reverse re-asks replaced; 37.4 figure-label TRH item failed source-keys (label is not module text) → "narrow range" cloze; 37.4 drops one item (3 duplicates → 2), exercise floor −1 |
+| [x] | 38. The Musculoskeletal System | 4 | 57 | 1010, 1011 | 7796f05 | Sep 23: two Opus fixers (~272k); 37 of 57 hint leaks; parent fixed 38.4 "A zone" (313) and the cross-bridge caption's Ca²⁺ on the actin active site (1010), and 38.3's hip protraction/retraction model answer (1011, kind solution) |
+| [x] | 39. The Respiratory System | 4 | 49 | — | 7796f05 | Sep 23: one and a half Opus fixers (~244k); 27 of 49 hint leaks; 39.1 trachea/alveolus reverse re-asks replaced; no new source defects |
+| [x] | 40. The Circulatory System | 4 | 59 | 1012–1015 | 7796f05 | Sep 23: two and a half Opus fixers (~287k); 28 of 59 hint leaks; parent fixed 40.2 "nitrous oxide (NO)" (1012), fibrinogen "in blood serum" (1013), two misspellings (1014–1015), and added squid/warm-blooded synonyms |
+| [x] | 41. Osmotic Regulation and Excretion | 5 | 61 | — | 58652a1 | Sep 24: two Opus fixers (~246k tokens), batched with ch42–45 (shared Fable solve 49/49 + 1/1, ~147k); 38 of 61 hint leaks; a 429 killed nine of fourteen fixers mid-run, all resumed by SendMessage; no new source defects |
+| [x] | 42. The Immune System | 4 | 75 | 1019 | 58652a1 | Sep 24: two Opus fixers (~249k); 40 of 75 hint leaks; natural-killer and allergy reverse re-asks replaced (lymphocyte, IgE); 42.3 affinity/avidity alt rewritten against the image, immunoglobulin-table longdesc added (1019 "mucous") |
+| [x] | 43. Animal Reproduction and Development | 7 | 93 | 1018 | 58652a1 | Sep 24: three Opus fixers (~371k); 51 of 93 hint leaks; eight duplicate asks replaced; parent replaced the 43.1 "asexual" option that double-keyed fragmentation (1018, kind options; min-confirmed 4860→4859) |
+| [x] | 44. Ecology and the Biosphere | 5 | 71 | — | 58652a1 | Sep 24: two and a half Opus fixers (~279k); 44 of 71 hint leaks; 44.2 NPP summary MC was double-keyed (above-ground biomass) → "warm and wet" MC; parent removed a "wild lupine" leak from the 44.1 nitrogen cloze |
+| [x] | 45. Population and Community Ecology | 7 | 123 | 1017 | 58652a1 | Sep 24: four and a half Opus fixers (~542k); 70 of 123 hint leaks; sortbins rebuilt from module examples in 45.6 and 45.7; blind solver caught the 45.7 non-associative stem also fitting habituation → category stem; 1017 CDC life-table arithmetic (untouched, transcribed as printed) |
+| [x] | 46. Ecosystems | 3 | 50 | 1020–1022 | 3a20551 | Sep 24: two Opus fixers (~247k tokens), batched with ch47 and KC 1–17 (shared second checker ~213k and Fable solve 64/65, ~119k); 34 of 50 hint leaks; parent replaced eip-996's options C and D, which also reduce CO₂ (1021, kind options; min-confirmed 4859→4858), and fixed the acid-rain glossary "sulfuric" (1022) |
+| [x] | 47. Conservation Biology and Biodiversity | 4 | 47 | 1023 | 3a20551 | Sep 24: two Opus fixers (~243k); 25 of 47 hint leaks; IUCN chart longdesc re-read from the image (the source alt's fish split tied the Visual Connection's option A, 1023); the fern-spore VC stays on source authority (the solver's one disagreement) |
+| [x] | KC `knowledge-check-01-03` | — | 10 | 1024 | 3a20551 | Sep 24: one Opus fixer (~197k); "atomic weight" distractor double-keyed "mass number"; micelle textin re-keyed amphipathic; fixer found the 3.3 micelle claim → Source note on the section page (1024) |
+| [x] | KC `knowledge-check-04-10` | — | 39 | 1025 | 3a20551 | Sep 24: two Opus fixers (~556k); 10 replacements; second checker flagged a 5.3 stem listing "antiporters" above the antiporter MC → pumps textin; parent fixed the 6.2 "both the reactants and the products" sentence (1025) |
+| [x] | KC `knowledge-check-11-17` | — | 44 | — | 3a20551 | Sep 24: two Opus fixers (~468k); 15 replacements (mostly reverse re-asks of section items); cross-chapter leaks between the two fixers relayed by the parent (16.6 "40S", 14.2 "dideoxy" over the 17.3 ddNTP key) |
+| [x] | KC `knowledge-check-18-20` | — | 10 | — | 4604086 | Sep 24: one Opus fixer (~197k tokens), batched with KC 21–29, 30–32, 33–43, 44–47 (shared second checker ~217k and Fable solve 76/76 after a 429 resume); 3 replacements; accepts added (alloploidy, genepool, node) |
+| [x] | KC `knowledge-check-21-29` | — | 43 | — | 4604086 | Sep 24: three Opus fixers (~667k); 12 replacements (six in ch21–23: stems asserting what the module does not say, one-subsection sections); parent reworded the 26.3 megasporocyte stem that printed the 26.1 key "megaspore" |
+| [x] | KC `knowledge-check-30-32` | — | 14 | 1032 | 4604086 | Sep 24: one Opus fixer (~243k); 2 replacements; the 30.5 gravity-potential stem dropped the "10 MPa" of erratum 434; the 31.1 summary cloze was built on the summary's "organic compounds" slip (1032) → minerals textin |
+| [x] | KC `knowledge-check-33-43` | — | 50 | 1033 | 4604086 | Sep 24: three Opus fixers (~754k); 20 replacements; five double keys (OTC, basophil, TLR body site, rectal gland, segmental artery); items built on errata 449/452 removed; parent added the 43.6 PGD Source note (1033), sourced the 35.4 nitric-oxide stem, replaced the bees "queens" option |
+| [x] | KC `knowledge-check-44-47` | — | 27 | 1031 | 4604086 | Sep 24: two Opus fixers (~467k); 6 replacements; the 44.5 Permian "84 percent" item replaced (47.1 says 96, 1031); second checker cut a 45.2 stem clause that gave away its "sperm-depleted" accept |
+
+## Whole-page leak read of the unit checks (September 26, 2026)
+
+`npm run kc -- leaks` (new that day) listed 46 candidates across the eight
+unit checks — every place one item's key or accept member, or its plural
+fold, appears in another item's stem, options, rubric, or labels. Each was
+read against the item it could give away; none states the fact that item
+tests or singles out its key. They are shared vocabulary ("oxygen",
+"liver", "pathway", "mitosis" used in other contexts), the same term as a
+distractor in another question ("the cerebellum", "10 percent"), or a hidden
+rubric clause ("ion pumps in the plasma membrane"). No page changed. The
+standard is now in the KC playbook's "No item may print another item's key".
+
 ## Alt-only figure pass (September 24–26, 2026)
 
 An Opus image-first sample on September 24 (50 figures across this book
@@ -217,6 +283,28 @@ for every flag before editing.
   measured size must come from that figure's own bar.
 - **No graded item re-hashed** (`ledger:carry plan` found none); `npm test`
   green after each batch. About 2.1M checker tokens in two sessions.
+
+### Sample and packet records
+
+This book's rows of the September 24 sample (50 random figures, 25 per book, seed 20260924, `docs/briefs/alt-pass/checker-brief.md`, parent opened every flagged image), confirmed against the image; paths are under `content/life-health-sciences/`, line = the `{{< mediafigure` tag:
+
+| | Page:line | Alt says | Image shows → fix | Kind |
+|---|---|---|---|---|
+| [x] | `biology/24-fungi/01-characteristics-of-fungi.md:111` | two labeled "Hyphae" "meeting at a round sporangium" | only the diagonal stalk ends in the sporangium; the other labeled hypha crosses above it | error |
+| [x] | `biology/37-the-endocrine-system/01-types-of-hormones.md:49` | oxytocin "with one yellow sulfur" | two yellow sulfur spheres (the disulfide) | error |
+| [x] | `biology/38-the-musculoskeletal-system/01-types-of-skeletal-systems.md:149` | "Two views"; longdesc "the left is identical" | a left and a right foot, mirror images, in one view | minor |
+| [x] | `biology/14-dna-structure-and-function/06-dna-repair.md:23` | "a mismatched base marked with a red arrow" | name the G opposite A and the red arrow pointing back along the new strand (the polymerase backing up to proofread); the source alt had both | minor |
+| [x] | `biology/45-population-and-community-ecology/06-community-ecology.md:187` | longdesc: "several young conifers" | panel 2 draws two (parent confirmed on a zoom crop) | minor |
+
+Applying the foot fix found the same "the left is identical" wording on the lower-limb figure (`biology/38-the-musculoskeletal-system/01-types-of-skeletal-systems.md:141`); the legs are mirror images too, so both were fixed. The desmosome alt is erratum 1046.
+
+Logged as erratum 1047, with a footer note: m66442's hemoglobin artwork (`Figure_03_04_05-3127`) prints "∝" for α on the α-subunit labels, the same kind as erratum 914. The page longdesc already says α.
+
+| | Book | Chapters | Alt-only figures | Fixed | Errata | Commit | Notes |
+|---|---|---|---|---|---|---|---|
+| [x] | Biology 2e | 1–24.3 (packets b01–b06) | 210 | 41 | 1070–1071, 1073–1074, 1078–1085; 836 amended | 453891d | 41 of 210 flagged (3/10/9/4/8/7), all confirmed on the image. Claim correction: 4.5's prose, caption and alt said the 9 + 2 center is "a single microtubule doublet"; it is a central pair of singlets (1078). §1.1 and §8.1 print one cyanobacteria micrograph with 25 µm bars that disagree about 2.7-fold (1079; 836's 15–20 µm copied from §1.1, amended). Cholera poster dated "1866" is Woodhull's 1849 notice (1081). Scale errata: *Aspergillus*, MRSA, mitochondria. Packets are 35 figures from `alt-pass-packets.py` output filtered to no-`longdesc` tags. No graded item re-hashed. Run Sep 26, 2026, about 830k checker tokens |
+| [x] | Biology 2e | 24.3–47 (packets b07–b15) | 309 | 91 | 1088–1102; 853 withdrawn | 04cabdc | 91 of 309 flagged (8/14/12/15/9/8/7/6/12), all confirmed on the image; Biology alt-only pass COMPLETE. Erratum 853 withdrawn: the salmon is upright over the stream bed, so the source's "swimming" stands. Claim correction: 25.3's caption called the gemmae crescent-shaped spore containers; the cups are crescent-shaped and gemmae are pieces of plant, as the section's prose says (1090). Artwork typo "Diptheria" (1100). Scale errata measured with PIL against each figure's own bar. No graded item re-hashed. Run Sep 26, 2026, about 1.26M checker tokens |
+
 
 ## Build budgets: the completion measurement record
 

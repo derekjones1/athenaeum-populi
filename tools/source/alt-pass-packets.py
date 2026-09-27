@@ -1,12 +1,19 @@
-"""usage: alt-pass-packets.py <book> <out-dir>  — one packet-NN.md per chapter for the figure-alt pass (docs/briefs/alt-pass/)."""
+"""usage: alt-pass-packets.py <book> <out-dir> [--longdesc with|without]  — one packet-NN.md per chapter for the figure-alt pass (docs/briefs/alt-pass/); --longdesc keeps only the figures that carry (with) or lack (without) a longdesc."""
 import json, re, os, glob, sys
-if len(sys.argv)!=3: sys.exit(__doc__)
-BOOK, OUT = sys.argv[1], sys.argv[2]
+args=sys.argv[1:]
+LONGDESC=None
+if '--longdesc' in args:
+    i=args.index('--longdesc')
+    if i+1>=len(args) or args[i+1] not in ('with','without'): sys.exit(__doc__)
+    LONGDESC=args[i+1]; del args[i:i+2]
+if len(args)!=2: sys.exit(__doc__)
+BOOK, OUT = args
 ROOT=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.makedirs(OUT, exist_ok=True)
 manifest=json.load(open(f'{ROOT}/data/media/{BOOK}.json'))
 man=manifest['figures']
-CHECKOUT={'biology':'osbooks-biology-bundle','microbiology':'osbooks-microbiology'}.get(BOOK, manifest.get('bundle', BOOK))
+lock=json.load(open(f'{ROOT}/data/openstax/source-lock.json'))['bundles']
+CHECKOUT=next(b['repository'].rstrip('/').split('/')[-1] for b in lock.values() if BOOK in b['books'])
 smap=json.load(open(f'{ROOT}/data/openstax/source-map.json'))
 sec={s['localPath']:s['moduleId'] for s in smap['sections'] if s.get('book')==BOOK}
 base=f'{ROOT}/content/life-health-sciences/{BOOK}'
@@ -21,6 +28,7 @@ for ch in chapters:
         for i,l in enumerate(open(p),1):
             for m in re.finditer(r'{{<\s*mediafigure\s+(.*?)>}}',l):
                 attrs=m.group(1)
+                if LONGDESC and (LONGDESC=='with')!=bool(re.search(r'\blongdesc=',attrs)): continue
                 src=re.search(r'src="'+BOOK+r'/([^"]+)"',attrs)
                 if not src: print('NO SRC',rel,i,file=sys.stderr); continue
                 stem=src.group(1)

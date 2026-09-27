@@ -193,7 +193,10 @@ something the page never taught. The `interactive-exercise` items are
 never silently dropped: the footer names how many the section has, how
 many became `selfcheck`s, and that the rest stand as prompts in their
 callouts. The checker reads each converted item's model answer against the
-module text, as for any unkeyed-to-keyed conversion in the baseline.
+module text, as for any unkeyed-to-keyed conversion in the baseline. An
+Interactive Link Question whose printed key answers a different question
+stays a prompt, with a Source note and an erratum; no key is written for
+it *(chapter 2)*.
 
 ### 2. Feature boxes
 
@@ -331,8 +334,24 @@ where the source has one.
 
 One page per unit, as for Biology 2e: the source has six units, the map
 records them, and `docs/knowledge-check-playbook-life-sciences.md` governs
-(three items per section, lint-enforced). Unit sizes are 24, 43, 32, 24,
-36, and 10 sections, so 72 to 129 items a page.
+(three items per section, lint-enforced). A check is run from
+`docs/briefs/anatomy-physiology/kc-run.md`. Unit sizes are 24, 43, 32, 24,
+36, and 10 sections, so 30 to 129 items a page — recount the tree when a
+check starts. The weights once every check has landed (chapter weight =
+chapter number + the number of units that end before it):
+
+| Unit | Chapters | Chapter weights | File | KC weight |
+|---|---|---|---|---|
+| 1 | 1–4 | 1–4 | `knowledge-check-01-04.md` | 5 |
+| 2 | 5–11 | 6–12 | `knowledge-check-05-11.md` | 13 |
+| 3 | 12–17 | 14–19 | `knowledge-check-12-17.md` | 20 |
+| 4 | 18–21 | 21–24 | `knowledge-check-18-21.md` | 25 |
+| 5 | 22–26 | 26–30 | `knowledge-check-22-26.md` | 31 |
+| 6 | 27–28 | 32–33 | `knowledge-check-27-28.md` | 34 |
+
+A chapter authored before the previous unit's check exists takes the next
+sequential weight (`npm run validate` requires strictly sequential weights
+at the book root) and shifts +1 when that check lands.
 
 ## Done checklist (in addition to the core and life-sciences checklists)
 

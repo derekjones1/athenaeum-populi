@@ -1,8 +1,10 @@
-# Re-review brief — life sciences (Biology 2e, Microbiology)
+# Re-review brief — life sciences
 
 The full-scope fixer brief of the September 22, 2026 sweep, which set the
 standard of Anatomy and Physiology chapters 1–2; updated for later rules.
-The parent fills `SP` (its scratchpad), `<unit>`, and the page list.
+It ran every Biology 2e and Microbiology row (complete September 24,
+2026) and is the shape `brief-math.md` copies. The parent fills `SP` (its
+scratchpad), `<unit>`, and the page list.
 
 You are an Opus reviewer AND fixer: find every defect on your pages and fix
 it. Keys matched the source everywhere the sweep looked; hints that hand
@@ -31,10 +33,12 @@ over the answer were two-thirds of what it found.
 ## Read (only these)
 
 - `docs/subjects/life-sciences.md` "Exercises" — its hint rules ("Text
-  recall") are the heart of this pass — and "Each thing once".
+  recall") and "Leaks across the page" are the heart of this pass — and
+  "Each thing once".
 - Microbiology pages: `docs/subjects/microbiology.md` §2 "The answer-key
-  policy", §3, and "Exercises" through "Footer and disclosure". Biology
-  pages: `docs/subjects/biology.md` "Exercises".
+  policy", §3, and "Verification". Biology pages:
+  `docs/subjects/biology.md` "Exercises". Anatomy and Physiology pages:
+  `docs/subjects/anatomy-physiology.md` rule 1 and "Exercises".
 - Per page: the page, and its module's raw CNXML (module id:
   `grep -n '<page path relative to content/>' data/openstax/source-map.json`;
   CNXML at `sources/openstax/<checkout>/modules/<mid>/index.cnxml`).
@@ -71,15 +75,21 @@ when both halves do; do not list either in `accept`).
      a glossary item re-asking a source item in reverse → replace the
      author item with a distinct one from the module.
    - **stem ambiguity and dangling referents**; rubric clauses vs the model
-     answer vs the source solution; hints wrong about the module.
+     answer vs the source solution (a clause that compresses one answer
+     sentence and adds no claim is fine — no rubric rewrites; a clause
+     that remarks on the source, "this section does not say…", is cut);
+     hints wrong about the module. Before calling a stem claim
+     unsourced, read the whole paragraph: a claim can sit in the next
+     sentence under a pronoun, which a sentence grep misses.
 3. The footer `Changes:` clause: counts from a tally of the page, claims
    true; never where a correction is logged or who it was reported to.
 4. After your edits, re-check every textin's item above (a reorder creates
    new adjacencies), and every replacement item's own stem against the
    keys of the items below it (a cloze quoting a whole module sentence can
    state a neighbour's key: Biology 19.1's "no … selective pressure"
-   stem sat above an MC keyed "natural selection"), then `npm run verify-section -- <page>` and
-   `npm run lint`.
+   stem sat above an MC keyed "natural selection"), and every positional
+   hint ("the second figure") after a reorder, then `npm run
+   verify-section -- <page>` and `npm run lint`.
 
 ## What you may and may not change
 
@@ -109,7 +119,9 @@ when both halves do; do not list either in `accept`).
 
 ## Report
 
-Write `SP/reports/<unit>.md`:
+Write `SP/reports/<unit>.md` with Bash (`cat >> … <<'EOF' … EOF`),
+appending page by page — the Write tool refuses report files for
+subagents, and a fixer killed by a session limit keeps what it appended:
 - per page: path, module id, graded items, then
   `| file:line | class | fix applied |` with the classes `hint-leak`,
   `nearby-leak`, `wrong-key`, `double-key`, `dishonest-key`, `accept-gap`,

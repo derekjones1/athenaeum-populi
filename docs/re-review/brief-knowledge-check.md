@@ -4,7 +4,8 @@ Hand a knowledge-check fixer BOTH `brief-life-sciences.md` and this file;
 this file wins where they differ. First used on Biology KC 1–3, 4–10, and
 11–17 (September 24, 2026).
 
-You review part of a Biology 2e unit Knowledge Check, not a section page.
+You review part of a life-sciences Knowledge Check (a unit or block
+page), not a section page.
 The brief's working rules, "What you may and may not change", and report
 format all apply, with these differences:
 
@@ -32,6 +33,12 @@ format all apply, with these differences:
     item on the check; the stem may not repeat the key's own word; a cloze
     blanks a term, not a phrase or an open-list tail; format tells.
   - rubric clauses vs the model answer (2–6 clauses, no drift).
+  - **spread:** with three or more body `##` subsections, the three items
+    come from three of them (the ledger note's `§` names each; no lint
+    sees it) — the commonest replacement reason in the Microbiology
+    checks.
+  - before calling a stem claim unsourced, read the whole paragraph: a
+    claim can sit in the next sentence under a pronoun.
 - **Replacements** keep the item type, three items per section, at least one
   auto-graded; built from a different module sentence with no new claim;
   then grep the whole check for the new key and the new stem's content

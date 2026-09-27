@@ -1,11 +1,13 @@
 # Re-review campaign
 
-Bring the four math books, Biology 2e, and Microbiology to the standard
-Anatomy and Physiology 2e chapters 1–2 set *(September 22, 2026)*, one
-chapter per request, ticked off in [tracker.md](tracker.md). The bar is
-"ideal": a learner can genuinely learn the topic from the page. When every
-row of a book is `[x]`, add one line under the book's subject playbook
-heading: "Re-reviewed to the A&P standard, completed <date>."
+Bring every finished book to the standard Anatomy and Physiology 2e
+chapters 1–2 set *(September 22, 2026)*, one chapter per request, ticked
+off in [tracker.md](tracker.md). Biology 2e and Microbiology are done
+(September 24, 2026; their rows are in `docs/history/`); the four math
+books remain. The bar is "ideal": a learner can genuinely learn the topic
+from the page. When every row of a book is `[x]`, add one line under the
+book's subject playbook heading: "Re-reviewed to the A&P standard,
+completed <date>."
 
 **The prompt** (a fresh session, one row at a time):
 
@@ -13,7 +15,9 @@ heading: "Re-reviewed to the A&P standard, completed <date>."
 > <Book> chapter N) — follow `docs/re-review/README.md`.
 
 A row too big for the budget is split by section: mark it `[~]` with the
-last section finished in Notes, and the next request resumes there.
+last section finished in Notes, and the next request resumes there. "The
+next N chapters" means the next N tracker rows, check rows included — say
+so before starting; a row is never started unprompted.
 
 ## The standard, per section
 
@@ -34,9 +38,9 @@ An Opus read at full scope, fixing in place:
 - **Source fidelity:** every source exercise rendered; keys match the
   pinned CNXML or carry a disclosed deviation.
 - **Figures,** image-first by inventory (arrow ends, counts, every printed
-  label): alt and `longdesc` for life sciences (both passes already ran —
-  re-read only figures an item depends on); for math, every figure's
-  `ariaLabel`/alt against the rendered geometry.
+  label): alt and `longdesc` for life sciences (all three figure passes
+  have run — re-read only figures an item depends on); for math, every
+  figure's `ariaLabel`/alt against the rendered geometry.
 - Ordering, rounding, and notation findings are hypotheses: check the
   siblings, the worked example, and the CNXML before editing.
 
@@ -52,24 +56,51 @@ Figure and alt work runs on Opus, never Sonnet.
    first math row writes it from `docs/subjects/math.md`, the
    life-sciences brief's shape, and the standard above, and shows Derek
    before fanning out. That row is the pilot: record its cost in Notes and
-   tune the brief before the next.
+   tune the brief before the next. The life-sciences rows cost about
+   60–80k Opus fixer tokens per section, a shared Fable solve of 50–150k
+   per batch of rows, and about 5k per knowledge-check item.
 1. **Snapshot** before any edit: `npm run ledger:carry -- snapshot content
    > $SP/ledger-before.json`.
 2. **Fan out:** one Opus agent per two or three sections, fixing in place,
-   reporting defects by class in ten lines. Briefs forbid git state
-   commands (one shared worktree).
+   reporting defects by class in ten lines, the report appended as it goes.
+   Briefs forbid every git command, read-only ones included (one shared
+   worktree). Launch in a rolling window of about ten to twelve live
+   agents — fourteen at once hit the session limit, which any concurrent
+   session shares; after a limit (429), resume each killed agent by
+   `SendMessage` to its raw id once the limit resets ("resume; re-read
+   your regions before editing") and never skip its pages. A leak whose
+   fix lies in another fixer's pages is relayed by the parent.
 3. **Parent read:** open every key, claim, and figure change against the
    CNXML or the image before accepting it; reverse what does not hold.
+   Read every changed `question=` line and replaced option in the diff —
+   the gates do not read prose, and fixers have shipped garbled stems and
+   stems that print a neighbour's key above or below — and give the
+   parent's own rewrites the same read. A hint that points by position
+   ("the second figure") is not in its item's hash: after a reorder or a
+   prose or figure edit, re-read the page's positional hints.
 4. **Errata:** confirmed source defects go to `docs/openstax-errata.md`.
 5. **Ledger:** `npm run ledger:carry -- plan $SP/ledger-before.json content
    --out $SP/carry`, then `npm run ledger:merge -- $SP/carry/results`.
-   Blind-solve the resolve list in a fresh Fable subagent on masked pages
-   (`npm run solve:emit -- <chapter> --out $SP/solve --pages-out
-   $SP/solve/pages`, then `npm run solve:compare`), adjudicate against the
-   source, merge, and prune (`node tools/verify/answer-ledger.mjs prune
-   content`). Self-checks on the resolve list are re-read by the parent.
+   Blind-solve only the resolve list's graded items in a fresh Fable
+   subagent on masked pages (`npm run solve:emit -- <chapter> --out
+   $SP/solve --pages-out $SP/solve/pages --only $SP/solve-hashes.json`,
+   the hashes pulled from `resolve-list.json`), then `npm run
+   solve:compare`; the re-solved items' records come from the solve
+   alone, so after merging it run `npm run ledger:provenance -- <book dir>
+   --out $SP/prov` and merge that, which restores their provenance notes
+   (read its `low-confidence.json`). Adjudicate against the source; a flag on an item with a
+   `DISCLOSED_DEVIATIONS` entry or a "Reviewed and *not* errata" ruling
+   re-raises a recorded decision. Read every answer's `note`, not only the
+   disagreements: solvers have found source defects outside their own item.
+   Merge, and prune (`node tools/verify/answer-ledger.mjs prune content`).
+   Self-checks on the resolve list are re-read by the parent.
 6. **Gates:** `npm run verify-section -- <page>` for each page, then
-   `npm test`.
+   `npm test`. A re-review lowers floors on purpose — a replaced duplicate
+   (`--min-exercises`), a mirror-rule conversion (`--min-replayed`,
+   `--min-confirmed`), a new deviation (`--min-confirmed`): trace each
+   drop to its item in PARENT-NOTES, run `npm run baseline:update --
+   --allow-decrease`, and name the drops in the commit. If the permission
+   layer refuses the flag, Derek runs it.
 7. **Close:** tick the row (Fixed, Errata, Commit), note the cost, and
    commit the chapter ("Re-review <Book> chapter N to the A&P standard").
    A new defect class becomes a lint, test, or playbook rule.

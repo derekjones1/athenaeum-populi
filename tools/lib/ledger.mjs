@@ -76,9 +76,10 @@ export function writeLedger(ledger, path) {
  * `validate` returns an error string or null; `decisionOf` names the part of
  * a record two passes must agree on; `toRecord` keeps only what is stored;
  * `validateEntry` is the read-time check on the ledger itself (see
- * `readLedger`).
+ * `readLedger`); `combine(existing, record)` decides what is stored when the
+ * hash already has an entry (default: the incoming record replaces it).
  */
-export function mergeResults({ dir, path, validate, decisionOf, toRecord, validateEntry = null }) {
+export function mergeResults({ dir, path, validate, decisionOf, toRecord, validateEntry = null, combine = (existing, record) => record }) {
   const ledger = readLedger(path, { validate: validateEntry });
   const batch = new Map();
   let bad = 0;
@@ -111,7 +112,7 @@ export function mergeResults({ dir, path, validate, decisionOf, toRecord, valida
       updated += 1;
       console.log(`  updated ${hash}: ${decisionOf(existing)} → ${decisionOf(record)}`);
     }
-    ledger.entries[hash] = record;
+    ledger.entries[hash] = existing ? combine(existing, record) : record;
   }
   writeLedger(ledger, path);
   console.log(`merged ${batch.size} record(s) into ${path}; ${Object.keys(ledger.entries).length} total${updated ? `; ${updated} verdict(s) updated` : ''}`);

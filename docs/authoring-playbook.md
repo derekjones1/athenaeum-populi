@@ -220,7 +220,9 @@ Notation, math, and table conventions are per subject: `docs/subjects/math.md`
 parenthetical citation after the sentence it supports — author, title,
 publication, year, pages — with a bare access URL dropped and a DOI kept.
 Hugo has no footnote apparatus in this template and a citation is source
-content, so it neither moves to the end nor disappears.
+content, so it neither moves to the end nor disappears. Author names,
+initials, title, and journal are copied verbatim ("E.O. List, D.E.
+Berryman", never "List, Berryman").
 
 ## 3. Exercises and components (shortcodes)
 
@@ -480,9 +482,9 @@ challenge and reproduce the work
 {{</* /selfcheck */>}}
 ```
 
-Checkpoints restate the model answer, never extend it — the lint holds each
-clause to the model answer's own words — and contain no `$` math (they are
-checkbox labels).
+Checkpoints come from the model answer, never extend it — the lint holds
+each clause to the model answer's own words — and contain no `$` math (they
+are checkbox labels).
 
 **Sort into bins (`sortbins`)** — categorize 4–12 items into 2–4 labelled
 bins, graded in the browser as the label→bin mapping. Built from a source
@@ -601,8 +603,8 @@ multipart source item expands into one exercise per part.
   exercise group is thin, draw a covering item from the section's Mixed
   Practice or Everyday Math group rather than repeating one skill.
 - **Auto-graded coverage.** Every objective group also needs at least one
-  auto-graded item (`fillin`, `multiplechoice`, `graphplot`, or `textin`)
-  (lint-enforced). A group holding only `selfcheck`s does not
+  auto-graded item (`fillin`, `multiplechoice`, `graphplot`, `textin`, or
+  `sortbins`) (lint-enforced). A group holding only `selfcheck`s does not
   cover its objective, since nothing in it is graded.
 - **Multipart items.** Expand a multipart source exercise (ⓐ–ⓔ) into one
   component per part, kept adjacent inside its objective's group; every part
@@ -769,15 +771,17 @@ grandfather. The working rules:
 - **A rule that fires on sound content is a bug in the rule.** Narrow it, with
   a test for the case it was wrong about — do not add an exemption for the
   page.
-- **End the session with `npm run baseline:update`.** It runs the three
-  counting gates, recounts the `--min-verified`, `--min-replayed`, and
-  `--min-exercises` floors, rewrites each in place in `package.json`, and
-  refuses to lower any of them without an explicit flag. Commit its rewrite
-  with the content. The baselines ratchet differently:
-  `--min-verified` is an exact match (a move either way is news about what the
-  cross-check can read); `--min-replayed` and `--min-exercises` are floors
-  (both counts rise with ordinary authoring; only a drop means a gate went
-  quiet).
+- **End the session with `npm run baseline:update`.** It runs the four
+  counting gates, recounts `--min-verified`, `--min-confirmed`,
+  `--min-replayed`, and `--min-exercises`, rewrites each in place in
+  `package.json`, and refuses to lower any of them without
+  `--allow-decrease`. Commit its rewrite with the content. The baselines
+  ratchet differently: `--min-verified` and `--min-confirmed` are exact (a
+  move either way is news about what the cross-check can read);
+  `--min-replayed` and `--min-exercises` are floors (both counts rise with
+  ordinary authoring; only a drop means a gate went quiet). A deliberate
+  drop — a replaced duplicate, a disclosed deviation, a mirror-rule
+  conversion — is traced to its item and named in the commit.
 
 ## Done checklist
 

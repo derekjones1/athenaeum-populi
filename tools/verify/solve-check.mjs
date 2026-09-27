@@ -71,7 +71,7 @@
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, dirname, join, resolve } from 'node:path';
-import { extractExercises, readLedger } from './answer-ledger.mjs';
+import { SOLVE_NOTE, extractExercises, readLedger } from './answer-ledger.mjs';
 import { maskKeys } from '../lib/content.mjs';
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { normalizeText } from '../lib/openstax-source.mjs';
@@ -294,7 +294,7 @@ export function compareAnswers(answersFile, root, ledger) {
     // against the source — is an independent re-derivation.
     const base = existing
       ? { hash: exercise.hash, verdict: existing.verdict, ...(existing.note ? { note: existing.note } : {}) }
-      : { hash: exercise.hash, verdict: 'ok', note: 'orchestrator solve (solve-check.mjs)' };
+      : { hash: exercise.hash, verdict: 'ok', note: SOLVE_NOTE };
     const flagged = Boolean(entry.alsoDefensible);
 
     if (graded.status === 'unrecognized') {

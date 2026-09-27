@@ -157,6 +157,39 @@ export function validateRecord(record, { requireHash = false } = {}) {
 }
 
 /** The read-time check `readLedger` runs on every entry. */
+/** The note `solve-check.mjs compare` writes on an item that had no record
+ * yet. It says nothing about where the item came from, so a merge never lets
+ * it replace a note that does. */
+export const SOLVE_NOTE = 'orchestrator solve (solve-check.mjs)';
+
+/** A note that says only that the item was solved: SOLVE_NOTE, possibly
+ * followed by `ledger-carry`'s " | carried …" history. */
+export const isPlaceholderNote = (note) => !note || note === SOLVE_NOTE || note.startsWith(`${SOLVE_NOTE} |`);
+
+/**
+ * What a merge stores over an existing record with the SAME verdict. A
+ * record's parts come from different passes — the author's provenance note,
+ * the orchestrator's `solved` — and a merged result file rarely carries both,
+ * so wholesale replacement made the outcome depend on merge order: a compare
+ * run before the author results were merged wrote SOLVE_NOTE over every
+ * author note it later met (every graded item of Anatomy and Physiology
+ * chapters 1–2), and a notes file merged after a solve dropped `solved`. Same hash means the same item text, so an absent
+ * `solved` or a SOLVE_NOTE keeps what the ledger already knows. A changed
+ * verdict is a re-read and replaces the record whole.
+ */
+export function combineRecords(existing, record) {
+  if (existing.verdict !== record.verdict) return record;
+  const note = isPlaceholderNote(record.note) && !isPlaceholderNote(existing.note)
+    ? existing.note
+    : record.note;
+  const solved = record.solved ?? existing.solved;
+  return {
+    verdict: record.verdict,
+    ...(note ? { note } : {}),
+    ...(solved ? { solved } : {}),
+  };
+}
+
 export const validateEntry = (key, record) => (HASH_RE.test(key) ? validateRecord(record) : 'key is not a 16-hex exercise hash');
 
 /** Read the answer ledger, refusing a malformed one (see `validateRecord`). */
@@ -166,7 +199,7 @@ export function readLedger(path = LEDGER_PATH, options = {}) {
 
 function usage(detail) {
   console.error(`answer-ledger: ${detail}`);
-  console.error('usage: node tools/verify/answer-ledger.mjs <check|list|merge|prune|rekey|stats> [root|resultsDir] [--kind k] [--verdict v] [--unverified] [--shard i/n] [--context N] [--min-exercises N] [--max-unverifiable N] [--require-solved prefix[,prefix]] [--ledger path]');
+  console.error('usage: node tools/verify/answer-ledger.mjs <check|list|merge|prune|rekey|stats> [root|resultsDir] [--kind k] [--verdict v] [--unverified] [--shard i/n] [--context N] [--min-exercises N] [--max-unverifiable N] [--require-solved prefix[,prefix]] [--require-provenance prefix[,prefix]] [--ledger path]');
   process.exit(2);
 }
 
@@ -175,7 +208,7 @@ function main() {
   try {
     cli = parseCliArgs(process.argv.slice(2), {
       commands: ['check', 'list', 'merge', 'prune', 'rekey', 'stats'],
-      valueFlags: ['kind', 'verdict', 'shard', 'context', 'min-exercises', 'max-unverifiable', 'require-solved', 'ledger'],
+      valueFlags: ['kind', 'verdict', 'shard', 'context', 'min-exercises', 'max-unverifiable', 'require-solved', 'require-provenance', 'ledger'],
       boolFlags: ['unverified'],
     });
   } catch (error) {
@@ -205,6 +238,7 @@ function main() {
         ...(record.note ? { note: record.note } : {}),
         ...(record.solved ? { solved: record.solved } : {}),
       }),
+      combine: combineRecords,
     });
     return;
   }
@@ -299,6 +333,17 @@ function main() {
     && solvedPrefixes.some((prefix) => e.path.startsWith(prefix))
     && !ledger.entries[e.hash]?.solved);
   const solvedCount = [...unique.values()].filter((e) => ledger.entries[e.hash]?.solved).length;
+  // `--require-provenance prefix[,prefix]`: every record under a prefix says
+  // where its item came from — not only the solve placeholder — and a
+  // Knowledge Check record opens with its `KC <n> <N.M> §` tie. About 3,300
+  // life-sciences notes were lost to the placeholder before this gate
+  // (restored September 26, 2026); `ledger:provenance` derives them.
+  const provenancePrefixes = (flag('require-provenance') ?? '').split(',').map((p) => p.trim()).filter(Boolean);
+  const unprovenanced = [...unique.values()].filter((e) => {
+    const record = ledger.entries[e.hash];
+    if (!record || !provenancePrefixes.some((prefix) => e.path.startsWith(prefix))) return false;
+    return isPlaceholderNote(record.note) || (/(^|[\\/])knowledge-check-\d+-\d+\.md$/.test(e.path) && !record.note.startsWith('KC '));
+  });
 
   if (command === 'stats') {
     const byKind = {};
@@ -340,6 +385,10 @@ function main() {
   if (unsolved.length) {
     const sample = unsolved.slice(0, 5).map((e) => `${e.path}:${e.line} (${e.kind}, ${e.hash})`);
     problems.push(`${unsolved.length} exercise(s) under ${solvedPrefixes.join(', ')} have no orchestrator solve (see tools/verify/solve-check.mjs):\n    ${sample.join('\n    ')}${unsolved.length > 5 ? `\n    …and ${unsolved.length - 5} more` : ''}`);
+  }
+  if (unprovenanced.length) {
+    const sample = unprovenanced.slice(0, 5).map((e) => `${e.path}:${e.line} (${e.kind}) — ${ledger.entries[e.hash].note ?? 'no note'}`);
+    problems.push(`${unprovenanced.length} record(s) under ${provenancePrefixes.join(', ')} carry no provenance note — run \`npm run ledger:provenance -- <root> --out <dir>\` and merge its output:\n    ${sample.join('\n    ')}${unprovenanced.length > 5 ? `\n    …and ${unprovenanced.length - 5} more` : ''}`);
   }
   if (problems.length) {
     console.error(`✖ answer ledger: ${problems.join('\n  ')}`);

@@ -49,6 +49,10 @@ direction of effect, a hormone's source or target, a normal value or range. Igno
 
 ## Report (Markdown, at the path in your task)
 
+Write it with Bash (`cat >> <path> <<'EOF' … EOF`), appending section by
+section — the Write tool refuses report files for subagents, and a reader
+killed mid-task keeps what it appended.
+
 ```
 # Claim pass — <chapter>
 ## Sections read

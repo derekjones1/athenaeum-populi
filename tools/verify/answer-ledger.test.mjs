@@ -437,3 +437,65 @@ test('list prints the dependency an exercise is bound to, and a packet-style con
   assert.doesNotMatch(listed[2].pageContext, /answer="-1"/, 'a neighbour\'s key is masked out of the context window');
   assert.match(listed[2].pageContext, /answer="…"/);
 });
+
+// ---- merge order ---------------------------------------------------------------
+// A record's note and its `solved` come from different passes. Merged
+// wholesale, whichever file landed last won: a compare run before the author
+// results wrote SOLVE_NOTE over the author's provenance, and a notes file
+// merged after the solve dropped `solved`. Same hash, same verdict: keep both.
+test('merge keeps a provenance note and a solve whichever file lands first', async () => {
+  const { SOLVE_NOTE, combineRecords } = await import('./answer-ledger.mjs');
+  const solved = { by: 'orchestrator-solver', result: 'agrees' };
+  const author = { verdict: 'ok', note: 'Source MC fs-id1, solution C verbatim' };
+  const solve = { verdict: 'ok', note: SOLVE_NOTE, solved };
+  assert.deepEqual(combineRecords(author, solve), { ...author, solved }, 'solve after author keeps the note');
+  assert.deepEqual(combineRecords(solve, author), { ...author, solved }, 'author after solve keeps the solve');
+  assert.deepEqual(combineRecords({ verdict: 'ok', note: SOLVE_NOTE }, { verdict: 'ok', note: SOLVE_NOTE, solved }), solve);
+  const reread = { verdict: 'defect', note: 'key contradicts §2' };
+  assert.deepEqual(combineRecords({ ...author, solved }, reread), reread, 'a changed verdict replaces the record whole');
+  const renoted = { verdict: 'ok', note: 'a better provenance note' };
+  assert.deepEqual(combineRecords({ ...author, solved }, renoted), { ...renoted, solved }, 'a real note replaces a note');
+
+  // and the CLI merge applies it
+  const dir = scratch({ 'a.md': PAGE });
+  mkdirSync(join(dir, 'data', 'verification'), { recursive: true });
+  writeFileSync(join(dir, 'data/verification/answer-ledger.json'), JSON.stringify({ schemaVersion: 1, entries: { [A]: author } }));
+  mkdirSync(join(dir, 'solve'));
+  writeFileSync(join(dir, 'solve/s.json'), JSON.stringify({ results: [{ hash: A, ...solve }] }));
+  assert.equal(run(dir, ['merge', 'solve']).code, 0);
+  const ledger = JSON.parse(readFileSync(join(dir, 'data/verification/answer-ledger.json'), 'utf8'));
+  assert.deepEqual(ledger.entries[A], { ...author, solved });
+});
+
+// ---- provenance ----------------------------------------------------------------
+// A life-sciences record must say where its item came from: the solve
+// placeholder alone fails, and a Knowledge Check record must open with its
+// `KC <n> <N.M> §` tie. About 3,300 notes were lost before this gate.
+test('--require-provenance refuses a placeholder note and a check record without its KC tie', async () => {
+  const { SOLVE_NOTE } = await import('./answer-ledger.mjs');
+  const dir = mkdtempSync(join(tmpdir(), 'ledger-'));
+  mkdirSync(join(dir, 'content/life-health-sciences/bio/01-ch'), { recursive: true });
+  mkdirSync(join(dir, 'data/verification'), { recursive: true });
+  writeFileSync(join(dir, 'content/life-health-sciences/bio/01-ch/01-sec.md'), PAGE);
+  writeFileSync(join(dir, 'content/life-health-sciences/bio/knowledge-check-01-01.md'), PAGE.replace('Which is prime?', 'Which is odd?').replace('Solve $2x=8$.', 'Solve $3x=9$.'));
+  const found = extractExercises(join(dir, 'content'));
+  const onCheck = found.filter((e) => e.path.includes('knowledge-check'));
+  const onSection = found.filter((e) => !e.path.includes('knowledge-check'));
+  const write = (noteFor) => writeFileSync(join(dir, 'data/verification/answer-ledger.json'), JSON.stringify({
+    schemaVersion: 1,
+    entries: Object.fromEntries(found.map((e) => [e.hash, { verdict: 'ok', note: noteFor(e) }])),
+  }));
+  const check = () => run(dir, ['check', 'content', '--require-provenance', 'content/life-health-sciences']);
+
+  write((e) => (e.path.includes('knowledge-check') ? 'KC 1 1.1 § Membranes, m1' : 'source exercise ex-1 (confirmed)'));
+  assert.equal(check().code, 0, 'real provenance passes');
+
+  write((e) => (e === onSection[0] ? `${SOLVE_NOTE} | carried Sep 23 2026 (ledger-carry)` : e.path.includes('knowledge-check') ? 'KC 1 1.1 § Membranes, m1' : 'glossary recall: cell (d1)'));
+  const placeholder = check();
+  assert.equal(placeholder.code, 1);
+  assert.match(placeholder.out, /1 record\(s\) under content\/life-health-sciences carry no provenance note/);
+
+  write((e) => (e === onCheck[0] ? 'parent re-read against the module' : e.path.includes('knowledge-check') ? 'KC 1 1.1 § Membranes, m1' : 'glossary recall: cell (d1)'));
+  assert.equal(check().code, 1, 'a check record without its KC tie fails');
+  assert.equal(run(dir, ['check', 'content']).code, 0, 'without the flag the gate is unchanged');
+});

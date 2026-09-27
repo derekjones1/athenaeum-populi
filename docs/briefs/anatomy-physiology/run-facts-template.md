@@ -22,6 +22,10 @@ the playbook, not here. Delete a heading that does not apply.
   page of a section is the next heading's first page too.
 
 ## Per section (one block each)
+Every count is an element count in the raw CNXML (`<exercise `,
+`<figure`, `<footnote`, glossary `<definition>`), never a grep over the
+keys files; a factual claim (a DOI, a link count) is checked before it
+reaches the authors.
 - **N.M** — objectives: K (floor 3K, min 8). Source exercises: a Review
   (MC, note any non-four-option item), b Critical Thinking, c Interactive
   Link = total (all keyed). Glossary definitions: G (→ Key-terms bullets);

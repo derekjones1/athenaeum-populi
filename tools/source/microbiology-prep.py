@@ -14,7 +14,8 @@ Three subcommands, all read-only over the pinned checkout
                          up in the Glossary appendix, provenance in a comment
   glossary <term>…       ad hoc Glossary-appendix lookup
 
-Run per module before the wave (docs/briefs/microbiology/run.md):
+Run per module before a chapter wave (the book is complete and its kit
+retired; `glossary` still serves docs/subjects/microbiology.md):
 
   python3 tools/source/microbiology-prep.py keys  m58846 > $SP/keys-11.7.txt
   python3 tools/source/microbiology-prep.py terms m58846 > $SP/terms-11.7.md

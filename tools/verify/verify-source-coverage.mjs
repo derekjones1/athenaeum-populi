@@ -67,8 +67,9 @@
  *               (the footer's disclosure) under --verbose.
  *   Check Your Understanding fold  (docs/subjects/life-sciences.md, "No
  *               source exercise is ever dropped, and 'duplicate' is a claim
- *               to prove") — an end-matter exercise graded inside a body CYU
- *               item when the two stems are the same question reworded. When
+ *               to prove") — an end-matter exercise folded into a body CYU
+ *               item, graded or selfcheck, when the two stems are the same
+ *               question reworded. When
  *               the matcher itself pairs the exercise with a CYU item the
  *               verdict is `folded` (counted, named under --verbose); when the
  *               rewording defeats it, the fold is a LISTED_EXERCISES entry.
@@ -76,8 +77,8 @@
  *               per label, a two-blank Fill in the Blank as a multiplechoice,
  *               a drawing task as a description: LISTED_EXERCISES entries.
  *   Omission   — the playbooks forbid it outright, with ONE exception:
- *               docs/subjects/microbiology.md's options-that-differ-only-in-
- *               typography rule ("it is omitted, the footer says why"). That
+ *               docs/subjects/life-sciences.md's options-that-differ-only-in-
+ *               typography rule (Multiple choice; the footer says why). That
  *               single case is a LISTED_EXERCISES entry. A footer that names
  *               an omission for any other reason ("the module gives nothing
  *               to answer it with", "duplicates the Art Connection") does not
@@ -165,7 +166,7 @@ export const EXERCISE_CLASSES = Object.freeze([
  *                 item per label; a two-blank Fill in the Blank as a
  *                 multiplechoice)
  *   'omitted'     the one omission a playbook allows (docs/subjects/
- *                 microbiology.md: options that differ only in typography),
+ *                 life-sciences.md: options that differ only in typography),
  *                 its reason in the footer
  * Every entry must still be needed (the exercise otherwise unrendered) and
  * every question it names must still be on the page, or the run fails.
@@ -576,7 +577,7 @@ export function runCoverage(stem, haystack, minRun = RUN) {
 /** The share of a source option list the item prints among its own options
  * or labels (order-free). A reworded stem over the source's own options is
  * the same exercise; so is a select-all turned into a sortbins whose labels
- * are the source options (docs/subjects/microbiology.md). */
+ * are the source options (docs/subjects/life-sciences.md, Multiple choice). */
 export function optionCoverage(sourceOptions, item) {
   if (sourceOptions.length < 2 || !item.options.length) return 0;
   const page = new Set(item.options.map(tight));

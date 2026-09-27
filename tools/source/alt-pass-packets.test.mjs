@@ -14,10 +14,14 @@ import { fileURLToPath } from 'node:url';
 const SCRIPT = path.join(path.dirname(fileURLToPath(import.meta.url)), 'alt-pass-packets.py');
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 
-function build(book) {
+function build(book, ...flags) {
   const out = mkdtempSync(path.join(tmpdir(), 'alt-pass-'));
-  const log = execFileSync('python3', [SCRIPT, book, out], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  const log = execFileSync('python3', [SCRIPT, book, out, ...flags], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
   return { out, log };
+}
+
+function total(log) {
+  return Number(log.match(/^total (\d+)$/m)[1]);
 }
 
 function countTags(book) {
@@ -35,7 +39,7 @@ function countTags(book) {
   return n;
 }
 
-for (const book of ['biology', 'microbiology']) {
+for (const book of ['biology', 'microbiology', 'anatomy-physiology']) {
   test(`${book}: every mediafigure in a chapter directory lands in exactly one packet line`, () => {
     const { out, log } = build(book);
     try {
@@ -45,8 +49,29 @@ for (const book of ['biology', 'microbiology']) {
       assert.match(log, new RegExp(`total ${lines.length}$`, 'm'));
       for (const l of lines) assert.match(l, /^- `content\/[^`]+:\d+` — image `static\/media\/[^`]+` — module m\d+/);
       assert.match(readFileSync(path.join(out, packets[0]), 'utf8'), /`\{\{< mediafigure \.\.\. >\}\}`/);
+      // The CNXML path in the header comes from the source lock, so a new
+      // book needs no entry in the script.
+      const checkout = JSON.parse(readFileSync(path.join(ROOT, 'data/openstax/source-lock.json'), 'utf8'));
+      const repo = Object.values(checkout.bundles).find((b) => book in b.books).repository.split('/').pop();
+      assert.match(readFileSync(path.join(out, packets[0]), 'utf8'), new RegExp(`sources/openstax/${repo}/modules/`));
     } finally {
       rmSync(out, { recursive: true, force: true });
+    }
+  });
+
+  test(`${book}: --longdesc with and without split the figures between them`, () => {
+    const all = build(book);
+    const withLd = build(book, '--longdesc', 'with');
+    const without = build(book, '--longdesc', 'without');
+    try {
+      assert.equal(total(withLd.log) + total(without.log), total(all.log));
+      const lines = (out) => readdirSync(out).flatMap((f) => readFileSync(path.join(out, f), 'utf8').split('\n').filter((l) => l.startsWith('- `content/')));
+      for (const l of lines(without.out)) {
+        const [, file, line] = l.match(/^- `([^`:]+):(\d+)`/);
+        assert.doesNotMatch(readFileSync(path.join(ROOT, file), 'utf8').split('\n')[Number(line) - 1], /\blongdesc=/, l);
+      }
+    } finally {
+      for (const r of [all, withLd, without]) rmSync(r.out, { recursive: true, force: true });
     }
   });
 }
