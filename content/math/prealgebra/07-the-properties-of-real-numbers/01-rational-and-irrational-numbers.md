@@ -175,19 +175,25 @@ number.
 no repeating pattern of digits. Since the number doesn't stop and doesn't
 repeat, it is irrational.
 
-{{< fillin
-  question="How many of these three numbers are irrational: $0.29$, $0.81\overline{6}$, and $2.515115111\ldots$?"
-  answer="1"
-  answerForm="decimal"
-  hint="Test each decimal: one that stops or repeats is rational, and one that does neither is irrational."
+{{< multiplechoice
+  question="Which of these numbers are irrational: $0.29$, $0.81\overline{6}$, $2.515115111\ldots$?"
+  answer="$2.515115111\ldots$ only"
+  hint="A number is irrational when its decimal form neither stops nor repeats; a bar marks a block of digits that repeats forever."
 >}}
+none of the three
+$2.515115111\ldots$ only
+$0.81\overline{6}$ and $2.515115111\ldots$
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="How many of these three numbers are irrational: $0.2\overline{3}$, $0.125$, and $0.418302\ldots$?"
-  answer="1"
-  answerForm="decimal"
-  hint="Apply the stop-or-repeat test to each number, reading the bar and the ellipsis as the example above does."
+{{< multiplechoice
+  question="Which of these numbers are rational: $0.2\overline{3}$, $0.125$, $0.418302\ldots$?"
+  answer="$0.2\overline{3}$ and $0.125$"
+  hint="A rational number's decimal form stops or repeats; read the bar and the ellipsis as the example above does."
 >}}
+$0.125$ only
+$0.2\overline{3}$ and $0.125$
+$0.2\overline{3}$, $0.125$, and $0.418302\ldots$
+{{< /multiplechoice >}}
 
 Let's think about square roots now. Square roots of perfect squares are
 always whole numbers, so they are rational. But the decimal forms of square
@@ -203,19 +209,27 @@ $\sqrt{36}$ (b) $\sqrt{44}$.
 (b) Remember that $6^2 = 36$ and $7^2 = 49$, so $44$ is not a perfect
 square. This means $\sqrt{44}$ is irrational.
 
-{{< fillin
-  question="How many of these two square roots are rational: $\sqrt{81}$ and $\sqrt{17}$?"
-  answer="1"
-  answerForm="decimal"
+{{< multiplechoice
+  question="Which of these square roots are rational: $\sqrt{81}$, $\sqrt{17}$?"
+  answer="$\sqrt{81}$ only"
   hint="A square root of a whole number is rational only when the number under the radical is a perfect square — check each one."
 >}}
+neither
+$\sqrt{81}$ only
+$\sqrt{17}$ only
+both
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="How many of these two square roots are irrational: $\sqrt{116}$ and $\sqrt{121}$?"
-  answer="1"
-  answerForm="decimal"
+{{< multiplechoice
+  question="Which of these square roots are rational: $\sqrt{116}$, $\sqrt{121}$?"
+  answer="$\sqrt{121}$ only"
   hint="Compare each number under the radical with the perfect squares near it."
 >}}
+neither
+$\sqrt{116}$ only
+$\sqrt{121}$ only
+both
+{{< /multiplechoice >}}
 
 ## Classify real numbers
 
@@ -290,19 +304,27 @@ We can summarize the results in a table:
 | $5.9$ | | | ✓ | | ✓ |
 | $-\sqrt{64}$ | | ✓ | ✓ | | ✓ |
 
-{{< fillin
-  question="How many of these numbers are integers: $-3$, $-\sqrt{2}$, $0.\overline{3}$, $\tfrac{9}{5}$, $4$, $\sqrt{49}$?"
-  answer="3"
-  answerForm="decimal"
+{{< multiplechoice
+  question="Which of these numbers are integers: $-3$, $-\sqrt{2}$, $0.\overline{3}$, $\tfrac{9}{5}$, $4$, $\sqrt{49}$?"
+  answer="$-3$, $4$, and $\sqrt{49}$"
   hint="Simplify any square root you can, then test each entry: the integers are the whole numbers, their opposites, and $0$."
 >}}
+$-3$ and $4$
+$4$ and $\sqrt{49}$
+$-3$, $4$, and $\sqrt{49}$
+$-3$, $-\sqrt{2}$, $4$, and $\sqrt{49}$
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="How many of these numbers are whole numbers: $-\sqrt{25}$, $-\tfrac{3}{8}$, $-1$, $6$, $\sqrt{121}$, $2.041975\ldots$?"
-  answer="2"
-  answerForm="decimal"
+{{< multiplechoice
+  question="Which of these numbers are whole numbers: $-\sqrt{25}$, $-\tfrac{3}{8}$, $-1$, $6$, $\sqrt{121}$, $2.041975\ldots$?"
+  answer="$6$ and $\sqrt{121}$"
   hint="Simplify any square root you can, then test each entry against the whole numbers $0, 1, 2, 3, \ldots$"
 >}}
+$6$ only
+$6$ and $\sqrt{121}$
+$-1$, $6$, and $\sqrt{121}$
+$-\sqrt{25}$, $-1$, $6$, and $\sqrt{121}$
+{{< /multiplechoice >}}
 
 ## Key terms
 
@@ -379,48 +401,71 @@ rational
 
 ### Classify different types of real numbers
 
-{{< fillin
-  question="How many of these numbers are whole numbers: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
-  answer="3"
-  answerForm="decimal"
-  hint="Whole numbers are $0, 1, 2, 3, \ldots$ — simplify $\sqrt{36}$ before you decide."
+{{< multiplechoice
+  question="Which of these numbers are whole numbers: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
+  answer="$0$, $\sqrt{36}$, and $9$"
+  hint="Simplify any square root you can, then test each entry against the whole numbers $0, 1, 2, 3, \ldots$"
 >}}
+$9$ only
+$0$ and $9$
+$\sqrt{36}$ and $9$
+$0$, $\sqrt{36}$, and $9$
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="How many of these numbers are integers: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
-  answer="4"
-  answerForm="decimal"
-  hint="The integers are the whole numbers together with their opposites; simplify $\sqrt{36}$, then test each entry."
+{{< multiplechoice
+  question="Which of these numbers are integers: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
+  answer="$-8$, $0$, $\sqrt{36}$, and $9$"
+  hint="The integers are the whole numbers, their opposites, and $0$; simplify any square root you can before you test it."
 >}}
+$-8$, $0$, and $9$
+$-8$, $\sqrt{36}$, and $9$
+$-8$, $0$, $\sqrt{36}$, and $9$
+$-8$, $0$, $\tfrac{12}{5}$, $\sqrt{36}$, and $9$
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="How many of these numbers are irrational: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
-  answer="1"
-  answerForm="decimal"
+{{< multiplechoice
+  question="Which of these numbers are irrational: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
+  answer="$1.95286\ldots$ only"
   hint="A number is irrational when its decimal form neither stops nor repeats; simplify any square root before you test it."
 >}}
+none of the six
+$1.95286\ldots$ only
+$\sqrt{36}$ only
+$1.95286\ldots$ and $\sqrt{36}$
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="How many of these numbers are integers: $-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, $3\tfrac{1}{4}$?"
-  answer="3"
-  answerForm="decimal"
-  hint="Simplify $-\sqrt{100}$ first; then look for the entries with no fractional part."
+{{< multiplechoice
+  question="Which of these numbers are integers: $-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, $3\tfrac{1}{4}$?"
+  answer="$-\sqrt{100}$, $-7$, and $-1$"
+  hint="Simplify any square root you can; the integers are the whole numbers, their opposites, and $0$, with no fractional or decimal part."
 >}}
+$-7$ and $-1$
+$-\sqrt{100}$, $-7$, and $-1$
+$-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, and $-1$
+$-\sqrt{100}$, $-7$, $-1$, and $0.77$
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="How many of these numbers are whole numbers: $-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, $3\tfrac{1}{4}$?"
-  answer="0"
-  answerForm="decimal"
-  hint="Simplify $-\sqrt{100}$, then test each entry against the whole numbers $0, 1, 2, 3, \ldots$"
+{{< multiplechoice
+  question="Which of these numbers are whole numbers: $-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, $3\tfrac{1}{4}$?"
+  answer="none of the six"
+  hint="Simplify any square root you can, then test each entry against the whole numbers $0, 1, 2, 3, \ldots$"
 >}}
+none of the six
+$-\sqrt{100}$ only
+$-7$ and $-1$
+$0.77$ and $3\tfrac{1}{4}$
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="How many of these numbers are rational: $-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, $3\tfrac{1}{4}$?"
-  answer="6"
-  answerForm="decimal"
-  hint="Check each one for a decimal that stops or repeats, or for a way to write it as a ratio of two integers."
+{{< multiplechoice
+  question="Which of these numbers are rational: $-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, $3\tfrac{1}{4}$?"
+  answer="all six"
+  hint="A rational number can be written as a ratio of two integers, and its decimal form stops or repeats; simplify any square root you can."
 >}}
+$-\tfrac{8}{3}$, $0.77$, and $3\tfrac{1}{4}$
+$-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, and $3\tfrac{1}{4}$
+all six
+{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 7.1: Rational and Irrational Numbers](https://openstax.org/books/prealgebra-2e/pages/7-1-rational-and-irrational-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the nested real-number-sets diagram as an accessible inline graphic; omitted the chapter-opening review paragraphs, the Be Prepared quiz, Self Check checklist, media links, Everyday Math exercises, and Writing Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, rephrasing the rational-vs-irrational classification problems as counting questions so they can be graded as math expressions; and adapted selected end-of-section exercises into the interactive Practice block, restating the number-classification tables as counting prompts.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 7.1: Rational and Irrational Numbers](https://openstax.org/books/prealgebra-2e/pages/7-1-rational-and-irrational-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the nested real-number-sets diagram as an accessible inline graphic; omitted the chapter-opening review paragraphs, the Be Prepared quiz, Self Check checklist, media links, Everyday Math exercises, and Writing Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, posing each classification problem as a multiple-choice question that asks which of the listed numbers have one property (rational, irrational, integer, or whole number), with candidate sets of those numbers as the choices; and adapted selected end-of-section exercises into the interactive Practice block, posing the number-classification tables the same way, one question per property.</small>
