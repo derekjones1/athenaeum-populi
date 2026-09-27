@@ -7,6 +7,8 @@ document adds KaTeX notation, the `answerForm` grading vocabulary, and the
 `graphplot` and graph-core figure rules. Read both before authoring a math
 section.
 
+Prealgebra 2e re-reviewed to the A&P standard, completed September 27, 2026.
+
 ## 2. Writing patterns
 
 - **Math:** KaTeX — `$...$` inline, `$$...$$` display (multi-line `$$` fenced on

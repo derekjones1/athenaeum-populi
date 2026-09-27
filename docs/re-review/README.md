@@ -52,7 +52,9 @@ Figure and alt work runs on Opus, never Sonnet.
    September 22 full-scope brief, updated). A knowledge-check row uses it
    with `docs/re-review/brief-knowledge-check.md` (the nearby-leak read,
    keys, accept lists, reverse recall; checks carry no hints; its parent
-   duties add a second checker on replacements). Math: `docs/re-review/brief-math.md` (written and piloted on Prealgebra
+   duties add a second checker on replacements); a math knowledge-check
+   row uses `brief-math.md` with `docs/re-review/brief-knowledge-check-math.md`.
+   Math: `docs/re-review/brief-math.md` (written and piloted on Prealgebra
    chapter 1, September 26, 2026); before launch the parent extracts each
    module's source images to `$SP/media/<mid>/` as the brief's header says,
    and fixers render figures and display math with

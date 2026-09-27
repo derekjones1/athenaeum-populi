@@ -52,12 +52,14 @@ weight: 7
 {{< fillin
   question="Translate the phrase to math notation and then simplify: the sum of 16 and 58."
   answer="74"
+  answerForm="decimal"
   answerDisplay="$16 + 58$; $74$"
 >}}
 
 {{< fillin
   question="Clayton walked 12 blocks to his mother's house, 6 blocks to the gym, and 9 blocks to the grocery store before walking the last 3 blocks home. What was the total number of blocks that Clayton walked?"
   answer="30"
+  answerForm="decimal"
   answerDisplay="30 blocks"
 >}}
 
@@ -72,12 +74,14 @@ weight: 7
 {{< fillin
   question="Translate the phrase to math notation and then simplify: the difference of 32 and 18."
   answer="14"
+  answerForm="decimal"
   answerDisplay="$32 - 18$; $14$"
 >}}
 
 {{< fillin
-  question="Last month, Stan's take-home pay was \$3,816 and his expenses were \$3,472. How much of his take-home pay did Stan have left after he paid his expenses?"
+  question="Last month, Stan's take-home pay was \$3,816 and his expenses were \$3,472. How much of his take-home pay, in dollars, did Stan have left after he paid his expenses?"
   answer="344"
+  answerForm="decimal"
   answerDisplay="\$344"
 >}}
 
@@ -99,6 +103,7 @@ weight: 7
 {{< fillin
   question="Translate the phrase to math notation and then simplify: twice 524."
   answer="1048"
+  answerForm="decimal"
   answerDisplay="$2(524)$; $1{,}048$"
 >}}
 
@@ -111,7 +116,7 @@ weight: 7
 >}}
 
 {{< fillin
-  question="Simplify: $0/9$."
+  question="Simplify: $\tfrac{0}{9}$."
   answer="0"
   answerForm="decimal"
 >}}
@@ -141,6 +146,7 @@ weight: 7
 {{< fillin
   question="Simplify, using the order of operations: $5[2 + 7(9 - 8)]$."
   answer="45"
+  answerForm="decimal"
 >}}
 
 ### 2.2 Evaluate, Simplify, and Translate Expressions
@@ -148,11 +154,13 @@ weight: 7
 {{< fillin
   question="Evaluate $y^3$ when $y = 5$."
   answer="125"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Evaluate $hw$ when $h = 12$ and $w = 3$."
   answer="36"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -166,12 +174,14 @@ weight: 7
 {{< fillin
   question="Solve the equation: $n - 6 = 25$."
   answer="31"
+  answerForm="decimal"
   answerDisplay="$n = 31$"
 >}}
 
 {{< fillin
   question="Translate the sentence into an algebraic equation and then solve it: 15 less than $y$ is 32. Enter the value of $y$."
   answer="47"
+  answerForm="decimal"
   answerDisplay="$y = 47$"
 >}}
 
@@ -180,17 +190,19 @@ weight: 7
 {{< fillin
   question="List all the multiples of 4 that are less than 50, from smallest to largest, separated by commas."
   answer="4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Find all the factors of 30. Enter them from smallest to largest, separated by commas."
   answer="1, 2, 3, 5, 6, 10, 15, 30"
+  answerForm="decimal"
 >}}
 
 ### 2.5 Prime Factorization and the Least Common Multiple
 
 {{< fillin
-  question="Find the prime factorization of 1080. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
+  question="Find the prime factorization of 1,080. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
   answer="2^3 \cdot 3^3 \cdot 5"
   answerForm="prime-product"
   answerDisplay="$2^3 \cdot 3^3 \cdot 5$"
@@ -199,11 +211,13 @@ weight: 7
 {{< fillin
   question="Find the least common multiple of 9 and 15."
   answer="45"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Find the least common multiple of 25 and 35."
   answer="175"
+  answerForm="decimal"
 >}}
 
 ## Chapter 3: Integers
@@ -235,9 +249,10 @@ weight: 7
 >}}
 
 {{< fillin
-  question="Early one morning, the temperature in Syracuse was -8°F. By noon, it had risen $12^\circ$. What was the temperature at noon (in °F)?"
+  question="Early one morning, the temperature in Syracuse was $-8^\circ\text{F}$. By noon, it had risen $12^\circ$. What was the temperature at noon, in degrees Fahrenheit?"
   answer="4"
-  answerDisplay="4°F"
+  answerForm="decimal"
+  answerDisplay="$4^\circ\text{F}$"
 >}}
 
 ### 3.3 Subtract Integers
@@ -251,11 +266,13 @@ weight: 7
 {{< fillin
   question="Evaluate $35 - a$ when $a = -4$."
   answer="39"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Translate into an algebraic expression and simplify: the difference of $-7$ and $-4$. Give the simplified value."
   answer="-3"
+  answerForm="decimal"
   answerDisplay="$-7 - (-4) = -3$"
 >}}
 
@@ -284,16 +301,19 @@ weight: 7
 {{< fillin
   question="Solve: $n + 6 = 5$"
   answer="-1"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Solve: $-9r = -54$"
   answer="6"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Translate and solve: Eight less than $y$ is $-32$. Enter the value of $y$."
   answer="-24"
+  answerForm="decimal"
   answerDisplay="$y - 8 = -32$; $y = -24$"
 >}}
 
@@ -302,16 +322,16 @@ weight: 7
 ### 4.1 Visualize Fractions
 
 {{< fillin
-  question="Convert the mixed number to an improper fraction: $3\tfrac{2}{7}$"
-  answer="\frac{23}{7}"
+  question="Convert the mixed number to an improper fraction: $9\tfrac{4}{5}$"
+  answer="\frac{49}{5}"
   answerForm="improper-fraction lowest-terms"
-  answerDisplay="$\tfrac{23}{7}$"
+  answerDisplay="$\tfrac{49}{5}$"
 >}}
 
 {{< fillin
   question="Convert the improper fraction to a mixed number: $\tfrac{63}{11}$"
   answer="5\frac{8}{11}"
-  answerForm="mixed-number"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$5\tfrac{8}{11}$"
 >}}
 
@@ -326,7 +346,7 @@ weight: 7
 {{< fillin
   question="Simplify: $\tfrac{5}{20}$"
   answer="\frac{1}{4}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{4}$"
 >}}
 
@@ -352,7 +372,7 @@ weight: 7
 >}}
 
 {{< fillin
-  question="Simplify the complex fraction: $\tfrac{p/2}{q/5}$"
+  question="Simplify the complex fraction: $\cfrac{\tfrac{p}{2}}{\tfrac{q}{5}}$"
   answer="\frac{5p}{2q}"
   answerForm="reduced-fraction"
   answerDisplay="$\tfrac{5p}{2q}$"
@@ -396,7 +416,7 @@ weight: 7
 >}}
 
 {{< fillin
-  question="Simplify the complex fraction: $\tfrac{\left(\tfrac{5}{14} + \tfrac{1}{8}\right)}{\tfrac{9}{56}}$"
+  question="Simplify the complex fraction: $\cfrac{\tfrac{5}{14} + \tfrac{1}{8}}{\tfrac{9}{56}}$"
   answer="3"
   answerForm="decimal"
 >}}
@@ -429,18 +449,21 @@ weight: 7
 {{< fillin
   question="Solve the equation: $y + \tfrac{3}{5} = \tfrac{7}{5}$"
   answer="\frac{4}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$y = \tfrac{4}{5}$"
 >}}
 
 {{< fillin
   question="Solve the equation: $f + \left(-\tfrac{2}{3}\right) = \tfrac{5}{12}$"
   answer="\frac{13}{12}"
+  answerForm="improper-fraction lowest-terms"
   answerDisplay="$f = \tfrac{13}{12}$"
 >}}
 
 {{< fillin
   question="Solve the equation: $-\tfrac{2}{3} c = 18$"
   answer="-27"
+  answerForm="decimal"
   answerDisplay="$c = -27$"
 >}}
 
@@ -458,11 +481,13 @@ weight: 7
 {{< fillin
   question="Round $16.749$ to the nearest tenth."
   answer="16.7"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Round $16.749$ to the nearest hundredth."
   answer="16.75"
+  answerForm="decimal"
 >}}
 
 ### 5.2 Decimal Operations
@@ -485,6 +510,13 @@ weight: 7
   answerForm="decimal"
 >}}
 
+{{< fillin
+  question="Three friends went out to dinner and agreed to split the bill evenly. The bill was \$79.35. How much, in dollars, should each person pay?"
+  answer="26.45"
+  answerForm="decimal"
+  answerDisplay="\$26.45"
+>}}
+
 ### 5.3 Decimals and Fractions
 
 {{< fillin
@@ -494,7 +526,7 @@ weight: 7
 >}}
 
 {{< fillin
-  question="Simplify: $1.6 + \tfrac{3}{8}$"
+  question="Simplify: $1.6 + \tfrac{3}{8}$. Enter the answer as a decimal."
   answer="1.975"
   answerForm="decimal"
 >}}
@@ -504,17 +536,13 @@ weight: 7
 {{< fillin
   question="Solve: $m + 3.7 = 2.5$"
   answer="-1.2"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Solve: $-6.5y = -57.2$"
   answer="8.8"
->}}
-
-{{< fillin
-  question="Three friends went out to dinner and agreed to split the bill evenly. The bill was \$79.35. How much, in dollars, should each person pay?"
-  answer="26.45"
-  answerDisplay="\$26.45"
+  answerForm="decimal"
 >}}
 
 ### 5.5 Averages and Probability
@@ -522,16 +550,19 @@ weight: 7
 {{< fillin
   question="The ages, in months, of 10 children in a preschool class are: 55, 55, 50, 51, 52, 50, 53, 51, 55, 49. Find the mean."
   answer="52.1"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="The ages, in months, of 10 children in a preschool class are: 55, 55, 50, 51, 52, 50, 53, 51, 55, 49. Find the median."
   answer="51.5"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="The ages, in months, of 10 children in a preschool class are: 55, 55, 50, 51, 52, 50, 53, 51, 55, 49. Find the mode."
   answer="55"
+  answerForm="decimal"
 >}}
 
 ### 5.6 Ratios and Rate
@@ -546,12 +577,14 @@ weight: 7
 {{< fillin
   question="Laundry detergent comes in two sizes: 64 ounces for \$10.99 or 48 ounces for \$8.49. Find the unit price, in dollars per ounce, of the 64-ounce size. Round to the nearest thousandth of a dollar."
   answer="0.172"
+  answerForm="decimal"
   answerDisplay="\$0.172 per ounce"
 >}}
 
 {{< fillin
   question="Laundry detergent comes in two sizes: 64 ounces for \$10.99 or 48 ounces for \$8.49. Find the unit price, in dollars per ounce, of the 48-ounce size. Round to the nearest thousandth of a dollar."
   answer="0.177"
+  answerForm="decimal"
   answerDisplay="\$0.177 per ounce"
 >}}
 
@@ -572,6 +605,7 @@ weight: 7
 {{< fillin
   question="Yanet wants a square patio in her backyard. She has 225 square feet of tile. How long, in feet, can a side of the patio be?"
   answer="15"
+  answerForm="decimal"
   answerDisplay="15 feet"
 >}}
 
@@ -593,36 +627,37 @@ weight: 7
 >}}
 
 {{< fillin
-  question="Convert $\tfrac{1}{3}$ to a percent. Round to 3 decimal places if needed."
-  answer="33.333\%"
+  question="According to the Centers for Disease Control, $\tfrac{2}{5}$ of adults do not take a vitamin or supplement. Convert $\tfrac{2}{5}$ to a percent. Enter the percent, including the $\%$ sign."
+  answer="40\%"
   answerForm="percent"
-  answerDisplay="33.333%"
->}}
-
-{{< fillin
-  question="65 is what percent of 260?"
-  answer="25\%"
-  answerForm="percent"
-  answerDisplay="25%"
+  answerDisplay="40%"
 >}}
 
 ### 6.2 Solve General Applications of Percent
 
 {{< fillin
-  question="When Aurelio and his family ate dinner at a restaurant, the bill was \$83.50. Aurelio wants to leave 20% of the total bill as a tip. How much should the tip be?"
+  question="65 is what percent of 260? Enter the percent, including the $\%$ sign."
+  answer="25\%"
+  answerForm="percent"
+  answerDisplay="25%"
+>}}
+
+{{< fillin
+  question="When Aurelio and his family ate dinner at a restaurant, the bill was \$83.50. Aurelio wants to leave 20% of the total bill as a tip. How much, in dollars, should the tip be?"
   answer="16.7"
+  answerForm="decimal"
   answerDisplay="\$16.70"
 >}}
 
 {{< fillin
-  question="Jorge got a raise in his hourly pay, from \$19.00 to \$19.76. Find the percent increase."
+  question="Jorge got a raise in his hourly pay, from \$19.00 to \$19.76. Find the percent increase. Enter the percent, including the $\%$ sign."
   answer="4\%"
   answerForm="percent"
   answerDisplay="4%"
 >}}
 
 {{< fillin
-  question="The total number of vehicles on one freeway dropped from 84,000 to 74,000. Find the percent decrease. Round to the nearest tenth of a percent."
+  question="The total number of vehicles on one freeway dropped from 84,000 to 74,000. Find the percent decrease. Round to the nearest tenth of a percent, and enter the percent, including the $\%$ sign."
   answer="11.9\%"
   answerForm="percent"
   answerDisplay="11.9%"
@@ -631,41 +666,44 @@ weight: 7
 ### 6.3 Solve Sales Tax, Commission, and Discount Applications
 
 {{< fillin
-  question="Andy bought a piano for \$4,600. The sales tax on the purchase was \$333.50. Find the sales tax rate."
+  question="Andy bought a piano for \$4,600. The sales tax on the purchase was \$333.50. Find the sales tax rate. Enter the percent, including the $\%$ sign."
   answer="7.25\%"
   answerForm="percent"
   answerDisplay="7.25%"
 >}}
 
 {{< fillin
-  question="Mara received \$31.80 commission when she sold a \$795 suit. What was her rate of commission?"
+  question="Mara received \$31.80 commission when she sold a \$795 suit. What was her rate of commission? Enter the percent, including the $\%$ sign."
   answer="4\%"
   answerForm="percent"
   answerDisplay="4%"
 >}}
 
 {{< fillin
-  question="Aya bought a pair of shoes that was on sale for \$30 off. The original price of the shoes was \$75. Find the sale price."
+  question="Aya bought a pair of shoes that was on sale for \$30 off. The original price of the shoes was \$75. Find the sale price, in dollars."
   answer="45"
+  answerForm="decimal"
   answerDisplay="\$45"
 >}}
 
 {{< fillin
-  question="Oxana bought a dresser at a garage sale for \$20. She refinished it, then added a 250% markup before advertising it for sale. What price did she ask for the dresser?"
+  question="Oxana bought a dresser at a garage sale for \$20. She refinished it, then added a 250% markup before advertising it for sale. What price, in dollars, did she ask for the dresser?"
   answer="70"
+  answerForm="decimal"
   answerDisplay="\$70"
 >}}
 
 ### 6.4 Solve Simple Interest Applications
 
 {{< fillin
-  question="Find the principal invested if \$660 interest was earned in 5 years at an interest rate of 3%."
+  question="Find the principal invested, in dollars, if \$660 interest was earned in 5 years at an interest rate of 3%."
   answer="4400"
+  answerForm="decimal"
   answerDisplay="\$4,400"
 >}}
 
 {{< fillin
-  question="Brenda borrowed \$400 from her brother. Two years later, she repaid the \$400 plus \$50 interest. What was the rate of interest?"
+  question="Brenda borrowed \$400 from her brother. Two years later, she repaid the \$400 plus \$50 interest. What was the rate of interest? Enter the percent, including the $\%$ sign."
   answer="6.25\%"
   answerForm="percent"
   answerDisplay="6.25%"
@@ -676,17 +714,20 @@ weight: 7
 {{< fillin
   question="Solve the proportion: $\tfrac{x}{36} = \tfrac{5}{9}$."
   answer="20"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="An 8-ounce serving of ice cream has 272 calories. If Lavonne eats 10 ounces of ice cream, how many calories does she get?"
   answer="340"
+  answerForm="decimal"
   answerDisplay="340 calories"
 >}}
 
 {{< fillin
-  question="Solve for $a$: $\tfrac{12}{a} = -\tfrac{15}{65}$."
+  question="Solve for $a$: $\tfrac{12}{a} = \tfrac{-15}{65}$."
   answer="-52"
+  answerForm="decimal"
 >}}
 
-<small>This knowledge check is adapted from the Chapter 1–6 [Review Exercises and Practice Tests](https://openstax.org/books/prealgebra-2e/pages/1-review-exercises) of Prealgebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer and fill-in-the-symbol questions as value and full-inequality questions, and took all answers from the book's Answer Key.</small>
+<small>This knowledge check is adapted from the Chapter 1–6 [Review Exercises and Practice Tests](https://openstax.org/books/prealgebra-2e/pages/1-review-exercises) of Prealgebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test and Review Exercises, converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer and fill-in-the-symbol questions as value and full-inequality questions, and took all answers from the book's Answer Key.</small>
