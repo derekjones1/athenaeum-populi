@@ -235,7 +235,7 @@ graded form still grades correct (so `accept` ADDITIONS carry, while a
 removal or a new key does not); an item whose `dependency` block — the
 figure or table it names — changed is re-solved, since the solver read
 that block. The rule is `tools/verify/ledger-carry.mjs`: take
-`npm run ledger:carry -- snapshot content > $SP/ledger-before.json` BEFORE
+`npm run ledger:carry --silent -- snapshot content > $SP/ledger-before.json` BEFORE
 the sweep edits anything, then `npm run ledger:carry -- plan
 $SP/ledger-before.json content --out $SP/carry` writes a merge-ready
 `results/` directory and a `resolve-list.json` of what must be re-solved or

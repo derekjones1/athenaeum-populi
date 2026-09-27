@@ -61,8 +61,13 @@ Figure and alt work runs on Opus, never Sonnet.
    the pilot chapter averaged 25 fixes a section. The life-sciences rows cost about
    60–80k Opus fixer tokens per section, a shared Fable solve of 50–150k
    per batch of rows, and about 5k per knowledge-check item.
-1. **Snapshot** before any edit: `npm run ledger:carry -- snapshot content
-   > $SP/ledger-before.json`.
+1. **Snapshot** before any edit: `npm run ledger:carry --silent -- snapshot
+   content > $SP/ledger-before.json` (without `--silent` npm's script header
+   lands in the JSON), in the foreground and never chained
+   after a background job (a late job that re-ran it overwrote the Prealgebra
+   chapters 2–11 snapshot with a post-edit one). If it is lost, rebuild it
+   from HEAD: `git archive HEAD content | tar -x -C $SP/headtree`, then run
+   the snapshot inside `$SP/headtree`.
 2. **Fan out:** one Opus agent per two or three sections, fixing in place,
    reporting defects by class in ten lines, the report appended as it goes.
    Briefs forbid every git command, read-only ones included (one shared

@@ -70,7 +70,7 @@ the first unit of a new task, the parent opens the image for one of its
    erratum — reported to Derek, not an alt fix.
 4. Zero-flag packets get a parent spot-check of two figures: the two
    longest `longdesc`s, or in an alt-only packet two diagrams.
-5. Close-out: take `npm run ledger:carry -- snapshot content >
+5. Close-out: take `npm run ledger:carry --silent -- snapshot content >
    $SP/ledger-before.json` before the first edit and run `plan` after each
    batch — its resolve list is exactly the items re-hashed through their
    figure. `npm run lint` after each wave (rewrites cross the
