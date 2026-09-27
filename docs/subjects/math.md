@@ -130,7 +130,7 @@ names):
 | `single-term` | one monomial: one coefficient, each variable once, no written $\cdot$, no top-level $+$, no $\,^0$ factor |
 | `single-fraction` | one quotient, no $\div$ and no top-level $+$; reduced when both halves are monomials |
 | `reduced-fraction` | exactly one $\tfrac{a}{b}$ with no common polynomial or integer factor across the bar — for "Simplify $\frac{x^2-x-2}{x^2-3x+2}$"; a half the checker cannot read as an integer-coefficient polynomial passes on its value alone |
-| `no-like-terms` | a sum in which no two terms share a variable-and-power signature |
+| `no-like-terms` | a sum in which no two terms share a variable-and-power signature, and at most one written constant term (`16x+9+8` is not combined) |
 | `polynomial` | no fraction bar at all — for a difference of fractions answering to a polynomial |
 | `distributed` | no parentheses left to multiply out |
 | `simplified-radical` | power-free radicands (perfect $n$th-power factors extracted, sign included: $\sqrt[3]{-108}$ fails on its 27), like radicals combined, nothing radical under a fraction bar, no unevaluated numeral arithmetic or fraction under a radical ($\sqrt{64+225}$, $\sqrt{\tfrac{25}{16}}$), no same-index product of radicals in one top-level term, explicit ($\sqrt{3}\cdot\sqrt{6}$) or juxtaposed ($\sqrt[4]{12y^3}\sqrt[4]{8y^3}$ — rationalized-fraction numerators keep theirs), and no fractional/decimal exponents or decimal literals (radical notation is the form) |
@@ -147,6 +147,7 @@ names):
 | `evaluated-trig` | no trigonometric function left ($\sin$, $\cos$, $\tan$, $\csc$, $\sec$, $\cot$, and their $\arcsin$/$\sin^{-1}$ inverses) — for "find the exact value of $\cos\tfrac{\pi}{4}$" |
 | `single-trig-function` | exactly one trigonometric application written — for "simplify $(\tan t)(\cos t)$", whose answer $\sin t$ is value-equal to the printed product (`evaluated-trig` cannot serve: the answer IS a trig function). A coefficient is allowed ($2\sin t$) |
 | `evaluated-logarithm` | no logarithm left — for "evaluate $\log_2 8$". Same predicate as `exponential-form`, kept apart because its feedback names evaluating rather than converting |
+| `translation` | the key's own writing — same operands, same order, either side of the `=` — for "translate into an equation/proportion", where any true equation (`13=13`, `y=12`) grades equal in value. The one token that reads the key |
 | `degrees` | one term, ending in $^\circ$, on a plain numeric head — for "convert $\tfrac{5\pi}{4}$ radians to degrees", where the engine grades the two spellings equal |
 | `radians` | no degree symbol anywhere — the mirror ask |
 | `denominator:<n>` | that exact denominator — for equivalent-fraction asks, which are deliberately **not** reduced |

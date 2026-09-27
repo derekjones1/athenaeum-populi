@@ -528,6 +528,65 @@ const containsLogarithm = (expr) => (
     : (expr.ops ?? []).some(containsLogarithm)
 );
 
+/**
+ * The FOURTH class, found by the Prealgebra 4.2 re-review (September 26,
+ * 2026): `isEqual` never returns once an operand multiplies a non-integer
+ * number by a quotient with a symbolic divisor — the half-finished
+ * `\frac{2}{5}\cdot\frac{9}{y}` a learner types on the way to
+ * `\frac{18}{5y}`, against ANY comparand (`x` included). `simplify` and
+ * `N()` return. Measured against the pinned engine:
+ *
+ *   `\frac{2}{5}\cdot\frac{9}{y}`   — hangs     `2\cdot\frac{9}{y}` — returns
+ *   `0.4\cdot\frac{9}{y}`            — hangs     `\frac{2}{5}\cdot\frac{1}{y}` — returns
+ *   `\frac{2}{5}\cdot\frac{9}{y+1}` — hangs     `\frac{2}{5}y` — returns
+ */
+function fractionTimesSymbolQuotient(expr) {
+  if (expr.operator === 'Multiply') {
+    const ops = expr.ops ?? [];
+    const fractional = ops.some((op) => op.isNumberLiteral && !Number.isInteger(op.re));
+    if (fractional && ops.some((op) => !op.isNumberLiteral && symbolDenominator(op))) return true;
+  }
+  return (expr.ops ?? []).some(fractionTimesSymbolQuotient);
+}
+
+/**
+ * Numeral arithmetic left written out — the unfinished step a shape token
+ * must refuse, which the engine folds before any parse-based predicate sees
+ * it (found by the Prealgebra chapters 2–11 re-review, September 2026):
+ *
+ * - a product of two numerals: `6\cdot x+6\cdot 8`, `2\times(-3)y`;
+ * - arithmetic inside an exponent: `x^{8-(-3)}`, `\frac{1}{y^{7-2}}`;
+ * - a numeral raised to a power (not for `single-power`, whose base may be
+ *   a numeral): `(-14)^2x^2` for `196x^2`.
+ */
+const NUMERAL_PRODUCT = /\d\s*(?:\\cdot|\\times|\*)\s*\(?\s*-?\s*\d/;
+const EXPONENT_ARITHMETIC = /\^\s*\{[^{}]*\d\s*(?:[-+*]|\\cdot|\\times)\s*\(?\s*-?\s*\d[^{}]*\}/;
+const NUMERAL_POWER = /(?:^|[^\w\\}])(?:\(\s*-?\s*\d+(?:\.\d+)?\s*\)|\d+(?:\.\d+)?)\s*\^(?!\s*\{?\s*\\circ)/;
+/** The braced numerator and denominator of a leading `\frac{…}{…}`, or []. */
+function fracHalves(bare) {
+  const head = bare.match(/^\\[tdc]?frac\s*/);
+  if (!head) return [];
+  const halves = [];
+  let i = head[0].length;
+  for (let k = 0; k < 2; k += 1) {
+    while (bare[i] === ' ') i += 1;
+    if (bare[i] !== '{') return [];
+    let depth = 0;
+    const start = i + 1;
+    for (; i < bare.length; i += 1) {
+      if (bare[i] === '{') depth += 1;
+      else if (bare[i] === '}') { depth -= 1; if (depth === 0) break; }
+    }
+    if (depth !== 0) return [];
+    halves.push(bare.slice(start, i));
+    i += 1;
+  }
+  return halves;
+}
+const writesNumeralProduct = (bare) => NUMERAL_PRODUCT.test(bare);
+const writesExponentArithmetic = (bare) => EXPONENT_ARITHMETIC.test(bare);
+const writesNumeralPower = (bare) => NUMERAL_POWER.test(bare);
+
 /** A quotient whose divisor holds a symbol: `\frac{3}{x}`, `\frac{3}{x+1}`, `x^{-1}`. */
 function symbolDenominator(expr) {
   if (expr.operator === 'Divide' && containsSymbol(expr.ops[1])) return true;
@@ -775,7 +834,9 @@ function equivalent(studentExpr, answerExpr) {
     // both entry points at once.
     if (radicalDenominator(studentExpr) || radicalDenominator(answerExpr)
       || logarithmOverSymbolDenominator(studentExpr)
-      || logarithmOverSymbolDenominator(answerExpr)) {
+      || logarithmOverSymbolDenominator(answerExpr)
+      || fractionTimesSymbolQuotient(studentExpr)
+      || fractionTimesSymbolQuotient(answerExpr)) {
       return numericallyEquivalent(studentExpr, answerExpr);
     }
     if (studentExpr.isEqual(answerExpr) === true) return true;
@@ -1785,6 +1846,45 @@ function evaluatesToZero(term) {
   }
 }
 
+/**
+ * A written term worth one fixed rational number, however it is dressed: `8`,
+ * `8\sqrt1`, `8\cdot x^0`. Decided by evaluation at sample points, like
+ * evaluatesToZero; a term that cannot be evaluated is not a constant (the
+ * safe direction — it never costs a correct answer its credit). Only a
+ * RATIONAL real value counts: `2\sqrt3`, `\pi`, and the `-5i` of `2-5i` are
+ * not like terms of a plain number, so `5+2\sqrt3` and `2-5i` stay combined.
+ */
+const isRationalValue = (value) => {
+  if (value.isNumberLiteral !== true || !Number.isFinite(value.re) || value.im !== 0) return false;
+  for (let d = 1; d <= 1000; d += 1) {
+    const scaled = value.re * d;
+    if (Math.abs(scaled - Math.round(scaled)) < 1e-9 * Math.max(1, Math.abs(scaled))) return true;
+  }
+  return false;
+};
+function isConstantTerm(term) {
+  try {
+    const expr = parseLatex(preprocess(term));
+    if (!expr.isValid) return false;
+    const vars = expr.unknowns;
+    if (vars.length === 0) return isRationalValue(expr.N());
+    const values = [];
+    for (let i = 0; i < SAMPLE_POINTS.length && values.length < 3; i += 1) {
+      const assignment = {};
+      vars.forEach((name, j) => {
+        assignment[name] = SAMPLE_POINTS[(i + 2 * j) % SAMPLE_POINTS.length];
+      });
+      const value = expr.subs(assignment).N();
+      if (value.isNumberLiteral !== true || !Number.isFinite(value.re) || !Number.isFinite(value.im)) continue;
+      values.push(value);
+    }
+    return values.length === 3 && isRationalValue(values[0])
+      && values.every((value) => sampleIsZero(ce.box(['Subtract', value, values[0]]).N()));
+  } catch {
+    return false;
+  }
+}
+
 function isZeroTerm(term) {
   const head = ZERO_TERM_HEAD.exec(term);
   if (head) {
@@ -2115,7 +2215,14 @@ const WRITES_A_DECIMAL = /\d\s*\.|\.\s*\d/;
 
 const FORM_PREDICATES = {
   fraction: (latex) => asFraction(latex) !== null,
-  decimal: (latex) => asDecimal(latex) !== null,
+  // An ordered pair keyed with numbers — "(-1,-6)" — is a decimal in each
+  // coordinate: `(-1,2(-1)-4)` is the substitution left unworked.
+  decimal: (latex) => {
+    if (asDecimal(latex) !== null) return true;
+    // bareLatex has already stripped the pair's enclosing parentheses.
+    const members = splitTopLevelCommas(stripGroupingCommas(bareLatex(latex)));
+    return members.length >= 2 && members.every((member) => asDecimal(member) !== null);
+  },
   // "Enter the percent, including the % sign": value grading reads 62% and
   // 0.62 as the same number, so the shape IS the exercise.
   //
@@ -2577,10 +2684,13 @@ const FORM_PREDICATES = {
   // "Simplify: $3x^2+7x+9+7x^2+9x+8$" prints a sum worth exactly its own
   // combined form, so again only the shape separates them — here, whether two
   // terms share a variable-and-power signature. The engine keeps `3x^2` and
-  // `7x^2` as distinct terms of the sum, which is what makes this checkable;
-  // it does fold bare constants, so a repeated *number* is already gone by the
-  // time the predicate runs and cannot be required.
+  // `7x^2` as distinct terms of the sum, which is what makes this checkable.
+  // It does fold bare constants — `16x+9+8` parses to `16x+17`, its own
+  // answer — so two written constant terms are read off the LaTeX instead.
   'no-like-terms': (latex) => {
+    const constants = splitTopLevelTerms(bareLatex(latex))
+      .filter((term) => term.trim() && isConstantTerm(term.trim().replace(/^[+-]\s*/, '')));
+    if (constants.length > 1) return false;
     let expr;
     try {
       expr = parseLatex(preprocess(latex));
@@ -2625,6 +2735,7 @@ const FORM_PREDICATES = {
   // parsed exactly as it was written.
   expanded: (latex) => {
     const bare = bareLatex(latex);
+    if (writesNumeralProduct(bare) || writesExponentArithmetic(bare) || writesNumeralPower(bare)) return false;
     const terms = loadBearingTerms(bare);
     const written = terms.length === 1 && terms[0] !== bare ? terms[0] : latex;
     try {
@@ -2651,6 +2762,7 @@ const FORM_PREDICATES = {
     // asked to remove ("Simplify: $7x^2y^0$" → `7x^2`); the engine folds it, so
     // it too has to be caught on the LaTeX.
     if (/\^\s*\{?\s*0\s*\}?/.test(bare)) return false;
+    if (writesNumeralProduct(bare) || writesExponentArithmetic(bare) || writesNumeralPower(bare)) return false;
     let depth = 0;
     for (let i = 0; i < bare.length; i += 1) {
       if (bare[i] === '{' || bare[i] === '(') depth += 1;
@@ -2678,6 +2790,10 @@ const FORM_PREDICATES = {
   'single-fraction': (latex) => {
     const bare = bareLatex(latex).replace(/^[-−]\s*/, '');
     if (/\\div/.test(bare) || !/^\\[tdc]?frac/.test(bare)) return false;
+    if (writesNumeralProduct(bare) || writesExponentArithmetic(bare)) return false;
+    // Each half has its like terms combined: `\frac{3p+6p}{8}` is the
+    // half-worked `\frac{9p}{8}` (the engine folds the numerator first).
+    if (fracHalves(bare).some((half) => !FORM_PREDICATES['no-like-terms'](half))) return false;
     let depth = 0;
     for (let i = 0; i < bare.length; i += 1) {
       if (bare[i] === '{') depth += 1;
@@ -3101,6 +3217,22 @@ const FORM_PREDICATES = {
   // a conversion the learner was never asked to make. The phrase is the
   // difference, exactly as `single-power` exists apart from `lowest-terms`.
   'evaluated-logarithm': (latex) => !/\\log|\\ln\b/.test(bareLatex(latex)),
+  // "Translate into an algebraic equation: The sum of $7$ and $6$ gives $13$"
+  // is keyed `7+6=13`, and ANY true numeric equation — `13=13`, `10+3=13` —
+  // is equivalent to it in value, as `y=12` is to `2(y-4)=16`. The ask is the
+  // writing itself, so the response must be the key as written: the same
+  // operands in the same order (a translation keeps the sentence's order),
+  // up to spacing, multiplication and division spellings, implicit
+  // multiplication, and which side of the `=` each half sits on. The only
+  // predicate that reads the key; with no key to compare it admits nothing.
+  translation: (latex, answer) => {
+    if (answer === undefined) return false;
+    const student = translationSides(latex);
+    const key = translationSides(answer);
+    if (!student || !key || student.length !== key.length) return false;
+    if (student.join('=') === key.join('=')) return true;
+    return key.length === 2 && student[0] === key[1] && student[1] === key[0];
+  },
   // "Convert $\tfrac{5\pi}{4}$ radians to degrees" answers $225^\circ$, and
   // the engine converts `^\circ` as an exact operator — $225^\circ$ and
   // $\tfrac{5\pi}{4}$ are the SAME value to it, so the printed subject grades
@@ -3153,6 +3285,38 @@ function writtenSolvedFor(latex, variable) {
   const isolated = (lone, rest) => lone === variable
     && !rest.replace(/\\[a-zA-Z]+/g, ' ').includes(variable);
   return isolated(sides[0], sides[1]) || isolated(sides[1], sides[0]);
+}
+
+/**
+ * The written sides of an equation, normalized for the `translation` form:
+ * spacing, `\cdot`/`\times`/`*`, `\div`/`/`/`\frac`, a parenthesized
+ * single term, braces around one character, and implicit multiplication all
+ * read alike, so `2(y-4)=16` and `2\cdot\left(y-4\right)=16` are one
+ * writing. null when there is no `=` at all.
+ */
+function translationSides(latex) {
+  let text = bareLatex(latex)
+    .replace(/[−–]/g, '-')
+    .replace(/\\(?:cdot|times|ast)|×|·/g, '*')
+    .replace(/\\div|÷/g, '/')
+    .replace(/(\d),(?=\d{3}\b)/g, '$1')
+    .replace(/\\\$/g, '')
+    .replace(/\s+/g, '')
+    // `2.50` and `2.5` are one numeral: a price written either way.
+    .replace(/(\d\.\d*?)0+(?!\d)/g, '$1')
+    .replace(/(\d)\.(?!\d)/g, '$1');
+  for (let i = 0; i < 4; i += 1) {
+    text = text.replace(/\\[tdc]?frac(?:\{([^{}]*)\}|(\w))(?:\{([^{}]*)\}|(\w))/g,
+      (_, a1, a2, b1, b2) => `(${a1 ?? a2})/(${b1 ?? b2})`);
+  }
+  text = text.replace(/\{(\w)\}/g, '$1');
+  for (let i = 0; i < 4; i += 1) text = text.replace(/\(([\w.]+)\)/g, '$1');
+  text = text
+    .replace(/([\w.)])(?=\()/g, '$1*')
+    .replace(/(\))(?=[\w])/g, '$1*')
+    .replace(/(\d)(?=[a-zA-Z])/g, '$1*');
+  const sides = text.split(/=/);
+  return sides.length >= 2 && sides.every(Boolean) ? sides : null;
 }
 
 const DENOMINATOR_TOKEN = /^denominator:(\d+)$/;
@@ -3216,6 +3380,7 @@ const FORM_PHRASES = {
   'evaluated-trig': 'as an exact value, with the trigonometric function evaluated',
   'single-trig-function': 'as a single trigonometric function',
   'evaluated-logarithm': 'as a number, with the logarithm evaluated',
+  translation: 'as the sentence reads: the same numbers and operations, in the order the words give them',
   degrees: 'in degrees, with the degree symbol',
   radians: 'in radians, not degrees',
 };
@@ -3237,7 +3402,7 @@ export function describeAnswerForm(spec) {
  * Is `studentRaw` written in every form its exercise requires? Value equality
  * is checked separately — this only reads the shape.
  */
-export function checkForm(studentRaw, spec) {
+export function checkForm(studentRaw, spec, answerRaw) {
   const { tokens, valid } = parseAnswerForm(spec);
   if (!valid) return true;
   return tokens.every((token) => {
@@ -3248,7 +3413,7 @@ export function checkForm(studentRaw, spec) {
     }
     const solved = token.match(SOLVED_TOKEN);
     if (solved) return writtenSolvedFor(studentRaw, solved[1]);
-    return FORM_PREDICATES[token](studentRaw);
+    return FORM_PREDICATES[token](studentRaw, answerRaw);
   });
 }
 
@@ -3342,14 +3507,41 @@ function functionLabelEquation(latex) {
  * accepted too. Exported so the content lint's cheap shape pre-filter can
  * never disagree with the grader about the same text.
  */
-function formAcceptedAsWritten(preprocessed, spec) {
-  if (checkForm(readFunctionNotation(preprocessed), spec)) return true;
+function formAcceptedAsWritten(preprocessed, spec, answerRaw) {
+  if (checkForm(readFunctionNotation(preprocessed), spec, answerRaw)) return true;
   const equation = functionLabelEquation(preprocessed);
-  return equation !== null && checkForm(equation, spec);
+  if (equation !== null && checkForm(equation, spec, answerRaw)) return true;
+  const value = variableLabelValue(preprocessed, spec);
+  return value !== null && checkForm(value, spec, answerRaw);
 }
 
-export function checkFormAsGraded(raw, spec) {
-  return formAcceptedAsWritten(preprocess(raw ?? ''), spec);
+// Forms whose shape IS an equation: a `y=` on the response is part of what
+// they read, never a label to strip.
+const EQUATION_FORM_TOKENS = new Set([
+  'point-slope-form', 'slope-intercept-form', 'vertex-form', 'conic-standard-form',
+  'parabola-standard-form', 'circle-standard-form', 'exponential-form', 'translation',
+]);
+
+/**
+ * The value side of a one-letter LABEL, `x=13`, for a form that describes a
+ * value. The value grader already reads `x=13` as 13, so a Solve item keyed
+ * `13` with `decimal` declared graded the learner's natural `x=13` as `form`
+ * ("now write it as a decimal") — the form check read the raw writing. Only
+ * the label is stripped: `x=7+6` is still the unevaluated `7+6`. null when
+ * there is no label, a further `=` follows, or the form reads equations.
+ */
+function variableLabelValue(preprocessed, spec) {
+  const label = preprocessed.match(/^\s*[a-zA-Z]\s*=(?![=<>])/);
+  if (!label) return null;
+  const rest = preprocessed.slice(label[0].length);
+  if (!rest.trim() || rest.includes('=')) return null;
+  const { tokens, valid } = parseAnswerForm(spec);
+  if (!valid || tokens.some((token) => EQUATION_FORM_TOKENS.has(token) || SOLVED_TOKEN.test(token))) return null;
+  return rest;
+}
+
+export function checkFormAsGraded(raw, spec, answerRaw) {
+  return formAcceptedAsWritten(preprocess(raw ?? ''), spec, answerRaw);
 }
 
 /**
@@ -3408,8 +3600,10 @@ const CURRENCY_PREFIX = /^\s*(-?)\s*\\\$\s*/;
 
 // A number followed only by unit words: `140 miles`, `140\text{ miles}`,
 // `74\mathrm{ft}`, `36ft^2`. Bare letters must run to two or more, so a
-// single trailing letter (`140x`) is never read as a unit.
-const UNIT_TAIL = /^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*((?:\\(?:text|textrm|mathrm|operatorname)\s*\{[^{}]*\}|[A-Za-z]{2,}|\^\{?[23]\}?|\s)+)$/;
+// single trailing letter (`140x`) is never read as a unit. A degree mark
+// (`^\circ`, `°`, or MathLive's degree key `\degree`) counts too, with an optional `F`/`C` after it: `-6^\circ` or `96^\circ F`
+// on a temperature key is the right number labelled, not a wrong one.
+const UNIT_TAIL = /^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*((?:\\(?:text|textrm|mathrm|operatorname)\s*\{[^{}]*\}|[A-Za-z]{2,}|\^\{?[23]\}?|(?:\^\s*\{?\s*\\circ\s*\}?|\\degree\b|°)(?:\s*[CF](?![A-Za-z]))?|\s)+)$/;
 
 /**
  * Grade a response against the authored answer.
@@ -3427,7 +3621,20 @@ const UNIT_TAIL = /^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*((?:\\(?:text|textrm|mathrm|op
  * (Prealgebra re-review, September 26, 2026.) Percent is untouched: `62\%`
  * and `0.62` are different values, and the `percent` form owns that ask.
  */
+// A percent key, `4.5\%`: the one place a bare `4.5` is the right number with
+// the sign left off rather than a value a hundred times too large.
+const PERCENT_KEY = /^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*\\%$/;
+
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
+  const percentKey = preprocess(answerRaw ?? '').match(PERCENT_KEY);
+  if (percentKey && parseAnswerForm(options.form).tokens.includes('percent')) {
+    // Under `percent`, `4.5` against `4.5\%` is the form the ask names with
+    // the sign missing: 'form' ("as a percent, with the % sign"), never
+    // 'incorrect'. Only when the typed number IS the key's number.
+    const verdict = gradeResponse(studentRaw, answerRaw, options);
+    if (verdict !== 'incorrect') return verdict;
+    return gradeResponse(studentRaw, percentKey[1], {}) === 'correct' ? 'form' : verdict;
+  }
   if (!PLAIN_NUMBER_KEY.test(preprocess(answerRaw ?? ''))) return gradeResponse(studentRaw, answerRaw, options);
   const unpriced = (studentRaw ?? '').replace(CURRENCY_PREFIX, '$1');
   const verdict = gradeResponse(unpriced, answerRaw, options);
@@ -3491,5 +3698,5 @@ function gradeResponse(studentRaw, answerRaw, options = {}) {
   // shape the form check rejects, and a labelled equation keeps its equation
   // reading (formAcceptedAsWritten). Checked last so a learner whose value
   // is wrong is never told to reduce a fraction that was not the answer.
-  return formAcceptedAsWritten(written, options.form) ? 'correct' : 'form';
+  return formAcceptedAsWritten(written, options.form, answerRaw) ? 'correct' : 'form';
 }

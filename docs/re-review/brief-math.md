@@ -64,8 +64,24 @@ Grader behaviour on a key that is one bare number (since September 26,
 2026): a leading `\$` is dropped (`\$237,186` grades `correct`), and a
 right number with a unit word typed after it (`140 miles`) reports `unit`
 — "Right number — enter it without the unit" — never `correct`; a wrong
-number with a unit is `incorrect`. So a question with units still names
-them ("in dollars", "in feet"), and neither is a page defect.
+number with a unit is `incorrect`. A degree mark (`-6^\circ`, `96^\circ F`) is
+a unit the same way, and under `percent` a bare `4.5` against `4.5\%` reports
+`form` (the ask still says "including the % sign"). So a question with units still names
+them ("in dollars", "in feet"), and neither is a page defect. Since the
+Prealgebra chapters 2–11 run (September 26, 2026): a one-letter label is
+stripped before a value form is checked (`x=13` passes `decimal`, `x=7+6`
+does not), so every Solve item keyed with a bare number takes `decimal` like
+any other computed key; and `no-like-terms` refuses two written constant
+terms (`16x+9+8` against `16x+17` grades `form`). A "translate into an
+equation (or proportion)" fill-in declares `answerForm="translation"`: any true
+equation (`13=13` for `7+6=13`, `y=12` for `2(y-4)=16`) grades equal in value,
+and the token requires the key's own writing (same operands and order, either
+side of the `=`). Also since that run: `decimal` accepts an ordered pair
+of numbers (each coordinate a decimal), so a computed-pair key takes it;
+`expanded`, `single-term`, and `single-fraction` refuse written-out numeral
+arithmetic (`6\cdot x+6\cdot8`, `(-14)^2x^2`, `\frac{1}{y^{7-2}}`), and
+`single-fraction` refuses uncombined like terms in either half
+(`\frac{3p+6p}{8}`).
 
 Figures and display math: `node tools/figures/render-page-figures.mjs
 <page> SP/render/<page-stem>` renders every inline `<svg>` to

@@ -84,10 +84,16 @@ async function main() {
   if (!args.includes('--math-only')) {
     for (const { line, text } of svgs) {
       const { w, h } = viewBoxSize(text);
-      const scale = w > 600 ? 600 / w : 1;
+      // The drawn width: a `width:100%` SVG stretches to the 600px column
+      // (capped by its max-width), so its height scales up with it — the
+      // window must follow or the bottom is cut off. Margins add ~48px.
+      const style = (text.match(/<svg[^>]*style="([^"]*)"/) || [, ''])[1];
+      const maxWidth = Number((style.match(/max-width:\s*([\d.]+)px/) || [])[1]) || Infinity;
+      const drawn = Math.min(600, maxWidth, /(^|;)\s*width:\s*100%/.test(style) ? Infinity : w);
+      const scale = drawn / w;
       const html = join(out, `L${line}.html`);
       writeFileSync(html, `<!doctype html><html><body style="${BODY};width:600px">${text}</body></html>`);
-      shoot(html, join(out, `L${line}.png`), 620, Math.ceil(h * scale) + 24);
+      shoot(html, join(out, `L${line}.png`), 620, Math.ceil(h * scale) + 60);
       console.log(`L${line} ${(text.match(/aria-label="([^"]*)"/) || [, '(no aria-label)'])[1]}`);
     }
   }
