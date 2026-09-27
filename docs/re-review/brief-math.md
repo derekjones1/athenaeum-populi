@@ -103,7 +103,13 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
      words or prose: "translate and simplify: 29 increased by 76" and
      every word problem accept the typed unevaluated expression
      (`29+76`, `18+15+26+49+32`) unless the item declares `decimal` (or
-     the form its key needs).
+     the form its key needs). **Sweep every fill-in on your pages whose key
+     is a computed number and which declares no `answerForm`** — body and
+     Practice alike — and add the form after checking the grader refuses
+     the retyped expression. Derek's decision (September 26, 2026): these
+     2,151 items across the four books are fixed chapter by chapter by
+     this re-review, not by a corpus pass, so no lint guards them until
+     the last math row closes; a chapter left unswept stays exposed.
    - **grader reach:** run the grader on the forms a learner would
      naturally type (with and without digit-grouping commas, `x=5` vs
      `5`, an equivalent fraction or decimal, a unit word) and on a common

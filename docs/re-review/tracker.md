@@ -19,12 +19,14 @@ Opus on September 22, 2026). New A&P chapters meet it by being authored with
 `content/math/prealgebra` · 11 chapters, 60 section pages, 2 knowledge checks
 
 Never read against the September 22 bar: needs the full checker read AND
-the image-first figure pass. The first math request is the pilot (README
-step 0).
+the image-first figure pass. Every math row also adds `answerForm` to its
+numeric fill-ins that lack one (`brief-math.md` step 3, Derek's decision
+September 26, 2026: 2,151 items, chapter by chapter; when the last math row
+closes, promote the check to a lint error).
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|
-| [x] | 1. Whole Numbers | 5 | 134 | 1103–1113 | 923a086 | Math pilot: wrote `brief-math.md` (v2 after a 1.2 trial) and `tools/figures/render-page-figures.mjs`. One Opus fixer per section, 138–158k tokens each (731k total, about double a life-sciences section); Fable solve 108k for 55 items, 55/55 after one adjudication (Jenna 27, source key). Fixes: hint leaks ~55, word-problem/translate retype 47 (`answerForm="decimal"`), figure geometry 5 (1.2 blocks drew 3 rods + 7 ones for 17 + 26; 1.3 circles cut blocks), carry rows over the wrong column 3 (now a lint), model-count alts stating the key 2 (1.5), Try Its restored to source numbers. `ledger:provenance` skipped for math (mislabels MathML source items). Open: the 2,151 numeric fill-ins corpus-wide without `answerForm`. |
+| [x] | 1. Whole Numbers | 5 | 134 | 1103–1113 | 923a086 | Math pilot: wrote `brief-math.md` (v2 after a 1.2 trial) and `tools/figures/render-page-figures.mjs`. One Opus fixer per section, 138–158k tokens each (731k total, about double a life-sciences section); Fable solve 108k for 55 items, 55/55 after one adjudication (Jenna 27, source key). Fixes: hint leaks ~55, word-problem/translate retype 47 (`answerForm="decimal"`), figure geometry 5 (1.2 blocks drew 3 rods + 7 ones for 17 + 26; 1.3 circles cut blocks), carry rows over the wrong column 3 (now a lint), model-count alts stating the key 2 (1.5), Try Its restored to source numbers. `ledger:provenance` skipped for math (mislabels MathML source items). Chapter 1 swept; the other 2,151 numeric fill-ins without `answerForm` are fixed row by row (Derek, September 26). |
 | [ ] | 2. The Language of Algebra | 5 | | | | |
 | [ ] | 3. Integers | 5 | | | | |
 | [ ] | 4. Fractions | 7 | | | | |
@@ -43,8 +45,10 @@ step 0).
 `content/math/elementary-algebra` · 10 chapters, 71 section pages, 2 knowledge checks
 
 Never read against the September 22 bar: needs the full checker read AND
-the image-first figure pass. The first math request is the pilot (README
-step 0).
+the image-first figure pass. Every math row also adds `answerForm` to its
+numeric fill-ins that lack one (`brief-math.md` step 3, Derek's decision
+September 26, 2026: 2,151 items, chapter by chapter; when the last math row
+closes, promote the check to a lint error).
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|
@@ -66,8 +70,10 @@ step 0).
 `content/math/intermediate-algebra` · 12 chapters, 70 section pages, 2 knowledge checks
 
 Never read against the September 22 bar: needs the full checker read AND
-the image-first figure pass. The first math request is the pilot (README
-step 0).
+the image-first figure pass. Every math row also adds `answerForm` to its
+numeric fill-ins that lack one (`brief-math.md` step 3, Derek's decision
+September 26, 2026: 2,151 items, chapter by chapter; when the last math row
+closes, promote the check to a lint error).
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|
@@ -91,8 +97,10 @@ step 0).
 `content/math/precalculus` · 12 chapters, 73 section pages, 2 knowledge checks
 
 Never read against the September 22 bar: needs the full checker read AND
-the image-first figure pass. The first math request is the pilot (README
-step 0).
+the image-first figure pass. Every math row also adds `answerForm` to its
+numeric fill-ins that lack one (`brief-math.md` step 3, Derek's decision
+September 26, 2026: 2,151 items, chapter by chapter; when the last math row
+closes, promote the check to a lint error).
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|
