@@ -229,6 +229,14 @@ keeps only the two facts that are architectural:
   `tests/figures.spec.mjs` renders every page carrying a spec-first figure
   in both schemes and fails on any label outside its fitted viewBox, and
   `npm run test:browser` runs every suite in one server startup.
+- The specs pick exercises by authored attributes (`data-answer`,
+  `data-answer-form`, `data-question`, `data-config`), never by position, so
+  a content edit can pull a fixture out from under them.
+  `tools/build/browser-fixtures.test.mjs` (in `npm test`) resolves every such
+  locator against the page's markdown and replays each typed text-in answer
+  through `checkText`, so a re-keyed or reworded exercise fails in seconds
+  instead of on the deploy run. When it fails, re-point the locator at the
+  exercise as it now reads.
 
 ## Deployment
 
