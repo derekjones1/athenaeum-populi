@@ -1584,3 +1584,23 @@ Biology ran the same sweep in the same session
   the seven-word accept cap, the "X (Y)" fold, and three new lints. The
   heading/title-leak lint (about 55 raw hits in this book) was decided
   against; the rule became an authoring preference and the hits stay.
+
+## Alt-only figure pass (September 24–26, 2026)
+
+Run with Biology (`docs/history/biology.md`, same heading): every
+Microbiology figure with no `longdesc` — 508 figures, packets 01–15 —
+re-read image-first by Opus with `docs/briefs/alt-pass/checker-brief.md`,
+the parent opening the image for every flag before editing.
+
+- **Yield:** 150 of 508 figures fixed (about 1 in 3.4); every flag held on
+  the image. Errata 1048–1069, 1072, 1075–1077, and 1086–1087; erratum
+  769 (HIV caption "top right") withdrawn, since nothing in the micrograph
+  says which cell is the lymphocyte; erratum 696's aside amended.
+- **Classes:** photo detail (body sites, counts, colours) most common;
+  then source-alt scale claims measured against the figure's own bar,
+  artwork typos ("submucusa"), and diagrams traced arrow by arrow (the
+  plague-transmission figure gained a `longdesc`).
+- Five items re-hashed through their figures in the first batches were
+  blind re-solved or parent re-read; none in the last. About 2.2M checker
+  tokens.
+

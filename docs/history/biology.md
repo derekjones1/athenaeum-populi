@@ -192,6 +192,32 @@ the parent spot-checks one "clean" verdict after any delegated model's
 first unit; a footer's `Changes:` clause names departures from the source,
 never corrections to our own earlier text.
 
+## Alt-only figure pass (September 24–26, 2026)
+
+An Opus image-first sample on September 24 (50 figures across this book
+and Microbiology) found about 1 real alt error in 8, all on figures with
+no `longdesc`: those had only the September 21 Sonnet pass, while every
+`longdesc` figure had had the September 22–23 Opus read. So every
+alt-only figure was re-read by Opus with `docs/briefs/alt-pass/checker-brief.md`:
+519 figures in fifteen packets of about 35 (b01–b15), cut from
+`tools/source/alt-pass-packets.py` output filtered to tags with no
+`longdesc`, nine or ten checkers at a time. The parent opened the image
+for every flag before editing.
+
+- **Yield:** 132 of 519 figures fixed (about 1 in 4), plus the sample's
+  fixes; every one of the 132 flags held on the image. Errata 1070–1071,
+  1073–1074, 1078–1085, and 1088–1102; erratum 853 (salmon "on its side")
+  withdrawn and 836 amended.
+- **Claim corrections reached through figures:** §4.5's prose, caption,
+  and alt called the 9 + 2 center "a single microtubule doublet" (a
+  central pair of singlets, erratum 1078); §25.3's caption called the
+  gemmae crescent-shaped spore containers (erratum 1090).
+- **Scale bars:** §1.1 and §8.1 print the same cyanobacteria micrograph
+  with 25 µm bars about 2.7-fold apart (erratum 1079); an erratum's
+  measured size must come from that figure's own bar.
+- **No graded item re-hashed** (`ledger:carry plan` found none); `npm test`
+  green after each batch. About 2.1M checker tokens in two sessions.
+
 ## Build budgets: the completion measurement record
 
 The book is complete, so these are no longer projections — they are what
